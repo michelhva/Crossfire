@@ -6,6 +6,8 @@ face princess.111
 anim
 princess.111
 princess.112
+princess.113
+princess.112
 mina
 color_fg black
 maxsp 9
