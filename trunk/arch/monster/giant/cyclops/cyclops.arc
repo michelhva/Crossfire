@@ -1,16 +1,16 @@
 Object cyclops
 randomitems cyclops
-face cyclops.131
+face cyclops.x31
 race giant
 monster 1
 sleep 1
 Wis 11
 anim
 facings 2
-cyclops.171
-cyclops.172
-cyclops.131
-cyclops.132
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 level 25
 Con 56
@@ -42,7 +42,7 @@ maxhp 8000
 alive 1
 no_pick 1
 speed -0.35
-weight 300000
+weight 30000000
 run_away 5
 editable 1
 can_use_weapon 1
@@ -58,92 +58,87 @@ end
 More
 Object cyclops_2
 name cyclops
-face cyclops.231
+face cyclops.x31
 anim
 facings 2
-cyclops.271
-cyclops.272
-cyclops.231
-cyclops.232
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 monster 1
 alive 1
 no_pick 1
 x 1
-weight 30000000
 magicmap khaki
 end
 More
 Object cyclops_3
 name cyclops
-face cyclops.331
+face cyclops.x31
 anim
 facings 2
-cyclops.371
-cyclops.372
-cyclops.331
-cyclops.332
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 monster 1
 alive 1
 no_pick 1
 y 1
-weight 30000000
 magicmap khaki
 end
 More
 Object cyclops_4
 name cyclops
-face cyclops.431
+face cyclops.x31
 anim
 facings 2
-cyclops.471
-cyclops.472
-cyclops.431
-cyclops.432
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 monster 1
 alive 1
 no_pick 1
 x 1
 y 1
-weight 30000000
 magicmap khaki
 end
 More
 Object cyclops_5
 name cyclops
-face cyclops.531
+face cyclops.x31
 anim
 facings 2
-cyclops.571
-cyclops.572
-cyclops.531
-cyclops.532
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 monster 1
 alive 1
 no_pick 1
 y 2
-weight 30000000
 magicmap khaki
 end
 More
 Object cyclops_6
 name cyclops
-face cyclops.631
+face cyclops.x31
 anim
 facings 2
-cyclops.671
-cyclops.672
-cyclops.631
-cyclops.632
+cyclops.x71
+cyclops.x72
+cyclops.x31
+cyclops.x32
 mina
 monster 1
 alive 1
 no_pick 1
 x 1
 y 2
-weight 30000000
 magicmap khaki
 end
