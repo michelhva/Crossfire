@@ -16,9 +16,8 @@ Pow 30
 monster 1
 alive 1
 attacktype 16384
-path_attuned 393216
-path_repelled 1
-path_denied 256
+path_attuned 131072
+path_repelled 257
 resist_magic 30
 resist_fear 100
 ac -5
@@ -27,7 +26,6 @@ dam 50
 hp 350
 level 15
 speed 0.25
-last_heal -2
 luck -1
 can_cast_spell 1
 can_use_armour 1
