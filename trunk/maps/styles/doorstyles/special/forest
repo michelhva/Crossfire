@@ -9,16 +9,35 @@ width 6
 height 6
 end
 arch spider_web
+no_pass 1
 end
 arch fernssparse
+type 0
+material 128
+no_pass 1
 x 1
 end
 arch fernsdense
+type 0
+material 8
+blocksview 1
+no_pass 1
 x 2
 end
 arch forestsparse
+type 0
+material 16
+no_pass 1
 x 3
 end
 arch thorns
+material 16
+no_pass 1
 x 4
+end
+arch mountain3
+type 0
+material 64
+no_pass 1
+x 5
 end
