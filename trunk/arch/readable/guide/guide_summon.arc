@@ -4,7 +4,7 @@ msg
 o Basically there are two classes of
   summoning spells: 1. The golem-like
   spells summon a creature that will
-  move straight forward attemting to kill
+  move straight forward attempting to kill
   any monster blocking the way.
   2. The petmonster-like spells are capable
   of summoning masses of little helpers,
@@ -23,7 +23,7 @@ o As you raise your skill-level, most
 o It is probably stupid to use *nothing*
   except summoning spells. But there are
   situations where a summoner survives
-  while an other wizard would have died.
+  while another wizard would have died.
   And once you have seen the first Balrog
   fall to your avatar, there will be no
   doubt about your power.

@@ -1,7 +1,7 @@
 Object guide_wizard
 name guide to Wizardry
 msg
-o To advance in the secret art of magics
+o To advance in the powerful art of magic
   you must first learn some spells.
   Spellbooks can be bought in magic stores.
 o Spellcasting will drain your mana. If you
@@ -14,7 +14,7 @@ o Try to increase your Pow stat. by wearing
   This will boost your max. amount of mana.
 o All spells are classified in certain spell-
   paths. Most of them divide up into one of
-  the elemental paths: Fire, cold and
+  the elemental paths: fire, cold and
   electricity. Search for items granting
   attunement to these spell-paths. This will
   reduce the mana-cost for affected spells.
@@ -25,8 +25,8 @@ o Most monsters are vulnerable to certain
   out what spells work best for each type of
   monster. This will increase your efficiency.
 o Your magic attacks might soon become very
-  powerfull. But don't forget to seize your
-  full capabilities: Use spells for protection,
+  powerful. But don't forget to seize your
+  full capabilities:  Use spells for protection,
   concealing, summoning,... be inventive!
 endmsg
 nrof 1
