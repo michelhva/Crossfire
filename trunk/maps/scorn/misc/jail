@@ -695,6 +695,13 @@ arch flagstone
 x 3
 y 7
 end
+arch stair2_up
+slaying /scorn/misc/jail_upper
+hp 3
+sp 7
+x 3
+y 7
+end
 arch dungeon_magic
 x 3
 y 8
