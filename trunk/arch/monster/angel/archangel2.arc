@@ -36,7 +36,7 @@ resist_fear 100
 resist_physical 75
 resist_fire 75
 resist_cold 75
-resist_holyword 50
+resist_holyword 30
 resist_godpower 80
 weight 150000
 flying 1
