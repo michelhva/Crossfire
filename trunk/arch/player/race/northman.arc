@@ -3,6 +3,16 @@ name Northman
 race human
 randomitems northman_player_items
 face viking.171
+msg
+Northmen are simply humans who have been
+shaped by their harsh environment. They are
+stronger, quicker, and hardier than most
+humans, but also stupid and impious. Most
+races also consider them a bit unattractive.
+They have some resistance to cold, but the
+few of them who take up magic find it
+difficult to master fire spells.
+endmsg
 color_fg black
 anim
 viking.111
@@ -11,7 +21,6 @@ viking.151
 viking.171
 mina
 resist_cold 30
-
 is_animated 0
 type 1
 level 1

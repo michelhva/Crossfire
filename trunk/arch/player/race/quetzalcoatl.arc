@@ -3,14 +3,43 @@ name Quetzalcoatl
 race dragon
 randomitems quetzalcoatl_player_items
 face quetzalcoatl.131
+msg
+Quetzalcoatls are a strange mix of dragon,
+bird, human, and a dash of the divine. They
+bear the most resemblance to dragonkind, but
+are able to manipulate objects with their
+claws. They are amazingly strong, very quick,
+and amazingly hardy, but quite stupid and
+impious (despite the dash of divinity). 
+However, they are strongly magical in nature
+and usually have a vast reservoir of mana
+with which to cast any spell they're not too
+stupid to learn. Often, they're only able to
+grasp one basic fire spell.
+Their strongly draconic nature immures them
+to fire and helps them with fire spells, but
+they are vulnerable to cold and
+paralyzation.
+They can grasp weapons, but their bizarre body
+shape prevents them from using armour, helmets,
+and other items of apparel usually intended for
+bipedal creatures with two arms and two legs
+and a head. Their inability to use armour comes
+back to haunt them when they compare themselves
+with other races:  highly enchanted armour is
+usually more benefical than dragonhide! The
+wings come in handy:  they can use them to
+'levitate', and their hide gets thicker as they
+gain power, compensating them somewhat for not
+being able to use armour.
+endmsg
 anim
-facings 2
 quetzalcoatl.131
 quetzalcoatl.132
 quetzalcoatl.171
 quetzalcoatl.172
 mina
-is_animated 1
+is_animated 0
 type 1
 level 1
 ac 5

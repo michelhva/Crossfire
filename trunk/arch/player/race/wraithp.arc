@@ -3,6 +3,26 @@ name Wraith
 race undead
 randomitems wraith_player_items
 face wraithp.111
+msg
+A Wraith is a spirit which has made an evil
+bargain in order to persist after natural
+death, or been forced involuntarily into its
+new undead state. This transformation frees
+them of the limits of a natural lifespan,
+and grants them immunity to diseases, poison,
+and loss of lifeforce. Wraith's also need
+feel little fear of cold, and they can see
+well in the dark.
+A Wraith's corporeal form has terrible
+vunlerabilites: Fire and most godpower are
+dangerous to Wraiths. Their tenuous form makes
+them quick, and somewhat harder to hit, but
+also weaker and less hardy.
+Wraith's have a strong affinity to magic,
+especially cold spells, and are very strong
+spellcasters. However, they cannot use fire
+spells for fear of self-destruction.
+endmsg
 color_fg black
 anim
 wraithp.111
