@@ -120,12 +120,10 @@ arch steppe
 elevation 3107
 y 25
 end
-arch hills_rocky
-elevation 1943
+arch flagstone
 y 26
 end
-arch hills_rocky
-elevation 1838
+arch flagstone
 y 27
 end
 arch steppe
@@ -216,14 +214,14 @@ arch hills
 elevation 3676
 y 49
 end
-arch flagstone
+arch grass
 x 1
 end
-arch flagstone
+arch grass
 x 1
 y 1
 end
-arch flagstone
+arch brush
 x 1
 y 2
 end
@@ -337,18 +335,15 @@ elevation 4030
 x 1
 y 24
 end
-arch jungle_1
-elevation 2881
+arch flagstone
 x 1
 y 25
 end
-arch desert
-elevation 929
+arch flagstone
 x 1
 y 26
 end
-arch desert
-elevation 506
+arch flagstone
 x 1
 y 27
 end
@@ -462,26 +457,26 @@ elevation 1799
 x 1
 y 49
 end
-arch flagstone
+arch grass
 x 2
 end
-arch flagstone
+arch evergreens
 x 2
 y 1
 end
-arch flagstone
+arch grass
 x 2
 y 2
 end
-arch flagstone
+arch grass
 x 2
 y 3
 end
-arch flagstone
+arch grass
 x 2
 y 4
 end
-arch flagstone
+arch grass
 x 2
 y 5
 end
@@ -580,18 +575,15 @@ elevation 3803
 x 2
 y 24
 end
-arch jungle_1
-elevation 1976
+arch flagstone
 x 2
 y 25
 end
-arch jungle_1
-elevation 2547
+arch flagstone
 x 2
 y 26
 end
-arch desert
-elevation 962
+arch flagstone
 x 2
 y 27
 end
@@ -705,8 +697,7 @@ elevation 491
 x 2
 y 49
 end
-arch grass
-elevation 129
+arch brush
 x 3
 end
 arch grass
@@ -714,35 +705,35 @@ elevation 43
 x 3
 y 1
 end
-arch flagstone
+arch evergreens
 x 3
 y 2
 end
-arch flagstone
+arch grass
 x 3
 y 3
 end
-arch flagstone
+arch grass
 x 3
 y 4
 end
-arch flagstone
+arch evergreens
 x 3
 y 5
 end
-arch flagstone
+arch evergreens
 x 3
 y 6
 end
-arch flagstone
+arch grass
 x 3
 y 7
 end
-arch flagstone
+arch evergreens
 x 3
 y 8
 end
-arch flagstone
+arch grass
 x 3
 y 9
 end
@@ -821,13 +812,11 @@ elevation 2783
 x 3
 y 24
 end
-arch hills
-elevation 3232
+arch flagstone
 x 3
 y 25
 end
-arch hills
-elevation 3902
+arch flagstone
 x 3
 y 26
 end
@@ -960,8 +949,7 @@ elevation 401
 x 4
 y 2
 end
-arch grass
-elevation 15
+arch brush
 x 4
 y 3
 end
@@ -970,27 +958,27 @@ elevation 80
 x 4
 y 4
 end
-arch flagstone
+arch grass
 x 4
 y 5
 end
-arch flagstone
+arch grass
 x 4
 y 6
 end
-arch flagstone
+arch evergreens
 x 4
 y 7
 end
-arch flagstone
+arch evergreens
 x 4
 y 8
 end
-arch flagstone
+arch evergreens
 x 4
 y 9
 end
-arch flagstone
+arch grass
 x 4
 y 10
 end
@@ -1064,13 +1052,11 @@ elevation 180
 x 4
 y 24
 end
-arch hills
-elevation 3648
+arch flagstone
 x 4
 y 25
 end
-arch mountain
-elevation 5268
+arch flagstone
 x 4
 y 26
 end
@@ -1233,15 +1219,15 @@ elevation 1033
 x 5
 y 8
 end
-arch flagstone
+arch grass
 x 5
 y 9
 end
-arch flagstone
+arch grass
 x 5
 y 10
 end
-arch flagstone
+arch grass
 x 5
 y 11
 end
@@ -1310,13 +1296,11 @@ elevation 2606
 x 5
 y 24
 end
-arch hills
-elevation 3606
+arch flagstone
 x 5
 y 25
 end
-arch mountain
-elevation 5223
+arch flagstone
 x 5
 y 26
 end
@@ -1454,8 +1438,7 @@ elevation 41
 x 6
 y 3
 end
-arch grass
-elevation 29
+arch brush
 x 6
 y 4
 end
@@ -1484,15 +1467,15 @@ elevation 3185
 x 6
 y 9
 end
-arch flagstone
+arch hills
 x 6
 y 10
 end
-arch flagstone
+arch brush
 x 6
 y 11
 end
-arch flagstone
+arch tree
 x 6
 y 12
 end
@@ -1506,8 +1489,7 @@ elevation 333
 x 6
 y 14
 end
-arch desert
-elevation 704
+arch brush
 x 6
 y 15
 end
@@ -1556,13 +1538,11 @@ elevation 3354
 x 6
 y 24
 end
-arch jungle_1
-elevation 1890
+arch flagstone
 x 6
 y 25
 end
-arch hills
-elevation 4249
+arch flagstone
 x 6
 y 26
 end
@@ -1734,15 +1714,15 @@ elevation 4014
 x 7
 y 10
 end
-arch flagstone
+arch hills
 x 7
 y 11
 end
-arch flagstone
+arch grass
 x 7
 y 12
 end
-arch flagstone
+arch grass
 x 7
 y 13
 end
@@ -1801,13 +1781,11 @@ elevation 4221
 x 7
 y 24
 end
-arch desert
-elevation 807
+arch flagstone
 x 7
 y 25
 end
-arch jungle_1
-elevation 2732
+arch flagstone
 x 7
 y 26
 end
@@ -1985,15 +1963,15 @@ elevation 3543
 x 8
 y 11
 end
-arch flagstone
+arch grass
 x 8
 y 12
 end
-arch flagstone
+arch grass
 x 8
 y 13
 end
-arch flagstone
+arch grass
 x 8
 y 14
 end
@@ -2037,23 +2015,19 @@ elevation 5098
 x 8
 y 22
 end
-arch steppe
-elevation 4399
+arch hills_rocky
 x 8
 y 23
 end
-arch mountain
-elevation 5096
+arch hills_rocky
 x 8
 y 24
 end
-arch jungle_1
-elevation 2026
+arch flagstone
 x 8
 y 25
 end
-arch desert
-elevation 885
+arch flagstone
 x 8
 y 26
 end
@@ -2236,15 +2210,15 @@ elevation 4564
 x 9
 y 12
 end
-arch flagstone
+arch jungle_1
 x 9
 y 13
 end
-arch flagstone
+arch grass
 x 9
 y 14
 end
-arch flagstone
+arch grass
 x 9
 y 15
 end
@@ -2268,38 +2242,31 @@ elevation 5594
 x 9
 y 19
 end
-arch hills
-elevation 2762
+arch hills_rocky
 x 9
 y 20
 end
-arch jungle_1
-elevation 2984
+arch hills_rocky
 x 9
 y 21
 end
-arch steppe
-elevation 4365
+arch hills_rocky
 x 9
 y 22
 end
-arch mountain
-elevation 6610
+arch hills_rocky
 x 9
 y 23
 end
-arch mountain
-elevation 6864
+arch hills_rocky
 x 9
 y 24
 end
-arch mountain
-elevation 5906
+arch flagstone
 x 9
 y 25
 end
-arch hills
-elevation 4338
+arch flagstone
 x 9
 y 26
 end
@@ -2487,15 +2454,15 @@ elevation 4018
 x 10
 y 13
 end
-arch flagstone
+arch grass
 x 10
 y 14
 end
-arch flagstone
+arch jungle_1
 x 10
 y 15
 end
-arch flagstone
+arch jungle_1
 x 10
 y 16
 end
@@ -2509,8 +2476,7 @@ elevation 5942
 x 10
 y 18
 end
-arch hills
-elevation 4713
+arch hills_rocky
 x 10
 y 19
 end
@@ -2519,33 +2485,27 @@ elevation 2665
 x 10
 y 20
 end
-arch jungle_1
-elevation 2500
+arch hills_rocky
 x 10
 y 21
 end
-arch mountain
-elevation 5950
+arch hills_rocky
 x 10
 y 22
 end
-arch mountain
-elevation 7940
+arch hills_rocky
 x 10
 y 23
 end
-arch mountain
-elevation 8739
+arch hills_rocky
 x 10
 y 24
 end
-arch mountain
-elevation 8246
+arch flagstone
 x 10
 y 25
 end
-arch mountain
-elevation 6754
+arch flagstone
 x 10
 y 26
 end
@@ -2614,8 +2574,7 @@ elevation 184
 x 10
 y 39
 end
-arch shallow_sea
-elevation -1
+arch desert
 x 10
 y 40
 end
@@ -2738,15 +2697,15 @@ elevation 2508
 x 11
 y 14
 end
-arch flagstone
+arch jungle_1
 x 11
 y 15
 end
-arch flagstone
+arch grass
 x 11
 y 16
 end
-arch flagstone
+arch jungle_1
 x 11
 y 17
 end
@@ -2760,43 +2719,35 @@ elevation 3908
 x 11
 y 19
 end
-arch jungle_1
-elevation 1698
+arch hills_rocky
 x 11
 y 20
 end
-arch hills
-elevation 4309
+arch hills_rocky
 x 11
 y 21
 end
-arch mountain
-elevation 6703
+arch hills_rocky
 x 11
 y 22
 end
-arch mountain
-elevation 8616
+arch hills_rocky
 x 11
 y 23
 end
-arch mountain2
-elevation 9495
+arch hills_rocky
 x 11
 y 24
 end
-arch mountain2
-elevation 9413
+arch flagstone
 x 11
 y 25
 end
-arch mountain
-elevation 8423
+arch flagstone
 x 11
 y 26
 end
-arch mountain
-elevation 6629
+arch hills_rocky
 x 11
 y 27
 end
@@ -2865,8 +2816,7 @@ elevation 42
 x 11
 y 40
 end
-arch shallow_sea
-elevation -4
+arch desert
 x 11
 y 41
 end
@@ -2875,8 +2825,8 @@ elevation 98
 x 11
 y 42
 end
-arch desert
-elevation 501
+arch grass
+elevation 98
 x 11
 y 43
 end
@@ -2885,8 +2835,8 @@ elevation 1461
 x 11
 y 44
 end
-arch desert
-elevation 998
+arch grass
+elevation 617
 x 11
 y 45
 end
@@ -2979,8 +2929,7 @@ elevation 1233
 x 12
 y 13
 end
-arch desert
-elevation 654
+arch brush
 x 12
 y 14
 end
@@ -2989,15 +2938,15 @@ elevation 2508
 x 12
 y 15
 end
-arch flagstone
+arch jungle_1
 x 12
 y 16
 end
-arch flagstone
+arch brush
 x 12
 y 17
 end
-arch flagstone
+arch grass
 x 12
 y 18
 end
@@ -3011,33 +2960,27 @@ elevation 1586
 x 12
 y 20
 end
-arch hills
-elevation 4560
+arch hills_rocky
 x 12
 y 21
 end
-arch mountain
-elevation 6516
+arch hills_rocky
 x 12
 y 22
 end
-arch mountain
-elevation 8019
+arch hills_rocky
 x 12
 y 23
 end
-arch mountain2
-elevation 9132
+arch hills_rocky
 x 12
 y 24
 end
-arch mountain2
-elevation 9543
+arch flagstone
 x 12
 y 25
 end
-arch mountain2
-elevation 9261
+arch flagstone
 x 12
 y 26
 end
@@ -3106,18 +3049,16 @@ elevation 295
 x 12
 y 39
 end
-arch brush
-elevation 85
+arch desert
 x 12
 y 40
 end
-arch shallow_sea
-elevation -2
+arch desert
 x 12
 y 41
 end
-arch desert
-elevation 42
+arch grass
+elevation 98
 x 12
 y 42
 end
@@ -3126,13 +3067,11 @@ elevation 20
 x 12
 y 43
 end
-arch desert
-elevation 40
+arch deep_swamp
 x 12
 y 44
 end
-arch desert
-elevation 473
+arch deep_swamp
 x 12
 y 45
 end
@@ -3240,15 +3179,15 @@ elevation 2508
 x 13
 y 16
 end
-arch flagstone
+arch grass
 x 13
 y 17
 end
-arch flagstone
+arch grass
 x 13
 y 18
 end
-arch flagstone
+arch grass
 x 13
 y 19
 end
@@ -3262,28 +3201,23 @@ elevation 4743
 x 13
 y 21
 end
-arch hills
-elevation 4927
+arch hills_rocky
 x 13
 y 22
 end
-arch mountain
-elevation 5806
+arch hills_rocky
 x 13
 y 23
 end
-arch mountain
-elevation 8216
+arch hills_rocky
 x 13
 y 24
 end
-arch mountain
-elevation 8753
+arch flagstone
 x 13
 y 25
 end
-arch mountain
-elevation 8713
+arch flagstone
 x 13
 y 26
 end
@@ -3317,13 +3251,11 @@ elevation 6146
 x 13
 y 32
 end
-arch desert
-elevation 732
+arch hills_rocky
 x 13
 y 33
 end
-arch evergreen
-elevation 2498
+arch mountain
 x 13
 y 34
 end
@@ -3337,8 +3269,8 @@ elevation 5397
 x 13
 y 36
 end
-arch hills
-elevation 3404
+arch hills_rocky
+elevation 3163
 x 13
 y 37
 end
@@ -3347,8 +3279,8 @@ elevation 151
 x 13
 y 38
 end
-arch shallow_sea
-elevation -5
+arch grass
+elevation 98
 x 13
 y 39
 end
@@ -3357,13 +3289,12 @@ elevation 52
 x 13
 y 40
 end
-arch shallow_sea
-elevation -10
+arch grass
+elevation 98
 x 13
 y 41
 end
-arch deep_swamp
-elevation 9
+arch swamp
 x 13
 y 42
 end
@@ -3381,19 +3312,22 @@ elevation -2
 x 13
 y 45
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 13
 y 46
 end
-arch flagstone
+arch deep_swamp
 x 13
 y 47
 end
-arch flagstone
+arch brush
+elevation 685
 x 13
 y 48
 end
-arch flagstone
+arch brush
+elevation 685
 x 13
 y 49
 end
@@ -3471,8 +3405,7 @@ elevation 441
 x 14
 y 14
 end
-arch desert
-elevation 790
+arch brush
 x 14
 y 15
 end
@@ -3486,15 +3419,16 @@ elevation 2508
 x 14
 y 17
 end
-arch flagstone
+arch hills
 x 14
 y 18
 end
-arch flagstone
+arch hills
 x 14
 y 19
 end
-arch flagstone
+arch jungle_1
+elevation 1698
 x 14
 y 20
 end
@@ -3503,28 +3437,23 @@ elevation 4757
 x 14
 y 21
 end
-arch mountain
-elevation 5081
+arch hills_rocky
 x 14
 y 22
 end
-arch mountain
-elevation 5904
+arch hills_rocky
 x 14
 y 23
 end
-arch mountain
-elevation 6864
+arch flagstone
 x 14
 y 24
 end
-arch mountain
-elevation 7081
+arch flagstone
 x 14
 y 25
 end
-arch mountain
-elevation 5646
+arch flagstone
 x 14
 y 26
 end
@@ -3553,76 +3482,88 @@ elevation 5733
 x 14
 y 31
 end
-arch hills
-elevation 3795
+arch hills_rocky
 x 14
 y 32
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 14
 y 33
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 14
 y 34
 end
-arch flagstone
+arch mountain
 x 14
 y 35
 end
-arch flagstone
+arch mountain
 x 14
 y 36
 end
-arch flagstone
+arch hills_rocky
+elevation 3163
 x 14
 y 37
 end
-arch flagstone
+arch jungle_1
+elevation 1570
 x 14
 y 38
 end
-arch flagstone
+arch jungle_1
+elevation 1570
 x 14
 y 39
 end
-arch flagstone
+arch grass
+elevation 98
 x 14
 y 40
 end
-arch flagstone
+arch grass
+elevation 98
 x 14
 y 41
 end
-arch flagstone
+arch grass
+elevation 98
 x 14
 y 42
 end
-arch flagstone
+arch swamp
 x 14
 y 43
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 14
 y 44
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 14
 y 45
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 14
 y 46
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 14
 y 47
 end
-arch flagstone
+arch deep_swamp
 x 14
 y 48
 end
-arch flagstone
+arch brush
+elevation 685
 x 14
 y 49
 end
@@ -3710,8 +3651,7 @@ elevation 3048
 x 15
 y 16
 end
-arch hills
-elevation 3773
+arch grass
 x 15
 y 17
 end
@@ -3720,15 +3660,16 @@ elevation 2508
 x 15
 y 18
 end
-arch flagstone
+arch hills
 x 15
 y 19
 end
-arch flagstone
+arch hills
 x 15
 y 20
 end
-arch flagstone
+arch jungle_1
+elevation 1698
 x 15
 y 21
 end
@@ -3737,23 +3678,19 @@ elevation 3711
 x 15
 y 22
 end
-arch hills
-elevation 4184
+arch hills_rocky
 x 15
 y 23
 end
-arch mountain
-elevation 5134
+arch flagstone
 x 15
 y 24
 end
-arch mountain
-elevation 5507
+arch flagstone
 x 15
 y 25
 end
-arch hills
-elevation 3780
+arch flagstone
 x 15
 y 26
 end
@@ -3778,71 +3715,81 @@ x 15
 y 30
 end
 arch jungle_1
-elevation 2313
+elevation 2748
 x 15
 y 31
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 15
 y 32
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 15
 y 33
 end
-arch flagstone
+arch hills_rocky
 x 15
 y 34
 end
-arch flagstone
+arch mountain
 x 15
 y 35
 end
-arch flagstone
+arch mountain
 x 15
 y 36
 end
-arch flagstone
+arch mountain
 x 15
 y 37
 end
-arch flagstone
+arch jungle_1
+elevation 1570
 x 15
 y 38
 end
-arch flagstone
+arch jungle_1
+elevation 1570
 x 15
 y 39
 end
-arch flagstone
+arch jungle_1
+elevation 1570
 x 15
 y 40
 end
-arch flagstone
+arch grass
+elevation 98
 x 15
 y 41
 end
-arch flagstone
+arch grass
+elevation 98
 x 15
 y 42
 end
-arch flagstone
+arch swamp
 x 15
 y 43
 end
-arch flagstone
+arch deep_swamp
 x 15
 y 44
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 15
 y 45
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 15
 y 46
 end
-arch flagstone
+arch shallow_sea
+elevation -2
 x 15
 y 47
 end
@@ -3950,40 +3897,35 @@ elevation 4033
 x 16
 y 18
 end
-arch hills
-elevation 4017
+arch grass
 x 16
 y 19
 end
-arch flagstone
+arch hills
 x 16
 y 20
 end
-arch flagstone
+arch hills
 x 16
 y 21
 end
-arch flagstone
+arch hills
 x 16
 y 22
 end
-arch desert
-elevation 470
+arch hills_rocky
 x 16
 y 23
 end
-arch tree
-elevation 2961
+arch flagstone
 x 16
 y 24
 end
-arch hills
-elevation 4382
+arch flagstone
 x 16
 y 25
 end
-arch mountain
-elevation 5111
+arch hills_rocky
 x 16
 y 26
 end
@@ -4007,15 +3949,17 @@ elevation 2748
 x 16
 y 30
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 16
 y 31
 end
-arch flagstone
+arch jungle_1
+elevation 2748
 x 16
 y 32
 end
-arch flagstone
+arch hills_rocky
 x 16
 y 33
 end
@@ -4064,28 +4008,23 @@ elevation 1570
 x 16
 y 42
 end
-arch brush
-elevation 994
+arch swamp
 x 16
 y 43
 end
-arch desert
-elevation 283
+arch deep_swamp
 x 16
 y 44
 end
-arch brush
-elevation 820
+arch deep_swamp
 x 16
 y 45
 end
-arch brush
-elevation 685
+arch deep_swamp
 x 16
 y 46
 end
-arch desert
-elevation 101
+arch deep_swamp
 x 16
 y 47
 end
@@ -4203,25 +4142,23 @@ elevation 2611
 x 17
 y 20
 end
-arch flagstone
+arch hills
 x 17
 y 21
 end
-arch flagstone
+arch hills
 x 17
 y 22
 end
-arch flagstone
+arch hills
 x 17
 y 23
 end
-arch tree
-elevation 1024
+arch flagstone
 x 17
 y 24
 end
-arch hills
-elevation 3674
+arch flagstone
 x 17
 y 25
 end
@@ -4240,20 +4177,19 @@ elevation 5593
 x 17
 y 28
 end
-arch hills_rocky
-elevation 4456
+arch mountain
 x 17
 y 29
 end
-arch flagstone
+arch hills_rocky
 x 17
 y 30
 end
-arch flagstone
+arch hills_rocky
 x 17
 y 31
 end
-arch flagstone
+arch hills_rocky
 x 17
 y 32
 end
@@ -4312,8 +4248,7 @@ elevation 94
 x 17
 y 43
 end
-arch desert
-elevation 415
+arch swamp
 x 17
 y 44
 end
@@ -4322,13 +4257,11 @@ elevation 1152
 x 17
 y 45
 end
-arch brush
-elevation 913
+arch deep_swamp
 x 17
 y 46
 end
-arch desert
-elevation 47
+arch deep_swamp
 x 17
 y 47
 end
@@ -4451,11 +4384,11 @@ elevation 3083
 x 18
 y 21
 end
-arch flagstone
+arch hills
 x 18
 y 22
 end
-arch flagstone
+arch hills
 x 18
 y 23
 end
@@ -4467,27 +4400,27 @@ arch flagstone
 x 18
 y 25
 end
-arch flagstone
+arch hills
 x 18
 y 26
 end
-arch flagstone
+arch hills_rocky
 x 18
 y 27
 end
-arch flagstone
+arch mountain
 x 18
 y 28
 end
-arch flagstone
+arch mountain
 x 18
 y 29
 end
-arch flagstone
+arch mountain
 x 18
 y 30
 end
-arch flagstone
+arch mountain
 x 18
 y 31
 end
@@ -4561,8 +4494,7 @@ elevation 452
 x 18
 y 45
 end
-arch brush
-elevation 704
+arch deep_swamp
 x 18
 y 46
 end
@@ -4695,7 +4627,7 @@ elevation 4043
 x 19
 y 22
 end
-arch flagstone
+arch hills
 x 19
 y 23
 end
@@ -4707,23 +4639,23 @@ arch flagstone
 x 19
 y 25
 end
-arch flagstone
+arch hills
 x 19
 y 26
 end
-arch flagstone
+arch hills_rocky
 x 19
 y 27
 end
-arch flagstone
+arch mountain
 x 19
 y 28
 end
-arch flagstone
+arch mountain
 x 19
 y 29
 end
-arch flagstone
+arch mountain
 x 19
 y 30
 end
@@ -4797,8 +4729,8 @@ elevation 1639
 x 19
 y 44
 end
-arch desert
-elevation 961
+arch grass
+elevation 452
 x 19
 y 45
 end
@@ -4936,18 +4868,15 @@ elevation 4816
 x 20
 y 22
 end
-arch hills_rocky
-elevation 4907
+arch hills
 x 20
 y 23
 end
-arch hills_rocky
-elevation 4528
+arch flagstone
 x 20
 y 24
 end
-arch jungle_1
-elevation 2274
+arch flagstone
 x 20
 y 25
 end
@@ -4956,13 +4885,11 @@ elevation 4025
 x 20
 y 26
 end
-arch jungle_1
-elevation 2792
+arch treed_hills
 x 20
 y 27
 end
-arch hills
-elevation 4963
+arch hills_rocky
 x 20
 y 28
 end
@@ -5175,28 +5102,23 @@ elevation 4971
 x 21
 y 20
 end
-arch mountain
-elevation 5112
+arch hills
 x 21
 y 21
 end
-arch mountain
-elevation 5424
+arch hills
 x 21
 y 22
 end
-arch mountain
-elevation 5583
+arch hills
 x 21
 y 23
 end
-arch mountain
-elevation 5438
+arch flagstone
 x 21
 y 24
 end
-arch mountain
-elevation 5283
+arch flagstone
 x 21
 y 25
 end
@@ -5205,8 +5127,7 @@ elevation 4445
 x 21
 y 26
 end
-arch tree
-elevation 2416
+arch treed_hills
 x 21
 y 27
 end
@@ -5428,23 +5349,19 @@ elevation 4610
 x 22
 y 21
 end
-arch mountain
-elevation 5095
+arch hills
 x 22
 y 22
 end
-arch mountain
-elevation 5672
+arch hills
 x 22
 y 23
 end
-arch mountain
-elevation 5942
+arch flagstone
 x 22
 y 24
 end
-arch mountain
-elevation 5832
+arch flagstone
 x 22
 y 25
 end
@@ -5453,8 +5370,7 @@ elevation 5128
 x 22
 y 26
 end
-arch hills
-elevation 3536
+arch hills_rocky
 x 22
 y 27
 end
@@ -5682,23 +5598,20 @@ elevation 4186
 x 23
 y 22
 end
-arch mountain
-elevation 5283
+arch jungle_1
+elevation 2299
 x 23
 y 23
 end
-arch mountain
-elevation 5759
+arch flagstone
 x 23
 y 24
 end
-arch mountain
-elevation 5191
+arch flagstone
 x 23
 y 25
 end
-arch hills
-elevation 4715
+arch hills_rocky
 x 23
 y 26
 end
@@ -5757,8 +5670,8 @@ elevation 2426
 x 23
 y 37
 end
-arch desert
-elevation 772
+arch hills
+elevation 2125
 x 23
 y 38
 end
@@ -5931,18 +5844,16 @@ elevation 3340
 x 24
 y 22
 end
-arch mountain
-elevation 5088
+arch jungle_1
+elevation 2299
 x 24
 y 23
 end
-arch mountain
-elevation 5329
+arch flagstone
 x 24
 y 24
 end
-arch mountain
-elevation 5480
+arch flagstone
 x 24
 y 25
 end
@@ -6180,18 +6091,16 @@ elevation 4070
 x 25
 y 22
 end
-arch mountain
-elevation 5223
+arch hills_rocky
+elevation 4070
 x 25
 y 23
 end
-arch mountain
-elevation 6141
+arch flagstone
 x 25
 y 24
 end
-arch mountain
-elevation 6927
+arch flagstone
 x 25
 y 25
 end
@@ -6255,8 +6164,8 @@ elevation 571
 x 25
 y 37
 end
-arch desert
-elevation 222
+arch hills
+elevation 2125
 x 25
 y 38
 end
@@ -6265,8 +6174,8 @@ elevation 2586
 x 25
 y 39
 end
-arch desert
-elevation 832
+arch hills
+elevation 2125
 x 25
 y 40
 end
@@ -6429,18 +6338,16 @@ elevation 4418
 x 26
 y 22
 end
-arch mountain
-elevation 5300
+arch jungle_1
+elevation 2299
 x 26
 y 23
 end
-arch mountain
-elevation 6102
+arch flagstone
 x 26
 y 24
 end
-arch mountain
-elevation 7226
+arch flagstone
 x 26
 y 25
 end
@@ -6683,18 +6590,15 @@ elevation 4655
 x 27
 y 23
 end
-arch hills_rocky
-elevation 4613
+arch flagstone
 x 27
 y 24
 end
-arch mountain
-elevation 6301
+arch flagstone
 x 27
 y 25
 end
-arch mountain
-elevation 7392
+arch hills_rocky
 x 27
 y 26
 end
@@ -6738,8 +6642,8 @@ elevation 3025
 x 27
 y 34
 end
-arch desert
-elevation 845
+arch hills_rocky
+elevation 3025
 x 27
 y 35
 end
@@ -6932,13 +6836,11 @@ elevation 4281
 x 28
 y 23
 end
-arch hills_rocky
-elevation 4600
+arch flagstone
 x 28
 y 24
 end
-arch hills_rocky
-elevation 4934
+arch flagstone
 x 28
 y 25
 end
@@ -7181,13 +7083,11 @@ elevation 2545
 x 29
 y 23
 end
-arch hills_rocky
-elevation 4198
+arch flagstone
 x 29
 y 24
 end
-arch hills_rocky
-elevation 3849
+arch flagstone
 x 29
 y 25
 end
@@ -7430,13 +7330,11 @@ elevation 4231
 x 30
 y 23
 end
-arch hills_rocky
-elevation 3965
+arch flagstone
 x 30
 y 24
 end
-arch hills_rocky
-elevation 3413
+arch flagstone
 x 30
 y 25
 end
@@ -7679,13 +7577,11 @@ elevation 4486
 x 31
 y 23
 end
-arch hills_rocky
-elevation 4597
+arch flagstone
 x 31
 y 24
 end
-arch hills_rocky
-elevation 3383
+arch flagstone
 x 31
 y 25
 end
@@ -7923,18 +7819,15 @@ elevation 7301
 x 32
 y 22
 end
-arch mountain
-elevation 6555
+arch hills_rocky
 x 32
 y 23
 end
-arch mountain
-elevation 6089
+arch flagstone
 x 32
 y 24
 end
-arch mountain
-elevation 5630
+arch flagstone
 x 32
 y 25
 end
@@ -8172,23 +8065,19 @@ elevation 7154
 x 33
 y 22
 end
-arch mountain
-elevation 7365
+arch hills_rocky
 x 33
 y 23
 end
-arch mountain
-elevation 7210
+arch flagstone
 x 33
 y 24
 end
-arch mountain
-elevation 6986
+arch flagstone
 x 33
 y 25
 end
-arch mountain
-elevation 6286
+arch hills_rocky
 x 33
 y 26
 end
@@ -8426,13 +8315,11 @@ elevation 7364
 x 34
 y 23
 end
-arch mountain
-elevation 7733
+arch flagstone
 x 34
 y 24
 end
-arch mountain
-elevation 7820
+arch flagstone
 x 34
 y 25
 end
@@ -8675,13 +8562,11 @@ elevation 7297
 x 35
 y 23
 end
-arch mountain
-elevation 7632
+arch flagstone
 x 35
 y 24
 end
-arch mountain
-elevation 8938
+arch flagstone
 x 35
 y 25
 end
@@ -8924,13 +8809,11 @@ elevation 8817
 x 36
 y 23
 end
-arch mountain2
-elevation 9724
+arch flagstone
 x 36
 y 24
 end
-arch mountain2
-elevation 10260
+arch flagstone
 x 36
 y 25
 end
@@ -9173,13 +9056,11 @@ elevation 9524
 x 37
 y 23
 end
-arch mountain2
-elevation 10435
+arch flagstone
 x 37
 y 24
 end
-arch mountain2
-elevation 11009
+arch flagstone
 x 37
 y 25
 end
@@ -9422,13 +9303,11 @@ elevation 8905
 x 38
 y 23
 end
-arch mountain2
-elevation 9556
+arch flagstone
 x 38
 y 24
 end
-arch mountain2
-elevation 10922
+arch flagstone
 x 38
 y 25
 end
@@ -9548,7 +9427,7 @@ x 38
 y 48
 end
 arch mountain
-elevation 8123
+elevation 6832
 x 38
 y 49
 end
@@ -9671,13 +9550,11 @@ elevation 6889
 x 39
 y 23
 end
-arch mountain2
-elevation 9467
+arch flagstone
 x 39
 y 24
 end
-arch mountain2
-elevation 10594
+arch flagstone
 x 39
 y 25
 end
@@ -9797,7 +9674,7 @@ x 39
 y 48
 end
 arch mountain
-elevation 7803
+elevation 6832
 x 39
 y 49
 end
@@ -9920,13 +9797,11 @@ elevation 7140
 x 40
 y 23
 end
-arch mountain2
-elevation 9464
+arch flagstone
 x 40
 y 24
 end
-arch mountain2
-elevation 9999
+arch flagstone
 x 40
 y 25
 end
@@ -10169,13 +10044,11 @@ elevation 7397
 x 41
 y 23
 end
-arch mountain2
-elevation 9685
+arch flagstone
 x 41
 y 24
 end
-arch mountain2
-elevation 11065
+arch flagstone
 x 41
 y 25
 end
@@ -10413,18 +10286,15 @@ elevation 3793
 x 42
 y 22
 end
-arch mountain
-elevation 6922
+arch hills_rocky
 x 42
 y 23
 end
-arch mountain2
-elevation 9286
+arch flagstone
 x 42
 y 24
 end
-arch mountain2
-elevation 10720
+arch flagstone
 x 42
 y 25
 end
@@ -10662,18 +10532,15 @@ elevation 4619
 x 43
 y 22
 end
-arch mountain
-elevation 6199
+arch hills_rocky
 x 43
 y 23
 end
-arch mountain
-elevation 7767
+arch flagstone
 x 43
 y 24
 end
-arch mountain
-elevation 8785
+arch flagstone
 x 43
 y 25
 end
@@ -10911,18 +10778,15 @@ elevation 4448
 x 44
 y 22
 end
-arch mountain
-elevation 5338
+arch hills_rocky
 x 44
 y 23
 end
-arch mountain
-elevation 5569
+arch flagstone
 x 44
 y 24
 end
-arch mountain
-elevation 5846
+arch flagstone
 x 44
 y 25
 end
@@ -11165,13 +11029,11 @@ elevation 4572
 x 45
 y 23
 end
-arch hills
-elevation 4983
+arch flagstone
 x 45
 y 24
 end
-arch mountain
-elevation 5322
+arch flagstone
 x 45
 y 25
 end
@@ -11414,13 +11276,11 @@ elevation 4032
 x 46
 y 23
 end
-arch hills
-elevation 4147
+arch flagstone
 x 46
 y 24
 end
-arch hills_rocky
-elevation 4050
+arch flagstone
 x 46
 y 25
 end
@@ -11663,13 +11523,11 @@ elevation 3379
 x 47
 y 23
 end
-arch hills
-elevation 3259
+arch flagstone
 x 47
 y 24
 end
-arch jungle_1
-elevation 2797
+arch flagstone
 x 47
 y 25
 end
@@ -11912,13 +11770,11 @@ elevation 3456
 x 48
 y 23
 end
-arch tree
-elevation 2766
+arch flagstone
 x 48
 y 24
 end
-arch tree
-elevation 1150
+arch flagstone
 x 48
 y 25
 end
@@ -12161,13 +12017,11 @@ elevation 3360
 x 49
 y 23
 end
-arch jungle_1
-elevation 2502
+arch flagstone
 x 49
 y 24
 end
-arch tree
-elevation 1725
+arch flagstone
 x 49
 y 25
 end

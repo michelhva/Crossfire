@@ -50,43 +50,43 @@ end
 arch mountain2
 y 11
 end
-arch mountain2
+arch s_mountain
 y 12
 end
-arch wasteland
+arch mountain5
 y 13
 end
-arch wasteland
+arch mountain5
 y 14
 end
-arch wasteland
+arch s_mountain
 y 15
 end
-arch wasteland
+arch s_mountain
 y 16
 end
-arch wasteland
+arch s_mountain
 y 17
 end
-arch wasteland
+arch mountain5
 y 18
 end
-arch mountain2
+arch mountain5
 y 19
 end
-arch mountain2
+arch s_mountain
 y 20
 end
-arch mountain2
+arch snow
 y 21
 end
-arch mountain2
+arch snow
 y 22
 end
-arch mountain2
+arch mountain5
 y 23
 end
-arch mountain2
+arch mountain5
 y 24
 end
 arch mountain2
@@ -95,55 +95,55 @@ end
 arch mountain
 y 26
 end
-arch mountain
+arch mountain5
 y 27
 end
-arch mountain
+arch mountain5
 y 28
 end
-arch mountain
+arch mountain5
 y 29
 end
-arch mountain
+arch mountain5
 y 30
 end
-arch mountain
+arch mountain5
 y 31
 end
-arch mountain2
+arch s_mountain
 y 32
 end
-arch wasteland
+arch mountain5
 y 33
 end
-arch wasteland
+arch mountain5
 y 34
 end
-arch wasteland
+arch mountain5
 y 35
 end
-arch wasteland
+arch mountain5
 y 36
 end
-arch wasteland
+arch mountain5
 y 37
 end
-arch wasteland
+arch s_mountain
 y 38
 end
-arch wasteland
+arch s_mountain
 y 39
 end
-arch wasteland
+arch mountain5
 y 40
 end
-arch wasteland
+arch mountain5
 y 41
 end
-arch wasteland
+arch s_mountain
 y 42
 end
-arch wasteland
+arch s_mountain
 y 43
 end
 arch mountain2
@@ -211,35 +211,35 @@ arch mountain
 x 1
 y 11
 end
-arch mountain2
+arch s_mountain
 x 1
 y 12
 end
-arch wasteland
+arch mountain5
 x 1
 y 13
 end
-arch wasteland
+arch mountain5
 x 1
 y 14
 end
-arch wasteland
+arch s_mountain
 x 1
 y 15
 end
-arch wasteland
+arch s_mountain
 x 1
 y 16
 end
-arch wasteland
+arch s_mountain
 x 1
 y 17
 end
-arch wasteland
+arch s_mountain
 x 1
 y 18
 end
-arch mountain2
+arch mountain5
 x 1
 y 19
 end
@@ -247,55 +247,55 @@ arch mountain2
 x 1
 y 20
 end
-arch mountain
+arch snow
 x 1
 y 21
 end
-arch mountain2
+arch snow
 x 1
 y 22
 end
-arch mountain2
+arch mountain5
 x 1
 y 23
 end
-arch mountain2
+arch mountain5
 x 1
 y 24
 end
-arch mountain2
+arch mountain5
 x 1
 y 25
 end
-arch mountain
+arch mountain5
 x 1
 y 26
 end
-arch mountain
+arch mountain5
 x 1
 y 27
 end
-arch mountain
+arch s_mountain
 x 1
 y 28
 end
-arch mountain
+arch s_mountain
 x 1
 y 29
 end
-arch mountain
+arch s_mountain
 x 1
 y 30
 end
-arch mountain2
+arch s_mountain
 x 1
 y 31
 end
-arch mountain2
+arch s_mountain
 x 1
 y 32
 end
-arch mountain2
+arch s_mountain
 x 1
 y 33
 end
@@ -303,43 +303,43 @@ arch mountain2
 x 1
 y 34
 end
-arch wasteland
+arch mountain5
 x 1
 y 35
 end
-arch wasteland
+arch s_mountain
 x 1
 y 36
 end
-arch wasteland
+arch s_mountain
 x 1
 y 37
 end
-arch wasteland
+arch mountain2
 x 1
 y 38
 end
-arch wasteland
+arch s_mountain
 x 1
 y 39
 end
-arch wasteland
+arch s_mountain
 x 1
 y 40
 end
-arch wasteland
+arch mountain5
 x 1
 y 41
 end
-arch wasteland
+arch mountain5
 x 1
 y 42
 end
-arch wasteland
+arch s_mountain
 x 1
 y 43
 end
-arch mountain
+arch mountain2
 x 1
 y 44
 end
@@ -410,75 +410,81 @@ arch mountain2
 x 2
 y 11
 end
-arch wasteland
+arch s_mountain
 x 2
 y 12
 end
-arch wasteland
+arch mountain5
 x 2
 y 13
 end
-arch wasteland
+arch mountain5
 x 2
 y 14
 end
-arch wasteland
+arch s_mountain
 x 2
 y 15
 end
-arch wasteland
+arch mountain5
 x 2
 y 16
 end
-arch wasteland
+arch s_mountain
 x 2
 y 17
 end
-arch wasteland
+arch s_mountain
 x 2
 y 18
 end
-arch mountain2
+arch mountain5
 x 2
 y 19
 end
-arch mountain2
+arch s_mountain
 x 2
 y 20
 end
-arch mountain
+arch snow
 x 2
 y 21
 end
-arch mountain2
+arch istone
+name flagstone
 x 2
 y 22
 end
-arch mountain2
+arch snow5
+name snow
+x 2
+y 22
+end
+arch s_mountain
 x 2
 y 23
 end
-arch mountain2
+arch mountain5
 x 2
 y 24
 end
-arch mountain
+arch s_mountain
 x 2
 y 25
 end
-arch mountain
+arch s_mountain
 x 2
 y 26
 end
-arch mountain
+arch s_mountain
 x 2
 y 27
 end
-arch mountain
+arch s_mountain
 x 2
 y 28
 end
-arch mountain
+arch mountain2
 x 2
 y 29
 end
@@ -514,27 +520,27 @@ arch mountain2
 x 2
 y 37
 end
-arch wasteland
+arch mountain2
 x 2
 y 38
 end
-arch wasteland
+arch mountain2
 x 2
 y 39
 end
-arch wasteland
+arch mountain2
 x 2
 y 40
 end
-arch wasteland
+arch s_mountain
 x 2
 y 41
 end
-arch wasteland
+arch mountain5
 x 2
 y 42
 end
-arch mountain2
+arch s_mountain
 x 2
 y 43
 end
@@ -601,71 +607,78 @@ arch mountain2
 x 3
 y 9
 end
-arch wasteland
+arch s_mountain
 x 3
 y 10
 end
-arch wasteland
+arch s_mountain
 x 3
 y 11
 end
-arch wasteland
+arch mountain5
 x 3
 y 12
 end
-arch wasteland
+arch mountain5
 x 3
 y 13
 end
-arch wasteland
+arch s_mountain
 x 3
 y 14
 end
-arch wasteland
+arch s_mountain
 x 3
 y 15
 end
-arch wasteland
+arch s_mountain
 x 3
 y 16
 end
-arch wasteland
+arch s_mountain
 x 3
 y 17
 end
-arch wasteland
+arch s_mountain
 x 3
 y 18
 end
-arch mountain2
+arch s_mountain
 x 3
 y 19
 end
-arch mountain
+arch s_mountain
 x 3
 y 20
 end
-arch mountain2
+arch istone
+name flagstone
 x 3
 y 21
 end
-arch mountain2
+arch snow5
+name snow
+x 3
+y 21
+end
+arch istone
+name flagstone
 x 3
 y 22
 end
-arch mountain2
+arch s_mountain
 x 3
 y 23
 end
-arch mountain2
+arch s_mountain
 x 3
 y 24
 end
-arch mountain2
+arch s_mountain
 x 3
 y 25
 end
-arch mountain
+arch s_mountain
 x 3
 y 26
 end
@@ -721,23 +734,23 @@ arch mountain2
 x 3
 y 39
 end
-arch wasteland
+arch mountain2
 x 3
 y 40
 end
-arch wasteland
+arch mountain2
 x 3
 y 41
 end
-arch mountain2
+arch s_mountain
 x 3
 y 42
 end
-arch mountain2
+arch mountain5
 x 3
 y 43
 end
-arch mountain
+arch s_mountain
 x 3
 y 44
 end
@@ -800,63 +813,65 @@ arch mountain2
 x 4
 y 9
 end
-arch wasteland
+arch s_mountain
 x 4
 y 10
 end
-arch wasteland
+arch s_mountain
 x 4
 y 11
 end
-arch wasteland
+arch mountain5
 x 4
 y 12
 end
-arch wasteland
+arch mountain5
 x 4
 y 13
 end
-arch wasteland
+arch mountain5
 x 4
 y 14
 end
-arch wasteland
+arch s_mountain
 x 4
 y 15
 end
-arch wasteland
+arch s_mountain
 x 4
 y 16
 end
-arch wasteland
+arch s_mountain
 x 4
 y 17
 end
-arch wasteland
+arch s_mountain
 x 4
 y 18
 end
-arch mountain
+arch s_mountain
 x 4
 y 19
 end
-arch mountain
+arch s_mountain
 x 4
 y 20
 end
-arch mountain
+arch istone
+name flagstone
 x 4
 y 21
 end
-arch mountain2
+arch istone
+name flagstone
 x 4
 y 22
 end
-arch mountain2
+arch s_mountain
 x 4
 y 23
 end
-arch mountain2
+arch s_mountain
 x 4
 y 24
 end
@@ -932,11 +947,11 @@ arch mountain2
 x 4
 y 42
 end
-arch mountain
+arch s_mountain
 x 4
 y 43
 end
-arch mountain
+arch mountain2
 x 4
 y 44
 end
@@ -999,39 +1014,39 @@ arch mountain2
 x 5
 y 9
 end
-arch wasteland
+arch s_mountain
 x 5
 y 10
 end
-arch mountain2
+arch s_mountain
 x 5
 y 11
 end
-arch mountain2
+arch mountain5
 x 5
 y 12
 end
-arch wasteland
+arch mountain5
 x 5
 y 13
 end
-arch wasteland
+arch s_mountain
 x 5
 y 14
 end
-arch wasteland
+arch s_mountain
 x 5
 y 15
 end
-arch wasteland
+arch s_mountain
 x 5
 y 16
 end
-arch wasteland
+arch s_mountain
 x 5
 y 17
 end
-arch wasteland
+arch s_mountain
 x 5
 y 18
 end
@@ -1039,19 +1054,21 @@ arch mountain2
 x 5
 y 19
 end
-arch mountain2
+arch s_mountain
 x 5
 y 20
 end
-arch mountain2
+arch istone
+name flagstone
 x 5
 y 21
 end
-arch mountain2
+arch istone
+name flagstone
 x 5
 y 22
 end
-arch mountain2
+arch s_mountain
 x 5
 y 23
 end
@@ -1131,7 +1148,7 @@ arch mountain
 x 5
 y 42
 end
-arch mountain
+arch mountain2
 x 5
 y 43
 end
@@ -1202,31 +1219,31 @@ arch mountain2
 x 6
 y 10
 end
-arch mountain2
+arch s_mountain
 x 6
 y 11
 end
-arch mountain
+arch mountain5
 x 6
 y 12
 end
-arch mountain2
+arch mountain5
 x 6
 y 13
 end
-arch wasteland
+arch s_mountain
 x 6
 y 14
 end
-arch wasteland
+arch s_mountain
 x 6
 y 15
 end
-arch wasteland
+arch s_mountain
 x 6
 y 16
 end
-arch wasteland
+arch s_mountain
 x 6
 y 17
 end
@@ -1238,19 +1255,21 @@ arch mountain2
 x 6
 y 19
 end
-arch mountain2
+arch s_mountain
 x 6
 y 20
 end
-arch mountain2
+arch istone
+name flagstone
 x 6
 y 21
 end
-arch mountain
+arch istone
+name flagstone
 x 6
 y 22
 end
-arch mountain
+arch s_mountain
 x 6
 y 23
 end
@@ -1290,7 +1309,7 @@ arch hills_rocky
 x 6
 y 32
 end
-arch hills_rocky
+arch flagstone
 x 6
 y 33
 end
@@ -1401,23 +1420,23 @@ arch mountain2
 x 7
 y 10
 end
-arch mountain
+arch s_mountain
 x 7
 y 11
 end
-arch mountain
+arch mountain5
 x 7
 y 12
 end
-arch mountain2
+arch mountain5
 x 7
 y 13
 end
-arch mountain2
+arch s_mountain
 x 7
 y 14
 end
-arch mountain
+arch s_mountain
 x 7
 y 15
 end
@@ -1441,19 +1460,21 @@ arch mountain2
 x 7
 y 20
 end
-arch mountain
+arch istone
+name flagstone
 x 7
 y 21
 end
-arch hills_rocky
+arch istone
+name flagstone
 x 7
 y 22
 end
-arch mountain
+arch s_mountain
 x 7
 y 23
 end
-arch mountain
+arch mountain2
 x 7
 y 24
 end
@@ -1481,7 +1502,7 @@ arch hills_rocky
 x 7
 y 30
 end
-arch hills
+arch hills_rocky
 x 7
 y 31
 end
@@ -1489,281 +1510,283 @@ arch hills_rocky
 x 7
 y 32
 end
-arch hills
+arch flagstone
 x 7
 y 33
 end
-arch woods
+arch flagstone
 x 7
 y 34
 end
-arch hills
+arch flagstone
 x 7
 y 35
+end
+arch flagstone
+x 7
+y 36
+end
+arch hills
+x 7
+y 37
+end
+arch hills
+x 7
+y 38
+end
+arch mountain
+x 7
+y 39
+end
+arch mountain
+x 7
+y 40
+end
+arch mountain
+x 7
+y 41
+end
+arch hills
+x 7
+y 42
+end
+arch mountain
+x 7
+y 43
+end
+arch mountain
+x 7
+y 44
+end
+arch mountain
+x 7
+y 45
+end
+arch mountain
+x 7
+y 46
+end
+arch mountain
+x 7
+y 47
+end
+arch mountain
+x 7
+y 48
+end
+arch mountain
+x 7
+y 49
+end
+arch mountain
+x 8
+end
+arch mountain
+x 8
+y 1
+end
+arch hills
+x 8
+y 2
+end
+arch hills
+x 8
+y 3
+end
+arch hills_rocky
+x 8
+y 4
+end
+arch mountain
+x 8
+y 5
+end
+arch mountain
+x 8
+y 6
+end
+arch mountain
+x 8
+y 7
+end
+arch mountain
+x 8
+y 8
+end
+arch mountain
+x 8
+y 9
+end
+arch mountain
+x 8
+y 10
+end
+arch s_mountain
+x 8
+y 11
+end
+arch mountain5
+x 8
+y 12
+end
+arch mountain5
+x 8
+y 13
+end
+arch s_mountain
+x 8
+y 14
+end
+arch mountain2
+x 8
+y 15
+end
+arch mountain2
+x 8
+y 16
+end
+arch mountain2
+x 8
+y 17
+end
+arch mountain2
+x 8
+y 18
+end
+arch mountain2
+x 8
+y 19
+end
+arch mountain2
+x 8
+y 20
+end
+arch istone
+name flagstone
+x 8
+y 21
+end
+arch istone
+name flagstone
+x 8
+y 22
+end
+arch s_mountain
+x 8
+y 23
+end
+arch mountain2
+x 8
+y 24
+end
+arch mountain
+x 8
+y 25
+end
+arch mountain
+x 8
+y 26
+end
+arch mountain
+x 8
+y 27
+end
+arch hills_rocky
+x 8
+y 28
+end
+arch mountain
+x 8
+y 29
+end
+arch hills_rocky
+x 8
+y 30
+end
+arch hills_rocky
+x 8
+y 31
+end
+arch hills_rocky
+x 8
+y 32
+end
+arch hills_rocky
+x 8
+y 33
+end
+arch hills_rocky
+x 8
+y 34
+end
+arch hills_rocky
+x 8
+y 35
+end
+arch flagstone
+x 8
+y 36
+end
+arch hills
+x 8
+y 37
+end
+arch hills
+x 8
+y 38
+end
+arch hills
+x 8
+y 39
+end
+arch mountain
+x 8
+y 40
+end
+arch hills_rocky
+x 8
+y 41
+end
+arch hills
+x 8
+y 42
+end
+arch mountain
+x 8
+y 43
+end
+arch mountain
+x 8
+y 44
+end
+arch mountain
+x 8
+y 45
+end
+arch mountain
+x 8
+y 46
+end
+arch mountain
+x 8
+y 47
+end
+arch mountain
+x 8
+y 48
+end
+arch mountain
+x 8
+y 49
+end
+arch mountain
+x 9
+end
+arch hills_rocky
+x 9
+y 1
 end
 arch jungle_1
-x 7
-y 36
-end
-arch hills
-x 7
-y 37
-end
-arch hills
-x 7
-y 38
-end
-arch mountain
-x 7
-y 39
-end
-arch mountain
-x 7
-y 40
-end
-arch mountain
-x 7
-y 41
-end
-arch hills
-x 7
-y 42
-end
-arch mountain
-x 7
-y 43
-end
-arch mountain
-x 7
-y 44
-end
-arch mountain
-x 7
-y 45
-end
-arch mountain
-x 7
-y 46
-end
-arch mountain
-x 7
-y 47
-end
-arch mountain
-x 7
-y 48
-end
-arch mountain
-x 7
-y 49
-end
-arch mountain
-x 8
-end
-arch mountain
-x 8
-y 1
-end
-arch hills
-x 8
-y 2
-end
-arch hills
-x 8
-y 3
-end
-arch hills_rocky
-x 8
-y 4
-end
-arch mountain
-x 8
-y 5
-end
-arch mountain
-x 8
-y 6
-end
-arch mountain
-x 8
-y 7
-end
-arch mountain
-x 8
-y 8
-end
-arch mountain
-x 8
-y 9
-end
-arch mountain
-x 8
-y 10
-end
-arch mountain
-x 8
-y 11
-end
-arch hills_rocky
-x 8
-y 12
-end
-arch mountain
-x 8
-y 13
-end
-arch mountain2
-x 8
-y 14
-end
-arch mountain2
-x 8
-y 15
-end
-arch mountain2
-x 8
-y 16
-end
-arch mountain2
-x 8
-y 17
-end
-arch mountain2
-x 8
-y 18
-end
-arch mountain2
-x 8
-y 19
-end
-arch mountain2
-x 8
-y 20
-end
-arch mountain
-x 8
-y 21
-end
-arch hills_rocky
-x 8
-y 22
-end
-arch desert
-x 8
-y 23
-end
-arch hills_rocky
-x 8
-y 24
-end
-arch hills_rocky
-x 8
-y 25
-end
-arch mountain
-x 8
-y 26
-end
-arch mountain
-x 8
-y 27
-end
-arch hills_rocky
-x 8
-y 28
-end
-arch mountain
-x 8
-y 29
-end
-arch hills_rocky
-x 8
-y 30
-end
-arch hills_rocky
-x 8
-y 31
-end
-arch hills_rocky
-x 8
-y 32
-end
-arch hills_rocky
-x 8
-y 33
-end
-arch hills_rocky
-x 8
-y 34
-end
-arch hills_rocky
-x 8
-y 35
-end
-arch hills_rocky
-x 8
-y 36
-end
-arch hills
-x 8
-y 37
-end
-arch hills
-x 8
-y 38
-end
-arch hills
-x 8
-y 39
-end
-arch mountain
-x 8
-y 40
-end
-arch hills_rocky
-x 8
-y 41
-end
-arch hills
-x 8
-y 42
-end
-arch mountain
-x 8
-y 43
-end
-arch mountain
-x 8
-y 44
-end
-arch mountain
-x 8
-y 45
-end
-arch mountain
-x 8
-y 46
-end
-arch mountain
-x 8
-y 47
-end
-arch mountain
-x 8
-y 48
-end
-arch mountain
-x 8
-y 49
-end
-arch mountain
-x 9
-end
-arch hills_rocky
-x 9
-y 1
-end
-arch jungle_1
 x 9
 y 2
 end
@@ -1799,23 +1822,23 @@ arch mountain
 x 9
 y 10
 end
-arch mountain
+arch mountain5
 x 9
 y 11
 end
-arch mountain
+arch mountain5
 x 9
 y 12
 end
-arch mountain
+arch mountain5
 x 9
 y 13
 end
-arch mountain
+arch s_mountain
 x 9
 y 14
 end
-arch mountain
+arch s_mountain
 x 9
 y 15
 end
@@ -1835,27 +1858,30 @@ arch mountain2
 x 9
 y 19
 end
-arch mountain
+arch s_mountain
 x 9
 y 20
 end
-arch mountain
+arch istone
+name flagstone
 x 9
 y 21
 end
-arch hills_rocky
+arch istone
+name flagstone
 x 9
 y 22
 end
-arch desert
+arch istone
+name flagstone
 x 9
 y 23
 end
-arch hills
+arch s_mountain
 x 9
 y 24
 end
-arch hills_rocky
+arch mountain
 x 9
 y 25
 end
@@ -1899,11 +1925,11 @@ arch hills
 x 9
 y 35
 end
-arch hills_rocky
+arch flagstone
 x 9
 y 36
 end
-arch hills_rocky
+arch flagstone
 x 9
 y 37
 end
@@ -1990,27 +2016,27 @@ arch mountain2
 x 10
 y 8
 end
-arch mountain2
+arch mountain5
 x 10
 y 9
 end
-arch mountain
+arch mountain5
 x 10
 y 10
 end
-arch mountain
+arch mountain5
 x 10
 y 11
 end
-arch mountain
+arch mountain5
 x 10
 y 12
 end
-arch hills_rocky
+arch mountain5
 x 10
 y 13
 end
-arch mountain
+arch s_mountain
 x 10
 y 14
 end
@@ -2034,27 +2060,30 @@ arch mountain2
 x 10
 y 19
 end
-arch mountain
+arch s_mountain
 x 10
 y 20
 end
-arch mountain
+arch istone
+name flagstone
 x 10
 y 21
 end
-arch mountain
+arch istone
+name flagstone
 x 10
 y 22
 end
-arch hills_rocky
+arch istone
+name flagstone
 x 10
 y 23
 end
-arch hills
+arch s_mountain
 x 10
 y 24
 end
-arch hills_rocky
+arch mountain
 x 10
 y 25
 end
@@ -2102,7 +2131,7 @@ arch hills_rocky
 x 10
 y 36
 end
-arch hills
+arch flagstone
 x 10
 y 37
 end
@@ -2154,7 +2183,7 @@ arch mountain
 x 10
 y 49
 end
-arch mountain
+arch hills_rocky
 x 11
 end
 arch mountain
@@ -2193,23 +2222,23 @@ arch mountain2
 x 11
 y 9
 end
-arch mountain
+arch mountain5
 x 11
 y 10
 end
-arch mountain
+arch mountain5
 x 11
 y 11
 end
-arch mountain
+arch mountain5
 x 11
 y 12
 end
-arch mountain
+arch mountain5
 x 11
 y 13
 end
-arch hills_rocky
+arch s_mountain
 x 11
 y 14
 end
@@ -2217,7 +2246,7 @@ arch mountain
 x 11
 y 15
 end
-arch hills_rocky
+arch mountain2
 x 11
 y 16
 end
@@ -2237,19 +2266,21 @@ arch mountain
 x 11
 y 20
 end
-arch mountain
+arch s_mountain
 x 11
 y 21
 end
-arch mountain
+arch istone
+name flagstone
 x 11
 y 22
 end
-arch hills_rocky
+arch istone
+name flagstone
 x 11
 y 23
 end
-arch hills_rocky
+arch mountain2
 x 11
 y 24
 end
@@ -2289,7 +2320,7 @@ arch hills
 x 11
 y 33
 end
-arch jungle_1
+arch treed_hills
 x 11
 y 34
 end
@@ -2301,7 +2332,7 @@ arch hills_rocky
 x 11
 y 36
 end
-arch hills
+arch flagstone
 x 11
 y 37
 end
@@ -2363,125 +2394,127 @@ end
 arch hills
 x 12
 y 2
-end
-arch jungle_1
-x 12
-y 3
-end
-arch jungle_1
-x 12
-y 4
-end
-arch mountain
-x 12
-y 5
-end
-arch mountain
-x 12
-y 6
-end
-arch mountain
-x 12
-y 7
-end
-arch mountain
-x 12
-y 8
-end
-arch mountain
-x 12
-y 9
-end
-arch mountain
-x 12
-y 10
-end
-arch hills_rocky
-x 12
-y 11
-end
-arch hills_rocky
-x 12
-y 12
-end
-arch mountain
-x 12
-y 13
-end
-arch mountain
-x 12
-y 14
-end
-arch mountain
-x 12
-y 15
-end
-arch mountain
-x 12
-y 16
-end
-arch mountain
-x 12
-y 17
-end
-arch mountain
-x 12
-y 18
-end
-arch mountain
-x 12
-y 19
-end
-arch mountain
-x 12
-y 20
-end
-arch mountain
-x 12
-y 21
-end
-arch mountain
-x 12
-y 22
-end
-arch mountain
-x 12
-y 23
-end
-arch hills
-x 12
-y 24
-end
-arch hills
-x 12
-y 25
-end
-arch mountain
-x 12
-y 26
-end
-arch mountain
-x 12
-y 27
-end
-arch mountain
-x 12
-y 28
-end
-arch mountain
-x 12
-y 29
-end
-arch mountain
-x 12
-y 30
-end
-arch hills
-x 12
-y 31
 end
 arch jungle_1
 x 12
+y 3
+end
+arch jungle_1
+x 12
+y 4
+end
+arch mountain
+x 12
+y 5
+end
+arch mountain
+x 12
+y 6
+end
+arch mountain
+x 12
+y 7
+end
+arch mountain
+x 12
+y 8
+end
+arch mountain
+x 12
+y 9
+end
+arch mountain
+x 12
+y 10
+end
+arch mountain5
+x 12
+y 11
+end
+arch mountain5
+x 12
+y 12
+end
+arch mountain5
+x 12
+y 13
+end
+arch mountain5
+x 12
+y 14
+end
+arch mountain
+x 12
+y 15
+end
+arch mountain
+x 12
+y 16
+end
+arch mountain
+x 12
+y 17
+end
+arch mountain
+x 12
+y 18
+end
+arch mountain
+x 12
+y 19
+end
+arch mountain
+x 12
+y 20
+end
+arch s_mountain
+x 12
+y 21
+end
+arch istone
+name flagstone
+x 12
+y 22
+end
+arch istone
+name flagstone
+x 12
+y 23
+end
+arch s_mountain
+x 12
+y 24
+end
+arch mountain
+x 12
+y 25
+end
+arch mountain
+x 12
+y 26
+end
+arch mountain
+x 12
+y 27
+end
+arch mountain
+x 12
+y 28
+end
+arch mountain
+x 12
+y 29
+end
+arch mountain
+x 12
+y 30
+end
+arch hills
+x 12
+y 31
+end
+arch treed_hills
+x 12
 y 32
 end
 arch hills
@@ -2492,7 +2525,7 @@ arch hills
 x 12
 y 34
 end
-arch jungle_1
+arch treed_hills
 x 12
 y 35
 end
@@ -2500,7 +2533,7 @@ arch hills
 x 12
 y 36
 end
-arch hills
+arch flagstone
 x 12
 y 37
 end
@@ -2540,7 +2573,7 @@ arch mountain
 x 12
 y 46
 end
-arch hills
+arch hills_rocky
 x 12
 y 47
 end
@@ -2551,156 +2584,158 @@ end
 arch mountain
 x 12
 y 49
+end
+arch hills
+x 13
+end
+arch grass
+x 13
+y 1
+end
+arch hills_rocky
+x 13
+y 2
+end
+arch hills
+x 13
+y 3
+end
+arch hills
+x 13
+y 4
+end
+arch hills_rocky
+x 13
+y 5
+end
+arch mountain
+x 13
+y 6
+end
+arch mountain
+x 13
+y 7
+end
+arch mountain
+x 13
+y 8
+end
+arch mountain
+x 13
+y 9
+end
+arch mountain
+x 13
+y 10
+end
+arch s_mountain
+x 13
+y 11
+end
+arch mountain5
+x 13
+y 12
+end
+arch mountain5
+x 13
+y 13
+end
+arch s_mountain
+x 13
+y 14
+end
+arch mountain
+x 13
+y 15
+end
+arch mountain
+x 13
+y 16
+end
+arch mountain
+x 13
+y 17
+end
+arch mountain2
+x 13
+y 18
+end
+arch mountain
+x 13
+y 19
+end
+arch mountain
+x 13
+y 20
+end
+arch mountain2
+x 13
+y 21
+end
+arch istone
+name flagstone
+x 13
+y 22
+end
+arch istone
+name flagstone
+x 13
+y 23
+end
+arch mountain2
+x 13
+y 24
+end
+arch mountain
+x 13
+y 25
+end
+arch mountain
+x 13
+y 26
+end
+arch mountain
+x 13
+y 27
+end
+arch mountain
+x 13
+y 28
+end
+arch mountain
+x 13
+y 29
+end
+arch mountain
+x 13
+y 30
+end
+arch mountain
+x 13
+y 31
+end
+arch hills_rocky
+x 13
+y 32
+end
+arch hills
+x 13
+y 33
+end
+arch hills
+x 13
+y 34
+end
+arch treed_hills
+x 13
+y 35
+end
+arch hills
+x 13
+y 36
 end
 arch flagstone
 x 13
-end
-arch flagstone
-x 13
-y 1
-end
-arch hills_rocky
-x 13
-y 2
-end
-arch hills
-x 13
-y 3
-end
-arch hills
-x 13
-y 4
-end
-arch hills
-x 13
-y 5
-end
-arch mountain
-x 13
-y 6
-end
-arch mountain
-x 13
-y 7
-end
-arch mountain
-x 13
-y 8
-end
-arch mountain
-x 13
-y 9
-end
-arch mountain
-x 13
-y 10
-end
-arch mountain
-x 13
-y 11
-end
-arch mountain
-x 13
-y 12
-end
-arch mountain
-x 13
-y 13
-end
-arch mountain
-x 13
-y 14
-end
-arch mountain
-x 13
-y 15
-end
-arch mountain
-x 13
-y 16
-end
-arch mountain
-x 13
-y 17
-end
-arch hills
-x 13
-y 18
-end
-arch mountain
-x 13
-y 19
-end
-arch mountain
-x 13
-y 20
-end
-arch mountain
-x 13
-y 21
-end
-arch mountain
-x 13
-y 22
-end
-arch mountain
-x 13
-y 23
-end
-arch mountain
-x 13
-y 24
-end
-arch mountain
-x 13
-y 25
-end
-arch mountain
-x 13
-y 26
-end
-arch mountain
-x 13
-y 27
-end
-arch mountain
-x 13
-y 28
-end
-arch mountain
-x 13
-y 29
-end
-arch mountain
-x 13
-y 30
-end
-arch mountain
-x 13
-y 31
-end
-arch hills_rocky
-x 13
-y 32
-end
-arch hills
-x 13
-y 33
-end
-arch hills
-x 13
-y 34
-end
-arch woods
-x 13
-y 35
-end
-arch hills
-x 13
-y 36
-end
-arch hills
-x 13
 y 37
 end
 arch hills
@@ -2739,26 +2774,26 @@ arch mountain
 x 13
 y 46
 end
-arch hills
+arch hills_rocky
 x 13
 y 47
 end
-arch hills
+arch hills_rocky
 x 13
 y 48
 end
-arch hills
+arch hills_rocky
 x 13
 y 49
 end
-arch flagstone
+arch grass
 x 14
 end
-arch flagstone
+arch grass
 x 14
 y 1
 end
-arch flagstone
+arch grass
 x 14
 y 2
 end
@@ -2766,7 +2801,7 @@ arch hills
 x 14
 y 3
 end
-arch desert
+arch hills
 x 14
 y 4
 end
@@ -2794,19 +2829,19 @@ arch mountain2
 x 14
 y 10
 end
-arch mountain2
+arch s_mountain
 x 14
 y 11
 end
-arch mountain2
+arch mountain5
 x 14
 y 12
 end
-arch mountain2
+arch mountain5
 x 14
 y 13
 end
-arch mountain2
+arch s_mountain
 x 14
 y 14
 end
@@ -2814,11 +2849,11 @@ arch mountain
 x 14
 y 15
 end
-arch hills
+arch mountain5
 x 14
 y 16
 end
-arch mountain
+arch mountain5
 x 14
 y 17
 end
@@ -2838,11 +2873,13 @@ arch mountain
 x 14
 y 21
 end
-arch mountain
+arch istone
+name flagstone
 x 14
 y 22
 end
-arch mountain
+arch istone
+name flagstone
 x 14
 y 23
 end
@@ -2890,7 +2927,7 @@ arch hills_rocky
 x 14
 y 34
 end
-arch desert
+arch hills
 x 14
 y 35
 end
@@ -2898,7 +2935,7 @@ arch hills
 x 14
 y 36
 end
-arch hills
+arch flagstone
 x 14
 y 37
 end
@@ -2953,27 +2990,27 @@ end
 arch brush
 x 15
 end
-arch flagstone
+arch grass
 x 15
 y 1
 end
-arch flagstone
+arch grass
 x 15
 y 2
 end
-arch flagstone
+arch tree
 x 15
 y 3
 end
-arch desert
+arch hills
 x 15
 y 4
 end
-arch tree
+arch hills
 x 15
 y 5
 end
-arch tree
+arch hills_rocky
 x 15
 y 6
 end
@@ -2997,23 +3034,23 @@ arch mountain2
 x 15
 y 11
 end
-arch mountain2
+arch s_mountain
 x 15
 y 12
 end
-arch mountain2
+arch mountain5
 x 15
 y 13
 end
-arch mountain2
+arch s_mountain
 x 15
 y 14
 end
-arch mountain
+arch mountain5
 x 15
 y 15
 end
-arch mountain
+arch mountain5
 x 15
 y 16
 end
@@ -3037,11 +3074,17 @@ arch mountain
 x 15
 y 21
 end
-arch mountain
+arch flagstone
 x 15
 y 22
 end
-arch mountain
+arch snow5
+name snow
+x 15
+y 22
+end
+arch istone
+name flagstone
 x 15
 y 23
 end
@@ -3097,7 +3140,7 @@ arch hills
 x 15
 y 36
 end
-arch evergreens
+arch flagstone
 x 15
 y 37
 end
@@ -3109,7 +3152,7 @@ arch hills
 x 15
 y 39
 end
-arch evergreens
+arch treed_hills
 x 15
 y 40
 end
@@ -3156,15 +3199,15 @@ arch tree
 x 16
 y 1
 end
-arch flagstone
+arch grass
 x 16
 y 2
 end
-arch flagstone
+arch grass
 x 16
 y 3
 end
-arch flagstone
+arch grass
 x 16
 y 4
 end
@@ -3172,7 +3215,7 @@ arch brush
 x 16
 y 5
 end
-arch brush
+arch hills_rocky
 x 16
 y 6
 end
@@ -3196,23 +3239,23 @@ arch mountain2
 x 16
 y 11
 end
-arch mountain2
+arch s_mountain
 x 16
 y 12
 end
-arch mountain2
+arch mountain5
 x 16
 y 13
 end
-arch mountain2
+arch mountain5
 x 16
 y 14
 end
-arch mountain2
+arch mountain5
 x 16
 y 15
 end
-arch mountain2
+arch mountain5
 x 16
 y 16
 end
@@ -3236,11 +3279,16 @@ arch mountain
 x 16
 y 21
 end
-arch mountain
+arch flagstone
 x 16
 y 22
 end
-arch mountain
+arch flagstone
+x 16
+y 23
+end
+arch snow5
+name snow
 x 16
 y 23
 end
@@ -3355,19 +3403,19 @@ arch brush
 x 17
 y 1
 end
-arch tree
+arch grass
 x 17
 y 2
 end
-arch flagstone
+arch grass
 x 17
 y 3
 end
-arch flagstone
+arch grass
 x 17
 y 4
 end
-arch flagstone
+arch tree
 x 17
 y 5
 end
@@ -3395,27 +3443,27 @@ arch mountain2
 x 17
 y 11
 end
-arch mountain2
+arch s_mountain
 x 17
 y 12
 end
-arch mountain
+arch mountain5
 x 17
 y 13
 end
-arch mountain
+arch mountain5
 x 17
 y 14
 end
-arch mountain2
+arch mountain5
 x 17
 y 15
 end
-arch mountain2
+arch s_mountain
 x 17
 y 16
 end
-arch mountain2
+arch s_mountain
 x 17
 y 17
 end
@@ -3435,11 +3483,11 @@ arch mountain
 x 17
 y 21
 end
-arch mountain
+arch flagstone
 x 17
 y 22
 end
-arch mountain2
+arch flagstone
 x 17
 y 23
 end
@@ -3451,11 +3499,11 @@ arch mountain2
 x 17
 y 25
 end
-arch wasteland
+arch hills_rocky
 x 17
 y 26
 end
-arch wasteland
+arch hills_rocky
 x 17
 y 27
 end
@@ -3547,7 +3595,7 @@ arch hills
 x 17
 y 49
 end
-arch desert
+arch swamp
 x 18
 end
 arch grass
@@ -3562,15 +3610,15 @@ arch swamp
 x 18
 y 3
 end
-arch flagstone
+arch grass
 x 18
 y 4
 end
-arch flagstone
+arch grass
 x 18
 y 5
 end
-arch flagstone
+arch hills
 x 18
 y 6
 end
@@ -3598,23 +3646,23 @@ arch mountain2
 x 18
 y 12
 end
-arch mountain
+arch s_mountain
 x 18
 y 13
 end
-arch mountain
+arch mountain5
 x 18
 y 14
 end
-arch mountain
+arch mountain5
 x 18
 y 15
 end
-arch mountain
+arch s_mountain
 x 18
 y 16
 end
-arch mountain
+arch s_mountain
 x 18
 y 17
 end
@@ -3634,15 +3682,15 @@ arch mountain
 x 18
 y 21
 end
-arch mountain
+arch flagstone
 x 18
 y 22
 end
-arch mountain2
+arch flagstone
 x 18
 y 23
 end
-arch mountain2
+arch flagstone
 x 18
 y 24
 end
@@ -3650,19 +3698,19 @@ arch mountain2
 x 18
 y 25
 end
-arch wasteland
+arch hills_rocky
 x 18
 y 26
 end
-arch wasteland
+arch hills_rocky
 x 18
 y 27
 end
-arch wasteland
+arch hills_rocky
 x 18
 y 28
 end
-arch wasteland
+arch hills_rocky
 x 18
 y 29
 end
@@ -3749,7 +3797,7 @@ end
 arch shallow_sea
 x 19
 end
-arch desert
+arch swamp
 x 19
 y 1
 end
@@ -3761,15 +3809,15 @@ arch brush
 x 19
 y 3
 end
-arch tree
+arch grass
 x 19
 y 4
 end
-arch flagstone
+arch grass
 x 19
 y 5
 end
-arch flagstone
+arch hills
 x 19
 y 6
 end
@@ -3797,23 +3845,23 @@ arch mountain2
 x 19
 y 12
 end
-arch mountain
+arch s_mountain
 x 19
 y 13
 end
-arch mountain
+arch mountain5
 x 19
 y 14
 end
-arch mountain
+arch mountain5
 x 19
 y 15
 end
-arch mountain
+arch s_mountain
 x 19
 y 16
 end
-arch mountain
+arch mountain2
 x 19
 y 17
 end
@@ -3833,31 +3881,36 @@ arch mountain
 x 19
 y 21
 end
-arch mountain
+arch flagstone
 x 19
 y 22
 end
-arch mountain
+arch flagstone
 x 19
 y 23
 end
-arch mountain2
+arch snow5
+name snow
+x 19
+y 23
+end
+arch flagstone
 x 19
 y 24
 end
-arch wasteland
+arch hills_rocky
 x 19
 y 25
 end
-arch wasteland
+arch hills_rocky
 x 19
 y 26
 end
-arch wasteland
+arch hills_rocky
 x 19
 y 27
 end
-arch wasteland
+arch hills_rocky
 x 19
 y 28
 end
@@ -3885,7 +3938,7 @@ arch mountain2
 x 19
 y 34
 end
-arch mountain2
+arch flagstone
 x 19
 y 35
 end
@@ -3964,15 +4017,15 @@ arch tree
 x 20
 y 4
 end
-arch flagstone
+arch grass
 x 20
 y 5
 end
-arch flagstone
+arch hills
 x 20
 y 6
 end
-arch mountain
+arch hills_rocky
 x 20
 y 7
 end
@@ -3992,23 +4045,23 @@ arch mountain2
 x 20
 y 11
 end
-arch mountain2
+arch s_mountain
 x 20
 y 12
 end
-arch mountain
+arch s_mountain
 x 20
 y 13
 end
-arch mountain
+arch mountain5
 x 20
 y 14
 end
-arch mountain
+arch mountain5
 x 20
 y 15
 end
-arch mountain
+arch s_mountain
 x 20
 y 16
 end
@@ -4036,27 +4089,27 @@ arch mountain2
 x 20
 y 22
 end
-arch mountain2
+arch flagstone
 x 20
 y 23
 end
-arch wasteland
+arch flagstone
 x 20
 y 24
 end
-arch wasteland
+arch flagstone
 x 20
 y 25
 end
-arch wasteland
+arch hills_rocky
 x 20
 y 26
 end
-arch wasteland
+arch hills_rocky
 x 20
 y 27
 end
-arch wasteland
+arch hills_rocky
 x 20
 y 28
 end
@@ -4080,7 +4133,7 @@ arch mountain2
 x 20
 y 33
 end
-arch mountain
+arch flagstone
 x 20
 y 34
 end
@@ -4124,11 +4177,11 @@ arch hills
 x 20
 y 44
 end
-arch mountain
+arch hills_rocky
 x 20
 y 45
 end
-arch mountain
+arch hills_rocky
 x 20
 y 46
 end
@@ -4163,15 +4216,15 @@ arch grass
 x 21
 y 4
 end
-arch flagstone
+arch grass
 x 21
 y 5
 end
-arch flagstone
+arch hills
 x 21
 y 6
 end
-arch mountain
+arch hills_rocky
 x 21
 y 7
 end
@@ -4195,23 +4248,23 @@ arch mountain
 x 21
 y 12
 end
-arch mountain
+arch s_mountain
 x 21
 y 13
 end
-arch mountain
+arch mountain5
 x 21
 y 14
 end
-arch mountain
+arch mountain5
 x 21
 y 15
 end
-arch hills
+arch s_mountain
 x 21
 y 16
 end
-arch mountain
+arch s_mountain
 x 21
 y 17
 end
@@ -4235,51 +4288,51 @@ arch mountain2
 x 21
 y 22
 end
-arch wasteland
+arch flagstone
 x 21
 y 23
 end
-arch wasteland
+arch flagstone
 x 21
 y 24
 end
-arch wasteland
+arch flagstone
 x 21
 y 25
 end
-arch wasteland
+arch flagstone
 x 21
 y 26
 end
-arch wasteland
+arch flagstone
 x 21
 y 27
 end
-arch mountain2
+arch flagstone
 x 21
 y 28
 end
-arch mountain2
+arch flagstone
 x 21
 y 29
 end
-arch mountain
+arch flagstone
 x 21
 y 30
 end
-arch mountain
+arch flagstone
 x 21
 y 31
 end
-arch mountain
+arch flagstone
 x 21
 y 32
 end
-arch mountain2
+arch flagstone
 x 21
 y 33
 end
-arch mountain2
+arch flagstone
 x 21
 y 34
 end
@@ -4291,7 +4344,7 @@ arch mountain
 x 21
 y 36
 end
-arch woods
+arch hills_rocky
 x 21
 y 37
 end
@@ -4307,7 +4360,7 @@ arch hills
 x 21
 y 40
 end
-arch evergreens
+arch treed_hills
 x 21
 y 41
 end
@@ -4323,15 +4376,15 @@ arch hills
 x 21
 y 44
 end
-arch mountain
+arch hills_rocky
 x 21
 y 45
 end
-arch mountain
+arch hills_rocky
 x 21
 y 46
 end
-arch mountain
+arch hills_rocky
 x 21
 y 47
 end
@@ -4362,11 +4415,11 @@ arch brush
 x 22
 y 4
 end
-arch flagstone
+arch tree
 x 22
 y 5
 end
-arch flagstone
+arch grass
 x 22
 y 6
 end
@@ -4374,7 +4427,7 @@ arch tree
 x 22
 y 7
 end
-arch hills
+arch hills_rocky
 x 22
 y 8
 end
@@ -4390,31 +4443,31 @@ arch mountain
 x 22
 y 11
 end
-arch hills
+arch mountain
 x 22
 y 12
 end
-arch hills
+arch s_mountain
 x 22
 y 13
 end
-arch mountain
+arch mountain5
 x 22
 y 14
 end
-arch hills
+arch mountain5
 x 22
 y 15
 end
-arch hills
+arch mountain5
 x 22
 y 16
 end
-arch hills
+arch s_mountain
 x 22
 y 17
 end
-arch mountain
+arch s_mountain
 x 22
 y 18
 end
@@ -4430,51 +4483,51 @@ arch mountain2
 x 22
 y 21
 end
-arch wasteland
+arch mountain2
 x 22
 y 22
 end
-arch wasteland
+arch mountain2
 x 22
 y 23
 end
-arch wasteland
+arch mountain
 x 22
 y 24
 end
-arch wasteland
+arch flagstone
 x 22
 y 25
 end
-arch wasteland
+arch flagstone
 x 22
 y 26
 end
-arch wasteland
+arch flagstone
 x 22
 y 27
 end
-arch mountain2
+arch flagstone
 x 22
 y 28
 end
-arch mountain
+arch flagstone
 x 22
 y 29
 end
-arch mountain
+arch flagstone
 x 22
 y 30
 end
-arch mountain
+arch flagstone
 x 22
 y 31
 end
-arch mountain
+arch flagstone
 x 22
 y 32
 end
-arch mountain
+arch flagstone
 x 22
 y 33
 end
@@ -4482,7 +4535,7 @@ arch flagstone
 x 22
 y 34
 end
-arch flagstone
+arch hills_rocky
 x 22
 y 35
 end
@@ -4502,7 +4555,7 @@ arch mountain
 x 22
 y 39
 end
-arch evergreen
+arch hills_rocky
 x 22
 y 40
 end
@@ -4514,7 +4567,7 @@ arch hills
 x 22
 y 42
 end
-arch evergreen
+arch treed_hills
 x 22
 y 43
 end
@@ -4530,11 +4583,11 @@ arch mountain
 x 22
 y 46
 end
-arch mountain
+arch hills_rocky
 x 22
 y 47
 end
-arch mountain
+arch hills_rocky
 x 22
 y 48
 end
@@ -4561,63 +4614,63 @@ arch brush
 x 23
 y 4
 end
-arch flagstone
+arch grass
 x 23
 y 5
 end
-arch flagstone
+arch grass
 x 23
 y 6
 end
-arch flagstone
+arch grass
 x 23
 y 7
 end
-arch flagstone
+arch hills_rocky
 x 23
 y 8
 end
-arch flagstone
+arch hills_rocky
 x 23
 y 9
 end
-arch flagstone
+arch mountain
 x 23
 y 10
 end
-arch flagstone
+arch mountain
 x 23
 y 11
 end
-arch flagstone
+arch mountain
 x 23
 y 12
 end
-arch flagstone
+arch mountain2
 x 23
 y 13
 end
-arch flagstone
+arch s_mountain
 x 23
 y 14
 end
-arch flagstone
+arch mountain5
 x 23
 y 15
 end
-arch flagstone
+arch mountain5
 x 23
 y 16
 end
-arch mountain
+arch s_mountain
 x 23
 y 17
 end
-arch mountain
+arch mountain2
 x 23
 y 18
 end
-arch hills
+arch mountain2
 x 23
 y 19
 end
@@ -4629,31 +4682,31 @@ arch mountain2
 x 23
 y 21
 end
-arch wasteland
+arch mountain2
 x 23
 y 22
 end
-arch wasteland
+arch mountain2
 x 23
 y 23
 end
-arch wasteland
+arch hills_rocky
 x 23
 y 24
 end
-arch wasteland
+arch hills_rocky
 x 23
 y 25
 end
-arch wasteland
+arch hills_rocky
 x 23
 y 26
 end
-arch mountain2
+arch hills
 x 23
 y 27
 end
-arch mountain2
+arch hills
 x 23
 y 28
 end
@@ -4665,19 +4718,19 @@ arch hills
 x 23
 y 30
 end
-arch flagstone
+arch hills
 x 23
 y 31
 end
-arch flagstone
+arch hills
 x 23
 y 32
 end
-arch flagstone
+arch hills_rocky
 x 23
 y 33
 end
-arch flagstone
+arch hills_rocky
 x 23
 y 34
 end
@@ -4713,7 +4766,7 @@ arch mountain
 x 23
 y 42
 end
-arch hills
+arch hills_rocky
 x 23
 y 43
 end
@@ -4733,7 +4786,7 @@ arch mountain
 x 23
 y 47
 end
-arch hills
+arch hills_rocky
 x 23
 y 48
 end
@@ -4760,55 +4813,55 @@ arch swamp
 x 24
 y 4
 end
-arch flagstone
+arch grass
 x 24
 y 5
 end
-arch flagstone
+arch tree
 x 24
 y 6
 end
-arch flagstone
+arch grass
 x 24
 y 7
 end
-arch flagstone
+arch hills
 x 24
 y 8
 end
-arch flagstone
+arch hills_rocky
 x 24
 y 9
 end
-arch flagstone
+arch hills_rocky
 x 24
 y 10
 end
-arch flagstone
+arch mountain
 x 24
 y 11
 end
-arch flagstone
+arch mountain
 x 24
 y 12
 end
-arch flagstone
+arch mountain2
 x 24
 y 13
 end
-arch flagstone
+arch s_mountain
 x 24
 y 14
 end
-arch flagstone
+arch mountain5
 x 24
 y 15
 end
-arch flagstone
+arch mountain5
 x 24
 y 16
 end
-arch flagstone
+arch s_mountain
 x 24
 y 17
 end
@@ -4832,23 +4885,23 @@ arch mountain2
 x 24
 y 22
 end
-arch wasteland
+arch mountain2
 x 24
 y 23
 end
-arch wasteland
+arch mountain2
 x 24
 y 24
 end
-arch mountain2
+arch hills_rocky
 x 24
 y 25
 end
-arch mountain2
+arch hills_rocky
 x 24
 y 26
 end
-arch mountain2
+arch hills
 x 24
 y 27
 end
@@ -4860,19 +4913,19 @@ arch hills
 x 24
 y 29
 end
-arch flagstone
+arch treed_hills
 x 24
 y 30
 end
-arch flagstone
+arch hills
 x 24
 y 31
 end
-arch flagstone
+arch hills
 x 24
 y 32
 end
-arch hills_rocky
+arch hills
 x 24
 y 33
 end
@@ -4936,7 +4989,7 @@ arch mountain
 x 24
 y 48
 end
-arch hills
+arch hills_rocky
 x 24
 y 49
 end
@@ -4975,19 +5028,19 @@ arch brush
 x 25
 y 8
 end
-arch brush
+arch hills_rocky
 x 25
 y 9
 end
-arch brush
+arch mountain
 x 25
 y 10
 end
-arch hills
+arch mountain
 x 25
 y 11
 end
-arch hills
+arch mountain2
 x 25
 y 12
 end
@@ -4995,23 +5048,23 @@ arch mountain
 x 25
 y 13
 end
-arch mountain
+arch s_mountain
 x 25
 y 14
 end
-arch mountain
+arch mountain5
 x 25
 y 15
 end
-arch mountain
+arch mountain5
 x 25
 y 16
 end
-arch flagstone
+arch s_mountain
 x 25
 y 17
 end
-arch flagstone
+arch mountain2
 x 25
 y 18
 end
@@ -5039,39 +5092,39 @@ arch mountain2
 x 25
 y 24
 end
-arch mountain2
+arch hills_rocky
 x 25
 y 25
 end
-arch flagstone
+arch hills_rocky
 x 25
 y 26
 end
-arch flagstone
+arch hills_rocky
 x 25
 y 27
 end
-arch flagstone
+arch hills
 x 25
 y 28
 end
-arch flagstone
+arch hills
 x 25
 y 29
 end
-arch flagstone
+arch treed_hills
 x 25
 y 30
 end
-arch flagstone
+arch treed_hills
 x 25
 y 31
 end
-arch evergreens
+arch hills
 x 25
 y 32
 end
-arch evergreens
+arch hills
 x 25
 y 33
 end
@@ -5079,11 +5132,11 @@ arch hills
 x 25
 y 34
 end
-arch evergreens
+arch hills_rocky
 x 25
 y 35
 end
-arch hills
+arch hills_rocky
 x 25
 y 36
 end
@@ -5135,7 +5188,7 @@ arch mountain
 x 25
 y 48
 end
-arch hills
+arch hills_rocky
 x 25
 y 49
 end
@@ -5174,115 +5227,115 @@ arch brush
 x 26
 y 8
 end
-arch brush
+arch hills_rocky
 x 26
 y 9
 end
-arch tree
+arch hills_rocky
 x 26
 y 10
 end
-arch tree
+arch mountain
 x 26
 y 11
 end
-arch hills
+arch mountain
 x 26
 y 12
 end
-arch hills
+arch mountain2
 x 26
 y 13
 end
-arch hills
+arch s_mountain
 x 26
 y 14
 end
-arch mountain
+arch mountain5
 x 26
 y 15
 end
-arch mountain
+arch mountain5
 x 26
 y 16
 end
-arch mountain
+arch s_mountain
 x 26
 y 17
 end
-arch flagstone
+arch mountain
 x 26
 y 18
 end
-arch flagstone
+arch mountain
 x 26
 y 19
 end
-arch flagstone
+arch hills_rocky
 x 26
 y 20
 end
-arch flagstone
+arch hills_rocky
 x 26
 y 21
 end
-arch flagstone
+arch mountain
 x 26
 y 22
 end
-arch flagstone
+arch mountain
 x 26
 y 23
 end
-arch flagstone
+arch mountain2
 x 26
 y 24
 end
-arch flagstone
+arch hills
 x 26
 y 25
 end
-arch flagstone
+arch hills_rocky
 x 26
 y 26
 end
-arch flagstone
+arch hills_rocky
 x 26
 y 27
 end
-arch flagstone
+arch hills
 x 26
 y 28
 end
-arch flagstone
+arch treed_hills
 x 26
 y 29
 end
-arch flagstone
+arch hills
 x 26
 y 30
 end
-arch evergreens
+arch hills
 x 26
 y 31
 end
-arch evergreens
+arch hills
 x 26
 y 32
 end
-arch evergreens
+arch hills
 x 26
 y 33
 end
-arch evergreens
+arch hills
 x 26
 y 34
 end
-arch evergreens
+arch hills
 x 26
 y 35
 end
-arch hills
+arch hills_rocky
 x 26
 y 36
 end
@@ -5373,39 +5426,39 @@ arch tree
 x 27
 y 8
 end
-arch tree
+arch hills_rocky
 x 27
 y 9
 end
-arch tree
+arch hills_rocky
 x 27
 y 10
 end
-arch hills
+arch mountain
 x 27
 y 11
 end
-arch hills
+arch mountain
 x 27
 y 12
 end
-arch hills
+arch mountain
 x 27
 y 13
 end
-arch hills
+arch s_mountain
 x 27
 y 14
 end
-arch mountain
+arch mountain5
 x 27
 y 15
 end
-arch mountain
+arch mountain5
 x 27
 y 16
 end
-arch mountain
+arch s_mountain
 x 27
 y 17
 end
@@ -5413,7 +5466,7 @@ arch mountain
 x 27
 y 18
 end
-arch hills
+arch hills_rocky
 x 27
 y 19
 end
@@ -5429,17 +5482,7 @@ arch hills
 x 27
 y 22
 end
-arch sign
-msg
-Brittany Province boundary.
-Warning: This is a very high level
-area.  I you are less than 10'th
-level, you should definately go back
-endmsg
-x 27
-y 22
-end
-arch mountain
+arch hills
 x 27
 y 23
 end
@@ -5447,23 +5490,23 @@ arch mountain
 x 27
 y 24
 end
-arch mountain
+arch hills
 x 27
 y 25
 end
-arch mountain
+arch hills
 x 27
 y 26
 end
-arch mountain
+arch hills
 x 27
 y 27
 end
-arch mountain
+arch hills
 x 27
 y 28
 end
-arch mountain
+arch hills
 x 27
 y 29
 end
@@ -5471,7 +5514,7 @@ arch hills
 x 27
 y 30
 end
-arch woods
+arch hills_rocky
 x 27
 y 31
 end
@@ -5479,15 +5522,15 @@ arch hills
 x 27
 y 32
 end
-arch steppe
+arch hills
 x 27
 y 33
 end
-arch jungle_1
+arch hills
 x 27
 y 34
 end
-arch steppe
+arch hills_rocky
 x 27
 y 35
 end
@@ -5495,7 +5538,7 @@ arch mountain
 x 27
 y 36
 end
-arch steppe
+arch hills_rocky
 x 27
 y 37
 end
@@ -5578,43 +5621,43 @@ arch brush
 x 28
 y 7
 end
-arch tree
+arch hills_rocky
 x 28
 y 8
 end
-arch hills
+arch hills_rocky
 x 28
 y 9
 end
-arch hills
+arch hills_rocky
 x 28
 y 10
 end
-arch hills
+arch mountain
 x 28
 y 11
 end
-arch tree
+arch mountain
 x 28
 y 12
 end
-arch hills
+arch mountain2
 x 28
 y 13
 end
-arch mountain
+arch s_mountain
 x 28
 y 14
 end
-arch mountain
+arch mountain5
 x 28
 y 15
 end
-arch mountain
+arch mountain5
 x 28
 y 16
 end
-arch mountain
+arch mountain2
 x 28
 y 17
 end
@@ -5622,11 +5665,11 @@ arch mountain
 x 28
 y 18
 end
-arch hills
+arch mountain
 x 28
 y 19
 end
-arch tree
+arch treed_hills
 x 28
 y 20
 end
@@ -5638,35 +5681,35 @@ arch hills
 x 28
 y 22
 end
-arch mountain
+arch hills
 x 28
 y 23
 end
-arch mountain
+arch hills
 x 28
 y 24
 end
-arch mountain
+arch hills
 x 28
 y 25
 end
-arch mountain
+arch tree
 x 28
 y 26
 end
-arch mountain
+arch hills
 x 28
 y 27
 end
-arch mountain
+arch hills
 x 28
 y 28
 end
-arch mountain
+arch hills
 x 28
 y 29
 end
-arch mountain
+arch hills
 x 28
 y 30
 end
@@ -5674,19 +5717,19 @@ arch hills_rocky
 x 28
 y 31
 end
-arch hills
+arch hills_rocky
 x 28
 y 32
 end
-arch hills
+arch hills_rocky
 x 28
 y 33
 end
-arch steppe
+arch hills_rocky
 x 28
 y 34
 end
-arch steppe
+arch hills_rocky
 x 28
 y 35
 end
@@ -5761,59 +5804,59 @@ arch mountain
 x 29
 y 3
 end
-arch tree
+arch hills_rocky
 x 29
 y 4
 end
-arch tree
+arch hills_rocky
 x 29
 y 5
 end
-arch tree
+arch hills_rocky
 x 29
 y 6
 end
-arch hills
+arch hills_rocky
 x 29
 y 7
 end
-arch hills
+arch hills_rocky
 x 29
 y 8
 end
-arch hills
+arch hills_rocky
 x 29
 y 9
 end
-arch hills
+arch mountain
 x 29
 y 10
 end
-arch hills
+arch mountain
 x 29
 y 11
 end
-arch tree
+arch mountain
 x 29
 y 12
 end
-arch hills
+arch s_mountain
 x 29
 y 13
 end
-arch mountain
+arch s_mountain
 x 29
 y 14
 end
-arch mountain
+arch mountain5
 x 29
 y 15
 end
-arch mountain
+arch mountain5
 x 29
 y 16
 end
-arch mountain
+arch s_mountain
 x 29
 y 17
 end
@@ -5821,7 +5864,7 @@ arch mountain
 x 29
 y 18
 end
-arch hills
+arch hills_rocky
 x 29
 y 19
 end
@@ -5849,31 +5892,31 @@ arch hills
 x 29
 y 25
 end
-arch mountain
+arch hills
 x 29
 y 26
 end
-arch mountain
+arch tree
 x 29
 y 27
 end
-arch mountain
+arch tree
 x 29
 y 28
 end
-arch mountain
+arch hills
 x 29
 y 29
 end
-arch mountain
+arch hills
 x 29
 y 30
 end
-arch mountain
+arch hills
 x 29
 y 31
 end
-arch mountain
+arch hills
 x 29
 y 32
 end
@@ -5881,7 +5924,7 @@ arch mountain
 x 29
 y 33
 end
-arch steppe
+arch hills_rocky
 x 29
 y 34
 end
@@ -5964,7 +6007,7 @@ arch mountain
 x 30
 y 4
 end
-arch mountain
+arch hills_rocky
 x 30
 y 5
 end
@@ -5980,47 +6023,47 @@ arch mountain
 x 30
 y 8
 end
-arch tree
+arch mountain
 x 30
 y 9
 end
-arch tree
+arch mountain
 x 30
 y 10
 end
-arch hills
+arch mountain2
 x 30
 y 11
 end
-arch hills
+arch s_mountain
 x 30
 y 12
 end
-arch mountain
+arch s_mountain
 x 30
 y 13
 end
-arch mountain
+arch mountain5
 x 30
 y 14
 end
-arch mountain
+arch mountain5
 x 30
 y 15
 end
-arch mountain
+arch mountain5
 x 30
 y 16
 end
-arch mountain
+arch s_mountain
 x 30
 y 17
 end
-arch hills
+arch mountain2
 x 30
 y 18
 end
-arch hills
+arch hills_rocky
 x 30
 y 19
 end
@@ -6044,31 +6087,31 @@ arch hills
 x 30
 y 24
 end
-arch evergreens
+arch tree
 x 30
 y 25
 end
-arch mountain
+arch tree
 x 30
 y 26
 end
-arch mountain
+arch hills
 x 30
 y 27
 end
-arch mountain
+arch hills
 x 30
 y 28
 end
-arch mountain2
+arch hills
 x 30
 y 29
 end
-arch mountain2
+arch hills
 x 30
 y 30
 end
-arch mountain
+arch hills
 x 30
 y 31
 end
@@ -6183,47 +6226,47 @@ arch mountain
 x 31
 y 9
 end
-arch mountain
+arch s_mountain
 x 31
 y 10
 end
-arch mountain
+arch s_mountain
 x 31
 y 11
 end
-arch mountain
+arch s_mountain
 x 31
 y 12
 end
-arch hills
+arch mountain5
 x 31
 y 13
 end
-arch mountain
+arch mountain5
 x 31
 y 14
 end
-arch mountain
+arch mountain5
 x 31
 y 15
 end
-arch mountain
+arch s_mountain
 x 31
 y 16
 end
-arch mountain
+arch s_mountain
 x 31
 y 17
 end
-arch hills
+arch mountain
 x 31
 y 18
 end
-arch tree
+arch hills_rocky
 x 31
 y 19
 end
-arch tree
+arch treed_hills
 x 31
 y 20
 end
@@ -6251,23 +6294,23 @@ arch hills
 x 31
 y 26
 end
-arch mountain
+arch hills
 x 31
 y 27
 end
-arch mountain
+arch tree
 x 31
 y 28
 end
-arch mountain2
+arch hills
 x 31
 y 29
 end
-arch mountain2
+arch hills
 x 31
 y 30
 end
-arch mountain
+arch hills
 x 31
 y 31
 end
@@ -6378,35 +6421,35 @@ arch mountain
 x 32
 y 8
 end
-arch mountain
+arch mountain5
 x 32
 y 9
 end
-arch mountain
+arch s_mountain
 x 32
 y 10
 end
-arch mountain
+arch mountain2
 x 32
 y 11
 end
-arch mountain
+arch mountain5
 x 32
 y 12
 end
-arch mountain
+arch mountain5
 x 32
 y 13
 end
-arch mountain
+arch mountain5
 x 32
 y 14
 end
-arch mountain
+arch mountain5
 x 32
 y 15
 end
-arch mountain
+arch s_mountain
 x 32
 y 16
 end
@@ -6414,15 +6457,15 @@ arch mountain
 x 32
 y 17
 end
-arch hills
+arch mountain
 x 32
 y 18
 end
-arch tree
+arch mountain
 x 32
 y 19
 end
-arch tree
+arch treed_hills
 x 32
 y 20
 end
@@ -6450,19 +6493,19 @@ arch hills
 x 32
 y 26
 end
-arch mountain
+arch hills
 x 32
 y 27
 end
-arch mountain
+arch hills
 x 32
 y 28
 end
-arch mountain
+arch hills
 x 32
 y 29
 end
-arch mountain2
+arch hills
 x 32
 y 30
 end
@@ -6486,7 +6529,7 @@ arch mountain2
 x 32
 y 35
 end
-arch wasteland
+arch hills_rocky
 x 32
 y 36
 end
@@ -6573,55 +6616,55 @@ arch mountain2
 x 33
 y 7
 end
-arch mountain2
+arch s_mountain
 x 33
 y 8
 end
-arch mountain2
+arch mountain5
 x 33
 y 9
 end
-arch mountain2
+arch mountain5
 x 33
 y 10
 end
-arch mountain
+arch mountain5
 x 33
 y 11
 end
-arch mountain
+arch mountain5
 x 33
 y 12
 end
-arch mountain
+arch mountain5
 x 33
 y 13
 end
-arch hills
+arch mountain5
 x 33
 y 14
 end
-arch mountain
+arch mountain5
 x 33
 y 15
 end
-arch mountain
+arch s_mountain
 x 33
 y 16
 end
-arch mountain
+arch s_mountain
 x 33
 y 17
 end
-arch hills
+arch mountain
 x 33
 y 18
 end
-arch tree
+arch mountain
 x 33
 y 19
 end
-arch tree
+arch hills_rocky
 x 33
 y 20
 end
@@ -6649,23 +6692,23 @@ arch hills
 x 33
 y 26
 end
-arch mountain
+arch hills
 x 33
 y 27
 end
-arch mountain
+arch hills
 x 33
 y 28
 end
-arch mountain
+arch hills_rocky
 x 33
 y 29
 end
-arch mountain2
+arch hills_rocky
 x 33
 y 30
 end
-arch mountain2
+arch hills_rocky
 x 33
 y 31
 end
@@ -6681,11 +6724,11 @@ arch mountain2
 x 33
 y 34
 end
-arch wasteland
+arch hills_rocky
 x 33
 y 35
 end
-arch wasteland
+arch hills_rocky
 x 33
 y 36
 end
@@ -6735,208 +6778,208 @@ y 47
 end
 arch hills_rocky
 x 33
-y 48
-end
-arch evergreens
-x 33
-y 49
-end
-arch mountain2
-x 34
-end
-arch mountain2
-x 34
-y 1
-end
-arch mountain2
-x 34
-y 2
-end
-arch mountain2
-x 34
-y 3
-end
-arch mountain2
-x 34
-y 4
-end
-arch mountain2
-x 34
-y 5
-end
-arch mountain
-x 34
-y 6
-end
-arch mountain
-x 34
-y 7
-end
-arch mountain
-x 34
-y 8
-end
-arch mountain2
-x 34
-y 9
-end
-arch mountain2
-x 34
-y 10
-end
-arch mountain2
-x 34
-y 11
-end
-arch mountain2
-x 34
-y 12
-end
-arch mountain
-x 34
-y 13
-end
-arch hills
-x 34
-y 14
-end
-arch mountain
-x 34
-y 15
-end
-arch mountain
-x 34
-y 16
-end
-arch hills
-x 34
-y 17
-end
-arch hills
-x 34
-y 18
-end
-arch tree
-x 34
-y 19
-end
-arch brush
-x 34
-y 20
-end
-arch tree
-x 34
-y 21
-end
-arch steppe
-x 34
-y 22
-end
-arch mountain
-x 34
-y 23
-end
-arch hills
-x 34
-y 24
-end
-arch tree
-x 34
-y 25
-end
-arch tree
-x 34
-y 26
-end
-arch mountain
-x 34
-y 27
-end
-arch mountain
-x 34
-y 28
-end
-arch mountain
-x 34
-y 29
-end
-arch mountain2
-x 34
-y 30
-end
-arch mountain
-x 34
-y 31
-end
-arch mountain2
-x 34
-y 32
-end
-arch wasteland
-x 34
-y 33
-end
-arch wasteland
-x 34
-y 34
-end
-arch wasteland
-x 34
-y 35
-end
-arch mountain2
-x 34
-y 36
-end
-arch mountain2
-x 34
-y 37
-end
-arch mountain
-x 34
-y 38
-end
-arch mountain
-x 34
-y 39
-end
-arch mountain2
-x 34
-y 40
-end
-arch mountain2
-x 34
-y 41
-end
-arch mountain
-x 34
-y 42
-end
-arch mountain
-x 34
-y 43
-end
-arch hills_rocky
-x 34
-y 44
-end
-arch hills_rocky
-x 34
-y 45
-end
-arch hills_rocky
-x 34
-y 46
-end
-arch hills_rocky
-x 34
-y 47
-end
-arch hills_rocky
-x 34
 y 48
 end
 arch evergreens
+x 33
+y 49
+end
+arch mountain2
+x 34
+end
+arch mountain2
+x 34
+y 1
+end
+arch mountain2
+x 34
+y 2
+end
+arch mountain2
+x 34
+y 3
+end
+arch mountain2
+x 34
+y 4
+end
+arch mountain2
+x 34
+y 5
+end
+arch mountain
+x 34
+y 6
+end
+arch s_mountain
+x 34
+y 7
+end
+arch mountain5
+x 34
+y 8
+end
+arch mountain5
+x 34
+y 9
+end
+arch mountain5
+x 34
+y 10
+end
+arch mountain5
+x 34
+y 11
+end
+arch mountain5
+x 34
+y 12
+end
+arch s_mountain
+x 34
+y 13
+end
+arch mountain5
+x 34
+y 14
+end
+arch mountain5
+x 34
+y 15
+end
+arch mountain5
+x 34
+y 16
+end
+arch s_mountain
+x 34
+y 17
+end
+arch s_mountain
+x 34
+y 18
+end
+arch mountain
+x 34
+y 19
+end
+arch hills_rocky
+x 34
+y 20
+end
+arch tree
+x 34
+y 21
+end
+arch steppe
+x 34
+y 22
+end
+arch hills
+x 34
+y 23
+end
+arch hills
+x 34
+y 24
+end
+arch tree
+x 34
+y 25
+end
+arch tree
+x 34
+y 26
+end
+arch hills
+x 34
+y 27
+end
+arch hills_rocky
+x 34
+y 28
+end
+arch mountain
+x 34
+y 29
+end
+arch mountain2
+x 34
+y 30
+end
+arch mountain
+x 34
+y 31
+end
+arch mountain2
+x 34
+y 32
+end
+arch hills_rocky
+x 34
+y 33
+end
+arch hills_rocky
+x 34
+y 34
+end
+arch hills_rocky
+x 34
+y 35
+end
+arch mountain2
+x 34
+y 36
+end
+arch mountain2
+x 34
+y 37
+end
+arch mountain
+x 34
+y 38
+end
+arch mountain
+x 34
+y 39
+end
+arch mountain2
+x 34
+y 40
+end
+arch mountain2
+x 34
+y 41
+end
+arch mountain
+x 34
+y 42
+end
+arch mountain
+x 34
+y 43
+end
+arch hills_rocky
+x 34
+y 44
+end
+arch hills_rocky
+x 34
+y 45
+end
+arch hills_rocky
+x 34
+y 46
+end
+arch hills_rocky
+x 34
+y 47
+end
+arch hills_rocky
+x 34
+y 48
+end
+arch evergreens
 x 34
 y 49
 end
@@ -6963,63 +7006,63 @@ arch mountain2
 x 35
 y 5
 end
-arch mountain
+arch s_mountain
 x 35
 y 6
 end
-arch mountain
+arch s_mountain
 x 35
 y 7
 end
-arch mountain
+arch mountain5
 x 35
 y 8
 end
-arch mountain
+arch mountain5
 x 35
 y 9
 end
-arch mountain2
+arch mountain5
 x 35
 y 10
 end
-arch mountain2
+arch mountain5
 x 35
 y 11
 end
-arch mountain2
+arch s_mountain
 x 35
 y 12
 end
-arch mountain
+arch drifts
 x 35
 y 13
 end
-arch mountain
+arch s_mountain
 x 35
 y 14
 end
-arch hills
+arch mountain5
 x 35
 y 15
 end
-arch hills
+arch mountain5
 x 35
 y 16
 end
-arch hills
+arch mountain5
 x 35
 y 17
 end
-arch hills
+arch s_mountain
 x 35
 y 18
 end
-arch tree
+arch mountain2
 x 35
 y 19
 end
-arch tree
+arch hills_rocky
 x 35
 y 20
 end
@@ -7031,11 +7074,11 @@ arch steppe
 x 35
 y 22
 end
-arch mountain
+arch hills
 x 35
 y 23
 end
-arch mountain
+arch hills
 x 35
 y 24
 end
@@ -7047,7 +7090,7 @@ arch steppe
 x 35
 y 26
 end
-arch mountain
+arch hills_rocky
 x 35
 y 27
 end
@@ -7071,11 +7114,11 @@ arch mountain2
 x 35
 y 32
 end
-arch wasteland
+arch hills_rocky
 x 35
 y 33
 end
-arch wasteland
+arch hills_rocky
 x 35
 y 34
 end
@@ -7170,67 +7213,67 @@ arch mountain
 x 36
 y 4
 end
-arch mountain
+arch s_mountain
 x 36
 y 5
 end
-arch mountain
+arch s_mountain
 x 36
 y 6
 end
-arch mountain
+arch mountain5
 x 36
 y 7
 end
-arch mountain2
+arch mountain5
 x 36
 y 8
 end
-arch mountain2
+arch mountain5
 x 36
 y 9
 end
-arch mountain2
+arch mountain5
 x 36
 y 10
 end
-arch mountain2
+arch s_mountain
 x 36
 y 11
 end
-arch mountain
+arch drifts
 x 36
 y 12
 end
-arch mountain
+arch snow
 x 36
 y 13
 end
-arch mountain
+arch drifts
 x 36
 y 14
 end
-arch hills
+arch s_mountain
 x 36
 y 15
 end
-arch hills
+arch mountain5
 x 36
 y 16
 end
-arch hills
+arch mountain5
 x 36
 y 17
 end
-arch hills
+arch s_mountain
 x 36
 y 18
 end
-arch hills
+arch mountain
 x 36
 y 19
 end
-arch hills
+arch hills_rocky
 x 36
 y 20
 end
@@ -7242,15 +7285,15 @@ arch hills
 x 36
 y 22
 end
-arch mountain
+arch hills
 x 36
 y 23
 end
-arch mountain
+arch hills
 x 36
 y 24
 end
-arch mountain
+arch hills
 x 36
 y 25
 end
@@ -7298,7 +7341,7 @@ arch mountain2
 x 36
 y 36
 end
-arch mountain
+arch s_mountain
 x 36
 y 37
 end
@@ -7306,11 +7349,11 @@ arch mountain
 x 36
 y 38
 end
-arch mountain2
+arch s_mountain
 x 36
 y 39
 end
-arch wasteland
+arch mountain5
 x 36
 y 40
 end
@@ -7381,11 +7424,11 @@ arch mountain2
 x 37
 y 1
 end
-arch mountain2
+arch mountain
 x 37
 y 2
 end
-arch mountain
+arch s_mountain
 x 37
 y 3
 end
@@ -7393,67 +7436,67 @@ arch mountain
 x 37
 y 4
 end
-arch mountain
+arch mountain5
 x 37
 y 5
 end
-arch mountain
+arch mountain5
 x 37
 y 6
 end
-arch mountain2
+arch mountain5
 x 37
 y 7
 end
-arch mountain2
+arch mountain5
 x 37
 y 8
 end
-arch mountain2
+arch mountain5
 x 37
 y 9
 end
-arch mountain2
+arch mountain5
 x 37
 y 10
 end
-arch mountain
+arch s_mountain
 x 37
 y 11
 end
-arch mountain
+arch snow
 x 37
 y 12
 end
-arch hills
+arch snow
 x 37
 y 13
 end
-arch hills
+arch snow
 x 37
 y 14
 end
-arch tree
+arch s_mountain
 x 37
 y 15
 end
-arch hills
+arch mountain5
 x 37
 y 16
 end
-arch hills
+arch s_mountain
 x 37
 y 17
 end
-arch hills
+arch mountain2
 x 37
 y 18
 end
-arch hills
+arch mountain
 x 37
 y 19
 end
-arch tree
+arch hills_rocky
 x 37
 y 20
 end
@@ -7461,19 +7504,19 @@ arch hills
 x 37
 y 21
 end
-arch mountain
+arch hills
 x 37
 y 22
 end
-arch mountain
+arch hills
 x 37
 y 23
 end
-arch mountain
+arch hills
 x 37
 y 24
 end
-arch mountain
+arch hills
 x 37
 y 25
 end
@@ -7517,27 +7560,27 @@ arch mountain2
 x 37
 y 35
 end
-arch mountain2
+arch s_mountain
 x 37
 y 36
 end
-arch mountain2
+arch mountain5
 x 37
 y 37
 end
-arch mountain2
+arch mountain5
 x 37
 y 38
 end
-arch mountain2
+arch mountain5
 x 37
 y 39
 end
-arch wasteland
+arch mountain5
 x 37
 y 40
 end
-arch wasteland
+arch s_mountain
 x 37
 y 41
 end
@@ -7545,11 +7588,15 @@ arch mountain2
 x 37
 y 42
 end
+arch falls
+x 37
+y 42
+end
 arch mountain
 x 37
 y 43
 end
-arch river_sw-ne
+arch river_sw-n
 x 37
 y 43
 end
@@ -7584,83 +7631,83 @@ end
 arch mountain
 x 38
 end
-arch mountain
+arch mountain2
 x 38
 y 1
 end
-arch mountain
+arch s_mountain
 x 38
 y 2
 end
-arch mountain
+arch s_mountain
 x 38
 y 3
 end
-arch mountain
+arch mountain5
 x 38
 y 4
 end
-arch mountain2
+arch mountain5
 x 38
 y 5
 end
-arch mountain2
+arch mountain5
 x 38
 y 6
 end
-arch mountain2
+arch mountain5
 x 38
 y 7
 end
-arch mountain2
+arch s_mountain
 x 38
 y 8
 end
-arch mountain
+arch mountain5
 x 38
 y 9
 end
-arch mountain
+arch mountain5
 x 38
 y 10
 end
-arch mountain
+arch s_mountain
 x 38
 y 11
 end
-arch mountain
+arch drifts
 x 38
 y 12
 end
-arch mountain
+arch snow
 x 38
 y 13
 end
-arch hills
+arch snow
 x 38
 y 14
 end
-arch tree
+arch s_mountain
 x 38
 y 15
 end
-arch hills
+arch mountain5
 x 38
 y 16
 end
-arch hills
+arch mountain5
 x 38
 y 17
 end
-arch hills
+arch s_mountain
 x 38
 y 18
 end
-arch hills
+arch mountain
 x 38
 y 19
 end
-arch tree
+arch hills_rocky
 x 38
 y 20
 end
@@ -7668,15 +7715,15 @@ arch hills
 x 38
 y 21
 end
-arch mountain
+arch hills
 x 38
 y 22
 end
-arch mountain
+arch hills
 x 38
 y 23
 end
-arch steppe
+arch hills
 x 38
 y 24
 end
@@ -7696,11 +7743,11 @@ arch mountain
 x 38
 y 28
 end
-arch hills
+arch hills_rocky
 x 38
 y 29
 end
-arch steppe
+arch hills_rocky
 x 38
 y 30
 end
@@ -7716,31 +7763,31 @@ arch mountain
 x 38
 y 33
 end
-arch mountain
+arch s_mountain
 x 38
 y 34
 end
-arch mountain2
+arch s_mountain
 x 38
 y 35
 end
-arch mountain2
+arch mountain5
 x 38
 y 36
 end
-arch mountain2
+arch mountain5
 x 38
 y 37
 end
-arch mountain
+arch mountain5
 x 38
 y 38
 end
-arch mountain2
+arch s_mountain
 x 38
 y 39
 end
-arch wasteland
+arch mountain5
 x 38
 y 40
 end
@@ -7783,7 +7830,7 @@ end
 arch mountain
 x 39
 end
-arch mountain
+arch mountain2
 x 39
 y 1
 end
@@ -7791,23 +7838,23 @@ arch mountain
 x 39
 y 2
 end
-arch mountain
+arch s_mountain
 x 39
 y 3
 end
-arch mountain
+arch mountain5
 x 39
 y 4
 end
-arch mountain
+arch mountain5
 x 39
 y 5
 end
-arch mountain2
+arch s_mountain
 x 39
 y 6
 end
-arch mountain2
+arch s_mountain
 x 39
 y 7
 end
@@ -7815,51 +7862,51 @@ arch mountain
 x 39
 y 8
 end
-arch mountain
+arch mountain5
 x 39
 y 9
 end
-arch mountain
+arch mountain5
 x 39
 y 10
 end
-arch mountain
+arch drifts
 x 39
 y 11
 end
-arch mountain
+arch drifts
 x 39
 y 12
 end
-arch mountain
+arch snow
 x 39
 y 13
 end
-arch mountain
+arch drifts
 x 39
 y 14
 end
-arch hills
+arch s_mountain
 x 39
 y 15
 end
-arch tree
+arch mountain5
 x 39
 y 16
 end
-arch tree
+arch mountain5
 x 39
 y 17
 end
-arch tree
+arch s_mountain
 x 39
 y 18
 end
-arch tree
+arch mountain
 x 39
 y 19
 end
-arch hills
+arch mountain
 x 39
 y 20
 end
@@ -7867,15 +7914,15 @@ arch hills
 x 39
 y 21
 end
-arch mountain
+arch hills
 x 39
 y 22
 end
-arch mountain
+arch hills
 x 39
 y 23
 end
-arch mountain
+arch hills
 x 39
 y 24
 end
@@ -7883,7 +7930,7 @@ arch steppe
 x 39
 y 25
 end
-arch hills
+arch hills_rocky
 x 39
 y 26
 end
@@ -7911,11 +7958,11 @@ arch mountain2
 x 39
 y 32
 end
-arch mountain2
+arch s_mountain
 x 39
 y 33
 end
-arch mountain
+arch s_mountain
 x 39
 y 34
 end
@@ -7927,11 +7974,11 @@ arch mountain2
 x 39
 y 36
 end
-arch mountain2
+arch s_mountain
 x 39
 y 37
 end
-arch mountain
+arch s_mountain
 x 39
 y 38
 end
@@ -7986,23 +8033,23 @@ arch mountain
 x 40
 y 1
 end
-arch mountain
+arch s_mountain
 x 40
 y 2
 end
-arch mountain
+arch mountain5
 x 40
 y 3
 end
-arch mountain
+arch mountain5
 x 40
 y 4
 end
-arch mountain
+arch s_mountain
 x 40
 y 5
 end
-arch mountain
+arch s_mountain
 x 40
 y 6
 end
@@ -8010,75 +8057,75 @@ arch mountain
 x 40
 y 7
 end
-arch mountain
+arch mountain2
 x 40
 y 8
 end
-arch mountain
+arch mountain5
 x 40
 y 9
 end
-arch mountain
+arch mountain5
 x 40
 y 10
 end
-arch mountain
+arch s_mountain
 x 40
 y 11
 end
-arch mountain2
+arch s_mountain
 x 40
 y 12
 end
-arch mountain
+arch s_mountain
 x 40
 y 13
 end
-arch mountain
+arch s_mountain
 x 40
 y 14
 end
-arch hills
+arch mountain5
 x 40
 y 15
 end
-arch tree
+arch mountain5
 x 40
 y 16
 end
-arch tree
+arch s_mountain
 x 40
 y 17
 end
-arch tree
+arch mountain2
 x 40
 y 18
 end
-arch tree
+arch mountain
 x 40
 y 19
 end
-arch hills
+arch mountain
 x 40
 y 20
 end
-arch hills
+arch hills_rocky
 x 40
 y 21
 end
-arch steppe
+arch hills
 x 40
 y 22
 end
-arch mountain
+arch hills
 x 40
 y 23
 end
-arch mountain
+arch hills
 x 40
 y 24
 end
-arch mountain
+arch hills
 x 40
 y 25
 end
@@ -8118,15 +8165,15 @@ arch mountain
 x 40
 y 34
 end
-arch mountain2
+arch s_mountain
 x 40
 y 35
 end
-arch mountain2
+arch s_mountain
 x 40
 y 36
 end
-arch mountain2
+arch s_mountain
 x 40
 y 37
 end
@@ -8181,23 +8228,23 @@ end
 arch mountain
 x 41
 end
-arch mountain
+arch s_mountain
 x 41
 y 1
 end
-arch mountain
+arch mountain5
 x 41
 y 2
 end
-arch mountain
+arch mountain5
 x 41
 y 3
 end
-arch mountain
+arch mountain5
 x 41
 y 4
 end
-arch mountain
+arch s_mountain
 x 41
 y 5
 end
@@ -8213,47 +8260,47 @@ arch mountain
 x 41
 y 8
 end
-arch mountain
+arch s_mountain
 x 41
 y 9
 end
-arch mountain2
+arch mountain5
 x 41
 y 10
 end
-arch mountain2
+arch mountain5
 x 41
 y 11
 end
-arch mountain2
+arch mountain5
 x 41
 y 12
 end
-arch mountain
+arch mountain5
 x 41
 y 13
 end
-arch mountain
+arch mountain5
 x 41
 y 14
 end
-arch hills
+arch mountain5
 x 41
 y 15
 end
-arch tree
+arch mountain5
 x 41
 y 16
 end
-arch tree
+arch s_mountain
 x 41
 y 17
 end
-arch hills
+arch mountain
 x 41
 y 18
 end
-arch hills
+arch mountain
 x 41
 y 19
 end
@@ -8265,23 +8312,23 @@ arch mountain
 x 41
 y 21
 end
-arch mountain
+arch hills_rocky
 x 41
 y 22
 end
-arch mountain2
+arch hills
 x 41
 y 23
 end
-arch mountain2
+arch hills
 x 41
 y 24
 end
-arch mountain2
+arch hills
 x 41
 y 25
 end
-arch mountain
+arch hills_rocky
 x 41
 y 26
 end
@@ -8293,11 +8340,11 @@ arch mountain
 x 41
 y 28
 end
-arch steppe
+arch hills_rocky
 x 41
 y 29
 end
-arch jungle_1
+arch hills_rocky
 x 41
 y 30
 end
@@ -8313,19 +8360,19 @@ arch mountain2
 x 41
 y 33
 end
-arch mountain2
+arch s_mountain
 x 41
 y 34
 end
-arch wasteland
+arch s_mountain
 x 41
 y 35
 end
-arch wasteland
+arch mountain5
 x 41
 y 36
 end
-arch wasteland
+arch s_mountain
 x 41
 y 37
 end
@@ -8380,23 +8427,23 @@ end
 arch mountain2
 x 42
 end
-arch mountain2
+arch s_mountain
 x 42
 y 1
 end
-arch mountain
+arch mountain5
 x 42
 y 2
 end
-arch mountain
+arch mountain5
 x 42
 y 3
 end
-arch mountain
+arch s_mountain
 x 42
 y 4
 end
-arch mountain
+arch s_mountain
 x 42
 y 5
 end
@@ -8416,43 +8463,43 @@ arch mountain
 x 42
 y 9
 end
-arch mountain2
+arch s_mountain
 x 42
 y 10
 end
-arch mountain2
+arch s_mountain
 x 42
 y 11
 end
-arch mountain2
+arch mountain5
 x 42
 y 12
 end
-arch mountain
+arch mountain5
 x 42
 y 13
 end
-arch mountain
+arch s_mountain
 x 42
 y 14
 end
-arch hills
+arch s_mountain
 x 42
 y 15
 end
-arch hills
+arch mountain5
 x 42
 y 16
 end
-arch hills
+arch mountain5
 x 42
 y 17
 end
-arch hills
+arch s_mountain
 x 42
 y 18
 end
-arch mountain
+arch mountain2
 x 42
 y 19
 end
@@ -8464,23 +8511,23 @@ arch mountain
 x 42
 y 21
 end
-arch mountain2
+arch hills_rocky
 x 42
 y 22
 end
-arch mountain2
+arch hills
 x 42
 y 23
 end
-arch mountain2
+arch hills
 x 42
 y 24
 end
-arch mountain2
+arch hills
 x 42
 y 25
 end
-arch mountain2
+arch hills
 x 42
 y 26
 end
@@ -8496,7 +8543,7 @@ arch mountain
 x 42
 y 29
 end
-arch hills
+arch hills_rocky
 x 42
 y 30
 end
@@ -8512,19 +8559,19 @@ arch mountain2
 x 42
 y 33
 end
-arch wasteland
+arch s_mountain
 x 42
 y 34
 end
-arch wasteland
+arch mountain5
 x 42
 y 35
 end
-arch wasteland
+arch mountain5
 x 42
 y 36
 end
-arch wasteland
+arch s_mountain
 x 42
 y 37
 end
@@ -8583,19 +8630,19 @@ arch mountain2
 x 43
 y 1
 end
-arch mountain
+arch mountain5
 x 43
 y 2
 end
-arch mountain
+arch mountain5
 x 43
 y 3
 end
-arch mountain
+arch mountain5
 x 43
 y 4
 end
-arch mountain
+arch s_mountain
 x 43
 y 5
 end
@@ -8603,7 +8650,7 @@ arch mountain
 x 43
 y 6
 end
-arch steppe
+arch mountain2
 x 43
 y 7
 end
@@ -8623,11 +8670,11 @@ arch mountain2
 x 43
 y 11
 end
-arch mountain2
+arch s_mountain
 x 43
 y 12
 end
-arch mountain
+arch s_mountain
 x 43
 y 13
 end
@@ -8635,23 +8682,23 @@ arch mountain
 x 43
 y 14
 end
-arch steppe
+arch mountain2
 x 43
 y 15
 end
-arch hills
+arch s_mountain
 x 43
 y 16
 end
-arch steppe
+arch mountain5
 x 43
 y 17
 end
-arch steppe
+arch mountain5
 x 43
 y 18
 end
-arch mountain
+arch s_mountain
 x 43
 y 19
 end
@@ -8659,31 +8706,31 @@ arch mountain
 x 43
 y 20
 end
-arch mountain2
+arch mountain
 x 43
 y 21
 end
-arch mountain2
+arch hills_rocky
 x 43
 y 22
 end
-arch wasteland
+arch hills
 x 43
 y 23
 end
-arch wasteland
+arch hills
 x 43
 y 24
 end
-arch wasteland
+arch hills
 x 43
 y 25
 end
-arch wasteland
+arch hills
 x 43
 y 26
 end
-arch mountain2
+arch hills
 x 43
 y 27
 end
@@ -8707,27 +8754,27 @@ arch mountain2
 x 43
 y 32
 end
-arch wasteland
+arch mountain2
 x 43
 y 33
 end
-arch wasteland
+arch s_mountain
 x 43
 y 34
 end
-arch wasteland
+arch mountain5
 x 43
 y 35
 end
-arch wasteland
+arch s_mountain
 x 43
 y 36
 end
-arch wasteland
+arch mountain2
 x 43
 y 37
 end
-arch wasteland
+arch mountain2
 x 43
 y 38
 end
@@ -8782,23 +8829,23 @@ arch mountain2
 x 44
 y 1
 end
-arch mountain
+arch mountain5
 x 44
 y 2
 end
-arch hills
+arch mountain5
 x 44
 y 3
 end
-arch hills
+arch mountain5
 x 44
 y 4
 end
-arch tree
+arch s_mountain
 x 44
 y 5
 end
-arch hills
+arch mountain2
 x 44
 y 6
 end
@@ -8814,11 +8861,11 @@ arch mountain
 x 44
 y 9
 end
-arch mountain
+arch mountain2
 x 44
 y 10
 end
-arch mountain
+arch mountain2
 x 44
 y 11
 end
@@ -8834,59 +8881,59 @@ arch mountain
 x 44
 y 14
 end
-arch steppe
+arch mountain2
 x 44
 y 15
 end
-arch tree
+arch mountain2
 x 44
 y 16
 end
-arch steppe
+arch s_mountain
 x 44
 y 17
 end
-arch hills
+arch s_mountain
 x 44
 y 18
 end
-arch mountain
+arch s_mountain
 x 44
 y 19
 end
-arch hills
+arch mountain2
 x 44
 y 20
 end
-arch mountain
+arch hills_rocky
 x 44
 y 21
 end
-arch wasteland
+arch hills
 x 44
 y 22
 end
-arch wasteland
+arch hills
 x 44
 y 23
 end
-arch wasteland
+arch hills
 x 44
 y 24
 end
-arch wasteland
+arch hills
 x 44
 y 25
 end
-arch wasteland
+arch hills
 x 44
 y 26
 end
-arch mountain2
+arch hills
 x 44
 y 27
 end
-arch mountain2
+arch hills_rocky
 x 44
 y 28
 end
@@ -8902,31 +8949,31 @@ arch mountain2
 x 44
 y 31
 end
-arch wasteland
+arch mountain2
 x 44
 y 32
 end
-arch wasteland
+arch mountain2
 x 44
 y 33
 end
-arch wasteland
+arch s_mountain
 x 44
 y 34
 end
-arch wasteland
+arch mountain5
 x 44
 y 35
 end
-arch wasteland
+arch s_mountain
 x 44
 y 36
 end
-arch wasteland
+arch mountain2
 x 44
 y 37
 end
-arch wasteland
+arch mountain2
 x 44
 y 38
 end
@@ -8981,23 +9028,23 @@ arch mountain
 x 45
 y 1
 end
-arch mountain
+arch s_mountain
 x 45
 y 2
 end
-arch hills
+arch mountain5
 x 45
 y 3
 end
-arch steppe
+arch mountain5
 x 45
 y 4
 end
-arch tree
+arch s_mountain
 x 45
 y 5
 end
-arch hills
+arch mountain2
 x 45
 y 6
 end
@@ -9017,11 +9064,11 @@ arch mountain
 x 45
 y 10
 end
-arch tree
+arch mountain2
 x 45
 y 11
 end
-arch mountain
+arch mountain2
 x 45
 y 12
 end
@@ -9037,15 +9084,15 @@ arch mountain
 x 45
 y 15
 end
-arch hills
+arch mountain2
 x 45
 y 16
 end
-arch hills
+arch mountain2
 x 45
 y 17
 end
-arch tree
+arch mountain2
 x 45
 y 18
 end
@@ -9057,35 +9104,35 @@ arch mountain
 x 45
 y 20
 end
-arch mountain2
+arch hills_rocky
 x 45
 y 21
 end
-arch wasteland
+arch hills
 x 45
 y 22
 end
-arch wasteland
+arch hills
 x 45
 y 23
 end
-arch wasteland
+arch hills
 x 45
 y 24
 end
-arch wasteland
+arch hills
 x 45
 y 25
 end
-arch wasteland
+arch hills
 x 45
 y 26
 end
-arch mountain2
+arch hills
 x 45
 y 27
 end
-arch mountain
+arch hills_rocky
 x 45
 y 28
 end
@@ -9101,23 +9148,23 @@ arch mountain2
 x 45
 y 31
 end
-arch wasteland
+arch mountain2
 x 45
 y 32
 end
-arch wasteland
+arch mountain2
 x 45
 y 33
 end
-arch wasteland
+arch s_mountain
 x 45
 y 34
 end
-arch wasteland
+arch mountain5
 x 45
 y 35
 end
-arch wasteland
+arch s_mountain
 x 45
 y 36
 end
@@ -9180,23 +9227,23 @@ arch mountain
 x 46
 y 1
 end
-arch mountain
+arch s_mountain
 x 46
 y 2
 end
-arch evergreen
+arch mountain5
 x 46
 y 3
 end
-arch tree
+arch mountain5
 x 46
 y 4
 end
-arch steppe
+arch s_mountain
 x 46
 y 5
 end
-arch hills
+arch mountain2
 x 46
 y 6
 end
@@ -9208,7 +9255,7 @@ arch mountain
 x 46
 y 8
 end
-arch mountain
+arch hills_rocky
 x 46
 y 9
 end
@@ -9216,11 +9263,11 @@ arch mountain
 x 46
 y 10
 end
-arch mountain
+arch mountain2
 x 46
 y 11
 end
-arch mountain
+arch mountain2
 x 46
 y 12
 end
@@ -9240,11 +9287,11 @@ arch mountain
 x 46
 y 16
 end
-arch hills
+arch mountain2
 x 46
 y 17
 end
-arch steppe
+arch mountain2
 x 46
 y 18
 end
@@ -9260,27 +9307,27 @@ arch mountain2
 x 46
 y 21
 end
-arch mountain2
+arch hills
 x 46
 y 22
 end
-arch wasteland
+arch hills
 x 46
 y 23
 end
-arch wasteland
+arch hills
 x 46
 y 24
 end
-arch wasteland
+arch hills
 x 46
 y 25
 end
-arch mountain2
+arch hills
 x 46
 y 26
 end
-arch mountain
+arch hills_rocky
 x 46
 y 27
 end
@@ -9300,27 +9347,27 @@ arch mountain2
 x 46
 y 31
 end
-arch wasteland
+arch mountain2
 x 46
 y 32
 end
-arch wasteland
+arch mountain2
 x 46
 y 33
 end
-arch wasteland
+arch s_mountain
 x 46
 y 34
 end
-arch wasteland
+arch mountain5
 x 46
 y 35
 end
-arch wasteland
+arch mountain5
 x 46
 y 36
 end
-arch mountain2
+arch s_mountain
 x 46
 y 37
 end
@@ -9379,23 +9426,23 @@ arch mountain
 x 47
 y 1
 end
-arch hills
+arch s_mountain
 x 47
 y 2
 end
-arch steppe
+arch mountain5
 x 47
 y 3
 end
-arch hills
+arch mountain5
 x 47
 y 4
 end
-arch hills
+arch s_mountain
 x 47
 y 5
 end
-arch hills
+arch s_mountain
 x 47
 y 6
 end
@@ -9403,15 +9450,15 @@ arch mountain
 x 47
 y 7
 end
-arch hills
+arch hills_rocky
 x 47
 y 8
 end
-arch hills
+arch hills_rocky
 x 47
 y 9
 end
-arch hills
+arch hills_rocky
 x 47
 y 10
 end
@@ -9439,7 +9486,7 @@ arch mountain
 x 47
 y 16
 end
-arch hills
+arch mountain2
 x 47
 y 17
 end
@@ -9455,27 +9502,27 @@ arch mountain
 x 47
 y 20
 end
-arch mountain
+arch hills_rocky
 x 47
 y 21
 end
-arch mountain2
+arch hills
 x 47
 y 22
 end
-arch wasteland
+arch hills
 x 47
 y 23
 end
-arch mountain2
+arch hills
 x 47
 y 24
 end
-arch mountain2
+arch hills_rocky
 x 47
 y 25
 end
-arch mountain
+arch hills_rocky
 x 47
 y 26
 end
@@ -9507,19 +9554,19 @@ arch mountain2
 x 47
 y 33
 end
-arch mountain2
+arch s_mountain
 x 47
 y 34
 end
-arch wasteland
+arch s_mountain
 x 47
 y 35
 end
-arch wasteland
+arch mountain5
 x 47
 y 36
 end
-arch mountain2
+arch s_mountain
 x 47
 y 37
 end
@@ -9574,31 +9621,31 @@ end
 arch mountain
 x 48
 end
-arch tree
+arch mountain2
 x 48
 y 1
 end
-arch hills
+arch s_mountain
 x 48
 y 2
 end
-arch hills
+arch mountain5
 x 48
 y 3
 end
-arch steppe
+arch mountain5
 x 48
 y 4
 end
-arch hills
+arch mountain5
 x 48
 y 5
 end
-arch hills
+arch s_mountain
 x 48
 y 6
 end
-arch steppe
+arch mountain2
 x 48
 y 7
 end
@@ -9610,7 +9657,7 @@ arch mountain
 x 48
 y 9
 end
-arch steppe
+arch hills_rocky
 x 48
 y 10
 end
@@ -9654,23 +9701,23 @@ arch mountain
 x 48
 y 20
 end
-arch mountain
+arch hills_rocky
 x 48
 y 21
 end
-arch mountain2
+arch hills
 x 48
 y 22
 end
-arch mountain2
+arch hills
 x 48
 y 23
 end
-arch mountain2
+arch hills
 x 48
 y 24
 end
-arch mountain
+arch hills_rocky
 x 48
 y 25
 end
@@ -9710,15 +9757,15 @@ arch mountain2
 x 48
 y 34
 end
-arch wasteland
+arch s_mountain
 x 48
 y 35
 end
-arch wasteland
+arch s_mountain
 x 48
 y 36
 end
-arch wasteland
+arch mountain2
 x 48
 y 37
 end
@@ -9770,34 +9817,34 @@ arch hills_rocky
 x 48
 y 49
 end
-arch hills
+arch mountain
 x 49
 end
-arch steppe
+arch mountain
 x 49
 y 1
 end
-arch hills
+arch mountain2
 x 49
 y 2
 end
-arch woods
+arch s_mountain
 x 49
 y 3
 end
-arch hills
+arch mountain5
 x 49
 y 4
 end
-arch hills
+arch mountain5
 x 49
 y 5
 end
-arch hills
+arch s_mountain
 x 49
 y 6
 end
-arch steppe
+arch mountain2
 x 49
 y 7
 end
@@ -9813,7 +9860,7 @@ arch mountain
 x 49
 y 10
 end
-arch steppe
+arch hills_rocky
 x 49
 y 11
 end
@@ -9857,15 +9904,15 @@ arch mountain2
 x 49
 y 21
 end
-arch mountain2
+arch hills
 x 49
 y 22
 end
-arch mountain
+arch hills
 x 49
 y 23
 end
-arch mountain
+arch hills_rocky
 x 49
 y 24
 end
@@ -9909,15 +9956,15 @@ arch mountain2
 x 49
 y 34
 end
-arch wasteland
+arch mountain2
 x 49
 y 35
 end
-arch wasteland
+arch s_mountain
 x 49
 y 36
 end
-arch wasteland
+arch mountain2
 x 49
 y 37
 end
