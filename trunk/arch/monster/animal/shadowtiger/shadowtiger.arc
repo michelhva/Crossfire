@@ -1,34 +1,34 @@
 Object shadowtiger
 name Shadow Tiger
 race animal
-face shadowtiger.111
+face shadowtiger.x31
 anim
 facings 2
-shadowtiger.111
-shadowtiger.112
-shadowtiger.113
-shadowtiger.114
-shadowtiger.112
+shadowtiger.x31
+shadowtiger.x32
+shadowtiger.x33
+shadowtiger.x34
+shadowtiger.x32
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.111
+shadowtiger.x31
 blank.111
 blank.111
 blank.111
-shadowtiger.171
-shadowtiger.172
-shadowtiger.173
-shadowtiger.174
-shadowtiger.172
+shadowtiger.x71
+shadowtiger.x72
+shadowtiger.x73
+shadowtiger.x74
+shadowtiger.x72
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.171
+shadowtiger.x71
 blank.111
 blank.111
 blank.111
@@ -53,13 +53,11 @@ resist_drain 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
-
 resist_electricity 50
 resist_weaponmagic 50
-
 attacktype 71041
-speed 0.300000
-weight 300000
+speed -0.3
+weight 2000000
 run_away 2
 attack_movement 3
 editable 1
@@ -68,35 +66,35 @@ end
 More
 Object shadowtiger_2
 name Shadow Tiger
-face shadowtiger.211
+face shadowtiger.x31
 x 1
 anim
 facings 2
-shadowtiger.211
-shadowtiger.212
-shadowtiger.213
-shadowtiger.214
-shadowtiger.212
+shadowtiger.x31
+shadowtiger.x32
+shadowtiger.x33
+shadowtiger.x34
+shadowtiger.x32
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.211
+shadowtiger.x31
 blank.111
 blank.111
 blank.111
-shadowtiger.271
-shadowtiger.272
-shadowtiger.273
-shadowtiger.274
-shadowtiger.272
+shadowtiger.x71
+shadowtiger.x72
+shadowtiger.x73
+shadowtiger.x74
+shadowtiger.x72
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.271
+shadowtiger.x71
 blank.111
 blank.111
 blank.111
@@ -107,35 +105,35 @@ end
 More
 Object shadowtiger_3
 name Shadow Tiger
-face shadowtiger.311
+face shadowtiger.x31
 y 1
 anim
 facings 2
-shadowtiger.311
-shadowtiger.312
-shadowtiger.313
-shadowtiger.314
-shadowtiger.312
+shadowtiger.x31
+shadowtiger.x32
+shadowtiger.x33
+shadowtiger.x34
+shadowtiger.x32
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.311
+shadowtiger.x31
 blank.111
 blank.111
 blank.111
-shadowtiger.371
-shadowtiger.372
-shadowtiger.373
-shadowtiger.374
-shadowtiger.372
+shadowtiger.x71
+shadowtiger.x72
+shadowtiger.x73
+shadowtiger.x74
+shadowtiger.x72
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.371
+shadowtiger.x71
 blank.111
 blank.111
 blank.111
@@ -146,36 +144,36 @@ end
 More
 Object shadowtiger_4
 name Shadow Tiger
-face shadowtiger.411
+face shadowtiger.x31
 x 1
 y 1
 anim
 facings 2
-shadowtiger.411
-shadowtiger.412
-shadowtiger.413
-shadowtiger.414
-shadowtiger.412
+shadowtiger.x31
+shadowtiger.x32
+shadowtiger.x33
+shadowtiger.x34
+shadowtiger.x32
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.411
+shadowtiger.x31
 blank.111
 blank.111
 blank.111
-shadowtiger.471
-shadowtiger.472
-shadowtiger.473
-shadowtiger.474
-shadowtiger.472
+shadowtiger.x71
+shadowtiger.x72
+shadowtiger.x73
+shadowtiger.x74
+shadowtiger.x72
 blank.111
 blank.111
 blank.111
 blank.111
 blank.111
-shadowtiger.471
+shadowtiger.x71
 blank.111
 blank.111
 blank.111
