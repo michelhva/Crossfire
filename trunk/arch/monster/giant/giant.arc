@@ -11,8 +11,7 @@ anim
 giant.111
 giant.112
 mina
-resist_electricity 30
-
+resist_electricity 50
 exp 1500
 ac 1
 wc 2

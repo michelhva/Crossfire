@@ -14,8 +14,8 @@ gaelotroll.112
 mina
 resist_fire -100
 
-resist_physical 30
-resist_fear 30
+resist_physical 50
+resist_fear 50
 
 attacktype 65
 can_see_in_dark 1

@@ -23,8 +23,9 @@ attacktype 5
 resist_fire 100
 resist_cold 100
 resist_fear 100
-
-resist_magic 30
+resist_holyword 90
+resist_godpower 90
+resist_magic 80
 
 level 19
 speed -0.2

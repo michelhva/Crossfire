@@ -21,7 +21,7 @@ dam 10
 attacktype 1025
 resist_fire 100
 
-resist_electricity 30
+resist_electricity 50
 
 resist_cold -100
 resist_confusion -100

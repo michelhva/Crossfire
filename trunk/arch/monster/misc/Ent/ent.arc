@@ -18,18 +18,19 @@ msg
 Don't trod on my roots!
 endmsg
 unaggressive 1
-resist_fire -100
-
-exp 1000
+resist_fire -50
+resist_cold 50
+resist_electricity 50
+exp 16000
 ac -1
 wc -1
-dam 15
+dam 25
 can_see_in_dark 1
-hp 500
+hp 1500
 Con 10
-maxhp 500
+maxhp 1500
 alive 1
-speed -0.2
+speed -0.3
 weight 300000
 monster 1
 sleep 1

@@ -26,7 +26,7 @@ Con 10
 wc 1
 dam 8
 speed 0.15
-resist_magic 30
+resist_magic 50
 
 resist_confusion -100
 resist_weaponmagic -100

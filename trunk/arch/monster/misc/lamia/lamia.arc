@@ -22,8 +22,8 @@ can_cast_spell 1
 color_fg green
 maxsp 50
 sp 50
-resist_physical 30
-resist_magic 30
+resist_physical 50
+resist_magic 50
 
 resist_acid 100
 resist_poison 100

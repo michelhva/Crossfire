@@ -20,8 +20,8 @@ Pow 30
 can_cast_spell 1
 maxsp 300
 sp 300
-resist_drain 30
-resist_chaos 30
+resist_drain 50
+resist_chaos 50
 
 resist_physical 100
 resist_magic 100

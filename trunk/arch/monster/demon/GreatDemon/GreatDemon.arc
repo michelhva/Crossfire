@@ -34,9 +34,9 @@ resist_fire 100
 resist_confusion 100
 resist_poison 100
 
-resist_magic 30
-resist_godpower 30
-resist_holyword 30
+resist_magic 90
+resist_godpower 90
+resist_holyword 90
 
 level 40
 speed 0.3

@@ -24,7 +24,7 @@ level 50
 resist_electricity 100
 resist_fear 100
 
-resist_magic 30
+resist_magic 50
 
 weight 1500000
 randomitems titan

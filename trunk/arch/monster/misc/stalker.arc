@@ -30,7 +30,7 @@ wc 10
 dam 5
 speed -0.4
 flying 1
-resist_electricity 30
+resist_electricity 50
 
 run_away 25
 attack_movement 3

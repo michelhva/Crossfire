@@ -22,9 +22,7 @@ titan.531
 mina
 resist_electricity 100
 resist_fear 100
-
-resist_magic 30
-
+resist_magic 50
 exp 100000
 ac -5
 wc -20

@@ -54,8 +54,8 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 
-resist_electricity 30
-resist_weaponmagic 30
+resist_electricity 50
+resist_weaponmagic 50
 
 attacktype 71041
 speed 0.300000
