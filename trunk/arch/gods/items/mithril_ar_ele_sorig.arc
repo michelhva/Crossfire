@@ -14,6 +14,7 @@ msg
   electricity and physical attacks will
   not reducing your mobility. Be warned 
   that what Sorig gives, Sorig can take.
+endmsg
 startequip 1
 Dex 1
 Str 1
