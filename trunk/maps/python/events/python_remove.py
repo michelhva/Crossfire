@@ -22,11 +22,9 @@
 # acount cleanup - Todd Mitchell
 
 import CFPython
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFLog
 import CFBank
+import CFGuilds
 
 activator = CFPython.WhoIsActivator()
 name = CFPython.GetName(activator)
@@ -38,3 +36,7 @@ log.remove(name)
 #when the player quits
 bank = CFBank.CFBank('ImperialBank_DB')
 bank.remove_account(name)
+
+in_guild = CFGuilds.SearchGuilds(name)
+if in_guild:
+    CFGuilds.CFGuild(in_guild).remove_member(name)

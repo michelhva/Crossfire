@@ -21,9 +21,6 @@
 #Updated to use new path functions in CFPython -Todd Mitchell
 
 import CFPython
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFLog
 
 activator = CFPython.WhoIsActivator()
