@@ -1,5 +1,5 @@
 Object bearskin
-name bear skin
+name skin
 nrof 1
 face bearskin.111
 material 32

@@ -14,6 +14,5 @@ attacktype 1
 speed 0.2
 hp 1
 dam 3
-is_floor 1
 editable 8
 end
