@@ -677,6 +677,10 @@ arch dungeon_floor
 x 4
 y 2
 end
+arch spider
+x 4
+y 2
+end
 arch dungeon_floor
 x 4
 y 3
@@ -690,10 +694,6 @@ x 4
 y 5
 end
 arch dungeon_floor
-x 4
-y 6
-end
-arch spider_gen
 x 4
 y 6
 end
@@ -1037,6 +1037,10 @@ arch dungeon_floor
 x 6
 y 6
 end
+arch spider
+x 6
+y 6
+end
 arch dungeon_floor
 x 6
 y 7
@@ -1310,6 +1314,10 @@ x 8
 y 2
 end
 arch dungeon_floor
+x 8
+y 3
+end
+arch spider
 x 8
 y 3
 end
@@ -1476,6 +1484,10 @@ arch dungeon_floor
 x 9
 y 6
 end
+arch spider_web
+x 9
+y 6
+end
 arch dungeon_floor
 x 9
 y 7
@@ -1626,6 +1638,10 @@ arch dungeon_floor
 x 10
 y 5
 end
+arch spider_web
+x 10
+y 5
+end
 arch dungeon_floor
 x 10
 y 6
@@ -1749,10 +1765,6 @@ x 11
 y 1
 end
 arch dungeon_floor
-x 11
-y 2
-end
-arch spider
 x 11
 y 2
 end
@@ -2348,6 +2360,10 @@ arch dungeon_floor
 x 15
 y 2
 end
+arch spider_web
+x 15
+y 2
+end
 arch door_1
 x 15
 y 2
@@ -2592,6 +2608,14 @@ arch dungeon_floor
 x 16
 y 2
 end
+arch magic_mouth
+msg
+Skitter....
+endmsg
+food 1
+x 16
+y 2
+end
 arch dungeon_floor
 x 16
 y 3
@@ -2605,6 +2629,14 @@ x 16
 y 4
 end
 arch dungeon_floor
+x 16
+y 5
+end
+arch magic_mouth
+msg
+Hmm, someone needs to dust these cobwebs...
+endmsg
+food 1
 x 16
 y 5
 end
@@ -5198,6 +5230,11 @@ y 26
 end
 arch spikes_open
 connected 15
+x 29
+y 27
+end
+arch spikes_open
+connected 18
 x 29
 y 27
 end
