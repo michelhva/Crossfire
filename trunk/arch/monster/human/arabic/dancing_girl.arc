@@ -2,6 +2,11 @@ Object dancing_girl
 race human
 name Dancing girl
 face dancing_girl.111
+anim
+dancing_girl.111
+dancing_girl.112
+dancing_girl.113
+mina
 alive 1
 monster 1
 no_pick 1
@@ -15,7 +20,7 @@ Con 5
 dam 5
 level 1
 random_movement 1
-speed 0.16
+speed 0.5
 weight 100000
 unaggressive 1
 can_use_rod 1
