@@ -1,7 +1,7 @@
 arch map
 name main
 msg
-Creator: josh@woosworld.net
+Creator: majorwoo josh@woosworld.net
 Date:    10/17/2004
 endmsg
 width 25
@@ -2777,6 +2777,9 @@ x 12
 y 7
 end
 arch stair2_down
+msg
+It's very damp and cold down here...
+endmsg
 slaying basement
 hp 12
 sp 7
