@@ -3,11 +3,6 @@ race human
 name woman
 randomitems throw_stnd
 face woman.111
-anim
-facings 2
-woman.171
-woman.131
-mina
 sp 10
 maxsp 10
 Pow 1
