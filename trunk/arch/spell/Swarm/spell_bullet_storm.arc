@@ -1,6 +1,7 @@
 Object spell_bullet_storm
 name bullet storm
 name_pl bullet storm
+face spell_evocation.111
 skill evocation
 type 101
 subtype 36

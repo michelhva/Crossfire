@@ -1,6 +1,7 @@
 Object spell_town_portal
 name town portal
 name_pl town portal
+face spell_sorcery.111
 type 101
 subtype 47
 level 15

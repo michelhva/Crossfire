@@ -1,6 +1,7 @@
 Object spell_disarm
 name disarm
 name_pl disarm
+face spell_sorcery.111
 type 101
 subtype 38
 level 4

@@ -1,6 +1,7 @@
 Object spell_build_bullet_wall
 name build bullet wall
 name_pl build bullet wall
+face spell_evocation.111
 type 101
 subtype 15
 level 12

@@ -1,6 +1,7 @@
 Object spell_insect_plague
 name insect plague
 name_pl insect plague
+face spell_praying.111
 type 101
 subtype 10
 level 9

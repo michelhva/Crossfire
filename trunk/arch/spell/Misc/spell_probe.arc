@@ -1,6 +1,7 @@
 Object spell_probe
 name probe
 name_pl probe
+face spell_sorcery.111
 level 1
 sp 3
 casting_time 2

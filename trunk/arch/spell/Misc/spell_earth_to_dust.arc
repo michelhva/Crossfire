@@ -1,6 +1,7 @@
 Object spell_earth_to_dust
 name earth to dust
 name_pl earth to dust
+face spell_summoner.111
 level 2
 sp 5
 casting_time 30

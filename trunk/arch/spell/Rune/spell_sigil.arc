@@ -1,6 +1,7 @@
 Object spell_sigil
 name sigil
 name_pl sigil
+face spell_evocation.111
 type 101
 subtype 2
 no_drop 1

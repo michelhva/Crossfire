@@ -1,6 +1,7 @@
 Object spell_cure_confusion
 name cure confusion
 name_pl cure confusion
+face spell_praying.111
 level 7
 grace 8
 casting_time 15

@@ -1,6 +1,7 @@
 Object spell_dimension_door
 name dimension door
 name_pl dimension door
+face spell_sorcery.111
 level 10
 value 100
 sp 25

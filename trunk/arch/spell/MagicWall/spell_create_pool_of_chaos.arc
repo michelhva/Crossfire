@@ -1,6 +1,7 @@
 Object spell_create_pool_of_chaos
 name create pool of chaos
 name_pl create pool of chaos
+face spell_evocation.111
 level 10
 sp 10
 casting_time 15

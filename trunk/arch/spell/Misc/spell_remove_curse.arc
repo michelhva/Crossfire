@@ -1,6 +1,7 @@
 Object spell_remove_curse
 name remove curse
 name_pl remove curse
+face spell_praying.111
 level 8
 grace 80
 casting_time 100

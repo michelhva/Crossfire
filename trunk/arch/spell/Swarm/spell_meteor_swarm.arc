@@ -1,6 +1,7 @@
 Object spell_meteor_swarm
 name meteor swarm
 name_pl meteor swarm
+face spell_pyromancy.111
 skill pyromancy
 type 101
 subtype 36

@@ -1,6 +1,7 @@
 Object spell_create_food
 name create food
 name_pl create food
+face spell_summoner.111
 level 6
 sp 10
 casting_time 20

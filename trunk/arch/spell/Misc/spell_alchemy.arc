@@ -1,6 +1,7 @@
 Object spell_alchemy
 name alchemy
 name_pl alchemy
+face spell_summoner.111
 level 3
 sp 5
 casting_time 25

@@ -1,6 +1,7 @@
 Object spell_rune_of_transference
 name rune of transference
 name_pl rune of transference
+face spell_sorcery.111
 type 101
 subtype 2
 no_drop 1

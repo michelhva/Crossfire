@@ -1,6 +1,7 @@
 Object spell_summon_avatar
 name summon avatar
 name_pl summon avatar
+face spell_praying.111
 level 10
 grace 60
 casting_time 15

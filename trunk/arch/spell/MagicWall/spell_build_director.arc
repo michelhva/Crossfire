@@ -1,6 +1,7 @@
 Object spell_build_director
 name build director
 name_pl build director
+face spell_summoner.111
 type 101
 subtype 15
 level 10

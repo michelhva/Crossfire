@@ -1,6 +1,7 @@
 Object spell_invisible
 name invisible
 name_pl invisible
+face spell_sorcery.111
 level 6
 sp 15
 casting_time 5

@@ -1,6 +1,7 @@
 Object spell_cause_white_death
 name cause white death
 name_pl cause white death
+face spell_praying.111
 type 101
 subtype 45
 level 85

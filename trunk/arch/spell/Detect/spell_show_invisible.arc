@@ -1,6 +1,7 @@
 Object spell_show_invisible
 name show invisible
 name_pl show invisible
+face spell_praying.111
 level 7
 grace 10
 casting_time 20

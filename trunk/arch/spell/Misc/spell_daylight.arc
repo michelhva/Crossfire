@@ -1,6 +1,7 @@
 Object spell_daylight
 name daylight
 name_pl daylight
+face spell_praying.111
 type 101
 subtype 43
 level 18

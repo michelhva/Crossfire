@@ -1,6 +1,7 @@
 Object spell_cause_smallpox
 name cause smallpox
 name_pl cause smallpox
+face spell_praying.111
 type 101
 subtype 45
 level 10

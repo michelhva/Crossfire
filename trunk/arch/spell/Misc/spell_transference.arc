@@ -1,6 +1,7 @@
 Object spell_transference
 name transference
 name_pl transference
+face spell_sorcery.111
 type 101
 subtype 37
 level 5

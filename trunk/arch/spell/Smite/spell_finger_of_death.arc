@@ -1,6 +1,7 @@
 Object spell_finger_of_death
 name finger of death
 name_pl finger of death
+face spell_praying.111
 type 101
 subtype 10
 level 14

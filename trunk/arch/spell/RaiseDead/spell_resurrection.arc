@@ -1,6 +1,7 @@
 Object spell_resurrection
 name resurrection
 name_pl resurrection
+face spell_praying.111
 type 101
 subtype 1
 level 20

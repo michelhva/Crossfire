@@ -1,6 +1,7 @@
 Object spell_light
 name light
 name_pl light
+face spell_praying.111
 type 101
 subtype 42
 level 1

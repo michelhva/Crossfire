@@ -1,6 +1,7 @@
 Object spell_pacify
 name pacify
 name_pl pacify
+face spell_praying.111
 level 4
 grace 10
 casting_time 2

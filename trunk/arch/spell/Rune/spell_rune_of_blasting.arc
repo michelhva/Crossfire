@@ -1,6 +1,7 @@
 Object spell_rune_of_blasting
 name rune of blasting
 name_pl rune of blasting
+face spell_pyromancy.111
 type 101
 subtype 2
 no_drop 1

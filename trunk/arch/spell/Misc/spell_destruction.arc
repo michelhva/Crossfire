@@ -1,6 +1,7 @@
 Object spell_destruction
 name destruction
 name_pl destruction
+face spell_sorcery.111
 level 18
 sp 30
 casting_time 20

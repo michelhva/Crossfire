@@ -1,6 +1,7 @@
 Object spell_identify
 name identify
 name_pl identify
+face spell_sorcery.111
 level 8
 sp 60
 casting_time 200

@@ -1,6 +1,7 @@
 Object spell_antimagic_rune
 name antimagic rune
 name_pl antimagic rune
+face spell_sorcery.111
 type 101
 subtype 2
 no_drop 1

@@ -1,6 +1,7 @@
 Object spell_reincarnation
 name reincarnation
 name_pl reincarnation
+face spell_praying.111
 type 101
 subtype 1
 level 25

@@ -1,6 +1,7 @@
 Object spell_cure_blindness
 name cure blindness
 name_pl cure blindness
+face spell_praying.111
 level 9
 grace 30
 casting_time 10

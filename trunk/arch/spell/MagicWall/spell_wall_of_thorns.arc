@@ -1,6 +1,7 @@
 Object spell_wall_of_thorns
 name wall of thorns
 name_pl wall of thorns
+face spell_praying.111
 level 6
 grace 20
 casting_time 5

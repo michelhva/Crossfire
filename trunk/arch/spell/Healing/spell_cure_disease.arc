@@ -1,6 +1,7 @@
 Object spell_cure_disease
 name cure disease
 name_pl cure disease
+face spell_praying.111
 level 5
 grace 30
 casting_time 10

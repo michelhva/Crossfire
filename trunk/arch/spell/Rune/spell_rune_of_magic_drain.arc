@@ -1,6 +1,7 @@
 Object spell_rune_of_magic_drain
 name rune of magic drain
 name_pl rune of magic drain
+face spell_evocation.111
 type 101
 subtype 2
 no_drop 1

@@ -1,6 +1,7 @@
 Object spell_medium_healing
 name medium healing
 name_pl medium healing
+face spell_praying.111
 level 4
 grace 7
 casting_time 6

@@ -1,6 +1,7 @@
 Object spell_heal
 name heal
 name_pl heal
+face spell_praying.111
 level 10
 grace 50
 casting_time 12

@@ -1,6 +1,7 @@
 Object spell_word_of_recall
 name word of recall
 name_pl word of recall
+face spell_praying.111
 level 10
 grace 40
 casting_time 50

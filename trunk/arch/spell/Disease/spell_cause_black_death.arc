@@ -3,6 +3,7 @@ name cause black death
 name_pl cause black death
 type 101
 subtype 45
+face spell_praying.111
 level 15
 value 150
 grace 120

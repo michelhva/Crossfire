@@ -1,6 +1,7 @@
 Object spell_build_fireball_wall
 name build fireball wall
 name_pl build fireball wall
+face spell_pyromancy.111
 type 101
 subtype 15
 level 16

@@ -1,6 +1,7 @@
 Object spell_pentagram
 name pentagram
 name_pl pentagram
+face spell_summoner.111
 type 101
 subtype 2
 no_drop 1

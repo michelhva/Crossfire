@@ -1,6 +1,7 @@
 Object spell_mystic_fist
 name mystic fist
 name_pl mystic fist
+face spell_summoner.111
 level 5
 sp 10
 casting_time 15

@@ -1,6 +1,7 @@
 Object spell_poison_fog
 name poison fog
 name_pl poison fog
+face spell_praying.111
 type 101
 subtype 35
 level 5

@@ -1,6 +1,7 @@
 Object spell_raise_dead
 name raise dead
 name_pl raise dead
+face spell_praying.111
 type 101
 subtype 1
 level 10

@@ -1,6 +1,7 @@
 Object spell_conflict
 name conflict
 name_pl conflict
+face spell_praying.111
 level 10
 grace 50
 casting_time 10
