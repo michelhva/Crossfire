@@ -5,7 +5,7 @@ face sheepskin.111
 material 32
 color_fg white
 type 72
-weight 700
+weight 30
 editable 2048
-value 200
+value 100
 end
