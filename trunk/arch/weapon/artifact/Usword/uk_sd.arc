@@ -1,5 +1,6 @@
 Object uk_sd
 name Unknown Sword
+nrof 1
 last_sp 6
 type 15
 face uk_sd.111
@@ -17,7 +18,7 @@ material 2
 Str 2
 Dex 2
 dam 40
-weight 1qq000
+weight 111000
 value 1000000
 editable 1024
 attacktype 1
