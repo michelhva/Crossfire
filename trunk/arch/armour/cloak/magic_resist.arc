@@ -10,7 +10,8 @@ weight 5000
 value 220000
 startequip 1
 no_steal 1
-material 256
+material 128
+materialname astolare
 resist_magic 95
 editable 5120
 color_fg black

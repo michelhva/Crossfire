@@ -5,7 +5,8 @@ nrof 1
 last_sp 2
 type 15
 face magnifier.111
-material 6
+material 4
+materialname glass
 Dex 1
 dam 1
 weight 2000

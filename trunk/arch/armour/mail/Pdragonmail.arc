@@ -12,6 +12,7 @@ mina
 speed 0.2
 last_sp 13
 ac 8
+material 256
 resist_physical 60
 weight 40000
 value 990000

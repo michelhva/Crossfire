@@ -8,7 +8,7 @@ weight 500
 resist_physical 1
 nrof 1
 type 99
-material 24
+material 8
 editable 1024
 color_fg brown
 body_foot -2

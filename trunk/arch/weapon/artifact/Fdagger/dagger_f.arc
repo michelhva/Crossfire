@@ -15,7 +15,8 @@ nrof 1
 type 15
 attacktype 1
 weapontype 2
-material 2
+material 256
+materialname glacium
 value 50000
 weight 2000
 last_sp 5
