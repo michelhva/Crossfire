@@ -27,7 +27,7 @@ You burn!
 endmsg
 race *,undead
 level 10
-armour 10
+last_grace 10
 end
 Object immolation_immunity
 name immolation

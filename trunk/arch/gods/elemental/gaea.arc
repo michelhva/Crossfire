@@ -23,7 +23,6 @@ path_repelled 30
 immune 196736
 protected 196736
 vulnerable 16384
-armour 50
 ac -5
 wc -1
 dam 50

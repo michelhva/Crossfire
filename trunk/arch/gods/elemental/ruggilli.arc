@@ -21,7 +21,6 @@ path_denied 82945
 immune 4
 protected 7
 vulnerable 16
-armour 20
 ac -5
 wc -3
 dam 60

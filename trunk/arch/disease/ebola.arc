@@ -6,7 +6,7 @@ attacktype 1048576
 wc 30
 magic -1
 Str -3
-armour 5
+last_grace 5
 Con -4
 Dex -2
 Wis -2

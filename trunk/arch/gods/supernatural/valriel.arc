@@ -21,7 +21,6 @@ path_attuned 1025
 path_denied 393216
 immune 16416
 protected 16416
-armour 50
 ac -7
 wc -1
 hp 350

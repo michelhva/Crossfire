@@ -46,8 +46,14 @@ can_use_ring 1
 can_use_armour 1
 can_use_weapon 1
 editable 1
-immune 20642
-protected 27
+resist_physical 50
+resist_magic 100
+resist_electricity 50
+resist_cold 50
+resist_confusion 100
+resist_drain 100
+resist_paralyze 100
+resist_fear 100
 ac -15
 wc -35
 dam 30

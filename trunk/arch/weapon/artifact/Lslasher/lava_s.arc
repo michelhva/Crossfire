@@ -12,8 +12,7 @@ Con 2
 dam 30
 speed 0.250000
 type 15
-immune 16
-protected 16
+resist_cold 70
 attacktype 5
 material 2
 value 220000
