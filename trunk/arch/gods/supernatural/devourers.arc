@@ -14,7 +14,7 @@ Dex 30
 Int 30
 Wis 30
 Pow 30
-attacktype 196736
+attacktype 16973824
 path_attuned 393216
 path_denied 65536
 path_repelled 524547
