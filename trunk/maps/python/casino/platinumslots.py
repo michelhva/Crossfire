@@ -60,7 +60,10 @@ if (CFPython.PayAmount(activator, cost*50)):#platinumcoin
          Slots.payoff(payoff)
          id = CFPython.CreateObject(cointype, (x, y))
          CFPython.SetQuantity(id, payoff)
-         message = "you win %d %s!" %(payoff,cointype)
+         if payoff == 1:
+            message = "you win %d %s!" %(payoff,cointype)
+	 else:
+	    message = "You win %d %ss!!" %(payoff,cointype)	
          break
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
@@ -85,7 +88,10 @@ if (CFPython.PayAmount(activator, cost*50)):#platinumcoin
          Slots.payoff(payoff)
          id = CFPython.CreateObject(cointype, (x, y))
          CFPython.SetQuantity(id, payoff)
-         message = "you win %d %s!!" %(payoff,cointype)
+         if payoff == 1:
+            message = "you win %d %s!" %(payoff,cointype)
+	 else:
+	    message = "You win %d %ss!!" %(payoff,cointype)	
          break
       else:
          message = "Better luck next time!"
