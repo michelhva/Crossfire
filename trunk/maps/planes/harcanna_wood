@@ -1,768 +1,869 @@
 arch map
-name TheGreenWay
+name Harcanna Wood
 msg
 Creator: Avion
 CF Java Map Editor
-Date:    5/24/2004
+Date:    9/25/2004
 endmsg
+maplore
+In Harcanna Wood you can find the tower of Sorrow.
+Harcanna Wood is the home of the brothers Verdan and Non.
+endmaplore
 width 50
 height 50
-darkness 2
-tile_path_1 /planes/greenway5
-tile_path_2 /planes/greenway4
-tile_path_3 /planes/greenway6
-tile_path_4 /planes/greenway8
+enter_x 34
+enter_y 13
+difficulty 20
+outdoor 1
 end
 arch darkforest
 end
 arch darkforest
 y 1
 end
-arch tree
+arch darkforest
 y 2
 end
-arch tree
+arch darkforest
 y 3
 end
-arch woods
+arch darkforest
 y 4
 end
 arch darkforest
 y 5
 end
-arch darkforest
+arch grass
 y 6
 end
-arch darkforest
+arch deathtree
+y 6
+end
+arch grass
 y 7
 end
-arch tree
+arch deathtree
+y 7
+end
+arch darkforest
 y 8
 end
-arch tree
+arch darkforest
 y 9
 end
-arch tree
+arch darkforest
 y 10
 end
-arch tree
+arch grass
 y 11
 end
-arch tree
+arch darkforest
 y 12
 end
-arch woods_2
+arch grass
 y 13
 end
-arch tree
+arch deathtree
+y 13
+end
+arch grass
 y 14
 end
-arch tree
+arch deathtree
+y 14
+end
+arch grass
 y 15
 end
-arch tree
+arch deathtree
+y 15
+end
+arch grass
 y 16
 end
-arch tree
-y 17
-end
-arch tree
-y 18
-end
-arch tree
-y 19
-end
-arch tree
-y 20
-end
-arch tree
-y 21
-end
-arch tree
-y 22
-end
-arch tree
-y 23
-end
-arch tree
-y 24
-end
-arch tree
-y 25
-end
-arch tree
-y 26
-end
-arch tree
-y 27
-end
-arch tree
-y 28
-end
-arch darkforest
-y 29
-end
-arch darkforest
-y 30
-end
-arch darkforest
-y 31
-end
-arch darkforest
-y 32
-end
-arch darkforest
-y 33
-end
-arch darkforest
-y 34
-end
-arch darkforest
-y 35
-end
-arch darkforest
-y 36
-end
-arch darkforest
-y 37
-end
-arch darkforest
-y 38
-end
-arch darkforest
-y 39
-end
-arch darkforest
-y 40
-end
-arch darkforest
-y 41
-end
-arch darkforest
-y 42
-end
-arch darkforest
-y 43
-end
-arch darkforest
-y 44
-end
-arch darkforest
-y 45
-end
-arch darkforest
-y 46
-end
-arch darkforest
-y 47
-end
-arch darkforest
-y 48
-end
-arch tree
-y 49
-end
-arch darkforest
-x 1
-end
-arch tree
-x 1
-y 1
-end
-arch woods
-x 1
-y 2
-end
-arch woods
-x 1
-y 3
-end
-arch darkforest
-x 1
-y 4
-end
-arch tree
-x 1
-y 5
-end
-arch tree
-x 1
-y 6
-end
-arch darkforest
-x 1
-y 7
-end
-arch darkforest
-x 1
-y 8
-end
-arch tree
-x 1
-y 9
-end
-arch darkforest
-x 1
-y 10
-end
-arch darkforest
-x 1
-y 11
-end
-arch woods_2
-x 1
-y 12
-end
-arch woods_2
-x 1
-y 13
-end
-arch tree
-x 1
-y 14
-end
-arch tree
-x 1
-y 15
-end
-arch evergreens
-x 1
-y 16
-end
-arch evergreens
-x 1
-y 17
-end
-arch tree
-x 1
-y 18
-end
-arch woods
-x 1
-y 19
-end
-arch woods
-x 1
-y 20
-end
-arch tree
-x 1
-y 21
-end
-arch tree
-x 1
-y 22
-end
-arch tree
-x 1
-y 23
-end
-arch woods
-x 1
-y 24
-end
-arch woods
-x 1
-y 25
-end
-arch darkforest
-x 1
-y 26
-end
-arch darkforest
-x 1
-y 27
-end
-arch tree
-x 1
-y 28
-end
-arch darkforest
-x 1
-y 29
-end
-arch darkforest
-x 1
-y 30
-end
-arch darkforest
-x 1
-y 31
-end
-arch darkforest
-x 1
-y 32
-end
-arch darkforest
-x 1
-y 33
-end
-arch darkforest
-x 1
-y 34
-end
-arch darkforest
-x 1
-y 35
-end
-arch darkforest
-x 1
-y 36
-end
-arch darkforest
-x 1
-y 37
-end
-arch darkforest
-x 1
-y 38
-end
-arch darkforest
-x 1
-y 39
-end
-arch evergreens
-x 1
-y 40
-end
-arch woods_2
-x 1
-y 41
-end
-arch tree
-x 1
-y 42
-end
-arch woods_2
-x 1
-y 43
-end
-arch darkforest
-x 1
-y 44
-end
-arch darkforest
-x 1
-y 45
-end
-arch darkforest
-x 1
-y 46
-end
-arch darkforest
-x 1
-y 47
-end
-arch darkforest
-x 1
-y 48
-end
-arch tree
-x 1
-y 49
-end
-arch darkforest
-x 2
-end
-arch woods
-x 2
-y 1
-end
-arch woods
-x 2
-y 2
-end
-arch tree
-x 2
-y 3
-end
-arch darkforest
-x 2
-y 4
-end
-arch tree
-x 2
-y 5
-end
-arch tree
-x 2
-y 6
-end
-arch woods
-x 2
-y 7
-end
-arch darkforest
-x 2
-y 8
-end
-arch woods
-x 2
-y 9
-end
-arch darkforest
-x 2
-y 10
-end
-arch darkforest
-x 2
-y 11
-end
-arch darkforest
-x 2
-y 12
-end
-arch darkforest
-x 2
-y 13
-end
-arch tree
-x 2
-y 14
-end
-arch tree
-x 2
-y 15
-end
-arch tree
-x 2
-y 16
-end
-arch woods
-x 2
-y 17
-end
-arch woods
-x 2
-y 18
-end
-arch woods
-x 2
-y 19
-end
-arch woods
-x 2
-y 20
-end
-arch tree
-x 2
-y 21
-end
-arch tree
-x 2
-y 22
-end
-arch tree
-x 2
-y 23
-end
-arch evergreens
-x 2
-y 24
-end
-arch woods_2
-x 2
-y 25
-end
-arch woods
-x 2
-y 26
-end
-arch woods
-x 2
-y 27
-end
-arch woods_2
-x 2
-y 28
-end
-arch evergreens
-x 2
-y 29
-end
-arch evergreens
-x 2
-y 30
-end
-arch evergreens
-x 2
-y 31
-end
-arch evergreens
-x 2
-y 32
-end
-arch evergreens
-x 2
-y 33
-end
-arch evergreens
-x 2
-y 34
-end
-arch evergreens
-x 2
-y 35
-end
-arch evergreens
-x 2
-y 36
-end
-arch tree
-x 2
-y 37
-end
-arch woods_2
-x 2
-y 38
-end
-arch darkforest
-x 2
-y 39
-end
-arch evergreens
-x 2
-y 40
-end
-arch tree
-x 2
-y 41
-end
-arch darkforest
-x 2
-y 42
-end
-arch woods_2
-x 2
-y 43
-end
-arch darkforest
-x 2
-y 44
-end
-arch darkforest
-x 2
-y 45
-end
-arch darkforest
-x 2
-y 46
-end
-arch darkforest
-x 2
-y 47
-end
-arch darkforest
-x 2
-y 48
-end
-arch tree
-x 2
-y 49
-end
-arch darkforest
-x 3
-end
-arch woods
-x 3
-y 1
-end
-arch tree
-x 3
-y 2
-end
-arch tree
-x 3
-y 3
-end
-arch darkforest
-x 3
-y 4
-end
-arch darkforest
-x 3
-y 5
-end
-arch woods_2
-x 3
-y 6
-end
-arch woods_2
-x 3
-y 7
-end
-arch darkforest
-x 3
-y 8
-end
-arch darkforest
-x 3
-y 9
-end
-arch darkforest
-x 3
-y 10
-end
-arch darkforest
-x 3
-y 11
-end
-arch woods_2
-x 3
-y 12
-end
-arch darkforest
-x 3
-y 13
-end
-arch darkforest
-x 3
-y 14
-end
-arch woods
-x 3
-y 15
-end
-arch woods_2
-x 3
+arch deathtree
 y 16
 end
 arch grass
-x 3
+y 17
+end
+arch deathtree
 y 17
 end
 arch grass
-x 3
 y 18
 end
-arch woods
-x 3
+arch grass
 y 19
 end
-arch woods
-x 3
+arch darkforest
 y 20
 end
-arch woods_2
-x 3
+arch woods
 y 21
 end
-arch woods_2
-x 3
+arch woods
 y 22
 end
-arch evergreens
-x 3
+arch darkforest
 y 23
 end
-arch evergreens
-x 3
+arch darkforest
 y 24
 end
-arch woods_2
-x 3
+arch woods
 y 25
 end
-arch woods_2
-x 3
+arch woods
 y 26
 end
-arch woods
-x 3
+arch grass
 y 27
 end
-arch woods_2
-x 3
+arch darkforest
 y 28
 end
 arch darkforest
-x 3
 y 29
 end
-arch brush
-x 3
+arch darkforest
 y 30
 end
 arch darkforest
-x 3
 y 31
 end
 arch darkforest
-x 3
 y 32
 end
-arch evergreens
-x 3
+arch darkforest
 y 33
 end
-arch evergreens
-x 3
+arch darkforest
 y 34
 end
-arch evergreens
-x 3
+arch darkforest
 y 35
 end
-arch evergreens
-x 3
+arch darkforest
 y 36
 end
-arch woods_2
-x 3
+arch darkforest
 y 37
 end
-arch woods_2
-x 3
+arch shallow_sea
 y 38
 end
 arch darkforest
-x 3
 y 39
 end
-arch evergreens
-x 3
+arch grass
+y 40
+end
+arch grass
+y 41
+end
+arch deathtree
+y 41
+end
+arch grass
+y 42
+end
+arch deathtree
+y 42
+end
+arch grass
+y 43
+end
+arch deathtree
+y 43
+end
+arch grass
+y 44
+end
+arch darkforest
+y 45
+end
+arch darkforest
+y 46
+end
+arch darkforest
+y 47
+end
+arch woods
+y 48
+end
+arch darkforest
+y 49
+end
+arch darkforest
+x 1
+end
+arch darkforest
+x 1
+y 1
+end
+arch woods
+x 1
+y 2
+end
+arch darkforest
+x 1
+y 3
+end
+arch grass
+x 1
+y 4
+end
+arch grass
+x 1
+y 5
+end
+arch deathtree
+x 1
+y 5
+end
+arch grass
+x 1
+y 6
+end
+arch deathtree
+x 1
+y 6
+end
+arch darkforest
+x 1
+y 7
+end
+arch darkforest
+x 1
+y 8
+end
+arch darkforest
+x 1
+y 9
+end
+arch darkforest
+x 1
+y 10
+end
+arch darkforest
+x 1
+y 11
+end
+arch darkforest
+x 1
+y 12
+end
+arch darkforest
+x 1
+y 13
+end
+arch grass
+x 1
+y 14
+end
+arch grass
+x 1
+y 15
+end
+arch grass
+x 1
+y 16
+end
+arch deathtree
+x 1
+y 16
+end
+arch grass
+x 1
+y 17
+end
+arch deathtree
+x 1
+y 17
+end
+arch grass
+x 1
+y 18
+end
+arch grass
+x 1
+y 19
+end
+arch grass
+x 1
+y 20
+end
+arch grass
+x 1
+y 21
+end
+arch darkforest
+x 1
+y 22
+end
+arch darkforest
+x 1
+y 23
+end
+arch darkforest
+x 1
+y 24
+end
+arch darkforest
+x 1
+y 25
+end
+arch woods
+x 1
+y 26
+end
+arch woods
+x 1
+y 27
+end
+arch woods
+x 1
+y 28
+end
+arch woods
+x 1
+y 29
+end
+arch woods
+x 1
+y 30
+end
+arch darkforest
+x 1
+y 31
+end
+arch grass
+x 1
+y 32
+end
+arch woods
+x 1
+y 33
+end
+arch woods
+x 1
+y 34
+end
+arch woods
+x 1
+y 35
+end
+arch darkforest
+x 1
+y 36
+end
+arch darkforest
+x 1
+y 37
+end
+arch shallow_sea
+x 1
+y 38
+end
+arch darkforest
+x 1
+y 39
+end
+arch grass
+x 1
+y 40
+end
+arch deathtree
+x 1
+y 40
+end
+arch grass
+x 1
+y 41
+end
+arch deathtree
+x 1
+y 41
+end
+arch grass
+x 1
+y 42
+end
+arch grass
+x 1
+y 43
+end
+arch grass
+x 1
+y 44
+end
+arch woods
+x 1
+y 45
+end
+arch woods
+x 1
+y 46
+end
+arch woods
+x 1
+y 47
+end
+arch woods
+x 1
+y 48
+end
+arch grass
+x 1
+y 49
+end
+arch darkforest
+x 2
+end
+arch woods
+x 2
+y 1
+end
+arch woods
+x 2
+y 2
+end
+arch grass
+x 2
+y 3
+end
+arch deathtree
+x 2
+y 3
+end
+arch grass
+x 2
+y 4
+end
+arch deathtree
+x 2
+y 4
+end
+arch darkforest
+x 2
+y 5
+end
+arch darkforest
+x 2
+y 6
+end
+arch darkforest
+x 2
+y 7
+end
+arch grass
+x 2
+y 8
+end
+arch deathtree
+x 2
+y 8
+end
+arch grass
+x 2
+y 9
+end
+arch deathtree
+x 2
+y 9
+end
+arch darkforest
+x 2
+y 10
+end
+arch darkforest
+x 2
+y 11
+end
+arch darkforest
+x 2
+y 12
+end
+arch darkforest
+x 2
+y 13
+end
+arch shallow_sea
+x 2
+y 14
+end
+arch shallow_sea
+x 2
+y 15
+end
+arch grass
+x 2
+y 16
+end
+arch shallow_sea
+x 2
+y 17
+end
+arch grass
+x 2
+y 18
+end
+arch grass
+x 2
+y 19
+end
+arch grass
+x 2
+y 20
+end
+arch grass
+x 2
+y 21
+end
+arch grass
+x 2
+y 22
+end
+arch grass
+x 2
+y 23
+end
+arch grass
+x 2
+y 24
+end
+arch darkforest
+x 2
+y 25
+end
+arch darkforest
+x 2
+y 26
+end
+arch woods
+x 2
+y 27
+end
+arch darkforest
+x 2
+y 28
+end
+arch darkforest
+x 2
+y 29
+end
+arch darkforest
+x 2
+y 30
+end
+arch grass
+x 2
+y 31
+end
+arch deathtree
+x 2
+y 31
+end
+arch grass
+x 2
+y 32
+end
+arch deathtree
+x 2
+y 32
+end
+arch grass
+x 2
+y 33
+end
+arch grass
+x 2
+y 34
+end
+arch woods
+x 2
+y 35
+end
+arch woods
+x 2
+y 36
+end
+arch darkforest
+x 2
+y 37
+end
+arch shallow_sea
+x 2
+y 38
+end
+arch darkforest
+x 2
+y 39
+end
+arch grass
+x 2
 y 40
 end
 arch darkforest
-x 3
+x 2
 y 41
 end
-arch darkforest
-x 3
+arch grass
+x 2
 y 42
 end
-arch darkforest
-x 3
+arch grass
+x 2
 y 43
 end
-arch woods_2
-x 3
+arch grass
+x 2
 y 44
+end
+arch grass
+x 2
+y 45
+end
+arch darkforest
+x 2
+y 46
+end
+arch woods
+x 2
+y 47
+end
+arch woods
+x 2
+y 48
+end
+arch darkforest
+x 2
+y 49
+end
+arch darkforest
+x 3
+end
+arch woods
+x 3
+y 1
+end
+arch woods
+x 3
+y 2
+end
+arch grass
+x 3
+y 3
+end
+arch deathtree
+x 3
+y 3
+end
+arch grass
+x 3
+y 4
+end
+arch deathtree
+x 3
+y 4
+end
+arch darkforest
+x 3
+y 5
+end
+arch darkforest
+x 3
+y 6
+end
+arch grass
+x 3
+y 7
+end
+arch deathtree
+x 3
+y 7
+end
+arch darkforest
+x 3
+y 8
+end
+arch darkforest
+x 3
+y 9
+end
+arch darkforest
+x 3
+y 10
+end
+arch darkforest
+x 3
+y 11
+end
+arch darkforest
+x 3
+y 12
 end
 arch shallow_sea
 x 3
+y 13
+end
+arch shallow_sea
+x 3
+y 14
+end
+arch shallow_sea
+x 3
+y 15
+end
+arch shallow_sea
+x 3
+y 16
+end
+arch shallow_sea
+x 3
+y 17
+end
+arch shallow_sea
+x 3
+y 18
+end
+arch shallow_sea
+x 3
+y 19
+end
+arch shallow_sea
+x 3
+y 20
+end
+arch shallow_sea
+x 3
+y 21
+end
+arch grass
+x 3
+y 22
+end
+arch grass
+x 3
+y 23
+end
+arch grass
+x 3
+y 24
+end
+arch grass
+x 3
+y 25
+end
+arch darkforest
+x 3
+y 26
+end
+arch darkforest
+x 3
+y 27
+end
+arch darkforest
+x 3
+y 28
+end
+arch darkforest
+x 3
+y 29
+end
+arch woods
+x 3
+y 30
+end
+arch grass
+x 3
+y 31
+end
+arch grass
+x 3
+y 32
+end
+arch deathtree
+x 3
+y 32
+end
+arch grass
+x 3
+y 33
+end
+arch deathtree
+x 3
+y 33
+end
+arch grass
+x 3
+y 34
+end
+arch grass
+x 3
+y 35
+end
+arch woods
+x 3
+y 36
+end
+arch darkforest
+x 3
+y 37
+end
+arch shallow_sea
+x 3
+y 38
+end
+arch shallow_sea
+x 3
+y 39
+end
+arch darkforest
+x 3
+y 40
+end
+arch darkforest
+x 3
+y 41
+end
+arch darkforest
+x 3
+y 42
+end
+arch grass
+x 3
+y 43
+end
+arch grass
+x 3
+y 44
+end
+arch darkforest
+x 3
 y 45
 end
-arch woods_2
+arch darkforest
 x 3
 y 46
 end
-arch darkforest
+arch woods
 x 3
 y 47
 end
-arch darkforest
+arch woods
 x 3
 y 48
 end
-arch tree
+arch darkforest
 x 3
 y 49
 end
 arch darkforest
 x 4
 end
-arch tree
+arch woods
 x 4
 y 1
 end
@@ -770,11 +871,15 @@ arch woods
 x 4
 y 2
 end
-arch tree
+arch grass
 x 4
 y 3
 end
-arch brush
+arch deathtree
+x 4
+y 3
+end
+arch grass
 x 4
 y 4
 end
@@ -782,23 +887,27 @@ arch darkforest
 x 4
 y 5
 end
-arch woods_2
+arch darkforest
 x 4
 y 6
 end
-arch tree
+arch grass
 x 4
 y 7
 end
-arch woods_2
+arch deathtree
 x 4
-y 8
+y 7
 end
 arch darkforest
 x 4
+y 8
+end
+arch shallow_sea
+x 4
 y 9
 end
-arch woods_2
+arch shallow_sea
 x 4
 y 10
 end
@@ -806,50 +915,43 @@ arch darkforest
 x 4
 y 11
 end
-arch woods
+arch shallow_sea
 x 4
 y 12
 end
-arch tree
+arch shallow_sea
 x 4
 y 13
 end
-arch woods_2
+arch shallow_sea
 x 4
 y 14
 end
-arch woods
+arch shallow_sea
 x 4
 y 15
 end
-arch woods
+arch shallow_sea
 x 4
 y 16
 end
-arch grass
+arch shallow_sea
 x 4
 y 17
 end
-arch grass
+arch shallow_sea
 x 4
 y 18
 end
-arch archway_tree
-slaying harcanna_wood
-hp 34
-sp 13
-x 4
-y 18
-end
-arch grass
+arch shallow_sea
 x 4
 y 19
 end
-arch woods_2
+arch shallow_sea
 x 4
 y 20
 end
-arch woods_2
+arch shallow_sea
 x 4
 y 21
 end
@@ -857,79 +959,79 @@ arch shallow_sea
 x 4
 y 22
 end
-arch woods_2
+arch grass
 x 4
 y 23
 end
-arch woods_2
+arch grass
 x 4
 y 24
 end
-arch evergreens
+arch grass
 x 4
 y 25
 end
-arch woods_2
+arch darkforest
 x 4
 y 26
 end
-arch woods_2
-x 4
-y 27
-end
-arch random_plant
+arch darkforest
 x 4
 y 27
 end
-arch woods_2
+arch darkforest
 x 4
 y 28
-end
-arch tree
-x 4
-y 29
-end
-arch woods_2
-x 4
-y 30
-end
-arch brush
-x 4
-y 31
 end
 arch darkforest
 x 4
-y 32
-end
-arch tree
-x 4
-y 33
-end
-arch evergreens
-x 4
-y 34
-end
-arch evergreens
-x 4
-y 35
-end
-arch tree
-x 4
-y 36
-end
-arch woods_2
-x 4
-y 37
+y 29
 end
 arch darkforest
 x 4
-y 38
+y 30
 end
 arch darkforest
 x 4
+y 31
+end
+arch grass
+x 4
+y 32
+end
+arch grass
+x 4
+y 33
+end
+arch deathtree
+x 4
+y 33
+end
+arch grass
+x 4
+y 34
+end
+arch grass
+x 4
+y 35
+end
+arch grass
+x 4
+y 36
+end
+arch darkforest
+x 4
+y 37
+end
+arch darkforest
+x 4
+y 38
+end
+arch shallow_sea
+x 4
 y 39
 end
-arch evergreens
+arch shallow_sea
 x 4
 y 40
 end
@@ -937,42 +1039,42 @@ arch darkforest
 x 4
 y 41
 end
-arch tree
+arch darkforest
 x 4
 y 42
 end
-arch darkforest
+arch grass
 x 4
 y 43
-end
-arch tree
-x 4
-y 44
-end
-arch woods_2
-x 4
-y 45
 end
 arch darkforest
 x 4
+y 44
+end
+arch darkforest
+x 4
+y 45
+end
+arch darkforest
+x 4
 y 46
 end
 arch darkforest
 x 4
 y 47
 end
-arch darkforest
+arch woods
 x 4
 y 48
 end
-arch darkforest
+arch grass
 x 4
 y 49
 end
 arch darkforest
 x 5
 end
-arch tree
+arch woods
 x 5
 y 1
 end
@@ -980,11 +1082,11 @@ arch woods
 x 5
 y 2
 end
-arch tree
+arch darkforest
 x 5
 y 3
 end
-arch brush
+arch darkforest
 x 5
 y 4
 end
@@ -992,151 +1094,155 @@ arch darkforest
 x 5
 y 5
 end
-arch brush
-x 5
-y 6
-end
-arch tree
-x 5
-y 7
-end
-arch tree
-x 5
-y 8
-end
-arch tree
-x 5
-y 9
-end
-arch woods_2
-x 5
-y 10
-end
 arch darkforest
 x 5
-y 11
-end
-arch tree
-x 5
-y 12
-end
-arch tree
-x 5
-y 13
-end
-arch woods
-x 5
-y 14
-end
-arch tree
-x 5
-y 15
-end
-arch woods
-x 5
-y 16
-end
-arch woods
-x 5
-y 17
+y 6
 end
 arch grass
 x 5
-y 18
+y 7
 end
-arch grass
+arch deathtree
 x 5
-y 19
-end
-arch woods_2
-x 5
-y 20
-end
-arch woods_2
-x 5
-y 21
-end
-arch woods_2
-x 5
-y 22
-end
-arch woods_2
-x 5
-y 23
-end
-arch woods_2
-x 5
-y 24
-end
-arch evergreens
-x 5
-y 25
-end
-arch tree
-x 5
-y 26
-end
-arch tree
-x 5
-y 27
-end
-arch woods_2
-x 5
-y 28
-end
-arch tree
-x 5
-y 29
-end
-arch woods_2
-x 5
-y 30
-end
-arch brush
-x 5
-y 31
+y 7
 end
 arch darkforest
 x 5
-y 32
+y 8
 end
-arch tree
+arch shallow_sea
 x 5
-y 33
+y 9
 end
-arch tree
+arch shallow_sea
 x 5
-y 34
+y 10
 end
-arch tree
+arch shallow_sea
 x 5
-y 35
+y 11
 end
-arch tree
+arch shallow_sea
 x 5
-y 36
+y 12
 end
-arch darkforest
+arch shallow_sea
 x 5
-y 37
+y 13
 end
-arch darkforest
+arch shallow_sea
 x 5
-y 38
-end
-arch darkforest
-x 5
-y 39
-end
-arch woods_2
-x 5
-y 40
+y 14
 end
 arch darkforest
 x 5
+y 15
+end
+arch darkforest
+x 5
+y 16
+end
+arch darkforest
+x 5
+y 17
+end
+arch shallow_sea
+x 5
+y 18
+end
+arch shallow_sea
+x 5
+y 19
+end
+arch shallow_sea
+x 5
+y 20
+end
+arch shallow_sea
+x 5
+y 21
+end
+arch shallow_sea
+x 5
+y 22
+end
+arch shallow_sea
+x 5
+y 23
+end
+arch grass
+x 5
+y 24
+end
+arch grass
+x 5
+y 25
+end
+arch grass
+x 5
+y 26
+end
+arch darkforest
+x 5
+y 27
+end
+arch darkforest
+x 5
+y 28
+end
+arch darkforest
+x 5
+y 29
+end
+arch darkforest
+x 5
+y 30
+end
+arch darkforest
+x 5
+y 31
+end
+arch grass
+x 5
+y 32
+end
+arch grass
+x 5
+y 33
+end
+arch grass
+x 5
+y 34
+end
+arch grass
+x 5
+y 35
+end
+arch grass
+x 5
+y 36
+end
+arch grass
+x 5
+y 37
+end
+arch darkforest
+x 5
+y 38
+end
+arch darkforest
+x 5
+y 39
+end
+arch shallow_sea
+x 5
+y 40
+end
+arch darkforest
+x 5
 y 41
 end
-arch woods_2
+arch darkforest
 x 5
 y 42
 end
@@ -1144,16 +1250,16 @@ arch darkforest
 x 5
 y 43
 end
-arch brush
+arch darkforest
 x 5
 y 44
-end
-arch woods_2
-x 5
-y 45
 end
 arch darkforest
 x 5
+y 45
+end
+arch grass
+x 5
 y 46
 end
 arch darkforest
@@ -1175,15 +1281,15 @@ arch darkforest
 x 6
 y 1
 end
-arch darkforest
+arch woods
 x 6
 y 2
 end
-arch darkforest
+arch woods
 x 6
 y 3
 end
-arch woods_2
+arch darkforest
 x 6
 y 4
 end
@@ -1191,170 +1297,159 @@ arch darkforest
 x 6
 y 5
 end
-arch woods_2
+arch darkforest
 x 6
 y 6
 end
-arch woods_2
+arch grass
 x 6
 y 7
 end
-arch tree
+arch shallow_sea
 x 6
 y 8
 end
-arch tree
+arch shallow_sea
 x 6
 y 9
 end
-arch darkforest
+arch shallow_sea
 x 6
 y 10
 end
-arch darkforest
+arch woods
 x 6
 y 11
 end
-arch darkforest
+arch woods
 x 6
 y 12
 end
-arch tree
+arch woods
 x 6
 y 13
 end
-arch tree
+arch woods
 x 6
 y 14
 end
-arch woods
+arch grass
 x 6
 y 15
 end
-arch woods
+arch grass
 x 6
 y 16
 end
-arch woods_2
+arch deathtree
+x 6
+y 16
+end
+arch darkforest
 x 6
 y 17
 end
-arch woods_2
+arch shallow_sea
 x 6
 y 18
 end
-arch woods_2
+arch shallow_sea
 x 6
 y 19
 end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 6
-y 19
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch tree
+arch shallow_sea
 x 6
 y 20
 end
-arch tree
+arch grass
 x 6
 y 21
 end
-arch tree
+arch shallow_sea
 x 6
 y 22
 end
-arch woods_2
+arch shallow_sea
 x 6
 y 23
 end
-arch woods_2
+arch shallow_sea
 x 6
 y 24
 end
-arch woods_2
+arch grass
 x 6
 y 25
 end
-arch tree
+arch grass
 x 6
 y 26
 end
-arch tree
+arch grass
 x 6
 y 27
 end
-arch woods_2
+arch grass
 x 6
 y 28
 end
-arch tree
+arch deathtree
+x 6
+y 28
+end
+arch darkforest
 x 6
 y 29
 end
-arch darkforest
+arch grass
 x 6
 y 30
 end
-arch woods_2
+arch deathtree
+x 6
+y 30
+end
+arch darkforest
 x 6
 y 31
 end
-arch darkforest
+arch grass
 x 6
 y 32
 end
-arch tree
+arch grass
 x 6
 y 33
 end
-arch tree
+arch grass
 x 6
 y 34
 end
-arch tree
+arch darkforest
 x 6
 y 35
 end
-arch woods_2
+arch grass
 x 6
 y 36
 end
-arch darkforest
+arch grass
 x 6
 y 37
 end
-arch darkforest
+arch grass
 x 6
 y 38
 end
-arch tree
+arch darkforest
 x 6
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 6
 y 40
 end
-arch darkforest
+arch shallow_sea
 x 6
 y 41
 end
@@ -1366,15 +1461,15 @@ arch darkforest
 x 6
 y 43
 end
-arch darkforest
+arch grass
 x 6
 y 44
 end
-arch darkforest
+arch grass
 x 6
 y 45
 end
-arch hills
+arch grass
 x 6
 y 46
 end
@@ -1393,15 +1488,19 @@ end
 arch darkforest
 x 7
 end
-arch tree
+arch grass
 x 7
 y 1
 end
-arch tree
+arch deathtree
+x 7
+y 1
+end
+arch woods
 x 7
 y 2
 end
-arch darkforest
+arch woods
 x 7
 y 3
 end
@@ -1413,99 +1512,107 @@ arch darkforest
 x 7
 y 5
 end
-arch tree
+arch darkforest
 x 7
 y 6
 end
-arch tree
+arch grass
 x 7
 y 7
 end
-arch tree
+arch shallow_sea
 x 7
 y 8
 end
-arch darkforest
+arch shallow_sea
 x 7
 y 9
 end
-arch darkforest
+arch woods
 x 7
 y 10
 end
-arch darkforest
+arch woods
 x 7
 y 11
 end
-arch darkforest
+arch grass
 x 7
 y 12
 end
-arch darkforest
+arch woods
 x 7
 y 13
 end
-arch tree
+arch woods
 x 7
 y 14
 end
-arch woods_2
+arch grass
 x 7
 y 15
 end
-arch woods_2
+arch darkforest
 x 7
 y 16
 end
-arch tree
+arch darkforest
 x 7
 y 17
 end
-arch woods_2
+arch darkforest
 x 7
 y 18
 end
-arch tree
+arch shallow_sea
 x 7
 y 19
 end
-arch tree
+arch shallow_sea
 x 7
 y 20
 end
-arch tree
+arch shallow_sea
 x 7
 y 21
 end
-arch woods_2
+arch grass
 x 7
 y 22
 end
-arch deep_swamp
+arch shallow_sea
 x 7
 y 23
 end
-arch deep_swamp
+arch shallow_sea
 x 7
 y 24
 end
-arch woods_2
+arch shallow_sea
 x 7
 y 25
 end
-arch woods_2
+arch grass
 x 7
 y 26
 end
-arch woods_2
+arch grass
 x 7
 y 27
 end
-arch woods_2
+arch grass
 x 7
 y 28
 end
-arch woods_2
+arch deathtree
+x 7
+y 28
+end
+arch grass
+x 7
+y 29
+end
+arch deathtree
 x 7
 y 29
 end
@@ -1513,62 +1620,51 @@ arch darkforest
 x 7
 y 30
 end
-arch woods_2
+arch darkforest
 x 7
 y 31
 end
-arch tree
+arch grass
 x 7
 y 32
 end
-arch woods_2
+arch grass
 x 7
 y 33
 end
-arch woods_2
+arch woods
 x 7
 y 34
 end
-arch woods_2
+arch woods
 x 7
 y 35
 end
-arch woods_2
+arch woods
 x 7
 y 36
 end
-arch darkforest
+arch woods
 x 7
 y 37
 end
-arch evergreens
+arch darkforest
 x 7
 y 38
 end
-arch evergreens
+arch shallow_sea
 x 7
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 7
 y 40
 end
-arch evergreens
+arch shallow_sea
 x 7
 y 41
 end
-arch wolf
-name large wolf
-level 10
-exp 300
-wc -1
-ac -1
-Con 3
-Wis 10
-x 7
-y 41
-end
-arch woods_2
+arch darkforest
 x 7
 y 42
 end
@@ -1576,23 +1672,23 @@ arch darkforest
 x 7
 y 43
 end
-arch darkforest
+arch grass
 x 7
 y 44
 end
-arch darkforest
+arch grass
 x 7
 y 45
 end
-arch brush
+arch grass
 x 7
 y 46
 end
-arch darkforest
+arch grass
 x 7
 y 47
 end
-arch darkforest
+arch grass
 x 7
 y 48
 end
@@ -1603,7 +1699,11 @@ end
 arch darkforest
 x 8
 end
-arch tree
+arch grass
+x 8
+y 1
+end
+arch deathtree
 x 8
 y 1
 end
@@ -1619,103 +1719,107 @@ arch darkforest
 x 8
 y 4
 end
-arch woods_2
+arch darkforest
 x 8
 y 5
 end
-arch woods_2
+arch grass
 x 8
 y 6
 end
-arch woods_2
+arch grass
 x 8
 y 7
 end
-arch tree
+arch shallow_sea
 x 8
 y 8
 end
-arch darkforest
+arch woods
 x 8
 y 9
 end
-arch tree
+arch woods
 x 8
 y 10
 end
-arch woods
+arch grass
 x 8
 y 11
 end
-arch woods_2
+arch grass
 x 8
 y 12
 end
-arch darkforest
+arch grass
 x 8
 y 13
 end
-arch tree
+arch grass
 x 8
 y 14
 end
-arch marsh
+arch grass
 x 8
 y 15
 end
-arch woods_2
+arch deathtree
+x 8
+y 15
+end
+arch darkforest
 x 8
 y 16
 end
-arch woods_2
+arch darkforest
 x 8
 y 17
 end
-arch tree
+arch darkforest
 x 8
 y 18
 end
-arch tree
+arch shallow_sea
 x 8
 y 19
 end
-arch tree
+arch shallow_sea
 x 8
 y 20
 end
-arch tree
+arch shallow_sea
 x 8
 y 21
 end
-arch woods_2
+arch grass
 x 8
 y 22
 end
-arch woods_2
+arch shallow_sea
 x 8
 y 23
 end
-arch deep_swamp
+arch shallow_sea
 x 8
 y 24
 end
-arch woods_2
+arch shallow_sea
 x 8
 y 25
 end
-arch woods_2
+arch shallow_sea
 x 8
 y 26
 end
-arch woods_2
+arch grass
 x 8
 y 27
 end
-arch woods_2
+arch grass
 x 8
 y 28
 end
-arch tree
+arch grass
 x 8
 y 29
 end
@@ -1723,73 +1827,55 @@ arch darkforest
 x 8
 y 30
 end
-arch woods_2
+arch darkforest
 x 8
 y 31
 end
-arch tree
+arch grass
 x 8
 y 32
 end
-arch woods_2
+arch grass
 x 8
 y 33
 end
-arch treed_hills
+arch woods
 x 8
 y 34
 end
-arch darkforest
+arch grass
 x 8
 y 35
 end
-arch evergreens
+arch grass
 x 8
 y 36
 end
-arch evergreens
+arch deathtree
+x 8
+y 36
+end
+arch woods
 x 8
 y 37
 end
-arch evergreens
+arch darkforest
 x 8
 y 38
 end
-arch darkforest
+arch shallow_sea
 x 8
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 8
 y 40
 end
-arch treed_hills
+arch darkforest
 x 8
 y 41
 end
-arch wolf
-name large wolf
-level 10
-exp 300
-wc -1
-ac -1
-Con 3
-Wis 10
-x 8
-y 41
-end
-arch woods_2
-x 8
-y 42
-end
-arch wolf
-name large wolf
-level 10
-exp 300
-wc -1
-ac -1
-Con 3
-Wis 10
+arch grass
 x 8
 y 42
 end
@@ -1797,34 +1883,42 @@ arch darkforest
 x 8
 y 43
 end
-arch tree
+arch grass
 x 8
 y 44
 end
-arch darkforest
+arch grass
 x 8
 y 45
 end
-arch tree
+arch grass
 x 8
 y 46
 end
-arch darkforest
+arch grass
 x 8
 y 47
 end
-arch darkforest
+arch grass
 x 8
 y 48
 end
-arch darkforest
+arch deathtree
+x 8
+y 48
+end
+arch grass
 x 8
 y 49
 end
 arch darkforest
 x 9
 end
-arch woods
+arch grass
+x 9
+y 1
+end
+arch deathtree
 x 9
 y 1
 end
@@ -1832,7 +1926,7 @@ arch woods
 x 9
 y 2
 end
-arch tree
+arch woods
 x 9
 y 3
 end
@@ -1840,111 +1934,124 @@ arch darkforest
 x 9
 y 4
 end
-arch darkforest
+arch grass
 x 9
 y 5
 end
-arch tree
+arch grass
 x 9
 y 6
 end
-arch tree
+arch grass
 x 9
 y 7
 end
-arch darkforest
+arch s_bridge2a
+x 9
+y 7
+end
+arch shallow_sea
+no_pass 0
 x 9
 y 8
 end
-arch darkforest
+arch s_bridge2
+x 9
+y 8
+end
+arch grass
 x 9
 y 9
 end
-arch woods_2
+arch s_bridge2b
+x 9
+y 9
+end
+arch grass
 x 9
 y 10
 end
-arch woods
+arch grass
 x 9
 y 11
 end
-arch woods_2
+arch grass
 x 9
 y 12
 end
-arch darkforest
+arch grass
 x 9
 y 13
 end
-arch darkforest
+arch grass
 x 9
 y 14
 end
-arch darkforest
+arch grass
 x 9
 y 15
 end
-arch darkforest
+arch woods
 x 9
 y 16
 end
-arch darkforest
+arch grass
 x 9
 y 17
 end
-arch darkforest
+arch deathtree
+x 9
+y 17
+end
+arch grass
 x 9
 y 18
 end
-arch tree
+arch grass
 x 9
 y 19
 end
-arch woods_2
+arch shallow_sea
 x 9
 y 20
 end
-arch woods_2
+arch shallow_sea
 x 9
 y 21
 end
-arch tree
+arch shallow_sea
 x 9
 y 22
 end
-arch woods_2
+arch grass
 x 9
 y 23
 end
-arch woods_2
+arch grass
 x 9
 y 24
 end
-arch woods_2
+arch shallow_sea
 x 9
 y 25
 end
-arch woods_2
+arch shallow_sea
 x 9
 y 26
 end
-arch woods
+arch shallow_sea
 x 9
 y 27
 end
-arch random_plant
-x 9
-y 27
-end
-arch woods
+arch grass
 x 9
 y 28
 end
-arch woods
+arch grass
 x 9
 y 29
 end
-arch darkforest
+arch grass
 x 9
 y 30
 end
@@ -1952,27 +2059,35 @@ arch darkforest
 x 9
 y 31
 end
-arch woods_2
+arch grass
 x 9
 y 32
 end
-arch woods_2
+arch deathtree
+x 9
+y 32
+end
+arch grass
 x 9
 y 33
 end
-arch darkforest
+arch grass
 x 9
 y 34
 end
-arch darkforest
+arch woods
 x 9
 y 35
 end
-arch darkforest
+arch grass
 x 9
 y 36
 end
-arch evergreens
+arch deathtree
+x 9
+y 36
+end
+arch woods
 x 9
 y 37
 end
@@ -1988,22 +2103,11 @@ arch darkforest
 x 9
 y 40
 end
-arch treed_hills
+arch darkforest
 x 9
 y 41
 end
-arch woods_2
-x 9
-y 42
-end
-arch wolf
-name large wolf
-level 10
-exp 300
-wc -1
-ac -1
-Con 3
-Wis 10
+arch darkforest
 x 9
 y 42
 end
@@ -2011,38 +2115,42 @@ arch darkforest
 x 9
 y 43
 end
-arch tree
+arch grass
 x 9
 y 44
 end
-arch darkforest
+arch grass
 x 9
 y 45
 end
-arch tree
+arch grass
 x 9
 y 46
 end
-arch darkforest
+arch grass
 x 9
 y 47
 end
-arch darkforest
+arch grass
 x 9
 y 48
 end
-arch darkforest
+arch deathtree
+x 9
+y 48
+end
+arch grass
 x 9
 y 49
 end
 arch darkforest
 x 10
 end
-arch darkforest
+arch woods
 x 10
 y 1
 end
-arch tree
+arch darkforest
 x 10
 y 2
 end
@@ -2050,108 +2158,111 @@ arch woods
 x 10
 y 3
 end
-arch beholder
-can_see_in_dark 1
-x 10
-y 3
-end
-arch woods_2
+arch darkforest
 x 10
 y 4
 end
-arch darkforest
+arch grass
 x 10
 y 5
 end
-arch darkforest
+arch deathtree
+x 10
+y 5
+end
+arch grass
 x 10
 y 6
 end
-arch darkforest
+arch deathtree
+x 10
+y 6
+end
+arch grass
 x 10
 y 7
 end
-arch darkforest
+arch shallow_sea
 x 10
 y 8
 end
-arch woods
+arch grass
 x 10
 y 9
 end
-arch random_plant
-x 10
-y 9
-end
-arch woods_2
+arch grass
 x 10
 y 10
 end
-arch woods
+arch grass
 x 10
 y 11
 end
-arch woods_2
+arch grass
 x 10
 y 12
 end
-arch tree
+arch grass
 x 10
 y 13
 end
-arch darkforest
+arch grass
 x 10
 y 14
 end
-arch darkforest
+arch grass
 x 10
 y 15
 end
-arch darkforest
+arch grass
 x 10
 y 16
 end
-arch darkforest
+arch grass
 x 10
 y 17
 end
-arch darkforest
+arch grass
 x 10
 y 18
 end
-arch woods_2
+arch grass
 x 10
 y 19
 end
-arch darkforest
+arch grass
 x 10
 y 20
 end
-arch darkforest
+arch deathtree
+x 10
+y 20
+end
+arch shallow_sea
 x 10
 y 21
 end
-arch darkforest
+arch shallow_sea
 x 10
 y 22
 end
-arch tree
+arch woods
 x 10
 y 23
 end
-arch tree
+arch woods
 x 10
 y 24
 end
-arch deep_swamp
+arch grass
 x 10
 y 25
 end
-arch evergreens
+arch shallow_sea
 x 10
 y 26
 end
-arch tree
+arch shallow_sea
 x 10
 y 27
 end
@@ -2159,11 +2270,11 @@ arch woods
 x 10
 y 28
 end
-arch darkforest
+arch grass
 x 10
 y 29
 end
-arch darkforest
+arch grass
 x 10
 y 30
 end
@@ -2171,47 +2282,59 @@ arch darkforest
 x 10
 y 31
 end
-arch darkforest
+arch grass
 x 10
 y 32
 end
-arch tree
+arch grass
 x 10
 y 33
 end
-arch darkforest
+arch deathtree
+x 10
+y 33
+end
+arch grass
 x 10
 y 34
 end
-arch tree
+arch deathtree
+x 10
+y 34
+end
+arch woods
 x 10
 y 35
 end
-arch darkforest
+arch grass
 x 10
 y 36
 end
-arch darkforest
+arch deathtree
+x 10
+y 36
+end
+arch woods
 x 10
 y 37
 end
-arch darkforest
+arch woods
 x 10
 y 38
 end
-arch tree
+arch woods
 x 10
 y 39
 end
-arch darkforest
+arch woods
 x 10
 y 40
 end
-arch darkforest
+arch woods
 x 10
 y 41
 end
-arch treed_hills
+arch woods
 x 10
 y 42
 end
@@ -2219,91 +2342,102 @@ arch darkforest
 x 10
 y 43
 end
-arch darkforest
+arch grass
 x 10
 y 44
 end
-arch darkforest
+arch grass
 x 10
 y 45
 end
-arch darkforest
+arch grass
 x 10
 y 46
 end
-arch darkforest
+arch grass
 x 10
 y 47
 end
-arch darkforest
+arch grass
 x 10
 y 48
 end
-arch darkforest
+arch deathtree
+x 10
+y 48
+end
+arch grass
+x 10
+y 49
+end
+arch deathtree
 x 10
 y 49
 end
 arch darkforest
 x 11
 end
-arch darkforest
+arch woods
 x 11
 y 1
 end
-arch tree
+arch darkforest
 x 11
 y 2
 end
-arch beholder
-can_see_in_dark 1
-x 11
-y 2
-end
-arch woods
+arch darkforest
 x 11
 y 3
 end
-arch woods_2
+arch darkforest
 x 11
 y 4
 end
-arch woods
+arch grass
 x 11
 y 5
 end
-arch darkforest
+arch deathtree
+x 11
+y 5
+end
+arch grass
 x 11
 y 6
 end
-arch darkforest
+arch grass
 x 11
 y 7
 end
-arch tree
+arch deathtree
+x 11
+y 7
+end
+arch shallow_sea
 x 11
 y 8
 end
-arch tree
+arch grass
 x 11
 y 9
 end
-arch woods_2
+arch grass
 x 11
 y 10
 end
-arch tree
+arch grass
 x 11
 y 11
 end
-arch tree
+arch grass
 x 11
 y 12
 end
-arch tree
+arch darkforest
 x 11
 y 13
 end
-arch tree
+arch darkforest
 x 11
 y 14
 end
@@ -2311,63 +2445,67 @@ arch darkforest
 x 11
 y 15
 end
-arch darkforest
+arch grass
 x 11
 y 16
 end
-arch woods_2
+arch grass
 x 11
 y 17
 end
-arch darkforest
+arch grass
 x 11
 y 18
 end
-arch darkforest
+arch grass
 x 11
 y 19
 end
-arch darkforest
+arch grass
 x 11
 y 20
 end
-arch tree
+arch deathtree
+x 11
+y 20
+end
+arch shallow_sea
 x 11
 y 21
 end
-arch darkforest
+arch shallow_sea
 x 11
 y 22
 end
-arch woods_2
+arch shallow_sea
 x 11
 y 23
 end
-arch tree
+arch woods
 x 11
 y 24
 end
-arch tree
+arch grass
 x 11
 y 25
 end
-arch evergreens
+arch shallow_sea
 x 11
 y 26
 end
-arch tree
+arch shallow_sea
 x 11
 y 27
 end
-arch tree
+arch woods
 x 11
 y 28
 end
-arch darkforest
+arch grass
 x 11
 y 29
 end
-arch darkforest
+arch grass
 x 11
 y 30
 end
@@ -2375,47 +2513,55 @@ arch darkforest
 x 11
 y 31
 end
-arch darkforest
+arch grass
 x 11
 y 32
 end
-arch darkforest
+arch deathtree
+x 11
+y 32
+end
+arch grass
 x 11
 y 33
 end
-arch darkforest
+arch grass
 x 11
 y 34
 end
-arch darkforest
+arch deathtree
+x 11
+y 34
+end
+arch woods
 x 11
 y 35
 end
-arch darkforest
+arch grass
 x 11
 y 36
 end
-arch darkforest
+arch woods
 x 11
 y 37
 end
-arch darkforest
+arch woods
 x 11
 y 38
 end
-arch tree
+arch grass
 x 11
 y 39
 end
-arch darkforest
+arch grass
 x 11
 y 40
 end
-arch darkforest
+arch woods
 x 11
 y 41
 end
-arch treed_hills
+arch darkforest
 x 11
 y 42
 end
@@ -2431,225 +2577,257 @@ arch darkforest
 x 11
 y 45
 end
-arch darkforest
+arch grass
 x 11
 y 46
 end
-arch darkforest
+arch grass
 x 11
 y 47
 end
-arch darkforest
+arch grass
 x 11
 y 48
 end
-arch darkforest
+arch deathtree
+x 11
+y 48
+end
+arch grass
+x 11
+y 49
+end
+arch deathtree
 x 11
 y 49
 end
 arch darkforest
 x 12
 end
-arch darkforest
+arch woods
 x 12
 y 1
 end
-arch tree
+arch darkforest
 x 12
 y 2
 end
-arch darkforest
+arch woods
 x 12
 y 3
 end
-arch darkforest
+arch woods
 x 12
 y 4
 end
-arch tree
+arch woods
 x 12
 y 5
 end
-arch tree
+arch woods
 x 12
 y 6
 end
-arch woods_2
+arch shallow_sea
 x 12
 y 7
 end
-arch tree
+arch shallow_sea
 x 12
 y 8
 end
-arch tree
+arch woods
 x 12
 y 9
 end
-arch tree
+arch grass
 x 12
 y 10
 end
-arch tree
+arch darkforest
 x 12
 y 11
 end
-arch tree
+arch darkforest
 x 12
 y 12
 end
-arch tree
+arch woods
 x 12
 y 13
 end
-arch tree
+arch woods
 x 12
 y 14
 end
-arch tree
+arch woods
 x 12
 y 15
 end
-arch darkforest
+arch woods
 x 12
 y 16
 end
-arch darkforest
+arch grass
 x 12
 y 17
 end
-arch woods_2
+arch grass
 x 12
 y 18
 end
-arch darkforest
+arch grass
 x 12
 y 19
 end
-arch tree
+arch grass
 x 12
 y 20
 end
-arch tree
+arch deathtree
+x 12
+y 20
+end
+arch grass
 x 12
 y 21
 end
-arch darkforest
+arch deathtree
+x 12
+y 21
+end
+arch shallow_sea
 x 12
 y 22
 end
-arch darkforest
+arch shallow_sea
 x 12
 y 23
 end
-arch tree
+arch shallow_sea
 x 12
 y 24
 end
-arch tree
+arch shallow_sea
 x 12
 y 25
 end
-arch evergreens
+arch shallow_sea
 x 12
 y 26
 end
-arch tree
+arch shallow_sea
 x 12
 y 27
 end
-arch woods_2
+arch woods
 x 12
 y 28
 end
-arch darkforest
+arch woods
 x 12
 y 29
 end
-arch darkforest
+arch grass
 x 12
 y 30
 end
-arch woods
+arch grass
 x 12
 y 31
 end
-arch darkforest
+arch deathtree
+x 12
+y 31
+end
+arch grass
 x 12
 y 32
 end
-arch darkforest
+arch deathtree
+x 12
+y 32
+end
+arch grass
 x 12
 y 33
 end
-arch woods_2
+arch grass
 x 12
 y 34
 end
-arch darkforest
+arch deathtree
+x 12
+y 34
+end
+arch grass
 x 12
 y 35
 end
-arch tree
+arch woods
 x 12
 y 36
 end
-arch woods_2
+arch woods
 x 12
 y 37
 end
-arch darkforest
+arch woods
 x 12
 y 38
 end
-arch evergreens
+arch grass
 x 12
 y 39
 end
-arch darkforest
+arch grass
 x 12
 y 40
 end
-arch darkforest
+arch woods
 x 12
 y 41
 end
-arch tree
+arch woods
 x 12
 y 42
 end
-arch tree
+arch darkforest
 x 12
 y 43
 end
-arch treed_hills
+arch grass
 x 12
 y 44
 end
-arch darkforest
+arch grass
 x 12
 y 45
 end
-arch woods_2
+arch darkforest
 x 12
 y 46
 end
-arch evergreens
+arch grass
 x 12
 y 47
 end
-arch darkforest
+arch grass
 x 12
 y 48
 end
-arch darkforest
+arch grass
+x 12
+y 49
+end
+arch deathtree
 x 12
 y 49
 end
 arch darkforest
 x 13
 end
-arch darkforest
+arch woods
 x 13
 y 1
 end
@@ -2669,27 +2847,27 @@ arch darkforest
 x 13
 y 5
 end
-arch darkforest
+arch grass
 x 13
 y 6
 end
-arch woods_2
+arch shallow_sea
 x 13
 y 7
 end
-arch tree
+arch shallow_sea
 x 13
 y 8
 end
-arch woods
+arch grass
 x 13
 y 9
 end
-arch tree
+arch grass
 x 13
 y 10
 end
-arch tree
+arch darkforest
 x 13
 y 11
 end
@@ -2697,151 +2875,175 @@ arch grass
 x 13
 y 12
 end
-arch grass
+arch darkforest
 x 13
 y 13
 end
-arch tree
+arch darkforest
 x 13
 y 14
 end
-arch darkforest
+arch woods
 x 13
 y 15
 end
-arch darkforest
+arch woods
 x 13
 y 16
 end
-arch darkforest
+arch grass
 x 13
 y 17
 end
-arch woods_2
+arch deathtree
+x 13
+y 17
+end
+arch grass
 x 13
 y 18
 end
-arch darkforest
+arch grass
 x 13
 y 19
 end
-arch evergreens
+arch grass
 x 13
 y 20
 end
-arch evergreens
+arch grass
 x 13
 y 21
 end
-arch evergreens
+arch grass
 x 13
 y 22
 end
-arch darkforest
+arch shallow_sea
 x 13
 y 23
 end
-arch darkforest
+arch shallow_sea
 x 13
 y 24
 end
-arch darkforest
+arch shallow_sea
 x 13
 y 25
 end
-arch evergreens
+arch grass
 x 13
 y 26
 end
-arch darkforest
+arch deathtree
+x 13
+y 26
+end
+arch grass
 x 13
 y 27
 end
-arch woods_2
+arch grass
 x 13
 y 28
 end
-arch darkforest
+arch deathtree
+x 13
+y 28
+end
+arch grass
 x 13
 y 29
 end
-arch darkforest
+arch deathtree
+x 13
+y 29
+end
+arch grass
 x 13
 y 30
 end
-arch woods
+arch grass
 x 13
 y 31
 end
-arch darkforest
+arch grass
 x 13
 y 32
 end
-arch darkforest
+arch deathtree
+x 13
+y 32
+end
+arch grass
 x 13
 y 33
 end
-arch woods_2
+arch grass
 x 13
 y 34
 end
-arch darkforest
+arch grass
 x 13
 y 35
 end
-arch tree
+arch grass
 x 13
 y 36
 end
-arch woods_2
+arch woods
 x 13
 y 37
 end
-arch darkforest
+arch grass
 x 13
 y 38
 end
-arch darkforest
+arch grass
 x 13
 y 39
 end
-arch darkforest
+arch grass
 x 13
 y 40
 end
-arch treed_hills
+arch grass
 x 13
 y 41
 end
-arch tree
+arch woods
 x 13
 y 42
 end
-arch tree
+arch darkforest
 x 13
 y 43
 end
-arch treed_hills
+arch darkforest
 x 13
 y 44
 end
-arch darkforest
+arch grass
 x 13
 y 45
 end
-arch evergreens
+arch darkforest
 x 13
 y 46
 end
-arch woods_2
+arch grass
 x 13
 y 47
 end
-arch darkforest
+arch grass
 x 13
 y 48
 end
-arch darkforest
+arch grass
+x 13
+y 49
+end
+arch deathtree
 x 13
 y 49
 end
@@ -2856,27 +3058,27 @@ arch darkforest
 x 14
 y 2
 end
-arch woods_2
+arch grass
 x 14
 y 3
 end
-arch darkforest
+arch grass
 x 14
 y 4
 end
-arch darkforest
+arch grass
 x 14
 y 5
 end
-arch darkforest
+arch grass
 x 14
 y 6
 end
-arch woods_2
+arch shallow_sea
 x 14
 y 7
 end
-arch tree
+arch shallow_sea
 x 14
 y 8
 end
@@ -2884,174 +3086,198 @@ arch woods
 x 14
 y 9
 end
-arch tree
+arch darkforest
 x 14
 y 10
 end
-arch tree
+arch grass
 x 14
 y 11
 end
-arch random_plant
+arch deathtree
 x 14
 y 11
-end
-arch brush
-x 14
-y 12
 end
 arch grass
 x 14
+y 12
+end
+arch darkforest
+x 14
 y 13
 end
-arch brush
+arch grass
 x 14
 y 14
 end
-arch darkforest
+arch deathtree
+x 14
+y 14
+end
+arch woods
 x 14
 y 15
 end
-arch tree
+arch woods
 x 14
 y 16
 end
-arch darkforest
+arch grass
 x 14
 y 17
 end
-arch darkforest
+arch deathtree
+x 14
+y 17
+end
+arch grass
 x 14
 y 18
 end
-arch darkforest
+arch grass
 x 14
 y 19
 end
-arch evergreens
+arch grass
 x 14
 y 20
 end
-arch tree
+arch grass
 x 14
 y 21
 end
-arch woods_2
+arch grass
 x 14
 y 22
 end
-arch darkforest
+arch grass
 x 14
 y 23
 end
-arch darkforest
+arch shallow_sea
 x 14
 y 24
 end
-arch woods_2
+arch shallow_sea
 x 14
 y 25
 end
-arch evergreens
+arch grass
 x 14
 y 26
 end
-arch darkforest
+arch grass
 x 14
 y 27
 end
-arch darkforest
+arch deathtree
+x 14
+y 27
+end
+arch grass
 x 14
 y 28
 end
-arch darkforest
+arch deathtree
+x 14
+y 28
+end
+arch grass
 x 14
 y 29
 end
-arch woods
+arch grass
 x 14
 y 30
 end
-arch tree
+arch grass
 x 14
 y 31
 end
-arch darkforest
+arch grass
 x 14
 y 32
 end
-arch darkforest
+arch grass
 x 14
 y 33
 end
-arch darkforest
+arch grass
 x 14
 y 34
 end
-arch darkforest
+arch grass
 x 14
 y 35
 end
-arch woods_2
+arch grass
 x 14
 y 36
 end
-arch woods_2
+arch grass
 x 14
 y 37
 end
-arch tree
+arch grass
 x 14
 y 38
 end
-arch woods_2
+arch grass
 x 14
 y 39
 end
-arch evergreens
+arch grass
 x 14
 y 40
 end
-arch tree
+arch grass
 x 14
 y 41
 end
-arch tree
+arch woods
 x 14
 y 42
 end
-arch treed_hills
+arch woods
 x 14
 y 43
 end
-arch treed_hills
+arch darkforest
 x 14
 y 44
 end
-arch evergreens
+arch grass
 x 14
 y 45
 end
-arch tree
+arch darkforest
 x 14
 y 46
 end
-arch treed_hills
+arch darkforest
 x 14
 y 47
 end
-arch treed_hills
+arch grass
 x 14
 y 48
 end
-arch darkforest
+arch grass
 x 14
 y 49
 end
-arch woods
+arch deathtree
+x 14
+y 49
+end
+arch darkforest
 x 15
 end
-arch woods
+arch grass
+x 15
+y 1
+end
+arch deathtree
 x 15
 y 1
 end
@@ -3059,27 +3285,27 @@ arch darkforest
 x 15
 y 2
 end
-arch darkforest
+arch grass
 x 15
 y 3
 end
-arch darkforest
+arch grass
 x 15
 y 4
 end
-arch darkforest
+arch grass
 x 15
 y 5
 end
-arch darkforest
+arch grass
 x 15
 y 6
 end
-arch darkforest
+arch shallow_sea
 x 15
 y 7
 end
-arch tree
+arch woods
 x 15
 y 8
 end
@@ -3091,15 +3317,19 @@ arch woods
 x 15
 y 10
 end
-arch tree
+arch darkforest
 x 15
 y 11
 end
-arch brush
+arch grass
 x 15
 y 12
 end
-arch brush
+arch deathtree
+x 15
+y 12
+end
+arch darkforest
 x 15
 y 13
 end
@@ -3107,154 +3337,170 @@ arch grass
 x 15
 y 14
 end
-arch tree
+arch deathtree
+x 15
+y 14
+end
+arch grass
 x 15
 y 15
 end
-arch darkforest
+arch deathtree
 x 15
-y 16
-end
-arch darkforest
-x 15
-y 17
-end
-arch random_plant
-x 15
-y 17
-end
-arch darkforest
-x 15
-y 18
-end
-arch evergreens
-x 15
-y 19
-end
-arch evergreens
-x 15
-y 20
-end
-arch woods_2
-x 15
-y 21
-end
-arch woods_2
-x 15
-y 22
-end
-arch darkforest
-x 15
-y 23
-end
-arch darkforest
-x 15
-y 24
-end
-arch woods_2
-x 15
-y 25
-end
-arch tree
-x 15
-y 26
-end
-arch darkforest
-x 15
-y 27
-end
-arch darkforest
-x 15
-y 28
-end
-arch darkforest
-x 15
-y 29
+y 15
 end
 arch woods
 x 15
+y 16
+end
+arch grass
+x 15
+y 17
+end
+arch deathtree
+x 15
+y 17
+end
+arch grass
+x 15
+y 18
+end
+arch grass
+x 15
+y 19
+end
+arch grass
+x 15
+y 20
+end
+arch grass
+x 15
+y 21
+end
+arch grass
+x 15
+y 22
+end
+arch grass
+x 15
+y 23
+end
+arch woods
+x 15
+y 24
+end
+arch grass
+x 15
+y 25
+end
+arch grass
+x 15
+y 26
+end
+arch grass
+x 15
+y 27
+end
+arch grass
+x 15
+y 28
+end
+arch deathtree
+x 15
+y 28
+end
+arch grass
+x 15
+y 29
+end
+arch grass
+x 15
 y 30
 end
-arch tree
+arch grass
 x 15
 y 31
 end
-arch tree
+arch grass
 x 15
 y 32
 end
-arch darkforest
+arch grass
 x 15
 y 33
 end
-arch darkforest
+arch grass
 x 15
 y 34
 end
-arch brush
+arch grass
 x 15
 y 35
 end
-arch woods_2
+arch grass
 x 15
 y 36
 end
-arch woods_2
+arch grass
 x 15
 y 37
 end
-arch woods_2
+arch grass
 x 15
 y 38
 end
-arch evergreens
+arch grass
 x 15
 y 39
 end
-arch evergreens
+arch grass
 x 15
 y 40
 end
-arch tree
+arch grass
 x 15
 y 41
 end
-arch tree
+arch grass
 x 15
 y 42
 end
-arch treed_hills
+arch woods
 x 15
 y 43
 end
-arch evergreens
+arch darkforest
 x 15
 y 44
 end
-arch woods_2
+arch grass
 x 15
 y 45
 end
-arch tree
+arch grass
 x 15
 y 46
 end
-arch treed_hills
+arch grass
 x 15
 y 47
 end
-arch tree
+arch grass
 x 15
 y 48
 end
-arch darkforest
+arch grass
 x 15
 y 49
 end
-arch tree
+arch deathtree
+x 15
+y 49
+end
+arch grass
 x 16
 end
-arch tree
+arch grass
 x 16
 y 1
 end
@@ -3262,2120 +3508,2259 @@ arch darkforest
 x 16
 y 2
 end
-arch darkforest
+arch grass
 x 16
 y 3
 end
-arch tree
+arch grass
 x 16
 y 4
 end
-arch darkforest
+arch grass
 x 16
 y 5
 end
-arch darkforest
+arch deathtree
+x 16
+y 5
+end
+arch shallow_sea
 x 16
 y 6
 end
-arch darkforest
+arch shallow_sea
 x 16
 y 7
 end
-arch woods_2
+arch shallow_sea
 x 16
 y 8
 end
-arch woods_2
+arch darkforest
 x 16
 y 9
 end
-arch woods_2
+arch woods
 x 16
 y 10
 end
-arch woods_2
+arch grass
 x 16
 y 11
 end
-arch evergreen
+arch deathtree
+x 16
+y 11
+end
+arch darkforest
 x 16
 y 12
 end
-arch woods_2
+arch darkforest
 x 16
 y 13
 end
-arch brush
+arch grass
 x 16
 y 14
 end
-arch tree
+arch deathtree
+x 16
+y 14
+end
+arch grass
 x 16
 y 15
 end
-arch tree
+arch deathtree
 x 16
-y 16
-end
-arch darkforest
-x 16
-y 17
-end
-arch darkforest
-x 16
-y 18
-end
-arch tree
-x 16
-y 19
-end
-arch tree
-x 16
-y 20
-end
-arch woods_2
-x 16
-y 21
-end
-arch woods_2
-x 16
-y 22
-end
-arch darkforest
-x 16
-y 23
-end
-arch darkforest
-x 16
-y 24
-end
-arch woods_2
-x 16
-y 25
-end
-arch darkforest
-x 16
-y 26
-end
-arch darkforest
-x 16
-y 27
-end
-arch darkforest
-x 16
-y 28
-end
-arch darkforest
-x 16
-y 29
+y 15
 end
 arch woods
 x 16
+y 16
+end
+arch woods
+x 16
+y 17
+end
+arch grass
+x 16
+y 18
+end
+arch grass
+x 16
+y 19
+end
+arch grass
+x 16
+y 20
+end
+arch grass
+x 16
+y 21
+end
+arch grass
+x 16
+y 22
+end
+arch grass
+x 16
+y 23
+end
+arch grass
+x 16
+y 24
+end
+arch grass
+x 16
+y 25
+end
+arch grass
+x 16
+y 26
+end
+arch grass
+x 16
+y 27
+end
+arch grass
+x 16
+y 28
+end
+arch deathtree
+x 16
+y 28
+end
+arch grass
+x 16
+y 29
+end
+arch grass
+x 16
 y 30
 end
-arch tree
+arch grass
 x 16
 y 31
 end
-arch tree
+arch grass
 x 16
 y 32
 end
-arch darkforest
+arch grass
 x 16
 y 33
 end
-arch darkforest
+arch grass
 x 16
 y 34
 end
-arch brush
+arch grass
 x 16
 y 35
 end
-arch woods_2
+arch grass
 x 16
 y 36
 end
-arch woods_2
+arch grass
 x 16
 y 37
 end
-arch tree
+arch grass
 x 16
 y 38
 end
-arch evergreens
+arch grass
 x 16
 y 39
 end
-arch evergreens
+arch grass
 x 16
 y 40
 end
-arch tree
+arch grass
 x 16
 y 41
 end
-arch tree
+arch grass
 x 16
 y 42
 end
-arch treed_hills
+arch grass
 x 16
 y 43
 end
-arch woods_2
+arch grass
 x 16
 y 44
 end
-arch evergreens
+arch grass
 x 16
 y 45
 end
-arch woods_2
+arch grass
 x 16
 y 46
 end
-arch treed_hills
+arch grass
 x 16
 y 47
 end
-arch tree
+arch grass
 x 16
 y 48
 end
-arch darkforest
+arch grass
 x 16
 y 49
 end
-arch tree
+arch deathtree
+x 16
+y 49
+end
+arch grass
 x 17
 end
-arch random_plant
+arch deathtree
 x 17
 end
-arch woods_2
+arch grass
 x 17
 y 1
 end
-arch woods_2
+arch grass
 x 17
 y 2
 end
-arch tree
+arch grass
 x 17
 y 3
 end
-arch tree
+arch grass
 x 17
 y 4
 end
-arch darkforest
+arch deathtree
 x 17
-y 5
-end
-arch darkforest
-x 17
-y 6
-end
-arch darkforest
-x 17
-y 7
-end
-arch woods_2
-x 17
-y 8
-end
-arch woods
-x 17
-y 9
-end
-arch woods
-x 17
-y 10
-end
-arch tree
-x 17
-y 11
-end
-arch evergreen
-x 17
-y 12
-end
-arch evergreen
-x 17
-y 13
-end
-arch tree
-x 17
-y 14
-end
-arch tree
-x 17
-y 15
-end
-arch tree
-x 17
-y 16
-end
-arch woods
-x 17
-y 17
-end
-arch woods
-x 17
-y 18
-end
-arch woods
-x 17
-y 19
-end
-arch tree
-x 17
-y 20
-end
-arch woods_2
-x 17
-y 21
-end
-arch darkforest
-x 17
-y 22
-end
-arch darkforest
-x 17
-y 23
-end
-arch darkforest
-x 17
-y 24
-end
-arch darkforest
-x 17
-y 25
-end
-arch darkforest
-x 17
-y 26
-end
-arch tree
-x 17
-y 27
-end
-arch darkforest
-x 17
-y 28
-end
-arch darkforest
-x 17
-y 29
-end
-arch woods
-x 17
-y 30
-end
-arch tree
-x 17
-y 31
-end
-arch tree
-x 17
-y 32
-end
-arch darkforest
-x 17
-y 33
-end
-arch tree
-x 17
-y 34
-end
-arch woods_2
-x 17
-y 35
-end
-arch woods_2
-x 17
-y 36
-end
-arch woods_2
-x 17
-y 37
-end
-arch tree
-x 17
-y 38
-end
-arch evergreens
-x 17
-y 39
-end
-arch woods
-x 17
-y 40
-end
-arch tree
-x 17
-y 41
-end
-arch treed_hills
-x 17
-y 42
-end
-arch treed_hills
-x 17
-y 43
-end
-arch woods_2
-x 17
-y 44
-end
-arch evergreens
-x 17
-y 45
-end
-arch woods_2
-x 17
-y 46
-end
-arch woods_2
-x 17
-y 47
-end
-arch tree
-x 17
-y 48
-end
-arch darkforest
-x 17
-y 49
-end
-arch tree
-x 18
-end
-arch woods_2
-x 18
-y 1
-end
-arch tree
-x 18
-y 2
-end
-arch tree
-x 18
-y 3
-end
-arch tree
-x 18
-y 4
-end
-arch darkforest
-x 18
-y 5
-end
-arch darkforest
-x 18
-y 6
-end
-arch grass
-x 18
-y 7
-end
-arch woods_2
-x 18
-y 8
-end
-arch woods_2
-x 18
-y 9
-end
-arch woods_2
-x 18
-y 10
-end
-arch tree
-x 18
-y 11
-end
-arch evergreen
-x 18
-y 12
-end
-arch evergreen
-x 18
-y 13
-end
-arch evergreen
-x 18
-y 13
-end
-arch tree
-x 18
-y 14
-end
-arch tree
-x 18
-y 15
-end
-arch woods
-x 18
-y 16
-end
-arch woods
-x 18
-y 17
-end
-arch tree
-x 18
-y 18
-end
-arch woods
-x 18
-y 19
-end
-arch woods
-x 18
-y 20
-end
-arch woods_2
-x 18
-y 21
-end
-arch darkforest
-x 18
-y 22
-end
-arch darkforest
-x 18
-y 23
-end
-arch darkforest
-x 18
-y 24
-end
-arch darkforest
-x 18
-y 25
-end
-arch darkforest
-x 18
-y 26
-end
-arch tree
-x 18
-y 27
-end
-arch darkforest
-x 18
-y 28
-end
-arch darkforest
-x 18
-y 29
-end
-arch woods
-x 18
-y 30
-end
-arch tree
-x 18
-y 31
-end
-arch tree
-x 18
-y 32
-end
-arch darkforest
-x 18
-y 33
-end
-arch tree
-x 18
-y 34
-end
-arch woods_2
-x 18
-y 35
-end
-arch woods_2
-x 18
-y 36
-end
-arch woods_2
-x 18
-y 37
-end
-arch woods_2
-x 18
-y 38
-end
-arch evergreens
-x 18
-y 39
-end
-arch tree
-x 18
-y 40
-end
-arch tree
-x 18
-y 41
-end
-arch treed_hills
-x 18
-y 42
-end
-arch random_plant
-x 18
-y 42
-end
-arch woods_2
-x 18
-y 43
-end
-arch evergreens
-x 18
-y 44
-end
-arch evergreens
-x 18
-y 45
-end
-arch treed_hills
-x 18
-y 46
-end
-arch woods_2
-x 18
-y 47
-end
-arch woods_2
-x 18
-y 48
-end
-arch darkforest
-x 18
-y 49
-end
-arch tree
-x 19
-end
-arch woods_3
-x 19
-y 1
-end
-arch woods_3
-x 19
-y 2
-end
-arch woods_3
-x 19
-y 3
-end
-arch tree
-x 19
-y 4
-end
-arch tree
-x 19
-y 5
-end
-arch darkforest
-x 19
-y 6
-end
-arch tree
-x 19
-y 7
-end
-arch tree
-x 19
-y 8
-end
-arch woods_2
-x 19
-y 9
-end
-arch woods_2
-x 19
-y 10
-end
-arch evergreens
-x 19
-y 11
-end
-arch tree
-x 19
-y 12
-end
-arch evergreen
-x 19
-y 13
-end
-arch tree
-x 19
-y 14
-end
-arch tree
-x 19
-y 15
-end
-arch woods
-x 19
-y 16
-end
-arch woods
-x 19
-y 17
-end
-arch tree
-x 19
-y 18
-end
-arch woods
-x 19
-y 19
-end
-arch woods
-x 19
-y 20
-end
-arch darkforest
-x 19
-y 21
-end
-arch darkforest
-x 19
-y 22
-end
-arch darkforest
-x 19
-y 23
-end
-arch darkforest
-x 19
-y 24
-end
-arch darkforest
-x 19
-y 25
-end
-arch darkforest
-x 19
-y 26
-end
-arch woods_2
-x 19
-y 27
-end
-arch woods_2
-x 19
-y 28
-end
-arch darkforest
-x 19
-y 29
-end
-arch woods
-x 19
-y 30
-end
-arch tree
-x 19
-y 31
-end
-arch darkforest
-x 19
-y 32
-end
-arch darkforest
-x 19
-y 33
-end
-arch tree
-x 19
-y 34
-end
-arch random_plant
-x 19
-y 34
-end
-arch tree
-x 19
-y 35
-end
-arch tree
-x 19
-y 36
-end
-arch tree
-x 19
-y 37
-end
-arch woods_2
-x 19
-y 38
-end
-arch evergreens
-x 19
-y 39
-end
-arch woods_2
-x 19
-y 40
-end
-arch treed_hills
-x 19
-y 41
-end
-arch treed_hills
-x 19
-y 42
-end
-arch evergreens
-x 19
-y 43
-end
-arch evergreens
-x 19
-y 44
-end
-arch woods
-x 19
-y 45
-end
-arch treed_hills
-x 19
-y 46
-end
-arch tree
-x 19
-y 47
-end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 19
-y 47
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch tree
-x 19
-y 48
-end
-arch darkforest
-x 19
-y 49
-end
-arch tree
-x 20
-end
-arch woods_3
-x 20
-y 1
-end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 20
-y 1
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch woods_3
-x 20
-y 2
-end
-arch woods_3
-x 20
-y 3
-end
-arch woods_3
-x 20
-y 4
-end
-arch tree
-x 20
-y 5
-end
-arch tree
-x 20
-y 6
-end
-arch random_plant
-x 20
-y 6
-end
-arch tree
-x 20
-y 7
-end
-arch tree
-x 20
-y 8
-end
-arch woods
-x 20
-y 9
-end
-arch woods
-x 20
-y 10
-end
-arch woods
-x 20
-y 11
-end
-arch tree
-x 20
-y 12
-end
-arch evergreen
-x 20
-y 13
-end
-arch evergreen
-x 20
-y 14
-end
-arch woods
-x 20
-y 15
-end
-arch woods
-x 20
-y 16
-end
-arch woods
-x 20
-y 17
-end
-arch tree
-x 20
-y 18
-end
-arch tree
-x 20
-y 19
-end
-arch tree
-x 20
-y 20
-end
-arch darkforest
-x 20
-y 21
-end
-arch darkforest
-x 20
-y 22
-end
-arch darkforest
-x 20
-y 23
-end
-arch darkforest
-x 20
-y 24
-end
-arch darkforest
-x 20
-y 25
-end
-arch woods_2
-x 20
-y 26
-end
-arch woods_2
-x 20
-y 27
-end
-arch tree
-x 20
-y 28
-end
-arch woods
-x 20
-y 29
-end
-arch tree
-x 20
-y 30
-end
-arch tree
-x 20
-y 31
-end
-arch darkforest
-x 20
-y 32
-end
-arch tree
-x 20
-y 33
-end
-arch tree
-x 20
-y 34
-end
-arch tree
-x 20
-y 35
-end
-arch tree
-x 20
-y 36
-end
-arch tree
-x 20
-y 37
-end
-arch woods_2
-x 20
-y 38
-end
-arch evergreens
-x 20
-y 39
-end
-arch evergreens
-x 20
-y 40
-end
-arch woods
-x 20
-y 41
-end
-arch evergreens
-x 20
-y 42
-end
-arch evergreens
-x 20
-y 43
-end
-arch woods
-x 20
-y 44
-end
-arch treed_hills
-x 20
-y 45
-end
-arch treed_hills
-x 20
-y 46
-end
-arch tree
-x 20
-y 47
-end
-arch hills
-x 20
-y 48
-end
-arch darkforest
-x 20
-y 49
-end
-arch tree
-x 21
-end
-arch woods_3
-x 21
-y 1
-end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 21
-y 1
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch woods_3
-x 21
-y 2
-end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 21
-y 2
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch woods_3
-x 21
-y 3
-end
-arch woods_3
-x 21
-y 4
-end
-arch woods_3
-x 21
-y 5
-end
-arch woods_3
-x 21
-y 6
-end
-arch tree
-x 21
-y 7
-end
-arch tree
-x 21
-y 8
-end
-arch woods
-x 21
-y 9
-end
-arch woods
-x 21
-y 10
-end
-arch woods
-x 21
-y 11
-end
-arch tree
-x 21
-y 12
-end
-arch evergreen
-x 21
-y 13
-end
-arch evergreen
-x 21
-y 14
-end
-arch woods
-x 21
-y 15
-end
-arch woods
-x 21
-y 16
-end
-arch woods
-x 21
-y 17
-end
-arch woods
-x 21
-y 18
-end
-arch tree
-x 21
-y 19
-end
-arch tree
-x 21
-y 20
-end
-arch darkforest
-x 21
-y 21
-end
-arch darkforest
-x 21
-y 22
-end
-arch woods_2
-x 21
-y 23
-end
-arch woods_2
-x 21
-y 24
-end
-arch darkforest
-x 21
-y 25
-end
-arch tree
-x 21
-y 26
-end
-arch evergreens
-x 21
-y 27
-end
-arch evergreens
-x 21
-y 28
-end
-arch tree
-x 21
-y 29
-end
-arch tree
-x 21
-y 30
-end
-arch tree
-x 21
-y 31
-end
-arch tree
-x 21
-y 32
-end
-arch woods
-x 21
-y 33
-end
-arch woods
-x 21
-y 34
-end
-arch woods
-x 21
-y 35
-end
-arch woods
-x 21
-y 36
-end
-arch woods
-x 21
-y 37
-end
-arch woods
-x 21
-y 38
-end
-arch woods
-x 21
-y 39
-end
-arch evergreens
-x 21
-y 40
-end
-arch evergreens
-x 21
-y 41
-end
-arch evergreens
-x 21
-y 42
-end
-arch woods_2
-x 21
-y 43
-end
-arch woods
-x 21
-y 44
-end
-arch tree
-x 21
-y 45
-end
-arch hills
-x 21
-y 46
-end
-arch hills
-x 21
-y 47
-end
-arch hills
-x 21
-y 48
-end
-arch darkforest
-x 21
-y 49
-end
-arch tree
-x 22
-end
-arch tree
-x 22
-y 1
-end
-arch woods_3
-x 22
-y 2
-end
-arch woods_3
-x 22
-y 3
-end
-arch woods_3
-x 22
-y 4
-end
-arch woods_3
-x 22
-y 5
-end
-arch woods_3
-x 22
-y 6
-end
-arch woods_3
-x 22
-y 7
-end
-arch evergreens
-x 22
-y 8
-end
-arch evergreens
-x 22
-y 9
-end
-arch evergreens
-x 22
-y 10
-end
-arch evergreens
-x 22
-y 11
-end
-arch darkforest
-x 22
-y 12
-end
-arch woods
-x 22
-y 13
-end
-arch evergreen
-x 22
-y 14
-end
-arch evergreen
-x 22
-y 15
-end
-arch evergreen
-x 22
-y 16
-end
-arch woods
-x 22
-y 17
-end
-arch woods
-x 22
-y 18
-end
-arch woods
-x 22
-y 19
-end
-arch darkforest
-x 22
-y 20
-end
-arch woods
-x 22
-y 21
-end
-arch darkforest
-x 22
-y 22
-end
-arch woods_2
-x 22
-y 23
-end
-arch woods_2
-x 22
-y 24
-end
-arch darkforest
-x 22
-y 25
-end
-arch darkforest
-x 22
-y 26
-end
-arch evergreens
-x 22
-y 27
-end
-arch evergreens
-x 22
-y 28
-end
-arch tree
-x 22
-y 29
-end
-arch tree
-x 22
-y 30
-end
-arch tree
-x 22
-y 31
-end
-arch woods
-x 22
-y 32
-end
-arch woods
-x 22
-y 33
-end
-arch hills
-x 22
-y 34
-end
-arch tree
-x 22
-y 35
-end
-arch tree
-x 22
-y 36
-end
-arch evergreens
-x 22
-y 37
-end
-arch evergreens
-x 22
-y 38
-end
-arch tree
-x 22
-y 39
-end
-arch evergreens
-x 22
-y 40
-end
-arch evergreens
-x 22
-y 41
-end
-arch woods_2
-x 22
-y 42
-end
-arch treed_hills
-x 22
-y 43
-end
-arch tree
-x 22
-y 44
-end
-arch tree
-x 22
-y 45
-end
-arch hills
-x 22
-y 46
-end
-arch hills
-x 22
-y 47
-end
-arch tree
-x 22
-y 48
-end
-arch darkforest
-x 22
-y 49
-end
-arch tree
-x 23
-end
-arch tree
-x 23
-y 1
-end
-arch woods_3
-x 23
-y 2
-end
-arch darkforest
-x 23
-y 3
-end
-arch woods_3
-x 23
-y 4
-end
-arch tree
-x 23
-y 5
-end
-arch tree
-x 23
-y 6
-end
-arch evergreens
-x 23
-y 7
-end
-arch evergreens
-x 23
-y 8
-end
-arch tree
-x 23
-y 9
-end
-arch evergreens
-x 23
-y 10
-end
-arch darkforest
-x 23
-y 11
-end
-arch evergreens
-x 23
-y 12
-end
-arch woods
-x 23
-y 13
-end
-arch evergreen
-x 23
-y 14
-end
-arch evergreen
-x 23
-y 15
-end
-arch evergreen
-x 23
-y 16
-end
-arch evergreen
-x 23
-y 17
-end
-arch tree
-x 23
-y 18
-end
-arch tree
-x 23
-y 19
-end
-arch darkforest
-x 23
-y 20
-end
-arch darkforest
-x 23
-y 21
-end
-arch darkforest
-x 23
-y 22
-end
-arch tree
-x 23
-y 23
-end
-arch tree
-x 23
-y 24
-end
-arch evergreens
-x 23
-y 25
-end
-arch evergreens
-x 23
-y 26
-end
-arch tree
-x 23
-y 27
-end
-arch evergreens
-x 23
-y 28
-end
-arch evergreens
-x 23
-y 29
-end
-arch tree
-x 23
-y 30
-end
-arch evergreens
-x 23
-y 31
-end
-arch evergreens
-x 23
-y 32
-end
-arch hills
-x 23
-y 33
-end
-arch evergreens
-x 23
-y 34
-end
-arch tree
-x 23
-y 35
-end
-arch evergreens
-x 23
-y 36
-end
-arch evergreens
-x 23
-y 37
-end
-arch tree
-x 23
-y 38
-end
-arch woods_2
-x 23
-y 39
-end
-arch woods_2
-x 23
-y 40
-end
-arch woods_2
-x 23
-y 41
-end
-arch woods_2
-x 23
-y 42
-end
-arch treed_hills
-x 23
-y 43
-end
-arch hills
-x 23
-y 44
-end
-arch hills
-x 23
-y 45
-end
-arch hills
-x 23
-y 46
-end
-arch hills
-x 23
-y 47
-end
-arch tree
-x 23
-y 48
-end
-arch tree
-x 23
-y 49
-end
-arch tree
-x 24
-end
-arch tree
-x 24
-y 1
-end
-arch darkforest
-x 24
-y 2
-end
-arch darkforest
-x 24
-y 3
-end
-arch tree
-x 24
-y 4
-end
-arch tree
-x 24
-y 5
-end
-arch evergreens
-x 24
-y 6
-end
-arch evergreens
-x 24
-y 7
-end
-arch tree
-x 24
-y 8
-end
-arch evergreens
-x 24
-y 9
-end
-arch darkforest
-x 24
-y 10
-end
-arch evergreens
-x 24
-y 11
-end
-arch evergreens
-x 24
-y 12
-end
-arch woods
-x 24
-y 13
-end
-arch evergreen
-x 24
-y 14
-end
-arch evergreen
-x 24
-y 15
-end
-arch evergreen
-x 24
-y 16
-end
-arch evergreen
-x 24
-y 17
-end
-arch evergreen
-x 24
-y 18
-end
-arch tree
-x 24
-y 19
-end
-arch darkforest
-x 24
-y 20
-end
-arch darkforest
-x 24
-y 21
-end
-arch woods
-x 24
-y 22
-end
-arch woods
-x 24
-y 23
-end
-arch tree
-x 24
-y 24
-end
-arch evergreens
-x 24
-y 25
-end
-arch evergreens
-x 24
-y 26
-end
-arch evergreens
-x 24
-y 27
-end
-arch tree
-x 24
-y 28
-end
-arch evergreens
-x 24
-y 29
-end
-arch evergreens
-x 24
-y 30
-end
-arch evergreens
-x 24
-y 31
-end
-arch hills
-x 24
-y 32
-end
-arch evergreens
-x 24
-y 33
-end
-arch evergreens
-x 24
-y 34
-end
-arch evergreens
-x 24
-y 35
-end
-arch evergreens
-x 24
-y 36
-end
-arch tree
-x 24
-y 37
-end
-arch tree
-x 24
-y 38
-end
-arch woods_2
-x 24
-y 39
-end
-arch tree
-x 24
-y 40
-end
-arch woods_2
-x 24
-y 41
-end
-arch woods_2
-x 24
-y 42
-end
-arch treed_hills
-x 24
-y 43
-end
-arch hills
-x 24
-y 44
-end
-arch tree
-x 24
-y 45
-end
-arch hills
-x 24
-y 46
-end
-arch tree
-x 24
-y 47
-end
-arch tree
-x 24
-y 48
-end
-arch tree
-x 24
-y 49
-end
-arch tree
-x 25
-end
-arch tree
-x 25
-y 1
-end
-arch darkforest
-x 25
-y 2
-end
-arch darkforest
-x 25
-y 3
-end
-arch tree
-x 25
-y 4
-end
-arch evergreens
-x 25
-y 5
-end
-arch evergreens
-x 25
-y 6
-end
-arch tree
-x 25
-y 7
-end
-arch darkforest
-x 25
-y 8
-end
-arch darkforest
-x 25
-y 9
-end
-arch tree
-x 25
-y 10
-end
-arch evergreens
-x 25
-y 11
-end
-arch evergreens
-x 25
-y 12
-end
-arch woods
-x 25
-y 13
-end
-arch woods
-x 25
-y 14
-end
-arch tree
-x 25
-y 15
-end
-arch evergreen
-x 25
-y 16
-end
-arch evergreen
-x 25
-y 17
-end
-arch brush
-x 25
-y 18
-end
-arch tree
-x 25
-y 19
-end
-arch darkforest
-x 25
-y 20
-end
-arch darkforest
-x 25
-y 21
-end
-arch woods
-x 25
-y 22
-end
-arch woods
-x 25
-y 23
-end
-arch tree
-x 25
-y 24
-end
-arch tree
-x 25
-y 25
-end
-arch tree
-x 25
-y 26
-end
-arch tree
-x 25
-y 27
-end
-arch tree
-x 25
-y 28
-end
-arch woods_3
-x 25
-y 29
-end
-arch woods_3
-x 25
-y 30
-end
-arch woods_3
-x 25
-y 31
-end
-arch hills
-x 25
-y 32
-end
-arch hills
-x 25
-y 33
-end
-arch evergreens
-x 25
-y 34
-end
-arch evergreens
-x 25
-y 35
-end
-arch evergreens
-x 25
-y 36
-end
-arch tree
-x 25
-y 37
-end
-arch tree
-x 25
-y 38
-end
-arch woods_2
-x 25
-y 39
-end
-arch woods_2
-x 25
-y 40
-end
-arch woods_2
-x 25
-y 41
-end
-arch tree
-x 25
-y 42
-end
-arch tree
-x 25
-y 43
-end
-arch hills
-x 25
-y 44
-end
-arch hills
-x 25
-y 45
-end
-arch hills
-x 25
-y 46
-end
-arch tree
-x 25
-y 47
-end
-arch tree
-x 25
-y 48
-end
-arch tree
-x 25
-y 49
-end
-arch tree
-x 26
-end
-arch woods
-x 26
-y 1
-end
-arch darkforest
-x 26
-y 2
-end
-arch tree
-x 26
-y 3
-end
-arch grass
-x 26
 y 4
 end
 arch grass
+x 17
+y 5
+end
+arch deathtree
+x 17
+y 5
+end
+arch shallow_sea
+x 17
+y 6
+end
+arch woods
+x 17
+y 7
+end
+arch shallow_sea
+x 17
+y 8
+end
+arch darkforest
+x 17
+y 9
+end
+arch woods
+x 17
+y 10
+end
+arch darkforest
+x 17
+y 11
+end
+arch darkforest
+x 17
+y 12
+end
+arch grass
+x 17
+y 13
+end
+arch deathtree
+x 17
+y 13
+end
+arch grass
+x 17
+y 14
+end
+arch deathtree
+x 17
+y 14
+end
+arch grass
+x 17
+y 15
+end
+arch deathtree
+x 17
+y 15
+end
+arch grass
+x 17
+y 16
+end
+arch deathtree
+x 17
+y 16
+end
+arch woods
+x 17
+y 17
+end
+arch grass
+x 17
+y 18
+end
+arch grass
+x 17
+y 19
+end
+arch grass
+x 17
+y 20
+end
+arch grass
+x 17
+y 21
+end
+arch grass
+x 17
+y 22
+end
+arch grass
+x 17
+y 23
+end
+arch grass
+x 17
+y 24
+end
+arch grass
+x 17
+y 25
+end
+arch grass
+x 17
+y 26
+end
+arch grass
+x 17
+y 27
+end
+arch grass
+x 17
+y 28
+end
+arch grass
+x 17
+y 29
+end
+arch grass
+x 17
+y 30
+end
+arch grass
+x 17
+y 31
+end
+arch grass
+x 17
+y 32
+end
+arch grass
+x 17
+y 33
+end
+arch grass
+x 17
+y 34
+end
+arch grass
+x 17
+y 35
+end
+arch grass
+x 17
+y 36
+end
+arch grass
+x 17
+y 37
+end
+arch deathtree
+x 17
+y 37
+end
+arch grass
+x 17
+y 38
+end
+arch grass
+x 17
+y 39
+end
+arch grass
+x 17
+y 40
+end
+arch grass
+x 17
+y 41
+end
+arch woods
+x 17
+y 42
+end
+arch darkforest
+x 17
+y 43
+end
+arch woods
+x 17
+y 44
+end
+arch grass
+x 17
+y 45
+end
+arch grass
+x 17
+y 46
+end
+arch grass
+x 17
+y 47
+end
+arch grass
+x 17
+y 48
+end
+arch deathtree
+x 17
+y 48
+end
+arch grass
+x 17
+y 49
+end
+arch deathtree
+x 17
+y 49
+end
+arch grass
+x 18
+end
+arch deathtree
+x 18
+end
+arch grass
+x 18
+y 1
+end
+arch deathtree
+x 18
+y 1
+end
+arch grass
+x 18
+y 2
+end
+arch deathtree
+x 18
+y 2
+end
+arch grass
+x 18
+y 3
+end
+arch grass
+x 18
+y 4
+end
+arch deathtree
+x 18
+y 4
+end
+arch grass
+x 18
+y 5
+end
+arch darkforest
+x 18
+y 6
+end
+arch woods
+x 18
+y 7
+end
+arch shallow_sea
+x 18
+y 8
+end
+arch shallow_sea
+x 18
+y 9
+end
+arch shallow_sea
+x 18
+y 10
+end
+arch darkforest
+x 18
+y 11
+end
+arch grass
+x 18
+y 12
+end
+arch deathtree
+x 18
+y 12
+end
+arch darkforest
+x 18
+y 13
+end
+arch grass
+x 18
+y 14
+end
+arch grass
+x 18
+y 15
+end
+arch deathtree
+x 18
+y 15
+end
+arch grass
+x 18
+y 16
+end
+arch deathtree
+x 18
+y 16
+end
+arch grass
+x 18
+y 17
+end
+arch grass
+x 18
+y 18
+end
+arch grass
+x 18
+y 19
+end
+arch grass
+x 18
+y 20
+end
+arch grass
+x 18
+y 21
+end
+arch grass
+x 18
+y 22
+end
+arch grass
+x 18
+y 23
+end
+arch grass
+x 18
+y 24
+end
+arch grass
+x 18
+y 25
+end
+arch grass
+x 18
+y 26
+end
+arch grass
+x 18
+y 27
+end
+arch grass
+x 18
+y 28
+end
+arch grass
+x 18
+y 29
+end
+arch grass
+x 18
+y 30
+end
+arch grass
+x 18
+y 31
+end
+arch grass
+x 18
+y 32
+end
+arch grass
+x 18
+y 33
+end
+arch grass
+x 18
+y 34
+end
+arch deathtree
+x 18
+y 34
+end
+arch grass
+x 18
+y 35
+end
+arch deathtree
+x 18
+y 35
+end
+arch grass
+x 18
+y 36
+end
+arch deathtree
+x 18
+y 36
+end
+arch grass
+x 18
+y 37
+end
+arch grass
+x 18
+y 38
+end
+arch grass
+x 18
+y 39
+end
+arch grass
+x 18
+y 40
+end
+arch woods
+x 18
+y 41
+end
+arch woods
+x 18
+y 42
+end
+arch grass
+x 18
+y 43
+end
+arch deathtree
+x 18
+y 43
+end
+arch darkforest
+x 18
+y 44
+end
+arch darkforest
+x 18
+y 45
+end
+arch grass
+x 18
+y 46
+end
+arch grass
+x 18
+y 47
+end
+arch grass
+x 18
+y 48
+end
+arch darkforest
+x 18
+y 49
+end
+arch darkforest
+x 19
+end
+arch grass
+x 19
+y 1
+end
+arch grass
+x 19
+y 2
+end
+arch deathtree
+x 19
+y 2
+end
+arch grass
+x 19
+y 3
+end
+arch deathtree
+x 19
+y 3
+end
+arch grass
+x 19
+y 4
+end
+arch darkforest
+x 19
+y 5
+end
+arch darkforest
+x 19
+y 6
+end
+arch darkforest
+x 19
+y 7
+end
+arch darkforest
+x 19
+y 8
+end
+arch grass
+x 19
+y 9
+end
+arch shallow_sea
+x 19
+y 10
+end
+arch darkforest
+x 19
+y 11
+end
+arch darkforest
+x 19
+y 12
+end
+arch darkforest
+x 19
+y 13
+end
+arch grass
+x 19
+y 14
+end
+arch grass
+x 19
+y 15
+end
+arch deathtree
+x 19
+y 15
+end
+arch grass
+x 19
+y 16
+end
+arch deathtree
+x 19
+y 16
+end
+arch grass
+x 19
+y 17
+end
+arch grass
+x 19
+y 18
+end
+arch grass
+x 19
+y 19
+end
+arch grass
+x 19
+y 20
+end
+arch grass
+x 19
+y 21
+end
+arch grass
+x 19
+y 22
+end
+arch grass
+x 19
+y 23
+end
+arch grass
+x 19
+y 24
+end
+arch grass
+x 19
+y 25
+end
+arch grass
+x 19
+y 26
+end
+arch grass
+x 19
+y 27
+end
+arch grass
+x 19
+y 28
+end
+arch grass
+x 19
+y 29
+end
+arch grass
+x 19
+y 30
+end
+arch grass
+x 19
+y 31
+end
+arch grass
+x 19
+y 32
+end
+arch grass
+x 19
+y 33
+end
+arch grass
+x 19
+y 34
+end
+arch deathtree
+x 19
+y 34
+end
+arch grass
+x 19
+y 35
+end
+arch grass
+x 19
+y 36
+end
+arch deathtree
+x 19
+y 36
+end
+arch woods
+x 19
+y 37
+end
+arch woods
+x 19
+y 38
+end
+arch darkforest
+x 19
+y 39
+end
+arch grass
+x 19
+y 40
+end
+arch deathtree
+x 19
+y 40
+end
+arch darkforest
+x 19
+y 41
+end
+arch woods
+x 19
+y 42
+end
+arch darkforest
+x 19
+y 43
+end
+arch woods
+x 19
+y 44
+end
+arch woods
+x 19
+y 45
+end
+arch darkforest
+x 19
+y 46
+end
+arch grass
+x 19
+y 47
+end
+arch darkforest
+x 19
+y 48
+end
+arch darkforest
+x 19
+y 49
+end
+arch darkforest
+x 20
+end
+arch grass
+x 20
+y 1
+end
+arch grass
+x 20
+y 2
+end
+arch deathtree
+x 20
+y 2
+end
+arch grass
+x 20
+y 3
+end
+arch deathtree
+x 20
+y 3
+end
+arch grass
+x 20
+y 4
+end
+arch darkforest
+x 20
+y 5
+end
+arch darkforest
+x 20
+y 6
+end
+arch grass
+x 20
+y 7
+end
+arch deathtree
+x 20
+y 7
+end
+arch darkforest
+x 20
+y 8
+end
+arch grass
+x 20
+y 9
+end
+arch shallow_sea
+x 20
+y 10
+end
+arch shallow_sea
+x 20
+y 11
+end
+arch shallow_sea
+x 20
+y 12
+end
+arch darkforest
+x 20
+y 13
+end
+arch grass
+x 20
+y 14
+end
+arch grass
+x 20
+y 15
+end
+arch grass
+x 20
+y 16
+end
+arch grass
+x 20
+y 17
+end
+arch grass
+x 20
+y 18
+end
+arch grass
+x 20
+y 19
+end
+arch grass
+x 20
+y 20
+end
+arch grass
+x 20
+y 21
+end
+arch grass
+x 20
+y 22
+end
+arch grass
+x 20
+y 23
+end
+arch grass
+x 20
+y 24
+end
+arch grass
+x 20
+y 25
+end
+arch grass
+x 20
+y 26
+end
+arch grass
+x 20
+y 27
+end
+arch grass
+x 20
+y 28
+end
+arch grass
+x 20
+y 29
+end
+arch grass
+x 20
+y 30
+end
+arch grass
+x 20
+y 31
+end
+arch grass
+x 20
+y 32
+end
+arch grass
+x 20
+y 33
+end
+arch grass
+x 20
+y 34
+end
+arch grass
+x 20
+y 35
+end
+arch grass
+x 20
+y 36
+end
+arch deathtree
+x 20
+y 36
+end
+arch woods
+x 20
+y 37
+end
+arch darkforest
+x 20
+y 38
+end
+arch darkforest
+x 20
+y 39
+end
+arch darkforest
+x 20
+y 40
+end
+arch shallow_sea
+x 20
+y 41
+end
+arch grass
+x 20
+y 42
+end
+arch grass
+x 20
+y 43
+end
+arch woods
+x 20
+y 44
+end
+arch darkforest
+x 20
+y 45
+end
+arch darkforest
+x 20
+y 46
+end
+arch darkforest
+x 20
+y 47
+end
+arch darkforest
+x 20
+y 48
+end
+arch darkforest
+x 20
+y 49
+end
+arch darkforest
+x 21
+end
+arch grass
+x 21
+y 1
+end
+arch grass
+x 21
+y 2
+end
+arch grass
+x 21
+y 3
+end
+arch grass
+x 21
+y 4
+end
+arch darkforest
+x 21
+y 5
+end
+arch woods
+x 21
+y 6
+end
+arch woods
+x 21
+y 7
+end
+arch woods
+x 21
+y 8
+end
+arch shallow_sea
+x 21
+y 9
+end
+arch shallow_sea
+x 21
+y 10
+end
+arch shallow_sea
+x 21
+y 11
+end
+arch shallow_sea
+x 21
+y 12
+end
+arch darkforest
+x 21
+y 13
+end
+arch darkforest
+x 21
+y 14
+end
+arch grass
+x 21
+y 15
+end
+arch grass
+x 21
+y 16
+end
+arch grass
+x 21
+y 17
+end
+arch grass
+x 21
+y 18
+end
+arch grass
+x 21
+y 19
+end
+arch grass
+x 21
+y 20
+end
+arch grass
+x 21
+y 21
+end
+arch grass
+x 21
+y 22
+end
+arch grass
+x 21
+y 23
+end
+arch grass
+x 21
+y 24
+end
+arch grass
+x 21
+y 25
+end
+arch grass
+x 21
+y 26
+end
+arch grass
+x 21
+y 27
+end
+arch grass
+x 21
+y 28
+end
+arch grass
+x 21
+y 29
+end
+arch grass
+x 21
+y 30
+end
+arch grass
+x 21
+y 31
+end
+arch grass
+x 21
+y 32
+end
+arch grass
+x 21
+y 33
+end
+arch grass
+x 21
+y 34
+end
+arch grass
+x 21
+y 35
+end
+arch deathtree
+x 21
+y 35
+end
+arch grass
+x 21
+y 36
+end
+arch deathtree
+x 21
+y 36
+end
+arch woods
+x 21
+y 37
+end
+arch darkforest
+x 21
+y 38
+end
+arch darkforest
+x 21
+y 39
+end
+arch darkforest
+x 21
+y 40
+end
+arch shallow_sea
+x 21
+y 41
+end
+arch woods
+x 21
+y 42
+end
+arch woods
+x 21
+y 43
+end
+arch woods
+x 21
+y 44
+end
+arch darkforest
+x 21
+y 45
+end
+arch darkforest
+x 21
+y 46
+end
+arch darkforest
+x 21
+y 47
+end
+arch darkforest
+x 21
+y 48
+end
+arch darkforest
+x 21
+y 49
+end
+arch darkforest
+x 22
+end
+arch grass
+x 22
+y 1
+end
+arch grass
+x 22
+y 2
+end
+arch grass
+x 22
+y 3
+end
+arch grass
+x 22
+y 4
+end
+arch woods
+x 22
+y 5
+end
+arch woods
+x 22
+y 6
+end
+arch grass
+x 22
+y 7
+end
+arch woods
+x 22
+y 8
+end
+arch shallow_sea
+x 22
+y 9
+end
+arch shallow_sea
+x 22
+y 10
+end
+arch shallow_sea
+x 22
+y 11
+end
+arch shallow_sea
+x 22
+y 12
+end
+arch shallow_sea
+x 22
+y 13
+end
+arch darkforest
+x 22
+y 14
+end
+arch grass
+x 22
+y 15
+end
+arch grass
+x 22
+y 16
+end
+arch deathtree
+x 22
+y 16
+end
+arch grass
+x 22
+y 17
+end
+arch grass
+x 22
+y 18
+end
+arch grass
+x 22
+y 19
+end
+arch grass
+x 22
+y 20
+end
+arch grass
+x 22
+y 21
+end
+arch grass
+x 22
+y 22
+end
+arch grass
+x 22
+y 23
+end
+arch grass
+x 22
+y 24
+end
+arch grass
+x 22
+y 25
+end
+arch grass
+x 22
+y 26
+end
+arch grass
+x 22
+y 27
+end
+arch grass
+x 22
+y 28
+end
+arch grass
+x 22
+y 29
+end
+arch grass
+x 22
+y 30
+end
+arch grass
+x 22
+y 31
+end
+arch grass
+x 22
+y 32
+end
+arch grass
+x 22
+y 33
+end
+arch grass
+x 22
+y 34
+end
+arch grass
+x 22
+y 35
+end
+arch deathtree
+x 22
+y 35
+end
+arch grass
+x 22
+y 36
+end
+arch deathtree
+x 22
+y 36
+end
+arch darkforest
+x 22
+y 37
+end
+arch darkforest
+x 22
+y 38
+end
+arch grass
+x 22
+y 39
+end
+arch deathtree
+x 22
+y 39
+end
+arch darkforest
+x 22
+y 40
+end
+arch shallow_sea
+x 22
+y 41
+end
+arch darkforest
+x 22
+y 42
+end
+arch grass
+x 22
+y 43
+end
+arch grass
+x 22
+y 44
+end
+arch grass
+x 22
+y 45
+end
+arch darkforest
+x 22
+y 46
+end
+arch darkforest
+x 22
+y 47
+end
+arch darkforest
+x 22
+y 48
+end
+arch darkforest
+x 22
+y 49
+end
+arch darkforest
+x 23
+end
+arch grass
+x 23
+y 1
+end
+arch darkforest
+x 23
+y 2
+end
+arch darkforest
+x 23
+y 3
+end
+arch grass
+x 23
+y 4
+end
+arch woods
+x 23
+y 5
+end
+arch grass
+x 23
+y 6
+end
+arch grass
+x 23
+y 7
+end
+arch woods
+x 23
+y 8
+end
+arch shallow_sea
+x 23
+y 9
+end
+arch shallow_sea
+x 23
+y 10
+end
+arch shallow_sea
+x 23
+y 11
+end
+arch grass
+x 23
+y 12
+end
+arch shallow_sea
+x 23
+y 13
+end
+arch darkforest
+x 23
+y 14
+end
+arch grass
+x 23
+y 15
+end
+arch grass
+x 23
+y 16
+end
+arch deathtree
+x 23
+y 16
+end
+arch grass
+x 23
+y 17
+end
+arch grass
+x 23
+y 18
+end
+arch grass
+x 23
+y 19
+end
+arch grass
+x 23
+y 20
+end
+arch grass
+x 23
+y 21
+end
+arch grass
+x 23
+y 22
+end
+arch grass
+x 23
+y 23
+end
+arch grass
+x 23
+y 24
+end
+arch grass
+x 23
+y 25
+end
+arch grass
+x 23
+y 26
+end
+arch grass
+x 23
+y 27
+end
+arch grass
+x 23
+y 28
+end
+arch grass
+x 23
+y 29
+end
+arch grass
+x 23
+y 30
+end
+arch grass
+x 23
+y 31
+end
+arch grass
+x 23
+y 32
+end
+arch grass
+x 23
+y 33
+end
+arch grass
+x 23
+y 34
+end
+arch grass
+x 23
+y 35
+end
+arch deathtree
+x 23
+y 35
+end
+arch darkforest
+x 23
+y 36
+end
+arch darkforest
+x 23
+y 37
+end
+arch darkforest
+x 23
+y 38
+end
+arch darkforest
+x 23
+y 39
+end
+arch grass
+x 23
+y 40
+end
+arch shallow_sea
+x 23
+y 41
+end
+arch shallow_sea
+x 23
+y 42
+end
+arch grass
+x 23
+y 43
+end
+arch grass
+x 23
+y 44
+end
+arch deathtree
+x 23
+y 44
+end
+arch grass
+x 23
+y 45
+end
+arch darkforest
+x 23
+y 46
+end
+arch darkforest
+x 23
+y 47
+end
+arch darkforest
+x 23
+y 48
+end
+arch darkforest
+x 23
+y 49
+end
+arch darkforest
+x 24
+end
+arch darkforest
+x 24
+y 1
+end
+arch grass
+x 24
+y 2
+end
+arch darkforest
+x 24
+y 3
+end
+arch grass
+x 24
+y 4
+end
+arch woods
+x 24
+y 5
+end
+arch darkforest
+x 24
+y 6
+end
+arch darkforest
+x 24
+y 7
+end
+arch darkforest
+x 24
+y 8
+end
+arch woods
+x 24
+y 9
+end
+arch darkforest
+x 24
+y 10
+end
+arch darkforest
+x 24
+y 11
+end
+arch grass
+x 24
+y 12
+end
+arch shallow_sea
+x 24
+y 13
+end
+arch shallow_sea
+x 24
+y 14
+end
+arch darkforest
+x 24
+y 15
+end
+arch grass
+x 24
+y 16
+end
+arch deathtree
+x 24
+y 16
+end
+arch grass
+x 24
+y 17
+end
+arch deathtree
+x 24
+y 17
+end
+arch grass
+x 24
+y 18
+end
+arch grass
+x 24
+y 19
+end
+arch deathtree
+x 24
+y 19
+end
+arch grass
+x 24
+y 20
+end
+arch deathtree
+x 24
+y 20
+end
+arch grass
+x 24
+y 21
+end
+arch grass
+x 24
+y 22
+end
+arch grass
+x 24
+y 23
+end
+arch grass
+x 24
+y 24
+end
+arch grass
+x 24
+y 25
+end
+arch grass
+x 24
+y 26
+end
+arch grass
+x 24
+y 27
+end
+arch grass
+x 24
+y 28
+end
+arch grass
+x 24
+y 29
+end
+arch grass
+x 24
+y 30
+end
+arch grass
+x 24
+y 31
+end
+arch grass
+x 24
+y 32
+end
+arch grass
+x 24
+y 33
+end
+arch grass
+x 24
+y 34
+end
+arch deathtree
+x 24
+y 34
+end
+arch woods
+x 24
+y 35
+end
+arch darkforest
+x 24
+y 36
+end
+arch darkforest
+x 24
+y 37
+end
+arch grass
+x 24
+y 38
+end
+arch deathtree
+x 24
+y 38
+end
+arch grass
+x 24
+y 39
+end
+arch darkforest
+x 24
+y 40
+end
+arch darkforest
+x 24
+y 41
+end
+arch shallow_sea
+x 24
+y 42
+end
+arch shallow_sea
+x 24
+y 43
+end
+arch grass
+x 24
+y 44
+end
+arch deathtree
+x 24
+y 44
+end
+arch darkforest
+x 24
+y 45
+end
+arch darkforest
+x 24
+y 46
+end
+arch grass
+x 24
+y 47
+end
+arch grass
+x 24
+y 48
+end
+arch darkforest
+x 24
+y 49
+end
+arch darkforest
+x 25
+end
+arch grass
+x 25
+y 1
+end
+arch darkforest
+x 25
+y 2
+end
+arch darkforest
+x 25
+y 3
+end
+arch grass
+x 25
+y 4
+end
+arch woods
+x 25
+y 5
+end
+arch darkforest
+x 25
+y 6
+end
+arch woods
+x 25
+y 7
+end
+arch woods
+x 25
+y 8
+end
+arch woods
+x 25
+y 9
+end
+arch darkforest
+x 25
+y 10
+end
+arch grass
+x 25
+y 11
+end
+arch deathtree
+x 25
+y 11
+end
+arch grass
+x 25
+y 12
+end
+arch darkforest
+x 25
+y 13
+end
+arch shallow_sea
+x 25
+y 14
+end
+arch shallow_sea
+x 25
+y 15
+end
+arch grass
+x 25
+y 16
+end
+arch grass
+x 25
+y 17
+end
+arch deathtree
+x 25
+y 17
+end
+arch grass
+x 25
+y 18
+end
+arch deathtree
+x 25
+y 18
+end
+arch grass
+x 25
+y 19
+end
+arch deathtree
+x 25
+y 19
+end
+arch grass
+x 25
+y 20
+end
+arch deathtree
+x 25
+y 20
+end
+arch grass
+x 25
+y 21
+end
+arch grass
+x 25
+y 22
+end
+arch grass
+x 25
+y 23
+end
+arch grass
+x 25
+y 24
+end
+arch grass
+x 25
+y 25
+end
+arch grass
+x 25
+y 26
+end
+arch grass
+x 25
+y 27
+end
+arch grass
+x 25
+y 28
+end
+arch grass
+x 25
+y 29
+end
+arch grass
+x 25
+y 30
+end
+arch grass
+x 25
+y 31
+end
+arch grass
+x 25
+y 32
+end
+arch grass
+x 25
+y 33
+end
+arch grass
+x 25
+y 34
+end
+arch deathtree
+x 25
+y 34
+end
+arch woods
+x 25
+y 35
+end
+arch woods
+x 25
+y 36
+end
+arch grass
+x 25
+y 37
+end
+arch grass
+x 25
+y 38
+end
+arch grass
+x 25
+y 39
+end
+arch grass
+x 25
+y 40
+end
+arch woods
+x 25
+y 41
+end
+arch darkforest
+x 25
+y 42
+end
+arch shallow_sea
+x 25
+y 43
+end
+arch shallow_sea
+x 25
+y 44
+end
+arch darkforest
+x 25
+y 45
+end
+arch grass
+x 25
+y 46
+end
+arch deathtree
+x 25
+y 46
+end
+arch grass
+x 25
+y 47
+end
+arch deathtree
+x 25
+y 47
+end
+arch grass
+x 25
+y 48
+end
+arch darkforest
+x 25
+y 49
+end
+arch darkforest
+x 26
+end
+arch grass
+x 26
+y 1
+end
+arch darkforest
+x 26
+y 2
+end
+arch grass
+x 26
+y 3
+end
+arch deathtree
+x 26
+y 3
+end
+arch grass
+x 26
+y 4
+end
+arch woods
 x 26
 y 5
 end
-arch tree
+arch grass
 x 26
 y 6
 end
@@ -5383,43 +5768,51 @@ arch darkforest
 x 26
 y 7
 end
-arch darkforest
+arch woods
 x 26
 y 8
 end
-arch darkforest
+arch woods
 x 26
 y 9
 end
-arch tree
+arch darkforest
 x 26
 y 10
 end
-arch evergreens
+arch grass
 x 26
 y 11
 end
-arch evergreens
+arch deathtree
+x 26
+y 11
+end
+arch grass
 x 26
 y 12
 end
-arch evergreens
+arch deathtree
+x 26
+y 12
+end
+arch darkforest
 x 26
 y 13
 end
-arch woods
+arch darkforest
 x 26
 y 14
 end
-arch tree
+arch shallow_sea
 x 26
 y 15
 end
-arch brush
+arch darkforest
 x 26
 y 16
 end
-arch evergreen
+arch grass
 x 26
 y 17
 end
@@ -5427,15 +5820,23 @@ arch grass
 x 26
 y 18
 end
-arch tree
+arch deathtree
+x 26
+y 18
+end
+arch grass
 x 26
 y 19
 end
-arch darkforest
+arch deathtree
+x 26
+y 19
+end
+arch grass
 x 26
 y 20
 end
-arch darkforest
+arch grass
 x 26
 y 21
 end
@@ -5443,118 +5844,122 @@ arch darkforest
 x 26
 y 22
 end
-arch woods
+arch darkforest
 x 26
 y 23
 end
-arch woods
+arch grass
 x 26
 y 24
 end
-arch woods
+arch grass
 x 26
 y 25
 end
-arch treed_hills
+arch grass
 x 26
 y 26
 end
-arch tree
+arch grass
 x 26
 y 27
 end
-arch tree
+arch grass
 x 26
 y 28
 end
-arch woods_3
+arch grass
 x 26
 y 29
 end
-arch evergreens
+arch grass
 x 26
 y 30
 end
-arch evergreens
+arch grass
 x 26
 y 31
 end
-arch evergreens
+arch grass
 x 26
 y 32
 end
-arch hills
+arch grass
 x 26
 y 33
 end
-arch hills
+arch grass
 x 26
 y 34
 end
-arch evergreens
+arch woods
 x 26
 y 35
 end
-arch treed_hills
+arch woods
 x 26
 y 36
 end
-arch treed_hills
+arch grass
 x 26
 y 37
 end
-arch woods_2
+arch grass
 x 26
 y 38
 end
-arch woods_2
+arch grass
 x 26
 y 39
 end
-arch woods_2
+arch grass
 x 26
 y 40
 end
-arch tree
+arch woods
 x 26
 y 41
 end
-arch tree
+arch darkforest
 x 26
 y 42
 end
-arch tree
+arch darkforest
 x 26
 y 43
 end
-arch tree
+arch shallow_sea
 x 26
 y 44
 end
-arch hills
+arch shallow_sea
 x 26
 y 45
 end
-arch tree
+arch darkforest
 x 26
 y 46
 end
-arch tree
+arch grass
 x 26
 y 47
 end
-arch tree
+arch deathtree
+x 26
+y 47
+end
+arch grass
 x 26
 y 48
 end
-arch tree
+arch grass
 x 26
 y 49
 end
-arch tree
+arch darkforest
 x 27
 end
-arch darkforest
+arch grass
 x 27
 y 1
 end
@@ -5566,87 +5971,103 @@ arch grass
 x 27
 y 3
 end
+arch deathtree
+x 27
+y 3
+end
 arch grass
 x 27
 y 4
 end
-arch tree
+arch woods
 x 27
 y 5
 end
-arch darkforest
+arch grass
 x 27
 y 6
 end
-arch darkforest
+arch deathtree
+x 27
+y 6
+end
+arch grass
 x 27
 y 7
 end
-arch darkforest
+arch woods
 x 27
 y 8
 end
-arch woods_3
+arch woods
 x 27
 y 9
 end
-arch woods_3
+arch darkforest
 x 27
 y 10
 end
-arch evergreens
+arch darkforest
 x 27
 y 11
 end
-arch tree
+arch darkforest
 x 27
 y 12
 end
-arch evergreens
+arch darkforest
 x 27
 y 13
 end
-arch woods
+arch grass
 x 27
 y 14
 end
-arch tree
+arch deathtree
+x 27
+y 14
+end
+arch grass
 x 27
 y 15
 end
-arch tree
+arch deathtree
+x 27
+y 15
+end
+arch darkforest
 x 27
 y 16
 end
-arch random_plant
-x 27
-y 16
-end
-arch tree
+arch darkforest
 x 27
 y 17
 end
-arch tree
+arch grass
 x 27
 y 18
 end
-arch tree
+arch deathtree
+x 27
+y 18
+end
+arch grass
 x 27
 y 19
 end
-arch darkforest
+arch woods
 x 27
 y 20
 end
-arch darkforest
+arch woods
 x 27
 y 21
 end
-arch darkforest
+arch woods
 x 27
 y 22
 end
-arch woods_3
+arch woods
 x 27
 y 23
 end
@@ -5662,106 +6083,106 @@ arch grass
 x 27
 y 26
 end
-arch treed_hills
+arch grass
 x 27
 y 27
 end
-arch woods_3
+arch grass
 x 27
 y 28
 end
-arch woods_3
+arch grass
 x 27
 y 29
 end
-arch evergreens
+arch grass
 x 27
 y 30
 end
-arch evergreens
+arch grass
 x 27
 y 31
 end
-arch evergreens
+arch grass
 x 27
 y 32
 end
-arch evergreens
+arch grass
 x 27
 y 33
 end
-arch woods_3
+arch grass
 x 27
 y 34
 end
-arch treed_hills
+arch grass
 x 27
 y 35
 end
-arch tree
+arch grass
 x 27
 y 36
 end
-arch tree
+arch grass
 x 27
 y 37
 end
-arch woods_2
+arch grass
 x 27
 y 38
 end
-arch woods_2
+arch grass
 x 27
 y 39
 end
-arch woods_2
+arch grass
 x 27
 y 40
 end
-arch tree
+arch woods
 x 27
 y 41
 end
-arch tree
+arch darkforest
 x 27
 y 42
 end
-arch tree
+arch darkforest
 x 27
 y 43
 end
-arch hills
+arch darkforest
 x 27
 y 44
 end
-arch hills
+arch shallow_sea
 x 27
 y 45
 end
-arch tree
+arch darkforest
 x 27
 y 46
 end
-arch tree
+arch darkforest
 x 27
 y 47
 end
-arch tree
+arch grass
 x 27
 y 48
 end
-arch tree
+arch grass
 x 27
 y 49
 end
-arch tree
+arch darkforest
 x 28
 end
 arch darkforest
 x 28
 y 1
 end
-arch darkforest
+arch grass
 x 28
 y 2
 end
@@ -5769,95 +6190,115 @@ arch grass
 x 28
 y 3
 end
-arch broo
-x 28
-y 3
-end
 arch grass
 x 28
 y 4
 end
-arch darkforest
+arch deathtree
 x 28
-y 5
-end
-arch darkforest
-x 28
-y 6
-end
-arch darkforest
-x 28
-y 7
-end
-arch woods_3
-x 28
-y 8
-end
-arch woods_3
-x 28
-y 9
-end
-arch woods_3
-x 28
-y 10
-end
-arch tree
-x 28
-y 11
-end
-arch tree
-x 28
-y 12
-end
-arch tree
-x 28
-y 13
+y 4
 end
 arch woods
 x 28
+y 5
+end
+arch grass
+x 28
+y 6
+end
+arch deathtree
+x 28
+y 6
+end
+arch grass
+x 28
+y 7
+end
+arch woods
+x 28
+y 8
+end
+arch darkforest
+x 28
+y 9
+end
+arch grass
+x 28
+y 10
+end
+arch deathtree
+x 28
+y 10
+end
+arch grass
+x 28
+y 11
+end
+arch grass
+x 28
+y 12
+end
+arch darkforest
+x 28
+y 13
+end
+arch grass
+x 28
 y 14
 end
-arch tree
+arch deathtree
+x 28
+y 14
+end
+arch grass
 x 28
 y 15
 end
-arch tree
+arch deathtree
+x 28
+y 15
+end
+arch grass
 x 28
 y 16
 end
-arch random_plant
+arch deathtree
 x 28
 y 16
 end
-arch tree
+arch darkforest
 x 28
 y 17
 end
-arch tree
+arch woods
 x 28
 y 18
 end
-arch darkforest
+arch woods
 x 28
 y 19
 end
-arch darkforest
+arch woods
 x 28
 y 20
 end
-arch tree
+arch woods
 x 28
 y 21
 end
-arch darkforest
+arch woods
 x 28
 y 22
 end
-arch woods_3
+arch grass
 x 28
 y 23
 end
-arch treed_hills
+arch deathtree
+x 28
+y 23
+end
+arch grass
 x 28
 y 24
 end
@@ -5873,110 +6314,122 @@ arch grass
 x 28
 y 27
 end
-arch woods_3
+arch grass
 x 28
 y 28
 end
-arch tree
+arch grass
 x 28
 y 29
 end
-arch evergreens
+arch grass
 x 28
 y 30
 end
-arch evergreens
+arch grass
 x 28
 y 31
 end
-arch darkforest
+arch grass
 x 28
 y 32
 end
-arch darkforest
+arch grass
 x 28
 y 33
 end
-arch tree
+arch grass
 x 28
 y 34
 end
-arch woods_3
+arch grass
 x 28
 y 35
 end
-arch treed_hills
+arch grass
 x 28
 y 36
 end
-arch treed_hills
+arch grass
 x 28
 y 37
 end
-arch woods_2
+arch grass
 x 28
 y 38
 end
-arch treed_hills
+arch grass
 x 28
 y 39
 end
-arch darkforest
+arch grass
 x 28
 y 40
 end
-arch treed_hills
+arch grass
 x 28
 y 41
 end
-arch tree
+arch grass
 x 28
 y 42
 end
-arch woods_2
+arch deathtree
+x 28
+y 42
+end
+arch darkforest
 x 28
 y 43
 end
-arch woods_2
+arch darkforest
 x 28
 y 44
 end
-arch woods_2
+arch shallow_sea
 x 28
 y 45
 end
-arch woods_2
+arch darkforest
 x 28
 y 46
 end
-arch tree
+arch darkforest
 x 28
 y 47
 end
-arch tree
+arch darkforest
 x 28
 y 48
 end
-arch tree
+arch grass
 x 28
 y 49
 end
-arch tree
+arch darkforest
 x 29
 end
 arch darkforest
 x 29
 y 1
 end
-arch darkforest
+arch grass
 x 29
 y 2
 end
-arch darkforest
+arch grass
 x 29
 y 3
 end
-arch darkforest
+arch deathtree
+x 29
+y 3
+end
+arch grass
+x 29
+y 4
+end
+arch deathtree
 x 29
 y 4
 end
@@ -5984,55 +6437,71 @@ arch darkforest
 x 29
 y 5
 end
-arch darkforest
+arch grass
 x 29
 y 6
 end
-arch darkforest
+arch grass
 x 29
 y 7
 end
-arch woods_3
+arch woods
 x 29
 y 8
 end
-arch tree
+arch darkforest
 x 29
 y 9
 end
-arch woods_3
+arch darkforest
 x 29
 y 10
 end
-arch tree
+arch grass
 x 29
 y 11
 end
-arch tree
+arch deathtree
+x 29
+y 11
+end
+arch darkforest
 x 29
 y 12
 end
-arch tree
+arch grass
 x 29
 y 13
 end
-arch tree
+arch grass
 x 29
 y 14
 end
-arch tree
+arch grass
 x 29
 y 15
 end
-arch tree
+arch deathtree
+x 29
+y 15
+end
+arch grass
 x 29
 y 16
 end
-arch tree
+arch deathtree
+x 29
+y 16
+end
+arch grass
 x 29
 y 17
 end
-arch tree
+arch deathtree
+x 29
+y 17
+end
+arch darkforest
 x 29
 y 18
 end
@@ -6040,23 +6509,27 @@ arch darkforest
 x 29
 y 19
 end
-arch darkforest
+arch grass
 x 29
 y 20
 end
-arch tree
+arch woods
 x 29
 y 21
 end
-arch darkforest
+arch woods
 x 29
 y 22
 end
-arch woods_3
+arch grass
 x 29
 y 23
 end
-arch woods_3
+arch deathtree
+x 29
+y 23
+end
+arch grass
 x 29
 y 24
 end
@@ -6064,138 +6537,158 @@ arch grass
 x 29
 y 25
 end
-arch woods_3
+arch grass
 x 29
 y 26
 end
-arch woods_3
+arch grass
 x 29
 y 27
 end
-arch treed_hills
+arch grass
 x 29
 y 28
 end
-arch tree
+arch woods
 x 29
 y 29
 end
-arch evergreens
+arch woods
 x 29
 y 30
 end
-arch darkforest
+arch grass
 x 29
 y 31
 end
-arch tree
+arch grass
 x 29
 y 32
 end
-arch darkforest
+arch grass
 x 29
 y 33
 end
-arch darkforest
+arch grass
 x 29
 y 34
 end
-arch darkforest
+arch grass
 x 29
 y 35
 end
-arch darkforest
+arch grass
 x 29
 y 36
 end
-arch woods_2
+arch grass
 x 29
 y 37
 end
-arch darkforest
+arch grass
 x 29
 y 38
 end
-arch darkforest
+arch grass
 x 29
 y 39
 end
-arch darkforest
+arch grass
 x 29
 y 40
 end
-arch woods_2
+arch grass
 x 29
 y 41
 end
-arch darkforest
+arch grass
 x 29
 y 42
 end
-arch woods_2
+arch deathtree
+x 29
+y 42
+end
+arch grass
 x 29
 y 43
 end
-arch tree
+arch deathtree
+x 29
+y 43
+end
+arch darkforest
 x 29
 y 44
 end
-arch tree
+arch shallow_sea
 x 29
 y 45
 end
-arch woods_2
+arch darkforest
 x 29
 y 46
 end
-arch tree
+arch grass
 x 29
 y 47
 end
-arch tree
+arch deathtree
+x 29
+y 47
+end
+arch grass
 x 29
 y 48
 end
-arch tree
+arch grass
 x 29
 y 49
 end
-arch tree
+arch darkforest
 x 30
 end
 arch darkforest
 x 30
 y 1
 end
-arch woods
+arch grass
 x 30
 y 2
 end
-arch darkforest
+arch grass
 x 30
 y 3
 end
-arch darkforest
+arch deathtree
+x 30
+y 3
+end
+arch grass
 x 30
 y 4
 end
-arch tree
+arch darkforest
 x 30
 y 5
 end
-arch darkforest
+arch grass
 x 30
 y 6
 end
-arch darkforest
+arch grass
 x 30
 y 7
 end
-arch treed_hills
+arch woods
 x 30
 y 8
 end
-arch darkforest
+arch grass
+x 30
+y 9
+end
+arch deathtree
 x 30
 y 9
 end
@@ -6211,35 +6704,35 @@ arch darkforest
 x 30
 y 12
 end
-arch darkforest
+arch grass
 x 30
 y 13
 end
-arch tree
+arch darkforest
 x 30
 y 14
 end
-arch tree
+arch darkforest
 x 30
 y 15
 end
-arch tree
+arch darkforest
 x 30
 y 16
 end
-arch tree
+arch darkforest
 x 30
 y 17
 end
-arch tree
+arch darkforest
 x 30
 y 18
 end
-arch tree
+arch grass
 x 30
 y 19
 end
-arch darkforest
+arch grass
 x 30
 y 20
 end
@@ -6247,170 +6740,202 @@ arch darkforest
 x 30
 y 21
 end
-arch darkforest
+arch woods
 x 30
 y 22
 end
-arch tree
+arch shallow_sea
 x 30
 y 23
 end
-arch woods_3
+arch grass
 x 30
 y 24
 end
-arch woods_3
+arch deathtree
+x 30
+y 24
+end
+arch grass
 x 30
 y 25
 end
-arch woods_3
+arch deathtree
+x 30
+y 25
+end
+arch grass
 x 30
 y 26
 end
-arch tree
+arch grass
 x 30
 y 27
 end
-arch treed_hills
+arch grass
 x 30
 y 28
 end
-arch tree
+arch woods
 x 30
 y 29
 end
-arch evergreens
+arch woods
 x 30
 y 30
 end
-arch darkforest
+arch grass
 x 30
 y 31
 end
-arch tree
+arch grass
 x 30
 y 32
 end
-arch darkforest
+arch grass
 x 30
 y 33
 end
-arch darkforest
+arch shallow_sea
 x 30
 y 34
 end
-arch darkforest
+arch shallow_sea
 x 30
 y 35
 end
-arch darkforest
+arch shallow_sea
 x 30
 y 36
 end
-arch darkforest
+arch grass
 x 30
 y 37
 end
-arch darkforest
+arch grass
 x 30
 y 38
 end
-arch darkforest
+arch grass
 x 30
 y 39
 end
-arch darkforest
+arch grass
 x 30
 y 40
 end
-arch treed_hills
+arch grass
 x 30
 y 41
 end
-arch darkforest
+arch grass
 x 30
 y 42
 end
-arch woods_3
+arch grass
 x 30
 y 43
 end
-arch tree
+arch deathtree
+x 30
+y 43
+end
+arch darkforest
 x 30
 y 44
 end
-arch woods_2
+arch shallow_sea
 x 30
 y 45
 end
-arch tree
+arch darkforest
 x 30
 y 46
 end
-arch random_plant
-x 30
-y 46
-end
-arch tree
+arch grass
 x 30
 y 47
 end
-arch tree
+arch deathtree
+x 30
+y 47
+end
+arch grass
 x 30
 y 48
 end
-arch tree
+arch deathtree
+x 30
+y 48
+end
+arch grass
 x 30
 y 49
 end
-arch tree
+arch darkforest
 x 31
 end
-arch woods
+arch darkforest
 x 31
 y 1
 end
-arch tree
+arch grass
 x 31
 y 2
 end
-arch tree
+arch grass
 x 31
 y 3
 end
-arch tree
+arch ruins
+name Sorrow
+slaying sorrow_ruin
+hp 17
+sp 10
+x 31
+y 3
+end
+arch grass
 x 31
 y 4
 end
-arch darkforest
+arch deathtree
+x 31
+y 4
+end
+arch grass
 x 31
 y 5
 end
-arch tree
+arch darkforest
 x 31
 y 6
 end
-arch darkforest
+arch grass
 x 31
 y 7
 end
-arch darkforest
+arch grass
 x 31
 y 8
 end
-arch darkforest
+arch grass
 x 31
 y 9
 end
-arch woods_3
+arch deathtree
+x 31
+y 9
+end
+arch darkforest
 x 31
 y 10
 end
-arch tree
+arch grass
 x 31
 y 11
 end
-arch tree
+arch darkforest
 x 31
 y 12
 end
@@ -6418,373 +6943,437 @@ arch darkforest
 x 31
 y 13
 end
-arch tree
+arch darkforest
 x 31
 y 14
 end
-arch tree
+arch darkforest
 x 31
 y 15
 end
-arch tree
+arch darkforest
 x 31
 y 16
 end
-arch tree
+arch grass
 x 31
 y 17
 end
-arch tree
+arch grass
 x 31
 y 18
 end
-arch darkforest
+arch grass
 x 31
 y 19
 end
-arch darkforest
+arch woods
 x 31
 y 20
 end
-arch darkforest
+arch woods
 x 31
 y 21
 end
-arch treed_hills
+arch grass
 x 31
 y 22
 end
-arch tree
+arch deathtree
+x 31
+y 22
+end
+arch shallow_sea
 x 31
 y 23
 end
-arch tree
+arch woods
 x 31
 y 24
 end
-arch tree
+arch grass
 x 31
 y 25
 end
-arch tree
+arch deathtree
+x 31
+y 25
+end
+arch grass
 x 31
 y 26
 end
-arch random_plant
+arch deathtree
 x 31
 y 26
 end
-arch treed_hills
+arch grass
 x 31
 y 27
 end
-arch treed_hills
+arch deathtree
+x 31
+y 27
+end
+arch grass
 x 31
 y 28
 end
-arch tree
+arch deathtree
+x 31
+y 28
+end
+arch woods
 x 31
 y 29
 end
-arch darkforest
+arch woods
 x 31
 y 30
 end
-arch darkforest
+arch grass
 x 31
 y 31
 end
-arch darkforest
+arch grass
 x 31
 y 32
 end
-arch darkforest
+arch grass
 x 31
 y 33
 end
-arch darkforest
+arch grass
 x 31
 y 34
 end
-arch darkforest
+arch shallow_sea
 x 31
 y 35
 end
-arch darkforest
+arch shallow_sea
 x 31
 y 36
 end
-arch darkforest
+arch shallow_sea
 x 31
 y 37
 end
-arch darkforest
+arch grass
 x 31
 y 38
 end
-arch darkforest
+arch grass
 x 31
 y 39
 end
-arch darkforest
+arch grass
 x 31
 y 40
 end
-arch darkforest
+arch grass
 x 31
 y 41
 end
-arch darkforest
+arch grass
 x 31
 y 42
 end
-arch tree
+arch grass
 x 31
 y 43
 end
-arch tree
+arch deathtree
+x 31
+y 43
+end
+arch darkforest
 x 31
 y 44
 end
-arch woods_2
+arch shallow_sea
 x 31
 y 45
 end
-arch tree
+arch darkforest
 x 31
 y 46
 end
-arch tree
+arch grass
 x 31
 y 47
 end
-arch tree
+arch darkforest
 x 31
 y 48
 end
-arch tree
+arch grass
 x 31
 y 49
 end
-arch tree
+arch darkforest
 x 32
 end
-arch tree
+arch darkforest
 x 32
 y 1
 end
-arch tree
+arch grass
 x 32
 y 2
 end
-arch tree
+arch deathtree
+x 32
+y 2
+end
+arch grass
 x 32
 y 3
 end
-arch tree
+arch grass
 x 32
 y 4
 end
-arch darkforest
+arch grass
 x 32
 y 5
 end
-arch woods_3
+arch darkforest
 x 32
 y 6
 end
-arch woods_3
+arch darkforest
 x 32
 y 7
 end
-arch darkforest
+arch grass
 x 32
 y 8
 end
-arch woods_3
+arch darkforest
 x 32
 y 9
 end
-arch woods_3
+arch shallow_sea
 x 32
 y 10
 end
-arch tree
+arch darkforest
 x 32
 y 11
 end
-arch tree
+arch grass
 x 32
 y 12
 end
-arch darkforest
+arch deathtree
+x 32
+y 12
+end
+arch grass
 x 32
 y 13
 end
-arch tree
+arch deathtree
+x 32
+y 13
+end
+arch grass
 x 32
 y 14
 end
-arch tree
+arch deathtree
+x 32
+y 14
+end
+arch grass
 x 32
 y 15
 end
-arch tree
+arch deathtree
+x 32
+y 15
+end
+arch grass
 x 32
 y 16
 end
-arch woods_2
+arch grass
 x 32
 y 17
 end
-arch woods
+arch grass
 x 32
 y 18
 end
-arch darkforest
+arch grass
 x 32
 y 19
 end
-arch darkforest
+arch woods
 x 32
 y 20
 end
-arch darkforest
+arch woods
 x 32
 y 21
 end
-arch tree
+arch grass
 x 32
 y 22
 end
-arch tree
+arch shallow_sea
 x 32
 y 23
 end
-arch tree
+arch shallow_sea
 x 32
 y 24
 end
-arch tree
+arch shallow_sea
 x 32
 y 25
 end
-arch tree
+arch grass
 x 32
 y 26
 end
-arch treed_hills
+arch deathtree
+x 32
+y 26
+end
+arch darkforest
 x 32
 y 27
 end
-arch tree
+arch darkforest
 x 32
 y 28
 end
-arch tree
+arch woods
 x 32
 y 29
 end
-arch darkforest
+arch grass
 x 32
 y 30
 end
-arch tree
+arch grass
 x 32
 y 31
 end
-arch darkforest
+arch grass
 x 32
 y 32
 end
-arch darkforest
+arch grass
 x 32
 y 33
 end
-arch darkforest
+arch grass
 x 32
 y 34
 end
-arch darkforest
+arch grass
 x 32
 y 35
 end
-arch darkforest
+arch shallow_sea
 x 32
 y 36
 end
-arch darkforest
+arch shallow_sea
 x 32
 y 37
 end
-arch darkforest
+arch shallow_sea
 x 32
 y 38
 end
-arch darkforest
+arch shallow_sea
 x 32
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 32
 y 40
 end
-arch darkforest
+arch grass
 x 32
 y 41
 end
-arch darkforest
+arch grass
 x 32
 y 42
 end
-arch tree
+arch grass
 x 32
 y 43
 end
-arch tree
+arch deathtree
+x 32
+y 43
+end
+arch shallow_sea
 x 32
 y 44
 end
-arch woods_2
+arch shallow_sea
 x 32
 y 45
 end
-arch tree
+arch darkforest
 x 32
 y 46
 end
-arch tree
+arch darkforest
 x 32
 y 47
 end
-arch tree
+arch darkforest
 x 32
 y 48
 end
-arch tree
+arch darkforest
 x 32
 y 49
 end
-arch tree
+arch darkforest
 x 33
-end
-arch tree
-x 33
-y 1
-end
-arch evergreens
-x 33
-y 2
-end
-arch evergreens
-x 33
-y 3
 end
 arch darkforest
 x 33
+y 1
+end
+arch grass
+x 33
+y 2
+end
+arch deathtree
+x 33
+y 2
+end
+arch grass
+x 33
+y 3
+end
+arch deathtree
+x 33
+y 3
+end
+arch grass
+x 33
 y 4
 end
-arch tree
+arch deathtree
+x 33
+y 4
+end
+arch grass
+x 33
+y 5
+end
+arch deathtree
 x 33
 y 5
 end
@@ -6792,206 +7381,230 @@ arch darkforest
 x 33
 y 6
 end
-arch darkforest
+arch grass
 x 33
 y 7
 end
-arch darkforest
+arch deathtree
+x 33
+y 7
+end
+arch grass
 x 33
 y 8
 end
-arch woods_3
+arch deathtree
+x 33
+y 8
+end
+arch shallow_sea
 x 33
 y 9
 end
-arch treed_hills
+arch shallow_sea
 x 33
 y 10
 end
-arch tree
+arch darkforest
 x 33
 y 11
 end
-arch evergreens
+arch grass
 x 33
 y 12
 end
-arch darkforest
+arch grass
 x 33
 y 13
 end
-arch tree
+arch grass
 x 33
 y 14
 end
-arch tree
+arch grass
 x 33
 y 15
 end
-arch tree
+arch grass
 x 33
 y 16
 end
-arch woods_2
+arch darkforest
 x 33
 y 17
 end
-arch treed_hills
+arch grass
 x 33
 y 18
 end
-arch darkforest
+arch deathtree
+x 33
+y 18
+end
+arch woods
 x 33
 y 19
 end
-arch darkforest
+arch woods
 x 33
 y 20
 end
-arch woods_2
+arch woods
 x 33
 y 21
 end
-arch woods_2
+arch woods
 x 33
 y 22
 end
-arch woods_2
+arch grass
 x 33
 y 23
 end
-arch tree
+arch grass
 x 33
 y 24
 end
-arch tree
+arch deathtree
+x 33
+y 24
+end
+arch shallow_sea
 x 33
 y 25
 end
-arch treed_hills
+arch darkforest
 x 33
 y 26
 end
-arch darkforest
+arch grass
 x 33
 y 27
 end
-arch tree
+arch deathtree
+x 33
+y 27
+end
+arch woods
 x 33
 y 28
 end
-arch darkforest
+arch woods
 x 33
 y 29
 end
-arch darkforest
+arch grass
 x 33
 y 30
 end
-arch darkforest
+arch grass
 x 33
 y 31
 end
-arch darkforest
+arch grass
 x 33
 y 32
 end
-arch darkforest
+arch grass
 x 33
 y 33
 end
-arch darkforest
+arch grass
 x 33
 y 34
 end
-arch darkforest
+arch grass
 x 33
 y 35
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 36
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 37
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 38
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 40
 end
-arch darkforest
+arch grass
 x 33
 y 41
 end
-arch darkforest
+arch grass
 x 33
 y 42
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 33
 y 44
 end
-arch woods_2
+arch darkforest
 x 33
 y 45
 end
-arch woods_2
+arch darkforest
 x 33
 y 46
 end
-arch woods_2
+arch darkforest
 x 33
 y 47
 end
-arch woods_2
+arch grass
 x 33
 y 48
 end
-arch tree
+arch deathtree
+x 33
+y 48
+end
+arch darkforest
 x 33
 y 49
 end
-arch tree
+arch darkforest
 x 34
 end
-arch tree
+arch darkforest
 x 34
 y 1
 end
-arch evergreens
+arch grass
 x 34
 y 2
 end
-arch darkforest
+arch grass
 x 34
 y 3
 end
-arch darkforest
+arch grass
 x 34
 y 4
 end
-arch treed_hills
+arch darkforest
 x 34
 y 5
 end
-arch darkforest
+arch woods
 x 34
 y 6
 end
-arch treed_hills
+arch woods
 x 34
 y 7
 end
@@ -6999,35 +7612,39 @@ arch darkforest
 x 34
 y 8
 end
-arch tree
+arch shallow_sea
 x 34
 y 9
 end
-arch treed_hills
+arch darkforest
 x 34
 y 10
 end
-arch treed_hills
+arch grass
 x 34
 y 11
 end
-arch darkforest
+arch deathtree
+x 34
+y 11
+end
+arch grass
 x 34
 y 12
 end
-arch darkforest
+arch grass
 x 34
 y 13
 end
-arch evergreens
+arch grass
 x 34
 y 14
 end
-arch tree
+arch grass
 x 34
 y 15
 end
-arch tree
+arch grass
 x 34
 y 16
 end
@@ -7035,39 +7652,43 @@ arch darkforest
 x 34
 y 17
 end
-arch darkforest
+arch grass
 x 34
 y 18
 end
-arch darkforest
+arch woods
 x 34
 y 19
 end
-arch darkforest
+arch grass
 x 34
 y 20
 end
-arch woods_2
+arch grass
 x 34
 y 21
 end
-arch woods_2
+arch woods
 x 34
 y 22
 end
-arch woods_2
+arch grass
 x 34
 y 23
 end
-arch woods_2
+arch darkforest
 x 34
 y 24
 end
-arch tree
+arch shallow_sea
 x 34
 y 25
 end
-arch darkforest
+arch grass
+x 34
+y 26
+end
+arch deathtree
 x 34
 y 26
 end
@@ -7075,84 +7696,83 @@ arch darkforest
 x 34
 y 27
 end
-arch darkforest
+arch woods
 x 34
 y 28
 end
-arch darkforest
+arch grass
 x 34
 y 29
 end
-arch tree
+arch grass
 x 34
 y 30
 end
-arch darkforest
+arch grass
 x 34
 y 31
 end
-arch woods_2
+arch grass
 x 34
 y 32
 end
-arch darkforest
+arch grass
 x 34
 y 33
 end
-arch woods_2
+arch grass
 x 34
 y 34
 end
-arch darkforest
+arch grass
 x 34
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 34
 y 36
 end
-arch woods_2
+arch shallow_sea
 x 34
 y 37
 end
-arch woods_2
+arch shallow_sea
 x 34
 y 38
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 39
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 40
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 41
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 42
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 34
 y 44
 end
-arch woods_2
+arch grass
 x 34
 y 45
 end
-arch dark_elf
-can_see_in_dark 1
+arch deathtree
 x 34
 y 45
 end
-arch woods_2
+arch darkforest
 x 34
 y 46
 end
@@ -7160,7 +7780,7 @@ arch darkforest
 x 34
 y 47
 end
-arch woods
+arch darkforest
 x 34
 y 48
 end
@@ -7168,10 +7788,10 @@ arch darkforest
 x 34
 y 49
 end
-arch tree
+arch grass
 x 35
 end
-arch tree
+arch grass
 x 35
 y 1
 end
@@ -7187,55 +7807,55 @@ arch darkforest
 x 35
 y 4
 end
-arch darkforest
+arch woods
 x 35
 y 5
 end
-arch tree
+arch woods
 x 35
 y 6
 end
-arch tree
+arch woods
 x 35
 y 7
 end
-arch darkforest
+arch shallow_sea
 x 35
 y 8
 end
-arch treed_hills
+arch shallow_sea
 x 35
 y 9
 end
-arch treed_hills
+arch darkforest
 x 35
 y 10
 end
-arch random_plant
-x 35
-y 10
-end
-arch treed_hills
+arch grass
 x 35
 y 11
 end
-arch darkforest
+arch deathtree
+x 35
+y 11
+end
+arch grass
 x 35
 y 12
 end
-arch evergreens
+arch grass
 x 35
 y 13
 end
-arch evergreens
+arch grass
 x 35
 y 14
 end
-arch evergreens
+arch grass
 x 35
 y 15
 end
-arch tree
+arch darkforest
 x 35
 y 16
 end
@@ -7243,39 +7863,43 @@ arch darkforest
 x 35
 y 17
 end
-arch darkforest
+arch grass
 x 35
 y 18
 end
-arch darkforest
+arch grass
 x 35
 y 19
 end
-arch darkforest
+arch grass
 x 35
 y 20
 end
-arch darkforest
+arch grass
 x 35
 y 21
 end
-arch woods_2
+arch grass
 x 35
 y 22
 end
-arch darkforest
+arch grass
 x 35
 y 23
 end
-arch woods_2
+arch darkforest
 x 35
 y 24
 end
-arch woods_2
+arch shallow_sea
 x 35
 y 25
 end
-arch darkforest
+arch grass
+x 35
+y 26
+end
+arch deathtree
 x 35
 y 26
 end
@@ -7287,88 +7911,91 @@ arch darkforest
 x 35
 y 28
 end
-arch darkforest
+arch grass
 x 35
 y 29
 end
-arch tree
+arch grass
 x 35
 y 30
 end
-arch darkforest
+arch grass
 x 35
 y 31
 end
-arch tree
+arch grass
 x 35
 y 32
 end
-arch darkforest
+arch grass
 x 35
 y 33
 end
-arch woods_2
+arch deathtree
+x 35
+y 33
+end
+arch grass
 x 35
 y 34
 end
-arch darkforest
+arch grass
 x 35
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 35
 y 36
 end
-arch tree
+arch shallow_sea
 x 35
 y 37
 end
-arch woods_2
+arch shallow_sea
 x 35
 y 38
 end
-arch woods_2
+arch shallow_sea
 x 35
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 35
 y 40
 end
-arch darkforest
+arch shallow_sea
 x 35
 y 41
 end
-arch darkforest
+arch woods
 x 35
 y 42
 end
-arch darkforest
+arch shallow_sea
 x 35
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 35
 y 44
 end
-arch woods_2
+arch darkforest
 x 35
 y 45
-end
-arch dark_elf
-can_see_in_dark 1
-x 35
-y 45
-end
-arch woods_2
-x 35
-y 46
 end
 arch darkforest
 x 35
+y 46
+end
+arch grass
+x 35
 y 47
 end
-arch woods
+arch deathtree
+x 35
+y 47
+end
+arch grass
 x 35
 y 48
 end
@@ -7376,66 +8003,78 @@ arch darkforest
 x 35
 y 49
 end
-arch tree
+arch grass
 x 36
 end
-arch darkforest
+arch grass
 x 36
 y 1
 end
-arch darkforest
+arch grass
 x 36
 y 2
 end
-arch darkforest
+arch grass
 x 36
 y 3
 end
-arch darkforest
+arch grass
 x 36
 y 4
 end
-arch darkforest
+arch woods
 x 36
 y 5
 end
-arch evergreens
+arch grass
 x 36
 y 6
 end
-arch evergreens
+arch darkforest
 x 36
 y 7
 end
-arch darkforest
+arch shallow_sea
 x 36
 y 8
 end
-arch woods
+arch darkforest
 x 36
 y 9
 end
-arch woods
+arch darkforest
 x 36
 y 10
 end
-arch treed_hills
+arch grass
 x 36
 y 11
 end
-arch darkforest
+arch deathtree
+x 36
+y 11
+end
+arch grass
 x 36
 y 12
 end
-arch treed_hills
+arch deathtree
+x 36
+y 12
+end
+arch grass
 x 36
 y 13
 end
-arch tree
+arch deathtree
+x 36
+y 13
+end
+arch grass
 x 36
 y 14
 end
-arch evergreens
+arch grass
 x 36
 y 15
 end
@@ -7443,27 +8082,35 @@ arch darkforest
 x 36
 y 16
 end
-arch woods_2
+arch grass
 x 36
 y 17
 end
-arch darkforest
+arch deathtree
+x 36
+y 17
+end
+arch grass
 x 36
 y 18
 end
-arch darkforest
+arch grass
 x 36
 y 19
 end
-arch darkforest
+arch grass
 x 36
 y 20
 end
-arch darkforest
+arch grass
 x 36
 y 21
 end
-arch darkforest
+arch deathtree
+x 36
+y 21
+end
+arch grass
 x 36
 y 22
 end
@@ -7471,11 +8118,11 @@ arch darkforest
 x 36
 y 23
 end
-arch woods_2
+arch shallow_sea
 x 36
 y 24
 end
-arch tree
+arch shallow_sea
 x 36
 y 25
 end
@@ -7483,15 +8130,15 @@ arch darkforest
 x 36
 y 26
 end
-arch tree
+arch darkforest
 x 36
 y 27
 end
-arch darkforest
+arch grass
 x 36
 y 28
 end
-arch darkforest
+arch grass
 x 36
 y 29
 end
@@ -7499,63 +8146,71 @@ arch darkforest
 x 36
 y 30
 end
-arch tree
+arch grass
 x 36
 y 31
 end
-arch tree
+arch grass
 x 36
 y 32
 end
-arch darkforest
+arch deathtree
+x 36
+y 32
+end
+arch grass
 x 36
 y 33
 end
-arch woods_2
+arch deathtree
+x 36
+y 33
+end
+arch grass
 x 36
 y 34
 end
-arch tree
+arch grass
 x 36
 y 35
 end
-arch tree
+arch shallow_sea
 x 36
 y 36
 end
-arch tree
+arch shallow_sea
 x 36
 y 37
 end
-arch woods_2
+arch shallow_sea
 x 36
 y 38
 end
-arch woods_2
+arch shallow_sea
 x 36
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 36
 y 40
 end
-arch tree
+arch shallow_sea
 x 36
 y 41
 end
-arch darkforest
+arch woods
 x 36
 y 42
 end
-arch darkforest
+arch grass
 x 36
 y 43
 end
-arch darkforest
+arch grass
 x 36
 y 44
 end
-arch woods_2
+arch grass
 x 36
 y 45
 end
@@ -7563,11 +8218,19 @@ arch darkforest
 x 36
 y 46
 end
-arch darkforest
+arch grass
 x 36
 y 47
 end
-arch woods
+arch deathtree
+x 36
+y 47
+end
+arch grass
+x 36
+y 48
+end
+arch deathtree
 x 36
 y 48
 end
@@ -7575,38 +8238,38 @@ arch darkforest
 x 36
 y 49
 end
-arch tree
+arch grass
 x 37
 end
-arch darkforest
+arch grass
 x 37
 y 1
 end
-arch evergreens
+arch grass
 x 37
 y 2
 end
-arch darkforest
+arch grass
 x 37
 y 3
 end
-arch brush
+arch woods
 x 37
 y 4
 end
-arch darkforest
+arch woods
 x 37
 y 5
 end
-arch brush
+arch darkforest
 x 37
 y 6
 end
-arch tree
+arch shallow_sea
 x 37
 y 7
 end
-arch tree
+arch shallow_sea
 x 37
 y 8
 end
@@ -7614,27 +8277,31 @@ arch darkforest
 x 37
 y 9
 end
-arch woods
+arch grass
 x 37
 y 10
 end
-arch darkforest
+arch deathtree
+x 37
+y 10
+end
+arch grass
 x 37
 y 11
 end
-arch darkforest
+arch grass
 x 37
 y 12
 end
-arch treed_hills
+arch grass
 x 37
 y 13
 end
-arch treed_hills
+arch grass
 x 37
 y 14
 end
-arch evergreens
+arch darkforest
 x 37
 y 15
 end
@@ -7642,7 +8309,11 @@ arch darkforest
 x 37
 y 16
 end
-arch darkforest
+arch grass
+x 37
+y 17
+end
+arch deathtree
 x 37
 y 17
 end
@@ -7654,33 +8325,23 @@ arch grass
 x 37
 y 19
 end
+arch deathtree
+x 37
+y 19
+end
 arch grass
 x 37
 y 20
 end
-arch elf_lass
-level 12
-exp 90
-dam 9
-hp 300
-maxhp 300
-sp 60
-maxsp 60
-can_see_in_dark 1
+arch deathtree
 x 37
 y 20
-arch spell_invisible
 end
-arch spell_summon_pet_monster
-end
-arch spell_wall_of_thorns
-end
-end
-arch treed_hills
+arch grass
 x 37
 y 21
 end
-arch tree
+arch darkforest
 x 37
 y 22
 end
@@ -7688,23 +8349,23 @@ arch darkforest
 x 37
 y 23
 end
-arch darkforest
+arch shallow_sea
 x 37
 y 24
 end
-arch darkforest
+arch shallow_sea
 x 37
 y 25
 end
-arch darkforest
+arch shallow_sea
 x 37
 y 26
 end
-arch woods_2
+arch grass
 x 37
 y 27
 end
-arch darkforest
+arch grass
 x 37
 y 28
 end
@@ -7716,63 +8377,71 @@ arch darkforest
 x 37
 y 30
 end
-arch tree
+arch darkforest
 x 37
 y 31
 end
-arch tree
+arch grass
 x 37
 y 32
 end
-arch darkforest
+arch deathtree
 x 37
-y 33
-end
-arch tree
-x 37
-y 34
-end
-arch tree
-x 37
-y 35
-end
-arch tree
-x 37
-y 36
-end
-arch tree
-x 37
-y 37
+y 32
 end
 arch grass
 x 37
+y 33
+end
+arch deathtree
+x 37
+y 33
+end
+arch grass
+x 37
+y 34
+end
+arch grass
+x 37
+y 35
+end
+arch grass
+x 37
+y 36
+end
+arch shallow_sea
+x 37
+y 37
+end
+arch shallow_sea
+x 37
 y 38
 end
-arch woods_2
+arch shallow_sea
 x 37
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 37
 y 40
 end
-arch tree
+arch woods
 x 37
 y 41
 end
-arch darkforest
+arch woods
 x 37
 y 42
 end
-arch darkforest
+arch grass
 x 37
 y 43
 end
-arch darkforest
+arch grass
 x 37
 y 44
 end
-arch woods_2
+arch grass
 x 37
 y 45
 end
@@ -7784,7 +8453,7 @@ arch darkforest
 x 37
 y 47
 end
-arch woods
+arch darkforest
 x 37
 y 48
 end
@@ -7792,22 +8461,22 @@ arch darkforest
 x 37
 y 49
 end
-arch tree
+arch grass
 x 38
 end
-arch darkforest
+arch grass
 x 38
 y 1
 end
-arch tree
+arch grass
 x 38
 y 2
 end
-arch darkforest
+arch woods
 x 38
 y 3
 end
-arch darkforest
+arch woods
 x 38
 y 4
 end
@@ -7819,11 +8488,11 @@ arch darkforest
 x 38
 y 6
 end
-arch tree
+arch shallow_sea
 x 38
 y 7
 end
-arch tree
+arch darkforest
 x 38
 y 8
 end
@@ -7831,43 +8500,47 @@ arch darkforest
 x 38
 y 9
 end
-arch woods
+arch darkforest
 x 38
 y 10
 end
-arch darkforest
+arch grass
 x 38
 y 11
 end
-arch woods
+arch grass
 x 38
 y 12
 end
-arch woods
+arch grass
 x 38
 y 13
 end
-arch woods
+arch darkforest
 x 38
 y 14
 end
-arch evergreens
+arch darkforest
 x 38
 y 15
 end
-arch darkforest
+arch grass
 x 38
 y 16
 end
-arch darkforest
+arch deathtree
+x 38
+y 16
+end
+arch grass
 x 38
 y 17
 end
-arch brush
+arch grass
 x 38
 y 18
 end
-arch brush
+arch grass
 x 38
 y 19
 end
@@ -7875,19 +8548,19 @@ arch grass
 x 38
 y 20
 end
-arch tree
+arch darkforest
 x 38
 y 21
 end
-arch treed_hills
+arch darkforest
 x 38
 y 22
 end
-arch darkforest
+arch shallow_sea
 x 38
 y 23
 end
-arch darkforest
+arch shallow_sea
 x 38
 y 24
 end
@@ -7895,15 +8568,15 @@ arch darkforest
 x 38
 y 25
 end
-arch darkforest
+arch shallow_sea
 x 38
 y 26
 end
-arch woods_2
+arch shallow_sea
 x 38
 y 27
 end
-arch tree
+arch darkforest
 x 38
 y 28
 end
@@ -7911,75 +8584,75 @@ arch darkforest
 x 38
 y 29
 end
-arch darkforest
+arch grass
 x 38
 y 30
 end
-arch evergreens
+arch darkforest
 x 38
 y 31
 end
-arch tree
+arch grass
 x 38
 y 32
 end
-arch woods_2
+arch deathtree
+x 38
+y 32
+end
+arch grass
 x 38
 y 33
 end
-arch woods_2
+arch grass
 x 38
 y 34
 end
-arch tree
+arch grass
 x 38
 y 35
 end
-arch random_plant
-x 38
-y 35
-end
-arch tree
+arch grass
 x 38
 y 36
 end
-arch grass
+arch shallow_sea
 x 38
 y 37
 end
-arch grass
+arch shallow_sea
 x 38
 y 38
 end
-arch grass
+arch shallow_sea
 x 38
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 38
 y 40
 end
-arch woods_2
+arch woods
 x 38
 y 41
 end
-arch darkforest
+arch woods
 x 38
 y 42
 end
-arch darkforest
+arch grass
 x 38
 y 43
 end
-arch darkforest
+arch grass
 x 38
 y 44
 end
-arch woods_2
+arch grass
 x 38
 y 45
 end
-arch darkforest
+arch woods
 x 38
 y 46
 end
@@ -7991,22 +8664,26 @@ arch darkforest
 x 38
 y 48
 end
-arch woods
+arch grass
 x 38
 y 49
 end
-arch tree
+arch deathtree
+x 38
+y 49
+end
+arch grass
 x 39
 end
-arch darkforest
+arch woods
 x 39
 y 1
 end
-arch darkforest
+arch woods
 x 39
 y 2
 end
-arch darkforest
+arch woods
 x 39
 y 3
 end
@@ -8018,15 +8695,15 @@ arch darkforest
 x 39
 y 5
 end
-arch darkforest
+arch shallow_sea
 x 39
 y 6
 end
-arch tree
+arch shallow_sea
 x 39
 y 7
 end
-arch tree
+arch shallow_sea
 x 39
 y 8
 end
@@ -8038,23 +8715,23 @@ arch darkforest
 x 39
 y 10
 end
-arch darkforest
+arch grass
 x 39
 y 11
 end
-arch woods
+arch grass
 x 39
 y 12
 end
-arch woods
+arch darkforest
 x 39
 y 13
 end
-arch woods
+arch darkforest
 x 39
 y 14
 end
-arch evergreens
+arch darkforest
 x 39
 y 15
 end
@@ -8066,142 +8743,127 @@ arch grass
 x 39
 y 17
 end
-arch woods_2
+arch darkforest
 x 39
 y 18
 end
-arch grass
+arch woods
 x 39
 y 19
 end
-arch grass
+arch woods
 x 39
 y 20
 end
-arch tree
+arch darkforest
 x 39
 y 21
 end
-arch treed_hills
+arch shallow_sea
 x 39
 y 22
 end
-arch darkforest
+arch shallow_sea
 x 39
 y 23
 end
-arch darkforest
+arch grass
 x 39
 y 24
 end
-arch tree
+arch grass
 x 39
 y 25
 end
-arch woods_2
+arch darkforest
 x 39
 y 26
 end
-arch evergreens
+arch shallow_sea
 x 39
 y 27
 end
-arch evergreens
+arch grass
 x 39
 y 28
 end
-arch darkforest
+arch grass
 x 39
 y 29
 end
-arch tree
+arch grass
 x 39
 y 30
 end
-arch evergreens
+arch deathtree
+x 39
+y 30
+end
+arch darkforest
 x 39
 y 31
 end
-arch woods_2
+arch grass
 x 39
 y 32
 end
-arch woods_2
+arch deathtree
+x 39
+y 32
+end
+arch grass
 x 39
 y 33
 end
-arch tree
+arch grass
 x 39
 y 34
 end
-arch tree
+arch grass
 x 39
 y 35
 end
-arch tree
+arch woods
 x 39
 y 36
 end
-arch grass
+arch shallow_sea
 x 39
 y 37
 end
-arch grass
+arch shallow_sea
 x 39
 y 38
 end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
-x 39
-y 38
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
-end
-arch grass
+arch shallow_sea
 x 39
 y 39
 end
-arch woods_2
+arch woods
 x 39
 y 40
 end
-arch woods_2
+arch woods
 x 39
 y 41
 end
-arch darkforest
+arch grass
 x 39
 y 42
 end
-arch darkforest
+arch grass
 x 39
 y 43
 end
-arch darkforest
+arch grass
 x 39
 y 44
 end
-arch darkforest
+arch grass
 x 39
 y 45
 end
-arch darkforest
+arch woods
 x 39
 y 46
 end
@@ -8213,22 +8875,26 @@ arch darkforest
 x 39
 y 48
 end
-arch woods
+arch grass
 x 39
 y 49
 end
-arch evergreens
+arch deathtree
+x 39
+y 49
+end
+arch woods
 x 40
 end
-arch darkforest
+arch woods
 x 40
 y 1
 end
-arch darkforest
+arch grass
 x 40
 y 2
 end
-arch tree
+arch darkforest
 x 40
 y 3
 end
@@ -8236,11 +8902,11 @@ arch darkforest
 x 40
 y 4
 end
-arch darkforest
+arch shallow_sea
 x 40
 y 5
 end
-arch darkforest
+arch shallow_sea
 x 40
 y 6
 end
@@ -8248,15 +8914,15 @@ arch darkforest
 x 40
 y 7
 end
-arch tree
+arch shallow_sea
 x 40
 y 8
 end
-arch darkforest
+arch shallow_sea
 x 40
 y 9
 end
-arch darkforest
+arch grass
 x 40
 y 10
 end
@@ -8264,79 +8930,87 @@ arch darkforest
 x 40
 y 11
 end
-arch woods
+arch darkforest
 x 40
 y 12
 end
-arch woods
+arch darkforest
 x 40
 y 13
 end
-arch evergreens
+arch darkforest
 x 40
 y 14
 end
-arch evergreens
+arch grass
 x 40
 y 15
 end
-arch woods_2
+arch deathtree
+x 40
+y 15
+end
+arch grass
 x 40
 y 16
 end
-arch tree
+arch darkforest
 x 40
 y 17
 end
-arch woods_2
+arch woods
 x 40
 y 18
 end
-arch tree
+arch woods
 x 40
 y 19
 end
-arch tree
+arch woods
 x 40
 y 20
 end
-arch tree
+arch woods
 x 40
 y 21
 end
-arch tree
+arch shallow_sea
 x 40
 y 22
 end
-arch woods_2
+arch shallow_sea
 x 40
 y 23
 end
-arch treed_hills
+arch grass
 x 40
 y 24
 end
-arch treed_hills
+arch deathtree
+x 40
+y 24
+end
+arch grass
 x 40
 y 25
 end
-arch woods_2
+arch darkforest
 x 40
 y 26
 end
-arch tree
+arch shallow_sea
 x 40
 y 27
 end
-arch woods_2
+arch shallow_sea
 x 40
 y 28
 end
-arch woods_2
+arch grass
 x 40
 y 29
 end
-arch tree
+arch darkforest
 x 40
 y 30
 end
@@ -8344,63 +9018,67 @@ arch darkforest
 x 40
 y 31
 end
-arch tree
+arch grass
 x 40
 y 32
 end
-arch evergreens
+arch grass
 x 40
 y 33
 end
-arch evergreens
+arch grass
 x 40
 y 34
 end
-arch tree
+arch woods
 x 40
 y 35
 end
-arch tree
+arch woods
 x 40
 y 36
 end
-arch tree
+arch shallow_sea
 x 40
 y 37
 end
-arch woods_2
+arch shallow_sea
 x 40
 y 38
 end
-arch woods_2
+arch shallow_sea
 x 40
 y 39
 end
-arch tree
+arch woods
 x 40
 y 40
 end
-arch darkforest
+arch grass
 x 40
 y 41
 end
-arch darkforest
+arch grass
 x 40
 y 42
 end
-arch darkforest
+arch deathtree
+x 40
+y 42
+end
+arch grass
 x 40
 y 43
 end
-arch darkforest
+arch grass
 x 40
 y 44
 end
-arch darkforest
+arch grass
 x 40
 y 45
 end
-arch darkforest
+arch woods
 x 40
 y 46
 end
@@ -8416,14 +9094,14 @@ arch darkforest
 x 40
 y 49
 end
-arch evergreens
+arch grass
 x 41
 end
 arch darkforest
 x 41
 y 1
 end
-arch tree
+arch darkforest
 x 41
 y 2
 end
@@ -8431,15 +9109,15 @@ arch darkforest
 x 41
 y 3
 end
-arch darkforest
+arch shallow_sea
 x 41
 y 4
 end
-arch darkforest
+arch shallow_sea
 x 41
 y 5
 end
-arch tree
+arch darkforest
 x 41
 y 6
 end
@@ -8451,7 +9129,7 @@ arch darkforest
 x 41
 y 8
 end
-arch darkforest
+arch shallow_sea
 x 41
 y 9
 end
@@ -8459,147 +9137,155 @@ arch darkforest
 x 41
 y 10
 end
-arch treed_hills
+arch darkforest
 x 41
 y 11
 end
-arch woods
+arch darkforest
 x 41
 y 12
 end
-arch tree
+arch darkforest
 x 41
 y 13
 end
-arch evergreens
+arch darkforest
 x 41
 y 14
 end
-arch evergreens
+arch darkforest
 x 41
 y 15
 end
-arch woods_2
+arch darkforest
 x 41
 y 16
 end
-arch tree
+arch woods
 x 41
 y 17
 end
-arch woods_2
+arch woods
 x 41
 y 18
 end
-arch tree
+arch woods
 x 41
 y 19
 end
-arch tree
+arch darkforest
 x 41
 y 20
 end
-arch woods_2
+arch woods
 x 41
 y 21
 end
-arch woods_2
+arch woods
 x 41
 y 22
 end
-arch woods_2
+arch darkforest
 x 41
 y 23
 end
-arch tree
+arch grass
 x 41
 y 24
 end
-arch tree
+arch deathtree
+x 41
+y 24
+end
+arch woods
 x 41
 y 25
 end
-arch woods_2
+arch woods
 x 41
 y 26
 end
-arch treed_hills
+arch shallow_sea
 x 41
 y 27
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 28
 end
-arch woods_2
+arch darkforest
 x 41
 y 29
 end
-arch woods_2
+arch grass
 x 41
 y 30
 end
-arch tree
+arch darkforest
 x 41
 y 31
 end
-arch darkforest
+arch grass
 x 41
 y 32
 end
-arch tree
+arch grass
 x 41
 y 33
 end
-arch evergreens
+arch woods
 x 41
 y 34
 end
-arch evergreens
+arch woods
 x 41
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 36
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 37
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 38
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 41
 y 40
 end
-arch darkforest
+arch grass
 x 41
 y 41
 end
-arch darkforest
+arch grass
 x 41
 y 42
 end
-arch darkforest
+arch deathtree
+x 41
+y 42
+end
+arch grass
 x 41
 y 43
 end
-arch darkforest
+arch grass
 x 41
 y 44
 end
-arch darkforest
+arch woods
 x 41
 y 45
 end
-arch darkforest
+arch woods
 x 41
 y 46
 end
@@ -8607,7 +9293,11 @@ arch darkforest
 x 41
 y 47
 end
-arch darkforest
+arch grass
+x 41
+y 48
+end
+arch deathtree
 x 41
 y 48
 end
@@ -8615,10 +9305,10 @@ arch darkforest
 x 41
 y 49
 end
-arch tree
+arch grass
 x 42
 end
-arch tree
+arch grass
 x 42
 y 1
 end
@@ -8626,15 +9316,19 @@ arch darkforest
 x 42
 y 2
 end
-arch darkforest
+arch grass
 x 42
 y 3
 end
-arch tree
+arch deathtree
+x 42
+y 3
+end
+arch shallow_sea
 x 42
 y 4
 end
-arch tree
+arch darkforest
 x 42
 y 5
 end
@@ -8642,7 +9336,7 @@ arch darkforest
 x 42
 y 6
 end
-arch darkforest
+arch grass
 x 42
 y 7
 end
@@ -8650,155 +9344,163 @@ arch darkforest
 x 42
 y 8
 end
-arch treed_hills
+arch shallow_sea
 x 42
 y 9
 end
-arch treed_hills
+arch darkforest
 x 42
 y 10
 end
-arch woods_2
+arch darkforest
 x 42
 y 11
 end
-arch woods
+arch grass
 x 42
 y 12
 end
-arch tree
+arch grass
 x 42
 y 13
 end
-arch tree
+arch deathtree
+x 42
+y 13
+end
+arch darkforest
 x 42
 y 14
 end
-arch tree
+arch darkforest
 x 42
 y 15
 end
-arch woods_2
+arch darkforest
 x 42
 y 16
 end
-arch evergreens
+arch woods
 x 42
 y 17
 end
-arch woods_2
+arch woods
 x 42
 y 18
 end
-arch woods_2
+arch grass
 x 42
 y 19
 end
-arch woods_2
+arch grass
 x 42
 y 20
 end
-arch woods_2
+arch grass
 x 42
 y 21
 end
-arch woods_2
+arch darkforest
 x 42
 y 22
 end
-arch woods_2
+arch darkforest
 x 42
 y 23
 end
-arch tree
+arch darkforest
 x 42
 y 24
 end
-arch tree
+arch woods
 x 42
 y 25
 end
-arch woods_2
+arch woods
 x 42
 y 26
 end
-arch tree
+arch woods
 x 42
 y 27
 end
-arch woods_2
+arch shallow_sea
 x 42
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 42
 y 29
 end
-arch woods_2
+arch darkforest
 x 42
 y 30
 end
-arch woods_2
+arch darkforest
 x 42
 y 31
 end
-arch darkforest
+arch grass
 x 42
 y 32
 end
-arch tree
+arch grass
 x 42
 y 33
 end
-arch tree
+arch woods
 x 42
 y 34
 end
-arch evergreens
+arch shallow_sea
 x 42
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 42
 y 36
 end
-arch woods_2
+arch shallow_sea
 x 42
 y 37
 end
-arch woods_2
+arch grass
 x 42
 y 38
 end
-arch tree
+arch shallow_sea
 x 42
 y 39
 end
-arch woods_2
+arch shallow_sea
 x 42
 y 40
 end
-arch darkforest
+arch shallow_sea
 x 42
 y 41
 end
-arch darkforest
+arch grass
 x 42
 y 42
 end
-arch darkforest
+arch grass
 x 42
 y 43
 end
-arch darkforest
+arch deathtree
+x 42
+y 43
+end
+arch woods
 x 42
 y 44
 end
-arch darkforest
+arch woods
 x 42
 y 45
 end
-arch darkforest
+arch woods
 x 42
 y 46
 end
@@ -8814,10 +9516,10 @@ arch darkforest
 x 42
 y 49
 end
-arch tree
+arch grass
 x 43
 end
-arch tree
+arch grass
 x 43
 y 1
 end
@@ -8829,39 +9531,47 @@ arch darkforest
 x 43
 y 3
 end
-arch darkforest
+arch shallow_sea
 x 43
 y 4
 end
-arch tree
+arch darkforest
 x 43
 y 5
 end
-arch darkforest
+arch grass
 x 43
 y 6
 end
-arch darkforest
+arch deathtree
+x 43
+y 6
+end
+arch grass
 x 43
 y 7
 end
-arch tree
+arch grass
 x 43
 y 8
 end
-arch treed_hills
+arch shallow_sea
 x 43
 y 9
 end
-arch tree
+arch darkforest
 x 43
 y 10
 end
-arch woods_2
+arch grass
 x 43
 y 11
 end
-arch treed_hills
+arch deathtree
+x 43
+y 11
+end
+arch darkforest
 x 43
 y 12
 end
@@ -8869,7 +9579,7 @@ arch grass
 x 43
 y 13
 end
-arch drake
+arch deathtree
 x 43
 y 13
 end
@@ -8877,139 +9587,155 @@ arch grass
 x 43
 y 14
 end
-arch brush
+arch deathtree
+x 43
+y 14
+end
+arch darkforest
 x 43
 y 15
 end
-arch woods_2
+arch darkforest
 x 43
 y 16
 end
-arch woods_2
+arch woods
 x 43
 y 17
 end
-arch woods_2
+arch grass
 x 43
 y 18
 end
-arch evergreens
+arch grass
 x 43
 y 19
 end
-arch evergreens
+arch grass
 x 43
 y 20
 end
-arch woods_2
+arch grass
 x 43
 y 21
 end
-arch woods_2
+arch grass
 x 43
 y 22
 end
-arch evergreens
+arch woods
 x 43
 y 23
 end
-arch evergreens
+arch woods
 x 43
 y 24
 end
-arch tree
+arch woods
 x 43
 y 25
 end
-arch woods_2
+arch woods
 x 43
 y 26
 end
-arch tree
+arch woods
 x 43
 y 27
 end
-arch woods_2
+arch darkforest
 x 43
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 43
 y 29
 end
-arch woods_2
+arch grass
 x 43
 y 30
 end
-arch woods_2
+arch deathtree
+x 43
+y 30
+end
+arch grass
 x 43
 y 31
 end
-arch darkforest
+arch deathtree
+x 43
+y 31
+end
+arch grass
 x 43
 y 32
 end
-arch tree
+arch grass
 x 43
 y 33
 end
-arch tree
+arch grass
 x 43
 y 34
 end
-arch woods_2
+arch shallow_sea
 x 43
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 43
 y 36
 end
-arch woods_2
+arch grass
 x 43
 y 37
 end
-arch tree
+arch grass
 x 43
 y 38
 end
-arch woods_2
+arch deathtree
+x 43
+y 38
+end
+arch grass
 x 43
 y 39
 end
-arch tree
+arch shallow_sea
 x 43
 y 40
 end
-arch darkforest
+arch shallow_sea
 x 43
 y 41
 end
-arch darkforest
+arch shallow_sea
 x 43
 y 42
 end
-arch darkforest
+arch woods
 x 43
 y 43
 end
-arch darkforest
+arch woods
 x 43
 y 44
 end
-arch darkforest
+arch grass
 x 43
 y 45
 end
-arch woods_2
+arch woods
 x 43
 y 46
 end
-arch darkforest
+arch grass
 x 43
 y 47
 end
-arch darkforest
+arch woods
 x 43
 y 48
 end
@@ -9017,45 +9743,22 @@ arch darkforest
 x 43
 y 49
 end
-arch tree
+arch grass
 x 44
 end
-arch tree
-x 44
-y 1
-end
-arch pixie
-name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
-hp 80
-maxhp 80
-ac 3
-Con 1
-sp 20
-maxsp 20
-can_use_ring 1
-can_use_rod 1
+arch darkforest
 x 44
 y 1
-arch abil_poison_cloud
-end
-arch spell_summon_fog
-end
 end
 arch darkforest
 x 44
 y 2
 end
-arch tree
+arch shallow_sea
 x 44
 y 3
 end
-arch treed_hills
+arch shallow_sea
 x 44
 y 4
 end
@@ -9063,175 +9766,211 @@ arch darkforest
 x 44
 y 5
 end
-arch tree
+arch grass
 x 44
 y 6
 end
-arch darkforest
+arch deathtree
+x 44
+y 6
+end
+arch grass
 x 44
 y 7
 end
-arch darkforest
+arch deathtree
+x 44
+y 7
+end
+arch grass
 x 44
 y 8
 end
-arch tree
+arch deathtree
+x 44
+y 8
+end
+arch shallow_sea
 x 44
 y 9
 end
-arch treed_hills
+arch darkforest
 x 44
 y 10
 end
-arch woods_2
+arch grass
 x 44
 y 11
 end
-arch woods_2
+arch deathtree
+x 44
+y 11
+end
+arch darkforest
 x 44
 y 12
 end
-arch woods_2
+arch grass
 x 44
 y 13
 end
-arch woods_2
+arch deathtree
+x 44
+y 13
+end
+arch grass
 x 44
 y 14
 end
-arch woods_2
+arch deathtree
+x 44
+y 14
+end
+arch darkforest
 x 44
 y 15
 end
-arch random_plant
-x 44
-y 15
-end
-arch woods_2
+arch darkforest
 x 44
 y 16
 end
-arch evergreens
+arch grass
 x 44
 y 17
 end
-arch evergreens
+arch woods
 x 44
 y 18
 end
-arch evergreens
+arch grass
 x 44
 y 19
 end
-arch evergreens
+arch grass
 x 44
 y 20
 end
-arch evergreens
+arch grass
 x 44
 y 21
 end
-arch evergreens
+arch grass
 x 44
 y 22
 end
-arch evergreens
+arch grass
 x 44
 y 23
 end
-arch woods_2
+arch grass
 x 44
 y 24
 end
-arch tree
+arch grass
 x 44
 y 25
 end
-arch woods_2
+arch grass
 x 44
 y 26
 end
-arch woods_2
+arch deathtree
+x 44
+y 26
+end
+arch woods
 x 44
 y 27
 end
-arch woods_2
+arch darkforest
 x 44
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 44
 y 29
 end
-arch woods_2
+arch grass
 x 44
 y 30
 end
-arch woods_2
+arch deathtree
+x 44
+y 30
+end
+arch deathtree
+x 44
+y 30
+end
+arch grass
 x 44
 y 31
 end
-arch woods
+arch grass
 x 44
 y 32
 end
-arch woods
+arch grass
 x 44
 y 33
 end
-arch tree
+arch shallow_sea
 x 44
 y 34
 end
-arch tree
+arch shallow_sea
 x 44
 y 35
 end
-arch woods_2
+arch grass
 x 44
 y 36
 end
-arch tree
+arch grass
 x 44
 y 37
 end
-arch tree
+arch deathtree
+x 44
+y 37
+end
+arch grass
 x 44
 y 38
 end
-arch woods_2
+arch grass
 x 44
 y 39
 end
-arch woods_2
+arch grass
 x 44
 y 40
 end
-arch darkforest
+arch grass
 x 44
 y 41
 end
-arch darkforest
+arch shallow_sea
 x 44
 y 42
 end
-arch darkforest
+arch shallow_sea
 x 44
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 44
 y 44
 end
-arch darkforest
+arch grass
 x 44
 y 45
 end
-arch woods_2
+arch grass
 x 44
 y 46
 end
-arch darkforest
+arch grass
 x 44
 y 47
 end
@@ -9243,94 +9982,106 @@ arch darkforest
 x 44
 y 49
 end
-arch tree
+arch grass
 x 45
 end
-arch tree
+arch darkforest
 x 45
 y 1
 end
-arch darkforest
+arch grass
 x 45
 y 2
 end
-arch tree
+arch deathtree
+x 45
+y 2
+end
+arch shallow_sea
 x 45
 y 3
 end
-arch tree
+arch darkforest
 x 45
 y 4
 end
-arch darkforest
+arch grass
 x 45
 y 5
 end
-arch darkforest
+arch deathtree
+x 45
+y 5
+end
+arch grass
 x 45
 y 6
 end
-arch treed_hills
+arch grass
 x 45
 y 7
 end
-arch treed_hills
+arch deathtree
+x 45
+y 7
+end
+arch grass
 x 45
 y 8
 end
-arch woods_2
+arch darkforest
 x 45
 y 9
 end
-arch woods_2
+arch darkforest
 x 45
 y 10
 end
-arch random_plant
-x 45
-y 10
-end
-arch woods_2
+arch darkforest
 x 45
 y 11
 end
-arch tree
+arch darkforest
 x 45
 y 12
 end
-arch brush
+arch grass
 x 45
 y 13
 end
-arch brush
+arch grass
 x 45
 y 14
 end
-arch brush
+arch deathtree
+x 45
+y 14
+end
+arch grass
 x 45
 y 15
 end
-arch tree
+arch darkforest
 x 45
 y 16
 end
-arch evergreens
+arch woods
 x 45
 y 17
 end
-arch evergreens
+arch woods
 x 45
 y 18
 end
-arch evergreens
+arch grass
 x 45
 y 19
 end
-arch evergreens
+arch grass
 x 45
 y 20
 end
-arch evergreens
+arch grass
 x 45
 y 21
 end
@@ -9338,59 +10089,72 @@ arch grass
 x 45
 y 22
 end
-arch woods_2
+arch grass
 x 45
 y 23
 end
-arch woods_2
+arch woods
 x 45
 y 24
 end
-arch woods_2
+arch woods
 x 45
 y 25
 end
-arch woods_2
+arch darkforest
 x 45
 y 26
 end
-arch woods_2
+arch woods
 x 45
 y 27
 end
-arch woods_2
+arch grass
 x 45
 y 28
 end
-arch woods_2
+arch s_bridge2a
+x 45
+y 28
+end
+arch shallow_sea
+no_pass 0
 x 45
 y 29
 end
-arch woods_2
+arch s_bridge2
+x 45
+y 29
+end
+arch grass
 x 45
 y 30
 end
-arch woods
+arch s_bridge2b
+x 45
+y 30
+end
+arch grass
 x 45
 y 31
 end
-arch woods
+arch grass
 x 45
 y 32
 end
-arch woods
+arch shallow_sea
 x 45
 y 33
 end
-arch tree
+arch shallow_sea
 x 45
 y 34
 end
-arch woods_2
+arch shallow_sea
 x 45
 y 35
 end
-arch woods_2
+arch shallow_sea
 x 45
 y 36
 end
@@ -9398,43 +10162,47 @@ arch grass
 x 45
 y 37
 end
-arch darkforest
+arch deathtree
+x 45
+y 37
+end
+arch grass
 x 45
 y 38
 end
-arch treed_hills
+arch grass
 x 45
 y 39
 end
-arch woods_2
+arch grass
 x 45
 y 40
 end
-arch tree
+arch grass
 x 45
 y 41
 end
-arch woods
+arch grass
 x 45
 y 42
 end
-arch woods
+arch shallow_sea
 x 45
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 45
 y 44
 end
-arch darkforest
+arch shallow_sea
 x 45
 y 45
 end
-arch darkforest
+arch grass
 x 45
 y 46
 end
-arch darkforest
+arch woods
 x 45
 y 47
 end
@@ -9442,198 +10210,202 @@ arch woods
 x 45
 y 48
 end
-arch woods
+arch darkforest
 x 45
 y 49
 end
-arch tree
+arch darkforest
 x 46
 end
-arch tree
+arch shallow_sea
 x 46
 y 1
 end
-arch darkforest
+arch shallow_sea
 x 46
 y 2
 end
-arch tree
+arch shallow_sea
 x 46
 y 3
 end
-arch tree
+arch grass
 x 46
 y 4
 end
-arch darkforest
+arch deathtree
+x 46
+y 4
+end
+arch grass
 x 46
 y 5
 end
-arch darkforest
+arch grass
 x 46
 y 6
 end
-arch darkforest
+arch grass
 x 46
 y 7
 end
-arch tree
+arch grass
 x 46
 y 8
 end
-arch tree
+arch deathtree
+x 46
+y 8
+end
+arch grass
 x 46
 y 9
 end
-arch tree
+arch grass
 x 46
 y 10
 end
-arch tree
+arch darkforest
 x 46
 y 11
 end
-arch tree
+arch darkforest
 x 46
 y 12
 end
-arch tree
+arch grass
 x 46
 y 13
 end
-arch tree
+arch grass
 x 46
 y 14
 end
-arch tree
+arch grass
 x 46
 y 15
 end
-arch evergreens
+arch darkforest
 x 46
 y 16
 end
-arch evergreens
+arch woods
 x 46
 y 17
 end
-arch evergreens
+arch grass
 x 46
 y 18
 end
-arch evergreens
+arch grass
 x 46
 y 19
 end
-arch evergreens
+arch grass
 x 46
 y 20
 end
-arch evergreens
+arch grass
 x 46
 y 21
 end
-arch woods_2
+arch grass
 x 46
 y 22
 end
-arch woods_2
+arch woods
 x 46
 y 23
 end
-arch woods_2
+arch woods
 x 46
 y 24
 end
-arch woods_2
+arch woods
 x 46
 y 25
 end
-arch woods_2
+arch woods
 x 46
 y 26
 end
-arch woods_2
+arch woods
 x 46
 y 27
 end
-arch woods_2
+arch grass
 x 46
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 46
 y 29
 end
-arch woods_2
+arch shallow_sea
 x 46
 y 30
 end
-arch random_plant
-x 46
-y 30
-end
-arch woods
+arch shallow_sea
 x 46
 y 31
 end
-arch tree
+arch shallow_sea
 x 46
 y 32
 end
-arch tree
+arch shallow_sea
 x 46
 y 33
 end
-arch tree
+arch shallow_sea
 x 46
 y 34
 end
-arch woods_2
+arch shallow_sea
 x 46
 y 35
 end
-arch tree
+arch grass
 x 46
 y 36
 end
-arch woods_2
+arch grass
 x 46
 y 37
 end
-arch brush
+arch darkforest
 x 46
 y 38
 end
-arch brush
+arch darkforest
 x 46
 y 39
 end
-arch woods_2
+arch grass
 x 46
 y 40
 end
-arch tree
+arch grass
 x 46
 y 41
 end
-arch tree
+arch grass
 x 46
 y 42
 end
-arch woods
+arch grass
 x 46
 y 43
 end
-arch darkforest
+arch shallow_sea
 x 46
 y 44
 end
-arch woods
+arch shallow_sea
 x 46
 y 45
 end
-arch darkforest
+arch shallow_sea
 x 46
 y 46
 end
@@ -9645,18 +10417,14 @@ arch woods
 x 46
 y 48
 end
-arch woods
+arch darkforest
 x 46
 y 49
 end
-arch tree
+arch shallow_sea
 x 47
 end
-arch tree
-x 47
-y 1
-end
-arch random_plant
+arch shallow_sea
 x 47
 y 1
 end
@@ -9668,143 +10436,155 @@ arch darkforest
 x 47
 y 3
 end
-arch darkforest
+arch grass
 x 47
 y 4
 end
-arch darkforest
+arch grass
 x 47
 y 5
 end
-arch tree
+arch deathtree
+x 47
+y 5
+end
+arch grass
 x 47
 y 6
 end
-arch tree
+arch grass
 x 47
 y 7
 end
-arch tree
+arch grass
 x 47
 y 8
 end
-arch tree
+arch deathtree
+x 47
+y 8
+end
+arch grass
 x 47
 y 9
 end
-arch tree
+arch deathtree
+x 47
+y 9
+end
+arch grass
 x 47
 y 10
 end
-arch tree
+arch grass
 x 47
 y 11
 end
-arch tree
+arch darkforest
 x 47
 y 12
 end
-arch tree
+arch darkforest
 x 47
 y 13
 end
-arch tree
+arch grass
 x 47
 y 14
 end
-arch evergreens
+arch woods
 x 47
 y 15
 end
-arch evergreens
+arch grass
 x 47
 y 16
 end
-arch evergreens
+arch woods
 x 47
 y 17
 end
-arch evergreens
+arch grass
 x 47
 y 18
 end
-arch evergreens
+arch grass
 x 47
 y 19
 end
-arch tree
+arch grass
 x 47
 y 20
 end
-arch tree
+arch grass
 x 47
 y 21
 end
-arch brush
+arch woods
 x 47
 y 22
 end
-arch brush
+arch woods
 x 47
 y 23
 end
-arch brush
+arch darkforest
 x 47
 y 24
 end
-arch tree
+arch grass
 x 47
 y 25
 end
-arch tree
+arch grass
 x 47
 y 26
 end
-arch tree
+arch grass
 x 47
 y 27
 end
-arch woods
+arch grass
 x 47
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 47
 y 29
 end
-arch woods
+arch shallow_sea
 x 47
 y 30
 end
-arch tree
+arch shallow_sea
 x 47
 y 31
 end
-arch tree
+arch shallow_sea
 x 47
 y 32
 end
-arch tree
+arch grass
 x 47
 y 33
 end
-arch tree
+arch grass
 x 47
 y 34
 end
-arch woods_2
+arch grass
 x 47
 y 35
 end
-arch woods_2
+arch grass
 x 47
 y 36
 end
-arch woods_2
+arch darkforest
 x 47
 y 37
 end
-arch brush
+arch darkforest
 x 47
 y 38
 end
@@ -9812,198 +10592,214 @@ arch darkforest
 x 47
 y 39
 end
-arch woods_2
+arch grass
 x 47
 y 40
 end
-arch tree
+arch deathtree
+x 47
+y 40
+end
+arch darkforest
 x 47
 y 41
 end
-arch tree
+arch darkforest
 x 47
 y 42
 end
-arch woods
+arch darkforest
 x 47
 y 43
 end
-arch woods
+arch darkforest
 x 47
 y 44
 end
-arch woods
+arch darkforest
 x 47
 y 45
 end
-arch woods
+arch darkforest
 x 47
 y 46
 end
-arch darkforest
+arch woods
 x 47
 y 47
 end
-arch darkforest
+arch woods
 x 47
 y 48
 end
-arch woods
+arch darkforest
 x 47
 y 49
 end
-arch tree
+arch shallow_sea
 x 48
 end
-arch tree
+arch darkforest
 x 48
 y 1
 end
-arch darkforest
+arch grass
 x 48
 y 2
 end
-arch darkforest
+arch grass
 x 48
 y 3
 end
-arch darkforest
+arch grass
 x 48
 y 4
 end
-arch tree
+arch grass
 x 48
 y 5
 end
-arch tree
+arch deathtree
+x 48
+y 5
+end
+arch grass
 x 48
 y 6
 end
-arch tree
+arch deathtree
+x 48
+y 6
+end
+arch grass
 x 48
 y 7
 end
-arch tree
+arch grass
 x 48
 y 8
 end
-arch tree
+arch grass
 x 48
 y 9
 end
-arch tree
+arch deathtree
+x 48
+y 9
+end
+arch grass
 x 48
 y 10
 end
-arch tree
+arch deathtree
+x 48
+y 10
+end
+arch grass
 x 48
 y 11
 end
-arch tree
+arch grass
 x 48
 y 12
 end
-arch marsh
+arch darkforest
 x 48
 y 13
 end
-arch evergreens
+arch grass
 x 48
 y 14
 end
-arch evergreens
+arch woods
 x 48
 y 15
 end
-arch evergreens
+arch woods
 x 48
 y 16
 end
-arch evergreens
+arch grass
 x 48
 y 17
 end
-arch evergreens
+arch grass
 x 48
 y 18
 end
-arch woods_2
+arch grass
 x 48
 y 19
 end
-arch tree
+arch grass
 x 48
 y 20
 end
-arch tree
+arch grass
 x 48
 y 21
 end
-arch tree
+arch woods
 x 48
 y 22
 end
-arch tree
+arch darkforest
 x 48
 y 23
 end
-arch tree
+arch grass
 x 48
 y 24
 end
-arch tree
+arch grass
 x 48
 y 25
 end
-arch random_plant
-x 48
-y 25
-end
-arch tree
+arch grass
 x 48
 y 26
 end
-arch woods
+arch grass
 x 48
 y 27
 end
-arch woods_2
+arch shallow_sea
 x 48
 y 28
 end
-arch woods_2
+arch shallow_sea
 x 48
 y 29
 end
-arch tree
+arch shallow_sea
 x 48
 y 30
 end
-arch tree
+arch grass
 x 48
 y 31
 end
-arch tree
+arch grass
 x 48
 y 32
 end
-arch tree
+arch grass
 x 48
 y 33
 end
-arch tree
+arch grass
 x 48
 y 34
 end
-arch woods_2
+arch grass
 x 48
 y 35
 end
-arch woods_2
+arch grass
 x 48
 y 36
 end
-arch tree
+arch darkforest
 x 48
 y 37
 end
@@ -10011,27 +10807,31 @@ arch darkforest
 x 48
 y 38
 end
-arch woods_2
+arch darkforest
 x 48
 y 39
 end
-arch tree
+arch darkforest
 x 48
 y 40
 end
-arch tree
+arch grass
 x 48
 y 41
 end
-arch tree
+arch deathtree
+x 48
+y 41
+end
+arch grass
 x 48
 y 42
 end
-arch random_plant
+arch deathtree
 x 48
 y 42
 end
-arch woods
+arch darkforest
 x 48
 y 43
 end
@@ -10051,7 +10851,7 @@ arch woods
 x 48
 y 47
 end
-arch woods
+arch darkforest
 x 48
 y 48
 end
@@ -10059,228 +10859,236 @@ arch darkforest
 x 48
 y 49
 end
-arch tree
+arch darkforest
 x 49
 end
-arch tree
+arch grass
 x 49
 y 1
 end
-arch darkforest
+arch grass
 x 49
 y 2
 end
-arch tree
+arch grass
 x 49
 y 3
 end
-arch tree
+arch grass
 x 49
 y 4
 end
-arch tree
+arch grass
 x 49
 y 5
 end
-arch tree
+arch grass
 x 49
 y 6
 end
-arch tree
+arch grass
 x 49
 y 7
 end
-arch tree
+arch grass
 x 49
 y 8
 end
-arch tree
+arch grass
 x 49
 y 9
 end
-arch tree
+arch grass
 x 49
 y 10
 end
-arch tree
+arch grass
 x 49
 y 11
 end
-arch tree
+arch grass
 x 49
 y 12
 end
-arch tree
+arch grass
 x 49
 y 13
 end
-arch tree
+arch grass
 x 49
 y 14
 end
-arch tree
+arch grass
 x 49
 y 15
 end
-arch woods_2
+arch grass
 x 49
 y 16
 end
-arch tree
+arch grass
 x 49
 y 17
 end
-arch tree
+arch grass
 x 49
 y 18
 end
-arch tree
+arch grass
 x 49
 y 19
 end
-arch tree
+arch grass
 x 49
 y 20
 end
-arch tree
+arch grass
 x 49
 y 21
 end
-arch tree
+arch grass
 x 49
 y 22
 end
-arch tree
+arch grass
 x 49
 y 23
 end
-arch tree
+arch grass
 x 49
 y 24
 end
-arch tree
+arch grass
 x 49
 y 25
 end
-arch tree
+arch grass
 x 49
 y 26
 end
-arch woods
+arch shallow_sea
 x 49
 y 27
 end
-arch tree
+arch shallow_sea
 x 49
 y 28
 end
-arch tree
+arch shallow_sea
 x 49
 y 29
 end
-arch tree
+arch grass
 x 49
 y 30
 end
-arch tree
+arch grass
 x 49
 y 31
 end
-arch tree
+arch grass
 x 49
 y 32
 end
-arch tree
+arch grass
 x 49
 y 33
 end
-arch tree
+arch grass
 x 49
 y 34
 end
-arch tree
+arch grass
 x 49
 y 35
 end
-arch tree
+arch darkforest
 x 49
 y 36
 end
-arch tree
+arch darkforest
 x 49
 y 37
 end
-arch tree
+arch darkforest
 x 49
 y 38
 end
-arch tree
+arch darkforest
 x 49
 y 39
 end
-arch tree
+arch darkforest
 x 49
 y 40
 end
-arch tree
+arch darkforest
 x 49
 y 41
 end
-arch tree
+arch darkforest
 x 49
 y 42
 end
-arch woods
+arch darkforest
 x 49
 y 43
 end
-arch woods
+arch darkforest
 x 49
 y 44
 end
-arch woods
+arch darkforest
 x 49
 y 45
 end
-arch woods
+arch darkforest
 x 49
 y 46
 end
-arch woods
+arch darkforest
 x 49
 y 47
 end
-arch woods
+arch darkforest
 x 49
 y 48
 end
-arch woods
+arch darkforest
 x 49
 y 49
 end
-arch unicorn
+arch gryphon
+name Non
+level 22
+exp 380000
+hp 3600
+maxhp 3600
 sleep 0
-x 14
-y 13
+Wis 13
+x 13
+y 39
 end
-arch troll
-x 15
-y 37
+arch gryphon
+name Verdan
+level 22
+exp 380000
+hp 4000
+maxhp 4000
+sleep 0
+Wis 13
+x 32
+y 30
+arch sapphire
+name Heart of Verdan
+face pretty_sapphire.111
+msg
+This large sapphire has a faint glow.
+endmsg
+name_pl Hearts of Verdan
+weight 500
+value 1850
+glow_radius 1
+material 256
 end
-arch troll
-x 21
-y 44
-end
-arch troll
-x 23
-y 41
-end
-arch giant
-can_see_in_dark 1
-x 28
-y 26
-end
-arch behemoth
-x 31
-y 16
 end
