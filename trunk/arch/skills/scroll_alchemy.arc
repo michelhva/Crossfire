@@ -2,6 +2,7 @@ Object scroll_alchemy
 name scroll of alchemistry
 slaying skill_alchemy
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

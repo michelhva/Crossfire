@@ -2,6 +2,7 @@ Object scroll_bargaining
 name scroll of shopping
 slaying skill_bargaining
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

@@ -2,6 +2,7 @@ Object scroll_singing
 name scroll of singing
 slaying skill_singing
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

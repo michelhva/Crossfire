@@ -2,6 +2,7 @@ Object scroll_spellcasting
 name scroll of spell casting
 slaying skill_spellcasting
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

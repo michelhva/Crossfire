@@ -2,6 +2,7 @@ Object scroll_boxing
 name scroll of punching
 slaying skill_boxing
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

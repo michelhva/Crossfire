@@ -2,6 +2,7 @@ Object scroll_hiding
 name scroll of concealment
 slaying skill_hide
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

@@ -2,6 +2,7 @@ Object scroll_sense_mag
 name scroll of sense magic
 slaying skill_sense_magic
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

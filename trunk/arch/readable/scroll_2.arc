@@ -1,6 +1,7 @@
 Object scroll_2
 name scroll
 face scroll_2.111
+race scrolls
 nrof 1
 type 8
 material 1

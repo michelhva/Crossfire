@@ -2,6 +2,7 @@ Object scroll_bowyer
 name scroll of fletching
 slaying skill_bowyer
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

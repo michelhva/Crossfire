@@ -2,6 +2,7 @@ Object scroll_stealing
 name scroll of stealing
 slaying skill_stealing
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

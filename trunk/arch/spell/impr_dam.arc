@@ -1,6 +1,7 @@
 Object improve_damage
 name Improve Weapon Damage
 face scroll.111
+race scrolls
 color_fg white
 nrof 1
 type 124
