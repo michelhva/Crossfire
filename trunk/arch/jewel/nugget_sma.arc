@@ -4,6 +4,7 @@ race gold and jewels
 face nugget_sma.111
 color_fg orange
 nrof 1
+type 73
 material 2
 materialname gold
 value 10
