@@ -1,7 +1,7 @@
 Object halfling_player
 name halfling
 randomitems halfling_player
-face halfling.111
+face halfling.151
 msg
 Halflings are another sub-race of humankind,
 like the Northman. They are much smaller and

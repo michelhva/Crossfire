@@ -2,7 +2,7 @@ Object wraith_player
 name Wraith
 race undead
 randomitems wraith_player_items
-face wraithp.111
+face wraithp.151
 msg
 A Wraith is a spirit which has made an evil
 bargain in order to persist after natural
