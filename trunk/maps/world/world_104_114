@@ -3991,8 +3991,27 @@ elevation 6295
 x 16
 y 5
 end
-arch mountain_cave
+arch mountain
 elevation 6020
+x 16
+y 6
+end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 4
+expand2x 1
+treasureoptions 32
+monsterstyle humanoid
+dungeon_depth 9
+xsize 60
+ysize 60
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave
+endmsg
+slaying /!
 x 16
 y 6
 end
@@ -4484,8 +4503,27 @@ elevation 5246
 x 18
 y 4
 end
-arch mountain_cave
+arch mountain
 elevation 5617
+x 18
+y 5
+end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 4
+expand2x 1
+treasureoptions 32
+monsterstyle humanoid
+dungeon_depth 9
+xsize 60
+ysize 60
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave
+endmsg
+slaying /!
 x 18
 y 5
 end
@@ -9322,6 +9360,10 @@ elevation 76
 x 36
 y 39
 end
+arch light3
+x 36
+y 39
+end
 arch brush
 elevation 13
 x 36
@@ -9634,10 +9676,6 @@ y 32
 end
 arch grass
 elevation 805
-x 37
-y 33
-end
-arch wolf
 x 37
 y 33
 end
@@ -10011,10 +10049,6 @@ y 42
 end
 arch grass
 elevation 377
-x 38
-y 43
-end
-arch treehouse
 x 38
 y 43
 end
@@ -12979,6 +13013,18 @@ x 34
 y 42
 end
 arch treefort2
+name Pyper's Fine Jewellery
+slaying /inn_and_outpost/pypers_treehouse
+hp 12
+sp 12
 x 36
 y 38
+end
+arch treefort
+name Sweets Inn
+slaying /inn_and_outpost/sweets_inn
+hp 15
+sp 12
+x 37
+y 43
 end
