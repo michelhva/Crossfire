@@ -12794,13 +12794,11 @@ sp 16
 x 25
 y 40
 end
-arch barn
-name Sport  Center
-msg
-The sport center is closed for
-renovation
-endmsg
-name_pl Sport  Center
+arch guild
+name Black Shield's storage room
+slaying /brest/black_shield/storage_room
+hp 1
+sp 10
 x 27
 y 28
 end
