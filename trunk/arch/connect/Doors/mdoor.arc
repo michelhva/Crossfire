@@ -16,7 +16,7 @@ no_pass 1
 no_magic 1
 damned 1
 blocksview 1
-wc 7
+wc 3
 maxsp 0
 dam 6
 editable 16
@@ -41,7 +41,7 @@ no_pass 1
 no_magic 1
 damned 1
 blocksview 1
-wc 7
+wc 3
 maxsp 0
 dam 6
 editable 16
