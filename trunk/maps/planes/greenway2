@@ -4582,11 +4582,21 @@ arch evergreen
 x 22
 y 12
 end
-arch woods
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 22
 y 13
 end
-arch woods
+arch wraith
+x 22
+y 13
+end
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 22
 y 14
 end
@@ -4606,19 +4616,25 @@ arch woods
 x 22
 y 18
 end
-arch woods
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 22
 y 19
 end
-arch swamp
+arch blackrock
+name Waste
+no_magic 1
+damned 1
+x 22
+y 20
+end
+arch wraith
 x 22
 y 20
 end
 arch swamp
-x 22
-y 21
-end
-arch fungus
 x 22
 y 21
 end
@@ -4789,144 +4805,155 @@ arch woods
 x 23
 y 13
 end
-arch evergreens
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 23
 y 14
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 23
 y 15
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 23
 y 16
 end
 arch darkforest
 x 23
 y 17
+end
+arch blackrock
+name Waste
+no_magic 1
+damned 1
+x 23
+y 18
+end
+arch blackrock
+name Waste
+no_magic 1
+damned 1
+x 23
+y 19
+end
+arch swamp
+x 23
+y 20
+end
+arch swamp
+x 23
+y 21
+end
+arch woods
+x 23
+y 22
+end
+arch darkforest
+x 23
+y 23
+end
+arch darkforest
+x 23
+y 24
+end
+arch evergreens
+x 23
+y 25
+end
+arch evergreens
+x 23
+y 26
+end
+arch darkforest
+x 23
+y 27
+end
+arch evergreens
+x 23
+y 28
+end
+arch evergreens
+x 23
+y 29
+end
+arch darkforest
+x 23
+y 30
+end
+arch evergreens
+x 23
+y 31
+end
+arch evergreens
+x 23
+y 32
+end
+arch hills
+x 23
+y 33
+end
+arch evergreens
+x 23
+y 34
+end
+arch darkforest
+x 23
+y 35
+end
+arch treed_hills
+x 23
+y 36
+end
+arch treed_hills
+x 23
+y 37
+end
+arch treed_hills
+x 23
+y 38
+end
+arch treed_hills
+x 23
+y 39
+end
+arch treed_hills
+x 23
+y 40
+end
+arch jungle_1
+x 23
+y 41
+end
+arch grass
+x 23
+y 42
+end
+arch grass
+x 23
+y 43
+end
+arch grass
+x 23
+y 44
+end
+arch jungle_1
+x 23
+y 45
+end
+arch jungle_1
+x 23
+y 46
 end
 arch random_plant
 x 23
-y 17
-end
-arch darkforest
-x 23
-y 18
-end
-arch darkforest
-x 23
-y 19
-end
-arch swamp
-x 23
-y 20
-end
-arch swamp
-x 23
-y 21
-end
-arch woods
-x 23
-y 22
-end
-arch darkforest
-x 23
-y 23
-end
-arch darkforest
-x 23
-y 24
-end
-arch evergreens
-x 23
-y 25
-end
-arch evergreens
-x 23
-y 26
-end
-arch darkforest
-x 23
-y 27
-end
-arch evergreens
-x 23
-y 28
-end
-arch evergreens
-x 23
-y 29
-end
-arch darkforest
-x 23
-y 30
-end
-arch evergreens
-x 23
-y 31
-end
-arch evergreens
-x 23
-y 32
-end
-arch hills
-x 23
-y 33
-end
-arch evergreens
-x 23
-y 34
-end
-arch darkforest
-x 23
-y 35
-end
-arch treed_hills
-x 23
-y 36
-end
-arch treed_hills
-x 23
-y 37
-end
-arch treed_hills
-x 23
-y 38
-end
-arch treed_hills
-x 23
-y 39
-end
-arch treed_hills
-x 23
-y 40
-end
-arch jungle_1
-x 23
-y 41
-end
-arch grass
-x 23
-y 42
-end
-arch grass
-x 23
-y 43
-end
-arch grass
-x 23
-y 44
-end
-arch jungle_1
-x 23
-y 45
-end
-arch jungle_1
-x 23
-y 46
-end
-arch random_plant
-x 23
 y 46
 end
 arch jungle_1
@@ -5004,7 +5031,10 @@ arch darkforest
 x 24
 y 15
 end
-arch brush
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 24
 y 16
 end
@@ -5012,7 +5042,10 @@ arch brush
 x 24
 y 17
 end
-arch brush
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 24
 y 18
 end
@@ -5211,6 +5244,13 @@ arch brush
 x 25
 y 17
 end
+arch archway_tree
+slaying /world/world_110_128
+hp 32
+sp 9
+x 25
+y 17
+end
 arch brush
 x 25
 y 18
@@ -5232,10 +5272,6 @@ x 25
 y 22
 end
 arch swamp
-x 25
-y 23
-end
-arch fungus
 x 25
 y 23
 end
@@ -5414,7 +5450,10 @@ arch brush
 x 26
 y 17
 end
-arch grass
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 26
 y 18
 end
@@ -5423,10 +5462,6 @@ x 26
 y 19
 end
 arch swamp
-x 26
-y 20
-end
-arch fungus
 x 26
 y 20
 end
@@ -5605,15 +5640,24 @@ arch woods
 x 27
 y 14
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 27
 y 15
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 27
 y 16
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 27
 y 17
 end
@@ -5621,7 +5665,10 @@ arch darkforest
 x 27
 y 18
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
 x 27
 y 19
 end
@@ -5816,7 +5863,14 @@ arch darkforest
 x 28
 y 16
 end
-arch darkforest
+arch blackrock
+name Waste
+no_magic 1
+damned 1
+x 28
+y 17
+end
+arch wraith
 x 28
 y 17
 end
