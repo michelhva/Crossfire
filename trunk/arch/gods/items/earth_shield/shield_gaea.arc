@@ -26,4 +26,4 @@ resist_cold 30
 resist_electricity 30
 resist_ghosthit -20
 weight 20000
-end 
+end
