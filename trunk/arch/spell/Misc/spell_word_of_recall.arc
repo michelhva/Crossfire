@@ -4,7 +4,7 @@ name_pl word of recall
 face spell_praying.111
 level 10
 grace 40
-casting_time 50
+casting_time 15
 path_attuned 4096
 skill praying
 type 101
@@ -15,4 +15,12 @@ duration_modifier 5
 maxgrace 20
 no_drop 1
 invisible 1
+msg
+Word of recall transports the character back to the last place that the
+charactered used a savebed to save their character.  There is some delay
+between casting the spell and it actually taking effect, so this spell is
+not a great choice to cast if you are about to die, as you will likely die
+before the spell actually transports you back home.  It can be most handy
+when in a deep dungeon and don't want to walk back up all the stairs.
+endmsg
 end

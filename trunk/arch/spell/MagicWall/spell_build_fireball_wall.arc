@@ -7,7 +7,7 @@ subtype 15
 level 16
 value 160
 sp 45
-casting_time 45
+casting_time 15
 skill pyromancy
 path_attuned 2048
 no_drop 1
@@ -21,4 +21,9 @@ range 0
 maxsp 10
 is_used_up 1
 tear_down 1
+msg
+Build fireball wall creates a wall that fires fireballs.  These fireballs
+behave just like normal fireballs.  The wall can be torn down by
+creatures, and will eventually expire on its own accord.
+endmsg
 end

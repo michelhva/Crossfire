@@ -7,7 +7,7 @@ subtype 35
 level 9
 value 90
 sp 10
-casting_time 30
+casting_time 11
 skill evocation
 path_attuned 8
 other_arch negaball
@@ -19,4 +19,10 @@ maxsp 15
 attacktype 144
 no_drop 1
 invisible 1
+msg
+Negative energy balls creates a ball of negatvie energy.  This ball heads in
+the direction it is cast, and if it encounters a monsters, it sticks on
+the monster, draining the monster and doing cold damage as it does so.
+The spell does have a limited duration.
+endmsg
 end

@@ -9,7 +9,7 @@ invisible 1
 level 8
 value 80
 sp 14
-casting_time 30
+casting_time 10
 skill pyromancy
 path_attuned 8
 other_arch rune_shock

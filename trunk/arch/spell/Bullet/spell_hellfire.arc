@@ -4,7 +4,7 @@ name_pl hellfire
 face spell_pyromancy.111
 level 8
 sp 13
-casting_time 30
+casting_time 8
 path_attuned 2
 other_arch firebullet
 dam 8
@@ -20,4 +20,11 @@ no_drop 1
 invisible 1
 skill pyromancy
 food 10
+msg
+This spell is related to the fireball and related spells - fires
+a small bullet of fire, that then explodes into a large area of fire.
+Its main difference compared to the traditional fireball spell is that
+this spell is pure fire, with no magical elements, which enables it
+to damage creatures normally immuned to magic.
+endmsg
 end

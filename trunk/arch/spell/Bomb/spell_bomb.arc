@@ -4,7 +4,7 @@ name_pl create bomb
 face spell_pyromancy.111
 level 6
 sp 10
-casting_time 20
+casting_time 5
 path_attuned 512
 other_arch bomb
 dam 12
@@ -19,4 +19,11 @@ value 60
 attacktype 1
 no_drop 1
 invisible 1
+msg
+Create bombs does just that - creates a bomb in the direction the
+spell is fired.  This bomb then detonates after a few seconds, firing
+shards as well as encompassing the area in an explosions.  Creatures
+will be wounded if they are in the explosion or are hit by the
+flying shards.
+endmsg
 end

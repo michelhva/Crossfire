@@ -3,7 +3,7 @@ name spark shower
 name_pl spark shower
 level 1
 sp 5
-casting_time 15
+casting_time 6
 path_attuned 8
 other_arch sparkshower
 dam 2
@@ -19,4 +19,8 @@ attacktype 10
 no_drop 1
 invisible 1
 skill sorcery
+msg
+Sparkshower is a cone of electrical energy.  Creatures caught within
+the cone take magical and electrical damage.
+endmsg
 end

@@ -4,7 +4,7 @@ name_pl destruction
 face spell_sorcery.111
 level 18
 sp 30
-casting_time 20
+casting_time 10
 path_attuned 0
 other_arch destruction
 skill sorcery
@@ -19,4 +19,10 @@ dam 15
 dam_modifier 3
 maxsp 15
 attacktype 2
+msg
+Destruction damages all creatures around the player.  Unlike most spells,
+destruction will work through walls and doors.  Thus, the caster need
+not see all the targets for this spell to work.  The damage is all
+magical in nature.
+endmsg
 end

@@ -4,7 +4,7 @@ name_pl face of death
 face spell_praying.111
 level 22
 grace 80
-casting_time 15
+casting_time 10
 path_attuned 262144
 other_arch face_of_death
 dam 0
@@ -20,4 +20,10 @@ attacktype 131072
 no_drop 1
 invisible 1
 skill praying
+msg
+Face of death fires a fan of death.  Creatures caught within this area
+of death either outright die (no matter number of hit points) or come
+through unscathed.  This spell has the nice advantage that it will not
+harm any equipment either on the creatures or on the floor.
+endmsg
 end

@@ -4,7 +4,7 @@ name_pl negative energy bolts
 face spell_evocation.111
 level 4
 sp 13
-casting_time 12
+casting_time 6
 path_attuned 8
 other_arch negabolt
 dam 8
@@ -19,4 +19,8 @@ attacktype 144
 range 24
 no_drop 1
 invisible 1
+msg
+The negative energe bolt hits creatures, draining them of experience
+while also hitting them with a cold attack.
+endmsg
 end

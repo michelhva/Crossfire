@@ -9,8 +9,12 @@ invisible 1
 level 6
 value 60
 sp 12
-casting_time 40
+casting_time 15
 skill sorcery
 path_attuned 32768
 maxsp 24
+msg
+This creates a rune, that when triggered, causes the recipient to
+actually gain mana.  This can be useful to make a mana recharging area.
+endmsg
 end

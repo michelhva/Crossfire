@@ -4,7 +4,7 @@ name_pl large lightnings
 face spell_pyromancy.111
 level 4
 sp 13
-casting_time 12
+casting_time 7
 path_attuned 8
 other_arch lightning
 dam 8
@@ -19,4 +19,9 @@ attacktype 10
 range 24
 no_drop 1
 invisible 1
+msg
+Large lightning creates a bolt of ligthning.  The large lightning spell
+has a longer range, the bolt persists longer, and it does more damage
+than the small lightning spell.
+endmsg
 end
