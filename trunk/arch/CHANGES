@@ -1,8 +1,12 @@
 Changes for CVS top of tree:
 
+
+skills/tailsman.arc:  added nrof to archetype so these things will join.	-PeterM
+
 --- BEGIN apply() cleanup patch --- Jan Echternach 5/26/2000
 
 Added level 1 to all archetypes with type 88 (CONE) that can do damage.
+
 
 ground/chaos.arc, arch chaos and arch major_chaos
 ground/lava.arc, arch lava and arch permanent_lava
