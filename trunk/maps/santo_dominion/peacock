@@ -1,8 +1,10 @@
 arch map
-hp 9
-sp 23
-x 26
-y 24
+reset_timeout 7200
+difficulty 3
+width 26
+height 24
+enter_x 9
+enter_y 23
 end
 arch grass
 end
@@ -486,7 +488,7 @@ name cabbage detector
 slaying cabbage
 x 3
 y 2
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -502,7 +504,7 @@ name cabbage detector
 slaying cabbage
 x 3
 y 3
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -640,7 +642,7 @@ name cabbage detector
 slaying cabbage
 x 4
 y 2
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -656,7 +658,7 @@ name cabbage detector
 slaying cabbage
 x 4
 y 3
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -894,7 +896,7 @@ name cabbage detector
 slaying cabbage
 x 6
 y 2
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -910,7 +912,7 @@ name cabbage detector
 slaying cabbage
 x 6
 y 3
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -1081,7 +1083,7 @@ name cabbage detector
 slaying cabbage
 x 7
 y 2
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -1097,7 +1099,7 @@ name cabbage detector
 slaying cabbage
 x 7
 y 3
-protected 1
+resist_physical 30
 connected 1
 end
 arch earth
@@ -1458,9 +1460,9 @@ x 9
 y 23
 end
 arch oakdoor
-slaying town
+slaying /world/world_102_108
 hp 23
-sp 27
+sp 18
 x 9
 y 23
 end
@@ -1555,7 +1557,29 @@ maxhp 200
 ac -5
 x 10
 y 12
-immune 8388607
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_cancellation 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_counterspell 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems standard
 pick_up 0
 monster 0
@@ -2698,7 +2722,7 @@ end
 arch chicken
 x 18
 y 10
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -2810,7 +2834,7 @@ end
 arch chicken
 x 19
 y 6
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -2830,7 +2854,7 @@ end
 arch chicken
 x 19
 y 9
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -2851,7 +2875,7 @@ end
 arch chicken
 x 19
 y 11
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -2884,7 +2908,7 @@ end
 arch chicken
 x 19
 y 16
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -2975,7 +2999,7 @@ end
 arch chicken
 x 20
 y 8
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -3012,7 +3036,7 @@ end
 arch chicken
 x 20
 y 14
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -3124,7 +3148,7 @@ end
 arch chicken
 x 21
 y 9
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -3140,7 +3164,7 @@ end
 arch chicken
 x 21
 y 11
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -3177,7 +3201,7 @@ end
 arch chicken
 x 21
 y 16
-carrying 22500
+carrying 7500
 arch roast_bird
 value 5
 end
@@ -3623,14 +3647,14 @@ Gaea, help me...
 endmsg
 x 25
 y 2
-protected 2
+resist_magic 30
 connected 2
 end
 arch button_small
 name 2
 x 25
 y 2
-protected 2
+resist_magic 30
 weight 160000
 connected 2
 end
@@ -3640,7 +3664,7 @@ other_arch small_shield
 hp 16
 x 25
 y 2
-protected 1
+resist_physical 30
 connected 1
 end
 arch blocked
@@ -3669,7 +3693,7 @@ hp 8
 sp 6
 x 25
 y 8
-protected 2
+resist_magic 30
 connected 2
 end
 arch fly_ant
@@ -3696,7 +3720,7 @@ hp 8
 sp 6
 x 25
 y 9
-protected 2
+resist_magic 30
 connected 2
 end
 arch fly_ant
@@ -3712,7 +3736,7 @@ x 25
 y 9
 level 8
 attacktype 4097
-carrying 40
+carrying 20
 sleep 0
 arch flowers_permanent
 end
@@ -3723,7 +3747,7 @@ hp 8
 sp 6
 x 25
 y 10
-protected 2
+resist_magic 30
 connected 2
 end
 arch fly_ant
@@ -3739,7 +3763,7 @@ x 25
 y 10
 level 8
 attacktype 4097
-carrying 40
+carrying 20
 sleep 0
 arch flowers_permanent
 end
@@ -3750,7 +3774,7 @@ hp 8
 sp 6
 x 25
 y 11
-protected 2
+resist_magic 30
 connected 2
 end
 arch fly_ant
@@ -3766,7 +3790,7 @@ x 25
 y 11
 level 8
 attacktype 4097
-carrying 40
+carrying 20
 sleep 0
 arch flowers_permanent
 end
