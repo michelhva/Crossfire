@@ -7,8 +7,8 @@ Date: Wed Dec 28 00:59:37 1994
 endmsg
 width 31
 height 11
-enter_x 21
-enter_y 18
+enter_x 1
+enter_y 1
 darkness 1
 end
 arch medium_stones
@@ -805,8 +805,6 @@ x 9
 y 9
 end
 arch teleporter
-msg
-endmsg
 hp 25
 sp 2
 x 9
@@ -1928,8 +1926,6 @@ weight 16000
 end
 arch head
 name Filur's head
-msg
-endmsg
 end
 arch goldcoin
 nrof 20
@@ -2387,8 +2383,6 @@ y 9
 end
 arch creator
 name 1
-msg
-endmsg
 other_arch ten_kilo
 connected 1
 x 28
