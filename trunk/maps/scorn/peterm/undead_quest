@@ -1,545 +1,523 @@
 arch map
-name creepy
+name undead_quest
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
-Date: Tue Dec  7 16:17:56 1993
+Date: Mon Jun  5 21:56:20 2000
 endmsg
-hp 1
-sp 1
+hp 23
+sp 19
 x 25
-y 25
+y 21
 end
-arch dirtfloor
+arch pstone_1
 end
-arch mine10
+arch dun_2_2_2
 end
-arch dirtfloor
+arch pstone_1
 y 1
 end
-arch mine3
+arch dun_2_1_1
 y 1
 end
-arch dirtfloor
+arch pstone_1
 y 2
 end
-arch mine3
+arch dun_3_2
 y 2
 end
-arch dirtfloor
+arch pstone_1
 y 3
 end
-arch mine3
+arch dun_2_1_1
 y 3
 end
-arch dirtfloor
+arch pstone_1
 y 4
 end
-arch mine3
+arch dun_3_2
 y 4
 end
-arch dirtfloor
+arch pstone_1
 y 5
 end
-arch mine11
+arch dun_2_1_1
 y 5
 end
-arch dirtfloor
+arch pstone_1
 y 6
 end
-arch mine3
+arch dun_2_1_1
 y 6
 end
-arch dirtfloor
+arch pstone_1
 y 7
 end
-arch mine3
+arch dun_2_1_1
 y 7
 end
-arch dirtfloor
+arch pstone_1
 y 8
 end
-arch mine3
+arch dun_2_1_1
 y 8
 end
-arch dirtfloor
+arch pstone_1
 y 9
 end
-arch mine3
+arch dun_2_1_1
 y 9
 end
-arch dirtfloor
+arch pstone_1
 y 10
 end
-arch mine3
+arch dun_2_1_1
 y 10
 end
-arch dirtfloor
+arch pstone_1
 y 11
 end
-arch mine3
+arch dun_2_1_1
 y 11
 end
-arch dirtfloor
+arch pstone_1
 y 12
 end
-arch mine3
+arch dun_2_1_1
 y 12
 end
-arch dirtfloor
+arch pstone_1
 y 13
 end
-arch mine3
+arch dun_2_1_1
 y 13
 end
-arch dirtfloor
+arch pstone_1
 y 14
 end
-arch mine3
+arch dun_2_1_1
 y 14
 end
-arch dirtfloor
+arch pstone_1
 y 15
 end
-arch mine3
+arch dun_2_1_1
 y 15
 end
-arch dirtfloor
+arch pstone_1
 y 16
 end
-arch mine4
+arch dun_3_2
 y 16
 end
 arch pstone_1
 y 17
 end
-arch mine8
+arch dun_2_1_1
 y 17
 end
 arch pstone_1
 y 18
 end
-arch mine3
+arch dun_3_2
 y 18
 end
 arch pstone_1
 y 19
 end
-arch mine3
+arch dun_2_1_1
 y 19
 end
 arch pstone_1
 y 20
 end
-arch mine3
+arch dun_2_2_1
 y 20
 end
 arch pstone_1
-y 21
-end
-arch mine3
-y 21
-end
-arch pstone_1
-y 22
-end
-arch mine3
-y 22
-end
-arch pstone_1
-y 23
-end
-arch mine3
-y 23
-end
-arch pstone_1
-y 24
-end
-arch mine4
-y 24
-end
-arch dirtfloor
 x 1
 end
-arch mine2
+arch dun_2_1_2
 x 1
 end
-arch dirtfloor
+arch pstone_1
 x 1
 y 1
 end
-arch stair2_up
-slaying /scorn/houses/house.haunted
-hp 3
-sp 1
+arch spider_web
 x 1
 y 1
 end
-arch dirtfloor
+arch pstone_1
 x 1
 y 2
 end
-arch dirtfloor
+arch dun_2_1_2
+x 1
+y 2
+end
+arch pstone_1
 x 1
 y 3
 end
-arch dirtfloor
+arch skeleton
+x 1
+y 3
+end
+arch pstone_1
 x 1
 y 4
 end
-arch ghost
+arch dun_2_1_2
 x 1
 y 4
 end
-arch dirtfloor
+arch pstone_1
 x 1
 y 5
 end
-arch mine2
-x 1
-y 5
-end
-arch dirtfloor
+arch pstone_1
 x 1
 y 6
+end
+arch pstone_1
+x 1
+y 7
+end
+arch pstone_1
+x 1
+y 8
+end
+arch grimreaper
+name Animator
+x 1
+y 8
+carrying 40
+arch ring_nodrain
+name Animator's Ring
+material 0
+value 1000
+end
+end
+arch pstone_1
+x 1
+y 9
+end
+arch pstone_1
+x 1
+y 10
+end
+arch pstone_1
+x 1
+y 11
+end
+arch pstone_1
+x 1
+y 12
+end
+arch pstone_1
+x 1
+y 13
+end
+arch pstone_1
+x 1
+y 14
+end
+arch pstone_1
+x 1
+y 15
+end
+arch pstone_1
+x 1
+y 16
+end
+arch dun_2_1_2
+x 1
+y 16
+end
+arch pstone_1
+x 1
+y 17
+end
+arch pstone_1
+x 1
+y 18
+end
+arch dun_2_1_2
+x 1
+y 18
+end
+arch pstone_1
+x 1
+y 19
+end
+arch spider_web
+x 1
+y 19
+end
+arch pstone_1
+x 1
+y 20
+end
+arch dun_2_1_2
+x 1
+y 20
+end
+arch pstone_1
+x 2
+end
+arch dun_2_1_2
+x 2
+end
+arch pstone_1
+x 2
+y 1
+end
+arch skeleton
+x 2
+y 1
+end
+arch pstone_1
+x 2
+y 2
+end
+arch dun_2_1_2
+x 2
+y 2
+end
+arch pstone_1
+x 2
+y 3
+end
+arch skeleton
+x 2
+y 3
+end
+arch pstone_1
+x 2
+y 4
+end
+arch dun_2_1_2
+x 2
+y 4
+end
+arch pstone_1
+x 2
+y 5
+end
+arch pstone_1
+x 2
+y 6
+end
+arch pstone_1
+x 2
+y 7
+end
+arch pstone_1
+x 2
+y 8
+end
+arch pstone_1
+x 2
+y 9
 end
 arch generate_skeleton
-x 1
-y 6
-end
-arch dirtfloor
-x 1
-y 7
-end
-arch dirtfloor
-x 1
-y 8
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 1
-y 8
-end
-arch dirtfloor
-x 1
+x 2
 y 9
 end
-arch dirtfloor
-x 1
+arch pstone_1
+x 2
 y 10
 end
-arch gravestone
-name graves
-x 1
-y 10
-end
-arch dirtfloor
-x 1
+arch pstone_1
+x 2
 y 11
 end
-arch dirtfloor
-x 1
+arch generate_zombie
+x 2
+y 11
+end
+arch pstone_1
+x 2
 y 12
 end
-arch gravestone
-name graves
-face zombie_gen.111
-x 1
+arch spider_web
+x 2
 y 12
 end
-arch dirtfloor
-x 1
+arch pstone_1
+x 2
 y 13
 end
-arch dirtfloor
-x 1
+arch spider_web
+x 2
+y 13
+end
+arch wraith
+x 2
+y 13
+end
+arch pstone_1
+x 2
 y 14
 end
-arch gravestone
-name graves
-face zombie_gen.111
-x 1
-y 14
-end
-arch dirtfloor
-x 1
+arch pstone_1
+x 2
 y 15
 end
-arch dirtfloor
-x 1
-y 16
-end
-arch mine2
-x 1
-y 16
+arch statue
+x 2
+y 15
 no_pass 0
 end
 arch pstone_1
-x 1
+x 2
+y 16
+end
+arch dun_2_1_2
+x 2
+y 16
+end
+arch pstone_1
+x 2
+y 17
+end
+arch gravestone
+x 2
 y 17
 end
 arch pstone_1
-x 1
+x 2
+y 18
+end
+arch dun_2_1_2
+x 2
 y 18
 end
 arch pstone_1
-x 1
+x 2
+y 19
+end
+arch ghost
+x 2
 y 19
 end
 arch pstone_1
-x 1
+x 2
+y 20
+end
+arch dun_2_1_2
+x 2
 y 20
 end
 arch pstone_1
-x 1
-y 21
+x 3
+end
+arch dun_2_1_2
+x 3
 end
 arch pstone_1
-x 1
-y 22
-end
-arch pstone_1
-x 1
-y 23
-end
-arch pstone_1
-x 1
-y 24
-end
-arch mine2
-x 1
-y 24
-end
-arch dirtfloor
-x 2
-end
-arch mine2
-x 2
-end
-arch dirtfloor
-x 2
+x 3
 y 1
 end
-arch magic_mouth
-msg
-WHO DARES ENTER THE CREEPY CRYPT?
-YOU WILL PARISH! 
-endmsg
-x 2
+arch skeleton
+x 3
 y 1
 end
-arch dirtfloor
-x 2
+arch pstone_1
+x 3
 y 2
 end
-arch dirtfloor
-x 2
+arch dun_2_1_2
+x 3
+y 2
+end
+arch pstone_1
+x 3
 y 3
 end
-arch dirtfloor
-x 2
+arch skeleton
+x 3
+y 3
+end
+arch pstone_1
+x 3
 y 4
 end
-arch dirtfloor
-x 2
+arch dun_2_1_2
+x 3
+y 4
+end
+arch pstone_1
+x 3
 y 5
 end
-arch mine2
-x 2
-y 5
-end
-arch dirtfloor
-x 2
+arch pstone_1
+x 3
 y 6
 end
-arch dirtfloor
-x 2
+arch statue
+x 3
+y 6
+no_pass 0
+end
+arch pstone_1
+x 3
 y 7
 end
-arch dirtfloor
-x 2
+arch pstone_1
+x 3
 y 8
 end
-arch dirtfloor
-x 2
+arch pstone_1
+x 3
 y 9
 end
-arch dirtfloor
-x 2
+arch pstone_1
+x 3
 y 10
-end
-arch dirtfloor
-x 2
-y 11
-end
-arch dirtfloor
-x 2
-y 12
-end
-arch dirtfloor
-x 2
-y 13
-end
-arch dirtfloor
-x 2
-y 14
-end
-arch dirtfloor
-x 2
-y 15
-end
-arch dirtfloor
-x 2
-y 16
-end
-arch mine2
-x 2
-y 16
-end
-arch pstone_1
-x 2
-y 17
-end
-arch mine8
-x 2
-y 17
-end
-arch pstone_1
-x 2
-y 18
-end
-arch mine3
-x 2
-y 18
-end
-arch pstone_1
-x 2
-y 19
-end
-arch mine3
-x 2
-y 19
-end
-arch pstone_1
-x 2
-y 20
-end
-arch mine3
-x 2
-y 20
-end
-arch pstone_1
-x 2
-y 21
-end
-arch mine4
-x 2
-y 21
-end
-arch pstone_1
-x 2
-y 22
-end
-arch pstone_1
-x 2
-y 23
-end
-arch pstone_1
-x 2
-y 24
-end
-arch mine2
-x 2
-y 24
-end
-arch dirtfloor
-x 3
-end
-arch mine2
-x 3
-end
-arch dirtfloor
-x 3
-y 1
-end
-arch dirtfloor
-x 3
-y 2
-end
-arch dirtfloor
-x 3
-y 3
-end
-arch dirtfloor
-x 3
-y 4
 end
 arch generate_ghost
 x 3
-y 4
-end
-arch dirtfloor
-x 3
-y 5
-end
-arch mine7
-x 3
-y 5
-end
-arch dirtfloor
-x 3
-y 6
-end
-arch dirtfloor
-x 3
-y 7
-end
-arch dirtfloor
-x 3
-y 8
-end
-arch dirtfloor
-x 3
-y 9
-end
-arch dirtfloor
-x 3
 y 10
 end
-arch dirtfloor
+arch pstone_1
 x 3
 y 11
 end
-arch dirtfloor
+arch pstone_1
 x 3
 y 12
 end
-arch dirtfloor
+arch pstone_1
 x 3
 y 13
 end
-arch dirtfloor
+arch wraith
+x 3
+y 13
+end
+arch pstone_1
 x 3
 y 14
 end
-arch dirtfloor
+arch generate_skeleton
+x 3
+y 14
+end
+arch pstone_1
 x 3
 y 15
 end
-arch dirtfloor
+arch pstone_1
 x 3
 y 16
 end
-arch mine2
+arch dun_2_1_2
 x 3
 y 16
 end
 arch pstone_1
-x 3
-y 17
-end
-arch random_talisman
 x 3
 y 17
 end
@@ -547,11 +525,15 @@ arch pstone_1
 x 3
 y 18
 end
+arch dun_2_1_2
+x 3
+y 18
+end
 arch pstone_1
 x 3
 y 19
 end
-arch random_wealth
+arch ghost
 x 3
 y 19
 end
@@ -559,428 +541,440 @@ arch pstone_1
 x 3
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 3
-y 21
-end
-arch mine2
-x 3
-y 21
+y 20
 end
 arch pstone_1
-x 3
-y 22
-end
-arch pstone_1
-x 3
-y 23
-end
-arch pstone_1
-x 3
-y 24
-end
-arch mine2
-x 3
-y 24
-end
-arch dirtfloor
 x 4
 end
-arch mine2
+arch dun_2_1_2
 x 4
 end
-arch dirtfloor
+arch pstone_1
 x 4
 y 1
 end
-arch dirtfloor
+arch generate_zombie
+x 4
+y 1
+end
+arch skeleton
+x 4
+y 1
+end
+arch pstone_1
 x 4
 y 2
 end
-arch dirtfloor
+arch dun_2_1_2
+x 4
+y 2
+end
+arch pstone_1
 x 4
 y 3
 end
-arch dirtfloor
+arch generate_zombie
+x 4
+y 3
+end
+arch skeleton
+x 4
+y 3
+end
+arch pstone_1
 x 4
 y 4
+end
+arch dun_1_3
+x 4
+y 4
+end
+arch pstone_1
+x 4
+y 5
+end
+arch pstone_1
+x 4
+y 6
+end
+arch wraith
+x 4
+y 6
+end
+arch pstone_1
+x 4
+y 7
+end
+arch wraith
+x 4
+y 7
+end
+arch pstone_1
+x 4
+y 8
+end
+arch pstone_1
+x 4
+y 9
+end
+arch statue
+x 4
+y 9
+no_pass 0
+end
+arch pstone_1
+x 4
+y 10
+end
+arch pstone_1
+x 4
+y 11
+end
+arch pstone_1
+x 4
+y 12
+end
+arch gravestone2
+x 4
+y 12
+end
+arch wraith
+x 4
+y 12
+end
+arch pstone_1
+x 4
+y 13
+end
+arch wraith
+x 4
+y 13
+end
+arch pstone_1
+x 4
+y 14
+end
+arch gravestone
+x 4
+y 14
+end
+arch pstone_1
+x 4
+y 15
+end
+arch pstone_1
+x 4
+y 16
+end
+arch dun_1_3
+x 4
+y 16
+end
+arch pstone_1
+x 4
+y 17
+end
+arch statue
+x 4
+y 17
+no_pass 0
+end
+arch pstone_1
+x 4
+y 18
+end
+arch dun_2_1_2
+x 4
+y 18
+end
+arch pstone_1
+x 4
+y 19
 end
 arch ghost
 x 4
-y 4
-end
-arch dirtfloor
-x 4
-y 5
-end
-arch gate_closed_1
-x 4
-y 5
-speed 0.500000
-connected 1
-end
-arch dirtfloor
-x 4
-y 6
-end
-arch dirtfloor
-x 4
-y 7
-end
-arch dirtfloor
-x 4
-y 8
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 4
-y 8
-end
-arch dirtfloor
-x 4
-y 9
-end
-arch dirtfloor
-x 4
-y 10
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 4
-y 10
-end
-arch dirtfloor
-x 4
-y 11
-end
-arch dirtfloor
-x 4
-y 12
-end
-arch gravestone
-name graves
-x 4
-y 12
-end
-arch dirtfloor
-x 4
-y 13
-end
-arch dirtfloor
-x 4
-y 14
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 4
-y 14
-end
-arch dirtfloor
-x 4
-y 15
-end
-arch dirtfloor
-x 4
-y 16
-end
-arch mine2
-x 4
-y 16
-end
-arch pstone_1
-x 4
-y 17
-end
-arch skeleton
-x 4
-y 17
-end
-arch pstone_1
-x 4
-y 18
-end
-arch pstone_1
-x 4
 y 19
 end
 arch pstone_1
 x 4
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 4
-y 21
-end
-arch mine2
-x 4
-y 21
-end
-arch pstone_1
-x 4
-y 22
-end
-arch pstone_1
-x 4
-y 23
-end
-arch pstone_1
-x 4
-y 24
-end
-arch mine2
-x 4
-y 24
-end
-arch dirtfloor
-x 5
-end
-arch mine2
-x 5
-end
-arch dirtfloor
-x 5
-y 1
-end
-arch gravestone
-msg
-Here lies Ender,
-   What a troubled soul.
-endmsg
-x 5
-y 1
-end
-arch dirtfloor
-x 5
-y 2
-end
-arch button_small
-x 5
-y 2
-weight 200050
-connected 1
-end
-arch gravestone
-msg
-Here lies LOCKJAW.
-  thank go
-endmsg
-x 5
-y 2
-end
-arch dirtfloor
-x 5
-y 3
-end
-arch gravestone
-x 5
-y 3
-end
-arch dirtfloor
-x 5
-y 4
-end
-arch gravestone
-x 5
-y 4
-end
-arch dirtfloor
-x 5
-y 5
-end
-arch mine6
-x 5
-y 5
-end
-arch dirtfloor
-x 5
-y 6
-end
-arch dirtfloor
-x 5
-y 7
-end
-arch dirtfloor
-x 5
-y 8
-end
-arch dirtfloor
-x 5
-y 9
-end
-arch dirtfloor
-x 5
-y 10
-end
-arch dirtfloor
-x 5
-y 11
-end
-arch dirtfloor
-x 5
-y 12
-end
-arch dirtfloor
-x 5
-y 13
-end
-arch dirtfloor
-x 5
-y 14
-end
-arch dirtfloor
-x 5
-y 15
-end
-arch dirtfloor
-x 5
-y 16
-end
-arch mine2
-x 5
-y 16
-end
-arch pstone_1
-x 5
-y 17
-end
-arch random_wealth
-x 5
-y 17
-end
-arch pstone_1
-x 5
-y 18
-end
-arch pstone_1
-x 5
-y 19
-end
-arch pstone_1
-x 5
 y 20
+end
+arch pstone_1
+x 5
+end
+arch dun_2_1_2
+x 5
+end
+arch pstone_1
+x 5
+y 1
 end
 arch skeleton
 x 5
+y 1
+end
+arch pstone_1
+x 5
+y 2
+end
+arch dun_2_1_2
+x 5
+y 2
+end
+arch pstone_1
+x 5
+y 3
+end
+arch skeleton
+x 5
+y 3
+end
+arch pstone_1
+x 5
+y 4
+end
+arch locked_door1
+x 5
+y 4
+end
+arch pstone_1
+x 5
+y 5
+end
+arch pstone_1
+x 5
+y 6
+end
+arch wraith
+x 5
+y 6
+end
+arch pstone_1
+x 5
+y 7
+end
+arch wraith
+x 5
+y 7
+end
+arch pstone_1
+x 5
+y 8
+end
+arch wraith
+x 5
+y 8
+end
+arch pstone_1
+x 5
+y 9
+end
+arch statue
+x 5
+y 9
+no_pass 0
+end
+arch pstone_1
+x 5
+y 10
+end
+arch pstone_1
+x 5
+y 11
+end
+arch wraith
+x 5
+y 11
+end
+arch pstone_1
+x 5
+y 12
+end
+arch corpse
+x 5
+y 12
+end
+arch wraith
+x 5
+y 12
+end
+arch pstone_1
+x 5
+y 13
+end
+arch pstone_1
+x 5
+y 14
+end
+arch pstone_1
+x 5
+y 15
+end
+arch pstone_1
+x 5
+y 16
+end
+arch door_2
+x 5
+y 16
+end
+arch pstone_1
+x 5
+y 17
+end
+arch spider_web
+x 5
+y 17
+end
+arch pstone_1
+x 5
+y 18
+end
+arch dun_2_1_2
+x 5
+y 18
+end
+arch pstone_1
+x 5
+y 19
+end
+arch ghost
+x 5
+y 19
+end
+arch pstone_1
+x 5
+y 20
+end
+arch dun_2_1_2
+x 5
 y 20
 end
 arch pstone_1
-x 5
-y 21
-end
-arch mine7
-x 5
-y 21
-end
-arch pstone_1
-x 5
-y 22
-end
-arch pstone_1
-x 5
-y 23
-end
-arch pstone_1
-x 5
-y 24
-end
-arch mine2
-x 5
-y 24
-end
-arch dirtfloor
 x 6
 end
-arch mine16
+arch dun_2_1_2
 x 6
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 1
 end
-arch mine3
+arch skeleton
 x 6
 y 1
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 2
 end
-arch mine3
+arch dun_2_1_2
 x 6
 y 2
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 3
 end
-arch mine3
+arch skeleton
 x 6
 y 3
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 4
 end
-arch mine3
+arch dun_1_4
 x 6
 y 4
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 5
 end
-arch mine13
-x 6
-y 5
-end
-arch dirtfloor
+arch pstone_1
 x 6
 y 6
 end
-arch dirtfloor
+arch spider_web
+x 6
+y 6
+end
+arch pstone_1
 x 6
 y 7
 end
-arch dirtfloor
+arch wraith
+x 6
+y 7
+end
+arch pstone_1
 x 6
 y 8
 end
-arch dirtfloor
+arch wraith
+x 6
+y 8
+end
+arch pstone_1
 x 6
 y 9
 end
-arch dirtfloor
+arch wraith
+x 6
+y 9
+end
+arch pstone_1
 x 6
 y 10
 end
-arch dirtfloor
+arch wraith
+x 6
+y 10
+end
+arch pstone_1
 x 6
 y 11
 end
-arch dirtfloor
+arch wraith
+x 6
+y 11
+end
+arch pstone_1
 x 6
 y 12
 end
-arch dirtfloor
+arch wraith
+x 6
+y 12
+end
+arch pstone_1
 x 6
 y 13
 end
-arch dirtfloor
+arch gravestone2
+x 6
+y 13
+end
+arch pstone_1
 x 6
 y 14
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 15
 end
-arch dirtfloor
+arch pstone_1
 x 6
 y 16
 end
-arch mine2
+arch dun_1_4
 x 6
 y 16
 end
@@ -989,6 +983,10 @@ x 6
 y 17
 end
 arch pstone_1
+x 6
+y 18
+end
+arch dun_2_1_2
 x 6
 y 18
 end
@@ -996,176 +994,176 @@ arch pstone_1
 x 6
 y 19
 end
+arch spider_web
+x 6
+y 19
+end
+arch ghost
+x 6
+y 19
+end
 arch pstone_1
 x 6
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 6
-y 21
-end
-arch door_look_1
-x 6
-y 21
-blocksview 1
+y 20
 end
 arch pstone_1
-x 6
-y 22
-end
-arch pstone_1
-x 6
-y 23
-end
-arch pstone_1
-x 6
-y 24
-end
-arch mine2
-x 6
-y 24
-end
-arch mine2
 x 7
 end
-arch cobblestones2
+arch dun_2_1_2
+x 7
+end
+arch pstone_1
 x 7
 y 1
 end
-arch random_spells
+arch statue
 x 7
 y 1
-end
-arch cobblestones2
-x 7
-y 2
-end
-arch random_wealth
-x 7
-y 2
-end
-arch cobblestones2
-x 7
-y 3
-end
-arch random_wealth
-x 7
-y 3
-end
-arch cobblestones2
-x 7
-y 4
-end
-arch dirtfloor
-x 7
-y 5
-end
-arch mine2
-x 7
-y 5
-end
-arch dirtfloor
-x 7
-y 6
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 7
-y 6
-end
-arch dirtfloor
-x 7
-y 7
-end
-arch dirtfloor
-x 7
-y 8
-end
-arch gravestone
-name graves
-x 7
-y 8
-end
-arch dirtfloor
-x 7
-y 9
-end
-arch button_lever
-x 7
-y 9
-connected 1
-end
-arch dirtfloor
-x 7
-y 10
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 7
-y 10
-end
-arch dirtfloor
-x 7
-y 11
-end
-arch poison
-face food.111
-x 7
-y 11
-end
-arch dirtfloor
-x 7
-y 12
-end
-arch generate_skeleton
-x 7
-y 12
-end
-arch dirtfloor
-x 7
-y 13
-end
-arch dirtfloor
-x 7
-y 14
-end
-arch gravestone
-name graves
-face zombie_gen.111
-x 7
-y 14
-end
-arch dirtfloor
-x 7
-y 15
-end
-arch chest
-x 7
-y 15
-end
-arch dirtfloor
-x 7
-y 16
-end
-arch mine2
-x 7
-y 16
-end
-arch pstone_1
-x 7
-y 17
-end
-arch pstone_1
-x 7
-y 18
+no_pass 0
 end
 arch skeleton
 x 7
+y 1
+end
+arch pstone_1
+x 7
+y 2
+end
+arch dun_2_1_2
+x 7
+y 2
+end
+arch pstone_1
+x 7
+y 3
+end
+arch skeleton
+x 7
+y 3
+end
+arch pstone_1
+x 7
+y 4
+end
+arch dun_2_1_2
+x 7
+y 4
+end
+arch pstone_1
+x 7
+y 5
+end
+arch spider_web
+x 7
+y 5
+end
+arch pstone_1
+x 7
+y 6
+end
+arch pstone_1
+x 7
+y 7
+end
+arch pstone_1
+x 7
+y 8
+end
+arch fountain
+x 7
+y 8
+end
+arch potion_generic
+name fountain
+face fountain.111
+sp 129
+x 7
+y 8
+material 256
+no_pick 1
+end
+arch wraith
+x 7
+y 8
+end
+arch pstone_1
+x 7
+y 9
+end
+arch wraith
+x 7
+y 9
+end
+arch pstone_1
+x 7
+y 10
+end
+arch wraith
+x 7
+y 10
+end
+arch pstone_1
+x 7
+y 11
+end
+arch generate_ghost
+x 7
+y 11
+end
+arch pstone_1
+x 7
+y 12
+end
+arch gravestone
+x 7
+y 12
+end
+arch pstone_1
+x 7
+y 13
+end
+arch statue
+x 7
+y 13
+no_pass 0
+end
+arch pstone_1
+x 7
+y 14
+end
+arch pstone_1
+x 7
+y 15
+end
+arch pstone_1
+x 7
+y 16
+end
+arch dun_2_1_2
+x 7
+y 16
+end
+arch pstone_1
+x 7
+y 17
+end
+arch pstone_1
+x 7
+y 18
+end
+arch dun_2_1_2
+x 7
 y 18
 end
 arch pstone_1
+x 7
+y 19
+end
+arch ghost
 x 7
 y 19
 end
@@ -1173,150 +1171,109 @@ arch pstone_1
 x 7
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 7
-y 21
-end
-arch mine6
-x 7
-y 21
+y 20
 end
 arch pstone_1
-x 7
-y 22
-end
-arch zombie
-x 7
-y 22
-end
-arch pstone_1
-x 7
-y 23
-end
-arch zombie
-x 7
-y 23
-end
-arch pstone_1
-x 7
-y 24
-end
-arch mine2
-x 7
-y 24
-end
-arch mine2
 x 8
 end
-arch cobblestones2
+arch dun_2_1_2
+x 8
+end
+arch pstone_1
 x 8
 y 1
 end
-arch cobblestones2
+arch skeleton
+x 8
+y 1
+end
+arch pstone_1
 x 8
 y 2
 end
-arch cobblestones2
+arch dun_1_3
+x 8
+y 2
+end
+arch pstone_1
 x 8
 y 3
 end
-arch cobblestones2
+arch gravestone2
+x 8
+y 3
+end
+arch skeleton
+x 8
+y 3
+end
+arch pstone_1
 x 8
 y 4
 end
-arch dirtfloor
+arch dun_2_1_2
+x 8
+y 4
+end
+arch pstone_1
 x 8
 y 5
 end
-arch mine9
+arch corpse
 x 8
 y 5
 end
-arch dirtfloor
+arch pstone_1
 x 8
 y 6
 end
-arch mine3
-x 8
-y 6
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 7
 end
-arch mine3
-x 8
-y 7
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 8
 end
-arch mine3
-x 8
-y 8
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 9
 end
-arch mine3
-x 8
-y 9
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 10
 end
-arch mine3
-x 8
-y 10
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 11
 end
-arch mine3
-x 8
-y 11
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 12
 end
-arch mine3
-x 8
-y 12
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 13
 end
-arch mine3
-x 8
-y 13
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 14
 end
-arch mine3
+arch generate_zombie
 x 8
 y 14
 end
-arch dirtfloor
+arch pstone_1
 x 8
 y 15
 end
-arch mine3
-x 8
-y 15
-end
-arch dirtfloor
+arch pstone_1
 x 8
 y 16
 end
-arch mine12
+arch dun_2_1_2
 x 8
 y 16
 end
@@ -1324,7 +1281,7 @@ arch pstone_1
 x 8
 y 17
 end
-arch mine8
+arch corpse
 x 8
 y 17
 end
@@ -1332,7 +1289,7 @@ arch pstone_1
 x 8
 y 18
 end
-arch mine3
+arch dun_1_3
 x 8
 y 18
 end
@@ -1340,7 +1297,11 @@ arch pstone_1
 x 8
 y 19
 end
-arch mine3
+arch generate_zombie
+x 8
+y 19
+end
+arch ghost
 x 8
 y 19
 end
@@ -1348,85 +1309,69 @@ arch pstone_1
 x 8
 y 20
 end
-arch mine3
+arch dun_2_1_2
 x 8
 y 20
 end
 arch pstone_1
-x 8
-y 21
-end
-arch mine13
-x 8
-y 21
-end
-arch pstone_1
-x 8
-y 22
-end
-arch zombie
-x 8
-y 22
-end
-arch pstone_1
-x 8
-y 23
-end
-arch zombie
-x 8
-y 23
-end
-arch pstone_1
-x 8
-y 24
-end
-arch mine2
-x 8
-y 24
-end
-arch mine2
 x 9
 end
-arch cobblestones2
+arch dun_2_1_2
+x 9
+end
+arch pstone_1
 x 9
 y 1
 end
-arch cobblestones2
+arch skeleton
+x 9
+y 1
+end
+arch pstone_1
 x 9
 y 2
 end
-arch cobblestones2
+arch door_2
+x 9
+y 2
+end
+arch pstone_1
 x 9
 y 3
 end
-arch cobblestones2
+arch skeleton
+x 9
+y 3
+end
+arch pstone_1
 x 9
 y 4
 end
-arch cobblestones2
+arch dun_2_2_3
 x 9
-y 5
-end
-arch magic_mouth
-msg
-Heh, Heh Heh, you thought you beat my
-haunted house, but you have only yet to 
-begin!  You shall perish...
-endmsg
-x 9
-y 5
-end
-arch cobblestones2
-x 9
-y 6
-end
-arch gate_closed_1
-x 9
-y 6
-speed 0.500000
-connected 2
+y 4
 end
 arch pstone_1
+x 9
+y 5
+end
+arch dun_3_2
+x 9
+y 5
+end
+arch pstone_1
+x 9
+y 6
+end
+arch dun_2_1_1
+x 9
+y 6
+end
+arch pstone_1
+x 9
+y 7
+end
+arch dun_2_1_1
 x 9
 y 7
 end
@@ -1434,7 +1379,15 @@ arch pstone_1
 x 9
 y 8
 end
+arch dun_2_1_1
+x 9
+y 8
+end
 arch pstone_1
+x 9
+y 9
+end
+arch dun_2_1_1
 x 9
 y 9
 end
@@ -1442,369 +1395,471 @@ arch pstone_1
 x 9
 y 10
 end
+arch dun_2_1_1
+x 9
+y 10
+end
 arch pstone_1
+x 9
+y 11
+end
+arch dun_2_1_1
 x 9
 y 11
 end
 arch pstone_1
 x 9
+y 12
+end
+arch dun_2_1_1
+x 9
+y 12
+end
+arch pstone_1
+x 9
+y 13
+end
+arch dun_2_1_1
+x 9
+y 13
+end
+arch pstone_1
+x 9
+y 14
+end
+arch dun_2_1_1
+x 9
+y 14
+end
+arch pstone_1
+x 9
+y 15
+end
+arch dun_3_2
+x 9
+y 15
+end
+arch pstone_1
+x 9
+y 16
+end
+arch dun_2_2_4
+x 9
+y 16
+end
+arch pstone_1
+x 9
+y 17
+end
+arch pstone_1
+x 9
+y 18
+end
+arch locked_door1
+x 9
+y 18
+end
+arch pstone_1
+x 9
+y 19
+end
+arch ghost
+x 9
+y 19
+end
+arch pstone_1
+x 9
+y 20
+end
+arch dun_2_1_2
+x 9
+y 20
+end
+arch pstone_1
+x 10
+end
+arch dun_2_1_2
+x 10
+end
+arch pstone_1
+x 10
+y 1
+end
+arch skeleton
+x 10
+y 1
+end
+arch pstone_1
+x 10
+y 2
+end
+arch dun_1_4
+x 10
+y 2
+end
+arch pstone_1
+x 10
+y 3
+end
+arch skeleton
+x 10
+y 3
+end
+arch pstone_1
+x 10
+y 4
+end
+arch skeleton
+x 10
+y 4
+end
+arch pstone_1
+x 10
+y 5
+end
+arch dun_2_1_2
+x 10
+y 5
+end
+arch pstone_1
+x 10
+y 6
+end
+arch statue
+x 10
+y 6
+no_pass 0
+end
+arch pstone_1
+x 10
+y 7
+end
+arch skeleton
+x 10
+y 7
+end
+arch pstone_1
+x 10
+y 8
+end
+arch skeleton
+x 10
+y 8
+end
+arch pstone_1
+x 10
+y 9
+end
+arch wraith
+x 10
+y 9
+end
+arch pstone_1
+x 10
+y 10
+end
+arch generate_ghost
+x 10
+y 10
+end
+arch pstone_1
+x 10
+y 11
+end
+arch pstone_1
+x 10
+y 12
+end
+arch pstone_1
+x 10
+y 13
+end
+arch pstone_1
+x 10
+y 14
+end
+arch pstone_1
+x 10
+y 15
+end
+arch dun_2_1_2
+x 10
+y 15
+end
+arch pstone_1
+x 10
+y 16
+end
+arch wraith
+x 10
+y 16
+end
+arch pstone_1
+x 10
+y 17
+end
+arch generate_zombie
+x 10
+y 17
+end
+arch wraith
+x 10
+y 17
+end
+arch pstone_1
+x 10
+y 18
+end
+arch dun_1_4
+x 10
+y 18
+end
+arch pstone_1
+x 10
+y 19
+end
+arch ghost
+x 10
+y 19
+end
+arch pstone_1
+x 10
+y 20
+end
+arch dun_2_1_2
+x 10
+y 20
+end
+arch pstone_1
+x 11
+end
+arch dun_2_1_2
+x 11
+end
+arch pstone_1
+x 11
+y 1
+end
+arch statue
+x 11
+y 1
+no_pass 0
+end
+arch skeleton
+x 11
+y 1
+end
+arch pstone_1
+x 11
+y 2
+end
+arch dun_2_1_2
+x 11
+y 2
+end
+arch pstone_1
+x 11
+y 3
+end
+arch skeleton
+x 11
+y 3
+end
+arch pstone_1
+x 11
+y 4
+end
+arch skeleton
+x 11
+y 4
+end
+arch pstone_1
+x 11
+y 5
+end
+arch dun_2_1_2
+x 11
+y 5
+end
+arch pstone_1
+x 11
+y 6
+end
+arch skeleton
+x 11
+y 6
+end
+arch pstone_1
+x 11
+y 7
+end
+arch spider_web
+x 11
+y 7
+end
+arch skeleton
+x 11
+y 7
+end
+arch pstone_1
+x 11
+y 8
+end
+arch skeleton
+x 11
+y 8
+end
+arch pstone_1
+x 11
+y 9
+end
+arch wraith
+x 11
+y 9
+end
+arch pstone_1
+x 11
+y 10
+end
+arch generate_ghost
+x 11
+y 10
+end
+arch wraith
+x 11
+y 10
+end
+arch pstone_1
+x 11
+y 11
+end
+arch wraith
+x 11
+y 11
+end
+arch pstone_1
+x 11
 y 12
 end
 arch generate_zombie
-x 9
+x 11
 y 12
 end
 arch pstone_1
-x 9
+x 11
 y 13
 end
 arch pstone_1
-x 9
+x 11
 y 14
 end
 arch pstone_1
-x 9
+x 11
+y 15
+end
+arch dun_2_1_2
+x 11
 y 15
 end
 arch pstone_1
-x 9
+x 11
+y 16
+end
+arch wraith
+x 11
 y 16
 end
 arch pstone_1
-x 9
+x 11
+y 17
+end
+arch wraith
+x 11
 y 17
 end
 arch pstone_1
-x 9
+x 11
+y 18
+end
+arch dun_2_1_2
+x 11
 y 18
 end
 arch pstone_1
-x 9
+x 11
 y 19
 end
-arch random_shield
-x 9
+arch ghost
+x 11
 y 19
 end
 arch pstone_1
-x 9
+x 11
 y 20
 end
-arch random_weapon
-x 9
+arch dun_2_1_2
+x 11
 y 20
 end
 arch pstone_1
-x 9
-y 21
+x 12
 end
-arch mine2
-x 9
-y 21
+arch dun_2_1_2
+x 12
 end
 arch pstone_1
-x 9
-y 22
-end
-arch zombie
-x 9
-y 22
-end
-arch pstone_1
-x 9
-y 23
-end
-arch zombie
-x 9
-y 23
-end
-arch pstone_1
-x 9
-y 24
-end
-arch mine2
-x 9
-y 24
-end
-arch mine2
-x 10
-end
-arch cobblestones2
-x 10
+x 12
 y 1
 end
-arch cobblestones2
-x 10
+arch skeleton
+x 12
+y 1
+end
+arch pstone_1
+x 12
 y 2
 end
-arch stair2_up
-name death's head
-slaying creepy.house2
-face skull.111
-hp 12
-sp 11
-x 10
+arch dun_2_1_2
+x 12
 y 2
 end
-arch cobblestones2
-x 10
+arch pstone_1
+x 12
 y 3
 end
-arch cobblestones2
-x 10
+arch skeleton
+x 12
+y 3
+end
+arch pstone_1
+x 12
 y 4
 end
-arch cobblestones2
-x 10
+arch skeleton
+x 12
+y 4
+end
+arch pstone_1
+x 12
 y 5
 end
-arch cobblestones2
-x 10
+arch dun_2_1_2
+x 12
+y 5
+end
+arch pstone_1
+x 12
 y 6
 end
-arch mine6
-x 10
+arch skeleton
+x 12
 y 6
 end
 arch pstone_1
-x 10
+x 12
 y 7
 end
-arch pstone_1
-x 10
-y 8
-end
-arch pstone_1
-x 10
-y 9
-end
-arch pstone_1
-x 10
-y 10
-end
-arch pstone_1
-x 10
-y 11
-end
-arch pstone_1
-x 10
-y 12
-end
-arch pstone_1
-x 10
-y 13
-end
-arch pstone_1
-x 10
-y 14
-end
-arch pstone_1
-x 10
-y 15
-end
-arch pstone_1
-x 10
-y 16
-end
-arch pstone_1
-x 10
-y 17
-end
-arch pstone_1
-x 10
-y 18
-end
-arch pstone_1
-x 10
-y 19
-end
-arch pstone_1
-x 10
-y 20
-end
-arch pstone_1
-x 10
-y 21
-end
-arch mine2
-x 10
-y 21
-end
-arch pstone_1
-x 10
-y 22
-end
-arch zombie
-x 10
-y 22
-end
-arch pstone_1
-x 10
-y 23
-end
-arch zombie
-x 10
-y 23
-end
-arch pstone_1
-x 10
-y 24
-end
-arch mine2
-x 10
-y 24
-end
-arch mine2
-x 11
-end
-arch cobblestones2
-x 11
-y 1
-end
-arch cobblestones2
-x 11
-y 2
-end
-arch cobblestones2
-x 11
-y 3
-end
-arch cobblestones2
-x 11
-y 4
-end
-arch cobblestones2
-x 11
-y 5
-end
-arch cobblestones2
-x 11
-y 6
-end
-arch mine2
-x 11
-y 6
-end
-arch pstone_1
-x 11
-y 7
-end
-arch pstone_1
-x 11
-y 8
-end
-arch pstone_1
-x 11
-y 9
-end
-arch pstone_1
-x 11
-y 10
-end
-arch pstone_1
-x 11
-y 11
-end
-arch pstone_1
-x 11
-y 12
-end
-arch pstone_1
-x 11
-y 13
-end
-arch pstone_1
-x 11
-y 14
-end
-arch pstone_1
-x 11
-y 15
-end
-arch pstone_1
-x 11
-y 16
-end
-arch pstone_1
-x 11
-y 17
-end
-arch pstone_1
-x 11
-y 18
-end
-arch pstone_1
-x 11
-y 19
-end
-arch pstone_1
-x 11
-y 20
-end
-arch pstone_1
-x 11
-y 21
-end
-arch mine2
-x 11
-y 21
-end
-arch pstone_1
-x 11
-y 22
-end
-arch zombie
-x 11
-y 22
-end
-arch pstone_1
-x 11
-y 23
-end
-arch zombie
-x 11
-y 23
-end
-arch pstone_1
-x 11
-y 24
-end
-arch mine2
-x 11
-y 24
-end
-arch mine2
-x 12
-end
-arch cobblestones2
-x 12
-y 1
-end
-arch cobblestones2
-x 12
-y 2
-end
-arch cobblestones2
-x 12
-y 3
-end
-arch cobblestones2
-x 12
-y 4
-end
-arch cobblestones2
-x 12
-y 5
-end
-arch cobblestones2
-x 12
-y 6
-end
-arch mine2
-x 12
-y 6
-end
-arch pstone_1
+arch skeleton
 x 12
 y 7
 end
@@ -1812,126 +1867,182 @@ arch pstone_1
 x 12
 y 8
 end
+arch skeleton
+x 12
+y 8
+end
 arch pstone_1
 x 12
 y 9
 end
-arch pstone_1
+arch gravestone
 x 12
-y 10
-end
-arch pstone_1
-x 12
-y 11
-end
-arch pstone_1
-x 12
-y 12
-end
-arch pstone_1
-x 12
-y 13
-end
-arch pstone_1
-x 12
-y 14
-end
-arch pstone_1
-x 12
-y 15
-end
-arch pstone_1
-x 12
-y 16
-end
-arch pstone_1
-x 12
-y 17
-end
-arch pstone_1
-x 12
-y 18
-end
-arch pstone_1
-x 12
-y 19
-end
-arch pstone_1
-x 12
-y 20
-end
-arch pstone_1
-x 12
-y 21
-end
-arch mine2
-x 12
-y 21
-end
-arch pstone_1
-x 12
-y 22
-end
-arch pstone_1
-x 12
-y 23
-end
-arch pstone_1
-x 12
-y 24
-end
-arch mine2
-x 12
-y 24
-end
-arch mine2
-x 13
-end
-arch cobblestones2
-x 13
-y 1
-end
-arch chest
-x 13
-y 1
-end
-arch cobblestones2
-x 13
-y 2
-end
-arch chest
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 3
-end
-arch cobblestones2
-x 13
-y 4
-end
-arch cobblestones2
-x 13
-y 5
-end
-arch cobblestones2
-x 13
-y 6
-end
-arch mine2
-x 13
-y 6
-end
-arch pstone_1
-x 13
-y 7
+y 9
 end
 arch generate_zombie
+x 12
+y 9
+end
+arch pstone_1
+x 12
+y 10
+end
+arch wraith
+x 12
+y 10
+end
+arch pstone_1
+x 12
+y 11
+end
+arch wraith
+x 12
+y 11
+end
+arch pstone_1
+x 12
+y 12
+end
+arch statue
+x 12
+y 12
+no_pass 0
+end
+arch pstone_1
+x 12
+y 13
+end
+arch pstone_1
+x 12
+y 14
+end
+arch pstone_1
+x 12
+y 15
+end
+arch dun_2_1_2
+x 12
+y 15
+end
+arch pstone_1
+x 12
+y 16
+end
+arch spider_web
+x 12
+y 16
+end
+arch wraith
+x 12
+y 16
+end
+arch pstone_1
+x 12
+y 17
+end
+arch wraith
+x 12
+y 17
+end
+arch pstone_1
+x 12
+y 18
+end
+arch dun_2_1_2
+x 12
+y 18
+end
+arch pstone_1
+x 12
+y 19
+end
+arch ghost
+x 12
+y 19
+end
+arch pstone_1
+x 12
+y 20
+end
+arch dun_2_1_2
+x 12
+y 20
+end
+arch pstone_1
+x 13
+end
+arch dun_2_1_2
+x 13
+end
+arch pstone_1
+x 13
+y 1
+end
+arch skeleton
+x 13
+y 1
+end
+arch pstone_1
+x 13
+y 2
+end
+arch dun_2_1_2
+x 13
+y 2
+end
+arch pstone_1
+x 13
+y 3
+end
+arch gravestone2
+x 13
+y 3
+end
+arch skeleton
+x 13
+y 3
+end
+arch pstone_1
+x 13
+y 4
+end
+arch skeleton
+x 13
+y 4
+end
+arch pstone_1
+x 13
+y 5
+end
+arch dun_1_3
+x 13
+y 5
+end
+arch pstone_1
+x 13
+y 6
+end
+arch corpse
+x 13
+y 6
+end
+arch skeleton
+x 13
+y 6
+end
+arch pstone_1
+x 13
+y 7
+end
+arch skeleton
 x 13
 y 7
 end
 arch pstone_1
+x 13
+y 8
+end
+arch skeleton
 x 13
 y 8
 end
@@ -1943,7 +2054,15 @@ arch pstone_1
 x 13
 y 10
 end
+arch wraith
+x 13
+y 10
+end
 arch pstone_1
+x 13
+y 11
+end
+arch wraith
 x 13
 y 11
 end
@@ -1955,6 +2074,10 @@ arch pstone_1
 x 13
 y 13
 end
+arch spider_web
+x 13
+y 13
+end
 arch pstone_1
 x 13
 y 14
@@ -1963,7 +2086,15 @@ arch pstone_1
 x 13
 y 15
 end
+arch dun_1_3
+x 13
+y 15
+end
 arch pstone_1
+x 13
+y 16
+end
+arch wraith
 x 13
 y 16
 end
@@ -1971,7 +2102,15 @@ arch pstone_1
 x 13
 y 17
 end
+arch wraith
+x 13
+y 17
+end
 arch pstone_1
+x 13
+y 18
+end
+arch dun_2_1_2
 x 13
 y 18
 end
@@ -1979,45 +2118,34 @@ arch pstone_1
 x 13
 y 19
 end
+arch ghost
+x 13
+y 19
+end
 arch pstone_1
 x 13
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 13
-y 21
-end
-arch mine2
-x 13
-y 21
-end
-arch pstone_1
-x 13
-y 22
-end
-arch pstone_1
-x 13
-y 23
-end
-arch pstone_1
-x 13
-y 24
-end
-arch mine2
-x 13
-y 24
+y 20
 end
 arch pstone_1
 x 14
 end
-arch mine16
+arch dun_2_1_2
 x 14
 end
 arch pstone_1
 x 14
 y 1
 end
-arch mine3
+arch statue
+x 14
+y 1
+no_pass 0
+end
+arch skeleton
 x 14
 y 1
 end
@@ -2025,7 +2153,7 @@ arch pstone_1
 x 14
 y 2
 end
-arch mine3
+arch dun_2_1_2
 x 14
 y 2
 end
@@ -2033,7 +2161,11 @@ arch pstone_1
 x 14
 y 3
 end
-arch mine3
+arch generate_zombie
+x 14
+y 3
+end
+arch skeleton
 x 14
 y 3
 end
@@ -2041,7 +2173,7 @@ arch pstone_1
 x 14
 y 4
 end
-arch mine3
+arch skeleton
 x 14
 y 4
 end
@@ -2049,7 +2181,7 @@ arch pstone_1
 x 14
 y 5
 end
-arch mine3
+arch door_2
 x 14
 y 5
 end
@@ -2057,7 +2189,7 @@ arch pstone_1
 x 14
 y 6
 end
-arch mine17
+arch skeleton
 x 14
 y 6
 end
@@ -2065,7 +2197,7 @@ arch pstone_1
 x 14
 y 7
 end
-arch mine3
+arch skeleton
 x 14
 y 7
 end
@@ -2073,7 +2205,7 @@ arch pstone_1
 x 14
 y 8
 end
-arch mine5
+arch skeleton
 x 14
 y 8
 end
@@ -2081,25 +2213,19 @@ arch pstone_1
 x 14
 y 9
 end
-arch door_look_2
+arch generate_ghost
 x 14
 y 9
-blocksview 1
 end
 arch pstone_1
 x 14
 y 10
 end
-arch door_look_2
+arch generate_zombie
 x 14
 y 10
-blocksview 1
 end
 arch pstone_1
-x 14
-y 11
-end
-arch mine8
 x 14
 y 11
 end
@@ -2107,15 +2233,7 @@ arch pstone_1
 x 14
 y 12
 end
-arch mine3
-x 14
-y 12
-end
 arch pstone_1
-x 14
-y 13
-end
-arch mine3
 x 14
 y 13
 end
@@ -2123,15 +2241,11 @@ arch pstone_1
 x 14
 y 14
 end
-arch mine3
-x 14
-y 14
-end
 arch pstone_1
 x 14
 y 15
 end
-arch mine3
+arch door_2
 x 14
 y 15
 end
@@ -2139,7 +2253,7 @@ arch pstone_1
 x 14
 y 16
 end
-arch mine3
+arch wraith
 x 14
 y 16
 end
@@ -2147,7 +2261,7 @@ arch pstone_1
 x 14
 y 17
 end
-arch mine5
+arch wraith
 x 14
 y 17
 end
@@ -2155,59 +2269,42 @@ arch pstone_1
 x 14
 y 18
 end
-arch door_look_2
+arch dun_2_1_2
 x 14
 y 18
-blocksview 1
 end
 arch pstone_1
 x 14
 y 19
 end
-arch door_look_2
+arch statue
 x 14
 y 19
-blocksview 1
+no_pass 0
+end
+arch ghost
+x 14
+y 19
 end
 arch pstone_1
 x 14
 y 20
 end
-arch mine8
+arch dun_2_1_2
 x 14
 y 20
 end
 arch pstone_1
-x 14
-y 21
-end
-arch mine12
-x 14
-y 21
-end
-arch pstone_1
-x 14
-y 22
-end
-arch pstone_1
-x 14
-y 23
-end
-arch pstone_1
-x 14
-y 24
-end
-arch mine2
-x 14
-y 24
-end
-arch pstone_1
 x 15
 end
-arch mine2
+arch dun_2_1_2
 x 15
 end
 arch pstone_1
+x 15
+y 1
+end
+arch skeleton
 x 15
 y 1
 end
@@ -2215,7 +2312,7 @@ arch pstone_1
 x 15
 y 2
 end
-arch chest
+arch dun_2_1_2
 x 15
 y 2
 end
@@ -2223,7 +2320,7 @@ arch pstone_1
 x 15
 y 3
 end
-arch random_wealth
+arch skeleton
 x 15
 y 3
 end
@@ -2231,7 +2328,12 @@ arch pstone_1
 x 15
 y 4
 end
-arch random_talisman
+arch statue
+x 15
+y 4
+no_pass 0
+end
+arch skeleton
 x 15
 y 4
 end
@@ -2239,16 +2341,15 @@ arch pstone_1
 x 15
 y 5
 end
-arch button_lever
+arch dun_1_4
 x 15
 y 5
-connected 2
 end
 arch pstone_1
 x 15
 y 6
 end
-arch mine2
+arch skeleton
 x 15
 y 6
 end
@@ -2256,11 +2357,27 @@ arch pstone_1
 x 15
 y 7
 end
+arch corpse
+x 15
+y 7
+end
+arch skeleton
+x 15
+y 7
+end
 arch pstone_1
 x 15
 y 8
 end
+arch skeleton
+x 15
+y 8
+end
 arch pstone_1
+x 15
+y 9
+end
+arch skeleton
 x 15
 y 9
 end
@@ -2276,231 +2393,351 @@ arch pstone_1
 x 15
 y 11
 end
-arch pstone_1
+arch skeleton
 x 15
-y 12
-end
-arch pstone_1
-x 15
-y 13
-end
-arch pstone_1
-x 15
-y 14
-end
-arch pstone_1
-x 15
-y 15
-end
-arch pstone_1
-x 15
-y 16
-end
-arch pstone_1
-x 15
-y 17
-end
-arch pstone_1
-x 15
-y 18
-end
-arch pstone_1
-x 15
-y 19
-end
-arch pstone_1
-x 15
-y 20
-end
-arch pstone_1
-x 15
-y 21
-end
-arch pstone_1
-x 15
-y 22
-end
-arch pstone_1
-x 15
-y 23
-end
-arch pstone_1
-x 15
-y 24
-end
-arch mine2
-x 15
-y 24
-end
-arch pstone_1
-x 16
-end
-arch mine2
-x 16
-end
-arch pstone_1
-x 16
-y 1
-end
-arch pstone_1
-x 16
-y 2
-end
-arch pstone_1
-x 16
-y 3
-end
-arch pstone_1
-x 16
-y 4
-end
-arch pstone_1
-x 16
-y 5
-end
-arch pstone_1
-x 16
-y 6
-end
-arch mine2
-x 16
-y 6
-end
-arch pstone_1
-x 16
-y 7
-end
-arch pstone_1
-x 16
-y 8
-end
-arch pstone_1
-x 16
-y 9
-end
-arch pstone_1
-x 16
-y 10
-end
-arch pstone_1
-x 16
 y 11
 end
 arch pstone_1
-x 16
-y 12
-end
-arch pstone_1
-x 16
-y 13
-end
-arch pstone_1
-x 16
-y 14
-end
-arch pstone_1
-x 16
-y 15
-end
-arch pstone_1
-x 16
-y 16
-end
-arch pstone_1
-x 16
-y 17
-end
-arch pstone_1
-x 16
-y 18
-end
-arch pstone_1
-x 16
-y 19
-end
-arch pstone_1
-x 16
-y 20
-end
-arch pstone_1
-x 16
-y 21
-end
-arch pstone_1
-x 16
-y 22
-end
-arch pstone_1
-x 16
-y 23
-end
-arch pstone_1
-x 16
-y 24
-end
-arch mine2
-x 16
-y 24
-end
-arch pstone_1
-x 17
-end
-arch mine2
-x 17
-end
-arch pstone_1
-x 17
-y 1
-end
-arch pstone_1
-x 17
-y 2
-end
-arch pstone_1
-x 17
-y 3
-end
-arch pstone_1
-x 17
-y 4
-end
-arch pstone_1
-x 17
-y 5
-end
-arch pstone_1
-x 17
-y 6
-end
-arch mine2
-x 17
-y 6
-end
-arch pstone_1
-x 17
-y 7
-end
-arch pstone_1
-x 17
-y 8
-end
-arch pstone_1
-x 17
-y 9
-end
-arch pstone_1
-x 17
-y 10
-end
-arch pstone_1
-x 17
-y 11
-end
-arch pstone_1
-x 17
+x 15
 y 12
 end
 arch skeleton
+x 15
+y 12
+end
+arch pstone_1
+x 15
+y 13
+end
+arch generate_ghost
+x 15
+y 13
+end
+arch pstone_1
+x 15
+y 14
+end
+arch pstone_1
+x 15
+y 15
+end
+arch dun_1_4
+x 15
+y 15
+end
+arch pstone_1
+x 15
+y 16
+end
+arch wraith
+x 15
+y 16
+end
+arch pstone_1
+x 15
+y 17
+end
+arch generate_zombie
+x 15
+y 17
+end
+arch wraith
+x 15
+y 17
+end
+arch pstone_1
+x 15
+y 18
+end
+arch dun_2_1_2
+x 15
+y 18
+end
+arch pstone_1
+x 15
+y 19
+end
+arch ghost
+x 15
+y 19
+end
+arch pstone_1
+x 15
+y 20
+end
+arch dun_2_1_2
+x 15
+y 20
+end
+arch pstone_1
+x 16
+end
+arch dun_2_1_2
+x 16
+end
+arch pstone_1
+x 16
+y 1
+end
+arch corpse
+x 16
+y 1
+end
+arch skeleton
+x 16
+y 1
+end
+arch pstone_1
+x 16
+y 2
+end
+arch dun_2_1_2
+x 16
+y 2
+end
+arch pstone_1
+x 16
+y 3
+end
+arch corpse
+x 16
+y 3
+end
+arch skeleton
+x 16
+y 3
+end
+arch pstone_1
+x 16
+y 4
+end
+arch gravestone2
+x 16
+y 4
+end
+arch skeleton
+x 16
+y 4
+end
+arch pstone_1
+x 16
+y 5
+end
+arch dun_2_1_2
+x 16
+y 5
+end
+arch pstone_1
+x 16
+y 6
+end
+arch skeleton
+x 16
+y 6
+end
+arch pstone_1
+x 16
+y 7
+end
+arch skeleton
+x 16
+y 7
+end
+arch pstone_1
+x 16
+y 8
+end
+arch skeleton
+x 16
+y 8
+end
+arch pstone_1
+x 16
+y 9
+end
+arch skeleton
+x 16
+y 9
+end
+arch pstone_1
+x 16
+y 10
+end
+arch gravestone
+x 16
+y 10
+end
+arch pstone_1
+x 16
+y 11
+end
+arch pstone_1
+x 16
+y 12
+end
+arch skeleton
+x 16
+y 12
+end
+arch pstone_1
+x 16
+y 13
+end
+arch pstone_1
+x 16
+y 14
+end
+arch pstone_1
+x 16
+y 15
+end
+arch dun_2_1_2
+x 16
+y 15
+end
+arch pstone_1
+x 16
+y 16
+end
+arch wraith
+x 16
+y 16
+end
+arch pstone_1
+x 16
+y 17
+end
+arch wraith
+x 16
+y 17
+end
+arch pstone_1
+x 16
+y 18
+end
+arch dun_2_1_2
+x 16
+y 18
+end
+arch pstone_1
+x 16
+y 19
+end
+arch generate_ghost
+x 16
+y 19
+end
+arch pstone_1
+x 16
+y 20
+end
+arch dun_2_1_2
+x 16
+y 20
+end
+arch pstone_1
+x 17
+end
+arch dun_2_1_2
+x 17
+end
+arch pstone_1
+x 17
+y 1
+end
+arch gravestone
+x 17
+y 1
+end
+arch skeleton
+x 17
+y 1
+end
+arch pstone_1
+x 17
+y 2
+end
+arch dun_3_3
+x 17
+y 2
+end
+arch pstone_1
+x 17
+y 3
+end
+arch dun_2_1_1
+x 17
+y 3
+end
+arch pstone_1
+x 17
+y 4
+end
+arch dun_2_1_1
+x 17
+y 4
+end
+arch pstone_1
+x 17
+y 5
+end
+arch dun_4
+x 17
+y 5
+end
+arch pstone_1
+x 17
+y 6
+end
+arch dun_2_1_1
+x 17
+y 6
+end
+arch pstone_1
+x 17
+y 7
+end
+arch dun_2_1_1
+x 17
+y 7
+end
+arch pstone_1
+x 17
+y 8
+end
+arch dun_2_1_1
+x 17
+y 8
+end
+arch pstone_1
+x 17
+y 9
+end
+arch dun_2_1_1
+x 17
+y 9
+end
+arch pstone_1
+x 17
+y 10
+end
+arch dun_2_1_1
+x 17
+y 10
+end
+arch pstone_1
+x 17
+y 11
+end
+arch dun_2_1_1
+x 17
+y 11
+end
+arch pstone_1
+x 17
+y 12
+end
+arch dun_2_1_1
 x 17
 y 12
 end
@@ -2508,7 +2745,15 @@ arch pstone_1
 x 17
 y 13
 end
+arch dun_2_1_1
+x 17
+y 13
+end
 arch pstone_1
+x 17
+y 14
+end
+arch dun_2_1_1
 x 17
 y 14
 end
@@ -2516,7 +2761,15 @@ arch pstone_1
 x 17
 y 15
 end
+arch dun_4
+x 17
+y 15
+end
 arch pstone_1
+x 17
+y 16
+end
+arch dun_2_1_1
 x 17
 y 16
 end
@@ -2524,7 +2777,15 @@ arch pstone_1
 x 17
 y 17
 end
+arch dun_2_1_1
+x 17
+y 17
+end
 arch pstone_1
+x 17
+y 18
+end
+arch dun_3_1
 x 17
 y 18
 end
@@ -2532,37 +2793,33 @@ arch pstone_1
 x 17
 y 19
 end
+arch spider_web
+x 17
+y 19
+end
 arch pstone_1
 x 17
 y 20
 end
-arch pstone_1
+arch dun_2_1_2
 x 17
-y 21
-end
-arch pstone_1
-x 17
-y 22
-end
-arch pstone_1
-x 17
-y 23
-end
-arch pstone_1
-x 17
-y 24
-end
-arch mine2
-x 17
-y 24
+y 20
 end
 arch pstone_1
 x 18
 end
-arch mine2
+arch dun_2_1_2
 x 18
 end
 arch pstone_1
+x 18
+y 1
+end
+arch gravestone2
+x 18
+y 1
+end
+arch skeleton
 x 18
 y 1
 end
@@ -2570,7 +2827,15 @@ arch pstone_1
 x 18
 y 2
 end
+arch dun_1_3
+x 18
+y 2
+end
 arch pstone_1
+x 18
+y 3
+end
+arch skeleton
 x 18
 y 3
 end
@@ -2578,7 +2843,19 @@ arch pstone_1
 x 18
 y 4
 end
+arch gravestone
+x 18
+y 4
+end
+arch skeleton
+x 18
+y 4
+end
 arch pstone_1
+x 18
+y 5
+end
+arch dun_2_1_2
 x 18
 y 5
 end
@@ -2586,45 +2863,19 @@ arch pstone_1
 x 18
 y 6
 end
-arch mine7
-x 18
-y 6
-end
 arch pstone_1
 x 18
 y 7
-end
-arch glue
-name Floor
-face pstone_1.111
-x 18
-y 7
-end
-arch door_look_2
-x 18
-y 7
-blocksview 1
 end
 arch pstone_1
 x 18
 y 8
 end
-arch glue
-name Floor
-face pstone_1.111
+arch corpse
 x 18
 y 8
-end
-arch door_look_2
-x 18
-y 8
-blocksview 1
 end
 arch pstone_1
-x 18
-y 9
-end
-arch mine10
 x 18
 y 9
 end
@@ -2632,7 +2883,7 @@ arch pstone_1
 x 18
 y 10
 end
-arch mine3
+arch zombie
 x 18
 y 10
 end
@@ -2640,7 +2891,7 @@ arch pstone_1
 x 18
 y 11
 end
-arch mine5
+arch zombie
 x 18
 y 11
 end
@@ -2648,25 +2899,19 @@ arch pstone_1
 x 18
 y 12
 end
-arch door_look_2
+arch zombie
 x 18
 y 12
-blocksview 1
 end
 arch pstone_1
 x 18
 y 13
 end
-arch door_look_2
+arch zombie
 x 18
 y 13
-blocksview 1
 end
 arch pstone_1
-x 18
-y 14
-end
-arch mine8
 x 18
 y 14
 end
@@ -2674,7 +2919,7 @@ arch pstone_1
 x 18
 y 15
 end
-arch mine3
+arch dun_2_1_2
 x 18
 y 15
 end
@@ -2682,7 +2927,7 @@ arch pstone_1
 x 18
 y 16
 end
-arch mine3
+arch zombie
 x 18
 y 16
 end
@@ -2690,7 +2935,7 @@ arch pstone_1
 x 18
 y 17
 end
-arch mine3
+arch zombie
 x 18
 y 17
 end
@@ -2698,7 +2943,7 @@ arch pstone_1
 x 18
 y 18
 end
-arch mine4
+arch dun_1_3
 x 18
 y 18
 end
@@ -2706,50 +2951,33 @@ arch pstone_1
 x 18
 y 19
 end
-arch door_look_2
+arch generate_ghost
 x 18
 y 19
-blocksview 1
 end
 arch pstone_1
 x 18
 y 20
 end
-arch mine8
+arch dun_2_1_2
 x 18
 y 20
 end
 arch pstone_1
-x 18
-y 21
-end
-arch mine4
-x 18
-y 21
-end
-arch pstone_1
-x 18
-y 22
-end
-arch pstone_1
-x 18
-y 23
-end
-arch pstone_1
-x 18
-y 24
-end
-arch mine2
-x 18
-y 24
-end
-arch pstone_1
 x 19
 end
-arch mine2
+arch dun_2_1_2
 x 19
 end
 arch pstone_1
+x 19
+y 1
+end
+arch generate_zombie
+x 19
+y 1
+end
+arch skeleton
 x 19
 y 1
 end
@@ -2757,7 +2985,15 @@ arch pstone_1
 x 19
 y 2
 end
+arch door_2
+x 19
+y 2
+end
 arch pstone_1
+x 19
+y 3
+end
+arch skeleton
 x 19
 y 3
 end
@@ -2765,41 +3001,29 @@ arch pstone_1
 x 19
 y 4
 end
-arch glue
-name Floor
-face pstone_1.111
+arch skeleton
 x 19
-y 5
+y 4
 end
 arch pstone_1
 x 19
 y 5
 end
-arch glue
-name Floor
-face pstone_1.111
+arch dun_2_1_2
 x 19
-y 6
+y 5
 end
 arch pstone_1
 x 19
 y 6
 end
-arch glue
-name Floor
-face pstone_1.111
+arch spider_web
 x 19
-y 7
+y 6
 end
 arch pstone_1
 x 19
 y 7
-end
-arch glue
-name Floor
-face pstone_1.111
-x 19
-y 8
 end
 arch pstone_1
 x 19
@@ -2809,7 +3033,7 @@ arch pstone_1
 x 19
 y 9
 end
-arch mine2
+arch generate_ghost
 x 19
 y 9
 end
@@ -2817,7 +3041,7 @@ arch pstone_1
 x 19
 y 10
 end
-arch random_weapon
+arch zombie
 x 19
 y 10
 end
@@ -2829,7 +3053,15 @@ arch pstone_1
 x 19
 y 12
 end
+arch generate_ghost
+x 19
+y 12
+end
 arch pstone_1
+x 19
+y 13
+end
+arch zombie
 x 19
 y 13
 end
@@ -2837,7 +3069,15 @@ arch pstone_1
 x 19
 y 14
 end
+arch zombie
+x 19
+y 14
+end
 arch pstone_1
+x 19
+y 15
+end
+arch dun_2_1_2
 x 19
 y 15
 end
@@ -2845,7 +3085,15 @@ arch pstone_1
 x 19
 y 16
 end
+arch zombie
+x 19
+y 16
+end
 arch pstone_1
+x 19
+y 17
+end
+arch zombie
 x 19
 y 17
 end
@@ -2853,7 +3101,7 @@ arch pstone_1
 x 19
 y 18
 end
-arch mine2
+arch door_2
 x 19
 y 18
 end
@@ -2861,49 +3109,25 @@ arch pstone_1
 x 19
 y 19
 end
-arch mouse
-x 19
-y 19
-end
 arch pstone_1
 x 19
 y 20
 end
-arch food
+arch dun_2_1_2
 x 19
 y 20
 end
 arch pstone_1
-x 19
-y 21
-end
-arch mine2
-x 19
-y 21
-end
-arch pstone_1
-x 19
-y 22
-end
-arch pstone_1
-x 19
-y 23
-end
-arch pstone_1
-x 19
-y 24
-end
-arch mine2
-x 19
-y 24
-end
-arch pstone_1
 x 20
 end
-arch mine2
+arch dun_2_1_2
 x 20
 end
 arch pstone_1
+x 20
+y 1
+end
+arch skeleton
 x 20
 y 1
 end
@@ -2911,11 +3135,19 @@ arch pstone_1
 x 20
 y 2
 end
+arch dun_1_4
+x 20
+y 2
+end
 arch pstone_1
 x 20
 y 3
 end
-arch spider
+arch generate_zombie
+x 20
+y 3
+end
+arch skeleton
 x 20
 y 3
 end
@@ -2923,43 +3155,39 @@ arch pstone_1
 x 20
 y 4
 end
-arch glue
-name Floor
-face pstone_1.111
+arch corpse
 x 20
-y 5
+y 4
+end
+arch skeleton
+x 20
+y 4
 end
 arch pstone_1
 x 20
 y 5
 end
-arch glue
-name Floor
-face pstone_1.111
+arch dun_1_3
 x 20
-y 6
+y 5
 end
 arch pstone_1
 x 20
 y 6
 end
-arch glue
-name Floor
-face pstone_1.111
-x 20
-y 7
-end
 arch pstone_1
 x 20
 y 7
 end
-arch glue
-name Floor
-face pstone_1.111
+arch spider_web
+x 20
+y 7
+end
+arch pstone_1
 x 20
 y 8
 end
-arch pstone_1
+arch corpse
 x 20
 y 8
 end
@@ -2967,17 +3195,14 @@ arch pstone_1
 x 20
 y 9
 end
-arch mine2
-x 20
-y 9
-end
 arch pstone_1
 x 20
 y 10
 end
-arch random_food
+arch statue
 x 20
 y 10
+no_pass 0
 end
 arch pstone_1
 x 20
@@ -2987,7 +3212,15 @@ arch pstone_1
 x 20
 y 12
 end
+arch skeleton
+x 20
+y 12
+end
 arch pstone_1
+x 20
+y 13
+end
+arch skeleton
 x 20
 y 13
 end
@@ -2999,11 +3232,19 @@ arch pstone_1
 x 20
 y 15
 end
+arch dun_1_3
+x 20
+y 15
+end
 arch pstone_1
 x 20
 y 16
 end
-arch bat
+arch gravestone2
+x 20
+y 16
+end
+arch zombie
 x 20
 y 16
 end
@@ -3011,11 +3252,15 @@ arch pstone_1
 x 20
 y 17
 end
+arch zombie
+x 20
+y 17
+end
 arch pstone_1
 x 20
 y 18
 end
-arch mine2
+arch dun_1_4
 x 20
 y 18
 end
@@ -3023,55 +3268,25 @@ arch pstone_1
 x 20
 y 19
 end
-arch letter
-msg
-The house is being over run with all
-types of monsters, help me. Arrghh!
-They are at the door! Help me, come
-quick
-endmsg
-x 20
-y 19
-end
 arch pstone_1
 x 20
 y 20
 end
-arch food
+arch dun_2_1_2
 x 20
 y 20
 end
 arch pstone_1
-x 20
-y 21
-end
-arch mine2
-x 20
-y 21
-end
-arch pstone_1
-x 20
-y 22
-end
-arch pstone_1
-x 20
-y 23
-end
-arch pstone_1
-x 20
-y 24
-end
-arch mine2
-x 20
-y 24
-end
-arch pstone_1
 x 21
 end
-arch mine2
+arch dun_2_1_2
 x 21
 end
 arch pstone_1
+x 21
+y 1
+end
+arch skeleton
 x 21
 y 1
 end
@@ -3079,7 +3294,19 @@ arch pstone_1
 x 21
 y 2
 end
+arch dun_2_1_2
+x 21
+y 2
+end
 arch pstone_1
+x 21
+y 3
+end
+arch gravestone2
+x 21
+y 3
+end
+arch skeleton
 x 21
 y 3
 end
@@ -3087,31 +3314,21 @@ arch pstone_1
 x 21
 y 4
 end
-arch glue
-name Floor
-face pstone_1.111
+arch skeleton
 x 21
-y 5
+y 4
 end
 arch pstone_1
 x 21
 y 5
 end
-arch glue
-name Floor
-face pstone_1.111
+arch door_2
 x 21
-y 6
+y 5
 end
 arch pstone_1
 x 21
 y 6
-end
-arch glue
-name Floor
-face pstone_1.111
-x 21
-y 7
 end
 arch pstone_1
 x 21
@@ -3125,7 +3342,7 @@ arch pstone_1
 x 21
 y 9
 end
-arch mine2
+arch skeleton
 x 21
 y 9
 end
@@ -3133,7 +3350,15 @@ arch pstone_1
 x 21
 y 10
 end
+arch skeleton
+x 21
+y 10
+end
 arch pstone_1
+x 21
+y 11
+end
+arch gravestone2
 x 21
 y 11
 end
@@ -3141,7 +3366,15 @@ arch pstone_1
 x 21
 y 12
 end
+arch skeleton
+x 21
+y 12
+end
 arch pstone_1
+x 21
+y 13
+end
+arch generate_ghost
 x 21
 y 13
 end
@@ -3153,7 +3386,19 @@ arch pstone_1
 x 21
 y 15
 end
+arch door_2
+x 21
+y 15
+end
 arch pstone_1
+x 21
+y 16
+end
+arch spider_web
+x 21
+y 16
+end
+arch zombie
 x 21
 y 16
 end
@@ -3161,11 +3406,15 @@ arch pstone_1
 x 21
 y 17
 end
+arch zombie
+x 21
+y 17
+end
 arch pstone_1
 x 21
 y 18
 end
-arch mine2
+arch dun_2_1_2
 x 21
 y 18
 end
@@ -3173,53 +3422,25 @@ arch pstone_1
 x 21
 y 19
 end
-arch food
-x 21
-y 19
-end
 arch pstone_1
 x 21
 y 20
 end
-arch mouse
+arch dun_2_1_2
 x 21
 y 20
 end
 arch pstone_1
-x 21
-y 21
-end
-arch mine2
-x 21
-y 21
-end
-arch pstone_1
-x 21
-y 22
-end
-arch madman
-x 21
-y 22
-end
-arch pstone_1
-x 21
-y 23
-end
-arch pstone_1
-x 21
-y 24
-end
-arch mine2
-x 21
-y 24
-end
-arch pstone_1
 x 22
 end
-arch mine2
+arch dun_2_1_2
 x 22
 end
 arch pstone_1
+x 22
+y 1
+end
+arch skeleton
 x 22
 y 1
 end
@@ -3227,11 +3448,19 @@ arch pstone_1
 x 22
 y 2
 end
+arch dun_2_1_2
+x 22
+y 2
+end
 arch pstone_1
 x 22
 y 3
 end
-arch spider
+arch ghost
+x 22
+y 3
+end
+arch skeleton
 x 22
 y 3
 end
@@ -3239,7 +3468,19 @@ arch pstone_1
 x 22
 y 4
 end
+arch corpse
+x 22
+y 4
+end
+arch skeleton
+x 22
+y 4
+end
 arch pstone_1
+x 22
+y 5
+end
+arch dun_1_4
 x 22
 y 5
 end
@@ -3247,7 +3488,15 @@ arch pstone_1
 x 22
 y 6
 end
+arch gravestone
+x 22
+y 6
+end
 arch pstone_1
+x 22
+y 7
+end
+arch gravestone
 x 22
 y 7
 end
@@ -3259,11 +3508,11 @@ arch pstone_1
 x 22
 y 9
 end
-arch mine2
-x 22
-y 9
-end
 arch pstone_1
+x 22
+y 10
+end
+arch skeleton
 x 22
 y 10
 end
@@ -3271,11 +3520,15 @@ arch pstone_1
 x 22
 y 11
 end
-arch bat
+arch skeleton
 x 22
 y 11
 end
 arch pstone_1
+x 22
+y 12
+end
+arch skeleton
 x 22
 y 12
 end
@@ -3287,7 +3540,15 @@ arch pstone_1
 x 22
 y 14
 end
+arch gravestone
+x 22
+y 14
+end
 arch pstone_1
+x 22
+y 15
+end
+arch dun_1_4
 x 22
 y 15
 end
@@ -3295,7 +3556,7 @@ arch pstone_1
 x 22
 y 16
 end
-arch bat
+arch zombie
 x 22
 y 16
 end
@@ -3303,11 +3564,15 @@ arch pstone_1
 x 22
 y 17
 end
+arch zombie
+x 22
+y 17
+end
 arch pstone_1
 x 22
 y 18
 end
-arch mine16
+arch dun_2_1_2
 x 22
 y 18
 end
@@ -3315,57 +3580,25 @@ arch pstone_1
 x 22
 y 19
 end
-arch mine11
-x 22
-y 19
-end
 arch pstone_1
 x 22
 y 20
 end
-arch mine3
+arch dun_2_1_2
 x 22
 y 20
 end
 arch pstone_1
-x 22
-y 21
-end
-arch mine12
-x 22
-y 21
-end
-arch pstone_1
-x 22
-y 22
-end
-arch madman
-x 22
-y 22
-end
-arch pstone_1
-x 22
-y 23
-end
-arch madman
-x 22
-y 23
-end
-arch pstone_1
-x 22
-y 24
-end
-arch mine2
-x 22
-y 24
-end
-arch pstone_1
 x 23
 end
-arch mine2
+arch dun_2_1_2
 x 23
 end
 arch pstone_1
+x 23
+y 1
+end
+arch skeleton
 x 23
 y 1
 end
@@ -3373,7 +3606,19 @@ arch pstone_1
 x 23
 y 2
 end
+arch dun_2_1_2
+x 23
+y 2
+end
 arch pstone_1
+x 23
+y 3
+end
+arch corpse
+x 23
+y 3
+end
+arch skeleton
 x 23
 y 3
 end
@@ -3381,19 +3626,19 @@ arch pstone_1
 x 23
 y 4
 end
+arch skeleton
+x 23
+y 4
+end
 arch pstone_1
 x 23
 y 5
 end
-arch random_wealth
+arch dun_2_1_2
 x 23
 y 5
 end
 arch pstone_1
-x 23
-y 6
-end
-arch random_wealth
 x 23
 y 6
 end
@@ -3409,7 +3654,7 @@ arch pstone_1
 x 23
 y 9
 end
-arch mine2
+arch generate_ghost
 x 23
 y 9
 end
@@ -3421,11 +3666,11 @@ arch pstone_1
 x 23
 y 11
 end
-arch bat
-x 23
-y 11
-end
 arch pstone_1
+x 23
+y 12
+end
+arch spider_web
 x 23
 y 12
 end
@@ -3437,11 +3682,11 @@ arch pstone_1
 x 23
 y 14
 end
-arch bat
-x 23
-y 14
-end
 arch pstone_1
+x 23
+y 15
+end
+arch dun_2_1_2
 x 23
 y 15
 end
@@ -3449,7 +3694,15 @@ arch pstone_1
 x 23
 y 16
 end
+arch zombie
+x 23
+y 16
+end
 arch pstone_1
+x 23
+y 17
+end
+arch zombie
 x 23
 y 17
 end
@@ -3457,7 +3710,7 @@ arch pstone_1
 x 23
 y 18
 end
-arch mine16
+arch dun_2_1_2
 x 23
 y 18
 end
@@ -3465,7 +3718,10 @@ arch pstone_1
 x 23
 y 19
 end
-arch mine13
+arch stair_up
+slaying /scorn/misc/church
+hp 3
+sp 14
 x 23
 y 19
 end
@@ -3473,49 +3729,21 @@ arch pstone_1
 x 23
 y 20
 end
-arch madman
+arch dun_2_1_2
 x 23
 y 20
 end
 arch pstone_1
-x 23
-y 21
-end
-arch madman
-x 23
-y 21
-end
-arch pstone_1
-x 23
-y 22
-end
-arch madman
-x 23
-y 22
-end
-arch pstone_1
-x 23
-y 23
-end
-arch pstone_1
-x 23
-y 24
-end
-arch mine2
-x 23
-y 24
-end
-arch pstone_1
 x 24
 end
-arch mine9
+arch dun_2_2_3
 x 24
 end
 arch pstone_1
 x 24
 y 1
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 1
 end
@@ -3523,7 +3751,7 @@ arch pstone_1
 x 24
 y 2
 end
-arch mine3
+arch dun_3_4
 x 24
 y 2
 end
@@ -3531,7 +3759,7 @@ arch pstone_1
 x 24
 y 3
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 3
 end
@@ -3539,7 +3767,7 @@ arch pstone_1
 x 24
 y 4
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 4
 end
@@ -3547,7 +3775,7 @@ arch pstone_1
 x 24
 y 5
 end
-arch mine3
+arch dun_3_4
 x 24
 y 5
 end
@@ -3555,7 +3783,7 @@ arch pstone_1
 x 24
 y 6
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 6
 end
@@ -3563,7 +3791,7 @@ arch pstone_1
 x 24
 y 7
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 7
 end
@@ -3571,7 +3799,7 @@ arch pstone_1
 x 24
 y 8
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 8
 end
@@ -3579,7 +3807,7 @@ arch pstone_1
 x 24
 y 9
 end
-arch mine14
+arch dun_2_1_1
 x 24
 y 9
 end
@@ -3587,7 +3815,7 @@ arch pstone_1
 x 24
 y 10
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 10
 end
@@ -3595,7 +3823,7 @@ arch pstone_1
 x 24
 y 11
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 11
 end
@@ -3603,7 +3831,7 @@ arch pstone_1
 x 24
 y 12
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 12
 end
@@ -3611,7 +3839,7 @@ arch pstone_1
 x 24
 y 13
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 13
 end
@@ -3619,7 +3847,7 @@ arch pstone_1
 x 24
 y 14
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 14
 end
@@ -3627,7 +3855,7 @@ arch pstone_1
 x 24
 y 15
 end
-arch mine3
+arch dun_3_4
 x 24
 y 15
 end
@@ -3635,7 +3863,7 @@ arch pstone_1
 x 24
 y 16
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 16
 end
@@ -3643,7 +3871,7 @@ arch pstone_1
 x 24
 y 17
 end
-arch mine3
+arch dun_2_1_1
 x 24
 y 17
 end
@@ -3651,7 +3879,7 @@ arch pstone_1
 x 24
 y 18
 end
-arch mine14
+arch dun_3_4
 x 24
 y 18
 end
@@ -3659,7 +3887,7 @@ arch pstone_1
 x 24
 y 19
 end
-arch mine14
+arch dun_2_1_1
 x 24
 y 19
 end
@@ -3667,39 +3895,7 @@ arch pstone_1
 x 24
 y 20
 end
-arch mine3
+arch dun_2_2_4
 x 24
 y 20
-end
-arch pstone_1
-x 24
-y 21
-end
-arch mine3
-x 24
-y 21
-end
-arch pstone_1
-x 24
-y 22
-end
-arch mine3
-x 24
-y 22
-end
-arch pstone_1
-x 24
-y 23
-end
-arch mine3
-x 24
-y 23
-end
-arch pstone_1
-x 24
-y 24
-end
-arch mine12
-x 24
-y 24
 end
