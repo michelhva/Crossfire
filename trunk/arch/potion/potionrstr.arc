@@ -1,6 +1,6 @@
 Object potion_restoration
 name potion of life
-face potiongen.111
+face potion_heal2.111
 value 6000
 type 5
 level 1
