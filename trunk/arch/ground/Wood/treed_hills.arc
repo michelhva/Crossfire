@@ -9,5 +9,6 @@ is_wooded 1
 slow_move 5
 editable 8
 is_floor 1
+smoothlevel 30
 magicmap green
 end

@@ -13,6 +13,7 @@ lava.113
 lava.114
 lava.115
 mina
+smoothlevel 80
 color_fg yellow
 color_bg red
 speed 0.2
@@ -42,6 +43,7 @@ color_fg yellow
 color_bg red
 speed 0.2
 no_pick 1
+smoothlevel 80
 attacktype 4
 hp 1
 dam 3
