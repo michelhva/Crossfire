@@ -1,0 +1,83 @@
+In this directory is utilities, gif images of the maps, and other notes.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Developer guidelines:
+
+Read the mapguide for guidelines on making a good map.
+
+Use the comment field that the maps have - put in who the author is,
+what level the map is, and any other special notes.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Naming Scheme:
+
+Note that these rules are ordered in importance, eg, if a rule conflicts,
+the lower number rule takes precedence.
+
+1) If the map is currently off the main world (eg, pupland), it should have
+   its own top level ldirectory which all the maps in that area are located.
+
+2) Each city should have it own top level directory (eg, scorn,
+   navar_city, santo_dominion).  All buildings in the city and located
+   nearby or related to it are in the respectice city directory.
+
+For maps that are placed directly on the world map and are not in the city,
+the follow guidelines should be used:
+
+3) If the map is part of a larger quest, a /quest/name_of_quest directory
+   should be made, and all the maps for the quest placed in there.  If
+   some portions of the quest has maps in cities or other places, a README
+   should be included explaining this.  Note in general, having README's
+   for all quests explaining the flow probably isn't a bad idea in the
+   case someone else needs to work on it.
+
+4) If a map is independent (eg, the map is one you just go there, kill and
+   get exp), it should be in the /dungeons directory (Ill named I know).
+   If the dungeon is comprised of several map (eg, multilevel dungeon), a
+   sub directory should be made to hold all of these maps.
+
+5) Maps should fall into one of the category above - if it does not, and
+   you are not sure, send a message to crossfire-devel@lists.real-time.com.
+   Maps should not be sorted by author, as this does not make maintaining
+   them easy.
+
+
+------------------------------------------------------------------------------
+Important landmarks
+
+If you are going to use these world maps, you should probably update
+the following values in the server include/config.h file:
+#define EMERGENCY_MAPPATH "/world/world_105_115"
+#define EMERGENCY_X 5
+#define EMERGENCY_Y 37
+
+
+Scorn is located on world maps _104_115 and _105_115.  Some touchup of the
+terrain immediately surrounding the city has been touched up some.
+
+------------------------------------------------------------------------------
+land.c:
+This is the program that generated the new world map.
+
+The file land.c just gets compiled - if your system has a math
+library (-lm) you probably need to link that in.
+
+Given the same seed and other parameters, it will generate the same
+results if on the same platform.  Eg, two different intel systems running
+redhat 7.2 should generate the same results, but a redhat compared to
+solaris system, or linux intel vs linux power pc may very well generate
+different results.
+
+The generated map was run with the follow parameters on my system:
+-x 1500 -y 1500 -s 1007623715 -p 300 -n 170 -w 40000 -l 200000
+------------------------------------------------------------------------------
+GIF files:
+
+el_map.gif is an elevation map - it is color coded based on elevations.
+
+terrain_map.gif is color coded based on the type of terrain - I tried to match
+the coloration on what the image looks like in the png set.
+
+ann_map.gif is a annotated version of the map, showing the roads and
+locations of the main cities.
+------------------------------------------------------------------------------
