@@ -22,6 +22,6 @@ wc 5
 magic 5
 weight 4500
 value 500000
-editable 1024
+editable 5120
 magicmap black
 end
