@@ -1,5 +1,5 @@
 Object god_spelldirect_windstorm
-name devine windstorm
+name divine windstorm
 face blank.111
 slaying windstorm
 invisible 1
