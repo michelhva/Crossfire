@@ -10463,6 +10463,10 @@ arch shallow_sea
 x 40
 y 19
 end
+arch dungeon_magic
+x 40
+y 20
+end
 arch shallow_sea
 x 40
 y 20
@@ -10471,6 +10475,10 @@ arch cwall_1_1
 x 40
 y 20
 end
+arch dungeon_magic
+x 40
+y 21
+end
 arch cobblestones2
 x 40
 y 21
@@ -10478,6 +10486,10 @@ end
 arch cwall_2_1_1
 x 40
 y 21
+end
+arch dungeon_magic
+x 40
+y 22
 end
 arch cobblestones2
 x 40
@@ -10487,6 +10499,10 @@ arch cwall_2_1_1
 x 40
 y 22
 end
+arch dungeon_magic
+x 40
+y 23
+end
 arch cobblestones2
 x 40
 y 23
@@ -10494,6 +10510,10 @@ end
 arch cwall_2_1_1
 x 40
 y 23
+end
+arch dungeon_magic
+x 40
+y 24
 end
 arch cobblestones2
 x 40
@@ -10503,6 +10523,10 @@ arch cwall_2_1_1
 x 40
 y 24
 end
+arch dungeon_magic
+x 40
+y 25
+end
 arch cobblestones2
 x 40
 y 25
@@ -10510,6 +10534,10 @@ end
 arch cwall_2_1_1
 x 40
 y 25
+end
+arch dungeon_magic
+x 40
+y 26
 end
 arch cobblestones2
 x 40
@@ -10519,6 +10547,10 @@ arch cwall_2_1_1
 x 40
 y 26
 end
+arch dungeon_magic
+x 40
+y 27
+end
 arch cobblestones2
 x 40
 y 27
@@ -10527,6 +10559,10 @@ arch cwall_2_1_1
 x 40
 y 27
 end
+arch dungeon_magic
+x 40
+y 28
+end
 arch cobblestones2
 x 40
 y 28
@@ -10534,6 +10570,10 @@ end
 arch cwall_2_1_1
 x 40
 y 28
+end
+arch dungeon_magic
+x 40
+y 29
 end
 arch cobblestones2
 x 40
@@ -10885,37 +10925,73 @@ arch shallow_sea
 x 41
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 41
 y 21
 end
 arch cobblestones2
 x 41
+y 21
+end
+arch dungeon_magic
+x 41
 y 22
 end
 arch cobblestones2
+x 41
+y 22
+end
+arch dungeon_magic
 x 41
 y 23
 end
 arch cobblestones2
 x 41
+y 23
+end
+arch dungeon_magic
+x 41
 y 24
 end
 arch cobblestones2
+x 41
+y 24
+end
+arch dungeon_magic
 x 41
 y 25
 end
 arch cobblestones2
 x 41
+y 25
+end
+arch dungeon_magic
+x 41
 y 26
 end
 arch cobblestones2
+x 41
+y 26
+end
+arch dungeon_magic
 x 41
 y 27
 end
 arch cobblestones2
 x 41
+y 27
+end
+arch dungeon_magic
+x 41
 y 28
+end
+arch cobblestones2
+x 41
+y 28
+end
+arch dungeon_magic
+x 41
+y 29
 end
 arch cobblestones2
 x 41
@@ -11229,37 +11305,73 @@ arch shallow_sea
 x 42
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 42
 y 21
 end
 arch cobblestones2
 x 42
+y 21
+end
+arch dungeon_magic
+x 42
 y 22
 end
 arch cobblestones2
+x 42
+y 22
+end
+arch dungeon_magic
 x 42
 y 23
 end
 arch cobblestones2
 x 42
+y 23
+end
+arch dungeon_magic
+x 42
 y 24
 end
 arch cobblestones2
+x 42
+y 24
+end
+arch dungeon_magic
 x 42
 y 25
 end
 arch cobblestones2
 x 42
+y 25
+end
+arch dungeon_magic
+x 42
 y 26
 end
 arch cobblestones2
+x 42
+y 26
+end
+arch dungeon_magic
 x 42
 y 27
 end
 arch cobblestones2
 x 42
+y 27
+end
+arch dungeon_magic
+x 42
 y 28
+end
+arch cobblestones2
+x 42
+y 28
+end
+arch dungeon_magic
+x 42
+y 29
 end
 arch cobblestones2
 x 42
@@ -11557,9 +11669,17 @@ elevation -212
 x 43
 y 18
 end
+arch dungeon_magic
+x 43
+y 19
+end
 arch sea
 x 43
 y 19
+end
+arch dungeon_magic
+x 43
+y 20
 end
 arch sea1
 x 43
@@ -11569,37 +11689,73 @@ arch pier_2_2_2
 x 43
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 43
 y 21
 end
 arch cobblestones2
 x 43
+y 21
+end
+arch dungeon_magic
+x 43
 y 22
 end
 arch cobblestones2
+x 43
+y 22
+end
+arch dungeon_magic
 x 43
 y 23
 end
 arch cobblestones2
 x 43
+y 23
+end
+arch dungeon_magic
+x 43
 y 24
 end
 arch cobblestones2
+x 43
+y 24
+end
+arch dungeon_magic
 x 43
 y 25
 end
 arch cobblestones2
 x 43
+y 25
+end
+arch dungeon_magic
+x 43
 y 26
 end
 arch cobblestones2
+x 43
+y 26
+end
+arch dungeon_magic
 x 43
 y 27
 end
 arch cobblestones2
 x 43
+y 27
+end
+arch dungeon_magic
+x 43
 y 28
+end
+arch cobblestones2
+x 43
+y 28
+end
+arch dungeon_magic
+x 43
+y 29
 end
 arch cobblestones2
 x 43
@@ -11892,9 +12048,17 @@ elevation -167
 x 44
 y 18
 end
+arch dungeon_magic
+x 44
+y 19
+end
 arch sea1
 x 44
 y 19
+end
+arch dungeon_magic
+x 44
+y 20
 end
 arch sea1
 x 44
@@ -11908,17 +12072,33 @@ arch sea
 x 44
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 44
 y 22
 end
 arch cobblestones2
 x 44
+y 22
+end
+arch dungeon_magic
+x 44
 y 23
 end
 arch cobblestones2
 x 44
+y 23
+end
+arch dungeon_magic
+x 44
 y 24
+end
+arch cobblestones2
+x 44
+y 24
+end
+arch dungeon_magic
+x 44
+y 25
 end
 arch cobblestones2
 x 44
@@ -11928,17 +12108,33 @@ arch lamppost
 x 44
 y 25
 end
-arch cobblestones2
+arch dungeon_magic
 x 44
 y 26
 end
 arch cobblestones2
 x 44
+y 26
+end
+arch dungeon_magic
+x 44
 y 27
 end
 arch cobblestones2
 x 44
+y 27
+end
+arch dungeon_magic
+x 44
 y 28
+end
+arch cobblestones2
+x 44
+y 28
+end
+arch dungeon_magic
+x 44
+y 29
 end
 arch cobblestones2
 x 44
@@ -12248,13 +12444,25 @@ arch sea
 x 45
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 45
 y 22
 end
 arch cobblestones2
 x 45
+y 22
+end
+arch dungeon_magic
+x 45
 y 23
+end
+arch cobblestones2
+x 45
+y 23
+end
+arch dungeon_magic
+x 45
+y 24
 end
 arch cobblestones2
 x 45
@@ -12264,6 +12472,10 @@ arch river_sw-ne_u
 x 45
 y 24
 end
+arch dungeon_magic
+x 45
+y 25
+end
 arch cobblestones2
 x 45
 y 25
@@ -12271,6 +12483,10 @@ end
 arch river_ne-s
 x 45
 y 25
+end
+arch dungeon_magic
+x 45
+y 26
 end
 arch magic_mouth
 msg
@@ -12288,6 +12504,10 @@ arch bridge_we
 x 45
 y 26
 end
+arch dungeon_magic
+x 45
+y 27
+end
 arch cobblestones2
 x 45
 y 27
@@ -12296,6 +12516,10 @@ arch river_se-n
 x 45
 y 27
 end
+arch dungeon_magic
+x 45
+y 28
+end
 arch cobblestones2
 x 45
 y 28
@@ -12303,6 +12527,10 @@ end
 arch river_nw-se_l
 x 45
 y 28
+end
+arch dungeon_magic
+x 45
+y 29
 end
 arch cobblestones2
 x 45
@@ -12627,6 +12855,10 @@ arch sea
 x 46
 y 21
 end
+arch dungeon_magic
+x 46
+y 22
+end
 arch cobblestones2
 x 46
 y 22
@@ -12634,6 +12866,10 @@ end
 arch rjunct_ns-nw
 x 46
 y 22
+end
+arch dungeon_magic
+x 46
+y 23
 end
 arch cobblestones2
 x 46
@@ -12643,6 +12879,10 @@ arch river_n-s
 x 46
 y 23
 end
+arch dungeon_magic
+x 46
+y 24
+end
 arch cobblestones2
 x 46
 y 24
@@ -12650,6 +12890,10 @@ end
 arch rjunct_ns-sw
 x 46
 y 24
+end
+arch dungeon_magic
+x 46
+y 25
 end
 arch cobblestones2
 x 46
@@ -12659,6 +12903,10 @@ arch rcrook_ns-sw
 x 46
 y 25
 end
+arch dungeon_magic
+x 46
+y 26
+end
 arch cobblestones2
 x 46
 y 26
@@ -12666,6 +12914,10 @@ end
 arch bridge_we
 x 46
 y 26
+end
+arch dungeon_magic
+x 46
+y 27
 end
 arch cobblestones2
 x 46
@@ -12675,6 +12927,10 @@ arch rcrook_ns-nw
 x 46
 y 27
 end
+arch dungeon_magic
+x 46
+y 28
+end
 arch cobblestones2
 x 46
 y 28
@@ -12682,6 +12938,10 @@ end
 arch rjunct_ns-nw
 x 46
 y 28
+end
+arch dungeon_magic
+x 46
+y 29
 end
 arch cobblestones2
 x 46
@@ -12978,6 +13238,10 @@ arch sea
 x 47
 y 19
 end
+arch dungeon_magic
+x 47
+y 20
+end
 arch sea1
 x 47
 y 20
@@ -12985,6 +13249,10 @@ end
 arch sea
 x 47
 y 21
+end
+arch dungeon_magic
+x 47
+y 22
 end
 arch cobblestones2
 x 47
@@ -12994,29 +13262,57 @@ arch barrack_small
 x 47
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 47
 y 23
 end
 arch cobblestones2
 x 47
+y 23
+end
+arch dungeon_magic
+x 47
 y 24
 end
 arch cobblestones2
+x 47
+y 24
+end
+arch dungeon_magic
 x 47
 y 25
 end
 arch cobblestones2
 x 47
+y 25
+end
+arch dungeon_magic
+x 47
 y 26
 end
 arch cobblestones2
+x 47
+y 26
+end
+arch dungeon_magic
 x 47
 y 27
 end
 arch cobblestones2
 x 47
+y 27
+end
+arch dungeon_magic
+x 47
 y 28
+end
+arch cobblestones2
+x 47
+y 28
+end
+arch dungeon_magic
+x 47
+y 29
 end
 arch cobblestones2
 x 47
@@ -13319,6 +13615,10 @@ arch sea
 x 48
 y 19
 end
+arch dungeon_magic
+x 48
+y 20
+end
 arch sea1
 x 48
 y 20
@@ -13331,29 +13631,57 @@ arch sea
 x 48
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 48
 y 23
 end
 arch cobblestones2
 x 48
+y 23
+end
+arch dungeon_magic
+x 48
 y 24
 end
 arch cobblestones2
+x 48
+y 24
+end
+arch dungeon_magic
 x 48
 y 25
 end
 arch cobblestones2
 x 48
+y 25
+end
+arch dungeon_magic
+x 48
 y 26
 end
 arch cobblestones2
+x 48
+y 26
+end
+arch dungeon_magic
 x 48
 y 27
 end
 arch cobblestones2
 x 48
+y 27
+end
+arch dungeon_magic
+x 48
 y 28
+end
+arch cobblestones2
+x 48
+y 28
+end
+arch dungeon_magic
+x 48
+y 29
 end
 arch cobblestones2
 x 48
@@ -13649,6 +13977,10 @@ arch sea
 x 49
 y 19
 end
+arch dungeon_magic
+x 49
+y 20
+end
 arch sea1
 x 49
 y 20
@@ -13665,29 +13997,57 @@ arch sea
 x 49
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 49
 y 23
 end
 arch cobblestones2
 x 49
+y 23
+end
+arch dungeon_magic
+x 49
 y 24
 end
 arch cobblestones2
+x 49
+y 24
+end
+arch dungeon_magic
 x 49
 y 25
 end
 arch cobblestones2
 x 49
+y 25
+end
+arch dungeon_magic
+x 49
 y 26
 end
 arch cobblestones2
+x 49
+y 26
+end
+arch dungeon_magic
 x 49
 y 27
 end
 arch cobblestones2
 x 49
+y 27
+end
+arch dungeon_magic
+x 49
 y 28
+end
+arch cobblestones2
+x 49
+y 28
+end
+arch dungeon_magic
+x 49
+y 29
 end
 arch cobblestones2
 x 49
