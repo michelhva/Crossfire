@@ -1003,6 +1003,14 @@ arch woodfloor
 x 12
 y 12
 end
+arch altar
+name altar of detect curse (25 gp)
+slaying money
+sp 79
+food 250
+x 12
+y 12
+end
 arch woodfloor
 x 12
 y 13

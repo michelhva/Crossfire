@@ -2156,8 +2156,20 @@ elevation -2256
 x 5
 y 7
 end
-arch brush
+arch beach
 elevation 118
+x 5
+y 8
+end
+arch shrine
+name Ixalovh shrine
+slaying /scorn/temples/ixalovh
+hp 6
+sp 13
+x 5
+y 8
+end
+arch light3
 x 5
 y 8
 end
@@ -2591,6 +2603,7 @@ y 9
 end
 arch shallow_sea
 elevation -84
+no_pass 0
 x 6
 y 10
 end
@@ -3015,6 +3028,7 @@ y 9
 end
 arch sea
 elevation -2256
+no_pass 0
 x 7
 y 10
 end
@@ -16296,6 +16310,13 @@ arch barrack_up
 x 3
 y 28
 end
+arch fishboat
+slaying world_105_115
+hp 11
+sp 20
+x 6
+y 10
+end
 arch barn
 name Pirates' Arena
 name_pl Pirates' Arena
@@ -16392,6 +16413,13 @@ x 10
 y 34
 end
 arch fishboat
+name to shrine
+msg
+A nice day for a sail.
+endmsg
+slaying world_105_115
+hp 5
+sp 10
 x 11
 y 19
 end
