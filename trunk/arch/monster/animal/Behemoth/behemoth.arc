@@ -8,7 +8,7 @@ monster 1
 sleep 1
 Wis 20
 resist_fear 100
-resist_poision 90
+resist_poison 90
 resist_magic 30
 exp 20000
 ac -6
