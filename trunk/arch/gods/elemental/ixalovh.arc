@@ -3,7 +3,10 @@ Object Ixalovh
 title Ruggilli
 race chaotic_water_creatures
 face witch_water.111
-animation witch_water
+anim
+witch_water.111
+witch_water.112
+mina
 is_animated 1
 Str 30
 Con 30
