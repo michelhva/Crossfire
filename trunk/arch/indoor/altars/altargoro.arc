@@ -1,13 +1,10 @@
 Object altar_gorokh
 name Altar of Gorokh
-title Gorokh
-slaying food
-type 18
+other_arch Gorokh
+type 56
 face altargoro.111
-food 10
 no_pick 1
-walk_on 1
-immune 1
+level 100
 editable 48
 visibility 50
 magicmap grey
