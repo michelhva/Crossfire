@@ -1,4 +1,4 @@
-Object chole_1
+Object chole_2
 name hole in the ground
 face chole_2.111
 type 66
