@@ -1,13 +1,13 @@
 arch map
 name zoo
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Fri Oct 15 13:46:01 1993
 endmsg
-sp 15
-x 48
-y 40
+width 48
+height 40
+enter_y 15
 end
 arch large_stones
 end
@@ -709,12 +709,12 @@ x 3
 y 5
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 3
 y 5
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 3
@@ -749,12 +749,12 @@ x 3
 y 9
 end
 arch igate_closed_2
-x 3
-y 9
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 3
+y 9
 end
 arch dirtfloor
 x 3
@@ -849,10 +849,10 @@ x 3
 y 20
 end
 arch igate_closed_2
-x 3
-y 20
 resist_physical 30
 connected 1
+x 3
+y 20
 end
 arch dirtfloor
 x 3
@@ -903,12 +903,12 @@ x 3
 y 26
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 3
 y 26
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 3
@@ -935,12 +935,12 @@ x 3
 y 29
 end
 arch igate_closed_2
-x 3
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 3
+y 29
 end
 arch dirtfloor
 x 3
@@ -967,12 +967,12 @@ x 3
 y 32
 end
 arch igate_closed_2
-x 3
-y 32
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 3
+y 32
 end
 arch dirtfloor
 x 3
@@ -1117,10 +1117,10 @@ x 4
 y 13
 end
 arch button_handle
-x 4
-y 13
 resist_physical 30
 connected 1
+x 4
+y 13
 end
 arch guard
 x 4
@@ -1163,10 +1163,10 @@ x 4
 y 18
 end
 arch button_handle
-x 4
-y 18
 resist_physical 30
 connected 1
+x 4
+y 18
 end
 arch guard
 x 4
@@ -1185,11 +1185,11 @@ x 4
 y 21
 end
 arch button_handle
-x 4
-y 21
 resist_physical 30
 resist_magic 30
 connected 3
+x 4
+y 21
 end
 arch dirtfloor
 x 4
@@ -1283,11 +1283,19 @@ arch dirtfloor
 x 4
 y 33
 end
-arch awall_2_1_2
+arch swall_1_4
+x 4
+y 33
+end
+arch awall_1_3
 x 4
 y 33
 end
 arch dirtfloor
+x 4
+y 34
+end
+arch mastif
 x 4
 y 34
 end
@@ -1486,11 +1494,11 @@ x 5
 y 20
 end
 arch igate_closed_2
-x 5
-y 20
 resist_physical 30
 resist_magic 30
 connected 3
+x 5
+y 20
 end
 arch dirtfloor
 x 5
@@ -1584,19 +1592,19 @@ arch dirtfloor
 x 5
 y 32
 end
-arch dog
-x 5
-y 32
-end
 arch dirtfloor
 x 5
 y 33
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 5
 y 33
 end
 arch dirtfloor
+x 5
+y 34
+end
+arch mastif
 x 5
 y 34
 end
@@ -1609,12 +1617,12 @@ x 5
 y 36
 end
 arch igate_closed_1
-x 5
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 5
+y 36
 end
 arch large_stones
 x 5
@@ -1902,11 +1910,7 @@ arch dirtfloor
 x 6
 y 33
 end
-arch swall_2_2_1
-x 6
-y 33
-end
-arch awall_2_2_3
+arch swall_4
 x 6
 y 33
 end
@@ -1914,7 +1918,7 @@ arch dirtfloor
 x 6
 y 34
 end
-arch awall_2_1_1
+arch swall_2_1_1
 x 6
 y 34
 end
@@ -1922,7 +1926,11 @@ arch dirtfloor
 x 6
 y 35
 end
-arch awall_2_1_1
+arch swall_1_2
+x 6
+y 35
+end
+arch awall_1_1
 x 6
 y 35
 end
@@ -2271,12 +2279,12 @@ x 8
 y 3
 end
 arch igate_closed_1
-x 8
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 8
+y 3
 end
 arch dirtfloor
 x 8
@@ -2539,12 +2547,12 @@ x 8
 y 36
 end
 arch igate_closed_1
-x 8
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 8
+y 36
 end
 arch large_stones
 x 8
@@ -2983,12 +2991,12 @@ x 10
 y 12
 end
 arch igate_closed_1
-x 10
-y 12
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 10
+y 12
 end
 arch dirtfloor
 x 10
@@ -3027,12 +3035,12 @@ x 10
 y 19
 end
 arch igate_closed_1
-x 10
-y 19
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 10
+y 19
 end
 arch dirtfloor
 x 10
@@ -3189,12 +3197,12 @@ x 11
 y 3
 end
 arch igate_closed_1
-x 11
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 11
+y 3
 end
 arch dirtfloor
 x 11
@@ -3442,12 +3450,12 @@ x 11
 y 36
 end
 arch igate_closed_1
-x 11
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 11
+y 36
 end
 arch large_stones
 x 11
@@ -3552,12 +3560,12 @@ x 12
 y 12
 end
 arch igate_closed_1
-x 12
-y 12
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 12
+y 12
 end
 arch dirtfloor
 x 12
@@ -3576,24 +3584,24 @@ x 12
 y 15
 end
 arch gate_closed_2
-x 12
-y 15
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 12
+y 15
 end
 arch dirtfloor
 x 12
 y 16
 end
 arch gate_closed_2
-x 12
-y 16
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 12
+y 16
 end
 arch dirtfloor
 x 12
@@ -3846,12 +3854,12 @@ x 13
 y 12
 end
 arch igate_closed_1
-x 13
-y 12
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 13
+y 12
 end
 arch dirtfloor
 x 13
@@ -3882,12 +3890,12 @@ x 13
 y 19
 end
 arch igate_closed_1
-x 13
-y 19
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 13
+y 19
 end
 arch dirtfloor
 x 13
@@ -3955,36 +3963,36 @@ x 13
 y 27
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 13
 y 27
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 13
 y 28
 end
 arch igate_closed_2
-x 13
-y 28
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 13
+y 28
 end
 arch dirtfloor
 x 13
 y 29
 end
 arch igate_closed_2
-x 13
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 13
+y 29
 end
 arch dirtfloor
 x 13
@@ -4082,12 +4090,12 @@ x 14
 y 3
 end
 arch igate_closed_1
-x 14
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 14
+y 3
 end
 arch dirtfloor
 x 14
@@ -4270,12 +4278,12 @@ x 14
 y 26
 end
 arch igate_closed_1
-x 14
-y 26
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 14
+y 26
 end
 arch dirtfloor
 x 14
@@ -4294,12 +4302,12 @@ x 14
 y 30
 end
 arch igate_closed_1
-x 14
-y 30
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 14
+y 30
 end
 arch dungeon_magic
 x 14
@@ -4346,12 +4354,12 @@ x 14
 y 36
 end
 arch igate_closed_1
-x 14
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 14
+y 36
 end
 arch large_stones
 x 14
@@ -4580,12 +4588,12 @@ x 15
 y 26
 end
 arch igate_closed_1
-x 15
-y 26
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 15
+y 26
 end
 arch dirtfloor
 x 15
@@ -4604,12 +4612,12 @@ x 15
 y 30
 end
 arch igate_closed_1
-x 15
-y 30
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 15
+y 30
 end
 arch dungeon_magic
 x 15
@@ -4770,12 +4778,12 @@ x 16
 y 12
 end
 arch igate_closed_1
-x 16
-y 12
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 16
+y 12
 end
 arch dirtfloor
 x 16
@@ -4822,12 +4830,12 @@ x 16
 y 19
 end
 arch igate_closed_1
-x 16
-y 19
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 16
+y 19
 end
 arch dirtfloor
 x 16
@@ -4882,12 +4890,12 @@ x 16
 y 26
 end
 arch igate_closed_1
-x 16
-y 26
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 16
+y 26
 end
 arch dirtfloor
 x 16
@@ -4906,12 +4914,12 @@ x 16
 y 30
 end
 arch igate_closed_1
-x 16
-y 30
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 16
+y 30
 end
 arch dungeon_magic
 x 16
@@ -4996,12 +5004,12 @@ x 17
 y 3
 end
 arch igate_closed_1
-x 17
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 17
+y 3
 end
 arch dirtfloor
 x 17
@@ -5197,36 +5205,36 @@ x 17
 y 27
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 17
 y 27
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 17
 y 28
 end
 arch igate_closed_2
-x 17
-y 28
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 17
+y 28
 end
 arch dirtfloor
 x 17
 y 29
 end
 arch igate_closed_2
-x 17
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 17
+y 29
 end
 arch dirtfloor
 x 17
@@ -5286,12 +5294,12 @@ x 17
 y 36
 end
 arch igate_closed_1
-x 17
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 17
+y 36
 end
 arch large_stones
 x 17
@@ -5666,23 +5674,23 @@ x 19
 y 12
 end
 arch igate_closed_1
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 19
 y 12
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 19
 y 13
 end
 arch button_handle
-x 19
-y 13
 resist_confusion 30
 resist_acid 30
 connected 96
+x 19
+y 13
 end
 arch dirtfloor
 x 19
@@ -5697,24 +5705,24 @@ x 19
 y 15
 end
 arch igate_closed_2
-x 19
-y 15
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 19
+y 15
 end
 arch dirtfloor
 x 19
 y 16
 end
 arch igate_closed_2
-x 19
-y 16
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 19
+y 16
 end
 arch dirtfloor
 x 19
@@ -5729,23 +5737,23 @@ x 19
 y 18
 end
 arch button_handle
-x 19
-y 18
 resist_confusion 30
 resist_acid 30
 connected 96
+x 19
+y 18
 end
 arch dirtfloor
 x 19
 y 19
 end
 arch igate_closed_1
-x 19
-y 19
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 19
+y 19
 end
 arch dirtfloor
 x 19
@@ -5902,12 +5910,12 @@ x 20
 y 3
 end
 arch igate_closed_1
-x 20
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 20
+y 3
 end
 arch dirtfloor
 x 20
@@ -6182,12 +6190,12 @@ x 20
 y 36
 end
 arch igate_closed_1
-x 20
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 20
+y 36
 end
 arch large_stones
 x 20
@@ -6836,12 +6844,12 @@ x 23
 y 3
 end
 arch igate_closed_1
-x 23
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 23
+y 3
 end
 arch dirtfloor
 x 23
@@ -7104,12 +7112,12 @@ x 23
 y 36
 end
 arch igate_closed_1
-x 23
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 23
+y 36
 end
 arch large_stones
 x 23
@@ -7596,6 +7604,10 @@ arch dirtfloor
 x 25
 y 23
 end
+arch giant
+x 25
+y 23
+end
 arch dirtfloor
 x 25
 y 24
@@ -7693,12 +7705,12 @@ x 25
 y 36
 end
 arch igate_closed_1
-x 25
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 25
+y 36
 end
 arch large_stones
 x 25
@@ -7735,12 +7747,12 @@ x 26
 y 3
 end
 arch igate_closed_1
-x 26
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 26
+y 3
 end
 arch dirtfloor
 x 26
@@ -8125,6 +8137,10 @@ arch dirtfloor
 x 27
 y 23
 end
+arch giant
+x 27
+y 23
+end
 arch dirtfloor
 x 27
 y 24
@@ -8210,12 +8226,12 @@ x 27
 y 36
 end
 arch igate_closed_1
-x 27
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 27
+y 36
 end
 arch large_stones
 x 27
@@ -8313,24 +8329,24 @@ x 28
 y 10
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 28
 y 10
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 28
 y 11
 end
 arch igate_closed_2
-x 28
-y 11
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 11
 end
 arch dirtfloor
 x 28
@@ -8350,36 +8366,36 @@ x 28
 y 13
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 28
 y 13
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 28
 y 14
 end
 arch igate_closed_2
-x 28
-y 14
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 14
 end
 arch dirtfloor
 x 28
 y 15
 end
 arch igate_closed_2
-x 28
-y 15
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 15
 end
 arch dirtfloor
 x 28
@@ -8399,24 +8415,24 @@ x 28
 y 17
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 28
 y 17
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 28
 y 18
 end
 arch igate_closed_2
-x 28
-y 18
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 18
 end
 arch dirtfloor
 x 28
@@ -8436,24 +8452,24 @@ x 28
 y 20
 end
 arch igate_closed_2
-x 28
-y 20
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 20
 end
 arch dirtfloor
 x 28
 y 21
 end
 arch igate_closed_2
-x 28
-y 21
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 21
 end
 arch dirtfloor
 x 28
@@ -8473,24 +8489,24 @@ x 28
 y 23
 end
 arch igate_closed_2
-x 28
-y 23
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 23
 end
 arch dirtfloor
 x 28
 y 24
 end
 arch igate_closed_2
-x 28
-y 24
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 24
 end
 arch dirtfloor
 x 28
@@ -8518,24 +8534,24 @@ x 28
 y 27
 end
 arch igate_closed_2
-x 28
-y 27
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 27
 end
 arch dirtfloor
 x 28
 y 28
 end
 arch igate_closed_2
-x 28
-y 28
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 28
+y 28
 end
 arch dirtfloor
 x 28
@@ -8646,12 +8662,12 @@ x 29
 y 3
 end
 arch igate_closed_1
-x 29
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 29
+y 3
 end
 arch dirtfloor
 x 29
@@ -8698,12 +8714,12 @@ x 29
 y 9
 end
 arch igate_closed_1
-x 29
-y 9
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 29
+y 9
 end
 arch dirtfloor
 x 29
@@ -8786,12 +8802,12 @@ x 29
 y 29
 end
 arch igate_closed_1
-x 29
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 29
+y 29
 end
 arch dungeon_magic
 x 29
@@ -8936,12 +8952,12 @@ x 30
 y 9
 end
 arch igate_closed_1
-x 30
-y 9
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 30
+y 9
 end
 arch dirtfloor
 x 30
@@ -9024,12 +9040,12 @@ x 30
 y 29
 end
 arch igate_closed_1
-x 30
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 30
+y 29
 end
 arch dungeon_magic
 x 30
@@ -9084,12 +9100,12 @@ x 30
 y 36
 end
 arch igate_closed_1
-x 30
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 30
+y 36
 end
 arch large_stones
 x 30
@@ -9174,12 +9190,12 @@ x 31
 y 9
 end
 arch igate_closed_1
-x 31
-y 9
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 31
+y 9
 end
 arch dirtfloor
 x 31
@@ -9262,12 +9278,12 @@ x 31
 y 29
 end
 arch igate_closed_1
-x 31
-y 29
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 31
+y 29
 end
 arch dungeon_magic
 x 31
@@ -9360,12 +9376,12 @@ x 32
 y 3
 end
 arch igate_closed_1
-x 32
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 3
 end
 arch dirtfloor
 x 32
@@ -9425,24 +9441,24 @@ x 32
 y 10
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 32
 y 10
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 32
 y 11
 end
 arch igate_closed_2
-x 32
-y 11
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 11
 end
 arch dirtfloor
 x 32
@@ -9462,24 +9478,24 @@ x 32
 y 13
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 32
 y 13
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 32
 y 14
 end
 arch igate_closed_2
-x 32
-y 14
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 14
 end
 arch dirtfloor
 x 32
@@ -9499,24 +9515,24 @@ x 32
 y 16
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 32
 y 16
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 32
 y 17
 end
 arch igate_closed_2
-x 32
-y 17
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 17
 end
 arch dirtfloor
 x 32
@@ -9536,36 +9552,36 @@ x 32
 y 19
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 32
 y 19
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 32
 y 20
 end
 arch igate_closed_2
-x 32
-y 20
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 20
 end
 arch dirtfloor
 x 32
 y 21
 end
 arch igate_closed_2
-x 32
-y 21
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 21
 end
 arch dirtfloor
 x 32
@@ -9585,36 +9601,36 @@ x 32
 y 23
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 32
 y 23
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 32
 y 24
 end
 arch igate_closed_2
-x 32
-y 24
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 24
 end
 arch dirtfloor
 x 32
 y 25
 end
 arch igate_closed_2
-x 32
-y 25
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 25
 end
 arch dirtfloor
 x 32
@@ -9634,24 +9650,24 @@ x 32
 y 27
 end
 arch igate_closed_2
-x 32
-y 27
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 27
 end
 arch dirtfloor
 x 32
 y 28
 end
 arch igate_closed_2
-x 32
-y 28
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 32
+y 28
 end
 arch dirtfloor
 x 32
@@ -10331,12 +10347,12 @@ x 34
 y 36
 end
 arch igate_closed_1
-x 34
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 34
+y 36
 end
 arch large_stones
 x 34
@@ -10686,12 +10702,12 @@ x 36
 y 3
 end
 arch igate_closed_1
-x 36
-y 3
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 36
+y 3
 end
 arch dirtfloor
 x 36
@@ -11263,12 +11279,12 @@ x 37
 y 36
 end
 arch igate_closed_1
-x 37
-y 36
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 37
+y 36
 end
 arch large_stones
 x 37
@@ -11623,6 +11639,10 @@ arch dirtfloor
 x 39
 y 4
 end
+arch ape
+x 39
+y 4
+end
 arch dirtfloor
 x 39
 y 5
@@ -11910,6 +11930,10 @@ x 40
 y 4
 end
 arch dirtfloor
+x 40
+y 5
+end
+arch ape
 x 40
 y 5
 end
@@ -12228,12 +12252,12 @@ x 41
 y 7
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 41
 y 7
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 41
@@ -12260,12 +12284,12 @@ x 41
 y 10
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 41
 y 10
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 41
@@ -12292,12 +12316,12 @@ x 41
 y 13
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 41
 y 13
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 41
@@ -12324,12 +12348,12 @@ x 41
 y 16
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 41
 y 16
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 41
@@ -12356,12 +12380,12 @@ x 41
 y 19
 end
 arch igate_closed_2
-x 41
-y 19
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 41
+y 19
 end
 arch dirtfloor
 x 41
@@ -12388,24 +12412,24 @@ x 41
 y 22
 end
 arch igate_closed_2
-x 41
-y 22
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 41
+y 22
 end
 arch dirtfloor
 x 41
 y 23
 end
 arch igate_closed_2
-x 41
-y 23
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 41
+y 23
 end
 arch dirtfloor
 x 41
@@ -12425,12 +12449,12 @@ x 41
 y 25
 end
 arch igate_closed_2
+speed 0.500000
+resist_confusion 30
+resist_acid 30
+connected 96
 x 41
 y 25
-speed 0.500000
-resist_confusion 30
-resist_acid 30
-connected 96
 end
 arch dirtfloor
 x 41
@@ -12457,12 +12481,12 @@ x 41
 y 28
 end
 arch igate_closed_2
-x 41
-y 28
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 41
+y 28
 end
 arch dirtfloor
 x 41
@@ -12489,12 +12513,12 @@ x 41
 y 31
 end
 arch igate_closed_2
-x 41
-y 31
 speed 0.500000
 resist_confusion 30
 resist_acid 30
 connected 96
+x 41
+y 31
 end
 arch dirtfloor
 x 41
@@ -13075,10 +13099,10 @@ x 44
 y 21
 end
 arch block_door_closed
-x 44
-y 21
 resist_physical 30
 connected 1
+x 44
+y 21
 end
 arch medium_stones
 x 44
@@ -13267,14 +13291,14 @@ x 45
 y 5
 end
 arch block_door_open
-x 45
-y 5
 speed 0.500000
 speed_left -1.100000
 resist_confusion 30
 resist_acid 30
 value 1
 connected 96
+x 45
+y 5
 end
 arch medium_stones
 x 45
@@ -13409,14 +13433,14 @@ x 45
 y 37
 end
 arch block_door_open
-x 45
-y 37
 speed 0.500000
 speed_left -1.100000
 resist_confusion 30
 resist_acid 30
 value 1
 connected 96
+x 45
+y 37
 end
 arch medium_stones
 x 45
@@ -13445,11 +13469,11 @@ x 46
 y 1
 end
 arch button_plate
-x 46
-y 1
 resist_confusion 30
 resist_acid 30
 connected 96
+x 46
+y 1
 end
 arch medium_stones
 x 46
@@ -13476,11 +13500,11 @@ x 46
 y 5
 end
 arch block_door_open
-x 46
-y 5
 resist_confusion 30
 resist_acid 30
 connected 96
+x 46
+y 5
 end
 arch medium_stones
 x 46
@@ -13615,11 +13639,11 @@ x 46
 y 37
 end
 arch block_door_open
-x 46
-y 37
 resist_confusion 30
 resist_acid 30
 connected 96
+x 46
+y 37
 end
 arch medium_stones
 x 46
@@ -13959,269 +13983,51 @@ arch dread
 x 9
 y 15
 end
-More
-arch dread_2
-x 10
-y 15
-end
-More
-arch dread_3
-x 9
-y 16
-end
-More
-arch dread_4
-x 10
-y 16
-end
 arch gaelotroll
 x 10
 y 23
-end
-More
-arch gaelotroll_2
-x 11
-y 23
-end
-More
-arch gaelotroll_3
-x 10
-y 24
-end
-More
-arch gaelotroll_4
-x 11
-y 24
-end
-More
-arch gaelotroll_5
-x 10
-y 25
-end
-More
-arch gaelotroll_6
-x 11
-y 25
 end
 arch troll
 x 12
 y 10
 end
-More
-arch troll_2
-x 13
-y 10
-end
-More
-arch troll_3
-x 12
-y 11
-end
-More
-arch troll_4
-x 13
-y 11
-end
 arch dragonman
 x 18
 y 20
-end
-More
-arch dragonman_2
-x 18
-y 21
 end
 arch big_elec
 x 18
 y 23
 end
-More
-arch big_elec_2
-x 19
-y 23
-end
-More
-arch big_elec_3
-x 18
-y 24
-end
-More
-arch big_elec_4
-x 19
-y 24
-end
-More
-arch big_elec_5
-x 18
-y 25
-end
-More
-arch big_elec_6
-x 19
-y 25
-end
 arch dragonman
 x 19
 y 20
-end
-More
-arch dragonman_2
-x 19
-y 21
 end
 arch big_dragon
 x 25
 y 17
 end
-More
-arch big_dragon_2
-x 26
-y 17
-end
-More
-arch big_dragon_3
-x 27
-y 17
-end
-More
-arch big_dragon_4
-x 25
-y 18
-end
-More
-arch big_dragon_5
-x 26
-y 18
-end
-More
-arch big_dragon_6
-x 27
-y 18
-end
-arch giant
-x 25
-y 23
-end
-More
-arch giant_2
-x 25
-y 24
-end
 arch dragon
 x 26
-y 10
-end
-More
-arch dragon_2
-x 27
 y 10
 end
 arch titan
 x 26
 y 14
 end
-More
-arch titan_2
-x 25
-y 14
-end
-More
-arch titan_3
-x 25
-y 13
-end
-More
-arch titan_4
-x 26
-y 13
-end
-More
-arch titan_5
-x 27
-y 13
-end
-More
-arch titan_6
-x 27
-y 14
-end
-More
-arch titan_7
-x 27
-y 15
-end
-More
-arch titan_8
-x 26
-y 15
-end
-More
-arch titan_9
-x 25
-y 15
-end
 arch chinese_dragon
 x 26
 y 20
-end
-More
-arch chinese_dragon_2
-x 27
-y 20
-end
-More
-arch chinese_dragon_3
-x 26
-y 21
-end
-More
-arch chinese_dragon_4
-x 27
-y 21
 end
 arch behemoth
 x 26
 y 27
 end
-More
-arch behemoth_2
-x 27
-y 27
-end
-More
-arch behemoth_3
-x 26
-y 28
-end
-More
-arch behemoth_4
-x 27
-y 28
-end
-arch giant
-x 27
-y 23
-end
-More
-arch giant_2
-x 27
-y 24
-end
 arch cobra
 x 39
 y 22
 end
-More
-arch cobra_2
-x 39
-y 23
-end
 arch cobra
 x 40
 y 22
-end
-More
-arch cobra_2
-x 40
-y 23
 end

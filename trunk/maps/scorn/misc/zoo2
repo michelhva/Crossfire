@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 13 01:52:50 2001
 endmsg
-x 50
-y 50
+width 50
+height 50
 end
 arch dungeon_magic
 end
@@ -1687,9 +1687,9 @@ x 3
 y 41
 end
 arch necromancer
+unaggressive 0
 x 3
 y 41
-unaggressive 0
 end
 arch dungeon_magic
 x 3
@@ -7702,10 +7702,10 @@ x 17
 y 32
 end
 arch firewall_3
-x 17
-y 32
 invisible 1
 connected 1
+x 17
+y 32
 end
 arch dungeon_magic
 x 17
@@ -8033,10 +8033,10 @@ x 18
 y 20
 end
 arch button_small
-x 18
-y 20
 invisible 1
 connected 1
+x 18
+y 20
 end
 arch dungeon_magic
 x 18
@@ -8473,14 +8473,14 @@ y 20
 end
 arch fireball
 name fire
+type 0
 hp 0
 dam 0
 wc 0
-x 19
-y 20
-type 0
 attacktype 0
 flying 0
+x 19
+y 20
 end
 arch dungeon_magic
 x 19
@@ -8515,10 +8515,10 @@ x 19
 y 24
 end
 arch button_small
-x 19
-y 24
 invisible 1
 connected 2
+x 19
+y 24
 end
 arch dungeon_magic
 x 19
@@ -8918,10 +8918,10 @@ x 20
 y 20
 end
 arch button_small
-x 20
-y 20
 invisible 1
 connected 1
+x 20
+y 20
 end
 arch dungeon_magic
 x 20
@@ -8952,10 +8952,10 @@ x 20
 y 23
 end
 arch creator
-x 20
-y 23
 connected 1
 lifesave 1
+x 20
+y 23
 end
 arch dungeon_magic
 x 20
@@ -9006,10 +9006,10 @@ x 20
 y 28
 end
 arch firewall_5
-x 20
-y 28
 invisible 1
 connected 2
+x 20
+y 28
 end
 arch dungeon_magic
 x 20
@@ -9858,10 +9858,10 @@ x 22
 y 20
 end
 arch creator
-x 22
-y 20
 connected 2
 lifesave 1
+x 22
+y 20
 end
 arch dungeon_magic
 x 22
@@ -10330,14 +10330,14 @@ y 24
 end
 arch fireball
 name fire
+type 0
 hp 0
 dam 0
 wc 0
-x 23
-y 24
-type 0
 attacktype 0
 flying 0
+x 23
+y 24
 end
 arch dungeon_magic
 x 23
@@ -10444,10 +10444,10 @@ x 23
 y 34
 end
 arch firewall_1
-x 23
-y 34
 invisible 1
 connected 2
+x 23
+y 34
 end
 arch dungeon_magic
 x 23
@@ -10751,10 +10751,10 @@ x 24
 y 20
 end
 arch button_small
-x 24
-y 20
 invisible 1
 connected 2
+x 24
+y 20
 end
 arch dungeon_magic
 x 24
@@ -10774,14 +10774,14 @@ y 22
 end
 arch fireball
 name fire
+type 0
 hp 0
 dam 0
 wc 0
-x 24
-y 22
-type 0
 attacktype 0
 flying 0
+x 24
+y 22
 end
 arch dungeon_magic
 x 24
@@ -10792,10 +10792,10 @@ x 24
 y 23
 end
 arch button_small
-x 24
-y 23
 invisible 1
 connected 1
+x 24
+y 23
 end
 arch dungeon_magic
 x 24
@@ -11315,10 +11315,10 @@ x 25
 y 28
 end
 arch firewall_6
-x 25
-y 28
 invisible 1
 connected 1
+x 25
+y 28
 end
 arch dungeon_magic
 x 25
@@ -22615,1232 +22615,147 @@ arch byakie
 x 1
 y 27
 end
-More
-arch byakie_2
-x 2
-y 27
-end
-More
-arch byakie_3
-x 1
-y 28
-end
-More
-arch byakie_4
-x 2
-y 28
-end
 arch byakie
 x 1
 y 29
-end
-More
-arch byakie_2
-x 2
-y 29
-end
-More
-arch byakie_3
-x 1
-y 30
-end
-More
-arch byakie_4
-x 2
-y 30
 end
 arch cobra
 x 1
 y 47
 end
-More
-arch cobra_2
-x 1
-y 48
-end
 arch big_demon
 x 2
 y 13
 end
-More
-arch big_demon_2
-x 3
-y 13
-end
-More
-arch big_demon_3
-x 4
-y 13
-end
-More
-arch big_demon_4
-x 2
-y 14
-end
-More
-arch big_demon_5
-x 3
-y 14
-end
-More
-arch big_demon_6
-x 4
-y 14
-end
-More
-arch big_demon_7
-x 2
-y 15
-end
-More
-arch big_demon_8
-x 3
-y 15
-end
-More
-arch big_demon_9
-x 4
-y 15
-end
-More
-arch big_demon_A
-x 2
-y 16
-end
-More
-arch big_demon_B
-x 3
-y 16
-end
-More
-arch big_demon_C
-x 4
-y 16
-end
 arch big_demon
 x 2
 y 17
-end
-More
-arch big_demon_2
-x 3
-y 17
-end
-More
-arch big_demon_3
-x 4
-y 17
-end
-More
-arch big_demon_4
-x 2
-y 18
-end
-More
-arch big_demon_5
-x 3
-y 18
-end
-More
-arch big_demon_6
-x 4
-y 18
-end
-More
-arch big_demon_7
-x 2
-y 19
-end
-More
-arch big_demon_8
-x 3
-y 19
-end
-More
-arch big_demon_9
-x 4
-y 19
-end
-More
-arch big_demon_A
-x 2
-y 20
-end
-More
-arch big_demon_B
-x 3
-y 20
-end
-More
-arch big_demon_C
-x 4
-y 20
 end
 arch Balrog
 x 2
 y 22
 end
-More
-arch Balrog_2
-x 3
-y 22
-end
-More
-arch Balrog_3
-x 4
-y 22
-end
-More
-arch Balrog_4
-x 5
-y 22
-end
-More
-arch Balrog_5
-x 2
-y 23
-end
-More
-arch Balrog_6
-x 3
-y 23
-end
-More
-arch Balrog_7
-x 4
-y 23
-end
-More
-arch Balrog_8
-x 5
-y 23
-end
-More
-arch Balrog_9
-x 2
-y 24
-end
-More
-arch Balrog_10
-x 3
-y 24
-end
-More
-arch Balrog_11
-x 4
-y 24
-end
-More
-arch Balrog_12
-x 5
-y 24
-end
-More
-arch Balrog_13
-x 2
-y 25
-end
-More
-arch Balrog_14
-x 3
-y 25
-end
-More
-arch Balrog_15
-x 4
-y 25
-end
-More
-arch Balrog_16
-x 5
-y 25
-end
 arch minor_djinn
 x 2
 y 32
-end
-More
-arch minor_djinn_2
-x 2
-y 33
 end
 arch minor_djinn
 x 2
 y 34
 end
-More
-arch minor_djinn_2
-x 2
-y 35
-end
 arch lamia
 x 2
 y 37
 end
-More
-arch lamia_2
-x 3
-y 37
-end
 arch lamia
 x 2
-y 38
-end
-More
-arch lamia_2
-x 3
 y 38
 end
 arch cobra
 x 2
 y 45
 end
-More
-arch cobra_2
-x 2
-y 46
-end
 arch cobra
 x 2
 y 47
-end
-More
-arch cobra_2
-x 2
-y 48
 end
 arch byakie
 x 3
 y 28
 end
-More
-arch byakie_2
-x 4
-y 28
-end
-More
-arch byakie_3
-x 3
-y 29
-end
-More
-arch byakie_4
-x 4
-y 29
-end
 arch minor_djinn
 x 3
 y 32
-end
-More
-arch minor_djinn_2
-x 3
-y 33
 end
 arch minor_djinn
 x 3
 y 34
 end
-More
-arch minor_djinn_2
-x 3
-y 35
-end
 arch cobra
 x 3
 y 45
 end
-More
-arch cobra_2
-x 3
-y 46
-end
 arch cobra
 x 3
 y 47
-end
-More
-arch cobra_2
-x 3
-y 48
 end
 arch Greater_Demon
 x 8
 y 1
 end
-More
-arch Greater_Demon_1
-x 9
-y 1
-end
-More
-arch Greater_Demon_2
-x 10
-y 1
-end
-More
-arch Greater_Demon_3
-x 11
-y 1
-end
-More
-arch Greater_Demon_4
-x 12
-y 1
-end
-More
-arch Greater_Demon_5
-x 13
-y 1
-end
-More
-arch Greater_Demon_6
-x 8
-y 2
-end
-More
-arch Greater_Demon_7
-x 9
-y 2
-end
-More
-arch Greater_Demon_8
-x 10
-y 2
-end
-More
-arch Greater_Demon_9
-x 11
-y 2
-end
-More
-arch Greater_Demon_A
-x 12
-y 2
-end
-More
-arch Greater_Demon_B
-x 13
-y 2
-end
-More
-arch Greater_Demon_C
-x 8
-y 3
-end
-More
-arch Greater_Demon_D
-x 9
-y 3
-end
-More
-arch Greater_Demon_E
-x 10
-y 3
-end
-More
-arch Greater_Demon_F
-x 11
-y 3
-end
-More
-arch Greater_Demon_G
-x 12
-y 3
-end
-More
-arch Greater_Demon_H
-x 13
-y 3
-end
-More
-arch Greater_Demon_I
-x 8
-y 4
-end
-More
-arch Greater_Demon_J
-x 9
-y 4
-end
-More
-arch Greater_Demon_K
-x 10
-y 4
-end
-More
-arch Greater_Demon_L
-x 11
-y 4
-end
-More
-arch Greater_Demon_M
-x 12
-y 4
-end
-More
-arch Greater_Demon_N
-x 13
-y 4
-end
-More
-arch Greater_Demon_O
-x 8
-y 5
-end
-More
-arch Greater_Demon_P
-x 9
-y 5
-end
-More
-arch Greater_Demon_Q
-x 10
-y 5
-end
-More
-arch Greater_Demon_R
-x 11
-y 5
-end
-More
-arch Greater_Demon_S
-x 12
-y 5
-end
-More
-arch Greater_Demon_T
-x 13
-y 5
-end
-More
-arch Greater_Demon_U
-x 8
-y 6
-end
-More
-arch Greater_Demon_V
-x 9
-y 6
-end
-More
-arch Greater_Demon_W
-x 10
-y 6
-end
-More
-arch Greater_Demon_X
-x 11
-y 6
-end
-More
-arch Greater_Demon_Y
-x 12
-y 6
-end
-More
-arch Greater_Demon_Z
-x 13
-y 6
-end
-More
-arch Greater_Demon_a
-x 8
-y 7
-end
-More
-arch Greater_Demon_b
-x 9
-y 7
-end
-More
-arch Greater_Demon_c
-x 10
-y 7
-end
-More
-arch Greater_Demon_d
-x 11
-y 7
-end
-More
-arch Greater_Demon_e
-x 12
-y 7
-end
-More
-arch Greater_Demon_f
-x 13
-y 7
-end
 arch jessyb
 x 17
 y 1
-end
-More
-arch jessyb_2
-x 18
-y 1
-end
-More
-arch jessyb_3
-x 19
-y 1
-end
-More
-arch jessyb_4
-x 20
-y 1
-end
-More
-arch jessyb_5
-x 17
-y 2
-end
-More
-arch jessyb_6
-x 18
-y 2
-end
-More
-arch jessyb_7
-x 19
-y 2
-end
-More
-arch jessyb_8
-x 20
-y 2
-end
-More
-arch jessyb_9
-x 17
-y 3
-end
-More
-arch jessyb_10
-x 18
-y 3
-end
-More
-arch jessyb_11
-x 19
-y 3
-end
-More
-arch jessyb_12
-x 20
-y 3
-end
-More
-arch jessyb_13
-x 17
-y 4
-end
-More
-arch jessyb_14
-x 18
-y 4
-end
-More
-arch jessyb_15
-x 19
-y 4
-end
-More
-arch jessyb_16
-x 20
-y 4
 end
 arch shadowtiger
 x 17
 y 46
 end
-More
-arch shadowtiger_2
-x 18
-y 46
-end
-More
-arch shadowtiger_3
-x 17
-y 47
-end
-More
-arch shadowtiger_4
-x 18
-y 47
-end
 arch medium_demon
 x 21
 y 29
-end
-More
-arch medium_demon_2
-x 22
-y 29
-end
-More
-arch medium_demon_3
-x 21
-y 30
-end
-More
-arch medium_demon_4
-x 22
-y 30
 end
 arch baslic
 x 21
 y 46
 end
-More
-arch baslic_2
-x 22
-y 46
-end
-More
-arch baslic_3
-x 23
-y 46
-end
-More
-arch baslic_4
-x 21
-y 47
-end
-More
-arch baslic_5
-x 22
-y 47
-end
-More
-arch baslic_6
-x 23
-y 47
-end
 arch demon_lord
 x 25
 y 4
-end
-More
-arch demon_lord_1
-x 24
-y 1
-end
-More
-arch demon_lord_2
-x 25
-y 1
-end
-More
-arch demon_lord_3
-x 26
-y 1
-end
-More
-arch demon_lord_4
-x 27
-y 1
-end
-More
-arch demon_lord_5
-x 24
-y 2
-end
-More
-arch demon_lord_6
-x 25
-y 2
-end
-More
-arch demon_lord_7
-x 26
-y 2
-end
-More
-arch demon_lord_8
-x 27
-y 2
-end
-More
-arch demon_lord_9
-x 24
-y 3
-end
-More
-arch demon_lord_10
-x 25
-y 3
-end
-More
-arch demon_lord_11
-x 26
-y 3
-end
-More
-arch demon_lord_12
-x 27
-y 3
-end
-More
-arch demon_lord_13
-x 24
-y 4
-end
-More
-arch demon_lord_15
-x 26
-y 4
-end
-More
-arch demon_lord_16
-x 27
-y 4
-end
-More
-arch demon_lord_17
-x 24
-y 5
-end
-More
-arch demon_lord_18
-x 25
-y 5
-end
-More
-arch demon_lord_19
-x 26
-y 5
-end
-More
-arch demon_lord_20
-x 27
-y 5
-end
-More
-arch demon_lord_21
-x 24
-y 6
-end
-More
-arch demon_lord_22
-x 25
-y 6
-end
-More
-arch demon_lord_23
-x 26
-y 6
-end
-More
-arch demon_lord_24
-x 27
-y 6
-end
-More
-arch demon_lord_25
-x 24
-y 7
-end
-More
-arch demon_lord_26
-x 25
-y 7
-end
-More
-arch demon_lord_27
-x 26
-y 7
-end
-More
-arch demon_lord_28
-x 27
-y 7
-end
-More
-arch demon_lord_29
-x 24
-y 8
-end
-More
-arch demon_lord_30
-x 25
-y 8
-end
-More
-arch demon_lord_31
-x 26
-y 8
-end
-More
-arch demon_lord_32
-x 27
-y 8
 end
 arch angel_knight
 x 26
 y 32
 end
-More
-arch angel_knight_2
-x 26
-y 33
-end
 arch ArchAngel
 x 30
 y 29
-end
-More
-arch ArchAngel_2
-x 31
-y 29
-end
-More
-arch ArchAngel_3
-x 30
-y 30
-end
-More
-arch ArchAngel_4
-x 31
-y 30
-end
-More
-arch ArchAngel_5
-x 30
-y 31
-end
-More
-arch ArchAngel_6
-x 31
-y 31
 end
 arch belzebub
 x 31
 y 2
 end
-More
-arch belzebub_2
-x 32
-y 2
-end
-More
-arch belzebub_3
-x 31
-y 3
-end
-More
-arch belzebub_4
-x 32
-y 3
-end
-More
-arch belzebub_5
-x 31
-y 4
-end
-More
-arch belzebub_6
-x 32
-y 4
-end
 arch golem_necro
 x 36
 y 1
 end
-More
-arch golem_necro_2
-x 37
-y 1
-end
-More
-arch golem_necro_3
-x 36
-y 2
-end
-More
-arch golem_necro_4
-x 37
-y 2
-end
-More
-arch golem_necro_5
-x 36
-y 3
-end
-More
-arch golem_necro_6
-x 37
-y 3
-end
 arch gryphon
-x 37
-y 16
-end
-More
-arch gryphon2
-x 38
-y 16
-end
-More
-arch gryphon3
-x 39
-y 16
-end
-More
-arch gryphon4
-x 37
-y 17
-end
-More
-arch gryphon5
 x 38
 y 17
-end
-More
-arch gryphon6
-x 39
-y 17
-end
-More
-arch gryphon7
-x 37
-y 18
-end
-More
-arch gryphon8
-x 38
-y 18
-end
-More
-arch gryphon9
-x 39
-y 18
 end
 arch bone_drake
 x 40
 y 9
 end
-More
-arch bone_drake_2
-x 41
-y 9
-end
-More
-arch bone_drake_3
-x 40
-y 10
-end
-More
-arch bone_drake_4
-x 41
-y 10
-end
 arch g_worm
 x 41
 y 2
-end
-More
-arch g_worm_2
-x 42
-y 2
-end
-More
-arch g_worm_3
-x 41
-y 3
-end
-More
-arch g_worm_4
-x 42
-y 3
 end
 arch EDK
 x 45
 y 25
 end
-More
-arch EDK3
-x 45
-y 26
-end
-More
-arch EDK5
-x 45
-y 27
-end
-More
-arch EDK2
-x 46
-y 25
-end
-More
-arch EDK4
-x 46
-y 26
-end
-More
-arch EDK6
-x 46
-y 27
-end
 arch skree
 x 46
 y 2
-end
-More
-arch skree_2
-x 47
-y 2
-end
-More
-arch skree_3
-x 46
-y 3
-end
-More
-arch skree_4
-x 47
-y 3
 end
 arch destroying_angel
 x 46
 y 6
 end
-More
-arch destroying_angel_2
-x 47
-y 6
-end
-More
-arch destroying_angel_3
-x 46
-y 7
-end
-More
-arch destroying_angel_4
-x 47
-y 7
-end
-More
-arch destroying_angel_5
-x 46
-y 8
-end
-More
-arch destroying_angel_6
-x 47
-y 8
-end
 arch cyclops
 x 46
 y 10
 end
-More
-arch cyclops_2
-x 47
-y 10
-end
-More
-arch cyclops_3
-x 46
-y 11
-end
-More
-arch cyclops_4
-x 47
-y 11
-end
-More
-arch cyclops_5
-x 46
-y 12
-end
-More
-arch cyclops_6
-x 47
-y 12
-end
 arch ent
 x 46
 y 14
 end
-More
-arch ent_2
-x 47
-y 14
-end
-More
-arch ent_3
-x 46
-y 15
-end
-More
-arch ent_4
-x 47
-y 15
-end
 arch ent
 x 46
 y 16
-end
-More
-arch ent_2
-x 47
-y 16
-end
-More
-arch ent_3
-x 46
-y 17
-end
-More
-arch ent_4
-x 47
-y 17
 end
 arch big_wiz
 x 46
 y 20
-end
-More
-arch big_wiz2
-x 47
-y 20
-end
-More
-arch big_wiz3
-x 48
-y 20
-end
-More
-arch big_wiz4
-x 46
-y 21
-end
-More
-arch big_wiz5
-x 47
-y 21
-end
-More
-arch big_wiz6
-x 48
-y 21
-end
-More
-arch big_wiz7
-x 46
-y 22
-end
-More
-arch big_wiz8
-x 47
-y 22
-end
-More
-arch big_wiz9
-x 48
-y 22
 end
