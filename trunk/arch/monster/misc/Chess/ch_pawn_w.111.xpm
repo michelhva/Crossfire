@@ -1,0 +1,34 @@
+/* XPM */
+static char * ch_pawn_w_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	c white",
+"o	s Light gray	c grey",
+/* pixels */
+"                        ",
+"                        ",
+"          ....          ",
+"         .XXXX.         ",
+"        .XXXXXX.        ",
+"        .XXXXXX.        ",
+"        .oXXXXo.        ",
+"        ..oooo..        ",
+"         ......         ",
+"         .XXXX.         ",
+"         .XXXX.         ",
+"         .XXXX.         ",
+"        .XXXXXX.        ",
+"        .XXXXXX.        ",
+"        .XXXXXX.        ",
+"       ..XXXXXX..       ",
+"       .o.XXXX.o.       ",
+"      .XXo....oXX.      ",
+"      .oXXooooXXo.      ",
+"       .oXXXXXXo.       ",
+"        ..oXXo..        ",
+"          ....          ",
+"                        ",
+"                        "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * ch_queen_w_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Light gray	c Grey75",
+"o	c white",
+/* pixels */
+"          ...           ",
+"      .  .X.X.  .       ",
+"      ...Xo.oX...       ",
+"       ..oo.oo..        ",
+"       .Xoo.ooX.        ",
+"       .ooX.Xoo.        ",
+"       ..o...o..        ",
+"        .......         ",
+"        .ooooo.         ",
+"        .ooooo.         ",
+"         .ooo.          ",
+"         .....          ",
+"         .ooo.          ",
+"         .ooo.          ",
+"        .ooooo.         ",
+"        .ooooo.         ",
+"        .XoooX.         ",
+"       .o.XXX.o.        ",
+"       .oo...oo.        ",
+"       .XoooooX.        ",
+"      .o.XoooX.o.       ",
+"      .Xo.....oX.       ",
+"       ..ooooo..        ",
+"         .....          "};
