@@ -3243,6 +3243,10 @@ x 10
 y 41
 end
 arch minihouse
+name Tannery
+slaying /navar_city/misc/tannery
+hp 5
+sp 9
 x 10
 y 41
 end
@@ -4468,6 +4472,10 @@ x 14
 y 43
 end
 arch tavern
+name Tim the bowyer
+slaying /navar_city/misc/bowyer
+hp 6
+sp 14
 x 14
 y 43
 end
@@ -13283,6 +13291,13 @@ x 13
 y 38
 end
 arch church
+name Church of Ixalovh
+msg
+Under construction!
+endmsg
+slaying /navar_city/temples/ixalovh
+hp 4
+sp 18
 x 13
 y 47
 end

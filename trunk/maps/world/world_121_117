@@ -13512,7 +13512,14 @@ arch grass
 x 48
 y 8
 end
-arch house_1
+arch s_shop2
+name strange little store
+msg
+You hear the flap of batwings.
+endmsg
+slaying /navar_city/misc/thamshop
+hp 4
+sp 13
 x 48
 y 8
 end
@@ -14143,6 +14150,10 @@ x 46
 y 4
 end
 arch house_up
+name Iggy's house
+slaying /navar_city/slums/Iggys_house
+hp 1
+sp 15
 x 46
 y 7
 end
