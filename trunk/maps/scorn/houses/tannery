@@ -876,12 +876,12 @@ x 3
 y 1
 end
 arch quarto
-title Marksmanship
 msg
 Gloves of Marksmanship can be made with
 gloves, 5 arrows of accuracy, and a bottle
 of mineral oil.
 endmsg
+title Marksmanship
 no_pick 1
 x 3
 y 1
@@ -1060,7 +1060,7 @@ end
 arch a_townsman2
 name Tanning Master
 msg
-@match
+@match *
 Can't you see I am busy...
 Neko scarves are the latest rage at court.
 If you don't want to be an apprentice, then read the books!
@@ -1107,10 +1107,10 @@ y 7
 end
 arch altar
 name Drop 100 platinum to enter
-name_pl Drop 100 platinum to enter
 msg
 Drop 100 platinum to enter.
 endmsg
+name_pl Drop 100 platinum to enter
 slaying platinacoin
 food 100
 connected 10
@@ -1137,11 +1137,11 @@ y 10
 end
 arch oakdoor
 face odoor_2.111
-hp 21
-sp 21
+hp 11
+sp 39
 slaying /world/world_105_115
-x 11
-y 39
+x 5
+y 10
 end
 arch dirtfloor
 x 6
@@ -1249,12 +1249,12 @@ x 7
 y 1
 end
 arch quarto
-title Minor Protection
 msg
 A cloak of minor protection can be
 manufactured by adding a balm of
 aetherality to a cloak.
 endmsg
+title Minor Protection
 no_pick 1
 x 7
 y 1
