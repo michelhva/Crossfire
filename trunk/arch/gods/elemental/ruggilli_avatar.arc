@@ -1,5 +1,4 @@
-# elemental -- war/dragon god Ruggilli
-Object Ruggilli
+Object ruggilli_avatar
 race consuming_fire_creatures
 face ruggilli.111
 animation Ruggilli
@@ -12,15 +11,14 @@ Wis 30
 Pow 30
 monster 1
 alive 1
-type 50
 attacktype 5
 path_attuned 131074
 path_repelled 10500
 path_denied 82945
-resist_fire 100
-resist_physical 30
-resist_magic 30
-resist_cold -30
+immune 4
+protected 7
+vulnerable 16
+armour 20
 ac -5
 wc -3
 dam 60
@@ -33,12 +31,8 @@ can_cast_spell 1
 reflect_missile 1
 last_heal 1
 last_eat 1
-msg
-Chaos God of slaughter and terror, Consuming worm, Greedy gut
-endmsg
 exp 1
 weight 500000
-randomitems Ruggilli
 end
 More
 Object Ruggilli_2

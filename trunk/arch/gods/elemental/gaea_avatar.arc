@@ -1,6 +1,4 @@
-# elemental -- nature goddess Gaea
-Object Gaea
-title Devourers
+Object gaea_avatar
 face ent.111
 race animal,bird,slime,insect,reptile,water_elemental,earth_elemental,air_elemental,fire_elemental
 slaying undead,chess,unnatural
@@ -14,15 +12,14 @@ Dex 30
 Int 30
 Wis 30
 Pow 30
-type 50
 attacktype 16384
 path_attuned 526784
 path_denied 393216
 path_repelled 30
-resist_drain 100
-resist_deplete 100
-resist_death 100
-resist_fear -100
+immune 196736
+protected 196736
+vulnerable 16384
+armour 50
 ac -5
 wc -1
 dam 50
@@ -34,12 +31,8 @@ level 15
 speed 0.18
 can_cast_spell 1
 can_use_armour 1
-msg
-Goddess of peace, Guardian of life, Mother of nature
-endmsg
 exp 1
 weight 500000
-randomitems Gaea
 end
 More
 Object Gaea_2

@@ -1,7 +1,4 @@
-# supernatural -- the devourers of souls
-Object Devourers
-type 50
-title Gaea
+Object devourers_avatar
 face grimreaper.112
 race undead
 animation grimreaper
@@ -18,11 +15,9 @@ attacktype 196736
 path_attuned 262144
 path_denied 590082
 path_repelled 129
-resist_drain 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_fire -30
+immune 213120
+protected 213120
+vulnerable 4
 ac -12
 wc -1
 hp 350
@@ -36,20 +31,7 @@ can_use_weapon 1
 can_use_armour 1
 undead 1
 can_see_in_dark 1
-msg
-Soul Eaters, Harbingers of Death, Nameless Lords of the Tomb
-endmsg
 exp 1
 weight 1
-randomitems Devourers
 editable 0
-end
-Object crystalball
-name glass sphere
-nrof 1
-face crystalball.111
-material 4
-weight 10000
-editable 2048
-value 10000
 end

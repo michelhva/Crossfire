@@ -1,7 +1,4 @@
-# demihumans -- dwarven god Mostrai
-Object Mostrai
-title Gnarg
-type 50
+Object mostrai_avatar
 face dwarf.111
 race dwarf
 slaying goblin,giant
@@ -18,7 +15,8 @@ Wis 30
 Pow 30
 path_attuned 18432
 path_repelled 64
-resist_fire 30
+protected 4
+armour 75
 ac -10
 wc -6
 dam 50
@@ -28,12 +26,7 @@ speed 0.20
 can_cast_spell 1
 can_use_weapon 1
 can_use_armour 1
-msg
-Dwarven deity of metal smithing and warcraft, Giant basher,
-Delver of secrets
-endmsg
 exp 1
 weight 100000
-randomitems Mostrai
 editable 0
 end
