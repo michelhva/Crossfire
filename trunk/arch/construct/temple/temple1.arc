@@ -1,6 +1,6 @@
 Object temple1
 name temple
-face temple1.111
+face temple1.x11
 type 66
 no_pick 1
 no_pass 1
@@ -9,7 +9,7 @@ end
 More
 Object temple1_2
 name temple
-face temple1.211
+face temple1.x11
 type 66
 no_pick 1
 no_pass 1
@@ -18,7 +18,7 @@ end
 More
 Object temple1_3
 name temple
-face temple1.311
+face temple1.x11
 type 66
 no_pick 1
 visibility 100
@@ -27,7 +27,7 @@ end
 More
 Object temple1_4
 name temple
-face temple1.411
+face temple1.x11
 type 66
 visibility 100
 no_pick 1
