@@ -314,8 +314,7 @@ msg
 Greetings, welcome to my inn.
 You must be cold and tired.
 @match room|Room|bed|Bed
-Need a room eh? Upstairs, cost ya 50 gold.
-If you leave you pay again.
+Need a room eh? Upstairs, cost ya 50 gold for one day.
 @match 50|fifty|Fifty
 Not much else around friend.
 @match ripoff|cheat|robbery
@@ -324,6 +323,8 @@ You could always go sleep with the bears...
 Ya Billy has been with me for 10 years.
 He's a little slow on the uptake,
 but he's a good kid.
+@match Aza|aza
+Who?  Never heard of him.
 @match *
 What can I gettcha?
 endmsg
@@ -1357,6 +1358,11 @@ arch woodfloor2
 x 14
 y 1
 end
+arch clock
+no_pick 1
+x 14
+y 1
+end
 arch woodfloor2
 x 14
 y 2
@@ -1985,18 +1991,18 @@ name drop 50 gold for a room
 type 31
 slaying goldcoin
 food 50
-connected 1
+connected 3
 last_sp 1
 x 20
 y 7
 end
-arch teleporter
-invisible 1
-slaying hermes_inn2
-hp 20
-sp 8
-connected 1
-speed 0.0
+arch trigger_marker
+msg
+You may access the inn facilities for one day.
+endmsg
+slaying hermes_inn_pass
+connected 3
+food 504
 x 20
 y 7
 end
@@ -2005,6 +2011,15 @@ x 20
 y 8
 end
 arch stair_up_2
+slaying hermes_inn2
+hp 20
+sp 8
+x 20
+y 8
+end
+arch check_floor
+slaying hermes_inn_pass
+no_pass 1
 x 20
 y 8
 end
