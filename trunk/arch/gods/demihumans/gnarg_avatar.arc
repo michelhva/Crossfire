@@ -1,7 +1,4 @@
-# demihumans -- goblin/troll god Gnarg
-Object Gnarg
-title Lythander
-type 50
+Object gnarg_avatar
 face troll.171
 slaying faerie,dwarf
 race goblin,giant,troll
@@ -18,8 +15,10 @@ Pow 30
 attacktype 1024
 path_attuned 131088
 path_repelled 65792
-resist_poison 100
-resist_fear -100
+immune 1024
+protected 1024
+vulnerable 16384
+armour 40
 hp 1000
 ac -5
 wc -3
@@ -29,12 +28,8 @@ speed 0.25
 can_use_weapon 1
 can_use_armour 1
 can_cast_spell 1
-msg
-Father of goblins, Lord Troll, Master of poisons, Patron of assassins
-endmsg
 exp 1
 weight 500000
-randomitems Gnarg
 end
 More
 Object Gnarg_2

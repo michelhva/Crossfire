@@ -1,7 +1,4 @@
-# supernatural -- demon king Gorokh
-Object Gorokh
-title Valriel
-type 50
+Object gorokh_avatar
 face devil.111
 slaying angel
 race demon
@@ -18,8 +15,9 @@ alive 1
 attacktype 16384
 path_attuned 393216
 path_denied 1025
-resist_confusion 100
-resist_fear 100
+protected 16416
+immune 16416
+armour 50
 ac -5
 wc -3
 dam 50
@@ -29,11 +27,7 @@ speed 0.25
 can_cast_spell 1
 can_use_armour 1
 can_use_weapon 1
-msg
-Demon King, Duke of Hell, Temptor and Tormentor
-endmsg
 exp 1
 weight 400000
-randomitems Gorokh
 editable 0
 end
