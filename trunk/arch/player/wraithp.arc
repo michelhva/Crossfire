@@ -19,7 +19,6 @@ dam 1
 alive 1
 weight 30000
 food 500
-speed 0.5
 can_use_armour 1
 can_use_weapon 1
 attacktype 17
