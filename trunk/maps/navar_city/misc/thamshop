@@ -4,6 +4,8 @@ msg
 Creator: Avion
 CF Java Map Editor
 Date:    22/02/2004
+Modified by: Gene Alexander
+Date:    30 May 2004
 endmsg
 width 9
 height 14
@@ -116,7 +118,25 @@ arch tile_white_floor
 x 1
 y 3
 end
+arch platinum_converter
+name Talisman of evocation (100 diamonds)
+slaying gem
+food 100
+other_arch talisman_evocation
+sp 1
+x 1
+y 3
+end
 arch tile_white_floor
+x 1
+y 4
+end
+arch platinum_converter
+name Talisman of sorcery (100 diamonds)
+slaying gem
+food 100
+other_arch talisman_sorcery
+sp 1
 x 1
 y 4
 end
@@ -125,9 +145,10 @@ x 1
 y 5
 end
 arch platinum_converter
-name buy staff (20pp)
-food 20
-other_arch staff
+name Talisman of pyromancy (100 diamonds)
+slaying gem
+food 100
+other_arch talisman_pyromancy
 sp 1
 x 1
 y 5
@@ -634,12 +655,20 @@ arch tile_white_floor
 x 7
 y 4
 end
+arch platinum_converter
+name Staff (20 platinum)
+food 20
+other_arch staff
+sp 1
+x 7
+y 4
+end
 arch tile_white_floor
 x 7
 y 5
 end
 arch platinum_converter
-name buy holy symbol (30pp)
+name Holy symbol (30 platinum)
 food 30
 other_arch holy_symbol
 sp 1
