@@ -5,11 +5,11 @@ randomitems giant
 monster 1
 sleep 1
 Wis 10
-face giant.111
+face giant.x11
 color_fg brown
 anim
-giant.111
-giant.112
+giant.x11
+giant.x12
 mina
 resist_electricity 50
 resist_blind -30
@@ -38,11 +38,11 @@ end
 More
 Object giant_2
 name hill giant
-face giant.211
+face giant.x11
 color_fg brown
 anim
-giant.211
-giant.212
+giant.x11
+giant.x12
 mina
 monster 1
 alive 1
