@@ -11,7 +11,7 @@ jessyb.112
 mina
 attacktype 65023
 resist_physical 100
-resist_magic 100
+resist_magic 90
 resist_fire 100
 resist_cold 100
 resist_confusion 100
@@ -40,7 +40,7 @@ dam 40
 Str 90
 Int 30
 Dex 40
-Pow 127
+Pow 100
 maxsp 200
 can_cast_spell 1
 hp 8000

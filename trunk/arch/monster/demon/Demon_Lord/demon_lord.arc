@@ -8,7 +8,7 @@ demon_lord.E11
 demon_lord.E12
 mina
 Con 8
-Pow 48
+Pow 35
 can_cast_spell 1
 sp 80
 maxsp 80
@@ -16,12 +16,12 @@ hp 3000
 maxhp 3000
 exp 90000
 ac -11
-dam 50
+dam 40
 wc -30
 weight 8000000
 attacktype 5
 resist_fire 100
-resist_cold 100
+resist_cold 95
 resist_fear 100
 resist_holyword 90
 resist_godpower 90
