@@ -1,15 +1,16 @@
 arch map
-reset_timeout 7200
-difficulty 1
-width 65
-height 80
-enter_x 1
-enter_y 1
+name <untitled>
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Sun Aug 18 01:25:12 2002
 endmsg
+width 65
+height 80
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 1
 end
 arch invis_exit
 slaying /world/world_104_115
@@ -824,9 +825,9 @@ msg
 @match argon
 Click.
 endmsg
+connected 3
 x 1
 y 19
-connected 3
 end
 arch magic_mouth
 msg
@@ -844,9 +845,9 @@ msg
 @match argon
 Click.
 endmsg
+connected 3
 x 1
 y 20
-connected 3
 end
 arch magic_mouth
 msg
@@ -864,9 +865,9 @@ msg
 @match argon
 Click.
 endmsg
+connected 3
 x 1
 y 21
-connected 3
 end
 arch magic_mouth
 msg
@@ -1288,9 +1289,9 @@ x 2
 y 19
 end
 arch grate_closed_2
+connected 3
 x 2
 y 19
-connected 3
 end
 arch dungeon_floor
 x 2
@@ -1298,8 +1299,8 @@ y 20
 end
 arch swall_0
 name barrel
-name_pl barrel
 face barrel.111
+name_pl barrel
 x 2
 y 20
 end
@@ -1308,9 +1309,9 @@ x 2
 y 21
 end
 arch grate_closed_2
+connected 3
 x 2
 y 21
-connected 3
 end
 arch grass
 x 2
@@ -1816,7 +1817,7 @@ y 6
 end
 arch stair_down_1
 slaying tavernb1
-hp 43
+hp 3
 sp 6
 x 3
 y 6
@@ -1835,7 +1836,7 @@ y 9
 end
 arch stair_down_3
 slaying tavernb1
-hp 43
+hp 3
 sp 9
 x 3
 y 9
@@ -1899,9 +1900,9 @@ x 3
 y 18
 end
 arch button_small
+connected 3
 x 3
 y 19
-connected 3
 end
 arch dungeon_floor
 x 3
@@ -1914,17 +1915,17 @@ end
 arch guard
 name doorman
 name_pl doorman
-x 3
-y 20
 carrying 25000
 can_use_bow 1
+x 3
+y 20
 arch crossbow
 end
 end
 arch button_small
+connected 3
 x 3
 y 21
-connected 3
 end
 arch dungeon_floor
 x 3
@@ -1995,9 +1996,9 @@ x 3
 y 30
 end
 arch knight
+unaggressive 0
 x 3
 y 30
-unaggressive 0
 end
 arch woodfloor
 x 3
@@ -2394,9 +2395,9 @@ x 4
 y 19
 end
 arch door_1
+no_pass 0
 x 4
 y 19
-no_pass 0
 end
 arch flagstone
 x 4
@@ -2411,9 +2412,9 @@ x 4
 y 21
 end
 arch door_1
+no_pass 0
 x 4
 y 21
-no_pass 0
 end
 arch stonefloor2
 name stonefloor
@@ -2906,9 +2907,9 @@ x 5
 y 30
 end
 arch knight
+unaggressive 0
 x 5
 y 30
-unaggressive 0
 end
 arch marble
 x 5
@@ -2956,9 +2957,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 5
 y 34
-value 200
 end
 arch marble
 x 5
@@ -3205,9 +3206,9 @@ x 6
 y 3
 end
 arch bookshelf
+no_pick 1
 x 6
 y 3
-no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -3424,9 +3425,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 6
 y 35
-value 200
 end
 arch marble
 x 6
@@ -3513,12 +3514,12 @@ end
 arch brazier
 name solid gold brazier
 name_pl solid gold brazier
-x 6
-y 49
 value 20000
 weight 9999999
 no_pick 0
 no_pass 0
+x 6
+y 49
 end
 arch marble
 x 6
@@ -3872,9 +3873,9 @@ x 7
 y 30
 end
 arch knight
+unaggressive 0
 x 7
 y 30
-unaggressive 0
 end
 arch marble
 x 7
@@ -4163,11 +4164,11 @@ y 77
 end
 arch sage
 name hick
-name_pl hick
 msg
 @match *
 Ah hate you!
 endmsg
+name_pl hick
 hp 22
 x 7
 y 77
@@ -4398,9 +4399,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 8
 y 32
-value 200
 end
 arch marble
 x 8
@@ -4421,9 +4422,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 8
 y 35
-value 200
 end
 arch marble
 x 8
@@ -4505,12 +4506,12 @@ end
 arch brazier
 name solid gold brazier
 name_pl solid gold brazier
-x 8
-y 47
 value 20000
 weight 9999999
 no_pick 0
 no_pass 0
+x 8
+y 47
 end
 arch marble
 x 8
@@ -4535,12 +4536,12 @@ end
 arch brazier
 name solid gold brazier
 name_pl solid gold brazier
-x 8
-y 51
 value 20000
 weight 9999999
 no_pick 0
 no_pass 0
+x 8
+y 51
 end
 arch marble
 x 8
@@ -4841,9 +4842,9 @@ x 9
 y 3
 end
 arch bookshelf
+no_pick 1
 x 9
 y 3
-no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -5007,10 +5008,10 @@ y 28
 end
 arch sign
 name Private Party
-name_pl Private Party
 msg
 Private Party NO ENTRY
 endmsg
+name_pl Private Party
 x 9
 y 28
 end
@@ -5027,9 +5028,9 @@ x 9
 y 30
 end
 arch knight
+unaggressive 0
 x 9
 y 30
-unaggressive 0
 end
 arch marble
 x 9
@@ -5571,9 +5572,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 10
 y 32
-value 200
 end
 arch marble
 x 10
@@ -5687,12 +5688,12 @@ end
 arch brazier
 name solid gold brazier
 name_pl solid gold brazier
-x 10
-y 49
 value 20000
 weight 9999999
 no_pick 0
 no_pass 0
+x 10
+y 49
 end
 arch marble
 x 10
@@ -6105,9 +6106,9 @@ x 11
 y 30
 end
 arch knight
+unaggressive 0
 x 11
 y 30
-unaggressive 0
 end
 arch marble
 x 11
@@ -6151,9 +6152,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 11
 y 35
-value 200
 end
 arch marble
 x 11
@@ -6674,9 +6675,9 @@ end
 arch w_glass
 name glass of fine wine
 name_pl glass of fine wine
+value 200
 x 12
 y 32
-value 200
 end
 arch marble
 x 12
@@ -7193,9 +7194,9 @@ x 13
 y 30
 end
 arch knight
+unaggressive 0
 x 13
 y 30
-unaggressive 0
 end
 arch marble
 x 13
@@ -7230,13 +7231,13 @@ y 34
 end
 arch wizard
 name freemason wizard
+type 0
 name_pl freemason wizard
 hp 20
-x 13
-y 34
-type 0
 monster 1
 unaggressive 1
+x 13
+y 34
 end
 arch marble
 x 13
@@ -7813,16 +7814,16 @@ x 14
 y 61
 end
 arch bookshelf
+carrying 1000
 x 14
 y 61
-carrying 1000
 arch quarto
 name Easy Explosives Volume 2
-name_pl Easy Explosives Volume 2
 msg
 You do not know the language written
 on the pages of this book
 endmsg
+name_pl Easy Explosives Volume 2
 end
 arch random_reading
 end
@@ -8270,9 +8271,9 @@ x 15
 y 32
 end
 arch cauldron
+no_pick 1
 x 15
 y 32
-no_pick 1
 end
 arch stonefloor2
 name stonefloor
@@ -8661,9 +8662,9 @@ x 16
 y 9
 end
 arch bench_1_4
+no_pass 1
 x 16
 y 9
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -8814,18 +8815,18 @@ x 16
 y 27
 end
 arch fireborn
+type 0
 Str 7
 Con 4
 Cha 4
 hp 100
 maxhp 100
-x 16
-y 27
 level 2
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 16
+y 27
 end
 arch afloor_right
 name floor
@@ -8866,9 +8867,9 @@ x 16
 y 32
 end
 arch igate_closed_2
+connected 2
 x 16
 y 32
-connected 2
 end
 arch stonefloor2
 name stonefloor
@@ -8894,8 +8895,8 @@ y 35
 end
 arch firewall_1
 name wall
-name_pl wall
 face awall_A.111
+name_pl wall
 x 16
 y 35
 end
@@ -9228,9 +9229,9 @@ x 17
 y 9
 end
 arch bench_2_2_3
+no_pass 1
 x 17
 y 9
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9239,9 +9240,9 @@ x 17
 y 10
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 10
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9250,9 +9251,9 @@ x 17
 y 11
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 11
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9261,9 +9262,9 @@ x 17
 y 12
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 12
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9272,9 +9273,9 @@ x 17
 y 13
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 13
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9283,9 +9284,9 @@ x 17
 y 14
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 14
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9294,9 +9295,9 @@ x 17
 y 15
 end
 arch bench_2_1_1
+no_pass 1
 x 17
 y 15
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9305,9 +9306,9 @@ x 17
 y 16
 end
 arch bench_1_2
+no_pass 1
 x 17
 y 16
-no_pass 1
 end
 arch afloor_left
 name floor
@@ -9352,9 +9353,9 @@ x 17
 y 22
 end
 arch orc
+unaggressive 1
 x 17
 y 22
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -9464,8 +9465,8 @@ y 35
 end
 arch firewall_1
 name wall
-name_pl wall
 face awall_A.111
+name_pl wall
 x 17
 y 35
 end
@@ -9850,9 +9851,9 @@ y 11
 end
 arch fighter
 hp 150
+carrying 6500
 x 18
 y 11
-carrying 6500
 arch random_food
 end
 arch random_wealth
@@ -9904,16 +9905,16 @@ y 15
 end
 arch northman
 name northman
-name_pl northman
 msg
 @match *
 *burp* Get away from me weakling
 endmsg
+name_pl northman
 hp 360
-x 18
-y 15
 carrying 23600
 unaggressive 1
+x 18
+y 15
 arch gloves
 name leather gloves
 name_pl leather gloves
@@ -9983,14 +9984,14 @@ x 18
 y 23
 end
 arch cleric
+type 0
 hp 100
 maxhp 100
-x 18
-y 23
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 18
+y 23
 end
 arch afloor_right
 name floor
@@ -10025,17 +10026,17 @@ x 18
 y 27
 end
 arch mage
+type 0
 Str 11
 Con 1
 Cha 2
 hp 90
 maxhp 90
-x 18
-y 27
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 18
+y 27
 end
 arch afloor_right
 name floor
@@ -10080,9 +10081,9 @@ x 18
 y 32
 end
 arch grate_closed_2
+connected 2
 x 18
 y 32
-connected 2
 end
 arch stonefloor2
 name stonefloor
@@ -10313,9 +10314,9 @@ x 18
 y 62
 end
 arch chest_2
+carrying 36500
 x 18
 y 62
-carrying 36500
 arch random_wealth
 end
 arch random_wealth
@@ -10487,9 +10488,9 @@ arch dwarf
 name angry dwarf
 name_pl angry dwarf
 hp 60
+unaggressive 0
 x 19
 y 6
-unaggressive 0
 end
 arch afloor_left
 name floor
@@ -10674,9 +10675,9 @@ x 19
 y 34
 end
 arch button_handle
+connected 2
 x 19
 y 34
-connected 2
 end
 arch stonefloor2
 name stonefloor
@@ -10884,11 +10885,11 @@ y 61
 end
 arch quarto
 name Prayer book of Valriel
-name_pl Prayer book of Valriel
 msg
 You cannot decypher the language this
 book was written in
 endmsg
+name_pl Prayer book of Valriel
 x 19
 y 61
 end
@@ -11054,7 +11055,6 @@ y 6
 end
 arch scroll_2
 name The Scorn Tribune
-name_pl The Scorn Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
 A bomber detonated a high povered
@@ -11077,8 +11077,8 @@ CHURCH OF VALRIEL TIES TO VIOLENCE:
 An undercover investigation into the
 'Holy Church of Valriel' has
 descovered monetary ties to a
-militant group opreating under the 
-'Traveling Ministry Of The Most 
+militant group opreating under the
+'Traveling Ministry Of The Most
 Holy Power'. When asked about this
 situation the High Priest of Valriel
 said "Ask God".
@@ -11103,6 +11103,7 @@ confirmed that Scorn is now the
 largest western city by population.
 Taxes are expected to rise
 endmsg
+name_pl The Scorn Tribune
 x 20
 y 6
 end
@@ -11850,9 +11851,9 @@ y 26
 end
 arch conjurer2
 hp 200
+unaggressive 1
 x 21
 y 26
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -11897,9 +11898,9 @@ x 21
 y 31
 end
 arch thief_1
+unaggressive 1
 x 21
 y 31
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -11908,9 +11909,9 @@ x 21
 y 32
 end
 arch neko
+unaggressive 1
 x 21
 y 32
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -12149,9 +12150,9 @@ x 21
 y 65
 end
 arch chest_2
+carrying 75000
 x 21
 y 65
-carrying 75000
 arch corpse1
 name rotting corpse
 name_pl rotting corpse
@@ -12179,7 +12180,6 @@ y 67
 end
 arch guildmaster
 name wealthy old man
-name_pl wealthy old man
 msg
 @match *
 I'ma gunna do something 'bout that
@@ -12191,6 +12191,7 @@ and sex! There all going straight to
 hell! Ah hear theres devil worshopers
 in there too!! Damn them!
 endmsg
+name_pl wealthy old man
 x 21
 y 67
 arch random_wealth
@@ -12482,14 +12483,14 @@ x 22
 y 27
 end
 arch human
+type 0
 hp 100
 maxhp 100
-x 22
-y 27
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 22
+y 27
 end
 arch afloor_right
 name floor
@@ -13626,16 +13627,16 @@ y 26
 end
 arch thief
 name murdering thief
+type 0
 name_pl murdering thief
 Con 2
 Cha 3
 hp 150
 maxhp 100
-x 24
-y 26
-type 0
 monster 1
 unaggressive 1
+x 24
+y 26
 end
 arch afloor_right
 name floor
@@ -13684,9 +13685,9 @@ y 30
 end
 arch northman
 hp 200
+unaggressive 1
 x 24
 y 30
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -14037,18 +14038,18 @@ x 25
 y 2
 end
 arch door_look_1
+no_pass 0
 x 25
 y 2
-no_pass 0
 end
 arch magic_ear
 msg
 @match argon
 Click.
 endmsg
+connected 3
 x 25
 y 3
-connected 3
 end
 arch magic_mouth
 msg
@@ -14078,9 +14079,9 @@ x 25
 y 6
 end
 arch door_2
+no_pass 0
 x 25
 y 6
-no_pass 0
 end
 arch flagstone
 x 25
@@ -14221,9 +14222,9 @@ x 25
 y 32
 end
 arch conjurer2
+unaggressive 1
 x 25
 y 32
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -14428,9 +14429,9 @@ x 25
 y 65
 end
 arch chest_2
+carrying 15000
 x 25
 y 65
-carrying 15000
 arch water
 name Concentrated Nerve Agent
 name_pl Concentrated Nerve Agent
@@ -14557,9 +14558,9 @@ msg
 @match argon
 Click.
 endmsg
+connected 3
 x 26
 y 3
-connected 3
 end
 arch magic_mouth
 msg
@@ -14577,14 +14578,14 @@ x 26
 y 4
 end
 arch grate_closed_1
+connected 3
 x 26
 y 4
-connected 3
 end
 arch button_small
+connected 3
 x 26
 y 5
-connected 3
 end
 arch woodfloor
 x 26
@@ -14735,9 +14736,9 @@ x 26
 y 31
 end
 arch small_troll
+unaggressive 1
 x 26
 y 31
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -14787,10 +14788,10 @@ y 36
 end
 arch sign_w
 name store room
-name_pl store room
 msg
 store room
 endmsg
+name_pl store room
 x 26
 y 36
 end
@@ -15149,9 +15150,9 @@ x 27
 y 2
 end
 arch door_look_1
+no_pass 0
 x 27
 y 2
-no_pass 0
 end
 arch woodfloor
 x 27
@@ -15166,9 +15167,9 @@ msg
 @match argon
 Click.
 endmsg
+connected 3
 x 27
 y 3
-connected 3
 end
 arch magic_mouth
 msg
@@ -15202,9 +15203,9 @@ x 27
 y 6
 end
 arch door_2
+no_pass 0
 x 27
 y 6
-no_pass 0
 end
 arch flagstone
 x 27
@@ -15319,9 +15320,9 @@ x 27
 y 25
 end
 arch pirate_lass
+unaggressive 1
 x 27
 y 25
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -15346,9 +15347,9 @@ x 27
 y 28
 end
 arch ghast
+unaggressive 1
 x 27
 y 28
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -15797,7 +15798,7 @@ end
 arch stair_up_2
 slaying tavern2
 hp 28
-sp 34
+sp 16
 x 28
 y 16
 end
@@ -15808,7 +15809,7 @@ end
 arch stair_up_2
 slaying tavern2
 hp 28
-sp 35
+sp 17
 x 28
 y 17
 end
@@ -16254,10 +16255,10 @@ end
 arch guard
 name doorman
 name_pl doorman
-x 29
-y 3
 carrying 25000
 can_use_bow 1
+x 29
+y 3
 arch crossbow
 end
 end
@@ -16409,10 +16410,10 @@ y 20
 end
 arch sign_w
 name The CoM3dY HoLE
-name_pl The CoM3dY HoLE
 msg
 Down to The CoM3dY HoLE
 endmsg
+name_pl The CoM3dY HoLE
 x 29
 y 20
 end
@@ -16485,13 +16486,13 @@ x 29
 y 28
 end
 arch wizard
-hp 50
-x 29
-y 28
 type 0
+hp 50
 monster 1
 unaggressive 1
 can_cast_spell 1
+x 29
+y 28
 end
 arch afloor_right
 name floor
@@ -17024,9 +17025,9 @@ x 30
 y 18
 end
 arch door_look_1
+no_pass 0
 x 30
 y 18
-no_pass 0
 end
 arch afloor_right
 name floor
@@ -17133,9 +17134,9 @@ x 30
 y 30
 end
 arch lesser_dwarven_guard
+unaggressive 1
 x 30
 y 30
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -17531,9 +17532,9 @@ x 31
 y 18
 end
 arch door_look_1
+no_pass 0
 x 31
 y 18
-no_pass 0
 end
 arch afloor_right
 name floor
@@ -17586,14 +17587,14 @@ x 31
 y 24
 end
 arch human
+type 0
 hp 100
 maxhp 100
-x 31
-y 24
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 31
+y 24
 end
 arch afloor_right
 name floor
@@ -17630,14 +17631,14 @@ x 31
 y 29
 end
 arch swashbuckler
+type 0
 hp 100
 maxhp 100
-x 31
-y 29
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 31
+y 29
 end
 arch afloor_right
 name floor
@@ -17945,11 +17946,11 @@ name_pl Richie
 hp 300
 maxhp 300
 dam 20
-x 32
-y 3
 resist_fire 20
 carrying 0
 unaggressive 1
+x 32
+y 3
 arch random_wealth
 end
 arch random_wealth
@@ -17980,9 +17981,9 @@ x 32
 y 5
 end
 arch barrel
+weight 10000
 x 32
 y 5
-weight 10000
 end
 arch booze
 x 32
@@ -18003,12 +18004,12 @@ x 32
 y 7
 end
 arch brazier
-x 32
-y 7
 value 200
 weight 100000
 no_pick 0
 no_pass 0
+x 32
+y 7
 end
 arch blackmarble
 x 32
@@ -18159,13 +18160,13 @@ x 32
 y 30
 end
 arch thief
+type 0
 hp 100
 maxhp 100
-x 32
-y 30
-type 0
 monster 1
 unaggressive 1
+x 32
+y 30
 end
 arch afloor_right
 name floor
@@ -18456,9 +18457,9 @@ end
 arch chalice
 name gold chalice
 name_pl gold chalice
+value 5000
 x 33
 y 3
-value 5000
 end
 arch woodfloor2
 name woodfloor
@@ -18478,16 +18479,16 @@ y 5
 end
 arch viking
 name drunk viking
-name_pl drunk viking
 msg
 @match *
 *hicup
 endmsg
-x 33
-y 5
 type 0
+name_pl drunk viking
 monster 1
 unaggressive 1
+x 33
+y 5
 end
 arch stonefloor2
 name stonefloor
@@ -19004,12 +19005,12 @@ x 34
 y 7
 end
 arch brazier
-x 34
-y 7
 value 200
 weight 100000
 no_pick 0
 no_pass 0
+x 34
+y 7
 end
 arch blackmarble
 x 34
@@ -19018,9 +19019,9 @@ end
 arch devil
 name demon priest of Gorokh
 name_pl demon priest of Gorokh
+unaggressive 1
 x 34
 y 8
-unaggressive 1
 end
 arch dungeon_floor
 x 34
@@ -19040,11 +19041,11 @@ y 12
 end
 arch torch_1
 food 0
-x 34
-y 12
 material 0
 no_pick 1
 changing 0
+x 34
+y 12
 end
 arch stonefloor2
 name stonefloor
@@ -19077,9 +19078,9 @@ x 34
 y 16
 end
 arch cauldron
+no_pick 1
 x 34
 y 16
-no_pick 1
 end
 arch cobblestones2
 x 34
@@ -19157,9 +19158,9 @@ y 26
 end
 arch fire_dragon
 hp 300
+unaggressive 1
 x 34
 y 26
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -19216,9 +19217,9 @@ x 34
 y 35
 end
 arch grate_closed_1
+connected 1
 x 34
 y 35
-connected 1
 end
 arch afloor_right
 name floor
@@ -19684,10 +19685,10 @@ y 34
 end
 arch sign_w
 name goblin army
-name_pl goblin army
 msg
 goblin army
 endmsg
+name_pl goblin army
 x 35
 y 34
 end
@@ -20099,15 +20100,15 @@ y 21
 end
 arch swashbuckler
 name murder
+type 0
 name_pl murder
 hp 400
 maxhp 100
-x 36
-y 21
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 36
+y 21
 arch random_wealth
 end
 arch random_shield
@@ -20212,9 +20213,9 @@ x 36
 y 34
 end
 arch button_handle
+connected 1
 x 36
 y 34
-connected 1
 end
 arch afloor_right
 name floor
@@ -20551,9 +20552,9 @@ x 37
 y 7
 end
 arch conjurer2
+unaggressive 1
 x 37
 y 7
-unaggressive 1
 end
 arch woodfloor2
 name woodfloor
@@ -20712,9 +20713,9 @@ end
 arch rock2
 name coal
 name_pl coal
+material 0
 x 37
 y 28
-material 0
 end
 arch stonefloor2
 name stonefloor
@@ -20724,8 +20725,8 @@ y 29
 end
 arch firewall_1
 name wall
-name_pl wall
 face cwall_A.111
+name_pl wall
 x 37
 y 29
 end
@@ -20782,9 +20783,9 @@ x 37
 y 35
 end
 arch grate_closed_1
+connected 1
 x 37
 y 35
-connected 1
 end
 arch afloor_right
 name floor
@@ -21213,9 +21214,9 @@ end
 arch rock2
 name coal
 name_pl coal
+material 0
 x 38
 y 28
-material 0
 end
 arch stonefloor2
 name stonefloor
@@ -21225,8 +21226,8 @@ y 29
 end
 arch firewall_1
 name wall
-name_pl wall
 face cwall_A.111
+name_pl wall
 x 38
 y 29
 end
@@ -21274,9 +21275,9 @@ y 34
 end
 arch northman
 hp 225
+unaggressive 1
 x 38
 y 34
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -21627,9 +21628,9 @@ x 39
 y 16
 end
 arch smith
+unaggressive 1
 x 39
 y 16
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -21748,14 +21749,14 @@ x 39
 y 30
 end
 arch mage
+type 0
 hp 100
 maxhp 100
-x 39
-y 30
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 39
+y 30
 end
 arch afloor_right
 name floor
@@ -21781,9 +21782,9 @@ y 33
 end
 arch northman
 hp 225
+unaggressive 1
 x 39
 y 33
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -22088,9 +22089,9 @@ x 40
 y 8
 end
 arch elf_1
+carrying 15000
 x 40
 y 8
-carrying 15000
 arch elven_bow
 end
 end
@@ -22294,9 +22295,9 @@ y 33
 end
 arch northman
 hp 225
+unaggressive 1
 x 40
 y 33
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -22471,9 +22472,9 @@ x 40
 y 66
 end
 arch door_2
+no_pass 0
 x 40
 y 66
-no_pass 0
 end
 arch grassmedium
 x 40
@@ -22843,12 +22844,12 @@ x 41
 y 34
 end
 arch viking
-hp 225
-x 41
-y 34
 type 0
+hp 225
 monster 1
 unaggressive 1
+x 41
+y 34
 end
 arch afloor_right
 name floor
@@ -23621,9 +23622,9 @@ x 43
 y 5
 end
 arch fighter
+carrying 20000
 x 43
 y 5
-carrying 20000
 arch random_weapon
 end
 arch random_weapon
@@ -24360,11 +24361,11 @@ x 44
 y 20
 end
 arch viking
-x 44
-y 20
 type 0
 monster 1
 unaggressive 1
+x 44
+y 20
 end
 arch stonefloor2
 name stonefloor
@@ -24447,9 +24448,9 @@ x 44
 y 33
 end
 arch bench_1_4
+no_pass 1
 x 44
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 44
@@ -24803,7 +24804,6 @@ y 10
 end
 arch scroll_2
 name The Scorn Tribune
-name_pl The Scorn Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
 A bomber detonated a high povered
@@ -24826,8 +24826,8 @@ CHURCH OF VALRIEL TIES TO VIOLENCE:
 An undercover investigation into the
 'Holy Church of Valriel' has
 descovered monetary ties to a
-militant group opreating under the 
-'Traveling Ministry Of The Most 
+militant group opreating under the
+'Traveling Ministry Of The Most
 Holy Power'. When asked about this
 situation the High Priest of Valriel
 said "Ask God".
@@ -24852,6 +24852,7 @@ confirmed that Scorn is now the
 largest western city by population.
 Taxes are expected to rise
 endmsg
+name_pl The Scorn Tribune
 x 45
 y 10
 end
@@ -25032,9 +25033,9 @@ x 45
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 45
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 45
@@ -25170,11 +25171,11 @@ y 58
 end
 arch torch_1
 food 0
-x 45
-y 58
 material 0
 no_pick 1
 changing 0
+x 45
+y 58
 end
 arch dirtfloor
 x 45
@@ -25385,9 +25386,9 @@ end
 arch ogre
 name strongman
 name_pl strongman
+unaggressive 1
 x 46
 y 10
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -25536,6 +25537,7 @@ x 46
 y 32
 end
 arch elf_1
+face elf.151
 msg
 @match yes|pupland
 There is a war going on in pupland.
@@ -25555,21 +25557,20 @@ It really is worth a trip!
 @match *
 Have you ever been to pupland?
 endmsg
-face elf.151
-x 46
-y 32
 is_animated 0
 friendly 1
 unaggressive 0
+x 46
+y 32
 end
 arch dungeon_floor
 x 46
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 46
 y 33
-no_pass 1
 end
 arch w_glass
 x 46
@@ -25997,12 +25998,12 @@ x 47
 y 20
 end
 arch wizard
-hp 100
-x 47
-y 20
 type 0
+hp 100
 monster 1
 unaggressive 1
+x 47
+y 20
 end
 arch afloor_right
 name floor
@@ -26079,9 +26080,9 @@ x 47
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 47
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 47
@@ -26215,11 +26216,11 @@ y 58
 end
 arch torch_1
 food 0
-x 47
-y 58
 material 0
 no_pick 1
 changing 0
+x 47
+y 58
 end
 arch dirtfloor
 x 47
@@ -26574,9 +26575,9 @@ x 48
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 48
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 48
@@ -26788,12 +26789,12 @@ y 65
 end
 arch sage
 name old man
-name_pl old man
 msg
 @match *
 I am so poor! I have almost no money!
 Those bastards!!!
 endmsg
+name_pl old man
 hp 25
 x 48
 y 65
@@ -26908,10 +26909,10 @@ y 3
 end
 arch book_clasp
 name contract
-name_pl contract
 msg
 You can not decipher the encoded text
 endmsg
+name_pl contract
 x 49
 y 3
 end
@@ -26932,9 +26933,9 @@ x 49
 y 5
 end
 arch greater_dwarven_guard
+unaggressive 1
 x 49
 y 5
-unaggressive 1
 end
 arch woodfloor2
 name woodfloor
@@ -26949,9 +26950,9 @@ end
 arch card
 name playing card
 name_pl playing card
+value 10
 x 49
 y 6
-value 10
 end
 arch woodfloor2
 name woodfloor
@@ -27026,9 +27027,9 @@ x 49
 y 15
 end
 arch gnome
+unaggressive 1
 x 49
 y 15
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -27051,9 +27052,9 @@ x 49
 y 17
 end
 arch madman
+unaggressive 1
 x 49
 y 17
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -27076,9 +27077,9 @@ x 49
 y 19
 end
 arch thief_1
+unaggressive 1
 x 49
 y 19
-unaggressive 1
 end
 arch afloor_right
 name floor
@@ -27149,9 +27150,9 @@ x 49
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 49
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 49
@@ -27182,9 +27183,9 @@ end
 arch booze
 name vodka
 name_pl vodka
+value 50
 x 49
 y 37
-value 50
 end
 arch dirtfloor
 x 49
@@ -27450,12 +27451,12 @@ arch elec_dragon
 name electric dragon dwarf
 name_pl electric dragon dwarf
 hp 1200
-x 50
-y 3
 level 9
 randomitems wyvern
 friendly 1
 unaggressive 1
+x 50
+y 3
 end
 arch woodfloor2
 name woodfloor
@@ -27482,10 +27483,10 @@ end
 arch elf_1
 face elf.171
 hp 230
-x 50
-y 6
 is_animated 0
 friendly 1
+x 50
+y 6
 arch random_wealth
 end
 arch random_wealth
@@ -27644,9 +27645,9 @@ x 50
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 50
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 50
@@ -27681,9 +27682,9 @@ end
 arch wine
 name bottle of fine red wine
 name_pl bottle of fine red wine
+value 3000
 x 50
 y 37
-value 3000
 end
 arch dirtfloor
 x 50
@@ -28114,9 +28115,9 @@ x 51
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 51
 y 33
-no_pass 1
 end
 arch water
 x 51
@@ -28401,14 +28402,14 @@ x 52
 y 5
 end
 arch swashbuckler
+type 0
 hp 100
 maxhp 100
-x 52
-y 5
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 52
+y 5
 end
 arch woodfloor2
 name woodfloor
@@ -28432,11 +28433,11 @@ arch guard
 name thugg
 name_pl thugg
 hp 270
-x 52
-y 8
 carrying 32000
 can_use_armour 1
 can_use_weapon 1
+x 52
+y 8
 arch scale_mail
 end
 arch axe_5
@@ -28723,9 +28724,9 @@ x 52
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 52
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 52
@@ -29058,11 +29059,11 @@ arch guard
 name thugg
 name_pl thugg
 hp 270
-x 53
-y 8
 carrying 32000
 can_use_armour 1
 can_use_weapon 1
+x 53
+y 8
 arch scale_mail
 end
 arch axe_5
@@ -29310,9 +29311,9 @@ x 53
 y 33
 end
 arch bench_2_1_2
+no_pass 1
 x 53
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 53
@@ -29658,11 +29659,11 @@ arch guard
 name thugg
 name_pl thugg
 hp 270
-x 54
-y 8
 carrying 32000
 can_use_armour 1
 can_use_weapon 1
+x 54
+y 8
 arch scale_mail
 end
 arch axe_5
@@ -29744,14 +29745,14 @@ x 54
 y 17
 end
 arch barbarian
+type 0
 hp 100
 maxhp 100
-x 54
-y 17
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 54
+y 17
 end
 arch afloor_right
 name floor
@@ -29921,18 +29922,18 @@ x 54
 y 33
 end
 arch bench_2_2_3
+no_pass 1
 x 54
 y 33
-no_pass 1
 end
 arch dungeon_floor
 x 54
 y 34
 end
 arch bench_2_1_1
+no_pass 1
 x 54
 y 34
-no_pass 1
 end
 arch booze
 x 54
@@ -29943,9 +29944,9 @@ x 54
 y 35
 end
 arch bench_1_2
+no_pass 1
 x 54
 y 35
-no_pass 1
 end
 arch stonefloor2
 name stonefloor
@@ -30256,9 +30257,9 @@ x 55
 y 7
 end
 arch dark_elf
+unaggressive 1
 x 55
 y 7
-unaggressive 1
 end
 arch woodfloor2
 name woodfloor
@@ -30295,29 +30296,29 @@ end
 arch chair_3.1
 name iron chair
 name_pl iron chair
-x 55
-y 11
 material 2
 weight 600000
+x 55
+y 11
 end
 arch dwarf_wiz
 name high roller wizard
-name_pl high roller wizard
 msg
 @match *
 This is a private poker game. GET OUT!!
 endmsg
+name_pl high roller wizard
 hp 52
+carrying 100
 x 55
 y 11
-carrying 100
 arch key2
 name room key - 109
-name_pl room key - 109
-slaying 109
 msg
 room key - 109
 endmsg
+name_pl room key - 109
+slaying 109
 end
 arch random_wealth
 end
@@ -30337,9 +30338,9 @@ end
 arch card
 name playing card
 name_pl playing card
+value 10
 x 55
 y 12
-value 10
 end
 arch woodfloor
 x 55
@@ -30352,9 +30353,9 @@ end
 arch card
 name playing card
 name_pl playing card
+value 10
 x 55
 y 13
-value 10
 end
 arch woodfloor
 x 55
@@ -30365,9 +30366,9 @@ x 55
 y 14
 end
 arch northman
+unaggressive 1
 x 55
 y 14
-unaggressive 1
 arch random_wealth
 end
 end
@@ -30575,14 +30576,14 @@ x 55
 y 34
 end
 arch barbarian
+type 0
 hp 100
 maxhp 100
-x 55
-y 34
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+x 55
+y 34
 end
 arch flagstone
 x 55
@@ -30683,9 +30684,9 @@ x 55
 y 53
 end
 arch door_2
+no_pass 0
 x 55
 y 53
-no_pass 0
 end
 arch dirtfloor
 x 55
@@ -30921,9 +30922,9 @@ x 56
 y 13
 end
 arch lesser_dwarven_guard
+unaggressive 1
 x 56
 y 13
-unaggressive 1
 arch random_wealth
 end
 end
@@ -31529,9 +31530,9 @@ x 57
 y 18
 end
 arch grimreaper
+unaggressive 1
 x 57
 y 18
-unaggressive 1
 end
 arch afloor_right
 name floor
