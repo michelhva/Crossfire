@@ -1,5 +1,11 @@
 Changes for CVS top of tree:
 
+------------------------------------------------------------------------------
+Changes for Crossfire 0.95.7:
+
+ground/Lake/blake_*.png:  Remove transperancies from these images so they
+display properly.  MSW 9/20/2000
+
 ground/sea*png: Remove transperancies from png images since they should not
 be transparent.  MSW 8/23/2000
 
@@ -16,7 +22,8 @@ to match against the 'a ' is a bit non intuitive.  MSW 6/27/2000
 Changes for Crossfire 0.95.6:
 
 also skills/holysymbol and lockpicks.
-skills/tailsman.arc:  added nrof to archetype so these things will join.	-PeterM
+skills/tailsman.arc:  added nrof to archetype so these things will join.
+	-PeterM
 
 --- BEGIN apply() cleanup patch --- Jan Echternach 5/26/2000
 
