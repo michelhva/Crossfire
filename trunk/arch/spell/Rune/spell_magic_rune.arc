@@ -1,7 +1,7 @@
 Object spell_magic_rune
 name magic rune
 name_pl magic rune
-face spell_sorcery.111
+face generic_rune.111
 type 101
 subtype 2
 no_drop 1
