@@ -4,8 +4,8 @@ msg
 Nazgul is like a grimreaper,
 but is not just it. Generally
 grimreapers' weak point is magic.
-But Nazgul seemes to have a immune
-from magic. 
+But Nazgul seems to have an immunity
+to magic. 
 Nazgul has a drain attack. 
 So we cannot attack him physically,
 except a Special Case. Special case

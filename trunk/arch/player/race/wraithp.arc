@@ -14,7 +14,7 @@ and loss of lifeforce. Wraith's also need
 feel little fear of cold, and they can see
 well in the dark.
 A Wraith's corporeal form has terrible
-vunlerabilites: Fire and most godpower are
+vulnerabilities: Fire and most godpower are
 dangerous to Wraiths. Their tenuous form makes
 them quick, and somewhat harder to hit, but
 also weaker and less hardy.
