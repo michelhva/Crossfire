@@ -4,7 +4,7 @@ face bones1.111
 type 15
 dam 20
 last_sp 19
-weight 5000
+weight 7000
 value 0
 material 16
 nrof 1
@@ -22,7 +22,7 @@ face bones2.111
 type 15
 dam 20
 last_sp 19
-weight 5000
+weight 2000
 value 0
 material 16
 nrof 1
@@ -40,7 +40,7 @@ face bones3.111
 type 15
 dam 20
 last_sp 19
-weight 5000
+weight 1000
 value 0
 material 16
 nrof 1
@@ -58,7 +58,7 @@ face bones4.111
 type 15
 dam 20
 last_sp 19
-weight 5000
+weight 7000
 value 0
 material 16
 nrof 1
@@ -76,7 +76,7 @@ face bones5.111
 type 15
 dam 20
 last_sp 19
-weight 5000
+weight 11000
 value 0
 material 16
 nrof 1
