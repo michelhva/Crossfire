@@ -6,4 +6,5 @@ is_wooded 1
 color_fg green
 editable 8
 is_floor 1
+smoothlevel 10
 end

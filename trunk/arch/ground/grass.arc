@@ -9,6 +9,7 @@ no_pick 1
 slow_move 1
 is_wooded 1
 editable 8
+smoothlevel 10
 end
 Object grass_only
 name grass
@@ -21,4 +22,5 @@ no_pick 1
 slow_move 1
 is_wooded 1
 editable 8
+smoothlevel 10
 end
