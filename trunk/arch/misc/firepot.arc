@@ -10,6 +10,7 @@ speed -0.30
 no_pick 1
 no_pass 1
 glow_radius 3
+material 2
 editable 128
 color_fg red
 end
