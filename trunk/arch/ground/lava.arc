@@ -13,6 +13,11 @@ lava.113
 lava.114
 lava.115
 mina
+smoothface lava.111 lava_S.111
+smoothface lava.112 lava_S.112
+smoothface lava.113 lava_S.113
+smoothface lava.114 lava_S.114
+smoothface lava.115 lava_S.115
 smoothlevel 48
 color_fg yellow
 color_bg red

@@ -10,4 +10,5 @@ editable 8
 is_floor 1
 smoothlevel 30
 magicmap khaki
+smoothface hills.111 hills_S.111
 end

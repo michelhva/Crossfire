@@ -8,4 +8,5 @@ is_floor 1
 visibility 50
 smoothlevel 50
 magicmap grey
+smoothface moun_cave2.111 mountain_S.111
 end

@@ -12,4 +12,5 @@ blocksview 1
 editable 8
 smoothlevel 50
 is_floor 1
+smoothface mountain2.111 mountain_S.111
 end

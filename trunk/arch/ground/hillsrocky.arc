@@ -10,5 +10,6 @@ slow_move 2
 editable 8
 is_floor 1
 smoothlevel 31
+smoothface hillsrocky.111 hillsrocky_S.111
 magicmap brown
 end
