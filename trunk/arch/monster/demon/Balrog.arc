@@ -16,6 +16,7 @@ resist_godpower 80
 resist_holyword 80
 resist_fire 100
 resist_confusion 100
+resist_fear 100
 resist_paralyze 100
 resist_poison 100
 monster 1
