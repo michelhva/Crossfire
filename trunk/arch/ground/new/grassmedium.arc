@@ -9,4 +9,6 @@ no_pick 1
 slow_move 1
 is_wooded 1
 editable 8
+smoothface grassmedium.111 empty_S.111
+smoothlevel 41
 end
