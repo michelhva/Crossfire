@@ -1,10 +1,12 @@
 arch map
+name <untitled>
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Wed Nov 17 22:32:08 1993
 endmsg
-x 15
+width 17
+height 16
 end
 arch cobblestones
 end
@@ -154,6 +156,10 @@ arch wwall_3_4
 x 1
 y 6
 end
+arch dungeon_magic
+x 1
+y 6
+end
 arch cobblestones
 x 1
 y 7
@@ -206,7 +212,7 @@ arch cobblestones
 x 1
 y 13
 end
-arch wwall_4
+arch wwall_3_4
 x 1
 y 13
 end
@@ -267,7 +273,10 @@ end
 arch wall_1_4
 x 2
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 2
+y 6
 end
 arch cobblestones
 x 2
@@ -329,23 +338,27 @@ arch cobblestones
 x 2
 y 12
 end
-arch wwall_4
+arch wwall_3_1
 x 2
 y 12
+end
+arch dungeon_magic
+x 2
+y 13
 end
 arch cobblestones
 x 2
 y 13
 end
-arch wwall_4
+arch dungeon_magic
 x 2
-y 13
+y 14
 end
 arch cobblestones
 x 2
 y 14
 end
-arch wwall_4
+arch wwall_3_3
 x 2
 y 14
 end
@@ -391,11 +404,8 @@ arch dungeon_magic
 x 3
 y 5
 end
-arch cobblestones
-x 3
-y 5
-end
 arch c_man
+name cashier
 x 3
 y 5
 end
@@ -403,10 +413,13 @@ arch cobblestones
 x 3
 y 6
 end
-arch wall_2_1_2
+arch window_win2
 x 3
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 3
+y 6
 end
 arch cobblestones
 x 3
@@ -456,7 +469,7 @@ arch cobblestones
 x 3
 y 12
 end
-arch wwall_4
+arch wwall_3_1
 x 3
 y 12
 end
@@ -464,15 +477,11 @@ arch cobblestones
 x 3
 y 13
 end
-arch wwall_4
-x 3
-y 13
-end
 arch cobblestones
 x 3
 y 14
 end
-arch wwall_4
+arch wwall_3_3
 x 3
 y 14
 end
@@ -525,7 +534,10 @@ end
 arch wall_2_1_2
 x 4
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 4
+y 6
 end
 arch cobblestones
 x 4
@@ -575,7 +587,7 @@ arch cobblestones
 x 4
 y 12
 end
-arch wwall_4
+arch wwall_3_1
 x 4
 y 12
 end
@@ -583,15 +595,11 @@ arch cobblestones
 x 4
 y 13
 end
-arch wwall_4
-x 4
-y 13
-end
 arch cobblestones
 x 4
 y 14
 end
-arch wwall_4
+arch wwall_3_3
 x 4
 y 14
 end
@@ -637,11 +645,8 @@ arch dungeon_magic
 x 5
 y 5
 end
-arch cobblestones
-x 5
-y 5
-end
 arch c_man
+name cashier
 x 5
 y 5
 end
@@ -649,10 +654,13 @@ arch cobblestones
 x 5
 y 6
 end
-arch wall_2_1_2
+arch window_win2
 x 5
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 5
+y 6
 end
 arch cobblestones
 x 5
@@ -702,7 +710,7 @@ arch cobblestones
 x 5
 y 11
 end
-arch wwall_2_2_3
+arch wwall_3_3
 x 5
 y 11
 end
@@ -710,7 +718,7 @@ arch cobblestones
 x 5
 y 12
 end
-arch wwall_3_4
+arch wwall_4
 x 5
 y 12
 end
@@ -718,7 +726,7 @@ arch cobblestones
 x 5
 y 13
 end
-arch wwall_3_4
+arch wwall_3_2
 x 5
 y 13
 end
@@ -726,155 +734,145 @@ arch cobblestones
 x 5
 y 14
 end
-arch wwall_3_4
+arch wwall_4
 x 5
 y 14
 end
 arch cobblestones
 x 5
+y 15
+end
+arch wwall_3_1
+x 5
+y 15
+end
+arch cobblestones
+x 6
+end
+arch wwall_3_3
+x 6
+end
+arch cobblestones
+x 6
+y 1
+end
+arch wwall_3_1
+x 6
+y 1
+end
+arch cobblestones
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 3
+end
+arch cobblestones
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch cobblestones
+x 6
+y 5
+end
+arch cobblestones
+x 6
+y 6
+end
+arch wall_2_1_2
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch cobblestones
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch gold_converter
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch cobblestones
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch cobblestones
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch cobblestones
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch cobblestones
+x 6
+y 11
+end
+arch wwall_2_2_3
+x 6
+y 11
+end
+arch cobblestones
+x 6
+y 12
+end
+arch wwall_3_4
+x 6
+y 12
+end
+arch cobblestones
+x 6
+y 13
+end
+arch wwall_3_4
+x 6
+y 13
+end
+arch cobblestones
+x 6
+y 14
+end
+arch wwall_3_4
+x 6
+y 14
+end
+arch dungeon_magic
+x 6
+y 15
+end
+arch cobblestones
+x 6
 y 15
 end
 arch wwall_2_2_4
-x 5
-y 15
-end
-arch cobblestones
-x 6
-end
-arch wwall_3_3
-x 6
-end
-arch cobblestones
-x 6
-y 1
-end
-arch wwall_3_1
-x 6
-y 1
-end
-arch cobblestones
-x 6
-y 2
-end
-arch cobblestones
-x 6
-y 3
-end
-arch cobblestones
-x 6
-y 4
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch cobblestones
-x 6
-y 5
-end
-arch cobblestones
-x 6
-y 6
-end
-arch wall_2_1_2
-x 6
-y 6
-blocksview 0
-end
-arch cobblestones
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch gold_converter
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 8
-end
-arch cobblestones
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
-y 9
-end
-arch cobblestones
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch cobblestones
-x 6
-y 10
-end
-arch cobblestones
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 11
-end
-arch cobblestones
-x 6
-y 11
-end
-arch magic_mouth
-msg
-The guard eyes you suspiciously as you
-pass him
-endmsg
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch cobblestones
-x 6
-y 12
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch cobblestones
-x 6
-y 13
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch cobblestones
-x 6
-y 14
-end
-arch exit
-slaying /world/world_122_117
-hp 12
-sp 10
-x 6
-y 15
-speed_left -0.400000
-is_animated 0
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch cobblestones
 x 6
 y 15
 end
@@ -908,10 +906,6 @@ arch cobblestones
 x 7
 y 4
 end
-arch cobblestones
-x 7
-y 5
-end
 arch dungeon_magic
 x 7
 y 5
@@ -920,28 +914,23 @@ arch cobblestones
 x 7
 y 5
 end
-arch c_man
-x 7
-y 5
-end
 arch cobblestones
 x 7
 y 6
 end
-arch wall_2_1_2
+arch window_win2
 x 7
 y 6
-blocksview 0
 end
-arch cobblestones
+arch dungeon_magic
 x 7
-y 7
+y 6
 end
 arch dungeon_magic
 x 7
 y 7
 end
-arch gold_converter
+arch cobblestones
 x 7
 y 7
 end
@@ -1017,10 +1006,10 @@ arch exit
 slaying /world/world_122_117
 hp 12
 sp 10
-x 7
-y 15
 speed_left -0.400000
 is_animated 0
+x 7
+y 15
 end
 arch dungeon_magic
 x 7
@@ -1044,419 +1033,452 @@ arch wwall_3_1
 x 8
 y 1
 end
+arch dungeon_magic
+x 8
+y 2
+end
 arch cobblestones
 x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch cobblestones
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch cobblestones
+x 8
+y 4
+end
+arch cobblestones
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch c_man
+name Sal
+event_say_plugin Python
+event_say /python/IPO/banksay.py
+msg
+@match *
+Sorry the abacus is down at the moment...
+endmsg
+title acount manager
+x 8
+y 5
+end
+arch cobblestones
+x 8
+y 6
+end
+arch window_win2
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch cobblestones
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 8
+end
+arch cobblestones
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch cobblestones
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch cobblestones
+x 8
+y 10
+end
+arch cobblestones
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch cobblestones
+x 8
+y 11
+end
+arch magic_mouth
+msg
+The guard eyes you suspiciously as you
+pass him
+endmsg
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch cobblestones
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch cobblestones
+x 8
+y 13
+end
+arch dungeon_magic
+x 8
+y 14
+end
+arch cobblestones
+x 8
+y 14
+end
+arch exit
+slaying /world/world_122_117
+hp 12
+sp 10
+speed_left -0.400000
+is_animated 0
+x 8
+y 15
+end
+arch dungeon_magic
+x 8
+y 15
+end
+arch cobblestones
+x 8
+y 15
+end
+arch cobblestones
+x 9
+end
+arch wwall_3_3
+x 9
+end
+arch cobblestones
+x 9
+y 1
+end
+arch wwall_3_1
+x 9
+y 1
+end
+arch dungeon_magic
+x 9
+y 2
+end
+arch cobblestones
+x 9
+y 2
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch cobblestones
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 4
+end
+arch cobblestones
+x 9
+y 4
+end
+arch dungeon_magic
+x 9
+y 5
+end
+arch cobblestones
+x 9
+y 5
+end
+arch cobblestones
+x 9
+y 6
+end
+arch window_win2
+x 9
+y 6
+end
+arch dungeon_magic
+x 9
+y 6
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch cobblestones
+x 9
+y 7
+end
+arch sign_w
+msg
+accounts
+endmsg
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
+end
+arch cobblestones
+x 9
+y 8
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch cobblestones
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch cobblestones
+x 9
+y 10
+end
+arch cobblestones
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch cobblestones
+x 9
+y 11
+end
+arch magic_mouth
+msg
+The guard eyes you suspiciously as you
+pass him
+endmsg
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch cobblestones
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch cobblestones
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
+end
+arch cobblestones
+x 9
+y 14
+end
+arch exit
+slaying /world/world_122_117
+hp 12
+sp 10
+speed_left -0.400000
+is_animated 0
+x 9
+y 15
+end
+arch dungeon_magic
+x 9
+y 15
+end
+arch cobblestones
+x 9
+y 15
+end
+arch cobblestones
+x 10
+end
+arch wwall_3_3
+x 10
+end
+arch cobblestones
+x 10
+y 1
+end
+arch wwall_3_1
+x 10
+y 1
+end
+arch cobblestones
+x 10
 y 2
 end
 arch grate_closed_2
-x 8
+x 10
 y 2
 end
 arch cobblestones
-x 8
+x 10
 y 3
 end
 arch wwall_1_1
-x 8
+x 10
 y 3
 end
 arch cobblestones
-x 8
+x 10
 y 4
 end
 arch wwall_2_2_1
-x 8
+x 10
 y 4
 end
 arch dungeon_magic
-x 8
+x 10
 y 5
 end
 arch cobblestones
-x 8
+x 10
 y 5
 end
 arch cobblestones
-x 8
+x 10
 y 6
 end
 arch wall_2_1_2
-x 8
+x 10
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 10
+y 6
 end
 arch cobblestones
-x 8
+x 10
 y 7
 end
 arch dungeon_magic
-x 8
+x 10
 y 7
 end
 arch platinum_converter
-x 8
+x 10
 y 7
 end
 arch dungeon_magic
-x 8
+x 10
 y 8
 end
 arch cobblestones
-x 8
+x 10
 y 8
 end
 arch dungeon_magic
-x 8
+x 10
 y 9
 end
 arch cobblestones
-x 8
+x 10
 y 9
 end
 arch dungeon_magic
-x 8
+x 10
 y 10
 end
 arch cobblestones
-x 8
+x 10
 y 10
-end
-arch cobblestones
-x 8
-y 11
 end
 arch dungeon_magic
-x 8
+x 10
 y 11
 end
 arch cobblestones
-x 8
-y 11
-end
-arch magic_mouth
-msg
-The guard eyes you suspiciously as you
-pass him
-endmsg
-x 8
-y 11
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch cobblestones
-x 8
-y 12
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch cobblestones
-x 8
-y 13
-end
-arch dungeon_magic
-x 8
-y 14
-end
-arch cobblestones
-x 8
-y 14
-end
-arch exit
-slaying /world/world_122_117
-hp 12
-sp 10
-x 8
-y 15
-speed_left -0.400000
-is_animated 0
-end
-arch dungeon_magic
-x 8
-y 15
-end
-arch cobblestones
-x 8
-y 15
-end
-arch cobblestones
-x 9
-end
-arch wwall_3_3
-x 9
-end
-arch cobblestones
-x 9
-y 1
-end
-arch wwall_3_1
-x 9
-y 1
-end
-arch cobblestones
-x 9
-y 2
-end
-arch random_wealth
-x 9
-y 2
-end
-arch cobblestones
-x 9
-y 3
-end
-arch random_wealth
-x 9
-y 3
-end
-arch cobblestones
-x 9
-y 4
-end
-arch wwall_2_1_2
-x 9
-y 4
-end
-arch cobblestones
-x 9
-y 5
-end
-arch dungeon_magic
-x 9
-y 5
-end
-arch cobblestones
-x 9
-y 5
-end
-arch c_man
-x 9
-y 5
-end
-arch cobblestones
-x 9
-y 6
-end
-arch wall_2_1_2
-x 9
-y 6
-blocksview 0
-end
-arch cobblestones
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
-y 7
-end
-arch platinum_converter
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
-y 8
-end
-arch cobblestones
-x 9
-y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch cobblestones
-x 9
-y 9
-end
-arch cobblestones
-x 9
-y 10
-end
-arch dungeon_magic
-x 9
-y 10
-end
-arch cobblestones
-x 9
-y 10
-end
-arch guard
-x 9
-y 10
-end
-arch cobblestones
-x 9
+x 10
 y 11
 end
 arch wwall_2_2_2
-x 9
+x 10
 y 11
 end
 arch cobblestones
-x 9
+x 10
 y 12
 end
 arch wwall_3_2
-x 9
+x 10
 y 12
 end
 arch cobblestones
-x 9
+x 10
 y 13
 end
 arch wwall_3_2
-x 9
+x 10
 y 13
 end
 arch cobblestones
-x 9
+x 10
 y 14
 end
 arch wwall_3_2
-x 9
+x 10
 y 14
 end
+arch dungeon_magic
+x 10
+y 15
+end
 arch cobblestones
-x 9
+x 10
 y 15
 end
 arch wwall_2_2_1
-x 9
-y 15
-end
-arch cobblestones
-x 10
-end
-arch wwall_3_3
-x 10
-end
-arch cobblestones
-x 10
-y 1
-end
-arch wwall_3_1
-x 10
-y 1
-end
-arch cobblestones
-x 10
-y 2
-end
-arch random_wealth
-x 10
-y 2
-end
-arch cobblestones
-x 10
-y 3
-end
-arch random_wealth
-x 10
-y 3
-end
-arch cobblestones
-x 10
-y 4
-end
-arch wwall_2_1_2
-x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 5
-end
-arch cobblestones
-x 10
-y 5
-end
-arch cobblestones
-x 10
-y 6
-end
-arch wall_2_1_2
-x 10
-y 6
-blocksview 0
-end
-arch cobblestones
-x 10
-y 7
-end
-arch dungeon_magic
-x 10
-y 7
-end
-arch platinum_converter
-x 10
-y 7
-end
-arch dungeon_magic
-x 10
-y 8
-end
-arch cobblestones
-x 10
-y 8
-end
-arch dungeon_magic
-x 10
-y 9
-end
-arch cobblestones
-x 10
-y 9
-end
-arch dungeon_magic
-x 10
-y 10
-end
-arch cobblestones
-x 10
-y 10
-end
-arch cobblestones
-x 10
-y 11
-end
-arch wwall_3_3
-x 10
-y 11
-end
-arch cobblestones
-x 10
-y 12
-end
-arch wwall_4
-x 10
-y 12
-end
-arch cobblestones
-x 10
-y 13
-end
-arch wwall_4
-x 10
-y 13
-end
-arch cobblestones
-x 10
-y 14
-end
-arch wwall_4
-x 10
-y 14
-end
-arch cobblestones
-x 10
-y 15
-end
-arch wwall_3_1
 x 10
 y 15
 end
@@ -1503,14 +1525,11 @@ x 11
 y 5
 end
 arch dungeon_magic
-x 11
-y 5
-end
-arch cobblestones
 x 11
 y 5
 end
 arch c_man
+name cashier
 x 11
 y 5
 end
@@ -1518,10 +1537,13 @@ arch cobblestones
 x 11
 y 6
 end
-arch wall_2_1_2
+arch window_win2
 x 11
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 11
+y 6
 end
 arch cobblestones
 x 11
@@ -1551,11 +1573,19 @@ arch cobblestones
 x 11
 y 9
 end
+arch cobblestones
+x 11
+y 10
+end
 arch dungeon_magic
 x 11
 y 10
 end
 arch cobblestones
+x 11
+y 10
+end
+arch guard
 x 11
 y 10
 end
@@ -1575,11 +1605,15 @@ arch wwall_4
 x 11
 y 12
 end
+arch dungeon_magic
+x 11
+y 13
+end
 arch cobblestones
 x 11
 y 13
 end
-arch wwall_4
+arch wwall_3_4
 x 11
 y 13
 end
@@ -1649,10 +1683,13 @@ arch cobblestones
 x 12
 y 6
 end
-arch wall_1_3
+arch wall_2_1_2
 x 12
 y 6
-blocksview 0
+end
+arch dungeon_magic
+x 12
+y 6
 end
 arch cobblestones
 x 12
@@ -1662,43 +1699,31 @@ arch dungeon_magic
 x 12
 y 7
 end
-arch silver_converter
+arch platinum_converter
 x 12
 y 7
 end
+arch dungeon_magic
+x 12
+y 8
+end
 arch cobblestones
 x 12
 y 8
 end
 arch dungeon_magic
 x 12
-y 8
-end
-arch silver_converter
-x 12
-y 8
-end
-arch cobblestones
-x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch silver_converter
-x 12
 y 9
 end
 arch cobblestones
 x 12
-y 10
+y 9
 end
 arch dungeon_magic
 x 12
 y 10
 end
-arch silver_converter
+arch cobblestones
 x 12
 y 10
 end
@@ -1714,7 +1739,7 @@ arch cobblestones
 x 12
 y 12
 end
-arch wwall_4
+arch wwall_3_1
 x 12
 y 12
 end
@@ -1722,15 +1747,11 @@ arch cobblestones
 x 12
 y 13
 end
-arch wwall_4
-x 12
-y 13
-end
 arch cobblestones
 x 12
 y 14
 end
-arch wwall_4
+arch wwall_3_3
 x 12
 y 14
 end
@@ -1752,7 +1773,7 @@ arch cobblestones
 x 13
 y 1
 end
-arch wwall_4
+arch wwall_3_1
 x 13
 y 1
 end
@@ -1760,7 +1781,7 @@ arch cobblestones
 x 13
 y 2
 end
-arch wwall_3_2
+arch random_wealth
 x 13
 y 2
 end
@@ -1768,7 +1789,7 @@ arch cobblestones
 x 13
 y 3
 end
-arch wwall_3_2
+arch random_wealth
 x 13
 y 3
 end
@@ -1776,7 +1797,7 @@ arch cobblestones
 x 13
 y 4
 end
-arch wwall_4
+arch wwall_2_1_2
 x 13
 y 4
 end
@@ -1784,7 +1805,12 @@ arch cobblestones
 x 13
 y 5
 end
-arch wwall_3_2
+arch dungeon_magic
+x 13
+y 5
+end
+arch c_man
+name cashier
 x 13
 y 5
 end
@@ -1792,7 +1818,11 @@ arch cobblestones
 x 13
 y 6
 end
-arch wwall_3_2
+arch window_win2
+x 13
+y 6
+end
+arch dungeon_magic
 x 13
 y 6
 end
@@ -1800,31 +1830,35 @@ arch cobblestones
 x 13
 y 7
 end
-arch wwall_3_2
+arch dungeon_magic
 x 13
 y 7
 end
+arch platinum_converter
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 8
+end
 arch cobblestones
 x 13
 y 8
 end
-arch wwall_3_2
+arch dungeon_magic
 x 13
-y 8
+y 9
 end
 arch cobblestones
 x 13
 y 9
 end
-arch wwall_3_2
-x 13
-y 9
-end
-arch cobblestones
+arch dungeon_magic
 x 13
 y 10
 end
-arch wwall_3_2
+arch cobblestones
 x 13
 y 10
 end
@@ -1832,7 +1866,7 @@ arch cobblestones
 x 13
 y 11
 end
-arch wwall_4
+arch wwall_3_3
 x 13
 y 11
 end
@@ -1840,15 +1874,11 @@ arch cobblestones
 x 13
 y 12
 end
-arch wwall_4
+arch wwall_3_1
 x 13
 y 12
 end
 arch cobblestones
-x 13
-y 13
-end
-arch wwall_4
 x 13
 y 13
 end
@@ -1856,7 +1886,7 @@ arch cobblestones
 x 13
 y 14
 end
-arch wwall_4
+arch wwall_3_3
 x 13
 y 14
 end
@@ -1870,127 +1900,399 @@ y 15
 end
 arch cobblestones
 x 14
+end
+arch wwall_3_3
+x 14
+end
+arch cobblestones
+x 14
+y 1
+end
+arch wwall_3_1
+x 14
+y 1
+end
+arch cobblestones
+x 14
+y 2
+end
+arch random_wealth
+x 14
+y 2
+end
+arch cobblestones
+x 14
+y 3
+end
+arch random_wealth
+x 14
+y 3
+end
+arch cobblestones
+x 14
+y 4
+end
+arch wwall_2_1_2
+x 14
+y 4
+end
+arch dungeon_magic
+x 14
+y 5
+end
+arch cobblestones
+x 14
+y 5
+end
+arch cobblestones
+x 14
+y 6
+end
+arch wall_1_3
+x 14
+y 6
+end
+arch dungeon_magic
+x 14
+y 6
+end
+arch cobblestones
+x 14
+y 7
+end
+arch dungeon_magic
+x 14
+y 7
+end
+arch silver_converter
+x 14
+y 7
+end
+arch cobblestones
+x 14
+y 8
+end
+arch dungeon_magic
+x 14
+y 8
+end
+arch silver_converter
+x 14
+y 8
+end
+arch cobblestones
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch silver_converter
+x 14
+y 9
+end
+arch cobblestones
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch silver_converter
+x 14
+y 10
+end
+arch cobblestones
+x 14
+y 11
+end
+arch wwall_3_3
+x 14
+y 11
+end
+arch cobblestones
+x 14
+y 12
+end
+arch wwall_3_1
+x 14
+y 12
+end
+arch cobblestones
+x 14
+y 13
+end
+arch cobblestones
+x 14
+y 14
+end
+arch wwall_3_3
+x 14
+y 14
+end
+arch cobblestones
+x 14
+y 15
+end
+arch wwall_3_1
+x 14
+y 15
+end
+arch cobblestones
+x 15
+end
+arch wwall_3_3
+x 15
+end
+arch cobblestones
+x 15
+y 1
+end
+arch wwall_4
+x 15
+y 1
+end
+arch cobblestones
+x 15
+y 2
+end
+arch wwall_3_2
+x 15
+y 2
+end
+arch cobblestones
+x 15
+y 3
+end
+arch wwall_3_2
+x 15
+y 3
+end
+arch cobblestones
+x 15
+y 4
+end
+arch wwall_4
+x 15
+y 4
+end
+arch cobblestones
+x 15
+y 5
+end
+arch wwall_3_2
+x 15
+y 5
+end
+arch cobblestones
+x 15
+y 6
+end
+arch wwall_3_2
+x 15
+y 6
+end
+arch dungeon_magic
+x 15
+y 6
+end
+arch cobblestones
+x 15
+y 7
+end
+arch wwall_3_2
+x 15
+y 7
+end
+arch cobblestones
+x 15
+y 8
+end
+arch wwall_3_2
+x 15
+y 8
+end
+arch cobblestones
+x 15
+y 9
+end
+arch wwall_3_2
+x 15
+y 9
+end
+arch cobblestones
+x 15
+y 10
+end
+arch wwall_3_2
+x 15
+y 10
+end
+arch cobblestones
+x 15
+y 11
+end
+arch wwall_4
+x 15
+y 11
+end
+arch cobblestones
+x 15
+y 12
+end
+arch wwall_4
+x 15
+y 12
+end
+arch cobblestones
+x 15
+y 13
+end
+arch wwall_3_2
+x 15
+y 13
+end
+arch cobblestones
+x 15
+y 14
+end
+arch wwall_4
+x 15
+y 14
+end
+arch cobblestones
+x 15
+y 15
+end
+arch wwall_3_1
+x 15
+y 15
+end
+arch cobblestones
+x 16
 end
 arch wwall_2_2_3
-x 14
+x 16
 end
 arch cobblestones
-x 14
+x 16
 y 1
 end
 arch wwall_3_4
-x 14
+x 16
 y 1
 end
 arch cobblestones
-x 14
+x 16
 y 2
 end
 arch wwall_3_4
-x 14
+x 16
 y 2
 end
 arch cobblestones
-x 14
+x 16
 y 3
 end
 arch wwall_3_4
-x 14
+x 16
 y 3
 end
 arch cobblestones
-x 14
+x 16
 y 4
 end
 arch wwall_3_4
-x 14
+x 16
 y 4
 end
 arch cobblestones
-x 14
+x 16
 y 5
 end
 arch wwall_3_4
-x 14
+x 16
 y 5
 end
 arch cobblestones
-x 14
+x 16
 y 6
 end
 arch wwall_3_4
-x 14
+x 16
 y 6
 end
 arch cobblestones
-x 14
+x 16
 y 7
 end
 arch wwall_3_4
-x 14
+x 16
 y 7
 end
 arch cobblestones
-x 14
+x 16
 y 8
 end
 arch wwall_3_4
-x 14
+x 16
 y 8
 end
 arch cobblestones
-x 14
+x 16
 y 9
 end
 arch wwall_3_4
-x 14
+x 16
 y 9
 end
 arch cobblestones
-x 14
+x 16
 y 10
 end
 arch wwall_3_4
-x 14
+x 16
 y 10
 end
 arch cobblestones
-x 14
+x 16
 y 11
 end
 arch wwall_3_4
-x 14
+x 16
 y 11
 end
 arch cobblestones
-x 14
+x 16
 y 12
 end
 arch wwall_3_4
-x 14
+x 16
 y 12
 end
 arch cobblestones
-x 14
+x 16
 y 13
 end
 arch wwall_3_4
-x 14
+x 16
 y 13
 end
 arch cobblestones
-x 14
+x 16
 y 14
 end
 arch wwall_3_4
-x 14
+x 16
 y 14
 end
 arch cobblestones
-x 14
+x 16
 y 15
 end
-arch wwall_3_1
-x 14
+arch wwall_2_2_4
+x 16
 y 15
 end
