@@ -251,11 +251,15 @@ arch wwall_2_2_1
 x 1
 y 10
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 1
 y 11
 end
-arch grassdark
+arch tree
+blocksview 1
+no_pass 1
 x 1
 y 12
 end
@@ -568,10 +572,6 @@ arch woodfloor
 x 3
 y 4
 end
-arch mouse
-x 3
-y 4
-end
 arch woodfloor
 x 3
 y 5
@@ -626,6 +626,9 @@ x 3
 y 13
 end
 arch door_2
+msg
+#3 Riverside Manor
+endmsg
 x 3
 y 13
 end
@@ -708,10 +711,6 @@ x 4
 y 2
 end
 arch woodfloor
-x 4
-y 3
-end
-arch mouse
 x 4
 y 3
 end
@@ -909,6 +908,13 @@ arch dirtfloor
 x 5
 y 12
 end
+arch sign
+msg
+#3 Riverside Manor
+endmsg
+x 5
+y 12
+end
 arch woodfloor
 x 5
 y 13
@@ -1004,10 +1010,6 @@ x 6
 y 3
 end
 arch woodfloor
-x 6
-y 4
-end
-arch mouse
 x 6
 y 4
 end
@@ -1169,10 +1171,6 @@ arch woodfloor
 x 7
 y 3
 end
-arch mouse
-x 7
-y 3
-end
 arch woodfloor
 x 7
 y 4
@@ -1321,10 +1319,6 @@ x 8
 y 1
 end
 arch woodfloor
-x 8
-y 2
-end
-arch mouse
 x 8
 y 2
 end
@@ -1558,6 +1552,9 @@ x 9
 y 8
 end
 arch door_1
+msg
+#1 Riverside Manor
+endmsg
 x 9
 y 8
 end
@@ -1581,7 +1578,9 @@ arch grass
 x 9
 y 11
 end
-arch dirtfloor
+arch tree
+blocksview 1
+no_pass 1
 x 9
 y 12
 end
@@ -1668,7 +1667,9 @@ arch dirtfloor
 x 10
 y 1
 end
-arch dirtfloor
+arch tree
+blocksview 1
+no_pass 1
 x 10
 y 2
 end
@@ -1692,6 +1693,11 @@ arch stonefloor2
 x 10
 y 7
 end
+arch brazier
+glow_radius 0
+x 10
+y 7
+end
 arch stonefloor2
 x 10
 y 8
@@ -1700,7 +1706,10 @@ arch stonefloor2
 x 10
 y 9
 end
-arch brazier
+arch sign_w
+msg
+#1 Riverside Manor
+endmsg
 x 10
 y 9
 end
@@ -2252,7 +2261,7 @@ arch grass
 x 14
 y 2
 end
-arch sign_w
+arch sign
 msg
 **Riverside Manor**
 Lucksury Condominimums at
@@ -2286,8 +2295,10 @@ arch stonefloor2
 x 14
 y 7
 end
-arch sign
+arch sign_e
 msg
+#2 Riverside Manor
+
 For Rent - see Amy
 endmsg
 x 14
@@ -2315,6 +2326,8 @@ y 12
 end
 arch sign_w
 msg
+#4 Riverside Manor
+
 Amy Barrnes
 Caretaker
 Please knock
@@ -2467,7 +2480,7 @@ y 6
 end
 arch locked_door2
 msg
-You need the special key to open this door.
+You'll need the key to open this door.
 Although, judging by the smell,
 why you'd want to go in is a mystery...
 endmsg
@@ -3319,11 +3332,15 @@ arch grass
 x 20
 y 16
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 20
 y 17
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 20
 y 18
 end
@@ -3331,13 +3348,8 @@ arch grass
 x 20
 y 19
 end
-arch grass
-x 20
-y 20
-end
-arch fernsdense
+arch tree
 blocksview 1
-is_floor 1
 x 20
 y 20
 end
@@ -3362,6 +3374,20 @@ type 122
 no_pick 1
 x 20
 y 23
+arch card
+face card_skull.111
+msg
+special delivery for Mr. White...
+endmsg
+end
+arch key2
+name key
+face key_blue.111
+msg
+B.A.  #1
+endmsg
+slaying BZA_whitedoor
+end
 end
 arch grass
 x 20
@@ -3488,11 +3514,15 @@ arch grass
 x 21
 y 18
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 21
 y 19
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 21
 y 20
 end
@@ -3504,13 +3534,15 @@ arch grass
 x 21
 y 22
 end
-arch fernsdense
+arch tree
 blocksview 1
-is_floor 1
+no_pass 1
 x 21
 y 22
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 21
 y 23
 end
@@ -3607,7 +3639,9 @@ arch wwall_2_1_2
 x 22
 y 10
 end
-arch grass
+arch tree
+blocksview 1
+no_pass 1
 x 22
 y 11
 end
