@@ -1,11 +1,11 @@
 Object map
 type 22
-slaying /city/city
+slaying /HallOfSelection
 face map.111
 x 16
 y 16
-hp 2
-sp 2
+hp 7
+sp 5
 value 300
 weight 7200
 editable 0
