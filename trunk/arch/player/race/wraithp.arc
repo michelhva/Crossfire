@@ -24,14 +24,11 @@ can_see_in_dark 1
 can_use_armour 1
 can_use_weapon 1
 attacktype 17
-resist_fire -100
-
+resist_fire -40
 resist_drain 100
 resist_ghosthit 100
 resist_poison 100
-
 resist_cold 30
-
 path_attuned 4
 path_denied 2
 Str -3

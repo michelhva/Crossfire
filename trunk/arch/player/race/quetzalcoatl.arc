@@ -32,9 +32,6 @@ Wis -8
 Int -8
 Pow 6
 resist_fire 100
-
-resist_cold -100
-resist_paralyze -100
-
+resist_cold -30
 editable 0
 end
