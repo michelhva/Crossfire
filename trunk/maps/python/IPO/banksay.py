@@ -52,7 +52,7 @@ thanks_message = ['Thank you for banking the Imperial Way.', 'Thank you, please 
 again.', 'Thank you, please come again.','Thank you for banking the Imperial Way.', \
 'Thank you for your patronage.', 'Thank you, have a nice day.', 'Thank you. "Service" \
 is our middle name.', 'Thank you. "Service" is our middle name.', 'Thank you for your \
-patronage.', 'Thank you, have a nice day.', 'Thank you.  Hows about a big slobbery \ kiss?']
+patronage.', 'Thank you, have a nice day.', 'Thank you.  Hows about a big slobbery kiss?']
 
 
 
@@ -66,8 +66,8 @@ elif text[0] == 'deposit':
 	if len(text)==2:
 		if (CFPython.PayAmount(activator, (int(text[1])*exchange_rate)*fees)):
 			bank.deposit(activatorname, int(text[1]))
-			message = '%d imperials deposited to bank account.  %s' \
-			%(int(text[1]),random.choice(thanks_message))
+			message = '%d recieved, %d imperials deposited to bank account.  %s' \
+			%((int(text[1])*(exchange_rate/50))*fees,int(text[1]),random.choice(thanks_message))
 		else:
 			message = 'You would need %d gold'%((int(text[1])*(exchange_rate/10))*fees)
 	else:
@@ -79,7 +79,7 @@ elif text[0] == 'withdraw':
 			message = '%d imperials withdrawn from bank account.  %s' \
 			%(int(text[1]),random.choice(thanks_message))
 			id = CFPython.CreateObject('imperial', (x, y))
-			CFPython.SetQuantity(id, int(text[1]))
+			CFItemBroker.Item(id).add(int(text[1]))
 		else:
 			message = 'Not enough imperials on your account'
 	else:
@@ -89,10 +89,10 @@ elif text[0] == 'exchange':
     if len(text)==2:
         inv=CFPython.CheckInventory(activator,'imperial')
         if inv:
-            pay = CFItemBroker.ItemBroker(inv).subtract(int(text[1]))
+            pay = CFItemBroker.Item(inv).subtract(int(text[1]))
             if pay:
                 id = CFPython.CreateObject('platinum coin', (x, y))
-                CFPython.SetQuantity(id, int(text[1])*(exchange_rate/50))
+                CFItemBroker.Item(id).add(int(text[1])*(exchange_rate/50))
                 message = random.choice(thanks_message)
             else:
                 message = 'Sorry, you do not have %d imperials' %int(text[1])
@@ -103,8 +103,12 @@ elif text[0] == 'exchange':
 
 elif text[0] == 'balance':
     balance = bank.getbalance(activatorname)
-    message = 'Amount in bank: %d Ip'%(balance)
-
+    if balance == 1:
+    	message = 'Amount in bank: 1 imperial note'
+    elif balance:
+	message = 'Amount in bank: %d imperial notes'%(balance)
+    else:
+	message = 'Sorry, you have no balance.'
 else:
 	message = 'Do you need help?'
 
