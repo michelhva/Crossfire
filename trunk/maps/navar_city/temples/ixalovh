@@ -767,6 +767,13 @@ arch woodfloor
 x 7
 y 16
 end
+arch ladder_down
+slaying ixalovh2
+hp 1
+sp 18
+x 7
+y 16
+end
 arch woodfloor
 x 7
 y 17
@@ -1021,6 +1028,10 @@ x 10
 y 11
 end
 arch woodfloor
+x 10
+y 12
+end
+arch mdoor_closed_1
 x 10
 y 12
 end
