@@ -348,6 +348,11 @@ arch ogre_chief_arc
 x 3
 y 12
 end
+arch button_handle
+x 3
+y 12
+connected 10
+end
 arch dungeon_floor
 x 3
 y 13
@@ -795,16 +800,16 @@ arch door_2
 x 7
 y 13
 end
+arch dungeon_floor
+x 7
+y 14
+end
 arch invis_exit
 slaying /world/world_105_115
 hp 7
 sp 29
 x 7
 y 15
-end
-arch dungeon_floor
-x 7
-y 14
 end
 arch dungeon_floor
 x 7
@@ -897,16 +902,16 @@ arch door_2
 x 8
 y 13
 end
+arch dungeon_floor
+x 8
+y 14
+end
 arch invis_exit
 slaying /world/world_105_115
 hp 7
 sp 29
 x 8
 y 15
-end
-arch dungeon_floor
-x 8
-y 14
 end
 arch dungeon_floor
 x 8
@@ -1324,6 +1329,11 @@ end
 arch ogre_chief_arc
 x 12
 y 12
+end
+arch button_handle
+x 12
+y 12
+connected 11
 end
 arch dungeon_floor
 x 12
