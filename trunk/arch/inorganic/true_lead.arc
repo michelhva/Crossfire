@@ -6,7 +6,7 @@ material 2
 value 530
 resist_fire 100
 resist_acid 100
-
+materialname lead
 type 73
 nrof 1
 weight 5000
