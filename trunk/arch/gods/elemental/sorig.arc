@@ -2,7 +2,7 @@
 Object Sorig
 type 50
 face para_light.111
-race para_air,air_elemental,para_lightning
+race air_elemental
 animation para_lightning
 is_animated 1
 Str 30
