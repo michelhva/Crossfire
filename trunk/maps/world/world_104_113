@@ -1,7 +1,6 @@
 arch map
 name world_104_113
 msg
-
 endmsg
 width 50
 height 50
@@ -2488,10 +2487,20 @@ end
 arch mountain
 x 10
 y 7
+elevation 9387
+end
+arch tower_a
+name Barad-Dur
+slaying /dungeons/barad_dur
+hp 2
+sp 1
+x 10
+y 7
 end
 arch mountain
 x 10
 y 8
+elevation 8942
 end
 arch mountain
 elevation 6551
@@ -12408,12 +12417,4 @@ arch sea
 elevation -172
 x 49
 y 49
-end
-arch tower_a
-name Barad-Dur
-slaying /dungeons/barad_dur
-hp 2
-sp 1
-x 10
-y 7
 end
