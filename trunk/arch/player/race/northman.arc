@@ -16,13 +16,18 @@ endmsg
 color_fg black
 anim
 viking.111
+viking.111
+viking.131
 viking.131
 viking.151
+viking.152
+viking.171
 viking.171
 facings 4
 mina
 resist_cold 30
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10

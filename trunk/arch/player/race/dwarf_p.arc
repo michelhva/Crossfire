@@ -24,13 +24,18 @@ just not quite as good as human clerics or
 mages.
 endmsg
 anim
-dwarf_p.151
-dwarf_p.131
 dwarf_p.111
+dwarf_p.112
+dwarf_p.131
+dwarf_p.131
+dwarf_p.151
+dwarf_p.152
+dwarf_p.171
 dwarf_p.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10

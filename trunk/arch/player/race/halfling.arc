@@ -14,13 +14,18 @@ to favor them with good luck. They are also
 surprisingly resistant to loss of lifeforce.
 endmsg
 anim
-halfling.151
-halfling.131
 halfling.111
+halfling.112
+halfling.131
+halfling.131
+halfling.151
+halfling.152
+halfling.171
 halfling.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10
