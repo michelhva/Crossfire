@@ -1,5 +1,5 @@
 Object thaumaturg_desk
-face thaumaturg_desk..111
+face thaumaturg_desk.111
 name thaumaturgist's desk
 no_pick 1
 type 122
