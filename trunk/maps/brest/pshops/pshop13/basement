@@ -557,7 +557,7 @@ x 3
 y 20
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 connected 1
 walk_off 1
 x 3
@@ -842,6 +842,14 @@ arch blocked
 x 5
 y 19
 end
+arch blocked
+x 5
+y 20
+end
+arch blocked
+x 5
+y 21
+end
 arch dirtfloor
 x 6
 end
@@ -966,7 +974,9 @@ x 6
 y 12
 end
 arch torch_1
+food 0
 no_pick 1
+changing 0
 x 6
 y 12
 end
@@ -1038,6 +1048,10 @@ connected 201
 speed 0.0
 x 6
 y 20
+end
+arch blocked
+x 6
+y 21
 end
 arch dirtfloor
 x 7
@@ -1143,7 +1157,7 @@ x 7
 y 13
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 no_pass 1
 walk_off 1
 x 7
@@ -1163,7 +1177,7 @@ x 7
 y 13
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 connected 1
 walk_off 1
 x 7
@@ -1217,6 +1231,10 @@ connected 202
 speed 0.0
 x 7
 y 20
+end
+arch blocked
+x 7
+y 21
 end
 arch dirtfloor
 x 8
@@ -1388,6 +1406,14 @@ end
 arch blocked
 x 8
 y 19
+end
+arch blocked
+x 8
+y 20
+end
+arch blocked
+x 8
+y 21
 end
 arch dirtfloor
 x 9
@@ -2286,7 +2312,9 @@ x 15
 y 6
 end
 arch torch_1
+food 0
 no_pick 1
+changing 0
 x 15
 y 6
 end
@@ -2339,7 +2367,9 @@ x 15
 y 12
 end
 arch torch_1
+food 0
 no_pick 1
+changing 0
 x 15
 y 12
 end
@@ -2716,7 +2746,7 @@ x 18
 y 2
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 connected 1
 walk_off 1
 x 18
@@ -2733,7 +2763,7 @@ x 18
 y 4
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 no_pass 1
 walk_off 1
 x 18
@@ -2753,7 +2783,7 @@ x 18
 y 4
 end
 arch check_floor
-slaying pshop133
+slaying pshop13
 connected 1
 walk_off 1
 x 18
