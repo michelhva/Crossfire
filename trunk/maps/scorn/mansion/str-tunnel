@@ -5,10 +5,11 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 00:59:37 1994
 endmsg
-hp 21
-sp 18
-x 31
-y 11
+width 31
+height 11
+enter_x 21
+enter_y 18
+darkness 1
 end
 arch medium_stones
 end
@@ -85,6 +86,10 @@ x 1
 y 1
 end
 arch stair_3_up
+msg
+Ah! You have entered the
+small strongold of Scorn.
+endmsg
 slaying stronghold
 hp 6
 sp 28
@@ -174,9 +179,9 @@ x 2
 y 2
 end
 arch button_handle
+connected 96
 x 2
 y 2
-connected 96
 end
 arch medium_stones
 x 2
@@ -253,10 +258,10 @@ x 3
 y 1
 end
 arch block_door_closed
-x 3
-y 1
 speed 0.500000
 connected 96
+x 3
+y 1
 end
 arch medium_stones
 x 3
@@ -341,10 +346,10 @@ x 4
 y 1
 end
 arch block_door_closed
-x 4
-y 1
 speed 0.500000
 connected 96
+x 4
+y 1
 end
 arch medium_stones
 x 4
@@ -359,10 +364,10 @@ x 4
 y 3
 end
 arch block_door_closed
-x 4
-y 3
 speed 0.500000
 connected 96
+x 4
+y 3
 end
 arch medium_stones
 x 4
@@ -423,30 +428,38 @@ x 5
 y 1
 end
 arch block_door_closed
-x 5
-y 1
 speed 0.500000
 connected 96
+x 5
+y 1
 end
 arch medium_stones
 x 5
 y 2
 end
 arch block_door_closed
-x 5
-y 2
 speed 0.500000
 connected 96
+x 5
+y 2
 end
 arch medium_stones
 x 5
 y 3
 end
 arch block_door_closed
-x 5
-y 3
 speed 0.500000
 connected 96
+x 5
+y 3
+end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 5
+y 4
 end
 arch medium_stones
 x 5
@@ -648,6 +661,13 @@ arch bwall_0
 x 7
 y 10
 end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 8
+end
 arch medium_stones
 x 8
 end
@@ -784,7 +804,11 @@ arch medium_stones
 x 9
 y 9
 end
-arch bwall_0
+arch teleporter
+msg
+endmsg
+hp 25
+sp 2
 x 9
 y 9
 end
@@ -826,6 +850,14 @@ arch bwall_0
 x 10
 y 3
 end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 10
+y 4
+end
 arch medium_stones
 x 10
 y 4
@@ -866,7 +898,8 @@ arch medium_stones
 x 10
 y 9
 end
-arch bwall_0
+arch block_door_open
+connected 96
 x 10
 y 9
 end
@@ -948,7 +981,8 @@ arch medium_stones
 x 11
 y 9
 end
-arch bwall_0
+arch block_door_open
+connected 96
 x 11
 y 9
 end
@@ -1087,6 +1121,14 @@ end
 arch bwall_0
 x 13
 y 7
+end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 13
+y 8
 end
 arch medium_stones
 x 13
@@ -1207,6 +1249,14 @@ end
 arch medium_stones
 x 15
 y 3
+end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 15
+y 4
 end
 arch medium_stones
 x 15
@@ -1453,6 +1503,14 @@ end
 arch bwall_0
 x 18
 y 7
+end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 18
+y 8
 end
 arch medium_stones
 x 18
@@ -1550,6 +1608,14 @@ arch medium_stones
 x 20
 y 2
 end
+arch magic_ear
+msg
+@match filur
+endmsg
+connected 1
+x 20
+y 3
+end
 arch medium_stones
 x 20
 y 3
@@ -1594,7 +1660,9 @@ arch medium_stones
 x 20
 y 8
 end
-arch bwall_0
+arch block_door_closed
+speed 0.500000
+connected 2
 x 20
 y 8
 end
@@ -1668,11 +1736,20 @@ arch bwall_0
 x 21
 y 7
 end
+arch magic_mouth
+msg
+This seems to be Filur's dwelling.
+endmsg
+x 21
+y 8
+end
 arch medium_stones
 x 21
 y 8
 end
-arch bwall_0
+arch block_door_closed
+speed 0.500000
+connected 2
 x 21
 y 8
 end
@@ -1738,11 +1815,7 @@ arch bwall_0
 x 22
 y 6
 end
-arch medium_stones
-x 22
-y 7
-end
-arch bwall_0
+arch pstone_4
 x 22
 y 7
 end
@@ -1750,15 +1823,11 @@ arch medium_stones
 x 22
 y 8
 end
-arch bwall_0
-x 22
-y 8
-end
-arch medium_stones
+arch pstone_4
 x 22
 y 9
 end
-arch bwall_0
+arch barrel
 x 22
 y 9
 end
@@ -1805,9 +1874,9 @@ x 23
 y 4
 end
 arch block_door_closed
+connected 96
 x 23
 y 4
-connected 96
 end
 arch medium_stones
 x 23
@@ -1829,23 +1898,44 @@ arch medium_stones
 x 23
 y 7
 end
-arch bwall_0
+arch orcchop
 x 23
 y 7
 end
-arch medium_stones
+arch pstone_4
 x 23
 y 8
 end
-arch bwall_0
+arch small_troll
+name Filur
+msg
+@match *
+Grr... You disturb me sleep!
+endmsg
+attacktype 1
+hp 200
+maxhp 200
+Wis 20
+randomitems none
 x 23
 y 8
+arch morningstar
+name Filur's morningstar
+magic 1
+value 100
+dam 13
+weight 16000
+end
+arch head
+name Filur's head
+msg
+endmsg
+end
+arch goldcoin
+nrof 20
+end
 end
 arch medium_stones
-x 23
-y 9
-end
-arch bwall_0
 x 23
 y 9
 end
@@ -1892,9 +1982,9 @@ x 24
 y 4
 end
 arch block_door_closed
+connected 96
 x 24
 y 4
-connected 96
 end
 arch medium_stones
 x 24
@@ -1912,19 +2002,19 @@ arch bwall_0
 x 24
 y 6
 end
-arch medium_stones
+arch pstone_4
 x 24
 y 7
 end
-arch bwall_0
+arch table_2
 x 24
 y 7
 end
-arch medium_stones
+arch potato
 x 24
-y 8
+y 7
 end
-arch bwall_0
+arch pstone_4
 x 24
 y 8
 end
@@ -1932,7 +2022,7 @@ arch medium_stones
 x 24
 y 9
 end
-arch bwall_0
+arch random_wealth
 x 24
 y 9
 end
@@ -1971,18 +2061,18 @@ x 25
 y 3
 end
 arch block_door_closed
+connected 96
 x 25
 y 3
-connected 96
 end
 arch medium_stones
 x 25
 y 4
 end
 arch block_door_closed
+connected 96
 x 25
 y 4
-connected 96
 end
 arch medium_stones
 x 25
@@ -2043,9 +2133,9 @@ x 26
 y 1
 end
 arch button_handle
+connected 96
 x 26
 y 1
-connected 96
 end
 arch medium_stones
 x 26
@@ -2056,9 +2146,9 @@ x 26
 y 3
 end
 arch block_door_closed
-x 26
-y 3
 connected 96
+x 26
+y 3
 end
 arch medium_stones
 x 26
@@ -2272,11 +2362,35 @@ arch bwall_0
 x 28
 y 8
 end
+arch magic_mouth
+msg
+A grumpy voice shouts:
+Whoever challenges Filur to fight,
+will end up in Filur's stew tonight!
+endmsg
+connected 2
+walk_on 0
+fly_on 0
+x 28
+y 9
+end
 arch medium_stones
 x 28
 y 9
 end
-arch bwall_0
+arch button_small
+name 2
+weight 1000
+connected 2
+x 28
+y 9
+end
+arch creator
+name 1
+msg
+endmsg
+other_arch ten_kilo
+connected 1
 x 28
 y 9
 end

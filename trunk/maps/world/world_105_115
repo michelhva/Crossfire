@@ -2175,7 +2175,7 @@ Read The Signs to the right for
 information on where to go and do.
           --oOo--
 WARNING: Magic is not permitted
-within 3 sqaures of this sign.
+within Scorn city limits.
 endmsg
 x 5
 y 37
@@ -2571,7 +2571,7 @@ arch sign
 name General Information
 msg
 Safe Places to visit...
-   Scorn Central Inn (Sleep to save!)
+   Wanderer Central Inn (Sleep to save!)
    Pirate Inn (in port area)
    Goth's tavern (near GuardHouse)
    City Hall (west of central square)
@@ -2643,6 +2643,12 @@ x 6
 y 43
 end
 arch grass
+x 6
+y 43
+end
+arch fort_sym
+name Jail
+slaying /scorn/misc/jail
 x 6
 y 43
 end
@@ -2965,7 +2971,7 @@ arch sign
 name Beginner Dungeons
 msg
 Beginner Dungeons:
-  Beginners. (two paces north)
+  Beginners. (four paces west)
   Jone's House (two paces north-east)
   Old City (Dark Well,  Southern Wall)
   Drinking Well (central square)
@@ -5238,6 +5244,7 @@ x 13
 y 31
 end
 arch store_magic
+name House of Mana
 slaying /scorn/misc/PowerHouse
 hp 10
 sp 33
@@ -6004,7 +6011,11 @@ arch grass
 x 15
 y 34
 end
-arch house_2
+arch fort
+name dragon guild
+slaying /scorn/misc/dragon_guild
+hp 7
+sp 15
 x 15
 y 34
 end
@@ -6016,10 +6027,6 @@ arch grass
 x 15
 y 35
 end
-arch house_2
-x 15
-y 35
-end
 arch dungeon_magic
 x 15
 y 36
@@ -6052,8 +6059,9 @@ arch grass
 x 15
 y 39
 end
-arch house_small
-name house
+arch market1
+name Guild Houses Inc.
+slaying /scorn/guilds/guildhousesinc
 x 15
 y 39
 end
@@ -6371,8 +6379,11 @@ x 16
 y 31
 end
 arch guild
+name Guild of the Mailed Fist
+slaying /scorn/guilds/mailed_fist/ground
 x 16
 y 31
+no_pass 0
 end
 arch dungeon_magic
 x 16
@@ -6398,22 +6409,11 @@ arch grass
 x 16
 y 34
 end
-arch house_2
-name Puddings Place
-slaying /esben/puddings.place
-hp 22
-x 16
-y 34
-end
 arch dungeon_magic
 x 16
 y 35
 end
 arch grass
-x 16
-y 35
-end
-arch house_2
 x 16
 y 35
 end
@@ -6449,8 +6449,9 @@ arch grass
 x 16
 y 39
 end
-arch house_small
-name house
+arch market3
+name Guild Houses Inc.
+slaying /scorn/guilds/guildhousesinc
 x 16
 y 39
 end
@@ -6774,10 +6775,6 @@ x 17
 y 34
 end
 arch grass
-x 17
-y 34
-end
-arch house_2
 x 17
 y 34
 end
@@ -10788,27 +10785,27 @@ arch tree
 x 33
 y 30
 end
-arch grass
+arch cobblestones
 x 33
 y 31
 end
-arch jungle_1
+arch cobblestones
 x 33
 y 32
 end
-arch tree
+arch cobblestones
 x 33
 y 33
 end
-arch hills_rocky
+arch cobblestones
 x 33
 y 34
 end
-arch brush
+arch cobblestones
 x 33
 y 35
 end
-arch tree
+arch cobblestones
 x 33
 y 36
 end
@@ -10987,7 +10984,7 @@ arch tree
 x 34
 y 30
 end
-arch tree
+arch cobblestones
 x 34
 y 31
 end
@@ -11182,11 +11179,11 @@ arch tree
 x 35
 y 29
 end
-arch tree
+arch cobblestones
 x 35
 y 30
 end
-arch tree
+arch cobblestones
 x 35
 y 31
 end
@@ -11381,7 +11378,7 @@ arch woods
 x 36
 y 29
 end
-arch desert
+arch cobblestones
 x 36
 y 30
 end
@@ -11580,7 +11577,7 @@ arch desert
 x 37
 y 29
 end
-arch desert
+arch cobblestones
 x 37
 y 30
 end
@@ -11751,35 +11748,35 @@ arch jungle_1
 x 38
 y 22
 end
-arch jungle_1
+arch cobblestones
 x 38
 y 23
 end
-arch brush
+arch cobblestones
 x 38
 y 24
 end
-arch brush
+arch cobblestones
 x 38
 y 25
 end
-arch desert
+arch cobblestones
 x 38
 y 26
 end
-arch desert
+arch cobblestones
 x 38
 y 27
 end
-arch desert
+arch cobblestones
 x 38
 y 28
 end
-arch desert
+arch cobblestones
 x 38
 y 29
 end
-arch desert
+arch cobblestones
 x 38
 y 30
 end
@@ -11946,11 +11943,11 @@ arch brush
 x 39
 y 21
 end
-arch tree
+arch cobblestones
 x 39
 y 22
 end
-arch tree
+arch cobblestones
 x 39
 y 23
 end
@@ -12141,11 +12138,11 @@ arch tree
 x 40
 y 20
 end
-arch tree
+arch cobblestones
 x 40
 y 21
 end
-arch tree
+arch cobblestones
 x 40
 y 22
 end
@@ -12336,11 +12333,11 @@ arch tree
 x 41
 y 19
 end
-arch tree
+arch cobblestones
 x 41
 y 20
 end
-arch tree
+arch cobblestones
 x 41
 y 21
 end
@@ -12527,15 +12524,15 @@ arch tree
 x 42
 y 17
 end
-arch tree
+arch cobblestones
 x 42
 y 18
 end
-arch tree
+arch cobblestones
 x 42
 y 19
 end
-arch tree
+arch cobblestones
 x 42
 y 20
 end
@@ -12722,11 +12719,11 @@ arch hills
 x 43
 y 16
 end
-arch hills
+arch cobblestones
 x 43
 y 17
 end
-arch tree
+arch cobblestones
 x 43
 y 18
 end
@@ -12913,15 +12910,15 @@ arch hills
 x 44
 y 14
 end
-arch hills
+arch cobblestones
 x 44
 y 15
 end
-arch hills
+arch cobblestones
 x 44
 y 16
 end
-arch hills
+arch cobblestones
 x 44
 y 17
 end
@@ -13080,39 +13077,39 @@ arch tree
 x 45
 y 6
 end
-arch tree
+arch cobblestones
 x 45
 y 7
 end
-arch tree
+arch cobblestones
 x 45
 y 8
 end
-arch hills
+arch cobblestones
 x 45
 y 9
 end
-arch hills
+arch cobblestones
 x 45
 y 10
 end
-arch tree
+arch cobblestones
 x 45
 y 11
 end
-arch tree
+arch cobblestones
 x 45
 y 12
 end
-arch hills
+arch cobblestones
 x 45
 y 13
 end
-arch hills
+arch cobblestones
 x 45
 y 14
 end
-arch tree
+arch cobblestones
 x 45
 y 15
 end
@@ -13271,15 +13268,15 @@ arch hills
 x 46
 y 4
 end
-arch tree
+arch cobblestones
 x 46
 y 5
 end
-arch tree
+arch cobblestones
 x 46
 y 6
 end
-arch tree
+arch cobblestones
 x 46
 y 7
 end
@@ -13451,26 +13448,26 @@ arch hills_rocky
 x 46
 y 49
 end
-arch tree
+arch cobblestones
 x 47
 end
-arch tree
+arch cobblestones
 x 47
 y 1
 end
-arch hills
+arch cobblestones
 x 47
 y 2
 end
-arch hills
+arch cobblestones
 x 47
 y 3
 end
-arch hills
+arch cobblestones
 x 47
 y 4
 end
-arch hills
+arch cobblestones
 x 47
 y 5
 end

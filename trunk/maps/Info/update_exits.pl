@@ -11,25 +11,25 @@
 
 # Name of the old map that we update exits on
 # Note that this can be a regexp.
-$OLD_MAP_NAME="(/city/city|../city|../../city)";
+$OLD_MAP_NAME="(/santo_dominion/town|../town|../../town)";
 
 # OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the 
 # updates.  For example, scorn/city was broken up on two of the
 # map tiles, so this gets used to correspond that properly.
 # you can use very large END values just to make sure the entire
 # map is covered
-$OLD_MAP_STARTX=10;
-$OLD_MAP_STARTY=0;
-$OLD_MAP_ENDX=100;
+$OLD_MAP_STARTX=3;
+$OLD_MAP_STARTY=12;
+$OLD_MAP_ENDX=27;
 $OLD_MAP_ENDY=100;
 
 # New map names.  OFFX/Y is the offset compared to the old values - these
 # can be negative provided that STARTX above is positive (eg, the
 # map is being shifted.)
 
-$NEW_MAP_NAME="/world/world_105_115";
-$NEW_MAP_OFFX=-10;
-$NEW_MAP_OFFY=18;
+$NEW_MAP_NAME="/world/world_102_108";
+$NEW_MAP_OFFX=0;
+$NEW_MAP_OFFY=-9;
 
 $VERBOSE=0;
 
@@ -39,7 +39,6 @@ if ((($OLD_MAP_STARTX + $NEW_MAP_OFFX) < 0) ||
 	print "Current settings will result in negative destination coordinates.\n";
 	exit(1);
 }
-
 
 
 &maplist(".");
@@ -164,7 +163,7 @@ sub maplist {
     }
     closedir (DIR);
 
-    # recurcive handle sub-dirs too
+    # recursive handle sub-dirs too
     while ($_ = shift @dirs) {
 	&maplist ($_);
     }
