@@ -11,6 +11,7 @@ editable 2048
 name_pl talismans
 client_type 451
 body_skill -1
+skill sorcery
 end
 #
 Object talisman_sorcery
