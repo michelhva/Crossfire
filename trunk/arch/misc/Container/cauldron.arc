@@ -2,7 +2,7 @@ Object cauldron
 other_arch cauldron_open
 face cauldron.111
 type 122
-material 16
+material 2
 weight 80000
 container 800000
 is_cauldron 1
@@ -18,7 +18,7 @@ name cracked cauldron
 other_arch cauldron_open
 face cauldron.111
 type 122
-material 16
+material 2
 weight 20000
 container 800000
 Str -80

@@ -9,7 +9,7 @@ speed -0.2
 glow_radius 1
 no_pick 1
 type 122
-material 16
+material 66
 weight 80000
 container 800000
 is_cauldron 1
