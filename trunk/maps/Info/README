@@ -43,6 +43,22 @@ the follow guidelines should be used:
 
 
 ------------------------------------------------------------------------------
+GIF files:
+
+el_map.gif is an elevation map - it is color coded based on elevations.
+
+terrain_map.gif is color coded based on the type of terrain - I tried to match
+the coloration on what the image looks like in the png set.
+
+ann_map.gif is a annotated version of the map, showing the roads and
+locations of the main cities.
+
+world.gif: This is a map of how the world looks.  This was done by
+converting all of the world maps into images, scaling those down, and
+then merging them into one large image. If you look carefully, you can
+make out the towns, roads, etc.
+
+------------------------------------------------------------------------------
 Important landmarks
 
 The list of translation values below have been used in the update_maps
@@ -93,55 +109,7 @@ different results.
 The generated map was run with the follow parameters on my system:
 -x 1500 -y 1500 -s 1007623715 -p 300 -n 170 -w 40000 -l 200000
 ------------------------------------------------------------------------------
-GIF files:
 
-el_map.gif is an elevation map - it is color coded based on elevations.
-
-terrain_map.gif is color coded based on the type of terrain - I tried to match
-the coloration on what the image looks like in the png set.
-
-ann_map.gif is a annotated version of the map, showing the roads and
-locations of the main cities.
-------------------------------------------------------------------------------
-Completed maps:
-
-asyvan - moved
-brittany - moved
-cd - moved
-city (now scorn) - moved
-dragonisland - moved
-dtabb - moved (as darcap)
-eeur - moved (individual maps)
-ender - moved
-esben - moved (not, sokoban not moved - doesn't fit in, easy/safe place to
-   get treasure)
-espen - moved (individual maps)
-generic - moved
-good - moved
-guilds - moved
-hendel - moved
-kar: moved
-langley: moved
-mak: moved
-mcz: moved
-navar_city: moved
-peterm: moved
-pup_land: moved
-santo_dominion: moved
-skud: moved
-styles: moved
-terrain: not moved (obsolete)
-test: moved
-thomas: moved (to sisters)
-todd: moved
-unlinked: done
-wolfsburg - moved
-
-
-TODO:
-destiny
-
-------------------------------------------------------------------------------
 Note about unique maps:
 
 The update_exits.pl script can be used to update the exit of per player
