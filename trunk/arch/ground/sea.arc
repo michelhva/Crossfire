@@ -14,7 +14,7 @@ no_pick 1
 is_water 1
 editable 8
 is_floor 1
-smoothlevel 255
+smoothlevel 2
 end
 Object sea1
 name sea
@@ -32,5 +32,5 @@ no_pick 1
 is_water 1
 editable 8
 is_floor 1
-smoothlevel 255
+smoothlevel 2
 end
