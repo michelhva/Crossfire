@@ -11,7 +11,7 @@ value 150
 editable 128
 identified 1
 magicmap brown
-name_pl bags
+name_pl desks
 client_type 51
 end
 Object close_desk
