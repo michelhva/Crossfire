@@ -33,6 +33,9 @@ end
 arch awall_3_2
 y 3
 end
+arch dungeon_magic
+y 3
+end
 arch marble
 y 4
 end
@@ -101,6 +104,10 @@ x 1
 y 3
 end
 arch awall_2_1_2
+x 1
+y 3
+end
+arch dungeon_magic
 x 1
 y 3
 end
@@ -194,6 +201,10 @@ no_pass 1
 x 2
 y 3
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch marble
 x 2
 y 4
@@ -252,6 +263,10 @@ arch awall_2_1_2
 x 3
 y 3
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch marble
 x 3
 y 4
@@ -299,6 +314,10 @@ x 4
 y 3
 end
 arch awall_2_1_2
+x 4
+y 3
+end
+arch dungeon_magic
 x 4
 y 3
 end
@@ -361,6 +380,10 @@ x 5
 y 3
 end
 arch awall_2_1_2
+x 5
+y 3
+end
+arch dungeon_magic
 x 5
 y 3
 end
@@ -427,6 +450,10 @@ x 6
 y 3
 end
 arch awall_2_1_2
+x 6
+y 3
+end
+arch dungeon_magic
 x 6
 y 3
 end
@@ -499,6 +526,10 @@ end
 arch table
 name I
 no_pass 1
+x 7
+y 3
+end
+arch dungeon_magic
 x 7
 y 3
 end
@@ -618,6 +649,10 @@ arch awall_2_1_2
 x 8
 y 3
 end
+arch dungeon_magic
+x 8
+y 3
+end
 arch marble
 x 8
 y 4
@@ -685,6 +720,10 @@ x 9
 y 3
 end
 arch awall_3_4
+x 9
+y 3
+end
+arch dungeon_magic
 x 9
 y 3
 end
