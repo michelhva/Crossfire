@@ -1,6 +1,6 @@
 Object helmet_gnarg
 name Gnarg's Orc Helmet
-face holyshield.111
+face bighorn_he.111
 msg
   This helmet good protection. From
   mighty Gnarg it is.
