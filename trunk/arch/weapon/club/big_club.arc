@@ -6,6 +6,7 @@ type 15
 face big_club.111
 color_fg brown
 material 16
+weapontype 8
 dam 20
 weight 40000
 value 20

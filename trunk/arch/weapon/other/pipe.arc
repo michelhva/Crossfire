@@ -6,6 +6,7 @@ type 15
 face pipe.111
 color_fg grey
 material 2
+weapontype 8
 dam 5
 weight 6500
 value 10

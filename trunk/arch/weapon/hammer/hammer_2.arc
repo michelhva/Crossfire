@@ -2,6 +2,7 @@ Object hammer_2
 nrof 1
 name throwing hammer
 last_sp 9
+weapontype 7
 type 15
 face hammer_2.121
 anim

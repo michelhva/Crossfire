@@ -5,6 +5,7 @@ type 15
 face hammer_1.111
 material 18
 dam 7
+weapontype 7
 weight 17500
 value 25
 editable 1024

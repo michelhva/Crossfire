@@ -2,6 +2,7 @@ Object morningstar
 nrof 1
 last_sp 11
 type 15
+weapontype 7
 face mornstar.111
 material 18
 dam 10

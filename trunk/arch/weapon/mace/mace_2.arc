@@ -5,6 +5,7 @@ last_sp 9
 type 15
 face mace_2.111
 material 18
+weapontype 7
 dam 8
 weight 17500
 value 42

@@ -4,6 +4,7 @@ name stonehammer
 last_sp 10
 type 15
 face stonehamme.111
+weapontype 7
 material 80
 dam 6
 weight 15000

@@ -5,6 +5,7 @@ type 15
 face stoneaxe.111
 material 80
 dam 6
+weapontype 7
 weight 8500
 value 12
 editable 1024

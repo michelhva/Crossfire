@@ -6,6 +6,7 @@ type 15
 face wrench.111
 color_fg grey
 material 2
+weapontype 8
 dam 3
 weight 3500
 value 10

@@ -12,6 +12,7 @@ dam 50
 material 64
 editable 5120
 attacktype 1
+weapontype 7
 magicmap brown
 name_pl Bonecrushers
 client_type 100

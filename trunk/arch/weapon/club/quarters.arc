@@ -5,6 +5,7 @@ type 15
 face quarters.111
 material 16
 dam 5
+weapontype 8
 weight 9000
 value 20
 editable 1024
