@@ -5,10 +5,10 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 25 20:16:45 1996
 endmsg
-hp 1
-sp 1
-x 45
-y 42
+width 45
+height 42
+enter_x 1
+enter_y 1
 end
 arch blocked
 end
@@ -1060,11 +1060,6 @@ arch grass
 x 6
 y 10
 end
-arch biglake_se
-name sea
-x 6
-y 10
-end
 arch grass
 x 6
 y 11
@@ -1074,11 +1069,6 @@ x 6
 y 12
 end
 arch grass
-x 6
-y 13
-end
-arch biglake_ne
-name sea
 x 6
 y 13
 end
@@ -1230,11 +1220,6 @@ x 7
 y 7
 end
 arch jungle_1
-x 7
-y 8
-end
-arch biglake_se
-name sea
 x 7
 y 8
 end
@@ -1405,11 +1390,6 @@ arch jungle_1
 x 8
 y 7
 end
-arch biglake_se
-name sea
-x 8
-y 7
-end
 arch jungle_1
 x 8
 y 8
@@ -1435,11 +1415,6 @@ x 8
 y 13
 end
 arch grass
-x 8
-y 14
-end
-arch biglake_ne
-name sea
 x 8
 y 14
 end
@@ -1547,11 +1522,6 @@ arch grass
 x 8
 y 39
 end
-arch biglake_se
-name sea
-x 8
-y 39
-end
 arch grass
 x 8
 y 40
@@ -1631,11 +1601,6 @@ arch grass
 x 9
 y 17
 end
-arch biglake_ne
-name sea
-x 9
-y 17
-end
 arch sea
 x 9
 y 18
@@ -1649,11 +1614,6 @@ x 9
 y 20
 end
 arch grass
-x 9
-y 21
-end
-arch biglake_se
-name sea
 x 9
 y 21
 end
@@ -1677,21 +1637,11 @@ arch grass
 x 9
 y 26
 end
-arch biglake_ne
-name sea
-x 9
-y 26
-end
 arch sea
 x 9
 y 27
 end
 arch grass
-x 9
-y 28
-end
-arch biglake_se
-name sea
 x 9
 y 28
 end
@@ -1751,7 +1701,7 @@ arch grass
 x 9
 y 40
 end
-arch grass
+arch sea
 x 9
 y 41
 end
@@ -1898,11 +1848,6 @@ arch brush
 x 10
 y 33
 end
-arch biglake_ne
-name sea
-x 10
-y 33
-end
 arch sea
 x 10
 y 34
@@ -1927,25 +1872,15 @@ arch grass
 x 10
 y 38
 end
-arch biglake_se
-name sea
-x 10
-y 38
-end
 arch grass
 x 10
 y 39
 end
-arch grass
+arch sea
 x 10
 y 40
 end
-arch grass
-x 10
-y 41
-end
-arch biglake_nw
-name sea
+arch sea
 x 10
 y 41
 end
@@ -2112,30 +2047,15 @@ arch grass
 x 11
 y 38
 end
-arch biglake_sw
-name sea
-x 11
-y 38
-end
-arch grass
+arch sea
 x 11
 y 39
 end
-arch grass
+arch sea
 x 11
 y 40
 end
-arch biglake_nw
-name sea
-x 11
-y 40
-end
-arch grass
-x 11
-y 41
-end
-arch biglake_se
-name sea
+arch sea
 x 11
 y 41
 end
@@ -2171,11 +2091,6 @@ x 12
 y 7
 end
 arch grass
-x 12
-y 8
-end
-arch biglake_sw
-name sea
 x 12
 y 8
 end
@@ -2295,11 +2210,6 @@ arch brush
 x 12
 y 34
 end
-arch biglake_ne
-name sea
-x 12
-y 34
-end
 arch sea
 x 12
 y 35
@@ -2324,12 +2234,7 @@ arch sea
 x 12
 y 39
 end
-arch grass
-x 12
-y 40
-end
-arch biglake_se
-name sea
+arch sea
 x 12
 y 40
 end
@@ -2504,11 +2409,6 @@ arch woods
 x 13
 y 38
 end
-arch biglake_se
-name sea
-x 13
-y 38
-end
 arch grass
 x 13
 y 39
@@ -2568,11 +2468,6 @@ arch grass
 x 14
 y 9
 end
-arch biglake_sw
-name sea
-x 14
-y 9
-end
 arch woods_2
 x 14
 y 10
@@ -2621,13 +2516,13 @@ hp 10000
 dam 0
 wc 100
 ac -100
-x 14
-y 16
 speed_left -2.600000
 attack_movement 0
 friendly 1
 sleep 0
 random_movement 1
+x 14
+y 16
 end
 arch brush
 x 14
@@ -2789,11 +2684,6 @@ x 15
 y 9
 end
 arch woods_2
-x 15
-y 10
-end
-arch biglake_sw
-name sea
 x 15
 y 10
 end
@@ -2918,11 +2808,6 @@ x 15
 y 36
 end
 arch grass
-x 15
-y 37
-end
-arch biglake_se
-name sea
 x 15
 y 37
 end
@@ -3319,11 +3204,6 @@ arch grass
 x 17
 y 37
 end
-arch biglake_sw
-name sea
-x 17
-y 37
-end
 arch grass
 x 17
 y 38
@@ -3422,11 +3302,6 @@ arch woods
 x 18
 y 15
 end
-arch biglake_nse
-name sea
-x 18
-y 15
-end
 arch grass
 x 18
 y 16
@@ -3535,11 +3410,6 @@ arch grass
 x 18
 y 40
 end
-arch biglake_sw
-name sea
-x 18
-y 40
-end
 arch grass
 x 18
 y 41
@@ -3608,11 +3478,6 @@ x 19
 y 15
 end
 arch grass
-x 19
-y 16
-end
-arch biglake_sw
-name sea
 x 19
 y 16
 end
@@ -3875,17 +3740,7 @@ arch evergreens
 x 20
 y 28
 end
-arch biglake_nw
-name sea
-x 20
-y 28
-end
 arch grass
-x 20
-y 29
-end
-arch biglake_sw
-name sea
 x 20
 y 29
 end
@@ -3969,21 +3824,11 @@ arch grass
 x 20
 y 37
 end
-arch biglake_se
-name sea
-x 20
-y 37
-end
 arch grass
 x 20
 y 38
 end
 arch grass
-x 20
-y 39
-end
-arch biglake_ne
-name sea
 x 20
 y 39
 end
@@ -4118,11 +3963,6 @@ arch mountain
 x 21
 y 27
 end
-arch biglake_nw
-name sea
-x 21
-y 27
-end
 arch sea
 x 21
 y 28
@@ -4231,11 +4071,6 @@ arch grass
 x 21
 y 41
 end
-arch biglake_ne
-name sea
-x 21
-y 41
-end
 arch sea
 x 22
 end
@@ -4287,11 +4122,6 @@ arch grass
 x 22
 y 12
 end
-arch biglake_se
-name sea
-x 22
-y 12
-end
 arch grass
 x 22
 y 13
@@ -4331,11 +4161,6 @@ x 22
 y 17
 end
 arch brush
-x 22
-y 18
-end
-arch biglake_nw
-name sea
 x 22
 y 18
 end
@@ -4407,11 +4232,6 @@ arch grass
 x 22
 y 34
 end
-arch biglake_nw
-name sea
-x 22
-y 34
-end
 arch sea
 x 22
 y 35
@@ -4475,11 +4295,6 @@ arch jungle_1
 x 23
 y 7
 end
-arch biglake_se
-name sea
-x 23
-y 7
-end
 arch jungle_1
 x 23
 y 8
@@ -4517,11 +4332,6 @@ x 23
 y 14
 end
 arch grass
-x 23
-y 14
-end
-arch biglake_ne
-name sea
 x 23
 y 14
 end
@@ -4574,9 +4384,9 @@ x 23
 y 24
 end
 arch sea
+is_floor 0
 x 23
 y 25
-is_floor 0
 end
 arch dungeon_magic
 x 23
@@ -4607,11 +4417,6 @@ x 23
 y 29
 end
 arch grass
-x 23
-y 29
-end
-arch biglake_se
-name sea
 x 23
 y 29
 end
@@ -4746,11 +4551,6 @@ arch jungle_1
 x 24
 y 10
 end
-arch biglake_ne
-name sea
-x 24
-y 10
-end
 arch dungeon_magic
 x 24
 y 11
@@ -4871,11 +4671,6 @@ arch grass
 x 24
 y 28
 end
-arch biglake_se
-name sea
-x 24
-y 28
-end
 arch grass
 x 24
 y 29
@@ -4900,11 +4695,6 @@ arch grass
 x 24
 y 34
 end
-arch biglake_ne
-name sea
-x 24
-y 34
-end
 arch dungeon_magic
 x 24
 y 35
@@ -4926,11 +4716,6 @@ x 24
 y 37
 end
 arch grass
-x 24
-y 37
-end
-arch biglake_sw
-name sea
 x 24
 y 37
 end
@@ -4981,11 +4766,6 @@ arch grass
 x 25
 y 7
 end
-arch biglake_sw
-name sea
-x 25
-y 7
-end
 arch grass
 x 25
 y 8
@@ -5003,11 +4783,6 @@ x 25
 y 11
 end
 arch grass
-x 25
-y 11
-end
-arch biglake_nes
-name sea
 x 25
 y 11
 end
@@ -5027,11 +4802,6 @@ arch brush
 x 25
 y 15
 end
-arch biglake_ne
-name sea
-x 25
-y 15
-end
 arch sea
 x 25
 y 16
@@ -5080,11 +4850,6 @@ arch grass
 x 25
 y 27
 end
-arch biglake_se
-name sea
-x 25
-y 27
-end
 arch grass
 x 25
 y 28
@@ -5114,11 +4879,6 @@ x 25
 y 34
 end
 arch grass
-x 25
-y 35
-end
-arch biglake_ne
-name sea
 x 25
 y 35
 end
@@ -5229,11 +4989,6 @@ arch grass
 x 26
 y 18
 end
-arch biglake_ne
-name sea
-x 26
-y 18
-end
 arch sea
 x 26
 y 19
@@ -5255,11 +5010,6 @@ x 26
 y 23
 end
 arch grass
-x 26
-y 24
-end
-arch biglake_se
-name sea
 x 26
 y 24
 end
@@ -5288,11 +5038,11 @@ x 26
 y 30
 end
 arch button_plate
-x 26
-y 31
 protected 2
 weight 4000000
 connected 2
+x 26
+y 31
 end
 arch grass
 x 26
@@ -5334,11 +5084,6 @@ arch grass
 x 26
 y 38
 end
-arch biglake_sw
-name sea
-x 26
-y 38
-end
 arch grass
 x 26
 y 39
@@ -5348,11 +5093,6 @@ x 26
 y 40
 end
 arch grass
-x 26
-y 41
-end
-arch biglake_nw
-name sea
 x 26
 y 41
 end
@@ -5439,21 +5179,11 @@ arch grass
 x 27
 y 20
 end
-arch grass
+arch sea
 x 27
 y 21
 end
-arch biglake_ne
-name sea
-x 27
-y 21
-end
-arch grass
-x 27
-y 22
-end
-arch biglake_se
-name sea
+arch sea
 x 27
 y 22
 end
@@ -5503,23 +5233,23 @@ y 31
 end
 arch button_plate
 face button_big.112
-x 27
-y 32
 protected 1
 value 1
 weight 4000000
 connected 1
+x 27
+y 32
 end
 arch grass
 x 27
 y 32
 end
 arch statue
-x 27
-y 32
 material 64
 weight 4000000
 can_roll 1
+x 27
+y 32
 end
 arch cobblestones
 x 27
@@ -5534,11 +5264,6 @@ x 27
 y 35
 end
 arch grass
-x 27
-y 36
-end
-arch biglake_ne
-name sea
 x 27
 y 36
 end
@@ -5602,11 +5327,6 @@ x 28
 y 8
 end
 arch grass
-x 28
-y 8
-end
-arch biglake_sw
-name sea
 x 28
 y 8
 end
@@ -5734,21 +5454,11 @@ arch grass
 x 28
 y 37
 end
-arch biglake_ne
-name sea
-x 28
-y 37
-end
 arch sea
 x 28
 y 38
 end
 arch grass
-x 28
-y 39
-end
-arch biglake_se
-name sea
 x 28
 y 39
 end
@@ -5804,11 +5514,6 @@ x 29
 y 9
 end
 arch grass
-x 29
-y 9
-end
-arch biglake_sw
-name sea
 x 29
 y 9
 end
@@ -5940,9 +5645,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 26
 sp 6
+invisible 0
 x 29
 y 37
-invisible 0
 end
 arch grass
 x 29
@@ -6019,12 +5724,7 @@ arch dungeon_magic
 x 30
 y 10
 end
-arch grass
-x 30
-y 10
-end
-arch biglake_sew
-name sea
+arch sea
 x 30
 y 10
 end
@@ -6136,9 +5836,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 27
 sp 6
+invisible 0
 x 30
 y 37
-invisible 0
 end
 arch cobblestones
 x 30
@@ -6192,11 +5892,6 @@ x 31
 y 6
 end
 arch jungle_1
-x 31
-y 7
-end
-arch biglake_se
-name sea
 x 31
 y 7
 end
@@ -6328,9 +6023,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 28
 sp 6
+invisible 0
 x 31
 y 37
-invisible 0
 end
 arch grass
 x 31
@@ -6511,9 +6206,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 29
 sp 6
+invisible 0
 x 32
 y 37
-invisible 0
 end
 arch grass
 x 32
@@ -6705,9 +6400,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 30
 sp 6
+invisible 0
 x 33
 y 37
-invisible 0
 end
 arch grass
 x 33
@@ -6761,11 +6456,6 @@ x 34
 y 6
 end
 arch woods_2
-x 34
-y 7
-end
-arch biglake_sw
-name sea
 x 34
 y 7
 end
@@ -6893,9 +6583,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 31
 sp 6
+invisible 0
 x 34
 y 37
-invisible 0
 end
 arch brush
 x 34
@@ -6918,11 +6608,6 @@ x 34
 y 40
 end
 arch grass
-x 34
-y 41
-end
-arch biglake_nw
-name sea
 x 34
 y 41
 end
@@ -6962,11 +6647,6 @@ x 35
 y 8
 end
 arch jungle_1
-x 35
-y 8
-end
-arch biglake_sw
-name sea
 x 35
 y 8
 end
@@ -7094,9 +6774,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 32
 sp 6
+invisible 0
 x 35
 y 37
-invisible 0
 end
 arch grass
 x 35
@@ -7115,11 +6795,6 @@ x 35
 y 39
 end
 arch grass
-x 35
-y 40
-end
-arch biglake_nw
-name sea
 x 35
 y 40
 end
@@ -7187,11 +6862,6 @@ x 36
 y 11
 end
 arch woods_2
-x 36
-y 11
-end
-arch biglake_sw
-name sea
 x 36
 y 11
 end
@@ -7303,9 +6973,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 33
 sp 6
+invisible 0
 x 36
 y 37
-invisible 0
 end
 arch brush
 x 36
@@ -7486,9 +7156,9 @@ arch invis_exit
 slaying rainbow/islands
 hp 34
 sp 6
+invisible 0
 x 37
 y 37
-invisible 0
 end
 arch grass
 x 37
@@ -7503,11 +7173,6 @@ x 37
 y 38
 end
 arch grass
-x 37
-y 39
-end
-arch biglake_nw
-name sea
 x 37
 y 39
 end
@@ -8543,62 +8208,62 @@ end
 arch pit_closed
 hp 34
 sp 29
-x 44
-y 5
 protected 100
 connected 100
-end
-arch invis_exit
-slaying kurte/jungle
-face jungle_1.111
-hp 15
-sp 23
 x 44
 y 5
+end
+arch invis_exit
+face jungle_1.111
+slaying kurte/jungle
+hp 15
+sp 23
 invisible 0
+x 44
+y 5
 end
 arch blocked
 x 44
 y 6
 end
 arch gate_open_1
-x 44
-y 7
 speed 0.500000
 protected 10
 connected 10
+x 44
+y 7
 end
 arch boulder
 x 44
 y 7
 end
 arch gate_closed_1
-x 44
-y 8
 speed 0.500000
 protected 1
 value 1
 connected 1
+x 44
+y 8
 end
 arch gate_closed_1
-x 44
-y 9
 speed 0.500000
 protected 2
 connected 2
+x 44
+y 9
 end
 arch gate_open_1
-x 44
-y 10
 speed 0.500000
 protected 1
 connected 1
+x 44
+y 10
 end
 arch button_plate
-x 44
-y 11
 protected 100
 connected 100
+x 44
+y 11
 end
 arch blocked
 x 44
@@ -8606,11 +8271,11 @@ y 12
 end
 arch button_small
 face button_sma.112
-x 44
-y 13
 protected 10
 value 1
 connected 10
+x 44
+y 13
 end
 arch scroll
 x 44
@@ -8736,33 +8401,6 @@ sp 22
 x 6
 y 11
 end
-More
-arch fort_2
-name Power Plant
-slaying pplant/pplant1
-hp 10
-sp 22
-x 7
-y 11
-end
-More
-arch fort_3
-name Power Plant
-slaying pplant/pplant1
-hp 10
-sp 22
-x 6
-y 12
-end
-More
-arch fort_4
-name Power Plant
-slaying pplant/pplant1
-hp 10
-sp 22
-x 7
-y 12
-end
 arch city_tower
 name Tower of Ordeal
 slaying ordeal/tower_ordeal1
@@ -8770,15 +8408,6 @@ hp 8
 sp 15
 x 13
 y 9
-end
-More
-arch city_tower_2
-name Tower of Ordeal
-slaying ordeal/tower_ordeal1
-hp 8
-sp 15
-x 13
-y 10
 end
 arch stronghold
 name Castle of Eureca
@@ -8788,78 +8417,6 @@ sp 24
 x 22
 y 30
 end
-More
-arch stronghold_2
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 23
-y 30
-end
-More
-arch stronghold_3
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 24
-y 30
-end
-More
-arch stronghold_4
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 22
-y 31
-end
-More
-arch stronghold_5
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 23
-y 31
-end
-More
-arch stronghold_6
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 24
-y 31
-end
-More
-arch stronghold_7
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 22
-y 32
-end
-More
-arch stronghold_8
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 23
-y 32
-end
-More
-arch stronghold_9
-name Castle of Eureca
-slaying castle_eureca/castle_eureca1
-hp 10
-sp 24
-x 24
-y 32
-end
 arch town_7
 name Nuernberg
 slaying nurnberg/city
@@ -8867,76 +8424,4 @@ hp 28
 sp 15
 x 27
 y 15
-end
-More
-arch town_7.2
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 28
-y 15
-end
-More
-arch town_7.3
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 29
-y 15
-end
-More
-arch town_7.4
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 27
-y 16
-end
-More
-arch town_7.5
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 28
-y 16
-end
-More
-arch town_7.6
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 29
-y 16
-end
-More
-arch town_7.7
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 27
-y 17
-end
-More
-arch town_7.8
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 28
-y 17
-end
-More
-arch town_7.9
-name Nuernberg
-slaying nurnberg/city
-hp 28
-sp 15
-x 29
-y 17
 end

@@ -3057,54 +3057,6 @@ x 10
 y 12
 type 0
 end
-More
-arch pentagram_112
-x 11
-y 12
-type 0
-end
-More
-arch pentagram_113
-x 12
-y 12
-type 0
-end
-More
-arch pentagram_121
-x 10
-y 13
-type 0
-end
-More
-arch pentagram_122
-x 11
-y 13
-type 0
-end
-More
-arch pentagram_123
-x 12
-y 13
-type 0
-end
-More
-arch pentagram_131
-x 10
-y 14
-type 0
-end
-More
-arch pentagram_132
-x 11
-y 14
-type 0
-end
-More
-arch pentagram_133
-x 12
-y 14
-type 0
-end
 arch unicorn
 name Kurte
 msg
@@ -3161,15 +3113,6 @@ y 4
 friendly 1
 unaggressive 0
 end
-More
-arch unicorn_2
-name Kurte
-Con 100
-hp 20000
-x 12
-y 4
-friendly 1
-end
 arch titan
 name Kurte
 Con 100
@@ -3180,84 +3123,4 @@ y 10
 friendly 1
 can_use_armour 0
 can_use_weapon 0
-end
-More
-arch titan_2
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 19
-y 10
-friendly 1
-end
-More
-arch titan_3
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 19
-y 9
-friendly 1
-end
-More
-arch titan_4
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 20
-y 9
-friendly 1
-end
-More
-arch titan_5
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 21
-y 9
-friendly 1
-end
-More
-arch titan_6
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 21
-y 10
-friendly 1
-end
-More
-arch titan_7
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 21
-y 11
-friendly 1
-end
-More
-arch titan_8
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 20
-y 11
-friendly 1
-end
-More
-arch titan_9
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 19
-y 11
-friendly 1
 end

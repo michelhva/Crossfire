@@ -3234,117 +3234,12 @@ arch head
 name titan's head
 end
 end
-More
-arch titan_2
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 6
-y 11
-friendly 1
-end
-More
-arch titan_3
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 6
-y 10
-friendly 1
-end
-More
-arch titan_4
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 7
-y 10
-friendly 1
-end
-More
-arch titan_5
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 8
-y 10
-friendly 1
-end
-More
-arch titan_6
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 8
-y 11
-friendly 1
-end
-More
-arch titan_7
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 8
-y 12
-friendly 1
-end
-More
-arch titan_8
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 7
-y 12
-friendly 1
-end
-More
-arch titan_9
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 6
-y 12
-friendly 1
-end
 arch giant
 hp 50
 maxhp 50
 dam 1
 x 9
 y 11
-friendly 1
-end
-More
-arch giant_2
-hp 50
-maxhp 50
-dam 1
-x 9
-y 12
 friendly 1
 end
 arch gaelotroll
@@ -3357,70 +3252,5 @@ wc 20
 x 10
 y 10
 run_away 0
-friendly 1
-end
-More
-arch gaelotroll_2
-name gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 11
-y 10
-friendly 1
-end
-More
-arch gaelotroll_3
-name gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 10
-y 11
-friendly 1
-end
-More
-arch gaelotroll_4
-name gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 11
-y 11
-friendly 1
-end
-More
-arch gaelotroll_5
-name gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 10
-y 12
-friendly 1
-end
-More
-arch gaelotroll_6
-name gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 11
-y 12
 friendly 1
 end

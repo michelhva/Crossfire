@@ -2393,123 +2393,33 @@ arch big_galleon
 x 2
 y 2
 end
-More
-arch big_galleon_2
-x 3
-y 2
-end
-More
-arch big_galleon_3
-x 2
-y 3
-end
-More
-arch big_galleon_4
-x 3
-y 3
-end
 arch big_galleon
 x 2
 y 5
 end
-More
-arch big_galleon_2
-x 3
-y 5
-end
-More
-arch big_galleon_3
-x 2
-y 6
-end
-More
-arch big_galleon_4
-x 3
-y 6
-end
 arch barn
 x 4
 y 11
 end
-More
-arch barn_2
-x 5
-y 11
-end
-More
-arch barn_3
-x 4
-y 12
-end
-More
-arch barn_4
-x 5
-y 12
-end
 arch longship
 x 6
-y 2
-end
-More
-arch longship_2
-x 7
 y 2
 end
 arch longship
 x 6
 y 4
 end
-More
-arch longship_2
-x 7
-y 4
-end
 arch longship
 x 6
 y 6
 end
-More
-arch longship_2
-x 7
-y 6
-end
 arch barn
 x 6
 y 11
 end
-More
-arch barn_2
-x 7
-y 11
-end
-More
-arch barn_3
-x 6
-y 12
-end
-More
-arch barn_4
-x 7
-y 12
-end
 arch barn
 x 8
 y 11
-end
-More
-arch barn_2
-x 9
-y 11
-end
-More
-arch barn_3
-x 8
-y 12
-end
-More
-arch barn_4
-x 9
-y 12
 end
 arch rowboat
 hp 1
@@ -2517,67 +2427,25 @@ sp 1
 x 10
 y 2
 end
-More
-arch rowboat_2
-hp 1
-sp 1
-x 11
-y 2
-end
 arch rowboat
 x 10
-y 3
-end
-More
-arch rowboat_2
-x 11
 y 3
 end
 arch rowboat
 x 10
 y 4
 end
-More
-arch rowboat_2
-x 11
-y 4
-end
 arch rowboat
 x 10
 y 5
 end
-More
-arch rowboat_2
-x 11
-y 5
-end
 arch rowboat
 x 10
-y 6
-end
-More
-arch rowboat_2
-x 11
 y 6
 end
 arch s_ship
 x 14
 y 2
-end
-More
-arch s_ship2
-x 15
-y 2
-end
-More
-arch s_ship3
-x 14
-y 3
-end
-More
-arch s_ship4
-x 15
-y 3
 end
 arch s_ship
 name To Nurnberg
@@ -2587,161 +2455,39 @@ sp 26
 x 14
 y 5
 end
-More
-arch s_ship2
-name To Nurnberg
-slaying nurnberg/city
-hp 1
-sp 26
-x 15
-y 5
-end
-More
-arch s_ship3
-name To Nurnberg
-slaying nurnberg/city
-hp 1
-sp 26
-x 14
-y 6
-end
-More
-arch s_ship4
-name To Nurnberg
-slaying nurnberg/city
-hp 1
-sp 26
-x 15
-y 6
-end
 arch fishboat
 x 18
-y 2
-end
-More
-arch fishboat_2
-x 19
 y 2
 end
 arch fishboat
 x 18
 y 3
 end
-More
-arch fishboat_2
-x 19
-y 3
-end
 arch fishboat
 x 18
 y 5
 end
-More
-arch fishboat_2
-x 19
-y 5
-end
 arch fishboat
 x 18
-y 6
-end
-More
-arch fishboat_2
-x 19
 y 6
 end
 arch big_galleon
 x 22
 y 3
 end
-More
-arch big_galleon_2
-x 23
-y 3
-end
-More
-arch big_galleon_3
-x 22
-y 4
-end
-More
-arch big_galleon_4
-x 23
-y 4
-end
 arch big_galleon
 x 22
 y 5
 end
-More
-arch big_galleon_2
-x 23
-y 5
-end
-More
-arch big_galleon_3
-x 22
-y 6
-end
-More
-arch big_galleon_4
-x 23
-y 6
-end
 arch barn
 x 23
 y 11
-end
-More
-arch barn_2
-x 24
-y 11
-end
-More
-arch barn_3
-x 23
-y 12
-end
-More
-arch barn_4
-x 24
-y 12
 end
 arch barn
 x 25
 y 11
 end
-More
-arch barn_2
-x 26
-y 11
-end
-More
-arch barn_3
-x 25
-y 12
-end
-More
-arch barn_4
-x 26
-y 12
-end
 arch barn
 x 27
 y 11
-end
-More
-arch barn_2
-x 28
-y 11
-end
-More
-arch barn_3
-x 27
-y 12
-end
-More
-arch barn_4
-x 28
-y 12
 end

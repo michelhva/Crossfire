@@ -7878,36 +7878,6 @@ arch key2
 slaying 1
 end
 end
-More
-arch big_elec_2
-hp 3500
-x 5
-y 5
-end
-More
-arch big_elec_3
-hp 3500
-x 4
-y 6
-end
-More
-arch big_elec_4
-hp 3500
-x 5
-y 6
-end
-More
-arch big_elec_5
-hp 3500
-x 4
-y 7
-end
-More
-arch big_elec_6
-hp 3500
-x 5
-y 7
-end
 arch gaelotroll
 x 4
 y 19
@@ -7916,41 +7886,6 @@ arch key2
 slaying 1
 end
 end
-More
-arch gaelotroll_2
-name gaelotroll
-hp 3000
-x 5
-y 19
-end
-More
-arch gaelotroll_3
-name gaelotroll
-hp 3000
-x 4
-y 20
-end
-More
-arch gaelotroll_4
-name gaelotroll
-hp 3000
-x 5
-y 20
-end
-More
-arch gaelotroll_5
-name gaelotroll
-hp 3000
-x 4
-y 21
-end
-More
-arch gaelotroll_6
-name gaelotroll
-hp 3000
-x 5
-y 21
-end
 arch baslic
 x 7
 y 5
@@ -7958,36 +7893,6 @@ carrying 100
 arch key2
 slaying 1
 end
-end
-More
-arch baslic_2
-hp 1200
-x 8
-y 5
-end
-More
-arch baslic_3
-hp 1200
-x 9
-y 5
-end
-More
-arch baslic_4
-hp 1200
-x 7
-y 6
-end
-More
-arch baslic_5
-hp 1200
-x 8
-y 6
-end
-More
-arch baslic_6
-hp 1200
-x 9
-y 6
 end
 arch big_dragon
 x 10
@@ -8000,36 +7905,6 @@ arch key2
 slaying 1
 end
 end
-More
-arch big_dragon_2
-hp 3500
-x 11
-y 23
-end
-More
-arch big_dragon_3
-hp 3500
-x 12
-y 23
-end
-More
-arch big_dragon_4
-hp 3500
-x 10
-y 24
-end
-More
-arch big_dragon_5
-hp 3500
-x 11
-y 24
-end
-More
-arch big_dragon_6
-hp 3500
-x 12
-y 24
-end
 arch chinese_dragon
 x 11
 y 5
@@ -8038,24 +7913,6 @@ arch key2
 slaying 1
 end
 end
-More
-arch chinese_dragon_2
-hp 1000
-x 12
-y 5
-end
-More
-arch chinese_dragon_3
-hp 1000
-x 11
-y 6
-end
-More
-arch chinese_dragon_4
-hp 1000
-x 12
-y 6
-end
 arch titan
 x 11
 y 20
@@ -8063,52 +7920,4 @@ carrying 100
 arch key2
 slaying 1
 end
-end
-More
-arch titan_2
-hp 4000
-x 10
-y 20
-end
-More
-arch titan_3
-hp 4000
-x 10
-y 19
-end
-More
-arch titan_4
-hp 4000
-x 11
-y 19
-end
-More
-arch titan_5
-hp 4000
-x 12
-y 19
-end
-More
-arch titan_6
-hp 4000
-x 12
-y 20
-end
-More
-arch titan_7
-hp 4000
-x 12
-y 21
-end
-More
-arch titan_8
-hp 4000
-x 11
-y 21
-end
-More
-arch titan_9
-hp 4000
-x 10
-y 21
 end

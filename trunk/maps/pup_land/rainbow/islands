@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 30 05:05:08 1996
 endmsg
-x 35
-y 35
+width 35
+height 35
 end
 arch woods
 end
@@ -282,18 +282,18 @@ x 1
 y 11
 end
 arch sea
+speed_left -0.900000
 x 1
 y 11
-speed_left -0.900000
 end
 arch grass
 x 1
 y 12
 end
 arch sea
+speed_left -0.900000
 x 1
 y 12
-speed_left -0.900000
 end
 arch sea
 x 1
@@ -459,27 +459,27 @@ x 2
 y 6
 end
 arch sea
+speed_left -0.900000
 x 2
 y 6
-speed_left -0.900000
 end
 arch grass
 x 2
 y 7
 end
 arch sea
+speed_left -0.900000
 x 2
 y 7
-speed_left -0.900000
 end
 arch grass
 x 2
 y 8
 end
 arch sea
+speed_left -0.900000
 x 2
 y 8
-speed_left -0.900000
 end
 arch sea
 x 2
@@ -831,11 +831,6 @@ arch grass
 x 4
 y 13
 end
-arch biglake_se
-name sea
-x 4
-y 13
-end
 arch grass
 x 4
 y 14
@@ -849,11 +844,6 @@ x 4
 y 16
 end
 arch grass
-x 4
-y 17
-end
-arch biglake_ne
-name sea
 x 4
 y 17
 end
@@ -968,11 +958,6 @@ arch grass
 x 5
 y 8
 end
-arch biglake_se
-name sea
-x 5
-y 8
-end
 arch grass
 x 5
 y 9
@@ -1030,11 +1015,6 @@ x 5
 y 22
 end
 arch grass
-x 5
-y 23
-end
-arch biglake_ne
-name sea
 x 5
 y 23
 end
@@ -1189,11 +1169,6 @@ arch grass
 x 6
 y 24
 end
-arch biglake_ne
-name sea
-x 6
-y 24
-end
 arch sea
 x 6
 y 25
@@ -1249,10 +1224,9 @@ arch brush
 x 7
 y 2
 end
-arch biglake_ne
-name sea
+arch dungeon_magic
 x 7
-y 2
+y 3
 end
 arch sea
 x 7
@@ -1282,11 +1256,6 @@ arch grass
 x 7
 y 7
 end
-arch biglake_se
-name sea
-x 7
-y 7
-end
 arch grass
 x 7
 y 8
@@ -1299,12 +1268,7 @@ arch dungeon_magic
 x 7
 y 10
 end
-arch grass
-x 7
-y 10
-end
-arch biglake_nw
-name sea
+arch sea
 x 7
 y 10
 end
@@ -1357,11 +1321,6 @@ x 7
 y 16
 end
 arch grass
-x 7
-y 17
-end
-arch biglake_sw
-name sea
 x 7
 y 17
 end
@@ -1394,11 +1353,6 @@ x 7
 y 24
 end
 arch grass
-x 7
-y 25
-end
-arch biglake_ne
-name sea
 x 7
 y 25
 end
@@ -1481,11 +1435,6 @@ arch grass
 x 8
 y 7
 end
-arch biglake_sw
-name sea
-x 8
-y 7
-end
 arch grass
 x 8
 y 8
@@ -1494,12 +1443,7 @@ arch dungeon_magic
 x 8
 y 9
 end
-arch grass
-x 8
-y 9
-end
-arch biglake_nw
-name sea
+arch sea
 x 8
 y 9
 end
@@ -1507,12 +1451,7 @@ arch dungeon_magic
 x 8
 y 10
 end
-arch grass
-x 8
-y 10
-end
-arch biglake_se
-name sea
+arch sea
 x 8
 y 10
 end
@@ -1529,11 +1468,6 @@ x 8
 y 13
 end
 arch swamp
-x 8
-y 14
-end
-arch biglake_ne
-name sea
 x 8
 y 14
 end
@@ -1562,11 +1496,6 @@ x 8
 y 19
 end
 arch grass
-x 8
-y 20
-end
-arch biglake_sw
-name sea
 x 8
 y 20
 end
@@ -1645,11 +1574,6 @@ arch brush
 x 9
 y 3
 end
-arch biglake_ne
-name sea
-x 9
-y 3
-end
 arch sea
 x 9
 y 4
@@ -1690,12 +1614,7 @@ arch dungeon_magic
 x 9
 y 9
 end
-arch grass
-x 9
-y 9
-end
-arch biglake_se
-name sea
+arch sea
 x 9
 y 9
 end
@@ -1755,11 +1674,6 @@ arch grass
 x 9
 y 21
 end
-arch biglake_sw
-name sea
-x 9
-y 21
-end
 arch grass
 x 9
 y 22
@@ -1851,11 +1765,6 @@ arch woods
 x 10
 y 7
 end
-arch biglake_se
-name sea
-x 10
-y 7
-end
 arch grass
 x 10
 y 8
@@ -1900,11 +1809,6 @@ arch grass
 x 10
 y 14
 end
-arch biglake_nw
-name sea
-x 10
-y 14
-end
 arch dungeon_magic
 x 10
 y 15
@@ -1970,11 +1874,6 @@ x 10
 y 22
 end
 arch grass
-x 10
-y 23
-end
-arch biglake_sw
-name sea
 x 10
 y 23
 end
@@ -1987,11 +1886,6 @@ x 10
 y 25
 end
 arch grass
-x 10
-y 26
-end
-arch biglake_nw
-name sea
 x 10
 y 26
 end
@@ -2106,11 +2000,6 @@ arch woods
 x 11
 y 12
 end
-arch biglake_nw
-name sea
-x 11
-y 12
-end
 arch sea
 x 11
 y 13
@@ -2135,11 +2024,6 @@ arch pstone_1
 x 11
 y 16
 end
-arch biglake_se
-name sea
-x 11
-y 16
-end
 arch pstone_1
 x 11
 y 17
@@ -2157,11 +2041,6 @@ x 11
 y 20
 end
 arch pstone_1
-x 11
-y 21
-end
-arch biglake_ne
-name sea
 x 11
 y 21
 end
@@ -2217,11 +2096,6 @@ arch grass
 x 11
 y 30
 end
-arch biglake_ne
-name sea
-x 11
-y 30
-end
 arch sea
 x 11
 y 31
@@ -2269,11 +2143,6 @@ arch grass
 x 12
 y 6
 end
-arch biglake_se
-name sea
-x 12
-y 6
-end
 arch grass
 x 12
 y 7
@@ -2306,11 +2175,6 @@ arch woods
 x 12
 y 11
 end
-arch biglake_nw
-name sea
-x 12
-y 11
-end
 arch dungeon_magic
 x 12
 y 12
@@ -2336,11 +2200,6 @@ x 12
 y 14
 end
 arch pstone_1
-x 12
-y 15
-end
-arch biglake_se
-name sea
 x 12
 y 15
 end
@@ -2376,11 +2235,6 @@ arch pstone_1
 x 12
 y 23
 end
-arch biglake_ne
-name sea
-x 12
-y 23
-end
 arch dungeon_magic
 x 12
 y 24
@@ -2414,11 +2268,6 @@ x 12
 y 27
 end
 arch grass
-x 12
-y 28
-end
-arch biglake_se
-name sea
 x 12
 y 28
 end
@@ -2513,11 +2362,6 @@ arch grass
 x 13
 y 11
 end
-arch biglake_ne
-name sea
-x 13
-y 11
-end
 arch dungeon_magic
 x 13
 y 12
@@ -2531,11 +2375,6 @@ x 13
 y 13
 end
 arch pstone_1
-x 13
-y 14
-end
-arch biglake_se
-name sea
 x 13
 y 14
 end
@@ -2579,11 +2418,6 @@ arch pstone_1
 x 13
 y 24
 end
-arch biglake_ne
-name sea
-x 13
-y 24
-end
 arch sea
 x 13
 y 25
@@ -2613,11 +2447,6 @@ x 13
 y 30
 end
 arch grass
-x 13
-y 31
-end
-arch biglake_ne
-name sea
 x 13
 y 31
 end
@@ -2661,11 +2490,6 @@ x 14
 y 5
 end
 arch grass
-x 14
-y 6
-end
-arch biglake_sw
-name sea
 x 14
 y 6
 end
@@ -2789,11 +2613,6 @@ arch grass
 x 14
 y 28
 end
-arch biglake_sw
-name sea
-x 14
-y 28
-end
 arch grass
 x 14
 y 29
@@ -2858,11 +2677,6 @@ x 15
 y 8
 end
 arch grass
-x 15
-y 9
-end
-arch biglake_sw
-name sea
 x 15
 y 9
 end
@@ -2886,11 +2700,6 @@ arch pstone_1
 x 15
 y 13
 end
-arch biglake_se
-name sea
-x 15
-y 13
-end
 arch pstone_1
 x 15
 y 14
@@ -2935,12 +2744,7 @@ arch dungeon_magic
 x 15
 y 24
 end
-arch pstone_1
-x 15
-y 24
-end
-arch biglake_nw
-name sea
+arch sea
 x 15
 y 24
 end
@@ -3111,12 +2915,11 @@ arch pstone_1
 x 16
 y 21
 end
-arch pstone_1
+arch dungeon_magic
 x 16
 y 22
 end
-arch biglake_nw
-name sea
+arch sea
 x 16
 y 22
 end
@@ -3136,11 +2939,6 @@ arch woods
 x 16
 y 25
 end
-arch biglake_se
-name sea
-x 16
-y 25
-end
 arch grass
 x 16
 y 26
@@ -3150,11 +2948,6 @@ x 16
 y 26
 end
 arch woods
-x 16
-y 27
-end
-arch biglake_ne
-name sea
 x 16
 y 27
 end
@@ -3237,21 +3030,11 @@ arch grass
 x 17
 y 6
 end
-arch biglake_se
-name sea
-x 17
-y 6
-end
 arch grass
 x 17
 y 7
 end
 arch grass
-x 17
-y 8
-end
-arch biglake_ne
-name sea
 x 17
 y 8
 end
@@ -3305,21 +3088,20 @@ y 19
 end
 arch invis_exit
 name sand
-slaying shore
 face pstone_1.111
+slaying shore
 hp 7
 sp 1
-x 17
-y 20
 invisible 0
 is_floor 1
+x 17
+y 20
 end
-arch pstone_1
+arch dungeon_magic
 x 17
 y 21
 end
-arch biglake_new
-name sea
+arch sea
 x 17
 y 21
 end
@@ -3372,11 +3154,6 @@ x 17
 y 28
 end
 arch grass
-x 17
-y 29
-end
-arch biglake_sw
-name sea
 x 17
 y 29
 end
@@ -3463,11 +3240,6 @@ arch grass
 x 18
 y 10
 end
-arch biglake_ne
-name sea
-x 18
-y 10
-end
 arch sea
 x 18
 y 11
@@ -3527,14 +3299,17 @@ arch pstone_1
 x 18
 y 22
 end
-arch pstone_1
+arch dungeon_magic
 x 18
 y 23
 end
-arch biglake_ne
-name sea
+arch sea
 x 18
 y 23
+end
+arch dungeon_magic
+x 18
+y 24
 end
 arch dungeon_magic
 x 18
@@ -3633,11 +3408,6 @@ arch grass
 x 19
 y 3
 end
-arch biglake_nw
-name sea
-x 19
-y 3
-end
 arch sea
 x 19
 y 4
@@ -3674,11 +3444,6 @@ arch grass
 x 19
 y 11
 end
-arch biglake_ne
-name sea
-x 19
-y 11
-end
 arch dungeon_magic
 x 19
 y 12
@@ -3688,11 +3453,6 @@ x 19
 y 12
 end
 arch pstone_1
-x 19
-y 13
-end
-arch biglake_sw
-name sea
 x 19
 y 13
 end
@@ -3870,12 +3630,7 @@ arch dungeon_magic
 x 20
 y 12
 end
-arch grass
-x 20
-y 12
-end
-arch biglake_ne
-name sea
+arch sea
 x 20
 y 12
 end
@@ -3892,11 +3647,6 @@ x 20
 y 14
 end
 arch pstone_1
-x 20
-y 14
-end
-arch biglake_sw
-name sea
 x 20
 y 14
 end
@@ -3932,12 +3682,11 @@ arch pstone_1
 x 20
 y 22
 end
-arch pstone_1
+arch dungeon_magic
 x 20
 y 23
 end
-arch biglake_nw
-name sea
+arch sea
 x 20
 y 23
 end
@@ -3950,11 +3699,6 @@ x 20
 y 24
 end
 arch woods
-x 20
-y 25
-end
-arch biglake_sw
-name sea
 x 20
 y 25
 end
@@ -3966,12 +3710,11 @@ arch jungle_1
 x 20
 y 26
 end
-arch woods
+arch dungeon_magic
 x 20
 y 27
 end
-arch biglake_nw
-name sea
+arch sea
 x 20
 y 27
 end
@@ -3984,11 +3727,6 @@ x 20
 y 28
 end
 arch grass
-x 20
-y 29
-end
-arch biglake_se
-name sea
 x 20
 y 29
 end
@@ -4038,11 +3776,6 @@ arch grass
 x 21
 y 3
 end
-arch biglake_ne
-name sea
-x 21
-y 3
-end
 arch sea
 x 21
 y 4
@@ -4056,11 +3789,6 @@ x 21
 y 5
 end
 arch grass
-x 21
-y 6
-end
-arch biglake_sw
-name sea
 x 21
 y 6
 end
@@ -4101,11 +3829,6 @@ x 21
 y 14
 end
 arch pstone_1
-x 21
-y 15
-end
-arch biglake_sw
-name sea
 x 21
 y 15
 end
@@ -4141,12 +3864,11 @@ arch pstone_1
 x 21
 y 21
 end
-arch pstone_1
+arch dungeon_magic
 x 21
 y 22
 end
-arch biglake_nw
-name sea
+arch sea
 x 21
 y 22
 end
@@ -4225,11 +3947,6 @@ arch grass
 x 22
 y 4
 end
-arch biglake_ne
-name sea
-x 22
-y 4
-end
 arch dungeon_magic
 x 22
 y 5
@@ -4270,11 +3987,6 @@ arch grass
 x 22
 y 12
 end
-arch biglake_nw
-name sea
-x 22
-y 12
-end
 arch sea
 x 22
 y 13
@@ -4299,11 +4011,6 @@ arch pstone_1
 x 22
 y 17
 end
-arch biglake_sw
-name sea
-x 22
-y 17
-end
 arch pstone_1
 x 22
 y 18
@@ -4316,12 +4023,11 @@ arch pstone_1
 x 22
 y 20
 end
-arch pstone_1
+arch dungeon_magic
 x 22
 y 21
 end
-arch biglake_nw
-name sea
+arch sea
 x 22
 y 21
 end
@@ -4424,11 +4130,6 @@ arch grass
 x 23
 y 7
 end
-arch biglake_sw
-name sea
-x 23
-y 7
-end
 arch grass
 x 23
 y 8
@@ -4438,11 +4139,6 @@ x 23
 y 9
 end
 arch grass
-x 23
-y 10
-end
-arch biglake_nw
-name sea
 x 23
 y 10
 end
@@ -4510,21 +4206,11 @@ arch pstone_1
 x 23
 y 22
 end
-arch biglake_se
-name sea
-x 23
-y 22
-end
 arch dungeon_magic
 x 23
 y 23
 end
 arch pstone_1
-x 23
-y 23
-end
-arch biglake_ne
-name sea
 x 23
 y 23
 end
@@ -4577,11 +4263,6 @@ x 23
 y 30
 end
 arch grass
-x 23
-y 31
-end
-arch biglake_nw
-name sea
 x 23
 y 31
 end
@@ -4625,11 +4306,6 @@ x 24
 y 4
 end
 arch grass
-x 24
-y 5
-end
-arch biglake_ne
-name sea
 x 24
 y 5
 end
@@ -4711,17 +4387,17 @@ y 15
 end
 arch mover_3
 maxhp 1
-x 24
-y 15
 speed 1.000000
 speed_left -1.290000
 level 1
 attacktype 1
-end
-arch sea
 x 24
 y 15
+end
+arch sea
 no_pass 0
+x 24
+y 15
 end
 arch dungeon_magic
 x 24
@@ -4729,15 +4405,15 @@ y 16
 end
 arch mover_1
 maxhp 1
-x 24
-y 16
 level 1
 attacktype 1
-end
-arch sea
 x 24
 y 16
+end
+arch sea
 no_pass 0
+x 24
+y 16
 end
 arch dungeon_magic
 x 24
@@ -4745,15 +4421,15 @@ y 17
 end
 arch mover_1
 maxhp 1
-x 24
-y 17
 level 1
 attacktype 1
-end
-arch sea
 x 24
 y 17
+end
+arch sea
 no_pass 0
+x 24
+y 17
 end
 arch dungeon_magic
 x 24
@@ -4761,15 +4437,15 @@ y 18
 end
 arch mover_1
 maxhp 1
-x 24
-y 18
 level 1
 attacktype 1
-end
-arch sea
 x 24
 y 18
+end
+arch sea
 no_pass 0
+x 24
+y 18
 end
 arch dungeon_magic
 x 24
@@ -4889,20 +4565,15 @@ arch invis_exit
 slaying /pup_land/world
 hp 28
 sp 36
-x 25
-y 5
 invisible 0
+x 25
+y 5
 end
 arch grass
 x 25
 y 5
 end
 arch grass
-x 25
-y 6
-end
-arch biglake_ne
-name sea
 x 25
 y 6
 end
@@ -4911,11 +4582,6 @@ x 25
 y 7
 end
 arch grass
-x 25
-y 8
-end
-arch biglake_se
-name sea
 x 25
 y 8
 end
@@ -4935,11 +4601,6 @@ arch grass
 x 25
 y 12
 end
-arch biglake_ne
-name sea
-x 25
-y 12
-end
 arch sea
 x 25
 y 13
@@ -4949,37 +4610,37 @@ x 25
 y 14
 end
 arch mover_5
+level 1
+attacktype 1
 x 25
 y 15
-level 1
-attacktype 1
 end
 arch sea
+no_pass 0
 x 25
 y 15
-no_pass 0
 end
 arch mover_5
-x 25
-y 16
 level 1
 attacktype 1
-end
-arch sea
 x 25
 y 16
+end
+arch sea
 no_pass 0
+x 25
+y 16
 end
 arch mover_5
-x 25
-y 17
 level 1
 attacktype 1
-end
-arch sea
 x 25
 y 17
+end
+arch sea
 no_pass 0
+x 25
+y 17
 end
 arch dungeon_magic
 x 25
@@ -4987,15 +4648,15 @@ y 18
 end
 arch mover_3
 maxhp 1
-x 25
-y 18
 level 1
 attacktype 1
-end
-arch sea
 x 25
 y 18
+end
+arch sea
 no_pass 0
+x 25
+y 18
 end
 arch dungeon_magic
 x 25
@@ -5006,11 +4667,6 @@ x 25
 y 19
 end
 arch pstone_1
-x 25
-y 20
-end
-arch biglake_se
-name sea
 x 25
 y 20
 end
@@ -5022,12 +4678,11 @@ arch grass
 x 25
 y 22
 end
-arch pstone_1
+arch dungeon_magic
 x 25
 y 23
 end
-arch biglake_new
-name sea
+arch sea
 x 25
 y 23
 end
@@ -5110,9 +4765,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 29
 sp 36
+invisible 0
 x 26
 y 5
-invisible 0
 end
 arch grass
 x 26
@@ -5154,11 +4809,6 @@ arch grass
 x 26
 y 14
 end
-arch biglake_ne
-name sea
-x 26
-y 14
-end
 arch sea
 x 26
 y 15
@@ -5176,9 +4826,9 @@ x 26
 y 18
 end
 arch sea
+no_pass 0
 x 26
 y 18
-no_pass 0
 end
 arch invis_exit
 slaying l_hB
@@ -5215,11 +4865,6 @@ arch pstone_1
 x 26
 y 24
 end
-arch biglake_ne
-name sea
-x 26
-y 24
-end
 arch sea
 x 26
 y 25
@@ -5244,12 +4889,7 @@ arch dungeon_magic
 x 26
 y 29
 end
-arch grass
-x 26
-y 29
-end
-arch biglake_sw
-name sea
+arch sea
 x 26
 y 29
 end
@@ -5300,9 +4940,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 30
 sp 36
+invisible 0
 x 27
 y 5
-invisible 0
 end
 arch cobblestones
 x 27
@@ -5352,12 +4992,11 @@ arch grass
 x 27
 y 16
 end
-arch grass
+arch dungeon_magic
 x 27
 y 17
 end
-arch biglake_ne
-name sea
+arch sea
 x 27
 y 17
 end
@@ -5413,12 +5052,7 @@ arch dungeon_magic
 x 27
 y 29
 end
-arch pstone_1
-x 27
-y 29
-end
-arch biglake_ne
-name sea
+arch sea
 x 27
 y 29
 end
@@ -5477,9 +5111,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 31
 sp 36
+invisible 0
 x 28
 y 5
-invisible 0
 end
 arch grass
 x 28
@@ -5639,9 +5273,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 32
 sp 36
+invisible 0
 x 29
 y 5
-invisible 0
 end
 arch grass
 x 29
@@ -5687,11 +5321,6 @@ arch grass
 x 29
 y 15
 end
-arch biglake_nw
-name sea
-x 29
-y 15
-end
 arch sea
 x 29
 y 16
@@ -5713,11 +5342,6 @@ x 29
 y 19
 end
 arch pstone_1
-x 29
-y 20
-end
-arch biglake_sw
-name sea
 x 29
 y 20
 end
@@ -5758,11 +5382,6 @@ x 29
 y 29
 end
 arch pstone_1
-x 29
-y 30
-end
-arch biglake_nw
-name sea
 x 29
 y 30
 end
@@ -5809,9 +5428,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 33
 sp 36
+invisible 0
 x 30
 y 5
-invisible 0
 end
 arch brush
 x 30
@@ -5842,11 +5461,6 @@ x 30
 y 11
 end
 arch grass
-x 30
-y 12
-end
-arch biglake_nw
-name sea
 x 30
 y 12
 end
@@ -5894,11 +5508,6 @@ arch pstone_1
 x 30
 y 22
 end
-arch biglake_sw
-name sea
-x 30
-y 22
-end
 arch pstone_1
 x 30
 y 23
@@ -5920,11 +5529,6 @@ x 30
 y 27
 end
 arch pstone_1
-x 30
-y 28
-end
-arch biglake_nw
-name sea
 x 30
 y 28
 end
@@ -5979,9 +5583,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 34
 sp 36
+invisible 0
 x 31
 y 5
-invisible 0
 end
 arch woods
 x 31
@@ -6004,11 +5608,6 @@ x 31
 y 9
 end
 arch grass
-x 31
-y 10
-end
-arch biglake_nw
-name sea
 x 31
 y 10
 end
@@ -6139,9 +5738,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 35
 sp 36
+invisible 0
 x 32
 y 5
-invisible 0
 end
 arch brush
 x 32
@@ -6160,11 +5759,6 @@ x 32
 y 8
 end
 arch grass
-x 32
-y 9
-end
-arch biglake_nw
-name sea
 x 32
 y 9
 end
@@ -6303,9 +5897,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 36
 sp 36
+invisible 0
 x 33
 y 5
-invisible 0
 end
 arch brush
 x 33
@@ -6458,9 +6052,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 37
 sp 36
+invisible 0
 x 34
 y 5
-invisible 0
 end
 arch brush
 x 34
@@ -6475,11 +6069,6 @@ x 34
 y 7
 end
 arch grass
-x 34
-y 8
-end
-arch biglake_nw
-name sea
 x 34
 y 8
 end
@@ -6597,12 +6186,4 @@ hp 7
 sp 14
 x 17
 y 16
-end
-More
-arch tower_b
-slaying station
-hp 7
-sp 14
-x 17
-y 17
 end

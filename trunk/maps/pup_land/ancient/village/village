@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri May 17 21:10:10 1996
 endmsg
-x 30
-y 30
+width 30
+height 30
 end
 arch pstone_2
 end
@@ -225,10 +225,6 @@ x 1
 y 29
 end
 arch pstone_1
-x 2
-end
-arch biglake_sw
-name sea
 x 2
 end
 arch pstone_2
@@ -864,11 +860,6 @@ arch sea
 x 6
 end
 arch pstone_1
-x 6
-y 1
-end
-arch biglake_sw
-name sea
 x 6
 y 1
 end
@@ -1721,11 +1712,6 @@ arch pstone_1
 x 11
 y 2
 end
-arch biglake_sw
-name sea
-x 11
-y 2
-end
 arch pstone_1
 x 11
 y 3
@@ -2314,11 +2300,6 @@ arch pstone_1
 x 15
 y 2
 end
-arch biglake_se
-name sea
-x 15
-y 2
-end
 arch pstone_1
 x 15
 y 3
@@ -2578,11 +2559,6 @@ arch sea
 x 17
 end
 arch pstone_1
-x 17
-y 1
-end
-arch biglake_se
-name sea
 x 17
 y 1
 end
@@ -3008,11 +2984,6 @@ arch sea
 x 20
 end
 arch pstone_1
-x 20
-y 1
-end
-arch biglake_sw
-name sea
 x 20
 y 1
 end
@@ -3627,11 +3598,6 @@ arch pstone_1
 x 24
 y 7
 end
-arch biglake_nw
-name sea
-x 24
-y 7
-end
 arch sea
 x 24
 y 8
@@ -3649,11 +3615,6 @@ x 24
 y 11
 end
 arch pstone_1
-x 24
-y 12
-end
-arch biglake_sw
-name sea
 x 24
 y 12
 end
@@ -3692,11 +3653,6 @@ arch pstone_1
 x 24
 y 18
 end
-arch biglake_nw
-name sea
-x 24
-y 18
-end
 arch sea
 x 24
 y 19
@@ -3710,11 +3666,6 @@ x 24
 y 21
 end
 arch pstone_1
-x 24
-y 22
-end
-arch biglake_sw
-name sea
 x 24
 y 22
 end
@@ -3768,18 +3719,7 @@ arch pstone_1
 x 25
 y 2
 end
-arch river_nw-se_l
-name sea
-x 25
-y 2
-no_pass 0
-end
 arch pstone_1
-x 25
-y 3
-end
-arch biglake_nw
-name sea
 x 25
 y 3
 end
@@ -3876,11 +3816,6 @@ x 25
 y 26
 end
 arch pstone_1
-x 25
-y 27
-end
-arch biglake_sw
-name sea
 x 25
 y 27
 end
