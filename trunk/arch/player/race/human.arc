@@ -2,7 +2,7 @@ Object human_player
 name human
 race human
 randomitems human_player
-face human.171
+face human.151
 msg
 Humans are the generalists of the races.
 They are fit for any trade, and usually

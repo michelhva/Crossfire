@@ -2,7 +2,7 @@ Object gnome_player
 name gnome
 race dwarf
 randomitems gnome_player_items
-face gnome.111
+face gnome_p.151
 msg
 Gnomes and dwarves look so much alike that
 some speculate that they are the same race,

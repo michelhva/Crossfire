@@ -2,7 +2,7 @@ Object troll_player
 name troll
 race troll
 randomitems troll_player_items
-face smalltroll.111
+face troll_p.151
 msg
 A Troll is a nasty creature, usually: a scion
 of Gnarg. They have amazing strength and amazing

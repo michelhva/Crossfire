@@ -1,7 +1,7 @@
 Object dwarf_player
 name dwarf
 randomitems dwarf_player_items
-face dwarf_p.111
+face dwarf_p.151
 msg
 The Dwarves are the hardy scions of Mostrai.
 The traditional profession of the dwarf is

@@ -2,7 +2,7 @@ Object northman_player
 name Northman
 race human
 randomitems northman_player_items
-face viking.171
+face viking.151
 msg
 Northmen are simply humans who have been
 shaped by their harsh environment. They are

@@ -2,7 +2,7 @@ Object elf_player
 race faerie
 name elf
 randomitems elf_player_items
-face elf.171
+face elf.151
 msg
 An Elf is a child of Faerie, a scion of
 Lythander. Being of Faerie, they heal more
