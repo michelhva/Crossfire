@@ -20,14 +20,14 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-
+import os.path
 import shelve
 
-import CFgetPaths
+import CFPython
 
 class CFBoard:
 
-	boarddb_file = '%scrossfireboard' % (CFgetPaths.getPaths('localdir'))
+	boarddb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfireboard')
 	boarddb = {}
 	total = 0
 

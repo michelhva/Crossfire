@@ -8,13 +8,13 @@ import os.path
 import shelve
 import random
 
-import CFgetPaths
+import CFPython
 
 class SlotMachine:
 	#sets up the file that holds all the slotmachine jackpots
 	#make sure this points to your writable var/crossfire directory
 	#you can delete that file to reset all the slotmachine jackpots
-        slotfile = '%sSlotMachine_file' %(CFgetPaths.getPaths("localdir"))
+        slotfile = os.path.join(CFPython.GetLocalDirectory(),'SlotMachine_file')
         slotdb = {}
         def __init__(self,slotname,slotlist,minpot,maxpot):
 		slotdb = shelve.open(self.slotfile)

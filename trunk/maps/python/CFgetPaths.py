@@ -2,6 +2,9 @@
 ## Todd Mitchell (temitchell@sympatico.ca)
 ## Generates the proper Crossfire directory paths
 ## returns the absolute paths with a nice "/" at the end.
+##
+## It is depreciated as it is of dubuois value and breaks paths for win32 systems
+## DON"T USE THIS ANYMORE!  It is being removed shortly.
 
 import CFPython
 

@@ -20,13 +20,14 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
+import os.path
 import shelve
 
-import CFgetPaths
+import CFPython
 
 class CFMail:
 
-	maildb_file = '%scrossfiremail' % (CFgetPaths.getPaths('localdir'))
+	maildb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfiremail')
 	maildb = {}
 	total = 0
 

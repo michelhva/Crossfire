@@ -26,7 +26,8 @@ import CFPython
 import CFBoard
 
 import sys
-sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
+import os.path
+sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import string
 
 board = CFBoard.CFBoard()

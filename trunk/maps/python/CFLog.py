@@ -21,43 +21,43 @@
 #Updated to use new path functions in CFPython -Todd Mitchell
 
 import shelve
+import os.path
 
-
-import CFgetPaths
+import CFPython
 from time import localtime, strftime, time
 
 class CFLog:
 
-	logdb_file = '%scrossfirelog' % (CFgetPaths.getPaths('localdir'))
-	logdb = {}
+    logdb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfirelog')
+    logdb = {}
 
-	def __init__(self):
-		self.logdb = shelve.open(self.logdb_file)
+    def __init__(self):
+        self.logdb = shelve.open(self.logdb_file)
 
-	def create(self, name):
-		date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-		count=1
-		self.logdb[name]=['unknown', date, count]
+    def create(self, name):
+        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+        count=1
+        self.logdb[name]=['unknown', date, count]
 
-	def update(self, name, ip):
-		date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-		count=0
-		if self.logdb.has_key(name):
-			oldip, olddate, count=self.logdb[name]
-		count+=1
-		self.logdb[name]=[ip, date, count]
+    def update(self, name, ip):
+        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+        count=0
+        if self.logdb.has_key(name):
+            oldip, olddate, count=self.logdb[name]
+        count+=1
+        self.logdb[name]=[ip, date, count]
 
-	def remove(self, name):
-		if self.logdb.has_key(name):
-			del self.logdb[name]
-	
-	def exist(self, name):
-		if self.logdb.has_key(name):
-			return 1
-		else:
-			return 0
+    def remove(self, name):
+        if self.logdb.has_key(name):
+            del self.logdb[name]
+    
+    def exist(self, name):
+        if self.logdb.has_key(name):
+            return 1
+        else:
+            return 0
 
-	def info(self, name):
-		if self.exist(name):
-			ip, date, count=self.logdb[name]
-			return ip, date, count
+    def info(self, name):
+        if self.exist(name):
+            ip, date, count=self.logdb[name]
+            return ip, date, count
