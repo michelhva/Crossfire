@@ -351,11 +351,11 @@ no_pass 1
 x 4
 y 4
 end
-arch marble
+arch light4
 x 4
-y 5
+y 4
 end
-arch light1
+arch marble
 x 4
 y 5
 end
@@ -648,8 +648,11 @@ endmsg
 title of the Phantom
 value 85000
 attacktype 517
+slaying undead
+last_sp 9
 magic 2
 resist_ghosthit 25
+resist_fear 10
 x 8
 y 4
 end
