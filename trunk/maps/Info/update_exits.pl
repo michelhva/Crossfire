@@ -63,15 +63,54 @@ $NEW_MAP_NAME[2]="/world/world_104_115";
 $NEW_MAP_OFFX[2]=40;
 $NEW_MAP_OFFY[2]=18;
 
-# Start of scorn updates
-$OLD_MAP_NAME[2]='(.+/brest|brest)';
-$OLD_MAP_STARTX[2]=0;
-$OLD_MAP_STARTY[2]=0;
-$OLD_MAP_ENDX[2]=100;
-$OLD_MAP_ENDY[2]=100;
-$NEW_MAP_NAME[2]="/world/world_107_123";
-$NEW_MAP_OFFX[2]=17;
-$NEW_MAP_OFFY[2]=16;
+# brest updates
+$OLD_MAP_NAME[3]='(.+/brest|brest)';
+$OLD_MAP_STARTX[3]=0;
+$OLD_MAP_STARTY[3]=0;
+$OLD_MAP_ENDX[3]=100;
+$OLD_MAP_ENDY[3]=100;
+$NEW_MAP_NAME[3]="/world/world_107_123";
+$NEW_MAP_OFFX[3]=17;
+$NEW_MAP_OFFY[3]=16;
+
+# Start of navar city - bunch of these as navar city is actually
+# spread across 4 world maps.  Only navar city uses the 'city1'
+# name, so the regex is safe.
+$OLD_MAP_NAME[4]='(.+/city1|city1)';
+$OLD_MAP_STARTX[4]=15;
+$OLD_MAP_STARTY[4]=13;
+$OLD_MAP_ENDX[4]=100;
+$OLD_MAP_ENDY[4]=100;
+$NEW_MAP_NAME[4]="/world/world_122_117";
+$NEW_MAP_OFFX[4]=-15;
+$NEW_MAP_OFFY[4]=-13;
+
+$OLD_MAP_NAME[5]='(.+/city1|city1)';
+$OLD_MAP_STARTX[5]=15;
+$OLD_MAP_STARTY[5]=0;
+$OLD_MAP_ENDX[5]=100;
+$OLD_MAP_ENDY[5]=12;
+$NEW_MAP_NAME[5]="/world/world_122_116";
+$NEW_MAP_OFFX[5]=-15;
+$NEW_MAP_OFFY[5]=37;
+
+$OLD_MAP_NAME[6]='(.+/city1|city1)';
+$OLD_MAP_STARTX[6]=0;
+$OLD_MAP_STARTY[6]=0;
+$OLD_MAP_ENDX[6]=14;
+$OLD_MAP_ENDY[6]=12;
+$NEW_MAP_NAME[6]="/world/world_121_116";
+$NEW_MAP_OFFX[6]=35;
+$NEW_MAP_OFFY[6]=37;
+
+$OLD_MAP_NAME[7]='(.+/city1|city1)';
+$OLD_MAP_STARTX[7]=0;
+$OLD_MAP_STARTY[7]=13;
+$OLD_MAP_ENDX[7]=14;
+$OLD_MAP_ENDY[7]=100;
+$NEW_MAP_NAME[7]="/world/world_121_117";
+$NEW_MAP_OFFX[7]=35;
+$NEW_MAP_OFFY[7]=-13;
 
 $VERBOSE=0;
 $error=0;

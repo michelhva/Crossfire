@@ -68,6 +68,11 @@ OLD_MAP_NAME, OLD_MAP_STARTX, OLD_MAP_STARTY, OLD_MAP_ENDX, OLD_MAP_ENDY ->
 Translation values used:
 /city/city, 10, 0 (100,100) -> /world/world_105_115, -10, 18
 /brittany/Brest/Brest 0,0 (100,100) -> /world/world_107_123, +17, +16
+/santo_dominion/town 3,12 (100,100) -> /world/world_102_108, 0, -9
+/navar_city/city1 15, 13 (100,100) -> /world/world_122_117, -15, -13
+/navar_city/city1 15, 0 (100,12) -> /world/world_122_116, -15, 37
+/navar_city/city1 0, 0 (14,12) -> /world/world_122_116, 35, 37
+/navar_city/city1 0,13 (14,100) -> /world/world_122_116, 35, -13
 
 ------------------------------------------------------------------------------
 land.c:
