@@ -151,6 +151,15 @@ $NEW_MAP_NAME[11]="/world/world_116_102";
 $NEW_MAP_OFFX[11]=18;
 $NEW_MAP_OFFY[11]=26;
 
+$OLD_MAP_NAME[12]='(.+/piratetown|piratetown)';
+$OLD_MAP_STARTX[12]=0;
+$OLD_MAP_STARTY[12]=0;
+$OLD_MAP_ENDX[12]=100;
+$OLD_MAP_ENDY[12]=100;
+$NEW_MAP_NAME[12]="/world/world_128_109";
+$NEW_MAP_OFFX[12]=12;
+$NEW_MAP_OFFY[12]=0;
+
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
