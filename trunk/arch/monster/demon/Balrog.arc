@@ -11,6 +11,7 @@ jessyb.112
 mina
 attacktype 1029
 resist_magic 80
+resist_physical 80
 resist_godpower 80
 resist_holyword 80
 resist_fire 100
