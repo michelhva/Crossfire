@@ -27,12 +27,10 @@ level 30
 resist_fire 100
 resist_electricity 100
 resist_cold 100
-
 attacktype 30
 resist_confusion -100
 resist_slow -100
 resist_paralyze -100
-
 carrying 90000
 weight 50000
 pick_up 24
@@ -52,4 +50,5 @@ body_finger 2
 body_skill 1
 body_arm 2
 body_range 1
+randomitems skill_use_magic_item
 end

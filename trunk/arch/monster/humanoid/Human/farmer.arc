@@ -1,7 +1,7 @@
 Object farmer
 race human
 name farmer
-randomitems throw_stnd
+randomitems farmer
 face farmer.111
 anim
 farmer.111

@@ -1,5 +1,5 @@
 Object madman
-randomitems throw_stnd
+randomitems madman
 face madman.111
 race human
 anim

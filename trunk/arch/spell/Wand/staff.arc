@@ -25,4 +25,5 @@ name_pl staves
 client_type 712
 body_range -1
 randomitems staff
+skill use magic item
 end

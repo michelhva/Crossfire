@@ -20,4 +20,5 @@ name_pl heavy rods
 client_type 701
 body_range -1
 randomitems rod_spell
+skill use magic item
 end

@@ -1,7 +1,7 @@
 Object woman2
 race human
 name woman
-randomitems throw_stnd
+randomitems man
 face woman2.113
 anim
 woman2.111

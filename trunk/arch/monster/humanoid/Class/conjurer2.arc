@@ -1,6 +1,6 @@
 Object conjurer2
 race human
-randomitems poor
+randomitems conjurer2
 name conjurer
 face conjurer.111
 anim

@@ -1,7 +1,7 @@
 Object chess_queen
 race chess
 name queen
-randomitems standard
+randomitems chess
 face ch_queen.111
 sp 15
 maxsp 15

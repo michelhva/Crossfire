@@ -1,7 +1,7 @@
 Object chess_rook
 race chess
 name rook
-randomitems standard
+randomitems chess
 face ch_rook.111
 sp 10
 maxsp 10

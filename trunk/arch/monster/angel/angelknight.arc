@@ -49,6 +49,7 @@ body_waist 1
 body_finger 2
 body_arm 2
 body_range 1
+randomitems all_spell_skills
 end
 More
 Object angel_knight_2

@@ -1,7 +1,7 @@
 Object fighter
 name fighter
 race human
-randomitems throw_stnd
+randomitems fighter
 face fighter.111
 anim
 fighter.111

@@ -1,7 +1,7 @@
 Object halfling2
 race halfling
 name halfling
-randomitems throw_stnd
+randomitems halfling
 face halfling2.151
 anim
 halfling2.151

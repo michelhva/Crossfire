@@ -29,13 +29,10 @@ wc 1
 dam 8
 speed 0.15
 resist_magic 50
-
 resist_confusion -100
 resist_weaponmagic -100
 resist_godpower -100
-
 resist_chaos 100
-
 weight 75000
 attack_movement 7
 can_use_skill 1
@@ -60,6 +57,7 @@ body_waist 1
 body_arm 2
 body_range 1
 end
+#
 Object c_priest
 name Chaos Priest
 randomitems c_priest
@@ -93,14 +91,11 @@ color_fg red
 speed 0.2
 resist_physical 30
 resist_magic 30
-
 resist_confusion -100
 resist_weaponmagic -100
 resist_godpower -100
-
 resist_fear 100
 resist_chaos 100
-
 weight 75000
 attacktype 1025
 attack_movement 7

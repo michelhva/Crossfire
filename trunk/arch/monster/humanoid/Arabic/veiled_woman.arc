@@ -38,4 +38,5 @@ body_hand 2
 body_waist 1
 body_arm 2
 body_range 1
+randomitems skill_use_magic_item
 end

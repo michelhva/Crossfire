@@ -1,7 +1,7 @@
 Object chess_king
 race chess
 name king
-randomitems standard
+randomitems chess
 face ch_king.111
 sp 10
 maxsp 10

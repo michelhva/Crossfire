@@ -1,7 +1,7 @@
 Object chess_pawn
 race chess
 name pawn
-randomitems standard
+randomitems chess
 face ch_pawn.111
 sp 10
 maxsp 10
