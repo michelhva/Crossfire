@@ -16,4 +16,6 @@ material 70
 hp 20
 maxhp 20
 editable 2048
+name_pl heavy rods
+client_type 701
 end

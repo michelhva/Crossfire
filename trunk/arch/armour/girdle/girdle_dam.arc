@@ -2,6 +2,8 @@ Object girdle_dam
 nrof 1
 type 113
 name girdle
+name_pl girdles
+client_type 321
 title of damage
 face girdle_dam.111
 anim

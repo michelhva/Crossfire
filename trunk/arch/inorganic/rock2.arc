@@ -8,4 +8,6 @@ weight 220
 editable 2048
 magicmap grey
 nrof 1
+name_pl rocks
+client_type 641
 end

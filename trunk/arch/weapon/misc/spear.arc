@@ -25,4 +25,6 @@ editable 1024
 magicmap brown
 attacktype 1
 weapontype 5
+name_pl spears
+client_type 136
 end

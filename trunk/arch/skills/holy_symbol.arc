@@ -9,4 +9,6 @@ nrof 1
 value 1500
 weight 5000
 editable 2048
+name_pl holy symbols
+client_type 451
 end

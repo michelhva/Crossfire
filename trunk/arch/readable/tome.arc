@@ -8,4 +8,6 @@ value 80
 weight 8000
 editable 128
 magicmap brown
+name_pl tomes
+client_type 1041
 end

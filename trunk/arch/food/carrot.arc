@@ -10,4 +10,6 @@ value 1
 weight 100
 editable 2048
 identified 1
+name_pl carrots
+client_type 601
 end

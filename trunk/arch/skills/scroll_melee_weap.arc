@@ -11,4 +11,6 @@ weight 200
 editable 2048
 sp 23
 identified 1
+name_pl scrolls of melee weapons
+client_type 1021
 end

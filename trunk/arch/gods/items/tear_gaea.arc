@@ -15,4 +15,6 @@ type 5
 sp 35
 weight 10
 editable 2048
+name_pl Gaea's tears
+client_type 650
 end

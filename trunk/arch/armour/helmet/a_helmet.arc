@@ -1,5 +1,7 @@
 Object a_helmet
 name helmet
+name_pl helmets
+client_type 271
 nrof 1
 type 34
 face a_helmet.111

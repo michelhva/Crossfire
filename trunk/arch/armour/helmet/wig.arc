@@ -1,4 +1,7 @@
 Object wig
+name wig
+name_pl wigs
+client_type 273
 nrof 1
 type 34
 face wig.111

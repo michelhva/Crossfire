@@ -22,4 +22,6 @@ attacktype 18
 Pow 3
 editable 5120
 magicmap khaki
+name_pl Frost Hammers
+client_type 100
 end

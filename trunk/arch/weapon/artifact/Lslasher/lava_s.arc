@@ -21,4 +21,6 @@ weight 25000
 magic 3
 last_sp 9
 editable 5120
+name_pl Lava Slashers
+client_type 100
 end

@@ -1,5 +1,7 @@
 Object Pdragon_mail
 name Power Dragon Mail
+name_pl Power Dragon Mails
+client_type 251
 nrof 1
 type 16
 face Pdragonmail.111

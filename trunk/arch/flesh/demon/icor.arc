@@ -53,4 +53,6 @@ speed 0.03
 hp -100
 editable 2048
 value 400
+name_pl icors
+client_type 627
 end

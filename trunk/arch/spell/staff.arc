@@ -21,4 +21,6 @@ value 2300
 weight 2500
 material 16
 editable 2048
+name_pl staves
+client_type 712
 end

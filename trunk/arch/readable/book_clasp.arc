@@ -8,4 +8,6 @@ value 65
 weight 4000
 editable 128
 magicmap green
+name_pl books
+client_type 1041
 end

@@ -13,4 +13,6 @@ editable 1024
 attacktype 1
 weapontype 5
 magicmap black
+name_pl taifus
+client_type 145
 end

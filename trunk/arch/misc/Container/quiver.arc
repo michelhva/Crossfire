@@ -14,6 +14,8 @@ Str 10
 identified 1
 editable 128
 magicmap orange
+name_pl quivers
+client_type 60
 end
 Object close_quiver
 name close the quiver

@@ -11,4 +11,6 @@ weight 40000
 value 20
 editable 1024
 attacktype 1
+name_pl large clubs
+client_type 121
 end

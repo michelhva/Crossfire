@@ -12,4 +12,6 @@ editable 1024
 attacktype 1
 weapontype 3
 magicmap white
+name_pl axes
+client_type 106
 end

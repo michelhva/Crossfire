@@ -1,5 +1,7 @@
 Object gale
 name Gale Armour
+name_pl Gale Armours
+client_type 250
 nrof 1
 face gale.111
 Dex 2

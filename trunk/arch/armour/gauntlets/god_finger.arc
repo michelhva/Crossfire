@@ -1,6 +1,8 @@
 Object god_finger
 nrof 1
 name God Finger
+name_pl God Fingers
+client_type 300
 type 100
 face god_finger.111
 anim

@@ -12,6 +12,8 @@ Str 10
 identified 1
 editable 128
 magicmap orange
+name_pl pouchs
+client_type 55
 end
 Object close_pouch
 name close the pouch

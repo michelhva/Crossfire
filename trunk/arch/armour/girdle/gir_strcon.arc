@@ -2,6 +2,8 @@ Object girdle_strcon
 nrof 1
 type 113
 name girdle
+name_pl girdles
+client_type 321
 title of fighting
 face gir_strcon.111
 anim

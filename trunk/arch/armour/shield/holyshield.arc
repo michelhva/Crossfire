@@ -1,5 +1,7 @@
 Object holy_shield
 name holy shield
+name_pl holy shields
+client_type 260
 nrof 1
 face holyshield.111
 material 2

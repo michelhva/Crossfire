@@ -1,5 +1,7 @@
 Object levitationboots
 name levitation boots
+name_pl levitation boots
+client_type 290
 nrof 1
 face lev_boots.111
 value 35000

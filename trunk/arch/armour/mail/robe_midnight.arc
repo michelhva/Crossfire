@@ -1,5 +1,7 @@
 Object robe_midnight
 name Midnight Robe
+name_pl Midnight Robes
+client_type 250
 nrof 1
 type 16
 face robe_midnight.111

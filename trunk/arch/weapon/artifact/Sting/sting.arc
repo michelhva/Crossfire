@@ -23,4 +23,6 @@ editable 5120
 attacktype 1
 weapontype 2
 magicmap grey
+name_pl Stings
+client_type 100
 end

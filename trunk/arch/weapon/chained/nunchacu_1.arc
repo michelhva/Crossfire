@@ -11,4 +11,6 @@ value 20
 editable 1024
 attacktype 1
 magicmap brown
+name_pl nunchacus
+client_type 141
 end

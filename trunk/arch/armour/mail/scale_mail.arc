@@ -1,6 +1,8 @@
 Object scale_mail
 nrof 1
 name scale mail
+name_pl scale mails
+client_type 253
 type 16
 face scale_mail.111
 last_heal 10

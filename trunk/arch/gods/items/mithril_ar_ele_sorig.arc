@@ -3,7 +3,7 @@ nrof 1
 name mithril chainmail of lightning of Sorig
 type 16
 face mithril_ar.111
-animation mithril_ar_el
+animation mithril_ar_ele
 speed 0.3
 ac 4
 resist_physical 40
@@ -25,4 +25,6 @@ last_sp 27
 weight 15000
 value 4000
 editable 5120
+name_pl mithril chainmails of lightning of Sorig
+client_type 250
 end

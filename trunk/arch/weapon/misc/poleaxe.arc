@@ -14,4 +14,6 @@ can_cut 1
 can_dam_armour 1
 can_knockback 1
 attacktype 1
+name_pl poleaxes
+client_type 136
 end

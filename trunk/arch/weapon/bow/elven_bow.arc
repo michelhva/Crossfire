@@ -15,4 +15,6 @@ no_strength 0
 editable 5120
 attacktype 1
 magicmap brown
+name_pl elven bows
+client_type 150
 end

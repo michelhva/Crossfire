@@ -11,6 +11,8 @@ nrof 1
 glow_radius -3
 editable 128
 magicmap brown
+name_pl torches
+client_type 1102
 end
 Object torch_1
 name torch
@@ -29,6 +31,8 @@ speed 0.15
 glow_radius 3
 editable 128
 magicmap orange
+name_pl torches
+client_type 1102
 end
 Object dim_torch
 name torch
@@ -46,6 +50,8 @@ weight 500
 speed 0.15
 glow_radius 2
 editable 128
+name_pl torches
+client_type 1102
 end
 Object burnt_torch
 name burnt out torch
@@ -55,4 +61,6 @@ nrof 1
 value 0
 weight 500
 editable 128
+name_pl burnt out torches
+client_type 1102
 end

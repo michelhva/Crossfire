@@ -8,4 +8,6 @@ weight 100
 value 200
 editable 2048
 identified 1
+name_pl pixie dusts
+client_type 628
 end

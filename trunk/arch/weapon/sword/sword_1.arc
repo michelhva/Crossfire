@@ -12,4 +12,6 @@ value 45
 editable 1024
 attacktype 1
 weapontype 1
+name_pl long swords
+client_type 101
 end

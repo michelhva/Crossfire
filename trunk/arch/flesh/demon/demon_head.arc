@@ -8,4 +8,6 @@ weight 25
 editable 2048
 value 400
 magicmap red
+name_pl heads
+client_type 625
 end

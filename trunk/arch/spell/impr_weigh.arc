@@ -11,4 +11,6 @@ sp 3
 slaying pearl
 editable 2048
 identified 1
+name_pl Lower Weapon Weights
+client_type 1016
 end

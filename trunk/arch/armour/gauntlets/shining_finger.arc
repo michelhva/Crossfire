@@ -1,6 +1,8 @@
 Object shining_finger
 nrof 1
 name Shining Finger
+name_pl Shining Fingers
+client_type 300
 type 100
 face shining_finger.111
 anim

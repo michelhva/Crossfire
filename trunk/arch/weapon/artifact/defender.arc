@@ -16,4 +16,6 @@ editable 5120
 attacktype 1
 weapontype 1
 magicmap grey
+name_pl Defenders
+client_type 100
 end

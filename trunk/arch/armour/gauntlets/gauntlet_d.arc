@@ -1,6 +1,7 @@
 Object gauntlets_dex
 nrof 1
 name gauntlets
+client_type 305
 title of dexterity
 face gauntlet_s.111
 type 100

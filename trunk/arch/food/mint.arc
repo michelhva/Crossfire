@@ -9,4 +9,6 @@ value 5
 color_fg green
 weight 100
 editable 2048
+name_pl mint sprigs
+client_type 601
 end

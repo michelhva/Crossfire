@@ -12,4 +12,6 @@ editable 1024
 attacktype 1
 weapontype 5
 magicmap khaki
+name_pl stakes
+client_type 145
 end

@@ -1,6 +1,8 @@
 Object plate_mail
 nrof 1
 name plate mail
+name_pl plate mails
+client_type 252
 type 16
 face plate_mail.111
 color_fg blue

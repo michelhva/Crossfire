@@ -25,4 +25,6 @@ color_fg green
 editable 1024
 attacktype 1
 weapontype 5
+name_pl tridents
+client_type 136
 end

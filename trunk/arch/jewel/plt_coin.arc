@@ -9,4 +9,6 @@ material 2
 value 50
 weight 10
 editable 2048
+name_pl platinum coins
+client_type 2001
 end

@@ -2,6 +2,8 @@ Object girdle_con
 nrof 1
 type 113
 name girdle
+name_pl girdles
+client_type 321
 title of constitution
 face girdle_con.111
 anim

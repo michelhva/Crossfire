@@ -9,4 +9,6 @@ weight 8
 editable 2048
 value 10
 magicmap khaki
+name_pl arms
+client_type 626
 end

@@ -11,4 +11,6 @@ value 2900
 weight 2300
 material 16
 editable 2048
+name_pl wands
+client_type 711
 end

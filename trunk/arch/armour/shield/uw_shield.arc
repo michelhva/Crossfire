@@ -1,5 +1,7 @@
 Object uw_shield
 name Belzebub's shield
+name_pl Belzebub's shields
+client_type 260
 nrof 1
 face uw_shield.111
 type 33

@@ -1,5 +1,7 @@
 Object wiz_hat
 name Wizard Hat
+name_pl Wizard Hats
+client_type 270
 nrof 1
 type 34
 face wiz_hat.111

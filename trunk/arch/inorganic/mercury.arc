@@ -4,13 +4,14 @@ material 2
 value 210
 resist_electricity 100
 resist_acid 100
-
 type 73
 nrof 1
 weight 3000
 identified 1
 editable 2048
 magicmap grey
+name_pl mercuries
+client_type 642
 end
 Object fix_mercury
 name block
@@ -25,10 +26,11 @@ material 2
 value 400
 resist_electricity 100
 resist_acid 100
-
 type 73
 nrof 1
 weight 8000
 editable 2048
 magicmap grey
+name_pl blocks
+client_type 642
 end

@@ -1,5 +1,7 @@
 Object mail_mostrai
 name Thorin's Plate Mail
+name_pl Thorin's Plate Mails
+client_type 250
 face plate_mail.111
 msg
   This shining plate mail is Mostrai's
@@ -19,4 +21,4 @@ weight 50000
 magic 2
 last_heal 9
 last_sp 13
-end 
+end

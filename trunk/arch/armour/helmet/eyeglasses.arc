@@ -1,6 +1,7 @@
 Object eyeglasses
 nrof 1
 name eye glasses
+client_type 275
 type 34
 face eyeglasses.111
 weight 120

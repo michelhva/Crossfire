@@ -8,4 +8,6 @@ weight 1
 editable 2048
 value 20
 magicmap red
+name_pl tongues
+client_type 625
 end

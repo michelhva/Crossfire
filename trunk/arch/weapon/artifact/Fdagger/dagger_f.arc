@@ -21,4 +21,6 @@ weight 2000
 last_sp 5
 editable 5120
 magicmap grey
+name_pl daggers of fortune
+client_type 100
 end

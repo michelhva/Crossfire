@@ -11,4 +11,6 @@ sp 2
 slaying ruby
 editable 2048
 identified 1
+name_pl Improve Weapon Damage
+client_type 1016
 end

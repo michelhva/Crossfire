@@ -1,5 +1,7 @@
 Object idaten
 name Idaten boots
+name_pl Idaten boots
+client_type 290
 nrof 1
 exp 5
 face idaten.111

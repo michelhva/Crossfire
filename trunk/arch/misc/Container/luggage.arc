@@ -21,4 +21,6 @@ Str 50
 editable 128
 identified 1
 magicmap brown
+name_pl The Luggages
+client_type 51
 end

@@ -27,4 +27,6 @@ weight 1000
 is_turnable 1
 editable 1024
 magicmap brown
+name_pl thundar bolts
+client_type 165
 end

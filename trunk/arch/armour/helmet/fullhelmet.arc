@@ -1,6 +1,8 @@
 Object full_helmet
 nrof 1
 name full helmet
+name_pl full helmets
+client_type 271
 type 34
 face fullhelmet.111
 last_heal 10

@@ -1,4 +1,7 @@
 Object helmet
+name helmet
+name_pl helmets
+client_type 271
 nrof 1
 type 34
 face helmet.111

@@ -1,4 +1,7 @@
 Object shield
+name shield
+name_pl shields
+client_type 261
 nrof 1
 material 2
 type 33

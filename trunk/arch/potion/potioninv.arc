@@ -10,6 +10,8 @@ weight 2000
 value 10000
 resist_physical 90
 editable 2048
+name_pl potions of invulnerability
+client_type 651
 end
 Object potion_aethereality
 name potion of aethereality
@@ -23,5 +25,7 @@ weight 2000
 value 28000
 resist_physical 95
 editable 2048
+name_pl potions of aethereality
+client_type 651
 end
 

@@ -1,5 +1,7 @@
 Object cloak
 name cloak
+name_pl cloaks
+client_type 281
 type 87
 face cloak.111
 ac 0

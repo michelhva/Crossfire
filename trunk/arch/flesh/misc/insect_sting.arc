@@ -8,4 +8,6 @@ weight 10
 value 20
 editable 2048
 color_fg black
+name_pl stingers
+client_type 627
 end

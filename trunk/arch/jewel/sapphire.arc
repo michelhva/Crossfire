@@ -13,4 +13,6 @@ value 185
 weight 50
 editable 2048
 identified 1
+name_pl sapphires
+client_type 2011
 end

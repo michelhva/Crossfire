@@ -10,4 +10,6 @@ value 200
 editable 2048
 food 0
 identified 1
+name_pl ectoplasms
+client_type 627
 end

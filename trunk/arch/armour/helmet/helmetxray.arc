@@ -1,5 +1,7 @@
 Object helmet_of_xrays
 name helmet
+name_pl helmets
+client_type 270
 nrof 1
 title of xray vision
 face helmetxray.111

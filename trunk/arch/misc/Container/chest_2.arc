@@ -9,6 +9,8 @@ container 150000
 weight 40000
 editable 128
 identified 1
+name_pl chests
+client_type 51
 end
 Object close_chest
 name close the chest

@@ -19,4 +19,6 @@ mina
 editable 1024
 attacktype 1
 magicmap black
+name_pl shovels
+client_type 145
 end

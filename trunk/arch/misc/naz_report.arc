@@ -22,4 +22,6 @@ value 20000
 weight 300
 editable 128
 magicmap white
+name_pl Nazgul Reports
+client_type 1042
 end

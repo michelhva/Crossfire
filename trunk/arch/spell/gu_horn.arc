@@ -30,4 +30,6 @@ healing. Hanuk imprisoned the god by
 trickery and acquired the artifact.
 endmsg
 editable 4096
+name_pl Golden Unicorn Horns
+client_type 721
 end

@@ -7,4 +7,6 @@ weight 300000
 value 1
 material 64
 editable 1024
+name_pl boulders
+client_type 8012
 end

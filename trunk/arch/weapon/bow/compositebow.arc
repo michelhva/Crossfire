@@ -13,4 +13,6 @@ sp 35
 no_strength 0
 editable 1024
 attacktype 1
+name_pl composite bows
+client_type 151
 end

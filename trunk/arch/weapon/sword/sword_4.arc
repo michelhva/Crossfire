@@ -12,4 +12,6 @@ editable 1024
 attacktype 1
 magicmap white
 weapontype 1
+name_pl swords
+client_type 101
 end

@@ -1,5 +1,7 @@
 Object low_boots
 name shoes
+name_pl shoes
+client_type 291
 face low_boots.111
 value 25
 color_fg brown

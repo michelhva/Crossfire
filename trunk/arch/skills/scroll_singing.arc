@@ -1,5 +1,5 @@
 Object scroll_singing
-name scroll of performing
+name scroll of singing
 slaying skill_singing
 face scrollr.111
 color_fg white
@@ -11,4 +11,6 @@ weight 200
 editable 2048
 sp 13
 identified 1
+name_pl scrolls of singing
+client_type 1021
 end

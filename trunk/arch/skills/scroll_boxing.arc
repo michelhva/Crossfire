@@ -11,4 +11,6 @@ weight 200
 editable 2048
 sp 17
 identified 1
+name_pl scrolls of punching
+client_type 1021
 end

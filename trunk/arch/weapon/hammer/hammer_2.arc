@@ -25,4 +25,6 @@ value 23
 editable 1024
 attacktype 1
 magicmap grey
+name_pl throwing hammers
+client_type 126
 end

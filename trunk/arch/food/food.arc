@@ -9,4 +9,6 @@ value 10
 weight 6500
 editable 2048
 identified 1
+name_pl foods
+client_type 601
 end

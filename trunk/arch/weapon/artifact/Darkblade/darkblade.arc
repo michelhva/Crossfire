@@ -35,4 +35,6 @@ magic 4
 value 143000
 editable 5120
 magicmap black
+name_pl Darkblades
+client_type 100
 end

@@ -1,5 +1,7 @@
 Object bagpipe
 name small bagpipe
+name_pl small bagpipes
+client_type 8006
 nrof 1
 type 24
 face bagpipe.111

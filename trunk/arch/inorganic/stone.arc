@@ -10,6 +10,8 @@ weight 800
 editable 2048
 magicmap green
 nrof 1
+name_pl river stones
+client_type 641
 end
 Object mountain_stone
 name mountain stone
@@ -22,6 +24,8 @@ type 73
 weight 800
 editable 2048
 nrof 1
+name_pl mountain stones
+client_type 641
 end
 Object field_stone
 name stone
@@ -34,4 +38,6 @@ type 73
 weight 800
 editable 2048
 nrof 1
+name_pl stones
+client_type 641
 end

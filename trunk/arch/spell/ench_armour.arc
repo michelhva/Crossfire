@@ -11,4 +11,6 @@ need_an 1
 sp 1
 editable 2048
 identified 1
+name_pl Enchant Armours
+client_type 1011
 end

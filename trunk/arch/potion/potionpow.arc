@@ -10,4 +10,6 @@ weight 1500
 value 13500
 Pow 1
 editable 2048
+name_pl potions of power
+client_type 651
 end

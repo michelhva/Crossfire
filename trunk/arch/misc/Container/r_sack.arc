@@ -11,6 +11,8 @@ Str 15
 editable 128
 identified 1
 magicmap brown
+name_pl rucksacks
+client_type 51
 end
 Object close_rsack
 name close the rucksack

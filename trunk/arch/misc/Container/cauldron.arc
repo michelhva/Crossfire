@@ -10,6 +10,8 @@ Str 0
 value 18000
 editable 128
 color_fg black
+name_pl cauldrons
+client_type 51
 end
 Object bad_cauldron
 name cracked cauldron
@@ -22,6 +24,8 @@ container 800000
 Str -80
 value 5000
 editable 128
+name_pl cracked cauldrons
+client_type 51
 end
 Object cauldron_open
 name close the cauldron

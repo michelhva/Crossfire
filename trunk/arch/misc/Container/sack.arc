@@ -11,6 +11,8 @@ Str 10
 editable 128
 identified 1
 magicmap brown
+name_pl sacks
+client_type 51
 end
 Object close_sack
 name close the sack

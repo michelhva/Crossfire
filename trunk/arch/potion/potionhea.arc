@@ -10,4 +10,6 @@ weight 1800
 value 5200
 sp 35
 editable 2048
+name_pl healing potions
+client_type 651
 end
