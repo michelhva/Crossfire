@@ -1,7 +1,6 @@
 Object grave_open
 name the open grave
 face grave_open.111
-type 37
 no_pick 1
 color_fg brown
 editable 8

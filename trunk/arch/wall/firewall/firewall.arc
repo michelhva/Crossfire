@@ -21,6 +21,7 @@ Object firewall_1
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_1.111
 color_fg grey
 color_bg yellow
@@ -36,6 +37,7 @@ Object firewall_2
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_2.111
 color_fg grey
 color_bg yellow
@@ -51,6 +53,7 @@ Object firewall_3
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_3.111
 color_fg grey
 color_bg yellow
@@ -66,6 +69,7 @@ Object firewall_4
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_4.111
 color_fg grey
 color_bg yellow
@@ -81,6 +85,7 @@ Object firewall_5
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_5.111
 color_fg grey
 color_bg yellow
@@ -96,6 +101,7 @@ Object firewall_6
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_6.111
 color_fg grey
 color_bg yellow
@@ -111,6 +117,7 @@ Object firewall_7
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_7.111
 color_fg grey
 color_bg yellow
@@ -126,6 +133,7 @@ Object firewall_8
 other_arch firebullet_s
 name firewall
 type 62
+level 1
 face firewall_8.111
 color_fg grey
 color_bg yellow

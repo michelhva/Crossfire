@@ -2,6 +2,7 @@ Object bulletwall
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_0.111
 color_bg yellow
 speed -0.4
@@ -15,6 +16,7 @@ Object bulletwall_1
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_1.111
 color_bg yellow
 sp 1
@@ -29,6 +31,7 @@ Object bulletwall_2
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_2.111
 color_bg yellow
 sp 2
@@ -43,6 +46,7 @@ Object bulletwall_3
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_3.111
 color_bg yellow
 sp 3
@@ -57,6 +61,7 @@ Object bulletwall_4
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_4.111
 color_bg yellow
 sp 4
@@ -71,6 +76,7 @@ Object bulletwall_5
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_5.111
 color_bg yellow
 sp 5
@@ -85,6 +91,7 @@ Object bulletwall_6
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_6.111
 color_bg yellow
 sp 6
@@ -99,6 +106,7 @@ Object bulletwall_7
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_7.111
 color_bg yellow
 sp 7
@@ -113,6 +121,7 @@ Object bulletwall_8
 other_arch bullet
 name bulletwall
 type 62
+level 1
 face bul_wall_8.111
 color_bg yellow
 sp 8

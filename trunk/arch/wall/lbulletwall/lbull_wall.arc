@@ -2,6 +2,7 @@ Object lbulletwall
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.101
 anim
 lbull_wall.111
@@ -27,6 +28,7 @@ Object lbulletwall_1
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.111
 color_bg yellow
 sp 1
@@ -42,6 +44,7 @@ Object lbulletwall_2
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.121
 color_bg yellow
 sp 2
@@ -57,6 +60,7 @@ Object lbulletwall_3
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.131
 color_bg yellow
 sp 3
@@ -72,6 +76,7 @@ Object lbulletwall_4
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.141
 color_bg yellow
 sp 4
@@ -87,6 +92,7 @@ Object lbulletwall_5
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.151
 color_bg yellow
 sp 5
@@ -102,6 +108,7 @@ Object lbulletwall_6
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.161
 color_bg yellow
 sp 6
@@ -117,6 +124,7 @@ Object lbulletwall_7
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.171
 color_bg yellow
 sp 7
@@ -132,6 +140,7 @@ Object lbulletwall_8
 other_arch lbullet
 name large bulletwall
 type 62
+level 1
 face lbull_wall.181
 color_bg yellow
 sp 8
