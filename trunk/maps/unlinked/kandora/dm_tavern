@@ -1,13 +1,15 @@
 arch map
+reset_timeout 7200
+difficulty 2
+width 14
+height 14
+enter_x 1
+enter_y 7
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Mon Feb  1 19:58:35 1999
 endmsg
-hp 1
-sp 7
-x 14
-y 14
 end
 arch cobblestones
 end
@@ -81,6 +83,9 @@ y 11
 end
 arch wall_2_1_1
 y 11
+end
+arch cobblestones
+y 12
 end
 arch wall_2_1_1
 y 12
@@ -177,6 +182,7 @@ y 2
 end
 arch thief_1
 name quiet man in corner
+name_pl quiet man in corner
 msg
 @match signal|tower|bandits
 Aye, those scum make rotten robbers.
@@ -1083,7 +1089,6 @@ arch c_woman
 msg
 @match *
 hiya cutie! Where're you from?  
-
 endmsg
 x 12
 y 7

@@ -1,30 +1,47 @@
 arch map
 name dun_marksel
+reset_timeout 7200
+difficulty 5
+width 24
+height 16
+enter_x 15
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Jan 27 17:40:11 1999
 endmsg
-hp 15
-sp 0
-x 24
 end
 arch brush
 end
 arch brush
 y 1
 end
+arch dungeon_floor
+y 2
+end
 arch stwall_2_2_2
 y 2
+end
+arch dungeon_floor
+y 3
 end
 arch stwall_2_1_1
 y 3
 end
-arch stwall_2_1_1
+arch dungeon_floor
 y 4
 end
 arch stwall_2_1_1
+y 4
+end
+arch dungeon_floor
 y 5
+end
+arch stwall_2_1_1
+y 5
+end
+arch dungeon_floor
+y 6
 end
 arch stwall_2_2_1
 y 6
@@ -41,17 +58,32 @@ end
 arch grass
 y 10
 end
+arch dungeon_floor
+y 11
+end
 arch stwall_2_2_2
 y 11
+end
+arch dungeon_floor
+y 12
 end
 arch stwall_2_1_1
 y 12
 end
-arch stwall_2_1_1
+arch dungeon_floor
 y 13
 end
 arch stwall_2_1_1
+y 13
+end
+arch dungeon_floor
 y 14
+end
+arch stwall_2_1_1
+y 14
+end
+arch dungeon_floor
+y 15
 end
 arch stwall_2_2_1
 y 15
@@ -62,6 +94,10 @@ end
 arch brush
 x 1
 y 1
+end
+arch dungeon_floor
+x 1
+y 2
 end
 arch stwall_2_1_2
 x 1
@@ -83,25 +119,49 @@ arch dungeon_floor
 x 1
 y 5
 end
+arch dungeon_floor
+x 1
+y 6
+end
 arch stwall_2_2_3
 x 1
 y 6
 end
-arch stwall_2_1_1
+arch dungeon_floor
 x 1
 y 7
 end
 arch stwall_2_1_1
 x 1
+y 7
+end
+arch dungeon_floor
+x 1
 y 8
 end
 arch stwall_2_1_1
+x 1
+y 8
+end
+arch dungeon_floor
 x 1
 y 9
 end
 arch stwall_2_1_1
 x 1
+y 9
+end
+arch dungeon_floor
+x 1
 y 10
+end
+arch stwall_2_1_1
+x 1
+y 10
+end
+arch dungeon_floor
+x 1
+y 11
 end
 arch stwall_2_2_4
 x 1
@@ -123,6 +183,10 @@ arch tower_tob
 x 1
 y 14
 end
+arch dungeon_floor
+x 1
+y 15
+end
 arch stwall_2_1_2
 x 1
 y 15
@@ -134,9 +198,17 @@ arch brush
 x 2
 y 1
 end
+arch dungeon_floor
+x 2
+y 2
+end
 arch stwall_2_2_3
 x 2
 y 2
+end
+arch dungeon_floor
+x 2
+y 3
 end
 arch stwall_2_2_1
 x 2
@@ -159,6 +231,11 @@ x 2
 y 7
 end
 arch dungeon_floor
+x 2
+y 8
+end
+arch city_tower
+slaying dm_wizard
 x 2
 y 8
 end
@@ -186,6 +263,10 @@ arch dungeon_floor
 x 2
 y 14
 end
+arch dungeon_floor
+x 2
+y 15
+end
 arch stwall_2_1_2
 x 2
 y 15
@@ -200,6 +281,10 @@ end
 arch grass
 x 3
 y 2
+end
+arch dungeon_floor
+x 3
+y 3
 end
 arch stwall_2_1_2
 x 3
@@ -225,11 +310,11 @@ arch house_small
 x 3
 y 7
 end
-arch farmland 
+arch farmland
 x 3
 y 8
 end
-arch farmland 
+arch farmland
 x 3
 y 9
 end
@@ -259,12 +344,17 @@ y 13
 end
 arch neko
 name a cat with glowing eyes
+name_pl a cat with glowing eyes
 x 3
 y 13
 end
 arch dungeon_floor
 x 3
 y 14
+end
+arch dungeon_floor
+x 3
+y 15
 end
 arch stwall_2_1_2
 x 3
@@ -280,6 +370,10 @@ end
 arch grass
 x 4
 y 2
+end
+arch dungeon_floor
+x 4
+y 3
 end
 arch stwall_2_1_2
 x 4
@@ -347,6 +441,10 @@ arch dungeon_floor
 x 4
 y 14
 end
+arch dungeon_floor
+x 4
+y 15
+end
 arch stwall_2_1_2
 x 4
 y 15
@@ -361,6 +459,10 @@ end
 arch grass
 x 5
 y 2
+end
+arch dungeon_floor
+x 5
+y 3
 end
 arch stwall_2_1_2
 x 5
@@ -414,6 +516,10 @@ arch dungeon_floor
 x 5
 y 14
 end
+arch dungeon_floor
+x 5
+y 15
+end
 arch stwall_2_1_2
 x 5
 y 15
@@ -425,9 +531,17 @@ arch grass
 x 6
 y 1
 end
+arch dungeon_floor
+x 6
+y 2
+end
 arch stwall_2_2_2
 x 6
 y 2
+end
+arch dungeon_floor
+x 6
+y 3
 end
 arch stwall_2_2_4
 x 6
@@ -462,6 +576,11 @@ arch cobblestones2
 x 6
 y 8
 end
+arch store_general
+slaying dm_shop
+x 6
+y 8
+end
 arch cobblestones2
 x 6
 y 9
@@ -474,6 +593,11 @@ arch cobblestones2
 x 6
 y 11
 end
+arch inn
+slaying dm_inn
+x 6
+y 11
+end
 arch dungeon_floor
 x 6
 y 12
@@ -482,9 +606,17 @@ arch dungeon_floor
 x 6
 y 13
 end
+arch dungeon_floor
+x 6
+y 14
+end
 arch stwall_2_2_2
 x 6
 y 14
+end
+arch dungeon_floor
+x 6
+y 15
 end
 arch stwall_2_2_4
 x 6
@@ -497,6 +629,10 @@ arch grass
 x 7
 y 1
 end
+arch dungeon_floor
+x 7
+y 2
+end
 arch stwall_2_1_2
 x 7
 y 2
@@ -550,6 +686,10 @@ arch dungeon_floor
 x 7
 y 13
 end
+arch dungeon_floor
+x 7
+y 14
+end
 arch stwall_2_1_2
 x 7
 y 14
@@ -564,6 +704,10 @@ end
 arch grass
 x 8
 y 1
+end
+arch dungeon_floor
+x 8
+y 2
 end
 arch stwall_2_1_2
 x 8
@@ -618,6 +762,10 @@ arch dungeon_floor
 x 8
 y 13
 end
+arch dungeon_floor
+x 8
+y 14
+end
 arch stwall_2_1_2
 x 8
 y 14
@@ -632,16 +780,28 @@ end
 arch grass
 x 9
 y 1
+end
+arch dungeon_floor
+x 9
+y 2
 end
 arch stwall_2_2_3
 x 9
 y 2
+end
+arch dungeon_floor
+x 9
+y 3
 end
 arch stwall_2_2_1
 x 9
 y 3
 end
 arch dungeon_floor
+x 9
+y 4
+end
+arch barrack_long
 x 9
 y 4
 end
@@ -694,9 +854,17 @@ arch dungeon_floor
 x 9
 y 13
 end
+arch dungeon_floor
+x 9
+y 14
+end
 arch stwall_2_2_3
 x 9
 y 14
+end
+arch dungeon_floor
+x 9
+y 15
 end
 arch stwall_2_2_1
 x 9
@@ -712,6 +880,10 @@ end
 arch grass
 x 10
 y 2
+end
+arch dungeon_floor
+x 10
+y 3
 end
 arch stwall_2_1_2
 x 10
@@ -769,6 +941,10 @@ end
 arch dungeon_floor
 x 10
 y 14
+end
+arch dungeon_floor
+x 10
+y 15
 end
 arch stwall_2_1_2
 x 10
@@ -886,6 +1062,10 @@ arch dungeon_floor
 x 11
 y 14
 end
+arch dungeon_floor
+x 11
+y 15
+end
 arch stwall_2_1_2
 x 11
 y 15
@@ -996,6 +1176,11 @@ arch cobblestones2
 x 12
 y 10
 end
+arch church
+slaying dm_church
+x 12
+y 10
+end
 arch cobblestones2
 x 12
 y 11
@@ -1008,9 +1193,18 @@ arch dungeon_floor
 x 12
 y 13
 end
+arch keep
+slaying dm_keep
+x 12
+y 13
+end
 arch dungeon_floor
 x 12
 y 14
+end
+arch dungeon_floor
+x 12
+y 15
 end
 arch stwall_2_1_2
 x 12
@@ -1094,6 +1288,10 @@ arch dungeon_floor
 x 13
 y 14
 end
+arch dungeon_floor
+x 13
+y 15
+end
 arch stwall_2_1_2
 x 13
 y 15
@@ -1112,11 +1310,19 @@ arch grass
 x 14
 y 2
 end
+arch dungeon_floor
+x 14
+y 3
+end
 arch stwall_2_1_2
 x 14
 y 3
 end
 arch dungeon_floor
+x 14
+y 4
+end
+arch barrack_long
 x 14
 y 4
 end
@@ -1173,6 +1379,10 @@ arch dungeon_floor
 x 14
 y 14
 end
+arch dungeon_floor
+x 14
+y 15
+end
 arch stwall_2_1_2
 x 14
 y 15
@@ -1190,6 +1400,10 @@ end
 arch grass
 x 15
 y 2
+end
+arch dungeon_floor
+x 15
+y 3
 end
 arch stwall_2_1_2
 x 15
@@ -1253,6 +1467,10 @@ arch dungeon_floor
 x 15
 y 14
 end
+arch dungeon_floor
+x 15
+y 15
+end
 arch stwall_2_1_2
 x 15
 y 15
@@ -1267,9 +1485,17 @@ arch brush
 x 16
 y 1
 end
+arch dungeon_floor
+x 16
+y 2
+end
 arch stwall_2_2_2
 x 16
 y 2
+end
+arch dungeon_floor
+x 16
+y 3
 end
 arch stwall_2_2_4
 x 16
@@ -1331,9 +1557,17 @@ arch dungeon_floor
 x 16
 y 13
 end
+arch dungeon_floor
+x 16
+y 14
+end
 arch stwall_2_2_2
 x 16
 y 14
+end
+arch dungeon_floor
+x 16
+y 15
 end
 arch stwall_2_2_4
 x 16
@@ -1348,6 +1582,10 @@ end
 arch brush
 x 17
 y 1
+end
+arch dungeon_floor
+x 17
+y 2
 end
 arch stwall_2_1_2
 x 17
@@ -1365,27 +1603,27 @@ arch dungeon_floor
 x 17
 y 5
 end
-arch farmland 
+arch farmland
 x 17
 y 6
 end
-arch farmland 
+arch farmland
 x 17
 y 7
 end
-arch farmland 
+arch farmland
 x 17
 y 8
 end
-arch farmland 
+arch farmland
 x 17
 y 9
 end
-arch farmland 
+arch farmland
 x 17
 y 10
 end
-arch farmland 
+arch farmland
 x 17
 y 11
 end
@@ -1396,6 +1634,10 @@ end
 arch dungeon_floor
 x 17
 y 13
+end
+arch dungeon_floor
+x 17
+y 14
 end
 arch stwall_2_1_2
 x 17
@@ -1415,6 +1657,10 @@ arch brush
 x 18
 y 1
 end
+arch dungeon_floor
+x 18
+y 2
+end
 arch stwall_2_1_2
 x 18
 y 2
@@ -1435,11 +1681,19 @@ arch dungeon_floor
 x 18
 y 6
 end
+arch barn
+x 18
+y 6
+end
 arch dungeon_floor
 x 18
 y 7
 end
 arch dungeon_floor
+x 18
+y 8
+end
+arch house_up
 x 18
 y 8
 end
@@ -1471,6 +1725,10 @@ arch dungeon_floor
 x 18
 y 13
 end
+arch dungeon_floor
+x 18
+y 14
+end
 arch stwall_2_1_2
 x 18
 y 14
@@ -1489,9 +1747,17 @@ arch brush
 x 19
 y 1
 end
+arch dungeon_floor
+x 19
+y 2
+end
 arch stwall_2_2_3
 x 19
 y 2
+end
+arch dungeon_floor
+x 19
+y 3
 end
 arch stwall_2_2_1
 x 19
@@ -1541,9 +1807,17 @@ arch dungeon_floor
 x 19
 y 13
 end
+arch dungeon_floor
+x 19
+y 14
+end
 arch stwall_2_2_3
 x 19
 y 14
+end
+arch dungeon_floor
+x 19
+y 15
 end
 arch stwall_2_2_1
 x 19
@@ -1562,6 +1836,10 @@ end
 arch grass
 x 20
 y 2
+end
+arch dungeon_floor
+x 20
+y 3
 end
 arch stwall_2_1_2
 x 20
@@ -1628,6 +1906,10 @@ arch dungeon_floor
 x 20
 y 14
 end
+arch dungeon_floor
+x 20
+y 15
+end
 arch stwall_2_1_2
 x 20
 y 15
@@ -1645,6 +1927,10 @@ end
 arch grass
 x 21
 y 2
+end
+arch dungeon_floor
+x 21
+y 3
 end
 arch stwall_2_1_2
 x 21
@@ -1694,6 +1980,10 @@ arch dungeon_floor
 x 21
 y 14
 end
+arch dungeon_floor
+x 21
+y 15
+end
 arch stwall_2_1_2
 x 21
 y 15
@@ -1708,9 +1998,17 @@ arch brush
 x 22
 y 1
 end
+arch dungeon_floor
+x 22
+y 2
+end
 arch stwall_2_2_2
 x 22
 y 2
+end
+arch dungeon_floor
+x 22
+y 3
 end
 arch stwall_2_2_4
 x 22
@@ -1724,25 +2022,49 @@ arch tower_tob
 x 22
 y 4
 end
+arch dungeon_floor
+x 22
+y 5
+end
 arch stwall_2_2_2
 x 22
 y 5
 end
-arch stwall_2_1_1
+arch dungeon_floor
 x 22
 y 6
 end
 arch stwall_2_1_1
 x 22
+y 6
+end
+arch dungeon_floor
+x 22
 y 7
 end
 arch stwall_2_1_1
+x 22
+y 7
+end
+arch dungeon_floor
 x 22
 y 8
 end
 arch stwall_2_1_1
 x 22
+y 8
+end
+arch dungeon_floor
+x 22
 y 9
+end
+arch stwall_2_1_1
+x 22
+y 9
+end
+arch dungeon_floor
+x 22
+y 10
 end
 arch stwall_2_2_1
 x 22
@@ -1768,6 +2090,10 @@ arch tower_tob
 x 22
 y 14
 end
+arch dungeon_floor
+x 22
+y 15
+end
 arch stwall_2_1_2
 x 22
 y 15
@@ -1788,17 +2114,33 @@ arch brush
 x 23
 y 1
 end
+arch dungeon_floor
+x 23
+y 2
+end
 arch stwall_2_2_3
 x 23
 y 2
 end
-arch stwall_2_1_1
+arch dungeon_floor
 x 23
 y 3
 end
 arch stwall_2_1_1
 x 23
+y 3
+end
+arch dungeon_floor
+x 23
 y 4
+end
+arch stwall_2_1_1
+x 23
+y 4
+end
+arch dungeon_floor
+x 23
+y 5
 end
 arch stwall_2_2_4
 x 23
@@ -1820,167 +2162,51 @@ arch grass
 x 23
 y 9
 end
+arch dungeon_floor
+x 23
+y 10
+end
 arch stwall_2_2_3
 x 23
 y 10
+end
+arch dungeon_floor
+x 23
+y 11
 end
 arch stwall_2_1_1
 x 23
 y 11
 end
-arch stwall_2_1_1
+arch dungeon_floor
 x 23
 y 12
 end
 arch stwall_2_1_1
 x 23
+y 12
+end
+arch dungeon_floor
+x 23
 y 13
+end
+arch stwall_2_1_1
+x 23
+y 13
+end
+arch dungeon_floor
+x 23
+y 14
 end
 arch stwall_2_1_1
 x 23
 y 14
 end
-arch stwall_2_2_4
+arch dungeon_floor
 x 23
 y 15
 end
-arch city_tower
-slaying dm_wizard
-x 2
-y 8
-end
-More
-arch city_tower_2
-slaying dm_wizard
-x 2
-y 9
-end
-arch store_general
-slaying dm_shop
-x 6
-y 8
-end
-More
-arch store_general_2
-slaying dm_shop
-x 7
-y 8
-end
-More
-arch store_general_3
-slaying dm_shop
-x 6
-y 9
-end
-More
-arch store_general_4
-slaying dm_shop
-x 7
-y 9
-end
-arch inn
-slaying dm_inn
-x 6
-y 11
-end
-More
-arch inn_2
-slaying dm_inn
-x 7
-y 11
-end
-arch barrack_long
-x 9
-y 4
-end
-More
-arch barrack_long_2
-x 10
-y 4
-end
-arch church
-slaying dm_church
-x 12
-y 10
-end
-More
-arch church_2
-slaying dm_church
-x 13
-y 10
-end
-More
-arch church_3
-slaying dm_church
-x 12
-y 11
-end
-More
-arch church_4
-slaying dm_church
-x 13
-y 11
-end
-arch keep
-slaying dm_keep
-x 12
-y 13
-end
-More
-arch keep_2
-name keep
-slaying dm_keep
-x 13
-y 13
-end
-More
-arch keep_3
-name keep
-slaying dm_keep
-x 12
-y 14
-end
-More
-arch keep_4
-name keep
-slaying dm_keep
-x 13
-y 14
-end
-arch barrack_long
-x 14
-y 4
-end
-More
-arch barrack_long_2
-x 15
-y 4
-end
-arch barn
-x 18
-y 6
-end
-More
-arch barn_2
-x 19
-y 6
-end
-More
-arch barn_3
-x 18
-y 7
-end
-More
-arch barn_4
-x 19
-y 7
-end
-arch house_up
-x 18
-y 8
-end
-More
-arch house_up_2
-x 18
-y 9
+arch stwall_2_2_4
+x 23
+y 15
 end

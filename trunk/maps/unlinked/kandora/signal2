@@ -1,13 +1,15 @@
 arch map
+reset_timeout 7200
+difficulty 5
+width 12
+height 12
+enter_x 6
+enter_y 6
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 19:19:40 1999
 endmsg
-hp 6
-sp 6
-x 12
-y 12
 end
 arch afloor_right
 end
@@ -497,6 +499,7 @@ y 9
 end
 arch broo
 name Doogan
+name_pl Doogan
 msg
 @match *
 I will slit yer throat, scum!
@@ -505,16 +508,17 @@ hp 450
 x 5
 y 9
 carrying 35815
-arch mace_2
-end
-arch lockpicks
-end
-arch mithril_chainmail
+arch head
+name Doogan's Head
+name_pl Doogan's Head
 end
 arch bracers_ac
 end
-arch head
-name Doogan's Head
+arch mithril_chainmail
+end
+arch lockpicks
+end
+arch mace_2
 end
 end
 arch afloor_right
@@ -567,10 +571,18 @@ arch afloor_right
 x 6
 y 4
 end
+arch afloor_right
+x 6
+y 5
+end
 arch stair2_up
 slaying signal3
 x 6
 y 5
+end
+arch afloor_right
+x 6
+y 6
 end
 arch stair2_down
 slaying signal
@@ -845,17 +857,18 @@ y 6
 end
 arch dark_elf
 name mean thief
+name_pl mean thief
 hp 80
 x 9
 y 6
 carrying 14300
-arch bow
-end
-arch random_bow
-end
-arch random_bow
-end
 arch wand
+end
+arch random_bow
+end
+arch random_bow
+end
+arch bow
 end
 end
 arch afloor_left

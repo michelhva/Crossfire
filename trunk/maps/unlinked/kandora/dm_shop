@@ -1,44 +1,83 @@
 arch map
 name dm_shop
+reset_timeout 7200
+difficulty 1
+width 11
+height 11
+enter_x 1
+enter_y 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Jan 27 18:57:19 1999
 endmsg
-x 11
-y 11
+end
+arch woodfloor
 end
 arch wall_2_2_2
+end
+arch woodfloor
+y 1
 end
 arch wall_2_1_1
 y 1
 end
+arch woodfloor
+y 2
+end
 arch wall_2_1_1
 y 2
+end
+arch woodfloor
+y 3
 end
 arch wall_3_2
 y 3
 end
+arch woodfloor
+y 4
+end
 arch wall_2_1_1
 y 4
+end
+arch woodfloor
+y 5
 end
 arch wall_2_1_1
 y 5
 end
+arch woodfloor
+y 6
+end
 arch wall_2_1_1
 y 6
+end
+arch woodfloor
+y 7
 end
 arch wall_2_1_1
 y 7
 end
+arch woodfloor
+y 8
+end
 arch wall_2_1_1
 y 8
+end
+arch woodfloor
+y 9
 end
 arch wall_2_1_1
 y 9
 end
+arch woodfloor
+y 10
+end
 arch wall_2_2_1
 y 10
+end
+arch woodfloor
+x 1
 end
 arch wall_2_1_2
 x 1
@@ -64,10 +103,13 @@ little metal for trade.  The master in
 the corner will identify magical
 items, for a small fee.  You do belive
 in magic, don't you?
-
 endmsg
 x 1
 y 2
+end
+arch woodfloor
+x 1
+y 3
 end
 arch wall_2_1_2
 x 1
@@ -97,9 +139,16 @@ arch shop_ring
 x 1
 y 9
 end
+arch woodfloor
+x 1
+y 10
+end
 arch wall_2_1_2
 x 1
 y 10
+end
+arch woodfloor
+x 2
 end
 arch wall_2_1_2
 x 2
@@ -112,33 +161,41 @@ arch woodfloor
 x 2
 y 2
 end
+arch woodfloor
+x 2
+y 3
+end
 arch wall_2_1_2
 x 2
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 5
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 7
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 2
 y 9
+end
+arch woodfloor
+x 2
+y 10
 end
 arch wall_2_1_2
 x 2
@@ -161,6 +218,10 @@ arch woodfloor
 x 3
 y 2
 end
+arch woodfloor
+x 3
+y 3
+end
 arch wall_2_1_2
 x 3
 y 3
@@ -169,7 +230,7 @@ arch shop_food
 x 3
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 5
 end
@@ -177,7 +238,7 @@ arch shop_food
 x 3
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 3
 y 7
 end
@@ -189,11 +250,18 @@ arch shop_books
 x 3
 y 9
 end
-arch wall_2_1_2
+arch woodfloor
 x 3
 y 10
 end
 arch wall_2_1_2
+x 3
+y 10
+end
+arch woodfloor
+x 4
+end
+arch wall_2_1_2
 x 4
 end
 arch woodfloor
@@ -204,15 +272,19 @@ arch woodfloor
 x 4
 y 2
 end
+arch woodfloor
+x 4
+y 3
+end
 arch wall_2_1_2
 x 4
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 5
 end
@@ -220,22 +292,29 @@ arch shop_food
 x 4
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 7
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 9
+end
+arch woodfloor
+x 4
+y 10
 end
 arch wall_2_1_2
 x 4
 y 10
 end
+arch woodfloor
+x 5
+end
 arch wall_2_1_2
 x 5
 end
@@ -251,11 +330,15 @@ arch shop_mat
 x 5
 y 2
 end
+arch woodfloor
+x 5
+y 3
+end
 arch wall_2_1_2
 x 5
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 5
 y 4
 end
@@ -263,7 +346,7 @@ arch shop_mat
 x 5
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 5
 y 5
 end
@@ -271,7 +354,7 @@ arch shop_food
 x 5
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 5
 y 7
 end
@@ -283,9 +366,16 @@ arch shop_amulets
 x 5
 y 9
 end
+arch woodfloor
+x 5
+y 10
+end
 arch wall_2_1_2
 x 5
 y 10
+end
+arch woodfloor
+x 6
 end
 arch wall_2_1_2
 x 6
@@ -298,15 +388,19 @@ arch woodfloor
 x 6
 y 2
 end
+arch woodfloor
+x 6
+y 3
+end
 arch wall_2_1_2
 x 6
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 5
 end
@@ -314,7 +408,7 @@ arch shop_food
 x 6
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 6
 y 7
 end
@@ -326,9 +420,16 @@ arch shop_amulets
 x 6
 y 9
 end
+arch woodfloor
+x 6
+y 10
+end
 arch wall_2_1_2
 x 6
 y 10
+end
+arch woodfloor
+x 7
 end
 arch wall_2_1_2
 x 7
@@ -341,6 +442,10 @@ arch woodfloor
 x 7
 y 2
 end
+arch woodfloor
+x 7
+y 3
+end
 arch wall_2_1_2
 x 7
 y 3
@@ -349,7 +454,7 @@ arch shop_food
 x 7
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 5
 end
@@ -357,21 +462,28 @@ arch shop_food
 x 7
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 7
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 8
 end
-arch woodfloor
+arch shop_empty
 x 7
 y 9
+end
+arch woodfloor
+x 7
+y 10
 end
 arch wall_2_1_2
 x 7
 y 10
+end
+arch woodfloor
+x 8
 end
 arch wall_2_1_2
 x 8
@@ -392,23 +504,27 @@ arch gold_converter
 x 8
 y 2
 end
+arch woodfloor
+x 8
+y 3
+end
 arch wall_2_1_2
 x 8
 y 3
 end
-arch woodfloor
+arch shop_empty
 x 8
 y 4
 end
-arch woodfloor
+arch shop_empty
 x 8
 y 5
 end
-arch woodfloor
+arch shop_empty
 x 8
 y 6
 end
-arch woodfloor
+arch shop_empty
 x 8
 y 7
 end
@@ -420,9 +536,16 @@ arch shop_armour
 x 8
 y 9
 end
+arch woodfloor
+x 8
+y 10
+end
 arch wall_2_1_2
 x 8
 y 10
+end
+arch woodfloor
+x 9
 end
 arch wall_2_1_2
 x 9
@@ -453,6 +576,10 @@ arch silver_converter
 x 9
 y 2
 end
+arch woodfloor
+x 9
+y 3
+end
 arch wall_2_1_2
 x 9
 y 3
@@ -481,48 +608,95 @@ arch shop_weapon
 x 9
 y 9
 end
+arch woodfloor
+x 9
+y 10
+end
 arch wall_2_1_2
 x 9
 y 10
 end
+arch woodfloor
+x 10
+end
 arch wall_2_2_3
 x 10
 end
-arch wall_2_1_1
+arch woodfloor
 x 10
 y 1
 end
 arch wall_2_1_1
 x 10
+y 1
+end
+arch woodfloor
+x 10
 y 2
+end
+arch wall_2_1_1
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
 end
 arch wall_3_4
 x 10
 y 3
 end
-arch wall_2_1_1
+arch woodfloor
 x 10
 y 4
 end
 arch wall_2_1_1
 x 10
+y 4
+end
+arch woodfloor
+x 10
 y 5
 end
 arch wall_2_1_1
+x 10
+y 5
+end
+arch woodfloor
 x 10
 y 6
 end
 arch wall_2_1_1
 x 10
+y 6
+end
+arch woodfloor
+x 10
 y 7
 end
 arch wall_2_1_1
+x 10
+y 7
+end
+arch woodfloor
 x 10
 y 8
 end
 arch wall_2_1_1
 x 10
+y 8
+end
+arch woodfloor
+x 10
 y 9
+end
+arch wall_2_1_1
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
 end
 arch wall_2_2_4
 x 10

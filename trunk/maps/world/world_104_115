@@ -1,21 +1,21 @@
 arch map
 name world_104_115
+reset_timeout 7200
+difficulty 1
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:41:49 2001
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
-tile_path_1 world_104_114
-tile_path_2 world_105_115
-tile_path_3 world_104_116
-tile_path_4 world_103_115
+tile_path_1 /world/world_104_114
+tile_path_2 /world/world_105_115
+tile_path_3 /world/world_104_116
+tile_path_4 /world/world_103_115
 end
 arch brush
 end
@@ -2183,6 +2183,7 @@ y 3
 end
 arch hut
 name An ancient hut
+name_pl An ancient hut
 slaying /dungeons/hut/ancient_hut
 hp 6
 x 11
@@ -8542,6 +8543,12 @@ arch cobblestones2
 x 41
 y 28
 end
+arch barn
+name dragon hangar
+name_pl dragon hangar
+x 41
+y 28
+end
 arch dungeon_magic
 x 41
 y 29
@@ -8570,6 +8577,15 @@ arch brush
 x 41
 y 31
 end
+arch store_magic
+name Magic Shop
+name_pl Magic Shop
+slaying /scorn/shops/magicshop
+hp 14
+sp 14
+x 41
+y 31
+end
 arch dungeon_magic
 x 41
 y 32
@@ -8591,6 +8607,14 @@ x 41
 y 34
 end
 arch cobblestones2
+x 41
+y 34
+end
+arch city_tower
+name Friendly Giant's Tower
+name_pl Friendly Giant's Tower
+slaying /scorn/kar/somehouse
+hp 14
 x 41
 y 34
 end
@@ -8704,6 +8728,13 @@ x 41
 y 44
 end
 arch grass
+x 41
+y 44
+end
+arch stronghold
+slaying /scorn/misc/castle
+hp 11
+sp 20
 x 41
 y 44
 end
@@ -8871,6 +8902,15 @@ x 42
 y 23
 end
 arch cobblestones2
+x 42
+y 23
+end
+arch dragon_exit
+name to Pupland Terminal
+name_pl to Pupland Terminal
+slaying /pup_land/terminal
+hp 10
+sp 2
 x 42
 y 23
 end
@@ -9203,6 +9243,10 @@ arch sea
 x 43
 y 19
 end
+arch longship
+x 43
+y 19
+end
 arch dungeon_magic
 x 43
 y 20
@@ -9279,6 +9323,12 @@ arch cobblestones2
 x 43
 y 28
 end
+arch barn
+name dragon hangar
+name_pl dragon hangar
+x 43
+y 28
+end
 arch dungeon_magic
 x 43
 y 29
@@ -9332,6 +9382,15 @@ x 43
 y 34
 end
 arch grass
+x 43
+y 34
+end
+arch barrack_long
+name Mess Hall
+name_pl Mess Hall
+slaying /scorn/houses/messhall
+hp 24
+sp 4
 x 43
 y 34
 end
@@ -9389,6 +9448,15 @@ x 43
 y 39
 end
 arch brush
+x 43
+y 39
+end
+arch church
+name Church of Valriel
+name_pl Church of Valriel
+slaying /scorn/temples/valriel
+hp 9
+sp 28
 x 43
 y 39
 end
@@ -9671,6 +9739,15 @@ arch brush
 x 44
 y 31
 end
+arch store_weapons
+name Weapon shop
+name_pl Weapon shop
+slaying /scorn/shops/weaponshop
+hp 1
+sp 14
+x 44
+y 31
+end
 arch dungeon_magic
 x 44
 y 32
@@ -9712,6 +9789,13 @@ x 44
 y 36
 end
 arch grass
+x 44
+y 36
+end
+arch store_alchemy
+slaying /scorn/shops/potionshop
+hp 14
+sp 14
 x 44
 y 36
 end
@@ -10118,6 +10202,15 @@ arch brush
 x 45
 y 39
 end
+arch t_house2
+name Temple of Gaea
+name_pl Temple of Gaea
+slaying /scorn/temples/gaea
+hp 12
+sp 18
+x 45
+y 39
+end
 arch dungeon_magic
 x 45
 y 40
@@ -10156,9 +10249,9 @@ y 43
 end
 arch marker
 slaying hello
-speed_left -1.100000
 x 45
 y 43
+speed_left -1.100000
 end
 arch dungeon_magic
 x 45
@@ -10169,9 +10262,9 @@ x 45
 y 44
 end
 arch fountain
-speed_left -45.599998
 x 45
 y 44
+speed_left -45.599998
 end
 arch dungeon_magic
 x 45
@@ -10193,13 +10286,13 @@ arch creator
 slaying manna from heaven
 other_arch waybread
 hp 3
+x 45
+y 46
 resist_electricity 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 216
-x 45
-y 46
 end
 arch dungeon_magic
 x 45
@@ -10210,9 +10303,9 @@ x 45
 y 47
 end
 arch fountain
-speed_left -45.599998
 x 45
 y 47
+speed_left -45.599998
 end
 arch dungeon_magic
 x 45
@@ -10225,6 +10318,8 @@ end
 arch detector
 slaying hello
 hp 1
+x 45
+y 48
 speed_left -0.600000
 resist_electricity 30
 resist_cold 30
@@ -10232,8 +10327,6 @@ resist_acid 30
 resist_drain 30
 invisible 1
 connected 216
-x 45
-y 48
 end
 arch dungeon_magic
 x 45
@@ -10490,7 +10583,12 @@ arch grass
 x 46
 y 34
 end
-arch house_2
+arch barrack_long
+name Barracks
+name_pl Barracks
+slaying /scorn/houses/barracks
+hp 24
+sp 4
 x 46
 y 34
 end
@@ -10511,6 +10609,15 @@ x 46
 y 36
 end
 arch grass
+x 46
+y 36
+end
+arch barrack_up
+name Mercenaries agency
+name_pl Mercenaries agency
+slaying /scorn/misc/mercenaries
+hp 6
+sp 15
 x 46
 y 36
 end
@@ -10717,6 +10824,10 @@ arch sea
 x 47
 y 19
 end
+arch s_ship
+x 47
+y 19
+end
 arch dungeon_magic
 x 47
 y 20
@@ -10821,6 +10932,15 @@ arch brush
 x 47
 y 31
 end
+arch store_armour
+name Armour Shop
+name_pl Armour Shop
+slaying /scorn/shops/armourshop
+hp 14
+sp 1
+x 47
+y 31
+end
 arch dungeon_magic
 x 47
 y 32
@@ -10842,10 +10962,6 @@ x 47
 y 34
 end
 arch grass
-x 47
-y 34
-end
-arch house_2
 x 47
 y 34
 end
@@ -10866,6 +10982,13 @@ x 47
 y 36
 end
 arch grass
+x 47
+y 36
+end
+arch store_weapons
+slaying /scorn/shops/bowshop
+hp 14
+sp 14
 x 47
 y 36
 end
@@ -10951,9 +11074,9 @@ x 47
 y 44
 end
 arch fountain
-speed_left -45.599998
 x 47
 y 44
+speed_left -45.599998
 end
 arch dungeon_magic
 x 47
@@ -10980,9 +11103,9 @@ x 47
 y 47
 end
 arch fountain
-speed_left -45.599998
 x 47
 y 47
+speed_left -45.599998
 end
 arch dungeon_magic
 x 47
@@ -11127,6 +11250,10 @@ arch cobblestones2
 x 48
 y 24
 end
+arch barn
+x 48
+y 24
+end
 arch dungeon_magic
 x 48
 y 25
@@ -11156,6 +11283,10 @@ x 48
 y 28
 end
 arch cobblestones2
+x 48
+y 28
+end
+arch barn
 x 48
 y 28
 end
@@ -11211,11 +11342,19 @@ arch grass
 x 48
 y 34
 end
+arch house_2
+x 48
+y 34
+end
 arch dungeon_magic
 x 48
 y 35
 end
 arch grass
+x 48
+y 35
+end
+arch house_2
 x 48
 y 35
 end
@@ -11248,6 +11387,15 @@ x 48
 y 39
 end
 arch brush
+x 48
+y 39
+end
+arch temple1
+name Temple of Sorig
+name_pl Temple of Sorig
+slaying /scorn/temples/sorig
+hp 8
+sp 15
 x 48
 y 39
 end
@@ -11654,9 +11802,9 @@ x 49
 y 44
 end
 arch fountain
-speed_left -45.599998
 x 49
 y 44
+speed_left -45.599998
 end
 arch dungeon_magic
 x 49
@@ -11683,9 +11831,9 @@ x 49
 y 47
 end
 arch fountain
-speed_left -45.599998
 x 49
 y 47
+speed_left -45.599998
 end
 arch dungeon_magic
 x 49
@@ -11706,141 +11854,4 @@ end
 arch cwall_2_1_2
 x 49
 y 49
-end
-arch barn
-name dragon hangar
-name_pl dragon hangar
-x 41
-y 28
-end
-arch store_magic
-name Magic Shop
-name_pl Magic Shop
-slaying /scorn/shops/magicshop
-hp 14
-sp 14
-x 41
-y 31
-end
-arch city_tower
-name Friendly Giant's Tower
-name_pl Friendly Giant's Tower
-slaying /scorn/kar/somehouse
-hp 14
-x 41
-y 34
-end
-arch stronghold
-slaying /scorn/misc/castle
-hp 11
-sp 20
-x 41
-y 44
-end
-arch dragon_exit
-name to Pupland Terminal
-name_pl to Pupland Terminal
-slaying /pup_land/terminal
-hp 10
-sp 2
-x 42
-y 23
-end
-arch longship
-x 43
-y 19
-end
-arch barn
-name dragon hangar
-name_pl dragon hangar
-x 43
-y 28
-end
-arch barrack_long
-x 43
-y 34
-end
-arch church
-name Church of Valriel
-name_pl Church of Valriel
-slaying /scorn/temples/valriel
-hp 9
-sp 28
-x 43
-y 39
-end
-arch store_weapons
-name Weapon shop
-name_pl Weapon shop
-slaying /scorn/shops/weaponshop
-hp 1
-sp 14
-x 44
-y 31
-end
-arch store_alchemy
-slaying /scorn/shops/potionshop
-hp 14
-sp 14
-x 44
-y 36
-end
-arch t_house2
-name Temple of Gaea
-name_pl Temple of Gaea
-slaying /scorn/temples/gaea
-hp 12
-sp 18
-x 45
-y 39
-end
-arch barrack_up
-name Mercenaries agency
-name_pl Mercenaries agency
-slaying /scorn/misc/mercenaries
-hp 6
-sp 15
-x 46
-y 36
-end
-arch s_ship
-x 47
-y 19
-end
-arch store_armour
-name Armour Shop
-name_pl Armour Shop
-slaying /scorn/shops/armourshop
-hp 14
-sp 1
-x 47
-y 31
-end
-arch store_weapons
-slaying /scorn/shops/bowshop
-hp 14
-sp 14
-x 47
-y 36
-end
-arch barn
-x 48
-y 24
-end
-arch barn
-x 48
-y 28
-end
-arch barrack_up
-x 48
-y 34
-end
-arch temple1
-name Temple of Sorig
-name_pl Temple of Sorig
-slaying /scorn/temples/sorig
-hp 8
-sp 15
-x 48
-y 39
 end
