@@ -1,4 +1,5 @@
 Object guildmaster
+race human
 randomitems book
 name guildmaster
 msg

@@ -1,4 +1,5 @@
 Object siegfried
+race human
 name Siegfried
 face siegfried.111
 anim

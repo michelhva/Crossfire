@@ -1,4 +1,5 @@
 Object dark_elf
+race humanoid
 name dark elf
 randomitems dark_elf
 face dark_elf.111

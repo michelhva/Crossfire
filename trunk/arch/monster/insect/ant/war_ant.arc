@@ -1,7 +1,7 @@
 Object war_ant
 face war_ant.131
 name Warrior Ant
-race ant
+race insect
 anim
 facings 2
 war_ant.131

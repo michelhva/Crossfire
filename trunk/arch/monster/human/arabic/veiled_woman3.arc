@@ -1,4 +1,5 @@
 Object veiled_woman3
+race human
 name Veiled woman
 face veiled_woman3.111
 alive 1

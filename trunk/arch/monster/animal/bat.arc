@@ -1,5 +1,6 @@
 Object bat
 face bat.111
+race animal
 anim
 bat.111
 bat.112

@@ -1,7 +1,7 @@
 Object work_ant
 face work_ant.131
 name Worker Ant
-race ant
+race insect
 anim
 facings 2
 work_ant.131

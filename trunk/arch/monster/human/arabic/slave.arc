@@ -1,4 +1,5 @@
 Object slave
+race human
 name slave
 randomitems slave
 face slave.111

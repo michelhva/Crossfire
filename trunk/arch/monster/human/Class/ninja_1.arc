@@ -1,5 +1,6 @@
 Object ninja_1
 name ninja
+race human
 randomitems npc_ninja
 face ninja.171
 animation ninja

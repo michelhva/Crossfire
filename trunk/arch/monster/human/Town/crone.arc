@@ -1,4 +1,5 @@
 Object crone
+race human
 face crone.111
 sp 40
 maxsp 40

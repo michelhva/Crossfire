@@ -1,5 +1,6 @@
 Object giant_bat
 name giant bat
+race animal
 face giant_bat.111
 randomitems giant_bat
 anim

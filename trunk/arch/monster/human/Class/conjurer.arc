@@ -1,6 +1,7 @@
 Object conjurer
 randomitems conjurer
 name conjurer
+race human
 face conjurer.111
 anim
 conjurer.111

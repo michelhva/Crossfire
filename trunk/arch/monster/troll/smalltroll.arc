@@ -1,5 +1,6 @@
 Object small_troll
 randomitems troll
+race troll
 name small troll
 face smalltroll.111
 anim

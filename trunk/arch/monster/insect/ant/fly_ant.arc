@@ -1,6 +1,6 @@
 Object fly_ant
 face fly_ant.131
-race ant
+race insect
 anim
 facings 2
 fly_ant.131

@@ -2,6 +2,7 @@ Object c_woman
 name city dweller
 randomitems jail
 face woman.111
+race human
 animation woman
 sp 10
 maxsp 10

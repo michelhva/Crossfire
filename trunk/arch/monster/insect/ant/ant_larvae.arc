@@ -1,6 +1,6 @@
 Object ant_larvae
 face ant_larvae.111
-race ant
+race insect
 other_arch war_ant
 anim
 ant_larvae.111

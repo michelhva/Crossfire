@@ -1,4 +1,5 @@
 Object big_slave
+race human
 randomitems slave
 name big slave
 face big_slave.111

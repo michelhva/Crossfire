@@ -1,4 +1,5 @@
 Object pyromaniac
+race human
 name wild pyromaniac
 randomitems pyromaniac
 alive 1

@@ -1,5 +1,6 @@
 Object prisoner
 face prisoner.111
+race human
 anim
 prisoner.111
 prisoner.111

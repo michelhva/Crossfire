@@ -1,4 +1,5 @@
 Object generate_xan
+race insect
 other_arch xan
 race xan
 name Mosquito eggs

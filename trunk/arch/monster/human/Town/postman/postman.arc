@@ -1,6 +1,7 @@
 Object postman
 randomitems postman
 face postman.131
+race human
 anim
 facings 2
 postman.131

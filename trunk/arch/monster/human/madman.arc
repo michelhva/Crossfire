@@ -1,6 +1,7 @@
 Object madman
 randomitems throw_stnd
 face madman.111
+race human
 anim
 madman.111
 madman.112

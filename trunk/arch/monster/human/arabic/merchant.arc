@@ -1,4 +1,5 @@
 Object merchant
+race human
 name Merchant
 randomitems throw_stnd
 face merchant.111

@@ -1,5 +1,6 @@
 Object pirate
 randomitems pirate
+race human
 face pirate.111
 anim
 pirate.111

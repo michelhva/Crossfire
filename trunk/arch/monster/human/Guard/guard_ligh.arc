@@ -1,4 +1,5 @@
 Object light_guard
+race human
 name castle guard
 face guard_ligh.111
 color_fg brown

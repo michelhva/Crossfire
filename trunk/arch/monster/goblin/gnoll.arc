@@ -1,5 +1,6 @@
 Object gnoll
 randomitems gnoll
+race humanoid
 face gnoll.111
 color_fg brown
 anim

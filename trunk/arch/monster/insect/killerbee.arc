@@ -1,5 +1,6 @@
 Object killer_bee
 name killer bee
+race insect
 face killerbee.111
 speed -0.25
 weight -1

@@ -1,5 +1,6 @@
 Object spider
 face spider.111
+race insect
 anim
 spider.111
 spider.112

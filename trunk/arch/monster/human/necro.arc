@@ -1,6 +1,7 @@
 Object necromancer
 name Necromancer
 face necro.111
+race human
 Str 5
 Dex 5
 Wis 1

@@ -1,4 +1,5 @@
 Object woman
+race human
 name woman
 randomitems throw_stnd
 face woman.111

@@ -1,4 +1,5 @@
 Object greater_dwarven_guard
+race humanoid
 name greater dwarven guard
 randomitems gdwar_guard
 face greater_dwarven_guard.111
