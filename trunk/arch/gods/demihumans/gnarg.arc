@@ -20,11 +20,7 @@ attacktype 1024
 path_attuned 131088
 path_repelled 65792
 resist_poison 100
-
-resist_poison 30
-
 resist_fear -100
-
 hp 1000
 ac -5
 wc -3
