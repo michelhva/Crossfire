@@ -1,3 +1,18 @@
+Object talisman
+name talisman
+face talisman.111
+type 74
+color_fg grey
+weight 1000
+value 300
+nrof 1
+material 12
+editable 2048
+name_pl talismans
+client_type 451
+body_skill -1
+end
+#
 Object talisman_sorcery
 name talisman
 title of sorcery
