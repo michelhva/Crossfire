@@ -9,8 +9,7 @@ ac 6
 resist_physical 50
 weight 60000
 value 50000
-resist_fire 30
-
+resist_fire 40
 magic 3
 editable 5120
 identified 1
