@@ -149,7 +149,15 @@ arch woodfloor2
 x 1
 y 5
 end
+arch chair_1.1
+x 1
+y 5
+end
 arch woodfloor2
+x 1
+y 6
+end
+arch table_3
 x 1
 y 6
 end
@@ -232,8 +240,8 @@ x 2
 y 3
 end
 arch identify_table
-name Drop 25 gold to identify an item.
-food 250
+name Drop 26 gold to identify an item.
+food 260
 x 2
 y 3
 end
@@ -246,6 +254,10 @@ x 2
 y 5
 end
 arch woodfloor2
+x 2
+y 6
+end
+arch chair_1.2
 x 2
 y 6
 end
@@ -337,10 +349,6 @@ x 3
 y 5
 end
 arch woodfloor2
-x 3
-y 6
-end
-arch chair_1.4
 x 3
 y 6
 end
@@ -446,26 +454,6 @@ x 4
 y 5
 end
 arch chair_1.1
-x 4
-y 5
-end
-arch fighter
-name Samar
-msg
-@match hi|hello
-Good day for it eh?
-@match it?
-Kicking up and having a pint.
-@match dwarves|mine
-Ya, I hired on to guard the mine.
-Good work if you get along with dwarves.
-Funny, they don't let on where they really live.
-They surely don't live in that dingy mine.
-endmsg
-title the quick
-level 6
-unaggressive 0
-friendly 1
 x 4
 y 5
 end
@@ -596,6 +584,26 @@ x 5
 y 6
 end
 arch chair_1.2
+x 5
+y 6
+end
+arch fighter
+name Samar
+msg
+@match hi|hello
+Good day for it eh?
+@match it?
+Kicking up and having a pint.
+@match dwarves|mine
+Ya, I hired on to guard the mine.
+Good work if you get along with dwarves.
+Funny, they don't let on where they really live.
+They surely don't live in that dingy mine.
+endmsg
+title the quick
+level 6
+unaggressive 0
+friendly 1
 x 5
 y 6
 end
@@ -1139,10 +1147,9 @@ His chickens are always in my garden!
 @match priest
 Veratin, the priest of the small church next door.
 @match *
-Greetings and welcome to my inn.
-Rooms are available upstairs for a modest price.
-Please remember if you leave you will
-have to pay again.
+Greetings I am Grumm, welcome to my inn.
+Rooms and worship facilities for Mostrai are available upstairs for a modest price.
+Please remember if you leave you will have to pay again.
 endmsg
 unaggressive 0
 friendly 1
@@ -1366,18 +1373,6 @@ x 13
 y 3
 end
 arch woodfloor2
-name woodfloor
-x 13
-y 4
-end
-arch c_man
-name Riakus
-msg
-@match *
-Hello stranger.  Please tell us news
-from other lands.  We get so few
-visitors..
-endmsg
 x 13
 y 4
 end
@@ -1880,11 +1875,23 @@ arch woodfloor2
 x 18
 y 5
 end
-arch woodfloor2
+arch chair_1.2
 x 18
 y 6
 end
-arch chair_1.2
+arch woodfloor2
+name woodfloor
+x 18
+y 6
+end
+arch c_man
+name Riakus
+msg
+@match *
+Hello stranger.  Please tell us news
+from other lands.  We get so few
+visitors..
+endmsg
 x 18
 y 6
 end
@@ -1893,22 +1900,6 @@ x 18
 y 7
 end
 arch woodfloor2
-x 18
-y 8
-end
-arch chair_1.4
-x 18
-y 8
-end
-arch dwarf_wiz
-msg
-@match mine
-I'd sooner cut out my tongue than tell
-where the hidden valley lies.
-@match *
-I'm too busy to answer your queries.
-endmsg
-hp 48
 x 18
 y 8
 end
@@ -1991,23 +1982,23 @@ arch woodfloor2
 x 19
 y 7
 end
-arch chair_1.1
-x 19
-y 7
-end
-arch warrior_1
-msg
-@match *
-Hand't ya ever seen a dwarf before?!
-endmsg
-x 19
-y 7
-end
 arch woodfloor2
 x 19
 y 8
 end
-arch table_3
+arch chair_1.4
+x 19
+y 8
+end
+arch dwarf_wiz
+msg
+@match mine
+I'd sooner cut out my tongue than tell
+where the hidden valley lies.
+@match *
+I'm too busy to answer your queries.
+endmsg
+hp 48
 x 19
 y 8
 end
@@ -2073,34 +2064,38 @@ arch woodfloor2
 x 20
 y 3
 end
+arch altar
+name drop 50 gold for a room
+type 31
+invisible 1
+slaying goldcoin
+food 50
+connected 5
+last_sp 1
+x 20
+y 3
+end
 arch stair_up_2
+name drop 50 gold for a room
+msg
+Please drop 50 gold for a room.
+Try to use exact change...
+endmsg
+type 98
+x 20
+y 3
+end
+arch teleporter
 slaying grumms_inn2
 hp 20
 sp 3
+invisible 1
+connected 5
+speed 0.0
 x 20
 y 3
 end
 arch woodfloor2
-x 20
-y 4
-end
-arch altar
-name drop 50 gold for a room
-type 31
-slaying goldcoin
-food 50
-connected 1
-last_sp 1
-x 20
-y 4
-end
-arch teleporter
-invisible 1
-slaying grumms_inn2
-hp 20
-sp 3
-connected 1
-speed 0.0
 x 20
 y 4
 end
@@ -2116,11 +2111,23 @@ arch woodfloor2
 x 20
 y 7
 end
-arch brazier
+arch chair_1.1
+x 20
+y 7
+end
+arch warrior_1
+msg
+@match *
+Hand't ya ever seen a dwarf before?!
+endmsg
 x 20
 y 7
 end
 arch woodfloor2
+x 20
+y 8
+end
+arch table_3
 x 20
 y 8
 end
