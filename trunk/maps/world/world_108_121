@@ -11,14 +11,14 @@ tile_path_2 world_109_121
 tile_path_3 world_108_122
 tile_path_4 world_107_121
 end
-arch hills_rocky
+arch treed_hills
 elevation 2520
 end
 arch tree
 elevation 2725
 y 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 2746
 y 2
 end
@@ -26,7 +26,7 @@ arch tree
 elevation 2913
 y 3
 end
-arch steppe
+arch treed_hills
 elevation 3001
 y 4
 end
@@ -212,17 +212,17 @@ arch woods
 elevation 2023
 x 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 1377
 x 1
 y 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 2434
 x 1
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 2749
 x 1
 y 3
@@ -464,12 +464,12 @@ elevation 1712
 x 2
 y 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 1638
 x 2
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 1749
 x 2
 y 3
@@ -711,12 +711,12 @@ elevation 1466
 x 3
 y 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 1274
 x 3
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 1887
 x 3
 y 3
@@ -3666,7 +3666,7 @@ elevation 5450
 x 14
 y 49
 end
-arch hills_rocky
+arch treed_hills
 elevation 1970
 x 15
 end
@@ -4654,7 +4654,7 @@ elevation 5803
 x 18
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 3150
 x 19
 end
@@ -4663,7 +4663,7 @@ elevation 3570
 x 19
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 3153
 x 19
 y 2
@@ -4905,12 +4905,12 @@ arch hills
 elevation 3941
 x 20
 end
-arch steppe
+arch jungle_1
 elevation 4375
 x 20
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 3847
 x 20
 y 2
@@ -5148,16 +5148,16 @@ elevation 4609
 x 20
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 4465
 x 21
 end
-arch steppe
+arch jungle_1
 elevation 4955
 x 21
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 4638
 x 21
 y 2
@@ -5395,11 +5395,11 @@ elevation 6069
 x 21
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 4085
 x 22
 end
-arch steppe
+arch jungle_1
 elevation 4886
 x 22
 y 1
@@ -8115,7 +8115,7 @@ arch woods_2
 elevation 2941
 x 33
 end
-arch steppe
+arch jungle_1
 elevation 3128
 x 33
 y 1
@@ -8358,11 +8358,11 @@ elevation 4928
 x 33
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 3294
 x 34
 end
-arch steppe
+arch jungle_1
 elevation 3013
 x 34
 y 1
@@ -8605,7 +8605,7 @@ elevation 4670
 x 34
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 3128
 x 35
 end

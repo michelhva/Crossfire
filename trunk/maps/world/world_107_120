@@ -158,7 +158,7 @@ arch hills
 elevation 4266
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3911
 y 36
 end
@@ -174,7 +174,7 @@ arch woods_3
 elevation 1647
 y 39
 end
-arch grass
+arch jungle_2
 elevation 334
 y 40
 end
@@ -194,23 +194,23 @@ arch woods_3
 elevation 1936
 y 44
 end
-arch hills_rocky
+arch treed_hills
 elevation 3170
 y 45
 end
-arch grass
+arch jungle_2
 elevation 85
 y 46
 end
-arch brush
+arch evergreens
 elevation 1126
 y 47
 end
-arch grass
+arch jungle_2
 elevation 61
 y 48
 end
-arch grass
+arch jungle_2
 elevation 44
 y 49
 end
@@ -273,7 +273,7 @@ elevation 6229
 x 1
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 4708
 x 1
 y 12
@@ -393,12 +393,12 @@ elevation 4138
 x 1
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 4070
 x 1
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 3751
 x 1
 y 37
@@ -413,17 +413,17 @@ elevation 1925
 x 1
 y 39
 end
-arch grass
+arch jungle_2
 elevation 923
 x 1
 y 40
 end
-arch grass
+arch jungle_2
 elevation 202
 x 1
 y 41
 end
-arch grass
+arch jungle_2
 elevation 270
 x 1
 y 42
@@ -443,7 +443,7 @@ elevation 2916
 x 1
 y 45
 end
-arch grass
+arch jungle_2
 elevation 353
 x 1
 y 46
@@ -453,12 +453,12 @@ elevation 1269
 x 1
 y 47
 end
-arch grass
+arch jungle_2
 elevation 470
 x 1
 y 48
 end
-arch brush
+arch evergreens
 elevation 138
 x 1
 y 49
@@ -527,7 +527,7 @@ elevation 4793
 x 2
 y 12
 end
-arch hills_rocky
+arch treed_hills
 elevation 4144
 x 2
 y 13
@@ -647,7 +647,7 @@ elevation 3530
 x 2
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 4347
 x 2
 y 37
@@ -662,17 +662,17 @@ elevation 2465
 x 2
 y 39
 end
-arch grass
+arch jungle_2
 elevation 329
 x 2
 y 40
 end
-arch grass
+arch jungle_2
 elevation 66
 x 2
 y 41
 end
-arch grass
+arch jungle_2
 elevation 569
 x 2
 y 42
@@ -697,22 +697,22 @@ elevation 1269
 x 2
 y 46
 end
-arch grass
+arch jungle_2
 elevation 495
 x 2
 y 47
 end
-arch grass
+arch jungle_2
 elevation 257
 x 2
 y 48
 end
-arch grass
+arch jungle_2
 elevation 2131
 x 2
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 4169
 x 3
 end
@@ -721,7 +721,7 @@ elevation 2921
 x 3
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 3678
 x 3
 y 2
@@ -741,7 +741,7 @@ elevation 5995
 x 3
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3138
 x 3
 y 6
@@ -766,7 +766,7 @@ elevation 6715
 x 3
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 4162
 x 3
 y 11
@@ -901,7 +901,7 @@ elevation 5484
 x 3
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 4759
 x 3
 y 38
@@ -911,7 +911,7 @@ elevation 3131
 x 3
 y 39
 end
-arch grass
+arch jungle_2
 elevation 876
 x 3
 y 40
@@ -946,7 +946,7 @@ elevation 1107
 x 3
 y 46
 end
-arch grass
+arch jungle_2
 elevation 496
 x 3
 y 47
@@ -975,22 +975,22 @@ elevation 2548
 x 4
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3906
 x 4
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 4895
 x 4
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 4883
 x 4
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 4572
 x 4
 y 6
@@ -1030,7 +1030,7 @@ elevation 2751
 x 4
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3418
 x 4
 y 14
@@ -1110,27 +1110,27 @@ elevation 1640
 x 4
 y 29
 end
-arch grass
+arch jungle_2
 elevation 539
 x 4
 y 30
 end
-arch grass
+arch jungle_2
 elevation 550
 x 4
 y 31
 end
-arch grass
+arch jungle_2
 elevation 154
 x 4
 y 32
 end
-arch grass
+arch jungle_2
 elevation 701
 x 4
 y 33
 end
-arch grass
+arch jungle_2
 elevation 180
 x 4
 y 34
@@ -1155,7 +1155,7 @@ elevation 5534
 x 4
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 3555
 x 4
 y 39
@@ -1190,32 +1190,39 @@ elevation 1128
 x 4
 y 45
 end
-arch grass
+arch jungle_2
 elevation 285
 x 4
 y 46
 end
-arch grass
+arch jungle_2
 elevation 226
 x 4
 y 47
 end
-arch grass
+arch jungle_2
 elevation 495
 x 4
 y 48
 end
-arch grass
+arch jungle_2
 elevation 495
 x 4
 y 49
 end
-arch desert
+arch grassdark
 elevation 648
 x 5
 end
-arch desert
+arch forestsparse
+x 5
+end
+arch grassdark
 elevation 464
+x 5
+y 1
+end
+arch forestsparse
 x 5
 y 1
 end
@@ -1229,7 +1236,7 @@ elevation 2951
 x 5
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3699
 x 5
 y 4
@@ -1259,12 +1266,12 @@ elevation 5873
 x 5
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4975
 x 5
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3288
 x 5
 y 11
@@ -1329,12 +1336,12 @@ elevation 1460
 x 5
 y 23
 end
-arch grass
+arch jungle_2
 elevation 712
 x 5
 y 24
 end
-arch grass
+arch jungle_2
 elevation 21
 x 5
 y 25
@@ -1359,22 +1366,22 @@ elevation 2317
 x 5
 y 29
 end
-arch grass
+arch jungle_2
 elevation 206
 x 5
 y 30
 end
-arch grass
+arch jungle_2
 elevation 431
 x 5
 y 31
 end
-arch grass
+arch jungle_2
 elevation 163
 x 5
 y 32
 end
-arch grass
+arch jungle_2
 elevation 783
 x 5
 y 33
@@ -1409,12 +1416,12 @@ elevation 3673
 x 5
 y 39
 end
-arch grass
+arch jungle_2
 elevation 850
 x 5
 y 40
 end
-arch grass
+arch jungle_2
 elevation 192
 x 5
 y 41
@@ -1424,32 +1431,32 @@ elevation 1246
 x 5
 y 42
 end
-arch grass
+arch jungle_2
 elevation 608
 x 5
 y 43
 end
-arch grass
+arch jungle_2
 elevation 466
 x 5
 y 44
 end
-arch grass
+arch jungle_2
 elevation 398
 x 5
 y 45
 end
-arch grass
+arch jungle_2
 elevation 185
 x 5
 y 46
 end
-arch grass
+arch jungle_2
 elevation 220
 x 5
 y 47
 end
-arch grass
+arch jungle_2
 elevation 501
 x 5
 y 48
@@ -1463,8 +1470,12 @@ arch jungle_1
 elevation 1519
 x 6
 end
-arch desert
+arch grassdark
 elevation 968
+x 6
+y 1
+end
+arch forestsparse
 x 6
 y 1
 end
@@ -1483,7 +1494,7 @@ elevation 2758
 x 6
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3285
 x 6
 y 5
@@ -1493,7 +1504,7 @@ elevation 3339
 x 6
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3084
 x 6
 y 7
@@ -1503,7 +1514,7 @@ elevation 4265
 x 6
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4606
 x 6
 y 9
@@ -1523,12 +1534,12 @@ elevation 2383
 x 6
 y 12
 end
-arch hills_rocky
+arch treed_hills
 elevation 3203
 x 6
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3730
 x 6
 y 14
@@ -1573,22 +1584,22 @@ elevation 1375
 x 6
 y 22
 end
-arch grass
+arch jungle_2
 elevation 540
 x 6
 y 23
 end
-arch grass
+arch jungle_2
 elevation 65
 x 6
 y 24
 end
-arch grass
+arch jungle_2
 elevation 663
 x 6
 y 25
 end
-arch grass
+arch jungle_2
 elevation 843
 x 6
 y 26
@@ -1613,17 +1624,17 @@ elevation 1921
 x 6
 y 30
 end
-arch grass
+arch jungle_2
 elevation 41
 x 6
 y 31
 end
-arch grass
+arch jungle_2
 elevation 186
 x 6
 y 32
 end
-arch grass
+arch jungle_2
 elevation 134
 x 6
 y 33
@@ -1658,27 +1669,27 @@ elevation 3429
 x 6
 y 39
 end
-arch grass
+arch jungle_2
 elevation 261
 x 6
 y 40
 end
-arch grass
+arch jungle_2
 elevation 58
 x 6
 y 41
 end
-arch grass
+arch jungle_2
 elevation 716
 x 6
 y 42
 end
-arch grass
+arch jungle_2
 elevation 228
 x 6
 y 43
 end
-arch grass
+arch jungle_2
 elevation 16
 x 6
 y 44
@@ -1717,8 +1728,12 @@ elevation 1050
 x 7
 y 1
 end
-arch desert
+arch grassdark
 elevation 276
+x 7
+y 2
+end
+arch forestsparse
 x 7
 y 2
 end
@@ -1752,12 +1767,12 @@ elevation 2952
 x 7
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3533
 x 7
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3347
 x 7
 y 10
@@ -1772,17 +1787,17 @@ elevation 3140
 x 7
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 3515
 x 7
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3808
 x 7
 y 14
 end
-arch hills_rocky
+arch treed_hills
 elevation 3576
 x 7
 y 15
@@ -1822,12 +1837,12 @@ elevation 2055
 x 7
 y 22
 end
-arch grass
+arch jungle_2
 elevation 653
 x 7
 y 23
 end
-arch grass
+arch jungle_2
 elevation 976
 x 7
 y 24
@@ -1862,27 +1877,27 @@ elevation 2034
 x 7
 y 30
 end
-arch grass
+arch jungle_2
 elevation 585
 x 7
 y 31
 end
-arch brush
+arch evergreens
 elevation 64
 x 7
 y 32
 end
-arch grass
+arch jungle_2
 elevation 419
 x 7
 y 33
 end
-arch grass
+arch jungle_2
 elevation 626
 x 7
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 3025
 x 7
 y 35
@@ -1902,22 +1917,22 @@ elevation 4563
 x 7
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 3329
 x 7
 y 39
 end
-arch grass
+arch jungle_2
 elevation 885
 x 7
 y 40
 end
-arch grass
+arch jungle_2
 elevation 277
 x 7
 y 41
 end
-arch grass
+arch jungle_2
 elevation 868
 x 7
 y 42
@@ -1927,7 +1942,7 @@ elevation 1336
 x 7
 y 43
 end
-arch grass
+arch jungle_2
 elevation 936
 x 7
 y 44
@@ -1937,22 +1952,22 @@ elevation 2909
 x 7
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 3756
 x 7
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4007
 x 7
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3852
 x 7
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4381
 x 7
 y 49
@@ -1961,13 +1976,21 @@ arch jungle_1
 elevation 1029
 x 8
 end
-arch desert
+arch grassdark
 elevation 805
 x 8
 y 1
 end
-arch desert
+arch forestsparse
+x 8
+y 1
+end
+arch grassdark
 elevation 883
+x 8
+y 2
+end
+arch forestsparse
 x 8
 y 2
 end
@@ -1991,7 +2014,7 @@ elevation 1773
 x 8
 y 6
 end
-arch brush
+arch evergreens
 elevation 985
 x 8
 y 7
@@ -2056,12 +2079,12 @@ elevation 2853
 x 8
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3152
 x 8
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3358
 x 8
 y 21
@@ -2111,22 +2134,26 @@ elevation 1500
 x 8
 y 30
 end
-arch grass
+arch jungle_2
 elevation 521
 x 8
 y 31
 end
-arch desert
+arch grassdark
 elevation 101
 x 8
 y 32
 end
-arch grass
+arch forestsparse
+x 8
+y 32
+end
+arch jungle_2
 elevation 329
 x 8
 y 33
 end
-arch grass
+arch jungle_2
 elevation 915
 x 8
 y 34
@@ -2146,7 +2173,7 @@ elevation 2985
 x 8
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 3889
 x 8
 y 38
@@ -2161,12 +2188,12 @@ elevation 2236
 x 8
 y 40
 end
-arch grass
+arch jungle_2
 elevation 504
 x 8
 y 41
 end
-arch grass
+arch jungle_2
 elevation 933
 x 8
 y 42
@@ -2181,12 +2208,12 @@ elevation 3395
 x 8
 y 44
 end
-arch hills_rocky
+arch treed_hills
 elevation 4272
 x 8
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 4986
 x 8
 y 46
@@ -2206,17 +2233,28 @@ elevation 5834
 x 8
 y 49
 end
-arch desert
+arch grassdark
 elevation 302
 x 9
 end
-arch desert
+arch forestsparse
+x 9
+end
+arch grassdark
 elevation 408
 x 9
 y 1
 end
-arch desert
+arch forestsparse
+x 9
+y 1
+end
+arch grassdark
 elevation 883
+x 9
+y 2
+end
+arch forestsparse
 x 9
 y 2
 end
@@ -2225,13 +2263,21 @@ elevation 1088
 x 9
 y 3
 end
-arch desert
+arch grassmedium
 elevation 636
 x 9
 y 4
 end
-arch desert
+arch forestsparse
+x 9
+y 4
+end
+arch grassmedium
 elevation 870
+x 9
+y 5
+end
+arch forestsparse
 x 9
 y 5
 end
@@ -2250,7 +2296,7 @@ elevation 2567
 x 9
 y 8
 end
-arch hills_rocky
+arch treed_hills
 elevation 3395
 x 9
 y 9
@@ -2265,7 +2311,7 @@ elevation 3895
 x 9
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3794
 x 9
 y 12
@@ -2325,12 +2371,12 @@ elevation 3238
 x 9
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3167
 x 9
 y 24
 end
-arch hills_rocky
+arch treed_hills
 elevation 3075
 x 9
 y 25
@@ -2340,7 +2386,7 @@ elevation 2375
 x 9
 y 26
 end
-arch grass
+arch jungle_2
 elevation 280
 x 9
 y 27
@@ -2355,27 +2401,31 @@ elevation 1296
 x 9
 y 29
 end
-arch grass
+arch jungle_2
 elevation 523
 x 9
 y 30
 end
-arch desert
+arch grassdark
 elevation 365
 x 9
 y 31
 end
-arch brush
+arch forestsparse
+x 9
+y 31
+end
+arch evergreens
 elevation 214
 x 9
 y 32
 end
-arch brush
+arch evergreens
 elevation 24
 x 9
 y 33
 end
-arch grass
+arch jungle_2
 elevation 803
 x 9
 y 34
@@ -2390,7 +2440,7 @@ elevation 2198
 x 9
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 3361
 x 9
 y 37
@@ -2405,7 +2455,7 @@ elevation 3943
 x 9
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 3101
 x 9
 y 40
@@ -2455,12 +2505,19 @@ elevation 6359
 x 9
 y 49
 end
-arch desert
+arch grassdark
 elevation 520
 x 10
 end
-arch desert
+arch forestsparse
+x 10
+end
+arch grassdark
 elevation 742
+x 10
+y 1
+end
+arch forestsparse
 x 10
 y 1
 end
@@ -2504,17 +2561,17 @@ elevation 3779
 x 10
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3867
 x 10
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3412
 x 10
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3841
 x 10
 y 12
@@ -2534,12 +2591,12 @@ elevation 2758
 x 10
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 3115
 x 10
 y 16
 end
-arch hills_rocky
+arch treed_hills
 elevation 3344
 x 10
 y 17
@@ -2559,12 +2616,12 @@ elevation 3339
 x 10
 y 20
 end
-arch hills_rocky
+arch treed_hills
 elevation 3395
 x 10
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3636
 x 10
 y 22
@@ -2599,32 +2656,36 @@ elevation 1114
 x 10
 y 28
 end
-arch grass
+arch jungle_2
 elevation 927
 x 10
 y 29
 end
-arch grass
+arch jungle_2
 elevation 55
 x 10
 y 30
 end
-arch grass
+arch jungle_2
 elevation 392
 x 10
 y 31
 end
-arch brush
+arch evergreens
 elevation 444
 x 10
 y 32
 end
-arch desert
+arch grassmedium
 elevation 345
 x 10
 y 33
 end
-arch grass
+arch forestsparse
+x 10
+y 33
+end
+arch jungle_2
 elevation 419
 x 10
 y 34
@@ -2634,12 +2695,12 @@ elevation 2489
 x 10
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 3363
 x 10
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 3782
 x 10
 y 37
@@ -2649,12 +2710,12 @@ elevation 4297
 x 10
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 4336
 x 10
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 3727
 x 10
 y 40
@@ -2704,8 +2765,11 @@ elevation 6281
 x 10
 y 49
 end
-arch desert
+arch grassdark
 elevation 711
+x 11
+end
+arch forestsparse
 x 11
 end
 arch jungle_1
@@ -2748,17 +2812,17 @@ elevation 3377
 x 11
 y 8
 end
-arch hills_rocky
+arch treed_hills
 elevation 4175
 x 11
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4234
 x 11
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 4072
 x 11
 y 11
@@ -2818,12 +2882,12 @@ elevation 3136
 x 11
 y 22
 end
-arch hills_rocky
+arch treed_hills
 elevation 3634
 x 11
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3972
 x 11
 y 24
@@ -2838,7 +2902,7 @@ elevation 2769
 x 11
 y 26
 end
-arch grass
+arch jungle_2
 elevation 470
 x 11
 y 27
@@ -2848,23 +2912,27 @@ elevation 1464
 x 11
 y 28
 end
-arch grass
+arch jungle_2
 elevation 738
 x 11
 y 29
 end
-arch grass
+arch jungle_2
 elevation 275
 x 11
 y 30
 end
-arch grass
+arch jungle_2
 elevation 65
 x 11
 y 31
 end
-arch desert
+arch grassdark
 elevation 898
+x 11
+y 32
+end
+arch forestsparse
 x 11
 y 32
 end
@@ -2908,7 +2976,7 @@ elevation 4145
 x 11
 y 40
 end
-arch steppe
+arch jungle_1
 elevation 3063
 x 11
 y 41
@@ -2923,7 +2991,7 @@ elevation 2315
 x 11
 y 43
 end
-arch hills_rocky
+arch treed_hills
 elevation 4672
 x 11
 y 44
@@ -2987,12 +3055,12 @@ elevation 2041
 x 12
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3052
 x 12
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 4038
 x 12
 y 8
@@ -3002,12 +3070,12 @@ elevation 4561
 x 12
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 4475
 x 12
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3998
 x 12
 y 11
@@ -3017,7 +3085,7 @@ elevation 3498
 x 12
 y 12
 end
-arch hills_rocky
+arch treed_hills
 elevation 3248
 x 12
 y 13
@@ -3067,17 +3135,17 @@ elevation 1799
 x 12
 y 22
 end
-arch hills_rocky
+arch treed_hills
 elevation 3219
 x 12
 y 23
 end
-arch hills_rocky
+arch treed_hills
 elevation 3703
 x 12
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3871
 x 12
 y 25
@@ -3102,18 +3170,22 @@ elevation 1428
 x 12
 y 29
 end
-arch grass
+arch jungle_2
 elevation 30
 x 12
 y 30
 end
-arch grass
+arch jungle_2
 elevation 542
 x 12
 y 31
 end
-arch woods_3
+arch grassmedium
 elevation 1486
+x 12
+y 32
+end
+arch woods_3
 x 12
 y 32
 end
@@ -3132,7 +3204,7 @@ elevation 2935
 x 12
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3736
 x 12
 y 36
@@ -3142,7 +3214,7 @@ elevation 4296
 x 12
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 4724
 x 12
 y 38
@@ -3197,7 +3269,7 @@ elevation 6956
 x 12
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4561
 x 12
 y 49
@@ -3246,7 +3318,7 @@ elevation 4523
 x 13
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4685
 x 13
 y 9
@@ -3261,7 +3333,7 @@ elevation 3869
 x 13
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3333
 x 13
 y 12
@@ -3331,12 +3403,12 @@ elevation 3838
 x 13
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3640
 x 13
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3165
 x 13
 y 27
@@ -3381,17 +3453,17 @@ elevation 3079
 x 13
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3849
 x 13
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 3524
 x 13
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 4747
 x 13
 y 38
@@ -3406,12 +3478,12 @@ elevation 4175
 x 13
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 4148
 x 13
 y 41
 end
-arch hills_rocky
+arch treed_hills
 elevation 4347
 x 13
 y 42
@@ -3455,8 +3527,12 @@ arch jungle_1
 elevation 1276
 x 14
 end
-arch desert
+arch grassdark
 elevation 691
+x 14
+y 1
+end
+arch forestsparse
 x 14
 y 1
 end
@@ -3485,7 +3561,7 @@ elevation 3715
 x 14
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 4222
 x 14
 y 7
@@ -3495,7 +3571,7 @@ elevation 4522
 x 14
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4396
 x 14
 y 9
@@ -3520,7 +3596,7 @@ elevation 3288
 x 14
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3279
 x 14
 y 14
@@ -3555,7 +3631,7 @@ elevation 1759
 x 14
 y 20
 end
-arch grass
+arch jungle_2
 elevation 673
 x 14
 y 21
@@ -3570,7 +3646,7 @@ elevation 2357
 x 14
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3359
 x 14
 y 24
@@ -3625,17 +3701,17 @@ elevation 1622
 x 14
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 3422
 x 14
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 4017
 x 14
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 3679
 x 14
 y 37
@@ -3709,13 +3785,21 @@ elevation 1321
 x 15
 y 1
 end
-arch desert
+arch grassdark
 elevation 670
 x 15
 y 2
 end
-arch desert
+arch forestsparse
+x 15
+y 2
+end
+arch grassdark
 elevation 252
+x 15
+y 3
+end
+arch forestsparse
 x 15
 y 3
 end
@@ -3729,7 +3813,7 @@ elevation 3188
 x 15
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3946
 x 15
 y 6
@@ -3744,7 +3828,7 @@ elevation 4127
 x 15
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3376
 x 15
 y 9
@@ -3754,12 +3838,12 @@ elevation 3686
 x 15
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3661
 x 15
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3578
 x 15
 y 12
@@ -3769,7 +3853,7 @@ elevation 3348
 x 15
 y 13
 end
-arch hills_rocky
+arch treed_hills
 elevation 3430
 x 15
 y 14
@@ -3779,12 +3863,12 @@ elevation 3616
 x 15
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 3922
 x 15
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4023
 x 15
 y 17
@@ -3819,12 +3903,12 @@ elevation 2828
 x 15
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3512
 x 15
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3777
 x 15
 y 25
@@ -3869,22 +3953,22 @@ elevation 3258
 x 15
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 3190
 x 15
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 3420
 x 15
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3952
 x 15
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4823
 x 15
 y 37
@@ -3914,7 +3998,7 @@ elevation 2478
 x 15
 y 42
 end
-arch hills_rocky
+arch treed_hills
 elevation 4491
 x 15
 y 43
@@ -3963,8 +4047,12 @@ elevation 1435
 x 16
 y 2
 end
-arch desert
+arch grassdark
 elevation 512
+x 16
+y 3
+end
+arch forestsparse
 x 16
 y 3
 end
@@ -3973,7 +4061,7 @@ elevation 2126
 x 16
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3219
 x 16
 y 5
@@ -3988,32 +4076,32 @@ elevation 3678
 x 16
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3518
 x 16
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3326
 x 16
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3227
 x 16
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3415
 x 16
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3565
 x 16
 y 12
 end
-arch hills_rocky
+arch treed_hills
 elevation 3260
 x 16
 y 13
@@ -4023,22 +4111,22 @@ elevation 2216
 x 16
 y 14
 end
-arch hills_rocky
+arch treed_hills
 elevation 3941
 x 16
 y 15
 end
-arch steppe
+arch jungle_1
 elevation 4498
 x 16
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4553
 x 16
 y 17
 end
-arch hills_rocky
+arch treed_hills
 elevation 3891
 x 16
 y 18
@@ -4053,37 +4141,37 @@ elevation 2823
 x 16
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3017
 x 16
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3125
 x 16
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3295
 x 16
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3570
 x 16
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3917
 x 16
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3804
 x 16
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3366
 x 16
 y 27
@@ -4108,17 +4196,17 @@ elevation 2638
 x 16
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3195
 x 16
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 3833
 x 16
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 3785
 x 16
 y 34
@@ -4128,12 +4216,12 @@ elevation 2033
 x 16
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3449
 x 16
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4987
 x 16
 y 37
@@ -4153,12 +4241,12 @@ elevation 5167
 x 16
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 3901
 x 16
 y 41
 end
-arch grass
+arch jungle_2
 elevation 274
 x 16
 y 42
@@ -4168,7 +4256,7 @@ elevation 1717
 x 16
 y 43
 end
-arch hills_rocky
+arch treed_hills
 elevation 4924
 x 16
 y 44
@@ -4222,12 +4310,12 @@ elevation 2749
 x 17
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3226
 x 17
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3295
 x 17
 y 6
@@ -4257,42 +4345,42 @@ elevation 2464
 x 17
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3359
 x 17
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 3625
 x 17
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3690
 x 17
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 3921
 x 17
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 4392
 x 17
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4441
 x 17
 y 17
 end
-arch steppe
+arch jungle_1
 elevation 3683
 x 17
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 3005
 x 17
 y 19
@@ -4302,12 +4390,12 @@ elevation 2847
 x 17
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3054
 x 17
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3180
 x 17
 y 22
@@ -4317,27 +4405,27 @@ elevation 2783
 x 17
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3118
 x 17
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3363
 x 17
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3478
 x 17
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3451
 x 17
 y 27
 end
-arch hills_rocky
+arch treed_hills
 elevation 3273
 x 17
 y 28
@@ -4357,32 +4445,32 @@ elevation 2396
 x 17
 y 31
 end
-arch hills_rocky
+arch treed_hills
 elevation 3194
 x 17
 y 32
 end
-arch hills_rocky
+arch treed_hills
 elevation 4101
 x 17
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 4024
 x 17
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3849
 x 17
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 4039
 x 17
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4887
 x 17
 y 37
@@ -4397,17 +4485,17 @@ elevation 5970
 x 17
 y 39
 end
-arch steppe
+arch jungle_1
 elevation 4799
 x 17
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 4332
 x 17
 y 41
 end
-arch hills_rocky
+arch treed_hills
 elevation 3345
 x 17
 y 42
@@ -4417,7 +4505,7 @@ elevation 1352
 x 17
 y 43
 end
-arch steppe
+arch jungle_1
 elevation 4434
 x 17
 y 44
@@ -4486,7 +4574,7 @@ elevation 2371
 x 18
 y 7
 end
-arch brush
+arch evergreens
 elevation 729
 x 18
 y 8
@@ -4506,37 +4594,37 @@ elevation 2553
 x 18
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 3244
 x 18
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 3774
 x 18
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3887
 x 18
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 3213
 x 18
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 4133
 x 18
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4030
 x 18
 y 17
 end
-arch steppe
+arch jungle_1
 elevation 3490
 x 18
 y 18
@@ -4586,17 +4674,17 @@ elevation 2662
 x 18
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3970
 x 18
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3463
 x 18
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3289
 x 18
 y 30
@@ -4606,32 +4694,32 @@ elevation 2026
 x 18
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3892
 x 18
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 4358
 x 18
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 4497
 x 18
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 4524
 x 18
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 3231
 x 18
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4509
 x 18
 y 37
@@ -4651,22 +4739,22 @@ elevation 5338
 x 18
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 4684
 x 18
 y 41
 end
-arch steppe
+arch jungle_1
 elevation 4152
 x 18
 y 42
 end
-arch hills_rocky
+arch treed_hills
 elevation 4179
 x 18
 y 43
 end
-arch steppe
+arch jungle_1
 elevation 4642
 x 18
 y 44
@@ -4681,7 +4769,7 @@ elevation 5420
 x 18
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4445
 x 18
 y 47
@@ -4735,7 +4823,7 @@ elevation 2202
 x 19
 y 7
 end
-arch brush
+arch evergreens
 elevation 887
 x 19
 y 8
@@ -4755,32 +4843,32 @@ elevation 2391
 x 19
 y 11
 end
-arch hills_rocky
+arch treed_hills
 elevation 3044
 x 19
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 3535
 x 19
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3584
 x 19
 y 14
 end
-arch hills_rocky
+arch treed_hills
 elevation 3871
 x 19
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 3950
 x 19
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 3733
 x 19
 y 17
@@ -4830,12 +4918,12 @@ elevation 2760
 x 19
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 4012
 x 19
 y 27
 end
-arch hills_rocky
+arch treed_hills
 elevation 4884
 x 19
 y 28
@@ -4845,7 +4933,7 @@ elevation 5105
 x 19
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 4996
 x 19
 y 30
@@ -4860,17 +4948,17 @@ elevation 5041
 x 19
 y 32
 end
-arch hills_rocky
+arch treed_hills
 elevation 3993
 x 19
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 4759
 x 19
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 4790
 x 19
 y 35
@@ -4895,27 +4983,27 @@ elevation 5630
 x 19
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 4823
 x 19
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 3673
 x 19
 y 41
 end
-arch hills_rocky
+arch treed_hills
 elevation 4479
 x 19
 y 42
 end
-arch hills_rocky
+arch treed_hills
 elevation 4636
 x 19
 y 43
 end
-arch hills_rocky
+arch treed_hills
 elevation 4963
 x 19
 y 44
@@ -4925,17 +5013,17 @@ elevation 5074
 x 19
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 4676
 x 19
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4890
 x 19
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4872
 x 19
 y 48
@@ -4959,12 +5047,12 @@ elevation 2055
 x 20
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3260
 x 20
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3526
 x 20
 y 4
@@ -5009,32 +5097,32 @@ elevation 2676
 x 20
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 3170
 x 20
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3344
 x 20
 y 14
 end
-arch hills_rocky
+arch treed_hills
 elevation 3879
 x 20
 y 15
 end
-arch steppe
+arch jungle_1
 elevation 3692
 x 20
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 3362
 x 20
 y 17
 end
-arch hills_rocky
+arch treed_hills
 elevation 3075
 x 20
 y 18
@@ -5044,12 +5132,12 @@ elevation 2409
 x 20
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3304
 x 20
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3160
 x 20
 y 21
@@ -5074,12 +5162,12 @@ elevation 1810
 x 20
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3013
 x 20
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 4554
 x 20
 y 27
@@ -5114,12 +5202,12 @@ elevation 5807
 x 20
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4995
 x 20
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3464
 x 20
 y 35
@@ -5139,22 +5227,22 @@ elevation 5812
 x 20
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 4240
 x 20
 y 39
 end
-arch steppe
+arch jungle_1
 elevation 3909
 x 20
 y 40
 end
-arch hills_rocky
+arch treed_hills
 elevation 3989
 x 20
 y 41
 end
-arch steppe
+arch jungle_1
 elevation 4544
 x 20
 y 42
@@ -5169,22 +5257,22 @@ elevation 5250
 x 20
 y 44
 end
-arch steppe
+arch jungle_1
 elevation 3904
 x 20
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 4896
 x 20
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4818
 x 20
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4087
 x 20
 y 48
@@ -5208,12 +5296,12 @@ elevation 2504
 x 21
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3328
 x 21
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3759
 x 21
 y 4
@@ -5223,7 +5311,7 @@ elevation 3344
 x 21
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3343
 x 21
 y 6
@@ -5233,12 +5321,12 @@ elevation 3612
 x 21
 y 7
 end
-arch hills_rocky
+arch treed_hills
 elevation 3823
 x 21
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3222
 x 21
 y 9
@@ -5263,12 +5351,12 @@ elevation 2620
 x 21
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 3718
 x 21
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 3789
 x 21
 y 15
@@ -5283,37 +5371,37 @@ elevation 1855
 x 21
 y 17
 end
-arch steppe
+arch jungle_1
 elevation 3154
 x 21
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 3740
 x 21
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3951
 x 21
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3808
 x 21
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3574
 x 21
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3373
 x 21
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3157
 x 21
 y 24
@@ -5328,7 +5416,7 @@ elevation 1622
 x 21
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 4947
 x 21
 y 27
@@ -5363,12 +5451,12 @@ elevation 6361
 x 21
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4955
 x 21
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 4233
 x 21
 y 35
@@ -5383,7 +5471,7 @@ elevation 5877
 x 21
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 4958
 x 21
 y 38
@@ -5398,12 +5486,12 @@ elevation 2681
 x 21
 y 40
 end
-arch steppe
+arch jungle_1
 elevation 3254
 x 21
 y 41
 end
-arch steppe
+arch jungle_1
 elevation 4299
 x 21
 y 42
@@ -5428,12 +5516,12 @@ elevation 5636
 x 21
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4547
 x 21
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4496
 x 21
 y 48
@@ -5457,17 +5545,17 @@ elevation 1932
 x 22
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3590
 x 22
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3953
 x 22
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3636
 x 22
 y 5
@@ -5477,22 +5565,22 @@ elevation 1997
 x 22
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 4086
 x 22
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 4413
 x 22
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3910
 x 22
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3016
 x 22
 y 10
@@ -5507,7 +5595,7 @@ elevation 1619
 x 22
 y 12
 end
-arch hills_rocky
+arch treed_hills
 elevation 3451
 x 22
 y 13
@@ -5517,7 +5605,7 @@ elevation 3850
 x 22
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 3595
 x 22
 y 15
@@ -5532,47 +5620,47 @@ elevation 2216
 x 22
 y 17
 end
-arch steppe
+arch jungle_1
 elevation 3309
 x 22
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 4029
 x 22
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 4219
 x 22
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3953
 x 22
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3764
 x 22
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3808
 x 22
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3866
 x 22
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3696
 x 22
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3501
 x 22
 y 26
@@ -5612,7 +5700,7 @@ elevation 6191
 x 22
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4602
 x 22
 y 34
@@ -5622,17 +5710,17 @@ elevation 2099
 x 22
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3825
 x 22
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4794
 x 22
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 4384
 x 22
 y 38
@@ -5647,12 +5735,16 @@ elevation 1319
 x 22
 y 40
 end
-arch desert
+arch grassdark
 elevation 40
 x 22
 y 41
 end
-arch hills_rocky
+arch forestsparse
+x 22
+y 41
+end
+arch treed_hills
 elevation 4192
 x 22
 y 42
@@ -5706,12 +5798,12 @@ elevation 3321
 x 23
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3794
 x 23
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 4068
 x 23
 y 4
@@ -5721,32 +5813,32 @@ elevation 3936
 x 23
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3989
 x 23
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 4129
 x 23
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 4499
 x 23
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4491
 x 23
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 4445
 x 23
 y 10
 end
-arch hills_rocky
+arch treed_hills
 elevation 4338
 x 23
 y 11
@@ -5756,12 +5848,12 @@ elevation 4365
 x 23
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 4352
 x 23
 y 13
 end
-arch steppe
+arch jungle_1
 elevation 4192
 x 23
 y 14
@@ -5776,7 +5868,7 @@ elevation 2660
 x 23
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 3244
 x 23
 y 17
@@ -5786,7 +5878,7 @@ elevation 2355
 x 23
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 4117
 x 23
 y 19
@@ -5806,27 +5898,27 @@ elevation 2548
 x 23
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3335
 x 23
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 4152
 x 23
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 4517
 x 23
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 4771
 x 23
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 4971
 x 23
 y 27
@@ -5861,7 +5953,7 @@ elevation 5618
 x 23
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4327
 x 23
 y 34
@@ -5876,32 +5968,32 @@ elevation 1883
 x 23
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4254
 x 23
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 4239
 x 23
 y 38
 end
-arch steppe
+arch jungle_1
 elevation 3768
 x 23
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 3399
 x 23
 y 40
 end
-arch steppe
+arch jungle_1
 elevation 3464
 x 23
 y 41
 end
-arch hills_rocky
+arch treed_hills
 elevation 3489
 x 23
 y 42
@@ -5955,37 +6047,37 @@ elevation 3376
 x 24
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3830
 x 24
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 4019
 x 24
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 4087
 x 24
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 4078
 x 24
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 4016
 x 24
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3462
 x 24
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4462
 x 24
 y 9
@@ -6015,7 +6107,7 @@ elevation 4579
 x 24
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 4176
 x 24
 y 15
@@ -6040,7 +6132,7 @@ elevation 4357
 x 24
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3729
 x 24
 y 20
@@ -6060,82 +6152,82 @@ elevation 2922
 x 24
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3959
 x 24
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 4520
 x 24
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 4537
 x 24
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3825
 x 24
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3302
 x 24
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 4097
 x 24
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 4795
 x 24
 y 30
 end
-arch steppe
+arch jungle_1
 elevation 4735
 x 24
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 4713
 x 24
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 4710
 x 24
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4296
 x 24
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3859
 x 24
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3824
 x 24
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4046
 x 24
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 3990
 x 24
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 4454
 x 24
 y 39
@@ -6204,7 +6296,7 @@ elevation 2958
 x 25
 y 2
 end
-arch steppe
+arch jungle_1
 elevation 3579
 x 25
 y 3
@@ -6214,32 +6306,32 @@ elevation 3865
 x 25
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3251
 x 25
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3765
 x 25
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3278
 x 25
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3059
 x 25
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4182
 x 25
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 4185
 x 25
 y 10
@@ -6264,7 +6356,7 @@ elevation 4687
 x 25
 y 14
 end
-arch steppe
+arch jungle_1
 elevation 4489
 x 25
 y 15
@@ -6284,12 +6376,12 @@ elevation 5447
 x 25
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 4792
 x 25
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3522
 x 25
 y 20
@@ -6299,7 +6391,7 @@ elevation 1168
 x 25
 y 21
 end
-arch brush
+arch evergreens
 elevation 779
 x 25
 y 22
@@ -6309,22 +6401,22 @@ elevation 2757
 x 25
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3712
 x 25
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3836
 x 25
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3765
 x 25
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3465
 x 25
 y 27
@@ -6334,12 +6426,12 @@ elevation 2948
 x 25
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3542
 x 25
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3733
 x 25
 y 30
@@ -6354,27 +6446,27 @@ elevation 1949
 x 25
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 4099
 x 25
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4553
 x 25
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 4393
 x 25
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 4935
 x 25
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 3956
 x 25
 y 37
@@ -6384,7 +6476,7 @@ elevation 2414
 x 25
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 4474
 x 25
 y 39
@@ -6463,27 +6555,27 @@ elevation 3646
 x 26
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3587
 x 26
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3283
 x 26
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3520
 x 26
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3265
 x 26
 y 8
 end
-arch hills_rocky
+arch treed_hills
 elevation 4198
 x 26
 y 9
@@ -6538,7 +6630,7 @@ elevation 5213
 x 26
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3194
 x 26
 y 20
@@ -6553,17 +6645,17 @@ elevation 2582
 x 26
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3083
 x 26
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3328
 x 26
 y 24
 end
-arch steppe
+arch jungle_1
 elevation 3104
 x 26
 y 25
@@ -6578,7 +6670,7 @@ elevation 2588
 x 26
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3092
 x 26
 y 28
@@ -6593,17 +6685,17 @@ elevation 2856
 x 26
 y 30
 end
-arch steppe
+arch jungle_1
 elevation 3301
 x 26
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3628
 x 26
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 4401
 x 26
 y 33
@@ -6628,7 +6720,7 @@ elevation 5019
 x 26
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 4675
 x 26
 y 38
@@ -6702,37 +6794,37 @@ elevation 2623
 x 27
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 3324
 x 27
 y 3
 end
-arch hills_rocky
+arch treed_hills
 elevation 3610
 x 27
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3175
 x 27
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3381
 x 27
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3573
 x 27
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3991
 x 27
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4401
 x 27
 y 9
@@ -6787,12 +6879,12 @@ elevation 5326
 x 27
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 4249
 x 27
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3406
 x 27
 y 21
@@ -6827,32 +6919,32 @@ elevation 2088
 x 27
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3063
 x 27
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3222
 x 27
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3278
 x 27
 y 30
 end
-arch steppe
+arch jungle_1
 elevation 3416
 x 27
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3703
 x 27
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 4277
 x 27
 y 33
@@ -6882,12 +6974,12 @@ elevation 5303
 x 27
 y 38
 end
-arch steppe
+arch jungle_1
 elevation 4612
 x 27
 y 39
 end
-arch steppe
+arch jungle_1
 elevation 4052
 x 27
 y 40
@@ -6956,22 +7048,22 @@ elevation 3444
 x 28
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3515
 x 28
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3376
 x 28
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3041
 x 28
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3378
 x 28
 y 7
@@ -6981,17 +7073,17 @@ elevation 3831
 x 28
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4101
 x 28
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4287
 x 28
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 4797
 x 28
 y 11
@@ -7036,12 +7128,12 @@ elevation 4866
 x 28
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 4308
 x 28
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3733
 x 28
 y 21
@@ -7076,12 +7168,12 @@ elevation 2854
 x 28
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3168
 x 28
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3428
 x 28
 y 29
@@ -7091,7 +7183,7 @@ elevation 2856
 x 28
 y 30
 end
-arch steppe
+arch jungle_1
 elevation 3084
 x 28
 y 31
@@ -7106,7 +7198,7 @@ elevation 2510
 x 28
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 3394
 x 28
 y 34
@@ -7131,12 +7223,12 @@ elevation 5330
 x 28
 y 38
 end
-arch steppe
+arch jungle_1
 elevation 4546
 x 28
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 4394
 x 28
 y 40
@@ -7190,12 +7282,12 @@ arch hills
 elevation 3537
 x 29
 end
-arch steppe
+arch jungle_1
 elevation 3686
 x 29
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 3611
 x 29
 y 2
@@ -7205,12 +7297,12 @@ elevation 3366
 x 29
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3277
 x 29
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3073
 x 29
 y 5
@@ -7225,12 +7317,12 @@ elevation 2533
 x 29
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3292
 x 29
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3447
 x 29
 y 9
@@ -7265,7 +7357,7 @@ elevation 6967
 x 29
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 4446
 x 29
 y 16
@@ -7290,7 +7382,7 @@ elevation 2569
 x 29
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3887
 x 29
 y 21
@@ -7300,7 +7392,7 @@ elevation 3811
 x 29
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3238
 x 29
 y 23
@@ -7320,17 +7412,17 @@ elevation 2675
 x 29
 y 26
 end
-arch steppe
+arch jungle_1
 elevation 3120
 x 29
 y 27
 end
-arch steppe
+arch jungle_1
 elevation 3317
 x 29
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3212
 x 29
 y 29
@@ -7350,7 +7442,7 @@ elevation 1993
 x 29
 y 32
 end
-arch brush
+arch evergreens
 elevation 960
 x 29
 y 33
@@ -7360,12 +7452,12 @@ elevation 2283
 x 29
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3847
 x 29
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 4862
 x 29
 y 36
@@ -7375,12 +7467,12 @@ elevation 5293
 x 29
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 4947
 x 29
 y 38
 end
-arch hills_rocky
+arch treed_hills
 elevation 3391
 x 29
 y 39
@@ -7439,7 +7531,7 @@ arch hills
 elevation 3518
 x 30
 end
-arch steppe
+arch jungle_1
 elevation 3733
 x 30
 y 1
@@ -7474,7 +7566,7 @@ elevation 2976
 x 30
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 3030
 x 30
 y 8
@@ -7484,17 +7576,17 @@ elevation 1924
 x 30
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3065
 x 30
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 3886
 x 30
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 4482
 x 30
 y 12
@@ -7534,7 +7626,7 @@ elevation 5686
 x 30
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 4491
 x 30
 y 20
@@ -7599,7 +7691,7 @@ elevation 1213
 x 30
 y 32
 end
-arch brush
+arch evergreens
 elevation 458
 x 30
 y 33
@@ -7614,37 +7706,41 @@ elevation 2574
 x 30
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3095
 x 30
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 4491
 x 30
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 4380
 x 30
 y 38
 end
-arch steppe
+arch jungle_1
 elevation 3183
 x 30
 y 39
 end
-arch desert
+arch grassdark
 elevation 937
 x 30
 y 40
 end
-arch steppe
+arch forestsparse
+x 30
+y 40
+end
+arch jungle_1
 elevation 4002
 x 30
 y 41
 end
-arch steppe
+arch jungle_1
 elevation 4279
 x 30
 y 42
@@ -7688,7 +7784,7 @@ arch hills
 elevation 3576
 x 31
 end
-arch steppe
+arch jungle_1
 elevation 3762
 x 31
 y 1
@@ -7728,22 +7824,22 @@ elevation 3217
 x 31
 y 8
 end
-arch hills_rocky
+arch treed_hills
 elevation 3445
 x 31
 y 9
 end
-arch steppe
+arch jungle_1
 elevation 3836
 x 31
 y 10
 end
-arch steppe
+arch jungle_1
 elevation 4204
 x 31
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 4565
 x 31
 y 12
@@ -7783,7 +7879,7 @@ elevation 5704
 x 31
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 4868
 x 31
 y 20
@@ -7793,17 +7889,17 @@ elevation 4222
 x 31
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 4036
 x 31
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3771
 x 31
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3277
 x 31
 y 24
@@ -7818,7 +7914,7 @@ elevation 1230
 x 31
 y 26
 end
-arch brush
+arch evergreens
 elevation 903
 x 31
 y 27
@@ -7838,7 +7934,7 @@ elevation 2056
 x 31
 y 30
 end
-arch brush
+arch evergreens
 elevation 920
 x 31
 y 31
@@ -7848,7 +7944,7 @@ elevation 1320
 x 31
 y 32
 end
-arch brush
+arch evergreens
 elevation 785
 x 31
 y 33
@@ -7868,12 +7964,12 @@ elevation 2695
 x 31
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 3523
 x 31
 y 37
 end
-arch steppe
+arch jungle_1
 elevation 3649
 x 31
 y 38
@@ -7883,12 +7979,16 @@ elevation 2812
 x 31
 y 39
 end
-arch desert
+arch grassdark
 elevation 493
 x 31
 y 40
 end
-arch steppe
+arch forestsparse
+x 31
+y 40
+end
+arch jungle_1
 elevation 3874
 x 31
 y 41
@@ -7908,7 +8008,7 @@ elevation 6408
 x 31
 y 44
 end
-arch steppe
+arch jungle_1
 elevation 4959
 x 31
 y 45
@@ -7933,7 +8033,7 @@ elevation 4995
 x 31
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 3690
 x 32
 end
@@ -7947,27 +8047,27 @@ elevation 3808
 x 32
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 3642
 x 32
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 3722
 x 32
 y 4
 end
-arch hills_rocky
+arch treed_hills
 elevation 3959
 x 32
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 4085
 x 32
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3956
 x 32
 y 7
@@ -7977,12 +8077,12 @@ elevation 2535
 x 32
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4275
 x 32
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4514
 x 32
 y 10
@@ -7992,12 +8092,12 @@ elevation 4107
 x 32
 y 11
 end
-arch steppe
+arch jungle_1
 elevation 4063
 x 32
 y 12
 end
-arch steppe
+arch jungle_1
 elevation 4582
 x 32
 y 13
@@ -8042,7 +8142,7 @@ elevation 4324
 x 32
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3346
 x 32
 y 22
@@ -8052,7 +8152,7 @@ elevation 3677
 x 32
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3303
 x 32
 y 24
@@ -8067,12 +8167,12 @@ elevation 1981
 x 32
 y 26
 end
-arch brush
+arch evergreens
 elevation 276
 x 32
 y 27
 end
-arch brush
+arch evergreens
 elevation 805
 x 32
 y 28
@@ -8137,7 +8237,7 @@ elevation 2904
 x 32
 y 40
 end
-arch steppe
+arch jungle_1
 elevation 4267
 x 32
 y 41
@@ -8157,27 +8257,27 @@ elevation 6049
 x 32
 y 44
 end
-arch steppe
+arch jungle_1
 elevation 4600
 x 32
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 4872
 x 32
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4846
 x 32
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4568
 x 32
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4604
 x 32
 y 49
@@ -8191,7 +8291,7 @@ elevation 4230
 x 33
 y 1
 end
-arch steppe
+arch jungle_1
 elevation 4403
 x 33
 y 2
@@ -8206,12 +8306,12 @@ elevation 4598
 x 33
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 4784
 x 33
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 4897
 x 33
 y 6
@@ -8226,12 +8326,12 @@ elevation 4766
 x 33
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4853
 x 33
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4738
 x 33
 y 10
@@ -8241,7 +8341,7 @@ elevation 3893
 x 33
 y 11
 end
-arch brush
+arch evergreens
 elevation 567
 x 33
 y 12
@@ -8286,12 +8386,12 @@ elevation 5249
 x 33
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 4608
 x 33
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3884
 x 33
 y 22
@@ -8346,17 +8446,17 @@ elevation 2757
 x 33
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 3595
 x 33
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 3718
 x 33
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3219
 x 33
 y 35
@@ -8371,8 +8471,12 @@ elevation 2039
 x 33
 y 37
 end
-arch desert
+arch grassmedium
 elevation 791
+x 33
+y 38
+end
+arch forestsparse
 x 33
 y 38
 end
@@ -8386,7 +8490,7 @@ elevation 2404
 x 33
 y 40
 end
-arch steppe
+arch jungle_1
 elevation 3858
 x 33
 y 41
@@ -8406,12 +8510,12 @@ elevation 5438
 x 33
 y 44
 end
-arch hills_rocky
+arch treed_hills
 elevation 4666
 x 33
 y 45
 end
-arch steppe
+arch jungle_1
 elevation 3993
 x 33
 y 46
@@ -8421,12 +8525,12 @@ elevation 2915
 x 33
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3678
 x 33
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3406
 x 33
 y 49
@@ -8435,17 +8539,17 @@ arch hills
 elevation 4055
 x 34
 end
-arch steppe
+arch jungle_1
 elevation 4385
 x 34
 y 1
 end
-arch hills_rocky
+arch treed_hills
 elevation 4686
 x 34
 y 2
 end
-arch hills_rocky
+arch treed_hills
 elevation 4985
 x 34
 y 3
@@ -8455,7 +8559,7 @@ elevation 5088
 x 34
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 4903
 x 34
 y 5
@@ -8480,12 +8584,12 @@ elevation 4976
 x 34
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 4471
 x 34
 y 10
 end
-arch hills_rocky
+arch treed_hills
 elevation 3481
 x 34
 y 11
@@ -8540,7 +8644,7 @@ elevation 4756
 x 34
 y 21
 end
-arch steppe
+arch jungle_1
 elevation 3422
 x 34
 y 22
@@ -8560,7 +8664,7 @@ elevation 2791
 x 34
 y 25
 end
-arch steppe
+arch jungle_1
 elevation 3064
 x 34
 y 26
@@ -8595,17 +8699,17 @@ elevation 2731
 x 34
 y 32
 end
-arch steppe
+arch jungle_1
 elevation 3668
 x 34
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 4020
 x 34
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3652
 x 34
 y 35
@@ -8620,18 +8724,30 @@ elevation 1846
 x 34
 y 37
 end
-arch desert
+arch grassmedium
 elevation 618
 x 34
 y 38
 end
-arch desert
+arch forestsparse
+x 34
+y 38
+end
+arch grassmedium
 elevation 463
 x 34
 y 39
 end
-arch desert
+arch forestsparse
+x 34
+y 39
+end
+arch grassmedium
 elevation 945
+x 34
+y 40
+end
+arch forestsparse
 x 34
 y 40
 end
@@ -8640,27 +8756,27 @@ elevation 1780
 x 34
 y 41
 end
-arch steppe
+arch jungle_1
 elevation 3762
 x 34
 y 42
 end
-arch hills_rocky
+arch treed_hills
 elevation 4400
 x 34
 y 43
 end
-arch hills_rocky
+arch treed_hills
 elevation 4148
 x 34
 y 44
 end
-arch hills_rocky
+arch treed_hills
 elevation 3665
 x 34
 y 45
 end
-arch steppe
+arch jungle_1
 elevation 3031
 x 34
 y 46
@@ -8670,12 +8786,12 @@ elevation 2685
 x 34
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3401
 x 34
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3835
 x 34
 y 49
@@ -8714,22 +8830,22 @@ elevation 2621
 x 35
 y 6
 end
-arch steppe
+arch jungle_1
 elevation 3051
 x 35
 y 7
 end
-arch steppe
+arch jungle_1
 elevation 4213
 x 35
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 4303
 x 35
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 3721
 x 35
 y 10
@@ -8764,7 +8880,7 @@ elevation 3667
 x 35
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4467
 x 35
 y 17
@@ -8779,7 +8895,7 @@ elevation 4559
 x 35
 y 19
 end
-arch hills_rocky
+arch treed_hills
 elevation 4860
 x 35
 y 20
@@ -8789,7 +8905,7 @@ elevation 4313
 x 35
 y 21
 end
-arch hills_rocky
+arch treed_hills
 elevation 3604
 x 35
 y 22
@@ -8849,17 +8965,17 @@ elevation 2915
 x 35
 y 33
 end
-arch steppe
+arch jungle_1
 elevation 3292
 x 35
 y 34
 end
-arch steppe
+arch jungle_1
 elevation 3418
 x 35
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3194
 x 35
 y 36
@@ -8869,8 +8985,12 @@ elevation 2274
 x 35
 y 37
 end
-arch desert
+arch grassmedium
 elevation 256
+x 35
+y 38
+end
+arch forestsparse
 x 35
 y 38
 end
@@ -8879,7 +8999,7 @@ elevation 1174
 x 35
 y 39
 end
-arch brush
+arch evergreens
 elevation 374
 x 35
 y 40
@@ -8914,22 +9034,22 @@ elevation 2555
 x 35
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 3033
 x 35
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3290
 x 35
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3612
 x 35
 y 49
 end
-arch steppe
+arch jungle_1
 elevation 3460
 x 36
 end
@@ -8948,12 +9068,12 @@ elevation 5148
 x 36
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 4996
 x 36
 y 4
 end
-arch steppe
+arch jungle_1
 elevation 3874
 x 36
 y 5
@@ -8973,12 +9093,12 @@ elevation 2939
 x 36
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3519
 x 36
 y 9
 end
-arch hills_rocky
+arch treed_hills
 elevation 3451
 x 36
 y 10
@@ -9013,27 +9133,27 @@ elevation 3796
 x 36
 y 16
 end
-arch steppe
+arch jungle_1
 elevation 4267
 x 36
 y 17
 end
-arch hills_rocky
+arch treed_hills
 elevation 4268
 x 36
 y 18
 end
-arch steppe
+arch jungle_1
 elevation 4099
 x 36
 y 19
 end
-arch steppe
+arch jungle_1
 elevation 3964
 x 36
 y 20
 end
-arch steppe
+arch jungle_1
 elevation 3642
 x 36
 y 21
@@ -9083,7 +9203,7 @@ elevation 1875
 x 36
 y 30
 end
-arch brush
+arch evergreens
 elevation 809
 x 36
 y 31
@@ -9108,7 +9228,7 @@ elevation 2857
 x 36
 y 35
 end
-arch steppe
+arch jungle_1
 elevation 3366
 x 36
 y 36
@@ -9153,7 +9273,7 @@ elevation 1153
 x 36
 y 44
 end
-arch brush
+arch evergreens
 elevation 585
 x 36
 y 45
@@ -9168,12 +9288,12 @@ elevation 2973
 x 36
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3522
 x 36
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3091
 x 36
 y 49
@@ -9222,7 +9342,7 @@ elevation 2173
 x 37
 y 8
 end
-arch steppe
+arch jungle_1
 elevation 3112
 x 37
 y 9
@@ -9267,7 +9387,7 @@ elevation 3444
 x 37
 y 17
 end
-arch steppe
+arch jungle_1
 elevation 3072
 x 37
 y 18
@@ -9332,22 +9452,34 @@ elevation 2265
 x 37
 y 30
 end
-arch desert
+arch grassbrown
 elevation 918
 x 37
 y 31
 end
-arch desert
+arch forestsparse
+x 37
+y 31
+end
+arch grassbrown
 elevation 290
 x 37
 y 32
 end
-arch desert
+arch forestsparse
+x 37
+y 32
+end
+arch grassbrown
 elevation 318
 x 37
 y 33
 end
-arch brush
+arch forestsparse
+x 37
+y 33
+end
+arch evergreens
 elevation 544
 x 37
 y 34
@@ -9357,17 +9489,17 @@ elevation 2311
 x 37
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 3268
 x 37
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 3425
 x 37
 y 37
 end
-arch hills_rocky
+arch treed_hills
 elevation 3235
 x 37
 y 38
@@ -9392,27 +9524,35 @@ elevation 1694
 x 37
 y 42
 end
-arch desert
+arch grassdark
 elevation 487
 x 37
 y 43
 end
-arch desert
+arch forestsparse
+x 37
+y 43
+end
+arch grassdark
 elevation 201
 x 37
 y 44
 end
-arch brush
+arch forestsparse
+x 37
+y 44
+end
+arch evergreens
 elevation 86
 x 37
 y 45
 end
-arch brush
+arch evergreens
 elevation 923
 x 37
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 3010
 x 37
 y 47
@@ -9422,7 +9562,7 @@ elevation 4010
 x 37
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4139
 x 37
 y 49
@@ -9446,17 +9586,17 @@ elevation 4366
 x 38
 y 3
 end
-arch steppe
+arch jungle_1
 elevation 4393
 x 38
 y 4
 end
-arch hills_rocky
+arch treed_hills
 elevation 3610
 x 38
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3135
 x 38
 y 6
@@ -9586,18 +9726,26 @@ elevation 2082
 x 38
 y 31
 end
-arch brush
+arch evergreens
 elevation 228
 x 38
 y 32
 end
-arch desert
+arch grassbrown
 elevation 194
 x 38
 y 33
 end
-arch desert
+arch forestsparse
+x 38
+y 33
+end
+arch grassbrown
 elevation 448
+x 38
+y 34
+end
+arch forestsparse
 x 38
 y 34
 end
@@ -9611,7 +9759,7 @@ elevation 2807
 x 38
 y 36
 end
-arch steppe
+arch jungle_1
 elevation 3282
 x 38
 y 37
@@ -9621,12 +9769,12 @@ elevation 3406
 x 38
 y 38
 end
-arch steppe
+arch jungle_1
 elevation 3265
 x 38
 y 39
 end
-arch steppe
+arch jungle_1
 elevation 3036
 x 38
 y 40
@@ -9641,17 +9789,21 @@ elevation 1766
 x 38
 y 42
 end
-arch brush
+arch evergreens
 elevation 900
 x 38
 y 43
 end
-arch desert
+arch grassdark
 elevation 225
 x 38
 y 44
 end
-arch brush
+arch forestsparse
+x 38
+y 44
+end
+arch evergreens
 elevation 171
 x 38
 y 45
@@ -9671,7 +9823,7 @@ elevation 4056
 x 38
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4498
 x 38
 y 49
@@ -9705,7 +9857,7 @@ elevation 3797
 x 39
 y 5
 end
-arch steppe
+arch jungle_1
 elevation 3233
 x 39
 y 6
@@ -9825,7 +9977,7 @@ elevation 2446
 x 39
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3102
 x 39
 y 30
@@ -9890,18 +10042,26 @@ elevation 1311
 x 39
 y 42
 end
-arch desert
+arch grassdark
 elevation 682
 x 39
 y 43
 end
-arch brush
+arch forestsparse
+x 39
+y 43
+end
+arch evergreens
 elevation 687
 x 39
 y 44
 end
-arch desert
+arch grassdark
 elevation 767
+x 39
+y 45
+end
+arch forestsparse
 x 39
 y 45
 end
@@ -9915,12 +10075,12 @@ elevation 1902
 x 39
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3922
 x 39
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4193
 x 39
 y 49
@@ -9929,7 +10089,7 @@ arch woods
 elevation 2220
 x 40
 end
-arch brush
+arch evergreens
 elevation 996
 x 40
 y 1
@@ -10004,7 +10164,7 @@ elevation 1090
 x 40
 y 15
 end
-arch brush
+arch evergreens
 elevation 587
 x 40
 y 16
@@ -10039,12 +10199,12 @@ elevation 2615
 x 40
 y 22
 end
-arch steppe
+arch jungle_1
 elevation 3087
 x 40
 y 23
 end
-arch hills_rocky
+arch treed_hills
 elevation 3261
 x 40
 y 24
@@ -10069,17 +10229,17 @@ elevation 2915
 x 40
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3124
 x 40
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3350
 x 40
 y 30
 end
-arch hills_rocky
+arch treed_hills
 elevation 3274
 x 40
 y 31
@@ -10119,8 +10279,12 @@ elevation 2479
 x 40
 y 38
 end
-arch desert
+arch grassmedium
 elevation 856
+x 40
+y 39
+end
+arch forestsparse
 x 40
 y 39
 end
@@ -10144,7 +10308,7 @@ elevation 1270
 x 40
 y 43
 end
-arch brush
+arch evergreens
 elevation 146
 x 40
 y 44
@@ -10164,12 +10328,12 @@ elevation 2626
 x 40
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3736
 x 40
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4385
 x 40
 y 49
@@ -10243,18 +10407,22 @@ elevation 1082
 x 41
 y 13
 end
-arch brush
+arch evergreens
 elevation 934
 x 41
 y 14
 end
-arch brush
+arch evergreens
 elevation 115
 x 41
 y 15
 end
-arch desert
+arch grassbrown
 elevation 399
+x 41
+y 16
+end
+arch forestsparse
 x 41
 y 16
 end
@@ -10288,17 +10456,17 @@ elevation 2942
 x 41
 y 22
 end
-arch hills_rocky
+arch treed_hills
 elevation 3293
 x 41
 y 23
 end
-arch steppe
+arch jungle_1
 elevation 3297
 x 41
 y 24
 end
-arch hills_rocky
+arch treed_hills
 elevation 3048
 x 41
 y 25
@@ -10313,27 +10481,27 @@ elevation 2887
 x 41
 y 27
 end
-arch hills_rocky
+arch treed_hills
 elevation 3083
 x 41
 y 28
 end
-arch steppe
+arch jungle_1
 elevation 3237
 x 41
 y 29
 end
-arch steppe
+arch jungle_1
 elevation 3185
 x 41
 y 30
 end
-arch steppe
+arch jungle_1
 elevation 3409
 x 41
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3051
 x 41
 y 32
@@ -10413,12 +10581,12 @@ elevation 2704
 x 41
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3639
 x 41
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3357
 x 41
 y 49
@@ -10477,37 +10645,37 @@ elevation 1059
 x 42
 y 10
 end
-arch brush
+arch evergreens
 elevation 942
 x 42
 y 11
 end
-arch brush
+arch evergreens
 elevation 887
 x 42
 y 12
 end
-arch brush
+arch evergreens
 elevation 398
 x 42
 y 13
 end
-arch brush
+arch evergreens
 elevation 735
 x 42
 y 14
 end
-arch grass
+arch jungle_2
 elevation 697
 x 42
 y 15
 end
-arch brush
+arch evergreens
 elevation 731
 x 42
 y 16
 end
-arch grass
+arch jungle_2
 elevation 944
 x 42
 y 17
@@ -10517,12 +10685,12 @@ elevation 1145
 x 42
 y 18
 end
-arch hills_rocky
+arch treed_hills
 elevation 1262
 x 42
 y 19
 end
-arch hills_rocky
+arch treed_hills
 elevation 1224
 x 42
 y 20
@@ -10552,7 +10720,7 @@ elevation 2582
 x 42
 y 25
 end
-arch hills_rocky
+arch treed_hills
 elevation 2422
 x 42
 y 26
@@ -10562,7 +10730,7 @@ elevation 2473
 x 42
 y 27
 end
-arch hills_rocky
+arch treed_hills
 elevation 2686
 x 42
 y 28
@@ -10592,22 +10760,26 @@ elevation 2864
 x 42
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 2582
 x 42
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 1943
 x 42
 y 35
 end
-arch desert
+arch grassbrown
 elevation 736
 x 42
 y 36
 end
-arch hills_rocky
+arch forestsparse
+x 42
+y 36
+end
+arch treed_hills
 elevation 1619
 x 42
 y 37
@@ -10622,7 +10794,7 @@ elevation 2826
 x 42
 y 39
 end
-arch hills_rocky
+arch treed_hills
 elevation 3165
 x 42
 y 40
@@ -10642,8 +10814,12 @@ elevation 1796
 x 42
 y 43
 end
-arch desert
+arch grassmedium
 elevation 420
+x 42
+y 44
+end
+arch forestsparse
 x 42
 y 44
 end
@@ -10667,7 +10843,7 @@ elevation 3322
 x 42
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3677
 x 42
 y 49
@@ -10691,12 +10867,16 @@ elevation 2472
 x 43
 y 3
 end
-arch desert
+arch grassmedium
 elevation 901
 x 43
 y 4
 end
-arch brush
+arch forestsparse
+x 43
+y 4
+end
+arch evergreens
 elevation 754
 x 43
 y 5
@@ -10716,62 +10896,62 @@ elevation 1150
 x 43
 y 8
 end
-arch brush
+arch evergreens
 elevation 119
 x 43
 y 9
 end
-arch brush
+arch evergreens
 elevation 13
 x 43
 y 10
 end
-arch brush
+arch evergreens
 elevation 211
 x 43
 y 11
 end
-arch brush
+arch evergreens
 elevation 266
 x 43
 y 12
 end
-arch brush
+arch evergreens
 elevation 733
 x 43
 y 13
 end
-arch brush
+arch evergreens
 elevation 734
 x 43
 y 14
 end
-arch brush
+arch evergreens
 elevation 701
 x 43
 y 15
 end
-arch brush
+arch evergreens
 elevation 636
 x 43
 y 16
 end
-arch grass
+arch jungle_2
 elevation 628
 x 43
 y 17
 end
-arch brush
+arch evergreens
 elevation 445
 x 43
 y 18
 end
-arch brush
+arch evergreens
 elevation 580
 x 43
 y 19
 end
-arch brush
+arch evergreens
 elevation 613
 x 43
 y 20
@@ -10781,7 +10961,7 @@ elevation 1441
 x 43
 y 21
 end
-arch hills_rocky
+arch treed_hills
 elevation 1935
 x 43
 y 22
@@ -10796,42 +10976,42 @@ elevation 1953
 x 43
 y 24
 end
-arch hills_rocky
+arch treed_hills
 elevation 1663
 x 43
 y 25
 end
-arch brush
+arch evergreens
 elevation 794
 x 43
 y 26
 end
-arch hills_rocky
+arch treed_hills
 elevation 1705
 x 43
 y 27
 end
-arch hills_rocky
+arch treed_hills
 elevation 1932
 x 43
 y 28
 end
-arch hills_rocky
+arch treed_hills
 elevation 1773
 x 43
 y 29
 end
-arch hills_rocky
+arch treed_hills
 elevation 2438
 x 43
 y 30
 end
-arch hills_rocky
+arch treed_hills
 elevation 2279
 x 43
 y 31
 end
-arch steppe
+arch jungle_1
 elevation 3081
 x 43
 y 32
@@ -10841,23 +11021,31 @@ elevation 2896
 x 43
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 2272
 x 43
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 1277
 x 43
 y 35
 end
-arch desert
+arch grassbrown
 elevation 130
 x 43
 y 36
 end
-arch desert
+arch forestsparse
+x 43
+y 36
+end
+arch grassbrown
 elevation 944
+x 43
+y 37
+end
+arch forestsparse
 x 43
 y 37
 end
@@ -10901,8 +11089,12 @@ elevation 1570
 x 43
 y 45
 end
-arch desert
+arch grassbrown
 elevation 398
+x 43
+y 46
+end
+arch forestsparse
 x 43
 y 46
 end
@@ -10911,12 +11103,12 @@ elevation 1828
 x 43
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3074
 x 43
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3658
 x 43
 y 49
@@ -10960,72 +11152,80 @@ elevation 1156
 x 44
 y 7
 end
-arch desert
+arch grassmedium
 elevation 838
 x 44
 y 8
 end
-arch brush
+arch forestsparse
+x 44
+y 8
+end
+arch evergreens
 elevation 231
 x 44
 y 9
 end
-arch brush
+arch evergreens
 elevation 46
 x 44
 y 10
 end
-arch brush
+arch evergreens
 elevation 225
 x 44
 y 11
 end
-arch brush
+arch evergreens
 elevation 527
 x 44
 y 12
 end
-arch brush
+arch evergreens
 elevation 827
 x 44
 y 13
 end
-arch brush
+arch evergreens
 elevation 872
 x 44
 y 14
 end
-arch brush
+arch evergreens
 elevation 393
 x 44
 y 15
 end
-arch brush
+arch evergreens
 elevation 290
 x 44
 y 16
 end
-arch grass
+arch jungle_2
 elevation 182
 x 44
 y 17
 end
-arch desert
+arch grassdark
 elevation 359
 x 44
 y 18
 end
-arch grass
+arch forestsparse
+x 44
+y 18
+end
+arch jungle_2
 elevation 401
 x 44
 y 19
 end
-arch brush
+arch evergreens
 elevation 259
 x 44
 y 20
 end
-arch brush
+arch evergreens
 elevation 387
 x 44
 y 21
@@ -11040,28 +11240,44 @@ elevation 1264
 x 44
 y 23
 end
-arch hills_rocky
+arch treed_hills
 elevation 1057
 x 44
 y 24
 end
-arch desert
+arch grassbrown
 elevation 425
 x 44
 y 25
 end
-arch desert
+arch forestsparse
+x 44
+y 25
+end
+arch grassbrown
 elevation 634
 x 44
 y 26
 end
-arch desert
+arch forestsparse
+x 44
+y 26
+end
+arch grassbrown
 elevation 857
 x 44
 y 27
 end
-arch desert
+arch forestsparse
+x 44
+y 27
+end
+arch grassbrown
 elevation 960
+x 44
+y 28
+end
+arch forestsparse
 x 44
 y 28
 end
@@ -11070,12 +11286,12 @@ elevation 1098
 x 44
 y 29
 end
-arch hills_rocky
+arch treed_hills
 elevation 1619
 x 44
 y 30
 end
-arch hills_rocky
+arch treed_hills
 elevation 2436
 x 44
 y 31
@@ -11085,27 +11301,35 @@ elevation 3099
 x 44
 y 32
 end
-arch hills_rocky
+arch treed_hills
 elevation 2918
 x 44
 y 33
 end
-arch brush
+arch evergreens
 elevation 690
 x 44
 y 34
 end
-arch desert
+arch grassbrown
 elevation 260
 x 44
 y 35
 end
-arch desert
+arch forestsparse
+x 44
+y 35
+end
+arch grassbrown
 elevation 171
 x 44
 y 36
 end
-arch brush
+arch forestsparse
+x 44
+y 36
+end
+arch evergreens
 elevation 735
 x 44
 y 37
@@ -11160,12 +11384,12 @@ elevation 3627
 x 44
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4294
 x 44
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 4163
 x 44
 y 49
@@ -11174,7 +11398,7 @@ arch woods
 elevation 2619
 x 45
 end
-arch brush
+arch evergreens
 elevation 878
 x 45
 y 1
@@ -11194,42 +11418,46 @@ elevation 1406
 x 45
 y 4
 end
-arch desert
+arch grassmedium
 elevation 657
 x 45
 y 5
 end
-arch brush
+arch forestsparse
+x 45
+y 5
+end
+arch evergreens
 elevation 760
 x 45
 y 6
 end
-arch brush
+arch evergreens
 elevation 795
 x 45
 y 7
 end
-arch brush
+arch evergreens
 elevation 592
 x 45
 y 8
 end
-arch brush
+arch evergreens
 elevation 328
 x 45
 y 9
 end
-arch brush
+arch evergreens
 elevation 212
 x 45
 y 10
 end
-arch brush
+arch evergreens
 elevation 67
 x 45
 y 11
 end
-arch brush
+arch evergreens
 elevation 364
 x 45
 y 12
@@ -11244,82 +11472,94 @@ elevation 1118
 x 45
 y 14
 end
-arch brush
+arch evergreens
 elevation 881
 x 45
 y 15
 end
-arch grass
+arch jungle_2
 elevation 384
 x 45
 y 16
 end
-arch brush
+arch evergreens
 elevation 121
 x 45
 y 17
 end
-arch brush
+arch evergreens
 elevation 139
 x 45
 y 18
 end
-arch brush
+arch evergreens
 elevation 288
 x 45
 y 19
 end
-arch brush
+arch evergreens
 elevation 435
 x 45
 y 20
 end
-arch brush
+arch evergreens
 elevation 480
 x 45
 y 21
 end
-arch desert
+arch grassdark
 elevation 282
 x 45
 y 22
 end
-arch brush
+arch forestsparse
+x 45
+y 22
+end
+arch evergreens
 elevation 843
 x 45
 y 23
 end
-arch hills_rocky
+arch treed_hills
 elevation 1029
 x 45
 y 24
 end
-arch hills_rocky
+arch treed_hills
 elevation 1112
 x 45
 y 25
 end
-arch brush
+arch evergreens
 elevation 984
 x 45
 y 26
 end
-arch brush
+arch evergreens
 elevation 753
 x 45
 y 27
 end
-arch desert
+arch grassbrown
 elevation 366
 x 45
 y 28
 end
-arch desert
+arch forestsparse
+x 45
+y 28
+end
+arch grassbrown
 elevation 104
 x 45
 y 29
 end
-arch brush
+arch forestsparse
+x 45
+y 29
+end
+arch evergreens
 elevation 45
 x 45
 y 30
@@ -11329,7 +11569,7 @@ elevation 2053
 x 45
 y 31
 end
-arch hills_rocky
+arch treed_hills
 elevation 2885
 x 45
 y 32
@@ -11339,33 +11579,45 @@ elevation 2684
 x 45
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 1904
 x 45
 y 34
 end
-arch hills_rocky
+arch treed_hills
 elevation 1022
 x 45
 y 35
 end
-arch desert
+arch grassbrown
 elevation 513
 x 45
 y 36
 end
-arch brush
+arch forestsparse
+x 45
+y 36
+end
+arch evergreens
 elevation 118
 x 45
 y 37
 end
-arch desert
+arch grassbrown
 elevation 552
 x 45
 y 38
 end
-arch desert
+arch forestsparse
+x 45
+y 38
+end
+arch grassbrown
 elevation 858
+x 45
+y 39
+end
+arch forestsparse
 x 45
 y 39
 end
@@ -11389,8 +11641,12 @@ elevation 1156
 x 45
 y 43
 end
-arch desert
+arch grassmedium
 elevation 815
+x 45
+y 44
+end
+arch forestsparse
 x 45
 y 44
 end
@@ -11404,7 +11660,7 @@ elevation 3652
 x 45
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4559
 x 45
 y 47
@@ -11443,42 +11699,58 @@ elevation 1100
 x 46
 y 4
 end
-arch desert
+arch grassmedium
 elevation 225
 x 46
 y 5
 end
-arch desert
+arch forestsparse
+x 46
+y 5
+end
+arch grassmedium
 elevation 598
 x 46
 y 6
 end
-arch brush
+arch forestsparse
+x 46
+y 6
+end
+arch evergreens
 elevation 498
 x 46
 y 7
 end
-arch desert
+arch grassmedium
 elevation 108
 x 46
 y 8
 end
-arch desert
+arch forestsparse
+x 46
+y 8
+end
+arch grassmedium
 elevation 241
 x 46
 y 9
 end
-arch brush
+arch forestsparse
+x 46
+y 9
+end
+arch evergreens
 elevation 212
 x 46
 y 10
 end
-arch brush
+arch evergreens
 elevation 271
 x 46
 y 11
 end
-arch brush
+arch evergreens
 elevation 810
 x 46
 y 12
@@ -11498,52 +11770,64 @@ elevation 1210
 x 46
 y 15
 end
-arch brush
+arch evergreens
 elevation 603
 x 46
 y 16
 end
-arch grass
+arch jungle_2
 elevation 35
 x 46
 y 17
 end
-arch desert
+arch grassdark
 elevation 235
 x 46
 y 18
 end
-arch brush
+arch forestsparse
+x 46
+y 18
+end
+arch evergreens
 elevation 508
 x 46
 y 19
 end
-arch brush
+arch evergreens
 elevation 482
 x 46
 y 20
 end
-arch brush
+arch evergreens
 elevation 320
 x 46
 y 21
 end
-arch desert
+arch grassdark
 elevation 70
 x 46
 y 22
 end
-arch brush
+arch forestsparse
+x 46
+y 22
+end
+arch evergreens
 elevation 243
 x 46
 y 23
 end
-arch desert
+arch grassbrown
 elevation 887
 x 46
 y 24
 end
-arch hills_rocky
+arch forestsparse
+x 46
+y 24
+end
+arch treed_hills
 elevation 1243
 x 46
 y 25
@@ -11553,23 +11837,39 @@ elevation 1210
 x 46
 y 26
 end
-arch desert
+arch grassbrown
 elevation 458
 x 46
 y 27
 end
-arch desert
+arch forestsparse
+x 46
+y 27
+end
+arch grassbrown
 elevation 47
 x 46
 y 28
 end
-arch desert
+arch forestsparse
+x 46
+y 28
+end
+arch grassdark
 elevation 12
 x 46
 y 29
 end
-arch desert
+arch forestsparse
+x 46
+y 29
+end
+arch grassbrown
 elevation 536
+x 46
+y 30
+end
+arch forestsparse
 x 46
 y 30
 end
@@ -11588,7 +11888,7 @@ elevation 2367
 x 46
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 1754
 x 46
 y 34
@@ -11598,48 +11898,80 @@ elevation 1103
 x 46
 y 35
 end
-arch brush
+arch evergreens
 elevation 300
 x 46
 y 36
 end
-arch desert
+arch grassmedium
 elevation 97
 x 46
 y 37
 end
-arch desert
+arch forestsparse
+x 46
+y 37
+end
+arch grassmedium
 elevation 129
 x 46
 y 38
 end
-arch desert
+arch forestsparse
+x 46
+y 38
+end
+arch grassmedium
 elevation 38
 x 46
 y 39
 end
-arch desert
+arch forestsparse
+x 46
+y 39
+end
+arch grassbrown
 elevation 86
 x 46
 y 40
 end
-arch desert
+arch forestsparse
+x 46
+y 40
+end
+arch grassmedium
 elevation 334
 x 46
 y 41
 end
-arch desert
+arch forestsparse
+x 46
+y 41
+end
+arch grassmedium
 elevation 110
 x 46
 y 42
 end
-arch desert
+arch forestsparse
+x 46
+y 42
+end
+arch grassmedium
 elevation 41
 x 46
 y 43
 end
-arch desert
+arch forestsparse
+x 46
+y 43
+end
+arch grassmedium
 elevation 421
+x 46
+y 44
+end
+arch forestsparse
 x 46
 y 44
 end
@@ -11648,12 +11980,12 @@ elevation 2270
 x 46
 y 45
 end
-arch hills_rocky
+arch treed_hills
 elevation 3434
 x 46
 y 46
 end
-arch hills_rocky
+arch treed_hills
 elevation 4171
 x 46
 y 47
@@ -11672,12 +12004,12 @@ arch jungle_1
 elevation 2009
 x 47
 end
-arch brush
+arch evergreens
 elevation 770
 x 47
 y 1
 end
-arch brush
+arch evergreens
 elevation 756
 x 47
 y 2
@@ -11692,37 +12024,45 @@ elevation 1075
 x 47
 y 4
 end
-arch brush
+arch evergreens
 elevation 883
 x 47
 y 5
 end
-arch brush
+arch evergreens
 elevation 573
 x 47
 y 6
 end
-arch desert
+arch grassmedium
 elevation 75
 x 47
 y 7
 end
-arch desert
+arch forestsparse
+x 47
+y 7
+end
+arch grassmedium
 elevation 66
 x 47
 y 8
 end
-arch brush
+arch forestsparse
+x 47
+y 8
+end
+arch evergreens
 elevation 129
 x 47
 y 9
 end
-arch brush
+arch evergreens
 elevation 112
 x 47
 y 10
 end
-arch brush
+arch evergreens
 elevation 304
 x 47
 y 11
@@ -11747,48 +12087,60 @@ elevation 1438
 x 47
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 1153
 x 47
 y 16
 end
-arch brush
+arch evergreens
 elevation 962
 x 47
 y 17
 end
-arch desert
+arch grassdark
 elevation 951
 x 47
 y 18
 end
-arch brush
+arch forestsparse
+x 47
+y 18
+end
+arch evergreens
 elevation 812
 x 47
 y 19
 end
-arch brush
+arch evergreens
 elevation 270
 x 47
 y 20
 end
-arch brush
+arch evergreens
 elevation 255
 x 47
 y 21
 end
-arch brush
+arch evergreens
 elevation 38
 x 47
 y 22
 end
-arch desert
+arch grassdark
 elevation 36
 x 47
 y 23
 end
-arch desert
+arch forestsparse
+x 47
+y 23
+end
+arch grassbrown
 elevation 264
+x 47
+y 24
+end
+arch forestsparse
 x 47
 y 24
 end
@@ -11797,32 +12149,44 @@ elevation 1258
 x 47
 y 25
 end
-arch hills_rocky
+arch treed_hills
 elevation 1432
 x 47
 y 26
 end
-arch desert
+arch grassbrown
 elevation 709
 x 47
 y 27
 end
-arch desert
+arch forestsparse
+x 47
+y 27
+end
+arch grassbrown
 elevation 184
 x 47
 y 28
 end
-arch brush
+arch forestsparse
+x 47
+y 28
+end
+arch evergreens
 elevation 118
 x 47
 y 29
 end
-arch desert
+arch grassbrown
 elevation 14
 x 47
 y 30
 end
-arch brush
+arch forestsparse
+x 47
+y 30
+end
+arch evergreens
 elevation 522
 x 47
 y 31
@@ -11842,53 +12206,89 @@ elevation 1411
 x 47
 y 34
 end
-arch desert
+arch grassbrown
 elevation 575
 x 47
 y 35
 end
-arch brush
+arch forestsparse
+x 47
+y 35
+end
+arch evergreens
 elevation 44
 x 47
 y 36
 end
-arch desert
+arch grassmedium
 elevation 113
 x 47
 y 37
 end
-arch desert
+arch forestsparse
+x 47
+y 37
+end
+arch grassmedium
 elevation 84
 x 47
 y 38
 end
-arch desert
+arch forestsparse
+x 47
+y 38
+end
+arch grassmedium
 elevation 66
 x 47
 y 39
 end
-arch desert
+arch forestsparse
+x 47
+y 39
+end
+arch grassmedium
 elevation 80
 x 47
 y 40
 end
-arch desert
+arch forestsparse
+x 47
+y 40
+end
+arch grassmedium
 elevation 23
 x 47
 y 41
 end
-arch desert
+arch forestsparse
+x 47
+y 41
+end
+arch grassmedium
 elevation 19
 x 47
 y 42
 end
-arch desert
+arch forestsparse
+x 47
+y 42
+end
+arch grassmedium
 elevation 33
 x 47
 y 43
 end
-arch desert
+arch forestsparse
+x 47
+y 43
+end
+arch grassmedium
 elevation 253
+x 47
+y 44
+end
+arch forestsparse
 x 47
 y 44
 end
@@ -11907,7 +12307,7 @@ elevation 2404
 x 47
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 4273
 x 47
 y 48
@@ -11921,12 +12321,16 @@ arch jungle_1
 elevation 1682
 x 48
 end
-arch desert
+arch grassmedium
 elevation 524
 x 48
 y 1
 end
-arch brush
+arch forestsparse
+x 48
+y 1
+end
+arch evergreens
 elevation 815
 x 48
 y 2
@@ -11941,37 +12345,49 @@ elevation 1123
 x 48
 y 4
 end
-arch desert
+arch grassmedium
 elevation 912
 x 48
 y 5
 end
-arch brush
+arch forestsparse
+x 48
+y 5
+end
+arch evergreens
 elevation 511
 x 48
 y 6
 end
-arch desert
+arch grassmedium
 elevation 102
 x 48
 y 7
 end
-arch brush
+arch forestsparse
+x 48
+y 7
+end
+arch evergreens
 elevation 20
 x 48
 y 8
 end
-arch desert
+arch grassmedium
 elevation 25
 x 48
 y 9
 end
-arch brush
+arch forestsparse
+x 48
+y 9
+end
+arch evergreens
 elevation 77
 x 48
 y 10
 end
-arch brush
+arch evergreens
 elevation 725
 x 48
 y 11
@@ -11996,7 +12412,7 @@ elevation 1339
 x 48
 y 15
 end
-arch hills_rocky
+arch treed_hills
 elevation 1416
 x 48
 y 16
@@ -12006,38 +12422,42 @@ elevation 1581
 x 48
 y 17
 end
-arch hills_rocky
+arch treed_hills
 elevation 1481
 x 48
 y 18
 end
-arch hills_rocky
+arch treed_hills
 elevation 1112
 x 48
 y 19
 end
-arch brush
+arch evergreens
 elevation 616
 x 48
 y 20
 end
-arch brush
+arch evergreens
 elevation 319
 x 48
 y 21
 end
-arch brush
+arch evergreens
 elevation 65
 x 48
 y 22
 end
-arch brush
+arch evergreens
 elevation 80
 x 48
 y 23
 end
-arch desert
+arch grassbrown
 elevation 357
+x 48
+y 24
+end
+arch forestsparse
 x 48
 y 24
 end
@@ -12051,78 +12471,106 @@ elevation 1616
 x 48
 y 26
 end
-arch hills_rocky
+arch treed_hills
 elevation 1339
 x 48
 y 27
 end
-arch desert
+arch grassbrown
 elevation 737
 x 48
 y 28
 end
-arch brush
+arch forestsparse
+x 48
+y 28
+end
+arch evergreens
 elevation 88
 x 48
 y 29
 end
-arch brush
+arch evergreens
 elevation 30
 x 48
 y 30
 end
-arch brush
+arch evergreens
 elevation 195
 x 48
 y 31
 end
-arch hills_rocky
+arch treed_hills
 elevation 1192
 x 48
 y 32
 end
-arch desert
+arch grassbrown
 elevation 800
 x 48
 y 33
 end
-arch hills_rocky
+arch forestsparse
+x 48
+y 33
+end
+arch treed_hills
 elevation 1220
 x 48
 y 34
 end
-arch desert
+arch grassbrown
 elevation 600
 x 48
 y 35
 end
-arch brush
+arch forestsparse
+x 48
+y 35
+end
+arch evergreens
 elevation 665
 x 48
 y 36
 end
-arch brush
+arch evergreens
 elevation 82
 x 48
 y 37
 end
-arch desert
+arch grassmedium
 elevation 382
 x 48
 y 38
 end
-arch desert
+arch forestsparse
+x 48
+y 38
+end
+arch grassmedium
 elevation 347
 x 48
 y 39
 end
-arch desert
+arch forestsparse
+x 48
+y 39
+end
+arch grassmedium
 elevation 21
 x 48
 y 40
 end
-arch desert
+arch forestsparse
+x 48
+y 40
+end
+arch grassmedium
 elevation 56
+x 48
+y 41
+end
+arch forestsparse
 x 48
 y 41
 end
@@ -12131,13 +12579,21 @@ elevation -8
 x 48
 y 42
 end
-arch desert
+arch grassmedium
 elevation 86
 x 48
 y 43
 end
-arch desert
+arch forestsparse
+x 48
+y 43
+end
+arch grassmedium
 elevation 700
+x 48
+y 44
+end
+arch forestsparse
 x 48
 y 44
 end
@@ -12156,66 +12612,97 @@ elevation 2456
 x 48
 y 47
 end
-arch hills_rocky
+arch treed_hills
 elevation 3111
 x 48
 y 48
 end
-arch hills_rocky
+arch treed_hills
 elevation 3022
 x 48
 y 49
 end
-arch desert
+arch grassmedium
 elevation 765
 x 49
 end
-arch desert
+arch forestsparse
+x 49
+end
+arch grassmedium
 elevation 398
 x 49
 y 1
 end
-arch desert
+arch forestsparse
+x 49
+y 1
+end
+arch grassmedium
 elevation 347
 x 49
 y 2
 end
-arch desert
+arch forestsparse
+x 49
+y 2
+end
+arch grassmedium
 elevation 592
 x 49
 y 3
 end
-arch brush
+arch forestsparse
+x 49
+y 3
+end
+arch evergreens
 elevation 691
 x 49
 y 4
 end
-arch brush
+arch evergreens
 elevation 506
 x 49
 y 5
 end
-arch desert
+arch grassmedium
 elevation 202
 x 49
 y 6
 end
-arch desert
+arch forestsparse
+x 49
+y 6
+end
+arch grassmedium
 elevation 41
 x 49
 y 7
 end
-arch desert
+arch forestsparse
+x 49
+y 7
+end
+arch grassmedium
 elevation 33
 x 49
 y 8
 end
-arch desert
+arch forestsparse
+x 49
+y 8
+end
+arch grassmedium
 elevation 241
 x 49
 y 9
 end
-arch brush
+arch forestsparse
+x 49
+y 9
+end
+arch evergreens
 elevation 708
 x 49
 y 10
@@ -12240,7 +12727,7 @@ elevation 1127
 x 49
 y 14
 end
-arch brush
+arch evergreens
 elevation 425
 x 49
 y 15
@@ -12255,7 +12742,7 @@ elevation 1764
 x 49
 y 17
 end
-arch hills_rocky
+arch treed_hills
 elevation 1618
 x 49
 y 18
@@ -12265,28 +12752,32 @@ elevation 1231
 x 49
 y 19
 end
-arch brush
+arch evergreens
 elevation 821
 x 49
 y 20
 end
-arch brush
+arch evergreens
 elevation 395
 x 49
 y 21
 end
-arch brush
+arch evergreens
 elevation 56
 x 49
 y 22
 end
-arch brush
+arch evergreens
 elevation 71
 x 49
 y 23
 end
-arch desert
+arch grassbrown
 elevation 608
+x 49
+y 24
+end
+arch forestsparse
 x 49
 y 24
 end
@@ -12305,22 +12796,22 @@ elevation 1409
 x 49
 y 27
 end
-arch brush
+arch evergreens
 elevation 918
 x 49
 y 28
 end
-arch brush
+arch evergreens
 elevation 215
 x 49
 y 29
 end
-arch brush
+arch evergreens
 elevation 139
 x 49
 y 30
 end
-arch hills_rocky
+arch treed_hills
 elevation 1003
 x 49
 y 31
@@ -12330,12 +12821,12 @@ elevation 1293
 x 49
 y 32
 end
-arch hills_rocky
+arch treed_hills
 elevation 1269
 x 49
 y 33
 end
-arch hills_rocky
+arch treed_hills
 elevation 1242
 x 49
 y 34
@@ -12345,33 +12836,49 @@ elevation 1458
 x 49
 y 35
 end
-arch hills_rocky
+arch treed_hills
 elevation 1322
 x 49
 y 36
 end
-arch hills_rocky
+arch treed_hills
 elevation 1143
 x 49
 y 37
 end
-arch desert
+arch grassmedium
 elevation 949
 x 49
 y 38
 end
-arch desert
+arch forestsparse
+x 49
+y 38
+end
+arch grassmedium
 elevation 886
 x 49
 y 39
 end
-arch desert
+arch forestsparse
+x 49
+y 39
+end
+arch grassmedium
 elevation 413
 x 49
 y 40
 end
-arch desert
+arch forestsparse
+x 49
+y 40
+end
+arch grassmedium
 elevation 78
+x 49
+y 41
+end
+arch forestsparse
 x 49
 y 41
 end
@@ -12380,23 +12887,39 @@ elevation -6
 x 49
 y 42
 end
-arch desert
+arch grassmedium
 elevation 32
 x 49
 y 43
 end
-arch desert
+arch forestsparse
+x 49
+y 43
+end
+arch grassmedium
 elevation 319
 x 49
 y 44
 end
-arch desert
+arch forestsparse
+x 49
+y 44
+end
+arch grassmedium
 elevation 867
 x 49
 y 45
 end
-arch desert
+arch forestsparse
+x 49
+y 45
+end
+arch grassmedium
 elevation 559
+x 49
+y 46
+end
+arch forestsparse
 x 49
 y 46
 end
