@@ -9,6 +9,7 @@ power_crystal.113
 power_crystal.114
 mina
 type 156
+weight 3
 color_fg white
 value 10000000
 material 64
