@@ -1,4 +1,5 @@
 Object big_wiz
+race giant
 name wizard
 randomitems big_wizard
 monster 1

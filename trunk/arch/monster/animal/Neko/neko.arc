@@ -1,4 +1,5 @@
 Object neko
+race animal
 name neko chan
 face neko.111
 anim

@@ -1,6 +1,6 @@
 Object ent
 randomitems giant
-race ent
+race faerie
 face ent.111
 color_fg brown
 anim

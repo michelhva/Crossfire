@@ -1,5 +1,6 @@
 Object sandy
 name sandy
+race faerie
 face sandy.111
 color_fg brown
 color_bg khaki

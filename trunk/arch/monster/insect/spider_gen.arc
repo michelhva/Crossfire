@@ -1,4 +1,5 @@
 Object spider_gen
+race insect
 name spider web
 other_arch spider
 generator 1

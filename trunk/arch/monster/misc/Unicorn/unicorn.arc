@@ -1,7 +1,7 @@
 Object unicorn
 name unicorn
 randomitems unicorn
-race unicorn
+race faerie
 monster 1
 sleep 1
 Wis 18

@@ -1,4 +1,5 @@
 Object cold_dragon
+race dragon
 name cold dragon hatchling
 randomitems cold_dragon
 face cold_drag.171

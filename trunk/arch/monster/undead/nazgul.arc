@@ -1,4 +1,5 @@
 Object nazgul
+race undead
 randomitems ring
 face nazgul.111
 anim

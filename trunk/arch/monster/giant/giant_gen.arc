@@ -1,4 +1,5 @@
 Object generate_giant
+race giant
 other_arch giant
 name bean stalk
 generator 1

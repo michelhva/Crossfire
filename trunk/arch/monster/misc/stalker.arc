@@ -1,4 +1,5 @@
 Object stalker
+race faerie
 face stalker.111
 color_fg blue
 anim

@@ -1,4 +1,5 @@
 Object slug
+race insect
 name slug
 face slug.131
 monster 1

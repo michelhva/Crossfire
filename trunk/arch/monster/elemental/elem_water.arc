@@ -1,5 +1,6 @@
 Object water_elemental
 name water elemental
+race water_elemental
 face elem_water.111
 color_fg blue
 anim

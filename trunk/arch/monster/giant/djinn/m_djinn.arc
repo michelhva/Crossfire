@@ -1,4 +1,5 @@
 Object minor_djinn
+race faerie
 name minor djinn
 randomitems minor_djinn
 face djinn.131

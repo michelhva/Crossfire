@@ -1,4 +1,5 @@
 Object generate_orc
+race goblin
 other_arch orc
 name generator
 generator 1

@@ -1,4 +1,5 @@
 Object generate_pixie
+race faerie
 other_arch pixie
 name generator
 face pixie_gen.111

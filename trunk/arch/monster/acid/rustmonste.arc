@@ -1,4 +1,5 @@
 Object rustmonster
+race animal
 name rustmonster
 face rustmonste.111
 anim

@@ -1,4 +1,5 @@
 Object conjurer2
+race human
 randomitems poor
 name conjurer
 face conjurer.111

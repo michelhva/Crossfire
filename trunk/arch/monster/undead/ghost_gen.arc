@@ -1,4 +1,5 @@
 Object generate_ghost
+race undead
 other_arch ghost
 name generator
 generator 1

@@ -1,4 +1,5 @@
 Object chess_knight
+race chess
 name knight
 randomitems standard
 face ch_knight.111

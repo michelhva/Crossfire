@@ -1,4 +1,5 @@
 Object zombie
+race undead
 face zombie.111
 randomitems zombie
 anim

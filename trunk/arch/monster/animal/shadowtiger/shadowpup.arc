@@ -1,7 +1,7 @@
 Object shadowpup
 name shadowtiger pup
 face panther.111
-race shadowpup
+race animal
 anim
 panther.111
 panther.112

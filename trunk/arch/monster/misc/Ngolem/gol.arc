@@ -1,4 +1,5 @@
 Object golem_necro
+race unnatural
 name golem of Necromancer
 face gol.131
 anim

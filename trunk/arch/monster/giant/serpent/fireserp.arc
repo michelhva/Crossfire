@@ -1,4 +1,5 @@
 Object fire_serpent
+race reptile
 name fire serpent
 randomitems fire_serpent
 face serpent.131

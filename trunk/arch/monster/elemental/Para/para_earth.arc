@@ -1,4 +1,5 @@
 Object para_earth
+race earth_elemental
 name earth para-elemental
 face para_earth.111
 randomitems para_elemental

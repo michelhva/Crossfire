@@ -1,4 +1,5 @@
 Object generate_ogre
+race giant
 other_arch ogre
 name generator
 generator 1

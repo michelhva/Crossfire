@@ -1,4 +1,5 @@
 Object djinn
+race faerie
 name Major djinn
 randomitems djinn
 face djinn.131

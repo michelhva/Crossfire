@@ -1,4 +1,5 @@
 Object acid_pool
+race slime
 name acid pool
 generator 1
 alive 1

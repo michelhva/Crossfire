@@ -1,5 +1,5 @@
 Object dark_elf
-race humanoid
+race faerie
 name dark elf
 randomitems dark_elf
 face dark_elf.111

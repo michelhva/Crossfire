@@ -1,6 +1,6 @@
 Object skeleton
 randomitems skeleton
-race skeleton
+race undead
 face skeleton.111
 color_fg white
 anim

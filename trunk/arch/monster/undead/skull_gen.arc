@@ -1,6 +1,6 @@
 Object generate_skull
 other_arch skull
-race skull
+race undead
 name generator
 face skull_gen.111
 generator 1

@@ -1,4 +1,5 @@
 Object wraith
+race undead
 randomitems ring
 face wraith.111
 anim

@@ -1,4 +1,5 @@
 Object chess_queen
+race chess
 name queen
 randomitems standard
 face ch_queen.111

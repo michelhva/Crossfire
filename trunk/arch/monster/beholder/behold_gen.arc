@@ -1,4 +1,5 @@
 Object generate_beholder
+race unnatural
 other_arch beholder
 name generator
 generator 1

@@ -1,7 +1,7 @@
 Object unusual_kobold
 name unusual kobold
 face unusual_kobold.111
-race humanoid
+race goblin
 anim
 unusual_kobold.111
 unusual_kobold.112

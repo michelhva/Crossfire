@@ -1,4 +1,5 @@
 Object generate_mouse
+race animal
 other_arch mouse
 name generator
 generator 1

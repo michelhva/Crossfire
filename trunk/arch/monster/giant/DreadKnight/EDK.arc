@@ -1,4 +1,5 @@
 Object EDK
+race giant
 name Elite Dread Knight
 randomitems EDK
 face Bk.111

@@ -1,4 +1,5 @@
 Object generate_dragon
+race dragon
 other_arch dragon
 name dragoncave
 generator 1
@@ -15,6 +16,5 @@ no_pick 1
 alive 1
 maxsp 1
 weight 1000000
-race dragon
 editable 1
 end

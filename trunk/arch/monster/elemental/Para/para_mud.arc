@@ -1,4 +1,5 @@
 Object para_mud
+race earth_elemental
 name mud para-elemental
 face para_mud.111
 randomitems para_elemental

@@ -1,4 +1,5 @@
 Object air_elemental
+race air_elemental
 name air elemental
 face elem_air.111
 color_fg light_blue

@@ -1,5 +1,5 @@
 Object dwarf_priest
-race humanoid
+race dwarf
 randomitems book
 name dwarf priest
 anim

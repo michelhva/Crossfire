@@ -1,6 +1,6 @@
 Object h_kobold
 name hyper kobold
-race humanoid
+race goblin
 face h_kobold.111
 anim
 h_kobold.111

@@ -1,6 +1,6 @@
 Object beholder
 randomitems beholder
-race animal
+race unnatural
 face beholder.111
 color_fg green
 anim

@@ -1,4 +1,5 @@
 Object generate_kobold
+race goblin
 other_arch kobold
 name generator
 generator 1

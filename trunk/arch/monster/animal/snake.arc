@@ -1,6 +1,6 @@
 Object snake
 randomitems snake
-race animal
+race reptile
 other_arch snake
 face snake.111
 speed -0.1

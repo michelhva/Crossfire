@@ -1,4 +1,5 @@
 Object pixie
+race faerie
 randomitems pixie
 face pixie.111
 color_fg orange

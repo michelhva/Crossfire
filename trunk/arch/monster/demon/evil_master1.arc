@@ -1,4 +1,5 @@
 Object evil_master1
+race demon
 name Evil Master
 face evil_master.111
 anim

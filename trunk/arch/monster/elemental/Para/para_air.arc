@@ -1,4 +1,5 @@
 Object para_air
+race air_elemental
 name air para-elemental
 randomitems para_elemental
 face para_air.111

@@ -1,4 +1,5 @@
 Object generate_madman
+race human
 name generator
 other_arch madman
 face madman_gen.111

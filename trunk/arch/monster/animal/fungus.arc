@@ -1,7 +1,7 @@
 Object fungus
 other_arch fungus
 name violent fungi
-race animal
+race slime
 face fungus.111
 speed -0.03
 generator 1

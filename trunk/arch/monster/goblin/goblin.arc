@@ -1,6 +1,6 @@
 Object goblin
 randomitems goblin
-race humanoid
+race goblin
 face goblin.111
 color_fg green
 anim

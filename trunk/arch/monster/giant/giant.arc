@@ -1,4 +1,5 @@
 Object giant
+race giant
 name hill giant
 randomitems giant
 monster 1

@@ -1,4 +1,5 @@
 Object belzebub
+race demon
 name Belzebub
 randomitems belzebub
 monster 1

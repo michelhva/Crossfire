@@ -1,4 +1,5 @@
 Object chicken
+race bird
 face chicken.131
 color_fg brown
 anim

@@ -1,4 +1,5 @@
 Object spectre
+race undead
 name Spectre
 randomitems spectre
 face spectre.111

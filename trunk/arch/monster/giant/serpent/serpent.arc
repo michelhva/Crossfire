@@ -1,5 +1,6 @@
 Object serpent
 name serpent
+race reptile
 randomitems serpent
 face serpent.131
 monster 1

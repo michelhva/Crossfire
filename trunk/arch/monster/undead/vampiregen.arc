@@ -1,4 +1,5 @@
 Object generate_vampire
+race undead
 name sarcophagus
 other_arch vampire
 generator 1

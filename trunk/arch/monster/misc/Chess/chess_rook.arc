@@ -1,4 +1,5 @@
 Object chess_rook
+race chess
 name rook
 randomitems standard
 face ch_rook.111
