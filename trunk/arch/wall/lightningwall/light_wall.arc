@@ -2,6 +2,8 @@ Object lightningwall
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 dam 5
 face light_wall.101
@@ -17,6 +19,8 @@ Object lightningwall_t
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.111
 anim
@@ -45,6 +49,8 @@ Object lightningwall_1
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.111
 color_bg yellow
@@ -61,6 +67,8 @@ Object lightningwall_2
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.121
 color_bg yellow
@@ -77,6 +85,8 @@ Object lightningwall_3
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.131
 color_bg yellow
@@ -93,6 +103,8 @@ Object lightningwall_4
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.141
 color_bg yellow
@@ -109,6 +121,8 @@ Object lightningwall_5
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.151
 color_bg yellow
@@ -125,6 +139,8 @@ Object lightningwall_6
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.161
 color_bg yellow
@@ -141,6 +157,8 @@ Object lightningwall_7
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.171
 color_bg yellow
@@ -157,6 +175,8 @@ Object lightningwall_8
 other_arch lightning_s
 name lightningwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face light_wall.181
 color_bg yellow

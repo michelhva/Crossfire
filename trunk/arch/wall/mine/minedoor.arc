@@ -1,6 +1,8 @@
 Object mine_secret_1_1
 name secret door
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face minedoor_4.111
 anim
@@ -33,6 +35,8 @@ Object mine_secret_1_2
 name secret door
 x 1
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face minedoor_4.211
 anim
@@ -61,6 +65,8 @@ end
 Object mine_secret_2_1
 name secret door
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face minedoor_8.111
 anim
@@ -93,6 +99,8 @@ Object mine_secret_2_2
 name secret door
 y 1
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face minedoor_8.211
 anim

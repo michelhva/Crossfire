@@ -3,6 +3,8 @@ name volcano
 other_arch lava
 face volcano_lo.111
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 no_pick 1
 slow_move 15
@@ -16,6 +18,8 @@ name volcano
 other_arch lava
 face volcano_lo.211
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 x 1
 no_pick 1

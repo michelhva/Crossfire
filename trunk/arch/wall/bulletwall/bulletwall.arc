@@ -2,6 +2,8 @@ Object bulletwall
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_0.111
 color_bg yellow
@@ -16,6 +18,8 @@ Object bulletwall_1
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_1.111
 color_bg yellow
@@ -31,6 +35,8 @@ Object bulletwall_2
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_2.111
 color_bg yellow
@@ -46,6 +52,8 @@ Object bulletwall_3
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_3.111
 color_bg yellow
@@ -61,6 +69,8 @@ Object bulletwall_4
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_4.111
 color_bg yellow
@@ -76,6 +86,8 @@ Object bulletwall_5
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_5.111
 color_bg yellow
@@ -91,6 +103,8 @@ Object bulletwall_6
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_6.111
 color_bg yellow
@@ -106,6 +120,8 @@ Object bulletwall_7
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_7.111
 color_bg yellow
@@ -121,6 +137,8 @@ Object bulletwall_8
 other_arch bullet
 name bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face bul_wall_8.111
 color_bg yellow

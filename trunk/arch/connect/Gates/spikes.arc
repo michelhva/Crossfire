@@ -1,6 +1,8 @@
 Object spikes_moving
 name spikes
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face spikes.113
 speed -1
@@ -28,6 +30,8 @@ end
 Object spikes_open
 name spikes
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face spikes.119
 anim
@@ -53,6 +57,8 @@ end
 Object spikes_closed
 name spikes
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face spikes.111
 anim

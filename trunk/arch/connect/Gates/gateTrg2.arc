@@ -1,6 +1,8 @@
 Object gateTrg2
 name gate
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gate_2.115
 anim

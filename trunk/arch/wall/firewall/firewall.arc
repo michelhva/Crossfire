@@ -3,6 +3,8 @@ other_arch firebullet_s
 alive 1
 level 1
 type 62
+activate_on_push 1
+activate_on_release 1
 face earthwall.111
 color_fg grey
 color_bg yellow
@@ -13,7 +15,6 @@ dam 1
 ac 3
 exp 50
 resist_fire 100
-
 blocksview 1
 editable 32
 visibility 100
@@ -22,6 +23,8 @@ Object firewall_1
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_1.111
 color_fg grey
@@ -38,6 +41,8 @@ Object firewall_2
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_2.111
 color_fg grey
@@ -54,6 +59,8 @@ Object firewall_3
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_3.111
 color_fg grey
@@ -70,6 +77,8 @@ Object firewall_4
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_4.111
 color_fg grey
@@ -86,6 +95,8 @@ Object firewall_5
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_5.111
 color_fg grey
@@ -102,6 +113,8 @@ Object firewall_6
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_6.111
 color_fg grey
@@ -118,6 +131,8 @@ Object firewall_7
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_7.111
 color_fg grey
@@ -134,6 +149,8 @@ Object firewall_8
 other_arch firebullet_s
 name firewall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face firewall_8.111
 color_fg grey
