@@ -2786,9 +2786,9 @@ x 12
 y 24
 end
 arch exit
-slaying /navar_city/city1
-hp 20
-sp 28
+slaying /world/world_122_117
+hp 5
+sp 15
 x 12
 y 24
 end
@@ -5137,7 +5137,7 @@ y 2
 end
 arch perm_magic_portal
 name Brest
-slaying /brittany/Brest/brest
+slaying /world/world_107_123
 walk_on 0
 fly_on 0
 x 24
@@ -5157,9 +5157,9 @@ y 3
 end
 arch perm_magic_portal
 name Santo Dominion
-slaying /santo_dominion/town
+slaying /world/world_102_108
 hp 20
-sp 23
+sp 14
 walk_on 0
 fly_on 0
 x 24
@@ -5180,7 +5180,7 @@ y 4
 end
 arch perm_magic_portal
 name Navar
-slaying /navar_city/city1
+slaying /world/world_121_116
 walk_on 0
 fly_on 0
 x 24

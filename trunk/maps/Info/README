@@ -62,7 +62,11 @@ Translation values used:
 /navar_city/city1 0, 0 (14,12) -> 	/world/world_122_116, 35, 37
 /navar_city/city1 0,13 (14,100) -> 	/world/world_122_116, 35, -13
 /Lake_County/kundi_area 0,0 -> 		/world/world_109_126 (+13, +17)
+/dragonisland/stonevile 0,0 (13,0)	/world/world_102_127 (+36, +1)
+/dragonisland/stonevile 14,0 (100,100)	/world/world_103_127 (-14, +1)
 
+dragonisland note:  Some of the buildings in stoneville were moved
+   slightly to better fit them onto the layout of the island.
 
 kar (euthville):				/world/world_105_115
 Kar doesn't have simple values, as the town was shrunk a bit and
@@ -103,6 +107,7 @@ asyvan - moved
 brittany - moved
 cd - moved
 city (now scorn) - moved
+dragonisland - move
 santo_dominion: moved
 kar: moved
 styles: moved
