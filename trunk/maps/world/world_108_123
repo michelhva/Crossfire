@@ -1968,10 +1968,16 @@ elevation 6631
 x 8
 y 17
 end
+arch grass
+elevation 4000
+x 8
+y 18
+end
 arch hole
 slaying /brest/brittany/hole
 hp 49
 sp 11
+is_floor 0
 x 8
 y 18
 end

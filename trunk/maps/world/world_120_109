@@ -10431,6 +10431,11 @@ elevation 7059
 x 41
 y 36
 end
+arch mountain
+elevation 7059
+x 41
+y 37
+end
 arch mountain_cave
 msg
 Going through the old mine tunnels should save a lot
@@ -10440,6 +10445,7 @@ endmsg
 slaying /under_world/uworld_120_109
 hp 24
 sp 58
+is_floor 0
 x 41
 y 37
 end

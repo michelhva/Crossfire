@@ -6947,6 +6947,11 @@ elevation 7187
 x 28
 y 2
 end
+arch mountain
+elevation 7187
+x 28
+y 3
+end
 arch mountain_cave2
 msg
 floorstyle stones2
@@ -6959,6 +6964,7 @@ dungeon_depth 8
 final_map /quests/peterm/quests/wyvern_quest
 endmsg
 slaying /!
+is_floor 0
 x 28
 y 3
 end

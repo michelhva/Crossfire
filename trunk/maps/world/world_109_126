@@ -8398,10 +8398,16 @@ name_pl bellow
 x 32
 y 22
 end
+arch mountain
+elevation 8000
+x 32
+y 22
+end
 arch mountain_cave2
 slaying /lake_country/shops/Mopoon_wshop
 hp 7
 sp 7
+is_floor 0
 x 32
 y 22
 end
@@ -9097,10 +9103,15 @@ arch wasteland
 x 35
 y 19
 end
+arch mountain
+x 35
+y 20
+end
 arch mountain_cave
 slaying /lake_country/snake_pit/snakepit_1
 hp 7
 sp 16
+is_floor 0
 x 35
 y 20
 end
@@ -9566,6 +9577,7 @@ arch mountain_cave
 slaying /lake_country/snake_pit/snakepit_5
 hp 38
 sp 4
+is_floor 0
 x 37
 y 19
 end

@@ -1549,10 +1549,15 @@ arch tree6
 x 7
 y 16
 end
+arch grass
+x 7
+y 17
+end
 arch hole
 name Abyss
 slaying /euthville/wiz1
 hp 3
+is_floor 0
 x 7
 y 17
 end

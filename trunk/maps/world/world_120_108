@@ -4574,6 +4574,11 @@ arch cobblestones
 x 18
 y 28
 end
+arch mountain
+elevation 8197
+x 18
+y 29
+end
 arch mountain_cave
 msg
 Going through the old mine tunnels should save a lot
@@ -4583,6 +4588,7 @@ endmsg
 slaying /under_world/uworld_120_109
 hp 1
 sp 1
+is_floor 0
 x 18
 y 29
 end

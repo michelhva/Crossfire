@@ -1839,10 +1839,15 @@ arch mountain
 x 9
 y 20
 end
+arch mountain
+x 9
+y 21
+end
 arch mountain_cave
 slaying /scorn/dtabb/cave3
 hp 19
 sp 3
+is_floor 0
 x 9
 y 21
 end
@@ -3589,10 +3594,15 @@ arch mountain
 x 18
 y 9
 end
+arch mountain
+x 18
+y 10
+end
 arch mountain_cave
 slaying /scorn/temples/gnarg
 hp 4
 sp 10
+is_floor 0
 x 18
 y 10
 end
