@@ -21,7 +21,7 @@ for ($i=0; $i <= $#ARGV; $i++) {
     $#name--;
     $destdir=join(m#/#, @name);
     
-    if ($source =~ /(\w+)\.(\d)(\d)(\d)\.png/ ) {
+    if ($source =~ /([\w-]+)\.(\d)(\d)(\d)\.png/ ) {
 	$base = $1;
 	$facing = $3;
 	$animation = $4;
@@ -60,7 +60,12 @@ for ($i=0; $i <= $#ARGV; $i++) {
 	    # Deal with naming convention.  piece 10 should be A, A ascii
 	    # code starts at 65.
 	    if ($piece > 9 ) {
+                if($piece > 9 + 26) {
+                  $np = chr( $piece + 55  + 6 )
+                } else {
+  
 		$np = chr($piece + 55);
+                }
 	    } else {
 		$np = $piece;
 	    }
