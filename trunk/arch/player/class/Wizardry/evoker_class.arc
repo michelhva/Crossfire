@@ -1,8 +1,13 @@
 Object evoker_class
 name evoker
 randomitems evoker_class_items
-face wizard_blue.111
-animation wizard_blue
+face evoker.111
+anim
+evoker.111
+evoker.131
+evoker.151
+evoker.171
+mina
 is_animated 0
 type 37
 Str -2
