@@ -1,57 +1,88 @@
 arch map
 name Fighter
+reset_timeout 7200
+difficulty 19
+width 16
+height 10
+enter_x 1
+enter_y 1
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Thu Apr  6 17:13:23 2000
 endmsg
-y 10
+end
+arch woodfloor
 end
 arch dungeon_magic
 end
-arch stwall_2_2_2
+arch cwall_2_2_2
+end
+arch woodfloor
+y 1
 end
 arch dungeon_magic
 y 1
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 1
 end
+arch woodfloor
+y 2
+end
 arch dungeon_magic
 y 2
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 2
+end
+arch woodfloor
+y 3
 end
 arch dungeon_magic
 y 3
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 3
 end
+arch woodfloor
+y 4
+end
 arch dungeon_magic
 y 4
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 4
+end
+arch woodfloor
+y 5
 end
 arch dungeon_magic
 y 5
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 5
 end
+arch woodfloor
+y 6
+end
 arch dungeon_magic
 y 6
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 6
+end
+arch woodfloor
+y 7
 end
 arch dungeon_magic
 y 7
 end
-arch stwall_2_1_1
+arch dwall_2_1_1
 y 7
+end
+arch woodfloor
+y 8
 end
 arch dungeon_magic
 y 8
@@ -59,16 +90,22 @@ end
 arch cwall_2_1_1
 y 8
 end
+arch woodfloor
+y 9
+end
 arch dungeon_magic
 y 9
 end
 arch cwall_2_2_1
 y 9
 end
+arch woodfloor
+x 1
+end
 arch dungeon_magic
 x 1
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 1
 end
 arch dungeon_magic
@@ -124,21 +161,11 @@ arch woodfloor
 x 1
 y 6
 end
-arch earthwall
-hp 500
-x 1
-y 6
-end
 arch dungeon_magic
 x 1
 y 7
 end
 arch woodfloor
-x 1
-y 7
-end
-arch earthwall
-hp 750
 x 1
 y 7
 end
@@ -149,6 +176,10 @@ end
 arch woodfloor
 x 1
 y 8
+end
+arch woodfloor
+x 1
+y 9
 end
 arch dungeon_magic
 x 1
@@ -158,10 +189,13 @@ arch cwall_2_1_2
 x 1
 y 9
 end
+arch woodfloor
+x 2
+end
 arch dungeon_magic
 x 2
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 2
 end
 arch dungeon_magic
@@ -204,7 +238,7 @@ arch woodfloor
 x 2
 y 5
 end
-arch hedge_2_2_2
+arch hedge_1_4
 x 2
 y 5
 end
@@ -216,19 +250,11 @@ arch woodfloor
 x 2
 y 6
 end
-arch hedge_2_1_1
-x 2
-y 6
-end
 arch dungeon_magic
 x 2
 y 7
 end
 arch woodfloor
-x 2
-y 7
-end
-arch hedge_1_2
 x 2
 y 7
 end
@@ -239,6 +265,10 @@ end
 arch woodfloor
 x 2
 y 8
+end
+arch woodfloor
+x 2
+y 9
 end
 arch dungeon_magic
 x 2
@@ -247,11 +277,14 @@ end
 arch cwall_2_1_2
 x 2
 y 9
+end
+arch woodfloor
+x 3
 end
 arch dungeon_magic
 x 3
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 3
 end
 arch dungeon_magic
@@ -334,6 +367,10 @@ arch woodfloor
 x 3
 y 8
 end
+arch woodfloor
+x 3
+y 9
+end
 arch dungeon_magic
 x 3
 y 9
@@ -342,10 +379,13 @@ arch cwall_2_1_2
 x 3
 y 9
 end
+arch woodfloor
+x 4
+end
 arch dungeon_magic
 x 4
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 4
 end
 arch dungeon_magic
@@ -404,6 +444,10 @@ arch woodfloor
 x 4
 y 6
 end
+arch cyclops
+x 4
+y 6
+end
 arch dungeon_magic
 x 4
 y 7
@@ -419,6 +463,10 @@ end
 arch woodfloor
 x 4
 y 8
+end
+arch woodfloor
+x 4
+y 9
 end
 arch dungeon_magic
 x 4
@@ -428,10 +476,13 @@ arch cwall_2_1_2
 x 4
 y 9
 end
+arch woodfloor
+x 5
+end
 arch dungeon_magic
 x 5
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 5
 end
 arch dungeon_magic
@@ -516,6 +567,10 @@ arch woodfloor
 x 5
 y 8
 end
+arch woodfloor
+x 5
+y 9
+end
 arch dungeon_magic
 x 5
 y 9
@@ -524,10 +579,13 @@ arch cwall_2_1_2
 x 5
 y 9
 end
+arch woodfloor
+x 6
+end
 arch dungeon_magic
 x 6
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 6
 end
 arch dungeon_magic
@@ -590,6 +648,10 @@ arch woodfloor
 x 6
 y 6
 end
+arch DK
+x 6
+y 6
+end
 arch dungeon_magic
 x 6
 y 7
@@ -605,6 +667,10 @@ end
 arch woodfloor
 x 6
 y 8
+end
+arch woodfloor
+x 6
+y 9
 end
 arch dungeon_magic
 x 6
@@ -614,10 +680,13 @@ arch cwall_2_1_2
 x 6
 y 9
 end
+arch woodfloor
+x 7
+end
 arch dungeon_magic
 x 7
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 7
 end
 arch dungeon_magic
@@ -700,6 +769,10 @@ arch woodfloor
 x 7
 y 8
 end
+arch woodfloor
+x 7
+y 9
+end
 arch dungeon_magic
 x 7
 y 9
@@ -708,10 +781,13 @@ arch cwall_2_1_2
 x 7
 y 9
 end
+arch woodfloor
+x 8
+end
 arch dungeon_magic
 x 8
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 8
 end
 arch dungeon_magic
@@ -778,6 +854,10 @@ arch woodfloor
 x 8
 y 6
 end
+arch EDK
+x 8
+y 6
+end
 arch dungeon_magic
 x 8
 y 7
@@ -793,6 +873,10 @@ end
 arch woodfloor
 x 8
 y 8
+end
+arch woodfloor
+x 8
+y 9
 end
 arch dungeon_magic
 x 8
@@ -802,10 +886,13 @@ arch cwall_2_1_2
 x 8
 y 9
 end
+arch woodfloor
+x 9
+end
 arch dungeon_magic
 x 9
 end
-arch stwall_2_1_2
+arch dwall_2_1_2
 x 9
 end
 arch dungeon_magic
@@ -902,6 +989,10 @@ arch woodfloor
 x 9
 y 8
 end
+arch woodfloor
+x 9
+y 9
+end
 arch dungeon_magic
 x 9
 y 9
@@ -910,12 +1001,19 @@ arch cwall_2_1_2
 x 9
 y 9
 end
+arch woodfloor
+x 10
+end
 arch dungeon_magic
 x 10
 end
 arch cwall_2_2_3
 x 10
 end
+arch woodfloor
+x 10
+y 1
+end
 arch dungeon_magic
 x 10
 y 1
@@ -924,6 +1022,10 @@ arch cwall_2_1_1
 x 10
 y 1
 end
+arch woodfloor
+x 10
+y 2
+end
 arch dungeon_magic
 x 10
 y 2
@@ -931,6 +1033,10 @@ end
 arch cwall_2_1_1
 x 10
 y 2
+end
+arch woodfloor
+x 10
+y 3
 end
 arch dungeon_magic
 x 10
@@ -944,6 +1050,10 @@ arch cwall_2_1_1
 x 10
 y 3
 end
+arch woodfloor
+x 10
+y 4
+end
 arch dungeon_magic
 x 10
 y 4
@@ -951,6 +1061,10 @@ end
 arch cwall_2_1_1
 x 10
 y 4
+end
+arch woodfloor
+x 10
+y 5
 end
 arch dungeon_magic
 x 10
@@ -964,6 +1078,10 @@ arch cwall_2_1_1
 x 10
 y 5
 end
+arch woodfloor
+x 10
+y 6
+end
 arch dungeon_magic
 x 10
 y 6
@@ -971,6 +1089,10 @@ end
 arch cwall_2_1_1
 x 10
 y 6
+end
+arch woodfloor
+x 10
+y 7
 end
 arch dungeon_magic
 x 10
@@ -980,6 +1102,10 @@ arch cwall_2_1_1
 x 10
 y 7
 end
+arch woodfloor
+x 10
+y 8
+end
 arch dungeon_magic
 x 10
 y 8
@@ -987,6 +1113,10 @@ end
 arch cwall_2_1_1
 x 10
 y 8
+end
+arch woodfloor
+x 10
+y 9
 end
 arch dungeon_magic
 x 10
@@ -1190,91 +1320,4 @@ end
 arch blocked
 x 15
 y 9
-end
-arch cyclops
-x 4
-y 6
-end
-More
-arch cyclops_2
-x 5
-y 6
-end
-More
-arch cyclops_3
-x 4
-y 7
-end
-More
-arch cyclops_4
-x 5
-y 7
-end
-More
-arch cyclops_5
-x 4
-y 8
-end
-More
-arch cyclops_6
-x 5
-y 8
-end
-arch DK
-x 6
-y 6
-end
-More
-arch DK3
-x 6
-y 7
-end
-More
-arch DK5
-x 6
-y 8
-end
-More
-arch DK2
-x 7
-y 6
-end
-More
-arch DK4
-x 7
-y 7
-end
-More
-arch DK6
-x 7
-y 8
-end
-arch EDK
-x 8
-y 6
-end
-More
-arch EDK3
-x 8
-y 7
-end
-More
-arch EDK5
-x 8
-y 8
-end
-More
-arch EDK2
-x 9
-y 6
-end
-More
-arch EDK4
-x 9
-y 7
-end
-More
-arch EDK6
-x 9
-y 8
 end
