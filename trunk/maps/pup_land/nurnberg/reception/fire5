@@ -2596,18 +2596,7 @@ arch blocked
 x 20
 y 15
 end
-arch big_dragon
-name Ancient Red Dragon
-Int 5
-hp 7500
-maxhp 7500
-maxsp 80
-exp 200000
-dam 40
-wc -25
-ac -16
-speed -0.500000
-level 24
+arch big_dragon_ancient
 weight 3000000
 x 6
 y 11
