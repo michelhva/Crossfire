@@ -1,5 +1,6 @@
-Object Arch Angel
+Object HighAngel
 randomitems rich
+name High Angel
 race angel
 face archangel.118
 color_fg white
