@@ -19,7 +19,7 @@ the lower number rule takes precedence.
 
 2) Each city should have it own top level directory (eg, scorn,
    navar_city, santo_dominion).  All buildings in the city and located
-   nearby or related to it are in the respectice city directory.
+   nearby or related to it are in the respective city directory.
 
 For maps that are placed directly on the world map and are not in the city,
 the follow guidelines should be used:
@@ -59,11 +59,12 @@ Translation values used:
 /santo_dominion/town 3,12 (100,100) -> 	/world/world_102_108, 0, -9
 /navar_city/city1 15, 13 (100,100) -> 	/world/world_122_117, -15, -13
 /navar_city/city1 15, 0 (100,12) -> 	/world/world_122_116, -15, 37
-/navar_city/city1 0, 0 (14,12) -> 	/world/world_122_116, 35, 37
-/navar_city/city1 0,13 (14,100) -> 	/world/world_122_116, 35, -13
+/navar_city/city1 0, 0 (14,12) -> 	/world/world_121_116, 35, 37
+/navar_city/city1 0,13 (14,100) -> 	/world/world_121_116, 35, -13
 /Lake_County/kundi_area 0,0 -> 		/world/world_109_126 (+13, +17)
 /dragonisland/stonevile 0,0 (13,0)	/world/world_102_127 (+36, +1)
 /dragonisland/stonevile 14,0 (100,100)	/world/world_103_127 (-14, +1)
+/dtabb/darcap 0,0 (100,100)		/world/world_116_102 (+18, +26)
 
 dragonisland note:  Some of the buildings in stoneville were moved
    slightly to better fit them onto the layout of the island.
@@ -108,6 +109,7 @@ brittany - moved
 cd - moved
 city (now scorn) - moved
 dragonisland - move
+dtabb - moved (as darcap)
 santo_dominion: moved
 kar: moved
 styles: moved
@@ -115,6 +117,9 @@ styles: moved
 individual linked maps:
 eeur/hut.1, hut.2 (in santo_dominion)
 espen/palace, espen1, espen2 (in santo_dominion)
+
+TODO:
+destiny
 
 ------------------------------------------------------------------------------
 Note about unique maps:
@@ -134,9 +139,11 @@ _city_* -> _scorn_...
 Guild maps:
 
 guilds@black_shield	-> brest@black_shield
+guilds@dreaming_sage	-> navar_city@guilds@dreaming_sage
 guilds@drunken_barbarian-> santo_dominion@guilds@drunken_barbarian
 guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
 guilds@laughing_skull	-> pup_land@guilds@laughing_skull
 guilds@mailed_fist	-> scorn@guilds@mailed_fist
+guilds@poisoned_dagger  -> darcap@darcap@guilds@poisoned_dagger
 guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
-guilds@dreaming_sage	-> navar_city@guilds@dreaming_sage
+guilds@smoking_cauldron -> darcap@darcap@guilds@smoking_cauldron

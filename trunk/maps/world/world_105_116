@@ -1839,7 +1839,10 @@ arch mountain
 x 9
 y 20
 end
-arch mountain
+arch mountain_cave
+slaying /scorn/dtabb/cave3
+hp 19
+sp 3
 x 9
 y 21
 end

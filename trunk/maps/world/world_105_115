@@ -9991,7 +9991,10 @@ arch mountain
 x 30
 y 29
 end
-arch mountain
+arch mountain_cave
+slaying /scorn/dtabb/cave
+hp 30
+sp 1
 x 30
 y 30
 end
@@ -10426,6 +10429,7 @@ name Scorn City Limits
 msg
 Santo Dominion - 350 miles north
 Brest - 518 miles south
+Navar City - 948 miles east
 endmsg
 name_pl Scorn City Limits
 x 32

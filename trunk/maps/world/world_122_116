@@ -1,16 +1,16 @@
 arch map
 name world_122_116
-reset_timeout 7200
-difficulty 1
-width 50
-height 50
-enter_x 1
-enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun  2 20:54:49 2002
 endmsg
+width 50
+height 50
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_122_115
 tile_path_2 world_123_116
@@ -21,148 +21,148 @@ arch mountain
 elevation 7437
 end
 arch mountain2
-y 1
 elevation 9768
+y 1
 end
 arch mountain2
-y 2
 elevation 11673
+y 2
 end
 arch wasteland
-y 3
 elevation 12576
+y 3
 end
 arch wasteland
-y 4
 elevation 12654
+y 4
 end
 arch mountain2
-y 5
 elevation 11565
+y 5
 end
 arch mountain2
-y 6
 elevation 9793
+y 6
 end
 arch mountain
-y 7
 elevation 7686
+y 7
 end
 arch mountain
-y 8
 elevation 6043
+y 8
 end
 arch hills_rocky
-y 9
 elevation 4171
+y 9
 end
 arch hills_rocky
-y 10
 elevation 1566
+y 10
 end
 arch hills_rocky
-y 11
 elevation 2117
+y 11
 end
 arch hills_rocky
-y 12
 elevation 1293
+y 12
 end
 arch brush
-y 13
 elevation 101
+y 13
 end
 arch brush
-y 14
 elevation 53
+y 14
 end
 arch grass
-y 15
 elevation 47
+y 15
 end
 arch grass
-y 16
 elevation 770
+y 16
 end
 arch woods_2
-y 17
 elevation 1149
+y 17
 end
 arch woods_2
-y 18
 elevation 1194
+y 18
 end
 arch brush
-y 19
 elevation 756
+y 19
 end
 arch brush
-y 20
 elevation 173
+y 20
 end
 arch shallow_sea
-y 21
 elevation -8
+y 21
 end
 arch shallow_sea
-y 22
 elevation -4
+y 22
 end
 arch shallow_sea
-y 23
 elevation -3
+y 23
 end
 arch grass
-y 24
 elevation 12
+y 24
 end
 arch shallow_sea
+elevation -9
 y 25
-elevation -9
 end
 arch shallow_sea
-y 26
 elevation -9
+y 26
 end
 arch grass
-y 27
 elevation 16
+y 27
 end
 arch grass
-y 28
 elevation 49
+y 28
 end
 arch woods_3
-y 29
 elevation 1231
+y 29
 end
 arch hills
-y 30
 elevation 1963
+y 30
 end
 arch woods_2
-y 31
 elevation 2321
+y 31
 end
 arch woods_2
-y 32
 elevation 1596
+y 32
 end
 arch steppe
-y 33
 elevation 4227
+y 33
 end
 arch hills_rocky
-y 34
 elevation 3541
+y 34
 end
 arch grass
-y 35
 elevation 865
+y 35
 end
 arch desert
-y 36
 elevation 196
+y 36
 end
 arch grass
 y 37
@@ -212,113 +212,113 @@ arch cobblestones2
 y 49
 end
 arch mountain
-x 1
 elevation 7886
+x 1
 end
 arch mountain2
+elevation 10826
 x 1
 y 1
-elevation 10826
 end
 arch wasteland
+elevation 12711
 x 1
 y 2
-elevation 12711
 end
 arch wasteland
+elevation 13625
 x 1
 y 3
-elevation 13625
 end
 arch wasteland
+elevation 13587
 x 1
 y 4
-elevation 13587
 end
 arch wasteland
+elevation 12525
 x 1
 y 5
-elevation 12525
 end
 arch mountain2
+elevation 10430
 x 1
 y 6
-elevation 10430
 end
 arch mountain2
+elevation 9063
 x 1
 y 7
-elevation 9063
 end
 arch mountain
+elevation 6907
 x 1
 y 8
-elevation 6907
 end
 arch hills_rocky
+elevation 4106
 x 1
 y 9
-elevation 4106
 end
 arch brush
+elevation 412
 x 1
 y 10
-elevation 412
 end
 arch hills_rocky
+elevation 1614
 x 1
 y 11
-elevation 1614
 end
 arch hills_rocky
+elevation 1338
 x 1
 y 12
-elevation 1338
 end
 arch brush
+elevation 242
 x 1
 y 13
-elevation 242
 end
 arch brush
+elevation 50
 x 1
 y 14
-elevation 50
 end
 arch desert
+elevation 44
 x 1
 y 15
-elevation 44
 end
 arch brush
+elevation 743
 x 1
 y 16
-elevation 743
 end
 arch hills_rocky
+elevation 1165
 x 1
 y 17
-elevation 1165
 end
 arch woods_3
+elevation 1197
 x 1
 y 18
-elevation 1197
 end
 arch brush
+elevation 738
 x 1
 y 19
-elevation 738
 end
 arch brush
+elevation 81
 x 1
 y 20
-elevation 81
 end
 arch brush
+elevation 29
 x 1
 y 21
-elevation 29
 end
 arch shallow_sea
 x 1
@@ -329,68 +329,68 @@ x 1
 y 23
 end
 arch brush
+elevation 11
 x 1
 y 24
-elevation 11
 end
 arch swamp
+elevation 2
 x 1
 y 25
-elevation 2
 end
 arch shallow_sea
 x 1
 y 26
 end
 arch grass
+elevation 23
 x 1
 y 27
-elevation 23
 end
 arch brush
+elevation 38
 x 1
 y 28
-elevation 38
 end
 arch grass
+elevation 615
 x 1
 y 29
-elevation 615
 end
 arch tree
+elevation 1094
 x 1
 y 30
-elevation 1094
 end
 arch tree
+elevation 1612
 x 1
 y 31
-elevation 1612
 end
 arch hills_rocky
+elevation 3809
 x 1
 y 32
-elevation 3809
 end
 arch mountain
+elevation 5114
 x 1
 y 33
-elevation 5114
 end
 arch steppe
+elevation 4397
 x 1
 y 34
-elevation 4397
 end
 arch desert
+elevation 128
 x 1
 y 35
-elevation 128
 end
 arch desert
+elevation 48
 x 1
 y 36
-elevation 48
 end
 arch grass
 x 1
@@ -469,187 +469,187 @@ x 1
 y 49
 end
 arch mountain
-x 2
 elevation 6962
+x 2
 end
 arch mountain2
+elevation 10249
 x 2
 y 1
-elevation 10249
 end
 arch wasteland
+elevation 12038
 x 2
 y 2
-elevation 12038
 end
 arch wasteland
+elevation 12781
 x 2
 y 3
-elevation 12781
 end
 arch wasteland
+elevation 12934
 x 2
 y 4
-elevation 12934
 end
 arch wasteland
+elevation 12539
 x 2
 y 5
-elevation 12539
 end
 arch mountain2
+elevation 11202
 x 2
 y 6
-elevation 11202
 end
 arch mountain2
+elevation 9180
 x 2
 y 7
-elevation 9180
 end
 arch mountain
+elevation 6652
 x 2
 y 8
-elevation 6652
 end
 arch hills_rocky
+elevation 2753
 x 2
 y 9
-elevation 2753
 end
 arch brush
+elevation 833
 x 2
 y 10
-elevation 833
 end
 arch hills_rocky
+elevation 1758
 x 2
 y 11
-elevation 1758
 end
 arch hills_rocky
+elevation 1454
 x 2
 y 12
-elevation 1454
 end
 arch brush
+elevation 349
 x 2
 y 13
-elevation 349
 end
 arch brush
+elevation 276
 x 2
 y 14
-elevation 276
 end
 arch brush
+elevation 273
 x 2
 y 15
-elevation 273
 end
 arch brush
+elevation 370
 x 2
 y 16
-elevation 370
 end
 arch brush
+elevation 821
 x 2
 y 17
-elevation 821
 end
 arch hills_rocky
+elevation 1142
 x 2
 y 18
-elevation 1142
 end
 arch brush
+elevation 916
 x 2
 y 19
-elevation 916
 end
 arch brush
+elevation 127
 x 2
 y 20
-elevation 127
 end
 arch shallow_sea
+elevation -6
 x 2
 y 21
-elevation -6
 end
 arch deep_swamp
+elevation 9
 x 2
 y 22
-elevation 9
 end
 arch shallow_sea
 x 2
 y 23
 end
 arch swamp
+elevation 3
 x 2
 y 24
-elevation 3
 end
 arch grass
+elevation 127
 x 2
 y 25
-elevation 127
 end
 arch grass
+elevation 66
 x 2
 y 26
-elevation 66
 end
 arch grass
+elevation 28
 x 2
 y 27
-elevation 28
 end
 arch brush
+elevation 91
 x 2
 y 28
-elevation 91
 end
 arch grass
+elevation 112
 x 2
 y 29
-elevation 112
 end
 arch brush
+elevation 125
 x 2
 y 30
-elevation 125
 end
 arch brush
+elevation 186
 x 2
 y 31
-elevation 186
 end
 arch hills_rocky
+elevation 4843
 x 2
 y 32
-elevation 4843
 end
 arch mountain
+elevation 6879
 x 2
 y 33
-elevation 6879
 end
 arch mountain
+elevation 6049
 x 2
 y 34
-elevation 6049
 end
 arch hills_rocky
+elevation 4334
 x 2
 y 35
-elevation 4334
 end
 arch tree
+elevation 2678
 x 2
 y 36
-elevation 2678
 end
 arch grass
 x 2
@@ -664,28 +664,24 @@ x 2
 y 38
 end
 arch grass
-x 2
-y 39
 no_pass 1
-end
-arch university
 x 2
 y 39
 end
 arch grass
+no_pass 1
 x 2
 y 40
-no_pass 1
 end
 arch grass
+no_pass 1
 x 2
 y 41
-no_pass 1
 end
 arch grass
+no_pass 1
 x 2
 y 42
-no_pass 1
 end
 arch cobblestones2
 x 2
@@ -700,12 +696,6 @@ x 2
 y 44
 end
 arch grass
-x 2
-y 45
-end
-arch palace
-name Navr City Palace
-name_pl Navr City Palace
 x 2
 y 45
 end
@@ -730,188 +720,188 @@ x 2
 y 49
 end
 arch steppe
-x 3
 elevation 4705
+x 3
 end
 arch mountain
+elevation 8231
 x 3
 y 1
-elevation 8231
 end
 arch mountain2
+elevation 10437
 x 3
 y 2
-elevation 10437
 end
 arch mountain2
+elevation 9441
 x 3
 y 3
-elevation 9441
 end
 arch mountain2
+elevation 11720
 x 3
 y 4
-elevation 11720
 end
 arch wasteland
+elevation 12090
 x 3
 y 5
-elevation 12090
 end
 arch mountain2
+elevation 10747
 x 3
 y 6
-elevation 10747
 end
 arch mountain
+elevation 8474
 x 3
 y 7
-elevation 8474
 end
 arch mountain
+elevation 5522
 x 3
 y 8
-elevation 5522
 end
 arch hills_rocky
+elevation 3025
 x 3
 y 9
-elevation 3025
 end
 arch hills_rocky
+elevation 1566
 x 3
 y 10
-elevation 1566
 end
 arch hills_rocky
+elevation 1493
 x 3
 y 11
-elevation 1493
 end
 arch hills_rocky
+elevation 1400
 x 3
 y 12
-elevation 1400
 end
 arch brush
+elevation 759
 x 3
 y 13
-elevation 759
 end
 arch desert
+elevation 281
 x 3
 y 14
-elevation 281
 end
 arch brush
+elevation 38
 x 3
 y 15
-elevation 38
 end
 arch brush
+elevation 47
 x 3
 y 16
-elevation 47
 end
 arch brush
+elevation 174
 x 3
 y 17
-elevation 174
 end
 arch brush
+elevation 863
 x 3
 y 18
-elevation 863
 end
 arch hills_rocky
+elevation 1041
 x 3
 y 19
-elevation 1041
 end
 arch brush
+elevation 632
 x 3
 y 20
-elevation 632
 end
 arch brush
+elevation 56
 x 3
 y 21
-elevation 56
 end
 arch shallow_sea
+elevation -7
 x 3
 y 22
-elevation -7
 end
 arch brush
+elevation 105
 x 3
 y 23
-elevation 105
 end
 arch brush
+elevation 511
 x 3
 y 24
-elevation 511
 end
 arch brush
+elevation 663
 x 3
 y 25
-elevation 663
 end
 arch grass
+elevation 393
 x 3
 y 26
-elevation 393
 end
 arch grass
+elevation 18
 x 3
 y 27
-elevation 18
 end
 arch brush
+elevation 48
 x 3
 y 28
-elevation 48
 end
 arch brush
+elevation 54
 x 3
 y 29
-elevation 54
 end
 arch brush
+elevation 66
 x 3
 y 30
-elevation 66
 end
 arch brush
+elevation 925
 x 3
 y 31
-elevation 925
 end
 arch mountain
+elevation 6477
 x 3
 y 32
-elevation 6477
 end
 arch mountain
+elevation 8706
 x 3
 y 33
-elevation 8706
 end
 arch mountain
+elevation 7928
 x 3
 y 34
-elevation 7928
 end
 arch mountain
+elevation 5748
 x 3
 y 35
-elevation 5748
 end
 arch mountain
+elevation 5628
 x 3
 y 36
-elevation 5628
 end
 arch grass
 x 3
@@ -926,19 +916,19 @@ x 3
 y 38
 end
 arch grass
+no_pass 1
 x 3
 y 39
-no_pass 1
 end
 arch grass
+no_pass 1
 x 3
 y 40
-no_pass 1
 end
 arch grass
+no_pass 1
 x 3
 y 41
-no_pass 1
 end
 arch cobblestones2
 x 3
@@ -981,188 +971,188 @@ x 3
 y 49
 end
 arch woods_3
-x 4
 elevation 1068
+x 4
 end
 arch mountain
+elevation 5842
 x 4
 y 1
-elevation 5842
 end
 arch mountain
+elevation 8560
 x 4
 y 2
-elevation 8560
 end
 arch mountain2
+elevation 10213
 x 4
 y 3
-elevation 10213
 end
 arch mountain2
+elevation 11103
 x 4
 y 4
-elevation 11103
 end
 arch mountain2
+elevation 11372
 x 4
 y 5
-elevation 11372
 end
 arch mountain2
+elevation 9917
 x 4
 y 6
-elevation 9917
 end
 arch mountain
+elevation 6264
 x 4
 y 7
-elevation 6264
 end
 arch hills_rocky
+elevation 4481
 x 4
 y 8
-elevation 4481
 end
 arch brush
+elevation 560
 x 4
 y 9
-elevation 560
 end
 arch brush
+elevation 371
 x 4
 y 10
-elevation 371
 end
 arch brush
+elevation 47
 x 4
 y 11
-elevation 47
 end
 arch grass
+elevation 947
 x 4
 y 12
-elevation 947
 end
 arch brush
+elevation 751
 x 4
 y 13
-elevation 751
 end
 arch brush
+elevation 13
 x 4
 y 14
-elevation 13
 end
 arch shallow_sea
+elevation -6
 x 4
 y 15
-elevation -6
 end
 arch shallow_sea
+elevation -5
 x 4
 y 16
-elevation -5
 end
 arch brush
+elevation 69
 x 4
 y 17
-elevation 69
 end
 arch brush
+elevation 422
 x 4
 y 18
-elevation 422
 end
 arch brush
+elevation 863
 x 4
 y 19
-elevation 863
 end
 arch brush
+elevation 616
 x 4
 y 20
-elevation 616
 end
 arch brush
+elevation 238
 x 4
 y 21
-elevation 238
 end
 arch brush
+elevation 205
 x 4
 y 22
-elevation 205
 end
 arch grass
+elevation 473
 x 4
 y 23
-elevation 473
 end
 arch grass
+elevation 624
 x 4
 y 24
-elevation 624
 end
 arch grass
+elevation 593
 x 4
 y 25
-elevation 593
 end
 arch grass
+elevation 62
 x 4
 y 26
-elevation 62
 end
 arch grass
+elevation 104
 x 4
 y 27
-elevation 104
 end
 arch brush
+elevation 292
 x 4
 y 28
-elevation 292
 end
 arch grass
+elevation 836
 x 4
 y 29
-elevation 836
 end
 arch brush
+elevation 864
 x 4
 y 30
-elevation 864
 end
 arch hills_rocky
+elevation 4992
 x 4
 y 31
-elevation 4992
 end
 arch mountain
+elevation 8244
 x 4
 y 32
-elevation 8244
 end
 arch mountain2
+elevation 10182
 x 4
 y 33
-elevation 10182
 end
 arch mountain2
+elevation 9414
 x 4
 y 34
-elevation 9414
 end
 arch mountain
+elevation 6298
 x 4
 y 35
-elevation 6298
 end
 arch mountain
+elevation 7346
 x 4
 y 36
-elevation 7346
 end
 arch grass
 x 4
@@ -1177,19 +1167,19 @@ x 4
 y 38
 end
 arch grass
+no_pass 1
 x 4
 y 39
-no_pass 1
 end
 arch grass
+no_pass 1
 x 4
 y 40
-no_pass 1
 end
 arch grass
+no_pass 1
 x 4
 y 41
-no_pass 1
 end
 arch cobblestones2
 x 4
@@ -1236,188 +1226,188 @@ x 4
 y 49
 end
 arch desert
-x 5
 elevation 128
+x 5
 end
 arch hills
+elevation 3594
 x 5
 y 1
-elevation 3594
 end
 arch mountain
+elevation 6812
 x 5
 y 2
-elevation 6812
 end
 arch mountain2
+elevation 9002
 x 5
 y 3
-elevation 9002
 end
 arch mountain2
+elevation 10433
 x 5
 y 4
-elevation 10433
 end
 arch mountain2
+elevation 10493
 x 5
 y 5
-elevation 10493
 end
 arch mountain
+elevation 8912
 x 5
 y 6
-elevation 8912
 end
 arch mountain
+elevation 6157
 x 5
 y 7
-elevation 6157
 end
 arch hills
+elevation 3810
 x 5
 y 8
-elevation 3810
 end
 arch hills
+elevation 1847
 x 5
 y 9
-elevation 1847
 end
 arch brush
+elevation 136
 x 5
 y 10
-elevation 136
 end
 arch deep_swamp
+elevation 7
 x 5
 y 11
-elevation 7
 end
 arch desert
+elevation 14
 x 5
 y 12
-elevation 14
 end
 arch shallow_sea
+elevation -4
 x 5
 y 13
-elevation -4
 end
 arch shallow_sea
+elevation -6
 x 5
 y 14
-elevation -6
 end
 arch shallow_sea
+elevation -10
 x 5
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 5
 y 16
-elevation -9
 end
 arch shallow_sea
+elevation -8
 x 5
 y 17
-elevation -8
 end
 arch desert
+elevation 110
 x 5
 y 18
-elevation 110
 end
 arch brush
+elevation 486
 x 5
 y 19
-elevation 486
 end
 arch grass
+elevation 257
 x 5
 y 20
-elevation 257
 end
 arch desert
+elevation 113
 x 5
 y 21
-elevation 113
 end
 arch desert
+elevation 39
 x 5
 y 22
-elevation 39
 end
 arch brush
+elevation 285
 x 5
 y 23
-elevation 285
 end
 arch desert
+elevation 219
 x 5
 y 24
-elevation 219
 end
 arch swamp
+elevation 6
 x 5
 y 25
-elevation 6
 end
 arch shallow_sea
+elevation -2
 x 5
 y 26
-elevation -2
 end
 arch deep_swamp
+elevation 7
 x 5
 y 27
-elevation 7
 end
 arch grass
+elevation 178
 x 5
 y 28
-elevation 178
 end
 arch evergreens
+elevation 1083
 x 5
 y 29
-elevation 1083
 end
 arch hills
+elevation 3399
 x 5
 y 30
-elevation 3399
 end
 arch mountain
+elevation 6382
 x 5
 y 31
-elevation 6382
 end
 arch mountain2
+elevation 9366
 x 5
 y 32
-elevation 9366
 end
 arch mountain2
+elevation 10892
 x 5
 y 33
-elevation 10892
 end
 arch mountain2
+elevation 10358
 x 5
 y 34
-elevation 10358
 end
 arch mountain
+elevation 8405
 x 5
 y 35
-elevation 8405
 end
 arch mountain
+elevation 6892
 x 5
 y 36
-elevation 6892
 end
 arch grass
 x 5
@@ -1432,19 +1422,19 @@ x 5
 y 38
 end
 arch grass
+no_pass 1
 x 5
 y 39
-no_pass 1
 end
 arch grass
+no_pass 1
 x 5
 y 40
-no_pass 1
 end
 arch grass
+no_pass 1
 x 5
 y 41
-no_pass 1
 end
 arch cobblestones2
 x 5
@@ -1487,188 +1477,188 @@ x 5
 y 49
 end
 arch brush
-x 6
 elevation 119
+x 6
 end
 arch hills
+elevation 1284
 x 6
 y 1
-elevation 1284
 end
 arch hills_rocky
+elevation 4274
 x 6
 y 2
-elevation 4274
 end
 arch mountain
+elevation 6936
 x 6
 y 3
-elevation 6936
 end
 arch mountain
+elevation 8746
 x 6
 y 4
-elevation 8746
 end
 arch mountain2
+elevation 9052
 x 6
 y 5
-elevation 9052
 end
 arch mountain
+elevation 7575
 x 6
 y 6
-elevation 7575
 end
 arch mountain
+elevation 5163
 x 6
 y 7
-elevation 5163
 end
 arch hills_rocky
+elevation 3178
 x 6
 y 8
-elevation 3178
 end
 arch hills_rocky
+elevation 1439
 x 6
 y 9
-elevation 1439
 end
 arch brush
+elevation 10
 x 6
 y 10
-elevation 10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 6
 y 16
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 6
 y 17
-elevation -9
 end
 arch shallow_sea
+elevation -8
 x 6
 y 18
-elevation -8
 end
 arch desert
+elevation 39
 x 6
 y 19
-elevation 39
 end
 arch shallow_sea
+elevation -9
 x 6
 y 20
-elevation -9
 end
 arch shallow_sea
+elevation -9
 x 6
 y 21
-elevation -9
 end
 arch shallow_sea
+elevation -3
 x 6
 y 22
-elevation -3
 end
 arch shallow_sea
+elevation -8
 x 6
 y 23
-elevation -8
 end
 arch shallow_sea
+elevation -4
 x 6
 y 24
-elevation -4
 end
 arch shallow_sea
+elevation -9
 x 6
 y 25
-elevation -9
 end
 arch shallow_sea
+elevation -9
 x 6
 y 26
-elevation -9
 end
 arch shallow_sea
+elevation -8
 x 6
 y 27
-elevation -8
 end
 arch shallow_sea
+elevation -2
 x 6
 y 28
-elevation -2
 end
 arch grass
+elevation 592
 x 6
 y 29
-elevation 592
 end
 arch hills_rocky
+elevation 3656
 x 6
 y 30
-elevation 3656
 end
 arch mountain
+elevation 6487
 x 6
 y 31
-elevation 6487
 end
 arch mountain2
+elevation 9052
 x 6
 y 32
-elevation 9052
 end
 arch mountain2
+elevation 10564
 x 6
 y 33
-elevation 10564
 end
 arch mountain2
+elevation 10510
 x 6
 y 34
-elevation 10510
 end
 arch mountain2
+elevation 9713
 x 6
 y 35
-elevation 9713
 end
 arch mountain2
+elevation 9078
 x 6
 y 36
-elevation 9078
 end
 arch grass
 x 6
@@ -1683,24 +1673,24 @@ x 6
 y 38
 end
 arch grass
+no_pass 1
 x 6
 y 39
-no_pass 1
 end
 arch grass
+no_pass 1
 x 6
 y 40
-no_pass 1
 end
 arch grass
+no_pass 1
 x 6
 y 41
-no_pass 1
 end
 arch grass
+no_pass 1
 x 6
 y 42
-no_pass 1
 end
 arch cobblestones2
 x 6
@@ -1751,188 +1741,188 @@ x 6
 y 49
 end
 arch shallow_sea
-x 7
 elevation -8
+x 7
 end
 arch shallow_sea
+elevation -8
 x 7
 y 1
-elevation -8
 end
 arch desert
+elevation 146
 x 7
 y 2
-elevation 146
 end
 arch steppe
+elevation 3909
 x 7
 y 3
-elevation 3909
 end
 arch mountain
+elevation 6302
 x 7
 y 4
-elevation 6302
 end
 arch mountain
+elevation 6744
 x 7
 y 5
-elevation 6744
 end
 arch mountain
+elevation 5513
 x 7
 y 6
-elevation 5513
 end
 arch hills_rocky
+elevation 3670
 x 7
 y 7
-elevation 3670
 end
 arch desert
+elevation 484
 x 7
 y 8
-elevation 484
 end
 arch brush
+elevation 628
 x 7
 y 9
-elevation 628
 end
 arch deep_swamp
+elevation 3
 x 7
 y 10
-elevation 3
 end
 arch shallow_sea
+elevation -10
 x 7
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 16
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 17
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 7
 y 18
-elevation -9
 end
 arch shallow_sea
+elevation -8
 x 7
 y 19
-elevation -8
 end
 arch shallow_sea
+elevation -10
 x 7
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 7
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -8
 x 7
 y 27
-elevation -8
 end
 arch desert
+elevation 58
 x 7
 y 28
-elevation 58
 end
 arch desert
+elevation 796
 x 7
 y 29
-elevation 796
 end
 arch hills_rocky
+elevation 3422
 x 7
 y 30
-elevation 3422
 end
 arch mountain
+elevation 5360
 x 7
 y 31
-elevation 5360
 end
 arch mountain
+elevation 8175
 x 7
 y 32
-elevation 8175
 end
 arch mountain2
+elevation 9540
 x 7
 y 33
-elevation 9540
 end
 arch mountain2
+elevation 10052
 x 7
 y 34
-elevation 10052
 end
 arch mountain2
+elevation 9511
 x 7
 y 35
-elevation 9511
 end
 arch mountain
+elevation 8848
 x 7
 y 36
-elevation 8848
 end
 arch grass
 x 7
@@ -1991,187 +1981,187 @@ x 7
 y 49
 end
 arch shallow_sea
-x 8
 elevation -10
+x 8
 end
 arch shallow_sea
 x 8
 y 1
 end
 arch grass
+elevation 286
 x 8
 y 2
-elevation 286
 end
 arch hills
+elevation 1535
 x 8
 y 3
-elevation 1535
 end
 arch hills
+elevation 3189
 x 8
 y 4
-elevation 3189
 end
 arch hills_rocky
+elevation 3468
 x 8
 y 5
-elevation 3468
 end
 arch jungle_1
+elevation 2727
 x 8
 y 6
-elevation 2727
 end
 arch woods_3
+elevation 1518
 x 8
 y 7
-elevation 1518
 end
 arch grass
+elevation 501
 x 8
 y 8
-elevation 501
 end
 arch shallow_sea
+elevation -6
 x 8
 y 9
-elevation -6
 end
 arch deep_swamp
+elevation 2
 x 8
 y 10
-elevation 2
 end
 arch shallow_sea
+elevation -9
 x 8
 y 11
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 8
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 16
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 17
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 18
-elevation -10
 end
 arch shallow_sea
+elevation -8
 x 8
 y 19
-elevation -8
 end
 arch shallow_sea
+elevation -10
 x 8
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 8
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 8
 y 27
-elevation -9
 end
 arch deep_swamp
+elevation 4
 x 8
 y 28
-elevation 4
 end
 arch hills
+elevation 1016
 x 8
 y 29
-elevation 1016
 end
 arch hills
+elevation 3077
 x 8
 y 30
-elevation 3077
 end
 arch mountain
+elevation 5238
 x 8
 y 31
-elevation 5238
 end
 arch mountain
+elevation 7187
 x 8
 y 32
-elevation 7187
 end
 arch mountain
+elevation 8834
 x 8
 y 33
-elevation 8834
 end
 arch mountain2
+elevation 9267
 x 8
 y 34
-elevation 9267
 end
 arch mountain
+elevation 8609
 x 8
 y 35
-elevation 8609
 end
 arch mountain
+elevation 5745
 x 8
 y 36
-elevation 5745
 end
 arch grass
 x 8
@@ -2230,9 +2220,9 @@ msg
 @match *
 Look lively there...
 endmsg
+speed_left -4.000000
 x 8
 y 44
-speed_left -4.000000
 end
 arch cobblestones2
 x 8
@@ -2256,197 +2246,197 @@ msg
 On your way - or I'll arrest you for
 disturbin' the peace...
 endmsg
+speed_left -4.000000
 x 8
 y 48
-speed_left -4.000000
 end
 arch grass
 x 8
 y 49
 end
 arch desert
-x 9
 elevation 136
+x 9
 end
 arch grass
+elevation 39
 x 9
 y 1
-elevation 39
 end
 arch desert
+elevation 60
 x 9
 y 2
-elevation 60
 end
 arch desert
+elevation 314
 x 9
 y 3
-elevation 314
 end
 arch desert
+elevation 102
 x 9
 y 4
-elevation 102
 end
 arch desert
+elevation 391
 x 9
 y 5
-elevation 391
 end
 arch desert
+elevation 18
 x 9
 y 6
-elevation 18
 end
 arch deep_swamp
+elevation 7
 x 9
 y 7
-elevation 7
 end
 arch grass
+elevation 21
 x 9
 y 8
-elevation 21
 end
 arch deep_swamp
+elevation 2
 x 9
 y 9
-elevation 2
 end
 arch shallow_sea
+elevation -8
 x 9
 y 10
-elevation -8
 end
 arch shallow_sea
+elevation -10
 x 9
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 16
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 9
 y 17
-elevation -9
 end
 arch deep_swamp
+elevation 1
 x 9
 y 18
-elevation 1
 end
 arch shallow_sea
+elevation -2
 x 9
 y 19
-elevation -2
 end
 arch shallow_sea
+elevation -9
 x 9
 y 20
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 9
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 9
 y 27
-elevation -10
 end
 arch brush
+elevation 34
 x 9
 y 28
-elevation 34
 end
 arch desert
+elevation 933
 x 9
 y 29
-elevation 933
 end
 arch hills
+elevation 3201
 x 9
 y 30
-elevation 3201
 end
 arch hills_rocky
+elevation 3094
 x 9
 y 31
-elevation 3094
 end
 arch mountain
+elevation 6796
 x 9
 y 32
-elevation 6796
 end
 arch mountain
+elevation 8323
 x 9
 y 33
-elevation 8323
 end
 arch mountain
+elevation 8183
 x 9
 y 34
-elevation 8183
 end
 arch mountain
+elevation 7241
 x 9
 y 35
-elevation 7241
 end
 arch mountain
+elevation 6513
 x 9
 y 36
-elevation 6513
 end
 arch cobblestones2
 x 9
@@ -2561,188 +2551,188 @@ x 9
 y 49
 end
 arch woods_3
-x 10
 elevation 1443
+x 10
 end
 arch desert
+elevation 28
 x 10
 y 1
-elevation 28
 end
 arch grass
+elevation 174
 x 10
 y 2
-elevation 174
 end
 arch shallow_sea
+elevation -3
 x 10
 y 3
-elevation -3
 end
 arch desert
+elevation 14
 x 10
 y 4
-elevation 14
 end
 arch deep_swamp
+elevation 5
 x 10
 y 5
-elevation 5
 end
 arch shallow_sea
+elevation -9
 x 10
 y 6
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 10
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 10
 y 16
-elevation -9
 end
 arch shallow_sea
+elevation -6
 x 10
 y 17
-elevation -6
 end
 arch desert
+elevation 254
 x 10
 y 18
-elevation 254
 end
 arch desert
+elevation 133
 x 10
 y 19
-elevation 133
 end
 arch shallow_sea
+elevation -5
 x 10
 y 20
-elevation -5
 end
 arch shallow_sea
+elevation -10
 x 10
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 10
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -7
 x 10
 y 28
-elevation -7
 end
 arch desert
+elevation 545
 x 10
 y 29
-elevation 545
 end
 arch hills
+elevation 3262
 x 10
 y 30
-elevation 3262
 end
 arch mountain
+elevation 5403
 x 10
 y 31
-elevation 5403
 end
 arch mountain
+elevation 6871
 x 10
 y 32
-elevation 6871
 end
 arch mountain
+elevation 7743
 x 10
 y 33
-elevation 7743
 end
 arch mountain
+elevation 7131
 x 10
 y 34
-elevation 7131
 end
 arch hills
+elevation 3984
 x 10
 y 35
-elevation 3984
 end
 arch mountain
+elevation 5633
 x 10
 y 36
-elevation 5633
 end
 arch cobblestones2
 x 10
@@ -2753,15 +2743,6 @@ x 10
 y 37
 end
 arch cobblestones2
-x 10
-y 38
-end
-arch barn
-name Warehouse #1
-name_pl Warehouse #1
-slaying /navar_city/warehouse1
-hp 8
-sp 24
 x 10
 y 38
 end
@@ -2826,187 +2807,187 @@ x 10
 y 49
 end
 arch hills_rocky
-x 11
 elevation 3124
+x 11
 end
 arch evergreens
+elevation 2131
 x 11
 y 1
-elevation 2131
 end
 arch jungle_1
+elevation 1045
 x 11
 y 2
-elevation 1045
 end
 arch shallow_sea
+elevation -9
 x 11
 y 3
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 11
 y 4
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 11
 y 5
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 11
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 14
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 16
-elevation -10
 end
 arch shallow_sea
+elevation -1
 x 11
 y 17
-elevation -1
 end
 arch brush
+elevation 72
 x 11
 y 18
-elevation 72
 end
 arch shallow_sea
 x 11
 y 19
 end
 arch shallow_sea
+elevation -4
 x 11
 y 20
-elevation -4
 end
 arch shallow_sea
+elevation -10
 x 11
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 11
 y 27
-elevation -10
 end
 arch deep_swamp
+elevation 4
 x 11
 y 28
-elevation 4
 end
 arch desert
+elevation 158
 x 11
 y 29
-elevation 158
 end
 arch hills
+elevation 3196
 x 11
 y 30
-elevation 3196
 end
 arch mountain
+elevation 5625
 x 11
 y 31
-elevation 5625
 end
 arch mountain
+elevation 6575
 x 11
 y 32
-elevation 6575
 end
 arch mountain
+elevation 6652
 x 11
 y 33
-elevation 6652
 end
 arch mountain
+elevation 5925
 x 11
 y 34
-elevation 5925
 end
 arch mountain
+elevation 5163
 x 11
 y 35
-elevation 5163
 end
 arch hills_rocky
+elevation 4580
 x 11
 y 36
-elevation 4580
 end
 arch cobblestones2
 x 11
@@ -3065,187 +3046,187 @@ x 11
 y 49
 end
 arch steppe
-x 12
 elevation 3674
+x 12
 end
 arch hills
+elevation 3097
 x 12
 y 1
-elevation 3097
 end
 arch jungle_1
+elevation 1880
 x 12
 y 2
-elevation 1880
 end
 arch shallow_sea
 x 12
 y 3
 end
 arch shallow_sea
+elevation -10
 x 12
 y 4
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 5
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 12
 y 14
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 12
 y 15
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 12
 y 16
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 12
 y 17
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 12
 y 18
-elevation -9
 end
 arch shallow_sea
+elevation -7
 x 12
 y 19
-elevation -7
 end
 arch shallow_sea
+elevation -10
 x 12
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 12
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 12
 y 28
-elevation -9
 end
 arch desert
+elevation 305
 x 12
 y 29
-elevation 305
 end
 arch hills
+elevation 2539
 x 12
 y 30
-elevation 2539
 end
 arch mountain
+elevation 5039
 x 12
 y 31
-elevation 5039
 end
 arch mountain
+elevation 5674
 x 12
 y 32
-elevation 5674
 end
 arch hills_rocky
+elevation 4137
 x 12
 y 33
-elevation 4137
 end
 arch hills_rocky
+elevation 4960
 x 12
 y 34
-elevation 4960
 end
 arch mountain
+elevation 5019
 x 12
 y 35
-elevation 5019
 end
 arch hills_rocky
+elevation 4425
 x 12
 y 36
-elevation 4425
 end
 arch cobblestones2
 x 12
@@ -3337,187 +3318,187 @@ x 12
 y 49
 end
 arch hills
-x 13
 elevation 3261
+x 13
 end
 arch hills
+elevation 3086
 x 13
 y 1
-elevation 3086
 end
 arch hills
+elevation 1873
 x 13
 y 2
-elevation 1873
 end
 arch grass
+elevation 163
 x 13
 y 3
-elevation 163
 end
 arch shallow_sea
+elevation -4
 x 13
 y 4
-elevation -4
 end
 arch shallow_sea
+elevation -10
 x 13
 y 5
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 13
 y 14
-elevation -9
 end
 arch shallow_sea
+elevation -5
 x 13
 y 15
-elevation -5
 end
 arch shallow_sea
+elevation -3
 x 13
 y 16
-elevation -3
 end
 arch shallow_sea
+elevation -8
 x 13
 y 17
-elevation -8
 end
 arch shallow_sea
+elevation -8
 x 13
 y 18
-elevation -8
 end
 arch shallow_sea
+elevation -9
 x 13
 y 19
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 13
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 13
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -1
 x 13
 y 28
-elevation -1
 end
 arch shallow_sea
 x 13
 y 29
 end
 arch tree
+elevation 1916
 x 13
 y 30
-elevation 1916
 end
 arch hills_rocky
+elevation 4191
 x 13
 y 31
-elevation 4191
 end
 arch hills
+elevation 4676
 x 13
 y 32
-elevation 4676
 end
 arch hills_rocky
+elevation 3827
 x 13
 y 33
-elevation 3827
 end
 arch hills_rocky
+elevation 3201
 x 13
 y 34
-elevation 3201
 end
 arch hills_rocky
+elevation 4926
 x 13
 y 35
-elevation 4926
 end
 arch mountain
+elevation 5039
 x 13
 y 36
-elevation 5039
 end
 arch cobblestones2
 x 13
@@ -3528,15 +3509,6 @@ x 13
 y 37
 end
 arch cobblestones2
-x 13
-y 38
-end
-arch barn
-name Warehouse #2
-name_pl Warehouse #2
-slaying /navar_city/warehouse2
-hp 13
-sp 25
 x 13
 y 38
 end
@@ -3584,10 +3556,6 @@ arch grass
 x 13
 y 47
 end
-arch church
-x 13
-y 47
-end
 arch grass
 x 13
 y 48
@@ -3597,188 +3565,188 @@ x 13
 y 49
 end
 arch hills
-x 14
 elevation 2278
+x 14
 end
 arch woods_3
+elevation 2189
 x 14
 y 1
-elevation 2189
 end
 arch hills
+elevation 1088
 x 14
 y 2
-elevation 1088
 end
 arch desert
+elevation 68
 x 14
 y 3
-elevation 68
 end
 arch shallow_sea
+elevation -2
 x 14
 y 4
-elevation -2
 end
 arch shallow_sea
+elevation -10
 x 14
 y 5
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 14
-elevation -10
 end
 arch deep_swamp
+elevation 9
 x 14
 y 15
-elevation 9
 end
 arch grass
+elevation 172
 x 14
 y 16
-elevation 172
 end
 arch brush
+elevation 104
 x 14
 y 17
-elevation 104
 end
 arch shallow_sea
+elevation -9
 x 14
 y 18
-elevation -9
 end
 arch shallow_sea
+elevation -6
 x 14
 y 19
-elevation -6
 end
 arch shallow_sea
+elevation -10
 x 14
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 14
 y 28
-elevation -10
 end
 arch brush
+elevation 45
 x 14
 y 29
-elevation 45
 end
 arch hills
+elevation 1502
 x 14
 y 30
-elevation 1502
 end
 arch hills_rocky
+elevation 3447
 x 14
 y 31
-elevation 3447
 end
 arch hills_rocky
+elevation 3970
 x 14
 y 32
-elevation 3970
 end
 arch hills_rocky
+elevation 3852
 x 14
 y 33
-elevation 3852
 end
 arch hills_rocky
+elevation 4177
 x 14
 y 34
-elevation 4177
 end
 arch hills_rocky
+elevation 4988
 x 14
 y 35
-elevation 4988
 end
 arch mountain
+elevation 5877
 x 14
 y 36
-elevation 5877
 end
 arch cobblestones2
 x 14
@@ -3855,187 +3823,187 @@ x 14
 y 49
 end
 arch desert
-x 15
 elevation 946
+x 15
 end
 arch desert
-x 15
-y 1
 elevation 967
+x 15
+y 1
 end
 arch desert
-x 15
-y 2
 elevation 80
+x 15
+y 2
 end
 arch shallow_sea
 x 15
 y 3
 end
 arch shallow_sea
+elevation -7
 x 15
 y 4
-elevation -7
 end
 arch shallow_sea
+elevation -10
 x 15
 y 5
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 7
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 8
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 9
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 10
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 11
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 12
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 13
-elevation -10
 end
 arch shallow_sea
+elevation -6
 x 15
 y 14
-elevation -6
 end
 arch deep_swamp
+elevation 9
 x 15
 y 15
-elevation 9
 end
 arch desert
-x 15
-y 16
 elevation 959
+x 15
+y 16
 end
 arch hills
-x 15
-y 17
 elevation 1048
+x 15
+y 17
 end
 arch desert
-x 15
-y 18
 elevation 247
+x 15
+y 18
 end
 arch deep_swamp
-x 15
-y 19
 elevation 7
+x 15
+y 19
 end
 arch shallow_sea
+elevation -10
 x 15
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 15
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 15
 y 28
-elevation -9
 end
 arch desert
-x 15
-y 29
 elevation 16
+x 15
+y 29
 end
 arch brush
+elevation 944
 x 15
 y 30
-elevation 944
 end
 arch tree
-x 15
-y 31
 elevation 2667
+x 15
+y 31
 end
 arch hills
-x 15
-y 32
 elevation 3202
+x 15
+y 32
 end
 arch hills_rocky
-x 15
-y 33
 elevation 3149
+x 15
+y 33
 end
 arch hills_rocky
-x 15
-y 34
 elevation 3375
+x 15
+y 34
 end
 arch hills_rocky
-x 15
-y 35
 elevation 4880
+x 15
+y 35
 end
 arch mountain
-x 15
-y 36
 elevation 6255
+x 15
+y 36
 end
 arch cobblestones2
 x 15
@@ -4094,188 +4062,188 @@ x 15
 y 49
 end
 arch desert
-x 16
 elevation 12
+x 16
 end
 arch deep_swamp
-x 16
-y 1
 elevation 2
+x 16
+y 1
 end
 arch shallow_sea
+elevation -4
 x 16
 y 2
-elevation -4
 end
 arch shallow_sea
+elevation -9
 x 16
 y 3
-elevation -9
 end
 arch shallow_sea
+elevation -8
 x 16
 y 4
-elevation -8
 end
 arch shallow_sea
+elevation -8
 x 16
 y 5
-elevation -8
 end
 arch shallow_sea
+elevation -10
 x 16
 y 6
-elevation -10
 end
 arch shallow_sea
+elevation -2
 x 16
 y 7
-elevation -2
 end
 arch deep_swamp
-x 16
-y 8
 elevation 5
+x 16
+y 8
 end
 arch shallow_sea
+elevation -6
 x 16
 y 9
-elevation -6
 end
 arch shallow_sea
+elevation -8
 x 16
 y 10
-elevation -8
 end
 arch shallow_sea
+elevation -9
 x 16
 y 11
-elevation -9
 end
 arch shallow_sea
+elevation -6
 x 16
 y 12
-elevation -6
 end
 arch shallow_sea
-x 16
-y 13
 elevation -1
+x 16
+y 13
 end
 arch shallow_sea
-x 16
-y 14
 elevation -3
+x 16
+y 14
 end
 arch desert
-x 16
-y 15
 elevation 236
+x 16
+y 15
 end
 arch hills
-x 16
-y 16
 elevation 1473
+x 16
+y 16
 end
 arch hills
-x 16
-y 17
 elevation 1799
+x 16
+y 17
 end
 arch desert
-x 16
-y 18
 elevation 831
+x 16
+y 18
 end
 arch desert
-x 16
-y 19
 elevation 15
+x 16
+y 19
 end
 arch shallow_sea
+elevation -10
 x 16
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 24
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 26
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 27
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 16
 y 28
-elevation -10
 end
 arch shallow_sea
+elevation -7
 x 16
 y 29
-elevation -7
 end
 arch brush
-x 16
-y 30
 elevation 127
+x 16
+y 30
 end
 arch hills
-x 16
-y 31
 elevation 1969
+x 16
+y 31
 end
 arch tree
-x 16
-y 32
 elevation 2809
+x 16
+y 32
 end
 arch tree
+elevation 1605
 x 16
 y 33
-elevation 1605
 end
 arch tree
-x 16
-y 34
 elevation 1330
+x 16
+y 34
 end
 arch hills_rocky
-x 16
-y 35
 elevation 4629
+x 16
+y 35
 end
 arch mountain
-x 16
-y 36
 elevation 6292
+x 16
+y 36
 end
 arch cobblestones2
 x 16
@@ -4289,29 +4257,11 @@ arch cobblestones2
 x 16
 y 38
 end
-arch barn
-name Warehouse #3
-name_pl Warehouse #3
-slaying /navar_city/warehouse3
-hp 2
-sp 34
-x 16
-y 38
-end
 arch cobblestones2
 x 16
 y 39
 end
 arch cobblestones2
-x 16
-y 40
-end
-arch barn
-name Warehouse #4
-name_pl Warehouse #4
-slaying /navar_city/warehouse4
-hp 27
-sp 15
 x 16
 y 40
 end
@@ -4323,29 +4273,11 @@ arch cobblestones2
 x 16
 y 42
 end
-arch barn
-name Warehouse #5
-name_pl Warehouse #5
-slaying /navar_city/warehouse5
-hp 24
-sp 9
-x 16
-y 42
-end
 arch cobblestones2
 x 16
 y 43
 end
 arch cobblestones2
-x 16
-y 44
-end
-arch barn
-name Warehouse #6
-name_pl Warehouse #6
-slaying /navar_city/warehouse6
-hp 4
-sp 27
 x 16
 y 44
 end
@@ -4357,14 +4289,6 @@ arch cobblestones2
 x 16
 y 46
 end
-arch barn
-name Warehouse #7
-name_pl Warehouse #7
-slaying /navar_city/warehouse7
-hp 7
-x 16
-y 46
-end
 arch cobblestones2
 x 16
 y 47
@@ -4373,200 +4297,192 @@ arch cobblestones2
 x 16
 y 48
 end
-arch barn
-name Deserted Warehouse
-name_pl Deserted Warehouse
-slaying /navar_city/warehouse8
-sp 1
-x 16
-y 48
-end
 arch cobblestones2
 x 16
 y 49
 end
 arch shallow_sea
-x 17
 elevation -14
+x 17
 end
 arch shallow_sea
+elevation -10
 x 17
 y 1
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 17
 y 2
-elevation -10
 end
 arch shallow_sea
+elevation -9
 x 17
 y 3
-elevation -9
 end
 arch desert
-x 17
-y 4
 elevation 32
+x 17
+y 4
 end
 arch desert
-x 17
-y 5
 elevation 22
+x 17
+y 5
 end
 arch shallow_sea
+elevation -7
 x 17
 y 6
-elevation -7
 end
 arch deep_swamp
-x 17
-y 7
 elevation 9
+x 17
+y 7
 end
 arch desert
-x 17
-y 8
 elevation 305
+x 17
+y 8
 end
 arch desert
-x 17
-y 9
 elevation 438
+x 17
+y 9
 end
 arch deep_swamp
-x 17
-y 10
 elevation 1
+x 17
+y 10
 end
 arch desert
+elevation 12
 x 17
 y 11
-elevation 12
 end
 arch desert
+elevation 42
 x 17
 y 12
-elevation 42
 end
 arch desert
+elevation 480
 x 17
 y 13
-elevation 480
 end
 arch desert
+elevation 863
 x 17
 y 14
-elevation 863
 end
 arch desert
+elevation 850
 x 17
 y 15
-elevation 850
 end
 arch hills
+elevation 1605
 x 17
 y 16
-elevation 1605
 end
 arch hills
+elevation 1538
 x 17
 y 17
-elevation 1538
 end
 arch desert
+elevation 255
 x 17
 y 18
-elevation 255
 end
 arch shallow_sea
+elevation -8
 x 17
 y 19
-elevation -8
 end
 arch shallow_sea
+elevation -9
 x 17
 y 20
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 17
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 17
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 17
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -6
 x 17
 y 24
-elevation -6
 end
 arch shallow_sea
+elevation -10
 x 17
 y 25
-elevation -10
 end
 arch shallow_sea
+elevation -6
 x 17
 y 26
-elevation -6
 end
 arch shallow_sea
+elevation -9
 x 17
 y 27
-elevation -9
 end
 arch shallow_sea
+elevation -9
 x 17
 y 28
-elevation -9
 end
 arch shallow_sea
 x 17
 y 29
 end
 arch desert
+elevation 97
 x 17
 y 30
-elevation 97
 end
 arch hills
+elevation 1261
 x 17
 y 31
-elevation 1261
 end
 arch hills
+elevation 3193
 x 17
 y 32
-elevation 3193
 end
 arch hills_rocky
+elevation 3716
 x 17
 y 33
-elevation 3716
 end
 arch hills_rocky
+elevation 4140
 x 17
 y 34
-elevation 4140
 end
 arch hills_rocky
+elevation 4976
 x 17
 y 35
-elevation 4976
 end
 arch mountain
+elevation 6775
 x 17
 y 36
-elevation 6775
 end
 arch cobblestones2
 x 17
@@ -4625,188 +4541,188 @@ x 17
 y 49
 end
 arch shallow_sea
-x 18
 elevation -30
+x 18
 end
 arch shallow_sea
+elevation -19
 x 18
 y 1
-elevation -19
 end
 arch shallow_sea
+elevation -10
 x 18
 y 2
-elevation -10
 end
 arch desert
+elevation 34
 x 18
 y 3
-elevation 34
 end
 arch desert
+elevation 655
 x 18
 y 4
-elevation 655
 end
 arch desert
+elevation 944
 x 18
 y 5
-elevation 944
 end
 arch desert
+elevation 657
 x 18
 y 6
-elevation 657
 end
 arch desert
+elevation 621
 x 18
 y 7
-elevation 621
 end
 arch desert
+elevation 903
 x 18
 y 8
-elevation 903
 end
 arch desert
+elevation 599
 x 18
 y 9
-elevation 599
 end
 arch desert
+elevation 480
 x 18
 y 10
-elevation 480
 end
 arch desert
+elevation 274
 x 18
 y 11
-elevation 274
 end
 arch hills
+elevation 2148
 x 18
 y 12
-elevation 2148
 end
 arch hills
+elevation 3379
 x 18
 y 13
-elevation 3379
 end
 arch hills
+elevation 3463
 x 18
 y 14
-elevation 3463
 end
 arch hills
+elevation 2551
 x 18
 y 15
-elevation 2551
 end
 arch hills
+elevation 2161
 x 18
 y 16
-elevation 2161
 end
 arch desert
+elevation 277
 x 18
 y 17
-elevation 277
 end
 arch desert
+elevation 106
 x 18
 y 18
-elevation 106
 end
 arch shallow_sea
+elevation -6
 x 18
 y 19
-elevation -6
 end
 arch shallow_sea
+elevation -10
 x 18
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 18
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 18
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 18
 y 23
-elevation -10
 end
 arch desert
+elevation 18
 x 18
 y 24
-elevation 18
 end
 arch desert
+elevation 666
 x 18
 y 25
-elevation 666
 end
 arch desert
+elevation 138
 x 18
 y 26
-elevation 138
 end
 arch shallow_sea
+elevation -8
 x 18
 y 27
-elevation -8
 end
 arch deep_swamp
+elevation 6
 x 18
 y 28
-elevation 6
 end
 arch shallow_sea
+elevation -4
 x 18
 y 29
-elevation -4
 end
 arch desert
+elevation 443
 x 18
 y 30
-elevation 443
 end
 arch tree
+elevation 2086
 x 18
 y 31
-elevation 2086
 end
 arch hills
+elevation 4021
 x 18
 y 32
-elevation 4021
 end
 arch mountain
+elevation 5069
 x 18
 y 33
-elevation 5069
 end
 arch mountain
+elevation 5434
 x 18
 y 34
-elevation 5434
 end
 arch hills_rocky
+elevation 4990
 x 18
 y 35
-elevation 4990
 end
 arch mountain
+elevation 7037
 x 18
 y 36
-elevation 7037
 end
 arch cobblestones2
 x 18
@@ -4865,188 +4781,188 @@ x 18
 y 49
 end
 arch shallow_sea
-x 19
 elevation -42
+x 19
 end
 arch shallow_sea
+elevation -25
 x 19
 y 1
-elevation -25
 end
 arch shallow_sea
+elevation -10
 x 19
 y 2
-elevation -10
 end
 arch desert
+elevation 35
 x 19
 y 3
-elevation 35
 end
 arch hills
+elevation 1132
 x 19
 y 4
-elevation 1132
 end
 arch hills
+elevation 1916
 x 19
 y 5
-elevation 1916
 end
 arch hills
+elevation 2139
 x 19
 y 6
-elevation 2139
 end
 arch hills
+elevation 1933
 x 19
 y 7
-elevation 1933
 end
 arch hills
+elevation 1526
 x 19
 y 8
-elevation 1526
 end
 arch desert
+elevation 333
 x 19
 y 9
-elevation 333
 end
 arch desert
+elevation 19
 x 19
 y 10
-elevation 19
 end
 arch hills
+elevation 1184
 x 19
 y 11
-elevation 1184
 end
 arch hills
+elevation 2772
 x 19
 y 12
-elevation 2772
 end
 arch hills
+elevation 4060
 x 19
 y 13
-elevation 4060
 end
 arch hills
+elevation 4391
 x 19
 y 14
-elevation 4391
 end
 arch hills
+elevation 4017
 x 19
 y 15
-elevation 4017
 end
 arch hills
+elevation 2909
 x 19
 y 16
-elevation 2909
 end
 arch desert
+elevation 882
 x 19
 y 17
-elevation 882
 end
 arch shallow_sea
+elevation -2
 x 19
 y 18
-elevation -2
 end
 arch shallow_sea
+elevation -9
 x 19
 y 19
-elevation -9
 end
 arch shallow_sea
+elevation -10
 x 19
 y 20
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 19
 y 21
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 19
 y 22
-elevation -10
 end
 arch shallow_sea
+elevation -7
 x 19
 y 23
-elevation -7
 end
 arch brush
+elevation 150
 x 19
 y 24
-elevation 150
 end
 arch tree
+elevation 1127
 x 19
 y 25
-elevation 1127
 end
 arch tree
+elevation 1260
 x 19
 y 26
-elevation 1260
 end
 arch brush
+elevation 760
 x 19
 y 27
-elevation 760
 end
 arch brush
+elevation 17
 x 19
 y 28
-elevation 17
 end
 arch brush
+elevation 226
 x 19
 y 29
-elevation 226
 end
 arch brush
+elevation 278
 x 19
 y 30
-elevation 278
 end
 arch evergreens
+elevation 2632
 x 19
 y 31
-elevation 2632
 end
 arch hills
+elevation 4534
 x 19
 y 32
-elevation 4534
 end
 arch mountain
+elevation 5602
 x 19
 y 33
-elevation 5602
 end
 arch mountain
+elevation 6133
 x 19
 y 34
-elevation 6133
 end
 arch mountain
+elevation 6570
 x 19
 y 35
-elevation 6570
 end
 arch mountain
+elevation 6140
 x 19
 y 36
-elevation 6140
 end
 arch cobblestones2
 x 19
@@ -5153,187 +5069,187 @@ x 19
 y 49
 end
 arch shallow_sea
-x 20
 elevation -50
+x 20
 end
 arch shallow_sea
-x 20
-y 1
 elevation -30
+x 20
+y 1
 end
 arch shallow_sea
+elevation -10
 x 20
 y 2
-elevation -10
 end
 arch desert
-x 20
-y 3
 elevation 21
+x 20
+y 3
 end
 arch desert
-x 20
-y 4
 elevation 825
+x 20
+y 4
 end
 arch hills
-x 20
-y 5
 elevation 1979
+x 20
+y 5
 end
 arch hills
-x 20
-y 6
 elevation 2884
+x 20
+y 6
 end
 arch hills
-x 20
-y 7
 elevation 2978
+x 20
+y 7
 end
 arch hills
-x 20
-y 8
 elevation 2022
+x 20
+y 8
 end
 arch desert
-x 20
-y 9
 elevation 139
+x 20
+y 9
 end
 arch desert
-x 20
-y 10
 elevation 266
+x 20
+y 10
 end
 arch hills
-x 20
-y 11
 elevation 1069
+x 20
+y 11
 end
 arch desert
-x 20
-y 12
 elevation 879
+x 20
+y 12
 end
 arch hills
-x 20
-y 13
 elevation 2606
+x 20
+y 13
 end
 arch hills
-x 20
-y 14
 elevation 3600
+x 20
+y 14
 end
 arch hills
-x 20
-y 15
 elevation 3807
+x 20
+y 15
 end
 arch hills
-x 20
-y 16
 elevation 3167
+x 20
+y 16
 end
 arch hills
-x 20
-y 17
 elevation 1666
+x 20
+y 17
 end
 arch desert
-x 20
-y 18
 elevation 27
+x 20
+y 18
 end
 arch deep_swamp
+elevation 4
 x 20
 y 19
-elevation 4
 end
 arch shallow_sea
-x 20
-y 20
 elevation -9
+x 20
+y 20
 end
 arch shallow_sea
-x 20
-y 21
 elevation -8
+x 20
+y 21
 end
 arch shallow_sea
-x 20
-y 22
 elevation -4
+x 20
+y 22
 end
 arch shallow_sea
 x 20
 y 23
 end
 arch brush
-x 20
-y 24
 elevation 486
+x 20
+y 24
 end
 arch brush
-x 20
-y 25
 elevation 768
+x 20
+y 25
 end
 arch hills
-x 20
-y 26
 elevation 2407
+x 20
+y 26
 end
 arch tree
-x 20
-y 27
 elevation 2541
+x 20
+y 27
 end
 arch tree
-x 20
-y 28
 elevation 2147
+x 20
+y 28
 end
 arch tree
-x 20
-y 29
 elevation 1654
+x 20
+y 29
 end
 arch desert
+elevation 659
 x 20
 y 30
-elevation 659
 end
 arch hills
-x 20
-y 31
 elevation 3027
+x 20
+y 31
 end
 arch hills
-x 20
-y 32
 elevation 4135
+x 20
+y 32
 end
 arch mountain
-x 20
-y 33
 elevation 5376
+x 20
+y 33
 end
 arch mountain
-x 20
-y 34
 elevation 6455
+x 20
+y 34
 end
 arch mountain
-x 20
-y 35
 elevation 7514
+x 20
+y 35
 end
 arch mountain
-x 20
-y 36
 elevation 7647
+x 20
+y 36
 end
 arch cobblestones2
 x 20
@@ -5412,183 +5328,183 @@ x 20
 y 49
 end
 arch shallow_sea
-x 21
 elevation -54
+x 21
 end
 arch shallow_sea
-x 21
-y 1
 elevation -34
+x 21
+y 1
 end
 arch shallow_sea
-x 21
-y 2
 elevation -14
+x 21
+y 2
 end
 arch deep_swamp
-x 21
-y 3
 elevation 1
+x 21
+y 3
 end
 arch desert
-x 21
-y 4
 elevation 35
+x 21
+y 4
 end
 arch hills
-x 21
-y 5
 elevation 1574
+x 21
+y 5
 end
 arch hills
-x 21
-y 6
 elevation 2821
+x 21
+y 6
 end
 arch hills
-x 21
-y 7
 elevation 3065
+x 21
+y 7
 end
 arch hills
-x 21
-y 8
 elevation 2207
+x 21
+y 8
 end
 arch desert
-x 21
-y 9
 elevation 659
+x 21
+y 9
 end
 arch desert
-x 21
-y 10
 elevation 175
+x 21
+y 10
 end
 arch hills
-x 21
-y 11
 elevation 1112
+x 21
+y 11
 end
 arch hills
-x 21
-y 12
 elevation 1066
+x 21
+y 12
 end
 arch desert
-x 21
-y 13
 elevation 620
+x 21
+y 13
 end
 arch hills
-x 21
-y 14
 elevation 1840
+x 21
+y 14
 end
 arch hills
-x 21
-y 15
 elevation 3022
+x 21
+y 15
 end
 arch hills
-x 21
-y 16
 elevation 2733
+x 21
+y 16
 end
 arch hills
-x 21
-y 17
 elevation 2186
+x 21
+y 17
 end
 arch hills
-x 21
-y 18
 elevation 1104
+x 21
+y 18
 end
 arch desert
-x 21
-y 19
 elevation 138
+x 21
+y 19
 end
 arch deep_swamp
-x 21
-y 20
 elevation 4
+x 21
+y 20
 end
 arch desert
+elevation 116
 x 21
 y 21
-elevation 116
 end
 arch desert
+elevation 172
 x 21
 y 22
-elevation 172
 end
 arch hills
+elevation 1459
 x 21
 y 23
-elevation 1459
 end
 arch hills_rocky
+elevation 2355
 x 21
 y 24
-elevation 2355
 end
 arch tree
+elevation 2963
 x 21
 y 25
-elevation 2963
 end
 arch hills
+elevation 3553
 x 21
 y 26
-elevation 3553
 end
 arch hills_rocky
+elevation 3928
 x 21
 y 27
-elevation 3928
 end
 arch hills_rocky
+elevation 3885
 x 21
 y 28
-elevation 3885
 end
 arch hills_rocky
+elevation 3564
 x 21
 y 29
-elevation 3564
 end
 arch hills
+elevation 2300
 x 21
 y 30
-elevation 2300
 end
 arch hills
+elevation 3579
 x 21
 y 31
-elevation 3579
 end
 arch hills
+elevation 4405
 x 21
 y 32
-elevation 4405
 end
 arch tree
+elevation 2276
 x 21
 y 33
-elevation 2276
 end
 arch mountain
+elevation 7254
 x 21
 y 34
-elevation 7254
 end
 arch mountain
+elevation 8814
 x 21
 y 35
-elevation 8814
 end
 arch hills
 x 21
@@ -5614,15 +5530,7 @@ arch sea1
 x 21
 y 39
 end
-arch longship
-x 21
-y 39
-end
 arch sea1
-x 21
-y 40
-end
-arch longship
 x 21
 y 40
 end
@@ -5635,16 +5543,7 @@ x 21
 y 41
 end
 arch sea1
-x 21
-y 42
 no_pass 1
-end
-arch big_galleon
-name To Dtabb Land
-name_pl To Dtabb Land
-slaying /dtabb/darcap/darcap
-hp 14
-sp 11
 x 21
 y 42
 end
@@ -5661,11 +5560,7 @@ x 21
 y 44
 end
 arch sea1
-x 21
-y 45
 no_pass 1
-end
-arch big_galleon
 x 21
 y 45
 end
@@ -5682,11 +5577,7 @@ x 21
 y 47
 end
 arch sea1
-x 21
-y 48
 no_pass 1
-end
-arch big_galleon
 x 21
 y 48
 end
@@ -5695,178 +5586,178 @@ x 21
 y 49
 end
 arch shallow_sea
-x 22
 elevation -53
+x 22
 end
 arch shallow_sea
+elevation -35
 x 22
 y 1
-elevation -35
 end
 arch shallow_sea
+elevation -19
 x 22
 y 2
-elevation -19
 end
 arch shallow_sea
+elevation -10
 x 22
 y 3
-elevation -10
 end
 arch deep_swamp
+elevation 6
 x 22
 y 4
-elevation 6
 end
 arch desert
+elevation 551
 x 22
 y 5
-elevation 551
 end
 arch hills
+elevation 2198
 x 22
 y 6
-elevation 2198
 end
 arch hills
+elevation 1818
 x 22
 y 7
-elevation 1818
 end
 arch hills
+elevation 2271
 x 22
 y 8
-elevation 2271
 end
 arch hills
+elevation 1922
 x 22
 y 9
-elevation 1922
 end
 arch hills
+elevation 1768
 x 22
 y 10
-elevation 1768
 end
 arch hills
+elevation 1439
 x 22
 y 11
-elevation 1439
 end
 arch desert
+elevation 111
 x 22
 y 12
-elevation 111
 end
 arch desert
+elevation 380
 x 22
 y 13
-elevation 380
 end
 arch hills
+elevation 1926
 x 22
 y 14
-elevation 1926
 end
 arch hills
+elevation 2869
 x 22
 y 15
-elevation 2869
 end
 arch hills
+elevation 3208
 x 22
 y 16
-elevation 3208
 end
 arch hills
+elevation 2927
 x 22
 y 17
-elevation 2927
 end
 arch hills
+elevation 2097
 x 22
 y 18
-elevation 2097
 end
 arch hills
+elevation 1092
 x 22
 y 19
-elevation 1092
 end
 arch desert
+elevation 990
 x 22
 y 20
-elevation 990
 end
 arch hills
+elevation 1131
 x 22
 y 21
-elevation 1131
 end
 arch hills
+elevation 1848
 x 22
 y 22
-elevation 1848
 end
 arch hills
+elevation 2953
 x 22
 y 23
-elevation 2953
 end
 arch hills
+elevation 4065
 x 22
 y 24
-elevation 4065
 end
 arch hills
+elevation 4659
 x 22
 y 25
-elevation 4659
 end
 arch hills_rocky
+elevation 4917
 x 22
 y 26
-elevation 4917
 end
 arch hills
+elevation 4558
 x 22
 y 27
-elevation 4558
 end
 arch mountain
+elevation 5198
 x 22
 y 28
-elevation 5198
 end
 arch mountain
+elevation 5125
 x 22
 y 29
-elevation 5125
 end
 arch hills
+elevation 4709
 x 22
 y 30
-elevation 4709
 end
 arch hills
+elevation 4118
 x 22
 y 31
-elevation 4118
 end
 arch mountain
+elevation 5290
 x 22
 y 32
-elevation 5290
 end
 arch mountain
+elevation 6526
 x 22
 y 33
-elevation 6526
 end
 arch mountain
+elevation 8315
 x 22
 y 34
-elevation 8315
 end
 arch hills
 x 22
@@ -5909,9 +5800,9 @@ x 22
 y 41
 end
 arch sea1
+no_pass 1
 x 22
 y 42
-no_pass 1
 end
 arch sea1
 x 22
@@ -5926,9 +5817,9 @@ x 22
 y 44
 end
 arch sea1
+no_pass 1
 x 22
 y 45
-no_pass 1
 end
 arch sea1
 x 22
@@ -5943,182 +5834,182 @@ x 22
 y 47
 end
 arch sea1
+no_pass 1
 x 22
 y 48
-no_pass 1
 end
 arch sea1
 x 22
 y 49
 end
 arch shallow_sea
-x 23
 elevation -47
+x 23
 end
 arch shallow_sea
+elevation -32
 x 23
 y 1
-elevation -32
 end
 arch shallow_sea
+elevation -20
 x 23
 y 2
-elevation -20
 end
 arch shallow_sea
+elevation -11
 x 23
 y 3
-elevation -11
 end
 arch shallow_sea
+elevation -6
 x 23
 y 4
-elevation -6
 end
 arch desert
+elevation 126
 x 23
 y 5
-elevation 126
 end
 arch hills
+elevation 1272
 x 23
 y 6
-elevation 1272
 end
 arch hills
+elevation 1992
 x 23
 y 7
-elevation 1992
 end
 arch hills
+elevation 1907
 x 23
 y 8
-elevation 1907
 end
 arch hills
+elevation 1939
 x 23
 y 9
-elevation 1939
 end
 arch hills
+elevation 1747
 x 23
 y 10
-elevation 1747
 end
 arch hills
+elevation 1633
 x 23
 y 11
-elevation 1633
 end
 arch hills
+elevation 1301
 x 23
 y 12
-elevation 1301
 end
 arch hills
+elevation 1359
 x 23
 y 13
-elevation 1359
 end
 arch hills
+elevation 1852
 x 23
 y 14
-elevation 1852
 end
 arch hills
+elevation 2552
 x 23
 y 15
-elevation 2552
 end
 arch hills
+elevation 2902
 x 23
 y 16
-elevation 2902
 end
 arch hills
+elevation 2823
 x 23
 y 17
-elevation 2823
 end
 arch hills
+elevation 2415
 x 23
 y 18
-elevation 2415
 end
 arch hills
+elevation 1810
 x 23
 y 19
-elevation 1810
 end
 arch hills
+elevation 1284
 x 23
 y 20
-elevation 1284
 end
 arch desert
+elevation 675
 x 23
 y 21
-elevation 675
 end
 arch hills
+elevation 1386
 x 23
 y 22
-elevation 1386
 end
 arch hills
+elevation 3594
 x 23
 y 23
-elevation 3594
 end
 arch hills
+elevation 4852
 x 23
 y 24
-elevation 4852
 end
 arch mountain
+elevation 5534
 x 23
 y 25
-elevation 5534
 end
 arch mountain
+elevation 5676
 x 23
 y 26
-elevation 5676
 end
 arch mountain
+elevation 5826
 x 23
 y 27
-elevation 5826
 end
 arch mountain
+elevation 5957
 x 23
 y 28
-elevation 5957
 end
 arch mountain
+elevation 6109
 x 23
 y 29
-elevation 6109
 end
 arch mountain
+elevation 5889
 x 23
 y 30
-elevation 5889
 end
 arch mountain
+elevation 5656
 x 23
 y 31
-elevation 5656
 end
 arch mountain
+elevation 6884
 x 23
 y 32
-elevation 6884
 end
 arch mountain
+elevation 7894
 x 23
 y 33
-elevation 7894
 end
 arch hills
 x 23
@@ -6205,172 +6096,172 @@ x 23
 y 49
 end
 arch shallow_sea
-x 24
 elevation -36
+x 24
 end
 arch shallow_sea
-x 24
-y 1
 elevation -26
+x 24
+y 1
 end
 arch shallow_sea
+elevation -18
 x 24
 y 2
-elevation -18
 end
 arch shallow_sea
-x 24
-y 3
 elevation -12
+x 24
+y 3
 end
 arch shallow_sea
+elevation -10
 x 24
 y 4
-elevation -10
 end
 arch shallow_sea
 x 24
 y 5
 end
 arch desert
-x 24
-y 6
 elevation 408
+x 24
+y 6
 end
 arch hills
-x 24
-y 7
 elevation 1278
+x 24
+y 7
 end
 arch hills
-x 24
-y 8
 elevation 2108
+x 24
+y 8
 end
 arch desert
-x 24
-y 9
 elevation 267
+x 24
+y 9
 end
 arch hills
-x 24
-y 10
 elevation 1191
+x 24
+y 10
 end
 arch hills
-x 24
-y 11
 elevation 1020
+x 24
+y 11
 end
 arch hills
-x 24
-y 12
 elevation 1806
+x 24
+y 12
 end
 arch desert
-x 24
-y 13
 elevation 710
+x 24
+y 13
 end
 arch hills
-x 24
-y 14
 elevation 1282
+x 24
+y 14
 end
 arch hills
-x 24
-y 15
 elevation 1563
+x 24
+y 15
 end
 arch hills
-x 24
-y 16
 elevation 1215
+x 24
+y 16
 end
 arch hills
-x 24
-y 17
 elevation 1827
+x 24
+y 17
 end
 arch hills
-x 24
-y 18
 elevation 1813
+x 24
+y 18
 end
 arch hills
-x 24
-y 19
 elevation 1500
+x 24
+y 19
 end
 arch desert
-x 24
-y 20
 elevation 996
+x 24
+y 20
 end
 arch desert
-x 24
-y 21
 elevation 398
+x 24
+y 21
 end
 arch hills
-x 24
-y 22
 elevation 1323
+x 24
+y 22
 end
 arch hills
-x 24
-y 23
 elevation 3069
+x 24
+y 23
 end
 arch hills
-x 24
-y 24
 elevation 4321
+x 24
+y 24
 end
 arch mountain
-x 24
-y 25
 elevation 5231
+x 24
+y 25
 end
 arch mountain
+elevation 5784
 x 24
 y 26
-elevation 5784
 end
 arch mountain
-x 24
-y 27
 elevation 5540
+x 24
+y 27
 end
 arch mountain
-x 24
-y 28
 elevation 5992
+x 24
+y 28
 end
 arch mountain
-x 24
-y 29
 elevation 6294
+x 24
+y 29
 end
 arch mountain
-x 24
-y 30
 elevation 6525
+x 24
+y 30
 end
 arch mountain
-x 24
-y 31
 elevation 7091
+x 24
+y 31
 end
 arch mountain
-x 24
-y 32
 elevation 7869
+x 24
+y 32
 end
 arch mountain
-x 24
-y 33
 elevation 8903
+x 24
+y 33
 end
 arch hills
 x 24
@@ -6437,168 +6328,168 @@ x 24
 y 49
 end
 arch shallow_sea
-x 25
 elevation -21
+x 25
 end
 arch shallow_sea
+elevation -18
 x 25
 y 1
-elevation -18
 end
 arch shallow_sea
-x 25
-y 2
 elevation -14
+x 25
+y 2
 end
 arch shallow_sea
+elevation -10
 x 25
 y 3
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 25
 y 4
-elevation -10
 end
 arch shallow_sea
+elevation -6
 x 25
 y 5
-elevation -6
 end
 arch desert
+elevation 63
 x 25
 y 6
-elevation 63
 end
 arch desert
-x 25
-y 7
 elevation 559
+x 25
+y 7
 end
 arch hills
-x 25
-y 8
 elevation 2934
+x 25
+y 8
 end
 arch hills
-x 25
-y 9
 elevation 3984
+x 25
+y 9
 end
 arch hills
-x 25
-y 10
 elevation 3990
+x 25
+y 10
 end
 arch hills
-x 25
-y 11
 elevation 3713
+x 25
+y 11
 end
 arch hills
-x 25
-y 12
 elevation 2560
+x 25
+y 12
 end
 arch desert
-x 25
-y 13
 elevation 67
+x 25
+y 13
 end
 arch desert
-x 25
-y 14
 elevation 266
+x 25
+y 14
 end
 arch desert
+elevation 45
 x 25
 y 15
-elevation 45
 end
 arch desert
-x 25
-y 16
 elevation 71
+x 25
+y 16
 end
 arch desert
-x 25
-y 17
 elevation 308
+x 25
+y 17
 end
 arch desert
-x 25
-y 18
 elevation 665
+x 25
+y 18
 end
 arch desert
-x 25
-y 19
 elevation 682
+x 25
+y 19
 end
 arch desert
-x 25
-y 20
 elevation 482
+x 25
+y 20
 end
 arch hills
-x 25
-y 21
 elevation 1514
+x 25
+y 21
 end
 arch hills
-x 25
-y 22
 elevation 2420
+x 25
+y 22
 end
 arch hills
-x 25
-y 23
 elevation 1961
+x 25
+y 23
 end
 arch hills
-x 25
-y 24
 elevation 1366
+x 25
+y 24
 end
 arch hills
-x 25
-y 25
 elevation 4940
+x 25
+y 25
 end
 arch mountain
-x 25
-y 26
 elevation 5865
+x 25
+y 26
 end
 arch mountain
-x 25
-y 27
 elevation 5177
+x 25
+y 27
 end
 arch mountain
-x 25
-y 28
 elevation 5411
+x 25
+y 28
 end
 arch mountain
-x 25
-y 29
 elevation 5304
+x 25
+y 29
 end
 arch mountain
-x 25
-y 30
 elevation 6449
+x 25
+y 30
 end
 arch mountain
-x 25
-y 31
 elevation 7208
+x 25
+y 31
 end
 arch mountain
-x 25
-y 32
 elevation 7968
+x 25
+y 32
 end
 arch hills
 x 25
@@ -6669,163 +6560,163 @@ x 25
 y 49
 end
 arch shallow_sea
-x 26
 elevation -8
+x 26
 end
 arch shallow_sea
+elevation -10
 x 26
 y 1
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 26
 y 2
-elevation -10
 end
 arch shallow_sea
+elevation -10
 x 26
 y 3
-elevation -10
 end
 arch shallow_sea
+elevation -2
 x 26
 y 4
-elevation -2
 end
 arch desert
+elevation 38
 x 26
 y 5
-elevation 38
 end
 arch desert
-x 26
-y 6
 elevation 63
+x 26
+y 6
 end
 arch hills
-x 26
-y 7
 elevation 1172
+x 26
+y 7
 end
 arch hills
-x 26
-y 8
 elevation 4488
+x 26
+y 8
 end
 arch mountain
-x 26
-y 9
 elevation 5899
+x 26
+y 9
 end
 arch mountain
-x 26
-y 10
 elevation 6136
+x 26
+y 10
 end
 arch mountain
-x 26
-y 11
 elevation 5501
+x 26
+y 11
 end
 arch hills
-x 26
-y 12
 elevation 3905
+x 26
+y 12
 end
 arch hills
-x 26
-y 13
 elevation 1271
+x 26
+y 13
 end
 arch desert
-x 26
-y 14
 elevation 247
+x 26
+y 14
 end
 arch desert
-x 26
-y 15
 elevation 215
+x 26
+y 15
 end
 arch desert
-x 26
-y 16
 elevation 118
+x 26
+y 16
 end
 arch desert
-x 26
-y 17
 elevation 55
+x 26
+y 17
 end
 arch desert
-x 26
-y 18
 elevation 637
+x 26
+y 18
 end
 arch desert
-x 26
-y 19
 elevation 617
+x 26
+y 19
 end
 arch desert
-x 26
-y 20
 elevation 356
+x 26
+y 20
 end
 arch hills
-x 26
-y 21
 elevation 1829
+x 26
+y 21
 end
 arch hills
-x 26
-y 22
 elevation 3217
+x 26
+y 22
 end
 arch hills
-x 26
-y 23
 elevation 3834
+x 26
+y 23
 end
 arch hills
-x 26
-y 24
 elevation 3362
+x 26
+y 24
 end
 arch mountain
-x 26
-y 25
 elevation 5443
+x 26
+y 25
 end
 arch mountain
-x 26
-y 26
 elevation 6432
+x 26
+y 26
 end
 arch mountain
-x 26
-y 27
 elevation 6075
+x 26
+y 27
 end
 arch hills
-x 26
-y 28
 elevation 3576
+x 26
+y 28
 end
 arch hills
-x 26
-y 29
 elevation 4257
+x 26
+y 29
 end
 arch mountain
-x 26
-y 30
 elevation 5821
+x 26
+y 30
 end
 arch mountain
-x 26
-y 31
 elevation 7033
+x 26
+y 31
 end
 arch hills
 x 26
@@ -6900,162 +6791,162 @@ x 26
 y 49
 end
 arch shallow_sea
-x 27
 elevation -4
+x 27
 end
 arch shallow_sea
 x 27
 y 1
 end
 arch shallow_sea
+elevation -10
 x 27
 y 2
-elevation -10
 end
 arch deep_swamp
-x 27
-y 3
 elevation 4
+x 27
+y 3
 end
 arch desert
-x 27
-y 4
 elevation 132
+x 27
+y 4
 end
 arch hills
-x 27
-y 5
 elevation 1035
+x 27
+y 5
 end
 arch hills
-x 27
-y 6
 elevation 2390
+x 27
+y 6
 end
 arch hills
-x 27
-y 7
 elevation 3917
+x 27
+y 7
 end
 arch mountain
-x 27
-y 8
 elevation 5504
+x 27
+y 8
 end
 arch mountain
-x 27
-y 9
 elevation 6699
+x 27
+y 9
 end
 arch mountain
-x 27
-y 10
 elevation 6944
+x 27
+y 10
 end
 arch mountain
-x 27
-y 11
 elevation 6401
+x 27
+y 11
 end
 arch mountain
-x 27
-y 12
 elevation 5199
+x 27
+y 12
 end
 arch hills
-x 27
-y 13
 elevation 3035
+x 27
+y 13
 end
 arch hills
-x 27
-y 14
 elevation 1256
+x 27
+y 14
 end
 arch desert
-x 27
-y 15
 elevation 120
+x 27
+y 15
 end
 arch desert
-x 27
-y 16
 elevation 188
+x 27
+y 16
 end
 arch desert
-x 27
-y 17
 elevation 222
+x 27
+y 17
 end
 arch desert
-x 27
-y 18
 elevation 465
+x 27
+y 18
 end
 arch hills
-x 27
-y 19
 elevation 1584
+x 27
+y 19
 end
 arch hills
-x 27
-y 20
 elevation 1123
+x 27
+y 20
 end
 arch hills
-x 27
-y 21
 elevation 1258
+x 27
+y 21
 end
 arch hills
-x 27
-y 22
 elevation 4302
+x 27
+y 22
 end
 arch mountain
-x 27
-y 23
 elevation 5039
+x 27
+y 23
 end
 arch mountain
-x 27
-y 24
 elevation 5505
+x 27
+y 24
 end
 arch mountain
-x 27
-y 25
 elevation 6053
+x 27
+y 25
 end
 arch mountain
+elevation 7407
 x 27
 y 26
-elevation 7407
 end
 arch mountain
-x 27
-y 27
 elevation 6966
+x 27
+y 27
 end
 arch mountain
-x 27
-y 28
 elevation 5309
+x 27
+y 28
 end
 arch mountain
-x 27
-y 29
 elevation 5197
+x 27
+y 29
 end
 arch mountain
-x 27
-y 30
 elevation 5591
+x 27
+y 30
 end
 arch mountain
-x 27
-y 31
 elevation 6262
+x 27
+y 31
 end
 arch hills
 x 27
@@ -7130,158 +7021,158 @@ x 27
 y 49
 end
 arch brush
-x 28
 elevation 774
+x 28
 end
 arch brush
+elevation 61
 x 28
 y 1
-elevation 61
 end
 arch shallow_sea
-x 28
-y 2
 elevation -5
+x 28
+y 2
 end
 arch desert
+elevation 27
 x 28
 y 3
-elevation 27
 end
 arch desert
-x 28
-y 4
 elevation 513
+x 28
+y 4
 end
 arch hills
-x 28
-y 5
 elevation 2132
+x 28
+y 5
 end
 arch hills
-x 28
-y 6
 elevation 3413
+x 28
+y 6
 end
 arch hills
-x 28
-y 7
 elevation 4528
+x 28
+y 7
 end
 arch mountain
-x 28
-y 8
 elevation 5728
+x 28
+y 8
 end
 arch mountain
+elevation 6628
 x 28
 y 9
-elevation 6628
 end
 arch mountain
-x 28
-y 10
 elevation 6625
+x 28
+y 10
 end
 arch mountain
-x 28
-y 11
 elevation 6381
+x 28
+y 11
 end
 arch mountain
-x 28
-y 12
 elevation 5776
+x 28
+y 12
 end
 arch mountain
-x 28
-y 13
 elevation 5043
+x 28
+y 13
 end
 arch hills
-x 28
-y 14
 elevation 4023
+x 28
+y 14
 end
 arch hills
-x 28
-y 15
 elevation 3315
+x 28
+y 15
 end
 arch hills
-x 28
-y 16
 elevation 2756
+x 28
+y 16
 end
 arch hills
-x 28
-y 17
 elevation 1165
+x 28
+y 17
 end
 arch hills
-x 28
-y 18
 elevation 1294
+x 28
+y 18
 end
 arch hills
-x 28
-y 19
 elevation 3049
+x 28
+y 19
 end
 arch hills
-x 28
-y 20
 elevation 3604
+x 28
+y 20
 end
 arch hills
-x 28
-y 21
 elevation 4270
+x 28
+y 21
 end
 arch hills
-x 28
-y 22
 elevation 4971
+x 28
+y 22
 end
 arch mountain
-x 28
-y 23
 elevation 5384
+x 28
+y 23
 end
 arch mountain
-x 28
-y 24
 elevation 5250
+x 28
+y 24
 end
 arch mountain
-x 28
-y 25
 elevation 6864
+x 28
+y 25
 end
 arch mountain
-x 28
-y 26
 elevation 8006
+x 28
+y 26
 end
 arch mountain
-x 28
-y 27
 elevation 7776
+x 28
+y 27
 end
 arch mountain
+elevation 6246
 x 28
 y 28
-elevation 6246
 end
 arch hills
-x 28
-y 29
 elevation 4697
+x 28
+y 29
 end
 arch hills
-x 28
-y 30
 elevation 4498
+x 28
+y 30
 end
 arch hills
 x 28
@@ -7360,168 +7251,168 @@ x 28
 y 49
 end
 arch evergreens
-x 29
 elevation 1774
+x 29
 end
 arch desert
-x 29
-y 1
 elevation 562
+x 29
+y 1
 end
 arch desert
-x 29
-y 2
 elevation 39
+x 29
+y 2
 end
 arch desert
-x 29
-y 3
 elevation 20
+x 29
+y 3
 end
 arch desert
-x 29
-y 4
 elevation 715
+x 29
+y 4
 end
 arch hills
-x 29
-y 5
 elevation 2470
+x 29
+y 5
 end
 arch hills
-x 29
-y 6
 elevation 3915
+x 29
+y 6
 end
 arch hills
-x 29
-y 7
 elevation 3382
+x 29
+y 7
 end
 arch hills
-x 29
-y 8
 elevation 4127
+x 29
+y 8
 end
 arch mountain
-x 29
-y 9
 elevation 7097
+x 29
+y 9
 end
 arch mountain
-x 29
-y 10
 elevation 6827
+x 29
+y 10
 end
 arch hills
-x 29
-y 11
 elevation 3968
+x 29
+y 11
 end
 arch mountain
-x 29
-y 12
 elevation 6169
+x 29
+y 12
 end
 arch mountain
-x 29
-y 13
 elevation 6137
+x 29
+y 13
 end
 arch mountain
-x 29
-y 14
 elevation 5693
+x 29
+y 14
 end
 arch mountain
-x 29
-y 15
 elevation 5391
+x 29
+y 15
 end
 arch mountain
-x 29
-y 16
 elevation 5018
+x 29
+y 16
 end
 arch hills
-x 29
-y 17
 elevation 4746
+x 29
+y 17
 end
 arch hills
-x 29
-y 18
 elevation 4720
+x 29
+y 18
 end
 arch hills
-x 29
-y 19
 elevation 4765
+x 29
+y 19
 end
 arch mountain
-x 29
-y 20
 elevation 5107
+x 29
+y 20
 end
 arch mountain
-x 29
-y 21
 elevation 5195
+x 29
+y 21
 end
 arch hills
-x 29
-y 22
 elevation 4907
+x 29
+y 22
 end
 arch hills
-x 29
-y 23
 elevation 4680
+x 29
+y 23
 end
 arch hills
-x 29
-y 24
 elevation 4306
+x 29
+y 24
 end
 arch mountain
-x 29
-y 25
 elevation 6628
+x 29
+y 25
 end
 arch mountain
-x 29
-y 26
 elevation 7819
+x 29
+y 26
 end
 arch mountain
-x 29
-y 27
 elevation 7510
+x 29
+y 27
 end
 arch mountain
-x 29
-y 28
 elevation 5672
+x 29
+y 28
 end
 arch tree
-x 29
-y 29
 elevation 2867
+x 29
+y 29
 end
 arch desert
-x 29
-y 30
 elevation 711
+x 29
+y 30
 end
 arch hills
-x 29
-y 31
 elevation 2823
+x 29
+y 31
 end
 arch hills
-x 29
-y 32
 elevation 2572
+x 29
+y 32
 end
 arch shallow_sea
 x 29
@@ -7592,168 +7483,168 @@ x 29
 y 49
 end
 arch hills
-x 30
 elevation 2126
+x 30
 end
 arch desert
-x 30
-y 1
 elevation 733
+x 30
+y 1
 end
 arch desert
-x 30
-y 2
 elevation 45
+x 30
+y 2
 end
 arch desert
+elevation 30
 x 30
 y 3
-elevation 30
 end
 arch desert
-x 30
-y 4
 elevation 299
+x 30
+y 4
 end
 arch hills
-x 30
-y 5
 elevation 1773
+x 30
+y 5
 end
 arch hills
-x 30
-y 6
 elevation 4929
+x 30
+y 6
 end
 arch mountain
-x 30
-y 7
 elevation 6508
+x 30
+y 7
 end
 arch mountain
-x 30
-y 8
 elevation 7631
+x 30
+y 8
 end
 arch mountain
-x 30
-y 9
 elevation 8151
+x 30
+y 9
 end
 arch mountain
-x 30
-y 10
 elevation 7705
+x 30
+y 10
 end
 arch mountain
-x 30
-y 11
 elevation 6529
+x 30
+y 11
 end
 arch mountain
-x 30
-y 12
 elevation 6459
+x 30
+y 12
 end
 arch mountain
-x 30
-y 13
 elevation 6431
+x 30
+y 13
 end
 arch mountain
-x 30
-y 14
 elevation 6266
+x 30
+y 14
 end
 arch mountain
-x 30
-y 15
 elevation 6246
+x 30
+y 15
 end
 arch mountain
-x 30
-y 16
 elevation 6348
+x 30
+y 16
 end
 arch mountain
-x 30
-y 17
 elevation 6419
+x 30
+y 17
 end
 arch mountain
-x 30
-y 18
 elevation 6178
+x 30
+y 18
 end
 arch mountain
-x 30
-y 19
 elevation 5835
+x 30
+y 19
 end
 arch mountain
-x 30
-y 20
 elevation 5468
+x 30
+y 20
 end
 arch hills
-x 30
-y 21
 elevation 4921
+x 30
+y 21
 end
 arch hills
-x 30
-y 22
 elevation 3903
+x 30
+y 22
 end
 arch hills
-x 30
-y 23
 elevation 2021
+x 30
+y 23
 end
 arch hills
-x 30
-y 24
 elevation 4121
+x 30
+y 24
 end
 arch mountain
-x 30
-y 25
 elevation 6041
+x 30
+y 25
 end
 arch mountain
-x 30
-y 26
 elevation 6700
+x 30
+y 26
 end
 arch mountain
-x 30
-y 27
 elevation 5988
+x 30
+y 27
 end
 arch hills
-x 30
-y 28
 elevation 3938
+x 30
+y 28
 end
 arch brush
-x 30
-y 29
 elevation 659
+x 30
+y 29
 end
 arch desert
-x 30
-y 30
 elevation 669
+x 30
+y 30
 end
 arch desert
-x 30
-y 31
 elevation 594
+x 30
+y 31
 end
 arch brush
-x 30
-y 32
 elevation 81
+x 30
+y 32
 end
 arch shallow_sea
 x 30
@@ -7824,168 +7715,168 @@ x 30
 y 49
 end
 arch hills
-x 31
 elevation 2605
+x 31
 end
 arch evergreens
-x 31
-y 1
 elevation 1096
+x 31
+y 1
 end
 arch desert
-x 31
-y 2
 elevation 763
+x 31
+y 2
 end
 arch desert
-x 31
-y 3
 elevation 347
+x 31
+y 3
 end
 arch desert
-x 31
-y 4
 elevation 969
+x 31
+y 4
 end
 arch hills
-x 31
-y 5
 elevation 4461
+x 31
+y 5
 end
 arch mountain
-x 31
-y 6
 elevation 6546
+x 31
+y 6
 end
 arch mountain
-x 31
-y 7
 elevation 8144
+x 31
+y 7
 end
 arch mountain2
-x 31
-y 8
 elevation 9080
+x 31
+y 8
 end
 arch mountain2
-x 31
-y 9
 elevation 9246
+x 31
+y 9
 end
 arch mountain
-x 31
-y 10
 elevation 8637
+x 31
+y 10
 end
 arch mountain
-x 31
-y 11
 elevation 7740
+x 31
+y 11
 end
 arch mountain
-x 31
-y 12
 elevation 6727
+x 31
+y 12
 end
 arch mountain
-x 31
-y 13
 elevation 5961
+x 31
+y 13
 end
 arch mountain
-x 31
-y 14
 elevation 5624
+x 31
+y 14
 end
 arch mountain
-x 31
-y 15
 elevation 5842
+x 31
+y 15
 end
 arch mountain
-x 31
-y 16
 elevation 6241
+x 31
+y 16
 end
 arch mountain
-x 31
-y 17
 elevation 6406
+x 31
+y 17
 end
 arch mountain
-x 31
-y 18
 elevation 6042
+x 31
+y 18
 end
 arch mountain
-x 31
-y 19
 elevation 5005
+x 31
+y 19
 end
 arch hills
+elevation 4906
 x 31
 y 20
-elevation 4906
 end
 arch hills
+elevation 3958
 x 31
 y 21
-elevation 3958
 end
 arch hills
-x 31
-y 22
 elevation 2091
+x 31
+y 22
 end
 arch desert
-x 31
-y 23
 elevation 867
+x 31
+y 23
 end
 arch hills
-x 31
-y 24
 elevation 3854
+x 31
+y 24
 end
 arch mountain
-x 31
-y 25
 elevation 5415
+x 31
+y 25
 end
 arch mountain
-x 31
-y 26
 elevation 5339
+x 31
+y 26
 end
 arch hills
-x 31
-y 27
 elevation 2894
+x 31
+y 27
 end
 arch tree
-x 31
-y 28
 elevation 2134
+x 31
+y 28
 end
 arch brush
-x 31
-y 29
 elevation 46
+x 31
+y 29
 end
 arch desert
-x 31
-y 30
 elevation 96
+x 31
+y 30
 end
 arch brush
-x 31
-y 31
 elevation 60
+x 31
+y 31
 end
 arch shallow_sea
+elevation -9
 x 31
 y 32
-elevation -9
 end
 arch shallow_sea
 x 31
@@ -8056,168 +7947,168 @@ x 31
 y 49
 end
 arch hills
-x 32
 elevation 3704
+x 32
 end
 arch hills_rocky
-x 32
-y 1
 elevation 3900
+x 32
+y 1
 end
 arch hills_rocky
-x 32
-y 2
 elevation 3808
+x 32
+y 2
 end
 arch hills
-x 32
-y 3
 elevation 4089
+x 32
+y 3
 end
 arch mountain
-x 32
-y 4
 elevation 5015
+x 32
+y 4
 end
 arch mountain
-x 32
-y 5
 elevation 6315
+x 32
+y 5
 end
 arch mountain
-x 32
-y 6
 elevation 7751
+x 32
+y 6
 end
 arch mountain
-x 32
-y 7
 elevation 8545
+x 32
+y 7
 end
 arch mountain
-x 32
-y 8
 elevation 8828
+x 32
+y 8
 end
 arch mountain
-x 32
-y 9
 elevation 8881
+x 32
+y 9
 end
 arch mountain
-x 32
-y 10
 elevation 8707
+x 32
+y 10
 end
 arch mountain
-x 32
-y 11
 elevation 7721
+x 32
+y 11
 end
 arch mountain
-x 32
-y 12
 elevation 6888
+x 32
+y 12
 end
 arch hills
-x 32
-y 13
 elevation 4686
+x 32
+y 13
 end
 arch hills
-x 32
-y 14
 elevation 2988
+x 32
+y 14
 end
 arch hills
-x 32
-y 15
 elevation 4964
+x 32
+y 15
 end
 arch mountain
-x 32
-y 16
 elevation 5707
+x 32
+y 16
 end
 arch mountain
-x 32
-y 17
 elevation 5204
+x 32
+y 17
 end
 arch mountain
-x 32
-y 18
 elevation 5004
+x 32
+y 18
 end
 arch hills
-x 32
-y 19
 elevation 3719
+x 32
+y 19
 end
 arch hills
-x 32
-y 20
 elevation 3563
+x 32
+y 20
 end
 arch hills
-x 32
-y 21
 elevation 2929
+x 32
+y 21
 end
 arch desert
-x 32
-y 22
 elevation 453
+x 32
+y 22
 end
 arch hills
-x 32
-y 23
 elevation 1161
+x 32
+y 23
 end
 arch hills_rocky
-x 32
-y 24
 elevation 3344
+x 32
+y 24
 end
 arch hills
-x 32
-y 25
 elevation 4460
+x 32
+y 25
 end
 arch hills
-x 32
-y 26
 elevation 4057
+x 32
+y 26
 end
 arch hills
-x 32
-y 27
 elevation 2399
+x 32
+y 27
 end
 arch desert
-x 32
-y 28
 elevation 330
+x 32
+y 28
 end
 arch desert
-x 32
-y 29
 elevation 130
+x 32
+y 29
 end
 arch brush
-x 32
-y 30
 elevation 54
+x 32
+y 30
 end
 arch shallow_sea
+elevation -10
 x 32
 y 31
-elevation -10
 end
 arch shallow_sea
-x 32
-y 32
 elevation -13
+x 32
+y 32
 end
 arch sea
 x 32
@@ -8288,168 +8179,168 @@ x 32
 y 49
 end
 arch mountain
-x 33
 elevation 5189
+x 33
 end
 arch mountain
-x 33
-y 1
 elevation 5635
+x 33
+y 1
 end
 arch mountain
-x 33
-y 2
 elevation 5485
+x 33
+y 2
 end
 arch mountain
-x 33
-y 3
 elevation 6107
+x 33
+y 3
 end
 arch mountain
-x 33
-y 4
 elevation 6705
+x 33
+y 4
 end
 arch mountain
-x 33
-y 5
 elevation 7442
+x 33
+y 5
 end
 arch mountain
-x 33
-y 6
 elevation 8237
+x 33
+y 6
 end
 arch mountain
-x 33
-y 7
 elevation 8510
+x 33
+y 7
 end
 arch mountain
-x 33
-y 8
 elevation 7195
+x 33
+y 8
 end
 arch mountain
-x 33
-y 9
 elevation 7324
+x 33
+y 9
 end
 arch mountain
-x 33
-y 10
 elevation 8563
+x 33
+y 10
 end
 arch mountain
-x 33
-y 11
 elevation 8155
+x 33
+y 11
 end
 arch mountain
-x 33
-y 12
 elevation 6894
+x 33
+y 12
 end
 arch mountain
-x 33
-y 13
 elevation 5704
+x 33
+y 13
 end
 arch mountain
-x 33
-y 14
 elevation 5233
+x 33
+y 14
 end
 arch mountain
-x 33
-y 15
 elevation 5423
+x 33
+y 15
 end
 arch mountain
-x 33
-y 16
 elevation 5641
+x 33
+y 16
 end
 arch mountain
-x 33
-y 17
 elevation 5260
+x 33
+y 17
 end
 arch hills
-x 33
-y 18
 elevation 3866
+x 33
+y 18
 end
 arch hills
-x 33
-y 19
 elevation 1113
+x 33
+y 19
 end
 arch hills
-x 33
-y 20
 elevation 2063
+x 33
+y 20
 end
 arch hills
-x 33
-y 21
 elevation 1981
+x 33
+y 21
 end
 arch hills
+elevation 1535
 x 33
 y 22
-elevation 1535
 end
 arch hills
-x 33
-y 23
 elevation 1677
+x 33
+y 23
 end
 arch tree
-x 33
-y 24
 elevation 2524
+x 33
+y 24
 end
 arch hills
-x 33
-y 25
 elevation 3014
+x 33
+y 25
 end
 arch hills
-x 33
-y 26
 elevation 2909
+x 33
+y 26
 end
 arch tree
-x 33
-y 27
 elevation 2487
+x 33
+y 27
 end
 arch tree
-x 33
-y 28
 elevation 1956
+x 33
+y 28
 end
 arch brush
-x 33
-y 29
 elevation 934
+x 33
+y 29
 end
 arch brush
-x 33
-y 30
 elevation 19
+x 33
+y 30
 end
 arch shallow_sea
-x 33
-y 31
 elevation -18
+x 33
+y 31
 end
 arch shallow_sea
-x 33
-y 32
 elevation -51
+x 33
+y 32
 end
 arch sea
 x 33
@@ -8520,168 +8411,168 @@ x 33
 y 49
 end
 arch mountain
-x 34
 elevation 6385
+x 34
 end
 arch mountain
-x 34
-y 1
 elevation 6571
+x 34
+y 1
 end
 arch mountain
-x 34
-y 2
 elevation 6534
+x 34
+y 2
 end
 arch mountain
-x 34
-y 3
 elevation 6453
+x 34
+y 3
 end
 arch mountain
-x 34
-y 4
 elevation 6784
+x 34
+y 4
 end
 arch mountain
-x 34
-y 5
 elevation 7461
+x 34
+y 5
 end
 arch mountain
-x 34
-y 6
 elevation 8271
+x 34
+y 6
 end
 arch mountain
-x 34
-y 7
 elevation 8260
+x 34
+y 7
 end
 arch mountain
+elevation 8071
 x 34
 y 8
-elevation 8071
 end
 arch mountain
-x 34
-y 9
 elevation 8184
+x 34
+y 9
 end
 arch mountain
-x 34
-y 10
 elevation 8521
+x 34
+y 10
 end
 arch mountain
-x 34
-y 11
 elevation 8145
+x 34
+y 11
 end
 arch mountain
-x 34
-y 12
 elevation 6890
+x 34
+y 12
 end
 arch mountain
-x 34
-y 13
 elevation 5526
+x 34
+y 13
 end
 arch mountain
-x 34
-y 14
 elevation 5530
+x 34
+y 14
 end
 arch mountain
-x 34
-y 15
 elevation 5696
+x 34
+y 15
 end
 arch mountain
-x 34
-y 16
 elevation 5535
+x 34
+y 16
 end
 arch hills
-x 34
-y 17
 elevation 4709
+x 34
+y 17
 end
 arch hills
-x 34
-y 18
 elevation 3052
+x 34
+y 18
 end
 arch desert
-x 34
-y 19
 elevation 477
+x 34
+y 19
 end
 arch desert
-x 34
-y 20
 elevation 38
+x 34
+y 20
 end
 arch hills
-x 34
-y 21
 elevation 1045
+x 34
+y 21
 end
 arch hills
-x 34
-y 22
 elevation 1351
+x 34
+y 22
 end
 arch hills
-x 34
-y 23
 elevation 1136
+x 34
+y 23
 end
 arch desert
-x 34
-y 24
 elevation 782
+x 34
+y 24
 end
 arch hills
-x 34
-y 25
 elevation 1325
+x 34
+y 25
 end
 arch hills
-x 34
-y 26
 elevation 1301
+x 34
+y 26
 end
 arch tree
-x 34
-y 27
 elevation 1883
+x 34
+y 27
 end
 arch hills
-x 34
-y 28
 elevation 2394
+x 34
+y 28
 end
 arch hills
-x 34
-y 29
 elevation 1742
+x 34
+y 29
 end
 arch brush
-x 34
-y 30
 elevation 41
+x 34
+y 30
 end
 arch shallow_sea
-x 34
-y 31
 elevation -67
+x 34
+y 31
 end
 arch sea
-x 34
-y 32
 elevation -116
+x 34
+y 32
 end
 arch sea
 x 34
@@ -8752,168 +8643,168 @@ x 34
 y 49
 end
 arch mountain
-x 35
 elevation 7183
+x 35
 end
 arch mountain
-x 35
-y 1
 elevation 6831
+x 35
+y 1
 end
 arch mountain
-x 35
-y 2
 elevation 6573
+x 35
+y 2
 end
 arch mountain
-x 35
-y 3
 elevation 6031
+x 35
+y 3
 end
 arch hills
-x 35
-y 4
 elevation 4757
+x 35
+y 4
 end
 arch mountain
-x 35
-y 5
 elevation 6918
+x 35
+y 5
 end
 arch mountain
-x 35
-y 6
 elevation 7865
+x 35
+y 6
 end
 arch mountain
-x 35
-y 7
 elevation 7997
+x 35
+y 7
 end
 arch mountain
-x 35
-y 8
 elevation 6883
+x 35
+y 8
 end
 arch mountain
-x 35
-y 9
 elevation 8069
+x 35
+y 9
 end
 arch mountain
-x 35
-y 10
 elevation 8386
+x 35
+y 10
 end
 arch mountain
-x 35
-y 11
 elevation 7488
+x 35
+y 11
 end
 arch mountain
-x 35
-y 12
 elevation 6078
+x 35
+y 12
 end
 arch hills
+elevation 4796
 x 35
 y 13
-elevation 4796
 end
 arch hills
-x 35
-y 14
 elevation 4991
+x 35
+y 14
 end
 arch mountain
-x 35
-y 15
 elevation 5203
+x 35
+y 15
 end
 arch hills
-x 35
-y 16
 elevation 4796
+x 35
+y 16
 end
 arch hills
-x 35
-y 17
 elevation 3760
+x 35
+y 17
 end
 arch hills
-x 35
-y 18
 elevation 2094
+x 35
+y 18
 end
 arch desert
-x 35
-y 19
 elevation 332
+x 35
+y 19
 end
 arch desert
-x 35
-y 20
 elevation 12
+x 35
+y 20
 end
 arch shallow_sea
+elevation -8
 x 35
 y 21
-elevation -8
 end
 arch desert
-x 35
-y 22
 elevation 167
+x 35
+y 22
 end
 arch shallow_sea
+elevation -10
 x 35
 y 23
-elevation -10
 end
 arch shallow_sea
+elevation -8
 x 35
 y 24
-elevation -8
 end
 arch desert
-x 35
-y 25
 elevation 34
+x 35
+y 25
 end
 arch desert
-x 35
-y 26
 elevation 273
+x 35
+y 26
 end
 arch tree
-x 35
-y 27
 elevation 1178
+x 35
+y 27
 end
 arch tree
-x 35
-y 28
 elevation 1733
+x 35
+y 28
 end
 arch hills
-x 35
-y 29
 elevation 1175
+x 35
+y 29
 end
 arch deep_swamp
-x 35
-y 30
 elevation 2
+x 35
+y 30
 end
 arch sea
-x 35
-y 31
 elevation -176
+x 35
+y 31
 end
 arch sea
-x 35
-y 32
 elevation -236
+x 35
+y 32
 end
 arch sea
 x 35
@@ -8984,168 +8875,168 @@ x 35
 y 49
 end
 arch mountain
-x 36
 elevation 7564
+x 36
 end
 arch mountain
-x 36
-y 1
 elevation 6310
+x 36
+y 1
 end
 arch mountain
-x 36
-y 2
 elevation 7066
+x 36
+y 2
 end
 arch mountain
-x 36
-y 3
 elevation 6779
+x 36
+y 3
 end
 arch mountain
-x 36
-y 4
 elevation 5363
+x 36
+y 4
 end
 arch mountain
-x 36
-y 5
 elevation 5112
+x 36
+y 5
 end
 arch mountain
-x 36
-y 6
 elevation 7606
+x 36
+y 6
 end
 arch mountain
-x 36
-y 7
 elevation 7540
+x 36
+y 7
 end
 arch mountain
-x 36
-y 8
 elevation 6108
+x 36
+y 8
 end
 arch mountain
-x 36
-y 9
 elevation 7396
+x 36
+y 9
 end
 arch mountain
-x 36
-y 10
 elevation 7544
+x 36
+y 10
 end
 arch mountain
-x 36
-y 11
 elevation 6447
+x 36
+y 11
 end
 arch hills
-x 36
-y 12
 elevation 3620
+x 36
+y 12
 end
 arch hills
-x 36
-y 13
 elevation 3659
+x 36
+y 13
 end
 arch hills
-x 36
-y 14
 elevation 4404
+x 36
+y 14
 end
 arch hills
-x 36
-y 15
 elevation 4315
+x 36
+y 15
 end
 arch hills_rocky
-x 36
-y 16
 elevation 3682
+x 36
+y 16
 end
 arch tree
-x 36
-y 17
 elevation 2444
+x 36
+y 17
 end
 arch desert
-x 36
-y 18
 elevation 876
+x 36
+y 18
 end
 arch brush
-x 36
-y 19
 elevation 27
+x 36
+y 19
 end
 arch shallow_sea
-x 36
-y 20
 elevation -23
+x 36
+y 20
 end
 arch sea
-x 36
-y 21
 elevation -105
+x 36
+y 21
 end
 arch sea
-x 36
-y 22
 elevation -161
+x 36
+y 22
 end
 arch sea
-x 36
-y 23
 elevation -204
+x 36
+y 23
 end
 arch sea
-x 36
-y 24
 elevation -241
+x 36
+y 24
 end
 arch sea
-x 36
-y 25
 elevation -200
+x 36
+y 25
 end
 arch shallow_sea
-x 36
-y 26
 elevation -43
+x 36
+y 26
 end
 arch shallow_sea
-x 36
-y 27
 elevation -4
+x 36
+y 27
 end
 arch desert
-x 36
-y 28
 elevation 30
+x 36
+y 28
 end
 arch shallow_sea
+elevation -6
 x 36
 y 29
-elevation -6
 end
 arch sea
-x 36
-y 30
 elevation -182
+x 36
+y 30
 end
 arch sea
-x 36
-y 31
 elevation -402
+x 36
+y 31
 end
 arch sea
-x 36
-y 32
 elevation -434
+x 36
+y 32
 end
 arch sea
 x 36
@@ -9216,168 +9107,168 @@ x 36
 y 49
 end
 arch mountain
-x 37
 elevation 7413
+x 37
 end
 arch mountain
-x 37
-y 1
 elevation 7353
+x 37
+y 1
 end
 arch mountain
-x 37
-y 2
 elevation 7640
+x 37
+y 2
 end
 arch mountain
-x 37
-y 3
 elevation 7882
+x 37
+y 3
 end
 arch mountain
-x 37
-y 4
 elevation 7608
+x 37
+y 4
 end
 arch mountain
-x 37
-y 5
 elevation 7317
+x 37
+y 5
 end
 arch mountain
-x 37
-y 6
 elevation 7335
+x 37
+y 6
 end
 arch mountain
-x 37
-y 7
 elevation 7067
+x 37
+y 7
 end
 arch mountain
-x 37
-y 8
 elevation 6047
+x 37
+y 8
 end
 arch mountain
-x 37
-y 9
 elevation 6619
+x 37
+y 9
 end
 arch mountain
-x 37
-y 10
 elevation 6343
+x 37
+y 10
 end
 arch hills
-x 37
-y 11
 elevation 4874
+x 37
+y 11
 end
 arch hills
-x 37
-y 12
 elevation 3982
+x 37
+y 12
 end
 arch hills
-x 37
-y 13
 elevation 3684
+x 37
+y 13
 end
 arch hills
-x 37
-y 14
 elevation 3688
+x 37
+y 14
 end
 arch hills
-x 37
-y 15
 elevation 3416
+x 37
+y 15
 end
 arch tree
-x 37
-y 16
 elevation 2381
+x 37
+y 16
 end
 arch tree
-x 37
-y 17
 elevation 1192
+x 37
+y 17
 end
 arch deep_swamp
-x 37
-y 18
 elevation 9
+x 37
+y 18
 end
 arch shallow_sea
+elevation -8
 x 37
 y 19
-elevation -8
 end
 arch sea
+elevation -163
 x 37
 y 20
-elevation -163
 end
 arch sea
+elevation -275
 x 37
 y 21
-elevation -275
 end
 arch sea
+elevation -377
 x 37
 y 22
-elevation -377
 end
 arch sea
+elevation -462
 x 37
 y 23
-elevation -462
 end
 arch sea
+elevation -520
 x 37
 y 24
-elevation -520
 end
 arch sea
+elevation -538
 x 37
 y 25
-elevation -538
 end
 arch sea
+elevation -534
 x 37
 y 26
-elevation -534
 end
 arch sea
+elevation -527
 x 37
 y 27
-elevation -527
 end
 arch sea
+elevation -547
 x 37
 y 28
-elevation -547
 end
 arch sea
+elevation -601
 x 37
 y 29
-elevation -601
 end
 arch sea
+elevation -684
 x 37
 y 30
-elevation -684
 end
 arch sea
+elevation -744
 x 37
 y 31
-elevation -744
 end
 arch sea
+elevation -725
 x 37
 y 32
-elevation -725
 end
 arch sea
 x 37
@@ -9448,168 +9339,168 @@ x 37
 y 49
 end
 arch mountain
-x 38
 elevation 6871
+x 38
 end
 arch mountain
+elevation 6967
 x 38
 y 1
-elevation 6967
 end
 arch mountain
+elevation 8210
 x 38
 y 2
-elevation 8210
 end
 arch mountain
+elevation 8683
 x 38
 y 3
-elevation 8683
 end
 arch mountain
+elevation 8491
 x 38
 y 4
-elevation 8491
 end
 arch mountain
+elevation 7703
 x 38
 y 5
-elevation 7703
 end
 arch mountain
+elevation 6693
 x 38
 y 6
-elevation 6693
 end
 arch mountain
+elevation 5857
 x 38
 y 7
-elevation 5857
 end
 arch mountain
+elevation 5844
 x 38
 y 8
-elevation 5844
 end
 arch mountain
+elevation 5999
 x 38
 y 9
-elevation 5999
 end
 arch mountain
+elevation 5604
 x 38
 y 10
-elevation 5604
 end
 arch hills
+elevation 3123
 x 38
 y 11
-elevation 3123
 end
 arch tree
+elevation 2777
 x 38
 y 12
-elevation 2777
 end
 arch hills
+elevation 3197
 x 38
 y 13
-elevation 3197
 end
 arch hills
+elevation 3148
 x 38
 y 14
-elevation 3148
 end
 arch hills
+elevation 2530
 x 38
 y 15
-elevation 2530
 end
 arch hills
+elevation 1535
 x 38
 y 16
-elevation 1535
 end
 arch grass
+elevation 61
 x 38
 y 17
-elevation 61
 end
 arch shallow_sea
+elevation -10
 x 38
 y 18
-elevation -10
 end
 arch sea
+elevation -156
 x 38
 y 19
-elevation -156
 end
 arch sea
+elevation -297
 x 38
 y 20
-elevation -297
 end
 arch sea
+elevation -452
 x 38
 y 21
-elevation -452
 end
 arch sea
+elevation -596
 x 38
 y 22
-elevation -596
 end
 arch sea
+elevation -724
 x 38
 y 23
-elevation -724
 end
 arch sea
+elevation -829
 x 38
 y 24
-elevation -829
 end
 arch sea
+elevation -910
 x 38
 y 25
-elevation -910
 end
 arch sea
+elevation -971
 x 38
 y 26
-elevation -971
 end
 arch sea
+elevation -1023
 x 38
 y 27
-elevation -1023
 end
 arch sea
+elevation -1075
 x 38
 y 28
-elevation -1075
 end
 arch sea
+elevation -1128
 x 38
 y 29
-elevation -1128
 end
 arch sea
+elevation -1170
 x 38
 y 30
-elevation -1170
 end
 arch sea
+elevation -1174
 x 38
 y 31
-elevation -1174
 end
 arch sea
+elevation -1105
 x 38
 y 32
-elevation -1105
 end
 arch sea
 x 38
@@ -9680,168 +9571,168 @@ x 38
 y 49
 end
 arch mountain
-x 39
 elevation 5454
+x 39
 end
 arch mountain
+elevation 7963
 x 39
 y 1
-elevation 7963
 end
 arch mountain
+elevation 8806
 x 39
 y 2
-elevation 8806
 end
 arch mountain
+elevation 8800
 x 39
 y 3
-elevation 8800
 end
 arch mountain
+elevation 8874
 x 39
 y 4
-elevation 8874
 end
 arch mountain
+elevation 7281
 x 39
 y 5
-elevation 7281
 end
 arch hills
+elevation 4580
 x 39
 y 6
-elevation 4580
 end
 arch hills
+elevation 3741
 x 39
 y 7
-elevation 3741
 end
 arch hills
+elevation 3488
 x 39
 y 8
-elevation 3488
 end
 arch mountain
+elevation 6013
 x 39
 y 9
-elevation 6013
 end
 arch mountain
+elevation 5555
 x 39
 y 10
-elevation 5555
 end
 arch hills
+elevation 4142
 x 39
 y 11
-elevation 4142
 end
 arch hills
+elevation 2131
 x 39
 y 12
-elevation 2131
 end
 arch hills
+elevation 3034
 x 39
 y 13
-elevation 3034
 end
 arch hills
+elevation 2305
 x 39
 y 14
-elevation 2305
 end
 arch woods_3
+elevation 2105
 x 39
 y 15
-elevation 2105
 end
 arch desert
+elevation 212
 x 39
 y 16
-elevation 212
 end
 arch grass
+elevation 37
 x 39
 y 17
-elevation 37
 end
 arch shallow_sea
+elevation -93
 x 39
 y 18
-elevation -93
 end
 arch sea
+elevation -247
 x 39
 y 19
-elevation -247
 end
 arch sea
+elevation -430
 x 39
 y 20
-elevation -430
 end
 arch sea
+elevation -621
 x 39
 y 21
-elevation -621
 end
 arch sea
+elevation -809
 x 39
 y 22
-elevation -809
 end
 arch sea
+elevation -984
 x 39
 y 23
-elevation -984
 end
 arch sea
+elevation -1139
 x 39
 y 24
-elevation -1139
 end
 arch sea
+elevation -1273
 x 39
 y 25
-elevation -1273
 end
 arch sea
+elevation -1387
 x 39
 y 26
-elevation -1387
 end
 arch sea
+elevation -1483
 x 39
 y 27
-elevation -1483
 end
 arch sea
+elevation -1563
 x 39
 y 28
-elevation -1563
 end
 arch sea
+elevation -1625
 x 39
 y 29
-elevation -1625
 end
 arch sea
+elevation -1657
 x 39
 y 30
-elevation -1657
 end
 arch sea
+elevation -1641
 x 39
 y 31
-elevation -1641
 end
 arch sea
+elevation -1557
 x 39
 y 32
-elevation -1557
 end
 arch sea
 x 39
@@ -9912,167 +9803,167 @@ x 39
 y 49
 end
 arch mountain
-x 40
 elevation 7858
+x 40
 end
 arch mountain2
+elevation 9111
 x 40
 y 1
-elevation 9111
 end
 arch mountain2
+elevation 9729
 x 40
 y 2
-elevation 9729
 end
 arch mountain2
+elevation 9637
 x 40
 y 3
-elevation 9637
 end
 arch mountain2
+elevation 9099
 x 40
 y 4
-elevation 9099
 end
 arch mountain
+elevation 8086
 x 40
 y 5
-elevation 8086
 end
 arch mountain
+elevation 6931
 x 40
 y 6
-elevation 6931
 end
 arch mountain
+elevation 6086
 x 40
 y 7
-elevation 6086
 end
 arch mountain
+elevation 6174
 x 40
 y 8
-elevation 6174
 end
 arch mountain
+elevation 6223
 x 40
 y 9
-elevation 6223
 end
 arch mountain
+elevation 5784
 x 40
 y 10
-elevation 5784
 end
 arch hills
+elevation 4756
 x 40
 y 11
-elevation 4756
 end
 arch hills
+elevation 4062
 x 40
 y 12
-elevation 4062
 end
 arch hills
+elevation 3526
 x 40
 y 13
-elevation 3526
 end
 arch hills
+elevation 3123
 x 40
 y 14
-elevation 3123
 end
 arch hills
+elevation 2226
 x 40
 y 15
-elevation 2226
 end
 arch brush
+elevation 956
 x 40
 y 16
-elevation 956
 end
 arch shallow_sea
 x 40
 y 17
 end
 arch sea
+elevation -124
 x 40
 y 18
-elevation -124
 end
 arch sea
+elevation -307
 x 40
 y 19
-elevation -307
 end
 arch sea
+elevation -539
 x 40
 y 20
-elevation -539
 end
 arch sea
+elevation -777
 x 40
 y 21
-elevation -777
 end
 arch sea
+elevation -1010
 x 40
 y 22
-elevation -1010
 end
 arch sea
+elevation -1231
 x 40
 y 23
-elevation -1231
 end
 arch sea
+elevation -1434
 x 40
 y 24
-elevation -1434
 end
 arch sea
+elevation -1616
 x 40
 y 25
-elevation -1616
 end
 arch sea
+elevation -1775
 x 40
 y 26
-elevation -1775
 end
 arch sea
+elevation -1910
 x 40
 y 27
-elevation -1910
 end
 arch sea
+elevation -2020
 x 40
 y 28
-elevation -2020
 end
 arch sea
+elevation -2099
 x 40
 y 29
-elevation -2099
 end
 arch sea
+elevation -2138
 x 40
 y 30
-elevation -2138
 end
 arch sea
+elevation -2128
 x 40
 y 31
-elevation -2128
 end
 arch sea
+elevation -2053
 x 40
 y 32
-elevation -2053
 end
 arch sea
 x 40
@@ -10143,168 +10034,168 @@ x 40
 y 49
 end
 arch mountain2
-x 41
 elevation 9578
+x 41
 end
 arch mountain2
+elevation 10168
 x 41
 y 1
-elevation 10168
 end
 arch mountain2
+elevation 10290
 x 41
 y 2
-elevation 10290
 end
 arch mountain2
+elevation 9807
 x 41
 y 3
-elevation 9807
 end
 arch mountain
+elevation 8391
 x 41
 y 4
-elevation 8391
 end
 arch mountain
+elevation 8784
 x 41
 y 5
-elevation 8784
 end
 arch mountain
+elevation 7589
 x 41
 y 6
-elevation 7589
 end
 arch mountain
+elevation 7046
 x 41
 y 7
-elevation 7046
 end
 arch mountain
+elevation 7291
 x 41
 y 8
-elevation 7291
 end
 arch mountain
+elevation 6566
 x 41
 y 9
-elevation 6566
 end
 arch hills
+elevation 4906
 x 41
 y 10
-elevation 4906
 end
 arch hills
+elevation 4836
 x 41
 y 11
-elevation 4836
 end
 arch hills
+elevation 4500
 x 41
 y 12
-elevation 4500
 end
 arch hills
+elevation 4068
 x 41
 y 13
-elevation 4068
 end
 arch hills
+elevation 3662
 x 41
 y 14
-elevation 3662
 end
 arch woods_3
+elevation 2884
 x 41
 y 15
-elevation 2884
 end
 arch hills
+elevation 1572
 x 41
 y 16
-elevation 1572
 end
 arch shallow_sea
+elevation -6
 x 41
 y 17
-elevation -6
 end
 arch shallow_sea
+elevation -28
 x 41
 y 18
-elevation -28
 end
 arch sea
+elevation -339
 x 41
 y 19
-elevation -339
 end
 arch sea
+elevation -626
 x 41
 y 20
-elevation -626
 end
 arch sea
+elevation -912
 x 41
 y 21
-elevation -912
 end
 arch sea
+elevation -1191
 x 41
 y 22
-elevation -1191
 end
 arch sea
+elevation -1456
 x 41
 y 23
-elevation -1456
 end
 arch sea
+elevation -1704
 x 41
 y 24
-elevation -1704
 end
 arch sea
+elevation -1930
 x 41
 y 25
-elevation -1930
 end
 arch sea
+elevation -2132
 x 41
 y 26
-elevation -2132
 end
 arch sea
+elevation -2304
 x 41
 y 27
-elevation -2304
 end
 arch sea
+elevation -2445
 x 41
 y 28
-elevation -2445
 end
 arch sea
+elevation -2548
 x 41
 y 29
-elevation -2548
 end
 arch sea
+elevation -2607
 x 41
 y 30
-elevation -2607
 end
 arch sea
+elevation -2616
 x 41
 y 31
-elevation -2616
 end
 arch sea
+elevation -2567
 x 41
 y 32
-elevation -2567
 end
 arch sea
 x 41
@@ -10375,168 +10266,168 @@ x 41
 y 49
 end
 arch mountain2
-x 42
 elevation 10105
+x 42
 end
 arch mountain2
+elevation 10341
 x 42
 y 1
-elevation 10341
 end
 arch mountain2
+elevation 10447
 x 42
 y 2
-elevation 10447
 end
 arch mountain
+elevation 8844
 x 42
 y 3
-elevation 8844
 end
 arch mountain2
+elevation 9191
 x 42
 y 4
-elevation 9191
 end
 arch mountain
+elevation 8790
 x 42
 y 5
-elevation 8790
 end
 arch mountain
+elevation 8435
 x 42
 y 6
-elevation 8435
 end
 arch mountain
+elevation 8083
 x 42
 y 7
-elevation 8083
 end
 arch mountain
+elevation 7523
 x 42
 y 8
-elevation 7523
 end
 arch mountain
+elevation 6410
 x 42
 y 9
-elevation 6410
 end
 arch hills
+elevation 4303
 x 42
 y 10
-elevation 4303
 end
 arch hills
+elevation 4551
 x 42
 y 11
-elevation 4551
 end
 arch hills
+elevation 3958
 x 42
 y 12
-elevation 3958
 end
 arch hills
+elevation 4305
 x 42
 y 13
-elevation 4305
 end
 arch hills
+elevation 4035
 x 42
 y 14
-elevation 4035
 end
 arch hills
+elevation 3403
 x 42
 y 15
-elevation 3403
 end
 arch tree
+elevation 2500
 x 42
 y 16
-elevation 2500
 end
 arch desert
+elevation 921
 x 42
 y 17
-elevation 921
 end
 arch shallow_sea
+elevation -9
 x 42
 y 18
-elevation -9
 end
 arch sea
+elevation -355
 x 42
 y 19
-elevation -355
 end
 arch sea
+elevation -694
 x 42
 y 20
-elevation -694
 end
 arch sea
+elevation -1024
 x 42
 y 21
-elevation -1024
 end
 arch sea
+elevation -1345
 x 42
 y 22
-elevation -1345
 end
 arch sea
+elevation -1652
 x 42
 y 23
-elevation -1652
 end
 arch sea
+elevation -1942
 x 42
 y 24
-elevation -1942
 end
 arch sea
+elevation -2209
 x 42
 y 25
-elevation -2209
 end
 arch sea
+elevation -2450
 x 42
 y 26
-elevation -2450
 end
 arch sea
+elevation -2660
 x 42
 y 27
-elevation -2660
 end
 arch sea
+elevation -2833
 x 42
 y 28
-elevation -2833
 end
 arch sea
+elevation -2965
 x 42
 y 29
-elevation -2965
 end
 arch sea
+elevation -3052
 x 42
 y 30
-elevation -3052
 end
 arch sea
+elevation -3088
 x 42
 y 31
-elevation -3088
 end
 arch sea
+elevation -3072
 x 42
 y 32
-elevation -3072
 end
 arch sea
 x 42
@@ -10607,1744 +10498,1856 @@ x 42
 y 49
 end
 arch mountain
-x 43
 elevation 7524
+x 43
 end
 arch mountain2
+elevation 10146
 x 43
 y 1
-elevation 10146
 end
 arch mountain2
+elevation 10278
 x 43
 y 2
-elevation 10278
 end
 arch mountain2
+elevation 9664
 x 43
 y 3
-elevation 9664
 end
 arch mountain
+elevation 8820
 x 43
 y 4
-elevation 8820
 end
 arch mountain
+elevation 7920
 x 43
 y 5
-elevation 7920
 end
 arch mountain
+elevation 7407
 x 43
 y 6
-elevation 7407
 end
 arch mountain
+elevation 7179
 x 43
 y 7
-elevation 7179
 end
 arch mountain
+elevation 6762
 x 43
 y 8
-elevation 6762
 end
 arch mountain
+elevation 5441
 x 43
 y 9
-elevation 5441
 end
 arch hills
+elevation 4555
 x 43
 y 10
-elevation 4555
 end
 arch hills
+elevation 4014
 x 43
 y 11
-elevation 4014
 end
 arch hills_rocky
+elevation 4094
 x 43
 y 12
-elevation 4094
 end
 arch hills
+elevation 4079
 x 43
 y 13
-elevation 4079
 end
 arch hills
+elevation 4024
 x 43
 y 14
-elevation 4024
 end
 arch hills
+elevation 3716
 x 43
 y 15
-elevation 3716
 end
 arch hills
+elevation 2987
 x 43
 y 16
-elevation 2987
 end
 arch hills
+elevation 1795
 x 43
 y 17
-elevation 1795
 end
 arch shallow_sea
+elevation -2
 x 43
 y 18
-elevation -2
 end
 arch sea
+elevation -374
 x 43
 y 19
-elevation -374
 end
 arch sea
+elevation -746
 x 43
 y 20
-elevation -746
 end
 arch sea
+elevation -1112
 x 43
 y 21
-elevation -1112
 end
 arch sea
+elevation -1468
 x 43
 y 22
-elevation -1468
 end
 arch sea
+elevation -1812
 x 43
 y 23
-elevation -1812
 end
 arch sea
+elevation -2140
 x 43
 y 24
-elevation -2140
 end
 arch sea
+elevation -2446
 x 43
 y 25
-elevation -2446
 end
 arch sea
+elevation -2725
 x 43
 y 26
-elevation -2725
 end
 arch sea
+elevation -2971
 x 43
 y 27
-elevation -2971
 end
 arch sea
+elevation -3178
 x 43
 y 28
-elevation -3178
 end
 arch sea
+elevation -3343
 x 43
 y 29
-elevation -3343
 end
 arch sea
+elevation -3461
 x 43
 y 30
-elevation -3461
 end
 arch sea
+elevation -3529
 x 43
 y 31
-elevation -3529
 end
 arch sea
+elevation -3547
 x 43
 y 32
-elevation -3547
 end
 arch sea
+elevation -3519
 x 43
 y 33
-elevation -3519
 end
 arch sea
+elevation -3450
 x 43
 y 34
-elevation -3450
 end
 arch sea
+elevation -3351
 x 43
 y 35
-elevation -3351
 end
 arch sea
+elevation -3236
 x 43
 y 36
-elevation -3236
 end
 arch sea
+elevation -3115
 x 43
 y 37
-elevation -3115
 end
 arch sea
+elevation -2997
 x 43
 y 38
-elevation -2997
 end
 arch sea
+elevation -2880
 x 43
 y 39
-elevation -2880
 end
 arch sea
+elevation -2761
 x 43
 y 40
-elevation -2761
 end
 arch sea
+elevation -2632
 x 43
 y 41
-elevation -2632
 end
 arch sea
+elevation -2494
 x 43
 y 42
-elevation -2494
 end
 arch sea
+elevation -2360
 x 43
 y 43
-elevation -2360
 end
 arch sea
+elevation -2253
 x 43
 y 44
-elevation -2253
 end
 arch sea
+elevation -2201
 x 43
 y 45
-elevation -2201
 end
 arch sea
+elevation -2214
 x 43
 y 46
-elevation -2214
 end
 arch sea
+elevation -2281
 x 43
 y 47
-elevation -2281
 end
 arch sea
+elevation -2376
 x 43
 y 48
-elevation -2376
 end
 arch sea
+elevation -2469
 x 43
 y 49
-elevation -2469
 end
 arch mountain
-x 44
 elevation 8947
+x 44
 end
 arch mountain2
+elevation 9352
 x 44
 y 1
-elevation 9352
 end
 arch mountain2
+elevation 9636
 x 44
 y 2
-elevation 9636
 end
 arch mountain2
+elevation 9197
 x 44
 y 3
-elevation 9197
 end
 arch mountain
+elevation 8071
 x 44
 y 4
-elevation 8071
 end
 arch mountain
+elevation 5094
 x 44
 y 5
-elevation 5094
 end
 arch hills
+elevation 3462
 x 44
 y 6
-elevation 3462
 end
 arch mountain
+elevation 5385
 x 44
 y 7
-elevation 5385
 end
 arch hills
+elevation 4431
 x 44
 y 8
-elevation 4431
 end
 arch hills
+elevation 4292
 x 44
 y 9
-elevation 4292
 end
 arch tree
+elevation 1634
 x 44
 y 10
-elevation 1634
 end
 arch hills
+elevation 3775
 x 44
 y 11
-elevation 3775
 end
 arch hills
+elevation 3649
 x 44
 y 12
-elevation 3649
 end
 arch hills
+elevation 3305
 x 44
 y 13
-elevation 3305
 end
 arch hills
+elevation 3472
 x 44
 y 14
-elevation 3472
 end
 arch hills
+elevation 3511
 x 44
 y 15
-elevation 3511
 end
 arch hills
+elevation 3115
 x 44
 y 16
-elevation 3115
 end
 arch hills
+elevation 1850
 x 44
 y 17
-elevation 1850
 end
 arch deep_swamp
+elevation 3
 x 44
 y 18
-elevation 3
 end
 arch sea
+elevation -387
 x 44
 y 19
-elevation -387
 end
 arch sea
+elevation -781
 x 44
 y 20
-elevation -781
 end
 arch sea
+elevation -1171
 x 44
 y 21
-elevation -1171
 end
 arch sea
+elevation -1556
 x 44
 y 22
-elevation -1556
 end
 arch sea
+elevation -1931
 x 44
 y 23
-elevation -1931
 end
 arch sea
+elevation -2293
 x 44
 y 24
-elevation -2293
 end
 arch sea
+elevation -2635
 x 44
 y 25
-elevation -2635
 end
 arch sea
+elevation -2950
 x 44
 y 26
-elevation -2950
 end
 arch sea
+elevation -3232
 x 44
 y 27
-elevation -3232
 end
 arch sea
+elevation -3475
 x 44
 y 28
-elevation -3475
 end
 arch sea
+elevation -3674
 x 44
 y 29
-elevation -3674
 end
 arch sea
+elevation -3825
 x 44
 y 30
-elevation -3825
 end
 arch sea
+elevation -3926
 x 44
 y 31
-elevation -3926
 end
 arch sea
+elevation -3978
 x 44
 y 32
-elevation -3978
 end
 arch sea
+elevation -3983
 x 44
 y 33
-elevation -3983
 end
 arch sea
+elevation -3948
 x 44
 y 34
-elevation -3948
 end
 arch sea
+elevation -3881
 x 44
 y 35
-elevation -3881
 end
 arch sea
+elevation -3790
 x 44
 y 36
-elevation -3790
 end
 arch sea
+elevation -3685
 x 44
 y 37
-elevation -3685
 end
 arch sea
+elevation -3571
 x 44
 y 38
-elevation -3571
 end
 arch sea
+elevation -3450
 x 44
 y 39
-elevation -3450
 end
 arch sea
+elevation -3324
 x 44
 y 40
-elevation -3324
 end
 arch sea
+elevation -3193
 x 44
 y 41
-elevation -3193
 end
 arch sea
+elevation -3060
 x 44
 y 42
-elevation -3060
 end
 arch sea
+elevation -2936
 x 44
 y 43
-elevation -2936
 end
 arch sea
+elevation -2833
 x 44
 y 44
-elevation -2833
 end
 arch sea
+elevation -2763
 x 44
 y 45
-elevation -2763
 end
 arch sea
+elevation -2731
 x 44
 y 46
-elevation -2731
 end
 arch sea
+elevation -2731
 x 44
 y 47
-elevation -2731
 end
 arch sea
+elevation -2748
 x 44
 y 48
-elevation -2748
 end
 arch sea
+elevation -2764
 x 44
 y 49
-elevation -2764
 end
 arch mountain
-x 45
 elevation 7800
+x 45
 end
 arch mountain
+elevation 8008
 x 45
 y 1
-elevation 8008
 end
 arch mountain
+elevation 7844
 x 45
 y 2
-elevation 7844
 end
 arch mountain
+elevation 7489
 x 45
 y 3
-elevation 7489
 end
 arch mountain
+elevation 6375
 x 45
 y 4
-elevation 6375
 end
 arch hills
+elevation 4866
 x 45
 y 5
-elevation 4866
 end
 arch hills
+elevation 3787
 x 45
 y 6
-elevation 3787
 end
 arch hills
+elevation 3232
 x 45
 y 7
-elevation 3232
 end
 arch hills
+elevation 3580
 x 45
 y 8
-elevation 3580
 end
 arch hills
+elevation 3508
 x 45
 y 9
-elevation 3508
 end
 arch hills
+elevation 3609
 x 45
 y 10
-elevation 3609
 end
 arch hills
+elevation 3388
 x 45
 y 11
-elevation 3388
 end
 arch tree
+elevation 2995
 x 45
 y 12
-elevation 2995
 end
 arch woods_3
+elevation 1792
 x 45
 y 13
-elevation 1792
 end
 arch tree
+elevation 2423
 x 45
 y 14
-elevation 2423
 end
 arch tree
+elevation 2925
 x 45
 y 15
-elevation 2925
 end
 arch evergreens
+elevation 2577
 x 45
 y 16
-elevation 2577
 end
 arch evergreens
+elevation 1260
 x 45
 y 17
-elevation 1260
 end
 arch grass
+elevation 10
 x 45
 y 18
-elevation 10
 end
 arch sea
+elevation -392
 x 45
 y 19
-elevation -392
 end
 arch sea
+elevation -794
 x 45
 y 20
-elevation -794
 end
 arch sea
+elevation -1198
 x 45
 y 21
-elevation -1198
 end
 arch sea
+elevation -1602
 x 45
 y 22
-elevation -1602
 end
 arch sea
+elevation -2003
 x 45
 y 23
-elevation -2003
 end
 arch sea
+elevation -2395
 x 45
 y 24
-elevation -2395
 end
 arch sea
+elevation -2770
 x 45
 y 25
-elevation -2770
 end
 arch sea
+elevation -3121
 x 45
 y 26
-elevation -3121
 end
 arch sea
+elevation -3439
 x 45
 y 27
-elevation -3439
 end
 arch sea
+elevation -3717
 x 45
 y 28
-elevation -3717
 end
 arch sea
+elevation -3950
 x 45
 y 29
-elevation -3950
 end
 arch sea
+elevation -4135
 x 45
 y 30
-elevation -4135
 end
 arch sea
+elevation -4269
 x 45
 y 31
-elevation -4269
 end
 arch sea
+elevation -4353
 x 45
 y 32
-elevation -4353
 end
 arch sea
+elevation -4390
 x 45
 y 33
-elevation -4390
 end
 arch sea
+elevation -4384
 x 45
 y 34
-elevation -4384
 end
 arch sea
+elevation -4343
 x 45
 y 35
-elevation -4343
 end
 arch sea
+elevation -4273
 x 45
 y 36
-elevation -4273
 end
 arch sea
+elevation -4181
 x 45
 y 37
-elevation -4181
 end
 arch sea
+elevation -4073
 x 45
 y 38
-elevation -4073
 end
 arch sea
+elevation -3954
 x 45
 y 39
-elevation -3954
 end
 arch sea
+elevation -3825
 x 45
 y 40
-elevation -3825
 end
 arch sea
+elevation -3692
 x 45
 y 41
-elevation -3692
 end
 arch sea
+elevation -3558
 x 45
 y 42
-elevation -3558
 end
 arch sea
+elevation -3431
 x 45
 y 43
-elevation -3431
 end
 arch sea
+elevation -3318
 x 45
 y 44
-elevation -3318
 end
 arch sea
+elevation -3226
 x 45
 y 45
-elevation -3226
 end
 arch sea
+elevation -3155
 x 45
 y 46
-elevation -3155
 end
 arch sea
+elevation -3102
 x 45
 y 47
-elevation -3102
 end
 arch sea
+elevation -3059
 x 45
 y 48
-elevation -3059
 end
 arch sea
+elevation -3013
 x 45
 y 49
-elevation -3013
 end
 arch mountain
-x 46
 elevation 6984
+x 46
 end
 arch mountain
+elevation 5482
 x 46
 y 1
-elevation 5482
 end
 arch hills
+elevation 4979
 x 46
 y 2
-elevation 4979
 end
 arch mountain
+elevation 5011
 x 46
 y 3
-elevation 5011
 end
 arch hills
+elevation 4021
 x 46
 y 4
-elevation 4021
 end
 arch evergreens
+elevation 2961
 x 46
 y 5
-elevation 2961
 end
 arch evergreens
+elevation 2689
 x 46
 y 6
-elevation 2689
 end
 arch evergreens
+elevation 1745
 x 46
 y 7
-elevation 1745
 end
 arch evergreens
+elevation 1924
 x 46
 y 8
-elevation 1924
 end
 arch evergreens
+elevation 2843
 x 46
 y 9
-elevation 2843
 end
 arch hills
+elevation 3824
 x 46
 y 10
-elevation 3824
 end
 arch hills
+elevation 3103
 x 46
 y 11
-elevation 3103
 end
 arch evergreens
+elevation 2346
 x 46
 y 12
-elevation 2346
 end
 arch tree
+elevation 1524
 x 46
 y 13
-elevation 1524
 end
 arch tree
+elevation 1707
 x 46
 y 14
-elevation 1707
 end
 arch tree
+elevation 2314
 x 46
 y 15
-elevation 2314
 end
 arch woods_3
+elevation 1924
 x 46
 y 16
-elevation 1924
 end
 arch brush
+elevation 143
 x 46
 y 17
-elevation 143
 end
 arch shallow_sea
 x 46
 y 18
 end
 arch sea
+elevation -384
 x 46
 y 19
-elevation -384
 end
 arch sea
+elevation -779
 x 46
 y 20
-elevation -779
 end
 arch sea
+elevation -1184
 x 46
 y 21
-elevation -1184
 end
 arch sea
+elevation -1599
 x 46
 y 22
-elevation -1599
 end
 arch sea
+elevation -2021
 x 46
 y 23
-elevation -2021
 end
 arch sea
+elevation -2440
 x 46
 y 24
-elevation -2440
 end
 arch sea
+elevation -2848
 x 46
 y 25
-elevation -2848
 end
 arch sea
+elevation -3233
 x 46
 y 26
-elevation -3233
 end
 arch sea
+elevation -3587
 x 46
 y 27
-elevation -3587
 end
 arch sea
+elevation -3901
 x 46
 y 28
-elevation -3901
 end
 arch sea
+elevation -4168
 x 46
 y 29
-elevation -4168
 end
 arch sea
+elevation -4386
 x 46
 y 30
-elevation -4386
 end
 arch sea
+elevation -4552
 x 46
 y 31
-elevation -4552
 end
 arch sea
+elevation -4667
 x 46
 y 32
-elevation -4667
 end
 arch sea
+elevation -4732
 x 46
 y 33
-elevation -4732
 end
 arch sea
+elevation -4752
 x 46
 y 34
-elevation -4752
 end
 arch sea
+elevation -4733
 x 46
 y 35
-elevation -4733
 end
 arch sea
+elevation -4681
 x 46
 y 36
-elevation -4681
 end
 arch sea
+elevation -4602
 x 46
 y 37
-elevation -4602
 end
 arch sea
+elevation -4501
 x 46
 y 38
-elevation -4501
 end
 arch sea
+elevation -4384
 x 46
 y 39
-elevation -4384
 end
 arch sea
+elevation -4255
 x 46
 y 40
-elevation -4255
 end
 arch sea
+elevation -4119
 x 46
 y 41
-elevation -4119
 end
 arch sea
+elevation -3980
 x 46
 y 42
-elevation -3980
 end
 arch sea
+elevation -3844
 x 46
 y 43
-elevation -3844
 end
 arch sea
+elevation -3716
 x 46
 y 44
-elevation -3716
 end
 arch sea
+elevation -3598
 x 46
 y 45
-elevation -3598
 end
 arch sea
+elevation -3493
 x 46
 y 46
-elevation -3493
 end
 arch sea
+elevation -3397
 x 46
 y 47
-elevation -3397
 end
 arch sea
+elevation -3305
 x 46
 y 48
-elevation -3305
 end
 arch sea
+elevation -3208
 x 46
 y 49
-elevation -3208
 end
 arch mountain
-x 47
 elevation 6197
+x 47
 end
 arch mountain
+elevation 5575
 x 47
 y 1
-elevation 5575
 end
 arch hills_rocky
+elevation 4610
 x 47
 y 2
-elevation 4610
 end
 arch evergreens
+elevation 2339
 x 47
 y 3
-elevation 2339
 end
 arch grass
+elevation 401
 x 47
 y 4
-elevation 401
 end
 arch grass
+elevation 836
 x 47
 y 5
-elevation 836
 end
 arch evergreens
+elevation 1774
 x 47
 y 6
-elevation 1774
 end
 arch evergreens
+elevation 1524
 x 47
 y 7
-elevation 1524
 end
 arch evergreens
+elevation 1999
 x 47
 y 8
-elevation 1999
 end
 arch hills
+elevation 3629
 x 47
 y 9
-elevation 3629
 end
 arch hills
+elevation 4624
 x 47
 y 10
-elevation 4624
 end
 arch hills
+elevation 4603
 x 47
 y 11
-elevation 4603
 end
 arch hills_rocky
+elevation 3814
 x 47
 y 12
-elevation 3814
 end
 arch tree
+elevation 2852
 x 47
 y 13
-elevation 2852
 end
 arch jungle_1
+elevation 1924
 x 47
 y 14
-elevation 1924
 end
 arch tree
+elevation 1939
 x 47
 y 15
-elevation 1939
 end
 arch tree
+elevation 1478
 x 47
 y 16
-elevation 1478
 end
 arch brush
+elevation 358
 x 47
 y 17
-elevation 358
 end
 arch shallow_sea
+elevation -7
 x 47
 y 18
-elevation -7
 end
 arch sea
+elevation -357
 x 47
 y 19
-elevation -357
 end
 arch sea
+elevation -727
 x 47
 y 20
-elevation -727
 end
 arch sea
+elevation -1121
 x 47
 y 21
-elevation -1121
 end
 arch sea
+elevation -1540
 x 47
 y 22
-elevation -1540
 end
 arch sea
+elevation -1978
 x 47
 y 23
-elevation -1978
 end
 arch sea
+elevation -2423
 x 47
 y 24
-elevation -2423
 end
 arch sea
+elevation -2863
 x 47
 y 25
-elevation -2863
 end
 arch sea
+elevation -3284
 x 47
 y 26
-elevation -3284
 end
 arch sea
+elevation -3674
 x 47
 y 27
-elevation -3674
 end
 arch sea
+elevation -4023
 x 47
 y 28
-elevation -4023
 end
 arch sea
+elevation -4325
 x 47
 y 29
-elevation -4325
 end
 arch sea
+elevation -4575
 x 47
 y 30
-elevation -4575
 end
 arch sea
+elevation -4772
 x 47
 y 31
-elevation -4772
 end
 arch sea
+elevation -4915
 x 47
 y 32
-elevation -4915
 end
 arch deep_sea
+elevation -5006
 x 47
 y 33
-elevation -5006
 end
 arch deep_sea
+elevation -5050
 x 47
 y 34
-elevation -5050
 end
 arch deep_sea
+elevation -5051
 x 47
 y 35
-elevation -5051
 end
 arch deep_sea
+elevation -5014
 x 47
 y 36
-elevation -5014
 end
 arch sea
+elevation -4946
 x 47
 y 37
-elevation -4946
 end
 arch sea
+elevation -4852
 x 47
 y 38
-elevation -4852
 end
 arch sea
+elevation -4737
 x 47
 y 39
-elevation -4737
 end
 arch sea
+elevation -4608
 x 47
 y 40
-elevation -4608
 end
 arch sea
+elevation -4467
 x 47
 y 41
-elevation -4467
 end
 arch sea
+elevation -4321
 x 47
 y 42
-elevation -4321
 end
 arch sea
+elevation -4173
 x 47
 y 43
-elevation -4173
 end
 arch sea
+elevation -4027
 x 47
 y 44
-elevation -4027
 end
 arch sea
+elevation -3886
 x 47
 y 45
-elevation -3886
 end
 arch sea
+elevation -3750
 x 47
 y 46
-elevation -3750
 end
 arch sea
+elevation -3618
 x 47
 y 47
-elevation -3618
 end
 arch sea
+elevation -3484
 x 47
 y 48
-elevation -3484
 end
 arch sea
+elevation -3345
 x 47
 y 49
-elevation -3345
 end
 arch hills_rocky
-x 48
 elevation 4680
+x 48
 end
 arch mountain
+elevation 5073
 x 48
 y 1
-elevation 5073
 end
 arch hills
+elevation 4806
 x 48
 y 2
-elevation 4806
 end
 arch hills
+elevation 3874
 x 48
 y 3
-elevation 3874
 end
 arch evergreens
+elevation 2742
 x 48
 y 4
-elevation 2742
 end
 arch evergreens
+elevation 1932
 x 48
 y 5
-elevation 1932
 end
 arch evergreens
+elevation 1167
 x 48
 y 6
-elevation 1167
 end
 arch grass
+elevation 803
 x 48
 y 7
-elevation 803
 end
 arch evergreens
+elevation 2186
 x 48
 y 8
-elevation 2186
 end
 arch hills
+elevation 3916
 x 48
 y 9
-elevation 3916
 end
 arch mountain
+elevation 5177
 x 48
 y 10
-elevation 5177
 end
 arch mountain
+elevation 5420
 x 48
 y 11
-elevation 5420
 end
 arch hills
+elevation 4676
 x 48
 y 12
-elevation 4676
 end
 arch hills
+elevation 3408
 x 48
 y 13
-elevation 3408
 end
 arch woods_2
+elevation 2311
 x 48
 y 14
-elevation 2311
 end
 arch evergreens
+elevation 1428
 x 48
 y 15
-elevation 1428
 end
 arch tree
+elevation 1325
 x 48
 y 16
-elevation 1325
 end
 arch brush
+elevation 492
 x 48
 y 17
-elevation 492
 end
 arch shallow_sea
+elevation -8
 x 48
 y 18
-elevation -8
 end
 arch sea
+elevation -300
 x 48
 y 19
-elevation -300
 end
 arch sea
+elevation -625
 x 48
 y 20
-elevation -625
 end
 arch sea
+elevation -996
 x 48
 y 21
-elevation -996
 end
 arch sea
+elevation -1413
 x 48
 y 22
-elevation -1413
 end
 arch sea
+elevation -1866
 x 48
 y 23
-elevation -1866
 end
 arch sea
+elevation -2340
 x 48
 y 24
-elevation -2340
 end
 arch sea
+elevation -2815
 x 48
 y 25
-elevation -2815
 end
 arch sea
+elevation -3273
 x 48
 y 26
-elevation -3273
 end
 arch sea
+elevation -3700
 x 48
 y 27
-elevation -3700
 end
 arch sea
+elevation -4084
 x 48
 y 28
-elevation -4084
 end
 arch sea
+elevation -4420
 x 48
 y 29
-elevation -4420
 end
 arch sea
+elevation -4701
 x 48
 y 30
-elevation -4701
 end
 arch sea
+elevation -4926
 x 48
 y 31
-elevation -4926
 end
 arch deep_sea
+elevation -5095
 x 48
 y 32
-elevation -5095
 end
 arch deep_sea
+elevation -5211
 x 48
 y 33
-elevation -5211
 end
 arch deep_sea
+elevation -5275
 x 48
 y 34
-elevation -5275
 end
 arch deep_sea
+elevation -5294
 x 48
 y 35
-elevation -5294
 end
 arch deep_sea
+elevation -5271
 x 48
 y 36
-elevation -5271
 end
 arch deep_sea
+elevation -5213
 x 48
 y 37
-elevation -5213
 end
 arch deep_sea
+elevation -5124
 x 48
 y 38
-elevation -5124
 end
 arch deep_sea
+elevation -5012
 x 48
 y 39
-elevation -5012
 end
 arch sea
+elevation -4881
 x 48
 y 40
-elevation -4881
 end
 arch sea
+elevation -4735
 x 48
 y 41
-elevation -4735
 end
 arch sea
+elevation -4580
 x 48
 y 42
-elevation -4580
 end
 arch sea
+elevation -4419
 x 48
 y 43
-elevation -4419
 end
 arch sea
+elevation -4256
 x 48
 y 44
-elevation -4256
 end
 arch sea
+elevation -4092
 x 48
 y 45
-elevation -4092
 end
 arch sea
+elevation -3929
 x 48
 y 46
-elevation -3929
 end
 arch sea
+elevation -3764
 x 48
 y 47
-elevation -3764
 end
 arch sea
+elevation -3596
 x 48
 y 48
-elevation -3596
 end
 arch sea
+elevation -3422
 x 48
 y 49
-elevation -3422
 end
 arch hills
-x 49
 elevation 3885
+x 49
 end
 arch hills
+elevation 4578
 x 49
 y 1
-elevation 4578
 end
 arch hills_rocky
+elevation 4914
 x 49
 y 2
-elevation 4914
 end
 arch hills
+elevation 4310
 x 49
 y 3
-elevation 4310
 end
 arch hills
+elevation 3226
 x 49
 y 4
-elevation 3226
 end
 arch evergreens
+elevation 2243
 x 49
 y 5
-elevation 2243
 end
 arch evergreens
+elevation 1674
 x 49
 y 6
-elevation 1674
 end
 arch evergreens
+elevation 1634
 x 49
 y 7
-elevation 1634
 end
 arch evergreens
+elevation 2347
 x 49
 y 8
-elevation 2347
 end
 arch hills
+elevation 3571
 x 49
 y 9
-elevation 3571
 end
 arch hills
+elevation 4633
 x 49
 y 10
-elevation 4633
 end
 arch mountain
+elevation 5440
 x 49
 y 11
-elevation 5440
 end
 arch mountain
+elevation 5114
 x 49
 y 12
-elevation 5114
 end
 arch hills
+elevation 3863
 x 49
 y 13
-elevation 3863
 end
 arch tree
+elevation 1274
 x 49
 y 14
-elevation 1274
 end
 arch evergreens
+elevation 1340
 x 49
 y 15
-elevation 1340
 end
 arch evergreens
+elevation 1359
 x 49
 y 16
-elevation 1359
 end
 arch brush
+elevation 617
 x 49
 y 17
-elevation 617
 end
 arch shallow_sea
+elevation -5
 x 49
 y 18
-elevation -5
 end
 arch sea
+elevation -199
 x 49
 y 19
-elevation -199
 end
 arch sea
+elevation -453
 x 49
 y 20
-elevation -453
 end
 arch sea
+elevation -790
 x 49
 y 21
-elevation -790
 end
 arch sea
+elevation -1204
 x 49
 y 22
-elevation -1204
 end
 arch sea
+elevation -1677
 x 49
 y 23
-elevation -1677
 end
 arch sea
+elevation -2187
 x 49
 y 24
-elevation -2187
 end
 arch sea
+elevation -2704
 x 49
 y 25
-elevation -2704
 end
 arch sea
+elevation -3203
 x 49
 y 26
-elevation -3203
 end
 arch sea
+elevation -3667
 x 49
 y 27
-elevation -3667
 end
 arch sea
+elevation -4087
 x 49
 y 28
-elevation -4087
 end
 arch sea
+elevation -4454
 x 49
 y 29
-elevation -4454
 end
 arch sea
+elevation -4764
 x 49
 y 30
-elevation -4764
 end
 arch deep_sea
+elevation -5016
 x 49
 y 31
-elevation -5016
 end
 arch deep_sea
+elevation -5210
 x 49
 y 32
-elevation -5210
 end
 arch deep_sea
+elevation -5346
 x 49
 y 33
-elevation -5346
 end
 arch deep_sea
+elevation -5429
 x 49
 y 34
-elevation -5429
 end
 arch deep_sea
+elevation -5463
 x 49
 y 35
-elevation -5463
 end
 arch deep_sea
+elevation -5452
 x 49
 y 36
-elevation -5452
 end
 arch deep_sea
+elevation -5402
 x 49
 y 37
-elevation -5402
 end
 arch deep_sea
+elevation -5318
 x 49
 y 38
-elevation -5318
 end
 arch deep_sea
+elevation -5207
 x 49
 y 39
-elevation -5207
 end
 arch deep_sea
+elevation -5074
 x 49
 y 40
-elevation -5074
 end
 arch sea
+elevation -4922
 x 49
 y 41
-elevation -4922
 end
 arch sea
+elevation -4758
 x 49
 y 42
-elevation -4758
 end
 arch sea
+elevation -4584
 x 49
 y 43
-elevation -4584
 end
 arch sea
+elevation -4403
 x 49
 y 44
-elevation -4403
 end
 arch sea
+elevation -4218
 x 49
 y 45
-elevation -4218
 end
 arch sea
+elevation -4030
 x 49
 y 46
-elevation -4030
 end
 arch sea
+elevation -3837
 x 49
 y 47
-elevation -3837
 end
 arch sea
+elevation -3640
 x 49
 y 48
-elevation -3640
 end
 arch sea
+elevation -3437
 x 49
 y 49
-elevation -3437
+end
+arch barrack_up
+y 39
+end
+arch university
+x 2
+y 39
+end
+arch palace
+name Navr City Palace
+name_pl Navr City Palace
+x 2
+y 45
+end
+arch barn
+name Warehouse #1
+name_pl Warehouse #1
+slaying /navar_city/warehouse1
+hp 8
+sp 24
+x 10
+y 38
+end
+arch barn
+name Warehouse #2
+name_pl Warehouse #2
+slaying /navar_city/warehouse2
+hp 13
+sp 25
+x 13
+y 38
+end
+arch church
+x 13
+y 47
+end
+arch barn
+name Warehouse #3
+name_pl Warehouse #3
+slaying /navar_city/warehouse3
+hp 2
+sp 34
+x 16
+y 38
+end
+arch barn
+name Warehouse #4
+name_pl Warehouse #4
+slaying /navar_city/warehouse4
+hp 27
+sp 15
+x 16
+y 40
+end
+arch barn
+name Warehouse #5
+name_pl Warehouse #5
+slaying /navar_city/warehouse5
+hp 24
+sp 9
+x 16
+y 42
+end
+arch barn
+name Warehouse #6
+name_pl Warehouse #6
+slaying /navar_city/warehouse6
+hp 4
+sp 27
+x 16
+y 44
+end
+arch barn
+name Warehouse #7
+name_pl Warehouse #7
+slaying /navar_city/warehouse7
+hp 7
+x 16
+y 46
+end
+arch barn
+name Deserted Warehouse
+name_pl Deserted Warehouse
+slaying /navar_city/warehouse8
+sp 1
+x 16
+y 48
+end
+arch longship
+x 21
+y 39
+end
+arch longship
+x 21
+y 40
+end
+arch big_galleon
+name To Dtabb Land
+name_pl To Dtabb Land
+slaying /world/world_116_102
+hp 32
+sp 37
+x 21
+y 42
+end
+arch big_galleon
+x 21
+y 45
+end
+arch big_galleon
+x 21
+y 48
 end
