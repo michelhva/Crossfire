@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 
 # by peterm@langmuir.eecs.berkeley.edu
 
