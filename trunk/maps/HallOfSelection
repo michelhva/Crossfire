@@ -5,11 +5,10 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Oct 12 20:22:20 2000
 endmsg
-hp 7
-sp 5
-weight 0
-x 15
-y 35
+width 15
+height 35
+enter_x 7
+enter_y 5
 end
 arch blocked
 end
@@ -190,7 +189,10 @@ name floor
 face shop_empty.111
 y 29
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 29
+end
+arch cwall_2_1_1
 y 29
 end
 arch flagstone
@@ -206,13 +208,23 @@ name floor
 face shop_empty.111
 y 31
 end
-arch cwall_2_2_1
+arch cwall_3_2
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 y 32
 end
-arch blocked
+arch cwall_2_1_1
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+y 33
+end
+arch cwall_2_2_1
 y 33
 end
 arch permanent_lava
@@ -272,7 +284,6 @@ x 1
 y 11
 end
 arch mountain2
-blocksview 0
 x 1
 y 12
 end
@@ -455,7 +466,7 @@ face shop_empty.111
 x 1
 y 29
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 1
 y 29
 end
@@ -475,11 +486,19 @@ arch cwall_2_1_2
 x 1
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 32
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
+x 1
+y 33
+end
+arch cwall_2_1_2
 x 1
 y 33
 end
@@ -517,7 +536,6 @@ x 2
 y 7
 end
 arch mountain2
-blocksview 0
 x 2
 y 8
 end
@@ -707,7 +725,7 @@ arch swall_1_2_half
 x 2
 y 29
 end
-arch cwall_2_1_2
+arch swall_4
 x 2
 y 29
 end
@@ -727,15 +745,31 @@ face shop_empty.111
 x 2
 y 31
 end
-arch cwall_2_1_2
+arch swall_2_2_1
 x 2
 y 31
 end
-arch blocked
+arch cwall_2_2_3
+x 2
+y 31
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 32
 end
-arch blocked
+arch cwall_2_1_1
+x 2
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 2
+y 33
+end
+arch cwall_3_1
 x 2
 y 33
 end
@@ -781,12 +815,10 @@ x 3
 y 8
 end
 arch mountain2
-blocksview 0
 x 3
 y 9
 end
 arch mountain2
-blocksview 0
 x 3
 y 10
 end
@@ -826,7 +858,7 @@ y 16
 end
 arch player_changer
 slaying /world/world_105_116
-hp 54
+hp 4
 sp 4
 x 3
 y 16
@@ -990,7 +1022,7 @@ face shop_empty.111
 x 3
 y 29
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 3
 y 29
 end
@@ -1000,10 +1032,7 @@ face shop_empty.111
 x 3
 y 30
 end
-arch exit
-slaying /world/world_105_116
-hp 4
-sp 4
+arch dungeon_magic
 x 3
 y 30
 end
@@ -1013,15 +1042,30 @@ face shop_empty.111
 x 3
 y 31
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 3
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 32
 end
-arch blocked
+arch exit
+slaying /world/world_105_116
+hp 4
+sp 4
+x 3
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 3
+y 33
+end
+arch cwall_2_1_2
 x 3
 y 33
 end
@@ -1073,7 +1117,6 @@ x 4
 y 9
 end
 arch mountain2
-blocksview 0
 x 4
 y 10
 end
@@ -1122,6 +1165,10 @@ endmsg
 x 4
 y 16
 end
+arch dungeon_magic
+x 4
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1142,6 +1189,10 @@ arch magic_mouth
 msg
 Step forward to become an Evoker.
 endmsg
+x 4
+y 18
+end
+arch dungeon_magic
 x 4
 y 18
 end
@@ -1168,6 +1219,10 @@ endmsg
 x 4
 y 20
 end
+arch dungeon_magic
+x 4
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1188,6 +1243,10 @@ arch magic_mouth
 msg
 Step forward to become a Wizard.
 endmsg
+x 4
+y 22
+end
+arch dungeon_magic
 x 4
 y 22
 end
@@ -1216,6 +1275,10 @@ endmsg
 x 4
 y 24
 end
+arch dungeon_magic
+x 4
+y 24
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1238,6 +1301,10 @@ Step forward to become a Sorcerer.
 Sorcerers are difficult to play and
 not recommended for beginners.
 endmsg
+x 4
+y 26
+end
+arch dungeon_magic
 x 4
 y 26
 end
@@ -1264,13 +1331,17 @@ endmsg
 x 4
 y 28
 end
+arch dungeon_magic
+x 4
+y 28
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 4
 y 29
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 4
 y 29
 end
@@ -1279,6 +1350,26 @@ name floor
 face shop_empty.111
 x 4
 y 30
+end
+arch dungeon_magic
+x 4
+y 30
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 31
+end
+arch swall_2_1_2
+x 4
+y 31
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 32
 end
 arch magic_mouth
 msg
@@ -1287,23 +1378,19 @@ here by mistake.  You will not be
 given a class.
 endmsg
 x 4
-y 30
+y 32
+end
+arch dungeon_magic
+x 4
+y 32
 end
 arch flagstone
 name floor
 face shop_empty.111
 x 4
-y 31
+y 33
 end
 arch cwall_2_1_2
-x 4
-y 31
-end
-arch blocked
-x 4
-y 32
-end
-arch blocked
 x 4
 y 33
 end
@@ -1449,6 +1536,10 @@ endmsg
 x 5
 y 16
 end
+arch dungeon_magic
+x 5
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1493,6 +1584,10 @@ endmsg
 x 5
 y 18
 end
+arch dungeon_magic
+x 5
+y 18
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1531,6 +1626,10 @@ endmsg
 x 5
 y 20
 end
+arch dungeon_magic
+x 5
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1562,6 +1661,10 @@ physical training:  you're mostly
 sedentary, and so you're not nearly
 so strong and healthy as you could be.
 endmsg
+x 5
+y 22
+end
+arch dungeon_magic
 x 5
 y 22
 end
@@ -1603,6 +1706,10 @@ become attuned to detonation and
 trasmutation because of how you've
 used it.
 endmsg
+x 5
+y 24
+end
+arch dungeon_magic
 x 5
 y 24
 end
@@ -1652,6 +1759,10 @@ endmsg
 x 5
 y 26
 end
+arch dungeon_magic
+x 5
+y 26
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1688,13 +1799,17 @@ endmsg
 x 5
 y 28
 end
+arch dungeon_magic
+x 5
+y 28
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 5
 y 29
 end
-arch cwall_1_3
+arch swall_1_3
 x 5
 y 29
 end
@@ -1704,11 +1819,25 @@ face shop_empty.111
 x 5
 y 30
 end
+arch dungeon_magic
+x 5
+y 30
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 30
+y 31
+end
+arch swall_1_3
+x 5
+y 31
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 32
 end
 arch magic_mouth
 msg
@@ -1717,23 +1846,19 @@ here by mistake.  You will not be
 given a class.
 endmsg
 x 5
-y 30
+y 32
+end
+arch dungeon_magic
+x 5
+y 32
 end
 arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 31
+y 33
 end
-arch cwall_3_1
-x 5
-y 31
-end
-arch blocked
-x 5
-y 32
-end
-arch blocked
+arch cwall_2_1_2
 x 5
 y 33
 end
@@ -1771,15 +1896,27 @@ face shop_empty.111
 x 6
 y 5
 end
+arch dungeon_magic
+x 6
+y 5
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 6
 y 6
 end
+arch dungeon_magic
+x 6
+y 6
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 7
+end
+arch dungeon_magic
 x 6
 y 7
 end
@@ -1869,9 +2006,17 @@ face shop_empty.111
 x 6
 y 16
 end
+arch dungeon_magic
+x 6
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 17
+end
+arch dungeon_magic
 x 6
 y 17
 end
@@ -1881,9 +2026,17 @@ face shop_empty.111
 x 6
 y 18
 end
+arch dungeon_magic
+x 6
+y 18
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 19
+end
+arch dungeon_magic
 x 6
 y 19
 end
@@ -1893,9 +2046,17 @@ face shop_empty.111
 x 6
 y 20
 end
+arch dungeon_magic
+x 6
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 21
+end
+arch dungeon_magic
 x 6
 y 21
 end
@@ -1905,9 +2066,17 @@ face shop_empty.111
 x 6
 y 22
 end
+arch dungeon_magic
+x 6
+y 22
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 23
+end
+arch dungeon_magic
 x 6
 y 23
 end
@@ -1917,9 +2086,17 @@ face shop_empty.111
 x 6
 y 24
 end
+arch dungeon_magic
+x 6
+y 24
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 25
+end
+arch dungeon_magic
 x 6
 y 25
 end
@@ -1929,9 +2106,17 @@ face shop_empty.111
 x 6
 y 26
 end
+arch dungeon_magic
+x 6
+y 26
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 27
+end
+arch dungeon_magic
 x 6
 y 27
 end
@@ -1941,9 +2126,17 @@ face shop_empty.111
 x 6
 y 28
 end
+arch dungeon_magic
+x 6
+y 28
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 29
+end
+arch dungeon_magic
 x 6
 y 29
 end
@@ -1953,21 +2146,37 @@ face shop_empty.111
 x 6
 y 30
 end
+arch dungeon_magic
+x 6
+y 30
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 6
 y 31
 end
-arch cwall_2_1_2
+arch dungeon_magic
 x 6
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 6
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 6
+y 33
+end
+arch cwall_2_1_2
 x 6
 y 33
 end
@@ -2005,15 +2214,27 @@ face shop_empty.111
 x 7
 y 5
 end
+arch dungeon_magic
+x 7
+y 5
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 6
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 7
+end
+arch dungeon_magic
 x 7
 y 7
 end
@@ -2043,6 +2264,10 @@ x 7
 y 8
 end
 arch cobblestones2
+x 7
+y 8
+end
+arch dungeon_magic
 x 7
 y 8
 end
@@ -2082,6 +2307,10 @@ arch cobblestones2
 x 7
 y 9
 end
+arch dungeon_magic
+x 7
+y 9
+end
 arch magic_mouth
 msg
 Crossfire primer #2:
@@ -2104,6 +2333,10 @@ x 7
 y 10
 end
 arch cobblestones2
+x 7
+y 10
+end
+arch dungeon_magic
 x 7
 y 10
 end
@@ -2131,6 +2364,10 @@ x 7
 y 11
 end
 arch cobblestones2
+x 7
+y 11
+end
+arch dungeon_magic
 x 7
 y 11
 end
@@ -2162,6 +2399,7 @@ to a point.  Beyond that point, you
 must pray to gain more grace.
 This is a convenient way to do this:
 bind use_skill praying
+P
 Then simply hit the P key repeatedly.
 This is also a good way to regenerate
 grace quickly.
@@ -2170,6 +2408,10 @@ x 7
 y 12
 end
 arch cobblestones2
+x 7
+y 12
+end
+arch dungeon_magic
 x 7
 y 12
 end
@@ -2206,6 +2448,10 @@ arch cobblestones2
 x 7
 y 13
 end
+arch dungeon_magic
+x 7
+y 13
+end
 arch magic_mouth
 msg
 Crossfire primer #6.
@@ -2234,6 +2480,10 @@ arch cobblestones2
 x 7
 y 14
 end
+arch dungeon_magic
+x 7
+y 14
+end
 arch magic_mouth
 msg
 To begin choosing, walk into the room
@@ -2250,9 +2500,17 @@ arch cobblestones2
 x 7
 y 15
 end
+arch dungeon_magic
+x 7
+y 15
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 16
+end
+arch dungeon_magic
 x 7
 y 16
 end
@@ -2262,9 +2520,17 @@ face shop_empty.111
 x 7
 y 17
 end
+arch dungeon_magic
+x 7
+y 17
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 18
+end
+arch dungeon_magic
 x 7
 y 18
 end
@@ -2274,9 +2540,17 @@ face shop_empty.111
 x 7
 y 19
 end
+arch dungeon_magic
+x 7
+y 19
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 20
+end
+arch dungeon_magic
 x 7
 y 20
 end
@@ -2286,9 +2560,17 @@ face shop_empty.111
 x 7
 y 21
 end
+arch dungeon_magic
+x 7
+y 21
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 22
+end
+arch dungeon_magic
 x 7
 y 22
 end
@@ -2298,9 +2580,17 @@ face shop_empty.111
 x 7
 y 23
 end
+arch dungeon_magic
+x 7
+y 23
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 24
+end
+arch dungeon_magic
 x 7
 y 24
 end
@@ -2310,9 +2600,17 @@ face shop_empty.111
 x 7
 y 25
 end
+arch dungeon_magic
+x 7
+y 25
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 26
+end
+arch dungeon_magic
 x 7
 y 26
 end
@@ -2322,9 +2620,17 @@ face shop_empty.111
 x 7
 y 27
 end
+arch dungeon_magic
+x 7
+y 27
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 28
+end
+arch dungeon_magic
 x 7
 y 28
 end
@@ -2334,9 +2640,17 @@ face shop_empty.111
 x 7
 y 29
 end
+arch dungeon_magic
+x 7
+y 29
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 30
+end
+arch dungeon_magic
 x 7
 y 30
 end
@@ -2346,15 +2660,27 @@ face shop_empty.111
 x 7
 y 31
 end
-arch cwall_2_1_2
+arch dungeon_magic
 x 7
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 7
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 7
+y 33
+end
+arch cwall_2_1_2
 x 7
 y 33
 end
@@ -2392,15 +2718,27 @@ face shop_empty.111
 x 8
 y 5
 end
+arch dungeon_magic
+x 8
+y 5
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 8
 y 6
 end
+arch dungeon_magic
+x 8
+y 6
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 7
+end
+arch dungeon_magic
 x 8
 y 7
 end
@@ -2490,9 +2828,17 @@ face shop_empty.111
 x 8
 y 16
 end
+arch dungeon_magic
+x 8
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 17
+end
+arch dungeon_magic
 x 8
 y 17
 end
@@ -2502,9 +2848,17 @@ face shop_empty.111
 x 8
 y 18
 end
+arch dungeon_magic
+x 8
+y 18
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 19
+end
+arch dungeon_magic
 x 8
 y 19
 end
@@ -2514,9 +2868,17 @@ face shop_empty.111
 x 8
 y 20
 end
+arch dungeon_magic
+x 8
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 21
+end
+arch dungeon_magic
 x 8
 y 21
 end
@@ -2526,9 +2888,17 @@ face shop_empty.111
 x 8
 y 22
 end
+arch dungeon_magic
+x 8
+y 22
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 23
+end
+arch dungeon_magic
 x 8
 y 23
 end
@@ -2538,9 +2908,17 @@ face shop_empty.111
 x 8
 y 24
 end
+arch dungeon_magic
+x 8
+y 24
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 25
+end
+arch dungeon_magic
 x 8
 y 25
 end
@@ -2550,9 +2928,17 @@ face shop_empty.111
 x 8
 y 26
 end
+arch dungeon_magic
+x 8
+y 26
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 27
+end
+arch dungeon_magic
 x 8
 y 27
 end
@@ -2562,9 +2948,17 @@ face shop_empty.111
 x 8
 y 28
 end
+arch dungeon_magic
+x 8
+y 28
+end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 29
+end
+arch dungeon_magic
 x 8
 y 29
 end
@@ -2574,21 +2968,37 @@ face shop_empty.111
 x 8
 y 30
 end
+arch dungeon_magic
+x 8
+y 30
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 8
 y 31
 end
-arch cwall_2_1_2
+arch dungeon_magic
 x 8
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 8
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 8
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 8
+y 33
+end
+arch cwall_2_1_2
 x 8
 y 33
 end
@@ -2731,6 +3141,10 @@ endmsg
 x 9
 y 16
 end
+arch dungeon_magic
+x 9
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -2776,6 +3190,10 @@ endmsg
 x 9
 y 18
 end
+arch dungeon_magic
+x 9
+y 18
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -2817,6 +3235,10 @@ endmsg
 x 9
 y 20
 end
+arch dungeon_magic
+x 9
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -2848,6 +3270,10 @@ places you're not expected.  You have
 had NO introduction to either
 religious devotion or magic.
 endmsg
+x 9
+y 22
+end
+arch dungeon_magic
 x 9
 y 22
 end
@@ -2886,6 +3312,10 @@ endmsg
 x 9
 y 24
 end
+arch dungeon_magic
+x 9
+y 24
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -2917,6 +3347,10 @@ inner peacefulness grants you the
 ability to regenerate faster and to
 sense auras.
 endmsg
+x 9
+y 26
+end
+arch dungeon_magic
 x 9
 y 26
 end
@@ -2959,6 +3393,10 @@ endmsg
 x 9
 y 28
 end
+arch dungeon_magic
+x 9
+y 28
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -2993,21 +3431,37 @@ endmsg
 x 9
 y 30
 end
+arch dungeon_magic
+x 9
+y 30
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 9
 y 31
 end
-arch cwall_2_1_2
+arch swall_1_4
 x 9
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 9
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 9
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 33
+end
+arch cwall_2_1_2
 x 9
 y 33
 end
@@ -3094,6 +3548,10 @@ endmsg
 x 10
 y 16
 end
+arch dungeon_magic
+x 10
+y 16
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -3115,6 +3573,10 @@ msg
 Step onto the circle to become a
 Barbarian.
 endmsg
+x 10
+y 18
+end
+arch dungeon_magic
 x 10
 y 18
 end
@@ -3142,6 +3604,10 @@ endmsg
 x 10
 y 20
 end
+arch dungeon_magic
+x 10
+y 20
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -3165,6 +3631,10 @@ endmsg
 x 10
 y 22
 end
+arch dungeon_magic
+x 10
+y 22
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -3185,6 +3655,10 @@ arch magic_mouth
 msg
 Step forward to become a thief.
 endmsg
+x 10
+y 24
+end
+arch dungeon_magic
 x 10
 y 24
 end
@@ -3214,6 +3688,10 @@ endmsg
 x 10
 y 26
 end
+arch dungeon_magic
+x 10
+y 26
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -3234,6 +3712,10 @@ arch magic_mouth
 msg
 Step forward to become a Paladin.
 endmsg
+x 10
+y 28
+end
+arch dungeon_magic
 x 10
 y 28
 end
@@ -3260,21 +3742,37 @@ endmsg
 x 10
 y 30
 end
+arch dungeon_magic
+x 10
+y 30
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 10
 y 31
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 10
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 10
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 10
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 10
+y 33
+end
+arch cwall_2_1_2
 x 10
 y 33
 end
@@ -3547,15 +4045,27 @@ face shop_empty.111
 x 11
 y 31
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 11
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 11
 y 32
 end
-arch blocked
+arch dungeon_magic
+x 11
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 11
+y 33
+end
+arch cwall_2_1_2
 x 11
 y 33
 end
@@ -3788,19 +4298,31 @@ face shop_empty.111
 x 12
 y 31
 end
-arch swall_1_2_half
+arch swall_4
 x 12
 y 31
 end
-arch cwall_2_1_2
-x 12
-y 31
-end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 12
 y 32
 end
-arch blocked
+arch swall_2_1_1
+x 12
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 12
+y 33
+end
+arch swall_1_2_half
+x 12
+y 33
+end
+arch cwall_2_1_2
 x 12
 y 33
 end
@@ -4054,15 +4576,23 @@ face shop_empty.111
 x 13
 y 31
 end
-arch cwall_2_1_2
+arch swall_2_1_2
 x 13
 y 31
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
 x 13
 y 32
 end
-arch blocked
+arch flagstone
+name floor
+face shop_empty.111
+x 13
+y 33
+end
+arch cwall_2_1_2
 x 13
 y 33
 end
@@ -4319,59 +4849,36 @@ face shop_empty.111
 x 14
 y 31
 end
-arch cwall_2_2_4
+arch cwall_2_1_1
 x 14
 y 31
 end
-arch blocked
+arch swall_1_3_half
+x 14
+y 31
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 14
 y 32
 end
-arch blocked
+arch cwall_2_1_1
+x 14
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 14
+y 33
+end
+arch cwall_2_2_4
 x 14
 y 33
 end
 arch pentagram_111
+type 0
 x 6
 y 5
-end
-More
-arch pentagram_112
-x 7
-y 5
-end
-More
-arch pentagram_113
-x 8
-y 5
-end
-More
-arch pentagram_121
-x 6
-y 6
-end
-More
-arch pentagram_122
-x 7
-y 6
-end
-More
-arch pentagram_123
-x 8
-y 6
-end
-More
-arch pentagram_131
-x 6
-y 7
-end
-More
-arch pentagram_132
-x 7
-y 7
-end
-More
-arch pentagram_133
-x 8
-y 7
 end
