@@ -21,7 +21,7 @@ wc -30
 weight 8000000
 attacktype 5
 resist_fire 100
-resist_cold 95
+resist_cold 80
 resist_fear 100
 resist_holyword 90
 resist_godpower 90

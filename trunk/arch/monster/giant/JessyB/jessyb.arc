@@ -10,8 +10,8 @@ jessyb.113
 jessyb.112
 mina
 attacktype 65023
-resist_physical 100
-resist_magic 90
+resist_physical 95
+resist_magic 80
 resist_fire 100
 resist_cold 100
 resist_confusion 100
