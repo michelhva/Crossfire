@@ -1496,6 +1496,7 @@ msg
 Welcome to Team 1!
 endmsg
 slaying team1
+food 500000
 x 12
 y 2
 end
@@ -1716,7 +1717,7 @@ msg
 @match *
 Greetings!  So which if you is brave enough to enter the Arena?
 Team 1 should enter on the left, and Team 2 on the right!
-Oh, we have been having some trouble powering the teleporters...  
+Oh, we have been having some trouble powering the teleporters...
 You will probably need some more rubies to power them.  I think 250 should do it for your team for awhile..
 endmsg
 walk_on 0
@@ -1816,6 +1817,7 @@ msg
 Welcome to Team 2!
 endmsg
 slaying team2
+food 500000
 x 14
 y 2
 end
@@ -1935,7 +1937,6 @@ x 14
 y 11
 end
 arch teleporter
-invisible 1
 hp 14
 sp 9
 speed 0.2
