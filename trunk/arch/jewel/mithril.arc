@@ -1,7 +1,7 @@
 Object mithril
 name mithril crystal
 race gold and jewels
-type 60
+type 73
 face mithril.111
 anim
 mithril.111
