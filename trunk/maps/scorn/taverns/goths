@@ -267,10 +267,6 @@ unaggressive 0
 x 1
 y 6
 end
-arch woodfloor
-x 1
-y 7
-end
 arch altar
 msg
 Click! The gate has opened...
@@ -1294,7 +1290,7 @@ arch slotmachine2
 name Gerty Gold
 event_apply_plugin Python
 event_apply /python/casino/goldslots.py
-slaying 
+slaying
 food 0
 x 5
 y 1
@@ -1302,17 +1298,6 @@ end
 arch woodfloor
 x 5
 y 2
-end
-arch altar
-msg
-Click! The gate has opened...
-endmsg
-slaying booze
-food 1
-invisible 1
-connected 1
-x 5
-y 3
 end
 arch woodfloor
 x 5
@@ -1487,8 +1472,7 @@ end
 arch sign
 msg
 Presenting the Lucky Lady Slots
-   courtesy of Casino Infernal
-
+courtesy of Casino Infernal
 Pull the handle and try your luck.
 endmsg
 x 6
@@ -1697,7 +1681,7 @@ arch slotmachine3
 name Sally Silver
 event_apply_plugin Python
 event_apply /python/casino/silverslots.py
-slaying 
+slaying
 food 0
 x 7
 y 1
