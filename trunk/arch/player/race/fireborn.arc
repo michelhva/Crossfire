@@ -33,11 +33,8 @@ Cha -2
 Pow 7
 resist_fire 100
 resist_poison 100
-
-resist_cold -100
-resist_drain -100
-resist_ghosthit -100
-
+resist_cold -30
+resist_ghosthit -50
 editable 0
 end
 Object fireborn_player_force
