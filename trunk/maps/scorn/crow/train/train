@@ -1,12 +1,12 @@
 arch map
 name Training Center
-reset_timeout 1800
 msg
 Creator: Preston Crow
 Date:    6/19/2003
 endmsg
 width 10
 height 20
+reset_timeout 1800
 end
 arch flagstone
 end
@@ -229,6 +229,10 @@ arch flagstone
 x 1
 y 10
 end
+arch dungeon_magic
+x 1
+y 10
+end
 arch dwall_2_1_2
 x 1
 y 10
@@ -334,12 +338,20 @@ arch flagstone
 x 2
 y 3
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch statue
 face wyvern.131
 x 2
 y 3
 end
 arch flagstone
+x 2
+y 4
+end
+arch dungeon_magic
 x 2
 y 4
 end
@@ -352,6 +364,10 @@ arch flagstone
 x 2
 y 5
 end
+arch dungeon_magic
+x 2
+y 5
+end
 arch statue
 face wyvern.171
 x 2
@@ -361,11 +377,19 @@ arch flagstone
 x 2
 y 6
 end
+arch dungeon_magic
+x 2
+y 6
+end
 arch dwall_2_1_2
 x 2
 y 6
 end
 arch flagstone
+x 2
+y 7
+end
+arch dungeon_magic
 x 2
 y 7
 end
@@ -378,6 +402,10 @@ arch flagstone
 x 2
 y 8
 end
+arch dungeon_magic
+x 2
+y 8
+end
 arch grate_closed_2
 connected 1
 x 2
@@ -387,12 +415,20 @@ arch flagstone
 x 2
 y 9
 end
+arch dungeon_magic
+x 2
+y 9
+end
 arch statue
 face smalltroll.112
 x 2
 y 9
 end
 arch flagstone
+x 2
+y 10
+end
+arch dungeon_magic
 x 2
 y 10
 end
@@ -1001,12 +1037,20 @@ arch flagstone
 x 7
 y 3
 end
+arch dungeon_magic
+x 7
+y 3
+end
 arch statue
 face raas.131
 x 7
 y 3
 end
 arch flagstone
+x 7
+y 4
+end
+arch dungeon_magic
 x 7
 y 4
 end
@@ -1019,6 +1063,10 @@ arch flagstone
 x 7
 y 5
 end
+arch dungeon_magic
+x 7
+y 5
+end
 arch statue
 face fiend.111
 x 7
@@ -1028,11 +1076,19 @@ arch flagstone
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 6
+end
 arch dwall_2_1_2
 x 7
 y 6
 end
 arch flagstone
+x 7
+y 7
+end
+arch dungeon_magic
 x 7
 y 7
 end
@@ -1045,6 +1101,10 @@ arch flagstone
 x 7
 y 8
 end
+arch dungeon_magic
+x 7
+y 8
+end
 arch grate_closed_2
 connected 2
 x 7
@@ -1054,12 +1114,20 @@ arch flagstone
 x 7
 y 9
 end
+arch dungeon_magic
+x 7
+y 9
+end
 arch statue
 face demilich.111
 x 7
 y 9
 end
 arch flagstone
+x 7
+y 10
+end
+arch dungeon_magic
 x 7
 y 10
 end
@@ -1239,6 +1307,10 @@ x 8
 y 9
 end
 arch flagstone
+x 8
+y 10
+end
+arch dungeon_magic
 x 8
 y 10
 end
