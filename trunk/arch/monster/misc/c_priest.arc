@@ -5,7 +5,9 @@ face c_priest.131
 anim
 facings 2
 c_priest.131
+c_priest.132
 c_priest.171
+c_priest.172
 mina
 monster 1
 Wis 10
@@ -53,7 +55,9 @@ face c_priest.131
 anim
 facings 2
 c_priest.131
+c_priest.132
 c_priest.171
+c_priest.172
 mina
 monster 1
 Wis 10
