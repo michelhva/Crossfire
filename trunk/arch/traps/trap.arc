@@ -7,6 +7,10 @@ hp 1
 msg
 You set off a trap!
 endmsg
+anim
+trap.111
+trap.111
+mina
 level 1
 color_fg black
 is_animated 0
