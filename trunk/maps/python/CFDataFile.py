@@ -58,7 +58,7 @@ class CFDataFile:
         try:
             file = open(self.filename,'r')
         except:
-            raise 'Unable to read %s' % self.datafile_name
+            raise 'Unable to read %s' % self.filename
         else:
             temp = file.read().split('\n')
             file.close()

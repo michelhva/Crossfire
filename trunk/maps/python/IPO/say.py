@@ -70,7 +70,7 @@ elif text[0] == 'literacy':
 elif text[0] == 'mailscroll':
 	if len(text)==2:
 		if log.info(text[1]):
-			if (CFPython.PayAmount(activator, priceMailScroll*50)):
+			if (CFPython.PayAmount(activator, priceMailScroll)):
 				CFPython.Say(whoami, 'Here is your mailscroll')
 				id = CFPython.CreateObject('scroll', (x, y))
 				CFPython.SetName(id, 'mailscroll T: '+text[1]+' F: '+ activatorname)
