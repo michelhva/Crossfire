@@ -8,11 +8,29 @@ endmsg
 width 6
 height 6
 end
-arch spider_web
-no_pass 1
+arch door_look_1
+name spider web
+face spider_web.111
+name_pl spider webs
+material 128
 end
-arch spider_web
+arch door_look_1
+name spider web
+face spider_web.111
+name_pl spider webs
 material 8
-no_pass 1
 x 1
+end
+arch door_look_1
+name spider web
+face spider_web.111
+name_pl spider webs
+material 16
+x 2
+end
+arch door_look_1
+name spider web
+face spider_web.111
+name_pl spider webs
+x 3
 end
