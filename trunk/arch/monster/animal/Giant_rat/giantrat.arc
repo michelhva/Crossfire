@@ -24,7 +24,7 @@ level 25
 alive 1
 weight 1800000
 can_cast_spell 1
-attack type 1
+attacktype 1
 editable 1
 color_fg black
 end
