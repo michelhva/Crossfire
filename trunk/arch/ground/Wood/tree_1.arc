@@ -6,5 +6,5 @@ no_pick 1
 color_fg green
 editable 8
 is_floor 1
-smoothlevel 10
+smoothlevel 75
 end

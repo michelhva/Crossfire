@@ -11,5 +11,5 @@ is_floor 1
 color_fg green
 editable 8
 visibility 100
-smoothlevel 12
+smoothlevel 75
 end
