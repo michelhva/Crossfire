@@ -230,6 +230,8 @@ doorstyle special/forest
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
+exit_on_final_map 1
+final_map /planes/greenway1
 endmsg
 slaying /!
 x 1
@@ -6756,6 +6758,7 @@ doorstyle special/forest
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
+final_map /planes/greenway1
 endmsg
 slaying /!
 x 31
@@ -6780,6 +6783,7 @@ doorstyle special/webs
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
+exit_on_final_map no
 final_map /planes/greenway1
 endmsg
 slaying /!
