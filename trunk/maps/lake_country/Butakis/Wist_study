@@ -8,19 +8,6 @@ endmsg
 width 26
 height 30
 end
-arch book
-sp 26
-end
-arch ability_fear
-end
-arch ability_forced_dance
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
-arch ability_cold
-end
 arch jungle_2
 end
 arch jungle_2
@@ -2129,15 +2116,16 @@ y 4
 end
 arch pixie
 name dancing pixie
-Wis 30
+exp 10000
 hp 100
+maxhp 100
 sp 100
 maxsp 100
-exp 10000
 unaggressive 1
+Wis 30
 x 11
 y 4
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch grass
@@ -2159,15 +2147,16 @@ y 7
 end
 arch pixie
 name dancing pixie
-Wis 30
+exp 10000
 hp 100
+maxhp 100
 sp 100
 maxsp 100
-exp 10000
 unaggressive 1
+Wis 30
 x 11
 y 7
-arch ability_speedball
+arch spell_small_speedball
 end
 end
 arch grasspond
@@ -2949,15 +2938,16 @@ y 8
 end
 arch pixie
 name dancing pixie
-Wis 30
+exp 10000
 hp 100
+maxhp 100
 sp 100
 maxsp 100
-exp 10000
 unaggressive 1
+Wis 30
 x 15
 y 8
-arch ability_fear
+arch abil_fear
 end
 end
 arch grass
@@ -3270,12 +3260,13 @@ y 7
 end
 arch pixie
 name dancing pixie
-Wis 30
+exp 10000
 hp 100
+maxhp 100
 sp 100
 maxsp 100
-exp 10000
 unaggressive 1
+Wis 30
 x 17
 y 7
 end
@@ -4172,27 +4163,28 @@ end
 arch wizard
 name Wist, Twis' evil twin
 type 0
-Str 10
-Dex 10
-Con 6
-Wis 30
-Int 12
+level 50
+exp 1000000
+speed 1.0
+carrying 5000
+dam 30
 hp 8191
+maxhp 8191
+ac -8
+Con 6
+can_cast_spell 1
 sp 600
 maxsp 600
-exp 1000000
-dam 30
-ac -8
-speed 1.000000
+Int 12
+can_use_scroll 1
+monster 1
+Wis 30
 attack_movement 4
-level 50
+Str 10
+Dex 10
 immune 29
 protected 3
-carrying 5000
-monster 1
 unique 1
-can_cast_spell 1
-can_use_scroll 1
 x 25
 y 13
 arch skill_pyromancy
@@ -4242,21 +4234,22 @@ y 16
 end
 arch unicorn
 name greater unicorn
-hp 1000
 exp 10000
-speed 1.000000
-speed_left -13.210000
-attack_movement 4
-immune 4097
+speed 1.0
 carrying 5000
+hp 1000
+maxhp 1000
+attack_movement 4
+speed_left -13.210000
+immune 4097
 x 13
 y 7
-arch ability_paralyze
-end
 arch dragon_scale
 name figurine of a faerie dragon
 face fae_drag.171
 weight 5000
+end
+arch spell_paralyze
 end
 end
 arch unicorn
