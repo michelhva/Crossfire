@@ -8,6 +8,7 @@ warrior.111
 warrior.131
 warrior.151
 warrior.171
+facings 4
 mina
 is_animated 0
 type 37

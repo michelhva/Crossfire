@@ -22,12 +22,16 @@ beauty and eyes that see into the dark.
 endmsg
 anim
 elf.111
+elf.111
+elf.131
 elf.131
 elf.151
+elf.152
+elf.171
 elf.171
 facings 4
 mina
-is_animated 0
+is_animated 1
 type 1
 level 1
 ac 10

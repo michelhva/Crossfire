@@ -8,6 +8,7 @@ priest.111
 priest.131
 priest.151
 priest.171
+facings 4
 mina
 is_animated 0
 type 37

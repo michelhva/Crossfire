@@ -9,6 +9,7 @@ human.111
 human.131
 human.151
 human.171
+facings 4
 mina
 is_animated 0
 type 37

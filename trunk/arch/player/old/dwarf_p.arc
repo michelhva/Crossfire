@@ -7,6 +7,7 @@ dwarf_p.151
 dwarf_p.131
 dwarf_p.111
 dwarf_p.171
+facings 4
 mina
 is_animated 0
 type 37
