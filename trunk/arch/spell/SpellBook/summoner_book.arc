@@ -1,6 +1,6 @@
 Object summoner_book
-name summoners's spellbook
-name_pl summoners's spellbooks
+name summoner's spellbook
+name_pl summoner's spellbooks
 face summoner_book.111
 type 85
 skill literacy
