@@ -3,10 +3,10 @@
 #Useful for removing items (like in payment or as part of
 #an inventory check)  This is also useful for setting the number 
 #of a newly created item(s) as it will check for existing item(s) and add 
-#the appropriate number of new items avoiding such sillyness as the 
+#the appropriate number of new items avoiding such silliness as the 
 #number of the existing items being reset.
 #This will not check for the existence of an item as that would better
-#be done in the calling script so you can be flexable.
+#be done in the calling script so you can be flexible.
 #			
 #ToddMitchell
 
