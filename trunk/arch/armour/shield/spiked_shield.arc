@@ -1,6 +1,6 @@
 Object spiked_shield 
 nrof 1
-name shield
+name spiked shield
 type 33
 face spiked_shield.111
 dam 3
