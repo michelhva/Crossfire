@@ -10,6 +10,7 @@ windstorm.111
 windstorm.112
 windstorm.113
 mina
+weight 1000
 wc -30
 speed 1.0
 flying 1
