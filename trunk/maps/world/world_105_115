@@ -1,21 +1,21 @@
 arch map
 name world_105_115
+reset_timeout 7200
+difficulty 1
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
-tile_path_1 world_105_114
-tile_path_2 world_106_115
-tile_path_3 world_105_116
-tile_path_4 world_104_115
+tile_path_1 /world/world_105_114
+tile_path_2 /world/world_106_115
+tile_path_3 /world/world_105_116
+tile_path_4 /world/world_104_115
 end
 arch sea
 end
@@ -148,6 +148,9 @@ end
 arch cobblestones2
 y 28
 end
+arch barn
+y 28
+end
 arch dungeon_magic
 y 29
 end
@@ -167,6 +170,14 @@ arch dungeon_magic
 y 31
 end
 arch brush
+y 31
+end
+arch store_general
+name General Shop
+name_pl General Shop
+slaying /scorn/shops/generalshop
+hp 1
+sp 1
 y 31
 end
 arch dungeon_magic
@@ -193,8 +204,8 @@ name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
-unique 1
 y 34
+unique 1
 end
 arch dungeon_magic
 y 35
@@ -206,6 +217,14 @@ arch dungeon_magic
 y 36
 end
 arch grass
+y 36
+end
+arch courthouse
+name City Hall
+name_pl City Hall
+slaying /scorn/misc/cityhall
+hp 13
+sp 26
 y 36
 end
 arch dungeon_magic
@@ -531,9 +550,9 @@ name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
-unique 1
 x 1
 y 34
+unique 1
 end
 arch dungeon_magic
 x 1
@@ -577,6 +596,7 @@ y 39
 end
 arch sign_w
 name Street of the Gods
+name_pl Street of the Gods
 msg
 Street of the Gods...
 On the back of the sign is some graffiti
@@ -585,7 +605,6 @@ in the presence of greatness,
 or thou shalt face the rath,
 of a God Scorned!  -- Eric the Cleric
 endmsg
-name_pl Street of the Gods
 x 1
 y 39
 end
@@ -869,6 +888,10 @@ arch cobblestones2
 x 2
 y 27
 end
+arch house_up
+x 2
+y 27
+end
 arch dungeon_magic
 x 2
 y 28
@@ -937,6 +960,15 @@ arch grass
 x 2
 y 34
 end
+arch barrack_long
+name Apartment Building
+name_pl Apartment Building
+slaying /scorn/taverns/apartments
+hp 13
+sp 3
+x 2
+y 34
+end
 arch dungeon_magic
 x 2
 y 35
@@ -946,9 +978,9 @@ x 2
 y 35
 end
 arch fountain
-speed_left -41.599998
 x 2
 y 35
+speed_left -41.599998
 end
 arch dungeon_magic
 x 2
@@ -1213,6 +1245,10 @@ arch sea
 x 3
 y 21
 end
+arch big_galleon
+x 3
+y 21
+end
 arch dungeon_magic
 x 3
 y 22
@@ -1238,10 +1274,10 @@ x 3
 y 24
 end
 arch gravestone2
-no_pick 1
-no_pass 1
 x 3
 y 24
+no_pick 1
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -1276,6 +1312,10 @@ x 3
 y 28
 end
 arch cobblestones2
+x 3
+y 28
+end
+arch barrack_up
 x 3
 y 28
 end
@@ -1321,6 +1361,7 @@ y 32
 end
 arch sign_w
 name Street of Merchants
+name_pl Street of Merchants
 msg
 Street of Merchants...
 We the merchants of Scorn cater to the
@@ -1328,7 +1369,6 @@ needs of all adventurers. If you
 need Food, Equipment, Armour, Weapons,
 Magic, come and see us
 endmsg
-name_pl Street of Merchants
 x 3
 y 32
 end
@@ -1458,9 +1498,9 @@ x 3
 y 44
 end
 arch fountain
-speed_left -94.099998
 x 3
 y 44
+speed_left -94.099998
 end
 arch dungeon_magic
 x 3
@@ -1487,9 +1527,9 @@ x 3
 y 47
 end
 arch fountain
-speed_left -94.099998
 x 3
 y 47
+speed_left -94.099998
 end
 arch dungeon_magic
 x 3
@@ -2014,10 +2054,10 @@ x 5
 y 24
 end
 arch gravestone2
-no_pick 1
-no_pass 1
 x 5
 y 24
+no_pick 1
+no_pass 1
 end
 arch dungeon_magic
 x 5
@@ -2093,10 +2133,10 @@ y 32
 end
 arch sign
 name To the Port
+name_pl To the Port
 msg
 Port Area of Scorn
 endmsg
-name_pl To the Port
 x 5
 y 32
 end
@@ -2157,6 +2197,7 @@ y 37
 end
 arch sign
 name Central Square of Scorn
+name_pl Central Square of Scorn
 msg
 Read The Signs to the right for
 information on where to go and do.
@@ -2164,7 +2205,6 @@ information on where to go and do.
 WARNING: Magic is not permitted
 within Scorn city limits.
 endmsg
-name_pl Central Square of Scorn
 x 5
 y 37
 end
@@ -2419,6 +2459,15 @@ arch cobblestones2
 x 6
 y 25
 end
+arch barn
+name Pirates' Arena
+name_pl Pirates' Arena
+slaying /scorn/misc/port_arena
+hp 38
+sp 6
+x 6
+y 25
+end
 arch dungeon_magic
 x 6
 y 26
@@ -2440,6 +2489,10 @@ x 6
 y 28
 end
 arch cobblestones2
+x 6
+y 28
+end
+arch house_up
 x 6
 y 28
 end
@@ -2471,6 +2524,15 @@ arch brush
 x 6
 y 31
 end
+arch store_general
+name Gem Shop
+name_pl Gem Shop
+slaying /scorn/shops/gemshop
+hp 1
+sp 14
+x 6
+y 31
+end
 arch dungeon_magic
 x 6
 y 32
@@ -2497,10 +2559,10 @@ y 34
 end
 arch sign_e
 name Road of Riches
+name_pl Road of Riches
 msg
 Road of Riches...
 endmsg
-name_pl Road of Riches
 x 6
 y 34
 end
@@ -2509,6 +2571,15 @@ x 6
 y 35
 end
 arch grass
+x 6
+y 35
+end
+arch inn
+name Wanderer Inn
+name_pl Wanderer Inn
+slaying /scorn/taverns/inn
+hp 8
+sp 15
 x 6
 y 35
 end
@@ -2530,6 +2601,7 @@ y 37
 end
 arch sign
 name General Information
+name_pl General Information
 msg
 Safe Places to visit...
 Wanderer Central Inn (Sleep to save!)
@@ -2542,7 +2614,6 @@ Central Library
 Prison of Scorn
 And all the stores
 endmsg
-name_pl General Information
 x 6
 y 37
 end
@@ -2584,6 +2655,13 @@ x 6
 y 41
 end
 arch brush
+x 6
+y 41
+end
+arch city_tower
+name Newbie Tower
+name_pl Newbie Tower
+slaying /scorn/towers/tower
 x 6
 y 41
 end
@@ -2632,10 +2710,10 @@ y 45
 end
 arch sign_e
 name Zoo Road
+name_pl Zoo Road
 msg
 Zoo Road...
 endmsg
-name_pl Zoo Road
 x 6
 y 45
 end
@@ -2652,6 +2730,15 @@ x 6
 y 47
 end
 arch grass
+x 6
+y 47
+end
+arch church
+name Undead Church
+name_pl Undead Church
+slaying /scorn/misc/church
+hp 10
+sp 15
 x 6
 y 47
 end
@@ -2851,6 +2938,11 @@ x 7
 y 29
 end
 arch bungalow
+name Angry Giant's Bungalow
+name_pl Angry Giant's Bungalow
+slaying /scorn/houses/angrygiant
+hp 7
+sp 14
 x 7
 y 29
 end
@@ -2928,6 +3020,7 @@ y 37
 end
 arch sign
 name Beginner Dungeons
+name_pl Beginner Dungeons
 msg
 Beginner Dungeons:
 Beginners. (four paces west)
@@ -2943,10 +3036,9 @@ Newbie Tower. (just south of here)
 Mad Mage's Tower. (south)
 Dangerous Bungalow (West port area)
 Houser of Porters (near fenced area)
-Fun House (South side of main road)
+Fun House (North side of main road)
 Alfalfa's House (next to Potion Shop)
 endmsg
-name_pl Beginner Dungeons
 x 7
 y 37
 end
@@ -3011,6 +3103,15 @@ x 7
 y 45
 end
 arch brush
+x 7
+y 45
+end
+arch farmhouse
+name Smith's House
+name_pl Smith's House
+slaying /scorn/houses/house1
+hp 10
+sp 14
 x 7
 y 45
 end
@@ -3137,6 +3238,10 @@ arch sea
 x 8
 y 19
 end
+arch big_galleon
+x 8
+y 19
+end
 arch dungeon_magic
 x 8
 y 20
@@ -3150,6 +3255,15 @@ x 8
 y 21
 end
 arch sea
+x 8
+y 21
+end
+arch s_ship
+name to Stoneville
+name_pl to Stoneville
+slaying /world/world_102_127
+hp 43
+sp 13
 x 8
 y 21
 end
@@ -3246,9 +3360,9 @@ x 8
 y 32
 end
 arch fountain
-speed_left -41.599998
 x 8
 y 32
+speed_left -41.599998
 end
 arch dungeon_magic
 x 8
@@ -3280,6 +3394,8 @@ y 35
 end
 arch house_2
 name Random House
+name_pl Random House
+slaying /!
 msg
 layoutstyle onion
 floorstyle indoor
@@ -3289,8 +3405,6 @@ dungeon_level 1
 dungeon_depth 1
 decorstyle furniture
 endmsg
-name_pl Random House
-slaying /!
 x 8
 y 35
 end
@@ -3312,6 +3426,7 @@ y 37
 end
 arch sign
 name Advanced Dungeons
+name_pl Advanced Dungeons
 msg
 Advanced Dungeons:
 Prison Courtyard
@@ -3325,7 +3440,6 @@ Haunted House (South East of lake)
 Old Mansion (South of East Gate)
 Puddings Place (near Prison)
 endmsg
-name_pl Advanced Dungeons
 x 8
 y 37
 end
@@ -3413,6 +3527,15 @@ x 8
 y 47
 end
 arch grass
+x 8
+y 47
+end
+arch farmhouse
+name Patch's House
+name_pl Patch's House
+slaying /scorn/houses/house2
+hp 10
+sp 1
 x 8
 y 47
 end
@@ -3580,6 +3703,15 @@ arch cobblestones2
 x 9
 y 25
 end
+arch barn
+name Animal Quarantine
+name_pl Animal Quarantine
+slaying /scorn/cannery/ware1
+hp 19
+sp 36
+x 9
+y 25
+end
 arch dungeon_magic
 x 9
 y 26
@@ -3601,6 +3733,12 @@ x 9
 y 28
 end
 arch cobblestones2
+x 9
+y 28
+end
+arch guild
+name The Rowdy Sailor
+name_pl The Rowdy Sailor
 x 9
 y 28
 end
@@ -3629,6 +3767,15 @@ x 9
 y 31
 end
 arch grass
+x 9
+y 31
+end
+arch guild
+name Bank of Skud
+name_pl Bank of Skud
+slaying /scorn/shops/bank
+hp 7
+sp 14
 x 9
 y 31
 end
@@ -3695,6 +3842,7 @@ y 37
 end
 arch sign
 name More Information
+name_pl More Information
 msg
 PLAYER KILLING WILL NOT BE TOLERATED.
 Unless BOTH combatants agree to it.
@@ -3704,7 +3852,6 @@ For a lot of adventure information,
 talk to people in Goth's tavern, above
 the Eastern Gate House.
 endmsg
-name_pl More Information
 x 9
 y 37
 end
@@ -3761,6 +3908,13 @@ x 9
 y 43
 end
 arch grass
+x 9
+y 43
+end
+arch city_tower
+name Mad Mage's Tower
+name_pl Mad Mage's Tower
+slaying /scorn/towers/tower.mad
 x 9
 y 43
 end
@@ -4043,7 +4197,12 @@ arch grass
 x 10
 y 35
 end
-arch house_2
+arch house_small
+name Fun House
+name_pl Fun House
+slaying /scorn/houses/maze1
+hp 1
+sp 18
 x 10
 y 35
 end
@@ -4080,8 +4239,11 @@ x 10
 y 39
 end
 arch house_small
-name house
-name_pl house
+name Smithery
+name_pl Smithery
+slaying /scorn/houses/smithery
+hp 4
+sp 11
 x 10
 y 39
 end
@@ -4260,6 +4422,10 @@ arch sea1
 x 11
 y 19
 end
+arch fishboat
+x 11
+y 19
+end
 arch dungeon_magic
 x 11
 y 20
@@ -4380,6 +4546,15 @@ arch grass
 x 11
 y 31
 end
+arch church
+name House of Healing
+name_pl House of Healing
+slaying /scorn/misc/HouseofHealing
+hp 10
+sp 33
+x 11
+y 31
+end
 arch dungeon_magic
 x 11
 y 32
@@ -4453,8 +4628,11 @@ x 11
 y 39
 end
 arch house_small
-name house
-name_pl house
+name Tannery
+name_pl Tannery
+slaying /scorn/houses/tannery
+hp 5
+sp 10
 x 11
 y 39
 end
@@ -4463,6 +4641,12 @@ x 11
 y 40
 end
 arch grass
+x 11
+y 40
+end
+arch barrack_long
+name large house
+name_pl large house
 x 11
 y 40
 end
@@ -4504,8 +4688,12 @@ x 11
 y 43
 end
 arch house_small
-name house
-name_pl house
+name Wizard's Workshop
+name_pl Wizard's Workshop
+slaying /scorn/houses/wizardw
+face housesmall.111
+hp 4
+sp 13
 x 11
 y 43
 end
@@ -4536,6 +4724,7 @@ y 45
 end
 arch house_small
 name Old Basement
+name_pl Old Basement
 slaying /scorn/misc/map.esben.2
 hp 22
 sp 22
@@ -4555,6 +4744,15 @@ x 11
 y 47
 end
 arch grass
+x 11
+y 47
+end
+arch rl_house3
+name The Zoo
+name_pl The Zoo
+slaying /scorn/misc/zoo
+hp 1
+sp 16
 x 11
 y 47
 end
@@ -4717,6 +4915,12 @@ arch cobblestones2
 x 12
 y 25
 end
+arch barn
+name ware house
+name_pl ware house
+x 12
+y 25
+end
 arch dungeon_magic
 x 12
 y 26
@@ -4738,6 +4942,13 @@ x 12
 y 28
 end
 arch cobblestones2
+x 12
+y 28
+end
+arch inn
+name Port Inn
+name_pl Port Inn
+slaying /scorn/taverns/inn2
 x 12
 y 28
 end
@@ -4797,6 +5008,15 @@ arch grass
 x 12
 y 34
 end
+arch t_house1
+name Central Library
+name_pl Central Library
+slaying /scorn/misc/library
+hp 9
+sp 15
+x 12
+y 34
+end
 arch dungeon_magic
 x 12
 y 35
@@ -4838,8 +5058,11 @@ x 12
 y 39
 end
 arch house_small
-name house
-name_pl house
+name Bowyer's Workshop
+name_pl Bowyer's Workshop
+slaying /scorn/houses/bowyer
+hp 6
+sp 14
 x 12
 y 39
 end
@@ -5022,6 +5245,10 @@ arch sea
 x 13
 y 20
 end
+arch big_galleon
+x 13
+y 20
+end
 arch dungeon_magic
 x 13
 y 21
@@ -5118,6 +5345,15 @@ arch grass
 x 13
 y 31
 end
+arch store_magic
+name House of Mana
+name_pl House of Mana
+slaying /scorn/misc/PowerHouse
+hp 10
+sp 33
+x 13
+y 31
+end
 arch dungeon_magic
 x 13
 y 32
@@ -5183,8 +5419,11 @@ x 13
 y 39
 end
 arch house_small
-name house
-name_pl house
+name Jeweler's Workshop
+name_pl Jeweler's Workshop
+slaying /scorn/houses/jeweler
+hp 7
+sp 13
 x 13
 y 39
 end
@@ -5420,6 +5659,13 @@ arch sea
 x 14
 y 23
 end
+arch tower_a
+name Lighthouse
+name_pl Lighthouse
+x 14
+y 23
+glow_radius 4
+end
 arch dungeon_magic
 x 14
 y 24
@@ -5553,11 +5799,11 @@ x 14
 y 39
 end
 arch house_small
-name Fun House
-name_pl Fun House
-slaying /scorn/houses/maze1
-hp 1
-sp 18
+name Medieval Kitchen
+name_pl Medieval Kitchen
+slaying /scorn/houses/kitchen
+hp 4
+sp 11
 x 14
 y 39
 end
@@ -5824,6 +6070,10 @@ arch cobblestones2
 x 15
 y 29
 end
+arch house_long
+x 15
+y 29
+end
 arch dungeon_magic
 x 15
 y 30
@@ -5874,6 +6124,15 @@ x 15
 y 34
 end
 arch grass
+x 15
+y 34
+end
+arch fort
+name dragon guild
+name_pl dragon guild
+slaying /scorn/misc/dragon_guild
+hp 7
+sp 15
 x 15
 y 34
 end
@@ -5929,6 +6188,12 @@ x 15
 y 40
 end
 arch grass
+x 15
+y 40
+end
+arch barrack_long
+name large house
+name_pl large house
 x 15
 y 40
 end
@@ -6129,6 +6394,15 @@ arch sea1
 x 16
 y 22
 end
+arch big_galleon
+name to Wolfsburg
+name_pl to Wolfsburg
+slaying /world/world_128_109
+hp 43
+sp 25
+x 16
+y 22
+end
 arch dungeon_magic
 x 16
 y 23
@@ -6183,6 +6457,7 @@ y 27
 end
 arch house_small
 name Pirate's Den
+name_pl Pirate's Den
 slaying /wolfsburg/dungeons/pirateenter
 hp 12
 sp 1
@@ -6224,6 +6499,14 @@ end
 arch grass
 x 16
 y 31
+end
+arch guild
+name Guild of the Mailed Fist
+name_pl Guild of the Mailed Fist
+slaying /scorn/guilds/mailed_fist/ground
+x 16
+y 31
+no_pass 0
 end
 arch dungeon_magic
 x 16
@@ -6363,6 +6646,15 @@ x 16
 y 45
 end
 arch brush
+x 16
+y 45
+end
+arch collesium
+name the ARENA
+name_pl the ARENA
+slaying /scorn/misc/battle_arena/entrance
+hp 11
+sp 24
 x 16
 y 45
 end
@@ -6627,6 +6919,7 @@ y 35
 end
 arch house_2
 name Puddings Place
+name_pl Puddings Place
 slaying /scorn/misc/puddings.place
 hp 22
 x 17
@@ -6664,9 +6957,12 @@ arch grass
 x 17
 y 39
 end
-arch house_small
-name house
-name_pl house
+arch minihouse
+slaying /scorn/shops/light_shop
+name Jacob's Lighting Emporium
+name_pl Jacob's Lighting Emporium
+hp 0
+sp 13
 x 17
 y 39
 end
@@ -6917,6 +7213,15 @@ arch sea
 x 18
 y 26
 end
+arch big_galleon
+name to Port Joseph
+name_pl to Port Joseph
+slaying /world/world_101_114
+hp 16
+sp 43
+x 18
+y 26
+end
 arch dungeon_magic
 x 18
 y 27
@@ -7045,14 +7350,22 @@ arch grass
 x 18
 y 40
 end
+arch house_long
+name Old Mansion
+name_pl Old Mansion
+slaying /scorn/mansion/entrance
+hp 14
+x 18
+y 40
+end
 arch dungeon_magic
 x 18
 y 41
 end
 arch grass
-no_pass 1
 x 18
 y 41
+no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7317,6 +7630,15 @@ arch cobblestones2
 x 19
 y 31
 end
+arch prison
+name Prison
+name_pl Prison
+slaying /scorn/anthony/prison
+hp 9
+sp 23
+x 19
+y 31
+end
 arch dungeon_magic
 x 19
 y 32
@@ -7338,6 +7660,15 @@ x 19
 y 34
 end
 arch cobblestones2
+x 19
+y 34
+end
+arch l_shop1
+name Goth's Tavern
+name_pl Goth's Tavern
+slaying /scorn/taverns/goths
+hp 18
+sp 32
 x 19
 y 34
 end
@@ -7394,9 +7725,9 @@ x 19
 y 41
 end
 arch brush
-no_pass 1
 x 19
 y 41
+no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -7777,9 +8108,9 @@ x 20
 y 41
 end
 arch grass
-no_pass 1
 x 20
 y 41
+no_pass 1
 end
 arch dungeon_magic
 x 20
@@ -8681,6 +9012,10 @@ arch grass
 x 23
 y 41
 end
+arch farmhouse
+x 23
+y 41
+end
 arch farmland
 x 23
 y 42
@@ -9440,6 +9775,10 @@ end
 arch mountain
 x 27
 y 28
+end
+arch mountain_2
+x 27
+y 29
 end
 arch mountain
 x 27
@@ -10609,9 +10948,9 @@ orientation 1
 difficulty 2
 final_map /quests/peterm/quests/goblin_chief
 endmsg
-is_floor 0
 x 33
 y 15
+is_floor 0
 end
 arch mountain
 x 33
@@ -10695,12 +11034,12 @@ y 35
 end
 arch sign_w
 name Scorn City Limits
+name_pl Scorn City Limits
 msg
 Santo Dominion - 350 miles north
 Brest - 518 miles south
 Navar City - 948 miles east
 endmsg
-name_pl Scorn City Limits
 x 33
 y 35
 end
@@ -13943,311 +14282,4 @@ end
 arch mountain
 x 49
 y 49
-end
-arch barn
-y 28
-end
-arch store_general
-name General Shop
-name_pl General Shop
-slaying /scorn/shops/generalshop
-hp 1
-sp 1
-y 31
-end
-arch courthouse
-name City Hall
-name_pl City Hall
-slaying /scorn/misc/cityhall
-hp 13
-sp 26
-y 36
-end
-arch house_up
-x 2
-y 27
-end
-arch barrack_long
-name Apartment Building
-name_pl Apartment Building
-slaying /scorn/taverns/apartments
-hp 13
-sp 3
-x 2
-y 34
-end
-arch big_galleon
-x 3
-y 21
-end
-arch barrack_up
-x 3
-y 28
-end
-arch barn
-name Pirates' Arena
-name_pl Pirates' Arena
-slaying /scorn/misc/port_arena
-hp 38
-sp 6
-x 6
-y 25
-end
-arch house_up
-x 6
-y 28
-end
-arch store_general
-name Gem Shop
-name_pl Gem Shop
-slaying /scorn/shops/gemshop
-hp 1
-sp 14
-x 6
-y 31
-end
-arch inn
-name Wanderer Inn
-name_pl Wanderer Inn
-slaying /scorn/taverns/inn
-hp 8
-sp 15
-x 6
-y 35
-end
-arch city_tower
-name Newbie Tower
-name_pl Newbie Tower
-slaying /scorn/towers/tower
-x 6
-y 41
-end
-arch church
-name Undead Church
-name_pl Undead Church
-slaying /scorn/misc/church
-hp 10
-sp 15
-x 6
-y 47
-end
-arch farmhouse
-name Smith's House
-name_pl Smith's House
-slaying /scorn/houses/house1
-hp 10
-sp 14
-x 7
-y 45
-end
-arch big_galleon
-x 8
-y 19
-end
-arch s_ship
-name to Stoneville
-name_pl to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 13
-x 8
-y 21
-end
-arch farmhouse
-name Patch's House
-name_pl Patch's House
-slaying /scorn/houses/house2
-hp 10
-sp 1
-x 8
-y 47
-end
-arch barn
-name Animal Quarantine
-name_pl Animal Quarantine
-slaying /scorn/cannery/ware1
-hp 19
-sp 36
-x 9
-y 25
-end
-arch guild
-name The Rowdy Sailor
-name_pl The Rowdy Sailor
-x 9
-y 28
-end
-arch guild
-name Bank of Skud
-name_pl Bank of Skud
-slaying /scorn/shops/bank
-hp 7
-sp 14
-x 9
-y 31
-end
-arch city_tower
-name Mad Mage's Tower
-name_pl Mad Mage's Tower
-slaying /scorn/towers/tower.mad
-x 9
-y 43
-end
-arch fishboat
-x 11
-y 19
-end
-arch church
-name House of Healing
-name_pl House of Healing
-slaying /scorn/misc/HouseofHealing
-hp 10
-sp 33
-x 11
-y 31
-end
-arch barrack_long
-name large house
-name_pl large house
-x 11
-y 40
-end
-arch rl_house3
-name The Zoo
-name_pl The Zoo
-slaying /scorn/misc/zoo
-hp 1
-sp 16
-x 11
-y 47
-end
-arch barn
-name ware house
-name_pl ware house
-x 12
-y 25
-end
-arch inn
-name Port Inn
-name_pl Port Inn
-slaying /scorn/taverns/inn2
-x 12
-y 28
-end
-arch t_house1
-name Central Library
-name_pl Central Library
-slaying /scorn/misc/library
-hp 9
-sp 15
-x 12
-y 34
-end
-arch big_galleon
-x 13
-y 20
-end
-arch store_magic
-name House of Mana
-name_pl House of Mana
-slaying /scorn/misc/PowerHouse
-hp 10
-sp 33
-x 13
-y 31
-end
-arch tower_a
-name Lighthouse
-glow_radius 4
-name_pl Lighthouse
-x 14
-y 23
-end
-arch house_long
-x 15
-y 29
-end
-arch fort
-name dragon guild
-name_pl dragon guild
-slaying /scorn/misc/dragon_guild
-hp 7
-sp 15
-x 15
-y 34
-end
-arch barrack_long
-name large house
-name_pl large house
-x 15
-y 40
-end
-arch big_galleon
-name to Wolfsburg
-name_pl to Wolfsburg
-slaying /world/world_128_109
-hp 43
-sp 25
-x 16
-y 22
-end
-arch guild
-name Guild of the Mailed Fist
-name_pl Guild of the Mailed Fist
-slaying /scorn/guilds/mailed_fist/ground
-no_pass 0
-x 16
-y 31
-end
-arch collesium
-name the ARENA
-name_pl the ARENA
-slaying /scorn/misc/battle_arena/entrance
-hp 11
-sp 24
-x 16
-y 45
-end
-arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
-slaying /world/world_101_114
-hp 16
-sp 43
-x 18
-y 26
-end
-arch house_long
-name Old Mansion
-name_pl Old Mansion
-slaying /scorn/mansion/entrance
-hp 14
-x 18
-y 40
-end
-arch prison
-name Prison
-name_pl Prison
-slaying /scorn/anthony/prison
-hp 9
-sp 23
-x 19
-y 31
-end
-arch l_shop1
-name Goth's Tavern
-name_pl Goth's Tavern
-slaying /scorn/taverns/goths
-hp 18
-sp 32
-x 19
-y 34
-end
-arch farmhouse
-x 23
-y 41
-end
-arch mountain_2
-x 27
-y 29
 end

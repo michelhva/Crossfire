@@ -1,14 +1,15 @@
 arch map
 name entrance
+reset_timeout 7200
+difficulty 5
+width 20
+height 14
+enter_x 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 18:58:12 1999
 endmsg
-hp 1
-sp 0
-x 20
-y 14
 end
 arch earth
 end
@@ -1049,6 +1050,7 @@ y 11
 end
 arch grate_closed_2
 name old gate, rusted shut
+name_pl old gate, rusted shut
 x 11
 y 11
 end
@@ -1384,6 +1386,24 @@ arch earth
 x 16
 y 6
 end
+arch big_dragon_worthless
+name Xarnok
+name_pl Xarnok
+msg
+@match wise
+I am the guardian of the portal.
+@match portal
+My race is repaying their debt to the
+world.  We sought magicks forbidden and
+unleased that which must not be
+allowed to escape into the world.
+@match *
+If you are wise, you should leave.
+endmsg
+x 16
+y 6
+unaggressive 1
+end
 arch earth
 x 16
 y 7
@@ -1583,13 +1603,9 @@ arch earth
 x 19
 y 2
 end
-arch magic_portal
-slaying cave1
-hp 1
-sp 1
+arch exit
 x 19
 y 2
-speed_left -0.400000
 end
 arch earth
 x 19
@@ -1646,61 +1662,4 @@ msg
 endmsg
 x 19
 y 13
-end
-arch big_dragon_worthless
-name Xarnok
-msg
-@match wise
-I am the guardian of the portal.
-@match portal
-My race is repaying their debt to the
-world.  We sought magicks forbidden and
-unleased that which must not be
-allowed to escape into the world.
-@match *
-If you are wise, you should leave.
-endmsg
-x 16
-y 6
-unaggressive 1
-end
-More
-arch big_worthless_dragon_2
-name Xarnok
-hp 3500
-x 17
-y 6
-unaggressive 1
-end
-More
-arch big_worthless_dragon_3
-name Xarnok
-hp 3500
-x 18
-y 6
-unaggressive 1
-end
-More
-arch big_worthless_dragon_4
-name Xarnok
-hp 3500
-x 16
-y 7
-unaggressive 1
-end
-More
-arch big_worthless_dragon_5
-name Xarnok
-hp 3500
-x 17
-y 7
-unaggressive 1
-end
-More
-arch big_worthless_dragon_6
-name Xarnok
-hp 3500
-x 18
-y 7
-unaggressive 1
 end

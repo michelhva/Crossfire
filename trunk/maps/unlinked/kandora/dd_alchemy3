@@ -1,49 +1,89 @@
 arch map
 name dm_shop
+reset_timeout 7200
+difficulty 8
+width 11
+height 11
+enter_x 5
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Jan 27 18:57:19 1999
 endmsg
-hp 5
-sp 0
-x 11
-y 11
+end
+arch woodfloor2
 end
 arch wall_2_2_2
+end
+arch woodfloor2
+y 1
 end
 arch wall_2_1_1
 y 1
 end
+arch woodfloor2
+y 2
+end
 arch wall_2_1_1
 y 2
+end
+arch woodfloor2
+y 3
 end
 arch wall_2_1_1
 y 3
 end
+arch woodfloor2
+y 4
+end
 arch wall_2_1_1
 y 4
+end
+arch woodfloor2
+y 5
 end
 arch wall_2_1_1
 y 5
 end
+arch woodfloor2
+y 6
+end
 arch wall_2_1_1
 y 6
+end
+arch woodfloor2
+y 7
 end
 arch wall_2_1_1
 y 7
 end
+arch woodfloor2
+y 8
+end
 arch wall_2_1_1
 y 8
+end
+arch woodfloor2
+y 9
 end
 arch wall_2_1_1
 y 9
 end
+arch woodfloor2
+y 10
+end
 arch wall_2_2_1
 y 10
 end
+arch woodfloor2
+x 1
+end
 arch wall_2_1_2
 x 1
+end
+arch woodfloor2
+x 1
+y 1
 end
 arch stair_3_down
 slaying dd_alchemy
@@ -56,55 +96,107 @@ arch dungeon_magic
 x 1
 y 1
 end
-arch dungeon_magic
+arch woodfloor2
 x 1
 y 2
 end
 arch dungeon_magic
+x 1
+y 2
+end
+arch woodfloor2
 x 1
 y 3
 end
 arch dungeon_magic
 x 1
+y 3
+end
+arch woodfloor2
+x 1
 y 4
 end
 arch dungeon_magic
+x 1
+y 4
+end
+arch woodfloor2
 x 1
 y 5
 end
 arch dungeon_magic
 x 1
+y 5
+end
+arch woodfloor2
+x 1
 y 6
 end
 arch dungeon_magic
+x 1
+y 6
+end
+arch woodfloor2
 x 1
 y 7
 end
 arch dungeon_magic
 x 1
+y 7
+end
+arch woodfloor2
+x 1
 y 8
+end
+arch dungeon_magic
+x 1
+y 8
+end
+arch woodfloor2
+x 1
+y 9
 end
 arch dungeon_magic
 x 1
 y 9
 end
+arch woodfloor2
+x 1
+y 10
+end
 arch wall_2_1_2
 x 1
 y 10
 end
+arch woodfloor2
+x 2
+end
 arch wall_3_3
 x 2
 end
-arch wall_2_1_1
+arch woodfloor2
 x 2
 y 1
 end
 arch wall_2_1_1
 x 2
+y 1
+end
+arch woodfloor2
+x 2
 y 2
+end
+arch wall_2_1_1
+x 2
+y 2
+end
+arch woodfloor2
+x 2
+y 3
 end
 arch locked_door2
 name lab door
+name_pl lab door
 slaying 32123
 msg
 Darn. It's locked.
@@ -112,33 +204,64 @@ endmsg
 x 2
 y 3
 end
+arch woodfloor2
+x 2
+y 4
+end
 arch wall_2_1_1
 x 2
 y 4
+end
+arch woodfloor2
+x 2
+y 5
 end
 arch wall_3_2
 x 2
 y 5
 end
-arch wall_2_1_1
+arch woodfloor2
 x 2
 y 6
 end
 arch wall_2_1_1
 x 2
+y 6
+end
+arch woodfloor2
+x 2
 y 7
+end
+arch wall_2_1_1
+x 2
+y 7
+end
+arch woodfloor2
+x 2
+y 8
 end
 arch wall_2_2_1
 x 2
 y 8
 end
+arch woodfloor2
+x 2
+y 9
+end
 arch dungeon_magic
 x 2
 y 9
 end
+arch woodfloor2
+x 2
+y 10
+end
 arch wall_2_1_2
 x 2
 y 10
+end
+arch woodfloor2
+x 3
 end
 arch wall_2_1_2
 x 3
@@ -187,29 +310,56 @@ arch acid_pool
 x 3
 y 4
 end
+arch woodfloor2
+x 3
+y 5
+end
 arch wall_2_1_2
 x 3
 y 5
 end
-arch dungeon_magic
+arch woodfloor2
 x 3
 y 6
 end
 arch dungeon_magic
 x 3
+y 6
+end
+arch woodfloor2
+x 3
 y 7
 end
 arch dungeon_magic
+x 3
+y 7
+end
+arch woodfloor2
 x 3
 y 8
 end
 arch dungeon_magic
 x 3
+y 8
+end
+arch woodfloor2
+x 3
 y 9
+end
+arch dungeon_magic
+x 3
+y 9
+end
+arch woodfloor2
+x 3
+y 10
 end
 arch wall_2_1_2
 x 3
 y 10
+end
+arch woodfloor2
+x 4
 end
 arch wall_2_1_2
 x 4
@@ -234,13 +384,25 @@ arch blackmarble
 x 4
 y 4
 end
+arch woodfloor2
+x 4
+y 5
+end
 arch wall_2_1_2
 x 4
 y 5
 end
+arch woodfloor2
+x 4
+y 6
+end
 arch dungeon_magic
 x 4
 y 6
+end
+arch woodfloor2
+x 4
+y 7
 end
 arch dungeon_magic
 x 4
@@ -262,17 +424,32 @@ endmsg
 x 4
 y 7
 end
-arch dungeon_magic
+arch woodfloor2
 x 4
 y 8
 end
 arch dungeon_magic
 x 4
+y 8
+end
+arch woodfloor2
+x 4
 y 9
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch woodfloor2
+x 4
+y 10
 end
 arch wall_2_1_2
 x 4
 y 10
+end
+arch woodfloor2
+x 5
 end
 arch wall_2_1_2
 x 5
@@ -309,31 +486,59 @@ arch blackmarble
 x 5
 y 4
 end
+arch woodfloor2
+x 5
+y 5
+end
 arch wall_3_3
 x 5
 y 5
+end
+arch woodfloor2
+x 5
+y 6
 end
 arch wall_2_1_1
 x 5
 y 6
 end
+arch woodfloor2
+x 5
+y 7
+end
 arch gate_closed_2
 name strange gate
+name_pl strange gate
 x 5
 y 7
 connected 4
 end
-arch wall_2_1_1
+arch woodfloor2
 x 5
 y 8
 end
 arch wall_2_1_1
 x 5
+y 8
+end
+arch woodfloor2
+x 5
 y 9
+end
+arch wall_2_1_1
+x 5
+y 9
+end
+arch woodfloor2
+x 5
+y 10
 end
 arch wall_3_1
 x 5
 y 10
+end
+arch woodfloor2
+x 6
 end
 arch wall_2_1_2
 x 6
@@ -369,9 +574,17 @@ arch crawling_chaos
 x 6
 y 3
 end
+arch woodfloor2
+x 6
+y 4
+end
 arch wall_2_2_2
 x 6
 y 4
+end
+arch woodfloor2
+x 6
+y 5
 end
 arch wall_2_2_4
 x 6
@@ -413,9 +626,16 @@ arch cannon_8
 x 6
 y 9
 end
+arch woodfloor2
+x 6
+y 10
+end
 arch wall_2_1_2
 x 6
 y 10
+end
+arch woodfloor2
+x 7
 end
 arch wall_2_1_2
 x 7
@@ -438,6 +658,7 @@ y 2
 end
 arch chest
 name chest... with bad breath?
+name_pl chest... with bad breath?
 hp 500
 maxhp 600
 exp 1500
@@ -462,6 +683,10 @@ end
 arch blackmarble
 x 7
 y 3
+end
+arch woodfloor2
+x 7
+y 4
 end
 arch wall_2_1_2
 x 7
@@ -503,9 +728,16 @@ arch woodfloor2
 x 7
 y 9
 end
+arch woodfloor2
+x 7
+y 10
+end
 arch wall_2_1_2
 x 7
 y 10
+end
+arch woodfloor2
+x 8
 end
 arch wall_2_1_2
 x 8
@@ -537,6 +769,10 @@ end
 arch earthwall
 x 8
 y 3
+end
+arch woodfloor2
+x 8
+y 4
 end
 arch wall_2_1_2
 x 8
@@ -560,6 +796,7 @@ y 7
 end
 arch conjurer2
 name Pilladimus
+name_pl Pilladimus
 msg
 @match golem
 I mistakenly opened a Portal of chaos
@@ -595,9 +832,16 @@ arch woodfloor2
 x 8
 y 9
 end
+arch woodfloor2
+x 8
+y 10
+end
 arch wall_2_1_2
 x 8
 y 10
+end
+arch woodfloor2
+x 9
 end
 arch wall_2_1_2
 x 9
@@ -610,31 +854,31 @@ arch chest
 x 9
 y 1
 carrying 14606
-arch water
-end
-arch fix_mercury
-end
-arch true_lead
-end
-arch liver
-end
-arch random_mineral
-end
-arch random_mineral
-end
-arch random_mineral
-end
-arch random_food
-end
-arch random_plant
-end
-arch random_plant
-end
-arch random_plant
+arch rose_white
 end
 arch clover
 end
-arch rose_white
+arch random_plant
+end
+arch random_plant
+end
+arch random_plant
+end
+arch random_food
+end
+arch random_mineral
+end
+arch random_mineral
+end
+arch random_mineral
+end
+arch liver
+end
+arch true_lead
+end
+arch fix_mercury
+end
+arch water
 end
 end
 arch blackmarble
@@ -653,53 +897,9 @@ arch chest
 x 9
 y 3
 carrying 16500
-arch scroll_alchemy
-end
-arch scroll
-name brittle scroll
-msg
-...pixie wing, icor of raas, water of
-diamond... combine these and..
-endmsg
-end
-arch tome
-name tome of holyness
-msg
-A priest's blessing is always nice,
-but it helps to have the power of
-elemental forces to back it up. Take
-20 missiles, 3 unicorn horns, clover,
-and 2 water of sapphire and you're
-ready for a Crusade!
-endmsg
-end
-arch quarto
-name Magic Wards
-msg
-Magicians can weild mighty forces.
-Countermagics are the best defense.
-All you need is 2 parts lead to each
-part of philosophical phosphorus.  One
-can protect themself by quafing a
-potion made from the water of ruby,
-the tounge of a beholde
-endmsg
-end
-arch book_clasp
-name scorched book
-msg
-A potent bomb can be made by combining
-the dust of conflagration & the dust of
-ignition.  Keep away from children!
-If you need to repel an army, then
-you'll need some stronger stuff -
-dissolve philosophical portions of
-salt, phosphorus, & sulfur into the
-water of diamond. Caution is advised
-endmsg
-end
 arch book_read
 name Alchemy of Dragonbane
+name_pl Alchemy of Dragonbane
 msg
 One dragon claw can provide an
 extremely sharp tip for up to 20 bolts
@@ -712,6 +912,59 @@ up to 20 missiles with a potent dragon
 toxin.
 endmsg
 end
+arch book_clasp
+name scorched book
+name_pl scorched book
+msg
+A potent bomb can be made by combining
+the dust of conflagration & the dust of
+ignition.  Keep away from children!
+If you need to repel an army, then
+you'll need some stronger stuff -
+dissolve philosophical portions of
+salt, phosphorus, & sulfur into the
+water of diamond. Caution is advised
+endmsg
+end
+arch quarto
+name Magic Wards
+name_pl Magic Wards
+msg
+Magicians can weild mighty forces.
+Countermagics are the best defense.
+All you need is 2 parts lead to each
+part of philosophical phosphorus.  One
+can protect themself by quafing a
+potion made from the water of ruby,
+the tounge of a beholde
+endmsg
+end
+arch tome
+name tome of holyness
+name_pl tome of holyness
+msg
+A priest's blessing is always nice,
+but it helps to have the power of
+elemental forces to back it up. Take
+20 missiles, 3 unicorn horns, clover,
+and 2 water of sapphire and you're
+ready for a Crusade!
+endmsg
+end
+arch scroll
+name brittle scroll
+name_pl brittle scroll
+msg
+...pixie wing, icor of raas, water of
+diamond... combine these and..
+endmsg
+end
+arch scroll_alchemy
+end
+end
+arch woodfloor2
+x 9
+y 4
 end
 arch wall_2_1_2
 x 9
@@ -755,6 +1008,7 @@ y 8
 end
 arch key2
 name lab key
+name_pl lab key
 slaying 32123
 x 9
 y 8
@@ -767,48 +1021,95 @@ arch torch_indigo
 x 9
 y 9
 end
+arch woodfloor2
+x 9
+y 10
+end
 arch wall_2_1_2
 x 9
 y 10
 end
+arch woodfloor2
+x 10
+end
 arch wall_2_2_3
 x 10
 end
-arch wall_2_1_1
+arch woodfloor2
 x 10
 y 1
 end
 arch wall_2_1_1
 x 10
+y 1
+end
+arch woodfloor2
+x 10
 y 2
+end
+arch wall_2_1_1
+x 10
+y 2
+end
+arch woodfloor2
+x 10
+y 3
 end
 arch wall_2_1_1
 x 10
 y 3
 end
+arch woodfloor2
+x 10
+y 4
+end
 arch wall_3_4
 x 10
 y 4
 end
-arch wall_2_1_1
+arch woodfloor2
 x 10
 y 5
 end
 arch wall_2_1_1
 x 10
+y 5
+end
+arch woodfloor2
+x 10
 y 6
 end
 arch wall_2_1_1
+x 10
+y 6
+end
+arch woodfloor2
 x 10
 y 7
 end
 arch wall_2_1_1
 x 10
+y 7
+end
+arch woodfloor2
+x 10
 y 8
 end
 arch wall_2_1_1
 x 10
+y 8
+end
+arch woodfloor2
+x 10
 y 9
+end
+arch wall_2_1_1
+x 10
+y 9
+end
+arch woodfloor2
+x 10
+y 10
 end
 arch wall_2_2_4
 x 10
