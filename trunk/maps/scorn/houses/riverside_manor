@@ -577,6 +577,14 @@ arch woodfloor
 x 3
 y 7
 end
+arch woman
+msg
+@match *
+eeeek!  I think I saw a mouse.
+endmsg
+x 3
+y 7
+end
 arch woodfloor
 x 3
 y 8
@@ -866,14 +874,6 @@ x 5
 y 7
 end
 arch woodfloor
-x 5
-y 8
-end
-arch woman
-msg
-@match *
-eeeek!  I think I saw a mouse.
-endmsg
 x 5
 y 8
 end
@@ -1595,6 +1595,10 @@ arch grass
 x 9
 y 18
 end
+arch grass
+x 9
+y 19
+end
 arch key2
 name Esmeralda
 face goose.131
@@ -1602,10 +1606,6 @@ name_pl Esmeralda
 title the Goose
 slaying EsmeraldaTheGoose
 animation goose
-x 9
-y 18
-end
-arch grass
 x 9
 y 19
 end
