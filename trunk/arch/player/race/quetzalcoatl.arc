@@ -36,6 +36,7 @@ quetzalcoatl.131
 quetzalcoatl.132
 quetzalcoatl.171
 quetzalcoatl.172
+facings 2
 mina
 is_animated 0
 type 1

@@ -25,6 +25,7 @@ elf.111
 elf.131
 elf.151
 elf.171
+facings 4
 mina
 is_animated 0
 type 1

@@ -7,6 +7,7 @@ thief.111
 thief.131
 thief.151
 thief.171
+facings 4
 mina
 is_animated 0
 type 37

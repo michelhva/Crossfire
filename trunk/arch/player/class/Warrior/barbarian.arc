@@ -7,6 +7,7 @@ barbarian.111
 barbarian.131
 barbarian.151
 barbarian.171
+facings 4
 mina
 is_animated 0
 type 37

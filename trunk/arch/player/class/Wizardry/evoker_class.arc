@@ -7,6 +7,7 @@ evoker.111
 evoker.131
 evoker.151
 evoker.171
+facings 4
 mina
 is_animated 0
 type 37

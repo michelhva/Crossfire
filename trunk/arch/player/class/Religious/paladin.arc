@@ -8,6 +8,7 @@ paladin.111
 paladin.131
 paladin.151
 paladin.171
+facings 4
 mina
 is_animated 0
 Str 0

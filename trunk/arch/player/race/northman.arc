@@ -19,6 +19,7 @@ viking.111
 viking.131
 viking.151
 viking.171
+facings 4
 mina
 resist_cold 30
 is_animated 0

@@ -7,6 +7,7 @@ swashbuckl.111
 swashbuckl.151
 swashbuckl.171
 swashbuckl.131
+facings 4
 mina
 is_animated 0
 type 37

@@ -18,6 +18,7 @@ halfling.151
 halfling.131
 halfling.111
 halfling.171
+facings 4
 mina
 is_animated 0
 type 1

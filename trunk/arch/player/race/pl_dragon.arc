@@ -31,6 +31,7 @@ pl_dragon.131
 pl_dragon.132
 pl_dragon.171
 pl_dragon.172
+facings 2
 mina
 is_animated 0
 type 1

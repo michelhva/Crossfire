@@ -22,6 +22,7 @@ troll_p.111
 troll_p.131
 troll_p.151
 troll_p.171
+facings 4
 mina
 is_animated 0
 type 1

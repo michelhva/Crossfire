@@ -7,6 +7,7 @@ alchemist.111
 alchemist.131
 alchemist.151
 alchemist.171
+facings 4
 mina
 is_animated 0
 type 37

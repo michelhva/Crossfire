@@ -8,6 +8,7 @@ mage.111
 mage.131
 mage.151
 mage.171
+facings 4
 mina
 is_animated 0
 type 37
