@@ -27,10 +27,10 @@ speed 1
 attacktype 5
 Str -7
 Dex 4
-Con -3
-Wis 3
+Con -4
 Cha -4
-Int 2
+Int 3
+Pow 5
 immune 1028
 vulnerable 656
 editable 0
