@@ -398,6 +398,15 @@ arch flagstone
 x 2
 y 10
 end
+arch magic_mouth
+msg
+You were summoned here because you have been
+naughty.
+Say "I understand" and the door will open.
+endmsg
+x 2
+y 10
+end
 arch dungeon_magic
 x 2
 y 11
@@ -980,6 +989,15 @@ arch flagstone
 x 6
 y 10
 end
+arch magic_mouth
+msg
+You were summoned here because you have been
+naughty.
+Say "I understand" and the door will open.
+endmsg
+x 6
+y 10
+end
 arch dungeon_magic
 x 6
 y 11
@@ -1552,6 +1570,15 @@ x 10
 y 10
 end
 arch flagstone
+x 10
+y 10
+end
+arch magic_mouth
+msg
+You were summoned here because you have been
+naughty.
+Say "I understand" and the door will open.
+endmsg
 x 10
 y 10
 end
