@@ -20,7 +20,7 @@ fix_mercury.112
 mina
 speed 0.5
 material 2
-value 4000
+value 400
 immune 72
 type 73
 nrof 1

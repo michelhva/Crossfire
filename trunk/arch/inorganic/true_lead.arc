@@ -3,7 +3,7 @@ name block
 title of true lead
 face true_lead.111
 material 2
-value 13000
+value 530
 immune 68
 type 73
 nrof 1
