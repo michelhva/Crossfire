@@ -18,13 +18,14 @@
 #
 # The author can be reached via e-mail at jbontje@suespammers.org
 #
-#Updated to use new path functions in CFPython -Todd Mitchell
+# Updated to use new path functions in CFPython and Bank
+# acount cleanup - Todd Mitchell
 
 import CFPython
 import sys
 sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
 import CFLog
-import string
+import CFBank
 
 activator = CFPython.WhoIsActivator()
 name = CFPython.GetName(activator)
