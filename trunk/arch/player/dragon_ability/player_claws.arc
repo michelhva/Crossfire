@@ -11,7 +11,6 @@ attacktype 4
 no_drop 1
 editable 0
 skill clawing
-animation red_dragon2
 end
 #
 Object ice_clawing
@@ -27,7 +26,7 @@ attacktype 16
 no_drop 1
 editable 0
 skill clawing
-animation green_dragon2
+animation pl_dragon_bl
 end
 #
 Object electric_clawing
@@ -43,7 +42,7 @@ invisible 1
 attacktype 8
 no_drop 1
 editable 0
-animation blue_dragon2
+animation pl_dragon_blue
 end
 #
 Object poison_clawing
@@ -58,8 +57,8 @@ skill clawing
 invisible 1
 attacktype 1024
 no_drop 1
+animation pl_dragon_g
 editable 0
-animation black_dragon2
 end
 
 
