@@ -2,9 +2,8 @@ Object vitriol
 name vitriol
 other_arch vitriol_splash
 type 10
-face acidsphere.111
-animation acid_sphere
-is_animated 0
+face v_splash.111
+animation vitriol_splash
 is_turnable 0
 walk_on 1
 fly_on 1
@@ -22,9 +21,11 @@ Object vitriol_splash
 name vitriol splash
 other_arch vitriol_pool
 type 88
-face acidsphere.111
-animation acid_sphere
-is_animated 0
+face v_splash.111
+anim
+v_splash.111
+v_splash.112
+mina
 is_turnable 1
 walk_on 1
 fly_on 1
@@ -46,13 +47,15 @@ walk_on 1
 wc -30
 food 1
 name vitriol pool
-face acid_pool.111
-animation acid_pool
+face v_pool.111
+anim
+v_pool.111
+v_pool.112
+mina
 speed 0.2
 no_pick 1
 attacktype 4
 hp 60
 dam 30
-is_floor 1
 editable 8
 end
