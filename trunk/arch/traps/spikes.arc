@@ -1,6 +1,6 @@
 Object trap_spikes2
 name spikes
-type 154
+type 155
 face tspikes.111
 speed 1
 hp 1

@@ -1,6 +1,6 @@
 Object trap_rocks
 name falling rocks trap
-type 154
+type 155
 face falling_rocks.111
 speed 1
 hp 1

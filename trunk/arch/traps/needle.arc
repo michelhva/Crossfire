@@ -1,6 +1,6 @@
 Object trap_needle
 name poison needle
-type 154
+type 155
 face needle.111
 speed 1
 hp 1
