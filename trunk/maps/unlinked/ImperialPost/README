@@ -1,0 +1,31 @@
+Mail and Messageboard Python scripts for Crossfire
+Joris Bontje <jbontje@suespammers.org>
+
+This collection offers scripts and a map that allow you
+to send mail to your fellow players and place public
+messageboards in the game. Additionally you can request
+information about the last visit of a player to a NPC
+and use her as a bank.
+
+Requirements:
+- Crossfire (1.1 or higher)
+- Python (2.0 or higher)
+- Python Crossfire plugin (latest)
+
+Installation:
+Place the content of python/ in (for example)
+/path/to/share/crossfire/maps/python/ and the content of
+local/ (with subdirectory ImperialPost) in
+/path/to/share/crossfire/maps/local/ImperialPost/
+
+Modify all .py files and change the patchs according to
+your installation, don't forget to point to the correct
+'var' directory so that the database files can be stored.
+
+The main map for this is 'local/ImperialPost/IPO', link to
+it in Scorn.
+
+It is possible to place multiple messageboards in your
+game, copy the example on from local/ImperialPost/IPO and
+change 'event_say_options GENERALBOARD' and give it an
+unique name.
