@@ -1,15 +1,20 @@
 Object swashbuckler_class
 name swashbuckler
 randomitems swashbuckler_class_items
-face swashbuckl.171
+face swashbuckl.151
 anim
 swashbuckl.111
+swashbuckl.112
+swashbuckl.131
+swashbuckl.131
+swashbuckl.152
 swashbuckl.151
 swashbuckl.171
-swashbuckl.131
+swashbuckl.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 37
 Str 1
 Dex 2
