@@ -3519,6 +3519,7 @@ arch spell_sm_lightning
 end
 arch cleric_book
 value 4400
+randomitems none
 arch spell_face_of_death
 end
 end
@@ -3588,6 +3589,7 @@ arch sorcerer_book
 name stones
 face largestone.111
 no_pick 1
+randomitems none
 arch spell_color_spray
 end
 end
@@ -3622,6 +3624,7 @@ arch sorcerer_book
 name stones
 face largestone.111
 no_pick 1
+randomitems none
 arch spell_color_spray
 end
 end
@@ -3656,6 +3659,7 @@ arch sorcerer_book
 name stones
 face largestone.111
 no_pick 1
+randomitems none
 arch spell_color_spray
 end
 end
