@@ -1,13 +1,15 @@
 arch map
+name <untitled>
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Tue Oct 19 17:34:43 1993
 endmsg
-hp 12
-sp 1
-x 27
-y 22
+width 27
+height 22
+enter_x 12
+enter_y 1
+outdoor 1
 end
 arch pstone_2
 end
@@ -189,11 +191,11 @@ arch pstone_2
 x 1
 y 11
 end
-arch pstone_2
+arch pstone_1
 x 1
 y 12
 end
-arch pstone_2
+arch pstone_1
 x 1
 y 13
 end
@@ -213,7 +215,7 @@ arch pstone_2
 x 1
 y 17
 end
-arch pstone_2
+arch beach
 x 1
 y 18
 end
@@ -247,7 +249,7 @@ arch pstone_2
 x 2
 y 2
 end
-arch pstone_2
+arch beach
 x 2
 y 3
 end
@@ -268,6 +270,10 @@ x 2
 y 7
 end
 arch pstone_2
+x 2
+y 8
+end
+arch goose
 x 2
 y 8
 end
@@ -307,11 +313,11 @@ arch pstone_2
 x 2
 y 17
 end
-arch pstone_2
+arch beach
 x 2
 y 18
 end
-arch pstone_2
+arch beach
 x 2
 y 19
 end
@@ -337,11 +343,11 @@ arch pstone_2
 x 3
 y 1
 end
-arch pstone_2
+arch beach
 x 3
 y 2
 end
-arch pstone_2
+arch beach
 x 3
 y 3
 end
@@ -457,7 +463,7 @@ arch pstone_2
 x 3
 y 18
 end
-arch pstone_2
+arch beach
 x 3
 y 19
 end
@@ -508,6 +514,10 @@ x 4
 y 6
 end
 arch pirate
+x 4
+y 6
+end
+arch light3
 x 4
 y 6
 end
@@ -603,11 +613,11 @@ arch pstone_2
 x 4
 y 18
 end
-arch pstone_2
+arch beach
 x 4
 y 19
 end
-arch pstone_2
+arch pstone_1
 x 4
 y 20
 end
@@ -633,7 +643,7 @@ arch pstone_2
 x 5
 y 2
 end
-arch pstone_2
+arch beach
 x 5
 y 3
 end
@@ -728,11 +738,15 @@ end
 arch book_read
 name Scurvy Dog's Of the Sea
 msg
-This is the story of Bucaneer Bodingo, 
-Lord of the Isle of Dread, Scourge of the 
+This is the story of Bucaneer Bodingo,
+Lord of the Isle of Dread, Scourge of the
 Seven Seas, and the single most blood-thirsty
-pirate in history.  
+pirate in history.
 endmsg
+x 5
+y 15
+end
+arch light3
 x 5
 y 15
 end
@@ -854,6 +868,8 @@ y 13
 end
 arch stair_3_down
 slaying piratedung
+hp 2
+sp 1
 x 6
 y 13
 end
@@ -893,7 +909,7 @@ arch pstone_2
 x 6
 y 18
 end
-arch pstone_2
+arch pstone_1
 x 6
 y 19
 end
@@ -1054,6 +1070,8 @@ x 8
 y 2
 end
 arch dog
+can_see_in_dark 1
+Wis 15
 x 8
 y 2
 end
@@ -1173,7 +1191,7 @@ arch cobblestones2
 x 8
 y 19
 end
-arch cobblestones2
+arch pstone_1
 x 8
 y 20
 end
@@ -1227,6 +1245,10 @@ endmsg
 x 9
 y 6
 end
+arch light3
+x 9
+y 6
+end
 arch woodfloor
 x 9
 y 7
@@ -1260,6 +1282,10 @@ x 9
 y 11
 end
 arch table_3
+x 9
+y 11
+end
+arch light3
 x 9
 y 11
 end
@@ -1303,7 +1329,7 @@ arch cobblestones2
 x 9
 y 19
 end
-arch cobblestones2
+arch pstone_1
 x 9
 y 20
 end
@@ -1434,6 +1460,8 @@ x 10
 y 17
 end
 arch dog
+can_see_in_dark 1
+Wis 15
 x 10
 y 17
 end
@@ -1445,7 +1473,11 @@ arch cobblestones2
 x 10
 y 19
 end
-arch cobblestones2
+arch pstone_1
+x 10
+y 20
+end
+arch swall_2_2_2
 x 10
 y 20
 end
@@ -1453,7 +1485,7 @@ arch pstone_2
 x 10
 y 21
 end
-arch swall_2_1_2
+arch swall_3_1
 x 10
 y 21
 end
@@ -1515,6 +1547,10 @@ arch door_look_2
 x 11
 y 7
 end
+arch light3
+x 11
+y 7
+end
 arch woodfloor
 x 11
 y 8
@@ -1551,6 +1587,10 @@ arch table_3
 x 11
 y 12
 end
+arch light3
+x 11
+y 12
+end
 arch woodfloor
 x 11
 y 13
@@ -1560,6 +1600,10 @@ x 11
 y 13
 end
 arch woodfloor
+x 11
+y 14
+end
+arch light3
 x 11
 y 14
 end
@@ -1587,7 +1631,11 @@ arch cobblestones2
 x 11
 y 19
 end
-arch cobblestones2
+arch pstone_1
+x 11
+y 20
+end
+arch swall_2_2_3
 x 11
 y 20
 end
@@ -1595,23 +1643,23 @@ arch pstone_2
 x 11
 y 21
 end
-arch swall_2_1_2
+arch swall_2_2_4
 x 11
 y 21
 end
 arch exit
-slaying /world/world_105_115
 face cobblesto1.111
-hp 16
-sp 27
-x 12
+slaying /world/world_127_109
+hp 46
+sp 7
 is_animated 0
+x 12
 end
 arch cobblestones2
 msg
-This area and all areas which can be 
-accessed through it are the creation 
-of Ender.  
+This area and all areas which can be
+accessed through it are the creation
+of Ender.
 E-mail Questions and Comments to
 ende@hairball.ecst.csuchico.ed
 endmsg
@@ -1635,6 +1683,10 @@ x 12
 y 5
 end
 arch door_look_1
+x 12
+y 5
+end
+arch light4
 x 12
 y 5
 end
@@ -1726,11 +1778,12 @@ arch cobblestones2
 x 12
 y 20
 end
-arch pstone_2
-x 12
-y 21
-end
-arch swall_2_1_2
+arch exit
+face cobblesto1.111
+slaying /world/world_127_109
+hp 46
+sp 7
+is_animated 0
 x 12
 y 21
 end
@@ -1808,6 +1861,10 @@ arch table_3
 x 13
 y 11
 end
+arch light3
+x 13
+y 11
+end
 arch woodfloor
 x 13
 y 12
@@ -1828,7 +1885,7 @@ arch woodfloor
 x 13
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 13
 y 15
 end
@@ -1848,7 +1905,11 @@ arch cobblestones2
 x 13
 y 19
 end
-arch cobblestones2
+arch pstone_1
+x 13
+y 20
+end
+arch swall_2_2_2
 x 13
 y 20
 end
@@ -1856,7 +1917,7 @@ arch pstone_2
 x 13
 y 21
 end
-arch swall_2_1_2
+arch swall_2_2_1
 x 13
 y 21
 end
@@ -1918,6 +1979,10 @@ arch door_look_2
 x 14
 y 7
 end
+arch light3
+x 14
+y 7
+end
 arch woodfloor
 x 14
 y 8
@@ -1966,11 +2031,15 @@ arch woodfloor
 x 14
 y 14
 end
+arch trap_spike_pit
+x 14
+y 14
+end
 arch woodfloor
 x 14
 y 15
 end
-arch wwall_2_1_2
+arch door_look_1
 x 14
 y 15
 end
@@ -1990,7 +2059,11 @@ arch cobblestones2
 x 14
 y 19
 end
-arch cobblestones2
+arch pstone_1
+x 14
+y 20
+end
+arch swall_2_2_3
 x 14
 y 20
 end
@@ -1998,7 +2071,7 @@ arch pstone_2
 x 14
 y 21
 end
-arch swall_2_1_2
+arch swall_3_1
 x 14
 y 21
 end
@@ -2080,6 +2153,10 @@ arch table_3
 x 15
 y 12
 end
+arch light3
+x 15
+y 12
+end
 arch woodfloor
 x 15
 y 13
@@ -2096,7 +2173,7 @@ arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 15
 y 15
 end
@@ -2109,6 +2186,8 @@ x 15
 y 17
 end
 arch dog
+can_see_in_dark 1
+Wis 15
 x 15
 y 17
 end
@@ -2120,7 +2199,7 @@ arch cobblestones2
 x 15
 y 19
 end
-arch cobblestones2
+arch beach
 x 15
 y 20
 end
@@ -2246,7 +2325,7 @@ arch cobblestones2
 x 16
 y 19
 end
-arch cobblestones2
+arch beach
 x 16
 y 20
 end
@@ -2372,7 +2451,7 @@ arch cobblestones2
 x 17
 y 19
 end
-arch cobblestones2
+arch beach
 x 17
 y 20
 end
@@ -2443,6 +2522,10 @@ x 18
 y 9
 end
 arch woodfloor
+x 18
+y 10
+end
+arch light4
 x 18
 y 10
 end
@@ -2533,6 +2616,8 @@ x 19
 y 2
 end
 arch dog
+can_see_in_dark 1
+Wis 15
 x 19
 y 2
 end
@@ -2828,6 +2913,10 @@ arch woodfloor
 x 21
 y 6
 end
+arch light4
+x 21
+y 6
+end
 arch woodfloor
 x 21
 y 7
@@ -2841,6 +2930,10 @@ x 21
 y 9
 end
 arch woodfloor
+x 21
+y 10
+end
+arch light4
 x 21
 y 10
 end
@@ -2868,6 +2961,10 @@ arch woodfloor
 x 21
 y 15
 end
+arch light4
+x 21
+y 15
+end
 arch woodfloor
 x 21
 y 16
@@ -2892,7 +2989,7 @@ arch pstone_2
 x 21
 y 19
 end
-arch pstone_2
+arch beach
 x 21
 y 20
 end
@@ -3038,11 +3135,11 @@ arch ytree_2
 x 22
 y 18
 end
-arch pstone_2
+arch beach
 x 22
 y 19
 end
-arch pstone_2
+arch beach
 x 22
 y 20
 end
