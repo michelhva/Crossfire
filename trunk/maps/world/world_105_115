@@ -232,9 +232,6 @@ end
 arch cobblestones2
 y 40
 end
-arch light4
-y 40
-end
 arch dungeon_magic
 y 41
 end
@@ -912,6 +909,10 @@ arch brush
 x 2
 y 31
 end
+arch lamppost
+x 2
+y 31
+end
 arch dungeon_magic
 x 2
 y 32
@@ -954,6 +955,10 @@ x 2
 y 36
 end
 arch grass
+x 2
+y 36
+end
+arch lamppost
 x 2
 y 36
 end
@@ -1246,10 +1251,6 @@ arch cobblestones2
 x 3
 y 25
 end
-arch light4
-x 3
-y 25
-end
 arch dungeon_magic
 x 3
 y 26
@@ -1263,6 +1264,10 @@ x 3
 y 27
 end
 arch cobblestones2
+x 3
+y 27
+end
+arch lamppost
 x 3
 y 27
 end
@@ -1401,6 +1406,10 @@ x 3
 y 40
 end
 arch brush
+x 3
+y 40
+end
+arch lamppost
 x 3
 y 40
 end
@@ -1845,10 +1854,6 @@ arch cobblestones2
 x 4
 y 46
 end
-arch light4
-x 4
-y 46
-end
 arch dungeon_magic
 x 4
 y 47
@@ -2100,10 +2105,6 @@ x 5
 y 33
 end
 arch cobblestones2
-x 5
-y 33
-end
-arch light4
 x 5
 y 33
 end
@@ -2617,6 +2618,10 @@ arch grass
 x 6
 y 44
 end
+arch lamppost
+x 6
+y 44
+end
 arch dungeon_magic
 x 6
 y 45
@@ -2890,6 +2895,10 @@ x 7
 y 34
 end
 arch grass
+x 7
+y 34
+end
+arch lamppost
 x 7
 y 34
 end
@@ -3715,6 +3724,10 @@ arch grass
 x 9
 y 39
 end
+arch lamppost
+x 9
+y 39
+end
 arch dungeon_magic
 x 9
 y 40
@@ -4080,10 +4093,6 @@ arch grass
 x 10
 y 40
 end
-arch light4
-x 10
-y 40
-end
 arch dungeon_magic
 x 10
 y 41
@@ -4347,6 +4356,10 @@ arch cobblestones2
 x 11
 y 29
 end
+arch lamppost
+x 11
+y 29
+end
 arch dungeon_magic
 x 11
 y 30
@@ -4380,10 +4393,6 @@ x 11
 y 33
 end
 arch cobblestones2
-x 11
-y 33
-end
-arch light4
 x 11
 y 33
 end
@@ -5443,10 +5452,6 @@ arch cobblestones2
 x 14
 y 27
 end
-arch light4
-x 14
-y 27
-end
 arch dungeon_magic
 x 14
 y 28
@@ -5608,6 +5613,10 @@ arch brush
 x 14
 y 45
 end
+arch lamppost
+x 14
+y 45
+end
 arch dungeon_magic
 x 14
 y 46
@@ -5621,10 +5630,6 @@ x 14
 y 47
 end
 arch cobblestones2
-x 14
-y 47
-end
-arch light4
 x 14
 y 47
 end
@@ -6608,6 +6613,10 @@ arch grass
 x 17
 y 34
 end
+arch lamppost
+x 17
+y 34
+end
 arch dungeon_magic
 x 17
 y 35
@@ -6976,10 +6985,6 @@ arch cobblestones2
 x 18
 y 33
 end
-arch light4
-x 18
-y 33
-end
 arch dungeon_magic
 x 18
 y 34
@@ -7028,9 +7033,7 @@ arch grass
 x 18
 y 39
 end
-arch house_small
-name house
-name_pl house
+arch lamppost
 x 18
 y 39
 end
@@ -7375,10 +7378,6 @@ x 19
 y 39
 end
 arch cobblestones2
-x 19
-y 39
-end
-arch light4
 x 19
 y 39
 end
@@ -8650,6 +8649,10 @@ arch grass
 x 23
 y 35
 end
+arch lamppost
+x 23
+y 35
+end
 arch cobblestones
 x 23
 y 36
@@ -8663,6 +8666,10 @@ x 23
 y 38
 end
 arch grass
+x 23
+y 39
+end
+arch lamppost
 x 23
 y 39
 end
@@ -10261,8 +10268,7 @@ arch grass
 x 31
 y 35
 end
-arch tower_tob
-name guard tower
+arch lamppost
 x 31
 y 35
 end
@@ -10279,6 +10285,10 @@ x 31
 y 38
 end
 arch brush
+x 31
+y 39
+end
+arch lamppost
 x 31
 y 39
 end
@@ -10592,7 +10602,7 @@ dungeon_level 1
 difficulty 1
 dungeon_depth 5
 orientation 1
-final_map /quests/peterm/quests/goblin_chief
+finalmap /quests/peterm/random_quests/goblin_chief
 endmsg
 slaying /!
 x 33
@@ -14143,6 +14153,7 @@ y 31
 end
 arch tower_a
 name Lighthouse
+glow_radius 4
 name_pl Lighthouse
 x 14
 y 23
