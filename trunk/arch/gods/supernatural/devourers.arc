@@ -27,7 +27,7 @@ ac -12
 wc -1
 hp 350
 dam 50
-last_eat 100
+last_eat 60
 last_heal -1
 level 15
 speed 0.35
