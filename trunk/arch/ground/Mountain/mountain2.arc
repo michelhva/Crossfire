@@ -10,5 +10,6 @@ is_hilly 1
 slow_move 10
 blocksview 1
 editable 8
+smoothlevel 50
 is_floor 1
 end

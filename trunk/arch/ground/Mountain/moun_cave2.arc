@@ -6,5 +6,6 @@ no_pick 1
 editable 2
 is_floor 1
 visibility 50
+smoothlevel 50
 magicmap grey
 end
