@@ -201,9 +201,13 @@ x 1
 y 7
 end
 arch lightningwall_3
+dam 0
 no_pick 1
 x 1
 y 7
+arch spell_sm_lightning
+level 5
+end
 end
 arch blackmarble
 x 1
@@ -350,8 +354,7 @@ arch marble
 x 2
 y 1
 end
-arch fire_elemental
-resist_electricity 100
+arch fire_witch
 x 2
 y 1
 end
@@ -2316,8 +2319,7 @@ arch marble
 x 12
 y 1
 end
-arch fire_elemental
-resist_electricity 100
+arch fire_witch
 x 12
 y 1
 end
@@ -2539,6 +2541,9 @@ no_pick 1
 dam 6
 x 13
 y 4
+arch spell_sm_lightning
+level 5
+end
 end
 arch trap_blades
 x 13
@@ -2565,9 +2570,13 @@ x 13
 y 9
 end
 arch lightningwall_7
+dam 0
 no_pick 1
 x 13
 y 9
+arch spell_sm_lightning
+level 5
+end
 end
 arch blackmarble
 x 13

@@ -525,8 +525,6 @@ end
 arch skeletalmage
 x 6
 y 1
-arch ability_runefrost
-end
 end
 arch cobblestones
 x 6
@@ -552,13 +550,7 @@ sp 30
 maxsp 30
 x 6
 y 4
-arch ability_invisible
-end
-arch ability_runeblast
-maxsp 1
-end
-arch ability_runeshock
-maxsp 1
+arch abil_create_fire_wall
 end
 end
 arch cobblestones
@@ -761,8 +753,6 @@ end
 arch skeletalmage
 x 9
 y 1
-arch ability_runeshock
-end
 end
 arch cobblestones
 x 9

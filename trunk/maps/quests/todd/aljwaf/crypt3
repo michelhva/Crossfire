@@ -237,6 +237,9 @@ y 18
 end
 arch spider
 name One Big spider
+msg
+hissssss
+endmsg
 level 15
 exp 3760
 attacktype 1025
@@ -246,8 +249,8 @@ maxhp 180
 ac -8
 can_cast_spell 1
 sp 30
-Pow 3
 maxsp 30
+Pow 3
 Wis 12
 resist_physical 25
 resist_magic 10
@@ -258,11 +261,9 @@ resist_fear 80
 resist_blind 80
 x 1
 y 18
-arch ability_slow
-name web spell
-sp 192
-hp 192
-maxsp 1
+arch abil_slow
+end
+arch abil_poison_cloud
 end
 end
 arch dirtfloor
