@@ -94,7 +94,6 @@ end
 arch sea
 elevation -2256
 y 18
-elevation -213
 end
 arch dungeon_magic
 y 19
@@ -102,14 +101,13 @@ end
 arch sea
 elevation -2256
 y 19
-elevation -26
 end
 arch dungeon_magic
 y 20
 end
 arch sea1
-y 20
 elevation 7
+y 20
 end
 arch pier_2_2_3
 y 20
@@ -118,8 +116,8 @@ arch dungeon_magic
 y 21
 end
 arch sea1
-y 21
 elevation 257
+y 21
 end
 arch pier_3_2
 y 21
@@ -128,8 +126,8 @@ arch dungeon_magic
 y 22
 end
 arch sea1
-y 22
 elevation 1476
+y 22
 end
 arch pier_2_1_1
 y 22
@@ -138,22 +136,22 @@ arch dungeon_magic
 y 23
 end
 arch cobblestones2
-y 23
 elevation 5045
+y 23
 end
 arch dungeon_magic
 y 24
 end
 arch cobblestones2
-y 24
 elevation 5962
+y 24
 end
 arch dungeon_magic
 y 25
 end
 arch cobblestones2
-y 25
 elevation 4854
+y 25
 end
 arch bungalow
 y 25
@@ -162,39 +160,36 @@ arch dungeon_magic
 y 26
 end
 arch cobblestones2
-y 26
 elevation 1145
+y 26
 end
 arch dungeon_magic
 y 27
 end
 arch cobblestones2
-y 27
 elevation 629
+y 27
 end
 arch dungeon_magic
 y 28
 end
 arch cobblestones2
-y 28
 elevation 73
-end
-arch barn
 y 28
 end
 arch dungeon_magic
 y 29
 end
 arch cobblestones2
-y 29
 elevation 333
+y 29
 end
 arch dungeon_magic
 y 30
 end
 arch cobblestones2
-y 30
 elevation 48
+y 30
 end
 arch cwall_2_1_2
 y 30
@@ -203,37 +198,29 @@ arch dungeon_magic
 y 31
 end
 arch brush
-y 31
 elevation 803
-end
-arch store_general
-name General Shop
-name_pl General Shop
-slaying /scorn/shops/generalshop
-hp 1
-sp 1
 y 31
 end
 arch dungeon_magic
 y 32
 end
 arch grass
-y 32
 elevation 4780
+y 32
 end
 arch dungeon_magic
 y 33
 end
 arch cobblestones2
-y 33
 elevation 6536
+y 33
 end
 arch dungeon_magic
 y 34
 end
 arch grass
-y 34
 elevation 8100
+y 34
 end
 arch market1
 name Permanent Apartments
@@ -248,65 +235,57 @@ arch dungeon_magic
 y 35
 end
 arch grass
-y 35
 elevation 10076
+y 35
 end
 arch dungeon_magic
 y 36
 end
 arch grass
-y 36
 elevation 11542
-end
-arch courthouse
-name City Hall
-name_pl City Hall
-slaying /scorn/misc/cityhall
-hp 13
-sp 26
 y 36
 end
 arch dungeon_magic
 y 37
 end
 arch grass
-y 37
 elevation 12343
+y 37
 end
 arch dungeon_magic
 y 38
 end
 arch cobblestones2
-y 38
 elevation 13082
+y 38
 end
 arch dungeon_magic
 y 39
 end
 arch cobblestones2
-y 39
 elevation 13540
+y 39
 end
 arch dungeon_magic
 y 40
 end
 arch cobblestones2
-y 40
 elevation 12641
+y 40
 end
 arch dungeon_magic
 y 41
 end
 arch cobblestones2
-y 41
 elevation 10798
+y 41
 end
 arch dungeon_magic
 y 42
 end
 arch cobblestones2
-y 42
 elevation 8547
+y 42
 end
 arch cwall_2_1_2
 y 42
@@ -315,8 +294,8 @@ arch dungeon_magic
 y 43
 end
 arch grass
-y 43
 elevation 6886
+y 43
 end
 arch tree5
 y 43
@@ -325,36 +304,36 @@ arch dungeon_magic
 y 44
 end
 arch grass
-y 44
 elevation 6622
+y 44
 end
 arch dungeon_magic
 y 45
 end
 arch cobblestones2
-y 45
 elevation 7406
+y 45
 end
 arch dungeon_magic
 y 46
 end
 arch cobblestones2
-y 46
 elevation 8546
+y 46
 end
 arch dungeon_magic
 y 47
 end
 arch grass
-y 47
 elevation 9689
+y 47
 end
 arch dungeon_magic
 y 48
 end
 arch grass
-y 48
 elevation 10145
+y 48
 end
 arch tree5
 y 48
@@ -363,8 +342,8 @@ arch dungeon_magic
 y 49
 end
 arch cobblestones2
-y 49
 elevation 10869
+y 49
 end
 arch cwall_2_1_2
 y 49
@@ -466,7 +445,6 @@ arch sea
 elevation -2256
 x 1
 y 18
-elevation -313
 end
 arch dungeon_magic
 x 1
@@ -476,16 +454,15 @@ arch sea
 elevation -2256
 x 1
 y 19
-elevation -182
 end
 arch dungeon_magic
 x 1
 y 20
 end
 arch sea1
+elevation -50
 x 1
 y 20
-elevation -50
 end
 arch pier_2_2_2
 x 1
@@ -510,9 +487,9 @@ y 22
 end
 arch sea
 elevation -2256
+elevation 556
 x 1
 y 22
-elevation 556
 end
 arch dungeon_magic
 x 1
@@ -520,27 +497,27 @@ y 23
 end
 arch sea
 elevation -2256
+elevation 2999
 x 1
 y 23
-elevation 2999
 end
 arch dungeon_magic
 x 1
 y 24
 end
 arch cobblestones2
-x 1
-y 24
 elevation 3861
+x 1
+y 24
 end
 arch dungeon_magic
 x 1
 y 25
 end
 arch cobblestones2
+elevation 2703
 x 1
 y 25
-elevation 2703
 end
 arch bungalow
 x 1
@@ -551,18 +528,18 @@ x 1
 y 26
 end
 arch cobblestones2
+elevation 675
 x 1
 y 26
-elevation 675
 end
 arch dungeon_magic
 x 1
 y 27
 end
 arch cobblestones2
+elevation 169
 x 1
 y 27
-elevation 169
 end
 arch house_2
 x 1
@@ -573,27 +550,27 @@ x 1
 y 28
 end
 arch cobblestones2
+elevation 459
 x 1
 y 28
-elevation 459
 end
 arch dungeon_magic
 x 1
 y 29
 end
 arch cobblestones2
-x 1
-y 29
 elevation 133
+x 1
+y 29
 end
 arch dungeon_magic
 x 1
 y 30
 end
 arch cobblestones2
+elevation 1404
 x 1
 y 30
-elevation 1404
 end
 arch cwall_2_1_2
 x 1
@@ -604,36 +581,36 @@ x 1
 y 31
 end
 arch brush
+elevation 2912
 x 1
 y 31
-elevation 2912
 end
 arch dungeon_magic
 x 1
 y 32
 end
 arch brush
+elevation 4616
 x 1
 y 32
-elevation 4616
 end
 arch dungeon_magic
 x 1
 y 33
 end
 arch cobblestones2
+elevation 6584
 x 1
 y 33
-elevation 6584
 end
 arch dungeon_magic
 x 1
 y 34
 end
 arch grass
+elevation 8657
 x 1
 y 34
-elevation 8657
 end
 arch market3
 name Permanent Apartments
@@ -650,45 +627,45 @@ x 1
 y 35
 end
 arch grass
+elevation 10851
 x 1
 y 35
-elevation 10851
 end
 arch dungeon_magic
 x 1
 y 36
 end
 arch grass
-x 1
-y 36
 elevation 12306
+x 1
+y 36
 end
 arch dungeon_magic
 x 1
 y 37
 end
 arch grass
+elevation 12776
 x 1
 y 37
-elevation 12776
 end
 arch dungeon_magic
 x 1
 y 38
 end
 arch cobblestones2
+elevation 13803
 x 1
 y 38
-elevation 13803
 end
 arch dungeon_magic
 x 1
 y 39
 end
 arch brush
+elevation 14247
 x 1
 y 39
-elevation 14247
 end
 arch sign_w
 name Street of the Gods
@@ -709,9 +686,9 @@ x 1
 y 40
 end
 arch brush
+elevation 13494
 x 1
 y 40
-elevation 13494
 end
 arch shrine
 name Church of Gorokh
@@ -727,9 +704,9 @@ x 1
 y 41
 end
 arch cobblestones2
+elevation 11441
 x 1
 y 41
-elevation 11441
 end
 arch cwall_2_2_2
 x 1
@@ -740,9 +717,9 @@ x 1
 y 42
 end
 arch cobblestones2
+elevation 8952
 x 1
 y 42
-elevation 8952
 end
 arch dwall_3_4
 x 1
@@ -753,9 +730,9 @@ x 1
 y 43
 end
 arch cobblestones2
+elevation 5831
 x 1
 y 43
-elevation 5831
 end
 arch cwall_2_2_1
 x 1
@@ -766,9 +743,9 @@ x 1
 y 44
 end
 arch cobblestones2
+elevation 5332
 x 1
 y 44
-elevation 5332
 end
 arch dwall_2_2_2
 x 1
@@ -779,9 +756,9 @@ x 1
 y 45
 end
 arch cobblestones2
-x 1
-y 45
 elevation 6645
+x 1
+y 45
 end
 arch guard_house_1
 x 1
@@ -792,9 +769,9 @@ x 1
 y 46
 end
 arch cobblestones2
+elevation 7366
 x 1
 y 46
-elevation 7366
 end
 arch guard_house_1
 x 1
@@ -805,9 +782,9 @@ x 1
 y 47
 end
 arch cobblestones2
+elevation 8786
 x 1
 y 47
-elevation 8786
 end
 arch dwall_2_2_1
 x 1
@@ -818,9 +795,9 @@ x 1
 y 48
 end
 arch cobblestones2
+elevation 8820
 x 1
 y 48
-elevation 8820
 end
 arch cwall_2_2_2
 x 1
@@ -831,9 +808,9 @@ x 1
 y 49
 end
 arch cobblestones2
+elevation 9911
 x 1
 y 49
-elevation 9911
 end
 arch dwall_3_4
 x 1
@@ -936,7 +913,6 @@ arch sea
 elevation -2256
 x 2
 y 18
-elevation -402
 end
 arch dungeon_magic
 x 2
@@ -946,16 +922,15 @@ arch sea
 elevation -2256
 x 2
 y 19
-elevation -278
 end
 arch dungeon_magic
 x 2
 y 20
 end
 arch sea1
+elevation -160
 x 2
 y 20
-elevation -160
 end
 arch pier_1_3
 x 2
@@ -969,7 +944,6 @@ arch sea
 elevation -2256
 x 2
 y 21
-elevation -9
 end
 arch dungeon_magic
 x 2
@@ -979,7 +953,6 @@ arch sea
 elevation -2256
 x 2
 y 22
-elevation 22
 end
 arch dungeon_magic
 x 2
@@ -989,45 +962,40 @@ arch sea
 elevation -2256
 x 2
 y 23
-elevation 778
 end
 arch dungeon_magic
 x 2
 y 24
 end
 arch cobblestones2
-x 2
-y 24
 elevation 1140
+x 2
+y 24
 end
 arch dungeon_magic
 x 2
 y 25
 end
 arch cobblestones2
-x 2
-y 25
 elevation 252
+x 2
+y 25
 end
 arch dungeon_magic
 x 2
 y 26
 end
 arch cobblestones2
-x 2
-y 26
 elevation 69
+x 2
+y 26
 end
 arch dungeon_magic
 x 2
 y 27
 end
 arch cobblestones2
-x 2
-y 27
 elevation 9
-end
-arch house_up
 x 2
 y 27
 end
@@ -1036,18 +1004,18 @@ x 2
 y 28
 end
 arch cobblestones2
+elevation 477
 x 2
 y 28
-elevation 477
 end
 arch dungeon_magic
 x 2
 y 29
 end
 arch cobblestones2
+elevation 596
 x 2
 y 29
-elevation 596
 end
 arch woodhouse
 x 2
@@ -1058,9 +1026,9 @@ x 2
 y 30
 end
 arch cobblestones2
+elevation 2135
 x 2
 y 30
-elevation 2135
 end
 arch cwall_2_1_2
 x 2
@@ -1071,9 +1039,9 @@ x 2
 y 31
 end
 arch brush
+elevation 3454
 x 2
 y 31
-elevation 3454
 end
 arch lamppost
 x 2
@@ -1084,45 +1052,45 @@ x 2
 y 32
 end
 arch brush
+elevation 4274
 x 2
 y 32
-elevation 4274
 end
 arch dungeon_magic
 x 2
 y 33
 end
 arch cobblestones2
+elevation 5419
 x 2
 y 33
-elevation 5419
 end
 arch dungeon_magic
 x 2
 y 34
 end
 arch grass
-x 2
-y 34
 elevation 8218
+x 2
+y 34
 end
 arch dungeon_magic
 x 2
 y 35
 end
 arch grass
-x 2
-y 35
 elevation 10696
+x 2
+y 35
 end
 arch dungeon_magic
 x 2
 y 36
 end
 arch grass
+elevation 12105
 x 2
 y 36
-elevation 12105
 end
 arch lamppost
 x 2
@@ -1133,27 +1101,27 @@ x 2
 y 37
 end
 arch grass
+elevation 12759
 x 2
 y 37
-elevation 12759
 end
 arch dungeon_magic
 x 2
 y 38
 end
 arch cobblestones2
+elevation 13154
 x 2
 y 38
-elevation 13154
 end
 arch dungeon_magic
 x 2
 y 39
 end
 arch grass
+elevation 13712
 x 2
 y 39
-elevation 13712
 end
 arch small_temple
 name Temple of the Devourers
@@ -1168,18 +1136,18 @@ x 2
 y 40
 end
 arch brush
+elevation 12956
 x 2
 y 40
-elevation 12956
 end
 arch dungeon_magic
 x 2
 y 41
 end
 arch cobblestones2
+elevation 10992
 x 2
 y 41
-elevation 10992
 end
 arch dwall_2_1_2
 x 2
@@ -1190,9 +1158,9 @@ x 2
 y 42
 end
 arch cobblestones2
+elevation 8288
 x 2
 y 42
-elevation 8288
 end
 arch tower_tob
 x 2
@@ -1203,9 +1171,9 @@ x 2
 y 43
 end
 arch cobblestones2
+elevation 6647
 x 2
 y 43
-elevation 6647
 end
 arch dwall_3_3
 x 2
@@ -1216,9 +1184,9 @@ x 2
 y 44
 end
 arch cobblestones2
-x 2
-y 44
 elevation 5970
+x 2
+y 44
 end
 arch cwall_3_4
 x 2
@@ -1229,9 +1197,9 @@ x 2
 y 45
 end
 arch cobblestones2
-x 2
-y 45
 elevation 6189
+x 2
+y 45
 end
 arch guard_house_2
 x 2
@@ -1242,9 +1210,9 @@ x 2
 y 46
 end
 arch cobblestones2
+elevation 6753
 x 2
 y 46
-elevation 6753
 end
 arch guard_house_2
 x 2
@@ -1255,9 +1223,9 @@ x 2
 y 47
 end
 arch cobblestones2
+elevation 8499
 x 2
 y 47
-elevation 8499
 end
 arch cwall_3_4
 x 2
@@ -1268,9 +1236,9 @@ x 2
 y 48
 end
 arch cobblestones2
+elevation 8823
 x 2
 y 48
-elevation 8823
 end
 arch dwall_3_1
 x 2
@@ -1281,9 +1249,9 @@ x 2
 y 49
 end
 arch cobblestones2
+elevation 11414
 x 2
 y 49
-elevation 11414
 end
 arch tower_tob
 x 2
@@ -1386,7 +1354,6 @@ arch sea
 elevation -2256
 x 3
 y 18
-elevation -475
 end
 arch dungeon_magic
 x 3
@@ -1396,7 +1363,6 @@ arch sea
 elevation -2256
 x 3
 y 19
-elevation -363
 end
 arch dungeon_magic
 x 3
@@ -1406,7 +1372,6 @@ arch sea
 elevation -2256
 x 3
 y 20
-elevation -243
 end
 arch dungeon_magic
 x 3
@@ -1414,11 +1379,7 @@ y 21
 end
 arch sea
 elevation -2256
-x 3
-y 21
 elevation -133
-end
-arch big_galleon
 x 3
 y 21
 end
@@ -1427,9 +1388,9 @@ x 3
 y 22
 end
 arch sea1
+elevation -8
 x 3
 y 22
-elevation -8
 end
 arch dungeon_magic
 x 3
@@ -1439,16 +1400,15 @@ arch sea
 elevation -2256
 x 3
 y 23
-elevation -7
 end
 arch dungeon_magic
 x 3
 y 24
 end
 arch cobblestones
+elevation 22
 x 3
 y 24
-elevation 22
 end
 arch gravestone2
 no_pick 1
@@ -1461,27 +1421,27 @@ x 3
 y 25
 end
 arch cobblestones2
+elevation 27
 x 3
 y 25
-elevation 27
 end
 arch dungeon_magic
 x 3
 y 26
 end
 arch cobblestones2
-x 3
-y 26
 elevation -9
+x 3
+y 26
 end
 arch dungeon_magic
 x 3
 y 27
 end
 arch cobblestones2
+elevation 5
 x 3
 y 27
-elevation 5
 end
 arch lamppost
 x 3
@@ -1492,11 +1452,7 @@ x 3
 y 28
 end
 arch cobblestones2
-x 3
-y 28
 elevation 337
-end
-arch barrack_up
 x 3
 y 28
 end
@@ -1505,18 +1461,18 @@ x 3
 y 29
 end
 arch cobblestones2
+elevation 1180
 x 3
 y 29
-elevation 1180
 end
 arch dungeon_magic
 x 3
 y 30
 end
 arch cobblestones2
+elevation 2259
 x 3
 y 30
-elevation 2259
 end
 arch cwall_3_3
 x 3
@@ -1527,9 +1483,9 @@ x 3
 y 31
 end
 arch cobblestones2
+elevation 3499
 x 3
 y 31
-elevation 3499
 end
 arch dwall_2_2_1
 x 3
@@ -1540,9 +1496,9 @@ x 3
 y 32
 end
 arch cobblestones2
+elevation 4205
 x 3
 y 32
-elevation 4205
 end
 arch sign_w
 name Street of Merchants
@@ -1562,63 +1518,63 @@ x 3
 y 33
 end
 arch cobblestones2
+elevation 3578
 x 3
 y 33
-elevation 3578
 end
 arch dungeon_magic
 x 3
 y 34
 end
 arch cobblestones2
-x 3
-y 34
 elevation 7225
+x 3
+y 34
 end
 arch dungeon_magic
 x 3
 y 35
 end
 arch cobblestones2
-x 3
-y 35
 elevation 10034
+x 3
+y 35
 end
 arch dungeon_magic
 x 3
 y 36
 end
 arch cobblestones2
-x 3
-y 36
 elevation 11544
+x 3
+y 36
 end
 arch dungeon_magic
 x 3
 y 37
 end
 arch cobblestones2
-x 3
-y 37
 elevation 12068
+x 3
+y 37
 end
 arch dungeon_magic
 x 3
 y 38
 end
 arch cobblestones2
+elevation 12236
 x 3
 y 38
-elevation 12236
 end
 arch dungeon_magic
 x 3
 y 39
 end
 arch grass
+elevation 11446
 x 3
 y 39
-elevation 11446
 end
 arch statue
 x 3
@@ -1629,9 +1585,9 @@ x 3
 y 40
 end
 arch brush
+elevation 11649
 x 3
 y 40
-elevation 11649
 end
 arch lamppost
 x 3
@@ -1642,9 +1598,9 @@ x 3
 y 41
 end
 arch cobblestones2
+elevation 9690
 x 3
 y 41
-elevation 9690
 end
 arch cwall_2_2_3
 x 3
@@ -1655,9 +1611,9 @@ x 3
 y 42
 end
 arch cobblestones2
+elevation 7608
 x 3
 y 42
-elevation 7608
 end
 arch dwall_2_1_1
 x 3
@@ -1668,9 +1624,9 @@ x 3
 y 43
 end
 arch cobblestones2
+elevation 5746
 x 3
 y 43
-elevation 5746
 end
 arch cwall_2_2_4
 x 3
@@ -1681,9 +1637,9 @@ x 3
 y 44
 end
 arch brush
+elevation 4981
 x 3
 y 44
-elevation 4981
 end
 arch fountain
 speed_left -94.099998
@@ -1695,27 +1651,27 @@ x 3
 y 45
 end
 arch cobblestones2
+elevation 6226
 x 3
 y 45
-elevation 6226
 end
 arch dungeon_magic
 x 3
 y 46
 end
 arch cobblestones2
+elevation 6058
 x 3
 y 46
-elevation 6058
 end
 arch dungeon_magic
 x 3
 y 47
 end
 arch brush
+elevation 9406
 x 3
 y 47
-elevation 9406
 end
 arch fountain
 speed_left -94.099998
@@ -1727,9 +1683,9 @@ x 3
 y 48
 end
 arch cobblestones2
+elevation 10832
 x 3
 y 48
-elevation 10832
 end
 arch cwall_2_2_3
 x 3
@@ -1740,9 +1696,9 @@ x 3
 y 49
 end
 arch cobblestones2
+elevation 11034
 x 3
 y 49
-elevation 11034
 end
 arch dwall_2_1_1
 x 3
@@ -1845,7 +1801,6 @@ arch sea
 elevation -2256
 x 4
 y 18
-elevation -539
 end
 arch dungeon_magic
 x 4
@@ -1855,7 +1810,6 @@ arch sea
 elevation -2256
 x 4
 y 19
-elevation -436
 end
 arch dungeon_magic
 x 4
@@ -1865,7 +1819,6 @@ arch sea
 elevation -2256
 x 4
 y 20
-elevation -324
 end
 arch dungeon_magic
 x 4
@@ -1875,16 +1828,15 @@ arch sea
 elevation -2256
 x 4
 y 21
-elevation -211
 end
 arch dungeon_magic
 x 4
 y 22
 end
 arch sea1
+elevation -120
 x 4
 y 22
-elevation -120
 end
 arch dungeon_magic
 x 4
@@ -1894,16 +1846,15 @@ arch sea
 elevation -2256
 x 4
 y 23
-elevation -55
 end
 arch dungeon_magic
 x 4
 y 24
 end
 arch cobblestones
+elevation -21
 x 4
 y 24
-elevation -21
 end
 arch statue2
 x 4
@@ -1922,9 +1873,9 @@ To those that brave,
 The storm tossed waves. ''
 Guild of Seamen, Scorn - 26 Dec 1998
 endmsg
+elevation -10
 x 4
 y 25
-elevation -10
 end
 arch cobblestones2
 x 4
@@ -1935,9 +1886,9 @@ x 4
 y 26
 end
 arch cobblestones2
+elevation -10
 x 4
 y 26
-elevation -10
 end
 arch well
 slaying /scorn/oldcity/oldcity15
@@ -1951,36 +1902,36 @@ x 4
 y 27
 end
 arch cobblestones2
+elevation -1
 x 4
 y 27
-elevation -1
 end
 arch dungeon_magic
 x 4
 y 28
 end
 arch cobblestones2
-x 4
-y 28
 elevation 69
+x 4
+y 28
 end
 arch dungeon_magic
 x 4
 y 29
 end
 arch cobblestones2
-x 4
-y 29
 elevation 448
+x 4
+y 29
 end
 arch dungeon_magic
 x 4
 y 30
 end
 arch cobblestones2
+elevation 1588
 x 4
 y 30
-elevation 1588
 end
 arch guard_house_4
 slaying /scorn/anthony/portgate
@@ -1993,9 +1944,9 @@ x 4
 y 31
 end
 arch cobblestones2
+elevation 3771
 x 4
 y 31
-elevation 3771
 end
 arch guard_house_3
 slaying /scorn/anthony/portgate
@@ -2009,162 +1960,162 @@ x 4
 y 32
 end
 arch cobblestones2
+elevation 3966
 x 4
 y 32
-elevation 3966
 end
 arch dungeon_magic
 x 4
 y 33
 end
 arch cobblestones2
-x 4
-y 33
 elevation 4156
+x 4
+y 33
 end
 arch dungeon_magic
 x 4
 y 34
 end
 arch cobblestones
-x 4
-y 34
 elevation 6917
+x 4
+y 34
 end
 arch dungeon_magic
 x 4
 y 35
 end
 arch cobblestones
-x 4
-y 35
 elevation 9036
+x 4
+y 35
 end
 arch dungeon_magic
 x 4
 y 36
 end
 arch cobblestones
+elevation 10527
 x 4
 y 36
-elevation 10527
 end
 arch dungeon_magic
 x 4
 y 37
 end
 arch cobblestones2
-x 4
-y 37
 elevation 10853
+x 4
+y 37
 end
 arch dungeon_magic
 x 4
 y 38
 end
 arch cobblestones2
-x 4
-y 38
 elevation 10294
+x 4
+y 38
 end
 arch dungeon_magic
 x 4
 y 39
 end
 arch cobblestones2
-x 4
-y 39
 elevation 10685
+x 4
+y 39
 end
 arch dungeon_magic
 x 4
 y 40
 end
 arch cobblestones2
-x 4
-y 40
 elevation 10408
+x 4
+y 40
 end
 arch dungeon_magic
 x 4
 y 41
 end
 arch cobblestones2
-x 4
-y 41
 elevation 9156
+x 4
+y 41
 end
 arch dungeon_magic
 x 4
 y 42
 end
 arch cobblestones2
-x 4
-y 42
 elevation 8169
+x 4
+y 42
 end
 arch dungeon_magic
 x 4
 y 43
 end
 arch cobblestones2
-x 4
-y 43
 elevation 6845
+x 4
+y 43
 end
 arch dungeon_magic
 x 4
 y 44
 end
 arch cobblestones2
-x 4
-y 44
 elevation 5203
+x 4
+y 44
 end
 arch dungeon_magic
 x 4
 y 45
 end
 arch cobblestones2
-x 4
-y 45
 elevation 7564
+x 4
+y 45
 end
 arch dungeon_magic
 x 4
 y 46
 end
 arch cobblestones2
-x 4
-y 46
 elevation 9276
+x 4
+y 46
 end
 arch dungeon_magic
 x 4
 y 47
 end
 arch cobblestones2
-x 4
-y 47
 elevation 10472
+x 4
+y 47
 end
 arch dungeon_magic
 x 4
 y 48
 end
 arch cobblestones2
-x 4
-y 48
 elevation 11485
+x 4
+y 48
 end
 arch dungeon_magic
 x 4
 y 49
 end
 arch cobblestones2
+elevation 12684
 x 4
 y 49
-elevation 12684
 end
 arch sea
 elevation -2256
@@ -2263,7 +2214,6 @@ arch sea
 elevation -2256
 x 5
 y 18
-elevation -598
 end
 arch dungeon_magic
 x 5
@@ -2273,7 +2223,6 @@ arch sea
 elevation -2256
 x 5
 y 19
-elevation -502
 end
 arch dungeon_magic
 x 5
@@ -2283,7 +2232,6 @@ arch sea
 elevation -2256
 x 5
 y 20
-elevation -391
 end
 arch dungeon_magic
 x 5
@@ -2293,16 +2241,15 @@ arch sea
 elevation -2256
 x 5
 y 21
-elevation -274
 end
 arch dungeon_magic
 x 5
 y 22
 end
 arch sea1
+elevation -169
 x 5
 y 22
-elevation -169
 end
 arch pier_1_4
 x 5
@@ -2316,16 +2263,15 @@ arch sea
 elevation -2256
 x 5
 y 23
-elevation -89
 end
 arch dungeon_magic
 x 5
 y 24
 end
 arch cobblestones
+elevation -41
 x 5
 y 24
-elevation -41
 end
 arch gravestone2
 no_pick 1
@@ -2338,54 +2284,54 @@ x 5
 y 25
 end
 arch cobblestones2
+elevation -19
 x 5
 y 25
-elevation -19
 end
 arch dungeon_magic
 x 5
 y 26
 end
 arch cobblestones2
-x 5
-y 26
 elevation -10
+x 5
+y 26
 end
 arch dungeon_magic
 x 5
 y 27
 end
 arch cobblestones2
-x 5
-y 27
 elevation -9
+x 5
+y 27
 end
 arch dungeon_magic
 x 5
 y 28
 end
 arch cobblestones2
-x 5
-y 28
 elevation 36
+x 5
+y 28
 end
 arch dungeon_magic
 x 5
 y 29
 end
 arch cobblestones2
-x 5
-y 29
 elevation 614
+x 5
+y 29
 end
 arch dungeon_magic
 x 5
 y 30
 end
 arch cobblestones2
+elevation 2493
 x 5
 y 30
-elevation 2493
 end
 arch cwall_3_3
 x 5
@@ -2396,9 +2342,9 @@ x 5
 y 31
 end
 arch cobblestones2
+elevation 4131
 x 5
 y 31
-elevation 4131
 end
 arch dwall_2_2_4
 x 5
@@ -2409,9 +2355,9 @@ x 5
 y 32
 end
 arch cobblestones2
+elevation 5214
 x 5
 y 32
-elevation 5214
 end
 arch sign
 name To the Port
@@ -2427,27 +2373,27 @@ x 5
 y 33
 end
 arch cobblestones2
+elevation 5974
 x 5
 y 33
-elevation 5974
 end
 arch dungeon_magic
 x 5
 y 34
 end
 arch cobblestones
-x 5
-y 34
 elevation 6692
+x 5
+y 34
 end
 arch dungeon_magic
 x 5
 y 35
 end
 arch cobblestones
+elevation 6766
 x 5
 y 35
-elevation 6766
 end
 arch fountain
 speed_left -41.599998
@@ -2459,9 +2405,9 @@ x 5
 y 36
 end
 arch cobblestones
+elevation 9133
 x 5
 y 36
-elevation 9133
 end
 arch sign
 name Central Square of Scorn
@@ -2481,117 +2427,117 @@ x 5
 y 37
 end
 arch cobblestones
+elevation 9652
 x 5
 y 37
-elevation 9652
 end
 arch dungeon_magic
 x 5
 y 38
 end
 arch cobblestones2
-x 5
-y 38
 elevation 7364
+x 5
+y 38
 end
 arch dungeon_magic
 x 5
 y 39
 end
 arch cobblestones2
-x 5
-y 39
 elevation 9827
+x 5
+y 39
 end
 arch dungeon_magic
 x 5
 y 40
 end
 arch cobblestones2
-x 5
-y 40
 elevation 9701
+x 5
+y 40
 end
 arch dungeon_magic
 x 5
 y 41
 end
 arch cobblestones2
-x 5
-y 41
 elevation 9054
+x 5
+y 41
 end
 arch dungeon_magic
 x 5
 y 42
 end
 arch cobblestones2
-x 5
-y 42
 elevation 8067
+x 5
+y 42
 end
 arch dungeon_magic
 x 5
 y 43
 end
 arch cobblestones2
-x 5
-y 43
 elevation 7324
+x 5
+y 43
 end
 arch dungeon_magic
 x 5
 y 44
 end
 arch cobblestones2
-x 5
-y 44
 elevation 6263
+x 5
+y 44
 end
 arch dungeon_magic
 x 5
 y 45
 end
 arch cobblestones2
-x 5
-y 45
 elevation 9235
+x 5
+y 45
 end
 arch dungeon_magic
 x 5
 y 46
 end
 arch cobblestones2
-x 5
-y 46
 elevation 10512
+x 5
+y 46
 end
 arch dungeon_magic
 x 5
 y 47
 end
 arch cobblestones2
-x 5
-y 47
 elevation 10584
+x 5
+y 47
 end
 arch dungeon_magic
 x 5
 y 48
 end
 arch cobblestones2
-x 5
-y 48
 elevation 11672
+x 5
+y 48
 end
 arch dungeon_magic
 x 5
 y 49
 end
 arch cobblestones2
+elevation 12372
 x 5
 y 49
-elevation 12372
 end
 arch sea
 elevation -2256
@@ -2690,7 +2636,6 @@ arch sea
 elevation -2256
 x 6
 y 18
-elevation -655
 end
 arch dungeon_magic
 x 6
@@ -2700,16 +2645,15 @@ arch sea
 elevation -2256
 x 6
 y 19
-elevation -564
 end
 arch dungeon_magic
 x 6
 y 20
 end
 arch sea1
+elevation -448
 x 6
 y 20
-elevation -448
 end
 arch pier_2_2_2
 x 6
@@ -2720,9 +2664,9 @@ x 6
 y 21
 end
 arch sea1
+elevation -314
 x 6
 y 21
-elevation -314
 end
 arch pier_2_1_1
 x 6
@@ -2733,9 +2677,9 @@ x 6
 y 22
 end
 arch sea1
+elevation -180
 x 6
 y 22
-elevation -180
 end
 arch pier_3_4
 x 6
@@ -2746,9 +2690,9 @@ x 6
 y 23
 end
 arch sea1
+elevation -83
 x 6
 y 23
-elevation -83
 end
 arch pier_2_1_1
 x 6
@@ -2759,25 +2703,16 @@ x 6
 y 24
 end
 arch cobblestones2
+elevation -32
 x 6
 y 24
-elevation -32
 end
 arch dungeon_magic
 x 6
 y 25
 end
 arch cobblestones2
-x 6
-y 25
 elevation -17
-end
-arch barn
-name Pirates' Arena
-name_pl Pirates' Arena
-slaying /scorn/misc/port_arena
-hp 38
-sp 6
 x 6
 y 25
 end
@@ -2786,29 +2721,25 @@ x 6
 y 26
 end
 arch cobblestones2
+elevation -11
 x 6
 y 26
-elevation -11
 end
 arch dungeon_magic
 x 6
 y 27
 end
 arch cobblestones2
-x 6
-y 27
 elevation -10
+x 6
+y 27
 end
 arch dungeon_magic
 x 6
 y 28
 end
 arch cobblestones2
-x 6
-y 28
 elevation 20
-end
-arch house_up
 x 6
 y 28
 end
@@ -2817,18 +2748,18 @@ x 6
 y 29
 end
 arch cobblestones2
+elevation 1482
 x 6
 y 29
-elevation 1482
 end
 arch dungeon_magic
 x 6
 y 30
 end
 arch cobblestones2
+elevation 3059
 x 6
 y 30
-elevation 3059
 end
 arch cwall_2_1_2
 x 6
@@ -2839,16 +2770,7 @@ x 6
 y 31
 end
 arch brush
-x 6
-y 31
 elevation 4536
-end
-arch store_general
-name Gem Shop
-name_pl Gem Shop
-slaying /scorn/shops/gemshop
-hp 1
-sp 14
 x 6
 y 31
 end
@@ -2857,72 +2779,72 @@ x 6
 y 32
 end
 arch grass
+elevation 5581
 x 6
 y 32
-elevation 5581
 end
 arch dungeon_magic
 x 6
 y 33
 end
 arch cobblestones2
-x 6
-y 33
 elevation 6018
+x 6
+y 33
 end
 arch dungeon_magic
 x 6
 y 34
 end
 arch cobblestones
-x 6
-y 34
 elevation 5919
+x 6
+y 34
 end
 arch dungeon_magic
 x 6
 y 35
 end
 arch cobblestones
-x 6
-y 35
 elevation 6146
+x 6
+y 35
 end
 arch dungeon_magic
 x 6
 y 36
 end
 arch cobblestones
+elevation 7098
 x 6
 y 36
-elevation 7098
 end
 arch dungeon_magic
 x 6
 y 37
 end
 arch cobblestones2
-x 6
-y 37
 elevation 7865
+x 6
+y 37
 end
 arch dungeon_magic
 x 6
 y 38
 end
 arch cobblestones2
+elevation 8727
 x 6
 y 38
-elevation 8727
 end
 arch dungeon_magic
 x 6
 y 39
 end
 arch brush
+elevation 9033
 x 6
 y 39
-elevation 9033
 end
 arch well
 name Drinking Fountain
@@ -2938,36 +2860,36 @@ x 6
 y 40
 end
 arch grass
+elevation 9227
 x 6
 y 40
-elevation 9227
 end
 arch dungeon_magic
 x 6
 y 41
 end
 arch grass
-x 6
-y 41
 elevation 8287
+x 6
+y 41
 end
 arch dungeon_magic
 x 6
 y 42
 end
 arch grass
-x 6
-y 42
 elevation 7273
+x 6
+y 42
 end
 arch dungeon_magic
 x 6
 y 43
 end
 arch grass
+elevation 6575
 x 6
 y 43
-elevation 6575
 end
 arch fort_sym
 name Jail
@@ -2981,9 +2903,9 @@ x 6
 y 44
 end
 arch grass
+elevation 8980
 x 6
 y 44
-elevation 8980
 end
 arch lamppost
 x 6
@@ -2994,9 +2916,9 @@ x 6
 y 45
 end
 arch brush
+elevation 10251
 x 6
 y 45
-elevation 10251
 end
 arch sign_e
 msg
@@ -3010,34 +2932,25 @@ x 6
 y 46
 end
 arch cobblestones2
+elevation 10666
 x 6
 y 46
-elevation 10666
 end
 arch dungeon_magic
 x 6
 y 47
 end
 arch cobblestones2
+elevation 10816
 x 6
 y 47
-elevation 10816
 end
 arch dungeon_magic
 x 6
 y 48
 end
 arch grass
-x 6
-y 48
 elevation 10859
-end
-arch church
-name Undead Church
-name_pl Undead Church
-slaying /scorn/misc/church
-hp 10
-sp 15
 x 6
 y 48
 end
@@ -3046,9 +2959,9 @@ x 6
 y 49
 end
 arch grass
+elevation 11285
 x 6
 y 49
-elevation 11285
 end
 arch sea
 elevation -2256
@@ -3147,7 +3060,6 @@ arch sea
 elevation -2256
 x 7
 y 18
-elevation -711
 end
 arch dungeon_magic
 x 7
@@ -3157,16 +3069,15 @@ arch sea
 elevation -2256
 x 7
 y 19
-elevation -625
 end
 arch dungeon_magic
 x 7
 y 20
 end
 arch sea1
+elevation -505
 x 7
 y 20
-elevation -505
 end
 arch pier_1_3
 x 7
@@ -3180,7 +3091,6 @@ arch sea
 elevation -2256
 x 7
 y 21
-elevation -350
 end
 arch dungeon_magic
 x 7
@@ -3190,7 +3100,6 @@ arch sea
 elevation -2256
 x 7
 y 22
-elevation -144
 end
 arch dungeon_magic
 x 7
@@ -3200,52 +3109,51 @@ arch sea
 elevation -2256
 x 7
 y 23
-elevation 8
 end
 arch dungeon_magic
 x 7
 y 24
 end
 arch cobblestones2
-x 7
-y 24
 elevation -6
+x 7
+y 24
 end
 arch dungeon_magic
 x 7
 y 25
 end
 arch cobblestones2
-x 7
-y 25
 elevation -8
+x 7
+y 25
 end
 arch dungeon_magic
 x 7
 y 26
 end
 arch cobblestones2
-x 7
-y 26
 elevation -11
+x 7
+y 26
 end
 arch dungeon_magic
 x 7
 y 27
 end
 arch cobblestones2
-x 7
-y 27
 elevation -7
+x 7
+y 27
 end
 arch dungeon_magic
 x 7
 y 28
 end
 arch cobblestones2
+elevation 127
 x 7
 y 28
-elevation 127
 end
 arch barrack_small
 x 7
@@ -3256,9 +3164,9 @@ x 7
 y 29
 end
 arch cobblestones2
+elevation 1564
 x 7
 y 29
-elevation 1564
 end
 arch bungalow
 name Angry Giant's Bungalow
@@ -3274,9 +3182,9 @@ x 7
 y 30
 end
 arch cobblestones2
+elevation 3055
 x 7
 y 30
-elevation 3055
 end
 arch cwall_2_1_2
 x 7
@@ -3287,142 +3195,133 @@ x 7
 y 31
 end
 arch brush
+elevation 4295
 x 7
 y 31
-elevation 4295
 end
 arch dungeon_magic
 x 7
 y 32
 end
 arch grass
-x 7
-y 32
 elevation 4987
+x 7
+y 32
 end
 arch dungeon_magic
 x 7
 y 33
 end
 arch cobblestones2
-x 7
-y 33
 elevation 5098
+x 7
+y 33
 end
 arch dungeon_magic
 x 7
 y 34
 end
 arch cobblestones2
-x 7
-y 34
 elevation 4624
+x 7
+y 34
 end
 arch dungeon_magic
 x 7
 y 35
 end
 arch cobblestones2
-x 7
-y 35
 elevation 3552
+x 7
+y 35
 end
 arch dungeon_magic
 x 7
 y 36
 end
 arch cobblestones2
-x 7
-y 36
 elevation 3081
+x 7
+y 36
 end
 arch dungeon_magic
 x 7
 y 37
 end
 arch cobblestones2
-x 7
-y 37
 elevation 6782
+x 7
+y 37
 end
 arch dungeon_magic
 x 7
 y 38
 end
 arch cobblestones2
-x 7
-y 38
 elevation 6559
+x 7
+y 38
 end
 arch dungeon_magic
 x 7
 y 39
 end
 arch grass
-x 7
-y 39
 elevation 8416
+x 7
+y 39
 end
 arch dungeon_magic
 x 7
 y 40
 end
 arch brush
-x 7
-y 40
 elevation 8003
+x 7
+y 40
 end
 arch dungeon_magic
 x 7
 y 41
 end
 arch grass
-x 7
-y 41
 elevation 7640
+x 7
+y 41
 end
 arch dungeon_magic
 x 7
 y 42
 end
 arch brush
-x 7
-y 42
 elevation 7961
+x 7
+y 42
 end
 arch dungeon_magic
 x 7
 y 43
 end
 arch grass
-x 7
-y 43
 elevation 8934
+x 7
+y 43
 end
 arch dungeon_magic
 x 7
 y 44
 end
 arch brush
-x 7
-y 44
 elevation 9858
+x 7
+y 44
 end
 arch dungeon_magic
 x 7
 y 45
 end
 arch brush
-x 7
-y 45
 elevation 10499
-end
-arch farmhouse
-name Smith's House
-name_pl Smith's House
-slaying /scorn/houses/house1
-hp 10
-sp 14
 x 7
 y 45
 end
@@ -3431,36 +3330,36 @@ x 7
 y 46
 end
 arch cobblestones2
+elevation 10277
 x 7
 y 46
-elevation 10277
 end
 arch dungeon_magic
 x 7
 y 47
 end
 arch cobblestones2
+elevation 8852
 x 7
 y 47
-elevation 8852
 end
 arch dungeon_magic
 x 7
 y 48
 end
 arch grass
-x 7
-y 48
 elevation 10050
+x 7
+y 48
 end
 arch dungeon_magic
 x 7
 y 49
 end
 arch grass
+elevation 8970
 x 7
 y 49
-elevation 8970
 end
 arch sea
 elevation -2256
@@ -3559,7 +3458,6 @@ arch sea
 elevation -2256
 x 8
 y 18
-elevation -769
 end
 arch dungeon_magic
 x 8
@@ -3569,20 +3467,15 @@ arch sea
 elevation -2256
 x 8
 y 19
-elevation -689
-end
-arch big_galleon
-x 8
-y 19
 end
 arch dungeon_magic
 x 8
 y 20
 end
 arch sea1
-x 8
-y 20
 elevation -570
+x 8
+y 20
 end
 arch dungeon_magic
 x 8
@@ -3590,16 +3483,7 @@ y 21
 end
 arch sea
 elevation -2256
-x 8
-y 21
 elevation -406
-end
-arch s_ship
-name to Stoneville
-name_pl to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 13
 x 8
 y 21
 end
@@ -3608,9 +3492,9 @@ x 8
 y 22
 end
 arch sea1
+elevation -180
 x 8
 y 22
-elevation -180
 end
 arch dungeon_magic
 x 8
@@ -3620,70 +3504,69 @@ arch sea
 elevation -2256
 x 8
 y 23
-elevation 386
 end
 arch dungeon_magic
 x 8
 y 24
 end
 arch cobblestones2
-x 8
-y 24
 elevation 348
+x 8
+y 24
 end
 arch dungeon_magic
 x 8
 y 25
 end
 arch cobblestones2
-x 8
-y 25
 elevation -9
+x 8
+y 25
 end
 arch dungeon_magic
 x 8
 y 26
 end
 arch cobblestones2
-x 8
-y 26
 elevation -23
+x 8
+y 26
 end
 arch dungeon_magic
 x 8
 y 27
 end
 arch cobblestones2
-x 8
-y 27
 elevation -10
+x 8
+y 27
 end
 arch dungeon_magic
 x 8
 y 28
 end
 arch cobblestones2
-x 8
-y 28
 elevation 215
+x 8
+y 28
 end
 arch dungeon_magic
 x 8
 y 29
 end
 arch cobblestones2
-x 8
-y 29
 elevation 753
+x 8
+y 29
 end
 arch dungeon_magic
 x 8
 y 30
 end
 arch cobblestones2
+elevation 2480
 x 8
 y 30
-elevation 2480
 end
 arch cwall_2_1_2
 x 8
@@ -3694,18 +3577,18 @@ x 8
 y 31
 end
 arch grass
+elevation 3280
 x 8
 y 31
-elevation 3280
 end
 arch dungeon_magic
 x 8
 y 32
 end
 arch grass
+elevation 3495
 x 8
 y 32
-elevation 3495
 end
 arch fountain
 speed_left -41.599998
@@ -3717,18 +3600,18 @@ x 8
 y 33
 end
 arch cobblestones2
+elevation 3451
 x 8
 y 33
-elevation 3451
 end
 arch dungeon_magic
 x 8
 y 34
 end
 arch grass
+elevation 3055
 x 8
 y 34
-elevation 3055
 end
 arch sign_e
 name Road of Riches
@@ -3744,9 +3627,9 @@ x 8
 y 35
 end
 arch grass
+elevation 2469
 x 8
 y 35
-elevation 2469
 end
 arch house_2
 name Random House
@@ -3769,18 +3652,18 @@ x 8
 y 36
 end
 arch cobblestones2
+elevation 4054
 x 8
 y 36
-elevation 4054
 end
 arch dungeon_magic
 x 8
 y 37
 end
 arch cobblestones2
+elevation 6009
 x 8
 y 37
-elevation 6009
 end
 arch sign
 name General Information
@@ -3805,18 +3688,18 @@ x 8
 y 38
 end
 arch cobblestones2
+elevation 7819
 x 8
 y 38
-elevation 7819
 end
 arch dungeon_magic
 x 8
 y 39
 end
 arch grass
+elevation 8157
 x 8
 y 39
-elevation 8157
 end
 arch chess_club
 slaying /scorn/houses/chess_club
@@ -3830,90 +3713,90 @@ x 8
 y 40
 end
 arch grass
+elevation 5209
 x 8
 y 40
-elevation 5209
 end
 arch dungeon_magic
 x 8
 y 41
 end
 arch grass
-x 8
-y 41
 elevation 4753
+x 8
+y 41
 end
 arch dungeon_magic
 x 8
 y 42
 end
 arch grass
+elevation 8334
 x 8
 y 42
-elevation 8334
 end
 arch dungeon_magic
 x 8
 y 43
 end
 arch brush
+elevation 9531
 x 8
 y 43
-elevation 9531
 end
 arch dungeon_magic
 x 8
 y 44
 end
 arch grass
-x 8
-y 44
 elevation 10318
+x 8
+y 44
 end
 arch dungeon_magic
 x 8
 y 45
 end
 arch grass
-x 8
-y 45
 elevation 10264
+x 8
+y 45
 end
 arch dungeon_magic
 x 8
 y 46
 end
 arch cobblestones2
-x 8
-y 46
 elevation 9077
+x 8
+y 46
 end
 arch dungeon_magic
 x 8
 y 47
 end
 arch cobblestones2
+elevation 8630
 x 8
 y 47
-elevation 8630
 end
 arch dungeon_magic
 x 8
 y 48
 end
 arch grass
-x 8
-y 48
 elevation 9318
+x 8
+y 48
 end
 arch dungeon_magic
 x 8
 y 49
 end
 arch grass
+elevation 10029
 x 8
 y 49
-elevation 10029
 end
 arch well
 name Dark Well
@@ -4018,10 +3901,9 @@ x 9
 y 18
 end
 arch sea
-elevation -2256
+elevation -826
 x 9
 y 18
-elevation -826
 end
 arch dungeon_magic
 x 9
@@ -4031,16 +3913,15 @@ arch sea
 elevation -2256
 x 9
 y 19
-elevation -757
 end
 arch dungeon_magic
 x 9
 y 20
 end
 arch sea1
-x 9
-y 20
 elevation -648
+x 9
+y 20
 end
 arch dungeon_magic
 x 9
@@ -4050,16 +3931,15 @@ arch sea
 elevation -2256
 x 9
 y 21
-elevation -498
 end
 arch dungeon_magic
 x 9
 y 22
 end
 arch sea1
+elevation -285
 x 9
 y 22
-elevation -285
 end
 arch dungeon_magic
 x 9
@@ -4067,34 +3947,25 @@ y 23
 end
 arch sea
 elevation -2256
+elevation -106
 x 9
 y 23
-elevation -106
 end
 arch dungeon_magic
 x 9
 y 24
 end
 arch cobblestones2
-x 9
-y 24
 elevation -28
+x 9
+y 24
 end
 arch dungeon_magic
 x 9
 y 25
 end
 arch cobblestones2
-x 9
-y 25
 elevation -48
-end
-arch barn
-name Animal Quarantine
-name_pl Animal Quarantine
-slaying /scorn/cannery/ware1
-hp 19
-sp 36
 x 9
 y 25
 end
@@ -4103,31 +3974,25 @@ x 9
 y 26
 end
 arch cobblestones2
+elevation -70
 x 9
 y 26
-elevation -70
 end
 arch dungeon_magic
 x 9
 y 27
 end
 arch cobblestones2
-x 9
-y 27
 elevation -20
+x 9
+y 27
 end
 arch dungeon_magic
 x 9
 y 28
 end
 arch cobblestones2
-x 9
-y 28
 elevation -9
-end
-arch guild
-name The Rowdy Sailor
-name_pl The Rowdy Sailor
 x 9
 y 28
 end
@@ -4136,18 +4001,18 @@ x 9
 y 29
 end
 arch cobblestones2
+elevation 289
 x 9
 y 29
-elevation 289
 end
 arch dungeon_magic
 x 9
 y 30
 end
 arch cobblestones2
+elevation 1499
 x 9
 y 30
-elevation 1499
 end
 arch cwall_2_1_2
 x 9
@@ -4158,16 +4023,7 @@ x 9
 y 31
 end
 arch grass
-x 9
-y 31
 elevation 2125
-end
-arch guild
-name Bank of Skud
-name_pl Bank of Skud
-slaying /scorn/shops/bank
-hp 7
-sp 14
 x 9
 y 31
 end
@@ -4176,27 +4032,27 @@ x 9
 y 32
 end
 arch grass
+elevation 797
 x 9
 y 32
-elevation 797
 end
 arch dungeon_magic
 x 9
 y 33
 end
 arch cobblestones2
+elevation 584
 x 9
 y 33
-elevation 584
 end
 arch dungeon_magic
 x 9
 y 34
 end
 arch grass
+elevation 2017
 x 9
 y 34
-elevation 2017
 end
 arch lamppost
 x 9
@@ -4207,9 +4063,9 @@ x 9
 y 35
 end
 arch grass
+elevation 528
 x 9
 y 35
-elevation 528
 end
 arch house_2
 x 9
@@ -4220,18 +4076,18 @@ x 9
 y 36
 end
 arch cobblestones2
+elevation 3046
 x 9
 y 36
-elevation 3046
 end
 arch dungeon_magic
 x 9
 y 37
 end
 arch cobblestones2
+elevation 5402
 x 9
 y 37
-elevation 5402
 end
 arch sign
 name Beginner Dungeons
@@ -4262,18 +4118,18 @@ x 9
 y 38
 end
 arch cobblestones2
+elevation 7779
 x 9
 y 38
-elevation 7779
 end
 arch dungeon_magic
 x 9
 y 39
 end
 arch grass
+elevation 9094
 x 9
 y 39
-elevation 9094
 end
 arch lamppost
 x 9
@@ -4284,18 +4140,18 @@ x 9
 y 40
 end
 arch grass
+elevation 8805
 x 9
 y 40
-elevation 8805
 end
 arch dungeon_magic
 x 9
 y 41
 end
 arch grass
+elevation 8329
 x 9
 y 41
-elevation 8329
 end
 arch biglake_nse
 x 9
@@ -4306,23 +4162,16 @@ x 9
 y 42
 end
 arch grass
+elevation 7817
 x 9
 y 42
-elevation 7817
 end
 arch dungeon_magic
 x 9
 y 43
 end
 arch grass
-x 9
-y 43
 elevation 9490
-end
-arch city_tower
-name Mad Mage's Tower
-name_pl Mad Mage's Tower
-slaying /scorn/towers/tower.mad
 x 9
 y 43
 end
@@ -4331,54 +4180,54 @@ x 9
 y 44
 end
 arch cobblestones2
+elevation 10089
 x 9
 y 44
-elevation 10089
 end
 arch dungeon_magic
 x 9
 y 45
 end
 arch cobblestones2
-x 9
-y 45
 elevation 9798
+x 9
+y 45
 end
 arch dungeon_magic
 x 9
 y 46
 end
 arch cobblestones2
-x 9
-y 46
 elevation 9049
+x 9
+y 46
 end
 arch dungeon_magic
 x 9
 y 47
 end
 arch cobblestones2
+elevation 8665
 x 9
 y 47
-elevation 8665
 end
 arch dungeon_magic
 x 9
 y 48
 end
 arch grass
-x 9
-y 48
 elevation 8713
+x 9
+y 48
 end
 arch dungeon_magic
 x 9
 y 49
 end
 arch grass
+elevation 9065
 x 9
 y 49
-elevation 9065
 end
 arch shallow_sea
 elevation -40
@@ -4477,7 +4326,6 @@ arch sea
 elevation -2256
 x 10
 y 18
-elevation -881
 end
 arch dungeon_magic
 x 10
@@ -4487,7 +4335,6 @@ arch sea
 elevation -2256
 x 10
 y 19
-elevation -826
 end
 arch dungeon_magic
 x 10
@@ -4497,7 +4344,6 @@ arch sea
 elevation -2256
 x 10
 y 20
-elevation -735
 end
 arch dungeon_magic
 x 10
@@ -4507,16 +4353,15 @@ arch sea
 elevation -2256
 x 10
 y 21
-elevation -609
 end
 arch dungeon_magic
 x 10
 y 22
 end
 arch sea1
+elevation -467
 x 10
 y 22
-elevation -467
 end
 arch pier_1_4
 x 10
@@ -4530,70 +4375,69 @@ arch sea
 elevation -2256
 x 10
 y 23
-elevation -337
 end
 arch dungeon_magic
 x 10
 y 24
 end
 arch cobblestones2
-x 10
-y 24
 elevation -246
+x 10
+y 24
 end
 arch dungeon_magic
 x 10
 y 25
 end
 arch cobblestones2
-x 10
-y 25
 elevation -191
+x 10
+y 25
 end
 arch dungeon_magic
 x 10
 y 26
 end
 arch cobblestones2
-x 10
-y 26
 elevation -146
+x 10
+y 26
 end
 arch dungeon_magic
 x 10
 y 27
 end
 arch cobblestones2
-x 10
-y 27
 elevation -96
+x 10
+y 27
 end
 arch dungeon_magic
 x 10
 y 28
 end
 arch cobblestones2
-x 10
-y 28
 elevation -13
+x 10
+y 28
 end
 arch dungeon_magic
 x 10
 y 29
 end
 arch cobblestones2
-x 10
-y 29
 elevation 1
+x 10
+y 29
 end
 arch dungeon_magic
 x 10
 y 30
 end
 arch cobblestones2
+elevation 399
 x 10
 y 30
-elevation 399
 end
 arch cwall_2_1_2
 x 10
@@ -4604,43 +4448,34 @@ x 10
 y 31
 end
 arch grass
+elevation 982
 x 10
 y 31
-elevation 982
 end
 arch dungeon_magic
 x 10
 y 32
 end
 arch grass
+elevation 658
 x 10
 y 32
-elevation 658
 end
 arch dungeon_magic
 x 10
 y 33
 end
 arch cobblestones2
+elevation 1494
 x 10
 y 33
-elevation 1494
 end
 arch dungeon_magic
 x 10
 y 34
 end
 arch grass
-x 10
-y 34
 elevation 2009
-end
-arch barrack_long
-name Apartment Building
-name_pl Apartment Building
-slaying /scorn/taverns/apartments
-hp 13
-sp 3
 x 10
 y 34
 end
@@ -4649,9 +4484,9 @@ x 10
 y 35
 end
 arch grass
+elevation 707
 x 10
 y 35
-elevation 707
 end
 arch house_small
 name Fun House
@@ -4667,18 +4502,18 @@ x 10
 y 36
 end
 arch cobblestones2
+elevation 1277
 x 10
 y 36
-elevation 1277
 end
 arch dungeon_magic
 x 10
 y 37
 end
 arch cobblestones2
+elevation 2250
 x 10
 y 37
-elevation 2250
 end
 arch sign
 name Advanced Dungeons
@@ -4704,18 +4539,18 @@ x 10
 y 38
 end
 arch cobblestones2
+elevation 8204
 x 10
 y 38
-elevation 8204
 end
 arch dungeon_magic
 x 10
 y 39
 end
 arch grass
+elevation 10712
 x 10
 y 39
-elevation 10712
 end
 arch house_small
 name Smithery
@@ -4731,18 +4566,18 @@ x 10
 y 40
 end
 arch grass
+elevation 11013
 x 10
 y 40
-elevation 11013
 end
 arch dungeon_magic
 x 10
 y 41
 end
 arch grass
+elevation 9948
 x 10
 y 41
-elevation 9948
 end
 arch biglake_sn
 x 10
@@ -4753,72 +4588,72 @@ x 10
 y 42
 end
 arch grass
+elevation 8672
 x 10
 y 42
-elevation 8672
 end
 arch dungeon_magic
 x 10
 y 43
 end
 arch brush
+elevation 8762
 x 10
 y 43
-elevation 8762
 end
 arch dungeon_magic
 x 10
 y 44
 end
 arch grass
-x 10
-y 44
 elevation 8973
+x 10
+y 44
 end
 arch dungeon_magic
 x 10
 y 45
 end
 arch grass
-x 10
-y 45
 elevation 8959
+x 10
+y 45
 end
 arch dungeon_magic
 x 10
 y 46
 end
 arch cobblestones2
-x 10
-y 46
 elevation 8533
+x 10
+y 46
 end
 arch dungeon_magic
 x 10
 y 47
 end
 arch cobblestones2
+elevation 8087
 x 10
 y 47
-elevation 8087
 end
 arch dungeon_magic
 x 10
 y 48
 end
 arch grass
-x 10
-y 48
 elevation 7050
+x 10
+y 48
 end
 arch dungeon_magic
 x 10
 y 49
 end
 arch grass
+elevation 7528
 x 10
 y 49
-elevation 7528
 end
 arch swamp
 elevation 2
@@ -4917,18 +4752,13 @@ arch sea
 elevation -2256
 x 11
 y 18
-elevation -930
 end
 arch dungeon_magic
 x 11
 y 19
 end
 arch sea1
-x 11
-y 19
 elevation -890
-end
-arch fishboat
 x 11
 y 19
 end
@@ -4937,9 +4767,9 @@ x 11
 y 20
 end
 arch sea1
+elevation -818
 x 11
 y 20
-elevation -818
 end
 arch pier_1_1
 x 11
@@ -4950,9 +4780,9 @@ x 11
 y 21
 end
 arch sea1
+elevation -720
 x 11
 y 21
-elevation -720
 end
 arch pier_3_2
 x 11
@@ -4963,9 +4793,9 @@ x 11
 y 22
 end
 arch sea1
+elevation -607
 x 11
 y 22
-elevation -607
 end
 arch pier_3_4
 x 11
@@ -4976,9 +4806,9 @@ x 11
 y 23
 end
 arch sea1
+elevation -496
 x 11
 y 23
-elevation -496
 end
 arch pier_2_1_1
 x 11
@@ -4989,54 +4819,54 @@ x 11
 y 24
 end
 arch cobblestones2
+elevation -398
 x 11
 y 24
-elevation -398
 end
 arch dungeon_magic
 x 11
 y 25
 end
 arch cobblestones2
-x 11
-y 25
 elevation -315
+x 11
+y 25
 end
 arch dungeon_magic
 x 11
 y 26
 end
 arch cobblestones2
-x 11
-y 26
 elevation -239
+x 11
+y 26
 end
 arch dungeon_magic
 x 11
 y 27
 end
 arch cobblestones2
-x 11
-y 27
 elevation -163
+x 11
+y 27
 end
 arch dungeon_magic
 x 11
 y 28
 end
 arch cobblestones2
-x 11
-y 28
 elevation -92
+x 11
+y 28
 end
 arch dungeon_magic
 x 11
 y 29
 end
 arch cobblestones2
+elevation -9
 x 11
 y 29
-elevation -9
 end
 arch lamppost
 x 11
@@ -5047,9 +4877,9 @@ x 11
 y 30
 end
 arch cobblestones2
+elevation -7
 x 11
 y 30
-elevation -7
 end
 arch cwall_2_1_2
 x 11
@@ -5060,16 +4890,7 @@ x 11
 y 31
 end
 arch grass
-x 11
-y 31
 elevation 141
-end
-arch church
-name House of Healing
-name_pl House of Healing
-slaying /scorn/misc/HouseofHealing
-hp 10
-sp 33
 x 11
 y 31
 end
@@ -5078,36 +4899,36 @@ x 11
 y 32
 end
 arch grass
+elevation 145
 x 11
 y 32
-elevation 145
 end
 arch dungeon_magic
 x 11
 y 33
 end
 arch cobblestones2
+elevation 1383
 x 11
 y 33
-elevation 1383
 end
 arch dungeon_magic
 x 11
 y 34
 end
 arch grass
-x 11
-y 34
 elevation 3300
+x 11
+y 34
 end
 arch dungeon_magic
 x 11
 y 35
 end
 arch grass
+elevation 3260
 x 11
 y 35
-elevation 3260
 end
 arch house_2
 x 11
@@ -5118,18 +4939,18 @@ x 11
 y 36
 end
 arch cobblestones2
+elevation 1274
 x 11
 y 36
-elevation 1274
 end
 arch dungeon_magic
 x 11
 y 37
 end
 arch cobblestones2
+elevation 4147
 x 11
 y 37
-elevation 4147
 end
 arch sign
 name More Information
@@ -5151,18 +4972,18 @@ x 11
 y 38
 end
 arch cobblestones2
+elevation 8887
 x 11
 y 38
-elevation 8887
 end
 arch dungeon_magic
 x 11
 y 39
 end
 arch grass
+elevation 12017
 x 11
 y 39
-elevation 12017
 end
 arch house_small
 name Tannery
@@ -5178,13 +4999,7 @@ x 11
 y 40
 end
 arch grass
-x 11
-y 40
 elevation 11883
-end
-arch barrack_long
-name large house
-name_pl large house
 x 11
 y 40
 end
@@ -5193,9 +5008,9 @@ x 11
 y 41
 end
 arch grass
+elevation 10369
 x 11
 y 41
-elevation 10369
 end
 arch biglake_nes
 x 11
@@ -5206,9 +5021,9 @@ x 11
 y 42
 end
 arch grass
+elevation 8584
 x 11
 y 42
-elevation 8584
 end
 arch house_1
 name Lake House
@@ -5224,9 +5039,9 @@ x 11
 y 43
 end
 arch grass
+elevation 5697
 x 11
 y 43
-elevation 5697
 end
 arch house_small
 name Wizard's Workshop
@@ -5243,9 +5058,9 @@ x 11
 y 44
 end
 arch grass
+elevation 7453
 x 11
 y 44
-elevation 7453
 end
 arch woodhouse
 name Yarid's House
@@ -5261,9 +5076,9 @@ x 11
 y 45
 end
 arch grass
+elevation 7373
 x 11
 y 45
-elevation 7373
 end
 arch house_small
 name Old Basement
@@ -5279,33 +5094,25 @@ x 11
 y 46
 end
 arch cobblestones2
+elevation 7284
 x 11
 y 46
-elevation 7284
 end
 arch dungeon_magic
 x 11
 y 47
 end
 arch cobblestones2
+elevation 7082
 x 11
 y 47
-elevation 7082
 end
 arch dungeon_magic
 x 11
 y 48
 end
 arch grass
-x 11
-y 48
 elevation 7066
-end
-arch zoo_1
-name The Zoo
-slaying /scorn/misc/zoo
-hp 1
-sp 16
 x 11
 y 48
 end
@@ -5314,9 +5121,9 @@ x 11
 y 49
 end
 arch grass
+elevation 7179
 x 11
 y 49
-elevation 7179
 end
 arch brush
 elevation 1050
@@ -5415,16 +5222,15 @@ arch sea
 elevation -2256
 x 12
 y 18
-elevation -969
 end
 arch dungeon_magic
 x 12
 y 19
 end
 arch sea1
+elevation -943
 x 12
 y 19
-elevation -943
 end
 arch dungeon_magic
 x 12
@@ -5434,16 +5240,15 @@ arch sea
 elevation -2256
 x 12
 y 20
-elevation -888
 end
 arch dungeon_magic
 x 12
 y 21
 end
 arch sea1
+elevation -808
 x 12
 y 21
-elevation -808
 end
 arch pier_1_3
 x 12
@@ -5457,7 +5262,6 @@ arch sea
 elevation -2256
 x 12
 y 22
-elevation -712
 end
 arch dungeon_magic
 x 12
@@ -5467,29 +5271,22 @@ arch sea
 elevation -2256
 x 12
 y 23
-elevation -610
 end
 arch dungeon_magic
 x 12
 y 24
 end
 arch cobblestones2
-x 12
-y 24
 elevation -509
+x 12
+y 24
 end
 arch dungeon_magic
 x 12
 y 25
 end
 arch cobblestones2
-x 12
-y 25
 elevation -412
-end
-arch barn
-name ware house
-name_pl ware house
 x 12
 y 25
 end
@@ -5498,34 +5295,25 @@ x 12
 y 26
 end
 arch cobblestones2
+elevation -319
 x 12
 y 26
-elevation -319
 end
 arch dungeon_magic
 x 12
 y 27
 end
 arch cobblestones2
-x 12
-y 27
 elevation -229
+x 12
+y 27
 end
 arch dungeon_magic
 x 12
 y 28
 end
 arch cobblestones2
-x 12
-y 28
 elevation -141
-end
-arch inn
-name Port Inn
-slaying /scorn/taverns/inn2
-hp 4
-sp 2
-name_pl Port Inn
 x 12
 y 28
 end
@@ -5534,9 +5322,9 @@ x 12
 y 29
 end
 arch cobblestones2
+elevation -67
 x 12
 y 29
-elevation -67
 end
 arch woodhouse
 x 12
@@ -5547,9 +5335,9 @@ x 12
 y 30
 end
 arch cobblestones2
+elevation -9
 x 12
 y 30
-elevation -9
 end
 arch cwall_2_1_2
 x 12
@@ -5560,43 +5348,34 @@ x 12
 y 31
 end
 arch grass
+elevation 100
 x 12
 y 31
-elevation 100
 end
 arch dungeon_magic
 x 12
 y 32
 end
 arch grass
-x 12
-y 32
 elevation 386
+x 12
+y 32
 end
 arch dungeon_magic
 x 12
 y 33
 end
 arch cobblestones2
-x 12
-y 33
 elevation 3437
+x 12
+y 33
 end
 arch dungeon_magic
 x 12
 y 34
 end
 arch grass
-x 12
-y 34
 elevation 4731
-end
-arch t_house1
-name Central Library
-name_pl Central Library
-slaying /scorn/misc/library
-hp 9
-sp 15
 x 12
 y 34
 end
@@ -5605,45 +5384,45 @@ x 12
 y 35
 end
 arch grass
+elevation 4717
 x 12
 y 35
-elevation 4717
 end
 arch dungeon_magic
 x 12
 y 36
 end
 arch cobblestones2
-x 12
-y 36
 elevation 4654
+x 12
+y 36
 end
 arch dungeon_magic
 x 12
 y 37
 end
 arch cobblestones2
-x 12
-y 37
 elevation 3493
+x 12
+y 37
 end
 arch dungeon_magic
 x 12
 y 38
 end
 arch cobblestones2
+elevation 9894
 x 12
 y 38
-elevation 9894
 end
 arch dungeon_magic
 x 12
 y 39
 end
 arch grass
+elevation 12614
 x 12
 y 39
-elevation 12614
 end
 arch house_small
 name Bowyer's Workshop
@@ -5659,94 +5438,94 @@ x 12
 y 40
 end
 arch grass
+elevation 12197
 x 12
 y 40
-elevation 12197
 end
 arch dungeon_magic
 x 12
 y 41
 end
 arch grass
-x 12
-y 41
 elevation 7417
+x 12
+y 41
 end
 arch dungeon_magic
 x 12
 y 42
 end
 arch grass
-x 12
-y 42
 elevation 8264
+x 12
+y 42
 end
 arch dungeon_magic
 x 12
 y 43
 end
 arch cobblestones2
-x 12
-y 43
 elevation 6780
+x 12
+y 43
 end
 arch dungeon_magic
 x 12
 y 44
 end
 arch cobblestones2
-x 12
-y 44
 elevation 5090
+x 12
+y 44
 end
 arch dungeon_magic
 x 12
 y 45
 end
 arch cobblestones2
-x 12
-y 45
 elevation 5562
+x 12
+y 45
 end
 arch dungeon_magic
 x 12
 y 46
 end
 arch cobblestones2
-x 12
-y 46
 elevation 5600
+x 12
+y 46
 end
 arch dungeon_magic
 x 12
 y 47
 end
 arch cobblestones2
+elevation 5615
 x 12
 y 47
-elevation 5615
 end
 arch dungeon_magic
 x 12
 y 48
 end
 arch grass
-x 12
-y 48
 elevation 5949
+x 12
+y 48
 end
 arch dungeon_magic
 x 12
 y 49
 end
 arch grass
+elevation 6666
 x 12
 y 49
-elevation 6666
 end
 arch beach
-x 13
 elevation 258
+x 13
 end
 arch jungle_1
 elevation 906
@@ -5759,9 +5538,9 @@ x 13
 y 2
 end
 arch beach
+elevation 27
 x 13
 y 3
-elevation 27
 end
 arch swamp
 elevation 2
@@ -5841,7 +5620,6 @@ arch sea
 elevation -2256
 x 13
 y 18
-elevation -993
 end
 arch dungeon_magic
 x 13
@@ -5851,7 +5629,6 @@ arch sea
 elevation -2256
 x 13
 y 19
-elevation -980
 end
 arch dungeon_magic
 x 13
@@ -5859,11 +5636,6 @@ y 20
 end
 arch sea
 elevation -2256
-x 13
-y 20
-elevation -938
-end
-arch big_galleon
 x 13
 y 20
 end
@@ -5872,9 +5644,9 @@ x 13
 y 21
 end
 arch sea1
+elevation -871
 x 13
 y 21
-elevation -871
 end
 arch dungeon_magic
 x 13
@@ -5884,7 +5656,6 @@ arch sea
 elevation -2256
 x 13
 y 22
-elevation -786
 end
 arch dungeon_magic
 x 13
@@ -5892,63 +5663,63 @@ y 23
 end
 arch sea
 elevation -2256
-x 13
-y 23
 elevation -689
+x 13
+y 23
 end
 arch dungeon_magic
 x 13
 y 24
 end
 arch cobblestones2
-x 13
-y 24
 elevation -587
+x 13
+y 24
 end
 arch dungeon_magic
 x 13
 y 25
 end
 arch cobblestones2
-x 13
-y 25
 elevation -483
+x 13
+y 25
 end
 arch dungeon_magic
 x 13
 y 26
 end
 arch cobblestones2
-x 13
-y 26
 elevation -379
+x 13
+y 26
 end
 arch dungeon_magic
 x 13
 y 27
 end
 arch cobblestones2
-x 13
-y 27
 elevation -278
+x 13
+y 27
 end
 arch dungeon_magic
 x 13
 y 28
 end
 arch cobblestones2
-x 13
-y 28
 elevation -181
+x 13
+y 28
 end
 arch dungeon_magic
 x 13
 y 29
 end
 arch cobblestones2
+elevation -90
 x 13
 y 29
-elevation -90
 end
 arch bungalow
 x 13
@@ -5971,16 +5742,7 @@ x 13
 y 31
 end
 arch grass
-x 13
-y 31
 elevation 1393
-end
-arch store_magic
-name House of Mana
-name_pl House of Mana
-slaying /scorn/misc/PowerHouse
-hp 10
-sp 33
 x 13
 y 31
 end
@@ -5989,72 +5751,72 @@ x 13
 y 32
 end
 arch grass
+elevation 3175
 x 13
 y 32
-elevation 3175
 end
 arch dungeon_magic
 x 13
 y 33
 end
 arch cobblestones2
-x 13
-y 33
 elevation 4559
+x 13
+y 33
 end
 arch dungeon_magic
 x 13
 y 34
 end
 arch grass
-x 13
-y 34
 elevation 5500
+x 13
+y 34
 end
 arch dungeon_magic
 x 13
 y 35
 end
 arch grass
-x 13
-y 35
 elevation 5879
+x 13
+y 35
 end
 arch dungeon_magic
 x 13
 y 36
 end
 arch cobblestones2
-x 13
-y 36
 elevation 4873
+x 13
+y 36
 end
 arch dungeon_magic
 x 13
 y 37
 end
 arch cobblestones2
-x 13
-y 37
 elevation 7987
+x 13
+y 37
 end
 arch dungeon_magic
 x 13
 y 38
 end
 arch cobblestones2
+elevation 10489
 x 13
 y 38
-elevation 10489
 end
 arch dungeon_magic
 x 13
 y 39
 end
 arch grass
+elevation 12419
 x 13
 y 39
-elevation 12419
 end
 arch house_small
 name Jeweler's Workshop
@@ -6070,27 +5832,27 @@ x 13
 y 40
 end
 arch grass
+elevation 11737
 x 13
 y 40
-elevation 11737
 end
 arch dungeon_magic
 x 13
 y 41
 end
 arch brush
+elevation 9946
 x 13
 y 41
-elevation 9946
 end
 arch dungeon_magic
 x 13
 y 42
 end
 arch grass
+elevation 8067
 x 13
 y 42
-elevation 8067
 end
 arch r_house2
 name Harry's Place
@@ -6106,18 +5868,18 @@ x 13
 y 43
 end
 arch cobblestones2
+elevation 6008
 x 13
 y 43
-elevation 6008
 end
 arch dungeon_magic
 x 13
 y 44
 end
 arch grass
+elevation 2875
 x 13
 y 44
-elevation 2875
 end
 arch swall_2_2_2
 x 13
@@ -6128,9 +5890,9 @@ x 13
 y 45
 end
 arch grass
+elevation 3792
 x 13
 y 45
-elevation 3792
 end
 arch swall_1_2
 x 13
@@ -6141,27 +5903,27 @@ x 13
 y 46
 end
 arch cobblestones2
+elevation 4008
 x 13
 y 46
-elevation 4008
 end
 arch dungeon_magic
 x 13
 y 47
 end
 arch cobblestones2
+elevation 3268
 x 13
 y 47
-elevation 3268
 end
 arch dungeon_magic
 x 13
 y 48
 end
 arch grass
+elevation 3449
 x 13
 y 48
-elevation 3449
 end
 arch swall_1_1
 x 13
@@ -6172,9 +5934,9 @@ x 13
 y 49
 end
 arch grass
+elevation 5791
 x 13
 y 49
-elevation 5791
 end
 arch swall_1_2
 x 13
@@ -6185,8 +5947,8 @@ x 13
 y 49
 end
 arch beach
-x 14
 elevation 594
+x 14
 end
 arch evergreen
 elevation 2824
@@ -6281,7 +6043,6 @@ arch sea
 elevation -2256
 x 14
 y 18
-elevation -1001
 end
 arch dungeon_magic
 x 14
@@ -6291,7 +6052,6 @@ arch sea
 elevation -2256
 x 14
 y 19
-elevation -998
 end
 arch dungeon_magic
 x 14
@@ -6301,16 +6061,15 @@ arch sea
 elevation -2256
 x 14
 y 20
-elevation -965
 end
 arch dungeon_magic
 x 14
 y 21
 end
 arch sea1
+elevation -907
 x 14
 y 21
-elevation -907
 end
 arch dungeon_magic
 x 14
@@ -6320,7 +6079,6 @@ arch sea
 elevation -2256
 x 14
 y 22
-elevation -829
 end
 arch dungeon_magic
 x 14
@@ -6328,14 +6086,6 @@ y 23
 end
 arch sea
 elevation -2256
-x 14
-y 23
-elevation -736
-end
-arch tower_a
-name Lighthouse
-name_pl Lighthouse
-glow_radius 4
 x 14
 y 23
 end
@@ -6344,63 +6094,63 @@ x 14
 y 24
 end
 arch cobblestones2
-x 14
-y 24
 elevation -634
+x 14
+y 24
 end
 arch dungeon_magic
 x 14
 y 25
 end
 arch cobblestones2
-x 14
-y 25
 elevation -526
+x 14
+y 25
 end
 arch dungeon_magic
 x 14
 y 26
 end
 arch cobblestones2
-x 14
-y 26
 elevation -417
+x 14
+y 26
 end
 arch dungeon_magic
 x 14
 y 27
 end
 arch cobblestones2
-x 14
-y 27
 elevation -309
+x 14
+y 27
 end
 arch dungeon_magic
 x 14
 y 28
 end
 arch cobblestones2
-x 14
-y 28
 elevation -204
+x 14
+y 28
 end
 arch dungeon_magic
 x 14
 y 29
 end
 arch cobblestones2
-x 14
-y 29
 elevation -102
+x 14
+y 29
 end
 arch dungeon_magic
 x 14
 y 30
 end
 arch cobblestones2
+elevation -3
 x 14
 y 30
-elevation -3
 end
 arch cwall_2_1_2
 x 14
@@ -6411,81 +6161,81 @@ x 14
 y 31
 end
 arch grass
+elevation 1585
 x 14
 y 31
-elevation 1585
 end
 arch dungeon_magic
 x 14
 y 32
 end
 arch grass
-x 14
-y 32
 elevation 3090
+x 14
+y 32
 end
 arch dungeon_magic
 x 14
 y 33
 end
 arch cobblestones2
-x 14
-y 33
 elevation 4175
+x 14
+y 33
 end
 arch dungeon_magic
 x 14
 y 34
 end
 arch cobblestones2
-x 14
-y 34
 elevation 5401
+x 14
+y 34
 end
 arch dungeon_magic
 x 14
 y 35
 end
 arch cobblestones2
-x 14
-y 35
 elevation 6564
+x 14
+y 35
 end
 arch dungeon_magic
 x 14
 y 36
 end
 arch cobblestones2
-x 14
-y 36
 elevation 7445
+x 14
+y 36
 end
 arch dungeon_magic
 x 14
 y 37
 end
 arch cobblestones2
-x 14
-y 37
 elevation 9260
+x 14
+y 37
 end
 arch dungeon_magic
 x 14
 y 38
 end
 arch cobblestones2
+elevation 10885
 x 14
 y 38
-elevation 10885
 end
 arch dungeon_magic
 x 14
 y 39
 end
 arch grass
+elevation 11144
 x 14
 y 39
-elevation 11144
 end
 arch house_small
 name Medieval Kitchen
@@ -6501,45 +6251,45 @@ x 14
 y 40
 end
 arch grass
+elevation 10634
 x 14
 y 40
-elevation 10634
 end
 arch dungeon_magic
 x 14
 y 41
 end
 arch brush
+elevation 9342
 x 14
 y 41
-elevation 9342
 end
 arch dungeon_magic
 x 14
 y 42
 end
 arch grass
+elevation 7850
 x 14
 y 42
-elevation 7850
 end
 arch dungeon_magic
 x 14
 y 43
 end
 arch cobblestones2
+elevation 5483
 x 14
 y 43
-elevation 5483
 end
 arch dungeon_magic
 x 14
 y 44
 end
 arch grass
+elevation 2378
 x 14
 y 44
-elevation 2378
 end
 arch swall_2_1_2
 x 14
@@ -6550,9 +6300,9 @@ x 14
 y 45
 end
 arch brush
+elevation 1667
 x 14
 y 45
-elevation 1667
 end
 arch lamppost
 x 14
@@ -6563,44 +6313,44 @@ x 14
 y 46
 end
 arch cobblestones2
+elevation 2663
 x 14
 y 46
-elevation 2663
 end
 arch dungeon_magic
 x 14
 y 47
 end
 arch cobblestones2
+elevation 3040
 x 14
 y 47
-elevation 3040
 end
 arch dungeon_magic
 x 14
 y 48
 end
 arch grasspond
+elevation 2282
 x 14
 y 48
-elevation 2282
 end
 arch dungeon_magic
 x 14
 y 49
 end
 arch grass
+elevation 5519
 x 14
 y 49
-elevation 5519
 end
 arch cwall_2_1_2
 x 14
 y 49
 end
 arch beach
-x 15
 elevation 646
+x 15
 end
 arch evergreen
 elevation 2309
@@ -6695,7 +6445,6 @@ arch sea
 elevation -2256
 x 15
 y 18
-elevation -991
 end
 arch dungeon_magic
 x 15
@@ -6705,7 +6454,6 @@ arch sea
 elevation -2256
 x 15
 y 19
-elevation -995
 end
 arch dungeon_magic
 x 15
@@ -6715,7 +6463,6 @@ arch sea
 elevation -2256
 x 15
 y 20
-elevation -969
 end
 arch dungeon_magic
 x 15
@@ -6725,7 +6472,6 @@ arch sea
 elevation -2256
 x 15
 y 21
-elevation -917
 end
 arch dungeon_magic
 x 15
@@ -6735,7 +6481,6 @@ arch sea
 elevation -2256
 x 15
 y 22
-elevation -844
 end
 arch dungeon_magic
 x 15
@@ -6745,7 +6490,6 @@ arch sea
 elevation -2256
 x 15
 y 23
-elevation -754
 end
 arch dungeon_magic
 x 15
@@ -6755,43 +6499,42 @@ arch sea
 elevation -2256
 x 15
 y 24
-elevation -652
 end
 arch dungeon_magic
 x 15
 y 25
 end
 arch cobblestones2
-x 15
-y 25
 elevation -543
+x 15
+y 25
 end
 arch dungeon_magic
 x 15
 y 26
 end
 arch cobblestones2
-x 15
-y 26
 elevation -432
+x 15
+y 26
 end
 arch dungeon_magic
 x 15
 y 27
 end
 arch cobblestones2
-x 15
-y 27
 elevation -321
+x 15
+y 27
 end
 arch dungeon_magic
 x 15
 y 28
 end
 arch cobblestones2
+elevation -213
 x 15
 y 28
-elevation -213
 end
 arch bungalow
 x 15
@@ -6802,11 +6545,7 @@ x 15
 y 29
 end
 arch cobblestones2
-x 15
-y 29
 elevation -108
-end
-arch house_long
 x 15
 y 29
 end
@@ -6815,9 +6554,9 @@ x 15
 y 30
 end
 arch cobblestones2
+elevation -7
 x 15
 y 30
-elevation -7
 end
 arch cwall_2_1_2
 x 15
@@ -6828,9 +6567,9 @@ x 15
 y 31
 end
 arch grass
+elevation 359
 x 15
 y 31
-elevation 359
 end
 arch well
 name A small well
@@ -6846,34 +6585,25 @@ x 15
 y 32
 end
 arch grass
+elevation 1275
 x 15
 y 32
-elevation 1275
 end
 arch dungeon_magic
 x 15
 y 33
 end
 arch cobblestones2
-x 15
-y 33
 elevation 851
+x 15
+y 33
 end
 arch dungeon_magic
 x 15
 y 34
 end
 arch grass
-x 15
-y 34
 elevation 4816
-end
-arch fort
-name dragon guild
-name_pl dragon guild
-slaying /scorn/misc/dragon_guild
-hp 7
-sp 15
 x 15
 y 34
 end
@@ -6882,45 +6612,45 @@ x 15
 y 35
 end
 arch grass
+elevation 7010
 x 15
 y 35
-elevation 7010
 end
 arch dungeon_magic
 x 15
 y 36
 end
 arch cobblestones2
-x 15
-y 36
 elevation 8327
+x 15
+y 36
 end
 arch dungeon_magic
 x 15
 y 37
 end
 arch cobblestones2
-x 15
-y 37
 elevation 9338
+x 15
+y 37
 end
 arch dungeon_magic
 x 15
 y 38
 end
 arch cobblestones2
+elevation 10229
 x 15
 y 38
-elevation 10229
 end
 arch dungeon_magic
 x 15
 y 39
 end
 arch grass
+elevation 10124
 x 15
 y 39
-elevation 10124
 end
 arch market1
 name Guild Houses Inc.
@@ -6934,13 +6664,7 @@ x 15
 y 40
 end
 arch grass
-x 15
-y 40
 elevation 6093
-end
-arch barrack_long
-name large house
-name_pl large house
 x 15
 y 40
 end
@@ -6949,18 +6673,18 @@ x 15
 y 41
 end
 arch grass
+elevation 8224
 x 15
 y 41
-elevation 8224
 end
 arch dungeon_magic
 x 15
 y 42
 end
 arch grass
+elevation 7179
 x 15
 y 42
-elevation 7179
 end
 arch house_small
 name house
@@ -6973,18 +6697,18 @@ x 15
 y 43
 end
 arch cobblestones2
+elevation 5160
 x 15
 y 43
-elevation 5160
 end
 arch dungeon_magic
 x 15
 y 44
 end
 arch grass
+elevation 3481
 x 15
 y 44
-elevation 3481
 end
 arch swall_2_1_2
 x 15
@@ -6995,53 +6719,53 @@ x 15
 y 45
 end
 arch grasspond
+elevation 3870
 x 15
 y 45
-elevation 3870
 end
 arch dungeon_magic
 x 15
 y 46
 end
 arch cobblestones2
-x 15
-y 46
 elevation 3886
+x 15
+y 46
 end
 arch dungeon_magic
 x 15
 y 47
 end
 arch cobblestones2
+elevation 3905
 x 15
 y 47
-elevation 3905
 end
 arch dungeon_magic
 x 15
 y 48
 end
 arch woods_2
+elevation 4615
 x 15
 y 48
-elevation 4615
 end
 arch dungeon_magic
 x 15
 y 49
 end
 arch brush
+elevation 5822
 x 15
 y 49
-elevation 5822
 end
 arch cwall_2_1_2
 x 15
 y 49
 end
 arch beach
-x 16
 elevation 536
+x 16
 end
 arch tree
 elevation 2767
@@ -7099,9 +6823,9 @@ x 16
 y 11
 end
 arch shallow_sea
+elevation -235
 x 16
 y 12
-elevation -235
 end
 arch sea
 elevation -2256
@@ -7136,7 +6860,6 @@ arch sea
 elevation -2256
 x 16
 y 18
-elevation -962
 end
 arch dungeon_magic
 x 16
@@ -7146,7 +6869,6 @@ arch sea
 elevation -2256
 x 16
 y 19
-elevation -971
 end
 arch dungeon_magic
 x 16
@@ -7156,7 +6878,6 @@ arch sea
 elevation -2256
 x 16
 y 20
-elevation -950
 end
 arch dungeon_magic
 x 16
@@ -7166,23 +6887,13 @@ arch sea
 elevation -2256
 x 16
 y 21
-elevation -902
 end
 arch dungeon_magic
 x 16
 y 22
 end
 arch sea1
-x 16
-y 22
 elevation -832
-end
-arch big_galleon
-name to Wolfsburg
-name_pl to Wolfsburg
-slaying /world/world_128_109
-hp 43
-sp 25
 x 16
 y 22
 end
@@ -7191,18 +6902,18 @@ x 16
 y 23
 end
 arch sea1
+elevation -744
 x 16
 y 23
-elevation -744
 end
 arch dungeon_magic
 x 16
 y 24
 end
 arch sea1
+elevation -643
 x 16
 y 24
-elevation -643
 end
 arch pier_1_1
 x 16
@@ -7213,9 +6924,9 @@ x 16
 y 25
 end
 arch sea1
+elevation -534
 x 16
 y 25
-elevation -534
 end
 arch pier_3_4
 x 16
@@ -7226,9 +6937,9 @@ x 16
 y 26
 end
 arch sea1
+elevation -422
 x 16
 y 26
-elevation -422
 end
 arch pier_2_1_1
 x 16
@@ -7239,9 +6950,9 @@ x 16
 y 27
 end
 arch cobblestones2
+elevation -313
 x 16
 y 27
-elevation -313
 end
 arch house_small
 name Pirate's Den
@@ -7257,27 +6968,27 @@ x 16
 y 28
 end
 arch cobblestones2
+elevation -207
 x 16
 y 28
-elevation -207
 end
 arch dungeon_magic
 x 16
 y 29
 end
 arch cobblestones2
-x 16
-y 29
 elevation -108
+x 16
+y 29
 end
 arch dungeon_magic
 x 16
 y 30
 end
 arch cobblestones2
+elevation -9
 x 16
 y 30
-elevation -9
 end
 arch cwall_2_1_2
 x 16
@@ -7288,15 +6999,7 @@ x 16
 y 31
 end
 arch grass
-x 16
-y 31
 elevation -1
-end
-arch guild
-name Guild of the Mailed Fist
-name_pl Guild of the Mailed Fist
-slaying /scorn/guilds/mailed_fist/ground
-no_pass 0
 x 16
 y 31
 end
@@ -7305,72 +7008,72 @@ x 16
 y 32
 end
 arch grass
+elevation 760
 x 16
 y 32
-elevation 760
 end
 arch dungeon_magic
 x 16
 y 33
 end
 arch cobblestones2
-x 16
-y 33
 elevation 2070
+x 16
+y 33
 end
 arch dungeon_magic
 x 16
 y 34
 end
 arch grass
-x 16
-y 34
 elevation 4707
+x 16
+y 34
 end
 arch dungeon_magic
 x 16
 y 35
 end
 arch grass
-x 16
-y 35
 elevation 6587
+x 16
+y 35
 end
 arch dungeon_magic
 x 16
 y 36
 end
 arch cobblestones2
-x 16
-y 36
 elevation 7502
+x 16
+y 36
 end
 arch dungeon_magic
 x 16
 y 37
 end
 arch cobblestones2
-x 16
-y 37
 elevation 7984
+x 16
+y 37
 end
 arch dungeon_magic
 x 16
 y 38
 end
 arch cobblestones2
+elevation 8903
 x 16
 y 38
-elevation 8903
 end
 arch dungeon_magic
 x 16
 y 39
 end
 arch grass
+elevation 9163
 x 16
 y 39
-elevation 9163
 end
 arch market3
 name Guild Houses Inc.
@@ -7384,27 +7087,27 @@ x 16
 y 40
 end
 arch grass
+elevation 8783
 x 16
 y 40
-elevation 8783
 end
 arch dungeon_magic
 x 16
 y 41
 end
 arch grass
-x 16
-y 41
 elevation 7025
+x 16
+y 41
 end
 arch dungeon_magic
 x 16
 y 42
 end
 arch grass
+elevation 6052
 x 16
 y 42
-elevation 6052
 end
 arch tavern
 name House of porters
@@ -7420,9 +7123,9 @@ x 16
 y 43
 end
 arch grass
+elevation 6257
 x 16
 y 43
-elevation 6257
 end
 arch stronghold_sym
 name Stronghold
@@ -7438,9 +7141,9 @@ x 16
 y 44
 end
 arch grass
+elevation 5402
 x 16
 y 44
-elevation 5402
 end
 arch swall_2_1_2
 x 16
@@ -7451,16 +7154,7 @@ x 16
 y 45
 end
 arch brush
-x 16
-y 45
 elevation 5401
-end
-arch collesium
-name the ARENA
-name_pl the ARENA
-slaying /scorn/misc/battle_arena/entrance
-hp 11
-sp 24
 x 16
 y 45
 end
@@ -7469,44 +7163,44 @@ x 16
 y 46
 end
 arch grass
+elevation 5104
 x 16
 y 46
-elevation 5104
 end
 arch dungeon_magic
 x 16
 y 47
 end
 arch cobblestones2
+elevation 4466
 x 16
 y 47
-elevation 4466
 end
 arch dungeon_magic
 x 16
 y 48
 end
 arch grass
+elevation 4576
 x 16
 y 48
-elevation 4576
 end
 arch dungeon_magic
 x 16
 y 49
 end
 arch brush
+elevation 6379
 x 16
 y 49
-elevation 6379
 end
 arch cwall_2_1_2
 x 16
 y 49
 end
 arch beach
-x 17
 elevation 547
+x 17
 end
 arch jungle_1
 elevation 469
@@ -7554,9 +7248,9 @@ x 17
 y 9
 end
 arch beach
+elevation 361
 x 17
 y 10
-elevation 361
 end
 arch shallow_sea
 elevation -5
@@ -7564,9 +7258,9 @@ x 17
 y 11
 end
 arch shallow_sea
+elevation -230
 x 17
 y 12
-elevation -230
 end
 arch sea
 elevation -2256
@@ -7601,7 +7295,6 @@ arch sea
 elevation -2256
 x 17
 y 18
-elevation -916
 end
 arch dungeon_magic
 x 17
@@ -7611,7 +7304,6 @@ arch sea
 elevation -2256
 x 17
 y 19
-elevation -926
 end
 arch dungeon_magic
 x 17
@@ -7621,7 +7313,6 @@ arch sea
 elevation -2256
 x 17
 y 20
-elevation -908
 end
 arch dungeon_magic
 x 17
@@ -7631,25 +7322,24 @@ arch sea
 elevation -2256
 x 17
 y 21
-elevation -863
 end
 arch dungeon_magic
 x 17
 y 22
 end
 arch sea1
-x 17
-y 22
 elevation -795
+x 17
+y 22
 end
 arch dungeon_magic
 x 17
 y 23
 end
 arch sea1
+elevation -708
 x 17
 y 23
-elevation -708
 end
 arch dungeon_magic
 x 17
@@ -7659,7 +7349,6 @@ arch sea
 elevation -2256
 x 17
 y 24
-elevation -607
 end
 arch dungeon_magic
 x 17
@@ -7669,7 +7358,6 @@ arch sea
 elevation -2256
 x 17
 y 25
-elevation -499
 end
 arch dungeon_magic
 x 17
@@ -7679,7 +7367,6 @@ arch sea
 elevation -2256
 x 17
 y 26
-elevation -389
 end
 arch dungeon_magic
 x 17
@@ -7689,7 +7376,6 @@ arch sea
 elevation -2256
 x 17
 y 27
-elevation -283
 end
 arch dungeon_magic
 x 17
@@ -7699,7 +7385,6 @@ arch sea
 elevation -2256
 x 17
 y 28
-elevation -185
 end
 arch dungeon_magic
 x 17
@@ -7709,16 +7394,15 @@ arch sea
 elevation -2256
 x 17
 y 29
-elevation -96
 end
 arch dungeon_magic
 x 17
 y 30
 end
 arch cobblestones2
+elevation -21
 x 17
 y 30
-elevation -21
 end
 arch cwall_2_1_2
 x 17
@@ -7729,36 +7413,36 @@ x 17
 y 31
 end
 arch grass
+elevation -4
 x 17
 y 31
-elevation -4
 end
 arch dungeon_magic
 x 17
 y 32
 end
 arch grass
+elevation 833
 x 17
 y 32
-elevation 833
 end
 arch dungeon_magic
 x 17
 y 33
 end
 arch cobblestones2
+elevation 2550
 x 17
 y 33
-elevation 2550
 end
 arch dungeon_magic
 x 17
 y 34
 end
 arch grass
+elevation 3929
 x 17
 y 34
-elevation 3929
 end
 arch lamppost
 x 17
@@ -7769,9 +7453,9 @@ x 17
 y 35
 end
 arch grass
+elevation 4991
 x 17
 y 35
-elevation 4991
 end
 arch house_2
 name Puddings Place
@@ -7786,36 +7470,36 @@ x 17
 y 36
 end
 arch cobblestones2
+elevation 5554
 x 17
 y 36
-elevation 5554
 end
 arch dungeon_magic
 x 17
 y 37
 end
 arch cobblestones2
-x 17
-y 37
 elevation 6235
+x 17
+y 37
 end
 arch dungeon_magic
 x 17
 y 38
 end
 arch cobblestones2
+elevation 6662
 x 17
 y 38
-elevation 6662
 end
 arch dungeon_magic
 x 17
 y 39
 end
 arch grass
+elevation 8451
 x 17
 y 39
-elevation 8451
 end
 arch minihouse
 name Jacob's Lighting Emporium
@@ -7831,9 +7515,9 @@ x 17
 y 40
 end
 arch grass
+elevation 8762
 x 17
 y 40
-elevation 8762
 end
 arch swall_1_1
 x 17
@@ -7844,9 +7528,9 @@ x 17
 y 41
 end
 arch grass
+elevation 8183
 x 17
 y 41
-elevation 8183
 end
 arch swall_2_1_1
 x 17
@@ -7857,9 +7541,9 @@ x 17
 y 42
 end
 arch brush
-x 17
-y 42
 elevation 7576
+x 17
+y 42
 end
 arch swall_2_1_1
 x 17
@@ -7870,9 +7554,9 @@ x 17
 y 43
 end
 arch grass
+elevation 7360
 x 17
 y 43
-elevation 7360
 end
 arch swall_2_1_1
 x 17
@@ -7883,9 +7567,9 @@ x 17
 y 44
 end
 arch grass
+elevation 7231
 x 17
 y 44
-elevation 7231
 end
 arch swall_3_1
 x 17
@@ -7896,45 +7580,45 @@ x 17
 y 45
 end
 arch grass
+elevation 6713
 x 17
 y 45
-elevation 6713
 end
 arch dungeon_magic
 x 17
 y 46
 end
 arch grass
-x 17
-y 46
 elevation 5954
+x 17
+y 46
 end
 arch dungeon_magic
 x 17
 y 47
 end
 arch grass
-x 17
-y 47
 elevation 5581
+x 17
+y 47
 end
 arch dungeon_magic
 x 17
 y 48
 end
 arch grass
-x 17
-y 48
 elevation 5468
+x 17
+y 48
 end
 arch dungeon_magic
 x 17
 y 49
 end
 arch grass
+elevation 6255
 x 17
 y 49
-elevation 6255
 end
 arch cwall_2_1_2
 x 17
@@ -7985,14 +7669,14 @@ x 18
 y 8
 end
 arch beach
+elevation 75
 x 18
 y 9
-elevation 75
 end
 arch beach
+elevation -9
 x 18
 y 10
-elevation -9
 end
 arch shallow_sea
 elevation -93
@@ -8000,9 +7684,9 @@ x 18
 y 11
 end
 arch shallow_sea
+elevation -239
 x 18
 y 12
-elevation -239
 end
 arch sea
 elevation -2256
@@ -8037,7 +7721,6 @@ arch sea
 elevation -2256
 x 18
 y 18
-elevation -853
 end
 arch dungeon_magic
 x 18
@@ -8047,7 +7730,6 @@ arch sea
 elevation -2256
 x 18
 y 19
-elevation -863
 end
 arch dungeon_magic
 x 18
@@ -8057,7 +7739,6 @@ arch sea
 elevation -2256
 x 18
 y 20
-elevation -845
 end
 arch dungeon_magic
 x 18
@@ -8067,7 +7748,6 @@ arch sea
 elevation -2256
 x 18
 y 21
-elevation -802
 end
 arch dungeon_magic
 x 18
@@ -8077,7 +7757,6 @@ arch sea
 elevation -2256
 x 18
 y 22
-elevation -735
 end
 arch dungeon_magic
 x 18
@@ -8087,7 +7766,6 @@ arch sea
 elevation -2256
 x 18
 y 23
-elevation -649
 end
 arch dungeon_magic
 x 18
@@ -8097,7 +7775,6 @@ arch sea
 elevation -2256
 x 18
 y 24
-elevation -548
 end
 arch dungeon_magic
 x 18
@@ -8107,7 +7784,6 @@ arch sea
 elevation -2256
 x 18
 y 25
-elevation -439
 end
 arch dungeon_magic
 x 18
@@ -8115,16 +7791,6 @@ y 26
 end
 arch sea
 elevation -2256
-x 18
-y 26
-elevation -331
-end
-arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
-slaying /world/world_101_114
-hp 16
-sp 43
 x 18
 y 26
 end
@@ -8133,18 +7799,18 @@ x 18
 y 27
 end
 arch sea1
-x 18
-y 27
 elevation -231
+x 18
+y 27
 end
 arch dungeon_magic
 x 18
 y 28
 end
 arch sea1
+elevation -145
 x 18
 y 28
-elevation -145
 end
 arch pier_1_1
 x 18
@@ -8155,9 +7821,9 @@ x 18
 y 29
 end
 arch sea1
+elevation -73
 x 18
 y 29
-elevation -73
 end
 arch pier_2_2_1
 x 18
@@ -8168,9 +7834,9 @@ x 18
 y 30
 end
 arch cobblestones2
+elevation -10
 x 18
 y 30
-elevation -10
 end
 arch cwall_2_1_2
 x 18
@@ -8181,72 +7847,72 @@ x 18
 y 31
 end
 arch cobblestones2
+elevation 132
 x 18
 y 31
-elevation 132
 end
 arch dungeon_magic
 x 18
 y 32
 end
 arch cobblestones2
-x 18
-y 32
 elevation 1560
+x 18
+y 32
 end
 arch dungeon_magic
 x 18
 y 33
 end
 arch cobblestones2
-x 18
-y 33
 elevation 2724
+x 18
+y 33
 end
 arch dungeon_magic
 x 18
 y 34
 end
 arch cobblestones2
-x 18
-y 34
 elevation 1320
+x 18
+y 34
 end
 arch dungeon_magic
 x 18
 y 35
 end
 arch cobblestones2
-x 18
-y 35
 elevation 1989
+x 18
+y 35
 end
 arch dungeon_magic
 x 18
 y 36
 end
 arch cobblestones2
-x 18
-y 36
 elevation 3791
+x 18
+y 36
 end
 arch dungeon_magic
 x 18
 y 37
 end
 arch cobblestones2
-x 18
-y 37
 elevation 2337
+x 18
+y 37
 end
 arch dungeon_magic
 x 18
 y 38
 end
 arch cobblestones2
+elevation 5463
 x 18
 y 38
-elevation 5463
 end
 arch dungeon_magic
 x 18
@@ -8254,9 +7920,9 @@ y 39
 end
 arch grass
 elevation 2447
+elevation 7199
 x 18
 y 39
-elevation 7199
 end
 arch lamppost
 x 18
@@ -8268,15 +7934,7 @@ y 40
 end
 arch grass
 elevation 2447
-x 18
-y 40
 elevation 8223
-end
-arch house_long
-name Old Mansion
-name_pl Old Mansion
-slaying /scorn/mansion/entrance
-hp 14
 x 18
 y 40
 end
@@ -8286,27 +7944,27 @@ y 41
 end
 arch grass
 no_pass 1
+elevation 8403
 x 18
 y 41
-elevation 8403
 end
 arch dungeon_magic
 x 18
 y 42
 end
 arch grasspond
+elevation 8083
 x 18
 y 42
-elevation 8083
 end
 arch dungeon_magic
 x 18
 y 43
 end
 arch brush
+elevation 8271
 x 18
 y 43
-elevation 8271
 end
 arch dungeon_magic
 x 18
@@ -8314,9 +7972,9 @@ y 44
 end
 arch grass
 elevation 2447
+elevation 8200
 x 18
 y 44
-elevation 8200
 end
 arch swall_2_1_2
 x 18
@@ -8328,9 +7986,9 @@ y 45
 end
 arch grass
 elevation 2447
+elevation 7652
 x 18
 y 45
-elevation 7652
 end
 arch dungeon_magic
 x 18
@@ -8338,9 +7996,9 @@ y 46
 end
 arch grass
 elevation 2447
-x 18
-y 46
 elevation 6745
+x 18
+y 46
 end
 arch dungeon_magic
 x 18
@@ -8348,18 +8006,18 @@ y 47
 end
 arch grass
 elevation 2447
+elevation 6047
 x 18
 y 47
-elevation 6047
 end
 arch dungeon_magic
 x 18
 y 48
 end
 arch brush
+elevation 5953
 x 18
 y 48
-elevation 5953
 end
 arch dungeon_magic
 x 18
@@ -8367,9 +8025,9 @@ y 49
 end
 arch grass
 elevation 2447
+elevation 5883
 x 18
 y 49
-elevation 5883
 end
 arch cwall_2_1_2
 x 18
@@ -8414,15 +8072,26 @@ elevation 1653
 x 19
 y 7
 end
+arch sign_e
+msg
+is gud brig, no trols
+endmsg
+x 19
+y 7
+end
 arch grass
 elevation 396
 x 19
 y 8
 end
+arch s_bridge1a
+x 19
+y 8
+end
 arch beach
+elevation 7
 x 19
 y 9
-elevation 7
 end
 arch shallow_sea
 elevation -15
@@ -8431,15 +8100,15 @@ y 10
 end
 arch shallow_sea
 elevation -15
+elevation -137
 x 19
 y 11
-elevation -137
 end
 arch shallow_sea
 elevation -15
+elevation -248
 x 19
 y 12
-elevation -248
 end
 arch sea
 elevation -2256
@@ -8474,7 +8143,6 @@ arch sea
 elevation -2256
 x 19
 y 18
-elevation -773
 end
 arch dungeon_magic
 x 19
@@ -8484,7 +8152,6 @@ arch sea
 elevation -2256
 x 19
 y 19
-elevation -782
 end
 arch dungeon_magic
 x 19
@@ -8494,7 +8161,6 @@ arch sea
 elevation -2256
 x 19
 y 20
-elevation -765
 end
 arch dungeon_magic
 x 19
@@ -8504,7 +8170,6 @@ arch sea
 elevation -2256
 x 19
 y 21
-elevation -723
 end
 arch dungeon_magic
 x 19
@@ -8514,7 +8179,6 @@ arch sea
 elevation -2256
 x 19
 y 22
-elevation -657
 end
 arch dungeon_magic
 x 19
@@ -8524,7 +8188,6 @@ arch sea
 elevation -2256
 x 19
 y 23
-elevation -571
 end
 arch dungeon_magic
 x 19
@@ -8534,7 +8197,6 @@ arch sea
 elevation -2256
 x 19
 y 24
-elevation -469
 end
 arch dungeon_magic
 x 19
@@ -8544,7 +8206,6 @@ arch sea
 elevation -2256
 x 19
 y 25
-elevation -358
 end
 arch dungeon_magic
 x 19
@@ -8554,16 +8215,15 @@ arch sea
 elevation -2256
 x 19
 y 26
-elevation -245
 end
 arch dungeon_magic
 x 19
 y 27
 end
 arch sea1
-x 19
-y 27
 elevation -152
+x 19
+y 27
 end
 arch dungeon_magic
 x 19
@@ -8571,18 +8231,18 @@ y 28
 end
 arch sea
 elevation -2256
+elevation -83
 x 19
 y 28
-elevation -83
 end
 arch dungeon_magic
 x 19
 y 29
 end
 arch sea1
+elevation -37
 x 19
 y 29
-elevation -37
 end
 arch pier_2_1_2
 x 19
@@ -8593,9 +8253,9 @@ x 19
 y 30
 end
 arch cobblestones2
+elevation 5
 x 19
 y 30
-elevation 5
 end
 arch cwall_2_1_2
 x 19
@@ -8606,16 +8266,7 @@ x 19
 y 31
 end
 arch cobblestones2
-x 19
-y 31
 elevation 129
-end
-arch prison
-name Prison
-name_pl Prison
-slaying /scorn/anthony/prison
-hp 9
-sp 23
 x 19
 y 31
 end
@@ -8624,34 +8275,25 @@ x 19
 y 32
 end
 arch cobblestones2
+elevation 2640
 x 19
 y 32
-elevation 2640
 end
 arch dungeon_magic
 x 19
 y 33
 end
 arch cobblestones2
-x 19
-y 33
 elevation 3794
+x 19
+y 33
 end
 arch dungeon_magic
 x 19
 y 34
 end
 arch cobblestones2
-x 19
-y 34
 elevation 3490
-end
-arch l_shop1
-name Goth's Tavern
-name_pl Goth's Tavern
-slaying /scorn/taverns/goths
-hp 18
-sp 32
 x 19
 y 34
 end
@@ -8660,54 +8302,54 @@ x 19
 y 35
 end
 arch cobblestones2
+elevation 2231
 x 19
 y 35
-elevation 2231
 end
 arch dungeon_magic
 x 19
 y 36
 end
 arch cobblestones2
-x 19
-y 36
 elevation 3167
+x 19
+y 36
 end
 arch dungeon_magic
 x 19
 y 37
 end
 arch cobblestones2
-x 19
-y 37
 elevation 2239
+x 19
+y 37
 end
 arch dungeon_magic
 x 19
 y 38
 end
 arch cobblestones2
-x 19
-y 38
 elevation 3987
+x 19
+y 38
 end
 arch dungeon_magic
 x 19
 y 39
 end
 arch cobblestones2
+elevation 5990
 x 19
 y 39
-elevation 5990
 end
 arch dungeon_magic
 x 19
 y 40
 end
 arch grass
+elevation 7710
 x 19
 y 40
-elevation 7710
 end
 arch dungeon_magic
 x 19
@@ -8715,36 +8357,36 @@ y 41
 end
 arch brush
 no_pass 1
+elevation 8151
 x 19
 y 41
-elevation 8151
 end
 arch dungeon_magic
 x 19
 y 42
 end
 arch grass
-x 19
-y 42
 elevation 8145
+x 19
+y 42
 end
 arch dungeon_magic
 x 19
 y 43
 end
 arch grass
-x 19
-y 43
 elevation 8263
+x 19
+y 43
 end
 arch dungeon_magic
 x 19
 y 44
 end
 arch grass
+elevation 8325
 x 19
 y 44
-elevation 8325
 end
 arch swall_2_1_2
 x 19
@@ -8755,45 +8397,45 @@ x 19
 y 45
 end
 arch grass
+elevation 8035
 x 19
 y 45
-elevation 8035
 end
 arch dungeon_magic
 x 19
 y 46
 end
 arch grasspond
+elevation 7054
 x 19
 y 46
-elevation 7054
 end
 arch dungeon_magic
 x 19
 y 47
 end
 arch grass
-x 19
-y 47
 elevation 5346
+x 19
+y 47
 end
 arch dungeon_magic
 x 19
 y 48
 end
 arch grass
+elevation 6154
 x 19
 y 48
-elevation 6154
 end
 arch dungeon_magic
 x 19
 y 49
 end
 arch brush
+elevation 6390
 x 19
 y 49
-elevation 6390
 end
 arch cwall_2_1_2
 x 19
@@ -8839,7 +8481,22 @@ x 20
 y 7
 end
 arch shallow_sea
-elevation -62
+no_pass 0
+elevation -16
+x 20
+y 8
+end
+arch s_bridge1
+x 20
+y 8
+end
+arch invis_exit
+msg
+Something is amis here...
+endmsg
+slaying /dungeons/trollbridge
+hp 2
+sp 4
 x 20
 y 8
 end
@@ -8855,15 +8512,15 @@ y 10
 end
 arch shallow_sea
 elevation -16
+elevation -147
 x 20
 y 11
-elevation -147
 end
 arch shallow_sea
 elevation -16
+elevation -239
 x 20
 y 12
-elevation -239
 end
 arch sea
 elevation -2256
@@ -8898,7 +8555,6 @@ arch sea
 elevation -2256
 x 20
 y 18
-elevation -680
 end
 arch dungeon_magic
 x 20
@@ -8908,7 +8564,6 @@ arch sea
 elevation -2256
 x 20
 y 19
-elevation -687
 end
 arch dungeon_magic
 x 20
@@ -8918,16 +8573,15 @@ arch sea
 elevation -2256
 x 20
 y 20
-elevation -670
 end
 arch dungeon_magic
 x 20
 y 21
 end
 arch sea1
-x 20
-y 21
 elevation -629
+x 20
+y 21
 end
 arch dungeon_magic
 x 20
@@ -8937,7 +8591,6 @@ arch sea
 elevation -2256
 x 20
 y 22
-elevation -564
 end
 arch dungeon_magic
 x 20
@@ -8947,7 +8600,6 @@ arch sea
 elevation -2256
 x 20
 y 23
-elevation -478
 end
 arch dungeon_magic
 x 20
@@ -8957,7 +8609,6 @@ arch sea
 elevation -2256
 x 20
 y 24
-elevation -375
 end
 arch dungeon_magic
 x 20
@@ -8967,7 +8618,6 @@ arch sea
 elevation -2256
 x 20
 y 25
-elevation -259
 end
 arch dungeon_magic
 x 20
@@ -8977,7 +8627,6 @@ arch sea
 elevation -2256
 x 20
 y 26
-elevation -143
 end
 arch dungeon_magic
 x 20
@@ -8987,7 +8636,6 @@ arch sea
 elevation -2256
 x 20
 y 27
-elevation -10
 end
 arch dungeon_magic
 x 20
@@ -8997,16 +8645,15 @@ arch sea
 elevation -2256
 x 20
 y 28
-elevation -10
 end
 arch dungeon_magic
 x 20
 y 29
 end
 arch sea1
+elevation 3
 x 20
 y 29
-elevation 3
 end
 arch pier_2_2_3
 x 20
@@ -9017,9 +8664,9 @@ x 20
 y 30
 end
 arch cobblestones2
+elevation 22
 x 20
 y 30
-elevation 22
 end
 arch invis_exit
 slaying /scorn/anthony/prison
@@ -9037,54 +8684,54 @@ x 20
 y 31
 end
 arch cobblestones2
+elevation 1352
 x 20
 y 31
-elevation 1352
 end
 arch dungeon_magic
 x 20
 y 32
 end
 arch cobblestones2
-x 20
-y 32
 elevation 3402
+x 20
+y 32
 end
 arch dungeon_magic
 x 20
 y 33
 end
 arch cobblestones2
-x 20
-y 33
 elevation 4671
+x 20
+y 33
 end
 arch dungeon_magic
 x 20
 y 34
 end
 arch cobblestones2
-x 20
-y 34
 elevation 4192
+x 20
+y 34
 end
 arch dungeon_magic
 x 20
 y 35
 end
 arch cobblestones2
-x 20
-y 35
 elevation 3432
+x 20
+y 35
 end
 arch dungeon_magic
 x 20
 y 36
 end
 arch cobblestones2
+elevation 4055
 x 20
 y 36
-elevation 4055
 end
 arch dwall_2_2_2
 x 20
@@ -9095,9 +8742,9 @@ x 20
 y 37
 end
 arch cobblestones2
+elevation 4519
 x 20
 y 37
-elevation 4519
 end
 arch invis_exit
 slaying /scorn/misc/gatehouse
@@ -9115,9 +8762,9 @@ x 20
 y 38
 end
 arch cobblestones2
+elevation 5152
 x 20
 y 38
-elevation 5152
 end
 arch dwall_2_2_1
 x 20
@@ -9128,9 +8775,9 @@ x 20
 y 39
 end
 arch grass
+elevation 6331
 x 20
 y 39
-elevation 6331
 end
 arch tavern
 name Gork's Grovel
@@ -9146,9 +8793,9 @@ x 20
 y 40
 end
 arch grass
+elevation 7349
 x 20
 y 40
-elevation 7349
 end
 arch swall_1_4
 x 20
@@ -9160,36 +8807,36 @@ y 41
 end
 arch grass
 no_pass 1
+elevation 7653
 x 20
 y 41
-elevation 7653
 end
 arch dungeon_magic
 x 20
 y 42
 end
 arch brush
+elevation 7438
 x 20
 y 42
-elevation 7438
 end
 arch dungeon_magic
 x 20
 y 43
 end
 arch grass
-x 20
-y 43
 elevation 6801
+x 20
+y 43
 end
 arch dungeon_magic
 x 20
 y 44
 end
 arch grass
+elevation 8019
 x 20
 y 44
-elevation 8019
 end
 arch swall_2_1_2
 x 20
@@ -9200,36 +8847,36 @@ x 20
 y 45
 end
 arch brush
+elevation 7947
 x 20
 y 45
-elevation 7947
 end
 arch dungeon_magic
 x 20
 y 46
 end
 arch brush
+elevation 6816
 x 20
 y 46
-elevation 6816
 end
 arch dungeon_magic
 x 20
 y 47
 end
 arch woods_2
+elevation 5495
 x 20
 y 47
-elevation 5495
 end
 arch dungeon_magic
 x 20
 y 48
 end
 arch grass
+elevation 6119
 x 20
 y 48
-elevation 6119
 end
 arch ytree_2
 x 20
@@ -9240,9 +8887,9 @@ x 20
 y 49
 end
 arch brush
+elevation 6834
 x 20
 y 49
-elevation 6834
 end
 arch cwall_2_1_2
 x 20
@@ -9288,7 +8935,10 @@ x 21
 y 7
 end
 arch shallow_sea
-elevation -50
+x 21
+y 8
+end
+arch s_bridge1
 x 21
 y 8
 end
@@ -9303,14 +8953,14 @@ x 21
 y 10
 end
 arch shallow_sea
+elevation -132
 x 21
 y 11
-elevation -132
 end
 arch shallow_sea
+elevation -207
 x 21
 y 12
-elevation -207
 end
 arch sea
 elevation -2256
@@ -9345,7 +8995,6 @@ arch sea
 elevation -2256
 x 21
 y 18
-elevation -574
 end
 arch dungeon_magic
 x 21
@@ -9355,7 +9004,6 @@ arch sea
 elevation -2256
 x 21
 y 19
-elevation -580
 end
 arch dungeon_magic
 x 21
@@ -9365,7 +9013,6 @@ arch sea
 elevation -2256
 x 21
 y 20
-elevation -564
 end
 arch dungeon_magic
 x 21
@@ -9375,7 +9022,6 @@ arch sea
 elevation -2256
 x 21
 y 21
-elevation -524
 end
 arch dungeon_magic
 x 21
@@ -9385,7 +9031,6 @@ arch sea
 elevation -2256
 x 21
 y 22
-elevation -462
 end
 arch dungeon_magic
 x 21
@@ -9395,7 +9040,6 @@ arch sea
 elevation -2256
 x 21
 y 23
-elevation -378
 end
 arch dungeon_magic
 x 21
@@ -9405,7 +9049,6 @@ arch sea
 elevation -2256
 x 21
 y 24
-elevation -270
 end
 arch dungeon_magic
 x 21
@@ -9415,7 +9058,6 @@ arch sea
 elevation -2256
 x 21
 y 25
-elevation -159
 end
 arch cwall_1_1
 x 21
@@ -9429,7 +9071,6 @@ arch sea
 elevation -2256
 x 21
 y 26
-elevation -9
 end
 arch cwall_2_1_1
 x 21
@@ -9443,7 +9084,6 @@ arch sea
 elevation -2256
 x 21
 y 27
-elevation 72
 end
 arch cwall_2_1_1
 x 21
@@ -9457,7 +9097,6 @@ arch sea
 elevation -2256
 x 21
 y 28
-elevation 909
 end
 arch cwall_2_1_1
 x 21
@@ -9468,9 +9107,9 @@ x 21
 y 29
 end
 arch cobblestones2
-x 21
-y 29
 elevation 948
+x 21
+y 29
 end
 arch cwall_2_1_1
 x 21
@@ -9481,9 +9120,9 @@ x 21
 y 30
 end
 arch cobblestones2
-x 21
-y 30
 elevation 59
+x 21
+y 30
 end
 arch cwall_3_4
 x 21
@@ -9494,9 +9133,9 @@ x 21
 y 31
 end
 arch cobblestones2
-x 21
-y 31
 elevation 1718
+x 21
+y 31
 end
 arch cwall_2_1_1
 x 21
@@ -9507,9 +9146,9 @@ x 21
 y 32
 end
 arch cobblestones2
-x 21
-y 32
 elevation 3296
+x 21
+y 32
 end
 arch cwall_2_1_1
 x 21
@@ -9520,9 +9159,9 @@ x 21
 y 33
 end
 arch cobblestones2
-x 21
-y 33
 elevation 4740
+x 21
+y 33
 end
 arch cwall_2_1_1
 x 21
@@ -9533,9 +9172,9 @@ x 21
 y 34
 end
 arch cobblestones2
-x 21
-y 34
 elevation 5381
+x 21
+y 34
 end
 arch cwall_2_1_1
 x 21
@@ -9546,9 +9185,9 @@ x 21
 y 35
 end
 arch cobblestones2
+elevation 5233
 x 21
 y 35
-elevation 5233
 end
 arch cwall_2_1_1
 x 21
@@ -9559,9 +9198,9 @@ x 21
 y 36
 end
 arch cobblestones2
+elevation 5108
 x 21
 y 36
-elevation 5108
 end
 arch cwall_3_4
 x 21
@@ -9572,9 +9211,9 @@ x 21
 y 37
 end
 arch cobblestones2
+elevation 5383
 x 21
 y 37
-elevation 5383
 end
 arch invis_exit
 slaying /scorn/misc/gatehouse
@@ -9592,9 +9231,9 @@ x 21
 y 38
 end
 arch cobblestones2
+elevation 5341
 x 21
 y 38
-elevation 5341
 end
 arch cwall_3_4
 x 21
@@ -9605,9 +9244,9 @@ x 21
 y 39
 end
 arch grass
-x 21
-y 39
 elevation 5728
+x 21
+y 39
 end
 arch cwall_2_1_1
 x 21
@@ -9618,9 +9257,9 @@ x 21
 y 40
 end
 arch grass
-x 21
-y 40
 elevation 7455
+x 21
+y 40
 end
 arch cwall_2_1_1
 x 21
@@ -9635,9 +9274,9 @@ x 21
 y 41
 end
 arch grass
-x 21
-y 41
 elevation 7422
+x 21
+y 41
 end
 arch cwall_2_1_1
 x 21
@@ -9648,9 +9287,9 @@ x 21
 y 42
 end
 arch grass
-x 21
-y 42
 elevation 4729
+x 21
+y 42
 end
 arch cwall_2_1_1
 x 21
@@ -9661,9 +9300,9 @@ x 21
 y 43
 end
 arch grass
+elevation 6365
 x 21
 y 43
-elevation 6365
 end
 arch cwall_2_1_1
 x 21
@@ -9674,9 +9313,9 @@ x 21
 y 44
 end
 arch grass
+elevation 7839
 x 21
 y 44
-elevation 7839
 end
 arch cwall_2_1_1
 x 21
@@ -9691,9 +9330,9 @@ x 21
 y 45
 end
 arch grass
-x 21
-y 45
 elevation 7736
+x 21
+y 45
 end
 arch cwall_2_1_1
 x 21
@@ -9704,9 +9343,9 @@ x 21
 y 46
 end
 arch grass
+elevation 6510
 x 21
 y 46
-elevation 6510
 end
 arch cwall_2_1_1
 x 21
@@ -9717,9 +9356,9 @@ x 21
 y 47
 end
 arch grass
-x 21
-y 47
 elevation 4042
+x 21
+y 47
 end
 arch cwall_2_1_1
 x 21
@@ -9730,9 +9369,9 @@ x 21
 y 48
 end
 arch brush
+elevation 5910
 x 21
 y 48
-elevation 5910
 end
 arch cwall_2_1_1
 x 21
@@ -9743,9 +9382,9 @@ x 21
 y 49
 end
 arch brush
+elevation 7115
 x 21
 y 49
-elevation 7115
 end
 arch cwall_2_2_4
 x 21
@@ -9791,7 +9430,22 @@ x 22
 y 7
 end
 arch shallow_sea
-elevation -19
+no_pass 0
+elevation -16
+x 22
+y 8
+end
+arch s_bridge1
+x 22
+y 8
+end
+arch invis_exit
+msg
+Oh, no something is not right here...
+endmsg
+slaying /dungeons/trollbridge
+hp 29
+sp 3
 x 22
 y 8
 end
@@ -9931,9 +9585,9 @@ x 22
 y 35
 end
 arch ytree_2
+elevation 6036
 x 22
 y 35
-elevation 6036
 end
 arch cobblestones
 x 22
@@ -9953,9 +9607,9 @@ x 22
 y 39
 end
 arch ytree_2
+elevation 6797
 x 22
 y 39
-elevation 6797
 end
 arch grass
 elevation 608
@@ -10031,9 +9685,9 @@ x 23
 y 5
 end
 arch beach
+elevation 32
 x 23
 y 6
-elevation 32
 end
 arch grass
 elevation 739
@@ -10045,8 +9699,19 @@ elevation 2685
 x 23
 y 8
 end
+arch s_bridge1b
+x 23
+y 8
+end
 arch grass
 elevation 1079
+x 23
+y 9
+end
+arch sign_w
+msg
+no trols on brig
+endmsg
 x 23
 y 9
 end
@@ -10181,9 +9846,9 @@ x 23
 y 35
 end
 arch lamppost
+elevation 5956
 x 23
 y 35
-elevation 5956
 end
 arch cobblestones
 x 23
@@ -10203,9 +9868,9 @@ x 23
 y 39
 end
 arch lamppost
+elevation 6645
 x 23
 y 39
-elevation 6645
 end
 arch grass
 elevation 246
@@ -10216,14 +9881,6 @@ arch grass
 elevation 1773
 x 23
 y 41
-end
-arch farmhouse
-slaying /scorn/houses/farmhouse
-hp 11
-sp 9
-x 23
-y 41
-elevation 7844
 end
 arch farmland
 x 23
@@ -10284,9 +9941,9 @@ x 24
 y 4
 end
 arch beach
+elevation 25
 x 24
 y 5
-elevation 25
 end
 arch woods_3
 elevation 1532
@@ -10439,9 +10096,9 @@ x 24
 y 35
 end
 arch ytree_2
+elevation 5558
 x 24
 y 35
-elevation 5558
 end
 arch cobblestones
 x 24
@@ -10461,9 +10118,9 @@ x 24
 y 39
 end
 arch ytree_2
+elevation 5245
 x 24
 y 39
-elevation 5245
 end
 arch grass
 elevation 630
@@ -10563,9 +10220,9 @@ x 25
 y 10
 end
 arch beach
+elevation 96
 x 25
 y 11
-elevation 96
 end
 arch shallow_sea
 elevation -38
@@ -10633,9 +10290,9 @@ x 25
 y 24
 end
 arch beach
+elevation 409
 x 25
 y 25
-elevation 409
 end
 arch woods
 elevation 2796
@@ -10715,34 +10372,34 @@ x 25
 y 41
 end
 arch farmland
+elevation 7338
 x 25
 y 42
-elevation 7338
 end
 arch farmland
+elevation 7423
 x 25
 y 43
-elevation 7423
 end
 arch farmland
+elevation 7054
 x 25
 y 44
-elevation 7054
 end
 arch farmland
+elevation 5893
 x 25
 y 45
-elevation 5893
 end
 arch farmland
+elevation 6955
 x 25
 y 46
-elevation 6955
 end
 arch farmland
+elevation 7473
 x 25
 y 47
-elevation 7473
 end
 arch grassdark
 x 25
@@ -10813,29 +10470,29 @@ x 26
 y 11
 end
 arch beach
+elevation 299
 x 26
 y 12
-elevation 299
 end
 arch beach
+elevation 666
 x 26
 y 13
-elevation 666
 end
 arch beach
+elevation 767
 x 26
 y 14
-elevation 767
 end
 arch beach
+elevation 644
 x 26
 y 15
-elevation 644
 end
 arch beach
+elevation 150
 x 26
 y 16
-elevation 150
 end
 arch deep_swamp
 elevation 7
@@ -10873,14 +10530,14 @@ x 26
 y 23
 end
 arch beach
+elevation 7
 x 26
 y 24
-elevation 7
 end
 arch beach
+elevation 671
 x 26
 y 25
-elevation 671
 end
 arch tree
 elevation 2961
@@ -10933,9 +10590,9 @@ x 26
 y 35
 end
 arch ytree_2
+elevation 3043
 x 26
 y 35
-elevation 3043
 end
 arch cobblestones
 x 26
@@ -10955,9 +10612,9 @@ x 26
 y 39
 end
 arch ytree_2
+elevation 5251
 x 26
 y 39
-elevation 5251
 end
 arch grassdark
 x 26
@@ -10975,11 +10632,6 @@ arch grass
 elevation 1343
 x 26
 y 43
-end
-arch barn2
-x 26
-y 43
-elevation 5093
 end
 arch brush
 elevation 1995
@@ -11096,9 +10748,9 @@ x 27
 y 16
 end
 arch beach
+elevation 512
 x 27
 y 17
-elevation 512
 end
 arch grass
 elevation 392
@@ -11121,19 +10773,19 @@ x 27
 y 21
 end
 arch beach
+elevation 496
 x 27
 y 22
-elevation 496
 end
 arch beach
+elevation 288
 x 27
 y 23
-elevation 288
 end
 arch beach
+elevation 167
 x 27
 y 24
-elevation 167
 end
 arch grass
 elevation 1891
@@ -11154,10 +10806,6 @@ arch mountain
 elevation 7037
 x 27
 y 28
-end
-arch mountain_2
-x 27
-y 29
 end
 arch mountain
 elevation 8042
@@ -11420,9 +11068,9 @@ x 28
 y 35
 end
 arch ytree_2
+elevation 102
 x 28
 y 35
-elevation 102
 end
 arch cobblestones
 x 28
@@ -11442,9 +11090,9 @@ x 28
 y 39
 end
 arch ytree_2
+elevation 6631
 x 28
 y 39
-elevation 6631
 end
 arch evergreen
 elevation 1380
@@ -11924,9 +11572,9 @@ x 30
 y 35
 end
 arch ytree_2
+elevation 978
 x 30
 y 35
-elevation 978
 end
 arch cobblestones
 x 30
@@ -11946,9 +11594,9 @@ x 30
 y 39
 end
 arch ytree_2
+elevation 5681
 x 30
 y 39
-elevation 5681
 end
 arch woods_3
 elevation 2865
@@ -12179,9 +11827,9 @@ x 31
 y 35
 end
 arch lamppost
+elevation 652
 x 31
 y 35
-elevation 652
 end
 arch cobblestones
 x 31
@@ -12201,9 +11849,9 @@ x 31
 y 39
 end
 arch lamppost
+elevation 5755
 x 31
 y 39
-elevation 5755
 end
 arch evergreen
 elevation 2649
@@ -12581,9 +12229,9 @@ final_map /quests/peterm/quests/goblin_chief
 endmsg
 slaying /!
 is_floor 0
+elevation 10852
 x 33
 y 15
-elevation 10852
 end
 arch mountain
 elevation 6085
@@ -12693,9 +12341,9 @@ Brest - 518 miles south
 Navar City - 948 miles east
 endmsg
 name_pl Scorn City Limits
+elevation 3176
 x 33
 y 35
-elevation 3176
 end
 arch cobblestones
 x 33
@@ -16603,4 +16251,296 @@ arch mountain
 elevation 5588
 x 49
 y 49
+end
+arch barn
+y 28
+end
+arch store_general
+name General Shop
+name_pl General Shop
+slaying /scorn/shops/generalshop
+hp 1
+sp 1
+y 31
+end
+arch courthouse
+name City Hall
+name_pl City Hall
+slaying /scorn/misc/cityhall
+hp 13
+sp 26
+y 36
+end
+arch house_up
+x 2
+y 27
+end
+arch big_galleon
+x 3
+y 21
+end
+arch barrack_up
+x 3
+y 28
+end
+arch barn
+name Pirates' Arena
+name_pl Pirates' Arena
+slaying /scorn/misc/port_arena
+hp 38
+sp 6
+x 6
+y 25
+end
+arch house_up
+x 6
+y 28
+end
+arch store_general
+name Gem Shop
+name_pl Gem Shop
+slaying /scorn/shops/gemshop
+hp 1
+sp 14
+x 6
+y 31
+end
+arch church
+name Undead Church
+name_pl Undead Church
+slaying /scorn/misc/church
+hp 10
+sp 15
+x 6
+y 48
+end
+arch farmhouse
+name Smith's House
+name_pl Smith's House
+slaying /scorn/houses/house1
+hp 10
+sp 14
+x 7
+y 45
+end
+arch big_galleon
+x 8
+y 19
+end
+arch s_ship
+name to Stoneville
+name_pl to Stoneville
+slaying /world/world_102_127
+hp 43
+sp 13
+x 8
+y 21
+end
+arch barn
+name Animal Quarantine
+name_pl Animal Quarantine
+slaying /scorn/cannery/ware1
+hp 19
+sp 36
+x 9
+y 25
+end
+arch guild
+name The Rowdy Sailor
+name_pl The Rowdy Sailor
+x 9
+y 28
+end
+arch guild
+name Bank of Skud
+name_pl Bank of Skud
+slaying /scorn/shops/bank
+hp 7
+sp 14
+x 9
+y 31
+end
+arch city_tower
+name Mad Mage's Tower
+name_pl Mad Mage's Tower
+slaying /scorn/towers/tower.mad
+x 9
+y 43
+end
+arch barrack_long
+name Apartment Building
+name_pl Apartment Building
+slaying /scorn/taverns/apartments
+hp 13
+sp 3
+x 10
+y 34
+end
+arch fishboat
+x 11
+y 19
+end
+arch church
+name House of Healing
+name_pl House of Healing
+slaying /scorn/misc/HouseofHealing
+hp 10
+sp 33
+x 11
+y 31
+end
+arch barrack_long
+name large house
+name_pl large house
+x 11
+y 40
+end
+arch zoo_1
+name The Zoo
+slaying /scorn/misc/zoo
+hp 1
+sp 16
+x 11
+y 48
+end
+arch barn
+name ware house
+name_pl ware house
+x 12
+y 25
+end
+arch inn
+name Port Inn
+slaying /scorn/taverns/inn2
+hp 4
+sp 2
+name_pl Port Inn
+x 12
+y 28
+end
+arch t_house1
+name Central Library
+name_pl Central Library
+slaying /scorn/misc/library
+hp 9
+sp 15
+x 12
+y 34
+end
+arch big_galleon
+x 13
+y 20
+end
+arch store_magic
+name House of Mana
+name_pl House of Mana
+slaying /scorn/misc/PowerHouse
+hp 10
+sp 33
+x 13
+y 31
+end
+arch tower_a
+name Lighthouse
+name_pl Lighthouse
+glow_radius 4
+x 14
+y 23
+end
+arch house_long
+x 15
+y 29
+end
+arch fort
+name dragon guild
+name_pl dragon guild
+slaying /scorn/misc/dragon_guild
+hp 7
+sp 15
+x 15
+y 34
+end
+arch barrack_long
+name large house
+name_pl large house
+x 15
+y 40
+end
+arch big_galleon
+name to Wolfsburg
+name_pl to Wolfsburg
+slaying /world/world_128_109
+hp 43
+sp 25
+x 16
+y 22
+end
+arch guild
+name Guild of the Mailed Fist
+name_pl Guild of the Mailed Fist
+slaying /scorn/guilds/mailed_fist/ground
+no_pass 0
+x 16
+y 31
+end
+arch collesium
+name the ARENA
+name_pl the ARENA
+slaying /scorn/misc/battle_arena/entrance
+hp 11
+sp 24
+x 16
+y 45
+end
+arch big_galleon
+name to Port Joseph
+name_pl to Port Joseph
+slaying /world/world_101_114
+hp 16
+sp 43
+x 18
+y 26
+end
+arch house_long
+name Old Mansion
+name_pl Old Mansion
+slaying /scorn/mansion/entrance
+hp 14
+x 18
+y 40
+end
+arch prison
+name Prison
+name_pl Prison
+slaying /scorn/anthony/prison
+hp 9
+sp 23
+x 19
+y 31
+end
+arch l_shop1
+name Goth's Tavern
+name_pl Goth's Tavern
+slaying /scorn/taverns/goths
+hp 18
+sp 32
+x 19
+y 34
+end
+arch farmhouse
+slaying /scorn/houses/farmhouse
+hp 11
+sp 9
+elevation 7844
+x 23
+y 41
+end
+arch barn2
+elevation 5093
+x 26
+y 43
+end
+arch mountain_2
+x 27
+y 29
 end
