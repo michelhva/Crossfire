@@ -3727,6 +3727,8 @@ x 16
 y 27
 end
 arch man
+event_say_plugin Python
+event_say /python/IPO/seen.py
 msg
 @match *
 Howdy
