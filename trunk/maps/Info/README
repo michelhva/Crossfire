@@ -102,3 +102,27 @@ santo_dominion: moved
 individual linked maps:
 eeur/hut.1, hut.2 (in santo_dominion)
 espen/palace, espen1, espen2 (in santo_dominion)
+
+------------------------------------------------------------------------------
+Note about unique maps:
+
+The update_exits.pl script can be used to update the exit of per player
+unique maps.    IT can also be used with the unique-items map, but
+the check in the script for a valid map file would need to be removed.
+
+However, this does not properly deal with changed path names.  A
+script could easily be done to do this.  Currently, changes
+below are needed:
+
+Per player unique maps:
+
+_city_* -> _scorn_...
+
+Guild maps:
+
+guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
+guilds@mailed_fist	-> scorn@guilds@mailed_fist
+guilds@drunken_barbarian-> santo_dominion@guilds@drunken_barbarian
+guilds@laughing_skull	-> pup_land@guilds@laughing_skull
+guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
+
