@@ -1,6 +1,6 @@
-# python_remove.py - handler for global remove event
+# python_kick.py - handler for global KICK event
 #
-# Copyright (C) 2002 Joris Bontje
+# Copyright (C) 2004 Todd Mitchell
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,25 +16,15 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
-# The author can be reached via e-mail at jbontje@suespammers.org
-#
-# Updated to use new path functions in CFPython and Bank
-# acount cleanup - Todd Mitchell
 
 import CFPython
 import sys
 import os.path
 sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFLog
-import CFBank
 
 activator = CFPython.WhoIsActivator()
 name = CFPython.GetName(activator)
 
 log = CFLog.CFLog()
-log.remove(name)
-
-#If you add a new bank database add an entry here to remove their account
-#when the player quits
-bank = CFBank.CFBank('ImperialBank_DB')
-bank.remove_account(name)
+log.kick_update(name)

@@ -18,46 +18,66 @@
 #
 # The author can be reached via e-mail at jbontje@suespammers.org
 #
-#Updated to use new path functions in CFPython -Todd Mitchell
 
-import shelve
-import os.path
+# Updated to use new path functions in CFPython -Todd Mitchell
+#
+# Updated to add new fields and functions (kick, muzzle)
+# and rewritten to use plain text file storage (CFDataFile) instead of shelve.
+
 
 import CFPython
+
 from time import localtime, strftime, time
+from CFDataFile import CFDataFile, CFData
 
 class CFLog:
 
-    logdb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfirelog')
-    logdb = {}
-
     def __init__(self):
-        self.logdb = shelve.open(self.logdb_file)
+        logheader = ['Born', 'IP', 'Last_Login_Date', 'Login_Count', 'Kick_Count'
+          , 'Last_Kick_Date', 'Muzzle_Count', 'Last_Muzzle_Date']
+        self.log = CFData('Player_log', logheader)
 
     def create(self, name):
         date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-        count=1
-        self.logdb[name]=['unknown', date, count]
-
-    def update(self, name, ip):
-        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-        count=0
-        if self.logdb.has_key(name):
-            oldip, olddate, count=self.logdb[name]
-        count+=1
-        self.logdb[name]=[ip, date, count]
+        record={'#': name
+        ,'Born':date
+        ,'IP':'unknown'
+        ,'Last_Login_Date':date
+        ,'Login_Count':0
+        ,'Kick_Count':0
+        ,'Last_Kick_Date':'never'
+        ,'Muzzle_Count':0
+        ,'Last_Muzzle_Date':'never'}
+        self.log.put_record(record)
 
     def remove(self, name):
-        if self.logdb.has_key(name):
-            del self.logdb[name]
-    
-    def exist(self, name):
-        if self.logdb.has_key(name):
-            return 1
+        self.log.remove_record(name)
+
+    def login_update(self, name, ip):
+        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+        record = self.log.get_record(name)
+        record['IP']=ip
+        record['Last_Login_Date']=date
+        record['Login_Count']=int(record['Login_Count'])+1
+        self.log.put_record(record)
+        
+    def kick_update(self, name):
+        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+        record = self.log.get_record(name)
+        record['Kick_Count']=int(record['Kick_Count'])+1
+        record['Last_Kick_Date']=date
+        self.log.put_record(record)
+        
+    def muzzle_update(self, name):
+        date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+        record = self.log.get_record(name)
+        record['Muzzle_Count']=int(record['Muzzle_Count'])+1
+        record['Last_Muzzle_Date']=date
+        self.log.put_record(record)
+        
+    def info(self, name):
+        record = self.log.get_record(name)
+        if record:
+            return record
         else:
             return 0
-
-    def info(self, name):
-        if self.exist(name):
-            ip, date, count=self.logdb[name]
-            return ip, date, count

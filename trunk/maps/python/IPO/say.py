@@ -74,7 +74,7 @@ elif text[0] == 'literacy':
 
 elif text[0] == 'mailscroll':
 	if len(text)==2:
-		if log.exist(text[1]):
+		if log.info(text[1]):
 			if (CFPython.PayAmount(activator, priceMailScroll*50)):
 				CFPython.Say(whoami, 'Here is your mailscroll')
 				id = CFPython.CreateObject('scroll', (x, y))
@@ -92,7 +92,7 @@ elif text[0] == 'mailscroll':
 elif text[0] == 'mailwarning':
 	if (CFPython.IsDungeonMaster(activator)):
 		if len(text)==2:
-			if log.exist(text[1]):
+			if log.info(text[1]):
 				CFPython.Say(whoami, 'Here is your mailwarning')
 				id = CFPython.CreateObject('diploma', (x, y))
 				CFPython.SetName(id, 'mailwarning T: '+text[1]+' F: '+ activatorname)
@@ -104,17 +104,6 @@ elif text[0] == 'mailwarning':
 			CFPython.Say(whoami, 'Usage "mailwarning <foo>"')
 	else:
 		CFPython.Say(whoami, 'You need to be DM to be able to use this command')
-
-
-elif text[0] == 'seen':
-	if len(text)==2:
-		if log.exist(text[1]):
-			ip, date, count = log.info(text[1])
-			CFPython.Say(whoami, "I have seen '%s' joining %d times, last at %s." % (text[1], count, date))
-		else:
-			CFPython.Say(whoami, "I have never seen '%s' joining" % text[1])
-	else:
-		CFPython.Say(whoami, 'Usage "seen <friend>"')
 
 else:
 	CFPython.Say(whoami, 'Do you need help?')
