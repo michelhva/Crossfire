@@ -1,6 +1,7 @@
 Object spell_vitriol
 name vitriol
 name_pl vitriol
+face spell_praying.111
 level 5
 grace 15
 casting_time 10

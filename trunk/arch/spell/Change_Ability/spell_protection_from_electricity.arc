@@ -1,6 +1,7 @@
 Object spell_protection_from_electricity
 name protection from electricity
 name_pl protection from electricity
+face spell_praying.111
 level 4
 grace 15
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_lg_magic_bullet
 name large bullet
 name_pl large bullet
+face spell_evocation.111
 level 4
 sp 3
 casting_time 6

@@ -1,6 +1,7 @@
 Object spell_protection_from_slow
 name protection from slow
 name_pl protection from slow
+face spell_praying.111
 level 7
 grace 20
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_create_bomb
 name create bomb
 name_pl create bomb
+face spell_pyromancy.111
 level 6
 sp 10
 casting_time 20

@@ -1,6 +1,7 @@
 Object spell_xray
 name xray
 name_pl xray
+face spell_sorcery.111
 level 10
 sp 20
 casting_time 20

@@ -1,6 +1,7 @@
 Object spell_regeneration
 name regeneration
 name_pl regeneration
+face spell_praying.111
 level 7
 grace 15
 casting_time 10

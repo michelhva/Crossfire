@@ -1,6 +1,7 @@
 Object spell_dark_vision
 name dark vision
 name_pl dark vision
+face spell_sorcery.111
 level 5
 sp 10
 casting_time 12

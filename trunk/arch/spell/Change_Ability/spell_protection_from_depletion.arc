@@ -1,6 +1,7 @@
 Object spell_protection_from_depletion
 name protection from depletion
 name_pl protection from depletion
+face spell_praying.111
 level 7
 grace 20
 casting_time 10

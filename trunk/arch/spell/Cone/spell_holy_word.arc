@@ -1,6 +1,7 @@
 Object spell_holy_word
 name holy word
 name_pl holy word
+face spell_praying.111
 level 1
 grace 4
 casting_time 1

@@ -1,6 +1,7 @@
 Object spell_protection_from_fire
 name protection from fire
 name_pl protection from fire
+face spell_praying.111
 level 5
 grace 20
 casting_time 10

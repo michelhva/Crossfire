@@ -1,6 +1,7 @@
 Object spell_turn_undead
 name turn undead
 name_pl turn undead
+face spell_praying.111
 level 1
 grace 2
 casting_time 5

@@ -1,6 +1,7 @@
 Object spell_hellfire
 name hellfire
 name_pl hellfire
+face spell_pyromancy.111
 level 8
 sp 13
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_windstorm
 name windstorm
 name_pl windstorm
+face spell_praying.111
 level 3
 grace 3
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_protection_from_confusion
 name protection from confusion
 name_pl protection from confusion
+face spell_praying.111
 level 7
 grace 20
 casting_time 10

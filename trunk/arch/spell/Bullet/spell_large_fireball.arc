@@ -1,6 +1,7 @@
 Object spell_large_fireball
 name large fireball
 name_pl large fireball
+face spell_pyromancy.111
 level 5
 sp 16
 casting_time 15

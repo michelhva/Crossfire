@@ -1,6 +1,7 @@
 Object spell_wrathful_eye
 name wrathful eye
 name_pl wrathful eye
+face spell_praying.111
 level 5
 grace 30
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_comet
 name comet
 name_pl comet
+face spell_pyromancy.111
 level 8
 value 80
 sp 15

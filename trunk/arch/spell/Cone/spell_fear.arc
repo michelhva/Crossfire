@@ -1,6 +1,7 @@
 Object spell_fear
 name fear
 name_pl fear
+face spell_sorcery.111
 level 4
 sp 6
 casting_time 5

@@ -1,6 +1,7 @@
 Object spell_levitate
 name levitate
 name_pl levitate
+face spell_sorcery.111
 level 6
 sp 10
 casting_time 10

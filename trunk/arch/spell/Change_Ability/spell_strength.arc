@@ -1,6 +1,7 @@
 Object spell_strength
 name strength
 name_pl strength
+face spell_sorcery.111
 level 2
 sp 10
 casting_time 20

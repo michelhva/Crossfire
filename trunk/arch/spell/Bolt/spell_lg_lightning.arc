@@ -1,6 +1,7 @@
 Object spell_large_lightning
 name large lightning
 name_pl large lightnings
+face spell_pyromancy.111
 level 4
 sp 13
 casting_time 12

@@ -1,6 +1,7 @@
 Object spell_manabolt
 name mana bolt
 name_pl mana bolts
+face spell_evocation.111
 level 3
 sp 18
 maxsp 30

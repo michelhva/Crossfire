@@ -1,6 +1,7 @@
 Object spell_constitution
 name constitution
 name_pl constitution
+face spell_sorcery.111
 level 4
 sp 15
 casting_time 20

@@ -1,6 +1,7 @@
 Object spell_cause_critical_wounds
 name cause critical wounds
 name_pl cause critical wounds
+face spell_praying.111
 level 7
 grace 25
 casting_time 5

@@ -1,6 +1,7 @@
 Object spell_iron_skin
 name iron skin
 name_pl iron skin
+face spell_praying.111
 level 1
 grace 8
 casting_time 20

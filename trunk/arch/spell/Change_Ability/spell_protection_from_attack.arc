@@ -1,6 +1,7 @@
 Object spell_protection_from_attack
 name protection from attack
 name_pl protection from attack
+face spell_praying.111
 level 13
 grace 50
 casting_time 50

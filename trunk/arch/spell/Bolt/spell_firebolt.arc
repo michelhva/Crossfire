@@ -1,6 +1,7 @@
 Object spell_firebolt
 name firebolt
 name_pl firebolt
+face spell_pyromancy.111
 level 2
 sp 9
 casting_time 10

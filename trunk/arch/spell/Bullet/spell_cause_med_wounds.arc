@@ -1,6 +1,7 @@
 Object spell_cause_medium_wounds
 name cause medium wounds
 name_pl cause medium wounds
+face spell_praying.111
 level 3
 grace 8
 casting_time 5

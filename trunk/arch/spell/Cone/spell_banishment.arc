@@ -1,6 +1,7 @@
 Object spell_banishment
 name banishment
 name_pl banishment
+face spell_praying.111
 level 5
 grace 10
 casting_time 10

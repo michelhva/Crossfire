@@ -3,6 +3,7 @@
 Object spell_small_bullet
 name small bullet
 name_pl small bullet
+face spell_evocation.111
 level 1
 sp 1
 casting_time 2

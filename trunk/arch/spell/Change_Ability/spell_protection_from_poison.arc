@@ -1,6 +1,7 @@
 Object spell_protection_from_poison
 name protection from poison
 name_pl protection from poison
+face spell_praying.111
 level 6
 grace 20
 casting_time 10

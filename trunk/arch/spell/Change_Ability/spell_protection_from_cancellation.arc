@@ -1,6 +1,7 @@
 Object spell_protection_from_cancellation
 name protection from cancellation
 name_pl protection from cancellation
+face spell_praying.111
 level 11
 grace 30
 casting_time 10
