@@ -12,7 +12,7 @@ Pow 30
 is_animated 1
 monster 1
 alive 1
-attacktype 16385
+attacktype 4194305
 path_attuned 1025
 path_denied 393216
 resist_confusion 20

@@ -15,7 +15,7 @@ is_animated 1
 type 50
 monster 1
 alive 1
-attacktype 16384
+attacktype 4194304
 path_attuned 1025
 path_denied 393216
 resist_confusion 20
