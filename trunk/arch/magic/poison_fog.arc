@@ -9,7 +9,7 @@ poisonc.112
 poisonc.113
 mina
 food 40
-color_fg yellow
+color_fg green
 is_used_up 1
 is_animated 1
 attacktype 1024
