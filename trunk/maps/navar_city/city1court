@@ -1,11 +1,12 @@
 arch map
+name <untitled>
 msg
-Creator: 
+Creator:
 Email: john_cater@yahoo.com
 Date: Mon Nov  1 09:30:38 1993
 endmsg
-x 21
-y 19
+width 21
+height 19
 end
 arch cobblestones2
 end
@@ -234,14 +235,14 @@ x 1
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 1
-y 18
 speed_left -0.400000
 is_animated 0
+x 1
+y 18
 end
 arch cobblestones2
 x 2
@@ -254,9 +255,9 @@ x 2
 y 1
 end
 arch table_4
+no_pass 1
 x 2
 y 1
-no_pass 1
 end
 arch cobblestones2
 x 2
@@ -271,9 +272,9 @@ x 2
 y 3
 end
 arch table_4
+no_pass 1
 x 2
 y 3
-no_pass 1
 end
 arch cobblestones2
 x 2
@@ -288,36 +289,36 @@ x 2
 y 5
 end
 arch table_4
+no_pass 1
 x 2
 y 5
-no_pass 1
 end
 arch cobblestones2
 x 2
 y 6
 end
 arch table_4
+no_pass 1
 x 2
 y 6
-no_pass 1
 end
 arch cobblestones2
 x 2
 y 7
 end
 arch table_4
+no_pass 1
 x 2
 y 7
-no_pass 1
 end
 arch cobblestones2
 x 2
 y 8
 end
 arch table_4
+no_pass 1
 x 2
 y 8
-no_pass 1
 end
 arch cobblestones2
 x 2
@@ -332,9 +333,9 @@ x 2
 y 10
 end
 arch table_4
+no_pass 1
 x 2
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 2
@@ -431,9 +432,9 @@ x 3
 y 10
 end
 arch table_4
+no_pass 1
 x 3
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 3
@@ -476,14 +477,14 @@ x 3
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 3
-y 18
 speed_left -0.400000
 is_animated 0
+x 3
+y 18
 end
 arch cobblestones2
 x 4
@@ -540,9 +541,9 @@ x 4
 y 10
 end
 arch table_4
+no_pass 1
 x 4
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 4
@@ -639,9 +640,9 @@ x 5
 y 10
 end
 arch table_4
+no_pass 1
 x 5
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 5
@@ -680,14 +681,14 @@ x 5
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 5
-y 18
 speed_left -0.400000
 is_animated 0
+x 5
+y 18
 end
 arch cobblestones2
 x 6
@@ -735,7 +736,7 @@ arch magic_ear
 msg
 @match quest|Quest
 Praise God someone is here to save us.
- We are being overrun by damned
+We are being overrun by damned
 creatures that stalk the night.  So
 far we have been able to take care of
 them, but we cannot find their source.
@@ -770,9 +771,9 @@ x 6
 y 10
 end
 arch table_4
+no_pass 1
 x 6
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 6
@@ -928,14 +929,14 @@ x 7
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 7
-y 18
 speed_left -0.400000
 is_animated 0
+x 7
+y 18
 end
 arch cobblestones2
 x 8
@@ -1137,14 +1138,14 @@ x 9
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 9
-y 18
 speed_left -0.400000
 is_animated 0
+x 9
+y 18
 end
 arch cobblestones2
 x 10
@@ -1178,10 +1179,10 @@ x 10
 y 4
 end
 arch door_look_1
-x 10
-y 4
 no_pass 0
 blocksview 1
+x 10
+y 4
 end
 arch cobblestones2
 x 10
@@ -1196,10 +1197,10 @@ x 10
 y 7
 end
 arch door_look_1
-x 10
-y 7
 no_pass 0
 blocksview 1
+x 10
+y 7
 end
 arch cobblestones2
 x 10
@@ -1355,14 +1356,14 @@ x 11
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 11
-y 18
 speed_left -0.400000
 is_animated 0
+x 11
+y 18
 end
 arch cobblestones2
 x 12
@@ -1565,14 +1566,14 @@ x 13
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 13
-y 18
 speed_left -0.400000
 is_animated 0
+x 13
+y 18
 end
 arch cobblestones2
 x 14
@@ -1647,9 +1648,9 @@ x 14
 y 10
 end
 arch table_4
+no_pass 1
 x 14
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 14
@@ -1661,8 +1662,6 @@ y 11
 end
 arch warrior_1
 name Staff Sgt. MacDonald
-msg
-endmsg
 x 14
 y 11
 end
@@ -1675,6 +1674,17 @@ x 14
 y 12
 end
 arch cobblestones2
+x 14
+y 13
+end
+arch sign
+name Petitions for the DMs
+event_say_plugin Python
+event_say /python/IPO/board.py
+msg
+I am a talking board, designed for leaving messages for the DMs.
+If you don't know what to say, say help.
+endmsg
 x 14
 y 13
 end
@@ -1753,9 +1763,9 @@ x 15
 y 10
 end
 arch table_4
+no_pass 1
 x 15
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 15
@@ -1794,14 +1804,14 @@ x 15
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 15
-y 18
 speed_left -0.400000
 is_animated 0
+x 15
+y 18
 end
 arch cobblestones2
 x 16
@@ -1858,9 +1868,9 @@ x 16
 y 10
 end
 arch table_4
+no_pass 1
 x 16
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 16
@@ -1957,9 +1967,9 @@ x 17
 y 10
 end
 arch table_4
+no_pass 1
 x 17
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 17
@@ -2002,14 +2012,14 @@ x 17
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 17
-y 18
 speed_left -0.400000
 is_animated 0
+x 17
+y 18
 end
 arch cobblestones2
 x 18
@@ -2022,9 +2032,9 @@ x 18
 y 1
 end
 arch table_4
+no_pass 1
 x 18
 y 1
-no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2039,9 +2049,9 @@ x 18
 y 3
 end
 arch table_4
+no_pass 1
 x 18
 y 3
-no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2056,36 +2066,36 @@ x 18
 y 5
 end
 arch table_4
+no_pass 1
 x 18
 y 5
-no_pass 1
 end
 arch cobblestones2
 x 18
 y 6
 end
 arch table_4
+no_pass 1
 x 18
 y 6
-no_pass 1
 end
 arch cobblestones2
 x 18
 y 7
 end
 arch table_4
+no_pass 1
 x 18
 y 7
-no_pass 1
 end
 arch cobblestones2
 x 18
 y 8
 end
 arch table_4
+no_pass 1
 x 18
 y 8
-no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2100,9 +2110,9 @@ x 18
 y 10
 end
 arch table_4
+no_pass 1
 x 18
 y 10
-no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2267,14 +2277,14 @@ x 19
 y 17
 end
 arch exit
-slaying /world/world_122_117
 face cobblesto1.111
+slaying /world/world_122_117
 hp 4
 sp 3
-x 19
-y 18
 speed_left -0.400000
 is_animated 0
+x 19
+y 18
 end
 arch cobblestones2
 x 20

@@ -2591,6 +2591,17 @@ arch dungeon_floor
 x 12
 y 1
 end
+arch sign
+name Petitions for the DMs
+event_say_plugin Python
+event_say /python/IPO/board.py
+msg
+I am a talking board, designed for leaving messages for the DM.
+If you don't know what to say, say help.
+endmsg
+x 12
+y 1
+end
 arch dungeon_magic
 x 12
 y 2
