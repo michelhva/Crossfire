@@ -24,7 +24,7 @@ dam 12
 resist_physical 30
 speed 0.15
 attacktype 1025
-resist_magic 30
+resist_magic 50
 
 resist_fear 100
 resist_chaos 100

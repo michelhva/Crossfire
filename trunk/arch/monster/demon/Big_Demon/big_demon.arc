@@ -9,9 +9,9 @@ facings 2
 big_demon.171
 big_demon.131
 mina
-resist_magic 30
-resist_godpower 30
-resist_holyword 30
+resist_magic 50
+resist_godpower 50
+resist_holyword 50
 
 resist_fire 100
 resist_confusion 100

@@ -24,11 +24,11 @@ resist_drain -100
 resist_weaponmagic -100
 resist_chaos -100
 
-resist_physical 30
-resist_magic 30
-resist_fire 30
-resist_electricity 30
-resist_cold 30
+resist_physical 50
+resist_magic 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
 
 attack_movement 7
 see_invisible 1

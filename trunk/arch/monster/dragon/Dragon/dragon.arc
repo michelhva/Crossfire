@@ -28,7 +28,7 @@ maxhp 3500
 resist_fire 100
 resist_fear 100
 
-resist_magic 30
+resist_magic 50
 
 resist_cold -100
 resist_confusion -100

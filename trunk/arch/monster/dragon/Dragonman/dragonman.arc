@@ -33,16 +33,13 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 resist_fear 100
-
 resist_physical 30
-resist_cold 30
+resist_cold -30
 resist_confusion 30
-resist_weaponmagic 30
-
 ac -10
 wc -10
 dam 10
-exp 60000
+exp 160000
 see_invisible 1
 alive 1
 no_pick 1

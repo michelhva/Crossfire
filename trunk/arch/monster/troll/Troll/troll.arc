@@ -6,7 +6,7 @@ color_fg green
 animation troll_1
 resist_fire -100
 
-resist_fear 30
+resist_fear 50
 
 can_see_in_dark 1
 exp 8000

@@ -20,7 +20,7 @@ resist_fear 100
 
 resist_fire -100
 
-resist_electricity 30
+resist_electricity 50
 
 attacktype 65
 exp 500

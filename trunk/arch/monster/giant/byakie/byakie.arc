@@ -22,13 +22,13 @@ resist_poison 100
 resist_fear 100
 resist_chaos 100
 
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_acid 30
-resist_drain 30
-resist_slow 30
-resist_paralyze 30
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_acid 50
+resist_drain 50
+resist_slow 50
+resist_paralyze 50
 
 resist_confusion -100
 

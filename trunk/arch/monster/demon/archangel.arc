@@ -33,9 +33,9 @@ resist_slow 100
 resist_paralyze 100
 resist_fear 100
 
-resist_physical 30
-resist_fire 30
-resist_cold 30
+resist_physical 50
+resist_fire 50
+resist_cold 50
 
 attacktype 20745
 speed 0.400000

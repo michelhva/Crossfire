@@ -28,8 +28,8 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 
-resist_cold 30
-resist_acid 30
+resist_cold 50
+resist_acid 50
 
 level 18
 speed 0.1

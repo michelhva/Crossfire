@@ -10,9 +10,9 @@ jessyb.113
 jessyb.112
 mina
 attacktype 1029
-resist_magic 30
-resist_godpower 30
-resist_holyword 30
+resist_magic 80
+resist_godpower 80
+resist_holyword 80
 
 resist_fire 100
 resist_confusion 100

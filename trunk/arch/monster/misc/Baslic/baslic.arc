@@ -21,7 +21,7 @@ resist_fear 100
 
 resist_fire -100
 
-resist_magic 30
+resist_magic 50
 
 ac -8
 wc -15

@@ -26,8 +26,8 @@ wc -1
 dam 10
 color_fg green
 speed -0.2
-resist_physical 30
-resist_magic 30
+resist_physical 50
+resist_magic 50
 
 resist_confusion -100
 resist_weaponmagic -100

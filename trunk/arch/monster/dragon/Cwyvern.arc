@@ -25,7 +25,7 @@ resist_fire 100
 resist_cold 100
 resist_paralyze 100
 
-resist_electricity 30
+resist_electricity 50
 
 attacktype 29
 ac -10
