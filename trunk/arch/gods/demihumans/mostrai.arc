@@ -18,7 +18,7 @@ Wis 30
 Pow 30
 path_attuned 18432
 path_repelled 64
-resist_fire 30
+resist_fire 20
 resist_slow -50
 resist_confusion -10
 ac -10

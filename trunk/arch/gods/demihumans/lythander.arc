@@ -15,10 +15,10 @@ Dex 30
 Int 30
 Wis 30
 Pow 30
-attacktype 32
+attacktype 2080
 resist_confusion 100
-resist_acid -40
-resist_poison -40
+resist_acid -15
+resist_poison -30
 path_attuned 65552
 path_denied 512
 ac -7
