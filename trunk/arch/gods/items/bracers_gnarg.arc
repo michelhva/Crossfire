@@ -19,6 +19,5 @@ hp 1
 value 65000
 weight 9000
 startequip 1
-editable 5120
 magicmap grey
 end
