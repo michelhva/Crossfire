@@ -1,7 +1,7 @@
 Object gnome
 race dwarf
 name cunning gnome
-randomitems throw_stnd
+randomitems gnome
 alive 1
 monster 1
 no_pick 1

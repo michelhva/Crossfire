@@ -1,5 +1,5 @@
 Object HighAngel
-randomitems rich
+randomitems high_angel
 name High Angel
 race angel
 face archangel.118

@@ -1,7 +1,7 @@
 Object elf_man
 race faerie
 name elf man
-randomitems throw_stnd
+randomitems elf_1
 face elf_lad.111
 color_fg black
 anim

@@ -2,7 +2,7 @@ Object panther
 face panther.131
 race animal
 anim
-facings2
+facings 2
 panther.131
 panther.132
 panther.133

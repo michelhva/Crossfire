@@ -55,4 +55,5 @@ color_fg white
 editable 1
 body_finger 2
 body_range 1
+randomitems all_spell_skills
 end

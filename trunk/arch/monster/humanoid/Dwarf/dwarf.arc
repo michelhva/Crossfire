@@ -1,7 +1,7 @@
 Object dwarf
 race dwarf
 name dwarf
-randomitems standard
+randomitems dwarf
 face dwarf.111
 anim
 dwarf.111

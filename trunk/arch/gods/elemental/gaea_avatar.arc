@@ -1,5 +1,5 @@
 Object gaea_avatar
-face panther.111
+face panther.131
 race animal,bird,slime,insect,reptile,water_elemental,earth_elemental,air_elemental,fire_elemental
 slaying undead,unnatural
 animation panther

@@ -1,7 +1,7 @@
 Object woman
 race human
 name woman
-randomitems throw_stnd
+randomitems man
 face woman.151
 anim
 facings 4

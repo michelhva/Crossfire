@@ -1,6 +1,6 @@
 Object liteangel
 name light angel
-randomitems rich
+randomitems liteangel
 race angel
 face liteangel.112
 color_fg white

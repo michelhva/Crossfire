@@ -33,4 +33,5 @@ editable 4096
 name_pl Golden Unicorn Horns
 client_type 721
 body_range -1
+skill use magic item
 end

@@ -1,7 +1,7 @@
 Object merchant
 race human
 name Merchant
-randomitems throw_stnd
+randomitems merchant
 face merchant.111
 anim
 facings 4

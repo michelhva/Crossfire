@@ -1,7 +1,7 @@
 Object gryphon
 race animal
 name Dark Gryphon
-randomitems big_wizard
+randomitems gryphon
 monster 1
 sleep 1
 Wis 15

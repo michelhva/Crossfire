@@ -1,7 +1,7 @@
 Object courier
 race human
 name courier
-randomitems standard
+randomitems courier
 face courier.111
 monster 1
 unaggressive 1

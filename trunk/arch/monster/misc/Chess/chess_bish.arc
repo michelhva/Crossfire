@@ -1,7 +1,7 @@
 Object chess_bishop
 race chess
 name bishop
-randomitems standard
+randomitems chess
 face ch_bish.111
 sp 10
 maxsp 10

@@ -1,7 +1,7 @@
 Object chess_knight
 race chess
 name knight
-randomitems standard
+randomitems chess
 face ch_knight.111
 sp 10
 maxsp 10

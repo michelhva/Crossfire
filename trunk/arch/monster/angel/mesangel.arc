@@ -1,6 +1,6 @@
 Object mesangel
 name messenger
-randomitems rich
+randomitems mesangel
 race angel
 face liteangel.112
 color_fg white

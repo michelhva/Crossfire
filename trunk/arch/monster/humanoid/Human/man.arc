@@ -1,7 +1,7 @@
 Object man
 race human
 name man
-randomitems throw_stnd
+randomitems man
 face man.151
 anim
 facings 4
