@@ -5,6 +5,7 @@ face elf_guard.111
 anim
 elf_guard.111
 elf_guard.112
+elf_guard.113
 mina
 color_fg green
 speed 0.06

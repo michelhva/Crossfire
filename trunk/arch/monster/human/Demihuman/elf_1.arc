@@ -8,6 +8,7 @@ anim
 elf_1.111
 elf_1.112
 elf_1.113
+elf_1.112
 mina
 monster 1
 alive 1
