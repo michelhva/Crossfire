@@ -675,7 +675,7 @@ knife above my husbands body.
 @match body|knife
 But it was that troll that came out of
 the cellar that did it. Not me!
-@match troll|it|celler
+@match troll|it|cellar
 Argghh, My poor husband. Boo hooo....
 @match *
 They accuse me of murdering my husband!
@@ -1100,7 +1100,7 @@ msg
 I just don't know where he went, so I
 opened the cell door but could not find
 him.
-@match escape|esacped|unhappy|sad
+@match escape|escaped|unhappy|sad
 I going to be boiled in oil for
 letting that goblin get away.
 @match *
@@ -1140,7 +1140,7 @@ y 10
 end
 arch magic_mouth
 msg
-The prison gaurd shouts at you..
+The prison guard shouts at you..
 Move it will you, you are blocking my
 view
 endmsg
@@ -1284,7 +1284,7 @@ y 11
 end
 arch magic_mouth
 msg
-The guard shakes his halbard at you..
+The guard shakes his halberd at you..
 Watch it will you! I can't see with you
 standing there.
 endmsg
@@ -2135,7 +2135,7 @@ Yes that is where he said he lived.
 Also said that it was full of treasure.
 @match where|treasure
 You can get to Goblin Isle via Port
-Jophef. Just go down his tunnel and
+Joseph. Just go down his tunnel and
 follow his escape route.
 @match *
 I saw what happened to the goblin
@@ -2185,7 +2185,7 @@ name Sailor with a pegleg
 msg
 @match *
 That was the best fight I have ever
-seen in Gorks Tavern. I'll love to do
+seen in Gork's Tavern. I'll love to do
 that again.
 endmsg
 x 15
@@ -2334,7 +2334,7 @@ arch fatman
 name Fat Tourist
 msg
 @match *
-I was caught in a fight in Gorks Tavern.
+I was caught in a fight in Gork's Tavern.
 What an experience that was! I wonder
 what other things this town has to offer.
 endmsg
@@ -2911,7 +2911,7 @@ Oh you are just as mean as the prison
 guards.
 @match guard|guards
 They won't give me any clothes either.
-And I hear the post accross the
+And I hear the post across the
 corridor has become a most prized job
 by the guards!
 @match streaking|arrested|naked
