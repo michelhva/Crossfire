@@ -34,5 +34,5 @@ log.remove(name)
 
 #If you add a new bank database add an entry here to remove their account
 #when the player quits
-bank = CFBank.CFBank(ImperialBank_DB)
+bank = CFBank.CFBank('ImperialBank_DB')
 bank.remove_account(name)
