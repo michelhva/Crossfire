@@ -1658,6 +1658,19 @@ arch chair_1.4
 x 10
 y 10
 end
+arch pirate
+name sea dog
+msg
+@match *
+Arrg Matey!
+<sniff>
+This song always brung a tear to me eye.
+endmsg
+unaggressive 1
+sleep 0
+x 10
+y 10
+end
 arch cobblestones2
 x 10
 y 11
@@ -1802,6 +1815,7 @@ x 11
 y 5
 end
 arch blocked
+blocksview 0
 x 11
 y 6
 end
@@ -1814,6 +1828,7 @@ x 11
 y 6
 end
 arch blocked
+blocksview 0
 x 11
 y 7
 end
@@ -1826,6 +1841,7 @@ x 11
 y 7
 end
 arch blocked
+blocksview 0
 x 11
 y 8
 end
@@ -1838,6 +1854,7 @@ x 11
 y 8
 end
 arch blocked
+blocksview 0
 x 11
 y 9
 end
@@ -2044,6 +2061,7 @@ x 12
 y 8
 end
 arch blocked
+blocksview 0
 x 12
 y 9
 end
@@ -2356,6 +2374,7 @@ x 13
 y 8
 end
 arch blocked
+blocksview 0
 x 13
 y 9
 end
@@ -2373,8 +2392,9 @@ y 10
 end
 arch magic_mouth
 msg
-My my, at Napoleon did surrender
+My my, at Waterloo, Napoleon did surrender
 Oh yeah, and I have met my destiny in quite a similar way
+
 The history book on the shelf
 Is always repeating itself
 endmsg
@@ -2543,6 +2563,7 @@ x 14
 y 8
 end
 arch blocked
+blocksview 0
 x 14
 y 9
 end
@@ -2723,6 +2744,7 @@ x 15
 y 8
 end
 arch blocked
+blocksview 0
 x 15
 y 9
 end
@@ -2744,7 +2766,7 @@ Waterloo - I was defeated, you won the war
 Waterloo - Promise to love you for ever more
 Waterloo - Couldn't escape if I wanted to
 Waterloo - Knowing my fate is to be with you
-Waterloo - Finally facing my
+Waterloo - Finally facing my Waterloo
 endmsg
 x 15
 y 10
@@ -2902,6 +2924,7 @@ x 16
 y 8
 end
 arch blocked
+blocksview 0
 x 16
 y 9
 end
@@ -3085,6 +3108,7 @@ x 17
 y 8
 end
 arch blocked
+blocksview 0
 x 17
 y 9
 end
@@ -3278,6 +3302,7 @@ x 18
 y 8
 end
 arch blocked
+blocksview 0
 x 18
 y 9
 end
@@ -3521,6 +3546,7 @@ x 19
 y 5
 end
 arch blocked
+blocksview 0
 x 19
 y 6
 end
@@ -3533,6 +3559,7 @@ x 19
 y 6
 end
 arch blocked
+blocksview 0
 x 19
 y 7
 end
@@ -3545,6 +3572,7 @@ x 19
 y 7
 end
 arch blocked
+blocksview 0
 x 19
 y 8
 end
@@ -3557,6 +3585,7 @@ x 19
 y 8
 end
 arch blocked
+blocksview 0
 x 19
 y 9
 end
@@ -3645,11 +3674,47 @@ arch cobblestones2
 x 19
 y 21
 end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 19
+y 21
+end
+arch chair_1.4
+x 19
+y 21
+end
 arch cobblestones2
 x 19
 y 22
 end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 19
+y 22
+end
+arch chair_1.4
+x 19
+y 22
+end
 arch cobblestones2
+x 19
+y 23
+end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 19
+y 23
+end
+arch chair_1.4
 x 19
 y 23
 end
@@ -3785,6 +3850,18 @@ x 20
 y 19
 end
 arch cobblestones2
+x 20
+y 20
+end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 20
+y 20
+end
+arch chair_1.1
 x 20
 y 20
 end
@@ -3956,12 +4033,20 @@ arch cobblestones2
 x 21
 y 16
 end
+arch magic_mouth
+msg
+You hear angry muttering coming from inside this slotmachine.
+Perhaps it is broken.
+endmsg
+food 1
+x 21
+y 16
+end
 arch slotmachine2
 name Moria
 face slotmachine1.111
 event_apply_plugin Python
 event_apply /python/misc/CFInsulter.py
-event_apply_options_plugin Python
 event_apply_options shakespear
 msg
 You hear angry muttering coming from inside this slotmachine.
@@ -3996,6 +4081,18 @@ arch cobblestones2
 x 21
 y 20
 end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 21
+y 20
+end
+arch chair_1.1
+x 21
+y 20
+end
 arch cobblestones2
 x 21
 y 21
@@ -4012,6 +4109,10 @@ end
 arch fiend
 name Sadie
 face woman2.111
+msg
+@match *
+Wanna drink?  Five gold big spender.
+endmsg
 title The Bartender
 unaggressive 1
 animation woman2
@@ -4158,6 +4259,18 @@ x 22
 y 19
 end
 arch cobblestones2
+x 22
+y 20
+end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 22
+y 20
+end
+arch chair_1.1
 x 22
 y 20
 end
@@ -4348,6 +4461,18 @@ x 23
 y 19
 end
 arch cobblestones2
+x 23
+y 20
+end
+arch booze_table
+name serving booze (5 g.c @)
+invisible 1
+slaying money
+food 50
+x 23
+y 20
+end
+arch chair_1.1
 x 23
 y 20
 end
