@@ -21,10 +21,8 @@ type 28
 resist_physical 100
 resist_drain 100
 resist_fear 100
-
-resist_magic 30
-resist_cold 30
-
+resist_magic 50
+resist_cold 50
 attacktype 160
 carrying 100
 alive 1

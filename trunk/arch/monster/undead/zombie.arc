@@ -25,10 +25,8 @@ speed -0.05
 exp 60
 weight 15000
 attacktype 1
-resist_cold 30
-
+resist_cold 50
 resist_fear 100
-
 can_see_in_dark 1
 editable 1
 end

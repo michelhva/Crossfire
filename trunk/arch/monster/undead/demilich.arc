@@ -23,7 +23,7 @@ Wis 20
 Pow 80
 see_invisible 1
 no_pick 1
-resist_physical 30
+resist_physical 50
 resist_magic 100
 resist_fire 100
 resist_electricity 100

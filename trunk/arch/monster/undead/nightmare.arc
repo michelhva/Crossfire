@@ -18,12 +18,9 @@ level 4
 resist_physical 100
 resist_drain 100
 resist_fear 100
-
 resist_magic -100
 resist_turn_undead -100
-
-resist_confusion 30
-
+resist_confusion 50
 attacktype 66048
 alive 1
 monster 1
