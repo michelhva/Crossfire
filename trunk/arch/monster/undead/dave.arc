@@ -17,13 +17,13 @@ Int 100
 hp 30000
 maxhp 30000
 maxsp 40
-exp 1000
+exp 10000
 dam 200
 wc -100
 ac -100
 editable 1
 speed 0.150000
-level 100
+level 50
 resist_physical 50
 resist_magic 50
 attacktype 4225

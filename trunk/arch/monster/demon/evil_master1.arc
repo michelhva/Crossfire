@@ -24,7 +24,7 @@ resist_electricity 100
 resist_fire 100
 resist_magic 100
 speed 0.850000
-level 100
+level 35
 attacktype 17
 randomitems spectre
 pick_up 24

@@ -10,8 +10,8 @@ monster 1
 sleep 1
 no_pick 1
 alive 1
-exp 100
-level 100
+exp 1000
+level 15
 ac -100
 can_see_in_dark 1
 Str 30

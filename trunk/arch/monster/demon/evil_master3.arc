@@ -21,9 +21,8 @@ wc -30
 ac -10
 resist_physical -30
 speed 0.500000
-level 100
+level 23
 resist_fire 100
-
 attacktype 7
 carrying 100
 weight 180000

@@ -22,9 +22,8 @@ wc -50
 ac -100
 resist_physical 100
 speed .4
-level 50
+level 30
 resist_cold -100
-
 carrying 6000
 weight 30000
 is_animated 1
