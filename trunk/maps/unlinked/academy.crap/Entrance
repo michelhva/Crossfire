@@ -1,15 +1,18 @@
 arch map
 name Entrance
+reset_timeout 7200
+difficulty 1
+width 16
+height 9
+enter_x 1
+enter_y 1
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Thu Apr  6 10:14:18 2000
 endmsg
-y 9
 end
-arch dwall_2_1_2
-end
-arch dwall_2_2_1
+arch grass
 end
 arch cwall_2_2_1
 end
@@ -37,6 +40,9 @@ end
 arch grass
 y 8
 end
+arch grass
+x 1
+end
 arch dwall_2_1_2
 x 1
 end
@@ -76,6 +82,9 @@ arch grass
 x 1
 y 8
 end
+arch grass
+x 2
+end
 arch dwall_2_1_2
 x 2
 end
@@ -115,6 +124,9 @@ arch grass
 x 2
 y 8
 end
+arch grass
+x 3
+end
 arch dwall_2_1_2
 x 3
 end
@@ -149,6 +161,9 @@ end
 arch grass
 x 3
 y 8
+end
+arch grass
+x 4
 end
 arch dwall_2_1_2
 x 4
@@ -189,6 +204,9 @@ arch grass
 x 4
 y 8
 end
+arch grass
+x 5
+end
 arch dwall_2_1_2
 x 5
 end
@@ -227,6 +245,9 @@ end
 arch grass
 x 5
 y 8
+end
+arch grass
+x 6
 end
 arch dwall_2_1_2
 x 6
@@ -265,6 +286,9 @@ end
 arch grass
 x 6
 y 8
+end
+arch cobblestones
+x 7
 end
 arch guard_house_3
 slaying MainFloor
@@ -311,6 +335,9 @@ sp 22
 x 7
 y 8
 end
+arch grass
+x 8
+end
 arch dwall_2_1_2
 x 8
 end
@@ -349,6 +376,9 @@ arch grass
 x 8
 y 8
 end
+arch grass
+x 9
+end
 arch dwall_2_1_2
 x 9
 end
@@ -383,6 +413,9 @@ end
 arch grass
 x 9
 y 8
+end
+arch grass
+x 10
 end
 arch dwall_2_1_2
 x 10
@@ -423,6 +456,9 @@ arch grass
 x 10
 y 8
 end
+arch grass
+x 11
+end
 arch dwall_2_1_2
 x 11
 end
@@ -462,6 +498,9 @@ arch grass
 x 11
 y 8
 end
+arch grass
+x 12
+end
 arch dwall_2_1_2
 x 12
 end
@@ -501,6 +540,9 @@ arch grass
 x 12
 y 8
 end
+arch grass
+x 13
+end
 arch dwall_2_1_2
 x 13
 end
@@ -535,6 +577,9 @@ end
 arch grass
 x 13
 y 8
+end
+arch grass
+x 14
 end
 arch dwall_2_1_2
 x 14
@@ -575,10 +620,7 @@ arch grass
 x 14
 y 8
 end
-arch dwall_2_1_2
-x 15
-end
-arch dwall_2_2_4
+arch grass
 x 15
 end
 arch cwall_2_2_4
