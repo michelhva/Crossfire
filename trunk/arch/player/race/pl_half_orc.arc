@@ -1,7 +1,7 @@
 Object pl_half_orc
 name half orc
 randomitems half_orc_player_items
-face pl_half_orc.111
+face pl_half_orc.151
 msg
 Half-Orc's are usually the product of rape
 or slavery or some unpleasantness of some
@@ -13,13 +13,18 @@ resistant to poison and can see in the dark,
 and every half-orc seems to know how to steal.
 endmsg
 anim
-pl_half_orc.151
-pl_half_orc.131
 pl_half_orc.111
+pl_half_orc.112
+pl_half_orc.131
+pl_half_orc.132
+pl_half_orc.151
+pl_half_orc.152
 pl_half_orc.171
+pl_half_orc.172
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 no_pick 1
 alive 1
 level 1
