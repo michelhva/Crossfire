@@ -1,13 +1,14 @@
 arch map
+name <untitled>
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Thu Jan 28 17:49:34 1999
 endmsg
-hp 18
-sp 11
-x 49
-y 49
+width 49
+height 49
+enter_x 18
+enter_y 11
 end
 arch small_stones
 end
@@ -1031,7 +1032,7 @@ arch pstone_1
 x 4
 y 6
 end
-arch wwall_win1
+arch woodwall_win1
 x 4
 y 6
 end
@@ -1083,10 +1084,10 @@ x 4
 y 11
 end
 arch door_look_2
-x 4
-y 11
 no_pass 0
 blocksview 1
+x 4
+y 11
 end
 arch magic_banned
 x 4
@@ -1104,10 +1105,10 @@ x 4
 y 12
 end
 arch door_look_2
-x 4
-y 12
 no_pass 0
 blocksview 1
+x 4
+y 12
 end
 arch pstone_1
 x 4
@@ -1145,7 +1146,7 @@ arch pstone_1
 x 4
 y 17
 end
-arch wwall_win1
+arch woodwall_win1
 x 4
 y 17
 end
@@ -1233,7 +1234,7 @@ arch pstone_1
 x 4
 y 31
 end
-arch wwall_win1
+arch woodwall_win1
 x 4
 y 31
 end
@@ -1321,7 +1322,7 @@ arch pstone_1
 x 4
 y 42
 end
-arch wwall_win1
+arch woodwall_win1
 x 4
 y 42
 end
@@ -1886,7 +1887,7 @@ arch pstone_1
 x 7
 y 4
 end
-arch wwall_win2
+arch woodwall_win2
 x 7
 y 4
 end
@@ -1970,7 +1971,7 @@ arch pstone_1
 x 7
 y 19
 end
-arch wwall_win2
+arch woodwall_win2
 x 7
 y 19
 end
@@ -2018,11 +2019,7 @@ arch pstone_1
 x 7
 y 29
 end
-arch pstone_1
-x 7
-y 29
-end
-arch wwall_win2
+arch woodwall_win2
 x 7
 y 29
 end
@@ -2094,11 +2091,7 @@ arch pstone_1
 x 7
 y 44
 end
-arch pstone_1
-x 7
-y 44
-end
-arch wwall_win2
+arch woodwall_win2
 x 7
 y 44
 end
@@ -2428,9 +2421,9 @@ x 9
 y 6
 end
 arch grate_closed_2
+connected 1
 x 9
 y 6
-connected 1
 end
 arch magic_banned
 x 9
@@ -2448,9 +2441,9 @@ x 9
 y 7
 end
 arch grate_closed_2
+connected 1
 x 9
 y 7
-connected 1
 end
 arch magic_banned
 x 9
@@ -2504,9 +2497,9 @@ x 9
 y 11
 end
 arch grate_closed_2
+connected 2
 x 9
 y 11
-connected 2
 end
 arch magic_banned
 x 9
@@ -2524,9 +2517,9 @@ x 9
 y 12
 end
 arch grate_closed_2
+connected 2
 x 9
 y 12
-connected 2
 end
 arch magic_banned
 x 9
@@ -2580,9 +2573,9 @@ x 9
 y 16
 end
 arch grate_closed_2
+connected 3
 x 9
 y 16
-connected 3
 end
 arch magic_banned
 x 9
@@ -2600,9 +2593,9 @@ x 9
 y 17
 end
 arch grate_closed_2
+connected 3
 x 9
 y 17
-connected 3
 end
 arch magic_banned
 x 9
@@ -2697,9 +2690,9 @@ x 9
 y 31
 end
 arch grate_closed_2
+connected 1
 x 9
 y 31
-connected 1
 end
 arch magic_banned
 x 9
@@ -2710,9 +2703,9 @@ x 9
 y 32
 end
 arch grate_closed_2
+connected 1
 x 9
 y 32
-connected 1
 end
 arch magic_banned
 x 9
@@ -2759,9 +2752,9 @@ x 9
 y 36
 end
 arch grate_closed_2
+connected 2
 x 9
 y 36
-connected 2
 end
 arch magic_banned
 x 9
@@ -2772,9 +2765,9 @@ x 9
 y 37
 end
 arch grate_closed_2
+connected 2
 x 9
 y 37
-connected 2
 end
 arch magic_banned
 x 9
@@ -2821,9 +2814,9 @@ x 9
 y 41
 end
 arch grate_closed_2
+connected 3
 x 9
 y 41
-connected 3
 end
 arch magic_banned
 x 9
@@ -2834,9 +2827,9 @@ x 9
 y 42
 end
 arch grate_closed_2
+connected 3
 x 9
 y 42
-connected 3
 end
 arch magic_banned
 x 9
@@ -2942,9 +2935,9 @@ x 10
 y 8
 end
 arch button_handle
+connected 1
 x 10
 y 8
-connected 1
 end
 arch magic_banned
 x 10
@@ -2995,9 +2988,9 @@ x 10
 y 13
 end
 arch button_handle
-x 10
-y 13
 connected 2
+x 10
+y 13
 end
 arch magic_banned
 x 10
@@ -3048,9 +3041,9 @@ x 10
 y 18
 end
 arch button_handle
+connected 3
 x 10
 y 18
-connected 3
 end
 arch magic_banned
 x 10
@@ -3153,9 +3146,9 @@ x 10
 y 33
 end
 arch button_handle
+connected 1
 x 10
 y 33
-connected 1
 end
 arch magic_banned
 x 10
@@ -3206,9 +3199,9 @@ x 10
 y 38
 end
 arch button_handle
-x 10
-y 38
 connected 2
+x 10
+y 38
 end
 arch magic_banned
 x 10
@@ -3259,9 +3252,9 @@ x 10
 y 43
 end
 arch button_handle
+connected 3
 x 10
 y 43
-connected 3
 end
 arch magic_banned
 x 10
@@ -3665,7 +3658,7 @@ arch pstone_1
 x 12
 y 4
 end
-arch wwall_win2
+arch woodwall_win2
 x 12
 y 4
 end
@@ -3789,7 +3782,7 @@ arch pstone_1
 x 12
 y 19
 end
-arch wwall_win2
+arch woodwall_win2
 x 12
 y 19
 end
@@ -3845,7 +3838,7 @@ arch pstone_1
 x 12
 y 29
 end
-arch wwall_win2
+arch woodwall_win2
 x 12
 y 29
 end
@@ -3969,7 +3962,7 @@ arch pstone_1
 x 12
 y 44
 end
-arch wwall_win2
+arch woodwall_win2
 x 12
 y 44
 end
@@ -4801,9 +4794,9 @@ x 15
 y 10
 end
 arch grate_closed_2
+connected 96
 x 15
 y 10
-connected 96
 end
 arch magic_banned
 x 15
@@ -4814,9 +4807,9 @@ x 15
 y 11
 end
 arch grate_closed_2
+connected 96
 x 15
 y 11
-connected 96
 end
 arch magic_banned
 x 15
@@ -4827,9 +4820,9 @@ x 15
 y 12
 end
 arch grate_closed_2
+connected 96
 x 15
 y 12
-connected 96
 end
 arch magic_banned
 x 15
@@ -4840,9 +4833,9 @@ x 15
 y 13
 end
 arch grate_closed_2
+connected 96
 x 15
 y 13
-connected 96
 end
 arch magic_banned
 x 15
@@ -5222,9 +5215,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 10
-connected 96
 end
 arch magic_banned
 x 16
@@ -5237,9 +5230,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 11
-connected 96
 end
 arch magic_banned
 x 16
@@ -5252,9 +5245,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 12
-connected 96
 end
 arch magic_banned
 x 16
@@ -5267,9 +5260,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 13
-connected 96
 end
 arch magic_banned
 x 16
@@ -5438,9 +5431,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 35
-connected 96
 end
 arch magic_banned
 x 16
@@ -5453,9 +5446,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 36
-connected 96
 end
 arch magic_banned
 x 16
@@ -5468,9 +5461,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 37
-connected 96
 end
 arch magic_banned
 x 16
@@ -5483,9 +5476,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 16
 y 38
-connected 96
 end
 arch magic_banned
 x 16
@@ -6397,7 +6390,7 @@ arch pstone_1
 x 19
 y 6
 end
-arch wwall_win1
+arch woodwall_win1
 x 19
 y 6
 end
@@ -6465,10 +6458,10 @@ x 19
 y 11
 end
 arch door_look_2
-x 19
-y 11
 no_pass 0
 blocksview 1
+x 19
+y 11
 end
 arch magic_banned
 x 19
@@ -6486,10 +6479,10 @@ x 19
 y 12
 end
 arch door_look_2
-x 19
-y 12
 no_pass 0
 blocksview 1
+x 19
+y 12
 end
 arch magic_banned
 x 19
@@ -6547,7 +6540,7 @@ arch pstone_1
 x 19
 y 17
 end
-arch wwall_win1
+arch woodwall_win1
 x 19
 y 17
 end
@@ -6651,7 +6644,7 @@ arch pstone_1
 x 19
 y 31
 end
-arch wwall_win1
+arch woodwall_win1
 x 19
 y 31
 end
@@ -6723,10 +6716,10 @@ x 19
 y 36
 end
 arch door_look_2
-x 19
-y 36
 no_pass 0
 blocksview 1
+x 19
+y 36
 end
 arch magic_banned
 x 19
@@ -6748,10 +6741,10 @@ x 19
 y 37
 end
 arch door_look_2
-x 19
-y 37
 no_pass 0
 blocksview 1
+x 19
+y 37
 end
 arch magic_banned
 x 19
@@ -6809,7 +6802,7 @@ arch pstone_1
 x 19
 y 42
 end
-arch wwall_win1
+arch woodwall_win1
 x 19
 y 42
 end
@@ -9160,7 +9153,7 @@ arch pstone_1
 x 29
 y 6
 end
-arch wwall_win1
+arch woodwall_win1
 x 29
 y 6
 end
@@ -9248,7 +9241,7 @@ arch pstone_1
 x 29
 y 17
 end
-arch wwall_win1
+arch woodwall_win1
 x 29
 y 17
 end
@@ -9336,7 +9329,7 @@ arch pstone_1
 x 29
 y 31
 end
-arch wwall_win1
+arch woodwall_win1
 x 29
 y 31
 end
@@ -9424,7 +9417,7 @@ arch pstone_1
 x 29
 y 42
 end
-arch wwall_win1
+arch woodwall_win1
 x 29
 y 42
 end
@@ -9965,7 +9958,7 @@ arch pstone_1
 x 32
 y 4
 end
-arch wwall_win2
+arch woodwall_win2
 x 32
 y 4
 end
@@ -10041,7 +10034,7 @@ arch pstone_1
 x 32
 y 19
 end
-arch wwall_win2
+arch woodwall_win2
 x 32
 y 19
 end
@@ -10093,7 +10086,7 @@ arch pstone_1
 x 32
 y 29
 end
-arch wwall_win2
+arch woodwall_win2
 x 32
 y 29
 end
@@ -10169,7 +10162,7 @@ arch pstone_1
 x 32
 y 44
 end
-arch wwall_win2
+arch woodwall_win2
 x 32
 y 44
 end
@@ -10534,9 +10527,9 @@ x 34
 y 6
 end
 arch grate_closed_2
+connected 1
 x 34
 y 6
-connected 1
 end
 arch magic_banned
 x 34
@@ -10547,9 +10540,9 @@ x 34
 y 7
 end
 arch grate_closed_2
+connected 1
 x 34
 y 7
-connected 1
 end
 arch magic_banned
 x 34
@@ -10596,9 +10589,9 @@ x 34
 y 11
 end
 arch grate_closed_2
+connected 2
 x 34
 y 11
-connected 2
 end
 arch magic_banned
 x 34
@@ -10609,9 +10602,9 @@ x 34
 y 12
 end
 arch grate_closed_2
+connected 2
 x 34
 y 12
-connected 2
 end
 arch magic_banned
 x 34
@@ -10658,9 +10651,9 @@ x 34
 y 16
 end
 arch grate_closed_2
+connected 3
 x 34
 y 16
-connected 3
 end
 arch magic_banned
 x 34
@@ -10671,9 +10664,9 @@ x 34
 y 17
 end
 arch grate_closed_2
+connected 3
 x 34
 y 17
-connected 3
 end
 arch magic_banned
 x 34
@@ -10768,9 +10761,9 @@ x 34
 y 31
 end
 arch grate_closed_2
+connected 1
 x 34
 y 31
-connected 1
 end
 arch magic_banned
 x 34
@@ -10781,9 +10774,9 @@ x 34
 y 32
 end
 arch grate_closed_2
+connected 1
 x 34
 y 32
-connected 1
 end
 arch magic_banned
 x 34
@@ -10830,9 +10823,9 @@ x 34
 y 36
 end
 arch grate_closed_2
+connected 2
 x 34
 y 36
-connected 2
 end
 arch magic_banned
 x 34
@@ -10843,9 +10836,9 @@ x 34
 y 37
 end
 arch grate_closed_2
+connected 2
 x 34
 y 37
-connected 2
 end
 arch magic_banned
 x 34
@@ -10892,9 +10885,9 @@ x 34
 y 41
 end
 arch grate_closed_2
+connected 3
 x 34
 y 41
-connected 3
 end
 arch magic_banned
 x 34
@@ -10905,9 +10898,9 @@ x 34
 y 42
 end
 arch grate_closed_2
+connected 3
 x 34
 y 42
-connected 3
 end
 arch magic_banned
 x 34
@@ -11013,9 +11006,9 @@ x 35
 y 8
 end
 arch button_handle
+connected 1
 x 35
 y 8
-connected 1
 end
 arch magic_banned
 x 35
@@ -11066,9 +11059,9 @@ x 35
 y 13
 end
 arch button_handle
-x 35
-y 13
 connected 2
+x 35
+y 13
 end
 arch magic_banned
 x 35
@@ -11119,9 +11112,9 @@ x 35
 y 18
 end
 arch button_handle
+connected 3
 x 35
 y 18
-connected 3
 end
 arch magic_banned
 x 35
@@ -11224,9 +11217,9 @@ x 35
 y 33
 end
 arch button_handle
+connected 1
 x 35
 y 33
-connected 1
 end
 arch magic_banned
 x 35
@@ -11277,9 +11270,9 @@ x 35
 y 38
 end
 arch button_handle
-x 35
-y 38
 connected 2
+x 35
+y 38
 end
 arch magic_banned
 x 35
@@ -11330,9 +11323,9 @@ x 35
 y 43
 end
 arch button_handle
+connected 3
 x 35
 y 43
-connected 3
 end
 arch magic_banned
 x 35
@@ -11736,7 +11729,7 @@ arch pstone_1
 x 37
 y 4
 end
-arch wwall_win2
+arch woodwall_win2
 x 37
 y 4
 end
@@ -11860,7 +11853,7 @@ arch pstone_1
 x 37
 y 19
 end
-arch wwall_win2
+arch woodwall_win2
 x 37
 y 19
 end
@@ -11916,7 +11909,7 @@ arch pstone_1
 x 37
 y 29
 end
-arch wwall_win2
+arch woodwall_win2
 x 37
 y 29
 end
@@ -12040,7 +12033,7 @@ arch pstone_1
 x 37
 y 44
 end
-arch wwall_win2
+arch woodwall_win2
 x 37
 y 44
 end
@@ -13289,9 +13282,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 10
-connected 96
 end
 arch magic_banned
 x 41
@@ -13304,9 +13297,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 11
-connected 96
 end
 arch magic_banned
 x 41
@@ -13319,9 +13312,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 12
-connected 96
 end
 arch magic_banned
 x 41
@@ -13334,9 +13327,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 13
-connected 96
 end
 arch magic_banned
 x 41
@@ -13505,9 +13498,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 35
-connected 96
 end
 arch magic_banned
 x 41
@@ -13520,9 +13513,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 36
-connected 96
 end
 arch magic_banned
 x 41
@@ -13535,9 +13528,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 37
-connected 96
 end
 arch magic_banned
 x 41
@@ -13550,9 +13543,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
+connected 96
 x 41
 y 38
-connected 96
 end
 arch magic_banned
 x 41
@@ -14464,7 +14457,7 @@ arch pstone_1
 x 44
 y 6
 end
-arch wwall_win1
+arch woodwall_win1
 x 44
 y 6
 end
@@ -14536,10 +14529,10 @@ x 44
 y 11
 end
 arch door_look_2
-x 44
-y 11
 no_pass 0
 blocksview 1
+x 44
+y 11
 end
 arch magic_banned
 x 44
@@ -14561,10 +14554,10 @@ x 44
 y 12
 end
 arch door_look_2
-x 44
-y 12
 no_pass 0
 blocksview 1
+x 44
+y 12
 end
 arch magic_banned
 x 44
@@ -14622,7 +14615,7 @@ arch pstone_1
 x 44
 y 17
 end
-arch wwall_win1
+arch woodwall_win1
 x 44
 y 17
 end
@@ -14726,7 +14719,7 @@ arch pstone_1
 x 44
 y 31
 end
-arch wwall_win1
+arch woodwall_win1
 x 44
 y 31
 end
@@ -14798,10 +14791,10 @@ x 44
 y 36
 end
 arch door_look_2
-x 44
-y 36
 no_pass 0
 blocksview 1
+x 44
+y 36
 end
 arch magic_banned
 x 44
@@ -14823,10 +14816,10 @@ x 44
 y 37
 end
 arch door_look_2
-x 44
-y 37
 no_pass 0
 blocksview 1
+x 44
+y 37
 end
 arch magic_banned
 x 44
@@ -14884,7 +14877,7 @@ arch pstone_1
 x 44
 y 42
 end
-arch wwall_win1
+arch woodwall_win1
 x 44
 y 42
 end
@@ -15958,284 +15951,108 @@ end
 arch unicorn
 y 16
 end
-More
-arch unicorn_2
-y 16
-end
 arch unicorn
-y 41
-end
-More
-arch unicorn_2
 y 41
 end
 arch active_volcano
 x 4
 y 1
 end
-More
-arch active_volcano_2
-x 5
-y 1
-end
 arch active_volcano
 x 4
 y 26
 end
-More
-arch active_volcano_2
-x 5
-y 26
-end
 arch active_volcano
 x 12
 end
-More
-arch active_volcano_2
-x 13
-end
 arch active_volcano
 x 12
-y 25
-end
-More
-arch active_volcano_2
-x 13
 y 25
 end
 arch unicorn
 x 15
 y 22
 end
-More
-arch unicorn_2
-x 16
-y 22
-end
 arch unicorn
 x 15
 y 47
 end
-More
-arch unicorn_2
-x 16
-y 47
-end
 arch volcano_high
 x 21
 y 1
 end
-More
-arch volcano_high_2
-x 22
-y 1
-end
-More
-arch volcano_high_3
-x 21
-y 2
-end
-More
-arch volcano_high_4
-x 22
-y 2
-end
 arch active_volcano
 x 21
-y 6
-end
-More
-arch active_volcano_2
-x 22
 y 6
 end
 arch unicorn
 x 21
 y 21
 end
-More
-arch unicorn_2
-x 22
-y 21
-end
 arch volcano_high
 x 21
 y 26
-end
-More
-arch volcano_high_2
-x 22
-y 26
-end
-More
-arch volcano_high_3
-x 21
-y 27
-end
-More
-arch volcano_high_4
-x 22
-y 27
 end
 arch active_volcano
 x 21
 y 31
 end
-More
-arch active_volcano_2
-x 22
-y 31
-end
 arch unicorn
 x 21
-y 46
-end
-More
-arch unicorn_2
-x 22
 y 46
 end
 arch unicorn
 x 25
 y 16
 end
-More
-arch unicorn_2
-x 26
-y 16
-end
 arch unicorn
 x 25
 y 41
 end
-More
-arch unicorn_2
-x 26
-y 41
-end
 arch active_volcano
 x 29
-y 1
-end
-More
-arch active_volcano_2
-x 30
 y 1
 end
 arch active_volcano
 x 29
 y 26
 end
-More
-arch active_volcano_2
-x 30
-y 26
-end
 arch active_volcano
 x 37
 end
-More
-arch active_volcano_2
-x 38
-end
 arch active_volcano
 x 37
-y 25
-end
-More
-arch active_volcano_2
-x 38
 y 25
 end
 arch unicorn
 x 40
 y 22
 end
-More
-arch unicorn_2
-x 41
-y 22
-end
 arch unicorn
 x 40
 y 47
 end
-More
-arch unicorn_2
-x 41
-y 47
-end
 arch volcano_high
 x 46
 y 1
 end
-More
-arch volcano_high_2
-x 47
-y 1
-end
-More
-arch volcano_high_3
-x 46
-y 2
-end
-More
-arch volcano_high_4
-x 47
-y 2
-end
 arch active_volcano
 x 46
-y 6
-end
-More
-arch active_volcano_2
-x 47
 y 6
 end
 arch unicorn
 x 46
 y 21
 end
-More
-arch unicorn_2
-x 47
-y 21
-end
 arch volcano_high
 x 46
 y 26
-end
-More
-arch volcano_high_2
-x 47
-y 26
-end
-More
-arch volcano_high_3
-x 46
-y 27
-end
-More
-arch volcano_high_4
-x 47
-y 27
 end
 arch active_volcano
 x 46
 y 31
 end
-More
-arch active_volcano_2
-x 47
-y 31
-end
 arch unicorn
 x 46
-y 46
-end
-More
-arch unicorn_2
-x 47
 y 46
 end
