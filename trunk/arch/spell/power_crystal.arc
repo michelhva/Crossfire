@@ -15,5 +15,4 @@ value 10000000
 material 64
 is_animated 1
 editable 4096
-weight 1
 end
