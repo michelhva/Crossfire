@@ -36,6 +36,7 @@ activatorname=CFPython.GetName(activator)
 whoami=CFPython.WhoAmI()
 
 boardname=CFPython.GetEventOptions(whoami,6) # 6 is say event
+print "Activated %s" %boardname
 
 if (boardname):
 

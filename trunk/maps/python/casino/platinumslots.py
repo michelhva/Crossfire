@@ -16,7 +16,7 @@ x=CFPython.GetXPosition(activator)
 y=CFPython.GetYPosition(activator)
 	
 cointype = "platinacoin" #What type of coin is this slotmachine using?	
-minpot = 300 #Minimum slot jackpot size	
+minpot = 200 #Minimum slot jackpot size	
 maxpot = 100000 #Maxiumum slot jackpot size
 cost = 1 #Price of usage
 
