@@ -1,5 +1,5 @@
 Object key_ring
-name a key ring
+name key ring
 other_arch close_key_ring
 race keys
 face key_ring.111

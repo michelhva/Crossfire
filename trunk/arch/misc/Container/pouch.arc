@@ -1,5 +1,5 @@
 Object pouch
-name a pouch
+name pouch
 other_arch close_pouch
 race gold and jewels
 face pouch.111

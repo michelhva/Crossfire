@@ -1,5 +1,5 @@
 Object bookshelf
-name a bookshelf
+name bookshelf
 other_arch close_shelf
 face bookshelf.111
 type 122

@@ -1,5 +1,14 @@
 Changes for CVS top of tree:
 
+door/Locked/key2.arc, misc/Container/bag.arc, misc/Container/bookshelf.arc,
+misc/Container/cauldron.arc, misc/Container/chest_2.arc,
+misc/Container/depositbox.arc, misc/Container/key_ring.arc,
+misc/Container/mailbox.arc, misc/Container/pouch.arc,
+misc/Container/r_sack.arc misc/Container/sack.arc: Remove the 'a' from the
+objects name.  The client adds it anyways, so you see 'a a bag' for example,
+but also when using the commands like 'drop that match on an item name, having
+to match against the 'a ' is a bit non intuitive.  MSW 6/27/2000
+
 ------------------------------------------------------------------------------
 Changes for Crossfire 0.95.6:
 

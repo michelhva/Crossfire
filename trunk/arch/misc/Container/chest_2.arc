@@ -1,5 +1,5 @@
 Object chest_2
-name a chest
+name chest
 other_arch close_chest
 face chest_1.111
 type 122
