@@ -141,9 +141,9 @@ pick_up 0
 randomitems standard
 x 2
 y 11
-arch lantern2
-end
 arch shovel_1
+end
+arch lantern2_1
 end
 end
 arch medium_stones
@@ -501,9 +501,9 @@ pick_up 0
 randomitems standard
 x 5
 y 18
-arch lantern2
-end
 arch shovel_1
+end
+arch lantern2_1
 end
 end
 arch medium_stones
@@ -1506,9 +1506,9 @@ pick_up 0
 randomitems standard
 x 15
 y 6
-arch lantern2
-end
 arch shovel_1
+end
+arch lantern2_1
 end
 end
 arch medium_stones
@@ -1637,7 +1637,7 @@ pick_up 0
 randomitems standard
 x 16
 y 3
-arch lantern2
+arch lantern2_1
 end
 end
 arch medium_stones
