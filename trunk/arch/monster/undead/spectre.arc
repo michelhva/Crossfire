@@ -13,8 +13,8 @@ dam 15
 hp 500
 maxhp 500
 level 10
-resist_physical 30
-resist_magic 30
+resist_physical 50
+resist_magic 50
 
 wc 5
 ac -5

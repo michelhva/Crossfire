@@ -10,9 +10,7 @@ hp 400
 maxhp 400
 exp 200
 ac 0
-resist_fire 100
-resist_electricity 100
-
+resist_cold 100
 speed 0.001
 weight -1
 sp 127

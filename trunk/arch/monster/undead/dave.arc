@@ -24,9 +24,8 @@ ac -100
 editable 1
 speed 0.150000
 level 100
-resist_physical 30
-resist_magic 30
-
+resist_physical 50
+resist_magic 50
 attacktype 4225
 randomitems lich
 pick_up 24

@@ -23,10 +23,8 @@ speed 0.14
 attacktype 528
 flying 1
 weight 500
-resist_cold 30
-
+resist_cold 50
 resist_fear 100
-
 undead 1
 can_pass_thru 1
 can_see_in_dark 1

@@ -26,10 +26,8 @@ exp 75
 weight 15000
 attacktype 16385
 can_see_in_dark 1
-resist_electricity 30
-
+resist_electricity 50
 resist_cold 100
 resist_fear 100
-
 editable 1
 end
