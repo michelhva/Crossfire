@@ -552,6 +552,10 @@ arch shop_empty
 x 5
 y 2
 end
+arch shop_mat
+x 5
+y 2
+end
 arch shop_empty
 x 5
 y 3
@@ -636,17 +640,25 @@ arch cobblestones2
 x 5
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 6
 end
-arch dwall_2_1_2
+arch dwall_3_3
 x 6
 end
-arch shop_empty
+arch tile_white_floor
 x 6
 y 1
 end
-arch shop_empty
+arch dwall_win1
+x 6
+y 1
+end
+arch tile_white_floor
+x 6
+y 2
+end
+arch dwall_win1
 x 6
 y 2
 end
@@ -654,7 +666,7 @@ arch shop_empty
 x 6
 y 3
 end
-arch dwall3_3
+arch dwall_4
 x 6
 y 3
 end
@@ -778,17 +790,17 @@ arch cobblestones2
 x 6
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 7
 end
 arch dwall_2_1_2
 x 7
 end
-arch shop_empty
+arch tile_white_floor
 x 7
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 7
 y 2
 end
@@ -878,32 +890,30 @@ arch cobblestones2
 x 7
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 8
 end
 arch dwall_2_1_2
 x 8
 end
-arch shop_empty
+arch tile_white_floor
 x 8
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 8
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 8
 y 3
+end
+arch shop_empty
+x 8
+y 4
 end
 arch bench_1_4
-name sales counter
 no_pass 1
-damned 1
-x 8
-y 3
-end
-arch shop_empty
 x 8
 y 4
 end
@@ -1009,13 +1019,13 @@ arch cobblestones2
 x 8
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 9
 end
 arch dwall_2_1_2
 x 9
 end
-arch shop_empty
+arch tile_white_floor
 x 9
 y 1
 end
@@ -1027,23 +1037,20 @@ sp 1
 x 9
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 9
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 9
 y 3
+end
+arch shop_empty
+x 9
+y 4
 end
 arch bench_2_1_2
-name sales counter
 no_pass 1
-no_magic 1
-damned 1
-x 9
-y 3
-end
-arch shop_empty
 x 9
 y 4
 end
@@ -1143,13 +1150,13 @@ arch cobblestones2
 x 9
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 10
 end
 arch dwall_2_1_2
 x 10
 end
-arch shop_empty
+arch tile_white_floor
 x 10
 y 1
 end
@@ -1165,12 +1172,28 @@ arch light4
 x 10
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 10
 y 2
 end
-arch magic_mouth
-name busy store manager
+arch tile_white_floor
+x 10
+y 3
+end
+arch shop_mat
+x 10
+y 3
+end
+arch shop_empty
+x 10
+y 4
+end
+arch bench_2_1_2
+no_pass 1
+x 10
+y 4
+end
+arch magic_ear
 msg
 @match P|plants
 Yeah! I like plants. So what? I also like smashing
@@ -1181,22 +1204,6 @@ Are you blind? Can you not see I am busy!
 Go talk to Oorgh on the second floor! I'm sure
 that lazy troll has nothing better to do.
 endmsg
-x 10
-y 3
-end
-arch shop_empty
-x 10
-y 3
-end
-arch bench_2_1_2
-name sales counter
-no_pass 1
-no_magic 1
-damned 1
-x 10
-y 3
-end
-arch shop_empty
 x 10
 y 4
 end
@@ -1209,12 +1216,6 @@ x 10
 y 6
 end
 arch shop_empty
-x 10
-y 7
-end
-arch palm
-name House Plant
-no_pass 1
 x 10
 y 7
 end
@@ -1322,13 +1323,13 @@ arch cobblestones2
 x 10
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 end
 arch dwall_2_1_2
 x 11
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 1
 end
@@ -1340,23 +1341,20 @@ sp 1
 x 11
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 3
+end
+arch shop_empty
+x 11
+y 4
 end
 arch bench_2_1_2
-name sales counter
 no_pass 1
-no_magic 1
-damned 1
-x 11
-y 3
-end
-arch shop_empty
 x 11
 y 4
 end
@@ -1456,33 +1454,30 @@ arch cobblestones2
 x 11
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 end
 arch dwall_2_1_2
 x 12
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 3
+end
+arch shop_empty
+x 12
+y 4
 end
 arch bench_1_3
-name sales counter
 no_pass 1
-no_magic 1
-damned 1
-x 12
-y 3
-end
-arch shop_empty
 x 12
 y 4
 end
@@ -1588,17 +1583,17 @@ arch cobblestones2
 x 12
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 end
 arch dwall_2_1_2
 x 13
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 2
 end
@@ -1688,17 +1683,25 @@ arch cobblestones2
 x 13
 y 19
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 end
-arch dwall_2_1_2
+arch dwall_3_3
 x 14
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 1
 end
-arch shop_empty
+arch dwall_win1
+x 14
+y 1
+end
+arch tile_white_floor
+x 14
+y 2
+end
+arch dwall_win1
 x 14
 y 2
 end
@@ -1706,7 +1709,7 @@ arch shop_empty
 x 14
 y 3
 end
-arch dwall3_3
+arch dwall_4
 x 14
 y 3
 end
@@ -1841,6 +1844,10 @@ x 15
 y 1
 end
 arch shop_empty
+x 15
+y 2
+end
+arch shop_mat
 x 15
 y 2
 end
@@ -2507,5 +2514,5 @@ resist_blind 75
 resist_holyword 75
 resist_godpower 75
 x 10
-y 5
+y 6
 end
