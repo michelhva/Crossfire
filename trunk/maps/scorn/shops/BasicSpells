@@ -1,0 +1,1670 @@
+arch map
+name BasicSpells
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Wed Oct 18 11:46:05 2000
+endmsg
+x 10
+y 10
+end
+arch woodfloor
+end
+arch oakdoor
+slaying /world/world_104_115
+hp 49
+sp 34
+end
+arch woodfloor
+y 1
+end
+arch wall_2_2_2
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch wall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch wall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch wall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch wall_2_2_1
+y 9
+end
+arch woodfloor
+x 1
+end
+arch shop_empty
+x 1
+end
+arch shop_mat
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch wall_2_1_2
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch shop_empty
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch shop_empty
+x 1
+y 3
+end
+arch bookshelf
+name Books on causing harm
+x 1
+y 3
+carrying 95000
+no_pick 1
+arch cleric_book
+slaying cause light wounds
+msg
+Cause light wounds
+endmsg
+nrof 16
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause medium wounds
+msg
+Cause medium wounds
+endmsg
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause serious wounds
+msg
+Cause serious wounds
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause critical wounds
+msg
+Cause critical wounds
+endmsg
+value 5500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 1
+y 4
+end
+arch shop_empty
+x 1
+y 4
+end
+arch bookshelf
+name Books on causing harm
+x 1
+y 4
+carrying 285000
+no_pick 1
+arch cleric_book
+slaying cause light wounds
+msg
+Cause light wounds
+endmsg
+nrof 16
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause medium wounds
+msg
+Cause medium wounds
+endmsg
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause serious wounds
+msg
+Cause serious wounds
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause critical wounds
+msg
+Cause critical wounds
+endmsg
+value 5500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 1
+y 5
+end
+arch shop_empty
+x 1
+y 5
+end
+arch bookshelf
+name Books on causing harm
+x 1
+y 5
+carrying 285000
+no_pick 1
+arch cleric_book
+slaying cause light wounds
+msg
+Cause light wounds
+endmsg
+nrof 16
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause medium wounds
+msg
+Cause medium wounds
+endmsg
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause serious wounds
+msg
+Cause serious wounds
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause critical wounds
+msg
+Cause critical wounds
+endmsg
+value 5500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 1
+y 6
+end
+arch shop_empty
+x 1
+y 6
+end
+arch bookshelf
+name Books on causing harm
+x 1
+y 6
+carrying 285000
+no_pick 1
+arch cleric_book
+slaying cause light wounds
+msg
+Cause light wounds
+endmsg
+nrof 16
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause medium wounds
+msg
+Cause medium wounds
+endmsg
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause serious wounds
+msg
+Cause serious wounds
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause critical wounds
+msg
+Cause critical wounds
+endmsg
+value 5500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 1
+y 7
+end
+arch shop_empty
+x 1
+y 7
+end
+arch bookshelf
+name Books on causing harm
+x 1
+y 7
+carrying 285000
+no_pick 1
+arch cleric_book
+slaying cause light wounds
+msg
+Cause light wounds
+endmsg
+nrof 16
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause medium wounds
+msg
+Cause medium wounds
+endmsg
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause serious wounds
+msg
+Cause serious wounds
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch cleric_book
+slaying cause critical wounds
+msg
+Cause critical wounds
+endmsg
+value 5500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 1
+y 8
+end
+arch shop_empty
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch wall_2_1_2
+x 1
+y 9
+end
+arch woodfloor
+x 2
+end
+arch wall_2_2_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch wall_2_2_4
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch shop_empty
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch shop_empty
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch shop_empty
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch shop_empty
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch shop_empty
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch shop_empty
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch shop_empty
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch wall_2_1_2
+x 2
+y 9
+end
+arch woodfloor
+x 3
+end
+arch wall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch shop_empty
+x 3
+y 1
+end
+arch shop_mat
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch shop_empty
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch shop_empty
+x 3
+y 3
+end
+arch bookshelf
+name Books about fire
+x 3
+y 3
+carrying 20000
+no_pick 1
+arch book
+slaying small fireball
+msg
+small fireball
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium fireball
+msg
+medium fireball
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large fireball
+msg
+large fireball
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying burning hands
+msg
+burning hands
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 3
+y 4
+end
+arch shop_empty
+x 3
+y 4
+end
+arch bookshelf
+name Books about fire
+x 3
+y 4
+carrying 20000
+no_pick 1
+arch book
+slaying small fireball
+msg
+small fireball
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium fireball
+msg
+medium fireball
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large fireball
+msg
+large fireball
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying burning hands
+msg
+burning hands
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 3
+y 5
+end
+arch shop_empty
+x 3
+y 5
+end
+arch bookshelf
+name Books about fire
+x 3
+y 5
+carrying 20000
+no_pick 1
+arch book
+slaying small fireball
+msg
+small fireball
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium fireball
+msg
+medium fireball
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large fireball
+msg
+large fireball
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying burning hands
+msg
+burning hands
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 3
+y 6
+end
+arch shop_empty
+x 3
+y 6
+end
+arch bookshelf
+name Books about fire
+x 3
+y 6
+carrying 20000
+no_pick 1
+arch book
+slaying small fireball
+msg
+small fireball
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium fireball
+msg
+medium fireball
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large fireball
+msg
+large fireball
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying burning hands
+msg
+burning hands
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 3
+y 7
+end
+arch shop_empty
+x 3
+y 7
+end
+arch bookshelf
+name Books about fire
+x 3
+y 7
+carrying 20000
+no_pick 1
+arch book
+slaying small fireball
+msg
+small fireball
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium fireball
+msg
+medium fireball
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large fireball
+msg
+large fireball
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying burning hands
+msg
+burning hands
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 3
+y 8
+end
+arch shop_empty
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch wall_2_1_2
+x 3
+y 9
+end
+arch woodfloor
+x 4
+end
+arch wall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch shop_empty
+x 4
+y 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 4
+y 1
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch shop_empty
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch shop_empty
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch shop_empty
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch shop_empty
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch shop_empty
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch shop_empty
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch shop_empty
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch wall_2_1_2
+x 4
+y 9
+end
+arch woodfloor
+x 5
+end
+arch wall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch shop_empty
+x 5
+y 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 5
+y 1
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch shop_empty
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch shop_empty
+x 5
+y 3
+end
+arch bookshelf
+name Books on lightning
+x 5
+y 3
+carrying 10000
+no_pick 1
+arch book
+slaying small lightning
+msg
+small lightning 
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large lightning
+msg
+large lightning 
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 5
+y 4
+end
+arch shop_empty
+x 5
+y 4
+end
+arch bookshelf
+name Books on lightning
+x 5
+y 4
+carrying 10000
+no_pick 1
+arch book
+slaying small lightning
+msg
+small lightning 
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large lightning
+msg
+large lightning 
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 5
+y 5
+end
+arch shop_empty
+x 5
+y 5
+end
+arch bookshelf
+name Books on lightning
+x 5
+y 5
+carrying 10000
+no_pick 1
+arch book
+slaying small lightning
+msg
+small lightning 
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large lightning
+msg
+large lightning 
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 5
+y 6
+end
+arch shop_empty
+x 5
+y 6
+end
+arch bookshelf
+name Books on lightning
+x 5
+y 6
+carrying 10000
+no_pick 1
+arch book
+slaying small lightning
+msg
+small lightning 
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large lightning
+msg
+large lightning 
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 5
+y 7
+end
+arch shop_empty
+x 5
+y 7
+end
+arch bookshelf
+name Books on lightning
+x 5
+y 7
+carrying 10000
+no_pick 1
+arch book
+slaying small lightning
+msg
+small lightning 
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large lightning
+msg
+large lightning 
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 5
+y 8
+end
+arch shop_empty
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch wall_2_1_2
+x 5
+y 9
+end
+arch woodfloor
+x 6
+end
+arch wall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch shop_empty
+x 6
+y 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 6
+y 1
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch shop_empty
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch shop_empty
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch shop_empty
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch shop_empty
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch shop_empty
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch shop_empty
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch shop_empty
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch wall_2_1_2
+x 6
+y 9
+end
+arch woodfloor
+x 7
+end
+arch wall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch shop_empty
+x 7
+y 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 7
+y 1
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch shop_empty
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch shop_empty
+x 7
+y 3
+end
+arch bookshelf
+name Books on Cold
+x 7
+y 3
+carrying 20000
+no_pick 1
+arch book
+slaying small snowstorm
+msg
+small snowstorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium snowstorm
+msg
+medium snowstorm
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large snowstorm
+msg
+large snowstorm
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying icestorm
+msg
+icestorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 7
+y 4
+end
+arch shop_empty
+x 7
+y 4
+end
+arch bookshelf
+name Books on Cold
+x 7
+y 4
+carrying 20000
+no_pick 1
+arch book
+slaying small snowstorm
+msg
+small snowstorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium snowstorm
+msg
+medium snowstorm
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large snowstorm
+msg
+large snowstorm
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying icestorm
+msg
+icestorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 7
+y 5
+end
+arch shop_empty
+x 7
+y 5
+end
+arch bookshelf
+name Books on Cold
+x 7
+y 5
+carrying 20000
+no_pick 1
+arch book
+slaying small snowstorm
+msg
+small snowstorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium snowstorm
+msg
+medium snowstorm
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large snowstorm
+msg
+large snowstorm
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying icestorm
+msg
+icestorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 7
+y 6
+end
+arch shop_empty
+x 7
+y 6
+end
+arch bookshelf
+name Books on Cold
+x 7
+y 6
+carrying 20000
+no_pick 1
+arch book
+slaying small snowstorm
+msg
+small snowstorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium snowstorm
+msg
+medium snowstorm
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large snowstorm
+msg
+large snowstorm
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying icestorm
+msg
+icestorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 7
+y 7
+end
+arch shop_empty
+x 7
+y 7
+end
+arch bookshelf
+name Books on Cold
+x 7
+y 7
+carrying 20000
+no_pick 1
+arch book
+slaying small snowstorm
+msg
+small snowstorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying medium snowstorm
+msg
+medium snowstorm
+endmsg
+value 4500
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying large snowstorm
+msg
+large snowstorm
+endmsg
+value 11000
+unpaid 1
+identified 1
+been_applied 1
+end
+arch book
+slaying icestorm
+msg
+icestorm
+endmsg
+value 2500
+unpaid 1
+identified 1
+been_applied 1
+end
+end
+arch woodfloor
+x 7
+y 8
+end
+arch shop_empty
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch wall_2_1_2
+x 7
+y 9
+end
+arch woodfloor
+x 8
+end
+arch wall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch shop_empty
+x 8
+y 1
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 8
+y 1
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch shop_empty
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch shop_empty
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch shop_empty
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch shop_empty
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch shop_empty
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch shop_empty
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch shop_empty
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch wall_2_1_2
+x 8
+y 9
+end
+arch woodfloor
+x 9
+end
+arch wall_2_2_3
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wall_2_1_1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wall_2_1_1
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch wall_2_1_1
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch wall_2_1_1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch wall_2_1_1
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch wall_2_1_1
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch wall_2_1_1
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch wall_2_1_1
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch wall_2_2_4
+x 9
+y 9
+end
