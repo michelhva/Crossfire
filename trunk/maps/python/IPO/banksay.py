@@ -61,7 +61,7 @@ if text[0] == 'help' or text[0] == 'yes':
 
 elif text[0] == 'deposit':
 	if len(text)==2:
-		if (CFPython.PayAmount(activator, (int(text[1])*exchange_rate)*fees)):
+		if (CFPython.PayAmount(activator, int((int(text[1])*exchange_rate)*fees))):
 			bank.deposit(activatorname, int(text[1]))
 			message = '%d received, %d imperials deposited to bank account.  %s' \
 			%((int(text[1])*(exchange_rate/50))*fees,int(text[1]),random.choice(thanks_message))
