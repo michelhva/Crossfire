@@ -1,0 +1,457 @@
+arch map
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Tue Jan 19 17:30:49 1999
+endmsg
+end
+arch potion_heal
+end
+arch potion_generic
+name fountain
+sp 1
+y 1
+end
+arch potion_generic
+name fountain
+sp 1
+y 2
+end
+arch potion_generic
+name fountain
+sp 1
+y 3
+end
+arch potion_generic
+name fountain
+sp 1
+y 4
+end
+arch potion_generic
+name fountain
+sp 1
+y 5
+end
+arch potion_generic
+name fountain
+sp 1
+y 6
+end
+arch trap_needle
+name fountain
+msg
+You caught a disease, splashing around
+in the fountain!
+endmsg
+face fountain.111
+y 8
+carrying 45
+arch icor
+name the runs
+type 158
+invisible 1
+race *
+end
+end
+arch potioncha
+x 1
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 1
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 2
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 3
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 4
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 5
+end
+arch potion_generic
+name fountain
+sp 1
+x 1
+y 6
+end
+arch potioncon
+x 2
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 1
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 2
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 3
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 4
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 5
+end
+arch potion_generic
+name fountain
+sp 2
+x 2
+y 6
+end
+arch potiondex
+x 3
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 1
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 2
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 3
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 4
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 5
+end
+arch potion_generic
+name fountain
+sp 2
+x 3
+y 6
+end
+arch potionint
+x 4
+end
+arch potionstr
+x 5
+end
+arch potion_generic
+name fountain
+sp 90
+x 5
+y 1
+level -30
+end
+arch potion_generic
+x 5
+y 2
+end
+arch potion_generic
+x 5
+y 3
+end
+arch potion_generic
+x 5
+y 4
+end
+arch potion_generic
+x 5
+y 5
+end
+arch potion_generic
+x 5
+y 6
+end
+arch potionwis
+x 6
+end
+arch potion_generic
+x 6
+y 1
+end
+arch potion_generic
+x 6
+y 2
+end
+arch potion_generic
+x 6
+y 3
+end
+arch potion_generic
+x 6
+y 4
+end
+arch potion_generic
+x 6
+y 5
+end
+arch potion_generic
+x 6
+y 6
+end
+arch potion_fire
+x 7
+end
+arch potion_invulnerability
+x 8
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 1
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 2
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 3
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 4
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 5
+end
+arch potion_generic
+name fountain
+sp 32
+x 8
+y 6
+end
+arch potion_magic
+x 9
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 1
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 2
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 3
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 4
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 5
+end
+arch potion_generic
+name fountain
+sp 32
+x 9
+y 6
+end
+arch potion_heroism
+x 10
+end
+arch potion_restoration
+x 11
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 1
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 2
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 3
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 4
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 5
+end
+arch potion_generic
+name fountain
+sp 129
+x 11
+y 6
+end
+arch potionpow
+x 12
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 1
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 2
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 3
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 4
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 5
+end
+arch potion_generic
+name fountain
+sp 129
+x 12
+y 6
+end
+arch potion_generic
+x 15
+end
+arch potion_generic
+x 15
+y 1
+end
+arch potion_generic
+x 15
+y 2
+end
+arch potion_generic
+x 15
+y 3
+end
+arch potion_generic
+x 15
+y 4
+end
+arch potion_generic
+x 15
+y 5
+end
+arch potion_generic
+x 15
+y 6
+end
+arch potion_generic
+x 15
+y 7
+end
+arch potion_generic
+x 15
+y 8
+end
+arch potion_generic
+x 15
+y 9
+end
+arch potion_generic
+x 15
+y 10
+end
+arch potion_generic
+x 15
+y 11
+end
+arch potion_generic
+x 15
+y 12
+end
+arch potion_generic
+x 15
+y 13
+end
+arch potion_generic
+x 15
+y 14
+end
+arch potion_generic
+x 15
+y 15
+end

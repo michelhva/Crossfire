@@ -1,0 +1,21 @@
+arch map
+name garden
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 19 20:36:16 1998
+endmsg
+x 6
+y 6
+end
+arch tree4
+no_pass 1
+end
+arch tree3
+x 1
+no_pass 1
+end
+arch tree5
+x 2
+no_pass 1
+end

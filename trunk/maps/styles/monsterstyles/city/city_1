@@ -1,0 +1,76 @@
+arch map
+name dungeon
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 19 20:36:16 1998
+endmsg
+x 6
+y 6
+end
+arch sage
+end
+arch a_townsman3
+y 1
+end
+arch a_townsman2
+y 2
+end
+arch a_townsman
+y 3
+end
+arch woman
+x 1
+end
+arch veiled_woman
+x 1
+y 1
+end
+arch veiled_woman3
+x 1
+y 2
+end
+arch veiled_woman2
+x 1
+y 3
+end
+arch charwoman
+x 2
+end
+arch man
+x 2
+y 1
+end
+arch generate_mouse
+x 3
+end
+arch mouse
+x 4
+end
+arch mouse
+x 4
+y 1
+end
+arch mouse
+x 4
+y 2
+end
+arch mouse
+x 4
+y 3
+end
+arch slime
+x 5
+end
+arch centipede
+x 5
+y 1
+end
+arch generate_ant
+x 5
+y 2
+end
+arch ant
+x 5
+y 3
+end
