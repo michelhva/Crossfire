@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 17:10:45 1998
 endmsg
-x 6
-y 10
+width 6
+height 10
 end
 arch tree3
 end
@@ -22,16 +22,16 @@ end
 arch mushroom_1
 y 4
 end
-arch evergreens
+arch marsh
 y 5
 end
 arch brush
 y 6
 end
-arch woods_2
+arch hills
 y 7
 end
-arch woods
+arch woods4
 y 8
 end
 arch jungle_1
@@ -68,7 +68,7 @@ arch woods_2
 x 1
 y 7
 end
-arch woods
+arch woods4
 x 1
 y 8
 end
@@ -107,7 +107,7 @@ arch woods_2
 x 2
 y 7
 end
-arch woods
+arch woods4
 x 2
 y 8
 end
@@ -146,11 +146,11 @@ arch woods_2
 x 3
 y 7
 end
-arch woods
+arch woods4
 x 3
 y 8
 end
-arch woods_3
+arch treed_hills
 x 3
 y 9
 end
@@ -220,7 +220,7 @@ arch jungle_2
 x 5
 y 6
 end
-arch woods_2
+arch deep_swamp
 x 5
 y 7
 end
