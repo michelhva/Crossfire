@@ -20,16 +20,13 @@ hp 45
 maxhp 45
 Con 2
 level 6
-speed 0.2
+speed -0.2
 exp 80
 weight 15000
 attacktype 17
 resist_fire -100
-
 resist_cold 30
-
 resist_fear 100
-
 will_apply 2
 pick_up 24
 can_see_in_dark 1
