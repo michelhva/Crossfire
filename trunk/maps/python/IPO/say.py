@@ -32,11 +32,6 @@ priceScrollOfLiteracy=5000
 priceMailScroll=5
 
 import CFPython
-
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
-
 import string
 import CFLog
 
@@ -50,7 +45,7 @@ log = CFLog.CFLog()
 text = string.split(CFPython.WhatIsMessage())
 
 if text[0] == 'help' or text[0] == 'yes':
-		message = 'How can I help you ? Here is a quick list of commands:\n\n- pen   (%s platinum)\n- literacy    (%s platinum)\n- mailscroll <friend>   (%s platinum)\n- seen <friend>   (free)\n'%(priceWritingPen,priceScrollOfLiteracy,priceMailScroll)
+		message = 'How can I help you ? Here is a quick list of commands:\n\n- pen   (%s platinum)\n- literacy    (%s platinum)\n- mailscroll <friend>   (%s platinum)\n'%(priceWritingPen,priceScrollOfLiteracy,priceMailScroll)
 		CFPython.Say(whoami,message)
 
 elif text[0] == 'pen':

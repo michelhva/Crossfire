@@ -11,8 +11,6 @@
 # Please help by adding new styles of insults to this fine script.
 
 import CFPython
-import sys
-sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
 from random import choice
 
 def Insult(style):
@@ -29,11 +27,20 @@ def Insult(style):
 ##TEXAS STYLE
 
   elif style == "texas":
-    adj1 = ['stewpid', 'uglee', 'pea brained', 'dung-headed', 'hatless', 'witless', 'dumb']
-    adj2 = ['horse-knappin', 'hog-licking', 'knock-kneed', 'brown-nosed', 'lilly-livered' ]
+    adj1 = ['stewpid', 'uglee', 'pea brained', 'dung-headed', 'beady-eyed', 'hatless', 'witless', 'dumb']
+    adj2 = ['horse-knappin', 'hog-lickin', 'knock-kneed', 'jug-eared', 'pie-headed', 'snaggle-toothed', 'brown-nosed', 'lilly-livered' ]
     noun = ['dipshit', 'city-slicker', 'root-head', 'cow-pie', 'greenhorn', 'idgit']
     prefixA = ['Yer a','Yer Mama\'s a', 'Yew']
-    prefixAn = ['Yer a', 'Yer Mama\'s a', 'Yew']
+    prefixAn = ['Yer an', 'Yer Mama\'s an', 'Yew']
+
+##DWARVEN STYLE
+
+  elif style == "dwarf":
+    adj1 = ['beardless', 'puny', 'shaven']
+    adj2 = ['elf-footed', 'dull-axed', 'tin-shielded' ]
+    noun = ['orc-lover', 'gobiln-kisser', 'tree-embracer']
+    prefixA = ['You are a','Your Matron\'s a', 'You']
+    prefixAn = ['You are an', 'Your Matron\'s an', 'You']
 
 ##NO STYLE 
   else:

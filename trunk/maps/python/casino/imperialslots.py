@@ -4,9 +4,6 @@
 #FYI - This one uses an object for cointype and not the money code :)
 
 import CFPython
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFGamble
 import CFItemBroker
 
