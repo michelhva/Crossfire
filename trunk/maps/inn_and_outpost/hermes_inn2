@@ -7,6 +7,7 @@ Date:    10/27/2002
 endmsg
 width 22
 height 10
+difficulty 4
 outdoor 1
 end
 arch woodfloor2
@@ -97,19 +98,11 @@ arch brazier
 x 1
 y 4
 end
-arch light3
-x 1
-y 4
-end
 arch woodfloor2
 x 1
 y 5
 end
 arch brazier
-x 1
-y 5
-end
-arch light3
 x 1
 y 5
 end
@@ -317,10 +310,6 @@ arch brazier
 x 4
 y 3
 end
-arch light3
-x 4
-y 3
-end
 arch woodfloor2
 x 4
 y 4
@@ -334,10 +323,6 @@ x 4
 y 6
 end
 arch brazier
-x 4
-y 6
-end
-arch light3
 x 4
 y 6
 end
@@ -607,10 +592,6 @@ arch brazier
 x 8
 y 3
 end
-arch light3
-x 8
-y 3
-end
 arch woodfloor2
 x 8
 y 4
@@ -624,10 +605,6 @@ x 8
 y 6
 end
 arch brazier
-x 8
-y 6
-end
-arch light3
 x 8
 y 6
 end
@@ -909,10 +886,6 @@ arch brazier
 x 12
 y 6
 end
-arch light3
-x 12
-y 6
-end
 arch woodfloor2
 x 12
 y 7
@@ -950,6 +923,13 @@ end
 arch chest
 x 13
 y 1
+arch key2
+name greasy key
+msg
+This key is slightly greasy, like it has been oiled.
+endmsg
+slaying Hermes Stash Key
+end
 end
 arch woodfloor2
 x 13
@@ -964,10 +944,6 @@ x 13
 y 3
 end
 arch fireplace
-x 13
-y 3
-end
-arch light3
 x 13
 y 3
 end
@@ -1034,6 +1010,10 @@ x 14
 y 2
 end
 arch woodfloor2
+x 14
+y 3
+end
+arch brazier
 x 14
 y 3
 end
@@ -1163,6 +1143,10 @@ arch woodfloor2
 x 16
 y 2
 end
+arch random_wealth
+x 16
+y 2
+end
 arch woodfloor2
 x 16
 y 3
@@ -1249,10 +1233,6 @@ arch brazier
 x 17
 y 6
 end
-arch light3
-x 17
-y 6
-end
 arch woodfloor2
 x 17
 y 7
@@ -1262,6 +1242,10 @@ x 17
 y 7
 end
 arch woodfloor2
+x 17
+y 8
+end
+arch random_food
 x 17
 y 8
 end
@@ -1291,10 +1275,6 @@ arch brazier
 x 18
 y 1
 end
-arch light4
-x 18
-y 1
-end
 arch woodfloor2
 x 18
 y 2
@@ -1304,6 +1284,17 @@ x 18
 y 3
 end
 arch woodwall_1_3
+x 18
+y 3
+end
+arch magic_mouth
+msg
+The key opens the door.
+endmsg
+connected 10
+walk_on 0
+fly_on 0
+food 1
 x 18
 y 3
 end
@@ -1353,6 +1344,10 @@ arch table_4
 x 19
 y 1
 end
+arch claypipe
+x 19
+y 1
+end
 arch woodfloor2
 x 19
 y 2
@@ -1373,6 +1368,7 @@ end
 arch check_inv
 slaying Hermes Key
 connected 10
+last_heal 1
 x 19
 y 4
 end
@@ -1436,10 +1432,6 @@ x 20
 y 4
 end
 arch brazier
-x 20
-y 4
-end
-arch light3
 x 20
 y 4
 end

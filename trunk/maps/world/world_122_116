@@ -1189,10 +1189,6 @@ arch cobblestones2
 x 4
 y 43
 end
-arch light4
-x 4
-y 43
-end
 arch grass
 x 4
 y 44
@@ -2204,6 +2200,10 @@ x 8
 y 41
 end
 arch grass
+x 8
+y 42
+end
+arch lamppost
 x 8
 y 42
 end
@@ -3256,6 +3256,10 @@ arch brush
 x 12
 y 41
 end
+arch lamppost
+x 12
+y 41
+end
 arch grass
 x 12
 y 42
@@ -3524,10 +3528,6 @@ arch cobblestones2
 x 13
 y 41
 end
-arch light4
-x 13
-y 41
-end
 arch cobblestones2
 x 13
 y 42
@@ -3544,11 +3544,11 @@ arch grass
 x 13
 y 45
 end
-arch cobblestones2
+arch lamppost
 x 13
-y 46
+y 45
 end
-arch light4
+arch cobblestones2
 x 13
 y 46
 end
