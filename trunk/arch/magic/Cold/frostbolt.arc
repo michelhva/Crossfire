@@ -1,14 +1,22 @@
 Object frostbolt
 type 12
-face icestorm.111
+face frostbolt.111
 anim
-icestorm.111
-icestorm.112
-icestorm.113
+frostbolt.111
+frostbolt.111
+frostbolt.121
+frostbolt.131
+frostbolt.141
+frostbolt.151
+frostbolt.161
+frostbolt.171
+frostbolt.181
 mina
 color_fg light_blue
 color_bg white
 flying 1
+is_animated 0
+is_turnable 1
 attacktype 18
 speed 1
 dam 4

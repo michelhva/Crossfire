@@ -1,14 +1,21 @@
 Object firebolt
 type 12
-face fireball.111
+face firebolt.111
 anim
-fireball.111
-fireball.112
-fireball.113
-fireball.112
+firebolt.111
+firebolt.111
+firebolt.121
+firebolt.131
+firebolt.141
+firebolt.151
+firebolt.161
+firebolt.171
+firebolt.181
 mina
 color_fg red
 color_bg khaki
+is_animated 0
+is_turnable 1
 flying 1
 attacktype 6
 speed 1
