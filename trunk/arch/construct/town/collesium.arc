@@ -1,6 +1,6 @@
 Object collesium
 name collesium
-face collesium.111
+face collesium.x11
 type 66
 no_pick 1
 editable 2
@@ -8,7 +8,7 @@ end
 More
 Object collesium_2
 name collesium
-face collesium.211
+face collesium.x11
 type 66
 no_pick 1
 x 1
@@ -16,7 +16,7 @@ end
 More
 Object collesium_3
 name collesium
-face collesium.311
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -25,7 +25,7 @@ end
 More
 Object collesium_4
 name collesium
-face collesium.411
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -34,7 +34,7 @@ end
 More
 Object collesium_5
 name collesium
-face collesium.511
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -43,7 +43,7 @@ end
 More
 Object collesium_6
 name collesium
-face collesium.611
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -52,7 +52,7 @@ end
 More
 Object collesium_7
 name collesium
-face collesium.711
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -62,7 +62,7 @@ end
 More
 Object collesium_8
 name collesium
-face collesium.811
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -72,7 +72,7 @@ end
 More
 Object collesium_9
 name collesium
-face collesium.911
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -82,7 +82,7 @@ end
 More
 Object collesium_10
 name collesium
-face collesium.A11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -92,7 +92,7 @@ end
 More
 Object collesium_11
 name collesium
-face collesium.B11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -101,7 +101,7 @@ end
 More
 Object collesium_12
 name collesium
-face collesium.C11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -111,7 +111,7 @@ end
 More
 Object collesium_13
 name collesium
-face collesium.D11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -121,7 +121,7 @@ end
 More
 Object collesium_14
 name collesium
-face collesium.E11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -131,7 +131,7 @@ end
 More
 Object collesium_15
 name collesium
-face collesium.F11
+face collesium.x11
 type 66
 no_pick 1
 visibility 100

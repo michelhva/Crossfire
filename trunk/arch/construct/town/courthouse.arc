@@ -1,5 +1,5 @@
 Object courthouse
-face courthouse.111
+face courthouse.x11
 type 66
 no_pick 1
 no_pass 1
@@ -10,7 +10,7 @@ end
 More
 Object courthouse_2
 name courthouse
-face courthouse.211
+face courthouse.x11
 type 66
 no_pick 1
 no_pass 1
@@ -21,7 +21,7 @@ end
 More
 Object courthouse_3
 name courthouse
-face courthouse.311
+face courthouse.x11
 type 66
 no_pick 1
 y 1
@@ -31,7 +31,7 @@ end
 More
 Object courthouse_4
 name courthouse
-face courthouse.411
+face courthouse.x11
 type 66
 no_pick 1
 x 1
