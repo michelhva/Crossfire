@@ -17,6 +17,7 @@ pl_half_orc.151
 pl_half_orc.131
 pl_half_orc.111
 pl_half_orc.171
+facings 4
 mina
 is_animated 0
 no_pick 1

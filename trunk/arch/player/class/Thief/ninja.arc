@@ -7,6 +7,7 @@ ninja.111
 ninja.131
 ninja.151
 ninja.171
+facings 4
 mina
 is_animated 0
 type 37

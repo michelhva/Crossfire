@@ -8,6 +8,7 @@ priestnew.111
 priestnew.131
 priestnew.151
 priestnew.171
+facings 4
 mina
 is_animated 0
 Str -2

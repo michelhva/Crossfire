@@ -7,6 +7,7 @@ sorcerer.111
 sorcerer.131
 sorcerer.151
 sorcerer.171
+facings 4
 mina
 is_animated 0
 type 37

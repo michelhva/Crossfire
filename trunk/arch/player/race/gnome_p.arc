@@ -28,6 +28,7 @@ gnome_p.111
 gnome_p.131
 gnome_p.151
 gnome_p.171
+facings 4
 mina
 is_animated 0
 type 1
