@@ -20,7 +20,6 @@ Pow 30
 path_attuned 18432
 path_repelled 64
 resist_fire 30
-
 ac -10
 wc -6
 dam 50

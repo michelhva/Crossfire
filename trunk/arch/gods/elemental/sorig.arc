@@ -16,9 +16,6 @@ monster 1
 alive 1
 attacktype 8
 resist_electricity 100
-
-resist_electricity 30
-
 path_attuned 131096
 path_repelled 256
 path_denied 66561

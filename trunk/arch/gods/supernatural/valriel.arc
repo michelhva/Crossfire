@@ -21,10 +21,6 @@ path_attuned 1025
 path_denied 393216
 resist_confusion 100
 resist_fear 100
-
-resist_confusion 30
-resist_fear 30
-
 ac -7
 wc -1
 hp 350
