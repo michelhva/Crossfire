@@ -3867,23 +3867,6 @@ arch key2
 slaying ElectricLordKey
 end
 end
-More
-arch dragonman_2
-name Blue Dragonlord
-Int 5
-hp 7000
-maxhp 7000
-maxsp 50
-exp 200000
-dam 40
-wc -12
-ac -15
-x 10
-y 3
-level 30
-resist_magic 30
-resist_electricity 100
-end
 arch big_elec
 name Ancient Blue Dragon
 hp 7000
@@ -3893,71 +3876,6 @@ dam 40
 ac -15
 x 17
 y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 18
-y 7
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 18
-y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 9
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 18
-y 9
 speed -0.500000
 level 25
 end
@@ -3973,71 +3891,6 @@ y 2
 speed -0.500000
 level 25
 end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 21
-y 2
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 3
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 21
-y 3
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 4
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 21
-y 4
-speed -0.500000
-level 25
-end
 arch big_elec
 name Ancient Blue Dragon
 hp 7000
@@ -4047,71 +3900,6 @@ dam 40
 ac -15
 x 23
 y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 9
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 9
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 10
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 24
-y 10
 speed -0.500000
 level 25
 end
@@ -4127,71 +3915,6 @@ y 4
 speed -0.500000
 level 25
 end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 4
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 27
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 5
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 27
-y 6
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 6
-speed -0.500000
-level 25
-end
 arch big_elec
 name Ancient Blue Dragon
 hp 7000
@@ -4201,71 +3924,6 @@ dam 40
 ac -15
 x 28
 y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_2
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 29
-y 8
-speed -0.500000
-level 25
-end
-More
-arch big_elec_3
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 9
-speed -0.500000
-level 25
-end
-More
-arch big_elec_4
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 29
-y 9
-speed -0.500000
-level 25
-end
-More
-arch big_elec_5
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 10
-speed -0.500000
-level 25
-end
-More
-arch big_elec_6
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 29
-y 10
 speed -0.500000
 level 25
 end

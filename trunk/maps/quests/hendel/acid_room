@@ -6278,45 +6278,20 @@ arch giant
 x 3
 y 35
 end
-More
-arch giant_2
-x 3
-y 36
-end
 arch giant
 x 4
 y 36
 end
-More
-arch giant_2
-x 4
-y 37
-end
 arch dragon
 x 5
-y 32
-end
-More
-arch dragon_2
-x 6
 y 32
 end
 arch giant
 x 5
 y 35
 end
-More
-arch giant_2
-x 5
-y 36
-end
 arch dragon
 x 6
-y 31
-end
-More
-arch dragon_2
-x 7
 y 31
 end
 arch big_dragon
@@ -6340,153 +6315,23 @@ arch key2
 slaying set_individual_value ACID5
 end
 end
-More
-arch big_dragon_2
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-dam 25
-x 9
-y 6
-resist_magic -100
-resist_cold 30
-resist_confusion -100
-resist_poison -100
-can_cast_spell 1
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-end
-More
-arch big_dragon_3
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-dam 25
-x 10
-y 6
-resist_magic -100
-resist_cold 30
-resist_confusion -100
-resist_poison -100
-can_cast_spell 1
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-end
-More
-arch big_dragon_4
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-dam 25
-x 8
-y 7
-resist_magic -100
-resist_cold 30
-resist_confusion -100
-resist_poison -100
-can_cast_spell 1
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-end
-More
-arch big_dragon_5
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-dam 25
-x 9
-y 7
-resist_magic -100
-resist_cold 30
-resist_confusion -100
-resist_poison -100
-can_cast_spell 1
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-end
-More
-arch big_dragon_6
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-dam 25
-x 10
-y 7
-resist_magic -100
-resist_cold 30
-resist_confusion -100
-resist_poison -100
-can_cast_spell 1
-can_use_scroll 1
-can_use_wand 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-end
 arch dragon
 x 13
 y 31
 end
-More
-arch dragon_2
-x 14
-y 31
-end
 arch dragon
 x 14
 y 32
 end
-More
-arch dragon_2
-x 15
-y 32
-end
 arch giant
 x 15
 y 35
-end
-More
-arch giant_2
-x 15
-y 36
 end
 arch giant
 x 16
 y 36
 end
-More
-arch giant_2
-x 16
-y 37
-end
 arch giant
 x 17
 y 35
-end
-More
-arch giant_2
-x 17
-y 36
 end

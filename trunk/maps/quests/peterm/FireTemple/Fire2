@@ -7536,61 +7536,6 @@ arch big_demon
 x 3
 y 1
 end
-More
-arch big_demon_2
-x 4
-y 1
-end
-More
-arch big_demon_3
-x 5
-y 1
-end
-More
-arch big_demon_4
-x 3
-y 2
-end
-More
-arch big_demon_5
-x 4
-y 2
-end
-More
-arch big_demon_6
-x 5
-y 2
-end
-More
-arch big_demon_7
-x 3
-y 3
-end
-More
-arch big_demon_8
-x 4
-y 3
-end
-More
-arch big_demon_9
-x 5
-y 3
-end
-More
-arch big_demon_A
-x 3
-y 4
-end
-More
-arch big_demon_B
-x 4
-y 4
-end
-More
-arch big_demon_C
-x 5
-y 4
-end
 arch dragonman
 name lesser dragonman
 Con 5
@@ -7608,108 +7553,21 @@ level 6
 resist_magic 30
 randomitems wyvern
 end
-More
-arch dragonman_2
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-x 3
-y 16
-speed -0.200000
-level 6
-resist_magic 30
-resist_fire 100
-randomitems wyvern
-end
 arch dragon
 x 4
-y 21
-end
-More
-arch dragon_2
-x 5
 y 21
 end
 arch dragon
 x 4
 y 22
 end
-More
-arch dragon_2
-x 5
-y 22
-end
 arch dragon
 x 4
-y 23
-end
-More
-arch dragon_2
-x 5
 y 23
 end
 arch big_demon
 x 6
 y 2
-end
-More
-arch big_demon_2
-x 7
-y 2
-end
-More
-arch big_demon_3
-x 8
-y 2
-end
-More
-arch big_demon_4
-x 6
-y 3
-end
-More
-arch big_demon_5
-x 7
-y 3
-end
-More
-arch big_demon_6
-x 8
-y 3
-end
-More
-arch big_demon_7
-x 6
-y 4
-end
-More
-arch big_demon_8
-x 7
-y 4
-end
-More
-arch big_demon_9
-x 8
-y 4
-end
-More
-arch big_demon_A
-x 6
-y 5
-end
-More
-arch big_demon_B
-x 7
-y 5
-end
-More
-arch big_demon_C
-x 8
-y 5
 end
 arch dragonman
 name lesser dragonman
@@ -7728,140 +7586,13 @@ level 6
 resist_magic 30
 randomitems wyvern
 end
-More
-arch dragonman_2
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-x 9
-y 16
-speed -0.200000
-level 6
-resist_magic 30
-resist_fire 100
-randomitems wyvern
-end
 arch big_demon
 x 10
 y 2
 end
-More
-arch big_demon_2
-x 11
-y 2
-end
-More
-arch big_demon_3
-x 12
-y 2
-end
-More
-arch big_demon_4
-x 10
-y 3
-end
-More
-arch big_demon_5
-x 11
-y 3
-end
-More
-arch big_demon_6
-x 12
-y 3
-end
-More
-arch big_demon_7
-x 10
-y 4
-end
-More
-arch big_demon_8
-x 11
-y 4
-end
-More
-arch big_demon_9
-x 12
-y 4
-end
-More
-arch big_demon_A
-x 10
-y 5
-end
-More
-arch big_demon_B
-x 11
-y 5
-end
-More
-arch big_demon_C
-x 12
-y 5
-end
 arch big_demon
 x 15
 y 2
-end
-More
-arch big_demon_2
-x 16
-y 2
-end
-More
-arch big_demon_3
-x 17
-y 2
-end
-More
-arch big_demon_4
-x 15
-y 3
-end
-More
-arch big_demon_5
-x 16
-y 3
-end
-More
-arch big_demon_6
-x 17
-y 3
-end
-More
-arch big_demon_7
-x 15
-y 4
-end
-More
-arch big_demon_8
-x 16
-y 4
-end
-More
-arch big_demon_9
-x 17
-y 4
-end
-More
-arch big_demon_A
-x 15
-y 5
-end
-More
-arch big_demon_B
-x 16
-y 5
-end
-More
-arch big_demon_C
-x 17
-y 5
 end
 arch dragonman
 name lesser dragonman
@@ -7880,111 +7611,14 @@ level 6
 resist_magic 30
 randomitems wyvern
 end
-More
-arch dragonman_2
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-x 18
-y 16
-speed -0.200000
-level 6
-resist_magic 30
-resist_fire 100
-randomitems wyvern
-end
 arch big_demon
 x 19
 y 2
-end
-More
-arch big_demon_2
-x 20
-y 2
-end
-More
-arch big_demon_3
-x 21
-y 2
-end
-More
-arch big_demon_4
-x 19
-y 3
-end
-More
-arch big_demon_5
-x 20
-y 3
-end
-More
-arch big_demon_6
-x 21
-y 3
-end
-More
-arch big_demon_7
-x 19
-y 4
-end
-More
-arch big_demon_8
-x 20
-y 4
-end
-More
-arch big_demon_9
-x 21
-y 4
-end
-More
-arch big_demon_A
-x 19
-y 5
-end
-More
-arch big_demon_B
-x 20
-y 5
-end
-More
-arch big_demon_C
-x 21
-y 5
 end
 arch big_dragon
 x 23
 y 2
 end
-More
-arch big_dragon_2
-x 24
-y 2
-end
-More
-arch big_dragon_3
-x 25
-y 2
-end
-More
-arch big_dragon_4
-x 23
-y 3
-end
-More
-arch big_dragon_5
-x 24
-y 3
-end
-More
-arch big_dragon_6
-x 25
-y 3
-end
 arch dragonman
 name lesser dragonman
 Con 5
@@ -8000,22 +7634,5 @@ y 15
 speed -0.200000
 level 6
 resist_magic 30
-randomitems wyvern
-end
-More
-arch dragonman_2
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-x 25
-y 16
-speed -0.200000
-level 6
-resist_magic 30
-resist_fire 100
 randomitems wyvern
 end

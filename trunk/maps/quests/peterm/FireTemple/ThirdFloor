@@ -5846,71 +5846,6 @@ resist_fire 100
 resist_electricity 30
 randomitems Balrog
 end
-More
-arch gaelotroll_2
-name DemonProf
-race demon
-hp 3000
-maxhp 3000
-exp 30000
-x 11
-y 1
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-end
-More
-arch gaelotroll_3
-name DemonProf
-race demon
-hp 3000
-maxhp 3000
-exp 30000
-x 10
-y 2
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-end
-More
-arch gaelotroll_4
-name DemonProf
-race demon
-hp 3000
-maxhp 3000
-exp 30000
-x 11
-y 2
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-end
-More
-arch gaelotroll_5
-name DemonProf
-race demon
-hp 3000
-maxhp 3000
-exp 30000
-x 10
-y 3
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-end
-More
-arch gaelotroll_6
-name DemonProf
-race demon
-hp 3000
-maxhp 3000
-exp 30000
-x 11
-y 3
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-end
 arch shadowtiger
 name Demon Tiger
 race demon
@@ -5924,39 +5859,6 @@ randomitems rich_old
 arch key2
 slaying door34
 end
-end
-More
-arch shadowtiger_2
-name Demon Tiger
-race demon
-hp 2000
-exp 20000
-x 13
-y 8
-speed 0.200000
-resist_fire 100
-end
-More
-arch shadowtiger_3
-name Demon Tiger
-race demon
-hp 2000
-exp 20000
-x 12
-y 9
-speed 0.200000
-resist_fire 100
-end
-More
-arch shadowtiger_4
-name Demon Tiger
-race demon
-hp 2000
-exp 20000
-x 13
-y 9
-speed 0.200000
-resist_fire 100
 end
 arch dragonman
 name Deformed demon
@@ -5973,19 +5875,6 @@ carrying 100
 arch key2
 slaying door31
 end
-end
-More
-arch dragonman_2
-name Deformed demon
-race demon
-Con 5
-hp 1000
-maxhp 1000
-exp 10000
-x 12
-y 23
-speed 0.100000
-randomitems rich_old
 end
 arch troll
 name demon troll
@@ -6009,31 +5898,4 @@ this floor
 endmsg
 material 256
 end
-end
-More
-arch troll_2
-name demon troll
-race demon
-hp 1000
-x 18
-y 28
-resist_fire 100
-end
-More
-arch troll_3
-name demon troll
-race demon
-hp 1000
-x 17
-y 29
-resist_fire 100
-end
-More
-arch troll_4
-name demon troll
-race demon
-hp 1000
-x 18
-y 29
-resist_fire 100
 end

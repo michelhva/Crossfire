@@ -8104,46 +8104,6 @@ arch titan
 x 5
 y 15
 end
-More
-arch titan_2
-x 4
-y 15
-end
-More
-arch titan_3
-x 4
-y 14
-end
-More
-arch titan_4
-x 5
-y 14
-end
-More
-arch titan_5
-x 6
-y 14
-end
-More
-arch titan_6
-x 6
-y 15
-end
-More
-arch titan_7
-x 6
-y 16
-end
-More
-arch titan_8
-x 5
-y 16
-end
-More
-arch titan_9
-x 4
-y 16
-end
 arch cyclops
 x 5
 y 18
@@ -8151,36 +8111,6 @@ carrying 100
 arch key2
 slaying tdoor1
 end
-end
-More
-arch cyclops_2
-hp 8000
-x 6
-y 18
-end
-More
-arch cyclops_3
-hp 8000
-x 5
-y 19
-end
-More
-arch cyclops_4
-hp 8000
-x 6
-y 19
-end
-More
-arch cyclops_5
-hp 8000
-x 5
-y 20
-end
-More
-arch cyclops_6
-hp 8000
-x 6
-y 20
 end
 arch titan
 x 8
@@ -8190,272 +8120,29 @@ arch key2
 slaying tdoor2
 end
 end
-More
-arch titan_2
-hp 4000
-x 7
-y 14
-end
-More
-arch titan_3
-hp 4000
-x 7
-y 13
-end
-More
-arch titan_4
-hp 4000
-x 8
-y 13
-end
-More
-arch titan_5
-hp 4000
-x 9
-y 13
-end
-More
-arch titan_6
-hp 4000
-x 9
-y 14
-end
-More
-arch titan_7
-hp 4000
-x 9
-y 15
-end
-More
-arch titan_8
-hp 4000
-x 8
-y 15
-end
-More
-arch titan_9
-hp 4000
-x 7
-y 15
-end
 arch titan
 x 8
 y 17
-end
-More
-arch titan_2
-x 7
-y 17
-end
-More
-arch titan_3
-x 7
-y 16
-end
-More
-arch titan_4
-x 8
-y 16
-end
-More
-arch titan_5
-x 9
-y 16
-end
-More
-arch titan_6
-x 9
-y 17
-end
-More
-arch titan_7
-x 9
-y 18
-end
-More
-arch titan_8
-x 8
-y 18
-end
-More
-arch titan_9
-x 7
-y 18
 end
 arch cyclops
 x 15
 y 5
 end
-More
-arch cyclops_2
-x 16
-y 5
-end
-More
-arch cyclops_3
-x 15
-y 6
-end
-More
-arch cyclops_4
-x 16
-y 6
-end
-More
-arch cyclops_5
-x 15
-y 7
-end
-More
-arch cyclops_6
-x 16
-y 7
-end
 arch cyclops
 x 15
 y 8
-end
-More
-arch cyclops_2
-x 16
-y 8
-end
-More
-arch cyclops_3
-x 15
-y 9
-end
-More
-arch cyclops_4
-x 16
-y 9
-end
-More
-arch cyclops_5
-x 15
-y 10
-end
-More
-arch cyclops_6
-x 16
-y 10
 end
 arch cyclops
 x 15
 y 14
 end
-More
-arch cyclops_2
-x 16
-y 14
-end
-More
-arch cyclops_3
-x 15
-y 15
-end
-More
-arch cyclops_4
-x 16
-y 15
-end
-More
-arch cyclops_5
-x 15
-y 16
-end
-More
-arch cyclops_6
-x 16
-y 16
-end
 arch titan
 x 16
 y 18
 end
-More
-arch titan_2
-x 15
-y 18
-end
-More
-arch titan_3
-x 15
-y 17
-end
-More
-arch titan_4
-x 16
-y 17
-end
-More
-arch titan_5
-x 17
-y 17
-end
-More
-arch titan_6
-x 17
-y 18
-end
-More
-arch titan_7
-x 17
-y 19
-end
-More
-arch titan_8
-x 16
-y 19
-end
-More
-arch titan_9
-x 15
-y 19
-end
 arch titan
 x 16
 y 22
-end
-More
-arch titan_2
-x 15
-y 22
-end
-More
-arch titan_3
-x 15
-y 21
-end
-More
-arch titan_4
-x 16
-y 21
-end
-More
-arch titan_5
-x 17
-y 21
-end
-More
-arch titan_6
-x 17
-y 22
-end
-More
-arch titan_7
-x 17
-y 23
-end
-More
-arch titan_8
-x 16
-y 23
-end
-More
-arch titan_9
-x 15
-y 23
 end
 arch titan
 name Meganthropopulos
@@ -8470,456 +8157,49 @@ name Meganthropopulos' Crown
 material 0
 end
 end
-More
-arch titan_2
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 15
-y 28
-end
-More
-arch titan_3
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 15
-y 27
-end
-More
-arch titan_4
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 16
-y 27
-end
-More
-arch titan_5
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 17
-y 27
-end
-More
-arch titan_6
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 17
-y 28
-end
-More
-arch titan_7
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 17
-y 29
-end
-More
-arch titan_8
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 16
-y 29
-end
-More
-arch titan_9
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 15
-y 29
-end
 arch titan
 x 18
 y 8
-end
-More
-arch titan_2
-x 17
-y 8
-end
-More
-arch titan_3
-x 17
-y 7
-end
-More
-arch titan_4
-x 18
-y 7
-end
-More
-arch titan_5
-x 19
-y 7
-end
-More
-arch titan_6
-x 19
-y 8
-end
-More
-arch titan_7
-x 19
-y 9
-end
-More
-arch titan_8
-x 18
-y 9
-end
-More
-arch titan_9
-x 17
-y 9
 end
 arch cyclops
 x 18
 y 14
 end
-More
-arch cyclops_2
-x 19
-y 14
-end
-More
-arch cyclops_3
-x 18
-y 15
-end
-More
-arch cyclops_4
-x 19
-y 15
-end
-More
-arch cyclops_5
-x 18
-y 16
-end
-More
-arch cyclops_6
-x 19
-y 16
-end
 arch cyclops
 x 18
 y 18
 end
-More
-arch cyclops_2
-x 19
-y 18
-end
-More
-arch cyclops_3
-x 18
-y 19
-end
-More
-arch cyclops_4
-x 19
-y 19
-end
-More
-arch cyclops_5
-x 18
-y 20
-end
-More
-arch cyclops_6
-x 19
-y 20
-end
 arch cyclops
 x 18
 y 22
-end
-More
-arch cyclops_2
-x 19
-y 22
-end
-More
-arch cyclops_3
-x 18
-y 23
-end
-More
-arch cyclops_4
-x 19
-y 23
-end
-More
-arch cyclops_5
-x 18
-y 24
-end
-More
-arch cyclops_6
-x 19
-y 24
 end
 arch titan
 x 20
 y 5
 end
-More
-arch titan_2
-x 19
-y 5
-end
-More
-arch titan_3
-x 19
-y 4
-end
-More
-arch titan_4
-x 20
-y 4
-end
-More
-arch titan_5
-x 21
-y 4
-end
-More
-arch titan_6
-x 21
-y 5
-end
-More
-arch titan_7
-x 21
-y 6
-end
-More
-arch titan_8
-x 20
-y 6
-end
-More
-arch titan_9
-x 19
-y 6
-end
 arch cyclops
 x 20
 y 8
-end
-More
-arch cyclops_2
-x 21
-y 8
-end
-More
-arch cyclops_3
-x 20
-y 9
-end
-More
-arch cyclops_4
-x 21
-y 9
-end
-More
-arch cyclops_5
-x 20
-y 10
-end
-More
-arch cyclops_6
-x 21
-y 10
 end
 arch cyclops
 x 20
 y 15
 end
-More
-arch cyclops_2
-x 21
-y 15
-end
-More
-arch cyclops_3
-x 20
-y 16
-end
-More
-arch cyclops_4
-x 21
-y 16
-end
-More
-arch cyclops_5
-x 20
-y 17
-end
-More
-arch cyclops_6
-x 21
-y 17
-end
 arch cyclops
 x 20
 y 20
-end
-More
-arch cyclops_2
-x 21
-y 20
-end
-More
-arch cyclops_3
-x 20
-y 21
-end
-More
-arch cyclops_4
-x 21
-y 21
-end
-More
-arch cyclops_5
-x 20
-y 22
-end
-More
-arch cyclops_6
-x 21
-y 22
 end
 arch cyclops
 x 20
 y 26
 end
-More
-arch cyclops_2
-x 21
-y 26
-end
-More
-arch cyclops_3
-x 20
-y 27
-end
-More
-arch cyclops_4
-x 21
-y 27
-end
-More
-arch cyclops_5
-x 20
-y 28
-end
-More
-arch cyclops_6
-x 21
-y 28
-end
 arch titan
 x 28
 y 19
 end
-More
-arch titan_2
-x 27
-y 19
-end
-More
-arch titan_3
-x 27
-y 18
-end
-More
-arch titan_4
-x 28
-y 18
-end
-More
-arch titan_5
-x 29
-y 18
-end
-More
-arch titan_6
-x 29
-y 19
-end
-More
-arch titan_7
-x 29
-y 20
-end
-More
-arch titan_8
-x 28
-y 20
-end
-More
-arch titan_9
-x 27
-y 20
-end
 arch titan
 x 29
 y 14
-end
-More
-arch titan_2
-x 28
-y 14
-end
-More
-arch titan_3
-x 28
-y 13
-end
-More
-arch titan_4
-x 29
-y 13
-end
-More
-arch titan_5
-x 30
-y 13
-end
-More
-arch titan_6
-x 30
-y 14
-end
-More
-arch titan_7
-x 30
-y 15
-end
-More
-arch titan_8
-x 29
-y 15
-end
-More
-arch titan_9
-x 28
-y 15
 end
 arch cyclops
 x 30
@@ -8929,79 +8209,9 @@ arch key2
 slaying tdoor3
 end
 end
-More
-arch cyclops_2
-hp 8000
-x 31
-y 16
-end
-More
-arch cyclops_3
-hp 8000
-x 30
-y 17
-end
-More
-arch cyclops_4
-hp 8000
-x 31
-y 17
-end
-More
-arch cyclops_5
-hp 8000
-x 30
-y 18
-end
-More
-arch cyclops_6
-hp 8000
-x 31
-y 18
-end
 arch titan
 x 32
 y 14
-end
-More
-arch titan_2
-x 31
-y 14
-end
-More
-arch titan_3
-x 31
-y 13
-end
-More
-arch titan_4
-x 32
-y 13
-end
-More
-arch titan_5
-x 33
-y 13
-end
-More
-arch titan_6
-x 33
-y 14
-end
-More
-arch titan_7
-x 33
-y 15
-end
-More
-arch titan_8
-x 32
-y 15
-end
-More
-arch titan_9
-x 31
-y 15
 end
 arch cyclops
 x 32
@@ -9010,34 +8220,4 @@ carrying 100
 arch key2
 slaying tdoor4
 end
-end
-More
-arch cyclops_2
-hp 8000
-x 33
-y 19
-end
-More
-arch cyclops_3
-hp 8000
-x 32
-y 20
-end
-More
-arch cyclops_4
-hp 8000
-x 33
-y 20
-end
-More
-arch cyclops_5
-hp 8000
-x 32
-y 21
-end
-More
-arch cyclops_6
-hp 8000
-x 33
-y 21
 end

@@ -2906,23 +2906,6 @@ arch key2
 slaying IceDragonKey
 end
 end
-More
-arch dragonman_2
-name Ice Dragonmaster
-Int 7
-hp 5500
-maxhp 5500
-maxsp 70
-exp 200000
-dam 20
-x 3
-y 22
-level 25
-attacktype 17
-resist_magic 30
-resist_fire -100
-resist_cold 100
-end
 arch chinese_dragon
 name Ancient dragon
 hp 4000
@@ -2933,48 +2916,6 @@ dam 30
 ac -12
 x 4
 y 4
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_2
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 5
-y 4
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_3
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 4
-y 5
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_4
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 5
-y 5
 speed -0.300000
 level 20
 end
@@ -2991,48 +2932,6 @@ y 15
 speed -0.300000
 level 20
 end
-More
-arch chinese_dragon_2
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 5
-y 15
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_3
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 4
-y 16
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_4
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 5
-y 16
-speed -0.300000
-level 20
-end
 arch chinese_dragon
 name Ancient dragon
 hp 4000
@@ -3043,48 +2942,6 @@ dam 30
 ac -12
 x 10
 y 10
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_2
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 11
-y 10
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_3
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 10
-y 11
-speed -0.300000
-level 20
-end
-More
-arch chinese_dragon_4
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 11
-y 11
 speed -0.300000
 level 20
 end
