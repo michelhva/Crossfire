@@ -13,6 +13,7 @@ mina
 is_animated 0
 type 1
 level 1
+undead 1
 ac 6
 wc 21
 dam 1
@@ -24,10 +25,10 @@ can_use_weapon 1
 attacktype 17
 vulnerable 4
 immune 1664
-protected 17
-Str -4
+protected 16
+Str -3
 Dex 4
-Con -4
+Con -3
 Wis -3
 Int 2
 Pow 3
