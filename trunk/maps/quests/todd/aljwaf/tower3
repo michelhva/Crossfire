@@ -211,25 +211,6 @@ arch cobblestones
 x 2
 y 3
 end
-arch dog
-name Coyote
-exp 200
-attacktype 1
-wc 5
-hp 40
-maxhp 40
-ac 1
-can_cast_spell 1
-sp 10
-maxsp 10
-Pow 2
-Wis 10
-x 2
-y 3
-arch ability_slow
-hp 7
-end
-end
 arch cobblestones
 x 2
 y 4
@@ -288,6 +269,25 @@ end
 arch cobblestones
 x 3
 y 3
+end
+arch dog
+name Coyote
+randomitems wolf
+exp 200
+attacktype 1
+wc 5
+hp 40
+maxhp 40
+ac 1
+can_cast_spell 1
+sp 10
+maxsp 10
+Pow 2
+Wis 10
+x 3
+y 3
+arch abil_slow
+end
 end
 arch cobblestones
 x 3
@@ -434,6 +434,7 @@ y 3
 end
 arch dog
 name Coyote
+randomitems wolf
 exp 200
 attacktype 1
 wc 5
@@ -447,8 +448,7 @@ Pow 2
 Wis 10
 x 5
 y 3
-arch ability_slow
-hp 7
+arch abil_slow
 end
 end
 arch cobblestones
@@ -477,6 +477,7 @@ y 9
 end
 arch dog
 name Coyote Prince
+randomitems wolf
 level 9
 exp 480
 attacktype 3
@@ -496,18 +497,9 @@ resist_physical 25
 resist_magic 25
 x 5
 y 9
-arch ability_mass_confusion
-maxsp 3
-arch heart
-name coyote heart
-value 2200
-level 9
-resist_magic 25
-resist_fire 50
+arch spell_mass_confusion
 end
-arch ability_invisible
-hp 7
-end
+arch abil_slow
 end
 end
 arch cobblestones
@@ -701,6 +693,7 @@ y 2
 end
 arch dog
 name Coyote
+randomitems wolf
 exp 200
 attacktype 1
 wc 5
@@ -714,8 +707,7 @@ Pow 2
 Wis 10
 x 8
 y 2
-arch ability_slow
-hp 7
+arch abil_slow
 end
 end
 arch cobblestones
@@ -816,6 +808,7 @@ y 4
 end
 arch dog
 name Coyote
+randomitems wolf
 exp 200
 attacktype 1
 wc 5
@@ -829,8 +822,7 @@ Pow 2
 Wis 10
 x 9
 y 4
-arch ability_slow
-hp 7
+arch abil_slow
 end
 end
 arch cobblestones

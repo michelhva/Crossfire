@@ -491,13 +491,16 @@ x 6
 y 6
 end
 arch firewall
-no_pick 1
-dam 192
+dam 0
 level 12
 speed -0.01
 alive 0
+no_pick 1
 x 6
 y 6
+arch spell_spiderweb
+level 12
+end
 end
 arch statue
 name Spider Idol
