@@ -92,40 +92,57 @@ arch woodfloor2
 x 1
 y 3
 end
-arch barrel
-x 1
-y 3
-end
-arch woodfloor2
-x 1
-y 4
-end
-arch barrel
-x 1
-y 4
-end
-arch woodfloor2
-x 1
-y 5
-end
-arch barrel
-x 1
-y 5
-end
-arch woodfloor2
-x 1
-y 6
-end
 arch longtable_1_4
 no_pass 1
 x 1
+y 3
+end
+arch woodfloor2
+x 1
+y 4
+end
+arch chair_1.1
+x 1
+y 4
+end
+arch woodfloor2
+x 1
+y 5
+end
+arch table_3
+x 1
+y 5
+end
+arch woodfloor2
+x 1
+y 6
+end
+arch chair_1.3
+x 1
 y 6
 end
 arch woodfloor2
 x 1
 y 7
 end
+arch chair_1.1
+x 1
+y 7
+end
+arch woman
+msg
+@match *
+Mmmmm, mountain grown.
+endmsg
+stand_still 1
+x 1
+y 7
+end
 arch woodfloor2
+x 1
+y 8
+end
+arch table_3
 x 1
 y 8
 end
@@ -163,7 +180,8 @@ arch woodfloor2
 x 2
 y 3
 end
-arch barrel
+arch longtable_2_1_2
+no_pass 1
 x 2
 y 3
 end
@@ -171,24 +189,11 @@ arch woodfloor2
 x 2
 y 4
 end
-arch barrel
-x 2
-y 4
-end
 arch woodfloor2
 x 2
 y 5
 end
-arch barrel
-x 2
-y 5
-end
 arch woodfloor2
-x 2
-y 6
-end
-arch longtable_2_1_2
-no_pass 1
 x 2
 y 6
 end
@@ -197,6 +202,10 @@ x 2
 y 7
 end
 arch woodfloor2
+x 2
+y 8
+end
+arch chair_1.2
 x 2
 y 8
 end
@@ -234,7 +243,8 @@ arch woodfloor2
 x 3
 y 3
 end
-arch barrel
+arch longtable_2_2_3
+no_pass 1
 x 3
 y 3
 end
@@ -242,7 +252,8 @@ arch woodfloor2
 x 3
 y 4
 end
-arch chair
+arch longtable_2_2_1
+no_pass 1
 x 3
 y 4
 end
@@ -250,12 +261,16 @@ arch woodfloor2
 x 3
 y 5
 end
-arch woodfloor2
+arch food_table
+name Fresh Coffee 2sp
+slaying silvercoin
+food 2
+other_arch cup of coffee
+sp 1
 x 3
-y 6
+y 5
 end
-arch longtable_2_1_2
-no_pass 1
+arch woodfloor2
 x 3
 y 6
 end
@@ -305,16 +320,16 @@ arch woodfloor2
 x 4
 y 4
 end
+arch longtable_2_1_2
+no_pass 1
+x 4
+y 4
+end
 arch woodfloor2
 x 4
 y 5
 end
 arch woodfloor2
-x 4
-y 6
-end
-arch longtable_2_1_2
-no_pass 1
 x 4
 y 6
 end
@@ -348,10 +363,6 @@ sp 1
 x 4
 y 9
 end
-arch door_2
-x 4
-y 9
-end
 arch woodfloor2
 x 5
 end
@@ -370,7 +381,37 @@ arch woodfloor2
 x 5
 y 3
 end
+arch man
+name Eswald
+msg
+@match Hello|hi
+Hello stranger.
+@match Job|job|Work|work
+I'm looking for someone to do a job for me.
+You interested?
+@match interested|what
+Pay ya 500 gold to find my goose
+@match goose|Goose
+Her name is Esmeralda, she's a special goose
+@match special
+I'm not telling, you might not bring her back...
+@match 300
+Worth every coin too.
+@match clue|lead|suspicious
+Well Oled has always been jealous of my goose...
+@match *
+Finest brew east of Navar.
+endmsg
+stand_still 1
+x 5
+y 3
+end
 arch woodfloor2
+x 5
+y 4
+end
+arch longtable_2_1_2
+no_pass 1
 x 5
 y 4
 end
@@ -378,20 +419,10 @@ arch woodfloor2
 x 5
 y 5
 end
-arch man
-name Eswald
-msg
-@match Hello|hi
-Hello stranger.
-@match new|New|starting
-I'm looking for someone to do a job for me.
-@match Job|job|Work|work
-Pay ya 300 gold to find my goose
-@match goose|Goose
-Her name is Esmeralda, she's special
-@match 300
-Worth every coin too.
-endmsg
+arch check_inv
+slaying EsmeraldaTheGoose
+connected 1
+last_heal 1
 x 5
 y 5
 end
@@ -399,19 +430,7 @@ arch woodfloor2
 x 5
 y 6
 end
-arch longtable_2_1_2
-no_pass 1
-x 5
-y 6
-end
 arch woodfloor2
-x 5
-y 7
-end
-arch check_inv
-slaying EsmeraldaTheGoose
-connected 1
-last_heal 1
 x 5
 y 7
 end
@@ -453,41 +472,35 @@ arch woodfloor2
 x 6
 y 4
 end
-arch woodfloor2
-x 6
-y 5
-end
-arch woodfloor2
-x 6
-y 6
-end
 arch magic_mouth
 msg
 You found her!  Here is your pay.
 Thanks.
 Esmeralda has the finest nose...er beak
-for coffee aroma in the kingdom.
+for coffee in the kingdom.
+Oled will be so jealous of my coffee.
 endmsg
 connected 1
 walk_on 0
 fly_on 0
 food 1
 x 6
-y 6
+y 4
 end
 arch longtable_2_1_2
 no_pass 1
 x 6
-y 6
+y 4
 end
 arch woodfloor2
 x 6
-y 7
+y 5
 end
-arch creator
-name reward
-other_arch goldcoin
-connected 1
+arch woodfloor2
+x 6
+y 6
+end
+arch woodfloor2
 x 6
 y 7
 end
@@ -506,14 +519,14 @@ end
 arch woodfloor2
 x 7
 end
-arch wwall_2_1_2
+arch wwall_2_2_3
 x 7
 end
 arch woodfloor2
 x 7
 y 1
 end
-arch barrel
+arch wwall_2_1_1
 x 7
 y 1
 end
@@ -521,7 +534,7 @@ arch woodfloor2
 x 7
 y 2
 end
-arch barrel
+arch wwall_2_2_1
 x 7
 y 2
 end
@@ -533,7 +546,8 @@ arch woodfloor2
 x 7
 y 4
 end
-arch barrel
+arch longtable_2_1_2
+no_pass 1
 x 7
 y 4
 end
@@ -541,16 +555,11 @@ arch woodfloor2
 x 7
 y 5
 end
-arch barrel
-x 7
-y 5
-end
 arch woodfloor2
 x 7
 y 6
 end
-arch longtable_2_1_2
-no_pass 1
+arch chair_1.4
 x 7
 y 6
 end
@@ -562,6 +571,10 @@ arch woodfloor2
 x 7
 y 8
 end
+arch chair_1.4
+x 7
+y 8
+end
 arch woodfloor2
 x 7
 y 9
@@ -570,59 +583,48 @@ arch wwall_2_1_2
 x 7
 y 9
 end
+arch blocked
+x 8
+end
+arch blocked
+x 8
+y 1
+end
 arch woodfloor2
 x 8
+y 2
 end
 arch wwall_2_1_2
 x 8
-end
-arch woodfloor2
-x 8
-y 1
-end
-arch barrel
-x 8
-y 1
-end
-arch woodfloor2
-x 8
-y 2
-end
-arch barrel
-x 8
 y 2
 end
 arch woodfloor2
 x 8
 y 3
 end
-arch barrel
-x 8
-y 3
-end
 arch woodfloor2
 x 8
 y 4
-end
-arch barrel
-x 8
-y 4
-end
-arch woodfloor2
-x 8
-y 5
-end
-arch barrel
-x 8
-y 5
-end
-arch woodfloor2
-x 8
-y 6
 end
 arch longtable_1_3
 no_pass 1
 x 8
+y 4
+end
+arch woodfloor2
+x 8
+y 5
+end
+arch chair_1.1
+x 8
+y 5
+end
+arch woodfloor2
+x 8
+y 6
+end
+arch table_3
+x 8
 y 6
 end
 arch woodfloor2
@@ -633,12 +635,7 @@ arch woodfloor2
 x 8
 y 8
 end
-arch food_table
-name Fresh Coffee 2sp
-slaying silvercoin
-food 2
-other_arch cup of coffee
-sp 1
+arch table_3
 x 8
 y 8
 end
@@ -650,17 +647,18 @@ arch wwall_2_1_2
 x 8
 y 9
 end
-arch woodfloor2
+arch teleporter
+hp 6
+sp 5
+connected 1
+speed 0.0
 x 9
 end
-arch wwall_2_2_3
+arch goldcoin
+nrof 500
 x 9
 end
-arch woodfloor2
-x 9
-y 1
-end
-arch wwall_2_1_1
+arch blocked
 x 9
 y 1
 end
@@ -668,7 +666,7 @@ arch woodfloor2
 x 9
 y 2
 end
-arch wwall_2_1_1
+arch wwall_2_2_3
 x 9
 y 2
 end

@@ -2277,6 +2277,28 @@ x 9
 y 28
 end
 arch man
+msg
+@match mark|Mark
+Ya that's me, bugger off I'm on a roll here.
+O 47
+@match Amy|amy
+Ya my old lady, she's kind of
+mad at me right now...
+When I hit it big she'll sing
+a different tune though.
+@match goose|Goose|Esmeralda
+Ok, ok, don't hurt me.  I took her.
+Don't turn me in, if you did
+they'd take the goose for evidence
+and then you wouldn't get the reward.
+I hid the that bird at Amy's place.
+@match key|Key|door|door
+Ok, ok, the key's hidden at Swabbie's house
+Tell Chancy 'mumblypeg' and he'll fetch it.
+@match *
+go away I'm busy.
+N 15
+endmsg
 friendly 1
 x 9
 y 28
@@ -2422,6 +2444,38 @@ x 10
 y 15
 end
 arch woodfloor
+x 10
+y 16
+end
+arch courier
+name Joey the scribe
+msg
+@match Mark|mark
+Mark loves to gamble, owes me a bunch.
+Always first in line to the bingo.
+@match joke|yes|Joke|Yes
+I never wanted to be a scribe,
+I always wanted to do stand-up.
+Did you hear the one about the Zombie and
+the princess?
+She always had a headache
+because he kept eating her brains!
+...
+...
+Hey, that's quality material buddy!
+@match job|Job|scribe|Scribe
+Ya I just rowed in from Lake Country
+and boy are my arms tired...
+Badaboom....
+no?
+That one killed them in Pupland...
+Take my wight...please.
+@match *
+Want to hear a joke?
+endmsg
+monster 0
+friendly 1
+stand_still 1
 x 10
 y 16
 end
@@ -3673,8 +3727,12 @@ x 16
 y 27
 end
 arch man
-friendly 1
+msg
+@match *
+Howdy
+endmsg
 unaggressive 0
+friendly 1
 x 16
 y 27
 end
