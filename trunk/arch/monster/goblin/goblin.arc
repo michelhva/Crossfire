@@ -19,7 +19,7 @@ dam 3
 hp 6
 maxhp 6
 level 2
-speed 0.1
+speed -0.1
 weight 50000
 run_away 10
 will_apply 2

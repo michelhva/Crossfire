@@ -5,7 +5,7 @@ race goblin
 face orc_leader.111
 anim
 orc_leader.111
-orc_leader.111
+orc_leader.112
 mina
 monster 1
 sleep 1
@@ -19,7 +19,7 @@ dam 14
 hp 16
 maxhp 16
 level 2
-speed 0.15
+speed -0.15
 weight 23000
 run_away 25
 will_apply 2

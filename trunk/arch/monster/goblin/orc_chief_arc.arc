@@ -5,7 +5,7 @@ race goblin
 face orc_chief.111
 anim
 orc_chief.111
-orc_chief.111
+orc_chief.112
 mina
 monster 1
 sleep 1
@@ -20,7 +20,7 @@ hp 24
 maxhp 24
 level 3
 resist_physical 30
-speed 0.15
+speed -0.15
 weight 23000
 run_away 25
 will_apply 2
