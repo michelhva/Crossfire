@@ -1,0 +1,1055 @@
+arch map
+name alltown
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sun May 11 12:56:52 1997
+endmsg
+x 20
+end
+arch shrine
+end
+arch barrack_small
+y 1
+end
+arch r_house2
+x 1
+end
+arch tavern
+x 1
+y 1
+end
+arch r_house1
+x 2
+end
+arch house_small
+x 2
+y 1
+end
+arch market1
+x 2
+y 4
+end
+arch s_house1
+x 3
+end
+arch house_1
+x 3
+y 1
+end
+arch market2
+x 3
+y 4
+end
+arch hovels
+x 4
+end
+arch house_2
+x 4
+y 1
+end
+arch market3
+x 4
+y 4
+end
+arch woodhouse
+x 5
+y 1
+end
+arch tower_tob
+x 5
+y 4
+end
+arch small_temple
+x 6
+end
+arch minihouse
+x 6
+y 1
+end
+arch castle
+x 6
+y 7
+end
+arch small_temple2
+x 7
+end
+arch hut
+x 7
+y 1
+end
+arch darkhold_sym
+x 7
+y 7
+end
+arch keep_sym
+x 8
+y 5
+end
+arch fort_sym
+x 8
+y 6
+end
+arch stronghold_sym
+x 8
+y 7
+end
+arch s_shop1
+x 10
+y 13
+end
+arch s_shop2
+x 10
+y 14
+end
+arch ruins
+x 13
+y 13
+end
+arch a_bridge1
+x 14
+y 12
+end
+arch a_bridge2
+x 15
+y 12
+end
+arch inn
+y 2
+end
+More
+arch inn_2
+y 2
+end
+arch house_long
+y 3
+end
+More
+arch house_long_2
+y 3
+end
+arch farmhouse
+y 4
+end
+More
+arch farmhouse_2
+y 4
+end
+arch barn
+y 5
+end
+More
+arch barn_2
+y 5
+end
+More
+arch barn_3
+y 6
+end
+More
+arch barn_4
+y 6
+end
+arch prison
+y 7
+end
+More
+arch prison_2
+y 7
+end
+More
+arch prison_3
+y 8
+end
+More
+arch prison_4
+y 8
+end
+arch keep
+y 9
+end
+More
+arch keep_2
+y 9
+end
+More
+arch keep_3
+y 10
+end
+More
+arch keep_4
+y 10
+end
+arch fort
+y 11
+end
+More
+arch fort_2
+y 11
+end
+More
+arch fort_3
+y 12
+end
+More
+arch fort_4
+y 12
+end
+arch store_alchemy
+y 13
+end
+More
+arch store_alchemy_2
+y 13
+end
+More
+arch store_alchemy_3
+y 14
+end
+More
+arch store_alchemy_4
+y 14
+end
+arch house_up
+x 2
+y 2
+end
+More
+arch house_up_2
+x 2
+y 3
+end
+arch guild
+x 2
+y 5
+end
+More
+arch guild_2
+x 3
+y 5
+end
+More
+arch guild_3
+x 2
+y 6
+end
+More
+arch guild_4
+x 3
+y 6
+end
+arch courthouse
+x 2
+y 7
+end
+More
+arch courthouse_2
+x 3
+y 7
+end
+More
+arch courthouse_3
+x 2
+y 8
+end
+More
+arch courthouse_4
+x 3
+y 8
+end
+arch t_house2
+x 2
+y 9
+end
+More
+arch t_house2_2
+x 3
+y 9
+end
+More
+arch t_house2_3
+x 2
+y 10
+end
+More
+arch t_house2_4
+x 3
+y 10
+end
+arch hovels2
+x 2
+y 11
+end
+More
+arch hovels2_2
+x 3
+y 11
+end
+More
+arch hovels2_3
+x 2
+y 12
+end
+More
+arch hovels2_4
+x 3
+y 12
+end
+arch store_general
+x 2
+y 13
+end
+More
+arch store_general_2
+x 3
+y 13
+end
+More
+arch store_general_3
+x 2
+y 14
+end
+More
+arch store_general_4
+x 3
+y 14
+end
+arch barrack_up
+x 3
+y 2
+end
+More
+arch barrack_up_2
+x 3
+y 3
+end
+arch barrack_long
+x 4
+y 2
+end
+More
+arch barrack_long_2
+x 5
+y 2
+end
+arch house_largish
+x 4
+y 3
+end
+More
+arch house_largish_2
+x 5
+y 3
+end
+arch church
+x 4
+y 5
+end
+More
+arch church_2
+x 5
+y 5
+end
+More
+arch church_3
+x 4
+y 6
+end
+More
+arch church_4
+x 5
+y 6
+end
+arch t_house1
+x 4
+y 7
+end
+More
+arch t_house1_2
+x 5
+y 7
+end
+More
+arch t_house1_3
+x 4
+y 8
+end
+More
+arch t_house1_4
+x 5
+y 8
+end
+arch rl_house2
+x 4
+y 9
+end
+More
+arch rl_house2_2
+x 5
+y 9
+end
+More
+arch rl_house2_3
+x 4
+y 10
+end
+More
+arch rl_house2_4
+x 5
+y 10
+end
+arch rl_house1
+x 4
+y 11
+end
+More
+arch rl_house1_2
+x 5
+y 11
+end
+More
+arch rl_house1_3
+x 4
+y 12
+end
+More
+arch rl_house1_4
+x 5
+y 12
+end
+arch store_weapons
+x 4
+y 13
+end
+More
+arch store_weapons_2
+x 5
+y 13
+end
+More
+arch store_weapons_3
+x 4
+y 14
+end
+More
+arch store_weapons_4
+x 5
+y 14
+end
+arch collesium
+x 6
+y 2
+end
+More
+arch collesium_2
+x 7
+y 2
+end
+More
+arch collesium_3
+x 8
+y 2
+end
+More
+arch collesium_4
+x 9
+y 2
+end
+More
+arch collesium_5
+x 10
+y 2
+end
+More
+arch collesium_6
+x 6
+y 3
+end
+More
+arch collesium_7
+x 7
+y 3
+end
+More
+arch collesium_8
+x 8
+y 3
+end
+More
+arch collesium_9
+x 9
+y 3
+end
+More
+arch collesium_10
+x 10
+y 3
+end
+More
+arch collesium_11
+x 6
+y 4
+end
+More
+arch collesium_12
+x 7
+y 4
+end
+More
+arch collesium_13
+x 8
+y 4
+end
+More
+arch collesium_14
+x 9
+y 4
+end
+More
+arch collesium_15
+x 10
+y 4
+end
+arch castle_a
+x 6
+y 5
+end
+More
+arch castle_b
+x 7
+y 5
+end
+More
+arch castle_c
+x 6
+y 6
+end
+More
+arch castle_d
+x 7
+y 6
+end
+arch rl_house3
+x 6
+y 9
+end
+More
+arch rl_house3_2
+x 7
+y 9
+end
+More
+arch rl_house3_3
+x 6
+y 10
+end
+More
+arch rl_house3_4
+x 7
+y 10
+end
+arch slum1
+x 6
+y 11
+end
+More
+arch slum1_2
+x 6
+y 12
+end
+arch store_armour
+x 6
+y 13
+end
+More
+arch store_armour_2
+x 7
+y 13
+end
+More
+arch store_armour_3
+x 6
+y 14
+end
+More
+arch store_armour_4
+x 7
+y 14
+end
+arch slum2
+x 7
+y 11
+end
+More
+arch slum2_2
+x 7
+y 12
+end
+arch s_tower1
+x 8
+end
+More
+arch s_tower1_2
+x 8
+end
+arch a_civic
+x 8
+y 8
+end
+More
+arch a_civic_2
+x 9
+y 8
+end
+More
+arch a_civic_3
+x 10
+y 8
+end
+More
+arch a_civic_4
+x 8
+y 9
+end
+More
+arch a_civic_5
+x 9
+y 9
+end
+More
+arch a_civic_6
+x 10
+y 9
+end
+More
+arch a_civic_7
+x 8
+y 10
+end
+More
+arch a_civic_8
+x 9
+y 10
+end
+More
+arch a_civic_9
+x 10
+y 10
+end
+arch slum3
+x 8
+y 11
+end
+More
+arch slum3_2
+x 8
+y 12
+end
+arch store_magic
+x 8
+y 13
+end
+More
+arch store_magic_2
+x 9
+y 13
+end
+More
+arch store_magic_3
+x 8
+y 14
+end
+More
+arch store_magic_4
+x 9
+y 14
+end
+arch s_tower2
+x 9
+end
+More
+arch s_tower2_2
+x 9
+end
+arch stronghold
+x 9
+y 5
+end
+More
+arch stronghold_2
+x 10
+y 5
+end
+More
+arch stronghold_3
+x 11
+y 5
+end
+More
+arch stronghold_4
+x 9
+y 6
+end
+More
+arch stronghold_5
+x 10
+y 6
+end
+More
+arch stronghold_6
+x 11
+y 6
+end
+More
+arch stronghold_7
+x 9
+y 7
+end
+More
+arch stronghold_8
+x 10
+y 7
+end
+More
+arch stronghold_9
+x 11
+y 7
+end
+arch temple1
+x 9
+y 11
+end
+More
+arch temple1_2
+x 10
+y 11
+end
+More
+arch temple1_3
+x 9
+y 12
+end
+More
+arch temple1_4
+x 10
+y 12
+end
+arch tower_a
+x 10
+end
+More
+arch tower_b
+x 10
+end
+arch city_tower
+x 11
+end
+More
+arch city_tower_2
+x 11
+end
+arch palace
+x 11
+y 9
+end
+More
+arch palace_2
+x 12
+y 9
+end
+More
+arch palace_3
+x 13
+y 9
+end
+More
+arch palace_4
+x 14
+y 9
+end
+More
+arch palace_5
+x 15
+y 9
+end
+More
+arch palace_6
+x 11
+y 10
+end
+More
+arch palace_7
+x 12
+y 10
+end
+More
+arch palace_8
+x 13
+y 10
+end
+More
+arch palace_9
+x 14
+y 10
+end
+More
+arch palace_10
+x 15
+y 10
+end
+More
+arch palace_11
+x 11
+y 11
+end
+More
+arch palace_12
+x 12
+y 11
+end
+More
+arch palace_13
+x 13
+y 11
+end
+More
+arch palace_14
+x 14
+y 11
+end
+More
+arch palace_15
+x 15
+y 11
+end
+arch l_shop1
+x 11
+y 13
+end
+More
+arch l_shop1_2
+x 12
+y 13
+end
+More
+arch l_shop1_3
+x 11
+y 14
+end
+More
+arch l_shop1_4
+x 12
+y 14
+end
+arch university
+x 12
+end
+More
+arch university_2
+x 13
+end
+More
+arch university_3
+x 14
+end
+More
+arch university_4
+x 15
+end
+More
+arch university_5
+x 16
+end
+More
+arch university_6
+x 12
+end
+More
+arch university_7
+x 13
+end
+More
+arch university_8
+x 14
+end
+More
+arch university_9
+x 15
+end
+More
+arch university_10
+x 16
+end
+More
+arch university_11
+x 12
+end
+More
+arch university_12
+x 13
+end
+More
+arch university_13
+x 14
+end
+More
+arch university_14
+x 15
+end
+More
+arch university_15
+x 16
+end
+More
+arch university_16
+x 12
+end
+More
+arch university_17
+x 13
+end
+More
+arch university_18
+x 14
+end
+More
+arch university_19
+x 15
+end
+More
+arch university_20
+x 16
+end
+arch cathedral
+x 12
+y 4
+end
+More
+arch cathedral_2
+x 13
+y 4
+end
+More
+arch cathedral_3
+x 14
+y 4
+end
+More
+arch cathedral_4
+x 12
+y 5
+end
+More
+arch cathedral_5
+x 13
+y 5
+end
+More
+arch cathedral_6
+x 14
+y 5
+end
+More
+arch cathedral_7
+x 12
+y 6
+end
+More
+arch cathedral_8
+x 13
+y 6
+end
+More
+arch cathedral_9
+x 14
+y 6
+end
+More
+arch cathedral_10
+x 12
+y 7
+end
+More
+arch cathedral_11
+x 13
+y 7
+end
+More
+arch cathedral_12
+x 14
+y 7
+end
+arch darkhold
+x 15
+y 4
+end
+More
+arch darkhold_2
+x 16
+y 4
+end
+More
+arch darkhold_3
+x 17
+y 4
+end
+More
+arch darkhold_4
+x 15
+y 5
+end
+More
+arch darkhold_5
+x 16
+y 5
+end
+More
+arch darkhold_6
+x 17
+y 5
+end
+More
+arch darkhold_7
+x 15
+y 6
+end
+More
+arch darkhold_8
+x 16
+y 6
+end
+More
+arch darkhold_9
+x 17
+y 6
+end
+More
+arch darkhold_10
+x 15
+y 7
+end
+More
+arch darkhold_11
+x 16
+y 7
+end
+More
+arch darkhold_12
+x 17
+y 7
+end
+More
+arch darkhold_13
+x 15
+y 8
+end
+More
+arch darkhold_14
+x 16
+y 8
+end
+More
+arch darkhold_15
+x 17
+y 8
+end
