@@ -5,6 +5,7 @@ title You set fire to
 type 158
 face fireball.111
 no_pick 1
+startequip 1
 invisible 1
 no_drop 1
 attacktype 4
@@ -32,6 +33,7 @@ last_grace 10
 end
 Object immolation_immunity
 name immolation
+startequip 1
 type 98
 level 127
 invisible 1
