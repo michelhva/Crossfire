@@ -51,5 +51,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 attack_movement 4
+attacktype 1048577
 editable 1
 end
