@@ -22,6 +22,5 @@ no_drop 1
 attacktype 65
 wc -10
 dam 5
-flying 1
 food 100
 end
