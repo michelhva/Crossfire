@@ -13,7 +13,8 @@ nrof 1
 speed 0.2
 value 800
 weight 50
-material 64
+material 2
+materialname mithril
 editable 2048
 identified 1
 magicmap grey

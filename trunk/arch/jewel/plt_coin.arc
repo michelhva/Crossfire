@@ -6,6 +6,7 @@ color_fg grey
 nrof 1
 type 36
 material 2
+materialname platinum
 value 50
 weight 10
 editable 2048

@@ -5,6 +5,7 @@ face nugget_lar.111
 color_fg orange
 nrof 1
 material 2
+materialname gold
 value 100
 weight 180
 editable 2048

@@ -6,6 +6,7 @@ color_fg yellow
 nrof 1
 type 36
 material 2
+materialname gold
 value 10
 weight 10
 editable 2048

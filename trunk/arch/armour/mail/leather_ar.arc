@@ -11,6 +11,7 @@ resist_physical 10
 weight 20000
 value 40
 material 8
+materialname leather
 editable 1024
 magicmap brown
 body_torso -1

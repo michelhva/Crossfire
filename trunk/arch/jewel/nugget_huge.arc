@@ -4,6 +4,7 @@ race gold and jewels
 face nugget_huge.111
 nrof 1
 material 2
+materialname gold
 color_fg orange
 value 177777
 weight 700000000
