@@ -143,18 +143,18 @@ I need to ask Kaladon how to travel
 across the etheric plane
 endmsg
 end
-arch random_talisman
-end
 arch random_plant
 end
 arch random_plant
+arch talisman
+end
 end
 end
 arch cobblestones2
 x 1
 y 4
 end
-arch wall_2_1_2
+arch wall_1_4
 x 1
 y 4
 end
@@ -446,7 +446,7 @@ arch wall_2_1_2
 x 4
 y 9
 end
-arch shop_floor
+arch shop_empty
 x 4
 y 10
 end
@@ -575,7 +575,7 @@ arch cobblestones2
 x 5
 y 12
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 12
 end
@@ -1051,7 +1051,7 @@ arch cobblestones2
 x 10
 y 5
 end
-arch wall_2_1_1
+arch wall_1_2
 x 10
 y 5
 end
@@ -1067,7 +1067,7 @@ arch cobblestones2
 x 10
 y 7
 end
-arch wall_3_4
+arch wall_1_3
 x 10
 y 7
 end
@@ -1083,7 +1083,7 @@ arch cobblestones2
 x 10
 y 9
 end
-arch wall_2_1_1
+arch wall_1_1
 x 10
 y 9
 end
@@ -1176,20 +1176,19 @@ departed from our plane of existence.
 @match land
 You wish to return to yours? A more
 powerful mage could perform a word of
-recall, but I am too frail. I doubt it possible 
+recall, but I am too frail. I doubt it possible
 to charter a ship from that great city of Navar to
 sail to your distant city.
 @match ship
 Few captains long to explore, and it
 is expensive to form an expedition. In this
-age they fear far waters, Navar, most of all 
+age they fear far waters, Navar, most of all
 fears.
- 
+
 @match etheric
 Kaladon, the wise, has dabbled in the
 etheric plane. If he's not alseep, he
 may answer your question.
-
 endmsg
 x 11
 y 2
@@ -1296,7 +1295,7 @@ arch cobblestones2
 x 12
 y 3
 end
-arch wall_2_1_2
+arch wall_1_3
 x 12
 y 3
 end
@@ -1360,7 +1359,7 @@ arch cobblestones2
 x 12
 y 11
 end
-arch wall_2_1_2
+arch wall_1_3
 x 12
 y 11
 end
