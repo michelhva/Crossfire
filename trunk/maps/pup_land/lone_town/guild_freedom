@@ -5,7 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 18 17:43:33 1996
 endmsg
-x 20
+width 20
+height 16
 end
 arch woodfloor
 end
@@ -221,16 +222,16 @@ It will be difficult.
 Hello. Don't disturb me, I'm doing
 ninja-training.
 endmsg
+type 0
 Dex -19
 hp 100
-x 1
-y 14
 speed 0.001000
-type 0
 weight 700000
 randomitems none
 monster 1
 friendly 1
+x 1
+y 14
 end
 arch woodfloor
 x 1
@@ -269,13 +270,13 @@ So, Where is he?
 @match *
 Do you know Sumson?
 endmsg
-hp 100
-x 2
-y 1
 type 0
+hp 100
 randomitems none
 monster 1
 friendly 1
+x 2
+y 1
 end
 arch woodfloor
 x 2
@@ -600,11 +601,11 @@ Mr.Bauer and his Regular Army built
 the Barrier station.
 endmsg
 hp 180
-x 5
-y 13
 randomitems none
 friendly 1
 unaggressive 0
+x 5
+y 13
 end
 arch woodfloor
 x 5
@@ -668,14 +669,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 6
-y 7
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 6
+y 7
 end
 arch woodfloor
 x 6
@@ -685,14 +686,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 6
-y 8
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 6
+y 8
 end
 arch woodfloor
 x 6
@@ -772,11 +773,11 @@ arch light_guard
 name guard
 sp 0
 maxsp 0
-x 7
-y 6
 monster 0
 friendly 1
 can_cast_spell 0
+x 7
+y 6
 end
 arch woodfloor
 x 7
@@ -794,11 +795,11 @@ arch light_guard
 name guard
 sp 0
 maxsp 0
-x 7
-y 9
 monster 0
 friendly 1
 can_cast_spell 0
+x 7
+y 9
 end
 arch woodfloor
 x 7
@@ -926,10 +927,10 @@ y 5
 end
 arch charwoman
 hp 800
-x 9
-y 5
 friendly 1
 unaggressive 0
+x 9
+y 5
 end
 arch woodfloor
 x 9
@@ -1072,13 +1073,13 @@ There's no doubt about that.
 @match *
 This is the guild of Liberation Army.
 endmsg
-hp 100
-x 11
-y 2
 type 0
+hp 100
 randomitems none
 monster 1
 friendly 1
+x 11
+y 2
 end
 arch woodfloor
 x 11
@@ -1112,14 +1113,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 11
-y 7
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 11
+y 7
 end
 arch woodfloor
 x 11
@@ -1129,14 +1130,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 11
-y 8
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 11
+y 8
 end
 arch woodfloor
 x 11
@@ -1213,13 +1214,11 @@ x 12
 y 6
 end
 arch man
-msg
-endmsg
 hp 180
-x 12
-y 6
 friendly 1
 unaggressive 0
+x 12
+y 6
 end
 arch woodfloor
 x 12
@@ -1246,46 +1245,45 @@ x 12
 y 11
 end
 arch table_4
-x 12
-y 11
 material 0
 value 0
 no_pick 1
 no_pass 1
+x 12
+y 11
 end
 arch magic_ear
 name 2
 msg
 @match protect nature
-
 endmsg
-x 12
-y 12
 connected 2
+x 12
+y 12
 end
 arch woodfloor
 x 12
 y 12
 end
 arch table_4
-x 12
-y 12
 material 0
 value 0
 no_pick 1
 no_pass 1
+x 12
+y 12
 end
 arch woodfloor
 x 12
 y 13
 end
 arch table_4
-x 12
-y 13
 material 0
 value 0
 no_pick 1
 no_pass 1
+x 12
+y 13
 end
 arch woodfloor
 x 12
@@ -1365,11 +1363,10 @@ arch magic_ear
 name 1
 msg
 @match key
-
 endmsg
+connected 1
 x 13
 y 12
-connected 1
 end
 arch woodfloor
 x 13
@@ -1397,15 +1394,15 @@ ability first. Go to the Tower of
 Ordeal, and search for a scroll there.
 @match *
 I am a member of Liberation Army.
-Do you want to join us? 
+Do you want to join us?
 endmsg
-hp 100
-x 13
-y 12
 type 0
+hp 100
 randomitems none
 monster 1
 friendly 1
+x 13
+y 12
 end
 arch woodfloor
 x 13
@@ -1577,14 +1574,14 @@ x 15
 y 6
 end
 arch woodfloor
+type 41
 hp 19
 sp 5
+activate_on_push 1
+activate_on_release 1
+connected 3
 x 15
 y 7
-type 41
-resist_physical 30
-resist_magic 30
-connected 3
 end
 arch guildmaster
 name Dean, the guildmaster
@@ -1594,15 +1591,13 @@ Yes, money is an important issue
 during war. And that's why the
 Liberation Army cannot be defeated :-)
 @match *
-We're fighting for freedom. 
+We're fighting for freedom.
 endmsg
 hp 5000
 maxhp 5000
 sp 0
 maxsp 0
 wc 30
-x 15
-y 7
 level 20
 resist_physical 100
 resist_magic 100
@@ -1632,6 +1627,8 @@ pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
+x 15
+y 7
 end
 arch woodfloor
 x 15
@@ -1927,11 +1924,11 @@ arch teleporter
 name 4
 hp 15
 sp 7
-x 19
-y 1
 speed 0.000000
 resist_fire 30
 connected 4
+x 19
+y 1
 end
 arch guildmaster
 name Dean, the guildmaster
@@ -1957,8 +1954,6 @@ hp 5000
 maxhp 5000
 sp 0
 maxsp 0
-x 19
-y 1
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1987,6 +1982,8 @@ pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
+x 19
+y 1
 end
 arch blocked
 x 19
@@ -1996,11 +1993,11 @@ arch teleporter
 name 1
 hp 11
 sp 12
-x 19
-y 3
 speed 0.000000
 resist_physical 30
 connected 1
+x 19
+y 3
 end
 arch key2
 name Ordeal key
@@ -2014,10 +2011,10 @@ y 4
 end
 arch button_small
 name 4
-x 19
-y 5
 weight 1000
 connected 4
+x 19
+y 5
 end
 arch blocked
 x 19
@@ -2025,18 +2022,18 @@ y 6
 end
 arch button_small
 name 3
-x 19
-y 7
 weight 1000
 connected 3
+x 19
+y 7
 end
 arch creator
 name 2
 other_arch small_shield
-x 19
-y 7
 resist_magic 30
 connected 2
+x 19
+y 7
 end
 arch blocked
 x 19

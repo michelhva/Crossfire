@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Oct  2 00:40:24 2000
 endmsg
-x 15
-y 33
+width 15
+height 33
 end
 arch dungeon_magic
 end
@@ -143,7 +143,7 @@ end
 arch blocked
 y 15
 end
-arch lightningwall_3
+arch blocked
 y 16
 end
 arch blocked
@@ -413,11 +413,9 @@ arch blocked
 x 1
 y 15
 end
-arch gateTrg2
+arch blocked
 x 1
 y 16
-protected 1
-connected 1
 end
 arch blocked
 x 1
@@ -603,11 +601,17 @@ end
 arch flagstone
 name pentagram
 face pentagram.111
+is_floor 0
 x 2
 y 5
-is_floor 0
 end
 arch dungeon_magic
+x 2
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 5
 x 2
 y 6
 end
@@ -618,9 +622,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.121
+is_floor 0
 x 2
 y 6
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -633,9 +637,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.131
+is_floor 0
 x 2
 y 7
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -701,1015 +705,1104 @@ arch blocked
 x 2
 y 15
 end
-arch gateTrg2
+arch blocked
 x 2
 y 16
-protected 2
+end
+arch blocked
+x 2
+y 17
+end
+arch dungeon_magic
+x 2
+y 18
+end
+arch flagstone
+x 2
+y 18
+end
+arch awall_2_1_2
+x 2
+y 18
+end
+arch dungeon_magic
+x 2
+y 19
+end
+arch flagstone
+x 2
+y 19
+end
+arch dungeon_magic
+x 2
+y 20
+end
+arch yellow_0
+x 2
+y 20
+end
+arch dungeon_magic
+x 2
+y 21
+end
+arch yellow_0
+x 2
+y 21
+end
+arch dungeon_magic
+x 2
+y 22
+end
+arch yellow_0
+x 2
+y 22
+end
+arch dungeon_magic
+x 2
+y 23
+end
+arch yellow_0
+x 2
+y 23
+end
+arch flagstone
+name pentagram
+face pentagram.111
+is_floor 0
+x 2
+y 23
+end
+arch dungeon_magic
+x 2
+y 24
+end
+arch yellow_0
+x 2
+y 24
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 2
+y 24
+end
+arch dungeon_magic
+x 2
+y 25
+end
+arch yellow_0
+x 2
+y 25
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 2
+y 25
+end
+arch dungeon_magic
+x 2
+y 26
+end
+arch yellow_0
+x 2
+y 26
+end
+arch dungeon_magic
+x 2
+y 27
+end
+arch yellow_0
+x 2
+y 27
+end
+arch dungeon_magic
+x 2
+y 28
+end
+arch yellow_0
+x 2
+y 28
+end
+arch dungeon_magic
+x 2
+y 29
+end
+arch yellow_0
+x 2
+y 29
+end
+arch dungeon_magic
+x 2
+y 30
+end
+arch yellow_0
+x 2
+y 30
+end
+arch dungeon_magic
+x 2
+y 31
+end
+arch flagstone
+x 2
+y 31
+end
+arch dungeon_magic
+x 2
+y 32
+end
+arch flagstone
+x 2
+y 32
+end
+arch awall_2_1_2
+x 2
+y 32
+end
+arch dungeon_magic
+x 3
+end
+arch flagstone
+x 3
+end
+arch awall_2_1_2
+x 3
+end
+arch dungeon_magic
+x 3
+y 1
+end
+arch yellow_0
+x 3
+y 1
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch yellow_0
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch yellow_0
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch yellow_0
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch pedestal_trigger
+invisible 1
+connected 5
+x 3
+y 5
+end
+arch yellow_0
+x 3
+y 5
+end
+arch flagstone
+name pentagram
+face pentagram.112
+is_floor 0
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 5
+x 3
+y 6
+end
+arch yellow_0
+x 3
+y 6
+end
+arch flagstone
+name pentagram
+face pentagram.122
+is_floor 0
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch pedestal_trigger
+invisible 1
+connected 5
+x 3
+y 7
+end
+arch yellow_0
+x 3
+y 7
+end
+arch flagstone
+name pentagram
+face pentagram.132
+is_floor 0
+x 3
+y 7
+end
+arch dungeon_magic
+x 3
+y 8
+end
+arch yellow_0
+x 3
+y 8
+end
+arch dungeon_magic
+x 3
+y 9
+end
+arch yellow_0
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch yellow_0
+x 3
+y 10
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch yellow_0
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch yellow_0
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch yellow_0
+x 3
+y 13
+end
+arch dungeon_magic
+x 3
+y 14
+end
+arch flagstone
+x 3
+y 14
+end
+arch awall_2_1_2
+x 3
+y 14
+end
+arch blocked
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch teleporter
+name 1
+hp 4
+sp 16
+connected 1
+speed 0.000000
+activate_on_release 0
+x 3
+y 16
+end
+arch scroll
+material 256
+x 3
+y 16
+end
+arch blocked
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 18
+end
+arch flagstone
+x 3
+y 18
+end
+arch awall_2_1_2
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
+y 19
+end
+arch yellow_0
+x 3
+y 19
+end
+arch dungeon_magic
+x 3
+y 20
+end
+arch yellow_0
+x 3
+y 20
+end
+arch dungeon_magic
+x 3
+y 21
+end
+arch yellow_0
+x 3
+y 21
+end
+arch dungeon_magic
+x 3
+y 22
+end
+arch yellow_0
+x 3
+y 22
+end
+arch dungeon_magic
+x 3
+y 23
+end
+arch yellow_0
+x 3
+y 23
+end
+arch flagstone
+name pentagram
+face pentagram.112
+is_floor 0
+x 3
+y 23
+end
+arch dungeon_magic
+x 3
+y 24
+end
+arch yellow_0
+x 3
+y 24
+end
+arch flagstone
+name pentagram
+face pentagram.122
+is_floor 0
+x 3
+y 24
+end
+arch creator
+connected 10
+lifesave 1
+x 3
+y 24
+end
+arch perm_magic_portal
+slaying ../ancient/to_future
+hp 7
+sp 7
+x 3
+y 24
+end
+arch dungeon_magic
+x 3
+y 25
+end
+arch yellow_0
+x 3
+y 25
+end
+arch flagstone
+name pentagram
+face pentagram.132
+is_floor 0
+x 3
+y 25
+end
+arch dungeon_magic
+x 3
+y 26
+end
+arch yellow_0
+x 3
+y 26
+end
+arch dungeon_magic
+x 3
+y 27
+end
+arch yellow_0
+x 3
+y 27
+end
+arch dungeon_magic
+x 3
+y 28
+end
+arch yellow_0
+x 3
+y 28
+end
+arch dungeon_magic
+x 3
+y 29
+end
+arch yellow_0
+x 3
+y 29
+end
+arch dungeon_magic
+x 3
+y 30
+end
+arch yellow_0
+x 3
+y 30
+end
+arch dungeon_magic
+x 3
+y 31
+end
+arch yellow_0
+x 3
+y 31
+end
+arch dungeon_magic
+x 3
+y 32
+end
+arch flagstone
+x 3
+y 32
+end
+arch awall_2_1_2
+x 3
+y 32
+end
+arch dungeon_magic
+x 4
+end
+arch flagstone
+x 4
+end
+arch awall_2_1_2
+x 4
+end
+arch dungeon_magic
+x 4
+y 1
+end
+arch yellow_0
+x 4
+y 1
+end
+arch dungeon_magic
+x 4
+y 2
+end
+arch yellow_0
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch yellow_0
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch yellow_0
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch yellow_0
+x 4
+y 5
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 5
+x 4
+y 6
+end
+arch yellow_0
+x 4
+y 6
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch yellow_0
+x 4
+y 7
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 4
+y 7
+end
+arch dungeon_magic
+x 4
+y 8
+end
+arch yellow_0
+x 4
+y 8
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch yellow_0
+x 4
+y 9
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch yellow_0
+x 4
+y 10
+end
+arch flagstone
+name pentagram
+face pentagram.111
+is_floor 0
+x 4
+y 10
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch pedestal_trigger
+invisible 1
+connected 4
+x 4
+y 11
+end
+arch yellow_0
+x 4
+y 11
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 4
+y 11
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch yellow_0
+x 4
+y 12
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 4
+y 12
+end
+arch dungeon_magic
+x 4
+y 13
+end
+arch yellow_0
+x 4
+y 13
+end
+arch dungeon_magic
+x 4
+y 14
+end
+arch flagstone
+x 4
+y 14
+end
+arch awall_2_1_2
+x 4
+y 14
+end
+arch blocked
+x 4
+y 15
+end
+arch magic_mouth
+name 11
+msg
+*gong*
+endmsg
+connected 11
+walk_on 0
+fly_on 0
+activate_on_release 0
+x 4
+y 16
+end
+arch flagstone
+x 4
+y 16
+end
+arch button_small
+name 11
+connected 11
+x 4
+y 16
+end
+arch teleporter
+name 2
+hp 5
+sp 16
 connected 2
+speed 0.000000
+activate_on_release 0
+x 4
+y 16
 end
 arch blocked
-x 2
+x 4
 y 17
 end
 arch dungeon_magic
-x 2
+x 4
 y 18
 end
 arch flagstone
-x 2
+x 4
 y 18
 end
 arch awall_2_1_2
-x 2
+x 4
 y 18
 end
 arch dungeon_magic
-x 2
+x 4
 y 19
+end
+arch yellow_0
+x 4
+y 19
+end
+arch dungeon_magic
+x 4
+y 20
+end
+arch yellow_0
+x 4
+y 20
+end
+arch dungeon_magic
+x 4
+y 21
+end
+arch yellow_0
+x 4
+y 21
+end
+arch dungeon_magic
+x 4
+y 22
+end
+arch yellow_0
+x 4
+y 22
+end
+arch dungeon_magic
+x 4
+y 23
+end
+arch yellow_0
+x 4
+y 23
 end
 arch flagstone
-x 2
-y 19
-end
-arch dungeon_magic
-x 2
-y 20
-end
-arch yellow_0
-x 2
-y 20
-end
-arch dungeon_magic
-x 2
-y 21
-end
-arch yellow_0
-x 2
-y 21
-end
-arch dungeon_magic
-x 2
-y 22
-end
-arch yellow_0
-x 2
-y 22
-end
-arch dungeon_magic
-x 2
+name pentagram
+face pentagram.113
+is_floor 0
+x 4
 y 23
 end
+arch dungeon_magic
+x 4
+y 24
+end
 arch yellow_0
-x 2
-y 23
+x 4
+y 24
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 4
+y 24
+end
+arch dungeon_magic
+x 4
+y 25
+end
+arch yellow_0
+x 4
+y 25
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 4
+y 25
+end
+arch dungeon_magic
+x 4
+y 26
+end
+arch yellow_0
+x 4
+y 26
+end
+arch dungeon_magic
+x 4
+y 27
+end
+arch yellow_0
+x 4
+y 27
+end
+arch dungeon_magic
+x 4
+y 28
+end
+arch yellow_0
+x 4
+y 28
 end
 arch flagstone
 name pentagram
 face pentagram.111
-x 2
-y 23
 is_floor 0
+x 4
+y 28
 end
 arch dungeon_magic
-x 2
-y 24
+x 4
+y 29
 end
 arch yellow_0
-x 2
-y 24
+x 4
+y 29
 end
 arch flagstone
 name pentagram
 face pentagram.121
-x 2
-y 24
 is_floor 0
+x 4
+y 29
 end
 arch dungeon_magic
-x 2
-y 25
+x 4
+y 30
 end
 arch yellow_0
-x 2
-y 25
+x 4
+y 30
 end
 arch flagstone
 name pentagram
 face pentagram.131
-x 2
-y 25
 is_floor 0
-end
-arch dungeon_magic
-x 2
-y 26
-end
-arch yellow_0
-x 2
-y 26
-end
-arch dungeon_magic
-x 2
-y 27
-end
-arch yellow_0
-x 2
-y 27
-end
-arch dungeon_magic
-x 2
-y 28
-end
-arch yellow_0
-x 2
-y 28
-end
-arch dungeon_magic
-x 2
-y 29
-end
-arch yellow_0
-x 2
-y 29
-end
-arch dungeon_magic
-x 2
-y 30
-end
-arch yellow_0
-x 2
+x 4
 y 30
 end
 arch dungeon_magic
-x 2
+x 4
 y 31
 end
-arch flagstone
-x 2
+arch yellow_0
+x 4
 y 31
 end
 arch dungeon_magic
-x 2
+x 4
 y 32
 end
 arch flagstone
-x 2
+x 4
 y 32
 end
 arch awall_2_1_2
-x 2
+x 4
 y 32
 end
 arch dungeon_magic
-x 3
+x 5
 end
 arch flagstone
-x 3
+x 5
 end
 arch awall_2_1_2
-x 3
+x 5
 end
 arch dungeon_magic
-x 3
+x 5
 y 1
 end
 arch yellow_0
-x 3
+x 5
 y 1
 end
 arch dungeon_magic
-x 3
+x 5
 y 2
 end
 arch yellow_0
-x 3
+x 5
 y 2
 end
 arch dungeon_magic
-x 3
+x 5
 y 3
 end
 arch yellow_0
-x 3
+x 5
 y 3
 end
 arch dungeon_magic
-x 3
+x 5
 y 4
 end
 arch yellow_0
-x 3
+x 5
 y 4
 end
 arch dungeon_magic
-x 3
+x 5
 y 5
 end
 arch yellow_0
-x 3
+x 5
 y 5
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch yellow_0
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch yellow_0
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch yellow_0
+x 5
+y 8
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch yellow_0
+x 5
+y 9
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch pedestal_trigger
+invisible 1
+connected 4
+x 5
+y 10
+end
+arch yellow_0
+x 5
+y 10
 end
 arch flagstone
 name pentagram
 face pentagram.112
-x 3
-y 5
 is_floor 0
+x 5
+y 10
 end
 arch dungeon_magic
-x 3
-y 6
-end
-arch yellow_0
-x 3
-y 6
+x 5
+y 11
 end
 arch pedestal_trigger
-x 3
-y 6
-protected 4
 invisible 1
 connected 4
+x 5
+y 11
+end
+arch yellow_0
+x 5
+y 11
 end
 arch flagstone
 name pentagram
 face pentagram.122
-x 3
-y 6
 is_floor 0
+x 5
+y 11
 end
 arch dungeon_magic
-x 3
-y 7
+x 5
+y 12
+end
+arch pedestal_trigger
+invisible 1
+connected 4
+x 5
+y 12
 end
 arch yellow_0
-x 3
-y 7
+x 5
+y 12
 end
 arch flagstone
 name pentagram
 face pentagram.132
-x 3
-y 7
 is_floor 0
-end
-arch dungeon_magic
-x 3
-y 8
-end
-arch yellow_0
-x 3
-y 8
-end
-arch dungeon_magic
-x 3
-y 9
-end
-arch yellow_0
-x 3
-y 9
-end
-arch dungeon_magic
-x 3
-y 10
-end
-arch yellow_0
-x 3
-y 10
-end
-arch dungeon_magic
-x 3
-y 11
-end
-arch yellow_0
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 12
-end
-arch yellow_0
-x 3
+x 5
 y 12
 end
 arch dungeon_magic
-x 3
+x 5
 y 13
 end
 arch yellow_0
-x 3
+x 5
 y 13
 end
 arch dungeon_magic
-x 3
+x 5
 y 14
 end
 arch flagstone
-x 3
+x 5
 y 14
 end
 arch awall_2_1_2
-x 3
+x 5
 y 14
 end
 arch blocked
-x 3
+x 5
 y 15
 end
-arch gateTrg2
-x 3
+arch magic_mouth
+name 12
+msg
+*gong*
+endmsg
+connected 12
+walk_on 0
+fly_on 0
+activate_on_release 0
+x 5
 y 16
-protected 3
+end
+arch flagstone
+x 5
+y 16
+end
+arch button_small
+name 12
+connected 12
+x 5
+y 16
+end
+arch teleporter
+name 3
+hp 6
+sp 16
 connected 3
-end
-arch blocked
-x 3
-y 17
-end
-arch dungeon_magic
-x 3
-y 18
-end
-arch flagstone
-x 3
-y 18
-end
-arch awall_2_1_2
-x 3
-y 18
-end
-arch dungeon_magic
-x 3
-y 19
-end
-arch yellow_0
-x 3
-y 19
-end
-arch dungeon_magic
-x 3
-y 20
-end
-arch yellow_0
-x 3
-y 20
-end
-arch dungeon_magic
-x 3
-y 21
-end
-arch yellow_0
-x 3
-y 21
-end
-arch dungeon_magic
-x 3
-y 22
-end
-arch yellow_0
-x 3
-y 22
-end
-arch dungeon_magic
-x 3
-y 23
-end
-arch yellow_0
-x 3
-y 23
-end
-arch flagstone
-name pentagram
-face pentagram.112
-x 3
-y 23
-is_floor 0
-end
-arch dungeon_magic
-x 3
-y 24
-end
-arch yellow_0
-x 3
-y 24
-end
-arch pedestal_trigger
-x 3
-y 24
-protected 4
-invisible 1
-connected 4
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 3
-y 24
-is_floor 0
-end
-arch creator
-x 3
-y 24
-protected 10
-connected 10
-lifesave 1
-end
-arch perm_magic_portal
-slaying ../ancient/to_future
-hp 7
-sp 7
-x 3
-y 24
-end
-arch dungeon_magic
-x 3
-y 25
-end
-arch yellow_0
-x 3
-y 25
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 3
-y 25
-is_floor 0
-end
-arch dungeon_magic
-x 3
-y 26
-end
-arch yellow_0
-x 3
-y 26
-end
-arch dungeon_magic
-x 3
-y 27
-end
-arch yellow_0
-x 3
-y 27
-end
-arch dungeon_magic
-x 3
-y 28
-end
-arch yellow_0
-x 3
-y 28
-end
-arch dungeon_magic
-x 3
-y 29
-end
-arch yellow_0
-x 3
-y 29
-end
-arch dungeon_magic
-x 3
-y 30
-end
-arch yellow_0
-x 3
-y 30
-end
-arch dungeon_magic
-x 3
-y 31
-end
-arch yellow_0
-x 3
-y 31
-end
-arch dungeon_magic
-x 3
-y 32
-end
-arch flagstone
-x 3
-y 32
-end
-arch awall_2_1_2
-x 3
-y 32
-end
-arch dungeon_magic
-x 4
-end
-arch flagstone
-x 4
-end
-arch awall_2_1_2
-x 4
-end
-arch dungeon_magic
-x 4
-y 1
-end
-arch yellow_0
-x 4
-y 1
-end
-arch dungeon_magic
-x 4
-y 2
-end
-arch yellow_0
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 3
-end
-arch yellow_0
-x 4
-y 3
-end
-arch dungeon_magic
-x 4
-y 4
-end
-arch yellow_0
-x 4
-y 4
-end
-arch dungeon_magic
-x 4
-y 5
-end
-arch yellow_0
-x 4
-y 5
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 4
-y 5
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 6
-end
-arch yellow_0
-x 4
-y 6
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 4
-y 6
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 7
-end
-arch yellow_0
-x 4
-y 7
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 4
-y 7
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 8
-end
-arch yellow_0
-x 4
-y 8
-end
-arch dungeon_magic
-x 4
-y 9
-end
-arch yellow_0
-x 4
-y 9
-end
-arch dungeon_magic
-x 4
-y 10
-end
-arch yellow_0
-x 4
-y 10
-end
-arch flagstone
-name pentagram
-face pentagram.111
-x 4
-y 10
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 11
-end
-arch yellow_0
-x 4
-y 11
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 4
-y 11
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 12
-end
-arch yellow_0
-x 4
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 4
-y 12
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 13
-end
-arch yellow_0
-x 4
-y 13
-end
-arch dungeon_magic
-x 4
-y 14
-end
-arch flagstone
-x 4
-y 14
-end
-arch awall_2_1_2
-x 4
-y 14
-end
-arch blocked
-x 4
-y 15
-end
-arch gateTrg2
-x 4
-y 16
-protected 4
-connected 4
-end
-arch blocked
-x 4
-y 17
-end
-arch dungeon_magic
-x 4
-y 18
-end
-arch flagstone
-x 4
-y 18
-end
-arch awall_2_1_2
-x 4
-y 18
-end
-arch dungeon_magic
-x 4
-y 19
-end
-arch yellow_0
-x 4
-y 19
-end
-arch dungeon_magic
-x 4
-y 20
-end
-arch yellow_0
-x 4
-y 20
-end
-arch dungeon_magic
-x 4
-y 21
-end
-arch yellow_0
-x 4
-y 21
-end
-arch dungeon_magic
-x 4
-y 22
-end
-arch yellow_0
-x 4
-y 22
-end
-arch dungeon_magic
-x 4
-y 23
-end
-arch yellow_0
-x 4
-y 23
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 4
-y 23
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 24
-end
-arch yellow_0
-x 4
-y 24
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 4
-y 24
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 25
-end
-arch yellow_0
-x 4
-y 25
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 4
-y 25
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 26
-end
-arch yellow_0
-x 4
-y 26
-end
-arch dungeon_magic
-x 4
-y 27
-end
-arch yellow_0
-x 4
-y 27
-end
-arch dungeon_magic
-x 4
-y 28
-end
-arch yellow_0
-x 4
-y 28
-end
-arch flagstone
-name pentagram
-face pentagram.111
-x 4
-y 28
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 29
-end
-arch yellow_0
-x 4
-y 29
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 4
-y 29
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 30
-end
-arch yellow_0
-x 4
-y 30
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 4
-y 30
-is_floor 0
-end
-arch dungeon_magic
-x 4
-y 31
-end
-arch yellow_0
-x 4
-y 31
-end
-arch dungeon_magic
-x 4
-y 32
-end
-arch flagstone
-x 4
-y 32
-end
-arch awall_2_1_2
-x 4
-y 32
-end
-arch dungeon_magic
-x 5
-end
-arch flagstone
-x 5
-end
-arch awall_2_1_2
-x 5
-end
-arch dungeon_magic
-x 5
-y 1
-end
-arch yellow_0
-x 5
-y 1
-end
-arch dungeon_magic
-x 5
-y 2
-end
-arch yellow_0
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 3
-end
-arch yellow_0
-x 5
-y 3
-end
-arch dungeon_magic
-x 5
-y 4
-end
-arch yellow_0
-x 5
-y 4
-end
-arch dungeon_magic
-x 5
-y 5
-end
-arch yellow_0
-x 5
-y 5
-end
-arch dungeon_magic
-x 5
-y 6
-end
-arch yellow_0
-x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 7
-end
-arch yellow_0
-x 5
-y 7
-end
-arch dungeon_magic
-x 5
-y 8
-end
-arch yellow_0
-x 5
-y 8
-end
-arch dungeon_magic
-x 5
-y 9
-end
-arch yellow_0
-x 5
-y 9
-end
-arch dungeon_magic
-x 5
-y 10
-end
-arch yellow_0
-x 5
-y 10
-end
-arch flagstone
-name pentagram
-face pentagram.112
-x 5
-y 10
-is_floor 0
-end
-arch dungeon_magic
-x 5
-y 11
-end
-arch yellow_0
-x 5
-y 11
-end
-arch pedestal_trigger
-x 5
-y 11
-protected 5
-invisible 1
-connected 5
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 5
-y 11
-is_floor 0
-end
-arch dungeon_magic
-x 5
-y 12
-end
-arch yellow_0
-x 5
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 5
-y 12
-is_floor 0
-end
-arch dungeon_magic
-x 5
-y 13
-end
-arch yellow_0
-x 5
-y 13
-end
-arch dungeon_magic
-x 5
-y 14
-end
-arch flagstone
-x 5
-y 14
-end
-arch awall_2_1_2
-x 5
-y 14
-end
-arch blocked
-x 5
-y 15
-end
-arch gateTrg2
+speed 0.000000
+activate_on_release 0
 x 5
 y 16
-protected 5
-connected 5
 end
 arch blocked
 x 5
@@ -1810,9 +1903,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.112
+is_floor 0
 x 5
 y 28
-is_floor 0
 end
 arch dungeon_magic
 x 5
@@ -1822,26 +1915,18 @@ arch yellow_0
 x 5
 y 29
 end
-arch pedestal_trigger
-x 5
-y 29
-protected 5
-invisible 1
-connected 5
-end
 arch flagstone
 name pentagram
 face pentagram.122
+is_floor 0
 x 5
 y 29
-is_floor 0
 end
 arch creator
-x 5
-y 29
-protected 10
 connected 10
 lifesave 1
+x 5
+y 29
 end
 arch perm_magic_portal
 slaying ../ancient/to_future
@@ -1861,9 +1946,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.132
+is_floor 0
 x 5
 y 30
-is_floor 0
 end
 arch dungeon_magic
 x 5
@@ -1913,399 +1998,447 @@ end
 arch flagstone
 name pentagram
 face pentagram.111
+is_floor 0
 x 6
 y 2
-is_floor 0
 end
 arch dungeon_magic
 x 6
-y 3
-end
-arch yellow_0
-x 6
-y 3
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 6
-y 3
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 4
-end
-arch yellow_0
-x 6
-y 4
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 6
-y 4
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch yellow_0
-x 6
-y 5
-end
-arch dungeon_magic
-x 6
-y 6
-end
-arch yellow_0
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch yellow_0
-x 6
-y 7
-end
-arch teleporter
-slaying kurte
-hp 15
-sp 3
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 8
-end
-arch yellow_0
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
-y 9
-end
-arch yellow_0
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch yellow_0
-x 6
-y 10
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 6
-y 10
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 11
-end
-arch yellow_0
-x 6
-y 11
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 6
-y 11
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch yellow_0
-x 6
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 6
-y 12
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch yellow_0
-x 6
-y 13
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch flagstone
-x 6
-y 14
-end
-arch awall_2_1_2
-x 6
-y 14
-end
-arch blocked
-x 6
-y 15
-end
-arch gate_closed_2
-x 6
-y 16
-speed 0.500000
-protected 6
-connected 6
-end
-arch blocked
-x 6
-y 17
-end
-arch dungeon_magic
-x 6
-y 18
-end
-arch flagstone
-x 6
-y 18
-end
-arch awall_2_1_2
-x 6
-y 18
-end
-arch dungeon_magic
-x 6
-y 19
-end
-arch yellow_0
-x 6
-y 19
-end
-arch dungeon_magic
-x 6
-y 20
-end
-arch yellow_0
-x 6
-y 20
-end
-arch flagstone
-name pentagram
-face pentagram.111
-x 6
-y 20
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 21
-end
-arch yellow_0
-x 6
-y 21
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 6
-y 21
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 22
-end
-arch yellow_0
-x 6
-y 22
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 6
-y 22
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 23
-end
-arch yellow_0
-x 6
-y 23
-end
-arch dungeon_magic
-x 6
-y 24
-end
-arch yellow_0
-x 6
-y 24
-end
-arch dungeon_magic
-x 6
-y 25
-end
-arch yellow_0
-x 6
-y 25
-end
-arch teleporter
-slaying kurte
-hp 15
-sp 3
-x 6
-y 25
-end
-arch dungeon_magic
-x 6
-y 26
-end
-arch yellow_0
-x 6
-y 26
-end
-arch dungeon_magic
-x 6
-y 27
-end
-arch yellow_0
-x 6
-y 27
-end
-arch dungeon_magic
-x 6
-y 28
-end
-arch yellow_0
-x 6
-y 28
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 6
-y 28
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 29
-end
-arch yellow_0
-x 6
-y 29
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 6
-y 29
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 30
-end
-arch yellow_0
-x 6
-y 30
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 6
-y 30
-is_floor 0
-end
-arch dungeon_magic
-x 6
-y 31
-end
-arch yellow_0
-x 6
-y 31
-end
-arch dungeon_magic
-x 6
-y 32
-end
-arch flagstone
-x 6
-y 32
-end
-arch awall_2_1_2
-x 6
-y 32
-end
-arch dungeon_magic
-x 7
-end
-arch flagstone
-x 7
-end
-arch awall_2_1_2
-x 7
-end
-arch dungeon_magic
-x 7
-y 1
-end
-arch yellow_0
-x 7
-y 1
-end
-arch dungeon_magic
-x 7
-y 2
-end
-arch yellow_0
-x 7
-y 2
-end
-arch flagstone
-name pentagram
-face pentagram.112
-x 7
-y 2
-is_floor 0
-end
-arch dungeon_magic
-x 7
-y 3
-end
-arch yellow_0
-x 7
 y 3
 end
 arch pedestal_trigger
-x 7
-y 3
-protected 1
 invisible 1
 connected 1
+x 6
+y 3
+end
+arch yellow_0
+x 6
+y 3
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch yellow_0
+x 6
+y 4
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch yellow_0
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch yellow_0
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch yellow_0
+x 6
+y 7
+end
+arch teleporter
+slaying kurte
+hp 15
+sp 3
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch yellow_0
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch yellow_0
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch yellow_0
+x 6
+y 10
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch pedestal_trigger
+invisible 1
+connected 4
+x 6
+y 11
+end
+arch yellow_0
+x 6
+y 11
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch yellow_0
+x 6
+y 12
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch yellow_0
+x 6
+y 13
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch flagstone
+x 6
+y 14
+end
+arch awall_2_1_2
+x 6
+y 14
+end
+arch blocked
+x 6
+y 15
+end
+arch magic_mouth
+name 13
+msg
+*gong*
+endmsg
+connected 13
+walk_on 0
+fly_on 0
+activate_on_release 0
+x 6
+y 16
+end
+arch flagstone
+x 6
+y 16
+end
+arch button_small
+name 13
+connected 13
+x 6
+y 16
+end
+arch teleporter
+name 4
+hp 7
+sp 16
+connected 4
+speed 0.000000
+activate_on_release 0
+x 6
+y 16
+end
+arch blocked
+x 6
+y 17
+end
+arch dungeon_magic
+x 6
+y 18
+end
+arch flagstone
+x 6
+y 18
+end
+arch awall_2_1_2
+x 6
+y 18
+end
+arch dungeon_magic
+x 6
+y 19
+end
+arch yellow_0
+x 6
+y 19
+end
+arch dungeon_magic
+x 6
+y 20
+end
+arch yellow_0
+x 6
+y 20
+end
+arch flagstone
+name pentagram
+face pentagram.111
+is_floor 0
+x 6
+y 20
+end
+arch dungeon_magic
+x 6
+y 21
+end
+arch yellow_0
+x 6
+y 21
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 6
+y 21
+end
+arch dungeon_magic
+x 6
+y 22
+end
+arch yellow_0
+x 6
+y 22
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 6
+y 22
+end
+arch dungeon_magic
+x 6
+y 23
+end
+arch yellow_0
+x 6
+y 23
+end
+arch dungeon_magic
+x 6
+y 24
+end
+arch yellow_0
+x 6
+y 24
+end
+arch dungeon_magic
+x 6
+y 25
+end
+arch yellow_0
+x 6
+y 25
+end
+arch teleporter
+slaying kurte
+hp 15
+sp 3
+x 6
+y 25
+end
+arch dungeon_magic
+x 6
+y 26
+end
+arch yellow_0
+x 6
+y 26
+end
+arch dungeon_magic
+x 6
+y 27
+end
+arch yellow_0
+x 6
+y 27
+end
+arch dungeon_magic
+x 6
+y 28
+end
+arch yellow_0
+x 6
+y 28
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 6
+y 28
+end
+arch dungeon_magic
+x 6
+y 29
+end
+arch yellow_0
+x 6
+y 29
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 6
+y 29
+end
+arch dungeon_magic
+x 6
+y 30
+end
+arch yellow_0
+x 6
+y 30
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 6
+y 30
+end
+arch dungeon_magic
+x 6
+y 31
+end
+arch yellow_0
+x 6
+y 31
+end
+arch dungeon_magic
+x 6
+y 32
+end
+arch flagstone
+x 6
+y 32
+end
+arch awall_2_1_2
+x 6
+y 32
+end
+arch dungeon_magic
+x 7
+end
+arch flagstone
+x 7
+end
+arch awall_2_1_2
+x 7
+end
+arch dungeon_magic
+x 7
+y 1
+end
+arch yellow_0
+x 7
+y 1
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch pedestal_trigger
+invisible 1
+connected 1
+x 7
+y 2
+end
+arch yellow_0
+x 7
+y 2
+end
+arch flagstone
+name pentagram
+face pentagram.112
+is_floor 0
+x 7
+y 2
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch pedestal_trigger
+invisible 1
+connected 1
+x 7
+y 3
+end
+arch yellow_0
+x 7
+y 3
 end
 arch flagstone
 name pentagram
 face pentagram.122
+is_floor 0
 x 7
 y 3
-is_floor 0
 end
 arch dungeon_magic
+x 7
+y 4
+end
+arch pedestal_trigger
+invisible 1
+connected 1
 x 7
 y 4
 end
@@ -2316,9 +2449,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.132
+is_floor 0
 x 7
 y 4
-is_floor 0
 end
 arch dungeon_magic
 x 7
@@ -2356,21 +2489,19 @@ x 7
 y 7
 end
 arch pedestal
-x 7
-y 7
-protected 6
 invisible 1
 connected 6
+x 7
+y 7
 end
 arch teleporter
 hp 7
 sp 25
-x 7
-y 7
 speed 0.000000
-protected 10
 invisible 1
 connected 10
+x 7
+y 7
 end
 arch dungeon_magic
 x 7
@@ -2443,12 +2574,37 @@ arch blocked
 x 7
 y 15
 end
-arch button_small
-name 101
+arch magic_mouth
+name 14
+msg
+*gong*
+endmsg
+connected 14
+walk_on 0
+fly_on 0
+activate_on_release 0
 x 7
 y 16
-protected 101
-connected 101
+end
+arch flagstone
+x 7
+y 16
+end
+arch button_small
+name 14
+connected 14
+x 7
+y 16
+end
+arch teleporter
+name 5
+hp 8
+sp 16
+connected 5
+speed 0.000000
+activate_on_release 0
+x 7
+y 16
 end
 arch blocked
 x 7
@@ -2485,9 +2641,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.112
+is_floor 0
 x 7
 y 20
-is_floor 0
 end
 arch dungeon_magic
 x 7
@@ -2497,183 +2653,174 @@ arch yellow_0
 x 7
 y 21
 end
-arch pedestal_trigger
+arch flagstone
+name pentagram
+face pentagram.122
+is_floor 0
 x 7
 y 21
-protected 1
+end
+arch creator
+connected 10
+lifesave 1
+x 7
+y 21
+end
+arch perm_magic_portal
+slaying ../ancient/to_future
+hp 7
+sp 7
+x 7
+y 21
+end
+arch dungeon_magic
+x 7
+y 22
+end
+arch yellow_0
+x 7
+y 22
+end
+arch flagstone
+name pentagram
+face pentagram.132
+is_floor 0
+x 7
+y 22
+end
+arch dungeon_magic
+x 7
+y 23
+end
+arch yellow_0
+x 7
+y 23
+end
+arch dungeon_magic
+x 7
+y 24
+end
+arch yellow_0
+x 7
+y 24
+end
+arch teleporter
+slaying kurte
+hp 15
+sp 3
+x 7
+y 24
+end
+arch yellow_0
+x 7
+y 25
+end
+arch dungeon_magic
+x 7
+y 26
+end
+arch yellow_0
+x 7
+y 26
+end
+arch teleporter
+slaying kurte
+hp 15
+sp 3
+x 7
+y 26
+end
+arch dungeon_magic
+x 7
+y 27
+end
+arch yellow_0
+x 7
+y 27
+end
+arch dungeon_magic
+x 7
+y 28
+end
+arch yellow_0
+x 7
+y 28
+end
+arch dungeon_magic
+x 7
+y 29
+end
+arch yellow_0
+x 7
+y 29
+end
+arch dungeon_magic
+x 7
+y 30
+end
+arch yellow_0
+x 7
+y 30
+end
+arch dungeon_magic
+x 7
+y 31
+end
+arch yellow_0
+x 7
+y 31
+end
+arch dungeon_magic
+x 7
+y 32
+end
+arch flagstone
+x 7
+y 32
+end
+arch awall_2_1_2
+x 7
+y 32
+end
+arch dungeon_magic
+x 8
+end
+arch flagstone
+x 8
+end
+arch awall_2_1_2
+x 8
+end
+arch dungeon_magic
+x 8
+y 1
+end
+arch yellow_0
+x 8
+y 1
+end
+arch dungeon_magic
+x 8
+y 2
+end
+arch yellow_0
+x 8
+y 2
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch pedestal_trigger
 invisible 1
 connected 1
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 7
-y 21
-is_floor 0
-end
-arch creator
-x 7
-y 21
-protected 10
-connected 10
-lifesave 1
-end
-arch perm_magic_portal
-slaying ../ancient/to_future
-hp 7
-sp 7
-x 7
-y 21
-end
-arch dungeon_magic
-x 7
-y 22
-end
-arch yellow_0
-x 7
-y 22
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 7
-y 22
-is_floor 0
-end
-arch dungeon_magic
-x 7
-y 23
-end
-arch yellow_0
-x 7
-y 23
-end
-arch dungeon_magic
-x 7
-y 24
-end
-arch yellow_0
-x 7
-y 24
-end
-arch teleporter
-slaying kurte
-hp 15
-sp 3
-x 7
-y 24
-end
-arch yellow_0
-x 7
-y 25
-end
-arch pedestal
-x 7
-y 25
-protected 6
-invisible 1
-connected 6
-end
-arch dungeon_magic
-x 7
-y 26
-end
-arch yellow_0
-x 7
-y 26
-end
-arch teleporter
-slaying kurte
-hp 15
-sp 3
-x 7
-y 26
-end
-arch dungeon_magic
-x 7
-y 27
-end
-arch yellow_0
-x 7
-y 27
-end
-arch dungeon_magic
-x 7
-y 28
-end
-arch yellow_0
-x 7
-y 28
-end
-arch dungeon_magic
-x 7
-y 29
-end
-arch yellow_0
-x 7
-y 29
-end
-arch dungeon_magic
-x 7
-y 30
-end
-arch yellow_0
-x 7
-y 30
-end
-arch dungeon_magic
-x 7
-y 31
-end
-arch yellow_0
-x 7
-y 31
-end
-arch dungeon_magic
-x 7
-y 32
-end
-arch flagstone
-x 7
-y 32
-end
-arch awall_2_1_2
-x 7
-y 32
-end
-arch dungeon_magic
-x 8
-end
-arch flagstone
-x 8
-end
-arch awall_2_1_2
-x 8
-end
-arch dungeon_magic
-x 8
-y 1
-end
-arch yellow_0
-x 8
-y 1
-end
-arch dungeon_magic
-x 8
-y 2
-end
-arch yellow_0
-x 8
-y 2
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 8
-y 2
-is_floor 0
-end
-arch dungeon_magic
 x 8
 y 3
 end
@@ -2684,9 +2831,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.123
+is_floor 0
 x 8
 y 3
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -2699,9 +2846,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.133
+is_floor 0
 x 8
 y 4
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -2761,775 +2908,822 @@ end
 arch flagstone
 name pentagram
 face pentagram.111
+is_floor 0
 x 8
 y 10
-is_floor 0
 end
 arch dungeon_magic
 x 8
-y 11
-end
-arch yellow_0
-x 8
-y 11
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 8
-y 11
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch yellow_0
-x 8
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 8
-y 12
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch yellow_0
-x 8
-y 13
-end
-arch dungeon_magic
-x 8
-y 14
-end
-arch flagstone
-x 8
-y 14
-end
-arch awall_2_1_2
-x 8
-y 14
-end
-arch blocked
-x 8
-y 15
-end
-arch blocked
-x 8
-y 16
-end
-arch blocked
-x 8
-y 17
-end
-arch dungeon_magic
-x 8
-y 18
-end
-arch flagstone
-x 8
-y 18
-end
-arch awall_2_1_2
-x 8
-y 18
-end
-arch dungeon_magic
-x 8
-y 19
-end
-arch yellow_0
-x 8
-y 19
-end
-arch dungeon_magic
-x 8
-y 20
-end
-arch yellow_0
-x 8
-y 20
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 8
-y 20
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 21
-end
-arch yellow_0
-x 8
-y 21
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 8
-y 21
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 22
-end
-arch yellow_0
-x 8
-y 22
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 8
-y 22
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 23
-end
-arch yellow_0
-x 8
-y 23
-end
-arch dungeon_magic
-x 8
-y 24
-end
-arch yellow_0
-x 8
-y 24
-end
-arch dungeon_magic
-x 8
-y 25
-end
-arch yellow_0
-x 8
-y 25
-end
-arch teleporter
-slaying kurte
-hp 15
-sp 3
-x 8
-y 25
-end
-arch dungeon_magic
-x 8
-y 26
-end
-arch yellow_0
-x 8
-y 26
-end
-arch dungeon_magic
-x 8
-y 27
-end
-arch yellow_0
-x 8
-y 27
-end
-arch dungeon_magic
-x 8
-y 28
-end
-arch yellow_0
-x 8
-y 28
-end
-arch flagstone
-name pentagram
-face pentagram.111
-x 8
-y 28
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 29
-end
-arch yellow_0
-x 8
-y 29
-end
-arch flagstone
-name pentagram
-face pentagram.121
-x 8
-y 29
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 30
-end
-arch yellow_0
-x 8
-y 30
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 8
-y 30
-is_floor 0
-end
-arch dungeon_magic
-x 8
-y 31
-end
-arch yellow_0
-x 8
-y 31
-end
-arch dungeon_magic
-x 8
-y 32
-end
-arch flagstone
-x 8
-y 32
-end
-arch awall_2_1_2
-x 8
-y 32
-end
-arch dungeon_magic
-x 9
-end
-arch flagstone
-x 9
-end
-arch awall_2_1_2
-x 9
-end
-arch dungeon_magic
-x 9
-y 1
-end
-arch yellow_0
-x 9
-y 1
-end
-arch dungeon_magic
-x 9
-y 2
-end
-arch yellow_0
-x 9
-y 2
-end
-arch dungeon_magic
-x 9
-y 3
-end
-arch yellow_0
-x 9
-y 3
-end
-arch dungeon_magic
-x 9
-y 4
-end
-arch yellow_0
-x 9
-y 4
-end
-arch dungeon_magic
-x 9
-y 5
-end
-arch yellow_0
-x 9
-y 5
-end
-arch dungeon_magic
-x 9
-y 6
-end
-arch yellow_0
-x 9
-y 6
-end
-arch dungeon_magic
-x 9
-y 7
-end
-arch yellow_0
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
-y 8
-end
-arch yellow_0
-x 9
-y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch yellow_0
-x 9
-y 9
-end
-arch dungeon_magic
-x 9
-y 10
-end
-arch yellow_0
-x 9
-y 10
-end
-arch flagstone
-name pentagram
-face pentagram.112
-x 9
-y 10
-is_floor 0
-end
-arch dungeon_magic
-x 9
-y 11
-end
-arch yellow_0
-x 9
 y 11
 end
 arch pedestal_trigger
-x 9
-y 11
-protected 3
 invisible 1
 connected 3
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 9
+x 8
 y 11
-is_floor 0
-end
-arch dungeon_magic
-x 9
-y 12
 end
 arch yellow_0
-x 9
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 9
-y 12
-is_floor 0
-end
-arch dungeon_magic
-x 9
-y 13
-end
-arch yellow_0
-x 9
-y 13
-end
-arch dungeon_magic
-x 9
-y 14
-end
-arch flagstone
-x 9
-y 14
-end
-arch awall_2_1_2
-x 9
-y 14
-end
-arch blocked
-x 9
-y 15
-end
-arch grate_closed_2
-name 101
-x 9
-y 16
-speed 0.500000
-protected 101
-connected 101
-end
-arch blocked
-x 9
-y 17
-end
-arch dungeon_magic
-x 9
-y 18
-end
-arch flagstone
-x 9
-y 18
-end
-arch awall_2_1_2
-x 9
-y 18
-end
-arch dungeon_magic
-x 9
-y 19
-end
-arch yellow_0
-x 9
-y 19
-end
-arch dungeon_magic
-x 9
-y 20
-end
-arch yellow_0
-x 9
-y 20
-end
-arch dungeon_magic
-x 9
-y 21
-end
-arch yellow_0
-x 9
-y 21
-end
-arch dungeon_magic
-x 9
-y 22
-end
-arch yellow_0
-x 9
-y 22
-end
-arch dungeon_magic
-x 9
-y 23
-end
-arch yellow_0
-x 9
-y 23
-end
-arch dungeon_magic
-x 9
-y 24
-end
-arch yellow_0
-x 9
-y 24
-end
-arch dungeon_magic
-x 9
-y 25
-end
-arch yellow_0
-x 9
-y 25
-end
-arch dungeon_magic
-x 9
-y 26
-end
-arch yellow_0
-x 9
-y 26
-end
-arch dungeon_magic
-x 9
-y 27
-end
-arch yellow_0
-x 9
-y 27
-end
-arch dungeon_magic
-x 9
-y 28
-end
-arch yellow_0
-x 9
-y 28
-end
-arch flagstone
-name pentagram
-face pentagram.112
-x 9
-y 28
-is_floor 0
-end
-arch dungeon_magic
-x 9
-y 29
-end
-arch yellow_0
-x 9
-y 29
-end
-arch pedestal_trigger
-x 9
-y 29
-protected 3
-invisible 1
-connected 3
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 9
-y 29
-is_floor 0
-end
-arch creator
-x 9
-y 29
-protected 10
-connected 10
-lifesave 1
-end
-arch perm_magic_portal
-slaying ../ancient/to_future
-hp 7
-sp 7
-x 9
-y 29
-end
-arch dungeon_magic
-x 9
-y 30
-end
-arch yellow_0
-x 9
-y 30
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 9
-y 30
-is_floor 0
-end
-arch dungeon_magic
-x 9
-y 31
-end
-arch yellow_0
-x 9
-y 31
-end
-arch dungeon_magic
-x 9
-y 32
-end
-arch flagstone
-x 9
-y 32
-end
-arch awall_2_1_2
-x 9
-y 32
-end
-arch dungeon_magic
-x 10
-end
-arch flagstone
-x 10
-end
-arch awall_2_1_2
-x 10
-end
-arch dungeon_magic
-x 10
-y 1
-end
-arch yellow_0
-x 10
-y 1
-end
-arch dungeon_magic
-x 10
-y 2
-end
-arch yellow_0
-x 10
-y 2
-end
-arch dungeon_magic
-x 10
-y 3
-end
-arch yellow_0
-x 10
-y 3
-end
-arch dungeon_magic
-x 10
-y 4
-end
-arch yellow_0
-x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 5
-end
-arch yellow_0
-x 10
-y 5
-end
-arch flagstone
-name pentagram
-face pentagram.111
-x 10
-y 5
-is_floor 0
-end
-arch dungeon_magic
-x 10
-y 6
-end
-arch yellow_0
-x 10
-y 6
+x 8
+y 11
 end
 arch flagstone
 name pentagram
 face pentagram.121
-x 10
-y 6
 is_floor 0
+x 8
+y 11
 end
 arch dungeon_magic
-x 10
-y 7
+x 8
+y 12
 end
 arch yellow_0
-x 10
-y 7
+x 8
+y 12
 end
 arch flagstone
 name pentagram
 face pentagram.131
-x 10
-y 7
 is_floor 0
-end
-arch dungeon_magic
-x 10
-y 8
-end
-arch yellow_0
-x 10
-y 8
-end
-arch dungeon_magic
-x 10
-y 9
-end
-arch yellow_0
-x 10
-y 9
-end
-arch dungeon_magic
-x 10
-y 10
-end
-arch yellow_0
-x 10
-y 10
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 10
-y 10
-is_floor 0
-end
-arch dungeon_magic
-x 10
-y 11
-end
-arch yellow_0
-x 10
-y 11
-end
-arch flagstone
-name pentagram
-face pentagram.123
-x 10
-y 11
-is_floor 0
-end
-arch dungeon_magic
-x 10
+x 8
 y 12
 end
-arch yellow_0
-x 10
-y 12
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 10
-y 12
-is_floor 0
-end
 arch dungeon_magic
-x 10
+x 8
 y 13
 end
 arch yellow_0
-x 10
+x 8
 y 13
 end
 arch dungeon_magic
-x 10
+x 8
 y 14
 end
 arch flagstone
-x 10
+x 8
 y 14
 end
 arch awall_2_1_2
-x 10
+x 8
 y 14
 end
 arch blocked
-x 10
+x 8
 y 15
+end
+arch magic_mouth
+name 15
+msg
+*gong*
+endmsg
+connected 15
+walk_on 0
+fly_on 0
+activate_on_release 0
+x 8
+y 16
+end
+arch flagstone
+x 8
+y 16
 end
 arch button_small
-name 10
-x 10
+name 15
+connected 15
+x 8
 y 16
-protected 10
-weight 1800
-connected 10
 end
-arch grate_open_2
-name 101
+arch teleporter
+name 6
+hp 9
+sp 16
+connected 6
+speed 0.000000
+activate_on_release 0
+x 8
+y 16
+end
+arch blocked
+x 8
+y 17
+end
+arch dungeon_magic
+x 8
+y 18
+end
+arch flagstone
+x 8
+y 18
+end
+arch awall_2_1_2
+x 8
+y 18
+end
+arch dungeon_magic
+x 8
+y 19
+end
+arch yellow_0
+x 8
+y 19
+end
+arch dungeon_magic
+x 8
+y 20
+end
+arch yellow_0
+x 8
+y 20
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 8
+y 20
+end
+arch dungeon_magic
+x 8
+y 21
+end
+arch yellow_0
+x 8
+y 21
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 8
+y 21
+end
+arch dungeon_magic
+x 8
+y 22
+end
+arch yellow_0
+x 8
+y 22
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 8
+y 22
+end
+arch dungeon_magic
+x 8
+y 23
+end
+arch yellow_0
+x 8
+y 23
+end
+arch dungeon_magic
+x 8
+y 24
+end
+arch yellow_0
+x 8
+y 24
+end
+arch dungeon_magic
+x 8
+y 25
+end
+arch yellow_0
+x 8
+y 25
+end
+arch teleporter
+slaying kurte
+hp 15
+sp 3
+x 8
+y 25
+end
+arch dungeon_magic
+x 8
+y 26
+end
+arch yellow_0
+x 8
+y 26
+end
+arch dungeon_magic
+x 8
+y 27
+end
+arch yellow_0
+x 8
+y 27
+end
+arch dungeon_magic
+x 8
+y 28
+end
+arch yellow_0
+x 8
+y 28
+end
+arch flagstone
+name pentagram
+face pentagram.111
+is_floor 0
+x 8
+y 28
+end
+arch dungeon_magic
+x 8
+y 29
+end
+arch yellow_0
+x 8
+y 29
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 8
+y 29
+end
+arch dungeon_magic
+x 8
+y 30
+end
+arch yellow_0
+x 8
+y 30
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 8
+y 30
+end
+arch dungeon_magic
+x 8
+y 31
+end
+arch yellow_0
+x 8
+y 31
+end
+arch dungeon_magic
+x 8
+y 32
+end
+arch flagstone
+x 8
+y 32
+end
+arch awall_2_1_2
+x 8
+y 32
+end
+arch dungeon_magic
+x 9
+end
+arch flagstone
+x 9
+end
+arch awall_2_1_2
+x 9
+end
+arch dungeon_magic
+x 9
+y 1
+end
+arch yellow_0
+x 9
+y 1
+end
+arch dungeon_magic
+x 9
+y 2
+end
+arch yellow_0
+x 9
+y 2
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch yellow_0
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 4
+end
+arch yellow_0
+x 9
+y 4
+end
+arch dungeon_magic
+x 9
+y 5
+end
+arch yellow_0
+x 9
+y 5
+end
+arch dungeon_magic
+x 9
+y 6
+end
+arch yellow_0
+x 9
+y 6
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch yellow_0
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
+end
+arch yellow_0
+x 9
+y 8
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch yellow_0
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch pedestal_trigger
+invisible 1
+connected 3
+x 9
+y 10
+end
+arch yellow_0
+x 9
+y 10
+end
+arch flagstone
+name pentagram
+face pentagram.112
+is_floor 0
+x 9
+y 10
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch pedestal_trigger
+invisible 1
+connected 3
+x 9
+y 11
+end
+arch yellow_0
+x 9
+y 11
+end
+arch flagstone
+name pentagram
+face pentagram.122
+is_floor 0
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch pedestal_trigger
+invisible 1
+connected 3
+x 9
+y 12
+end
+arch yellow_0
+x 9
+y 12
+end
+arch flagstone
+name pentagram
+face pentagram.132
+is_floor 0
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch yellow_0
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
+end
+arch flagstone
+x 9
+y 14
+end
+arch awall_2_1_2
+x 9
+y 14
+end
+arch blocked
+x 9
+y 15
+end
+arch flagstone
+x 9
+y 16
+end
+arch button_small
+name 10 - activate
+connected 10
+x 9
+y 16
+end
+arch teleporter
+name 10
+hp 3
+sp 16
+connected 10
+speed 0.000000
+x 9
+y 16
+end
+arch blocked
+x 9
+y 17
+end
+arch dungeon_magic
+x 9
+y 18
+end
+arch flagstone
+x 9
+y 18
+end
+arch awall_2_1_2
+x 9
+y 18
+end
+arch dungeon_magic
+x 9
+y 19
+end
+arch yellow_0
+x 9
+y 19
+end
+arch dungeon_magic
+x 9
+y 20
+end
+arch yellow_0
+x 9
+y 20
+end
+arch dungeon_magic
+x 9
+y 21
+end
+arch yellow_0
+x 9
+y 21
+end
+arch dungeon_magic
+x 9
+y 22
+end
+arch yellow_0
+x 9
+y 22
+end
+arch dungeon_magic
+x 9
+y 23
+end
+arch yellow_0
+x 9
+y 23
+end
+arch dungeon_magic
+x 9
+y 24
+end
+arch yellow_0
+x 9
+y 24
+end
+arch dungeon_magic
+x 9
+y 25
+end
+arch yellow_0
+x 9
+y 25
+end
+arch dungeon_magic
+x 9
+y 26
+end
+arch yellow_0
+x 9
+y 26
+end
+arch dungeon_magic
+x 9
+y 27
+end
+arch yellow_0
+x 9
+y 27
+end
+arch dungeon_magic
+x 9
+y 28
+end
+arch yellow_0
+x 9
+y 28
+end
+arch flagstone
+name pentagram
+face pentagram.112
+is_floor 0
+x 9
+y 28
+end
+arch dungeon_magic
+x 9
+y 29
+end
+arch yellow_0
+x 9
+y 29
+end
+arch flagstone
+name pentagram
+face pentagram.122
+is_floor 0
+x 9
+y 29
+end
+arch creator
+connected 10
+lifesave 1
+x 9
+y 29
+end
+arch perm_magic_portal
+slaying ../ancient/to_future
+hp 7
+sp 7
+x 9
+y 29
+end
+arch dungeon_magic
+x 9
+y 30
+end
+arch yellow_0
+x 9
+y 30
+end
+arch flagstone
+name pentagram
+face pentagram.132
+is_floor 0
+x 9
+y 30
+end
+arch dungeon_magic
+x 9
+y 31
+end
+arch yellow_0
+x 9
+y 31
+end
+arch dungeon_magic
+x 9
+y 32
+end
+arch flagstone
+x 9
+y 32
+end
+arch awall_2_1_2
+x 9
+y 32
+end
+arch dungeon_magic
+x 10
+end
+arch flagstone
+x 10
+end
+arch awall_2_1_2
+x 10
+end
+arch dungeon_magic
+x 10
+y 1
+end
+arch yellow_0
+x 10
+y 1
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch yellow_0
+x 10
+y 2
+end
+arch dungeon_magic
+x 10
+y 3
+end
+arch yellow_0
+x 10
+y 3
+end
+arch dungeon_magic
+x 10
+y 4
+end
+arch yellow_0
+x 10
+y 4
+end
+arch dungeon_magic
+x 10
+y 5
+end
+arch yellow_0
+x 10
+y 5
+end
+arch flagstone
+name pentagram
+face pentagram.111
+is_floor 0
+x 10
+y 5
+end
+arch dungeon_magic
+x 10
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 2
+x 10
+y 6
+end
+arch yellow_0
+x 10
+y 6
+end
+arch flagstone
+name pentagram
+face pentagram.121
+is_floor 0
+x 10
+y 6
+end
+arch dungeon_magic
+x 10
+y 7
+end
+arch yellow_0
+x 10
+y 7
+end
+arch flagstone
+name pentagram
+face pentagram.131
+is_floor 0
+x 10
+y 7
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch yellow_0
+x 10
+y 8
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch yellow_0
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch yellow_0
+x 10
+y 10
+end
+arch flagstone
+name pentagram
+face pentagram.113
+is_floor 0
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 11
+end
+arch pedestal_trigger
+invisible 1
+connected 3
+x 10
+y 11
+end
+arch yellow_0
+x 10
+y 11
+end
+arch flagstone
+name pentagram
+face pentagram.123
+is_floor 0
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch yellow_0
+x 10
+y 12
+end
+arch flagstone
+name pentagram
+face pentagram.133
+is_floor 0
+x 10
+y 12
+end
+arch dungeon_magic
+x 10
+y 13
+end
+arch yellow_0
+x 10
+y 13
+end
+arch dungeon_magic
+x 10
+y 14
+end
+arch flagstone
+x 10
+y 14
+end
+arch awall_2_1_2
+x 10
+y 14
+end
+arch blocked
+x 10
+y 15
+end
+arch blocked
 x 10
 y 16
-speed 0.500000
-protected 101
-value 1
-connected 101
 end
 arch blocked
 x 10
@@ -3590,9 +3784,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.111
+is_floor 0
 x 10
 y 23
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3605,9 +3799,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.121
+is_floor 0
 x 10
 y 24
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3620,9 +3814,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.131
+is_floor 0
 x 10
 y 25
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3651,9 +3845,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.113
+is_floor 0
 x 10
 y 28
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3666,9 +3860,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.123
+is_floor 0
 x 10
 y 29
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3681,9 +3875,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.133
+is_floor 0
 x 10
 y 30
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3747,6 +3941,12 @@ x 11
 y 4
 end
 arch dungeon_magic
+x 11
+y 5
+end
+arch pedestal_trigger
+invisible 1
+connected 2
 x 11
 y 5
 end
@@ -3757,11 +3957,17 @@ end
 arch flagstone
 name pentagram
 face pentagram.112
+is_floor 0
 x 11
 y 5
-is_floor 0
 end
 arch dungeon_magic
+x 11
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 2
 x 11
 y 6
 end
@@ -3769,21 +3975,20 @@ arch yellow_0
 x 11
 y 6
 end
-arch pedestal_trigger
-x 11
-y 6
-protected 2
-invisible 1
-connected 2
-end
 arch flagstone
 name pentagram
 face pentagram.122
+is_floor 0
 x 11
 y 6
-is_floor 0
 end
 arch dungeon_magic
+x 11
+y 7
+end
+arch pedestal_trigger
+invisible 1
+connected 2
 x 11
 y 7
 end
@@ -3794,9 +3999,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.132
+is_floor 0
 x 11
 y 7
-is_floor 0
 end
 arch dungeon_magic
 x 11
@@ -3925,9 +4130,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.112
+is_floor 0
 x 11
 y 23
-is_floor 0
 end
 arch dungeon_magic
 x 11
@@ -3937,26 +4142,18 @@ arch yellow_0
 x 11
 y 24
 end
-arch pedestal_trigger
-x 11
-y 24
-protected 2
-invisible 1
-connected 2
-end
 arch flagstone
 name pentagram
 face pentagram.122
+is_floor 0
 x 11
 y 24
-is_floor 0
 end
 arch creator
-x 11
-y 24
-protected 10
 connected 10
 lifesave 1
+x 11
+y 24
 end
 arch perm_magic_portal
 slaying ../ancient/to_future
@@ -3976,9 +4173,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.132
+is_floor 0
 x 11
 y 25
-is_floor 0
 end
 arch dungeon_magic
 x 11
@@ -4092,11 +4289,17 @@ end
 arch flagstone
 name pentagram
 face pentagram.113
+is_floor 0
 x 12
 y 5
-is_floor 0
 end
 arch dungeon_magic
+x 12
+y 6
+end
+arch pedestal_trigger
+invisible 1
+connected 2
 x 12
 y 6
 end
@@ -4107,9 +4310,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.123
+is_floor 0
 x 12
 y 6
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4122,9 +4325,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.133
+is_floor 0
 x 12
 y 7
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4190,40 +4393,7 @@ arch blocked
 x 12
 y 15
 end
-arch teleporter
-name setup scrolls on gate 101 at start up
-hp 9
-sp 16
-x 12
-y 16
-end
-arch scroll
-name scroll6
-x 12
-y 16
-end
-arch scroll
-name scroll5
-x 12
-y 16
-end
-arch scroll
-name scroll4
-x 12
-y 16
-end
-arch scroll
-name scroll3
-x 12
-y 16
-end
-arch scroll
-name scroll2
-x 12
-y 16
-end
-arch scroll
-name scroll1
+arch blocked
 x 12
 y 16
 end
@@ -4286,9 +4456,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.113
+is_floor 0
 x 12
 y 23
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4301,9 +4471,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.123
+is_floor 0
 x 12
 y 24
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4316,9 +4486,9 @@ end
 arch flagstone
 name pentagram
 face pentagram.133
+is_floor 0
 x 12
 y 25
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4509,14 +4679,7 @@ arch blocked
 x 13
 y 15
 end
-arch teleporter
-name setup scroll on button 101 at startup
-hp 7
-sp 16
-x 13
-y 16
-end
-arch scroll
+arch blocked
 x 13
 y 16
 end
@@ -4833,19 +4996,7 @@ arch blocked
 x 14
 y 15
 end
-arch creator
-name creator for new scroll
-other_arch scroll
-x 14
-y 16
-protected 10
-connected 10
-lifesave 1
-end
-arch teleporter
-name move scroll on button 101
-hp 7
-sp 16
+arch blocked
 x 14
 y 16
 end
