@@ -903,78 +903,6 @@ end
 arch ability_slow
 end
 end
-More
-arch byakie_2
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 700000
-dam 60
-wc -50
-ac -40
-x 9
-y 4
-speed -0.700000
-level 50
-immune 283683
-see_invisible 1
-end
-More
-arch byakie_3
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 700000
-dam 60
-wc -50
-ac -40
-x 8
-y 5
-speed -0.700000
-level 50
-immune 283683
-see_invisible 1
-end
-More
-arch byakie_4
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 700000
-dam 60
-wc -50
-ac -40
-x 9
-y 5
-speed -0.700000
-level 50
-immune 283683
-see_invisible 1
-end
 arch djinn
 Str 75
 Dex 60
@@ -1025,27 +953,4 @@ arch ability_paralyze
 end
 arch ability_speedball
 end
-end
-More
-arch djinn_2
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 8
-y 7
-speed 0.900000
-level 75
-immune 153215
-see_invisible 1
 end

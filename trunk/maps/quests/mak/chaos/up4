@@ -6528,40 +6528,6 @@ name a semi-ethereal key
 slaying djinn1
 end
 end
-More
-arch djinn_2
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 15
-y 19
-speed 0.900000
-level 75
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_ghosthit 100
-resist_poison 100
-resist_paralyze 100
-resist_fear 100
-resist_death 100
-see_invisible 1
-end
 arch djinn
 Str 75
 Dex 60
@@ -6618,38 +6584,4 @@ arch key2
 name a semi-ethereal key
 slaying djinn2
 end
-end
-More
-arch djinn_2
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 27
-y 19
-speed 0.900000
-level 75
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_ghosthit 100
-resist_poison 100
-resist_paralyze 100
-resist_fear 100
-resist_death 100
-see_invisible 1
 end
