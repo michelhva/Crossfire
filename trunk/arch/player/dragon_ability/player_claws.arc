@@ -11,6 +11,7 @@ attacktype 4
 no_drop 1
 editable 0
 skill clawing
+animation pl_dragon_r
 end
 #
 Object ice_clawing
