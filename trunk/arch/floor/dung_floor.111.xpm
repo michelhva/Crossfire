@@ -3,10 +3,10 @@ static char * dung_floor_111_xpm[] = {
 /* width height ncolors chars_per_pixel */
 "24 24 4 1",
 /* colors */
-" 	s Gray	m white	c grey50",
-".	c Black",
-"X	s Dark gray	c Grey25",
-"o	c grey75",
+" 	c grey60",
+".	s Dark grey    c grey25",
+"X	s Light grey   c grey50",
+"o	c Light blue",
 /* pixels */
 "   .X    ..    .X    .XX",
 "...XX....XX....XXX....X.",
