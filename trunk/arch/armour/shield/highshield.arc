@@ -1,6 +1,8 @@
 Object high_shield
 nrof 1
 name high shield
+name_pl high shields
+client_type 261
 type 33
 face highshield.111
 ac 1

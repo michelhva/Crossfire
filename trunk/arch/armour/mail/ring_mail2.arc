@@ -1,6 +1,8 @@
 Object ring_mail2
 nrof 1
 name ring mail
+name_pl ring mails
+client_type 253
 type 16
 face ring_mail2.111
 last_heal 15

@@ -11,4 +11,6 @@ value 13
 editable 1024
 attacktype 1
 magicmap brown
+name_pl stonehammers
+client_type 126
 end

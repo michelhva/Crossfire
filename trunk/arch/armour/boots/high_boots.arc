@@ -1,5 +1,7 @@
 Object high_boots
 name jack boots
+name_pl jack boots
+client_type 291
 face high_boots.111
 value 60
 last_heal 4

@@ -10,4 +10,6 @@ value 35
 editable 1024
 attacktype 1
 magicmap brown
+name_pl morningstars
+client_type 141
 end

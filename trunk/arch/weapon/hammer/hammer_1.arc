@@ -10,4 +10,6 @@ value 25
 editable 1024
 attacktype 1
 magicmap brown
+name_pl hammers
+client_type 126
 end

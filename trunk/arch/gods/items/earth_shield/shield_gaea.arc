@@ -26,4 +26,6 @@ resist_cold 30
 resist_electricity 30
 resist_ghosthit -20
 weight 20000
+name_pl Gaea's Shields of Earth
+client_type 260
 end

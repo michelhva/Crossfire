@@ -26,4 +26,6 @@ editable 1024
 attacktype 1
 weapontype 2
 magicmap grey
+name_pl throwing daggers
+client_type 101
 end

@@ -7,4 +7,6 @@ value 40
 nrof 1
 editable 128
 magicmap white
+name_pl gravestones
+client_type 8011
 end

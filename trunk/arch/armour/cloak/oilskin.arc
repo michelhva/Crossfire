@@ -1,5 +1,7 @@
 Object oilskin
 name oilskin cloak
+name_pl oilskin cloaks
+client_type 280
 type 87
 face oilskin.111
 Dex -1

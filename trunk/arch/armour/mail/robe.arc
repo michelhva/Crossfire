@@ -1,4 +1,7 @@
 Object robe
+name robe
+name_pl robes
+client_type 256
 nrof 1
 type 16
 face robe.111

@@ -1,5 +1,7 @@
 Object eyeshield
 name eyeshield
+name_pl eyeshields
+client_type 260
 nrof 1
 material 32
 type 33

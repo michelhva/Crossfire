@@ -13,4 +13,6 @@ value 25
 editable 1024
 attacktype 1
 weapontype 1
+name_pl Serpentman swords
+client_type 101
 end

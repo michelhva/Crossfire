@@ -10,4 +10,6 @@ weight 100
 value 230
 editable 2048
 magicmap grey
+name_pl dusts
+client_type 652
 end

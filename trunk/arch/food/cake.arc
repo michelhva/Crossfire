@@ -9,4 +9,6 @@ weight 3000
 identified 1
 editable 2048
 magicmap yellow
+name_pl cakes
+client_type 601
 end

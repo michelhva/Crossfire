@@ -18,4 +18,6 @@ resist_drain 100
 editable 6144
 nrof 1
 speed 0.1
+name_pl strange rings
+client_type 390
 end

@@ -1,5 +1,7 @@
 Object magic_resist
 name Cloak of Magic Resistance
+name_pl Cloaks of Magic Resistance
+client_type 280
 nrof 1
 type 87
 face magic_resist.111

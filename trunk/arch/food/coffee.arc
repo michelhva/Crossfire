@@ -10,4 +10,6 @@ weight 100
 editable 2048
 identified 1
 magicmap white
+name_pl cups of coffee
+client_type 601
 end

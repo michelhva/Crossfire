@@ -9,4 +9,6 @@ value 2000
 material 66
 editable 128
 magicmap grey
+name_pl flints and steels
+client_type 1101
 end

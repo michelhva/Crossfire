@@ -14,4 +14,6 @@ can_cut 1
 can_parry 1
 attacktype 1
 weapontype 1
+name_pl scimitars
+client_type 101
 end

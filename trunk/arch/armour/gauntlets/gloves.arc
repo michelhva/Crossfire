@@ -1,6 +1,7 @@
 Object gloves
 nrof 1
 name gloves
+client_type 301
 face gloves.111
 type 100
 resist_physical 1

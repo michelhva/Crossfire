@@ -12,6 +12,8 @@ Str 10
 identified 1
 editable 128
 color_fg black
+name_pl key rings
+client_type 60
 end
 Object close_key_ring
 name close the key ring

@@ -9,6 +9,8 @@ container 150000
 weight 80000
 editable 128
 identified 1
+name_pl bookshelves
+client_type 51
 end
 Object close_shelf
 name in the shelf

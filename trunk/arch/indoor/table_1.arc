@@ -9,4 +9,6 @@ material 16
 nrof 1
 editable 128
 magicmap brown
+name_pl tables
+client_type 8002
 end

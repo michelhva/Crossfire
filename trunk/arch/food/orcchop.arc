@@ -11,4 +11,6 @@ weight 650
 editable 2048
 identified 1
 magicmap red
+name_pl orc chops
+client_type 624
 end

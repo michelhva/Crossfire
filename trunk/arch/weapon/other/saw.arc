@@ -12,4 +12,6 @@ weight 6500
 value 35
 editable 1024
 attacktype 1
+name_pl saws
+client_type 145
 end

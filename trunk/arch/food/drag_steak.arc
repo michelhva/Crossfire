@@ -10,4 +10,6 @@ value 10
 weight 5
 editable 2048
 identified 1
+name_pl steaks
+client_type 624
 end

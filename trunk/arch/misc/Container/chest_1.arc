@@ -10,4 +10,6 @@ editable 132
 identified 1
 randomitems chest
 magicmap khaki
+name_pl chests
+client_type 51
 end

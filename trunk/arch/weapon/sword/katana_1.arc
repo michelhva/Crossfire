@@ -12,4 +12,6 @@ editable 1024
 attacktype 1
 weapontype 4
 magicmap grey
+name_pl katanas
+client_type 101
 end

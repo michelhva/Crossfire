@@ -11,4 +11,6 @@ value 2
 weight 100
 editable 2048
 identified 1
+name_pl oranges
+client_type 601
 end

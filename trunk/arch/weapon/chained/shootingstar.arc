@@ -11,4 +11,6 @@ value 30000
 editable 1024
 attacktype 1
 magicmap black
+name_pl shootingstars
+client_type 141
 end

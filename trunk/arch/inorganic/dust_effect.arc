@@ -17,4 +17,6 @@ dam 1
 flying 1
 no_pick 1
 editable 32
+name_pl clouds of dust
+client_type 641
 end

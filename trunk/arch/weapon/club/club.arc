@@ -10,4 +10,6 @@ value 10
 editable 1024
 attacktype 1
 magicmap khaki
+name_pl clubs
+client_type 121
 end

@@ -10,4 +10,6 @@ lifesave 1
 editable 6144
 magicmap yellow
 nrof 1
+name_pl amulets of lifesaving
+client_type 381
 end

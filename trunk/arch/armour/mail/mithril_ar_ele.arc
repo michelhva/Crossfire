@@ -1,6 +1,8 @@
 Object mithril_ar_ele
 nrof 1
 name mithril chainmail of lightning
+name_pl mithril chainmails of lightning
+client_type 250
 type 16
 face mithril_ar.111
 anim

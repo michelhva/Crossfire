@@ -10,4 +10,6 @@ weight 1500
 value 13000
 Int 1
 editable 2048
+name_pl potions of intelligence
+client_type 651
 end

@@ -1,6 +1,8 @@
 Object mithril_chainmail
 nrof 1
 name mithril chainmail
+name_pl mithril chainmails
+client_type 250
 type 16
 face mithril_ar.111
 anim

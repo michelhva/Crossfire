@@ -15,4 +15,6 @@ weight 50
 material 64
 editable 2048
 identified 1
+name_pl diamonds
+client_type 2011
 end

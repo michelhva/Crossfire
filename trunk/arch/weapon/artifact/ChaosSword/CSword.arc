@@ -46,4 +46,6 @@ weapontype 1
 path_denied 2304
 value 1000000
 magicmap black
+name_pl Chaos Swords
+client_type 100
 end

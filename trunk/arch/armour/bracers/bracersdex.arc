@@ -1,6 +1,8 @@
 Object bracers_dex
 nrof 1
 name bracers
+name_pl bracers
+client_type 311
 title of dexterity
 face bracersdex.111
 type 104

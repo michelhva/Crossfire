@@ -28,4 +28,6 @@ editable 5120
 attacktype 1
 weapontype 1
 magicmap black
+name_pl Demonbanes
+client_type 100
 end

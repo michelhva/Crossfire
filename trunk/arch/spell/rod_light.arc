@@ -16,4 +16,6 @@ material 70
 hp 5
 maxhp 5
 editable 2048
+name_pl rods
+client_type 702
 end

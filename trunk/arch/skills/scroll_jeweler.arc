@@ -11,4 +11,6 @@ weight 200
 sp 5
 editable 2048
 identified 1
+name_pl scroll of appraisments
+client_type 1021
 end

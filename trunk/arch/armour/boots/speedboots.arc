@@ -1,5 +1,7 @@
 Object speedboots
 name speed boots
+name_pl speed boots
+client_type 290
 nrof 1
 exp 6
 face speedboots.111

@@ -1,5 +1,7 @@
 Object elvenboots
 name elven boots
+name_pl elven boots
+client_type 290
 nrof 1
 face elvenboots.111
 value 30000

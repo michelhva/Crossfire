@@ -20,9 +20,7 @@ Wis 1
 dam 25
 resist_drain 100
 resist_ghosthit 100
-
 resist_deplete 30
-
 weight 9000
 value 220000
 editable 5120
@@ -31,4 +29,6 @@ weapontype 4
 material 2
 magic 3
 magicmap grey
+name_pl Katanas of Masamune
+client_type 100
 end

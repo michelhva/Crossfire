@@ -21,4 +21,6 @@ attacktype 4
 weapontype 1
 editable 5120
 magicmap red
+name_pl Firebrands
+client_type 100
 end

@@ -13,4 +13,6 @@ editable 5120
 attacktype 65537
 magicmap black
 weapontype 1
+name_pl Deathbringers
+client_type 100
 end

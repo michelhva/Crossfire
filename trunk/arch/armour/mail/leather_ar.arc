@@ -1,6 +1,8 @@
 Object leather_armour
 nrof 1
 name leather armour
+name_pl leather armours
+client_type 254
 type 16
 face leather_ar.111
 last_heal 8

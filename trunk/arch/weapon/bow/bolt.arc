@@ -25,4 +25,6 @@ wc 2
 editable 1024
 attacktype 1
 magicmap brown
+name_pl bolts
+client_type 165
 end

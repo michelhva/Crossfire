@@ -1,5 +1,7 @@
 Object skull_tooth
 name Skull's tooth
+name_pl Skull's teeth
+client_type 625
 nrof 1
 face tooth.111
 material 64

@@ -1,5 +1,7 @@
 Object elven_robe
 name Elven Robe
+name_pl Elven Robes
+client_type 256
 nrof 1
 type 16
 face elven_robe.111

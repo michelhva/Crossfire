@@ -9,4 +9,6 @@ weight 12300
 value 1700
 color_fg orange
 editable 128
+name_pl crowns
+client_type 271
 end

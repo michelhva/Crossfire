@@ -10,4 +10,6 @@ weight 1500
 value 12000
 Wis 1
 editable 2048
+name_pl potions of wisdom
+client_type 651
 end

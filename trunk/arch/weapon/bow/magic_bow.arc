@@ -22,4 +22,6 @@ no_strength 0
 editable 5120
 attacktype 1
 magicmap black
+name_pl Energy Bows
+client_type 151
 end

@@ -17,4 +17,7 @@ msg
   many magics which would affect 
   your movement.
 endmsg
+name tooth charm
+name_pl tooth charms
+client_type 381
 end

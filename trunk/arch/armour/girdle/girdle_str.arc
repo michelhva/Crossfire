@@ -2,6 +2,8 @@ Object girdle_str
 nrof 1
 type 113
 name girdle
+name_pl girdles
+client_type 321
 title of strength
 face girdle_str.111
 anim

@@ -7,4 +7,6 @@ weight 50000
 value 1
 editable 1024
 material 64
+name_pl large rocks
+client_type 8012
 end

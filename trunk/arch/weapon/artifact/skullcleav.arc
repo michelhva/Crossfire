@@ -21,4 +21,6 @@ editable 5120
 attacktype 1
 weapontype 3
 magicmap black
+name_pl Skullcleavers
+client_type 100
 end

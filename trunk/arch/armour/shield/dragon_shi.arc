@@ -1,5 +1,7 @@
 Object dragon_shield
 name dragon shield
+name_pl dragon shields
+client_type 260
 nrof 1
 face dragon_shi.111
 type 33
@@ -8,7 +10,6 @@ ac 1
 resist_physical 8
 magic 2
 resist_fire 30
-
 weight 5000
 value 28000
 editable 5120

@@ -8,4 +8,6 @@ editable 128
 nrof 1
 value 50
 food 600
+name_pl corpses
+client_type 622
 end

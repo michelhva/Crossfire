@@ -1,6 +1,8 @@
 Object spiked_shield 
 nrof 1
 name spiked shield
+name_pl spiked shields
+client_type 261
 type 33
 face spiked_shield.111
 dam 3

@@ -20,4 +20,6 @@ attacktype 136
 weapontype 1
 editable 5120
 magicmap black
+name_pl Stormbringers
+client_type 100
 end

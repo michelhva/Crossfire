@@ -8,4 +8,6 @@ value 30
 weight 300
 editable 128
 magicmap white
+name_pl scrolls
+client_type 1041
 end

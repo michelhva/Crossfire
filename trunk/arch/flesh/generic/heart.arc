@@ -8,4 +8,6 @@ type 72
 weight 4
 editable 2048
 value 200
+name_pl hearts
+client_type 627
 end

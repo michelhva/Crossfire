@@ -1,4 +1,7 @@
 Object turban
+name turban
+name_pl turbans
+client_type 272
 nrof 1
 type 34
 face turban.111

@@ -10,4 +10,6 @@ value 2
 weight 100
 editable 2048
 identified 1
+name_pl apples
+client_type 601
 end

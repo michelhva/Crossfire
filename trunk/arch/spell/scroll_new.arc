@@ -8,4 +8,6 @@ material 1
 weight 200
 value 200
 editable 2048
+name_pl scrolls
+client_type 661
 end

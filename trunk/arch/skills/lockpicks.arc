@@ -9,4 +9,6 @@ nrof 1
 material 2
 sp 1
 editable 2048
+name_pl lockpicks
+client_type 451
 end

@@ -11,4 +11,6 @@ editable 1024
 attacktype 1
 weapontype 4
 magicmap white
+name_pl sabres
+client_type 101
 end

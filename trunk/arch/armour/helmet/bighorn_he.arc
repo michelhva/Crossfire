@@ -1,6 +1,8 @@
 Object bighorned_helmet
 nrof 1
 name horned helmet
+name_pl horned helmets
+client_type 271
 type 34
 face bighorn_he.111
 last_heal 3

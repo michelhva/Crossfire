@@ -9,4 +9,6 @@ food 55
 weight 100
 editable 2048
 magicmap brown
+name_pl mushrooms
+client_type 601
 end

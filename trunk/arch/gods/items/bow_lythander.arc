@@ -1,5 +1,7 @@
 Object bow_lythander
 name Lythander's Elven Bow
+name_pl Lythander's Elven Bows
+client_type 150
 race arrows
 face elven_bow.111
 msg
@@ -17,4 +19,4 @@ attacktype 1
 type 14
 weight 8000
 magic 5
-end 
+end

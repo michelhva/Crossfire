@@ -18,4 +18,6 @@ mina
 type 15
 nrof 1
 color_fg black
+name_pl unicorn horns
+client_type 627
 end

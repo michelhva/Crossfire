@@ -1,6 +1,8 @@
 Object ring_mail
 nrof 1
 name hauberk
+name_pl hauberks
+client_type 253
 type 16
 face ring_mail.111
 color_fg blue

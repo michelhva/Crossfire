@@ -10,6 +10,8 @@ resist_fire -100
 
 weight 500
 editable 2048
+name_pl bottles
+client_type 642
 end
 Object phil_sulphur
 name pile
@@ -32,6 +34,8 @@ resist_acid 100
 
 weight 500
 editable 2048
+name_pl piles
+client_type 642
 end
 Object phil_phosphorus
 name pile
@@ -55,6 +59,8 @@ resist_acid 100
 
 weight 1000
 editable 2048
+name_pl piles
+client_type 642
 end
 Object phil_salt
 name pile
@@ -73,4 +79,6 @@ value 80
 color_fg white
 weight 500
 editable 2048
+name_pl piles
+client_type 642
 end

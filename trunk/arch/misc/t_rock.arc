@@ -8,4 +8,6 @@ value 1
 editable 1024
 material 64
 magicmap black
+name_pl rocks
+client_type 8012
 end

@@ -9,4 +9,6 @@ weight 1500
 value 280
 editable 2048
 magicmap light_blue
+name_pl potions
+client_type 651
 end

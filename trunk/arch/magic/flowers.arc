@@ -1,5 +1,7 @@
 Object flowers
 name flower
+name_pl flowers
+client_type 8015
 type 88
 level 1
 face flowers.111

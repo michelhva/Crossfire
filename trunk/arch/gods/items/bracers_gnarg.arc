@@ -21,4 +21,6 @@ value 65000
 weight 9000
 startequip 1
 magicmap grey
+name_pl bracers
+client_type 310
 end

@@ -1,5 +1,7 @@
 Object kog
 name Kabuto of Geisya
+name_pl Kabutos of Geisya
+client_type 270
 nrof 1
 type 34
 face kog.111

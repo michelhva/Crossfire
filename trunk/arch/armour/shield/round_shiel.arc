@@ -1,6 +1,8 @@
 Object round_shield
 nrof 1
 name shield
+name_pl shields
+client_type 261
 type 33
 face round_shiel.111
 ac 1

@@ -1,6 +1,8 @@
 Object chain_mail
 nrof 1
 name chain mail
+name_pl chain mails
+client_type 253
 type 16
 face chainmail.111
 color_fg black

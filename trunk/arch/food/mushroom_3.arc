@@ -9,4 +9,6 @@ value 7
 weight 50
 editable 2048
 magicmap blue
+name_pl mushrooms
+client_type 601
 end

@@ -1,5 +1,7 @@
 Object wdsm
 name White Dragon Scale Mail
+name_pl White Dragon Scale Mails
+client_type 251
 nrof 1
 type 16
 face wdsm.111

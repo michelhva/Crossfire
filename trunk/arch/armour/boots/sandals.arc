@@ -1,5 +1,7 @@
 Object sandals
 name sandals
+name_pl sandals
+client_type 291
 face sandals.111
 value 5
 weight 500

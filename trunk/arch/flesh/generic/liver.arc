@@ -8,4 +8,6 @@ editable 2048
 value 120
 nrof 1
 color_fg black
+name_pl livers
+client_type 627
 end

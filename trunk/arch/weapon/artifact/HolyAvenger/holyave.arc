@@ -34,4 +34,6 @@ weight 25000
 value 220000
 editable 5120
 magicmap black
+name_pl Holy Avengers
+client_type 100
 end

@@ -14,4 +14,6 @@ editable 1024
 attacktype 1
 weapontype 1
 magicmap grey
+name_pl Harakiri swords
+client_type 100
 end

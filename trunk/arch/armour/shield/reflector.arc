@@ -1,5 +1,7 @@
 Object reflector
 name polished shield
+name_pl polished shields
+client_type 260
 nrof 1
 type 33
 face reflector.111

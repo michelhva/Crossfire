@@ -1,5 +1,7 @@
 Object dragon_mail
 name dragon mail
+name_pl dragon mails
+client_type 251
 nrof 1
 type 16
 face dragonmail.111

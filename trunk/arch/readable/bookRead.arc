@@ -7,4 +7,6 @@ material 1
 value 13
 weight 3000
 editable 128
+name_pl books
+client_type 1041
 end

@@ -7,4 +7,6 @@ weight 15000
 resist_cold 100
 
 editable 2048
+name_pl icecubes
+client_type 8020
 end

@@ -10,6 +10,8 @@ dam 6
 nrof 1
 editable 128
 magicmap brown
+name_pl chairs
+client_type 8002
 end
 Object chair_3.2
 name chair
@@ -23,4 +25,6 @@ dam 6
 nrof 1
 editable 128
 magicmap brown
+name_pl chairs
+client_type 8002
 end
