@@ -10,149 +10,167 @@ enter_x 4
 enter_y 13
 reset_timeout 3000
 end
-arch small_stones
-end
-arch small_stones
-y 1
-end
-arch small_stones
-y 2
-end
-arch medium_stones
-y 3
-end
-arch small_stones
-y 4
-end
-arch small_stones
-y 5
-end
-arch small_stones
-y 6
-end
-arch small_stones
-y 7
-end
-arch small_stones
-y 8
-end
-arch small_stones
-y 9
-end
-arch small_stones
-y 10
-end
-arch small_stones
-y 11
-end
-arch small_stones
-y 12
-end
-arch small_stones
-y 13
-end
-arch small_stones
-y 14
-end
-arch medium_stones
-y 15
-end
-arch small_stones
-x 1
-end
 arch flagstone
-x 1
-y 1
 end
 arch roughwall_2_2_2
-x 1
+end
+arch flagstone
+y 1
+end
+arch roughwall_2_1_1
 y 1
 end
 arch flagstone
-x 1
 y 2
 end
 arch roughwall_2_1_1
-x 1
 y 2
 end
 arch flagstone
-x 1
 y 3
 end
 arch roughwall_2_1_1
-x 1
 y 3
 end
 arch flagstone
-x 1
 y 4
 end
 arch roughwall_2_1_1
-x 1
 y 4
 end
 arch flagstone
-x 1
 y 5
 end
 arch roughwall_2_1_1
-x 1
 y 5
 end
 arch flagstone
-x 1
 y 6
 end
 arch roughwall_2_1_1
-x 1
 y 6
 end
 arch flagstone
-x 1
 y 7
 end
 arch roughwall_2_1_1
-x 1
 y 7
 end
 arch flagstone
-x 1
 y 8
 end
 arch roughwall_2_1_1
-x 1
 y 8
 end
 arch flagstone
-x 1
 y 9
 end
 arch roughwall_2_1_1
-x 1
 y 9
 end
 arch flagstone
-x 1
 y 10
 end
 arch roughwall_2_1_1
-x 1
 y 10
 end
 arch flagstone
-x 1
 y 11
+end
+arch roughwall_2_1_1
+y 11
+end
+arch flagstone
+y 12
+end
+arch roughwall_2_1_1
+y 12
+end
+arch flagstone
+y 13
 end
 arch roughwall_2_2_1
+y 13
+end
+arch small_stones
+y 14
+end
+arch small_stones
+y 15
+end
+arch flagstone
+x 1
+end
+arch roughwall_2_1_2
+x 1
+end
+arch permanent_lava
+x 1
+y 1
+end
+arch permanent_lava
+x 1
+y 2
+end
+arch permanent_lava
+x 1
+y 3
+end
+arch permanent_lava
+x 1
+y 4
+end
+arch flagstone
+x 1
+y 5
+end
+arch flagstone
+x 1
+y 6
+end
+arch flagstone
+x 1
+y 7
+end
+arch flagstone
+x 1
+y 8
+end
+arch flagstone
+x 1
+y 9
+end
+arch flagstone
+x 1
+y 10
+end
+arch flagstone
 x 1
 y 11
 end
-arch medium_stones
+arch fire_elemental
+name Templar of Ruggilli
+msg
+@match ruggilli|Ruggilli
+....My...Looord....and masssster...
+@match *
+....We...are...Watchhhing...You...
+endmsg
+hp 4000
+unaggressive 1
+sleep 1
+x 1
+y 11
+end
+arch flagstone
 x 1
 y 12
 end
-arch small_stones
+arch flagstone
+x 1
+y 13
+end
+arch roughwall_2_1_2
 x 1
 y 13
 end
@@ -164,18 +182,17 @@ arch small_stones
 x 1
 y 15
 end
-arch small_stones
-x 2
-end
 arch flagstone
 x 2
-y 1
 end
 arch roughwall_2_1_2
 x 2
+end
+arch permanent_lava
+x 2
 y 1
 end
-arch flagstone
+arch permanent_lava
 x 2
 y 2
 end
@@ -215,9 +232,9 @@ enemies!
 @match follow|Follow|worship|Worship|Door|door|Gate|gate|stair|Stair
 The Consuming worm Ruggilli will only
 accept followers who can pass his
-test. Descend down these stairs and
-destroy all the of His enemies and a
-pass shall be granted.
+test. Descend down these stairs
+destroy His enemies and pass the tests
+and a pass shall be granted.
 @match quest|Quest
 When you are ready, your quest shall
 be given!
@@ -226,8 +243,8 @@ The eternal flame of Ruggilli will
 prevail
 endmsg
 hp 80
-friendly 1
 unaggressive 0
+friendly 1
 x 2
 y 7
 end
@@ -247,15 +264,15 @@ arch flagstone
 x 2
 y 11
 end
-arch roughwall_1_3
-x 2
-y 11
-end
-arch small_stones
+arch flagstone
 x 2
 y 12
 end
-arch small_stones
+arch flagstone
+x 2
+y 13
+end
+arch roughwall_1_3
 x 2
 y 13
 end
@@ -263,18 +280,21 @@ arch small_stones
 x 2
 y 14
 end
+arch pillars
+x 2
+y 14
+end
 arch small_stones
 x 2
 y 15
 end
-arch small_stones
-x 3
-end
 arch flagstone
 x 3
-y 1
 end
 arch roughwall_2_1_2
+x 3
+end
+arch permanent_lava
 x 3
 y 1
 end
@@ -326,7 +346,7 @@ arch flagstone
 x 3
 y 13
 end
-arch flagstone
+arch small_stones
 x 3
 y 14
 end
@@ -341,14 +361,13 @@ sp 0
 x 3
 y 15
 end
-arch small_stones
-x 4
-end
 arch flagstone
 x 4
-y 1
 end
 arch roughwall_2_1_2
+x 4
+end
+arch permanent_lava
 x 4
 y 1
 end
@@ -407,7 +426,7 @@ arch flagstone
 x 4
 y 13
 end
-arch flagstone
+arch small_stones
 x 4
 y 14
 end
@@ -422,14 +441,13 @@ sp 0
 x 4
 y 15
 end
-arch small_stones
+arch flagstone
+x 5
+end
+arch roughwall_2_1_2
 x 5
 end
 arch flagstone
-x 5
-y 1
-end
-arch roughwall_2_1_2
 x 5
 y 1
 end
@@ -489,19 +507,23 @@ arch flagstone
 x 5
 y 11
 end
-arch roughwall_1_4
-x 5
-y 11
-end
-arch small_stones
+arch flagstone
 x 5
 y 12
 end
-arch small_stones
+arch flagstone
 x 5
 y 13
 end
-arch medium_stones
+arch roughwall_1_4
+x 5
+y 13
+end
+arch small_stones
+x 5
+y 14
+end
+arch pillars
 x 5
 y 14
 end
@@ -509,14 +531,13 @@ arch small_stones
 x 5
 y 15
 end
-arch small_stones
+arch flagstone
+x 6
+end
+arch roughwall_2_1_2
 x 6
 end
 arch flagstone
-x 6
-y 1
-end
-arch roughwall_2_1_2
 x 6
 y 1
 end
@@ -576,19 +597,19 @@ arch flagstone
 x 6
 y 11
 end
-arch roughwall_2_1_2
-x 6
-y 11
-end
-arch small_stones
+arch flagstone
 x 6
 y 12
 end
-arch small_stones
+arch flagstone
 x 6
 y 13
 end
-arch medium_stones
+arch roughwall_2_1_2
+x 6
+y 13
+end
+arch small_stones
 x 6
 y 14
 end
@@ -596,14 +617,13 @@ arch small_stones
 x 6
 y 15
 end
-arch small_stones
+arch flagstone
+x 7
+end
+arch roughwall_2_1_2
 x 7
 end
 arch flagstone
-x 7
-y 1
-end
-arch roughwall_2_1_2
 x 7
 y 1
 end
@@ -667,33 +687,23 @@ arch flagstone
 x 7
 y 10
 end
-arch fire_elemental
-name Templar of Ruggilli
-msg
-@match ruggilli|Ruggilli
-....My...Looord....and masssster...
-@match *
-....We...are...Watchhhing...You...
-endmsg
-hp 4000
-unaggressive 1
-sleep 1
-x 7
-y 10
-end
 arch flagstone
 x 7
 y 11
 end
-arch roughwall_2_1_2
-x 7
-y 11
-end
-arch small_stones
+arch flagstone
 x 7
 y 12
 end
-arch small_stones
+arch flagstone
+x 7
+y 13
+end
+arch flagstone
+x 7
+y 13
+end
+arch roughwall_2_1_2
 x 7
 y 13
 end
@@ -705,14 +715,13 @@ arch small_stones
 x 7
 y 15
 end
-arch small_stones
+arch flagstone
+x 8
+end
+arch roughwall_2_1_2
 x 8
 end
 arch flagstone
-x 8
-y 1
-end
-arch roughwall_2_1_2
 x 8
 y 1
 end
@@ -767,6 +776,9 @@ Proceed down those stairs and defeat
 The Servant. Ruggilli will then permit
 entrance
 endmsg
+connected 33
+walk_on 0
+fly_on 0
 x 8
 y 7
 end
@@ -777,6 +789,13 @@ x 8
 y 7
 end
 arch flagstone
+x 8
+y 7
+end
+arch check_floor
+slaying rug_pass
+last_sp 0
+connected 33
 x 8
 y 7
 end
@@ -796,19 +815,19 @@ arch flagstone
 x 8
 y 11
 end
-arch roughwall_2_1_2
-x 8
-y 11
-end
-arch small_stones
+arch flagstone
 x 8
 y 12
 end
-arch small_stones
+arch flagstone
 x 8
 y 13
 end
-arch grass
+arch flagstone
+x 8
+y 13
+end
+arch roughwall_2_1_2
 x 8
 y 13
 end
@@ -820,14 +839,13 @@ arch small_stones
 x 8
 y 15
 end
-arch small_stones
+arch flagstone
+x 9
+end
+arch roughwall_2_1_2
 x 9
 end
 arch flagstone
-x 9
-y 1
-end
-arch roughwall_2_1_2
 x 9
 y 1
 end
@@ -895,15 +913,15 @@ arch flagstone
 x 9
 y 11
 end
-arch roughwall_2_1_2
-x 9
-y 11
-end
-arch small_stones
+arch flagstone
 x 9
 y 12
 end
-arch small_stones
+arch flagstone
+x 9
+y 13
+end
+arch roughwall_2_1_2
 x 9
 y 13
 end
@@ -915,14 +933,13 @@ arch small_stones
 x 9
 y 15
 end
-arch small_stones
+arch flagstone
+x 10
+end
+arch roughwall_2_1_2
 x 10
 end
 arch flagstone
-x 10
-y 1
-end
-arch roughwall_2_1_2
 x 10
 y 1
 end
@@ -982,15 +999,19 @@ arch flagstone
 x 10
 y 11
 end
-arch roughwall_2_1_2
-x 10
-y 11
-end
-arch small_stones
+arch flagstone
 x 10
 y 12
 end
-arch small_stones
+arch flagstone
+x 10
+y 13
+end
+arch flagstone
+x 10
+y 13
+end
+arch roughwall_2_1_2
 x 10
 y 13
 end
@@ -1002,14 +1023,13 @@ arch small_stones
 x 10
 y 15
 end
-arch small_stones
-x 11
-end
 arch flagstone
 x 11
-y 1
 end
 arch roughwall_2_1_2
+x 11
+end
+arch permanent_lava
 x 11
 y 1
 end
@@ -1069,15 +1089,15 @@ arch flagstone
 x 11
 y 11
 end
-arch roughwall_2_1_2
-x 11
-y 11
-end
-arch small_stones
+arch permanent_lava
 x 11
 y 12
 end
-arch small_stones
+arch flagstone
+x 11
+y 13
+end
+arch roughwall_2_1_2
 x 11
 y 13
 end
@@ -1089,14 +1109,13 @@ arch small_stones
 x 11
 y 15
 end
-arch small_stones
-x 12
-end
 arch flagstone
 x 12
-y 1
 end
 arch roughwall_2_1_2
+x 12
+end
+arch permanent_lava
 x 12
 y 1
 end
@@ -1170,19 +1189,19 @@ arch flagstone
 x 12
 y 11
 end
+arch permanent_lava
+x 12
+y 12
+end
+arch flagstone
+x 12
+y 13
+end
 arch roughwall_2_1_2
 x 12
-y 11
-end
-arch small_stones
-x 12
-y 12
-end
-arch medium_stones
-x 12
 y 13
 end
-arch medium_stones
+arch small_stones
 x 12
 y 14
 end
@@ -1190,228 +1209,253 @@ arch small_stones
 x 12
 y 15
 end
-arch small_stones
+arch flagstone
 x 13
+end
+arch roughwall_2_1_2
+x 13
+end
+arch permanent_lava
+x 13
+y 1
+end
+arch permanent_lava
+x 13
+y 2
 end
 arch flagstone
 x 13
+y 3
+end
+arch flagstone
+x 13
+y 4
+end
+arch flagstone
+x 13
+y 5
+end
+arch flagstone
+x 13
+y 6
+end
+arch flagstone
+x 13
+y 7
+end
+arch flagstone
+x 13
+y 8
+end
+arch flagstone
+x 13
+y 9
+end
+arch flagstone
+x 13
+y 10
+end
+arch permanent_lava
+x 13
+y 11
+end
+arch permanent_lava
+x 13
+y 12
+end
+arch flagstone
+x 13
+y 13
+end
+arch roughwall_2_1_2
+x 13
+y 13
+end
+arch small_stones
+x 13
+y 14
+end
+arch small_stones
+x 13
+y 15
+end
+arch flagstone
+x 14
+end
+arch roughwall_2_1_2
+x 14
+end
+arch permanent_lava
+x 14
 y 1
+end
+arch permanent_lava
+x 14
+y 2
+end
+arch permanent_lava
+x 14
+y 3
+end
+arch permanent_lava
+x 14
+y 4
+end
+arch flagstone
+x 14
+y 5
+end
+arch flagstone
+x 14
+y 6
+end
+arch flagstone
+x 14
+y 7
+end
+arch flagstone
+x 14
+y 8
+end
+arch permanent_lava
+x 14
+y 9
+end
+arch permanent_lava
+x 14
+y 10
+end
+arch permanent_lava
+x 14
+y 11
+end
+arch permanent_lava
+x 14
+y 12
+end
+arch flagstone
+x 14
+y 13
+end
+arch roughwall_2_1_2
+x 14
+y 13
+end
+arch small_stones
+x 14
+y 14
+end
+arch small_stones
+x 14
+y 15
+end
+arch flagstone
+x 15
 end
 arch roughwall_2_2_3
-x 13
+x 15
+end
+arch flagstone
+x 15
+y 1
+end
+arch roughwall_2_1_1
+x 15
 y 1
 end
 arch flagstone
-x 13
+x 15
 y 2
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 2
 end
 arch flagstone
-x 13
+x 15
 y 3
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 3
 end
 arch flagstone
-x 13
+x 15
 y 4
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 4
 end
 arch flagstone
-x 13
+x 15
 y 5
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 5
 end
 arch flagstone
-x 13
+x 15
 y 6
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 6
 end
 arch flagstone
-x 13
+x 15
 y 7
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 7
 end
 arch flagstone
-x 13
+x 15
 y 8
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 8
 end
 arch flagstone
-x 13
+x 15
 y 9
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 9
 end
 arch flagstone
-x 13
+x 15
 y 10
 end
 arch roughwall_2_1_1
-x 13
+x 15
 y 10
 end
 arch flagstone
-x 13
+x 15
 y 11
+end
+arch roughwall_2_1_1
+x 15
+y 11
+end
+arch flagstone
+x 15
+y 12
+end
+arch roughwall_2_1_1
+x 15
+y 12
+end
+arch flagstone
+x 15
+y 13
 end
 arch roughwall_2_2_4
-x 13
-y 11
-end
-arch small_stones
-x 13
-y 12
-end
-arch medium_stones
-x 13
-y 13
-end
-arch small_stones
-x 13
-y 14
-end
-arch small_stones
-x 13
-y 15
-end
-arch small_stones
-x 14
-end
-arch small_stones
-x 14
-y 1
-end
-arch small_stones
-x 14
-y 2
-end
-arch medium_stones
-x 14
-y 3
-end
-arch small_stones
-x 14
-y 4
-end
-arch medium_stones
-x 14
-y 5
-end
-arch small_stones
-x 14
-y 6
-end
-arch small_stones
-x 14
-y 7
-end
-arch small_stones
-x 14
-y 8
-end
-arch small_stones
-x 14
-y 9
-end
-arch small_stones
-x 14
-y 10
-end
-arch small_stones
-x 14
-y 11
-end
-arch small_stones
-x 14
-y 12
-end
-arch small_stones
-x 14
-y 13
-end
-arch medium_stones
-x 14
-y 14
-end
-arch small_stones
-x 14
-y 15
-end
-arch small_stones
-x 15
-end
-arch small_stones
-x 15
-y 1
-end
-arch small_stones
-x 15
-y 2
-end
-arch small_stones
-x 15
-y 3
-end
-arch small_stones
-x 15
-y 4
-end
-arch small_stones
-x 15
-y 5
-end
-arch small_stones
-x 15
-y 6
-end
-arch small_stones
-x 15
-y 7
-end
-arch small_stones
-x 15
-y 8
-end
-arch small_stones
-x 15
-y 9
-end
-arch small_stones
-x 15
-y 10
-end
-arch small_stones
-x 15
-y 11
-end
-arch small_stones
-x 15
-y 12
-end
-arch small_stones
 x 15
 y 13
 end
