@@ -1,5 +1,6 @@
 # elemental -- war/dragon god Ruggilli
 Object Ruggilli
+title Ixalovh
 race consuming_fire_creatures
 face elem_fire.111
 animation fire_elemental
