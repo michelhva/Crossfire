@@ -5,12 +5,17 @@ face paladin.171
 type 37
 anim
 paladin.111
+paladin.112
 paladin.131
+paladin.132
 paladin.151
+paladin.152
 paladin.171
+paladin.172
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 Str 0
 Dex -1
 Con 0

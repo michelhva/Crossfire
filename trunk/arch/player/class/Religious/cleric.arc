@@ -2,15 +2,20 @@ Object cleric_class
 race cleric
 name cleric
 randomitems cleric
-face cleric.171
+face cleric.151
 anim
 cleric.111
+cleric.112
 cleric.131
+cleric.132
 cleric.151
+cleric.152
 cleric.171
+cleric.172
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 37
 level 1
 ac 10
