@@ -356,6 +356,28 @@ arch chair_1.4
 x 3
 y 8
 end
+arch thief_1
+name quiet man in corner
+msg
+@match signal|tower|bandits
+Aye, those scum make rotten robbers.
+I had a good life until they chased
+off those merchants.
+@match merchants
+I hope someone kills those bastards so
+that the caravans will come here again
+@match yes
+Well & good then.  I think some strong
+mead may help take my mind off those
+stupid bandits.
+@match *
+Are you buying this round
+endmsg
+hp 35
+unaggressive 1
+x 3
+y 8
+end
 arch woodfloor2
 x 3
 y 9
@@ -437,6 +459,8 @@ Kicking up and having a pint.
 @match dwarves|mine
 Ya, I hired on to guard the mine.
 Good work if you get along with dwarves.
+Funny, they don't let on where they really live.
+They surely don't live in that dingy mine.
 endmsg
 title the quick
 level 6
@@ -482,6 +506,27 @@ x 4
 y 10
 end
 arch grass
+x 4
+y 11
+end
+arch a_priest
+msg
+@match yes
+Bless you my son.  Join us at our next
+service.
+@match no
+Then I pray your soul is not eaten by
+the old ones.
+@match old ones
+The dark gods that haunt the wilds.
+They feed upon the unfortunate souls
+not protected by the covenent of God
+@match *
+I'm retreiving Father Veratin's chickens. I fear
+Grumm will be angered, and we so wish him to
+attend one of our services. He is a good man,
+but not a man of God. Are you a man of God?
+endmsg
 x 4
 y 11
 end
@@ -1092,7 +1137,7 @@ msg
 Damn priest!
 His chickens are always in my garden!
 @match priest
-Veratin, the priest of Gaia
+Veratin, the priest of the small church next door.
 @match *
 Greetings and welcome to my inn.
 Rooms are available upstairs for a modest price.
@@ -1321,6 +1366,18 @@ x 13
 y 3
 end
 arch woodfloor2
+name woodfloor
+x 13
+y 4
+end
+arch c_man
+name Riakus
+msg
+@match *
+Hello stranger.  Please tell us news
+from other lands.  We get so few
+visitors..
+endmsg
 x 13
 y 4
 end
@@ -1508,6 +1565,23 @@ arch woodfloor2
 x 15
 y 3
 end
+arch c_man
+name Frank
+msg
+@match travellers
+Who would risk the south road with
+those bandits?
+@match bandits
+My brother used to help station the
+signal tower. Now, I fear he's dead...
+<sob>
+@match *
+Sigh, it's so boring when so few
+travellers come.
+endmsg
+x 15
+y 3
+end
 arch woodfloor2
 x 15
 y 4
@@ -1602,6 +1676,7 @@ x 16
 y 3
 end
 arch woodfloor2
+name woodfloor
 x 16
 y 4
 end
@@ -1673,6 +1748,15 @@ arch woodwall_2_1_2
 x 17
 end
 arch woodfloor2
+x 17
+y 1
+end
+arch c_woman
+name Kalana the bar maid
+msg
+@match *
+Hiya cutie! Where're you from?
+endmsg
 x 17
 y 1
 end
@@ -1816,6 +1900,18 @@ arch chair_1.4
 x 18
 y 8
 end
+arch dwarf_wiz
+msg
+@match mine
+I'd sooner cut out my tongue than tell
+where the hidden valley lies.
+@match *
+I'm too busy to answer your queries.
+endmsg
+hp 48
+x 18
+y 8
+end
 arch woodfloor2
 x 18
 y 9
@@ -1862,6 +1958,10 @@ arch woodfloor2
 x 19
 y 1
 end
+arch barrel
+x 19
+y 1
+end
 arch woodfloor2
 x 19
 y 2
@@ -1892,6 +1992,14 @@ x 19
 y 7
 end
 arch chair_1.1
+x 19
+y 7
+end
+arch warrior_1
+msg
+@match *
+Hand't ya ever seen a dwarf before?!
+endmsg
 x 19
 y 7
 end
@@ -1946,6 +2054,10 @@ arch woodwall_2_1_2
 x 20
 end
 arch woodfloor2
+x 20
+y 1
+end
+arch barrel
 x 20
 y 1
 end
