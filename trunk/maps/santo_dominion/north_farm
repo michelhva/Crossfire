@@ -1,8 +1,10 @@
 arch map
-hp 16
-sp 13
-x 25
-y 15
+reset_timeout 7200
+difficulty 9
+width 25
+height 15
+enter_x 16
+enter_y 13
 end
 arch woodfloor
 end
@@ -212,6 +214,10 @@ arch woodfloor
 x 2
 y 7
 end
+arch giant
+x 2
+y 7
+end
 arch woodfloor
 x 2
 y 8
@@ -318,6 +324,10 @@ arch woodfloor
 x 3
 y 10
 end
+arch giant
+x 3
+y 10
+end
 arch woodfloor
 x 3
 y 11
@@ -393,6 +403,10 @@ x 4
 y 6
 end
 arch woodfloor
+x 4
+y 7
+end
+arch giant
 x 4
 y 7
 end
@@ -614,6 +628,10 @@ arch woodfloor
 x 7
 y 2
 end
+arch giant
+x 7
+y 2
+end
 arch woodfloor
 x 7
 y 3
@@ -655,6 +673,10 @@ x 7
 y 9
 end
 arch woodfloor
+x 7
+y 10
+end
+arch giant
 x 7
 y 10
 end
@@ -806,6 +828,10 @@ arch woodfloor
 x 9
 y 7
 end
+arch giant
+x 9
+y 7
+end
 arch woodfloor
 x 9
 y 8
@@ -819,6 +845,11 @@ x 9
 y 10
 end
 arch woodfloor
+x 9
+y 11
+end
+arch troll
+name lizard
 x 9
 y 11
 end
@@ -1029,6 +1060,10 @@ x 12
 y 4
 end
 arch woodfloor
+x 12
+y 5
+end
+arch giant
 x 12
 y 5
 end
@@ -1473,6 +1508,11 @@ arch woodfloor
 x 16
 y 7
 end
+arch troll
+name lizard
+x 16
+y 7
+end
 arch woodfloor
 x 16
 y 8
@@ -1543,7 +1583,7 @@ x 16
 y 14
 end
 arch oakdoor
-slaying /world/world_102_18
+slaying /world/world_102_108
 hp 34
 sp 15
 x 16
@@ -1840,11 +1880,20 @@ arch woodfloor
 x 19
 y 6
 end
+arch troll
+name lizard
+x 19
+y 6
+end
 arch woodfloor
 x 19
 y 7
 end
 arch woodfloor
+x 19
+y 8
+end
+arch giant
 x 19
 y 8
 end
@@ -2029,6 +2078,10 @@ arch woodfloor
 x 21
 y 4
 end
+arch giant
+x 21
+y 4
+end
 arch woodfloor
 x 21
 y 5
@@ -2128,6 +2181,11 @@ x 22
 y 3
 end
 arch woodfloor
+x 22
+y 4
+end
+arch troll
+name lizard
 x 22
 y 4
 end
@@ -2242,6 +2300,10 @@ x 23
 y 5
 end
 arch woodfloor
+x 23
+y 6
+end
+arch giant
 x 23
 y 6
 end
@@ -2422,186 +2484,4 @@ end
 arch dwall_2_2_4
 x 24
 y 14
-end
-arch giant
-x 2
-y 7
-end
-More
-arch giant_2
-x 2
-y 8
-end
-arch giant
-x 3
-y 10
-end
-More
-arch giant_2
-x 3
-y 11
-end
-arch giant
-x 4
-y 7
-end
-More
-arch giant_2
-x 4
-y 8
-end
-arch giant
-x 7
-y 2
-end
-More
-arch giant_2
-x 7
-y 3
-end
-arch giant
-x 7
-y 10
-end
-More
-arch giant_2
-x 7
-y 11
-end
-arch giant
-x 9
-y 7
-end
-More
-arch giant_2
-x 9
-y 8
-end
-arch troll
-name lizard
-x 9
-y 11
-end
-More
-arch troll_2
-name lizard
-x 10
-y 11
-end
-More
-arch troll_3
-name lizard
-x 9
-y 12
-end
-More
-arch troll_4
-name lizard
-x 10
-y 12
-end
-arch giant
-x 12
-y 5
-end
-More
-arch giant_2
-x 12
-y 6
-end
-arch troll
-name lizard
-x 16
-y 7
-end
-More
-arch troll_2
-name lizard
-x 17
-y 7
-end
-More
-arch troll_3
-name lizard
-x 16
-y 8
-end
-More
-arch troll_4
-name lizard
-x 17
-y 8
-end
-arch troll
-name lizard
-x 19
-y 6
-end
-More
-arch troll_2
-name lizard
-x 20
-y 6
-end
-More
-arch troll_3
-name lizard
-x 19
-y 7
-end
-More
-arch troll_4
-name lizard
-x 20
-y 7
-end
-arch giant
-x 19
-y 8
-end
-More
-arch giant_2
-x 19
-y 9
-end
-arch giant
-x 21
-y 4
-end
-More
-arch giant_2
-x 21
-y 5
-end
-arch troll
-name lizard
-x 22
-y 4
-end
-More
-arch troll_2
-name lizard
-x 23
-y 4
-end
-More
-arch troll_3
-name lizard
-x 22
-y 5
-end
-More
-arch troll_4
-name lizard
-x 23
-y 5
-end
-arch giant
-x 23
-y 6
-end
-More
-arch giant_2
-x 23
-y 7
 end
