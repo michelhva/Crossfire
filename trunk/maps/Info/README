@@ -116,9 +116,11 @@ The update_exits.pl script can be used to update the exit of per player
 unique maps.    IT can also be used with the unique-items map, but
 the check in the script for a valid map file would need to be removed.
 
-However, this does not properly deal with changed path names.  A
-script could easily be done to do this.  Currently, changes
-below are needed:
+The update_apart.pl script should properly deal with per player apartments
+and unique maps - just run it with the appropriate target (eg,
+'update_apart.pl players ' and 'update_apart.pl unique-items'.  The script
+works, but it is certainly possible I'm missing some paths that should
+be substitued in there.
 
 Per player unique maps:
 
