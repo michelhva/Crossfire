@@ -27,7 +27,7 @@ dam 9
 wc 1
 level 8
 can_see_in_dark 1
-weight 40000
+weight 60000
 editable 1
 run_away 5
 attack_movement 3
