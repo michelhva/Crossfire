@@ -373,10 +373,14 @@ x 2
 y 13
 end
 arch mine13
+no_magic 1
+damned 1
 x 2
 y 14
 end
 arch blocked
+no_magic 1
+damned 1
 x 2
 y 15
 end
@@ -483,6 +487,8 @@ x 3
 y 14
 end
 arch mine13
+no_magic 1
+damned 1
 x 3
 y 14
 end
@@ -643,6 +649,8 @@ x 4
 y 13
 end
 arch mine8
+no_magic 1
+damned 1
 x 4
 y 13
 end
@@ -651,6 +659,8 @@ x 4
 y 14
 end
 arch mine13
+no_magic 1
+damned 1
 x 4
 y 14
 end
@@ -678,6 +688,8 @@ x 5
 y 3
 end
 arch mine16
+no_magic 1
+damned 1
 x 5
 y 3
 end
@@ -686,6 +698,8 @@ x 5
 y 4
 end
 arch mine3
+no_magic 1
+damned 1
 x 5
 y 4
 end
@@ -694,6 +708,8 @@ x 5
 y 5
 end
 arch mine5
+no_magic 1
+damned 1
 x 5
 y 5
 end
@@ -703,6 +719,8 @@ y 6
 end
 arch wall_2_1_1
 blocksview 0
+no_magic 1
+damned 1
 x 5
 y 6
 end
@@ -711,6 +729,8 @@ x 5
 y 7
 end
 arch mine8
+no_magic 1
+damned 1
 x 5
 y 7
 end
@@ -719,6 +739,8 @@ x 5
 y 8
 end
 arch mine3
+no_magic 1
+damned 1
 x 5
 y 8
 end
@@ -727,6 +749,8 @@ x 5
 y 9
 end
 arch mine11
+no_magic 1
+damned 1
 x 5
 y 9
 end
@@ -735,10 +759,14 @@ x 5
 y 10
 end
 arch mine11
+no_magic 1
+damned 1
 x 5
 y 10
 end
 arch mine11
+no_magic 1
+damned 1
 x 5
 y 11
 end
@@ -747,6 +775,8 @@ x 5
 y 12
 end
 arch mine11
+no_magic 1
+damned 1
 x 5
 y 12
 end
@@ -755,6 +785,8 @@ x 5
 y 13
 end
 arch cave_6
+no_magic 1
+damned 1
 x 5
 y 13
 end
@@ -827,6 +859,8 @@ x 6
 y 3
 end
 arch mine2
+no_magic 1
+damned 1
 x 6
 y 3
 end
@@ -948,6 +982,8 @@ x 7
 y 3
 end
 arch mine2
+no_magic 1
+damned 1
 x 7
 y 3
 end
@@ -1031,6 +1067,8 @@ x 8
 y 3
 end
 arch mine7
+no_magic 1
+damned 1
 x 8
 y 3
 end
@@ -1148,6 +1186,8 @@ y 3
 end
 arch wall_2_1_2
 blocksview 0
+no_magic 1
+damned 1
 x 9
 y 3
 end
@@ -1248,6 +1288,8 @@ x 10
 y 3
 end
 arch mine6
+no_magic 1
+damned 1
 x 10
 y 3
 end
@@ -1353,6 +1395,8 @@ x 11
 y 3
 end
 arch mine2
+no_magic 1
+damned 1
 x 11
 y 3
 end
@@ -1459,6 +1503,8 @@ x 12
 y 3
 end
 arch mine13
+no_magic 1
+damned 1
 x 12
 y 3
 end
@@ -1468,6 +1514,8 @@ y 4
 end
 arch wall_1_1
 blocksview 0
+no_magic 1
+damned 1
 x 12
 y 4
 end
@@ -1477,6 +1525,8 @@ y 5
 end
 arch wall_2_1_1
 blocksview 0
+no_magic 1
+damned 1
 x 12
 y 5
 end
@@ -1486,6 +1536,8 @@ y 6
 end
 arch wall_2_1_1
 blocksview 0
+no_magic 1
+damned 1
 x 12
 y 6
 end
@@ -1495,6 +1547,8 @@ y 7
 end
 arch wall_2_1_1
 blocksview 0
+no_magic 1
+damned 1
 x 12
 y 7
 end
@@ -1504,6 +1558,8 @@ y 8
 end
 arch wall_1_2
 blocksview 0
+no_magic 1
+damned 1
 x 12
 y 8
 end
@@ -1512,6 +1568,8 @@ x 12
 y 9
 end
 arch mine16
+no_magic 1
+damned 1
 x 12
 y 9
 end
@@ -1658,6 +1716,8 @@ x 13
 y 9
 end
 arch mine16
+no_magic 1
+damned 1
 x 13
 y 9
 end
@@ -1778,6 +1838,8 @@ x 14
 y 9
 end
 arch mine17
+no_magic 1
+damned 1
 x 14
 y 9
 end
