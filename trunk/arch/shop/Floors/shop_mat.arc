@@ -8,4 +8,5 @@ fly_on 1
 editable 64
 visibility 100
 magicmap brown
+damned 1
 end

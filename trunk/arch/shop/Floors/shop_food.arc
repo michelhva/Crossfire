@@ -9,4 +9,5 @@ auto_apply 1
 randomitems random_food
 editable 64
 magicmap grey
+damned 1
 end
