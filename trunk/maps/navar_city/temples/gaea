@@ -222,10 +222,10 @@ dungeon_level 2
 expand2x 1
 treasureoptions 20
 monsterstyle sylvan
-dungeon_depth 1
-xsize 80
-ysize 80
-exitstyle whirl
+dungeon_depth 4
+xsize 70
+ysize 70
+exitstyle darkforest
 doorstyle special/forest
 decorstyle outdoor_lush
 floorstyle outdoor_lush
@@ -6746,12 +6746,12 @@ msg
 layoutstyle maze
 dungeon_level 2
 expand2x 1
-treasureoptions 20
+treasureoptions 4
 monsterstyle sylvan
-dungeon_depth 1
+dungeon_depth 2
 xsize 80
 ysize 80
-exitstyle whirl
+exitstyle darkforest
 doorstyle special/forest
 decorstyle outdoor_lush
 floorstyle outdoor_lush
@@ -6768,18 +6768,19 @@ end
 arch invis_exit
 msg
 layoutstyle maze
-dungeon_level 3
+dungeon_level 2
 expand2x 1
-treasureoptions 20
+treasureoptions 32
 monsterstyle sylvan
-dungeon_depth 1
-xsize 80
-ysize 80
-exitstyle whirl
+dungeon_depth 6
+xsize 60
+ysize 60
+exitstyle darkforest
 doorstyle special/webs
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
+final_map /planes/greenway1
 endmsg
 slaying /!
 x 31
