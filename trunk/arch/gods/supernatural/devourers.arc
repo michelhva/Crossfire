@@ -16,8 +16,8 @@ Wis 30
 Pow 30
 attacktype 196736
 path_attuned 393216
-path_denied 589826
-path_repelled 257
+path_denied 65538
+path_repelled 524545
 resist_drain 100
 resist_fear 100
 resist_deplete 100
