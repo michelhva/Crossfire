@@ -1,5 +1,5 @@
 Object baslic
-name baslic
+name basilisk
 randomitems chinese
 race unnatural
 face baslic.171
@@ -11,21 +11,21 @@ monster 1
 sleep 1
 Wis 20
 level 19
+Str 10
 Con 5
 Pow 5
 maxsp 20
 hp 1200
 maxhp 1000
+resist_physical 40
 resist_cold 100
 resist_fear 100
-
 resist_fire -100
-
 resist_magic 50
-
 ac -8
 wc -15
-dam 20
+dam 10
+attacktype 4194305
 exp 40000
 see_invisible 1
 alive 1
