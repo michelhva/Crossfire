@@ -13,11 +13,9 @@ attacktype 1029
 resist_magic 80
 resist_godpower 80
 resist_holyword 80
-
 resist_fire 100
 resist_confusion 100
 resist_poison 100
-
 monster 1
 sleep 1
 Wis 20
@@ -26,7 +24,7 @@ no_pick 1
 see_invisible 1
 attack_movement 5
 alive 1
-exp 80000
+exp 400000
 ac -20
 wc -30
 dam 60
