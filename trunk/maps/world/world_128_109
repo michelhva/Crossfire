@@ -1808,13 +1808,11 @@ elevation -2685
 x 7
 y 20
 end
-arch sea
-elevation -3140
+arch shallow_sea
 x 7
 y 21
 end
-arch sea
-elevation -3534
+arch shallow_sea
 x 7
 y 22
 end
@@ -2032,13 +2030,11 @@ elevation 48
 x 8
 y 15
 end
-arch sea
-elevation -173
+arch shallow_sea
 x 8
 y 16
 end
-arch sea
-elevation -754
+arch shallow_sea
 x 8
 y 17
 end
@@ -2057,13 +2053,11 @@ elevation -2318
 x 8
 y 20
 end
-arch sea
-elevation -2753
+arch shallow_sea
 x 8
 y 21
 end
-arch sea
-elevation -3131
+arch shallow_sea
 x 8
 y 22
 end
@@ -2286,13 +2280,11 @@ elevation 23
 x 9
 y 16
 end
-arch sea
-elevation -453
+arch shallow_sea
 x 9
 y 17
 end
-arch sea
-elevation -979
+arch shallow_sea
 x 9
 y 18
 end
@@ -2301,18 +2293,15 @@ elevation -1493
 x 9
 y 19
 end
-arch sea
-elevation -1952
+arch shallow_sea
 x 9
 y 20
 end
-arch sea
-elevation -2359
+arch shallow_sea
 x 9
 y 21
 end
-arch sea
-elevation -2714
+arch shallow_sea
 x 9
 y 22
 end
@@ -2540,8 +2529,7 @@ elevation -65
 x 10
 y 17
 end
-arch sea
-elevation -692
+arch shallow_sea
 x 10
 y 18
 end
@@ -2550,8 +2538,7 @@ elevation -1171
 x 10
 y 19
 end
-arch sea
-elevation -1594
+arch shallow_sea
 x 10
 y 20
 end
@@ -2789,18 +2776,15 @@ elevation -7
 x 11
 y 17
 end
-arch sea
-elevation -442
+arch shallow_sea
 x 11
 y 18
 end
-arch sea
-elevation -878
+arch shallow_sea
 x 11
 y 19
 end
-arch sea
-elevation -1250
+arch shallow_sea
 x 11
 y 20
 end
@@ -3095,7 +3079,7 @@ arch shallow_sea
 x 12
 y 18
 end
-arch sea
+arch shallow_sea
 x 12
 y 19
 end
@@ -3318,7 +3302,7 @@ arch shallow_sea
 x 13
 y 18
 end
-arch sea
+arch shallow_sea
 x 13
 y 19
 end
@@ -3537,11 +3521,11 @@ arch pstone_1
 x 14
 y 17
 end
-arch pstone_1
+arch beach
 x 14
 y 18
 end
-arch sea
+arch shallow_sea
 x 14
 y 19
 end
@@ -3764,7 +3748,7 @@ arch pstone_1
 x 15
 y 18
 end
-arch sea
+arch shallow_sea
 x 15
 y 19
 end
@@ -4103,8 +4087,7 @@ elevation 353
 x 16
 y 36
 end
-arch desert
-elevation 744
+arch beach
 x 16
 y 37
 end
@@ -4250,12 +4233,7 @@ arch pstone_1
 x 17
 y 19
 end
-arch biglake_ne
-name sea
-x 17
-y 19
-end
-arch sea
+arch shallow_sea
 x 17
 y 20
 end
@@ -4348,6 +4326,7 @@ y 39
 end
 arch shallow_sea
 elevation -33
+no_pass 0
 x 17
 y 40
 end
@@ -4474,11 +4453,11 @@ arch pstone_1
 x 18
 y 18
 end
-arch pstone_1
+arch beach
 x 18
 y 19
 end
-arch sea
+arch shallow_sea
 x 18
 y 20
 end
@@ -4539,8 +4518,7 @@ elevation 87
 x 18
 y 33
 end
-arch desert
-elevation 906
+arch beach
 x 18
 y 34
 end
@@ -4571,6 +4549,7 @@ y 39
 end
 arch shallow_sea
 elevation -8
+no_pass 0
 x 18
 y 40
 end
@@ -4709,28 +4688,23 @@ arch pstone_1
 x 19
 y 17
 end
-arch pstone_1
+arch beach
 x 19
 y 18
 end
-arch pstone_1
+arch beach
 x 19
 y 19
 end
-arch biglake_nw
-name sea
-x 19
-y 19
-end
-arch sea
+arch shallow_sea
 x 19
 y 20
 end
-arch sea
+arch shallow_sea
 x 19
 y 21
 end
-arch sea
+arch shallow_sea
 x 19
 y 22
 end
@@ -4953,23 +4927,23 @@ arch pstone_1
 x 20
 y 17
 end
-arch pstone_1
+arch beach
 x 20
 y 18
 end
-arch sea
+arch shallow_sea
 x 20
 y 19
 end
-arch sea
+arch shallow_sea
 x 20
 y 20
 end
-arch sea
+arch shallow_sea
 x 20
 y 21
 end
-arch sea
+arch shallow_sea
 x 20
 y 22
 end
@@ -5189,11 +5163,6 @@ x 21
 y 17
 end
 arch pstone_1
-x 21
-y 18
-end
-arch biglake_nw
-name sea
 x 21
 y 18
 end
@@ -5428,7 +5397,7 @@ arch pstone_1
 x 22
 y 17
 end
-arch sea
+arch shallow_sea
 x 22
 y 18
 end
@@ -6039,8 +6008,7 @@ elevation 5
 x 24
 y 37
 end
-arch desert
-elevation 510
+arch beach
 x 24
 y 38
 end
@@ -6177,7 +6145,7 @@ arch pstone_1
 x 25
 y 17
 end
-arch sea
+arch shallow_sea
 x 25
 y 18
 end
@@ -6412,7 +6380,7 @@ arch pstone_1
 x 26
 y 17
 end
-arch sea
+arch shallow_sea
 x 26
 y 18
 end
@@ -6503,8 +6471,7 @@ elevation -25
 x 26
 y 35
 end
-arch desert
-elevation 133
+arch beach
 x 26
 y 36
 end
@@ -6647,16 +6614,11 @@ arch pstone_1
 x 27
 y 17
 end
-arch pstone_1
+arch beach
 x 27
 y 18
 end
-arch biglake_ne
-name sea
-x 27
-y 18
-end
-arch sea
+arch shallow_sea
 x 27
 y 19
 end
@@ -6746,8 +6708,7 @@ elevation 1284
 x 27
 y 38
 end
-arch desert
-elevation 161
+arch beach
 x 27
 y 39
 end
@@ -6879,7 +6840,7 @@ arch pstone_1
 x 28
 y 18
 end
-arch sea
+arch shallow_sea
 x 28
 y 19
 end
@@ -6964,8 +6925,7 @@ elevation 1
 x 28
 y 37
 end
-arch desert
-elevation 105
+arch beach
 x 28
 y 38
 end
@@ -7098,21 +7058,15 @@ arch pstone_1
 x 29
 y 16
 end
-arch pstone_1
+arch beach
 x 29
 y 17
 end
-arch pstone_1
+arch beach
 x 29
 y 18
 end
-arch river_sw-ne_u
-name sea
-no_pass 0
-x 29
-y 18
-end
-arch sea
+arch shallow_sea
 x 29
 y 19
 end
@@ -7327,20 +7281,15 @@ arch pstone_1
 x 30
 y 15
 end
-arch pstone_1
+arch beach
 x 30
 y 16
 end
-arch pstone_1
+arch beach
 x 30
 y 17
 end
-arch biglake_nw
-name sea
-x 30
-y 17
-end
-arch sea
+arch shallow_sea
 x 30
 y 18
 end
@@ -7568,11 +7517,11 @@ arch pstone_1
 x 31
 y 15
 end
-arch pstone_1
+arch beach
 x 31
 y 16
 end
-arch sea
+arch shallow_sea
 x 31
 y 17
 end
@@ -7809,11 +7758,11 @@ arch pstone_1
 x 32
 y 15
 end
-arch pstone_1
+arch beach
 x 32
 y 16
 end
-arch sea
+arch shallow_sea
 x 32
 y 17
 end
@@ -8055,7 +8004,7 @@ arch pstone_1
 x 33
 y 14
 end
-arch pstone_1
+arch beach
 x 33
 y 15
 end
@@ -8063,12 +8012,7 @@ arch pstone_1
 x 33
 y 16
 end
-arch biglake_nw
-name sea
-x 33
-y 16
-end
-arch sea
+arch shallow_sea
 x 33
 y 17
 end
@@ -8314,11 +8258,11 @@ arch pstone_1
 x 34
 y 15
 end
-arch sea
+arch shallow_sea
 x 34
 y 16
 end
-arch sea
+arch shallow_sea
 x 34
 y 17
 end
@@ -8842,12 +8786,7 @@ arch pstone_1
 x 36
 y 16
 end
-arch biglake_ne
-name sea
-x 36
-y 16
-end
-arch sea
+arch shallow_sea
 x 36
 y 17
 end
@@ -9081,15 +9020,15 @@ arch pstone_1
 x 37
 y 15
 end
-arch pstone_1
+arch beach
 x 37
 y 16
 end
-arch sea
+arch shallow_sea
 x 37
 y 17
 end
-arch sea
+arch shallow_sea
 x 37
 y 18
 end
@@ -9327,12 +9266,7 @@ arch pstone_1
 x 38
 y 17
 end
-arch biglake_ne
-name sea
-x 38
-y 17
-end
-arch sea
+arch shallow_sea
 x 38
 y 18
 end
@@ -9535,7 +9469,7 @@ arch dungeon_floor
 x 39
 y 14
 end
-arch pstone_1
+arch beach
 x 39
 y 15
 end
@@ -9543,15 +9477,15 @@ arch pstone_1
 x 39
 y 16
 end
-arch pstone_1
+arch beach
 x 39
 y 17
 end
-arch sea
+arch shallow_sea
 x 39
 y 18
 end
-arch sea
+arch shallow_sea
 x 39
 y 19
 end
@@ -9754,19 +9688,19 @@ arch pstone_1
 x 40
 y 15
 end
-arch pstone_1
+arch beach
 x 40
 y 16
 end
-arch pstone_1
+arch beach
 x 40
 y 17
 end
-arch sea
+arch shallow_sea
 x 40
 y 18
 end
-arch sea
+arch shallow_sea
 x 40
 y 19
 end
@@ -10017,20 +9951,15 @@ arch pstone_1
 x 41
 y 15
 end
-arch pstone_1
+arch beach
 x 41
 y 16
 end
-arch pstone_1
+arch shallow_sea
 x 41
 y 17
 end
-arch biglake_new
-name sea
-x 41
-y 17
-end
-arch sea
+arch shallow_sea
 x 41
 y 18
 end
@@ -10259,11 +10188,11 @@ arch pstone_1
 x 42
 y 16
 end
-arch pstone_1
+arch beach
 x 42
 y 17
 end
-arch sea
+arch shallow_sea
 x 42
 y 18
 end
@@ -10483,12 +10412,7 @@ arch pstone_1
 x 43
 y 17
 end
-arch biglake_nw
-name sea
-x 43
-y 17
-end
-arch sea
+arch shallow_sea
 x 43
 y 18
 end
@@ -10993,16 +10917,11 @@ arch pstone_1
 x 45
 y 17
 end
-arch biglake_ne
-name lake
-x 45
-y 17
-end
-arch sea
+arch shallow_sea
 x 45
 y 18
 end
-arch sea
+arch shallow_sea
 x 45
 y 19
 end
@@ -11290,20 +11209,15 @@ arch pstone_1
 x 46
 y 18
 end
-arch river_nw-se_u
-name sea
-x 46
-y 18
-end
 arch cwall_1_2
 x 46
 y 18
 end
-arch sea
+arch shallow_sea
 x 46
 y 19
 end
-arch sea
+arch shallow_sea
 x 46
 y 20
 end
@@ -11525,11 +11439,11 @@ elevation 7219
 x 47
 y 18
 end
-arch sea
+arch shallow_sea
 x 47
 y 19
 end
-arch sea
+arch shallow_sea
 x 47
 y 20
 end
@@ -11770,15 +11684,15 @@ elevation 3551
 x 48
 y 19
 end
-arch sea
+arch shallow_sea
 x 48
 y 20
 end
-arch sea
+arch shallow_sea
 x 48
 y 21
 end
-arch sea
+arch shallow_sea
 x 48
 y 22
 end
@@ -11998,18 +11912,15 @@ elevation 2832
 x 49
 y 18
 end
-arch desert
-elevation 752
+arch beach
 x 49
 y 19
 end
-arch desert
-elevation 59
+arch beach
 x 49
 y 20
 end
-arch desert
-elevation 15
+arch beach
 x 49
 y 21
 end
@@ -12184,6 +12095,10 @@ x 14
 y 21
 end
 arch rowboat
+slaying world_128_109
+hp 17
+sp 40
+walk_on 1
 x 14
 y 26
 end
@@ -12226,6 +12141,21 @@ end
 arch rowboat
 x 17
 y 23
+end
+arch temple1
+name temple of Ixalovh
+slaying /wolfsburg/temple/ixalovh
+hp 2
+sp 6
+x 17
+y 38
+end
+arch rowboat
+slaying world_128_109
+hp 15
+sp 26
+x 17
+y 40
 end
 arch city_tower
 name Old Tower
