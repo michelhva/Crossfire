@@ -8,6 +8,7 @@ anim
 skeletalmage.111
 skeletalmage.112
 skeletalmage.113
+skeletalmage.112
 mina
 monster 1
 sleep 1
