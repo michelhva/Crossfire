@@ -1,10 +1,13 @@
 Object rustmonster
 race animal
 name rustmonster
-face rustmonste.111
+face rustmonste.131
 anim
-rustmonste.111
-rustmonste.112
+facings 2
+rustmonste.131
+rustmonste.132
+rustmonste.171
+rustmonste.172
 mina
 color_fg brown
 monster 1
