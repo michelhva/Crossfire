@@ -1,6 +1,14 @@
 Object shield_gaea
 name Gaea's Shield of Earth
-face holyshield.111
+face earth_shield.111
+anim
+earth_shield.111
+earth_shield.112
+earth_shield.113
+earth_shield.114
+earth_shield.113
+earth_shield.112
+mina
 msg
   This shield is highly enchanted by the forces
   of life and nature. It is a personal gift from
