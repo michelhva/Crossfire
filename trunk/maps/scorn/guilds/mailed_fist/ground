@@ -5141,7 +5141,7 @@ connected 22
 end
 arch perm_magic_portal
 name Brest
-slaying /brittany/Brest/brest
+slaying /world/world_107_123
 x 24
 y 2
 walk_on 0
@@ -5161,9 +5161,9 @@ connected 23
 end
 arch perm_magic_portal
 name Santo Dominion
-slaying /santo_dominion/town
+slaying /world/world_102_108
 hp 20
-sp 23
+sp 14
 x 24
 y 3
 walk_on 0
@@ -5184,7 +5184,7 @@ connected 24
 end
 arch perm_magic_portal
 name Navar
-slaying /navar_city/city1
+slaying /world/world_121_116
 x 24
 y 4
 walk_on 0
