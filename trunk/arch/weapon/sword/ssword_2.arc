@@ -14,4 +14,5 @@ weapontype 5
 magicmap white
 name_pl shortswords
 client_type 101
+body_arm -1
 end

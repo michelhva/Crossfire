@@ -13,4 +13,5 @@ value 21
 material 18
 editable 1024
 magicmap orange
+body_arm -1
 end

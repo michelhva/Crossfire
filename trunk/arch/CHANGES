@@ -1,5 +1,15 @@
 Changes for CVS top of tree:
 
+Update arcs to use body_info for equipping items.
+Update armor to use gen_sp_armour instead of last_heal.
+can_use_shield added to many arcs.
+Add dev/scripts directory, which contains some handy scripts I wrote
+for updating on the items.
+Add item_power to the armours - needs to be done for rest of equippable
+items.
+MSW 2002-07-14
+
+
 MSW 2000-12-26:
 Added new archetypes & god changes for new god code.  Changes by Jan E.,
 checked in my MSW.

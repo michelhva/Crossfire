@@ -52,6 +52,7 @@ path_attuned 2
 resist_fire 100
 resist_cold -30
 color_fg light_blue
+can_use_shield 0
 can_use_armour 0
 can_use_weapon 1
 Str 6
@@ -61,5 +62,13 @@ Wis -8
 Int -8
 Pow 6
 editable 0
+body_range 1
+body_arm 2
+body_neck 1
+body_skill 1
+body_finger 2
+body_shoulder 1
+body_wrist 2
+body_waist 1
 end
 

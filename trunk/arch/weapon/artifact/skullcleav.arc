@@ -23,4 +23,5 @@ weapontype 3
 magicmap black
 name_pl Skullcleavers
 client_type 100
+body_arm -1
 end

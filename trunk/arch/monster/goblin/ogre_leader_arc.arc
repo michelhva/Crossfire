@@ -35,8 +35,20 @@ can_use_skill 1
 can_use_wand 1
 can_use_bow 1
 can_use_ring 1
+can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 editable 1
 magicmap brown
+body_skill 1
+body_finger 2
+body_torso 1
+body_head 1
+body_shoulder 1
+body_foot 1
+body_wrist 1
+body_hand 2
+body_waist 1
+body_arm 2
+body_range 1
 end

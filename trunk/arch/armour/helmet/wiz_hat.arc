@@ -25,4 +25,6 @@ weight 1000
 value 50000
 material 128
 editable 5120
+body_head -1
+item_power 10
 end

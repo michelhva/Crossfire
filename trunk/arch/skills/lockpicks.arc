@@ -11,4 +11,5 @@ sp 1
 editable 2048
 name_pl lockpicks
 client_type 451
+body_skill -1
 end

@@ -10,4 +10,5 @@ Cha 1
 value 140
 material 32
 editable 1024
+body_head -1
 end

@@ -30,4 +30,5 @@ editable 5120
 magicmap yellow
 name_pl Firestars
 client_type 100
+body_arm -1
 end

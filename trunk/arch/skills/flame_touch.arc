@@ -8,4 +8,5 @@ attacktype 4
 no_drop 1
 sp 18
 editable 0
+body_skill -1
 end

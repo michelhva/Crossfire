@@ -11,4 +11,5 @@ nrof 1
 value 3
 material 128
 editable 1024
+body_torso -1
 end

@@ -14,4 +14,5 @@ editable 1024
 attacktype 1
 name_pl saws
 client_type 145
+body_arm -1
 end

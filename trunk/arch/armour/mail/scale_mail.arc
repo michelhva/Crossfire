@@ -5,7 +5,6 @@ name_pl scale mails
 client_type 253
 type 16
 face scale_mail.111
-last_heal 10
 last_sp 9
 material 8
 ac 3
@@ -14,4 +13,6 @@ weight 20000
 value 30
 editable 1024
 color_fg black
+body_torso -1
+gen_sp_armour 10
 end

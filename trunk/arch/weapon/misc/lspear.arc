@@ -14,4 +14,5 @@ attacktype 1
 weapontype 5
 name_pl long spears
 client_type 136
+body_arm -1
 end

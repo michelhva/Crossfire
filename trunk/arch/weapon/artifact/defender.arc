@@ -18,4 +18,5 @@ weapontype 1
 magicmap grey
 name_pl Defenders
 client_type 100
+body_arm -1
 end

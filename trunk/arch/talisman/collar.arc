@@ -17,4 +17,5 @@ value 1000
 editable 2048
 name_pl neko chan's collars
 client_type 381
+body_neck -1
 end

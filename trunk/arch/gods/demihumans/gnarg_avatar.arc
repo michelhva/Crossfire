@@ -24,6 +24,7 @@ wc -3
 dam 30
 level 15
 speed 0.25
+can_use_shield 1
 can_use_weapon 1
 can_use_armour 1
 can_cast_spell 1

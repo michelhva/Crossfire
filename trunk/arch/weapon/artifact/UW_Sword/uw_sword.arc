@@ -31,4 +31,5 @@ editable 5120
 magicmap white
 name_pl Belzebub's swords
 client_type 100
+body_arm -1
 end

@@ -8,7 +8,6 @@ face kog.111
 Wis 1
 Cha 2
 Int 1
-last_heal 5
 weight 2000
 ac 3
 resist_physical 10
@@ -16,4 +15,7 @@ value 100000
 material 2
 editable 1024
 color_fg black
+body_head -1
+gen_sp_armour 5
+item_power 4
 end

@@ -12,4 +12,6 @@ value 900
 material 32
 editable 5120
 nrof 1
+body_shoulder -1
+item_power 2
 end

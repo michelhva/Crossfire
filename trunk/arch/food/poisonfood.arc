@@ -11,4 +11,6 @@ identified 0
 name_pl boozes
 client_type 611
 cursed 1
+known_cursed 0
+title of poison
 end

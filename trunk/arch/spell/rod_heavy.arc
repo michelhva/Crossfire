@@ -18,4 +18,5 @@ maxhp 20
 editable 2048
 name_pl heavy rods
 client_type 701
+body_range -1
 end

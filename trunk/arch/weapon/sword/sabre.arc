@@ -13,4 +13,5 @@ weapontype 4
 magicmap white
 name_pl sabres
 client_type 101
+body_arm -1
 end

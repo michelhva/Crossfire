@@ -7,4 +7,5 @@ dam 5
 last_sp 1
 sp 10
 editable 0
+body_skill -1
 end

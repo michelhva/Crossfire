@@ -39,6 +39,7 @@ level 12
 run_away 3
 can_use_weapon 1
 editable 1
+body_arm 2
 end
 More
 Object ent_2

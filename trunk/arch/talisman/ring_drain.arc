@@ -20,4 +20,5 @@ nrof 1
 speed 0.1
 name_pl strange rings
 client_type 390
+body_finger -1
 end

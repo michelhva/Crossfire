@@ -23,4 +23,5 @@ editable 5120
 magicmap red
 name_pl Firebrands
 client_type 100
+body_arm -1
 end

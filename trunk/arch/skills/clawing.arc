@@ -7,4 +7,5 @@ last_sp 3
 no_drop 1
 sp 31
 editable 0
+body_skill -1
 end

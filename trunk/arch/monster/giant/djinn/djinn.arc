@@ -49,12 +49,23 @@ weight 300000
 run_away 5
 editable 1
 can_use_weapon 1
+can_use_shield 1
 can_use_armour 1
 can_use_rod 1
 can_use_horn 1
 can_use_ring 1
 can_use_wand 1
 can_use_scroll 1
+body_torso 1
+body_head 1
+body_shoulder 1
+body_foot 1
+body_wrist 1
+body_hand 2
+body_waist 1
+body_finger 2
+body_arm 2
+body_range 1
 end
 More
 Object djinn_2

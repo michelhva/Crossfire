@@ -11,4 +11,5 @@ material 2
 weight 3000
 editable 1024
 magicmap grey
+body_wrist -2
 end

@@ -42,6 +42,8 @@ run_away 3
 can_use_weapon 1
 can_use_skill 1
 magicmap blue
+body_skill 1
+body_arm 2
 end
 More
 Object gaelotroll_2

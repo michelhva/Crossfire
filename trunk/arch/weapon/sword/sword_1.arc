@@ -14,4 +14,5 @@ attacktype 1
 weapontype 1
 name_pl long swords
 client_type 101
+body_arm -1
 end

@@ -13,4 +13,5 @@ material 16
 editable 2048
 name_pl wands
 client_type 711
+body_range -1
 end

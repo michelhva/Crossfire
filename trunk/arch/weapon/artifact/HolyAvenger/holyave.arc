@@ -36,4 +36,5 @@ editable 5120
 magicmap black
 name_pl Holy Avengers
 client_type 100
+body_arm -1
 end

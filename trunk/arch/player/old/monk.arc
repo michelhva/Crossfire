@@ -14,6 +14,7 @@ level 1
 ac 10
 wc 21
 dam 1
+can_use_shield 1
 can_use_armour 1
 alive 1
 weight 70000

@@ -12,4 +12,6 @@ resist_physical 3
 flying 1
 editable 5120
 magicmap white
+body_foot -2
+item_power 1
 end

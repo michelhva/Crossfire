@@ -14,4 +14,5 @@ editable 1024
 attacktype 1
 name_pl bows
 client_type 151
+body_arm -2
 end

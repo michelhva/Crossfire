@@ -48,4 +48,5 @@ value 1000000
 magicmap black
 name_pl Chaos Swords
 client_type 100
+body_arm -1
 end

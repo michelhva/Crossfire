@@ -30,4 +30,5 @@ weapontype 1
 magicmap black
 name_pl Demonbanes
 client_type 100
+body_arm -1
 end

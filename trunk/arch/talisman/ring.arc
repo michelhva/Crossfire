@@ -20,4 +20,5 @@ editable 2048
 nrof 1
 name_pl rings
 client_type 391
+body_finger -1
 end

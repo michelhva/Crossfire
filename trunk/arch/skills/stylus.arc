@@ -10,4 +10,5 @@ editable 2048
 sp 22
 name_pl writing pens
 client_type 451
+body_skill -1
 end

@@ -25,4 +25,5 @@ Dex 2
 wc 2
 magic 1
 startequip 1
+body_hand -2
 end

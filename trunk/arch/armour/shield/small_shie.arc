@@ -11,4 +11,5 @@ value 20
 material 2
 editable 1024
 magicmap brown
+body_arm -1
 end

@@ -18,4 +18,6 @@ value 120000
 material 2
 weight 1800
 editable 5120
+body_hand -2
+item_power 1
 end

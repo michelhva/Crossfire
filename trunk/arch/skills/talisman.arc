@@ -11,4 +11,5 @@ sp 26
 editable 2048
 name_pl talismans
 client_type 451
+body_skill -1
 end

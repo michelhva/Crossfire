@@ -41,6 +41,7 @@ alive 1
 weight 30000
 food 999
 can_see_in_dark 1
+can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 attacktype 17
@@ -59,6 +60,18 @@ Wis -3
 Pow 3
 Cha -4
 editable 0
+body_range 1
+body_arm 2
+body_torso 1
+body_head 1
+body_neck 1
+body_skill 1
+body_finger 2
+body_shoulder 1
+body_foot 2
+body_hand 2
+body_wrist 2
+body_waist 1
 end
 Object wraith_player_force
 name Wraith_Force

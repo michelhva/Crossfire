@@ -19,4 +19,6 @@ material 8
 resist_physical 3
 editable 5120
 color_fg brown
+body_foot -2
+item_power 6
 end

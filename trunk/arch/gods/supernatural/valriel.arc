@@ -30,6 +30,7 @@ speed 0.25
 can_cast_spell 1
 can_use_armour 1
 can_use_weapon 1
+can_use_shield 1
 msg
 Lord of Angels, Duke of the Heavens, Healer and Protector
 endmsg

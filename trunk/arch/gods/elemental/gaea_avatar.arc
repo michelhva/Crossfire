@@ -32,6 +32,7 @@ level 15
 speed 0.18
 can_cast_spell 1
 can_use_armour 1
+can_use_shield 1
 exp 1
 weight 500000
 end

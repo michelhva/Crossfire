@@ -22,6 +22,7 @@ food 999
 speed 0.5
 attacktype 1
 color_fg light_blue
+can_use_shield 0
 can_use_armour 0
 can_use_weapon 1
 Str 6

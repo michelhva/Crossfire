@@ -23,4 +23,5 @@ last_sp 9
 editable 5120
 name_pl Lava Slashers
 client_type 100
+body_arm -1
 end

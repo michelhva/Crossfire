@@ -25,4 +25,5 @@ weapontype 2
 magicmap grey
 name_pl Stings
 client_type 100
+body_arm -1
 end
