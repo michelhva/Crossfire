@@ -1,6 +1,6 @@
 Object water_witch
 name water witch
-race elemental
+race water_elemental
 face witch_water.111
 color_fg blue
 randomitems witch_water

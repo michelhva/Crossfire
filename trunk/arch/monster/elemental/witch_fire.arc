@@ -1,6 +1,6 @@
 Object fire_witch
 name fire witch
-race elemental
+race fire_elemental
 face witch_fire.111
 color_fg red
 randomitems witch_fire
