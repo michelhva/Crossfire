@@ -125,7 +125,7 @@ weight 100000
 y 2
 magicmap khaki
 end
-More 
+More
 Object belzebub_6
 name Belzebub
 face belzebub.611

@@ -8,7 +8,7 @@ DShield.111
 DShield.112
 mina 
 speed 0.2
-msg 
+msg
   There is a evil spirit in the shield.
 endmsg
 Cha -3
