@@ -1,0 +1,37 @@
+/* XPM */
+static char * gnoll_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c peru",
+"o	c gold",
+"O	c sienna",
+"+	c black",
+"@	c grey75",
+/* pixels */
+"                        ",
+"            ...         ",
+"           .XXX.        ",
+"           .oXo.        ",
+"           .XXX.        ",
+"            ...         ",
+"         ...OOO...      ",
+"        .XXXXXXXXXX.    ",
+"        .XXXXXXXXXXX.   ",
+"       .XXXXXXXX.+..X.  ",
+"       .X.XXXXXX.   .O. ",
+"       .X..XXXXX.    .. ",
+"       O.  .....     .. ",
+"      OO  .XXXXX.    .  ",
+"  @@@@@O .XXXXXXX.      ",
+"        .XXX...XX.      ",
+"       .XX..   .XX.     ",
+"      .XX.      .XX.    ",
+"      .X.        .X.    ",
+"      ..         .X.    ",
+"      ..         .O.    ",
+"     .O.          .O.   ",
+"     ...          ...   ",
+"                        "};
