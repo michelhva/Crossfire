@@ -9,6 +9,6 @@ no_pick 1
 slow_move 2
 editable 8
 is_floor 1
-smoothlevel 30
+smoothlevel 31
 magicmap brown
 end
