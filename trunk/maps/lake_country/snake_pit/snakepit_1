@@ -4710,15 +4710,15 @@ speed 1.000000
 resist_physical 100
 resist_fire 100
 resist_cold 100
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch small_stones
@@ -7261,7 +7261,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7290,7 +7290,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7319,7 +7319,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7348,7 +7348,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7377,7 +7377,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7406,7 +7406,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7435,7 +7435,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7464,7 +7464,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7493,7 +7493,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7522,7 +7522,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7551,7 +7551,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7580,7 +7580,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7609,7 +7609,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7638,7 +7638,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7667,7 +7667,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7696,7 +7696,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7725,7 +7725,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7754,7 +7754,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7783,7 +7783,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7812,7 +7812,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7841,7 +7841,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7870,7 +7870,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7899,7 +7899,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7928,7 +7928,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7957,7 +7957,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7986,7 +7986,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More

@@ -1446,19 +1446,19 @@ arch wine
 name a bottle filled with blood
 material 0
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch afloor_right

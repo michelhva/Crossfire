@@ -4331,31 +4331,29 @@ resist_fear 30
 resist_cancellation 30
 resist_holyword 80
 carrying 100
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_heal
+arch spell_heal
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_forced_dance
+arch spell_icestorm
 end
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
-end
-arch ability_bomb
+arch spell_create_bomb
 end
 arch key2
 name a large heavy key

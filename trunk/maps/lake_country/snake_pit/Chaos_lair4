@@ -3538,7 +3538,7 @@ attacktype 351389
 carrying 545050
 flying 1
 can_cast_spell 1
-arch ability_bomb
+arch spell_create_bomb
 end
 arch Pdragon_mail
 end
@@ -3561,25 +3561,22 @@ weight 64000
 magic 9
 identified 1
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch book
-name spellbook covered with tiny skulls
-msg
-Death DEATH! DEATH!!
-endmsg
-sp 87
-value 20000
+arch cleric_book
+value 4400
+arch spell_face_of_death
+end
 end
 arch key2
 name fragment-of-chaos
@@ -3721,16 +3718,16 @@ protected 8
 attacktype 29
 carrying 35000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
 arch gem
 nrof 700
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
 end
 More
@@ -3774,17 +3771,18 @@ flying 1
 arch gem
 nrof 600
 end
-arch book
+arch sorcerer_book
 name stones
 face largestone.111
-sp 85
 no_pick 1
+arch spell_color_spray
 end
-arch ability_lightning
 end
-arch ability_cold
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch abil_icestorm
+end
+arch spell_mass_confusion
 end
 end
 More
@@ -3897,17 +3895,18 @@ flying 1
 arch gem
 nrof 600
 end
-arch book
+arch sorcerer_book
 name stones
 face largestone.111
-sp 85
 no_pick 1
+arch spell_color_spray
 end
-arch ability_lightning
 end
-arch ability_cold
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch abil_icestorm
+end
+arch spell_mass_confusion
 end
 end
 More
@@ -4020,17 +4019,18 @@ flying 1
 arch gem
 nrof 600
 end
-arch book
+arch sorcerer_book
 name stones
 face largestone.111
-sp 85
 no_pick 1
+arch spell_color_spray
 end
-arch ability_lightning
 end
-arch ability_cold
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch abil_icestorm
+end
+arch spell_mass_confusion
 end
 end
 More
@@ -4143,16 +4143,16 @@ protected 8
 attacktype 29
 carrying 35000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
 arch gem
 nrof 700
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
 end
 More

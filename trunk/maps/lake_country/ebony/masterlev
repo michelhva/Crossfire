@@ -1030,7 +1030,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1049,7 +1049,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1068,7 +1068,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1111,7 +1111,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1130,7 +1130,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1149,7 +1149,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1890,7 +1890,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1909,7 +1909,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1928,7 +1928,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -1975,9 +1975,9 @@ arch key2
 name Master key of thievery
 slaying Thievery
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 arch poisoning
 end
@@ -2025,7 +2025,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -2044,7 +2044,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor
@@ -2063,7 +2063,7 @@ attacktype 5121
 resist_poison 100
 resist_paralyze 100
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch woodfloor

@@ -164,7 +164,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -301,7 +301,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -328,7 +328,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -391,7 +391,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -422,7 +422,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -483,7 +483,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -608,7 +608,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -669,7 +669,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -762,7 +762,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -835,7 +835,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -948,7 +948,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -1021,7 +1021,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -1060,7 +1060,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -1123,7 +1123,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -1162,7 +1162,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -1219,7 +1219,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -1246,7 +1246,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -1277,7 +1277,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 end
 arch woodfloor
@@ -1348,7 +1348,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -1489,7 +1489,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_air
+arch spell_summon_air_elemental
 end
 end
 arch woodfloor
@@ -1835,7 +1835,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -1866,7 +1866,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2007,7 +2007,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2066,7 +2066,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2105,7 +2105,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2166,7 +2166,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2261,7 +2261,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2338,7 +2338,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2455,7 +2455,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2512,7 +2512,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2543,7 +2543,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2574,7 +2574,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch magic_banned
@@ -2675,7 +2675,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2819,7 +2819,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -2911,7 +2911,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -2938,7 +2938,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 end
 arch woodfloor
@@ -3005,7 +3005,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor
@@ -3040,7 +3040,7 @@ type 0
 monster 1
 see_invisible 1
 can_cast_spell 1
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
 end
 arch woodfloor

@@ -1665,11 +1665,9 @@ x 8
 y 20
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -1698,11 +1696,9 @@ x 8
 y 22
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -1910,11 +1906,9 @@ x 9
 y 21
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -2147,11 +2141,9 @@ x 10
 y 22
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -2176,11 +2168,9 @@ x 10
 y 23
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -2205,11 +2195,9 @@ x 10
 y 24
 speed 0.600000
 attacktype 256
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_lightning
-end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch marble
@@ -5300,9 +5288,9 @@ immune 4
 attacktype 16385
 run_away 0
 can_cast_spell 1
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch marble

@@ -38,13 +38,13 @@ resist_cold 100
 resist_paralyze 100
 carrying 35000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 700
@@ -432,11 +432,11 @@ y 30
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed
@@ -470,11 +470,11 @@ y 33
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed
@@ -508,11 +508,11 @@ y 36
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed
@@ -894,17 +894,18 @@ flying 1
 arch gem
 nrof 600
 end
-arch book
+arch sorcerer_book
 name stones
 face largestone.111
-sp 85
 no_pick 1
+arch spell_color_spray
 end
-arch ability_lightning
 end
-arch ability_cold
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch abil_icestorm
+end
+arch spell_mass_confusion
 end
 end
 arch large_stones
@@ -4699,13 +4700,14 @@ x 17
 y 9
 nrof 600
 end
-arch book
+arch sorcerer_book
 name stones
 face largestone.111
-sp 85
 x 17
 y 9
 no_pick 1
+arch spell_color_spray
+end
 end
 arch large_stones
 x 17
@@ -6519,11 +6521,11 @@ y 30
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed
@@ -6557,11 +6559,11 @@ y 33
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed
@@ -6595,11 +6597,11 @@ y 36
 speed 0.450000
 speed_left -15.299997
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch pit_closed

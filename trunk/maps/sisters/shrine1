@@ -1374,11 +1374,11 @@ can_pass_thru 0
 can_cast_spell 1
 x 8
 y 3
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch flagstone
@@ -1484,11 +1484,11 @@ can_pass_thru 0
 can_cast_spell 1
 x 8
 y 16
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch flagstone
@@ -4249,11 +4249,11 @@ can_pass_thru 0
 can_cast_spell 1
 x 22
 y 2
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch flagstone
@@ -4355,11 +4355,11 @@ can_pass_thru 0
 can_cast_spell 1
 x 22
 y 17
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch flagstone

@@ -1,11 +1,12 @@
 arch map
+name <untitled>
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Wed Nov 17 18:23:59 1993
 endmsg
-x 29
-y 25
+width 29
+height 25
 end
 arch woodfloor
 y 5
@@ -88,9 +89,9 @@ x 1
 y 8
 end
 arch button_handle
+connected 20
 x 1
 y 8
-connected 20
 end
 arch woodfloor
 x 1
@@ -177,8 +178,8 @@ x 2
 y 8
 end
 arch locked_door2
-slaying set_individual_value smugd1
 face ldoor_brown2.111
+slaying set_individual_value smugd1
 x 2
 y 8
 end
@@ -274,9 +275,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 3
 y 6
-level 5
 end
 arch woodfloor
 name deck
@@ -299,17 +300,17 @@ maxhp 150
 sp 80
 maxsp 80
 ac -5
-x 3
-y 8
 level 11
 carrying 100
+x 3
+y 8
 arch key2
 name Skeleton Key
 slaying set_individual_value smugd1
 end
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch woodfloor
@@ -328,9 +329,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 3
 y 10
-level 5
 end
 arch woodfloor
 name deck
@@ -552,10 +553,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 3
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -567,10 +568,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 4
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -582,10 +583,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 5
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -597,10 +598,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 6
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -612,10 +613,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 7
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -627,10 +628,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 8
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -642,10 +643,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 9
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -657,10 +658,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 10
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -672,10 +673,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 11
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -687,10 +688,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 12
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -702,10 +703,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 5
 y 13
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -717,10 +718,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 14
 speed_left -0.580000
 level 5
+x 5
+y 14
 end
 arch woodfloor
 name deck
@@ -732,10 +733,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 15
 speed_left -0.580000
 level 5
+x 5
+y 15
 end
 arch woodfloor
 x 5
@@ -816,10 +817,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 6
 y 1
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -831,10 +832,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 2
 speed_left -0.580000
 level 5
+x 6
+y 2
 end
 arch woodfloor
 name deck
@@ -846,10 +847,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 3
 speed_left -0.580000
 level 5
+x 6
+y 3
 end
 arch woodfloor
 name deck
@@ -876,10 +877,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 7
 speed_left -0.580000
 level 5
+x 6
+y 7
 end
 arch woodfloor
 name deck
@@ -891,10 +892,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 8
 speed_left -0.580000
 level 5
+x 6
+y 8
 end
 arch woodfloor
 name deck
@@ -911,10 +912,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 10
 speed_left -0.580000
 level 5
+x 6
+y 10
 end
 arch woodfloor
 name deck
@@ -946,10 +947,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 15
 speed_left -0.580000
 level 5
+x 6
+y 15
 end
 arch woodfloor
 x 6
@@ -1510,9 +1511,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 10
 y 19
-level 5
 end
 arch woodfloor
 name deck
@@ -1525,9 +1526,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 10
 y 20
-level 5
 end
 arch woodfloor
 name deck
@@ -1540,9 +1541,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 10
 y 21
-level 5
 end
 arch woodfloor
 name deck
@@ -1555,9 +1556,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 10
 y 22
-level 5
 end
 arch woodfloor
 name deck
@@ -1570,9 +1571,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 10
 y 23
-level 5
 end
 arch woodfloor
 x 10
@@ -1649,9 +1650,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 11
 y 19
-level 5
 end
 arch woodfloor
 name deck
@@ -1664,9 +1665,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 11
 y 20
-level 5
 end
 arch woodfloor
 name deck
@@ -1679,9 +1680,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 11
 y 21
-level 5
 end
 arch woodfloor
 name deck
@@ -1694,9 +1695,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 11
 y 22
-level 5
 end
 arch woodfloor
 name deck
@@ -1709,9 +1710,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 11
 y 23
-level 5
 end
 arch woodfloor
 x 11
@@ -1740,9 +1741,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 12
 y 19
-level 5
 end
 arch woodfloor
 name deck
@@ -1755,9 +1756,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 12
 y 20
-level 5
 end
 arch woodfloor
 name deck
@@ -1770,9 +1771,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 12
 y 21
-level 5
 end
 arch woodfloor
 name deck
@@ -1785,9 +1786,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 12
 y 22
-level 5
 end
 arch woodfloor
 name deck
@@ -1800,9 +1801,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 12
 y 23
-level 5
 end
 arch woodfloor
 x 12
@@ -1920,30 +1921,30 @@ x 14
 y 20
 end
 arch grate_closed_2
+connected 20
+blocksview 1
 x 14
 y 20
-connected 20
-blocksview 1
 end
 arch woodfloor
 x 14
 y 21
 end
 arch grate_closed_2
-x 14
-y 21
 connected 20
 blocksview 1
+x 14
+y 21
 end
 arch woodfloor
 x 14
 y 22
 end
 arch grate_closed_2
-x 14
-y 22
 connected 20
 blocksview 1
+x 14
+y 22
 end
 arch woodfloor
 x 14
@@ -2285,30 +2286,30 @@ x 17
 y 20
 end
 arch grate_closed_2
+connected 10
+blocksview 1
 x 17
 y 20
-connected 10
-blocksview 1
 end
 arch woodfloor
 x 17
 y 21
 end
 arch grate_closed_2
-x 17
-y 21
 connected 10
 blocksview 1
+x 17
+y 21
 end
 arch woodfloor
 x 17
 y 22
 end
 arch grate_closed_2
-x 17
-y 22
 connected 10
 blocksview 1
+x 17
+y 22
 end
 arch woodfloor
 x 17
@@ -2454,10 +2455,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 3
 speed_left -0.580000
 level 5
+x 19
+y 3
 end
 arch woodfloor
 name deck
@@ -2509,10 +2510,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 12
 speed_left -0.580000
 level 5
+x 19
+y 12
 end
 arch woodfloor
 name deck
@@ -2584,10 +2585,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 20
 y 3
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -2599,10 +2600,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 4
 speed_left -0.580000
 level 5
+x 20
+y 4
 end
 arch woodfloor
 name deck
@@ -2614,10 +2615,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 5
 speed_left -0.580000
 level 5
+x 20
+y 5
 end
 arch woodfloor
 name deck
@@ -2654,10 +2655,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 11
 speed_left -0.580000
 level 5
+x 20
+y 11
 end
 arch woodfloor
 name deck
@@ -2669,10 +2670,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 12
 speed_left -0.580000
 level 5
+x 20
+y 12
 end
 arch woodfloor
 name deck
@@ -2758,10 +2759,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 21
 y 5
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -2773,10 +2774,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 6
 speed_left -0.580000
 level 5
+x 21
+y 6
 end
 arch woodfloor
 name deck
@@ -2788,10 +2789,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 7
 speed_left -0.580000
 level 5
+x 21
+y 7
 end
 arch woodfloor
 name deck
@@ -2813,10 +2814,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 10
 speed_left -0.580000
 level 5
+x 21
+y 10
 end
 arch woodfloor
 name deck
@@ -2828,10 +2829,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 11
 speed_left -0.580000
 level 5
+x 21
+y 11
 end
 arch woodfloor
 name deck
@@ -2936,10 +2937,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 22
 y 7
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -2951,10 +2952,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -0.580000
+level 5
 x 22
 y 8
-speed_left -0.580000
-level 5
 end
 arch woodfloor
 name deck
@@ -2966,10 +2967,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 9
 speed_left -0.580000
 level 5
+x 22
+y 9
 end
 arch woodfloor
 name deck
@@ -2981,10 +2982,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 10
 speed_left -0.580000
 level 5
+x 22
+y 10
 end
 arch woodfloor
 name deck
@@ -3052,14 +3053,14 @@ exp 200
 dam 15
 wc 5
 ac -7
+carrying 2500
 x 22
 y 21
-carrying 2500
 arch girdle_str
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_coldspell
+arch spell_icestorm
 end
 end
 arch woodfloor
@@ -3103,9 +3104,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 23
 y 5
-level 5
 end
 arch woodfloor
 name deck
@@ -3245,9 +3246,9 @@ hp 150
 maxhp 150
 exp 90
 dam 15
+level 5
 x 24
 y 10
-level 5
 end
 arch woodfloor
 name deck
@@ -3362,10 +3363,10 @@ exp 125
 dam 12
 wc 5
 ac -5
-x 25
-y 8
 level 11
 carrying 100
+x 25
+y 8
 arch key2
 name Skeleton Key
 slaying set_individual_value smugd1
@@ -3444,8 +3445,8 @@ x 26
 y 8
 end
 arch locked_door2
-slaying set_individual_value smugd1
 face ldoor_brown2.111
+slaying set_individual_value smugd1
 x 26
 y 8
 end
@@ -3503,9 +3504,9 @@ x 27
 y 8
 end
 arch button_handle
+connected 10
 x 27
 y 8
-connected 10
 end
 arch woodfloor
 x 27

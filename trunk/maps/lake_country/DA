@@ -897,10 +897,11 @@ maxhp 100
 sp 126
 value 10000000
 end
-arch book
-sp 89
-value 2000
+arch pyro_book
+value 2400
 identified 1
+arch spell_meteor_swarm
+end
 end
 end
 arch woodfloor

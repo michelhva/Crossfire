@@ -341,11 +341,11 @@ y 9
 level 15
 immune 4
 carrying 2300
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch wand
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch pstone_3
@@ -1228,7 +1228,7 @@ x 13
 y 3
 level 11
 can_cast_spell 1
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch pstone_3
@@ -1294,7 +1294,7 @@ x 13
 y 15
 level 11
 can_cast_spell 1
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch pstone_3

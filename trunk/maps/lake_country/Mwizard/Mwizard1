@@ -2921,7 +2921,7 @@ hp 500
 x 15
 y 8
 carrying 100
-arch ability_paralyze
+arch spell_paralyze
 end
 arch key2
 name Gold Key With An Inscription
@@ -2930,9 +2930,9 @@ msg
 To III
 endmsg
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_coldspell
+arch abil_icestorm
 end
 end
 arch flagstone

@@ -2437,15 +2437,15 @@ carrying 100
 flying 1
 unaggressive 0
 can_see_in_dark 1
-arch ability_fear
+arch abil_fear
 end
 arch key2
 name Jade-key
 slaying Jade-key
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch large_stones
@@ -3572,13 +3572,14 @@ slaying blue_crystal
 x 16
 y 13
 carrying 5650
-arch book
+arch sorcerer_book
 name Way of Destruction
 msg
 Destroy all livings!
 endmsg
-sp 23
-value 10000
+value 3600
+arch spell_destruction
+end
 end
 arch gem
 title of exceptional beauty
@@ -4891,11 +4892,11 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_cast_spell 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch large_stones
@@ -6165,11 +6166,11 @@ resist_poison 100
 flying 1
 unaggressive 0
 can_see_in_dark 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch large_stones
@@ -7763,7 +7764,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7796,7 +7797,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7829,7 +7830,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7862,7 +7863,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7895,7 +7896,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7928,7 +7929,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7961,7 +7962,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -7994,7 +7995,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8027,7 +8028,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8060,7 +8061,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8146,7 +8147,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8179,7 +8180,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8220,13 +8221,13 @@ resist_cold 100
 resist_paralyze 100
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500
@@ -8281,11 +8282,11 @@ resist_poison 100
 unaggressive 1
 can_cast_spell 1
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 More
@@ -8326,7 +8327,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8359,7 +8360,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8392,7 +8393,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8425,7 +8426,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8458,7 +8459,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8491,7 +8492,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8524,7 +8525,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8557,7 +8558,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8590,7 +8591,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8623,7 +8624,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8656,7 +8657,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8689,7 +8690,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8722,7 +8723,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -8755,7 +8756,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More

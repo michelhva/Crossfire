@@ -109,43 +109,25 @@ no_pick 1
 x 1
 y 3
 arch cleric_book
-msg
-Cause light wounds
-endmsg
-slaying cause light wounds
-value 2500
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_cause_medium_wounds
+end
 end
 arch cleric_book
-msg
-Cause medium wounds
-endmsg
-slaying cause medium wounds
-unpaid 1
+value 1500
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_heavy_wounds
+end
 end
 arch cleric_book
-msg
-Cause serious wounds
-endmsg
-slaying cause heavy wounds
-value 4500
-unpaid 1
+value 250
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_light_wounds
 end
-arch cleric_book
-msg
-Cause critical wounds
-endmsg
-slaying cause critical wounds
-value 5500
-unpaid 1
-identified 1
-been_applied 1
 end
 end
 arch woodfloor
@@ -163,43 +145,25 @@ no_pick 1
 x 1
 y 4
 arch cleric_book
-msg
-Cause light wounds
-endmsg
-slaying cause light wounds
-value 2500
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_cause_medium_wounds
+end
 end
 arch cleric_book
-msg
-Cause medium wounds
-endmsg
-slaying cause medium wounds
-unpaid 1
+value 1500
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_heavy_wounds
+end
 end
 arch cleric_book
-msg
-Cause serious wounds
-endmsg
-slaying cause heavy wounds
-value 4500
-unpaid 1
+value 250
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_light_wounds
 end
-arch cleric_book
-msg
-Cause critical wounds
-endmsg
-slaying cause critical wounds
-value 5500
-unpaid 1
-identified 1
-been_applied 1
 end
 end
 arch woodfloor
@@ -217,43 +181,25 @@ no_pick 1
 x 1
 y 5
 arch cleric_book
-msg
-Cause light wounds
-endmsg
-slaying cause light wounds
-value 2500
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_cause_medium_wounds
+end
 end
 arch cleric_book
-msg
-Cause medium wounds
-endmsg
-slaying cause medium wounds
-unpaid 1
+value 1500
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_heavy_wounds
+end
 end
 arch cleric_book
-msg
-Cause serious wounds
-endmsg
-slaying cause heavy wounds
-value 4500
-unpaid 1
+value 250
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_light_wounds
 end
-arch cleric_book
-msg
-Cause critical wounds
-endmsg
-slaying cause critical wounds
-value 5500
-unpaid 1
-identified 1
-been_applied 1
 end
 end
 arch woodfloor
@@ -271,43 +217,25 @@ no_pick 1
 x 1
 y 6
 arch cleric_book
-msg
-Cause light wounds
-endmsg
-slaying cause light wounds
-value 2500
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_cause_medium_wounds
+end
 end
 arch cleric_book
-msg
-Cause medium wounds
-endmsg
-slaying cause medium wounds
-unpaid 1
+value 1500
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_heavy_wounds
+end
 end
 arch cleric_book
-msg
-Cause serious wounds
-endmsg
-slaying cause heavy wounds
-value 4500
-unpaid 1
+value 250
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_light_wounds
 end
-arch cleric_book
-msg
-Cause critical wounds
-endmsg
-slaying cause critical wounds
-value 5500
-unpaid 1
-identified 1
-been_applied 1
 end
 end
 arch woodfloor
@@ -325,43 +253,25 @@ no_pick 1
 x 1
 y 7
 arch cleric_book
-msg
-Cause light wounds
-endmsg
-slaying cause light wounds
-value 2500
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_cause_medium_wounds
+end
 end
 arch cleric_book
-msg
-Cause medium wounds
-endmsg
-slaying cause medium wounds
-unpaid 1
+value 1500
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_heavy_wounds
+end
 end
 arch cleric_book
-msg
-Cause serious wounds
-endmsg
-slaying cause heavy wounds
-value 4500
-unpaid 1
+value 250
 identified 1
-been_applied 1
+unpaid 1
+arch spell_cause_light_wounds
 end
-arch cleric_book
-msg
-Cause critical wounds
-endmsg
-slaying cause critical wounds
-value 5500
-unpaid 1
-identified 1
-been_applied 1
 end
 end
 arch woodfloor

@@ -278,20 +278,20 @@ monster 1
 can_cast_spell 1
 x 4
 y 3
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
 arch key2
 slaying EK
 end
-arch ability_slow
+arch abil_slow
 end
-arch ability_bullet
+arch spell_small_bullet
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch woodfloor

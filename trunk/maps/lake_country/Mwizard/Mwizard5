@@ -4886,24 +4886,24 @@ speed_left -2.040000
 level 30
 immune 28
 carrying 25000
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_coldspell
+arch spell_icestorm
 end
 arch dragon_scale
 name Dragon Ball
 face shell.111
 value 10000
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -4981,9 +4981,9 @@ speed 1.000000
 speed_left -0.790000
 level 29
 immune 28
-arch ability_coldspell
+arch spell_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
 end
 More
@@ -5004,7 +5004,7 @@ speed 1.000000
 speed_left -0.320000
 level 29
 immune 28
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -5063,9 +5063,9 @@ speed 1.000000
 speed_left -0.860000
 level 29
 immune 28
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_fire
+arch abil_burning_hands
 end
 end
 More

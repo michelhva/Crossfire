@@ -1475,25 +1475,25 @@ level 28
 carrying 8000
 see_invisible 1
 can_use_skill 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_bullet
+arch spell_small_bullet
 end
-arch ability_slow
+arch abil_slow
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_firespell
+arch abil_burning_hands
 end
 arch bracers_ac
 name bracers of magical power
@@ -1506,7 +1506,7 @@ resist_fire -30
 resist_acid 85
 see_invisible 1
 end
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch flagstone

@@ -278,16 +278,16 @@ monster 1
 can_cast_spell 1
 x 4
 y 3
-arch ability_summon_water
+arch spell_summon_water_elemental
 end
 arch key2
 slaying WK
 end
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_coldspell
+arch abil_icestorm
 end
 end
 arch woodfloor

@@ -1,13 +1,13 @@
 arch map
 name light0
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Fri Nov 12 11:08:02 1993
 endmsg
-x 32
-y 28
-invisible 4
+width 32
+height 28
+darkness 4
 end
 arch large_stones
 end
@@ -194,10 +194,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 1
 speed_left -1.300000
 level 5
+x 1
+y 1
 end
 arch large_stones
 x 1
@@ -212,11 +212,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 2
 speed_left -1.300000
 level 5
 carrying 3000
+x 1
+y 2
 arch torch_1
 end
 end
@@ -237,10 +237,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 1
 y 5
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 1
@@ -251,10 +251,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 1
 y 6
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 1
@@ -265,10 +265,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 7
 speed_left -1.300000
 level 5
+x 1
+y 7
 end
 arch large_stones
 x 1
@@ -279,10 +279,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 8
 speed_left -1.300000
 level 5
+x 1
+y 8
 end
 arch large_stones
 x 1
@@ -301,10 +301,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 11
 speed_left -1.300000
 level 5
+x 1
+y 11
 end
 arch large_stones
 x 1
@@ -315,11 +315,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 12
 speed_left -1.300000
 level 5
 carrying 3000
+x 1
+y 12
 arch torch_1
 end
 end
@@ -332,10 +332,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 13
 speed_left -1.300000
 level 5
+x 1
+y 13
 end
 arch large_stones
 x 1
@@ -350,10 +350,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 15
 speed_left -1.300000
 level 5
+x 1
+y 15
 end
 arch large_stones
 x 1
@@ -364,11 +364,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 16
 speed_left -1.300000
 level 5
 carrying 3000
+x 1
+y 16
 arch torch_1
 end
 end
@@ -381,10 +381,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 1
-y 17
 speed_left -1.300000
 level 5
+x 1
+y 17
 end
 arch large_stones
 x 1
@@ -457,10 +457,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 2
-y 1
 speed_left -1.300000
 level 5
+x 2
+y 1
 end
 arch large_stones
 x 2
@@ -587,10 +587,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 2
-y 17
 speed_left -1.300000
 level 5
+x 2
+y 17
 end
 arch large_stones
 x 2
@@ -601,10 +601,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 2
-y 18
 speed_left -1.300000
 level 5
+x 2
+y 18
 end
 arch large_stones
 x 2
@@ -627,10 +627,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 2
 y 21
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 2
@@ -641,10 +641,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 2
 y 22
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 2
@@ -655,10 +655,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 2
-y 23
 speed_left -1.300000
 level 5
+x 2
+y 23
 end
 arch large_stones
 x 2
@@ -669,10 +669,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 2
-y 24
 speed_left -1.300000
 level 5
+x 2
+y 24
 end
 arch large_stones
 x 2
@@ -713,10 +713,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 1
 speed_left -1.300000
 level 5
+x 3
+y 1
 end
 arch large_stones
 x 3
@@ -747,10 +747,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 3
 y 6
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 3
@@ -761,10 +761,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 3
 y 7
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 3
@@ -775,10 +775,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 8
 speed_left -1.300000
 level 5
+x 3
+y 8
 end
 arch large_stones
 x 3
@@ -789,10 +789,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 9
 speed_left -1.300000
 level 5
+x 3
+y 9
 end
 arch large_stones
 x 3
@@ -836,13 +836,13 @@ maxhp 80
 sp 100
 maxsp 100
 exp 100
-x 3
-y 15
 speed_left -0.700000
 unaggressive 0
-arch ability_bullet
+x 3
+y 15
+arch spell_magic_bullet
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch large_stones
@@ -870,10 +870,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 18
 speed_left -1.300000
 level 5
+x 3
+y 18
 end
 arch large_stones
 x 3
@@ -896,10 +896,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 21
 speed_left -1.300000
 level 5
+x 3
+y 21
 end
 arch large_stones
 x 3
@@ -934,10 +934,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 3
-y 25
 speed_left -1.300000
 level 5
+x 3
+y 25
 end
 arch large_stones
 x 3
@@ -1106,10 +1106,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 4
-y 21
 speed_left -1.300000
 level 5
+x 4
+y 21
 end
 arch large_stones
 x 4
@@ -1120,10 +1120,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 4
-y 22
 speed_left -1.300000
 level 5
+x 4
+y 22
 end
 arch large_stones
 x 4
@@ -1146,10 +1146,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 4
 y 25
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 4
@@ -1160,10 +1160,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 4
-y 26
 speed_left -1.300000
 level 5
+x 4
+y 26
 end
 arch large_stones
 x 4
@@ -1188,10 +1188,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 1
 speed_left -1.300000
 level 5
+x 5
+y 1
 end
 arch large_stones
 x 5
@@ -1222,10 +1222,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 6
 speed_left -1.300000
 level 5
+x 5
+y 6
 end
 arch large_stones
 x 5
@@ -1240,10 +1240,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 8
 speed_left -1.300000
 level 5
+x 5
+y 8
 end
 arch large_stones
 x 5
@@ -1262,11 +1262,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 11
 speed_left -1.300000
 level 5
 carrying 3000
+x 5
+y 11
 arch torch_1
 end
 end
@@ -1283,10 +1283,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 13
 speed_left -1.300000
 level 5
+x 5
+y 13
 end
 arch large_stones
 x 5
@@ -1337,10 +1337,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 5
-y 22
 speed_left -1.300000
 level 5
+x 5
+y 22
 end
 arch large_stones
 x 5
@@ -1371,10 +1371,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 5
 y 26
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 5
@@ -1399,10 +1399,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 1
 speed_left -1.300000
 level 5
+x 6
+y 1
 end
 arch large_stones
 x 6
@@ -1413,10 +1413,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 2
 speed_left -1.300000
 level 5
+x 6
+y 2
 end
 arch large_stones
 x 6
@@ -1447,10 +1447,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 6
 speed_left -1.300000
 level 5
+x 6
+y 6
 end
 arch large_stones
 x 6
@@ -1461,11 +1461,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 7
 speed_left -1.300000
 level 5
 carrying 3000
+x 6
+y 7
 arch torch_1
 end
 end
@@ -1478,10 +1478,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 8
 speed_left -1.300000
 level 5
+x 6
+y 8
 end
 arch large_stones
 x 6
@@ -1508,10 +1508,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 11
 speed_left -1.300000
 level 5
+x 6
+y 11
 end
 arch large_stones
 x 6
@@ -1526,10 +1526,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 13
 speed_left -1.300000
 level 5
+x 6
+y 13
 end
 arch large_stones
 x 6
@@ -1616,10 +1616,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 6
-y 26
 speed_left -1.300000
 level 5
+x 6
+y 26
 end
 arch large_stones
 x 6
@@ -1652,10 +1652,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 2
 speed_left -1.300000
 level 5
+x 7
+y 2
 end
 arch large_stones
 x 7
@@ -1686,10 +1686,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 6
 speed_left -1.300000
 level 5
+x 7
+y 6
 end
 arch large_stones
 x 7
@@ -1700,10 +1700,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 7
 speed_left -1.300000
 level 5
+x 7
+y 7
 end
 arch large_stones
 x 7
@@ -1722,10 +1722,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 10
 speed_left -1.300000
 level 5
+x 7
+y 10
 end
 arch large_stones
 x 7
@@ -1736,11 +1736,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 11
 speed_left -1.300000
 level 5
 carrying 3000
+x 7
+y 11
 arch torch_1
 end
 end
@@ -1753,10 +1753,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 12
 speed_left -1.300000
 level 5
+x 7
+y 12
 end
 arch large_stones
 x 7
@@ -1767,10 +1767,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 13
 speed_left -1.300000
 level 5
+x 7
+y 13
 end
 arch large_stones
 x 7
@@ -1853,10 +1853,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 25
 speed_left -1.300000
 level 5
+x 7
+y 25
 end
 arch large_stones
 x 7
@@ -1867,10 +1867,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 7
-y 26
 speed_left -1.300000
 level 5
+x 7
+y 26
 end
 arch large_stones
 x 7
@@ -1899,10 +1899,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 8
-y 2
 speed_left -1.300000
 level 5
+x 8
+y 2
 end
 arch large_stones
 x 8
@@ -2089,10 +2089,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 8
-y 25
 speed_left -1.300000
 level 5
+x 8
+y 25
 end
 arch large_stones
 x 8
@@ -2125,10 +2125,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 9
 y 2
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 9
@@ -2139,10 +2139,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 3
 speed_left -1.300000
 level 5
+x 9
+y 3
 end
 arch large_stones
 x 9
@@ -2153,10 +2153,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 4
 speed_left -1.300000
 level 5
+x 9
+y 4
 end
 arch large_stones
 x 9
@@ -2219,10 +2219,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 9
 y 14
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 9
@@ -2233,10 +2233,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 15
 speed_left -1.300000
 level 5
+x 9
+y 15
 end
 arch large_stones
 x 9
@@ -2247,11 +2247,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 16
 speed_left -1.300000
 level 5
 carrying 3000
+x 9
+y 16
 arch torch_1
 end
 end
@@ -2264,10 +2264,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 9
 y 17
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 9
@@ -2278,10 +2278,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 18
 speed_left -1.300000
 level 5
+x 9
+y 18
 end
 arch large_stones
 x 9
@@ -2292,11 +2292,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 19
 speed_left -1.300000
 level 5
 carrying 3000
+x 9
+y 19
 arch torch_1
 end
 end
@@ -2309,10 +2309,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 20
 speed_left -1.300000
 level 5
+x 9
+y 20
 end
 arch large_stones
 x 9
@@ -2339,10 +2339,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 24
 speed_left -1.300000
 level 5
+x 9
+y 24
 end
 arch large_stones
 x 9
@@ -2353,10 +2353,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 9
-y 25
 speed_left -1.300000
 level 5
+x 9
+y 25
 end
 arch large_stones
 x 9
@@ -2672,14 +2672,14 @@ maxhp 80
 sp 100
 maxsp 100
 exp 100
-x 11
-y 14
 speed_left -0.700000
 see_invisible 1
 unaggressive 0
-arch ability_bullet
+x 11
+y 14
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_magic_bullet
 end
 end
 arch large_stones
@@ -2703,10 +2703,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 11
-y 16
 speed_left -1.300000
 level 5
+x 11
+y 16
 end
 arch large_stones
 x 11
@@ -2753,10 +2753,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 11
-y 25
 speed_left -1.300000
 level 5
+x 11
+y 25
 end
 arch large_stones
 x 11
@@ -2767,10 +2767,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 11
-y 26
 speed_left -1.300000
 level 5
+x 11
+y 26
 end
 arch large_stones
 x 11
@@ -2807,10 +2807,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 12
-y 3
 speed_left -1.300000
 level 5
+x 12
+y 3
 end
 arch large_stones
 x 12
@@ -2917,10 +2917,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 12
-y 16
 speed_left -1.300000
 level 5
+x 12
+y 16
 end
 arch large_stones
 x 12
@@ -2967,10 +2967,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 12
-y 25
 speed_left -1.300000
 level 5
+x 12
+y 25
 end
 arch large_stones
 x 12
@@ -3012,14 +3012,14 @@ maxhp 80
 sp 100
 maxsp 100
 exp 100
-x 13
-y 1
 speed_left -0.700000
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+x 13
+y 1
+arch spell_sm_lightning
 end
-arch ability_bullet
+arch spell_magic_bullet
 end
 end
 arch large_stones
@@ -3138,10 +3138,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 13
-y 16
 speed_left -1.300000
 level 5
+x 13
+y 16
 end
 arch large_stones
 x 13
@@ -3192,10 +3192,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 13
-y 25
 speed_left -1.300000
 level 5
+x 13
+y 25
 end
 arch large_stones
 x 13
@@ -3236,10 +3236,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 14
-y 3
 speed_left -1.300000
 level 5
+x 14
+y 3
 end
 arch large_stones
 x 14
@@ -3326,10 +3326,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 14
-y 16
 speed_left -1.300000
 level 5
+x 14
+y 16
 end
 arch large_stones
 x 14
@@ -3372,10 +3372,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 14
-y 21
 speed_left -1.300000
 level 5
+x 14
+y 21
 end
 arch large_stones
 x 14
@@ -3398,11 +3398,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 14
-y 24
 speed_left -1.300000
 level 5
 carrying 3000
+x 14
+y 24
 arch torch_1
 end
 end
@@ -3415,10 +3415,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 14
-y 25
 speed_left -1.300000
 level 5
+x 14
+y 25
 end
 arch large_stones
 x 14
@@ -3595,10 +3595,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 15
-y 24
 speed_left -1.300000
 level 5
+x 15
+y 24
 end
 arch large_stones
 x 15
@@ -3651,10 +3651,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 16
-y 3
 speed_left -1.300000
 level 5
+x 16
+y 3
 end
 arch large_stones
 x 16
@@ -3729,10 +3729,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 16
-y 16
 speed_left -1.300000
 level 5
+x 16
+y 16
 end
 arch large_stones
 x 16
@@ -3767,10 +3767,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 16
-y 23
 speed_left -1.300000
 level 5
+x 16
+y 23
 end
 arch large_stones
 x 16
@@ -3781,10 +3781,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 16
-y 24
 speed_left -1.300000
 level 5
+x 16
+y 24
 end
 arch large_stones
 x 16
@@ -3909,10 +3909,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 17
-y 16
 speed_left -1.300000
 level 5
+x 17
+y 16
 end
 arch large_stones
 x 17
@@ -3927,10 +3927,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 17
-y 18
 speed_left -1.300000
 level 5
+x 17
+y 18
 end
 arch large_stones
 x 17
@@ -3953,10 +3953,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 17
-y 22
 speed_left -1.300000
 level 5
+x 17
+y 22
 end
 arch large_stones
 x 17
@@ -3967,11 +3967,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 17
-y 23
 speed_left -1.300000
 level 5
 carrying 3000
+x 17
+y 23
 arch torch_1
 end
 end
@@ -4022,10 +4022,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 18
-y 3
 speed_left -1.300000
 level 5
+x 18
+y 3
 end
 arch large_stones
 x 18
@@ -4120,10 +4120,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 18
-y 16
 speed_left -1.300000
 level 5
+x 18
+y 16
 end
 arch large_stones
 x 18
@@ -4150,10 +4150,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 18
-y 21
 speed_left -1.300000
 level 5
+x 18
+y 21
 end
 arch large_stones
 x 18
@@ -4164,10 +4164,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 18
-y 22
 speed_left -1.300000
 level 5
+x 18
+y 22
 end
 arch large_stones
 x 18
@@ -4190,10 +4190,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 18
-y 26
 speed_left -1.300000
 level 5
+x 18
+y 26
 end
 arch large_stones
 x 18
@@ -4234,10 +4234,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 3
 speed_left -1.300000
 level 5
+x 19
+y 3
 end
 arch large_stones
 x 19
@@ -4276,10 +4276,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 19
 y 9
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 19
@@ -4290,10 +4290,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 10
 speed_left -1.300000
 level 5
+x 19
+y 10
 end
 arch large_stones
 x 19
@@ -4304,10 +4304,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 11
 speed_left -1.300000
 level 5
+x 19
+y 11
 end
 arch large_stones
 x 19
@@ -4414,10 +4414,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 19
-y 25
 speed_left -1.300000
 level 5
+x 19
+y 25
 end
 arch large_stones
 x 19
@@ -4458,10 +4458,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 3
 speed_left -1.300000
 level 5
+x 20
+y 3
 end
 arch large_stones
 x 20
@@ -4504,10 +4504,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 9
 speed_left -1.300000
 level 5
+x 20
+y 9
 end
 arch large_stones
 x 20
@@ -4526,10 +4526,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 11
 speed_left -1.300000
 level 5
+x 20
+y 11
 end
 arch large_stones
 x 20
@@ -4560,10 +4560,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 17
 speed_left -1.300000
 level 5
+x 20
+y 17
 end
 arch large_stones
 x 20
@@ -4598,10 +4598,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 20
 y 23
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 20
@@ -4612,10 +4612,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 24
 speed_left -1.300000
 level 5
+x 20
+y 24
 end
 arch large_stones
 x 20
@@ -4626,10 +4626,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 20
-y 25
 speed_left -1.300000
 level 5
+x 20
+y 25
 end
 arch large_stones
 x 20
@@ -4670,10 +4670,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 3
 speed_left -1.300000
 level 5
+x 21
+y 3
 end
 arch large_stones
 x 21
@@ -4716,10 +4716,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 21
 y 9
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 21
@@ -4730,10 +4730,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 10
 speed_left -1.300000
 level 5
+x 21
+y 10
 end
 arch large_stones
 x 21
@@ -4744,10 +4744,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 11
 speed_left -1.300000
 level 5
+x 21
+y 11
 end
 arch large_stones
 x 21
@@ -4778,10 +4778,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 16
 speed_left -1.300000
 level 5
+x 21
+y 16
 end
 arch large_stones
 x 21
@@ -4792,10 +4792,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 17
 speed_left -1.300000
 level 5
+x 21
+y 17
 end
 arch large_stones
 x 21
@@ -4834,10 +4834,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 21
-y 23
 speed_left -1.300000
 level 5
+x 21
+y 23
 end
 arch large_stones
 x 21
@@ -4886,10 +4886,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 3
 speed_left -1.300000
 level 5
+x 22
+y 3
 end
 arch large_stones
 x 22
@@ -4912,10 +4912,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 6
 speed_left -1.300000
 level 5
+x 22
+y 6
 end
 arch large_stones
 x 22
@@ -5010,10 +5010,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 21
 speed_left -1.300000
 level 5
+x 22
+y 21
 end
 arch large_stones
 x 22
@@ -5028,10 +5028,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 22
-y 23
 speed_left -1.300000
 level 5
+x 22
+y 23
 end
 arch large_stones
 x 22
@@ -5108,10 +5108,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 23
-y 6
 speed_left -1.300000
 level 5
+x 23
+y 6
 end
 arch large_stones
 x 23
@@ -5230,10 +5230,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 23
-y 22
 speed_left -1.300000
 level 5
+x 23
+y 22
 end
 arch large_stones
 x 23
@@ -5244,10 +5244,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 23
-y 23
 speed_left -1.300000
 level 5
+x 23
+y 23
 end
 arch large_stones
 x 23
@@ -5288,10 +5288,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 1
 speed_left -1.300000
 level 5
+x 24
+y 1
 end
 arch large_stones
 x 24
@@ -5310,10 +5310,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 3
 speed_left -1.300000
 level 5
+x 24
+y 3
 end
 arch large_stones
 x 24
@@ -5340,10 +5340,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 24
 y 6
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 24
@@ -5354,10 +5354,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 24
 y 7
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 24
@@ -5368,10 +5368,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 24
 y 8
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 24
@@ -5382,10 +5382,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 24
 y 9
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 24
@@ -5396,10 +5396,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 10
 speed_left -1.300000
 level 5
+x 24
+y 10
 end
 arch large_stones
 x 24
@@ -5410,10 +5410,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 11
 speed_left -1.300000
 level 5
+x 24
+y 11
 end
 arch large_stones
 x 24
@@ -5472,10 +5472,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 22
 speed_left -1.300000
 level 5
+x 24
+y 22
 end
 arch large_stones
 x 24
@@ -5502,10 +5502,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 24
-y 26
 speed_left -1.300000
 level 5
+x 24
+y 26
 end
 arch large_stones
 x 24
@@ -5530,10 +5530,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 1
 speed_left -1.300000
 level 5
+x 25
+y 1
 end
 arch large_stones
 x 25
@@ -5644,10 +5644,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 25
 y 16
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 25
@@ -5658,10 +5658,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 17
 speed_left -1.300000
 level 5
+x 25
+y 17
 end
 arch large_stones
 x 25
@@ -5672,11 +5672,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 18
 speed_left -1.300000
 level 5
 carrying 3000
+x 25
+y 18
 arch torch_1
 end
 end
@@ -5689,10 +5689,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 25
 y 19
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 25
@@ -5703,10 +5703,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 25
 y 20
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 25
@@ -5717,10 +5717,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 21
 speed_left -1.300000
 level 5
+x 25
+y 21
 end
 arch large_stones
 x 25
@@ -5731,10 +5731,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 22
 speed_left -1.300000
 level 5
+x 25
+y 22
 end
 arch large_stones
 x 25
@@ -5765,10 +5765,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 25
-y 26
 speed_left -1.300000
 level 5
+x 25
+y 26
 end
 arch large_stones
 x 25
@@ -5793,10 +5793,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 26
-y 1
 speed_left -1.300000
 level 5
+x 26
+y 1
 end
 arch large_stones
 x 26
@@ -5827,10 +5827,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 26
 y 5
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 26
@@ -5841,10 +5841,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 26
 y 6
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 26
@@ -5855,10 +5855,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 26
-y 7
 speed_left -1.300000
 level 5
+x 26
+y 7
 end
 arch large_stones
 x 26
@@ -5869,10 +5869,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 26
-y 8
 speed_left -1.300000
 level 5
+x 26
+y 8
 end
 arch large_stones
 x 26
@@ -5979,10 +5979,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 26
 y 26
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 26
@@ -6007,10 +6007,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 1
 speed_left -1.300000
 level 5
+x 27
+y 1
 end
 arch large_stones
 x 27
@@ -6029,10 +6029,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 27
 y 3
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 27
@@ -6043,10 +6043,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 4
 speed_left -1.300000
 level 5
+x 27
+y 4
 end
 arch large_stones
 x 27
@@ -6057,10 +6057,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 5
 speed_left -1.300000
 level 5
+x 27
+y 5
 end
 arch large_stones
 x 27
@@ -6079,10 +6079,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 27
 y 8
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 27
@@ -6093,10 +6093,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 27
 y 9
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 27
@@ -6107,10 +6107,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 10
 speed_left -1.300000
 level 5
+x 27
+y 10
 end
 arch large_stones
 x 27
@@ -6121,11 +6121,11 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 11
 speed_left -1.300000
 level 5
 carrying 3000
+x 27
+y 11
 arch torch_1
 end
 end
@@ -6138,10 +6138,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 27
 y 12
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 27
@@ -6152,10 +6152,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 13
 speed_left -1.300000
 level 5
+x 27
+y 13
 end
 arch large_stones
 x 27
@@ -6166,10 +6166,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 14
 speed_left -1.300000
 level 5
+x 27
+y 14
 end
 arch large_stones
 x 27
@@ -6232,10 +6232,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
+speed_left -1.300000
+level 5
 x 27
 y 25
-speed_left -1.300000
-level 5
 end
 arch large_stones
 x 27
@@ -6246,10 +6246,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 27
-y 26
 speed_left -1.300000
 level 5
+x 27
+y 26
 end
 arch large_stones
 x 27
@@ -6274,10 +6274,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 28
-y 1
 speed_left -1.300000
 level 5
+x 28
+y 1
 end
 arch large_stones
 x 28
@@ -6418,10 +6418,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 29
-y 1
 speed_left -1.300000
 level 5
+x 29
+y 1
 end
 arch large_stones
 x 29
@@ -6698,10 +6698,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 17
 speed_left -1.300000
 level 5
+x 30
+y 17
 end
 arch large_stones
 x 30
@@ -6716,10 +6716,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 18
 speed_left -1.300000
 level 5
+x 30
+y 18
 end
 arch large_stones
 x 30
@@ -6746,10 +6746,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 21
 speed_left -1.300000
 level 5
+x 30
+y 21
 end
 arch large_stones
 x 30
@@ -6760,10 +6760,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 22
 speed_left -1.300000
 level 5
+x 30
+y 22
 end
 arch large_stones
 x 30
@@ -6790,10 +6790,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 25
 speed_left -1.300000
 level 5
+x 30
+y 25
 end
 arch large_stones
 x 30
@@ -6808,10 +6808,10 @@ name Smuggler
 hp 60
 maxhp 60
 exp 60
-x 30
-y 26
 speed_left -1.300000
 level 5
+x 30
+y 26
 end
 arch large_stones
 x 30
