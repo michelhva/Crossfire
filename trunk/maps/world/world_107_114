@@ -5608,11 +5608,17 @@ elevation 5502
 x 22
 y 33
 end
+arch mountain
+elevation 5502
+x 22
+y 34
+end
 arch mountain_cave
 name Strange Mountain
 slaying /quests/hendel/mountain_pass
 hp 27
 sp 12
+is_floor 0
 x 22
 y 34
 end

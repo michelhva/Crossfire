@@ -7894,10 +7894,16 @@ elevation 9014
 x 31
 y 42
 end
+arch mountain2
+elevation 9014
+x 31
+y 43
+end
 arch mountain_cave
 slaying /quests/peterm/DragonQuest/Entrance
 hp 1
 sp 7
+is_floor 0
 x 31
 y 43
 end
@@ -9883,6 +9889,11 @@ elevation 9882
 x 39
 y 41
 end
+arch mountain2
+elevation 9882
+x 39
+y 42
+end
 arch magic_mouth
 msg
 You notice a well-hidden cave, high in
@@ -9903,6 +9914,7 @@ final_map /quests/peterm/quests/dragonquest2
 dungeon_depth 12
 endmsg
 slaying /!
+is_floor 0
 x 39
 y 42
 end

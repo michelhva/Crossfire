@@ -11104,10 +11104,16 @@ elevation 5888
 x 44
 y 42
 end
+arch mountain
+elevation 5888
+x 44
+y 43
+end
 arch mountain_cave
 slaying /darcap/cave/level1
 hp 9
 sp 9
+is_floor 0
 x 44
 y 43
 end

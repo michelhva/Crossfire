@@ -2261,6 +2261,11 @@ elevation 5615
 x 9
 y 17
 end
+arch mountain
+elevation 5615
+x 9
+y 18
+end
 arch hole
 msg
 layoutstyle maze
@@ -2274,6 +2279,7 @@ orientation 1
 final_map /quests/peterm/quests/ogre_chief
 endmsg
 slaying /!
+is_floor 0
 x 9
 y 18
 end
