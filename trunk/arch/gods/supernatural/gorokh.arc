@@ -6,7 +6,7 @@ type 50
 face devil.111
 slaying angel
 race demon
-animation Lucifer
+animation devil
 is_animated 1
 Str 30
 Con 30
