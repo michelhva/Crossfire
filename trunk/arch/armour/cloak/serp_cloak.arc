@@ -9,6 +9,6 @@ resist_poison 30
 
 value 900
 material 32
-editable 1024
+editable 5120
 nrof 1
 end
