@@ -23,6 +23,6 @@ sp 1
 msg
 You have a nasty rash all over you.  Are those pustules?
 endmsg
-race goblin,human,troll,giant
+race goblin,human,troll,giant,dwarf
 level 20
 end

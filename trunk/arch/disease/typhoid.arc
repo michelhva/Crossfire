@@ -3,7 +3,7 @@ name typhoid
 type 158
 attacktype 1
 invisible 1
-wc 5
+wc 10
 magic -1
 Str -3
 Con -4
@@ -23,6 +23,6 @@ sp 1
 msg
 You feel feverish.  Your muscles spasm oddly....  Breathing is difficult.
 endmsg
-race human,goblin,giant
+race human,goblin,giant,troll
 level 12
 end
