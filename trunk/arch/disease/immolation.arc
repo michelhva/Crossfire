@@ -5,6 +5,7 @@ title You set fire to
 type 158
 face fireball.111
 no_pick 1
+invisible 1
 no_drop 1
 attacktype 4
 wc 3
