@@ -2,10 +2,10 @@
 Object Gnarg
 title Lythander
 type 50
-face troll.171
+face smalltroll
 slaying faerie,dwarf
 race goblin,giant,troll
-animation troll_1
+animation small_troll
 is_animated 1
 monster 1
 alive 1
@@ -20,7 +20,7 @@ path_attuned 131088
 path_repelled 65537
 resist_poison 100
 resist_magic -20
-hp 1000
+hp 500
 ac -5
 wc -3
 dam 50
@@ -35,36 +35,4 @@ endmsg
 exp 1
 weight 500000
 randomitems Gnarg
-end
-More
-Object Gnarg_2
-name Gnarg
-face troll.271
-animation troll_2
-monster 1
-alive 1
-x 1
-weight 500000
-end
-More
-Object Gnarg_3
-name Gnarg
-face troll.371
-animation troll_3
-monster 1
-alive 1
-y 1
-weight 500000
-end
-More
-Object Gnarg_4
-name Gnarg
-face troll.471
-animation troll_4
-monster 1
-alive 1
-x 1
-y 1
-weight 500000
-editable 0
 end
