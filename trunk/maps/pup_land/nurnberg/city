@@ -421,7 +421,7 @@ arch grass
 x 2
 y 23
 end
-arch pstone_1
+arch beach
 x 2
 y 24
 end
@@ -565,7 +565,7 @@ arch grass
 x 3
 y 23
 end
-arch pstone_1
+arch beach
 x 3
 y 24
 end
@@ -746,7 +746,7 @@ arch grass
 x 4
 y 23
 end
-arch pstone_1
+arch beach
 x 4
 y 24
 end
@@ -910,16 +910,11 @@ arch grass
 x 5
 y 23
 end
-arch pstone_1
+arch beach
 x 5
 y 24
 end
-arch pstone_1
-x 5
-y 25
-end
-arch biglake_ne
-name sea
+arch beach
 x 5
 y 25
 end
@@ -1097,15 +1092,15 @@ arch grass
 x 6
 y 23
 end
-arch pstone_1
+arch beach
 x 6
 y 24
 end
-arch pstone_1
+arch beach
 x 6
 y 25
 end
-arch pstone_1
+arch beach
 x 6
 y 26
 end
@@ -1113,25 +1108,15 @@ arch pier_2_1_2
 x 6
 y 26
 end
-arch pstone_1
+arch beach
 x 6
 y 27
 end
-arch biglake_ne
-name sea
-x 6
-y 27
-end
-arch pstone_1
+arch beach
 x 6
 y 28
 end
-arch biglake_se
-name sea
-x 6
-y 28
-end
-arch pstone_1
+arch beach
 x 6
 y 29
 end
@@ -1285,15 +1270,15 @@ arch grass
 x 7
 y 23
 end
-arch pstone_1
+arch beach
 x 7
 y 24
 end
-arch pstone_1
+arch beach
 x 7
 y 25
 end
-arch pstone_1
+arch beach
 x 7
 y 26
 end
@@ -1301,11 +1286,11 @@ arch pier_1_3
 x 7
 y 26
 end
-arch pstone_1
+arch beach
 x 7
 y 27
 end
-arch pstone_1
+arch beach
 x 7
 y 28
 end
@@ -1313,7 +1298,7 @@ arch cwall_0
 x 7
 y 28
 end
-arch pstone_1
+arch beach
 x 7
 y 29
 end
@@ -1454,7 +1439,7 @@ arch grass
 x 8
 y 23
 end
-arch pstone_1
+arch beach
 x 8
 y 24
 end
@@ -1462,19 +1447,19 @@ arch grass
 x 8
 y 25
 end
-arch pstone_1
+arch beach
 x 8
 y 26
 end
-arch pstone_1
+arch beach
 x 8
 y 27
 end
-arch pstone_1
+arch beach
 x 8
 y 28
 end
-arch pstone_1
+arch beach
 x 8
 y 29
 end
@@ -1632,7 +1617,7 @@ arch grass
 x 9
 y 28
 end
-arch pstone_1
+arch beach
 x 9
 y 29
 end
@@ -2162,12 +2147,11 @@ arch cobblestones2
 x 13
 y 14
 end
-arch biglake_nw
-name sea
+arch biglake_2_2_2
 x 13
 y 14
 end
-arch sea
+arch biglake_3_2
 x 13
 y 15
 end
@@ -2175,8 +2159,7 @@ arch cobblestones2
 x 13
 y 16
 end
-arch biglake_sw
-name sea
+arch biglake_2_2_1
 x 13
 y 16
 end
@@ -2305,19 +2288,24 @@ arch cobblestones2
 x 14
 y 13
 end
-arch sea
+arch biglake_3_3
 x 14
 y 14
 end
-arch sea
+arch biglake_4
 x 14
 y 15
 end
-arch statue
+arch cobblestones2
 x 14
 y 15
 end
-arch sea
+arch statue2
+face statue.111
+x 14
+y 15
+end
+arch biglake_3_1
 x 14
 y 16
 end
@@ -2450,12 +2438,11 @@ arch cobblestones2
 x 15
 y 14
 end
-arch biglake_ne
-name sea
+arch biglake_2_2_3
 x 15
 y 14
 end
-arch sea
+arch biglake_3_4
 x 15
 y 15
 end
@@ -2463,8 +2450,7 @@ arch cobblestones2
 x 15
 y 16
 end
-arch biglake_se
-name sea
+arch biglake_2_2_4
 x 15
 y 16
 end
@@ -2924,21 +2910,11 @@ arch grass
 x 18
 y 18
 end
-arch grass
+arch shallow_sea
 x 18
 y 19
 end
-arch biglake_nw
-name lake
-x 18
-y 19
-end
-arch grass
-x 18
-y 20
-end
-arch biglake_sw
-name lake
+arch shallow_sea
 x 18
 y 20
 end
@@ -3091,25 +3067,15 @@ arch grass
 x 19
 y 18
 end
-arch grass
+arch shallow_sea
 x 19
 y 19
 end
-arch biglake_n
-name lake
-x 19
-y 19
-end
-arch grass
+arch shallow_sea
 x 19
 y 20
 end
-arch biglake_s
-name lake
-x 19
-y 20
-end
-arch grass
+arch brush
 x 19
 y 21
 end
@@ -3246,30 +3212,15 @@ arch grass
 x 20
 y 18
 end
-arch grass
+arch shallow_sea
 x 20
 y 19
 end
-arch biglake_ne
-name lake
-x 20
-y 19
-end
-arch grass
+arch shallow_sea
 x 20
 y 20
 end
-arch biglake_center
-name lake
-x 20
-y 20
-end
-arch grass
-x 20
-y 21
-end
-arch biglake_sw
-name lake
+arch shallow_sea
 x 20
 y 21
 end
@@ -3422,30 +3373,15 @@ arch grass
 x 21
 y 19
 end
-arch grass
+arch shallow_sea
 x 21
 y 20
 end
-arch biglake_ne
-name lake
-x 21
-y 20
-end
-arch grass
+arch shallow_sea
 x 21
 y 21
 end
-arch biglake_e
-name lake
-x 21
-y 21
-end
-arch grass
-x 21
-y 22
-end
-arch biglake_sw
-name lake
+arch shallow_sea
 x 21
 y 22
 end
@@ -3607,26 +3543,11 @@ arch grass
 x 22
 y 20
 end
-arch grass
+arch shallow_sea
 x 22
 y 21
 end
-arch river_nw-se_u
-name lake
-x 22
-y 21
-end
-arch grass
-x 22
-y 22
-end
-arch river_sw-ne_l
-name lake
-x 22
-y 22
-end
-arch biglake_nes
-name lake
+arch shallow_sea
 x 22
 y 22
 end
@@ -4197,6 +4118,17 @@ arch grass
 x 26
 y 19
 end
+arch s_shop2
+name Imperial Post
+msg
+Ding!
+endmsg
+slaying /pup_land/nurnberg/IPO_nurnberg
+hp 1
+sp 5
+x 26
+y 19
+end
 arch grass
 x 26
 y 20
@@ -4396,6 +4328,18 @@ x 27
 y 20
 end
 arch grass
+x 27
+y 21
+end
+arch sign
+name Nurnberg Message Board
+event_say_plugin Python
+event_say /python/IPO/board.py
+event_say_options Nurnberg  Board
+msg
+I am a talking board, please say something to me.
+If you don't know what to say, say help.
+endmsg
 x 27
 y 21
 end
