@@ -6,10 +6,10 @@ CF Java Map Editor
 Date:    7/31/2003
 endmsg
 width 19
-height 28
+height 29
 enter_x 9
 enter_y 4
-reset_timeout 600
+reset_timeout 1
 difficulty 1
 fixed_resettime 1
 end
@@ -119,6 +119,11 @@ end
 arch grass_only
 y 17
 end
+arch mountain3
+no_pass 1
+is_floor 1
+y 17
+end
 arch dungeon_magic
 y 18
 end
@@ -178,6 +183,9 @@ y 27
 end
 arch grass_only
 y 27
+end
+arch grass
+y 28
 end
 arch dungeon_magic
 x 1
@@ -505,6 +513,10 @@ arch wwall_2_2_1
 x 1
 y 27
 end
+arch grass
+x 1
+y 28
+end
 arch dungeon_magic
 x 2
 end
@@ -561,11 +573,22 @@ arch woodfloor2
 x 2
 y 5
 end
+arch button_small
+invisible 1
+connected 88
+x 2
+y 5
+end
 arch dungeon_magic
 x 2
 y 6
 end
 arch woodfloor2
+x 2
+y 6
+end
+arch mdoor_closed_1
+connected 88
 x 2
 y 6
 end
@@ -574,6 +597,12 @@ x 2
 y 7
 end
 arch woodfloor2
+x 2
+y 7
+end
+arch button_small
+invisible 1
+connected 88
 x 2
 y 7
 end
@@ -817,6 +846,10 @@ end
 arch wwall_2_1_2
 x 2
 y 27
+end
+arch grass
+x 2
+y 28
 end
 arch dungeon_magic
 x 3
@@ -1075,6 +1108,10 @@ end
 arch wwall_2_1_2
 x 3
 y 27
+end
+arch grass
+x 3
+y 28
 end
 arch dungeon_magic
 x 4
@@ -1349,6 +1386,23 @@ arch blackmarble
 x 4
 y 25
 end
+arch magic_mouth
+msg
+You would have been quite badly hurt by that trap...
+endmsg
+connected 87
+walk_on 0
+fly_on 0
+activate_on_release 0
+x 4
+y 25
+end
+arch trap
+dam 0
+connected 87
+x 4
+y 25
+end
 arch dungeon_magic
 x 4
 y 26
@@ -1368,6 +1422,10 @@ end
 arch wwall_2_1_2
 x 4
 y 27
+end
+arch grass
+x 4
+y 28
 end
 arch dungeon_magic
 x 5
@@ -1656,6 +1714,10 @@ end
 arch wwall_2_1_2
 x 5
 y 27
+end
+arch grass
+x 5
+y 28
 end
 arch dungeon_magic
 x 6
@@ -1948,6 +2010,10 @@ end
 arch wwall_3_1
 x 6
 y 27
+end
+arch grass
+x 6
+y 28
 end
 arch dungeon_magic
 x 7
@@ -2299,6 +2365,14 @@ x 7
 y 27
 end
 arch dungeon_magic
+x 7
+y 28
+end
+arch grass_only
+x 7
+y 28
+end
+arch dungeon_magic
 x 8
 end
 arch mountain
@@ -2524,9 +2598,21 @@ arch woodfloor2
 x 8
 y 27
 end
-arch wwall_1_3
+arch wwall_2_2_3
 x 8
 y 27
+end
+arch dungeon_magic
+x 8
+y 28
+end
+arch grass_only
+x 8
+y 28
+end
+arch wwall_1_2
+x 8
+y 28
 end
 arch dungeon_magic
 x 9
@@ -2797,12 +2883,20 @@ face odoor_2.111
 x 9
 y 27
 end
+arch dungeon_magic
+x 9
+y 28
+end
+arch woodfloor2
+x 9
+y 28
+end
 arch invis_exit
 slaying /start/Nexus
 hp 12
 sp 12
 x 9
-y 27
+y 28
 end
 arch dungeon_magic
 x 10
@@ -2935,6 +3029,19 @@ x 10
 y 16
 end
 arch woodfloor2
+x 10
+y 16
+end
+arch sign
+msg
+If you have a ranged weapon this would be a good chance 
+to practice firing it at some ants.  First you ready the weapon, 
+then hold down the fire key and press the direction 
+key for the direction you wish to fire your missile. 
+Fire is usually bound to <shift> key and the directions 
+you would have learned already to even get to this sign.
+Make sure you always have enough ammo!
+endmsg
 x 10
 y 16
 end
@@ -3044,12 +3151,20 @@ face odoor_2.111
 x 10
 y 27
 end
+arch dungeon_magic
+x 10
+y 28
+end
+arch woodfloor2
+x 10
+y 28
+end
 arch invis_exit
 slaying /start/Nexus
 hp 12
 sp 12
 x 10
-y 27
+y 28
 end
 arch dungeon_magic
 x 11
@@ -3116,7 +3231,7 @@ end
 arch guildmaster
 name Sigmund
 msg
-@match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality|
+@match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality
 A bed to reality is the way you quit
 the crossfire world to get back to
 your real life. While you are in
@@ -3134,8 +3249,8 @@ until you have earned at least
 one experience point. You must
 use a bed to reality at least
 once to have you character saved.
-You can find beds to reality on
-your left and on your right
+You can find beds to reality
+just southwest of here.
 You may also  want to get
 extra informations on how to
 apply an object in crossfire.
@@ -3149,7 +3264,7 @@ you are near me (using the
 'say <message>' command).
 If you want some additinal
 informations, just ask me.
-I know evreything about what
+I know everything about what
 you should do next, where to heal,
 how to bind keys, how to use items,
 beds to reality and experience.
@@ -3200,9 +3315,8 @@ y 10
 end
 arch sign_e
 msg
-Beds to reality
+Doors and keys.
 endmsg
-walk_on 1
 x 11
 y 10
 end
@@ -3463,9 +3577,21 @@ arch woodfloor2
 x 11
 y 27
 end
-arch wwall_1_4
+arch wwall_2_2_2
 x 11
 y 27
+end
+arch dungeon_magic
+x 11
+y 28
+end
+arch grass_only
+x 11
+y 28
+end
+arch wwall_1_2
+x 11
+y 28
 end
 arch dungeon_magic
 x 12
@@ -3545,7 +3671,7 @@ arch woodfloor2
 x 12
 y 8
 end
-arch wwall_2_2_4
+arch wwall_3_1
 x 12
 y 8
 end
@@ -3759,7 +3885,7 @@ y 26
 end
 arch magic_ear
 msg
-@match Hello world|hello world|HELLO WORLD|
+@match Hello world|hello world|HELLO WORLD
 Have a nice trip and don't die too
 quickly.
 endmsg
@@ -3778,6 +3904,14 @@ end
 arch wwall_2_1_2
 x 12
 y 27
+end
+arch dungeon_magic
+x 12
+y 28
+end
+arch grass_only
+x 12
+y 28
 end
 arch dungeon_magic
 x 13
@@ -3845,7 +3979,7 @@ arch woodfloor2
 x 13
 y 7
 end
-arch wwall_2_2_4
+arch wwall_3_4
 x 13
 y 7
 end
@@ -3857,11 +3991,19 @@ arch woodfloor2
 x 13
 y 8
 end
+arch wwall_3_1
+x 13
+y 8
+end
 arch dungeon_magic
 x 13
 y 9
 end
 arch woodfloor2
+x 13
+y 9
+end
+arch key
 x 13
 y 9
 end
@@ -4074,6 +4216,14 @@ x 13
 y 27
 end
 arch dungeon_magic
+x 13
+y 28
+end
+arch grass_only
+x 13
+y 28
+end
+arch dungeon_magic
 x 14
 end
 arch mountain
@@ -4151,11 +4301,24 @@ arch woodfloor2
 x 14
 y 7
 end
+arch chest
+randomitems none
+x 14
+y 7
+arch random_wealth
+end
+arch random_food
+end
+end
 arch dungeon_magic
 x 14
 y 8
 end
 arch woodfloor2
+x 14
+y 8
+end
+arch wwall_2_1_2
 x 14
 y 8
 end
@@ -4164,6 +4327,10 @@ x 14
 y 9
 end
 arch woodfloor2
+x 14
+y 9
+end
+arch key
 x 14
 y 9
 end
@@ -4375,6 +4542,14 @@ x 14
 y 27
 end
 arch dungeon_magic
+x 14
+y 28
+end
+arch grass_only
+x 14
+y 28
+end
+arch dungeon_magic
 x 15
 end
 arch mountain2
@@ -4420,7 +4595,14 @@ arch woodfloor2
 x 15
 y 4
 end
-arch bed_save
+arch sign
+msg
+Keys can also be used to open locked chests.
+Not all chests are locked and some doors 
+and chests are trapped so use caution.
+This chest is locked and by chance the key to 
+open it is right here.
+endmsg
 x 15
 y 4
 end
@@ -4432,7 +4614,13 @@ arch woodfloor2
 x 15
 y 5
 end
-arch bed_save
+arch key2
+name chest key
+msg
+Use this key to open the locked door in the training house.
+endmsg
+name_pl chest keys
+slaying open_chest
 x 15
 y 5
 end
@@ -4456,11 +4644,20 @@ arch woodfloor2
 x 15
 y 7
 end
+arch locked_door2
+slaying open_door
+x 15
+y 7
+end
 arch dungeon_magic
 x 15
 y 8
 end
 arch woodfloor2
+x 15
+y 8
+end
+arch wwall_1_3
 x 15
 y 8
 end
@@ -4469,6 +4666,28 @@ x 15
 y 9
 end
 arch woodfloor2
+x 15
+y 9
+end
+arch sign
+msg
+Doors.
+There are many varieties of door
+the most basic type is a simple closed
+door.  You can open this type of door 
+with a generic key like the one beside this sign.
+If you have no key you can try to break 
+the door down by attacking it.
+If you have the skill lockpicking 
+you can try to open the door that way
+too by typing 'ready_skill lockpicking'
+then 'firing' (usually pressing shift + <direction>)
+towards the door like you would fire 
+an arrow or a bolt.
+There are also locked doors which
+can only be opened with special keys...
+endmsg
+walk_on 1
 x 15
 y 9
 end
@@ -4626,7 +4845,7 @@ x 15
 y 22
 end
 arch trap_spikes2
-dam 1
+dam 2
 x 15
 y 22
 end
@@ -4686,6 +4905,10 @@ arch wwall_2_1_2
 x 15
 y 27
 end
+arch grass
+x 15
+y 28
+end
 arch dungeon_magic
 x 16
 end
@@ -4722,9 +4945,17 @@ arch woodfloor2
 x 16
 y 3
 end
-arch bed_save
+arch chest_2
+no_pick 1
+slaying open_chest
 x 16
 y 3
+arch key2
+msg
+Use this key to open the locked door in the training house.
+endmsg
+slaying open_door
+end
 end
 arch dungeon_magic
 x 16
@@ -4747,6 +4978,11 @@ x 16
 y 6
 end
 arch woodfloor2
+x 16
+y 6
+end
+arch door_2
+randomitems none
 x 16
 y 6
 end
@@ -4763,6 +4999,11 @@ x 16
 y 8
 end
 arch woodfloor2
+x 16
+y 8
+end
+arch door_look_1
+randomitems none
 x 16
 y 8
 end
@@ -4960,6 +5201,10 @@ end
 arch wwall_2_1_2
 x 16
 y 27
+end
+arch grass
+x 16
+y 28
 end
 arch dungeon_magic
 x 17
@@ -5287,6 +5532,10 @@ arch wwall_2_2_4
 x 17
 y 27
 end
+arch grass
+x 17
+y 28
+end
 arch dungeon_magic
 x 18
 end
@@ -5477,6 +5726,12 @@ arch grass_only
 x 18
 y 23
 end
+arch mountain3
+no_pass 1
+is_floor 1
+x 18
+y 23
+end
 arch dungeon_magic
 x 18
 y 24
@@ -5508,4 +5763,8 @@ end
 arch grass_only
 x 18
 y 27
+end
+arch grass
+x 18
+y 28
 end
