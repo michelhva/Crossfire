@@ -17,4 +17,5 @@ duration 50
 duration_modifier 2
 maxgrace 50
 range 2
+range_modifier 13
 end

@@ -17,6 +17,7 @@ duration 100
 duration_modifier 1
 maxsp 20
 range 2
+range_modifier 15
 msg
 Counterwall creates a wall that fires counterspells.  Counterspells are
 coned spells that prevent spells from passing through the effected area.
