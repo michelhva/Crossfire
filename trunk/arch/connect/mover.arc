@@ -32,7 +32,6 @@ color_fg blue
 speed 0.2
 type 40
 no_pick 1
-sp 8
 maxsp 1
 walk_on 1
 fly_on 1
