@@ -130,11 +130,10 @@ x 1
 y 8
 end
 arch sign
-name General Board
+name Navar Message Board
 event_say_plugin Python
 event_say /python/IPO/board.py
-event_say_options_plugin Python
-event_say_options GENERALBOARD
+event_say_options Navar board
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
