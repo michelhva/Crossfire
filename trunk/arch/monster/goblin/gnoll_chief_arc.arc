@@ -1,4 +1,5 @@
 Object gnoll_chief_arc
+name gnoll chief
 randomitems gnoll
 race goblin
 face gnoll_chief.111
