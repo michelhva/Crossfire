@@ -10550,7 +10550,21 @@ arch mountain2
 x 33
 y 14
 end
-arch mountain2
+arch mountain_cave2
+msg
+layoutstyle maze
+floorstyle stones2
+wallstyle dungeon2
+exitstyle sstair
+decorstyle goblinjunk
+monsterstyle humanoid
+dungeon_level 1
+difficulty 1
+dungeon_depth 5
+orientation 1
+finalmap /quests/peterm/random_quests/goblin_chief
+endmsg
+slaying /!
 x 33
 y 15
 end
