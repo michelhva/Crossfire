@@ -4,7 +4,7 @@ name_pl large icestorm
 face spell_evocation.111
 level 12
 sp 13
-casting_time 40
+casting_time 24
 path_attuned 4
 other_arch icestorm
 dam 4

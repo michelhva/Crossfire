@@ -4,7 +4,7 @@ name_pl identify
 face spell_sorcery.111
 level 8
 sp 60
-casting_time 200
+casting_time 30
 path_attuned 8192
 skill sorcery
 other_arch enchantment
