@@ -1,6 +1,16 @@
 Changes for CVS top of tree:
 
 ------------------------------------------------------------------------------
+
+PeterM:  Totally reorganized player/*, splitting it into races and
+classes.  Classes are themselves split into four main subtypes.  
+New images from dnh were also added, as well as new classes/races.
+See http://langmuir.eecs.berkeley.edu/~peterm/Race.html and
+    http://langmuir.eecs.berkeley.edu/~peterm/Class.html
+
+
+
+
 Changes for Crossfire 0.95.7:
 
 ground/Lake/blake_*.png:  Remove transperancies from these images so they
