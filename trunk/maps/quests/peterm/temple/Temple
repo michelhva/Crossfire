@@ -1650,9 +1650,6 @@ x 6
 y 8
 end
 arch rune_heal
-msg
-You set off a Rune of Heal
-endmsg
 Cha 100
 hp 2
 x 6
@@ -5004,8 +5001,8 @@ y 32
 end
 arch exit
 slaying /world/world_110_116
-hp 33
-sp 39
+hp 47
+sp 20
 x 17
 y 33
 end
