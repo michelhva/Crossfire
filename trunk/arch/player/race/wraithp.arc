@@ -63,7 +63,7 @@ end
 Object wraith_player_force
 name Wraith_Force
 invisible 1
-food 127
+food 60
 applied 1
 can_see_in_dark 1
 type 114
