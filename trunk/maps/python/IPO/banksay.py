@@ -44,7 +44,7 @@ service_charge=5  #service charges for transactions as a percent
 exchange_rate=10000 #exchange rate for silver (value 1)
 bankdatabase="ImperialBank_DB"
 
-fees=(service_charge/100)+1
+fees=(service_charge/100.0)+1
 bank = CFBank.CFBank(bankdatabase)
 
 text = string.split(CFPython.WhatIsMessage())
