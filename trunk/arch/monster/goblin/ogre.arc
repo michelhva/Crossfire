@@ -1,4 +1,5 @@
 Object ogre
+name ogre
 randomitems ogre
 race giant
 face ogre.111
