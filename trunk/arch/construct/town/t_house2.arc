@@ -1,6 +1,6 @@
 Object t_house2
 name town house
-face t_house2.111
+face t_house2.x11
 type 66
 no_pick 1
 no_pass 1
@@ -9,7 +9,7 @@ end
 More
 Object t_house2_2
 name town house
-face t_house2.211
+face t_house2.x11
 type 66
 no_pick 1
 no_pass 1
@@ -18,7 +18,7 @@ end
 More
 Object t_house2_3
 name town house
-face t_house2.311
+face t_house2.x11
 type 66
 visibility 100
 no_pick 1
@@ -27,7 +27,7 @@ end
 More
 Object t_house2_4
 name town house
-face t_house2.411
+face t_house2.x11
 type 66
 no_pick 1
 visibility 100

@@ -1,6 +1,6 @@
 Object store_alchemy
 name shop
-face store_alch.111
+face store_alch.x11
 color_fg red
 type 66
 no_pick 1
@@ -11,7 +11,7 @@ end
 More
 Object store_alchemy_2
 name shop
-face store_alch.211
+face store_alch.x11
 color_fg red
 type 66
 x 1
@@ -22,7 +22,7 @@ end
 More
 Object store_alchemy_3
 name shop
-face store_alch.311
+face store_alch.x11
 color_fg red
 type 66
 y 1
@@ -32,7 +32,7 @@ end
 More
 Object store_alchemy_4
 name shop
-face store_alch.411
+face store_alch.x11
 color_fg red
 type 66
 x 1

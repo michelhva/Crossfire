@@ -1,6 +1,6 @@
 Object store_armour
 name shop
-face store_armo.111
+face store_armo.x11
 color_fg brown
 type 66
 no_pick 1
@@ -11,7 +11,7 @@ end
 More
 Object store_armour_2
 name shop
-face store_armo.211
+face store_armo.x11
 color_fg brown
 type 66
 x 1
@@ -22,7 +22,7 @@ end
 More
 Object store_armour_3
 name shop
-face store_armo.311
+face store_armo.x11
 color_fg brown
 type 66
 y 1
@@ -32,7 +32,7 @@ end
 More
 Object store_armour_4
 name shop
-face store_armo.411
+face store_armo.x11
 color_fg brown
 type 66
 x 1

@@ -1,6 +1,6 @@
 Object university
 name university
-face university.111
+face university.x11
 type 66
 no_pick 1
 editable 2
@@ -8,7 +8,7 @@ end
 More
 Object university_2
 name university
-face university.211
+face university.x11
 type 66
 no_pick 1
 x 1
@@ -16,7 +16,7 @@ end
 More
 Object university_3
 name university
-face university.311
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -25,7 +25,7 @@ end
 More
 Object university_4
 name university
-face university.411
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -34,7 +34,7 @@ end
 More
 Object university_5
 name university
-face university.511
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -43,7 +43,7 @@ end
 More
 Object university_6
 name university
-face university.611
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -52,7 +52,7 @@ end
 More
 Object university_7
 name university
-face university.711
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -62,7 +62,7 @@ end
 More
 Object university_8
 name university
-face university.811
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -72,7 +72,7 @@ end
 More
 Object university_9
 name university
-face university.911
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -82,7 +82,7 @@ end
 More
 Object university_10
 name university
-face university.A11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -92,7 +92,7 @@ end
 More
 Object university_11
 name university
-face university.B11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -101,7 +101,7 @@ end
 More
 Object university_12
 name university
-face university.C11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -111,7 +111,7 @@ end
 More
 Object university_13
 name university
-face university.D11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -121,7 +121,7 @@ end
 More
 Object university_14
 name university
-face university.E11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -131,7 +131,7 @@ end
 More
 Object university_15
 name university
-face university.F11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -141,7 +141,7 @@ end
 More
 Object university_16
 name university
-face university.G11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -150,7 +150,7 @@ end
 More
 Object university_17
 name university
-face university.H11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -160,7 +160,7 @@ end
 More
 Object university_18
 name university
-face university.I11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -170,7 +170,7 @@ end
 More
 Object university_19
 name university
-face university.J11
+face university.x11
 type 66
 no_pick 1
 visibility 100
@@ -180,7 +180,7 @@ end
 More
 Object university_20
 name university
-face university.K11
+face university.x11
 type 66
 no_pick 1
 visibility 100
