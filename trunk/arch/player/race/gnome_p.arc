@@ -24,10 +24,10 @@ familiarity with the gods seems to bring a
 general blessing of good luck on all Gnomekind.
 endmsg
 anim
-gnome.111
-gnome.112
-gnome.111
-gnome.112
+gnome_p.111
+gnome_p.131
+gnome_p.151
+gnome_p.171
 mina
 is_animated 0
 type 1
@@ -52,5 +52,4 @@ Wis 3
 Pow 3
 Cha 0
 editable 0
-magicmap blue
 end

@@ -18,10 +18,10 @@ people: but a few have proved deserving of tolerance
 and are permitted to enter cities.
 endmsg
 anim
-smalltroll.111
-smalltroll.112
-smalltroll.111
-smalltroll.112
+troll_p.111
+troll_p.131
+troll_p.151
+troll_p.171
 mina
 is_animated 0
 type 1
