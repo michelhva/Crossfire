@@ -1994,6 +1994,16 @@ arch cobblestones2
 x 9
 y 18
 end
+arch sign
+name Welcome to Euthville
+msg
+All dungeons are open.
+
+This is a 9th level (at least) area.
+endmsg
+x 9
+y 18
+end
 arch pstone_1
 x 9
 y 19
