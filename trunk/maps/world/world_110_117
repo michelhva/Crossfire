@@ -3511,7 +3511,7 @@ elevation 1535
 x 14
 y 12
 end
-arch evergreens
+arch darkforest
 elevation 647
 x 14
 y 13
@@ -3571,7 +3571,7 @@ elevation 958
 x 14
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 254
 x 14
 y 25
@@ -3581,7 +3581,7 @@ elevation 188
 x 14
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 330
 x 14
 y 27
@@ -3591,7 +3591,7 @@ elevation 717
 x 14
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 908
 x 14
 y 29
@@ -3607,10 +3607,11 @@ x 14
 y 31
 end
 arch forestsparse
+elevation 810
 x 14
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 113
 x 14
 y 32
@@ -3685,7 +3686,7 @@ elevation 52
 x 14
 y 46
 end
-arch evergreens
+arch darkforest
 elevation 33
 x 14
 y 47
@@ -3759,7 +3760,7 @@ elevation 1195
 x 15
 y 11
 end
-arch evergreens
+arch darkforest
 elevation 652
 x 15
 y 12
@@ -3784,7 +3785,7 @@ elevation 696
 x 15
 y 16
 end
-arch evergreens
+arch darkforest
 elevation 300
 x 15
 y 17
@@ -3794,12 +3795,12 @@ elevation 361
 x 15
 y 18
 end
-arch evergreens
+arch darkforest
 elevation 288
 x 15
 y 19
 end
-arch evergreens
+arch darkforest
 elevation 665
 x 15
 y 20
@@ -3809,27 +3810,27 @@ elevation 780
 x 15
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 846
 x 15
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 839
 x 15
 y 23
 end
-arch evergreens
+arch darkforest
 elevation 666
 x 15
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 191
 x 15
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 11
 x 15
 y 26
@@ -3844,12 +3845,12 @@ elevation 93
 x 15
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 543
 x 15
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 922
 x 15
 y 30
@@ -3929,7 +3930,7 @@ elevation -9
 x 15
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 81
 x 15
 y 46
@@ -4008,7 +4009,7 @@ elevation 144
 x 16
 y 11
 end
-arch evergreens
+arch darkforest
 elevation 121
 x 16
 y 12
@@ -4018,12 +4019,12 @@ elevation 201
 x 16
 y 13
 end
-arch evergreens
+arch darkforest
 elevation 397
 x 16
 y 14
 end
-arch evergreens
+arch darkforest
 elevation 241
 x 16
 y 15
@@ -4033,7 +4034,7 @@ elevation 59
 x 16
 y 16
 end
-arch evergreens
+arch darkforest
 elevation 45
 x 16
 y 17
@@ -4048,12 +4049,12 @@ elevation 53
 x 16
 y 19
 end
-arch evergreens
+arch darkforest
 elevation 91
 x 16
 y 20
 end
-arch evergreens
+arch darkforest
 elevation 272
 x 16
 y 21
@@ -4063,7 +4064,7 @@ elevation 86
 x 16
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 372
 x 16
 y 23
@@ -4078,7 +4079,7 @@ elevation 396
 x 16
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 161
 x 16
 y 26
@@ -4088,13 +4089,35 @@ elevation 32
 x 16
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 59
 x 16
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 459
+x 16
+y 29
+end
+arch exit
+msg
+layoutstyle onion
+dungeon_level 4
+expand2x 1
+treasureoptions 20
+monsterstyle sylvan
+dungeon_depth 5
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
 x 16
 y 29
 end
@@ -4178,17 +4201,17 @@ elevation -6
 x 16
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 57
 x 16
 y 46
 end
-arch evergreens
+arch darkforest
 elevation 22
 x 16
 y 47
 end
-arch evergreens
+arch darkforest
 elevation 11
 x 16
 y 48
@@ -4252,7 +4275,7 @@ elevation 47
 x 17
 y 10
 end
-arch evergreens
+arch darkforest
 elevation 43
 x 17
 y 11
@@ -4277,7 +4300,7 @@ elevation 28
 x 17
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 34
 x 17
 y 16
@@ -4292,7 +4315,7 @@ elevation 81
 x 17
 y 18
 end
-arch evergreens
+arch darkforest
 elevation 146
 x 17
 y 19
@@ -4312,7 +4335,7 @@ elevation 18
 x 17
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 31
 x 17
 y 23
@@ -4322,7 +4345,7 @@ elevation 337
 x 17
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 393
 x 17
 y 25
@@ -4332,7 +4355,7 @@ elevation 284
 x 17
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 87
 x 17
 y 27
@@ -4342,17 +4365,17 @@ elevation 60
 x 17
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 217
 x 17
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 600
 x 17
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 191
 x 17
 y 31
@@ -4432,17 +4455,40 @@ elevation 36
 x 17
 y 46
 end
-arch evergreens
-elevation 14
+arch darkforest
+elevation 154
 x 17
 y 47
 end
-arch evergreens
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 6
+expand2x 1
+treasureoptions 20
+monsterstyle sylvan
+dungeon_depth 8
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+final_map /planes/greenway1
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 17
+y 47
+end
+arch darkforest
 elevation 16
 x 17
 y 48
 end
-arch evergreens
+arch darkforest
 elevation 11
 x 17
 y 49
@@ -4501,7 +4547,7 @@ elevation 26
 x 18
 y 10
 end
-arch evergreens
+arch darkforest
 elevation 12
 x 18
 y 11
@@ -4521,12 +4567,12 @@ elevation 107
 x 18
 y 14
 end
-arch jungle_2
+arch darkforest
 elevation 117
 x 18
 y 15
 end
-arch jungle_2
+arch darkforest
 elevation 28
 x 18
 y 16
@@ -4556,7 +4602,7 @@ elevation 46
 x 18
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 13
 x 18
 y 22
@@ -4571,8 +4617,30 @@ elevation 141
 x 18
 y 24
 end
-arch evergreens
-elevation 295
+arch darkforest
+elevation 459
+x 18
+y 25
+end
+arch exit
+msg
+layoutstyle onion
+dungeon_level 4
+expand2x 1
+treasureoptions 20
+monsterstyle sylvan
+dungeon_depth 5
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
 x 18
 y 25
 end
@@ -4591,12 +4659,12 @@ elevation 101
 x 18
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 426
 x 18
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 570
 x 18
 y 30
@@ -4611,7 +4679,7 @@ elevation 291
 x 18
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 80
 x 18
 y 33
@@ -4676,7 +4744,7 @@ elevation -9
 x 18
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 22
 x 18
 y 46
@@ -4686,12 +4754,12 @@ elevation 32
 x 18
 y 47
 end
-arch evergreens
+arch darkforest
 elevation 34
 x 18
 y 48
 end
-arch evergreens
+arch darkforest
 elevation 49
 x 18
 y 49
@@ -4770,22 +4838,22 @@ elevation 1535
 x 19
 y 14
 end
-arch jungle_2
+arch darkforest
 elevation 222
 x 19
 y 15
 end
-arch jungle_2
+arch darkforest
 elevation 161
 x 19
 y 16
 end
-arch jungle_2
+arch darkforest
 elevation 10
 x 19
 y 17
 end
-arch jungle_2
+arch darkforest
 elevation 120
 x 19
 y 18
@@ -4830,7 +4898,7 @@ elevation 189
 x 19
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 181
 x 19
 y 27
@@ -4855,7 +4923,7 @@ elevation 541
 x 19
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 299
 x 19
 y 32
@@ -4925,17 +4993,17 @@ elevation -9
 x 19
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 16
 x 19
 y 46
 end
-arch evergreens
+arch darkforest
 elevation 20
 x 19
 y 47
 end
-arch evergreens
+arch darkforest
 elevation 10
 x 19
 y 48
@@ -5009,7 +5077,7 @@ elevation 12
 x 20
 y 12
 end
-arch evergreens
+arch darkforest
 elevation 109
 x 20
 y 13
@@ -5024,7 +5092,7 @@ elevation 305
 x 20
 y 15
 end
-arch jungle_2
+arch darkforest
 elevation 329
 x 20
 y 16
@@ -5039,17 +5107,17 @@ elevation 300
 x 20
 y 18
 end
-arch jungle_2
+arch darkforest
 elevation 195
 x 20
 y 19
 end
-arch jungle_2
+arch darkforest
 elevation 145
 x 20
 y 20
 end
-arch jungle_2
+arch darkforest
 elevation 79
 x 20
 y 21
@@ -5074,12 +5142,12 @@ elevation 62
 x 20
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 92
 x 20
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 35
 x 20
 y 27
@@ -5114,7 +5182,7 @@ elevation 494
 x 20
 y 33
 end
-arch evergreens
+arch darkforest
 elevation 290
 x 20
 y 34
@@ -5169,7 +5237,7 @@ elevation -7
 x 20
 y 44
 end
-arch evergreens
+arch darkforest
 elevation 16
 x 20
 y 45
@@ -5283,22 +5351,22 @@ elevation 479
 x 21
 y 17
 end
-arch jungle_2
+arch darkforest
 elevation 422
 x 21
 y 18
 end
-arch jungle_2
+arch darkforest
 elevation 276
 x 21
 y 19
 end
-arch jungle_2
+arch darkforest
 elevation 140
 x 21
 y 20
 end
-arch jungle_2
+arch darkforest
 elevation 60
 x 21
 y 21
@@ -5333,32 +5401,36 @@ elevation 11
 x 21
 y 27
 end
-arch jungle_2
-elevation 29
+arch brush
+elevation 28
 x 21
 y 28
 end
-arch jungle_2
-elevation 28
+arch treehouse
+x 21
+y 28
+end
+arch brush
+elevation 29
 x 21
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 274
 x 21
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 582
 x 21
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 810
 x 21
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 818
 x 21
 y 33
@@ -5373,22 +5445,22 @@ elevation 94
 x 21
 y 35
 end
-arch evergreens
+arch darkforest
 elevation 257
 x 21
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 201
 x 21
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 108
 x 21
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 51
 x 21
 y 39
@@ -5413,17 +5485,17 @@ elevation 48
 x 21
 y 43
 end
-arch evergreens
+arch darkforest
 elevation 94
 x 21
 y 44
 end
-arch evergreens
+arch darkforest
 elevation 107
 x 21
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 66
 x 21
 y 46
@@ -5497,7 +5569,8 @@ elevation -6
 x 22
 y 10
 end
-arch evergreens
+arch darkforest
+blocksview 1
 elevation 35
 x 22
 y 11
@@ -5557,7 +5630,7 @@ elevation 25
 x 22
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 18
 x 22
 y 23
@@ -5587,17 +5660,17 @@ elevation -2
 x 22
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 21
 x 22
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 38
 x 22
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 577
 x 22
 y 31
@@ -5627,32 +5700,54 @@ elevation 550
 x 22
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 426
 x 22
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 301
 x 22
 y 38
 end
-arch evergreens
+arch exit
+msg
+layoutstyle maze
+dungeon_level 5
+expand2x 1
+treasureoptions 0
+monsterstyle sylvan
+dungeon_depth 7
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 22
+y 38
+end
+arch darkforest
 elevation 220
 x 22
 y 39
 end
-arch evergreens
+arch darkforest
 elevation 167
 x 22
 y 40
 end
-arch evergreens
+arch darkforest
 elevation 116
 x 22
 y 41
 end
-arch evergreens
+arch darkforest
 elevation 138
 x 22
 y 42
@@ -5662,17 +5757,17 @@ elevation 149
 x 22
 y 43
 end
-arch evergreens
+arch darkforest
 elevation 164
 x 22
 y 44
 end
-arch evergreens
+arch darkforest
 elevation 145
 x 22
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 90
 x 22
 y 46
@@ -5756,7 +5851,8 @@ elevation 223
 x 23
 y 12
 end
-arch evergreens
+arch darkforest
+blocksview 1
 elevation 109
 x 23
 y 13
@@ -5801,12 +5897,12 @@ elevation 261
 x 23
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 306
 x 23
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 220
 x 23
 y 23
@@ -5816,7 +5912,7 @@ elevation 37
 x 23
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 13
 x 23
 y 25
@@ -5836,7 +5932,7 @@ elevation -2
 x 23
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 11
 x 23
 y 29
@@ -5851,12 +5947,12 @@ elevation 382
 x 23
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 741
 x 23
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 992
 x 23
 y 33
@@ -5866,62 +5962,84 @@ elevation 1019
 x 23
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 846
 x 23
 y 35
 end
-arch evergreens
+arch darkforest
 elevation 631
 x 23
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 464
 x 23
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 319
 x 23
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 165
 x 23
 y 39
 end
-arch evergreens
+arch darkforest
 elevation 243
 x 23
 y 40
 end
-arch evergreens
+arch darkforest
 elevation 242
 x 23
 y 41
 end
-arch evergreens
-elevation 154
+arch darkforest
+elevation 38
 x 23
 y 42
 end
-arch evergreens
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 6
+expand2x 1
+treasureoptions 32
+monsterstyle sylvan
+dungeon_depth 9
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 23
+y 42
+end
+arch darkforest
 elevation 178
 x 23
 y 43
 end
-arch evergreens
+arch darkforest
 elevation 112
 x 23
 y 44
 end
-arch evergreens
+arch darkforest
 elevation 60
 x 23
 y 45
 end
-arch evergreens
+arch darkforest
 elevation 38
 x 23
 y 46
@@ -6020,7 +6138,7 @@ elevation 29
 x 24
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 220
 x 24
 y 16
@@ -6060,17 +6178,17 @@ elevation 475
 x 24
 y 23
 end
-arch evergreens
+arch darkforest
 elevation 301
 x 24
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 64
 x 24
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 17
 x 24
 y 26
@@ -6085,7 +6203,7 @@ elevation -7
 x 24
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 10
 x 24
 y 29
@@ -6100,67 +6218,67 @@ elevation 65
 x 24
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 80
 x 24
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 510
 x 24
 y 33
 end
-arch evergreens
+arch darkforest
 elevation 763
 x 24
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 675
 x 24
 y 35
 end
-arch evergreens
+arch darkforest
 elevation 373
 x 24
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 363
 x 24
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 252
 x 24
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 108
 x 24
 y 39
 end
-arch evergreens
+arch darkforest
 elevation 210
 x 24
 y 40
 end
-arch evergreens
+arch darkforest
 elevation 233
 x 24
 y 41
 end
-arch evergreens
+arch darkforest
 elevation 189
 x 24
 y 42
 end
-arch evergreens
+arch darkforest
 elevation 139
 x 24
 y 43
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 24
 y 44
@@ -6264,7 +6382,7 @@ elevation 12
 x 25
 y 14
 end
-arch evergreens
+arch darkforest
 elevation 154
 x 25
 y 15
@@ -6279,12 +6397,16 @@ elevation 167
 x 25
 y 17
 end
-arch jungle_2
+arch brush
 elevation 303
 x 25
 y 18
 end
-arch jungle_2
+arch treehouse
+x 25
+y 18
+end
+arch brush
 elevation 612
 x 25
 y 19
@@ -6299,12 +6421,12 @@ elevation 866
 x 25
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 882
 x 25
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 687
 x 25
 y 23
@@ -6314,7 +6436,7 @@ elevation 451
 x 25
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 252
 x 25
 y 25
@@ -6349,22 +6471,44 @@ elevation 12
 x 25
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 138
 x 25
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 283
 x 25
 y 33
 end
-arch evergreens
+arch exit
+msg
+layoutstyle maze
+dungeon_level 4
+expand2x 1
+treasureoptions 0
+monsterstyle sylvan
+dungeon_depth 6
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 25
+y 33
+end
+arch darkforest
 elevation 415
 x 25
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 441
 x 25
 y 35
@@ -6374,42 +6518,64 @@ elevation 164
 x 25
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 253
 x 25
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 107
 x 25
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 38
 x 25
 y 39
 end
-arch evergreens
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 5
+expand2x 1
+treasureoptions 32
+monsterstyle sylvan
+dungeon_depth 7
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 25
+y 39
+end
+arch darkforest
 elevation 40
 x 25
 y 40
 end
-arch evergreens
+arch darkforest
 elevation 136
 x 25
 y 41
 end
-arch evergreens
+arch darkforest
 elevation 57
 x 25
 y 42
 end
-arch evergreens
+arch darkforest
 elevation 96
 x 25
 y 43
 end
-arch evergreens
+arch darkforest
 elevation 25
 x 25
 y 44
@@ -6518,7 +6684,7 @@ elevation 200
 x 26
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 326
 x 26
 y 16
@@ -6528,12 +6694,12 @@ elevation 263
 x 26
 y 17
 end
-arch jungle_2
+arch brush
 elevation 648
 x 26
 y 18
 end
-arch jungle_2
+arch brush
 elevation 881
 x 26
 y 19
@@ -6553,7 +6719,7 @@ elevation 881
 x 26
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 628
 x 26
 y 23
@@ -6563,7 +6729,7 @@ elevation 446
 x 26
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 291
 x 26
 y 25
@@ -6578,7 +6744,7 @@ elevation 72
 x 26
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 97
 x 26
 y 28
@@ -6588,7 +6754,7 @@ elevation 38
 x 26
 y 29
 end
-arch evergreens
+arch darkforest
 elevation 21
 x 26
 y 30
@@ -6603,7 +6769,7 @@ elevation 16
 x 26
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 75
 x 26
 y 33
@@ -6613,32 +6779,32 @@ elevation 68
 x 26
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 292
 x 26
 y 35
 end
-arch evergreens
+arch darkforest
 elevation 311
 x 26
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 199
 x 26
 y 37
 end
-arch evergreens
+arch darkforest
 elevation 21
 x 26
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 51
 x 26
 y 39
 end
-arch evergreens
+arch darkforest
 elevation 44
 x 26
 y 40
@@ -6648,7 +6814,7 @@ elevation 40
 x 26
 y 41
 end
-arch evergreens
+arch darkforest
 elevation 56
 x 26
 y 42
@@ -6767,7 +6933,7 @@ elevation 145
 x 27
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 447
 x 27
 y 16
@@ -6777,7 +6943,7 @@ elevation 626
 x 27
 y 17
 end
-arch jungle_2
+arch brush
 elevation 896
 x 27
 y 18
@@ -6802,17 +6968,39 @@ elevation 444
 x 27
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 444
 x 27
 y 23
 end
-arch evergreens
+arch darkforest
 elevation 99
 x 27
 y 24
 end
-arch evergreens
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 3
+expand2x 1
+treasureoptions 32
+monsterstyle sylvan
+dungeon_depth 3
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 27
+y 24
+end
+arch darkforest
 elevation 268
 x 27
 y 25
@@ -6827,12 +7015,12 @@ elevation 218
 x 27
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 204
 x 27
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 85
 x 27
 y 29
@@ -6852,7 +7040,7 @@ elevation 38
 x 27
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 91
 x 27
 y 33
@@ -6862,7 +7050,7 @@ elevation 11
 x 27
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 266
 x 27
 y 35
@@ -6872,7 +7060,7 @@ elevation 272
 x 27
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 159
 x 27
 y 37
@@ -6882,7 +7070,7 @@ elevation 31
 x 27
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 40
 x 27
 y 39
@@ -6971,7 +7159,7 @@ elevation 223
 x 28
 y 6
 end
-arch evergreens
+arch darkforest
 elevation 351
 x 28
 y 7
@@ -6991,7 +7179,12 @@ elevation 354
 x 28
 y 10
 end
-arch jungle_2
+arch brush
+elevation 657
+x 28
+y 11
+end
+arch treehouse
 elevation 300
 x 28
 y 11
@@ -7021,12 +7214,12 @@ elevation 500
 x 28
 y 16
 end
-arch woods_3
+arch brush
 elevation 1061
 x 28
 y 17
 end
-arch woods_3
+arch brush
 elevation 1179
 x 28
 y 18
@@ -7046,37 +7239,37 @@ elevation 666
 x 28
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 220
 x 28
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 430
 x 28
 y 23
 end
-arch evergreens
+arch darkforest
 elevation 348
 x 28
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 124
 x 28
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 124
 x 28
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 263
 x 28
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 260
 x 28
 y 28
@@ -7091,37 +7284,59 @@ elevation 214
 x 28
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 56
 x 28
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 80
 x 28
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 159
 x 28
 y 33
 end
-arch evergreens
+arch darkforest
 elevation 211
 x 28
 y 34
 end
-arch evergreens
-elevation 261
+arch darkforest
+elevation 459
 x 28
 y 35
 end
-arch evergreens
+arch exit
+msg
+layoutstyle onion
+dungeon_level 4
+expand2x 1
+treasureoptions 20
+monsterstyle sylvan
+dungeon_depth 5
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 28
+y 35
+end
+arch darkforest
 elevation 181
 x 28
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 46
 x 28
 y 37
@@ -7240,13 +7455,13 @@ elevation 134
 x 29
 y 10
 end
-arch jungle_2
-elevation 120
+arch brush
+elevation 657
 x 29
 y 11
 end
-arch jungle_2
-elevation 277
+arch brush
+elevation 657
 x 29
 y 12
 end
@@ -7270,12 +7485,12 @@ elevation 1114
 x 29
 y 16
 end
-arch woods_3
+arch brush
 elevation 1449
 x 29
 y 17
 end
-arch woods_3
+arch brush
 elevation 1418
 x 29
 y 18
@@ -7295,7 +7510,7 @@ elevation 534
 x 29
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 525
 x 29
 y 22
@@ -7340,17 +7555,17 @@ elevation 277
 x 29
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 216
 x 29
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 147
 x 29
 y 32
 end
-arch evergreens
+arch darkforest
 elevation 132
 x 29
 y 33
@@ -7360,7 +7575,7 @@ elevation 143
 x 29
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 112
 x 29
 y 35
@@ -7469,7 +7684,7 @@ elevation 58
 x 30
 y 6
 end
-arch evergreens
+arch darkforest
 elevation 46
 x 30
 y 7
@@ -7484,18 +7699,18 @@ elevation 369
 x 30
 y 9
 end
-arch jungle_2
-elevation 180
+arch brush
+elevation 657
 x 30
 y 10
 end
-arch jungle_2
-elevation 109
+arch brush
+elevation 657
 x 30
 y 11
 end
-arch jungle_2
-elevation 160
+arch brush
+elevation 657
 x 30
 y 12
 end
@@ -7519,12 +7734,12 @@ elevation 1354
 x 30
 y 16
 end
-arch woods_3
+arch brush
 elevation 1597
 x 30
 y 17
 end
-arch woods_3
+arch brush
 elevation 1407
 x 30
 y 18
@@ -7544,7 +7759,7 @@ elevation 263
 x 30
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 532
 x 30
 y 22
@@ -7559,27 +7774,48 @@ elevation 709
 x 30
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 608
 x 30
 y 25
 end
-arch evergreens
+arch darkforest
 elevation 472
 x 30
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 349
 x 30
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 289
 x 30
 y 28
 end
-arch evergreens
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 3
+treasureoptions 1
+monsterstyle sylvan
+dungeon_depth 6
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 30
+y 28
+end
+arch darkforest
 elevation 235
 x 30
 y 29
@@ -7594,7 +7830,7 @@ elevation 186
 x 30
 y 31
 end
-arch evergreens
+arch darkforest
 elevation 32
 x 30
 y 32
@@ -7733,17 +7969,22 @@ elevation 569
 x 31
 y 9
 end
-arch jungle_2
-elevation 472
+arch brush
+elevation 657
 x 31
 y 10
 end
-arch jungle_2
-elevation 120
+arch brush
+elevation 657
 x 31
 y 11
 end
-arch jungle_2
+arch brush
+elevation 657
+x 31
+y 12
+end
+arch treehouse
 elevation 180
 x 31
 y 12
@@ -7758,7 +7999,7 @@ elevation 573
 x 31
 y 14
 end
-arch evergreens
+arch darkforest
 elevation 872
 x 31
 y 15
@@ -7768,12 +8009,12 @@ elevation 1260
 x 31
 y 16
 end
-arch woods_3
+arch brush
 elevation 1464
 x 31
 y 17
 end
-arch woods_3
+arch brush
 elevation 1226
 x 31
 y 18
@@ -7793,7 +8034,7 @@ elevation 227
 x 31
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 444
 x 31
 y 22
@@ -7818,17 +8059,17 @@ elevation 249
 x 31
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 405
 x 31
 y 27
 end
-arch evergreens
+arch darkforest
 elevation 154
 x 31
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 103
 x 31
 y 29
@@ -7957,12 +8198,12 @@ elevation 1767
 x 32
 y 4
 end
-arch jungle_2
-elevation 254
+arch darkforest
+elevation 766
 x 32
 y 5
 end
-arch jungle_2
+arch darkforest
 elevation 762
 x 32
 y 6
@@ -7987,8 +8228,8 @@ elevation 759
 x 32
 y 10
 end
-arch jungle_2
-elevation 567
+arch brush
+elevation 657
 x 32
 y 11
 end
@@ -8008,6 +8249,7 @@ x 32
 y 14
 end
 arch forestsparse
+elevation 548
 x 32
 y 14
 end
@@ -8016,7 +8258,7 @@ elevation 619
 x 32
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 994
 x 32
 y 16
@@ -8037,6 +8279,7 @@ x 32
 y 19
 end
 arch forestsparse
+elevation 551
 x 32
 y 19
 end
@@ -8046,6 +8289,7 @@ x 32
 y 20
 end
 arch forestsparse
+elevation 612
 x 32
 y 20
 end
@@ -8054,22 +8298,22 @@ elevation 99
 x 32
 y 21
 end
-arch evergreens
+arch darkforest
 elevation 323
 x 32
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 371
 x 32
 y 23
 end
-arch evergreens
+arch darkforest
 elevation 186
 x 32
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 394
 x 32
 y 25
@@ -8089,7 +8333,7 @@ elevation 214
 x 32
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 162
 x 32
 y 29
@@ -8124,7 +8368,7 @@ elevation 5
 x 32
 y 35
 end
-arch evergreens
+arch darkforest
 elevation 17
 x 32
 y 36
@@ -8213,17 +8457,38 @@ elevation 1767
 x 33
 y 3
 end
-arch evergreen
+arch darkforest
 elevation 1911
 x 33
 y 4
 end
-arch evergreens
+arch darkforest
 elevation 1157
 x 33
 y 5
 end
-arch jungle_1
+arch exit
+msg
+layoutstyle rogue
+dungeon_level 3
+treasureoptions 32
+monsterstyle sylvan
+dungeon_depth 3
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 33
+y 5
+end
+arch darkforest
 elevation 1491
 x 33
 y 6
@@ -8264,6 +8529,7 @@ x 33
 y 13
 end
 arch forestsparse
+elevation 395
 x 33
 y 13
 end
@@ -8283,6 +8549,7 @@ x 33
 y 16
 end
 arch forestsparse
+elevation 807
 x 33
 y 16
 end
@@ -8307,6 +8574,7 @@ x 33
 y 20
 end
 arch forestsparse
+elevation 808
 x 33
 y 20
 end
@@ -8330,7 +8598,7 @@ elevation 83
 x 33
 y 24
 end
-arch evergreens
+arch darkforest
 elevation 109
 x 33
 y 25
@@ -8340,7 +8608,7 @@ elevation 334
 x 33
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 125
 x 33
 y 27
@@ -8360,7 +8628,7 @@ elevation 128
 x 33
 y 30
 end
-arch evergreens
+arch darkforest
 elevation 31
 x 33
 y 31
@@ -8380,7 +8648,7 @@ elevation 1
 x 33
 y 34
 end
-arch evergreens
+arch darkforest
 elevation 13
 x 33
 y 35
@@ -8390,7 +8658,7 @@ elevation 81
 x 33
 y 36
 end
-arch evergreens
+arch darkforest
 elevation 262
 x 33
 y 37
@@ -8400,12 +8668,12 @@ elevation 208
 x 33
 y 38
 end
-arch evergreens
+arch darkforest
 elevation 87
 x 33
 y 39
 end
-arch evergreens
+arch darkforest
 elevation 98
 x 33
 y 40
@@ -8479,7 +8747,7 @@ elevation 1337
 x 34
 y 4
 end
-arch woods_3
+arch darkforest
 elevation 1695
 x 34
 y 5
@@ -8525,10 +8793,11 @@ x 34
 y 13
 end
 arch forestsparse
+elevation 194
 x 34
 y 13
 end
-arch evergreens
+arch darkforest
 elevation 86
 x 34
 y 14
@@ -8539,6 +8808,7 @@ x 34
 y 15
 end
 arch forestsparse
+elevation 312
 x 34
 y 15
 end
@@ -8563,6 +8833,7 @@ x 34
 y 19
 end
 arch forestsparse
+elevation 931
 x 34
 y 19
 end
@@ -8572,6 +8843,7 @@ x 34
 y 20
 end
 arch forestsparse
+elevation 912
 x 34
 y 20
 end
@@ -8581,6 +8853,7 @@ x 34
 y 21
 end
 arch forestsparse
+elevation 710
 x 34
 y 21
 end
@@ -8590,6 +8863,7 @@ x 34
 y 22
 end
 arch forestsparse
+elevation 572
 x 34
 y 22
 end
@@ -8803,6 +9077,7 @@ x 35
 y 14
 end
 arch forestsparse
+elevation 28
 x 35
 y 14
 end
@@ -8817,6 +9092,7 @@ x 35
 y 16
 end
 arch forestsparse
+elevation 76
 x 35
 y 16
 end
@@ -8826,6 +9102,7 @@ x 35
 y 17
 end
 arch forestsparse
+elevation 240
 x 35
 y 17
 end
@@ -8835,6 +9112,7 @@ x 35
 y 18
 end
 arch forestsparse
+elevation 472
 x 35
 y 18
 end
@@ -8849,6 +9127,7 @@ x 35
 y 20
 end
 arch forestsparse
+elevation 738
 x 35
 y 20
 end
@@ -8858,6 +9137,7 @@ x 35
 y 21
 end
 arch forestsparse
+elevation 752
 x 35
 y 21
 end
@@ -8972,6 +9252,7 @@ x 35
 y 43
 end
 arch forestsparse
+elevation 440
 x 35
 y 43
 end
@@ -9039,8 +9320,8 @@ elevation 1305
 x 36
 y 6
 end
-arch jungle_2
-elevation 892
+arch brush
+elevation 657
 x 36
 y 7
 end
@@ -9079,7 +9360,7 @@ elevation 79
 x 36
 y 14
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 36
 y 15
@@ -9090,6 +9371,7 @@ x 36
 y 16
 end
 arch forestsparse
+elevation 96
 x 36
 y 16
 end
@@ -9104,6 +9386,7 @@ x 36
 y 18
 end
 arch forestsparse
+elevation 246
 x 36
 y 18
 end
@@ -9118,6 +9401,7 @@ x 36
 y 20
 end
 arch forestsparse
+elevation 441
 x 36
 y 20
 end
@@ -9127,6 +9411,7 @@ x 36
 y 21
 end
 arch forestsparse
+elevation 525
 x 36
 y 21
 end
@@ -9135,7 +9420,7 @@ elevation 495
 x 36
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 426
 x 36
 y 23
@@ -9146,6 +9431,7 @@ x 36
 y 24
 end
 arch forestsparse
+elevation 339
 x 36
 y 24
 end
@@ -9155,6 +9441,7 @@ x 36
 y 25
 end
 arch forestsparse
+elevation 100
 x 36
 y 25
 end
@@ -9164,10 +9451,11 @@ x 36
 y 26
 end
 arch forestsparse
+elevation 23
 x 36
 y 26
 end
-arch evergreens
+arch darkforest
 elevation 70
 x 36
 y 27
@@ -9177,7 +9465,7 @@ elevation 97
 x 36
 y 28
 end
-arch evergreens
+arch darkforest
 elevation 16
 x 36
 y 29
@@ -9188,6 +9476,7 @@ x 36
 y 30
 end
 arch forestsparse
+elevation 16
 x 36
 y 30
 end
@@ -9237,6 +9526,7 @@ x 36
 y 39
 end
 arch forestsparse
+elevation 885
 x 36
 y 39
 end
@@ -9324,13 +9614,18 @@ elevation 1911
 x 37
 y 6
 end
-arch jungle_2
+arch brush
+elevation 657
+x 37
+y 7
+end
+arch treehouse
 elevation 582
 x 37
 y 7
 end
-arch evergreens
-elevation 83
+arch brush
+elevation 657
 x 37
 y 8
 end
@@ -9375,6 +9670,7 @@ x 37
 y 16
 end
 arch forestsparse
+elevation 398
 x 37
 y 16
 end
@@ -9384,6 +9680,7 @@ x 37
 y 17
 end
 arch forestsparse
+elevation 345
 x 37
 y 17
 end
@@ -9393,6 +9690,7 @@ x 37
 y 18
 end
 arch forestsparse
+elevation 43
 x 37
 y 18
 end
@@ -9402,6 +9700,7 @@ x 37
 y 19
 end
 arch forestsparse
+elevation 37
 x 37
 y 19
 end
@@ -9411,6 +9710,7 @@ x 37
 y 20
 end
 arch forestsparse
+elevation 194
 x 37
 y 20
 end
@@ -9420,6 +9720,7 @@ x 37
 y 21
 end
 arch forestsparse
+elevation 113
 x 37
 y 21
 end
@@ -9428,8 +9729,30 @@ elevation 143
 x 37
 y 22
 end
-arch evergreens
-elevation 221
+arch darkforest
+elevation 459
+x 37
+y 23
+end
+arch exit
+msg
+layoutstyle onion
+dungeon_level 4
+expand2x 1
+treasureoptions 20
+monsterstyle sylvan
+dungeon_depth 5
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
 x 37
 y 23
 end
@@ -9449,6 +9772,7 @@ x 37
 y 26
 end
 arch forestsparse
+elevation 16
 x 37
 y 26
 end
@@ -9596,18 +9920,18 @@ elevation 1911
 x 38
 y 5
 end
-arch woods_3
-elevation 1767
+arch brush
+elevation 657
 x 38
 y 6
 end
-arch jungle_2
-elevation 395
+arch brush
+elevation 657
 x 38
 y 7
 end
-arch woods_3
-elevation 1767
+arch brush
+elevation 657
 x 38
 y 8
 end
@@ -9646,7 +9970,7 @@ elevation 600
 x 38
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 661
 x 38
 y 16
@@ -9662,6 +9986,7 @@ x 38
 y 18
 end
 arch forestsparse
+elevation 297
 x 38
 y 18
 end
@@ -9676,6 +10001,7 @@ x 38
 y 20
 end
 arch forestsparse
+elevation 28
 x 38
 y 20
 end
@@ -9690,10 +10016,11 @@ x 38
 y 22
 end
 arch forestsparse
+elevation 46
 x 38
 y 22
 end
-arch evergreens
+arch darkforest
 elevation 70
 x 38
 y 23
@@ -9704,6 +10031,7 @@ x 38
 y 24
 end
 arch forestsparse
+elevation 23
 x 38
 y 24
 end
@@ -9738,6 +10066,7 @@ x 38
 y 30
 end
 arch forestsparse
+elevation 76
 x 38
 y 30
 end
@@ -9747,6 +10076,7 @@ x 38
 y 31
 end
 arch forestsparse
+elevation 56
 x 38
 y 31
 end
@@ -9761,6 +10091,7 @@ x 38
 y 33
 end
 arch forestsparse
+elevation 71
 x 38
 y 33
 end
@@ -9913,17 +10244,17 @@ elevation 1746
 x 39
 y 13
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 39
 y 14
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 39
 y 15
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 39
 y 16
@@ -9944,6 +10275,7 @@ x 39
 y 19
 end
 arch forestsparse
+elevation 58
 x 39
 y 19
 end
@@ -9963,6 +10295,7 @@ x 39
 y 22
 end
 arch forestsparse
+elevation 10
 x 39
 y 22
 end
@@ -9977,6 +10310,7 @@ x 39
 y 24
 end
 arch forestsparse
+elevation 12
 x 39
 y 24
 end
@@ -9986,6 +10320,7 @@ x 39
 y 25
 end
 arch forestsparse
+elevation 10
 x 39
 y 25
 end
@@ -9995,6 +10330,7 @@ x 39
 y 26
 end
 arch forestsparse
+elevation 21
 x 39
 y 26
 end
@@ -10014,6 +10350,7 @@ x 39
 y 29
 end
 arch forestsparse
+elevation 97
 x 39
 y 29
 end
@@ -10023,6 +10360,7 @@ x 39
 y 30
 end
 arch forestsparse
+elevation 67
 x 39
 y 30
 end
@@ -10032,6 +10370,7 @@ x 39
 y 31
 end
 arch forestsparse
+elevation 55
 x 39
 y 31
 end
@@ -10061,6 +10400,7 @@ x 39
 y 36
 end
 arch forestsparse
+elevation 396
 x 39
 y 36
 end
@@ -10080,6 +10420,7 @@ x 39
 y 39
 end
 arch forestsparse
+elevation 145
 x 39
 y 39
 end
@@ -10089,6 +10430,7 @@ x 39
 y 40
 end
 arch forestsparse
+elevation 651
 x 39
 y 40
 end
@@ -10156,8 +10498,8 @@ elevation 1911
 x 40
 y 3
 end
-arch jungle_2
-elevation 841
+arch darkforest
+elevation 743
 x 40
 y 4
 end
@@ -10221,7 +10563,7 @@ elevation 657
 x 40
 y 16
 end
-arch evergreens
+arch darkforest
 elevation 83
 x 40
 y 17
@@ -10232,6 +10574,7 @@ x 40
 y 18
 end
 arch forestsparse
+elevation 348
 x 40
 y 18
 end
@@ -10241,6 +10584,7 @@ x 40
 y 19
 end
 arch forestsparse
+elevation 67
 x 40
 y 19
 end
@@ -10250,6 +10594,7 @@ x 40
 y 20
 end
 arch forestsparse
+elevation 17
 x 40
 y 20
 end
@@ -10264,6 +10609,7 @@ x 40
 y 22
 end
 arch forestsparse
+elevation 14
 x 40
 y 22
 end
@@ -10278,6 +10624,7 @@ x 40
 y 24
 end
 arch forestsparse
+elevation 10
 x 40
 y 24
 end
@@ -10297,6 +10644,7 @@ x 40
 y 27
 end
 arch forestsparse
+elevation 101
 x 40
 y 27
 end
@@ -10306,6 +10654,7 @@ x 40
 y 28
 end
 arch forestsparse
+elevation 280
 x 40
 y 28
 end
@@ -10315,6 +10664,7 @@ x 40
 y 29
 end
 arch forestsparse
+elevation 256
 x 40
 y 29
 end
@@ -10329,6 +10679,7 @@ x 40
 y 31
 end
 arch forestsparse
+elevation 208
 x 40
 y 31
 end
@@ -10343,6 +10694,7 @@ x 40
 y 33
 end
 arch forestsparse
+elevation 449
 x 40
 y 33
 end
@@ -10440,18 +10792,40 @@ elevation 1911
 x 41
 y 2
 end
-arch jungle_2
-elevation 776
+arch darkforest
+elevation 743
 x 41
 y 3
 end
-arch jungle_2
+arch darkforest
 elevation 743
 x 41
 y 4
 end
-arch jungle_2
-elevation 786
+arch exit
+msg
+layoutstyle maze
+dungeon_level 2
+expand2x 1
+treasureoptions 1
+monsterstyle sylvan
+dungeon_depth 4
+xsize 50
+ysize 50
+exitstyle darkforest
+doorstyle special/stone
+decorstyle outdoor_lush
+floorstyle outdoor_lush
+wallstyle trees
+endmsg
+invisible 1
+slaying /!
+fly_on 0
+x 41
+y 4
+end
+arch darkforest
+elevation 743
 x 41
 y 5
 end
@@ -10521,6 +10895,7 @@ x 41
 y 18
 end
 arch forestsparse
+elevation 328
 x 41
 y 18
 end
@@ -10535,6 +10910,7 @@ x 41
 y 20
 end
 arch forestsparse
+elevation 31
 x 41
 y 20
 end
@@ -10544,6 +10920,7 @@ x 41
 y 21
 end
 arch forestsparse
+elevation 48
 x 41
 y 21
 end
@@ -10558,6 +10935,7 @@ x 41
 y 23
 end
 arch forestsparse
+elevation 94
 x 41
 y 23
 end
@@ -10572,6 +10950,7 @@ x 41
 y 25
 end
 arch forestsparse
+elevation 43
 x 41
 y 25
 end
@@ -10581,6 +10960,7 @@ x 41
 y 26
 end
 arch forestsparse
+elevation 146
 x 41
 y 26
 end
@@ -10665,6 +11045,7 @@ x 41
 y 42
 end
 arch forestsparse
+elevation 596
 x 41
 y 42
 end
@@ -10717,12 +11098,12 @@ elevation 1092
 x 42
 y 2
 end
-arch jungle_1
-elevation 1033
+arch darkforest
+elevation 743
 x 42
 y 3
 end
-arch evergreen
+arch darkforest
 elevation 1911
 x 42
 y 4
@@ -10798,6 +11179,7 @@ x 42
 y 18
 end
 arch forestsparse
+elevation 330
 x 42
 y 18
 end
@@ -10812,6 +11194,7 @@ x 42
 y 20
 end
 arch forestsparse
+elevation 232
 x 42
 y 20
 end
@@ -10821,6 +11204,7 @@ x 42
 y 21
 end
 arch forestsparse
+elevation 317
 x 42
 y 21
 end
@@ -10830,6 +11214,7 @@ x 42
 y 22
 end
 arch forestsparse
+elevation 314
 x 42
 y 22
 end
@@ -10839,6 +11224,7 @@ x 42
 y 23
 end
 arch forestsparse
+elevation 232
 x 42
 y 23
 end
@@ -10848,6 +11234,7 @@ x 42
 y 24
 end
 arch forestsparse
+elevation 84
 x 42
 y 24
 end
@@ -10857,6 +11244,7 @@ x 42
 y 25
 end
 arch forestsparse
+elevation 170
 x 42
 y 25
 end
@@ -10866,6 +11254,7 @@ x 42
 y 26
 end
 arch forestsparse
+elevation 234
 x 42
 y 26
 end
@@ -10885,6 +11274,7 @@ x 42
 y 29
 end
 arch forestsparse
+elevation 651
 x 42
 y 29
 end
@@ -10894,6 +11284,7 @@ x 42
 y 30
 end
 arch forestsparse
+elevation 696
 x 42
 y 30
 end
@@ -10928,6 +11319,7 @@ x 42
 y 36
 end
 arch forestsparse
+elevation 881
 x 42
 y 36
 end
@@ -10957,6 +11349,7 @@ x 42
 y 41
 end
 arch forestsparse
+elevation 852
 x 42
 y 41
 end
@@ -11090,6 +11483,7 @@ x 43
 y 17
 end
 arch forestsparse
+elevation 255
 x 43
 y 17
 end
@@ -11099,6 +11493,7 @@ x 43
 y 18
 end
 arch forestsparse
+elevation 379
 x 43
 y 18
 end
@@ -11108,6 +11503,7 @@ x 43
 y 19
 end
 arch forestsparse
+elevation 503
 x 43
 y 19
 end
@@ -11122,6 +11518,7 @@ x 43
 y 21
 end
 arch forestsparse
+elevation 588
 x 43
 y 21
 end
@@ -11136,6 +11533,7 @@ x 43
 y 23
 end
 arch forestsparse
+elevation 463
 x 43
 y 23
 end
@@ -11150,6 +11548,7 @@ x 43
 y 25
 end
 arch forestsparse
+elevation 207
 x 43
 y 25
 end
@@ -11159,6 +11558,7 @@ x 43
 y 26
 end
 arch forestsparse
+elevation 218
 x 43
 y 26
 end
@@ -11228,6 +11628,7 @@ x 43
 y 39
 end
 arch forestsparse
+elevation 917
 x 43
 y 39
 end
@@ -11371,6 +11772,7 @@ x 44
 y 17
 end
 arch forestsparse
+elevation 316
 x 44
 y 17
 end
@@ -11385,6 +11787,7 @@ x 44
 y 19
 end
 arch forestsparse
+elevation 747
 x 44
 y 19
 end
@@ -11414,6 +11817,7 @@ x 44
 y 24
 end
 arch forestsparse
+elevation 526
 x 44
 y 24
 end
@@ -11433,6 +11837,7 @@ x 44
 y 27
 end
 arch forestsparse
+elevation 333
 x 44
 y 27
 end
@@ -11442,6 +11847,7 @@ x 44
 y 28
 end
 arch forestsparse
+elevation 533
 x 44
 y 28
 end
@@ -11451,6 +11857,7 @@ x 44
 y 29
 end
 arch forestsparse
+elevation 931
 x 44
 y 29
 end
@@ -11495,6 +11902,7 @@ x 44
 y 37
 end
 arch forestsparse
+elevation 584
 x 44
 y 37
 end
@@ -11519,6 +11927,7 @@ x 44
 y 41
 end
 arch forestsparse
+elevation 577
 x 44
 y 41
 end
@@ -11528,6 +11937,7 @@ x 44
 y 42
 end
 arch forestsparse
+elevation 33
 x 44
 y 42
 end
@@ -11651,6 +12061,7 @@ x 45
 y 16
 end
 arch forestsparse
+elevation 424
 x 45
 y 16
 end
@@ -11665,6 +12076,7 @@ x 45
 y 18
 end
 arch forestsparse
+elevation 831
 x 45
 y 18
 end
@@ -11674,6 +12086,7 @@ x 45
 y 19
 end
 arch forestsparse
+elevation 987
 x 45
 y 19
 end
@@ -11688,6 +12101,7 @@ x 45
 y 21
 end
 arch forestsparse
+elevation 808
 x 45
 y 21
 end
@@ -11702,6 +12116,7 @@ x 45
 y 23
 end
 arch forestsparse
+elevation 759
 x 45
 y 23
 end
@@ -11711,6 +12126,7 @@ x 45
 y 24
 end
 arch forestsparse
+elevation 664
 x 45
 y 24
 end
@@ -11720,6 +12136,7 @@ x 45
 y 25
 end
 arch forestsparse
+elevation 502
 x 45
 y 25
 end
@@ -11729,6 +12146,7 @@ x 45
 y 26
 end
 arch forestsparse
+elevation 268
 x 45
 y 26
 end
@@ -11738,6 +12156,7 @@ x 45
 y 27
 end
 arch forestsparse
+elevation 357
 x 45
 y 27
 end
@@ -11747,6 +12166,7 @@ x 45
 y 28
 end
 arch forestsparse
+elevation 153
 x 45
 y 28
 end
@@ -11756,6 +12176,7 @@ x 45
 y 29
 end
 arch forestsparse
+elevation 613
 x 45
 y 29
 end
@@ -11785,6 +12206,7 @@ x 45
 y 34
 end
 arch forestsparse
+elevation 981
 x 45
 y 34
 end
@@ -11794,6 +12216,7 @@ x 45
 y 35
 end
 arch forestsparse
+elevation 489
 x 45
 y 35
 end
@@ -11813,6 +12236,7 @@ x 45
 y 38
 end
 arch forestsparse
+elevation 815
 x 45
 y 38
 end
@@ -11986,6 +12410,7 @@ x 46
 y 22
 end
 arch forestsparse
+elevation 546
 x 46
 y 22
 end
@@ -12015,6 +12440,7 @@ x 46
 y 27
 end
 arch forestsparse
+elevation 415
 x 46
 y 27
 end
@@ -12024,6 +12450,7 @@ x 46
 y 28
 end
 arch forestsparse
+elevation 219
 x 46
 y 28
 end
@@ -12053,6 +12480,7 @@ x 46
 y 33
 end
 arch forestsparse
+elevation 672
 x 46
 y 33
 end
@@ -12062,6 +12490,7 @@ x 46
 y 34
 end
 arch forestsparse
+elevation 294
 x 46
 y 34
 end
@@ -12076,6 +12505,7 @@ x 46
 y 36
 end
 arch forestsparse
+elevation 54
 x 46
 y 36
 end
@@ -12090,6 +12520,7 @@ x 46
 y 38
 end
 arch forestsparse
+elevation 419
 x 46
 y 38
 end
@@ -12288,6 +12719,7 @@ x 47
 y 27
 end
 arch forestsparse
+elevation 698
 x 47
 y 27
 end
@@ -12322,6 +12754,7 @@ x 47
 y 33
 end
 arch forestsparse
+elevation 590
 x 47
 y 33
 end
@@ -12331,6 +12764,7 @@ x 47
 y 34
 end
 arch forestsparse
+elevation 565
 x 47
 y 34
 end
@@ -12345,6 +12779,7 @@ x 47
 y 36
 end
 arch forestsparse
+elevation 17
 x 47
 y 36
 end
@@ -12354,6 +12789,7 @@ x 47
 y 37
 end
 arch forestsparse
+elevation 29
 x 47
 y 37
 end
@@ -12572,6 +13008,7 @@ x 48
 y 30
 end
 arch forestsparse
+elevation 894
 x 48
 y 30
 end
@@ -12755,6 +13192,7 @@ x 49
 y 16
 end
 arch forestsparse
+elevation 732
 x 49
 y 16
 end
@@ -12922,4 +13360,17 @@ arch shallow_sea
 elevation -10
 x 49
 y 49
+end
+arch treefort
+x 28
+y 17
+end
+arch treefort3
+elevation 180
+x 30
+y 10
+end
+arch treefort2
+x 31
+y 17
 end
