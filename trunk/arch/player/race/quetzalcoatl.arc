@@ -1,12 +1,11 @@
 Object quetzalcoatl_player
 name Quetzalcoatl
-race dragon
+race reptile
 randomitems quetzalcoatl_player_items
 face quetzalcoatl.131
 msg
-Quetzalcoatls are a strange mix of dragon,
+Quetzalcoatls are a strange mix of snake,
 bird, human, and a dash of the divine. They
-bear the most resemblance to dragonkind, but
 are able to manipulate objects with their
 claws. They are amazingly strong, very quick,
 and amazingly hardy, but quite stupid and
@@ -19,7 +18,6 @@ grasp one basic fire spell.
 Their strongly draconic nature immures them
 to fire and helps them with fire spells, but
 they are vulnerable to cold and
-paralyzation.
 They can grasp weapons, but their bizarre body
 shape prevents them from using armour, helmets,
 and other items of apparel usually intended for
@@ -51,6 +49,8 @@ food 999
 speed 1
 attacktype 1
 path_attuned 2
+resist_fire 100
+resist_cold -30
 color_fg light_blue
 can_use_armour 0
 can_use_weapon 1
@@ -60,7 +60,6 @@ Con 6
 Wis -8
 Int -8
 Pow 6
-resist_fire 100
-resist_cold -30
 editable 0
 end
+
