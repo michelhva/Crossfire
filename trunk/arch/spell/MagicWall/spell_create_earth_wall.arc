@@ -13,9 +13,10 @@ subtype 15
 value 40
 no_drop 1
 invisible 1
-duration 32
+duration 40
 duration_modifier 1
 range 2
+range_modifier 10
 no_pass 1
 msg
 Create earth wall will crete a line of earth walls.  Unlike most magic

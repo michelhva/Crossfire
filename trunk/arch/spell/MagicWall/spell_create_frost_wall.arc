@@ -20,4 +20,5 @@ dam_modifier 3
 maxsp 8
 attacktype 18
 range 2
+range_modifier 12
 end
