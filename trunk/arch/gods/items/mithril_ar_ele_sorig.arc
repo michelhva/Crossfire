@@ -1,13 +1,9 @@
-Object mithril_ar_ele
+Object mithril_ar_ele_sorig
 nrof 1
 name mithril chainmail of lightning of Sorig
 type 16
 face mithril_ar.111
-anim
-mithril_ar.111
-mithril_ar.112
-mithril_ar.113
-mina
+animation mithril_ar_elec
 speed 0.3
 ac 4
 resist_physical 40
