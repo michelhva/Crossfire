@@ -160,6 +160,24 @@ $NEW_MAP_NAME[12]="/world/world_128_109";
 $NEW_MAP_OFFX[12]=12;
 $NEW_MAP_OFFY[12]=0;
 
+$OLD_MAP_NAME[13]='(.+/portjoseph|portjoseph)';
+$OLD_MAP_STARTX[13]=0;
+$OLD_MAP_STARTY[13]=0;
+$OLD_MAP_ENDX[13]=100;
+$OLD_MAP_ENDY[13]=100;
+$NEW_MAP_NAME[13]="/world/world_101_114";
+$NEW_MAP_OFFX[13]=7;
+$NEW_MAP_OFFY[13]=22;
+
+$OLD_MAP_NAME[14]='(.+/tortola|tortola)';
+$OLD_MAP_STARTX[14]=0;
+$OLD_MAP_STARTY[14]=0;
+$OLD_MAP_ENDX[14]=100;
+$OLD_MAP_ENDY[14]=100;
+$NEW_MAP_NAME[14]="/world/world_100_116";
+$NEW_MAP_OFFX[14]=16;
+$NEW_MAP_OFFY[14]=6;
+
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
