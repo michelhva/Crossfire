@@ -1311,13 +1311,6 @@ arch large_stones
 x 5
 y 6
 end
-arch sign
-msg
-This is a random map.
-endmsg
-x 5
-y 6
-end
 arch generate_gnoll
 speed_left -0.108000
 x 5
