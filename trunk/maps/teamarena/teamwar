@@ -8,6 +8,12 @@ width 39
 height 26
 end
 arch dungeon_magic
+end
+arch dirtfloor
+end
+arch wasteland
+end
+arch dungeon_magic
 y 1
 end
 arch dirtfloor
@@ -206,33 +212,6 @@ arch wasteland
 y 22
 end
 arch dungeon_magic
-y 23
-end
-arch dirtfloor
-y 23
-end
-arch wasteland
-y 23
-end
-arch dungeon_magic
-y 24
-end
-arch dirtfloor
-y 24
-end
-arch wasteland
-y 24
-end
-arch dungeon_magic
-y 25
-end
-arch dirtfloor
-y 25
-end
-arch wasteland
-y 25
-end
-arch dungeon_magic
 x 1
 end
 arch dirtfloor
@@ -246,10 +225,6 @@ x 1
 y 1
 end
 arch dirtfloor
-x 1
-y 1
-end
-arch wasteland
 x 1
 y 1
 end
@@ -421,11 +396,7 @@ arch dirtfloor
 x 1
 y 22
 end
-arch sign
-name Team 1
-msg
-Team 1 enter here.
-endmsg
+arch wasteland
 x 1
 y 22
 end
@@ -437,46 +408,9 @@ arch dirtfloor
 x 1
 y 23
 end
-arch dungeon_magic
-x 1
-y 24
-end
-arch dirtfloor
-x 1
-y 24
-end
-arch altar_trigger
-name 500 Platinum
-msg
-Lets get ready to rumble!!
-endmsg
-slaying platinacoin
-food 500
-connected 4
-exp 1
-x 1
-y 24
-end
-arch teleporter
-invisible 1
-hp 4
-sp 8
-connected 4
-speed 0.0
-x 1
-y 24
-end
-arch dungeon_magic
-x 1
-y 25
-end
-arch dirtfloor
-x 1
-y 25
-end
 arch wasteland
 x 1
-y 25
+y 23
 end
 arch dungeon_magic
 x 2
@@ -676,30 +610,6 @@ x 2
 y 23
 end
 arch dungeon_magic
-x 2
-y 24
-end
-arch dirtfloor
-x 2
-y 24
-end
-arch wasteland
-x 2
-y 24
-end
-arch dungeon_magic
-x 2
-y 25
-end
-arch dirtfloor
-x 2
-y 25
-end
-arch wasteland
-x 2
-y 25
-end
-arch dungeon_magic
 x 3
 end
 arch dirtfloor
@@ -732,13 +642,11 @@ arch dirtfloor
 x 3
 y 3
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 3
 y 4
 end
-arch dungeon_magic
+arch dirtfloor
 x 3
 y 4
 end
@@ -959,15 +867,23 @@ arch dirtfloor
 x 4
 y 3
 end
+arch dungeon_magic
+x 4
+y 4
+end
+arch dirtfloor
+x 4
+y 4
+end
 arch permanent_lava
 no_pass 1
 cursed 1
 x 4
-y 4
+y 5
 end
 arch dungeon_magic
 x 4
-y 4
+y 5
 end
 arch battleground
 hp 4
@@ -976,27 +892,25 @@ maxhp 34
 maxsp 11
 slaying team2
 x 4
-y 5
+y 6
+end
+arch dun0
+name Repairman
+face witch_fire.111
+blocksview 0
+x 4
+y 6
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 4
+y 7
 end
 arch bones1
-x 4
-y 5
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 4
-y 6
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
 x 4
 y 7
 end
@@ -1064,6 +978,7 @@ x 4
 y 14
 end
 arch button_lever
+name Pull To Leave
 connected 2
 x 4
 y 14
@@ -1122,6 +1037,13 @@ Coward!
 You have been removed from team1!
 endmsg
 slaying
+x 4
+y 16
+end
+arch button_trigger
+invisible 1
+connected 2
+walk_off 0
 x 4
 y 16
 end
@@ -1229,13 +1151,11 @@ arch dirtfloor
 x 5
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 5
 y 3
 end
-arch dungeon_magic
+arch dirtfloor
 x 5
 y 3
 end
@@ -1243,19 +1163,17 @@ arch dungeon_magic
 x 5
 y 4
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dirtfloor
 x 5
 y 4
 end
-arch dungeon_magic
+arch permanent_lava
+no_pass 1
+cursed 1
 x 5
 y 5
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 5
 y 5
 end
@@ -1268,12 +1186,34 @@ slaying team2
 x 5
 y 6
 end
+arch altar_trigger
+name 250 Rubies
+msg
+Lets get ready to rumble!!
+endmsg
+slaying ruby
+food 250
+connected 10
+exp 1800
+x 5
+y 6
+end
 arch battleground
 hp 4
 sp 11
 maxhp 34
 maxsp 11
 slaying team2
+x 5
+y 7
+end
+arch magic_mouth
+name magicmouth
+msg
+Sorry..  I just can't get them powered again.
+Must be a short somewhere...
+You'll have to manually power them on the alter.
+endmsg
 x 5
 y 7
 end
@@ -1348,11 +1288,6 @@ slaying team2
 x 5
 y 14
 end
-arch sign_w
-name Cowards Exit
-x 5
-y 14
-end
 arch dungeon_magic
 x 5
 y 15
@@ -1474,22 +1409,23 @@ arch dungeon_magic
 x 6
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 6
 y 4
 end
 arch dungeon_magic
 x 6
-y 5
+y 4
 end
 arch permanent_lava
 no_pass 1
 cursed 1
+x 6
+y 5
+end
+arch dungeon_magic
 x 6
 y 5
 end
@@ -1522,14 +1458,8 @@ slaying team2
 x 6
 y 8
 end
-arch marker
-slaying team1
-x 6
-y 8
-end
-arch teleporter
-hp 8
-sp 8
+arch grate_closed_2
+connected 10
 x 6
 y 8
 end
@@ -1542,14 +1472,8 @@ slaying team2
 x 6
 y 9
 end
-arch marker
-slaying team1
-x 6
-y 9
-end
-arch teleporter
-hp 8
-sp 9
+arch grate_closed_2
+connected 10
 x 6
 y 9
 end
@@ -1562,14 +1486,8 @@ slaying team2
 x 6
 y 10
 end
-arch marker
-slaying team1
-x 6
-y 10
-end
-arch teleporter
-hp 8
-sp 10
+arch grate_closed_2
+connected 10
 x 6
 y 10
 end
@@ -1582,14 +1500,8 @@ slaying team2
 x 6
 y 11
 end
-arch marker
-slaying team1
-x 6
-y 11
-end
-arch teleporter
-hp 8
-sp 11
+arch grate_closed_2
+connected 10
 x 6
 y 11
 end
@@ -1602,14 +1514,8 @@ slaying team2
 x 6
 y 12
 end
-arch marker
-slaying team1
-x 6
-y 12
-end
-arch teleporter
-hp 8
-sp 12
+arch grate_closed_2
+connected 10
 x 6
 y 12
 end
@@ -1622,14 +1528,8 @@ slaying team2
 x 6
 y 13
 end
-arch marker
-slaying team1
-x 6
-y 13
-end
-arch teleporter
-hp 8
-sp 13
+arch grate_closed_2
+connected 10
 x 6
 y 13
 end
@@ -1642,14 +1542,8 @@ slaying team2
 x 6
 y 14
 end
-arch marker
-slaying team1
-x 6
-y 14
-end
-arch teleporter
-hp 8
-sp 14
+arch grate_closed_2
+connected 10
 x 6
 y 14
 end
@@ -1822,53 +1716,113 @@ cursed 1
 x 7
 y 8
 end
-arch dungeon_magic
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 7
 y 9
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 20
 x 7
 y 9
 end
-arch dungeon_magic
+arch teleporter
+hp 9
+sp 9
+connected 20
+x 7
+y 9
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 7
 y 10
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 21
 x 7
 y 10
 end
-arch dungeon_magic
+arch teleporter
+hp 12
+sp 10
+connected 21
+x 7
+y 10
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 7
 y 11
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 22
 x 7
 y 11
 end
-arch dungeon_magic
+arch teleporter
+hp 16
+sp 11
+connected 22
+x 7
+y 11
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 7
 y 12
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 23
 x 7
 y 12
 end
-arch dungeon_magic
+arch teleporter
+hp 12
+sp 12
+connected 23
+x 7
+y 12
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 7
 y 13
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 24
+x 7
+y 13
+end
+arch teleporter
+hp 9
+sp 13
+connected 24
 x 7
 y 13
 end
@@ -2036,66 +1990,73 @@ slaying team2
 x 8
 y 7
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
 x 8
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 8
+end
+arch dungeon_magic
 x 8
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 9
+end
+arch dungeon_magic
 x 8
 y 10
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 10
+end
+arch dungeon_magic
 x 8
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 11
+end
+arch dungeon_magic
 x 8
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 12
+end
+arch dungeon_magic
 x 8
 y 13
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 8
+y 13
+end
+arch dungeon_magic
+x 8
+y 14
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 8
 y 14
 end
@@ -3787,12 +3748,13 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 16
+y 4
+end
+arch dungeon_magic
 x 16
 y 4
 end
@@ -4012,22 +3974,21 @@ arch dirtfloor
 x 17
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 17
-y 3
-end
 arch dungeon_magic
 x 17
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 17
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 17
+y 4
+end
+arch dungeon_magic
 x 17
 y 4
 end
@@ -4067,48 +4028,53 @@ slaying team2
 x 17
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 17
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 17
+y 9
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 17
 y 10
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 17
+y 10
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 17
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 17
+y 11
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 17
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 17
+y 12
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 17
+y 13
+end
+arch dungeon_magic
 x 17
 y 13
 end
@@ -4248,22 +4214,28 @@ arch dirtfloor
 x 18
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 18
-y 3
-end
 arch dungeon_magic
 x 18
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 18
+y 3
+end
+arch dun0
+name Guard
+face witch_fire.111
+blocksview 0
+x 18
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 18
+y 4
+end
+arch dungeon_magic
 x 18
 y 4
 end
@@ -4303,43 +4275,62 @@ slaying team2
 x 18
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 18
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 18
+y 9
+end
+arch dungeon_magic
 x 18
 y 10
 end
-arch wasteland
+arch dirtfloor
+x 18
+y 10
+end
+arch chair_3.1
+no_pick 1
+x 18
+y 10
+end
+arch dungeon_magic
 x 18
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 18
+y 11
+end
+arch chair_3.1
+no_pick 1
+x 18
+y 11
+end
+arch dungeon_magic
 x 18
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 18
+y 12
+end
+arch chair_3.1
+no_pick 1
+x 18
+y 12
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 18
+y 13
+end
+arch dungeon_magic
 x 18
 y 13
 end
@@ -4487,22 +4478,42 @@ arch dirtfloor
 x 19
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch magic_mouth
+name magicmouth
+msg
+Paying Spectators Only!
+Purchase your ticket at the registration office!
+endmsg
 x 19
-y 3
+y 2
 end
 arch dungeon_magic
 x 19
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 19
+y 3
+end
+arch check_floor
+slaying tw_spectator
+no_pass 1
+x 19
+y 3
+end
+arch teleporter
+hp 19
+sp 12
+x 19
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 19
+y 4
+end
+arch dungeon_magic
 x 19
 y 4
 end
@@ -4542,33 +4553,63 @@ slaying team2
 x 19
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 19
 y 9
 end
-arch wasteland
+arch dungeon_magic
+x 19
+y 9
+end
+arch dungeon_magic
 x 19
 y 10
 end
-arch wasteland
+arch dirtfloor
+x 19
+y 10
+end
+arch chair_3.1
+no_pick 1
+x 19
+y 10
+end
+arch dungeon_magic
 x 19
 y 11
 end
-arch wasteland
+arch dirtfloor
+x 19
+y 11
+end
+arch teleporter
+hp 19
+sp 1
+x 19
+y 11
+end
+arch dungeon_magic
 x 19
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 19
+y 12
+end
+arch chair_3.1
+no_pick 1
+x 19
+y 12
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 19
+y 13
+end
+arch dungeon_magic
 x 19
 y 13
 end
@@ -4688,6 +4729,13 @@ slaying
 x 19
 y 20
 end
+arch button_trigger
+invisible 1
+connected 1
+walk_off 0
+x 19
+y 20
+end
 arch battleground
 hp 4
 sp 11
@@ -4734,10 +4782,9 @@ end
 arch sign
 name RULES
 msg
-For a team war please split into sides and proceed to the entry points for each team.
-Team 1 is to the left.
-Team 2 is to the right.
-For a free for all everyone should join the same team.
+Please proceed to the registration room if you want to join the fight or to purchase your spectator tickets.
+Make sure you read the rules!
+We are not responsible for anything that goes wrong!
 endmsg
 x 19
 y 23
@@ -4790,22 +4837,28 @@ arch dirtfloor
 x 20
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 20
-y 3
-end
 arch dungeon_magic
 x 20
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 20
+y 3
+end
+arch dun0
+name Guard
+face witch_fire.111
+blocksview 0
+x 20
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 20
+y 4
+end
+arch dungeon_magic
 x 20
 y 4
 end
@@ -4845,43 +4898,62 @@ slaying team2
 x 20
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 20
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 20
+y 9
+end
+arch dungeon_magic
 x 20
 y 10
 end
-arch wasteland
+arch dirtfloor
+x 20
+y 10
+end
+arch chair_3.1
+no_pick 1
+x 20
+y 10
+end
+arch dungeon_magic
 x 20
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 20
+y 11
+end
+arch chair_3.1
+no_pick 1
+x 20
+y 11
+end
+arch dungeon_magic
 x 20
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 20
+y 12
+end
+arch chair_3.1
+no_pick 1
+x 20
+y 12
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 20
+y 13
+end
+arch dungeon_magic
 x 20
 y 13
 end
@@ -5029,22 +5101,21 @@ arch dirtfloor
 x 21
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 21
-y 3
-end
 arch dungeon_magic
 x 21
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 21
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 21
+y 4
+end
+arch dungeon_magic
 x 21
 y 4
 end
@@ -5084,48 +5155,53 @@ slaying team2
 x 21
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
 x 21
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 21
+y 9
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 21
 y 10
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 21
+y 10
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 21
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 21
+y 11
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 21
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
+x 21
+y 12
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 21
+y 13
+end
+arch dungeon_magic
 x 21
 y 13
 end
@@ -5275,12 +5351,13 @@ arch dungeon_magic
 x 22
 y 3
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 22
+y 4
+end
+arch dungeon_magic
 x 22
 y 4
 end
@@ -7125,66 +7202,73 @@ slaying team2
 x 30
 y 7
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dungeon_magic
 x 30
 y 8
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 8
+end
+arch dungeon_magic
 x 30
 y 9
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 9
+end
+arch dungeon_magic
 x 30
 y 10
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 10
+end
+arch dungeon_magic
 x 30
 y 11
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 11
+end
+arch dungeon_magic
 x 30
 y 12
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 12
+end
+arch dungeon_magic
 x 30
 y 13
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch permanent_lava
+no_pass 1
+cursed 1
+x 30
+y 13
+end
+arch dungeon_magic
+x 30
+y 14
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 30
 y 14
 end
@@ -7352,260 +7436,310 @@ cursed 1
 x 31
 y 8
 end
-arch dungeon_magic
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 31
 y 9
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch pedestal
+invisible 1
+connected 25
 x 31
-y 9
-end
-arch dungeon_magic
-x 31
-y 10
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 10
-end
-arch dungeon_magic
-x 31
-y 11
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 11
-end
-arch dungeon_magic
-x 31
-y 12
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 12
-end
-arch dungeon_magic
-x 31
-y 13
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 13
-end
-arch dungeon_magic
-x 31
-y 14
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 14
-end
-arch dungeon_magic
-x 31
-y 15
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 15
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 31
-y 16
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 31
-y 17
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 31
-y 18
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 31
-y 19
-end
-arch dungeon_magic
-x 31
-y 19
-end
-arch dungeon_magic
-x 31
-y 20
-end
-arch dirtfloor
-x 31
-y 20
-end
-arch dungeon_magic
-x 31
-y 21
-end
-arch dirtfloor
-x 31
-y 21
-end
-arch dungeon_magic
-x 31
-y 22
-end
-arch dirtfloor
-x 31
-y 22
-end
-arch dungeon_magic
-x 31
-y 23
-end
-arch dirtfloor
-x 31
-y 23
-end
-arch wasteland
-x 31
-y 23
-end
-arch dungeon_magic
-x 32
-end
-arch dirtfloor
-x 32
-end
-arch wasteland
-x 32
-end
-arch dungeon_magic
-x 32
-y 1
-end
-arch dirtfloor
-x 32
-y 1
-end
-arch dungeon_magic
-x 32
-y 2
-end
-arch dirtfloor
-x 32
-y 2
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 32
-y 3
-end
-arch dungeon_magic
-x 32
-y 3
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 32
-y 4
-end
-arch dungeon_magic
-x 32
-y 5
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 32
-y 5
-end
-arch dungeon_magic
-x 32
-y 6
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 32
-y 6
-end
-arch dungeon_magic
-x 32
-y 7
-end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 32
-y 7
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 32
-y 8
-end
-arch marker
-slaying team2
-x 32
-y 8
-end
-arch teleporter
-hp 30
-sp 8
-x 32
-y 8
-end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 32
-y 9
-end
-arch marker
-slaying team2
-x 32
 y 9
 end
 arch teleporter
-hp 30
+hp 29
 sp 9
+connected 25
+speed 0.0
+x 31
+y 9
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 10
+end
+arch pedestal
+invisible 1
+connected 26
+x 31
+y 10
+end
+arch teleporter
+hp 26
+sp 10
+connected 26
+x 31
+y 10
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 11
+end
+arch pedestal
+invisible 1
+connected 27
+x 31
+y 11
+end
+arch teleporter
+hp 22
+sp 11
+connected 27
+x 31
+y 11
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 12
+end
+arch pedestal
+invisible 1
+connected 28
+x 31
+y 12
+end
+arch teleporter
+hp 26
+sp 12
+connected 28
+x 31
+y 12
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 13
+end
+arch pedestal
+invisible 1
+connected 29
+x 31
+y 13
+end
+arch teleporter
+hp 29
+sp 13
+connected 29
+x 31
+y 13
+end
+arch dungeon_magic
+x 31
+y 14
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 31
+y 14
+end
+arch dungeon_magic
+x 31
+y 15
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 31
+y 15
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 16
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 17
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 31
+y 18
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 31
+y 19
+end
+arch dungeon_magic
+x 31
+y 19
+end
+arch dungeon_magic
+x 31
+y 20
+end
+arch dirtfloor
+x 31
+y 20
+end
+arch dungeon_magic
+x 31
+y 21
+end
+arch dirtfloor
+x 31
+y 21
+end
+arch dungeon_magic
+x 31
+y 22
+end
+arch dirtfloor
+x 31
+y 22
+end
+arch dungeon_magic
+x 31
+y 23
+end
+arch dirtfloor
+x 31
+y 23
+end
+arch wasteland
+x 31
+y 23
+end
+arch dungeon_magic
+x 32
+end
+arch dirtfloor
+x 32
+end
+arch wasteland
+x 32
+end
+arch dungeon_magic
+x 32
+y 1
+end
+arch dirtfloor
+x 32
+y 1
+end
+arch dungeon_magic
+x 32
+y 2
+end
+arch dirtfloor
+x 32
+y 2
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 32
+y 3
+end
+arch dungeon_magic
+x 32
+y 3
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 32
+y 4
+end
+arch dungeon_magic
+x 32
+y 4
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 32
+y 5
+end
+arch dungeon_magic
+x 32
+y 5
+end
+arch dungeon_magic
+x 32
+y 6
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 32
+y 6
+end
+arch dungeon_magic
+x 32
+y 7
+end
+arch permanent_lava
+no_pass 1
+cursed 1
+x 32
+y 7
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 32
+y 8
+end
+arch grate_closed_2
+connected 11
+x 32
+y 8
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
+x 32
+y 9
+end
+arch grate_closed_2
+connected 11
 x 32
 y 9
 end
@@ -7618,14 +7752,8 @@ slaying team2
 x 32
 y 10
 end
-arch marker
-slaying team2
-x 32
-y 10
-end
-arch teleporter
-hp 30
-sp 10
+arch grate_closed_2
+connected 11
 x 32
 y 10
 end
@@ -7638,14 +7766,8 @@ slaying team2
 x 32
 y 11
 end
-arch marker
-slaying team2
-x 32
-y 11
-end
-arch teleporter
-hp 30
-sp 11
+arch grate_closed_2
+connected 11
 x 32
 y 11
 end
@@ -7658,14 +7780,8 @@ slaying team2
 x 32
 y 12
 end
-arch marker
-slaying team2
-x 32
-y 12
-end
-arch teleporter
-hp 30
-sp 12
+arch grate_closed_2
+connected 11
 x 32
 y 12
 end
@@ -7678,14 +7794,8 @@ slaying team2
 x 32
 y 13
 end
-arch marker
-slaying team2
-x 32
-y 13
-end
-arch teleporter
-hp 30
-sp 13
+arch grate_closed_2
+connected 11
 x 32
 y 13
 end
@@ -7698,14 +7808,8 @@ slaying team2
 x 32
 y 14
 end
-arch marker
-slaying team2
-x 32
-y 14
-end
-arch teleporter
-hp 30
-sp 14
+arch grate_closed_2
+connected 11
 x 32
 y 14
 end
@@ -7821,13 +7925,11 @@ arch dirtfloor
 x 33
 y 2
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 33
 y 3
 end
-arch dungeon_magic
+arch dirtfloor
 x 33
 y 3
 end
@@ -7835,19 +7937,17 @@ arch dungeon_magic
 x 33
 y 4
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dirtfloor
 x 33
 y 4
 end
-arch dungeon_magic
+arch permanent_lava
+no_pass 1
+cursed 1
 x 33
 y 5
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 33
 y 5
 end
@@ -7860,12 +7960,34 @@ slaying team2
 x 33
 y 6
 end
+arch altar_trigger
+name 250 Rubies
+msg
+Lets get ready to rumble!!
+endmsg
+slaying ruby
+food 250
+connected 11
+exp 1800
+x 33
+y 6
+end
 arch battleground
 hp 4
 sp 11
 maxhp 34
 maxsp 11
 slaying team2
+x 33
+y 7
+end
+arch magic_mouth
+name magicmouth
+msg
+Sorry..  I just can't get them powered again.
+Must be a short somewhere...
+You'll have to manually power them on the alter.
+endmsg
 x 33
 y 7
 end
@@ -7940,11 +8062,6 @@ slaying team2
 x 33
 y 14
 end
-arch sign_e
-name Cowards Exit
-x 33
-y 14
-end
 arch dungeon_magic
 x 33
 y 15
@@ -8073,26 +8190,21 @@ arch dirtfloor
 x 34
 y 3
 end
-arch permanent_lava
-no_pass 1
-cursed 1
-x 34
-y 4
-end
 arch dungeon_magic
 x 34
 y 4
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
+arch dirtfloor
+x 34
+y 4
+end
+arch permanent_lava
+no_pass 1
+cursed 1
 x 34
 y 5
 end
-arch bones1
+arch dungeon_magic
 x 34
 y 5
 end
@@ -8105,12 +8217,23 @@ slaying team2
 x 34
 y 6
 end
+arch dun0
+name Repairman
+face witch_fire.111
+blocksview 0
+x 34
+y 6
+end
 arch battleground
 hp 4
 sp 11
 maxhp 34
 maxsp 11
 slaying team2
+x 34
+y 7
+end
+arch bones1
 x 34
 y 7
 end
@@ -8178,6 +8301,7 @@ x 34
 y 14
 end
 arch button_lever
+name lPull To Leave
 connected 3
 x 34
 y 14
@@ -8236,6 +8360,13 @@ Coward!
 You have been removed from team2!
 endmsg
 slaying
+x 34
+y 16
+end
+arch button_trigger
+invisible 1
+connected 3
+walk_off 0
 x 34
 y 16
 end
@@ -8351,13 +8482,11 @@ arch dirtfloor
 x 35
 y 3
 end
-arch permanent_lava
-no_pass 1
-cursed 1
+arch dungeon_magic
 x 35
 y 4
 end
-arch dungeon_magic
+arch dirtfloor
 x 35
 y 4
 end
@@ -8569,397 +8698,380 @@ end
 arch dirtfloor
 x 36
 y 2
-end
-arch dungeon_magic
-x 36
-y 3
-end
-arch dirtfloor
-x 36
-y 3
-end
-arch dungeon_magic
-x 36
-y 4
-end
-arch dirtfloor
-x 36
-y 4
-end
-arch dungeon_magic
-x 36
-y 5
-end
-arch dirtfloor
-x 36
-y 5
-end
-arch dungeon_magic
-x 36
-y 6
-end
-arch dirtfloor
-x 36
-y 6
-end
-arch dungeon_magic
-x 36
-y 7
-end
-arch dirtfloor
-x 36
-y 7
-end
-arch dungeon_magic
-x 36
-y 8
-end
-arch dirtfloor
-x 36
-y 8
-end
-arch dungeon_magic
-x 36
-y 9
-end
-arch dirtfloor
-x 36
-y 9
-end
-arch dungeon_magic
-x 36
-y 10
-end
-arch dirtfloor
-x 36
-y 10
-end
-arch dungeon_magic
-x 36
-y 11
-end
-arch dirtfloor
-x 36
-y 11
-end
-arch dungeon_magic
-x 36
-y 12
-end
-arch dirtfloor
-x 36
-y 12
-end
-arch dungeon_magic
-x 36
-y 13
-end
-arch dirtfloor
-x 36
-y 13
-end
-arch dungeon_magic
-x 36
-y 14
-end
-arch dirtfloor
-x 36
-y 14
-end
-arch dungeon_magic
-x 36
-y 15
-end
-arch dirtfloor
-x 36
-y 15
-end
-arch dungeon_magic
-x 36
-y 16
-end
-arch dirtfloor
-x 36
-y 16
-end
-arch dungeon_magic
-x 36
-y 17
-end
-arch dirtfloor
-x 36
-y 17
-end
-arch dungeon_magic
-x 36
-y 18
-end
-arch dirtfloor
-x 36
-y 18
-end
-arch dungeon_magic
-x 36
-y 19
-end
-arch dirtfloor
-x 36
-y 19
-end
-arch dungeon_magic
-x 36
-y 20
-end
-arch dirtfloor
-x 36
-y 20
-end
-arch dungeon_magic
-x 36
-y 21
-end
-arch dirtfloor
-x 36
-y 21
-end
-arch dungeon_magic
-x 36
-y 22
-end
-arch dirtfloor
-x 36
-y 22
-end
-arch dungeon_magic
-x 36
-y 23
-end
-arch dirtfloor
-x 36
-y 23
-end
-arch wasteland
-x 36
-y 23
-end
-arch dungeon_magic
-x 36
-y 24
-end
-arch dirtfloor
-x 36
-y 24
-end
-arch wasteland
-x 36
-y 24
-end
-arch dungeon_magic
-x 36
-y 25
-end
-arch dirtfloor
-x 36
-y 25
-end
-arch wasteland
-x 36
-y 25
-end
-arch dungeon_magic
-x 37
-end
-arch dirtfloor
-x 37
-end
-arch wasteland
-x 37
-end
-arch dungeon_magic
-x 37
-y 1
-end
-arch dirtfloor
-x 37
-y 1
-end
-arch wasteland
-x 37
-y 1
-end
-arch dungeon_magic
-x 37
-y 2
-end
-arch dirtfloor
-x 37
-y 2
-end
-arch dungeon_magic
-x 37
-y 3
-end
-arch dirtfloor
-x 37
-y 3
-end
-arch dungeon_magic
-x 37
-y 4
-end
-arch dirtfloor
-x 37
-y 4
-end
-arch dungeon_magic
-x 37
-y 5
-end
-arch dirtfloor
-x 37
-y 5
-end
-arch dungeon_magic
-x 37
-y 6
-end
-arch dirtfloor
-x 37
-y 6
-end
-arch dungeon_magic
-x 37
-y 7
-end
-arch dirtfloor
-x 37
-y 7
-end
-arch dungeon_magic
-x 37
-y 8
-end
-arch dirtfloor
-x 37
-y 8
-end
-arch dungeon_magic
-x 37
-y 9
-end
-arch dirtfloor
-x 37
-y 9
-end
-arch dungeon_magic
-x 37
-y 10
-end
-arch dirtfloor
-x 37
-y 10
-end
-arch dungeon_magic
-x 37
-y 11
-end
-arch dirtfloor
-x 37
-y 11
-end
-arch dungeon_magic
-x 37
-y 12
-end
-arch dirtfloor
-x 37
-y 12
-end
-arch dungeon_magic
-x 37
-y 13
-end
-arch dirtfloor
-x 37
-y 13
-end
-arch dungeon_magic
-x 37
-y 14
-end
-arch dirtfloor
-x 37
-y 14
-end
-arch dungeon_magic
-x 37
-y 15
-end
-arch dirtfloor
-x 37
-y 15
-end
-arch dungeon_magic
-x 37
-y 16
-end
-arch dirtfloor
-x 37
-y 16
-end
-arch dungeon_magic
-x 37
-y 17
-end
-arch dirtfloor
-x 37
-y 17
-end
-arch dungeon_magic
-x 37
-y 18
-end
-arch dirtfloor
-x 37
-y 18
-end
-arch dungeon_magic
-x 37
-y 19
-end
-arch dirtfloor
-x 37
-y 19
-end
-arch dungeon_magic
-x 37
-y 20
-end
-arch dirtfloor
-x 37
-y 20
-end
-arch dungeon_magic
-x 37
-y 21
-end
-arch dirtfloor
-x 37
-y 21
-end
-arch dungeon_magic
-x 37
-y 22
-end
-arch dirtfloor
-x 37
-y 22
 end
 arch sign
-name Team 2
+name Registration Office
 msg
-Team 2 enter here.
+Please enter here to sign up for Team Wars!
 endmsg
+x 36
+y 2
+end
+arch dungeon_magic
+x 36
+y 3
+end
+arch dirtfloor
+x 36
+y 3
+end
+arch dungeon_magic
+x 36
+y 4
+end
+arch dirtfloor
+x 36
+y 4
+end
+arch dungeon_magic
+x 36
+y 5
+end
+arch dirtfloor
+x 36
+y 5
+end
+arch dungeon_magic
+x 36
+y 6
+end
+arch dirtfloor
+x 36
+y 6
+end
+arch dungeon_magic
+x 36
+y 7
+end
+arch dirtfloor
+x 36
+y 7
+end
+arch dungeon_magic
+x 36
+y 8
+end
+arch dirtfloor
+x 36
+y 8
+end
+arch dungeon_magic
+x 36
+y 9
+end
+arch dirtfloor
+x 36
+y 9
+end
+arch dungeon_magic
+x 36
+y 10
+end
+arch dirtfloor
+x 36
+y 10
+end
+arch dungeon_magic
+x 36
+y 11
+end
+arch dirtfloor
+x 36
+y 11
+end
+arch dungeon_magic
+x 36
+y 12
+end
+arch dirtfloor
+x 36
+y 12
+end
+arch dungeon_magic
+x 36
+y 13
+end
+arch dirtfloor
+x 36
+y 13
+end
+arch dungeon_magic
+x 36
+y 14
+end
+arch dirtfloor
+x 36
+y 14
+end
+arch dungeon_magic
+x 36
+y 15
+end
+arch dirtfloor
+x 36
+y 15
+end
+arch dungeon_magic
+x 36
+y 16
+end
+arch dirtfloor
+x 36
+y 16
+end
+arch dungeon_magic
+x 36
+y 17
+end
+arch dirtfloor
+x 36
+y 17
+end
+arch dungeon_magic
+x 36
+y 18
+end
+arch dirtfloor
+x 36
+y 18
+end
+arch dungeon_magic
+x 36
+y 19
+end
+arch dirtfloor
+x 36
+y 19
+end
+arch dungeon_magic
+x 36
+y 20
+end
+arch dirtfloor
+x 36
+y 20
+end
+arch dungeon_magic
+x 36
+y 21
+end
+arch dirtfloor
+x 36
+y 21
+end
+arch dungeon_magic
+x 36
+y 22
+end
+arch dirtfloor
+x 36
+y 22
+end
+arch dungeon_magic
+x 36
+y 23
+end
+arch dirtfloor
+x 36
+y 23
+end
+arch wasteland
+x 36
+y 23
+end
+arch dungeon_magic
+x 37
+end
+arch dirtfloor
+x 37
+end
+arch wasteland
+x 37
+end
+arch dungeon_magic
+x 37
+y 1
+end
+arch dirtfloor
+x 37
+y 1
+end
+arch exit
+slaying twregister
+hp 8
+sp 12
+x 37
+y 1
+end
+arch dungeon_magic
+x 37
+y 2
+end
+arch dirtfloor
+x 37
+y 2
+end
+arch dungeon_magic
+x 37
+y 3
+end
+arch dirtfloor
+x 37
+y 3
+end
+arch dungeon_magic
+x 37
+y 4
+end
+arch dirtfloor
+x 37
+y 4
+end
+arch dungeon_magic
+x 37
+y 5
+end
+arch dirtfloor
+x 37
+y 5
+end
+arch dungeon_magic
+x 37
+y 6
+end
+arch dirtfloor
+x 37
+y 6
+end
+arch dungeon_magic
+x 37
+y 7
+end
+arch dirtfloor
+x 37
+y 7
+end
+arch dungeon_magic
+x 37
+y 8
+end
+arch dirtfloor
+x 37
+y 8
+end
+arch dungeon_magic
+x 37
+y 9
+end
+arch dirtfloor
+x 37
+y 9
+end
+arch dungeon_magic
+x 37
+y 10
+end
+arch dirtfloor
+x 37
+y 10
+end
+arch dungeon_magic
+x 37
+y 11
+end
+arch dirtfloor
+x 37
+y 11
+end
+arch dungeon_magic
+x 37
+y 12
+end
+arch dirtfloor
+x 37
+y 12
+end
+arch dungeon_magic
+x 37
+y 13
+end
+arch dirtfloor
+x 37
+y 13
+end
+arch dungeon_magic
+x 37
+y 14
+end
+arch dirtfloor
+x 37
+y 14
+end
+arch dungeon_magic
+x 37
+y 15
+end
+arch dirtfloor
+x 37
+y 15
+end
+arch dungeon_magic
+x 37
+y 16
+end
+arch dirtfloor
+x 37
+y 16
+end
+arch dungeon_magic
+x 37
+y 17
+end
+arch dirtfloor
+x 37
+y 17
+end
+arch dungeon_magic
+x 37
+y 18
+end
+arch dirtfloor
+x 37
+y 18
+end
+arch dungeon_magic
+x 37
+y 19
+end
+arch dirtfloor
+x 37
+y 19
+end
+arch dungeon_magic
+x 37
+y 20
+end
+arch dirtfloor
+x 37
+y 20
+end
+arch dungeon_magic
+x 37
+y 21
+end
+arch dirtfloor
+x 37
+y 21
+end
+arch dungeon_magic
+x 37
+y 22
+end
+arch dirtfloor
+x 37
+y 22
+end
+arch wasteland
 x 37
 y 22
 end
@@ -8971,46 +9083,18 @@ arch dirtfloor
 x 37
 y 23
 end
-arch dungeon_magic
-x 37
-y 24
-end
-arch dirtfloor
-x 37
-y 24
-end
-arch altar_trigger
-name 500 Platinum
-msg
-Lets get ready to rumble!!
-endmsg
-slaying platinacoin
-food 500
-connected 5
-exp 1
-x 37
-y 24
-end
-arch teleporter
-invisible 1
-hp 34
-sp 8
-connected 5
-speed 0.0
-x 37
-y 24
-end
-arch dungeon_magic
-x 37
-y 25
-end
-arch dirtfloor
-x 37
-y 25
-end
 arch wasteland
 x 37
-y 25
+y 23
+end
+arch dungeon_magic
+x 38
+end
+arch dirtfloor
+x 38
+end
+arch wasteland
+x 38
 end
 arch dungeon_magic
 x 38
@@ -9275,40 +9359,4 @@ end
 arch wasteland
 x 38
 y 22
-end
-arch dungeon_magic
-x 38
-y 23
-end
-arch dirtfloor
-x 38
-y 23
-end
-arch wasteland
-x 38
-y 23
-end
-arch dungeon_magic
-x 38
-y 24
-end
-arch dirtfloor
-x 38
-y 24
-end
-arch wasteland
-x 38
-y 24
-end
-arch dungeon_magic
-x 38
-y 25
-end
-arch dirtfloor
-x 38
-y 25
-end
-arch wasteland
-x 38
-y 25
 end
