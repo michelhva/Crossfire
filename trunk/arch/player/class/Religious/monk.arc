@@ -11,9 +11,10 @@ mina
 is_animated 0
 type 37
 can_use_weapon 1
-Str 1
-Dex 1
+Str 2
+Dex 2
 Con 1
-Cha -3
-Pow 2
+Wis 1
+Int -1
 end
+
