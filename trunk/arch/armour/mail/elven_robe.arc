@@ -10,7 +10,7 @@ stealth 1
 resist_confusion 60
 Dex 4
 magic 1
-sustenence 4
+food 4
 weight 5000
 value 3000
 material 128
