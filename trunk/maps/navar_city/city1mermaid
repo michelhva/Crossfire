@@ -1,12 +1,12 @@
 arch map
 name Frolicing Mermaid
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Wed Oct 27 14:25:52 1993
 endmsg
-x 21
-y 13
+width 21
+height 13
 end
 arch woodfloor
 end
@@ -103,9 +103,9 @@ x 1
 y 2
 end
 arch pirate
+unaggressive 1
 x 1
 y 2
-unaggressive 1
 end
 arch woodfloor
 x 1
@@ -124,9 +124,9 @@ x 1
 y 5
 end
 arch pirate_lass
+unaggressive 1
 x 1
 y 5
-unaggressive 1
 end
 arch woodfloor
 x 1
@@ -141,9 +141,9 @@ x 1
 y 7
 end
 arch pirate
+unaggressive 1
 x 1
 y 7
-unaggressive 1
 end
 arch woodfloor
 x 1
@@ -154,9 +154,9 @@ x 1
 y 8
 end
 arch pirate
+unaggressive 1
 x 1
 y 8
-unaggressive 1
 end
 arch woodfloor
 x 1
@@ -175,9 +175,9 @@ x 1
 y 11
 end
 arch pirate
+unaggressive 1
 x 1
 y 11
-unaggressive 1
 end
 arch woodfloor
 x 1
@@ -202,9 +202,9 @@ x 2
 y 1
 end
 arch pirate
+unaggressive 1
 x 2
 y 1
-unaggressive 1
 end
 arch woodfloor
 x 2
@@ -227,9 +227,9 @@ x 2
 y 4
 end
 arch pirate
+unaggressive 1
 x 2
 y 4
-unaggressive 1
 end
 arch woodfloor
 x 2
@@ -248,9 +248,9 @@ x 2
 y 6
 end
 arch pirate
+unaggressive 1
 x 2
 y 6
-unaggressive 1
 end
 arch woodfloor
 x 2
@@ -281,9 +281,9 @@ x 2
 y 10
 end
 arch pirate
+unaggressive 1
 x 2
 y 10
-unaggressive 1
 end
 arch woodfloor
 x 2
@@ -316,9 +316,9 @@ x 3
 y 1
 end
 arch pirate
+unaggressive 1
 x 3
 y 1
-unaggressive 1
 end
 arch woodfloor
 x 3
@@ -329,9 +329,9 @@ x 3
 y 2
 end
 arch pirate
+unaggressive 1
 x 3
 y 2
-unaggressive 1
 end
 arch woodfloor
 x 3
@@ -350,9 +350,9 @@ x 3
 y 5
 end
 arch pirate
+unaggressive 1
 x 3
 y 5
-unaggressive 1
 end
 arch woodfloor
 x 3
@@ -387,9 +387,9 @@ x 3
 y 11
 end
 arch pirate
+unaggressive 1
 x 3
 y 11
-unaggressive 1
 end
 arch woodfloor
 x 3
@@ -476,9 +476,9 @@ x 5
 y 1
 end
 arch pirate
+unaggressive 1
 x 5
 y 1
-unaggressive 1
 end
 arch woodfloor
 x 5
@@ -525,9 +525,16 @@ x 5
 y 11
 end
 arch pirate_lass
+name Cindy Loo
+event_say_plugin Python
+event_say /python/IPO/seen.py
+msg
+@match *
+I ain't seen nuthin.
+endmsg
+unaggressive 1
 x 5
 y 11
-unaggressive 1
 end
 arch woodfloor
 x 5
@@ -600,9 +607,18 @@ x 6
 y 10
 end
 arch pirate
+name Bradley
+msg
+@match bradley
+You try being a pirate named 
+Bradley...
+@match *
+This chick's seen it all.
+She knows everyone.
+endmsg
+unaggressive 1
 x 6
 y 10
-unaggressive 1
 end
 arch woodfloor
 x 6
@@ -635,9 +651,9 @@ x 7
 y 1
 end
 arch pirate
+unaggressive 1
 x 7
 y 1
-unaggressive 1
 end
 arch woodfloor
 x 7
@@ -796,9 +812,9 @@ x 9
 y 1
 end
 arch pirate_lass
+unaggressive 1
 x 9
 y 1
-unaggressive 1
 end
 arch woodfloor
 x 9
@@ -1041,10 +1057,10 @@ x 12
 y 1
 end
 arch door_look_2
-x 12
-y 1
 no_pass 0
 blocksview 1
+x 12
+y 1
 end
 arch woodfloor
 x 12
@@ -1087,10 +1103,10 @@ x 12
 y 7
 end
 arch door_look_2
-x 12
-y 7
 no_pass 0
 blocksview 1
+x 12
+y 7
 end
 arch woodfloor
 x 12
@@ -1201,10 +1217,10 @@ x 14
 y 1
 end
 arch door_look_2
-x 14
-y 1
 no_pass 0
 blocksview 1
+x 14
+y 1
 end
 arch woodfloor
 x 14
@@ -1255,10 +1271,10 @@ x 14
 y 8
 end
 arch door_look_2
-x 14
-y 8
 no_pass 0
 blocksview 1
+x 14
+y 8
 end
 arch woodfloor
 x 14
@@ -1281,10 +1297,10 @@ x 14
 y 11
 end
 arch door_look_2
-x 14
-y 11
 no_pass 0
 blocksview 1
+x 14
+y 11
 end
 arch woodfloor
 x 14
@@ -1321,9 +1337,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
+unaggressive 1
 x 15
 y 3
-unaggressive 1
 end
 arch woodfloor
 x 15
@@ -1436,9 +1452,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
+unaggressive 1
 x 16
 y 7
-unaggressive 1
 end
 arch woodfloor
 x 16
@@ -1477,9 +1493,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
+unaggressive 1
 x 16
 y 11
-unaggressive 1
 end
 arch woodfloor
 x 16
@@ -1642,9 +1658,9 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
+unaggressive 1
 x 18
 y 7
-unaggressive 1
 end
 arch woodfloor
 x 18
@@ -1698,10 +1714,10 @@ I gotta get back to see the boss...
 endmsg
 hp 50
 maxhp 50
-x 19
-y 1
 carrying 100
 unaggressive 1
+x 19
+y 1
 arch key2
 name A Key
 slaying set_individual_value smugdoor
@@ -1720,10 +1736,10 @@ x 19
 y 4
 end
 arch door_look_1
-x 19
-y 4
 no_pass 0
 blocksview 1
+x 19
+y 4
 end
 arch woodfloor
 x 19
@@ -1734,10 +1750,10 @@ x 19
 y 6
 end
 arch door_look_1
-x 19
-y 6
 no_pass 0
 blocksview 1
+x 19
+y 6
 end
 arch woodfloor
 x 19
