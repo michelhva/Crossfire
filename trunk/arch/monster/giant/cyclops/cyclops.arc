@@ -7,10 +7,10 @@ sleep 1
 Wis 11
 anim
 facings 2
-cyclops.131
-cyclops.132
 cyclops.171
 cyclops.172
+cyclops.131
+cyclops.132
 mina
 level 25
 Con 56
@@ -61,10 +61,10 @@ name cyclops
 face cyclops.231
 anim
 facings 2
-cyclops.231
-cyclops.232
 cyclops.271
 cyclops.272
+cyclops.231
+cyclops.232
 mina
 monster 1
 alive 1
@@ -79,10 +79,10 @@ name cyclops
 face cyclops.331
 anim
 facings 2
-cyclops.331
-cyclops.332
 cyclops.371
 cyclops.372
+cyclops.331
+cyclops.332
 mina
 monster 1
 alive 1
@@ -97,10 +97,10 @@ name cyclops
 face cyclops.431
 anim
 facings 2
-cyclops.431
-cyclops.432
 cyclops.471
 cyclops.472
+cyclops.431
+cyclops.432
 mina
 monster 1
 alive 1
@@ -116,10 +116,10 @@ name cyclops
 face cyclops.531
 anim
 facings 2
-cyclops.531
-cyclops.532
 cyclops.571
 cyclops.572
+cyclops.531
+cyclops.532
 mina
 monster 1
 alive 1
@@ -134,10 +134,10 @@ name cyclops
 face cyclops.631
 anim
 facings 2
-cyclops.631
-cyclops.632
 cyclops.671
 cyclops.672
+cyclops.631
+cyclops.632
 mina
 monster 1
 alive 1
