@@ -9,7 +9,7 @@ girdle_dam.111
 girdle_dam.112
 mina
 speed 0.1
-dam 3
+dam 10
 weight 2500
 value 70000
 material 8
