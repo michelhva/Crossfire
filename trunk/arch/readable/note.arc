@@ -1,5 +1,6 @@
 Object note
 face note.111
+race scrolls
 nrof 1
 type 8
 material 1

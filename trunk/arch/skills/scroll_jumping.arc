@@ -2,6 +2,7 @@ Object scroll_jumping
 name scroll of jumping
 slaying skill_jumping
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

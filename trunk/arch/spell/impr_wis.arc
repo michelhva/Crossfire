@@ -1,6 +1,7 @@
 Object improve_wis
 name Improve Wisdom Bonus
 face scroll.111
+race scrolls
 color_fg white
 nrof 1
 type 124

@@ -2,6 +2,7 @@ Object scroll_smithing
 name scroll of smithing
 slaying skill_smithery
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

@@ -1,5 +1,6 @@
 Object scroll
 name scroll
+race scrolls
 face scrollr.111
 nrof 1
 type 8

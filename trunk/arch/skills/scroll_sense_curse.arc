@@ -2,6 +2,7 @@ Object scroll_sense_curse
 name scroll of sense curse
 slaying skill_sense_curse
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

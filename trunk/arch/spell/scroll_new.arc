@@ -1,5 +1,6 @@
 Object scroll_new
 name scroll
+race scrolls
 face scroll.111
 color_fg white
 nrof 1

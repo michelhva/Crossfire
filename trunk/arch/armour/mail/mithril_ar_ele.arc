@@ -4,11 +4,14 @@ name mithril chainmail of lightning
 name_pl mithril chainmails of lightning
 client_type 250
 type 16
-face mithril_ar.111
+face mithril_ar_ele.111
 anim
-mithril_ar.111
-mithril_ar.112
-mithril_ar.113
+mithril_ar_ele.111
+mithril_ar_ele.111
+mithril_ar_ele.112
+mithril_ar_ele.112
+mithril_ar_ele.113
+mithril_ar_ele.113
 mina
 speed 0.3
 ac 4

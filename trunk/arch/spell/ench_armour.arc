@@ -1,5 +1,6 @@
 Object ench_armour
 name Enchant Armour
+race scrolls
 face scroll.111
 color_fg white
 nrof 1

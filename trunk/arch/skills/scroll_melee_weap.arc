@@ -2,6 +2,7 @@ Object scroll_melee_weap
 name scroll of melee weapons
 slaying skill_melee_weapon
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

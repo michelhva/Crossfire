@@ -2,6 +2,7 @@ Object scroll_lockpick
 name scroll of lockpicking
 slaying skill_lockpick
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

@@ -2,6 +2,7 @@ Object scroll_woodsman
 name scroll of wood lore
 slaying skill_woodsman
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130

@@ -2,6 +2,7 @@ Object scroll_wrestling
 name scroll of wrestling
 slaying skill_wrestling
 face scrollr.111
+race scrolls
 color_fg white
 nrof 1
 type 130
