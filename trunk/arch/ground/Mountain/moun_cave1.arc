@@ -6,5 +6,6 @@ color_fg grey
 no_pick 1
 editable 2
 is_floor 1
+smoothlevel 50
 visibility 50
 end
