@@ -1121,7 +1121,7 @@ msg
 Coward!
 You have been removed from team1!
 endmsg
-slaying 
+slaying
 x 4
 y 16
 end
@@ -4684,7 +4684,7 @@ name team1
 msg
 Congratulations!
 endmsg
-slaying 
+slaying
 x 19
 y 20
 end
@@ -4735,10 +4735,8 @@ arch sign
 name RULES
 msg
 For a team war please split into sides and proceed to the entry points for each team.
-
 Team 1 is to the left.
 Team 2 is to the right.
-
 For a free for all everyone should join the same team.
 endmsg
 x 19
@@ -8234,7 +8232,7 @@ msg
 Coward!
 You have been removed from team2!
 endmsg
-slaying 
+slaying
 x 34
 y 16
 end
@@ -8992,7 +8990,7 @@ y 24
 end
 arch teleporter
 invisible 1
-hp 4
+hp 34
 sp 8
 connected 5
 speed 0.0
