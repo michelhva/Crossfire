@@ -2615,13 +2615,13 @@ wander in, maybe a bit less if you
 have some friends.  Do you want to
 know where it is located?
 @match located|Located|location|Location
-It is in the southern mountain range, a
-east of Brest.  The mountains flatten out
-some.
+It is in the mountain range south of Darcap.
+The mountains flatten out some to reveal
+a small lake.
 endmsg
 hp 300
-friendly 1
 unaggressive 0
+friendly 1
 x 11
 y 4
 end
