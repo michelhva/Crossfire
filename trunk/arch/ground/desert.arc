@@ -9,7 +9,7 @@ no_pick 1
 slow_move 1
 is_wooded 1
 is_floor 1
-smoothlevel 9
+smoothlevel 7
 editable 8
 smoothface desert.111 desert_S.111
 end
