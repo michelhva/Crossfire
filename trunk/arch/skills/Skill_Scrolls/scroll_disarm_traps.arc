@@ -1,7 +1,7 @@
 Object scroll_disarm_traps
 name scroll of disarming traps
 name_pl scrolls of disarming traps
-skill disarm_traps
+skill disarm traps
 face scrollr.111
 race scrolls
 color_fg white
