@@ -1,0 +1,37 @@
+/* XPM */
+static char * man_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	s Dark red	c firebrick",
+"X	s Light brown	c Khaki",
+"o	c black",
+"O	s Dark gray	c grey25",
+"+	s Light gray	c grey75",
+"@	c white",
+/* pixels */
+"                        ",
+"            ..          ",
+"          ......        ",
+"          .XXXX.        ",
+"          ..XX..        ",
+"            oo          ",
+"        OOOXXXXOOO      ",
+"       OOOOOXXOOOOO     ",
+"      oOOOOOOOOOOOOO    ",
+"      oXoOOOOOOOOOXo    ",
+"      oXo OOOOOO oXo    ",
+"      oXo OOOOOO oXo    ",
+"      oXo ++++++ oXo    ",
+"      ooo ...... ooo    ",
+"          ......        ",
+"         ........       ",
+"         ........       ",
+"        ..... ....      ",
+"        ....@  ...      ",
+"        ooo    ooo      ",
+"        o+o    o++o     ",
+"        o+o     o+o     ",
+"       o++o     o+o     ",
+"       ooo      ooo     "};

@@ -1,0 +1,33 @@
+/* XPM */
+static char * gol_411_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"24 24 3 1",
+/* colors */
+" 	c black",
+".	c khaki",
+"X	s None	c None",
+/* pixels */
+"  .             . XXXXXX",
+" .    .            XXXXX",
+"  .  .          .  XXXXX",
+"                   XXXXX",
+" ..   .   X     .  XXXXX",
+" . .     XXX     . XXXXX",
+"  .   .  XXXX    . XXXXX",
+"     .   XXX       XXXXX",
+"....     XXXX      XXXXX",
+"  . .    XXX       XXXXX",
+"   .     XXXX      XXXXX",
+"         XXXXX     XXXXX",
+"        XXXXX     XXXXXX",
+"        XXXX       XXXXX",
+"         XXX       XXXXX",
+"          XX       XXXXX",
+"          XXX X    XXXXX",
+"     .    XXXXX   XXXXXX",
+"  ...     XXXXXXXXXXXXXX",
+"          XXXXXXXXXXXXXX",
+" .        XXXXXXXXXXXXXX",
+" .       XXXXXXXXXXXXXXX",
+" ..       XXXXXXXXXXXXXX",
+" ..       XXXXXXXXXXXXXX"};

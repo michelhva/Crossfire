@@ -1,0 +1,37 @@
+/* XPM */
+static char * cleric_131_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	s foreground	c Black",
+"X	s Light magenta	c Pink",
+"o	s Light gray	c Grey75",
+"O	s Dark brown	c Sienna",
+"+	c blue",
+"@	s Gray	c Grey50",
+/* pixels */
+"                        ",
+"       ...              ",
+"      .....        .    ",
+"      ...X.       .o.   ",
+"      ..XX.       o.o   ",
+"       ...         O    ",
+"   .....++...      O    ",
+"  .@o.+++++++..    O    ",
+"  .o.+++++++..+..  O    ",
+"  .@..@+@+@.  ..+...    ",
+"  .o@o.++++.    ....    ",
+"   .o@.+@+@.            ",
+"   .@o.++++.            ",
+"    .. ....             ",
+"      ......            ",
+"      ......            ",
+"     ... ....           ",
+"     ...  ...           ",
+"    ...    ..           ",
+"    ...    ...          ",
+"    ..      ..          ",
+"   OO.      OO          ",
+"   OO       OO          ",
+"   OO       OOO         "};

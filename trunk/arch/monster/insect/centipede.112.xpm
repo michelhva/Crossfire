@@ -1,0 +1,36 @@
+/* XPM */
+static char * centipede_112_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 6 1",
+/* colors */
+" 	s None	c None",
+".	s Light green	m black	c Green",
+"X	s Dark green	c SeaGreen",
+"o	c black",
+"O	s Light yellow	c yellow",
+"+	c red",
+/* pixels */
+"                        ",
+"               . XX     ",
+"                ..X     ",
+"              . XX.X    ",
+"               ..XX.    ",
+"             . XXX .    ",
+"              ..X..     ",
+"            .  XX .     ",
+"             ..X..      ",
+"           .  XX .      ",
+"            .XX..       ",
+"          . .XX .       ",
+"          . XX..        ",
+"        . X.XX .        ",
+"        . XXX..         ",
+"        X.XX. .         ",
+"  ooo ..XXX. .          ",
+" ooOo+XXX. . .          ",
+"    ++X. . .            ",
+" ooOo+ . .              ",
+"  ooo  .                ",
+"                        ",
+"                        ",
+"                        "};

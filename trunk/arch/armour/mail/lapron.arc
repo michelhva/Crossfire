@@ -1,0 +1,15 @@
+Object lapron
+name apron
+nrof 1
+type 16
+face lapron.111
+color_fg brown
+last_sp 11
+ac 1
+armour 5
+weight 20000
+nrof 1
+value 10
+material 8
+editable 1024
+end

@@ -1,0 +1,35 @@
+/* XPM */
+static char * lava_s_112_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	s Dark red	c Firebrick",
+"X	c red",
+"o	c black",
+"O	c blue",
+/* pixels */
+"                        ",
+"            .  ..       ",
+"            X XXXX.X..  ",
+"           .X.X.XXX.X.  ",
+"           XXXXX.XXXX.  ",
+"           .XX.X.X.XX.  ",
+"         .XXXXXXX.XX.   ",
+"         XX.X.XXXXX.    ",
+"     .  .X.XXXX.XX.     ",
+"     X .X.X.XX.XX.      ",
+"     .XXXX.XX.XX.       ",
+"     XX..XXXXXX.        ",
+"     .XXXX.XXX. .       ",
+"      XXX.X.X.          ",
+"     ooX.X.XX           ",
+"      ooX.X             ",
+"     ooooX.  .          ",
+"    ooooo               ",
+"   oOoo oo              ",
+"  oOoo  oo              ",
+" ooo   oo               ",
+" oo  oo                 ",
+"  ooo                   ",
+"                        "};

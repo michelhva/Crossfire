@@ -1,0 +1,6 @@
+Potion directory.
+
+ What with color pixmaps and all, a separate copy of the restore potions
+is needed compared to the normal potions.  For bitmaps, this doesn't make
+a difference, but the file needs to at least exist (as such, links are used).
+But for the actual XPM files, these are colored differently.

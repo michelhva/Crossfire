@@ -1,0 +1,38 @@
+/* XPM */
+static char * northman_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 8 1",
+/* colors */
+" 	s None	c None",
+".	s Dark brown	c sienna",
+"X	s Gray	c Grey50",
+"o	s Light gray	c Grey75",
+"O	s Light brown	c Khaki",
+"+	s Dark magenta	c Maroon",
+"@	s Yellow	c Gold",
+"#	s Dark cyan	c Cyan4",
+/* pixels */
+"     .        .     X   ",
+"     .   ..   .     X   ",
+"      . .oo. .      X   ",
+"       .oooo.       X   ",
+"       .oooo.       X   ",
+"        ....        X   ",
+"   .   .OOOO.       X   ",
+"  ..   ......       X   ",
+" .o.  ..OOOO..      X   ",
+".oo. .++.OO.++.  X  X  X",
+".oo..+++.OO.+++.  XXXXX ",
+".oo.++.+.OO.++++.  XXX  ",
+".oo.+..++..++.++...OX   ",
+"...++. .+..+...++++XXX  ",
+".....  ..@@..  ....XXX  ",
+".oo.    ....        X   ",
+".oo.   .####.       X   ",
+".oo.  .#####.      X@X  ",
+".oo. .#######.      X   ",
+" ..  .###..##.          ",
+"  .  .##.  .##.         ",
+"     .##.   .##.        ",
+"     ....    .#..       ",
+"    ....      ....      "};

@@ -1,0 +1,37 @@
+/* XPM */
+static char * grass_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	c Green3",
+".	s Light green	c Green",
+"X	s Dark green	c SeaGreen",
+"o	s Dark brown	m white	c Sienna",
+"O	s Light yellow	c Yellow",
+"+	s Brown	c Peru",
+"@	c Red",
+/* pixels */
+" .X. X..XX.X.o  X.Oo .X.",
+"OX  O. XO X. ..  .  .   ",
+".X.XX ..O.X.   X.O.  X.O",
+"X X..  O.XX . X  o X   .",
+"..X.X.X  o. O. .X.X.X..+",
+". .X.  ..  O.+.o .X..O@o",
+".O.X.X.+  XO. X. X.. .X ",
+"O.X.X.o .X..oX. ..o. X. ",
+"O.X..   .X. .X. .  O.X.o",
+".XXoO.  X.o.X.XoX.. X. X",
+"X..o   .  ..  o .o ..   ",
+"X  O.X. o. O X.X. .. o .",
+"..O.Xo .  .OX X. .X.O .X",
+"+.X. .  X.Oo . +.X.O o.@",
+"XX.X.  .X.O  Xo.@X.. . .",
+".X.  .oX  .. . .X.o.X. X",
+"XO XXO. .oX X .+oX.X.X.X",
+"O.XX.X .X..X .O    XX X.",
+".  .o  X. .O.   X.X.X. +",
+" XX.  .X . . O X .oX.o..",
+".XO ..Xo.XO .+X..O. X.Oo",
+"+.O X.. X.. o.X.oO.X . .",
+".O X. O. X.X.X. O. X. .X",
+". .X O.X .o. .@..+X..   "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * meteor_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c none",
+".	m white	c Black",
+"X	s Light gray	m black	c grey75",
+"o	m white	c Red",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"          ...           ",
+"        ..XXX..         ",
+"      ..XXXXXXX..       ",
+"     .XXXXXX...oo.      ",
+"     .X...XXXX.oo.      ",
+"    .X.o.XXXXX...X.     ",
+"    .X.o.XXXX.XX.X.     ",
+"   .XXX.XXXXXXXXXXX.    ",
+"   .XXX.XXXX.XXXXXX.    ",
+"   .XXXXXXX.o.XXXXX.    ",
+"    .XX.XXX.o.XXXX.     ",
+"    .X..XXXX.XXX.X.     ",
+"     .oo.XXXXXX....     ",
+"     .oo..XXXX..oo.     ",
+"      ..XXXXXXX.o.      ",
+"        ..XXX....       ",
+"          ...           ",
+"                        ",
+"                        ",
+"                        "};

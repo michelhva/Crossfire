@@ -1,0 +1,37 @@
+/* XPM */
+static char * clock_112_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Brown	m black	c Peru",
+"o	s Dark brown	m white	c sienna",
+"O	m black	c White",
+"+	s Yellow	c Gold",
+"@	s Light yellow	c Yellow",
+/* pixels */
+"              .......   ",
+"            ..XXXXXXX.. ",
+"           .XoXXXXXXXXX.",
+"          .oXoXXXXXXXXX.",
+"         .XoXoXXXXXXXXX.",
+"        .oXoXo.......XX.",
+"        .oX...XXXXXXX...",
+"       .oo.XXXX...XXXXX.",
+"       .o.XXX...OO.XXXX.",
+"      .o.XXX.OO.OO.XXX. ",
+"      .o.XXX.OO.OO.XXX. ",
+"   ...o.XXX.OOO.O.XXX.  ",
+"   .o.o.XXXX.OOO.XXXX.  ",
+"  ..o..XXXXX....XXXX..  ",
+"  ..o..XXXXXXXXXXXXX..  ",
+" .o.o.XXXX.....XXXX.o.  ",
+" .o...XX..o+ooo.XXX...  ",
+".o.XXXX.oo+oooo.XXXX.   ",
+".o.XXXX.oo+oooo.XXXX.   ",
+"..XXXX.o++oooo.XXXX.    ",
+"..XXXX.o+@oooo.XXXX.    ",
+".XXXX.ooooooo.XXXX.     ",
+"...................     ",
+"                        "};

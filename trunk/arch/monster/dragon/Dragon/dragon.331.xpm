@@ -1,0 +1,37 @@
+/* XPM */
+static char * dragon_331_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	c SeaGreen",
+"X	c Green3",
+"o	c Salmon",
+"O	s Dark red	c firebrick",
+"+	c red",
+"@	s Light yellow	c Yellow",
+/* pixels */
+"      .                 ",
+" .     .                ",
+"  .     .               ",
+"XX .     .              ",
+"oX  ..    ..            ",
+"oX   ..    ..           ",
+"oX    ...   ..          ",
+"oX     .O+++.O+         ",
+"XX     ++OOOOOO+        ",
+"X       ++OOOOOO+       ",
+"X       +++OOOOOO+      ",
+"X       +O+++OOOO+      ",
+"X    + ++O++XXXOOO+     ",
+"     +++OOO++X@XOO+     ",
+"  + ++OOO+OO++X++OO+    ",
+"  ++OOOOOO+++O+O++OO+   ",
+"++OOOO+OOO++++O+  +OO+  ",
+"OOOO+OOOO++  ++O+  +OO+ ",
+"OO+OOOOO++    ++O+  +O+ ",
+"+OOOOOO++      ++O+  +  ",
+"OOOOO+++        ++O+    ",
+"OOO+O++O+        +++    ",
+"+O+O++OOO++             ",
+"++O++OOOOOO++           "};

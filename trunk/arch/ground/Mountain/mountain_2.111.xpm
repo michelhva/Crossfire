@@ -1,0 +1,35 @@
+/* XPM */
+static char * mountain_2_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s Light gray	c Grey75",
+".	s Gray	m white	c Grey50",
+"X	c Black",
+"o	c White",
+"O	s Dark gray	c Grey25",
+/* pixels */
+"    .XXo   X..O..OXX  . ",
+"  . ..X    X.OXO.XX  .  ",
+"  . .OX .  XOXXO.X   .  ",
+" .  .OX . . XoXOOX   .. ",
+".. ..OX . . ooXOX.   ...",
+"O...OO   .. o  X... ....",
+"XO..OX   .      X.....OX",
+"XX.OXX. ... .  .XO...OXX",
+" XOOXO...O.  ....XO.OXXo",
+" XXOXOOXOO.. ...OXOOOXoo",
+"  XXOXXoXOO...OOXXOOXo  ",
+"  .XXoo  XXO.OOXXXXX    ",
+"   Xoo    XO OXXo      .",
+"  .Xo .   XXOOXoo  o  ..",
+"..XX  . .  XOOXo   o  . ",
+"..X   .    .XXXo   o .. ",
+"..X   .    .X     oo    ",
+"XX.   ..  ..X  o      oo",
+"oXO.  .. ..OX  o      o ",
+" XOO......OX    .     o ",
+" XXOO..OOOOX o  .... o  ",
+"  XXOOOOXXX o    OO     ",
+"   XXOOXXXX o    .O     ",
+"    XOOXXX       .O   .."};

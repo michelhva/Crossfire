@@ -1,0 +1,34 @@
+/* XPM */
+static char * power_crystal_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	s Dark gray	c Grey25",
+"X	s Light gray	m black	c Grey75",
+"o	c White",
+/* pixels */
+"  .    .   .   .        ",
+"   .    .  .            ",
+"                        ",
+"             .   .      ",
+".     . XXXXXXX .       ",
+" ..    XoooooooX    ..  ",
+"       XoooXoooX   .    ",
+"      XooooXooooX       ",
+"      XoooXoXoooX       ",
+".   .XooXXoXoXXooX  ..  ",
+"     XXoooXoXoooXX      ",
+"     XXooooXooooXX      ",
+"     XoXoooXoooXoX      ",
+"  .  XoXoooooooXoX ..   ",
+"..   XooXXXXXXXooX      ",
+"     XooXoooooXooX      ",
+"    .XooXoooooXooX      ",
+"   . XooXoooooXooX .    ",
+"     XooXXoXoXXooX  .   ",
+"     XXXXoooooXXXX      ",
+"     XooXoooooXooX      ",
+"      XXXoooooXXX  .   .",
+"  .     XXXXXXX         ",
+"                        "};

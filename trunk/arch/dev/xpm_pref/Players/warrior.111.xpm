@@ -1,0 +1,38 @@
+/* XPM */
+static char * warrior_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 8 1",
+/* colors */
+" 	s None	c None",
+".	s foreground	c Black",
+"X	s Gray	c Grey50",
+"o	s Dark red	c Firebrick",
+"O	s Light red	c Salmon",
+"+	s Light gray	c Grey75",
+"@	s Dark orange	c Chocolate",
+"#	s Dark brown	c Sienna",
+/* pixels */
+"                        ",
+"        .....       X   ",
+"         .ooO.      X   ",
+"         .oOO.      X   ",
+"         o.OO.     X    ",
+"          .O.      X    ",
+"    ......ooo...  XX    ",
+"   .++..ooooooo.. X     ",
+"   .+.Ooooooooooo.X     ",
+"   .+O...oooo...oOX     ",
+"    .+++..oooo. .O      ",
+"    .+++..oooo.  .      ",
+"     .+. ..@...         ",
+"      .  .@@@@.         ",
+"        .@@@@@@.        ",
+"        .@@..@@.        ",
+"        .@.  .@.        ",
+"        .@.  .@.        ",
+"       .@.    .@.       ",
+"       .@.    .@.       ",
+"       .#.    .#.       ",
+"       ###    .##       ",
+"       ##      ###      ",
+"                        "};

@@ -1,0 +1,35 @@
+/* XPM */
+static char * rock_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Light gray	c Grey75",
+"o	s Dark gray	c Grey25",
+"O	s Gray	c Grey50",
+/* pixels */
+"                        ",
+"    ...... ..... ...    ",
+"   .XoXX.X.XXXXX.XXX..  ",
+"   ..XXOXXXXOXX.XXX.X.  ",
+"  .X.XXXX.XX.XXXXX.XXX. ",
+"  .X.XOXXXXXX.XXXXXXXX. ",
+" .XX.XX.XXXXXOXXXOX.X.  ",
+" .X.X.XXoXXOXXX.XXXXX.. ",
+".XXo.XXXOXXoXX.XXXXXXX. ",
+".X.X.XX.XXXX.XXXO.XXXX. ",
+".XOX.XX.XXX.XXXXXX.XX.  ",
+".XXX.XXXXOXXXOXXXXXOXX. ",
+" .X.X.XXXX..XX.XOXX.XX. ",
+".XXX.XXX.XXXXXX.XO.XXo. ",
+".X.X.XoOXXXX.XXoXXXXXX. ",
+" .OX..X.XXX.XXXXX.XOX.  ",
+".XXX...X...X..o..X....  ",
+"..XoXXX.XXO.XX.XX.XX.   ",
+".XX.XXOXO.XXXXXO.XXX.   ",
+".X.XXXXXXXXXXoXXXXo.    ",
+".X.XX.XXOXX.XXOXX.X.    ",
+" .XXXXXoXXXXXX.XX..     ",
+" ..XoX.XXX.XX.XXXX.     ",
+"   ... ... .. ....      "};

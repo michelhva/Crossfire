@@ -1,0 +1,34 @@
+/* XPM */
+static char * ghost_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	s Light gray	c Grey75",
+"X	c White",
+"o	c red",
+/* pixels */
+"                        ",
+"         ....      ..   ",
+"        .X X .    .X.   ",
+" ..     . o o.   .X X.  ",
+" . .    .X X .  .X X .  ",
+" .X .    .X X. .X X X.. ",
+" . X ..  . X X.X X ..   ",
+" .X X X.. X X X X..     ",
+" ... X X X X X X.       ",
+"    ..X X X X X.        ",
+"      .X X X X.         ",
+"       .X X X .         ",
+"       . X X X .        ",
+"       .X X X X.        ",
+"      .X X X X X.       ",
+"     .X X X X X .       ",
+"     . X X X X X .      ",
+"     .X X X X X X.      ",
+"    .X X X X X X X.     ",
+"    . X X X X X X .     ",
+"   . X X X X X X X.     ",
+"   .X X X X X X X X.    ",
+"    ...............     ",
+"                        "};

@@ -1,0 +1,35 @@
+/* XPM */
+static char * cwall_B_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Light gray	c Grey75",
+"o	s Dark gray	c Grey25",
+"O	s Gray	c Grey50",
+/* pixels */
+"      .XXXXX.XXX.       ",
+"      .XXX.......       ",
+"      .X..XXXXXXX..     ",
+"      .X.XX.....XXX.    ",
+"      ..XX.ooooo..XX.   ",
+". . . ..X.oooooooo.X. . ",
+"........X.OOOOOoooo.X...",
+"XXXXXX..X.OOOOOOooo.X.XX",
+"XXXXXX.X.X.OOOOOOoo.X.XX",
+".X.X.X.X.XX..OOOO..XX.XX",
+".......XX.XXX.....XX.X..",
+"XXXXXX.XXX..XXXXXXX..XXX",
+"X.XXX.X.XXXX........XXXX",
+"X.XXX.XX.XXXXXXXXX.XXXXX",
+"XXXX.X.XXXXXXXXXXX.XXXXX",
+"XXXX.XX.XXX.XXX...XXXXXX",
+"XXX.X.XXXXXXXXXXX.XXXXXX",
+"XXX.XX.XXX.XXX...XXXXXXX",
+"XX.X.XXXXXXXXXXX.XXXXXXX",
+"X..XX.XXX.XXX...XXXXXXXX",
+"...XXXXXXXXXXXX.........",
+"   .XXXX.XXX.X.         ",
+"    ..XXXXXXX..         ",
+"      .......           "};

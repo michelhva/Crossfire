@@ -1,0 +1,35 @@
+/* XPM */
+static char * fear_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c none",
+".	c Black",
+"X	c white",
+"o	c Red",
+"O	s Dark red	c firebrick",
+/* pixels */
+"                        ",
+"                .....   ",
+"    .....      .XXXXX.  ",
+"   .XXXXX.    .XXXXXXX. ",
+"  .XXXXXXX.   .XooXooX. ",
+"  .XOOXOOX.   .XooXooX. ",
+"  .XOOXOOX.   .XXXXXXX. ",
+"  .XXXXXXX.    .XX.XX.  ",
+"   .XX.XX.     ..XXX..  ",
+"   ..XXX..      .X.X.   ",
+"    .X.X.        . .    ",
+"     . .                ",
+"              .....     ",
+"             .XXXXX.    ",
+"   .....    .XXXXXXX.   ",
+"  .XXXXX.   .XOOXOOX.   ",
+" .XXXXXXX.  .XOOXOOX.   ",
+" .XooXooX.  .XXXXXXX.   ",
+" .XooXooX.   .XX.XX.    ",
+" .XXXXXXX.   ..XXX..    ",
+"  .XX.XX.     .X.X.     ",
+"  ..XXX..      . .      ",
+"   .X.X.                ",
+"    . .                 "};

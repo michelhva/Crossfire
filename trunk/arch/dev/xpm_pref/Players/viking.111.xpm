@@ -1,0 +1,35 @@
+/* XPM */
+static char * viking_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	s Light gray	c Grey75",
+"X	s Gray	c Grey50",
+"o	c Black",
+"O	s Light brown	c Khaki",
+/* pixels */
+"     .       .      X   ",
+"     .   o   .      X   ",
+"      . ooo .      X    ",
+"      .ooooo.     XX    ",
+"       ooooo      X     ",
+"       ooooo     XX     ",
+"        ooo     XX      ",
+"      ooooooo   XX      ",
+"     oooooooooXXX       ",
+"    oooooooooo ooX      ",
+"    ooooooooooooo X     ",
+"    oooooooooooo        ",
+"    ooooooooooo         ",
+"    ooooOoOoo           ",
+"     ooOoOoOo           ",
+"      ooooooo           ",
+"      ooooooo           ",
+"      ooooooo           ",
+"      ooo ooo           ",
+"      oo   oo           ",
+"      oo   oo           ",
+"     oooo oooo          ",
+"   oooooo oooooo        ",
+"                        "};

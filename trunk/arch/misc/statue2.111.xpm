@@ -1,0 +1,35 @@
+/* XPM */
+static char * statue_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	s Gray	m white	c Grey50",
+"X	s Light gray	c Grey75",
+"o	s Dark gray	c Grey25",
+"O	c Black",
+/* pixels */
+"                .    .. ",
+"               ..X   .. ",
+"           . ...X   .   ",
+"           .. o.X  ..   ",
+"           .o..X ...    ",
+"            .......     ",
+"           o..X. .      ",
+"     OOOOOO...X .       ",
+"     OXXXo.X.XO.        ",
+"    OOXX.....X.         ",
+"    OOXXOXX.XX.         ",
+"   O.OXX.X..X.O         ",
+"   O.OX..X.X.XO         ",
+"  O..OXXXXXXXXO         ",
+"  O..OXXXXXXXXO         ",
+"  O..OXXXXXXXXO         ",
+"  O..OOOOOOOOOO         ",
+"  O.OXXXXXXXXO          ",
+"  O.OXX....XXO          ",
+"  OOXX....XXO           ",
+"  OOXXXXXXXXO           ",
+"  OXXXXXXXXO            ",
+"  OOOOOOOOOO            ",
+"                        "};

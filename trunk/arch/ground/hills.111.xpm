@@ -1,0 +1,38 @@
+/* XPM */
+static char * hills_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 8 1",
+/* colors */
+" 	s Light green	c Green",
+".	s Dark green	m white	c SeaGreen",
+"X	m white	c Green3",
+"o	s Dark brown	m white	c Sienna",
+"O	s Light brown	c Khaki",
+"+	s Brown	c Peru",
+"@	s Dark yellow	c Goldenrod",
+"#	s Orange	c DarkOrange2",
+/* pixels */
+" .X..X XXXX X .. XX.X ..",
+"XXXXXoooooOXXXX.. XXXXX.",
+".XXoo.oX+X++OXXXXXooOXXX",
+"XXo.o+++++XXX@XXXoo++@XX",
+"Xo.o+X++XXXX@XXXoo++#X@X",
+"...+X++XX..XXXX..XXXXXXX",
+"XX...X.X..Xoooo@XXX..X..",
+"X.XXXXXXXooo+++@@X.XXXXX",
+" XX.X.XXoo+++XXXX@XXXXXX",
+". XXXXXX.XXXXX. XXXXX. X",
+"XX.XoooOXX..X... XX.... ",
+"XXoo.+++@OXXXXXXXooOXXXX",
+".o.o++++XX@XXXXooo++@@XX",
+"..o++++XXXXXXXoo++@XXX@X",
+"XX.XXXXXXXXXXXXX.XXXXXXX",
+".X.XXXooooo@OXXX.XX.  X.",
+"XX .oo.o++++@@OXXX.... .",
+".. o.o+.++XXXX@OXX X.XXX",
+"XXo..+.+.XXX@XX@... XXXX",
+"Xoo.+++.XXX.X..@XXXXXXX ",
+"XX..XXXXXXXXXXXoo@@XXXX.",
+"X.XXXXX. XXXooo++.+@OXXX",
+"X..X X..X Xooo...XXX@@XX",
+"XXX.. XXXXoo.+...@XXX@OX"};

@@ -1,0 +1,36 @@
+/* XPM */
+static char * handle_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 6 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Light gray	c Grey75",
+"o	s Gray	c Grey50",
+"O	c white",
+"+	s Dark gray	c Grey25",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                   .    ",
+"                  ...   ",
+"                 .X...  ",
+"                ...X.   ",
+"               .....    ",
+"              .....     ",
+"             .....      ",
+"            ooo..       ",
+"        .......o.       ",
+"       ..OOXXX..        ",
+"      .OOXXXXXXX.       ",
+"     ..OXXo+oX+XX.      ",
+"     .OXXX+o.XX.X.      ",
+"    ..OXXXo.oX.XX+.     ",
+"    ..XXXXXXXXXXX+.     ",
+"    ..++++++++++++.     ",
+"    ...............     ",
+"    ...............     ",
+"                        "};

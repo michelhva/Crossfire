@@ -1,0 +1,37 @@
+/* XPM */
+static char * zombie_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	s Light gray	c Grey75",
+"X	s Dark yellow	c goldenrod",
+"o	c red",
+"O	s Light green	c Green",
+"+	s Dark green	c SeaGreen",
+"@	s Gray	c Grey50",
+/* pixels */
+"           ..           ",
+"          .XX.          ",
+"         .XXXo.         ",
+"         .XoXo.         ",
+"         .XXXX.         ",
+"         . XX.          ",
+"   ......O+++O.         ",
+"  .XXooXXOOX++O.        ",
+" .X+XOO+X++OX+O.        ",
+".XX +O + OOXOoO.        ",
+".o... .  +OOO+o.        ",
+" .  +. .+.X+++++.       ",
+"        . .OOO +.       ",
+"          .@@@@.        ",
+"         .@@@@@@.       ",
+"        .@@@@@@@.       ",
+"       .@o@...@@o.      ",
+"      .@o@.   .o@.      ",
+"      .@@.     .@@.     ",
+"      .@@.     .@@.     ",
+"      .@@.      .XX.    ",
+"      ..X.      .XX.    ",
+"     .XXX.      .XX.    ",
+"      ...        ..     "};

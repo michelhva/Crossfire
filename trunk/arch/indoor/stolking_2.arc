@@ -1,0 +1,7 @@
+Object stol_king_2
+face stolking_2.111
+name throne
+no_pick 1
+editable 128
+magicmap brown
+end

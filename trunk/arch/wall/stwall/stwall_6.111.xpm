@@ -1,0 +1,35 @@
+/* XPM */
+static char * stwall_6_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Gray	m white	c Grey50",
+"o	s Light gray	c Grey75",
+"O	s Dark gray	c Grey25",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"              ..........",
+"             ..XooXoooXo",
+"             ...Xo.XXo.X",
+"            .X...X...X..",
+"            .o.Xoo......",
+"           ..X..Xo......",
+"           .Xo..Xo.ooXoo",
+"          .o.o...X.Xo.Xo",
+"          .o.X.Xoo..X..X",
+"         ..XXo..Xo.oXooo",
+"         .Xo.o..Xo.o.XXX",
+"        .o.X.o..Xo.X....",
+"        .XXo.o...X.XooXo",
+"       .Xo.o.X.Xoo..Xo.X",
+"       ..X.oXo..Xo...X..",
+"       .Xo.o.o..Xo.ooXoo",
+"       ..o.X.o...X.Xo.XX",
+"       ..oXo.X.Xoo..X...",
+"       ..X.XXo..Xo.     ",
+"       .XoXo.X..Xo.     ",
+"       ..oOoXo..Xo.     "};

@@ -1,0 +1,13 @@
+Object stake
+slaying vampire
+last_sp 11
+type 15
+face stake.111
+material 16
+dam 8
+weight 2000
+value 20
+editable 1024
+attacktype 1
+magicmap khaki
+end

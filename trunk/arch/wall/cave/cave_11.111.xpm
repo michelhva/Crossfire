@@ -1,0 +1,33 @@
+/* XPM */
+static char * cave_11_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 3 1",
+/* colors */
+" 	s None	c None",
+".	c grey25",
+"X	c grey50",
+/* pixels */
+".XXXX...................",
+" .XX....................",
+".XXXX...................",
+".XXX.X..................",
+".XXXX...................",
+".X.XX...................",
+".X.XX...................",
+" .XX.X..................",
+" .XXX...................",
+".XXXX...................",
+".XXXX...................",
+".XXXXX.X................",
+".XXXX.X...............X.",
+"..XXXXXXX.............. ",
+" .XXXXXXXXX....XX...XX. ",
+".XXXXXXXXX.XXXX..XXXX.  ",
+".XX.XXXXX.XXXX.XXXXXX.  ",
+".X.XXXXXXXXXXXXXXXXX.   ",
+"..XXXXXXXXXXXXXXXXXX.   ",
+" .XXX.XXXXXXXXXXXXX.    ",
+" ..XXXXXX.XXXXXXXXX.    ",
+"  ...X.XXXXX.XX.X..     ",
+"    ..XXXX..XX.X..      ",
+"      .... ... .        "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * teleporter_112_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c Red",
+"X	c green",
+"o	c navy",
+/* pixels */
+"                        ",
+"                        ",
+"         .....          ",
+"      ...........       ",
+"     ....XXXXX....      ",
+"    ..XXXXXXXXXXX..     ",
+"   ...XXXX...XXXX...    ",
+"  ..XX.X.......X.XX..   ",
+"  ..XXX.........XXX..   ",
+"  ..XX...........XX..   ",
+" ..XXX.....o.....XXX..  ",
+" ..XX......o......XX..  ",
+" ..XX....oo.oo....XX..  ",
+" ..XX......o......XX..  ",
+" ..XXX.....o.....XXX..  ",
+"  ..XX...........XX..   ",
+"  ..XXX.........XXX..   ",
+"  ..XX.X.......X.XX..   ",
+"   ...XXXX...XXXX...    ",
+"    ..XXXXXXXXXXX..     ",
+"     ....XXXXX....      ",
+"      ...........       ",
+"         .....          ",
+"                        "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * bforest_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	c Black",
+".	s Gray	m white	c grey50",
+"X	s Dark green	m black	c SeaGreen",
+"o	s Brown	m black	c Peru",
+/* pixels */
+" . ..X..    ...X...X  ..",
+".       . .    .      X ",
+"X.  . X .X.X.X  XXX.... ",
+"  .X.X . . ..X . .  X . ",
+" . ..X  . X  . ..X ..X. ",
+"XX.      ...X.   .. .X. ",
+"o. .X..X      .X    .   ",
+". . .. ..X..o   X..X.. .",
+"X X   .. .. . ..  . .X. ",
+".  .X.X... X.  ...X.. . ",
+"X .  . . X..o .X . ...X ",
+".  X.X. ..     ....X.. .",
+" .   X XX  X..X  X.. X X",
+".X o      .     .   X  .",
+"    ..X..X .X .   X  .. ",
+" .X. .  ..  .. ....... o",
+"  ..X. . .. . X. X. . X ",
+".   ......X X ... .. X. ",
+".X.  . X .  .   ....... ",
+".  .          XX .X.X.  ",
+" ....X...  X.X     . . X",
+"X. X  . .X. . X  .    X ",
+".. . ..X .  ....X..X..  ",
+"  X...  .. .X . . . ..  "};

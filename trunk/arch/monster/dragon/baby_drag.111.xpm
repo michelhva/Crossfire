@@ -1,0 +1,37 @@
+/* XPM */
+static char * baby_drag_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	s Dark orange	m black	c chocolate",
+"X	c Red",
+"o	s Light Orange	m black	c orange",
+"O	s Light red	m black	c salmon",
+"+	s Light yellow	c yellow",
+"@	s Brown	c peru",
+/* pixels */
+"          .. XXX        ",
+"   .X     ...XXX oo  O  ",
+"   .X   .  .XXXXX    OX ",
+"   .XX  ....XXX+X    OXo",
+"   .XX    ..XXoXOO   OXo",
+"   .XX    ..XooX OO  OXo",
+"   ..XX    ..oo     OOXo",
+"    ..XX    .ooo    OXXo",
+"     ..XX   .ooo   OOXoo",
+"      .OXX   .ooo OOXoo ",
+"  ..  ..OXX  .ooo.Oooo  ",
+" .     .OOX...ooX.O     ",
+".       .O.XXXooXo      ",
+".      ..XXXXoooXo      ",
+"..    .OXXXXooooXo      ",
+"......OXXXoooooXXX.OO   ",
+" ....OXXXoooooXXX....OO ",
+"  ...OXXoooooXOO......@O",
+"     XXoooooXO     ...@O",
+"     XXoooooXXXXOO@@O@@O",
+"      XXoooooXOOO@@@O@O@",
+"      XXXXooXXXXXOO@@@@ ",
+"       XXXXXXXOOOOO     ",
+"      X X X XX          "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * ruins_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	s Light gray	m black	c Grey75",
+"o	s Gray	c Grey50",
+/* pixels */
+"       .         .      ",
+"   .        .  .     .. ",
+" .     .. .       ...X. ",
+" ..  ..o.     ..  ..X.. ",
+" .o...o..  ...o.. .X... ",
+" ..o.......o....o..X.X. ",
+" .o.o.o.o...o.o..o..X.. ",
+" ..o...o..o.....o..X.X. ",
+" .o.o....o...X.o.o.X... ",
+" .o.o..o..X.X..oo....X. ",
+" ..o.....X.X.X.ooo..X.. ",
+" .o.o....X..X..oo..X.X. ",
+" ...o.  ...X.X..oo..X.. ",
+" .oo... .X...X.oo..X.X. ",
+" ...o.  ...XX....X..X.. ",
+"   ... ..X....X.X.XX.X. ",
+".    .  ...X.X.X.X..X.. ",
+"  ..    .X..X.X.X....   ",
+" ..   ...X.X.....     . ",
+"    . .  ....           ",
+"     .. .     . ......  ",
+"     .     .     ...... ",
+".   ..   .     .        ",
+"       .     .    .   . "};

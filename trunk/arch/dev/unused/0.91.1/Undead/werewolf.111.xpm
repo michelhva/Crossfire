@@ -1,0 +1,37 @@
+/* XPM */
+static char * Werewolf_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	s Brown	c peru",
+"X	s Dark red	c firebrick",
+"o	c red",
+"O	s Dark brown	c sienna",
+"+	c Black",
+"@	c orange",
+/* pixels */
+"                        ",
+"                        ",
+"       .        .       ",
+"       .. .  . ..       ",
+"       .X......X.       ",
+"        ..o..o..        ",
+"         ......         ",
+"       .O+oooo+.@.      ",
+"     O.O.O++++.@.@.     ",
+"    O.O.O..oo.@.@.O.    ",
+"   O.O. .@.@.@.@ O.O.   ",
+" .O..   @.@.@.@.  O..O  ",
+"  ..    .@.@.@.@   .O.  ",
+"  . .    .@.@.@     .O. ",
+"          .@.@     . .  ",
+"          @.@.          ",
+"         O.@.O.         ",
+"        O.@.O.O.        ",
+"       O.O    .O.       ",
+"       .O.    O.O       ",
+"      .O.      O.O      ",
+"     .O.        O.O     ",
+"     O..        .O.     ",
+"     ..O        O.O     "};

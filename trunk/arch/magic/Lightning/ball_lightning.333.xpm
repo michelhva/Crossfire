@@ -1,0 +1,33 @@
+/* XPM */
+static char * ball_lightning_333_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 3 1",
+/* colors */
+" 	s None	c none",
+".	s Yellow	m black	c Gold",
+"X	c White",
+/* pixels */
+"         .              ",
+"        .    . .        ",
+"         .  . . .       ",
+"        . ..     .      ",
+"           .    .       ",
+"     .     .            ",
+"    .     .X.           ",
+"    .   ...X...         ",
+" .  .  .....X...        ",
+"  .... .....X...        ",
+"      .X.....XX..       ",
+"      ..X...X..X.       ",
+"      ...XXX.....       ",
+"       .X..X....        ",
+"        ....XX..        ",
+"     .. .......     .   ",
+" .. .     ...  .  ..    ",
+"   ..           ..  .   ",
+"     .          .       ",
+"    .         ..        ",
+"             . .        ",
+"                .       ",
+"                        ",
+"                        "};

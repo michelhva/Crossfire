@@ -1,0 +1,38 @@
+/* XPM */
+static char * jcity_3_111_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 8 1",
+/* colors */
+" 	c black",
+".	s Gray	m white	c Grey50",
+"X	c Green3",
+"o	s Brown	m black	c Peru",
+"O	s Light gray	c grey75",
+"+	s Dark brown	m white	c Sienna",
+"@	c Red",
+"#	s Light blue	c DodgerBlue",
+/* pixels */
+" . X    XX..X    XX    X",
+" . X oo XX..X oo XX oo X",
+" .      XX..     X     X",
+" .  OO XXX.. OO XX OO XX",
+" .     XXX..    XX    XX",
+" . XX     ..X     X    X",
+" . XX +++ ..X ooo X ++ X",
+" . X      ..           X",
+" . X XXX X.. OOO X XX XX",
+" . X     X..     X    XX",
+" . ...........    .    .",
+" . ....   .... oo . ++ .",
+" . XXXX O X..          X",
+" . XXX OO X.. OO X @@ XX",
+" . XXX O XX..           ",
+" . XX OO XX..XX ++ X ++ ",
+" . XX O XXX..X          ",
+" . XX   XXX..X ++ X ## X",
+" . XXXXXXXX..X    X    X",
+" .                      ",
+"  OO OO OO OO OO OO OO O",
+"  OOOOOOOOO  OOOOOOOOOOO",
+" OOOOOOOOO .. OOOOOOOOOO",
+"           ..           "};
