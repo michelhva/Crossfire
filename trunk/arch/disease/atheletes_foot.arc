@@ -7,7 +7,6 @@ wc 1
 magic 1
 Dex -1
 maxhp 1
-maxgrace -1
 speed 0.005
 maxgrace 10
 last_sp 0
