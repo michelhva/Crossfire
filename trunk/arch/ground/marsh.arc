@@ -9,6 +9,7 @@ no_pick 1
 is_water 1
 slow_move 15 
 is_wooded 1
+smoothlevel 7
 editable 8
 is_floor 1
 end

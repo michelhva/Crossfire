@@ -8,5 +8,6 @@ no_pick 1
 slow_move 3
 editable 8
 is_floor 1
+smoothlevel 30
 magicmap khaki
 end
