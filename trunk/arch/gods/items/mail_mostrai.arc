@@ -1,5 +1,5 @@
 Object mail_mostrai
-name Mostrai's Plate Mail
+name Thorin's Plate Mail
 face plate_mail.111
 msg
   This shining plate mail is Mostrai's
@@ -14,7 +14,7 @@ nrof 1
 startequip 1
 type 16
 resist_physical 50
-resist_fire 10
+resist_fire 30
 weight 50000
 magic 2
 last_heal 9
