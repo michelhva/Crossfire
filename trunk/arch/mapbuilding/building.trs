@@ -1,0 +1,32 @@
+#
+# Map building stuff
+#
+treasureone building_material
+  arch building_woodfloor
+    chance 50
+  more
+  arch building_wall
+    chance 25
+  more
+  arch building_vertical_gate
+    chance 10
+  more
+  arch building_horizontal_gate
+    chance 10
+  more
+  arch building_pedestal
+    chance 8
+  more
+  arch building_lever
+    chance 8
+end
+treasureone shop_building
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 98
+end
