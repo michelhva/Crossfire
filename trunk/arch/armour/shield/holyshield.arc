@@ -8,9 +8,8 @@ weight 20000
 value 35000
 ac 4
 resist_physical 10
-resist_drain 30
-resist_ghosthit 30
-
+resist_drain 100
+resist_ghosthit 50
 editable 5120
 magicmap grey
 end

@@ -16,17 +16,13 @@ Dex 1
 Int 2
 Wis 2
 resist_magic 30
-resist_fire 30
-resist_cold 30
-resist_drain 30
-resist_slow 30
-resist_paralyze 30
-
-resist_acid 100
-
+resist_fire 20
+resist_cold 20
+resist_drain 20
+resist_slow 20
+resist_paralyze 20
+resist_acid 75
 resist_ghosthit -100
-resist_deplete -100
-
 reflect_spell 1
 magic 5
 weight 5000

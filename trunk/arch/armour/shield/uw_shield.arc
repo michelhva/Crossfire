@@ -7,8 +7,7 @@ weight 25000
 value 80000
 ac 4
 resist_physical 15
-resist_deplete 30
-
+resist_deplete 100
 editable 5120
 color_fg black
 end
