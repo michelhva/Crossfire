@@ -1,6 +1,7 @@
 Object spell_forked_lightning
 name forked lightning
 name_pl forked lightnings
+face spell_praying.111
 level 5
 grace 15
 maxgrace 24

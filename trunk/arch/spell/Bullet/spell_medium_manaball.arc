@@ -1,6 +1,7 @@
 Object spell_medium_manaball
 name medium manaball
 name_pl medium manaball
+face spell_evocation.111
 level 4
 sp 20
 casting_time 18

@@ -1,6 +1,7 @@
 Object spell_wonder
 name wonder
 name_pl wonder
+face spell_sorcery.111
 level 3
 sp 10
 casting_time 0

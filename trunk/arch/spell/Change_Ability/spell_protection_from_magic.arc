@@ -1,6 +1,7 @@
 Object spell_protection_from_magic
 name protection from magic
 name_pl protection from magic
+face spell_praying.111
 level 10
 grace 30
 casting_time 30

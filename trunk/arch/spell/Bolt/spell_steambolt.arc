@@ -1,6 +1,7 @@
 Object spell_steambolt
 name steambolt
 name_pl steambolts
+face spell_sorcery.111
 level 5
 sp 10
 maxsp 40

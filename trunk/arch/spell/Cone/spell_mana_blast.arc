@@ -1,6 +1,7 @@
 Object spell_mana_blast
 name mana blast
 name_pl mana blast
+face spell_evocation.111
 level 2
 sp 10
 casting_time 15

@@ -1,6 +1,7 @@
 Object spell_frostbolt
 name frostbolt
 name_pl frostbolts
+face spell_evocation.111
 level 3
 sp 12
 casting_time 10

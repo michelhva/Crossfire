@@ -1,6 +1,7 @@
 Object spell_cancellation
 name cancellation
 name_pl cancellation
+face spell_evocation.111
 level 10
 sp 30
 casting_time 10

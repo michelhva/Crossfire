@@ -1,6 +1,7 @@
 Object spell_medium_fireball
 name medium fireball
 name_pl medium fireball
+face spell_pyromancy.111
 level 3
 sp 10
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_holy_orb
 name holy orb
 name_pl holy orb
+face spell_praying.111
 level 7
 grace 10
 casting_time 5

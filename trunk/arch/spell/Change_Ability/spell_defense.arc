@@ -2,6 +2,7 @@
 Object spell_defense
 name defense
 name_pl defense
+face spell_praying.111
 level 40
 grace 75
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_rage
 name rage
 name_pl rage
+face spell_praying.111
 level 1
 grace 5
 casting_time 10

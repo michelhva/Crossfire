@@ -1,6 +1,7 @@
 Object spell_protection_from_paralysis
 name protection from paralysis
 name_pl protection from paralysis
+face spell_praying.111
 level 8
 grace 20
 casting_time 10

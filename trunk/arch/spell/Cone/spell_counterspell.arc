@@ -1,6 +1,7 @@
 Object spell_counterspell
 name counterspell
 name_pl counterspell
+face spell_summoner.111
 level 3
 sp 10
 casting_time 15

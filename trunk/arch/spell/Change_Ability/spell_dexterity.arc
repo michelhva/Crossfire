@@ -1,6 +1,7 @@
 Object spell_dexterity
 name dexterity
 name_pl dexterity
+face spell_sorcery.111
 level 3
 sp 12
 casting_time 20

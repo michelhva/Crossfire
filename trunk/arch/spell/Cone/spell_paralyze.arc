@@ -1,6 +1,7 @@
 Object spell_paralyze
 name paralyze
 name_pl paralyze
+face spell_sorcery.111
 level 2
 sp 5
 casting_time 10

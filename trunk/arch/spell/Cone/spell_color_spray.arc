@@ -1,6 +1,7 @@
 Object spell_color_spray
 name color spray
 name_pl color spray
+face spell_sorcery.111
 level 13
 sp 35
 casting_time 15

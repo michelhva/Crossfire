@@ -1,6 +1,7 @@
 Object spell_protection_from_cold
 name protection from cold
 name_pl protection from cold
+face spell_praying.111
 level 3
 grace 15
 casting_time 10

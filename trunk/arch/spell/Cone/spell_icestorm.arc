@@ -1,6 +1,7 @@
 Object spell_icestorm
 name icestorm
 name_pl icestorm
+face spell_evocation.111
 level 1
 sp 5
 casting_time 8

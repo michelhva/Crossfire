@@ -1,6 +1,7 @@
 Object spell_peace
 name peace
 name_pl peace
+face spell_praying.111
 level 20
 grace 80
 casting_time 10

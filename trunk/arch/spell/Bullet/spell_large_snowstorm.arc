@@ -1,6 +1,7 @@
 Object spell_large_snowstorm
 name large snowstorm
 name_pl large snowstorm
+face spell_evocation.111
 level 5
 sp 16
 casting_time 15

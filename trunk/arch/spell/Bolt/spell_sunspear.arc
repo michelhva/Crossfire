@@ -1,6 +1,7 @@
 Object spell_sunspear
 name sunspear
 name_pl sunspears
+face spell_praying.111
 level 6
 grace 8
 dam 8

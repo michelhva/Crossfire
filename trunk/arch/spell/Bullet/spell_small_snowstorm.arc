@@ -1,6 +1,7 @@
 Object spell_small_snowstorm
 name small snowstorm
 name_pl small snowstorm
+face spell_evocation.111
 level 1
 sp 6
 casting_time 5

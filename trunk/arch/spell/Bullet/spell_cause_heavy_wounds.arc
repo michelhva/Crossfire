@@ -1,6 +1,7 @@
 Object spell_cause_heavy_wounds
 name cause heavy wounds
 name_pl cause heavy wounds
+face spell_praying.111
 level 5
 grace 16
 casting_time 5

@@ -1,6 +1,7 @@
 Object spell_shockwave
 name shockwave
 name_pl shockwave
+face spell_evocation.111
 level 14
 sp 26
 casting_time 20

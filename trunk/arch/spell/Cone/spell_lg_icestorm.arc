@@ -1,6 +1,7 @@
 Object spell_large_icestorm
 name large icestorm
 name_pl large icestorm
+face spell_evocation.111
 level 12
 sp 13
 casting_time 40

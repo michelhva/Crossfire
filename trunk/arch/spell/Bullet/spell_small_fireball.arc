@@ -1,6 +1,7 @@
 Object spell_small_fireball
 name small fireball
 name_pl small fireball
+face spell_pyromancy.111
 level 1
 sp 6
 casting_time 5

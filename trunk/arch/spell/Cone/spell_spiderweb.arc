@@ -1,6 +1,7 @@
 Object spell_spiderweb
 name spiderweb
 name_pl spiderweb
+face spell_praying.111
 level 4
 grace 10
 casting_time 10

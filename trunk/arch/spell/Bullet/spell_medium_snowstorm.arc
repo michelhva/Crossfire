@@ -1,6 +1,7 @@
 Object spell_medium_snowstorm
 name medium snowstorm
 name_pl medium snowstorm
+face spell_evocation.111
 level 3
 sp 10
 casting_time 5

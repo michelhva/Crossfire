@@ -1,6 +1,7 @@
 Object spell_small_manaball
 name small manaball
 name_pl small manaball
+face spell_evocation.111
 level 2
 sp 12
 casting_time 9

@@ -1,6 +1,7 @@
 Object spell_burning_hands
 name burning hands
 name_pl burning hands
+face spell_pyromancy.111
 level 1
 sp 5
 casting_time 5

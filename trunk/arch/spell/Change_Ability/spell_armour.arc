@@ -1,6 +1,7 @@
 Object spell_armour
 name armour
 name_pl armour
+face spell_evocation.111
 level 1
 sp 8
 casting_time 20
