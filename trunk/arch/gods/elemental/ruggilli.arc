@@ -2,6 +2,7 @@
 Object Ruggilli
 title Ixalovh
 race consuming_fire_creatures
+slaying chaotic_water_creatures
 face elem_fire.111
 animation fire_elemental
 is_animated 1
