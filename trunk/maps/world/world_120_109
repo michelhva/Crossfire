@@ -679,22 +679,30 @@ x 2
 y 43
 end
 arch wasteland
-elevation 20712
 x 2
 y 44
 end
 arch wasteland
-elevation 18888
 x 2
 y 45
 end
-arch wasteland
-elevation 21726
+arch river_sw-ne_u
+x 2
+y 45
+end
+arch grass
 x 2
 y 46
 end
-arch wasteland
-elevation 22617
+arch river_ne-s
+x 2
+y 46
+end
+arch grass
+x 2
+y 47
+end
+arch river_n-s
 x 2
 y 47
 end
@@ -703,8 +711,16 @@ elevation 22844
 x 2
 y 48
 end
+arch river_n-s
+x 2
+y 48
+end
 arch wasteland
 elevation 22368
+x 2
+y 49
+end
+arch river_n-s
 x 2
 y 49
 end
@@ -922,23 +938,31 @@ elevation 19013
 x 3
 y 42
 end
-arch wasteland
-elevation 19433
+arch mountain
 x 3
 y 43
 end
-arch wasteland
-elevation 19426
+arch mountain
 x 3
 y 44
 end
-arch wasteland
-elevation 19639
+arch river_sw-ne_u
+x 3
+y 44
+end
+arch grass
 x 3
 y 45
 end
-arch wasteland
-elevation 20813
+arch river_sw-ne
+x 3
+y 45
+end
+arch grass
+x 3
+y 46
+end
+arch river_sw-ne_l
 x 3
 y 46
 end
@@ -1161,38 +1185,47 @@ elevation 16851
 x 4
 y 40
 end
-arch wasteland
-elevation 17237
+arch hills_rocky
 x 4
 y 41
 end
 arch wasteland
-elevation 17043
 x 4
 y 42
 end
-arch wasteland
-elevation 17106
+arch mountain_cave2
 x 4
 y 43
 end
-arch wasteland
-elevation 17660
+arch grass
 x 4
 y 44
 end
-arch wasteland
-elevation 18160
+arch river_sw-ne
+x 4
+y 44
+end
+arch paved_1_1
+x 4
+y 44
+end
+arch grass
 x 4
 y 45
 end
-arch wasteland
-elevation 18735
+arch river_sw-ne_l
+x 4
+y 45
+end
+arch paved_1_2
+x 4
+y 45
+end
+arch mountain
 x 4
 y 46
 end
-arch wasteland
-elevation 19839
+arch mountain
 x 4
 y 47
 end
@@ -1400,33 +1433,47 @@ elevation 13269
 x 5
 y 38
 end
-arch wasteland
-elevation 14410
+arch dirtroad_1_1
 x 5
 y 39
 end
-arch wasteland
-elevation 15623
+arch mountain_cave2
+x 5
+y 39
+end
+arch hills_rocky
 x 5
 y 40
 end
-arch wasteland
-elevation 16030
+arch dirtroad_2_2_1
+x 5
+y 40
+end
+arch hills
 x 5
 y 41
 end
-arch mountain2
-elevation 11901
+arch wasteland
 x 5
 y 42
 end
-arch wasteland
-elevation 12867
+arch river_sw-ne_u
+x 5
+y 42
+end
+arch grass
 x 5
 y 43
 end
-arch wasteland
-elevation 16243
+arch river_sw-ne
+x 5
+y 43
+end
+arch grass
+x 5
+y 44
+end
+arch river_sw-ne_l
 x 5
 y 44
 end
@@ -1435,8 +1482,7 @@ elevation 15501
 x 5
 y 45
 end
-arch wasteland
-elevation 14467
+arch mountain
 x 5
 y 46
 end
@@ -1639,43 +1685,63 @@ elevation 12348
 x 6
 y 36
 end
-arch wasteland
-elevation 13465
+arch hills_rocky
 x 6
 y 37
 end
-arch wasteland
-elevation 12649
+arch hills_rocky
 x 6
 y 38
 end
-arch wasteland
-elevation 12170
+arch hills
 x 6
 y 39
 end
-arch wasteland
-elevation 13957
+arch dirtroad_2_2_2
+x 6
+y 39
+end
+arch grass
 x 6
 y 40
 end
-arch wasteland
-elevation 16023
+arch dirtroad_2_2_4
+x 6
+y 40
+end
+arch grass
 x 6
 y 41
 end
-arch wasteland
-elevation 15961
+arch river_sw-ne_u
+x 6
+y 41
+end
+arch fernssparse
+x 6
+y 41
+end
+arch grass
 x 6
 y 42
 end
-arch wasteland
-elevation 16003
+arch river_sw-ne
+x 6
+y 42
+end
+arch grass
 x 6
 y 43
 end
-arch wasteland
-elevation 16468
+arch river_sw-ne_l
+x 6
+y 43
+end
+arch grass
+x 6
+y 44
+end
+arch fernssparse
 x 6
 y 44
 end
@@ -1878,53 +1944,75 @@ elevation 20408
 x 7
 y 34
 end
-arch wasteland
-elevation 19668
+arch hills_rocky
 x 7
 y 35
 end
-arch wasteland
-elevation 17557
+arch hills
 x 7
 y 36
 end
-arch wasteland
-elevation 15614
+arch hills
 x 7
 y 37
 end
-arch wasteland
-elevation 13441
+arch grass
 x 7
 y 38
 end
-arch wasteland
-elevation 14751
+arch house_small
+x 7
+y 38
+end
+arch grass
 x 7
 y 39
 end
-arch wasteland
-elevation 16562
+arch dirtroad_1_4
+x 7
+y 39
+end
+arch fog
+x 7
+y 39
+end
+arch grass
 x 7
 y 40
 end
-arch wasteland
-elevation 17469
+arch fernssparse
+x 7
+y 40
+end
+arch river_sw-ne_u
+x 7
+y 40
+end
+arch grass
 x 7
 y 41
 end
-arch wasteland
-elevation 17504
+arch river_sw-ne
+x 7
+y 41
+end
+arch grass
 x 7
 y 42
 end
-arch wasteland
-elevation 17248
+arch river_sw-ne_l
+x 7
+y 42
+end
+arch hills
 x 7
 y 43
 end
-arch wasteland
-elevation 17710
+arch fog
+x 7
+y 43
+end
+arch hills_rocky
 x 7
 y 44
 end
@@ -2117,58 +2205,75 @@ elevation 19360
 x 8
 y 32
 end
-arch wasteland
-elevation 22066
+arch mountain
 x 8
 y 33
 end
-arch wasteland
-elevation 23696
+arch hills_rocky
 x 8
 y 34
 end
-arch wasteland
-elevation 23208
+arch hills
 x 8
 y 35
 end
-arch wasteland
-elevation 20785
+arch hills
 x 8
 y 36
 end
-arch wasteland
-elevation 18104
+arch fog
+x 8
+y 36
+end
+arch grass
 x 8
 y 37
 end
-arch wasteland
-elevation 15378
+arch dirtroad_2_2_2
+x 8
+y 37
+end
+arch grass
 x 8
 y 38
 end
-arch wasteland
-elevation 16279
+arch dirtroad_2_1_1
+x 8
+y 38
+end
+arch grass
 x 8
 y 39
 end
-arch wasteland
-elevation 18781
+arch river_sw-ne_u
+x 8
+y 39
+end
+arch dirtroad_2_2_4
+x 8
+y 39
+end
+arch grass
 x 8
 y 40
 end
-arch wasteland
-elevation 19215
+arch river_sw-ne
+x 8
+y 40
+end
+arch grass
 x 8
 y 41
 end
-arch wasteland
-elevation 17231
+arch river_sw-ne_l
+x 8
+y 41
+end
+arch hills
 x 8
 y 42
 end
-arch wasteland
-elevation 17693
+arch hills_rocky
 x 8
 y 43
 end
@@ -2366,53 +2471,87 @@ elevation 19450
 x 9
 y 32
 end
-arch wasteland
-elevation 22581
+arch mountain
 x 9
 y 33
 end
-arch wasteland
-elevation 24291
+arch small_temple2
+x 9
+y 33
+end
+arch hills_rocky
 x 9
 y 34
 end
-arch wasteland
-elevation 24029
+arch dirtroad_1_1
+x 9
+y 34
+end
+arch hills
 x 9
 y 35
 end
-arch wasteland
-elevation 22235
+arch dirtroad_2_1_1
+x 9
+y 35
+end
+arch grass
 x 9
 y 36
 end
-arch wasteland
-elevation 18550
+arch dirtroad_2_1_1
+x 9
+y 36
+end
+arch grass
 x 9
 y 37
 end
-arch wasteland
-elevation 18759
+arch dirtroad_3_1
+x 9
+y 37
+end
+arch fog
+x 9
+y 37
+end
+arch grass
 x 9
 y 38
 end
-arch wasteland
-elevation 19683
+arch fernssparse
+x 9
+y 38
+end
+arch river_sw-ne_u
+x 9
+y 38
+end
+arch grass
 x 9
 y 39
 end
-arch wasteland
-elevation 20246
+arch river_sw-ne
+x 9
+y 39
+end
+arch grass
 x 9
 y 40
 end
-arch wasteland
-elevation 19980
+arch river_sw-ne_l
+x 9
+y 40
+end
+arch hills
 x 9
 y 41
 end
-arch wasteland
-elevation 19488
+arch hills_rocky
+x 9
+y 42
+end
+arch fog
 x 9
 y 42
 end
@@ -2620,43 +2759,71 @@ elevation 20330
 x 10
 y 33
 end
-arch wasteland
-elevation 22084
+arch hills_rocky
 x 10
 y 34
 end
-arch wasteland
-elevation 21869
+arch hills
 x 10
 y 35
 end
-arch wasteland
-elevation 22525
+arch river_sw-ne_u
+x 10
+y 35
+end
+arch grass
 x 10
 y 36
 end
-arch wasteland
-elevation 21910
+arch river_ne-s
+x 10
+y 36
+end
+arch grass
 x 10
 y 37
 end
-arch wasteland
-elevation 21153
+arch dirtroad_2_1_2
+x 10
+y 37
+end
+arch bridge_we
+x 10
+y 37
+end
+arch grass
 x 10
 y 38
 end
-arch wasteland
-elevation 21032
+arch river_sw-n
+x 10
+y 38
+end
+arch grass
 x 10
 y 39
 end
-arch wasteland
-elevation 20851
+arch river_sw-ne_l
+x 10
+y 39
+end
+arch fernssparse
+x 10
+y 39
+end
+arch hills
 x 10
 y 40
 end
-arch wasteland
-elevation 19663
+arch dirtroad_1_4
+x 10
+y 40
+end
+arch house_small
+x 10
+y 40
+end
+arch hills_rocky
 x 10
 y 41
 end
@@ -2859,48 +3026,71 @@ elevation 11679
 x 11
 y 31
 end
-arch wasteland
-elevation 15154
+arch hills_rocky
 x 11
 y 32
 end
-arch wasteland
-elevation 16801
+arch hills_rocky
 x 11
 y 33
 end
-arch wasteland
-elevation 16730
+arch hills
 x 11
 y 34
 end
-arch wasteland
-elevation 20440
+arch house_small
+x 11
+y 34
+end
+arch grass
 x 11
 y 35
 end
-arch wasteland
-elevation 22320
+arch river_sw-e
+x 11
+y 35
+end
+arch grass
 x 11
 y 36
 end
-arch wasteland
-elevation 22209
+arch river_sw-ne_l
+x 11
+y 36
+end
+arch grass
 x 11
 y 37
 end
-arch wasteland
-elevation 21324
+arch dirtroad_2_1_2
+x 11
+y 37
+end
+arch grass
 x 11
 y 38
 end
-arch wasteland
-elevation 20694
+arch fernssparse
+x 11
+y 38
+end
+arch grass
 x 11
 y 39
 end
-arch wasteland
-elevation 20532
+arch dirtroad_2_2_2
+x 11
+y 39
+end
+arch hills_rocky
+x 11
+y 40
+end
+arch hills_rocky
+x 11
+y 40
+end
+arch dirtroad_2_2_4
 x 11
 y 40
 end
@@ -3108,48 +3298,67 @@ elevation 12298
 x 12
 y 31
 end
-arch wasteland
-elevation 12515
+arch hills_rocky
 x 12
 y 32
 end
-arch wasteland
-elevation 14449
+arch hills
 x 12
 y 33
 end
-arch wasteland
-elevation 12217
+arch fog
+x 12
+y 33
+end
+arch grass
 x 12
 y 34
 end
-arch wasteland
-elevation 18805
+arch river_sw-ne_u
+x 12
+y 34
+end
+arch grass
 x 12
 y 35
 end
-arch wasteland
-elevation 21538
+arch river_ne-w
+x 12
+y 35
+end
+arch grass
 x 12
 y 36
 end
-arch wasteland
-elevation 21648
+arch s_house1
+x 12
+y 36
+end
+arch grass
 x 12
 y 37
 end
-arch wasteland
-elevation 17915
+arch dirtroad_3_3
+x 12
+y 37
+end
+arch grass
 x 12
 y 38
 end
-arch wasteland
-elevation 20549
+arch dirtroad_2_1_1
+x 12
+y 38
+end
+arch hills
 x 12
 y 39
 end
-arch wasteland
-elevation 19029
+arch dirtroad_2_2_4
+x 12
+y 39
+end
+arch hills_rocky
 x 12
 y 40
 end
@@ -3322,18 +3531,27 @@ elevation 13837
 x 13
 y 24
 end
-arch wasteland
-elevation 13314
+arch grass
 x 13
 y 25
 end
-arch wasteland
-elevation 12849
+arch falls
+x 13
+y 25
+end
+arch grass
 x 13
 y 26
 end
-arch wasteland
-elevation 12681
+arch river_se-n
+x 13
+y 26
+end
+arch grass
+x 13
+y 27
+end
+arch river_nw-se_l
 x 13
 y 27
 end
@@ -3352,48 +3570,75 @@ elevation 12057
 x 13
 y 30
 end
-arch wasteland
-elevation 12254
+arch hills_rocky
 x 13
 y 31
 end
-arch wasteland
-elevation 12704
+arch house_small
+x 13
+y 31
+end
+arch hills
 x 13
 y 32
 end
-arch wasteland
-elevation 13849
+arch grass
 x 13
 y 33
 end
-arch wasteland
-elevation 13722
+arch river_sw-ne_u
+x 13
+y 33
+end
+arch grass
 x 13
 y 34
 end
-arch wasteland
-elevation 17957
+arch river_sw-ne
+x 13
+y 34
+end
+arch grass
 x 13
 y 35
 end
-arch wasteland
-elevation 20271
+arch river_sw-ne_l
+x 13
+y 35
+end
+arch s_shop1
+x 13
+y 35
+end
+arch grass
 x 13
 y 36
 end
-arch wasteland
-elevation 20585
+arch dirtroad_1_1
+x 13
+y 36
+end
+arch hills
 x 13
 y 37
 end
-arch wasteland
-elevation 20801
+arch dirtroad_2_2_4
+x 13
+y 37
+end
+arch fog
+x 13
+y 37
+end
+arch hills
 x 13
 y 38
 end
-arch wasteland
-elevation 20531
+arch hills_rocky
+x 13
+y 39
+end
+arch house_small
 x 13
 y 39
 end
@@ -3581,68 +3826,99 @@ elevation 10718
 x 14
 y 26
 end
-arch wasteland
-elevation 12606
+arch river_nw-se_u
+x 14
+y 26
+end
+arch grass
 x 14
 y 27
 end
-arch wasteland
-elevation 12996
+arch river_nw-s
+x 14
+y 27
+end
+arch grass
 x 14
 y 28
 end
-arch wasteland
-elevation 13068
+arch river_n-s
+x 14
+y 28
+end
+arch grass
 x 14
 y 29
 end
-arch wasteland
-elevation 12466
+arch river_n-s
+x 14
+y 29
+end
+arch grass
 x 14
 y 30
 end
-arch mountain2
-elevation 10666
+arch river_n-s
+x 14
+y 30
+end
+arch grass
 x 14
 y 31
 end
-arch wasteland
-elevation 13007
+arch river_n-s
+x 14
+y 31
+end
+arch grass
 x 14
 y 32
 end
-arch wasteland
-elevation 14565
+arch river_n-s
+x 14
+y 32
+end
+arch grass
 x 14
 y 33
 end
-arch wasteland
-elevation 16231
+arch river_sw-n
+x 14
+y 33
+end
+arch grass
 x 14
 y 34
 end
-arch wasteland
-elevation 17292
+arch river_sw-ne_l
+x 14
+y 34
+end
+arch grass
 x 14
 y 35
 end
-arch wasteland
-elevation 18447
+arch fernssparse
+x 14
+y 35
+end
+arch hills
 x 14
 y 36
 end
-arch wasteland
-elevation 19542
+arch hills
 x 14
 y 37
 end
-arch wasteland
-elevation 20449
+arch hills_rocky
 x 14
 y 38
 end
-arch wasteland
-elevation 20405
+arch hills_rocky
+x 14
+y 38
+end
+arch hills_rocky
 x 14
 y 39
 end
@@ -3855,33 +4131,31 @@ elevation 11630
 x 15
 y 31
 end
-arch wasteland
-elevation 12622
+arch hills_rocky
 x 15
 y 32
 end
-arch wasteland
-elevation 15289
+arch hills
 x 15
 y 33
 end
-arch wasteland
-elevation 16308
+arch fog
+x 15
+y 33
+end
+arch hills
 x 15
 y 34
 end
-arch wasteland
-elevation 16090
+arch hills_rocky
 x 15
 y 35
 end
-arch wasteland
-elevation 15104
+arch hills_rocky
 x 15
 y 36
 end
-arch wasteland
-elevation 17172
+arch hills_rocky
 x 15
 y 37
 end
@@ -4109,8 +4383,7 @@ elevation 13946
 x 16
 y 32
 end
-arch wasteland
-elevation 15346
+arch hills_rocky
 x 16
 y 33
 end
@@ -6890,6 +7163,9 @@ y 40
 end
 arch mountain_cave2
 name mine
+slaying /morok_dun/mines1
+hp 18
+sp 27
 x 27
 y 41
 end
@@ -7427,6 +7703,9 @@ y 44
 end
 arch mountain_cave2
 name mine
+slaying /marksel/mines
+hp 13
+sp 18
 x 29
 y 44
 end
@@ -9175,6 +9454,10 @@ elevation 3414
 x 36
 y 38
 end
+arch minihouse
+x 36
+y 38
+end
 arch farmland
 x 36
 y 39
@@ -9453,6 +9736,10 @@ elevation 3558
 x 37
 y 43
 end
+arch minihouse
+x 37
+y 43
+end
 arch hills
 elevation 3341
 x 37
@@ -9676,8 +9963,23 @@ elevation 3207
 x 38
 y 37
 end
+arch dirtroad_1_1
+x 38
+y 37
+end
+arch keep_sym
+slaying /marksel/keep
+hp 7
+sp 14
+x 38
+y 37
+end
 arch steppe
 elevation 4177
+x 38
+y 38
+end
+arch dirtroad_2_2_1
 x 38
 y 38
 end
@@ -9691,6 +9993,10 @@ elevation 3576
 x 38
 y 40
 end
+arch house_small
+x 38
+y 40
+end
 arch hills
 elevation 3391
 x 38
@@ -9698,6 +10004,10 @@ y 41
 end
 arch hills
 elevation 3387
+x 38
+y 42
+end
+arch well
 x 38
 y 42
 end
@@ -9934,8 +10244,16 @@ elevation 4104
 x 39
 y 38
 end
+arch dirtroad_2_2_3
+x 39
+y 38
+end
 arch steppe
 elevation 3609
+x 39
+y 39
+end
+arch dirtroad_2_1_1
 x 39
 y 39
 end
@@ -9944,8 +10262,16 @@ elevation 3003
 x 39
 y 40
 end
+arch dirtroad_2_1_1
+x 39
+y 40
+end
 arch woods_3
 elevation 1986
+x 39
+y 41
+end
+arch dirtroad_2_2_1
 x 39
 y 41
 end
@@ -10199,6 +10525,10 @@ y 40
 end
 arch woods
 elevation 2046
+x 40
+y 41
+end
+arch dirtroad_1_3
 x 40
 y 41
 end
@@ -10987,6 +11317,12 @@ elevation 1791
 x 43
 y 45
 end
+arch s_shop2
+slaying /marksel/shop
+hp 3
+x 43
+y 45
+end
 arch woods
 elevation 1024
 x 43
@@ -11231,7 +11567,10 @@ x 44
 y 43
 end
 arch shrine
-name shrine of Gaia
+name church of Valriel
+slaying /marksel/church
+hp 3
+sp 10
 x 44
 y 43
 end
@@ -12521,6 +12860,13 @@ elevation 3658
 x 49
 y 49
 end
+arch city_tower
+slaying /marksel/wizard
+hp 13
+sp 7
+x 35
+y 39
+end
 arch barrack_up
 x 35
 y 43
@@ -12531,7 +12877,7 @@ y 43
 end
 arch inn
 name Grumm's Inn
-slaying /inn_and_outpost/grumms_inn
+slaying /marksel/grumms_inn
 hp 7
 sp 13
 x 42
