@@ -3253,7 +3253,7 @@ dungeon_level 8
 expand2x 1
 treasureoptions 20
 monsterstyle humanoid
-dungeon_depth 3
+dungeon_depth 13
 xsize 50
 ysize 50
 exitstyle ladder
@@ -4064,7 +4064,7 @@ dungeon_level 7
 expand2x 1
 treasureoptions 20
 monsterstyle humanoid
-dungeon_depth 3
+dungeon_depth 11
 xsize 50
 ysize 50
 exitstyle ladder
@@ -5802,11 +5802,11 @@ end
 arch mountain_cave
 msg
 layoutstyle rogue
-dungeon_level 7
+dungeon_level 5
 expand2x 1
 treasureoptions 20
 monsterstyle humanoid
-dungeon_depth 3
+dungeon_depth 14
 xsize 50
 ysize 50
 exitstyle ladder
