@@ -18,11 +18,13 @@ exp 7000
 dam 50
 wc -50
 ac -70
-armour 60
+resist_physical 70
+resist_cold 100
+resist_electricity 100
+resist_fire 100
+resist_magic 100
 speed 0.850000
 level 100
-immune 30
-protected 3
 attacktype 17
 randomitems spectre
 pick_up 24

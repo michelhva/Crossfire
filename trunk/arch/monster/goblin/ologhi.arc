@@ -13,7 +13,6 @@ alive 1
 exp 100
 level 100
 ac -100
-armour 100
 can_see_in_dark 1
 Str 30
 Dex 20
@@ -26,8 +25,9 @@ wc -100
 dam 100
 speed 0.25
 attack_movement 5
-immune 1
-vulnerable 10
+resist_physical 100
+resist_magic -100
+resist_electricity -100
 carrying 20000
 weight 140000
 randomitems throw_stnd

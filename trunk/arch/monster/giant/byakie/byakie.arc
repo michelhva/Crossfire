@@ -16,8 +16,8 @@ sp 20
 maxsp 20
 Int 1
 Pow 1
-armour 50
-immune 279555
+resist_physical 100
+immune 279554
 protected 6364
 vulnerable 32
 see_invisible 1

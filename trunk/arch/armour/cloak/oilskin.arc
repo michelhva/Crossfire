@@ -10,8 +10,7 @@ value 120000
 material 8
 editable 5120
 nrof 1
-immune 64
-protected 64
+resist_acid 70
 magic -4
 damned 1
 color_fg grey

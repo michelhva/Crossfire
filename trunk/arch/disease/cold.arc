@@ -10,7 +10,7 @@ Cha -1
 maxhp 10
 dam 1
 maxgrace 6
-armour 1
+last_grace 1
 food -1
 speed 0.05
 last_sp 50

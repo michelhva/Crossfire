@@ -20,7 +20,6 @@ protected 8
 path_attuned 131096
 path_repelled 256
 path_denied 66561
-armour 40
 ac -5
 wc -1
 dam 40

@@ -22,7 +22,6 @@ path_repelled 65792
 immune 1024
 protected 1024
 vulnerable 16384
-armour 40
 hp 1000
 ac -5
 wc -3

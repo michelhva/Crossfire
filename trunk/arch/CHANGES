@@ -1,5 +1,11 @@
 Changes for CVS top of tree:
 
+MSW 2000-12-3:
+Commit for PR code.  General changes was to clean up archetypes that
+were immune/protected/vulnerable to the same attacktype (ie, protected &
+immune).  Disease code changed to use last_grace instead of armour for
+contagious values.  Gods still need to be fixed up.
+
 ------------------------------------------------------------------------------
 
 MSW 2000-11-22: talisman/ring_drain.arc - give object speed 0.1

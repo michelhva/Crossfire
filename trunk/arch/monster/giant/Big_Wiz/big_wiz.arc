@@ -26,8 +26,10 @@ sp 100
 maxsp 100
 hp 3500
 maxhp 3500
-immune 21506
-protected 2
+resist_magic 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
 ac -15
 wc -20
 dam 19
