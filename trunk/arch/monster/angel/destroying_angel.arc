@@ -4,10 +4,10 @@ race angel
 face retributioner.111
 randomitems angel
 monster 1
-level 22
+level 27
 hp 4000
 ac -5
-wc -15
+wc -30
 dam 50
 speed 0.3
 attacktype 1048577
@@ -21,6 +21,7 @@ see_invisible 1
 no_pick 1
 alive 1
 resist_magic 80
+resist_holyword 95
 weight 75000
 flying 1
 run_away 18
