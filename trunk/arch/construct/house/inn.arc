@@ -1,6 +1,6 @@
 Object inn
 name inn
-face inn.111
+face inn.x11
 type 66
 no_pick 1
 editable 2
@@ -10,7 +10,7 @@ end
 More
 Object inn_2
 name inn
-face inn.211
+face inn.x11
 type 66
 x 1
 no_pick 1
