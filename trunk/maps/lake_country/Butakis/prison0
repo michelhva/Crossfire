@@ -1,82 +1,157 @@
 arch map
+name <untitled>
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Tue Mar 28 22:12:29 1995
 endmsg
-x 24
-y 24
+width 24
+height 24
+end
+arch dungeon_floor
 end
 arch dun10
+end
+arch dungeon_floor
+y 1
 end
 arch dun3
 y 1
 end
+arch dungeon_floor
+y 2
+end
 arch dun3
 y 2
+end
+arch dungeon_floor
+y 3
 end
 arch dun11
 y 3
 end
+arch dungeon_floor
+y 4
+end
 arch dun3
 y 4
+end
+arch dungeon_floor
+y 5
 end
 arch dun3
 y 5
 end
+arch dungeon_floor
+y 6
+end
 arch dun11
 y 6
+end
+arch dungeon_floor
+y 7
 end
 arch dun3
 y 7
 end
+arch dungeon_floor
+y 8
+end
 arch dun3
 y 8
+end
+arch dungeon_floor
+y 9
 end
 arch dun11
 y 9
 end
+arch dungeon_floor
+y 10
+end
 arch dun3
 y 10
+end
+arch dungeon_floor
+y 11
 end
 arch dun3
 y 11
 end
+arch dungeon_floor
+y 12
+end
 arch dun11
 y 12
+end
+arch dungeon_floor
+y 13
 end
 arch dun3
 y 13
 end
+arch dungeon_floor
+y 14
+end
 arch dun3
 y 14
+end
+arch dungeon_floor
+y 15
 end
 arch dun11
 y 15
 end
+arch dungeon_floor
+y 16
+end
 arch dun3
 y 16
+end
+arch dungeon_floor
+y 17
 end
 arch dun3
 y 17
 end
+arch dungeon_floor
+y 18
+end
 arch dun11
 y 18
+end
+arch dungeon_floor
+y 19
 end
 arch dun3
 y 19
 end
+arch dungeon_floor
+y 20
+end
 arch dun3
 y 20
+end
+arch dungeon_floor
+y 21
 end
 arch dun3
 y 21
 end
+arch dungeon_floor
+y 22
+end
 arch dun3
 y 22
 end
+arch dungeon_floor
+y 23
+end
 arch dun4
 y 23
+end
+arch dungeon_floor
+x 1
 end
 arch dun2
 x 1
@@ -86,9 +161,9 @@ x 1
 y 1
 end
 arch pirate_lass
+unaggressive 1
 x 1
 y 1
-unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -107,9 +182,9 @@ x 1
 y 4
 end
 arch pirate_lass
+unaggressive 1
 x 1
 y 4
-unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -128,9 +203,9 @@ x 1
 y 7
 end
 arch pirate
+unaggressive 1
 x 1
 y 7
-unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -149,9 +224,9 @@ x 1
 y 10
 end
 arch pirate
+unaggressive 1
 x 1
 y 10
-unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -170,9 +245,9 @@ x 1
 y 13
 end
 arch madman
+unaggressive 1
 x 1
 y 13
-unaggressive 1
 end
 arch dungeon_floor
 x 1
@@ -238,11 +313,18 @@ arch medium_guard
 x 1
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 1
 y 23
 end
 arch dun2
+x 1
+y 23
+end
+arch dungeon_floor
+x 2
+end
+arch dun2
 x 2
 end
 arch dungeon_floor
@@ -373,11 +455,18 @@ arch medium_guard
 x 2
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 2
 y 23
 end
 arch dun2
+x 2
+y 23
+end
+arch dungeon_floor
+x 3
+end
+arch dun2
 x 3
 end
 arch dungeon_floor
@@ -500,11 +589,18 @@ arch medium_guard
 x 3
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 3
 y 23
 end
 arch dun2
+x 3
+y 23
+end
+arch dungeon_floor
+x 4
+end
+arch dun2
 x 4
 end
 arch dungeon_floor
@@ -627,9 +723,16 @@ arch medium_guard
 x 4
 y 22
 end
+arch dungeon_floor
+x 4
+y 23
+end
 arch dun2
 x 4
 y 23
+end
+arch dungeon_floor
+x 5
 end
 arch dun2
 x 5
@@ -754,9 +857,16 @@ arch medium_guard
 x 5
 y 22
 end
+arch dungeon_floor
+x 5
+y 23
+end
 arch dun2
 x 5
 y 23
+end
+arch dungeon_floor
+x 6
 end
 arch dun2
 x 6
@@ -767,10 +877,10 @@ y 1
 end
 arch grate_closed_2
 name grate to cell6
-x 6
-y 1
 speed 0.500000
 connected 6
+x 6
+y 1
 end
 arch dungeon_floor
 x 6
@@ -794,10 +904,10 @@ y 4
 end
 arch grate_closed_2
 name grate to cell5
-x 6
-y 4
 speed 0.500000
 connected 5
+x 6
+y 4
 end
 arch dungeon_floor
 x 6
@@ -821,10 +931,10 @@ y 7
 end
 arch grate_closed_2
 name grate to cell4
-x 6
-y 7
 speed 0.500000
 connected 4
+x 6
+y 7
 end
 arch dungeon_floor
 x 6
@@ -848,10 +958,10 @@ y 10
 end
 arch grate_closed_2
 name grate to cell3
-x 6
-y 10
 speed 0.500000
 connected 3
+x 6
+y 10
 end
 arch dungeon_floor
 x 6
@@ -875,10 +985,10 @@ y 13
 end
 arch grate_closed_2
 name grate to cell2
-x 6
-y 13
 speed 0.500000
 connected 2
+x 6
+y 13
 end
 arch dungeon_floor
 x 6
@@ -902,10 +1012,10 @@ y 16
 end
 arch grate_closed_2
 name grate to cell1
-x 6
-y 16
 speed 0.500000
 connected 1
+x 6
+y 16
 end
 arch dungeon_floor
 x 6
@@ -947,9 +1057,16 @@ arch medium_guard
 x 6
 y 22
 end
+arch dungeon_floor
+x 6
+y 23
+end
 arch dun2
 x 6
 y 23
+end
+arch dungeon_floor
+x 7
 end
 arch dun2
 x 7
@@ -964,9 +1081,9 @@ y 2
 end
 arch button_handle
 name handle to cell6
+connected 6
 x 7
 y 2
-connected 6
 end
 arch dungeon_floor
 x 7
@@ -986,9 +1103,9 @@ y 5
 end
 arch button_handle
 name handle to cell5
+connected 5
 x 7
 y 5
-connected 5
 end
 arch dungeon_floor
 x 7
@@ -1008,9 +1125,9 @@ y 8
 end
 arch button_handle
 name handle to cell4
+connected 4
 x 7
 y 8
-connected 4
 end
 arch dungeon_floor
 x 7
@@ -1030,9 +1147,9 @@ y 11
 end
 arch button_handle
 name handle to cell3
+connected 3
 x 7
 y 11
-connected 3
 end
 arch dungeon_floor
 x 7
@@ -1052,9 +1169,9 @@ y 14
 end
 arch button_handle
 name handle to cell2
+connected 2
 x 7
 y 14
-connected 2
 end
 arch dungeon_floor
 x 7
@@ -1074,9 +1191,9 @@ y 17
 end
 arch button_handle
 name handle to cell1
+connected 1
 x 7
 y 17
-connected 1
 end
 arch dungeon_floor
 x 7
@@ -1110,9 +1227,16 @@ arch medium_guard
 x 7
 y 22
 end
+arch dungeon_floor
+x 7
+y 23
+end
 arch dun2
 x 7
 y 23
+end
+arch dungeon_floor
+x 8
 end
 arch dun2
 x 8
@@ -1213,9 +1337,16 @@ arch medium_guard
 x 8
 y 22
 end
+arch dungeon_floor
+x 8
+y 23
+end
 arch dun2
 x 8
 y 23
+end
+arch dungeon_floor
+x 9
 end
 arch dun2
 x 9
@@ -1324,9 +1455,16 @@ arch medium_guard
 x 9
 y 22
 end
+arch dungeon_floor
+x 9
+y 23
+end
 arch dun12
 x 9
 y 23
+end
+arch dungeon_floor
+x 10
 end
 arch dun2
 x 10
@@ -1433,6 +1571,9 @@ end
 arch dungeon_floor
 x 10
 y 23
+end
+arch dungeon_floor
+x 11
 end
 arch dun2
 x 11
@@ -1554,6 +1695,9 @@ arch dungeon_floor
 x 11
 y 23
 end
+arch dungeon_floor
+x 12
+end
 arch dun2
 x 12
 end
@@ -1674,6 +1818,9 @@ arch dungeon_floor
 x 12
 y 23
 end
+arch dungeon_floor
+x 13
+end
 arch dun2
 x 13
 end
@@ -1779,6 +1926,9 @@ end
 arch dungeon_floor
 x 13
 y 23
+end
+arch dungeon_floor
+x 14
 end
 arch dun2
 x 14
@@ -1887,9 +2037,16 @@ arch medium_guard
 x 14
 y 22
 end
+arch dungeon_floor
+x 14
+y 23
+end
 arch dun6
 x 14
 y 23
+end
+arch dungeon_floor
+x 15
 end
 arch dun2
 x 15
@@ -1990,9 +2147,16 @@ arch medium_guard
 x 15
 y 22
 end
+arch dungeon_floor
+x 15
+y 23
+end
 arch dun2
 x 15
 y 23
+end
+arch dungeon_floor
+x 16
 end
 arch dun2
 x 16
@@ -2007,9 +2171,9 @@ y 2
 end
 arch button_handle
 name handle to cell7
+connected 7
 x 16
 y 2
-connected 7
 end
 arch dungeon_floor
 x 16
@@ -2029,9 +2193,9 @@ y 5
 end
 arch button_handle
 name handle to cell8
+connected 8
 x 16
 y 5
-connected 8
 end
 arch dungeon_floor
 x 16
@@ -2051,9 +2215,9 @@ y 8
 end
 arch button_handle
 name handle to cell9
+connected 9
 x 16
 y 8
-connected 9
 end
 arch dungeon_floor
 x 16
@@ -2073,9 +2237,9 @@ y 11
 end
 arch button_handle
 name handle to cell10
+connected 10
 x 16
 y 11
-connected 10
 end
 arch dungeon_floor
 x 16
@@ -2095,9 +2259,9 @@ y 14
 end
 arch button_handle
 name handle to cell11
+connected 11
 x 16
 y 14
-connected 11
 end
 arch dungeon_floor
 x 16
@@ -2117,9 +2281,9 @@ y 17
 end
 arch button_handle
 name handle to cell12
+connected 12
 x 16
 y 17
-connected 12
 end
 arch dungeon_floor
 x 16
@@ -2153,9 +2317,16 @@ arch medium_guard
 x 16
 y 22
 end
+arch dungeon_floor
+x 16
+y 23
+end
 arch dun2
 x 16
 y 23
+end
+arch dungeon_floor
+x 17
 end
 arch dun2
 x 17
@@ -2166,10 +2337,10 @@ y 1
 end
 arch grate_closed_2
 name grate to cell7
-x 17
-y 1
 speed 0.500000
 connected 7
+x 17
+y 1
 end
 arch dungeon_floor
 x 17
@@ -2193,10 +2364,10 @@ y 4
 end
 arch grate_closed_2
 name grate to cell8
-x 17
-y 4
 speed 0.500000
 connected 8
+x 17
+y 4
 end
 arch dungeon_floor
 x 17
@@ -2220,10 +2391,10 @@ y 7
 end
 arch grate_closed_2
 name grate to cell9
-x 17
-y 7
 speed 0.500000
 connected 9
+x 17
+y 7
 end
 arch dungeon_floor
 x 17
@@ -2247,10 +2418,10 @@ y 10
 end
 arch grate_closed_2
 name grate to cell10
-x 17
-y 10
 speed 0.500000
 connected 10
+x 17
+y 10
 end
 arch dungeon_floor
 x 17
@@ -2274,10 +2445,10 @@ y 13
 end
 arch grate_closed_2
 name grate to cell11
-x 17
-y 13
 speed 0.500000
 connected 11
+x 17
+y 13
 end
 arch dungeon_floor
 x 17
@@ -2301,10 +2472,10 @@ y 16
 end
 arch grate_closed_2
 name grate to cell12
-x 17
-y 16
 speed 0.500000
 connected 12
+x 17
+y 16
 end
 arch dungeon_floor
 x 17
@@ -2346,11 +2517,18 @@ arch medium_guard
 x 17
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 17
 y 23
 end
 arch dun2
+x 17
+y 23
+end
+arch dungeon_floor
+x 18
+end
+arch dun2
 x 18
 end
 arch dungeon_floor
@@ -2473,11 +2651,18 @@ arch medium_guard
 x 18
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 18
 y 23
 end
 arch dun2
+x 18
+y 23
+end
+arch dungeon_floor
+x 19
+end
+arch dun2
 x 19
 end
 arch dungeon_floor
@@ -2600,11 +2785,18 @@ arch medium_guard
 x 19
 y 22
 end
-arch dun2
+arch dungeon_floor
 x 19
 y 23
 end
 arch dun2
+x 19
+y 23
+end
+arch dungeon_floor
+x 20
+end
+arch dun2
 x 20
 end
 arch dungeon_floor
@@ -2727,9 +2919,16 @@ arch medium_guard
 x 20
 y 22
 end
+arch dungeon_floor
+x 20
+y 23
+end
 arch dun2
 x 20
 y 23
+end
+arch dungeon_floor
+x 21
 end
 arch dun2
 x 21
@@ -2862,9 +3061,16 @@ arch medium_guard
 x 21
 y 22
 end
+arch dungeon_floor
+x 21
+y 23
+end
 arch dun2
 x 21
 y 23
+end
+arch dungeon_floor
+x 22
 end
 arch dun2
 x 22
@@ -2898,9 +3104,9 @@ x 22
 y 5
 end
 arch raas
+unaggressive 1
 x 22
 y 5
-unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -2919,9 +3125,9 @@ x 22
 y 8
 end
 arch raas
+unaggressive 1
 x 22
 y 8
-unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -2940,9 +3146,9 @@ x 22
 y 11
 end
 arch madman
+unaggressive 1
 x 22
 y 11
-unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -2961,9 +3167,9 @@ x 22
 y 14
 end
 arch madman
+unaggressive 1
 x 22
 y 14
-unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -2982,9 +3188,9 @@ x 22
 y 17
 end
 arch ogre
+unaggressive 1
 x 22
 y 17
-unaggressive 1
 end
 arch dungeon_floor
 x 22
@@ -3025,101 +3231,200 @@ end
 arch medium_guard
 x 22
 y 22
+end
+arch dungeon_floor
+x 22
+y 23
 end
 arch dun2
 x 22
 y 23
 end
+arch dungeon_floor
+x 23
+end
 arch dun9
 x 23
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 1
 end
 arch dun3
 x 23
+y 1
+end
+arch dungeon_floor
+x 23
 y 2
+end
+arch dun3
+x 23
+y 2
+end
+arch dungeon_floor
+x 23
+y 3
 end
 arch dun14
 x 23
 y 3
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 4
 end
 arch dun3
 x 23
+y 4
+end
+arch dungeon_floor
+x 23
 y 5
+end
+arch dun3
+x 23
+y 5
+end
+arch dungeon_floor
+x 23
+y 6
 end
 arch dun14
 x 23
 y 6
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 7
 end
 arch dun3
 x 23
+y 7
+end
+arch dungeon_floor
+x 23
 y 8
+end
+arch dun3
+x 23
+y 8
+end
+arch dungeon_floor
+x 23
+y 9
 end
 arch dun14
 x 23
 y 9
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 10
 end
 arch dun3
 x 23
+y 10
+end
+arch dungeon_floor
+x 23
 y 11
+end
+arch dun3
+x 23
+y 11
+end
+arch dungeon_floor
+x 23
+y 12
 end
 arch dun14
 x 23
 y 12
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 13
 end
 arch dun3
 x 23
+y 13
+end
+arch dungeon_floor
+x 23
 y 14
+end
+arch dun3
+x 23
+y 14
+end
+arch dungeon_floor
+x 23
+y 15
 end
 arch dun14
 x 23
 y 15
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 16
 end
 arch dun3
 x 23
+y 16
+end
+arch dungeon_floor
+x 23
 y 17
+end
+arch dun3
+x 23
+y 17
+end
+arch dungeon_floor
+x 23
+y 18
 end
 arch dun14
 x 23
 y 18
 end
-arch dun3
+arch dungeon_floor
 x 23
 y 19
 end
 arch dun3
 x 23
+y 19
+end
+arch dungeon_floor
+x 23
 y 20
 end
 arch dun3
+x 23
+y 20
+end
+arch dungeon_floor
 x 23
 y 21
 end
 arch dun3
 x 23
+y 21
+end
+arch dungeon_floor
+x 23
 y 22
+end
+arch dun3
+x 23
+y 22
+end
+arch dungeon_floor
+x 23
+y 23
 end
 arch dun7
 x 23

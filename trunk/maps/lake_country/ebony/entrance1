@@ -5,6 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Apr 22 20:00:12 1995
 endmsg
+width 16
+height 16
 end
 arch marble
 end
@@ -171,10 +173,10 @@ x 1
 y 13
 end
 arch button_small
-x 1
-y 13
 invisible 1
 connected 10
+x 1
+y 13
 end
 arch marble
 x 1
@@ -201,10 +203,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
+speed 0.500000
+connected 11
 x 2
 y 1
-speed 0.500000
-connected 11
 end
 arch cobblestones
 x 2
@@ -213,10 +215,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 2
 speed 0.500000
 connected 11
+x 2
+y 2
 end
 arch cobblestones
 x 2
@@ -233,10 +235,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
+speed 0.500000
+connected 11
 x 2
 y 4
-speed 0.500000
-connected 11
 end
 arch cobblestones
 x 2
@@ -245,10 +247,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 5
 speed 0.500000
 connected 11
+x 2
+y 5
 end
 arch cobblestones
 x 2
@@ -265,10 +267,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 7
 speed 0.500000
 connected 11
+x 2
+y 7
 end
 arch cobblestones
 x 2
@@ -277,10 +279,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 8
 speed 0.500000
 connected 11
+x 2
+y 8
 end
 arch cobblestones
 x 2
@@ -297,10 +299,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 10
 speed 0.500000
 connected 11
+x 2
+y 10
 end
 arch cobblestones
 x 2
@@ -309,10 +311,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 2
-y 11
 speed 0.500000
 connected 11
+x 2
+y 11
 end
 arch cobblestones
 x 2
@@ -339,10 +341,10 @@ x 2
 y 14
 end
 arch button_small
-x 2
-y 14
 invisible 1
 connected 10
+x 2
+y 14
 end
 arch marble
 x 2
@@ -363,32 +365,32 @@ x 3
 y 1
 end
 arch mover_3
-x 3
-y 1
 level 1
 attacktype 1
+x 3
+y 1
 end
 arch panther
 name giant black tiger
 hp 700
 dam 20
-x 3
-y 1
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 3
+y 1
 end
 arch cobblestones
 x 3
 y 2
 end
 arch mover_3
-x 3
-y 2
 level 1
 attacktype 1
+x 3
+y 2
 end
 arch magic_mouth
 msg
@@ -411,32 +413,32 @@ x 3
 y 4
 end
 arch mover_3
-x 3
-y 4
 level 1
 attacktype 1
+x 3
+y 4
 end
 arch panther
 name giant black tiger
 hp 700
 dam 20
-x 3
-y 4
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 3
+y 4
 end
 arch cobblestones
 x 3
 y 5
 end
 arch mover_3
-x 3
-y 5
 level 1
 attacktype 1
+x 3
+y 5
 end
 arch magic_mouth
 msg
@@ -459,32 +461,32 @@ x 3
 y 7
 end
 arch mover_3
-x 3
-y 7
 level 1
 attacktype 1
+x 3
+y 7
 end
 arch panther
 name giant black tiger
 hp 700
 dam 20
-x 3
-y 7
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 3
+y 7
 end
 arch cobblestones
 x 3
 y 8
 end
 arch mover_3
-x 3
-y 8
 level 1
 attacktype 1
+x 3
+y 8
 end
 arch magic_mouth
 msg
@@ -507,32 +509,32 @@ x 3
 y 10
 end
 arch mover_3
-x 3
-y 10
 level 1
 attacktype 1
+x 3
+y 10
 end
 arch panther
 name giant black tiger
 hp 700
 dam 20
-x 3
-y 10
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 3
+y 10
 end
 arch cobblestones
 x 3
 y 11
 end
 arch mover_3
-x 3
-y 11
 level 1
 attacktype 1
+x 3
+y 11
 end
 arch magic_mouth
 msg
@@ -563,10 +565,10 @@ x 3
 y 13
 end
 arch button_small
-x 3
-y 13
 invisible 1
 connected 10
+x 3
+y 13
 end
 arch marble
 x 3
@@ -598,13 +600,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 4
-y 2
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 4
+y 2
 end
 arch cobblestones
 x 4
@@ -626,13 +628,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 4
-y 5
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 4
+y 5
 end
 arch cobblestones
 x 4
@@ -654,13 +656,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 4
-y 8
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 4
+y 8
 end
 arch cobblestones
 x 4
@@ -682,13 +684,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 4
-y 11
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 4
+y 11
 end
 arch cobblestones
 x 4
@@ -715,10 +717,10 @@ x 4
 y 14
 end
 arch button_small
-x 4
-y 14
 invisible 1
 connected 10
+x 4
+y 14
 end
 arch marble
 x 4
@@ -746,13 +748,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 5
-y 2
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 5
+y 2
 end
 arch cobblestones
 x 5
@@ -774,13 +776,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 5
-y 5
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 5
+y 5
 end
 arch cobblestones
 x 5
@@ -802,13 +804,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 5
-y 8
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 5
+y 8
 end
 arch cobblestones
 x 5
@@ -830,13 +832,13 @@ arch panther
 name giant black tiger
 hp 700
 dam 20
-x 5
-y 11
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
 resist_poison 100
 resist_paralyze 100
+x 5
+y 11
 end
 arch cobblestones
 x 5
@@ -859,10 +861,10 @@ x 5
 y 13
 end
 arch button_small
-x 5
-y 13
 invisible 1
 connected 10
+x 5
+y 13
 end
 arch marble
 x 5
@@ -889,10 +891,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
+speed 0.500000
+connected 11
 x 6
 y 1
-speed 0.500000
-connected 11
 end
 arch cobblestones
 x 6
@@ -901,10 +903,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 2
 speed 0.500000
 connected 11
+x 6
+y 2
 end
 arch cobblestones
 x 6
@@ -921,10 +923,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
+speed 0.500000
+connected 11
 x 6
 y 4
-speed 0.500000
-connected 11
 end
 arch cobblestones
 x 6
@@ -933,10 +935,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 5
 speed 0.500000
 connected 11
+x 6
+y 5
 end
 arch cobblestones
 x 6
@@ -953,10 +955,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 7
 speed 0.500000
 connected 11
+x 6
+y 7
 end
 arch cobblestones
 x 6
@@ -965,10 +967,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 8
 speed 0.500000
 connected 11
+x 6
+y 8
 end
 arch cobblestones
 x 6
@@ -985,10 +987,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 10
 speed 0.500000
 connected 11
+x 6
+y 10
 end
 arch cobblestones
 x 6
@@ -997,10 +999,10 @@ end
 arch grate_closed_2
 name wall
 face swall_5.111
-x 6
-y 11
 speed 0.500000
 connected 11
+x 6
+y 11
 end
 arch cobblestones
 x 6
@@ -1030,12 +1032,12 @@ arch cobblestones
 x 7
 end
 arch button_plate
-x 7
 connected 11
+x 7
 end
 arch dun2
-x 7
 no_pass 0
+x 7
 end
 arch cobblestones
 x 7
@@ -1059,10 +1061,10 @@ x 7
 y 2
 end
 arch button_small
+invisible 1
+connected 10
 x 7
 y 2
-invisible 1
-connected 10
 end
 arch cobblestones
 x 7
@@ -1121,10 +1123,10 @@ x 7
 y 7
 end
 arch button_small
-x 7
-y 7
 invisible 1
 connected 10
+x 7
+y 7
 end
 arch cobblestones
 x 7
@@ -1163,10 +1165,10 @@ x 7
 y 11
 end
 arch button_small
-x 7
-y 11
 invisible 1
 connected 10
+x 7
+y 11
 end
 arch cobblestones
 x 7
@@ -1196,17 +1198,17 @@ arch cobblestones
 x 8
 end
 arch spikes_open
-x 8
 speed 0.500000
 value 1
 connected 10
+x 8
 end
 arch boulder
 x 8
 end
 arch dun2
-x 8
 no_pass 0
+x 8
 end
 arch cobblestones
 x 8
@@ -1258,10 +1260,10 @@ x 8
 y 5
 end
 arch button_small
-x 8
-y 5
 invisible 1
 connected 10
+x 8
+y 5
 end
 arch cobblestones
 x 8
@@ -1324,10 +1326,10 @@ x 8
 y 9
 end
 arch button_small
-x 8
-y 9
 invisible 1
 connected 10
+x 8
+y 9
 end
 arch cobblestones
 x 8
@@ -1378,10 +1380,10 @@ x 8
 y 14
 end
 arch button_small
-x 8
-y 14
 invisible 1
 connected 10
+x 8
+y 14
 end
 arch marble
 x 8
@@ -1419,10 +1421,10 @@ x 9
 y 2
 end
 arch button_small
-x 9
-y 2
 invisible 1
 connected 10
+x 9
+y 2
 end
 arch cobblestones
 x 9
@@ -1545,10 +1547,10 @@ x 9
 y 12
 end
 arch button_small
-x 9
-y 12
 invisible 1
 connected 10
+x 9
+y 12
 end
 arch marble
 x 9
@@ -1614,10 +1616,10 @@ x 10
 y 4
 end
 arch button_small
-x 10
-y 4
 invisible 1
 connected 10
+x 10
+y 4
 end
 arch cobblestones
 x 10
@@ -1660,10 +1662,10 @@ x 10
 y 8
 end
 arch button_small
-x 10
-y 8
 invisible 1
 connected 10
+x 10
+y 8
 end
 arch cobblestones
 x 10
@@ -1722,10 +1724,10 @@ x 10
 y 14
 end
 arch button_small
-x 10
-y 14
 invisible 1
 connected 10
+x 10
+y 14
 end
 arch marble
 x 10
@@ -1884,20 +1886,20 @@ x 12
 y 1
 end
 arch block_door_closed
-x 12
-y 1
 speed 0.500000
 connected 4
+x 12
+y 1
 end
 arch cobblestones
 x 12
 y 2
 end
 arch block_door_closed
-x 12
-y 2
 speed 0.500000
 connected 4
+x 12
+y 2
 end
 arch cobblestones
 x 12
@@ -1928,14 +1930,14 @@ x 12
 y 6
 end
 arch button_lever
+connected 3
 x 12
 y 6
-connected 3
 end
 arch dun14
+no_pass 0
 x 12
 y 6
-no_pass 0
 end
 arch cobblestones
 x 12
@@ -1958,14 +1960,14 @@ x 12
 y 9
 end
 arch button_lever
+connected 1
 x 12
 y 9
-connected 1
 end
 arch dun14
+no_pass 0
 x 12
 y 9
-no_pass 0
 end
 arch cobblestones
 x 12
@@ -2016,14 +2018,14 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 13
 y 1
-no_pass 0
 end
 arch mover_3
+attacktype 1
 x 13
 y 1
-attacktype 1
 end
 arch cobblestones
 x 13
@@ -2032,14 +2034,14 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 13
 y 2
-no_pass 0
 end
 arch mover_2
+attacktype 1
 x 13
 y 2
-attacktype 1
 end
 arch cobblestones
 x 13
@@ -2048,30 +2050,30 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 13
 y 3
-no_pass 0
 end
 arch cobblestones
 x 13
 y 4
 end
 arch block_door_open
-x 13
-y 4
 speed 0.500000
 value 1
 connected 4
+x 13
+y 4
 end
 arch cobblestones
 x 13
 y 5
 end
 arch block_door_closed
-x 13
-y 5
 speed 0.500000
 connected 3
+x 13
+y 5
 end
 arch cobblestones
 x 13
@@ -2088,31 +2090,31 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 13
 y 6
-no_pass 0
 end
 arch cobblestones
 x 13
 y 7
 end
 arch block_door_open
-x 13
-y 7
 speed 0.500000
 value 1
 connected 3
+x 13
+y 7
 end
 arch cobblestones
 x 13
 y 8
 end
 arch block_door_open
-x 13
-y 8
 speed 0.500000
 value 1
 connected 1
+x 13
+y 8
 end
 arch cobblestones
 x 13
@@ -2121,38 +2123,38 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 13
 y 9
-no_pass 0
 end
 arch cobblestones
 x 13
 y 10
 end
 arch block_door_closed
-x 13
-y 10
 speed 0.500000
 connected 1
+x 13
+y 10
 end
 arch cobblestones
 x 13
 y 11
 end
 arch block_door_closed
-x 13
-y 11
 speed 0.500000
 connected 1
+x 13
+y 11
 end
 arch magic_ear
 msg
 @match ebonytiger|Ebony|ebony
 Click.
 endmsg
+connected 1
 x 13
 y 12
-connected 1
 end
 arch cobblestones2
 x 13
@@ -2160,12 +2162,7 @@ y 12
 end
 arch dun12
 name A huge black tiger carved in the stone wall
-msg
-@match *
-  I need the right word. 
-  The symbol of the guild
-endmsg
-face panther.111
+face panther.171
 x 13
 y 12
 end
@@ -2175,8 +2172,8 @@ y 13
 end
 arch stair_up
 name small pool
-slaying ../small_buildings/hut_Galmorus
 face blake_0.111
+slaying ../small_buildings/hut_Galmorus
 hp 9
 sp 20
 x 13
@@ -2197,9 +2194,9 @@ msg
 @match Yes|yes
 Click.
 endmsg
+connected 4
 x 14
 y 1
-connected 4
 end
 arch cobblestones
 x 14
@@ -2213,10 +2210,10 @@ You will find out ... hee ..
 Well I can give you few lucky numbers
 if you want.
 @match lucky|number
-I will tell you the first three. You 
+I will tell you the first three. You
 have to find out the rest yourself.
 Now listen:
-	10, 5 and 2.
+10, 5 and 2.
 Now do you intend to take the test?
 @match yes|Yes
 So be it!
@@ -2226,12 +2223,12 @@ Now be warned and go back.
 If you intend to go in. You must have
 pass the test.
 endmsg
-hp 500
-x 14
-y 1
 type 0
+hp 500
 monster 1
 unaggressive 1
+x 14
+y 1
 arch poisoning
 end
 arch skill_stealing
@@ -2246,14 +2243,14 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 14
 y 2
-no_pass 0
 end
 arch mover_1
+attacktype 1
 x 14
 y 2
-attacktype 1
 end
 arch cobblestones
 x 14
@@ -2262,30 +2259,30 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 14
 y 3
-no_pass 0
 end
 arch cobblestones
 x 14
 y 4
 end
 arch block_door_open
-x 14
-y 4
 speed 0.500000
 value 1
 connected 4
+x 14
+y 4
 end
 arch cobblestones
 x 14
 y 5
 end
 arch block_door_closed
-x 14
-y 5
 speed 0.500000
 connected 3
+x 14
+y 5
 end
 arch cobblestones
 x 14
@@ -2294,31 +2291,31 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 14
 y 6
-no_pass 0
 end
 arch cobblestones
 x 14
 y 7
 end
 arch block_door_open
-x 14
-y 7
 speed 0.500000
 value 1
 connected 3
+x 14
+y 7
 end
 arch cobblestones
 x 14
 y 8
 end
 arch block_door_open
-x 14
-y 8
 speed 0.500000
 value 1
 connected 1
+x 14
+y 8
 end
 arch cobblestones
 x 14
@@ -2339,29 +2336,29 @@ end
 arch statue
 name illusionary bat screeches pass
 face giant_bat.111
+no_pass 0
 x 14
 y 9
-no_pass 0
 end
 arch cobblestones
 x 14
 y 10
 end
 arch block_door_closed
-x 14
-y 10
 speed 0.500000
 connected 1
+x 14
+y 10
 end
 arch cobblestones
 x 14
 y 11
 end
 arch block_door_closed
-x 14
-y 11
 speed 0.500000
 connected 1
+x 14
+y 11
 end
 arch cobblestones2
 x 14
@@ -2372,28 +2369,28 @@ name small pond
 msg
 You find nothing interesting here
 endmsg
+no_pass 0
 x 14
 y 13
-no_pass 0
 end
 arch teleporter
 slaying entrance1
 hp 1
 sp 2
-x 14
-y 13
 invisible 1
 connected 19
+x 14
+y 13
 end
 arch locked_door1
-slaying Thievery
 msg
 You need the symbol of the guild to use
 this guild facility.
 endmsg
+slaying Thievery
+invisible 1
 x 14
 y 13
-invisible 1
 end
 arch grass
 x 14

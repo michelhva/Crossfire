@@ -5,53 +5,105 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 28 22:47:14 1995
 endmsg
+width 16
+height 16
+end
+arch dungeon_floor
 end
 arch dun10
+end
+arch dungeon_floor
+y 1
 end
 arch dun3
 y 1
 end
+arch dungeon_floor
+y 2
+end
 arch dun3
 y 2
+end
+arch dungeon_floor
+y 3
 end
 arch dun3
 y 3
 end
+arch dungeon_floor
+y 4
+end
 arch dun3
 y 4
+end
+arch dungeon_floor
+y 5
 end
 arch dun3
 y 5
 end
+arch dungeon_floor
+y 6
+end
 arch dun3
 y 6
+end
+arch dungeon_floor
+y 7
 end
 arch dun3
 y 7
 end
+arch dungeon_floor
+y 8
+end
 arch dun3
 y 8
+end
+arch dungeon_floor
+y 9
 end
 arch dun3
 y 9
 end
+arch dungeon_floor
+y 10
+end
 arch dun3
 y 10
+end
+arch dungeon_floor
+y 11
 end
 arch dun3
 y 11
 end
+arch dungeon_floor
+y 12
+end
 arch dun3
 y 12
+end
+arch dungeon_floor
+y 13
 end
 arch dun3
 y 13
 end
+arch dungeon_floor
+y 14
+end
 arch dun3
 y 14
 end
+arch dungeon_floor
+y 15
+end
 arch dun4
 y 15
+end
+arch dungeon_floor
+x 1
 end
 arch dun2
 x 1
@@ -61,9 +113,9 @@ x 1
 y 1
 end
 arch button_handle
+connected 1
 x 1
 y 1
-connected 1
 end
 arch guard
 x 1
@@ -78,10 +130,10 @@ x 1
 y 3
 end
 arch grate_closed_1
-x 1
-y 3
 speed 0.500000
 connected 1
+x 1
+y 3
 end
 arch dungeon_floor
 x 1
@@ -103,6 +155,10 @@ end
 arch dungeon_floor
 x 1
 y 7
+end
+arch dungeon_floor
+x 1
+y 8
 end
 arch swall_2_1_2
 x 1
@@ -129,23 +185,30 @@ x 1
 y 13
 end
 arch grate_closed_1
-x 1
-y 13
 speed 0.500000
 connected 8
+x 1
+y 13
 end
 arch dungeon_floor
 x 1
 y 14
 end
 arch button_handle
+connected 8
 x 1
 y 14
-connected 8
+end
+arch dungeon_floor
+x 1
+y 15
 end
 arch dun2
 x 1
 y 15
+end
+arch dungeon_floor
+x 2
 end
 arch dun2
 x 2
@@ -161,6 +224,10 @@ end
 arch dungeon_floor
 x 2
 y 2
+end
+arch dungeon_floor
+x 2
+y 3
 end
 arch swall_2_2_2
 x 2
@@ -197,6 +264,10 @@ end
 arch swall_2_1_1
 x 2
 y 7
+end
+arch dungeon_floor
+x 2
+y 8
 end
 arch swall_3_1
 x 2
@@ -230,9 +301,16 @@ arch dungeon_floor
 x 2
 y 14
 end
+arch dungeon_floor
+x 2
+y 15
+end
 arch dun2
 x 2
 y 15
+end
+arch dungeon_floor
+x 3
 end
 arch dun2
 x 3
@@ -248,6 +326,10 @@ end
 arch dungeon_floor
 x 3
 y 2
+end
+arch dungeon_floor
+x 3
+y 3
 end
 arch swall_1_3
 x 3
@@ -268,6 +350,10 @@ end
 arch dungeon_floor
 x 3
 y 7
+end
+arch dungeon_floor
+x 3
+y 8
 end
 arch swall_2_1_2
 x 3
@@ -301,9 +387,16 @@ arch dungeon_floor
 x 3
 y 14
 end
+arch dungeon_floor
+x 3
+y 15
+end
 arch dun2
 x 3
 y 15
+end
+arch dungeon_floor
+x 4
 end
 arch dun2
 x 4
@@ -313,9 +406,9 @@ x 4
 y 1
 end
 arch button_handle
+connected 2
 x 4
 y 1
-connected 2
 end
 arch guard
 x 4
@@ -330,10 +423,10 @@ x 4
 y 3
 end
 arch grate_closed_1
-x 4
-y 3
 speed 0.500000
 connected 2
+x 4
+y 3
 end
 arch dungeon_floor
 x 4
@@ -350,6 +443,10 @@ end
 arch dungeon_floor
 x 4
 y 7
+end
+arch dungeon_floor
+x 4
+y 8
 end
 arch swall_3_3
 x 4
@@ -399,9 +496,16 @@ arch dungeon_floor
 x 4
 y 14
 end
+arch dungeon_floor
+x 4
+y 15
+end
 arch dun2
 x 4
 y 15
+end
+arch dungeon_floor
+x 5
 end
 arch dun2
 x 5
@@ -418,25 +522,49 @@ arch dungeon_floor
 x 5
 y 2
 end
+arch dungeon_floor
+x 5
+y 3
+end
 arch swall_2_2_2
 x 5
 y 3
 end
-arch swall_2_1_1
+arch dungeon_floor
 x 5
 y 4
 end
 arch swall_2_1_1
 x 5
+y 4
+end
+arch dungeon_floor
+x 5
 y 5
 end
 arch swall_2_1_1
+x 5
+y 5
+end
+arch dungeon_floor
 x 5
 y 6
 end
 arch swall_2_1_1
 x 5
+y 6
+end
+arch dungeon_floor
+x 5
 y 7
+end
+arch swall_2_1_1
+x 5
+y 7
+end
+arch dungeon_floor
+x 5
+y 8
 end
 arch swall_3_1
 x 5
@@ -470,9 +598,16 @@ arch dungeon_floor
 x 5
 y 14
 end
+arch dungeon_floor
+x 5
+y 15
+end
 arch dun2
 x 5
 y 15
+end
+arch dungeon_floor
+x 6
 end
 arch dun2
 x 6
@@ -489,9 +624,9 @@ x 6
 y 1
 end
 arch button_handle
+connected 3
 x 6
 y 1
-connected 3
 end
 arch guard
 x 6
@@ -507,6 +642,10 @@ end
 arch dungeon_floor
 x 6
 y 2
+end
+arch dungeon_floor
+x 6
+y 3
 end
 arch swall_1_3
 x 6
@@ -527,6 +666,10 @@ end
 arch dungeon_floor
 x 6
 y 7
+end
+arch dungeon_floor
+x 6
+y 8
 end
 arch swall_2_1_2
 x 6
@@ -553,26 +696,37 @@ x 6
 y 13
 end
 arch grate_closed_1
-x 6
-y 13
 speed 0.500000
 connected 7
+x 6
+y 13
 end
 arch dungeon_floor
 x 6
 y 14
 end
 arch button_handle
+connected 7
 x 6
 y 14
-connected 7
+end
+arch dungeon_floor
+x 6
+y 15
 end
 arch dun2
 x 6
 y 15
 end
+arch dungeon_floor
+x 7
+end
 arch dun2
 x 7
+end
+arch dungeon_floor
+x 7
+y 1
 end
 arch stair_3_up
 slaying prison0
@@ -597,10 +751,10 @@ x 7
 y 3
 end
 arch grate_closed_1
-x 7
-y 3
 speed 0.500000
 connected 3
+x 7
+y 3
 end
 arch dungeon_floor
 x 7
@@ -618,25 +772,49 @@ arch dungeon_floor
 x 7
 y 7
 end
+arch dungeon_floor
+x 7
+y 8
+end
 arch swall_3_3
 x 7
 y 8
 end
-arch swall_2_1_1
+arch dungeon_floor
 x 7
 y 9
 end
 arch swall_2_1_1
 x 7
+y 9
+end
+arch dungeon_floor
+x 7
 y 10
+end
+arch swall_2_1_1
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 11
 end
 arch swall_3_2
 x 7
 y 11
 end
+arch dungeon_floor
+x 7
+y 12
+end
 arch swall_2_1_1
 x 7
 y 12
+end
+arch dungeon_floor
+x 7
+y 13
 end
 arch swall_2_2_1
 x 7
@@ -646,12 +824,23 @@ arch dungeon_floor
 x 7
 y 14
 end
-arch dun2
+arch dungeon_floor
 x 7
 y 15
 end
 arch dun2
+x 7
+y 15
+end
+arch dungeon_floor
 x 8
+end
+arch dun2
+x 8
+end
+arch dungeon_floor
+x 8
+y 1
 end
 arch stair_3_up
 slaying prison0
@@ -671,6 +860,10 @@ arch dungeon_floor
 x 8
 y 2
 end
+arch dungeon_floor
+x 8
+y 3
+end
 arch swall_3_3
 x 8
 y 3
@@ -706,6 +899,10 @@ end
 arch swall_2_1_1
 x 8
 y 7
+end
+arch dungeon_floor
+x 8
+y 8
 end
 arch swall_3_1
 x 8
@@ -747,9 +944,16 @@ arch dungeon_floor
 x 8
 y 14
 end
+arch dungeon_floor
+x 8
+y 15
+end
 arch dun2
 x 8
 y 15
+end
+arch dungeon_floor
+x 9
 end
 arch dun2
 x 9
@@ -766,9 +970,9 @@ x 9
 y 1
 end
 arch button_handle
+connected 4
 x 9
 y 1
-connected 4
 end
 arch guard
 x 9
@@ -790,10 +994,10 @@ x 9
 y 3
 end
 arch grate_closed_1
-x 9
-y 3
 speed 0.500000
 connected 4
+x 9
+y 3
 end
 arch dungeon_floor
 x 9
@@ -810,6 +1014,10 @@ end
 arch dungeon_floor
 x 9
 y 7
+end
+arch dungeon_floor
+x 9
+y 8
 end
 arch swall_2_1_2
 x 9
@@ -847,9 +1055,16 @@ arch dungeon_floor
 x 9
 y 14
 end
+arch dungeon_floor
+x 9
+y 15
+end
 arch dun2
 x 9
 y 15
+end
+arch dungeon_floor
+x 10
 end
 arch dun2
 x 10
@@ -865,6 +1080,10 @@ end
 arch dungeon_floor
 x 10
 y 2
+end
+arch dungeon_floor
+x 10
+y 3
 end
 arch swall_1_4
 x 10
@@ -886,6 +1105,10 @@ arch dungeon_floor
 x 10
 y 7
 end
+arch dungeon_floor
+x 10
+y 8
+end
 arch swall_2_1_2
 x 10
 y 8
@@ -922,9 +1145,16 @@ arch dungeon_floor
 x 10
 y 14
 end
+arch dungeon_floor
+x 10
+y 15
+end
 arch dun2
 x 10
 y 15
+end
+arch dungeon_floor
+x 11
 end
 arch dun2
 x 11
@@ -941,49 +1171,89 @@ arch dungeon_floor
 x 11
 y 2
 end
+arch dungeon_floor
+x 11
+y 3
+end
 arch swall_2_2_3
 x 11
 y 3
 end
-arch swall_2_1_1
+arch dungeon_floor
 x 11
 y 4
 end
 arch swall_2_1_1
 x 11
+y 4
+end
+arch dungeon_floor
+x 11
 y 5
 end
 arch swall_2_1_1
+x 11
+y 5
+end
+arch dungeon_floor
 x 11
 y 6
 end
 arch swall_2_1_1
 x 11
+y 6
+end
+arch dungeon_floor
+x 11
 y 7
+end
+arch swall_2_1_1
+x 11
+y 7
+end
+arch dungeon_floor
+x 11
+y 8
 end
 arch swall_3_4
 x 11
 y 8
 end
+arch dungeon_floor
+x 11
+y 9
+end
 arch swall_1_2
 x 11
 y 9
 end
-arch grate_closed_2
+arch dungeon_floor
 x 11
 y 10
+end
+arch grate_closed_2
 speed 0.500000
 connected 5
+x 11
+y 10
+end
+arch dungeon_floor
+x 11
+y 11
 end
 arch swall_2_2_3
 x 11
 y 11
 end
-arch grate_closed_2
+arch dungeon_floor
 x 11
 y 12
+end
+arch grate_closed_2
 speed 0.500000
 connected 6
+x 11
+y 12
 end
 arch dungeon_floor
 x 11
@@ -997,11 +1267,18 @@ arch dungeon_floor
 x 11
 y 14
 end
-arch dun2
+arch dungeon_floor
 x 11
 y 15
 end
 arch dun2
+x 11
+y 15
+end
+arch dungeon_floor
+x 12
+end
+arch dun2
 x 12
 end
 arch dungeon_floor
@@ -1064,9 +1341,16 @@ arch dungeon_floor
 x 12
 y 14
 end
+arch dungeon_floor
+x 12
+y 15
+end
 arch dun2
 x 12
 y 15
+end
+arch dungeon_floor
+x 13
 end
 arch dun2
 x 13
@@ -1148,9 +1432,9 @@ x 13
 y 10
 end
 arch button_handle
-x 13
-y 10
 connected 5
+x 13
+y 10
 end
 arch guard
 x 13
@@ -1169,9 +1453,9 @@ x 13
 y 12
 end
 arch button_handle
-x 13
-y 12
 connected 6
+x 13
+y 12
 end
 arch guard
 x 13
@@ -1192,132 +1476,262 @@ end
 arch guard
 x 13
 y 14
+end
+arch dungeon_floor
+x 13
+y 15
 end
 arch dun2
 x 13
 y 15
+end
+arch dungeon_floor
+x 14
 end
 arch dun16
 x 14
 end
-arch dun11
+arch dungeon_floor
 x 14
 y 1
 end
 arch dun11
 x 14
+y 1
+end
+arch dungeon_floor
+x 14
 y 2
 end
 arch dun11
+x 14
+y 2
+end
+arch dungeon_floor
 x 14
 y 3
 end
 arch dun11
 x 14
+y 3
+end
+arch dungeon_floor
+x 14
 y 4
 end
 arch dun11
+x 14
+y 4
+end
+arch dungeon_floor
 x 14
 y 5
 end
 arch dun11
 x 14
+y 5
+end
+arch dungeon_floor
+x 14
 y 6
 end
 arch dun11
+x 14
+y 6
+end
+arch dungeon_floor
 x 14
 y 7
 end
 arch dun11
 x 14
+y 7
+end
+arch dungeon_floor
+x 14
 y 8
 end
 arch dun11
+x 14
+y 8
+end
+arch dungeon_floor
 x 14
 y 9
 end
 arch dun11
 x 14
+y 9
+end
+arch dungeon_floor
+x 14
 y 10
 end
 arch dun11
+x 14
+y 10
+end
+arch dungeon_floor
 x 14
 y 11
 end
 arch dun11
 x 14
+y 11
+end
+arch dungeon_floor
+x 14
 y 12
 end
 arch dun11
+x 14
+y 12
+end
+arch dungeon_floor
 x 14
 y 13
 end
 arch dun11
 x 14
+y 13
+end
+arch dungeon_floor
+x 14
 y 14
+end
+arch dun11
+x 14
+y 14
+end
+arch dungeon_floor
+x 14
+y 15
 end
 arch dun13
 x 14
 y 15
 end
+arch dungeon_floor
+x 15
+end
 arch dun9
 x 15
 end
-arch dun14
+arch dungeon_floor
 x 15
 y 1
 end
 arch dun14
 x 15
+y 1
+end
+arch dungeon_floor
+x 15
 y 2
 end
 arch dun14
+x 15
+y 2
+end
+arch dungeon_floor
 x 15
 y 3
 end
 arch dun14
 x 15
+y 3
+end
+arch dungeon_floor
+x 15
 y 4
 end
 arch dun14
+x 15
+y 4
+end
+arch dungeon_floor
 x 15
 y 5
 end
 arch dun14
 x 15
+y 5
+end
+arch dungeon_floor
+x 15
 y 6
 end
 arch dun14
+x 15
+y 6
+end
+arch dungeon_floor
 x 15
 y 7
 end
 arch dun14
 x 15
+y 7
+end
+arch dungeon_floor
+x 15
 y 8
 end
 arch dun14
+x 15
+y 8
+end
+arch dungeon_floor
 x 15
 y 9
 end
 arch dun14
 x 15
+y 9
+end
+arch dungeon_floor
+x 15
 y 10
 end
 arch dun14
+x 15
+y 10
+end
+arch dungeon_floor
 x 15
 y 11
 end
 arch dun14
 x 15
+y 11
+end
+arch dungeon_floor
+x 15
 y 12
 end
 arch dun14
+x 15
+y 12
+end
+arch dungeon_floor
 x 15
 y 13
 end
 arch dun14
 x 15
+y 13
+end
+arch dungeon_floor
+x 15
 y 14
+end
+arch dun14
+x 15
+y 14
+end
+arch dungeon_floor
+x 15
+y 15
 end
 arch dun7
 x 15
@@ -1327,74 +1741,34 @@ arch titan
 x 2
 y 10
 end
-More
-arch titan_2
-x 1
-y 10
-end
-More
-arch titan_3
-x 1
-y 9
-end
-More
-arch titan_4
-x 2
-y 9
-end
-More
-arch titan_5
-x 3
-y 9
-end
-More
-arch titan_6
-x 3
-y 10
-end
-More
-arch titan_7
-x 3
-y 11
-end
-More
-arch titan_8
-x 2
-y 11
-end
-More
-arch titan_9
-x 1
-y 11
-end
 arch dragonman
 name dragonman mercenary
 msg
 @match Hello|hello
-  What do you want to ask me about?
-  Where am i from? what's my business
-here? 
-  Well, I can tell you the truth as I
+What do you want to ask me about?
+Where am i from? what's my business
+here?
+Well, I can tell you the truth as I
 have told the others wormheads, who
 doesn't seem to comprehend the power
 of the force of chaos.
 @match from|where
-  I was under the command of chaos lord
+I was under the command of chaos lord
 himself. Our lord is going to come soon
 to visit this land. If you don't want
 his wrath upon this fortress. You'd
 better tell lord, Butakis to release me
 and my companions.
-   The pet division will be on the way
+The pet division will be on the way
 soon to visit the fortress.
 @match pet|division
-  Pet division is the division of our
+Pet division is the division of our
 metallic serpents under the command of
-lesser chaos lords in the northeast 
+lesser chaos lords in the northeast
 mountains.
 @match purpose|business
-  I am here to deliver the notice from
-our lord to lord Butakis; as this is 
+I am here to deliver the notice from
+our lord to lord Butakis; as this is
 his last chance to join us to conquest
 the land cross the sea.
 @match *
@@ -1403,41 +1777,34 @@ endmsg
 x 4
 y 5
 end
-More
-arch dragonman_2
-name dragonman mercenary
-hp 3500
-x 4
-y 6
-end
 arch dragonman
 name dragonman mercenary
 msg
 @match Hello|hello
-  What do you want to ask me about?
-  Where am i from? what's my business
-here? 
-  Well, I can tell you the truth as I
+What do you want to ask me about?
+Where am i from? what's my business
+here?
+Well, I can tell you the truth as I
 have told the others wormheads, who
 doesn't seem to comprehend the power
 of the force of chaos.
 @match from|where
-  I was under the command of chaos lord
+I was under the command of chaos lord
 himself. Our lord is going to come soon
 to visit this land. If you don't want
 his wrath upon this fortress. You'd
 better tell lord, Butakis to release me
 and my companions.
-   The pet division will be on the way
+The pet division will be on the way
 soon to visit the fortress.
 @match pet|division
-  Pet division is the division of our
+Pet division is the division of our
 metallic serpents under the command of
-lesser chaos lords in the northeast 
+lesser chaos lords in the northeast
 mountains.
 @match purpose|business
-  I am here to deliver the notice from
-our lord to lord Butakis; as this is 
+I am here to deliver the notice from
+our lord to lord Butakis; as this is
 his last chance to join us to conquest
 the land cross the sea.
 @match *
@@ -1446,41 +1813,34 @@ endmsg
 x 5
 y 9
 end
-More
-arch dragonman_2
-name dragonman mercenary
-hp 3500
-x 5
-y 10
-end
 arch dragonman
 name dragonman mercenary
 msg
 @match Hello|hello
-  What do you want to ask me about?
-  Where am i from? what's my business
-here? 
-  Well, I can tell you the truth as I
+What do you want to ask me about?
+Where am i from? what's my business
+here?
+Well, I can tell you the truth as I
 have told the others wormheads, who
 doesn't seem to comprehend the power
 of the force of chaos.
 @match from|where
-  I was under the command of chaos lord
+I was under the command of chaos lord
 himself. Our lord is going to come soon
 to visit this land. If you don't want
 his wrath upon this fortress. You'd
 better tell lord, Butakis to release me
 and my companions.
-   The pet division will be on the way
+The pet division will be on the way
 soon to visit the fortress.
 @match pet|division
-  Pet division is the division of our
+Pet division is the division of our
 metallic serpents under the command of
-lesser chaos lords in the northeast 
+lesser chaos lords in the northeast
 mountains.
 @match purpose|business
-  I am here to deliver the notice from
-our lord to lord Butakis; as this is 
+I am here to deliver the notice from
+our lord to lord Butakis; as this is
 his last chance to join us to conquest
 the land cross the sea.
 @match *
@@ -1488,51 +1848,39 @@ Hmmm . another wormhead
 endmsg
 x 7
 y 4
-end
-More
-arch dragonman_2
-name dragonman mercenary
-hp 3500
-x 7
-y 5
 end
 arch sphinx
 x 8
 y 10
 end
-More
-arch sphinx_2
-x 9
-y 10
-end
 arch dragonman
 name dragonman mercenary
 msg
 @match Hello|hello
-  What do you want to ask me about?
-  Where am i from? what's my business
-here? 
-  Well, I can tell you the truth as I
+What do you want to ask me about?
+Where am i from? what's my business
+here?
+Well, I can tell you the truth as I
 have told the others wormheads, who
 doesn't seem to comprehend the power
 of the force of chaos.
 @match from|where
-  I was under the command of chaos lord
+I was under the command of chaos lord
 himself. Our lord is going to come soon
 to visit this land. If you don't want
 his wrath upon this fortress. You'd
 better tell lord, Butakis to release me
 and my companions.
-   The pet division will be on the way
+The pet division will be on the way
 soon to visit the fortress.
 @match pet|division
-  Pet division is the division of our
+Pet division is the division of our
 metallic serpents under the command of
-lesser chaos lords in the northeast 
+lesser chaos lords in the northeast
 mountains.
 @match purpose|business
-  I am here to deliver the notice from
-our lord to lord Butakis; as this is 
+I am here to deliver the notice from
+our lord to lord Butakis; as this is
 his last chance to join us to conquest
 the land cross the sea.
 @match *
@@ -1540,11 +1888,4 @@ Hmmm . another wormhead
 endmsg
 x 10
 y 4
-end
-More
-arch dragonman_2
-name dragonman mercenary
-hp 3500
-x 10
-y 5
 end

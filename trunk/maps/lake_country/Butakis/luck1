@@ -2556,16 +2556,13 @@ x 11
 y 9
 level 20
 carrying 5000
-arch pyro_book
+arch book
 name Fire red spellbook
-value 1600
 msg
 Create a comet that goes in straight
 line. It hit for weaponmagic
 endmsg
-value 1600
-arch spell_comet
-end
+sp 90
 end
 end
 arch woodfloor
@@ -3210,20 +3207,20 @@ monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch sorcerer_book
-value 1200
-arch spell_invisible
+arch book
+sp 26
 end
+arch ability_fear
 end
-arch abil_fear
+arch ability_forced_dance
 end
-arch spell_mass_confusion
+arch ability_mass_confusion
 end
-arch spell_sm_lightning
+arch ability_lightning
 end
-arch abil_icestorm
+arch ability_cold
 end
-arch spell_dragonbreath
+arch ability_dragon
 end
 end
 arch dungeon_magic

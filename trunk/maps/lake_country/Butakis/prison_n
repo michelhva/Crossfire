@@ -5,54 +5,106 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Mar 29 00:31:24 1995
 endmsg
+width 16
+height 16
+end
+arch dungeon_floor
 end
 arch dun10
+end
+arch dungeon_floor
+y 1
 end
 arch dun3
 y 1
 end
+arch dungeon_floor
+y 2
+end
 arch dun3
 y 2
+end
+arch dungeon_floor
+y 3
 end
 arch dun3
 y 3
 end
+arch dungeon_floor
+y 4
+end
 arch dun11
 y 4
+end
+arch dungeon_floor
+y 5
 end
 arch dun3
 y 5
 end
+arch dungeon_floor
+y 6
+end
 arch dun3
 y 6
+end
+arch dungeon_floor
+y 7
 end
 arch dun11
 y 7
 end
+arch dungeon_floor
+y 8
+end
 arch dun3
 y 8
+end
+arch dungeon_floor
+y 9
 end
 arch dun3
 y 9
 end
+arch dungeon_floor
+y 10
+end
 arch dun3
 y 10
+end
+arch dungeon_floor
+y 11
 end
 arch dun11
 y 11
 end
+arch dungeon_floor
+y 12
+end
 arch dun3
 y 12
+end
+arch dungeon_floor
+y 13
 end
 arch dun3
 y 13
 end
+arch dungeon_floor
+y 14
+end
 arch dun3
 y 14
+end
+arch dungeon_floor
+y 15
 end
 arch dun4
 y 15
 end
+arch dungeon_floor
+x 1
+end
 arch dun2
 x 1
 end
@@ -68,6 +120,10 @@ arch dungeon_floor
 x 1
 y 3
 end
+arch dungeon_floor
+x 1
+y 4
+end
 arch dun2
 x 1
 y 4
@@ -79,6 +135,10 @@ end
 arch dungeon_floor
 x 1
 y 6
+end
+arch dungeon_floor
+x 1
+y 7
 end
 arch dun2
 x 1
@@ -116,6 +176,9 @@ arch dun2
 x 1
 y 15
 end
+arch dungeon_floor
+x 2
+end
 arch dun2
 x 2
 end
@@ -131,6 +194,10 @@ arch dungeon_floor
 x 2
 y 3
 end
+arch dungeon_floor
+x 2
+y 4
+end
 arch dun2
 x 2
 y 4
@@ -142,6 +209,10 @@ end
 arch dungeon_floor
 x 2
 y 6
+end
+arch dungeon_floor
+x 2
+y 7
 end
 arch dun2
 x 2
@@ -179,6 +250,9 @@ arch dun2
 x 2
 y 15
 end
+arch dungeon_floor
+x 3
+end
 arch dun2
 x 3
 end
@@ -189,10 +263,18 @@ end
 arch dungeon_floor
 x 3
 y 2
+end
+arch dungeon_floor
+x 3
+y 3
 end
 arch dun10
 x 3
 y 3
+end
+arch dungeon_floor
+x 3
+y 4
 end
 arch dun7
 x 3
@@ -206,6 +288,10 @@ arch dungeon_floor
 x 3
 y 6
 end
+arch dungeon_floor
+x 3
+y 7
+end
 arch dun2
 x 3
 y 7
@@ -241,6 +327,9 @@ end
 arch dun2
 x 3
 y 15
+end
+arch dungeon_floor
+x 4
 end
 arch dun2
 x 4
@@ -253,6 +342,10 @@ arch dungeon_floor
 x 4
 y 2
 end
+arch dungeon_floor
+x 4
+y 3
+end
 arch dun2
 x 4
 y 3
@@ -262,9 +355,9 @@ x 4
 y 4
 end
 arch mover_1
+attacktype 1
 x 4
 y 5
-attacktype 1
 end
 arch dungeon_floor
 x 4
@@ -273,6 +366,10 @@ end
 arch dungeon_floor
 x 4
 y 6
+end
+arch dungeon_floor
+x 4
+y 7
 end
 arch dun2
 x 4
@@ -309,6 +406,9 @@ end
 arch dun2
 x 4
 y 15
+end
+arch dungeon_floor
+x 5
 end
 arch dun2
 x 5
@@ -321,6 +421,10 @@ arch dungeon_floor
 x 5
 y 2
 end
+arch dungeon_floor
+x 5
+y 3
+end
 arch dun2
 x 5
 y 3
@@ -330,9 +434,9 @@ x 5
 y 4
 end
 arch mover_1
+attacktype 1
 x 5
 y 5
-attacktype 1
 end
 arch dungeon_floor
 x 5
@@ -341,6 +445,10 @@ end
 arch dungeon_floor
 x 5
 y 6
+end
+arch dungeon_floor
+x 5
+y 7
 end
 arch dun2
 x 5
@@ -377,6 +485,9 @@ end
 arch dun2
 x 5
 y 15
+end
+arch dungeon_floor
+x 6
 end
 arch dun2
 x 6
@@ -386,18 +497,30 @@ x 6
 y 1
 end
 arch igate_closed_2
-x 6
-y 1
 speed 0.500000
 connected 1
+x 6
+y 1
+end
+arch dungeon_floor
+x 6
+y 2
 end
 arch dun8
 x 6
 y 2
 end
+arch dungeon_floor
+x 6
+y 3
+end
 arch dun14
 x 6
 y 3
+end
+arch dungeon_floor
+x 6
+y 4
 end
 arch dun5
 x 6
@@ -408,18 +531,30 @@ x 6
 y 5
 end
 arch igate_closed_2
-x 6
-y 5
 speed 0.500000
 connected 3
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 6
 end
 arch dun8
 x 6
 y 6
 end
+arch dungeon_floor
+x 6
+y 7
+end
 arch dun14
 x 6
 y 7
+end
+arch dungeon_floor
+x 6
+y 8
 end
 arch firewall_5
 name anti-magic wall
@@ -433,18 +568,30 @@ x 6
 y 9
 end
 arch igate_closed_2
-x 6
-y 9
 speed 0.500000
 connected 4
+x 6
+y 9
+end
+arch dungeon_floor
+x 6
+y 10
 end
 arch dun8
 x 6
 y 10
 end
+arch dungeon_floor
+x 6
+y 11
+end
 arch dun14
 x 6
 y 11
+end
+arch dungeon_floor
+x 6
+y 12
 end
 arch firewall_5
 name anti-magic wall
@@ -458,18 +605,29 @@ x 6
 y 13
 end
 arch igate_closed_2
-x 6
-y 13
 speed 0.500000
 connected 5
+x 6
+y 13
+end
+arch dungeon_floor
+x 6
+y 14
 end
 arch dun8
 x 6
 y 14
 end
+arch dungeon_floor
+x 6
+y 15
+end
 arch dun13
 x 6
 y 15
+end
+arch dungeon_floor
+x 7
 end
 arch dun2
 x 7
@@ -479,9 +637,9 @@ x 7
 y 1
 end
 arch button_handle
+connected 1
 x 7
 y 1
-connected 1
 end
 arch dungeon_floor
 x 7
@@ -492,9 +650,9 @@ x 7
 y 3
 end
 arch button_handle
+connected 2
 x 7
 y 3
-connected 2
 end
 arch dungeon_floor
 x 7
@@ -505,9 +663,9 @@ x 7
 y 5
 end
 arch button_handle
+connected 3
 x 7
 y 5
-connected 3
 end
 arch dungeon_floor
 x 7
@@ -530,9 +688,9 @@ x 7
 y 10
 end
 arch button_handle
+connected 4
 x 7
 y 10
-connected 4
 end
 arch dungeon_floor
 x 7
@@ -551,20 +709,35 @@ x 7
 y 14
 end
 arch button_handle
+connected 5
 x 7
 y 14
-connected 5
+end
+arch dungeon_floor
+x 7
+y 15
 end
 arch dun2
 x 7
 y 15
 end
+arch dungeon_floor
+x 8
+end
 arch dun16
 x 8
+end
+arch dungeon_floor
+x 8
+y 1
 end
 arch dun3
 x 8
 y 1
+end
+arch dungeon_floor
+x 8
+y 2
 end
 arch firewall_7
 name anti-magic wall
@@ -578,10 +751,14 @@ x 8
 y 3
 end
 arch igate_closed_2
-x 8
-y 3
 speed 0.500000
 connected 2
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
 end
 arch firewall_7
 name anti-magic wall
@@ -590,9 +767,17 @@ dam 128
 x 8
 y 4
 end
+arch dungeon_floor
+x 8
+y 5
+end
 arch dun3
 x 8
 y 5
+end
+arch dungeon_floor
+x 8
+y 6
 end
 arch firewall_7
 name anti-magic wall
@@ -600,6 +785,10 @@ face dun_5.111
 dam 128
 x 8
 y 6
+end
+arch dungeon_floor
+x 8
+y 7
 end
 arch dun4
 x 8
@@ -653,11 +842,18 @@ arch knight
 x 8
 y 14
 end
-arch dun2
+arch dungeon_floor
 x 8
 y 15
 end
 arch dun2
+x 8
+y 15
+end
+arch dungeon_floor
+x 9
+end
+arch dun2
 x 9
 end
 arch dungeon_floor
@@ -683,6 +879,10 @@ end
 arch dungeon_floor
 x 9
 y 6
+end
+arch dungeon_floor
+x 9
+y 7
 end
 arch dun2
 x 9
@@ -735,11 +935,18 @@ end
 arch knight
 x 9
 y 14
+end
+arch dungeon_floor
+x 9
+y 15
 end
 arch dun2
 x 9
 y 15
 end
+arch dungeon_floor
+x 10
+end
 arch dun2
 x 10
 end
@@ -766,6 +973,10 @@ end
 arch dungeon_floor
 x 10
 y 6
+end
+arch dungeon_floor
+x 10
+y 7
 end
 arch dun2
 x 10
@@ -818,11 +1029,18 @@ end
 arch knight
 x 10
 y 14
+end
+arch dungeon_floor
+x 10
+y 15
 end
 arch dun2
 x 10
 y 15
 end
+arch dungeon_floor
+x 11
+end
 arch dun2
 x 11
 end
@@ -849,6 +1067,10 @@ end
 arch dungeon_floor
 x 11
 y 6
+end
+arch dungeon_floor
+x 11
+y 7
 end
 arch dun2
 x 11
@@ -901,11 +1123,18 @@ end
 arch knight
 x 11
 y 14
+end
+arch dungeon_floor
+x 11
+y 15
 end
 arch dun2
 x 11
 y 15
 end
+arch dungeon_floor
+x 12
+end
 arch dun2
 x 12
 end
@@ -932,6 +1161,10 @@ end
 arch dungeon_floor
 x 12
 y 6
+end
+arch dungeon_floor
+x 12
+y 7
 end
 arch dun2
 x 12
@@ -984,11 +1217,18 @@ end
 arch knight
 x 12
 y 14
+end
+arch dungeon_floor
+x 12
+y 15
 end
 arch dun12
 x 12
 y 15
 end
+arch dungeon_floor
+x 13
+end
 arch dun2
 x 13
 end
@@ -1015,6 +1255,10 @@ end
 arch dungeon_floor
 x 13
 y 6
+end
+arch dungeon_floor
+x 13
+y 7
 end
 arch dun2
 x 13
@@ -1067,6 +1311,10 @@ end
 arch dungeon_floor
 x 13
 y 14
+end
+arch dungeon_floor
+x 13
+y 15
 end
 arch oakdoor
 name oakdoor from maximum security cells
@@ -1075,6 +1323,9 @@ hp 4
 x 13
 y 15
 end
+arch dungeon_floor
+x 14
+end
 arch dun2
 x 14
 end
@@ -1101,6 +1352,10 @@ end
 arch dungeon_floor
 x 14
 y 6
+end
+arch dungeon_floor
+x 14
+y 7
 end
 arch dun2
 x 14
@@ -1157,6 +1412,10 @@ end
 arch dungeon_floor
 x 14
 y 14
+end
+arch dungeon_floor
+x 14
+y 15
 end
 arch oakdoor
 name oakdoor from maximum security cells
@@ -1165,64 +1424,127 @@ hp 5
 x 14
 y 15
 end
+arch dungeon_floor
+x 15
+end
 arch dun9
 x 15
 end
-arch dun3
+arch dungeon_floor
 x 15
 y 1
 end
 arch dun3
 x 15
+y 1
+end
+arch dungeon_floor
+x 15
 y 2
 end
 arch dun3
+x 15
+y 2
+end
+arch dungeon_floor
 x 15
 y 3
 end
 arch dun3
 x 15
+y 3
+end
+arch dungeon_floor
+x 15
 y 4
 end
 arch dun3
+x 15
+y 4
+end
+arch dungeon_floor
 x 15
 y 5
 end
 arch dun3
 x 15
+y 5
+end
+arch dungeon_floor
+x 15
 y 6
+end
+arch dun3
+x 15
+y 6
+end
+arch dungeon_floor
+x 15
+y 7
 end
 arch dun14
 x 15
 y 7
 end
-arch dun3
+arch dungeon_floor
 x 15
 y 8
 end
 arch dun3
 x 15
+y 8
+end
+arch dungeon_floor
+x 15
 y 9
 end
 arch dun3
+x 15
+y 9
+end
+arch dungeon_floor
 x 15
 y 10
 end
 arch dun3
 x 15
+y 10
+end
+arch dungeon_floor
+x 15
 y 11
 end
 arch dun3
+x 15
+y 11
+end
+arch dungeon_floor
 x 15
 y 12
 end
 arch dun3
 x 15
+y 12
+end
+arch dungeon_floor
+x 15
 y 13
 end
 arch dun3
 x 15
+y 13
+end
+arch dungeon_floor
+x 15
 y 14
+end
+arch dun3
+x 15
+y 14
+end
+arch dungeon_floor
+x 15
+y 15
 end
 arch dun5
 x 15
@@ -1233,344 +1555,42 @@ name Thundermate
 x 1
 y 1
 end
-More
-arch big_elec_2
-name Thundermate
-hp 3500
-x 2
-y 1
-end
-More
-arch big_elec_3
-name Thundermate
-hp 3500
-x 1
-y 2
-end
-More
-arch big_elec_4
-name Thundermate
-hp 3500
-x 2
-y 2
-end
-More
-arch big_elec_5
-name Thundermate
-hp 3500
-x 1
-y 3
-end
-More
-arch big_elec_6
-name Thundermate
-hp 3500
-x 2
-y 3
-end
 arch big_wiz
 name Fiery, Wist's fervent pupil
 hp 5500
-x 1
-y 8
 carrying 23700
 invisible 1
+x 1
+y 8
 arch chalice
 name chalice of fire
 end
-end
-More
-arch big_wiz2
-name Fiery, Wist's fervent pupil
-hp 5500
-x 2
-y 8
-invisible 1
-end
-More
-arch big_wiz3
-name Fiery, Wist's fervent pupil
-hp 5500
-x 3
-y 8
-invisible 1
-end
-More
-arch big_wiz4
-name Fiery, Wist's fervent pupil
-hp 5500
-x 1
-y 9
-invisible 1
-end
-More
-arch big_wiz5
-name Fiery, Wist's fervent pupil
-hp 5500
-x 2
-y 9
-invisible 1
-end
-More
-arch big_wiz6
-name Fiery, Wist's fervent pupil
-hp 5500
-x 3
-y 9
-invisible 1
-end
-More
-arch big_wiz7
-name Fiery, Wist's fervent pupil
-hp 5500
-x 1
-y 10
-invisible 1
-end
-More
-arch big_wiz8
-name Fiery, Wist's fervent pupil
-hp 5500
-x 2
-y 10
-invisible 1
-end
-More
-arch big_wiz9
-name Fiery, Wist's fervent pupil
-hp 5500
-x 3
-y 10
-invisible 1
 end
 arch chinese_dragon
 name Snow
 x 2
 y 5
-end
-More
-arch chinese_dragon_2
-name Snow
-hp 1000
-x 3
-y 5
-end
-More
-arch chinese_dragon_3
-name Snow
-hp 1000
-x 2
-y 6
-end
-More
-arch chinese_dragon_4
-name Snow
-hp 1000
-x 3
-y 6
 end
 arch titan
 name Tinker
 x 2
 y 13
 end
-More
-arch titan_2
-name Tinker
-hp 4000
-x 1
-y 13
-end
-More
-arch titan_3
-name Tinker
-hp 4000
-x 1
-y 12
-end
-More
-arch titan_4
-name Tinker
-hp 4000
-x 2
-y 12
-end
-More
-arch titan_5
-name Tinker
-hp 4000
-x 3
-y 12
-end
-More
-arch titan_6
-name Tinker
-hp 4000
-x 3
-y 13
-end
-More
-arch titan_7
-name Tinker
-hp 4000
-x 3
-y 14
-end
-More
-arch titan_8
-name Tinker
-hp 4000
-x 2
-y 14
-end
-More
-arch titan_9
-name Tinker
-hp 4000
-x 1
-y 14
-end
 arch chinese_dragon
 name Ice
 hp 2000
 x 4
 y 4
 end
-More
-arch chinese_dragon_2
-name Ice
-hp 2000
-x 5
-y 4
-end
-More
-arch chinese_dragon_3
-name Ice
-hp 2000
-x 4
-y 5
-end
-More
-arch chinese_dragon_4
-name Ice
-hp 2000
-x 5
-y 5
-end
 arch jessyb
 name Joey
+carrying 75
 x 11
 y 3
-carrying 75
 arch note
 msg
 My heart is held by Grunter. Help me
 get it back and I will reward you
 endmsg
 end
-end
-More
-arch jessyb_2
-name Joey
-hp 8000
-x 12
-y 3
-end
-More
-arch jessyb_3
-name Joey
-hp 8000
-x 13
-y 3
-end
-More
-arch jessyb_4
-name Joey
-hp 8000
-x 14
-y 3
-end
-More
-arch jessyb_5
-name Joey
-hp 8000
-x 11
-y 4
-end
-More
-arch jessyb_6
-name Joey
-hp 8000
-x 12
-y 4
-end
-More
-arch jessyb_7
-name Joey
-hp 8000
-x 13
-y 4
-end
-More
-arch jessyb_8
-name Joey
-hp 8000
-x 14
-y 4
-end
-More
-arch jessyb_9
-name Joey
-hp 8000
-x 11
-y 5
-end
-More
-arch jessyb_10
-name Joey
-hp 8000
-x 12
-y 5
-end
-More
-arch jessyb_11
-name Joey
-hp 8000
-x 13
-y 5
-end
-More
-arch jessyb_12
-name Joey
-hp 8000
-x 14
-y 5
-end
-More
-arch jessyb_13
-name Joey
-hp 8000
-x 11
-y 6
-end
-More
-arch jessyb_14
-name Joey
-hp 8000
-x 12
-y 6
-end
-More
-arch jessyb_15
-name Joey
-hp 8000
-x 13
-y 6
-end
-More
-arch jessyb_16
-name Joey
-hp 8000
-x 14
-y 6
 end
