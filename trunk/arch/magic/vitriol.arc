@@ -56,6 +56,6 @@ speed 0.2
 no_pick 1
 attacktype 4
 hp 60
-dam 30
+dam 15
 editable 8
 end
