@@ -409,7 +409,7 @@ elevation 7469
 x 1
 y 39
 end
-arch mountain
+arch mountain4
 elevation 7160
 x 1
 y 40
@@ -445,9 +445,9 @@ x 1
 y 46
 end
 arch treed_hills
+elevation 3183
 x 1
 y 47
-elevation 3183
 end
 arch evergreen
 elevation 2406
@@ -648,17 +648,17 @@ elevation 3917
 x 2
 y 37
 end
-arch mountain
+arch mountain4
 elevation 6048
 x 2
 y 38
 end
-arch mountain
+arch mountain4
 elevation 6536
 x 2
 y 39
 end
-arch mountain
+arch mountain4
 elevation 6876
 x 2
 y 40
@@ -694,9 +694,9 @@ x 2
 y 46
 end
 arch treed_hills
+elevation 3799
 x 2
 y 47
-elevation 3799
 end
 arch steppe
 elevation 3423
@@ -777,7 +777,7 @@ elevation 7009
 x 3
 y 13
 end
-arch mountain
+arch mountain4
 elevation 7022
 x 3
 y 14
@@ -943,19 +943,19 @@ x 3
 y 46
 end
 arch treed_hills
+elevation 4138
 x 3
 y 47
-elevation 4138
 end
 arch treed_hills
+elevation 3595
 x 3
 y 48
-elevation 3595
 end
 arch treed_hills
+elevation 4034
 x 3
 y 49
-elevation 4034
 end
 arch mountain
 elevation 6367
@@ -1026,12 +1026,12 @@ elevation 8361
 x 4
 y 13
 end
-arch mountain
+arch mountain4
 elevation 8274
 x 4
 y 14
 end
-arch mountain
+arch mountain4
 elevation 7513
 x 4
 y 15
@@ -1192,19 +1192,19 @@ x 4
 y 46
 end
 arch treed_hills
+elevation 4276
 x 4
 y 47
-elevation 4276
 end
 arch treed_hills
+elevation 3351
 x 4
 y 48
-elevation 3351
 end
 arch treed_hills
+elevation 4602
 x 4
 y 49
-elevation 4602
 end
 arch mountain
 elevation 6462
@@ -1275,7 +1275,7 @@ elevation 9052
 x 5
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 9108
 x 5
 y 14
@@ -1436,19 +1436,19 @@ x 5
 y 45
 end
 arch treed_hills
+elevation 4789
 x 5
 y 46
-elevation 4789
 end
 arch treed_hills
+elevation 3411
 x 5
 y 47
-elevation 3411
 end
 arch treed_hills
+elevation 4191
 x 5
 y 48
-elevation 4191
 end
 arch mountain
 elevation 5017
@@ -1524,7 +1524,7 @@ elevation 8348
 x 6
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 10136
 x 6
 y 14
@@ -1685,9 +1685,9 @@ x 6
 y 45
 end
 arch treed_hills
+elevation 4227
 x 6
 y 46
-elevation 4227
 end
 arch jungle_1
 elevation 2336
@@ -1763,27 +1763,27 @@ elevation 8366
 x 7
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 9706
 x 7
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 10511
 x 7
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 11383
 x 7
 y 14
 end
-arch mountain2
+arch mountain4
 elevation 11704
 x 7
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 10859
 x 7
 y 16
@@ -1803,22 +1803,22 @@ elevation 5064
 x 7
 y 19
 end
-arch mountain
+arch mountain4
 elevation 7678
 x 7
 y 20
 end
-arch mountain
+arch mountain4
 elevation 8588
 x 7
 y 21
 end
-arch mountain
+arch mountain4
 elevation 8546
 x 7
 y 22
 end
-arch mountain
+arch mountain4
 elevation 7846
 x 7
 y 23
@@ -1929,19 +1929,19 @@ x 7
 y 44
 end
 arch treed_hills
+elevation 3914
 x 7
 y 45
-elevation 3914
 end
 arch treed_hills
+elevation 3462
 x 7
 y 46
-elevation 3462
 end
 arch treed_hills
+elevation 3500
 x 7
 y 47
-elevation 3500
 end
 arch steppe
 elevation 4100
@@ -2007,12 +2007,12 @@ elevation 7654
 x 8
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 9175
 x 8
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 9964
 x 8
 y 12
@@ -2027,12 +2027,17 @@ elevation 11842
 x 8
 y 14
 end
-arch wasteland
+arch mountain
 elevation 12269
 x 8
 y 15
 end
-arch mountain2
+arch biglake_1_4
+x 8
+y 15
+elevation 12269
+end
+arch mountain4
 elevation 11047
 x 8
 y 16
@@ -2042,42 +2047,42 @@ elevation 9475
 x 8
 y 17
 end
-arch mountain
+arch mountain4
 elevation 8302
 x 8
 y 18
 end
-arch mountain
+arch mountain4
 elevation 8229
 x 8
 y 19
 end
-arch mountain
+arch mountain4
 elevation 8418
 x 8
 y 20
 end
-arch mountain
+arch mountain4
 elevation 8604
 x 8
 y 21
 end
-arch mountain
+arch mountain4
 elevation 8106
 x 8
 y 22
 end
-arch mountain
+arch mountain4
 elevation 7262
 x 8
 y 23
 end
-arch mountain
+arch mountain4
 elevation 5944
 x 8
 y 24
 end
-arch mountain
+arch mountain4
 elevation 7122
 x 8
 y 25
@@ -2198,9 +2203,9 @@ x 8
 y 48
 end
 arch treed_hills
+elevation 4465
 x 8
 y 49
-elevation 4465
 end
 arch hills_rocky
 elevation 4973
@@ -2251,7 +2256,7 @@ elevation 9546
 x 9
 y 9
 end
-arch mountain2
+arch mountain4
 elevation 9374
 x 9
 y 10
@@ -2271,20 +2276,35 @@ elevation 8674
 x 9
 y 13
 end
-arch wasteland
+arch mountain
 elevation 12200
 x 9
 y 14
 end
-arch wasteland
+arch biglake_2_2_2
+x 9
+y 14
+elevation 12200
+end
+arch mountain
 elevation 12023
 x 9
 y 15
 end
-arch mountain2
+arch biglake_4
+x 9
+y 15
+elevation 12023
+end
+arch mountain4
 elevation 10315
 x 9
 y 16
+end
+arch biglake_2_2_1
+x 9
+y 16
+elevation 10315
 end
 arch mountain
 elevation 6928
@@ -2447,9 +2467,9 @@ x 9
 y 48
 end
 arch treed_hills
+elevation 4077
 x 9
 y 49
-elevation 4077
 end
 arch mountain
 elevation 5383
@@ -2495,12 +2515,12 @@ elevation 9248
 x 10
 y 8
 end
-arch mountain2
+arch mountain4
 elevation 10101
 x 10
 y 9
 end
-arch mountain2
+arch mountain4
 elevation 10260
 x 10
 y 10
@@ -2510,42 +2530,62 @@ elevation 9552
 x 10
 y 11
 end
-arch mountain2
+arch mountain
 elevation 11624
 x 10
 y 12
 end
-arch wasteland
+arch biglake_2_2_2
+x 10
+y 12
+elevation 11624
+end
+arch mountain
 elevation 12969
 x 10
 y 13
 end
-arch wasteland
-elevation 13067
+arch biglake_3_2
+x 10
+y 13
+elevation 12969
+end
+arch biglake_4
 x 10
 y 14
+elevation 13067
 end
-arch wasteland
+arch biglake_4
 elevation 12122
 x 10
 y 15
 end
-arch mountain
-elevation 8370
+arch biglake_3_1
 x 10
 y 16
+elevation 8370
 end
-arch mountain
-elevation 8211
+arch falls_3
 x 10
 y 17
+elevation 8211
 end
 arch mountain
 elevation 8300
 x 10
 y 18
 end
+arch river_se-n
+elevation 8300
+x 10
+y 18
+end
 arch mountain
+elevation 8519
+x 10
+y 19
+end
+arch river_nw-se_l
 elevation 8519
 x 10
 y 19
@@ -2666,9 +2706,9 @@ x 10
 y 42
 end
 arch treed_hills
+elevation 3601
 x 10
 y 43
-elevation 3601
 end
 arch jungle_1
 elevation 2257
@@ -2744,52 +2784,81 @@ elevation 10136
 x 11
 y 8
 end
-arch mountain2
+arch mountain
 elevation 10904
 x 11
 y 9
 end
-arch mountain2
+arch biglake_2_2_2
+x 11
+y 9
+elevation 10904
+end
+arch mountain
 elevation 11381
 x 11
 y 10
 end
-arch mountain2
+arch biglake_2_2_1
+x 11
+y 10
+elevation 11381
+end
+arch mountain
 elevation 10909
 x 11
 y 11
 end
-arch wasteland
+arch river_sw-ne_u
+x 11
+y 11
+elevation 10909
+end
+arch mountain
 elevation 13795
 x 11
 y 12
 end
-arch wasteland
+arch biglake_3_3
+x 11
+y 12
+elevation 13795
+end
+arch biglake_4
 elevation 14826
 x 11
 y 13
 end
-arch wasteland
+arch biglake_4
 elevation 14243
 x 11
 y 14
 end
-arch wasteland
+arch biglake_4
 elevation 12522
 x 11
 y 15
 end
-arch mountain2
-elevation 10540
+arch biglake_3_1
 x 11
 y 16
+elevation 10540
 end
-arch mountain2
+arch mountain
+x 11
+y 17
 elevation 9172
+end
+arch river_sw-ne_l
 x 11
 y 17
 end
 arch mountain
+elevation 8523
+x 11
+y 18
+end
+arch river_nw-se_u
 elevation 8523
 x 11
 y 18
@@ -2799,7 +2868,17 @@ elevation 7876
 x 11
 y 19
 end
+arch river_nw-se
+elevation 7876
+x 11
+y 19
+end
 arch mountain
+elevation 7216
+x 11
+y 20
+end
+arch river_nw-se_l
 elevation 7216
 x 11
 y 20
@@ -2879,7 +2958,17 @@ elevation 3997
 x 11
 y 35
 end
+arch river_sw-ne_u
+elevation 3997
+x 11
+y 35
+end
 arch hills_rocky
+elevation 3408
+x 11
+y 36
+end
+arch river_ne-s
 elevation 3408
 x 11
 y 36
@@ -2889,7 +2978,17 @@ elevation 4486
 x 11
 y 37
 end
+arch river_se-n
+elevation 4486
+x 11
+y 37
+end
 arch hills_rocky
+elevation 4530
+x 11
+y 38
+end
+arch river_nw-se_l
 elevation 4530
 x 11
 y 38
@@ -2915,9 +3014,9 @@ x 11
 y 42
 end
 arch treed_hills
+elevation 3339
 x 11
 y 43
-elevation 3339
 end
 arch jungle_1
 elevation 2058
@@ -2963,10 +3062,10 @@ elevation 5772
 x 12
 y 2
 end
-arch mountain
-elevation 7191
+arch mountain2
 x 12
 y 3
+elevation 7191
 end
 arch mountain
 elevation 8291
@@ -2983,52 +3082,57 @@ elevation 9625
 x 12
 y 6
 end
-arch mountain2
+arch mountain
 elevation 9895
 x 12
 y 7
 end
-arch mountain2
-elevation 10674
+arch biglake_2_2_2
+x 12
+y 7
+elevation 9895
+end
+arch biglake_3_2
 x 12
 y 8
+elevation 10674
 end
-arch mountain2
-elevation 11451
+arch biglake_4
 x 12
 y 9
+elevation 11451
 end
-arch wasteland
+arch biglake_4
 elevation 12491
 x 12
 y 10
 end
-arch wasteland
-elevation 13619
+arch biglake_3_2
 x 12
 y 11
+elevation 13619
 end
-arch wasteland
+arch biglake_4
 elevation 15297
 x 12
 y 12
 end
-arch wasteland
+arch biglake_4
 elevation 15981
 x 12
 y 13
 end
-arch wasteland
+arch biglake_4
 elevation 15021
 x 12
 y 14
 end
-arch wasteland
+arch biglake_4
 elevation 12619
 x 12
 y 15
 end
-arch mountain2
+arch biglake_3_1
 elevation 11090
 x 12
 y 16
@@ -3048,12 +3152,27 @@ elevation 7128
 x 12
 y 19
 end
+arch river_nw-se_u
+elevation 7128
+x 12
+y 19
+end
 arch mountain
 elevation 5013
 x 12
 y 20
 end
+arch river_nw-se
+elevation 5013
+x 12
+y 20
+end
 arch hills
+elevation 4968
+x 12
+y 21
+end
+arch river_nw-se_l
 elevation 4968
 x 12
 y 21
@@ -3123,7 +3242,17 @@ elevation 4434
 x 12
 y 34
 end
+arch river_sw-ne_u
+elevation 4434
+x 12
+y 34
+end
 arch hills_rocky
+elevation 4592
+x 12
+y 35
+end
+arch river_sw-ne
 elevation 4592
 x 12
 y 35
@@ -3133,7 +3262,17 @@ elevation 4642
 x 12
 y 36
 end
+arch river_sw-ne_l
+elevation 4642
+x 12
+y 36
+end
 arch hills_rocky
+elevation 3796
+x 12
+y 37
+end
+arch river_nw-se_u
 elevation 3796
 x 12
 y 37
@@ -3143,7 +3282,17 @@ elevation 3425
 x 12
 y 38
 end
+arch river_nw-s
+elevation 3425
+x 12
+y 38
+end
 arch hills_rocky
+elevation 4631
+x 12
+y 39
+end
+arch river_n-s
 elevation 4631
 x 12
 y 39
@@ -3153,15 +3302,30 @@ elevation 4511
 x 12
 y 40
 end
-arch treed_hills
+arch river_n-s
+elevation 4511
+x 12
+y 40
+end
+arch brush
+elevation 3510
+x 12
+y 41
+end
+arch river_se-n
 x 12
 y 41
 elevation 3510
 end
-arch evergreen
+arch brush
 elevation 2069
 x 12
 y 42
+end
+arch river_nw-se_l
+x 12
+y 42
+elevation 2069
 end
 arch evergreen
 elevation 2069
@@ -3189,9 +3353,9 @@ x 12
 y 47
 end
 arch treed_hills
+elevation 3051
 x 12
 y 48
-elevation 3051
 end
 arch evergreen
 elevation 2973
@@ -3207,15 +3371,15 @@ elevation 6981
 x 13
 y 1
 end
-arch mountain
-elevation 7870
+arch mountain2
 x 13
 y 2
+elevation 7870
 end
-arch mountain
-elevation 8532
+arch mountain2
 x 13
 y 3
+elevation 8532
 end
 arch mountain2
 elevation 9051
@@ -3232,52 +3396,62 @@ elevation 8180
 x 13
 y 6
 end
-arch mountain2
-elevation 9646
+arch biglake_2_2_2
+elevation 8180
+x 13
+y 6
+end
+arch biglake_4
 x 13
 y 7
+elevation 9646
 end
-arch mountain
+arch biglake_4
 elevation 8829
 x 13
 y 8
 end
-arch mountain2
+arch biglake_4
 elevation 11481
 x 13
 y 9
 end
-arch wasteland
+arch biglake_4
 elevation 12892
 x 13
 y 10
 end
-arch wasteland
+arch biglake_4
 elevation 14402
 x 13
 y 11
 end
-arch wasteland
+arch biglake_4
 elevation 15663
 x 13
 y 12
 end
-arch wasteland
+arch biglake_4
 elevation 16087
 x 13
 y 13
 end
-arch wasteland
+arch biglake_4
 elevation 15152
 x 13
 y 14
 end
-arch wasteland
+arch biglake_4
 elevation 13224
 x 13
 y 15
 end
 arch mountain2
+elevation 11078
+x 13
+y 16
+end
+arch biglake_2_2_4
 elevation 11078
 x 13
 y 16
@@ -3302,12 +3476,27 @@ elevation 5131
 x 13
 y 20
 end
+arch river_nw-se_u
+elevation 5131
+x 13
+y 20
+end
 arch hills_rocky
 elevation 4371
 x 13
 y 21
 end
+arch river_nw-se
+elevation 4371
+x 13
+y 21
+end
 arch hills
+elevation 4271
+x 13
+y 22
+end
+arch river_nw-se_l
 elevation 4271
 x 13
 y 22
@@ -3367,12 +3556,27 @@ elevation 5079
 x 13
 y 33
 end
+arch river_sw-ne_u
+elevation 5079
+x 13
+y 33
+end
 arch hills_rocky
 elevation 4954
 x 13
 y 34
 end
+arch river_sw-ne
+elevation 4954
+x 13
+y 34
+end
 arch mountain
+elevation 5212
+x 13
+y 35
+end
+arch river_sw-ne_l
 elevation 5212
 x 13
 y 35
@@ -3402,17 +3606,32 @@ elevation 4438
 x 13
 y 40
 end
-arch tree
+arch brush
 elevation 2899
 x 13
 y 41
 end
-arch treed_hills
+arch river_nw-se_u
+x 13
+y 41
+elevation 2899
+end
+arch brush
+elevation 3036
+x 13
+y 42
+end
+arch river_nw-se
 x 13
 y 42
 elevation 3036
 end
 arch jungle_1
+elevation 2649
+x 13
+y 43
+end
+arch river_nw-se_l
 elevation 2649
 x 13
 y 43
@@ -3456,10 +3675,10 @@ elevation 8155
 x 14
 y 1
 end
-arch mountain
-elevation 8674
+arch mountain2
 x 14
 y 2
+elevation 8674
 end
 arch mountain
 elevation 8885
@@ -3471,57 +3690,67 @@ elevation 8999
 x 14
 y 4
 end
+arch biglake_2_2_2
+elevation 8999
+x 14
+y 4
+end
 arch mountain
 elevation 8491
 x 14
 y 5
 end
-arch mountain
+arch biglake_3_2
+elevation 8491
+x 14
+y 5
+end
+arch biglake_4
 elevation 8183
 x 14
 y 6
 end
-arch mountain
-elevation 8733
+arch biglake_4
 x 14
 y 7
+elevation 8733
 end
-arch mountain2
+arch biglake_4
 elevation 9661
 x 14
 y 8
 end
-arch mountain2
+arch biglake_4
 elevation 10424
 x 14
 y 9
 end
-arch mountain2
+arch biglake_4
 elevation 11900
 x 14
 y 10
 end
-arch wasteland
+arch biglake_4
 elevation 13437
 x 14
 y 11
 end
-arch wasteland
+arch biglake_4
 elevation 14880
 x 14
 y 12
 end
-arch wasteland
+arch biglake_4
 elevation 15310
 x 14
 y 13
 end
-arch wasteland
+arch biglake_4
 elevation 14611
 x 14
 y 14
 end
-arch wasteland
+arch biglake_3_1
 elevation 13023
 x 14
 y 15
@@ -3556,12 +3785,27 @@ elevation 4170
 x 14
 y 21
 end
+arch river_nw-se_u
+elevation 4170
+x 14
+y 21
+end
 arch hills_rocky
 elevation 3997
 x 14
 y 22
 end
+arch river_nw-se
+elevation 3997
+x 14
+y 22
+end
 arch hills
+elevation 4602
+x 14
+y 23
+end
+arch river_nw-se_l
 elevation 4602
 x 14
 y 23
@@ -3611,12 +3855,27 @@ elevation 5122
 x 14
 y 32
 end
+arch river_sw-ne_u
+elevation 5122
+x 14
+y 32
+end
 arch hills_rocky
 elevation 4846
 x 14
 y 33
 end
+arch river_sw-ne
+elevation 4846
+x 14
+y 33
+end
 arch hills_rocky
+elevation 4800
+x 14
+y 34
+end
+arch river_sw-ne_l
 elevation 4800
 x 14
 y 34
@@ -3652,21 +3911,36 @@ x 14
 y 40
 end
 arch treed_hills
+elevation 3525
 x 14
 y 41
-elevation 3525
 end
 arch tree
 elevation 2899
 x 14
 y 42
 end
-arch jungle_1
+arch river_nw-se_u
+elevation 2899
+x 14
+y 42
+end
+arch brush
 elevation 2092
 x 14
 y 43
 end
+arch river_nw-se
+x 14
+y 43
+elevation 2092
+end
 arch jungle_1
+elevation 2616
+x 14
+y 44
+end
+arch river_nw-se_l
 elevation 2616
 x 14
 y 44
@@ -3705,75 +3979,85 @@ elevation 8639
 x 15
 y 1
 end
-arch mountain
-elevation 8095
+arch mountain2
 x 15
 y 2
+elevation 8095
 end
 arch mountain
 elevation 8782
 x 15
 y 3
 end
-arch mountain
+arch biglake_3_3
 elevation 7307
 x 15
 y 4
 end
-arch mountain
+arch biglake_4
 elevation 7883
 x 15
 y 5
 end
-arch mountain
+arch biglake_4
 elevation 6342
 x 15
 y 6
 end
-arch mountain
-elevation 8053
+arch biglake_4
 x 15
 y 7
+elevation 8053
 end
-arch mountain
-elevation 8493
+arch biglake_4
 x 15
 y 8
+elevation 8493
 end
-arch mountain
+arch biglake_4
 elevation 8807
 x 15
 y 9
 end
-arch mountain
-elevation 8520
+arch biglake_4
 x 15
 y 10
+elevation 8520
 end
-arch wasteland
+arch mountain
 elevation 12041
 x 15
 y 11
 end
-arch wasteland
+arch biglake_3_4
+x 15
+y 11
+elevation 12041
+end
+arch biglake_4
 elevation 13731
 x 15
 y 12
 end
-arch wasteland
+arch biglake_4
 elevation 14087
 x 15
 y 13
 end
-arch wasteland
+arch biglake_4
 elevation 13593
 x 15
 y 14
 end
-arch wasteland
+arch mountain
 elevation 12250
 x 15
 y 15
+end
+arch biglake_2_2_4
+x 15
+y 15
+elevation 12250
 end
 arch mountain2
 elevation 10337
@@ -3810,10 +4094,20 @@ elevation 3494
 x 15
 y 22
 end
+arch river_nw-se_u
+elevation 3494
+x 15
+y 22
+end
 arch treed_hills
+elevation 4457
 x 15
 y 23
+end
+arch river_nw-e
 elevation 4457
+x 15
+y 23
 end
 arch mountain
 elevation 5193
@@ -3835,22 +4129,47 @@ elevation 4658
 x 15
 y 27
 end
+arch river_sw-ne_u
+elevation 4658
+x 15
+y 27
+end
 arch hills
 elevation 4483
 x 15
 y 28
 end
+arch river_ne-s
+elevation 4483
+x 15
+y 28
+end
 arch treed_hills
+elevation 4143
 x 15
 y 29
+end
+arch river_n-s
 elevation 4143
+x 15
+y 29
 end
 arch treed_hills
+elevation 3303
 x 15
 y 30
+end
+arch river_n-s
 elevation 3303
+x 15
+y 30
 end
 arch hills_rocky
+elevation 4274
+x 15
+y 31
+end
+arch river_n-s
 elevation 4274
 x 15
 y 31
@@ -3860,7 +4179,17 @@ elevation 4581
 x 15
 y 32
 end
+arch river_sw-n
+elevation 4581
+x 15
+y 32
+end
 arch hills_rocky
+elevation 4296
+x 15
+y 33
+end
+arch river_sw-ne_l
 elevation 4296
 x 15
 y 33
@@ -3915,27 +4244,42 @@ elevation 2618
 x 15
 y 43
 end
-arch jungle_1
+arch river_nw-se_u
+elevation 2618
+x 15
+y 43
+end
+arch brush
 elevation 2815
 x 15
 y 44
+end
+arch river_nw-se
+x 15
+y 44
+elevation 2815
 end
 arch hills_rocky
 elevation 3003
 x 15
 y 45
 end
+arch river_nw-se_l
+elevation 3003
+x 15
+y 45
+end
 arch treed_hills
+elevation 3218
 x 15
 y 46
-elevation 3218
 end
 arch treed_hills
+elevation 3552
 x 15
 y 47
-elevation 3552
 end
-arch tree
+arch marsh
 elevation 2899
 x 15
 y 48
@@ -3964,60 +4308,89 @@ elevation 8470
 x 16
 y 3
 end
+arch river_sw-ne_u
+x 16
+y 3
+elevation 8470
+end
 arch mountain
 elevation 8030
 x 16
 y 4
 end
-arch mountain
+arch biglake_2_2_3
+elevation 8030
+x 16
+y 4
+end
+arch river_sw-ne
+x 16
+y 4
+elevation 8030
+end
+arch biglake_4
 elevation 7264
 x 16
 y 5
 end
-arch mountain
+arch biglake_4
 elevation 6594
 x 16
 y 6
 end
-arch mountain
+arch biglake_4
 elevation 7343
 x 16
 y 7
 end
-arch mountain
-elevation 7261
+arch biglake_4
 x 16
 y 8
+elevation 7261
 end
-arch mountain
+arch biglake_4
 elevation 5587
 x 16
 y 9
 end
-arch mountain
-elevation 7773
+arch biglake_3_1
 x 16
 y 10
+elevation 7773
 end
-arch mountain2
+arch mountain
+x 16
+y 11
+elevation 11128
+end
+arch river_nw-se_u
 elevation 11128
 x 16
 y 11
 end
-arch wasteland
+arch river_sw-ne_l
+x 16
+y 11
+end
+arch biglake_3_3
 elevation 12862
 x 16
 y 12
 end
-arch wasteland
+arch biglake_4
 elevation 13137
 x 16
 y 13
 end
-arch wasteland
+arch mountain
 elevation 12425
 x 16
 y 14
+end
+arch biglake_2_2_4
+x 16
+y 14
+elevation 12425
 end
 arch mountain2
 elevation 10623
@@ -4045,11 +4418,11 @@ x 16
 y 19
 end
 arch treed_hills
+elevation 3624
 x 16
 y 20
-elevation 3624
 end
-arch evergreen
+arch brush
 elevation 1300
 x 16
 y 21
@@ -4060,9 +4433,14 @@ x 16
 y 22
 end
 arch treed_hills
+elevation 3777
 x 16
 y 23
+end
+arch river_w-e
 elevation 3777
+x 16
+y 23
 end
 arch hills
 elevation 4726
@@ -4075,19 +4453,34 @@ x 16
 y 25
 end
 arch treed_hills
+elevation 4736
 x 16
 y 26
+end
+arch river_sw-ne_u
 elevation 4736
+x 16
+y 26
 end
 arch treed_hills
+elevation 3922
 x 16
 y 27
+end
+arch river_sw-ne
 elevation 3922
+x 16
+y 27
 end
 arch treed_hills
+elevation 3787
 x 16
 y 28
+end
+arch river_sw-ne_l
 elevation 3787
+x 16
+y 28
 end
 arch hills
 elevation 4183
@@ -4110,9 +4503,9 @@ x 16
 y 32
 end
 arch treed_hills
+elevation 3757
 x 16
 y 33
-elevation 3757
 end
 arch hills_rocky
 elevation 3072
@@ -4120,9 +4513,9 @@ x 16
 y 34
 end
 arch treed_hills
+elevation 4040
 x 16
 y 35
-elevation 4040
 end
 arch steppe
 elevation 3818
@@ -4164,35 +4557,65 @@ elevation 2803
 x 16
 y 43
 end
-arch tree
+arch marsh
 elevation 2656
 x 16
 y 44
 end
-arch tree
+arch river_nw-se_u
+x 16
+y 44
+elevation 2656
+end
+arch marsh
 elevation 1979
 x 16
 y 45
 end
-arch steppe
+arch river_nw-s
+x 16
+y 45
+elevation 1979
+end
+arch brush
 elevation 3187
 x 16
 y 46
 end
-arch tree
+arch bridge_we
+x 16
+y 46
+elevation 3187
+end
+arch brush
 elevation 2899
 x 16
 y 47
 end
-arch hills_rocky
+arch rjunct_ns-se
+x 16
+y 47
+elevation 2899
+end
+arch marsh
 elevation 3743
 x 16
 y 48
 end
-arch tree
+arch rcrook_ns-se
+x 16
+y 48
+elevation 3743
+end
+arch marsh
 elevation 2894
 x 16
 y 49
+end
+arch river_n-s
+x 16
+y 49
+elevation 2894
 end
 arch mountain
 elevation 7670
@@ -4208,13 +4631,27 @@ elevation 7443
 x 17
 y 2
 end
+arch river_sw-ne_u
+x 17
+y 2
+elevation 7443
+end
 arch mountain
 elevation 8078
 x 17
 y 3
 end
-arch mountain
+arch river_sw-ne
+x 17
+y 3
+elevation 8078
+end
+arch treed_hills
+x 17
+y 4
 elevation 8042
+end
+arch river_sw-ne_l
 x 17
 y 4
 end
@@ -4223,22 +4660,27 @@ elevation 5291
 x 17
 y 5
 end
-arch mountain
+arch biglake_2_2_3
+elevation 5291
+x 17
+y 5
+end
+arch biglake_4
 elevation 6988
 x 17
 y 6
 end
-arch mountain
+arch biglake_4
 elevation 6947
 x 17
 y 7
 end
-arch mountain
-elevation 6100
+arch biglake_4
 x 17
 y 8
+elevation 6100
 end
-arch mountain
+arch biglake_4
 elevation 5219
 x 17
 y 9
@@ -4248,20 +4690,35 @@ elevation 8861
 x 17
 y 10
 end
-arch mountain2
+arch biglake_2_2_4
+x 17
+y 10
+elevation 8861
+end
+arch mountain4
 elevation 11065
 x 17
 y 11
 end
-arch wasteland
+arch mountain
 elevation 12099
 x 17
 y 12
 end
-arch wasteland
+arch biglake_2_2_3
+x 17
+y 12
+elevation 12099
+end
+arch mountain
 elevation 12495
 x 17
 y 13
+end
+arch biglake_2_2_4
+x 17
+y 13
+elevation 12495
 end
 arch mountain2
 elevation 11500
@@ -4313,22 +4770,47 @@ elevation 2303
 x 17
 y 23
 end
-arch treed_hills
+arch river_se-w
+elevation 2303
+x 17
+y 23
+end
+arch marsh
+elevation 4335
+x 17
+y 24
+end
+arch river_nw-se_l
 x 17
 y 24
 elevation 4335
 end
 arch treed_hills
+elevation 4734
 x 17
 y 25
+end
+arch river_sw-ne_u
 elevation 4734
+x 17
+y 25
 end
 arch treed_hills
+elevation 4676
 x 17
 y 26
+end
+arch river_sw-ne
 elevation 4676
+x 17
+y 26
 end
 arch hills_rocky
+elevation 4856
+x 17
+y 27
+end
+arch river_sw-ne_l
 elevation 4856
 x 17
 y 27
@@ -4364,9 +4846,9 @@ x 17
 y 33
 end
 arch treed_hills
+elevation 3310
 x 17
 y 34
-elevation 3310
 end
 arch hills_rocky
 elevation 4312
@@ -4374,9 +4856,9 @@ x 17
 y 35
 end
 arch treed_hills
+elevation 4683
 x 17
 y 36
-elevation 4683
 end
 arch steppe
 elevation 4441
@@ -4418,27 +4900,37 @@ elevation 2042
 x 17
 y 44
 end
-arch jungle_1
+arch marsh
 elevation 2155
 x 17
 y 45
 end
-arch tree
+arch brush
 elevation 2670
 x 17
 y 46
 end
-arch steppe
+arch marsh
 elevation 3352
 x 17
 y 47
 end
-arch steppe
+arch river_nw-se_u
+x 17
+y 47
+elevation 3352
+end
+arch marsh
 elevation 3593
 x 17
 y 48
 end
-arch steppe
+arch river_nw-e
+x 17
+y 48
+elevation 3593
+end
+arch marsh
 elevation 3428
 x 17
 y 49
@@ -4447,8 +4939,12 @@ arch mountain
 elevation 5377
 x 18
 end
-arch mountain
+arch treed_hills
+x 18
+y 1
 elevation 6261
+end
+arch river_sw-ne_u
 x 18
 y 1
 end
@@ -4457,47 +4953,71 @@ elevation 4291
 x 18
 y 2
 end
+arch river_sw-ne
+x 18
+y 2
+elevation 4291
+end
 arch mountain
 elevation 7487
 x 18
 y 3
 end
-arch mountain
-elevation 8058
+arch river_sw-ne_l
+x 18
+y 3
+elevation 7487
+end
+arch treed_hills
 x 18
 y 4
+elevation 8058
 end
 arch mountain
 elevation 7685
 x 18
 y 5
 end
-arch mountain
+arch treed_hills
+x 18
+y 5
+elevation 7685
+end
+arch brush
+x 18
+y 6
 elevation 6852
+end
+arch biglake_3_3
 x 18
 y 6
 end
-arch mountain
-elevation 6284
+arch biglake_4
 x 18
 y 7
+elevation 6284
 end
-arch mountain
-elevation 6596
+arch biglake_4
 x 18
 y 8
+elevation 6596
 end
 arch mountain
 elevation 7637
 x 18
 y 9
 end
-arch mountain2
+arch biglake_2_2_4
+x 18
+y 9
+elevation 7637
+end
+arch mountain4
 elevation 9317
 x 18
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 11084
 x 18
 y 11
@@ -4538,9 +5058,9 @@ x 18
 y 18
 end
 arch treed_hills
+elevation 4296
 x 18
 y 19
-elevation 4296
 end
 arch hills_rocky
 elevation 3260
@@ -4552,27 +5072,47 @@ elevation 2140
 x 18
 y 21
 end
-arch jungle_1
+arch marsh
 elevation 2744
 x 18
 y 22
 end
-arch hills
+arch marsh
 elevation 3460
 x 18
 y 23
+end
+arch river_nw-se_u
+x 18
+y 23
+elevation 3460
 end
 arch hills_rocky
 elevation 4228
 x 18
 y 24
 end
+arch river_nw-s
+elevation 4228
+x 18
+y 24
+end
 arch treed_hills
+elevation 4500
 x 18
 y 25
+end
+arch river_sw-n
 elevation 4500
+x 18
+y 25
 end
 arch hills
+elevation 4330
+x 18
+y 26
+end
+arch river_sw-ne_l
 elevation 4330
 x 18
 y 26
@@ -4687,17 +5227,31 @@ elevation 3289
 x 18
 y 48
 end
-arch evergreen
+arch river_se-w
+elevation 3289
+x 18
+y 48
+end
+arch brush
 elevation 2069
 x 18
 y 49
+end
+arch river_nw-se_l
+x 18
+y 49
+elevation 2069
 end
 arch mountain
 elevation 6209
 x 19
 end
-arch mountain
+arch treed_hills
+x 19
+y 1
 elevation 6085
+end
+arch river_sw-e
 x 19
 y 1
 end
@@ -4705,6 +5259,11 @@ arch steppe
 elevation 4866
 x 19
 y 2
+end
+arch river_sw-ne_l
+x 19
+y 2
+elevation 4866
 end
 arch mountain
 elevation 7521
@@ -4716,13 +5275,30 @@ elevation 8600
 x 19
 y 4
 end
-arch mountain
+arch river_sw-ne_u
+x 19
+y 4
+elevation 8600
+end
+arch treed_hills
+x 19
+y 5
 elevation 7330
+end
+arch river_ne-s
 x 19
 y 5
 end
-arch mountain
+arch brush
+x 19
+y 6
 elevation 7391
+end
+arch biglake_2_2_3
+x 19
+y 6
+end
+arch river_sw-n
 x 19
 y 6
 end
@@ -4731,10 +5307,20 @@ elevation 5557
 x 19
 y 7
 end
+arch biglake_3_4
+elevation 5557
+x 19
+y 7
+end
 arch mountain
 elevation 6875
 x 19
 y 8
+end
+arch biglake_2_2_4
+x 19
+y 8
+elevation 6875
 end
 arch mountain
 elevation 7848
@@ -4746,7 +5332,7 @@ elevation 9139
 x 19
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 10501
 x 19
 y 11
@@ -4817,9 +5403,9 @@ x 19
 y 24
 end
 arch treed_hills
+elevation 4838
 x 19
 y 25
-elevation 4838
 end
 arch mountain
 elevation 5112
@@ -4912,9 +5498,9 @@ x 19
 y 43
 end
 arch treed_hills
+elevation 63
 x 19
 y 44
-elevation 63
 end
 arch brush
 elevation 656
@@ -4922,9 +5508,9 @@ x 19
 y 45
 end
 arch treed_hills
+elevation 587
 x 19
 y 46
-elevation 587
 end
 arch jungle_1
 elevation 2190
@@ -4936,17 +5522,31 @@ elevation 2880
 x 19
 y 48
 end
-arch tree
+arch river_nw-se_u
+elevation 2880
+x 19
+y 48
+end
+arch brush
 elevation 2899
 x 19
 y 49
+end
+arch river_nw-s
+x 19
+y 49
+elevation 2899
 end
 arch mountain
 elevation 6691
 x 20
 end
-arch mountain
+arch treed_hills
+x 20
+y 1
 elevation 6509
+end
+arch river_w-e
 x 20
 y 1
 end
@@ -4955,13 +5555,26 @@ elevation 7025
 x 20
 y 2
 end
-arch mountain
+arch river_sw-ne_u
+x 20
+y 2
+elevation 7025
+end
+arch treed_hills
+x 20
+y 3
 elevation 8181
+end
+arch river_ne-s
 x 20
 y 3
 end
-arch mountain
+arch treed_hills
+x 20
+y 4
 elevation 8991
+end
+arch river_sw-n
 x 20
 y 4
 end
@@ -4970,42 +5583,47 @@ elevation 8893
 x 20
 y 5
 end
-arch mountain
+arch river_sw-ne_l
+x 20
+y 5
+elevation 8893
+end
+arch mountain4
 elevation 7991
 x 20
 y 6
 end
-arch mountain
+arch mountain4
 elevation 7170
 x 20
 y 7
 end
-arch mountain
+arch mountain4
 elevation 6681
 x 20
 y 8
 end
-arch mountain
+arch mountain4
 elevation 7032
 x 20
 y 9
 end
-arch mountain
+arch mountain4
 elevation 8438
 x 20
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 9370
 x 20
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 9982
 x 20
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 9869
 x 20
 y 13
@@ -5061,14 +5679,14 @@ x 20
 y 23
 end
 arch treed_hills
+elevation 4389
 x 20
 y 24
-elevation 4389
 end
 arch treed_hills
+elevation 4997
 x 20
 y 25
-elevation 4997
 end
 arch mountain
 elevation 5016
@@ -5151,9 +5769,9 @@ x 20
 y 41
 end
 arch treed_hills
+elevation 267
 x 20
 y 42
-elevation 267
 end
 arch brush
 elevation 493
@@ -5161,9 +5779,9 @@ x 20
 y 43
 end
 arch treed_hills
+elevation 63
 x 20
 y 44
-elevation 63
 end
 arch brush
 elevation 799
@@ -5194,37 +5812,49 @@ arch mountain
 elevation 6850
 x 21
 end
-arch mountain
+arch treed_hills
+x 21
+y 1
 elevation 5384
+end
+arch river_w-e
 x 21
 y 1
 end
-arch mountain
+arch treed_hills
+x 21
+y 2
 elevation 7192
+end
+arch river_sw-e
 x 21
 y 2
 end
-arch mountain
+arch treed_hills
+x 21
+y 3
 elevation 8543
+end
+arch river_sw-ne_l
 x 21
 y 3
 end
-arch mountain2
+arch mountain4
 elevation 9285
 x 21
 y 4
 end
-arch mountain2
+arch mountain4
 elevation 9094
 x 21
 y 5
 end
-arch mountain2
+arch mountain4
 elevation 9099
 x 21
 y 6
 end
-arch mountain
+arch mountain4
 elevation 8079
 x 21
 y 7
@@ -5305,9 +5935,9 @@ x 21
 y 22
 end
 arch treed_hills
+elevation 3652
 x 21
 y 23
-elevation 3652
 end
 arch hills_rocky
 elevation 4441
@@ -5410,9 +6040,9 @@ x 21
 y 43
 end
 arch treed_hills
+elevation 631
 x 21
 y 44
-elevation 631
 end
 arch tree
 elevation 1097
@@ -5443,13 +6073,21 @@ arch mountain
 elevation 6764
 x 22
 end
-arch mountain
+arch treed_hills
+x 22
+y 1
 elevation 6278
+end
+arch river_se-w
 x 22
 y 1
 end
-arch mountain
+arch treed_hills
+x 22
+y 2
 elevation 7417
+end
+arch rcrook_we-nw
 x 22
 y 2
 end
@@ -5468,7 +6106,7 @@ elevation 9759
 x 22
 y 5
 end
-arch mountain2
+arch mountain4
 elevation 9711
 x 22
 y 6
@@ -5549,9 +6187,9 @@ x 22
 y 21
 end
 arch treed_hills
+elevation 4041
 x 22
 y 22
-elevation 4041
 end
 arch hills_rocky
 elevation 3473
@@ -5649,9 +6287,9 @@ x 22
 y 41
 end
 arch treed_hills
+elevation 683
 x 22
 y 42
-elevation 683
 end
 arch brush
 elevation 181
@@ -5659,9 +6297,9 @@ x 22
 y 43
 end
 arch treed_hills
+elevation 774
 x 22
 y 44
-elevation 774
 end
 arch tree
 elevation 1294
@@ -5697,8 +6335,17 @@ elevation 6361
 x 23
 y 1
 end
-arch mountain
+arch river_nw-se_u
+x 23
+y 1
+elevation 6361
+end
+arch treed_hills
+x 23
+y 2
 elevation 7191
+end
+arch rjunct_we-nw
 x 23
 y 2
 end
@@ -5707,22 +6354,22 @@ elevation 8289
 x 23
 y 3
 end
-arch mountain2
+arch mountain4
 elevation 9286
 x 23
 y 4
 end
-arch mountain2
+arch mountain4
 elevation 9428
 x 23
 y 5
 end
-arch mountain2
+arch mountain4
 elevation 9114
 x 23
 y 6
 end
-arch mountain
+arch mountain4
 elevation 8419
 x 23
 y 7
@@ -5898,14 +6545,14 @@ x 23
 y 41
 end
 arch treed_hills
+elevation 226
 x 23
 y 42
-elevation 226
 end
 arch treed_hills
+elevation 226
 x 23
 y 43
-elevation 226
 end
 arch jungle_1
 elevation 1276
@@ -5941,20 +6588,28 @@ arch mountain
 elevation 5389
 x 24
 end
-arch mountain
+arch treed_hills
+x 24
+y 1
 elevation 5201
+end
+arch river_sw-ne_u
 x 24
 y 1
 end
-arch mountain
+arch treed_hills
+x 24
+y 2
 elevation 6355
+end
+arch river_ne-w
 x 24
 y 2
 end
-arch mountain
-elevation 7533
+arch treed_hills
 x 24
 y 3
+elevation 7533
 end
 arch mountain
 elevation 8563
@@ -5966,17 +6621,17 @@ elevation 8541
 x 24
 y 5
 end
-arch mountain
+arch mountain4
 elevation 6085
 x 24
 y 6
 end
-arch mountain
+arch mountain4
 elevation 6998
 x 24
 y 7
 end
-arch mountain
+arch mountain4
 elevation 7702
 x 24
 y 8
@@ -6190,8 +6845,16 @@ arch jungle_1
 elevation 2813
 x 25
 end
-arch steppe
+arch river_sw-ne_u
+x 25
+elevation 2813
+end
+arch treed_hills
+x 25
+y 1
 elevation 4194
+end
+arch river_sw-ne
 x 25
 y 1
 end
@@ -6200,15 +6863,20 @@ elevation 5401
 x 25
 y 2
 end
-arch mountain
-elevation 6567
+arch river_sw-ne_l
+x 25
+y 2
+elevation 5401
+end
+arch treed_hills
 x 25
 y 3
+elevation 6567
 end
-arch mountain
-elevation 6846
+arch treed_hills
 x 25
 y 4
+elevation 6846
 end
 arch mountain
 elevation 6560
@@ -6225,7 +6893,7 @@ elevation 7035
 x 25
 y 7
 end
-arch mountain
+arch mountain4
 elevation 7519
 x 25
 y 8
@@ -6301,19 +6969,19 @@ x 25
 y 22
 end
 arch treed_hills
+elevation 4346
 x 25
 y 23
-elevation 4346
 end
 arch treed_hills
+elevation 4643
 x 25
 y 24
-elevation 4643
 end
 arch treed_hills
+elevation 4671
 x 25
 y 25
-elevation 4671
 end
 arch hills
 elevation 4331
@@ -6341,9 +7009,9 @@ x 25
 y 30
 end
 arch treed_hills
+elevation 2036
 x 25
 y 31
-elevation 2036
 end
 arch tree
 elevation 2647
@@ -6439,10 +7107,19 @@ arch hills
 elevation 3855
 x 26
 end
+arch river_sw-n
+x 26
+elevation 3855
+end
 arch mountain
 elevation 5290
 x 26
 y 1
+end
+arch river_sw-ne_l
+x 26
+y 1
+elevation 5290
 end
 arch mountain
 elevation 6130
@@ -6454,27 +7131,27 @@ elevation 5846
 x 26
 y 3
 end
-arch steppe
-elevation 3933
+arch treed_hills
 x 26
 y 4
+elevation 3933
 end
-arch hills_rocky
-elevation 3910
+arch treed_hills
 x 26
 y 5
+elevation 3910
 end
-arch steppe
-elevation 4656
+arch treed_hills
 x 26
 y 6
+elevation 4656
 end
 arch mountain
 elevation 6839
 x 26
 y 7
 end
-arch mountain
+arch mountain4
 elevation 7230
 x 26
 y 8
@@ -6590,9 +7267,9 @@ x 26
 y 30
 end
 arch treed_hills
+elevation 1058
 x 26
 y 31
-elevation 1058
 end
 arch hills
 elevation 2547
@@ -6620,9 +7297,9 @@ x 26
 y 36
 end
 arch treed_hills
+elevation 2283
 x 26
 y 37
-elevation 2283
 end
 arch tree
 elevation 1157
@@ -6713,22 +7390,22 @@ elevation 5187
 x 27
 y 5
 end
-arch mountain
-elevation 5483
+arch treed_hills
 x 27
 y 6
+elevation 5483
 end
 arch mountain
 elevation 6195
 x 27
 y 7
 end
-arch mountain
+arch mountain4
 elevation 6643
 x 27
 y 8
 end
-arch mountain
+arch mountain4
 elevation 6128
 x 27
 y 9
@@ -6977,17 +7654,17 @@ elevation 5453
 x 28
 y 8
 end
-arch mountain
+arch mountain4
 elevation 6078
 x 28
 y 9
 end
-arch mountain
+arch mountain4
 elevation 6701
 x 28
 y 10
 end
-arch mountain
+arch mountain4
 elevation 8119
 x 28
 y 11
@@ -7041,9 +7718,9 @@ arch stronghold
 slaying /quests/mcz/castle1
 hp 9
 sp 25
+elevation 3409
 x 28
 y 20
-elevation 3409
 end
 arch hills
 elevation 4556
@@ -7056,14 +7733,14 @@ x 28
 y 22
 end
 arch treed_hills
+elevation 4237
 x 28
 y 23
-elevation 4237
 end
 arch treed_hills
+elevation 4013
 x 28
 y 24
-elevation 4013
 end
 arch hills
 elevation 4251
@@ -7156,19 +7833,19 @@ x 28
 y 42
 end
 arch treed_hills
+elevation 3052
 x 28
 y 43
-elevation 3052
 end
 arch treed_hills
+elevation 3882
 x 28
 y 44
-elevation 3882
 end
 arch treed_hills
+elevation 4590
 x 28
 y 45
-elevation 4590
 end
 arch steppe
 elevation 4957
@@ -7219,10 +7896,10 @@ elevation 2698
 x 29
 y 5
 end
-arch hills
-elevation 3013
+arch treed_hills
 x 29
 y 6
+elevation 3013
 end
 arch hills_rocky
 elevation 3408
@@ -7244,12 +7921,12 @@ elevation 6938
 x 29
 y 10
 end
-arch mountain
+arch mountain4
 elevation 8282
 x 29
 y 11
 end
-arch mountain
+arch mountain4
 elevation 8799
 x 29
 y 12
@@ -7340,9 +8017,9 @@ x 29
 y 29
 end
 arch treed_hills
+elevation 1902
 x 29
 y 30
-elevation 1902
 end
 arch hills
 elevation 2547
@@ -7370,19 +8047,19 @@ x 29
 y 35
 end
 arch treed_hills
+elevation 2021
 x 29
 y 36
-elevation 2021
 end
 arch treed_hills
+elevation 2277
 x 29
 y 37
-elevation 2277
 end
 arch treed_hills
+elevation 2658
 x 29
 y 38
-elevation 2658
 end
 arch evergreen
 elevation 2908
@@ -7468,10 +8145,10 @@ elevation 3686
 x 30
 y 5
 end
-arch hills
-elevation 3591
+arch treed_hills
 x 30
 y 6
+elevation 3591
 end
 arch hills
 elevation 3725
@@ -7503,7 +8180,7 @@ elevation 9508
 x 30
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 9508
 x 30
 y 13
@@ -7692,12 +8369,12 @@ arch mountain
 elevation 8444
 x 31
 end
-arch mountain2
+arch mountain4
 elevation 9174
 x 31
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 9321
 x 31
 y 2
@@ -7752,7 +8429,7 @@ elevation 9475
 x 31
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 9708
 x 31
 y 13
@@ -7788,9 +8465,9 @@ x 31
 y 19
 end
 arch treed_hills
+elevation 4892
 x 31
 y 20
-elevation 4892
 end
 arch hills_rocky
 elevation 4986
@@ -7843,9 +8520,9 @@ x 31
 y 30
 end
 arch treed_hills
+elevation 2606
 x 31
 y 31
-elevation 2606
 end
 arch steppe
 elevation 3333
@@ -7873,9 +8550,9 @@ x 31
 y 36
 end
 arch treed_hills
+elevation 2349
 x 31
 y 37
-elevation 2349
 end
 arch steppe
 elevation 3025
@@ -7937,16 +8614,16 @@ elevation 6160
 x 31
 y 49
 end
-arch mountain2
+arch mountain4
 elevation 9089
 x 32
 end
-arch mountain2
+arch mountain4
 elevation 9486
 x 32
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 9597
 x 32
 y 2
@@ -8001,12 +8678,12 @@ elevation 8597
 x 32
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 9270
 x 32
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 9301
 x 32
 y 14
@@ -8052,14 +8729,14 @@ x 32
 y 22
 end
 arch treed_hills
+elevation 4539
 x 32
 y 23
-elevation 4539
 end
 arch treed_hills
+elevation 3898
 x 32
 y 24
-elevation 3898
 end
 arch steppe
 elevation 4787
@@ -8092,9 +8769,9 @@ x 32
 y 30
 end
 arch treed_hills
+elevation 3695
 x 32
 y 31
-elevation 3695
 end
 arch steppe
 elevation 3616
@@ -8190,12 +8867,12 @@ arch mountain
 elevation 7096
 x 33
 end
-arch mountain2
+arch mountain4
 elevation 10084
 x 33
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 10071
 x 33
 y 2
@@ -8260,7 +8937,7 @@ elevation 8925
 x 33
 y 14
 end
-arch mountain2
+arch mountain4
 elevation 9036
 x 33
 y 15
@@ -8444,7 +9121,7 @@ elevation 10934
 x 34
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 10484
 x 34
 y 2
@@ -8514,7 +9191,7 @@ elevation 8968
 x 34
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 9151
 x 34
 y 16
@@ -8600,9 +9277,9 @@ x 34
 y 32
 end
 arch treed_hills
+elevation 1794
 x 34
 y 33
-elevation 1794
 end
 arch steppe
 elevation 3254
@@ -8693,17 +9370,17 @@ elevation 11798
 x 35
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 10289
 x 35
 y 2
 end
-arch mountain2
+arch mountain4
 elevation 9375
 x 35
 y 3
 end
-arch mountain2
+arch mountain4
 elevation 9195
 x 35
 y 4
@@ -8763,12 +9440,12 @@ elevation 8767
 x 35
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 9385
 x 35
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 9054
 x 35
 y 17
@@ -8834,9 +9511,9 @@ x 35
 y 29
 end
 arch treed_hills
+elevation 3469
 x 35
 y 30
-elevation 3469
 end
 arch hills
 elevation 2546
@@ -8844,14 +9521,14 @@ x 35
 y 31
 end
 arch treed_hills
+elevation 699
 x 35
 y 32
-elevation 699
 end
 arch treed_hills
+elevation 2431
 x 35
 y 33
-elevation 2431
 end
 arch steppe
 elevation 3251
@@ -8879,14 +9556,14 @@ x 35
 y 38
 end
 arch treed_hills
+elevation 2609
 x 35
 y 39
-elevation 2609
 end
 arch treed_hills
+elevation 2092
 x 35
 y 40
-elevation 2092
 end
 arch hills_rocky
 elevation 3826
@@ -9017,7 +9694,7 @@ elevation 9289
 x 36
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 9395
 x 36
 y 17
@@ -9093,14 +9770,14 @@ x 36
 y 31
 end
 arch treed_hills
+elevation 2200
 x 36
 y 32
-elevation 2200
 end
 arch treed_hills
+elevation 2821
 x 36
 y 33
-elevation 2821
 end
 arch steppe
 elevation 3827
@@ -9123,19 +9800,19 @@ x 36
 y 37
 end
 arch treed_hills
+elevation 2933
 x 36
 y 38
-elevation 2933
 end
 arch treed_hills
+elevation 2481
 x 36
 y 39
-elevation 2481
 end
 arch treed_hills
+elevation 2853
 x 36
 y 40
-elevation 2853
 end
 arch hills_rocky
 elevation 3810
@@ -9266,7 +9943,7 @@ elevation 8670
 x 37
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 9050
 x 37
 y 17
@@ -9311,7 +9988,7 @@ elevation 8962
 x 37
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 9027
 x 37
 y 26
@@ -9372,9 +10049,9 @@ x 37
 y 37
 end
 arch treed_hills
+elevation 2951
 x 37
 y 38
-elevation 2951
 end
 arch hills
 elevation 1847
@@ -9440,12 +10117,12 @@ elevation 13515
 x 38
 y 1
 end
-arch mountain2
+arch mountain4
 elevation 11987
 x 38
 y 2
 end
-arch mountain2
+arch mountain4
 elevation 9097
 x 38
 y 3
@@ -9555,12 +10232,12 @@ elevation 7723
 x 38
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 9573
 x 38
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 9763
 x 38
 y 26
@@ -9621,9 +10298,9 @@ x 38
 y 37
 end
 arch treed_hills
+elevation 2865
 x 38
 y 38
-elevation 2865
 end
 arch evergreen
 elevation 1764
@@ -9694,7 +10371,7 @@ elevation 13148
 x 39
 y 2
 end
-arch mountain2
+arch mountain4
 elevation 9929
 x 39
 y 3
@@ -9729,17 +10406,17 @@ elevation 8460
 x 39
 y 9
 end
-arch mountain2
+arch mountain4
 elevation 10331
 x 39
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 10917
 x 39
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 10254
 x 39
 y 12
@@ -9764,7 +10441,7 @@ elevation 8786
 x 39
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 9151
 x 39
 y 17
@@ -9804,12 +10481,12 @@ elevation 8460
 x 39
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 9639
 x 39
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 9564
 x 39
 y 26
@@ -9943,7 +10620,7 @@ elevation 13520
 x 40
 y 2
 end
-arch mountain2
+arch mountain4
 elevation 10923
 x 40
 y 3
@@ -9988,7 +10665,7 @@ elevation 12202
 x 40
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11127
 x 40
 y 12
@@ -10013,7 +10690,7 @@ elevation 10093
 x 40
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 10437
 x 40
 y 17
@@ -10053,7 +10730,7 @@ elevation 8235
 x 40
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 9068
 x 40
 y 25
@@ -10237,7 +10914,7 @@ elevation 12490
 x 41
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11377
 x 41
 y 12
@@ -10267,7 +10944,7 @@ elevation 11295
 x 41
 y 17
 end
-arch mountain2
+arch mountain4
 elevation 11079
 x 41
 y 18
@@ -10417,7 +11094,7 @@ elevation 6983
 x 41
 y 47
 end
-arch mountain
+arch mountain4
 elevation 6867
 x 41
 y 48
@@ -10486,37 +11163,37 @@ elevation 12297
 x 42
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11198
 x 42
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 10383
 x 42
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 10492
 x 42
 y 14
 end
-arch mountain2
+arch mountain4
 elevation 10969
 x 42
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 11167
 x 42
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 11035
 x 42
 y 17
 end
-arch mountain2
+arch mountain4
 elevation 10857
 x 42
 y 18
@@ -10546,7 +11223,7 @@ elevation 9059
 x 42
 y 23
 end
-arch mountain2
+arch mountain4
 elevation 9218
 x 42
 y 24
@@ -10666,7 +11343,7 @@ elevation 5555
 x 42
 y 47
 end
-arch mountain
+arch mountain4
 elevation 5896
 x 42
 y 48
@@ -10740,7 +11417,7 @@ elevation 10079
 x 43
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 10302
 x 43
 y 13
@@ -10765,7 +11442,7 @@ elevation 9258
 x 43
 y 17
 end
-arch mountain2
+arch mountain4
 elevation 9443
 x 43
 y 18
@@ -10785,22 +11462,22 @@ elevation 8869
 x 43
 y 21
 end
-arch mountain2
+arch mountain4
 elevation 9303
 x 43
 y 22
 end
-arch mountain2
+arch mountain4
 elevation 10325
 x 43
 y 23
 end
-arch mountain2
+arch mountain4
 elevation 10598
 x 43
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 9652
 x 43
 y 25
@@ -10900,7 +11577,7 @@ elevation 8247
 x 43
 y 44
 end
-arch mountain2
+arch mountain4
 elevation 9057
 x 43
 y 45
@@ -10915,7 +11592,7 @@ elevation 6547
 x 43
 y 47
 end
-arch mountain
+arch mountain4
 elevation 5853
 x 43
 y 48
@@ -10979,17 +11656,17 @@ elevation 11791
 x 44
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 11680
 x 44
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11004
 x 44
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 10321
 x 44
 y 13
@@ -11014,17 +11691,17 @@ elevation 10597
 x 44
 y 17
 end
-arch mountain2
+arch mountain4
 elevation 10486
 x 44
 y 18
 end
-arch mountain2
+arch mountain4
 elevation 9238
 x 44
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 9127
 x 44
 y 20
@@ -11049,7 +11726,7 @@ elevation 11709
 x 44
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 10811
 x 44
 y 25
@@ -11149,7 +11826,7 @@ elevation 8664
 x 44
 y 44
 end
-arch mountain2
+arch mountain4
 elevation 9334
 x 44
 y 45
@@ -11159,12 +11836,12 @@ elevation 8963
 x 44
 y 46
 end
-arch mountain
+arch mountain4
 elevation 8211
 x 44
 y 47
 end
-arch mountain
+arch mountain4
 elevation 7780
 x 44
 y 48
@@ -11228,7 +11905,7 @@ elevation 10552
 x 45
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 10897
 x 45
 y 11
@@ -11253,12 +11930,12 @@ elevation 7403
 x 45
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 9751
 x 45
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 10586
 x 45
 y 17
@@ -11273,7 +11950,7 @@ elevation 10682
 x 45
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 10429
 x 45
 y 20
@@ -11298,7 +11975,7 @@ elevation 12331
 x 45
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 11555
 x 45
 y 25
@@ -11403,22 +12080,22 @@ elevation 8934
 x 45
 y 45
 end
-arch mountain2
+arch mountain4
 elevation 9229
 x 45
 y 46
 end
-arch mountain
+arch mountain4
 elevation 8792
 x 45
 y 47
 end
-arch mountain
+arch mountain4
 elevation 7905
 x 45
 y 48
 end
-arch mountain
+arch mountain4
 elevation 8255
 x 45
 y 49
@@ -11462,7 +12139,7 @@ elevation 10586
 x 46
 y 7
 end
-arch mountain2
+arch mountain4
 elevation 9453
 x 46
 y 8
@@ -11477,7 +12154,7 @@ elevation 9191
 x 46
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 10236
 x 46
 y 11
@@ -11502,7 +12179,7 @@ elevation 7505
 x 46
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 9510
 x 46
 y 16
@@ -11522,7 +12199,7 @@ elevation 11251
 x 46
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 11479
 x 46
 y 20
@@ -11547,7 +12224,7 @@ elevation 12725
 x 46
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 11952
 x 46
 y 25
@@ -11647,12 +12324,12 @@ elevation 8151
 x 46
 y 44
 end
-arch mountain2
+arch mountain4
 elevation 9104
 x 46
 y 45
 end
-arch mountain2
+arch mountain4
 elevation 9219
 x 46
 y 46
@@ -11711,7 +12388,7 @@ elevation 9343
 x 47
 y 7
 end
-arch mountain2
+arch mountain4
 elevation 9006
 x 47
 y 8
@@ -11726,32 +12403,32 @@ elevation 8567
 x 47
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 9812
 x 47
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11187
 x 47
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 11975
 x 47
 y 13
 end
-arch mountain2
+arch mountain4
 elevation 11627
 x 47
 y 14
 end
-arch mountain2
+arch mountain4
 elevation 10922
 x 47
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 10188
 x 47
 y 16
@@ -11771,7 +12448,7 @@ elevation 11510
 x 47
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 11776
 x 47
 y 20
@@ -11796,12 +12473,12 @@ elevation 12908
 x 47
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 11906
 x 47
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 10109
 x 47
 y 26
@@ -11901,7 +12578,7 @@ elevation 8615
 x 47
 y 45
 end
-arch mountain2
+arch mountain4
 elevation 9047
 x 47
 y 46
@@ -11960,12 +12637,12 @@ elevation 12229
 x 48
 y 7
 end
-arch mountain2
+arch mountain4
 elevation 10951
 x 48
 y 8
 end
-arch mountain2
+arch mountain4
 elevation 10426
 x 48
 y 9
@@ -12020,7 +12697,7 @@ elevation 11379
 x 48
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 11918
 x 48
 y 20
@@ -12040,17 +12717,17 @@ elevation 13113
 x 48
 y 23
 end
-arch mountain2
+arch mountain4
 elevation 11966
 x 48
 y 24
 end
-arch mountain2
+arch mountain4
 elevation 10881
 x 48
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 9772
 x 48
 y 26
@@ -12219,22 +12896,22 @@ elevation 12058
 x 49
 y 9
 end
-arch mountain2
+arch mountain4
 elevation 11212
 x 49
 y 10
 end
-arch mountain2
+arch mountain4
 elevation 10733
 x 49
 y 11
 end
-arch mountain2
+arch mountain4
 elevation 11245
 x 49
 y 12
 end
-arch mountain2
+arch mountain4
 elevation 11938
 x 49
 y 13
@@ -12244,47 +12921,47 @@ elevation 12304
 x 49
 y 14
 end
-arch mountain2
+arch mountain4
 elevation 11751
 x 49
 y 15
 end
-arch mountain2
+arch mountain4
 elevation 9930
 x 49
 y 16
 end
-arch mountain2
+arch mountain4
 elevation 9821
 x 49
 y 17
 end
-arch mountain2
+arch mountain4
 elevation 10377
 x 49
 y 18
 end
-arch mountain2
+arch mountain4
 elevation 10707
 x 49
 y 19
 end
-arch mountain2
+arch mountain4
 elevation 10880
 x 49
 y 20
 end
-arch mountain2
+arch mountain4
 elevation 11348
 x 49
 y 21
 end
-arch mountain2
+arch mountain4
 elevation 11636
 x 49
 y 22
 end
-arch mountain2
+arch mountain4
 elevation 11131
 x 49
 y 23
@@ -12299,7 +12976,7 @@ elevation 8330
 x 49
 y 25
 end
-arch mountain2
+arch mountain4
 elevation 9111
 x 49
 y 26
@@ -12379,17 +13056,17 @@ elevation 4068
 x 49
 y 41
 end
-arch mountain
+arch mountain4
 elevation 5013
 x 49
 y 42
 end
-arch mountain
+arch mountain4
 elevation 6195
 x 49
 y 43
 end
-arch mountain
+arch mountain4
 elevation 7136
 x 49
 y 44
