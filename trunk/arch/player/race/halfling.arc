@@ -17,11 +17,11 @@ anim
 halfling.111
 halfling.112
 halfling.131
-halfling.131
+halfling.132
 halfling.151
 halfling.152
 halfling.171
-halfling.171
+halfling.172
 facings 4
 mina
 is_animated 1
