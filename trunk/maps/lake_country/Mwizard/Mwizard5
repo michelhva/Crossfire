@@ -4842,39 +4842,9 @@ arch chinese_dragon
 x 2
 y 14
 end
-More
-arch chinese_dragon_2
-x 3
-y 14
-end
-More
-arch chinese_dragon_3
-x 2
-y 15
-end
-More
-arch chinese_dragon_4
-x 3
-y 15
-end
 arch chinese_dragon
 x 3
 y 19
-end
-More
-arch chinese_dragon_2
-x 4
-y 19
-end
-More
-arch chinese_dragon_3
-x 3
-y 20
-end
-More
-arch chinese_dragon_4
-x 4
-y 20
 end
 arch dragonman
 name Dragon Lord
@@ -4906,72 +4876,17 @@ end
 arch spell_sm_lightning
 end
 end
-More
-arch dragonman_2
-name Dragon Lord
-hp 5000
-x 4
-y 7
-speed 1.000000
-level 30
-immune 28
-end
 arch chinese_dragon
 x 4
 y 16
-end
-More
-arch chinese_dragon_2
-x 5
-y 16
-end
-More
-arch chinese_dragon_3
-x 4
-y 17
-end
-More
-arch chinese_dragon_4
-x 5
-y 17
 end
 arch chinese_dragon
 x 6
 y 14
 end
-More
-arch chinese_dragon_2
-x 7
-y 14
-end
-More
-arch chinese_dragon_3
-x 6
-y 15
-end
-More
-arch chinese_dragon_4
-x 7
-y 15
-end
 arch chinese_dragon
 x 6
 y 22
-end
-More
-arch chinese_dragon_2
-x 7
-y 22
-end
-More
-arch chinese_dragon_3
-x 6
-y 23
-end
-More
-arch chinese_dragon_4
-x 7
-y 23
 end
 arch dragonman
 name White Dragon Master
@@ -4986,16 +4901,6 @@ end
 arch abil_icestorm
 end
 end
-More
-arch dragonman_2
-name White Dragon Master
-hp 3500
-x 7
-y 4
-speed 1.000000
-level 29
-immune 28
-end
 arch dragonman
 name Blue Dragon Master
 x 7
@@ -5007,53 +4912,13 @@ immune 28
 arch spell_sm_lightning
 end
 end
-More
-arch dragonman_2
-name Blue Dragon Master
-hp 3500
-x 7
-y 11
-speed 1.000000
-level 29
-immune 28
-end
 arch chinese_dragon
 x 7
 y 19
 end
-More
-arch chinese_dragon_2
-x 8
-y 19
-end
-More
-arch chinese_dragon_3
-x 7
-y 20
-end
-More
-arch chinese_dragon_4
-x 8
-y 20
-end
 arch chinese_dragon
 x 9
 y 17
-end
-More
-arch chinese_dragon_2
-x 10
-y 17
-end
-More
-arch chinese_dragon_3
-x 9
-y 18
-end
-More
-arch chinese_dragon_4
-x 10
-y 18
 end
 arch dragonman
 name Red Dragon Master
@@ -5068,650 +4933,95 @@ end
 arch abil_burning_hands
 end
 end
-More
-arch dragonman_2
-name Red Dragon Master
-hp 3500
-x 10
-y 7
-speed 1.000000
-level 29
-immune 28
-end
 arch chinese_dragon
 x 10
 y 19
-end
-More
-arch chinese_dragon_2
-x 11
-y 19
-end
-More
-arch chinese_dragon_3
-x 10
-y 20
-end
-More
-arch chinese_dragon_4
-x 11
-y 20
 end
 arch chinese_dragon
 x 10
 y 22
 end
-More
-arch chinese_dragon_2
-x 11
-y 22
-end
-More
-arch chinese_dragon_3
-x 10
-y 23
-end
-More
-arch chinese_dragon_4
-x 11
-y 23
-end
 arch chinese_dragon
 x 11
 y 15
-end
-More
-arch chinese_dragon_2
-x 12
-y 15
-end
-More
-arch chinese_dragon_3
-x 11
-y 16
-end
-More
-arch chinese_dragon_4
-x 12
-y 16
 end
 arch big_elec
 x 15
 y 2
 end
-More
-arch big_elec_2
-x 16
-y 2
-end
-More
-arch big_elec_3
-x 15
-y 3
-end
-More
-arch big_elec_4
-x 16
-y 3
-end
-More
-arch big_elec_5
-x 15
-y 4
-end
-More
-arch big_elec_6
-x 16
-y 4
-end
 arch big_elec
 x 16
 y 9
 end
-More
-arch big_elec_2
-x 17
-y 9
-end
-More
-arch big_elec_3
-x 16
-y 10
-end
-More
-arch big_elec_4
-x 17
-y 10
-end
-More
-arch big_elec_5
-x 16
-y 11
-end
-More
-arch big_elec_6
-x 17
-y 11
-end
 arch big_dragon
 x 16
 y 18
-end
-More
-arch big_dragon_2
-x 17
-y 18
-end
-More
-arch big_dragon_3
-x 18
-y 18
-end
-More
-arch big_dragon_4
-x 16
-y 19
-end
-More
-arch big_dragon_5
-x 17
-y 19
-end
-More
-arch big_dragon_6
-x 18
-y 19
 end
 arch big_elec
 x 17
 y 6
 end
-More
-arch big_elec_2
-x 18
-y 6
-end
-More
-arch big_elec_3
-x 17
-y 7
-end
-More
-arch big_elec_4
-x 18
-y 7
-end
-More
-arch big_elec_5
-x 17
-y 8
-end
-More
-arch big_elec_6
-x 18
-y 8
-end
 arch big_dragon
 x 17
 y 16
 end
-More
-arch big_dragon_2
-x 18
-y 16
-end
-More
-arch big_dragon_3
-x 19
-y 16
-end
-More
-arch big_dragon_4
-x 17
-y 17
-end
-More
-arch big_dragon_5
-x 18
-y 17
-end
-More
-arch big_dragon_6
-x 19
-y 17
-end
 arch big_dragon
 x 17
 y 25
-end
-More
-arch big_dragon_2
-x 18
-y 25
-end
-More
-arch big_dragon_3
-x 19
-y 25
-end
-More
-arch big_dragon_4
-x 17
-y 26
-end
-More
-arch big_dragon_5
-x 18
-y 26
-end
-More
-arch big_dragon_6
-x 19
-y 26
 end
 arch big_elec
 x 18
 y 3
 end
-More
-arch big_elec_2
-x 19
-y 3
-end
-More
-arch big_elec_3
-x 18
-y 4
-end
-More
-arch big_elec_4
-x 19
-y 4
-end
-More
-arch big_elec_5
-x 18
-y 5
-end
-More
-arch big_elec_6
-x 19
-y 5
-end
 arch big_dragon
 x 18
 y 21
 end
-More
-arch big_dragon_2
-x 19
-y 21
-end
-More
-arch big_dragon_3
-x 20
-y 21
-end
-More
-arch big_dragon_4
-x 18
-y 22
-end
-More
-arch big_dragon_5
-x 19
-y 22
-end
-More
-arch big_dragon_6
-x 20
-y 22
-end
 arch big_elec
 x 19
 y 9
-end
-More
-arch big_elec_2
-x 20
-y 9
-end
-More
-arch big_elec_3
-x 19
-y 10
-end
-More
-arch big_elec_4
-x 20
-y 10
-end
-More
-arch big_elec_5
-x 19
-y 11
-end
-More
-arch big_elec_6
-x 20
-y 11
 end
 arch big_dragon
 x 20
 y 14
 end
-More
-arch big_dragon_2
-x 21
-y 14
-end
-More
-arch big_dragon_3
-x 22
-y 14
-end
-More
-arch big_dragon_4
-x 20
-y 15
-end
-More
-arch big_dragon_5
-x 21
-y 15
-end
-More
-arch big_dragon_6
-x 22
-y 15
-end
 arch big_dragon
 x 20
 y 24
-end
-More
-arch big_dragon_2
-x 21
-y 24
-end
-More
-arch big_dragon_3
-x 22
-y 24
-end
-More
-arch big_dragon_4
-x 20
-y 25
-end
-More
-arch big_dragon_5
-x 21
-y 25
-end
-More
-arch big_dragon_6
-x 22
-y 25
 end
 arch big_elec
 x 21
 y 3
 end
-More
-arch big_elec_2
-x 22
-y 3
-end
-More
-arch big_elec_3
-x 21
-y 4
-end
-More
-arch big_elec_4
-x 22
-y 4
-end
-More
-arch big_elec_5
-x 21
-y 5
-end
-More
-arch big_elec_6
-x 22
-y 5
-end
 arch big_dragon
 x 21
 y 18
-end
-More
-arch big_dragon_2
-x 22
-y 18
-end
-More
-arch big_dragon_3
-x 23
-y 18
-end
-More
-arch big_dragon_4
-x 21
-y 19
-end
-More
-arch big_dragon_5
-x 22
-y 19
-end
-More
-arch big_dragon_6
-x 23
-y 19
 end
 arch big_elec
 x 22
 y 7
 end
-More
-arch big_elec_2
-x 23
-y 7
-end
-More
-arch big_elec_3
-x 22
-y 8
-end
-More
-arch big_elec_4
-x 23
-y 8
-end
-More
-arch big_elec_5
-x 22
-y 9
-end
-More
-arch big_elec_6
-x 23
-y 9
-end
 arch big_dragon
 x 23
 y 16
-end
-More
-arch big_dragon_2
-x 24
-y 16
-end
-More
-arch big_dragon_3
-x 25
-y 16
-end
-More
-arch big_dragon_4
-x 23
-y 17
-end
-More
-arch big_dragon_5
-x 24
-y 17
-end
-More
-arch big_dragon_6
-x 25
-y 17
 end
 arch big_dragon
 x 23
 y 21
 end
-More
-arch big_dragon_2
-x 24
-y 21
-end
-More
-arch big_dragon_3
-x 25
-y 21
-end
-More
-arch big_dragon_4
-x 23
-y 22
-end
-More
-arch big_dragon_5
-x 24
-y 22
-end
-More
-arch big_dragon_6
-x 25
-y 22
-end
 arch big_dragon
 x 23
 y 24
-end
-More
-arch big_dragon_2
-x 24
-y 24
-end
-More
-arch big_dragon_3
-x 25
-y 24
-end
-More
-arch big_dragon_4
-x 23
-y 25
-end
-More
-arch big_dragon_5
-x 24
-y 25
-end
-More
-arch big_dragon_6
-x 25
-y 25
 end
 arch big_elec
 x 24
 y 3
-end
-More
-arch big_elec_2
-x 25
-y 3
-end
-More
-arch big_elec_3
-x 24
-y 4
-end
-More
-arch big_elec_4
-x 25
-y 4
-end
-More
-arch big_elec_5
-x 24
-y 5
-end
-More
-arch big_elec_6
-x 25
-y 5
 end
 arch big_elec
 x 25
 y 6
 end
-More
-arch big_elec_2
-x 26
-y 6
-end
-More
-arch big_elec_3
-x 25
-y 7
-end
-More
-arch big_elec_4
-x 26
-y 7
-end
-More
-arch big_elec_5
-x 25
-y 8
-end
-More
-arch big_elec_6
-x 26
-y 8
-end
 arch big_elec
 x 25
 y 9
-end
-More
-arch big_elec_2
-x 26
-y 9
-end
-More
-arch big_elec_3
-x 25
-y 10
-end
-More
-arch big_elec_4
-x 26
-y 10
-end
-More
-arch big_elec_5
-x 25
-y 11
-end
-More
-arch big_elec_6
-x 26
-y 11
 end

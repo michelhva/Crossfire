@@ -1,77 +1,148 @@
 arch map
+name <untitled>
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Wed May  3 19:03:34 1995
 endmsg
-x 20
-y 20
+width 20
+height 20
+end
+arch cobblestones2
 end
 arch cwall_2_2_2
 end
+arch cobblestones2
+y 1
+end
 arch cwall_3_2
 y 1
+end
+arch cobblestones2
+y 2
 end
 arch cwall_3_2
 y 2
 end
+arch cobblestones2
+y 3
+end
 arch cwall_2_1_1
 y 3
+end
+arch cobblestones2
+y 4
 end
 arch cwall_2_1_1
 y 4
 end
+arch cobblestones2
+y 5
+end
 arch cwall_2_1_1
 y 5
+end
+arch cobblestones2
+y 6
 end
 arch cwall_2_1_1
 y 6
 end
+arch cobblestones2
+y 7
+end
 arch cwall_3_2
 y 7
+end
+arch cobblestones2
+y 8
 end
 arch cwall_3_2
 y 8
 end
-arch cwall_3_2
+arch cobblestones2
 y 9
 end
-arch cwall_3_2
+arch guard_house_1
+y 9
+end
+arch cobblestones2
 y 10
+end
+arch guard_house_1
+y 10
+end
+arch cobblestones2
+y 11
 end
 arch cwall_3_2
 y 11
 end
+arch cobblestones2
+y 12
+end
 arch cwall_3_2
 y 12
+end
+arch cobblestones2
+y 13
 end
 arch cwall_2_1_1
 y 13
 end
+arch cobblestones2
+y 14
+end
 arch cwall_2_1_1
 y 14
+end
+arch cobblestones2
+y 15
 end
 arch cwall_2_1_1
 y 15
 end
+arch cobblestones2
+y 16
+end
 arch cwall_3_2
 y 16
+end
+arch cobblestones2
+y 17
 end
 arch cwall_3_2
 y 17
 end
+arch cobblestones2
+y 18
+end
 arch cwall_3_2
 y 18
+end
+arch cobblestones2
+y 19
 end
 arch cwall_2_2_1
 y 19
 end
+arch cobblestones2
+x 1
+end
 arch cwall_3_3
 x 1
+end
+arch cobblestones2
+x 1
+y 1
 end
 arch cwall_4
 x 1
 y 1
+end
+arch cobblestones2
+x 1
+y 2
 end
 arch cwall_3_1
 x 1
@@ -109,18 +180,23 @@ arch evergreen
 x 1
 y 6
 end
+arch cobblestones2
+x 1
+y 7
+end
 arch cwall_2_2_3
 x 1
 y 7
+end
+arch cobblestones2
+x 1
+y 8
 end
 arch cwall_3_4
 x 1
 y 8
 end
-arch guard_house_2
-slaying gatehouse
-hp 12
-sp 8
+arch cobblestones2
 x 1
 y 9
 end
@@ -129,11 +205,30 @@ slaying gatehouse
 hp 12
 sp 8
 x 1
+y 9
+end
+arch cobblestones2
+x 1
 y 10
+end
+arch guard_house_2
+slaying gatehouse
+hp 12
+sp 8
+x 1
+y 10
+end
+arch cobblestones2
+x 1
+y 11
 end
 arch cwall_3_4
 x 1
 y 11
+end
+arch cobblestones2
+x 1
+y 12
 end
 arch cwall_2_2_4
 x 1
@@ -163,28 +258,55 @@ arch evergreen
 x 1
 y 15
 end
+arch cobblestones2
+x 1
+y 16
+end
 arch cwall_2_2_3
 x 1
 y 16
+end
+arch cobblestones2
+x 1
+y 17
 end
 arch cwall_3_4
 x 1
 y 17
 end
+arch cobblestones2
+x 1
+y 18
+end
 arch cwall_4
 x 1
 y 18
+end
+arch cobblestones2
+x 1
+y 19
 end
 arch cwall_3_1
 x 1
 y 19
 end
+arch cobblestones2
+x 2
+end
 arch cwall_3_3
 x 2
+end
+arch cobblestones2
+x 2
+y 1
 end
 arch cwall_3_4
 x 2
 y 1
+end
+arch cobblestones2
+x 2
+y 2
 end
 arch cwall_2_2_4
 x 2
@@ -258,14 +380,25 @@ arch grass
 x 2
 y 17
 end
+arch cobblestones2
+x 2
+y 18
+end
 arch cwall_3_3
 x 2
 y 18
 end
+arch cobblestones2
+x 2
+y 19
+end
 arch cwall_3_1
 x 2
 y 19
 end
+arch cobblestones2
+x 3
+end
 arch cwall_2_1_2
 x 3
 end
@@ -349,13 +482,24 @@ arch grass
 x 3
 y 17
 end
+arch cobblestones2
+x 3
+y 18
+end
 arch cwall_3_3
 x 3
 y 18
 end
+arch cobblestones2
+x 3
+y 19
+end
 arch cwall_3_1
 x 3
 y 19
+end
+arch cobblestones2
+x 4
 end
 arch cwall_2_1_2
 x 4
@@ -448,13 +592,24 @@ arch grass
 x 4
 y 17
 end
+arch cobblestones2
+x 4
+y 18
+end
 arch cwall_3_3
 x 4
 y 18
 end
+arch cobblestones2
+x 4
+y 19
+end
 arch cwall_3_1
 x 4
 y 19
+end
+arch cobblestones2
+x 5
 end
 arch cwall_2_1_2
 x 5
@@ -539,13 +694,24 @@ arch grass
 x 5
 y 17
 end
+arch cobblestones2
+x 5
+y 18
+end
 arch cwall_3_3
 x 5
 y 18
 end
+arch cobblestones2
+x 5
+y 19
+end
 arch cwall_3_1
 x 5
 y 19
+end
+arch cobblestones2
+x 6
 end
 arch cwall_2_1_2
 x 6
@@ -634,13 +800,24 @@ arch grass
 x 6
 y 17
 end
+arch cobblestones2
+x 6
+y 18
+end
 arch cwall_3_3
 x 6
 y 18
 end
+arch cobblestones2
+x 6
+y 19
+end
 arch cwall_3_1
 x 6
 y 19
+end
+arch cobblestones2
+x 7
 end
 arch cwall_2_1_2
 x 7
@@ -724,15 +901,26 @@ end
 arch grass
 x 7
 y 17
+end
+arch cobblestones2
+x 7
+y 18
 end
 arch cwall_2_2_3
 x 7
 y 18
 end
+arch cobblestones2
+x 7
+y 19
+end
 arch cwall_3_1
 x 7
 y 19
 end
+arch cobblestones2
+x 8
+end
 arch cwall_2_1_2
 x 8
 end
@@ -824,9 +1012,16 @@ arch evergreen
 x 8
 y 18
 end
+arch cobblestones2
+x 8
+y 19
+end
 arch cwall_2_1_2
 x 8
 y 19
+end
+arch cobblestones2
+x 9
 end
 arch cwall_2_1_2
 x 9
@@ -911,9 +1106,16 @@ arch evergreen
 x 9
 y 18
 end
+arch cobblestones2
+x 9
+y 19
+end
 arch cwall_2_1_2
 x 9
 y 19
+end
+arch cobblestones2
+x 10
 end
 arch cwall_2_1_2
 x 10
@@ -1010,9 +1212,16 @@ arch evergreen
 x 10
 y 18
 end
+arch cobblestones2
+x 10
+y 19
+end
 arch cwall_2_1_2
 x 10
 y 19
+end
+arch cobblestones2
+x 11
 end
 arch cwall_2_1_2
 x 11
@@ -1105,12 +1314,23 @@ arch evergreen
 x 11
 y 18
 end
+arch cobblestones2
+x 11
+y 19
+end
 arch cwall_2_1_2
 x 11
 y 19
 end
+arch cobblestones2
+x 12
+end
 arch cwall_3_3
 x 12
+end
+arch cobblestones2
+x 12
+y 1
 end
 arch cwall_2_2_1
 x 12
@@ -1191,17 +1411,32 @@ end
 arch grass
 x 12
 y 17
+end
+arch cobblestones2
+x 12
+y 18
 end
 arch cwall_2_2_2
 x 12
 y 18
 end
+arch cobblestones2
+x 12
+y 19
+end
 arch cwall_3_1
 x 12
 y 19
 end
+arch cobblestones2
+x 13
+end
 arch cwall_3_3
 x 13
+end
+arch cobblestones2
+x 13
+y 1
 end
 arch cwall_3_1
 x 13
@@ -1283,16 +1518,31 @@ arch grass
 x 13
 y 17
 end
+arch cobblestones2
+x 13
+y 18
+end
 arch cwall_3_3
 x 13
 y 18
+end
+arch cobblestones2
+x 13
+y 19
 end
 arch cwall_3_1
 x 13
 y 19
 end
+arch cobblestones2
+x 14
+end
 arch cwall_3_3
 x 14
+end
+arch cobblestones2
+x 14
+y 1
 end
 arch cwall_3_1
 x 14
@@ -1370,16 +1620,31 @@ arch grass
 x 14
 y 17
 end
+arch cobblestones2
+x 14
+y 18
+end
 arch cwall_3_3
 x 14
 y 18
+end
+arch cobblestones2
+x 14
+y 19
 end
 arch cwall_3_1
 x 14
 y 19
 end
+arch cobblestones2
+x 15
+end
 arch cwall_3_3
 x 15
+end
+arch cobblestones2
+x 15
+y 1
 end
 arch cwall_3_1
 x 15
@@ -1469,28 +1734,55 @@ arch grass
 x 15
 y 17
 end
+arch cobblestones2
+x 15
+y 18
+end
 arch cwall_3_3
 x 15
 y 18
 end
+arch cobblestones2
+x 15
+y 19
+end
 arch cwall_3_1
 x 15
 y 19
+end
+arch cobblestones2
+x 16
 end
 arch cwall_3_3
 x 16
+end
+arch cobblestones2
+x 16
+y 1
 end
 arch cwall_4
 x 16
 y 1
 end
-arch cwall_2_1_1
+arch cobblestones2
 x 16
 y 2
 end
 arch cwall_2_1_1
 x 16
+y 2
+end
+arch cobblestones2
+x 16
 y 3
+end
+arch cwall_2_1_1
+x 16
+y 3
+end
+arch cobblestones2
+x 16
+y 4
 end
 arch cwall_2_2_1
 x 16
@@ -1556,20 +1848,47 @@ arch grass
 x 16
 y 17
 end
+arch cobblestones2
+x 16
+y 18
+end
 arch cwall_3_3
 x 16
 y 18
+end
+arch cobblestones2
+x 16
+y 19
 end
 arch cwall_3_1
 x 16
 y 19
 end
+arch cobblestones2
+x 17
+end
 arch cwall_3_3
 x 17
+end
+arch cobblestones2
+x 17
+y 1
 end
 arch cwall_3_1
 x 17
 y 1
+end
+arch cobblestones2
+x 17
+y 2
+end
+arch cobblestones2
+x 17
+y 3
+end
+arch cobblestones2
+x 17
+y 4
 end
 arch cityport_a
 x 17
@@ -1623,28 +1942,63 @@ arch cobblestones2
 x 17
 y 16
 end
+arch cobblestones2
+x 17
+y 17
+end
 arch cwall_2_2_2
 x 17
 y 17
+end
+arch cobblestones2
+x 17
+y 18
 end
 arch cwall_4
 x 17
 y 18
 end
+arch cobblestones2
+x 17
+y 19
+end
 arch cwall_3_1
 x 17
 y 19
 end
+arch cobblestones2
+x 18
+end
 arch cwall_3_3
 x 18
+end
+arch cobblestones2
+x 18
+y 1
 end
 arch cwall_3_1
 x 18
 y 1
 end
+arch cobblestones2
+x 18
+y 2
+end
+arch cobblestones2
+x 18
+y 3
+end
+arch cobblestones2
+x 18
+y 4
+end
 arch cwall_3_3
 x 18
 y 4
+end
+arch cobblestones2
+x 18
+y 5
 end
 arch cwall_2_2_1
 x 18
@@ -1678,108 +2032,215 @@ arch evergreen
 x 18
 y 12
 end
+arch cobblestones2
+x 18
+y 13
+end
 arch cwall_2_2_2
 x 18
 y 13
 end
-arch cwall_3_2
+arch cobblestones2
 x 18
 y 14
 end
 arch cwall_3_2
 x 18
+y 14
+end
+arch cobblestones2
+x 18
 y 15
+end
+arch cwall_3_2
+x 18
+y 15
+end
+arch cobblestones2
+x 18
+y 16
 end
 arch cwall_3_2
 x 18
 y 16
 end
-arch cwall_4
+arch cobblestones2
 x 18
 y 17
 end
 arch cwall_4
 x 18
+y 17
+end
+arch cobblestones2
+x 18
 y 18
+end
+arch cwall_4
+x 18
+y 18
+end
+arch cobblestones2
+x 18
+y 19
 end
 arch cwall_3_1
 x 18
 y 19
 end
+arch cobblestones2
+x 19
+end
 arch cwall_2_2_3
 x 19
+end
+arch cobblestones2
+x 19
+y 1
 end
 arch cwall_3_4
 x 19
 y 1
 end
-arch cwall_2_1_1
+arch cobblestones2
 x 19
 y 2
 end
 arch cwall_2_1_1
 x 19
+y 2
+end
+arch cobblestones2
+x 19
 y 3
 end
-arch cwall_3_4
+arch cwall_2_1_1
+x 19
+y 3
+end
+arch cobblestones2
 x 19
 y 4
 end
 arch cwall_3_4
 x 19
+y 4
+end
+arch cobblestones2
+x 19
 y 5
 end
-arch cwall_2_1_1
+arch cwall_3_4
+x 19
+y 5
+end
+arch cobblestones2
 x 19
 y 6
 end
 arch cwall_2_1_1
 x 19
+y 6
+end
+arch cobblestones2
+x 19
 y 7
 end
 arch cwall_2_1_1
+x 19
+y 7
+end
+arch cobblestones2
 x 19
 y 8
 end
 arch cwall_2_1_1
 x 19
+y 8
+end
+arch cobblestones2
+x 19
 y 9
 end
 arch cwall_2_1_1
+x 19
+y 9
+end
+arch cobblestones2
 x 19
 y 10
 end
 arch cwall_2_1_1
 x 19
+y 10
+end
+arch cobblestones2
+x 19
 y 11
+end
+arch cwall_2_1_1
+x 19
+y 11
+end
+arch cobblestones2
+x 19
+y 12
 end
 arch cwall_2_1_1
 x 19
 y 12
 end
-arch cwall_3_4
+arch cobblestones2
 x 19
 y 13
 end
 arch cwall_3_4
 x 19
+y 13
+end
+arch cobblestones2
+x 19
 y 14
 end
 arch cwall_3_4
+x 19
+y 14
+end
+arch cobblestones2
 x 19
 y 15
 end
 arch cwall_3_4
 x 19
+y 15
+end
+arch cobblestones2
+x 19
 y 16
 end
 arch cwall_3_4
+x 19
+y 16
+end
+arch cobblestones2
 x 19
 y 17
 end
 arch cwall_3_4
 x 19
+y 17
+end
+arch cobblestones2
+x 19
 y 18
+end
+arch cwall_3_4
+x 19
+y 18
+end
+arch cobblestones2
+x 19
+y 19
 end
 arch cwall_2_2_4
 x 19
@@ -1792,149 +2253,51 @@ sp 14
 x 7
 y 3
 end
-More
-arch inn_2
-slaying inn
-hp 17
-sp 14
-x 8
-y 3
-end
 arch courthouse
 x 10
 y 5
-end
-More
-arch courthouse_2
-x 11
-y 5
-end
-More
-arch courthouse_3
-x 10
-y 6
-end
-More
-arch courthouse_4
-x 11
-y 6
 end
 arch store_general
 x 10
 y 13
 end
-More
-arch store_general_2
-x 11
-y 13
-end
-More
-arch store_general_3
-x 10
-y 14
-end
-More
-arch store_general_4
-x 11
-y 14
-end
 arch barrack_long
 x 15
-y 5
-end
-More
-arch barrack_long_2
-x 16
 y 5
 end
 arch barrack_long
 x 15
 y 6
 end
-More
-arch barrack_long_2
-x 16
-y 6
-end
 arch barrack_long
 x 15
-y 7
-end
-More
-arch barrack_long_2
-x 16
 y 7
 end
 arch barrack_long
 x 15
 y 12
 end
-More
-arch barrack_long_2
-x 16
-y 12
-end
 arch barrack_long
 x 15
-y 13
-end
-More
-arch barrack_long_2
-x 16
 y 13
 end
 arch barrack_long
 x 15
 y 14
 end
-More
-arch barrack_long_2
-x 16
-y 14
-end
 arch barrack_long
 x 15
-y 15
-end
-More
-arch barrack_long_2
-x 16
 y 15
 end
 arch barrack_long
 x 15
 y 16
 end
-More
-arch barrack_long_2
-x 16
-y 16
-end
 arch barrack_long
 x 15
-y 17
-end
-More
-arch barrack_long_2
-x 16
 y 17
 end
 arch keep
 x 17
 y 2
-end
-More
-arch keep_2
-x 18
-y 2
-end
-More
-arch keep_3
-x 17
-y 3
-end
-More
-arch keep_4
-x 18
-y 3
 end

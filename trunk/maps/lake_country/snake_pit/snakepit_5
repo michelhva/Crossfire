@@ -3521,27 +3521,6 @@ arch gem
 nrof 500
 end
 end
-More
-arch dragon_2
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 5
-y 3
-speed 0.800000
-level 30
-immune 4117
-protected 8
-attacktype 29
-flying 1
-can_cast_spell 1
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -3554,18 +3533,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 4
-y 5
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name black metallic serpent
@@ -3580,18 +3547,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 4
-y 13
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -3604,18 +3559,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 6
-y 5
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -3632,20 +3575,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 10
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -3660,20 +3589,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 13
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -3690,20 +3605,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 16
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -3716,18 +3617,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 7
-y 3
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -3744,20 +3633,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 11
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -3772,20 +3647,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 14
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -3802,20 +3663,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 17
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -3829,18 +3676,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 8
-y 2
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -3853,18 +3688,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 8
-y 5
-immune 1024
-protected 12
-attacktype 82945
 end
 arch dragon
 name wyvern of chaos
@@ -3898,27 +3721,6 @@ arch gem
 nrof 500
 end
 end
-More
-arch dragon_2
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 10
-y 13
-speed 0.500000
-level 30
-immune 4117
-protected 8
-attacktype 29
-flying 1
-can_cast_spell 1
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -3934,20 +3736,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 15
-y 4
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -3962,20 +3750,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 16
-y 5
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name A huge sleek black metallic serpent
@@ -3994,20 +3768,6 @@ end
 arch spell_mass_confusion
 end
 end
-More
-arch cobra_2
-name A huge sleek black metallic serpent
-hp 1000
-exp 55000
-dam 30
-x 17
-y 16
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name A huge sleek black metallic serpent
 hp 1000
@@ -4024,20 +3784,6 @@ arch abil_poison_cloud
 end
 arch spell_mass_confusion
 end
-end
-More
-arch cobra_2
-name A huge sleek black metallic serpent
-hp 1000
-exp 55000
-dam 30
-x 18
-y 16
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name black metallic serpent
@@ -4052,18 +3798,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 19
-y 10
-immune 1024
-protected 12
-attacktype 82945
-end
 arch big_dragon
 name A trapped dragon
 hp 5500
@@ -4072,56 +3806,6 @@ x 20
 y 3
 speed 0.600000
 speed_left -9.349999
-end
-More
-arch big_dragon_2
-name A trapped dragon
-hp 5500
-exp 150000
-x 21
-y 3
-speed 0.600000
-speed_left -8.500000
-end
-More
-arch big_dragon_3
-name A trapped dragon
-hp 5500
-exp 150000
-x 22
-y 3
-speed 0.600000
-speed_left -8.500000
-end
-More
-arch big_dragon_4
-name A trapped dragon
-hp 5500
-exp 150000
-x 20
-y 4
-speed 0.600000
-speed_left -8.500000
-end
-More
-arch big_dragon_5
-name A trapped dragon
-hp 5500
-exp 150000
-x 21
-y 4
-speed 0.600000
-speed_left -8.500000
-end
-More
-arch big_dragon_6
-name A trapped dragon
-hp 5500
-exp 150000
-x 22
-y 4
-speed 0.600000
-speed_left -8.500000
 end
 arch cobra
 name black metallic serpent
@@ -4135,18 +3819,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 23
-y 3
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -4163,20 +3835,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 2
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -4191,20 +3849,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 5
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -4221,20 +3865,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 9
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -4249,20 +3879,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 3
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -4279,20 +3895,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 6
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name One sleek black metallic serpent
 hp 500
@@ -4308,20 +3910,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 10
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
@@ -4341,20 +3929,6 @@ end
 arch spell_mass_confusion
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 29
-y 18
-speed 1.000000
-speed_left -23.500000
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
@@ -4373,20 +3947,6 @@ arch spell_paralyze
 end
 arch spell_mass_confusion
 end
-end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 30
-y 18
-speed 1.000000
-speed_left -23.500000
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name black metallic serpent
@@ -4401,18 +3961,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 32
-y 2
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4425,18 +3973,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 32
-y 10
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -4453,20 +3989,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 32
-y 15
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4479,18 +4001,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 33
-y 5
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name One sleek black metallic serpent
@@ -4507,20 +4017,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 33
-y 16
-speed 0.700000
-speed_left -16.899998
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4533,18 +4029,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 34
-y 3
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name black metallic serpent
@@ -4559,18 +4043,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 35
-y 5
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4583,18 +4055,6 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 35
-y 9
-immune 1024
-protected 12
-attacktype 82945
 end
 arch cobra
 name black metallic serpent
@@ -4609,18 +4069,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 36
-y 7
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4634,18 +4082,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 37
-y 9
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4659,18 +4095,6 @@ attacktype 82945
 arch abil_poison_cloud
 end
 end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 37
-y 11
-immune 1024
-protected 12
-attacktype 82945
-end
 arch cobra
 name black metallic serpent
 hp 500
@@ -4683,16 +4107,4 @@ protected 12
 attacktype 82945
 arch abil_poison_cloud
 end
-end
-More
-arch cobra_2
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 38
-y 11
-immune 1024
-protected 12
-attacktype 82945
 end
