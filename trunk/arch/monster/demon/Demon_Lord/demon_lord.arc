@@ -24,6 +24,7 @@ resist_physical 75
 resist_fire 100
 resist_cold 80
 resist_fear 100
+resist_paralysis 100
 resist_holyword 90
 resist_godpower 90
 resist_magic 80
