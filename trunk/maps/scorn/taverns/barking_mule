@@ -106,9 +106,6 @@ end
 arch grass
 x 1
 end
-arch faerie_dragon
-x 1
-end
 arch grass
 x 1
 y 1
@@ -323,7 +320,18 @@ end
 arch grass
 x 3
 end
+arch ape
+sleep 0
+attack_movement 112
+x 3
+end
 arch grass
+x 3
+y 1
+end
+arch mover_7
+attacktype 1
+speed -0.5
 x 3
 y 1
 end
@@ -452,7 +460,18 @@ end
 arch grass
 x 4
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 4
+end
 arch grass
+x 4
+y 1
+end
+arch mover_7
+attacktype 1
+speed -0.5
 x 4
 y 1
 end
@@ -565,6 +584,11 @@ end
 arch grass
 x 5
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 5
+end
 arch grass
 x 5
 y 1
@@ -645,6 +669,11 @@ end
 arch grass
 x 6
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 6
+end
 arch grass
 x 6
 y 1
@@ -661,15 +690,20 @@ arch woodfloor
 x 6
 y 3
 end
-arch merchant
-name Jagger
+arch red_dragon2
+name Cindy Loo
 msg
+@match hi|hello
+Hello, welcome to the Barking Mule,
+I'm Cindy Loo. Do you want a drink?
+@match yes|drink
+Drinks are 3 gold sweety pie.
 @match *
-Hello.
-@match order|Order|buy|Buy|drink|Drink
-You pay cash?
-I don't take credit.
+Humm-dee-dumm... oh, pardon me you were saying?
 endmsg
+randomitems jail
+level 5
+speed -0.1
 stand_still 1
 x 6
 y 3
@@ -761,7 +795,9 @@ arch grass
 x 7
 y 1
 end
-arch mover_7
+arch faerie_dragon
+sleep 0
+attack_movement 112
 x 7
 y 1
 end
@@ -973,23 +1009,7 @@ end
 arch grass
 x 9
 end
-arch elf_man
-name Celebrity lookalike
-face spock.111
-msg
-@match *
-Some guy named Avion paid
-me 30 gold to stand here
-and look busy...
-endmsg
-animation spock
-x 9
-end
 arch grass
-x 9
-y 1
-end
-arch mover_7
 x 9
 y 1
 end
@@ -1076,14 +1096,13 @@ end
 arch grass
 x 10
 end
-arch pixie
-x 10
-end
 arch grass
 x 10
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 10
 y 1
 end
@@ -1179,11 +1198,18 @@ end
 arch grass
 x 11
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 11
+end
 arch grass
 x 11
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 11
 y 1
 end
@@ -1286,15 +1312,25 @@ end
 arch grass
 x 12
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 12
+end
 arch grass
 x 12
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 12
 y 1
 end
 arch cherub
+flying 0
+Wis 5
+attack_movement 112
 x 12
 y 1
 end
@@ -1311,6 +1347,16 @@ x 12
 y 3
 end
 arch chair_1.2
+x 12
+y 3
+end
+arch warrior_1
+name Chad
+msg
+@match *
+Chad likes his drinky winky, yes he do.
+Hello drinky winky.
+endmsg
 x 12
 y 3
 end
@@ -1381,11 +1427,18 @@ end
 arch grass
 x 13
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 13
+end
 arch grass
 x 13
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 13
 y 1
 end
@@ -1472,11 +1525,18 @@ end
 arch grass
 x 14
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 14
+end
 arch grass
 x 14
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 14
 y 1
 end
@@ -1525,6 +1585,7 @@ x 14
 y 9
 end
 arch c_man
+name Milt
 msg
 @match work|job
 I hear the fellow at the
@@ -1571,11 +1632,18 @@ end
 arch grass
 x 15
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 15
+end
 arch grass
 x 15
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 15
 y 1
 end
@@ -1686,11 +1754,18 @@ end
 arch grass
 x 16
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 16
+end
 arch grass
 x 16
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 16
 y 1
 end
@@ -1769,11 +1844,18 @@ end
 arch grass
 x 17
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 17
+end
 arch grass
 x 17
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 17
 y 1
 end
@@ -1856,11 +1938,18 @@ end
 arch grass
 x 18
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 18
+end
 arch grass
 x 18
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 18
 y 1
 end
@@ -1951,11 +2040,18 @@ end
 arch grass
 x 19
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 19
+end
 arch grass
 x 19
 y 1
 end
 arch mover_7
+attacktype 1
+speed -0.5
 x 19
 y 1
 end
@@ -1980,6 +2076,7 @@ x 19
 y 4
 end
 arch farmer
+name Ole
 msg
 @match *
 Sure I had a bit too much,
@@ -1987,6 +2084,7 @@ but at least I'm not seeing things....
 Hey what was that?
 endmsg
 randomitems jail
+speed -0.08
 monster 0
 stand_still 1
 will_apply 0
@@ -2052,7 +2150,18 @@ end
 arch grass
 x 20
 end
+arch mover_3
+attacktype 1
+speed -0.5
+x 20
+end
 arch grass
+x 20
+y 1
+end
+arch mover_7
+attacktype 1
+speed -0.5
 x 20
 y 1
 end
@@ -2183,6 +2292,25 @@ arch chair_1.1
 x 21
 y 7
 end
+arch halfling3
+name Timmy
+msg
+@match hi|hello
+Hello stranger.
+Looking for adventure?
+@match adventure
+Well I did hear about some dangerous caves nearby.
+@match caves
+If you go south road, past a large rock there are some dangerous
+caves in the mountains to the west of there.
+@match *
+Me, I like beer too much to go adventuring.
+endmsg
+randomitems jail
+stand_still 1
+x 21
+y 7
+end
 arch woodfloor
 x 21
 y 8
@@ -2228,6 +2356,21 @@ x 21
 y 16
 end
 arch grass
+x 22
+end
+arch elf_man
+name Celebrity lookalike
+face spock.111
+msg
+@match *
+Some guy named Avion paid
+me 30 gold to stand here
+and look busy...
+endmsg
+unaggressive 0
+Wis 5
+attack_movement 112
+animation spock
 x 22
 end
 arch grass
@@ -2318,10 +2461,6 @@ arch grass
 x 23
 end
 arch grass
-x 23
-y 1
-end
-arch spider
 x 23
 y 1
 end
@@ -2434,8 +2573,4 @@ end
 arch grass
 x 23
 y 16
-end
-arch dragon
-x 8
-y 1
 end
