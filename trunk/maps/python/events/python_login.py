@@ -22,10 +22,10 @@
 
 import CFPython
 import sys
-sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
+import os.path
+sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFMail
 import CFLog
-import string
 
 activator = CFPython.WhoIsActivator()
 name = CFPython.GetName(activator)
@@ -34,7 +34,7 @@ ip = CFPython.WhatIsMessage()
 mail = CFMail.CFMail()
 log = CFLog.CFLog()
 total = mail.countmail(name)
-log.update(name, ip)
+log.login_update(name, ip)
 
 if total > 0:
 	CFPython.Write('You have some mail waiting for you', activator)

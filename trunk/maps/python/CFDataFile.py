@@ -1,0 +1,144 @@
+# CFDataFile.py - CFData classes
+#
+# Copyright (C) 2002 Joris Bontje
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+
+import os
+import string
+import CFPython
+
+class CFDataFile:
+    '''Plain text storage for Crossfire data'''
+    
+    def __init__(self, datafile_name):
+        self.datafile_name = datafile_name
+        self.filename = os.path.join((CFPython.GetLocalDirectory()),'datafiles',datafile_name)
+        
+    def exists(self):
+        '''checks for datafile'''
+        if os.path.isfile(self.filename):
+            return 1
+        else:
+            return 0
+
+    def make_file(self, header):
+        '''creates a datafile, making the column header from a list'''
+        try:
+            file = open(self.filename,'w')
+        except:
+            print "Can't create datafile %s" % self.datafile_name
+            return 0
+        else:
+            temp = []
+            for item in header:
+                temp.append(str(item))
+            contents = '#|%s\n' %(string.join(temp,'|'))
+            file.write(contents)
+            file.close()
+            print "New datafile created: %s" % self.datafile_name
+
+    def getData(self):
+        '''Gets the formatted file as a dictionary
+        The # key contains the column headers for the file'''''
+        try:
+            file = open(self.filename,'r')
+        except:
+            raise 'Unable to read %s' % self.datafile_name
+        else:
+            temp = file.read().split('\n')
+            file.close()
+            contents = temp[:-1]
+            DF = {}
+            templist = []
+            for list in contents:
+                templist = list.split('|')
+                DF[templist[0]] = templist[1:]
+            return DF
+        
+    def putData(self, dic):
+        '''Writes dictionary to formatted file'''
+        try:
+            file = open(self.filename,'w')
+        except:
+            raise 'Unable to open %s for writing' % self.datafile_name
+        else:
+            header = dic['#']
+            del dic['#']
+            index = dic.keys()
+            index.sort()
+            contents = '#|%s\n' %(string.join(header,'|'))
+            file.write(contents)
+            for entry in index:
+                tmp = []
+                stringlist = dic[entry]
+                for item in stringlist:
+                    tmp.append(str(item))
+                temp = '%s|%s\n' %(entry, (string.join(tmp,'|')))
+                file.write(temp)
+            file.close()        
+
+class CFData:
+    '''CFData Object is basically a dictionary parsed from the datafile'''
+
+    def __init__(self, filename, header):
+        self.header = header
+        self.datafile = CFDataFile(filename)
+        
+        if self.datafile.exists():
+            self.datadb = self.datafile.getData()
+            if self.datadb['#'] != self.header:
+                raise 'Header does not match!  You may need to fix the object or the datafile.'
+        else:
+            self.datafile.make_file(self.header)
+            self.datadb = self.datafile.getData()
+
+    def remove_record(self, name):
+        if self.datadb.has_key(name):
+            del self.datadb[name]
+            self.datafile.putData(self.datadb)
+            return 1
+        else:
+            return 0
+    
+    def exist(self, name):
+        if self.datadb.has_key(name):
+            return 1
+        else:
+            return 0
+
+    def get_record(self, name):
+        if self.exist(name):
+            record = {}
+            for header, item in zip(self.header,self.datadb[name]):
+                record[header]=item
+            record['#'] = name
+            return record
+        else:
+            return 0
+
+    def put_record(self, record):
+        name = record['#']
+        del record['#']
+        temp = []
+        for item in self.header:
+            temp.append(record[item])
+        self.datadb[name]=temp
+        self.datafile.putData(self.datadb)
+    
+
+    
+        
