@@ -1,16 +1,16 @@
 arch map
 name world_106_114
-reset_timeout 7200
-difficulty 1
-width 50
-height 50
-enter_x 1
-enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May 18 22:55:56 2002
 endmsg
+width 50
+height 50
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_106_113
 tile_path_2 world_107_114
@@ -52,7 +52,7 @@ end
 arch cobblestones
 y 11
 end
-arch desert
+arch cobblestones
 y 12
 end
 arch woods
@@ -73,7 +73,7 @@ end
 arch mountain
 y 18
 end
-arch woods
+arch cobblestones
 y 19
 end
 arch cobblestones
@@ -88,7 +88,7 @@ end
 arch cobblestones
 y 23
 end
-arch woods
+arch cobblestones
 y 24
 end
 arch steppe
@@ -121,7 +121,7 @@ end
 arch cobblestones
 y 34
 end
-arch jungle_1
+arch cobblestones
 y 35
 end
 arch woods
@@ -213,7 +213,7 @@ arch cobblestones
 x 1
 y 11
 end
-arch desert
+arch cobblestones
 x 1
 y 12
 end
@@ -241,7 +241,7 @@ arch steppe
 x 1
 y 18
 end
-arch woods
+arch cobblestones
 x 1
 y 19
 end
@@ -265,27 +265,27 @@ arch cobblestones
 x 1
 y 24
 end
-arch woods
+arch cobblestones
 x 1
 y 25
 end
-arch steppe
+arch cobblestones
 x 1
 y 26
 end
-arch steppe
+arch cobblestones
 x 1
 y 27
 end
-arch steppe
+arch cobblestones
 x 1
 y 28
 end
-arch steppe
+arch cobblestones
 x 1
 y 29
 end
-arch steppe
+arch cobblestones
 x 1
 y 30
 end
@@ -305,7 +305,7 @@ arch cobblestones
 x 1
 y 34
 end
-arch woods_2
+arch cobblestones
 x 1
 y 35
 end
@@ -412,7 +412,7 @@ arch cobblestones
 x 2
 y 11
 end
-arch desert
+arch cobblestones
 x 2
 y 12
 end
@@ -440,7 +440,7 @@ arch steppe
 x 2
 y 18
 end
-arch woods
+arch cobblestones
 x 2
 y 19
 end
@@ -492,19 +492,19 @@ arch cobblestones
 x 2
 y 31
 end
-arch hills_rocky
+arch cobblestones
 x 2
 y 32
 end
-arch hills_rocky
+arch cobblestones
 x 2
 y 33
 end
-arch hills
+arch cobblestones
 x 2
 y 34
 end
-arch hills_rocky
+arch cobblestones
 x 2
 y 35
 end
@@ -631,7 +631,7 @@ arch mountain
 x 3
 y 16
 end
-arch steppe
+arch cobblestones
 x 3
 y 17
 end
@@ -810,7 +810,7 @@ arch steppe
 x 4
 y 11
 end
-arch steppe
+arch cobblestones
 x 4
 y 12
 end
@@ -1013,15 +1013,15 @@ arch steppe
 x 5
 y 12
 end
-arch woods
+arch cobblestones
 x 5
 y 13
 end
-arch desert
+arch cobblestones
 x 5
 y 14
 end
-arch steppe
+arch cobblestones
 x 5
 y 15
 end

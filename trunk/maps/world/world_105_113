@@ -1,11 +1,14 @@
 arch map
 name world_105_113
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_105_112
 tile_path_2 world_106_113
@@ -1522,13 +1525,6 @@ arch pstone_1
 x 7
 y 11
 end
-arch store_magic
-slaying /euthville/magic.shop
-hp 1
-sp 1
-x 7
-y 11
-end
 arch pstone_1
 x 7
 y 12
@@ -1569,14 +1565,6 @@ x 7
 y 19
 end
 arch desert
-x 7
-y 20
-end
-arch church
-name jesus weeping
-slaying /euthville/devil.church1
-hp 9
-sp 14
 x 7
 y 20
 end
@@ -1998,7 +1986,6 @@ arch sign
 name Welcome to Euthville
 msg
 All dungeons are open.
-
 This is a 9th level (at least) area.
 endmsg
 x 9
@@ -2456,7 +2443,6 @@ y 22
 end
 arch phole_2
 name filthy pit
-slaying /!
 msg
 floorstyle stones2
 wallstyle earthen
@@ -2467,6 +2453,7 @@ monsterstyle demon
 dungeon_depth 6
 final_map /euthville/demon_quest
 endmsg
+slaying /!
 x 11
 y 22
 end
@@ -2582,10 +2569,10 @@ arch sea
 x 11
 y 49
 end
-arch brush
+arch cobblestones
 x 12
 end
-arch grass
+arch cobblestones
 x 12
 y 1
 end
@@ -3007,7 +2994,7 @@ end
 arch hills_rocky
 x 14
 end
-arch grass
+arch cobblestones
 x 14
 y 1
 end
@@ -3100,14 +3087,6 @@ x 14
 y 22
 end
 arch small_stones
-x 14
-y 23
-end
-arch barn
-name Hall of Bones
-slaying /euthville/hallofbones
-hp 3
-sp 33
 x 14
 y 23
 end
@@ -3226,7 +3205,7 @@ arch evergreen
 x 15
 y 1
 end
-arch brush
+arch cobblestones
 x 15
 y 2
 end
@@ -3441,7 +3420,7 @@ arch hills_rocky
 x 16
 y 2
 end
-arch evergreens
+arch cobblestones
 x 16
 y 3
 end
@@ -3696,7 +3675,7 @@ arch hills_rocky
 x 17
 y 3
 end
-arch hills_rocky
+arch cobblestones
 x 17
 y 4
 end
@@ -3899,7 +3878,7 @@ arch mountain
 x 18
 y 4
 end
-arch hills
+arch cobblestones
 x 18
 y 5
 end
@@ -4102,7 +4081,7 @@ arch hills_rocky
 x 19
 y 5
 end
-arch grass
+arch cobblestones
 x 19
 y 6
 end
@@ -4313,7 +4292,7 @@ arch hills
 x 20
 y 6
 end
-arch hills_rocky
+arch cobblestones
 x 20
 y 7
 end
@@ -4516,7 +4495,7 @@ arch hills_rocky
 x 21
 y 7
 end
-arch grass
+arch cobblestones
 x 21
 y 8
 end
@@ -4524,7 +4503,7 @@ arch cobblestones
 x 21
 y 9
 end
-arch grass
+arch cobblestones
 x 21
 y 10
 end
@@ -4723,15 +4702,15 @@ arch cobblestones
 x 22
 y 9
 end
-arch brush
+arch cobblestones
 x 22
 y 10
 end
-arch jungle_1
+arch cobblestones
 x 22
 y 11
 end
-arch hills
+arch cobblestones
 x 22
 y 12
 end
@@ -4918,7 +4897,7 @@ arch grass
 x 23
 y 8
 end
-arch cobblestones
+arch evergreens
 x 23
 y 9
 end
@@ -5129,11 +5108,11 @@ arch evergreens
 x 24
 y 11
 end
-arch hills_rocky
+arch cobblestones
 x 24
 y 12
 end
-arch evergreens
+arch cobblestones
 x 24
 y 13
 end
@@ -5141,7 +5120,7 @@ arch cobblestones
 x 24
 y 14
 end
-arch hills
+arch cobblestones
 x 24
 y 15
 end
@@ -5344,7 +5323,7 @@ arch cobblestones
 x 25
 y 15
 end
-arch brush
+arch cobblestones
 x 25
 y 16
 end
@@ -5547,7 +5526,7 @@ arch cobblestones
 x 26
 y 16
 end
-arch evergreens
+arch cobblestones
 x 26
 y 17
 end
@@ -5750,7 +5729,7 @@ arch cobblestones
 x 27
 y 17
 end
-arch evergreens
+arch cobblestones
 x 27
 y 18
 end
@@ -5949,7 +5928,7 @@ arch cobblestones
 x 28
 y 17
 end
-arch grass
+arch cobblestones
 x 28
 y 18
 end
@@ -6152,7 +6131,7 @@ arch cobblestones
 x 29
 y 18
 end
-arch jungle_1
+arch cobblestones
 x 29
 y 19
 end
@@ -6355,19 +6334,23 @@ arch cobblestones
 x 30
 y 19
 end
-arch jungle_1
+arch cobblestones
 x 30
 y 20
 end
-arch woods_3
+arch cobblestones
 x 30
 y 21
 end
-arch desert
+arch cobblestones
 x 30
 y 22
 end
 arch grass
+x 30
+y 23
+end
+arch cobblestones
 x 30
 y 23
 end
@@ -6570,7 +6553,7 @@ arch cobblestones
 x 31
 y 23
 end
-arch desert
+arch cobblestones
 x 31
 y 24
 end
@@ -6773,7 +6756,7 @@ arch cobblestones
 x 32
 y 24
 end
-arch desert
+arch cobblestones
 x 32
 y 25
 end
@@ -6972,7 +6955,7 @@ arch cobblestones
 x 33
 y 24
 end
-arch desert
+arch cobblestones
 x 33
 y 25
 end
@@ -7171,7 +7154,7 @@ arch cobblestones
 x 34
 y 24
 end
-arch brush
+arch cobblestones
 x 34
 y 25
 end
@@ -7370,7 +7353,7 @@ arch cobblestones
 x 35
 y 24
 end
-arch grass
+arch cobblestones
 x 35
 y 25
 end
@@ -7569,7 +7552,7 @@ arch cobblestones
 x 36
 y 24
 end
-arch grass
+arch cobblestones
 x 36
 y 25
 end
@@ -7768,7 +7751,7 @@ arch cobblestones
 x 37
 y 24
 end
-arch grass
+arch cobblestones
 x 37
 y 25
 end
@@ -7971,11 +7954,11 @@ arch cobblestones
 x 38
 y 25
 end
-arch grass
+arch cobblestones
 x 38
 y 26
 end
-arch grass
+arch cobblestones
 x 38
 y 27
 end
@@ -8373,7 +8356,7 @@ arch grass
 x 40
 y 26
 end
-arch grass
+arch cobblestones
 x 40
 y 27
 end
@@ -8572,7 +8555,7 @@ arch brush
 x 41
 y 26
 end
-arch hills_rocky
+arch cobblestones
 x 41
 y 27
 end
@@ -8771,7 +8754,7 @@ arch hills_rocky
 x 42
 y 26
 end
-arch evergreens
+arch cobblestones
 x 42
 y 27
 end
@@ -8779,47 +8762,47 @@ arch cobblestones
 x 42
 y 28
 end
-arch woods_3
+arch cobblestones
 x 42
 y 29
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 30
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 31
 end
-arch grass
+arch cobblestones
 x 42
 y 32
 end
-arch grass
+arch cobblestones
 x 42
 y 33
 end
-arch grass
+arch cobblestones
 x 42
 y 34
 end
-arch brush
+arch cobblestones
 x 42
 y 35
 end
-arch grass
+arch cobblestones
 x 42
 y 36
 end
-arch brush
+arch cobblestones
 x 42
 y 37
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 38
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 39
 end
@@ -9217,7 +9200,7 @@ arch hills_rocky
 x 44
 y 38
 end
-arch hills_rocky
+arch cobblestones
 x 44
 y 39
 end
@@ -9225,7 +9208,7 @@ arch cobblestones
 x 44
 y 40
 end
-arch hills
+arch cobblestones
 x 44
 y 41
 end
@@ -9424,15 +9407,15 @@ arch cobblestones
 x 45
 y 40
 end
-arch hills
+arch cobblestones
 x 45
 y 41
 end
-arch hills
+arch cobblestones
 x 45
 y 42
 end
-arch hills
+arch cobblestones
 x 45
 y 43
 end
@@ -9619,7 +9602,7 @@ arch hills
 x 46
 y 39
 end
-arch cobblestones
+arch hills
 x 46
 y 40
 end
@@ -9651,11 +9634,11 @@ arch mountain
 x 46
 y 47
 end
-arch hills
+arch cobblestones
 x 46
 y 48
 end
-arch hills
+arch cobblestones
 x 46
 y 49
 end
@@ -9830,7 +9813,7 @@ arch hills
 x 47
 y 42
 end
-arch hills_rocky
+arch cobblestones
 x 47
 y 43
 end
@@ -10033,23 +10016,23 @@ arch hills
 x 48
 y 43
 end
-arch hills
+arch cobblestones
 x 48
 y 44
 end
-arch hills
+arch cobblestones
 x 48
 y 45
 end
-arch hills
+arch cobblestones
 x 48
 y 46
 end
-arch hills
+arch cobblestones
 x 48
 y 47
 end
-arch hills_rocky
+arch cobblestones
 x 48
 y 48
 end
@@ -10255,4 +10238,27 @@ end
 arch hills
 x 49
 y 49
+end
+arch store_magic
+slaying /euthville/magic.shop
+hp 1
+sp 1
+x 7
+y 11
+end
+arch church
+name jesus weeping
+slaying /euthville/devil.church1
+hp 9
+sp 14
+x 7
+y 20
+end
+arch barn
+name Hall of Bones
+slaying /euthville/hallofbones
+hp 3
+sp 33
+x 14
+y 23
 end

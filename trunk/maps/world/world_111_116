@@ -141,8 +141,7 @@ end
 arch cobblestones
 y 34
 end
-arch woods_3
-elevation 1217
+arch cobblestones
 y 35
 end
 arch woods_3
@@ -354,7 +353,7 @@ arch cobblestones
 x 1
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 1
 y 35
 end
@@ -580,10 +579,12 @@ x 2
 y 31
 end
 arch jungle_1
+elevation 2119
 x 2
 y 32
 end
-arch woods_3
+arch woods_2
+elevation 1888
 x 2
 y 33
 end
@@ -591,7 +592,7 @@ arch cobblestones
 x 2
 y 34
 end
-arch evergreens
+arch cobblestones
 x 2
 y 35
 end
@@ -810,12 +811,13 @@ elevation 1224
 x 3
 y 31
 end
-arch tree
-elevation 1047
+arch jungle_1
+elevation 1659
 x 3
 y 32
 end
 arch woods_3
+elevation 1646
 x 3
 y 33
 end
@@ -823,7 +825,7 @@ arch cobblestones
 x 3
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 3
 y 35
 end
@@ -1054,11 +1056,12 @@ arch cobblestones
 x 4
 y 34
 end
-arch woods_2
+arch cobblestones
 x 4
 y 35
 end
-arch jungle_2
+arch woods_3
+elevation 1162
 x 4
 y 36
 end
@@ -1286,11 +1289,12 @@ arch cobblestones
 x 5
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 5
 y 35
 end
-arch jungle_1
+arch woods_3
+elevation 1562
 x 5
 y 36
 end
@@ -1516,7 +1520,7 @@ arch cobblestones
 x 6
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 6
 y 35
 end
@@ -1747,7 +1751,7 @@ arch cobblestones
 x 7
 y 34
 end
-arch evergreens
+arch cobblestones
 x 7
 y 35
 end
@@ -1974,7 +1978,7 @@ arch cobblestones
 x 8
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 8
 y 35
 end
@@ -2208,7 +2212,7 @@ arch cobblestones
 x 9
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 9
 y 35
 end
@@ -2437,7 +2441,7 @@ arch cobblestones
 x 10
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 10
 y 35
 end
@@ -2664,7 +2668,7 @@ arch cobblestones
 x 11
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 11
 y 35
 end
@@ -2882,7 +2886,7 @@ arch cobblestones
 x 12
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 12
 y 35
 end
@@ -3107,8 +3111,7 @@ arch cobblestones
 x 13
 y 34
 end
-arch tree
-elevation 1238
+arch cobblestones
 x 13
 y 35
 end
@@ -3325,7 +3328,7 @@ arch cobblestones
 x 14
 y 34
 end
-arch evergreens
+arch cobblestones
 x 14
 y 35
 end
@@ -3542,7 +3545,7 @@ arch cobblestones
 x 15
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 15
 y 35
 end
@@ -3759,7 +3762,7 @@ arch cobblestones
 x 16
 y 34
 end
-arch jungle_2
+arch cobblestones
 x 16
 y 35
 end
@@ -3980,7 +3983,7 @@ arch cobblestones
 x 17
 y 34
 end
-arch woods_2
+arch cobblestones
 x 17
 y 35
 end
@@ -4203,7 +4206,7 @@ arch cobblestones
 x 18
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 18
 y 35
 end
@@ -4432,8 +4435,7 @@ arch cobblestones
 x 19
 y 34
 end
-arch woods_3
-elevation 1492
+arch cobblestones
 x 19
 y 35
 end
@@ -4661,8 +4663,7 @@ arch cobblestones
 x 20
 y 34
 end
-arch woods_3
-elevation 1765
+arch cobblestones
 x 20
 y 35
 end
@@ -4888,8 +4889,7 @@ arch cobblestones
 x 21
 y 34
 end
-arch woods_3
-elevation 2214
+arch cobblestones
 x 21
 y 35
 end
@@ -5114,8 +5114,7 @@ arch cobblestones
 x 22
 y 34
 end
-arch woods_3
-elevation 2782
+arch cobblestones
 x 22
 y 35
 end
@@ -5344,8 +5343,7 @@ arch cobblestones
 x 23
 y 34
 end
-arch evergreens
-elevation 2984
+arch cobblestones
 x 23
 y 35
 end
@@ -5569,8 +5567,7 @@ arch cobblestones
 x 24
 y 34
 end
-arch evergreens
-elevation 2588
+arch cobblestones
 x 24
 y 35
 end
@@ -5794,13 +5791,11 @@ arch cobblestones
 x 25
 y 34
 end
-arch woods_2
-elevation 1599
+arch cobblestones
 x 25
 y 35
 end
-arch woods_2
-elevation 2943
+arch jungle_2
 x 25
 y 36
 end
@@ -6022,12 +6017,11 @@ arch cobblestones
 x 26
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 26
 y 35
 end
-arch evergreen
-elevation 2232
+arch woods_2
 x 26
 y 36
 end
@@ -6240,8 +6234,7 @@ elevation 2674
 x 27
 y 32
 end
-arch woods_2
-elevation 2085
+arch cobblestones
 x 27
 y 33
 end
@@ -6249,12 +6242,11 @@ arch cobblestones
 x 27
 y 34
 end
-arch woods_2
+arch cobblestones
 x 27
 y 35
 end
-arch evergreen
-elevation 1927
+arch jungle_2
 x 27
 y 36
 end
@@ -6467,7 +6459,7 @@ arch jungle_2
 x 28
 y 32
 end
-arch jungle_2
+arch cobblestones
 x 28
 y 33
 end
@@ -6475,11 +6467,11 @@ arch cobblestones
 x 28
 y 34
 end
-arch jungle_1
+arch cobblestones
 x 28
 y 35
 end
-arch woods_2
+arch jungle_1
 x 28
 y 36
 end
@@ -6691,7 +6683,7 @@ arch jungle_1
 x 29
 y 32
 end
-arch jungle_2
+arch cobblestones
 x 29
 y 33
 end
@@ -6926,7 +6918,7 @@ elevation 2581
 x 30
 y 32
 end
-arch jungle_2
+arch cobblestones
 x 30
 y 33
 end
@@ -7165,7 +7157,7 @@ elevation 1008
 x 31
 y 32
 end
-arch jungle_2
+arch cobblestones
 x 31
 y 33
 end
@@ -7407,7 +7399,7 @@ arch jungle_1
 x 32
 y 32
 end
-arch jungle_2
+arch cobblestones
 x 32
 y 33
 end
@@ -7653,7 +7645,7 @@ elevation 1285
 x 33
 y 32
 end
-arch evergreens
+arch cobblestones
 x 33
 y 33
 end
@@ -7897,7 +7889,7 @@ arch jungle_2
 x 34
 y 32
 end
-arch jungle_1
+arch cobblestones
 x 34
 y 33
 end
@@ -7905,8 +7897,7 @@ arch cobblestones
 x 34
 y 34
 end
-arch hills_rocky
-elevation 3535
+arch cobblestones
 x 34
 y 35
 end
@@ -8143,8 +8134,7 @@ arch jungle_1
 x 35
 y 32
 end
-arch hills
-elevation 3869
+arch cobblestones
 x 35
 y 33
 end
@@ -8156,8 +8146,7 @@ arch cobblestones
 x 35
 y 35
 end
-arch hills_rocky
-elevation 4402
+arch cobblestones
 x 35
 y 36
 end
@@ -8395,8 +8384,7 @@ elevation 4054
 x 36
 y 33
 end
-arch hills
-elevation 3497
+arch cobblestones
 x 36
 y 34
 end
@@ -8404,8 +8392,7 @@ arch cobblestones
 x 36
 y 35
 end
-arch hills
-elevation 4997
+arch cobblestones
 x 36
 y 36
 end
@@ -8652,8 +8639,7 @@ arch cobblestones
 x 37
 y 35
 end
-arch mountain
-elevation 5408
+arch cobblestones
 x 37
 y 36
 end
@@ -8900,8 +8886,7 @@ arch cobblestones
 x 38
 y 35
 end
-arch mountain
-elevation 5413
+arch cobblestones
 x 38
 y 36
 end
@@ -9148,8 +9133,7 @@ arch cobblestones
 x 39
 y 35
 end
-arch mountain
-elevation 5544
+arch cobblestones
 x 39
 y 36
 end
@@ -9396,8 +9380,7 @@ arch cobblestones
 x 40
 y 35
 end
-arch mountain
-elevation 5599
+arch cobblestones
 x 40
 y 36
 end
@@ -9644,8 +9627,7 @@ arch cobblestones
 x 41
 y 35
 end
-arch mountain
-elevation 5672
+arch cobblestones
 x 41
 y 36
 end
@@ -9892,8 +9874,7 @@ arch cobblestones
 x 42
 y 35
 end
-arch mountain
-elevation 5334
+arch cobblestones
 x 42
 y 36
 end
@@ -10131,8 +10112,8 @@ elevation 5201
 x 43
 y 33
 end
-arch mountain
-elevation 5142
+arch hills
+elevation 4058
 x 43
 y 34
 end
@@ -10140,8 +10121,7 @@ arch cobblestones
 x 43
 y 35
 end
-arch hills
-elevation 4758
+arch cobblestones
 x 43
 y 36
 end
@@ -10374,13 +10354,17 @@ elevation 5501
 x 44
 y 32
 end
-arch hills_rocky
-elevation 4791
+arch hills
+elevation 4772
+x 44
+y 33
+end
+arch light4
 x 44
 y 33
 end
 arch hills
-elevation 4200
+elevation 4058
 x 44
 y 34
 end
@@ -10388,8 +10372,7 @@ arch cobblestones
 x 44
 y 35
 end
-arch hills
-elevation 4511
+arch cobblestones
 x 44
 y 36
 end
@@ -10623,12 +10606,12 @@ x 45
 y 32
 end
 arch hills
-elevation 3568
+elevation 4417
 x 45
 y 33
 end
 arch hills
-elevation 3380
+elevation 3017
 x 45
 y 34
 end
@@ -10636,8 +10619,7 @@ arch cobblestones
 x 45
 y 35
 end
-arch hills
-elevation 3405
+arch cobblestones
 x 45
 y 36
 end
@@ -10865,6 +10847,10 @@ elevation 4910
 x 46
 y 31
 end
+arch well
+x 46
+y 31
+end
 arch mountain
 elevation 5116
 x 46
@@ -10884,8 +10870,7 @@ arch cobblestones
 x 46
 y 35
 end
-arch hills
-elevation 4563
+arch cobblestones
 x 46
 y 36
 end
@@ -11132,8 +11117,7 @@ arch cobblestones
 x 47
 y 35
 end
-arch hills
-elevation 4924
+arch cobblestones
 x 47
 y 36
 end
@@ -11380,8 +11364,7 @@ arch cobblestones
 x 48
 y 35
 end
-arch hills
-elevation 4554
+arch cobblestones
 x 48
 y 36
 end
@@ -11628,8 +11611,7 @@ arch cobblestones
 x 49
 y 35
 end
-arch hills
-elevation 4320
+arch cobblestones
 x 49
 y 36
 end
@@ -11697,4 +11679,11 @@ arch hills
 elevation 4676
 x 49
 y 49
+end
+arch inn
+slaying /inn_and_outpost/hermes_inn
+hp 8
+sp 13
+x 44
+y 33
 end

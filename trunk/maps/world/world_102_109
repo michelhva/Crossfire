@@ -1,11 +1,14 @@
 arch map
 name world_102_109
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_102_108
 tile_path_2 world_103_109
@@ -6743,23 +6746,23 @@ arch cobblestones
 x 34
 y 3
 end
-arch woods_2
+arch cobblestones
 x 34
 y 4
 end
-arch woods_2
+arch cobblestones
 x 34
 y 5
 end
-arch hills
+arch cobblestones
 x 34
 y 6
 end
-arch hills
+arch cobblestones
 x 34
 y 7
 end
-arch hills
+arch cobblestones
 x 34
 y 8
 end
@@ -6927,14 +6930,14 @@ arch woods_3
 x 34
 y 49
 end
-arch hills
+arch cobblestones
 x 35
 end
-arch hills
+arch cobblestones
 x 35
 y 1
 end
-arch hills
+arch cobblestones
 x 35
 y 2
 end
@@ -6962,7 +6965,7 @@ arch cobblestones
 x 35
 y 8
 end
-arch hills
+arch cobblestones
 x 35
 y 9
 end
@@ -7165,7 +7168,7 @@ arch cobblestones
 x 36
 y 9
 end
-arch hills
+arch cobblestones
 x 36
 y 10
 end
@@ -7237,31 +7240,31 @@ arch steppe
 x 36
 y 27
 end
-arch woods_3
+arch cobblestones
 x 36
 y 28
 end
-arch woods_3
+arch cobblestones
 x 36
 y 29
 end
-arch woods_3
+arch cobblestones
 x 36
 y 30
 end
-arch grass
+arch cobblestones
 x 36
 y 31
 end
-arch grass
+arch cobblestones
 x 36
 y 32
 end
-arch woods_3
+arch cobblestones
 x 36
 y 33
 end
-arch woods_3
+arch cobblestones
 x 36
 y 34
 end
@@ -7368,7 +7371,7 @@ arch cobblestones
 x 37
 y 10
 end
-arch hills
+arch cobblestones
 x 37
 y 11
 end
@@ -7464,7 +7467,7 @@ arch cobblestones
 x 37
 y 34
 end
-arch woods_3
+arch cobblestones
 x 37
 y 35
 end
@@ -7571,7 +7574,7 @@ arch cobblestones
 x 38
 y 11
 end
-arch hills
+arch cobblestones
 x 38
 y 12
 end
@@ -7667,7 +7670,7 @@ arch cobblestones
 x 38
 y 35
 end
-arch woods_3
+arch cobblestones
 x 38
 y 36
 end
@@ -7774,7 +7777,7 @@ arch cobblestones
 x 39
 y 12
 end
-arch woods_2
+arch cobblestones
 x 39
 y 13
 end
@@ -7870,7 +7873,7 @@ arch cobblestones
 x 39
 y 36
 end
-arch grass
+arch cobblestones
 x 39
 y 37
 end
@@ -7977,7 +7980,7 @@ arch cobblestones
 x 40
 y 13
 end
-arch hills
+arch cobblestones
 x 40
 y 14
 end
@@ -8085,39 +8088,39 @@ arch mountain
 x 40
 y 40
 end
-arch steppe
+arch cobblestones
 x 40
 y 41
 end
-arch steppe
+arch cobblestones
 x 40
 y 42
 end
-arch steppe
+arch cobblestones
 x 40
 y 43
 end
-arch steppe
+arch cobblestones
 x 40
 y 44
 end
-arch grass
+arch cobblestones
 x 40
 y 45
 end
-arch woods_3
+arch cobblestones
 x 40
 y 46
 end
-arch woods_3
+arch cobblestones
 x 40
 y 47
 end
-arch woods_3
+arch cobblestones
 x 40
 y 48
 end
-arch woods_3
+arch cobblestones
 x 40
 y 49
 end
@@ -8180,7 +8183,7 @@ arch cobblestones
 x 41
 y 14
 end
-arch hills
+arch cobblestones
 x 41
 y 15
 end
@@ -8212,7 +8215,7 @@ arch hills_rocky
 x 41
 y 22
 end
-arch hills
+arch cobblestones
 x 41
 y 23
 end
@@ -8268,7 +8271,7 @@ arch steppe
 x 41
 y 36
 end
-arch steppe
+arch cobblestones
 x 41
 y 37
 end
@@ -8325,208 +8328,208 @@ x 42
 end
 arch woods_2
 x 42
-y 1
-end
-arch brush
-x 42
-y 2
-end
-arch tree
-x 42
-y 3
-end
-arch brush
-x 42
-y 4
-end
-arch woods_2
-x 42
-y 5
-end
-arch hills
-x 42
-y 6
-end
-arch hills
-x 42
-y 7
-end
-arch hills
-x 42
-y 8
-end
-arch hills
-x 42
-y 9
-end
-arch hills
-x 42
-y 10
-end
-arch woods_2
-x 42
-y 11
-end
-arch woods_2
-x 42
-y 12
-end
-arch woods_2
-x 42
-y 13
-end
-arch cobblestones
-x 42
-y 14
-end
-arch cobblestones
-x 42
-y 15
-end
-arch hills
-x 42
-y 16
-end
-arch mountain
-x 42
-y 17
-end
-arch mountain
-x 42
-y 18
-end
-arch hills
-x 42
-y 19
-end
-arch hills
-x 42
-y 20
-end
-arch cobblestones
-x 42
-y 21
-end
-arch cobblestones
-x 42
-y 22
-end
-arch cobblestones
-x 42
-y 23
-end
-arch cobblestones
-x 42
-y 24
-end
-arch hills
-x 42
-y 25
-end
-arch steppe
-x 42
-y 26
-end
-arch hills_rocky
-x 42
-y 27
-end
-arch mountain
-x 42
-y 28
-end
-arch mountain
-x 42
-y 29
-end
-arch mountain
-x 42
-y 30
-end
-arch mountain
-x 42
-y 31
-end
-arch mountain
-x 42
-y 32
-end
-arch mountain
-x 42
-y 33
-end
-arch mountain
-x 42
-y 34
-end
-arch mountain
-x 42
-y 35
-end
-arch steppe
-x 42
-y 36
-end
-arch woods_3
-x 42
-y 37
-end
-arch woods_3
-x 42
-y 38
-end
-arch steppe
-x 42
-y 39
-end
-arch steppe
-x 42
-y 40
-end
-arch mountain
-x 42
-y 41
-end
-arch mountain
-x 42
-y 42
-end
-arch steppe
-x 42
-y 43
-end
-arch steppe
-x 42
-y 44
-end
-arch steppe
-x 42
-y 45
-end
-arch woods_3
-x 42
-y 46
-end
-arch grass
-x 42
-y 47
-end
-arch woods_3
-x 42
-y 48
-end
-arch woods_3
-x 42
-y 49
-end
-arch woods_2
-x 43
-end
-arch woods_2
-x 43
 y 1
 end
 arch brush
+x 42
+y 2
+end
+arch tree
+x 42
+y 3
+end
+arch brush
+x 42
+y 4
+end
+arch woods_2
+x 42
+y 5
+end
+arch hills
+x 42
+y 6
+end
+arch hills
+x 42
+y 7
+end
+arch hills
+x 42
+y 8
+end
+arch hills
+x 42
+y 9
+end
+arch hills
+x 42
+y 10
+end
+arch woods_2
+x 42
+y 11
+end
+arch woods_2
+x 42
+y 12
+end
+arch woods_2
+x 42
+y 13
+end
+arch cobblestones
+x 42
+y 14
+end
+arch cobblestones
+x 42
+y 15
+end
+arch cobblestones
+x 42
+y 16
+end
+arch mountain
+x 42
+y 17
+end
+arch mountain
+x 42
+y 18
+end
+arch cobblestones
+x 42
+y 19
+end
+arch cobblestones
+x 42
+y 20
+end
+arch cobblestones
+x 42
+y 21
+end
+arch cobblestones
+x 42
+y 22
+end
+arch cobblestones
+x 42
+y 23
+end
+arch cobblestones
+x 42
+y 24
+end
+arch cobblestones
+x 42
+y 25
+end
+arch cobblestones
+x 42
+y 26
+end
+arch hills_rocky
+x 42
+y 27
+end
+arch mountain
+x 42
+y 28
+end
+arch mountain
+x 42
+y 29
+end
+arch mountain
+x 42
+y 30
+end
+arch mountain
+x 42
+y 31
+end
+arch mountain
+x 42
+y 32
+end
+arch mountain
+x 42
+y 33
+end
+arch mountain
+x 42
+y 34
+end
+arch mountain
+x 42
+y 35
+end
+arch steppe
+x 42
+y 36
+end
+arch woods_3
+x 42
+y 37
+end
+arch cobblestones
+x 42
+y 38
+end
+arch cobblestones
+x 42
+y 39
+end
+arch cobblestones
+x 42
+y 40
+end
+arch mountain
+x 42
+y 41
+end
+arch mountain
+x 42
+y 42
+end
+arch steppe
+x 42
+y 43
+end
+arch steppe
+x 42
+y 44
+end
+arch steppe
+x 42
+y 45
+end
+arch woods_3
+x 42
+y 46
+end
+arch grass
+x 42
+y 47
+end
+arch woods_3
+x 42
+y 48
+end
+arch woods_3
+x 42
+y 49
+end
+arch woods_2
+x 43
+end
+arch woods_2
+x 43
+y 1
+end
+arch brush
 x 43
 y 2
 end
@@ -8606,11 +8609,11 @@ arch cobblestones
 x 43
 y 21
 end
-arch hills_rocky
+arch cobblestones
 x 43
 y 22
 end
-arch hills
+arch cobblestones
 x 43
 y 23
 end
@@ -8781,11 +8784,11 @@ arch woods_2
 x 44
 y 15
 end
-arch hills
+arch cobblestones
 x 44
 y 16
 end
-arch hills
+arch cobblestones
 x 44
 y 17
 end

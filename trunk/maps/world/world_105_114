@@ -1,11 +1,14 @@
 arch map
 name world_105_114
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_105_113
 tile_path_2 world_106_114
@@ -8487,23 +8490,23 @@ arch mountain
 x 42
 y 41
 end
-arch woods_2
+arch cobblestones
 x 42
 y 42
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 43
 end
-arch woods_2
+arch cobblestones
 x 42
 y 44
 end
-arch evergreens
+arch cobblestones
 x 42
 y 45
 end
-arch evergreens
+arch cobblestones
 x 42
 y 46
 end
@@ -8706,7 +8709,7 @@ arch cobblestones
 x 43
 y 46
 end
-arch evergreens
+arch cobblestones
 x 43
 y 47
 end
@@ -8869,11 +8872,11 @@ arch hills_rocky
 x 44
 y 37
 end
-arch steppe
+arch cobblestones
 x 44
 y 38
 end
-arch steppe
+arch cobblestones
 x 44
 y 39
 end
@@ -8909,7 +8912,7 @@ arch cobblestones
 x 44
 y 47
 end
-arch grass
+arch cobblestones
 x 44
 y 48
 end
@@ -9064,7 +9067,7 @@ arch mountain
 x 45
 y 36
 end
-arch hills_rocky
+arch cobblestones
 x 45
 y 37
 end
@@ -9108,7 +9111,7 @@ arch cobblestones
 x 45
 y 47
 end
-arch tree
+arch cobblestones
 x 45
 y 48
 end
@@ -9116,30 +9119,30 @@ arch evergreens
 x 45
 y 49
 end
-arch hills
+arch cobblestones
 x 46
 end
-arch hills
+arch cobblestones
 x 46
 y 1
 end
-arch hills
+arch cobblestones
 x 46
 y 2
 end
-arch woods
+arch cobblestones
 x 46
 y 3
 end
-arch woods
+arch cobblestones
 x 46
 y 4
 end
-arch desert
+arch cobblestones
 x 46
 y 5
 end
-arch desert
+arch cobblestones
 x 46
 y 6
 end
@@ -9263,7 +9266,7 @@ arch steppe
 x 46
 y 36
 end
-arch steppe
+arch cobblestones
 x 46
 y 37
 end
@@ -9311,7 +9314,7 @@ arch cobblestones
 x 46
 y 48
 end
-arch evergreens
+arch cobblestones
 x 46
 y 49
 end
@@ -9342,7 +9345,7 @@ arch cobblestones
 x 47
 y 6
 end
-arch desert
+arch cobblestones
 x 47
 y 7
 end
@@ -9454,7 +9457,7 @@ arch mountain
 x 47
 y 34
 end
-arch hills
+arch cobblestones
 x 47
 y 35
 end
@@ -9649,7 +9652,7 @@ arch mountain
 x 48
 y 33
 end
-arch hills_rocky
+arch cobblestones
 x 48
 y 34
 end
@@ -9740,7 +9743,7 @@ arch woods
 x 49
 y 6
 end
-arch woods
+arch cobblestones
 x 49
 y 7
 end
@@ -9788,27 +9791,27 @@ arch mountain
 x 49
 y 18
 end
-arch steppe
+arch woods
 x 49
 y 19
 end
-arch steppe
+arch cobblestones
 x 49
 y 20
 end
-arch steppe
+arch cobblestones
 x 49
 y 21
 end
-arch steppe
+arch cobblestones
 x 49
 y 22
 end
-arch steppe
+arch cobblestones
 x 49
 y 23
 end
-arch evergreen
+arch woods
 x 49
 y 24
 end

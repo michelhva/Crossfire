@@ -1,11 +1,14 @@
 arch map
 name world_104_111
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_104_110
 tile_path_2 world_105_111
@@ -1156,10 +1159,10 @@ arch mountain
 x 5
 y 49
 end
-arch hills_rocky
+arch cobblestones
 x 6
 end
-arch hills_rocky
+arch cobblestones
 x 6
 y 1
 end
@@ -1195,7 +1198,7 @@ arch cobblestones
 x 6
 y 9
 end
-arch grass
+arch cobblestones
 x 6
 y 10
 end
@@ -1362,31 +1365,31 @@ arch hills_rocky
 x 7
 y 1
 end
-arch brush
+arch cobblestones
 x 7
 y 2
 end
-arch evergreen
+arch cobblestones
 x 7
 y 3
 end
-arch evergreen
+arch cobblestones
 x 7
 y 4
 end
-arch grass
+arch cobblestones
 x 7
 y 5
 end
-arch hills_rocky
+arch cobblestones
 x 7
 y 6
 end
-arch hills_rocky
+arch cobblestones
 x 7
 y 7
 end
-arch hills_rocky
+arch cobblestones
 x 7
 y 8
 end
@@ -1589,7 +1592,7 @@ arch evergreen
 x 8
 y 8
 end
-arch hills_rocky
+arch cobblestones
 x 8
 y 9
 end
@@ -1788,7 +1791,7 @@ arch hills_rocky
 x 9
 y 8
 end
-arch hills_rocky
+arch cobblestones
 x 9
 y 9
 end
@@ -1991,7 +1994,7 @@ arch brush
 x 10
 y 9
 end
-arch brush
+arch cobblestones
 x 10
 y 10
 end
@@ -2190,7 +2193,7 @@ arch grass
 x 11
 y 9
 end
-arch grass
+arch cobblestones
 x 11
 y 10
 end
@@ -2393,7 +2396,7 @@ arch brush
 x 12
 y 10
 end
-arch grass
+arch cobblestones
 x 12
 y 11
 end
@@ -2425,15 +2428,15 @@ arch cobblestones
 x 12
 y 18
 end
-arch brush
+arch cobblestones
 x 12
 y 19
 end
-arch brush
+arch cobblestones
 x 12
 y 20
 end
-arch brush
+arch cobblestones
 x 12
 y 21
 end
@@ -2596,27 +2599,27 @@ arch grass
 x 13
 y 11
 end
-arch grass
+arch cobblestones
 x 13
 y 12
 end
-arch evergreen
+arch cobblestones
 x 13
 y 13
 end
-arch evergreen
+arch cobblestones
 x 13
 y 14
 end
-arch evergreen
+arch cobblestones
 x 13
 y 15
 end
-arch hills_rocky
+arch cobblestones
 x 13
 y 16
 end
-arch hills_rocky
+arch cobblestones
 x 13
 y 17
 end
@@ -2636,39 +2639,39 @@ arch cobblestones
 x 13
 y 21
 end
-arch brush
+arch cobblestones
 x 13
 y 22
 end
-arch brush
+arch cobblestones
 x 13
 y 23
 end
-arch brush
+arch cobblestones
 x 13
 y 24
 end
-arch brush
+arch cobblestones
 x 13
 y 25
 end
-arch brush
+arch cobblestones
 x 13
 y 26
 end
-arch brush
+arch cobblestones
 x 13
 y 27
 end
-arch hills_rocky
+arch cobblestones
 x 13
 y 28
 end
-arch hills_rocky
+arch cobblestones
 x 13
 y 29
 end
-arch hills_rocky
+arch cobblestones
 x 13
 y 30
 end
@@ -2871,19 +2874,19 @@ arch cobblestones
 x 14
 y 30
 end
-arch hills_rocky
+arch cobblestones
 x 14
 y 31
 end
-arch hills_rocky
+arch cobblestones
 x 14
 y 32
 end
-arch hills_rocky
+arch cobblestones
 x 14
 y 33
 end
-arch hills_rocky
+arch cobblestones
 x 14
 y 34
 end
@@ -3090,15 +3093,15 @@ arch cobblestones
 x 15
 y 35
 end
-arch hills_rocky
+arch cobblestones
 x 15
 y 36
 end
-arch hills_rocky
+arch cobblestones
 x 15
 y 37
 end
-arch hills_rocky
+arch cobblestones
 x 15
 y 38
 end
@@ -3281,7 +3284,7 @@ arch hills_rocky
 x 16
 y 33
 end
-arch brush
+arch cobblestones
 x 16
 y 34
 end
@@ -3309,23 +3312,23 @@ arch cobblestones
 x 16
 y 40
 end
-arch steppe
+arch cobblestones
 x 16
 y 41
 end
-arch hills_rocky
+arch cobblestones
 x 16
 y 42
 end
-arch steppe
+arch cobblestones
 x 16
 y 43
 end
-arch steppe
+arch cobblestones
 x 16
 y 44
 end
-arch steppe
+arch cobblestones
 x 16
 y 45
 end
@@ -3507,11 +3510,11 @@ arch mountain
 x 17
 y 37
 end
-arch hills_rocky
+arch cobblestones
 x 17
 y 38
 end
-arch hills_rocky
+arch cobblestones
 x 17
 y 39
 end
@@ -3745,7 +3748,7 @@ arch mountain
 x 18
 y 44
 end
-arch steppe
+arch cobblestones
 x 18
 y 45
 end
@@ -3753,7 +3756,7 @@ arch cobblestones
 x 18
 y 46
 end
-arch grass
+arch cobblestones
 x 18
 y 47
 end
@@ -4151,15 +4154,15 @@ arch steppe
 x 20
 y 46
 end
-arch evergreen
+arch cobblestones
 x 20
 y 47
 end
-arch hills_rocky
+arch cobblestones
 x 20
 y 48
 end
-arch evergreen
+arch cobblestones
 x 20
 y 49
 end
