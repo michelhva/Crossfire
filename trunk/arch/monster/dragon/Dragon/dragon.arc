@@ -11,11 +11,11 @@ facings 2
 dragon.171
 dragon.172
 dragon.173
-dragon.172
+dragon.174
 dragon.131
 dragon.132
 dragon.133
-dragon.132
+dragon.134
 mina
 level 18
 Con 11
@@ -53,11 +53,11 @@ facings 2
 dragon.271
 dragon.272
 dragon.273
-dragon.272
+dragon.274
 dragon.231
 dragon.232
 dragon.233
-dragon.232
+dragon.234
 mina
 monster 1
 alive 1
@@ -74,11 +74,11 @@ facings 2
 dragon.371
 dragon.372
 dragon.373
-dragon.372
+dragon.374
 dragon.331
 dragon.332
 dragon.333
-dragon.332
+dragon.334
 mina
 monster 1
 alive 1
@@ -95,11 +95,11 @@ facings 2
 dragon.471
 dragon.472
 dragon.473
-dragon.472
+dragon.474
 dragon.431
 dragon.432
 dragon.433
-dragon.432
+dragon.434
 mina
 monster 1
 alive 1
@@ -116,11 +116,11 @@ facings 2
 dragon.571
 dragon.572
 dragon.573
-dragon.572
+dragon.574
 dragon.531
 dragon.532
 dragon.533
-dragon.532
+dragon.534
 mina
 monster 1
 alive 1
@@ -138,11 +138,11 @@ facings 2
 dragon.671
 dragon.672
 dragon.673
-dragon.672
+dragon.674
 dragon.631
 dragon.632
 dragon.633
-dragon.632
+dragon.634
 mina
 monster 1
 alive 1
