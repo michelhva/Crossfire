@@ -7,6 +7,6 @@ nrof 1
 type 36
 material 2
 value 10
-weight 15
+weight 10
 editable 2048
 end
