@@ -6314,54 +6314,9 @@ name Key to Adventurers Guild
 slaying advguildkey
 end
 end
-More
-arch dread_2
-name KeyDread
-hp 1500
-x 4
-y 28
-end
-More
-arch dread_3
-name KeyDread
-hp 1500
-x 3
-y 29
-end
-More
-arch dread_4
-name KeyDread
-hp 1500
-x 4
-y 29
-end
 arch behemoth
 x 20
 y 15
-unaggressive 1
-end
-More
-arch behemoth_2
-name behemoth
-hp 800
-x 21
-y 15
-unaggressive 1
-end
-More
-arch behemoth_3
-name behemoth
-hp 800
-x 20
-y 16
-unaggressive 1
-end
-More
-arch behemoth_4
-name behemoth
-hp 800
-x 21
-y 16
 unaggressive 1
 end
 arch big_wiz
@@ -6369,86 +6324,9 @@ x 25
 y 11
 unaggressive 1
 end
-More
-arch big_wiz2
-hp 3500
-x 26
-y 11
-unaggressive 1
-end
-More
-arch big_wiz3
-hp 3500
-x 27
-y 11
-unaggressive 1
-end
-More
-arch big_wiz4
-hp 3500
-x 25
-y 12
-unaggressive 1
-end
-More
-arch big_wiz5
-hp 3500
-x 26
-y 12
-unaggressive 1
-end
-More
-arch big_wiz6
-hp 3500
-x 27
-y 12
-unaggressive 1
-end
-More
-arch big_wiz7
-hp 3500
-x 25
-y 13
-unaggressive 1
-end
-More
-arch big_wiz8
-hp 3500
-x 26
-y 13
-unaggressive 1
-end
-More
-arch big_wiz9
-hp 3500
-x 27
-y 13
-unaggressive 1
-end
 arch chinese_dragon
 x 25
 y 15
-unaggressive 1
-end
-More
-arch chinese_dragon_2
-hp 1000
-x 26
-y 15
-unaggressive 1
-end
-More
-arch chinese_dragon_3
-hp 1000
-x 25
-y 16
-unaggressive 1
-end
-More
-arch chinese_dragon_4
-hp 1000
-x 26
-y 16
 unaggressive 1
 end
 arch sphinx
@@ -6463,111 +6341,13 @@ endmsg
 x 26
 y 26
 end
-More
-arch sphinx_2
-name homesick sphinx
-hp 300
-x 27
-y 26
-end
 arch big_dragon
 x 28
 y 11
 unaggressive 1
 end
-More
-arch big_dragon_2
-hp 3500
-x 29
-y 11
-unaggressive 1
-end
-More
-arch big_dragon_3
-hp 3500
-x 30
-y 11
-unaggressive 1
-end
-More
-arch big_dragon_4
-hp 3500
-x 28
-y 12
-unaggressive 1
-end
-More
-arch big_dragon_5
-hp 3500
-x 29
-y 12
-unaggressive 1
-end
-More
-arch big_dragon_6
-hp 3500
-x 30
-y 12
-unaggressive 1
-end
 arch titan
 x 29
 y 15
-unaggressive 1
-end
-More
-arch titan_2
-hp 4000
-x 28
-y 15
-unaggressive 1
-end
-More
-arch titan_3
-hp 4000
-x 28
-y 14
-unaggressive 1
-end
-More
-arch titan_4
-hp 4000
-x 29
-y 14
-unaggressive 1
-end
-More
-arch titan_5
-hp 4000
-x 30
-y 14
-unaggressive 1
-end
-More
-arch titan_6
-hp 4000
-x 30
-y 15
-unaggressive 1
-end
-More
-arch titan_7
-hp 4000
-x 30
-y 16
-unaggressive 1
-end
-More
-arch titan_8
-hp 4000
-x 29
-y 16
-unaggressive 1
-end
-More
-arch titan_9
-hp 4000
-x 28
-y 16
 unaggressive 1
 end
