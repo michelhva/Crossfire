@@ -241,27 +241,15 @@ arch shallow_sea
 x 1
 y 18
 end
-arch swamp
+arch shallow_sea
 x 1
 y 19
 end
-arch river_n-s
-x 1
-y 19
-end
-arch swamp
-x 1
-y 20
-end
-arch river_se-n
+arch shallow_sea
 x 1
 y 20
 end
 arch swamp
-x 1
-y 21
-end
-arch river_nw-se_l
 x 1
 y 21
 end
@@ -456,19 +444,11 @@ arch swamp
 x 2
 y 19
 end
-arch swamp
+arch shallow_sea
 x 2
 y 20
 end
-arch river_nw-se_u
-x 2
-y 20
-end
-arch swamp
-x 2
-y 21
-end
-arch river_nw-e
+arch shallow_sea
 x 2
 y 21
 end
@@ -684,19 +664,11 @@ sp 11
 x 3
 y 20
 end
-arch swamp
-x 3
-y 21
-end
-arch river_se-w
+arch shallow_sea
 x 3
 y 21
 end
 arch evergreens
-x 3
-y 22
-end
-arch river_nw-se_l
 x 3
 y 22
 end
@@ -903,27 +875,15 @@ arch swamp
 x 4
 y 20
 end
-arch brush
+arch shallow_sea
 x 4
 y 21
 end
-arch river_nw-se_u
-x 4
-y 21
-end
-arch brush
+arch shallow_sea
 x 4
 y 22
 end
-arch river_nw-se
-x 4
-y 22
-end
-arch brush
-x 4
-y 23
-end
-arch river_nw-se_l
+arch shallow_sea
 x 4
 y 23
 end
@@ -1122,31 +1082,15 @@ arch grass
 x 5
 y 22
 end
-arch river_nw-se_u
-x 5
-y 22
-end
-arch brush
+arch shallow_sea
 x 5
 y 23
 end
-arch river_nw-s
-x 5
-y 23
-end
-arch brush
+arch shallow_sea
 x 5
 y 24
 end
-arch river_se-n
-x 5
-y 24
-end
-arch grass
-x 5
-y 25
-end
-arch river_nw-se_l
+arch shallow_sea
 x 5
 y 25
 end
@@ -1305,7 +1249,7 @@ arch sea
 x 6
 y 14
 end
-arch sea
+arch shallow_sea
 x 6
 y 15
 end
@@ -1345,23 +1289,11 @@ arch evergreens
 x 6
 y 24
 end
-arch river_nw-se_u
-x 6
-y 24
-end
-arch grass
-x 6
-y 25
-end
-arch river_nw-se
+arch shallow_sea
 x 6
 y 25
 end
 arch grass
-x 6
-y 26
-end
-arch river_nw-se_l
 x 6
 y 26
 end
@@ -1580,27 +1512,15 @@ arch grass
 x 7
 y 24
 end
-arch grassmedium
+arch shallow_sea
 x 7
 y 25
 end
-arch river_nw-se_u
-x 7
-y 25
-end
-arch grassmedium
-x 7
-y 26
-end
-arch river_nw-se
+arch shallow_sea
 x 7
 y 26
 end
 arch grassmedium
-x 7
-y 27
-end
-arch river_nw-se_l
 x 7
 y 27
 end
@@ -1823,43 +1743,23 @@ arch hills
 x 8
 y 25
 end
-arch grassmedium
+arch shallow_sea
 x 8
 y 26
 end
-arch river_nw-se_u
-x 8
-y 26
-end
-arch grass
+arch shallow_sea
 x 8
 y 27
 end
-arch river_nw-s
-x 8
-y 27
-end
-arch grass
+arch shallow_sea
 x 8
 y 28
 end
-arch river_n-s
-x 8
-y 28
-end
-arch grassdark
+arch shallow_sea
 x 8
 y 29
 end
-arch river_se-n
-x 8
-y 29
-end
-arch grassmedium
-x 8
-y 30
-end
-arch river_nw-se_l
+arch shallow_sea
 x 8
 y 30
 end
@@ -2079,15 +1979,7 @@ arch grassdark
 x 9
 y 29
 end
-arch river_nw-se_u
-x 9
-y 29
-end
-arch grassmedium
-x 9
-y 30
-end
-arch river_nw-e
+arch shallow_sea
 x 9
 y 30
 end
@@ -2314,11 +2206,7 @@ arch hills
 x 10
 y 29
 end
-arch grassmedium
-x 10
-y 30
-end
-arch river_w-e
+arch shallow_sea
 x 10
 y 30
 end
@@ -2573,19 +2461,11 @@ arch woods_3
 x 11
 y 29
 end
-arch desert
+arch shallow_sea
 x 11
 y 30
 end
-arch river_se-w
-x 11
-y 30
-end
-arch desert
-x 11
-y 31
-end
-arch river_nw-se_l
+arch shallow_sea
 x 11
 y 31
 end
@@ -2804,23 +2684,11 @@ arch desert
 x 12
 y 30
 end
-arch river_nw-se_u
-x 12
-y 30
-end
-arch desert
+arch shallow_sea
 x 12
 y 31
 end
-arch river_nw-se
-x 12
-y 31
-end
-arch desert
-x 12
-y 32
-end
-arch river_nw-se_l
+arch shallow_sea
 x 12
 y 32
 end
@@ -3063,47 +2931,23 @@ arch desert
 x 13
 y 31
 end
-arch river_nw-se_u
-x 13
-y 31
-end
-arch desert
+arch shallow_sea
 x 13
 y 32
 end
-arch river_nw-s
-x 13
-y 32
-end
-arch desert
+arch shallow_sea
 x 13
 y 33
 end
-arch river_n-s
-x 13
-y 33
-end
-arch grass
+arch shallow_sea
 x 13
 y 34
 end
-arch river_n-s
-x 13
-y 34
-end
-arch grass
-x 13
-y 35
-end
-arch river_se-n
+arch shallow_sea
 x 13
 y 35
 end
 arch hills
-x 13
-y 36
-end
-arch river_nw-se_l
 x 13
 y 36
 end
@@ -3318,11 +3162,7 @@ arch woods_3
 x 14
 y 34
 end
-arch hills
-x 14
-y 35
-end
-arch river_nw-se_u
+arch shallow_sea
 x 14
 y 35
 end
@@ -3330,15 +3170,7 @@ arch hills
 x 14
 y 36
 end
-arch river_nw-se
-x 14
-y 36
-end
 arch hills
-x 14
-y 37
-end
-arch river_nw-se_l
 x 14
 y 37
 end
@@ -3560,27 +3392,15 @@ arch hills
 x 15
 y 35
 end
-arch hills
+arch shallow_sea
 x 15
 y 36
 end
-arch river_nw-se_u
-x 15
-y 36
-end
-arch desert
+arch shallow_sea
 x 15
 y 37
 end
-arch river_nw-s
-x 15
-y 37
-end
-arch desert
-x 15
-y 38
-end
-arch river_n-s
+arch shallow_sea
 x 15
 y 38
 end
@@ -3588,15 +3408,7 @@ arch desert
 x 15
 y 39
 end
-arch river_se-n
-x 15
-y 39
-end
 arch desert
-x 15
-y 40
-end
-arch river_nw-se_l
 x 15
 y 40
 end
@@ -3831,15 +3643,11 @@ arch desert
 x 16
 y 37
 end
-arch brush
+arch shallow_sea
 x 16
 y 38
 end
-arch brush
-x 16
-y 39
-end
-arch river_nw-se_u
+arch shallow_sea
 x 16
 y 39
 end
@@ -3847,15 +3655,7 @@ arch grassmedium
 x 16
 y 40
 end
-arch river_nw-se
-x 16
-y 40
-end
 arch desert
-x 16
-y 41
-end
-arch river_nw-se_l
 x 16
 y 41
 end
@@ -4066,15 +3866,11 @@ arch brush
 x 17
 y 38
 end
-arch brush
+arch shallow_sea
 x 17
 y 39
 end
-arch grass
-x 17
-y 40
-end
-arch river_nw-se_u
+arch shallow_sea
 x 17
 y 40
 end
@@ -4082,15 +3878,7 @@ arch grassmedium
 x 17
 y 41
 end
-arch river_nw-se
-x 17
-y 41
-end
 arch desert
-x 17
-y 42
-end
-arch river_nw-se_l
 x 17
 y 42
 end
@@ -4298,23 +4086,15 @@ arch grass
 x 18
 y 39
 end
-arch brush
+arch shallow_sea
 x 18
 y 40
 end
-arch brush
+arch shallow_sea
 x 18
 y 41
 end
-arch river_nw-se_u
-x 18
-y 41
-end
-arch brush
-x 18
-y 42
-end
-arch river_nw-e
+arch shallow_sea
 x 18
 y 42
 end
@@ -4541,11 +4321,7 @@ arch woods_2
 x 19
 y 41
 end
-arch brush
-x 19
-y 42
-end
-arch river_w-e
+arch shallow_sea
 x 19
 y 42
 end
@@ -4752,19 +4528,11 @@ arch woods_2
 x 20
 y 41
 end
-arch grassmedium
+arch shallow_sea
 x 20
 y 42
 end
-arch river_se-w
-x 20
-y 42
-end
-arch brush
-x 20
-y 43
-end
-arch river_nw-se_l
+arch shallow_sea
 x 20
 y 43
 end
@@ -4879,7 +4647,7 @@ arch brush
 x 21
 y 14
 end
-arch tree
+arch brush
 x 21
 y 15
 end
@@ -4995,11 +4763,7 @@ arch woods_2
 x 21
 y 42
 end
-arch river_nw-se_u
-x 21
-y 42
-end
-arch brush
+arch shallow_sea
 x 21
 y 43
 end
@@ -7105,7 +6869,7 @@ arch cobblestones2
 x 31
 y 19
 end
-arch grassmedium
+arch brush
 x 31
 y 20
 end
@@ -7113,19 +6877,19 @@ arch lamppost
 x 31
 y 20
 end
-arch grassmedium
+arch brush
 x 31
 y 21
 end
-arch grassmedium
+arch brush
 x 31
 y 22
 end
-arch grassmedium
+arch brush
 x 31
 y 23
 end
-arch grassmedium
+arch brush
 x 31
 y 24
 end
@@ -7324,15 +7088,15 @@ arch evergreens
 x 32
 y 21
 end
-arch grassmedium
+arch brush
 x 32
 y 22
 end
-arch grassmedium
+arch brush
 x 32
 y 23
 end
-arch grassmedium
+arch brush
 x 32
 y 24
 end
@@ -11070,6 +10834,14 @@ name Eliks General Store
 slaying /santo_dominion/shops/eliks
 x 21
 y 12
+end
+arch t_house2
+name City Hall
+slaying /santo_dominion/city_hall
+hp 10
+sp 16
+x 21
+y 15
 end
 arch church
 name New Cthulhu Church

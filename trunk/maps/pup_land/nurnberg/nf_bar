@@ -1408,6 +1408,14 @@ arch woodfloor
 x 9
 y 18
 end
+arch slotmachine2
+name Midas Touch
+event_apply_plugin Python
+event_apply /python/casino/goldslots.py
+food 0
+x 9
+y 18
+end
 arch woodfloor
 x 9
 y 19
@@ -1561,6 +1569,17 @@ arch woodfloor
 x 10
 y 18
 end
+arch sign
+msg
+Presenting the Lucky Lady Slots
+courtesy of Casino Infernal
+Pull the handle and try your luck.
+
+Please visit our Casino in Navar!
+endmsg
+x 10
+y 18
+end
 arch woodfloor
 x 10
 y 19
@@ -1701,6 +1720,14 @@ x 11
 y 17
 end
 arch woodfloor
+x 11
+y 18
+end
+arch slotmachine3
+name Silver Penny-0-Rama
+event_apply_plugin Python
+event_apply /python/casino/silverslots.py
+food 0
 x 11
 y 18
 end
