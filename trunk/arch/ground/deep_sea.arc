@@ -10,6 +10,7 @@ magicmap blue
 speed 0.2
 no_pass 1
 no_pick 1
+is_water 1
 editable 8
 is_floor 1
 end

@@ -6,6 +6,7 @@ walk_on 1
 color_bg green
 color_fg brown
 no_pick 1
+is_water 1
 slow_move 3
 is_wooded 1
 editable 8
