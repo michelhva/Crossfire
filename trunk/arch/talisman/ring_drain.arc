@@ -16,4 +16,5 @@ material 2
 immune 128
 editable 6144
 nrof 1
+speed 0.1
 end
