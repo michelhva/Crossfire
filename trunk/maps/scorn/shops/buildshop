@@ -2441,7 +2441,7 @@ arch tile_white_floor
 x 15
 y 12
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 15
 y 12
 end
@@ -2457,7 +2457,7 @@ arch tile_white_floor
 x 15
 y 14
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 15
 y 14
 end
@@ -2473,7 +2473,7 @@ arch tile_white_floor
 x 15
 y 16
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 15
 y 16
 end
@@ -2489,7 +2489,7 @@ arch tile_white_floor
 x 15
 y 18
 end
-arch wwall_3_2
+arch wwall_2_1_1
 x 15
 y 18
 end
@@ -2619,11 +2619,16 @@ arch tile_white_floor
 x 16
 y 17
 end
-arch tile_white_floor
+arch sign
+msg
+Welcome to Acme. Inc construction shop!
+You will find here everything you need to build your own customized home, sweet home.
+Make sure to read our documentation on how to build nice maps.
+endmsg
 x 16
-y 18
+y 17
 end
-arch wwall_2_2_3
+arch tile_white_floor
 x 16
 y 18
 end
@@ -2631,7 +2636,7 @@ arch tile_white_floor
 x 16
 y 19
 end
-arch wwall_2_2_4
+arch wwall_2_1_2
 x 16
 y 19
 end
@@ -2761,12 +2766,13 @@ arch tile_white_floor
 x 17
 y 18
 end
-arch magic_mouth
+arch oakdoor
 msg
-Welcome to Acme. Inc construction shop!
-You will find here everything you need to build your own customized home, sweet home.
-Make sure to read our documentation on how to build nice maps.
+Thank you for your visit!
 endmsg
+slaying /world/world_105_115
+hp 10
+sp 29
 x 17
 y 18
 end
@@ -2774,13 +2780,7 @@ arch tile_white_floor
 x 17
 y 19
 end
-arch oakdoor
-msg
-Thank you for your visit!
-endmsg
-slaying /world/world_105_116
-hp 12
-sp 2
+arch wwall_2_1_2
 x 17
 y 19
 end
@@ -3001,15 +3001,11 @@ arch tile_white_floor
 x 18
 y 18
 end
-arch wwall_2_2_2
-x 18
-y 18
-end
 arch tile_white_floor
 x 18
 y 19
 end
-arch wwall_2_2_1
+arch wwall_2_1_2
 x 18
 y 19
 end
@@ -3159,7 +3155,7 @@ arch tile_white_floor
 x 19
 y 18
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 19
 y 18
 end
