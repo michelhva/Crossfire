@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 18 11:46:05 2000
 endmsg
-x 10
-y 10
+width 11
+height 10
 end
 arch woodfloor
 end
@@ -104,45 +104,44 @@ y 3
 end
 arch bookshelf
 name Books on causing harm
-x 1
-y 3
 carrying 95000
 no_pick 1
+x 1
+y 3
 arch cleric_book
-slaying cause light wounds
 msg
 Cause light wounds
 endmsg
-nrof 16
+slaying cause light wounds
 value 2500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause medium wounds
 msg
 Cause medium wounds
 endmsg
+slaying cause medium wounds
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause serious wounds
 msg
 Cause serious wounds
 endmsg
+slaying cause heavy wounds
 value 4500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause critical wounds
 msg
 Cause critical wounds
 endmsg
+slaying cause critical wounds
 value 5500
 unpaid 1
 identified 1
@@ -159,45 +158,44 @@ y 4
 end
 arch bookshelf
 name Books on causing harm
+carrying 95000
+no_pick 1
 x 1
 y 4
-carrying 285000
-no_pick 1
 arch cleric_book
-slaying cause light wounds
 msg
 Cause light wounds
 endmsg
-nrof 16
+slaying cause light wounds
 value 2500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause medium wounds
 msg
 Cause medium wounds
 endmsg
+slaying cause medium wounds
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause serious wounds
 msg
 Cause serious wounds
 endmsg
+slaying cause heavy wounds
 value 4500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause critical wounds
 msg
 Cause critical wounds
 endmsg
+slaying cause critical wounds
 value 5500
 unpaid 1
 identified 1
@@ -214,45 +212,44 @@ y 5
 end
 arch bookshelf
 name Books on causing harm
+carrying 95000
+no_pick 1
 x 1
 y 5
-carrying 285000
-no_pick 1
 arch cleric_book
-slaying cause light wounds
 msg
 Cause light wounds
 endmsg
-nrof 16
+slaying cause light wounds
 value 2500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause medium wounds
 msg
 Cause medium wounds
 endmsg
+slaying cause medium wounds
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause serious wounds
 msg
 Cause serious wounds
 endmsg
+slaying cause heavy wounds
 value 4500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause critical wounds
 msg
 Cause critical wounds
 endmsg
+slaying cause critical wounds
 value 5500
 unpaid 1
 identified 1
@@ -269,45 +266,44 @@ y 6
 end
 arch bookshelf
 name Books on causing harm
+carrying 95000
+no_pick 1
 x 1
 y 6
-carrying 285000
-no_pick 1
 arch cleric_book
-slaying cause light wounds
 msg
 Cause light wounds
 endmsg
-nrof 16
+slaying cause light wounds
 value 2500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause medium wounds
 msg
 Cause medium wounds
 endmsg
+slaying cause medium wounds
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause serious wounds
 msg
 Cause serious wounds
 endmsg
+slaying cause heavy wounds
 value 4500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause critical wounds
 msg
 Cause critical wounds
 endmsg
+slaying cause critical wounds
 value 5500
 unpaid 1
 identified 1
@@ -324,45 +320,44 @@ y 7
 end
 arch bookshelf
 name Books on causing harm
+carrying 95000
+no_pick 1
 x 1
 y 7
-carrying 285000
-no_pick 1
 arch cleric_book
-slaying cause light wounds
 msg
 Cause light wounds
 endmsg
-nrof 16
+slaying cause light wounds
 value 2500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause medium wounds
 msg
 Cause medium wounds
 endmsg
+slaying cause medium wounds
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause serious wounds
 msg
 Cause serious wounds
 endmsg
+slaying cause heavy wounds
 value 4500
 unpaid 1
 identified 1
 been_applied 1
 end
 arch cleric_book
-slaying cause critical wounds
 msg
 Cause critical wounds
 endmsg
+slaying cause critical wounds
 value 5500
 unpaid 1
 identified 1
@@ -498,50 +493,38 @@ x 3
 y 3
 end
 arch bookshelf
-name Books about fire
+name Books for Evokers
+carrying 20000
+no_pick 1
 x 3
 y 3
-carrying 20000
-no_pick 1
-arch book
-slaying small fireball
-msg
-small fireball
-endmsg
-value 2500
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 250
+arch spell_armour
 end
-arch book
-slaying medium fireball
-msg
-medium fireball
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large fireball
-msg
-large fireball
-endmsg
-value 11000
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 250
+arch spell_icestorm
 end
-arch book
-slaying burning hands
-msg
-burning hands
-endmsg
-value 2500
-unpaid 1
+end
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 250
+arch spell_small_snowstorm
+end
+end
+arch evoker_book
+identified 1
+unpaid 1
+value 250
+arch spell_small_bullet
+end
 end
 end
 arch woodfloor
@@ -553,50 +536,38 @@ x 3
 y 4
 end
 arch bookshelf
-name Books about fire
+name Books for Evokers
+carrying 20000
+no_pick 1
 x 3
 y 4
-carrying 20000
-no_pick 1
-arch book
-slaying small fireball
-msg
-small fireball
-endmsg
-value 2500
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 500
+arch spell_detect_monster
 end
-arch book
-slaying medium fireball
-msg
-medium fireball
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large fireball
-msg
-large fireball
-endmsg
-value 11000
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 500
+arch spell_mana_blast
 end
-arch book
-slaying burning hands
-msg
-burning hands
-endmsg
-value 2500
-unpaid 1
+end
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 500
+arch spell_small_manaball
+end
+end
+arch evoker_book
+identified 1
+unpaid 1
+value 750
+arch spell_frostbolt
+end
 end
 end
 arch woodfloor
@@ -608,50 +579,38 @@ x 3
 y 5
 end
 arch bookshelf
-name Books about fire
+name Books for Evokers
+carrying 20000
+no_pick 1
 x 3
 y 5
-carrying 20000
-no_pick 1
-arch book
-slaying small fireball
-msg
-small fireball
-endmsg
-value 2500
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 750
+arch spell_manabolt
 end
-arch book
-slaying medium fireball
-msg
-medium fireball
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large fireball
-msg
-large fireball
-endmsg
-value 11000
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 750
+arch spell_medium_snowstorm
 end
-arch book
-slaying burning hands
-msg
-burning hands
-endmsg
-value 2500
-unpaid 1
+end
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 1000
+arch spell_lg_magic_bullet
+end
+end
+arch evoker_book
+identified 1
+unpaid 1
+value 1000
+arch spell_rune_of_frost
+end
 end
 end
 arch woodfloor
@@ -663,50 +622,38 @@ x 3
 y 6
 end
 arch bookshelf
-name Books about fire
-x 3
-y 6
+name Books for Evokers
 carrying 20000
 no_pick 1
-arch book
-slaying small fireball
-msg
-small fireball
-endmsg
-value 2500
-unpaid 1
+x 3
+y 6
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 1000
+arch spell_medium_manaball
 end
-arch book
-slaying medium fireball
-msg
-medium fireball
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large fireball
-msg
-large fireball
-endmsg
-value 11000
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 1250
+arch spell_large_snowstorm
 end
-arch book
-slaying burning hands
-msg
-burning hands
-endmsg
-value 2500
-unpaid 1
+end
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 1750
+arch spell_bullet_swarm
+end
+end
+arch evoker_book
+identified 1
+unpaid 1
+value 1500
+arch spell_large_manaball
+end
 end
 end
 arch woodfloor
@@ -718,50 +665,38 @@ x 3
 y 7
 end
 arch bookshelf
-name Books about fire
-x 3
-y 7
+name Books for Evokers
 carrying 20000
 no_pick 1
-arch book
-slaying small fireball
-msg
-small fireball
-endmsg
+x 3
+y 7
+arch evoker_book
+identified 1
+unpaid 1
+value 2000
+arch spell_create_frost_wall
+end
+end
+arch evoker_book
+identified 1
+unpaid 1
 value 2500
-unpaid 1
-identified 1
-been_applied 1
+arch spell_bullet_storm
 end
-arch book
-slaying medium fireball
-msg
-medium fireball
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large fireball
-msg
-large fireball
-endmsg
-value 11000
-unpaid 1
+arch evoker_book
 identified 1
-been_applied 1
-end
-arch book
-slaying burning hands
-msg
-burning hands
-endmsg
+unpaid 1
 value 2500
-unpaid 1
+arch spell_cancellation
+end
+end
+arch evoker_book
 identified 1
-been_applied 1
+unpaid 1
+value 2500
+arch spell_create_pool_of_chaos
+end
 end
 end
 arch woodfloor
@@ -795,14 +730,14 @@ x 4
 y 1
 end
 arch cleric_book
-slaying holy word
 msg
 holy word
 endmsg
-x 4
-y 1
+slaying holy word
 unpaid 1
 identified 1
+x 4
+y 1
 end
 arch woodfloor
 x 4
@@ -883,14 +818,14 @@ x 5
 y 1
 end
 arch cleric_book
-slaying holy word
 msg
 holy word
 endmsg
+slaying holy word
+unpaid 1
+identified 1
 x 5
 y 1
-unpaid 1
-identified 1
 end
 arch woodfloor
 x 5
@@ -900,179 +835,199 @@ arch shop_empty
 x 5
 y 2
 end
-arch woodfloor
-x 5
-y 3
-end
 arch shop_empty
 x 5
 y 3
 end
 arch bookshelf
-name Books on lightning
+name Books for Pyromancers
+carrying 20000
+no_pick 1
 x 5
 y 3
-carrying 10000
-no_pick 1
-arch book
-slaying small lightning
-msg
-small lightning 
-endmsg
-value 2500
+arch pyro_book
 unpaid 1
+value 250
 identified 1
-been_applied 1
+arch spell_burning_hands
 end
-arch book
-slaying large lightning
-msg
-large lightning 
-endmsg
-value 4500
+end
+arch pyro_book
 unpaid 1
+value 250
 identified 1
-been_applied 1
+arch spell_sm_lightning
 end
 end
-arch woodfloor
-x 5
-y 4
+arch pyro_book
+unpaid 1
+value 500
+identified 1
+arch spell_firebolt
+end
+end
+arch pyro_book
+unpaid 1
+value 250
+identified 1
+arch spell_small_fireball
+end
+end
 end
 arch shop_empty
 x 5
 y 4
 end
 arch bookshelf
-name Books on lightning
+name Books for Pyromancers
+carrying 20000
+no_pick 1
 x 5
 y 4
-carrying 10000
-no_pick 1
-arch book
-slaying small lightning
-msg
-small lightning 
-endmsg
-value 2500
+arch pyro_book
 unpaid 1
+value 250
 identified 1
-been_applied 1
+arch spell_burning_hands
 end
-arch book
-slaying large lightning
-msg
-large lightning 
-endmsg
-value 4500
+end
+arch pyro_book
 unpaid 1
+value 250
 identified 1
-been_applied 1
+arch spell_sm_lightning
 end
 end
-arch woodfloor
-x 5
-y 5
+arch pyro_book
+unpaid 1
+value 500
+identified 1
+arch spell_firebolt
+end
+end
+arch pyro_book
+unpaid 1
+value 250
+identified 1
+arch spell_small_fireball
+end
+end
 end
 arch shop_empty
 x 5
 y 5
 end
 arch bookshelf
-name Books on lightning
+name Books for Pyromancers
+carrying 20000
+no_pick 1
 x 5
 y 5
-carrying 10000
-no_pick 1
-arch book
-slaying small lightning
-msg
-small lightning 
-endmsg
-value 2500
+arch pyro_book
 unpaid 1
+value 750
 identified 1
-been_applied 1
+arch spell_medium_fireball
 end
-arch book
-slaying large lightning
-msg
-large lightning 
-endmsg
-value 4500
+end
+arch pyro_book
 unpaid 1
+value 1000
 identified 1
-been_applied 1
+arch spell_faery_fire
 end
 end
-arch woodfloor
-x 5
-y 6
+arch pyro_book
+unpaid 1
+value 1000
+identified 1
+arch spell_large_lightning
+end
+end
+arch pyro_book
+unpaid 1
+value 1000
+identified 1
+arch spell_rune_of_fire
+end
+end
 end
 arch shop_empty
 x 5
 y 6
 end
 arch bookshelf
-name Books on lightning
+name Books for Pyromancers
+carrying 20000
+no_pick 1
 x 5
 y 6
-carrying 10000
-no_pick 1
-arch book
-slaying small lightning
-msg
-small lightning 
-endmsg
-value 2500
+arch pyro_book
 unpaid 1
+value 1250
 identified 1
-been_applied 1
+arch spell_large_fireball
 end
-arch book
-slaying large lightning
-msg
-large lightning 
-endmsg
-value 4500
+end
+arch pyro_book
 unpaid 1
+value 1500
 identified 1
-been_applied 1
+arch spell_create_bomb
 end
 end
-arch woodfloor
-x 5
-y 7
+arch pyro_book
+unpaid 1
+value 1500
+identified 1
+arch spell_create_fire_wall
+end
+end
+arch pyro_book
+unpaid 1
+value 2000
+identified 1
+arch spell_rune_of_shocking
+end
+end
 end
 arch shop_empty
 x 5
 y 7
 end
 arch bookshelf
-name Books on lightning
+name Books for Pyromancers
+carrying 20000
+no_pick 1
 x 5
 y 7
-carrying 10000
-no_pick 1
-arch book
-slaying small lightning
-msg
-small lightning 
-endmsg
+arch pyro_book
+unpaid 1
 value 2500
-unpaid 1
 identified 1
-been_applied 1
+arch spell_rune_of_blasting
 end
-arch book
-slaying large lightning
-msg
-large lightning 
-endmsg
-value 4500
+end
+arch pyro_book
 unpaid 1
+value 3000
 identified 1
-been_applied 1
+arch spell_firetrap
+end
+end
+arch pyro_book
+unpaid 1
+value 4000
+identified 1
+arch spell_build_fireball_wall
+end
+end
+arch pyro_book
+unpaid 1
+value 3500
+identified 1
+arch spell_build_lightning_wall
+end
 end
 end
 arch woodfloor
@@ -1106,14 +1061,14 @@ x 6
 y 1
 end
 arch cleric_book
-slaying holy word
 msg
 holy word
 endmsg
-x 6
-y 1
+slaying holy word
 unpaid 1
 identified 1
+x 6
+y 1
 end
 arch woodfloor
 x 6
@@ -1194,14 +1149,14 @@ x 7
 y 1
 end
 arch cleric_book
-slaying holy word
 msg
 holy word
 endmsg
+slaying holy word
+unpaid 1
+identified 1
 x 7
 y 1
-unpaid 1
-identified 1
 end
 arch woodfloor
 x 7
@@ -1211,279 +1166,199 @@ arch shop_empty
 x 7
 y 2
 end
-arch woodfloor
-x 7
-y 3
-end
 arch shop_empty
 x 7
 y 3
 end
 arch bookshelf
-name Books on Cold
-x 7
-y 3
+name Books for Sorcerers
 carrying 20000
 no_pick 1
-arch book
-slaying small snowstorm
-msg
-small snowstorm
-endmsg
-value 2500
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying medium snowstorm
-msg
-medium snowstorm
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying large snowstorm
-msg
-large snowstorm
-endmsg
-value 11000
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying icestorm
-msg
-icestorm
-endmsg
-value 2500
-unpaid 1
-identified 1
-been_applied 1
-end
-end
-arch woodfloor
 x 7
-y 4
+y 3
+arch sorcerer_book
+unpaid 1
+identified 1
+value 250
+arch spell_detect_magic
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 250
+arch spell_magic_bullet
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 250
+arch spell_magic_missile
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 250
+arch spell_marking_rune
+end
+end
 end
 arch shop_empty
 x 7
 y 4
 end
 arch bookshelf
-name Books on Cold
+name Books for Sorcerers
+carrying 20000
+no_pick 1
 x 7
 y 4
-carrying 20000
-no_pick 1
-arch book
-slaying small snowstorm
-msg
-small snowstorm
-endmsg
-value 2500
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 250
+arch spell_probe
 end
-arch book
-slaying medium snowstorm
-msg
-medium snowstorm
-endmsg
-value 4500
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 250
+arch spell_slow
 end
-arch book
-slaying large snowstorm
-msg
-large snowstorm
-endmsg
-value 11000
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 500
+arch spell_confusion
 end
-arch book
-slaying icestorm
-msg
-icestorm
-endmsg
-value 2500
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 500
+arch spell_paralyze
 end
 end
-arch woodfloor
-x 7
-y 5
 end
 arch shop_empty
 x 7
 y 5
 end
 arch bookshelf
-name Books on Cold
+name Books for Sorcerers
+carrying 20000
+no_pick 1
 x 7
 y 5
-carrying 20000
-no_pick 1
-arch book
-slaying small snowstorm
-msg
-small snowstorm
-endmsg
-value 2500
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 500
+arch spell_poison_cloud
 end
-arch book
-slaying medium snowstorm
-msg
-medium snowstorm
-endmsg
-value 4500
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_dexterity
 end
-arch book
-slaying large snowstorm
-msg
-large snowstorm
-endmsg
-value 11000
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 750
+arch spell_charisma
 end
-arch book
-slaying icestorm
-msg
-icestorm
-endmsg
-value 2500
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 500
+arch spell_strength
 end
 end
-arch woodfloor
-x 7
-y 6
 end
 arch shop_empty
 x 7
 y 6
 end
 arch bookshelf
-name Books on Cold
-x 7
-y 6
+name Books for Sorcerers
 carrying 20000
 no_pick 1
-arch book
-slaying small snowstorm
-msg
-small snowstorm
-endmsg
-value 2500
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying medium snowstorm
-msg
-medium snowstorm
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying large snowstorm
-msg
-large snowstorm
-endmsg
-value 11000
-unpaid 1
-identified 1
-been_applied 1
-end
-arch book
-slaying icestorm
-msg
-icestorm
-endmsg
-value 2500
-unpaid 1
-identified 1
-been_applied 1
-end
-end
-arch woodfloor
 x 7
-y 7
+y 6
+arch sorcerer_book
+unpaid 1
+identified 1
+value 1000
+arch spell_constitution
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 1000
+arch spell_disarm
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 1000
+arch spell_fear
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 1250
+arch spell_dark_vision
+end
+end
 end
 arch shop_empty
 x 7
 y 7
 end
 arch bookshelf
-name Books on Cold
-x 7
-y 7
+name Books for Sorcerers
 carrying 20000
 no_pick 1
-arch book
-slaying small snowstorm
-msg
-small snowstorm
-endmsg
-value 2500
+x 7
+y 7
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 1250
+arch spell_magic_mapping
 end
-arch book
-slaying medium snowstorm
-msg
-medium snowstorm
-endmsg
-value 4500
-unpaid 1
-identified 1
-been_applied 1
 end
-arch book
-slaying large snowstorm
-msg
-large snowstorm
-endmsg
-value 11000
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 1500
+arch spell_invisible
 end
-arch book
-slaying icestorm
-msg
-icestorm
-endmsg
-value 2500
+end
+arch sorcerer_book
 unpaid 1
 identified 1
-been_applied 1
+value 1250
+arch spell_transference
+end
+end
+arch sorcerer_book
+unpaid 1
+identified 1
+value 1250
+arch spell_steambolt
+end
 end
 end
 arch woodfloor
@@ -1517,14 +1392,14 @@ x 8
 y 1
 end
 arch cleric_book
-slaying holy word
 msg
 holy word
 endmsg
-x 8
-y 1
+slaying holy word
 unpaid 1
 identified 1
+x 8
+y 1
 end
 arch woodfloor
 x 8
@@ -1592,79 +1467,322 @@ y 9
 end
 arch woodfloor
 x 9
+end
+arch wall_2_1_2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch shop_empty
+x 9
+y 1
+end
+arch cleric_book
+msg
+holy word
+endmsg
+slaying holy word
+unpaid 1
+identified 1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch shop_empty
+x 9
+y 2
+end
+arch shop_empty
+x 9
+y 3
+end
+arch bookshelf
+name Books for Summoners
+carrying 20000
+no_pick 1
+x 9
+y 3
+arch summoner_book
+identified 1
+unpaid 1
+value 250
+arch spell_create_missile
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 500
+arch spell_earth_to_dust
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 250
+arch spell_lesser_summon_golem
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 500
+arch spell_summon_fog
+end
+end
+end
+arch shop_empty
+x 9
+y 4
+end
+arch bookshelf
+name Books for Summoners
+carrying 20000
+no_pick 1
+x 9
+y 4
+arch summoner_book
+identified 1
+unpaid 1
+value 500
+arch spell_summon_pet_monster
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 500
+arch spell_summon_golem
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 750
+arch spell_alchemy
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1000
+arch spell_create_earth_wall
+end
+end
+end
+arch shop_empty
+x 9
+y 5
+end
+arch bookshelf
+name Books for Summoners
+carrying 20000
+no_pick 1
+x 9
+y 5
+arch summoner_book
+identified 1
+unpaid 1
+value 1250
+arch spell_summon_water_elemental
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1000
+arch spell_summon_earth_elemental
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1250
+arch spell_charm_monsters
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 750
+arch spell_counterspell
+end
+end
+end
+arch shop_empty
+x 9
+y 6
+end
+arch bookshelf
+name Books for Summoners
+carrying 20000
+no_pick 1
+x 9
+y 6
+arch summoner_book
+identified 1
+unpaid 1
+value 1500
+arch spell_create_food
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1500
+arch spell_summon_air_elemental
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1250
+arch spell_mystic_fist
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 2000
+arch spell_counterwall
+end
+end
+end
+arch shop_empty
+x 9
+y 7
+end
+arch bookshelf
+name Books for Summoners
+carrying 20000
+no_pick 1
+x 9
+y 7
+arch summoner_book
+identified 1
+unpaid 1
+value 2500
+arch spell_build_director
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 1750
+arch spell_summon_fire_elemental
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 2750
+arch spell_dancing_sword
+end
+end
+arch summoner_book
+identified 1
+unpaid 1
+value 3000
+arch spell_pentagram
+end
+end
+end
+arch woodfloor
+x 9
+y 8
+end
+arch shop_empty
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch wall_2_1_2
+x 9
+y 9
+end
+arch woodfloor
+x 10
 end
 arch wall_2_2_3
-x 9
+x 10
 end
 arch woodfloor
-x 9
+x 10
 y 1
 end
 arch wall_2_1_1
-x 9
+x 10
 y 1
 end
 arch woodfloor
-x 9
+x 10
 y 2
 end
 arch wall_2_1_1
-x 9
+x 10
 y 2
 end
 arch woodfloor
-x 9
+x 10
 y 3
 end
 arch wall_2_1_1
-x 9
+x 10
 y 3
 end
 arch woodfloor
-x 9
+x 10
 y 4
 end
 arch wall_2_1_1
-x 9
+x 10
 y 4
 end
 arch woodfloor
-x 9
+x 10
 y 5
 end
 arch wall_2_1_1
-x 9
+x 10
 y 5
 end
 arch woodfloor
-x 9
+x 10
 y 6
 end
 arch wall_2_1_1
-x 9
+x 10
 y 6
 end
 arch woodfloor
-x 9
+x 10
 y 7
 end
 arch wall_2_1_1
-x 9
+x 10
 y 7
 end
 arch woodfloor
-x 9
+x 10
 y 8
 end
 arch wall_2_1_1
-x 9
+x 10
 y 8
 end
 arch woodfloor
-x 9
+x 10
 y 9
 end
 arch wall_2_2_4
-x 9
+x 10
 y 9
 end
