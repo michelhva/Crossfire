@@ -1,11 +1,13 @@
 arch map
+name <untitled>
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Wed Nov 17 21:36:01 1993
 endmsg
-x 30
-y 29
+width 30
+height 29
+difficulty 5
 end
 arch woodfloor
 end
@@ -35,7 +37,7 @@ end
 arch wall_2_2_1
 y 4
 end
-arch woodfloor
+arch blocked
 y 5
 end
 arch woodfloor
@@ -80,7 +82,7 @@ end
 arch wall_2_2_1
 y 12
 end
-arch woodfloor
+arch blocked
 y 13
 end
 arch woodfloor
@@ -119,7 +121,7 @@ end
 arch wall_2_2_1
 y 19
 end
-arch woodfloor
+arch blocked
 y 20
 end
 arch woodfloor
@@ -200,7 +202,7 @@ arch wall_2_1_2
 x 1
 y 4
 end
-arch woodfloor
+arch blocked
 x 1
 y 5
 end
@@ -229,6 +231,10 @@ x 1
 y 9
 end
 arch c_man
+msg
+@match *
+It's crowded, but the rent is low and the place is spotless...
+endmsg
 x 1
 y 9
 end
@@ -252,7 +258,7 @@ arch wall_2_1_2
 x 1
 y 12
 end
-arch woodfloor
+arch blocked
 x 1
 y 13
 end
@@ -300,7 +306,7 @@ arch wall_2_1_2
 x 1
 y 19
 end
-arch woodfloor
+arch blocked
 x 1
 y 20
 end
@@ -328,9 +334,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 1
 y 22
-level 5
 end
 arch woodfloor
 x 1
@@ -411,9 +417,9 @@ alone.....pleazzzze take pity on a
 poor monster who wantzzzz to life a
 life of prozzzzparity.
 endmsg
+unaggressive 1
 x 2
 y 2
-unaggressive 1
 end
 arch woodfloor
 x 2
@@ -431,7 +437,7 @@ arch wall_2_1_2
 x 2
 y 4
 end
-arch woodfloor
+arch blocked
 x 2
 y 5
 end
@@ -483,7 +489,7 @@ arch wall_2_1_2
 x 2
 y 12
 end
-arch woodfloor
+arch blocked
 x 2
 y 13
 end
@@ -534,7 +540,7 @@ arch wall_2_1_2
 x 2
 y 19
 end
-arch woodfloor
+arch blocked
 x 2
 y 20
 end
@@ -642,7 +648,7 @@ arch wall_2_1_2
 x 3
 y 4
 end
-arch woodfloor
+arch blocked
 x 3
 y 5
 end
@@ -698,7 +704,7 @@ arch wall_2_1_2
 x 3
 y 12
 end
-arch woodfloor
+arch blocked
 x 3
 y 13
 end
@@ -738,7 +744,7 @@ arch wall_2_1_2
 x 3
 y 19
 end
-arch woodfloor
+arch blocked
 x 3
 y 20
 end
@@ -766,9 +772,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 3
 y 22
-level 5
 end
 arch woodfloor
 x 3
@@ -848,7 +854,7 @@ arch wall_2_1_2
 x 4
 y 4
 end
-arch woodfloor
+arch blocked
 x 4
 y 5
 end
@@ -904,7 +910,7 @@ arch wall_3_1
 x 4
 y 12
 end
-arch woodfloor
+arch blocked
 x 4
 y 13
 end
@@ -948,7 +954,7 @@ arch wall_2_1_2
 x 4
 y 19
 end
-arch woodfloor
+arch blocked
 x 4
 y 20
 end
@@ -1041,7 +1047,7 @@ arch wall_2_1_2
 x 5
 y 4
 end
-arch woodfloor
+arch blocked
 x 5
 y 5
 end
@@ -1089,7 +1095,7 @@ arch wall_2_1_2
 x 5
 y 12
 end
-arch woodfloor
+arch blocked
 x 5
 y 13
 end
@@ -1141,7 +1147,7 @@ arch wall_2_1_2
 x 5
 y 19
 end
-arch woodfloor
+arch blocked
 x 5
 y 20
 end
@@ -1169,9 +1175,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 5
 y 22
-level 5
 end
 arch woodfloor
 x 5
@@ -1221,9 +1227,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 5
 y 27
-level 5
 end
 arch woodfloor
 x 5
@@ -1271,7 +1277,7 @@ arch wall_2_2_4
 x 6
 y 4
 end
-arch woodfloor
+arch blocked
 x 6
 y 5
 end
@@ -1326,11 +1332,11 @@ arch wall_2_1_2
 x 6
 y 12
 end
-arch woodfloor
+arch blocked
 x 6
 y 13
 end
-arch woodfloor
+arch blocked
 x 6
 y 14
 end
@@ -1374,7 +1380,7 @@ arch wall_2_1_2
 x 6
 y 19
 end
-arch woodfloor
+arch blocked
 x 6
 y 20
 end
@@ -1406,9 +1412,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 6
 y 23
-level 5
 end
 arch woodfloor
 x 6
@@ -1426,9 +1432,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 6
 y 24
-level 5
 end
 arch woodfloor
 x 6
@@ -1446,9 +1452,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 6
 y 25
-level 5
 end
 arch woodfloor
 x 6
@@ -1466,9 +1472,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 6
 y 26
-level 5
 end
 arch woodfloor
 x 6
@@ -1482,26 +1488,26 @@ arch wall_2_1_2
 x 6
 y 28
 end
-arch woodfloor
+arch blocked
 x 7
 end
-arch woodfloor
+arch blocked
 x 7
 y 1
 end
-arch woodfloor
+arch blocked
 x 7
 y 2
 end
-arch woodfloor
+arch blocked
 x 7
 y 3
 end
-arch woodfloor
+arch blocked
 x 7
 y 4
 end
-arch woodfloor
+arch blocked
 x 7
 y 5
 end
@@ -1561,11 +1567,11 @@ arch wall_2_2_4
 x 7
 y 12
 end
-arch woodfloor
+arch blocked
 x 7
 y 13
 end
-arch woodfloor
+arch blocked
 x 7
 y 14
 end
@@ -1609,7 +1615,7 @@ arch wall_2_1_2
 x 7
 y 19
 end
-arch woodfloor
+arch blocked
 x 7
 y 20
 end
@@ -1637,9 +1643,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 7
 y 22
-level 5
 end
 arch woodfloor
 x 7
@@ -1689,9 +1695,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 7
 y 27
-level 5
 end
 arch woodfloor
 x 7
@@ -1731,39 +1737,39 @@ arch wall_2_2_1
 x 8
 y 3
 end
-arch woodfloor
+arch blocked
 x 8
 y 4
 end
-arch woodfloor
+arch blocked
 x 8
 y 5
 end
-arch woodfloor
+arch blocked
 x 8
 y 6
 end
-arch woodfloor
+arch blocked
 x 8
 y 7
 end
-arch woodfloor
+arch blocked
 x 8
 y 8
 end
-arch woodfloor
+arch blocked
 x 8
 y 9
 end
-arch woodfloor
+arch blocked
 x 8
 y 10
 end
-arch woodfloor
+arch blocked
 x 8
 y 11
 end
-arch woodfloor
+arch blocked
 x 8
 y 12
 end
@@ -1823,7 +1829,7 @@ arch wall_2_1_2
 x 8
 y 19
 end
-arch woodfloor
+arch blocked
 x 8
 y 20
 end
@@ -1893,31 +1899,31 @@ arch wall_2_1_2
 x 9
 y 3
 end
-arch woodfloor
+arch blocked
 x 9
 y 4
 end
-arch woodfloor
+arch blocked
 x 9
 y 5
 end
-arch woodfloor
+arch blocked
 x 9
 y 6
 end
-arch woodfloor
+arch blocked
 x 9
 y 7
 end
-arch woodfloor
+arch blocked
 x 9
 y 8
 end
-arch woodfloor
+arch blocked
 x 9
 y 9
 end
-arch woodfloor
+arch blocked
 x 9
 y 10
 end
@@ -1973,7 +1979,7 @@ arch wall_2_1_2
 x 9
 y 19
 end
-arch woodfloor
+arch blocked
 x 9
 y 20
 end
@@ -1997,9 +2003,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 9
 y 22
-level 5
 end
 arch woodfloor
 x 9
@@ -2013,9 +2019,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 9
 y 23
-level 5
 end
 arch woodfloor
 x 9
@@ -2055,11 +2061,21 @@ end
 arch wall_2_1_2
 x 10
 end
+arch creator
+other_arch angry_floor
+connected 22
+x 10
+y 1
+end
 arch woodfloor
 x 10
 y 1
 end
 arch chair_1.1
+x 10
+y 1
+end
+arch dwarf
 x 10
 y 1
 end
@@ -2095,23 +2111,23 @@ arch wall_2_2_1
 x 10
 y 5
 end
-arch woodfloor
+arch blocked
 x 10
 y 6
 end
-arch woodfloor
+arch blocked
 x 10
 y 7
 end
-arch woodfloor
+arch blocked
 x 10
 y 8
 end
-arch woodfloor
+arch blocked
 x 10
 y 9
 end
-arch woodfloor
+arch blocked
 x 10
 y 10
 end
@@ -2173,7 +2189,7 @@ arch wall_2_1_2
 x 10
 y 19
 end
-arch woodfloor
+arch blocked
 x 10
 y 20
 end
@@ -2217,9 +2233,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 10
 y 24
-level 5
 end
 arch woodfloor
 x 10
@@ -2237,9 +2253,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 10
 y 25
-level 5
 end
 arch woodfloor
 x 10
@@ -2253,9 +2269,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 10
 y 26
-level 5
 end
 arch woodfloor
 x 10
@@ -2269,9 +2285,9 @@ exp 60
 dam 10
 wc 9
 ac 9
+level 5
 x 10
 y 27
-level 5
 end
 arch woodfloor
 x 10
@@ -2299,11 +2315,13 @@ arch woodfloor
 x 11
 y 3
 end
-arch dwarf
-x 11
-y 3
-end
 arch woodfloor
+x 11
+y 4
+end
+arch pedestal
+invisible 1
+connected 22
 x 11
 y 4
 end
@@ -2319,7 +2337,7 @@ arch wall_2_1_2
 x 11
 y 5
 end
-arch woodfloor
+arch blocked
 x 11
 y 6
 end
@@ -2347,7 +2365,7 @@ arch wall_2_2_1
 x 11
 y 9
 end
-arch woodfloor
+arch blocked
 x 11
 y 10
 end
@@ -2423,7 +2441,7 @@ arch wall_2_2_4
 x 11
 y 19
 end
-arch woodfloor
+arch blocked
 x 11
 y 20
 end
@@ -2509,6 +2527,12 @@ arch woodfloor
 x 12
 y 3
 end
+arch creator
+other_arch angry_floor
+connected 22
+x 12
+y 4
+end
 arch woodfloor
 x 12
 y 4
@@ -2525,7 +2549,7 @@ arch wall_2_1_2
 x 12
 y 5
 end
-arch woodfloor
+arch blocked
 x 12
 y 6
 end
@@ -2553,79 +2577,79 @@ arch wall_2_1_2
 x 12
 y 9
 end
-arch woodfloor
+arch blocked
 x 12
 y 10
 end
-arch woodfloor
+arch blocked
 x 12
 y 11
 end
-arch woodfloor
+arch blocked
 x 12
 y 12
 end
-arch woodfloor
+arch blocked
 x 12
 y 13
 end
-arch woodfloor
+arch blocked
 x 12
 y 14
 end
-arch woodfloor
+arch blocked
 x 12
 y 15
 end
-arch woodfloor
+arch blocked
 x 12
 y 16
 end
-arch woodfloor
+arch blocked
 x 12
 y 17
 end
-arch woodfloor
+arch blocked
 x 12
 y 18
 end
-arch woodfloor
+arch blocked
 x 12
 y 19
 end
-arch woodfloor
+arch blocked
 x 12
 y 20
 end
-arch woodfloor
+arch blocked
 x 12
 y 21
 end
-arch woodfloor
+arch blocked
 x 12
 y 22
 end
-arch woodfloor
+arch blocked
 x 12
 y 23
 end
-arch woodfloor
+arch blocked
 x 12
 y 24
 end
-arch woodfloor
+arch blocked
 x 12
 y 25
 end
-arch woodfloor
+arch blocked
 x 12
 y 26
 end
-arch woodfloor
+arch blocked
 x 12
 y 27
 end
-arch woodfloor
+arch blocked
 x 12
 y 28
 end
@@ -2654,6 +2678,12 @@ arch woodfloor
 x 13
 y 3
 end
+arch creator
+other_arch angry_floor
+connected 22
+x 13
+y 4
+end
 arch woodfloor
 x 13
 y 4
@@ -2670,7 +2700,7 @@ arch wall_2_1_2
 x 13
 y 5
 end
-arch woodfloor
+arch blocked
 x 13
 y 6
 end
@@ -2726,7 +2756,7 @@ arch wall_2_2_1
 x 13
 y 13
 end
-arch woodfloor
+arch blocked
 x 13
 y 14
 end
@@ -2770,7 +2800,7 @@ arch wall_2_2_1
 x 13
 y 19
 end
-arch woodfloor
+arch blocked
 x 13
 y 20
 end
@@ -2884,7 +2914,7 @@ arch wall_2_2_4
 x 14
 y 5
 end
-arch woodfloor
+arch blocked
 x 14
 y 6
 end
@@ -2924,7 +2954,7 @@ arch wall_2_1_2
 x 14
 y 13
 end
-arch woodfloor
+arch blocked
 x 14
 y 14
 end
@@ -2972,7 +3002,7 @@ arch wall_2_1_2
 x 14
 y 19
 end
-arch woodfloor
+arch blocked
 x 14
 y 20
 end
@@ -3025,30 +3055,30 @@ arch wall_2_1_2
 x 14
 y 28
 end
-arch woodfloor
+arch blocked
 x 15
 end
-arch woodfloor
+arch blocked
 x 15
 y 1
 end
-arch woodfloor
+arch blocked
 x 15
 y 2
 end
-arch woodfloor
+arch blocked
 x 15
 y 3
 end
-arch woodfloor
+arch blocked
 x 15
 y 4
 end
-arch woodfloor
+arch blocked
 x 15
 y 5
 end
-arch woodfloor
+arch blocked
 x 15
 y 6
 end
@@ -3092,7 +3122,7 @@ arch wall_2_1_2
 x 15
 y 13
 end
-arch woodfloor
+arch blocked
 x 15
 y 14
 end
@@ -3136,7 +3166,7 @@ arch wall_2_1_2
 x 15
 y 19
 end
-arch woodfloor
+arch blocked
 x 15
 y 20
 end
@@ -3214,15 +3244,15 @@ arch wall_2_2_1
 x 16
 y 3
 end
-arch woodfloor
+arch blocked
 x 16
 y 4
 end
-arch woodfloor
+arch blocked
 x 16
 y 5
 end
-arch woodfloor
+arch blocked
 x 16
 y 6
 end
@@ -3270,7 +3300,7 @@ arch wall_2_1_2
 x 16
 y 13
 end
-arch woodfloor
+arch blocked
 x 16
 y 14
 end
@@ -3314,7 +3344,7 @@ arch wall_2_1_2
 x 16
 y 19
 end
-arch woodfloor
+arch blocked
 x 16
 y 20
 end
@@ -3380,6 +3410,12 @@ arch woodfloor
 x 17
 y 2
 end
+arch pedestal
+invisible 1
+connected 11
+x 17
+y 2
+end
 arch chest
 x 17
 y 2
@@ -3392,7 +3428,7 @@ arch wall_2_1_2
 x 17
 y 3
 end
-arch woodfloor
+arch blocked
 x 17
 y 4
 end
@@ -3440,6 +3476,12 @@ arch woodfloor
 x 17
 y 10
 end
+arch pedestal
+invisible 1
+connected 33
+x 17
+y 10
+end
 arch door_look_2
 x 17
 y 10
@@ -3468,7 +3510,7 @@ arch wall_3_1
 x 17
 y 13
 end
-arch woodfloor
+arch blocked
 x 17
 y 14
 end
@@ -3512,7 +3554,7 @@ arch wall_2_1_2
 x 17
 y 19
 end
-arch woodfloor
+arch blocked
 x 17
 y 20
 end
@@ -3579,6 +3621,12 @@ arch woodfloor
 x 18
 y 2
 end
+arch pedestal
+invisible 1
+connected 11
+x 18
+y 2
+end
 arch random_treasure
 x 18
 y 2
@@ -3591,7 +3639,7 @@ arch wall_2_1_2
 x 18
 y 3
 end
-arch woodfloor
+arch blocked
 x 18
 y 4
 end
@@ -3647,7 +3695,7 @@ arch wall_2_1_2
 x 18
 y 13
 end
-arch woodfloor
+arch blocked
 x 18
 y 14
 end
@@ -3691,7 +3739,7 @@ arch wall_2_1_2
 x 18
 y 19
 end
-arch woodfloor
+arch blocked
 x 18
 y 20
 end
@@ -3757,7 +3805,7 @@ arch wall_2_1_2
 x 19
 y 3
 end
-arch woodfloor
+arch blocked
 x 19
 y 4
 end
@@ -3781,6 +3829,12 @@ arch woodfloor
 x 19
 y 8
 end
+arch creator
+other_arch angry_floor
+connected 33
+x 19
+y 9
+end
 arch woodfloor
 x 19
 y 9
@@ -3796,9 +3850,9 @@ msg
 Go away from me house.  Me no like
 you.  Leave now Scummer
 endmsg
+unaggressive 1
 x 19
 y 9
-unaggressive 1
 end
 arch woodfloor
 x 19
@@ -3820,7 +3874,7 @@ arch wall_2_1_2
 x 19
 y 13
 end
-arch woodfloor
+arch blocked
 x 19
 y 14
 end
@@ -3852,7 +3906,7 @@ arch wall_2_1_2
 x 19
 y 19
 end
-arch woodfloor
+arch blocked
 x 19
 y 20
 end
@@ -3885,9 +3939,9 @@ x 19
 y 24
 end
 arch door_look_2
+blocksview 1
 x 19
 y 24
-blocksview 1
 end
 arch woodfloor
 x 19
@@ -3944,7 +3998,7 @@ arch wall_2_1_2
 x 20
 y 3
 end
-arch woodfloor
+arch blocked
 x 20
 y 4
 end
@@ -3996,7 +4050,7 @@ arch wall_2_1_2
 x 20
 y 13
 end
-arch woodfloor
+arch blocked
 x 20
 y 14
 end
@@ -4028,7 +4082,7 @@ arch wall_2_1_2
 x 20
 y 19
 end
-arch woodfloor
+arch blocked
 x 20
 y 20
 end
@@ -4111,11 +4165,11 @@ arch wall_2_1_2
 x 21
 y 3
 end
-arch woodfloor
+arch blocked
 x 21
 y 4
 end
-arch woodfloor
+arch blocked
 x 21
 y 5
 end
@@ -4163,7 +4217,7 @@ arch wall_2_2_4
 x 21
 y 13
 end
-arch woodfloor
+arch blocked
 x 21
 y 14
 end
@@ -4195,7 +4249,7 @@ arch wall_2_1_2
 x 21
 y 19
 end
-arch woodfloor
+arch blocked
 x 21
 y 20
 end
@@ -4356,11 +4410,11 @@ arch wall_2_2_4
 x 22
 y 12
 end
-arch woodfloor
+arch blocked
 x 22
 y 13
 end
-arch woodfloor
+arch blocked
 x 22
 y 14
 end
@@ -4399,7 +4453,7 @@ arch wall_2_1_2
 x 22
 y 19
 end
-arch woodfloor
+arch blocked
 x 22
 y 20
 end
@@ -4494,11 +4548,11 @@ arch wall_2_1_2
 x 23
 y 5
 end
-arch woodfloor
+arch blocked
 x 23
 y 6
 end
-arch woodfloor
+arch blocked
 x 23
 y 7
 end
@@ -4526,19 +4580,19 @@ arch wall_2_2_4
 x 23
 y 10
 end
-arch woodfloor
+arch blocked
 x 23
 y 11
 end
-arch woodfloor
+arch blocked
 x 23
 y 12
 end
-arch woodfloor
+arch blocked
 x 23
 y 13
 end
-arch woodfloor
+arch blocked
 x 23
 y 14
 end
@@ -4582,7 +4636,7 @@ arch wall_2_2_4
 x 23
 y 19
 end
-arch woodfloor
+arch blocked
 x 23
 y 20
 end
@@ -4637,26 +4691,28 @@ end
 arch woodfloor
 x 24
 end
-arch wall_2_2_3
+arch wall_2_1_2
 x 24
 end
 arch woodfloor
 x 24
 y 1
 end
-arch wall_2_2_1
-x 24
-y 1
-end
 arch woodfloor
+x 24
+y 2
+end
+arch creator
+other_arch angry_floor
+connected 11
 x 24
 y 2
 end
 arch angel
 name Angel
+unaggressive 1
 x 24
 y 2
-unaggressive 1
 end
 arch woodfloor
 x 24
@@ -4678,63 +4734,63 @@ arch wall_2_1_2
 x 24
 y 5
 end
-arch woodfloor
+arch blocked
 x 24
 y 6
 end
-arch woodfloor
+arch blocked
 x 24
 y 7
 end
-arch woodfloor
+arch blocked
 x 24
 y 8
 end
-arch woodfloor
+arch blocked
 x 24
 y 9
 end
-arch woodfloor
+arch blocked
 x 24
 y 10
 end
-arch woodfloor
+arch blocked
 x 24
 y 11
 end
-arch woodfloor
+arch blocked
 x 24
 y 12
 end
-arch woodfloor
+arch blocked
 x 24
 y 13
 end
-arch woodfloor
+arch blocked
 x 24
 y 14
 end
-arch woodfloor
+arch blocked
 x 24
 y 15
 end
-arch woodfloor
+arch blocked
 x 24
 y 16
 end
-arch woodfloor
+arch blocked
 x 24
 y 17
 end
-arch woodfloor
+arch blocked
 x 24
 y 18
 end
-arch woodfloor
+arch blocked
 x 24
 y 19
 end
-arch woodfloor
+arch blocked
 x 24
 y 20
 end
@@ -4768,9 +4824,9 @@ x 24
 y 25
 end
 arch door_look_1
+blocksview 1
 x 24
 y 25
-blocksview 1
 end
 arch woodfloor
 x 24
@@ -4795,11 +4851,10 @@ end
 arch woodfloor
 x 25
 end
-arch woodfloor
-x 25
-y 1
-end
 arch wall_2_1_2
+x 25
+end
+arch woodfloor
 x 25
 y 1
 end
@@ -4812,18 +4867,24 @@ x 25
 y 3
 end
 arch wall_2_1_2
+no_pass 0
 x 25
 y 3
-no_pass 0
 end
 arch woodfloor
 x 25
 y 4
 end
-arch black_pudding
+arch creator
+other_arch angry_floor
+connected 11
 x 25
 y 4
+end
+arch black_pudding
 unaggressive 1
+x 25
+y 4
 end
 arch woodfloor
 x 25
@@ -4833,7 +4894,7 @@ arch wall_2_1_2
 x 25
 y 5
 end
-arch woodfloor
+arch blocked
 x 25
 y 6
 end
@@ -4941,7 +5002,7 @@ arch wall_2_2_1
 x 25
 y 19
 end
-arch woodfloor
+arch blocked
 x 25
 y 20
 end
@@ -4992,11 +5053,10 @@ end
 arch woodfloor
 x 26
 end
-arch woodfloor
-x 26
-y 1
-end
 arch wall_2_1_2
+x 26
+end
+arch woodfloor
 x 26
 y 1
 end
@@ -5028,7 +5088,7 @@ arch wall_3_1
 x 26
 y 5
 end
-arch woodfloor
+arch blocked
 x 26
 y 6
 end
@@ -5040,6 +5100,12 @@ arch wall_2_1_2
 x 26
 y 7
 end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 8
+end
 arch woodfloor
 x 26
 y 8
@@ -5051,9 +5117,15 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 26
 y 8
-unaggressive 1
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 9
 end
 arch woodfloor
 x 26
@@ -5066,17 +5138,35 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 26
 y 9
-unaggressive 1
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 26
 y 10
 end
 arch woodfloor
 x 26
+y 10
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
 y 11
+end
+arch woodfloor
+x 26
+y 11
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 12
 end
 arch woodfloor
 x 26
@@ -5089,17 +5179,35 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 26
 y 12
-unaggressive 1
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 26
 y 13
 end
 arch woodfloor
 x 26
+y 13
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
 y 14
+end
+arch woodfloor
+x 26
+y 14
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 15
 end
 arch woodfloor
 x 26
@@ -5116,19 +5224,37 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 26
 y 15
-unaggressive 1
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 16
 end
 arch woodfloor
 x 26
 y 16
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 26
+y 17
 end
 arch woodfloor
 x 26
 y 17
 end
 arch woodfloor
+x 26
+y 18
+end
+arch pedestal
+invisible 1
+connected 9
 x 26
 y 18
 end
@@ -5144,7 +5270,7 @@ arch wall_2_1_2
 x 26
 y 19
 end
-arch woodfloor
+arch blocked
 x 26
 y 20
 end
@@ -5200,11 +5326,10 @@ end
 arch woodfloor
 x 27
 end
-arch woodfloor
-x 27
-y 1
-end
 arch wall_2_1_2
+x 27
+end
+arch woodfloor
 x 27
 y 1
 end
@@ -5220,7 +5345,7 @@ arch magic_mouth
 msg
 You see an Angel appear before you
 The Angle says:
-    "Stop brave adventurer...do not
+"Stop brave adventurer...do not
 take what is not your from this lonely
 hovel.  The owners have gone through
 great hardships.  So if you do feel
@@ -5248,7 +5373,7 @@ arch wall_2_1_2
 x 27
 y 5
 end
-arch woodfloor
+arch blocked
 x 27
 y 6
 end
@@ -5260,29 +5385,71 @@ arch wall_2_1_2
 x 27
 y 7
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 27
 y 8
 end
 arch woodfloor
 x 27
+y 8
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
 y 9
 end
 arch woodfloor
+x 27
+y 9
+end
+arch creator
+other_arch angry_floor
+connected 9
 x 27
 y 10
 end
 arch woodfloor
 x 27
+y 10
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
 y 11
 end
 arch woodfloor
+x 27
+y 11
+end
+arch creator
+other_arch angry_floor
+connected 9
 x 27
 y 12
 end
 arch woodfloor
 x 27
+y 12
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
 y 13
+end
+arch woodfloor
+x 27
+y 13
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
+y 14
 end
 arch woodfloor
 x 27
@@ -5299,9 +5466,15 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 27
 y 14
-unaggressive 1
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
+y 15
 end
 arch woodfloor
 x 27
@@ -5311,13 +5484,31 @@ arch table_4
 x 27
 y 15
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 27
 y 16
 end
 arch woodfloor
 x 27
+y 16
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
 y 17
+end
+arch woodfloor
+x 27
+y 17
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 27
+y 18
 end
 arch woodfloor
 x 27
@@ -5330,9 +5521,9 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 27
 y 18
-unaggressive 1
 end
 arch woodfloor
 x 27
@@ -5342,7 +5533,7 @@ arch wall_2_1_2
 x 27
 y 19
 end
-arch woodfloor
+arch blocked
 x 27
 y 20
 end
@@ -5393,11 +5584,14 @@ end
 arch woodfloor
 x 28
 end
+arch wall_2_2_3
+x 28
+end
 arch woodfloor
 x 28
 y 1
 end
-arch wall_2_2_3
+arch wall_2_1_1
 x 28
 y 1
 end
@@ -5433,7 +5627,7 @@ arch wall_2_2_4
 x 28
 y 5
 end
-arch woodfloor
+arch blocked
 x 28
 y 6
 end
@@ -5444,6 +5638,12 @@ end
 arch wall_2_1_2
 x 28
 y 7
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
+y 8
 end
 arch woodfloor
 x 28
@@ -5456,13 +5656,31 @@ sp 0
 x 28
 y 8
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 28
 y 9
 end
 arch woodfloor
 x 28
+y 9
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
 y 10
+end
+arch woodfloor
+x 28
+y 10
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
+y 11
 end
 arch woodfloor
 x 28
@@ -5475,21 +5693,45 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 28
 y 11
-unaggressive 1
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 28
 y 12
 end
 arch woodfloor
 x 28
+y 12
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
 y 13
 end
 arch woodfloor
 x 28
+y 13
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
 y 14
+end
+arch woodfloor
+x 28
+y 14
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
+y 15
 end
 arch woodfloor
 x 28
@@ -5506,17 +5748,35 @@ msg
 They're coming to take me away....
 HO HO HA HA HE HE HO HO HA HA HE HE
 endmsg
+unaggressive 1
 x 28
 y 15
-unaggressive 1
 end
-arch woodfloor
+arch creator
+other_arch angry_floor
+connected 9
 x 28
 y 16
 end
 arch woodfloor
 x 28
+y 16
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
 y 17
+end
+arch woodfloor
+x 28
+y 17
+end
+arch creator
+other_arch angry_floor
+connected 9
+x 28
+y 18
 end
 arch woodfloor
 x 28
@@ -5534,7 +5794,7 @@ arch wall_2_1_2
 x 28
 y 19
 end
-arch woodfloor
+arch blocked
 x 28
 y 20
 end
@@ -5597,30 +5857,30 @@ arch wall_2_1_2
 x 28
 y 28
 end
-arch woodfloor
+arch blocked
 x 29
 end
-arch woodfloor
+arch blocked
 x 29
 y 1
 end
-arch woodfloor
+arch blocked
 x 29
 y 2
 end
-arch woodfloor
+arch blocked
 x 29
 y 3
 end
-arch woodfloor
+arch blocked
 x 29
 y 4
 end
-arch woodfloor
+arch blocked
 x 29
 y 5
 end
-arch woodfloor
+arch blocked
 x 29
 y 6
 end
@@ -5728,7 +5988,7 @@ arch wall_2_2_4
 x 29
 y 19
 end
-arch woodfloor
+arch blocked
 x 29
 y 20
 end
