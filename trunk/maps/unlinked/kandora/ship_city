@@ -1279,29 +1279,9 @@ arch house_up
 x 2
 y 7
 end
-More
-arch house_up_2
-x 2
-y 8
-end
 arch l_shop1
 x 9
 y 1
-end
-More
-arch l_shop1_2
-x 10
-y 1
-end
-More
-arch l_shop1_3
-x 9
-y 2
-end
-More
-arch l_shop1_4
-x 10
-y 2
 end
 arch slum1
 slaying ship_home
@@ -1310,38 +1290,15 @@ sp 10
 x 9
 y 3
 end
-More
-arch slum1_2
-slaying ship_home
-hp 1
-sp 10
-x 9
-y 4
-end
 arch house_long
 x 9
-y 11
-end
-More
-arch house_long_2
-x 10
 y 11
 end
 arch slum2
 x 10
 y 3
 end
-More
-arch slum2_2
-x 10
-y 4
-end
 arch slum3
 x 11
 y 3
-end
-More
-arch slum3_2
-x 11
-y 4
 end

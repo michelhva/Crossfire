@@ -6763,59 +6763,11 @@ x 5
 y 9
 unaggressive 1
 end
-More
-arch behemoth_2
-name Guardian of the West
-hp 8000
-x 6
-y 9
-unaggressive 1
-end
-More
-arch behemoth_3
-name Guardian of the West
-hp 8000
-x 5
-y 10
-unaggressive 1
-end
-More
-arch behemoth_4
-name Guardian of the West
-hp 8000
-x 6
-y 10
-unaggressive 1
-end
 arch behemoth
 name Guardian of the South
 hp 8000
 x 6
 y 20
-unaggressive 1
-end
-More
-arch behemoth_2
-name Guardian of the South
-hp 8000
-x 7
-y 20
-unaggressive 1
-end
-More
-arch behemoth_3
-name Guardian of the South
-hp 8000
-x 6
-y 21
-unaggressive 1
-end
-More
-arch behemoth_4
-name Guardian of the South
-hp 8000
-x 7
-y 21
 unaggressive 1
 end
 arch behemoth
@@ -6837,48 +6789,9 @@ x 9
 y 15
 unaggressive 1
 end
-More
-arch behemoth_2
-name Guardian of the North
-hp 8000
-x 10
-y 15
-unaggressive 1
-end
-More
-arch behemoth_3
-name Guardian of the North
-hp 8000
-x 9
-y 16
-unaggressive 1
-end
-More
-arch behemoth_4
-name Guardian of the North
-hp 8000
-x 10
-y 16
-unaggressive 1
-end
 arch shadowtiger
 x 19
 y 6
-end
-More
-arch shadowtiger_2
-x 20
-y 6
-end
-More
-arch shadowtiger_3
-x 19
-y 7
-end
-More
-arch shadowtiger_4
-x 20
-y 7
 end
 arch sphinx
 name Wise sphinx
@@ -6904,41 +6817,10 @@ endmsg
 x 24
 y 26
 end
-More
-arch sphinx_2
-name Wise sphinx
-hp 300
-x 25
-y 26
-end
 arch behemoth
 name Guardian of the East
 hp 8000
 x 25
 y 17
-unaggressive 1
-end
-More
-arch behemoth_2
-name Guardian of the East
-hp 8000
-x 26
-y 17
-unaggressive 1
-end
-More
-arch behemoth_3
-name Guardian of the East
-hp 8000
-x 25
-y 18
-unaggressive 1
-end
-More
-arch behemoth_4
-name Guardian of the East
-hp 8000
-x 26
-y 18
 unaggressive 1
 end

@@ -5158,74 +5158,18 @@ name Dun Denray
 slaying denray
 y 17
 end
-More
-arch fort_2
-name Dun Denray
-slaying denray
-y 17
-end
-More
-arch fort_3
-name Dun Denray
-slaying denray
-y 18
-end
-More
-arch fort_4
-name Dun Denray
-slaying denray
-y 18
-end
 arch mountain_2
 x 5
 y 3
-end
-More
-arch mountain_2_2
-x 6
-y 3
-end
-More
-arch mountain_2_3
-x 5
-y 4
-end
-More
-arch mountain_2_4
-x 6
-y 4
 end
 arch castle_a
 x 17
 y 11
 speed_left -0.518000
 end
-More
-arch castle_b
-x 18
-y 11
-speed_left -0.556000
-end
-More
-arch castle_c
-x 17
-y 12
-speed_left -0.594000
-end
-More
-arch castle_d
-x 18
-y 12
-speed_left -0.632000
-end
 arch city_tower
 x 33
 y 20
-end
-More
-arch city_tower_2
-x 33
-y 21
 end
 arch hovels2
 slaying ship_city
@@ -5233,31 +5177,6 @@ sp 8
 x 34
 y 15
 end
-More
-arch hovels2_2
-slaying ship_city
-sp 8
-x 35
-y 15
-end
-More
-arch hovels2_3
-slaying ship_city
-sp 8
-x 34
-y 16
-end
-More
-arch hovels2_4
-slaying ship_city
-sp 8
-x 35
-y 16
-end
 arch s_tower2
-x 38
-end
-More
-arch s_tower2_2
 x 38
 end

@@ -1709,45 +1709,9 @@ slaying dd_keep
 x 1
 y 7
 end
-More
-arch keep_2
-name keep
-slaying dd_keep
-x 2
-y 7
-end
-More
-arch keep_3
-name keep
-slaying dd_keep
-x 1
-y 8
-end
-More
-arch keep_4
-name keep
-slaying dd_keep
-x 2
-y 8
-end
 arch rl_house1
 x 2
 y 10
-end
-More
-arch rl_house1_2
-x 3
-y 10
-end
-More
-arch rl_house1_3
-x 2
-y 11
-end
-More
-arch rl_house1_4
-x 3
-y 11
 end
 arch house_largish
 name nice house
@@ -1757,79 +1721,19 @@ sp 4
 x 3
 y 4
 end
-More
-arch house_largish_2
-name nice house
-slaying dd_baron
-hp 4
-sp 4
-x 4
-y 4
-end
 arch store_weapons
 slaying dd_shop
 x 4
 y 13
-end
-More
-arch store_weapons_2
-slaying dd_shop
-x 5
-y 13
-end
-More
-arch store_weapons_3
-slaying dd_shop
-x 4
-y 14
-end
-More
-arch store_weapons_4
-slaying dd_shop
-x 5
-y 14
 end
 arch church
 slaying dd_church
 x 5
 y 4
 end
-More
-arch church_2
-slaying dd_church
-x 6
-y 4
-end
-More
-arch church_3
-slaying dd_church
-x 5
-y 5
-end
-More
-arch church_4
-slaying dd_church
-x 6
-y 5
-end
 arch prison
 x 6
 y 1
-end
-More
-arch prison_2
-x 7
-y 1
-end
-More
-arch prison_3
-x 6
-y 2
-end
-More
-arch prison_4
-x 7
-y 2
 end
 arch courthouse
 name royal court
@@ -1839,128 +1743,37 @@ sp 12
 x 6
 y 7
 end
-More
-arch courthouse_2
-name royal court
-slaying dd_court
-hp 6
-sp 12
-x 7
-y 7
-end
-More
-arch courthouse_3
-name royal court
-slaying dd_court
-hp 6
-sp 12
-x 6
-y 8
-end
-More
-arch courthouse_4
-name royal court
-slaying dd_court
-hp 6
-sp 12
-x 7
-y 8
-end
 arch guild
 slaying dd_alchemy
 x 6
 y 13
-end
-More
-arch guild_2
-slaying dd_alchemy
-x 7
-y 13
-end
-More
-arch guild_3
-slaying dd_alchemy
-x 6
-y 14
-end
-More
-arch guild_4
-slaying dd_alchemy
-x 7
-y 14
 end
 arch inn
 slaying dd_inn
 x 8
 y 5
 end
-More
-arch inn_2
-slaying dd_inn
-x 9
-y 5
-end
 arch barn
 x 10
 y 11
 end
-More
-arch barn_2
-x 11
-y 11
-end
-More
-arch barn_3
-x 10
-y 12
-end
-More
-arch barn_4
-x 11
-y 12
-end
 arch barrack_long
 x 11
 y 4
 end
-More
-arch barrack_long_2
-x 12
-y 4
-end
 arch barrack_long
 x 12
-y 12
-end
-More
-arch barrack_long_2
-x 13
 y 12
 end
 arch tower_a
 x 13
 y 1
 end
-More
-arch tower_b
-x 13
-y 2
-end
 arch barrack_up
 x 13
 y 3
 end
-More
-arch barrack_up_2
-x 13
-y 4
-end
 arch tower_a
 x 13
 y 13
-end
-More
-arch tower_b
-x 13
-y 14
 end

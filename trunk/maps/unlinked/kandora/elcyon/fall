@@ -1349,24 +1349,6 @@ endmsg
 x 4
 y 8
 end
-More
-arch ent_2
-hp 500
-x 5
-y 8
-end
-More
-arch ent_3
-hp 500
-x 4
-y 9
-end
-More
-arch ent_4
-hp 500
-x 5
-y 9
-end
 arch ent
 name Frond the Ancient
 msg
@@ -1390,27 +1372,6 @@ humans.
 endmsg
 x 5
 y 3
-end
-More
-arch ent_2
-name Frond the Ancient
-hp 500
-x 6
-y 3
-end
-More
-arch ent_3
-name Frond the Ancient
-hp 500
-x 5
-y 4
-end
-More
-arch ent_4
-name Frond the Ancient
-hp 500
-x 6
-y 4
 end
 arch ent
 name Sir Rootmore
@@ -1436,27 +1397,6 @@ endmsg
 x 7
 y 11
 end
-More
-arch ent_2
-name Sir Rootmore
-hp 500
-x 8
-y 11
-end
-More
-arch ent_3
-name Sir Rootmore
-hp 500
-x 7
-y 12
-end
-More
-arch ent_4
-name Sir Rootmore
-hp 500
-x 8
-y 12
-end
 arch ent
 name Northond
 msg
@@ -1470,27 +1410,6 @@ endmsg
 x 9
 y 1
 end
-More
-arch ent_2
-name Northond
-hp 500
-x 10
-y 1
-end
-More
-arch ent_3
-name Northond
-hp 500
-x 9
-y 2
-end
-More
-arch ent_4
-name Northond
-hp 500
-x 10
-y 2
-end
 arch ent
 msg
 @match haste
@@ -1502,24 +1421,6 @@ Do not act in haste!
 endmsg
 x 11
 y 10
-end
-More
-arch ent_2
-hp 500
-x 12
-y 10
-end
-More
-arch ent_3
-hp 500
-x 11
-y 11
-end
-More
-arch ent_4
-hp 500
-x 12
-y 11
 end
 arch ent
 name Quercus
@@ -1542,27 +1443,6 @@ endmsg
 x 12
 y 6
 end
-More
-arch ent_2
-name Quercus
-hp 500
-x 13
-y 6
-end
-More
-arch ent_3
-name Quercus
-hp 500
-x 12
-y 7
-end
-More
-arch ent_4
-name Quercus
-hp 500
-x 13
-y 7
-end
 arch ent
 name Gnarles
 msg
@@ -1581,27 +1461,6 @@ be too hasty... Hmmmmmm....
 endmsg
 x 13
 y 2
-end
-More
-arch ent_2
-name Gnarles
-hp 500
-x 14
-y 2
-end
-More
-arch ent_3
-name Gnarles
-hp 500
-x 13
-y 3
-end
-More
-arch ent_4
-name Gnarles
-hp 500
-x 14
-y 3
 end
 arch unicorn
 msg
@@ -1632,14 +1491,4 @@ arch random_spells
 end
 arch random_spells
 end
-end
-More
-arch unicorn_2
-hp 2000
-maxhp 2000
-sp 95
-maxsp 99
-dam 80
-x 18
-y 13
 end
