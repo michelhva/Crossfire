@@ -34,5 +34,5 @@ pick_up 6
 resist_cold 50
 resist_physical 40
 resist_acid 90
-resist_blinding 80
+resist_blind 80
 end

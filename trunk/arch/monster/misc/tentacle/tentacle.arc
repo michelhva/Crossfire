@@ -39,5 +39,5 @@ resist_cold 40
 resist_poison 100
 resist_physical 25
 resist_acid 30
-resist_blinding 90
+resist_blind 90
 end

@@ -40,5 +40,5 @@ resist_electricity -10
 resist_poison 100
 resist_physical 20
 resist_acid 90
-resist_blinding 90
+resist_blind 90
 end
