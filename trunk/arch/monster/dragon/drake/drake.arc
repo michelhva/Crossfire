@@ -15,7 +15,7 @@ drake.212
 drake.213
 drake.212
 mina
-level 8
+level 9
 monster 1
 sleep 1
 Wis 15
@@ -25,8 +25,9 @@ alive 1
 exp 5000
 ac -3
 wc 5
-dam 5
-Con 3
+dam 20
+Str 15
+Con 5
 can_cast_spell 0
 hp 220
 maxhp 220
