@@ -9,4 +9,5 @@ auto_apply 1
 randomitems random_weapon
 editable 64
 magicmap grey
+damned 1
 end

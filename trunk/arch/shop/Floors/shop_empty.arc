@@ -7,4 +7,5 @@ type 68
 no_magic 1
 editable 64
 magicmap grey
+damned 1
 end

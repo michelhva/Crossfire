@@ -10,4 +10,5 @@ randomitems shop_gems
 editable 64
 exp 100000
 magicmap grey
+damned 1
 end

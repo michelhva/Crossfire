@@ -9,4 +9,5 @@ auto_apply 1
 randomitems shop_rings
 editable 64
 magicmap grey
+damned 1
 end
