@@ -1,17 +1,21 @@
 arch map
+name <untitled>
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Sat Oct 16 19:49:24 1993
 endmsg
-hp 18
-sp 11
-x 20
-y 20
+width 20
+height 20
+enter_x 18
+enter_y 11
+tile_path_1 oldcity10
+tile_path_3 oldcity2
+tile_path_4 oldcity9
 end
 arch large_stones
 end
-arch awall_2_2_2
+arch awall_2_1_1
 end
 arch large_stones
 y 1
@@ -25,14 +29,8 @@ end
 arch awall_2_1_1
 y 2
 end
-arch exit
-name dirt exit
-slaying oldcity9
-face largestone.111
-hp 39
-sp 3
+arch large_stones
 y 3
-is_animated 0
 end
 arch large_stones
 y 4
@@ -55,7 +53,7 @@ end
 arch large_stones
 y 7
 end
-arch awall_2_1_1
+arch awall_4
 y 7
 end
 arch large_stones
@@ -81,17 +79,14 @@ y 11
 end
 arch sea
 name stream
-y 11
 speed_left -0.900000
+y 11
 end
 arch sea
 y 12
 end
 arch awall_2_1_1
 y 12
-end
-arch sea
-y 13
 end
 arch large_stones
 y 13
@@ -128,9 +123,6 @@ end
 arch large_stones
 x 1
 end
-arch awall_2_1_2
-x 1
-end
 arch large_stones
 x 1
 y 1
@@ -171,7 +163,7 @@ arch large_stones
 x 1
 y 7
 end
-arch awall_2_2_1
+arch awall_2_1_2
 x 1
 y 7
 end
@@ -200,9 +192,9 @@ y 10
 end
 arch sea
 name stream
+speed_left -0.900000
 x 1
 y 10
-speed_left -0.900000
 end
 arch sea
 name stream
@@ -248,9 +240,6 @@ x 1
 y 19
 end
 arch large_stones
-x 2
-end
-arch awall_2_1_2
 x 2
 end
 arch large_stones
@@ -358,18 +347,8 @@ arch awall_1_4
 x 2
 y 19
 end
-arch medium_stones
+arch large_stones
 x 3
-end
-arch exit
-name dirt exit
-slaying oldcity10
-face largestone.111
-hp 3
-sp 39
-x 3
-speed_left -0.500000
-is_animated 0
 end
 arch large_stones
 x 3
@@ -864,13 +843,9 @@ arch large_stones
 x 7
 y 18
 end
-arch exit
-name dirt exit
-slaying oldcity2
-face largestone.111
+arch large_stones
 x 7
 y 19
-is_animated 0
 end
 arch woodfloor
 x 8
@@ -1434,7 +1409,7 @@ arch dungeon_floor
 x 12
 y 19
 end
-arch awall_2_1_2
+arch awall_3_3
 x 12
 y 19
 end
@@ -1482,10 +1457,10 @@ endmsg
 hp 20
 maxhp 20
 exp 150
-x 13
-y 5
 level 3
 unaggressive 1
+x 13
+y 5
 end
 arch dungeon_floor
 x 13

@@ -1,10 +1,14 @@
 arch map
+name <untitled>
 msg
+
 endmsg
-hp 9
-sp 39
-x 20
-y 40
+width 20
+height 40
+enter_x 9
+enter_y 39
+tile_path_1 oldcity15
+tile_path_3 oldcity11
 end
 arch pstone_3
 end
@@ -241,17 +245,11 @@ end
 arch pstone_1
 y 39
 end
-arch wwall_2_2_1
+arch wwall_2_1_1
 y 39
 end
-arch exit
-name dirt exit
-slaying oldcity15
-face pstone_3.111
-hp 1
-sp 39
+arch pstone_3
 x 1
-is_animated 0
 end
 arch pstone_3
 x 1
@@ -442,9 +440,9 @@ x 1
 y 31
 end
 arch generate_goblin
+speed_left -0.140000
 x 1
 y 31
-speed_left -0.140000
 end
 arch medium_stones
 x 1
@@ -483,10 +481,6 @@ x 1
 y 38
 end
 arch pstone_1
-x 1
-y 39
-end
-arch wwall_2_1_2
 x 1
 y 39
 end
@@ -685,9 +679,9 @@ x 2
 y 31
 end
 arch generate_goblin
+speed_left -0.140000
 x 2
 y 31
-speed_left -0.140000
 end
 arch medium_stones
 x 2
@@ -741,10 +735,6 @@ arch pstone_1
 x 2
 y 39
 end
-arch wwall_2_1_2
-x 2
-y 39
-end
 arch large_stones
 x 3
 end
@@ -756,9 +746,9 @@ x 3
 y 1
 end
 arch orc
+speed_left -0.700000
 x 3
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 3
@@ -1000,10 +990,6 @@ arch pstone_1
 x 3
 y 39
 end
-arch wwall_2_1_2
-x 3
-y 39
-end
 arch large_stones
 x 4
 end
@@ -1015,9 +1001,9 @@ x 4
 y 1
 end
 arch orc
+speed_left -0.700000
 x 4
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 4
@@ -1259,11 +1245,7 @@ arch pstone_3
 x 4
 y 38
 end
-arch pstone_1
-x 4
-y 39
-end
-arch wwall_2_1_2
+arch pstone_3
 x 4
 y 39
 end
@@ -1278,27 +1260,27 @@ x 5
 y 1
 end
 arch orc
+speed_left -0.700000
 x 5
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 5
 y 2
 end
 arch orc
+speed_left -0.700000
 x 5
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 5
 y 3
 end
 arch orc
+speed_left -0.700000
 x 5
 y 3
-speed_left -0.700000
 end
 arch large_stones
 x 5
@@ -1516,10 +1498,6 @@ arch pstone_3
 x 5
 y 39
 end
-arch wwall_2_1_2
-x 5
-y 39
-end
 arch large_stones
 x 6
 end
@@ -1531,36 +1509,36 @@ x 6
 y 1
 end
 arch orc
+speed_left -0.700000
 x 6
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 6
 y 2
 end
 arch orc
+speed_left -0.700000
 x 6
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 6
 y 3
 end
 arch orc
+speed_left -0.700000
 x 6
 y 3
-speed_left -0.700000
 end
 arch large_stones
 x 6
 y 4
 end
 arch orc
+speed_left -0.700000
 x 6
 y 4
-speed_left -0.700000
 end
 arch large_stones
 x 6
@@ -1759,10 +1737,6 @@ x 6
 y 38
 end
 arch medium_stones
-x 6
-y 39
-end
-arch wwall_2_1_2
 x 6
 y 39
 end
@@ -1964,10 +1938,6 @@ arch medium_stones
 x 7
 y 39
 end
-arch wwall_2_1_2
-x 7
-y 39
-end
 arch large_stones
 x 8
 end
@@ -1983,9 +1953,9 @@ x 8
 y 2
 end
 arch orc
+speed_left -0.700000
 x 8
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 8
@@ -2000,27 +1970,27 @@ x 8
 y 4
 end
 arch orc
+speed_left -0.700000
 x 8
 y 4
-speed_left -0.700000
 end
 arch large_stones
 x 8
 y 5
 end
 arch orc
+speed_left -0.700000
 x 8
 y 5
-speed_left -0.700000
 end
 arch large_stones
 x 8
 y 6
 end
 arch orc
+speed_left -0.700000
 x 8
 y 6
-speed_left -0.700000
 end
 arch large_stones
 x 8
@@ -2182,10 +2152,6 @@ arch medium_stones
 x 8
 y 39
 end
-arch wwall_1_3
-x 8
-y 39
-end
 arch large_stones
 x 9
 end
@@ -2213,45 +2179,45 @@ x 9
 y 4
 end
 arch orc
+speed_left -0.700000
 x 9
 y 4
-speed_left -0.700000
 end
 arch large_stones
 x 9
 y 5
 end
 arch orc
+speed_left -0.700000
 x 9
 y 5
-speed_left -0.700000
 end
 arch large_stones
 x 9
 y 6
 end
 arch orc
+speed_left -0.700000
 x 9
 y 6
-speed_left -0.700000
 end
 arch large_stones
 x 9
 y 7
 end
 arch orc
+speed_left -0.700000
 x 9
 y 7
-speed_left -0.700000
 end
 arch large_stones
 x 9
 y 8
 end
 arch orc
+speed_left -0.700000
 x 9
 y 8
-speed_left -0.700000
 end
 arch pstone_3
 x 9
@@ -2425,14 +2391,9 @@ arch pstone_3
 x 9
 y 38
 end
-arch exit
-name dirt exit
-slaying oldcity11
-face mediumston.111
-hp 9
+arch medium_stones
 x 9
 y 39
-is_animated 0
 end
 arch large_stones
 x 10
@@ -2461,9 +2422,9 @@ x 10
 y 4
 end
 arch orc
+speed_left -0.700000
 x 10
 y 4
-speed_left -0.700000
 end
 arch large_stones
 x 10
@@ -2670,10 +2631,6 @@ arch pstone_3
 x 10
 y 39
 end
-arch wwall_1_4
-x 10
-y 39
-end
 arch large_stones
 x 11
 end
@@ -2689,9 +2646,9 @@ x 11
 y 2
 end
 arch orc
+speed_left -0.700000
 x 11
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 11
@@ -2933,10 +2890,6 @@ arch pstone_3
 x 11
 y 39
 end
-arch wwall_2_1_2
-x 11
-y 39
-end
 arch large_stones
 x 12
 end
@@ -2948,18 +2901,18 @@ x 12
 y 1
 end
 arch orc
+speed_left -0.700000
 x 12
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 12
 y 2
 end
 arch orc
+speed_left -0.700000
 x 12
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 12
@@ -3170,18 +3123,18 @@ x 12
 y 32
 end
 arch generate_goblin
+speed_left -0.140000
 x 12
 y 32
-speed_left -0.140000
 end
 arch medium_stones
 x 12
 y 33
 end
 arch generate_goblin
+speed_left -0.140000
 x 12
 y 33
-speed_left -0.140000
 end
 arch medium_stones
 x 12
@@ -3219,7 +3172,7 @@ arch pstone_3
 x 12
 y 39
 end
-arch wwall_3_1
+arch wwall_2_1_1
 x 12
 y 39
 end
@@ -3485,10 +3438,6 @@ arch pstone_3
 x 13
 y 39
 end
-arch wwall_2_1_2
-x 13
-y 39
-end
 arch large_stones
 x 14
 end
@@ -3500,9 +3449,9 @@ x 14
 y 1
 end
 arch orc
+speed_left -0.700000
 x 14
 y 1
-speed_left -0.700000
 end
 arch large_stones
 x 14
@@ -3748,10 +3697,6 @@ arch medium_stones
 x 14
 y 39
 end
-arch wwall_2_1_2
-x 14
-y 39
-end
 arch large_stones
 x 15
 end
@@ -3771,9 +3716,9 @@ x 15
 y 2
 end
 arch orc
+speed_left -0.700000
 x 15
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 15
@@ -3796,27 +3741,27 @@ x 15
 y 5
 end
 arch gnoll
+speed_left -0.500000
 x 15
 y 5
-speed_left -0.500000
 end
 arch large_stones
 x 15
 y 6
 end
 arch gnoll
+speed_left -0.500000
 x 15
 y 6
-speed_left -0.500000
 end
 arch large_stones
 x 15
 y 7
 end
 arch gnoll
+speed_left -0.500000
 x 15
 y 7
-speed_left -0.500000
 end
 arch pstone_1
 x 15
@@ -4042,10 +3987,6 @@ arch medium_stones
 x 15
 y 39
 end
-arch wwall_2_1_2
-x 15
-y 39
-end
 arch large_stones
 x 16
 end
@@ -4065,9 +4006,9 @@ x 16
 y 2
 end
 arch orc
+speed_left -0.700000
 x 16
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 16
@@ -4090,9 +4031,9 @@ x 16
 y 5
 end
 arch gnoll
+speed_left -0.500000
 x 16
 y 5
-speed_left -0.500000
 end
 arch pstone_1
 x 16
@@ -4211,9 +4152,9 @@ x 16
 y 20
 end
 arch kobold
+speed_left -0.500000
 x 16
 y 20
-speed_left -0.500000
 end
 arch small_stones
 x 16
@@ -4328,15 +4269,11 @@ x 16
 y 38
 end
 arch goblin
+speed_left -0.300000
 x 16
 y 38
-speed_left -0.300000
 end
 arch medium_stones
-x 16
-y 39
-end
-arch wwall_2_1_2
 x 16
 y 39
 end
@@ -4359,18 +4296,18 @@ x 17
 y 2
 end
 arch orc
+speed_left -0.700000
 x 17
 y 2
-speed_left -0.700000
 end
 arch large_stones
 x 17
 y 3
 end
 arch orc
+speed_left -0.700000
 x 17
 y 3
-speed_left -0.700000
 end
 arch large_stones
 x 17
@@ -4389,9 +4326,9 @@ x 17
 y 6
 end
 arch gnoll
+speed_left -0.500000
 x 17
 y 6
-speed_left -0.500000
 end
 arch pstone_1
 x 17
@@ -4494,9 +4431,9 @@ x 17
 y 19
 end
 arch kobold
+speed_left -0.500000
 x 17
 y 19
-speed_left -0.500000
 end
 arch small_stones
 x 17
@@ -4610,7 +4547,7 @@ arch pstone_3
 x 17
 y 39
 end
-arch wwall_2_2_4
+arch wwall_2_1_1
 x 17
 y 39
 end
@@ -4765,27 +4702,27 @@ x 18
 y 19
 end
 arch kobold
+speed_left -0.500000
 x 18
 y 19
-speed_left -0.500000
 end
 arch medium_stones
 x 18
 y 20
 end
 arch kobold
+speed_left -0.500000
 x 18
 y 20
-speed_left -0.500000
 end
 arch medium_stones
 x 18
 y 21
 end
 arch kobold
+speed_left -0.500000
 x 18
 y 21
-speed_left -0.500000
 end
 arch small_stones
 x 18
@@ -5221,35 +5158,8 @@ arch behemoth
 name sad creature
 hp 200
 maxhp 200
-x 11
-y 20
 speed 0.100000
 speed_left -0.240000
-end
-More
-arch behemoth_2
-name sad creature
-hp 200
-maxhp 200
-x 12
-y 20
-speed 0.100000
-end
-More
-arch behemoth_3
-name sad creature
-hp 200
-maxhp 200
 x 11
-y 21
-speed 0.100000
-end
-More
-arch behemoth_4
-name sad creature
-hp 200
-maxhp 200
-x 12
-y 21
-speed 0.100000
+y 20
 end

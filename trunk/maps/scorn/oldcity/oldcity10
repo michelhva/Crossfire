@@ -1,6 +1,13 @@
 arch map
-x 20
-y 40
+name <untitled>
+msg
+
+endmsg
+width 20
+height 40
+tile_path_1 oldcity11
+tile_path_3 oldcity1
+tile_path_4 oldcity12
 end
 arch woodfloor
 end
@@ -180,13 +187,8 @@ end
 arch dwall_2_2_1
 y 29
 end
-arch exit
-slaying oldcity12
-face cobblesto2.111
-hp 39
-sp 30
+arch cobblestones
 y 30
-is_animated 0
 end
 arch pstone_1
 y 31
@@ -239,7 +241,7 @@ end
 arch medium_stones
 y 39
 end
-arch awall_2_2_1
+arch awall_4
 y 39
 end
 arch woodfloor
@@ -302,10 +304,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 1
-y 8
 level 3
 unaggressive 0
+x 1
+y 8
 end
 arch dungeon_floor
 x 1
@@ -317,10 +319,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 1
-y 9
 level 3
 unaggressive 0
+x 1
+y 9
 end
 arch dungeon_floor
 x 1
@@ -356,10 +358,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 1
-y 13
 level 3
 unaggressive 0
+x 1
+y 13
 end
 arch dungeon_floor
 x 1
@@ -371,10 +373,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 1
-y 14
 level 3
 unaggressive 0
+x 1
+y 14
 end
 arch dungeon_floor
 x 1
@@ -608,10 +610,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 2
-y 8
 level 3
 unaggressive 0
+x 2
+y 8
 end
 arch dungeon_floor
 x 2
@@ -623,10 +625,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 2
-y 9
 level 3
 unaggressive 0
+x 2
+y 9
 end
 arch dungeon_floor
 x 2
@@ -670,10 +672,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 2
-y 14
 level 3
 unaggressive 0
+x 2
+y 14
 end
 arch dungeon_floor
 x 2
@@ -704,9 +706,9 @@ x 2
 y 18
 end
 arch scorpion
+speed_left -0.700000
 x 2
 y 18
-speed_left -0.700000
 end
 arch woodfloor
 x 2
@@ -717,9 +719,9 @@ x 2
 y 19
 end
 arch scorpion
+speed_left -0.700000
 x 2
 y 19
-speed_left -0.700000
 end
 arch woodfloor
 x 2
@@ -786,9 +788,9 @@ x 2
 y 27
 end
 arch orc
+speed_left -1.000000
 x 2
 y 27
-speed_left -1.000000
 end
 arch dungeon_floor
 x 2
@@ -918,10 +920,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 3
-y 8
 level 3
 unaggressive 0
+x 3
+y 8
 end
 arch dungeon_floor
 x 3
@@ -933,10 +935,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 3
-y 9
 level 3
 unaggressive 0
+x 3
+y 9
 end
 arch dungeon_floor
 x 3
@@ -956,10 +958,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 3
-y 11
 level 3
 unaggressive 0
+x 3
+y 11
 end
 arch dungeon_floor
 x 3
@@ -991,10 +993,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-x 3
-y 15
 level 3
 unaggressive 0
+x 3
+y 15
 end
 arch dungeon_floor
 x 3
@@ -1164,14 +1166,9 @@ arch medium_stones
 x 3
 y 38
 end
-arch exit
-name dirt exit
-slaying oldcity1
-face largestone.111
-hp 3
+arch medium_stones
 x 3
 y 39
-is_animated 0
 end
 arch woodfloor
 x 4
@@ -1460,14 +1457,8 @@ name stream
 x 4
 y 39
 end
-arch exit
-name dirt exit
-slaying oldcity11
-face cobblesto1.111
-hp 5
-sp 39
+arch cobblestones2
 x 5
-is_animated 0
 end
 arch cobblestones2
 x 5
@@ -2219,10 +2210,6 @@ arch pstone_1
 x 8
 y 39
 end
-arch awall_1_4
-x 8
-y 39
-end
 arch woodfloor
 x 9
 end
@@ -2475,10 +2462,6 @@ arch pstone_1
 x 9
 y 39
 end
-arch awall_2_1_2
-x 9
-y 39
-end
 arch woodfloor
 x 10
 end
@@ -2662,18 +2645,18 @@ x 10
 y 25
 end
 arch dog
+speed_left -0.700000
 x 10
 y 25
-speed_left -0.700000
 end
 arch grass
 x 10
 y 26
 end
 arch dog
+speed_left -0.700000
 x 10
 y 26
-speed_left -0.700000
 end
 arch grass
 x 10
@@ -2737,10 +2720,6 @@ x 10
 y 38
 end
 arch pstone_1
-x 10
-y 39
-end
-arch awall_2_1_2
 x 10
 y 39
 end
@@ -2923,36 +2902,36 @@ x 11
 y 25
 end
 arch dog
+speed_left -0.700000
 x 11
 y 25
-speed_left -0.700000
 end
 arch grass
 x 11
 y 26
 end
 arch dog
+speed_left -0.700000
 x 11
 y 26
-speed_left -0.700000
 end
 arch grass
 x 11
 y 27
 end
 arch dog
+speed_left -0.700000
 x 11
 y 27
-speed_left -0.700000
 end
 arch grass
 x 11
 y 28
 end
 arch dog
+speed_left -0.700000
 x 11
 y 28
-speed_left -0.700000
 end
 arch grass
 x 11
@@ -3005,10 +2984,6 @@ x 11
 y 38
 end
 arch pstone_1
-x 11
-y 39
-end
-arch awall_2_1_2
 x 11
 y 39
 end
@@ -3191,36 +3166,36 @@ x 12
 y 25
 end
 arch dog
+speed_left -0.700000
 x 12
 y 25
-speed_left -0.700000
 end
 arch grass
 x 12
 y 26
 end
 arch dog
+speed_left -0.700000
 x 12
 y 26
-speed_left -0.700000
 end
 arch grass
 x 12
 y 27
 end
 arch dog
+speed_left -0.700000
 x 12
 y 27
-speed_left -0.700000
 end
 arch grass
 x 12
 y 28
 end
 arch dog
+speed_left -0.700000
 x 12
 y 28
-speed_left -0.700000
 end
 arch sea
 name stream
@@ -3273,10 +3248,6 @@ x 12
 y 38
 end
 arch pstone_1
-x 12
-y 39
-end
-arch awall_2_1_2
 x 12
 y 39
 end
@@ -3467,18 +3438,18 @@ x 13
 y 25
 end
 arch dog
+speed_left -0.700000
 x 13
 y 25
-speed_left -0.700000
 end
 arch grass
 x 13
 y 26
 end
 arch dog
+speed_left -0.700000
 x 13
 y 26
-speed_left -0.700000
 end
 arch grass
 x 13
@@ -3542,18 +3513,8 @@ arch pstone_1
 x 13
 y 39
 end
-arch awall_2_1_2
-x 13
-y 39
-end
-arch exit
-name dirt exit
-slaying oldcity11
-face cobblesto2.111
-hp 14
-sp 39
+arch cobblestones
 x 14
-is_animated 0
 end
 arch cobblestones
 x 14
@@ -3628,27 +3589,27 @@ x 14
 y 17
 end
 arch goblin
+speed_left -0.700000
 x 14
 y 17
-speed_left -0.700000
 end
 arch large_stones
 x 14
 y 18
 end
 arch goblin
+speed_left -0.700000
 x 14
 y 18
-speed_left -0.700000
 end
 arch large_stones
 x 14
 y 19
 end
 arch goblin
+speed_left -0.700000
 x 14
 y 19
-speed_left -0.700000
 end
 arch pstone_1
 x 14
@@ -3695,27 +3656,27 @@ x 14
 y 25
 end
 arch dog
+speed_left -0.700000
 x 14
 y 25
-speed_left -0.700000
 end
 arch grass
 x 14
 y 26
 end
 arch dog
+speed_left -0.700000
 x 14
 y 26
-speed_left -0.700000
 end
 arch grass
 x 14
 y 27
 end
 arch dog
+speed_left -0.700000
 x 14
 y 27
-speed_left -0.700000
 end
 arch sea
 name stream
@@ -3788,18 +3749,8 @@ arch medium_stones
 x 14
 y 39
 end
-arch awall_2_1_2
-x 14
-y 39
-end
-arch exit
-name dirt exit
-slaying oldcity11
-face cobblesto2.111
-hp 15
-sp 39
+arch cobblestones
 x 15
-is_animated 0
 end
 arch cobblestones
 x 15
@@ -4002,9 +3953,9 @@ x 15
 y 36
 end
 arch ant
-x 15
-y 36
 speed_left -0.160000
+x 15
+y 36
 end
 arch large_stones
 x 15
@@ -4018,7 +3969,7 @@ arch medium_stones
 x 15
 y 39
 end
-arch awall_2_1_2
+arch boulder
 x 15
 y 39
 end
@@ -4248,7 +4199,7 @@ arch medium_stones
 x 16
 y 39
 end
-arch awall_2_1_2
+arch boulder
 x 16
 y 39
 end
@@ -4482,7 +4433,7 @@ arch medium_stones
 x 17
 y 39
 end
-arch awall_2_1_2
+arch boulder
 x 17
 y 39
 end
@@ -4724,7 +4675,7 @@ arch medium_stones
 x 18
 y 39
 end
-arch awall_2_1_2
+arch boulder
 x 18
 y 39
 end
@@ -4976,7 +4927,7 @@ arch medium_stones
 x 19
 y 39
 end
-arch awall_1_3
+arch boulder
 x 19
 y 39
 end
