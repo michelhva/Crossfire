@@ -1,11 +1,12 @@
 arch map
+name <untitled>
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 20:52:22 1998
 endmsg
-x 6
-y 6
+width 6
+height 6
 end
 arch lokanth
 end
@@ -15,7 +16,7 @@ end
 arch lokanth
 y 2
 end
-arch living_chaos
+arch chaos_witch
 y 3
 end
 arch crawling_chaos
@@ -32,7 +33,7 @@ arch lokanth
 x 1
 y 2
 end
-arch living_chaos
+arch chaos_witch
 x 1
 y 3
 end
@@ -119,25 +120,11 @@ end
 arch lamia
 y 5
 end
-More
-arch lamia_2
-y 5
-end
 arch lamia
 x 2
 y 5
 end
-More
-arch lamia_2
-x 3
-y 5
-end
 arch lamia
 x 4
-y 5
-end
-More
-arch lamia_2
-x 5
 y 5
 end

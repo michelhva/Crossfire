@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 19 17:06:24 1998
 endmsg
-x 6
-y 6
+width 6
+height 6
 end
 arch snake
 end
@@ -71,7 +71,7 @@ arch bat
 x 2
 y 5
 end
-arch snake
+arch wolf
 x 3
 end
 arch scorpion
@@ -90,7 +90,7 @@ arch generate_bat
 x 3
 y 4
 end
-arch generate_xan
+arch wolf
 x 3
 y 5
 end
@@ -101,7 +101,7 @@ arch scorpion
 x 4
 y 1
 end
-arch centipede
+arch wolf
 x 4
 y 2
 end
@@ -120,26 +120,11 @@ arch cobra
 x 4
 y 3
 end
-More
-arch cobra_2
-x 4
-y 4
-end
-arch cobra
+arch bear
 x 5
 y 1
-end
-More
-arch cobra_2
-x 5
-y 2
 end
 arch cobra
 x 5
 y 3
-end
-More
-arch cobra_2
-x 5
-y 4
 end
