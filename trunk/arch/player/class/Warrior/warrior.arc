@@ -6,11 +6,11 @@ anim
 warrior.111
 warrior.112
 warrior.131
-warrior.131
+warrior.132
 warrior.151
 warrior.152
 warrior.171
-warrior.171
+warrior.172
 facings 4
 mina
 is_animated 1

@@ -1,17 +1,17 @@
 Object mage_class
 name mage
 randomitems warlock_class_items
-face mage.171
+face mage.151
 color_fg black
 anim
 mage.111
 mage.112
 mage.131
-mage.131
+mage.132
 mage.151
 mage.152
 mage.171
-mage.171
+mage.172
 facings 4
 mina
 is_animated 1

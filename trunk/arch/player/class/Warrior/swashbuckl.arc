@@ -6,11 +6,11 @@ anim
 swashbuckl.111
 swashbuckl.112
 swashbuckl.131
-swashbuckl.131
+swashbuckl.132
 swashbuckl.152
 swashbuckl.151
 swashbuckl.171
-swashbuckl.171
+swashbuckl.172
 facings 4
 mina
 is_animated 1

@@ -7,11 +7,11 @@ anim
 mage.111
 mage.112
 mage.131
-mage.131
+mage.132
 mage.151
 mage.152
 mage.171
-mage.171
+mage.172
 facings 4
 mina
 is_animated 1
