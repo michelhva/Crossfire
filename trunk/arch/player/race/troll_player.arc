@@ -45,6 +45,7 @@ Wis -2
 Pow -2
 Cha -4
 resist_fire -30
+resist_cold 30
 path_repelled 2
 editable 0
 magicmap blue
