@@ -16,5 +16,5 @@ range 1
 range_modifier 3
 maxsp 27
 no_attack 1
-other_arch detect_magic
+other_arch charm_aura
 end
