@@ -23,6 +23,7 @@ resist_drain 100
 resist_fear 100
 resist_magic -100
 resist_cold 50
+resist_blind 70
 attacktype 128
 alive 1
 monster 1

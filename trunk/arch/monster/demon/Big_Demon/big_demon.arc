@@ -12,11 +12,10 @@ mina
 resist_magic 50
 resist_godpower 50
 resist_holyword 50
-
+resist_blind 100
 resist_fire 100
 resist_confusion 100
 resist_poison 100
-
 attacktype 1029
 can_see_in_dark 1
 can_cast_spell 1

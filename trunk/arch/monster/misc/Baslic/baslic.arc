@@ -22,6 +22,7 @@ resist_cold 100
 resist_fear 100
 resist_fire -100
 resist_magic 50
+resist_blind 100
 ac -8
 wc -15
 dam 10

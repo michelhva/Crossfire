@@ -13,6 +13,7 @@ sleep 1
 Wis 5
 no_pick 1
 can_see_in_dark 1
+resist_blind 100
 generator 1
 maxsp 10
 alive 1

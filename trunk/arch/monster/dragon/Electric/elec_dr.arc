@@ -26,9 +26,8 @@ resist_electricity 100
 resist_cold 100
 resist_confusion 100
 resist_fear 100
-
+resist_blind 100
 resist_fire -100
-
 ac -12
 wc -20
 dam 25

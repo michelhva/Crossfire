@@ -14,6 +14,7 @@ resist_cold 100
 resist_electricity 90
 resist_godpower 80
 resist_holyword 70
+resist_blind 100
 exp 300000
 ac -15
 wc -30

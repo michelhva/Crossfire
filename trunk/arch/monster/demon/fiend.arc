@@ -29,6 +29,7 @@ level 15
 resist_magic 50
 resist_fire 100
 resist_cold -50
+resist_blind 50
 speed 0.2
 weight 180000
 run_away 15

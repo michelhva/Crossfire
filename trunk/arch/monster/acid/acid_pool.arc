@@ -16,6 +16,7 @@ maxhp 100
 ac 8
 exp 100
 can_see_in_dark 1
+resist_blind 100
 speed 0.01
 anim_speed 10
 weight 750000

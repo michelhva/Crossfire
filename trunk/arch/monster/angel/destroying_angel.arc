@@ -22,6 +22,7 @@ no_pick 1
 alive 1
 resist_magic 80
 resist_holyword 80
+resist_blind 100
 weight 75000
 flying 1
 run_away 18

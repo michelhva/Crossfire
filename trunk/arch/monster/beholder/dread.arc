@@ -35,7 +35,7 @@ resist_fire 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
-
+resist_blind -50
 speed -0.30
 weight 30000
 run_away 2

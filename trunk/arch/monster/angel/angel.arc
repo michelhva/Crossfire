@@ -26,7 +26,7 @@ Int 20
 Con 3
 level 12
 resist_magic 100
-
+resist_blind 80
 speed 0.2
 weight 75000
 flying 1

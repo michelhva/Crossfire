@@ -12,6 +12,7 @@ giant.111
 giant.112
 mina
 resist_electricity 50
+resist_blind -30
 exp 1500
 ac 1
 wc 2

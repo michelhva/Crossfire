@@ -21,10 +21,9 @@ hp 550
 maxhp 550
 resist_fire 100
 resist_fear 100
-
+resist_blind 50
 resist_magic 30
 resist_cold -100
-
 ac -8
 wc -10
 dam 10

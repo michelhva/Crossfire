@@ -21,10 +21,9 @@ attacktype 1089
 resist_poison 100
 resist_fear 100
 resist_chaos 100
-
+resist_blind 100
 resist_electricity -100
 resist_confusion -100
-
 weight 750000
 monster 1
 no_pick 1

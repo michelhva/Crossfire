@@ -36,6 +36,7 @@ resist_fear 100
 resist_physical 30
 resist_cold -30
 resist_confusion 30
+resist_blind 100
 ac -10
 wc -10
 dam 10

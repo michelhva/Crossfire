@@ -15,7 +15,7 @@ maxhp 500
 level 10
 resist_physical 50
 resist_magic 50
-
+resist_blind 90
 wc 5
 ac -5
 no_pick 1

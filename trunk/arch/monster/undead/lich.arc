@@ -18,6 +18,7 @@ maxhp 1000
 level 15
 resist_physical 50
 resist_magic 50
+resist_blind 90
 dam 20
 see_invisible 1
 wc -3

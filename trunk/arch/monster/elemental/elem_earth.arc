@@ -20,6 +20,7 @@ weight 100000
 level 8
 resist_physical 70
 resist_cold 50
+resist_blind 100
 attacktype 1
 resist_fire -60
 editable 1

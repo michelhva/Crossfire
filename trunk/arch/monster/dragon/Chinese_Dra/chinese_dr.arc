@@ -26,11 +26,9 @@ hp 1000
 maxhp 1000
 resist_cold 100
 resist_fear 100
-
+resist_blind 100
 resist_fire -100
-
 resist_magic 30
-
 ac -8
 wc -15
 dam 15

@@ -35,6 +35,7 @@ resist_fear 100
 resist_paralyze 100
 resist_poison 100
 resist_magic 80
+resist_blind 100
 resist_godpower 90
 resist_holyword 90
 level 40

@@ -21,6 +21,7 @@ resist_fear 100
 resist_magic -100
 resist_turn_undead -100
 resist_confusion 50
+resist_blind 100
 attacktype 66048
 alive 1
 monster 1

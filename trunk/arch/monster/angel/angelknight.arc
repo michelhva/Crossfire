@@ -17,6 +17,7 @@ alive 1
 exp 600
 resist_magic 50
 resist_holyword 40
+resist_blind 90
 weight 75000
 flying 1
 run_away 18

@@ -23,10 +23,9 @@ hp 300
 maxhp 300
 resist_fire 100
 resist_fear 100
-
+resist_blind 50
 resist_cold -100
 resist_confusion -100
-
 attacktype 1
 ac 2
 wc 2

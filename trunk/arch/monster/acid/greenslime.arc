@@ -15,6 +15,7 @@ ac 9
 wc 5
 dam 40
 can_see_in_dark 1
+resist_blind 100
 speed -0.1
 exp 200
 weight 5000

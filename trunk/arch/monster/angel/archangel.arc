@@ -37,6 +37,7 @@ resist_physical 50
 resist_fire 50
 resist_cold 50
 resist_holyword 80
+resist_blind 80
 attacktype 20745
 speed 0.400000
 weight 150000

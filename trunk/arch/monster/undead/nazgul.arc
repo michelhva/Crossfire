@@ -23,6 +23,7 @@ resist_drain 100
 resist_fear 100
 resist_magic 50
 resist_cold 50
+resist_blind 90
 attacktype 160
 carrying 100
 alive 1

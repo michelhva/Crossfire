@@ -19,6 +19,7 @@ exp 250
 weight 50000
 level 8
 resist_confusion 100
+resist_blind 100
 attacktype 17
 resist_cold 50
 resist_fire -50
