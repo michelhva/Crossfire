@@ -547,34 +547,12 @@ y 11
 attacktype 1089
 unaggressive 1
 end
-More
-arch cobra_2
-name Black Naga Hatchling
-Wis 1
-hp 50
-exp 300
-dam 15
-y 12
-attacktype 1089
-unaggressive 1
-end
 arch serpent
 name snake
 y 15
 attacktype 1025
 end
-More
-arch serpent_2
-name snake
-hp 100
-y 15
-attacktype 1025
-end
 arch unicorn
-y 18
-end
-More
-arch unicorn_2
 y 18
 end
 arch cobra
@@ -585,18 +563,6 @@ exp 300
 dam 15
 x 1
 y 11
-unaggressive 1
-end
-More
-arch cobra_2
-name Golden Naga Hatchling
-Wis 1
-hp 80
-exp 300
-dam 15
-x 1
-y 12
-attacktype 1025
 unaggressive 1
 end
 arch cobra
@@ -610,42 +576,15 @@ y 11
 attacktype 1089
 unaggressive 1
 end
-More
-arch cobra_2
-name Guardian Naga Hatchling
-Wis 1
-hp 150
-exp 300
-dam 15
-x 2
-y 12
-attacktype 1089
-unaggressive 1
-end
 arch serpent
 name water moccasin
 x 2
 y 15
 attacktype 1025
 end
-More
-arch serpent_2
-name water moccasin
-hp 100
-x 3
-y 15
-attacktype 1025
-end
 arch unicorn
 name grey unicorn
 x 2
-y 17
-end
-More
-arch unicorn_2
-name grey unicorn
-hp 200
-x 3
 y 17
 end
 arch cobra
@@ -656,25 +595,8 @@ x 4
 y 6
 attacktype 1029
 end
-More
-arch cobra_2
-name Red Naga Hatchling
-hp 30
-exp 250
-dam 5
-x 4
-y 7
-attacktype 1029
-end
 arch unicorn
 name black unicorn
 x 4
-y 17
-end
-More
-arch unicorn_2
-name black unicorn
-hp 200
-x 5
 y 17
 end

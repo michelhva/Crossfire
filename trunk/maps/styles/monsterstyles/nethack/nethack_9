@@ -1378,28 +1378,12 @@ attacktype 4097
 resist_electricity 0
 randomitems none
 end
-More
-arch mabu_2
-name succubus
-hp 250
-attacktype 4097
-end
 arch cobra
 name Red Naga
 hp 630
 exp 250
 dam 15
 y 2
-attacktype 1029
-unaggressive 1
-end
-More
-arch cobra_2
-name Red Naga
-hp 630
-exp 250
-dam 15
-y 3
 attacktype 1029
 unaggressive 1
 end
@@ -1407,24 +1391,10 @@ arch serpent
 name long worm
 y 20
 end
-More
-arch serpent_2
-name long worm
-hp 100
-y 20
-end
 arch cobra
 name cobra
 x 2
 y 1
-end
-More
-arch cobra_2
-name cobra
-hp 30
-x 2
-y 2
-attacktype 1025
 end
 arch giant
 name ettin zombie
@@ -1436,27 +1406,9 @@ y 3
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin zombie
-hp 550
-exp 3500
-dam 35
-x 2
-y 4
-attacktype 33
-undead 1
-end
 arch serpent
 name baby long worm
 x 2
-y 20
-end
-More
-arch serpent_2
-name baby long worm
-hp 100
-x 3
 y 20
 end
 arch cobra
@@ -1466,33 +1418,13 @@ x 3
 y 1
 attacktype 1
 end
-More
-arch cobra_2
-name python
-hp 600
-x 3
-y 2
-attacktype 1
-end
 arch giant
-x 4
-end
-More
-arch giant_2
 x 4
 end
 arch cobra
 name pit viper
 x 4
 y 2
-end
-More
-arch cobra_2
-name pit viper
-hp 30
-x 4
-y 3
-attacktype 1025
 end
 arch serpent
 name baby purple worm
@@ -1501,22 +1433,7 @@ exp 12000
 x 4
 y 20
 end
-More
-arch serpent_2
-name baby purple worm
-hp 1000
-exp 12000
-x 5
-y 20
-end
 arch giant
-name stone giant
-hp 450
-exp 2500
-x 5
-end
-More
-arch giant_2
 name stone giant
 hp 450
 exp 2500
@@ -1527,97 +1444,7 @@ name barbed devil
 x 6
 y 12
 end
-More
-arch big_demon_2
-name barbed devil
-hp 1000
-x 7
-y 12
-end
-More
-arch big_demon_3
-name barbed devil
-hp 1000
-x 8
-y 12
-end
-More
-arch big_demon_4
-name barbed devil
-hp 1000
-x 6
-y 13
-end
-More
-arch big_demon_5
-name barbed devil
-hp 1000
-x 7
-y 13
-end
-More
-arch big_demon_6
-name barbed devil
-hp 1000
-x 8
-y 13
-end
-More
-arch big_demon_7
-name barbed devil
-hp 1000
-x 6
-y 14
-end
-More
-arch big_demon_8
-name barbed devil
-hp 1000
-x 7
-y 14
-end
-More
-arch big_demon_9
-name barbed devil
-hp 1000
-x 8
-y 14
-end
-More
-arch big_demon_A
-name barbed devil
-hp 1000
-x 6
-y 15
-end
-More
-arch big_demon_B
-name barbed devil
-hp 1000
-x 7
-y 15
-end
-More
-arch big_demon_C
-name barbed devil
-hp 1000
-x 8
-y 15
-end
 arch minor_djinn
-name djinni
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 7
-level 9
-end
-More
-arch minor_djinn_2
 name djinni
 Con 4
 Pow 3
@@ -1641,34 +1468,7 @@ y 3
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin mummy
-hp 1550
-maxhp 1550
-exp 13500
-dam 35
-wc -3
-x 7
-y 4
-attacktype 33
-undead 1
-end
 arch minor_djinn
-name erinys
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 8
-level 9
-attacktype 5
-end
-More
-arch minor_djinn_2
 name erinys
 Con 4
 Pow 3
@@ -1685,35 +1485,7 @@ arch troll
 x 8
 y 4
 end
-More
-arch troll_2
-x 9
-y 4
-end
-More
-arch troll_3
-x 8
-y 5
-end
-More
-arch troll_4
-x 9
-y 5
-end
 arch minor_djinn
-name marilith
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 9
-level 9
-end
-More
-arch minor_djinn_2
 name marilith
 Con 4
 Pow 3
@@ -1733,30 +1505,6 @@ x 10
 y 4
 resist_fire 0
 end
-More
-arch troll_2
-name sasquatch
-hp 2000
-exp 16000
-x 11
-y 4
-end
-More
-arch troll_3
-name sasquatch
-hp 2000
-exp 16000
-x 10
-y 5
-end
-More
-arch troll_4
-name sasquatch
-hp 2000
-exp 16000
-x 11
-y 5
-end
 arch giant
 name giant mummy
 hp 2550
@@ -1767,20 +1515,6 @@ wc -3
 ac -3
 x 12
 y 12
-attacktype 33
-undead 1
-end
-More
-arch giant_2
-name giant mummy
-hp 2550
-maxhp 2550
-exp 30500
-dam 35
-wc -3
-ac -3
-x 12
-y 13
 attacktype 33
 undead 1
 end
@@ -1796,19 +1530,6 @@ y 14
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name giant zombie
-hp 2000
-maxhp 2000
-exp 23000
-dam 35
-wc -3
-x 12
-y 15
-attacktype 33
-undead 1
-end
 arch cobra
 name Black Naga
 hp 630
@@ -1816,17 +1537,6 @@ exp 5000
 dam 15
 x 12
 y 16
-attacktype 65
-unaggressive 1
-end
-More
-arch cobra_2
-name Black Naga
-hp 630
-exp 5000
-dam 15
-x 12
-y 17
 attacktype 65
 unaggressive 1
 end

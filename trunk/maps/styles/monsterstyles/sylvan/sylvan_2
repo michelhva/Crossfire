@@ -52,6 +52,10 @@ arch wolf
 x 2
 y 1
 end
+arch wolf
+x 2
+y 2
+end
 arch bird
 unaggressive 1
 sleep 0
@@ -60,6 +64,10 @@ end
 arch wolf
 x 3
 y 1
+end
+arch wolf
+x 3
+y 2
 end
 arch pixie
 x 4
