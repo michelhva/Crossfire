@@ -22,20 +22,18 @@ Wis 15
 see_invisible 1
 no_pick 1
 alive 1
-exp 1500
+exp 5000
 ac -3
 wc 5
-dam 15
+dam 5
 Con 3
 can_cast_spell 0
 hp 220
 maxhp 220
 resist_magic 85
 attacktype 1025
-speed 0.14
+speed 0.42
 flying 1
 weight 70000
-run_away 0
-attack_movement 1
 editable 1
 end
