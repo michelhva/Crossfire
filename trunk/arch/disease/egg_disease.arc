@@ -8,8 +8,7 @@ wc 0
 magic 0
 maxhp 1
 dam 0
-maxgrace -1
-food -1
+maxgrace 5
 speed 0.001
 last_sp 0
 maxsp 0

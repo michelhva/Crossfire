@@ -9,7 +9,7 @@ Con -1
 magic 0
 maxhp 1
 dam 0
-maxgrace 24
+maxgrace 15
 speed 0.001
 last_sp 0
 maxsp 0

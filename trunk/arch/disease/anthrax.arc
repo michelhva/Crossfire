@@ -10,7 +10,7 @@ Con -4
 Dex -3
 maxhp 100
 dam -5
-maxgrace 20
+maxgrace 23
 food -1
 speed 0.05
 last_sp 50
