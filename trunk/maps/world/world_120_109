@@ -6889,6 +6889,7 @@ x 27
 y 40
 end
 arch mountain_cave2
+name mine
 x 27
 y 41
 end
@@ -7425,6 +7426,7 @@ x 29
 y 44
 end
 arch mountain_cave2
+name mine
 x 29
 y 44
 end
@@ -8717,7 +8719,7 @@ x 34
 y 47
 end
 arch hills
-elevation 3787
+elevation 4227
 x 34
 y 48
 end
@@ -10225,6 +10227,7 @@ x 40
 y 45
 end
 arch tower_tob
+name outpost
 x 40
 y 45
 end
@@ -10704,6 +10707,10 @@ y 42
 end
 arch hills
 elevation 2186
+x 42
+y 43
+end
+arch light3
 x 42
 y 43
 end
@@ -11217,6 +11224,11 @@ elevation 3423
 x 44
 y 43
 end
+arch shrine
+name shrine of Gaia
+x 44
+y 43
+end
 arch hills
 elevation 2985
 x 44
@@ -11491,10 +11503,6 @@ x 45
 y 43
 end
 arch hills
-x 45
-y 44
-end
-arch s_shop2
 x 45
 y 44
 end
@@ -12516,6 +12524,10 @@ x 39
 y 43
 end
 arch inn
+name Grumm's Inn
+slaying /inn_and_outpost/grumms_inn
+hp 7
+sp 13
 x 42
 y 43
 end
