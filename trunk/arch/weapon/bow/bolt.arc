@@ -16,7 +16,7 @@ mina
 is_animated 0
 is_turnable 1
 nrof 1
-weight 1000
+weight 50
 value 2
 material 2
 food 10
