@@ -1,4 +1,5 @@
 Object huntersbow
+name hunter's bow
 race arrows
 type 14
 nrof 1

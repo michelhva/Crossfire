@@ -1,4 +1,5 @@
-Object composite bow
+Object compositebow
+name composite bow
 race arrows
 type 14
 nrof 1
