@@ -190,12 +190,12 @@ titan.973
 titan.973
 titan.972
 titan.971
-empty.111
-empty.111
-empty.111
-empty.111
-empty.111
-empty.111
+titan.931
+titan.932
+titan.933
+titan.933
+titan.932
+titan.931
 mina
 no_pick 1
 alive 1
@@ -230,15 +230,15 @@ end
 More
 Object titan_9
 name titan
-face empty.111
+face titan.771
 anim
 facings 2
-empty.111
-empty.111
-empty.111
-empty.111
-empty.111
-empty.111
+titan.771
+titan.772
+titan.773
+titan.773
+titan.772
+titan.771
 titan.731
 titan.732
 titan.733
@@ -252,4 +252,9 @@ x -1
 y 1
 invisible 1
 magicmap grey
-end
+end 
+
+
+
+
+
