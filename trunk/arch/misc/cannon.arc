@@ -2,6 +2,7 @@ Object cannon
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 speed -0.4
@@ -13,6 +14,7 @@ Object cannon_1
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 1
@@ -25,6 +27,7 @@ Object cannon_2
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 2
@@ -37,6 +40,7 @@ Object cannon_3
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 3
@@ -49,6 +53,7 @@ Object cannon_4
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 4
@@ -61,6 +66,7 @@ Object cannon_5
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 5
@@ -73,6 +79,7 @@ Object cannon_6
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 6
@@ -85,6 +92,7 @@ Object cannon_7
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_7.111
 color_fg brown
 sp 7
@@ -97,6 +105,7 @@ Object cannon_8
 other_arch shell
 name cannon
 type 62
+level 1
 face cannon_0.111
 color_fg brown
 sp 8

@@ -33,7 +33,5 @@ color_fg red
 food 9
 is_used_up 1
 no_pick 1
-fly_on 1
-walk_on 1
 editable 0
 end

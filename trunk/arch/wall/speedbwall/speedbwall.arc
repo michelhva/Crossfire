@@ -2,6 +2,7 @@ Object speedballwall
 other_arch speedball
 name speedball wall
 type 62
+level 1
 face speedbwall.111
 color_bg yellow
 anim

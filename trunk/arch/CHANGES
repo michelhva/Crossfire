@@ -1,5 +1,25 @@
 Changes for CVS top of tree:
 
+Added level 1 to all archetypes with type 62 (FIREWALL) which didn't have
+a level yet, because these archetypes are spellcasters and therefore need
+a level.  -- Jan Echternach 5/16/2000
+
+
+dev/unused/0.91.1/grave.arc, arch grave_close
+Removed type 37 from archetype, because this type will be removed from
+the server code.  - Jan Echternach 5/16/2000
+
+
+Some archetypes had fly_on or walk_on set, although they were not handled
+by move_apply().  - Jan Echternach 5/16/2000
+
+ground/sea.arc, arch sea1
+Removed walk_on 1.
+
+ground/meteor.arc, arch fire_trail
+Removed walk_on 1 and fly_on 1.
+
+
 spell/gu_horn.arc, spell/horn.arc, spell/horn1.arc, spell/horn3.arc
 Added level 1 to fix the problem that most horns were casting spells
 without a level.  - Jan Echternach 4/19/2000

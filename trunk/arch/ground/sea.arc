@@ -29,7 +29,4 @@ speed 0.2
 no_pick 1
 editable 8
 is_floor 1
-walk_on 1
 end
-
-
