@@ -4,12 +4,17 @@ randomitems sorcerer_class_items
 face sorcerer.171
 anim
 sorcerer.111
+sorcerer.112
 sorcerer.131
+sorcerer.132
 sorcerer.151
+sorcerer.152
 sorcerer.171
+sorcerer.172
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 37
 Str -3
 Dex 2

@@ -1,15 +1,20 @@
 Object evoker_class
 name evoker
 randomitems evoker_class_items
-face evoker.111
+face evoker.151
 anim
 evoker.111
+evoker.112
 evoker.131
+evoker.132
 evoker.151
+evoker.152
 evoker.171
+evoker.172
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 37
 Str -2
 Dex 0
