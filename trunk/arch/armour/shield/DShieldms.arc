@@ -13,14 +13,12 @@ speed 0.25
 Cha -5
 msg
   There is a powerful evil spirit in the shield
-dominating over you. You are struggling to 
-remain control of yourself.
+  dominating over you. You are struggling to 
+  remain control of yourself.
 endmsg
 resist_fire 30
-
 resist_drain 100
-resist_ghosthit 100
-
+resist_ghosthit 80
 reflect_missile 1
 reflect_spell 1
 ac 7
