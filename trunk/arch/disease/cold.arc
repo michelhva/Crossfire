@@ -1,4 +1,4 @@
-Object cold
+Object disease_cold
 name cold
 type 158
 invisible 1
