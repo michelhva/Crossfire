@@ -22,7 +22,7 @@ dam 4
 hp 8
 maxhp 8
 level 3
-speed 0.1
+speed -0.1
 weight 45000
 run_away 30
 can_use_skill 1

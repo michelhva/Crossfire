@@ -24,7 +24,7 @@ hp 40
 maxhp 40
 level 5
 resist_physical 30
-speed 0.1
+speed -0.1
 weight 45000
 run_away 30
 can_use_skill 1

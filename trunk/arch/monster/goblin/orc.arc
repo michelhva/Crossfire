@@ -18,7 +18,7 @@ dam 1
 hp 4
 maxhp 4
 level 1
-speed 0.15
+speed -0.15
 weight 23000
 run_away 25
 will_apply 2

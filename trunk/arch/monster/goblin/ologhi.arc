@@ -23,7 +23,7 @@ hp 5000
 maxhp 5000
 wc -100
 dam 100
-speed 0.25
+speed -0.25
 attack_movement 5
 resist_physical 100
 resist_magic -100
