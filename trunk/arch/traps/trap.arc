@@ -1,16 +1,12 @@
-Object trap_blades
-name Blades trap
+Object trap
+name trap
 type 155
-face blades.111
+face trap.111
 speed 1
 hp 1
 msg
-You set off a Blades trap!
+You set off a trap!
 endmsg
-anim
-blades.111
-blades.111
-mina
 level 1
 color_fg black
 is_animated 0

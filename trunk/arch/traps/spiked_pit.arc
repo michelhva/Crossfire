@@ -1,6 +1,6 @@
 Object trap_spike_pit
 name spiked pit
-type 154
+type 155
 face spiked_pit.111
 speed 1
 hp 1
