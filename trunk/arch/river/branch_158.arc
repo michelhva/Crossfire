@@ -7,6 +7,7 @@ color_fg blue
 editable 8
 visibility 100
 is_water 1
+end
 Object rjunct_ns-nw
 face branch_158.211
 name river junction
