@@ -227,6 +227,18 @@ x 3
 y 6
 end
 arch elf_guard
+msg
+@match who|what|job|guard|duty
+We are on watch.
+@match watch
+We must keep watch on the forest.
+Take care traveller
+We have seen some wolves roaming around these parts.
+@match forest
+The DarkForest is a chaotic and dangerous place.
+@match *
+Greetings.
+endmsg
 randomitems elf
 level 6
 exp 250
@@ -407,6 +419,10 @@ x 6
 y 3
 end
 arch elf_guard
+msg
+@match *
+Greetings.
+endmsg
 randomitems elf
 level 6
 exp 250
