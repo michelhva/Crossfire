@@ -45,18 +45,6 @@ the follow guidelines should be used:
 ------------------------------------------------------------------------------
 Important landmarks
 
-If you are going to use these world maps, you should probably update
-the following values in the server include/config.h file:
-#define EMERGENCY_MAPPATH "/world/world_105_115"
-#define EMERGENCY_X 5
-#define EMERGENCY_Y 37
-
-
-Scorn is located on world maps _104_115 and _105_115.  Some touchup of the
-terrain immediately surrounding the city has been touched up some.
-
-Santo Dominion is on maps _102_108
-
 The list of translation values below have been used in the update_maps
 script.  The values are recoreded here in that they might be useful for
 updating other maps that are contributed later.
@@ -66,13 +54,22 @@ OLD_MAP_NAME, OLD_MAP_STARTX, OLD_MAP_STARTY, OLD_MAP_ENDX, OLD_MAP_ENDY ->
 	NEW_MAP_NAME, NEW_MAP_OFFX, NEW_MAP_OFFY
 
 Translation values used:
-/city/city, 10, 0 (100,100) -> /world/world_105_115, -10, 18
-/brittany/Brest/Brest 0,0 (100,100) -> /world/world_107_123, +17, +16
-/santo_dominion/town 3,12 (100,100) -> /world/world_102_108, 0, -9
-/navar_city/city1 15, 13 (100,100) -> /world/world_122_117, -15, -13
-/navar_city/city1 15, 0 (100,12) -> /world/world_122_116, -15, 37
-/navar_city/city1 0, 0 (14,12) -> /world/world_122_116, 35, 37
-/navar_city/city1 0,13 (14,100) -> /world/world_122_116, 35, -13
+/city/city, 10, 0 (100,100) -> 		/world/world_105_115, -10, 18
+/brittany/Brest/Brest 0,0 (100,100) -> 	/world/world_107_123, +17, +16
+/santo_dominion/town 3,12 (100,100) -> 	/world/world_102_108, 0, -9
+/navar_city/city1 15, 13 (100,100) -> 	/world/world_122_117, -15, -13
+/navar_city/city1 15, 0 (100,12) -> 	/world/world_122_116, -15, 37
+/navar_city/city1 0, 0 (14,12) -> 	/world/world_122_116, 35, 37
+/navar_city/city1 0,13 (14,100) -> 	/world/world_122_116, 35, -13
+/Lake_County/kundi_area 0,0 -> 		/world/world_109_126 (+13, +17)
+
+
+kar (euthville):				/world/world_105_115
+Kar doesn't have simple values, as the town was shrunk a bit and
+re-arrange some.
+
+ This information can be used to see where some of the
+notable maps are.
 
 ------------------------------------------------------------------------------
 land.c:
@@ -136,3 +133,4 @@ guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
 guilds@laughing_skull	-> pup_land@guilds@laughing_skull
 guilds@mailed_fist	-> scorn@guilds@mailed_fist
 guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
+guilds@dreaming_sage	-> navar_city@guilds@dreaming_sage
