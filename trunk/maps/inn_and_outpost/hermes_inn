@@ -125,10 +125,6 @@ arch brazier
 x 1
 y 2
 end
-arch light4
-x 1
-y 2
-end
 arch woodfloor2
 x 1
 y 3
@@ -155,10 +151,6 @@ x 1
 y 6
 end
 arch brazier
-x 1
-y 6
-end
-arch light4
 x 1
 y 6
 end
@@ -514,10 +506,6 @@ arch fireplace
 x 5
 y 1
 end
-arch light4
-x 5
-y 1
-end
 arch woodfloor2
 x 5
 y 2
@@ -541,6 +529,10 @@ x 5
 y 5
 end
 arch woodfloor2
+x 5
+y 5
+end
+arch light2
 x 5
 y 5
 end
@@ -568,10 +560,6 @@ arch brazier
 x 5
 y 8
 end
-arch light4
-x 5
-y 8
-end
 arch woodfloor2
 x 5
 y 9
@@ -585,10 +573,6 @@ x 5
 y 10
 end
 arch brazier
-x 5
-y 10
-end
-arch light4
 x 5
 y 10
 end
@@ -912,10 +896,6 @@ arch brazier
 x 9
 y 2
 end
-arch light4
-x 9
-y 2
-end
 arch woodfloor2
 x 9
 y 3
@@ -974,10 +954,6 @@ x 9
 y 10
 end
 arch brazier
-x 9
-y 10
-end
-arch light4
 x 9
 y 10
 end
@@ -1046,6 +1022,10 @@ x 10
 y 5
 end
 arch chair_1.1
+x 10
+y 5
+end
+arch light2
 x 10
 y 5
 end
@@ -1243,10 +1223,6 @@ arch brazier
 x 12
 y 8
 end
-arch light4
-x 12
-y 8
-end
 arch woodfloor2
 x 12
 y 9
@@ -1293,10 +1269,6 @@ x 13
 y 1
 end
 arch fireplace
-x 13
-y 1
-end
-arch light4
 x 13
 y 1
 end
@@ -1398,10 +1370,6 @@ x 14
 y 4
 end
 arch brazier
-x 14
-y 4
-end
-arch light4
 x 14
 y 4
 end
@@ -1688,6 +1656,10 @@ damned 1
 x 17
 y 3
 end
+arch light2
+x 17
+y 3
+end
 arch woodfloor2
 x 17
 y 4
@@ -1959,10 +1931,6 @@ arch brazier
 x 20
 y 1
 end
-arch light4
-x 20
-y 1
-end
 arch woodfloor2
 x 20
 y 2
@@ -2005,10 +1973,6 @@ x 20
 y 6
 end
 arch brazier
-x 20
-y 6
-end
-arch light4
 x 20
 y 6
 end
@@ -2272,8 +2236,28 @@ msg
 @match *
 Me not speak good, you say to Hermes.
 endmsg
+randomitems none
 exp 0
+dam 15
 friendly 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_deplete 100
+resist_chaos 100
+resist_holyword 100
+resist_godpower 100
 x 16
 y 10
+arch key2
+name key
+slaying Hermes Key
+end
 end

@@ -12,10 +12,10 @@ enter_y 1
 reset_timeout 7200
 difficulty 1
 outdoor 1
-tile_path_1 /world/world_121_115
-tile_path_2 /world/world_122_116
-tile_path_3 /world/world_121_117
-tile_path_4 /world/world_120_116
+tile_path_1 world_121_115
+tile_path_2 world_122_116
+tile_path_3 world_121_117
+tile_path_4 world_120_116
 end
 arch desert
 elevation 89
@@ -8143,33 +8143,36 @@ elevation 3324
 x 32
 y 41
 end
-arch mountain
-elevation 5603
+arch cobblestones
 x 32
 y 42
 end
-arch mountain
-elevation 5418
+arch cobblestones
 x 32
 y 43
 end
-arch mountain
-elevation 6481
+arch cobblestones
 x 32
 y 44
 end
-arch mountain
-elevation 6328
+arch cobblestones
 x 32
 y 45
 end
-arch mountain
-elevation 5807
+arch cobblestones
 x 32
 y 46
 end
-arch mountain
-elevation 5190
+arch sign
+msg
+Welcome to Navar City.
+To go to Darcap, take the road north 1065 miles.
+To go to Brest or Scorn, take the road south.
+endmsg
+x 32
+y 46
+end
+arch cobblestones
 x 32
 y 47
 end
@@ -8393,15 +8396,6 @@ arch cobblestones
 x 33
 y 46
 end
-arch sign
-msg
-Welcome to Navar City.
-To go to Darcap, take the road north 1065 miles.
-To go to Brest or Scorn, take the road south.
-endmsg
-x 33
-y 46
-end
 arch cobblestones
 x 33
 y 47
@@ -8613,6 +8607,10 @@ arch cobblestones
 x 34
 y 43
 end
+arch lamppost
+x 34
+y 43
+end
 arch cobblestones
 x 34
 y 44
@@ -8630,6 +8628,10 @@ x 34
 y 47
 end
 arch cobblestones
+x 34
+y 48
+end
+arch lamppost
 x 34
 y 48
 end
@@ -9123,7 +9125,7 @@ arch cobblestones2
 x 36
 y 38
 end
-arch light4
+arch lamppost
 x 36
 y 38
 end
@@ -9930,10 +9932,6 @@ arch cobblestones2
 x 39
 y 46
 end
-arch light4
-x 39
-y 46
-end
 arch cobblestones2
 x 39
 y 47
@@ -10208,6 +10206,10 @@ arch grass
 x 40
 y 48
 end
+arch lamppost
+x 40
+y 48
+end
 arch cobblestones2
 x 40
 y 49
@@ -10421,6 +10423,10 @@ x 41
 y 41
 end
 arch grass
+x 41
+y 42
+end
+arch lamppost
 x 41
 y 42
 end
@@ -11679,10 +11685,6 @@ arch cobblestones2
 x 46
 y 43
 end
-arch light4
-x 46
-y 43
-end
 arch cobblestones2
 x 46
 y 44
@@ -11928,6 +11930,10 @@ x 47
 y 44
 end
 arch cobblestones
+x 47
+y 45
+end
+arch lamppost
 x 47
 y 45
 end

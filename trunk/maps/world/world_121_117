@@ -1177,6 +1177,10 @@ elevation 7530
 x 4
 y 44
 end
+arch river_nw-e
+x 4
+y 44
+end
 arch mountain
 elevation 8573
 x 4
@@ -1425,8 +1429,16 @@ elevation 4863
 x 5
 y 44
 end
+arch river_se-w
+x 5
+y 44
+end
 arch mountain
 elevation 7243
+x 5
+y 45
+end
+arch river_nw-se_l
 x 5
 y 45
 end
@@ -1673,13 +1685,25 @@ elevation 7952
 x 6
 y 44
 end
+arch river_nw-se_u
+x 6
+y 44
+end
 arch mountain
 elevation 7541
 x 6
 y 45
 end
+arch river_nw-se
+x 6
+y 45
+end
 arch mountain
 elevation 7958
+x 6
+y 46
+end
+arch river_nw-se_l
 x 6
 y 46
 end
@@ -1926,13 +1950,25 @@ elevation 8267
 x 7
 y 45
 end
+arch river_nw-se_u
+x 7
+y 45
+end
 arch mountain
 elevation 8157
 x 7
 y 46
 end
+arch river_nw-se
+x 7
+y 46
+end
 arch mountain
 elevation 8286
+x 7
+y 47
+end
+arch river_nw-se_l
 x 7
 y 47
 end
@@ -2179,13 +2215,25 @@ elevation 8110
 x 8
 y 46
 end
+arch river_nw-se_u
+x 8
+y 46
+end
 arch mountain
 elevation 7356
 x 8
 y 47
 end
+arch river_nw-se
+x 8
+y 47
+end
 arch mountain
 elevation 8312
+x 8
+y 48
+end
+arch river_nw-se_l
 x 8
 y 48
 end
@@ -2401,8 +2449,16 @@ elevation 7664
 x 9
 y 41
 end
+arch river_nw-se
+x 9
+y 41
+end
 arch mountain2
 elevation 9343
+x 9
+y 42
+end
+arch river_nw-se_l
 x 9
 y 42
 end
@@ -2431,8 +2487,16 @@ elevation 7836
 x 9
 y 47
 end
+arch river_nw-se_u
+x 9
+y 47
+end
 arch mountain
 elevation 7973
+x 9
+y 48
+end
+arch river_nw-e
 x 9
 y 48
 end
@@ -2648,13 +2712,25 @@ elevation 9770
 x 10
 y 41
 end
+arch river_nw-se_u
+x 10
+y 41
+end
 arch mountain
 elevation 8909
 x 10
 y 42
 end
+arch river_nw-se
+x 10
+y 42
+end
 arch mountain
 elevation 8185
+x 10
+y 43
+end
+arch river_nw-se_l
 x 10
 y 43
 end
@@ -2680,6 +2756,10 @@ y 47
 end
 arch mountain
 elevation 7140
+x 10
+y 48
+end
+arch river_w-e
 x 10
 y 48
 end
@@ -2865,6 +2945,10 @@ elevation 8336
 x 11
 y 35
 end
+arch river_sw-e
+x 11
+y 35
+end
 arch mountain2
 elevation 10900
 x 11
@@ -2900,13 +2984,25 @@ elevation 8541
 x 11
 y 42
 end
+arch river_nw-se_u
+x 11
+y 42
+end
 arch mountain
 elevation 7341
 x 11
 y 43
 end
+arch river_nw-se
+x 11
+y 43
+end
 arch mountain
 elevation 6258
+x 11
+y 44
+end
+arch river_nw-se_l
 x 11
 y 44
 end
@@ -2925,8 +3021,16 @@ elevation 5485
 x 11
 y 47
 end
+arch river_sw-ne_u
+x 11
+y 47
+end
 arch mountain
 elevation 5397
+x 11
+y 48
+end
+arch river_ne-w
 x 11
 y 48
 end
@@ -3107,8 +3211,16 @@ elevation 9510
 x 12
 y 34
 end
+arch river_sw-ne_u
+x 12
+y 34
+end
 arch mountain
 elevation 8512
+x 12
+y 35
+end
+arch river_ne-w
 x 12
 y 35
 end
@@ -3152,8 +3264,16 @@ elevation 4842
 x 12
 y 43
 end
+arch river_nw-se_u
+x 12
+y 43
+end
 arch hills_rocky
 elevation 4396
+x 12
+y 44
+end
+arch river_nw-se
 x 12
 y 44
 end
@@ -3162,8 +3282,16 @@ elevation 3252
 x 12
 y 45
 end
+arch river_nw-se_l
+x 12
+y 45
+end
 arch hills_rocky
 elevation 4182
+x 12
+y 46
+end
+arch river_sw-ne_u
 x 12
 y 46
 end
@@ -3172,8 +3300,16 @@ elevation 3109
 x 12
 y 47
 end
+arch river_sw-ne
+x 12
+y 47
+end
 arch hills_rocky
 elevation 3435
+x 12
+y 48
+end
+arch river_sw-ne_l
 x 12
 y 48
 end
@@ -3354,8 +3490,16 @@ elevation 8738
 x 13
 y 34
 end
+arch river_sw-e
+x 13
+y 34
+end
 arch mountain2
 elevation 9721
+x 13
+y 35
+end
+arch river_sw-ne_l
 x 13
 y 35
 end
@@ -3404,8 +3548,16 @@ elevation 3543
 x 13
 y 44
 end
+arch river_nw-se_u
+x 13
+y 44
+end
 arch hills_rocky
 elevation 3123
+x 13
+y 45
+end
+arch river_nw-se
 x 13
 y 45
 end
@@ -3414,8 +3566,20 @@ elevation 3408
 x 13
 y 46
 end
+arch river_nw-se_l
+x 13
+y 46
+end
+arch river_sw-ne
+x 13
+y 46
+end
 arch hills_rocky
 elevation 3314
+x 13
+y 47
+end
+arch river_sw-ne_l
 x 13
 y 47
 end
@@ -3601,6 +3765,10 @@ elevation 7842
 x 14
 y 34
 end
+arch river_w-e
+x 14
+y 34
+end
 arch mountain2
 elevation 9150
 x 14
@@ -3656,13 +3824,25 @@ elevation 3426
 x 14
 y 45
 end
+arch river_nw-se_u
+x 14
+y 45
+end
 arch hills_rocky
 elevation 3351
 x 14
 y 46
 end
+arch river_nw-se
+x 14
+y 46
+end
 arch hills_rocky
 elevation 3190
+x 14
+y 47
+end
+arch river_nw-se_l
 x 14
 y 47
 end
@@ -3838,13 +4018,21 @@ elevation 5360
 x 15
 y 32
 end
-arch steppe
-elevation 4185
+arch woods_2
+elevation 1420
+x 15
+y 33
+end
+arch river_sw-ne_u
 x 15
 y 33
 end
 arch mountain
 elevation 7028
+x 15
+y 34
+end
+arch river_ne-w
 x 15
 y 34
 end
@@ -3908,13 +4096,25 @@ elevation 3146
 x 15
 y 46
 end
+arch river_nw-se_u
+x 15
+y 46
+end
 arch hills_rocky
 elevation 3380
 x 15
 y 47
 end
+arch river_nw-se
+x 15
+y 47
+end
 arch hills_rocky
 elevation 4095
+x 15
+y 48
+end
+arch river_nw-se_l
 x 15
 y 48
 end
@@ -4090,8 +4290,16 @@ elevation 5265
 x 16
 y 33
 end
+arch river_sw-e
+x 16
+y 33
+end
 arch mountain
 elevation 6269
+x 16
+y 34
+end
+arch river_sw-ne_l
 x 16
 y 34
 end
@@ -4160,8 +4368,16 @@ elevation 2378
 x 16
 y 47
 end
+arch river_nw-se_u
+x 16
+y 47
+end
 arch hills_rocky
 elevation 4237
+x 16
+y 48
+end
+arch river_nw-e
 x 16
 y 48
 end
@@ -4337,6 +4553,10 @@ elevation 4756
 x 17
 y 33
 end
+arch river_w-e
+x 17
+y 33
+end
 arch mountain
 elevation 5584
 x 17
@@ -4409,6 +4629,10 @@ y 47
 end
 arch hills_rocky
 elevation 4314
+x 17
+y 48
+end
+arch river_w-e
 x 17
 y 48
 end
@@ -4579,8 +4803,16 @@ elevation 4627
 x 18
 y 32
 end
+arch river_sw-ne_u
+x 18
+y 32
+end
 arch steppe
 elevation 4926
+x 18
+y 33
+end
+arch river_ne-w
 x 18
 y 33
 end
@@ -4656,6 +4888,10 @@ y 47
 end
 arch hills_rocky
 elevation 4710
+x 18
+y 48
+end
+arch river_w-e
 x 18
 y 48
 end
@@ -4821,13 +5057,25 @@ elevation 2316
 x 19
 y 31
 end
+arch river_sw-ne_u
+x 19
+y 31
+end
 arch hills_rocky
 elevation 3964
 x 19
 y 32
 end
+arch river_sw-ne
+x 19
+y 32
+end
 arch hills_rocky
 elevation 4205
+x 19
+y 33
+end
+arch river_sw-ne_l
 x 19
 y 33
 end
@@ -4901,13 +5149,21 @@ elevation 4606
 x 19
 y 47
 end
-arch mountain
-elevation 5192
+arch hills_rocky
+elevation 4710
+x 19
+y 48
+end
+arch river_se-w
 x 19
 y 48
 end
 arch mountain
 elevation 5362
+x 19
+y 49
+end
+arch river_nw-se_l
 x 19
 y 49
 end
@@ -5062,13 +5318,25 @@ elevation 3911
 x 20
 y 30
 end
+arch river_sw-ne_u
+x 20
+y 30
+end
 arch hills_rocky
 elevation 3826
 x 20
 y 31
 end
+arch river_sw-ne
+x 20
+y 31
+end
 arch steppe
 elevation 3665
+x 20
+y 32
+end
+arch river_sw-ne_l
 x 20
 y 32
 end
@@ -5152,8 +5420,16 @@ elevation 5300
 x 20
 y 48
 end
+arch river_nw-se_u
+x 20
+y 48
+end
 arch hills_rocky
 elevation 4979
+x 20
+y 49
+end
+arch river_nw-e
 x 20
 y 49
 end
@@ -5302,13 +5578,25 @@ elevation 3791
 x 21
 y 29
 end
+arch river_sw-ne_u
+x 21
+y 29
+end
 arch hills_rocky
 elevation 4237
 x 21
 y 30
 end
+arch river_sw-ne
+x 21
+y 30
+end
 arch steppe
 elevation 4198
+x 21
+y 31
+end
+arch river_sw-ne_l
 x 21
 y 31
 end
@@ -5399,6 +5687,10 @@ y 48
 end
 arch hills_rocky
 elevation 3847
+x 21
+y 49
+end
+arch bridge_ns
 x 21
 y 49
 end
@@ -5548,8 +5840,16 @@ elevation 4441
 x 22
 y 29
 end
+arch river_sw-e
+x 22
+y 29
+end
 arch steppe
 elevation 3711
+x 22
+y 30
+end
+arch river_sw-ne_l
 x 22
 y 30
 end
@@ -5633,8 +5933,8 @@ elevation 5829
 x 22
 y 46
 end
-arch mountain
-elevation 5233
+arch hills_rocky
+elevation 4744
 x 22
 y 47
 end
@@ -5643,8 +5943,16 @@ elevation 4218
 x 22
 y 48
 end
+arch river_sw-ne_u
+x 22
+y 48
+end
 arch woods_2
 elevation 2151
+x 22
+y 49
+end
+arch river_ne-w
 x 22
 y 49
 end
@@ -5794,6 +6102,10 @@ elevation 4610
 x 23
 y 29
 end
+arch river_w-e
+x 23
+y 29
+end
 arch mountain
 elevation 5044
 x 23
@@ -5889,8 +6201,16 @@ elevation 3100
 x 23
 y 48
 end
+arch river_sw-e
+x 23
+y 48
+end
 arch steppe
 elevation 3551
+x 23
+y 49
+end
+arch river_sw-ne_l
 x 23
 y 49
 end
@@ -6040,6 +6360,10 @@ elevation 4311
 x 24
 y 29
 end
+arch river_w-e
+x 24
+y 29
+end
 arch mountain
 elevation 5432
 x 24
@@ -6132,6 +6456,10 @@ y 47
 end
 arch steppe
 elevation 4205
+x 24
+y 48
+end
+arch river_w-e
 x 24
 y 48
 end
@@ -6286,6 +6614,10 @@ elevation 4051
 x 25
 y 29
 end
+arch river_w-e
+x 25
+y 29
+end
 arch mountain
 elevation 5739
 x 25
@@ -6366,18 +6698,22 @@ elevation 6121
 x 25
 y 45
 end
-arch mountain
-elevation 5676
+arch hills_rocky
+elevation 4744
 x 25
 y 46
 end
-arch mountain
-elevation 5072
+arch hills_rocky
+elevation 4744
 x 25
 y 47
 end
 arch hills_rocky
 elevation 4426
+x 25
+y 48
+end
+arch river_w-e
 x 25
 y 48
 end
@@ -6522,13 +6858,17 @@ elevation 3059
 x 26
 y 27
 end
-arch steppe
-elevation 3536
+arch jungle_1
+elevation 2155
 x 26
 y 28
 end
 arch hills_rocky
 elevation 4823
+x 26
+y 29
+end
+arch river_w-e
 x 26
 y 29
 end
@@ -6624,6 +6964,10 @@ y 47
 end
 arch hills_rocky
 elevation 4342
+x 26
+y 48
+end
+arch river_w-e
 x 26
 y 48
 end
@@ -6764,17 +7108,22 @@ x 27
 y 26
 end
 arch woods_2
+blocksview 1
 elevation 1753
 x 27
 y 27
 end
-arch steppe
-elevation 3552
+arch jungle_1
+elevation 2155
 x 27
 y 28
 end
 arch hills_rocky
 elevation 4935
+x 27
+y 29
+end
+arch river_w-e
 x 27
 y 29
 end
@@ -6870,6 +7219,10 @@ y 47
 end
 arch hills_rocky
 elevation 4928
+x 27
+y 48
+end
+arch river_w-e
 x 27
 y 48
 end
@@ -7014,13 +7367,17 @@ elevation 2502
 x 28
 y 27
 end
-arch steppe
-elevation 3489
+arch jungle_1
+elevation 2155
 x 28
 y 28
 end
 arch hills
 elevation 3613
+x 28
+y 29
+end
+arch river_w-e
 x 28
 y 29
 end
@@ -7116,6 +7473,10 @@ y 47
 end
 arch hills_rocky
 elevation 4629
+x 28
+y 48
+end
+arch river_w-e
 x 28
 y 48
 end
@@ -7270,6 +7631,10 @@ elevation 4349
 x 29
 y 29
 end
+arch river_w-e
+x 29
+y 29
+end
 arch mountain
 elevation 5612
 x 29
@@ -7360,8 +7725,16 @@ elevation 4816
 x 29
 y 47
 end
+arch river_sw-ne_u
+x 29
+y 47
+end
 arch hills_rocky
 elevation 3697
+x 29
+y 48
+end
+arch river_ne-w
 x 29
 y 48
 end
@@ -7490,13 +7863,17 @@ elevation 4542
 x 30
 y 27
 end
-arch steppe
-elevation 3962
+arch jungle_1
+elevation 2155
 x 30
 y 28
 end
 arch hills_rocky
 elevation 4155
+x 30
+y 29
+end
+arch river_w-e
 x 30
 y 29
 end
@@ -7585,13 +7962,25 @@ elevation 4873
 x 30
 y 46
 end
+arch river_sw-ne_u
+x 30
+y 46
+end
 arch steppe
 elevation 4104
 x 30
 y 47
 end
+arch river_sw-ne
+x 30
+y 47
+end
 arch hills_rocky
 elevation 2540
+x 30
+y 48
+end
+arch river_sw-ne_l
 x 30
 y 48
 end
@@ -7725,8 +8114,12 @@ elevation 3604
 x 31
 y 28
 end
-arch woods_2
-elevation 1935
+arch hills
+elevation 3932
+x 31
+y 29
+end
+arch bridge_ns
 x 31
 y 29
 end
@@ -7810,13 +8203,25 @@ elevation 4597
 x 31
 y 45
 end
+arch river_sw-ne_u
+x 31
+y 45
+end
 arch steppe
 elevation 4414
 x 31
 y 46
 end
+arch river_sw-ne
+x 31
+y 46
+end
 arch tree
 elevation 2912
+x 31
+y 47
+end
+arch river_sw-ne_l
 x 31
 y 47
 end
@@ -7977,6 +8382,10 @@ elevation 2094
 x 32
 y 29
 end
+arch river_w-e
+x 32
+y 29
+end
 arch hills
 elevation 2663
 x 32
@@ -8042,8 +8451,16 @@ elevation 2568
 x 32
 y 42
 end
+arch river_sw-ne_u
+x 32
+y 42
+end
 arch steppe
 elevation 3755
+x 32
+y 43
+end
+arch river_ne-s
 x 32
 y 43
 end
@@ -8052,13 +8469,25 @@ elevation 4367
 x 32
 y 44
 end
+arch river_n-s
+x 32
+y 44
+end
 arch steppe
 elevation 4878
 x 32
 y 45
 end
+arch river_sw-n
+x 32
+y 45
+end
 arch steppe
 elevation 4237
+x 32
+y 46
+end
+arch river_sw-ne_l
 x 32
 y 46
 end
@@ -8226,6 +8655,10 @@ elevation 1037
 x 33
 y 29
 end
+arch river_w-e
+x 33
+y 29
+end
 arch hills_rocky
 elevation 1408
 x 33
@@ -8276,8 +8709,16 @@ elevation 4138
 x 33
 y 39
 end
+arch river_sw-ne_u
+x 33
+y 39
+end
 arch hills
 elevation 3475
+x 33
+y 40
+end
+arch river_ne-s
 x 33
 y 40
 end
@@ -8286,13 +8727,25 @@ elevation 3389
 x 33
 y 41
 end
+arch river_n-s
+x 33
+y 41
+end
 arch hills
 elevation 3747
 x 33
 y 42
 end
+arch river_sw-n
+x 33
+y 42
+end
 arch steppe
 elevation 4428
+x 33
+y 43
+end
+arch river_sw-ne_l
 x 33
 y 43
 end
@@ -8475,8 +8928,16 @@ elevation 3222
 x 34
 y 29
 end
+arch river_se-w
+x 34
+y 29
+end
 arch hills
 elevation 2189
+x 34
+y 30
+end
+arch river_nw-se_l
 x 34
 y 30
 end
@@ -8520,13 +8981,25 @@ elevation 4326
 x 34
 y 38
 end
+arch river_sw-ne_u
+x 34
+y 38
+end
 arch hills
 elevation 4285
 x 34
 y 39
 end
+arch river_sw-ne
+x 34
+y 39
+end
 arch hills
 elevation 3883
+x 34
+y 40
+end
+arch river_sw-ne_l
 x 34
 y 40
 end
@@ -8774,13 +9247,25 @@ elevation 4463
 x 35
 y 29
 end
+arch river_nw-se_u
+x 35
+y 29
+end
 arch hills
 elevation 3885
 x 35
 y 30
 end
+arch river_nw-se
+x 35
+y 30
+end
 arch hills
 elevation 3419
+x 35
+y 31
+end
+arch river_nw-se_l
 x 35
 y 31
 end
@@ -8814,13 +9299,25 @@ elevation 3696
 x 35
 y 37
 end
+arch river_sw-ne_u
+x 35
+y 37
+end
 arch hills
 elevation 4268
 x 35
 y 38
 end
+arch river_sw-ne
+x 35
+y 38
+end
 arch hills
 elevation 3625
+x 35
+y 39
+end
+arch river_sw-ne_l
 x 35
 y 39
 end
@@ -8922,6 +9419,10 @@ x 36
 y 9
 end
 arch grass
+x 36
+y 10
+end
+arch lamppost
 x 36
 y 10
 end
@@ -9039,13 +9540,25 @@ elevation 4791
 x 36
 y 30
 end
+arch river_nw-se_u
+x 36
+y 30
+end
 arch hills
 elevation 4161
 x 36
 y 31
 end
+arch river_nw-se
+x 36
+y 31
+end
 arch hills
 elevation 2558
+x 36
+y 32
+end
+arch river_nw-se_l
 x 36
 y 32
 end
@@ -9074,8 +9587,16 @@ elevation 4261
 x 36
 y 37
 end
+arch river_sw-e
+x 36
+y 37
+end
 arch hills
 elevation 4664
+x 36
+y 38
+end
+arch river_sw-ne_l
 x 36
 y 38
 end
@@ -9334,13 +9855,25 @@ elevation 4415
 x 37
 y 31
 end
+arch river_nw-se_u
+x 37
+y 31
+end
 arch hills
 elevation 3749
 x 37
 y 32
 end
+arch river_nw-se
+x 37
+y 32
+end
 arch hills
 elevation 3023
+x 37
+y 33
+end
+arch river_nw-se_l
 x 37
 y 33
 end
@@ -9359,8 +9892,16 @@ elevation 2994
 x 37
 y 36
 end
+arch river_sw-ne_u
+x 37
+y 36
+end
 arch hills
 elevation 4649
+x 37
+y 37
+end
+arch river_ne-w
 x 37
 y 37
 end
@@ -9444,10 +9985,6 @@ x 38
 y 4
 end
 arch cobblestones2
-x 38
-y 5
-end
-arch light4
 x 38
 y 5
 end
@@ -9620,8 +10157,16 @@ elevation 3787
 x 38
 y 32
 end
+arch river_nw-se_u
+x 38
+y 32
+end
 arch hills
 elevation 3084
+x 38
+y 33
+end
+arch river_nw-e
 x 38
 y 33
 end
@@ -9640,8 +10185,16 @@ elevation 4153
 x 38
 y 36
 end
+arch river_sw-e
+x 38
+y 36
+end
 arch hills
 elevation 4938
+x 38
+y 37
+end
+arch river_sw-ne_l
 x 38
 y 37
 end
@@ -9729,6 +10282,10 @@ x 39
 y 4
 end
 arch grass
+x 39
+y 5
+end
+arch lamppost
 x 39
 y 5
 end
@@ -9904,8 +10461,16 @@ elevation 3527
 x 39
 y 33
 end
+arch river_se-w
+x 39
+y 33
+end
 arch woods_2
 elevation 2886
+x 39
+y 34
+end
+arch river_nw-se_l
 x 39
 y 34
 end
@@ -9916,6 +10481,10 @@ y 35
 end
 arch hills
 elevation 4366
+x 39
+y 36
+end
+arch river_w-e
 x 39
 y 36
 end
@@ -10156,8 +10725,16 @@ elevation 4391
 x 40
 y 33
 end
+arch river_nw-se_u
+x 40
+y 33
+end
 arch hills
 elevation 4261
+x 40
+y 34
+end
+arch river_nw-se
 x 40
 y 34
 end
@@ -10166,8 +10743,16 @@ elevation 4201
 x 40
 y 35
 end
-arch steppe
-elevation 4457
+arch river_nw-se_l
+x 40
+y 35
+end
+arch hills
+elevation 4366
+x 40
+y 36
+end
+arch river_w-e
 x 40
 y 36
 end
@@ -10428,13 +11013,25 @@ elevation 4933
 x 41
 y 34
 end
+arch river_nw-se_u
+x 41
+y 34
+end
 arch hills
 elevation 4278
 x 41
 y 35
 end
+arch river_nw-se
+x 41
+y 35
+end
 arch hills
 elevation 3805
+x 41
+y 36
+end
+arch rcrook_we-nw
 x 41
 y 36
 end
@@ -10692,8 +11289,16 @@ elevation 4361
 x 42
 y 35
 end
+arch river_nw-se_u
+x 42
+y 35
+end
 arch hills
 elevation 4225
+x 42
+y 36
+end
+arch rjunct_we-nw
 x 42
 y 36
 end
@@ -10943,6 +11548,10 @@ y 35
 end
 arch hills
 elevation 1524
+x 43
+y 36
+end
+arch river_w-e
 x 43
 y 36
 end
@@ -11209,8 +11818,16 @@ elevation 3998
 x 44
 y 35
 end
+arch river_sw-ne_u
+x 44
+y 35
+end
 arch hills
 elevation 3241
+x 44
+y 36
+end
+arch river_ne-w
 x 44
 y 36
 end
@@ -11340,10 +11957,6 @@ arch cobblestones2
 x 45
 y 11
 end
-arch light4
-x 45
-y 11
-end
 arch cobblestones2
 x 45
 y 12
@@ -11458,13 +12071,25 @@ elevation 4446
 x 45
 y 34
 end
+arch river_sw-ne_u
+x 45
+y 34
+end
 arch hills
 elevation 3790
 x 45
 y 35
 end
+arch river_sw-ne
+x 45
+y 35
+end
 arch hills
 elevation 3164
+x 45
+y 36
+end
+arch river_sw-ne_l
 x 45
 y 36
 end
@@ -11607,6 +12232,10 @@ no_pass 1
 x 46
 y 12
 end
+arch lamppost
+x 46
+y 12
+end
 arch grass
 no_pass 1
 x 46
@@ -11714,13 +12343,25 @@ elevation 4654
 x 46
 y 33
 end
+arch river_sw-ne_u
+x 46
+y 33
+end
 arch evergreens
 elevation 2791
 x 46
 y 34
 end
+arch river_sw-ne
+x 46
+y 34
+end
 arch hills
 elevation 3203
+x 46
+y 35
+end
+arch river_sw-ne_l
 x 46
 y 35
 end
@@ -11806,10 +12447,6 @@ x 47
 y 2
 end
 arch cobblestones2
-x 47
-y 3
-end
-arch light4
 x 47
 y 3
 end
@@ -11955,13 +12592,25 @@ elevation 4607
 x 47
 y 32
 end
+arch river_sw-ne_u
+x 47
+y 32
+end
 arch hills
 elevation 4015
 x 47
 y 33
 end
+arch river_sw-ne
+x 47
+y 33
+end
 arch hills
 elevation 3084
+x 47
+y 34
+end
+arch river_sw-ne_l
 x 47
 y 34
 end
@@ -12072,6 +12721,10 @@ x 48
 y 4
 end
 arch grass_only
+x 48
+y 5
+end
+arch lamppost
 x 48
 y 5
 end
@@ -12227,8 +12880,16 @@ elevation 3433
 x 48
 y 32
 end
+arch river_sw-e
+x 48
+y 32
+end
 arch hills
 elevation 3283
+x 48
+y 33
+end
+arch river_sw-ne_l
 x 48
 y 33
 end
@@ -12466,8 +13127,16 @@ elevation 2605
 x 49
 y 31
 end
+arch river_sw-ne_u
+x 49
+y 31
+end
 arch jungle_1
 elevation 2203
+x 49
+y 32
+end
+arch river_ne-w
 x 49
 y 32
 end

@@ -137,10 +137,6 @@ arch brazier
 x 1
 y 2
 end
-arch light4
-x 1
-y 2
-end
 arch woodfloor2
 x 1
 y 3
@@ -162,10 +158,6 @@ x 1
 y 7
 end
 arch brazier
-x 1
-y 7
-end
-arch light4
 x 1
 y 7
 end
@@ -453,6 +445,10 @@ friendly 1
 x 4
 y 5
 end
+arch light2
+x 4
+y 5
+end
 arch woodfloor2
 x 4
 y 6
@@ -586,10 +582,6 @@ arch brazier
 x 5
 y 10
 end
-arch light4
-x 5
-y 10
-end
 arch grass
 x 5
 y 11
@@ -719,10 +711,6 @@ arch brazier
 x 7
 y 2
 end
-arch light4
-x 7
-y 2
-end
 arch woodfloor2
 x 7
 y 3
@@ -847,10 +835,6 @@ arch brazier
 x 8
 y 7
 end
-arch light4
-x 8
-y 7
-end
 arch woodfloor2
 x 8
 y 8
@@ -961,10 +945,6 @@ arch brazier
 x 9
 y 10
 end
-arch light4
-x 9
-y 10
-end
 arch grass
 x 9
 y 11
@@ -999,10 +979,6 @@ x 10
 y 1
 end
 arch fireplace
-x 10
-y 1
-end
-arch light2
 x 10
 y 1
 end
@@ -1105,10 +1081,6 @@ arch fireplace
 x 11
 y 1
 end
-arch light2
-x 11
-y 1
-end
 arch woodfloor2
 x 11
 y 2
@@ -1151,6 +1123,10 @@ x 11
 y 5
 end
 arch chair_1.1
+x 11
+y 5
+end
+arch light2
 x 11
 y 5
 end
@@ -1441,10 +1417,6 @@ arch brazier
 x 14
 y 2
 end
-arch light4
-x 14
-y 2
-end
 arch woodfloor2
 x 14
 y 3
@@ -1466,10 +1438,6 @@ x 14
 y 7
 end
 arch brazier
-x 14
-y 7
-end
-arch light4
 x 14
 y 7
 end
@@ -1734,6 +1702,10 @@ arch chair_1.1
 x 17
 y 5
 end
+arch light2
+x 17
+y 5
+end
 arch woodfloor2
 x 17
 y 6
@@ -1985,10 +1957,6 @@ arch brazier
 x 20
 y 2
 end
-arch light4
-x 20
-y 2
-end
 arch woodfloor2
 x 20
 y 3
@@ -2037,10 +2005,6 @@ x 20
 y 7
 end
 arch brazier
-x 20
-y 7
-end
-arch light4
 x 20
 y 7
 end

@@ -100,11 +100,7 @@ arch woodfloor2
 x 1
 y 4
 end
-arch brazier
-x 1
-y 4
-end
-arch light3
+arch firepot
 x 1
 y 4
 end
@@ -112,11 +108,7 @@ arch woodfloor2
 x 1
 y 5
 end
-arch brazier
-x 1
-y 5
-end
-arch light3
+arch firepot
 x 1
 y 5
 end
@@ -242,6 +234,10 @@ arch table
 x 3
 y 1
 end
+arch light2
+x 3
+y 1
+end
 arch woodfloor2
 x 3
 y 2
@@ -279,6 +275,10 @@ x 3
 y 8
 end
 arch table
+x 3
+y 8
+end
+arch light2
 x 3
 y 8
 end
@@ -456,14 +456,6 @@ arch woodfloor2
 x 6
 y 3
 end
-arch brazier
-x 6
-y 3
-end
-arch light3
-x 6
-y 3
-end
 arch woodfloor2
 x 6
 y 4
@@ -473,14 +465,6 @@ x 6
 y 5
 end
 arch woodfloor2
-x 6
-y 6
-end
-arch brazier
-x 6
-y 6
-end
-arch light3
 x 6
 y 6
 end
@@ -534,6 +518,10 @@ arch woodfloor2
 x 7
 y 3
 end
+arch firepot
+x 7
+y 3
+end
 arch woodfloor2
 x 7
 y 4
@@ -543,6 +531,10 @@ x 7
 y 5
 end
 arch woodfloor2
+x 7
+y 6
+end
+arch firepot
 x 7
 y 6
 end
@@ -792,6 +784,10 @@ arch woodfloor2
 x 11
 y 1
 end
+arch light2
+x 11
+y 1
+end
 arch woodfloor2
 x 11
 y 2
@@ -829,6 +825,10 @@ x 11
 y 8
 end
 arch table
+x 11
+y 8
+end
+arch light2
 x 11
 y 8
 end
@@ -994,14 +994,6 @@ arch woodfloor2
 x 14
 y 3
 end
-arch brazier
-x 14
-y 3
-end
-arch light3
-x 14
-y 3
-end
 arch woodfloor2
 x 14
 y 4
@@ -1014,11 +1006,7 @@ arch woodfloor2
 x 14
 y 6
 end
-arch brazier
-x 14
-y 6
-end
-arch light3
+arch firepot
 x 14
 y 6
 end
@@ -1106,11 +1094,7 @@ arch woodfloor2
 x 16
 y 1
 end
-arch brazier
-x 16
-y 1
-end
-arch light2
+arch firepot
 x 16
 y 1
 end
@@ -1230,11 +1214,7 @@ arch woodfloor2
 x 18
 y 1
 end
-arch brazier
-x 18
-y 1
-end
-arch light2
+arch firepot
 x 18
 y 1
 end
@@ -1283,6 +1263,10 @@ x 18
 y 8
 end
 arch table_2
+x 18
+y 8
+end
+arch light2
 x 18
 y 8
 end
@@ -1377,11 +1361,7 @@ arch woodfloor2
 x 20
 y 5
 end
-arch brazier
-x 20
-y 5
-end
-arch light3
+arch firepot
 x 20
 y 5
 end
