@@ -19,7 +19,7 @@ dam 2
 hp 1
 maxhp 1
 level 1
-speed 0.11
+speed -0.11
 weight 80
 attack_movement 2
 editable 1
