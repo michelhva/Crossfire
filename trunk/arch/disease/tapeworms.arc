@@ -8,7 +8,7 @@ magic 1
 maxhp 1
 maxgrace -1
 food -1
-speed 0.005
+speed 0.001
 last_sp 0
 maxsp 0
 ac 0
