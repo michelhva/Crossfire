@@ -10,7 +10,7 @@ is_hilly 1
 slow_move 10
 blocksview 1
 editable 8
-smoothlevel 50
+smoothlevel 100
 is_floor 1
 smoothface mountain2.111 mountain_S.111
 end

@@ -9,7 +9,7 @@ no_pick 1
 slow_move 1
 is_wooded 1
 editable 8
-smoothlevel 10
+smoothlevel 40
 smoothface grass.111 grass_S.111
 end
 Object grass_only
@@ -23,6 +23,6 @@ no_pick 1
 slow_move 1
 is_wooded 1
 editable 8
-smoothlevel 10
+smoothlevel 40
 smoothface grass.111 grass_S.111
 end

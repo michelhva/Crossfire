@@ -20,7 +20,7 @@ no_pick 1
 is_water 1
 editable 8
 is_floor 1
-smoothlevel 5
+smoothlevel 20
 end
 Object sea1
 name sea
@@ -44,5 +44,5 @@ no_pick 1
 is_water 1
 editable 8
 is_floor 1
-smoothlevel 5
+smoothlevel 20
 end

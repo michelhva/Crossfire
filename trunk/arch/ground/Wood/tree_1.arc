@@ -7,5 +7,5 @@ color_fg green
 editable 8
 is_floor 1
 smoothface tree_1.111 grass_S.111
-smoothlevel 81
+smoothlevel 140
 end
