@@ -25,6 +25,7 @@ Str 1
 Wis 2
 Cha 2
 attacktype 4194560
+weapontype 1
 resist_magic 30
 
 resist_drain 100

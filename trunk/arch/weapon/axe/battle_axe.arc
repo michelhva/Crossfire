@@ -6,6 +6,7 @@ dam 21
 speed 0.001
 nrof 1
 attacktype 1
+weapontype 3
 material 18
 value 30000
 weight 10000

@@ -11,4 +11,5 @@ value 100
 editable 1024
 can_impale 1
 attacktype 1
+weapontype 5
 end

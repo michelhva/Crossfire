@@ -11,5 +11,6 @@ weight 5000
 value 20
 editable 1024
 attacktype 1
+weapontype 5
 magicmap black
 end

@@ -21,5 +21,6 @@ value 42000
 slaying troll
 editable 5120
 attacktype 1
+weapontype 2
 magicmap grey
 end
