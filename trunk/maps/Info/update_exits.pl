@@ -142,6 +142,15 @@ $NEW_MAP_NAME[10]="/world/world_103_127";
 $NEW_MAP_OFFX[10]=-14;
 $NEW_MAP_OFFY[10]=1;
 
+$OLD_MAP_NAME[11]='(.+/darcap|darcap)';
+$OLD_MAP_STARTX[11]=0;
+$OLD_MAP_STARTY[11]=0;
+$OLD_MAP_ENDX[11]=100;
+$OLD_MAP_ENDY[11]=100;
+$NEW_MAP_NAME[11]="/world/world_116_102";
+$NEW_MAP_OFFX[11]=18;
+$NEW_MAP_OFFY[11]=26;
+
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
