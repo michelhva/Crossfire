@@ -2,7 +2,7 @@ Object bone_drake
 name bone drake
 randomitems chinese
 race dragon
-face bone_drake.111 
+face bone_drake.111
 anim
 bone_drake.111
 bone_drake.112
