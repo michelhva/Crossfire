@@ -4,8 +4,8 @@ msg
 Creator: josh@woosworld.net
 Date:    10/17/2004
 endmsg
-width 35
-height 11
+width 36
+height 14
 enter_x 15
 enter_y 10
 end
@@ -105,6 +105,15 @@ end
 arch dungeon_magic
 y 10
 end
+arch blocked
+y 11
+end
+arch blocked
+y 12
+end
+arch blocked
+y 13
+end
 arch woodfloor
 x 1
 end
@@ -179,7 +188,10 @@ x 1
 y 5
 end
 arch stair2_up
-name Employees Only!
+name Members Only!
+slaying pshopsinc2
+hp 1
+sp 5
 x 1
 y 5
 end
@@ -249,6 +261,18 @@ end
 arch dungeon_magic
 x 1
 y 10
+end
+arch blocked
+x 1
+y 11
+end
+arch blocked
+x 1
+y 12
+end
+arch blocked
+x 1
+y 13
 end
 arch woodfloor
 x 2
@@ -362,6 +386,18 @@ end
 arch dungeon_magic
 x 2
 y 10
+end
+arch blocked
+x 2
+y 11
+end
+arch blocked
+x 2
+y 12
+end
+arch blocked
+x 2
+y 13
 end
 arch woodfloor
 x 3
@@ -502,6 +538,18 @@ arch dungeon_magic
 x 3
 y 10
 end
+arch blocked
+x 3
+y 11
+end
+arch blocked
+x 3
+y 12
+end
+arch blocked
+x 3
+y 13
+end
 arch woodfloor
 x 4
 end
@@ -614,6 +662,18 @@ end
 arch dungeon_magic
 x 4
 y 10
+end
+arch blocked
+x 4
+y 11
+end
+arch blocked
+x 4
+y 12
+end
+arch blocked
+x 4
+y 13
 end
 arch woodfloor
 x 5
@@ -754,6 +814,18 @@ arch dungeon_magic
 x 5
 y 10
 end
+arch blocked
+x 5
+y 11
+end
+arch blocked
+x 5
+y 12
+end
+arch blocked
+x 5
+y 13
+end
 arch woodfloor
 x 6
 end
@@ -866,6 +938,18 @@ end
 arch dungeon_magic
 x 6
 y 10
+end
+arch blocked
+x 6
+y 11
+end
+arch blocked
+x 6
+y 12
+end
+arch blocked
+x 6
+y 13
 end
 arch woodfloor
 x 7
@@ -1006,6 +1090,18 @@ arch dungeon_magic
 x 7
 y 10
 end
+arch blocked
+x 7
+y 11
+end
+arch blocked
+x 7
+y 12
+end
+arch blocked
+x 7
+y 13
+end
 arch woodfloor
 x 8
 end
@@ -1118,6 +1214,18 @@ end
 arch dungeon_magic
 x 8
 y 10
+end
+arch blocked
+x 8
+y 11
+end
+arch blocked
+x 8
+y 12
+end
+arch blocked
+x 8
+y 13
 end
 arch woodfloor
 x 9
@@ -1258,6 +1366,18 @@ arch dungeon_magic
 x 9
 y 10
 end
+arch blocked
+x 9
+y 11
+end
+arch blocked
+x 9
+y 12
+end
+arch blocked
+x 9
+y 13
+end
 arch woodfloor
 x 10
 end
@@ -1370,6 +1490,18 @@ end
 arch dungeon_magic
 x 10
 y 10
+end
+arch blocked
+x 10
+y 11
+end
+arch blocked
+x 10
+y 12
+end
+arch blocked
+x 10
+y 13
 end
 arch woodfloor
 x 11
@@ -1510,6 +1642,18 @@ arch dungeon_magic
 x 11
 y 10
 end
+arch blocked
+x 11
+y 11
+end
+arch blocked
+x 11
+y 12
+end
+arch blocked
+x 11
+y 13
+end
 arch woodfloor
 x 12
 end
@@ -1622,6 +1766,18 @@ end
 arch dungeon_magic
 x 12
 y 10
+end
+arch blocked
+x 12
+y 11
+end
+arch blocked
+x 12
+y 12
+end
+arch blocked
+x 12
+y 13
 end
 arch woodfloor
 x 13
@@ -1762,6 +1918,18 @@ arch dungeon_magic
 x 13
 y 10
 end
+arch blocked
+x 13
+y 11
+end
+arch blocked
+x 13
+y 12
+end
+arch blocked
+x 13
+y 13
+end
 arch woodfloor
 x 14
 end
@@ -1821,6 +1989,10 @@ arch dungeon_magic
 x 14
 y 5
 end
+arch platinum_converter
+x 14
+y 5
+end
 arch woodfloor
 x 14
 y 6
@@ -1873,6 +2045,18 @@ end
 arch dungeon_magic
 x 14
 y 10
+end
+arch blocked
+x 14
+y 11
+end
+arch blocked
+x 14
+y 12
+end
+arch blocked
+x 14
+y 13
 end
 arch woodfloor
 x 15
@@ -2013,6 +2197,18 @@ arch dungeon_magic
 x 15
 y 10
 end
+arch blocked
+x 15
+y 11
+end
+arch blocked
+x 15
+y 12
+end
+arch blocked
+x 15
+y 13
+end
 arch woodfloor
 x 16
 end
@@ -2072,6 +2268,10 @@ arch dungeon_magic
 x 16
 y 5
 end
+arch diamond_converter
+x 16
+y 5
+end
 arch woodfloor
 x 16
 y 6
@@ -2124,6 +2324,18 @@ end
 arch dungeon_magic
 x 16
 y 10
+end
+arch blocked
+x 16
+y 11
+end
+arch blocked
+x 16
+y 12
+end
+arch blocked
+x 16
+y 13
 end
 arch woodfloor
 x 17
@@ -2264,6 +2476,18 @@ arch dungeon_magic
 x 17
 y 10
 end
+arch blocked
+x 17
+y 11
+end
+arch blocked
+x 17
+y 12
+end
+arch blocked
+x 17
+y 13
+end
 arch woodfloor
 x 18
 end
@@ -2376,6 +2600,18 @@ end
 arch dungeon_magic
 x 18
 y 10
+end
+arch blocked
+x 18
+y 11
+end
+arch blocked
+x 18
+y 12
+end
+arch blocked
+x 18
+y 13
 end
 arch woodfloor
 x 19
@@ -2516,6 +2752,18 @@ arch dungeon_magic
 x 19
 y 10
 end
+arch blocked
+x 19
+y 11
+end
+arch blocked
+x 19
+y 12
+end
+arch blocked
+x 19
+y 13
+end
 arch woodfloor
 x 20
 end
@@ -2628,6 +2876,18 @@ end
 arch dungeon_magic
 x 20
 y 10
+end
+arch blocked
+x 20
+y 11
+end
+arch blocked
+x 20
+y 12
+end
+arch blocked
+x 20
+y 13
 end
 arch woodfloor
 x 21
@@ -2768,6 +3028,18 @@ arch dungeon_magic
 x 21
 y 10
 end
+arch blocked
+x 21
+y 11
+end
+arch blocked
+x 21
+y 12
+end
+arch blocked
+x 21
+y 13
+end
 arch woodfloor
 x 22
 end
@@ -2880,6 +3152,18 @@ end
 arch dungeon_magic
 x 22
 y 10
+end
+arch blocked
+x 22
+y 11
+end
+arch blocked
+x 22
+y 12
+end
+arch blocked
+x 22
+y 13
 end
 arch woodfloor
 x 23
@@ -3020,6 +3304,18 @@ arch dungeon_magic
 x 23
 y 10
 end
+arch blocked
+x 23
+y 11
+end
+arch blocked
+x 23
+y 12
+end
+arch blocked
+x 23
+y 13
+end
 arch woodfloor
 x 24
 end
@@ -3132,6 +3428,18 @@ end
 arch dungeon_magic
 x 24
 y 10
+end
+arch blocked
+x 24
+y 11
+end
+arch blocked
+x 24
+y 12
+end
+arch blocked
+x 24
+y 13
 end
 arch woodfloor
 x 25
@@ -3272,6 +3580,18 @@ arch dungeon_magic
 x 25
 y 10
 end
+arch blocked
+x 25
+y 11
+end
+arch blocked
+x 25
+y 12
+end
+arch blocked
+x 25
+y 13
+end
 arch woodfloor
 x 26
 end
@@ -3384,6 +3704,18 @@ end
 arch dungeon_magic
 x 26
 y 10
+end
+arch blocked
+x 26
+y 11
+end
+arch blocked
+x 26
+y 12
+end
+arch blocked
+x 26
+y 13
 end
 arch woodfloor
 x 27
@@ -3524,6 +3856,18 @@ arch dungeon_magic
 x 27
 y 10
 end
+arch blocked
+x 27
+y 11
+end
+arch blocked
+x 27
+y 12
+end
+arch blocked
+x 27
+y 13
+end
 arch woodfloor
 x 28
 end
@@ -3561,13 +3905,22 @@ arch woodfloor
 x 28
 y 3
 end
-arch flagstone_2_1_1
-x 28
-y 3
-end
 arch dungeon_magic
 x 28
 y 3
+end
+arch flagstone_2_2_1
+x 28
+y 3
+end
+arch magic_mouth
+name Elite Dragon Guard
+msg
+@match *
+You may not enter.
+endmsg
+x 28
+y 4
 end
 arch woodfloor
 x 28
@@ -3577,7 +3930,10 @@ arch dungeon_magic
 x 28
 y 4
 end
-arch flagstone_1_2
+arch dun0
+name Elite Dragon Guard
+face pl_dragon_bl.151
+blocksview 0
 x 28
 y 4
 end
@@ -3589,8 +3945,11 @@ arch dungeon_magic
 x 28
 y 5
 end
-arch grate_closed_2
-name Managers Office
+arch rock
+name carpet
+face hide_white.111
+no_pass 0
+can_roll 0
 x 28
 y 5
 end
@@ -3602,7 +3961,10 @@ arch dungeon_magic
 x 28
 y 6
 end
-arch flagstone_1_1
+arch dun0
+name Elite Dragon Guard
+face pl_dragon_bl.151
+blocksview 0
 x 28
 y 6
 end
@@ -3610,11 +3972,11 @@ arch woodfloor
 x 28
 y 7
 end
-arch flagstone_2_1_1
+arch dungeon_magic
 x 28
 y 7
 end
-arch dungeon_magic
+arch flagstone_2_2_2
 x 28
 y 7
 end
@@ -3654,525 +4016,1053 @@ arch flagstone_3_1
 x 28
 y 10
 end
-arch woodfloor
-x 29
+arch blocked
+x 28
+y 11
 end
-arch flagstone_2_1_2
+arch blocked
+x 28
+y 12
+end
+arch blocked
+x 28
+y 13
+end
+arch woodfloor2
 x 29
 end
 arch dungeon_magic
 x 29
 end
-arch woodfloor
+arch flagstone_3_3
+x 29
+end
+arch woodfloor2
 x 29
 y 1
 end
-arch bookshelf
+arch flagstone_2_1_1
 x 29
 y 1
 end
-arch woodfloor
+arch dungeon_magic
+x 29
+y 1
+end
+arch woodfloor2
 x 29
 y 2
 end
-arch woodfloor
+arch flagstone_2_1_1
+x 29
+y 2
+end
+arch dungeon_magic
+x 29
+y 2
+end
+arch woodfloor2
 x 29
 y 3
 end
-arch woodfloor
+arch dungeon_magic
+x 29
+y 3
+end
+arch flagstone_3_4
+x 29
+y 3
+end
+arch woodfloor2
 x 29
 y 4
 end
-arch woodfloor
+arch dungeon_magic
+x 29
+y 4
+end
+arch flagstone_1_2
+x 29
+y 4
+end
+arch woodfloor2
 x 29
 y 5
 end
-arch hide_white
+arch dungeon_magic
 x 29
 y 5
 end
-arch woodfloor
+arch grate_closed_2
+name Managers Office
+x 29
+y 5
+end
+arch woodfloor2
 x 29
 y 6
 end
-arch woodfloor
+arch dungeon_magic
+x 29
+y 6
+end
+arch flagstone_1_1
+x 29
+y 6
+end
+arch woodfloor2
 x 29
 y 7
 end
-arch woodfloor
+arch dungeon_magic
+x 29
+y 7
+end
+arch flagstone_3_4
+x 29
+y 7
+end
+arch woodfloor2
 x 29
 y 8
 end
-arch woodfloor
+arch flagstone_2_1_1
 x 29
+y 8
+end
+arch dungeon_magic
+x 29
+y 8
+end
+arch woodfloor2
+x 29
+y 9
+end
+arch flagstone_2_1_1
+x 29
+y 9
+end
+arch dungeon_magic
+x 29
+y 9
+end
+arch woodfloor2
+x 29
+y 10
+end
+arch dungeon_magic
+x 29
+y 10
+end
+arch flagstone_3_1
+x 29
+y 10
+end
+arch blocked
+x 29
+y 11
+end
+arch blocked
+x 29
+y 12
+end
+arch blocked
+x 29
+y 13
+end
+arch woodfloor2
+x 30
+end
+arch flagstone_2_1_2
+x 30
+end
+arch dungeon_magic
+x 30
+end
+arch woodfloor2
+x 30
+y 1
+end
+arch dungeon_magic
+x 30
+y 1
+end
+arch stair_3_up
+slaying pshopsinc2
+hp 29
+sp 1
+x 30
+y 1
+end
+arch woodfloor2
+x 30
+y 2
+end
+arch dungeon_magic
+x 30
+y 2
+end
+arch woodfloor2
+x 30
+y 3
+end
+arch dungeon_magic
+x 30
+y 3
+end
+arch woodfloor2
+x 30
+y 4
+end
+arch dungeon_magic
+x 30
+y 4
+end
+arch woodfloor2
+x 30
+y 5
+end
+arch rock
+name carpet
+face hide_white.111
+no_pass 0
+can_roll 0
+x 30
+y 5
+end
+arch dungeon_magic
+x 30
+y 5
+end
+arch woodfloor2
+x 30
+y 6
+end
+arch dungeon_magic
+x 30
+y 6
+end
+arch woodfloor2
+x 30
+y 7
+end
+arch dungeon_magic
+x 30
+y 7
+end
+arch woodfloor2
+x 30
+y 8
+end
+arch dungeon_magic
+x 30
+y 8
+end
+arch woodfloor2
+x 30
 y 9
 end
 arch brazier
-x 29
+x 30
 y 9
 end
-arch woodfloor
-x 29
+arch dungeon_magic
+x 30
+y 9
+end
+arch woodfloor2
+x 30
 y 10
 end
 arch flagstone_2_1_2
-x 29
+x 30
 y 10
 end
 arch dungeon_magic
-x 29
+x 30
 y 10
 end
-arch woodfloor
+arch blocked
 x 30
+y 11
+end
+arch blocked
+x 30
+y 12
+end
+arch blocked
+x 30
+y 13
+end
+arch woodfloor2
+x 31
 end
 arch flagstone_2_1_2
-x 30
+x 31
 end
 arch dungeon_magic
-x 30
+x 31
 end
-arch woodfloor
-x 30
+arch woodfloor2
+x 31
 y 1
 end
 arch bookshelf
-x 30
+no_pick 1
+x 31
 y 1
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 1
+end
+arch woodfloor2
+x 31
 y 2
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 2
+end
+arch woodfloor2
+x 31
 y 3
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 3
+end
+arch woodfloor2
+x 31
 y 4
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 4
+end
+arch woodfloor2
+x 31
 y 5
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 5
+end
+arch woodfloor2
+x 31
 y 6
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 6
+end
+arch woodfloor2
+x 31
 y 7
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 7
+end
+arch woodfloor2
+x 31
 y 8
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 8
+end
+arch woodfloor2
+x 31
 y 9
 end
 arch table
-x 30
+no_pick 1
+x 31
 y 9
 end
 arch dragon_steak
-x 30
+no_pick 1
+food 0
+x 31
 y 9
 end
-arch woodfloor
-x 30
+arch dungeon_magic
+x 31
+y 9
+end
+arch woodfloor2
+x 31
 y 10
 end
 arch flagstone_2_1_2
-x 30
+x 31
 y 10
 end
 arch dungeon_magic
-x 30
+x 31
 y 10
 end
-arch woodfloor
+arch blocked
 x 31
+y 11
+end
+arch blocked
+x 31
+y 12
+end
+arch blocked
+x 31
+y 13
+end
+arch teleporter
+hp 31
+sp 6
+connected 100
+speed 0.0
+x 31
+y 13
+end
+arch rose_red
+name dozen red roses
+x 31
+y 13
+end
+arch woodfloor2
+x 32
 end
 arch flagstone_2_1_2
-x 31
+x 32
 end
 arch dungeon_magic
-x 31
+x 32
 end
-arch woodfloor
-x 31
+arch woodfloor2
+x 32
 y 1
 end
 arch fireplace
-x 31
+x 32
 y 1
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 1
+end
+arch woodfloor2
+x 32
 y 2
 end
-arch hide_black
-x 31
+arch rock
+name carpet
+face hide_black.111
+no_pass 0
+can_roll 0
+x 32
 y 2
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 2
+end
+arch woodfloor2
+x 32
 y 3
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 3
+end
+arch woodfloor2
+x 32
 y 4
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 4
+end
+arch woodfloor2
+x 32
 y 5
 end
 arch chair_1.1
-x 31
+x 32
 y 5
 end
 arch man
 name Customer
-x 31
+x 32
 y 5
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 5
+end
+arch magic_mouth
+name Manager
+msg
+Manager says:
+Thanks!
+Dragons collect treasure you know..
+endmsg
+connected 101
+walk_on 0
+fly_on 0
+x 32
+y 6
+end
+arch altar
+slaying Contract Pen
+food 1
+connected 101
+x 32
+y 6
+end
+arch woodfloor2
+x 32
 y 6
 end
 arch wizdesk
-x 31
+no_pick 1
+x 32
 y 6
 end
-arch scroll_jumping
+arch rock
 name Contract
-x 31
+face scrollr.111
+no_pass 0
+can_roll 0
+x 32
 y 6
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 6
+end
+arch magic_mouth
+name Manager
+msg
+@match hi|Hi|Hello|hello
+Well as long as you are here, make yourself useful and take these flowers to my wife.
+Put them on her vanity so she will see them.
+@match date|Date
+*Sigh* She's starting to forget a lot of things.  Out date is at 7!
+@match contract|Contract
+I can't finish the contract until I find my pen!
+@match pen|Pen
+If you find my pen put it on my desk.
+@match *
+I'm in the middle of something.  Go away before I call the guards.
+endmsg
+x 32
+y 7
+end
+arch magic_ear
+msg
+@match hi|Hi|Hello|hello
+endmsg
+connected 100
+x 32
+y 7
+end
+arch woodfloor2
+x 32
 y 7
 end
 arch chair_2.3
-x 31
+x 32
 y 7
 end
-arch green_dragon1
+arch dungeon_magic
+x 32
+y 7
+end
+arch dun0
 name Manager
-stand_still 1
-x 31
+face pl_dragon_g.151
+blocksview 0
+x 32
 y 7
 end
-arch woodfloor
-x 31
+arch woodfloor2
+x 32
 y 8
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 8
+end
+arch woodfloor2
+x 32
 y 9
 end
 arch table
-x 31
+no_pick 1
+x 32
 y 9
 end
 arch booze
-x 31
+no_pick 1
+x 32
 y 9
 end
-arch woodfloor
-x 31
+arch dungeon_magic
+x 32
+y 9
+end
+arch woodfloor2
+x 32
 y 10
 end
 arch flagstone_2_1_2
-x 31
+x 32
 y 10
 end
 arch dungeon_magic
-x 31
+x 32
 y 10
 end
-arch woodfloor
+arch blocked
 x 32
+y 11
+end
+arch blocked
+x 32
+y 12
+end
+arch teleporter
+hp 31
+sp 8
+connected 101
+speed 0.0
+x 32
+y 12
+end
+arch random_potion
+x 32
+y 12
+end
+arch blocked
+x 32
+y 13
+end
+arch woodfloor2
+x 33
 end
 arch flagstone_2_1_2
-x 32
+x 33
 end
 arch dungeon_magic
-x 32
+x 33
 end
-arch woodfloor
-x 32
+arch woodfloor2
+x 33
 y 1
 end
 arch bookshelf
-x 32
+no_pick 1
+x 33
 y 1
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 1
+end
+arch woodfloor2
+x 33
 y 2
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 2
+end
+arch woodfloor2
+x 33
 y 3
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 3
+end
+arch woodfloor2
+x 33
 y 4
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 4
+end
+arch woodfloor2
+x 33
 y 5
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 5
+end
+arch woodfloor2
+x 33
 y 6
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 6
+end
+arch woodfloor2
+x 33
 y 7
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 7
+end
+arch woodfloor2
+x 33
 y 8
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 8
+end
+arch woodfloor2
+x 33
 y 9
 end
 arch table
-x 32
+no_pick 1
+x 33
 y 9
 end
 arch dragon_steak
-x 32
+no_pick 1
+x 33
 y 9
 end
-arch woodfloor
-x 32
+arch dungeon_magic
+x 33
+y 9
+end
+arch woodfloor2
+x 33
 y 10
 end
 arch flagstone_2_1_2
-x 32
+x 33
 y 10
 end
 arch dungeon_magic
-x 32
+x 33
 y 10
 end
-arch woodfloor
+arch blocked
 x 33
+y 11
+end
+arch blocked
+x 33
+y 12
+end
+arch teleporter
+hp 32
+sp 8
+connected 101
+speed 0.0
+x 33
+y 12
+end
+arch random_spells
+x 33
+y 12
+end
+arch blocked
+x 33
+y 13
+end
+arch woodfloor2
+x 34
 end
 arch flagstone_2_1_2
-x 33
+x 34
 end
 arch dungeon_magic
-x 33
+x 34
 end
-arch woodfloor
-x 33
+arch woodfloor2
+x 34
 y 1
 end
 arch bookshelf
-x 33
+no_pick 1
+x 34
 y 1
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 1
+end
+arch woodfloor2
+x 34
 y 2
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 2
+end
+arch woodfloor2
+x 34
 y 3
 end
 arch depositbox
-x 33
+x 34
 y 3
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 3
+end
+arch woodfloor2
+x 34
 y 4
 end
 arch depositbox
-x 33
+x 34
 y 4
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 4
+end
+arch woodfloor2
+x 34
 y 5
 end
 arch clock
-x 33
+no_pick 1
+x 34
 y 5
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 5
+end
+arch woodfloor2
+x 34
 y 6
 end
 arch depositbox
-x 33
+x 34
 y 6
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 6
+end
+arch woodfloor2
+x 34
 y 7
 end
 arch depositbox
-x 33
+x 34
 y 7
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 7
+end
+arch woodfloor2
+x 34
 y 8
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 8
+end
+arch woodfloor2
+x 34
 y 9
 end
 arch brazier
-x 33
+x 34
 y 9
 end
-arch woodfloor
-x 33
+arch dungeon_magic
+x 34
+y 9
+end
+arch woodfloor2
+x 34
 y 10
 end
 arch flagstone_2_1_2
-x 33
+x 34
 y 10
 end
 arch dungeon_magic
-x 33
+x 34
 y 10
 end
-arch woodfloor
+arch blocked
 x 34
+y 11
+end
+arch blocked
+x 34
+y 12
+end
+arch teleporter
+hp 33
+sp 8
+connected 101
+speed 0.0
+x 34
+y 12
+end
+arch random_gem
+x 34
+y 12
+end
+arch blocked
+x 34
+y 13
+end
+arch woodfloor2
+x 35
 end
 arch flagstone_2_2_3
-x 34
+x 35
 end
 arch dungeon_magic
-x 34
+x 35
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 1
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 1
 end
 arch dungeon_magic
-x 34
+x 35
 y 1
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 2
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 2
 end
 arch dungeon_magic
-x 34
+x 35
 y 2
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 3
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 3
 end
 arch dungeon_magic
-x 34
+x 35
 y 3
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 4
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 4
 end
 arch dungeon_magic
-x 34
+x 35
 y 4
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 5
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 5
 end
 arch dungeon_magic
-x 34
+x 35
 y 5
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 6
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 6
 end
 arch dungeon_magic
-x 34
+x 35
 y 6
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 7
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 7
 end
 arch dungeon_magic
-x 34
+x 35
 y 7
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 8
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 8
 end
 arch dungeon_magic
-x 34
+x 35
 y 8
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 9
 end
 arch flagstone_2_1_1
-x 34
+x 35
 y 9
 end
 arch dungeon_magic
-x 34
+x 35
 y 9
 end
-arch woodfloor
-x 34
+arch woodfloor2
+x 35
 y 10
 end
 arch flagstone_2_2_4
-x 34
+x 35
 y 10
 end
 arch dungeon_magic
-x 34
+x 35
 y 10
+end
+arch blocked
+x 35
+y 11
+end
+arch blocked
+x 35
+y 12
+end
+arch blocked
+x 35
+y 13
 end
