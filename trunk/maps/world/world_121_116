@@ -12503,9 +12503,11 @@ sp 22
 x 41
 y 47
 end
-arch rl_house2
-name apartments
-name_pl apartments
+arch guild
+name Casino Infernal
+slaying /navar_city/casino_infernal/casino_infernal1
+hp 15
+sp 28
 x 43
 y 39
 end
