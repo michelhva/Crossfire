@@ -1,6 +1,6 @@
 Object fireborn_player
 name fireborn
-race unnatural
+race fire_elemental
 randomitems fireborn_player_items
 face fireborn.111
 color_fg red
