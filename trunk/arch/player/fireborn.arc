@@ -11,8 +11,6 @@ fireborn.333
 fireborn.444
 mina
 is_animated 1
-flying 1
-fly_on 1
 type 1
 level 1
 ac 0
@@ -30,7 +28,7 @@ Dex 4
 Con -4
 Cha -4
 Int 3
-Pow 5
+Pow 6
 immune 1028
 vulnerable 656
 editable 0
