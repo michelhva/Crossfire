@@ -23,7 +23,7 @@ dam 13
 speed 0.3
 exp 100
 flying 1
-weight 2000
+weight 5000
 attack_movement 3
 editable 1
 color_fg black

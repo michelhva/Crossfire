@@ -5,13 +5,13 @@ randomitems bear
 monster 1
 sleep 1
 Wis 10
-face bear.131
+face bear.x31
 color_fg brown
 anim
-bear.131
-bear.132
-bear.171
-bear.172
+bear.x31
+bear.x32
+bear.x71
+bear.x72
 facings 2
 mina
 exp 700
@@ -36,18 +36,17 @@ end
 More
 Object bear_2
 name bear
-face bear.231
+face bear.x31
 color_fg brown
 anim
-bear.231
-bear.232
-bear.271
-bear.272
+bear.x31
+bear.x32
+bear.x71
+bear.x72
 facings 2
 mina
 monster 1
 alive 1
 no_pick 1
 y 1
-weight 300000
 end

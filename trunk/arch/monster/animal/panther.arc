@@ -20,7 +20,7 @@ ac 4
 dam 10
 wc 1
 level 4
-weight 80000
+weight 60000
 run_away 15
 attack_movement 3
 editable 1

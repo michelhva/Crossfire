@@ -7,7 +7,6 @@ speed -0.1
 generator 1
 sp 134
 maxsp 60
-weight -1
 no_pick 1
 anim
 snake.111

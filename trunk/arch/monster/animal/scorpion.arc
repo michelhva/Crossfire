@@ -20,15 +20,12 @@ level 5
 dam 10
 attacktype 1025
 resist_fire 100
-
 resist_electricity 50
-
 resist_cold -100
 resist_confusion -100
-
 speed 0.1
 exp 70
-weight 5000
+weight 500
 editable 1
 color_fg black
 end

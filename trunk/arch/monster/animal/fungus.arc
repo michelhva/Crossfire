@@ -7,7 +7,6 @@ speed -0.03
 generator 1
 sp 129
 maxsp 20
-weight -1
 no_pick 1
 anim
 fungus.111
