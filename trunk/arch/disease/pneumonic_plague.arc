@@ -4,6 +4,7 @@ type 158
 attacktype 1048576
 invisible 1
 wc 20
+armour 1
 magic 4
 Str -3
 Con -4

@@ -5,7 +5,7 @@ attacktype 1048576
 invisible 1
 wc 10
 magic -1
-armour 3
+armour 1
 Str -3
 Con -4
 Dex -3
