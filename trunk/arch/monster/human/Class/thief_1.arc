@@ -1,8 +1,14 @@
 Object thief_1
 race human
 randomitems thief_1
-face thief.171
-animation thief
+face thief.151
+anim
+facings 4
+thief.111
+thief.131
+thief.151
+thief.171
+mina
 monster 1
 alive 1
 Str 10
