@@ -2,7 +2,7 @@ Object rune_regenerate_spellpoints
 name Rune of Magic Power
 type 154
 speed 1
-slaying regenerate spellpoints
+other_arch spell_regenerate_spellpoints
 hp 1
 face rune_sp_res.111
 msg
@@ -19,5 +19,4 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
 end

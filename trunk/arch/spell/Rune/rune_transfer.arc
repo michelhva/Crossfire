@@ -18,6 +18,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
 other_arch spell_transference
 end

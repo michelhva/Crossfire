@@ -24,7 +24,6 @@ Cha 20
 end
 Object rune_icestorm
 name Rune of Icestorm
-slaying icestorm
 type 154
 face rune_frost.111
 hp 1
@@ -44,12 +43,10 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
 Cha 20
 end
 Object rune_large_icestorm
 name Rune of Large Icestorm
-slaying large icestorm
 type 154
 face rune_frost.111
 hp 1
@@ -69,6 +66,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
 Cha 20
 end

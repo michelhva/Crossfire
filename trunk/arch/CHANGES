@@ -1,5 +1,10 @@
 Changes for CVS top of tree:
 
+Correct rune definitions. Some runes did use obsolete fields or had
+inconsistent definitions.
+Andreas Kirschbaum 2004-09-14
+
+
 Many many changes since last entry due to new server code and 
 maintenance efforts.  Highlights - large image support allows 
 for images larger than 32x32 - many images consolidated for easier 
