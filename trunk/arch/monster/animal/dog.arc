@@ -1,14 +1,16 @@
 Object dog
-face dog.111
+face dog.131
 race animal
 anim
-dog.111
-dog.112
-dog.113
-dog.113
-dog.113
-dog.112
-dog.112
+facings 2
+dog.131
+dog.132
+dog.133
+dog.132
+dog.171
+dog.172
+dog.173
+dog.172
 mina
 monster 1
 sleep 1
@@ -17,7 +19,7 @@ alive 1
 hp 10
 maxhp 10
 Con 2
-speed 0.2
+speed -0.2
 exp 30
 ac 4
 dam 5
