@@ -27,7 +27,7 @@ bipedal creatures with two arms and two legs
 and a head. Their inability to use armour comes
 back to haunt them when they compare themselves
 with other races:  highly enchanted armour is
-usually more benefical than dragonhide! The
+usually more beneficial than dragonhide! The
 wings come in handy:  they can use them to
 'levitate', and their hide gets thicker as they
 gain power, compensating them somewhat for not
