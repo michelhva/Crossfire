@@ -1,5 +1,5 @@
 # elemental -- storm god Sorig
-Object Sorig 
+Object Sorig
 other_arch para_lightning
 type 50
 face para_light.111
