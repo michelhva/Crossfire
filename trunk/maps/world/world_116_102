@@ -12767,7 +12767,10 @@ x 19
 y 43
 end
 arch guild
-name Real Estate Agent
+name Poisoned Dagger's storage room
+slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
+hp 1
+sp 10
 x 21
 y 25
 end
@@ -12827,7 +12830,11 @@ sp 14
 x 28
 y 25
 end
-arch hovels2
+arch guild
+name Smoking Cauldron's storage room
+slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
+hp 1
+sp 10
 x 28
 y 27
 end
