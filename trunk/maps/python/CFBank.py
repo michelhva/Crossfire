@@ -53,3 +53,12 @@ class CFBank:
             		return self.bankdb[user]
         	else:
             		return 0
+	
+	def remove_account(self,user):
+		if self.bankdb.has_key(user):
+			del self.bankdb[user]
+			print "%s's bank account removed." %user
+			return 1
+		else:
+			return 0
+
