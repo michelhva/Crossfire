@@ -23,8 +23,8 @@ Int 15
 sp 40
 maxsp 40
 hp 265
+maxhp 265
 Con 5
-maxhp 165
 level 15
 resist_magic 50
 resist_fire 100

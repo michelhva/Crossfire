@@ -16,7 +16,7 @@ Con 5
 Pow 5
 maxsp 20
 hp 1200
-maxhp 1000
+maxhp 1200
 resist_physical 40
 resist_cold 100
 resist_fear 100

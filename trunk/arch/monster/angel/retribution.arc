@@ -6,6 +6,7 @@ randomitems angel
 monster 1
 level 27
 hp 4000
+maxhp 4000
 ac -5
 wc -30
 dam 50

@@ -5,6 +5,7 @@ face angelknight.111
 monster 1
 level 8
 hp 100
+maxhp 100
 ac 0
 wc 6
 dam 20

@@ -12,6 +12,7 @@ ac 6
 wc 16
 dam 5
 hp 15
+maxhp 15
 Wis 8
 level 3
 resist_magic 50
