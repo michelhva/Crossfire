@@ -115,6 +115,15 @@ $NEW_MAP_NAME[7]="/world/world_121_117";
 $NEW_MAP_OFFX[7]=35;
 $NEW_MAP_OFFY[7]=-13;
 
+$OLD_MAP_NAME[8]='(.+/kundi_area|kundi_area)';
+$OLD_MAP_STARTX[8]=0;
+$OLD_MAP_STARTY[8]=0;
+$OLD_MAP_ENDX[8]=100;
+$OLD_MAP_ENDY[8]=100;
+$NEW_MAP_NAME[8]="/world/world_109_126";
+$NEW_MAP_OFFX[8]=13;
+$NEW_MAP_OFFY[8]=17;
+
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
@@ -245,6 +254,7 @@ sub maplist {
 	next if ($file eq "." || $file eq ".." || $file eq "CVS");
 
 	$file = "$dir/$file";
+	next if (-l $file);	# don't process symbolic links 
 	push (@dirs, $file) if (-d $file);
 	push (@maps, $file) if (-f $file);
     }
