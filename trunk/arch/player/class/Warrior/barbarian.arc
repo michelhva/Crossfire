@@ -6,11 +6,11 @@ anim
 barbarian.111
 barbarian.112
 barbarian.131
-barbarian.131
+barbarian.132
 barbarian.151
 barbarian.152
 barbarian.171
-barbarian.171
+barbarian.172
 facings 4
 mina
 is_animated 1
