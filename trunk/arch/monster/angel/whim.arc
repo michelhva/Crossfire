@@ -12,6 +12,7 @@ ac 10
 wc 20
 dam 2
 hp 3
+maxhp 3
 Wis 8
 level 1
 resist_magic 100

@@ -13,6 +13,7 @@ ac 0
 wc 12
 dam 30
 hp 30
+maxhp 30
 Wis 10
 level 5
 resist_magic 50

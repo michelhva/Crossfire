@@ -22,6 +22,7 @@ dam 12
 Pow 16
 maxsp 40
 hp 150
+maxhp 150
 Int 20
 Con 3
 level 12

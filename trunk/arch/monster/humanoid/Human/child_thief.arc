@@ -9,7 +9,7 @@ ac 7
 wc 18
 dam 2
 hp 15
-maxhp 10
+maxhp 15
 Str 8
 Int 12
 Dex 16
