@@ -4579,7 +4579,21 @@ elevation 1669
 x 18
 y 23
 end
-arch woods_2
+arch grass
+elevation 10076
+x 18
+y 24
+end
+arch market1
+name Private Shops - West
+msg
+As you enter the street you can sense the enormous 
+treasure hordes contained within the walls of the 
+nearby buildings.
+endmsg
+slaying ../brest/pshops/pshops_main
+hp 1
+sp 4
 x 18
 y 24
 end
@@ -4835,8 +4849,21 @@ elevation 1018
 x 19
 y 23
 end
-arch woods_2
-elevation 409
+arch grass
+elevation 511
+x 19
+y 24
+end
+arch market2
+name Private Shops - West
+msg
+As you enter the street you can sense the enormous 
+treasure hordes contained within the walls of the 
+nearby buildings.
+endmsg
+slaying ../brest/pshops/pshops_main
+hp 1
+sp 4
 x 19
 y 24
 end
@@ -5097,13 +5124,26 @@ elevation 2994
 x 20
 y 23
 end
-arch woods_2
-elevation 818
+arch grass
+elevation 511
+x 20
+y 24
+end
+arch market2
+name Private Shops - East
+msg
+As you enter the street you can sense the enormous 
+treasure hordes contained within the walls of the 
+nearby buildings.
+endmsg
+slaying ../brest/pshops/pshops_main
+hp 41
+sp 4
 x 20
 y 24
 end
 arch woods_2
-elevation 1171
+elevation 1125
 x 20
 y 25
 end
@@ -5352,13 +5392,25 @@ elevation 2960
 x 21
 y 23
 end
-arch woods_2
-elevation 2380
+arch grass
+elevation 10851
+x 21
+y 24
+end
+arch market3
+name Private Shops - East
+msg
+As you enter the street you can sense the enormous 
+treasure hordes contained within the walls of the 
+nearby buildings.
+endmsg
+slaying ../brest/pshops/pshops_main
+hp 41
+sp 4
 x 21
 y 24
 end
 arch woods_2
-elevation 534
 x 21
 y 25
 end
