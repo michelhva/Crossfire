@@ -1,5 +1,5 @@
 Object mesangel
-name messanger
+name messenger
 randomitems rich
 race angel
 face liteangel.112
