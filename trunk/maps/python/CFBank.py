@@ -20,16 +20,16 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-
+import os.path
 import shelve
 
-import CFgetPaths
+import CFPython
 
 class CFBank:
 	bankdb = {}
 
 	def __init__(self, bankfile):
-		self.bankdb_file = '%s%s' % (CFgetPaths.getPaths('localdir'),bankfile)
+		self.bankdb_file = os.path.join(CFPython.GetLocalDirectory(),bankfile)
 		self.bankdb = shelve.open(self.bankdb_file)
 
 	def deposit(self, user, amount):
