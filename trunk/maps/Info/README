@@ -89,6 +89,7 @@ redhat 7.2 should generate the same results, but a redhat compared to
 solaris system, or linux intel vs linux power pc may very well generate
 different results.
 
+
 The generated map was run with the follow parameters on my system:
 -x 1500 -y 1500 -s 1007623715 -p 300 -n 170 -w 40000 -l 200000
 ------------------------------------------------------------------------------
@@ -112,8 +113,15 @@ dragonisland - move
 dtabb - moved (as darcap)
 eeur - moved (individual maps)
 ender - moved
+esben - moved (not, sokoban not moved - doesn't fit in, easy/safe place to
+   get treasure)
 espen - moved (individual maps)
+generic - moved
+good - moved
+guilds - moved
 kar: moved
+navar_city: moved
+pup_land: moved
 santo_dominion: moved
 styles: moved
 wolfsburg - moved
@@ -140,6 +148,7 @@ _city_* -> _scorn_...
 Guild maps:
 
 guilds@black_shield	-> brest@black_shield
+guilds@damned_heretics  -> wolfsburg@guilds@damned_heretics
 guilds@dreaming_sage	-> navar_city@guilds@dreaming_sage
 guilds@drunken_barbarian-> santo_dominion@guilds@drunken_barbarian
 guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
@@ -148,4 +157,3 @@ guilds@mailed_fist	-> scorn@guilds@mailed_fist
 guilds@poisoned_dagger  -> darcap@darcap@guilds@poisoned_dagger
 guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
 guilds@smoking_cauldron -> darcap@darcap@guilds@smoking_cauldron
-guilds@damned_heretics  -> wolfsburg@guilds@damned_heretics
