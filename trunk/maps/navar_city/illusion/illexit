@@ -1,13 +1,13 @@
 arch map
 name illexit
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Wed Nov 10 09:33:33 1993
 endmsg
-sp 0
-x 22
-y 22
+width 22
+height 22
+outdoor 1
 end
 arch woodfloor
 end
@@ -275,6 +275,10 @@ arch woodfloor
 x 2
 y 4
 end
+arch light4
+x 2
+y 4
+end
 arch woodfloor
 x 2
 y 5
@@ -296,6 +300,10 @@ x 2
 y 8
 end
 arch woodfloor
+x 2
+y 9
+end
+arch light4
 x 2
 y 9
 end
@@ -515,6 +523,9 @@ end
 arch wwall_2_1_2
 x 4
 end
+arch light3
+x 4
+end
 arch woodfloor
 x 4
 y 1
@@ -604,6 +615,10 @@ x 4
 y 19
 end
 arch woodfloor
+x 4
+y 20
+end
+arch light3
 x 4
 y 20
 end
@@ -926,6 +941,10 @@ arch grass
 x 7
 y 16
 end
+arch lamppost
+x 7
+y 16
+end
 arch woodfloor
 x 7
 y 17
@@ -998,6 +1017,10 @@ x 8
 y 8
 end
 arch grass
+x 8
+y 9
+end
+arch lamppost
 x 8
 y 9
 end
@@ -1084,6 +1107,10 @@ x 9
 y 2
 end
 arch woodfloor
+x 9
+y 3
+end
+arch light4
 x 9
 y 3
 end
@@ -1810,6 +1837,10 @@ arch woodfloor
 x 15
 y 6
 end
+arch light4
+x 15
+y 6
+end
 arch woodfloor
 x 15
 y 7
@@ -1957,6 +1988,10 @@ x 16
 y 15
 end
 arch woodfloor
+x 16
+y 16
+end
+arch light4
 x 16
 y 16
 end
@@ -2610,11 +2645,6 @@ arch city_tower
 x 4
 y 4
 end
-More
-arch city_tower_2
-x 4
-y 5
-end
 arch city_tower
 name Tower of Illusions
 slaying /world/world_121_116
@@ -2623,67 +2653,28 @@ sp 49
 x 4
 y 9
 end
-More
-arch city_tower_2
-name Tower of Illusions
-slaying /world/world_121_116
-hp 36
-sp 49
-x 4
-y 10
-end
 arch barrack_long
 x 4
-y 12
-end
-More
-arch barrack_long_2
-x 5
 y 12
 end
 arch barrack_long
 x 4
 y 14
 end
-More
-arch barrack_long_2
-x 5
-y 14
-end
 arch barrack_long
 x 4
 y 15
 end
-More
-arch barrack_long_2
-x 5
-y 15
-end
 arch barrack_long
 x 4
-y 16
-end
-More
-arch barrack_long_2
-x 5
 y 16
 end
 arch house_up
 x 7
 y 11
 end
-More
-arch house_up_2
-x 7
-y 12
-end
 arch house_long
 x 7
-y 13
-end
-More
-arch house_long_2
-x 8
 y 13
 end
 arch house_long
@@ -2692,51 +2683,17 @@ sp 19
 x 8
 y 6
 end
-More
-arch house_long_2
-hp 7
-sp 19
-x 9
-y 6
-end
 arch house_long
 hp 28
 sp 22
 x 9
-y 8
-end
-More
-arch house_long_2
-hp 28
-sp 22
-x 10
 y 8
 end
 arch temple1
 x 10
 y 15
 end
-More
-arch temple1_2
-x 11
-y 15
-end
-More
-arch temple1_3
-x 10
-y 16
-end
-More
-arch temple1_4
-x 11
-y 16
-end
 arch house_up
 x 14
 y 15
-end
-More
-arch house_up_2
-x 14
-y 16
 end
