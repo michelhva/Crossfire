@@ -2106,8 +2106,8 @@ Items you sell here will stay roughly
 item. If the shop gets too crowded
 with items a Proprietor will clear
 out the excess.
-You can sell items in the pawn booths 
-or you can go and browse our inventory 
+You can sell items in the pawn booths
+or you can go and browse our inventory
 of items for a small fee.
 endmsg
 x 9
@@ -3585,10 +3585,9 @@ y 8
 end
 arch invis_exit
 name emergency exit for players
-invisible 0
-slaying scorn.sale
-hp 35
-sp 13
+slaying scorn.sale2
+hp 8
+sp 15
 x 15
 y 8
 end
