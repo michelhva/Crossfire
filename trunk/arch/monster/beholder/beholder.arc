@@ -6,6 +6,8 @@ color_fg green
 anim
 beholder.111
 beholder.112
+beholder.113
+beholder.114
 mina
 monster 1
 sleep 1
