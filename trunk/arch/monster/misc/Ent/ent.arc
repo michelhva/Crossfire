@@ -15,7 +15,7 @@ ent.112
 mina
 msg
 @match *
-Don't trod on my roots!
+Hey! Careful of my roots stranger.
 endmsg
 unaggressive 1
 resist_fire -50
