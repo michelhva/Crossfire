@@ -46,12 +46,12 @@ attacktype 1
 color_fg light_blue
 can_use_armour 0
 can_use_weapon 0
-Str 6
-Dex 3
+Str 5
+Dex 0
 Con 6
 Wis -8
-Int -8
-Pow 6
+Int -3
+Pow 5
 editable 0
 end
 Object dragon_skin_force
