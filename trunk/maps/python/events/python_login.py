@@ -21,9 +21,6 @@
 #Updated to use new path functions in CFPython -Todd Mitchell
 
 import CFPython
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFMail
 import CFLog
 
@@ -33,6 +30,8 @@ ip = CFPython.WhatIsMessage()
 
 mail = CFMail.CFMail()
 log = CFLog.CFLog()
+
+
 total = mail.countmail(name)
 if log.info(name):
     log.login_update(name, ip)
@@ -43,3 +42,4 @@ if total > 0:
 	CFPython.Write('You have some mail waiting for you', activator)
 else:
 	CFPython.Write('No mail...', activator)
+
