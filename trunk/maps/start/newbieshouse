@@ -1,7 +1,8 @@
 arch map
 name starting_house
 msg
-Creator: CF Java Map Editor
+Creator: Tchize
+CF Java Map Editor
 Date:    7/31/2003
 endmsg
 width 19
@@ -1803,7 +1804,7 @@ x 6
 y 15
 end
 arch check_inv
-slaying 
+slaying
 hp 1
 no_pass 1
 x 6
@@ -1818,7 +1819,7 @@ x 6
 y 16
 end
 arch check_inv
-slaying 
+slaying
 hp 1
 no_pass 1
 x 6
@@ -3449,7 +3450,7 @@ arch woodfloor2
 x 11
 y 26
 end
-arch gate_closed_2
+arch gateTrg2
 connected 32
 x 11
 y 26
@@ -4355,7 +4356,7 @@ x 14
 y 26
 end
 arch check_inv
-slaying 
+slaying
 hp 1
 no_pass 1
 x 14
@@ -4621,6 +4622,11 @@ x 15
 y 22
 end
 arch woodfloor2
+x 15
+y 22
+end
+arch trap_spikes2
+dam 1
 x 15
 y 22
 end
