@@ -42,7 +42,7 @@ for ($i=0; $i<=$#ARGV; $i++) {
 	    $wand="body_range 1\n";
 	}
 	elsif (/^can_use_armour\s+1/) {
-	    $body_info .= "body_torso 1\nbody_head 1\nbody_shoulder 1\nbody_foot 1\nbody_wrist 1\nbody_hand 2\nbody_waist 1\n";
+	    $body_info .= "body_torso 1\nbody_head 1\nbody_shoulder 1\nbody_foot 2\nbody_wrist 2\nbody_hand 2\nbody_waist 1\n";
 	}
 	elsif (/^can_use_ring\s+1/) {
 	    $body_info .="body_finger 2\n";

@@ -1,8 +1,16 @@
 Changes for CVS top of tree:
 
+Fix monster arcs that had incorrect wrists/foot (1 instead of 2)
+Fix update_monster script that generated the errors in the first place.
+Add body information to the player/old/*.arc for very old player files.
+Move crown from misc directory to armour/helmet, add appropriate body_info.
+Add needed body info for elven boots.
+MSW 2002-07-15
+
+
 Update arcs to use body_info for equipping items.
 Update armor to use gen_sp_armour instead of last_heal.
-can_use_shield added to many arcs.
+can_use_shield added to necessary arcs.
 Add dev/scripts directory, which contains some handy scripts I wrote
 for updating on the items.
 Add item_power to the armours - needs to be done for rest of equippable
