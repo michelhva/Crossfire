@@ -4729,11 +4729,6 @@ arch dwall_2_1_1
 x 18
 y 44
 end
-arch woods_2
-elevation 1655
-x 18
-y 45
-end
 arch grass
 x 18
 y 45
@@ -4981,36 +4976,16 @@ x 19
 y 41
 end
 arch brush
-elevation 900
 x 19
 y 42
-end
-arch brush
-x 19
-y 42
-end
-arch brush
-elevation 187
-x 19
-y 43
 end
 arch grass_only
 x 19
 y 43
 end
-arch brush
-elevation 647
-x 19
-y 44
-end
 arch grass_only
 x 19
 y 44
-end
-arch tree
-elevation 1391
-x 19
-y 45
 end
 arch grass
 x 19
@@ -5259,37 +5234,17 @@ arch grass
 x 20
 y 41
 end
-arch brush
-elevation 667
-x 20
-y 42
-end
 arch grass
 x 20
 y 42
 end
-arch brush
-elevation 64
+arch grass_only
 x 20
 y 43
 end
 arch grass_only
 x 20
-y 43
-end
-arch brush
-elevation 377
-x 20
 y 44
-end
-arch grass_only
-x 20
-y 44
-end
-arch tree
-elevation 1233
-x 20
-y 45
 end
 arch grass
 x 20
@@ -5533,37 +5488,17 @@ arch cobblestones2
 x 21
 y 41
 end
-arch brush
-elevation 328
-x 21
-y 42
-end
 arch cobblestones2
 x 21
 y 42
 end
-arch brush
-elevation 27
+arch cobblestones2
 x 21
 y 43
 end
 arch cobblestones2
 x 21
-y 43
-end
-arch brush
-elevation 732
-x 21
 y 44
-end
-arch cobblestones2
-x 21
-y 44
-end
-arch tree
-elevation 1126
-x 21
-y 45
 end
 arch grass
 x 21
@@ -5811,28 +5746,13 @@ arch cobblestones2
 x 22
 y 41
 end
-arch brush
-elevation 901
-x 22
-y 42
-end
 arch cobblestones2
 x 22
 y 42
 end
-arch brush
-elevation 699
-x 22
-y 43
-end
 arch grass
 x 22
 y 43
-end
-arch brush
-elevation 890
-x 22
-y 44
 end
 arch brush
 x 22
@@ -5845,11 +5765,6 @@ hp 30
 sp 30
 x 22
 y 44
-end
-arch woods_2
-elevation 1077
-x 22
-y 45
 end
 arch grass
 x 22
@@ -6098,37 +6013,17 @@ arch cobblestones2
 x 23
 y 41
 end
-arch brush
-elevation 612
-x 23
-y 42
-end
 arch cobblestones2
 x 23
 y 42
 end
-arch brush
-elevation 943
+arch grass
 x 23
 y 43
 end
 arch grass
 x 23
-y 43
-end
-arch woods_2
-elevation 1059
-x 23
 y 44
-end
-arch grass
-x 23
-y 44
-end
-arch tree
-elevation 1133
-x 23
-y 45
 end
 arch grass
 x 23
@@ -6376,37 +6271,17 @@ arch cobblestones2
 x 24
 y 41
 end
-arch brush
-elevation 967
-x 24
-y 42
-end
 arch cobblestones2
 x 24
 y 42
 end
-arch brush
-elevation 890
+arch cobblestones2
 x 24
 y 43
 end
 arch cobblestones2
 x 24
-y 43
-end
-arch brush
-elevation 995
-x 24
 y 44
-end
-arch cobblestones2
-x 24
-y 44
-end
-arch tree
-elevation 1100
-x 24
-y 45
 end
 arch grass
 x 24
@@ -6635,37 +6510,17 @@ name Julio the Great
 x 25
 y 41
 end
-arch brush
-elevation 846
-x 25
-y 42
-end
 arch cobblestones2
 x 25
 y 42
 end
-arch brush
-elevation 193
+arch cobblestones2
 x 25
 y 43
 end
 arch cobblestones2
 x 25
-y 43
-end
-arch brush
-elevation 814
-x 25
 y 44
-end
-arch cobblestones2
-x 25
-y 44
-end
-arch tree
-elevation 1021
-x 25
-y 45
 end
 arch grass
 x 25
@@ -6914,37 +6769,17 @@ sp 23
 x 26
 y 41
 end
-arch brush
-elevation 528
-x 26
-y 42
-end
 arch cobblestones2
 x 26
 y 42
 end
-arch brush
-elevation 217
+arch cobblestones2
 x 26
 y 43
 end
 arch cobblestones2
 x 26
-y 43
-end
-arch brush
-elevation 666
-x 26
 y 44
-end
-arch cobblestones2
-x 26
-y 44
-end
-arch brush
-elevation 934
-x 26
-y 45
 end
 arch grass
 x 26
@@ -6962,7 +6797,6 @@ end
 arch sign
 msg
 Welcome to Darcap
-
 Navar City: 1065 miles southeast.
 endmsg
 x 26
@@ -7194,37 +7028,17 @@ arch cobblestones2
 x 27
 y 41
 end
-arch brush
-elevation 18
-x 27
-y 42
-end
 arch cobblestones2
 x 27
 y 42
 end
-arch brush
-elevation 12
+arch cobblestones2
 x 27
 y 43
 end
 arch cobblestones2
 x 27
-y 43
-end
-arch brush
-elevation 465
-x 27
 y 44
-end
-arch cobblestones2
-x 27
-y 44
-end
-arch brush
-elevation 735
-x 27
-y 45
 end
 arch cobblestones2
 x 27
@@ -7452,28 +7266,13 @@ arch cobblestones2
 x 28
 y 41
 end
-arch brush
-elevation 20
+arch cobblestones2
 x 28
 y 42
 end
 arch cobblestones2
 x 28
-y 42
-end
-arch brush
-elevation 18
-x 28
 y 43
-end
-arch cobblestones2
-x 28
-y 43
-end
-arch brush
-elevation 134
-x 28
-y 44
 end
 arch grass_only
 x 28
@@ -7482,11 +7281,6 @@ end
 arch house_1
 x 28
 y 44
-end
-arch brush
-elevation 288
-x 28
-y 45
 end
 arch grass
 x 28
@@ -7737,28 +7531,13 @@ arch cobblestones2
 x 29
 y 41
 end
-arch brush
-elevation 27
+arch cobblestones2
 x 29
 y 42
 end
 arch cobblestones2
 x 29
-y 42
-end
-arch shallow_sea
-elevation -3
-x 29
 y 43
-end
-arch cobblestones2
-x 29
-y 43
-end
-arch shallow_sea
-elevation -9
-x 29
-y 44
 end
 arch grass_only
 x 29
@@ -7770,10 +7549,6 @@ y 44
 end
 arch brush
 elevation 15
-x 29
-y 45
-end
-arch grass
 x 29
 y 45
 end
@@ -8022,11 +7797,6 @@ arch pier_2_1_1
 x 30
 y 41
 end
-arch shallow_sea
-elevation 0
-x 30
-y 42
-end
 arch sea1
 x 30
 y 42
@@ -8035,19 +7805,9 @@ arch pier_2_2_1
 x 30
 y 42
 end
-arch shallow_sea
-elevation -10
-x 30
-y 43
-end
 arch cobblestones2
 x 30
 y 43
-end
-arch shallow_sea
-elevation -10
-x 30
-y 44
 end
 arch grass
 x 30
@@ -8056,11 +7816,6 @@ end
 arch house_1
 x 30
 y 44
-end
-arch shallow_sea
-elevation 0
-x 30
-y 45
 end
 arch grass
 x 30
@@ -8296,11 +8051,6 @@ arch sea
 x 31
 y 41
 end
-arch shallow_sea
-elevation -10
-x 31
-y 42
-end
 arch sea1
 x 31
 y 42
@@ -8309,19 +8059,9 @@ arch pier_2_1_2
 x 31
 y 42
 end
-arch shallow_sea
-elevation -10
-x 31
-y 43
-end
 arch cobblestones2
 x 31
 y 43
-end
-arch shallow_sea
-elevation -2
-x 31
-y 44
 end
 arch cobblestones2
 x 31
@@ -8329,10 +8069,6 @@ y 44
 end
 arch brush
 elevation 71
-x 31
-y 45
-end
-arch grass
 x 31
 y 45
 end
@@ -8566,11 +8302,6 @@ arch sea1
 x 32
 y 41
 end
-arch shallow_sea
-elevation -24
-x 32
-y 42
-end
 arch sea1
 x 32
 y 42
@@ -8579,19 +8310,9 @@ arch pier_2_1_2
 x 32
 y 42
 end
-arch shallow_sea
-elevation -10
-x 32
-y 43
-end
 arch cobblestones2
 x 32
 y 43
-end
-arch shallow_sea
-elevation -7
-x 32
-y 44
 end
 arch cobblestones2
 x 32
@@ -8599,10 +8320,6 @@ y 44
 end
 arch brush
 elevation 624
-x 32
-y 45
-end
-arch grass
 x 32
 y 45
 end
@@ -8830,11 +8547,6 @@ arch sea1
 x 33
 y 41
 end
-arch shallow_sea
-elevation -41
-x 33
-y 42
-end
 arch sea1
 x 33
 y 42
@@ -8843,28 +8555,13 @@ arch pier_1_3
 x 33
 y 42
 end
-arch shallow_sea
-elevation -14
+arch cobblestones2
 x 33
 y 43
 end
 arch cobblestones2
 x 33
-y 43
-end
-arch brush
-elevation 33
-x 33
 y 44
-end
-arch cobblestones2
-x 33
-y 44
-end
-arch tree
-elevation 1275
-x 33
-y 45
 end
 arch grass
 x 33
@@ -9157,19 +8854,9 @@ arch sea
 x 34
 y 41
 end
-arch shallow_sea
-elevation -64
-x 34
-y 42
-end
 arch sea
 x 34
 y 42
-end
-arch shallow_sea
-elevation -7
-x 34
-y 43
 end
 arch cobblestones2
 x 34
@@ -9179,11 +8866,6 @@ arch cwall_1_1
 x 34
 y 43
 end
-arch swamp
-elevation 7
-x 34
-y 44
-end
 arch cobblestones2
 x 34
 y 44
@@ -9192,12 +8874,7 @@ arch cwall_2_1_1
 x 34
 y 44
 end
-arch tree
-elevation 1906
-x 34
-y 45
-end
-arch cobblestones2
+arch grass
 x 34
 y 45
 end

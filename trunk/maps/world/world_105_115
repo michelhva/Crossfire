@@ -6176,8 +6176,7 @@ y 27
 end
 arch house_small
 name Pirate's Den
-name_pl Pirate's Den
-slaying ../ender/pirateenter
+slaying /wolfsburg/dungeons/pirateenter
 hp 12
 sp 1
 x 16
@@ -14110,8 +14109,8 @@ end
 arch big_galleon
 name to Wolfsburg
 name_pl to Wolfsburg
-slaying /wolfsburg/piratetown
-hp 31
+slaying /world/world_128_109
+hp 43
 sp 25
 x 16
 y 22
