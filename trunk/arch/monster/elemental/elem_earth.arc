@@ -18,10 +18,9 @@ speed -0.08
 exp 250
 weight 100000
 level 8
-resist_cold 100
-
-attacktype 16
-resist_fire -100
-
+resist_physical 70
+resist_cold 50
+attacktype 1
+resist_fire -60
 editable 1
 end
