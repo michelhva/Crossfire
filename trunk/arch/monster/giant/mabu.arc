@@ -5,11 +5,13 @@ randomitems giant
 monster 1
 sleep 1
 Wis 10
-face mabu.111
+face mabu.x11
 color_fg brown
 anim
-mabu.111
-mabu.112
+mabu.x11
+mabu.x12
+mabu.x13
+mabu.x12
 mina
 resist_electricity 50
 exp 1500
@@ -37,11 +39,13 @@ end
 More
 Object mabu_2
 name mabu suke
-face mabu.211
+face mabu.x11
 color_fg brown
 anim
-mabu.211
-mabu.212
+mabu.x11
+mabu.x12
+mabu.x13
+mabu.x12
 mina
 monster 1
 alive 1
