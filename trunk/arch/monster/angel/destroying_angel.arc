@@ -21,7 +21,7 @@ see_invisible 1
 no_pick 1
 alive 1
 resist_magic 80
-resist_holyword 95
+resist_holyword 80
 weight 75000
 flying 1
 run_away 18
