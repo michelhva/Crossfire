@@ -216,6 +216,7 @@ $NEW_MAP_NAME[14]="/world/world_100_116";
 $NEW_MAP_OFFX[14]=16;
 $NEW_MAP_OFFY[14]=6;
 
+
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
@@ -345,6 +346,10 @@ sub updatemap {
 			s/\nsp \d+\n/\nsp $desty\n/;
 			$made_change=1;
 		    }
+		}
+		elsif (m#\nslaying /city/apartment#) {
+			s#/city/apartment#/scorn/apartment#;
+			$made_change=1;
 		}
 	    }
 	    print OUT $_;
