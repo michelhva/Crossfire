@@ -15,10 +15,10 @@ attacktype 5
 path_attuned 131074
 path_repelled 10500
 path_denied 82945
-immune 4
-protected 7
-vulnerable 16
-armour 20
+resist_fire 100
+resist_cold -100
+resist_magic 30
+resist_physical 40
 ac -5
 wc -3
 dam 60

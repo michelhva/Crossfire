@@ -17,9 +17,9 @@ Wis 30
 Pow 30
 attacktype 1024
 path_attuned 131088
-path_repelled 65792
+path_repelled 65537
 resist_poison 100
-resist_fear -100
+resist_magic -20
 hp 1000
 ac -5
 wc -3

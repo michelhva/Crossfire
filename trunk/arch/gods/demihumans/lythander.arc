@@ -17,8 +17,10 @@ Wis 30
 Pow 30
 attacktype 32
 resist_confusion 100
-path_attuned 65536
-path_repelled 131088
+resist_acid -40
+resist_poison -40
+path_attuned 65552
+path_denied 512
 ac -7
 wc -1
 dam 40
@@ -27,6 +29,7 @@ level 15
 speed 0.25
 luck 2
 stealth 1
+last_sp 1
 can_cast_spell 1
 can_use_weapon 1
 can_use_armour 1

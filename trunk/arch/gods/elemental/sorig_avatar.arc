@@ -12,12 +12,11 @@ Pow 30
 monster 1
 alive 1
 attacktype 8
-immune 8
-protected 8
+resist_electricity 100
+resist_physical 40
 path_attuned 131096
 path_repelled 256
 path_denied 66561
-armour 40
 ac -5
 wc -1
 dam 40

@@ -15,8 +15,8 @@ alive 1
 type 50
 attacktype 5
 path_attuned 131074
-path_repelled 10500
-path_denied 82945
+path_repelled 2308
+path_denied 65536
 resist_fire 100
 resist_physical 30
 resist_magic 30
@@ -32,7 +32,7 @@ can_use_weapon 1
 can_cast_spell 1
 reflect_missile 1
 last_heal 1
-last_eat 1
+last_eat -1
 msg
 Chaos God of slaughter and terror, Consuming worm, Greedy gut
 endmsg

@@ -15,7 +15,7 @@ Wis 30
 Pow 30
 path_attuned 18432
 path_repelled 64
-protected 4
+resist_fire 30
 armour 75
 ac -10
 wc -6

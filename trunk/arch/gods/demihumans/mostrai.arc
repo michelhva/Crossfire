@@ -19,6 +19,8 @@ Pow 30
 path_attuned 18432
 path_repelled 64
 resist_fire 30
+resist_paralyze -20
+resist_slow -20
 ac -10
 wc -6
 dam 50
@@ -37,3 +39,8 @@ weight 100000
 randomitems Mostrai
 editable 0
 end
+
+
+
+
+
