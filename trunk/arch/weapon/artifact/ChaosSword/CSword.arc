@@ -35,14 +35,13 @@ luck -3
 xrays 1
 dam 100
 magic 10
-resist_acid 100
-
+resist_acid 75
 resist_magic 30
 resist_fire 30
 resist_electricity 30
 resist_cold 30
-
-attacktype 262144
+resist_confusion -50
+attacktype 262145
 path_denied 2304
 value 1000000
 magicmap black
