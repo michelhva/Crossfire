@@ -1489,31 +1489,6 @@ arch big_dragon
 x 4
 y 12
 end
-More
-arch big_dragon_2
-x 5
-y 12
-end
-More
-arch big_dragon_3
-x 6
-y 12
-end
-More
-arch big_dragon_4
-x 4
-y 13
-end
-More
-arch big_dragon_5
-x 5
-y 13
-end
-More
-arch big_dragon_6
-x 6
-y 13
-end
 arch big_dragon
 hp 4500
 x 12
@@ -1523,34 +1498,4 @@ arch key2
 name mansion key
 slaying set_individual_value man_drag
 end
-end
-More
-arch big_dragon_2
-hp 4500
-x 13
-y 4
-end
-More
-arch big_dragon_3
-hp 4500
-x 14
-y 4
-end
-More
-arch big_dragon_4
-hp 4500
-x 12
-y 5
-end
-More
-arch big_dragon_5
-hp 4500
-x 13
-y 5
-end
-More
-arch big_dragon_6
-hp 4500
-x 14
-y 5
 end
