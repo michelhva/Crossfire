@@ -52,7 +52,7 @@ v_pool.112
 mina
 speed 0.2
 no_pick 1
-attacktype 4
+attacktype 64
 hp 60
 dam 15
 editable 8
