@@ -1,5 +1,6 @@
 Object mournblade
 name Mournblade
+nrof 1
 last_sp 8
 Str 1
 sp 1
@@ -12,7 +13,7 @@ value 170000
 magic 4
 protected 2
 immune 128
-attacktype 130
+attacktype 384
 editable 5120
 magicmap grey
 end
