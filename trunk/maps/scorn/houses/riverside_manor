@@ -423,6 +423,10 @@ arch woodfloor
 x 2
 y 8
 end
+arch brazier
+x 2
+y 8
+end
 arch woodfloor
 x 2
 y 9
@@ -602,6 +606,10 @@ x 3
 y 8
 end
 arch woodfloor
+x 3
+y 9
+end
+arch chair_1.2
 x 3
 y 9
 end
@@ -908,7 +916,7 @@ arch dirtfloor
 x 5
 y 12
 end
-arch sign
+arch sign_w
 msg
 #3 Riverside Manor
 endmsg
@@ -952,6 +960,10 @@ x 5
 y 19
 end
 arch woodfloor
+x 5
+y 20
+end
+arch light3
 x 5
 y 20
 end
@@ -2265,7 +2277,7 @@ arch sign
 msg
 **Riverside Manor**
 Lucksury Condominimums at
-Afordable Rates.
+Afredable Rates.
 endmsg
 x 14
 y 2
@@ -2298,7 +2310,6 @@ end
 arch sign_e
 msg
 #2 Riverside Manor
-
 For Rent - see Amy
 endmsg
 x 14
@@ -2327,7 +2338,7 @@ end
 arch sign_w
 msg
 #4 Riverside Manor
-
+----------------
 Amy Barrnes
 Caretaker
 Please knock
@@ -3086,6 +3097,7 @@ x 19
 y 3
 end
 arch brazier
+glow_radius 1
 x 19
 y 3
 end
@@ -3628,6 +3640,7 @@ x 22
 y 9
 end
 arch brazier
+glow_radius 1
 x 22
 y 9
 end

@@ -686,6 +686,10 @@ arch woodfloor
 x 3
 y 15
 end
+arch light2
+x 3
+y 15
+end
 arch woodfloor
 x 3
 y 16
@@ -1562,6 +1566,10 @@ arch woodfloor
 x 8
 y 21
 end
+arch light3
+x 8
+y 21
+end
 arch woodfloor
 x 8
 y 22
@@ -1907,6 +1915,10 @@ arch woodfloor
 x 10
 y 16
 end
+arch light2
+x 10
+y 16
+end
 arch woodfloor
 x 10
 y 17
@@ -1936,6 +1948,10 @@ x 10
 y 22
 end
 arch table_3
+x 10
+y 22
+end
+arch random_food
 x 10
 y 22
 end
@@ -2348,14 +2364,6 @@ arch woodfloor
 x 13
 y 20
 end
-arch random_food
-x 13
-y 20
-end
-arch barrel
-x 13
-y 20
-end
 arch woodfloor
 x 13
 y 21
@@ -2531,6 +2539,10 @@ x 14
 y 18
 end
 arch woodfloor
+x 14
+y 19
+end
+arch random_wealth
 x 14
 y 19
 end
@@ -2821,6 +2833,12 @@ arch woodfloor
 x 16
 y 21
 end
+arch rune_create_bomb
+level 2
+dam 50
+x 16
+y 21
+end
 arch woodfloor
 x 16
 y 22
@@ -2940,10 +2958,6 @@ x 17
 y 16
 end
 arch door_look_2
-x 17
-y 16
-end
-arch light3
 x 17
 y 16
 end
@@ -3138,10 +3152,6 @@ x 18
 y 21
 end
 arch door_look_2
-x 18
-y 21
-end
-arch light3
 x 18
 y 21
 end
@@ -3414,10 +3424,6 @@ x 20
 y 18
 end
 arch door_2
-x 20
-y 18
-end
-arch light3
 x 20
 y 18
 end
@@ -3746,10 +3752,6 @@ x 22
 y 20
 end
 arch door_1
-msg
-Number four, Breezy Acres.
-endmsg
-no_pass 0
 x 22
 y 20
 end
