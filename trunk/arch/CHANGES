@@ -1,8 +1,12 @@
 Changes for CVS top of tree:
 
+skills/scroll_set_traps
+Name of the skill is 'skill_set_trap', not 'skill_set_traps'.
+- Jan Echternach 22/5/2000
+
 Added level 1 to all archetypes with type 62 (FIREWALL) which didn't have
 a level yet, because these archetypes are spellcasters and therefore need
-a level.  -- Jan Echternach 5/16/2000
+a level.  - Jan Echternach 5/16/2000
 
 
 dev/unused/0.91.1/grave.arc, arch grave_close
