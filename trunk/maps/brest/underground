@@ -1,13 +1,16 @@
 arch map
-region brest
 name underground
+reset_timeout 7200
+difficulty 12
+width 48
+height 66
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:19:04 1994
 endmsg
-x 48
-y 66
 end
 arch pstone_2
 end
@@ -219,7 +222,9 @@ x 1
 y 1
 end
 arch oakdoor
+name ladder going up
 slaying /world/world_107_123
+face ladder2_up.111
 hp 33
 sp 31
 x 1
@@ -241,7 +246,7 @@ arch spikes_open
 x 1
 y 3
 speed 0.500000
-protected 1
+resist_physical 30
 value 1
 connected 1
 end
@@ -750,7 +755,8 @@ end
 arch button_plate
 x 2
 y 3
-protected 96
+resist_confusion 30
+resist_acid 30
 connected 96
 end
 arch woodfloor
@@ -761,7 +767,8 @@ arch gate_open_1
 x 2
 y 4
 speed 0.500000
-protected 96
+resist_confusion 30
+resist_acid 30
 value 1
 connected 96
 end
@@ -776,7 +783,7 @@ end
 arch button_lever
 x 2
 y 6
-protected 1
+resist_physical 30
 connected 1
 end
 arch woodfloor
@@ -786,7 +793,7 @@ end
 arch igate_closed_1
 x 2
 y 7
-protected 1
+resist_physical 30
 connected 1
 end
 arch woodfloor
@@ -875,7 +882,7 @@ arch altar
 food 5
 x 2
 y 17
-protected 2
+resist_magic 30
 connected 2
 end
 arch pstone_2
@@ -914,7 +921,7 @@ end
 arch gate_closed_1
 x 2
 y 21
-protected 2
+resist_magic 30
 connected 2
 end
 arch ogre
@@ -1006,7 +1013,7 @@ end
 arch gate_closed_1
 x 2
 y 31
-protected 2
+resist_magic 30
 connected 2
 end
 arch ogre
@@ -1038,6 +1045,10 @@ x 2
 y 34
 end
 arch pstone_2
+x 2
+y 35
+end
+arch chinese_dragon
 x 2
 y 35
 end
@@ -1100,7 +1111,8 @@ end
 arch block_door_closed
 x 2
 y 42
-protected 3
+resist_physical 30
+resist_magic 30
 connected 3
 end
 arch small_stones
@@ -1110,7 +1122,8 @@ end
 arch block_door_closed
 x 2
 y 43
-protected 3
+resist_physical 30
+resist_magic 30
 connected 3
 end
 arch small_stones
@@ -1118,6 +1131,10 @@ x 2
 y 44
 end
 arch dungeon_magic
+x 2
+y 44
+end
+arch big_wiz
 x 2
 y 44
 end
@@ -1150,6 +1167,10 @@ x 2
 y 48
 end
 arch dungeon_magic
+x 2
+y 48
+end
+arch big_wiz
 x 2
 y 48
 end
@@ -1213,11 +1234,19 @@ arch small_stones
 x 2
 y 56
 end
+arch big_dragon
+x 2
+y 56
+end
 arch small_stones
 x 2
 y 57
 end
 arch small_stones
+x 2
+y 58
+end
+arch big_dragon
 x 2
 y 58
 end
@@ -1229,11 +1258,19 @@ arch small_stones
 x 2
 y 60
 end
+arch big_dragon
+x 2
+y 60
+end
 arch small_stones
 x 2
 y 61
 end
 arch small_stones
+x 2
+y 62
+end
+arch big_dragon
 x 2
 y 62
 end
@@ -1449,6 +1486,7 @@ y 24
 end
 arch sage
 name invocator
+name_pl invocator
 x 3
 y 24
 speed_left -0.340000
@@ -1983,6 +2021,10 @@ arch pstone_2
 x 4
 y 35
 end
+arch chinese_dragon
+x 4
+y 35
+end
 arch pstone_2
 x 4
 y 36
@@ -2208,7 +2250,10 @@ end
 arch grate_closed_2
 x 5
 y 1
-protected 15
+resist_physical 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
 connected 15
 end
 arch woodfloor
@@ -2405,6 +2450,7 @@ y 30
 end
 arch sage
 name invocator
+name_pl invocator
 x 5
 y 30
 speed_left -0.340000
@@ -2569,6 +2615,10 @@ arch dungeon_magic
 x 5
 y 50
 end
+arch big_wiz
+x 5
+y 50
+end
 arch small_stones
 x 5
 y 51
@@ -2666,7 +2716,10 @@ end
 arch button_lever
 x 6
 y 1
-protected 15
+resist_physical 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
 connected 15
 end
 arch small_stones
@@ -2885,6 +2938,10 @@ arch pstone_2
 x 6
 y 35
 end
+arch chinese_dragon
+x 6
+y 35
+end
 arch pstone_2
 x 6
 y 36
@@ -3053,11 +3110,19 @@ arch small_stones
 x 6
 y 56
 end
+arch big_dragon
+x 6
+y 56
+end
 arch small_stones
 x 6
 y 57
 end
 arch small_stones
+x 6
+y 58
+end
+arch big_dragon
 x 6
 y 58
 end
@@ -3069,11 +3134,19 @@ arch small_stones
 x 6
 y 60
 end
+arch big_dragon
+x 6
+y 60
+end
 arch small_stones
 x 6
 y 61
 end
 arch small_stones
+x 6
+y 62
+end
+arch big_dragon
 x 6
 y 62
 end
@@ -3214,7 +3287,7 @@ end
 arch gate_closed_1
 x 7
 y 19
-protected 2
+resist_magic 30
 connected 2
 end
 arch magic_mouth
@@ -3236,6 +3309,7 @@ y 21
 end
 arch sage
 name invocator
+name_pl invocator
 x 7
 y 21
 speed_left -0.340000
@@ -3402,6 +3476,10 @@ arch dungeon_magic
 x 7
 y 44
 end
+arch big_wiz
+x 7
+y 44
+end
 arch small_stones
 x 7
 y 45
@@ -3659,7 +3737,7 @@ end
 arch gate_closed_1
 x 8
 y 19
-protected 2
+resist_magic 30
 connected 2
 end
 arch pstone_2
@@ -3853,6 +3931,10 @@ x 8
 y 47
 end
 arch dungeon_magic
+x 8
+y 47
+end
+arch big_wiz
 x 8
 y 47
 end
@@ -4574,6 +4656,7 @@ y 30
 end
 arch sage
 name invocator
+name_pl invocator
 x 10
 y 30
 speed_left -0.340000
@@ -4611,6 +4694,10 @@ x 10
 y 34
 end
 arch pstone_2
+x 10
+y 35
+end
+arch chinese_dragon
 x 10
 y 35
 end
@@ -5135,7 +5222,8 @@ end
 arch button_handle
 x 11
 y 43
-protected 3
+resist_physical 30
+resist_magic 30
 connected 3
 end
 arch small_stones
@@ -5482,6 +5570,7 @@ y 24
 end
 arch sage
 name invocator
+name_pl invocator
 x 12
 y 24
 speed_left -0.340000
@@ -5555,6 +5644,10 @@ x 12
 y 34
 end
 arch pstone_2
+x 12
+y 35
+end
+arch chinese_dragon
 x 12
 y 35
 end
@@ -5931,7 +6024,7 @@ end
 arch gate_closed_1
 x 13
 y 21
-protected 2
+resist_magic 30
 connected 2
 end
 arch ogre
@@ -6023,7 +6116,7 @@ end
 arch gate_closed_1
 x 13
 y 31
-protected 2
+resist_magic 30
 connected 2
 end
 arch ogre
@@ -6078,11 +6171,19 @@ arch pstone_2
 x 13
 y 38
 end
+arch chinese_dragon
+x 13
+y 38
+end
 arch pstone_2
 x 13
 y 39
 end
 arch pstone_2
+x 13
+y 40
+end
+arch chinese_dragon
 x 13
 y 40
 end
@@ -6095,6 +6196,10 @@ x 13
 y 42
 end
 arch gem
+x 13
+y 42
+end
+arch chinese_dragon
 x 13
 y 42
 end
@@ -6126,6 +6231,10 @@ arch random_food
 x 13
 y 46
 end
+arch chinese_dragon
+x 13
+y 46
+end
 arch pstone_2
 x 13
 y 47
@@ -6134,11 +6243,19 @@ arch pstone_2
 x 13
 y 48
 end
+arch chinese_dragon
+x 13
+y 48
+end
 arch pstone_2
 x 13
 y 49
 end
 arch pstone_2
+x 13
+y 50
+end
+arch chinese_dragon
 x 13
 y 50
 end
@@ -6158,6 +6275,10 @@ arch random_food
 x 13
 y 52
 end
+arch chinese_dragon
+x 13
+y 52
+end
 arch pstone_2
 x 13
 y 53
@@ -6174,6 +6295,10 @@ arch pstone_2
 x 13
 y 54
 end
+arch chinese_dragon
+x 13
+y 54
+end
 arch pstone_2
 x 13
 y 55
@@ -6186,6 +6311,10 @@ arch ruby
 x 13
 y 56
 end
+arch chinese_dragon
+x 13
+y 56
+end
 arch pstone_2
 x 13
 y 57
@@ -6195,6 +6324,10 @@ x 13
 y 58
 end
 arch random_food
+x 13
+y 58
+end
+arch chinese_dragon
 x 13
 y 58
 end
@@ -6817,11 +6950,19 @@ arch small_stones
 x 15
 y 18
 end
+arch dread
+x 15
+y 18
+end
 arch small_stones
 x 15
 y 19
 end
 arch small_stones
+x 15
+y 20
+end
+arch dread
 x 15
 y 20
 end
@@ -6869,11 +7010,19 @@ arch pstone_2
 x 15
 y 27
 end
+arch dread
+x 15
+y 27
+end
 arch pstone_2
 x 15
 y 28
 end
 arch pstone_2
+x 15
+y 29
+end
+arch dread
 x 15
 y 29
 end
@@ -7191,11 +7340,19 @@ arch small_stones
 x 16
 y 4
 end
+arch giant
+x 16
+y 4
+end
 arch small_stones
 x 16
 y 5
 end
 arch small_stones
+x 16
+y 6
+end
+arch giant
 x 16
 y 6
 end
@@ -7435,11 +7592,19 @@ arch small_stones
 x 16
 y 45
 end
+arch chinese_dragon
+x 16
+y 45
+end
 arch small_stones
 x 16
 y 46
 end
 arch small_stones
+x 16
+y 47
+end
+arch chinese_dragon
 x 16
 y 47
 end
@@ -7452,6 +7617,10 @@ x 16
 y 49
 end
 arch random_food
+x 16
+y 49
+end
+arch chinese_dragon
 x 16
 y 49
 end
@@ -7471,11 +7640,19 @@ arch small_stones
 x 16
 y 51
 end
+arch chinese_dragon
+x 16
+y 51
+end
 arch small_stones
 x 16
 y 52
 end
 arch small_stones
+x 16
+y 53
+end
+arch chinese_dragon
 x 16
 y 53
 end
@@ -7487,11 +7664,19 @@ arch small_stones
 x 16
 y 55
 end
+arch chinese_dragon
+x 16
+y 55
+end
 arch small_stones
 x 16
 y 56
 end
 arch small_stones
+x 16
+y 57
+end
+arch chinese_dragon
 x 16
 y 57
 end
@@ -7578,6 +7763,10 @@ x 17
 y 3
 end
 arch small_stones
+x 17
+y 4
+end
+arch giant
 x 17
 y 4
 end
@@ -7758,6 +7947,10 @@ x 17
 y 28
 end
 arch pstone_2
+x 17
+y 29
+end
+arch behemoth
 x 17
 y 29
 end
@@ -8016,6 +8209,10 @@ x 18
 y 5
 end
 arch small_stones
+x 18
+y 6
+end
+arch giant
 x 18
 y 6
 end
@@ -8227,11 +8424,19 @@ arch pstone_2
 x 18
 y 34
 end
+arch dread
+x 18
+y 34
+end
 arch pstone_2
 x 18
 y 35
 end
 arch pstone_2
+x 18
+y 36
+end
+arch dread
 x 18
 y 36
 end
@@ -8252,6 +8457,10 @@ x 18
 y 38
 end
 arch pstone_2
+x 18
+y 39
+end
+arch behemoth
 x 18
 y 39
 end
@@ -8481,7 +8690,15 @@ arch small_stones
 x 19
 y 3
 end
+arch dragon
+x 19
+y 3
+end
 arch small_stones
+x 19
+y 4
+end
+arch dragon
 x 19
 y 4
 end
@@ -8489,11 +8706,23 @@ arch small_stones
 x 19
 y 5
 end
+arch dragon
+x 19
+y 5
+end
 arch small_stones
 x 19
 y 6
 end
+arch dragon
+x 19
+y 6
+end
 arch small_stones
+x 19
+y 7
+end
+arch dragon
 x 19
 y 7
 end
@@ -8673,6 +8902,10 @@ arch pstone_2
 x 19
 y 29
 end
+arch dread
+x 19
+y 29
+end
 arch pstone_2
 x 19
 y 30
@@ -9260,6 +9493,10 @@ x 20
 y 38
 end
 arch pstone_2
+x 20
+y 39
+end
+arch dread
 x 20
 y 39
 end
@@ -9538,7 +9775,7 @@ slaying goldcoin
 food 20
 x 21
 y 10
-protected 4
+resist_fire 30
 connected 4
 end
 arch pstone_2
@@ -9700,6 +9937,10 @@ x 21
 y 28
 end
 arch pstone_2
+x 21
+y 29
+end
+arch behemoth
 x 21
 y 29
 end
@@ -9917,6 +10158,10 @@ arch small_stones
 x 22
 y 6
 end
+arch chinese_dragon
+x 22
+y 6
+end
 arch small_stones
 x 22
 y 7
@@ -9948,7 +10193,7 @@ end
 arch gate_closed_2
 x 22
 y 10
-protected 4
+resist_fire 30
 connected 4
 end
 arch pstone_2
@@ -9958,7 +10203,7 @@ end
 arch gate_closed_2
 x 22
 y 11
-protected 4
+resist_fire 30
 connected 4
 end
 arch pstone_2
@@ -10223,6 +10468,10 @@ arch small_stones
 x 23
 y 4
 end
+arch chinese_dragon
+x 23
+y 4
+end
 arch small_stones
 x 23
 y 5
@@ -10408,6 +10657,10 @@ x 23
 y 29
 end
 arch random_food
+x 23
+y 29
+end
+arch dread
 x 23
 y 29
 end
@@ -10867,6 +11120,10 @@ arch small_stones
 x 25
 y 7
 end
+arch chinese_dragon
+x 25
+y 7
+end
 arch small_stones
 x 25
 y 8
@@ -10892,7 +11149,8 @@ slaying goldcoin
 food 40
 x 25
 y 10
-protected 5
+resist_physical 30
+resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -11190,11 +11448,19 @@ arch small_stones
 x 26
 y 3
 end
+arch chinese_dragon
+x 26
+y 3
+end
 arch small_stones
 x 26
 y 4
 end
 arch small_stones
+x 26
+y 5
+end
+arch chinese_dragon
 x 26
 y 5
 end
@@ -11229,7 +11495,8 @@ end
 arch gate_closed_2
 x 26
 y 10
-protected 5
+resist_physical 30
+resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -11239,7 +11506,8 @@ end
 arch gate_closed_2
 x 26
 y 11
-protected 5
+resist_physical 30
+resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -11444,7 +11712,15 @@ arch pstone_2
 x 27
 y 10
 end
+arch dragon
+x 27
+y 10
+end
 arch pstone_2
+x 27
+y 11
+end
+arch dragon
 x 27
 y 11
 end
@@ -12102,6 +12378,10 @@ arch small_stones
 x 30
 y 4
 end
+arch chinese_dragon
+x 30
+y 4
+end
 arch small_stones
 x 30
 y 5
@@ -12111,6 +12391,10 @@ x 30
 y 6
 end
 arch small_stones
+x 30
+y 7
+end
+arch chinese_dragon
 x 30
 y 7
 end
@@ -12150,10 +12434,15 @@ end
 arch gate_closed_1
 x 30
 y 12
-protected 6
+resist_magic 30
+resist_fire 30
 connected 6
 end
 arch pstone_2
+x 30
+y 13
+end
+arch giant
 x 30
 y 13
 end
@@ -12177,10 +12466,16 @@ end
 arch gate_closed_1
 x 30
 y 16
-protected 7
+resist_physical 30
+resist_magic 30
+resist_fire 30
 connected 7
 end
 arch pstone_2
+x 30
+y 17
+end
+arch troll
 x 30
 y 17
 end
@@ -12272,6 +12567,9 @@ end
 arch wand
 x 30
 y 29
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch bwall_0
 x 30
@@ -12388,6 +12686,9 @@ end
 arch wand
 x 30
 y 42
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch madman
 x 30
@@ -12480,7 +12781,8 @@ slaying goldcoin
 food 80
 x 31
 y 11
-protected 6
+resist_magic 30
+resist_fire 30
 connected 6
 end
 arch pstone_2
@@ -12490,10 +12792,15 @@ end
 arch gate_closed_1
 x 31
 y 12
-protected 6
+resist_magic 30
+resist_fire 30
 connected 6
 end
 arch pstone_2
+x 31
+y 13
+end
+arch giant
 x 31
 y 13
 end
@@ -12510,7 +12817,9 @@ slaying goldcoin
 food 160
 x 31
 y 15
-protected 7
+resist_physical 30
+resist_magic 30
+resist_fire 30
 connected 7
 end
 arch pstone_2
@@ -12520,7 +12829,9 @@ end
 arch gate_closed_1
 x 31
 y 16
-protected 7
+resist_physical 30
+resist_magic 30
+resist_fire 30
 connected 7
 end
 arch pstone_2
@@ -12544,7 +12855,7 @@ slaying goldcoin
 food 320
 x 31
 y 20
-protected 8
+resist_electricity 30
 connected 8
 end
 arch pstone_2
@@ -12820,7 +13131,7 @@ end
 arch gate_closed_2
 x 32
 y 19
-protected 8
+resist_electricity 30
 connected 8
 end
 arch pstone_2
@@ -12830,7 +13141,7 @@ end
 arch gate_closed_2
 x 32
 y 20
-protected 8
+resist_electricity 30
 connected 8
 end
 arch pstone_2
@@ -13011,6 +13322,10 @@ arch small_stones
 x 33
 y 3
 end
+arch chinese_dragon
+x 33
+y 3
+end
 arch small_stones
 x 33
 y 4
@@ -13020,6 +13335,10 @@ x 33
 y 5
 end
 arch small_stones
+x 33
+y 6
+end
+arch chinese_dragon
 x 33
 y 6
 end
@@ -13116,6 +13435,10 @@ x 33
 y 18
 end
 arch pstone_2
+x 33
+y 19
+end
+arch dread
 x 33
 y 19
 end
@@ -13352,7 +13675,8 @@ end
 arch gate_closed_1
 x 34
 y 12
-protected 10
+resist_magic 30
+resist_electricity 30
 connected 10
 end
 arch pstone_2
@@ -13376,6 +13700,10 @@ arch pstone_2
 x 34
 y 15
 end
+arch chinese_dragon
+x 34
+y 15
+end
 arch pstone_2
 x 34
 y 16
@@ -13387,7 +13715,8 @@ end
 arch gate_closed_1
 x 34
 y 17
-protected 9
+resist_physical 30
+resist_electricity 30
 connected 9
 end
 arch pstone_2
@@ -13683,7 +14012,8 @@ end
 arch gate_closed_1
 x 35
 y 12
-protected 10
+resist_magic 30
+resist_electricity 30
 connected 10
 end
 arch pstone_2
@@ -13695,7 +14025,8 @@ slaying goldcoin
 food 1280
 x 35
 y 13
-protected 10
+resist_magic 30
+resist_electricity 30
 connected 10
 end
 arch pstone_2
@@ -13717,7 +14048,8 @@ end
 arch gate_closed_1
 x 35
 y 17
-protected 9
+resist_physical 30
+resist_electricity 30
 connected 9
 end
 arch pstone_2
@@ -13729,7 +14061,8 @@ slaying goldcoin
 food 640
 x 35
 y 18
-protected 9
+resist_physical 30
+resist_electricity 30
 connected 9
 end
 arch pstone_2
@@ -14016,7 +14349,9 @@ slaying goldcoin
 food 2560
 x 36
 y 10
-protected 11
+resist_physical 30
+resist_magic 30
+resist_electricity 30
 connected 11
 end
 arch pstone_2
@@ -14117,6 +14452,10 @@ x 36
 y 22
 end
 arch pstone_2
+x 36
+y 23
+end
+arch big_wiz
 x 36
 y 23
 end
@@ -14337,7 +14676,9 @@ end
 arch gate_closed_2
 x 37
 y 10
-protected 11
+resist_physical 30
+resist_magic 30
+resist_electricity 30
 connected 11
 end
 arch pstone_2
@@ -14347,7 +14688,9 @@ end
 arch gate_closed_2
 x 37
 y 11
-protected 11
+resist_physical 30
+resist_magic 30
+resist_electricity 30
 connected 11
 end
 arch pstone_2
@@ -14635,7 +14978,8 @@ end
 arch gate_closed_1
 x 38
 y 14
-protected 12
+resist_fire 30
+resist_electricity 30
 connected 12
 end
 arch pstone_2
@@ -14643,6 +14987,10 @@ x 38
 y 15
 end
 arch pstone_2
+x 38
+y 16
+end
+arch big_dragon
 x 38
 y 16
 end
@@ -14665,7 +15013,9 @@ end
 arch gate_closed_1
 x 38
 y 20
-protected 13
+resist_physical 30
+resist_fire 30
+resist_electricity 30
 connected 13
 end
 arch pstone_2
@@ -14858,6 +15208,10 @@ arch pstone_2
 x 39
 y 11
 end
+arch titan
+x 39
+y 11
+end
 arch pstone_2
 x 39
 y 12
@@ -14873,7 +15227,8 @@ end
 arch gate_closed_1
 x 39
 y 14
-protected 12
+resist_fire 30
+resist_electricity 30
 connected 12
 end
 arch pstone_2
@@ -14903,7 +15258,9 @@ end
 arch gate_closed_1
 x 39
 y 20
-protected 13
+resist_physical 30
+resist_fire 30
+resist_electricity 30
 connected 13
 end
 arch pstone_2
@@ -15384,7 +15741,8 @@ slaying goldcoin
 food 5120
 x 41
 y 13
-protected 12
+resist_fire 30
+resist_electricity 30
 connected 12
 end
 arch pstone_2
@@ -15429,7 +15787,9 @@ slaying goldcoin
 food 10240
 x 41
 y 19
-protected 13
+resist_physical 30
+resist_fire 30
+resist_electricity 30
 connected 13
 end
 arch pstone_2
@@ -16050,6 +16410,8 @@ end
 arch firewall_5
 x 43
 y 23
+arch spell_small_fireball
+end
 end
 arch pstone_2
 x 43
@@ -16059,7 +16421,9 @@ arch block_door_closed
 x 43
 y 24
 speed 0.500000
-protected 14
+resist_magic 30
+resist_fire 30
+resist_electricity 30
 connected 14
 end
 arch pstone_2
@@ -16073,7 +16437,9 @@ end
 arch button_small
 x 43
 y 26
-protected 14
+resist_magic 30
+resist_fire 30
+resist_electricity 30
 connected 14
 end
 arch pstone_2
@@ -17143,304 +17509,4 @@ end
 arch blocked
 x 47
 y 41
-end
-arch chinese_dragon
-x 2
-y 35
-end
-arch big_wiz
-x 2
-y 44
-end
-arch big_wiz
-x 2
-y 48
-end
-arch big_dragon
-x 2
-y 56
-end
-arch big_dragon
-x 2
-y 58
-end
-arch big_dragon
-x 2
-y 60
-end
-arch big_dragon
-x 2
-y 62
-end
-arch chinese_dragon
-x 4
-y 35
-end
-arch big_wiz
-x 5
-y 50
-end
-arch chinese_dragon
-x 6
-y 35
-end
-arch big_dragon
-x 6
-y 56
-end
-arch big_dragon
-x 6
-y 58
-end
-arch big_dragon
-x 6
-y 60
-end
-arch big_dragon
-x 6
-y 62
-end
-arch big_wiz
-x 7
-y 44
-end
-arch big_wiz
-x 8
-y 47
-end
-arch chinese_dragon
-x 10
-y 35
-end
-arch chinese_dragon
-x 12
-y 35
-end
-arch chinese_dragon
-x 13
-y 38
-end
-arch chinese_dragon
-x 13
-y 40
-end
-arch chinese_dragon
-x 13
-y 42
-end
-arch chinese_dragon
-x 13
-y 46
-end
-arch chinese_dragon
-x 13
-y 48
-end
-arch chinese_dragon
-x 13
-y 50
-end
-arch chinese_dragon
-x 13
-y 52
-end
-arch chinese_dragon
-x 13
-y 54
-end
-arch chinese_dragon
-x 13
-y 56
-end
-arch chinese_dragon
-x 13
-y 58
-end
-arch dread
-x 15
-y 18
-end
-arch dread
-x 15
-y 20
-end
-arch dread
-x 15
-y 27
-end
-arch dread
-x 15
-y 29
-end
-arch giant
-x 16
-y 4
-end
-arch giant
-x 16
-y 6
-end
-arch chinese_dragon
-x 16
-y 45
-end
-arch chinese_dragon
-x 16
-y 47
-end
-arch chinese_dragon
-x 16
-y 49
-end
-arch chinese_dragon
-x 16
-y 51
-end
-arch chinese_dragon
-x 16
-y 53
-end
-arch chinese_dragon
-x 16
-y 55
-end
-arch chinese_dragon
-x 16
-y 57
-end
-arch giant
-x 17
-y 4
-end
-arch behemoth
-x 17
-y 29
-end
-arch giant
-x 18
-y 6
-end
-arch dread
-x 18
-y 34
-end
-arch dread
-x 18
-y 36
-end
-arch behemoth
-x 18
-y 39
-end
-arch dragon
-x 19
-y 3
-end
-arch dragon
-x 19
-y 4
-end
-arch dragon
-x 19
-y 5
-end
-arch dragon
-x 19
-y 6
-end
-arch dragon
-x 19
-y 7
-end
-arch dread
-x 19
-y 29
-end
-arch dread
-x 20
-y 39
-end
-arch behemoth
-x 21
-y 29
-end
-arch chinese_dragon
-x 22
-y 6
-end
-arch chinese_dragon
-x 23
-y 4
-end
-arch dread
-x 23
-y 29
-end
-arch chinese_dragon
-x 25
-y 7
-end
-arch chinese_dragon
-x 26
-y 3
-end
-arch chinese_dragon
-x 26
-y 5
-end
-arch dragon
-x 27
-y 10
-end
-arch dragon
-x 27
-y 11
-end
-arch chinese_dragon
-x 30
-y 4
-end
-arch chinese_dragon
-x 30
-y 7
-end
-arch giant
-x 30
-y 13
-end
-arch troll
-x 30
-y 17
-end
-arch giant
-x 31
-y 13
-end
-arch chinese_dragon
-x 33
-y 3
-end
-arch chinese_dragon
-x 33
-y 6
-end
-arch dread
-x 33
-y 19
-end
-arch chinese_dragon
-x 34
-y 15
-end
-arch big_wiz
-x 36
-y 23
-end
-arch big_dragon
-x 38
-y 16
-end
-arch titan
-x 39
-y 11
 end
