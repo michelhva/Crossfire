@@ -25,8 +25,11 @@ speed 0.15
 exp 100
 weight  5000
 attacktype 4095
-protected 20
-immune 16384
+resist_fire 30
+resist_cold 30
+
+resist_fear 100
+
 will_apply 2
 pick_up 24
 can_see_in_dark 1

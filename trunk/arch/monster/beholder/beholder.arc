@@ -24,7 +24,11 @@ maxsp 15
 hp 80
 maxhp 80
 level 9
-immune 21506
+resist_magic 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+
 speed -0.07
 flying 1
 weight 1000

@@ -23,8 +23,10 @@ Cha -1
 Con 2
 hp 1
 attacktype 256
-protected 1024
-immune 128
+resist_poison 30
+
+resist_drain 100
+
 weight 20000
 last_sp 7
 dam 10

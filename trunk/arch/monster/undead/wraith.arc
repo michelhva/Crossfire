@@ -23,9 +23,12 @@ dam 30
 speed 0.16
 attacktype 528
 weight 700
-protected 16
-vulnerable 4
-immune 16384
+resist_cold 30
+
+resist_fire -100
+
+resist_fear 100
+
 undead 1
 can_see_in_dark 1
 can_pass_thru 1

@@ -26,8 +26,11 @@ maxhp 300
 wc -7
 dam 20
 speed -0.1
-armour 50
-immune 1090
+resist_physical 50
+resist_magic 100
+resist_acid 100
+resist_poison 100
+
 can_use_weapon 1
 can_use_armour 1
 can_use_bow 1

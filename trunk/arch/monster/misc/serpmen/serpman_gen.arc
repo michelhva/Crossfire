@@ -10,7 +10,8 @@ maxhp 100
 exp 250
 ac 10
 speed -0.05
-immune 2
+resist_magic 100
+
 alive 1
 level 1
 sp 1

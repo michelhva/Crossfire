@@ -11,11 +11,13 @@ speed 0.2
 last_heal 9
 last_sp 13
 ac 8
-armour 60
+resist_physical 60
 weight 40000
 value 990000
 exp 1
-protected 12
+resist_fire 30
+resist_electricity 30
+
 magic 4
 editable 5120
 identified 1

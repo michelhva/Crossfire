@@ -19,10 +19,11 @@ exp 5000
 dam 30
 wc -30
 ac -10
-armour -30
+resist_physical -30
 speed 0.500000
 level 100
-immune 4
+resist_fire 100
+
 attacktype 7
 carrying 100
 weight 180000

@@ -21,7 +21,9 @@ exp 2000
 dam 10
 wc 2
 ac 0
-immune 9
+resist_physical 100
+resist_electricity 100
+
 speed -0.4
 level 11
 weight 70000

@@ -22,7 +22,8 @@ ac 5
 dam 8
 wc 14
 level 7
-protected 1
+resist_physical 30
+
 weight 80000
 editable 1
 run_away 15

@@ -25,7 +25,8 @@ exp 800
 weight 20000
 level 5
 attacktype 64
-vulnerable 4
+resist_fire -100
+
 hitback 1
 editable 1
 color_fg black
@@ -60,7 +61,8 @@ exp 400
 weight 20000
 level 5
 attacktype 64
-vulnerable 4
+resist_fire -100
+
 hitback 1
 editable 1
 color_fg black
@@ -90,7 +92,8 @@ exp 400
 weight 20000
 level 5
 attacktype 64
-vulnerable 4
+resist_fire -100
+
 hitback 1
 editable 1
 color_fg black

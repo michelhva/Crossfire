@@ -10,7 +10,7 @@ mithril_ar.113
 mina
 speed 0.1
 ac 6
-armour 35
+resist_physical 35
 last_heal 5
 last_sp 18
 weight 15000

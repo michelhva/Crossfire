@@ -17,10 +17,21 @@ Con 56
 Str 80
 Int 13
 Dex 30
-armour 50
-immune 263168
-protected 6366
-vulnerable 32
+resist_physical 50
+resist_poison 100
+resist_chaos 100
+
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_drain 30
+resist_slow 30
+resist_paralyze 30
+
+resist_confusion -100
+
 see_invisible 1
 exp 400000
 ac -10

@@ -20,8 +20,19 @@ Pow 30
 can_cast_spell 1
 maxsp 300
 sp 300
-protected 262272
-immune 18015
+resist_drain 30
+resist_chaos 30
+
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_ghosthit 100
+resist_poison 100
+resist_fear 100
+
 attack_movement 7
 attacktype 15
 see_invisible 1

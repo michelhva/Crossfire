@@ -4,7 +4,9 @@ title of true lead
 face true_lead.111
 material 2
 value 530
-immune 68
+resist_fire 100
+resist_acid 100
+
 type 73
 nrof 1
 weight 5000

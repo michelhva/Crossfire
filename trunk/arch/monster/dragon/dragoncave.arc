@@ -11,7 +11,8 @@ hp 300
 maxhp 300
 ac 3
 exp 1000
-immune 4
+resist_fire 100
+
 no_pick 1
 alive 1
 maxsp 1

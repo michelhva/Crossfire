@@ -11,7 +11,7 @@ speed 0.05
 type 34
 weight 6000
 ac 2
-armour 5
+resist_physical 5
 value 70000
 material 2
 xrays 1

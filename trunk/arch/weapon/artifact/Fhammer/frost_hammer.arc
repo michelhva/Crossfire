@@ -16,7 +16,8 @@ dam 10
 value 90000
 weight 30000
 magic 3
-protected 16
+resist_cold 30
+
 attacktype 18
 Pow 3
 editable 5120

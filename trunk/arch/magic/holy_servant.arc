@@ -8,7 +8,7 @@ golem.112
 mina
 is_animated 1
 monster 1
-armour 25
+resist_physical 25
 alive 1
 ac 4
 wc 6
@@ -17,7 +17,8 @@ hp 50
 maxhp 50
 level 8
 speed 0.15
-immune 2
+resist_magic 100
+
 exp 50
 weight 200000
 editable 1

@@ -10,7 +10,8 @@ weight 35000
 value 85000
 magic 3
 slaying dragon
-protected 4
+resist_fire 30
+
 editable 5120
 attacktype 1
 magicmap white

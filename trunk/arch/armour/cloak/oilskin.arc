@@ -4,7 +4,7 @@ type 87
 face oilskin.111
 Dex -1
 ac 1
-armour 3
+resist_physical 3
 weight 1000
 value 120000
 material 8

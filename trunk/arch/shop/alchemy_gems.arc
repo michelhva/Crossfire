@@ -76,13 +76,3 @@ walk_on 1
 editable 64
 visibility 100
 end
-
-
-
-
-
-
-
-
-
-

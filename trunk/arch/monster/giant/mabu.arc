@@ -11,7 +11,8 @@ anim
 mabu.111
 mabu.112
 mina
-protected 8
+resist_electricity 30
+
 exp 1500
 ac 1
 wc 2

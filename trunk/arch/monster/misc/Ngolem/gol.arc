@@ -21,8 +21,11 @@ dam 50
 wc -20
 ac -40
 level 50
-immune 16392
-protected 2
+resist_electricity 100
+resist_fear 100
+
+resist_magic 30
+
 weight 1500000
 randomitems titan
 run_away 1

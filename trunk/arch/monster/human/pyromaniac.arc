@@ -29,7 +29,8 @@ hp 100
 maxhp 100
 sp 300
 maxsp 1
-immune 2
+resist_magic 100
+
 weight 50000
 speed 0.2
 random_movement 1

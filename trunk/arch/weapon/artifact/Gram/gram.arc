@@ -18,7 +18,9 @@ magic 3
 weight 30000
 value 80000
 attacktype 33
-protected 16896
+resist_ghosthit 30
+resist_fear 30
+
 luck 1
 editable 5120
 magicmap black

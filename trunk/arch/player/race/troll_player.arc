@@ -30,7 +30,8 @@ Int -5
 Wis -2
 Pow -2
 Cha -4
-vulnerable 4
+resist_fire -100
+
 path_repelled 2
 editable 0
 magicmap blue

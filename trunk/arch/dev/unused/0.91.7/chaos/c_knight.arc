@@ -20,7 +20,8 @@ wc 1
 dam 12
 speed 0.15
 attacktype 263169
-protected 2
+resist_magic 30
+
 weight 75000
 will_apply 2
 pick_up 60

@@ -4,8 +4,10 @@ race troll
 face troll.171
 color_fg green
 animation troll_1
-vulnerable 4
-protected 16384
+resist_fire -100
+
+resist_fear 30
+
 can_see_in_dark 1
 exp 8000
 ac -2

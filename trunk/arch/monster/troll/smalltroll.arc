@@ -16,7 +16,8 @@ Str 20
 Dex 18
 no_pick 1
 alive 1
-vulnerable 4
+resist_fire -100
+
 can_see_in_dark 1
 exp 450
 ac 2

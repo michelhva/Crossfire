@@ -6,7 +6,7 @@ face leather_ar.111
 last_heal 8
 last_sp 13
 ac 2
-armour 10
+resist_physical 10
 weight 20000
 value 40
 material 8

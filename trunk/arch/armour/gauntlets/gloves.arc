@@ -3,7 +3,7 @@ nrof 1
 name gloves
 face gloves.111
 type 100
-armour 1
+resist_physical 1
 nrof 1
 value 4
 material 8

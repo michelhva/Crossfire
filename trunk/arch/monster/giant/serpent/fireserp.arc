@@ -8,8 +8,10 @@ Wis 15
 animation serpent
 level 9
 Con 4
-vulnerable 16
-protected 4
+resist_cold -100
+
+resist_fire 30
+
 attacktype 5
 exp 400
 ac -1

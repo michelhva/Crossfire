@@ -5,7 +5,7 @@ type 34
 face fullhelmet.111
 last_heal 10
 ac 1
-armour 10
+resist_physical 10
 weight 12000
 value 16
 material 2

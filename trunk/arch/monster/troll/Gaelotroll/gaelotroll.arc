@@ -12,8 +12,11 @@ gaelotroll.112
 gaelotroll.113
 gaelotroll.112
 mina
-vulnerable 4
-protected 16385
+resist_fire -100
+
+resist_physical 30
+resist_fear 30
+
 attacktype 65
 can_see_in_dark 1
 exp 70000

@@ -8,6 +8,7 @@ level 1
 material 4
 weight 1800
 value 5800
-immune 4
+resist_fire 100
+
 editable 2048
 end

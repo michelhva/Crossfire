@@ -19,9 +19,12 @@ Pow 30
 attacktype 1024
 path_attuned 131088
 path_repelled 65792
-immune 1024
-protected 1024
-vulnerable 16384
+resist_poison 100
+
+resist_poison 30
+
+resist_fear -100
+
 hp 1000
 ac -5
 wc -3

@@ -12,7 +12,8 @@ maxhp 250
 dam 1
 ac 3
 exp 50
-immune 4
+resist_fire 100
+
 blocksview 1
 editable 32
 visibility 100

@@ -5,7 +5,7 @@ type 34
 face hornhelmet.111
 last_heal 2
 ac 1
-armour 2
+resist_physical 2
 weight 6000
 value 12
 material 18

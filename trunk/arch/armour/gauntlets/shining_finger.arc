@@ -10,7 +10,7 @@ mina
 color_fg black
 speed .1
 Str 2
-armour 3
+resist_physical 3
 dam +3
 value 120000
 material 2

@@ -17,9 +17,12 @@ hp 3
 maxhp 3
 wc 20
 dam 1
-armour 10
-vulnerable 16
-protected 1088
+resist_physical 10
+resist_cold -100
+
+resist_acid 30
+resist_poison 30
+
 speed 0.005
 generator 1
 is_used_up 1

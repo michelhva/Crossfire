@@ -18,7 +18,8 @@ msg
 Don't trod on my roots!
 endmsg
 unaggressive 1
-vulnerable 4
+resist_fire -100
+
 exp 1000
 ac -1
 wc -1

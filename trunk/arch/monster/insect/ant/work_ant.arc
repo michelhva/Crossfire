@@ -18,9 +18,12 @@ level 3
 ac 10
 hp 15
 maxhp 15
-armour 20
-protected 1088
-vulnerable 16
+resist_physical 20
+resist_acid 30
+resist_poison 30
+
+resist_cold -100
+
 wc 12
 dam 3
 speed 0.1

@@ -21,8 +21,12 @@ can_cast_spell 1
 maxsp 10
 hp 300
 maxhp 300
-immune 16388
-vulnerable 48
+resist_fire 100
+resist_fear 100
+
+resist_cold -100
+resist_confusion -100
+
 attacktype 1
 ac 2
 wc 2

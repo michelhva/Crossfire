@@ -19,9 +19,13 @@ wc 0
 level 5
 dam 10
 attacktype 1025
-immune 4
-protected 8
-vulnerable 48
+resist_fire 100
+
+resist_electricity 30
+
+resist_cold -100
+resist_confusion -100
+
 speed 0.1
 exp 70
 weight 5000

@@ -11,8 +11,10 @@ dam 9
 weight 25000
 value 170000
 magic 4
-protected 2
-immune 128
+resist_magic 30
+
+resist_drain 100
+
 attacktype 384
 editable 5120
 magicmap grey

@@ -30,7 +30,11 @@ hp 100
 maxhp 100
 sp 300
 maxsp 300
-immune 8244
+resist_fire 100
+resist_cold 100
+resist_confusion 100
+resist_turn_undead 100
+
 weight 50000
 speed 0.4
 random_movement 1

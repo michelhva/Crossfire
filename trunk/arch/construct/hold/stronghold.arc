@@ -98,14 +98,3 @@ no_pass 1
 visibility 100
 magicmap grey
 end
-
-
-
-
-
-
-
-
-
-
-

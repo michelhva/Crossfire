@@ -30,7 +30,11 @@ sp 20
 maxsp 40
 hp 40
 maxhp 40
-immune 21506
+resist_magic 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+
 speed -0.07
 flying 1
 weight 70000

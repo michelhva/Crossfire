@@ -22,9 +22,14 @@ can_cast_spell 1
 color_fg green
 maxsp 50
 sp 50
-armour 30
-protected 2
-immune 279616
+resist_physical 30
+resist_magic 30
+
+resist_acid 100
+resist_poison 100
+resist_fear 100
+resist_chaos 100
+
 attacktype 65
 see_invisible 1
 exp 100000

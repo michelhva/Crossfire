@@ -14,7 +14,7 @@ value 50000
 weight 5000
 type 99
 material 8
-armour 3
+resist_physical 3
 editable 5120
 color_fg brown
 end

@@ -23,9 +23,14 @@ food 500
 can_use_armour 1
 can_use_weapon 1
 attacktype 17
-vulnerable 4
-immune 1664
-protected 16
+resist_fire -100
+
+resist_drain 100
+resist_ghosthit 100
+resist_poison 100
+
+resist_cold 30
+
 Str -3
 Dex 4
 Con -3

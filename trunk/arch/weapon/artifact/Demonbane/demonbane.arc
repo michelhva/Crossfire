@@ -22,7 +22,8 @@ magic 3
 weight 32000
 value 90000
 slaying demon
-protected 4
+resist_fire 30
+
 editable 5120
 attacktype 1
 magicmap black

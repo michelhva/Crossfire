@@ -31,8 +31,13 @@ Int 2
 Wis 2
 Cha -2
 Pow 7
-immune 1028
-vulnerable 656
+resist_fire 100
+resist_poison 100
+
+resist_cold -100
+resist_drain -100
+resist_ghosthit -100
+
 editable 0
 end
 Object fireborn_player_force

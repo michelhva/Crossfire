@@ -9,9 +9,11 @@ elem_air.112
 mina
 monster 1
 alive 1
-immune 8
+resist_electricity 100
+
 attacktype 8
-vulnerable 1
+resist_physical -100
+
 ac 0
 wc 8
 dam 10

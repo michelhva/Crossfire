@@ -25,8 +25,10 @@ speed -0.08
 exp 200
 weight 100000
 level 6
-immune 16
+resist_cold 100
+
 attacktype 1
-vulnerable 4
+resist_fire -100
+
 editable 1
 end

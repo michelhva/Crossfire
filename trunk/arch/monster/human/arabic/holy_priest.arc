@@ -13,8 +13,21 @@ monster 1
 Wis 25
 see_invisible 1
 no_pick 1
-protected 263292
-immune 213123
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_poison 30
+resist_chaos 30
+
+resist_physical 100
+resist_magic 100
+resist_drain 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+
 sp 100
 maxsp 100
 Int 30

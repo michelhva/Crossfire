@@ -7,7 +7,8 @@ ac 0
 weight 5000
 value 220000
 material 8
-immune 2
+resist_magic 100
+
 editable 5120
 color_fg black
 end

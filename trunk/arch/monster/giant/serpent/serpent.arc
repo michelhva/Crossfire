@@ -14,8 +14,10 @@ serpent.172
 mina
 level 7
 Con 3.2
-vulnerable 16
-immune 1024
+resist_cold -100
+
+resist_poison 100
+
 exp 150
 ac -2
 wc 5

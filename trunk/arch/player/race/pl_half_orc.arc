@@ -18,7 +18,8 @@ dam 1
 type 1
 speed 1
 weight 70000
-protected 1024
+resist_poison 30
+
 can_use_armour 1
 can_use_weapon 1
 can_see_in_dark 1

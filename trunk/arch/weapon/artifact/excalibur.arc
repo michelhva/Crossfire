@@ -11,8 +11,10 @@ dam 12
 magic 5
 weight 25000
 value 220000
-protected 2
-immune 128
+resist_magic 30
+
+resist_drain 100
+
 attacktype 256
 editable 5120
 magicmap white

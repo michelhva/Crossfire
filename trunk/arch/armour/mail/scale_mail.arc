@@ -7,7 +7,7 @@ last_heal 10
 last_sp 9
 material 8
 ac 3
-armour 20
+resist_physical 20
 weight 20000
 value 30
 editable 1024

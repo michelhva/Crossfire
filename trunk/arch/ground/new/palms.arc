@@ -9,7 +9,3 @@ slow_move 2
 is_wooded 1
 editable 8
 end
-
-
-
-

@@ -9,8 +9,11 @@ Int 1
 sp 1
 type 15
 face uw_sword.111
-immune 160
-protected 2
+resist_confusion 100
+resist_drain 100
+
+resist_magic 30
+
 magic 5
 weight 30000
 attacktype 65

@@ -30,8 +30,14 @@ wc -50
 weight 8000000
 attacktype 1029
 attack_movement 5
-immune 1060
-protected 3145730
+resist_fire 100
+resist_confusion 100
+resist_poison 100
+
+resist_magic 30
+resist_godpower 30
+resist_holyword 30
+
 level 40
 speed 0.3
 alive 1

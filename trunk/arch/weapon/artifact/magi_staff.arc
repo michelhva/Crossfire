@@ -11,7 +11,8 @@ magi_staff.112
 mina
 speed .2
 material 16
-protected 2
+resist_magic 30
+
 Int 1
 Pow 1
 sp 2

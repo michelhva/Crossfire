@@ -9,7 +9,8 @@ dam 10
 weight 30000
 value 75000
 magic 3
-protected 8
+resist_electricity 30
+
 attacktype 8
 Str 1
 editable 5120

@@ -24,9 +24,13 @@ can_cast_spell 1
 maxsp 40
 hp 1000
 maxhp 1000
-immune 16400
-vulnerable 4
-protected 2
+resist_cold 100
+resist_fear 100
+
+resist_fire -100
+
+resist_magic 30
+
 ac -8
 wc -15
 dam 15

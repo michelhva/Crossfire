@@ -24,8 +24,14 @@ speed 0.25
 exp 400
 weight  1000
 attacktype 1
-protected 24
-immune 22532
+resist_electricity 30
+resist_cold 30
+
+resist_fire 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+
 will_apply 2
 pick_up 24
 can_apply 25

@@ -14,7 +14,8 @@ no_pick 1
 maxsp 1
 speed 0.006
 weight 750000
-protected 16
+resist_cold 30
+
 editable 1
 undead 1
 end

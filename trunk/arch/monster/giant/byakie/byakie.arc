@@ -17,9 +17,21 @@ maxsp 20
 Int 1
 Pow 1
 resist_physical 100
-immune 279554
-protected 6364
-vulnerable 32
+resist_magic 100
+resist_poison 100
+resist_fear 100
+resist_chaos 100
+
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_drain 30
+resist_slow 30
+resist_paralyze 30
+
+resist_confusion -100
+
 see_invisible 1
 exp 250000
 ac -10

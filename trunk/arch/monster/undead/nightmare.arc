@@ -15,9 +15,15 @@ wc 1
 ac 10
 speed 0.3
 level 4
-immune 16513
-vulnerable 8194
-protected 32
+resist_physical 100
+resist_drain 100
+resist_fear 100
+
+resist_magic -100
+resist_turn_undead -100
+
+resist_confusion 30
+
 attacktype 66048
 alive 1
 monster 1

@@ -20,7 +20,8 @@ wc 3
 dam 8
 speed 0.16
 attacktype 1025
-protected 2
+resist_magic 30
+
 weight 75000
 will_apply 2
 pick_up 50

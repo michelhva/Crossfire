@@ -20,8 +20,12 @@ dam 50
 wc -30
 weight 8000000
 attacktype 5
-immune 16404
-protected 2
+resist_fire 100
+resist_cold 100
+resist_fear 100
+
+resist_magic 30
+
 level 19
 speed -0.2
 alive 1

@@ -20,8 +20,11 @@ titan.533
 titan.532
 titan.531
 mina
-immune 16392
-protected 2
+resist_electricity 100
+resist_fear 100
+
+resist_magic 30
+
 exp 100000
 ac -5
 wc -20

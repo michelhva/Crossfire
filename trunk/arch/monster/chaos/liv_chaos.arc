@@ -30,9 +30,22 @@ attacktype 262144
 Con 3
 Wis 15
 can_cast_spell 1
-immune 411136
-protected 31
-vulnerable 416
+resist_ghosthit 100
+resist_poison 100
+resist_fear 100
+resist_death 100
+resist_chaos 100
+
+resist_physical 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+
+resist_confusion -100
+resist_drain -100
+resist_weaponmagic -100
+
 monster 1
 editable 1
 end

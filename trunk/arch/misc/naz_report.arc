@@ -10,7 +10,6 @@ Nazgul has a drain attack.
 So we cannot attack him physically,
 except a Special Case. Special case
 means ...
-
 * this scroll is broken, *
 *so I cannot continue to read *
 endmsg

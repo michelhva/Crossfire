@@ -24,8 +24,13 @@ maxhp 1000
 sp 150
 maxsp 150
 attacktype 7169
-immune 7168
-protected 80
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+
+resist_cold 30
+resist_acid 30
+
 level 18
 speed 0.1
 weight 100000

@@ -8,6 +8,7 @@ level 1
 material 4
 weight 2000
 value 10000
-immune 1
+resist_physical 100
+
 editable 2048
 end

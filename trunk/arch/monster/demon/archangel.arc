@@ -24,8 +24,19 @@ hp 2500
 maxhp 2500
 Con 40
 level 25
-immune 23722
-protected 21
+resist_magic 100
+resist_electricity 100
+resist_confusion 100
+resist_drain 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+
+resist_physical 30
+resist_fire 30
+resist_cold 30
+
 attacktype 20745
 speed 0.400000
 weight 150000

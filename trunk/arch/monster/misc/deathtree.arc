@@ -14,7 +14,8 @@ speed -0.2
 alive 1
 monster 1
 no_pick 1
-immune 2
+resist_magic 100
+
 hp 500
 maxhp 500
 Con 1

@@ -15,7 +15,8 @@ dam 9
 weight 22000
 value 75000
 magic 3
-protected 16
+resist_cold 30
+
 attacktype 4
 editable 5120
 magicmap red

@@ -4,7 +4,7 @@ name shield
 type 33
 face round_shiel.111
 ac 1
-armour 7
+resist_physical 7
 weight 15000
 value 21
 material 18

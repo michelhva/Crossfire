@@ -16,7 +16,7 @@ no_pick 1
 alive 1
 exp 800
 ac 1
-armour 30
+resist_physical 30
 wc 3
 dam 12
 Pow 4
@@ -27,8 +27,11 @@ hp 165
 Con 4
 maxhp 165
 level 9
-immune 4
-vulnerable 48
+resist_fire 100
+
+resist_cold -100
+resist_confusion -100
+
 speed 0.11
 weight 180000
 run_away 15

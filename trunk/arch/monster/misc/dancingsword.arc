@@ -29,9 +29,20 @@ maxhp 100
 wc -5
 dam 20
 speed -0.3
-armour 25
+resist_physical 25
 attacktype 256
-immune 21124792
-protected 4
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_drain 100
+resist_ghosthit 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+resist_death 100
+resist_blind 100
+
+resist_fire 30
+
 editable 1
 end
