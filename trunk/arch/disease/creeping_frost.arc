@@ -28,7 +28,7 @@ race *
 level 10
 end
 Object creeping_frost_immunity
-name immolation
+name creeping frost
 type 98
 level 127
 invisible 1
