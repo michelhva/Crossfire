@@ -12286,7 +12286,11 @@ name west gatehouse
 x 25
 y 1
 end
-arch barrack_up
+arch guild
+name Damned Heretics's Storage Room
+slaying /wolfsburg/guilds/damned_heretics/storage_room
+hp 1
+sp 10
 x 25
 y 7
 end
@@ -12301,10 +12305,6 @@ end
 arch longship
 x 25
 y 24
-end
-arch barrack_up
-x 26
-y 7
 end
 arch tower_a
 name High Tower
