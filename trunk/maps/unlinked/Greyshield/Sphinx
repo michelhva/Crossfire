@@ -1305,11 +1305,6 @@ of you... GO AWAY!!!
 endmsg
 x 22
 end
-More
-arch sphinx_2
-hp 300
-x 23
-end
 arch sphinx
 msg
 @match King|king|crown|Crown|Grey|grey
@@ -1329,12 +1324,6 @@ I don't have any riddles for the likes
 of you... GO AWAY!!!
 endmsg
 x 22
-y 2
-end
-More
-arch sphinx_2
-hp 300
-x 23
 y 2
 end
 arch sphinx
@@ -1360,12 +1349,6 @@ endmsg
 x 22
 y 4
 end
-More
-arch sphinx_2
-hp 300
-x 23
-y 4
-end
 arch sphinx
 msg
 @match King|king|crown|Crown|Grey|grey
@@ -1385,11 +1368,5 @@ I don't have any riddles for the likes
 of you... GO AWAY!!!
 endmsg
 x 22
-y 6
-end
-More
-arch sphinx_2
-hp 300
-x 23
 y 6
 end

@@ -1141,28 +1141,8 @@ arch prison
 x 3
 y 1
 end
-More
-arch prison_2
-x 4
-y 1
-end
-More
-arch prison_3
-x 3
-y 2
-end
-More
-arch prison_4
-x 4
-y 2
-end
 arch house_long
 x 3
-y 7
-end
-More
-arch house_long_2
-x 4
 y 7
 end
 arch keep
@@ -1170,42 +1150,9 @@ name Police
 x 9
 y 1
 end
-More
-arch keep_2
-name Police
-x 10
-y 1
-end
-More
-arch keep_3
-name Police
-x 9
-y 2
-end
-More
-arch keep_4
-name Police
-x 10
-y 2
-end
 arch store_weapons
 x 11
 y 1
-end
-More
-arch store_weapons_2
-x 12
-y 1
-end
-More
-arch store_weapons_3
-x 11
-y 2
-end
-More
-arch store_weapons_4
-x 12
-y 2
 end
 arch l_shop1
 slaying g_store
@@ -1214,45 +1161,11 @@ sp 14
 x 12
 y 6
 end
-More
-arch l_shop1_2
-slaying g_store
-hp 2
-sp 14
-x 13
-y 6
-end
-More
-arch l_shop1_3
-slaying g_store
-hp 2
-sp 14
-x 12
-y 7
-end
-More
-arch l_shop1_4
-slaying g_store
-hp 2
-sp 14
-x 13
-y 7
-end
 arch city_tower
 x 16
 y 2
 end
-More
-arch city_tower_2
-x 16
-y 3
-end
 arch inn
 x 16
-y 7
-end
-More
-arch inn_2
-x 17
 y 7
 end

@@ -4759,61 +4759,11 @@ end
 arch ability_coldspell
 end
 end
-More
-arch dragonman_2
-name Grey Master
-hp 9000
-maxhp 9000
-sp 1000
-maxsp 1000
-Pow 50
-Con 30
-exp 200000
-y 10
-speed 4.000000
-attack_movement 103
-immune 4127
-end
 arch big_dragon
 name guardian
 hp 7000
 x 5
 y 11
-end
-More
-arch big_dragon_2
-name guardian
-hp 7000
-x 6
-y 11
-end
-More
-arch big_dragon_3
-name guardian
-hp 7000
-x 7
-y 11
-end
-More
-arch big_dragon_4
-name guardian
-hp 7000
-x 5
-y 12
-end
-More
-arch big_dragon_5
-name guardian
-hp 7000
-x 6
-y 12
-end
-More
-arch big_dragon_6
-name guardian
-hp 7000
-x 7
-y 12
 end
 arch chinese_dragon
 name guardian
@@ -4821,65 +4771,9 @@ hp 7000
 x 6
 y 8
 end
-More
-arch chinese_dragon_2
-name guardian
-hp 7000
-x 7
-y 8
-end
-More
-arch chinese_dragon_3
-name guardian
-hp 7000
-x 6
-y 9
-end
-More
-arch chinese_dragon_4
-name guardian
-hp 7000
-x 7
-y 9
-end
 arch big_elec
 name guardian
 hp 7000
 x 9
 y 8
-end
-More
-arch big_elec_2
-name guardian
-hp 7000
-x 10
-y 8
-end
-More
-arch big_elec_3
-name guardian
-hp 7000
-x 9
-y 9
-end
-More
-arch big_elec_4
-name guardian
-hp 7000
-x 10
-y 9
-end
-More
-arch big_elec_5
-name guardian
-hp 7000
-x 9
-y 10
-end
-More
-arch big_elec_6
-name guardian
-hp 7000
-x 10
-y 10
 end
