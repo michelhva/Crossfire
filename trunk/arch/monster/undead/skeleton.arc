@@ -21,7 +21,7 @@ maxhp 45
 Con 2
 level 6
 speed 0.2
-exp 40
+exp 80
 weight 15000
 attacktype 17
 resist_fire -100
