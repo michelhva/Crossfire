@@ -1,6 +1,6 @@
 In this directory is utilities, gif images of the maps, and other notes.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 Developer guidelines:
 
 Read the mapguide for guidelines on making a good map.
@@ -8,7 +8,7 @@ Read the mapguide for guidelines on making a good map.
 Use the comment field that the maps have - put in who the author is,
 what level the map is, and any other special notes.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 Naming Scheme:
 
 Note that these rules are ordered in importance, eg, if a rule conflicts,
@@ -55,6 +55,19 @@ the following values in the server include/config.h file:
 Scorn is located on world maps _104_115 and _105_115.  Some touchup of the
 terrain immediately surrounding the city has been touched up some.
 
+Santo Dominion is on maps _102_108
+
+The list of translation values below have been used in the update_maps
+script.  The values are recoreded here in that they might be useful for
+updating other maps that are contributed later.
+
+The format is:
+OLD_MAP_NAME, OLD_MAP_STARTX, OLD_MAP_STARTY, OLD_MAP_ENDX, OLD_MAP_ENDY ->
+	NEW_MAP_NAME, NEW_MAP_OFFX, NEW_MAP_OFFY
+
+Translation values used:
+/city/city, 10, 0 (100,100) -> /world/world_105_115, -10, 18
+
 ------------------------------------------------------------------------------
 land.c:
 This is the program that generated the new world map.
@@ -81,3 +94,11 @@ the coloration on what the image looks like in the png set.
 ann_map.gif is a annotated version of the map, showing the roads and
 locations of the main cities.
 ------------------------------------------------------------------------------
+Completed maps:
+
+city (now scorn) - moved
+santo_dominion: moved
+
+individual linked maps:
+eeur/hut.1, hut.2 (in santo_dominion)
+espen/palace, espen1, espen2 (in santo_dominion)

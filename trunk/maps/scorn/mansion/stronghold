@@ -4,10 +4,10 @@ msg
 Creator: Morten Hanshaugen
 Email: meh@ifi.uio.no, meh@usit.uio.no
 endmsg
-hp 35
-sp 28
-x 40
-y 32
+width 40
+height 32
+enter_x 35
+enter_y 28
 end
 arch woodfloor
 end
@@ -298,9 +298,9 @@ x 1
 y 18
 end
 arch button_handle
+connected 7
 x 1
 y 18
-connected 7
 end
 arch woodfloor
 x 1
@@ -315,9 +315,9 @@ x 1
 y 20
 end
 arch button_handle
+connected 7
 x 1
 y 20
-connected 7
 end
 arch woodfloor
 x 1
@@ -498,9 +498,9 @@ x 2
 y 19
 end
 arch igate_closed_1
+connected 7
 x 2
 y 19
-connected 7
 end
 arch woodfloor
 x 2
@@ -637,10 +637,10 @@ x 3
 y 11
 end
 arch igate_closed_1
-x 3
-y 11
 speed 0.500000
 connected 1
+x 3
+y 11
 end
 arch woodfloor
 x 3
@@ -655,9 +655,9 @@ x 3
 y 14
 end
 arch button_handle
+connected 1
 x 3
 y 14
-connected 1
 end
 arch woodfloor
 x 3
@@ -712,9 +712,9 @@ x 3
 y 23
 end
 arch button_handle
+connected 7
 x 3
 y 23
-connected 7
 end
 arch woodfloor
 x 3
@@ -839,9 +839,9 @@ x 4
 y 10
 end
 arch button_handle
+connected 1
 x 4
 y 10
-connected 1
 end
 arch woodfloor
 x 4
@@ -1465,9 +1465,9 @@ x 7
 y 17
 end
 arch button_small
+connected 8
 x 7
 y 17
-connected 8
 end
 arch woodfloor
 x 7
@@ -1604,10 +1604,10 @@ x 8
 y 10
 end
 arch grate_closed_2
-x 8
-y 10
 speed 0.500000
 connected 96
+x 8
+y 10
 end
 arch woodfloor
 x 8
@@ -1650,10 +1650,10 @@ x 8
 y 17
 end
 arch grate_closed_2
-x 8
-y 17
 speed 0.500000
 connected 8
+x 8
+y 17
 end
 arch woodfloor
 x 8
@@ -1762,9 +1762,9 @@ x 9
 y 1
 end
 arch button_plate
+connected 3
 x 9
 y 1
-connected 3
 end
 arch woodfloor
 x 9
@@ -1819,9 +1819,9 @@ x 9
 y 10
 end
 arch button_small
+connected 96
 x 9
 y 10
-connected 96
 end
 arch woodfloor
 x 9
@@ -1868,9 +1868,9 @@ x 9
 y 17
 end
 arch button_small
+connected 8
 x 9
 y 17
-connected 8
 end
 arch woodfloor
 x 9
@@ -1909,10 +1909,10 @@ x 9
 y 24
 end
 arch grate_closed_1
-x 9
-y 24
 speed 0.500000
 connected 6
+x 9
+y 24
 end
 arch woodfloor
 x 9
@@ -2009,19 +2009,19 @@ x 10
 y 11
 end
 arch igate_closed_1
-x 10
-y 11
 speed 0.500000
 connected 2
+x 10
+y 11
 end
 arch woodfloor
 x 10
 y 12
 end
 arch button_small
+connected 2
 x 10
 y 12
-connected 2
 end
 arch woodfloor
 x 10
@@ -2084,9 +2084,9 @@ x 10
 y 23
 end
 arch button_plate
+connected 6
 x 10
 y 23
-connected 6
 end
 arch woodfloor
 x 10
@@ -2101,9 +2101,9 @@ x 10
 y 25
 end
 arch button_small
+connected 6
 x 10
 y 25
-connected 6
 end
 arch woodfloor
 x 10
@@ -2461,7 +2461,7 @@ arch woodfloor
 x 12
 y 23
 end
-arch booze
+arch barrel
 x 12
 y 23
 end
@@ -2544,10 +2544,10 @@ x 13
 y 2
 end
 arch grate_closed_2
-x 13
-y 2
 speed 0.500000
 connected 3
+x 13
+y 2
 end
 arch woodfloor
 x 13
@@ -3389,7 +3389,7 @@ arch woodfloor
 x 16
 y 30
 end
-arch ghost
+arch chest
 x 16
 y 30
 end
@@ -3456,9 +3456,9 @@ x 17
 y 10
 end
 arch button_small
+connected 4
 x 17
 y 10
-connected 4
 end
 arch woodfloor
 x 17
@@ -3473,9 +3473,9 @@ x 17
 y 12
 end
 arch button_small
+connected 4
 x 17
 y 12
-connected 4
 end
 arch woodfloor
 x 17
@@ -3537,10 +3537,6 @@ arch woodfloor
 x 17
 y 22
 end
-arch skull
-x 17
-y 22
-end
 arch woodfloor
 x 17
 y 23
@@ -3585,7 +3581,7 @@ arch woodfloor
 x 17
 y 30
 end
-arch random_treasure
+arch ghost
 x 17
 y 30
 end
@@ -3740,14 +3736,12 @@ x 18
 y 24
 end
 arch ogre
+can_apply 0
+will_apply 0
 x 18
 y 24
 end
 arch woodfloor
-x 18
-y 25
-end
-arch chest
 x 18
 y 25
 end
@@ -3838,10 +3832,10 @@ x 19
 y 11
 end
 arch igate_closed_1
-x 19
-y 11
 speed 0.500000
 connected 4
+x 19
+y 11
 end
 arch woodfloor
 x 19
@@ -3859,15 +3853,25 @@ arch woodfloor
 x 19
 y 14
 end
+arch magic_mouth
+msg
+You feel a strong presence of evil in
+here. This room appears far more
+dangerous than the ones behind.
+endmsg
+food 1
+x 19
+y 15
+end
 arch woodfloor
 x 19
 y 15
 end
 arch igate_closed_1
-x 19
-y 15
 speed 0.500000
 connected 5
+x 19
+y 15
 end
 arch woodfloor
 x 19
@@ -4269,6 +4273,18 @@ arch woodfloor
 x 21
 y 22
 end
+arch chair_3.1
+type 0
+no_pick 1
+resist_fire 100
+resist_electricity 100
+x 21
+y 22
+end
+arch skull
+x 21
+y 22
+end
 arch woodfloor
 x 21
 y 23
@@ -4281,11 +4297,25 @@ arch woodfloor
 x 21
 y 24
 end
-arch madman
+arch chest_2
+msg
+endmsg
+no_pick 1
+material 0
 x 21
 y 24
+arch potion_restoration
+end
+arch random_talisman
+end
+arch random_gem
+end
 end
 arch woodfloor
+x 21
+y 25
+end
+arch madman
 x 21
 y 25
 end
@@ -4408,9 +4438,9 @@ x 22
 y 14
 end
 arch button_small
+connected 5
 x 22
 y 14
-connected 5
 end
 arch woodfloor
 x 22
@@ -4666,11 +4696,11 @@ arch woodfloor
 x 23
 y 27
 end
-arch chest
-x 23
-y 27
-end
 arch woodfloor
+x 23
+y 28
+end
+arch random_wealth
 x 23
 y 28
 end
@@ -4986,9 +5016,9 @@ x 25
 y 16
 end
 arch button_plate
+connected 5
 x 25
 y 16
-connected 5
 end
 arch woodfloor
 x 25
@@ -5516,9 +5546,9 @@ x 28
 y 3
 end
 arch button_handle
+connected 42
 x 28
 y 3
-connected 42
 end
 arch woodfloor
 x 28
@@ -5715,9 +5745,9 @@ x 29
 y 2
 end
 arch gate_closed_2
+connected 42
 x 29
 y 2
-connected 42
 end
 arch woodfloor
 x 29
@@ -6589,9 +6619,9 @@ arch exit
 slaying /world/world_105_115
 hp 16
 sp 43
+speed_left -0.600000
 x 34
 y 28
-speed_left -0.600000
 end
 arch woods_2
 x 34
@@ -6721,7 +6751,6 @@ name Mailbox
 msg
 Stronghold
 End of Stronghold Road (where else!)
-
 endmsg
 x 35
 y 27
@@ -7251,20 +7280,10 @@ x 39
 y 31
 end
 arch dragon
-x 21
-y 22
-end
-More
-arch dragon_2
-x 22
-y 22
+x 17
+y 25
 end
 arch dragon
 x 22
-y 24
-end
-More
-arch dragon_2
-x 23
 y 24
 end

@@ -1,22 +1,34 @@
 arch map
-name HouseofHealing
+name PowerHouse
+reset_timeout 7200
+difficulty 1
+width 21
+height 36
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr  2 11:36:53 1999
 endmsg
-x 21
-y 36
+end
+arch magic_banned
 end
 arch flagstone
 end
 arch wall_2_2_2
 end
+arch magic_banned
+y 1
+end
 arch flagstone
 y 1
 end
 arch wall_2_1_1
 y 1
+end
+arch magic_banned
+y 2
 end
 arch flagstone
 y 2
@@ -24,11 +36,17 @@ end
 arch wall_2_1_1
 y 2
 end
+arch magic_banned
+y 3
+end
 arch flagstone
 y 3
 end
 arch wall_2_1_1
 y 3
+end
+arch magic_banned
+y 4
 end
 arch flagstone
 y 4
@@ -36,11 +54,17 @@ end
 arch wall_2_1_1
 y 4
 end
+arch magic_banned
+y 5
+end
 arch flagstone
 y 5
 end
 arch wall_3_2
 y 5
+end
+arch magic_banned
+y 6
 end
 arch flagstone
 y 6
@@ -48,11 +72,17 @@ end
 arch wall_2_1_1
 y 6
 end
+arch magic_banned
+y 7
+end
 arch flagstone
 y 7
 end
 arch wall_3_2
 y 7
+end
+arch magic_banned
+y 8
 end
 arch flagstone
 y 8
@@ -60,11 +90,17 @@ end
 arch wall_2_1_1
 y 8
 end
+arch magic_banned
+y 9
+end
 arch flagstone
 y 9
 end
 arch wall_3_2
 y 9
+end
+arch magic_banned
+y 10
 end
 arch flagstone
 y 10
@@ -72,11 +108,17 @@ end
 arch wall_2_1_1
 y 10
 end
+arch magic_banned
+y 11
+end
 arch flagstone
 y 11
 end
 arch wall_3_2
 y 11
+end
+arch magic_banned
+y 12
 end
 arch flagstone
 y 12
@@ -84,11 +126,17 @@ end
 arch wall_2_1_1
 y 12
 end
+arch magic_banned
+y 13
+end
 arch flagstone
 y 13
 end
 arch wall_3_2
 y 13
+end
+arch magic_banned
+y 14
 end
 arch flagstone
 y 14
@@ -96,11 +144,17 @@ end
 arch wall_2_1_1
 y 14
 end
+arch magic_banned
+y 15
+end
 arch flagstone
 y 15
 end
 arch wall_3_2
 y 15
+end
+arch magic_banned
+y 16
 end
 arch flagstone
 y 16
@@ -108,11 +162,17 @@ end
 arch wall_2_1_1
 y 16
 end
+arch magic_banned
+y 17
+end
 arch flagstone
 y 17
 end
 arch wall_3_2
 y 17
+end
+arch magic_banned
+y 18
 end
 arch flagstone
 y 18
@@ -120,11 +180,17 @@ end
 arch wall_2_1_1
 y 18
 end
+arch magic_banned
+y 19
+end
 arch flagstone
 y 19
 end
 arch wall_3_2
 y 19
+end
+arch magic_banned
+y 20
 end
 arch flagstone
 y 20
@@ -132,11 +198,17 @@ end
 arch wall_2_1_1
 y 20
 end
+arch magic_banned
+y 21
+end
 arch flagstone
 y 21
 end
 arch wall_3_2
 y 21
+end
+arch magic_banned
+y 22
 end
 arch flagstone
 y 22
@@ -144,11 +216,17 @@ end
 arch wall_2_1_1
 y 22
 end
+arch magic_banned
+y 23
+end
 arch flagstone
 y 23
 end
 arch wall_3_2
 y 23
+end
+arch magic_banned
+y 24
 end
 arch flagstone
 y 24
@@ -156,11 +234,17 @@ end
 arch wall_2_1_1
 y 24
 end
+arch magic_banned
+y 25
+end
 arch flagstone
 y 25
 end
 arch wall_3_2
 y 25
+end
+arch magic_banned
+y 26
 end
 arch flagstone
 y 26
@@ -168,11 +252,17 @@ end
 arch wall_2_1_1
 y 26
 end
+arch magic_banned
+y 27
+end
 arch flagstone
 y 27
 end
 arch wall_3_2
 y 27
+end
+arch magic_banned
+y 28
 end
 arch flagstone
 y 28
@@ -180,11 +270,17 @@ end
 arch wall_2_1_1
 y 28
 end
+arch magic_banned
+y 29
+end
 arch flagstone
 y 29
 end
 arch wall_3_2
 y 29
+end
+arch magic_banned
+y 30
 end
 arch flagstone
 y 30
@@ -192,11 +288,17 @@ end
 arch wall_2_1_1
 y 30
 end
+arch magic_banned
+y 31
+end
 arch flagstone
 y 31
 end
 arch wall_3_2
 y 31
+end
+arch magic_banned
+y 32
 end
 arch flagstone
 y 32
@@ -204,17 +306,26 @@ end
 arch wall_2_1_1
 y 32
 end
+arch magic_banned
+y 33
+end
 arch flagstone
 y 33
 end
 arch wall_3_2
 y 33
 end
+arch magic_banned
+y 34
+end
 arch flagstone
 y 34
 end
 arch wall_2_1_1
 y 34
+end
+arch magic_banned
+y 35
 end
 arch flagstone
 y 35
@@ -222,35 +333,62 @@ end
 arch wall_2_2_1
 y 35
 end
+arch magic_banned
+x 1
+end
 arch flagstone
 x 1
 end
 arch wall_2_1_2
 x 1
 end
-arch flagstone
+arch magic_banned
 x 1
 y 1
 end
 arch flagstone
 x 1
+y 1
+end
+arch magic_banned
+x 1
 y 2
 end
 arch flagstone
+x 1
+y 2
+end
+arch magic_banned
 x 1
 y 3
 end
 arch flagstone
 x 1
+y 3
+end
+arch magic_banned
+x 1
 y 4
 end
 arch flagstone
 x 1
+y 4
+end
+arch magic_banned
+x 1
+y 5
+end
+arch flagstone
+x 1
 y 5
 end
 arch wall_2_1_2
 x 1
 y 5
+end
+arch magic_banned
+x 1
+y 6
 end
 arch flagstone
 x 1
@@ -260,6 +398,10 @@ arch rune_regenerate_spellpoints
 x 1
 y 6
 end
+arch magic_banned
+x 1
+y 7
+end
 arch flagstone
 x 1
 y 7
@@ -267,6 +409,10 @@ end
 arch wall_2_1_2
 x 1
 y 7
+end
+arch magic_banned
+x 1
+y 8
 end
 arch flagstone
 x 1
@@ -276,6 +422,10 @@ arch rune_regenerate_spellpoints
 x 1
 y 8
 end
+arch magic_banned
+x 1
+y 9
+end
 arch flagstone
 x 1
 y 9
@@ -283,6 +433,10 @@ end
 arch wall_2_1_2
 x 1
 y 9
+end
+arch magic_banned
+x 1
+y 10
 end
 arch flagstone
 x 1
@@ -292,6 +446,10 @@ arch rune_regenerate_spellpoints
 x 1
 y 10
 end
+arch magic_banned
+x 1
+y 11
+end
 arch flagstone
 x 1
 y 11
@@ -299,6 +457,10 @@ end
 arch wall_2_1_2
 x 1
 y 11
+end
+arch magic_banned
+x 1
+y 12
 end
 arch flagstone
 x 1
@@ -308,6 +470,10 @@ arch rune_regenerate_spellpoints
 x 1
 y 12
 end
+arch magic_banned
+x 1
+y 13
+end
 arch flagstone
 x 1
 y 13
@@ -315,6 +481,10 @@ end
 arch wall_2_1_2
 x 1
 y 13
+end
+arch magic_banned
+x 1
+y 14
 end
 arch flagstone
 x 1
@@ -329,6 +499,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 15
+end
 arch flagstone
 x 1
 y 15
@@ -336,6 +510,10 @@ end
 arch wall_2_1_2
 x 1
 y 15
+end
+arch magic_banned
+x 1
+y 16
 end
 arch flagstone
 x 1
@@ -350,6 +528,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 17
+end
 arch flagstone
 x 1
 y 17
@@ -357,6 +539,10 @@ end
 arch wall_2_1_2
 x 1
 y 17
+end
+arch magic_banned
+x 1
+y 18
 end
 arch flagstone
 x 1
@@ -371,6 +557,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 19
+end
 arch flagstone
 x 1
 y 19
@@ -378,6 +568,10 @@ end
 arch wall_2_1_2
 x 1
 y 19
+end
+arch magic_banned
+x 1
+y 20
 end
 arch flagstone
 x 1
@@ -392,6 +586,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 21
+end
 arch flagstone
 x 1
 y 21
@@ -399,6 +597,10 @@ end
 arch wall_2_1_2
 x 1
 y 21
+end
+arch magic_banned
+x 1
+y 22
 end
 arch flagstone
 x 1
@@ -413,6 +615,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 23
+end
 arch flagstone
 x 1
 y 23
@@ -420,6 +626,10 @@ end
 arch wall_2_1_2
 x 1
 y 23
+end
+arch magic_banned
+x 1
+y 24
 end
 arch flagstone
 x 1
@@ -434,6 +644,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 25
+end
 arch flagstone
 x 1
 y 25
@@ -441,6 +655,10 @@ end
 arch wall_2_1_2
 x 1
 y 25
+end
+arch magic_banned
+x 1
+y 26
 end
 arch flagstone
 x 1
@@ -455,6 +673,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 27
+end
 arch flagstone
 x 1
 y 27
@@ -462,6 +684,10 @@ end
 arch wall_2_1_2
 x 1
 y 27
+end
+arch magic_banned
+x 1
+y 28
 end
 arch flagstone
 x 1
@@ -476,6 +702,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 29
+end
 arch flagstone
 x 1
 y 29
@@ -483,6 +713,10 @@ end
 arch wall_2_1_2
 x 1
 y 29
+end
+arch magic_banned
+x 1
+y 30
 end
 arch flagstone
 x 1
@@ -497,6 +731,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 31
+end
 arch flagstone
 x 1
 y 31
@@ -504,6 +742,10 @@ end
 arch wall_2_1_2
 x 1
 y 31
+end
+arch magic_banned
+x 1
+y 32
 end
 arch flagstone
 x 1
@@ -518,6 +760,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 1
+y 33
+end
 arch flagstone
 x 1
 y 33
@@ -526,39 +772,70 @@ arch wall_2_1_2
 x 1
 y 33
 end
-arch flagstone
+arch magic_banned
 x 1
 y 34
 end
 arch flagstone
 x 1
+y 34
+end
+arch magic_banned
+x 1
+y 35
+end
+arch flagstone
+x 1
 y 35
 end
 arch wall_2_1_2
 x 1
 y 35
 end
+arch magic_banned
+x 2
+end
 arch flagstone
 x 2
 end
 arch wall_2_1_2
 x 2
 end
-arch flagstone
+arch magic_banned
 x 2
 y 1
 end
 arch flagstone
 x 2
+y 1
+end
+arch magic_banned
+x 2
 y 2
 end
 arch flagstone
+x 2
+y 2
+end
+arch magic_banned
 x 2
 y 3
 end
 arch flagstone
 x 2
+y 3
+end
+arch magic_banned
+x 2
 y 4
+end
+arch flagstone
+x 2
+y 4
+end
+arch magic_banned
+x 2
+y 5
 end
 arch flagstone
 x 2
@@ -567,6 +844,10 @@ end
 arch wall_2_1_2
 x 2
 y 5
+end
+arch magic_banned
+x 2
+y 6
 end
 arch flagstone
 x 2
@@ -577,6 +858,10 @@ x 2
 y 6
 connected 32
 end
+arch magic_banned
+x 2
+y 7
+end
 arch flagstone
 x 2
 y 7
@@ -584,6 +869,10 @@ end
 arch wall_2_1_2
 x 2
 y 7
+end
+arch magic_banned
+x 2
+y 8
 end
 arch flagstone
 x 2
@@ -594,6 +883,10 @@ x 2
 y 8
 connected 31
 end
+arch magic_banned
+x 2
+y 9
+end
 arch flagstone
 x 2
 y 9
@@ -601,6 +894,10 @@ end
 arch wall_2_1_2
 x 2
 y 9
+end
+arch magic_banned
+x 2
+y 10
 end
 arch flagstone
 x 2
@@ -611,6 +908,10 @@ x 2
 y 10
 connected 30
 end
+arch magic_banned
+x 2
+y 11
+end
 arch flagstone
 x 2
 y 11
@@ -618,6 +919,10 @@ end
 arch wall_2_1_2
 x 2
 y 11
+end
+arch magic_banned
+x 2
+y 12
 end
 arch flagstone
 x 2
@@ -628,6 +933,10 @@ x 2
 y 12
 connected 29
 end
+arch magic_banned
+x 2
+y 13
+end
 arch flagstone
 x 2
 y 13
@@ -635,6 +944,10 @@ end
 arch wall_2_1_2
 x 2
 y 13
+end
+arch magic_banned
+x 2
+y 14
 end
 arch flagstone
 x 2
@@ -645,6 +958,10 @@ x 2
 y 14
 connected 28
 end
+arch magic_banned
+x 2
+y 15
+end
 arch flagstone
 x 2
 y 15
@@ -652,6 +969,10 @@ end
 arch wall_2_1_2
 x 2
 y 15
+end
+arch magic_banned
+x 2
+y 16
 end
 arch flagstone
 x 2
@@ -662,6 +983,10 @@ x 2
 y 16
 connected 27
 end
+arch magic_banned
+x 2
+y 17
+end
 arch flagstone
 x 2
 y 17
@@ -669,6 +994,10 @@ end
 arch wall_2_1_2
 x 2
 y 17
+end
+arch magic_banned
+x 2
+y 18
 end
 arch flagstone
 x 2
@@ -679,6 +1008,10 @@ x 2
 y 18
 connected 26
 end
+arch magic_banned
+x 2
+y 19
+end
 arch flagstone
 x 2
 y 19
@@ -686,6 +1019,10 @@ end
 arch wall_2_1_2
 x 2
 y 19
+end
+arch magic_banned
+x 2
+y 20
 end
 arch flagstone
 x 2
@@ -696,6 +1033,10 @@ x 2
 y 20
 connected 25
 end
+arch magic_banned
+x 2
+y 21
+end
 arch flagstone
 x 2
 y 21
@@ -703,6 +1044,10 @@ end
 arch wall_2_1_2
 x 2
 y 21
+end
+arch magic_banned
+x 2
+y 22
 end
 arch flagstone
 x 2
@@ -713,6 +1058,10 @@ x 2
 y 22
 connected 24
 end
+arch magic_banned
+x 2
+y 23
+end
 arch flagstone
 x 2
 y 23
@@ -720,6 +1069,10 @@ end
 arch wall_2_1_2
 x 2
 y 23
+end
+arch magic_banned
+x 2
+y 24
 end
 arch flagstone
 x 2
@@ -730,6 +1083,10 @@ x 2
 y 24
 connected 23
 end
+arch magic_banned
+x 2
+y 25
+end
 arch flagstone
 x 2
 y 25
@@ -737,6 +1094,10 @@ end
 arch wall_2_1_2
 x 2
 y 25
+end
+arch magic_banned
+x 2
+y 26
 end
 arch flagstone
 x 2
@@ -747,6 +1108,10 @@ x 2
 y 26
 connected 34
 end
+arch magic_banned
+x 2
+y 27
+end
 arch flagstone
 x 2
 y 27
@@ -754,6 +1119,10 @@ end
 arch wall_2_1_2
 x 2
 y 27
+end
+arch magic_banned
+x 2
+y 28
 end
 arch flagstone
 x 2
@@ -764,6 +1133,10 @@ x 2
 y 28
 connected 35
 end
+arch magic_banned
+x 2
+y 29
+end
 arch flagstone
 x 2
 y 29
@@ -771,6 +1144,10 @@ end
 arch wall_2_1_2
 x 2
 y 29
+end
+arch magic_banned
+x 2
+y 30
 end
 arch flagstone
 x 2
@@ -781,6 +1158,10 @@ x 2
 y 30
 connected 22
 end
+arch magic_banned
+x 2
+y 31
+end
 arch flagstone
 x 2
 y 31
@@ -788,6 +1169,10 @@ end
 arch wall_2_1_2
 x 2
 y 31
+end
+arch magic_banned
+x 2
+y 32
 end
 arch flagstone
 x 2
@@ -798,6 +1183,10 @@ x 2
 y 32
 connected 21
 end
+arch magic_banned
+x 2
+y 33
+end
 arch flagstone
 x 2
 y 33
@@ -806,17 +1195,28 @@ arch wall_2_1_2
 x 2
 y 33
 end
-arch flagstone
+arch magic_banned
 x 2
 y 34
 end
 arch flagstone
 x 2
+y 34
+end
+arch magic_banned
+x 2
+y 35
+end
+arch flagstone
+x 2
 y 35
 end
 arch wall_2_1_2
 x 2
 y 35
+end
+arch magic_banned
+x 3
 end
 arch flagstone
 x 3
@@ -824,6 +1224,10 @@ end
 arch wall_3_3
 x 3
 end
+arch magic_banned
+x 3
+y 1
+end
 arch flagstone
 x 3
 y 1
@@ -836,6 +1240,10 @@ arch wall_2_1_1
 x 3
 y 1
 end
+arch magic_banned
+x 3
+y 2
+end
 arch flagstone
 x 3
 y 2
@@ -843,6 +1251,10 @@ end
 arch wall_2_1_1
 x 3
 y 2
+end
+arch magic_banned
+x 3
+y 3
 end
 arch flagstone
 x 3
@@ -852,9 +1264,17 @@ arch wall_1_2
 x 3
 y 3
 end
+arch magic_banned
+x 3
+y 4
+end
 arch flagstone
 x 3
 y 4
+end
+arch magic_banned
+x 3
+y 5
 end
 arch flagstone
 x 3
@@ -863,6 +1283,10 @@ end
 arch wall_1_3
 x 3
 y 5
+end
+arch magic_banned
+x 3
+y 6
 end
 arch goldfloor
 name 500 gold for all the mana you can hold..
@@ -871,6 +1295,10 @@ x 3
 y 6
 connected 32
 end
+arch magic_banned
+x 3
+y 7
+end
 arch flagstone
 x 3
 y 7
@@ -878,6 +1306,10 @@ end
 arch wall_1_3
 x 3
 y 7
+end
+arch magic_banned
+x 3
+y 8
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -886,6 +1318,10 @@ x 3
 y 8
 connected 31
 end
+arch magic_banned
+x 3
+y 9
+end
 arch flagstone
 x 3
 y 9
@@ -893,6 +1329,10 @@ end
 arch wall_1_3
 x 3
 y 9
+end
+arch magic_banned
+x 3
+y 10
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -901,6 +1341,10 @@ x 3
 y 10
 connected 30
 end
+arch magic_banned
+x 3
+y 11
+end
 arch flagstone
 x 3
 y 11
@@ -908,6 +1352,10 @@ end
 arch wall_1_3
 x 3
 y 11
+end
+arch magic_banned
+x 3
+y 12
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -916,6 +1364,10 @@ x 3
 y 12
 connected 29
 end
+arch magic_banned
+x 3
+y 13
+end
 arch flagstone
 x 3
 y 13
@@ -923,6 +1375,10 @@ end
 arch wall_1_3
 x 3
 y 13
+end
+arch magic_banned
+x 3
+y 14
 end
 arch goldfloor
 name drop 400 goldcoins for 400 mana
@@ -931,6 +1387,10 @@ x 3
 y 14
 connected 28
 end
+arch magic_banned
+x 3
+y 15
+end
 arch flagstone
 x 3
 y 15
@@ -938,6 +1398,10 @@ end
 arch wall_1_3
 x 3
 y 15
+end
+arch magic_banned
+x 3
+y 16
 end
 arch goldfloor
 name drop 400 goldcoins for 400 mana
@@ -946,6 +1410,10 @@ x 3
 y 16
 connected 27
 end
+arch magic_banned
+x 3
+y 17
+end
 arch flagstone
 x 3
 y 17
@@ -953,6 +1421,10 @@ end
 arch wall_1_3
 x 3
 y 17
+end
+arch magic_banned
+x 3
+y 18
 end
 arch goldfloor
 name drop 300 goldcoins for 300 mana
@@ -961,6 +1433,10 @@ x 3
 y 18
 connected 26
 end
+arch magic_banned
+x 3
+y 19
+end
 arch flagstone
 x 3
 y 19
@@ -968,6 +1444,10 @@ end
 arch wall_1_3
 x 3
 y 19
+end
+arch magic_banned
+x 3
+y 20
 end
 arch goldfloor
 name drop 300 goldcoins for 300 mana
@@ -976,6 +1456,10 @@ x 3
 y 20
 connected 25
 end
+arch magic_banned
+x 3
+y 21
+end
 arch flagstone
 x 3
 y 21
@@ -983,6 +1467,10 @@ end
 arch wall_1_3
 x 3
 y 21
+end
+arch magic_banned
+x 3
+y 22
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -991,6 +1479,10 @@ x 3
 y 22
 connected 24
 end
+arch magic_banned
+x 3
+y 23
+end
 arch flagstone
 x 3
 y 23
@@ -998,6 +1490,10 @@ end
 arch wall_1_3
 x 3
 y 23
+end
+arch magic_banned
+x 3
+y 24
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -1006,6 +1502,10 @@ x 3
 y 24
 connected 23
 end
+arch magic_banned
+x 3
+y 25
+end
 arch flagstone
 x 3
 y 25
@@ -1013,6 +1513,10 @@ end
 arch wall_1_3
 x 3
 y 25
+end
+arch magic_banned
+x 3
+y 26
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -1021,6 +1525,10 @@ x 3
 y 26
 connected 34
 end
+arch magic_banned
+x 3
+y 27
+end
 arch flagstone
 x 3
 y 27
@@ -1028,6 +1536,10 @@ end
 arch wall_1_3
 x 3
 y 27
+end
+arch magic_banned
+x 3
+y 28
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -1036,6 +1548,10 @@ x 3
 y 28
 connected 35
 end
+arch magic_banned
+x 3
+y 29
+end
 arch flagstone
 x 3
 y 29
@@ -1043,6 +1559,10 @@ end
 arch wall_1_3
 x 3
 y 29
+end
+arch magic_banned
+x 3
+y 30
 end
 arch goldfloor
 name drop 150 goldcoins for 150 mana
@@ -1051,6 +1571,10 @@ x 3
 y 30
 connected 22
 end
+arch magic_banned
+x 3
+y 31
+end
 arch flagstone
 x 3
 y 31
@@ -1058,6 +1582,10 @@ end
 arch wall_1_3
 x 3
 y 31
+end
+arch magic_banned
+x 3
+y 32
 end
 arch goldfloor
 name drop 100 goldcoins for 100 mana
@@ -1066,6 +1594,10 @@ x 3
 y 32
 connected 21
 end
+arch magic_banned
+x 3
+y 33
+end
 arch flagstone
 x 3
 y 33
@@ -1074,23 +1606,38 @@ arch wall_1_3
 x 3
 y 33
 end
-arch flagstone
+arch magic_banned
 x 3
 y 34
 end
 arch flagstone
 x 3
+y 34
+end
+arch magic_banned
+x 3
+y 35
+end
+arch flagstone
+x 3
 y 35
 end
 arch wall_2_1_2
 x 3
 y 35
 end
+arch magic_banned
+x 4
+end
 arch flagstone
 x 4
 end
 arch wall_2_1_2
 x 4
+end
+arch magic_banned
+x 4
+y 1
 end
 arch flagstone
 x 4
@@ -1105,6 +1652,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 4
+y 2
+end
 arch flagstone
 x 4
 y 2
@@ -1114,6 +1665,10 @@ x 4
 y 2
 connected 33
 end
+arch magic_banned
+x 4
+y 3
+end
 arch goldfloor
 name Mana in bulk.  Up to 2000 mana, for 1500 gold.
 food 1500
@@ -1121,129 +1676,257 @@ x 4
 y 3
 connected 33
 end
-arch flagstone
+arch magic_banned
 x 4
 y 4
 end
 arch flagstone
 x 4
+y 4
+end
+arch magic_banned
+x 4
 y 5
 end
 arch flagstone
+x 4
+y 5
+end
+arch magic_banned
 x 4
 y 6
 end
 arch flagstone
 x 4
+y 6
+end
+arch magic_banned
+x 4
 y 7
 end
 arch flagstone
+x 4
+y 7
+end
+arch magic_banned
 x 4
 y 8
 end
 arch flagstone
 x 4
+y 8
+end
+arch magic_banned
+x 4
 y 9
 end
 arch flagstone
+x 4
+y 9
+end
+arch magic_banned
 x 4
 y 10
 end
 arch flagstone
 x 4
+y 10
+end
+arch magic_banned
+x 4
 y 11
 end
 arch flagstone
+x 4
+y 11
+end
+arch magic_banned
 x 4
 y 12
 end
 arch flagstone
 x 4
+y 12
+end
+arch magic_banned
+x 4
 y 13
 end
 arch flagstone
+x 4
+y 13
+end
+arch magic_banned
 x 4
 y 14
 end
 arch flagstone
 x 4
+y 14
+end
+arch magic_banned
+x 4
 y 15
 end
 arch flagstone
+x 4
+y 15
+end
+arch magic_banned
 x 4
 y 16
 end
 arch flagstone
 x 4
+y 16
+end
+arch magic_banned
+x 4
 y 17
 end
 arch flagstone
+x 4
+y 17
+end
+arch magic_banned
 x 4
 y 18
 end
 arch flagstone
 x 4
+y 18
+end
+arch magic_banned
+x 4
 y 19
 end
 arch flagstone
+x 4
+y 19
+end
+arch magic_banned
 x 4
 y 20
 end
 arch flagstone
 x 4
+y 20
+end
+arch magic_banned
+x 4
 y 21
 end
 arch flagstone
+x 4
+y 21
+end
+arch magic_banned
 x 4
 y 22
 end
 arch flagstone
 x 4
+y 22
+end
+arch magic_banned
+x 4
 y 23
 end
 arch flagstone
+x 4
+y 23
+end
+arch magic_banned
 x 4
 y 24
 end
 arch flagstone
 x 4
+y 24
+end
+arch magic_banned
+x 4
 y 25
 end
 arch flagstone
+x 4
+y 25
+end
+arch magic_banned
 x 4
 y 26
 end
 arch flagstone
 x 4
+y 26
+end
+arch magic_banned
+x 4
 y 27
 end
 arch flagstone
+x 4
+y 27
+end
+arch magic_banned
 x 4
 y 28
 end
 arch flagstone
 x 4
+y 28
+end
+arch magic_banned
+x 4
 y 29
 end
 arch flagstone
+x 4
+y 29
+end
+arch magic_banned
 x 4
 y 30
 end
 arch flagstone
 x 4
+y 30
+end
+arch magic_banned
+x 4
 y 31
 end
 arch flagstone
+x 4
+y 31
+end
+arch magic_banned
 x 4
 y 32
 end
 arch flagstone
 x 4
+y 32
+end
+arch magic_banned
+x 4
 y 33
 end
 arch flagstone
 x 4
+y 33
+end
+arch magic_banned
+x 4
 y 34
+end
+arch flagstone
+x 4
+y 34
+end
+arch magic_banned
+x 4
+y 35
 end
 arch flagstone
 x 4
@@ -1253,12 +1936,19 @@ arch wall_2_1_2
 x 4
 y 35
 end
+arch magic_banned
+x 5
+end
 arch flagstone
 x 5
 end
 arch wall_3_3
 x 5
 end
+arch magic_banned
+x 5
+y 1
+end
 arch flagstone
 x 5
 y 1
@@ -1267,6 +1957,10 @@ arch wall_2_1_1
 x 5
 y 1
 end
+arch magic_banned
+x 5
+y 2
+end
 arch flagstone
 x 5
 y 2
@@ -1274,6 +1968,10 @@ end
 arch wall_2_1_1
 x 5
 y 2
+end
+arch magic_banned
+x 5
+y 3
 end
 arch flagstone
 x 5
@@ -1283,125 +1981,249 @@ arch wall_1_2
 x 5
 y 3
 end
-arch flagstone
+arch magic_banned
 x 5
 y 4
 end
 arch flagstone
 x 5
+y 4
+end
+arch magic_banned
+x 5
 y 5
 end
 arch flagstone
+x 5
+y 5
+end
+arch magic_banned
 x 5
 y 6
 end
 arch flagstone
 x 5
+y 6
+end
+arch magic_banned
+x 5
 y 7
 end
 arch flagstone
+x 5
+y 7
+end
+arch magic_banned
 x 5
 y 8
 end
 arch flagstone
 x 5
+y 8
+end
+arch magic_banned
+x 5
 y 9
 end
 arch flagstone
+x 5
+y 9
+end
+arch magic_banned
 x 5
 y 10
 end
 arch flagstone
 x 5
+y 10
+end
+arch magic_banned
+x 5
 y 11
 end
 arch flagstone
+x 5
+y 11
+end
+arch magic_banned
 x 5
 y 12
 end
 arch flagstone
 x 5
+y 12
+end
+arch magic_banned
+x 5
 y 13
 end
 arch flagstone
+x 5
+y 13
+end
+arch magic_banned
 x 5
 y 14
 end
 arch flagstone
 x 5
+y 14
+end
+arch magic_banned
+x 5
 y 15
 end
 arch flagstone
+x 5
+y 15
+end
+arch magic_banned
 x 5
 y 16
 end
 arch flagstone
 x 5
+y 16
+end
+arch magic_banned
+x 5
 y 17
 end
 arch flagstone
+x 5
+y 17
+end
+arch magic_banned
 x 5
 y 18
 end
 arch flagstone
 x 5
+y 18
+end
+arch magic_banned
+x 5
 y 19
 end
 arch flagstone
+x 5
+y 19
+end
+arch magic_banned
 x 5
 y 20
 end
 arch flagstone
 x 5
+y 20
+end
+arch magic_banned
+x 5
 y 21
 end
 arch flagstone
+x 5
+y 21
+end
+arch magic_banned
 x 5
 y 22
 end
 arch flagstone
 x 5
+y 22
+end
+arch magic_banned
+x 5
 y 23
 end
 arch flagstone
+x 5
+y 23
+end
+arch magic_banned
 x 5
 y 24
 end
 arch flagstone
 x 5
+y 24
+end
+arch magic_banned
+x 5
 y 25
 end
 arch flagstone
+x 5
+y 25
+end
+arch magic_banned
 x 5
 y 26
 end
 arch flagstone
 x 5
+y 26
+end
+arch magic_banned
+x 5
 y 27
 end
 arch flagstone
+x 5
+y 27
+end
+arch magic_banned
 x 5
 y 28
 end
 arch flagstone
 x 5
+y 28
+end
+arch magic_banned
+x 5
 y 29
 end
 arch flagstone
+x 5
+y 29
+end
+arch magic_banned
 x 5
 y 30
 end
 arch flagstone
 x 5
+y 30
+end
+arch magic_banned
+x 5
 y 31
 end
 arch flagstone
+x 5
+y 31
+end
+arch magic_banned
 x 5
 y 32
 end
 arch flagstone
 x 5
+y 32
+end
+arch magic_banned
+x 5
 y 33
+end
+arch flagstone
+x 5
+y 33
+end
+arch magic_banned
+x 5
+y 34
 end
 arch flagstone
 x 5
@@ -1411,6 +2233,10 @@ arch platinum_converter
 x 5
 y 34
 end
+arch magic_banned
+x 5
+y 35
+end
 arch flagstone
 x 5
 y 35
@@ -1419,17 +2245,16 @@ arch wall_2_1_2
 x 5
 y 35
 end
+arch magic_banned
+x 6
+end
 arch flagstone
 x 6
 end
 arch wall_2_1_2
 x 6
 end
-arch flagstone
-x 6
-y 1
-end
-arch flagstone
+arch magic_banned
 x 6
 y 1
 end
@@ -1446,6 +2271,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 6
+y 2
+end
 arch flagstone
 x 6
 y 2
@@ -1455,6 +2284,10 @@ x 6
 y 2
 connected 1
 end
+arch magic_banned
+x 6
+y 3
+end
 arch goldfloor
 name Mana in bulk.  2000 gold for 3000 mana.
 food 2000
@@ -1462,9 +2295,17 @@ x 6
 y 3
 connected 1
 end
+arch magic_banned
+x 6
+y 4
+end
 arch flagstone
 x 6
 y 4
+end
+arch magic_banned
+x 6
+y 5
 end
 arch flagstone
 x 6
@@ -1474,6 +2315,10 @@ arch wall_2_2_2
 x 6
 y 5
 end
+arch magic_banned
+x 6
+y 6
+end
 arch flagstone
 x 6
 y 6
@@ -1481,6 +2326,10 @@ end
 arch wall_2_1_1
 x 6
 y 6
+end
+arch magic_banned
+x 6
+y 7
 end
 arch flagstone
 x 6
@@ -1490,6 +2339,10 @@ arch wall_2_1_1
 x 6
 y 7
 end
+arch magic_banned
+x 6
+y 8
+end
 arch flagstone
 x 6
 y 8
@@ -1497,6 +2350,10 @@ end
 arch wall_2_1_1
 x 6
 y 8
+end
+arch magic_banned
+x 6
+y 9
 end
 arch flagstone
 x 6
@@ -1506,6 +2363,10 @@ arch wall_2_1_1
 x 6
 y 9
 end
+arch magic_banned
+x 6
+y 10
+end
 arch flagstone
 x 6
 y 10
@@ -1513,6 +2374,10 @@ end
 arch wall_2_1_1
 x 6
 y 10
+end
+arch magic_banned
+x 6
+y 11
 end
 arch flagstone
 x 6
@@ -1522,6 +2387,10 @@ arch wall_2_1_1
 x 6
 y 11
 end
+arch magic_banned
+x 6
+y 12
+end
 arch flagstone
 x 6
 y 12
@@ -1529,6 +2398,10 @@ end
 arch wall_2_1_1
 x 6
 y 12
+end
+arch magic_banned
+x 6
+y 13
 end
 arch flagstone
 x 6
@@ -1538,6 +2411,10 @@ arch wall_2_1_1
 x 6
 y 13
 end
+arch magic_banned
+x 6
+y 14
+end
 arch flagstone
 x 6
 y 14
@@ -1545,6 +2422,10 @@ end
 arch wall_2_1_1
 x 6
 y 14
+end
+arch magic_banned
+x 6
+y 15
 end
 arch flagstone
 x 6
@@ -1554,6 +2435,10 @@ arch wall_2_1_1
 x 6
 y 15
 end
+arch magic_banned
+x 6
+y 16
+end
 arch flagstone
 x 6
 y 16
@@ -1561,6 +2446,10 @@ end
 arch wall_2_1_1
 x 6
 y 16
+end
+arch magic_banned
+x 6
+y 17
 end
 arch flagstone
 x 6
@@ -1570,6 +2459,10 @@ arch wall_2_1_1
 x 6
 y 17
 end
+arch magic_banned
+x 6
+y 18
+end
 arch flagstone
 x 6
 y 18
@@ -1578,6 +2471,10 @@ arch wall_2_1_1
 x 6
 y 18
 end
+arch magic_banned
+x 6
+y 19
+end
 arch flagstone
 x 6
 y 19
@@ -1585,6 +2482,10 @@ end
 arch wall_2_1_1
 x 6
 y 19
+end
+arch magic_banned
+x 6
+y 20
 end
 arch flagstone
 x 6
@@ -1594,57 +2495,113 @@ arch wall_2_2_1
 x 6
 y 20
 end
-arch flagstone
+arch magic_banned
 x 6
 y 21
 end
 arch flagstone
 x 6
+y 21
+end
+arch magic_banned
+x 6
 y 22
 end
 arch flagstone
+x 6
+y 22
+end
+arch magic_banned
 x 6
 y 23
 end
 arch flagstone
 x 6
+y 23
+end
+arch magic_banned
+x 6
 y 24
 end
 arch flagstone
+x 6
+y 24
+end
+arch magic_banned
 x 6
 y 25
 end
 arch flagstone
 x 6
+y 25
+end
+arch magic_banned
+x 6
 y 26
 end
 arch flagstone
+x 6
+y 26
+end
+arch magic_banned
 x 6
 y 27
 end
 arch flagstone
 x 6
+y 27
+end
+arch magic_banned
+x 6
 y 28
 end
 arch flagstone
+x 6
+y 28
+end
+arch magic_banned
 x 6
 y 29
 end
 arch flagstone
 x 6
+y 29
+end
+arch magic_banned
+x 6
 y 30
 end
 arch flagstone
+x 6
+y 30
+end
+arch magic_banned
 x 6
 y 31
 end
 arch flagstone
 x 6
+y 31
+end
+arch magic_banned
+x 6
 y 32
 end
 arch flagstone
 x 6
+y 32
+end
+arch magic_banned
+x 6
 y 33
+end
+arch flagstone
+x 6
+y 33
+end
+arch magic_banned
+x 6
+y 34
 end
 arch flagstone
 x 6
@@ -1654,6 +2611,10 @@ arch silver_converter
 x 6
 y 34
 end
+arch magic_banned
+x 6
+y 35
+end
 arch flagstone
 x 6
 y 35
@@ -1662,12 +2623,19 @@ arch wall_2_1_2
 x 6
 y 35
 end
+arch magic_banned
+x 7
+end
 arch flagstone
 x 7
 end
 arch wall_3_3
 x 7
 end
+arch magic_banned
+x 7
+y 1
+end
 arch flagstone
 x 7
 y 1
@@ -1676,6 +2644,10 @@ arch wall_2_1_1
 x 7
 y 1
 end
+arch magic_banned
+x 7
+y 2
+end
 arch flagstone
 x 7
 y 2
@@ -1683,6 +2655,10 @@ end
 arch wall_2_1_1
 x 7
 y 2
+end
+arch magic_banned
+x 7
+y 3
 end
 arch flagstone
 x 7
@@ -1692,24 +2668,40 @@ arch wall_1_2
 x 7
 y 3
 end
-arch flagstone
+arch magic_banned
 x 7
 y 4
 end
 arch flagstone
 x 7
+y 4
+end
+arch magic_banned
+x 7
+y 5
+end
+arch flagstone
+x 7
 y 5
 end
 arch wall_2_1_2
 x 7
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 7
 y 6
 end
 arch shop_empty
 x 7
+y 6
+end
+arch magic_banned
+x 7
+y 7
+end
+arch shop_empty
+x 7
 y 7
 end
 arch potion_magic
@@ -1718,6 +2710,10 @@ y 7
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 8
 end
 arch shop_empty
 x 7
@@ -1730,6 +2726,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 9
+end
 arch shop_empty
 x 7
 y 9
@@ -1740,6 +2740,10 @@ y 9
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 10
 end
 arch shop_empty
 x 7
@@ -1752,6 +2756,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 11
+end
 arch shop_empty
 x 7
 y 11
@@ -1762,6 +2770,10 @@ y 11
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 12
 end
 arch shop_empty
 x 7
@@ -1774,6 +2786,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 13
+end
 arch shop_empty
 x 7
 y 13
@@ -1784,6 +2800,10 @@ y 13
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 14
 end
 arch shop_empty
 x 7
@@ -1796,6 +2816,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 15
+end
 arch shop_empty
 x 7
 y 15
@@ -1806,6 +2830,10 @@ y 15
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 16
 end
 arch shop_empty
 x 7
@@ -1818,6 +2846,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 17
+end
 arch shop_empty
 x 7
 y 17
@@ -1829,6 +2861,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 7
+y 18
+end
 arch shop_empty
 x 7
 y 18
@@ -1839,10 +2875,18 @@ y 18
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 7
+y 19
 end
 arch shop_empty
 x 7
 y 19
+end
+arch magic_banned
+x 7
+y 20
 end
 arch flagstone
 x 7
@@ -1852,57 +2896,113 @@ arch wall_2_1_2
 x 7
 y 20
 end
-arch flagstone
+arch magic_banned
 x 7
 y 21
 end
 arch flagstone
 x 7
+y 21
+end
+arch magic_banned
+x 7
 y 22
 end
 arch flagstone
+x 7
+y 22
+end
+arch magic_banned
 x 7
 y 23
 end
 arch flagstone
 x 7
+y 23
+end
+arch magic_banned
+x 7
 y 24
 end
 arch flagstone
+x 7
+y 24
+end
+arch magic_banned
 x 7
 y 25
 end
 arch flagstone
 x 7
+y 25
+end
+arch magic_banned
+x 7
 y 26
 end
 arch flagstone
+x 7
+y 26
+end
+arch magic_banned
 x 7
 y 27
 end
 arch flagstone
 x 7
+y 27
+end
+arch magic_banned
+x 7
 y 28
 end
 arch flagstone
+x 7
+y 28
+end
+arch magic_banned
 x 7
 y 29
 end
 arch flagstone
 x 7
+y 29
+end
+arch magic_banned
+x 7
 y 30
 end
 arch flagstone
+x 7
+y 30
+end
+arch magic_banned
 x 7
 y 31
 end
 arch flagstone
 x 7
+y 31
+end
+arch magic_banned
+x 7
 y 32
 end
 arch flagstone
 x 7
+y 32
+end
+arch magic_banned
+x 7
 y 33
+end
+arch flagstone
+x 7
+y 33
+end
+arch magic_banned
+x 7
+y 34
 end
 arch flagstone
 x 7
@@ -1912,6 +3012,10 @@ arch gold_converter
 x 7
 y 34
 end
+arch magic_banned
+x 7
+y 35
+end
 arch flagstone
 x 7
 y 35
@@ -1920,17 +3024,16 @@ arch wall_2_1_2
 x 7
 y 35
 end
+arch magic_banned
+x 8
+end
 arch flagstone
 x 8
 end
 arch wall_2_1_2
 x 8
 end
-arch flagstone
-x 8
-y 1
-end
-arch flagstone
+arch magic_banned
 x 8
 y 1
 end
@@ -1947,6 +3050,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 8
+y 2
+end
 arch flagstone
 x 8
 y 2
@@ -1956,6 +3063,10 @@ x 8
 y 2
 connected 2
 end
+arch magic_banned
+x 8
+y 3
+end
 arch goldfloor
 name Super volume discount!  3000 gold for 5000 mana.
 food 3000
@@ -1963,9 +3074,17 @@ x 8
 y 3
 connected 2
 end
+arch magic_banned
+x 8
+y 4
+end
 arch flagstone
 x 8
 y 4
+end
+arch magic_banned
+x 8
+y 5
 end
 arch flagstone
 x 8
@@ -1975,61 +3094,121 @@ arch wall_2_1_2
 x 8
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 8
 y 6
 end
 arch shop_empty
 x 8
+y 6
+end
+arch magic_banned
+x 8
 y 7
 end
 arch shop_empty
+x 8
+y 7
+end
+arch magic_banned
 x 8
 y 8
 end
 arch shop_empty
 x 8
+y 8
+end
+arch magic_banned
+x 8
 y 9
 end
 arch shop_empty
+x 8
+y 9
+end
+arch magic_banned
 x 8
 y 10
 end
 arch shop_empty
 x 8
+y 10
+end
+arch magic_banned
+x 8
 y 11
 end
 arch shop_empty
+x 8
+y 11
+end
+arch magic_banned
 x 8
 y 12
 end
 arch shop_empty
 x 8
+y 12
+end
+arch magic_banned
+x 8
 y 13
 end
 arch shop_empty
+x 8
+y 13
+end
+arch magic_banned
 x 8
 y 14
 end
 arch shop_empty
 x 8
+y 14
+end
+arch magic_banned
+x 8
 y 15
 end
 arch shop_empty
+x 8
+y 15
+end
+arch magic_banned
 x 8
 y 16
 end
 arch shop_empty
 x 8
+y 16
+end
+arch magic_banned
+x 8
 y 17
 end
 arch shop_empty
+x 8
+y 17
+end
+arch magic_banned
 x 8
 y 18
 end
 arch shop_empty
 x 8
+y 18
+end
+arch magic_banned
+x 8
 y 19
+end
+arch shop_empty
+x 8
+y 19
+end
+arch magic_banned
+x 8
+y 20
 end
 arch flagstone
 x 8
@@ -2039,13 +3218,25 @@ arch wall_1_3
 x 8
 y 20
 end
-arch flagstone
+arch magic_banned
 x 8
 y 21
 end
 arch flagstone
 x 8
+y 21
+end
+arch magic_banned
+x 8
 y 22
+end
+arch flagstone
+x 8
+y 22
+end
+arch magic_banned
+x 8
+y 23
 end
 arch flagstone
 x 8
@@ -2055,6 +3246,10 @@ arch wall_2_2_2
 x 8
 y 23
 end
+arch magic_banned
+x 8
+y 24
+end
 arch flagstone
 x 8
 y 24
@@ -2062,6 +3257,10 @@ end
 arch wall_2_1_1
 x 8
 y 24
+end
+arch magic_banned
+x 8
+y 25
 end
 arch flagstone
 x 8
@@ -2071,6 +3270,10 @@ arch wall_2_1_1
 x 8
 y 25
 end
+arch magic_banned
+x 8
+y 26
+end
 arch flagstone
 x 8
 y 26
@@ -2078,6 +3281,10 @@ end
 arch wall_2_1_1
 x 8
 y 26
+end
+arch magic_banned
+x 8
+y 27
 end
 arch flagstone
 x 8
@@ -2086,6 +3293,10 @@ end
 arch wall_2_2_1
 x 8
 y 27
+end
+arch magic_banned
+x 8
+y 28
 end
 arch dungeon_magic
 x 8
@@ -2100,6 +3311,10 @@ x 8
 y 28
 no_pass 1
 end
+arch magic_banned
+x 8
+y 29
+end
 arch dungeon_magic
 x 8
 y 29
@@ -2113,21 +3328,41 @@ x 8
 y 29
 no_pass 1
 end
-arch flagstone
+arch magic_banned
 x 8
 y 30
 end
 arch flagstone
 x 8
+y 30
+end
+arch magic_banned
+x 8
 y 31
 end
 arch flagstone
+x 8
+y 31
+end
+arch magic_banned
 x 8
 y 32
 end
 arch flagstone
 x 8
+y 32
+end
+arch magic_banned
+x 8
 y 33
+end
+arch flagstone
+x 8
+y 33
+end
+arch magic_banned
+x 8
+y 34
 end
 arch flagstone
 x 8
@@ -2137,6 +3372,10 @@ arch wall_1_1
 x 8
 y 34
 end
+arch magic_banned
+x 8
+y 35
+end
 arch flagstone
 x 8
 y 35
@@ -2145,12 +3384,19 @@ arch wall_3_1
 x 8
 y 35
 end
+arch magic_banned
+x 9
+end
 arch flagstone
 x 9
 end
 arch wall_3_3
 x 9
 end
+arch magic_banned
+x 9
+y 1
+end
 arch flagstone
 x 9
 y 1
@@ -2159,6 +3405,10 @@ arch wall_2_1_1
 x 9
 y 1
 end
+arch magic_banned
+x 9
+y 2
+end
 arch flagstone
 x 9
 y 2
@@ -2166,6 +3416,10 @@ end
 arch wall_2_1_1
 x 9
 y 2
+end
+arch magic_banned
+x 9
+y 3
 end
 arch flagstone
 x 9
@@ -2175,9 +3429,17 @@ arch wall_1_2
 x 9
 y 3
 end
+arch magic_banned
+x 9
+y 4
+end
 arch flagstone
 x 9
 y 4
+end
+arch magic_banned
+x 9
+y 5
 end
 arch flagstone
 x 9
@@ -2187,12 +3449,20 @@ arch wall_2_1_2
 x 9
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 9
 y 6
 end
 arch shop_empty
 x 9
+y 6
+end
+arch magic_banned
+x 9
+y 7
+end
+arch shop_empty
+x 9
 y 7
 end
 arch potion_magic
@@ -2201,6 +3471,10 @@ y 7
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 8
 end
 arch shop_empty
 x 9
@@ -2213,6 +3487,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 9
+end
 arch shop_empty
 x 9
 y 9
@@ -2223,6 +3501,10 @@ y 9
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 10
 end
 arch shop_empty
 x 9
@@ -2235,6 +3517,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 11
+end
 arch shop_empty
 x 9
 y 11
@@ -2245,6 +3531,10 @@ y 11
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 12
 end
 arch shop_empty
 x 9
@@ -2257,6 +3547,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 13
+end
 arch shop_empty
 x 9
 y 13
@@ -2267,6 +3561,10 @@ y 13
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 14
 end
 arch shop_empty
 x 9
@@ -2279,6 +3577,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 15
+end
 arch shop_empty
 x 9
 y 15
@@ -2289,6 +3591,10 @@ y 15
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 16
 end
 arch shop_empty
 x 9
@@ -2301,6 +3607,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 17
+end
 arch shop_empty
 x 9
 y 17
@@ -2312,6 +3622,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 9
+y 18
+end
 arch shop_empty
 x 9
 y 18
@@ -2322,10 +3636,18 @@ y 18
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 9
+y 19
 end
 arch shop_empty
 x 9
 y 19
+end
+arch magic_banned
+x 9
+y 20
 end
 arch dungeon_magic
 x 9
@@ -2339,6 +3661,10 @@ arch swall_1_4
 x 9
 y 20
 end
+arch magic_banned
+x 9
+y 21
+end
 arch flagstone
 x 9
 y 21
@@ -2350,9 +3676,17 @@ endmsg
 x 9
 y 21
 end
+arch magic_banned
+x 9
+y 22
+end
 arch flagstone
 x 9
 y 22
+end
+arch magic_banned
+x 9
+y 23
 end
 arch flagstone
 x 9
@@ -2362,9 +3696,17 @@ arch wall_1_3
 x 9
 y 23
 end
+arch magic_banned
+x 9
+y 24
+end
 arch flagstone
 x 9
 y 24
+end
+arch magic_banned
+x 9
+y 25
 end
 arch flagstone
 x 9
@@ -2375,13 +3717,11 @@ msg
 The Glowing Crystal exhibited here is one
 of the rare gemstones that are able to store
 mana.
- 
 Touching it when your mana is at maximum
 capacity will transfer half your mana
 into it. Touching it when you are below
 maximum capacity will retrieve any stored
 mana, up to your capacity.
- 
 This particular crystal can only store
 up to 200 mana. Crystals with capacities
 for 1000 mana and beyond are known to
@@ -2390,6 +3730,10 @@ all spellcasters.
 endmsg
 x 9
 y 25
+end
+arch magic_banned
+x 9
+y 26
 end
 arch flagstone
 x 9
@@ -2403,6 +3747,10 @@ y 26
 no_pick 1
 identified 1
 end
+arch magic_banned
+x 9
+y 27
+end
 arch flagstone
 x 9
 y 27
@@ -2411,6 +3759,10 @@ arch wall_2_1_2
 x 9
 y 27
 end
+arch magic_banned
+x 9
+y 28
+end
 arch dungeon_magic
 x 9
 y 28
@@ -2418,6 +3770,10 @@ end
 arch flagstone
 x 9
 y 28
+end
+arch magic_banned
+x 9
+y 29
 end
 arch dungeon_magic
 x 9
@@ -2432,21 +3788,41 @@ x 9
 y 29
 no_pass 1
 end
-arch flagstone
+arch magic_banned
 x 9
 y 30
 end
 arch flagstone
 x 9
+y 30
+end
+arch magic_banned
+x 9
 y 31
 end
 arch flagstone
+x 9
+y 31
+end
+arch magic_banned
 x 9
 y 32
 end
 arch flagstone
 x 9
+y 32
+end
+arch magic_banned
+x 9
 y 33
+end
+arch flagstone
+x 9
+y 33
+end
+arch magic_banned
+x 9
+y 34
 end
 arch flagstone
 x 9
@@ -2459,6 +3835,10 @@ sp 32
 x 9
 y 34
 end
+arch magic_banned
+x 9
+y 35
+end
 arch flagstone
 x 9
 y 35
@@ -2467,21 +3847,16 @@ arch wall_2_1_2
 x 9
 y 35
 end
+arch magic_banned
+x 10
+end
 arch flagstone
 x 10
 end
 arch wall_2_1_2
 x 10
 end
-arch flagstone
-x 10
-y 1
-end
-arch flagstone
-x 10
-y 1
-end
-arch flagstone
+arch magic_banned
 x 10
 y 1
 end
@@ -2498,6 +3873,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 10
+y 2
+end
 arch flagstone
 x 10
 y 2
@@ -2507,6 +3886,10 @@ x 10
 y 2
 connected 3
 end
+arch magic_banned
+x 10
+y 3
+end
 arch goldfloor
 name Awesome blockbuster deal!  10000 mana for 5000 gold.
 food 5000
@@ -2514,9 +3897,17 @@ x 10
 y 3
 connected 3
 end
+arch magic_banned
+x 10
+y 4
+end
 arch flagstone
 x 10
 y 4
+end
+arch magic_banned
+x 10
+y 5
 end
 arch flagstone
 x 10
@@ -2526,57 +3917,113 @@ arch wall_2_1_2
 x 10
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 10
 y 6
 end
 arch shop_empty
 x 10
+y 6
+end
+arch magic_banned
+x 10
 y 7
 end
 arch shop_empty
+x 10
+y 7
+end
+arch magic_banned
 x 10
 y 8
 end
 arch shop_empty
 x 10
+y 8
+end
+arch magic_banned
+x 10
 y 9
 end
 arch shop_empty
+x 10
+y 9
+end
+arch magic_banned
 x 10
 y 10
 end
 arch shop_empty
 x 10
+y 10
+end
+arch magic_banned
+x 10
 y 11
 end
 arch shop_empty
+x 10
+y 11
+end
+arch magic_banned
 x 10
 y 12
 end
 arch shop_empty
 x 10
+y 12
+end
+arch magic_banned
+x 10
 y 13
 end
 arch shop_empty
+x 10
+y 13
+end
+arch magic_banned
 x 10
 y 14
 end
 arch shop_empty
 x 10
+y 14
+end
+arch magic_banned
+x 10
 y 15
 end
 arch shop_empty
+x 10
+y 15
+end
+arch magic_banned
 x 10
 y 16
 end
 arch shop_empty
 x 10
+y 16
+end
+arch magic_banned
+x 10
 y 17
 end
 arch shop_empty
 x 10
+y 17
+end
+arch magic_banned
+x 10
 y 18
+end
+arch shop_empty
+x 10
+y 18
+end
+arch magic_banned
+x 10
+y 19
 end
 arch shop_empty
 x 10
@@ -2585,6 +4032,10 @@ end
 arch shop_mat
 x 10
 y 19
+end
+arch magic_banned
+x 10
+y 20
 end
 arch dungeon_magic
 x 10
@@ -2598,6 +4049,10 @@ arch swall_2_1_2
 x 10
 y 20
 end
+arch magic_banned
+x 10
+y 21
+end
 arch flagstone
 x 10
 y 21
@@ -2606,9 +4061,17 @@ arch shop_mat
 x 10
 y 21
 end
+arch magic_banned
+x 10
+y 22
+end
 arch flagstone
 x 10
 y 22
+end
+arch magic_banned
+x 10
+y 23
 end
 arch flagstone
 x 10
@@ -2619,17 +4082,33 @@ x 10
 y 23
 no_pass 0
 end
-arch flagstone
+arch magic_banned
 x 10
 y 24
 end
 arch flagstone
 x 10
+y 24
+end
+arch magic_banned
+x 10
 y 25
 end
 arch flagstone
 x 10
+y 25
+end
+arch magic_banned
+x 10
 y 26
+end
+arch flagstone
+x 10
+y 26
+end
+arch magic_banned
+x 10
+y 27
 end
 arch flagstone
 x 10
@@ -2638,6 +4117,10 @@ end
 arch wall_2_1_2
 x 10
 y 27
+end
+arch magic_banned
+x 10
+y 28
 end
 arch dungeon_magic
 x 10
@@ -2652,15 +4135,19 @@ name master of transferrence
 msg
 @match *
 Welcome to the House of Power!
-Here, you will find an abundant supply of fresh mana at a fee.
+Here, you will find an abundant supply of
+fresh mana at a fee.
 endmsg
+face wizard.151
 hp 100
 x 10
 y 28
 level 50
-type 0
-monster 1
 unaggressive 1
+end
+arch magic_banned
+x 10
+y 29
 end
 arch dungeon_magic
 x 10
@@ -2675,21 +4162,49 @@ x 10
 y 29
 no_pass 1
 end
-arch flagstone
+arch magic_banned
 x 10
 y 30
 end
 arch flagstone
 x 10
+y 30
+end
+arch altar
+name restore full mana (550 gold)
+slaying money
+sp 67
+food 5500
+x 10
+y 30
+end
+arch magic_banned
+x 10
 y 31
 end
 arch flagstone
+x 10
+y 31
+end
+arch magic_banned
 x 10
 y 32
 end
 arch flagstone
 x 10
+y 32
+end
+arch magic_banned
+x 10
 y 33
+end
+arch flagstone
+x 10
+y 33
+end
+arch magic_banned
+x 10
+y 34
 end
 arch flagstone
 x 10
@@ -2697,10 +4212,14 @@ y 34
 end
 arch exit
 slaying /world/world_105_115
-hp 14
+hp 13
 sp 32
 x 10
 y 34
+end
+arch magic_banned
+x 10
+y 35
 end
 arch flagstone
 x 10
@@ -2710,12 +4229,19 @@ arch wall_2_1_2
 x 10
 y 35
 end
+arch magic_banned
+x 11
+end
 arch flagstone
 x 11
 end
 arch wall_3_3
 x 11
 end
+arch magic_banned
+x 11
+y 1
+end
 arch flagstone
 x 11
 y 1
@@ -2724,6 +4250,10 @@ arch wall_2_1_1
 x 11
 y 1
 end
+arch magic_banned
+x 11
+y 2
+end
 arch flagstone
 x 11
 y 2
@@ -2731,6 +4261,10 @@ end
 arch wall_2_1_1
 x 11
 y 2
+end
+arch magic_banned
+x 11
+y 3
 end
 arch flagstone
 x 11
@@ -2740,9 +4274,17 @@ arch wall_1_2
 x 11
 y 3
 end
+arch magic_banned
+x 11
+y 4
+end
 arch flagstone
 x 11
 y 4
+end
+arch magic_banned
+x 11
+y 5
 end
 arch flagstone
 x 11
@@ -2752,12 +4294,20 @@ arch wall_2_1_2
 x 11
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 11
 y 6
 end
 arch shop_empty
 x 11
+y 6
+end
+arch magic_banned
+x 11
+y 7
+end
+arch shop_empty
+x 11
 y 7
 end
 arch potion_magic
@@ -2766,6 +4316,10 @@ y 7
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 8
 end
 arch shop_empty
 x 11
@@ -2778,6 +4332,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 9
+end
 arch shop_empty
 x 11
 y 9
@@ -2788,6 +4346,10 @@ y 9
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 10
 end
 arch shop_empty
 x 11
@@ -2800,6 +4362,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 11
+end
 arch shop_empty
 x 11
 y 11
@@ -2810,6 +4376,10 @@ y 11
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 12
 end
 arch shop_empty
 x 11
@@ -2822,6 +4392,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 13
+end
 arch shop_empty
 x 11
 y 13
@@ -2832,6 +4406,10 @@ y 13
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 14
 end
 arch shop_empty
 x 11
@@ -2844,6 +4422,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 15
+end
 arch shop_empty
 x 11
 y 15
@@ -2854,6 +4436,10 @@ y 15
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 16
 end
 arch shop_empty
 x 11
@@ -2866,6 +4452,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 17
+end
 arch shop_empty
 x 11
 y 17
@@ -2877,6 +4467,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 11
+y 18
+end
 arch shop_empty
 x 11
 y 18
@@ -2887,10 +4481,18 @@ y 18
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 11
+y 19
 end
 arch shop_empty
 x 11
 y 19
+end
+arch magic_banned
+x 11
+y 20
 end
 arch dungeon_magic
 x 11
@@ -2904,13 +4506,25 @@ arch swall_1_3
 x 11
 y 20
 end
-arch flagstone
+arch magic_banned
 x 11
 y 21
 end
 arch flagstone
 x 11
+y 21
+end
+arch magic_banned
+x 11
 y 22
+end
+arch flagstone
+x 11
+y 22
+end
+arch magic_banned
+x 11
+y 23
 end
 arch flagstone
 x 11
@@ -2919,6 +4533,10 @@ end
 arch wall_1_4
 x 11
 y 23
+end
+arch magic_banned
+x 11
+y 24
 end
 arch flagstone
 x 11
@@ -2933,16 +4551,17 @@ name exposition
 title of magical powers
 msg
 There are two factors controlling one's magical powers: mana capacity, and mana regeneration rate. Mana is the force that drives magical spells; mana capacity is how much mana one can naturally have. Mana regeneration rate is how fast this mana is replenished.
- 
 Mana capacity is controlled mainly by one's power (Pow) and level of magic experience.
 One's intelligence (Int) also affects this capacity, to a lesser degree.
- 
 Some magical equipment grant Pow bonuses, which will increase this capacity while worn. Improvement potions may also permanently increase one's mana capacity.
- 
 There are also very rare gemstones that have capacity to store mana. Mana stored in these crystals can be retrieved at a single touch. High-level wizards use these stones to increase the total amount of mana they have at their disposal.
 endmsg
 x 11
 y 24
+end
+arch magic_banned
+x 11
+y 25
 end
 arch flagstone
 x 11
@@ -2960,28 +4579,35 @@ one's mana is replenished. Some races,
 such as elves, have an innately fast mana
 regeneration. Spell-casting classes also
 regenerate mana at a faster rate.
- 
 Besides this, the equipment one uses may
 also affect mana regeneration rate:
 o  some magical rings or amulets are
-   resonant to the patterns of the aether,
-   and cause mana to flow into the wearer
-   faster. These items show a (magic+N)
-   when identified.
+resonant to the patterns of the aether,
+and cause mana to flow into the wearer
+faster. These items show a (magic+N)
+when identified.
 o  although some armour specially crafted
-   for mages may increase mana regeneration,
-   in general most heavy armour will impede
-   the flow of mana into the wearer and
-   slow down mana regeneration rates.
+for mages may increase mana regeneration,
+in general most heavy armour will impede
+the flow of mana into the wearer and
+slow down mana regeneration rates.
 o  Special weapons crafted for mages may
-   also have mana regeneration bonuses.
+also have mana regeneration bonuses.
 endmsg
 x 11
 y 25
 end
+arch magic_banned
+x 11
+y 26
+end
 arch flagstone
 x 11
 y 26
+end
+arch magic_banned
+x 11
+y 27
 end
 arch flagstone
 x 11
@@ -2991,6 +4617,10 @@ arch wall_2_1_2
 x 11
 y 27
 end
+arch magic_banned
+x 11
+y 28
+end
 arch dungeon_magic
 x 11
 y 28
@@ -2998,6 +4628,10 @@ end
 arch flagstone
 x 11
 y 28
+end
+arch magic_banned
+x 11
+y 29
 end
 arch dungeon_magic
 x 11
@@ -3012,21 +4646,41 @@ x 11
 y 29
 no_pass 1
 end
-arch flagstone
+arch magic_banned
 x 11
 y 30
 end
 arch flagstone
 x 11
+y 30
+end
+arch magic_banned
+x 11
 y 31
 end
 arch flagstone
+x 11
+y 31
+end
+arch magic_banned
 x 11
 y 32
 end
 arch flagstone
 x 11
+y 32
+end
+arch magic_banned
+x 11
 y 33
+end
+arch flagstone
+x 11
+y 33
+end
+arch magic_banned
+x 11
+y 34
 end
 arch flagstone
 x 11
@@ -3034,11 +4688,15 @@ y 34
 end
 arch exit
 slaying /world/world_105_115
-hp 14
+hp 13
 sp 32
 x 11
 y 34
 end
+arch magic_banned
+x 11
+y 35
+end
 arch flagstone
 x 11
 y 35
@@ -3047,25 +4705,16 @@ arch wall_2_1_2
 x 11
 y 35
 end
+arch magic_banned
+x 12
+end
 arch flagstone
 x 12
 end
 arch wall_2_1_2
 x 12
 end
-arch flagstone
-x 12
-y 1
-end
-arch flagstone
-x 12
-y 1
-end
-arch flagstone
-x 12
-y 1
-end
-arch flagstone
+arch magic_banned
 x 12
 y 1
 end
@@ -3082,6 +4731,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 12
+y 2
+end
 arch flagstone
 x 12
 y 2
@@ -3091,6 +4744,10 @@ x 12
 y 2
 connected 4
 end
+arch magic_banned
+x 12
+y 3
+end
 arch goldfloor
 name Super volume discount!  5000 mana for 3000 gold.
 food 3000
@@ -3098,9 +4755,17 @@ x 12
 y 3
 connected 4
 end
+arch magic_banned
+x 12
+y 4
+end
 arch flagstone
 x 12
 y 4
+end
+arch magic_banned
+x 12
+y 5
 end
 arch flagstone
 x 12
@@ -3110,61 +4775,121 @@ arch wall_2_1_2
 x 12
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 12
 y 6
 end
 arch shop_empty
 x 12
+y 6
+end
+arch magic_banned
+x 12
 y 7
 end
 arch shop_empty
+x 12
+y 7
+end
+arch magic_banned
 x 12
 y 8
 end
 arch shop_empty
 x 12
+y 8
+end
+arch magic_banned
+x 12
 y 9
 end
 arch shop_empty
+x 12
+y 9
+end
+arch magic_banned
 x 12
 y 10
 end
 arch shop_empty
 x 12
+y 10
+end
+arch magic_banned
+x 12
 y 11
 end
 arch shop_empty
+x 12
+y 11
+end
+arch magic_banned
 x 12
 y 12
 end
 arch shop_empty
 x 12
+y 12
+end
+arch magic_banned
+x 12
 y 13
 end
 arch shop_empty
+x 12
+y 13
+end
+arch magic_banned
 x 12
 y 14
 end
 arch shop_empty
 x 12
+y 14
+end
+arch magic_banned
+x 12
 y 15
 end
 arch shop_empty
+x 12
+y 15
+end
+arch magic_banned
 x 12
 y 16
 end
 arch shop_empty
 x 12
+y 16
+end
+arch magic_banned
+x 12
 y 17
 end
 arch shop_empty
+x 12
+y 17
+end
+arch magic_banned
 x 12
 y 18
 end
 arch shop_empty
 x 12
+y 18
+end
+arch magic_banned
+x 12
 y 19
+end
+arch shop_empty
+x 12
+y 19
+end
+arch magic_banned
+x 12
+y 20
 end
 arch flagstone
 x 12
@@ -3174,13 +4899,25 @@ arch wall_1_4
 x 12
 y 20
 end
-arch flagstone
+arch magic_banned
 x 12
 y 21
 end
 arch flagstone
 x 12
+y 21
+end
+arch magic_banned
+x 12
 y 22
+end
+arch flagstone
+x 12
+y 22
+end
+arch magic_banned
+x 12
+y 23
 end
 arch flagstone
 x 12
@@ -3190,6 +4927,10 @@ arch wall_2_2_3
 x 12
 y 23
 end
+arch magic_banned
+x 12
+y 24
+end
 arch flagstone
 x 12
 y 24
@@ -3197,6 +4938,10 @@ end
 arch wall_2_1_1
 x 12
 y 24
+end
+arch magic_banned
+x 12
+y 25
 end
 arch flagstone
 x 12
@@ -3206,6 +4951,10 @@ arch wall_2_1_1
 x 12
 y 25
 end
+arch magic_banned
+x 12
+y 26
+end
 arch flagstone
 x 12
 y 26
@@ -3213,6 +4962,10 @@ end
 arch wall_2_1_1
 x 12
 y 26
+end
+arch magic_banned
+x 12
+y 27
 end
 arch flagstone
 x 12
@@ -3221,6 +4974,10 @@ end
 arch wall_2_2_4
 x 12
 y 27
+end
+arch magic_banned
+x 12
+y 28
 end
 arch dungeon_magic
 x 12
@@ -3235,6 +4992,10 @@ x 12
 y 28
 no_pass 1
 end
+arch magic_banned
+x 12
+y 29
+end
 arch dungeon_magic
 x 12
 y 29
@@ -3248,21 +5009,41 @@ x 12
 y 29
 no_pass 1
 end
-arch flagstone
+arch magic_banned
 x 12
 y 30
 end
 arch flagstone
 x 12
+y 30
+end
+arch magic_banned
+x 12
 y 31
 end
 arch flagstone
+x 12
+y 31
+end
+arch magic_banned
 x 12
 y 32
 end
 arch flagstone
 x 12
+y 32
+end
+arch magic_banned
+x 12
 y 33
+end
+arch flagstone
+x 12
+y 33
+end
+arch magic_banned
+x 12
+y 34
 end
 arch flagstone
 x 12
@@ -3272,6 +5053,10 @@ arch wall_1_1
 x 12
 y 34
 end
+arch magic_banned
+x 12
+y 35
+end
 arch flagstone
 x 12
 y 35
@@ -3280,12 +5065,19 @@ arch wall_3_1
 x 12
 y 35
 end
+arch magic_banned
+x 13
+end
 arch flagstone
 x 13
 end
 arch wall_3_3
 x 13
 end
+arch magic_banned
+x 13
+y 1
+end
 arch flagstone
 x 13
 y 1
@@ -3294,6 +5086,10 @@ arch wall_2_1_1
 x 13
 y 1
 end
+arch magic_banned
+x 13
+y 2
+end
 arch flagstone
 x 13
 y 2
@@ -3301,6 +5097,10 @@ end
 arch wall_2_1_1
 x 13
 y 2
+end
+arch magic_banned
+x 13
+y 3
 end
 arch flagstone
 x 13
@@ -3310,24 +5110,40 @@ arch wall_1_2
 x 13
 y 3
 end
-arch flagstone
+arch magic_banned
 x 13
 y 4
 end
 arch flagstone
 x 13
+y 4
+end
+arch magic_banned
+x 13
+y 5
+end
+arch flagstone
+x 13
 y 5
 end
 arch wall_2_1_2
 x 13
 y 5
 end
-arch shop_empty
+arch magic_banned
 x 13
 y 6
 end
 arch shop_empty
 x 13
+y 6
+end
+arch magic_banned
+x 13
+y 7
+end
+arch shop_empty
+x 13
 y 7
 end
 arch potion_magic
@@ -3336,6 +5152,10 @@ y 7
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 8
 end
 arch shop_empty
 x 13
@@ -3348,6 +5168,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 9
+end
 arch shop_empty
 x 13
 y 9
@@ -3358,6 +5182,10 @@ y 9
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 10
 end
 arch shop_empty
 x 13
@@ -3370,6 +5198,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 11
+end
 arch shop_empty
 x 13
 y 11
@@ -3380,6 +5212,10 @@ y 11
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 12
 end
 arch shop_empty
 x 13
@@ -3392,6 +5228,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 13
+end
 arch shop_empty
 x 13
 y 13
@@ -3402,6 +5242,10 @@ y 13
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 14
 end
 arch shop_empty
 x 13
@@ -3414,6 +5258,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 15
+end
 arch shop_empty
 x 13
 y 15
@@ -3424,6 +5272,10 @@ y 15
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 16
 end
 arch shop_empty
 x 13
@@ -3436,6 +5288,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 17
+end
 arch shop_empty
 x 13
 y 17
@@ -3447,6 +5303,10 @@ value 10400
 unpaid 1
 identified 1
 end
+arch magic_banned
+x 13
+y 18
+end
 arch shop_empty
 x 13
 y 18
@@ -3457,10 +5317,18 @@ y 18
 value 10400
 unpaid 1
 identified 1
+end
+arch magic_banned
+x 13
+y 19
 end
 arch shop_empty
 x 13
 y 19
+end
+arch magic_banned
+x 13
+y 20
 end
 arch flagstone
 x 13
@@ -3470,59 +5338,111 @@ arch wall_2_1_2
 x 13
 y 20
 end
-arch flagstone
+arch magic_banned
 x 13
 y 21
 end
 arch flagstone
 x 13
+y 21
+end
+arch magic_banned
+x 13
 y 22
 end
 arch flagstone
+x 13
+y 22
+end
+arch magic_banned
 x 13
 y 23
 end
 arch flagstone
 x 13
+y 23
+end
+arch magic_banned
+x 13
 y 24
 end
 arch flagstone
+x 13
+y 24
+end
+arch magic_banned
 x 13
 y 25
 end
 arch flagstone
 x 13
+y 25
+end
+arch magic_banned
+x 13
 y 26
 end
 arch flagstone
+x 13
+y 26
+end
+arch magic_banned
 x 13
 y 27
 end
 arch flagstone
 x 13
+y 27
+end
+arch magic_banned
+x 13
 y 28
 end
 arch flagstone
+x 13
+y 28
+end
+arch magic_banned
 x 13
 y 29
 end
 arch flagstone
 x 13
+y 29
+end
+arch magic_banned
+x 13
 y 30
 end
 arch flagstone
+x 13
+y 30
+end
+arch magic_banned
 x 13
 y 31
 end
 arch flagstone
 x 13
+y 31
+end
+arch magic_banned
+x 13
 y 32
+end
+arch flagstone
+x 13
+y 32
+end
+arch magic_banned
+x 13
+y 33
 end
 arch flagstone
 x 13
 y 33
 end
-arch flagstone
+arch magic_banned
 x 13
 y 34
 end
@@ -3534,6 +5454,10 @@ arch gold_converter
 x 13
 y 34
 end
+arch magic_banned
+x 13
+y 35
+end
 arch flagstone
 x 13
 y 35
@@ -3542,17 +5466,16 @@ arch wall_2_1_2
 x 13
 y 35
 end
+arch magic_banned
+x 14
+end
 arch flagstone
 x 14
 end
 arch wall_2_1_2
 x 14
 end
-arch flagstone
-x 14
-y 1
-end
-arch flagstone
+arch magic_banned
 x 14
 y 1
 end
@@ -3569,6 +5492,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 14
+y 2
+end
 arch flagstone
 x 14
 y 2
@@ -3578,6 +5505,10 @@ x 14
 y 2
 connected 5
 end
+arch magic_banned
+x 14
+y 3
+end
 arch goldfloor
 name Mana in bulk. 3000 mana for 2000 gold.
 food 2000
@@ -3585,9 +5516,17 @@ x 14
 y 3
 connected 5
 end
+arch magic_banned
+x 14
+y 4
+end
 arch flagstone
 x 14
 y 4
+end
+arch magic_banned
+x 14
+y 5
 end
 arch flagstone
 x 14
@@ -3597,6 +5536,10 @@ arch wall_2_2_3
 x 14
 y 5
 end
+arch magic_banned
+x 14
+y 6
+end
 arch flagstone
 x 14
 y 6
@@ -3604,6 +5547,10 @@ end
 arch wall_2_1_1
 x 14
 y 6
+end
+arch magic_banned
+x 14
+y 7
 end
 arch flagstone
 x 14
@@ -3613,6 +5560,10 @@ arch wall_2_1_1
 x 14
 y 7
 end
+arch magic_banned
+x 14
+y 8
+end
 arch flagstone
 x 14
 y 8
@@ -3620,6 +5571,10 @@ end
 arch wall_2_1_1
 x 14
 y 8
+end
+arch magic_banned
+x 14
+y 9
 end
 arch flagstone
 x 14
@@ -3629,6 +5584,10 @@ arch wall_2_1_1
 x 14
 y 9
 end
+arch magic_banned
+x 14
+y 10
+end
 arch flagstone
 x 14
 y 10
@@ -3636,6 +5595,10 @@ end
 arch wall_2_1_1
 x 14
 y 10
+end
+arch magic_banned
+x 14
+y 11
 end
 arch flagstone
 x 14
@@ -3645,6 +5608,10 @@ arch wall_2_1_1
 x 14
 y 11
 end
+arch magic_banned
+x 14
+y 12
+end
 arch flagstone
 x 14
 y 12
@@ -3652,6 +5619,10 @@ end
 arch wall_2_1_1
 x 14
 y 12
+end
+arch magic_banned
+x 14
+y 13
 end
 arch flagstone
 x 14
@@ -3661,6 +5632,10 @@ arch wall_2_1_1
 x 14
 y 13
 end
+arch magic_banned
+x 14
+y 14
+end
 arch flagstone
 x 14
 y 14
@@ -3668,6 +5643,10 @@ end
 arch wall_2_1_1
 x 14
 y 14
+end
+arch magic_banned
+x 14
+y 15
 end
 arch flagstone
 x 14
@@ -3677,6 +5656,10 @@ arch wall_2_1_1
 x 14
 y 15
 end
+arch magic_banned
+x 14
+y 16
+end
 arch flagstone
 x 14
 y 16
@@ -3684,6 +5667,10 @@ end
 arch wall_2_1_1
 x 14
 y 16
+end
+arch magic_banned
+x 14
+y 17
 end
 arch flagstone
 x 14
@@ -3693,6 +5680,10 @@ arch wall_2_1_1
 x 14
 y 17
 end
+arch magic_banned
+x 14
+y 18
+end
 arch flagstone
 x 14
 y 18
@@ -3701,6 +5692,10 @@ arch wall_2_1_1
 x 14
 y 18
 end
+arch magic_banned
+x 14
+y 19
+end
 arch flagstone
 x 14
 y 19
@@ -3708,6 +5703,10 @@ end
 arch wall_2_1_1
 x 14
 y 19
+end
+arch magic_banned
+x 14
+y 20
 end
 arch flagstone
 x 14
@@ -3717,57 +5716,113 @@ arch wall_2_2_4
 x 14
 y 20
 end
-arch flagstone
+arch magic_banned
 x 14
 y 21
 end
 arch flagstone
 x 14
+y 21
+end
+arch magic_banned
+x 14
 y 22
 end
 arch flagstone
+x 14
+y 22
+end
+arch magic_banned
 x 14
 y 23
 end
 arch flagstone
 x 14
+y 23
+end
+arch magic_banned
+x 14
 y 24
 end
 arch flagstone
+x 14
+y 24
+end
+arch magic_banned
 x 14
 y 25
 end
 arch flagstone
 x 14
+y 25
+end
+arch magic_banned
+x 14
 y 26
 end
 arch flagstone
+x 14
+y 26
+end
+arch magic_banned
 x 14
 y 27
 end
 arch flagstone
 x 14
+y 27
+end
+arch magic_banned
+x 14
 y 28
 end
 arch flagstone
+x 14
+y 28
+end
+arch magic_banned
 x 14
 y 29
 end
 arch flagstone
 x 14
+y 29
+end
+arch magic_banned
+x 14
 y 30
 end
 arch flagstone
+x 14
+y 30
+end
+arch magic_banned
 x 14
 y 31
 end
 arch flagstone
 x 14
+y 31
+end
+arch magic_banned
+x 14
 y 32
 end
 arch flagstone
 x 14
+y 32
+end
+arch magic_banned
+x 14
 y 33
+end
+arch flagstone
+x 14
+y 33
+end
+arch magic_banned
+x 14
+y 34
 end
 arch flagstone
 x 14
@@ -3777,6 +5832,10 @@ arch platinum_converter
 x 14
 y 34
 end
+arch magic_banned
+x 14
+y 35
+end
 arch flagstone
 x 14
 y 35
@@ -3785,12 +5844,19 @@ arch wall_2_1_2
 x 14
 y 35
 end
+arch magic_banned
+x 15
+end
 arch flagstone
 x 15
 end
 arch wall_3_3
 x 15
 end
+arch magic_banned
+x 15
+y 1
+end
 arch flagstone
 x 15
 y 1
@@ -3799,6 +5865,10 @@ arch wall_2_1_1
 x 15
 y 1
 end
+arch magic_banned
+x 15
+y 2
+end
 arch flagstone
 x 15
 y 2
@@ -3806,6 +5876,10 @@ end
 arch wall_2_1_1
 x 15
 y 2
+end
+arch magic_banned
+x 15
+y 3
 end
 arch flagstone
 x 15
@@ -3815,125 +5889,249 @@ arch wall_1_2
 x 15
 y 3
 end
-arch flagstone
+arch magic_banned
 x 15
 y 4
 end
 arch flagstone
 x 15
+y 4
+end
+arch magic_banned
+x 15
 y 5
 end
 arch flagstone
+x 15
+y 5
+end
+arch magic_banned
 x 15
 y 6
 end
 arch flagstone
 x 15
+y 6
+end
+arch magic_banned
+x 15
 y 7
 end
 arch flagstone
+x 15
+y 7
+end
+arch magic_banned
 x 15
 y 8
 end
 arch flagstone
 x 15
+y 8
+end
+arch magic_banned
+x 15
 y 9
 end
 arch flagstone
+x 15
+y 9
+end
+arch magic_banned
 x 15
 y 10
 end
 arch flagstone
 x 15
+y 10
+end
+arch magic_banned
+x 15
 y 11
 end
 arch flagstone
+x 15
+y 11
+end
+arch magic_banned
 x 15
 y 12
 end
 arch flagstone
 x 15
+y 12
+end
+arch magic_banned
+x 15
 y 13
 end
 arch flagstone
+x 15
+y 13
+end
+arch magic_banned
 x 15
 y 14
 end
 arch flagstone
 x 15
+y 14
+end
+arch magic_banned
+x 15
 y 15
 end
 arch flagstone
+x 15
+y 15
+end
+arch magic_banned
 x 15
 y 16
 end
 arch flagstone
 x 15
+y 16
+end
+arch magic_banned
+x 15
 y 17
 end
 arch flagstone
+x 15
+y 17
+end
+arch magic_banned
 x 15
 y 18
 end
 arch flagstone
 x 15
+y 18
+end
+arch magic_banned
+x 15
 y 19
 end
 arch flagstone
+x 15
+y 19
+end
+arch magic_banned
 x 15
 y 20
 end
 arch flagstone
 x 15
+y 20
+end
+arch magic_banned
+x 15
 y 21
 end
 arch flagstone
+x 15
+y 21
+end
+arch magic_banned
 x 15
 y 22
 end
 arch flagstone
 x 15
+y 22
+end
+arch magic_banned
+x 15
 y 23
 end
 arch flagstone
+x 15
+y 23
+end
+arch magic_banned
 x 15
 y 24
 end
 arch flagstone
 x 15
+y 24
+end
+arch magic_banned
+x 15
 y 25
 end
 arch flagstone
+x 15
+y 25
+end
+arch magic_banned
 x 15
 y 26
 end
 arch flagstone
 x 15
+y 26
+end
+arch magic_banned
+x 15
 y 27
 end
 arch flagstone
+x 15
+y 27
+end
+arch magic_banned
 x 15
 y 28
 end
 arch flagstone
 x 15
+y 28
+end
+arch magic_banned
+x 15
 y 29
 end
 arch flagstone
+x 15
+y 29
+end
+arch magic_banned
 x 15
 y 30
 end
 arch flagstone
 x 15
+y 30
+end
+arch magic_banned
+x 15
 y 31
 end
 arch flagstone
+x 15
+y 31
+end
+arch magic_banned
 x 15
 y 32
 end
 arch flagstone
 x 15
+y 32
+end
+arch magic_banned
+x 15
 y 33
+end
+arch flagstone
+x 15
+y 33
+end
+arch magic_banned
+x 15
+y 34
 end
 arch flagstone
 x 15
@@ -3943,6 +6141,10 @@ arch silver_converter
 x 15
 y 34
 end
+arch magic_banned
+x 15
+y 35
+end
 arch flagstone
 x 15
 y 35
@@ -3951,13 +6153,16 @@ arch wall_2_1_2
 x 15
 y 35
 end
+arch magic_banned
+x 16
+end
 arch flagstone
 x 16
 end
 arch wall_2_1_2
 x 16
 end
-arch flagstone
+arch magic_banned
 x 16
 y 1
 end
@@ -3974,6 +6179,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 16
+y 2
+end
 arch flagstone
 x 16
 y 2
@@ -3983,6 +6192,10 @@ x 16
 y 2
 connected 6
 end
+arch magic_banned
+x 16
+y 3
+end
 arch goldfloor
 name Mana in bulk.  1500 gold for 2000 mana.
 food 1500
@@ -3990,129 +6203,257 @@ x 16
 y 3
 connected 6
 end
-arch flagstone
+arch magic_banned
 x 16
 y 4
 end
 arch flagstone
 x 16
+y 4
+end
+arch magic_banned
+x 16
 y 5
 end
 arch flagstone
+x 16
+y 5
+end
+arch magic_banned
 x 16
 y 6
 end
 arch flagstone
 x 16
+y 6
+end
+arch magic_banned
+x 16
 y 7
 end
 arch flagstone
+x 16
+y 7
+end
+arch magic_banned
 x 16
 y 8
 end
 arch flagstone
 x 16
+y 8
+end
+arch magic_banned
+x 16
 y 9
 end
 arch flagstone
+x 16
+y 9
+end
+arch magic_banned
 x 16
 y 10
 end
 arch flagstone
 x 16
+y 10
+end
+arch magic_banned
+x 16
 y 11
 end
 arch flagstone
+x 16
+y 11
+end
+arch magic_banned
 x 16
 y 12
 end
 arch flagstone
 x 16
+y 12
+end
+arch magic_banned
+x 16
 y 13
 end
 arch flagstone
+x 16
+y 13
+end
+arch magic_banned
 x 16
 y 14
 end
 arch flagstone
 x 16
+y 14
+end
+arch magic_banned
+x 16
 y 15
 end
 arch flagstone
+x 16
+y 15
+end
+arch magic_banned
 x 16
 y 16
 end
 arch flagstone
 x 16
+y 16
+end
+arch magic_banned
+x 16
 y 17
 end
 arch flagstone
+x 16
+y 17
+end
+arch magic_banned
 x 16
 y 18
 end
 arch flagstone
 x 16
+y 18
+end
+arch magic_banned
+x 16
 y 19
 end
 arch flagstone
+x 16
+y 19
+end
+arch magic_banned
 x 16
 y 20
 end
 arch flagstone
 x 16
+y 20
+end
+arch magic_banned
+x 16
 y 21
 end
 arch flagstone
+x 16
+y 21
+end
+arch magic_banned
 x 16
 y 22
 end
 arch flagstone
 x 16
+y 22
+end
+arch magic_banned
+x 16
 y 23
 end
 arch flagstone
+x 16
+y 23
+end
+arch magic_banned
 x 16
 y 24
 end
 arch flagstone
 x 16
+y 24
+end
+arch magic_banned
+x 16
 y 25
 end
 arch flagstone
+x 16
+y 25
+end
+arch magic_banned
 x 16
 y 26
 end
 arch flagstone
 x 16
+y 26
+end
+arch magic_banned
+x 16
 y 27
 end
 arch flagstone
+x 16
+y 27
+end
+arch magic_banned
 x 16
 y 28
 end
 arch flagstone
 x 16
+y 28
+end
+arch magic_banned
+x 16
 y 29
 end
 arch flagstone
+x 16
+y 29
+end
+arch magic_banned
 x 16
 y 30
 end
 arch flagstone
 x 16
+y 30
+end
+arch magic_banned
+x 16
 y 31
 end
 arch flagstone
+x 16
+y 31
+end
+arch magic_banned
 x 16
 y 32
 end
 arch flagstone
 x 16
+y 32
+end
+arch magic_banned
+x 16
 y 33
 end
 arch flagstone
 x 16
+y 33
+end
+arch magic_banned
+x 16
 y 34
+end
+arch flagstone
+x 16
+y 34
+end
+arch magic_banned
+x 16
+y 35
 end
 arch flagstone
 x 16
@@ -4122,12 +6463,19 @@ arch wall_2_1_2
 x 16
 y 35
 end
+arch magic_banned
+x 17
+end
 arch flagstone
 x 17
 end
 arch wall_3_3
 x 17
 end
+arch magic_banned
+x 17
+y 1
+end
 arch flagstone
 x 17
 y 1
@@ -4136,6 +6484,10 @@ arch wall_2_1_1
 x 17
 y 1
 end
+arch magic_banned
+x 17
+y 2
+end
 arch flagstone
 x 17
 y 2
@@ -4143,6 +6495,10 @@ end
 arch wall_2_1_1
 x 17
 y 2
+end
+arch magic_banned
+x 17
+y 3
 end
 arch flagstone
 x 17
@@ -4152,9 +6508,17 @@ arch wall_1_2
 x 17
 y 3
 end
+arch magic_banned
+x 17
+y 4
+end
 arch flagstone
 x 17
 y 4
+end
+arch magic_banned
+x 17
+y 5
 end
 arch flagstone
 x 17
@@ -4163,6 +6527,10 @@ end
 arch wall_1_4
 x 17
 y 5
+end
+arch magic_banned
+x 17
+y 6
 end
 arch goldfloor
 name 500 gold for all the mana you can hold.
@@ -4171,6 +6539,10 @@ x 17
 y 6
 connected 7
 end
+arch magic_banned
+x 17
+y 7
+end
 arch flagstone
 x 17
 y 7
@@ -4178,6 +6550,10 @@ end
 arch wall_1_4
 x 17
 y 7
+end
+arch magic_banned
+x 17
+y 8
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -4186,6 +6562,10 @@ x 17
 y 8
 connected 8
 end
+arch magic_banned
+x 17
+y 9
+end
 arch flagstone
 x 17
 y 9
@@ -4193,6 +6573,10 @@ end
 arch wall_1_4
 x 17
 y 9
+end
+arch magic_banned
+x 17
+y 10
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -4201,6 +6585,10 @@ x 17
 y 10
 connected 9
 end
+arch magic_banned
+x 17
+y 11
+end
 arch flagstone
 x 17
 y 11
@@ -4208,6 +6596,10 @@ end
 arch wall_1_4
 x 17
 y 11
+end
+arch magic_banned
+x 17
+y 12
 end
 arch goldfloor
 name drop 500 goldcoins for all-you-can-take mana
@@ -4216,6 +6608,10 @@ x 17
 y 12
 connected 10
 end
+arch magic_banned
+x 17
+y 13
+end
 arch flagstone
 x 17
 y 13
@@ -4223,6 +6619,10 @@ end
 arch wall_1_4
 x 17
 y 13
+end
+arch magic_banned
+x 17
+y 14
 end
 arch goldfloor
 name drop 400 goldcoins for 400 mana
@@ -4231,6 +6631,10 @@ x 17
 y 14
 connected 11
 end
+arch magic_banned
+x 17
+y 15
+end
 arch flagstone
 x 17
 y 15
@@ -4238,6 +6642,10 @@ end
 arch wall_1_4
 x 17
 y 15
+end
+arch magic_banned
+x 17
+y 16
 end
 arch goldfloor
 name drop 400 goldcoins for 400 mana
@@ -4246,6 +6654,10 @@ x 17
 y 16
 connected 12
 end
+arch magic_banned
+x 17
+y 17
+end
 arch flagstone
 x 17
 y 17
@@ -4253,6 +6665,10 @@ end
 arch wall_1_4
 x 17
 y 17
+end
+arch magic_banned
+x 17
+y 18
 end
 arch goldfloor
 name drop 300 goldcoins for 300 mana
@@ -4261,6 +6677,10 @@ x 17
 y 18
 connected 13
 end
+arch magic_banned
+x 17
+y 19
+end
 arch flagstone
 x 17
 y 19
@@ -4268,6 +6688,10 @@ end
 arch wall_1_4
 x 17
 y 19
+end
+arch magic_banned
+x 17
+y 20
 end
 arch goldfloor
 name drop 300 goldcoins for 300 mana
@@ -4276,6 +6700,10 @@ x 17
 y 20
 connected 14
 end
+arch magic_banned
+x 17
+y 21
+end
 arch flagstone
 x 17
 y 21
@@ -4283,6 +6711,10 @@ end
 arch wall_1_4
 x 17
 y 21
+end
+arch magic_banned
+x 17
+y 22
 end
 arch goldfloor
 name drop 300 goldcoins for 300 mana
@@ -4291,6 +6723,10 @@ x 17
 y 22
 connected 15
 end
+arch magic_banned
+x 17
+y 23
+end
 arch flagstone
 x 17
 y 23
@@ -4298,6 +6734,10 @@ end
 arch wall_1_4
 x 17
 y 23
+end
+arch magic_banned
+x 17
+y 24
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -4306,6 +6746,10 @@ x 17
 y 24
 connected 16
 end
+arch magic_banned
+x 17
+y 25
+end
 arch flagstone
 x 17
 y 25
@@ -4313,6 +6757,10 @@ end
 arch wall_1_4
 x 17
 y 25
+end
+arch magic_banned
+x 17
+y 26
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -4321,6 +6769,10 @@ x 17
 y 26
 connected 17
 end
+arch magic_banned
+x 17
+y 27
+end
 arch flagstone
 x 17
 y 27
@@ -4328,6 +6780,10 @@ end
 arch wall_1_4
 x 17
 y 27
+end
+arch magic_banned
+x 17
+y 28
 end
 arch goldfloor
 name drop 200 goldcoins for 200 mana
@@ -4336,6 +6792,10 @@ x 17
 y 28
 connected 18
 end
+arch magic_banned
+x 17
+y 29
+end
 arch flagstone
 x 17
 y 29
@@ -4343,6 +6803,10 @@ end
 arch wall_1_4
 x 17
 y 29
+end
+arch magic_banned
+x 17
+y 30
 end
 arch goldfloor
 name drop 150 goldcoins for 150 mana
@@ -4351,6 +6815,10 @@ x 17
 y 30
 connected 19
 end
+arch magic_banned
+x 17
+y 31
+end
 arch flagstone
 x 17
 y 31
@@ -4358,6 +6826,10 @@ end
 arch wall_1_4
 x 17
 y 31
+end
+arch magic_banned
+x 17
+y 32
 end
 arch flagstone
 x 17
@@ -4370,6 +6842,10 @@ endmsg
 x 17
 y 32
 end
+arch magic_banned
+x 17
+y 33
+end
 arch flagstone
 x 17
 y 33
@@ -4378,39 +6854,70 @@ arch wall_1_4
 x 17
 y 33
 end
-arch flagstone
+arch magic_banned
 x 17
 y 34
 end
 arch flagstone
 x 17
+y 34
+end
+arch magic_banned
+x 17
+y 35
+end
+arch flagstone
+x 17
 y 35
 end
 arch wall_2_1_2
 x 17
 y 35
 end
+arch magic_banned
+x 18
+end
 arch flagstone
 x 18
 end
 arch wall_2_1_2
 x 18
 end
-arch flagstone
+arch magic_banned
 x 18
 y 1
 end
 arch flagstone
 x 18
+y 1
+end
+arch magic_banned
+x 18
 y 2
 end
 arch flagstone
+x 18
+y 2
+end
+arch magic_banned
 x 18
 y 3
 end
 arch flagstone
 x 18
+y 3
+end
+arch magic_banned
+x 18
 y 4
+end
+arch flagstone
+x 18
+y 4
+end
+arch magic_banned
+x 18
+y 5
 end
 arch flagstone
 x 18
@@ -4419,6 +6926,10 @@ end
 arch wall_2_1_2
 x 18
 y 5
+end
+arch magic_banned
+x 18
+y 6
 end
 arch flagstone
 x 18
@@ -4429,6 +6940,10 @@ x 18
 y 6
 connected 7
 end
+arch magic_banned
+x 18
+y 7
+end
 arch flagstone
 x 18
 y 7
@@ -4436,6 +6951,10 @@ end
 arch wall_2_1_2
 x 18
 y 7
+end
+arch magic_banned
+x 18
+y 8
 end
 arch flagstone
 x 18
@@ -4446,6 +6965,10 @@ x 18
 y 8
 connected 8
 end
+arch magic_banned
+x 18
+y 9
+end
 arch flagstone
 x 18
 y 9
@@ -4453,6 +6976,10 @@ end
 arch wall_2_1_2
 x 18
 y 9
+end
+arch magic_banned
+x 18
+y 10
 end
 arch flagstone
 x 18
@@ -4463,6 +6990,10 @@ x 18
 y 10
 connected 9
 end
+arch magic_banned
+x 18
+y 11
+end
 arch flagstone
 x 18
 y 11
@@ -4470,6 +7001,10 @@ end
 arch wall_2_1_2
 x 18
 y 11
+end
+arch magic_banned
+x 18
+y 12
 end
 arch flagstone
 x 18
@@ -4480,6 +7015,10 @@ x 18
 y 12
 connected 10
 end
+arch magic_banned
+x 18
+y 13
+end
 arch flagstone
 x 18
 y 13
@@ -4487,6 +7026,10 @@ end
 arch wall_2_1_2
 x 18
 y 13
+end
+arch magic_banned
+x 18
+y 14
 end
 arch flagstone
 x 18
@@ -4497,6 +7040,10 @@ x 18
 y 14
 connected 11
 end
+arch magic_banned
+x 18
+y 15
+end
 arch flagstone
 x 18
 y 15
@@ -4504,6 +7051,10 @@ end
 arch wall_2_1_2
 x 18
 y 15
+end
+arch magic_banned
+x 18
+y 16
 end
 arch flagstone
 x 18
@@ -4514,6 +7065,10 @@ x 18
 y 16
 connected 12
 end
+arch magic_banned
+x 18
+y 17
+end
 arch flagstone
 x 18
 y 17
@@ -4521,6 +7076,10 @@ end
 arch wall_2_1_2
 x 18
 y 17
+end
+arch magic_banned
+x 18
+y 18
 end
 arch flagstone
 x 18
@@ -4531,6 +7090,10 @@ x 18
 y 18
 connected 13
 end
+arch magic_banned
+x 18
+y 19
+end
 arch flagstone
 x 18
 y 19
@@ -4538,6 +7101,10 @@ end
 arch wall_2_1_2
 x 18
 y 19
+end
+arch magic_banned
+x 18
+y 20
 end
 arch flagstone
 x 18
@@ -4548,6 +7115,10 @@ x 18
 y 20
 connected 14
 end
+arch magic_banned
+x 18
+y 21
+end
 arch flagstone
 x 18
 y 21
@@ -4555,6 +7126,10 @@ end
 arch wall_2_1_2
 x 18
 y 21
+end
+arch magic_banned
+x 18
+y 22
 end
 arch flagstone
 x 18
@@ -4565,6 +7140,10 @@ x 18
 y 22
 connected 15
 end
+arch magic_banned
+x 18
+y 23
+end
 arch flagstone
 x 18
 y 23
@@ -4572,6 +7151,10 @@ end
 arch wall_2_1_2
 x 18
 y 23
+end
+arch magic_banned
+x 18
+y 24
 end
 arch flagstone
 x 18
@@ -4582,6 +7165,10 @@ x 18
 y 24
 connected 16
 end
+arch magic_banned
+x 18
+y 25
+end
 arch flagstone
 x 18
 y 25
@@ -4589,6 +7176,10 @@ end
 arch wall_2_1_2
 x 18
 y 25
+end
+arch magic_banned
+x 18
+y 26
 end
 arch flagstone
 x 18
@@ -4599,6 +7190,10 @@ x 18
 y 26
 connected 17
 end
+arch magic_banned
+x 18
+y 27
+end
 arch flagstone
 x 18
 y 27
@@ -4606,6 +7201,10 @@ end
 arch wall_2_1_2
 x 18
 y 27
+end
+arch magic_banned
+x 18
+y 28
 end
 arch flagstone
 x 18
@@ -4616,6 +7215,10 @@ x 18
 y 28
 connected 18
 end
+arch magic_banned
+x 18
+y 29
+end
 arch flagstone
 x 18
 y 29
@@ -4623,6 +7226,10 @@ end
 arch wall_2_1_2
 x 18
 y 29
+end
+arch magic_banned
+x 18
+y 30
 end
 arch flagstone
 x 18
@@ -4633,6 +7240,10 @@ x 18
 y 30
 connected 19
 end
+arch magic_banned
+x 18
+y 31
+end
 arch flagstone
 x 18
 y 31
@@ -4640,6 +7251,10 @@ end
 arch wall_2_1_2
 x 18
 y 31
+end
+arch magic_banned
+x 18
+y 32
 end
 arch flagstone
 x 18
@@ -4651,6 +7266,10 @@ y 32
 speed 0.500000
 value 1
 end
+arch magic_banned
+x 18
+y 33
+end
 arch flagstone
 x 18
 y 33
@@ -4659,47 +7278,82 @@ arch wall_2_1_2
 x 18
 y 33
 end
-arch flagstone
+arch magic_banned
 x 18
 y 34
 end
 arch flagstone
 x 18
+y 34
+end
+arch magic_banned
+x 18
+y 35
+end
+arch flagstone
+x 18
 y 35
 end
 arch wall_2_1_2
 x 18
 y 35
 end
+arch magic_banned
+x 19
+end
 arch flagstone
 x 19
 end
 arch wall_2_1_2
 x 19
 end
-arch flagstone
+arch magic_banned
 x 19
 y 1
 end
 arch flagstone
 x 19
+y 1
+end
+arch magic_banned
+x 19
 y 2
 end
 arch flagstone
+x 19
+y 2
+end
+arch magic_banned
 x 19
 y 3
 end
 arch flagstone
 x 19
+y 3
+end
+arch magic_banned
+x 19
 y 4
 end
 arch flagstone
 x 19
+y 4
+end
+arch magic_banned
+x 19
+y 5
+end
+arch flagstone
+x 19
 y 5
 end
 arch wall_2_1_2
 x 19
 y 5
+end
+arch magic_banned
+x 19
+y 6
 end
 arch flagstone
 x 19
@@ -4709,6 +7363,10 @@ arch rune_regenerate_spellpoints
 x 19
 y 6
 end
+arch magic_banned
+x 19
+y 7
+end
 arch flagstone
 x 19
 y 7
@@ -4716,6 +7374,10 @@ end
 arch wall_2_1_2
 x 19
 y 7
+end
+arch magic_banned
+x 19
+y 8
 end
 arch flagstone
 x 19
@@ -4725,6 +7387,10 @@ arch rune_regenerate_spellpoints
 x 19
 y 8
 end
+arch magic_banned
+x 19
+y 9
+end
 arch flagstone
 x 19
 y 9
@@ -4732,6 +7398,10 @@ end
 arch wall_2_1_2
 x 19
 y 9
+end
+arch magic_banned
+x 19
+y 10
 end
 arch flagstone
 x 19
@@ -4741,6 +7411,10 @@ arch rune_regenerate_spellpoints
 x 19
 y 10
 end
+arch magic_banned
+x 19
+y 11
+end
 arch flagstone
 x 19
 y 11
@@ -4748,6 +7422,10 @@ end
 arch wall_2_1_2
 x 19
 y 11
+end
+arch magic_banned
+x 19
+y 12
 end
 arch flagstone
 x 19
@@ -4757,6 +7435,10 @@ arch rune_regenerate_spellpoints
 x 19
 y 12
 end
+arch magic_banned
+x 19
+y 13
+end
 arch flagstone
 x 19
 y 13
@@ -4764,6 +7446,10 @@ end
 arch wall_2_1_2
 x 19
 y 13
+end
+arch magic_banned
+x 19
+y 14
 end
 arch flagstone
 x 19
@@ -4778,6 +7464,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 15
+end
 arch flagstone
 x 19
 y 15
@@ -4785,6 +7475,10 @@ end
 arch wall_2_1_2
 x 19
 y 15
+end
+arch magic_banned
+x 19
+y 16
 end
 arch flagstone
 x 19
@@ -4799,6 +7493,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 17
+end
 arch flagstone
 x 19
 y 17
@@ -4806,6 +7504,10 @@ end
 arch wall_2_1_2
 x 19
 y 17
+end
+arch magic_banned
+x 19
+y 18
 end
 arch flagstone
 x 19
@@ -4820,6 +7522,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 19
+end
 arch flagstone
 x 19
 y 19
@@ -4827,6 +7533,10 @@ end
 arch wall_2_1_2
 x 19
 y 19
+end
+arch magic_banned
+x 19
+y 20
 end
 arch flagstone
 x 19
@@ -4841,6 +7551,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 21
+end
 arch flagstone
 x 19
 y 21
@@ -4848,6 +7562,10 @@ end
 arch wall_2_1_2
 x 19
 y 21
+end
+arch magic_banned
+x 19
+y 22
 end
 arch flagstone
 x 19
@@ -4862,6 +7580,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 23
+end
 arch flagstone
 x 19
 y 23
@@ -4869,6 +7591,10 @@ end
 arch wall_2_1_2
 x 19
 y 23
+end
+arch magic_banned
+x 19
+y 24
 end
 arch flagstone
 x 19
@@ -4883,6 +7609,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 25
+end
 arch flagstone
 x 19
 y 25
@@ -4890,6 +7620,10 @@ end
 arch wall_2_1_2
 x 19
 y 25
+end
+arch magic_banned
+x 19
+y 26
 end
 arch flagstone
 x 19
@@ -4904,6 +7638,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 27
+end
 arch flagstone
 x 19
 y 27
@@ -4911,6 +7649,10 @@ end
 arch wall_2_1_2
 x 19
 y 27
+end
+arch magic_banned
+x 19
+y 28
 end
 arch flagstone
 x 19
@@ -4925,6 +7667,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 29
+end
 arch flagstone
 x 19
 y 29
@@ -4932,6 +7678,10 @@ end
 arch wall_2_1_2
 x 19
 y 29
+end
+arch magic_banned
+x 19
+y 30
 end
 arch flagstone
 x 19
@@ -4946,6 +7696,10 @@ resist_cold 100
 material 0
 no_pick 1
 end
+arch magic_banned
+x 19
+y 31
+end
 arch flagstone
 x 19
 y 31
@@ -4953,6 +7707,10 @@ end
 arch wall_2_1_2
 x 19
 y 31
+end
+arch magic_banned
+x 19
+y 32
 end
 arch flagstone
 x 19
@@ -4962,6 +7720,10 @@ arch rune_transferrence
 x 19
 y 32
 end
+arch magic_banned
+x 19
+y 33
+end
 arch flagstone
 x 19
 y 33
@@ -4970,17 +7732,28 @@ arch wall_2_1_2
 x 19
 y 33
 end
-arch flagstone
+arch magic_banned
 x 19
 y 34
 end
 arch flagstone
 x 19
+y 34
+end
+arch magic_banned
+x 19
+y 35
+end
+arch flagstone
+x 19
 y 35
 end
 arch wall_2_1_2
 x 19
 y 35
+end
+arch magic_banned
+x 20
 end
 arch flagstone
 x 20
@@ -4988,6 +7761,10 @@ end
 arch wall_2_2_3
 x 20
 end
+arch magic_banned
+x 20
+y 1
+end
 arch flagstone
 x 20
 y 1
@@ -4995,6 +7772,10 @@ end
 arch wall_2_1_1
 x 20
 y 1
+end
+arch magic_banned
+x 20
+y 2
 end
 arch flagstone
 x 20
@@ -5004,6 +7785,10 @@ arch wall_2_1_1
 x 20
 y 2
 end
+arch magic_banned
+x 20
+y 3
+end
 arch flagstone
 x 20
 y 3
@@ -5011,6 +7796,10 @@ end
 arch wall_2_1_1
 x 20
 y 3
+end
+arch magic_banned
+x 20
+y 4
 end
 arch flagstone
 x 20
@@ -5020,6 +7809,10 @@ arch wall_2_1_1
 x 20
 y 4
 end
+arch magic_banned
+x 20
+y 5
+end
 arch flagstone
 x 20
 y 5
@@ -5027,6 +7820,10 @@ end
 arch wall_3_4
 x 20
 y 5
+end
+arch magic_banned
+x 20
+y 6
 end
 arch flagstone
 x 20
@@ -5036,6 +7833,10 @@ arch wall_2_1_1
 x 20
 y 6
 end
+arch magic_banned
+x 20
+y 7
+end
 arch flagstone
 x 20
 y 7
@@ -5043,6 +7844,10 @@ end
 arch wall_3_4
 x 20
 y 7
+end
+arch magic_banned
+x 20
+y 8
 end
 arch flagstone
 x 20
@@ -5052,6 +7857,10 @@ arch wall_2_1_1
 x 20
 y 8
 end
+arch magic_banned
+x 20
+y 9
+end
 arch flagstone
 x 20
 y 9
@@ -5059,6 +7868,10 @@ end
 arch wall_3_4
 x 20
 y 9
+end
+arch magic_banned
+x 20
+y 10
 end
 arch flagstone
 x 20
@@ -5068,6 +7881,10 @@ arch wall_2_1_1
 x 20
 y 10
 end
+arch magic_banned
+x 20
+y 11
+end
 arch flagstone
 x 20
 y 11
@@ -5075,6 +7892,10 @@ end
 arch wall_3_4
 x 20
 y 11
+end
+arch magic_banned
+x 20
+y 12
 end
 arch flagstone
 x 20
@@ -5084,6 +7905,10 @@ arch wall_2_1_1
 x 20
 y 12
 end
+arch magic_banned
+x 20
+y 13
+end
 arch flagstone
 x 20
 y 13
@@ -5091,6 +7916,10 @@ end
 arch wall_3_4
 x 20
 y 13
+end
+arch magic_banned
+x 20
+y 14
 end
 arch flagstone
 x 20
@@ -5100,6 +7929,10 @@ arch wall_2_1_1
 x 20
 y 14
 end
+arch magic_banned
+x 20
+y 15
+end
 arch flagstone
 x 20
 y 15
@@ -5107,6 +7940,10 @@ end
 arch wall_3_4
 x 20
 y 15
+end
+arch magic_banned
+x 20
+y 16
 end
 arch flagstone
 x 20
@@ -5116,6 +7953,10 @@ arch wall_2_1_1
 x 20
 y 16
 end
+arch magic_banned
+x 20
+y 17
+end
 arch flagstone
 x 20
 y 17
@@ -5123,6 +7964,10 @@ end
 arch wall_3_4
 x 20
 y 17
+end
+arch magic_banned
+x 20
+y 18
 end
 arch flagstone
 x 20
@@ -5132,6 +7977,10 @@ arch wall_2_1_1
 x 20
 y 18
 end
+arch magic_banned
+x 20
+y 19
+end
 arch flagstone
 x 20
 y 19
@@ -5139,6 +7988,10 @@ end
 arch wall_3_4
 x 20
 y 19
+end
+arch magic_banned
+x 20
+y 20
 end
 arch flagstone
 x 20
@@ -5148,6 +8001,10 @@ arch wall_2_1_1
 x 20
 y 20
 end
+arch magic_banned
+x 20
+y 21
+end
 arch flagstone
 x 20
 y 21
@@ -5155,6 +8012,10 @@ end
 arch wall_3_4
 x 20
 y 21
+end
+arch magic_banned
+x 20
+y 22
 end
 arch flagstone
 x 20
@@ -5164,6 +8025,10 @@ arch wall_2_1_1
 x 20
 y 22
 end
+arch magic_banned
+x 20
+y 23
+end
 arch flagstone
 x 20
 y 23
@@ -5171,6 +8036,10 @@ end
 arch wall_3_4
 x 20
 y 23
+end
+arch magic_banned
+x 20
+y 24
 end
 arch flagstone
 x 20
@@ -5180,6 +8049,10 @@ arch wall_2_1_1
 x 20
 y 24
 end
+arch magic_banned
+x 20
+y 25
+end
 arch flagstone
 x 20
 y 25
@@ -5187,6 +8060,10 @@ end
 arch wall_3_4
 x 20
 y 25
+end
+arch magic_banned
+x 20
+y 26
 end
 arch flagstone
 x 20
@@ -5196,6 +8073,10 @@ arch wall_2_1_1
 x 20
 y 26
 end
+arch magic_banned
+x 20
+y 27
+end
 arch flagstone
 x 20
 y 27
@@ -5203,6 +8084,10 @@ end
 arch wall_3_4
 x 20
 y 27
+end
+arch magic_banned
+x 20
+y 28
 end
 arch flagstone
 x 20
@@ -5212,6 +8097,10 @@ arch wall_2_1_1
 x 20
 y 28
 end
+arch magic_banned
+x 20
+y 29
+end
 arch flagstone
 x 20
 y 29
@@ -5219,6 +8108,10 @@ end
 arch wall_3_4
 x 20
 y 29
+end
+arch magic_banned
+x 20
+y 30
 end
 arch flagstone
 x 20
@@ -5228,6 +8121,10 @@ arch wall_2_1_1
 x 20
 y 30
 end
+arch magic_banned
+x 20
+y 31
+end
 arch flagstone
 x 20
 y 31
@@ -5235,6 +8132,10 @@ end
 arch wall_3_4
 x 20
 y 31
+end
+arch magic_banned
+x 20
+y 32
 end
 arch flagstone
 x 20
@@ -5244,6 +8145,10 @@ arch wall_2_1_1
 x 20
 y 32
 end
+arch magic_banned
+x 20
+y 33
+end
 arch flagstone
 x 20
 y 33
@@ -5252,6 +8157,10 @@ arch wall_3_4
 x 20
 y 33
 end
+arch magic_banned
+x 20
+y 34
+end
 arch flagstone
 x 20
 y 34
@@ -5259,6 +8168,10 @@ end
 arch wall_2_1_1
 x 20
 y 34
+end
+arch magic_banned
+x 20
+y 35
 end
 arch flagstone
 x 20
