@@ -198,14 +198,14 @@ arch dungeon_magic
 y 31
 end
 arch brush
-elevation 803
+elevation 4274
 y 31
 end
 arch dungeon_magic
 y 32
 end
-arch grass
-elevation 4780
+arch brush
+elevation 4274
 y 32
 end
 arch dungeon_magic
@@ -581,7 +581,7 @@ x 1
 y 31
 end
 arch brush
-elevation 2912
+elevation 4274
 x 1
 y 31
 end
@@ -590,7 +590,7 @@ x 1
 y 32
 end
 arch brush
-elevation 4616
+elevation 4274
 x 1
 y 32
 end
@@ -2417,8 +2417,9 @@ information on where to go and do.
 --oOo--
 WARNING: Magic is not permitted
 within Scorn city limits.
+--oOo--
+Please do not litter.
 endmsg
-name_pl Central Square of Scorn
 x 5
 y 36
 end
@@ -2860,7 +2861,7 @@ x 6
 y 40
 end
 arch grass
-elevation 9227
+elevation 9094
 x 6
 y 40
 end
@@ -3155,7 +3156,8 @@ elevation 127
 x 7
 y 28
 end
-arch barrack_small
+arch tavern
+name The Rowdy Sailor
 x 7
 y 28
 end
@@ -16255,11 +16257,10 @@ end
 arch barn
 y 28
 end
-arch store_general
-name General Shop
-name_pl General Shop
-slaying /scorn/shops/generalshop
-hp 1
+arch guild
+name Scorn Sale Shop
+slaying /scorn/shops/scorn.sale
+hp 10
 sp 1
 y 31
 end
@@ -16346,8 +16347,10 @@ x 9
 y 25
 end
 arch guild
-name The Rowdy Sailor
-name_pl The Rowdy Sailor
+name Acme Inc. Building Shop
+slaying /scorn/shops/buildshop
+hp 17
+sp 17
 x 9
 y 28
 end
