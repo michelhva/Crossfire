@@ -1,0 +1,34 @@
+#
+# Creator: josh@woosworld.net
+#
+
+TODO
+*auto key tracking system? (python to rename the shop?)
+
+v 1.2.2 -- 20 Sep 2004
+*updated pshops_copy to properly set exit points
+
+v 1.2.1 -- 20 Sep 2004
+*pshops_changelog moved to brest/pshops -- no idea why I didn't have it there
+to begin with...
+*corrected gfloor exits to correct spot on pshop_main
+
+v 1.2 -- 20 Sep 2004
+*I have added the script I used to replicate the maps into the tarball in
+case anyone else wants to play with the pshops maps
+*replaced the edible hides on gfloor maps with nonedible carpet
+*removed the no magic restriction on pshops_main to allow portals in/out easier
+*added carpet to floor1's
+*added managers office to pshopsinc
+*added stairs up (to third floor) to floor1 (for future use)
+*added stairs down (to basement) to gfloor  (for future use)
+*added unique tiles to pshopsinc under alters/gates to be a little safer
+*storage room on floor1 now allows magic (for owner convenience)
+*pshops_main allows magic for portaling sake (no real reason to not allow it)
+
+v 1.1 -- 19 Sep 2004
+*added key price to sign in pshopsinc
+*correct a problem where you can get stuck inside a gate after buying a key :-)
+
+v 1.0 -- 19 Sep 2004
+*Initial Release
