@@ -8412,17 +8412,8 @@ elevation 2373
 x 33
 y 38
 end
-arch exit
-slaying /quests/peterm/temple/Temple
-hp 16
-sp 31
+arch jungle_2
 elevation 0
-x 33
-y 39
-end
-arch jungle_1
-name Dark Forest
-face bforest.111
 x 33
 y 39
 end
@@ -9830,8 +9821,12 @@ elevation 1312
 x 39
 y 21
 end
-arch evergreen
+arch grassdark
 elevation 1592
+x 39
+y 22
+end
+arch ytree
 x 39
 y 22
 end
@@ -10079,22 +10074,26 @@ elevation 1450
 x 40
 y 21
 end
-arch evergreen
+arch grassdark
 elevation 1368
 x 40
 y 22
 end
-arch woods_2
+arch ytree
+x 40
+y 22
+end
+arch jungle_2
 elevation 0
 x 40
 y 23
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 40
 y 24
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 40
 y 25
@@ -10323,22 +10322,34 @@ elevation 1217
 x 41
 y 20
 end
-arch evergreen
+arch grassdark
 elevation 1443
 x 41
 y 21
 end
-arch evergreen
+arch ytree
+x 41
+y 21
+end
+arch grassdark
 elevation 1356
 x 41
 y 22
 end
-arch evergreen
+arch ytree_2
+x 41
+y 22
+end
+arch grassdark
 elevation 1107
 x 41
 y 23
 end
-arch woods_2
+arch ytree
+x 41
+y 23
+end
+arch jungle_2
 elevation 0
 x 41
 y 24
@@ -10353,7 +10364,7 @@ elevation 0
 x 41
 y 26
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 41
 y 27
@@ -10572,13 +10583,21 @@ elevation 1384
 x 42
 y 20
 end
-arch evergreen
+arch grassdark
 elevation 1464
 x 42
 y 21
 end
-arch evergreen
+arch tree6
+x 42
+y 21
+end
+arch grassdark
 elevation 1391
+x 42
+y 22
+end
+arch generate_bat
 x 42
 y 22
 end
@@ -10587,7 +10606,7 @@ elevation 1080
 x 42
 y 23
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 42
 y 24
@@ -10597,17 +10616,17 @@ elevation 0
 x 42
 y 25
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 42
 y 26
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 42
 y 27
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 42
 y 28
@@ -10825,13 +10844,21 @@ elevation 1344
 x 43
 y 20
 end
-arch evergreen
+arch grassdark
 elevation 1489
 x 43
 y 21
 end
-arch evergreen
+arch tree6
+x 43
+y 21
+end
+arch grassdark
 elevation 1369
+x 43
+y 22
+end
+arch tree6
 x 43
 y 22
 end
@@ -10850,12 +10877,12 @@ elevation 0
 x 43
 y 25
 end
-arch woods
+arch jungle_1
 elevation 0
 x 43
 y 26
 end
-arch woods
+arch jungle_1
 elevation 0
 x 43
 y 27
@@ -11069,18 +11096,30 @@ elevation 0
 x 44
 y 19
 end
-arch evergreen
+arch grassmedium
 elevation 1345
 x 44
 y 20
 end
-arch evergreen
+arch ytree
+x 44
+y 20
+end
+arch grassmedium
 elevation 1487
 x 44
 y 21
 end
-arch evergreen
+arch ytree_2
+x 44
+y 21
+end
+arch grassmedium
 elevation 1343
+x 44
+y 22
+end
+arch tree6
 x 44
 y 22
 end
@@ -11094,12 +11133,12 @@ elevation 0
 x 44
 y 24
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 44
 y 25
 end
-arch woods
+arch jungle_1
 elevation 0
 x 44
 y 26
@@ -11119,17 +11158,17 @@ elevation 0
 x 44
 y 29
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 44
 y 30
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 44
 y 31
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 44
 y 32
@@ -11318,18 +11357,34 @@ elevation 0
 x 45
 y 19
 end
-arch evergreen
+arch grassmedium
 elevation 1403
 x 45
 y 20
 end
-arch evergreen
+arch tree6
+x 45
+y 20
+end
+arch grassmedium
 elevation 1524
 x 45
 y 21
 end
-arch evergreen
+arch ytree_2
+x 45
+y 21
+end
+arch deathtree
+x 45
+y 21
+end
+arch grassmedium
 elevation 1238
+x 45
+y 22
+end
+arch tree6
 x 45
 y 22
 end
@@ -11338,47 +11393,47 @@ elevation 0
 x 45
 y 23
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 24
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 25
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 26
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 45
 y 27
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 28
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 29
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 45
 y 30
 end
-arch woods
+arch jungle_1
 elevation 0
 x 45
 y 31
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 45
 y 32
@@ -11567,18 +11622,30 @@ elevation 0
 x 46
 y 19
 end
-arch evergreen
+arch grass_br_gr
 elevation 1308
 x 46
 y 20
 end
-arch evergreen
+arch ytree
+x 46
+y 20
+end
+arch grassmedium
 elevation 1386
 x 46
 y 21
 end
-arch evergreen
+arch ytree_2
+x 46
+y 21
+end
+arch grassmedium
 elevation 1058
+x 46
+y 22
+end
+arch ytree
 x 46
 y 22
 end
@@ -11587,47 +11654,47 @@ elevation 0
 x 46
 y 23
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 24
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 46
 y 25
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 26
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 27
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 28
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 46
 y 29
 end
-arch woods_2
+arch jungle_2
 elevation 0
 x 46
 y 30
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 31
 end
-arch woods
+arch jungle_1
 elevation 0
 x 46
 y 32
@@ -11816,18 +11883,35 @@ elevation 0
 x 47
 y 19
 end
-arch woods_2
-elevation 0
+arch exit
+slaying /quests/peterm/temple/Temple
+hp 16
+sp 31
+elevation 1300
 x 47
 y 20
 end
-arch evergreen
+arch jungle_1
+name Dark Forest
+face bforest.111
+x 47
+y 20
+end
+arch grass_br_gr
 elevation 1242
 x 47
 y 21
 end
-arch evergreen
+arch ytree
+x 47
+y 21
+end
+arch grass_br_gr
 elevation 1036
+x 47
+y 22
+end
+arch tree6
 x 47
 y 22
 end
@@ -11841,7 +11925,7 @@ elevation 0
 x 47
 y 24
 end
-arch woods
+arch jungle_1
 elevation 0
 x 47
 y 25
@@ -12065,18 +12149,30 @@ elevation 0
 x 48
 y 19
 end
-arch evergreen
+arch grassbrown
 elevation 1332
 x 48
 y 20
 end
-arch evergreen
+arch ytree
+x 48
+y 20
+end
+arch grassbrown
 elevation 1097
 x 48
 y 21
 end
-arch evergreen
+arch tree6
+x 48
+y 21
+end
+arch grass_br_gr
 elevation 1247
+x 48
+y 22
+end
+arch tree6
 x 48
 y 22
 end
@@ -12309,28 +12405,48 @@ elevation 1396
 x 49
 y 18
 end
-arch evergreen
+arch grassbrown
 elevation 1614
 x 49
 y 19
 end
-arch evergreen
+arch ytree
+x 49
+y 19
+end
+arch grassbrown
 elevation 1781
 x 49
 y 20
 end
-arch evergreen
+arch ytree_2
+x 49
+y 20
+end
+arch grassbrown
 elevation 1804
 x 49
 y 21
 end
-arch evergreen
+arch tree6
+x 49
+y 21
+end
+arch grassbrown
 elevation 1541
 x 49
 y 22
 end
-arch evergreen
+arch ytree_2
+x 49
+y 22
+end
+arch grassbrown
 elevation 1049
+x 49
+y 23
+end
+arch ytree_2
 x 49
 y 23
 end
