@@ -1,7 +1,7 @@
 Object typhoid
 name typhoid
 type 158
-attacktype 1
+attacktype 1048576
 invisible 1
 wc 10
 magic -1

@@ -2,7 +2,7 @@ Object smallpox
 name smallpox
 type 158
 invisible 1
-attacktype 1
+attacktype 1048576
 wc 20
 magic -3
 Str -1
