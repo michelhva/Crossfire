@@ -64,6 +64,7 @@ no_drop 1
 end
 Object dragon_ability_force
 name dragon ability
+title fire hatchling
 invisible 1
 type 114
 exp 2
