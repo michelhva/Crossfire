@@ -1,16 +1,16 @@
 arch map
 name world_102_108
-reset_timeout 7200
-difficulty 1
-width 50
-height 50
-enter_x 1
-enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 19 17:43:59 2002
 endmsg
+width 50
+height 50
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_102_107
 tile_path_2 world_103_108
@@ -683,12 +683,12 @@ y 20
 end
 arch ruins
 name mudman's place
-slaying /santo_dominion/mudman/mudman.1
 msg
 Urgh! The swamp is cold and soaking
 wet. Smells rotten... You feel an urge
 to leave this place.
 endmsg
+slaying /santo_dominion/mudman/mudman.1
 hp 28
 sp 11
 x 3
@@ -3232,14 +3232,6 @@ arch sea1
 x 14
 y 9
 end
-arch s_ship
-name Ship to Stoneville
-slaying /dragonisland/stoneville
-hp 7
-sp 10
-x 14
-y 9
-end
 arch sea1
 x 14
 y 10
@@ -3451,14 +3443,6 @@ arch brush
 x 15
 y 6
 end
-arch inn
-name The Golden Lion
-slaying /santo_dominion/tavern
-hp 14
-sp 18
-x 15
-y 6
-end
 arch cobblestones
 x 15
 y 7
@@ -3472,9 +3456,9 @@ x 15
 y 8
 end
 arch sea
+no_pass 0
 x 15
 y 9
-no_pass 0
 end
 arch sea1
 x 15
@@ -3511,14 +3495,6 @@ x 15
 y 15
 end
 arch brush
-x 15
-y 16
-end
-arch courthouse
-name A little opara
-slaying /santo_dominion/magara/opera
-hp 1
-sp 12
 x 15
 y 16
 end
@@ -4028,14 +4004,6 @@ arch grass_only
 x 17
 y 20
 end
-arch farmhouse
-name Lord of the Rings
-slaying /santo_dominion/shops/rings
-hp 1
-sp 4
-x 17
-y 20
-end
 arch grass
 x 17
 y 21
@@ -4195,12 +4163,6 @@ arch brush
 x 18
 y 5
 end
-arch store_armour
-name Hanz und Franz Panzer
-slaying /santo_dominion/shops/armour
-x 18
-y 5
-end
 arch cobblestones
 x 18
 y 6
@@ -4229,14 +4191,6 @@ arch cobblestones
 x 18
 y 12
 end
-arch city_tower
-name Tobias Tower
-slaying /santo_dominion/tobias
-hp 5
-sp 21
-x 18
-y 12
-end
 arch cobblestones
 x 18
 y 13
@@ -4254,9 +4208,9 @@ name Permanent Appartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
 sp 1
+unique 1
 x 18
 y 15
-unique 1
 end
 arch brush
 x 18
@@ -4478,9 +4432,9 @@ name Permanent Appartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
 sp 1
+unique 1
 x 19
 y 15
-unique 1
 end
 arch woods
 x 19
@@ -4496,8 +4450,8 @@ y 18
 end
 arch well
 slaying /santo_dominion/magara/well/top
-hp 18
-sp 2
+hp 14
+sp 14
 x 19
 y 18
 end
@@ -4506,14 +4460,6 @@ x 19
 y 19
 end
 arch brush
-x 19
-y 20
-end
-arch house_largish
-name Lord Ramsdre Mansion
-slaying /santo_dominion/espen/palace
-hp 1
-sp 15
 x 19
 y 20
 end
@@ -4935,12 +4881,6 @@ arch cobblestones
 x 21
 y 12
 end
-arch store_general
-name Eliks General Store
-slaying /santo_dominion/shops/eliks
-x 21
-y 12
-end
 arch grass_only
 x 21
 y 13
@@ -5148,12 +5088,6 @@ arch grass_only
 x 22
 y 8
 end
-arch church
-name New Cthulhu Church
-slaying /santo_dominion/crossfire
-x 22
-y 8
-end
 arch grass_only
 x 22
 y 9
@@ -5203,14 +5137,6 @@ x 22
 y 19
 end
 arch brush
-x 22
-y 20
-end
-arch rl_house1
-name The Noble Resting
-slaying /santo_dominion/noble_rest
-hp 9
-sp 1
 x 22
 y 20
 end
@@ -5847,13 +5773,6 @@ arch grass
 x 25
 y 12
 end
-arch guild
-name Guild of the Drunken Barbarian
-slaying /santo_dominion/guilds/drunken_barbarian/ground
-x 25
-y 12
-no_pass 0
-end
 arch brush
 x 25
 y 13
@@ -5867,12 +5786,6 @@ x 25
 y 15
 end
 arch grass_only
-x 25
-y 16
-end
-arch store_weapons
-name Erash Sharp Blades
-slaying /santo_dominion/shops/erash
 x 25
 y 16
 end
@@ -5891,13 +5804,6 @@ end
 arch brush
 x 25
 y 20
-end
-arch store_magic
-name Nosferatu - Specialist
-slaying /santo_dominion/shops/nosferatu
-x 25
-y 20
-no_pass 0
 end
 arch brush
 x 25
@@ -7595,11 +7501,6 @@ arch grass_only
 x 33
 y 15
 end
-arch farmhouse
-slaying /santo_dominion/north_farm
-x 33
-y 15
-end
 arch grass
 x 33
 y 16
@@ -8030,11 +7931,6 @@ arch grass_only
 x 35
 y 13
 end
-arch barn
-slaying /santo_dominion/north_barn
-x 35
-y 13
-end
 arch grass_only
 x 35
 y 14
@@ -8080,10 +7976,6 @@ x 35
 y 23
 end
 arch brush
-x 35
-y 24
-end
-arch farmhouse
 x 35
 y 24
 end
@@ -8705,11 +8597,6 @@ x 38
 y 20
 end
 arch brush
-x 38
-y 21
-end
-arch barn
-slaying /santo_dominion/south_barn
 x 38
 y 21
 end
@@ -10989,4 +10876,117 @@ end
 arch woods_2
 x 49
 y 49
+end
+arch s_ship
+name Ship to Stoneville
+slaying /dragonisland/stoneville
+hp 7
+sp 10
+x 14
+y 9
+end
+arch inn
+name The Golden Lion
+slaying /santo_dominion/tavern
+hp 14
+sp 18
+x 15
+y 6
+end
+arch courthouse
+name A little opara
+slaying /santo_dominion/magara/opera
+hp 1
+sp 12
+x 15
+y 16
+end
+arch farmhouse
+name Lord of the Rings
+slaying /santo_dominion/shops/rings
+hp 1
+sp 4
+x 17
+y 20
+end
+arch store_armour
+name Hanz und Franz Panzer
+slaying /santo_dominion/shops/armour
+x 18
+y 5
+end
+arch city_tower
+name Tobias Tower
+slaying /santo_dominion/tobias
+hp 5
+sp 21
+x 18
+y 12
+end
+arch house_largish
+name Lord Ramsdre Mansion
+slaying /santo_dominion/espen/palace
+hp 1
+sp 15
+x 19
+y 20
+end
+arch store_general
+name Eliks General Store
+slaying /santo_dominion/shops/eliks
+x 21
+y 12
+end
+arch church
+name New Cthulhu Church
+slaying /santo_dominion/crossfire
+x 22
+y 8
+end
+arch rl_house1
+name The Noble Resting
+slaying /santo_dominion/noble_rest
+hp 9
+sp 1
+x 22
+y 20
+end
+arch guild
+name Guild of the Drunken Barbarian
+slaying /santo_dominion/guilds/drunken_barbarian/ground
+no_pass 0
+x 25
+y 12
+end
+arch store_weapons
+name Erash Sharp Blades
+slaying /santo_dominion/shops/erash
+x 25
+y 16
+end
+arch store_magic
+name Nosferatu - Specialist
+slaying /santo_dominion/shops/nosferatu
+no_pass 0
+x 25
+y 20
+end
+arch farmhouse
+slaying /santo_dominion/north_farm
+x 33
+y 15
+end
+arch barn
+slaying /santo_dominion/north_barn
+x 35
+y 13
+end
+arch farmhouse
+x 35
+y 24
+end
+arch barn
+slaying /santo_dominion/south_barn
+x 38
+y 21
 end

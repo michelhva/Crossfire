@@ -5,9 +5,9 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 11 21:20:29 1996
 endmsg
-x 28
-y 28
-level 6
+width 28
+height 28
+difficulty 6
 end
 arch marble
 end
@@ -585,11 +585,11 @@ x 3
 y 5
 end
 arch locked_door1
-slaying evil_master_key3
 msg
 You need the evil master's key to open
-this door. 
+this door.
 endmsg
+slaying evil_master_key3
 x 3
 y 5
 end
@@ -624,8 +624,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 3
-y 9
 level 40
 attacktype 536
 resist_fire 30
@@ -640,6 +638,8 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 3
+y 9
 arch ability_cold
 name icestorm
 hp 0
@@ -652,8 +652,8 @@ end
 arch ability_fear
 end
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -688,8 +688,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 3
-y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -704,6 +702,8 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 3
+y 12
 arch ability_cold
 name icestorm
 hp 0
@@ -716,8 +716,8 @@ end
 arch ability_fear
 end
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -752,8 +752,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 3
-y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -768,6 +766,8 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 3
+y 15
 arch ability_cold
 name icestorm
 hp 0
@@ -780,8 +780,8 @@ end
 arch ability_fear
 end
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -802,33 +802,33 @@ x 3
 y 18
 end
 arch button_small
-x 3
-y 18
 resist_magic 30
 weight 100000
 connected 2
+x 3
+y 18
 end
 arch marble
 x 3
 y 19
 end
 arch igate_closed_1
-x 3
-y 19
 speed 0.500000
 resist_magic 30
 connected 2
+x 3
+y 19
 end
 arch marble
 x 3
 y 20
 end
 arch button_small
-x 3
-y 20
 resist_magic 30
 weight 100000
 connected 2
+x 3
+y 20
 end
 arch marble
 x 3
@@ -1970,8 +1970,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 10
-y 6
 level 40
 attacktype 536
 resist_fire 30
@@ -1986,9 +1984,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 10
+y 6
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -2586,13 +2586,13 @@ x 13
 y 18
 end
 arch grate_closed_2
-x 13
-y 18
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
+x 13
+y 18
 end
 arch marble
 x 13
@@ -2687,8 +2687,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 14
-y 4
 level 40
 attacktype 536
 resist_fire 30
@@ -2703,6 +2701,8 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 14
+y 4
 arch ability_cold
 name icestorm
 hp 0
@@ -2715,8 +2715,8 @@ end
 arch ability_fear
 end
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -2754,33 +2754,33 @@ y 8
 end
 arch check_inv
 slaying mortex
-x 14
-y 9
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
+x 14
+y 9
 end
 arch magic_mouth
 msg
 You decipher the ancient symbols:
 "Four brethren relieved,
- but how could they dare?
- The contract was foul
- and the price wasn't fair:
- A corpse a week
- to leave death behind,
- a pact with the devil
- but still, it was signed."
+but how could they dare?
+The contract was foul
+and the price wasn't fair:
+A corpse a week
+to leave death behind,
+a pact with the devil
+but still, it was signed."
 endmsg
-x 14
-y 9
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
 walk_on 0
 fly_on 0
+x 14
+y 9
 end
 arch woodfloor2
 name woodfloor
@@ -2809,46 +2809,17 @@ x 14
 y 11
 end
 arch chair_3.2
-x 14
-y 11
 material 0
 value 0
 no_pick 1
-end
-arch evil_master1
-Str 40
-Dex 40
-Wis 50
-Pow 50
-Cha 40
-hp 30000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 1000000
-ac -120
 x 14
 y 11
-level 117
-attacktype 66332
-resist_physical 100
-resist_magic 30
-resist_fire 30
-resist_electricity 60
-resist_acid 30
-resist_weaponmagic 60
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 30
-resist_death 100
-resist_godpower 100
-resist_holyword 95
+end
+arch evil_master1
 carrying 10600
-randomitems none
-can_use_bow 1
 has_ready_bow 1
-can_use_skill 1
-can_use_rod 1
+x 14
+y 11
 arch magic_bow
 name Unholy Bow
 Wis -1
@@ -2865,7 +2836,7 @@ arch flu
 name dark spirit
 msg
 Evil spirits control your mind! You
-wish to die... 
+wish to die...
 endmsg
 end
 end
@@ -2913,13 +2884,13 @@ x 14
 y 17
 end
 arch grate_closed_1
-x 14
-y 17
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
+x 14
+y 17
 end
 arch woodfloor2
 name woodfloor
@@ -2927,24 +2898,24 @@ x 14
 y 18
 end
 arch button_lever
-x 14
-y 18
 resist_physical 30
 resist_magic 30
 connected 3
+x 14
+y 18
 end
 arch marble
 x 14
 y 19
 end
 arch gate_open_1
-x 14
-y 19
 speed 0.500000
 resist_physical 30
 resist_magic 30
 value 1
 connected 3
+x 14
+y 19
 end
 arch marble
 x 14
@@ -2971,11 +2942,11 @@ x 14
 y 24
 end
 arch button_small
-x 14
-y 24
 resist_physical 30
 weight 100000
 connected 1
+x 14
+y 24
 end
 arch marble
 x 14
@@ -3122,13 +3093,13 @@ x 15
 y 18
 end
 arch grate_closed_2
-x 15
-y 18
 speed 0.500000
 resist_physical 30
 resist_magic 30
 connected 3
 damned 1
+x 15
+y 18
 end
 arch marble
 x 15
@@ -3175,11 +3146,11 @@ x 15
 y 24
 end
 arch igate_closed_2
-x 15
-y 24
 speed 0.500000
 resist_physical 30
 connected 1
+x 15
+y 24
 end
 arch marble
 x 15
@@ -3346,11 +3317,11 @@ x 16
 y 24
 end
 arch button_small
-x 16
-y 24
 resist_physical 30
 weight 100000
 connected 1
+x 16
+y 24
 end
 arch marble
 x 16
@@ -3502,31 +3473,31 @@ y 19
 end
 arch check_inv
 slaying mortex
-x 17
-y 20
 resist_magic 30
 resist_electricity 30
 connected 10
+x 17
+y 20
 end
 arch magic_mouth
 msg
 You decipher the ancient symbols:
 "The story would end now
- if there wasn't that man,
- dressed like a stranger,
- an offer at hand.
- So the contract was signed,
- it was written in blood,
- Four brethren would not die,
- so far it sounds good..."
+if there wasn't that man,
+dressed like a stranger,
+an offer at hand.
+So the contract was signed,
+it was written in blood,
+Four brethren would not die,
+so far it sounds good..."
 endmsg
-x 17
-y 20
 resist_magic 30
 resist_electricity 30
 connected 10
 walk_on 0
 fly_on 0
+x 17
+y 20
 end
 arch marble
 x 17
@@ -3720,11 +3691,11 @@ x 18
 y 24
 end
 arch button_small
-x 18
-y 24
 resist_fire 30
 weight 100000
 connected 4
+x 18
+y 24
 end
 arch marble
 x 18
@@ -3941,11 +3912,11 @@ x 19
 y 24
 end
 arch igate_closed_2
-x 19
-y 24
 speed 0.500000
 resist_fire 30
 connected 4
+x 19
+y 24
 end
 arch marble
 x 19
@@ -4098,11 +4069,11 @@ x 20
 y 24
 end
 arch button_small
-x 20
-y 24
 resist_fire 30
 weight 100000
 connected 4
+x 20
+y 24
 end
 arch marble
 x 20
@@ -4383,8 +4354,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 22
-y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -4399,9 +4368,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 22
+y 12
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4455,8 +4426,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 22
-y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -4471,9 +4440,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 22
+y 15
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4539,8 +4510,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 22
-y 22
 level 40
 attacktype 536
 resist_fire 30
@@ -4555,6 +4524,8 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 22
+y 22
 arch ability_cold
 name icestorm
 hp 0
@@ -4567,8 +4538,8 @@ end
 arch ability_fear
 end
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4595,8 +4566,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 22
-y 23
 level 40
 attacktype 536
 resist_fire 30
@@ -4611,9 +4580,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 22
+y 23
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4741,8 +4712,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 23
-y 12
 level 40
 attacktype 536
 resist_fire 30
@@ -4757,9 +4726,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 23
+y 12
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4813,8 +4784,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 23
-y 15
 level 40
 attacktype 536
 resist_fire 30
@@ -4829,9 +4798,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 23
+y 15
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4897,8 +4868,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 23
-y 22
 level 40
 attacktype 536
 resist_fire 30
@@ -4913,9 +4882,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 23
+y 22
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
@@ -4953,8 +4924,6 @@ exp 100000
 dam 80
 wc -10
 ac -60
-x 23
-y 23
 level 40
 attacktype 536
 resist_fire 30
@@ -4969,9 +4938,11 @@ run_away 3
 see_invisible 1
 can_cast_spell 1
 one_hit 0
+x 23
+y 23
 arch gem
-title of exceptional beauty
 face pretty_crystal.111
+title of exceptional beauty
 speed 0.000000
 value 40000
 weight 65
