@@ -1,0 +1,159 @@
+arch map
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 26 20:52:22 1998
+endmsg
+x 6
+y 6
+end
+arch generate_dragon
+end
+arch generate_dragon
+y 1
+end
+arch drake
+x 4
+y 4
+end
+arch drake
+x 4
+y 5
+end
+arch drake
+x 5
+y 4
+end
+arch baby_dragon
+Con 3
+Wis 3
+Pow 5
+hp 500
+maxhp 500
+x 5
+y 5
+speed 0.100000
+end
+arch chinese_dragon
+y 2
+end
+More
+arch chinese_dragon_2
+y 2
+end
+More
+arch chinese_dragon_3
+y 3
+end
+More
+arch chinese_dragon_4
+y 3
+end
+arch chinese_dragon
+y 4
+end
+More
+arch chinese_dragon_2
+y 4
+end
+More
+arch chinese_dragon_3
+y 5
+end
+More
+arch chinese_dragon_4
+y 5
+end
+arch big_dragon
+x 1
+end
+More
+arch big_dragon_2
+x 2
+end
+More
+arch big_dragon_3
+x 3
+end
+More
+arch big_dragon_4
+x 1
+end
+More
+arch big_dragon_5
+x 2
+end
+More
+arch big_dragon_6
+x 3
+end
+arch chinese_dragon
+x 2
+y 2
+end
+More
+arch chinese_dragon_2
+x 3
+y 2
+end
+More
+arch chinese_dragon_3
+x 2
+y 3
+end
+More
+arch chinese_dragon_4
+x 3
+y 3
+end
+arch chinese_dragon
+x 2
+y 4
+end
+More
+arch chinese_dragon_2
+x 3
+y 4
+end
+More
+arch chinese_dragon_3
+x 2
+y 5
+end
+More
+arch chinese_dragon_4
+x 3
+y 5
+end
+arch big_elec
+x 4
+end
+More
+arch big_elec_2
+x 5
+end
+More
+arch big_elec_3
+x 4
+end
+More
+arch big_elec_4
+x 5
+end
+More
+arch big_elec_5
+x 4
+end
+More
+arch big_elec_6
+x 5
+end
+arch dragon
+x 4
+y 3
+end
+More
+arch dragon_2
+x 5
+y 3
+end

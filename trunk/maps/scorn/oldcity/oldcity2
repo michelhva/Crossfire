@@ -5,10 +5,10 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan  3 10:28:29 1999
 endmsg
-hp 7
-sp 1
-x 20
-y 40
+width 20
+height 40
+enter_x 7
+enter_y 1
 end
 arch sea
 name stream
@@ -104,12 +104,12 @@ arch awall_1_2
 y 19
 end
 arch exit
-slaying oldcity4
 face cobblesto1.111
+slaying oldcity4
 hp 19
 sp 20
-y 20
 is_animated 0
+y 20
 end
 arch gnoll
 y 20
@@ -311,27 +311,27 @@ x 1
 y 18
 end
 arch gnoll
+speed_left -1.100000
 x 1
 y 18
-speed_left -1.100000
 end
 arch large_stones
 x 1
 y 19
 end
 arch gnoll
+speed_left -1.100000
 x 1
 y 19
-speed_left -1.100000
 end
 arch large_stones
 x 1
 y 20
 end
 arch gnoll
+speed_left -1.100000
 x 1
 y 20
-speed_left -1.100000
 end
 arch large_stones
 x 1
@@ -569,9 +569,9 @@ x 2
 y 18
 end
 arch gnoll
+speed_left -1.100000
 x 2
 y 18
-speed_left -1.100000
 end
 arch large_stones
 x 2
@@ -582,9 +582,9 @@ x 2
 y 20
 end
 arch gnoll
+speed_left -1.100000
 x 2
 y 20
-speed_left -1.100000
 end
 arch pstone_1
 x 2
@@ -1284,10 +1284,10 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-x 5
-y 31
 speed_left -1.100000
 unaggressive 1
+x 5
+y 31
 end
 arch pstone_2
 x 5
@@ -1411,7 +1411,7 @@ arch magic_mouth
 msg
 You notice as you continue that the old
 streets seem to be in better shape. Perhaps
-this was the richer end of Old City. 
+this was the richer end of Old City.
 endmsg
 x 6
 y 11
@@ -1525,10 +1525,10 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-x 6
-y 31
 speed_left -1.100000
 unaggressive 1
+x 6
+y 31
 end
 arch pstone_2
 x 6
@@ -1539,9 +1539,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
+unaggressive 1
 x 6
 y 32
-unaggressive 1
 end
 arch pstone_2
 x 6
@@ -1581,12 +1581,12 @@ y 39
 end
 arch exit
 name dirt exit
-slaying oldcity1
 face largestone.111
+slaying oldcity1
 hp 7
 sp 19
-x 7
 is_animated 0
+x 7
 end
 arch dungeon_floor
 x 7
@@ -1726,9 +1726,9 @@ y 29
 end
 arch sea
 name stream
+speed_left -1.700000
 x 7
 y 29
-speed_left -1.700000
 end
 arch sea
 name stream
@@ -1752,9 +1752,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
+unaggressive 1
 x 7
 y 33
-unaggressive 1
 end
 arch cobblestones2
 x 7
@@ -1785,12 +1785,12 @@ x 7
 y 38
 end
 arch exit
-slaying oldcity3
 face cobblesto1.111
+slaying oldcity3
 hp 27
+is_animated 0
 x 7
 y 39
-is_animated 0
 end
 arch dungeon_floor
 x 8
@@ -1981,9 +1981,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
+unaggressive 1
 x 8
 y 33
-unaggressive 1
 end
 arch cobblestones2
 x 8
@@ -2488,7 +2488,7 @@ arch sign
 name old sign
 msg
 The Swift Sword Inn
-Lady's Night every Wednesday 
+Lady's Night every Wednesday
 endmsg
 x 11
 y 6
@@ -2814,9 +2814,9 @@ x 12
 y 16
 end
 arch ant
+speed_left -0.200000
 x 12
 y 16
-speed_left -0.200000
 end
 arch pstone_1
 x 12
@@ -2827,9 +2827,9 @@ x 12
 y 18
 end
 arch ant
+speed_left -0.200000
 x 12
 y 18
-speed_left -0.200000
 end
 arch sea
 name stream
@@ -3030,9 +3030,9 @@ x 13
 y 14
 end
 arch ant
+speed_left -0.200000
 x 13
 y 14
-speed_left -0.200000
 end
 arch cobblestones
 x 13
@@ -3047,27 +3047,27 @@ x 13
 y 16
 end
 arch ant
+speed_left -0.200000
 x 13
 y 16
-speed_left -0.200000
 end
 arch large_stones
 x 13
 y 17
 end
 arch ant
+speed_left -0.200000
 x 13
 y 17
-speed_left -0.200000
 end
 arch large_stones
 x 13
 y 18
 end
 arch ant
+speed_left -0.200000
 x 13
 y 18
-speed_left -0.200000
 end
 arch large_stones
 x 13
@@ -3281,45 +3281,45 @@ x 14
 y 14
 end
 arch ant
+speed_left -0.200000
 x 14
 y 14
-speed_left -0.200000
 end
 arch large_stones
 x 14
 y 15
 end
 arch ant
+speed_left -0.200000
 x 14
 y 15
-speed_left -0.200000
 end
 arch large_stones
 x 14
 y 16
 end
 arch ant
+speed_left -0.200000
 x 14
 y 16
-speed_left -0.200000
 end
 arch large_stones
 x 14
 y 17
 end
 arch ant
+speed_left -0.200000
 x 14
 y 17
-speed_left -0.200000
 end
 arch large_stones
 x 14
 y 18
 end
 arch ant
+speed_left -0.200000
 x 14
 y 18
-speed_left -0.200000
 end
 arch large_stones
 x 14
@@ -3352,9 +3352,9 @@ x 14
 y 24
 end
 arch generate_kobold
+speed_left -0.300000
 x 14
 y 24
-speed_left -0.300000
 end
 arch pstone_3
 x 14
@@ -3531,27 +3531,27 @@ x 15
 y 14
 end
 arch ant
+speed_left -0.200000
 x 15
 y 14
-speed_left -0.200000
 end
 arch large_stones
 x 15
 y 15
 end
 arch ant
+speed_left -0.200000
 x 15
 y 15
-speed_left -0.200000
 end
 arch large_stones
 x 15
 y 16
 end
 arch ant
+speed_left -0.200000
 x 15
 y 16
-speed_left -0.200000
 end
 arch pstone_3
 x 15
@@ -3566,9 +3566,9 @@ x 15
 y 18
 end
 arch ant
+speed_left -0.200000
 x 15
 y 18
-speed_left -0.200000
 end
 arch pstone_3
 x 15
@@ -3820,13 +3820,17 @@ x 16
 y 18
 end
 arch ant
+speed_left -0.160000
 x 16
 y 18
-speed_left -0.160000
 end
 arch pstone_3
 x 16
 y 19
+end
+arch pstone_3
+x 16
+y 20
 end
 arch boulder
 x 16
@@ -4181,9 +4185,9 @@ x 17
 y 33
 end
 arch generate_kobold
+speed_left -0.300000
 x 17
 y 33
-speed_left -0.300000
 end
 arch large_stones
 x 17
@@ -4782,10 +4786,4 @@ maxhp 300
 dam 10
 x 5
 y 36
-end
-More
-arch cobra_2
-hp 300
-x 5
-y 37
 end

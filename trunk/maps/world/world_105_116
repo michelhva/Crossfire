@@ -1,11 +1,14 @@
 arch map
 name world_105_116
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_105_115
 tile_path_2 world_106_116
@@ -3583,7 +3586,10 @@ arch mountain
 x 18
 y 9
 end
-arch mountain
+arch mountain_cave
+slaying /scorn/temples/gnarg
+hp 4
+sp 10
 x 18
 y 10
 end

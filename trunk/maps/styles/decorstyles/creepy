@@ -1,0 +1,46 @@
+arch map
+name creepy
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 26 17:28:31 1998
+endmsg
+x 6
+y 6
+end
+arch gravestone
+end
+arch gravestone
+y 1
+end
+arch spider_web
+x 1
+end
+arch spider_web
+x 1
+y 1
+end
+arch gravestone2
+x 2
+end
+arch gravestone2
+x 2
+y 1
+end
+arch corpse
+x 3
+end
+arch corpse
+x 3
+y 1
+end
+arch statue
+x 4
+end
+arch statue
+x 4
+y 1
+end
+arch altar_none
+x 5
+end

@@ -1,0 +1,124 @@
+arch map
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 26 21:20:52 1998
+endmsg
+x 6
+y 6
+end
+arch imp
+end
+arch imp
+y 1
+end
+arch imp
+y 2
+end
+arch imp
+y 3
+end
+arch raas
+y 4
+end
+arch fiend
+y 5
+end
+arch raas
+x 1
+end
+arch raas
+x 1
+y 1
+end
+arch raas
+x 1
+y 2
+end
+arch raas
+x 1
+y 3
+end
+arch raas
+x 1
+y 4
+end
+arch fiend
+x 1
+y 5
+end
+arch devil
+x 2
+end
+arch devil
+x 2
+y 1
+end
+arch devil
+x 2
+y 2
+end
+arch devil
+x 2
+y 3
+end
+arch devil
+x 2
+y 4
+end
+arch devil
+x 2
+y 5
+end
+arch generate_devil
+x 3
+end
+arch generate_devil
+x 3
+y 1
+end
+arch fiend
+x 3
+y 5
+end
+arch devil
+x 4
+end
+arch generate_devil
+x 4
+y 1
+end
+arch fiend
+x 4
+y 5
+end
+arch devil
+x 5
+end
+arch generate_devil
+x 5
+y 1
+end
+arch fiend
+x 5
+y 5
+end
+arch medium_demon
+x 3
+y 2
+end
+More
+arch medium_demon_2
+x 4
+y 2
+end
+More
+arch medium_demon_3
+x 3
+y 3
+end
+More
+arch medium_demon_4
+x 4
+y 3
+end
