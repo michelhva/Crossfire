@@ -3,7 +3,7 @@ name treasure
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
-Date: Tue Jun  6 22:51:57 2000
+Date: Wed Jun  9 04:01:57 2004
 endmsg
 width 26
 height 27
@@ -464,13 +464,16 @@ arch statue
 name death machine
 face statue_gargoyle.111
 type 62
-sp 5
-dam 90
-speed 0.100000
-level 100
 blocksview 1
+level 60
+speed 0.1
+sp 5
 x 2
 y 5
+arch spell_comet
+range 3
+duration_modifier 10
+end
 end
 arch dungeon_magic
 x 2
@@ -736,13 +739,16 @@ arch statue
 name death machine
 face statue_gargoyle.111
 type 62
-sp 5
-dam 90
-speed 0.100000
-level 100
 blocksview 1
+level 60
+speed 0.1
+sp 5
 x 3
 y 7
+arch spell_comet
+range 3
+duration_modifier 10
+end
 end
 arch dungeon_magic
 x 3
@@ -957,13 +963,16 @@ arch statue
 name death machine
 face statue_gargoyle.111
 type 62
-sp 5
-dam 90
-speed 0.100000
-level 100
 blocksview 1
+level 60
+speed 0.1
+sp 5
 x 4
 y 5
+arch spell_comet
+range 3
+duration_modifier 10
+end
 end
 arch dungeon_magic
 x 4
@@ -1110,7 +1119,8 @@ name warning
 msg
 This path leads to Gothwolte's treasure
 hoard. Nobody is allowed to pass!
-Intruders will suffer incredible pain.
+Intruders will suffer horribly.
+(In other words: You - will - die!)
 endmsg
 x 4
 y 22
@@ -1226,13 +1236,16 @@ arch statue
 name death machine
 face statue_gargoyle.111
 type 62
-sp 5
-dam 90
-speed 0.100000
-level 100
 blocksview 1
+level 60
+speed 0.1
+sp 5
 x 5
 y 7
+arch spell_comet
+range 3
+duration_modifier 10
+end
 end
 arch dungeon_magic
 x 5
@@ -1452,13 +1465,16 @@ arch statue
 name death machine
 face statue_gargoyle.111
 type 62
-sp 5
-dam 90
-speed 0.100000
-level 100
 blocksview 1
+level 60
+speed 0.1
+sp 5
 x 6
 y 5
+arch spell_comet
+range 3
+duration_modifier 10
+end
 end
 arch dungeon_magic
 x 6
@@ -2739,6 +2755,10 @@ arch blocked
 x 11
 y 22
 end
+arch flagstone
+x 11
+y 23
+end
 arch teleporter
 hp 17
 sp 12
@@ -3004,6 +3024,10 @@ arch blocked
 x 12
 y 22
 end
+arch flagstone
+x 12
+y 23
+end
 arch teleporter
 hp 17
 sp 12
@@ -3031,6 +3055,10 @@ end
 arch blocked
 x 12
 y 24
+end
+arch flagstone
+x 12
+y 25
 end
 arch magic_mouth
 name 2
@@ -5954,12 +5982,7 @@ arch blocked
 x 23
 y 23
 end
-arch button_small
-name zonk
-resist_magic 30
-resist_electricity 30
-weight 1000
-connected 10
+arch flagstone
 x 23
 y 24
 end
@@ -5970,7 +5993,24 @@ resist_electricity 30
 weight 1000
 connected 10
 x 23
+y 24
+end
+arch flagstone
+x 23
 y 25
+end
+arch button_small
+name zonk
+resist_magic 30
+resist_electricity 30
+weight 1000
+connected 10
+x 23
+y 25
+end
+arch flagstone
+x 23
+y 26
 end
 arch button_small
 name zonk
@@ -6204,6 +6244,10 @@ arch blocked
 x 24
 y 23
 end
+arch flagstone
+x 24
+y 24
+end
 arch button_small
 name zonk
 resist_magic 30
@@ -6212,6 +6256,10 @@ weight 1000
 connected 10
 x 24
 y 24
+end
+arch flagstone
+x 24
+y 25
 end
 arch block_door_open
 name 2
@@ -6230,6 +6278,10 @@ resist_cold 30
 connected 20
 x 24
 y 25
+end
+arch flagstone
+x 24
+y 26
 end
 arch button_small
 name zonk
@@ -6403,12 +6455,7 @@ arch blocked
 x 25
 y 23
 end
-arch button_small
-name zonk
-resist_magic 30
-resist_electricity 30
-weight 1000
-connected 10
+arch flagstone
 x 25
 y 24
 end
@@ -6419,7 +6466,24 @@ resist_electricity 30
 weight 1000
 connected 10
 x 25
+y 24
+end
+arch flagstone
+x 25
 y 25
+end
+arch button_small
+name zonk
+resist_magic 30
+resist_electricity 30
+weight 1000
+connected 10
+x 25
+y 25
+end
+arch flagstone
+x 25
+y 26
 end
 arch button_small
 name wdsm
