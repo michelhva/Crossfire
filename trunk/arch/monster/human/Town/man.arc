@@ -3,11 +3,6 @@ race human
 name man
 randomitems throw_stnd
 face man.111
-anim
-facings 2
-man.171
-man.131
-mina
 sp 10
 maxsp 10
 Str 12

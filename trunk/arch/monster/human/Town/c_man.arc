@@ -3,7 +3,6 @@ name city dweller
 race human
 randomitems jail
 face man.111
-animation man
 sp 10
 maxsp 10
 Str 10
