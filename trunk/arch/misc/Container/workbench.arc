@@ -1,5 +1,5 @@
 Object workbench
-face table_4.111
+face workbench.111
 no_pick 1
 type 122
 material 16

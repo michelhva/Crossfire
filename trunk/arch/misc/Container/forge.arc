@@ -1,9 +1,9 @@
 Object forge
-face fireplace.111
+face forge.111
 anim
-fireplace.111
-fireplace.112
-fireplace.113
+forge.111
+forge.112
+forge.113
 mina
 speed -0.2
 glow_radius 1
