@@ -1,5 +1,6 @@
 Object shovel_1
 name shovel
+nrof 1
 slaying wall
 last_sp 15
 type 15

@@ -1,5 +1,6 @@
 Object frostbrand
 name Frostbrand
+nrof 1
 last_sp 8
 type 15
 face frostbrand.111

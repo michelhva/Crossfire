@@ -1,5 +1,6 @@
 Object eyeshield
 name eyeshield
+nrof 1
 material 32
 type 33
 face eyeshield.111

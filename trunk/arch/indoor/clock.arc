@@ -1,5 +1,6 @@
 Object clock
 type 9
+nrof 1
 face clock.111
 anim
 clock.111

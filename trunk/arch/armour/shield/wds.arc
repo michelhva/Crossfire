@@ -1,5 +1,6 @@
 Object wds
 name White Dragon Shield
+nrof 1
 face wds.111
 ac 2
 armour 8

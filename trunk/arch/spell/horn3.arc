@@ -1,5 +1,6 @@
 Object horn3
 name horn
+nrof 1
 face horn3.111
 color_fg orange
 color_bg khaki

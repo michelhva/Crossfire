@@ -1,5 +1,6 @@
 Object collar
 name neko chan's collar
+nrof 1
 face collar.111
 anim
 collar.111

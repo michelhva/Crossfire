@@ -1,5 +1,6 @@
 Object helmet_of_xrays
 name helmet
+nrof 1
 title of xray vision
 face helmetxray.111
 anim

@@ -1,5 +1,6 @@
 Object torch_cyan
 name torch of cyan light
+nrof 1
 face torch_cyan.111
 anim
 torch_cyan.111

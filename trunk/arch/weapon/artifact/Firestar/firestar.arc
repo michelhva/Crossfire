@@ -1,5 +1,6 @@
 Object firestar
 name Firestar
+nrof 1
 title named Fearless
 anim
 firestar.111

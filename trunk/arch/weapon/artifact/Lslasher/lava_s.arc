@@ -1,5 +1,6 @@
 Object lava_s
 name Lava Slasher
+nrof 1
 face lava_s.111
 anim
 lava_s.113

@@ -1,5 +1,6 @@
 Object mjoellnir
 name Mjoellnir
+nrof 1
 last_sp 8
 type 15
 face mjoellnir.111

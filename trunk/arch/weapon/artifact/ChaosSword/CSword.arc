@@ -1,5 +1,6 @@
 Object CSword
 name Chaos Sword
+nrof 1
 last_sp 3
 type 15
 face CSword.113

@@ -1,6 +1,7 @@
 Object chalice
 face chalice.111
 type 60
+nrof 1
 weight 23700
 is_animated 1
 material 2

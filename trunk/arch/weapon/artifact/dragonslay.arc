@@ -1,5 +1,6 @@
 Object dragonslayer
 name Dragonslayer
+nrof 1
 last_sp 9
 type 15
 face dragonslay.111

@@ -1,5 +1,6 @@
 Object lamestar
 name Firestar
+nrof 1
 anim
 firestar.111
 firestar.112

@@ -1,5 +1,6 @@
 Object excalibur
 name Excalibur
+nrof 1
 last_sp 7
 Str 1
 Cha 2

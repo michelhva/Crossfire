@@ -1,5 +1,6 @@
 Object torch_vermilion
 name torch of vermilion light
+nrof 1
 face torch_vermilion.111
 anim
 torch_vermilion.111

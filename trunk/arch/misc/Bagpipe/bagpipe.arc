@@ -1,5 +1,6 @@
 Object bagpipe
 name small bagpipe
+nrof 1
 type 24
 face bagpipe.111
 anim

@@ -1,5 +1,6 @@
 Object firebrand
 name Firebrand
+nrof 1
 last_sp 8
 type 15
 face firebrand.111

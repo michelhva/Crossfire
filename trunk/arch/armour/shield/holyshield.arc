@@ -1,5 +1,6 @@
 Object holy_shield
 name holy shield
+nrof 1
 face holyshield.111
 material 2
 type 33

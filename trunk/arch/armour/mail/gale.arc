@@ -1,5 +1,6 @@
 Object gale
 name Gale Armour
+nrof 1
 face gale.111
 Dex 2
 ac 4

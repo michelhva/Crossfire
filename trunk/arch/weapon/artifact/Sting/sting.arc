@@ -1,5 +1,6 @@
 Object sting
 name Sting
+nrof 1
 last_sp 6
 type 15
 face sting.111
