@@ -5,7 +5,7 @@ face city_tower_fant.x11
 no_pick 1
 editable 2
 visibility 100
-magicmap greyn
+magicmap grey
 end
 More
 Object city_tower_fant_2
