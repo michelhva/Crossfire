@@ -16,7 +16,7 @@ dam 20
 wc -100
 ac -10
 speed -1.000000
-level 10
+level 80
 attacktype 1
 resist_fire -100
 weight 30000
