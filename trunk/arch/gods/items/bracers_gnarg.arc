@@ -1,14 +1,15 @@
 Object bracers_gnarg
 nrof 1
 name bracers
-title of the strength of the Wargs 
+title of strength of Wargs 
 face bracersdex.111
 msg
   An exceptional pair of bracers, not only do they 
   provide the wearer with protection from cold but 
   increase their damage, strength and help heal 
   the body from damage. A mighty gift from Gnarg sent 
-  to aid you in destroying His enemies.
+  to aid you in annihilate His enemies.
+
 endmsg
 type 104
 Str 2
