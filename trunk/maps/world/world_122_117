@@ -74,8 +74,10 @@ arch grass
 y 7
 end
 arch r_house1
-name apartments
-name_pl apartments
+name Rosco's kitchen
+slaying /navar_city/misc/kitchen
+hp 4
+sp 10
 y 7
 end
 arch dungeon_magic
@@ -3129,6 +3131,14 @@ x 9
 y 14
 end
 arch grass
+x 9
+y 14
+end
+arch s_shop2
+name Jeweler
+slaying /navar_city/misc/jeweler
+hp 7
+sp 12
 x 9
 y 14
 end
@@ -13770,8 +13780,8 @@ arch house_largish
 name Gunther's Smithy
 name_pl Gunther's Smithy
 slaying /navar_city/misc/city1smith
-hp 1
-sp 1
+hp 8
+sp 8
 x 11
 y 7
 end
