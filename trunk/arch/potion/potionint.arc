@@ -4,6 +4,7 @@ name potion of intelligence
 face potionint.111
 color_fg green
 type 5
+level 1
 material 4
 weight 1500
 value 13000

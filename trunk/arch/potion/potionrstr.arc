@@ -3,6 +3,7 @@ name potion of restoration
 face potiongen.111
 value 6000
 type 5
+level 1
 attacktype 65536
 nrof 1
 weight 1500

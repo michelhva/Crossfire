@@ -4,6 +4,7 @@ nrof 1
 face potionimp.111
 color_fg light_blue
 type 5
+level 1
 material 4
 weight 1800
 value 5200
