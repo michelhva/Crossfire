@@ -1,6 +1,6 @@
 Object earth_witch
 name earth witch
-race elemental
+race earth_elemental
 face witch_earth.111
 color_fg dark_orange
 randomitems witch_earth

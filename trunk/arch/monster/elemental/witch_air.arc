@@ -1,6 +1,6 @@
 Object air_witch
 name air witch
-race elemental
+race air_elemental
 face witch_air.111
 color_fg light_blue
 randomitems witch_air
