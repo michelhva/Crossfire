@@ -733,11 +733,11 @@ x 6
 y 14
 end
 arch oakdoor
-x 6
-y 14
 slaying /world/world_105_115
 hp 12
 sp 39
+x 6
+y 14
 end
 arch grass
 x 7
@@ -803,6 +803,10 @@ x 7
 y 9
 end
 arch woodfloor2
+x 7
+y 10
+end
+arch wall_0
 x 7
 y 10
 end
@@ -881,6 +885,12 @@ arch woodfloor2
 x 8
 y 10
 end
+arch pedestal
+invisible 1
+connected 11
+x 8
+y 10
+end
 arch woodfloor2
 x 8
 y 11
@@ -888,7 +898,7 @@ end
 arch ggate_closed
 damned 1
 no_magic 1
-connected 10
+connected 11
 x 8
 y 11
 end
@@ -896,15 +906,32 @@ arch woodfloor2
 x 8
 y 12
 end
-arch goldfloor
-name drop 100 platinum to enter
-connected 10
-food 100
-slaying platinacoin
+arch check_floor
+slaying bowyer_house1
+connected 11
 x 8
 y 12
 end
 arch woodfloor2
+x 8
+y 13
+end
+arch trigger_marker
+msg
+You have one hour to use the facilities.
+endmsg
+slaying bowyer_house1
+connected 10
+speed 1.0
+food 360
+x 8
+y 13
+end
+arch altar_trigger
+name Drop 200 platinum to enter
+slaying platinacoin
+food 200
+connected 10
 x 8
 y 13
 end
@@ -992,6 +1019,10 @@ x 9
 y 9
 end
 arch woodfloor2
+x 9
+y 10
+end
+arch wall_0
 x 9
 y 10
 end

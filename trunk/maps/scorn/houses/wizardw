@@ -1,15 +1,15 @@
 arch map
 name Wizards Workshop
-reset_timeout 7200
-difficulty 1
-width 9
-height 14
-enter_x 4
-enter_y 13
 msg
 Creator: CF Java Map Editor
 Date:    12/28/2002
 endmsg
+width 9
+height 14
+enter_x 4
+enter_y 13
+reset_timeout 7200
+difficulty 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -153,13 +153,13 @@ x 1
 y 2
 end
 arch quarto
-title Fire
-no_pick 1
 msg
 A horn of fire can be manufactured
 with a unicorn horn and three
 dusts of ignition.
 endmsg
+title Fire
+no_pick 1
 x 1
 y 2
 end
@@ -170,9 +170,9 @@ x 1
 y 3
 end
 arch emerald
+no_pick 1
 x 1
 y 3
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -308,9 +308,9 @@ x 2
 y 3
 end
 arch emerald
+no_pick 1
 x 2
 y 3
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -319,9 +319,9 @@ x 2
 y 4
 end
 arch emerald
+no_pick 1
 x 2
 y 4
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -354,10 +354,10 @@ x 2
 y 7
 end
 arch bones2
-x 2
-y 7
 type 71
 no_pick 1
+x 2
+y 7
 end
 arch snow2
 name Ice Illusion
@@ -404,9 +404,9 @@ x 3
 y 1
 end
 arch sapphire
+no_pick 1
 x 3
 y 1
-no_pick 1
 end
 arch yellow_0
 x 3
@@ -433,9 +433,9 @@ x 3
 y 4
 end
 arch emerald
+no_pick 1
 x 3
 y 4
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -521,10 +521,10 @@ y 1
 end
 arch lava
 name Lava Illusion
+type 71
 name_pl Lava Illusion
 x 4
 y 1
-type 71
 end
 arch thaumaturg_desk
 x 4
@@ -543,54 +543,73 @@ x 4
 y 3
 end
 arch ruby
+no_pick 1
 x 4
 y 3
-no_pick 1
 end
 arch yellow_0
 x 4
 y 4
 end
 arch ruby
+no_pick 1
 x 4
 y 4
-no_pick 1
 end
 arch yellow_0
 x 4
 y 5
 end
 arch ruby
+no_pick 1
 x 4
 y 5
-no_pick 1
+end
+arch pedestal
+invisible 1
+connected 11
+x 4
+y 5
 end
 arch yellow_0
 x 4
 y 6
 end
 arch grate_closed_1
+connected 11
 x 4
 y 6
-connected 10
 end
 arch yellow_0
 x 4
 y 7
+end
+arch check_floor
+slaying tham_house1
+connected 11
+x 4
+y 7
+end
+arch yellow_0
+x 4
+y 8
+end
+arch trigger_marker
+msg
+You have one hour to use the facilities.
+endmsg
+slaying tham_house1
+connected 10
+speed 1.0
+food 360
+x 4
+y 8
 end
 arch altar_trigger
-name 100 Platinum to Enter
-name_pl 100 Platinum to Enter
+name Drop 200 platinum to enter
 slaying platinacoin
-msg
-Drop 100 Platinum to Enter
-endmsg
-food 100
-x 4
-y 7
+food 200
 connected 10
-end
-arch yellow_0
 x 4
 y 8
 end
@@ -619,10 +638,10 @@ x 4
 y 12
 end
 arch bones2
-x 4
-y 12
 type 71
 no_pick 1
+x 4
+y 12
 end
 arch yellow_0
 x 4
@@ -647,9 +666,9 @@ x 5
 y 1
 end
 arch sapphire
+no_pick 1
 x 5
 y 1
-no_pick 1
 end
 arch yellow_0
 x 5
@@ -676,9 +695,9 @@ x 5
 y 4
 end
 arch emerald
+no_pick 1
 x 5
 y 4
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -786,9 +805,9 @@ x 6
 y 3
 end
 arch emerald
+no_pick 1
 x 6
 y 3
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -797,9 +816,9 @@ x 6
 y 4
 end
 arch emerald
+no_pick 1
 x 6
 y 4
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -832,10 +851,10 @@ x 6
 y 7
 end
 arch bones2
-x 6
-y 7
 type 71
 no_pick 1
+x 6
+y 7
 end
 arch snow2
 name Ice Illusion
@@ -900,14 +919,14 @@ x 7
 y 2
 end
 arch quarto
-no_pick 1
-title Frost
 msg
 A talisman of Frost can be made
 with a talisman, a ring of ice,
 and the heart of a chinese
 dragon.
 endmsg
+no_pick 1
+title Frost
 x 7
 y 2
 end
@@ -918,9 +937,9 @@ x 7
 y 3
 end
 arch emerald
+no_pick 1
 x 7
 y 3
-no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
