@@ -1,5 +1,5 @@
 Object ebola
-name Ebola
+name Red Death
 type 158
 invisible 1
 attacktype 1048576
