@@ -7,7 +7,7 @@ color_fg green
 last_sp 12
 ac 3
 stealth 1
-resist_confuse 60
+resist_confusion 60
 Dex 4
 magic 1
 sustenence 4
