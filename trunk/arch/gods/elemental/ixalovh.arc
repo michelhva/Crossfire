@@ -2,6 +2,7 @@
 Object Ixalovh
 title Ruggilli
 race chaotic_water_creatures
+slaying consuming_fire_creatures
 face witch_water.111
 anim
 witch_water.111
