@@ -22,7 +22,7 @@ maxhp 20
 Con 2
 wc 10
 dam 6
-speed 0.12
+speed -0.12
 weight 75000
 editable 1
 will_apply 2

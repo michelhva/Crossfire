@@ -24,7 +24,7 @@ dam 8
 hp 50
 maxhp 50
 exp 40
-speed 0.15
+speed -0.15
 weight 50000
 level 3
 editable 1
