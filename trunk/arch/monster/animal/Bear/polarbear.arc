@@ -5,13 +5,13 @@ randomitems polarbear
 monster 1
 sleep 1
 Wis 10
-face polarbear.131
+face polarbear.x31
 color_fg white
 anim
-polarbear.131
-polarbear.132
-polarbear.171
-polarbear.172
+polarbear.x31
+polarbear.x32
+polarbear.x71
+polarbear.x72
 facings 2
 mina
 resist_cold 50
@@ -30,25 +30,24 @@ level 9
 alive 1
 no_pick 1
 speed -0.085
-weight 300000
+weight 600000
 run_away 6
 editable 1
 end
 More
 Object polarbear_2
 name polar bear
-face polarbear.231
+face polarbear.x31
 color_fg white
 anim
-polarbear.231
-polarbear.232
-polarbear.271
-polarbear.272
+polarbear.x31
+polarbear.x32
+polarbear.x71
+polarbear.x72
 facings 2
 mina
 monster 1
 alive 1
 no_pick 1
 y 1
-weight 300000
 end
