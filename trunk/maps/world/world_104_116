@@ -10641,7 +10641,7 @@ x 41
 y 2
 end
 arch dungeon_magic
-elevation 12283
+elevation 13903
 x 41
 y 3
 end
@@ -10649,21 +10649,25 @@ arch grass
 x 41
 y 3
 end
+arch lamppost
+x 41
+y 3
+end
 arch dungeon_magic
-elevation 15510
 x 41
 y 4
 end
-arch grass
+arch brush
+elevation 803
 x 41
 y 4
 end
 arch dungeon_magic
-elevation 15680
 x 41
 y 5
 end
 arch grass
+elevation 4780
 x 41
 y 5
 end
@@ -10958,20 +10962,20 @@ x 42
 y 3
 end
 arch dungeon_magic
-elevation 16972
 x 42
 y 4
 end
-arch grass
+arch brush
+elevation 2912
 x 42
 y 4
 end
 arch dungeon_magic
-elevation 16329
 x 42
 y 5
 end
-arch grass
+arch brush
+elevation 4616
 x 42
 y 5
 end

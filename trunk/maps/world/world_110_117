@@ -4475,7 +4475,8 @@ doorstyle special/stone
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
-final_map /planes/greenway1
+final_map /planes/greenway5
+exit_on_final_map no
 endmsg
 invisible 1
 slaying /!
