@@ -1,6 +1,6 @@
 Object ring_mail
 nrof 1
-name ring mail
+name hauberk
 type 16
 face ring_mail.111
 color_fg blue
