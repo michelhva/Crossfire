@@ -1,6 +1,7 @@
 Object princess
 name princess
 randomitems standard
+race human
 face princess.111
 anim
 princess.111

@@ -1,4 +1,5 @@
 Object holy_priest
+race human
 name Holy man
 randomitems holy_priest
 face holy_priest.111

@@ -1,5 +1,6 @@
 Object orc
 randomitems orc
+race humanoid
 face orc.111
 anim
 orc.111

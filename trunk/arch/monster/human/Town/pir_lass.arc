@@ -1,4 +1,5 @@
 Object pirate_lass
+race human
 name pirate lass
 randomitems pirate
 face pir_lass.111

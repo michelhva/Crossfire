@@ -1,4 +1,5 @@
 Object dwarf_wiz
+race humanoid
 randomitems book
 name dwarf wizard
 anim

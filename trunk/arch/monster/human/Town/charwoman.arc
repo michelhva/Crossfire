@@ -1,5 +1,6 @@
 Object charwoman
 name cleaning woman
+race human
 face charwoman.171
 anim
 facings 2

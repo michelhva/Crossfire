@@ -1,7 +1,7 @@
 Object breeder_ant
 face breeder_ant.111
 name Queen Ant
-race ant
+race insect
 other_arch ant_egg
 anim
 breeder_ant.111

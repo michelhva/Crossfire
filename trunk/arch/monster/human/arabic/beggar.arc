@@ -1,4 +1,5 @@
 Object beggar
+race human
 name beggar
 face beggar.111
 randomitems beggar

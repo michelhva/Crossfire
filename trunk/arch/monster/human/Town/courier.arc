@@ -1,4 +1,5 @@
 Object courier
+race human
 name courier
 randomitems standard
 face courier.111

@@ -1,6 +1,6 @@
 Object ant_egg
 face ant_egg.111
-race ant
+race insect
 other_arch ant_larvae
 color_fg dark_orange
 monster 1

@@ -1,5 +1,6 @@
 Object generate_bee
 name generator
+race insect
 other_arch bee
 generator 1
 face bee_gen.111

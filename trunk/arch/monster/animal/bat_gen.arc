@@ -1,6 +1,7 @@
 Object generate_bat
 name generator
 other_arch bat
+race animal
 face bat_gen.111
 generator 1
 no_pick 1

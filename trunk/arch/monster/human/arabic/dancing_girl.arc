@@ -1,4 +1,5 @@
 Object dancing_girl
+race human
 name Dancing girl
 face dancing_girl.111
 alive 1

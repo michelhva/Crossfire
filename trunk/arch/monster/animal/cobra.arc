@@ -1,6 +1,7 @@
 Object cobra
 name giant cobra
 face cobra.111
+race animal
 anim
 cobra.111
 cobra.112

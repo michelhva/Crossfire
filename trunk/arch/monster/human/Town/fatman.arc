@@ -1,4 +1,5 @@
 Object fatman
+race human
 name large man
 face fatman.111
 monster 1

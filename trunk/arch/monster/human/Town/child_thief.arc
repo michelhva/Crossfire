@@ -1,5 +1,6 @@
 Object child_thief
 name young rogue
+race human
 randomitems c_thief
 face child.111
 monster 1

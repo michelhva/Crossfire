@@ -1,4 +1,5 @@
 Object a_priest
+race human
 name priest
 randomitems a_priest
 face a_priest.111

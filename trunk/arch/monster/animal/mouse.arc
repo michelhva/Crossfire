@@ -1,6 +1,7 @@
 Object mouse
 other_arch mouse
 face mouse.111
+race animal
 color_fg brown
 anim
 mouse.111

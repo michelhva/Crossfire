@@ -1,4 +1,5 @@
 Object generate_ant
+race insect
 other_arch ant
 name generator
 face ant_gen.111

@@ -1,5 +1,6 @@
 Object centipede_r
 name giant centipede
+race insect
 other_arch centipede_r
 face centipede_r.111
 speed -0.1

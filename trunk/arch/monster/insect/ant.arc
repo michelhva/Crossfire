@@ -1,5 +1,6 @@
 Object ant
 face ant.111
+race insect
 anim
 ant.111
 ant.112

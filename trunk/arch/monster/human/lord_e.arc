@@ -1,6 +1,7 @@
 Object lord_e
 name Lord Eureca (commanded by Ghothwolte)
 face lord_e.111
+race human
 anim
 lord_e.111
 lord_e.112

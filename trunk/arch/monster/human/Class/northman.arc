@@ -1,5 +1,6 @@
 Object northman
 name viking
+race human
 randomitems viking
 face northman.111
 anim

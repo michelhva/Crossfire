@@ -1,5 +1,6 @@
 Object fighter
 name fighter
+race human
 randomitems throw_stnd
 face fighter.111
 anim

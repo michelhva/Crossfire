@@ -1,5 +1,6 @@
 Object warrior_1
 name warrior
+race human
 randomitems warrior_1
 face warrior.171
 animation warrior

@@ -1,4 +1,5 @@
 Object man
+race human
 name man
 randomitems throw_stnd
 face man.111

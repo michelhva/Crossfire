@@ -1,4 +1,5 @@
 Object xan
+race insect
 race xan
 randomitems xan
 face xan.111

@@ -1,5 +1,6 @@
 Object dog
 face dog.111
+race animal
 anim
 dog.111
 dog.112

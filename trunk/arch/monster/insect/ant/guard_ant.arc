@@ -1,6 +1,6 @@
 Object guard_ant
 face war_ant.131
-race ant
+race insect
 name Guardian Ant
 animation war_ant
 sleep 1

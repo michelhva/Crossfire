@@ -1,4 +1,5 @@
 Object sage
+race human
 randomitems sage
 name sage
 msg

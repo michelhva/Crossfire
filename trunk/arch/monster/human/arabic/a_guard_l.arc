@@ -1,4 +1,5 @@
 Object a_guard_l
+race human
 name light guard
 randomitems guard_l
 face a_guard_l.111

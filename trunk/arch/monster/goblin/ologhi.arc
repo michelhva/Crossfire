@@ -1,5 +1,6 @@
 Object ologhi
 name Olog-hi
+race humanoid
 face ologhi.111
 anim
 ologhi.111

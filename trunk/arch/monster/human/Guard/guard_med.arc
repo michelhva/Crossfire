@@ -1,4 +1,5 @@
 Object medium_guard
+race human
 name castle guard
 face guard_med.111
 color_fg grey

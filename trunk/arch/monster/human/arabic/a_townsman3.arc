@@ -1,4 +1,5 @@
 Object a_townsman3
+race human
 name Townsman
 randomitems standard
 face a_townsman3.111

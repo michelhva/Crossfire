@@ -1,5 +1,6 @@
 Object bee
 flying 1
+race insect
 face bee.111
 color_fg dark_orange
 anim

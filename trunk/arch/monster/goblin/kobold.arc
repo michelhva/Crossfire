@@ -1,5 +1,6 @@
 Object kobold
 face kobold.111
+race humanoid
 anim
 kobold.111
 kobold.112

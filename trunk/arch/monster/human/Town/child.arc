@@ -1,5 +1,6 @@
 Object child
 name child
+race human
 randomitems child
 face child.111
 monster 1

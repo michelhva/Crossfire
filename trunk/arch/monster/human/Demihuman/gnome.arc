@@ -1,4 +1,5 @@
 Object gnome
+race humanoid
 name cunning gnome
 randomitems throw_stnd
 alive 1

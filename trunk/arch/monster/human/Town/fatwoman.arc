@@ -1,4 +1,5 @@
 Object fatwoman
+race human
 name large woman
 face fatwoman.111
 monster 1

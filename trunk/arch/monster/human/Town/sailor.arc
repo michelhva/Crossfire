@@ -1,4 +1,5 @@
 Object sailor
+race human
 name sailor
 randomitems pirate
 face sailor.111
