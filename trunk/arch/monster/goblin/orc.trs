@@ -21,14 +21,14 @@ treasure orc
     nrof 6
     end
   more
-  arch sword_4
+  arch b_ssword_2
   magic 1
   chance 5
   no
-    arch shortsword
+    arch b_ssword_1
     chance 10
     no
-      arch dagger
+      arch b_dagger
       chance 15
       no
         arch stoneaxe
@@ -41,7 +41,7 @@ treasure orc
       end
     end
   more
-  arch small_shield
+  arch b_small_shield
   chance 10
   more
   arch silvercoin
