@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:14:36 1996
 endmsg
-x 32
-y 20
+width 32
+height 20
 end
 arch sea
 end
@@ -14,10 +14,6 @@ arch sea
 y 1
 end
 arch evergreens
-y 2
-end
-arch biglake_sw
-name sea
 y 2
 end
 arch invis_exit
@@ -141,10 +137,6 @@ arch evergreens
 y 16
 end
 arch grass
-y 17
-end
-arch biglake_nw
-name sea
 y 17
 end
 arch sea
@@ -252,11 +244,6 @@ arch grass
 x 1
 y 16
 end
-arch biglake_nw
-name sea
-x 1
-y 16
-end
 arch sea
 x 1
 y 17
@@ -281,11 +268,6 @@ x 2
 y 2
 end
 arch pstone_1
-x 2
-y 3
-end
-arch biglake_sw
-name sea
 x 2
 y 3
 end
@@ -477,11 +459,6 @@ x 3
 y 14
 end
 arch evergreens
-x 3
-y 15
-end
-arch biglake_nw
-name sea
 x 3
 y 15
 end
@@ -670,11 +647,6 @@ arch pstone_1
 x 5
 y 3
 end
-arch biglake_se
-name sea
-x 5
-y 3
-end
 arch dungeon_magic
 x 5
 y 4
@@ -788,11 +760,6 @@ x 5
 y 15
 end
 arch pstone_1
-x 5
-y 15
-end
-arch biglake_ne
-name sea
 x 5
 y 15
 end
@@ -1118,11 +1085,6 @@ arch pstone_1
 x 7
 y 15
 end
-arch biglake_nw
-name sea
-x 7
-y 15
-end
 arch sea
 x 7
 y 16
@@ -1267,11 +1229,6 @@ x 8
 y 14
 end
 arch pstone_1
-x 8
-y 14
-end
-arch biglake_new
-name sea
 x 8
 y 14
 end
@@ -1510,10 +1467,10 @@ msg
 @match siegfried
 Click.
 endmsg
-x 10
-y 9
 protected 1
 connected 1
+x 10
+y 9
 end
 arch pstone_1
 x 10
@@ -1537,12 +1494,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
-x 10
-y 10
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
+x 10
+y 10
 end
 arch dungeon_magic
 x 10
@@ -1699,10 +1656,10 @@ x 11
 y 9
 end
 arch igateTrg2
-x 11
-y 9
 protected 1
 connected 1
+x 11
+y 9
 end
 arch grass
 x 11
@@ -1877,12 +1834,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
-x 12
-y 8
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
+x 12
+y 8
 end
 arch dungeon_magic
 x 12
@@ -1893,10 +1850,10 @@ msg
 @match siegfried
 Click.
 endmsg
-x 12
-y 9
 protected 1
 connected 1
+x 12
+y 9
 end
 arch pstone_1
 x 12
@@ -1950,11 +1907,6 @@ arch pstone_1
 x 12
 y 15
 end
-arch biglake_ne
-name sea
-x 12
-y 15
-end
 arch sea
 x 12
 y 16
@@ -1987,11 +1939,6 @@ x 13
 y 3
 end
 arch pstone_1
-x 13
-y 3
-end
-arch biglake_sw
-name sea
 x 13
 y 3
 end
@@ -2246,11 +2193,6 @@ arch pstone_1
 x 14
 y 15
 end
-arch biglake_nw
-name sea
-x 14
-y 15
-end
 arch sea
 x 14
 y 16
@@ -2291,11 +2233,6 @@ x 15
 y 4
 end
 arch pstone_1
-x 15
-y 4
-end
-arch biglake_sw
-name sea
 x 15
 y 4
 end
@@ -2601,11 +2538,6 @@ arch pstone_1
 x 17
 y 4
 end
-arch biglake_se
-name sea
-x 17
-y 4
-end
 arch dungeon_magic
 x 17
 y 5
@@ -2837,11 +2769,6 @@ arch pstone_1
 x 18
 y 15
 end
-arch biglake_ne
-name sea
-x 18
-y 15
-end
 arch sea
 x 18
 y 16
@@ -2870,11 +2797,6 @@ x 19
 y 2
 end
 arch pstone_1
-x 19
-y 3
-end
-arch biglake_se
-name sea
 x 19
 y 3
 end
@@ -2935,11 +2857,6 @@ x 19
 y 15
 end
 arch pstone_1
-x 19
-y 16
-end
-arch biglake_ne
-name sea
 x 19
 y 16
 end
@@ -3102,11 +3019,6 @@ x 21
 y 13
 end
 arch pstone_1
-x 21
-y 14
-end
-arch biglake_nse
-name sea
 x 21
 y 14
 end
@@ -3197,11 +3109,6 @@ arch pstone_1
 x 22
 y 13
 end
-arch biglake_nw
-name sea
-x 22
-y 13
-end
 arch sea
 x 22
 y 14
@@ -3302,20 +3209,15 @@ x 23
 y 12
 end
 arch sea
-x 23
-y 13
 no_pass 0
+x 23
+y 13
 end
 arch sea
 x 23
 y 14
 end
 arch pstone_1
-x 23
-y 15
-end
-arch biglake_sw
-name sea
 x 23
 y 15
 end
@@ -3399,9 +3301,9 @@ x 24
 y 12
 end
 arch sea
+no_pass 0
 x 24
 y 13
-no_pass 0
 end
 arch sea
 x 24
@@ -3412,11 +3314,6 @@ x 24
 y 15
 end
 arch pstone_1
-x 24
-y 16
-end
-arch biglake_nw
-name sea
 x 24
 y 16
 end
@@ -3444,11 +3341,6 @@ x 25
 y 2
 end
 arch grass
-x 25
-y 3
-end
-arch biglake_sw
-name sea
 x 25
 y 3
 end
@@ -3721,11 +3613,6 @@ arch grass
 x 28
 y 4
 end
-arch biglake_sw
-name sea
-x 28
-y 4
-end
 arch grass
 x 28
 y 5
@@ -3755,11 +3642,6 @@ x 28
 y 11
 end
 arch grass
-x 28
-y 12
-end
-arch biglake_nw
-name sea
 x 28
 y 12
 end
@@ -3822,11 +3704,6 @@ arch grass
 x 29
 y 7
 end
-arch biglake_sw
-name sea
-x 29
-y 7
-end
 arch evergreen
 x 29
 y 8
@@ -3844,11 +3721,6 @@ x 29
 y 10
 end
 arch grass
-x 29
-y 11
-end
-arch biglake_nw
-name sea
 x 29
 y 11
 end
@@ -3920,11 +3792,6 @@ x 30
 y 8
 end
 arch grass
-x 30
-y 9
-end
-arch biglake_sw
-name sea
 x 30
 y 9
 end
@@ -4052,13 +3919,5 @@ slaying port_e_house
 hp 6
 sp 6
 x 23
-y 13
-end
-More
-arch longship_2
-slaying port_e_house
-hp 6
-sp 6
-x 24
 y 13
 end

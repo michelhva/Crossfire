@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 11 21:51:12 1997
 endmsg
-x 15
-y 15
+width 15
+height 15
 end
 arch woods
 end
@@ -222,9 +222,9 @@ x 2
 y 4
 end
 arch hedge_1_4
+blocksview 0
 x 2
 y 4
-blocksview 0
 end
 arch grass
 x 2
@@ -301,27 +301,27 @@ x 3
 y 4
 end
 arch hedge_2_2_3
+blocksview 0
 x 3
 y 4
-blocksview 0
 end
 arch grass
 x 3
 y 5
 end
 arch hedge_2_1_1
+blocksview 0
 x 3
 y 5
-blocksview 0
 end
 arch grass
 x 3
 y 6
 end
 arch hedge_1_2
+blocksview 0
 x 3
 y 6
-blocksview 0
 end
 arch cobblestones2
 x 3
@@ -1116,9 +1116,9 @@ y 12
 end
 arch biglake_new
 name sea
+no_pass 0
 x 13
 y 12
-no_pass 0
 end
 arch galleon
 slaying ../islands
@@ -1132,11 +1132,6 @@ x 13
 y 13
 end
 arch pstone_1
-x 13
-y 14
-end
-arch biglake_sw
-name sea
 x 13
 y 14
 end
@@ -1258,39 +1253,7 @@ sp 12
 x 1
 y 5
 end
-More
-arch store_general_2
-name Bobo's shop
-slaying shop
-hp 6
-sp 12
-x 2
-y 5
-end
-More
-arch store_general_3
-name Bobo's shop
-slaying shop
-hp 6
-sp 12
-x 1
-y 6
-end
-More
-arch store_general_4
-name Bobo's shop
-slaying shop
-hp 6
-sp 12
-x 2
-y 6
-end
 arch barrack_long
 x 12
-y 10
-end
-More
-arch barrack_long_2
-x 13
 y 10
 end

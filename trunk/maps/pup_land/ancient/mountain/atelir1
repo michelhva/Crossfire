@@ -5063,48 +5063,13 @@ arch troll
 x 2
 y 4
 end
-More
-arch troll_2
-x 3
-y 4
-end
-More
-arch troll_3
-x 2
-y 5
-end
-More
-arch troll_4
-x 3
-y 5
-end
 arch troll
 x 2
 y 6
 end
-More
-arch troll_2
-x 3
-y 6
-end
-More
-arch troll_3
-x 2
-y 7
-end
-More
-arch troll_4
-x 3
-y 7
-end
 arch giant
 x 2
 y 9
-end
-More
-arch giant_2
-x 2
-y 10
 end
 arch big_elec
 Con 45
@@ -5118,99 +5083,14 @@ wc -70
 ac -80
 x 2
 y 11
-level 50
-end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 11
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 2
-y 12
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 12
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 2
-y 13
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 13
 level 50
 end
 arch giant
 x 2
 y 14
 end
-More
-arch giant_2
-x 2
-y 15
-end
 arch dragon
 x 2
-y 16
-end
-More
-arch dragon_2
-x 3
 y 16
 end
 arch big_elec
@@ -5227,282 +5107,42 @@ x 2
 y 17
 level 50
 end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 17
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 2
-y 18
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 18
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 2
-y 19
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 3
-y 19
-level 50
-end
 arch golem_necro
 x 3
 y 1
-end
-More
-arch golem_necro_2
-x 4
-y 1
-end
-More
-arch golem_necro_3
-x 3
-y 2
-end
-More
-arch golem_necro_4
-x 4
-y 2
-end
-More
-arch golem_necro_5
-x 3
-y 3
-end
-More
-arch golem_necro_6
-x 4
-y 3
 end
 arch big_dragon
 x 3
 y 14
 level 50
 end
-More
-arch big_dragon_2
-hp 3500
-x 4
-y 14
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 5
-y 14
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 3
-y 15
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 4
-y 15
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 5
-y 15
-level 50
-end
 arch troll
 x 4
 y 5
-end
-More
-arch troll_2
-x 5
-y 5
-end
-More
-arch troll_3
-x 4
-y 6
-end
-More
-arch troll_4
-x 5
-y 6
 end
 arch golem_necro
 x 4
 y 8
 end
-More
-arch golem_necro_2
-x 5
-y 8
-end
-More
-arch golem_necro_3
-x 4
-y 9
-end
-More
-arch golem_necro_4
-x 5
-y 9
-end
-More
-arch golem_necro_5
-x 4
-y 10
-end
-More
-arch golem_necro_6
-x 5
-y 10
-end
 arch troll
 x 4
 y 11
 end
-More
-arch troll_2
-x 5
-y 11
-end
-More
-arch troll_3
-x 4
-y 12
-end
-More
-arch troll_4
-x 5
-y 12
-end
 arch dragon
 x 4
-y 16
-end
-More
-arch dragon_2
-x 5
 y 16
 end
 arch chinese_dragon
 x 4
 y 18
 end
-More
-arch chinese_dragon_2
-x 5
-y 18
-end
-More
-arch chinese_dragon_3
-x 4
-y 19
-end
-More
-arch chinese_dragon_4
-x 5
-y 19
-end
 arch giant
 x 7
 y 7
 end
-More
-arch giant_2
-x 7
-y 8
-end
 arch golem_necro
 x 7
 y 9
-end
-More
-arch golem_necro_2
-x 8
-y 9
-end
-More
-arch golem_necro_3
-x 7
-y 10
-end
-More
-arch golem_necro_4
-x 8
-y 10
-end
-More
-arch golem_necro_5
-x 7
-y 11
-end
-More
-arch golem_necro_6
-x 8
-y 11
 end
 arch big_elec
 Con 45
@@ -5518,187 +5158,22 @@ x 7
 y 12
 level 50
 end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 8
-y 12
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 7
-y 13
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 8
-y 13
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 7
-y 14
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 8
-y 14
-level 50
-end
 arch big_dragon
 x 7
 y 16
-level 50
-end
-More
-arch big_dragon_2
-hp 3500
-x 8
-y 16
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 9
-y 16
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 7
-y 17
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 8
-y 17
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 9
-y 17
 level 50
 end
 arch dragon
 x 8
 y 15
 end
-More
-arch dragon_2
-x 9
-y 15
-end
 arch golem_necro
 x 8
 y 18
 end
-More
-arch golem_necro_2
-x 9
-y 18
-end
-More
-arch golem_necro_3
-x 8
-y 19
-end
-More
-arch golem_necro_4
-x 9
-y 19
-end
-More
-arch golem_necro_5
-x 8
-y 20
-end
-More
-arch golem_necro_6
-x 9
-y 20
-end
 arch golem_necro
 x 9
 y 9
-end
-More
-arch golem_necro_2
-x 10
-y 9
-end
-More
-arch golem_necro_3
-x 9
-y 10
-end
-More
-arch golem_necro_4
-x 10
-y 10
-end
-More
-arch golem_necro_5
-x 9
-y 11
-end
-More
-arch golem_necro_6
-x 10
-y 11
 end
 arch big_elec
 Con 45
@@ -5714,178 +5189,18 @@ x 9
 y 12
 level 50
 end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 10
-y 12
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 9
-y 13
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 10
-y 13
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 9
-y 14
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 10
-y 14
-level 50
-end
 arch big_dragon
 x 10
 y 16
 level 50
 end
-More
-arch big_dragon_2
-hp 3500
-x 11
-y 16
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 12
-y 16
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 10
-y 17
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 11
-y 17
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 12
-y 17
-level 50
-end
 arch golem_necro
 x 10
 y 18
 end
-More
-arch golem_necro_2
-x 11
-y 18
-end
-More
-arch golem_necro_3
-x 10
-y 19
-end
-More
-arch golem_necro_4
-x 11
-y 19
-end
-More
-arch golem_necro_5
-x 10
-y 20
-end
-More
-arch golem_necro_6
-x 11
-y 20
-end
 arch golem_necro
 x 11
 y 9
-end
-More
-arch golem_necro_2
-x 12
-y 9
-end
-More
-arch golem_necro_3
-x 11
-y 10
-end
-More
-arch golem_necro_4
-x 12
-y 10
-end
-More
-arch golem_necro_5
-x 11
-y 11
-end
-More
-arch golem_necro_6
-x 12
-y 11
 end
 arch big_elec
 Con 45
@@ -5901,359 +5216,54 @@ x 11
 y 12
 level 50
 end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 12
-y 12
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 11
-y 13
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 12
-y 13
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 11
-y 14
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 12
-y 14
-level 50
-end
 arch golem_necro
 x 12
 y 18
 end
-More
-arch golem_necro_2
-x 13
-y 18
-end
-More
-arch golem_necro_3
-x 12
-y 19
-end
-More
-arch golem_necro_4
-x 13
-y 19
-end
-More
-arch golem_necro_5
-x 12
-y 20
-end
-More
-arch golem_necro_6
-x 13
-y 20
-end
 arch big_dragon
 x 13
 y 16
-level 50
-end
-More
-arch big_dragon_2
-hp 3500
-x 14
-y 16
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 15
-y 16
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 13
-y 17
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 14
-y 17
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 15
-y 17
 level 50
 end
 arch gaelotroll
 x 14
 y 7
 end
-More
-arch gaelotroll_2
-x 15
-y 7
-end
-More
-arch gaelotroll_3
-x 14
-y 8
-end
-More
-arch gaelotroll_4
-x 15
-y 8
-end
-More
-arch gaelotroll_5
-x 14
-y 9
-end
-More
-arch gaelotroll_6
-x 15
-y 9
-end
 arch chinese_dragon
 x 14
 y 10
 end
-More
-arch chinese_dragon_2
-x 15
-y 10
-end
-More
-arch chinese_dragon_3
-x 14
-y 11
-end
-More
-arch chinese_dragon_4
-x 15
-y 11
-end
 arch golem_necro
 x 14
 y 18
 end
-More
-arch golem_necro_2
-x 15
-y 18
-end
-More
-arch golem_necro_3
-x 14
-y 19
-end
-More
-arch golem_necro_4
-x 15
-y 19
-end
-More
-arch golem_necro_5
-x 14
-y 20
-end
-More
-arch golem_necro_6
-x 15
-y 20
-end
 arch giant
 x 15
 y 2
-end
-More
-arch giant_2
-x 15
-y 3
 end
 arch giant
 x 15
 y 5
 end
-More
-arch giant_2
-x 15
-y 6
-end
 arch golem_necro
 x 17
 y 1
-end
-More
-arch golem_necro_2
-x 18
-y 1
-end
-More
-arch golem_necro_3
-x 17
-y 2
-end
-More
-arch golem_necro_4
-x 18
-y 2
-end
-More
-arch golem_necro_5
-x 17
-y 3
-end
-More
-arch golem_necro_6
-x 18
-y 3
 end
 arch big_dragon
 x 19
 y 1
 level 50
 end
-More
-arch big_dragon_2
-hp 3500
-x 20
-y 1
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 21
-y 1
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 19
-y 2
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 20
-y 2
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 21
-y 2
-level 50
-end
 arch dragon
 x 19
-y 3
-end
-More
-arch dragon_2
-x 20
 y 3
 end
 arch golem_necro
 x 19
 y 5
 end
-More
-arch golem_necro_2
-x 20
-y 5
-end
-More
-arch golem_necro_3
-x 19
-y 6
-end
-More
-arch golem_necro_4
-x 20
-y 6
-end
-More
-arch golem_necro_5
-x 19
-y 7
-end
-More
-arch golem_necro_6
-x 20
-y 7
-end
 arch dragon
 x 21
-y 3
-end
-More
-arch dragon_2
-x 22
 y 3
 end
 arch big_dragon
@@ -6261,58 +5271,13 @@ x 21
 y 5
 level 50
 end
-More
-arch big_dragon_2
-hp 3500
-x 22
-y 5
-level 50
-end
-More
-arch big_dragon_3
-hp 3500
-x 23
-y 5
-level 50
-end
-More
-arch big_dragon_4
-hp 3500
-x 21
-y 6
-level 50
-end
-More
-arch big_dragon_5
-hp 3500
-x 22
-y 6
-level 50
-end
-More
-arch big_dragon_6
-hp 3500
-x 23
-y 6
-level 50
-end
 arch dragon
 x 21
-y 7
-end
-More
-arch dragon_2
-x 22
 y 7
 end
 arch giant
 x 22
 y 1
-end
-More
-arch giant_2
-x 22
-y 2
 end
 arch big_elec
 Con 45
@@ -6328,81 +5293,6 @@ x 23
 y 1
 level 50
 end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 24
-y 1
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 23
-y 2
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 24
-y 2
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 23
-y 3
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 24
-y 3
-level 50
-end
 arch big_elec
 Con 45
 hp 22000
@@ -6415,172 +5305,37 @@ wc -70
 ac -80
 x 24
 y 5
-level 50
-end
-More
-arch big_elec_2
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 25
-y 5
-level 50
-end
-More
-arch big_elec_3
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 24
-y 6
-level 50
-end
-More
-arch big_elec_4
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 25
-y 6
-level 50
-end
-More
-arch big_elec_5
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 24
-y 7
-level 50
-end
-More
-arch big_elec_6
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 25
-y 7
 level 50
 end
 arch baslic
 x 25
 y 1
 end
-More
-arch baslic_2
-x 26
-y 1
-end
-More
-arch baslic_3
-x 27
-y 1
-end
-More
-arch baslic_4
-x 25
-y 2
-end
-More
-arch baslic_5
-x 26
-y 2
-end
-More
-arch baslic_6
-x 27
-y 2
-end
 arch dragon
 x 25
-y 3
-end
-More
-arch dragon_2
-x 26
 y 3
 end
 arch dragon
 x 26
 y 5
 end
-More
-arch dragon_2
-x 27
-y 5
-end
 arch giant
 x 26
 y 6
-end
-More
-arch giant_2
-x 26
-y 7
 end
 arch dragon
 x 27
 y 3
 end
-More
-arch dragon_2
-x 28
-y 3
-end
 arch giant
 x 27
 y 6
 end
-More
-arch giant_2
-x 27
-y 7
-end
 arch giant
 x 28
 y 1
-end
-More
-arch giant_2
-x 28
-y 2
 end
 arch giant
 x 28
 y 4
-end
-More
-arch giant_2
-x 28
-y 5
 end

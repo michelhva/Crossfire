@@ -2175,42 +2175,6 @@ end
 arch spell_sm_lightning
 end
 end
-More
-arch behemoth_2
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 6
-y 10
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_3
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 5
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_4
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 6
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
 arch behemoth
 name Electric Behemoth
 Pow 100
@@ -2226,42 +2190,6 @@ arch spell_sm_lightning
 end
 arch spell_sm_lightning
 end
-end
-More
-arch behemoth_2
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 6
-y 12
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_3
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 5
-y 13
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_4
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 6
-y 13
-attack_movement 7
-immune 16392
-can_cast_spell 1
 end
 arch behemoth
 name Electric Behemoth
@@ -2279,42 +2207,6 @@ end
 arch spell_sm_lightning
 end
 end
-More
-arch behemoth_2
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 8
-y 10
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_3
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 7
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_4
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 8
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
 arch behemoth
 name Electric Behemoth
 Pow 100
@@ -2330,40 +2222,4 @@ arch spell_sm_lightning
 end
 arch spell_sm_lightning
 end
-end
-More
-arch behemoth_2
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 8
-y 12
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_3
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 7
-y 13
-attack_movement 7
-immune 16392
-can_cast_spell 1
-end
-More
-arch behemoth_4
-name Electric Behemoth
-Pow 100
-hp 800
-maxsp 300
-x 8
-y 13
-attack_movement 7
-immune 16392
-can_cast_spell 1
 end

@@ -1468,24 +1468,10 @@ name Bullet
 x 1
 y 8
 end
-More
-arch cobra_2
-name Bullet
-hp 30
-x 1
-y 9
-end
 arch cobra
 name Bullet
 x 3
 y 7
-end
-More
-arch cobra_2
-name Bullet
-hp 30
-x 3
-y 8
 end
 arch dread
 name Manager of Ordeal
@@ -1507,69 +1493,6 @@ level 20
 reflect_spell 1
 can_see_in_dark 1
 end
-More
-arch dread_2
-name Manager of Ordeal
-Dex 5
-Con 40
-Pow 10
-hp 3000
-maxhp 3000
-sp 50
-maxsp 50
-exp 80000
-dam 40
-ac -15
-x 13
-y 2
-speed 0.001000
-speed_left 0.800000
-level 20
-reflect_spell 1
-can_see_in_dark 1
-end
-More
-arch dread_3
-name Manager of Ordeal
-Dex 5
-Con 40
-Pow 10
-hp 3000
-maxhp 3000
-sp 50
-maxsp 50
-exp 80000
-dam 40
-ac -15
-x 12
-y 3
-speed 0.001000
-speed_left 0.800000
-level 20
-reflect_spell 1
-can_see_in_dark 1
-end
-More
-arch dread_4
-name Manager of Ordeal
-Dex 5
-Con 40
-Pow 10
-hp 3000
-maxhp 3000
-sp 50
-maxsp 50
-exp 80000
-dam 40
-ac -15
-x 13
-y 3
-speed 0.001000
-speed_left 0.800000
-level 20
-reflect_spell 1
-can_see_in_dark 1
-end
 arch behemoth
 name Henchman
 hp 100
@@ -1579,35 +1502,5 @@ x 12
 y 8
 speed 0.300000
 speed_left -1.350000
-level 10
-end
-More
-arch behemoth_2
-name Henchman
-hp 100
-maxhp 100
-x 13
-y 8
-speed 0.300000
-level 10
-end
-More
-arch behemoth_3
-name Henchman
-hp 100
-maxhp 100
-x 12
-y 9
-speed 0.300000
-level 10
-end
-More
-arch behemoth_4
-name Henchman
-hp 100
-maxhp 100
-x 13
-y 9
-speed 0.300000
 level 10
 end
