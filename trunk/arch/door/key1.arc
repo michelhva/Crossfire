@@ -5,7 +5,7 @@ color_fg orange
 nrof 1
 type 24
 material 2
-value 50
-weight 100
+value 10
+weight 10
 editable 144
 end
