@@ -158,3 +158,44 @@ no_pass 1
 editable 512
 visibility 100
 end
+Object wall_1_2_ruin
+name crumbled wall
+face wall_1_ruin.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+editable 512
+visibility 100
+end
+Object wall_1_4_ruin
+name crumbled wall
+face wall_2_ruin.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+editable 512
+visibility 100
+end
+Object wall_1_1_ruin
+name crumbled wall
+face wall_4_ruin.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+editable 512
+visibility 100
+end
+Object wall_1_3_ruin
+name crumbled wall
+face wall_8_ruin.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+editable 512
+visibility 100
+end
+
