@@ -1,6 +1,6 @@
 # CFDataFile.py - CFData classes
 #
-# Copyright (C) 2002 Joris Bontje
+# Copyright (C) 2004 Todd Mitchell
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,23 +25,24 @@ class CFDataFile:
     '''Plain text storage for Crossfire data'''
     
     def __init__(self, datafile_name):
+        '''make datafile paths for datafile 'object'
+        - these all go in ../var/crossfire/datafiles to keep the local dir clean'''
         self.datafile_name = datafile_name
         self.filename = os.path.join((CFPython.GetLocalDirectory()),'datafiles',datafile_name)
         
     def exists(self):
-        '''checks for datafile'''
+        '''checks for datafile - no need to load it yet'''
         if os.path.isfile(self.filename):
             return 1
         else:
             return 0
 
     def make_file(self, header):
-        '''creates a datafile, making the column header from a list'''
+        '''creates a datafile, making the column header from a list passed in'''
         try:
             file = open(self.filename,'w')
         except:
             print "Can't create datafile %s" % self.datafile_name
-            return 0
         else:
             temp = []
             for item in header:
@@ -53,7 +54,7 @@ class CFDataFile:
 
     def getData(self):
         '''Gets the formatted file as a dictionary
-        The # key contains the column headers for the file'''''
+        The # key contains the column headers for the file and indicates the 'primary' key'''
         try:
             file = open(self.filename,'r')
         except:
@@ -70,7 +71,7 @@ class CFDataFile:
             return DF
         
     def putData(self, dic):
-        '''Writes dictionary to formatted file'''
+        '''Writes dictionary to formatted file - uses | character as a delimiter'''
         try:
             file = open(self.filename,'w')
         except:
@@ -92,7 +93,9 @@ class CFDataFile:
             file.close()        
 
 class CFData:
-    '''CFData Object is basically a dictionary parsed from the datafile'''
+    '''CFData Object is basically a dictionary parsed from the datafile -
+    serves to pass back and forth a dictionary containing the datafile header
+    and the desired record to the caller - easier to read the '''
 
     def __init__(self, filename, header):
         self.header = header
@@ -101,6 +104,9 @@ class CFData:
         if self.datafile.exists():
             self.datadb = self.datafile.getData()
             if self.datadb['#'] != self.header:
+                # see if header in calling object matches header in file
+                # raise an alert but do nothing yet -
+                # indicates possible upgrade of caller, will flesh this out later
                 raise 'Header does not match!  You may need to fix the object or the datafile.'
         else:
             self.datafile.make_file(self.header)
