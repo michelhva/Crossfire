@@ -9,12 +9,10 @@ hp 400
 maxhp 400
 exp 180
 ac 7
-speed 0.0003
+speed 0.01
 resist_fire 100
-
 resist_cold -100
 resist_confusion -100
-
 alive 1
 level 1
 maxsp 1
