@@ -28,11 +28,11 @@ anim
 wraithp.111
 wraithp.112
 wraithp.131
-wraithp.131
+wraithp.132
 wraithp.151
 wraithp.152
 wraithp.171
-wraithp.171
+wraithp.172
 facings 4
 mina
 is_animated 1

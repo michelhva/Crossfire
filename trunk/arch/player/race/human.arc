@@ -15,11 +15,11 @@ anim
 human.111
 human.112
 human.131
-human.131
+human.132
 human.151
 human.152
 human.171
-human.171
+human.172
 facings 4
 mina
 is_animated 1

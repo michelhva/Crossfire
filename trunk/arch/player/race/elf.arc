@@ -24,11 +24,11 @@ anim
 elf.111
 elf.112
 elf.131
-elf.131
+elf.132
 elf.151
 elf.152
 elf.171
-elf.171
+elf.172
 facings 4
 mina
 is_animated 1
