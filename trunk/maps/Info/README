@@ -67,6 +67,7 @@ OLD_MAP_NAME, OLD_MAP_STARTX, OLD_MAP_STARTY, OLD_MAP_ENDX, OLD_MAP_ENDY ->
 
 Translation values used:
 /city/city, 10, 0 (100,100) -> /world/world_105_115, -10, 18
+/brittany/Brest/Brest 0,0 (100,100) -> /world/world_107_123, +17, +16
 
 ------------------------------------------------------------------------------
 land.c:
@@ -96,8 +97,12 @@ locations of the main cities.
 ------------------------------------------------------------------------------
 Completed maps:
 
+asyvan - moved
+brittany - moved
 city (now scorn) - moved
 santo_dominion: moved
+kar: moved
+
 
 individual linked maps:
 eeur/hut.1, hut.2 (in santo_dominion)
@@ -120,9 +125,9 @@ _city_* -> _scorn_...
 
 Guild maps:
 
-guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
-guilds@mailed_fist	-> scorn@guilds@mailed_fist
+guilds@black_shield	-> brest@black_shield
 guilds@drunken_barbarian-> santo_dominion@guilds@drunken_barbarian
+guilds@guildhousesinc 	-> scorn@guilds@guildhousesinc
 guilds@laughing_skull	-> pup_land@guilds@laughing_skull
+guilds@mailed_fist	-> scorn@guilds@mailed_fist
 guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
-

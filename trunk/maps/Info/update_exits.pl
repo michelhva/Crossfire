@@ -63,6 +63,15 @@ $NEW_MAP_NAME[2]="/world/world_104_115";
 $NEW_MAP_OFFX[2]=40;
 $NEW_MAP_OFFY[2]=18;
 
+# Start of scorn updates
+$OLD_MAP_NAME[2]='(.+/brest|brest)';
+$OLD_MAP_STARTX[2]=0;
+$OLD_MAP_STARTY[2]=0;
+$OLD_MAP_ENDX[2]=100;
+$OLD_MAP_ENDY[2]=100;
+$NEW_MAP_NAME[2]="/world/world_107_123";
+$NEW_MAP_OFFX[2]=17;
+$NEW_MAP_OFFY[2]=16;
 
 $VERBOSE=0;
 $error=0;
