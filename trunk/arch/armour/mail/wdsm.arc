@@ -3,6 +3,12 @@ name White Dragon Scale Mail
 nrof 1
 type 16
 face wdsm.111
+anim
+wdsm.111
+wdsm.112
+wdsm.113
+mina
+speed 0.1
 last_heal 9
 last_sp 13
 cursed 1
