@@ -1,6 +1,6 @@
 Object a_civic
 name civic building
-face a_civic.111
+face a_civic.x11
 type 66
 no_pick 1
 no_pass 1
@@ -9,7 +9,7 @@ end
 More
 Object a_civic_2
 name civic building
-face a_civic.211
+face a_civic.x11
 type 66
 no_pick 1
 no_pass 1
@@ -18,7 +18,7 @@ end
 More
 Object a_civic_3
 name civic building
-face a_civic.311
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -27,7 +27,7 @@ end
 More
 Object a_civic_4
 name civic building
-face a_civic.411
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -36,7 +36,7 @@ end
 More
 Object a_civic_5
 name civic building
-face a_civic.511
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -46,7 +46,7 @@ end
 More
 Object a_civic_6
 name civic building
-face a_civic.611
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -56,7 +56,7 @@ end
 More
 Object a_civic_7
 name civic building
-face a_civic.711
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -65,7 +65,7 @@ end
 More
 Object a_civic_8
 name civic building
-face a_civic.811
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
@@ -75,7 +75,7 @@ end
 More
 Object a_civic_9
 name civic building
-face a_civic.911
+face a_civic.x11
 type 66
 no_pick 1
 visibility 100
