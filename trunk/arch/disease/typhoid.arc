@@ -1,10 +1,10 @@
 Object typhoid
 name typhoid
 type 158
-attacktype 1048576
+attacktype 1
 invisible 1
 wc 5
-magic 1
+magic -1
 Str -3
 Con -4
 Dex -3
@@ -23,6 +23,6 @@ sp 1
 msg
 You feel feverish.  Your muscles spasm oddly....  Breathing is difficult.
 endmsg
-race *
+race human,humanoid
 level 12
 end

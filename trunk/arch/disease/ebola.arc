@@ -3,8 +3,8 @@ name Ebola
 type 158
 invisible 1
 attacktype 1048576
-wc 10
-magic 1
+wc 30
+magic -1
 Str -3
 Con -4
 Dex -2
