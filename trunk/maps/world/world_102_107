@@ -1,11 +1,14 @@
 arch map
 name world_102_107
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_102_106
 tile_path_2 world_103_107
@@ -14,7 +17,7 @@ tile_path_4 world_101_107
 end
 arch shallow_sea
 end
-arch desert
+arch beach
 y 1
 end
 arch hills_rocky
@@ -116,7 +119,7 @@ end
 arch shallow_sea
 y 34
 end
-arch desert
+arch beach
 y 35
 end
 arch sea
@@ -164,7 +167,7 @@ end
 arch shallow_sea
 x 1
 end
-arch desert
+arch beach
 x 1
 y 1
 end
@@ -184,11 +187,11 @@ arch grass
 x 1
 y 5
 end
-arch desert
+arch beach
 x 1
 y 6
 end
-arch desert
+arch beach
 x 1
 y 7
 end
@@ -208,7 +211,7 @@ arch brush
 x 1
 y 11
 end
-arch desert
+arch beach
 x 1
 y 12
 end
@@ -337,11 +340,6 @@ x 1
 y 43
 end
 arch grass
-x 1
-y 44
-end
-arch biglake_se
-name sea
 x 1
 y 44
 end
@@ -372,7 +370,7 @@ end
 arch shallow_sea
 x 2
 end
-arch desert
+arch beach
 x 2
 y 1
 end
@@ -392,15 +390,15 @@ arch woods_3
 x 2
 y 5
 end
-arch desert
+arch beach
 x 2
 y 6
 end
-arch desert
+arch beach
 x 2
 y 7
 end
-arch desert
+arch beach
 x 2
 y 8
 end
@@ -408,7 +406,7 @@ arch grass
 x 2
 y 9
 end
-arch desert
+arch beach
 x 2
 y 10
 end
@@ -579,11 +577,11 @@ end
 arch shallow_sea
 x 3
 end
-arch desert
+arch beach
 x 3
 y 1
 end
-arch desert
+arch beach
 x 3
 y 2
 end
@@ -599,15 +597,15 @@ arch woods
 x 3
 y 5
 end
-arch desert
+arch beach
 x 3
 y 6
 end
-arch desert
+arch beach
 x 3
 y 7
 end
-arch desert
+arch beach
 x 3
 y 8
 end
@@ -615,11 +613,11 @@ arch shallow_sea
 x 3
 y 9
 end
-arch desert
+arch beach
 x 3
 y 10
 end
-arch desert
+arch beach
 x 3
 y 11
 end
@@ -744,13 +742,6 @@ x 3
 y 41
 end
 arch sea
-x 3
-y 42
-end
-arch darkhold
-slaying /santo_dominion/lord_byron/main
-hp 25
-sp 59
 x 3
 y 42
 end
@@ -809,11 +800,11 @@ arch woods
 x 4
 y 5
 end
-arch desert
+arch beach
 x 4
 y 6
 end
-arch desert
+arch beach
 x 4
 y 7
 end
@@ -825,15 +816,15 @@ arch shallow_sea
 x 4
 y 9
 end
-arch desert
+arch beach
 x 4
 y 10
 end
-arch desert
+arch beach
 x 4
 y 11
 end
-arch desert
+arch beach
 x 4
 y 12
 end
@@ -841,7 +832,7 @@ arch woods
 x 4
 y 13
 end
-arch desert
+arch beach
 x 4
 y 14
 end
@@ -1004,11 +995,11 @@ arch woods
 x 5
 y 4
 end
-arch desert
+arch beach
 x 5
 y 5
 end
-arch desert
+arch beach
 x 5
 y 6
 end
@@ -1028,7 +1019,7 @@ arch shallow_sea
 x 5
 y 10
 end
-arch desert
+arch beach
 x 5
 y 11
 end
@@ -1040,7 +1031,7 @@ arch woods
 x 5
 y 13
 end
-arch desert
+arch beach
 x 5
 y 14
 end
@@ -1180,11 +1171,6 @@ arch grass
 x 5
 y 48
 end
-arch biglake_new
-name sea
-x 5
-y 48
-end
 arch sea
 x 5
 y 49
@@ -1196,7 +1182,7 @@ arch shallow_sea
 x 6
 y 1
 end
-arch desert
+arch beach
 x 6
 y 2
 end
@@ -1204,15 +1190,15 @@ arch woods
 x 6
 y 3
 end
-arch desert
+arch beach
 x 6
 y 4
 end
-arch desert
+arch beach
 x 6
 y 5
 end
-arch desert
+arch beach
 x 6
 y 6
 end
@@ -1232,7 +1218,7 @@ arch deep_swamp
 x 6
 y 10
 end
-arch desert
+arch beach
 x 6
 y 11
 end
@@ -1244,7 +1230,7 @@ arch woods
 x 6
 y 13
 end
-arch desert
+arch beach
 x 6
 y 14
 end
@@ -1388,11 +1374,6 @@ arch grass
 x 6
 y 49
 end
-arch biglake_ne
-name sea
-x 6
-y 49
-end
 arch sea
 x 7
 end
@@ -1400,7 +1381,7 @@ arch shallow_sea
 x 7
 y 1
 end
-arch desert
+arch beach
 x 7
 y 2
 end
@@ -1412,7 +1393,7 @@ arch woods
 x 7
 y 4
 end
-arch desert
+arch beach
 x 7
 y 5
 end
@@ -1436,19 +1417,19 @@ arch shallow_sea
 x 7
 y 10
 end
-arch desert
+arch beach
 x 7
 y 11
 end
-arch desert
+arch beach
 x 7
 y 12
 end
-arch desert
+arch beach
 x 7
 y 13
 end
-arch desert
+arch beach
 x 7
 y 14
 end
@@ -1568,11 +1549,6 @@ arch grass
 x 7
 y 43
 end
-arch biglake_sw
-name sea
-x 7
-y 43
-end
 arch grass
 x 7
 y 44
@@ -1608,15 +1584,15 @@ arch shallow_sea
 x 8
 y 2
 end
-arch desert
+arch beach
 x 8
 y 3
 end
-arch desert
+arch beach
 x 8
 y 4
 end
-arch desert
+arch beach
 x 8
 y 5
 end
@@ -1640,15 +1616,15 @@ arch sea
 x 8
 y 10
 end
-arch desert
+arch beach
 x 8
 y 11
 end
-arch desert
+arch beach
 x 8
 y 12
 end
-arch desert
+arch beach
 x 8
 y 13
 end
@@ -1796,11 +1772,6 @@ arch grass
 x 8
 y 49
 end
-arch biglake_nw
-name sea
-x 8
-y 49
-end
 arch sea
 x 9
 end
@@ -1816,7 +1787,7 @@ arch shallow_sea
 x 9
 y 3
 end
-arch desert
+arch beach
 x 9
 y 4
 end
@@ -1848,7 +1819,7 @@ arch sea
 x 9
 y 11
 end
-arch desert
+arch beach
 x 9
 y 12
 end
@@ -1980,11 +1951,6 @@ arch brush
 x 9
 y 44
 end
-arch biglake_sw
-name sea
-x 9
-y 44
-end
 arch brush
 x 9
 y 45
@@ -1994,11 +1960,6 @@ x 9
 y 46
 end
 arch brush
-x 9
-y 47
-end
-arch biglake_nw
-name sea
 x 9
 y 47
 end
@@ -2969,27 +2930,27 @@ arch shallow_sea
 x 14
 y 39
 end
-arch desert
+arch beach
 x 14
 y 40
 end
-arch desert
+arch beach
 x 14
 y 41
 end
-arch desert
+arch beach
 x 14
 y 42
 end
-arch desert
+arch beach
 x 14
 y 43
 end
-arch desert
+arch beach
 x 14
 y 44
 end
-arch desert
+arch beach
 x 14
 y 45
 end
@@ -2997,11 +2958,11 @@ arch cobblestones
 x 14
 y 46
 end
-arch desert
+arch beach
 x 14
 y 47
 end
-arch desert
+arch beach
 x 14
 y 48
 end
@@ -3164,11 +3125,11 @@ arch shallow_sea
 x 15
 y 38
 end
-arch desert
+arch beach
 x 15
 y 39
 end
-arch woods
+arch beach
 x 15
 y 40
 end
@@ -3176,19 +3137,19 @@ arch steppe
 x 15
 y 41
 end
-arch woods
+arch beach
 x 15
 y 42
 end
-arch woods
+arch beach
 x 15
 y 43
 end
-arch woods
+arch beach
 x 15
 y 44
 end
-arch woods
+arch beach
 x 15
 y 45
 end
@@ -3200,7 +3161,7 @@ arch woods
 x 15
 y 47
 end
-arch desert
+arch beach
 x 15
 y 48
 end
@@ -3359,11 +3320,11 @@ arch shallow_sea
 x 16
 y 37
 end
-arch desert
+arch beach
 x 16
 y 38
 end
-arch woods
+arch beach
 x 16
 y 39
 end
@@ -3399,7 +3360,7 @@ arch woods
 x 16
 y 47
 end
-arch desert
+arch beach
 x 16
 y 48
 end
@@ -3550,15 +3511,15 @@ arch shallow_sea
 x 17
 y 35
 end
-arch desert
+arch beach
 x 17
 y 36
 end
-arch desert
+arch beach
 x 17
 y 37
 end
-arch woods
+arch beach
 x 17
 y 38
 end
@@ -3594,11 +3555,11 @@ arch cobblestones
 x 17
 y 46
 end
-arch desert
+arch beach
 x 17
 y 47
 end
-arch desert
+arch beach
 x 17
 y 48
 end
@@ -3737,23 +3698,23 @@ arch shallow_sea
 x 18
 y 32
 end
-arch shallow_sea
+arch beach
 x 18
 y 33
 end
-arch deep_swamp
+arch beach
 x 18
 y 34
 end
-arch desert
+arch beach
 x 18
 y 35
 end
-arch woods
+arch beach
 x 18
 y 36
 end
-arch woods
+arch beach
 x 18
 y 37
 end
@@ -3793,11 +3754,11 @@ arch cobblestones
 x 18
 y 46
 end
-arch desert
+arch beach
 x 18
 y 47
 end
-arch desert
+arch beach
 x 18
 y 48
 end
@@ -3928,23 +3889,23 @@ arch shallow_sea
 x 19
 y 30
 end
-arch desert
+arch beach
 x 19
 y 31
 end
-arch desert
+arch beach
 x 19
 y 32
 end
-arch desert
+arch beach
 x 19
 y 33
 end
-arch woods
+arch beach
 x 19
 y 34
 end
-arch woods
+arch beach
 x 19
 y 35
 end
@@ -3996,7 +3957,7 @@ arch cobblestones
 x 19
 y 47
 end
-arch desert
+arch beach
 x 19
 y 48
 end
@@ -4123,15 +4084,15 @@ arch shallow_sea
 x 20
 y 29
 end
-arch desert
+arch beach
 x 20
 y 30
 end
-arch woods
+arch beach
 x 20
 y 31
 end
-arch woods
+arch beach
 x 20
 y 32
 end
@@ -4139,7 +4100,7 @@ arch steppe
 x 20
 y 33
 end
-arch woods
+arch beach
 x 20
 y 34
 end
@@ -4314,19 +4275,19 @@ arch sea
 x 21
 y 27
 end
-arch desert
+arch beach
 x 21
 y 28
 end
-arch desert
+arch beach
 x 21
 y 29
 end
-arch desert
+arch beach
 x 21
 y 30
 end
-arch desert
+arch beach
 x 21
 y 31
 end
@@ -4513,15 +4474,15 @@ arch shallow_sea
 x 22
 y 27
 end
-arch desert
+arch beach
 x 22
 y 28
 end
-arch woods
+arch beach
 x 22
 y 29
 end
-arch woods
+arch beach
 x 22
 y 30
 end
@@ -4712,11 +4673,11 @@ arch shallow_sea
 x 23
 y 27
 end
-arch desert
+arch beach
 x 23
 y 28
 end
-arch woods
+arch beach
 x 23
 y 29
 end
@@ -4911,11 +4872,11 @@ arch deep_swamp
 x 24
 y 27
 end
-arch woods
+arch beach
 x 24
 y 28
 end
-arch woods
+arch beach
 x 24
 y 29
 end
@@ -5106,11 +5067,11 @@ arch sea
 x 25
 y 26
 end
-arch desert
+arch beach
 x 25
 y 27
 end
-arch woods
+arch beach
 x 25
 y 28
 end
@@ -5305,7 +5266,7 @@ arch deep_swamp
 x 26
 y 26
 end
-arch desert
+arch beach
 x 26
 y 27
 end
@@ -5500,11 +5461,11 @@ arch shallow_sea
 x 27
 y 25
 end
-arch woods
+arch beach
 x 27
 y 26
 end
-arch woods
+arch beach
 x 27
 y 27
 end
@@ -5695,11 +5656,11 @@ arch shallow_sea
 x 28
 y 24
 end
-arch woods
+arch beach
 x 28
 y 25
 end
-arch woods
+arch beach
 x 28
 y 26
 end
@@ -5890,11 +5851,11 @@ arch sea
 x 29
 y 23
 end
-arch desert
+arch beach
 x 29
 y 24
 end
-arch woods
+arch beach
 x 29
 y 25
 end
@@ -6095,11 +6056,11 @@ arch sea
 x 30
 y 23
 end
-arch desert
+arch beach
 x 30
 y 24
 end
-arch woods
+arch beach
 x 30
 y 25
 end
@@ -6517,11 +6478,11 @@ arch woods
 x 32
 y 29
 end
-arch desert
+arch beach
 x 32
 y 30
 end
-arch desert
+arch beach
 x 32
 y 31
 end
@@ -6600,7 +6561,7 @@ end
 arch woods_3
 x 33
 end
-arch desert
+arch beach
 x 33
 y 1
 end
@@ -6704,7 +6665,7 @@ arch woods
 x 33
 y 26
 end
-arch desert
+arch beach
 x 33
 y 27
 end
@@ -6712,19 +6673,19 @@ arch brush
 x 33
 y 28
 end
-arch desert
+arch beach
 x 33
 y 29
 end
-arch desert
+arch beach
 x 33
 y 30
 end
-arch desert
+arch beach
 x 33
 y 31
 end
-arch desert
+arch beach
 x 33
 y 32
 end
@@ -6927,11 +6888,11 @@ arch shallow_sea
 x 34
 y 32
 end
-arch desert
+arch beach
 x 34
 y 33
 end
-arch desert
+arch beach
 x 34
 y 34
 end
@@ -7126,7 +7087,7 @@ arch deep_swamp
 x 35
 y 32
 end
-arch desert
+arch beach
 x 35
 y 33
 end
@@ -7209,11 +7170,11 @@ arch woods
 x 36
 y 3
 end
-arch desert
+arch beach
 x 36
 y 4
 end
-arch desert
+arch beach
 x 36
 y 5
 end
@@ -7325,7 +7286,7 @@ arch brush
 x 36
 y 32
 end
-arch desert
+arch beach
 x 36
 y 33
 end
@@ -7520,7 +7481,7 @@ arch shallow_sea
 x 37
 y 31
 end
-arch desert
+arch beach
 x 37
 y 32
 end
@@ -7615,11 +7576,11 @@ arch hills
 x 38
 y 5
 end
-arch desert
+arch beach
 x 38
 y 6
 end
-arch desert
+arch beach
 x 38
 y 7
 end
@@ -7818,19 +7779,19 @@ arch woods
 x 39
 y 6
 end
-arch desert
+arch beach
 x 39
 y 7
 end
-arch desert
+arch beach
 x 39
 y 8
 end
-arch desert
+arch beach
 x 39
 y 9
 end
-arch desert
+arch beach
 x 39
 y 10
 end
@@ -7918,7 +7879,7 @@ arch deep_swamp
 x 39
 y 31
 end
-arch desert
+arch beach
 x 39
 y 32
 end
@@ -8021,15 +7982,15 @@ arch woods
 x 40
 y 7
 end
-arch desert
+arch beach
 x 40
 y 8
 end
-arch desert
+arch beach
 x 40
 y 9
 end
-arch desert
+arch beach
 x 40
 y 10
 end
@@ -8216,15 +8177,15 @@ arch woods
 x 41
 y 6
 end
-arch desert
+arch beach
 x 41
 y 7
 end
-arch desert
+arch beach
 x 41
 y 8
 end
-arch desert
+arch beach
 x 41
 y 9
 end
@@ -8312,7 +8273,7 @@ arch brush
 x 41
 y 30
 end
-arch desert
+arch beach
 x 41
 y 31
 end
@@ -8320,7 +8281,7 @@ arch brush
 x 41
 y 32
 end
-arch desert
+arch beach
 x 41
 y 33
 end
@@ -8423,7 +8384,7 @@ arch woods
 x 42
 y 8
 end
-arch desert
+arch beach
 x 42
 y 9
 end
@@ -8447,7 +8408,7 @@ arch brush
 x 42
 y 14
 end
-arch desert
+arch beach
 x 42
 y 15
 end
@@ -8487,7 +8448,7 @@ arch shallow_sea
 x 42
 y 24
 end
-arch desert
+arch beach
 x 42
 y 25
 end
@@ -8511,7 +8472,7 @@ arch hills_rocky
 x 42
 y 30
 end
-arch desert
+arch beach
 x 42
 y 31
 end
@@ -8622,11 +8583,11 @@ arch woods
 x 43
 y 8
 end
-arch desert
+arch beach
 x 43
 y 9
 end
-arch desert
+arch beach
 x 43
 y 10
 end
@@ -8634,7 +8595,7 @@ arch shallow_sea
 x 43
 y 11
 end
-arch desert
+arch beach
 x 43
 y 12
 end
@@ -8682,7 +8643,7 @@ arch hills_rocky
 x 43
 y 23
 end
-arch desert
+arch beach
 x 43
 y 24
 end
@@ -8706,7 +8667,7 @@ arch evergreens
 x 43
 y 29
 end
-arch desert
+arch beach
 x 43
 y 30
 end
@@ -8821,15 +8782,15 @@ arch woods
 x 44
 y 8
 end
-arch desert
+arch beach
 x 44
 y 9
 end
-arch desert
+arch beach
 x 44
 y 10
 end
-arch desert
+arch beach
 x 44
 y 11
 end
@@ -9478,7 +9439,7 @@ arch mountain2
 x 47
 y 23
 end
-arch wasteland
+arch mountain5
 x 47
 y 24
 end
@@ -9944,11 +9905,11 @@ arch mountain2
 x 49
 y 40
 end
-arch wasteland
+arch mountain5
 x 49
 y 41
 end
-arch wasteland
+arch mountain5
 x 49
 y 42
 end
@@ -9979,4 +9940,11 @@ end
 arch mountain2
 x 49
 y 49
+end
+arch darkhold
+slaying /santo_dominion/lord_byron/main
+hp 25
+sp 59
+x 3
+y 42
 end

@@ -599,11 +599,6 @@ arch hills
 x 3
 y 3
 end
-arch biglake_se
-name sea
-x 3
-y 3
-end
 arch hills
 x 3
 y 4
@@ -657,11 +652,6 @@ x 3
 y 16
 end
 arch grass
-x 3
-y 17
-end
-arch biglake_se
-name sea
 x 3
 y 17
 end
@@ -897,11 +887,6 @@ arch grass
 x 4
 y 16
 end
-arch biglake_se
-name sea
-x 4
-y 16
-end
 arch grass
 x 4
 y 17
@@ -1062,11 +1047,6 @@ x 5
 y 3
 end
 arch hills
-x 5
-y 4
-end
-arch biglake_nw
-name sea
 x 5
 y 4
 end
@@ -1536,17 +1516,7 @@ arch hills
 x 7
 y 14
 end
-arch biglake_ne
-name sea
-x 7
-y 14
-end
 arch grass
-x 7
-y 15
-end
-arch biglake_se
-name sea
 x 7
 y 15
 end
@@ -1774,11 +1744,6 @@ x 8
 y 11
 end
 arch brush
-x 8
-y 12
-end
-arch biglake_se
-name sea
 x 8
 y 12
 end
@@ -2456,11 +2421,6 @@ arch brush
 x 11
 y 5
 end
-arch biglake_se
-name sea
-x 11
-y 5
-end
 arch brush
 x 11
 y 6
@@ -2951,11 +2911,6 @@ arch grass
 x 13
 y 4
 end
-arch biglake_se
-name sea
-x 13
-y 4
-end
 arch brush
 x 13
 y 5
@@ -3216,11 +3171,6 @@ x 14
 y 2
 end
 arch grass
-x 14
-y 3
-end
-arch biglake_se
-name sea
 x 14
 y 3
 end
@@ -4396,7 +4346,7 @@ arch tree
 x 18
 y 49
 end
-arch desert
+arch beach
 x 19
 end
 arch shallow_sea
@@ -4627,14 +4577,14 @@ arch brush
 x 19
 y 49
 end
-arch desert
+arch beach
 x 20
 end
-arch desert
+arch beach
 x 20
 y 1
 end
-arch desert
+arch beach
 x 20
 y 2
 end
@@ -4842,10 +4792,10 @@ arch brush
 x 20
 y 49
 end
-arch desert
+arch beach
 x 21
 end
-arch desert
+arch beach
 x 21
 y 1
 end
@@ -5053,10 +5003,6 @@ arch brush
 x 21
 y 43
 end
-arch river_nw-e
-x 21
-y 43
-end
 arch brush
 x 21
 y 44
@@ -5084,7 +5030,7 @@ end
 arch brush
 x 22
 end
-arch desert
+arch beach
 x 22
 y 1
 end
@@ -5495,7 +5441,7 @@ arch brush
 x 23
 y 39
 end
-arch desert
+arch beach
 x 23
 y 40
 end
@@ -5535,14 +5481,14 @@ arch desert
 x 23
 y 49
 end
-arch desert
+arch beach
 x 24
 end
 arch shallow_sea
 x 24
 y 1
 end
-arch desert
+arch beach
 x 24
 y 2
 end
@@ -5718,7 +5664,7 @@ arch brush
 x 24
 y 39
 end
-arch desert
+arch beach
 x 24
 y 40
 end
@@ -5746,7 +5692,7 @@ arch shallow_sea
 x 24
 y 46
 end
-arch desert
+arch beach
 x 24
 y 47
 end
@@ -5933,7 +5879,7 @@ arch brush
 x 25
 y 38
 end
-arch desert
+arch beach
 x 25
 y 39
 end
@@ -6466,7 +6412,7 @@ arch woods
 x 28
 y 1
 end
-arch desert
+arch beach
 x 28
 y 2
 end
@@ -6853,7 +6799,7 @@ arch brush
 x 29
 y 46
 end
-arch desert
+arch beach
 x 29
 y 47
 end
@@ -9480,15 +9426,15 @@ arch mountain2
 x 42
 y 4
 end
-arch wasteland
+arch mountain5
 x 42
 y 5
 end
-arch wasteland
+arch mountain5
 x 42
 y 6
 end
-arch wasteland
+arch mountain5
 x 42
 y 7
 end
@@ -9675,23 +9621,27 @@ arch mountain2
 x 43
 y 3
 end
-arch wasteland
+arch mountain5
 x 43
 y 4
 end
-arch wasteland
+arch mountain5
 x 43
 y 5
 end
-arch wasteland
+arch mountain5
+x 43
+y 5
+end
+arch mountain5
 x 43
 y 6
 end
-arch wasteland
+arch mountain5
 x 43
 y 7
 end
-arch wasteland
+arch mountain5
 x 43
 y 8
 end
@@ -9894,7 +9844,7 @@ arch mountain2
 x 44
 y 8
 end
-arch wasteland
+arch mountain5
 x 44
 y 9
 end
