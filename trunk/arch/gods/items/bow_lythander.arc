@@ -15,6 +15,6 @@ nrof 1
 startequip 1
 attacktype 1
 type 14
-weighta 8000
+weight 8000
 magic 5
 end 
