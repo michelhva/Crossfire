@@ -3037,29 +3037,20 @@ can_use_weapon 0
 can_use_ring 0
 sleep 1
 can_use_skill 0
-arch ability_heal
-name regenerate spellpoints
-sp 67
+arch spell_regenerate_spellpoints
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 maxsp 0
 end
-arch ability_heal
-name major healing
-sp 34
+arch spell_major_healing
 end
-arch ability_mass_confusion
-name bullet storm
-sp 166
-attacktype 0
+arch spell_bullet_storm
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_poison
-hp 0
-sp 21
+arch abil_poison_cloud
 end
 arch key2
 name a white shimmering key
@@ -5768,16 +5759,17 @@ arch dungeon_magic
 x 29
 y 3
 end
-arch book
+arch sorcerer_book
 name rainbow colored spellbook
 msg
 This spellbook ripples with the
-colors of the rainbo
+colors of the rainbow
 endmsg
-sp 85
 x 29
 y 3
-value 30000
+value 2600
+arch spell_color_spray
+end
 end
 arch flagstone
 x 29

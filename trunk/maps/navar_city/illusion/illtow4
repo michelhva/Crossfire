@@ -180,7 +180,7 @@ exp 15
 x 1
 y 6
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -198,7 +198,7 @@ exp 15
 x 1
 y 7
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -216,7 +216,7 @@ exp 15
 x 1
 y 8
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -453,7 +453,7 @@ x 3
 y 16
 level 5
 unaggressive 0
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 arch cobblestones
@@ -513,7 +513,7 @@ exp 15
 x 4
 y 6
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -547,7 +547,7 @@ exp 15
 x 4
 y 11
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones
@@ -573,7 +573,7 @@ exp 15
 x 4
 y 14
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -596,7 +596,7 @@ x 4
 y 16
 level 5
 unaggressive 0
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 arch cobblestones
@@ -688,7 +688,7 @@ exp 15
 x 5
 y 13
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -706,7 +706,7 @@ exp 15
 x 5
 y 14
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -766,7 +766,7 @@ exp 15
 x 6
 y 4
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -800,7 +800,7 @@ exp 15
 x 6
 y 9
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones
@@ -826,7 +826,7 @@ exp 15
 x 6
 y 12
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -882,7 +882,7 @@ exp 15
 x 7
 y 1
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -940,7 +940,7 @@ exp 15
 x 7
 y 12
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1004,7 +1004,7 @@ exp 15
 x 8
 y 2
 unaggressive 0
-arch ability_slow
+arch abil_slow
 end
 end
 arch cobblestones
@@ -1038,7 +1038,7 @@ exp 15
 x 8
 y 7
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones
@@ -1072,7 +1072,7 @@ exp 15
 x 8
 y 12
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1098,7 +1098,7 @@ exp 15
 x 8
 y 15
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1182,7 +1182,7 @@ exp 15
 x 9
 y 11
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1212,7 +1212,7 @@ exp 15
 x 9
 y 15
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1272,7 +1272,7 @@ exp 15
 x 10
 y 5
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones
@@ -1302,7 +1302,7 @@ exp 15
 x 10
 y 9
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1320,7 +1320,7 @@ exp 15
 x 10
 y 10
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1392,7 +1392,7 @@ exp 15
 x 11
 y 3
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones
@@ -1426,7 +1426,7 @@ exp 15
 x 11
 y 8
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1526,7 +1526,7 @@ exp 15
 x 12
 y 7
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1544,7 +1544,7 @@ exp 15
 x 12
 y 8
 unaggressive 0
-arch ability_firespell
+arch abil_burning_hands
 end
 end
 arch cobblestones
@@ -1578,7 +1578,7 @@ exp 15
 x 12
 y 13
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1596,7 +1596,7 @@ exp 15
 x 12
 y 14
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1614,7 +1614,7 @@ exp 15
 x 12
 y 15
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1679,7 +1679,7 @@ x 13
 y 6
 level 5
 unaggressive 0
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 arch cobblestones
@@ -1713,7 +1713,7 @@ exp 15
 x 13
 y 11
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1731,7 +1731,7 @@ exp 15
 x 13
 y 12
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1749,7 +1749,7 @@ exp 15
 x 13
 y 13
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1814,7 +1814,7 @@ x 14
 y 4
 level 5
 unaggressive 0
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 arch cobblestones
@@ -1848,7 +1848,7 @@ exp 15
 x 14
 y 9
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -1952,7 +1952,7 @@ exp 15
 x 15
 y 9
 unaggressive 0
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch cobblestones
@@ -2384,11 +2384,11 @@ x 18
 y 17
 speed 0.010000
 unaggressive 0
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch cobblestones

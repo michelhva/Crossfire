@@ -205,11 +205,12 @@ arch woodfloor
 x 8
 y 6
 end
-arch book
-slaying comet
-sp 90
+arch pyro_book
+value 1600
 x 8
 y 6
+arch spell_comet
+end
 end
 arch woodfloor
 x 8

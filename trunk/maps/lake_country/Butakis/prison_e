@@ -89,13 +89,13 @@ x 1
 y 1
 immune 4
 protected 16
-arch ability_summon_fire
+arch spell_summon_fire_elemental
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 arch dungeon_floor
@@ -129,13 +129,13 @@ exp 50000
 x 1
 y 7
 immune 4
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_summon_earth
+arch spell_summon_earth_elemental
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dun16
@@ -799,9 +799,9 @@ name stick of holding
 sp 16
 food 7
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -926,15 +926,15 @@ x 8
 y 1
 speed 1.000000
 immune 21
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_coldspell
+arch abil_icestorm
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -1557,20 +1557,20 @@ unaggressive 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_forced_dance
+arch abil_fear
 end
-arch ability_fear
+arch sorcerer_book
+value 1200
+arch spell_invisible
 end
-arch book
-sp 26
 end
 end
 arch swall_2_1_2
@@ -1615,15 +1615,15 @@ immune 29
 protected 3
 monster 1
 can_cast_spell 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_fear
+arch abil_fear
 end
 end
 arch dungeon_floor
@@ -1758,9 +1758,9 @@ name stick of holding
 sp 16
 food 7
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor

@@ -8,18 +8,18 @@ endmsg
 x 26
 y 30
 end
-arch book
-sp 26
+arch sorcerer_book
+value 1200
+arch spell_invisible
 end
-arch ability_fear
 end
-arch ability_forced_dance
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch abil_icestorm
 end
 arch jungle_2
 end
@@ -2097,7 +2097,7 @@ exp 10000
 x 11
 y 4
 unaggressive 1
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch grass
@@ -2127,7 +2127,7 @@ exp 10000
 x 11
 y 7
 unaggressive 1
-arch ability_speedball
+arch spell_small_speedball
 end
 end
 arch grasspond
@@ -2901,7 +2901,7 @@ exp 10000
 x 15
 y 8
 unaggressive 1
-arch ability_fear
+arch abil_fear
 end
 end
 arch grass
@@ -4063,7 +4063,7 @@ speed_left -13.210000
 attack_movement 4
 immune 4097
 carrying 5000
-arch ability_paralyze
+arch spell_paralyze
 end
 arch dragon_scale
 name figurine of a faerie dragon
@@ -4224,19 +4224,19 @@ monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_forced_dance
+arch abil_fear
 end
-arch ability_fear
+arch sorcerer_book
+value 1200
+arch spell_invisible
 end
-arch book
-sp 26
 end
 end

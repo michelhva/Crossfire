@@ -902,10 +902,12 @@ arch pstone_2
 x 5
 y 1
 end
-arch book
-slaying dragonbreath
+arch pyro_book
+value 2400
 x 5
 y 1
+arch spell_dragonbreath
+end
 end
 arch pstone_2
 x 5

@@ -307,15 +307,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -438,15 +438,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -491,15 +491,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -562,15 +562,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -653,15 +653,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -724,15 +724,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -813,15 +813,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -886,15 +886,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -967,15 +967,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -1034,15 +1034,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1165,15 +1165,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -1246,15 +1246,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -1339,15 +1339,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1402,15 +1402,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1445,15 +1445,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1490,15 +1490,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -1573,15 +1573,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1730,15 +1730,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -1813,15 +1813,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -1990,15 +1990,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -2169,15 +2169,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -2254,15 +2254,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -2293,15 +2293,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -2514,15 +2514,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -2685,15 +2685,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -3234,15 +3234,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -3415,15 +3415,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -3536,15 +3536,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -3737,15 +3737,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -3950,15 +3950,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4124,15 +4124,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -4205,15 +4205,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4368,15 +4368,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4552,15 +4552,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4611,15 +4611,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4798,15 +4798,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -4944,15 +4944,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -5185,15 +5185,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -5366,15 +5366,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -5421,15 +5421,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -5464,15 +5464,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -5639,15 +5639,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -5760,15 +5760,15 @@ resist_paralyze 100
 resist_fear 100
 see_invisible 1
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_cold
+arch spell_icestorm
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_slow
+arch abil_slow
 end
 end
 arch flagstone
@@ -5983,15 +5983,15 @@ resist_confusion 100
 resist_paralyze 100
 resist_fear 100
 resist_godpower 90
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_missile
+arch spell_magic_rune
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_maj_heal
+arch spell_major_healing
 end
 end
 arch flagstone
@@ -6494,25 +6494,25 @@ resist_confusion 100
 resist_paralyze 100
 resist_death 100
 carrying 750
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_heal
+arch spell_heal
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_cold
+arch spell_icestorm
 end
 arch gem
 title of exceptional beauty
@@ -6585,25 +6585,25 @@ resist_confusion 100
 resist_paralyze 100
 resist_death 100
 carrying 750
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_heal
+arch spell_heal
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_cold
+arch spell_icestorm
 end
 arch gem
 title of exceptional beauty

@@ -3509,13 +3509,13 @@ protected 8
 attacktype 29
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500
@@ -3552,7 +3552,7 @@ y 4
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3577,7 +3577,7 @@ y 12
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3602,7 +3602,7 @@ y 4
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3629,7 +3629,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3658,7 +3658,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3687,7 +3687,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3714,7 +3714,7 @@ y 2
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3741,7 +3741,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3770,7 +3770,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3799,7 +3799,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3826,7 +3826,7 @@ y 1
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3851,7 +3851,7 @@ y 4
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3886,13 +3886,13 @@ protected 8
 attacktype 29
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500
@@ -3931,7 +3931,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3960,7 +3960,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -3989,9 +3989,9 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 More
@@ -4020,9 +4020,9 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 More
@@ -4049,7 +4049,7 @@ y 9
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4133,7 +4133,7 @@ y 2
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4160,7 +4160,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4189,7 +4189,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4218,7 +4218,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4247,7 +4247,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4276,7 +4276,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4305,7 +4305,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4334,11 +4334,11 @@ speed_left -28.420000
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 More
@@ -4367,11 +4367,11 @@ speed_left -28.420000
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 More
@@ -4398,7 +4398,7 @@ y 1
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4423,7 +4423,7 @@ y 9
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4450,7 +4450,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4477,7 +4477,7 @@ y 4
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4504,7 +4504,7 @@ speed_left -21.819998
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4531,7 +4531,7 @@ y 2
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4556,7 +4556,7 @@ y 4
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4581,7 +4581,7 @@ y 8
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4606,7 +4606,7 @@ y 6
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4631,7 +4631,7 @@ y 8
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4656,7 +4656,7 @@ y 10
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More
@@ -4681,7 +4681,7 @@ y 10
 immune 1024
 protected 12
 attacktype 82945
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 More

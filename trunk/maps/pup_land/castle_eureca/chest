@@ -815,15 +815,13 @@ walk_on 1
 fly_on 1
 identified 0
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_fear
-name steambolt
-sp 139
+arch spell_steambolt
 end
 end
 arch unholy_ground

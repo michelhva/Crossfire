@@ -9260,13 +9260,13 @@ protected 8
 attacktype 29
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500
@@ -9309,9 +9309,9 @@ level 70
 immune 4117
 protected 8
 attacktype 1167
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -9916,11 +9916,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -9951,11 +9951,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -9986,11 +9986,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10021,11 +10021,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10056,11 +10056,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10091,11 +10091,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10126,11 +10126,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10161,11 +10161,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10203,13 +10203,13 @@ protected 8
 attacktype 29
 carrying 35000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 700
@@ -10256,13 +10256,13 @@ protected 8
 attacktype 29
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500
@@ -10302,11 +10302,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10337,11 +10337,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10372,11 +10372,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10407,11 +10407,11 @@ immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 More
@@ -10440,11 +10440,11 @@ y 3
 speed 0.450000
 speed_left -10.249999
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -10472,11 +10472,11 @@ y 5
 speed 0.450000
 speed_left -9.410000
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -10505,11 +10505,11 @@ speed 0.800000
 speed_left -13.200002
 level 20
 carrying 100
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch key2
 name Dragonbadge
@@ -10547,11 +10547,11 @@ y 7
 speed 0.450000
 speed_left -10.059999
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -10579,11 +10579,11 @@ y 5
 speed 0.450000
 speed_left -8.999999
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -10611,11 +10611,11 @@ y 9
 speed 0.450000
 speed_left -10.129999
 level 20
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 More
@@ -10652,13 +10652,13 @@ protected 8
 attacktype 29
 carrying 25000
 flying 1
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch gem
 nrof 500

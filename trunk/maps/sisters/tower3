@@ -802,9 +802,9 @@ protected 524288
 attacktype 1048576
 vulnerable 1048576
 see_invisible 1
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 arch cobblestones
@@ -929,7 +929,7 @@ protected 524288
 attacktype 1048576
 vulnerable 1048576
 see_invisible 1
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch cobblestones
@@ -1062,11 +1062,11 @@ protected 524288
 attacktype 1048576
 vulnerable 1048576
 see_invisible 1
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch cobblestones

@@ -297,9 +297,10 @@ protected 9
 material 64
 carrying 5100
 flying 1
-arch book
-name fiery spellbook
-sp 90
+arch pyro_book
+value 1600
+arch spell_comet
+end
 end
 arch key2
 name celestial fire
@@ -666,9 +667,10 @@ protected 9
 material 64
 carrying 5000
 flying 1
-arch book
-name fiery spellbook
-sp 90
+arch pyro_book
+value 1600
+arch spell_comet
+end
 end
 end
 arch large_stones
@@ -3700,9 +3702,10 @@ protected 9
 material 64
 carrying 5000
 flying 1
-arch book
-name fiery spellbook
-sp 90
+arch pyro_book
+value 1600
+arch spell_comet
+end
 end
 end
 arch large_stones

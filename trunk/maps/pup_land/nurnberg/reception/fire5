@@ -2628,11 +2628,11 @@ see_invisible 1
 can_cast_spell 1
 x 17
 y 9
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch serpent
@@ -2662,11 +2662,11 @@ see_invisible 1
 can_cast_spell 1
 x 17
 y 11
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch serpent
@@ -2696,11 +2696,11 @@ see_invisible 1
 can_cast_spell 1
 x 17
 y 13
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch serpent
@@ -2730,10 +2730,10 @@ see_invisible 1
 can_cast_spell 1
 x 17
 y 15
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end

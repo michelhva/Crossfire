@@ -1956,11 +1956,11 @@ endmsg
 x 14
 y 1
 unaggressive 0
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch dungeon_floor
@@ -2223,11 +2223,11 @@ endmsg
 x 16
 y 6
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_poison
+arch abil_poison_cloud
 end
 end
 arch dungeon_floor
@@ -2466,11 +2466,11 @@ endmsg
 x 18
 y 2
 unaggressive 0
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch dungeon_floor
@@ -2790,11 +2790,11 @@ endmsg
 x 20
 y 9
 unaggressive 0
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch dungeon_floor
@@ -3049,11 +3049,11 @@ endmsg
 x 22
 y 5
 unaggressive 0
-arch ability_poison
+arch abil_poison_cloud
 end
-arch ability_firespell
+arch abil_burning_hands
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 end
 arch dungeon_floor
@@ -3517,9 +3517,9 @@ hp 550
 exp 2000
 x 5
 y 12
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_petsummoning
+arch spell_summon_pet_monster
 end
 end
 More

@@ -193,10 +193,12 @@ arch pstone_2
 x 1
 y 12
 end
-arch book
-slaying ball lightning
+arch evoker_book
+value 1800
 x 1
 y 12
+arch spell_ball_lightning
+end
 end
 arch pstone_1
 x 1
@@ -3812,41 +3814,41 @@ y 2
 level 30
 resist_magic 30
 carrying 17100
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch mjoellnir
 name Thunderfist

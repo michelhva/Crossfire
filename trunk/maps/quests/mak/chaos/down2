@@ -362,13 +362,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -689,9 +689,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -895,9 +895,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -948,9 +948,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -1525,9 +1525,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -1610,9 +1610,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -1693,9 +1693,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -1857,9 +1857,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -2311,13 +2311,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -2483,13 +2483,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -2694,13 +2694,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -2735,9 +2735,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -3101,13 +3101,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -3151,13 +3151,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -3346,9 +3346,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -3409,9 +3409,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4023,9 +4023,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4418,9 +4418,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4607,9 +4607,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4648,9 +4648,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4790,9 +4790,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -4831,9 +4831,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -5190,9 +5190,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -5635,9 +5635,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -5716,9 +5716,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -5987,9 +5987,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor
@@ -6025,13 +6025,13 @@ resist_confusion 100
 resist_paralyze 100
 see_invisible 1
 can_cast_spell 1
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_firespell
+arch spell_burning_hands
 end
-arch ability_paralyze
+arch spell_paralyze
 end
 end
 arch dungeon_floor
@@ -6157,9 +6157,9 @@ resist_fire 100
 resist_confusion 100
 resist_paralyze 100
 see_invisible 1
-arch ability_dragon
+arch spell_dragonbreath
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch dungeon_floor

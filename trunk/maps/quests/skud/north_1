@@ -1676,11 +1676,11 @@ y 16
 speed 0.200000
 speed_left -1.530000
 level 14
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
 end
 arch marble
@@ -2381,11 +2381,11 @@ arch key2
 name Very hot key
 slaying hell
 end
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_speedball
+arch spell_small_speedball
 end
-arch ability_speedball
+arch spell_small_speedball
 end
 arch slowness
 end

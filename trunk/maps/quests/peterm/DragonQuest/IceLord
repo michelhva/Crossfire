@@ -743,10 +743,12 @@ arch pstone_2
 x 3
 y 27
 end
-arch book
-slaying large icestorm
+arch evoker_book
+value 2400
 x 3
 y 27
+arch spell_large_icestorm
+end
 end
 arch pstone_2
 x 3
@@ -2856,49 +2858,49 @@ value 250000
 weight 15000
 magic 5
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
-arch ability_cold
+arch abil_icestorm
 end
 arch key2
 slaying IceDragonKey

@@ -8049,23 +8049,13 @@ sleep 0
 one_hit 0
 x 20
 y 26
-arch ability_heal
-name regenerate spellpoints
-sp 67
+arch spell_regenerate_spellpoints
 end
-arch ability_bullet
-hp 0
-sp 165
+arch spell_bullet_swarm
 end
-arch ability_cold
-name icestorm
-hp 0
-sp 17
+arch spell_icestorm
 end
-arch ability_fire
-name meteor
-hp 0
-sp 90
+arch spell_comet
 end
 arch paralyze
 name stardust

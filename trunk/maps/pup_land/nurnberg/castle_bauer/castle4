@@ -298,16 +298,11 @@ carrying 12300
 randomitems none
 arch crown
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_poison
-hp 0
-sp 21
+arch abil_poison_cloud
 end
-arch ability_bullet
-name large bullet spell
-hp 0
-sp 29
+arch spell_lg_magic_bullet
 end
 end
 arch cobblestones2
@@ -497,11 +492,11 @@ y 3
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -611,11 +606,11 @@ y 11
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -717,11 +712,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -748,11 +743,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -960,11 +955,11 @@ y 3
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1003,11 +998,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch detector
@@ -1042,11 +1037,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1085,11 +1080,11 @@ y 11
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1297,11 +1292,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1328,11 +1323,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1434,11 +1429,11 @@ y 3
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1505,11 +1500,11 @@ y 11
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1606,11 +1601,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1637,11 +1632,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1844,11 +1839,11 @@ y 3
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1887,11 +1882,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1918,11 +1913,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -1961,11 +1956,11 @@ y 11
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2168,11 +2163,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2199,11 +2194,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2300,11 +2295,11 @@ y 3
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2371,11 +2366,11 @@ y 11
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2482,11 +2477,11 @@ y 6
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2
@@ -2513,11 +2508,11 @@ y 8
 resist_fire 100
 can_use_armour 0
 can_use_weapon 0
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
-arch ability_hellfire
+arch spell_hellfire
 end
 end
 arch cobblestones2

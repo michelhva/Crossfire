@@ -1441,15 +1441,15 @@ arch heart
 name a still beating heart
 material 0
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_heal
+arch spell_heal
 end
-arch ability_fear
+arch abil_fear
 end
-arch ability_fire
+arch abil_burning_hands
 end
-arch ability_bullet
+arch spell_small_bullet
 end
 end
 arch afloor_right

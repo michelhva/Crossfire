@@ -1205,13 +1205,13 @@ speed_left -1.420000
 level 14
 carrying 100
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch key2
 slaying set_individual_value ACID4
@@ -1982,11 +1982,12 @@ arch dungeon_floor
 x 7
 y 1
 end
-arch book
-slaying ball lightning
-sp 77
+arch evoker_book
+value 1800
 x 7
 y 1
+arch spell_ball_lightning
+end
 end
 arch dungeon_floor
 x 7
@@ -2699,13 +2700,13 @@ speed 0.100000
 speed_left -1.420000
 level 14
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch marble
@@ -3119,13 +3120,13 @@ speed_left -1.420000
 level 14
 carrying 100
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 arch key2
 slaying set_individual_value ACID2
@@ -3441,13 +3442,13 @@ speed 0.100000
 speed_left -1.420000
 level 14
 unaggressive 0
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_lightning
+arch spell_sm_lightning
 end
 end
 arch marble
@@ -3968,11 +3969,12 @@ arch dungeon_floor
 x 13
 y 1
 end
-arch book
-slaying dragonbreath
-sp 77
+arch pyro_book
 x 13
 y 1
+value 2400
+arch spell_dragonbreath
+end
 end
 arch dungeon_floor
 x 13
@@ -4916,13 +4918,13 @@ speed_left -1.420000
 level 14
 carrying 100
 unaggressive 0
-arch ability_lightning
+arch spell_sm_lightning
 end
-arch ability_missile
+arch spell_magic_missile
 end
-arch ability_paralyze
+arch spell_paralyze
 end
-arch ability_mass_confusion
+arch spell_mass_confusion
 end
 arch key2
 slaying set_individual_value ACID3
