@@ -35,5 +35,8 @@ editable 8
 wc -30
 lifesave 1
 type 88
-level 10
+level 30000
+generator 1
+other_arch fire_elemental
+maxsp 5000
 end

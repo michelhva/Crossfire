@@ -15,7 +15,8 @@ coldmagma.111
 coldmagma.112
 coldmagma.112
 mina
-type 67
+type 88
+level 30000
 walk_on 1
 is_floor 1
 is_animated 1
@@ -28,4 +29,7 @@ dam 75
 editable 8
 wc -30
 lifesave 1
+generator 1
+other_arch fire_elemental
+maxsp 5000
 end
