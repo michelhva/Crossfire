@@ -22,7 +22,7 @@ exp 10000
 hp 1
 sp 1
 msg
-You burn!
+Frost creeps over your body!
 endmsg
 race *
 level 10
