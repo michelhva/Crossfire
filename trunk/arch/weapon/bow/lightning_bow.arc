@@ -13,6 +13,6 @@ value 45000
 weight 25000
 magic 3
 no_strength 1
-editable 1024
+editable 5120
 color_fg brown
 end
