@@ -4,7 +4,8 @@ type 158
 attacktype 1048576
 invisible 1
 wc 10
-magic 1
+magic -1
+armour 3
 Str -3
 Con -4
 Dex -3
@@ -24,6 +25,6 @@ sp 1
 msg
 You have aches and fever, and you feel nauseous.
 endmsg
-race *
+race human,humanoid,troll,animal,insect
 level 15
 end

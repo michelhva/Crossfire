@@ -2,9 +2,9 @@ Object smallpox
 name smallpox
 type 158
 invisible 1
-attacktype 1048576
+attacktype 1
 wc 20
-magic 3
+magic -3
 Str -1
 Con -4
 Dex -1
@@ -23,6 +23,6 @@ sp 1
 msg
 You have a nasty rash all over you.  Are those pustules?
 endmsg
-race *
+race humanoid,human,troll,giant
 level 20
 end
