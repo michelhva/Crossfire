@@ -1,347 +1,339 @@
 arch map
 name world_122_117
+reset_timeout 7200
+difficulty 1
 width 50
 height 50
+enter_x 1
+enter_y 1
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sun Jun  2 21:41:28 2002
+endmsg
 outdoor 1
 tile_path_1 world_122_116
 tile_path_2 world_123_117
 tile_path_3 world_122_118
 tile_path_4 world_121_117
 end
-arch mountain
-x 0
-y 0
-elevation 8848
+arch grass
 end
-arch mountain2
-x 0
+arch brush
+end
+arch grass
 y 1
-elevation 9302
 end
-arch mountain
-x 0
+arch grass
 y 2
-elevation 8670
 end
-arch mountain
-x 0
+arch tavern
+name Kaisa's place
+name_pl Kaisa's place
+slaying /navar_city/magara/houses/kaisas_place
+sp 3
+y 2
+end
+arch cobblestones2
 y 3
-elevation 7924
 end
-arch mountain
-x 0
+arch grass
 y 4
-elevation 7475
 end
-arch mountain
-x 0
+arch church
+y 4
+end
+arch grass_only
 y 5
-elevation 7000
 end
-arch mountain
-x 0
+arch cobblestones2
 y 6
-elevation 6523
 end
-arch mountain
-x 0
+arch grass
 y 7
-elevation 6053
 end
-arch mountain
-x 0
+arch r_house1
+name apartments
+name_pl apartments
+y 7
+end
+arch cobblestones2
 y 8
-elevation 5881
 end
-arch mountain
-x 0
+arch grass
 y 9
-elevation 6316
 end
-arch mountain
-x 0
+arch market1
+y 9
+end
+arch cobblestones2
 y 10
-elevation 7553
 end
-arch mountain2
-x 0
+arch grass
 y 11
-elevation 9400
 end
-arch mountain2
-x 0
+arch market1
+y 11
+end
+arch cobblestones2
 y 12
-elevation 10983
 end
-arch mountain2
-x 0
+arch grass
 y 13
-elevation 11538
 end
-arch mountain2
-x 0
+arch s_house1
+y 13
+end
+arch grass
 y 14
-elevation 11308
 end
-arch mountain2
-x 0
+arch s_house1
+y 14
+end
+arch grass
 y 15
-elevation 9889
 end
-arch mountain
-x 0
+arch s_house1
+y 15
+end
+arch grass
 y 16
-elevation 7276
+end
+arch cwall_2_1_2
+y 16
 end
 arch mountain
-x 0
 y 17
 elevation 5767
 end
 arch steppe
-x 0
 y 18
 elevation 3544
 end
 arch mountain
-x 0
 y 19
 elevation 5717
 end
 arch mountain
-x 0
 y 20
 elevation 7416
 end
 arch mountain
-x 0
 y 21
 elevation 8116
 end
 arch mountain
-x 0
 y 22
 elevation 7462
 end
 arch mountain
-x 0
 y 23
 elevation 6188
 end
 arch mountain
-x 0
 y 24
 elevation 5019
 end
 arch steppe
-x 0
 y 25
 elevation 4179
 end
 arch hills
-x 0
 y 26
 elevation 3459
 end
 arch evergreens
-x 0
 y 27
 elevation 2997
 end
 arch evergreens
-x 0
 y 28
 elevation 2912
 end
 arch evergreens
-x 0
 y 29
 elevation 2550
 end
 arch evergreens
-x 0
 y 30
 elevation 1101
 end
+arch river_sw-ne_u
+y 30
+end
 arch jungle_1
-x 0
 y 31
 elevation 1668
 end
+arch river_sw-ne
+y 31
+end
 arch jungle_1
-x 0
 y 32
 elevation 1647
 end
 arch evergreens
-x 0
 y 33
 elevation 1535
 end
 arch grass
-x 0
 y 34
 elevation 794
 end
 arch evergreens
-x 0
 y 35
 elevation 1105
 end
 arch evergreens
-x 0
 y 36
 elevation 2997
 end
 arch hills
-x 0
 y 37
 elevation 3909
 end
 arch hills
-x 0
 y 38
 elevation 4857
 end
 arch mountain
-x 0
 y 39
 elevation 5640
 end
 arch mountain
-x 0
 y 40
 elevation 6125
 end
 arch mountain
-x 0
 y 41
 elevation 5420
 end
 arch hills
-x 0
 y 42
 elevation 3463
 end
 arch grass
-x 0
 y 43
 elevation 248
 end
 arch evergreens
-x 0
 y 44
 elevation 1201
 end
 arch hills
-x 0
 y 45
 elevation 3327
 end
 arch hills_rocky
-x 0
 y 46
 elevation 4320
 end
 arch hills_rocky
-x 0
 y 47
 elevation 4516
 end
 arch mountain
-x 0
 y 48
 elevation 6813
 end
 arch mountain
-x 0
 y 49
 elevation 7162
 end
-arch mountain
+arch grass
 x 1
-y 0
-elevation 7652
 end
-arch mountain
+arch evergreen
+x 1
+end
+arch grass
 x 1
 y 1
-elevation 8449
 end
-arch mountain
+arch house_up
+name House of Gossip
+name_pl House of Gossip
+slaying /navar_city/city1houses3
+hp 28
+sp 8
+x 1
+y 1
+end
+arch grass
 x 1
 y 2
-elevation 8005
 end
-arch mountain
+arch cobblestones2
 x 1
 y 3
-elevation 7112
 end
-arch mountain
+arch grass
 x 1
 y 4
-elevation 6473
 end
-arch mountain
+arch grass_only
 x 1
 y 5
-elevation 6010
 end
-arch mountain
+arch cobblestones2
 x 1
 y 6
-elevation 5292
 end
-arch mountain
+arch grass
 x 1
 y 7
-elevation 5042
 end
-arch mountain
+arch s_shop1
+x 1
+y 7
+end
+arch cobblestones2
 x 1
 y 8
-elevation 5299
 end
-arch mountain
+arch grass
 x 1
 y 9
-elevation 6273
 end
-arch mountain
+arch market2
+x 1
+y 9
+end
+arch cobblestones2
 x 1
 y 10
-elevation 7064
 end
-arch mountain2
+arch grass
 x 1
 y 11
-elevation 9234
 end
-arch mountain2
+arch market2
+x 1
+y 11
+end
+arch cobblestones2
 x 1
 y 12
-elevation 10588
 end
-arch mountain2
+arch cobblestones2
 x 1
 y 13
-elevation 11194
 end
-arch mountain2
+arch cobblestones2
 x 1
 y 14
-elevation 10762
 end
-arch mountain2
+arch cobblestones2
 x 1
 y 15
-elevation 9078
 end
-arch mountain
+arch grass
 x 1
 y 16
-elevation 6491
+end
+arch cwall_2_1_2
+x 1
+y 16
 end
 arch steppe
 x 1
@@ -408,15 +400,27 @@ x 1
 y 29
 elevation 2444
 end
+arch river_sw-ne_u
+x 1
+y 29
+end
 arch jungle_1
 x 1
 y 30
 elevation 1338
 end
+arch river_sw-ne
+x 1
+y 30
+end
 arch grass
 x 1
 y 31
 elevation 734
+end
+arch river_sw-ne_l
+x 1
+y 31
 end
 arch desert
 x 1
@@ -508,90 +512,106 @@ x 1
 y 49
 elevation 6926
 end
-arch mountain
+arch cobblestones2
 x 2
-y 0
-elevation 6946
 end
-arch mountain
+arch cobblestones2
 x 2
 y 1
-elevation 7351
 end
-arch mountain
+arch light4
+x 2
+y 1
+end
+arch cobblestones2
 x 2
 y 2
-elevation 6941
 end
-arch mountain
+arch cobblestones2
 x 2
 y 3
-elevation 5498
 end
-arch hills_rocky
+arch grass
 x 2
 y 4
-elevation 4688
 end
-arch hills_rocky
+arch evergreen
+x 2
+y 4
+end
+arch grass_only
 x 2
 y 5
-elevation 4733
 end
-arch hills_rocky
+arch cobblestones2
 x 2
 y 6
-elevation 4216
 end
-arch tree
+arch grass
 x 2
 y 7
-elevation 1780
 end
-arch hills_rocky
+arch r_house2
+name apartments
+name_pl apartments
+x 2
+y 7
+end
+arch cobblestones2
 x 2
 y 8
-elevation 3718
 end
-arch mountain
+arch grass
 x 2
 y 9
-elevation 5822
 end
-arch mountain
+arch market2
+x 2
+y 9
+end
+arch cobblestones2
 x 2
 y 10
-elevation 7200
 end
-arch mountain
+arch grass
 x 2
 y 11
-elevation 8474
 end
-arch mountain2
+arch market2
+x 2
+y 11
+end
+arch cobblestones2
 x 2
 y 12
-elevation 9336
 end
-arch mountain2
+arch grass
 x 2
 y 13
-elevation 9807
 end
-arch mountain2
+arch hovels
+x 2
+y 13
+end
+arch grass
 x 2
 y 14
-elevation 9421
 end
-arch mountain
+arch hovels2
+x 2
+y 14
+end
+arch grass
 x 2
 y 15
-elevation 7722
 end
-arch mountain
+arch grass
 x 2
 y 16
-elevation 5483
+end
+arch cwall_2_1_2
+x 2
+y 16
 end
 arch steppe
 x 2
@@ -653,15 +673,27 @@ x 2
 y 28
 elevation 1855
 end
+arch river_sw-ne_u
+x 2
+y 28
+end
 arch jungle_1
 x 2
 y 29
 elevation 2488
 end
+arch river_sw-ne
+x 2
+y 29
+end
 arch evergreens
 x 2
 y 30
 elevation 2316
+end
+arch river_sw-ne_l
+x 2
+y 30
 end
 arch evergreens
 x 2
@@ -758,90 +790,100 @@ x 2
 y 49
 elevation 6605
 end
-arch mountain
+arch grass
 x 3
-y 0
-elevation 6419
 end
-arch mountain
+arch a_civic
+name High Court Building
+name_pl High Court Building
+slaying /navar_city/city1court
+hp 10
+sp 15
+x 3
+end
+arch grass
 x 3
 y 1
-elevation 6615
 end
-arch mountain
+arch grass
 x 3
 y 2
-elevation 5917
 end
-arch hills_rocky
+arch cobblestones2
 x 3
 y 3
-elevation 4520
 end
-arch woods_2
+arch grass
 x 3
 y 4
-elevation 2591
 end
-arch hills_rocky
+arch evergreen
+x 3
+y 4
+end
+arch grass_only
 x 3
 y 5
-elevation 3638
 end
-arch hills_rocky
+arch cobblestones2
 x 3
 y 6
-elevation 3696
 end
-arch woods_2
+arch grass
 x 3
 y 7
-elevation 2485
 end
-arch hills_rocky
+arch small_temple2
+x 3
+y 7
+end
+arch cobblestones2
 x 3
 y 8
-elevation 4065
 end
-arch mountain
+arch grass
 x 3
 y 9
-elevation 5002
 end
-arch mountain
+arch market2
+x 3
+y 9
+end
+arch cobblestones2
 x 3
 y 10
-elevation 6569
 end
-arch mountain
+arch grass
 x 3
 y 11
-elevation 7450
 end
-arch mountain
+arch market2
+x 3
+y 11
+end
+arch cobblestones2
 x 3
 y 12
-elevation 7681
 end
-arch mountain
+arch brush
 x 3
 y 13
-elevation 7531
 end
-arch mountain
+arch grass
 x 3
 y 14
-elevation 7661
 end
-arch mountain
+arch grass
 x 3
 y 15
-elevation 6337
 end
-arch evergreens
+arch grass
 x 3
 y 16
-elevation 2476
+end
+arch cwall_2_1_2
+x 3
+y 16
 end
 arch hills_rocky
 x 3
@@ -898,15 +940,27 @@ x 3
 y 27
 elevation 96
 end
+arch river_sw-ne_u
+x 3
+y 27
+end
 arch evergreens
 x 3
 y 28
 elevation 1428
 end
+arch river_sw-ne
+x 3
+y 28
+end
 arch jungle_1
 x 3
 y 29
 elevation 2396
+end
+arch river_sw-ne_l
+x 3
+y 29
 end
 arch jungle_1
 x 3
@@ -1008,90 +1062,92 @@ x 3
 y 49
 elevation 5613
 end
-arch mountain
+arch grass
 x 4
-y 0
-elevation 6122
 end
-arch mountain
+arch grass
 x 4
 y 1
-elevation 6179
 end
-arch mountain
+arch grass
 x 4
 y 2
-elevation 5265
 end
-arch steppe
+arch cobblestones2
 x 4
 y 3
-elevation 3286
 end
-arch tree
+arch cobblestones2
 x 4
 y 4
-elevation 1041
 end
-arch hills_rocky
+arch cobblestones2
 x 4
 y 5
-elevation 3000
 end
-arch hills_rocky
+arch cobblestones2
 x 4
 y 6
-elevation 3736
 end
-arch hills_rocky
+arch cobblestones2
 x 4
 y 7
-elevation 3881
 end
-arch hills_rocky
+arch cobblestones2
 x 4
 y 8
-elevation 4021
 end
-arch hills_rocky
+arch light4
+x 4
+y 8
+end
+arch grass
 x 4
 y 9
-elevation 4590
 end
-arch mountain
+arch market2
+x 4
+y 9
+end
+arch cobblestones2
 x 4
 y 10
-elevation 5491
 end
-arch mountain
+arch grass
 x 4
 y 11
-elevation 6084
 end
-arch mountain
+arch market2
+x 4
+y 11
+end
+arch cobblestones2
 x 4
 y 12
-elevation 5982
 end
-arch mountain
+arch cobblestones2
 x 4
 y 13
-elevation 5517
 end
-arch mountain
+arch cobblestones2
 x 4
 y 14
-elevation 5850
 end
-arch mountain
+arch cobblestones2
 x 4
 y 15
-elevation 5405
 end
-arch steppe
+arch light4
+x 4
+y 15
+end
+arch grass
 x 4
 y 16
-elevation 3677
+end
+arch cwall_2_1_2
+x 4
+y 16
 end
 arch steppe
 x 4
@@ -1118,40 +1174,72 @@ x 4
 y 21
 elevation 264
 end
+arch river_sw-ne_u
+x 4
+y 21
+end
 arch jungle_1
 x 4
 y 22
 elevation 1317
+end
+arch river_ne-s
+x 4
+y 22
 end
 arch jungle_1
 x 4
 y 23
 elevation 1688
 end
+arch bridge_we
+x 4
+y 23
+end
 arch jungle_1
 x 4
 y 24
 elevation 2640
+end
+arch river_n-s
+x 4
+y 24
 end
 arch jungle_1
 x 4
 y 25
 elevation 2335
 end
+arch river_n-s
+x 4
+y 25
+end
 arch jungle_1
 x 4
 y 26
 elevation 1352
+end
+arch river_n-s
+x 4
+y 26
 end
 arch desert
 x 4
 y 27
 elevation 229
 end
+arch river_sw-n
+x 4
+y 27
+end
 arch grass
 x 4
 y 28
 elevation 221
+end
+arch river_sw-ne_l
+x 4
+y 28
 end
 arch jungle_1
 x 4
@@ -1258,90 +1346,108 @@ x 4
 y 49
 elevation 5578
 end
-arch mountain
+arch grass
 x 5
-y 0
-elevation 6097
 end
-arch mountain
+arch grass
 x 5
 y 1
-elevation 5549
 end
-arch steppe
+arch grass
 x 5
 y 2
-elevation 4719
 end
-arch hills_rocky
+arch cobblestones2
 x 5
 y 3
-elevation 3382
 end
-arch tree
+arch grass
 x 5
 y 4
-elevation 2154
 end
-arch tree
+arch guild
+name Central Library
+name_pl Central Library
+slaying /navar_city/library
+x 5
+y 4
+end
+arch grass
 x 5
 y 5
-elevation 2932
 end
-arch hills
+arch grass
 x 5
 y 6
-elevation 3625
 end
-arch hills
+arch l_shop1
+name Museum of Arms
+name_pl Museum of Arms
+slaying /navar_city/magara/houses/museum
+hp 4
+sp 18
+x 5
+y 6
+end
+arch grass
 x 5
 y 7
-elevation 3830
 end
-arch tree
+arch cobblestones2
 x 5
 y 8
-elevation 2640
 end
-arch hills
+arch grass
 x 5
 y 9
-elevation 3779
 end
-arch hills_rocky
+arch market2
+x 5
+y 9
+end
+arch cobblestones2
 x 5
 y 10
-elevation 3665
 end
-arch hills
+arch grass
 x 5
 y 11
-elevation 4783
 end
-arch hills_rocky
+arch market2
+x 5
+y 11
+end
+arch cobblestones2
 x 5
 y 12
-elevation 4934
 end
-arch woods_2
+arch brush
 x 5
 y 13
-elevation 2323
 end
-arch steppe
+arch guild
+name Guild of the Dreaming Sage
+name_pl Guild of the Dreaming Sage
+slaying /guilds/dreaming_sage/ground
+x 5
+y 13
+no_pass 0
+end
+arch grass
 x 5
 y 14
-elevation 4997
 end
-arch steppe
+arch grass
 x 5
 y 15
-elevation 4947
 end
-arch hills_rocky
+arch grass
 x 5
 y 16
-elevation 4144
+end
+arch cwall_2_1_2
+x 5
+y 16
 end
 arch hills_rocky
 x 5
@@ -1363,15 +1469,27 @@ x 5
 y 20
 elevation 169
 end
+arch river_sw-ne_u
+x 5
+y 20
+end
 arch desert
 x 5
 y 21
 elevation 639
 end
+arch river_sw-ne
+x 5
+y 21
+end
 arch jungle_1
 x 5
 y 22
 elevation 2435
+end
+arch river_sw-ne_l
+x 5
+y 22
 end
 arch hills
 x 5
@@ -1508,90 +1626,98 @@ x 5
 y 49
 elevation 4981
 end
-arch mountain
+arch grass
 x 6
-y 0
-elevation 5776
 end
-arch mountain
+arch tree
+x 6
+end
+arch grass
 x 6
 y 1
-elevation 5102
 end
-arch hills_rocky
+arch grass
 x 6
 y 2
-elevation 4122
 end
-arch tree
+arch sign_w
+name Civic St.
+name_pl Civic St.
+msg
+Civic St.
+High Court Building
+Lots of civil servants ....
+endmsg
+x 6
+y 2
+end
+arch cobblestones2
 x 6
 y 3
-elevation 2625
 end
-arch hills
+arch grass
 x 6
 y 4
-elevation 2829
 end
-arch hills
+arch grass
 x 6
 y 5
-elevation 2824
 end
-arch hills
+arch grass
 x 6
 y 6
-elevation 3082
 end
-arch hills_rocky
+arch grass
 x 6
 y 7
-elevation 3291
 end
-arch steppe
+arch cobblestones2
 x 6
 y 8
-elevation 3365
 end
-arch hills_rocky
+arch grass
 x 6
 y 9
-elevation 3082
 end
-arch tree
+arch market3
+x 6
+y 9
+end
+arch cobblestones2
 x 6
 y 10
-elevation 2137
 end
-arch hills_rocky
+arch grass
 x 6
 y 11
-elevation 4077
 end
-arch hills_rocky
+arch market3
+x 6
+y 11
+end
+arch cobblestones2
 x 6
 y 12
-elevation 4356
 end
-arch steppe
+arch grass
 x 6
 y 13
-elevation 4477
 end
-arch steppe
+arch grass
 x 6
 y 14
-elevation 4477
 end
-arch hills_rocky
+arch grass
 x 6
 y 15
-elevation 4340
 end
-arch steppe
+arch grass
 x 6
 y 16
-elevation 3251
+end
+arch cwall_2_1_2
+x 6
+y 16
 end
 arch hills
 x 6
@@ -1608,15 +1734,27 @@ x 6
 y 19
 elevation 1309
 end
+arch river_sw-ne_u
+x 6
+y 19
+end
 arch brush
 x 6
 y 20
 elevation 479
 end
+arch river_sw-ne
+x 6
+y 20
+end
 arch jungle_1
 x 6
 y 21
 elevation 2020
+end
+arch river_sw-ne_l
+x 6
+y 21
 end
 arch steppe
 x 6
@@ -1758,90 +1896,76 @@ x 6
 y 49
 elevation 2867
 end
-arch hills_rocky
+arch cobblestones2
 x 7
-y 0
-elevation 4658
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 1
-elevation 3843
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 2
-elevation 2659
 end
-arch tree
+arch cobblestones2
 x 7
 y 3
-elevation 2803
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 4
-elevation 2811
 end
-arch tree
+arch cobblestones2
 x 7
 y 5
-elevation 2632
 end
-arch tree
+arch cobblestones2
 x 7
 y 6
-elevation 2509
 end
-arch tree
+arch cobblestones2
 x 7
 y 7
-elevation 2055
 end
-arch tree
+arch cobblestones2
 x 7
 y 8
-elevation 2969
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 9
-elevation 3118
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 10
-elevation 3278
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 11
-elevation 3572
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 12
-elevation 4047
 end
-arch steppe
+arch cobblestones2
 x 7
 y 13
-elevation 4185
 end
-arch hills_rocky
+arch cobblestones2
 x 7
 y 14
-elevation 3916
 end
-arch steppe
+arch cobblestones2
 x 7
 y 15
-elevation 3261
 end
-arch evergreens
+arch grass
 x 7
 y 16
-elevation 2562
+end
+arch cwall_2_1_2
+x 7
+y 16
 end
 arch hills
 x 7
@@ -1853,15 +1977,27 @@ x 7
 y 18
 elevation 2048
 end
+arch river_sw-ne_u
+x 7
+y 18
+end
 arch woods_2
 x 7
 y 19
 elevation 1766
 end
+arch river_sw-ne
+x 7
+y 19
+end
 arch brush
 x 7
 y 20
 elevation 665
+end
+arch river_sw-ne_l
+x 7
+y 20
 end
 arch steppe
 x 7
@@ -2008,105 +2144,154 @@ x 7
 y 49
 elevation 4571
 end
-arch hills
+arch grass
 x 8
-y 0
-elevation 2600
 end
-arch hills_rocky
+arch grass
 x 8
 y 1
-elevation 2048
+end
+arch grass
+x 8
+y 2
 end
 arch brush
 x 8
 y 2
-elevation 865
 end
-arch woods_2
+arch grass
 x 8
 y 3
-elevation 2370
 end
-arch tree
+arch brush
+x 8
+y 3
+end
+arch grass
 x 8
 y 4
-elevation 2815
 end
-arch tree
+arch brush
+x 8
+y 4
+end
+arch grass
 x 8
 y 5
-elevation 2477
+end
+arch brush
+x 8
+y 5
+end
+arch grass
+x 8
+y 6
 end
 arch brush
 x 8
 y 6
-elevation 958
 end
-arch hills_rocky
+arch grass
 x 8
 y 7
-elevation 1936
 end
-arch tree
+arch brush
+x 8
+y 7
+end
+arch cobblestones2
 x 8
 y 8
-elevation 2268
 end
-arch hills_rocky
+arch grass
 x 8
 y 9
-elevation 2624
 end
-arch hills
+arch grass
 x 8
 y 10
-elevation 2795
 end
-arch woods_2
+arch biglake_nw
+x 8
+y 10
+end
+arch grass
 x 8
 y 11
-elevation 2875
 end
-arch hills_rocky
+arch biglake_s
+x 8
+y 11
+end
+arch cobblestones2
 x 8
 y 12
-elevation 3061
 end
-arch hills_rocky
+arch bridge_we
+x 8
+y 12
+end
+arch cobblestones2
 x 8
 y 13
-elevation 3634
 end
-arch steppe
+arch river_n-s
+x 8
+y 13
+end
+arch grass
 x 8
 y 14
-elevation 3092
 end
-arch hills
+arch river_n-s
+x 8
+y 14
+end
+arch grass
 x 8
 y 15
-elevation 1937
 end
-arch desert
+arch river_n-s
+x 8
+y 15
+end
+arch grass
 x 8
 y 16
-elevation 790
 end
-arch desert
+arch river_n-s
+x 8
+y 16
+end
+arch cityport_a
+x 8
+y 16
+end
+arch brush
 x 8
 y 17
-elevation 841
+end
+arch river_n-s
+x 8
+y 17
 end
 arch woods_2
 x 8
 y 18
 elevation 1762
 end
+arch river_sw-n
+x 8
+y 18
+end
 arch jungle_1
 x 8
 y 19
 elevation 1639
+end
+arch river_sw-ne_l
+x 8
+y 19
 end
 arch woods_2
 x 8
@@ -2258,90 +2443,131 @@ x 8
 y 49
 elevation 4861
 end
-arch brush
+arch cobblestones2
 x 9
-y 0
-elevation 69
 end
-arch brush
+arch cwall_2_1_1
+x 9
+end
+arch cobblestones2
 x 9
 y 1
-elevation 107
 end
-arch brush
+arch cwall_2_1_1
+x 9
+y 1
+end
+arch cobblestones2
 x 9
 y 2
-elevation 461
 end
-arch tree
+arch cwall_2_1_1
+x 9
+y 2
+end
+arch cobblestones2
 x 9
 y 3
-elevation 2104
 end
-arch tree
+arch cwall_2_2_1
+x 9
+y 3
+end
+arch grass
 x 9
 y 4
-elevation 2931
 end
-arch tree
+arch woods_2
+x 9
+y 4
+end
+arch grass
 x 9
 y 5
-elevation 2691
-end
-arch tree
-x 9
-y 6
-elevation 2188
-end
-arch hills_rocky
-x 9
-y 7
-elevation 1673
 end
 arch brush
 x 9
-y 8
-elevation 217
+y 5
 end
-arch hills
+arch grass
+x 9
+y 6
+end
+arch river_sw-ne_u
+x 9
+y 6
+end
+arch grass
+x 9
+y 7
+end
+arch river_ne-s
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch bridge_we
+x 9
+y 8
+end
+arch grass
 x 9
 y 9
-elevation 2405
 end
-arch tree
+arch river_n-s
+x 9
+y 9
+end
+arch grass
 x 9
 y 10
-elevation 2021
 end
-arch hills_rocky
+arch biglake_s
+x 9
+y 10
+end
+arch grass
 x 9
 y 11
-elevation 1581
 end
-arch tree
+arch biglake_se
+x 9
+y 11
+end
+arch cobblestones2
 x 9
 y 12
-elevation 1581
 end
-arch hills_rocky
+arch cobblestones2
 x 9
 y 13
-elevation 3743
 end
-arch steppe
+arch grass
 x 9
 y 14
-elevation 4007
 end
-arch hills_rocky
+arch brush
+x 9
+y 14
+end
+arch grass
 x 9
 y 15
-elevation 3528
 end
-arch hills
+arch brush
+x 9
+y 15
+end
+arch grass
 x 9
 y 16
-elevation 2792
+end
+arch cwall_2_1_2
+x 9
+y 16
 end
 arch woods_2
 x 9
@@ -2508,90 +2734,100 @@ x 9
 y 49
 elevation 4927
 end
-arch shallow_sea
+arch grass
 x 10
-y 0
-elevation -9
 end
-arch brush
+arch cobblestones2
 x 10
 y 1
-elevation 12
 end
 arch grass
 x 10
 y 2
-elevation 33
 end
-arch hills_rocky
+arch minihouse
+x 10
+y 2
+end
+arch cobblestones2
 x 10
 y 3
-elevation 2156
 end
-arch hills
+arch cwall_2_1_2
+x 10
+y 3
+end
+arch grass
 x 10
 y 4
-elevation 3023
 end
-arch evergreens
+arch woods_2
+x 10
+y 4
+end
+arch grass
 x 10
 y 5
-elevation 2797
 end
-arch hills_rocky
+arch river_sw-ne_u
+x 10
+y 5
+end
+arch grass
 x 10
 y 6
-elevation 2376
 end
-arch evergreens
+arch river_sw-ne
+x 10
+y 6
+end
+arch grass
 x 10
 y 7
-elevation 2086
 end
-arch hills_rocky
+arch river_sw-ne_l
+x 10
+y 7
+end
+arch cobblestones2
 x 10
 y 8
-elevation 1891
 end
-arch hills_rocky
+arch cobblestones2
 x 10
 y 9
-elevation 2815
 end
-arch hills_rocky
+arch cobblestones2
 x 10
 y 10
-elevation 3344
 end
-arch steppe
+arch cobblestones2
 x 10
 y 11
-elevation 3444
 end
-arch steppe
+arch cobblestones2
 x 10
 y 12
-elevation 3841
 end
-arch hills_rocky
+arch cobblestones2
 x 10
 y 13
-elevation 4383
 end
-arch steppe
+arch cobblestones2
 x 10
 y 14
-elevation 4682
 end
-arch steppe
+arch cobblestones2
 x 10
 y 15
-elevation 4429
 end
-arch steppe
+arch grass
 x 10
 y 16
-elevation 3678
+end
+arch cwall_2_1_2
+x 10
+y 16
 end
 arch evergreens
 x 10
@@ -2758,90 +2994,113 @@ x 10
 y 49
 elevation 4735
 end
-arch shallow_sea
+arch grass
 x 11
-y 0
-elevation -8
 end
-arch brush
+arch cobblestones2
 x 11
 y 1
-elevation 18
+end
+arch grass
+x 11
+y 2
+end
+arch cobblestones2
+x 11
+y 3
+end
+arch cwall_2_1_2
+x 11
+y 3
+end
+arch grass
+x 11
+y 4
 end
 arch brush
 x 11
-y 2
-elevation 335
-end
-arch tree
-x 11
-y 3
-elevation 1993
-end
-arch evergreens
-x 11
 y 4
-elevation 2838
 end
-arch tree
+arch grass
 x 11
 y 5
-elevation 2725
 end
-arch tree
+arch river_sw-e
+x 11
+y 5
+end
+arch grass
 x 11
 y 6
-elevation 2239
 end
-arch tree
+arch river_sw-ne_l
+x 11
+y 6
+end
+arch grass
 x 11
 y 7
-elevation 2624
 end
-arch hills
+arch house_largish
+name Gunther's Smithy
+name_pl Gunther's Smithy
+slaying /navar_city/city1smith
+hp 1
+sp 1
+x 11
+y 7
+end
+arch cobblestones2
 x 11
 y 8
-elevation 3159
 end
-arch hills
+arch grass
 x 11
 y 9
-elevation 3669
 end
-arch hills_rocky
+arch brush
+x 11
+y 9
+end
+arch grass
 x 11
 y 10
-elevation 4132
 end
-arch hills_rocky
+arch brush
+x 11
+y 10
+end
+arch grass
 x 11
 y 11
-elevation 4404
 end
-arch steppe
+arch brush
+x 11
+y 11
+end
+arch grass
 x 11
 y 12
-elevation 4577
 end
-arch steppe
+arch cobblestones2
 x 11
 y 13
-elevation 4762
 end
-arch steppe
+arch evergreen
 x 11
 y 14
-elevation 4798
 end
-arch steppe
+arch cobblestones2
 x 11
 y 15
-elevation 4461
 end
-arch steppe
+arch grass
 x 11
 y 16
-elevation 3716
+end
+arch cwall_2_1_2
+x 11
+y 16
 end
 arch woods
 x 11
@@ -3008,90 +3267,134 @@ x 11
 y 49
 elevation 4056
 end
-arch shallow_sea
+arch grass
 x 12
-y 0
-elevation -9
 end
-arch swamp
+arch inn
+name The Frolicing Mermaid
+name_pl The Frolicing Mermaid
+slaying /navar_city/city1mermaid
+hp 11
+sp 12
+x 12
+end
+arch cobblestones2
 x 12
 y 1
-elevation 4
+end
+arch grass
+x 12
+y 2
+end
+arch farmhouse
+name Traveller's Wayhouse
+name_pl Traveller's Wayhouse
+slaying /navar_city/city1houses3
+hp 28
+sp 22
+x 12
+y 2
+end
+arch cobblestones2
+x 12
+y 3
+end
+arch cwall_2_1_2
+x 12
+y 3
+end
+arch grass
+x 12
+y 4
 end
 arch brush
 x 12
-y 2
-elevation 170
-end
-arch tree
-x 12
-y 3
-elevation 1474
-end
-arch evergreens
-x 12
 y 4
-elevation 2384
 end
-arch hills_rocky
+arch grass
 x 12
 y 5
-elevation 2587
 end
-arch woods
+arch river_w-e
+x 12
+y 5
+end
+arch grass
 x 12
 y 6
-elevation 1716
 end
-arch hills_rocky
+arch grass
 x 12
 y 7
-elevation 3253
 end
-arch hills
+arch cobblestones2
 x 12
 y 8
-elevation 3803
 end
-arch hills
+arch grass
 x 12
 y 9
-elevation 4046
 end
-arch hills_rocky
+arch guild
+name Bank of Skud, Navar Branch
+name_pl Bank of Skud, Navar Branch
+slaying /navar_city/city1bank
+hp 7
+sp 14
+x 12
+y 9
+end
+arch grass
 x 12
 y 10
-elevation 4296
 end
-arch hills
+arch cobblestones2
+x 12
+y 10
+end
+arch grass
 x 12
 y 11
-elevation 4365
 end
-arch hills_rocky
+arch store_general
+slaying /navar_city/city1gen
+hp 1
+sp 1
+x 12
+y 11
+end
+arch grass
 x 12
 y 12
-elevation 4251
 end
-arch hills
+arch cobblestones2
 x 12
 y 13
-elevation 4165
 end
-arch hills
+arch grass
 x 12
 y 14
-elevation 4122
 end
-arch steppe
+arch farmhouse
+name A Large house
+name_pl A Large house
+slaying /navar_city/magara/houses/large_house
+hp 1
+sp 1
+x 12
+y 14
+end
+arch cobblestones2
 x 12
 y 15
-elevation 3970
 end
-arch steppe
+arch grass
 x 12
 y 16
-elevation 3379
+end
+arch cwall_2_1_2
+x 12
+y 16
 end
 arch jungle_1
 x 12
@@ -3258,90 +3561,112 @@ x 12
 y 49
 elevation 4443
 end
-arch shallow_sea
+arch grass
 x 13
-y 0
-elevation -10
 end
-arch shallow_sea
+arch cobblestones2
 x 13
 y 1
-elevation -3
 end
-arch brush
+arch grass
 x 13
 y 2
-elevation 59
 end
-arch brush
+arch cobblestones2
 x 13
 y 3
-elevation 583
 end
-arch evergreens
+arch cwall_2_1_2
+x 13
+y 3
+end
+arch grass
 x 13
 y 4
-elevation 1711
 end
-arch jungle_1
+arch guard
+msg
+@match *
+'Ello, 'ello, 'ello...
+'Wot have we 'ere then?
+endmsg
+x 13
+y 4
+speed_left -4.000000
+end
+arch grass
 x 13
 y 5
-elevation 2409
 end
-arch hills
+arch river_w-e
+x 13
+y 5
+end
+arch grass
 x 13
 y 6
-elevation 3210
 end
-arch hills_rocky
+arch well
+x 13
+y 6
+end
+arch grass
 x 13
 y 7
-elevation 3840
 end
-arch hills_rocky
+arch sign_w
+name Smith St.
+name_pl Smith St.
+msg
+Blacksmith
+Visit Gunther for Special Service
+endmsg
+x 13
+y 7
+end
+arch cobblestones2
 x 13
 y 8
-elevation 4252
 end
-arch hills_rocky
+arch grass
 x 13
 y 9
-elevation 4315
 end
-arch hills_rocky
+arch grass
 x 13
 y 10
-elevation 4158
 end
-arch hills
+arch grass
 x 13
 y 11
-elevation 3450
 end
-arch hills
+arch grass
 x 13
 y 12
-elevation 3500
 end
-arch jungle_1
+arch cobblestones2
 x 13
 y 13
-elevation 2489
 end
-arch evergreens
+arch grass
 x 13
 y 14
-elevation 2506
 end
-arch steppe
+arch cobblestones2
 x 13
 y 15
-elevation 3129
 end
-arch evergreens
+arch light4
+x 13
+y 15
+end
+arch grass
 x 13
 y 16
-elevation 2666
+end
+arch cwall_2_1_2
+x 13
+y 16
 end
 arch jungle_1
 x 13
@@ -3508,90 +3833,96 @@ x 13
 y 49
 elevation 3821
 end
-arch shallow_sea
+arch grass
 x 14
-y 0
-elevation -7
 end
-arch shallow_sea
+arch sign_w
+name Tavern St.
+name_pl Tavern St.
+msg
+Convivial Times for Scurvey Knaves!
+endmsg
+x 14
+end
+arch cobblestones2
 x 14
 y 1
-elevation -8
 end
-arch brush
+arch cobblestones2
 x 14
 y 2
-elevation 85
 end
-arch brush
+arch cobblestones2
 x 14
 y 3
-elevation 173
 end
-arch brush
+arch cityport_a
+x 14
+y 3
+end
+arch cobblestones2
 x 14
 y 4
-elevation 423
 end
-arch tree
+arch cobblestones2
 x 14
 y 5
-elevation 2391
 end
-arch hills
+arch bridge_ns
+x 14
+y 5
+end
+arch cobblestones2
 x 14
 y 6
-elevation 3493
 end
-arch hills_rocky
+arch light4
+x 14
+y 6
+end
+arch cobblestones2
 x 14
 y 7
-elevation 4343
 end
-arch hills_rocky
+arch cobblestones2
 x 14
 y 8
-elevation 4607
 end
-arch hills
+arch cobblestones2
 x 14
 y 9
-elevation 3874
 end
-arch hills
+arch cobblestones2
 x 14
 y 10
-elevation 4173
 end
-arch hills_rocky
+arch cobblestones2
 x 14
 y 11
-elevation 3788
 end
-arch tree
+arch cobblestones2
 x 14
 y 12
-elevation 2815
 end
-arch hills
+arch cobblestones2
 x 14
 y 13
-elevation 2926
 end
-arch woods
+arch cobblestones2
 x 14
 y 14
-elevation 2075
 end
-arch hills
+arch cobblestones2
 x 14
 y 15
-elevation 1996
 end
-arch hills
+arch grass
 x 14
 y 16
-elevation 2283
+end
+arch cwall_2_1_2
+x 14
+y 16
 end
 arch desert
 x 14
@@ -3758,90 +4089,92 @@ x 14
 y 49
 elevation 5466
 end
-arch shallow_sea
+arch cobblestones2
 x 15
-y 0
-elevation -6
 end
-arch shallow_sea
+arch cobblestones2
 x 15
 y 1
-elevation -5
 end
-arch brush
+arch cobblestones2
 x 15
 y 2
-elevation 54
 end
-arch brush
+arch cobblestones2
 x 15
 y 3
-elevation 636
 end
-arch tree
+arch cityport_a
+x 15
+y 3
+end
+arch cobblestones2
 x 15
 y 4
-elevation 1379
 end
-arch tree
+arch cobblestones2
 x 15
 y 5
-elevation 1950
 end
-arch hills_rocky
+arch bridge_ns
+x 15
+y 5
+end
+arch cobblestones2
 x 15
 y 6
-elevation 3336
 end
-arch hills_rocky
+arch cobblestones2
 x 15
 y 7
-elevation 4306
 end
-arch hills_rocky
+arch cobblestones2
 x 15
 y 8
-elevation 4720
 end
-arch hills_rocky
+arch cobblestones2
 x 15
 y 9
-elevation 4696
 end
-arch hills
+arch cobblestones2
 x 15
 y 10
-elevation 4237
 end
-arch hills
+arch cobblestones2
 x 15
 y 11
-elevation 3988
 end
-arch steppe
+arch cobblestones2
 x 15
 y 12
-elevation 4338
 end
-arch hills
+arch cobblestones2
 x 15
 y 13
-elevation 4082
 end
-arch steppe
+arch grass
 x 15
 y 14
-elevation 3449
 end
-arch hills
+arch grassmedium
+x 15
+y 14
+end
+arch grass
 x 15
 y 15
-elevation 1870
 end
-arch woods
+arch grassmedium
+x 15
+y 15
+end
+arch grass
 x 15
 y 16
-elevation 2584
+end
+arch cwall_2_1_2
+x 15
+y 16
 end
 arch evergreens
 x 15
@@ -4008,90 +4341,135 @@ x 15
 y 49
 elevation 5923
 end
-arch shallow_sea
+arch cobblestones2
 x 16
-y 0
-elevation -9
 end
-arch swamp
+arch light4
+x 16
+end
+arch cobblestones2
 x 16
 y 1
-elevation 3
 end
-arch brush
+arch store_armour
+name Olaf's Armor Emporium
+name_pl Olaf's Armor Emporium
+slaying /navar_city/city1armour
+hp 1
+sp 1
+x 16
+y 1
+end
+arch cobblestones2
 x 16
 y 2
-elevation 109
 end
-arch brush
+arch cobblestones2
 x 16
 y 3
-elevation 970
 end
-arch tree
+arch cwall_2_1_2
+x 16
+y 3
+end
+arch grass
 x 16
 y 4
-elevation 1456
 end
-arch tree
+arch guard
+msg
+@match *
+You may pass...
+endmsg
+x 16
+y 4
+speed_left -4.000000
+end
+arch cobblestones2
 x 16
 y 5
-elevation 1934
 end
-arch tree
+arch river_w-e
+x 16
+y 5
+end
+arch cobblestones2
 x 16
 y 6
-elevation 2210
 end
-arch hills
+arch cobblestones2
 x 16
 y 7
-elevation 3814
 end
-arch hills
+arch store_weapons
+name Red's Weapons Bazzar
+name_pl Red's Weapons Bazzar
+slaying /navar_city/city1weapon
+hp 1
+sp 1
+x 16
+y 7
+end
+arch cobblestones2
 x 16
 y 8
-elevation 4562
 end
-arch hills_rocky
+arch grass
 x 16
 y 9
-elevation 4940
 end
-arch hills_rocky
+arch grass
 x 16
 y 10
-elevation 4862
 end
-arch hills
+arch store_magic
+name Wizzo's Magic Shop
+name_pl Wizzo's Magic Shop
+slaying /navar_city/city1magic
+hp 1
+sp 1
+x 16
+y 10
+end
+arch grass
 x 16
 y 11
-elevation 4888
 end
-arch mountain
+arch grass
 x 16
 y 12
-elevation 5161
 end
-arch mountain
+arch grasspond
+x 16
+y 12
+end
+arch cobblestones2
 x 16
 y 13
-elevation 5205
 end
-arch hills
+arch grass
 x 16
 y 14
-elevation 4403
 end
-arch steppe
+arch grassmedium
+x 16
+y 14
+end
+arch grass
 x 16
 y 15
-elevation 3833
 end
-arch steppe
+arch grassdark
+x 16
+y 15
+end
+arch grass
 x 16
 y 16
-elevation 3310
+end
+arch cwall_2_1_2
+x 16
+y 16
 end
 arch hills
 x 16
@@ -4258,90 +4636,84 @@ x 16
 y 49
 elevation 5356
 end
-arch swamp
+arch cobblestones2
 x 17
-y 0
-elevation 7
 end
-arch brush
+arch cobblestones2
 x 17
 y 1
-elevation 30
 end
-arch brush
+arch cobblestones2
 x 17
 y 2
-elevation 380
 end
-arch tree
+arch cobblestones2
 x 17
 y 3
-elevation 1072
 end
-arch tree
+arch cwall_2_1_2
+x 17
+y 3
+end
+arch grass
 x 17
 y 4
-elevation 1564
 end
-arch brush
+arch cobblestones2
 x 17
 y 5
-elevation 778
 end
-arch hills_rocky
+arch river_w-e
+x 17
+y 5
+end
+arch cobblestones2
 x 17
 y 6
-elevation 1657
 end
-arch hills
+arch cobblestones2
 x 17
 y 7
-elevation 3174
 end
-arch steppe
+arch cobblestones2
 x 17
 y 8
-elevation 4133
 end
-arch hills
+arch grass
 x 17
 y 9
-elevation 4937
 end
-arch mountain
+arch grass
 x 17
 y 10
-elevation 5099
 end
-arch hills
+arch grass
 x 17
 y 11
-elevation 4117
 end
-arch mountain
+arch grass
 x 17
 y 12
-elevation 5557
 end
-arch mountain
+arch cobblestones2
 x 17
 y 13
-elevation 5608
 end
-arch mountain
+arch grassdark
 x 17
 y 14
-elevation 5069
 end
-arch steppe
+arch grassdark
 x 17
 y 15
-elevation 4373
 end
-arch hills
+arch grass
 x 17
 y 16
-elevation 3418
+end
+arch cwall_2_1_2
+x 17
+y 16
 end
 arch hills
 x 17
@@ -4508,90 +4880,98 @@ x 17
 y 49
 elevation 2979
 end
-arch shallow_sea
+arch cobblestones2
 x 18
-y 0
-elevation -4
 end
-arch brush
+arch cobblestones2
 x 18
 y 1
-elevation 376
 end
-arch tree
+arch city_tower
+name Lighthouse
+name_pl Lighthouse
+slaying /navar_city/light/light1
+sp 11
+x 18
+y 1
+end
+arch cobblestones2
 x 18
 y 2
-elevation 1178
 end
-arch tree
+arch cobblestones2
 x 18
 y 3
-elevation 1984
 end
-arch tree
+arch cwall_2_1_2
+x 18
+y 3
+end
+arch grass
 x 18
 y 4
-elevation 1978
 end
-arch desert
+arch cobblestones2
 x 18
 y 5
-elevation 171
 end
-arch jungle_1
+arch river_w-e
+x 18
+y 5
+end
+arch cobblestones2
 x 18
 y 6
-elevation 1736
 end
-arch jungle_1
+arch cobblestones2
 x 18
 y 7
-elevation 2296
 end
-arch hills
+arch cobblestones2
 x 18
 y 8
-elevation 3493
 end
-arch hills_rocky
+arch cobblestones2
 x 18
 y 9
-elevation 4213
 end
-arch steppe
+arch cobblestones2
 x 18
 y 10
-elevation 4380
 end
-arch steppe
+arch cobblestones2
 x 18
 y 11
-elevation 4581
 end
-arch hills
+arch cobblestones2
 x 18
 y 12
-elevation 4807
 end
-arch hills
+arch cobblestones2
 x 18
 y 13
-elevation 4907
 end
-arch steppe
+arch grassdark
 x 18
 y 14
-elevation 4701
 end
-arch steppe
+arch s_tower1
+slaying /navar_city/tower/magetower1
+sp 8
+x 18
+y 14
+end
+arch grassdark
 x 18
 y 15
-elevation 4367
 end
-arch steppe
+arch grass
 x 18
 y 16
-elevation 3073
+end
+arch cwall_2_1_2
+x 18
+y 16
 end
 arch grass
 x 18
@@ -4758,90 +5138,150 @@ x 18
 y 49
 elevation 4319
 end
-arch shallow_sea
+arch sea1
 x 19
-y 0
-elevation -3
 end
-arch shallow_sea
+arch pier_1_2
+x 19
+end
+arch magic_mouth
+msg
+Hmmm...what is that ship doing so far
+out in the bay??
+endmsg
+x 19
+end
+arch cobblestones2
 x 19
 y 1
-elevation -5
 end
-arch brush
+arch cwall_1_1
+x 19
+y 1
+end
+arch cobblestones2
 x 19
 y 2
-elevation 645
 end
-arch tree
+arch cwall_2_1_1
+x 19
+y 2
+end
+arch cobblestones2
 x 19
 y 3
-elevation 1752
 end
-arch tree
+arch cwall_3_4
+x 19
+y 3
+end
+arch grass
 x 19
 y 4
-elevation 2065
 end
-arch tree
+arch cwall_2_1_1
+x 19
+y 4
+end
+arch grass
 x 19
 y 5
-elevation 1814
 end
-arch tree
+arch river_w-e
+x 19
+y 5
+end
+arch cityport_b
+x 19
+y 5
+end
+arch grass
 x 19
 y 6
-elevation 1361
 end
-arch hills_rocky
+arch cwall_2_1_1
+x 19
+y 6
+end
+arch grass
 x 19
 y 7
-elevation 1222
 end
-arch hills_rocky
+arch cwall_2_1_1
+x 19
+y 7
+end
+arch grass
 x 19
 y 8
-elevation 2284
 end
-arch tree
+arch cwall_2_1_1
+x 19
+y 8
+end
+arch grass
 x 19
 y 9
-elevation 2649
 end
-arch hills_rocky
+arch cwall_2_1_1
+x 19
+y 9
+end
+arch grass
 x 19
 y 10
-elevation 1898
 end
-arch tree
+arch cwall_2_1_1
+x 19
+y 10
+end
+arch grass
 x 19
 y 11
-elevation 2968
 end
-arch steppe
+arch cwall_2_1_1
+x 19
+y 11
+end
+arch grass
 x 19
 y 12
-elevation 3125
 end
-arch hills
+arch cwall_2_1_1
+x 19
+y 12
+end
+arch grass
 x 19
 y 13
-elevation 2097
 end
-arch steppe
+arch cwall_2_1_1
+x 19
+y 13
+end
+arch grass
 x 19
 y 14
-elevation 3666
 end
-arch steppe
+arch cwall_2_1_1
+x 19
+y 14
+end
+arch grass
 x 19
 y 15
-elevation 4030
 end
-arch hills
+arch cwall_2_1_1
+x 19
+y 15
+end
+arch grass
 x 19
 y 16
-elevation 3682
+end
+arch cwall_2_2_4
+x 19
+y 16
 end
 arch steppe
 x 19
@@ -5010,88 +5450,70 @@ elevation 3245
 end
 arch shallow_sea
 x 20
-y 0
-elevation -13
 end
 arch shallow_sea
 x 20
 y 1
-elevation -6
 end
-arch brush
+arch shallow_sea
 x 20
 y 2
-elevation 23
 end
 arch shallow_sea
 x 20
 y 3
-elevation -5
 end
-arch brush
+arch shallow_sea
 x 20
 y 4
-elevation 548
 end
-arch brush
+arch sea
 x 20
 y 5
-elevation 804
 end
-arch brush
+arch shallow_sea
 x 20
 y 6
-elevation 587
 end
-arch brush
+arch shallow_sea
 x 20
 y 7
-elevation 34
 end
-arch brush
+arch shallow_sea
 x 20
 y 8
-elevation 746
 end
-arch brush
+arch shallow_sea
 x 20
 y 9
-elevation 591
 end
-arch desert
+arch shallow_sea
 x 20
 y 10
-elevation 64
 end
-arch hills
+arch grass
 x 20
 y 11
-elevation 1030
 end
-arch brush
+arch grass
 x 20
 y 12
-elevation 144
 end
-arch desert
+arch grass
 x 20
 y 13
-elevation 748
 end
 arch hills
 x 20
 y 14
-elevation 2440
 end
 arch hills
 x 20
 y 15
-elevation 3327
 end
-arch steppe
+arch hills
 x 20
 y 16
-elevation 3709
 end
 arch steppe
 x 20
@@ -5260,7 +5682,6 @@ elevation 4999
 end
 arch shallow_sea
 x 21
-y 0
 elevation -27
 end
 arch shallow_sea
@@ -5283,10 +5704,9 @@ x 21
 y 4
 elevation -2
 end
-arch shallow_sea
+arch sea
 x 21
 y 5
-elevation -5
 end
 arch shallow_sea
 x 21
@@ -5308,15 +5728,13 @@ x 21
 y 9
 elevation -8
 end
-arch swamp
+arch shallow_sea
 x 21
 y 10
-elevation 1
 end
 arch shallow_sea
 x 21
 y 11
-elevation 0
 end
 arch brush
 x 21
@@ -5510,7 +5928,6 @@ elevation 5542
 end
 arch shallow_sea
 x 22
-y 0
 elevation -47
 end
 arch shallow_sea
@@ -5531,12 +5948,16 @@ end
 arch sea
 x 22
 y 4
-elevation -135
+end
+arch big_galleon
+name Smugglers Boat
+name_pl Smugglers Boat
+x 22
+y 4
 end
 arch sea
 x 22
 y 5
-elevation -145
 end
 arch sea
 x 22
@@ -5760,7 +6181,6 @@ elevation 5647
 end
 arch shallow_sea
 x 23
-y 0
 elevation -68
 end
 arch sea
@@ -5781,12 +6201,10 @@ end
 arch sea
 x 23
 y 4
-elevation -265
 end
 arch sea
 x 23
 y 5
-elevation -286
 end
 arch sea
 x 23
@@ -6010,7 +6428,6 @@ elevation 5416
 end
 arch shallow_sea
 x 24
-y 0
 elevation -96
 end
 arch sea
@@ -6260,7 +6677,6 @@ elevation 5625
 end
 arch sea
 x 25
-y 0
 elevation -131
 end
 arch sea
@@ -6416,7 +6832,6 @@ end
 arch shallow_sea
 x 25
 y 31
-elevation 0
 end
 arch deep_swamp
 x 25
@@ -6510,7 +6925,6 @@ elevation 6045
 end
 arch sea
 x 26
-y 0
 elevation -177
 end
 arch sea
@@ -6760,7 +7174,6 @@ elevation 6114
 end
 arch sea
 x 27
-y 0
 elevation -233
 end
 arch sea
@@ -7010,7 +7423,6 @@ elevation 6169
 end
 arch sea
 x 28
-y 0
 elevation -332
 end
 arch sea
@@ -7260,7 +7672,6 @@ elevation 7098
 end
 arch sea
 x 29
-y 0
 elevation -472
 end
 arch sea
@@ -7510,7 +7921,6 @@ elevation 6674
 end
 arch sea
 x 30
-y 0
 elevation -641
 end
 arch sea
@@ -7760,7 +8170,6 @@ elevation 5790
 end
 arch sea
 x 31
-y 0
 elevation -795
 end
 arch sea
@@ -8010,7 +8419,6 @@ elevation 4896
 end
 arch sea
 x 32
-y 0
 elevation -926
 end
 arch sea
@@ -8260,7 +8668,6 @@ elevation 5740
 end
 arch sea
 x 33
-y 0
 elevation -1031
 end
 arch sea
@@ -8510,7 +8917,6 @@ elevation 5489
 end
 arch sea
 x 34
-y 0
 elevation -1113
 end
 arch sea
@@ -8760,7 +9166,6 @@ elevation 3310
 end
 arch sea
 x 35
-y 0
 elevation -1181
 end
 arch sea
@@ -9010,7 +9415,6 @@ elevation 1255
 end
 arch sea
 x 36
-y 0
 elevation -1246
 end
 arch sea
@@ -9260,7 +9664,6 @@ elevation 4529
 end
 arch sea
 x 37
-y 0
 elevation -1326
 end
 arch sea
@@ -9510,7 +9913,6 @@ elevation 5043
 end
 arch sea
 x 38
-y 0
 elevation -1439
 end
 arch sea
@@ -9760,7 +10162,6 @@ elevation 4099
 end
 arch sea
 x 39
-y 0
 elevation -1597
 end
 arch sea
@@ -10010,7 +10411,6 @@ elevation 2963
 end
 arch sea
 x 40
-y 0
 elevation -1800
 end
 arch sea
@@ -10260,7 +10660,6 @@ elevation 2145
 end
 arch sea
 x 41
-y 0
 elevation -2037
 end
 arch sea
@@ -10510,7 +10909,6 @@ elevation 3069
 end
 arch sea
 x 42
-y 0
 elevation -2290
 end
 arch sea
@@ -10760,7 +11158,6 @@ elevation 3708
 end
 arch sea
 x 43
-y 0
 elevation -2538
 end
 arch sea
@@ -11010,7 +11407,6 @@ elevation 4324
 end
 arch sea
 x 44
-y 0
 elevation -2763
 end
 arch sea
@@ -11086,7 +11482,6 @@ end
 arch shallow_sea
 x 44
 y 15
-elevation 0
 end
 arch desert
 x 44
@@ -11260,7 +11655,6 @@ elevation 4261
 end
 arch sea
 x 45
-y 0
 elevation -2952
 end
 arch sea
@@ -11510,7 +11904,6 @@ elevation 5005
 end
 arch sea
 x 46
-y 0
 elevation -3097
 end
 arch sea
@@ -11760,7 +12153,6 @@ elevation 5625
 end
 arch sea
 x 47
-y 0
 elevation -3194
 end
 arch sea
@@ -12010,7 +12402,6 @@ elevation 5362
 end
 arch sea
 x 48
-y 0
 elevation -3237
 end
 arch sea
@@ -12260,7 +12651,6 @@ elevation 4019
 end
 arch sea
 x 49
-y 0
 elevation -3225
 end
 arch sea

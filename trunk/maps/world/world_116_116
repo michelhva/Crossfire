@@ -1,7 +1,11 @@
 arch map
 name world_116_116
+reset_timeout 7200
+difficulty 1
 width 50
 height 50
+enter_x 1
+enter_y 1
 outdoor 1
 tile_path_1 world_116_115
 tile_path_2 world_117_116
@@ -9,258 +13,205 @@ tile_path_3 world_116_117
 tile_path_4 world_115_116
 end
 arch mountain
-x 0
-y 0
 elevation 5353
 end
 arch mountain
-x 0
 y 1
 elevation 5570
 end
 arch mountain
-x 0
 y 2
 elevation 5024
 end
 arch mountain
-x 0
 y 3
 elevation 5257
 end
 arch mountain
-x 0
 y 4
 elevation 5185
 end
 arch hills
-x 0
 y 5
 elevation 4949
 end
 arch hills
-x 0
 y 6
 elevation 3842
 end
 arch mountain
-x 0
 y 7
 elevation 5018
 end
 arch mountain
-x 0
 y 8
 elevation 5407
 end
 arch mountain
-x 0
 y 9
 elevation 5765
 end
 arch mountain
-x 0
 y 10
 elevation 5866
 end
 arch mountain
-x 0
 y 11
 elevation 5204
 end
 arch hills
-x 0
 y 12
 elevation 3534
 end
 arch woods_3
-x 0
 y 13
 elevation 1790
 end
 arch grass
-x 0
 y 14
 elevation 667
 end
 arch grass
-x 0
 y 15
 elevation 318
 end
 arch grass
-x 0
 y 16
 elevation 867
 end
 arch grass
-x 0
 y 17
 elevation 979
 end
 arch desert
-x 0
 y 18
 elevation 716
 end
 arch grass
-x 0
 y 19
 elevation 159
 end
 arch woods_3
-x 0
 y 20
 elevation 1768
 end
-arch woods
-x 0
+arch cobblestones
 y 21
-elevation 2665
 end
 arch hills
-x 0
 y 22
 elevation 3478
 end
 arch hills
-x 0
 y 23
 elevation 4322
 end
 arch hills
-x 0
 y 24
 elevation 4841
 end
 arch hills
-x 0
 y 25
 elevation 4876
 end
 arch hills
-x 0
 y 26
 elevation 4333
 end
 arch mountain
-x 0
 y 27
 elevation 5035
 end
 arch mountain
-x 0
 y 28
 elevation 5113
 end
 arch mountain
-x 0
 y 29
 elevation 5454
 end
 arch mountain
-x 0
 y 30
 elevation 6126
 end
 arch mountain
-x 0
 y 31
 elevation 6746
 end
 arch mountain
-x 0
 y 32
 elevation 6040
 end
 arch hills
-x 0
 y 33
 elevation 3458
 end
 arch hills
-x 0
 y 34
 elevation 4949
 end
 arch mountain
-x 0
 y 35
 elevation 7871
 end
 arch mountain
-x 0
 y 36
 elevation 8338
 end
 arch mountain
-x 0
 y 37
 elevation 7532
 end
 arch hills
-x 0
 y 38
 elevation 4279
 end
 arch hills
-x 0
 y 39
 elevation 3962
 end
 arch woods
-x 0
 y 40
 elevation 2518
 end
 arch mountain
-x 0
 y 41
 elevation 5906
 end
 arch mountain
-x 0
 y 42
 elevation 7107
 end
 arch mountain
-x 0
 y 43
 elevation 7725
 end
 arch mountain
-x 0
 y 44
 elevation 8895
 end
 arch mountain2
-x 0
 y 45
 elevation 10641
 end
 arch wasteland
-x 0
 y 46
 elevation 12054
 end
 arch mountain2
-x 0
 y 47
 elevation 11653
 end
 arch mountain
-x 0
 y 48
 elevation 8234
 end
 arch wasteland
-x 0
 y 49
 elevation 12216
 end
 arch hills
 x 1
-y 0
 elevation 4860
 end
 arch hills_rocky
@@ -363,10 +314,9 @@ x 1
 y 20
 elevation 1742
 end
-arch woods_2
+arch cobblestones
 x 1
 y 21
-elevation 2113
 end
 arch woods_3
 x 1
@@ -510,7 +460,6 @@ elevation 12793
 end
 arch hills
 x 2
-y 0
 elevation 4066
 end
 arch hills
@@ -613,10 +562,9 @@ x 2
 y 20
 elevation 1753
 end
-arch grass
+arch cobblestones
 x 2
 y 21
-elevation 450
 end
 arch grass
 x 2
@@ -760,7 +708,6 @@ elevation 13941
 end
 arch hills_rocky
 x 3
-y 0
 elevation 3563
 end
 arch hills_rocky
@@ -863,15 +810,13 @@ x 3
 y 20
 elevation 1715
 end
-arch grass
+arch cobblestones
 x 3
 y 21
-elevation 870
 end
-arch woods_3
+arch cobblestones
 x 3
 y 22
-elevation 1828
 end
 arch woods_3
 x 3
@@ -1010,7 +955,6 @@ elevation 14274
 end
 arch hills
 x 4
-y 0
 elevation 4924
 end
 arch hills_rocky
@@ -1118,10 +1062,9 @@ x 4
 y 21
 elevation 1762
 end
-arch woods_2
+arch cobblestones
 x 4
 y 22
-elevation 2157
 end
 arch woods
 x 4
@@ -1260,7 +1203,6 @@ elevation 13306
 end
 arch mountain
 x 5
-y 0
 elevation 6256
 end
 arch mountain
@@ -1368,10 +1310,9 @@ x 5
 y 21
 elevation 1970
 end
-arch woods_2
+arch cobblestones
 x 5
 y 22
-elevation 2260
 end
 arch woods_3
 x 5
@@ -1510,7 +1451,6 @@ elevation 12050
 end
 arch mountain
 x 6
-y 0
 elevation 7396
 end
 arch mountain
@@ -1618,10 +1558,9 @@ x 6
 y 21
 elevation 2385
 end
-arch woods_3
+arch cobblestones
 x 6
 y 22
-elevation 1513
 end
 arch evergreens
 x 6
@@ -1760,7 +1699,6 @@ elevation 11089
 end
 arch mountain
 x 7
-y 0
 elevation 7933
 end
 arch mountain
@@ -1868,10 +1806,9 @@ x 7
 y 21
 elevation 2826
 end
-arch hills
+arch cobblestones
 x 7
 y 22
-elevation 3272
 end
 arch steppe
 x 7
@@ -2010,7 +1947,6 @@ elevation 10459
 end
 arch mountain
 x 8
-y 0
 elevation 7941
 end
 arch mountain
@@ -2118,10 +2054,9 @@ x 8
 y 21
 elevation 3074
 end
-arch hills
+arch cobblestones
 x 8
 y 22
-elevation 4294
 end
 arch mountain
 x 8
@@ -2260,7 +2195,6 @@ elevation 9023
 end
 arch mountain
 x 9
-y 0
 elevation 7855
 end
 arch mountain
@@ -2368,10 +2302,9 @@ x 9
 y 21
 elevation 3965
 end
-arch steppe
+arch cobblestones
 x 9
 y 22
-elevation 4922
 end
 arch mountain
 x 9
@@ -2510,7 +2443,6 @@ elevation 7993
 end
 arch mountain
 x 10
-y 0
 elevation 7144
 end
 arch mountain
@@ -2618,15 +2550,13 @@ x 10
 y 21
 elevation 3569
 end
-arch mountain
+arch cobblestones
 x 10
 y 22
-elevation 5675
 end
-arch mountain
+arch cobblestones
 x 10
 y 23
-elevation 6536
 end
 arch mountain
 x 10
@@ -2760,7 +2690,6 @@ elevation 6334
 end
 arch mountain
 x 11
-y 0
 elevation 7959
 end
 arch mountain
@@ -2873,15 +2802,13 @@ x 11
 y 22
 elevation 6293
 end
-arch mountain
+arch cobblestones
 x 11
 y 23
-elevation 7039
 end
-arch mountain
+arch cobblestones
 x 11
 y 24
-elevation 8024
 end
 arch mountain2
 x 11
@@ -3010,7 +2937,6 @@ elevation 1498
 end
 arch mountain
 x 12
-y 0
 elevation 7212
 end
 arch mountain
@@ -3128,15 +3054,13 @@ x 12
 y 23
 elevation 7623
 end
-arch mountain
+arch cobblestones
 x 12
 y 24
-elevation 8009
 end
-arch mountain
+arch cobblestones
 x 12
 y 25
-elevation 7846
 end
 arch mountain2
 x 12
@@ -3260,7 +3184,6 @@ elevation 544
 end
 arch mountain
 x 13
-y 0
 elevation 7112
 end
 arch mountain
@@ -3383,10 +3306,9 @@ x 13
 y 24
 elevation 7915
 end
-arch mountain
+arch cobblestones
 x 13
 y 25
-elevation 6363
 end
 arch mountain
 x 13
@@ -3510,7 +3432,6 @@ elevation 3692
 end
 arch mountain
 x 14
-y 0
 elevation 6297
 end
 arch mountain
@@ -3633,10 +3554,9 @@ x 14
 y 24
 elevation 7849
 end
-arch mountain
+arch cobblestones
 x 14
 y 25
-elevation 7201
 end
 arch mountain
 x 14
@@ -3760,7 +3680,6 @@ elevation 6027
 end
 arch mountain
 x 15
-y 0
 elevation 5524
 end
 arch mountain
@@ -3883,10 +3802,9 @@ x 15
 y 24
 elevation 7380
 end
-arch mountain
+arch cobblestones
 x 15
 y 25
-elevation 6578
 end
 arch mountain
 x 15
@@ -4010,7 +3928,6 @@ elevation 6208
 end
 arch mountain
 x 16
-y 0
 elevation 5540
 end
 arch mountain
@@ -4133,10 +4050,9 @@ x 16
 y 24
 elevation 5177
 end
-arch hills
+arch cobblestones
 x 16
 y 25
-elevation 4337
 end
 arch mountain
 x 16
@@ -4260,7 +4176,6 @@ elevation 5298
 end
 arch mountain
 x 17
-y 0
 elevation 6425
 end
 arch mountain
@@ -4383,10 +4298,9 @@ x 17
 y 24
 elevation 7036
 end
-arch hills
+arch cobblestones
 x 17
 y 25
-elevation 4721
 end
 arch mountain
 x 17
@@ -4510,7 +4424,6 @@ elevation 3305
 end
 arch mountain
 x 18
-y 0
 elevation 5662
 end
 arch mountain
@@ -4633,10 +4546,9 @@ x 18
 y 24
 elevation 7300
 end
-arch hills
+arch cobblestones
 x 18
 y 25
-elevation 4573
 end
 arch mountain
 x 18
@@ -4760,7 +4672,6 @@ elevation 4969
 end
 arch mountain
 x 19
-y 0
 elevation 5018
 end
 arch mountain
@@ -4883,15 +4794,13 @@ x 19
 y 24
 elevation 6834
 end
-arch mountain
+arch cobblestones
 x 19
 y 25
-elevation 5537
 end
-arch mountain
+arch cobblestones
 x 19
 y 26
-elevation 5169
 end
 arch mountain
 x 19
@@ -5010,7 +4919,6 @@ elevation 6005
 end
 arch steppe
 x 20
-y 0
 elevation 4725
 end
 arch mountain
@@ -5138,15 +5046,13 @@ x 20
 y 25
 elevation 4646
 end
-arch hills
+arch cobblestones
 x 20
 y 26
-elevation 3961
 end
-arch hills
+arch cobblestones
 x 20
 y 27
-elevation 3814
 end
 arch mountain
 x 20
@@ -5260,7 +5166,6 @@ elevation 6768
 end
 arch mountain
 x 21
-y 0
 elevation 5857
 end
 arch mountain
@@ -5393,15 +5298,13 @@ x 21
 y 26
 elevation 2402
 end
-arch hills
+arch cobblestones
 x 21
 y 27
-elevation 4160
 end
-arch mountain
+arch cobblestones
 x 21
 y 28
-elevation 6446
 end
 arch mountain
 x 21
@@ -5510,7 +5413,6 @@ elevation 7182
 end
 arch mountain
 x 22
-y 0
 elevation 5437
 end
 arch mountain
@@ -5648,50 +5550,41 @@ x 22
 y 27
 elevation 5115
 end
-arch mountain
+arch cobblestones
 x 22
 y 28
-elevation 6923
 end
-arch mountain
+arch cobblestones
 x 22
 y 29
-elevation 8725
 end
-arch mountain2
+arch cobblestones
 x 22
 y 30
-elevation 10099
 end
-arch mountain2
+arch cobblestones
 x 22
 y 31
-elevation 9899
 end
-arch mountain2
+arch cobblestones
 x 22
 y 32
-elevation 10695
 end
-arch mountain2
+arch cobblestones
 x 22
 y 33
-elevation 10492
 end
-arch mountain2
+arch cobblestones
 x 22
 y 34
-elevation 10004
 end
-arch mountain2
+arch cobblestones
 x 22
 y 35
-elevation 9534
 end
-arch mountain
+arch cobblestones
 x 22
 y 36
-elevation 8299
 end
 arch mountain
 x 22
@@ -5760,7 +5653,6 @@ elevation 6285
 end
 arch mountain
 x 23
-y 0
 elevation 6463
 end
 arch mountain
@@ -5938,15 +5830,13 @@ x 23
 y 35
 elevation 9535
 end
-arch mountain
+arch cobblestones
 x 23
 y 36
-elevation 6922
 end
-arch mountain
+arch cobblestones
 x 23
 y 37
-elevation 5343
 end
 arch mountain
 x 23
@@ -6010,7 +5900,6 @@ elevation 3101
 end
 arch mountain
 x 24
-y 0
 elevation 6171
 end
 arch mountain
@@ -6193,15 +6082,13 @@ x 24
 y 36
 elevation 10290
 end
-arch mountain2
+arch cobblestones
 x 24
 y 37
-elevation 10036
 end
-arch mountain2
+arch cobblestones
 x 24
 y 38
-elevation 10108
 end
 arch mountain2
 x 24
@@ -6260,7 +6147,6 @@ elevation 4850
 end
 arch mountain
 x 25
-y 0
 elevation 5108
 end
 arch mountain
@@ -6448,15 +6334,13 @@ x 25
 y 37
 elevation 11706
 end
-arch mountain2
+arch cobblestones
 x 25
 y 38
-elevation 10883
 end
-arch mountain2
+arch cobblestones
 x 25
 y 39
-elevation 9801
 end
 arch mountain
 x 25
@@ -6510,7 +6394,6 @@ elevation 3671
 end
 arch hills_rocky
 x 26
-y 0
 elevation 4382
 end
 arch mountain
@@ -6703,15 +6586,13 @@ x 26
 y 38
 elevation 10747
 end
-arch mountain
+arch cobblestones
 x 26
 y 39
-elevation 7610
 end
-arch mountain
+arch cobblestones
 x 26
 y 40
-elevation 5880
 end
 arch mountain
 x 26
@@ -6760,7 +6641,6 @@ elevation 4875
 end
 arch mountain
 x 27
-y 0
 elevation 5600
 end
 arch mountain
@@ -6958,20 +6838,17 @@ x 27
 y 39
 elevation 8940
 end
-arch mountain
+arch cobblestones
 x 27
 y 40
-elevation 7645
 end
-arch mountain
+arch cobblestones
 x 27
 y 41
-elevation 7079
 end
 arch mountain
 x 27
 y 42
-elevation 6826
 end
 arch mountain
 x 27
@@ -7010,7 +6887,6 @@ elevation 5720
 end
 arch mountain
 x 28
-y 0
 elevation 6226
 end
 arch mountain
@@ -7213,15 +7089,13 @@ x 28
 y 40
 elevation 8420
 end
-arch mountain
+arch cobblestones
 x 28
 y 41
-elevation 7612
 end
-arch mountain
+arch cobblestones
 x 28
 y 42
-elevation 5670
 end
 arch mountain
 x 28
@@ -7260,7 +7134,6 @@ elevation 5280
 end
 arch mountain
 x 29
-y 0
 elevation 6594
 end
 arch mountain
@@ -7468,15 +7341,13 @@ x 29
 y 41
 elevation 8225
 end
-arch mountain
+arch cobblestones
 x 29
 y 42
-elevation 6842
 end
-arch mountain
+arch cobblestones
 x 29
 y 43
-elevation 6475
 end
 arch mountain
 x 29
@@ -7510,7 +7381,6 @@ elevation 7853
 end
 arch mountain
 x 30
-y 0
 elevation 6883
 end
 arch mountain
@@ -7723,15 +7593,13 @@ x 30
 y 42
 elevation 7330
 end
-arch mountain
+arch cobblestones
 x 30
 y 43
-elevation 6876
 end
-arch mountain
+arch cobblestones
 x 30
 y 44
-elevation 7700
 end
 arch mountain
 x 30
@@ -7760,7 +7628,6 @@ elevation 9362
 end
 arch mountain
 x 31
-y 0
 elevation 7279
 end
 arch mountain
@@ -7978,10 +7845,9 @@ x 31
 y 43
 elevation 8442
 end
-arch mountain
+arch cobblestones
 x 31
 y 44
-elevation 8297
 end
 arch mountain
 x 31
@@ -8010,7 +7876,6 @@ elevation 9877
 end
 arch mountain
 x 32
-y 0
 elevation 7301
 end
 arch mountain
@@ -8228,10 +8093,9 @@ x 32
 y 43
 elevation 9135
 end
-arch mountain
+arch cobblestones
 x 32
 y 44
-elevation 7080
 end
 arch mountain
 x 32
@@ -8260,7 +8124,6 @@ elevation 9110
 end
 arch mountain
 x 33
-y 0
 elevation 6908
 end
 arch mountain
@@ -8478,10 +8341,9 @@ x 33
 y 43
 elevation 9431
 end
-arch mountain
+arch cobblestones
 x 33
 y 44
-elevation 5400
 end
 arch hills_rocky
 x 33
@@ -8510,7 +8372,6 @@ elevation 7316
 end
 arch mountain
 x 34
-y 0
 elevation 5815
 end
 arch mountain
@@ -8728,10 +8589,9 @@ x 34
 y 43
 elevation 9602
 end
-arch mountain
+arch cobblestones
 x 34
 y 44
-elevation 7354
 end
 arch mountain
 x 34
@@ -8760,7 +8620,6 @@ elevation 5673
 end
 arch mountain
 x 35
-y 0
 elevation 5862
 end
 arch mountain
@@ -8978,10 +8837,9 @@ x 35
 y 43
 elevation 9257
 end
-arch mountain
+arch cobblestones
 x 35
 y 44
-elevation 7749
 end
 arch mountain
 x 35
@@ -9010,7 +8868,6 @@ elevation 6848
 end
 arch mountain
 x 36
-y 0
 elevation 5479
 end
 arch mountain
@@ -9228,10 +9085,9 @@ x 36
 y 43
 elevation 8348
 end
-arch mountain
+arch cobblestones
 x 36
 y 44
-elevation 5444
 end
 arch mountain
 x 36
@@ -9260,7 +9116,6 @@ elevation 6705
 end
 arch hills_rocky
 x 37
-y 0
 elevation 4238
 end
 arch mountain
@@ -9478,10 +9333,9 @@ x 37
 y 43
 elevation 7001
 end
-arch mountain
+arch cobblestones
 x 37
 y 44
-elevation 5829
 end
 arch hills
 x 37
@@ -9510,7 +9364,6 @@ elevation 5142
 end
 arch hills
 x 38
-y 0
 elevation 4872
 end
 arch mountain
@@ -9728,15 +9581,13 @@ x 38
 y 43
 elevation 5953
 end
-arch hills
+arch cobblestones
 x 38
 y 44
-elevation 3988
 end
-arch hills
+arch cobblestones
 x 38
 y 45
-elevation 3453
 end
 arch brush
 x 38
@@ -9760,7 +9611,6 @@ elevation 4237
 end
 arch hills
 x 39
-y 0
 elevation 4242
 end
 arch mountain
@@ -9983,20 +9833,17 @@ x 39
 y 44
 elevation 4644
 end
-arch hills_rocky
+arch cobblestones
 x 39
 y 45
-elevation 3291
+end
+arch cobblestones
+x 39
+y 46
 end
 arch hills_rocky
 x 39
-y 46
-elevation 1550
-end
-arch woods_2
-x 39
 y 47
-elevation 1821
 end
 arch hills_rocky
 x 39
@@ -10010,7 +9857,6 @@ elevation 2993
 end
 arch hills_rocky
 x 40
-y 0
 elevation 3632
 end
 arch hills_rocky
@@ -10238,15 +10084,13 @@ x 40
 y 45
 elevation 3895
 end
-arch hills_rocky
+arch cobblestones
 x 40
 y 46
-elevation 2079
 end
-arch hills_rocky
+arch cobblestones
 x 40
 y 47
-elevation 1855
 end
 arch hills_rocky
 x 40
@@ -10260,7 +10104,6 @@ elevation 2817
 end
 arch mountain
 x 41
-y 0
 elevation 5211
 end
 arch hills
@@ -10493,15 +10336,13 @@ x 41
 y 46
 elevation 3245
 end
-arch hills_rocky
+arch cobblestones
 x 41
 y 47
-elevation 2004
 end
-arch hills_rocky
+arch cobblestones
 x 41
 y 48
-elevation 1264
 end
 arch hills_rocky
 x 41
@@ -10510,7 +10351,6 @@ elevation 2852
 end
 arch mountain
 x 42
-y 0
 elevation 6148
 end
 arch mountain
@@ -10748,19 +10588,16 @@ x 42
 y 47
 elevation 372
 end
-arch hills_rocky
+arch cobblestones
 x 42
 y 48
-elevation 1250
 end
-arch woods_2
+arch cobblestones
 x 42
 y 49
-elevation 2869
 end
 arch mountain
 x 43
-y 0
 elevation 6924
 end
 arch mountain
@@ -11003,14 +10840,12 @@ x 43
 y 48
 elevation 2309
 end
-arch hills_rocky
+arch cobblestones
 x 43
 y 49
-elevation 2626
 end
 arch mountain
 x 44
-y 0
 elevation 7441
 end
 arch mountain
@@ -11260,7 +11095,6 @@ elevation 2600
 end
 arch mountain
 x 45
-y 0
 elevation 7336
 end
 arch mountain
@@ -11510,7 +11344,6 @@ elevation 2468
 end
 arch mountain
 x 46
-y 0
 elevation 6189
 end
 arch mountain
@@ -11760,7 +11593,6 @@ elevation 1780
 end
 arch mountain
 x 47
-y 0
 elevation 5179
 end
 arch mountain
@@ -12010,7 +11842,6 @@ elevation 1237
 end
 arch steppe
 x 48
-y 0
 elevation 4926
 end
 arch hills_rocky
@@ -12260,7 +12091,6 @@ elevation 2205
 end
 arch mountain
 x 49
-y 0
 elevation 5149
 end
 arch hills_rocky
