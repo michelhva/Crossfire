@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 06:07:03 1995
 endmsg
-x 37
-y 20
+width 37
+height 20
 end
 arch flagstone
 end
@@ -1650,6 +1650,13 @@ arch cwall_2_1_2
 x 16
 y 17
 end
+arch check_floor
+slaying nine
+last_sp 0
+connected 999
+x 16
+y 18
+end
 arch flagstone
 x 16
 y 18
@@ -1657,6 +1664,16 @@ end
 arch potion_magic
 x 16
 y 18
+end
+arch magic_mouth
+msg
+You get a strange feeling that a key is mising...
+endmsg
+connected 999
+walk_on 0
+fly_on 0
+x 16
+y 19
 end
 arch flagstone
 x 16
@@ -1743,6 +1760,12 @@ end
 arch cwall_2_1_2
 x 17
 y 17
+end
+arch check_floor
+slaying nine
+no_pass 1
+x 17
+y 18
 end
 arch flagstone
 x 17
@@ -3602,9 +3625,9 @@ y 19
 end
 arch big_wiz
 name Grey Wizard
+carrying 100
 x 2
 y 7
-carrying 100
 arch key2
 name Number 4
 slaying four
@@ -3612,9 +3635,9 @@ end
 end
 arch big_wiz
 name Grey Wizard
+carrying 100
 x 3
 y 11
-carrying 100
 arch key2
 name Number 5
 slaying five
@@ -3622,9 +3645,9 @@ end
 end
 arch big_wiz
 name White Wizard
+carrying 100
 x 5
 y 3
-carrying 100
 arch key2
 name Number 3
 slaying three
@@ -3632,9 +3655,9 @@ end
 end
 arch big_wiz
 name Grey Wizard
+carrying 100
 x 6
 y 14
-carrying 100
 arch key2
 name Number 6
 slaying six
@@ -3642,9 +3665,9 @@ end
 end
 arch big_wiz
 name White Wizard
+carrying 100
 x 9
 y 2
-carrying 100
 arch key2
 name Number 2
 slaying two
@@ -3652,9 +3675,9 @@ end
 end
 arch big_wiz
 name Black Wizard
+carrying 100
 x 10
 y 14
-carrying 100
 arch key2
 name Number 7
 slaying seven
@@ -3662,9 +3685,9 @@ end
 end
 arch big_wiz
 name White Wizard
+carrying 100
 x 13
 y 3
-carrying 100
 arch key2
 name Number 1
 slaying one
@@ -3672,9 +3695,9 @@ end
 end
 arch big_wiz
 name Black Wizard
+carrying 100
 x 13
 y 11
-carrying 100
 arch key2
 name Number 8
 slaying eight
@@ -3682,9 +3705,9 @@ end
 end
 arch big_wiz
 name Black Wizard
+carrying 100
 x 15
 y 7
-carrying 100
 arch key2
 name Number 9
 slaying nine
@@ -3695,18 +3718,18 @@ name Grand Master
 hp 32500
 sp 2000
 maxsp 2000
-x 28
-y 7
 level 30
 carrying 200
+x 28
+y 7
 arch key2
 name Golden Bug
-slaying gbug
 face ant.111
+slaying gbug
 end
 arch key2
 name a strange smelling flower
-slaying gmaster
 face flowers.111
+slaying gmaster
 end
 end

@@ -5,8 +5,8 @@ Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Thu Mar 23 07:55:49 1995
 endmsg
-x 36
-y 28
+width 36
+height 28
 end
 arch rough_wall_2_2_2
 end
@@ -1139,9 +1139,9 @@ x 7
 y 26
 end
 arch baby_dragon
+speed_left -0.900000
 x 7
 y 26
-speed_left -0.900000
 end
 arch jungle_2
 x 7
@@ -1275,9 +1275,9 @@ x 8
 y 24
 end
 arch baby_dragon
+speed_left -0.900000
 x 8
 y 24
-speed_left -0.900000
 end
 arch grass
 x 8
@@ -1427,9 +1427,9 @@ x 9
 y 24
 end
 arch baby_dragon
+speed_left -0.900000
 x 9
 y 24
-speed_left -0.900000
 end
 arch grass
 x 9
@@ -2457,9 +2457,9 @@ x 16
 y 24
 end
 arch baby_dragon
+speed_left -0.900000
 x 16
 y 24
-speed_left -0.900000
 end
 arch grass
 x 16
@@ -2719,10 +2719,10 @@ y 19
 end
 arch stair_3_down
 name stalagmite pillar going down
-slaying snakepit_2
 face cave21.111
-hp 17
-sp 15
+slaying snakepit_2
+hp 18
+sp 27
 x 18
 y 19
 end
@@ -3656,9 +3656,9 @@ y 15
 end
 arch rough_wall_2_1_1
 name low wall
+no_pass 0
 x 24
 y 16
-no_pass 0
 end
 arch rough_wall_3_2
 x 24
@@ -4003,9 +4003,9 @@ x 26
 y 24
 end
 arch baby_dragon
+speed_left -0.900000
 x 26
 y 24
-speed_left -0.900000
 end
 arch grass
 x 26
@@ -4040,9 +4040,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 27
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 27
@@ -4185,9 +4185,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 28
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4223,9 +4223,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 28
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4332,9 +4332,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 29
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 29
@@ -4370,9 +4370,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 29
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 29
@@ -4479,9 +4479,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 30
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 30
@@ -4517,9 +4517,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 30
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 30
@@ -4618,9 +4618,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 31
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 31
@@ -4656,9 +4656,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 31
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 31
@@ -4765,9 +4765,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 32
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 32
@@ -4803,9 +4803,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 32
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 32
@@ -4868,9 +4868,9 @@ x 32
 y 23
 end
 arch baby_dragon
-x 32
-y 23
 speed_left -0.900000
+x 32
+y 23
 end
 arch grass
 x 32
@@ -4909,9 +4909,9 @@ y 3
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 33
 y 4
-no_pass 0
 end
 arch dungeon_floor
 x 33
@@ -4947,9 +4947,9 @@ y 12
 end
 arch rough_wall_2_1_2
 name low wall
+no_pass 0
 x 33
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 33
@@ -5282,11 +5282,11 @@ exp 200000
 dam 30
 wc -25
 ac -11
-x 7
-y 4
 speed -0.500000
 level 20
 carrying 25000
+x 7
+y 4
 arch spell_mass_confusion
 end
 arch dragon_scale

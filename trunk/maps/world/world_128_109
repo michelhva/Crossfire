@@ -6480,6 +6480,17 @@ elevation 1408
 x 26
 y 37
 end
+arch hut
+name lonely hut
+msg
+You see an angry motionless man at the back of the garden
+endmsg
+slaying /wolfsburg/hut/hut
+hp 2
+sp 17
+x 26
+y 37
+end
 arch woods_3
 elevation 1469
 x 26
