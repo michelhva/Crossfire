@@ -57,7 +57,7 @@ if text[0] == 'seen':
 
 elif text[0] == 'help': 
     if isDM:
-        message = "How can I help you? Here is a quick list of commands:\nseen, muzzlestatus, muzzlecount, lastmuzzle, kickcount, lastkick"
+        message = "How can I help you? Here is a quick list of commands:\nseen, info, muzzlecount, lastmuzzle, kickcount, lastkick"
     else:
         message = "I have seen just about everybody - go ahead and ask me."
         
@@ -101,6 +101,15 @@ elif text[0] == 'lastkick' and isDM:
     else:
         message = 'Usage "lastkick <player>"'
 
+elif text[0] == 'info' and isDM:
+    if len(text)==2:
+        record = log.info(text[1])
+        if record:
+            message = "%s" % (record)
+        else:
+            message = "I have no knowledge of '%s'." % text[1]
+    else:
+        message = 'Usage "info <player>"'
 else:
     message = "Do you need help?"
 
