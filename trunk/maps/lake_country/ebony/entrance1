@@ -1032,12 +1032,7 @@ end
 arch cobblestones
 x 7
 end
-arch button_plate
-connected 11
-x 7
-end
 arch dun2
-no_pass 0
 x 7
 end
 arch cobblestones
@@ -1198,13 +1193,8 @@ end
 arch cobblestones
 x 8
 end
-arch spikes_open
-speed 0.500000
-value 1
-connected 10
-x 8
-end
-arch boulder
+arch button_plate
+connected 11
 x 8
 end
 arch dun2
@@ -1397,7 +1387,18 @@ end
 arch cobblestones
 x 9
 end
+arch spikes_open
+speed 0.500000
+value 1
+connected 10
+x 9
+end
 arch dun2
+no_pass 0
+x 9
+end
+arch boulder
+invisible 1
 x 9
 end
 arch cobblestones
