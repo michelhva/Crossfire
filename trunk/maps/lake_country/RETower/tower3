@@ -2721,6 +2721,7 @@ arch statue
 name Dark panther
 face panther.131
 no_pass 0
+msg
 @match push|how|get
 If you have the dust I requested, I
 won't push you back.
@@ -2739,6 +2740,7 @@ I will give you a prize.
 @match *
 Hello. Finish the training and you may
 get a prize
+endmsg
 x 13
 y 15
 end
