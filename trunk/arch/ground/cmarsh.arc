@@ -12,4 +12,6 @@ slow_move 20
 is_wooded 0
 editable 8
 is_floor 1
+smoothface cmarsh.111 empty_S.111
+smoothlevel 8
 end
