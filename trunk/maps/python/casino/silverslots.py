@@ -3,7 +3,7 @@
 
 import CFPython
 import sys
-sys.path.append('/usr/local/CF/share/crossfire/maps/python')
+sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
 import CFGamble
 
 activator=CFPython.WhoIsActivator()

@@ -237,7 +237,7 @@ Drop a platinum coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/platinumslots.py
+event_apply /python/casino/platinumslots.py
 x 1
 y 8
 end
@@ -263,7 +263,7 @@ msg
 Drop a gold coin to play.
 endmsg
 event_apply_plugin Python
-event_apply /unlinked/casino/goldslots.py
+event_apply /python/casino/goldslots.py
 title Slot
 x 1
 y 10
@@ -291,7 +291,7 @@ Drop a silver coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/silverslots.py
+event_apply /python/casino/silverslots.py
 x 1
 y 12
 end
@@ -417,7 +417,7 @@ Drop a platinum coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/platinumslots.py
+event_apply /python/casino/platinumslots.py
 x 2
 y 8
 end
@@ -444,7 +444,7 @@ Drop a gold coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/goldslots.py
+event_apply /python/casino/goldslots.py
 x 2
 y 10
 end
@@ -471,7 +471,7 @@ Drop a silver coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/silverslots.py
+event_apply /python/casino/silverslots.py
 x 2
 y 12
 end
@@ -597,7 +597,7 @@ Drop a platinum coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/platinumslots.py
+event_apply /python/casino/platinumslots.py
 x 3
 y 8
 end
@@ -624,7 +624,7 @@ Drop a gold coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/goldslots.py
+event_apply /python/casino/goldslots.py
 x 3
 y 10
 end
@@ -651,7 +651,7 @@ Drop a silver coin to play.
 endmsg
 title Slot
 event_apply_plugin Python
-event_apply /unlinked/casino/silverslots.py
+event_apply /python/casino/silverslots.py
 x 3
 y 12
 end
