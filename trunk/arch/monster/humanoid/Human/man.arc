@@ -25,7 +25,7 @@ dam 2
 hp 18
 maxhp 18
 exp 25
-speed 0.15
+speed -0.15
 weight 50000
 level 3
 will_apply 2
