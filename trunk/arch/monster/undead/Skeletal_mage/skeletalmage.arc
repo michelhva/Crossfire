@@ -29,13 +29,13 @@ Int 3
 Con 2
 can_cast_spell 1
 can_use_wand 1
-level 6
+level 7
 speed 0.1
 exp 400
 weight 14000
 attacktype 17
 resist_fire -20
-resist_cold 45
+resist_cold 85
 resist_fear 100
 resist_paralyze 50
 resist_poison 100
