@@ -15,11 +15,11 @@ tile_path_2 world_112_116
 tile_path_3 world_111_117
 tile_path_4 world_110_116
 end
-arch hills_rocky
-elevation 3518
+arch evergreen
+elevation 2674
 end
-arch woods_2
-elevation 2708
+arch evergreen
+elevation 2426
 y 1
 end
 arch evergreen
@@ -192,11 +192,12 @@ arch jungle_1
 elevation 1260
 y 49
 end
-arch evergreens
+arch evergreen
+elevation 2674
 x 1
 end
-arch hills_rocky
-elevation 1980
+arch evergreen
+elevation 2426
 x 1
 y 1
 end
