@@ -278,6 +278,13 @@ x 1
 y 7
 end
 arch s_shop1
+name Imperial Post
+msg
+!Ding
+endmsg
+slaying /navar_city/IPO_navar
+hp 5
+sp 8
 x 1
 y 7
 end
