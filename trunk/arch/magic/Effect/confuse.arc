@@ -1,6 +1,9 @@
 Object confuse
 name madness
 type 88
+level 1
+walk_on 1
+fly_on 1
 face confusion.111
 anim
 confusion.111

@@ -1,5 +1,7 @@
 Object lava
 type 88
+level 1
+walk_on 1
 wc -30
 food 1
 name lava
@@ -23,6 +25,8 @@ editable 8
 end
 Object permanent_lava
 type 88
+level 1
+walk_on 1
 wc -30
 lifesave 1
 name lava

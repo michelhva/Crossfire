@@ -1,6 +1,9 @@
 Object chaos_ball
 name chaos
 type 88
+level 1
+walk_on 1
+fly_on 1
 wc -30
 lifesave 1
 face ball_lightning.111

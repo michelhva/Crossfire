@@ -6,9 +6,9 @@ face pedestal.112
 anim
 pedestal.112
 pedestal.111
-pedestal.112
 mina
-speed 0.05
+is_animated 0
+exp 30
 no_pick 1
 walk_on 1
 walk_off 1

@@ -1,6 +1,9 @@
 Object turn_undead
 name fear
 type 88
+level 1
+walk_on 1
+fly_on 1
 face turnundead.111
 anim
 turnundead.111

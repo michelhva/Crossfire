@@ -1,5 +1,8 @@
 Object fear
 type 88
+level 1
+walk_on 1
+fly_on 1
 face fear.111
 anim
 fear.111

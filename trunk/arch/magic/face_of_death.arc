@@ -1,6 +1,9 @@
 Object face_of_death
 name deathstrike
 type 88
+level 1
+walk_on 1
+fly_on 1
 face face_of_death.111
 speed 1
 attacktype 131072

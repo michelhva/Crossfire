@@ -1,6 +1,9 @@
 Object color_spray
 name color spray
 type 88
+level 1
+walk_on 1
+fly_on 1
 face confusion.111
 anim
 explosion.111

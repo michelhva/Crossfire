@@ -1,5 +1,6 @@
 Object thorns
 type 88
+level 1
 wc -1
 food 1
 name thorns
