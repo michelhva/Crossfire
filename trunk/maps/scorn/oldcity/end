@@ -1,75 +1,87 @@
 arch map
 name end
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Tue Oct 19 23:24:28 1993
 endmsg
-x 29
-y 40
+width 29
+height 40
+tile_path_4 oldcity3
 end
-arch cobblestones2
+arch dungeon_magic
 end
-arch rough_wall_2_2_2
+arch sea
+name stream
 end
-arch cobblestones2
+arch dungeon_magic
 y 1
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 1
 end
-arch cobblestones2
+arch dungeon_magic
 y 2
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 2
 end
-arch cobblestones2
+arch dungeon_magic
 y 3
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 3
 end
-arch cobblestones2
+arch dungeon_magic
 y 4
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 4
 end
-arch cobblestones2
+arch dungeon_magic
 y 5
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 5
 end
-arch cobblestones2
+arch dungeon_magic
 y 6
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 6
 end
-arch cobblestones2
+arch dungeon_magic
 y 7
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 7
 end
-arch cobblestones2
+arch dungeon_magic
 y 8
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 8
 end
-arch cobblestones2
+arch dungeon_magic
 y 9
 end
-arch rough_wall_2_1_1
+arch sea
+name stream
 y 9
 end
-arch cobblestones2
+arch dungeon_magic
 y 10
 end
-arch rough_wall_2_2_1
+arch sea
+name stream
 y 10
 end
 arch dungeon_magic
@@ -77,3407 +89,3724 @@ y 11
 end
 arch sea
 name stream
+y 11
+end
+arch dungeon_magic
+y 12
+end
+arch sea
+name stream
+y 12
+end
+arch dungeon_magic
+y 13
+end
+arch sea
+name stream
+y 13
+end
+arch dungeon_magic
+y 14
+end
+arch sea
+name stream
+y 14
+end
+arch dungeon_magic
+y 15
+end
+arch sea
+name stream
+y 15
+end
+arch dungeon_magic
+y 16
+end
+arch sea
+name stream
+y 16
+end
+arch dungeon_magic
+y 17
+end
+arch sea
+name stream
+y 17
+end
+arch dungeon_magic
+y 18
+end
+arch sea
+name stream
+y 18
+end
+arch dungeon_magic
+y 19
+end
+arch sea
+name stream
+y 19
+end
+arch dungeon_magic
+y 20
+end
+arch sea
+name stream
+y 20
+end
+arch dungeon_magic
+y 21
+end
+arch sea
+name stream
+y 21
+end
+arch dungeon_magic
+y 22
+end
+arch sea
+name stream
+y 22
+end
+arch woodfloor
+y 23
+end
+arch rock
+y 23
+end
+arch woodfloor
+y 24
+end
+arch rock
+y 24
+end
+arch woodfloor
+y 25
+end
+arch rock
+y 25
+end
+arch woodfloor
+y 26
+end
+arch woodfloor
+y 27
+end
+arch rock
+y 27
+end
+arch woodfloor
+y 28
+end
+arch rock
+y 28
+end
+arch woodfloor
+y 29
+end
+arch rock
+y 29
+end
+arch dungeon_magic
+y 30
+end
+arch sea
+name stream
+y 30
+end
+arch dungeon_magic
+y 31
+end
+arch sea
+name stream
+y 31
+end
+arch dungeon_magic
+y 32
+end
+arch sea
+name stream
+y 32
+end
+arch dungeon_magic
+y 33
+end
+arch sea
+name stream
+y 33
+end
+arch dungeon_magic
+y 34
+end
+arch sea
+name stream
+y 34
+end
+arch dungeon_magic
+y 35
+end
+arch sea
+name stream
+y 35
+end
+arch dungeon_magic
+y 36
+end
+arch sea
+name stream
+y 36
+end
+arch dungeon_magic
+y 37
+end
+arch sea
+name stream
+y 37
+end
+arch dungeon_magic
+y 38
+end
+arch sea
+name stream
+y 38
+end
+arch dungeon_magic
+y 39
+end
+arch sea
+name stream
+y 39
+end
+arch sea
+name stream
+x 1
+end
+arch sea
+name stream
+x 1
+y 1
+end
+arch sea
+name stream
+x 1
+y 2
+end
+arch sea
+name stream
+x 1
+y 3
+end
+arch sea
+name stream
+x 1
+y 4
+end
+arch sea
+name stream
+x 1
+y 5
+end
+arch sea
+name stream
+x 1
+y 6
+end
+arch sea
+name stream
+x 1
+y 7
+end
+arch sea
+name stream
+x 1
+y 8
+end
+arch sea
+name stream
+x 1
+y 9
+end
+arch sea
+name stream
+x 1
+y 10
+end
+arch cave11
+x 1
+y 10
+end
+arch dungeon_magic
+x 1
+y 11
+end
+arch sea
+name stream
+x 1
 y 11
 end
 arch cave14
+x 1
 y 11
 end
 arch sea
 name stream
+x 1
 y 12
 end
 arch sea
 name stream
+x 1
 y 13
 end
 arch sea
 name stream
+x 1
 y 14
 end
 arch sea
 name stream
+x 1
 y 15
 end
 arch sea
 name stream
+x 1
 y 16
 end
 arch sea
 name stream
+x 1
 y 17
 end
-arch sea
-name stream
+arch dungeon_magic
+x 1
 y 18
 end
-arch woodfloor
-y 19
-end
-arch rock
-y 19
-end
-arch woodfloor
-y 20
-end
-arch rock
-y 20
-end
-arch woodfloor
-y 21
-end
-arch rock
-y 21
-end
-arch exit
-slaying oldcity3
-face woodfloor.111
-hp 39
-sp 26
-y 22
-is_animated 0
-end
-arch woodfloor
-y 23
-end
-arch rock
-y 23
-end
-arch woodfloor
-y 24
-end
-arch rock
-y 24
-end
-arch woodfloor
-y 25
-end
-arch rock
-y 25
+arch sea
+name stream
+x 1
+y 18
 end
 arch sea
 name stream
+x 1
+y 19
+end
+arch dungeon_magic
+x 1
+y 20
+end
+arch sea
+name stream
+x 1
+y 20
+end
+arch dungeon_magic
+x 1
+y 21
+end
+arch sea
+name stream
+x 1
+y 21
+end
+arch dungeon_magic
+x 1
+y 22
+end
+arch sea
+name stream
+x 1
+y 22
+end
+arch sea
+name stream
+x 1
+y 23
+end
+arch woodfloor
+x 1
+y 24
+end
+arch rock
+x 1
+y 24
+end
+arch woodfloor
+x 1
+y 25
+end
+arch rock
+x 1
+y 25
+end
+arch woodfloor
+x 1
 y 26
 end
-arch sea
-name stream
+arch woodfloor
+x 1
 y 27
 end
-arch sea
-name stream
+arch rock
+x 1
+y 27
+end
+arch woodfloor
+x 1
 y 28
 end
-arch sea
-name stream
+arch rock
+x 1
+y 28
+end
+arch woodfloor
+x 1
 y 29
 end
-arch sea
-name stream
+arch rock
+x 1
+y 29
+end
+arch dungeon_magic
+x 1
 y 30
 end
 arch sea
 name stream
+x 1
+y 30
+end
+arch dungeon_magic
+x 1
 y 31
 end
 arch sea
 name stream
+x 1
+y 31
+end
+arch sea
+name stream
+x 1
 y 32
 end
 arch sea
 name stream
+x 1
 y 33
 end
 arch sea
 name stream
+x 1
 y 34
 end
 arch sea
 name stream
+x 1
 y 35
 end
 arch sea
 name stream
+x 1
 y 36
 end
 arch sea
 name stream
+x 1
 y 37
 end
 arch sea
 name stream
+x 1
 y 38
 end
 arch sea
 name stream
+x 1
+y 39
+end
+arch sea
+name stream
+x 2
+end
+arch sea
+name stream
+x 2
+y 1
+end
+arch sea
+name stream
+x 2
+y 2
+end
+arch sea
+name stream
+x 2
+y 3
+end
+arch sea
+name stream
+x 2
+y 4
+end
+arch sea
+name stream
+x 2
+y 5
+end
+arch sea
+name stream
+x 2
+y 6
+end
+arch sea
+name stream
+x 2
+y 7
+end
+arch sea
+name stream
+x 2
+y 8
+end
+arch sea
+name stream
+x 2
+y 9
+end
+arch sea
+name stream
+x 2
+y 10
+end
+arch cave2
+x 2
+y 10
+end
+arch dungeon_magic
+x 2
+y 11
+end
+arch pstone_1
+x 2
+y 11
+end
+arch cave4
+x 2
+y 11
+end
+arch pstone_1
+x 2
+y 12
+end
+arch rock
+x 2
+y 12
+end
+arch sea
+name stream
+x 2
+y 13
+end
+arch sea
+name stream
+x 2
+y 14
+end
+arch sea
+name stream
+x 2
+y 15
+end
+arch sea
+name stream
+x 2
+y 16
+end
+arch sea
+name stream
+x 2
+y 17
+end
+arch dungeon_magic
+x 2
+y 18
+end
+arch sea
+name stream
+x 2
+y 18
+end
+arch sea
+name stream
+x 2
+y 19
+end
+arch dungeon_magic
+x 2
+y 20
+end
+arch sea
+name stream
+x 2
+y 20
+end
+arch dungeon_magic
+x 2
+y 21
+end
+arch sea
+name stream
+x 2
+y 21
+end
+arch dungeon_magic
+x 2
+y 22
+end
+arch sea
+name stream
+x 2
+y 22
+end
+arch sea
+name stream
+x 2
+y 23
+end
+arch sea
+name stream
+x 2
+y 24
+end
+arch woodfloor
+x 2
+y 25
+end
+arch rock
+x 2
+y 25
+end
+arch woodfloor
+x 2
+y 26
+end
+arch woodfloor
+x 2
+y 27
+end
+arch rock
+x 2
+y 27
+end
+arch sea
+name stream
+x 2
+y 28
+end
+arch sea
+name stream
+x 2
+y 29
+end
+arch dungeon_magic
+x 2
+y 30
+end
+arch sea
+name stream
+x 2
+y 30
+end
+arch dungeon_magic
+x 2
+y 31
+end
+arch sea
+name stream
+x 2
+y 31
+end
+arch sea
+name stream
+x 2
+y 32
+end
+arch sea
+name stream
+x 2
+y 33
+end
+arch sea
+name stream
+x 2
+y 34
+end
+arch sea
+name stream
+x 2
+y 35
+end
+arch sea
+name stream
+x 2
+y 36
+end
+arch sea
+name stream
+x 2
+y 37
+end
+arch sea
+name stream
+x 2
+y 38
+end
+arch sea
+name stream
+x 2
+y 39
+end
+arch sea
+name stream
+x 3
+end
+arch sea
+name stream
+x 3
+y 1
+end
+arch sea
+name stream
+x 3
+y 2
+end
+arch sea
+name stream
+x 3
+y 3
+end
+arch sea
+name stream
+x 3
+y 4
+end
+arch sea
+name stream
+x 3
+y 5
+end
+arch sea
+name stream
+x 3
+y 6
+end
+arch sea
+name stream
+x 3
+y 7
+end
+arch sea
+name stream
+x 3
+y 8
+end
+arch sea
+name stream
+x 3
+y 9
+end
+arch sea
+name stream
+x 3
+y 10
+end
+arch cave2
+x 3
+y 10
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch pstone_1
+x 3
+y 11
+end
+arch cave4
+x 3
+y 11
+end
+arch pstone_1
+x 3
+y 12
+end
+arch rock
+x 3
+y 12
+end
+arch sea
+name stream
+x 3
+y 13
+end
+arch sea
+name stream
+x 3
+y 14
+end
+arch pstone_1
+x 3
+y 15
+end
+arch rock
+x 3
+y 15
+end
+arch sea
+name stream
+x 3
+y 16
+end
+arch sea
+name stream
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 18
+end
+arch sea
+name stream
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
+y 19
+end
+arch sea
+name stream
+x 3
+y 19
+end
+arch dungeon_magic
+x 3
+y 20
+end
+arch sea
+name stream
+x 3
+y 20
+end
+arch dungeon_magic
+x 3
+y 21
+end
+arch sea
+name stream
+x 3
+y 21
+end
+arch dungeon_magic
+x 3
+y 22
+end
+arch sea
+name stream
+x 3
+y 22
+end
+arch dungeon_magic
+x 3
+y 23
+end
+arch sea
+name stream
+x 3
+y 23
+end
+arch dungeon_magic
+x 3
+y 24
+end
+arch sea
+name stream
+x 3
+y 24
+end
+arch dungeon_magic
+x 3
+y 25
+end
+arch sea
+name stream
+x 3
+y 25
+end
+arch woodfloor
+x 3
+y 26
+end
+arch dungeon_magic
+x 3
+y 27
+end
+arch sea
+name stream
+x 3
+y 27
+end
+arch dungeon_magic
+x 3
+y 28
+end
+arch sea
+name stream
+x 3
+y 28
+end
+arch dungeon_magic
+x 3
+y 29
+end
+arch sea
+name stream
+x 3
+y 29
+end
+arch dungeon_magic
+x 3
+y 30
+end
+arch sea
+name stream
+x 3
+y 30
+end
+arch dungeon_magic
+x 3
+y 31
+end
+arch sea
+name stream
+x 3
+y 31
+end
+arch sea
+name stream
+x 3
+y 32
+end
+arch sea
+name stream
+x 3
+y 33
+end
+arch sea
+name stream
+x 3
+y 34
+end
+arch sea
+name stream
+x 3
+y 35
+end
+arch sea
+name stream
+x 3
+y 36
+end
+arch sea
+name stream
+x 3
+y 37
+end
+arch sea
+name stream
+x 3
+y 38
+end
+arch sea
+name stream
+x 3
+y 39
+end
+arch sea
+name stream
+x 4
+end
+arch cave1
+x 4
+end
+arch sea
+name stream
+x 4
+y 1
+end
+arch cave1
+x 4
+y 1
+end
+arch sea
+name stream
+x 4
+y 2
+end
+arch cave1
+x 4
+y 2
+end
+arch sea
+name stream
+x 4
+y 3
+end
+arch cave1
+x 4
+y 3
+end
+arch sea
+name stream
+x 4
+y 4
+end
+arch cave1
+x 4
+y 4
+end
+arch sea
+name stream
+x 4
+y 5
+end
+arch cave1
+x 4
+y 5
+end
+arch sea
+name stream
+x 4
+y 6
+end
+arch cave1
+x 4
+y 6
+end
+arch sea
+name stream
+x 4
+y 7
+end
+arch cave1
+x 4
+y 7
+end
+arch sea
+name stream
+x 4
+y 8
+end
+arch cave1
+x 4
+y 8
+end
+arch sea
+name stream
+x 4
+y 9
+end
+arch cave1
+x 4
+y 9
+end
+arch sea
+name stream
+x 4
+y 10
+end
+arch cave22
+x 4
+y 10
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch pstone_1
+x 4
+y 11
+end
+arch cave4
+x 4
+y 11
+end
+arch pstone_1
+x 4
+y 12
+end
+arch rock
+x 4
+y 12
+end
+arch pstone_1
+x 4
+y 13
+end
+arch rock
+x 4
+y 13
+end
+arch pstone_1
+x 4
+y 14
+end
+arch rock
+x 4
+y 14
+end
+arch pstone_1
+x 4
+y 15
+end
+arch rock
+x 4
+y 15
+end
+arch pstone_1
+x 4
+y 16
+end
+arch rock
+x 4
+y 16
+end
+arch pstone_1
+x 4
+y 17
+end
+arch rock
+x 4
+y 17
+end
+arch sea
+name stream
+x 4
+y 18
+end
+arch sea
+name stream
+x 4
+y 19
+end
+arch sea
+name stream
+x 4
+y 20
+end
+arch sea
+name stream
+x 4
+y 21
+end
+arch sea
+name stream
+x 4
+y 22
+end
+arch sea
+name stream
+x 4
+y 23
+end
+arch dungeon_magic
+x 4
+y 24
+end
+arch sea
+name stream
+x 4
+y 24
+end
+arch dungeon_magic
+x 4
+y 25
+end
+arch sea
+name stream
+x 4
+y 25
+end
+arch woodfloor
+x 4
+y 26
+end
+arch sea
+name stream
+x 4
+y 27
+end
+arch dungeon_magic
+x 4
+y 28
+end
+arch sea
+name stream
+x 4
+y 28
+end
+arch sea
+name stream
+x 4
+y 29
+end
+arch dungeon_magic
+x 4
+y 30
+end
+arch sea
+name stream
+x 4
+y 30
+end
+arch dungeon_magic
+x 4
+y 31
+end
+arch sea
+name stream
+x 4
+y 31
+end
+arch sea
+name stream
+x 4
+y 32
+end
+arch sea
+name stream
+x 4
+y 33
+end
+arch sea
+name stream
+x 4
+y 34
+end
+arch sea
+name stream
+x 4
+y 35
+end
+arch sea
+name stream
+x 4
+y 36
+end
+arch sea
+name stream
+x 4
+y 37
+end
+arch sea
+name stream
+x 4
+y 38
+end
+arch sea
+name stream
+x 4
+y 39
+end
+arch dungeon_magic
+x 5
+end
+arch blocked
+x 5
+end
+arch dungeon_magic
+x 5
+y 1
+end
+arch blocked
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 2
+end
+arch blocked
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch blocked
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch blocked
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch blocked
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch blocked
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch blocked
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch blocked
+x 5
+y 8
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch blocked
+x 5
+y 8
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch blocked
+x 5
+y 9
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch blocked
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch pstone_1
+x 5
+y 11
+end
+arch cave4
+x 5
+y 11
+end
+arch pstone_1
+x 5
+y 12
+end
+arch rock
+x 5
+y 12
+end
+arch pstone_1
+x 5
+y 13
+end
+arch rock
+x 5
+y 13
+end
+arch pstone_1
+x 5
+y 14
+end
+arch rock
+x 5
+y 14
+end
+arch pstone_1
+x 5
+y 15
+end
+arch rock
+x 5
+y 15
+end
+arch pstone_1
+x 5
+y 16
+end
+arch rock
+x 5
+y 16
+end
+arch pstone_1
+x 5
+y 17
+end
+arch rock
+x 5
+y 17
+end
+arch pstone_1
+x 5
+y 18
+end
+arch rock
+x 5
+y 18
+end
+arch pstone_1
+x 5
+y 19
+end
+arch rock
+x 5
+y 19
+end
+arch pstone_1
+x 5
+y 20
+end
+arch rock
+x 5
+y 20
+end
+arch sea
+name stream
+x 5
+y 21
+end
+arch pstone_1
+x 5
+y 22
+end
+arch rock
+x 5
+y 22
+end
+arch pstone_1
+x 5
+y 23
+end
+arch rock
+x 5
+y 23
+end
+arch pstone_1
+x 5
+y 24
+end
+arch rock
+x 5
+y 24
+end
+arch dungeon_magic
+x 5
+y 25
+end
+arch sea
+name stream
+x 5
+y 25
+end
+arch woodfloor
+x 5
+y 26
+end
+arch dungeon_magic
+x 5
+y 27
+end
+arch sea
+name stream
+x 5
+y 27
+end
+arch dungeon_magic
+x 5
+y 28
+end
+arch sea
+name stream
+x 5
+y 28
+end
+arch sea
+name stream
+x 5
+y 29
+end
+arch dungeon_magic
+x 5
+y 30
+end
+arch sea
+name stream
+x 5
+y 30
+end
+arch dungeon_magic
+x 5
+y 31
+end
+arch sea
+name stream
+x 5
+y 31
+end
+arch sea
+name stream
+x 5
+y 32
+end
+arch sea
+name stream
+x 5
+y 33
+end
+arch sea
+name stream
+x 5
+y 34
+end
+arch sea
+name stream
+x 5
+y 35
+end
+arch sea
+name stream
+x 5
+y 36
+end
+arch sea
+name stream
+x 5
+y 37
+end
+arch sea
+name stream
+x 5
+y 38
+end
+arch sea
+name stream
+x 5
 y 39
 end
 arch cobblestones2
-x 1
+x 6
 end
-arch rough_wall_2_1_2
-x 1
+arch rough_wall_2_2_2
+x 6
 end
 arch cobblestones2
-x 1
+x 6
+y 1
+end
+arch rough_wall_2_1_1
+x 6
+y 1
+end
+arch cobblestones2
+x 6
+y 2
+end
+arch rough_wall_2_1_1
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 3
+end
+arch rough_wall_2_1_1
+x 6
+y 3
+end
+arch cobblestones2
+x 6
+y 4
+end
+arch rough_wall_2_1_1
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch rough_wall_2_1_1
+x 6
+y 5
+end
+arch cobblestones2
+x 6
+y 6
+end
+arch rough_wall_2_1_1
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 7
+end
+arch rough_wall_2_1_1
+x 6
+y 7
+end
+arch cobblestones2
+x 6
+y 8
+end
+arch rough_wall_2_1_1
+x 6
+y 8
+end
+arch cobblestones2
+x 6
+y 9
+end
+arch rough_wall_2_1_1
+x 6
+y 9
+end
+arch cobblestones2
+x 6
+y 10
+end
+arch rough_wall_2_2_1
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch pstone_1
+x 6
+y 11
+end
+arch cave4
+x 6
+y 11
+end
+arch pstone_1
+x 6
+y 12
+end
+arch rock
+x 6
+y 12
+end
+arch pstone_1
+x 6
+y 13
+end
+arch rock
+x 6
+y 13
+end
+arch pstone_1
+x 6
+y 14
+end
+arch rock
+x 6
+y 14
+end
+arch pstone_1
+x 6
+y 15
+end
+arch rock
+x 6
+y 15
+end
+arch pstone_1
+x 6
+y 16
+end
+arch rock
+x 6
+y 16
+end
+arch pstone_1
+x 6
+y 17
+end
+arch rock
+x 6
+y 17
+end
+arch pstone_1
+x 6
+y 18
+end
+arch rock
+x 6
+y 18
+end
+arch pstone_1
+x 6
+y 19
+end
+arch rock
+x 6
+y 19
+end
+arch pstone_1
+x 6
+y 20
+end
+arch rock
+x 6
+y 20
+end
+arch pstone_1
+x 6
+y 21
+end
+arch rock
+x 6
+y 21
+end
+arch pstone_1
+x 6
+y 22
+end
+arch rock
+x 6
+y 22
+end
+arch pstone_1
+x 6
+y 23
+end
+arch rock
+x 6
+y 23
+end
+arch pstone_1
+x 6
+y 24
+end
+arch rock
+x 6
+y 24
+end
+arch dungeon_magic
+x 6
+y 25
+end
+arch pstone_1
+x 6
+y 25
+end
+arch rock
+x 6
+y 25
+end
+arch woodfloor
+x 6
+y 26
+end
+arch dungeon_magic
+x 6
+y 27
+end
+arch pstone_1
+x 6
+y 27
+end
+arch rock
+x 6
+y 27
+end
+arch pstone_1
+x 6
+y 28
+end
+arch rock
+x 6
+y 28
+end
+arch sea
+name stream
+x 6
+y 29
+end
+arch dungeon_magic
+x 6
+y 30
+end
+arch sea
+name stream
+x 6
+y 30
+end
+arch dungeon_magic
+x 6
+y 31
+end
+arch sea
+name stream
+x 6
+y 31
+end
+arch sea
+name stream
+x 6
+y 32
+end
+arch sea
+name stream
+x 6
+y 33
+end
+arch sea
+name stream
+x 6
+y 34
+end
+arch sea
+name stream
+x 6
+y 35
+end
+arch sea
+name stream
+x 6
+y 36
+end
+arch sea
+name stream
+x 6
+y 37
+end
+arch sea
+name stream
+x 6
+y 38
+end
+arch sea
+name stream
+x 6
+y 39
+end
+arch cobblestones2
+x 7
+end
+arch rough_wall_2_1_2
+x 7
+end
+arch cobblestones2
+x 7
 y 1
 end
 arch button_handle
-x 1
-y 1
 connected 5
+x 7
+y 1
 end
 arch cobblestones2
-x 1
+x 7
 y 2
 end
 arch random_wealth
-x 1
+x 7
 y 2
 end
 arch cobblestones2
-x 1
+x 7
 y 3
 end
 arch cobblestones2
-x 1
+x 7
 y 4
 end
 arch cobblestones2
-x 1
+x 7
 y 5
 end
 arch cobblestones2
-x 1
+x 7
 y 6
 end
 arch cobblestones2
-x 1
+x 7
 y 7
 end
 arch cobblestones2
-x 1
+x 7
 y 8
 end
 arch cobblestones2
-x 1
+x 7
 y 9
 end
 arch cobblestones2
-x 1
+x 7
 y 10
 end
 arch rough_wall_2_1_2
-x 1
+x 7
 y 10
 end
 arch dungeon_magic
-x 1
+x 7
 y 11
 end
-arch sea
-name stream
-x 1
+arch pstone_1
+x 7
 y 11
 end
 arch cave4
-x 1
+x 7
 y 11
 end
-arch sea
-name stream
-x 1
+arch pstone_1
+x 7
 y 12
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 12
+end
+arch pstone_1
+x 7
 y 13
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 13
+end
+arch pstone_1
+x 7
 y 14
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 14
+end
+arch pstone_1
+x 7
 y 15
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 15
+end
+arch pstone_1
+x 7
 y 16
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 16
+end
+arch pstone_1
+x 7
 y 17
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 17
+end
+arch pstone_1
+x 7
 y 18
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 18
+end
+arch pstone_1
+x 7
 y 19
 end
-arch woodfloor
-x 1
+arch rock
+x 7
+y 19
+end
+arch pstone_1
+x 7
 y 20
 end
 arch rock
-x 1
+x 7
 y 20
 end
-arch woodfloor
-x 1
+arch pstone_1
+x 7
 y 21
 end
-arch rock
-x 1
-y 21
-end
-arch woodfloor
-x 1
+arch pstone_1
+x 7
 y 22
 end
-arch woodfloor
-x 1
+arch rock
+x 7
+y 22
+end
+arch pstone_1
+x 7
 y 23
 end
 arch rock
-x 1
+x 7
 y 23
 end
-arch woodfloor
-x 1
+arch pstone_1
+x 7
 y 24
 end
 arch rock
-x 1
+x 7
 y 24
 end
-arch woodfloor
-x 1
+arch pstone_1
+x 7
 y 25
 end
-arch rock
-x 1
+arch igate_closed_2
+speed 0.500000
+connected 5
+x 7
 y 25
 end
-arch sea
-name stream
-x 1
+arch pstone_1
+x 7
 y 26
 end
-arch sea
-name stream
-x 1
+arch igate_closed_2
+speed 0.500000
+connected 5
+x 7
+y 26
+end
+arch pstone_1
+x 7
 y 27
 end
-arch sea
-name stream
-x 1
+arch igate_closed_2
+speed 0.500000
+connected 5
+x 7
+y 27
+end
+arch pstone_1
+x 7
 y 28
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 28
+end
+arch pstone_1
+x 7
 y 29
 end
-arch sea
-name stream
-x 1
+arch rock
+x 7
+y 29
+end
+arch dungeon_magic
+x 7
 y 30
 end
 arch sea
 name stream
-x 1
+x 7
+y 30
+end
+arch dungeon_magic
+x 7
 y 31
 end
 arch sea
 name stream
-x 1
+x 7
+y 31
+end
+arch dungeon_magic
+x 7
 y 32
 end
 arch sea
 name stream
-x 1
+x 7
+y 32
+end
+arch dungeon_magic
+x 7
 y 33
 end
 arch sea
 name stream
-x 1
+x 7
+y 33
+end
+arch dungeon_magic
+x 7
 y 34
 end
 arch sea
 name stream
-x 1
+x 7
+y 34
+end
+arch dungeon_magic
+x 7
 y 35
 end
 arch sea
 name stream
-x 1
+x 7
+y 35
+end
+arch dungeon_magic
+x 7
 y 36
 end
 arch sea
 name stream
-x 1
+x 7
+y 36
+end
+arch dungeon_magic
+x 7
 y 37
 end
 arch sea
 name stream
-x 1
+x 7
+y 37
+end
+arch dungeon_magic
+x 7
 y 38
 end
 arch sea
 name stream
-x 1
+x 7
+y 38
+end
+arch dungeon_magic
+x 7
+y 39
+end
+arch sea
+name stream
+x 7
 y 39
 end
 arch cobblestones2
-x 2
+x 8
 end
 arch rough_wall_2_1_2
-x 2
+x 8
 end
 arch cobblestones2
-x 2
+x 8
 y 1
 end
 arch random_wealth
-x 2
+x 8
 y 1
 end
 arch devil
-x 2
+x 8
 y 1
 end
 arch cobblestones2
-x 2
+x 8
 y 2
 end
 arch random_wealth
-x 2
+x 8
 y 2
 end
 arch random_weapon
-x 2
+x 8
 y 2
 end
 arch cobblestones2
-x 2
+x 8
 y 3
 end
 arch cobblestones2
-x 2
+x 8
 y 4
 end
 arch cobblestones2
-x 2
+x 8
 y 5
 end
 arch cobblestones2
-x 2
+x 8
 y 6
 end
 arch cobblestones2
-x 2
+x 8
 y 7
 end
 arch cobblestones2
-x 2
+x 8
 y 8
 end
 arch cobblestones2
-x 2
+x 8
 y 9
 end
 arch cobblestones2
-x 2
+x 8
 y 10
 end
 arch rough_wall_2_1_2
-x 2
+x 8
 y 10
 end
 arch dungeon_magic
-x 2
+x 8
 y 11
 end
 arch pstone_1
-x 2
+x 8
 y 11
 end
 arch cave4
-x 2
+x 8
 y 11
 end
 arch pstone_1
-x 2
+x 8
 y 12
 end
 arch rock
-x 2
+x 8
 y 12
 end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 13
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 13
+end
+arch pstone_1
+x 8
 y 14
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 14
+end
+arch pstone_1
+x 8
 y 15
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 15
+end
+arch pstone_1
+x 8
 y 16
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 16
+end
+arch pstone_1
+x 8
 y 17
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 17
+end
+arch pstone_1
+x 8
 y 18
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 18
+end
+arch pstone_1
+x 8
 y 19
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 19
+end
+arch pstone_1
+x 8
 y 20
 end
-arch woodfloor
-x 2
+arch pstone_1
+x 8
 y 21
 end
-arch rock
-x 2
-y 21
-end
-arch woodfloor
-x 2
+arch pstone_1
+x 8
 y 22
 end
-arch woodfloor
-x 2
+arch pstone_1
+x 8
 y 23
 end
-arch rock
-x 2
-y 23
-end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 24
 end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 25
 end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 26
 end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 27
 end
-arch sea
-name stream
-x 2
+arch pstone_1
+x 8
 y 28
 end
-arch sea
-name stream
-x 2
+arch rock
+x 8
+y 28
+end
+arch pstone_1
+x 8
+y 29
+end
+arch rock
+x 8
 y 29
 end
 arch sea
 name stream
-x 2
+x 8
 y 30
 end
 arch sea
 name stream
-x 2
+x 8
 y 31
 end
 arch sea
 name stream
-x 2
+x 8
 y 32
 end
 arch sea
 name stream
-x 2
+x 8
 y 33
 end
 arch sea
 name stream
-x 2
+x 8
 y 34
 end
 arch sea
 name stream
-x 2
+x 8
 y 35
 end
 arch sea
 name stream
-x 2
+x 8
 y 36
 end
 arch sea
 name stream
-x 2
+x 8
 y 37
 end
 arch sea
 name stream
-x 2
+x 8
 y 38
 end
 arch sea
 name stream
-x 2
+x 8
 y 39
 end
 arch cobblestones2
-x 3
+x 9
 end
 arch rough_wall_2_1_2
-x 3
+x 9
 end
 arch cobblestones2
-x 3
+x 9
 y 1
 end
 arch random_wealth
-x 3
+x 9
 y 1
 end
 arch devil
-x 3
+x 9
 y 1
 end
 arch cobblestones2
-x 3
+x 9
 y 2
 end
 arch random_wealth
-x 3
+x 9
 y 2
 end
 arch cobblestones2
-x 3
+x 9
 y 3
 end
 arch random_shield
-x 3
+x 9
 y 3
 end
 arch cobblestones2
-x 3
+x 9
 y 4
 end
 arch cobblestones2
-x 3
+x 9
 y 5
 end
 arch cobblestones2
-x 3
+x 9
 y 6
 end
 arch cobblestones2
-x 3
+x 9
 y 7
 end
 arch cobblestones2
-x 3
+x 9
 y 8
 end
 arch cobblestones2
-x 3
+x 9
 y 9
 end
 arch cobblestones2
-x 3
+x 9
 y 10
 end
 arch rough_wall_2_1_2
-x 3
+x 9
 y 10
 end
 arch dungeon_magic
-x 3
+x 9
 y 11
 end
 arch pstone_1
-x 3
+x 9
 y 11
 end
 arch cave4
-x 3
+x 9
 y 11
 end
 arch pstone_1
-x 3
+x 9
 y 12
 end
 arch rock
-x 3
+x 9
 y 12
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 13
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 13
+end
+arch pstone_1
+x 9
+y 14
+end
+arch rock
+x 9
 y 14
 end
 arch pstone_1
-x 3
+x 9
 y 15
 end
 arch rock
-x 3
+x 9
 y 15
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 16
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 16
+end
+arch pstone_1
+x 9
 y 17
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 17
+end
+arch pstone_1
+x 9
 y 18
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 18
+end
+arch pstone_1
+x 9
 y 19
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 20
 end
-arch sea
-name stream
-x 3
+arch deathtree
+x 9
+y 20
+end
+arch pstone_1
+x 9
 y 21
 end
-arch woodfloor
-x 3
+arch pstone_1
+x 9
 y 22
 end
-arch sea
-name stream
-x 3
+arch deathtree
+x 9
+y 22
+end
+arch pstone_1
+x 9
 y 23
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 24
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 25
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 26
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 27
 end
-arch sea
-name stream
-x 3
+arch pstone_1
+x 9
 y 28
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 28
+end
+arch pstone_1
+x 9
 y 29
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 29
+end
+arch pstone_1
+x 9
 y 30
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 30
+end
+arch pstone_1
+x 9
 y 31
 end
-arch sea
-name stream
-x 3
+arch rock
+x 9
+y 31
+end
+arch pstone_1
+x 9
+y 32
+end
+arch rock
+x 9
 y 32
 end
 arch sea
 name stream
-x 3
+x 9
 y 33
 end
 arch sea
 name stream
-x 3
+x 9
 y 34
 end
 arch sea
 name stream
-x 3
+x 9
 y 35
 end
 arch sea
 name stream
-x 3
+x 9
 y 36
 end
 arch sea
 name stream
-x 3
+x 9
 y 37
 end
 arch sea
 name stream
-x 3
+x 9
 y 38
 end
 arch sea
 name stream
-x 3
+x 9
 y 39
 end
 arch cobblestones2
-x 4
+x 10
 end
 arch rough_wall_2_1_2
-x 4
+x 10
 end
 arch cobblestones2
-x 4
+x 10
 y 1
 end
 arch random_wealth
-x 4
+x 10
 y 1
 end
 arch random_treasure
-x 4
+x 10
 y 1
 end
 arch devil
-x 4
+x 10
 y 1
 end
 arch cobblestones2
-x 4
+x 10
 y 2
 end
 arch random_wealth
-x 4
+x 10
 y 2
 end
 arch random_weapon
-x 4
+x 10
 y 2
 end
 arch cobblestones2
-x 4
+x 10
 y 3
 end
 arch random_weapon
-x 4
+x 10
 y 3
 end
 arch cobblestones2
-x 4
+x 10
 y 4
 end
 arch cobblestones2
-x 4
+x 10
 y 5
 end
 arch cobblestones2
-x 4
+x 10
 y 6
 end
 arch cobblestones2
-x 4
+x 10
 y 7
 end
 arch cobblestones2
-x 4
+x 10
 y 8
 end
 arch cobblestones2
-x 4
+x 10
 y 9
 end
 arch cobblestones2
-x 4
+x 10
 y 10
 end
 arch rough_wall_2_1_2
-x 4
+x 10
 y 10
 end
 arch dungeon_magic
-x 4
+x 10
 y 11
 end
 arch pstone_1
-x 4
+x 10
 y 11
 end
 arch cave4
-x 4
+x 10
 y 11
 end
 arch pstone_1
-x 4
+x 10
 y 12
 end
 arch rock
-x 4
+x 10
 y 12
 end
 arch pstone_1
-x 4
+x 10
 y 13
 end
 arch rock
-x 4
+x 10
 y 13
 end
 arch pstone_1
-x 4
+x 10
 y 14
 end
 arch rock
-x 4
+x 10
 y 14
 end
 arch pstone_1
-x 4
+x 10
 y 15
 end
 arch rock
-x 4
+x 10
 y 15
 end
 arch pstone_1
-x 4
+x 10
 y 16
 end
 arch rock
-x 4
+x 10
 y 16
 end
 arch pstone_1
-x 4
+x 10
 y 17
 end
 arch rock
-x 4
+x 10
 y 17
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 18
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 19
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 20
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 21
 end
-arch woodfloor
-x 4
+arch pstone_1
+x 10
 y 22
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 23
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 24
 end
-arch sea
-name stream
-x 4
+arch deathtree
+x 10
+y 24
+end
+arch pstone_1
+x 10
 y 25
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 26
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 27
 end
-arch sea
-name stream
-x 4
+arch pstone_1
+x 10
 y 28
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 28
+end
+arch pstone_1
+x 10
 y 29
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 29
+end
+arch pstone_1
+x 10
 y 30
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 30
+end
+arch pstone_1
+x 10
 y 31
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 31
+end
+arch pstone_1
+x 10
 y 32
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 32
+end
+arch pstone_1
+x 10
 y 33
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 33
+end
+arch pstone_1
+x 10
 y 34
 end
-arch sea
-name stream
-x 4
+arch rock
+x 10
+y 34
+end
+arch pstone_1
+x 10
+y 35
+end
+arch rock
+x 10
 y 35
 end
 arch sea
 name stream
-x 4
+x 10
 y 36
 end
 arch sea
 name stream
-x 4
+x 10
 y 37
 end
 arch sea
 name stream
-x 4
+x 10
 y 38
 end
 arch sea
 name stream
-x 4
+x 10
 y 39
 end
 arch cobblestones2
-x 5
+x 11
 end
 arch rough_wall_3_3
-x 5
+x 11
 end
 arch cobblestones2
-x 5
+x 11
 y 1
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 1
 end
 arch cobblestones2
-x 5
+x 11
 y 2
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 2
 end
 arch cobblestones2
-x 5
+x 11
 y 3
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 3
 end
 arch cobblestones2
-x 5
+x 11
 y 4
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 4
 end
 arch cobblestones2
-x 5
+x 11
 y 5
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 5
 end
 arch cobblestones2
-x 5
+x 11
 y 6
 end
 arch rough_wall_2_1_1
-x 5
+x 11
 y 6
 end
 arch cobblestones2
-x 5
+x 11
 y 7
 end
 arch rough_wall_2_2_1
-x 5
+x 11
 y 7
 end
 arch cobblestones2
-x 5
+x 11
 y 8
 end
 arch cobblestones2
-x 5
+x 11
 y 9
 end
 arch cobblestones2
-x 5
+x 11
 y 10
 end
 arch rough_wall_2_1_2
-x 5
+x 11
 y 10
 end
 arch dungeon_magic
-x 5
+x 11
 y 11
 end
 arch pstone_1
-x 5
+x 11
 y 11
 end
 arch cave4
-x 5
+x 11
 y 11
 end
 arch pstone_1
-x 5
+x 11
 y 12
 end
 arch rock
-x 5
+x 11
 y 12
 end
 arch pstone_1
-x 5
+x 11
 y 13
 end
 arch rock
-x 5
+x 11
 y 13
 end
 arch pstone_1
-x 5
+x 11
 y 14
 end
 arch rock
-x 5
+x 11
 y 14
 end
 arch pstone_1
-x 5
+x 11
 y 15
 end
 arch rock
-x 5
+x 11
 y 15
 end
 arch pstone_1
-x 5
+x 11
 y 16
 end
 arch rock
-x 5
+x 11
 y 16
 end
 arch pstone_1
-x 5
-y 17
-end
-arch rock
-x 5
+x 11
 y 17
 end
 arch pstone_1
-x 5
-y 18
-end
-arch rock
-x 5
+x 11
 y 18
 end
 arch pstone_1
-x 5
-y 19
-end
-arch rock
-x 5
+x 11
 y 19
 end
 arch pstone_1
-x 5
+x 11
 y 20
 end
-arch rock
-x 5
-y 20
-end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 21
 end
-arch woodfloor
-x 5
+arch pstone_1
+x 11
 y 22
 end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 23
 end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 24
 end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 25
 end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 26
 end
-arch sea
-name stream
-x 5
+arch pstone_1
+x 11
 y 27
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 27
+end
+arch pstone_1
+x 11
 y 28
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 28
+end
+arch pstone_1
+x 11
 y 29
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 29
+end
+arch pstone_1
+x 11
 y 30
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 30
+end
+arch pstone_1
+x 11
 y 31
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 31
+end
+arch pstone_1
+x 11
 y 32
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 32
+end
+arch pstone_1
+x 11
 y 33
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 33
+end
+arch pstone_1
+x 11
 y 34
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 34
+end
+arch pstone_1
+x 11
 y 35
 end
-arch sea
-name stream
-x 5
+arch rock
+x 11
+y 35
+end
+arch pstone_1
+x 11
+y 36
+end
+arch rock
+x 11
 y 36
 end
 arch sea
 name stream
-x 5
+x 11
 y 37
 end
 arch sea
 name stream
-x 5
+x 11
 y 38
 end
 arch sea
 name stream
-x 5
+x 11
 y 39
 end
 arch cobblestones2
-x 6
+x 12
 end
 arch rough_wall_2_1_2
-x 6
+x 12
 end
 arch cobblestones2
-x 6
+x 12
 y 1
 end
 arch cobblestones2
-x 6
+x 12
 y 2
 end
 arch cobblestones2
-x 6
+x 12
 y 3
 end
 arch cobblestones2
-x 6
+x 12
 y 4
 end
 arch cobblestones2
-x 6
+x 12
 y 5
 end
 arch cobblestones2
-x 6
+x 12
 y 6
 end
 arch cobblestones2
-x 6
+x 12
 y 7
 end
 arch rough_wall_2_1_2
-x 6
+x 12
 y 7
 end
 arch cobblestones2
-x 6
+x 12
 y 8
 end
 arch cobblestones2
-x 6
+x 12
 y 9
 end
 arch cobblestones2
-x 6
+x 12
 y 10
 end
 arch rough_wall_2_1_2
-x 6
+x 12
 y 10
 end
 arch dungeon_magic
-x 6
+x 12
 y 11
 end
 arch pstone_1
-x 6
+x 12
 y 11
 end
 arch cave4
-x 6
+x 12
 y 11
 end
 arch pstone_1
-x 6
+x 12
 y 12
 end
 arch rock
-x 6
+x 12
 y 12
 end
 arch pstone_1
-x 6
+x 12
 y 13
 end
 arch rock
-x 6
+x 12
 y 13
 end
 arch pstone_1
-x 6
+x 12
 y 14
 end
 arch rock
-x 6
+x 12
 y 14
 end
 arch pstone_1
-x 6
+x 12
 y 15
 end
 arch rock
-x 6
+x 12
 y 15
 end
 arch pstone_1
-x 6
+x 12
 y 16
 end
 arch rock
-x 6
+x 12
 y 16
 end
 arch pstone_1
-x 6
-y 17
-end
-arch rock
-x 6
+x 12
 y 17
 end
 arch pstone_1
-x 6
+x 12
 y 18
 end
-arch rock
-x 6
+arch deathtree
+x 12
 y 18
 end
 arch pstone_1
-x 6
-y 19
-end
-arch rock
-x 6
+x 12
 y 19
 end
 arch pstone_1
-x 6
+x 12
 y 20
 end
-arch rock
-x 6
+arch deathtree
+x 12
 y 20
 end
 arch pstone_1
-x 6
+x 12
 y 21
 end
-arch rock
-x 6
-y 21
+arch pstone_1
+x 12
+y 22
 end
-arch woodfloor
-x 6
+arch deathtree
+x 12
 y 22
 end
 arch pstone_1
-x 6
-y 23
-end
-arch rock
-x 6
+x 12
 y 23
 end
 arch pstone_1
-x 6
+x 12
 y 24
 end
-arch rock
-x 6
-y 24
-end
-arch sea
-name stream
-x 6
+arch pstone_1
+x 12
 y 25
 end
-arch sea
-name stream
-x 6
+arch pstone_1
+x 12
 y 26
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 26
+end
+arch pstone_1
+x 12
 y 27
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 27
+end
+arch pstone_1
+x 12
 y 28
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 28
+end
+arch pstone_1
+x 12
 y 29
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 29
+end
+arch pstone_1
+x 12
 y 30
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 30
+end
+arch pstone_1
+x 12
 y 31
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 31
+end
+arch pstone_1
+x 12
 y 32
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 32
+end
+arch pstone_1
+x 12
 y 33
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 33
+end
+arch pstone_1
+x 12
 y 34
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 34
+end
+arch pstone_1
+x 12
 y 35
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 35
+end
+arch pstone_1
+x 12
 y 36
 end
-arch sea
-name stream
-x 6
+arch rock
+x 12
+y 36
+end
+arch pstone_1
+x 12
+y 37
+end
+arch rock
+x 12
 y 37
 end
 arch sea
 name stream
-x 6
+x 12
 y 38
 end
 arch sea
 name stream
-x 6
+x 12
 y 39
 end
 arch cobblestones2
-x 7
+x 13
 end
 arch rough_wall_2_1_2
-x 7
+x 13
 end
 arch cobblestones2
-x 7
+x 13
 y 1
 end
 arch cobblestones2
-x 7
+x 13
 y 2
 end
 arch rough_wall_2_2_2
-x 7
+x 13
 y 2
 end
 arch cobblestones2
-x 7
+x 13
 y 3
 end
 arch rough_wall_2_1_1
-x 7
+x 13
 y 3
 end
 arch cobblestones2
-x 7
+x 13
 y 4
 end
 arch rough_wall_2_1_1
-x 7
+x 13
 y 4
 end
 arch cobblestones2
-x 7
+x 13
 y 5
 end
 arch rough_wall_2_2_1
-x 7
+x 13
 y 5
 end
 arch cobblestones2
-x 7
+x 13
 y 6
 end
 arch cobblestones2
-x 7
+x 13
 y 7
 end
 arch rough_wall_2_1_2
-x 7
+x 13
 y 7
 end
 arch cobblestones2
-x 7
+x 13
 y 8
 end
 arch cobblestones2
-x 7
+x 13
 y 9
 end
 arch cobblestones2
-x 7
+x 13
 y 10
 end
 arch rough_wall_2_1_2
-x 7
+x 13
 y 10
 end
 arch dungeon_magic
-x 7
+x 13
 y 11
 end
 arch pstone_1
-x 7
+x 13
 y 11
 end
 arch cave4
-x 7
+x 13
 y 11
 end
 arch pstone_1
-x 7
+x 13
 y 12
 end
 arch rock
-x 7
+x 13
 y 12
 end
 arch pstone_1
-x 7
+x 13
 y 13
 end
 arch rock
-x 7
+x 13
 y 13
 end
 arch pstone_1
-x 7
+x 13
 y 14
 end
 arch rock
-x 7
+x 13
 y 14
 end
 arch pstone_1
-x 7
+x 13
 y 15
 end
 arch rock
-x 7
+x 13
 y 15
 end
 arch pstone_1
-x 7
+x 13
 y 16
 end
 arch rock
-x 7
+x 13
 y 16
 end
 arch pstone_1
-x 7
-y 17
-end
-arch rock
-x 7
+x 13
 y 17
 end
 arch pstone_1
-x 7
-y 18
-end
-arch rock
-x 7
+x 13
 y 18
 end
 arch pstone_1
-x 7
-y 19
-end
-arch rock
-x 7
+x 13
 y 19
 end
 arch pstone_1
-x 7
-y 20
-end
-arch rock
-x 7
+x 13
 y 20
 end
 arch pstone_1
-x 7
+x 13
 y 21
 end
-arch igate_closed_2
-x 7
-y 21
-speed 0.500000
-connected 5
-end
 arch pstone_1
-x 7
+x 13
 y 22
 end
-arch igate_closed_2
-x 7
-y 22
-speed 0.500000
-connected 5
-end
 arch pstone_1
-x 7
+x 13
 y 23
 end
-arch igate_closed_2
-x 7
-y 23
-speed 0.500000
-connected 5
-end
 arch pstone_1
-x 7
-y 24
-end
-arch rock
-x 7
+x 13
 y 24
 end
 arch pstone_1
-x 7
+x 13
 y 25
 end
-arch sea
-name stream
-x 7
-y 25
-end
-arch sea
-name stream
-x 7
+arch pstone_1
+x 13
 y 26
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 26
+end
+arch pstone_1
+x 13
 y 27
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 27
+end
+arch pstone_1
+x 13
 y 28
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 28
+end
+arch pstone_1
+x 13
 y 29
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 29
+end
+arch pstone_1
+x 13
 y 30
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 30
+end
+arch pstone_1
+x 13
 y 31
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 31
+end
+arch pstone_1
+x 13
 y 32
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 32
+end
+arch pstone_1
+x 13
 y 33
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 33
+end
+arch pstone_1
+x 13
 y 34
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 34
+end
+arch pstone_1
+x 13
 y 35
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 35
+end
+arch pstone_1
+x 13
 y 36
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 36
+end
+arch pstone_1
+x 13
 y 37
 end
-arch sea
-name stream
-x 7
+arch rock
+x 13
+y 37
+end
+arch pstone_1
+x 13
+y 38
+end
+arch rock
+x 13
 y 38
 end
 arch sea
 name stream
-x 7
+x 13
 y 39
 end
 arch cobblestones2
-x 8
+x 14
 end
 arch rough_wall_2_1_2
-x 8
+x 14
 end
 arch cobblestones2
-x 8
+x 14
 y 1
 end
 arch cobblestones2
-x 8
+x 14
 y 2
 end
 arch rough_wall_2_1_2
-x 8
+x 14
 y 2
 end
 arch cobblestones2
-x 8
+x 14
 y 3
 end
 arch cobblestones2
-x 8
+x 14
 y 4
 end
 arch stair_up
 slaying oldcity12
 hp 26
 sp 4
-x 8
-y 4
-end
-arch cobblestones2
-x 8
-y 5
-end
-arch rough_wall_2_1_2
-x 8
-y 5
-end
-arch cobblestones2
-x 8
-y 6
-end
-arch cobblestones2
-x 8
-y 7
-end
-arch rough_wall_2_1_2
-x 8
-y 7
-end
-arch cobblestones2
-x 8
-y 8
-end
-arch cobblestones2
-x 8
-y 9
-end
-arch cobblestones2
-x 8
-y 10
-end
-arch rough_wall_2_1_2
-x 8
-y 10
-end
-arch dungeon_magic
-x 8
-y 11
-end
-arch pstone_1
-x 8
-y 11
-end
-arch cave4
-x 8
-y 11
-end
-arch pstone_1
-x 8
-y 12
-end
-arch rock
-x 8
-y 12
-end
-arch pstone_1
-x 8
-y 13
-end
-arch rock
-x 8
-y 13
-end
-arch pstone_1
-x 8
-y 14
-end
-arch rock
-x 8
-y 14
-end
-arch pstone_1
-x 8
-y 15
-end
-arch rock
-x 8
-y 15
-end
-arch pstone_1
-x 8
-y 16
-end
-arch rock
-x 8
-y 16
-end
-arch pstone_1
-x 8
-y 17
-end
-arch rock
-x 8
-y 17
-end
-arch pstone_1
-x 8
-y 18
-end
-arch rock
-x 8
-y 18
-end
-arch pstone_1
-x 8
-y 19
-end
-arch rock
-x 8
-y 19
-end
-arch pstone_1
-x 8
-y 20
-end
-arch pstone_1
-x 8
-y 21
-end
-arch pstone_1
-x 8
-y 22
-end
-arch pstone_1
-x 8
-y 23
-end
-arch pstone_1
-x 8
-y 24
-end
-arch rock
-x 8
-y 24
-end
-arch pstone_1
-x 8
-y 25
-end
-arch sea
-name stream
-x 8
-y 25
-end
-arch sea
-name stream
-x 8
-y 26
-end
-arch sea
-name stream
-x 8
-y 27
-end
-arch pstone_1
-x 8
-y 28
-end
-arch rock
-x 8
-y 28
-end
-arch sea
-name stream
-x 8
-y 29
-end
-arch sea
-name stream
-x 8
-y 30
-end
-arch sea
-name stream
-x 8
-y 31
-end
-arch sea
-name stream
-x 8
-y 32
-end
-arch sea
-name stream
-x 8
-y 33
-end
-arch sea
-name stream
-x 8
-y 34
-end
-arch sea
-name stream
-x 8
-y 35
-end
-arch sea
-name stream
-x 8
-y 36
-end
-arch sea
-name stream
-x 8
-y 37
-end
-arch sea
-name stream
-x 8
-y 38
-end
-arch sea
-name stream
-x 8
-y 39
-end
-arch cobblestones2
-x 9
-end
-arch rough_wall_2_1_2
-x 9
-end
-arch cobblestones2
-x 9
-y 1
-end
-arch cobblestones2
-x 9
-y 2
-end
-arch rough_wall_2_1_2
-x 9
-y 2
-end
-arch cobblestones2
-x 9
-y 3
-end
-arch cobblestones2
-x 9
-y 4
-end
-arch cobblestones2
-x 9
-y 5
-end
-arch rough_wall_2_1_2
-x 9
-y 5
-end
-arch cobblestones2
-x 9
-y 6
-end
-arch cobblestones2
-x 9
-y 7
-end
-arch rough_wall_2_1_2
-x 9
-y 7
-end
-arch cobblestones2
-x 9
-y 8
-end
-arch cobblestones2
-x 9
-y 9
-end
-arch cobblestones2
-x 9
-y 10
-end
-arch rough_wall_2_1_2
-x 9
-y 10
-end
-arch dungeon_magic
-x 9
-y 11
-end
-arch pstone_1
-x 9
-y 11
-end
-arch cave4
-x 9
-y 11
-end
-arch pstone_1
-x 9
-y 12
-end
-arch rock
-x 9
-y 12
-end
-arch pstone_1
-x 9
-y 13
-end
-arch rock
-x 9
-y 13
-end
-arch pstone_1
-x 9
-y 14
-end
-arch rock
-x 9
-y 14
-end
-arch pstone_1
-x 9
-y 15
-end
-arch rock
-x 9
-y 15
-end
-arch pstone_1
-x 9
-y 16
-end
-arch rock
-x 9
-y 16
-end
-arch pstone_1
-x 9
-y 17
-end
-arch rock
-x 9
-y 17
-end
-arch pstone_1
-x 9
-y 18
-end
-arch rock
-x 9
-y 18
-end
-arch pstone_1
-x 9
-y 19
-end
-arch pstone_1
-x 9
-y 20
-end
-arch deathtree
-x 9
-y 20
-end
-arch pstone_1
-x 9
-y 21
-end
-arch pstone_1
-x 9
-y 22
-end
-arch deathtree
-x 9
-y 22
-end
-arch pstone_1
-x 9
-y 23
-end
-arch pstone_1
-x 9
-y 24
-end
-arch pstone_1
-x 9
-y 25
-end
-arch rock
-x 9
-y 25
-end
-arch sea
-name stream
-x 9
-y 26
-end
-arch pstone_1
-x 9
-y 27
-end
-arch rock
-x 9
-y 27
-end
-arch pstone_1
-x 9
-y 28
-end
-arch rock
-x 9
-y 28
-end
-arch pstone_1
-x 9
-y 29
-end
-arch rock
-x 9
-y 29
-end
-arch pstone_1
-x 9
-y 30
-end
-arch rock
-x 9
-y 30
-end
-arch pstone_1
-x 9
-y 31
-end
-arch rock
-x 9
-y 31
-end
-arch pstone_1
-x 9
-y 32
-end
-arch rock
-x 9
-y 32
-end
-arch sea
-name stream
-x 9
-y 33
-end
-arch sea
-name stream
-x 9
-y 34
-end
-arch sea
-name stream
-x 9
-y 35
-end
-arch sea
-name stream
-x 9
-y 36
-end
-arch sea
-name stream
-x 9
-y 37
-end
-arch sea
-name stream
-x 9
-y 38
-end
-arch sea
-name stream
-x 9
-y 39
-end
-arch cobblestones2
-x 10
-end
-arch rough_wall_2_1_2
-x 10
-end
-arch cobblestones2
-x 10
-y 1
-end
-arch cobblestones2
-x 10
-y 2
-end
-arch rough_wall_2_1_2
-x 10
-y 2
-end
-arch cobblestones2
-x 10
-y 3
-end
-arch cobblestones2
-x 10
-y 4
-end
-arch rough_wall_1_1
-x 10
-y 4
-end
-arch cobblestones2
-x 10
-y 5
-end
-arch rough_wall_2_2_4
-x 10
-y 5
-end
-arch cobblestones2
-x 10
-y 6
-end
-arch cobblestones2
-x 10
-y 7
-end
-arch rough_wall_2_1_2
-x 10
-y 7
-end
-arch cobblestones2
-x 10
-y 8
-end
-arch cobblestones2
-x 10
-y 9
-end
-arch cobblestones2
-x 10
-y 10
-end
-arch rough_wall_2_1_2
-x 10
-y 10
-end
-arch dungeon_magic
-x 10
-y 11
-end
-arch pstone_1
-x 10
-y 11
-end
-arch cave4
-x 10
-y 11
-end
-arch pstone_1
-x 10
-y 12
-end
-arch rock
-x 10
-y 12
-end
-arch pstone_1
-x 10
-y 13
-end
-arch rock
-x 10
-y 13
-end
-arch pstone_1
-x 10
-y 14
-end
-arch rock
-x 10
-y 14
-end
-arch pstone_1
-x 10
-y 15
-end
-arch rock
-x 10
-y 15
-end
-arch pstone_1
-x 10
-y 16
-end
-arch rock
-x 10
-y 16
-end
-arch pstone_1
-x 10
-y 17
-end
-arch rock
-x 10
-y 17
-end
-arch pstone_1
-x 10
-y 18
-end
-arch pstone_1
-x 10
-y 19
-end
-arch pstone_1
-x 10
-y 20
-end
-arch pstone_1
-x 10
-y 21
-end
-arch pstone_1
-x 10
-y 22
-end
-arch pstone_1
-x 10
-y 23
-end
-arch pstone_1
-x 10
-y 24
-end
-arch deathtree
-x 10
-y 24
-end
-arch pstone_1
-x 10
-y 25
-end
-arch pstone_1
-x 10
-y 26
-end
-arch rock
-x 10
-y 26
-end
-arch pstone_1
-x 10
-y 27
-end
-arch rock
-x 10
-y 27
-end
-arch pstone_1
-x 10
-y 28
-end
-arch rock
-x 10
-y 28
-end
-arch pstone_1
-x 10
-y 29
-end
-arch rock
-x 10
-y 29
-end
-arch pstone_1
-x 10
-y 30
-end
-arch rock
-x 10
-y 30
-end
-arch pstone_1
-x 10
-y 31
-end
-arch rock
-x 10
-y 31
-end
-arch pstone_1
-x 10
-y 32
-end
-arch rock
-x 10
-y 32
-end
-arch pstone_1
-x 10
-y 33
-end
-arch rock
-x 10
-y 33
-end
-arch pstone_1
-x 10
-y 34
-end
-arch rock
-x 10
-y 34
-end
-arch pstone_1
-x 10
-y 35
-end
-arch rock
-x 10
-y 35
-end
-arch sea
-name stream
-x 10
-y 36
-end
-arch sea
-name stream
-x 10
-y 37
-end
-arch sea
-name stream
-x 10
-y 38
-end
-arch sea
-name stream
-x 10
-y 39
-end
-arch cobblestones2
-x 11
-end
-arch rough_wall_2_1_2
-x 11
-end
-arch cobblestones2
-x 11
-y 1
-end
-arch cobblestones2
-x 11
-y 2
-end
-arch rough_wall_2_1_2
-x 11
-y 2
-end
-arch cobblestones2
-x 11
-y 3
-end
-arch cobblestones2
-x 11
-y 4
-end
-arch cobblestones2
-x 11
-y 5
-end
-arch cobblestones2
-x 11
-y 6
-end
-arch cobblestones2
-x 11
-y 7
-end
-arch rough_wall_2_1_2
-x 11
-y 7
-end
-arch cobblestones2
-x 11
-y 8
-end
-arch cobblestones2
-x 11
-y 9
-end
-arch cobblestones2
-x 11
-y 10
-end
-arch rough_wall_2_1_2
-x 11
-y 10
-end
-arch dungeon_magic
-x 11
-y 11
-end
-arch pstone_1
-x 11
-y 11
-end
-arch cave4
-x 11
-y 11
-end
-arch pstone_1
-x 11
-y 12
-end
-arch rock
-x 11
-y 12
-end
-arch pstone_1
-x 11
-y 13
-end
-arch rock
-x 11
-y 13
-end
-arch pstone_1
-x 11
-y 14
-end
-arch rock
-x 11
-y 14
-end
-arch pstone_1
-x 11
-y 15
-end
-arch rock
-x 11
-y 15
-end
-arch pstone_1
-x 11
-y 16
-end
-arch rock
-x 11
-y 16
-end
-arch pstone_1
-x 11
-y 17
-end
-arch pstone_1
-x 11
-y 18
-end
-arch pstone_1
-x 11
-y 19
-end
-arch pstone_1
-x 11
-y 20
-end
-arch pstone_1
-x 11
-y 21
-end
-arch pstone_1
-x 11
-y 22
-end
-arch pstone_1
-x 11
-y 23
-end
-arch pstone_1
-x 11
-y 24
-end
-arch pstone_1
-x 11
-y 25
-end
-arch pstone_1
-x 11
-y 26
-end
-arch rock
-x 11
-y 26
-end
-arch pstone_1
-x 11
-y 27
-end
-arch rock
-x 11
-y 27
-end
-arch pstone_1
-x 11
-y 28
-end
-arch rock
-x 11
-y 28
-end
-arch pstone_1
-x 11
-y 29
-end
-arch rock
-x 11
-y 29
-end
-arch pstone_1
-x 11
-y 30
-end
-arch rock
-x 11
-y 30
-end
-arch pstone_1
-x 11
-y 31
-end
-arch rock
-x 11
-y 31
-end
-arch pstone_1
-x 11
-y 32
-end
-arch rock
-x 11
-y 32
-end
-arch pstone_1
-x 11
-y 33
-end
-arch rock
-x 11
-y 33
-end
-arch pstone_1
-x 11
-y 34
-end
-arch rock
-x 11
-y 34
-end
-arch pstone_1
-x 11
-y 35
-end
-arch rock
-x 11
-y 35
-end
-arch pstone_1
-x 11
-y 36
-end
-arch rock
-x 11
-y 36
-end
-arch sea
-name stream
-x 11
-y 37
-end
-arch sea
-name stream
-x 11
-y 38
-end
-arch sea
-name stream
-x 11
-y 39
-end
-arch cobblestones2
-x 12
-end
-arch rough_wall_2_1_2
-x 12
-end
-arch cobblestones2
-x 12
-y 1
-end
-arch cobblestones2
-x 12
-y 2
-end
-arch rough_wall_2_2_3
-x 12
-y 2
-end
-arch cobblestones2
-x 12
-y 3
-end
-arch rough_wall_2_1_1
-x 12
-y 3
-end
-arch cobblestones2
-x 12
-y 4
-end
-arch rough_wall_2_1_1
-x 12
-y 4
-end
-arch cobblestones2
-x 12
-y 5
-end
-arch rough_wall_2_1_1
-x 12
-y 5
-end
-arch cobblestones2
-x 12
-y 6
-end
-arch rough_wall_2_1_1
-x 12
-y 6
-end
-arch cobblestones2
-x 12
-y 7
-end
-arch rough_wall_2_2_4
-x 12
-y 7
-end
-arch cobblestones2
-x 12
-y 8
-end
-arch cobblestones2
-x 12
-y 9
-end
-arch cobblestones2
-x 12
-y 10
-end
-arch rough_wall_2_1_2
-x 12
-y 10
-end
-arch dungeon_magic
-x 12
-y 11
-end
-arch pstone_1
-x 12
-y 11
-end
-arch cave4
-x 12
-y 11
-end
-arch pstone_1
-x 12
-y 12
-end
-arch rock
-x 12
-y 12
-end
-arch pstone_1
-x 12
-y 13
-end
-arch rock
-x 12
-y 13
-end
-arch pstone_1
-x 12
-y 14
-end
-arch rock
-x 12
-y 14
-end
-arch pstone_1
-x 12
-y 15
-end
-arch rock
-x 12
-y 15
-end
-arch pstone_1
-x 12
-y 16
-end
-arch rock
-x 12
-y 16
-end
-arch pstone_1
-x 12
-y 17
-end
-arch pstone_1
-x 12
-y 18
-end
-arch deathtree
-x 12
-y 18
-end
-arch pstone_1
-x 12
-y 19
-end
-arch pstone_1
-x 12
-y 20
-end
-arch deathtree
-x 12
-y 20
-end
-arch pstone_1
-x 12
-y 21
-end
-arch pstone_1
-x 12
-y 22
-end
-arch deathtree
-x 12
-y 22
-end
-arch pstone_1
-x 12
-y 23
-end
-arch pstone_1
-x 12
-y 24
-end
-arch pstone_1
-x 12
-y 25
-end
-arch pstone_1
-x 12
-y 26
-end
-arch rock
-x 12
-y 26
-end
-arch pstone_1
-x 12
-y 27
-end
-arch rock
-x 12
-y 27
-end
-arch pstone_1
-x 12
-y 28
-end
-arch rock
-x 12
-y 28
-end
-arch pstone_1
-x 12
-y 29
-end
-arch rock
-x 12
-y 29
-end
-arch pstone_1
-x 12
-y 30
-end
-arch rock
-x 12
-y 30
-end
-arch pstone_1
-x 12
-y 31
-end
-arch rock
-x 12
-y 31
-end
-arch pstone_1
-x 12
-y 32
-end
-arch rock
-x 12
-y 32
-end
-arch pstone_1
-x 12
-y 33
-end
-arch rock
-x 12
-y 33
-end
-arch pstone_1
-x 12
-y 34
-end
-arch rock
-x 12
-y 34
-end
-arch pstone_1
-x 12
-y 35
-end
-arch rock
-x 12
-y 35
-end
-arch pstone_1
-x 12
-y 36
-end
-arch rock
-x 12
-y 36
-end
-arch pstone_1
-x 12
-y 37
-end
-arch rock
-x 12
-y 37
-end
-arch sea
-name stream
-x 12
-y 38
-end
-arch sea
-name stream
-x 12
-y 39
-end
-arch cobblestones2
-x 13
-end
-arch rough_wall_2_1_2
-x 13
-end
-arch cobblestones2
-x 13
-y 1
-end
-arch cobblestones2
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 3
-end
-arch cobblestones2
-x 13
-y 4
-end
-arch cobblestones2
-x 13
-y 5
-end
-arch cobblestones2
-x 13
-y 6
-end
-arch cobblestones2
-x 13
-y 7
-end
-arch cobblestones2
-x 13
-y 8
-end
-arch cobblestones2
-x 13
-y 9
-end
-arch cobblestones2
-x 13
-y 10
-end
-arch rough_wall_2_1_2
-x 13
-y 10
-end
-arch dungeon_magic
-x 13
-y 11
-end
-arch pstone_1
-x 13
-y 11
-end
-arch cave4
-x 13
-y 11
-end
-arch pstone_1
-x 13
-y 12
-end
-arch rock
-x 13
-y 12
-end
-arch pstone_1
-x 13
-y 13
-end
-arch rock
-x 13
-y 13
-end
-arch pstone_1
-x 13
-y 14
-end
-arch rock
-x 13
-y 14
-end
-arch pstone_1
-x 13
-y 15
-end
-arch rock
-x 13
-y 15
-end
-arch pstone_1
-x 13
-y 16
-end
-arch rock
-x 13
-y 16
-end
-arch pstone_1
-x 13
-y 17
-end
-arch pstone_1
-x 13
-y 18
-end
-arch pstone_1
-x 13
-y 19
-end
-arch pstone_1
-x 13
-y 20
-end
-arch pstone_1
-x 13
-y 21
-end
-arch pstone_1
-x 13
-y 22
-end
-arch pstone_1
-x 13
-y 23
-end
-arch pstone_1
-x 13
-y 24
-end
-arch pstone_1
-x 13
-y 25
-end
-arch pstone_1
-x 13
-y 26
-end
-arch rock
-x 13
-y 26
-end
-arch pstone_1
-x 13
-y 27
-end
-arch rock
-x 13
-y 27
-end
-arch pstone_1
-x 13
-y 28
-end
-arch rock
-x 13
-y 28
-end
-arch pstone_1
-x 13
-y 29
-end
-arch rock
-x 13
-y 29
-end
-arch pstone_1
-x 13
-y 30
-end
-arch rock
-x 13
-y 30
-end
-arch pstone_1
-x 13
-y 31
-end
-arch rock
-x 13
-y 31
-end
-arch pstone_1
-x 13
-y 32
-end
-arch rock
-x 13
-y 32
-end
-arch pstone_1
-x 13
-y 33
-end
-arch rock
-x 13
-y 33
-end
-arch pstone_1
-x 13
-y 34
-end
-arch rock
-x 13
-y 34
-end
-arch pstone_1
-x 13
-y 35
-end
-arch rock
-x 13
-y 35
-end
-arch pstone_1
-x 13
-y 36
-end
-arch rock
-x 13
-y 36
-end
-arch pstone_1
-x 13
-y 37
-end
-arch rock
-x 13
-y 37
-end
-arch pstone_1
-x 13
-y 38
-end
-arch rock
-x 13
-y 38
-end
-arch sea
-name stream
-x 13
-y 39
-end
-arch cobblestones2
-x 14
-end
-arch rough_wall_2_2_3
-x 14
-end
-arch cobblestones2
-x 14
-y 1
-end
-arch rough_wall_2_1_1
-x 14
-y 1
-end
-arch cobblestones2
-x 14
-y 2
-end
-arch rough_wall_2_1_1
-x 14
-y 2
-end
-arch cobblestones2
-x 14
-y 3
-end
-arch rough_wall_2_1_1
-x 14
-y 3
-end
-arch cobblestones2
-x 14
-y 4
-end
-arch rough_wall_2_1_1
 x 14
 y 4
 end
@@ -3485,7 +3814,7 @@ arch cobblestones2
 x 14
 y 5
 end
-arch rough_wall_2_1_1
+arch rough_wall_2_1_2
 x 14
 y 5
 end
@@ -3493,15 +3822,11 @@ arch cobblestones2
 x 14
 y 6
 end
-arch rough_wall_2_1_1
-x 14
-y 6
-end
 arch cobblestones2
 x 14
 y 7
 end
-arch rough_wall_2_1_1
+arch rough_wall_2_1_2
 x 14
 y 7
 end
@@ -3509,15 +3834,7 @@ arch cobblestones2
 x 14
 y 8
 end
-arch rough_wall_2_1_1
-x 14
-y 8
-end
 arch cobblestones2
-x 14
-y 9
-end
-arch rough_wall_2_1_1
 x 14
 y 9
 end
@@ -3525,7 +3842,7 @@ arch cobblestones2
 x 14
 y 10
 end
-arch rough_wall_2_2_4
+arch rough_wall_2_1_2
 x 14
 y 10
 end
@@ -3721,46 +4038,65 @@ arch cave11
 x 14
 y 39
 end
-arch blocked
+arch cobblestones2
 x 15
 end
-arch blocked
+arch rough_wall_2_1_2
+x 15
+end
+arch cobblestones2
 x 15
 y 1
 end
-arch blocked
+arch cobblestones2
 x 15
 y 2
 end
-arch blocked
+arch rough_wall_2_1_2
+x 15
+y 2
+end
+arch cobblestones2
 x 15
 y 3
 end
-arch blocked
+arch cobblestones2
 x 15
 y 4
 end
-arch blocked
+arch cobblestones2
 x 15
 y 5
 end
-arch blocked
+arch rough_wall_2_1_2
+x 15
+y 5
+end
+arch cobblestones2
 x 15
 y 6
 end
-arch blocked
+arch cobblestones2
 x 15
 y 7
 end
-arch blocked
+arch rough_wall_2_1_2
+x 15
+y 7
+end
+arch cobblestones2
 x 15
 y 8
 end
-arch blocked
+arch cobblestones2
 x 15
 y 9
 end
-arch blocked
+arch cobblestones2
+x 15
+y 10
+end
+arch rough_wall_2_1_2
 x 15
 y 10
 end
@@ -3940,46 +4276,69 @@ arch cave2
 x 15
 y 39
 end
-arch blocked
+arch cobblestones2
 x 16
 end
-arch blocked
+arch rough_wall_2_1_2
+x 16
+end
+arch cobblestones2
 x 16
 y 1
 end
-arch blocked
+arch cobblestones2
 x 16
 y 2
 end
-arch blocked
+arch rough_wall_2_1_2
+x 16
+y 2
+end
+arch cobblestones2
 x 16
 y 3
 end
-arch blocked
+arch cobblestones2
 x 16
 y 4
 end
-arch blocked
+arch rough_wall_1_1
+x 16
+y 4
+end
+arch cobblestones2
 x 16
 y 5
 end
-arch blocked
+arch rough_wall_2_2_4
+x 16
+y 5
+end
+arch cobblestones2
 x 16
 y 6
 end
-arch blocked
+arch cobblestones2
 x 16
 y 7
 end
-arch blocked
+arch rough_wall_2_1_2
+x 16
+y 7
+end
+arch cobblestones2
 x 16
 y 8
 end
-arch blocked
+arch cobblestones2
 x 16
 y 9
 end
-arch blocked
+arch cobblestones2
+x 16
+y 10
+end
+arch rough_wall_2_1_2
 x 16
 y 10
 end
@@ -4143,46 +4502,61 @@ arch cave2
 x 16
 y 39
 end
-arch blocked
+arch cobblestones2
 x 17
 end
-arch blocked
+arch rough_wall_2_1_2
+x 17
+end
+arch cobblestones2
 x 17
 y 1
 end
-arch blocked
+arch cobblestones2
 x 17
 y 2
 end
-arch blocked
+arch rough_wall_2_1_2
+x 17
+y 2
+end
+arch cobblestones2
 x 17
 y 3
 end
-arch blocked
+arch cobblestones2
 x 17
 y 4
 end
-arch blocked
+arch cobblestones2
 x 17
 y 5
 end
-arch blocked
+arch cobblestones2
 x 17
 y 6
 end
-arch blocked
+arch cobblestones2
 x 17
 y 7
 end
-arch blocked
+arch rough_wall_2_1_2
+x 17
+y 7
+end
+arch cobblestones2
 x 17
 y 8
 end
-arch blocked
+arch cobblestones2
 x 17
 y 9
 end
-arch blocked
+arch cobblestones2
+x 17
+y 10
+end
+arch rough_wall_2_1_2
 x 17
 y 10
 end
@@ -4346,46 +4720,77 @@ arch cave2
 x 17
 y 39
 end
-arch blocked
+arch cobblestones2
 x 18
 end
-arch blocked
+arch rough_wall_2_1_2
+x 18
+end
+arch cobblestones2
 x 18
 y 1
 end
-arch blocked
+arch cobblestones2
 x 18
 y 2
 end
-arch blocked
+arch rough_wall_2_2_3
+x 18
+y 2
+end
+arch cobblestones2
 x 18
 y 3
 end
-arch blocked
+arch rough_wall_2_1_1
+x 18
+y 3
+end
+arch cobblestones2
 x 18
 y 4
 end
-arch blocked
+arch rough_wall_2_1_1
+x 18
+y 4
+end
+arch cobblestones2
 x 18
 y 5
 end
-arch blocked
+arch rough_wall_2_1_1
+x 18
+y 5
+end
+arch cobblestones2
 x 18
 y 6
 end
-arch blocked
+arch rough_wall_2_1_1
+x 18
+y 6
+end
+arch cobblestones2
 x 18
 y 7
 end
-arch blocked
+arch rough_wall_2_2_4
+x 18
+y 7
+end
+arch cobblestones2
 x 18
 y 8
 end
-arch blocked
+arch cobblestones2
 x 18
 y 9
 end
-arch blocked
+arch cobblestones2
+x 18
+y 10
+end
+arch rough_wall_2_1_2
 x 18
 y 10
 end
@@ -4545,46 +4950,53 @@ arch cave2
 x 18
 y 39
 end
-arch blocked
+arch cobblestones2
 x 19
 end
-arch blocked
+arch rough_wall_2_1_2
+x 19
+end
+arch cobblestones2
 x 19
 y 1
 end
-arch blocked
+arch cobblestones2
 x 19
 y 2
 end
-arch blocked
+arch cobblestones2
 x 19
 y 3
 end
-arch blocked
+arch cobblestones2
 x 19
 y 4
 end
-arch blocked
+arch cobblestones2
 x 19
 y 5
 end
-arch blocked
+arch cobblestones2
 x 19
 y 6
 end
-arch blocked
+arch cobblestones2
 x 19
 y 7
 end
-arch blocked
+arch cobblestones2
 x 19
 y 8
 end
-arch blocked
+arch cobblestones2
 x 19
 y 9
 end
-arch blocked
+arch cobblestones2
+x 19
+y 10
+end
+arch rough_wall_2_1_2
 x 19
 y 10
 end
@@ -4772,46 +5184,89 @@ arch cave2
 x 19
 y 39
 end
-arch blocked
+arch cobblestones2
 x 20
 end
-arch blocked
+arch rough_wall_2_2_3
+x 20
+end
+arch cobblestones2
 x 20
 y 1
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 1
+end
+arch cobblestones2
 x 20
 y 2
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 2
+end
+arch cobblestones2
 x 20
 y 3
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 3
+end
+arch cobblestones2
 x 20
 y 4
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 4
+end
+arch cobblestones2
 x 20
 y 5
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 5
+end
+arch cobblestones2
 x 20
 y 6
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 6
+end
+arch cobblestones2
 x 20
 y 7
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 7
+end
+arch cobblestones2
 x 20
 y 8
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 8
+end
+arch cobblestones2
 x 20
 y 9
 end
-arch blocked
+arch rough_wall_2_1_1
+x 20
+y 9
+end
+arch cobblestones2
+x 20
+y 10
+end
+arch rough_wall_2_2_4
 x 20
 y 10
 end
@@ -6384,8 +6839,6 @@ x 26
 y 20
 end
 arch blocked
-msg
-endmsg
 x 26
 y 20
 end
@@ -6637,8 +7090,6 @@ x 27
 y 20
 end
 arch blocked
-msg
-endmsg
 x 27
 y 20
 end
@@ -6838,8 +7289,6 @@ x 28
 y 16
 end
 arch blocked
-msg
-endmsg
 x 28
 y 16
 end
@@ -6872,8 +7321,6 @@ x 28
 y 20
 end
 arch blocked
-msg
-endmsg
 x 28
 y 20
 end

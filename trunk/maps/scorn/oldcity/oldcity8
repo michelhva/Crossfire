@@ -1,6 +1,11 @@
 arch map
-x 40
-y 40
+name <untitled>
+msg
+
+endmsg
+width 40
+height 40
+tile_path_2 oldcity7
 end
 arch pstone_1
 end
@@ -988,9 +993,9 @@ x 3
 y 19
 end
 arch ant
+speed_left -0.150000
 x 3
 y 19
-speed_left -0.150000
 end
 arch pstone_1
 x 3
@@ -1139,9 +1144,9 @@ x 4
 y 1
 end
 arch spider
+speed_left -2.100000
 x 4
 y 1
-speed_left -2.100000
 end
 arch medium_stones
 x 4
@@ -1550,9 +1555,9 @@ x 5
 y 16
 end
 arch ant
+speed_left -0.150000
 x 5
 y 16
-speed_left -0.150000
 end
 arch medium_stones
 x 5
@@ -1674,10 +1679,10 @@ arch dagger
 name Special Dagger
 face dagger_r.111
 dam 9
-x 5
-y 34
 value 400
 identified 1
+x 5
+y 34
 end
 arch boulder
 x 5
@@ -2144,9 +2149,9 @@ x 7
 y 16
 end
 arch ant
+speed_left -0.200000
 x 7
 y 16
-speed_left -0.200000
 end
 arch pstone_1
 x 7
@@ -2411,9 +2416,9 @@ x 8
 y 14
 end
 arch ant
+speed_left -0.200000
 x 8
 y 14
-speed_left -0.200000
 end
 arch pstone_1
 x 8
@@ -2818,9 +2823,9 @@ x 9
 y 38
 end
 arch spider
+speed_left -2.100000
 x 9
 y 38
-speed_left -2.100000
 end
 arch mine2
 x 9
@@ -4639,9 +4644,9 @@ x 17
 y 19
 end
 arch ogre
+speed_left -0.900000
 x 17
 y 19
-speed_left -0.900000
 end
 arch large_stones
 x 17
@@ -4802,9 +4807,9 @@ x 18
 y 6
 end
 arch goblin
+speed_left -1.100000
 x 18
 y 6
-speed_left -1.100000
 end
 arch cobblestones
 x 18
@@ -4827,9 +4832,9 @@ x 18
 y 9
 end
 arch gnoll
+speed_left -1.100000
 x 18
 y 9
-speed_left -1.100000
 end
 arch large_stones
 x 18
@@ -4880,18 +4885,18 @@ x 18
 y 19
 end
 arch orc
+speed_left -1.600000
 x 18
 y 19
-speed_left -1.600000
 end
 arch large_stones
 x 18
 y 20
 end
 arch orc
+speed_left -1.600000
 x 18
 y 20
-speed_left -1.600000
 end
 arch dungeon_floor
 x 18
@@ -5044,18 +5049,18 @@ x 19
 y 5
 end
 arch goblin
+speed_left -1.100000
 x 19
 y 5
-speed_left -1.100000
 end
 arch large_stones
 x 19
 y 6
 end
 arch gnoll
+speed_left -1.100000
 x 19
 y 6
-speed_left -1.100000
 end
 arch cobblestones
 x 19
@@ -5153,9 +5158,9 @@ x 19
 y 21
 end
 arch orc
+speed_left -1.600000
 x 19
 y 21
-speed_left -1.600000
 end
 arch pstone_1
 x 19
@@ -5320,18 +5325,18 @@ x 20
 y 5
 end
 arch goblin
+speed_left -1.100000
 x 20
 y 5
-speed_left -1.100000
 end
 arch large_stones
 x 20
 y 6
 end
 arch gnoll
+speed_left -1.100000
 x 20
 y 6
-speed_left -1.100000
 end
 arch cobblestones
 x 20
@@ -5354,20 +5359,20 @@ x 20
 y 9
 end
 arch gnoll
+speed_left -1.100000
 x 20
 y 9
-speed_left -1.100000
 end
 arch large_stones
 x 20
 y 10
 end
 arch locked_door1
-slaying scroll
+face ldoor_blue1.111
 msg
 The door does not budge.
 endmsg
-face ldoor_blue1.111
+slaying scroll
 x 20
 y 10
 end
@@ -5420,18 +5425,18 @@ x 20
 y 19
 end
 arch elf_1
+speed_left -2.600000
 x 20
 y 19
-speed_left -2.600000
 end
 arch large_stones
 x 20
 y 20
 end
 arch orc
+speed_left -1.600000
 x 20
 y 20
-speed_left -1.600000
 end
 arch dungeon_floor
 x 20
@@ -5644,9 +5649,9 @@ x 21
 y 19
 end
 arch orc
+speed_left -1.600000
 x 21
 y 19
-speed_left -1.600000
 end
 arch pstone_1
 x 21
@@ -5661,9 +5666,9 @@ x 21
 y 21
 end
 arch elf_1
+speed_left -2.600000
 x 21
 y 21
-speed_left -2.600000
 end
 arch pstone_1
 x 21
@@ -5864,9 +5869,9 @@ x 22
 y 21
 end
 arch elf_1
+speed_left -2.600000
 x 22
 y 21
-speed_left -2.600000
 end
 arch pstone_1
 x 22
@@ -6603,18 +6608,18 @@ x 25
 y 34
 end
 arch madman
+speed_left -0.700000
 x 25
 y 34
-speed_left -0.700000
 end
 arch medium_stones
 x 25
 y 35
 end
 arch madman
+speed_left -0.700000
 x 25
 y 35
-speed_left -0.700000
 end
 arch medium_stones
 x 25
@@ -6843,9 +6848,9 @@ x 26
 y 33
 end
 arch madman
+speed_left -0.700000
 x 26
 y 33
-speed_left -0.700000
 end
 arch medium_stones
 x 26
@@ -8073,9 +8078,9 @@ x 32
 y 8
 end
 arch guard
+speed_left -0.700000
 x 32
 y 8
-speed_left -0.700000
 end
 arch large_stones
 x 32
@@ -8435,9 +8440,9 @@ x 33
 y 33
 end
 arch small_troll
+speed_left -0.700000
 x 33
 y 33
-speed_left -0.700000
 end
 arch cobblestones2
 x 33
@@ -8682,9 +8687,9 @@ x 34
 y 34
 end
 arch small_troll
+speed_left -0.700000
 x 34
 y 34
-speed_left -0.700000
 end
 arch medium_stones
 x 34
@@ -9297,8 +9302,8 @@ x 37
 y 34
 end
 arch key2
-slaying scroll
 face key_blue.111
+slaying scroll
 x 37
 y 34
 end
@@ -9519,58 +9524,70 @@ end
 arch pstone_1
 x 39
 end
-arch mine8
+arch rock
 x 39
 end
-arch mine3
+arch pstone_1
 x 39
 y 1
 end
-arch mine3
+arch rock
+x 39
+y 1
+end
+arch pstone_1
 x 39
 y 2
 end
-arch mine3
+arch boulder
+x 39
+y 2
+end
+arch large_stones
 x 39
 y 3
 end
-arch mine3
+arch boulder
+x 39
+y 3
+end
+arch medium_stones
 x 39
 y 4
 end
-arch mine3
+arch pstone_1
 x 39
 y 5
 end
-arch mine3
+arch medium_stones
 x 39
 y 6
 end
-arch mine3
+arch medium_stones
 x 39
 y 7
 end
-arch mine3
+arch pstone_1
 x 39
 y 8
 end
-arch mine3
+arch medium_stones
 x 39
 y 9
 end
-arch mine3
+arch medium_stones
 x 39
 y 10
 end
-arch mine3
+arch pstone_1
 x 39
 y 11
 end
-arch mine3
+arch pstone_2
 x 39
 y 12
 end
-arch mine3
+arch dungeon_floor
 x 39
 y 13
 end
@@ -9578,115 +9595,103 @@ arch dungeon_floor
 x 39
 y 14
 end
-arch mine5
-x 39
-y 14
-end
-arch exit
-slaying oldcity7
-face dung_floor.111
-sp 15
+arch dungeon_floor
 x 39
 y 15
-is_animated 0
 end
 arch dungeon_floor
 x 39
 y 16
 end
-arch mine8
-x 39
-y 16
-end
-arch mine3
+arch cobblestones2
 x 39
 y 17
 end
-arch mine3
+arch cobblestones2
 x 39
 y 18
 end
-arch mine3
+arch pstone_2
 x 39
 y 19
 end
-arch mine3
+arch medium_stones
 x 39
 y 20
 end
-arch mine3
+arch medium_stones
 x 39
 y 21
 end
-arch mine3
+arch medium_stones
 x 39
 y 22
 end
-arch mine3
+arch medium_stones
 x 39
 y 23
 end
-arch mine3
+arch medium_stones
 x 39
 y 24
 end
-arch mine3
+arch medium_stones
 x 39
 y 25
 end
-arch mine3
+arch medium_stones
 x 39
 y 26
 end
-arch mine3
+arch medium_stones
 x 39
 y 27
 end
-arch mine3
+arch pstone_1
 x 39
 y 28
 end
-arch mine3
+arch medium_stones
 x 39
 y 29
 end
-arch mine3
+arch medium_stones
 x 39
 y 30
 end
-arch mine3
+arch medium_stones
 x 39
 y 31
 end
-arch mine3
+arch medium_stones
 x 39
 y 32
 end
-arch mine3
+arch medium_stones
 x 39
 y 33
 end
-arch mine3
+arch medium_stones
 x 39
 y 34
 end
-arch mine3
+arch pstone_1
 x 39
 y 35
 end
-arch mine3
+arch medium_stones
 x 39
 y 36
 end
-arch mine3
+arch medium_stones
 x 39
 y 37
 end
-arch mine3
+arch medium_stones
 x 39
 y 38
 end
-arch mine12
+arch mine2
 x 39
 y 39
 end

@@ -1,15 +1,19 @@
 arch map
+name <untitled>
 msg
-Creator: skud the great 
-Email: tvangod@ecst.csuchico.edu 
+Creator: skud the great
+Email: tvangod@ecst.csuchico.edu
 Date: Tue Oct  5 12:38:27 1993
 endmsg
-x 20
-y 40
+width 20
+height 40
+tile_path_1 oldcity14
+tile_path_3 oldcity10
+tile_path_4 oldcity13
 end
 arch medium_stones
 end
-arch wwall_2_2_2
+arch wwall_4
 end
 arch medium_stones
 y 1
@@ -41,19 +45,13 @@ end
 arch wwall_1_2
 y 5
 end
-arch exit
-name dirt exit
-slaying oldcity13
-face mediumston.111
-hp 39
-sp 6
+arch medium_stones
 y 6
-is_animated 0
 end
 arch medium_stones
 y 7
 end
-arch wwall_1_1
+arch wwall_2_2_3
 y 7
 end
 arch medium_stones
@@ -239,13 +237,13 @@ end
 arch pstone_2
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 y 38
 end
 arch pstone_2
 y 39
 end
-arch wwall_2_2_2
+arch swall_1_2
 y 39
 end
 arch medium_stones
@@ -267,9 +265,9 @@ x 1
 y 2
 end
 arch generate_kobold
+speed_left -0.220000
 x 1
 y 2
-speed_left -0.220000
 end
 arch medium_stones
 x 1
@@ -300,9 +298,9 @@ x 1
 y 9
 end
 arch generate_kobold
+speed_left -0.220000
 x 1
 y 9
-speed_left -0.220000
 end
 arch medium_stones
 x 1
@@ -496,10 +494,6 @@ arch medium_stones
 x 1
 y 39
 end
-arch wwall_2_1_2
-x 1
-y 39
-end
 arch medium_stones
 x 2
 end
@@ -511,9 +505,9 @@ x 2
 y 1
 end
 arch ogre
+speed_left -0.580000
 x 2
 y 1
-speed_left -0.580000
 end
 arch pstone_2
 x 2
@@ -761,10 +755,6 @@ x 2
 y 38
 end
 arch medium_stones
-x 2
-y 39
-end
-arch wwall_2_1_2
 x 2
 y 39
 end
@@ -1033,10 +1023,6 @@ arch medium_stones
 x 3
 y 39
 end
-arch wwall_2_1_2
-x 3
-y 39
-end
 arch pstone_2
 x 4
 end
@@ -1229,10 +1215,10 @@ y 31
 end
 arch locked_door1
 name Temple Door
-slaying temple
 msg
 Locked
 endmsg
+slaying temple
 x 4
 y 31
 end
@@ -1311,10 +1297,6 @@ arch medium_stones
 x 4
 y 39
 end
-arch wwall_2_2_3
-x 4
-y 39
-end
 arch pstone_2
 x 5
 end
@@ -1334,9 +1316,9 @@ x 5
 y 3
 end
 arch orc
+speed_left -1.000000
 x 5
 y 3
-speed_left -1.000000
 end
 arch medium_stones
 x 5
@@ -1568,14 +1550,9 @@ arch cobblestones2
 x 5
 y 38
 end
-arch exit
-name dirt exit
-slaying oldcity10
-face cobblesto1.111
-hp 5
+arch cobblestones2
 x 5
 y 39
-is_animated 0
 end
 arch pstone_2
 x 6
@@ -1600,9 +1577,9 @@ x 6
 y 3
 end
 arch orc
+speed_left -1.000000
 x 6
 y 3
-speed_left -1.000000
 end
 arch medium_stones
 x 6
@@ -1810,10 +1787,6 @@ arch pstone_2
 x 6
 y 39
 end
-arch wwall_2_2_2
-x 6
-y 39
-end
 arch pstone_2
 x 7
 end
@@ -1833,9 +1806,9 @@ x 7
 y 3
 end
 arch orc
+speed_left -1.000000
 x 7
 y 3
-speed_left -1.000000
 end
 arch pstone_2
 x 7
@@ -1878,9 +1851,9 @@ x 7
 y 10
 end
 arch generate_kobold
+speed_left -0.220000
 x 7
 y 10
-speed_left -0.220000
 end
 arch grass
 x 7
@@ -2034,10 +2007,6 @@ arch pstone_2
 x 7
 y 39
 end
-arch wwall_2_1_2
-x 7
-y 39
-end
 arch pstone_2
 x 8
 end
@@ -2149,9 +2118,6 @@ x 8
 y 16
 end
 arch swall_1_1
-slaying oldcity11
-hp 15
-sp 39
 x 8
 y 16
 end
@@ -2267,18 +2233,8 @@ arch pstone_2
 x 8
 y 39
 end
-arch wwall_2_1_2
-x 8
-y 39
-end
-arch exit
-name dirt exit
-slaying oldcity14
-face mediumston.111
-hp 9
-sp 39
+arch medium_stones
 x 9
-is_animated 0
 end
 arch pstone_2
 x 9
@@ -2497,10 +2453,6 @@ x 9
 y 38
 end
 arch pstone_2
-x 9
-y 39
-end
-arch wwall_2_1_2
 x 9
 y 39
 end
@@ -2731,10 +2683,6 @@ x 10
 y 38
 end
 arch pstone_2
-x 10
-y 39
-end
-arch wwall_2_1_2
 x 10
 y 39
 end
@@ -2960,14 +2908,10 @@ arch pstone_2
 x 11
 y 39
 end
-arch wwall_2_1_2
-x 11
-y 39
-end
 arch pstone_2
 x 12
 end
-arch wwall_2_1_2
+arch wwall_3_1
 x 12
 end
 arch pstone_2
@@ -2983,9 +2927,9 @@ x 12
 y 3
 end
 arch ant
+speed_left -0.160000
 x 12
 y 3
-speed_left -0.160000
 end
 arch pstone_2
 x 12
@@ -3203,10 +3147,6 @@ arch pstone_2
 x 12
 y 39
 end
-arch wwall_2_1_2
-x 12
-y 39
-end
 arch pstone_2
 x 13
 end
@@ -3258,9 +3198,9 @@ x 13
 y 6
 end
 arch ant
+speed_left -0.160000
 x 13
 y 6
-speed_left -0.160000
 end
 arch pstone_2
 x 13
@@ -3303,18 +3243,18 @@ x 13
 y 12
 end
 arch goblin
+speed_left -0.700000
 x 13
 y 12
-speed_left -0.700000
 end
 arch medium_stones
 x 13
 y 13
 end
 arch goblin
+speed_left -0.700000
 x 13
 y 13
-speed_left -0.700000
 end
 arch large_stones
 x 13
@@ -3460,10 +3400,6 @@ arch pstone_2
 x 13
 y 39
 end
-arch wwall_2_2_3
-x 13
-y 39
-end
 arch pstone_2
 x 14
 end
@@ -3487,9 +3423,9 @@ x 14
 y 2
 end
 arch gnoll
+speed_left -0.500000
 x 14
 y 2
-speed_left -0.500000
 end
 arch medium_stones
 x 14
@@ -3504,9 +3440,9 @@ x 14
 y 4
 end
 arch ant
+speed_left -0.160000
 x 14
 y 4
-speed_left -0.160000
 end
 arch pstone_2
 x 14
@@ -3529,18 +3465,18 @@ x 14
 y 7
 end
 arch ant
+speed_left -0.160000
 x 14
 y 7
-speed_left -0.160000
 end
 arch medium_stones
 x 14
 y 8
 end
 arch ant
+speed_left -0.160000
 x 14
 y 8
-speed_left -0.160000
 end
 arch large_stones
 x 14
@@ -3563,18 +3499,18 @@ x 14
 y 12
 end
 arch goblin
+speed_left -0.700000
 x 14
 y 12
-speed_left -0.700000
 end
 arch medium_stones
 x 14
 y 13
 end
 arch goblin
+speed_left -0.700000
 x 14
 y 13
-speed_left -0.700000
 end
 arch large_stones
 x 14
@@ -3680,13 +3616,9 @@ arch cobblestones
 x 14
 y 38
 end
-arch exit
-slaying oldcity10
-face cobblesto2.111
-hp 14
+arch cobblestones
 x 14
 y 39
-is_animated 0
 end
 arch pstone_2
 x 15
@@ -3719,9 +3651,9 @@ x 15
 y 4
 end
 arch ant
+speed_left -0.160000
 x 15
 y 4
-speed_left -0.160000
 end
 arch pstone_2
 x 15
@@ -3752,9 +3684,9 @@ x 15
 y 8
 end
 arch ant
+speed_left -0.160000
 x 15
 y 8
-speed_left -0.160000
 end
 arch large_stones
 x 15
@@ -3892,14 +3824,9 @@ arch pstone_1
 x 15
 y 38
 end
-arch exit
-name dirt exit
-slaying oldcity10
-face cobblesto2.111
-hp 15
+arch cobblestones
 x 15
 y 39
-is_animated 0
 end
 arch pstone_2
 x 16
@@ -3936,9 +3863,9 @@ x 16
 y 4
 end
 arch ant
+speed_left -0.160000
 x 16
 y 4
-speed_left -0.160000
 end
 arch pstone_2
 x 16
@@ -4100,14 +4027,10 @@ arch pstone_2
 x 16
 y 39
 end
-arch awall_2_2_2
-x 16
-y 39
-end
 arch pstone_2
 x 17
 end
-arch wwall_1_3
+arch wwall_2_2_4
 x 17
 end
 arch pstone_2
@@ -4306,10 +4229,6 @@ arch pstone_2
 x 17
 y 39
 end
-arch awall_2_1_2
-x 17
-y 39
-end
 arch pstone_2
 x 18
 end
@@ -4624,7 +4543,7 @@ arch pstone_2
 x 18
 y 39
 end
-arch awall_2_1_2
+arch rock
 x 18
 y 39
 end
@@ -4942,7 +4861,7 @@ arch pstone_2
 x 19
 y 39
 end
-arch awall_2_2_3
+arch rock
 x 19
 y 39
 end

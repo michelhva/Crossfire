@@ -9,6 +9,9 @@ width 20
 height 40
 enter_x 7
 enter_y 1
+tile_path_1 oldcity1
+tile_path_3 oldcity3
+tile_path_4 oldcity54
 end
 arch sea
 name stream
@@ -103,15 +106,11 @@ end
 arch awall_1_2
 y 19
 end
-arch exit
-face cobblesto1.111
-slaying oldcity4
-hp 19
-sp 20
-is_animated 0
+arch cobblestones2
 y 20
 end
 arch gnoll
+speed_left -1.100000
 y 20
 end
 arch pstone_1
@@ -141,7 +140,7 @@ end
 arch pstone_1
 y 25
 end
-arch awall_2_1_1
+arch awall_3_4
 y 25
 end
 arch pstone_1
@@ -450,9 +449,6 @@ x 1
 y 39
 end
 arch pstone_2
-x 2
-end
-arch awall_1_4
 x 2
 end
 arch sea
@@ -699,9 +695,6 @@ x 2
 y 39
 end
 arch pstone_2
-x 3
-end
-arch awall_2_1_2
 x 3
 end
 arch pstone_2
@@ -928,9 +921,6 @@ x 3
 y 39
 end
 arch pstone_2
-x 4
-end
-arch awall_2_1_2
 x 4
 end
 arch pstone_2
@@ -1140,9 +1130,6 @@ x 4
 y 39
 end
 arch pstone_2
-x 5
-end
-arch awall_2_1_2
 x 5
 end
 arch pstone_2
@@ -1346,9 +1333,6 @@ x 5
 y 39
 end
 arch pstone_2
-x 6
-end
-arch awall_1_3
 x 6
 end
 arch pstone_2
@@ -1579,13 +1563,7 @@ arch awall_1_3
 x 6
 y 39
 end
-arch exit
-name dirt exit
-face largestone.111
-slaying oldcity1
-hp 7
-sp 19
-is_animated 0
+arch large_stones
 x 7
 end
 arch dungeon_floor
@@ -1784,18 +1762,11 @@ arch cobblestones2
 x 7
 y 38
 end
-arch exit
-face cobblesto1.111
-slaying oldcity3
-hp 27
-is_animated 0
+arch cobblestones2
 x 7
 y 39
 end
 arch dungeon_floor
-x 8
-end
-arch awall_1_4
 x 8
 end
 arch dungeon_floor
@@ -2028,9 +1999,6 @@ end
 arch dungeon_floor
 x 9
 end
-arch awall_2_1_2
-x 9
-end
 arch dungeon_floor
 x 9
 y 1
@@ -2232,9 +2200,6 @@ x 9
 y 39
 end
 arch dungeon_floor
-x 10
-end
-arch awall_2_1_2
 x 10
 end
 arch dungeon_floor
@@ -2455,9 +2420,6 @@ x 10
 y 39
 end
 arch dungeon_floor
-x 11
-end
-arch awall_2_1_2
 x 11
 end
 arch dungeon_floor
@@ -2695,7 +2657,7 @@ end
 arch woodfloor
 x 12
 end
-arch awall_3_3
+arch awall_2_1_1
 x 12
 end
 arch woodfloor
@@ -2938,7 +2900,7 @@ end
 arch woodfloor
 x 13
 end
-arch awall_2_1_2
+arch goblin
 x 13
 end
 arch woodfloor
@@ -3193,7 +3155,7 @@ end
 arch woodfloor
 x 14
 end
-arch awall_2_1_2
+arch goblin
 x 14
 end
 arch woodfloor
@@ -3439,7 +3401,7 @@ end
 arch woodfloor
 x 15
 end
-arch awall_2_1_2
+arch chair_1.2
 x 15
 end
 arch woodfloor
@@ -3700,9 +3662,6 @@ end
 arch woodfloor
 x 16
 end
-arch awall_2_1_2
-x 16
-end
 arch woodfloor
 x 16
 y 1
@@ -3951,7 +3910,7 @@ end
 arch woodfloor
 x 17
 end
-arch awall_2_1_2
+arch goblin
 x 17
 end
 arch woodfloor
@@ -4226,7 +4185,7 @@ end
 arch woodfloor
 x 18
 end
-arch awall_2_1_2
+arch goblin
 x 18
 end
 arch woodfloor
@@ -4485,7 +4444,7 @@ end
 arch woodfloor
 x 19
 end
-arch awall_2_2_3
+arch awall_2_1_1
 x 19
 end
 arch woodfloor
