@@ -37,7 +37,7 @@
 $OLD_MAP_NAME[0]="/santo_dominion/town";
 # Many maps are just called 'town', so this is only useful if you know
 # 'town' is really referring to santo dominion.
-#$OLD_MAP_NAME[0]="(/santo_dominion/town|town)";
+#$OLD_MAP_NAME[0]="(/santo_dominion/town|town|.+/town)";
 $OLD_MAP_STARTX[0]=3;
 $OLD_MAP_STARTY[0]=12;
 $OLD_MAP_ENDX[0]=27;

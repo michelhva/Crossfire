@@ -5,9 +5,9 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 01:50:48 1996
 endmsg
-x 26
-y 33
-level 15
+width 26
+height 33
+difficulty 15
 end
 arch cobblestones2
 end
@@ -852,9 +852,9 @@ end
 arch trapdoor_1
 hp 2
 sp 5
+invisible 1
 x 2
 y 27
-invisible 1
 end
 arch cobblestones2
 x 2
@@ -863,9 +863,9 @@ end
 arch trapdoor_1
 hp 2
 sp 5
+invisible 1
 x 2
 y 28
-invisible 1
 end
 arch cobblestones2
 x 2
@@ -884,9 +884,9 @@ end
 arch trapdoor_1
 hp 19
 sp 28
+invisible 1
 x 2
 y 30
-invisible 1
 end
 arch cobblestones2
 x 2
@@ -897,17 +897,17 @@ name strange wall
 hp 5000
 maxhp 5000
 ac -20
-x 2
-y 31
 level 50
 resist_death 100
+x 2
+y 31
 end
 arch invis_exit
-slaying cave_pass4
 msg
 Wohoo! Looks like you found Eureca's
 secret treasure room!
 endmsg
+slaying cave_pass4
 hp 19
 sp 1
 x 2
@@ -918,9 +918,9 @@ x 2
 y 32
 end
 arch cave2
+no_pass 0
 x 2
 y 32
-no_pass 0
 end
 arch cobblestones2
 x 3
@@ -985,9 +985,6 @@ x 3
 y 7
 end
 arch magic_mouth
-msg
-o
-endmsg
 x 3
 y 7
 end
@@ -2318,21 +2315,21 @@ x 8
 y 25
 end
 arch pstone_1
+no_pass 1
 x 8
 y 26
-no_pass 1
 end
 arch river_sw-ne_l
 name sea
+no_pass 0
 x 8
 y 26
-no_pass 0
 end
 arch river_nw-se_u
 name sea
+no_pass 0
 x 8
 y 26
-no_pass 0
 end
 arch sea
 x 8
@@ -2563,10 +2560,10 @@ x 10
 y 1
 end
 arch locked_door2
-slaying 429201
 msg
 You need the Dread Key to open this door.
 endmsg
+slaying 429201
 x 10
 y 1
 end
@@ -4161,9 +4158,9 @@ x 19
 y 3
 end
 arch button_handle
+connected 1
 x 19
 y 3
-connected 1
 end
 arch flagstone
 x 19
@@ -4182,9 +4179,9 @@ x 19
 y 6
 end
 arch button_handle
+connected 2
 x 19
 y 6
-connected 2
 end
 arch flagstone
 x 19
@@ -4443,10 +4440,10 @@ x 20
 y 4
 end
 arch grate_closed_1
-x 20
-y 4
 speed 0.500000
 connected 1
+x 20
+y 4
 end
 arch flagstone
 x 20
@@ -4465,10 +4462,10 @@ x 20
 y 7
 end
 arch grate_closed_1
-x 20
-y 7
 speed 0.500000
 connected 2
+x 20
+y 7
 end
 arch flagstone
 x 20
@@ -4476,9 +4473,9 @@ y 8
 end
 arch chest
 exp 25
+randomitems chest_items
 x 20
 y 8
-randomitems chest_items
 arch rune_medium_fireball
 level 7
 end
@@ -4730,10 +4727,10 @@ x 21
 y 4
 end
 arch grate_closed_1
-x 21
-y 4
 speed 0.500000
 connected 1
+x 21
+y 4
 end
 arch flagstone
 x 21
@@ -4752,10 +4749,10 @@ x 21
 y 7
 end
 arch grate_closed_1
-x 21
-y 7
 speed 0.500000
 connected 2
+x 21
+y 7
 end
 arch flagstone
 x 21
@@ -4873,9 +4870,9 @@ y 19
 end
 arch chest
 exp 25
+randomitems chest_items
 x 21
 y 19
-randomitems chest_items
 arch rune_icestorm
 level 8
 end
@@ -5012,10 +5009,10 @@ x 22
 y 4
 end
 arch grate_closed_1
-x 22
-y 4
 speed 0.500000
 connected 1
+x 22
+y 4
 end
 arch flagstone
 x 22
@@ -5034,10 +5031,10 @@ x 22
 y 7
 end
 arch grate_closed_1
-x 22
-y 7
 speed 0.500000
 connected 2
+x 22
+y 7
 end
 arch flagstone
 x 22
@@ -5132,18 +5129,18 @@ y 17
 end
 arch oakdoor
 name chest
-slaying cave_pass4
+face chest_1.111
 msg
 A magic force draws you inside the
 chest! Uh... does this mean you've been
 shrinked? Anyhow, this is amazing.
 endmsg
-face chest_1.111
+slaying cave_pass4
 hp 25
 sp 28
+weight 50000
 x 22
 y 17
-weight 50000
 end
 arch flagstone
 x 22
@@ -5335,9 +5332,9 @@ y 10
 end
 arch chest
 exp 25
+randomitems chest_items
 x 23
 y 10
-randomitems chest_items
 arch rune_create_bomb
 end
 end
@@ -5734,21 +5731,21 @@ arch teleporter
 name 10
 hp 22
 sp 17
-x 24
-y 31
 speed 0.000000
 connected 10
+x 24
+y 31
 end
 arch locked_door1
 name magic force
-slaying no_key_available
+face enchantment.111
 msg
 A repelling force holds you back.
 endmsg
-face enchantment.111
+slaying no_key_available
+invisible 1
 x 24
 y 31
-invisible 1
 end
 arch blocked
 x 24
@@ -5863,41 +5860,42 @@ y 26
 end
 arch button_small
 name 10
-x 25
-y 27
 weight 1000
 connected 10
+x 25
+y 27
 end
 arch blocked
 name darkness
-x 25
-y 27
 no_pass 0
 is_floor 1
+blocksview 0
+x 25
+y 27
 end
 arch teleporter
 slaying chest
 hp 6
 sp 7
-x 25
-y 27
 speed 0.000000
 invisible 1
 connected 10
+x 25
+y 27
 end
 arch mover_1
-x 25
-y 28
 speed 1.000000
 level 1
 attacktype 1
+x 25
+y 28
 end
 arch blocked
 name darkness
-x 25
-y 28
 no_pass 0
 is_floor 1
+x 25
+y 28
 end
 arch blocked
 x 25
@@ -5916,84 +5914,16 @@ x 25
 y 32
 end
 arch dread
-x 8
-y 3
 carrying 100
-end
-More
-arch dread_2
-hp 1500
-x 9
-y 3
-end
-More
-arch dread_3
-hp 1500
 x 8
-y 4
-end
-More
-arch dread_4
-hp 1500
-x 9
-y 4
+y 3
 end
 arch dread
 x 12
 y 2
 end
-More
-arch dread_2
-x 13
-y 2
-end
-More
-arch dread_3
-x 12
-y 3
-end
-More
-arch dread_4
-x 13
-y 3
-end
 arch big_dragon
 name guardian dragon
 x 20
 y 5
-end
-More
-arch big_dragon_2
-name guardian dragon
-hp 3500
-x 21
-y 5
-end
-More
-arch big_dragon_3
-name guardian dragon
-hp 3500
-x 22
-y 5
-end
-More
-arch big_dragon_4
-name guardian dragon
-hp 3500
-x 20
-y 6
-end
-More
-arch big_dragon_5
-name guardian dragon
-hp 3500
-x 21
-y 6
-end
-More
-arch big_dragon_6
-name guardian dragon
-hp 3500
-x 22
-y 6
 end

@@ -1,13 +1,12 @@
 arch map
 name castle
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec  8 18:58:51 1996
+Creator: Andreas Vogl
+Email: red.blaze@gmx.net
 endmsg
-x 32
-y 32
-level 5
+width 32
+height 32
+difficulty 5
 end
 arch marble
 end
@@ -946,9 +945,9 @@ of ancient scripts. The Evil Masters
 don't want them to be translated...
 And now they captured me to punish him!
 @match *
-... They captured me... 
+... They captured me...
 the night after I got married...
-*crying* 
+*crying*
 endmsg
 hp 300
 x 4
@@ -1023,7 +1022,7 @@ msg
 @match *
 We are all doomed to die. And you will
 die too. Nobody is strong enough to
-defeat the Evil Masters...  
+defeat the Evil Masters...
 endmsg
 hp 150
 maxhp 150
@@ -1149,9 +1148,9 @@ x 5
 y 16
 end
 arch grate_closed_2
+speed 0.500000
 x 5
 y 16
-speed 0.500000
 end
 arch marble
 x 5
@@ -1186,9 +1185,9 @@ x 5
 y 20
 end
 arch grate_closed_2
+speed 0.500000
 x 5
 y 20
-speed 0.500000
 end
 arch marble
 x 5
@@ -1223,9 +1222,9 @@ x 5
 y 24
 end
 arch grate_closed_2
+speed 0.500000
 x 5
 y 24
-speed 0.500000
 end
 arch marble
 x 5
@@ -1260,9 +1259,9 @@ x 5
 y 28
 end
 arch grate_closed_2
+speed 0.500000
 x 5
 y 28
-speed 0.500000
 end
 arch marble
 x 5
@@ -1813,10 +1812,10 @@ x 9
 y 3
 end
 arch button_handle
-x 9
-y 3
 resist_magic 30
 connected 2
+x 9
+y 3
 end
 arch marble
 x 9
@@ -1981,11 +1980,11 @@ x 10
 y 3
 end
 arch igate_closed_2
-x 10
-y 3
 speed 0.500000
 resist_magic 30
 connected 2
+x 10
+y 3
 end
 arch marble
 x 10
@@ -2144,9 +2143,9 @@ x 10
 y 24
 end
 arch grate_closed_2
+speed 0.500000
 x 10
 y 24
-speed 0.500000
 end
 arch marble
 x 10
@@ -2181,9 +2180,9 @@ x 10
 y 28
 end
 arch grate_closed_2
+speed 0.500000
 x 10
 y 28
-speed 0.500000
 end
 arch marble
 x 10
@@ -2232,10 +2231,10 @@ x 11
 y 3
 end
 arch button_handle
-x 11
-y 3
 resist_magic 30
 connected 2
+x 11
+y 3
 end
 arch marble
 x 11
@@ -2444,30 +2443,30 @@ x 12
 y 11
 end
 arch button_handle
-x 12
-y 11
 resist_physical 30
 connected 1
+x 12
+y 11
 end
 arch marble
 x 12
 y 12
 end
 arch gateTrg1
-x 12
-y 12
 resist_physical 30
 connected 1
+x 12
+y 12
 end
 arch marble
 x 12
 y 13
 end
 arch button_handle
-x 12
-y 13
 resist_physical 30
 connected 1
+x 12
+y 13
 end
 arch marble
 x 12
@@ -2526,16 +2525,16 @@ x 12
 y 23
 end
 arch wizard
+type 0
 Str 5
 Con 5
 hp 100
 maxhp 100
-x 12
-y 23
 level 10
-type 0
 monster 1
 unaggressive 1
+x 12
+y 23
 end
 arch marble
 x 12
@@ -2736,17 +2735,17 @@ x 13
 y 24
 end
 arch priest
+type 0
 Str 5
 Dex 0
 Con 5
 hp 100
 maxhp 100
-x 13
-y 24
 level 10
-type 0
 monster 1
 unaggressive 1
+x 13
+y 24
 end
 arch marble
 x 13
@@ -2776,7 +2775,7 @@ arch guildmaster
 name old man
 msg
 @match *
-Nobody can help me anymore.  
+Nobody can help me anymore.
 endmsg
 x 13
 y 28
@@ -3032,11 +3031,11 @@ y 2
 end
 arch torch_1
 food 0
-x 15
-y 2
 material 0
 no_pick 1
 changing 0
+x 15
+y 2
 end
 arch marble
 x 15
@@ -3135,18 +3134,18 @@ x 15
 y 14
 end
 arch barrel
+material 0
 x 15
 y 14
-material 0
 end
 arch marble
 x 15
 y 15
 end
 arch barrel
+material 0
 x 15
 y 15
-material 0
 end
 arch marble
 x 15
@@ -3264,11 +3263,11 @@ x 16
 y 2
 end
 arch chair_3.2
-x 16
-y 2
 material 0
 value 0
 no_pick 1
+x 16
+y 2
 end
 arch marble
 x 16
@@ -3291,20 +3290,11 @@ end
 arch evil_master4
 msg
 @match *
-Grr... groaar... 
+Grr... groaar...
 endmsg
-Str 30
-hp 2000
-maxhp 20000
-exp 200000
-dam 100
-ac -105
+carrying 100
 x 16
 y 4
-resist_physical 100
-resist_magic 20
-carrying 100
-randomitems none
 arch key2
 name black master key
 slaying evil_master_key1
@@ -3381,18 +3371,18 @@ x 16
 y 13
 end
 arch barrel
+material 0
 x 16
 y 13
-material 0
 end
 arch marble
 x 16
 y 14
 end
 arch barrel
+material 0
 x 16
 y 14
-material 0
 end
 arch marble
 x 16
@@ -3411,9 +3401,9 @@ x 16
 y 18
 end
 arch barrel
+material 0
 x 16
 y 18
-material 0
 end
 arch marble
 x 16
@@ -3508,11 +3498,11 @@ y 2
 end
 arch torch_1
 food 0
-x 17
-y 2
 material 0
 no_pick 1
 changing 0
+x 17
+y 2
 end
 arch marble
 x 17
@@ -3603,9 +3593,9 @@ x 17
 y 13
 end
 arch barrel
+material 0
 x 17
 y 13
-material 0
 end
 arch marble
 x 17
@@ -3624,9 +3614,9 @@ x 17
 y 16
 end
 arch barrel
+material 0
 x 17
 y 16
-material 0
 end
 arch marble
 x 17
@@ -3835,9 +3825,9 @@ x 18
 y 24
 end
 arch grate_closed_2
+speed 0.500000
 x 18
 y 24
-speed 0.500000
 end
 arch marble
 x 18
@@ -3872,9 +3862,9 @@ x 18
 y 28
 end
 arch grate_closed_2
+speed 0.500000
 x 18
 y 28
-speed 0.500000
 end
 arch marble
 x 18
@@ -3995,9 +3985,9 @@ x 19
 y 15
 end
 arch barrel
+material 0
 x 19
 y 15
-material 0
 end
 arch marble
 x 19
@@ -4072,7 +4062,7 @@ msg
 @match *
 I got captured during the fight for
 Shining Village. All of my friends
-have died. 
+have died.
 endmsg
 hp 150
 maxhp 150
@@ -4166,9 +4156,9 @@ x 20
 y 13
 end
 arch barrel
+material 0
 x 20
 y 13
-material 0
 end
 arch marble
 x 20
@@ -4187,9 +4177,9 @@ x 20
 y 16
 end
 arch barrel
+material 0
 x 20
 y 16
-material 0
 end
 arch marble
 x 20
@@ -4204,9 +4194,9 @@ x 20
 y 18
 end
 arch barrel
+material 0
 x 20
 y 18
-material 0
 end
 arch marble
 x 20
@@ -4363,36 +4353,36 @@ x 21
 y 14
 end
 arch barrel
+material 0
 x 21
 y 14
-material 0
 end
 arch marble
 x 21
 y 15
 end
 arch barrel
+material 0
 x 21
 y 15
-material 0
 end
 arch marble
 x 21
 y 16
 end
 arch barrel
+material 0
 x 21
 y 16
-material 0
 end
 arch marble
 x 21
 y 17
 end
 arch barrel
+material 0
 x 21
 y 17
-material 0
 end
 arch marble
 x 21
@@ -4850,7 +4840,7 @@ arch magic_mouth
 msg
 You are very proud that you have
 finally discovered the secret passage
-into the castle.  
+into the castle.
 endmsg
 x 23
 y 15
@@ -4867,7 +4857,7 @@ arch magic_mouth
 msg
 You are very proud that you have
 finally discovered the secret passage
-into the castle.  
+into the castle.
 endmsg
 x 23
 y 16

@@ -5,10 +5,10 @@ Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Tue Apr  5 17:23:51 1994
 endmsg
-hp 14
-sp 18
-x 27
-y 23
+width 27
+height 23
+enter_x 14
+enter_y 18
 end
 arch grass
 end
@@ -412,10 +412,10 @@ migth find some useful stuff too.
 @match *
 Do you know Stig?
 endmsg
-x 3
-y 8
 friendly 1
 unaggressive 0
+x 3
+y 8
 end
 arch woodfloor
 x 3
@@ -1098,12 +1098,12 @@ x 8
 y 2
 end
 arch cauldron
-x 8
-y 2
 material 0
 no_pick 1
 no_pass 1
 is_cauldron 0
+x 8
+y 2
 end
 arch woodfloor
 x 8
@@ -1117,10 +1117,10 @@ I'm busy here.
 endmsg
 hp 80
 maxhp 80
-x 8
-y 3
 friendly 1
 unaggressive 0
+x 8
+y 3
 end
 arch woodfloor
 x 8
@@ -1142,14 +1142,14 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
-x 8
-y 7
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 8
+y 7
 end
 arch woodfloor
 x 8
@@ -1194,11 +1194,11 @@ now I'm staying here for the weekends.
 endmsg
 hp 100
 maxhp 100
-x 8
-y 13
 friendly 1
 unaggressive 0
 random_movement 0
+x 8
+y 13
 end
 arch woodfloor
 x 8
@@ -1702,14 +1702,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 12
-y 4
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 12
+y 4
 end
 arch woodfloor
 x 12
@@ -1788,9 +1788,9 @@ x 12
 y 18
 end
 arch flowers_permanent
+no_pick 1
 x 12
 y 18
-no_pick 1
 end
 arch woodfloor
 x 12
@@ -2000,6 +2000,23 @@ arch woodfloor
 x 14
 y 8
 end
+arch woman
+msg
+@match mudman
+Shhh! You must not speak HIS name!
+It's not healthy to be that curious.
+@match warrior|wound|upstairs
+Maybe you should look after him?
+@match *
+There's a wounded warrior in one of the
+rooms upstairs. That guy is in real bad
+shape. I wonder what happened to him?
+endmsg
+unaggressive 0
+friendly 1
+x 14
+y 8
+end
 arch woodfloor
 x 14
 y 9
@@ -2059,14 +2076,14 @@ arch door_look_1
 hp 0
 exp 0
 ac 0
-x 14
-y 19
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 14
+y 19
 end
 arch dungeon_magic
 x 14
@@ -2138,6 +2155,11 @@ arch wwall_2_1_2
 x 15
 y 7
 end
+arch mover_7
+attacktype 1
+x 15
+y 8
+end
 arch woodfloor
 x 15
 y 8
@@ -2178,14 +2200,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
-x 15
-y 14
 level 0
 material 0
 randomitems none
 alive 0
 no_pass 0
 pass_thru 0
+x 15
+y 14
 end
 arch woodfloor
 x 15
@@ -2304,14 +2326,19 @@ arch wwall_2_1_2
 x 16
 y 7
 end
+arch mover_7
+attacktype 1
+x 16
+y 8
+end
 arch woodfloor
 x 16
 y 8
 end
 arch stair_3_up
 slaying tavern.2ndfloor
-hp 17
-sp 19
+hp 16
+sp 14
 x 16
 y 8
 end
@@ -2364,9 +2391,9 @@ x 16
 y 18
 end
 arch flowers_permanent
+no_pick 1
 x 16
 y 18
-no_pick 1
 end
 arch woodfloor
 x 16
@@ -2731,6 +2758,7 @@ x 19
 y 4
 end
 arch random_talisman
+exp 3
 x 19
 y 4
 end
@@ -2768,6 +2796,7 @@ y 8
 end
 arch wizard
 name blue wizard
+face wizard_blue.151
 msg
 @match mudman|hero|yes|gate
 The inhabitants of St. Dominion are
@@ -2780,26 +2809,25 @@ the "hero's room". You may enter if
 you prove yourself worthy by killing
 the Mudman.
 endmsg
-face wizard_blue.151
+type 0
 Str 10
 Con 20
 hp 300
 maxhp 300
-x 19
-y 8
 level 15
-type 0
 monster 1
 friendly 1
+x 19
+y 8
 end
 arch altar
 name 1
 slaying Mudman's residue
 food 1
-x 19
-y 9
 protected 1
 connected 1
+x 19
+y 9
 end
 arch magic_mouth
 name 1
@@ -2808,22 +2836,22 @@ The blue wizard says:
 You defeated the Mudman, you are
 truely a hero! Take your reward.
 endmsg
-x 19
-y 9
 protected 1
 connected 1
 walk_on 0
 fly_on 0
+x 19
+y 9
 end
 arch woodfloor
 x 19
 y 9
 end
 arch table_3
-x 19
-y 9
 material 0
 no_pick 1
+x 19
+y 9
 end
 arch woodfloor
 x 19
@@ -2952,6 +2980,7 @@ x 20
 y 4
 end
 arch random_potion
+exp 5
 x 20
 y 4
 end
@@ -2980,11 +3009,11 @@ x 20
 y 7
 end
 arch grate_closed_1
-x 20
-y 7
 speed 0.500000
 protected 1
 connected 1
+x 20
+y 7
 end
 arch woodfloor
 x 20
@@ -3101,6 +3130,7 @@ x 21
 y 4
 end
 arch random_potion
+exp 5
 x 21
 y 4
 end
@@ -3129,11 +3159,11 @@ x 21
 y 7
 end
 arch grate_closed_1
-x 21
-y 7
 speed 0.500000
 protected 1
 connected 1
+x 21
+y 7
 end
 arch woodfloor
 x 21
@@ -3186,9 +3216,9 @@ msg
 Damn! Those chairs are too high for
 me. I hate this world...
 endmsg
+friendly 1
 x 21
 y 16
-friendly 1
 end
 arch woodfloor
 x 21
@@ -3261,6 +3291,7 @@ x 22
 y 4
 end
 arch random_talisman
+exp 3
 x 22
 y 4
 end
