@@ -11,6 +11,6 @@ is_floor 1
 color_fg green
 editable 8
 visibility 100
-smoothface woods_3.111 grass_S.111
+smoothface woods_3.111 sgrass_S.111
 smoothlevel 127
 end

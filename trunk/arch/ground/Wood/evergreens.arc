@@ -9,6 +9,6 @@ slow_move 3
 is_wooded 1
 editable 8
 is_floor 1
-smoothface evergreens.111 empty_S.111
-smoothlevel 125
+smoothface evergreens.111 evergreens_S.111
+smoothlevel 135
 end
