@@ -14,14 +14,12 @@ mina
 speed 0.2
 msg
   There is a strong evil spirit in the shield
-trying to dominate over you.
+  trying to dominate over you.
 endmsg
 Cha -3
 resist_fire 30
-
 resist_drain 100
-resist_ghosthit 100
-
+resist_ghosthit 75
 ac 4
 reflect_spell 1
 resist_physical 10

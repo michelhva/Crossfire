@@ -13,10 +13,8 @@ msg
 endmsg
 Cha -3
 resist_fire 30
-
 resist_drain 100
-resist_ghosthit 100
-
+resist_ghosthit 70
 ac 3
 resist_physical 10
 weight 25000
