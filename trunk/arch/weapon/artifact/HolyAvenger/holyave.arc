@@ -1,5 +1,6 @@
 Object holy_avenger
 name Holy Avenger
+nrof 1
 face holyave.111
 anim
 holyave.111
@@ -23,7 +24,7 @@ magic 5
 Str 1
 Wis 2
 Cha 2
-attacktype 256
+attacktype 4194560
 protected 2
 immune 128
 weight 25000
