@@ -1,5 +1,5 @@
 Object beach
-face desert.111
+face beach.111
 type 67
 race /terrain/desert
 walk_on 1
@@ -10,5 +10,5 @@ is_wooded 0
 is_floor 1
 smoothlevel 2
 editable 8
-smoothface desert.111 desert_S.111
+smoothface beach.111 beach_S.111
 end
