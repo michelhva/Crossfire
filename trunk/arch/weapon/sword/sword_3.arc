@@ -10,5 +10,6 @@ weight 14500
 value 53
 editable 1024
 attacktype 1
+weapontype 1
 magicmap white
 end

@@ -23,6 +23,7 @@ Cha -1
 Con 2
 hp 1
 attacktype 256
+weapontype 1
 resist_poison 30
 
 resist_drain 100

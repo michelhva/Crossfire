@@ -12,6 +12,7 @@ magic 3
 resist_fire 30
 
 attacktype 16
+weapontype 1
 editable 5120
 magicmap white
 end

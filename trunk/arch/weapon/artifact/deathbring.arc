@@ -12,4 +12,5 @@ magic 3
 editable 5120
 attacktype 65537
 magicmap black
+weapontype 1
 end

@@ -17,6 +17,7 @@ resist_magic 30
 magic 5
 weight 30000
 attacktype 65
+weapontype 1
 value 175000
 speed 0.1
 anim

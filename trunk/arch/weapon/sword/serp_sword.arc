@@ -11,4 +11,6 @@ can_cut 1
 weight 3000
 value 25
 editable 1024
+attacktype 1
+weapontype 1
 end

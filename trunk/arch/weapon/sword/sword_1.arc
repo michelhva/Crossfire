@@ -11,4 +11,5 @@ weight 15000
 value 45
 editable 1024
 attacktype 1
+weapontype 1
 end

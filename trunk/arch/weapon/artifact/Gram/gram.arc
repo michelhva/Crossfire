@@ -18,6 +18,7 @@ magic 3
 weight 30000
 value 80000
 attacktype 33
+weapontype 1
 resist_ghosthit 30
 resist_fear 30
 
