@@ -4,6 +4,7 @@ name_pl polished shields
 client_type 260
 nrof 1
 type 33
+material 256
 face reflector.111
 anim
 reflector.111
