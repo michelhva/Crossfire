@@ -1,12 +1,16 @@
 arch map
 name illexit
+reset_timeout 7200
+difficulty 4
+width 22
+height 22
+enter_x 1
+enter_y 1
 msg
 Creator:
 Email:
 Date: Wed Nov 10 09:33:33 1993
 endmsg
-width 22
-height 22
 outdoor 1
 end
 arch woodfloor
@@ -389,7 +393,7 @@ arch grass
 x 3
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 4
 end
@@ -397,7 +401,7 @@ arch grass
 x 3
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 5
 end
@@ -405,7 +409,7 @@ arch cobblestones2
 x 3
 y 6
 end
-arch cwall_3_2
+arch westcwall_3_2
 x 3
 y 6
 end
@@ -413,7 +417,7 @@ arch cobblestones2
 x 3
 y 7
 end
-arch guard_house_1
+arch westguard_house_1
 x 3
 y 7
 end
@@ -421,7 +425,7 @@ arch cobblestones2
 x 3
 y 8
 end
-arch cwall_3_2
+arch westcwall_3_2
 x 3
 y 8
 end
@@ -429,7 +433,7 @@ arch grass
 x 3
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 9
 end
@@ -437,7 +441,7 @@ arch grass
 x 3
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 10
 end
@@ -445,7 +449,7 @@ arch grass
 x 3
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 11
 end
@@ -453,7 +457,7 @@ arch grass
 x 3
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 12
 end
@@ -461,7 +465,7 @@ arch grass
 x 3
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 13
 end
@@ -469,7 +473,7 @@ arch grass
 x 3
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 14
 end
@@ -477,7 +481,7 @@ arch grass
 x 3
 y 15
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 15
 end
@@ -485,7 +489,7 @@ arch grass
 x 3
 y 16
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 16
 end
@@ -542,6 +546,10 @@ arch cobblestones2
 x 4
 y 4
 end
+arch city_tower_west
+x 4
+y 4
+end
 arch cobblestones2
 x 4
 y 5
@@ -550,17 +558,15 @@ arch cobblestones2
 x 4
 y 6
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 4
 y 6
 end
-arch guard_house_1
-type 0
-is_floor 1
+arch westguard_house_1
 x 4
 y 7
 end
-arch guard_house_2
+arch westguard_house_2
 x 4
 y 7
 end
@@ -568,11 +574,20 @@ arch cobblestones2
 x 4
 y 8
 end
-arch cwall_3_1
+arch westcwall_3_1
 x 4
 y 8
 end
 arch cobblestones2
+x 4
+y 9
+end
+arch city_tower_west
+name Tower of Illusions
+name_pl Tower of Illusions
+slaying /world/world_121_116
+hp 36
+sp 49
 x 4
 y 9
 end
@@ -588,6 +603,10 @@ arch grass
 x 4
 y 12
 end
+arch barrack_long
+x 4
+y 12
+end
 arch grass
 x 4
 y 13
@@ -596,11 +615,23 @@ arch grass
 x 4
 y 14
 end
+arch barrack_long
+x 4
+y 14
+end
 arch grass
 x 4
 y 15
 end
+arch barrack_long
+x 4
+y 15
+end
 arch grass
+x 4
+y 16
+end
+arch barrack_long
 x 4
 y 16
 end
@@ -666,7 +697,7 @@ arch cobblestones2
 x 5
 y 6
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 5
 y 6
 end
@@ -674,7 +705,7 @@ arch cobblestones2
 x 5
 y 7
 end
-arch guard_house_2
+arch westguard_house_2
 x 5
 y 7
 end
@@ -682,7 +713,7 @@ arch cobblestones2
 x 5
 y 8
 end
-arch cwall_3_1
+arch westcwall_3_1
 x 5
 y 8
 end
@@ -700,6 +731,7 @@ y 11
 end
 arch sign_e
 name Royal Barracks
+name_pl Royal Barracks
 x 5
 y 11
 end
@@ -793,7 +825,7 @@ arch cobblestones2
 x 6
 y 6
 end
-arch cwall_2_2_3
+arch westcwall_2_2_3
 x 6
 y 6
 end
@@ -801,7 +833,7 @@ arch cobblestones2
 x 6
 y 7
 end
-arch cityport_b
+arch westcityport_b
 x 6
 y 7
 end
@@ -809,7 +841,7 @@ arch cobblestones2
 x 6
 y 8
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 6
 y 8
 end
@@ -923,11 +955,19 @@ arch grass
 x 7
 y 11
 end
+arch house_up
+x 7
+y 11
+end
 arch grass
 x 7
 y 12
 end
 arch grass
+x 7
+y 13
+end
+arch house_long
 x 7
 y 13
 end
@@ -1009,6 +1049,12 @@ arch grass
 x 8
 y 6
 end
+arch house_long
+hp 7
+sp 19
+x 8
+y 6
+end
 arch cobblestones2
 x 8
 y 7
@@ -1019,6 +1065,7 @@ y 8
 end
 arch sign_e
 name Town Square this way
+name_pl Town Square this way
 x 8
 y 8
 end
@@ -1130,6 +1177,7 @@ y 5
 end
 arch barrack_small
 name small house
+name_pl small house
 hp 3
 sp 19
 x 9
@@ -1148,6 +1196,12 @@ x 9
 y 7
 end
 arch grass
+x 9
+y 8
+end
+arch house_long
+hp 28
+sp 22
 x 9
 y 8
 end
@@ -1177,6 +1231,7 @@ y 13
 end
 arch minihouse
 name destitute house
+name_pl destitute house
 hp 22
 sp 16
 x 9
@@ -1289,6 +1344,10 @@ x 10
 y 14
 end
 arch grass
+x 10
+y 15
+end
+arch temple1
 x 10
 y 15
 end
@@ -1764,6 +1823,7 @@ y 12
 end
 arch tavern
 name Family house
+name_pl Family house
 hp 1
 sp 1
 x 14
@@ -1782,6 +1842,10 @@ x 14
 y 14
 end
 arch grass
+x 14
+y 15
+end
+arch house_up
 x 14
 y 15
 end
@@ -2646,60 +2710,4 @@ end
 arch wwall_2_2_4
 x 21
 y 21
-end
-arch city_tower
-x 4
-y 4
-end
-arch city_tower
-name Tower of Illusions
-slaying /world/world_121_116
-hp 36
-sp 49
-x 4
-y 9
-end
-arch barrack_long
-x 4
-y 12
-end
-arch barrack_long
-x 4
-y 14
-end
-arch barrack_long
-x 4
-y 15
-end
-arch barrack_long
-x 4
-y 16
-end
-arch house_up
-x 7
-y 11
-end
-arch house_long
-x 7
-y 13
-end
-arch house_long
-hp 7
-sp 19
-x 8
-y 6
-end
-arch house_long
-hp 28
-sp 22
-x 9
-y 8
-end
-arch temple1
-x 10
-y 15
-end
-arch house_up
-x 14
-y 15
 end

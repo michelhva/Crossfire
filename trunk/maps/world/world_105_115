@@ -6525,6 +6525,19 @@ elevation -543
 x 15
 y 25
 end
+arch sign
+name Out of Business
+msg
+**NOTICE**
+
+Shipage to Wolfsburg is now closed due to lack of profitability.
+It's just too darn far mate...
+
+For passage to Wolfsburg, try Navar city.
+endmsg
+x 15
+y 25
+end
 arch dungeon_magic
 x 15
 y 26
@@ -16532,11 +16545,7 @@ x 15
 y 40
 end
 arch big_galleon
-name to Wolfsburg
-name_pl to Wolfsburg
-slaying /world/world_128_109
-hp 43
-sp 25
+name old galleon
 x 16
 y 22
 end
