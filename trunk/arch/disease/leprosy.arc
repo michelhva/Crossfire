@@ -31,6 +31,7 @@ level 5
 end
 Object leprous_skin
 name leprous flake of skin
+face skin.111
 type 72
 food 5
 weight 7
