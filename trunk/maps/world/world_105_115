@@ -6383,8 +6383,8 @@ elevation 2098
 x 15
 y 3
 end
-arch jungle_1
-elevation 895
+arch mountain
+elevation 7986
 x 15
 y 4
 end
@@ -6793,18 +6793,38 @@ elevation 4415
 x 16
 y 2
 end
-arch hills
-elevation 4280
+arch mountain
+elevation 6409
 x 16
 y 3
 end
-arch hills
-elevation 3749
+arch mountain_cave2
+msg
+layoutstyle rogue
+floorstyle stones2
+wallstyle dungeon2
+exitstyle sstair
+decorstyle goblinjunk
+monsterstyle humanoid
+expand2x 1
+xsize 60
+ysize 60
+dungeon_level 10
+dungeon_depth 15
+treasureoptions 3
+orientation 1
+endmsg
+slaying /!
+x 16
+y 3
+end
+arch mountain
+elevation 8567
 x 16
 y 4
 end
-arch hills_rocky
-elevation 4442
+arch mountain
+elevation 5245
 x 16
 y 5
 end
@@ -7223,18 +7243,18 @@ elevation 469
 x 17
 y 1
 end
-arch hills
-elevation 3594
+arch mountain
+elevation 5950
 x 17
 y 2
 end
-arch hills
-elevation 3138
+arch mountain
+elevation 7986
 x 17
 y 3
 end
-arch hills
-elevation 3267
+arch mountain
+elevation 5358
 x 17
 y 4
 end
@@ -8508,7 +8528,7 @@ y 8
 end
 arch invis_exit
 msg
-Something is amis here...
+Something is amiss here...
 endmsg
 slaying /dungeons/trollbridge
 hp 2
@@ -9449,7 +9469,7 @@ y 8
 end
 arch invis_exit
 msg
-Oh, no something is not right here...
+Oh no, something is not right here...
 endmsg
 slaying /dungeons/trollbridge
 hp 29
@@ -9738,7 +9758,7 @@ y 9
 end
 arch sign_w
 msg
-no trols on brig
+no trols undur brig
 endmsg
 x 23
 y 9
