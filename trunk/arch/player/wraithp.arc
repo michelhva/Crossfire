@@ -23,7 +23,7 @@ can_use_armour 1
 can_use_weapon 1
 attacktype 17
 vulnerable 4
-immune 640
+immune 1664
 protected 17
 Str -4
 Dex 4
