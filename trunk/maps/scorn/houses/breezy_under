@@ -813,6 +813,10 @@ arch dungeon_floor
 x 4
 y 28
 end
+arch generate_orc
+x 4
+y 28
+end
 arch dungeon_floor
 x 4
 y 29
@@ -1252,6 +1256,10 @@ x 7
 y 18
 end
 arch dungeon_floor
+x 7
+y 19
+end
+arch generate_orc
 x 7
 y 19
 end
@@ -2149,7 +2157,16 @@ arch dungeon_floor
 x 13
 y 20
 end
+arch dun_1_4
+x 13
+y 20
+end
 arch dungeon_floor
+x 13
+y 21
+end
+arch igate_closed_2
+connected 2
 x 13
 y 21
 end
@@ -2157,7 +2174,17 @@ arch dungeon_floor
 x 13
 y 22
 end
+arch igate_closed_2
+connected 2
+x 13
+y 22
+end
 arch dungeon_floor
+x 13
+y 23
+end
+arch igate_closed_2
+connected 2
 x 13
 y 23
 end
@@ -2165,7 +2192,16 @@ arch dungeon_floor
 x 13
 y 24
 end
+arch igate_closed_2
+connected 2
+x 13
+y 24
+end
 arch dungeon_floor
+x 13
+y 25
+end
+arch dun_1_4
 x 13
 y 25
 end
@@ -2302,7 +2338,15 @@ arch dungeon_floor
 x 14
 y 20
 end
+arch dun_2_1_2
+x 14
+y 20
+end
 arch dungeon_floor
+x 14
+y 21
+end
+arch orc
 x 14
 y 21
 end
@@ -2310,7 +2354,15 @@ arch dungeon_floor
 x 14
 y 22
 end
+arch orc
+x 14
+y 22
+end
 arch dungeon_floor
+x 14
+y 23
+end
+arch orc
 x 14
 y 23
 end
@@ -2318,11 +2370,23 @@ arch dungeon_floor
 x 14
 y 24
 end
+arch orc
+x 14
+y 24
+end
 arch dungeon_floor
 x 14
 y 25
 end
+arch dun_2_1_2
+x 14
+y 25
+end
 arch dungeon_floor
+x 14
+y 26
+end
+arch generate_orc
 x 14
 y 26
 end
@@ -2509,7 +2573,7 @@ arch dungeon_floor
 x 15
 y 20
 end
-arch dun_2_2_1
+arch dun_3_1
 x 15
 y 20
 end
@@ -2517,8 +2581,7 @@ arch dungeon_floor
 x 15
 y 21
 end
-arch igate_closed_2
-connected 2
+arch orc
 x 15
 y 21
 end
@@ -2526,8 +2589,7 @@ arch dungeon_floor
 x 15
 y 22
 end
-arch igate_closed_2
-connected 2
+arch orc
 x 15
 y 22
 end
@@ -2535,8 +2597,7 @@ arch dungeon_floor
 x 15
 y 23
 end
-arch igate_closed_2
-connected 2
+arch orc
 x 15
 y 23
 end
@@ -2544,8 +2605,7 @@ arch dungeon_floor
 x 15
 y 24
 end
-arch igate_closed_2
-connected 2
+arch orc
 x 15
 y 24
 end
@@ -2553,7 +2613,7 @@ arch dungeon_floor
 x 15
 y 25
 end
-arch dun_2_2_2
+arch dun_3_3
 x 15
 y 25
 end
@@ -2739,7 +2799,7 @@ arch dungeon_floor
 x 16
 y 20
 end
-arch dun_2_1_2
+arch dun_2_2_3
 x 16
 y 20
 end
@@ -2747,7 +2807,7 @@ arch dungeon_floor
 x 16
 y 21
 end
-arch orc
+arch dun_2_2_1
 x 16
 y 21
 end
@@ -2771,7 +2831,7 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch orc
+arch dun_2_2_2
 x 16
 y 24
 end
@@ -2779,7 +2839,7 @@ arch dungeon_floor
 x 16
 y 25
 end
-arch dun_2_1_2
+arch dun_2_2_4
 x 16
 y 25
 end
@@ -2903,7 +2963,15 @@ arch dungeon_floor
 x 17
 y 17
 end
+arch kobold
+x 17
+y 17
+end
 arch dungeon_floor
+x 17
+y 18
+end
+arch kobold
 x 17
 y 18
 end
@@ -2915,15 +2983,11 @@ arch dungeon_floor
 x 17
 y 20
 end
-arch dun_2_1_2
-x 17
-y 20
-end
 arch dungeon_floor
 x 17
 y 21
 end
-arch orc
+arch dun_2_1_2
 x 17
 y 21
 end
@@ -2931,31 +2995,19 @@ arch dungeon_floor
 x 17
 y 22
 end
-arch orc
-x 17
-y 22
-end
 arch dungeon_floor
-x 17
-y 23
-end
-arch orc
 x 17
 y 23
 end
 arch dungeon_floor
 x 17
 y 24
-end
-arch orc
-x 17
-y 24
-end
-arch dungeon_floor
-x 17
-y 25
 end
 arch dun_2_1_2
+x 17
+y 24
+end
+arch dungeon_floor
 x 17
 y 25
 end
@@ -3092,6 +3144,10 @@ arch dungeon_floor
 x 18
 y 18
 end
+arch kobold
+x 18
+y 18
+end
 arch dungeon_floor
 x 18
 y 19
@@ -3100,15 +3156,11 @@ arch dungeon_floor
 x 18
 y 20
 end
-arch dun_2_1_2
-x 18
-y 20
-end
 arch dungeon_floor
 x 18
 y 21
 end
-arch orc
+arch dun_2_1_2
 x 18
 y 21
 end
@@ -3116,35 +3168,27 @@ arch dungeon_floor
 x 18
 y 22
 end
-arch orc
-x 18
-y 22
-end
 arch dungeon_floor
-x 18
-y 23
-end
-arch orc
 x 18
 y 23
 end
 arch dungeon_floor
 x 18
 y 24
-end
-arch orc
-x 18
-y 24
-end
-arch dungeon_floor
-x 18
-y 25
 end
 arch dun_2_1_2
 x 18
+y 24
+end
+arch dungeon_floor
+x 18
 y 25
 end
 arch dungeon_floor
+x 18
+y 26
+end
+arch kobold
 x 18
 y 26
 end
@@ -3284,11 +3328,11 @@ arch dungeon_floor
 x 19
 y 20
 end
-arch dun_2_1_2
-x 19
-y 20
-end
 arch dungeon_floor
+x 19
+y 21
+end
+arch dun_2_1_2
 x 19
 y 21
 end
@@ -3312,15 +3356,11 @@ arch dungeon_floor
 x 19
 y 24
 end
-arch bones3
+arch dun_2_1_2
 x 19
 y 24
 end
 arch dungeon_floor
-x 19
-y 25
-end
-arch dun_2_1_2
 x 19
 y 25
 end
@@ -3480,7 +3520,7 @@ arch dungeon_floor
 x 20
 y 20
 end
-arch dun_3_4
+arch dun_2_1_1
 x 20
 y 20
 end
@@ -3488,7 +3528,7 @@ arch dungeon_floor
 x 20
 y 21
 end
-arch dun_1_2
+arch dun_2_2_4
 x 20
 y 21
 end
@@ -3514,7 +3554,7 @@ arch dungeon_floor
 x 20
 y 24
 end
-arch dun_1_1
+arch dun_2_2_3
 x 20
 y 24
 end
@@ -3522,7 +3562,7 @@ arch dungeon_floor
 x 20
 y 25
 end
-arch dun_3_4
+arch dun_2_1_1
 x 20
 y 25
 end
