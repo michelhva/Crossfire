@@ -9,5 +9,5 @@ slow_move 1
 is_wooded 1
 editable 8
 is_floor 1
-smoothlevel 75
+smoothlevel 74
 end

@@ -5,6 +5,6 @@ slow_move 1
 is_wooded 1
 is_floor 1
 editable 8
-smoothlevel 35
+smoothlevel 5
 magicmap khaki
 end
