@@ -5,6 +5,7 @@ face gu_horn.114
 maxhp 130
 hp 100
 sp 126
+level 1
 value 10000000
 anim
 gu_horn.111
