@@ -14,9 +14,25 @@ editable 512
 visibility 100
 magicmap black
 end
+Object swall_1_2_half
+name wall
+face swall_1_half.111
+no_pass 1
+editable 512
+visibility 100
+magicmap black
+end
 Object swall_1_4
 name wall
 face swall_2.111
+no_pass 1
+editable 512
+visibility 100
+magicmap black
+end
+Object swall_1_4_half
+name wall
+face swall_2_half.111
 no_pass 1
 editable 512
 visibility 100
@@ -33,6 +49,14 @@ end
 Object swall_1_1
 name wall
 face swall_4.111
+no_pass 1
+editable 512
+visibility 100
+magicmap black
+end
+Object swall_1_1_half
+name wall
+face swall_4_half.111
 no_pass 1
 editable 512
 visibility 100
@@ -65,6 +89,14 @@ end
 Object swall_1_3
 name wall
 face swall_8.111
+no_pass 1
+editable 512
+visibility 100
+magicmap black
+end
+Object swall_1_3_half
+name wall
+face swall_8_half.111
 no_pass 1
 editable 512
 visibility 100
