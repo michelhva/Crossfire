@@ -1,16 +1,16 @@
 arch map
 name world_105_115
-reset_timeout 7200
-difficulty 1
-width 50
-height 50
-enter_x 1
-enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 16 20:53:13 2001
 endmsg
+width 50
+height 50
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 /world/world_105_114
 tile_path_2 /world/world_106_115
@@ -21,69 +21,89 @@ arch sea
 end
 arch sea
 y 1
+elevation 0
 end
 arch sea
 y 2
+elevation 0
 end
 arch sea
 y 3
+elevation 0
 end
 arch sea
 y 4
+elevation 0
 end
 arch sea
 y 5
+elevation 0
 end
 arch sea
 y 6
+elevation 0
 end
 arch sea
 y 7
+elevation 0
 end
 arch sea
 y 8
+elevation 0
 end
 arch sea
 y 9
+elevation 0
 end
 arch sea
 y 10
+elevation 0
 end
 arch sea
 y 11
+elevation 0
 end
 arch sea
 y 12
+elevation 0
 end
 arch sea
 y 13
+elevation 0
 end
 arch sea
 y 14
+elevation 0
 end
 arch sea
 y 15
+elevation 0
 end
 arch sea
 y 16
+elevation 0
 end
 arch sea
 y 17
+elevation 0
 end
 arch dungeon_magic
 y 18
+elevation 0
 end
 arch sea
 y 18
 end
 arch dungeon_magic
 y 19
+elevation 0
 end
 arch sea
 y 19
 end
 arch dungeon_magic
 y 20
+elevation 0
 end
 arch sea1
 y 20
@@ -93,6 +113,7 @@ y 20
 end
 arch dungeon_magic
 y 21
+elevation 0
 end
 arch sea1
 y 21
@@ -102,6 +123,7 @@ y 21
 end
 arch dungeon_magic
 y 22
+elevation 0
 end
 arch sea1
 y 22
@@ -111,18 +133,21 @@ y 22
 end
 arch dungeon_magic
 y 23
+elevation 0
 end
 arch cobblestones2
 y 23
 end
 arch dungeon_magic
 y 24
+elevation 0
 end
 arch cobblestones2
 y 24
 end
 arch dungeon_magic
 y 25
+elevation 0
 end
 arch cobblestones2
 y 25
@@ -132,18 +157,21 @@ y 25
 end
 arch dungeon_magic
 y 26
+elevation 0
 end
 arch cobblestones2
 y 26
 end
 arch dungeon_magic
 y 27
+elevation 0
 end
 arch cobblestones2
 y 27
 end
 arch dungeon_magic
 y 28
+elevation 0
 end
 arch cobblestones2
 y 28
@@ -153,12 +181,14 @@ y 28
 end
 arch dungeon_magic
 y 29
+elevation 0
 end
 arch cobblestones2
 y 29
 end
 arch dungeon_magic
 y 30
+elevation 0
 end
 arch cobblestones2
 y 30
@@ -168,6 +198,7 @@ y 30
 end
 arch dungeon_magic
 y 31
+elevation 0
 end
 arch brush
 y 31
@@ -182,18 +213,21 @@ y 31
 end
 arch dungeon_magic
 y 32
+elevation 0
 end
 arch grass
 y 32
 end
 arch dungeon_magic
 y 33
+elevation 0
 end
 arch cobblestones2
 y 33
 end
 arch dungeon_magic
 y 34
+elevation 0
 end
 arch grass
 y 34
@@ -204,17 +238,19 @@ name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
-y 34
 unique 1
+y 34
 end
 arch dungeon_magic
 y 35
+elevation 0
 end
 arch grass
 y 35
 end
 arch dungeon_magic
 y 36
+elevation 0
 end
 arch grass
 y 36
@@ -229,36 +265,42 @@ y 36
 end
 arch dungeon_magic
 y 37
+elevation 0
 end
 arch grass
 y 37
 end
 arch dungeon_magic
 y 38
+elevation 0
 end
 arch cobblestones2
 y 38
 end
 arch dungeon_magic
 y 39
+elevation 0
 end
 arch cobblestones2
 y 39
 end
 arch dungeon_magic
 y 40
+elevation 0
 end
 arch cobblestones2
 y 40
 end
 arch dungeon_magic
 y 41
+elevation 0
 end
 arch cobblestones2
 y 41
 end
 arch dungeon_magic
 y 42
+elevation 0
 end
 arch cobblestones2
 y 42
@@ -268,6 +310,7 @@ y 42
 end
 arch dungeon_magic
 y 43
+elevation 0
 end
 arch grass
 y 43
@@ -277,30 +320,35 @@ y 43
 end
 arch dungeon_magic
 y 44
+elevation 0
 end
 arch grass
 y 44
 end
 arch dungeon_magic
 y 45
+elevation 0
 end
 arch cobblestones2
 y 45
 end
 arch dungeon_magic
 y 46
+elevation 0
 end
 arch cobblestones2
 y 46
 end
 arch dungeon_magic
 y 47
+elevation 0
 end
 arch grass
 y 47
 end
 arch dungeon_magic
 y 48
+elevation 0
 end
 arch grass
 y 48
@@ -310,6 +358,7 @@ y 48
 end
 arch dungeon_magic
 y 49
+elevation 0
 end
 arch cobblestones2
 y 49
@@ -319,78 +368,97 @@ y 49
 end
 arch sea
 x 1
+elevation 0
 end
 arch sea
 x 1
 y 1
+elevation 0
 end
 arch sea
 x 1
 y 2
+elevation 0
 end
 arch sea
 x 1
 y 3
+elevation 0
 end
 arch sea
 x 1
 y 4
+elevation 0
 end
 arch sea
 x 1
 y 5
+elevation 0
 end
 arch sea
 x 1
 y 6
+elevation 0
 end
 arch sea
 x 1
 y 7
+elevation 0
 end
 arch sea
 x 1
 y 8
+elevation 0
 end
 arch sea
 x 1
 y 9
+elevation 0
 end
 arch sea
 x 1
 y 10
+elevation 0
 end
 arch sea
 x 1
 y 11
+elevation 0
 end
 arch sea
 x 1
 y 12
+elevation 0
 end
 arch sea
 x 1
 y 13
+elevation 0
 end
 arch sea
 x 1
 y 14
+elevation 0
 end
 arch sea
 x 1
 y 15
+elevation 0
 end
 arch sea
 x 1
 y 16
+elevation 0
 end
 arch sea
 x 1
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 1
 y 18
+elevation 0
 end
 arch sea
 x 1
@@ -399,6 +467,7 @@ end
 arch dungeon_magic
 x 1
 y 19
+elevation 0
 end
 arch sea
 x 1
@@ -407,6 +476,7 @@ end
 arch dungeon_magic
 x 1
 y 20
+elevation 0
 end
 arch sea1
 x 1
@@ -419,6 +489,7 @@ end
 arch dungeon_magic
 x 1
 y 21
+elevation 0
 end
 arch sea1
 x 1
@@ -431,6 +502,7 @@ end
 arch dungeon_magic
 x 1
 y 22
+elevation 0
 end
 arch sea
 x 1
@@ -439,6 +511,7 @@ end
 arch dungeon_magic
 x 1
 y 23
+elevation 0
 end
 arch sea
 x 1
@@ -447,6 +520,7 @@ end
 arch dungeon_magic
 x 1
 y 24
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -455,6 +529,7 @@ end
 arch dungeon_magic
 x 1
 y 25
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -467,6 +542,7 @@ end
 arch dungeon_magic
 x 1
 y 26
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -475,6 +551,7 @@ end
 arch dungeon_magic
 x 1
 y 27
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -487,6 +564,7 @@ end
 arch dungeon_magic
 x 1
 y 28
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -495,6 +573,7 @@ end
 arch dungeon_magic
 x 1
 y 29
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -503,6 +582,7 @@ end
 arch dungeon_magic
 x 1
 y 30
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -515,6 +595,7 @@ end
 arch dungeon_magic
 x 1
 y 31
+elevation 0
 end
 arch brush
 x 1
@@ -523,6 +604,7 @@ end
 arch dungeon_magic
 x 1
 y 32
+elevation 0
 end
 arch brush
 x 1
@@ -531,6 +613,7 @@ end
 arch dungeon_magic
 x 1
 y 33
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -539,6 +622,7 @@ end
 arch dungeon_magic
 x 1
 y 34
+elevation 0
 end
 arch grass
 x 1
@@ -550,13 +634,14 @@ name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
+unique 1
 x 1
 y 34
-unique 1
 end
 arch dungeon_magic
 x 1
 y 35
+elevation 0
 end
 arch grass
 x 1
@@ -565,6 +650,7 @@ end
 arch dungeon_magic
 x 1
 y 36
+elevation 0
 end
 arch grass
 x 1
@@ -573,6 +659,7 @@ end
 arch dungeon_magic
 x 1
 y 37
+elevation 0
 end
 arch grass
 x 1
@@ -581,6 +668,7 @@ end
 arch dungeon_magic
 x 1
 y 38
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -589,6 +677,7 @@ end
 arch dungeon_magic
 x 1
 y 39
+elevation 0
 end
 arch brush
 x 1
@@ -596,7 +685,6 @@ y 39
 end
 arch sign_w
 name Street of the Gods
-name_pl Street of the Gods
 msg
 Street of the Gods...
 On the back of the sign is some graffiti
@@ -605,12 +693,14 @@ in the presence of greatness,
 or thou shalt face the rath,
 of a God Scorned!  -- Eric the Cleric
 endmsg
+name_pl Street of the Gods
 x 1
 y 39
 end
 arch dungeon_magic
 x 1
 y 40
+elevation 0
 end
 arch brush
 x 1
@@ -628,6 +718,7 @@ end
 arch dungeon_magic
 x 1
 y 41
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -640,6 +731,7 @@ end
 arch dungeon_magic
 x 1
 y 42
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -652,6 +744,7 @@ end
 arch dungeon_magic
 x 1
 y 43
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -664,6 +757,7 @@ end
 arch dungeon_magic
 x 1
 y 44
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -676,6 +770,7 @@ end
 arch dungeon_magic
 x 1
 y 45
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -688,6 +783,7 @@ end
 arch dungeon_magic
 x 1
 y 46
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -700,6 +796,7 @@ end
 arch dungeon_magic
 x 1
 y 47
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -712,6 +809,7 @@ end
 arch dungeon_magic
 x 1
 y 48
+elevation 0
 end
 arch cobblestones2
 x 1
@@ -724,89 +822,109 @@ end
 arch dungeon_magic
 x 1
 y 49
+elevation 0
 end
 arch cobblestones2
 x 1
 y 49
 end
-arch cwall_3_1
+arch cwall_4
 x 1
 y 49
 end
 arch sea
 x 2
+elevation 0
 end
 arch sea
 x 2
 y 1
+elevation 0
 end
 arch sea
 x 2
 y 2
+elevation 0
 end
 arch sea
 x 2
 y 3
+elevation 0
 end
 arch sea
 x 2
 y 4
+elevation 0
 end
 arch sea
 x 2
 y 5
+elevation 0
 end
 arch sea
 x 2
 y 6
+elevation 0
 end
 arch sea
 x 2
 y 7
+elevation 0
 end
 arch sea
 x 2
 y 8
+elevation 0
 end
 arch sea
 x 2
 y 9
+elevation 0
 end
 arch sea
 x 2
 y 10
+elevation 0
 end
 arch sea
 x 2
 y 11
+elevation 0
 end
 arch sea
 x 2
 y 12
+elevation 0
 end
 arch sea
 x 2
 y 13
+elevation 0
 end
 arch sea
 x 2
 y 14
+elevation 0
 end
 arch sea
 x 2
 y 15
+elevation 0
 end
 arch sea
 x 2
 y 16
+elevation 0
 end
 arch sea
 x 2
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 2
 y 18
+elevation 0
 end
 arch sea
 x 2
@@ -815,6 +933,7 @@ end
 arch dungeon_magic
 x 2
 y 19
+elevation 0
 end
 arch sea
 x 2
@@ -823,6 +942,7 @@ end
 arch dungeon_magic
 x 2
 y 20
+elevation 0
 end
 arch sea1
 x 2
@@ -835,6 +955,7 @@ end
 arch dungeon_magic
 x 2
 y 21
+elevation 0
 end
 arch sea
 x 2
@@ -843,6 +964,7 @@ end
 arch dungeon_magic
 x 2
 y 22
+elevation 0
 end
 arch sea
 x 2
@@ -851,6 +973,7 @@ end
 arch dungeon_magic
 x 2
 y 23
+elevation 0
 end
 arch sea
 x 2
@@ -859,6 +982,7 @@ end
 arch dungeon_magic
 x 2
 y 24
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -867,6 +991,7 @@ end
 arch dungeon_magic
 x 2
 y 25
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -875,6 +1000,7 @@ end
 arch dungeon_magic
 x 2
 y 26
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -883,6 +1009,7 @@ end
 arch dungeon_magic
 x 2
 y 27
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -895,6 +1022,7 @@ end
 arch dungeon_magic
 x 2
 y 28
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -903,6 +1031,7 @@ end
 arch dungeon_magic
 x 2
 y 29
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -915,6 +1044,7 @@ end
 arch dungeon_magic
 x 2
 y 30
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -927,6 +1057,7 @@ end
 arch dungeon_magic
 x 2
 y 31
+elevation 0
 end
 arch brush
 x 2
@@ -939,6 +1070,7 @@ end
 arch dungeon_magic
 x 2
 y 32
+elevation 0
 end
 arch brush
 x 2
@@ -947,6 +1079,7 @@ end
 arch dungeon_magic
 x 2
 y 33
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -955,36 +1088,25 @@ end
 arch dungeon_magic
 x 2
 y 34
+elevation 0
 end
 arch grass
-x 2
-y 34
-end
-arch barrack_long
-name Apartment Building
-name_pl Apartment Building
-slaying /scorn/taverns/apartments
-hp 13
-sp 3
 x 2
 y 34
 end
 arch dungeon_magic
 x 2
 y 35
+elevation 0
 end
 arch grass
 x 2
 y 35
-end
-arch fountain
-x 2
-y 35
-speed_left -41.599998
 end
 arch dungeon_magic
 x 2
 y 36
+elevation 0
 end
 arch grass
 x 2
@@ -997,6 +1119,7 @@ end
 arch dungeon_magic
 x 2
 y 37
+elevation 0
 end
 arch grass
 x 2
@@ -1005,6 +1128,7 @@ end
 arch dungeon_magic
 x 2
 y 38
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1013,6 +1137,7 @@ end
 arch dungeon_magic
 x 2
 y 39
+elevation 0
 end
 arch grass
 x 2
@@ -1029,6 +1154,7 @@ end
 arch dungeon_magic
 x 2
 y 40
+elevation 0
 end
 arch brush
 x 2
@@ -1037,6 +1163,7 @@ end
 arch dungeon_magic
 x 2
 y 41
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1049,6 +1176,7 @@ end
 arch dungeon_magic
 x 2
 y 42
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1061,6 +1189,7 @@ end
 arch dungeon_magic
 x 2
 y 43
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1073,6 +1202,7 @@ end
 arch dungeon_magic
 x 2
 y 44
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1085,6 +1215,7 @@ end
 arch dungeon_magic
 x 2
 y 45
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1097,6 +1228,7 @@ end
 arch dungeon_magic
 x 2
 y 46
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1109,6 +1241,7 @@ end
 arch dungeon_magic
 x 2
 y 47
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1121,6 +1254,7 @@ end
 arch dungeon_magic
 x 2
 y 48
+elevation 0
 end
 arch cobblestones2
 x 2
@@ -1133,89 +1267,109 @@ end
 arch dungeon_magic
 x 2
 y 49
+elevation 0
 end
 arch cobblestones2
 x 2
 y 49
 end
-arch cwall_3_1
+arch cwall_4
 x 2
 y 49
 end
 arch sea
 x 3
+elevation 0
 end
 arch sea
 x 3
 y 1
+elevation 0
 end
 arch sea
 x 3
 y 2
+elevation 0
 end
 arch sea
 x 3
 y 3
+elevation 0
 end
 arch sea
 x 3
 y 4
+elevation 0
 end
 arch sea
 x 3
 y 5
+elevation 0
 end
 arch sea
 x 3
 y 6
+elevation 0
 end
 arch sea
 x 3
 y 7
+elevation 0
 end
 arch sea
 x 3
 y 8
+elevation 0
 end
 arch sea
 x 3
 y 9
+elevation 0
 end
 arch sea
 x 3
 y 10
+elevation 0
 end
 arch sea
 x 3
 y 11
+elevation 0
 end
 arch sea
 x 3
 y 12
+elevation 0
 end
 arch sea
 x 3
 y 13
+elevation 0
 end
 arch sea
 x 3
 y 14
+elevation 0
 end
 arch sea
 x 3
 y 15
+elevation 0
 end
 arch sea
 x 3
 y 16
+elevation 0
 end
 arch sea
 x 3
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 3
 y 18
+elevation 0
 end
 arch sea
 x 3
@@ -1224,6 +1378,7 @@ end
 arch dungeon_magic
 x 3
 y 19
+elevation 0
 end
 arch sea
 x 3
@@ -1232,6 +1387,7 @@ end
 arch dungeon_magic
 x 3
 y 20
+elevation 0
 end
 arch sea
 x 3
@@ -1240,6 +1396,7 @@ end
 arch dungeon_magic
 x 3
 y 21
+elevation 0
 end
 arch sea
 x 3
@@ -1252,6 +1409,7 @@ end
 arch dungeon_magic
 x 3
 y 22
+elevation 0
 end
 arch sea1
 x 3
@@ -1260,6 +1418,7 @@ end
 arch dungeon_magic
 x 3
 y 23
+elevation 0
 end
 arch sea
 x 3
@@ -1268,20 +1427,22 @@ end
 arch dungeon_magic
 x 3
 y 24
+elevation 0
 end
 arch cobblestones
 x 3
 y 24
 end
 arch gravestone2
-x 3
-y 24
 no_pick 1
 no_pass 1
+x 3
+y 24
 end
 arch dungeon_magic
 x 3
 y 25
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1290,6 +1451,7 @@ end
 arch dungeon_magic
 x 3
 y 26
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1298,6 +1460,7 @@ end
 arch dungeon_magic
 x 3
 y 27
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1310,6 +1473,7 @@ end
 arch dungeon_magic
 x 3
 y 28
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1322,6 +1486,7 @@ end
 arch dungeon_magic
 x 3
 y 29
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1330,6 +1495,7 @@ end
 arch dungeon_magic
 x 3
 y 30
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1342,6 +1508,7 @@ end
 arch dungeon_magic
 x 3
 y 31
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1354,6 +1521,7 @@ end
 arch dungeon_magic
 x 3
 y 32
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1361,7 +1529,6 @@ y 32
 end
 arch sign_w
 name Street of Merchants
-name_pl Street of Merchants
 msg
 Street of Merchants...
 We the merchants of Scorn cater to the
@@ -1369,12 +1536,14 @@ needs of all adventurers. If you
 need Food, Equipment, Armour, Weapons,
 Magic, come and see us
 endmsg
+name_pl Street of Merchants
 x 3
 y 32
 end
 arch dungeon_magic
 x 3
 y 33
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1383,47 +1552,43 @@ end
 arch dungeon_magic
 x 3
 y 34
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 3
 y 34
 end
 arch dungeon_magic
 x 3
 y 35
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 3
 y 35
 end
 arch dungeon_magic
 x 3
 y 36
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 3
 y 36
 end
 arch dungeon_magic
 x 3
 y 37
+elevation 0
 end
-arch grass
-x 3
-y 37
-end
-arch tavern
-name Beginners
-name_pl Beginners
-slaying /scorn/misc/beginners
-hp 14
-sp 28
+arch cobblestones2
 x 3
 y 37
 end
 arch dungeon_magic
 x 3
 y 38
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1432,6 +1597,7 @@ end
 arch dungeon_magic
 x 3
 y 39
+elevation 0
 end
 arch grass
 x 3
@@ -1444,6 +1610,7 @@ end
 arch dungeon_magic
 x 3
 y 40
+elevation 0
 end
 arch brush
 x 3
@@ -1456,6 +1623,7 @@ end
 arch dungeon_magic
 x 3
 y 41
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1468,6 +1636,7 @@ end
 arch dungeon_magic
 x 3
 y 42
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1480,6 +1649,7 @@ end
 arch dungeon_magic
 x 3
 y 43
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1492,19 +1662,21 @@ end
 arch dungeon_magic
 x 3
 y 44
+elevation 0
 end
 arch brush
 x 3
 y 44
 end
 arch fountain
+speed_left -94.099998
 x 3
 y 44
-speed_left -94.099998
 end
 arch dungeon_magic
 x 3
 y 45
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1513,6 +1685,7 @@ end
 arch dungeon_magic
 x 3
 y 46
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1521,19 +1694,21 @@ end
 arch dungeon_magic
 x 3
 y 47
+elevation 0
 end
 arch brush
 x 3
 y 47
 end
 arch fountain
+speed_left -94.099998
 x 3
 y 47
-speed_left -94.099998
 end
 arch dungeon_magic
 x 3
 y 48
+elevation 0
 end
 arch cobblestones2
 x 3
@@ -1546,89 +1721,109 @@ end
 arch dungeon_magic
 x 3
 y 49
+elevation 0
 end
 arch cobblestones2
 x 3
 y 49
 end
-arch cwall_3_1
+arch cwall_3_4
 x 3
 y 49
 end
 arch sea
 x 4
+elevation 0
 end
 arch sea
 x 4
 y 1
+elevation 0
 end
 arch sea
 x 4
 y 2
+elevation 0
 end
 arch sea
 x 4
 y 3
+elevation 0
 end
 arch sea
 x 4
 y 4
+elevation 0
 end
 arch sea
 x 4
 y 5
+elevation 0
 end
 arch sea
 x 4
 y 6
+elevation 0
 end
 arch sea
 x 4
 y 7
+elevation 0
 end
 arch brush
 x 4
 y 8
+elevation 0
 end
 arch grass
 x 4
 y 9
+elevation 0
 end
 arch sea
 x 4
 y 10
+elevation 0
 end
 arch sea
 x 4
 y 11
+elevation 0
 end
 arch sea
 x 4
 y 12
+elevation 0
 end
 arch sea
 x 4
 y 13
+elevation 0
 end
 arch sea
 x 4
 y 14
+elevation 0
 end
 arch sea
 x 4
 y 15
+elevation 0
 end
 arch sea
 x 4
 y 16
+elevation 0
 end
 arch sea
 x 4
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 4
 y 18
+elevation 0
 end
 arch sea
 x 4
@@ -1637,6 +1832,7 @@ end
 arch dungeon_magic
 x 4
 y 19
+elevation 0
 end
 arch sea
 x 4
@@ -1645,6 +1841,7 @@ end
 arch dungeon_magic
 x 4
 y 20
+elevation 0
 end
 arch sea
 x 4
@@ -1653,6 +1850,7 @@ end
 arch dungeon_magic
 x 4
 y 21
+elevation 0
 end
 arch sea
 x 4
@@ -1661,6 +1859,7 @@ end
 arch dungeon_magic
 x 4
 y 22
+elevation 0
 end
 arch sea1
 x 4
@@ -1669,6 +1868,7 @@ end
 arch dungeon_magic
 x 4
 y 23
+elevation 0
 end
 arch sea
 x 4
@@ -1677,6 +1877,7 @@ end
 arch dungeon_magic
 x 4
 y 24
+elevation 0
 end
 arch cobblestones
 x 4
@@ -1689,6 +1890,7 @@ end
 arch dungeon_magic
 x 4
 y 25
+elevation 0
 end
 arch magic_mouth
 msg
@@ -1709,6 +1911,7 @@ end
 arch dungeon_magic
 x 4
 y 26
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1724,6 +1927,7 @@ end
 arch dungeon_magic
 x 4
 y 27
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1732,6 +1936,7 @@ end
 arch dungeon_magic
 x 4
 y 28
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1740,6 +1945,7 @@ end
 arch dungeon_magic
 x 4
 y 29
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1748,6 +1954,7 @@ end
 arch dungeon_magic
 x 4
 y 30
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1762,6 +1969,7 @@ end
 arch dungeon_magic
 x 4
 y 31
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1777,6 +1985,7 @@ end
 arch dungeon_magic
 x 4
 y 32
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1785,6 +1994,7 @@ end
 arch dungeon_magic
 x 4
 y 33
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1793,30 +2003,34 @@ end
 arch dungeon_magic
 x 4
 y 34
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 4
 y 34
 end
 arch dungeon_magic
 x 4
 y 35
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 4
 y 35
 end
 arch dungeon_magic
 x 4
 y 36
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 4
 y 36
 end
 arch dungeon_magic
 x 4
 y 37
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1825,6 +2039,7 @@ end
 arch dungeon_magic
 x 4
 y 38
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1833,6 +2048,7 @@ end
 arch dungeon_magic
 x 4
 y 39
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1841,6 +2057,7 @@ end
 arch dungeon_magic
 x 4
 y 40
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1849,6 +2066,7 @@ end
 arch dungeon_magic
 x 4
 y 41
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1857,6 +2075,7 @@ end
 arch dungeon_magic
 x 4
 y 42
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1865,6 +2084,7 @@ end
 arch dungeon_magic
 x 4
 y 43
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1873,6 +2093,7 @@ end
 arch dungeon_magic
 x 4
 y 44
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1881,6 +2102,7 @@ end
 arch dungeon_magic
 x 4
 y 45
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1889,6 +2111,7 @@ end
 arch dungeon_magic
 x 4
 y 46
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1897,6 +2120,7 @@ end
 arch dungeon_magic
 x 4
 y 47
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1905,6 +2129,7 @@ end
 arch dungeon_magic
 x 4
 y 48
+elevation 0
 end
 arch cobblestones2
 x 4
@@ -1913,89 +2138,105 @@ end
 arch dungeon_magic
 x 4
 y 49
+elevation 0
 end
 arch cobblestones2
 x 4
 y 49
 end
-arch cwall_2_1_2
-x 4
-y 49
-end
 arch sea
 x 5
+elevation 0
 end
 arch sea
 x 5
 y 1
+elevation 0
 end
 arch sea
 x 5
 y 2
+elevation 0
 end
 arch sea
 x 5
 y 3
+elevation 0
 end
 arch sea
 x 5
 y 4
+elevation 0
 end
 arch sea
 x 5
 y 5
+elevation 0
 end
 arch sea
 x 5
 y 6
+elevation 0
 end
 arch sea
 x 5
 y 7
+elevation 0
 end
 arch brush
 x 5
 y 8
+elevation 0
 end
 arch grass
 x 5
 y 9
+elevation 0
 end
 arch brush
 x 5
 y 10
+elevation 0
 end
 arch sea
 x 5
 y 11
+elevation 0
 end
 arch sea
 x 5
 y 12
+elevation 0
 end
 arch sea
 x 5
 y 13
+elevation 0
 end
 arch sea
 x 5
 y 14
+elevation 0
 end
 arch sea
 x 5
 y 15
+elevation 0
 end
 arch sea
 x 5
 y 16
+elevation 0
 end
 arch sea
 x 5
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 5
 y 18
+elevation 0
 end
 arch sea
 x 5
@@ -2004,6 +2245,7 @@ end
 arch dungeon_magic
 x 5
 y 19
+elevation 0
 end
 arch sea
 x 5
@@ -2012,6 +2254,7 @@ end
 arch dungeon_magic
 x 5
 y 20
+elevation 0
 end
 arch sea
 x 5
@@ -2020,6 +2263,7 @@ end
 arch dungeon_magic
 x 5
 y 21
+elevation 0
 end
 arch sea
 x 5
@@ -2028,6 +2272,7 @@ end
 arch dungeon_magic
 x 5
 y 22
+elevation 0
 end
 arch sea1
 x 5
@@ -2040,6 +2285,7 @@ end
 arch dungeon_magic
 x 5
 y 23
+elevation 0
 end
 arch sea
 x 5
@@ -2048,20 +2294,22 @@ end
 arch dungeon_magic
 x 5
 y 24
+elevation 0
 end
 arch cobblestones
 x 5
 y 24
 end
 arch gravestone2
-x 5
-y 24
 no_pick 1
 no_pass 1
+x 5
+y 24
 end
 arch dungeon_magic
 x 5
 y 25
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2070,6 +2318,7 @@ end
 arch dungeon_magic
 x 5
 y 26
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2078,6 +2327,7 @@ end
 arch dungeon_magic
 x 5
 y 27
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2086,6 +2336,7 @@ end
 arch dungeon_magic
 x 5
 y 28
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2094,6 +2345,7 @@ end
 arch dungeon_magic
 x 5
 y 29
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2102,6 +2354,7 @@ end
 arch dungeon_magic
 x 5
 y 30
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2114,6 +2367,7 @@ end
 arch dungeon_magic
 x 5
 y 31
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2126,6 +2380,7 @@ end
 arch dungeon_magic
 x 5
 y 32
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2133,16 +2388,17 @@ y 32
 end
 arch sign
 name To the Port
-name_pl To the Port
 msg
 Port Area of Scorn
 endmsg
+name_pl To the Port
 x 5
 y 32
 end
 arch dungeon_magic
 x 5
 y 33
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2151,53 +2407,37 @@ end
 arch dungeon_magic
 x 5
 y 34
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 5
 y 34
 end
 arch dungeon_magic
 x 5
 y 35
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
+x 5
+y 35
+end
+arch fountain
+speed_left -41.599998
 x 5
 y 35
 end
 arch dungeon_magic
 x 5
 y 36
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 5
 y 36
 end
-arch dungeon_magic
-x 5
-y 37
-end
-arch magic_mouth
-msg
----------------------------------------
-Welcome to Crossfire.
-To read these signs walk onto them
-and press `a' to apply. The same
-command will allow you to enter and
-leave any open buildings and dungeons.
-Apply to a `Bed of Reality' to save.
-Enjoy.
----------------------------------------
-endmsg
-x 5
-y 37
-end
-arch cobblestones2
-x 5
-y 37
-end
 arch sign
 name Central Square of Scorn
-name_pl Central Square of Scorn
 msg
 Read The Signs to the right for
 information on where to go and do.
@@ -2205,12 +2445,23 @@ information on where to go and do.
 WARNING: Magic is not permitted
 within Scorn city limits.
 endmsg
+name_pl Central Square of Scorn
+x 5
+y 36
+end
+arch dungeon_magic
+x 5
+y 37
+elevation 0
+end
+arch cobblestones
 x 5
 y 37
 end
 arch dungeon_magic
 x 5
 y 38
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2219,6 +2470,7 @@ end
 arch dungeon_magic
 x 5
 y 39
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2227,6 +2479,7 @@ end
 arch dungeon_magic
 x 5
 y 40
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2235,6 +2488,7 @@ end
 arch dungeon_magic
 x 5
 y 41
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2243,6 +2497,7 @@ end
 arch dungeon_magic
 x 5
 y 42
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2251,6 +2506,7 @@ end
 arch dungeon_magic
 x 5
 y 43
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2259,6 +2515,7 @@ end
 arch dungeon_magic
 x 5
 y 44
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2267,6 +2524,7 @@ end
 arch dungeon_magic
 x 5
 y 45
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2275,6 +2533,7 @@ end
 arch dungeon_magic
 x 5
 y 46
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2283,6 +2542,7 @@ end
 arch dungeon_magic
 x 5
 y 47
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2291,6 +2551,7 @@ end
 arch dungeon_magic
 x 5
 y 48
+elevation 0
 end
 arch cobblestones2
 x 5
@@ -2299,89 +2560,105 @@ end
 arch dungeon_magic
 x 5
 y 49
+elevation 0
 end
 arch cobblestones2
 x 5
 y 49
 end
-arch cwall_2_1_2
-x 5
-y 49
-end
 arch sea
 x 6
+elevation 0
 end
 arch sea
 x 6
 y 1
+elevation 0
 end
 arch sea
 x 6
 y 2
+elevation 0
 end
 arch sea
 x 6
 y 3
+elevation 0
 end
 arch sea
 x 6
 y 4
+elevation 0
 end
 arch sea
 x 6
 y 5
+elevation 0
 end
 arch sea
 x 6
 y 6
+elevation 0
 end
 arch shallow_sea
 x 6
 y 7
+elevation 0
 end
 arch brush
 x 6
 y 8
+elevation 0
 end
 arch grass
 x 6
 y 9
+elevation 0
 end
 arch shallow_sea
 x 6
 y 10
+elevation 0
 end
 arch sea
 x 6
 y 11
+elevation 0
 end
 arch sea
 x 6
 y 12
+elevation 0
 end
 arch sea
 x 6
 y 13
+elevation 0
 end
 arch sea
 x 6
 y 14
+elevation 0
 end
 arch sea
 x 6
 y 15
+elevation 0
 end
 arch sea
 x 6
 y 16
+elevation 0
 end
 arch sea
 x 6
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 6
 y 18
+elevation 0
 end
 arch sea
 x 6
@@ -2390,6 +2667,7 @@ end
 arch dungeon_magic
 x 6
 y 19
+elevation 0
 end
 arch sea
 x 6
@@ -2398,6 +2676,7 @@ end
 arch dungeon_magic
 x 6
 y 20
+elevation 0
 end
 arch sea1
 x 6
@@ -2410,6 +2689,7 @@ end
 arch dungeon_magic
 x 6
 y 21
+elevation 0
 end
 arch sea1
 x 6
@@ -2422,6 +2702,7 @@ end
 arch dungeon_magic
 x 6
 y 22
+elevation 0
 end
 arch sea1
 x 6
@@ -2434,6 +2715,7 @@ end
 arch dungeon_magic
 x 6
 y 23
+elevation 0
 end
 arch sea1
 x 6
@@ -2446,6 +2728,7 @@ end
 arch dungeon_magic
 x 6
 y 24
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2454,6 +2737,7 @@ end
 arch dungeon_magic
 x 6
 y 25
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2471,6 +2755,7 @@ end
 arch dungeon_magic
 x 6
 y 26
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2479,6 +2764,7 @@ end
 arch dungeon_magic
 x 6
 y 27
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2487,6 +2773,7 @@ end
 arch dungeon_magic
 x 6
 y 28
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2499,6 +2786,7 @@ end
 arch dungeon_magic
 x 6
 y 29
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2507,6 +2795,7 @@ end
 arch dungeon_magic
 x 6
 y 30
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2519,6 +2808,7 @@ end
 arch dungeon_magic
 x 6
 y 31
+elevation 0
 end
 arch brush
 x 6
@@ -2536,6 +2826,7 @@ end
 arch dungeon_magic
 x 6
 y 32
+elevation 0
 end
 arch grass
 x 6
@@ -2544,6 +2835,7 @@ end
 arch dungeon_magic
 x 6
 y 33
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2552,48 +2844,34 @@ end
 arch dungeon_magic
 x 6
 y 34
+elevation 0
 end
-arch grass
-x 6
-y 34
-end
-arch sign_e
-name Road of Riches
-name_pl Road of Riches
-msg
-Road of Riches...
-endmsg
+arch cobblestones
 x 6
 y 34
 end
 arch dungeon_magic
 x 6
 y 35
+elevation 0
 end
-arch grass
-x 6
-y 35
-end
-arch inn
-name Wanderer Inn
-name_pl Wanderer Inn
-slaying /scorn/taverns/inn
-hp 8
-sp 15
+arch cobblestones
 x 6
 y 35
 end
 arch dungeon_magic
 x 6
 y 36
+elevation 0
 end
-arch cobblestones2
+arch cobblestones
 x 6
 y 36
 end
 arch dungeon_magic
 x 6
 y 37
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2601,25 +2879,26 @@ y 37
 end
 arch sign
 name General Information
-name_pl General Information
 msg
 Safe Places to visit...
-Wanderer Central Inn (Sleep to save!)
+Wanderer Inn (Sleep to save!)
 Pirate Inn (in port area)
 Goth's tavern (near GuardHouse)
 City Hall (west of central square)
-Zoo (sw wall) place to see many monsters
-Patch's house (South wall)
+Zoo (Zoo Road) place to see many monsters
+Patch's house (Wanderer's Way)
 Central Library
 Prison of Scorn
 And all the stores
 endmsg
+name_pl General Information
 x 6
 y 37
 end
 arch dungeon_magic
 x 6
 y 38
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2628,6 +2907,7 @@ end
 arch dungeon_magic
 x 6
 y 39
+elevation 0
 end
 arch brush
 x 6
@@ -2645,6 +2925,7 @@ end
 arch dungeon_magic
 x 6
 y 40
+elevation 0
 end
 arch grass
 x 6
@@ -2653,29 +2934,25 @@ end
 arch dungeon_magic
 x 6
 y 41
+elevation 0
 end
-arch brush
-x 6
-y 41
-end
-arch city_tower
-name Newbie Tower
-name_pl Newbie Tower
-slaying /scorn/towers/tower
+arch grass
 x 6
 y 41
 end
 arch dungeon_magic
 x 6
 y 42
+elevation 0
 end
-arch brush
+arch grass
 x 6
 y 42
 end
 arch dungeon_magic
 x 6
 y 43
+elevation 0
 end
 arch grass
 x 6
@@ -2691,6 +2968,7 @@ end
 arch dungeon_magic
 x 6
 y 44
+elevation 0
 end
 arch grass
 x 6
@@ -2703,6 +2981,7 @@ end
 arch dungeon_magic
 x 6
 y 45
+elevation 0
 end
 arch brush
 x 6
@@ -2710,16 +2989,17 @@ y 45
 end
 arch sign_e
 name Zoo Road
-name_pl Zoo Road
 msg
 Zoo Road...
 endmsg
+name_pl Zoo Road
 x 6
 y 45
 end
 arch dungeon_magic
 x 6
 y 46
+elevation 0
 end
 arch cobblestones2
 x 6
@@ -2728,10 +3008,20 @@ end
 arch dungeon_magic
 x 6
 y 47
+elevation 0
+end
+arch cobblestones2
+x 6
+y 47
+end
+arch dungeon_magic
+x 6
+y 48
+elevation 0
 end
 arch grass
 x 6
-y 47
+y 48
 end
 arch church
 name Undead Church
@@ -2740,102 +3030,110 @@ slaying /scorn/misc/church
 hp 10
 sp 15
 x 6
-y 47
-end
-arch dungeon_magic
-x 6
-y 48
-end
-arch grass
-x 6
 y 48
 end
 arch dungeon_magic
 x 6
 y 49
+elevation 0
 end
 arch grass
-x 6
-y 49
-end
-arch cwall_2_1_2
 x 6
 y 49
 end
 arch sea
 x 7
+elevation 0
 end
 arch sea
 x 7
 y 1
+elevation 0
 end
 arch sea
 x 7
 y 2
+elevation 0
 end
 arch sea
 x 7
 y 3
+elevation 0
 end
 arch sea
 x 7
 y 4
+elevation 0
 end
 arch sea
 x 7
 y 5
+elevation 0
 end
 arch sea
 x 7
 y 6
+elevation 0
 end
 arch sea
 x 7
 y 7
+elevation 0
 end
 arch shallow_sea
 x 7
 y 8
+elevation 0
 end
 arch shallow_sea
 x 7
 y 9
+elevation 0
 end
 arch sea
 x 7
 y 10
+elevation 0
 end
 arch sea
 x 7
 y 11
+elevation 0
 end
 arch sea
 x 7
 y 12
+elevation 0
 end
 arch sea
 x 7
 y 13
+elevation 0
 end
 arch sea
 x 7
 y 14
+elevation 0
 end
 arch sea
 x 7
 y 15
+elevation 0
 end
 arch sea
 x 7
 y 16
+elevation 0
 end
 arch sea
 x 7
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 7
 y 18
+elevation 0
 end
 arch sea
 x 7
@@ -2844,6 +3142,7 @@ end
 arch dungeon_magic
 x 7
 y 19
+elevation 0
 end
 arch sea
 x 7
@@ -2852,6 +3151,7 @@ end
 arch dungeon_magic
 x 7
 y 20
+elevation 0
 end
 arch sea1
 x 7
@@ -2864,6 +3164,7 @@ end
 arch dungeon_magic
 x 7
 y 21
+elevation 0
 end
 arch sea
 x 7
@@ -2872,6 +3173,7 @@ end
 arch dungeon_magic
 x 7
 y 22
+elevation 0
 end
 arch sea
 x 7
@@ -2880,6 +3182,7 @@ end
 arch dungeon_magic
 x 7
 y 23
+elevation 0
 end
 arch sea
 x 7
@@ -2888,6 +3191,7 @@ end
 arch dungeon_magic
 x 7
 y 24
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2896,6 +3200,7 @@ end
 arch dungeon_magic
 x 7
 y 25
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2904,6 +3209,7 @@ end
 arch dungeon_magic
 x 7
 y 26
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2912,6 +3218,7 @@ end
 arch dungeon_magic
 x 7
 y 27
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2920,6 +3227,7 @@ end
 arch dungeon_magic
 x 7
 y 28
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2932,6 +3240,7 @@ end
 arch dungeon_magic
 x 7
 y 29
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2949,6 +3258,7 @@ end
 arch dungeon_magic
 x 7
 y 30
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2961,6 +3271,7 @@ end
 arch dungeon_magic
 x 7
 y 31
+elevation 0
 end
 arch brush
 x 7
@@ -2969,6 +3280,7 @@ end
 arch dungeon_magic
 x 7
 y 32
+elevation 0
 end
 arch grass
 x 7
@@ -2977,6 +3289,7 @@ end
 arch dungeon_magic
 x 7
 y 33
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -2985,26 +3298,25 @@ end
 arch dungeon_magic
 x 7
 y 34
+elevation 0
 end
-arch grass
-x 7
-y 34
-end
-arch lamppost
+arch cobblestones2
 x 7
 y 34
 end
 arch dungeon_magic
 x 7
 y 35
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 7
 y 35
 end
 arch dungeon_magic
 x 7
 y 36
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -3013,6 +3325,7 @@ end
 arch dungeon_magic
 x 7
 y 37
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -3020,7 +3333,6 @@ y 37
 end
 arch sign
 name Beginner Dungeons
-name_pl Beginner Dungeons
 msg
 Beginner Dungeons:
 Beginners. (four paces west)
@@ -3039,12 +3351,14 @@ Houser of Porters (near fenced area)
 Fun House (North side of main road)
 Alfalfa's House (next to Potion Shop)
 endmsg
+name_pl Beginner Dungeons
 x 7
 y 37
 end
 arch dungeon_magic
 x 7
 y 38
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -3053,6 +3367,7 @@ end
 arch dungeon_magic
 x 7
 y 39
+elevation 0
 end
 arch grass
 x 7
@@ -3061,6 +3376,7 @@ end
 arch dungeon_magic
 x 7
 y 40
+elevation 0
 end
 arch brush
 x 7
@@ -3069,6 +3385,7 @@ end
 arch dungeon_magic
 x 7
 y 41
+elevation 0
 end
 arch grass
 x 7
@@ -3077,6 +3394,7 @@ end
 arch dungeon_magic
 x 7
 y 42
+elevation 0
 end
 arch brush
 x 7
@@ -3085,6 +3403,7 @@ end
 arch dungeon_magic
 x 7
 y 43
+elevation 0
 end
 arch grass
 x 7
@@ -3093,6 +3412,7 @@ end
 arch dungeon_magic
 x 7
 y 44
+elevation 0
 end
 arch brush
 x 7
@@ -3101,6 +3421,7 @@ end
 arch dungeon_magic
 x 7
 y 45
+elevation 0
 end
 arch brush
 x 7
@@ -3118,6 +3439,7 @@ end
 arch dungeon_magic
 x 7
 y 46
+elevation 0
 end
 arch cobblestones2
 x 7
@@ -3126,14 +3448,16 @@ end
 arch dungeon_magic
 x 7
 y 47
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 7
 y 47
 end
 arch dungeon_magic
 x 7
 y 48
+elevation 0
 end
 arch grass
 x 7
@@ -3142,89 +3466,105 @@ end
 arch dungeon_magic
 x 7
 y 49
+elevation 0
 end
 arch grass
 x 7
 y 49
 end
-arch cwall_2_1_2
-x 7
-y 49
-end
 arch sea
 x 8
+elevation 0
 end
 arch sea
 x 8
 y 1
+elevation 0
 end
 arch sea
 x 8
 y 2
+elevation 0
 end
 arch sea
 x 8
 y 3
+elevation 0
 end
 arch sea
 x 8
 y 4
+elevation 0
 end
 arch sea
 x 8
 y 5
+elevation 0
 end
 arch sea
 x 8
 y 6
+elevation 0
 end
 arch sea
 x 8
 y 7
+elevation 0
 end
 arch sea
 x 8
 y 8
+elevation 0
 end
 arch sea
 x 8
 y 9
+elevation 0
 end
 arch sea
 x 8
 y 10
+elevation 0
 end
 arch sea
 x 8
 y 11
+elevation 0
 end
 arch sea
 x 8
 y 12
+elevation 0
 end
 arch sea
 x 8
 y 13
+elevation 0
 end
 arch sea
 x 8
 y 14
+elevation 0
 end
 arch sea
 x 8
 y 15
+elevation 0
 end
 arch sea
 x 8
 y 16
+elevation 0
 end
 arch sea
 x 8
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 8
 y 18
+elevation 0
 end
 arch sea
 x 8
@@ -3233,6 +3573,7 @@ end
 arch dungeon_magic
 x 8
 y 19
+elevation 0
 end
 arch sea
 x 8
@@ -3245,6 +3586,7 @@ end
 arch dungeon_magic
 x 8
 y 20
+elevation 0
 end
 arch sea1
 x 8
@@ -3253,6 +3595,7 @@ end
 arch dungeon_magic
 x 8
 y 21
+elevation 0
 end
 arch sea
 x 8
@@ -3270,6 +3613,7 @@ end
 arch dungeon_magic
 x 8
 y 22
+elevation 0
 end
 arch sea1
 x 8
@@ -3278,6 +3622,7 @@ end
 arch dungeon_magic
 x 8
 y 23
+elevation 0
 end
 arch sea
 x 8
@@ -3286,6 +3631,7 @@ end
 arch dungeon_magic
 x 8
 y 24
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3294,6 +3640,7 @@ end
 arch dungeon_magic
 x 8
 y 25
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3302,6 +3649,7 @@ end
 arch dungeon_magic
 x 8
 y 26
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3310,6 +3658,7 @@ end
 arch dungeon_magic
 x 8
 y 27
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3318,6 +3667,7 @@ end
 arch dungeon_magic
 x 8
 y 28
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3326,6 +3676,7 @@ end
 arch dungeon_magic
 x 8
 y 29
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3334,6 +3685,7 @@ end
 arch dungeon_magic
 x 8
 y 30
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3346,6 +3698,7 @@ end
 arch dungeon_magic
 x 8
 y 31
+elevation 0
 end
 arch grass
 x 8
@@ -3354,19 +3707,21 @@ end
 arch dungeon_magic
 x 8
 y 32
+elevation 0
 end
 arch grass
 x 8
 y 32
 end
 arch fountain
+speed_left -41.599998
 x 8
 y 32
-speed_left -41.599998
 end
 arch dungeon_magic
 x 8
 y 33
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3375,18 +3730,25 @@ end
 arch dungeon_magic
 x 8
 y 34
+elevation 0
 end
 arch grass
 x 8
 y 34
 end
-arch house_2
+arch sign_e
+name Road of Riches
+msg
+Road of Riches...
+endmsg
+name_pl Road of Riches
 x 8
 y 34
 end
 arch dungeon_magic
 x 8
 y 35
+elevation 0
 end
 arch grass
 x 8
@@ -3394,8 +3756,6 @@ y 35
 end
 arch house_2
 name Random House
-name_pl Random House
-slaying /!
 msg
 layoutstyle onion
 floorstyle indoor
@@ -3405,12 +3765,15 @@ dungeon_level 1
 dungeon_depth 1
 decorstyle furniture
 endmsg
+name_pl Random House
+slaying /!
 x 8
 y 35
 end
 arch dungeon_magic
 x 8
 y 36
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3419,6 +3782,7 @@ end
 arch dungeon_magic
 x 8
 y 37
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3426,7 +3790,6 @@ y 37
 end
 arch sign
 name Advanced Dungeons
-name_pl Advanced Dungeons
 msg
 Advanced Dungeons:
 Prison Courtyard
@@ -3440,12 +3803,14 @@ Haunted House (South East of lake)
 Old Mansion (South of East Gate)
 Puddings Place (near Prison)
 endmsg
+name_pl Advanced Dungeons
 x 8
 y 37
 end
 arch dungeon_magic
 x 8
 y 38
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3454,6 +3819,7 @@ end
 arch dungeon_magic
 x 8
 y 39
+elevation 0
 end
 arch grass
 x 8
@@ -3469,6 +3835,7 @@ end
 arch dungeon_magic
 x 8
 y 40
+elevation 0
 end
 arch grass
 x 8
@@ -3477,6 +3844,7 @@ end
 arch dungeon_magic
 x 8
 y 41
+elevation 0
 end
 arch grass
 x 8
@@ -3485,6 +3853,7 @@ end
 arch dungeon_magic
 x 8
 y 42
+elevation 0
 end
 arch grass
 x 8
@@ -3493,6 +3862,7 @@ end
 arch dungeon_magic
 x 8
 y 43
+elevation 0
 end
 arch brush
 x 8
@@ -3501,6 +3871,7 @@ end
 arch dungeon_magic
 x 8
 y 44
+elevation 0
 end
 arch grass
 x 8
@@ -3509,6 +3880,7 @@ end
 arch dungeon_magic
 x 8
 y 45
+elevation 0
 end
 arch grass
 x 8
@@ -3517,6 +3889,7 @@ end
 arch dungeon_magic
 x 8
 y 46
+elevation 0
 end
 arch cobblestones2
 x 8
@@ -3525,27 +3898,29 @@ end
 arch dungeon_magic
 x 8
 y 47
+elevation 0
 end
-arch grass
-x 8
-y 47
-end
-arch farmhouse
-name Patch's House
-name_pl Patch's House
-slaying /scorn/houses/house2
-hp 10
-sp 1
+arch cobblestones2
 x 8
 y 47
 end
 arch dungeon_magic
 x 8
 y 48
+elevation 0
 end
 arch grass
 x 8
 y 48
+end
+arch dungeon_magic
+x 8
+y 49
+elevation 0
+end
+arch grass
+x 8
+y 49
 end
 arch well
 name Dark Well
@@ -3554,94 +3929,101 @@ slaying /scorn/oldcity/oldcity7
 hp 5
 sp 38
 x 8
-y 48
-end
-arch dungeon_magic
-x 8
-y 49
-end
-arch grass
-x 8
-y 49
-end
-arch cwall_2_1_2
-x 8
 y 49
 end
 arch shallow_sea
 x 9
+elevation 0
 end
 arch sea
 x 9
 y 1
+elevation 0
 end
 arch sea
 x 9
 y 2
+elevation 0
 end
 arch sea
 x 9
 y 3
+elevation 0
 end
 arch sea
 x 9
 y 4
+elevation 0
 end
 arch sea
 x 9
 y 5
+elevation 0
 end
 arch sea
 x 9
 y 6
+elevation 0
 end
 arch sea
 x 9
 y 7
+elevation 0
 end
 arch sea
 x 9
 y 8
+elevation 0
 end
 arch sea
 x 9
 y 9
+elevation 0
 end
 arch sea
 x 9
 y 10
+elevation 0
 end
 arch sea
 x 9
 y 11
+elevation 0
 end
 arch sea
 x 9
 y 12
+elevation 0
 end
 arch sea
 x 9
 y 13
+elevation 0
 end
 arch sea
 x 9
 y 14
+elevation 0
 end
 arch sea
 x 9
 y 15
+elevation 0
 end
 arch sea
 x 9
 y 16
+elevation 0
 end
 arch sea
 x 9
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 9
 y 18
+elevation 0
 end
 arch sea
 x 9
@@ -3650,6 +4032,7 @@ end
 arch dungeon_magic
 x 9
 y 19
+elevation 0
 end
 arch sea
 x 9
@@ -3658,6 +4041,7 @@ end
 arch dungeon_magic
 x 9
 y 20
+elevation 0
 end
 arch sea1
 x 9
@@ -3666,6 +4050,7 @@ end
 arch dungeon_magic
 x 9
 y 21
+elevation 0
 end
 arch sea
 x 9
@@ -3674,6 +4059,7 @@ end
 arch dungeon_magic
 x 9
 y 22
+elevation 0
 end
 arch sea1
 x 9
@@ -3682,6 +4068,7 @@ end
 arch dungeon_magic
 x 9
 y 23
+elevation 0
 end
 arch sea
 x 9
@@ -3690,6 +4077,7 @@ end
 arch dungeon_magic
 x 9
 y 24
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3698,6 +4086,7 @@ end
 arch dungeon_magic
 x 9
 y 25
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3715,6 +4104,7 @@ end
 arch dungeon_magic
 x 9
 y 26
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3723,6 +4113,7 @@ end
 arch dungeon_magic
 x 9
 y 27
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3731,6 +4122,7 @@ end
 arch dungeon_magic
 x 9
 y 28
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3745,6 +4137,7 @@ end
 arch dungeon_magic
 x 9
 y 29
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3753,6 +4146,7 @@ end
 arch dungeon_magic
 x 9
 y 30
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3765,6 +4159,7 @@ end
 arch dungeon_magic
 x 9
 y 31
+elevation 0
 end
 arch grass
 x 9
@@ -3782,6 +4177,7 @@ end
 arch dungeon_magic
 x 9
 y 32
+elevation 0
 end
 arch grass
 x 9
@@ -3790,6 +4186,7 @@ end
 arch dungeon_magic
 x 9
 y 33
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3798,35 +4195,33 @@ end
 arch dungeon_magic
 x 9
 y 34
+elevation 0
 end
 arch grass
 x 9
 y 34
 end
-arch house_2
+arch lamppost
 x 9
 y 34
 end
 arch dungeon_magic
 x 9
 y 35
+elevation 0
 end
 arch grass
 x 9
 y 35
 end
-arch house_small
-name The Jones'
-name_pl The Jones'
-slaying /scorn/houses/jones
-hp 2
-sp 2
+arch house_2
 x 9
 y 35
 end
 arch dungeon_magic
 x 9
 y 36
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3835,6 +4230,7 @@ end
 arch dungeon_magic
 x 9
 y 37
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3842,7 +4238,6 @@ y 37
 end
 arch sign
 name More Information
-name_pl More Information
 msg
 PLAYER KILLING WILL NOT BE TOLERATED.
 Unless BOTH combatants agree to it.
@@ -3852,12 +4247,14 @@ For a lot of adventure information,
 talk to people in Goth's tavern, above
 the Eastern Gate House.
 endmsg
+name_pl More Information
 x 9
 y 37
 end
 arch dungeon_magic
 x 9
 y 38
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3866,6 +4263,7 @@ end
 arch dungeon_magic
 x 9
 y 39
+elevation 0
 end
 arch grass
 x 9
@@ -3878,6 +4276,7 @@ end
 arch dungeon_magic
 x 9
 y 40
+elevation 0
 end
 arch grass
 x 9
@@ -3886,6 +4285,7 @@ end
 arch dungeon_magic
 x 9
 y 41
+elevation 0
 end
 arch grass
 x 9
@@ -3898,6 +4298,7 @@ end
 arch dungeon_magic
 x 9
 y 42
+elevation 0
 end
 arch grass
 x 9
@@ -3906,6 +4307,7 @@ end
 arch dungeon_magic
 x 9
 y 43
+elevation 0
 end
 arch grass
 x 9
@@ -3921,6 +4323,7 @@ end
 arch dungeon_magic
 x 9
 y 44
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3929,6 +4332,7 @@ end
 arch dungeon_magic
 x 9
 y 45
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3937,6 +4341,7 @@ end
 arch dungeon_magic
 x 9
 y 46
+elevation 0
 end
 arch cobblestones2
 x 9
@@ -3945,14 +4350,16 @@ end
 arch dungeon_magic
 x 9
 y 47
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 9
 y 47
 end
 arch dungeon_magic
 x 9
 y 48
+elevation 0
 end
 arch grass
 x 9
@@ -3961,89 +4368,105 @@ end
 arch dungeon_magic
 x 9
 y 49
+elevation 0
 end
 arch grass
 x 9
 y 49
 end
-arch cwall_2_1_2
-x 9
-y 49
-end
 arch shallow_sea
 x 10
+elevation 0
 end
 arch sea
 x 10
 y 1
+elevation 0
 end
 arch sea
 x 10
 y 2
+elevation 0
 end
 arch sea
 x 10
 y 3
+elevation 0
 end
 arch sea
 x 10
 y 4
+elevation 0
 end
 arch sea
 x 10
 y 5
+elevation 0
 end
 arch sea
 x 10
 y 6
+elevation 0
 end
 arch sea
 x 10
 y 7
+elevation 0
 end
 arch sea
 x 10
 y 8
+elevation 0
 end
 arch sea
 x 10
 y 9
+elevation 0
 end
 arch sea
 x 10
 y 10
+elevation 0
 end
 arch sea
 x 10
 y 11
+elevation 0
 end
 arch sea
 x 10
 y 12
+elevation 0
 end
 arch sea
 x 10
 y 13
+elevation 0
 end
 arch sea
 x 10
 y 14
+elevation 0
 end
 arch sea
 x 10
 y 15
+elevation 0
 end
 arch sea
 x 10
 y 16
+elevation 0
 end
 arch sea
 x 10
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 10
 y 18
+elevation 0
 end
 arch sea
 x 10
@@ -4052,6 +4475,7 @@ end
 arch dungeon_magic
 x 10
 y 19
+elevation 0
 end
 arch sea
 x 10
@@ -4060,6 +4484,7 @@ end
 arch dungeon_magic
 x 10
 y 20
+elevation 0
 end
 arch sea
 x 10
@@ -4068,6 +4493,7 @@ end
 arch dungeon_magic
 x 10
 y 21
+elevation 0
 end
 arch sea
 x 10
@@ -4076,6 +4502,7 @@ end
 arch dungeon_magic
 x 10
 y 22
+elevation 0
 end
 arch sea1
 x 10
@@ -4088,6 +4515,7 @@ end
 arch dungeon_magic
 x 10
 y 23
+elevation 0
 end
 arch sea
 x 10
@@ -4096,6 +4524,7 @@ end
 arch dungeon_magic
 x 10
 y 24
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4104,6 +4533,7 @@ end
 arch dungeon_magic
 x 10
 y 25
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4112,6 +4542,7 @@ end
 arch dungeon_magic
 x 10
 y 26
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4120,6 +4551,7 @@ end
 arch dungeon_magic
 x 10
 y 27
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4128,6 +4560,7 @@ end
 arch dungeon_magic
 x 10
 y 28
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4136,6 +4569,7 @@ end
 arch dungeon_magic
 x 10
 y 29
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4144,6 +4578,7 @@ end
 arch dungeon_magic
 x 10
 y 30
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4156,6 +4591,7 @@ end
 arch dungeon_magic
 x 10
 y 31
+elevation 0
 end
 arch grass
 x 10
@@ -4164,6 +4600,7 @@ end
 arch dungeon_magic
 x 10
 y 32
+elevation 0
 end
 arch grass
 x 10
@@ -4172,6 +4609,7 @@ end
 arch dungeon_magic
 x 10
 y 33
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4180,18 +4618,25 @@ end
 arch dungeon_magic
 x 10
 y 34
+elevation 0
 end
 arch grass
 x 10
 y 34
 end
-arch house_2
+arch barrack_long
+name Apartment Building
+name_pl Apartment Building
+slaying /scorn/taverns/apartments
+hp 13
+sp 3
 x 10
 y 34
 end
 arch dungeon_magic
 x 10
 y 35
+elevation 0
 end
 arch grass
 x 10
@@ -4209,6 +4654,7 @@ end
 arch dungeon_magic
 x 10
 y 36
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4217,6 +4663,7 @@ end
 arch dungeon_magic
 x 10
 y 37
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4225,6 +4672,7 @@ end
 arch dungeon_magic
 x 10
 y 38
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4233,6 +4681,7 @@ end
 arch dungeon_magic
 x 10
 y 39
+elevation 0
 end
 arch grass
 x 10
@@ -4250,6 +4699,7 @@ end
 arch dungeon_magic
 x 10
 y 40
+elevation 0
 end
 arch grass
 x 10
@@ -4258,6 +4708,7 @@ end
 arch dungeon_magic
 x 10
 y 41
+elevation 0
 end
 arch grass
 x 10
@@ -4270,6 +4721,7 @@ end
 arch dungeon_magic
 x 10
 y 42
+elevation 0
 end
 arch grass
 x 10
@@ -4278,6 +4730,7 @@ end
 arch dungeon_magic
 x 10
 y 43
+elevation 0
 end
 arch brush
 x 10
@@ -4286,6 +4739,7 @@ end
 arch dungeon_magic
 x 10
 y 44
+elevation 0
 end
 arch grass
 x 10
@@ -4294,6 +4748,7 @@ end
 arch dungeon_magic
 x 10
 y 45
+elevation 0
 end
 arch grass
 x 10
@@ -4302,6 +4757,7 @@ end
 arch dungeon_magic
 x 10
 y 46
+elevation 0
 end
 arch cobblestones2
 x 10
@@ -4310,14 +4766,16 @@ end
 arch dungeon_magic
 x 10
 y 47
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 10
 y 47
 end
 arch dungeon_magic
 x 10
 y 48
+elevation 0
 end
 arch grass
 x 10
@@ -4326,89 +4784,105 @@ end
 arch dungeon_magic
 x 10
 y 49
+elevation 0
 end
 arch grass
 x 10
 y 49
 end
-arch cwall_2_1_2
-x 10
-y 49
-end
 arch swamp
 x 11
+elevation 0
 end
 arch shallow_sea
 x 11
 y 1
+elevation 0
 end
 arch shallow_sea
 x 11
 y 2
+elevation 0
 end
 arch sea
 x 11
 y 3
+elevation 0
 end
 arch sea
 x 11
 y 4
+elevation 0
 end
 arch sea
 x 11
 y 5
+elevation 0
 end
 arch sea
 x 11
 y 6
+elevation 0
 end
 arch sea
 x 11
 y 7
+elevation 0
 end
 arch sea
 x 11
 y 8
+elevation 0
 end
 arch sea
 x 11
 y 9
+elevation 0
 end
 arch sea
 x 11
 y 10
+elevation 0
 end
 arch sea
 x 11
 y 11
+elevation 0
 end
 arch sea
 x 11
 y 12
+elevation 0
 end
 arch sea
 x 11
 y 13
+elevation 0
 end
 arch sea
 x 11
 y 14
+elevation 0
 end
 arch sea
 x 11
 y 15
+elevation 0
 end
 arch sea
 x 11
 y 16
+elevation 0
 end
 arch sea
 x 11
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 11
 y 18
+elevation 0
 end
 arch sea
 x 11
@@ -4417,6 +4891,7 @@ end
 arch dungeon_magic
 x 11
 y 19
+elevation 0
 end
 arch sea1
 x 11
@@ -4429,6 +4904,7 @@ end
 arch dungeon_magic
 x 11
 y 20
+elevation 0
 end
 arch sea1
 x 11
@@ -4441,6 +4917,7 @@ end
 arch dungeon_magic
 x 11
 y 21
+elevation 0
 end
 arch sea1
 x 11
@@ -4453,6 +4930,7 @@ end
 arch dungeon_magic
 x 11
 y 22
+elevation 0
 end
 arch sea1
 x 11
@@ -4465,6 +4943,7 @@ end
 arch dungeon_magic
 x 11
 y 23
+elevation 0
 end
 arch sea1
 x 11
@@ -4477,6 +4956,7 @@ end
 arch dungeon_magic
 x 11
 y 24
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4485,6 +4965,7 @@ end
 arch dungeon_magic
 x 11
 y 25
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4493,6 +4974,7 @@ end
 arch dungeon_magic
 x 11
 y 26
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4501,6 +4983,7 @@ end
 arch dungeon_magic
 x 11
 y 27
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4509,6 +4992,7 @@ end
 arch dungeon_magic
 x 11
 y 28
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4517,6 +5001,7 @@ end
 arch dungeon_magic
 x 11
 y 29
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4529,6 +5014,7 @@ end
 arch dungeon_magic
 x 11
 y 30
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4541,6 +5027,7 @@ end
 arch dungeon_magic
 x 11
 y 31
+elevation 0
 end
 arch grass
 x 11
@@ -4558,6 +5045,7 @@ end
 arch dungeon_magic
 x 11
 y 32
+elevation 0
 end
 arch grass
 x 11
@@ -4566,6 +5054,7 @@ end
 arch dungeon_magic
 x 11
 y 33
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4574,18 +5063,16 @@ end
 arch dungeon_magic
 x 11
 y 34
+elevation 0
 end
 arch grass
-x 11
-y 34
-end
-arch house_2
 x 11
 y 34
 end
 arch dungeon_magic
 x 11
 y 35
+elevation 0
 end
 arch grass
 x 11
@@ -4598,6 +5085,7 @@ end
 arch dungeon_magic
 x 11
 y 36
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4606,6 +5094,7 @@ end
 arch dungeon_magic
 x 11
 y 37
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4614,6 +5103,7 @@ end
 arch dungeon_magic
 x 11
 y 38
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4622,6 +5112,7 @@ end
 arch dungeon_magic
 x 11
 y 39
+elevation 0
 end
 arch grass
 x 11
@@ -4639,6 +5130,7 @@ end
 arch dungeon_magic
 x 11
 y 40
+elevation 0
 end
 arch grass
 x 11
@@ -4653,6 +5145,7 @@ end
 arch dungeon_magic
 x 11
 y 41
+elevation 0
 end
 arch grass
 x 11
@@ -4665,6 +5158,7 @@ end
 arch dungeon_magic
 x 11
 y 42
+elevation 0
 end
 arch grass
 x 11
@@ -4682,6 +5176,7 @@ end
 arch dungeon_magic
 x 11
 y 43
+elevation 0
 end
 arch grass
 x 11
@@ -4689,9 +5184,9 @@ y 43
 end
 arch house_small
 name Wizard's Workshop
+face housesmall.111
 name_pl Wizard's Workshop
 slaying /scorn/houses/wizardw
-face housesmall.111
 hp 4
 sp 13
 x 11
@@ -4700,6 +5195,7 @@ end
 arch dungeon_magic
 x 11
 y 44
+elevation 0
 end
 arch grass
 x 11
@@ -4717,6 +5213,7 @@ end
 arch dungeon_magic
 x 11
 y 45
+elevation 0
 end
 arch grass
 x 11
@@ -4734,6 +5231,7 @@ end
 arch dungeon_magic
 x 11
 y 46
+elevation 0
 end
 arch cobblestones2
 x 11
@@ -4742,10 +5240,20 @@ end
 arch dungeon_magic
 x 11
 y 47
+elevation 0
+end
+arch cobblestones2
+x 11
+y 47
+end
+arch dungeon_magic
+x 11
+y 48
+elevation 0
 end
 arch grass
 x 11
-y 47
+y 48
 end
 arch rl_house3
 name The Zoo
@@ -4754,102 +5262,110 @@ slaying /scorn/misc/zoo
 hp 1
 sp 16
 x 11
-y 47
-end
-arch dungeon_magic
-x 11
-y 48
-end
-arch grass
-x 11
 y 48
 end
 arch dungeon_magic
 x 11
 y 49
+elevation 0
 end
 arch grass
-x 11
-y 49
-end
-arch cwall_2_1_2
 x 11
 y 49
 end
 arch brush
 x 12
+elevation 0
 end
 arch grass
 x 12
 y 1
+elevation 0
 end
 arch swamp
 x 12
 y 2
+elevation 0
 end
 arch shallow_sea
 x 12
 y 3
+elevation 0
 end
 arch shallow_sea
 x 12
 y 4
+elevation 0
 end
 arch shallow_sea
 x 12
 y 5
+elevation 0
 end
 arch shallow_sea
 x 12
 y 6
+elevation 0
 end
 arch shallow_sea
 x 12
 y 7
+elevation 0
 end
 arch shallow_sea
 x 12
 y 8
+elevation 0
 end
 arch sea
 x 12
 y 9
+elevation 0
 end
 arch sea
 x 12
 y 10
+elevation 0
 end
 arch sea
 x 12
 y 11
+elevation 0
 end
 arch sea
 x 12
 y 12
+elevation 0
 end
 arch sea
 x 12
 y 13
+elevation 0
 end
 arch sea
 x 12
 y 14
+elevation 0
 end
 arch sea
 x 12
 y 15
+elevation 0
 end
 arch sea
 x 12
 y 16
+elevation 0
 end
 arch sea
 x 12
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 12
 y 18
+elevation 0
 end
 arch sea
 x 12
@@ -4858,6 +5374,7 @@ end
 arch dungeon_magic
 x 12
 y 19
+elevation 0
 end
 arch sea1
 x 12
@@ -4866,6 +5383,7 @@ end
 arch dungeon_magic
 x 12
 y 20
+elevation 0
 end
 arch sea
 x 12
@@ -4874,6 +5392,7 @@ end
 arch dungeon_magic
 x 12
 y 21
+elevation 0
 end
 arch sea1
 x 12
@@ -4886,6 +5405,7 @@ end
 arch dungeon_magic
 x 12
 y 22
+elevation 0
 end
 arch sea
 x 12
@@ -4894,6 +5414,7 @@ end
 arch dungeon_magic
 x 12
 y 23
+elevation 0
 end
 arch sea
 x 12
@@ -4902,6 +5423,7 @@ end
 arch dungeon_magic
 x 12
 y 24
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4910,6 +5432,7 @@ end
 arch dungeon_magic
 x 12
 y 25
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4924,6 +5447,7 @@ end
 arch dungeon_magic
 x 12
 y 26
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4932,6 +5456,7 @@ end
 arch dungeon_magic
 x 12
 y 27
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4940,6 +5465,7 @@ end
 arch dungeon_magic
 x 12
 y 28
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4955,6 +5481,7 @@ end
 arch dungeon_magic
 x 12
 y 29
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4967,6 +5494,7 @@ end
 arch dungeon_magic
 x 12
 y 30
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -4979,6 +5507,7 @@ end
 arch dungeon_magic
 x 12
 y 31
+elevation 0
 end
 arch grass
 x 12
@@ -4987,6 +5516,7 @@ end
 arch dungeon_magic
 x 12
 y 32
+elevation 0
 end
 arch grass
 x 12
@@ -4995,6 +5525,7 @@ end
 arch dungeon_magic
 x 12
 y 33
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5003,6 +5534,7 @@ end
 arch dungeon_magic
 x 12
 y 34
+elevation 0
 end
 arch grass
 x 12
@@ -5020,6 +5552,7 @@ end
 arch dungeon_magic
 x 12
 y 35
+elevation 0
 end
 arch grass
 x 12
@@ -5028,6 +5561,7 @@ end
 arch dungeon_magic
 x 12
 y 36
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5036,6 +5570,7 @@ end
 arch dungeon_magic
 x 12
 y 37
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5044,6 +5579,7 @@ end
 arch dungeon_magic
 x 12
 y 38
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5052,6 +5588,7 @@ end
 arch dungeon_magic
 x 12
 y 39
+elevation 0
 end
 arch grass
 x 12
@@ -5069,6 +5606,7 @@ end
 arch dungeon_magic
 x 12
 y 40
+elevation 0
 end
 arch grass
 x 12
@@ -5077,6 +5615,7 @@ end
 arch dungeon_magic
 x 12
 y 41
+elevation 0
 end
 arch grass
 x 12
@@ -5085,6 +5624,7 @@ end
 arch dungeon_magic
 x 12
 y 42
+elevation 0
 end
 arch grass
 x 12
@@ -5093,6 +5633,7 @@ end
 arch dungeon_magic
 x 12
 y 43
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5101,6 +5642,7 @@ end
 arch dungeon_magic
 x 12
 y 44
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5109,6 +5651,7 @@ end
 arch dungeon_magic
 x 12
 y 45
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5117,6 +5660,7 @@ end
 arch dungeon_magic
 x 12
 y 46
+elevation 0
 end
 arch cobblestones2
 x 12
@@ -5125,14 +5669,16 @@ end
 arch dungeon_magic
 x 12
 y 47
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 12
 y 47
 end
 arch dungeon_magic
 x 12
 y 48
+elevation 0
 end
 arch grass
 x 12
@@ -5141,89 +5687,105 @@ end
 arch dungeon_magic
 x 12
 y 49
+elevation 0
 end
 arch grass
 x 12
 y 49
 end
-arch cwall_2_1_2
-x 12
-y 49
-end
 arch desert
 x 13
+elevation 0
 end
 arch jungle_1
 x 13
 y 1
+elevation 0
 end
 arch evergreen
 x 13
 y 2
+elevation 0
 end
 arch desert
 x 13
 y 3
+elevation 0
 end
 arch swamp
 x 13
 y 4
+elevation 0
 end
 arch shallow_sea
 x 13
 y 5
+elevation 0
 end
 arch shallow_sea
 x 13
 y 6
+elevation 0
 end
 arch shallow_sea
 x 13
 y 7
+elevation 0
 end
 arch shallow_sea
 x 13
 y 8
+elevation 0
 end
 arch shallow_sea
 x 13
 y 9
+elevation 0
 end
 arch shallow_sea
 x 13
 y 10
+elevation 0
 end
 arch sea
 x 13
 y 11
+elevation 0
 end
 arch sea
 x 13
 y 12
+elevation 0
 end
 arch sea
 x 13
 y 13
+elevation 0
 end
 arch sea
 x 13
 y 14
+elevation 0
 end
 arch sea
 x 13
 y 15
+elevation 0
 end
 arch sea
 x 13
 y 16
+elevation 0
 end
 arch sea
 x 13
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 13
 y 18
+elevation 0
 end
 arch sea
 x 13
@@ -5232,6 +5794,7 @@ end
 arch dungeon_magic
 x 13
 y 19
+elevation 0
 end
 arch sea
 x 13
@@ -5240,6 +5803,7 @@ end
 arch dungeon_magic
 x 13
 y 20
+elevation 0
 end
 arch sea
 x 13
@@ -5252,6 +5816,7 @@ end
 arch dungeon_magic
 x 13
 y 21
+elevation 0
 end
 arch sea1
 x 13
@@ -5260,6 +5825,7 @@ end
 arch dungeon_magic
 x 13
 y 22
+elevation 0
 end
 arch sea
 x 13
@@ -5268,6 +5834,7 @@ end
 arch dungeon_magic
 x 13
 y 23
+elevation 0
 end
 arch sea
 x 13
@@ -5276,6 +5843,7 @@ end
 arch dungeon_magic
 x 13
 y 24
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5284,6 +5852,7 @@ end
 arch dungeon_magic
 x 13
 y 25
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5292,6 +5861,7 @@ end
 arch dungeon_magic
 x 13
 y 26
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5300,6 +5870,7 @@ end
 arch dungeon_magic
 x 13
 y 27
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5308,6 +5879,7 @@ end
 arch dungeon_magic
 x 13
 y 28
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5316,6 +5888,7 @@ end
 arch dungeon_magic
 x 13
 y 29
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5328,6 +5901,7 @@ end
 arch dungeon_magic
 x 13
 y 30
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5340,6 +5914,7 @@ end
 arch dungeon_magic
 x 13
 y 31
+elevation 0
 end
 arch grass
 x 13
@@ -5357,6 +5932,7 @@ end
 arch dungeon_magic
 x 13
 y 32
+elevation 0
 end
 arch grass
 x 13
@@ -5365,6 +5941,7 @@ end
 arch dungeon_magic
 x 13
 y 33
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5373,6 +5950,7 @@ end
 arch dungeon_magic
 x 13
 y 34
+elevation 0
 end
 arch grass
 x 13
@@ -5381,6 +5959,7 @@ end
 arch dungeon_magic
 x 13
 y 35
+elevation 0
 end
 arch grass
 x 13
@@ -5389,6 +5968,7 @@ end
 arch dungeon_magic
 x 13
 y 36
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5397,6 +5977,7 @@ end
 arch dungeon_magic
 x 13
 y 37
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5405,6 +5986,7 @@ end
 arch dungeon_magic
 x 13
 y 38
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5413,6 +5995,7 @@ end
 arch dungeon_magic
 x 13
 y 39
+elevation 0
 end
 arch grass
 x 13
@@ -5430,6 +6013,7 @@ end
 arch dungeon_magic
 x 13
 y 40
+elevation 0
 end
 arch grass
 x 13
@@ -5438,6 +6022,7 @@ end
 arch dungeon_magic
 x 13
 y 41
+elevation 0
 end
 arch brush
 x 13
@@ -5446,6 +6031,7 @@ end
 arch dungeon_magic
 x 13
 y 42
+elevation 0
 end
 arch grass
 x 13
@@ -5463,6 +6049,7 @@ end
 arch dungeon_magic
 x 13
 y 43
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5471,6 +6058,7 @@ end
 arch dungeon_magic
 x 13
 y 44
+elevation 0
 end
 arch grass
 x 13
@@ -5483,6 +6071,7 @@ end
 arch dungeon_magic
 x 13
 y 45
+elevation 0
 end
 arch grass
 x 13
@@ -5495,6 +6084,7 @@ end
 arch dungeon_magic
 x 13
 y 46
+elevation 0
 end
 arch cobblestones2
 x 13
@@ -5503,117 +6093,135 @@ end
 arch dungeon_magic
 x 13
 y 47
+elevation 0
+end
+arch cobblestones2
+x 13
+y 47
+end
+arch dungeon_magic
+x 13
+y 48
+elevation 0
 end
 arch grass
 x 13
-y 47
+y 48
 end
 arch swall_1_1
 x 13
-y 47
-end
-arch dungeon_magic
-x 13
-y 48
-end
-arch grass
-x 13
-y 48
-end
-arch swall_2_1_1
-x 13
 y 48
 end
 arch dungeon_magic
 x 13
 y 49
+elevation 0
 end
 arch grass
 x 13
 y 49
 end
-arch swall_1_2_half
+arch swall_1_2
 x 13
 y 49
 end
-arch cwall_2_1_2
+arch cwall_2_2_2
 x 13
 y 49
 end
 arch desert
 x 14
+elevation 0
 end
 arch evergreen
 x 14
 y 1
+elevation 0
 end
 arch jungle_1
 x 14
 y 2
+elevation 0
 end
 arch jungle_1
 x 14
 y 3
+elevation 0
 end
 arch grass
 x 14
 y 4
+elevation 0
 end
 arch brush
 x 14
 y 5
+elevation 0
 end
 arch grass
 x 14
 y 6
+elevation 0
 end
 arch grass
 x 14
 y 7
+elevation 0
 end
 arch grass
 x 14
 y 8
+elevation 0
 end
 arch grass
 x 14
 y 9
+elevation 0
 end
 arch shallow_sea
 x 14
 y 10
+elevation 0
 end
 arch shallow_sea
 x 14
 y 11
+elevation 0
 end
 arch sea
 x 14
 y 12
+elevation 0
 end
 arch sea
 x 14
 y 13
+elevation 0
 end
 arch sea
 x 14
 y 14
+elevation 0
 end
 arch sea
 x 14
 y 15
+elevation 0
 end
 arch sea
 x 14
 y 16
+elevation 0
 end
 arch sea
 x 14
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 14
 y 18
+elevation 0
 end
 arch sea
 x 14
@@ -5622,6 +6230,7 @@ end
 arch dungeon_magic
 x 14
 y 19
+elevation 0
 end
 arch sea
 x 14
@@ -5630,6 +6239,7 @@ end
 arch dungeon_magic
 x 14
 y 20
+elevation 0
 end
 arch sea
 x 14
@@ -5638,6 +6248,7 @@ end
 arch dungeon_magic
 x 14
 y 21
+elevation 0
 end
 arch sea1
 x 14
@@ -5646,6 +6257,7 @@ end
 arch dungeon_magic
 x 14
 y 22
+elevation 0
 end
 arch sea
 x 14
@@ -5654,6 +6266,7 @@ end
 arch dungeon_magic
 x 14
 y 23
+elevation 0
 end
 arch sea
 x 14
@@ -5662,13 +6275,14 @@ end
 arch tower_a
 name Lighthouse
 name_pl Lighthouse
+glow_radius 4
 x 14
 y 23
-glow_radius 4
 end
 arch dungeon_magic
 x 14
 y 24
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5677,6 +6291,7 @@ end
 arch dungeon_magic
 x 14
 y 25
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5685,6 +6300,7 @@ end
 arch dungeon_magic
 x 14
 y 26
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5693,6 +6309,7 @@ end
 arch dungeon_magic
 x 14
 y 27
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5701,6 +6318,7 @@ end
 arch dungeon_magic
 x 14
 y 28
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5709,6 +6327,7 @@ end
 arch dungeon_magic
 x 14
 y 29
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5717,6 +6336,7 @@ end
 arch dungeon_magic
 x 14
 y 30
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5729,6 +6349,7 @@ end
 arch dungeon_magic
 x 14
 y 31
+elevation 0
 end
 arch grass
 x 14
@@ -5737,6 +6358,7 @@ end
 arch dungeon_magic
 x 14
 y 32
+elevation 0
 end
 arch grass
 x 14
@@ -5745,6 +6367,7 @@ end
 arch dungeon_magic
 x 14
 y 33
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5753,6 +6376,7 @@ end
 arch dungeon_magic
 x 14
 y 34
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5761,6 +6385,7 @@ end
 arch dungeon_magic
 x 14
 y 35
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5769,6 +6394,7 @@ end
 arch dungeon_magic
 x 14
 y 36
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5777,6 +6403,7 @@ end
 arch dungeon_magic
 x 14
 y 37
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5785,6 +6412,7 @@ end
 arch dungeon_magic
 x 14
 y 38
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5793,6 +6421,7 @@ end
 arch dungeon_magic
 x 14
 y 39
+elevation 0
 end
 arch grass
 x 14
@@ -5810,6 +6439,7 @@ end
 arch dungeon_magic
 x 14
 y 40
+elevation 0
 end
 arch grass
 x 14
@@ -5818,6 +6448,7 @@ end
 arch dungeon_magic
 x 14
 y 41
+elevation 0
 end
 arch brush
 x 14
@@ -5826,6 +6457,7 @@ end
 arch dungeon_magic
 x 14
 y 42
+elevation 0
 end
 arch grass
 x 14
@@ -5834,6 +6466,7 @@ end
 arch dungeon_magic
 x 14
 y 43
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5842,6 +6475,7 @@ end
 arch dungeon_magic
 x 14
 y 44
+elevation 0
 end
 arch grass
 x 14
@@ -5854,6 +6488,7 @@ end
 arch dungeon_magic
 x 14
 y 45
+elevation 0
 end
 arch brush
 x 14
@@ -5866,6 +6501,7 @@ end
 arch dungeon_magic
 x 14
 y 46
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5874,6 +6510,7 @@ end
 arch dungeon_magic
 x 14
 y 47
+elevation 0
 end
 arch cobblestones2
 x 14
@@ -5882,6 +6519,7 @@ end
 arch dungeon_magic
 x 14
 y 48
+elevation 0
 end
 arch grasspond
 x 14
@@ -5890,6 +6528,7 @@ end
 arch dungeon_magic
 x 14
 y 49
+elevation 0
 end
 arch grass
 x 14
@@ -5901,78 +6540,97 @@ y 49
 end
 arch desert
 x 15
+elevation 0
 end
 arch evergreen
 x 15
 y 1
+elevation 0
 end
 arch hills_rocky
 x 15
 y 2
+elevation 0
 end
 arch tree
 x 15
 y 3
+elevation 0
 end
 arch jungle_1
 x 15
 y 4
+elevation 0
 end
 arch jungle_1
 x 15
 y 5
+elevation 0
 end
 arch jungle_1
 x 15
 y 6
+elevation 0
 end
 arch woods_3
 x 15
 y 7
+elevation 0
 end
 arch jungle_1
 x 15
 y 8
+elevation 0
 end
 arch woods_3
 x 15
 y 9
+elevation 0
 end
 arch grass
 x 15
 y 10
+elevation 0
 end
 arch shallow_sea
 x 15
 y 11
+elevation 0
 end
 arch sea
 x 15
 y 12
+elevation 0
 end
 arch sea
 x 15
 y 13
+elevation 0
 end
 arch sea
 x 15
 y 14
+elevation 0
 end
 arch sea
 x 15
 y 15
+elevation 0
 end
 arch sea
 x 15
 y 16
+elevation 0
 end
 arch sea
 x 15
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 15
 y 18
+elevation 0
 end
 arch sea
 x 15
@@ -5981,6 +6639,7 @@ end
 arch dungeon_magic
 x 15
 y 19
+elevation 0
 end
 arch sea
 x 15
@@ -5989,6 +6648,7 @@ end
 arch dungeon_magic
 x 15
 y 20
+elevation 0
 end
 arch sea
 x 15
@@ -5997,6 +6657,7 @@ end
 arch dungeon_magic
 x 15
 y 21
+elevation 0
 end
 arch sea
 x 15
@@ -6005,6 +6666,7 @@ end
 arch dungeon_magic
 x 15
 y 22
+elevation 0
 end
 arch sea
 x 15
@@ -6013,6 +6675,7 @@ end
 arch dungeon_magic
 x 15
 y 23
+elevation 0
 end
 arch sea
 x 15
@@ -6021,6 +6684,7 @@ end
 arch dungeon_magic
 x 15
 y 24
+elevation 0
 end
 arch sea
 x 15
@@ -6029,6 +6693,7 @@ end
 arch dungeon_magic
 x 15
 y 25
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6037,6 +6702,7 @@ end
 arch dungeon_magic
 x 15
 y 26
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6045,6 +6711,7 @@ end
 arch dungeon_magic
 x 15
 y 27
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6053,6 +6720,7 @@ end
 arch dungeon_magic
 x 15
 y 28
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6065,6 +6733,7 @@ end
 arch dungeon_magic
 x 15
 y 29
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6077,6 +6746,7 @@ end
 arch dungeon_magic
 x 15
 y 30
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6089,6 +6759,7 @@ end
 arch dungeon_magic
 x 15
 y 31
+elevation 0
 end
 arch grass
 x 15
@@ -6106,6 +6777,7 @@ end
 arch dungeon_magic
 x 15
 y 32
+elevation 0
 end
 arch grass
 x 15
@@ -6114,6 +6786,7 @@ end
 arch dungeon_magic
 x 15
 y 33
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6122,6 +6795,7 @@ end
 arch dungeon_magic
 x 15
 y 34
+elevation 0
 end
 arch grass
 x 15
@@ -6139,6 +6813,7 @@ end
 arch dungeon_magic
 x 15
 y 35
+elevation 0
 end
 arch grass
 x 15
@@ -6147,6 +6822,7 @@ end
 arch dungeon_magic
 x 15
 y 36
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6155,6 +6831,7 @@ end
 arch dungeon_magic
 x 15
 y 37
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6163,6 +6840,7 @@ end
 arch dungeon_magic
 x 15
 y 38
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6171,6 +6849,7 @@ end
 arch dungeon_magic
 x 15
 y 39
+elevation 0
 end
 arch grass
 x 15
@@ -6186,6 +6865,7 @@ end
 arch dungeon_magic
 x 15
 y 40
+elevation 0
 end
 arch grass
 x 15
@@ -6200,6 +6880,7 @@ end
 arch dungeon_magic
 x 15
 y 41
+elevation 0
 end
 arch grass
 x 15
@@ -6208,6 +6889,7 @@ end
 arch dungeon_magic
 x 15
 y 42
+elevation 0
 end
 arch grass
 x 15
@@ -6222,6 +6904,7 @@ end
 arch dungeon_magic
 x 15
 y 43
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6230,6 +6913,7 @@ end
 arch dungeon_magic
 x 15
 y 44
+elevation 0
 end
 arch grass
 x 15
@@ -6242,6 +6926,7 @@ end
 arch dungeon_magic
 x 15
 y 45
+elevation 0
 end
 arch grasspond
 x 15
@@ -6250,14 +6935,16 @@ end
 arch dungeon_magic
 x 15
 y 46
+elevation 0
 end
-arch grass
+arch cobblestones2
 x 15
 y 46
 end
 arch dungeon_magic
 x 15
 y 47
+elevation 0
 end
 arch cobblestones2
 x 15
@@ -6266,6 +6953,7 @@ end
 arch dungeon_magic
 x 15
 y 48
+elevation 0
 end
 arch woods_2
 x 15
@@ -6274,6 +6962,7 @@ end
 arch dungeon_magic
 x 15
 y 49
+elevation 0
 end
 arch brush
 x 15
@@ -6285,78 +6974,97 @@ y 49
 end
 arch desert
 x 16
+elevation 0
 end
 arch tree
 x 16
 y 1
+elevation 0
 end
 arch hills
 x 16
 y 2
+elevation 0
 end
 arch hills
 x 16
 y 3
+elevation 0
 end
 arch hills
 x 16
 y 4
+elevation 0
 end
 arch hills_rocky
 x 16
 y 5
+elevation 0
 end
 arch hills_rocky
 x 16
 y 6
+elevation 0
 end
 arch hills
 x 16
 y 7
+elevation 0
 end
 arch jungle_1
 x 16
 y 8
+elevation 0
 end
 arch evergreen
 x 16
 y 9
+elevation 0
 end
 arch grass
 x 16
 y 10
+elevation 0
 end
 arch shallow_sea
 x 16
 y 11
+elevation 0
 end
 arch sea
 x 16
 y 12
+elevation 0
 end
 arch sea
 x 16
 y 13
+elevation 0
 end
 arch sea
 x 16
 y 14
+elevation 0
 end
 arch sea
 x 16
 y 15
+elevation 0
 end
 arch sea
 x 16
 y 16
+elevation 0
 end
 arch sea
 x 16
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 16
 y 18
+elevation 0
 end
 arch sea
 x 16
@@ -6365,6 +7073,7 @@ end
 arch dungeon_magic
 x 16
 y 19
+elevation 0
 end
 arch sea
 x 16
@@ -6373,6 +7082,7 @@ end
 arch dungeon_magic
 x 16
 y 20
+elevation 0
 end
 arch sea
 x 16
@@ -6381,6 +7091,7 @@ end
 arch dungeon_magic
 x 16
 y 21
+elevation 0
 end
 arch sea
 x 16
@@ -6389,6 +7100,7 @@ end
 arch dungeon_magic
 x 16
 y 22
+elevation 0
 end
 arch sea1
 x 16
@@ -6406,6 +7118,7 @@ end
 arch dungeon_magic
 x 16
 y 23
+elevation 0
 end
 arch sea1
 x 16
@@ -6414,6 +7127,7 @@ end
 arch dungeon_magic
 x 16
 y 24
+elevation 0
 end
 arch sea1
 x 16
@@ -6426,6 +7140,7 @@ end
 arch dungeon_magic
 x 16
 y 25
+elevation 0
 end
 arch sea1
 x 16
@@ -6438,6 +7153,7 @@ end
 arch dungeon_magic
 x 16
 y 26
+elevation 0
 end
 arch sea1
 x 16
@@ -6450,6 +7166,7 @@ end
 arch dungeon_magic
 x 16
 y 27
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6467,6 +7184,7 @@ end
 arch dungeon_magic
 x 16
 y 28
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6475,6 +7193,7 @@ end
 arch dungeon_magic
 x 16
 y 29
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6483,6 +7202,7 @@ end
 arch dungeon_magic
 x 16
 y 30
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6495,6 +7215,7 @@ end
 arch dungeon_magic
 x 16
 y 31
+elevation 0
 end
 arch grass
 x 16
@@ -6504,13 +7225,14 @@ arch guild
 name Guild of the Mailed Fist
 name_pl Guild of the Mailed Fist
 slaying /scorn/guilds/mailed_fist/ground
+no_pass 0
 x 16
 y 31
-no_pass 0
 end
 arch dungeon_magic
 x 16
 y 32
+elevation 0
 end
 arch grass
 x 16
@@ -6519,6 +7241,7 @@ end
 arch dungeon_magic
 x 16
 y 33
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6527,6 +7250,7 @@ end
 arch dungeon_magic
 x 16
 y 34
+elevation 0
 end
 arch grass
 x 16
@@ -6535,6 +7259,7 @@ end
 arch dungeon_magic
 x 16
 y 35
+elevation 0
 end
 arch grass
 x 16
@@ -6543,6 +7268,7 @@ end
 arch dungeon_magic
 x 16
 y 36
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6551,6 +7277,7 @@ end
 arch dungeon_magic
 x 16
 y 37
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6559,6 +7286,7 @@ end
 arch dungeon_magic
 x 16
 y 38
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6567,6 +7295,7 @@ end
 arch dungeon_magic
 x 16
 y 39
+elevation 0
 end
 arch grass
 x 16
@@ -6582,6 +7311,7 @@ end
 arch dungeon_magic
 x 16
 y 40
+elevation 0
 end
 arch grass
 x 16
@@ -6590,6 +7320,7 @@ end
 arch dungeon_magic
 x 16
 y 41
+elevation 0
 end
 arch grass
 x 16
@@ -6598,6 +7329,7 @@ end
 arch dungeon_magic
 x 16
 y 42
+elevation 0
 end
 arch grass
 x 16
@@ -6615,6 +7347,7 @@ end
 arch dungeon_magic
 x 16
 y 43
+elevation 0
 end
 arch grass
 x 16
@@ -6632,6 +7365,7 @@ end
 arch dungeon_magic
 x 16
 y 44
+elevation 0
 end
 arch grass
 x 16
@@ -6644,6 +7378,7 @@ end
 arch dungeon_magic
 x 16
 y 45
+elevation 0
 end
 arch brush
 x 16
@@ -6661,6 +7396,7 @@ end
 arch dungeon_magic
 x 16
 y 46
+elevation 0
 end
 arch grass
 x 16
@@ -6669,6 +7405,7 @@ end
 arch dungeon_magic
 x 16
 y 47
+elevation 0
 end
 arch cobblestones2
 x 16
@@ -6677,6 +7414,7 @@ end
 arch dungeon_magic
 x 16
 y 48
+elevation 0
 end
 arch grass
 x 16
@@ -6685,6 +7423,7 @@ end
 arch dungeon_magic
 x 16
 y 49
+elevation 0
 end
 arch brush
 x 16
@@ -6696,78 +7435,97 @@ y 49
 end
 arch desert
 x 17
+elevation 0
 end
 arch jungle_1
 x 17
 y 1
+elevation 0
 end
 arch hills
 x 17
 y 2
+elevation 0
 end
 arch hills
 x 17
 y 3
+elevation 0
 end
 arch hills
 x 17
 y 4
+elevation 0
 end
 arch hills
 x 17
 y 5
+elevation 0
 end
 arch hills_rocky
 x 17
 y 6
+elevation 0
 end
 arch hills
 x 17
 y 7
+elevation 0
 end
 arch woods_3
 x 17
 y 8
+elevation 0
 end
 arch jungle_1
 x 17
 y 9
+elevation 0
 end
 arch desert
 x 17
 y 10
+elevation 0
 end
 arch shallow_sea
 x 17
 y 11
+elevation 0
 end
 arch sea
 x 17
 y 12
+elevation 0
 end
 arch sea
 x 17
 y 13
+elevation 0
 end
 arch sea
 x 17
 y 14
+elevation 0
 end
 arch sea
 x 17
 y 15
+elevation 0
 end
 arch sea
 x 17
 y 16
+elevation 0
 end
 arch sea
 x 17
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 17
 y 18
+elevation 0
 end
 arch sea
 x 17
@@ -6776,6 +7534,7 @@ end
 arch dungeon_magic
 x 17
 y 19
+elevation 0
 end
 arch sea
 x 17
@@ -6784,6 +7543,7 @@ end
 arch dungeon_magic
 x 17
 y 20
+elevation 0
 end
 arch sea
 x 17
@@ -6792,6 +7552,7 @@ end
 arch dungeon_magic
 x 17
 y 21
+elevation 0
 end
 arch sea
 x 17
@@ -6800,6 +7561,7 @@ end
 arch dungeon_magic
 x 17
 y 22
+elevation 0
 end
 arch sea1
 x 17
@@ -6808,6 +7570,7 @@ end
 arch dungeon_magic
 x 17
 y 23
+elevation 0
 end
 arch sea1
 x 17
@@ -6816,6 +7579,7 @@ end
 arch dungeon_magic
 x 17
 y 24
+elevation 0
 end
 arch sea
 x 17
@@ -6824,6 +7588,7 @@ end
 arch dungeon_magic
 x 17
 y 25
+elevation 0
 end
 arch sea
 x 17
@@ -6832,6 +7597,7 @@ end
 arch dungeon_magic
 x 17
 y 26
+elevation 0
 end
 arch sea
 x 17
@@ -6840,6 +7606,7 @@ end
 arch dungeon_magic
 x 17
 y 27
+elevation 0
 end
 arch sea
 x 17
@@ -6848,6 +7615,7 @@ end
 arch dungeon_magic
 x 17
 y 28
+elevation 0
 end
 arch sea
 x 17
@@ -6856,6 +7624,7 @@ end
 arch dungeon_magic
 x 17
 y 29
+elevation 0
 end
 arch sea
 x 17
@@ -6864,6 +7633,7 @@ end
 arch dungeon_magic
 x 17
 y 30
+elevation 0
 end
 arch cobblestones2
 x 17
@@ -6876,6 +7646,7 @@ end
 arch dungeon_magic
 x 17
 y 31
+elevation 0
 end
 arch grass
 x 17
@@ -6884,6 +7655,7 @@ end
 arch dungeon_magic
 x 17
 y 32
+elevation 0
 end
 arch grass
 x 17
@@ -6892,6 +7664,7 @@ end
 arch dungeon_magic
 x 17
 y 33
+elevation 0
 end
 arch cobblestones2
 x 17
@@ -6900,6 +7673,7 @@ end
 arch dungeon_magic
 x 17
 y 34
+elevation 0
 end
 arch grass
 x 17
@@ -6912,6 +7686,7 @@ end
 arch dungeon_magic
 x 17
 y 35
+elevation 0
 end
 arch grass
 x 17
@@ -6928,6 +7703,7 @@ end
 arch dungeon_magic
 x 17
 y 36
+elevation 0
 end
 arch cobblestones2
 x 17
@@ -6936,6 +7712,7 @@ end
 arch dungeon_magic
 x 17
 y 37
+elevation 0
 end
 arch cobblestones2
 x 17
@@ -6944,6 +7721,7 @@ end
 arch dungeon_magic
 x 17
 y 38
+elevation 0
 end
 arch cobblestones2
 x 17
@@ -6952,14 +7730,15 @@ end
 arch dungeon_magic
 x 17
 y 39
+elevation 0
 end
 arch grass
 x 17
 y 39
 end
 arch minihouse
-slaying /scorn/shops/light_shop
 name Jacob's Lighting Emporium
+slaying /scorn/shops/light_shop
 name_pl Jacob's Lighting Emporium
 hp 0
 sp 13
@@ -6969,6 +7748,7 @@ end
 arch dungeon_magic
 x 17
 y 40
+elevation 0
 end
 arch grass
 x 17
@@ -6981,6 +7761,7 @@ end
 arch dungeon_magic
 x 17
 y 41
+elevation 0
 end
 arch grass
 x 17
@@ -6993,6 +7774,7 @@ end
 arch dungeon_magic
 x 17
 y 42
+elevation 0
 end
 arch brush
 x 17
@@ -7005,6 +7787,7 @@ end
 arch dungeon_magic
 x 17
 y 43
+elevation 0
 end
 arch grass
 x 17
@@ -7017,6 +7800,7 @@ end
 arch dungeon_magic
 x 17
 y 44
+elevation 0
 end
 arch grass
 x 17
@@ -7029,6 +7813,7 @@ end
 arch dungeon_magic
 x 17
 y 45
+elevation 0
 end
 arch grass
 x 17
@@ -7037,6 +7822,7 @@ end
 arch dungeon_magic
 x 17
 y 46
+elevation 0
 end
 arch grass
 x 17
@@ -7045,6 +7831,7 @@ end
 arch dungeon_magic
 x 17
 y 47
+elevation 0
 end
 arch grass
 x 17
@@ -7053,6 +7840,7 @@ end
 arch dungeon_magic
 x 17
 y 48
+elevation 0
 end
 arch grass
 x 17
@@ -7061,6 +7849,7 @@ end
 arch dungeon_magic
 x 17
 y 49
+elevation 0
 end
 arch grass
 x 17
@@ -7072,78 +7861,97 @@ y 49
 end
 arch grass
 x 18
+elevation 0
 end
 arch tree
 x 18
 y 1
+elevation 0
 end
 arch tree
 x 18
 y 2
+elevation 0
 end
 arch hills
 x 18
 y 3
+elevation 0
 end
 arch hills_rocky
 x 18
 y 4
+elevation 0
 end
 arch hills
 x 18
 y 5
+elevation 0
 end
 arch hills_rocky
 x 18
 y 6
+elevation 0
 end
 arch evergreen
 x 18
 y 7
+elevation 0
 end
 arch woods_3
 x 18
 y 8
+elevation 0
 end
 arch grass
 x 18
 y 9
+elevation 0
 end
 arch shallow_sea
 x 18
 y 10
+elevation 0
 end
 arch shallow_sea
 x 18
 y 11
+elevation 0
 end
 arch sea
 x 18
 y 12
+elevation 0
 end
 arch sea
 x 18
 y 13
+elevation 0
 end
 arch sea
 x 18
 y 14
+elevation 0
 end
 arch sea
 x 18
 y 15
+elevation 0
 end
 arch sea
 x 18
 y 16
+elevation 0
 end
 arch sea
 x 18
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 18
 y 18
+elevation 0
 end
 arch sea
 x 18
@@ -7152,6 +7960,7 @@ end
 arch dungeon_magic
 x 18
 y 19
+elevation 0
 end
 arch sea
 x 18
@@ -7160,6 +7969,7 @@ end
 arch dungeon_magic
 x 18
 y 20
+elevation 0
 end
 arch sea
 x 18
@@ -7168,6 +7978,7 @@ end
 arch dungeon_magic
 x 18
 y 21
+elevation 0
 end
 arch sea
 x 18
@@ -7176,6 +7987,7 @@ end
 arch dungeon_magic
 x 18
 y 22
+elevation 0
 end
 arch sea
 x 18
@@ -7184,6 +7996,7 @@ end
 arch dungeon_magic
 x 18
 y 23
+elevation 0
 end
 arch sea
 x 18
@@ -7192,6 +8005,7 @@ end
 arch dungeon_magic
 x 18
 y 24
+elevation 0
 end
 arch sea
 x 18
@@ -7200,6 +8014,7 @@ end
 arch dungeon_magic
 x 18
 y 25
+elevation 0
 end
 arch sea
 x 18
@@ -7208,6 +8023,7 @@ end
 arch dungeon_magic
 x 18
 y 26
+elevation 0
 end
 arch sea
 x 18
@@ -7225,6 +8041,7 @@ end
 arch dungeon_magic
 x 18
 y 27
+elevation 0
 end
 arch sea1
 x 18
@@ -7233,6 +8050,7 @@ end
 arch dungeon_magic
 x 18
 y 28
+elevation 0
 end
 arch sea1
 x 18
@@ -7245,6 +8063,7 @@ end
 arch dungeon_magic
 x 18
 y 29
+elevation 0
 end
 arch sea1
 x 18
@@ -7257,6 +8076,7 @@ end
 arch dungeon_magic
 x 18
 y 30
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7269,6 +8089,7 @@ end
 arch dungeon_magic
 x 18
 y 31
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7277,6 +8098,7 @@ end
 arch dungeon_magic
 x 18
 y 32
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7285,6 +8107,7 @@ end
 arch dungeon_magic
 x 18
 y 33
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7293,6 +8116,7 @@ end
 arch dungeon_magic
 x 18
 y 34
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7301,6 +8125,7 @@ end
 arch dungeon_magic
 x 18
 y 35
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7309,6 +8134,7 @@ end
 arch dungeon_magic
 x 18
 y 36
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7317,6 +8143,7 @@ end
 arch dungeon_magic
 x 18
 y 37
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7325,6 +8152,7 @@ end
 arch dungeon_magic
 x 18
 y 38
+elevation 0
 end
 arch cobblestones2
 x 18
@@ -7333,6 +8161,7 @@ end
 arch dungeon_magic
 x 18
 y 39
+elevation 0
 end
 arch grass
 x 18
@@ -7345,6 +8174,7 @@ end
 arch dungeon_magic
 x 18
 y 40
+elevation 0
 end
 arch grass
 x 18
@@ -7361,15 +8191,17 @@ end
 arch dungeon_magic
 x 18
 y 41
+elevation 0
 end
 arch grass
+no_pass 1
 x 18
 y 41
-no_pass 1
 end
 arch dungeon_magic
 x 18
 y 42
+elevation 0
 end
 arch grasspond
 x 18
@@ -7378,6 +8210,7 @@ end
 arch dungeon_magic
 x 18
 y 43
+elevation 0
 end
 arch brush
 x 18
@@ -7386,6 +8219,7 @@ end
 arch dungeon_magic
 x 18
 y 44
+elevation 0
 end
 arch grass
 x 18
@@ -7398,6 +8232,7 @@ end
 arch dungeon_magic
 x 18
 y 45
+elevation 0
 end
 arch grass
 x 18
@@ -7406,6 +8241,7 @@ end
 arch dungeon_magic
 x 18
 y 46
+elevation 0
 end
 arch grass
 x 18
@@ -7414,6 +8250,7 @@ end
 arch dungeon_magic
 x 18
 y 47
+elevation 0
 end
 arch grass
 x 18
@@ -7422,6 +8259,7 @@ end
 arch dungeon_magic
 x 18
 y 48
+elevation 0
 end
 arch brush
 x 18
@@ -7430,6 +8268,7 @@ end
 arch dungeon_magic
 x 18
 y 49
+elevation 0
 end
 arch grass
 x 18
@@ -7441,78 +8280,97 @@ y 49
 end
 arch shallow_sea
 x 19
+elevation 0
 end
 arch brush
 x 19
 y 1
+elevation 0
 end
 arch brush
 x 19
 y 2
+elevation 0
 end
 arch tree
 x 19
 y 3
+elevation 0
 end
 arch evergreen
 x 19
 y 4
+elevation 0
 end
 arch jungle_1
 x 19
 y 5
+elevation 0
 end
 arch grass
 x 19
 y 6
+elevation 0
 end
 arch grass
 x 19
 y 7
+elevation 0
 end
 arch grass
 x 19
 y 8
+elevation 0
 end
 arch deep_swamp
 x 19
 y 9
+elevation 0
 end
 arch shallow_sea
 x 19
 y 10
+elevation 0
 end
 arch sea
 x 19
 y 11
+elevation 0
 end
 arch sea
 x 19
 y 12
+elevation 0
 end
 arch sea
 x 19
 y 13
+elevation 0
 end
 arch sea
 x 19
 y 14
+elevation 0
 end
 arch sea
 x 19
 y 15
+elevation 0
 end
 arch sea
 x 19
 y 16
+elevation 0
 end
 arch sea
 x 19
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 19
 y 18
+elevation 0
 end
 arch sea
 x 19
@@ -7521,6 +8379,7 @@ end
 arch dungeon_magic
 x 19
 y 19
+elevation 0
 end
 arch sea
 x 19
@@ -7529,6 +8388,7 @@ end
 arch dungeon_magic
 x 19
 y 20
+elevation 0
 end
 arch sea
 x 19
@@ -7537,6 +8397,7 @@ end
 arch dungeon_magic
 x 19
 y 21
+elevation 0
 end
 arch sea
 x 19
@@ -7545,6 +8406,7 @@ end
 arch dungeon_magic
 x 19
 y 22
+elevation 0
 end
 arch sea
 x 19
@@ -7553,6 +8415,7 @@ end
 arch dungeon_magic
 x 19
 y 23
+elevation 0
 end
 arch sea
 x 19
@@ -7561,6 +8424,7 @@ end
 arch dungeon_magic
 x 19
 y 24
+elevation 0
 end
 arch sea
 x 19
@@ -7569,6 +8433,7 @@ end
 arch dungeon_magic
 x 19
 y 25
+elevation 0
 end
 arch sea
 x 19
@@ -7577,6 +8442,7 @@ end
 arch dungeon_magic
 x 19
 y 26
+elevation 0
 end
 arch sea
 x 19
@@ -7585,6 +8451,7 @@ end
 arch dungeon_magic
 x 19
 y 27
+elevation 0
 end
 arch sea1
 x 19
@@ -7593,6 +8460,7 @@ end
 arch dungeon_magic
 x 19
 y 28
+elevation 0
 end
 arch sea
 x 19
@@ -7601,6 +8469,7 @@ end
 arch dungeon_magic
 x 19
 y 29
+elevation 0
 end
 arch sea1
 x 19
@@ -7613,6 +8482,7 @@ end
 arch dungeon_magic
 x 19
 y 30
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7625,6 +8495,7 @@ end
 arch dungeon_magic
 x 19
 y 31
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7642,6 +8513,7 @@ end
 arch dungeon_magic
 x 19
 y 32
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7650,6 +8522,7 @@ end
 arch dungeon_magic
 x 19
 y 33
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7658,6 +8531,7 @@ end
 arch dungeon_magic
 x 19
 y 34
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7675,6 +8549,7 @@ end
 arch dungeon_magic
 x 19
 y 35
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7683,6 +8558,7 @@ end
 arch dungeon_magic
 x 19
 y 36
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7691,6 +8567,7 @@ end
 arch dungeon_magic
 x 19
 y 37
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7699,6 +8576,7 @@ end
 arch dungeon_magic
 x 19
 y 38
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7707,6 +8585,7 @@ end
 arch dungeon_magic
 x 19
 y 39
+elevation 0
 end
 arch cobblestones2
 x 19
@@ -7715,6 +8594,7 @@ end
 arch dungeon_magic
 x 19
 y 40
+elevation 0
 end
 arch grass
 x 19
@@ -7723,15 +8603,17 @@ end
 arch dungeon_magic
 x 19
 y 41
+elevation 0
 end
 arch brush
+no_pass 1
 x 19
 y 41
-no_pass 1
 end
 arch dungeon_magic
 x 19
 y 42
+elevation 0
 end
 arch grass
 x 19
@@ -7740,6 +8622,7 @@ end
 arch dungeon_magic
 x 19
 y 43
+elevation 0
 end
 arch grass
 x 19
@@ -7748,6 +8631,7 @@ end
 arch dungeon_magic
 x 19
 y 44
+elevation 0
 end
 arch grass
 x 19
@@ -7760,6 +8644,7 @@ end
 arch dungeon_magic
 x 19
 y 45
+elevation 0
 end
 arch grass
 x 19
@@ -7768,6 +8653,7 @@ end
 arch dungeon_magic
 x 19
 y 46
+elevation 0
 end
 arch grasspond
 x 19
@@ -7776,6 +8662,7 @@ end
 arch dungeon_magic
 x 19
 y 47
+elevation 0
 end
 arch grass
 x 19
@@ -7784,6 +8671,7 @@ end
 arch dungeon_magic
 x 19
 y 48
+elevation 0
 end
 arch grass
 x 19
@@ -7792,6 +8680,7 @@ end
 arch dungeon_magic
 x 19
 y 49
+elevation 0
 end
 arch brush
 x 19
@@ -7803,78 +8692,97 @@ y 49
 end
 arch shallow_sea
 x 20
+elevation 0
 end
 arch shallow_sea
 x 20
 y 1
+elevation 0
 end
 arch shallow_sea
 x 20
 y 2
+elevation 0
 end
 arch grass
 x 20
 y 3
+elevation 0
 end
 arch shallow_sea
 x 20
 y 4
+elevation 0
 end
 arch brush
 x 20
 y 5
+elevation 0
 end
 arch grass
 x 20
 y 6
+elevation 0
 end
 arch shallow_sea
 x 20
 y 7
+elevation 0
 end
 arch shallow_sea
 x 20
 y 8
+elevation 0
 end
 arch shallow_sea
 x 20
 y 9
+elevation 0
 end
 arch shallow_sea
 x 20
 y 10
+elevation 0
 end
 arch sea
 x 20
 y 11
+elevation 0
 end
 arch sea
 x 20
 y 12
+elevation 0
 end
 arch sea
 x 20
 y 13
+elevation 0
 end
 arch sea
 x 20
 y 14
+elevation 0
 end
 arch sea
 x 20
 y 15
+elevation 0
 end
 arch sea
 x 20
 y 16
+elevation 0
 end
 arch sea
 x 20
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 20
 y 18
+elevation 0
 end
 arch sea
 x 20
@@ -7883,6 +8791,7 @@ end
 arch dungeon_magic
 x 20
 y 19
+elevation 0
 end
 arch sea
 x 20
@@ -7891,6 +8800,7 @@ end
 arch dungeon_magic
 x 20
 y 20
+elevation 0
 end
 arch sea
 x 20
@@ -7899,6 +8809,7 @@ end
 arch dungeon_magic
 x 20
 y 21
+elevation 0
 end
 arch sea1
 x 20
@@ -7907,6 +8818,7 @@ end
 arch dungeon_magic
 x 20
 y 22
+elevation 0
 end
 arch sea
 x 20
@@ -7915,6 +8827,7 @@ end
 arch dungeon_magic
 x 20
 y 23
+elevation 0
 end
 arch sea
 x 20
@@ -7923,6 +8836,7 @@ end
 arch dungeon_magic
 x 20
 y 24
+elevation 0
 end
 arch sea
 x 20
@@ -7931,6 +8845,7 @@ end
 arch dungeon_magic
 x 20
 y 25
+elevation 0
 end
 arch sea
 x 20
@@ -7939,6 +8854,7 @@ end
 arch dungeon_magic
 x 20
 y 26
+elevation 0
 end
 arch sea
 x 20
@@ -7947,6 +8863,7 @@ end
 arch dungeon_magic
 x 20
 y 27
+elevation 0
 end
 arch sea
 x 20
@@ -7955,6 +8872,7 @@ end
 arch dungeon_magic
 x 20
 y 28
+elevation 0
 end
 arch sea
 x 20
@@ -7963,6 +8881,7 @@ end
 arch dungeon_magic
 x 20
 y 29
+elevation 0
 end
 arch sea1
 x 20
@@ -7975,6 +8894,7 @@ end
 arch dungeon_magic
 x 20
 y 30
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -7994,6 +8914,7 @@ end
 arch dungeon_magic
 x 20
 y 31
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8002,6 +8923,7 @@ end
 arch dungeon_magic
 x 20
 y 32
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8010,6 +8932,7 @@ end
 arch dungeon_magic
 x 20
 y 33
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8018,6 +8941,7 @@ end
 arch dungeon_magic
 x 20
 y 34
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8026,6 +8950,7 @@ end
 arch dungeon_magic
 x 20
 y 35
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8034,6 +8959,7 @@ end
 arch dungeon_magic
 x 20
 y 36
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8046,6 +8972,7 @@ end
 arch dungeon_magic
 x 20
 y 37
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8065,6 +8992,7 @@ end
 arch dungeon_magic
 x 20
 y 38
+elevation 0
 end
 arch cobblestones2
 x 20
@@ -8077,6 +9005,7 @@ end
 arch dungeon_magic
 x 20
 y 39
+elevation 0
 end
 arch grass
 x 20
@@ -8094,6 +9023,7 @@ end
 arch dungeon_magic
 x 20
 y 40
+elevation 0
 end
 arch grass
 x 20
@@ -8106,15 +9036,17 @@ end
 arch dungeon_magic
 x 20
 y 41
+elevation 0
 end
 arch grass
+no_pass 1
 x 20
 y 41
-no_pass 1
 end
 arch dungeon_magic
 x 20
 y 42
+elevation 0
 end
 arch brush
 x 20
@@ -8123,6 +9055,7 @@ end
 arch dungeon_magic
 x 20
 y 43
+elevation 0
 end
 arch grass
 x 20
@@ -8131,6 +9064,7 @@ end
 arch dungeon_magic
 x 20
 y 44
+elevation 0
 end
 arch grass
 x 20
@@ -8143,6 +9077,7 @@ end
 arch dungeon_magic
 x 20
 y 45
+elevation 0
 end
 arch brush
 x 20
@@ -8151,6 +9086,7 @@ end
 arch dungeon_magic
 x 20
 y 46
+elevation 0
 end
 arch brush
 x 20
@@ -8159,6 +9095,7 @@ end
 arch dungeon_magic
 x 20
 y 47
+elevation 0
 end
 arch woods_2
 x 20
@@ -8167,6 +9104,7 @@ end
 arch dungeon_magic
 x 20
 y 48
+elevation 0
 end
 arch grass
 x 20
@@ -8179,6 +9117,7 @@ end
 arch dungeon_magic
 x 20
 y 49
+elevation 0
 end
 arch brush
 x 20
@@ -8190,78 +9129,97 @@ y 49
 end
 arch sea
 x 21
+elevation 0
 end
 arch shallow_sea
 x 21
 y 1
+elevation 0
 end
 arch shallow_sea
 x 21
 y 2
+elevation 0
 end
 arch shallow_sea
 x 21
 y 3
+elevation 0
 end
 arch shallow_sea
 x 21
 y 4
+elevation 0
 end
 arch shallow_sea
 x 21
 y 5
+elevation 0
 end
 arch shallow_sea
 x 21
 y 6
+elevation 0
 end
 arch shallow_sea
 x 21
 y 7
+elevation 0
 end
 arch shallow_sea
 x 21
 y 8
+elevation 0
 end
 arch shallow_sea
 x 21
 y 9
+elevation 0
 end
 arch shallow_sea
 x 21
 y 10
+elevation 0
 end
 arch sea
 x 21
 y 11
+elevation 0
 end
 arch sea
 x 21
 y 12
+elevation 0
 end
 arch sea
 x 21
 y 13
+elevation 0
 end
 arch sea
 x 21
 y 14
+elevation 0
 end
 arch sea
 x 21
 y 15
+elevation 0
 end
 arch sea
 x 21
 y 16
+elevation 0
 end
 arch sea
 x 21
 y 17
+elevation 0
 end
 arch dungeon_magic
 x 21
 y 18
+elevation 0
 end
 arch sea
 x 21
@@ -8270,6 +9228,7 @@ end
 arch dungeon_magic
 x 21
 y 19
+elevation 0
 end
 arch sea
 x 21
@@ -8278,6 +9237,7 @@ end
 arch dungeon_magic
 x 21
 y 20
+elevation 0
 end
 arch sea
 x 21
@@ -8286,6 +9246,7 @@ end
 arch dungeon_magic
 x 21
 y 21
+elevation 0
 end
 arch sea
 x 21
@@ -8294,6 +9255,7 @@ end
 arch dungeon_magic
 x 21
 y 22
+elevation 0
 end
 arch sea
 x 21
@@ -8302,6 +9264,7 @@ end
 arch dungeon_magic
 x 21
 y 23
+elevation 0
 end
 arch sea
 x 21
@@ -8310,6 +9273,7 @@ end
 arch dungeon_magic
 x 21
 y 24
+elevation 0
 end
 arch sea
 x 21
@@ -8318,6 +9282,7 @@ end
 arch dungeon_magic
 x 21
 y 25
+elevation 0
 end
 arch sea
 x 21
@@ -8330,6 +9295,7 @@ end
 arch dungeon_magic
 x 21
 y 26
+elevation 0
 end
 arch sea
 x 21
@@ -8342,6 +9308,7 @@ end
 arch dungeon_magic
 x 21
 y 27
+elevation 0
 end
 arch sea
 x 21
@@ -8354,6 +9321,7 @@ end
 arch dungeon_magic
 x 21
 y 28
+elevation 0
 end
 arch sea
 x 21
@@ -8366,6 +9334,7 @@ end
 arch dungeon_magic
 x 21
 y 29
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8378,6 +9347,7 @@ end
 arch dungeon_magic
 x 21
 y 30
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8390,6 +9360,7 @@ end
 arch dungeon_magic
 x 21
 y 31
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8402,6 +9373,7 @@ end
 arch dungeon_magic
 x 21
 y 32
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8414,6 +9386,7 @@ end
 arch dungeon_magic
 x 21
 y 33
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8426,6 +9399,7 @@ end
 arch dungeon_magic
 x 21
 y 34
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8438,6 +9412,7 @@ end
 arch dungeon_magic
 x 21
 y 35
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8450,6 +9425,7 @@ end
 arch dungeon_magic
 x 21
 y 36
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8462,6 +9438,7 @@ end
 arch dungeon_magic
 x 21
 y 37
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8481,6 +9458,7 @@ end
 arch dungeon_magic
 x 21
 y 38
+elevation 0
 end
 arch cobblestones2
 x 21
@@ -8493,6 +9471,7 @@ end
 arch dungeon_magic
 x 21
 y 39
+elevation 0
 end
 arch grass
 x 21
@@ -8505,6 +9484,7 @@ end
 arch dungeon_magic
 x 21
 y 40
+elevation 0
 end
 arch grass
 x 21
@@ -8521,6 +9501,7 @@ end
 arch dungeon_magic
 x 21
 y 41
+elevation 0
 end
 arch grass
 x 21
@@ -8533,6 +9514,7 @@ end
 arch dungeon_magic
 x 21
 y 42
+elevation 0
 end
 arch grass
 x 21
@@ -8545,6 +9527,7 @@ end
 arch dungeon_magic
 x 21
 y 43
+elevation 0
 end
 arch grass
 x 21
@@ -8557,6 +9540,7 @@ end
 arch dungeon_magic
 x 21
 y 44
+elevation 0
 end
 arch grass
 x 21
@@ -8573,6 +9557,7 @@ end
 arch dungeon_magic
 x 21
 y 45
+elevation 0
 end
 arch grass
 x 21
@@ -8585,6 +9570,7 @@ end
 arch dungeon_magic
 x 21
 y 46
+elevation 0
 end
 arch grass
 x 21
@@ -8597,6 +9583,7 @@ end
 arch dungeon_magic
 x 21
 y 47
+elevation 0
 end
 arch grass
 x 21
@@ -8609,6 +9596,7 @@ end
 arch dungeon_magic
 x 21
 y 48
+elevation 0
 end
 arch brush
 x 21
@@ -8621,6 +9609,7 @@ end
 arch dungeon_magic
 x 21
 y 49
+elevation 0
 end
 arch brush
 x 21
@@ -8632,146 +9621,182 @@ y 49
 end
 arch sea
 x 22
+elevation 0
 end
 arch shallow_sea
 x 22
 y 1
+elevation 0
 end
 arch shallow_sea
 x 22
 y 2
+elevation 0
 end
 arch shallow_sea
 x 22
 y 3
+elevation 0
 end
 arch shallow_sea
 x 22
 y 4
+elevation 0
 end
 arch shallow_sea
 x 22
 y 5
+elevation 0
 end
 arch shallow_sea
 x 22
 y 6
+elevation 0
 end
 arch swamp
 x 22
 y 7
+elevation 0
 end
 arch shallow_sea
 x 22
 y 8
+elevation 0
 end
 arch shallow_sea
 x 22
 y 9
+elevation 0
 end
 arch shallow_sea
 x 22
 y 10
+elevation 0
 end
 arch shallow_sea
 x 22
 y 11
+elevation 0
 end
 arch sea
 x 22
 y 12
+elevation 0
 end
 arch sea
 x 22
 y 13
+elevation 0
 end
 arch sea
 x 22
 y 14
+elevation 0
 end
 arch sea
 x 22
 y 15
+elevation 0
 end
 arch sea
 x 22
 y 16
+elevation 0
 end
 arch sea
 x 22
 y 17
+elevation 0
 end
 arch sea
 x 22
 y 18
+elevation 0
 end
 arch sea
 x 22
 y 19
+elevation 0
 end
 arch sea
 x 22
 y 20
+elevation 0
 end
 arch sea
 x 22
 y 21
+elevation 0
 end
 arch sea
 x 22
 y 22
+elevation 0
 end
 arch sea
 x 22
 y 23
+elevation 0
 end
 arch sea
 x 22
 y 24
+elevation 0
 end
 arch shallow_sea
 x 22
 y 25
+elevation 0
 end
 arch shallow_sea
 x 22
 y 26
+elevation 0
 end
 arch woods_3
 x 22
 y 27
+elevation 0
 end
 arch woods_3
 x 22
 y 28
+elevation 0
 end
 arch tree
 x 22
 y 29
+elevation 0
 end
 arch woods_3
 x 22
 y 30
+elevation 0
 end
 arch grass
 x 22
 y 31
+elevation 0
 end
 arch jungle_1
 x 22
 y 32
+elevation 0
 end
 arch brush
 x 22
 y 33
+elevation 0
 end
 arch grass
 x 22
 y 34
+elevation 0
 end
 arch grass
 x 22
 y 35
+elevation 0
 end
 arch ytree_2
 x 22
@@ -8780,18 +9805,22 @@ end
 arch cobblestones
 x 22
 y 36
+elevation 0
 end
 arch cobblestones
 x 22
 y 37
+elevation 0
 end
 arch cobblestones
 x 22
 y 38
+elevation 0
 end
 arch grass
 x 22
 y 39
+elevation 0
 end
 arch ytree_2
 x 22
@@ -8800,185 +9829,231 @@ end
 arch grass
 x 22
 y 40
+elevation 0
 end
 arch grass
 x 22
 y 41
+elevation 0
 end
 arch farmland
 x 22
 y 42
+elevation 0
 end
 arch farmland
 x 22
 y 43
+elevation 0
 end
 arch farmland
 x 22
 y 44
+elevation 0
 end
 arch farmland
 x 22
 y 45
+elevation 0
 end
 arch farmland
 x 22
 y 46
+elevation 0
 end
 arch farmland
 x 22
 y 47
+elevation 0
 end
 arch grass
 x 22
 y 48
+elevation 0
 end
 arch jungle_1
 x 22
 y 49
+elevation 0
 end
 arch sea
 x 23
+elevation 0
 end
 arch sea
 x 23
 y 1
+elevation 0
 end
 arch shallow_sea
 x 23
 y 2
+elevation 0
 end
 arch shallow_sea
 x 23
 y 3
+elevation 0
 end
 arch shallow_sea
 x 23
 y 4
+elevation 0
 end
 arch shallow_sea
 x 23
 y 5
+elevation 0
 end
 arch grass
 x 23
 y 6
+elevation 0
 end
 arch grass
 x 23
 y 7
+elevation 0
 end
 arch brush
 x 23
 y 8
+elevation 0
 end
 arch grass
 x 23
 y 9
+elevation 0
 end
 arch shallow_sea
 x 23
 y 10
+elevation 0
 end
 arch shallow_sea
 x 23
 y 11
+elevation 0
 end
 arch sea
 x 23
 y 12
+elevation 0
 end
 arch sea
 x 23
 y 13
+elevation 0
 end
 arch sea
 x 23
 y 14
+elevation 0
 end
 arch sea
 x 23
 y 15
+elevation 0
 end
 arch sea
 x 23
 y 16
+elevation 0
 end
 arch sea
 x 23
 y 17
+elevation 0
 end
 arch sea
 x 23
 y 18
+elevation 0
 end
 arch sea
 x 23
 y 19
+elevation 0
 end
 arch sea
 x 23
 y 20
+elevation 0
 end
 arch sea
 x 23
 y 21
+elevation 0
 end
 arch sea
 x 23
 y 22
+elevation 0
 end
 arch sea
 x 23
 y 23
+elevation 0
 end
 arch shallow_sea
 x 23
 y 24
+elevation 0
 end
 arch shallow_sea
 x 23
 y 25
+elevation 0
 end
 arch grass
 x 23
 y 26
+elevation 0
 end
 arch woods
 x 23
 y 27
+elevation 0
 end
 arch woods_3
 x 23
 y 28
+elevation 0
 end
 arch hills
 x 23
 y 29
+elevation 0
 end
 arch hills
 x 23
 y 30
+elevation 0
 end
 arch jungle_1
 x 23
 y 31
+elevation 0
 end
 arch jungle_1
 x 23
 y 32
+elevation 0
 end
 arch hills
 x 23
 y 33
+elevation 0
 end
 arch evergreen
 x 23
 y 34
+elevation 0
 end
 arch grass
 x 23
 y 35
+elevation 0
 end
 arch lamppost
 x 23
@@ -8987,18 +10062,22 @@ end
 arch cobblestones
 x 23
 y 36
+elevation 0
 end
 arch cobblestones
 x 23
 y 37
+elevation 0
 end
 arch cobblestones
 x 23
 y 38
+elevation 0
 end
 arch grass
 x 23
 y 39
+elevation 0
 end
 arch lamppost
 x 23
@@ -9007,10 +10086,12 @@ end
 arch grass
 x 23
 y 40
+elevation 0
 end
 arch grass
 x 23
 y 41
+elevation 0
 end
 arch farmhouse
 x 23
@@ -9019,177 +10100,221 @@ end
 arch farmland
 x 23
 y 42
+elevation 0
 end
 arch farmland
 x 23
 y 43
+elevation 0
 end
 arch farmland
 x 23
 y 44
+elevation 0
 end
 arch farmland
 x 23
 y 45
+elevation 0
 end
 arch farmland
 x 23
 y 46
+elevation 0
 end
 arch farmland
 x 23
 y 47
+elevation 0
 end
 arch grass
 x 23
 y 48
+elevation 0
 end
 arch hills
 x 23
 y 49
+elevation 0
 end
 arch sea
 x 24
+elevation 0
 end
 arch sea
 x 24
 y 1
+elevation 0
 end
 arch shallow_sea
 x 24
 y 2
+elevation 0
 end
 arch shallow_sea
 x 24
 y 3
+elevation 0
 end
 arch shallow_sea
 x 24
 y 4
+elevation 0
 end
 arch brush
 x 24
 y 5
+elevation 0
 end
 arch woods_3
 x 24
 y 6
+elevation 0
 end
 arch woods_3
 x 24
 y 7
+elevation 0
 end
 arch woods_3
 x 24
 y 8
+elevation 0
 end
 arch woods_3
 x 24
 y 9
+elevation 0
 end
 arch grass
 x 24
 y 10
+elevation 0
 end
 arch shallow_sea
 x 24
 y 11
+elevation 0
 end
 arch shallow_sea
 x 24
 y 12
+elevation 0
 end
 arch shallow_sea
 x 24
 y 13
+elevation 0
 end
 arch sea
 x 24
 y 14
+elevation 0
 end
 arch sea
 x 24
 y 15
+elevation 0
 end
 arch sea
 x 24
 y 16
+elevation 0
 end
 arch sea
 x 24
 y 17
+elevation 0
 end
 arch sea
 x 24
 y 18
+elevation 0
 end
 arch sea
 x 24
 y 19
+elevation 0
 end
 arch sea
 x 24
 y 20
+elevation 0
 end
 arch sea
 x 24
 y 21
+elevation 0
 end
 arch sea
 x 24
 y 22
+elevation 0
 end
 arch sea
 x 24
 y 23
+elevation 0
 end
 arch shallow_sea
 x 24
 y 24
+elevation 0
 end
 arch shallow_sea
 x 24
 y 25
+elevation 0
 end
 arch grass
 x 24
 y 26
+elevation 0
 end
 arch tree
 x 24
 y 27
+elevation 0
 end
 arch hills
 x 24
 y 28
+elevation 0
 end
 arch mountain
 x 24
 y 29
+elevation 0
 end
 arch mountain
 x 24
 y 30
+elevation 0
 end
 arch hills_rocky
 x 24
 y 31
+elevation 0
 end
 arch hills
 x 24
 y 32
+elevation 0
 end
 arch hills_rocky
 x 24
 y 33
+elevation 0
 end
 arch hills_rocky
 x 24
 y 34
+elevation 0
 end
 arch grass
 x 24
 y 35
+elevation 0
 end
 arch ytree_2
 x 24
@@ -9198,18 +10323,22 @@ end
 arch cobblestones
 x 24
 y 36
+elevation 0
 end
 arch cobblestones
 x 24
 y 37
+elevation 0
 end
 arch cobblestones
 x 24
 y 38
+elevation 0
 end
 arch grass
 x 24
 y 39
+elevation 0
 end
 arch ytree_2
 x 24
@@ -9218,384 +10347,480 @@ end
 arch grass
 x 24
 y 40
+elevation 0
 end
 arch grass
 x 24
 y 41
+elevation 0
 end
 arch farmland
 x 24
 y 42
+elevation 0
 end
 arch farmland
 x 24
 y 43
+elevation 0
 end
 arch farmland
 x 24
 y 44
+elevation 0
 end
 arch farmland
 x 24
 y 45
+elevation 0
 end
 arch farmland
 x 24
 y 46
+elevation 0
 end
 arch farmland
 x 24
 y 47
+elevation 0
 end
 arch brush
 x 24
 y 48
+elevation 0
 end
 arch grassdark
 x 24
 y 49
+elevation 0
 end
 arch sea
 x 25
+elevation 0
 end
 arch sea
 x 25
 y 1
+elevation 0
 end
 arch shallow_sea
 x 25
 y 2
+elevation 0
 end
 arch shallow_sea
 x 25
 y 3
+elevation 0
 end
 arch shallow_sea
 x 25
 y 4
+elevation 0
 end
 arch desert
 x 25
 y 5
+elevation 0
 end
 arch woods_3
 x 25
 y 6
+elevation 0
 end
 arch tree
 x 25
 y 7
+elevation 0
 end
 arch tree
 x 25
 y 8
+elevation 0
 end
 arch woods_3
 x 25
 y 9
+elevation 0
 end
 arch grass
 x 25
 y 10
+elevation 0
 end
 arch grass
 x 25
 y 11
+elevation 0
 end
 arch shallow_sea
 x 25
 y 12
+elevation 0
 end
 arch shallow_sea
 x 25
 y 13
+elevation 0
 end
 arch shallow_sea
 x 25
 y 14
+elevation 0
 end
 arch shallow_sea
 x 25
 y 15
+elevation 0
 end
 arch shallow_sea
 x 25
 y 16
+elevation 0
 end
 arch shallow_sea
 x 25
 y 17
+elevation 0
 end
 arch sea
 x 25
 y 18
+elevation 0
 end
 arch sea
 x 25
 y 19
+elevation 0
 end
 arch sea
 x 25
 y 20
+elevation 0
 end
 arch shallow_sea
 x 25
 y 21
+elevation 0
 end
 arch shallow_sea
 x 25
 y 22
+elevation 0
 end
 arch shallow_sea
 x 25
 y 23
+elevation 0
 end
 arch shallow_sea
 x 25
 y 24
+elevation 0
 end
 arch grass
 x 25
 y 25
+elevation 0
 end
 arch woods
 x 25
 y 26
+elevation 0
 end
 arch steppe
 x 25
 y 27
+elevation 0
 end
 arch hills
 x 25
 y 28
+elevation 0
 end
 arch mountain
 x 25
 y 29
+elevation 0
 end
 arch mountain
 x 25
 y 30
+elevation 0
 end
 arch mountain
 x 25
 y 31
+elevation 0
 end
 arch steppe
 x 25
 y 32
+elevation 0
 end
 arch hills
 x 25
 y 33
+elevation 0
 end
 arch hills_rocky
 x 25
 y 34
+elevation 0
 end
 arch grass
 x 25
 y 35
+elevation 0
 end
 arch cobblestones
 x 25
 y 36
+elevation 0
 end
 arch cobblestones
 x 25
 y 37
+elevation 0
 end
 arch cobblestones
 x 25
 y 38
+elevation 0
 end
 arch grass
 x 25
 y 39
+elevation 0
 end
 arch grass
 x 25
 y 40
+elevation 0
 end
 arch brush
 x 25
 y 41
+elevation 0
 end
 arch brush
 x 25
 y 42
+elevation 0
 end
 arch grass
 x 25
 y 43
+elevation 0
 end
 arch grass
 x 25
 y 44
+elevation 0
 end
 arch brush
 x 25
 y 45
+elevation 0
 end
 arch brush
 x 25
 y 46
+elevation 0
 end
 arch brush
 x 25
 y 47
+elevation 0
 end
 arch grassdark
 x 25
 y 48
+elevation 0
 end
 arch brush
 x 25
 y 49
+elevation 0
 end
 arch sea
 x 26
+elevation 0
 end
 arch sea
 x 26
 y 1
+elevation 0
 end
 arch shallow_sea
 x 26
 y 2
+elevation 0
 end
 arch shallow_sea
 x 26
 y 3
+elevation 0
 end
 arch deep_swamp
 x 26
 y 4
+elevation 0
 end
 arch jungle_1
 x 26
 y 5
+elevation 0
 end
 arch grass
 x 26
 y 6
+elevation 0
 end
 arch hills
 x 26
 y 7
+elevation 0
 end
 arch hills
 x 26
 y 8
+elevation 0
 end
 arch hills
 x 26
 y 9
+elevation 0
 end
 arch woods_3
 x 26
 y 10
+elevation 0
 end
 arch desert
 x 26
 y 11
+elevation 0
 end
 arch grass
 x 26
 y 12
+elevation 0
 end
 arch brush
 x 26
 y 13
+elevation 0
 end
 arch grass
 x 26
 y 14
+elevation 0
 end
 arch grass
 x 26
 y 15
+elevation 0
 end
 arch desert
 x 26
 y 16
+elevation 0
 end
 arch deep_swamp
 x 26
 y 17
+elevation 0
 end
 arch shallow_sea
 x 26
 y 18
+elevation 0
 end
 arch grass
 x 26
 y 19
+elevation 0
 end
 arch shallow_sea
 x 26
 y 20
+elevation 0
 end
 arch deep_swamp
 x 26
 y 21
+elevation 0
 end
 arch shallow_sea
 x 26
 y 22
+elevation 0
 end
 arch shallow_sea
 x 26
 y 23
+elevation 0
 end
 arch deep_swamp
 x 26
 y 24
+elevation 0
 end
 arch desert
 x 26
 y 25
+elevation 0
 end
 arch tree
 x 26
 y 26
+elevation 0
 end
 arch hills
 x 26
 y 27
+elevation 0
 end
 arch mountain
 x 26
 y 28
+elevation 0
 end
 arch mountain
 x 26
 y 29
+elevation 0
 end
 arch mountain
 x 26
 y 30
+elevation 0
 end
 arch hills_rocky
 x 26
 y 31
+elevation 0
 end
 arch hills_rocky
 x 26
 y 32
+elevation 0
 end
 arch hills_rocky
 x 26
 y 33
+elevation 0
 end
 arch tree
 x 26
 y 34
+elevation 0
 end
 arch grass
 x 26
 y 35
+elevation 0
 end
 arch ytree_2
 x 26
@@ -9604,18 +10829,22 @@ end
 arch cobblestones
 x 26
 y 36
+elevation 0
 end
 arch cobblestones
 x 26
 y 37
+elevation 0
 end
 arch cobblestones
 x 26
 y 38
+elevation 0
 end
 arch grass
 x 26
 y 39
+elevation 0
 end
 arch ytree_2
 x 26
@@ -9624,372 +10853,465 @@ end
 arch grassdark
 x 26
 y 40
+elevation 0
 end
 arch grassdark
 x 26
 y 41
+elevation 0
 end
 arch grassdark
 x 26
 y 42
+elevation 0
 end
 arch grass
 x 26
 y 43
+elevation 0
 end
 arch brush
 x 26
 y 44
+elevation 0
 end
 arch brush
 x 26
 y 45
+elevation 0
 end
 arch woods_2
 x 26
 y 46
+elevation 0
 end
 arch grass
 x 26
 y 47
+elevation 0
 end
 arch woods_3
 x 26
 y 48
+elevation 0
 end
 arch brush
 x 26
 y 49
+elevation 0
 end
 arch sea
 x 27
+elevation 0
 end
 arch shallow_sea
 x 27
 y 1
+elevation 0
 end
 arch shallow_sea
 x 27
 y 2
+elevation 0
 end
 arch shallow_sea
 x 27
 y 3
+elevation 0
 end
 arch brush
 x 27
 y 4
+elevation 0
 end
 arch jungle_1
 x 27
 y 5
+elevation 0
 end
 arch hills_rocky
 x 27
 y 6
+elevation 0
 end
 arch hills
 x 27
 y 7
+elevation 0
 end
 arch hills
 x 27
 y 8
+elevation 0
 end
 arch hills
 x 27
 y 9
+elevation 0
 end
 arch tree
 x 27
 y 10
+elevation 0
 end
 arch grass
 x 27
 y 11
+elevation 0
 end
 arch grass
 x 27
 y 12
+elevation 0
 end
 arch tree
 x 27
 y 13
+elevation 0
 end
 arch woods_3
 x 27
 y 14
+elevation 0
 end
 arch woods_3
 x 27
 y 15
+elevation 0
 end
 arch woods_3
 x 27
 y 16
+elevation 0
 end
 arch desert
 x 27
 y 17
+elevation 0
 end
 arch grass
 x 27
 y 18
+elevation 0
 end
 arch woods_2
 x 27
 y 19
+elevation 0
 end
 arch woods_3
 x 27
 y 20
+elevation 0
 end
 arch woods_3
 x 27
 y 21
+elevation 0
 end
 arch brush
 x 27
 y 22
+elevation 0
 end
 arch desert
 x 27
 y 23
+elevation 0
 end
 arch grass
 x 27
 y 24
+elevation 0
 end
 arch grass
 x 27
 y 25
+elevation 0
 end
 arch grass
 x 27
 y 26
+elevation 0
 end
 arch hills
 x 27
 y 27
+elevation 0
 end
 arch mountain
 x 27
 y 28
+elevation 0
 end
 arch mountain_2
 x 27
 y 29
+elevation 0
 end
 arch mountain
 x 27
 y 31
+elevation 0
 end
 arch mountain
 x 27
 y 32
+elevation 0
 end
 arch hills_rocky
 x 27
 y 33
+elevation 0
 end
 arch tree
 x 27
 y 34
+elevation 0
 end
 arch grass
 x 27
 y 35
+elevation 0
 end
 arch cobblestones
 x 27
 y 36
+elevation 0
 end
 arch cobblestones
 x 27
 y 37
+elevation 0
 end
 arch cobblestones
 x 27
 y 38
+elevation 0
 end
 arch grass
 x 27
 y 39
+elevation 0
 end
 arch hills
 x 27
 y 40
+elevation 0
 end
 arch grassdark
 x 27
 y 41
+elevation 0
 end
 arch hills_rocky
 x 27
 y 42
+elevation 0
 end
 arch brush
 x 27
 y 43
+elevation 0
 end
 arch brush
 x 27
 y 44
+elevation 0
 end
 arch woods_2
 x 27
 y 45
+elevation 0
 end
 arch hills
 x 27
 y 46
+elevation 0
 end
 arch woods_3
 x 27
 y 47
+elevation 0
 end
 arch evergreen
 x 27
 y 48
+elevation 0
 end
 arch woods_3
 x 27
 y 49
+elevation 0
 end
 arch sea
 x 28
+elevation 0
 end
 arch shallow_sea
 x 28
 y 1
+elevation 0
 end
 arch shallow_sea
 x 28
 y 2
+elevation 0
 end
 arch shallow_sea
 x 28
 y 3
+elevation 0
 end
 arch brush
 x 28
 y 4
+elevation 0
 end
 arch tree
 x 28
 y 5
+elevation 0
 end
 arch hills
 x 28
 y 6
+elevation 0
 end
 arch mountain
 x 28
 y 7
+elevation 0
 end
 arch mountain
 x 28
 y 8
+elevation 0
 end
 arch hills_rocky
 x 28
 y 9
+elevation 0
 end
 arch hills
 x 28
 y 10
+elevation 0
 end
 arch hills_rocky
 x 28
 y 11
+elevation 0
 end
 arch evergreen
 x 28
 y 12
+elevation 0
 end
 arch brush
 x 28
 y 13
+elevation 0
 end
 arch tree
 x 28
 y 14
+elevation 0
 end
 arch hills_rocky
 x 28
 y 15
+elevation 0
 end
 arch hills
 x 28
 y 16
+elevation 0
 end
 arch hills
 x 28
 y 17
+elevation 0
 end
 arch hills_rocky
 x 28
 y 18
+elevation 0
 end
 arch hills
 x 28
 y 19
+elevation 0
 end
 arch hills
 x 28
 y 20
+elevation 0
 end
 arch woods_3
 x 28
 y 21
+elevation 0
 end
 arch jungle_1
 x 28
 y 22
+elevation 0
 end
 arch jungle_1
 x 28
 y 23
+elevation 0
 end
 arch brush
 x 28
 y 24
+elevation 0
 end
 arch grass
 x 28
 y 25
+elevation 0
 end
 arch brush
 x 28
 y 26
+elevation 0
 end
 arch brush
 x 28
 y 27
+elevation 0
 end
 arch mountain
 x 28
 y 28
+elevation 0
 end
 arch mountain
 x 28
 y 31
+elevation 0
 end
 arch mountain
 x 28
 y 32
+elevation 0
 end
 arch jungle_1
 x 28
 y 33
+elevation 0
 end
 arch tree
 x 28
 y 34
+elevation 0
 end
 arch grass
 x 28
 y 35
+elevation 0
 end
 arch ytree_2
 x 28
@@ -9998,18 +11320,22 @@ end
 arch cobblestones
 x 28
 y 36
+elevation 0
 end
 arch cobblestones
 x 28
 y 37
+elevation 0
 end
 arch cobblestones
 x 28
 y 38
+elevation 0
 end
 arch grass
 x 28
 y 39
+elevation 0
 end
 arch ytree_2
 x 28
@@ -10018,360 +11344,450 @@ end
 arch evergreen
 x 28
 y 40
+elevation 0
 end
 arch hills_rocky
 x 28
 y 41
+elevation 0
 end
 arch hills_rocky
 x 28
 y 42
+elevation 0
 end
 arch hills_rocky
 x 28
 y 43
+elevation 0
 end
 arch hills_rocky
 x 28
 y 44
+elevation 0
 end
 arch woods_2
 x 28
 y 45
+elevation 0
 end
 arch brush
 x 28
 y 46
+elevation 0
 end
 arch evergreen
 x 28
 y 47
+elevation 0
 end
 arch hills
 x 28
 y 48
+elevation 0
 end
 arch woods_3
 x 28
 y 49
+elevation 0
 end
 arch shallow_sea
 x 29
+elevation 0
 end
 arch shallow_sea
 x 29
 y 1
+elevation 0
 end
 arch shallow_sea
 x 29
 y 2
+elevation 0
 end
 arch deep_swamp
 x 29
 y 3
+elevation 0
 end
 arch brush
 x 29
 y 4
+elevation 0
 end
 arch hills
 x 29
 y 5
+elevation 0
 end
 arch mountain
 x 29
 y 6
+elevation 0
 end
 arch mountain
 x 29
 y 7
+elevation 0
 end
 arch mountain
 x 29
 y 8
+elevation 0
 end
 arch mountain
 x 29
 y 9
+elevation 0
 end
 arch mountain
 x 29
 y 10
+elevation 0
 end
 arch hills
 x 29
 y 11
+elevation 0
 end
 arch hills
 x 29
 y 12
+elevation 0
 end
 arch tree
 x 29
 y 13
+elevation 0
 end
 arch steppe
 x 29
 y 14
+elevation 0
 end
 arch mountain
 x 29
 y 15
+elevation 0
 end
 arch mountain
 x 29
 y 16
+elevation 0
 end
 arch hills
 x 29
 y 17
+elevation 0
 end
 arch hills
 x 29
 y 18
+elevation 0
 end
 arch hills
 x 29
 y 19
+elevation 0
 end
 arch hills
 x 29
 y 20
+elevation 0
 end
 arch tree
 x 29
 y 21
+elevation 0
 end
 arch jungle_1
 x 29
 y 22
+elevation 0
 end
 arch brush
 x 29
 y 23
+elevation 0
 end
 arch brush
 x 29
 y 24
+elevation 0
 end
 arch brush
 x 29
 y 25
+elevation 0
 end
 arch tree
 x 29
 y 26
+elevation 0
 end
 arch tree
 x 29
 y 27
+elevation 0
 end
 arch mountain
 x 29
 y 28
+elevation 0
 end
 arch mountain
 x 29
 y 29
+elevation 0
 end
 arch mountain
 x 29
 y 30
+elevation 0
 end
 arch mountain
 x 29
 y 31
+elevation 0
 end
 arch mountain
 x 29
 y 32
+elevation 0
 end
 arch hills_rocky
 x 29
 y 33
+elevation 0
 end
 arch hills_rocky
 x 29
 y 34
+elevation 0
 end
 arch grass
 x 29
 y 35
+elevation 0
 end
 arch cobblestones
 x 29
 y 36
+elevation 0
 end
 arch cobblestones
 x 29
 y 37
+elevation 0
 end
 arch cobblestones
 x 29
 y 38
+elevation 0
 end
 arch grass
 x 29
 y 39
+elevation 0
 end
 arch brush
 x 29
 y 40
+elevation 0
 end
 arch woods_3
 x 29
 y 41
+elevation 0
 end
 arch hills_rocky
 x 29
 y 42
+elevation 0
 end
 arch hills_rocky
 x 29
 y 43
+elevation 0
 end
 arch hills_rocky
 x 29
 y 44
+elevation 0
 end
 arch hills_rocky
 x 29
 y 45
+elevation 0
 end
 arch brush
 x 29
 y 46
+elevation 0
 end
 arch evergreen
 x 29
 y 47
+elevation 0
 end
 arch woods_3
 x 29
 y 48
+elevation 0
 end
 arch evergreen
 x 29
 y 49
+elevation 0
 end
 arch shallow_sea
 x 30
+elevation 0
 end
 arch shallow_sea
 x 30
 y 1
+elevation 0
 end
 arch shallow_sea
 x 30
 y 2
+elevation 0
 end
 arch brush
 x 30
 y 3
+elevation 0
 end
 arch brush
 x 30
 y 4
+elevation 0
 end
 arch hills
 x 30
 y 5
+elevation 0
 end
 arch mountain
 x 30
 y 6
+elevation 0
 end
 arch mountain
 x 30
 y 7
+elevation 0
 end
 arch mountain
 x 30
 y 8
+elevation 0
 end
 arch mountain
 x 30
 y 9
+elevation 0
 end
 arch mountain
 x 30
 y 10
+elevation 0
 end
 arch mountain
 x 30
 y 11
+elevation 0
 end
 arch mountain
 x 30
 y 12
+elevation 0
 end
 arch mountain
 x 30
 y 13
+elevation 0
 end
 arch mountain
 x 30
 y 14
+elevation 0
 end
 arch mountain
 x 30
 y 15
+elevation 0
 end
 arch mountain
 x 30
 y 16
+elevation 0
 end
 arch mountain
 x 30
 y 17
+elevation 0
 end
 arch hills
 x 30
 y 18
+elevation 0
 end
 arch tree
 x 30
 y 19
+elevation 0
 end
 arch tree
 x 30
 y 20
+elevation 0
 end
 arch desert
 x 30
 y 21
+elevation 0
 end
 arch brush
 x 30
 y 22
+elevation 0
 end
 arch brush
 x 30
 y 23
+elevation 0
 end
 arch brush
 x 30
 y 24
+elevation 0
 end
 arch brush
 x 30
 y 25
+elevation 0
 end
 arch tree
 x 30
 y 26
+elevation 0
 end
 arch hills_rocky
 x 30
 y 27
+elevation 0
 end
 arch mountain
 x 30
 y 28
+elevation 0
 end
 arch mountain
 x 30
 y 29
+elevation 0
 end
 arch mountain_cave
 slaying /scorn/dtabb/cave
@@ -10379,26 +11795,32 @@ hp 30
 sp 1
 x 30
 y 30
+elevation 0
 end
 arch mountain
 x 30
 y 31
+elevation 0
 end
 arch hills_rocky
 x 30
 y 32
+elevation 0
 end
 arch hills_rocky
 x 30
 y 33
+elevation 0
 end
 arch tree
 x 30
 y 34
+elevation 0
 end
 arch grass
 x 30
 y 35
+elevation 0
 end
 arch ytree_2
 x 30
@@ -10407,18 +11829,22 @@ end
 arch cobblestones
 x 30
 y 36
+elevation 0
 end
 arch cobblestones
 x 30
 y 37
+elevation 0
 end
 arch cobblestones
 x 30
 y 38
+elevation 0
 end
 arch grass
 x 30
 y 39
+elevation 0
 end
 arch ytree_2
 x 30
@@ -10427,185 +11853,231 @@ end
 arch woods_3
 x 30
 y 40
+elevation 0
 end
 arch woods_2
 x 30
 y 41
+elevation 0
 end
 arch woods_3
 x 30
 y 42
+elevation 0
 end
 arch hills_rocky
 x 30
 y 43
+elevation 0
 end
 arch woods_3
 x 30
 y 44
+elevation 0
 end
 arch brush
 x 30
 y 45
+elevation 0
 end
 arch hills_rocky
 x 30
 y 46
+elevation 0
 end
 arch hills_rocky
 x 30
 y 47
+elevation 0
 end
 arch woods_2
 x 30
 y 48
+elevation 0
 end
 arch brush
 x 30
 y 49
+elevation 0
 end
 arch shallow_sea
 x 31
+elevation 0
 end
 arch shallow_sea
 x 31
 y 1
+elevation 0
 end
 arch shallow_sea
 x 31
 y 2
+elevation 0
 end
 arch brush
 x 31
 y 3
+elevation 0
 end
 arch jungle_1
 x 31
 y 4
+elevation 0
 end
 arch mountain
 x 31
 y 5
+elevation 0
 end
 arch mountain
 x 31
 y 6
+elevation 0
 end
 arch mountain
 x 31
 y 7
+elevation 0
 end
 arch hills
 x 31
 y 8
+elevation 0
 end
 arch mountain
 x 31
 y 9
+elevation 0
 end
 arch mountain
 x 31
 y 10
+elevation 0
 end
 arch mountain
 x 31
 y 11
+elevation 0
 end
 arch mountain
 x 31
 y 12
+elevation 0
 end
 arch mountain
 x 31
 y 13
+elevation 0
 end
 arch mountain2
 x 31
 y 14
+elevation 0
 end
 arch mountain2
 x 31
 y 15
+elevation 0
 end
 arch mountain
 x 31
 y 16
+elevation 0
 end
 arch mountain
 x 31
 y 17
+elevation 0
 end
 arch hills
 x 31
 y 18
+elevation 0
 end
 arch tree
 x 31
 y 19
+elevation 0
 end
 arch tree
 x 31
 y 20
+elevation 0
 end
 arch evergreens
 x 31
 y 21
+elevation 0
 end
 arch jungle_1
 x 31
 y 22
+elevation 0
 end
 arch brush
 x 31
 y 23
+elevation 0
 end
 arch brush
 x 31
 y 24
+elevation 0
 end
 arch desert
 x 31
 y 25
+elevation 0
 end
 arch tree
 x 31
 y 26
+elevation 0
 end
 arch hills
 x 31
 y 27
+elevation 0
 end
 arch hills_rocky
 x 31
 y 28
+elevation 0
 end
 arch mountain
 x 31
 y 29
+elevation 0
 end
 arch mountain
 x 31
 y 30
+elevation 0
 end
 arch hills
 x 31
 y 31
+elevation 0
 end
 arch hills_rocky
 x 31
 y 32
+elevation 0
 end
 arch jungle_1
 x 31
 y 33
+elevation 0
 end
 arch tree
 x 31
 y 34
+elevation 0
 end
 arch grass
 x 31
 y 35
+elevation 0
 end
 arch lamppost
 x 31
@@ -10614,18 +12086,22 @@ end
 arch cobblestones
 x 31
 y 36
+elevation 0
 end
 arch cobblestones
 x 31
 y 37
+elevation 0
 end
 arch cobblestones
 x 31
 y 38
+elevation 0
 end
 arch brush
 x 31
 y 39
+elevation 0
 end
 arch lamppost
 x 31
@@ -10634,307 +12110,382 @@ end
 arch evergreen
 x 31
 y 40
+elevation 0
 end
 arch evergreen
 x 31
 y 41
+elevation 0
 end
 arch hills
 x 31
 y 42
+elevation 0
 end
 arch evergreen
 x 31
 y 43
+elevation 0
 end
 arch woods_3
 x 31
 y 44
+elevation 0
 end
 arch brush
 x 31
 y 45
+elevation 0
 end
 arch flagstone
 x 31
 y 46
+elevation 0
 end
 arch flagstone
 x 31
 y 47
+elevation 0
 end
 arch flagstone
 x 31
 y 48
+elevation 0
 end
 arch flagstone
 x 31
 y 49
+elevation 0
 end
 arch shallow_sea
 x 32
+elevation 0
 end
 arch shallow_sea
 x 32
 y 1
+elevation 0
 end
 arch grass
 x 32
 y 2
+elevation 0
 end
 arch brush
 x 32
 y 3
+elevation 0
 end
 arch jungle_1
 x 32
 y 4
+elevation 0
 end
 arch mountain
 x 32
 y 5
+elevation 0
 end
 arch mountain
 x 32
 y 6
+elevation 0
 end
 arch mountain
 x 32
 y 7
+elevation 0
 end
 arch mountain
 x 32
 y 8
+elevation 0
 end
 arch mountain
 x 32
 y 9
+elevation 0
 end
 arch mountain2
 x 32
 y 10
+elevation 0
 end
 arch mountain2
 x 32
 y 11
+elevation 0
 end
 arch mountain
 x 32
 y 12
+elevation 0
 end
 arch mountain2
 x 32
 y 13
+elevation 0
 end
 arch mountain2
 x 32
 y 14
+elevation 0
 end
 arch mountain2
 x 32
 y 15
+elevation 0
 end
 arch mountain2
 x 32
 y 16
+elevation 0
 end
 arch mountain
 x 32
 y 17
+elevation 0
 end
 arch hills
 x 32
 y 18
+elevation 0
 end
 arch tree
 x 32
 y 19
+elevation 0
 end
 arch evergreens
 x 32
 y 20
+elevation 0
 end
 arch jungle_1
 x 32
 y 21
+elevation 0
 end
 arch tree
 x 32
 y 22
+elevation 0
 end
 arch evergreens
 x 32
 y 23
+elevation 0
 end
 arch brush
 x 32
 y 24
+elevation 0
 end
 arch desert
 x 32
 y 25
+elevation 0
 end
 arch brush
 x 32
 y 26
+elevation 0
 end
 arch tree
 x 32
 y 27
+elevation 0
 end
 arch woods_3
 x 32
 y 28
+elevation 0
 end
 arch hills
 x 32
 y 29
+elevation 0
 end
 arch steppe
 x 32
 y 30
+elevation 0
 end
 arch jungle_1
 x 32
 y 31
+elevation 0
 end
 arch tree
 x 32
 y 32
+elevation 0
 end
 arch tree
 x 32
 y 33
+elevation 0
 end
 arch tree
 x 32
 y 34
+elevation 0
 end
 arch grass
 x 32
 y 35
+elevation 0
 end
 arch cobblestones
 x 32
 y 36
+elevation 0
 end
 arch cobblestones
 x 32
 y 37
+elevation 0
 end
 arch cobblestones
 x 32
 y 38
+elevation 0
 end
 arch flagstone
 x 32
 y 39
+elevation 0
 end
 arch flagstone
 x 32
 y 40
+elevation 0
 end
 arch flagstone
 x 32
 y 41
+elevation 0
 end
 arch flagstone
 x 32
 y 42
+elevation 0
 end
 arch flagstone
 x 32
 y 43
+elevation 0
 end
 arch flagstone
 x 32
 y 44
+elevation 0
 end
 arch flagstone
 x 32
 y 45
+elevation 0
 end
 arch flagstone
 x 32
 y 46
+elevation 0
 end
 arch flagstone
 x 32
 y 47
+elevation 0
 end
 arch flagstone
 x 32
 y 48
+elevation 0
 end
 arch flagstone
 x 32
 y 49
+elevation 0
 end
 arch shallow_sea
 x 33
+elevation 0
 end
 arch grass
 x 33
 y 1
+elevation 0
 end
 arch grass
 x 33
 y 2
+elevation 0
 end
 arch jungle_1
 x 33
 y 3
+elevation 0
 end
 arch hills
 x 33
 y 4
+elevation 0
 end
 arch mountain
 x 33
 y 5
+elevation 0
 end
 arch mountain
 x 33
 y 6
+elevation 0
 end
 arch mountain
 x 33
 y 7
+elevation 0
 end
 arch mountain2
 x 33
 y 8
+elevation 0
 end
 arch mountain2
 x 33
 y 9
+elevation 0
 end
 arch mountain2
 x 33
 y 10
+elevation 0
 end
 arch mountain2
 x 33
 y 11
+elevation 0
 end
 arch mountain2
 x 33
 y 12
+elevation 0
 end
 arch mountain2
 x 33
 y 13
+elevation 0
 end
 arch mountain2
 x 33
 y 14
+elevation 0
 end
 arch mountain2
 x 33
 y 15
+elevation 0
 end
 arch mountain_cave2
-slaying /!
 msg
 layoutstyle maze
 floorstyle stones2
@@ -10948,3338 +12499,4173 @@ orientation 1
 difficulty 2
 final_map /quests/peterm/quests/goblin_chief
 endmsg
+slaying /!
+is_floor 0
 x 33
 y 15
-is_floor 0
 end
 arch mountain
 x 33
 y 16
+elevation 0
 end
 arch mountain
 x 33
 y 17
+elevation 0
 end
 arch hills
 x 33
 y 18
+elevation 0
 end
 arch desert
 x 33
 y 19
+elevation 0
 end
 arch jungle_1
 x 33
 y 20
+elevation 0
 end
 arch tree
 x 33
 y 21
+elevation 0
 end
 arch jungle_1
 x 33
 y 22
+elevation 0
 end
 arch tree
 x 33
 y 23
+elevation 0
 end
 arch brush
 x 33
 y 24
+elevation 0
 end
 arch brush
 x 33
 y 25
+elevation 0
 end
 arch brush
 x 33
 y 26
+elevation 0
 end
 arch tree
 x 33
 y 27
+elevation 0
 end
 arch hills_rocky
 x 33
 y 28
+elevation 0
 end
 arch hills
 x 33
 y 29
+elevation 0
 end
 arch tree
 x 33
 y 30
+elevation 0
 end
 arch brush
 x 33
 y 31
+elevation 0
 end
 arch tree
 x 33
 y 32
+elevation 0
 end
 arch tree
 x 33
 y 33
+elevation 0
 end
 arch brush
 x 33
 y 34
+elevation 0
 end
 arch brush
 x 33
 y 35
+elevation 0
 end
 arch sign_w
 name Scorn City Limits
-name_pl Scorn City Limits
 msg
 Santo Dominion - 350 miles north
 Brest - 518 miles south
 Navar City - 948 miles east
 endmsg
+name_pl Scorn City Limits
 x 33
 y 35
 end
 arch cobblestones
 x 33
 y 36
+elevation 0
 end
 arch cobblestones
 x 33
 y 37
+elevation 0
 end
 arch cobblestones
 x 33
 y 38
+elevation 0
 end
 arch flagstone
 x 33
 y 39
+elevation 0
 end
 arch flagstone
 x 33
 y 40
+elevation 0
 end
 arch flagstone
 x 33
 y 41
+elevation 0
 end
 arch flagstone
 x 33
 y 42
+elevation 0
 end
 arch flagstone
 x 33
 y 43
+elevation 0
 end
 arch flagstone
 x 33
 y 44
+elevation 0
 end
 arch flagstone
 x 33
 y 45
+elevation 0
 end
 arch flagstone
 x 33
 y 46
+elevation 0
 end
 arch flagstone
 x 33
 y 47
+elevation 0
 end
 arch brush
 x 33
 y 48
+elevation 0
 end
 arch tree
 x 33
 y 49
+elevation 0
 end
 arch grass
 x 34
+elevation 0
 end
 arch brush
 x 34
 y 1
+elevation 0
 end
 arch grass
 x 34
 y 2
+elevation 0
 end
 arch jungle_1
 x 34
 y 3
+elevation 0
 end
 arch mountain
 x 34
 y 4
+elevation 0
 end
 arch mountain
 x 34
 y 5
+elevation 0
 end
 arch mountain
 x 34
 y 6
+elevation 0
 end
 arch mountain
 x 34
 y 7
+elevation 0
 end
 arch mountain2
 x 34
 y 8
+elevation 0
 end
 arch mountain2
 x 34
 y 9
+elevation 0
 end
 arch mountain2
 x 34
 y 10
+elevation 0
 end
 arch mountain2
 x 34
 y 11
+elevation 0
 end
 arch mountain2
 x 34
 y 12
+elevation 0
 end
 arch mountain2
 x 34
 y 13
+elevation 0
 end
 arch mountain2
 x 34
 y 14
+elevation 0
 end
 arch mountain2
 x 34
 y 15
+elevation 0
 end
 arch mountain
 x 34
 y 16
+elevation 0
 end
 arch jungle_1
 x 34
 y 17
+elevation 0
 end
 arch hills
 x 34
 y 18
+elevation 0
 end
 arch jungle_1
 x 34
 y 19
+elevation 0
 end
 arch jungle_1
 x 34
 y 20
+elevation 0
 end
 arch tree
 x 34
 y 21
+elevation 0
 end
 arch tree
 x 34
 y 22
+elevation 0
 end
 arch evergreens
 x 34
 y 23
+elevation 0
 end
 arch brush
 x 34
 y 24
+elevation 0
 end
 arch desert
 x 34
 y 25
+elevation 0
 end
 arch brush
 x 34
 y 26
+elevation 0
 end
 arch tree
 x 34
 y 27
+elevation 0
 end
 arch jungle_1
 x 34
 y 28
+elevation 0
 end
 arch cobblestones
 x 34
 y 29
+elevation 0
 end
 arch cobblestones
 x 34
 y 30
+elevation 0
 end
 arch cobblestones
 x 34
 y 31
+elevation 0
 end
 arch cobblestones
 x 34
 y 32
+elevation 0
 end
 arch cobblestones
 x 34
 y 33
+elevation 0
 end
 arch cobblestones
 x 34
 y 34
+elevation 0
 end
 arch cobblestones
 x 34
 y 35
+elevation 0
 end
 arch cobblestones
 x 34
 y 36
+elevation 0
 end
 arch cobblestones
 x 34
 y 37
+elevation 0
 end
 arch cobblestones
 x 34
 y 38
+elevation 0
 end
 arch cobblestones
 x 34
 y 39
+elevation 0
 end
 arch cobblestones
 x 34
 y 40
+elevation 0
 end
 arch tree
 x 34
 y 41
+elevation 0
 end
 arch tree
 x 34
 y 42
+elevation 0
 end
 arch brush
 x 34
 y 43
+elevation 0
 end
 arch brush
 x 34
 y 44
+elevation 0
 end
 arch brush
 x 34
 y 45
+elevation 0
 end
 arch tree
 x 34
 y 46
+elevation 0
 end
 arch evergreen
 x 34
 y 47
+elevation 0
 end
 arch tree
 x 34
 y 48
+elevation 0
 end
 arch hills
 x 34
 y 49
+elevation 0
 end
 arch grass
 x 35
+elevation 0
 end
 arch brush
 x 35
 y 1
+elevation 0
 end
 arch brush
 x 35
 y 2
+elevation 0
 end
 arch jungle_1
 x 35
 y 3
+elevation 0
 end
 arch hills
 x 35
 y 4
+elevation 0
 end
 arch mountain
 x 35
 y 5
+elevation 0
 end
 arch mountain
 x 35
 y 6
+elevation 0
 end
 arch mountain
 x 35
 y 7
+elevation 0
 end
 arch mountain2
 x 35
 y 8
+elevation 0
 end
 arch mountain2
 x 35
 y 9
+elevation 0
 end
 arch mountain2
 x 35
 y 10
+elevation 0
 end
 arch mountain2
 x 35
 y 11
+elevation 0
 end
 arch mountain
 x 35
 y 12
+elevation 0
 end
 arch mountain2
 x 35
 y 13
+elevation 0
 end
 arch mountain2
 x 35
 y 14
+elevation 0
 end
 arch mountain2
 x 35
 y 15
+elevation 0
 end
 arch mountain
 x 35
 y 16
+elevation 0
 end
 arch hills
 x 35
 y 17
+elevation 0
 end
 arch jungle_1
 x 35
 y 18
+elevation 0
 end
 arch jungle_1
 x 35
 y 19
+elevation 0
 end
 arch tree
 x 35
 y 20
+elevation 0
 end
 arch tree
 x 35
 y 21
+elevation 0
 end
 arch jungle_1
 x 35
 y 22
+elevation 0
 end
 arch brush
 x 35
 y 23
+elevation 0
 end
 arch desert
 x 35
 y 24
+elevation 0
 end
 arch desert
 x 35
 y 25
+elevation 0
 end
 arch brush
 x 35
 y 26
+elevation 0
 end
 arch brush
 x 35
 y 27
+elevation 0
 end
 arch jungle_1
 x 35
 y 28
+elevation 0
 end
 arch cobblestones
 x 35
 y 29
+elevation 0
 end
 arch cobblestones
 x 35
 y 30
+elevation 0
 end
 arch cobblestones
 x 35
 y 31
+elevation 0
 end
 arch cobblestones
 x 35
 y 32
+elevation 0
 end
 arch cobblestones
 x 35
 y 33
+elevation 0
 end
 arch cobblestones
 x 35
 y 34
+elevation 0
 end
 arch cobblestones
 x 35
 y 35
+elevation 0
 end
 arch cobblestones
 x 35
 y 36
+elevation 0
 end
 arch cobblestones
 x 35
 y 37
+elevation 0
 end
 arch cobblestones
 x 35
 y 38
+elevation 0
 end
 arch cobblestones
 x 35
 y 39
+elevation 0
 end
 arch cobblestones
 x 35
 y 40
+elevation 0
 end
 arch grassmedium
 x 35
 y 41
+elevation 0
 end
 arch evergreen
 x 35
 y 42
+elevation 0
 end
 arch evergreen
 x 35
 y 43
+elevation 0
 end
 arch evergreen
 x 35
 y 44
+elevation 0
 end
 arch woods_3
 x 35
 y 45
+elevation 0
 end
 arch hills
 x 35
 y 46
+elevation 0
 end
 arch tree
 x 35
 y 47
+elevation 0
 end
 arch evergreen
 x 35
 y 48
+elevation 0
 end
 arch tree
 x 35
 y 49
+elevation 0
 end
 arch brush
 x 36
+elevation 0
 end
 arch grass
 x 36
 y 1
+elevation 0
 end
 arch tree
 x 36
 y 2
+elevation 0
 end
 arch tree
 x 36
 y 3
+elevation 0
 end
 arch hills
 x 36
 y 4
+elevation 0
 end
 arch hills
 x 36
 y 5
+elevation 0
 end
 arch hills
 x 36
 y 6
+elevation 0
 end
 arch mountain
 x 36
 y 7
+elevation 0
 end
 arch mountain
 x 36
 y 8
+elevation 0
 end
 arch mountain2
 x 36
 y 9
+elevation 0
 end
 arch mountain2
 x 36
 y 10
+elevation 0
 end
 arch mountain
 x 36
 y 11
+elevation 0
 end
 arch mountain
 x 36
 y 12
+elevation 0
 end
 arch mountain
 x 36
 y 13
+elevation 0
 end
 arch mountain
 x 36
 y 14
+elevation 0
 end
 arch mountain
 x 36
 y 15
+elevation 0
 end
 arch mountain
 x 36
 y 16
+elevation 0
 end
 arch hills
 x 36
 y 17
+elevation 0
 end
 arch hills
 x 36
 y 18
+elevation 0
 end
 arch hills
 x 36
 y 19
+elevation 0
 end
 arch tree
 x 36
 y 20
+elevation 0
 end
 arch tree
 x 36
 y 21
+elevation 0
 end
 arch jungle_1
 x 36
 y 22
+elevation 0
 end
 arch brush
 x 36
 y 23
+elevation 0
 end
 arch desert
 x 36
 y 24
+elevation 0
 end
 arch desert
 x 36
 y 25
+elevation 0
 end
 arch brush
 x 36
 y 26
+elevation 0
 end
 arch brush
 x 36
 y 27
+elevation 0
 end
 arch desert
 x 36
 y 28
+elevation 0
 end
 arch cobblestones
 x 36
 y 29
+elevation 0
 end
 arch cobblestones
 x 36
 y 30
+elevation 0
 end
 arch tree
 x 36
 y 31
+elevation 0
 end
 arch jungle_1
 x 36
 y 32
+elevation 0
 end
 arch desert
 x 36
 y 33
+elevation 0
 end
 arch desert
 x 36
 y 34
+elevation 0
 end
 arch desert
 x 36
 y 35
+elevation 0
 end
 arch hills_rocky
 x 36
 y 36
+elevation 0
 end
 arch jungle_2
 x 36
 y 37
+elevation 0
 end
 arch jungle_1
 x 36
 y 38
+elevation 0
 end
 arch cobblestones
 x 36
 y 39
+elevation 0
 end
 arch cobblestones
 x 36
 y 40
+elevation 0
 end
 arch grassmedium
 x 36
 y 41
+elevation 0
 end
 arch jungle_2
 x 36
 y 42
+elevation 0
 end
 arch hills_rocky
 x 36
 y 43
+elevation 0
 end
 arch hills_rocky
 x 36
 y 44
+elevation 0
 end
 arch jungle_2
 x 36
 y 45
+elevation 0
 end
 arch hills
 x 36
 y 46
+elevation 0
 end
 arch jungle_2
 x 36
 y 47
+elevation 0
 end
 arch desert
 x 36
 y 48
+elevation 0
 end
 arch desert
 x 36
 y 49
+elevation 0
 end
 arch grass
 x 37
+elevation 0
 end
 arch tree
 x 37
 y 1
+elevation 0
 end
 arch tree
 x 37
 y 2
+elevation 0
 end
 arch tree
 x 37
 y 3
+elevation 0
 end
 arch evergreens
 x 37
 y 4
+elevation 0
 end
 arch hills
 x 37
 y 5
+elevation 0
 end
 arch hills
 x 37
 y 6
+elevation 0
 end
 arch mountain
 x 37
 y 7
+elevation 0
 end
 arch mountain
 x 37
 y 8
+elevation 0
 end
 arch mountain
 x 37
 y 9
+elevation 0
 end
 arch mountain
 x 37
 y 10
+elevation 0
 end
 arch mountain
 x 37
 y 11
+elevation 0
 end
 arch hills
 x 37
 y 12
+elevation 0
 end
 arch mountain
 x 37
 y 13
+elevation 0
 end
 arch mountain
 x 37
 y 14
+elevation 0
 end
 arch mountain
 x 37
 y 15
+elevation 0
 end
 arch hills
 x 37
 y 16
+elevation 0
 end
 arch hills
 x 37
 y 17
+elevation 0
 end
 arch hills
 x 37
 y 18
+elevation 0
 end
 arch hills
 x 37
 y 19
+elevation 0
 end
 arch jungle_1
 x 37
 y 20
+elevation 0
 end
 arch jungle_1
 x 37
 y 21
+elevation 0
 end
 arch jungle_1
 x 37
 y 22
+elevation 0
 end
 arch cobblestones
 x 37
 y 23
+elevation 0
 end
 arch cobblestones
 x 37
 y 24
+elevation 0
 end
 arch cobblestones
 x 37
 y 25
+elevation 0
 end
 arch cobblestones
 x 37
 y 26
+elevation 0
 end
 arch cobblestones
 x 37
 y 27
+elevation 0
 end
 arch cobblestones
 x 37
 y 28
+elevation 0
 end
 arch cobblestones
 x 37
 y 29
+elevation 0
 end
 arch cobblestones
 x 37
 y 30
+elevation 0
 end
 arch tree
 x 37
 y 31
+elevation 0
 end
 arch jungle_1
 x 37
 y 32
+elevation 0
 end
 arch desert
 x 37
 y 33
+elevation 0
 end
 arch desert
 x 37
 y 34
+elevation 0
 end
 arch tree
 x 37
 y 35
+elevation 0
 end
 arch hills_rocky
 x 37
 y 36
+elevation 0
 end
 arch hills_rocky
 x 37
 y 37
+elevation 0
 end
 arch jungle_1
 x 37
 y 38
+elevation 0
 end
 arch cobblestones
 x 37
 y 39
+elevation 0
 end
 arch cobblestones
 x 37
 y 40
+elevation 0
 end
 arch jungle_1
 x 37
 y 41
+elevation 0
 end
 arch jungle_1
 x 37
 y 42
+elevation 0
 end
 arch hills_rocky
 x 37
 y 43
+elevation 0
 end
 arch hills_rocky
 x 37
 y 44
+elevation 0
 end
 arch hills_rocky
 x 37
 y 45
+elevation 0
 end
 arch hills_rocky
 x 37
 y 46
+elevation 0
 end
 arch jungle_1
 x 37
 y 47
+elevation 0
 end
 arch desert
 x 37
 y 48
+elevation 0
 end
 arch desert
 x 37
 y 49
+elevation 0
 end
 arch woods_3
 x 38
+elevation 0
 end
 arch tree
 x 38
 y 1
+elevation 0
 end
 arch evergreens
 x 38
 y 2
+elevation 0
 end
 arch tree
 x 38
 y 3
+elevation 0
 end
 arch evergreens
 x 38
 y 4
+elevation 0
 end
 arch tree
 x 38
 y 5
+elevation 0
 end
 arch hills
 x 38
 y 6
+elevation 0
 end
 arch hills_rocky
 x 38
 y 7
+elevation 0
 end
 arch mountain
 x 38
 y 8
+elevation 0
 end
 arch mountain
 x 38
 y 9
+elevation 0
 end
 arch mountain
 x 38
 y 10
+elevation 0
 end
 arch mountain
 x 38
 y 11
+elevation 0
 end
 arch mountain
 x 38
 y 12
+elevation 0
 end
 arch mountain
 x 38
 y 13
+elevation 0
 end
 arch mountain
 x 38
 y 14
+elevation 0
 end
 arch hills
 x 38
 y 15
+elevation 0
 end
 arch hills
 x 38
 y 16
+elevation 0
 end
 arch tree
 x 38
 y 17
+elevation 0
 end
 arch hills
 x 38
 y 18
+elevation 0
 end
 arch hills
 x 38
 y 19
+elevation 0
 end
 arch jungle_1
 x 38
 y 20
+elevation 0
 end
 arch tree
 x 38
 y 21
+elevation 0
 end
 arch cobblestones
 x 38
 y 22
+elevation 0
 end
 arch cobblestones
 x 38
 y 23
+elevation 0
 end
 arch cobblestones
 x 38
 y 24
+elevation 0
 end
 arch cobblestones
 x 38
 y 25
+elevation 0
 end
 arch cobblestones
 x 38
 y 26
+elevation 0
 end
 arch cobblestones
 x 38
 y 27
+elevation 0
 end
 arch cobblestones
 x 38
 y 28
+elevation 0
 end
 arch cobblestones
 x 38
 y 29
+elevation 0
 end
 arch cobblestones
 x 38
 y 30
+elevation 0
 end
 arch jungle_1
 x 38
 y 31
+elevation 0
 end
 arch desert
 x 38
 y 32
+elevation 0
 end
 arch desert
 x 38
 y 33
+elevation 0
 end
 arch desert
 x 38
 y 34
+elevation 0
 end
 arch tree
 x 38
 y 35
+elevation 0
 end
 arch hills_rocky
 x 38
 y 36
+elevation 0
 end
 arch hills_rocky
 x 38
 y 37
+elevation 0
 end
 arch hills_rocky
 x 38
 y 38
+elevation 0
 end
 arch cobblestones
 x 38
 y 39
+elevation 0
 end
 arch cobblestones
 x 38
 y 40
+elevation 0
 end
 arch cobblestones
 x 38
 y 41
+elevation 0
 end
 arch cobblestones
 x 38
 y 42
+elevation 0
 end
 arch hills_rocky
 x 38
 y 43
+elevation 0
 end
 arch hills_rocky
 x 38
 y 44
+elevation 0
 end
 arch jungle_1
 x 38
 y 45
+elevation 0
 end
 arch desert
 x 38
 y 46
+elevation 0
 end
 arch desert
 x 38
 y 47
+elevation 0
 end
 arch desert
 x 38
 y 48
+elevation 0
 end
 arch desert
 x 38
 y 49
+elevation 0
 end
 arch tree
 x 39
+elevation 0
 end
 arch evergreens
 x 39
 y 1
+elevation 0
 end
 arch tree
 x 39
 y 2
+elevation 0
 end
 arch tree
 x 39
 y 3
+elevation 0
 end
 arch tree
 x 39
 y 4
+elevation 0
 end
 arch tree
 x 39
 y 5
+elevation 0
 end
 arch tree
 x 39
 y 6
+elevation 0
 end
 arch hills
 x 39
 y 7
+elevation 0
 end
 arch tree
 x 39
 y 8
+elevation 0
 end
 arch brush
 x 39
 y 9
+elevation 0
 end
 arch tree
 x 39
 y 10
+elevation 0
 end
 arch hills
 x 39
 y 11
+elevation 0
 end
 arch mountain
 x 39
 y 12
+elevation 0
 end
 arch hills
 x 39
 y 13
+elevation 0
 end
 arch hills
 x 39
 y 14
+elevation 0
 end
 arch tree
 x 39
 y 15
+elevation 0
 end
 arch tree
 x 39
 y 16
+elevation 0
 end
 arch hills
 x 39
 y 17
+elevation 0
 end
 arch hills
 x 39
 y 18
+elevation 0
 end
 arch tree
 x 39
 y 19
+elevation 0
 end
 arch tree
 x 39
 y 20
+elevation 0
 end
 arch cobblestones
 x 39
 y 21
+elevation 0
 end
 arch cobblestones
 x 39
 y 22
+elevation 0
 end
 arch cobblestones
 x 39
 y 23
+elevation 0
 end
 arch tree
 x 39
 y 24
+elevation 0
 end
 arch grasspond
 x 39
 y 25
+elevation 0
 end
 arch brush
 x 39
 y 26
+elevation 0
 end
 arch brush
 x 39
 y 27
+elevation 0
 end
 arch brush
 x 39
 y 28
+elevation 0
 end
 arch brush
 x 39
 y 29
+elevation 0
 end
 arch tree
 x 39
 y 30
+elevation 0
 end
 arch hills_rocky
 x 39
 y 31
+elevation 0
 end
 arch hills_rocky
 x 39
 y 32
+elevation 0
 end
 arch jungle_1
 x 39
 y 33
+elevation 0
 end
 arch jungle_1
 x 39
 y 34
+elevation 0
 end
 arch brush
 x 39
 y 35
+elevation 0
 end
 arch hills_rocky
 x 39
 y 36
+elevation 0
 end
 arch hills_rocky
 x 39
 y 37
+elevation 0
 end
 arch hills_rocky
 x 39
 y 38
+elevation 0
 end
 arch cobblestones
 x 39
 y 39
+elevation 0
 end
 arch cobblestones
 x 39
 y 40
+elevation 0
 end
 arch cobblestones
 x 39
 y 41
+elevation 0
 end
 arch cobblestones
 x 39
 y 42
+elevation 0
 end
 arch hills_rocky
 x 39
 y 43
+elevation 0
 end
 arch hills_rocky
 x 39
 y 44
+elevation 0
 end
 arch jungle_1
 x 39
 y 45
+elevation 0
 end
 arch desert
 x 39
 y 46
+elevation 0
 end
 arch desert
 x 39
 y 47
+elevation 0
 end
 arch jungle_1
 x 39
 y 48
+elevation 0
 end
 arch jungle_1
 x 39
 y 49
+elevation 0
 end
 arch evergreens
 x 40
+elevation 0
 end
 arch tree
 x 40
 y 1
+elevation 0
 end
 arch tree
 x 40
 y 2
+elevation 0
 end
 arch evergreens
 x 40
 y 3
+elevation 0
 end
 arch tree
 x 40
 y 4
+elevation 0
 end
 arch tree
 x 40
 y 5
+elevation 0
 end
 arch tree
 x 40
 y 6
+elevation 0
 end
 arch tree
 x 40
 y 7
+elevation 0
 end
 arch tree
 x 40
 y 8
+elevation 0
 end
 arch tree
 x 40
 y 9
+elevation 0
 end
 arch tree
 x 40
 y 10
+elevation 0
 end
 arch hills
 x 40
 y 11
+elevation 0
 end
 arch hills
 x 40
 y 12
+elevation 0
 end
 arch hills
 x 40
 y 13
+elevation 0
 end
 arch tree
 x 40
 y 14
+elevation 0
 end
 arch brush
 x 40
 y 15
+elevation 0
 end
 arch tree
 x 40
 y 16
+elevation 0
 end
 arch tree
 x 40
 y 17
+elevation 0
 end
 arch tree
 x 40
 y 18
+elevation 0
 end
 arch tree
 x 40
 y 19
+elevation 0
 end
 arch cobblestones
 x 40
 y 20
+elevation 0
 end
 arch cobblestones
 x 40
 y 21
+elevation 0
 end
 arch cobblestones
 x 40
 y 22
+elevation 0
 end
 arch tree
 x 40
 y 23
+elevation 0
 end
 arch brush
 x 40
 y 24
+elevation 0
 end
 arch desert
 x 40
 y 25
+elevation 0
 end
 arch brush
 x 40
 y 26
+elevation 0
 end
 arch brush
 x 40
 y 27
+elevation 0
 end
 arch brush
 x 40
 y 28
+elevation 0
 end
 arch tree
 x 40
 y 29
+elevation 0
 end
 arch hills
 x 40
 y 30
+elevation 0
 end
 arch hills_rocky
 x 40
 y 31
+elevation 0
 end
 arch hills_rocky
 x 40
 y 32
+elevation 0
 end
 arch hills
 x 40
 y 33
+elevation 0
 end
 arch hills_rocky
 x 40
 y 34
+elevation 0
 end
 arch jungle_1
 x 40
 y 35
+elevation 0
 end
 arch tree
 x 40
 y 36
+elevation 0
 end
 arch hills_rocky
 x 40
 y 37
+elevation 0
 end
 arch hills_rocky
 x 40
 y 38
+elevation 0
 end
 arch hills_rocky
 x 40
 y 39
+elevation 0
 end
 arch brush
 x 40
 y 40
+elevation 0
 end
 arch cobblestones
 x 40
 y 41
+elevation 0
 end
 arch cobblestones
 x 40
 y 42
+elevation 0
 end
 arch hills_rocky
 x 40
 y 43
+elevation 0
 end
 arch jungle_1
 x 40
 y 44
+elevation 0
 end
 arch jungle_1
 x 40
 y 45
+elevation 0
 end
 arch desert
 x 40
 y 46
+elevation 0
 end
 arch desert
 x 40
 y 47
+elevation 0
 end
 arch jungle_1
 x 40
 y 48
+elevation 0
 end
 arch jungle_1
 x 40
 y 49
+elevation 0
 end
 arch tree
 x 41
+elevation 0
 end
 arch evergreens
 x 41
 y 1
+elevation 0
 end
 arch hills_rocky
 x 41
 y 2
+elevation 0
 end
 arch tree
 x 41
 y 3
+elevation 0
 end
 arch tree
 x 41
 y 4
+elevation 0
 end
 arch tree
 x 41
 y 5
+elevation 0
 end
 arch tree
 x 41
 y 6
+elevation 0
 end
 arch tree
 x 41
 y 7
+elevation 0
 end
 arch tree
 x 41
 y 8
+elevation 0
 end
 arch tree
 x 41
 y 9
+elevation 0
 end
 arch tree
 x 41
 y 10
+elevation 0
 end
 arch hills
 x 41
 y 11
+elevation 0
 end
 arch hills
 x 41
 y 12
+elevation 0
 end
 arch hills
 x 41
 y 13
+elevation 0
 end
 arch hills
 x 41
 y 14
+elevation 0
 end
 arch tree
 x 41
 y 15
+elevation 0
 end
 arch tree
 x 41
 y 16
+elevation 0
 end
 arch brush
 x 41
 y 17
+elevation 0
 end
 arch tree
 x 41
 y 18
+elevation 0
 end
 arch cobblestones
 x 41
 y 19
+elevation 0
 end
 arch cobblestones
 x 41
 y 20
+elevation 0
 end
 arch cobblestones
 x 41
 y 21
+elevation 0
 end
 arch brush
 x 41
 y 22
+elevation 0
 end
 arch tree
 x 41
 y 23
+elevation 0
 end
 arch tree
 x 41
 y 24
+elevation 0
 end
 arch tree
 x 41
 y 25
+elevation 0
 end
 arch woods
 x 41
 y 26
+elevation 0
 end
 arch brush
 x 41
 y 27
+elevation 0
 end
 arch brush
 x 41
 y 28
+elevation 0
 end
 arch hills
 x 41
 y 29
+elevation 0
 end
 arch hills
 x 41
 y 30
+elevation 0
 end
 arch steppe
 x 41
 y 31
+elevation 0
 end
 arch mountain
 x 41
 y 32
+elevation 0
 end
 arch mountain
 x 41
 y 33
+elevation 0
 end
 arch hills_rocky
 x 41
 y 34
+elevation 0
 end
 arch jungle_1
 x 41
 y 35
+elevation 0
 end
 arch hills_rocky
 x 41
 y 36
+elevation 0
 end
 arch hills_rocky
 x 41
 y 37
+elevation 0
 end
 arch hills_rocky
 x 41
 y 38
+elevation 0
 end
 arch jungle_1
 x 41
 y 39
+elevation 0
 end
 arch jungle_1
 x 41
 y 40
+elevation 0
 end
 arch cobblestones
 x 41
 y 41
+elevation 0
 end
 arch cobblestones
 x 41
 y 42
+elevation 0
 end
 arch hills_rocky
 x 41
 y 43
+elevation 0
 end
 arch jungle_1
 x 41
 y 44
+elevation 0
 end
 arch desert
 x 41
 y 45
+elevation 0
 end
 arch desert
 x 41
 y 46
+elevation 0
 end
 arch desert
 x 41
 y 47
+elevation 0
 end
 arch desert
 x 41
 y 48
+elevation 0
 end
 arch jungle_1
 x 41
 y 49
+elevation 0
 end
 arch evergreens
 x 42
+elevation 0
 end
 arch hills_rocky
 x 42
 y 1
+elevation 0
 end
 arch hills_rocky
 x 42
 y 2
+elevation 0
 end
 arch hills_rocky
 x 42
 y 3
+elevation 0
 end
 arch tree
 x 42
 y 4
+elevation 0
 end
 arch tree
 x 42
 y 5
+elevation 0
 end
 arch tree
 x 42
 y 6
+elevation 0
 end
 arch tree
 x 42
 y 7
+elevation 0
 end
 arch tree
 x 42
 y 8
+elevation 0
 end
 arch tree
 x 42
 y 9
+elevation 0
 end
 arch hills
 x 42
 y 10
+elevation 0
 end
 arch hills
 x 42
 y 11
+elevation 0
 end
 arch mountain
 x 42
 y 12
+elevation 0
 end
 arch mountain
 x 42
 y 13
+elevation 0
 end
 arch hills
 x 42
 y 14
+elevation 0
 end
 arch tree
 x 42
 y 15
+elevation 0
 end
 arch tree
 x 42
 y 16
+elevation 0
 end
 arch brush
 x 42
 y 17
+elevation 0
 end
 arch cobblestones
 x 42
 y 18
+elevation 0
 end
 arch cobblestones
 x 42
 y 19
+elevation 0
 end
 arch cobblestones
 x 42
 y 20
+elevation 0
 end
 arch brush
 x 42
 y 21
+elevation 0
 end
 arch tree
 x 42
 y 22
+elevation 0
 end
 arch tree
 x 42
 y 23
+elevation 0
 end
 arch tree
 x 42
 y 24
+elevation 0
 end
 arch tree
 x 42
 y 25
+elevation 0
 end
 arch woods
 x 42
 y 26
+elevation 0
 end
 arch tree
 x 42
 y 27
+elevation 0
 end
 arch hills
 x 42
 y 28
+elevation 0
 end
 arch mountain
 x 42
 y 29
+elevation 0
 end
 arch hills_rocky
 x 42
 y 30
+elevation 0
 end
 arch jungle_1
 x 42
 y 31
+elevation 0
 end
 arch hills_rocky
 x 42
 y 32
+elevation 0
 end
 arch mountain
 x 42
 y 33
+elevation 0
 end
 arch hills_rocky
 x 42
 y 34
+elevation 0
 end
 arch hills_rocky
 x 42
 y 35
+elevation 0
 end
 arch hills_rocky
 x 42
 y 36
+elevation 0
 end
 arch hills_rocky
 x 42
 y 37
+elevation 0
 end
 arch hills_rocky
 x 42
 y 38
+elevation 0
 end
 arch tree
 x 42
 y 39
+elevation 0
 end
 arch brush
 x 42
 y 40
+elevation 0
 end
 arch cobblestones
 x 42
 y 41
+elevation 0
 end
 arch cobblestones
 x 42
 y 42
+elevation 0
 end
 arch hills_rocky
 x 42
 y 43
+elevation 0
 end
 arch jungle_1
 x 42
 y 44
+elevation 0
 end
 arch jungle_1
 x 42
 y 45
+elevation 0
 end
 arch desert
 x 42
 y 46
+elevation 0
 end
 arch desert
 x 42
 y 47
+elevation 0
 end
 arch desert
 x 42
 y 48
+elevation 0
 end
 arch jungle_1
 x 42
 y 49
+elevation 0
 end
 arch evergreens
 x 43
+elevation 0
 end
 arch hills
 x 43
 y 1
+elevation 0
 end
 arch hills_rocky
 x 43
 y 2
+elevation 0
 end
 arch hills
 x 43
 y 3
+elevation 0
 end
 arch tree
 x 43
 y 4
+elevation 0
 end
 arch tree
 x 43
 y 5
+elevation 0
 end
 arch tree
 x 43
 y 6
+elevation 0
 end
 arch tree
 x 43
 y 7
+elevation 0
 end
 arch tree
 x 43
 y 8
+elevation 0
 end
 arch tree
 x 43
 y 9
+elevation 0
 end
 arch hills
 x 43
 y 10
+elevation 0
 end
 arch hills
 x 43
 y 11
+elevation 0
 end
 arch mountain
 x 43
 y 12
+elevation 0
 end
 arch mountain
 x 43
 y 13
+elevation 0
 end
 arch hills
 x 43
 y 14
+elevation 0
 end
 arch cobblestones
 x 43
 y 15
+elevation 0
 end
 arch cobblestones
 x 43
 y 16
+elevation 0
 end
 arch cobblestones
 x 43
 y 17
+elevation 0
 end
 arch cobblestones
 x 43
 y 18
+elevation 0
 end
 arch cobblestones
 x 43
 y 19
+elevation 0
 end
 arch tree
 x 43
 y 20
+elevation 0
 end
 arch tree
 x 43
 y 21
+elevation 0
 end
 arch tree
 x 43
 y 22
+elevation 0
 end
 arch tree
 x 43
 y 23
+elevation 0
 end
 arch tree
 x 43
 y 24
+elevation 0
 end
 arch jungle_1
 x 43
 y 25
+elevation 0
 end
 arch jungle_1
 x 43
 y 26
+elevation 0
 end
 arch hills
 x 43
 y 27
+elevation 0
 end
 arch hills
 x 43
 y 28
+elevation 0
 end
 arch mountain
 x 43
 y 29
+elevation 0
 end
 arch mountain
 x 43
 y 30
+elevation 0
 end
 arch mountain
 x 43
 y 31
+elevation 0
 end
 arch mountain
 x 43
 y 32
+elevation 0
 end
 arch mountain
 x 43
 y 33
+elevation 0
 end
 arch mountain
 x 43
 y 34
+elevation 0
 end
 arch tree
 x 43
 y 35
+elevation 0
 end
 arch hills_rocky
 x 43
 y 36
+elevation 0
 end
 arch hills_rocky
 x 43
 y 37
+elevation 0
 end
 arch hills_rocky
 x 43
 y 38
+elevation 0
 end
 arch jungle_1
 x 43
 y 39
+elevation 0
 end
 arch tree
 x 43
 y 40
+elevation 0
 end
 arch cobblestones
 x 43
 y 41
+elevation 0
 end
 arch cobblestones
 x 43
 y 42
+elevation 0
 end
 arch hills_rocky
 x 43
 y 43
+elevation 0
 end
 arch hills_rocky
 x 43
 y 44
+elevation 0
 end
 arch hills_rocky
 x 43
 y 45
+elevation 0
 end
 arch jungle_1
 x 43
 y 46
+elevation 0
 end
 arch desert
 x 43
 y 47
+elevation 0
 end
 arch desert
 x 43
 y 48
+elevation 0
 end
 arch desert
 x 43
 y 49
+elevation 0
 end
 arch tree
 x 44
+elevation 0
 end
 arch hills
 x 44
 y 1
+elevation 0
 end
 arch hills_rocky
 x 44
 y 2
+elevation 0
 end
 arch hills
 x 44
 y 3
+elevation 0
 end
 arch tree
 x 44
 y 4
+elevation 0
 end
 arch tree
 x 44
 y 5
+elevation 0
 end
 arch tree
 x 44
 y 6
+elevation 0
 end
 arch tree
 x 44
 y 7
+elevation 0
 end
 arch tree
 x 44
 y 8
+elevation 0
 end
 arch cobblestones
 x 44
 y 9
+elevation 0
 end
 arch cobblestones
 x 44
 y 10
+elevation 0
 end
 arch cobblestones
 x 44
 y 11
+elevation 0
 end
 arch cobblestones
 x 44
 y 12
+elevation 0
 end
 arch cobblestones
 x 44
 y 13
+elevation 0
 end
 arch cobblestones
 x 44
 y 14
+elevation 0
 end
 arch cobblestones
 x 44
 y 15
+elevation 0
 end
 arch cobblestones
 x 44
 y 16
+elevation 0
 end
 arch cobblestones
 x 44
 y 17
+elevation 0
 end
 arch cobblestones
 x 44
 y 18
+elevation 0
 end
 arch tree
 x 44
 y 19
+elevation 0
 end
 arch brush
 x 44
 y 20
+elevation 0
 end
 arch brush
 x 44
 y 21
+elevation 0
 end
 arch brush
 x 44
 y 22
+elevation 0
 end
 arch brush
 x 44
 y 23
+elevation 0
 end
 arch brush
 x 44
 y 24
+elevation 0
 end
 arch brush
 x 44
 y 25
+elevation 0
 end
 arch desert
 x 44
 y 26
+elevation 0
 end
 arch jungle_1
 x 44
 y 27
+elevation 0
 end
 arch hills
 x 44
 y 28
+elevation 0
 end
 arch mountain
 x 44
 y 29
+elevation 0
 end
 arch mountain
 x 44
 y 30
+elevation 0
 end
 arch mountain
 x 44
 y 31
+elevation 0
 end
 arch mountain
 x 44
 y 32
+elevation 0
 end
 arch mountain
 x 44
 y 33
+elevation 0
 end
 arch mountain
 x 44
 y 34
+elevation 0
 end
 arch hills_rocky
 x 44
 y 35
+elevation 0
 end
 arch hills_rocky
 x 44
 y 36
+elevation 0
 end
 arch hills_rocky
 x 44
 y 37
+elevation 0
 end
 arch tree
 x 44
 y 38
+elevation 0
 end
 arch tree
 x 44
 y 39
+elevation 0
 end
 arch jungle_1
 x 44
 y 40
+elevation 0
 end
 arch cobblestones
 x 44
 y 41
+elevation 0
 end
 arch cobblestones
 x 44
 y 42
+elevation 0
 end
 arch hills_rocky
 x 44
 y 43
+elevation 0
 end
 arch hills_rocky
 x 44
 y 44
+elevation 0
 end
 arch hills_rocky
 x 44
 y 45
+elevation 0
 end
 arch jungle_1
 x 44
 y 46
+elevation 0
 end
 arch jungle_1
 x 44
 y 47
+elevation 0
 end
 arch jungle_1
 x 44
 y 48
+elevation 0
 end
 arch jungle_1
 x 44
 y 49
+elevation 0
 end
 arch evergreens
 x 45
+elevation 0
 end
 arch hills_rocky
 x 45
 y 1
+elevation 0
 end
 arch hills
 x 45
 y 2
+elevation 0
 end
 arch hills
 x 45
 y 3
+elevation 0
 end
 arch cobblestones
 x 45
 y 4
+elevation 0
 end
 arch cobblestones
 x 45
 y 5
+elevation 0
 end
 arch cobblestones
 x 45
 y 6
+elevation 0
 end
 arch cobblestones
 x 45
 y 7
+elevation 0
 end
 arch cobblestones
 x 45
 y 8
+elevation 0
 end
 arch cobblestones
 x 45
 y 9
+elevation 0
 end
 arch cobblestones
 x 45
 y 10
+elevation 0
 end
 arch cobblestones
 x 45
 y 11
+elevation 0
 end
 arch cobblestones
 x 45
 y 12
+elevation 0
 end
 arch cobblestones
 x 45
 y 13
+elevation 0
 end
 arch cobblestones
 x 45
 y 14
+elevation 0
 end
 arch cobblestones
 x 45
 y 15
+elevation 0
 end
 arch cobblestones
 x 45
 y 16
+elevation 0
 end
 arch hills
 x 45
 y 17
+elevation 0
 end
 arch hills
 x 45
 y 18
+elevation 0
 end
 arch hills
 x 45
 y 19
+elevation 0
 end
 arch tree
 x 45
 y 20
+elevation 0
 end
 arch tree
 x 45
 y 21
+elevation 0
 end
 arch brush
 x 45
 y 22
+elevation 0
 end
 arch tree
 x 45
 y 23
+elevation 0
 end
 arch brush
 x 45
 y 24
+elevation 0
 end
 arch brush
 x 45
 y 25
+elevation 0
 end
 arch tree
 x 45
 y 26
+elevation 0
 end
 arch hills
 x 45
 y 27
+elevation 0
 end
 arch hills
 x 45
 y 28
+elevation 0
 end
 arch mountain
 x 45
 y 29
+elevation 0
 end
 arch mountain
 x 45
 y 30
+elevation 0
 end
 arch mountain2
 x 45
 y 31
+elevation 0
 end
 arch mountain
 x 45
 y 32
+elevation 0
 end
 arch mountain
 x 45
 y 33
+elevation 0
 end
 arch mountain
 x 45
 y 34
+elevation 0
 end
 arch hills_rocky
 x 45
 y 35
+elevation 0
 end
 arch hills_rocky
 x 45
 y 36
+elevation 0
 end
 arch tree
 x 45
 y 37
+elevation 0
 end
 arch desert
 x 45
 y 38
+elevation 0
 end
 arch jungle_1
 x 45
 y 39
+elevation 0
 end
 arch jungle_1
 x 45
 y 40
+elevation 0
 end
 arch cobblestones
 x 45
 y 41
+elevation 0
 end
 arch cobblestones
 x 45
 y 42
+elevation 0
 end
 arch jungle_1
 x 45
 y 43
+elevation 0
 end
 arch hills_rocky
 x 45
 y 44
+elevation 0
 end
 arch jungle_1
 x 45
 y 45
+elevation 0
 end
 arch jungle_1
 x 45
 y 46
+elevation 0
 end
 arch jungle_1
 x 45
 y 47
+elevation 0
 end
 arch hills_rocky
 x 45
 y 48
+elevation 0
 end
 arch jungle_1
 x 45
 y 49
+elevation 0
 end
 arch cobblestones
 x 46
+elevation 0
 end
 arch cobblestones
 x 46
 y 1
+elevation 0
 end
 arch cobblestones
 x 46
 y 2
+elevation 0
 end
 arch cobblestones
 x 46
 y 3
+elevation 0
 end
 arch cobblestones
 x 46
 y 4
+elevation 0
 end
 arch cobblestones
 x 46
 y 5
+elevation 0
 end
 arch cobblestones
 x 46
 y 6
+elevation 0
 end
 arch cobblestones
 x 46
 y 7
+elevation 0
 end
 arch cobblestones
 x 46
 y 8
+elevation 0
 end
 arch cobblestones
 x 46
 y 9
+elevation 0
 end
 arch cobblestones
 x 46
 y 10
+elevation 0
 end
 arch tree
 x 46
 y 11
+elevation 0
 end
 arch tree
 x 46
 y 12
+elevation 0
 end
 arch hills
 x 46
 y 13
+elevation 0
 end
 arch hills
 x 46
 y 14
+elevation 0
 end
 arch hills
 x 46
 y 15
+elevation 0
 end
 arch hills
 x 46
 y 16
+elevation 0
 end
 arch hills
 x 46
 y 17
+elevation 0
 end
 arch hills
 x 46
 y 18
+elevation 0
 end
 arch hills
 x 46
 y 19
+elevation 0
 end
 arch hills
 x 46
 y 20
+elevation 0
 end
 arch hills
 x 46
 y 21
+elevation 0
 end
 arch hills
 x 46
 y 22
+elevation 0
 end
 arch hills
 x 46
 y 23
+elevation 0
 end
 arch hills
 x 46
 y 24
+elevation 0
 end
 arch hills_rocky
 x 46
 y 25
+elevation 0
 end
 arch steppe
 x 46
 y 26
+elevation 0
 end
 arch hills
 x 46
 y 27
+elevation 0
 end
 arch hills
 x 46
 y 28
+elevation 0
 end
 arch mountain
 x 46
 y 29
+elevation 0
 end
 arch mountain
 x 46
 y 30
+elevation 0
 end
 arch mountain
 x 46
 y 31
+elevation 0
 end
 arch mountain
 x 46
 y 32
+elevation 0
 end
 arch mountain
 x 46
 y 33
+elevation 0
 end
 arch hills_rocky
 x 46
 y 34
+elevation 0
 end
 arch hills_rocky
 x 46
 y 35
+elevation 0
 end
 arch jungle_1
 x 46
 y 36
+elevation 0
 end
 arch tree
 x 46
 y 37
+elevation 0
 end
 arch tree
 x 46
 y 38
+elevation 0
 end
 arch tree
 x 46
 y 39
+elevation 0
 end
 arch hills_rocky
 x 46
 y 40
+elevation 0
 end
 arch cobblestones
 x 46
 y 41
+elevation 0
 end
 arch cobblestones
 x 46
 y 42
+elevation 0
 end
 arch jungle_1
 x 46
 y 43
+elevation 0
 end
 arch jungle_1
 x 46
 y 44
+elevation 0
 end
 arch desert
 x 46
 y 45
+elevation 0
 end
 arch jungle_1
 x 46
 y 46
+elevation 0
 end
 arch hills_rocky
 x 46
 y 47
+elevation 0
 end
 arch hills_rocky
 x 46
 y 48
+elevation 0
 end
 arch hills_rocky
 x 46
 y 49
+elevation 0
 end
 arch cobblestones
 x 47
+elevation 0
 end
 arch cobblestones
 x 47
 y 1
+elevation 0
 end
 arch cobblestones
 x 47
 y 2
+elevation 0
 end
 arch cobblestones
 x 47
 y 3
+elevation 0
 end
 arch cobblestones
 x 47
 y 4
+elevation 0
 end
 arch cobblestones
 x 47
 y 5
+elevation 0
 end
 arch tree
 x 47
 y 6
+elevation 0
 end
 arch tree
 x 47
 y 7
+elevation 0
 end
 arch hills
 x 47
 y 8
+elevation 0
 end
 arch hills
 x 47
 y 9
+elevation 0
 end
 arch hills
 x 47
 y 10
+elevation 0
 end
 arch tree
 x 47
 y 11
+elevation 0
 end
 arch hills
 x 47
 y 12
+elevation 0
 end
 arch hills
 x 47
 y 13
+elevation 0
 end
 arch hills
 x 47
 y 14
+elevation 0
 end
 arch hills
 x 47
 y 15
+elevation 0
 end
 arch hills
 x 47
 y 16
+elevation 0
 end
 arch hills
 x 47
 y 17
+elevation 0
 end
 arch mountain
 x 47
 y 18
+elevation 0
 end
 arch mountain
 x 47
 y 19
+elevation 0
 end
 arch mountain
 x 47
 y 20
+elevation 0
 end
 arch hills
 x 47
 y 21
+elevation 0
 end
 arch hills
 x 47
 y 22
+elevation 0
 end
 arch mountain
 x 47
 y 23
+elevation 0
 end
 arch mountain
 x 47
 y 24
+elevation 0
 end
 arch mountain
 x 47
 y 25
+elevation 0
 end
 arch mountain
 x 47
 y 26
+elevation 0
 end
 arch mountain
 x 47
 y 27
+elevation 0
 end
 arch mountain
 x 47
 y 28
+elevation 0
 end
 arch hills
 x 47
 y 29
+elevation 0
 end
 arch mountain
 x 47
 y 30
+elevation 0
 end
 arch mountain
 x 47
 y 31
+elevation 0
 end
 arch mountain
 x 47
 y 32
+elevation 0
 end
 arch mountain
 x 47
 y 33
+elevation 0
 end
 arch tree
 x 47
 y 34
+elevation 0
 end
 arch tree
 x 47
 y 35
+elevation 0
 end
 arch brush
 x 47
 y 36
+elevation 0
 end
 arch tree
 x 47
 y 37
+elevation 0
 end
 arch tree
 x 47
 y 38
+elevation 0
 end
 arch hills_rocky
 x 47
 y 39
+elevation 0
 end
 arch hills_rocky
 x 47
 y 40
+elevation 0
 end
 arch cobblestones
 x 47
 y 41
+elevation 0
 end
 arch cobblestones
 x 47
 y 42
+elevation 0
 end
 arch jungle_1
 x 47
 y 43
+elevation 0
 end
 arch desert
 x 47
 y 44
+elevation 0
 end
 arch desert
 x 47
 y 45
+elevation 0
 end
 arch desert
 x 47
 y 46
+elevation 0
 end
 arch hills_rocky
 x 47
 y 47
+elevation 0
 end
 arch mountain
 x 47
 y 48
+elevation 0
 end
 arch hills_rocky
 x 47
 y 49
+elevation 0
 end
 arch tree
 x 48
+elevation 0
 end
 arch tree
 x 48
 y 1
+elevation 0
 end
 arch hills_rocky
 x 48
 y 2
+elevation 0
 end
 arch hills_rocky
 x 48
 y 3
+elevation 0
 end
 arch tree
 x 48
 y 4
+elevation 0
 end
 arch hills
 x 48
 y 5
+elevation 0
 end
 arch hills
 x 48
 y 6
+elevation 0
 end
 arch hills
 x 48
 y 7
+elevation 0
 end
 arch hills
 x 48
 y 8
+elevation 0
 end
 arch hills
 x 48
 y 9
+elevation 0
 end
 arch tree
 x 48
 y 10
+elevation 0
 end
 arch tree
 x 48
 y 11
+elevation 0
 end
 arch hills
 x 48
 y 12
+elevation 0
 end
 arch hills
 x 48
 y 13
+elevation 0
 end
 arch hills
 x 48
 y 14
+elevation 0
 end
 arch hills
 x 48
 y 15
+elevation 0
 end
 arch hills
 x 48
 y 16
+elevation 0
 end
 arch hills
 x 48
 y 17
+elevation 0
 end
 arch mountain
 x 48
 y 18
+elevation 0
 end
 arch mountain
 x 48
 y 19
+elevation 0
 end
 arch mountain
 x 48
 y 20
+elevation 0
 end
 arch mountain
 x 48
 y 21
+elevation 0
 end
 arch mountain
 x 48
 y 22
+elevation 0
 end
 arch mountain
 x 48
 y 23
+elevation 0
 end
 arch mountain
 x 48
 y 24
+elevation 0
 end
 arch mountain
 x 48
 y 25
+elevation 0
 end
 arch mountain
 x 48
 y 26
+elevation 0
 end
 arch mountain
 x 48
 y 27
+elevation 0
 end
 arch mountain
 x 48
 y 28
+elevation 0
 end
 arch mountain
 x 48
 y 29
+elevation 0
 end
 arch mountain
 x 48
 y 30
+elevation 0
 end
 arch mountain
 x 48
 y 31
+elevation 0
 end
 arch mountain
 x 48
 y 32
+elevation 0
 end
 arch hills_rocky
 x 48
 y 33
+elevation 0
 end
 arch jungle_1
 x 48
 y 34
+elevation 0
 end
 arch tree
 x 48
 y 35
+elevation 0
 end
 arch desert
 x 48
 y 36
+elevation 0
 end
 arch jungle_1
 x 48
 y 37
+elevation 0
 end
 arch jungle_1
 x 48
 y 38
+elevation 0
 end
 arch hills_rocky
 x 48
 y 39
+elevation 0
 end
 arch hills_rocky
 x 48
 y 40
+elevation 0
 end
 arch cobblestones
 x 48
 y 41
+elevation 0
 end
 arch cobblestones
 x 48
 y 42
+elevation 0
 end
 arch tree
 x 48
 y 43
+elevation 0
 end
 arch tree
 x 48
 y 44
+elevation 0
 end
 arch jungle_1
 x 48
 y 45
+elevation 0
 end
 arch tree
 x 48
 y 46
+elevation 0
 end
 arch hills_rocky
 x 48
 y 47
+elevation 0
 end
 arch mountain
 x 48
 y 48
+elevation 0
 end
 arch mountain
 x 48
 y 49
+elevation 0
 end
 arch tree
 x 49
+elevation 0
 end
 arch hills_rocky
 x 49
 y 1
+elevation 0
 end
 arch hills
 x 49
 y 2
+elevation 0
 end
 arch hills
 x 49
 y 3
+elevation 0
 end
 arch hills
 x 49
 y 4
+elevation 0
 end
 arch hills
 x 49
 y 5
+elevation 0
 end
 arch hills
 x 49
 y 6
+elevation 0
 end
 arch hills
 x 49
 y 7
+elevation 0
 end
 arch hills
 x 49
 y 8
+elevation 0
 end
 arch hills
 x 49
 y 9
+elevation 0
 end
 arch hills
 x 49
 y 10
+elevation 0
 end
 arch hills
 x 49
 y 11
+elevation 0
 end
 arch hills
 x 49
 y 12
+elevation 0
 end
 arch hills
 x 49
 y 13
+elevation 0
 end
 arch hills
 x 49
 y 14
+elevation 0
 end
 arch mountain
 x 49
 y 15
+elevation 0
 end
 arch hills
 x 49
 y 16
+elevation 0
 end
 arch tree
 x 49
 y 17
+elevation 0
 end
 arch mountain
 x 49
 y 18
+elevation 0
 end
 arch mountain
 x 49
 y 19
+elevation 0
 end
 arch mountain
 x 49
 y 20
+elevation 0
 end
 arch mountain
 x 49
 y 21
+elevation 0
 end
 arch mountain
 x 49
 y 22
+elevation 0
 end
 arch mountain
 x 49
 y 23
+elevation 0
 end
 arch mountain
 x 49
 y 24
+elevation 0
 end
 arch mountain
 x 49
 y 25
+elevation 0
 end
 arch mountain
 x 49
 y 26
+elevation 0
 end
 arch mountain
 x 49
 y 27
+elevation 0
 end
 arch mountain2
 x 49
 y 28
+elevation 0
 end
 arch mountain2
 x 49
 y 29
+elevation 0
 end
 arch mountain2
 x 49
 y 30
+elevation 0
 end
 arch mountain
 x 49
 y 31
+elevation 0
 end
 arch mountain
 x 49
 y 32
+elevation 0
 end
 arch hills_rocky
 x 49
 y 33
+elevation 0
 end
 arch hills_rocky
 x 49
 y 34
+elevation 0
 end
 arch jungle_1
 x 49
 y 35
+elevation 0
 end
 arch desert
 x 49
 y 36
+elevation 0
 end
 arch brush
 x 49
 y 37
+elevation 0
 end
 arch tree
 x 49
 y 38
+elevation 0
 end
 arch jungle_1
 x 49
 y 39
+elevation 0
 end
 arch tree
 x 49
 y 40
+elevation 0
 end
 arch cobblestones
 x 49
 y 41
+elevation 0
 end
 arch cobblestones
 x 49
 y 42
+elevation 0
 end
 arch jungle_1
 x 49
 y 43
+elevation 0
 end
 arch tree
 x 49
 y 44
+elevation 0
 end
 arch jungle_1
 x 49
 y 45
+elevation 0
 end
 arch desert
 x 49
 y 46
+elevation 0
 end
 arch hills_rocky
 x 49
 y 47
+elevation 0
 end
 arch mountain
 x 49
 y 48
+elevation 0
 end
 arch mountain
 x 49
 y 49
+elevation 0
 end

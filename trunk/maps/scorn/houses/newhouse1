@@ -5,17 +5,17 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 19 01:25:36 1994
 endmsg
-hp 1
-sp 1
-x 20
-y 20
+width 20
+height 20
+enter_x 1
+enter_y 1
 end
 arch grass
 end
 arch exit
-slaying /world/world_104_115
-hp 43
-sp 36
+slaying /world/world_105_116
+hp 6
+sp 5
 speed_left -0.500000
 end
 arch grass
@@ -133,7 +133,7 @@ arch sign_e
 name Mailbox
 msg
 Alfalda's Place
-5 Giant's Tower Lane
+32 River Road
 endmsg
 x 1
 end
@@ -2690,11 +2690,8 @@ y 16
 end
 arch card
 name Gate Pass
-slaying gate_pass
-value 800
-identified 1
 msg
-The holder of this card is allowed free 
+The holder of this card is allowed free
 access into and out of the City of Scorn
 to the rest of the continent without
 further charges and penalities. The City
@@ -2702,6 +2699,9 @@ of Scorn reserves the right to revoke
 said access at any time of its choosing
 without recompence or liability.
 endmsg
+slaying gate_pass
+value 800
+identified 1
 x 18
 y 16
 end

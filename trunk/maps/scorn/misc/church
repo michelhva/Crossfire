@@ -1,13 +1,15 @@
 arch map
 name church
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Fri Oct 15 13:46:59 1993
 endmsg
-hp 10
-sp 15
-invisible 4
+width 16
+height 16
+enter_x 10
+enter_y 15
+darkness 4
 end
 arch grass
 end
@@ -400,7 +402,6 @@ x 3
 y 13
 end
 arch hole
-slaying /!
 msg
 layoutstyle onion
 floorstyle lightdirt
@@ -414,6 +415,7 @@ dungeon_depth 5
 orientation 1
 final_map /scorn/peterm/undead_quest
 endmsg
+slaying /!
 x 3
 y 14
 end
@@ -880,7 +882,7 @@ y 14
 end
 arch magic_mouth
 msg
-HELP! 
+HELP!
 This church has been over run with zombies
 endmsg
 x 7
@@ -1089,7 +1091,7 @@ end
 arch exit
 slaying /world/world_105_115
 hp 6
-sp 48
+sp 49
 x 9
 y 15
 end
@@ -1134,7 +1136,7 @@ In the beginning, the Giver of Data
 (GOD) generated silicon and carbon, and
 the system without architecture, and
 un-initialized, randomness was apon
-the arrangement of the matrix....... 
+the arrangement of the matrix.......
 endmsg
 x 10
 y 4
@@ -1211,7 +1213,7 @@ end
 arch exit
 slaying /world/world_105_115
 hp 6
-sp 48
+sp 49
 x 10
 y 15
 end
@@ -1320,7 +1322,7 @@ end
 arch exit
 slaying /world/world_105_115
 hp 6
-sp 48
+sp 49
 x 11
 y 15
 end
@@ -1457,10 +1459,10 @@ x 13
 y 3
 end
 arch door_look_1
-x 13
-y 3
 no_pass 0
 blocksview 1
+x 13
+y 3
 end
 arch woodfloor
 x 13
@@ -1573,10 +1575,10 @@ x 14
 y 3
 end
 arch door_look_1
-x 14
-y 3
 no_pass 0
 blocksview 1
+x 14
+y 3
 end
 arch woodfloor
 x 14

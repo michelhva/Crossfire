@@ -1,0 +1,730 @@
+arch map
+name Eswald's Coffee Shop
+msg
+Creator: Avion
+CF Java Map Editor
+Date:    4/27/2003
+endmsg
+width 10
+height 10
+end
+arch woodfloor2
+end
+arch wwall_2_2_2
+end
+arch woodfloor2
+y 1
+end
+arch wwall_2_1_1
+y 1
+end
+arch woodfloor2
+y 2
+end
+arch wwall_2_1_1
+y 2
+end
+arch woodfloor2
+y 3
+end
+arch wwall_2_1_1
+y 3
+end
+arch woodfloor2
+y 4
+end
+arch wwall_2_1_1
+y 4
+end
+arch woodfloor2
+y 5
+end
+arch wwall_2_1_1
+y 5
+end
+arch woodfloor2
+y 6
+end
+arch wwall_2_1_1
+y 6
+end
+arch woodfloor2
+y 7
+end
+arch wwall_2_1_1
+y 7
+end
+arch woodfloor2
+y 8
+end
+arch wwall_2_1_1
+y 8
+end
+arch woodfloor2
+y 9
+end
+arch wwall_2_2_1
+y 9
+end
+arch woodfloor2
+x 1
+end
+arch wwall_2_1_2
+x 1
+end
+arch woodfloor2
+x 1
+y 1
+end
+arch barrel
+x 1
+y 1
+end
+arch woodfloor2
+x 1
+y 2
+end
+arch barrel
+x 1
+y 2
+end
+arch woodfloor2
+x 1
+y 3
+end
+arch barrel
+x 1
+y 3
+end
+arch woodfloor2
+x 1
+y 4
+end
+arch barrel
+x 1
+y 4
+end
+arch woodfloor2
+x 1
+y 5
+end
+arch barrel
+x 1
+y 5
+end
+arch woodfloor2
+x 1
+y 6
+end
+arch longtable_1_4
+no_pass 1
+x 1
+y 6
+end
+arch woodfloor2
+x 1
+y 7
+end
+arch woodfloor2
+x 1
+y 8
+end
+arch woodfloor2
+x 1
+y 9
+end
+arch wwall_2_1_2
+x 1
+y 9
+end
+arch woodfloor2
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch woodfloor2
+x 2
+y 1
+end
+arch barrel
+x 2
+y 1
+end
+arch woodfloor2
+x 2
+y 2
+end
+arch barrel
+x 2
+y 2
+end
+arch woodfloor2
+x 2
+y 3
+end
+arch barrel
+x 2
+y 3
+end
+arch woodfloor2
+x 2
+y 4
+end
+arch barrel
+x 2
+y 4
+end
+arch woodfloor2
+x 2
+y 5
+end
+arch barrel
+x 2
+y 5
+end
+arch woodfloor2
+x 2
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 2
+y 6
+end
+arch woodfloor2
+x 2
+y 7
+end
+arch woodfloor2
+x 2
+y 8
+end
+arch woodfloor2
+x 2
+y 9
+end
+arch wwall_2_1_2
+x 2
+y 9
+end
+arch woodfloor2
+x 3
+end
+arch wwall_2_1_2
+x 3
+end
+arch woodfloor2
+x 3
+y 1
+end
+arch barrel
+x 3
+y 1
+end
+arch woodfloor2
+x 3
+y 2
+end
+arch barrel
+x 3
+y 2
+end
+arch woodfloor2
+x 3
+y 3
+end
+arch barrel
+x 3
+y 3
+end
+arch woodfloor2
+x 3
+y 4
+end
+arch chair
+x 3
+y 4
+end
+arch woodfloor2
+x 3
+y 5
+end
+arch woodfloor2
+x 3
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 3
+y 6
+end
+arch woodfloor2
+x 3
+y 7
+end
+arch woodfloor2
+x 3
+y 8
+end
+arch woodfloor2
+x 3
+y 9
+end
+arch wwall_1_3
+x 3
+y 9
+end
+arch woodfloor2
+x 4
+end
+arch wwall_2_1_2
+x 4
+end
+arch woodfloor2
+x 4
+y 1
+end
+arch barrel
+x 4
+y 1
+end
+arch woodfloor2
+x 4
+y 2
+end
+arch barrel
+x 4
+y 2
+end
+arch woodfloor2
+x 4
+y 3
+end
+arch woodfloor2
+x 4
+y 4
+end
+arch woodfloor2
+x 4
+y 5
+end
+arch woodfloor2
+x 4
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 4
+y 6
+end
+arch woodfloor2
+x 4
+y 7
+end
+arch woodfloor2
+x 4
+y 8
+end
+arch magic_mouth
+msg
+A wonderful smell wafts through the air.
+endmsg
+food 1
+x 4
+y 8
+end
+arch woodfloor2
+x 4
+y 9
+end
+arch invis_exit
+msg
+Ding!
+endmsg
+slaying /world/world_105_116
+hp 1
+sp 1
+x 4
+y 9
+end
+arch door_2
+x 4
+y 9
+end
+arch woodfloor2
+x 5
+end
+arch wwall_2_1_2
+x 5
+end
+arch woodfloor2
+x 5
+y 1
+end
+arch woodfloor2
+x 5
+y 2
+end
+arch woodfloor2
+x 5
+y 3
+end
+arch woodfloor2
+x 5
+y 4
+end
+arch woodfloor2
+x 5
+y 5
+end
+arch man
+name Eswald
+msg
+@match Hello|hi
+Hello stranger.
+@match new|New|starting
+I'm looking for someone to do a job for me.
+@match Job|job|Work|work
+Pay ya 300 gold to find my goose
+@match goose|Goose
+Her name is Esmeralda, she's special
+@match 300
+Worth every coin too.
+endmsg
+x 5
+y 5
+end
+arch woodfloor2
+x 5
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 5
+y 6
+end
+arch woodfloor2
+x 5
+y 7
+end
+arch check_inv
+slaying EsmeraldaTheGoose
+connected 1
+last_heal 1
+x 5
+y 7
+end
+arch woodfloor2
+x 5
+y 8
+end
+arch woodfloor2
+x 5
+y 9
+end
+arch wwall_1_4
+x 5
+y 9
+end
+arch woodfloor2
+x 6
+end
+arch wwall_2_1_2
+x 6
+end
+arch woodfloor2
+x 6
+y 1
+end
+arch clock
+x 6
+y 1
+end
+arch woodfloor2
+x 6
+y 2
+end
+arch woodfloor2
+x 6
+y 3
+end
+arch woodfloor2
+x 6
+y 4
+end
+arch woodfloor2
+x 6
+y 5
+end
+arch woodfloor2
+x 6
+y 6
+end
+arch magic_mouth
+msg
+You found her!  Here is your pay.
+Thanks.
+Esmeralda has the finest nose...er beak
+for coffee aroma in the kingdom.
+endmsg
+connected 1
+walk_on 0
+fly_on 0
+food 1
+x 6
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 6
+y 6
+end
+arch woodfloor2
+x 6
+y 7
+end
+arch creator
+name reward
+other_arch goldcoin
+connected 1
+x 6
+y 7
+end
+arch woodfloor2
+x 6
+y 8
+end
+arch woodfloor2
+x 6
+y 9
+end
+arch wwall_2_1_2
+x 6
+y 9
+end
+arch woodfloor2
+x 7
+end
+arch wwall_2_1_2
+x 7
+end
+arch woodfloor2
+x 7
+y 1
+end
+arch barrel
+x 7
+y 1
+end
+arch woodfloor2
+x 7
+y 2
+end
+arch barrel
+x 7
+y 2
+end
+arch woodfloor2
+x 7
+y 3
+end
+arch woodfloor2
+x 7
+y 4
+end
+arch barrel
+x 7
+y 4
+end
+arch woodfloor2
+x 7
+y 5
+end
+arch barrel
+x 7
+y 5
+end
+arch woodfloor2
+x 7
+y 6
+end
+arch longtable_2_1_2
+no_pass 1
+x 7
+y 6
+end
+arch woodfloor2
+x 7
+y 7
+end
+arch woodfloor2
+x 7
+y 8
+end
+arch woodfloor2
+x 7
+y 9
+end
+arch wwall_2_1_2
+x 7
+y 9
+end
+arch woodfloor2
+x 8
+end
+arch wwall_2_1_2
+x 8
+end
+arch woodfloor2
+x 8
+y 1
+end
+arch barrel
+x 8
+y 1
+end
+arch woodfloor2
+x 8
+y 2
+end
+arch barrel
+x 8
+y 2
+end
+arch woodfloor2
+x 8
+y 3
+end
+arch barrel
+x 8
+y 3
+end
+arch woodfloor2
+x 8
+y 4
+end
+arch barrel
+x 8
+y 4
+end
+arch woodfloor2
+x 8
+y 5
+end
+arch barrel
+x 8
+y 5
+end
+arch woodfloor2
+x 8
+y 6
+end
+arch longtable_1_3
+no_pass 1
+x 8
+y 6
+end
+arch woodfloor2
+x 8
+y 7
+end
+arch woodfloor2
+x 8
+y 8
+end
+arch food_table
+name Fresh Coffee 2sp
+slaying silvercoin
+food 2
+other_arch cup of coffee
+sp 1
+x 8
+y 8
+end
+arch woodfloor2
+x 8
+y 9
+end
+arch wwall_2_1_2
+x 8
+y 9
+end
+arch woodfloor2
+x 9
+end
+arch wwall_2_2_3
+x 9
+end
+arch woodfloor2
+x 9
+y 1
+end
+arch wwall_2_1_1
+x 9
+y 1
+end
+arch woodfloor2
+x 9
+y 2
+end
+arch wwall_2_1_1
+x 9
+y 2
+end
+arch woodfloor2
+x 9
+y 3
+end
+arch wwall_2_1_1
+x 9
+y 3
+end
+arch woodfloor2
+x 9
+y 4
+end
+arch wwall_2_1_1
+x 9
+y 4
+end
+arch woodfloor2
+x 9
+y 5
+end
+arch wwall_2_1_1
+x 9
+y 5
+end
+arch woodfloor2
+x 9
+y 6
+end
+arch wwall_2_1_1
+x 9
+y 6
+end
+arch woodfloor2
+x 9
+y 7
+end
+arch wwall_2_1_1
+x 9
+y 7
+end
+arch woodfloor2
+x 9
+y 8
+end
+arch wwall_2_1_1
+x 9
+y 8
+end
+arch woodfloor2
+x 9
+y 9
+end
+arch wwall_2_2_4
+x 9
+y 9
+end
