@@ -9,4 +9,5 @@ editable 1024
 material 64
 name_pl large rocks
 client_type 8012
+is_thrown 1
 end
