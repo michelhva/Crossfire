@@ -1,22 +1,25 @@
 #CFItemBroker.py
 #An often used bit of code to add or remove a number of objects
-#Mostly useful for removing items (like in payment or as part of
-#an inventory check)
-#This will not check for the existance of an item as that would better
+#Useful for removing items (like in payment or as part of
+#an inventory check)  This is also useful for setting the number 
+#of a newly created item(s) as it will check for existing item(s) and add 
+#the appropriate number of new items avoiding such sillyness as the 
+#number of the existing items being reset.
+#This will not check for the existence of an item as that would better
 #be done in the calling script so you can be flexable.
-#
+#			
 #ToddMitchell
 
 import CFPython
 
-class ItemBroker:
+class Item:
 
     def __init__(self, object):
         self.object = object
         self.numberof = CFPython.GetQuantity(self.object)
 
     def add(self, number):
-        tmp = self.numberof + number
+        tmp = (self.numberof + number)-1
         CFPython.SetQuantity(self.object, tmp)
         return 1
         

@@ -6,6 +6,7 @@ import CFPython
 import sys
 sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
 import CFGamble
+import CFItemBroker
 
 activator=CFPython.WhoIsActivator()
 activatorname=CFPython.GetName(activator)
@@ -57,7 +58,7 @@ if (CFPython.PayAmount(activator, cost*10)):#goldcoin
          payoff = cost*pay
          Slots.payoff(payoff)
          id = CFPython.CreateObject(cointype, (x, y))
-         CFPython.SetQuantity(id, payoff)
+         CFItemBroker.Item(id).add(payoff)
          if payoff == 1:
             message = "you win %d %s!" %(payoff,cointype)
 	 else:
@@ -83,7 +84,7 @@ if (CFPython.PayAmount(activator, cost*10)):#goldcoin
          payoff = pot*pay
          Slots.payoff(payoff)
          id = CFPython.CreateObject(cointype, (x, y))
-         CFPython.SetQuantity(id, payoff)
+         CFItemBroker.Item(id).add(payoff)
 	 if payoff == 1:
             message == "you win %d %s!" %(payoff,cointype)
 	 else:

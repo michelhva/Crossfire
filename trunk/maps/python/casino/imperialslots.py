@@ -31,7 +31,7 @@ Slots=CFGamble.SlotMachine(slotname,slotlist,minpot,maxpot)
 
 object = CFPython.CheckInventory(activator,cointype)
 if (object):
-    pay = CFItemBroker.ItemBroker(object).subtract(cost)
+    pay = CFItemBroker.Item(object).subtract(cost)
     if (pay):
        Slots.placebet(cost)
        results = Slots.spin(spinners)
@@ -63,7 +63,7 @@ if (object):
              payoff = cost*pay
              Slots.payoff(payoff)
              id = CFPython.CreateObject(cointype, (x, y))
-             CFPython.SetQuantity(id, payoff)
+             CFItemBroker.Item(id).add(payoff)
              if payoff == 1:
                 message = "you win %d %s!" %(payoff,cointype)
              else:
@@ -91,7 +91,7 @@ if (object):
              payoff = pot*pay
              Slots.payoff(payoff)
              id = CFPython.CreateObject(cointype, (x, y))
-             CFPython.SetQuantity(id, payoff)
+             CFItemBroker.Item(id).add(payoff)
              if payoff == 1:
                 message = "you win %d %s!" %(payoff,cointype)
              else:
