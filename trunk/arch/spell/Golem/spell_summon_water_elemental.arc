@@ -1,6 +1,7 @@
 Object spell_summon_water_elemental
 name summon water elemental
 name_pl summon water elemental
+face spell_summoner.111
 level 5
 sp 15
 casting_time 40

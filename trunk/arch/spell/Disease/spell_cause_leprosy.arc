@@ -1,6 +1,7 @@
 Object spell_cause_leprosy
 name cause leprosy
 name_pl cause leprosy
+face spell_praying.111
 type 101
 subtype 45
 level 5

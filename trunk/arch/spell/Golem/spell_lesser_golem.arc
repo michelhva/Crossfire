@@ -4,6 +4,7 @@
 Object spell_lesser_summon_golem
 name summon lesser golem
 name_pl summon lesser golem
+face spell_summoner.111
 level 1
 sp 3
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_cause_flu
 name cause flu
 name_pl cause flu
+face spell_praying.111
 type 101
 subtype 45
 level 2

@@ -1,6 +1,7 @@
 Object spell_perceive_self
 name perceive self
 name_pl perceive self
+face spell_praying.111
 level 2
 grace 5
 casting_time 1

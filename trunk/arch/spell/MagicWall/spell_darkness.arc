@@ -1,6 +1,7 @@
 Object spell_darkness
 name darkness
 name_pl darkness
+face spell_praying.111
 level 5
 grace 15
 casting_time 5

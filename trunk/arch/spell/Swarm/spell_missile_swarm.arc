@@ -1,6 +1,7 @@
 Object spell_missile_swarm
 name missile swarm
 name_pl missile swarm
+face spell_sorcery.111
 skill sorcery
 type 101
 subtype 36

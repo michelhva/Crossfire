@@ -1,6 +1,7 @@
 Object spell_summon_earth_elemental
 name summon earth elemental
 name_pl summon earth elemental
+face spell_summoner.111
 level 4
 sp 15
 casting_time 40

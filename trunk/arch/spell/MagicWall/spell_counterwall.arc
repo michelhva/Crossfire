@@ -1,6 +1,7 @@
 Object spell_counterwall
 name counterwall
 name_pl counterwall
+face spell_summoner.111
 level 8
 sp 8
 casting_time 30

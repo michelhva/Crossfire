@@ -1,6 +1,7 @@
 Object spell_summon_golem
 name summon golem
 name_pl summon golem
+face spell_summoner.111
 level 2
 sp 5
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_holy_wrath
 name holy wrath
 name_pl holy wrath
+face spell_praying.111
 type 101
 subtype 10
 level 12

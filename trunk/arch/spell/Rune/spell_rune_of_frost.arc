@@ -1,6 +1,7 @@
 Object spell_rune_of_frost
 name rune of frost
 name_pl rune of frost
+face spell_evocation.111
 type 101
 subtype 2
 no_drop 1

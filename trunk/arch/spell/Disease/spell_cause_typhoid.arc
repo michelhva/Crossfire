@@ -1,6 +1,7 @@
 Object spell_cause_typhoid
 name cause typhoid
 name_pl cause typhoid
+face spell_praying.111
 type 101
 subtype 45
 level 8

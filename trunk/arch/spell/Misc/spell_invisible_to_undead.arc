@@ -1,6 +1,7 @@
 Object spell_invisible_to_undead
 name invisible to undead
 name_pl invisible to undead
+face spell_praying.111
 level 6
 grace 25
 casting_time 5

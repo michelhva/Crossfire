@@ -1,6 +1,7 @@
 Object spell_glyph
 name glyph
 name_pl glyph
+face spell_praying.111
 type 101
 subtype 2
 no_drop 1

@@ -1,6 +1,7 @@
 Object spell_restoration
 name restoration
 name_pl restoration
+face spell_praying.111
 level 13
 grace 80
 casting_time 30

@@ -1,6 +1,7 @@
 Object spell_detect_curse
 name detect curse
 name_pl detect curse
+face spell_praying.111
 level 5
 grace 10
 casting_time 20

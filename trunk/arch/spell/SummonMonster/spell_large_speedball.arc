@@ -1,6 +1,7 @@
 Object spell_large_speedball
 name large speedball
 name_pl large speedball
+face spell_evocation.111
 type 101
 subtype 27
 level 6

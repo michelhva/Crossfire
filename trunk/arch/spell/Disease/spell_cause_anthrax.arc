@@ -1,6 +1,7 @@
 Object spell_cause_anthrax
 name cause anthrax
 name_pl cause anthrax
+face spell_praying.111
 type 101
 subtype 45
 level 12

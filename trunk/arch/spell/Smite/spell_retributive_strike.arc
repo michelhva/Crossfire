@@ -1,6 +1,7 @@
 Object spell_retributive_strike
 name retributive strike
 name_pl retributive strike
+face spell_praying.111
 type 101
 subtype 10
 level 18

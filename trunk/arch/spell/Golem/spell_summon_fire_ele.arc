@@ -1,6 +1,7 @@
 Object spell_summon_fire_elemental
 name summon fire elemental
 name_pl summon fire elemental
+face spell_summoner.111
 level 7
 sp 25
 casting_time 40

@@ -1,6 +1,7 @@
 Object spell_improved_invisibility
 name improved invisibility
 name_pl improved invisibility
+face spell_sorcery.111
 level 8
 sp 25
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_call_holy_servant
 name call holy servant
 name_pl call holy servant
+face spell_praying.111
 level 6
 grace 30
 casting_time 5

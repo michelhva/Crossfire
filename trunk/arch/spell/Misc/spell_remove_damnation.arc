@@ -1,6 +1,7 @@
 Object spell_remove_damnation
 name remove damnation
 name_pl remove damnation
+face spell_praying.111
 level 15
 grace 150
 casting_time 200

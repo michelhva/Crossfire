@@ -1,6 +1,7 @@
 Object spell_summon_cult_monsters
 name summon cult monsters
 name_pl summon cult monsters
+face spell_praying.111
 type 101
 subtype 27
 level 3

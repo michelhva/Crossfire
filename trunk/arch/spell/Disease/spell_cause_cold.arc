@@ -3,6 +3,7 @@ name cause cold
 name_pl cause cold
 type 101
 subtype 45
+face spell_praying.111
 level 2
 value 20
 grace 10

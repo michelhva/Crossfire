@@ -1,6 +1,7 @@
 Object spell_ball_lightning
 name ball lightning
 name_pl ball lightning
+face spell_evocation.111
 type 101
 subtype 35
 level 9

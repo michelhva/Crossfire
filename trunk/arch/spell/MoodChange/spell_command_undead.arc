@@ -1,6 +1,7 @@
 Object spell_command_undead
 name command undead
 name_pl command undead
+face spell_praying.111
 level 5
 grace 12
 casting_time 10

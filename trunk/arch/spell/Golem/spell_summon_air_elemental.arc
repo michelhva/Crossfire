@@ -1,6 +1,7 @@
 Object spell_summon_air_elemental
 name summon air elemental
 name_pl summon air elemental
+face spell_summoner.111
 level 6
 sp 20
 casting_time 40

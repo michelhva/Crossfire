@@ -1,6 +1,7 @@
 Object spell_charm_monsters
 name charm monsters
 name_pl charm monsters
+face spell_summoner.111
 level 5
 sp 20
 casting_time 10

@@ -1,6 +1,7 @@
 Object spell_cause_rabies
 name cause rabies
 name_pl cause rabies
+face spell_praying.111
 type 101
 subtype 45
 level 12

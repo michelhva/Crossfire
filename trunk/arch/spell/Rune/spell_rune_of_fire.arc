@@ -1,6 +1,7 @@
 Object spell_rune_of_fire
 name rune of fire
 name_pl rune of fire
+face spell_pyromancy.111
 type 101
 subtype 2
 no_drop 1

@@ -1,6 +1,7 @@
 Object spell_firetrap
 name firetrap
 name_pl firetrap
+face spell_pyromancy.111
 type 101
 subtype 2
 no_drop 1

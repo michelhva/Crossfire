@@ -1,6 +1,7 @@
 Object spell_detect_monster
 name detect monster
 name_pl detect monster
+face spell_evocation.111
 level 2
 sp 2
 casting_time 15
