@@ -15,10 +15,9 @@ belzebub.111
 belzebub.111
 mina
 resist_magic 100
-
 resist_electricity 30
 resist_poison 30
-
+resist_blind 100
 exp 300000
 ac -14
 wc -20

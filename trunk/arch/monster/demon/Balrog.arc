@@ -19,6 +19,7 @@ resist_confusion 100
 resist_fear 100
 resist_paralyze 100
 resist_poison 100
+resist_blind 100
 monster 1
 sleep 1
 Wis 20

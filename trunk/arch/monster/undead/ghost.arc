@@ -25,6 +25,7 @@ flying 1
 weight 500
 resist_cold 50
 resist_fear 100
+resist_blind 30
 undead 1
 can_pass_thru 1
 can_see_in_dark 1

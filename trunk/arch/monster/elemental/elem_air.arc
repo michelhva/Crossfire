@@ -10,10 +10,9 @@ mina
 monster 1
 alive 1
 resist_electricity 100
-
+resist_blind 100
 attacktype 8
 resist_physical -100
-
 ac 0
 wc 8
 dam 10

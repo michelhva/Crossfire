@@ -40,6 +40,7 @@ resist_fear 100
 resist_paralyze 50
 resist_poison 100
 resist_magic 10
+resist_blind 70
 will_apply 2
 can_apply 25
 can_use_weapon 1

@@ -26,6 +26,7 @@ weight 700
 resist_cold 50
 resist_fire -100
 resist_fear 100
+resist_blind 60
 undead 1
 can_see_in_dark 1
 can_pass_thru 1

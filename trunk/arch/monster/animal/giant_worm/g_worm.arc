@@ -23,6 +23,7 @@ resist_electricity 50
 resist_poison 100
 resist_paralyze 100
 resist_death 100
+resist_blind 100
 exp 100000
 ac -15
 wc -10

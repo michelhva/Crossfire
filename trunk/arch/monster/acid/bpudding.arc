@@ -26,7 +26,7 @@ weight 20000
 level 5
 attacktype 64
 resist_fire -100
-
+resist_blind 100
 hitback 1
 editable 1
 color_fg black

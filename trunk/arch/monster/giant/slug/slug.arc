@@ -17,11 +17,9 @@ Con 10
 color_fg grey
 resist_acid 100
 resist_fear 100
-
+resist_blind 100
 resist_fire -100
-
 resist_electricity 50
-
 attacktype 65
 exp 500
 ac -1

@@ -32,6 +32,7 @@ can_cast_spell 0
 hp 220
 maxhp 220
 resist_magic 85
+resist_blind 30
 attacktype 1025
 speed 0.42
 flying 1

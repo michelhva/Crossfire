@@ -36,6 +36,7 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 resist_fear 100
+resist_blind 100
 sp 100
 maxsp 100
 hp 1000

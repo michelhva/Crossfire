@@ -34,7 +34,7 @@ resist_magic 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
-
+resist_blind 60
 speed -0.07
 flying 1
 weight 70000

@@ -30,9 +30,8 @@ maxsp 40
 hp 100
 maxhp 100
 resist_fire 100
-
+resist_blind 50
 resist_magic 30
-
 speed -0.07
 flying 1
 weight 70000

@@ -10,10 +10,9 @@ mina
 monster 1
 alive 1
 resist_fire 100
-
 attacktype 4
 resist_confusion -100
-
+resist_blind 100
 glow_radius 1
 ac 2
 wc 10

@@ -31,8 +31,9 @@ resist_paralyze 50
 resist_godpower 75
 resist_holyword 85
 resist_confusion -100
+resist_blind -100
 see_invisible 1
-exp 400000
+exp 250000
 ac -10
 wc -15
 dam 50

@@ -28,6 +28,7 @@ Con 4
 maxhp 165
 level 9
 resist_fire 100
+resist_blind 30
 resist_cold -100
 resist_confusion -100
 speed 0.11

@@ -16,6 +16,7 @@ hp 30
 Wis 10
 level 5
 resist_magic 50
+resist_blind 50
 speed 0.2
 weight 25000
 flying 1

@@ -28,6 +28,7 @@ attacktype 4095
 resist_fire 50
 resist_cold 50
 resist_fear 100
+resist_blind 60
 will_apply 2
 pick_up 24
 can_see_in_dark 1

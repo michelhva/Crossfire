@@ -23,6 +23,7 @@ wc 2
 ac 0
 resist_physical 100
 resist_cold 100
+resist_blind 70
 speed -0.4
 level 11
 weight 70000

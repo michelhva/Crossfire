@@ -16,10 +16,9 @@ hp 8000
 maxhp 8000
 resist_cold 70
 resist_fear 100
-
 resist_fire 70
 resist_electricity 70
-
+resist_blind 100
 ac -20
 wc -60
 dam 40

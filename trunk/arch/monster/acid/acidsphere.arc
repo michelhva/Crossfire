@@ -31,7 +31,7 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 resist_turn_undead 100
-
+resist_blind 100
 attacktype 64
 hitback 1
 hp 1

@@ -21,6 +21,7 @@ resist_cold 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
+resist_blind 80
 ac -2
 Pow 16
 maxsp 50

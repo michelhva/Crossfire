@@ -15,6 +15,7 @@ resist_holyword 50
 resist_fire 100
 resist_confusion 100
 resist_poison 100
+resist_blind 75
 attacktype 5
 can_see_in_dark 1
 can_cast_spell 1
