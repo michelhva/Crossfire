@@ -15,9 +15,9 @@ Int 30
 Wis 30
 Pow 30
 attacktype 196736
-path_attuned 262144
-path_denied 590082
-path_repelled 129
+path_attuned 393216
+path_denied 589826
+path_repelled 257
 resist_drain 100
 resist_fear 100
 resist_deplete 100
@@ -27,7 +27,7 @@ ac -12
 wc -1
 hp 350
 dam 50
-last_eat -3
+last_eat 100
 last_heal -1
 level 15
 speed 0.35

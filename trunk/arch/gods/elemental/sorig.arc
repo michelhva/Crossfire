@@ -17,7 +17,7 @@ attacktype 8
 resist_electricity 100
 path_attuned 131096
 path_repelled 256
-path_denied 66561
+path_denied 65537
 ac -5
 wc -1
 dam 40

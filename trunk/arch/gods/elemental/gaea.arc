@@ -3,7 +3,7 @@ Object Gaea
 title Devourers
 face ent.111
 race animal,bird,slime,insect,reptile,water_elemental,earth_elemental,air_elemental,fire_elemental
-slaying undead,chess,unnatural
+slaying undead,unnatural
 animation ent
 is_animated 1
 monster 1
@@ -16,9 +16,8 @@ Wis 30
 Pow 30
 type 50
 attacktype 16384
-path_attuned 526784
+path_attuned 65
 path_denied 393216
-path_repelled 30
 resist_drain 100
 resist_deplete 100
 resist_death 100

@@ -15,9 +15,11 @@ attacktype 196736
 path_attuned 262144
 path_denied 590082
 path_repelled 129
-immune 213120
-protected 213120
-vulnerable 4
+resist_death 100
+resist_deplete 100
+resist_fear 100
+resist_drain 100
+resist_fire -100
 ac -12
 wc -1
 hp 350
