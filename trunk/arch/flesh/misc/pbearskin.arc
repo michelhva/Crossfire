@@ -1,5 +1,5 @@
 Object pbearskin
-name polarbear skin
+name skin
 nrof 1
 face pbearskin.111
 material 32

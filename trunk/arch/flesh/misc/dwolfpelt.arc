@@ -1,5 +1,5 @@
 Object dwolf_pelt
-name dire wolf pelt
+name pelt
 nrof 1
 face dwolfpelt.111
 material 32
