@@ -22,8 +22,8 @@ path_attuned 16388
 path_repelled 514
 path_denied 65536
 resist_fire -30
-resist_physical 40
-resist_magic 30
+resist_physical 20
+resist_magic 20
 resist_cold 80
 ac -5
 wc -3
