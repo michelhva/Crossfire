@@ -14,7 +14,7 @@ last_sp 12
 ac 5
 Dex 1
 Int 2
-Wis 2
+Pow 2
 resist_magic 30
 resist_fire 20
 resist_cold 20
