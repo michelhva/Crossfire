@@ -71,7 +71,7 @@ if (CFPython.PayAmount(activator, cost*10)):#goldcoin
          elif item == "Staff":
             pay = .15
          elif item == "Shield":
-            pay = .25
+            pay = .20
          elif item == "Sword":
             pay = .25
          elif item == "Wand":

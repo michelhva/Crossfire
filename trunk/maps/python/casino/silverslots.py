@@ -20,7 +20,7 @@ maxpot = 50000 #Maxiumum slot jackpot size
 cost = 1 #Price of usage
 
 #Change the items on the slot spinner or the number of items.    
-slotlist = ["Maid", "Merchant", "Coin", "Diamond", "Imp", "Devil", "JackPot"]
+slotlist = ["Merchant", "Coin", "Diamond", "Imp", "Devil", "JackPot"]
 
 spinners = 4 #How many spinners on the slotmachine?
 
@@ -36,12 +36,10 @@ if (CFPython.PayAmount(activator, cost)):#silvercoin
    for item in results:
       #match all but one - pays out by coin e.g 3 to 1 or 4 to 1
       if results.count(item) == spinners-1:
-         if item == "Maid":
+	 if item == "Merchant":
             pay = 1
-         elif item == "Merchant":
-            pay = 2
          elif item == "Coin":
-            pay = 3
+            pay = 2
          elif item == "Diamond":
             pay = 4
          elif item == "Imp":
@@ -65,16 +63,14 @@ if (CFPython.PayAmount(activator, cost)):#silvercoin
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
          CFPython.Write('%d %ss, a Major win!' %(spinners,item),activator)
-         if item == "Maid":
+         if item == "Merchant":
             pay = .10
-         elif item == "Merchant":
-            pay = .15
          elif item == "Coin":
-            pay = .25
+            pay = .15
          elif item == "Diamond":
-            pay = .25
+            pay = .20
          elif item == "Imp":
-            pay = .35
+            pay = .30
          elif item == "Devil":
             pay = .50
          elif item == "JackPot":
