@@ -11,6 +11,7 @@ mina
 monster 1
 Wis 1
 alive 1
+level 1
 ac 9
 hp 3
 maxhp 3

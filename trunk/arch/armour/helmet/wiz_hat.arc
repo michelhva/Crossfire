@@ -12,9 +12,8 @@ speed 0.1
 color_fg black
 last_sp 12
 ac 1
-Int 1
-Pow 1
-sp 5
+Int 2
+sp 4
 protected 6292
 weight 1000
 value 50000

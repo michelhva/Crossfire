@@ -1,6 +1,7 @@
 Object firewall
 other_arch firebullet_s
 alive 1
+level 1
 type 62
 face earthwall.111
 color_fg grey

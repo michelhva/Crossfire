@@ -4,6 +4,7 @@ randomitems grave
 name generator
 generator 1
 alive 1
+level 1
 face zombie_gen.111
 hp 100
 maxhp 100

@@ -10,6 +10,7 @@ ac 10
 speed 0.001
 weight -1
 alive 1
+level 1
 sp 130
 maxsp 1
 editable 1

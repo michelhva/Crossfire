@@ -11,6 +11,7 @@ type 23
 material 2
 no_pick 1
 alive 1
+level 1
 pass_thru 1
 editable 16
 end

@@ -8,6 +8,7 @@ maxhp 250
 ac 3
 weight 30
 alive 1
+level 1
 no_pick 1
 immune 4
 editable 1

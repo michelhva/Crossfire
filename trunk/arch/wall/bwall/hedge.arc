@@ -18,6 +18,7 @@ protected 4
 no_pick 1
 blocksview 1
 alive 1
+level 1
 pass_thru 1
 editable 768
 end

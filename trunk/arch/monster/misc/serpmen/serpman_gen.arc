@@ -11,6 +11,7 @@ ac 10
 speed -0.05
 immune 2
 alive 1
+level 1
 sp 1
 maxsp 1
 weight 90000

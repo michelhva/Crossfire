@@ -14,7 +14,7 @@ last_sp 12
 ac 5
 Dex 1
 Int 2
-Pow 2
+Wis 2
 protected 6294
 immune 64
 vulnerable 66048

@@ -4,6 +4,7 @@ race xan
 name Mosquito eggs
 generator 1
 alive 1
+level 1
 no_pick 1
 face xan_gen.111
 hp 30

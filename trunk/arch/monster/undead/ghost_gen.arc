@@ -7,6 +7,7 @@ color_fg red
 speed 0.01
 exp 70
 alive 1
+level 1
 no_pick 1
 ac 5
 maxsp 1

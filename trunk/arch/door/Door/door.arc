@@ -12,6 +12,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_1_1
@@ -28,6 +29,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_1_3
@@ -44,6 +46,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_2_1
@@ -60,6 +63,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_1_2
@@ -76,6 +80,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_1_1
@@ -92,6 +97,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_2_2
@@ -108,6 +114,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_3_2
@@ -124,6 +131,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_1_4
@@ -140,6 +148,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_2_4
@@ -156,6 +165,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_1_2
@@ -172,6 +182,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_3_1
@@ -188,6 +199,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_2_2_3
@@ -204,6 +216,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_3_4
@@ -220,6 +233,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_3_3
@@ -236,6 +250,7 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end
 Object door_4
@@ -252,5 +267,6 @@ type 23
 material 16
 no_pick 1
 alive 1
+level 1
 editable 16
 end

@@ -10,6 +10,7 @@ exp 80
 ac 10
 speed 0.004
 alive 1
+level 1
 maxsp 1
 weight 1000000
 editable 1

@@ -4,6 +4,7 @@ race skeleton
 name generator
 generator 1
 alive 1
+level 1
 face gravestone.111
 hp 75
 maxhp 75

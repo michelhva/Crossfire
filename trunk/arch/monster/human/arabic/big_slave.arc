@@ -3,6 +3,7 @@ randomitems slave
 name big slave
 face big_slave.111
 alive 1
+level 1
 monster 1
 hp 30
 maxhp 30
