@@ -14,9 +14,9 @@ level 50
 Str 29
 Int 25
 Pow 60
-exp 400000
+exp 500000
 ac -10
-wc -20
+wc -40
 dam 60
 speed 0.300000
 attacktype 20745
@@ -36,6 +36,7 @@ resist_fear 100
 resist_physical 75
 resist_fire 75
 resist_cold 75
+resist_holyword 50
 resist_godpower 80
 weight 150000
 flying 1

@@ -17,7 +17,7 @@ Int 25
 Pow 60
 exp 200000
 ac -5
-wc -10
+wc -20
 dam 20
 sp 100
 maxsp 200
@@ -33,11 +33,10 @@ resist_poison 100
 resist_slow 100
 resist_paralyze 100
 resist_fear 100
-
 resist_physical 50
 resist_fire 50
 resist_cold 50
-
+resist_holyword 80
 attacktype 20745
 speed 0.400000
 weight 150000
