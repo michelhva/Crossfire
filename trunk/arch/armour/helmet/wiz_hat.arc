@@ -22,5 +22,5 @@ resist_paralyze 30
 weight 1000
 value 50000
 material 128
-editable 1024
+editable 5120
 end
