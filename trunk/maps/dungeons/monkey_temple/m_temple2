@@ -579,6 +579,7 @@ x 3
 y 15
 end
 arch rune_drain_magic
+level 9
 x 3
 y 15
 end
@@ -902,6 +903,19 @@ x 6
 y 7
 end
 arch flagstone
+x 6
+y 8
+end
+arch magic_mouth
+msg
+Oooooook...
+
+ALL HAIL ANTIOC DEMON OF THE PIT!
+endmsg
+connected 10
+walk_on 0
+fly_on 0
+food 1
 x 6
 y 8
 end
@@ -2395,7 +2409,12 @@ y 18
 end
 arch medium_demon
 name Antioch
+msg
+@match *
+COWER BEFORE MY WRATH!
+endmsg
 title the demon
+sp 40
 x 9
 y 18
 end
