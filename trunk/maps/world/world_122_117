@@ -64,6 +64,9 @@ arch grass
 y 9
 end
 arch market1
+slaying /navar_city/market1
+hp 2
+sp 10
 y 9
 end
 arch cobblestones2
@@ -73,6 +76,9 @@ arch grass
 y 11
 end
 arch market1
+slaying /navar_city/market2
+hp 2
+sp 10
 y 11
 end
 arch cobblestones2
@@ -297,6 +303,9 @@ x 1
 y 9
 end
 arch market2
+slaying /navar_city/market1
+hp 2
+sp 10
 x 1
 y 9
 end
@@ -309,6 +318,9 @@ x 1
 y 11
 end
 arch market2
+slaying /navar_city/market2
+hp 2
+sp 10
 x 1
 y 11
 end
@@ -563,6 +575,9 @@ x 2
 y 9
 end
 arch market2
+slaying /navar_city/market1
+hp 14
+sp 10
 x 2
 y 9
 end
@@ -575,6 +590,9 @@ x 2
 y 11
 end
 arch market2
+slaying /navar_city/market2
+hp 14
+sp 10
 x 2
 y 11
 end
@@ -835,6 +853,9 @@ x 3
 y 9
 end
 arch market2
+slaying /navar_city/market1
+hp 30
+sp 10
 x 3
 y 9
 end
@@ -847,6 +868,9 @@ x 3
 y 11
 end
 arch market2
+slaying /navar_city/market2
+hp 30
+sp 10
 x 3
 y 11
 end
@@ -1095,6 +1119,9 @@ x 4
 y 9
 end
 arch market2
+slaying /navar_city/market1
+hp 45
+sp 10
 x 4
 y 9
 end
@@ -1107,6 +1134,9 @@ x 4
 y 11
 end
 arch market2
+slaying /navar_city/market2
+hp 45
+sp 10
 x 4
 y 11
 end
@@ -1371,6 +1401,9 @@ x 5
 y 9
 end
 arch market2
+slaying /navar_city/market1
+hp 45
+sp 10
 x 5
 y 9
 end
@@ -1383,6 +1416,9 @@ x 5
 y 11
 end
 arch market2
+slaying /navar_city/market2
+hp 45
+sp 10
 x 5
 y 11
 end
@@ -1641,6 +1677,9 @@ x 6
 y 9
 end
 arch market3
+slaying /navar_city/market1
+hp 57
+sp 10
 x 6
 y 9
 end
@@ -1653,6 +1692,9 @@ x 6
 y 11
 end
 arch market3
+slaying /navar_city/market2
+hp 57
+sp 10
 x 6
 y 11
 end
@@ -3286,10 +3328,6 @@ x 12
 y 9
 end
 arch grass
-x 12
-y 10
-end
-arch cobblestones2
 x 12
 y 10
 end
@@ -5202,8 +5240,8 @@ elevation 214
 x 19
 y 23
 end
-arch hills
-elevation 1925
+arch tree
+blocksview 1
 x 19
 y 24
 end
@@ -5217,8 +5255,8 @@ elevation 3218
 x 19
 y 26
 end
-arch hills
-elevation 3541
+arch tree
+blocksview 1
 x 19
 y 27
 end
@@ -5429,13 +5467,13 @@ elevation 60
 x 20
 y 22
 end
-arch grass
-elevation 255
+arch tree
+blocksview 1
 x 20
 y 23
 end
-arch grass
-elevation 634
+arch tree
+blocksview 1
 x 20
 y 24
 end
@@ -5474,8 +5512,8 @@ elevation 2596
 x 20
 y 31
 end
-arch grass
-elevation 150
+arch tree
+blocksview 1
 x 20
 y 32
 end
@@ -5625,8 +5663,7 @@ elevation 212
 x 21
 y 12
 end
-arch desert
-elevation 608
+arch beach
 x 21
 y 13
 end
@@ -5665,8 +5702,7 @@ elevation 1943
 x 21
 y 20
 end
-arch desert
-elevation 822
+arch beach
 x 21
 y 21
 end
@@ -5675,8 +5711,8 @@ elevation 3
 x 21
 y 22
 end
-arch grass
-elevation 172
+arch tree
+blocksview 1
 x 21
 y 23
 end
@@ -5685,13 +5721,12 @@ elevation 241
 x 21
 y 24
 end
-arch grass
-elevation 444
+arch tree
+blocksview 1
 x 21
 y 25
 end
-arch desert
-elevation 952
+arch beach
 x 21
 y 26
 end
@@ -5700,8 +5735,8 @@ elevation 1293
 x 21
 y 27
 end
-arch hills
-elevation 1710
+arch tree
+blocksview 1
 x 21
 y 28
 end
@@ -5715,8 +5750,8 @@ elevation 2057
 x 21
 y 30
 end
-arch hills
-elevation 1730
+arch tree
+blocksview 1
 x 21
 y 31
 end
@@ -5872,8 +5907,7 @@ elevation -9
 x 22
 y 12
 end
-arch desert
-elevation 23
+arch beach
 x 22
 y 13
 end
@@ -5882,8 +5916,7 @@ elevation 190
 x 22
 y 14
 end
-arch desert
-elevation 146
+arch beach
 x 22
 y 15
 end
@@ -5922,58 +5955,58 @@ elevation 140
 x 22
 y 22
 end
-arch grass
-elevation 155
+arch tree
+blocksview 1
 x 22
 y 23
 end
-arch desert
-elevation 80
+arch beach
 x 22
 y 24
 end
-arch desert
-elevation 66
+arch beach
 x 22
 y 25
 end
-arch desert
-elevation 234
+arch beach
 x 22
 y 26
 end
-arch grass
-elevation 41
+arch tree
+blocksview 1
 x 22
 y 27
 end
-arch desert
-elevation 411
+arch beach
 x 22
 y 28
 end
-arch evergreens
-elevation 1118
+arch grass
+elevation 35
 x 22
 y 29
 end
-arch evergreens
-elevation 1043
+arch grass
+elevation 35
 x 22
 y 30
 end
-arch grass
-elevation 75
+arch invis_exit
+slaying /navar_city/smugglers_cove/smugglercamp
+hp 1
+sp 1
+x 22
+y 30
+end
+arch shallow_sea
 x 22
 y 31
 end
-arch hills
-elevation 1670
+arch shallow_sea
 x 22
 y 32
 end
-arch woods_3
-elevation 2366
+arch shallow_sea
 x 22
 y 33
 end
@@ -6164,23 +6197,21 @@ elevation 2041
 x 23
 y 21
 end
-arch desert
-elevation 928
+arch beach
 x 23
 y 22
 end
-arch grass
-elevation 13
+arch tree
+blocksview 1
 x 23
 y 23
 end
-arch desert
-elevation 28
+arch beach
 x 23
 y 24
 end
-arch grass
-elevation 50
+arch tree
+blocksview 1
 x 23
 y 25
 end
@@ -6189,38 +6220,32 @@ elevation 21
 x 23
 y 26
 end
-arch desert
-elevation 40
+arch beach
 x 23
 y 27
 end
-arch desert
-elevation 59
+arch beach
 x 23
 y 28
 end
-arch grass
-elevation 35
+arch shallow_sea
+elevation -3
 x 23
 y 29
 end
-arch grass
-elevation 41
+arch shallow_sea
 x 23
 y 30
 end
-arch desert
-elevation 46
+arch shallow_sea
 x 23
 y 31
 end
-arch desert
-elevation 869
+arch shallow_sea
 x 23
 y 32
 end
-arch hills
-elevation 2056
+arch shallow_sea
 x 23
 y 33
 end
@@ -6388,8 +6413,7 @@ elevation -5
 x 24
 y 16
 end
-arch desert
-elevation 900
+arch beach
 x 24
 y 17
 end
@@ -6413,28 +6437,24 @@ elevation 1987
 x 24
 y 21
 end
-arch hills
-elevation 1055
+arch tree
+blocksview 1
 x 24
 y 22
 end
-arch desert
-elevation 70
+arch beach
 x 24
 y 23
 end
-arch desert
-elevation 69
+arch beach
 x 24
 y 24
 end
-arch desert
-elevation 169
+arch beach
 x 24
 y 25
 end
-arch desert
-elevation 108
+arch beach
 x 24
 y 26
 end
@@ -6458,18 +6478,15 @@ elevation -8
 x 24
 y 30
 end
-arch deep_swamp
-elevation 4
+arch sea
 x 24
 y 31
 end
-arch desert
-elevation 72
+arch shallow_sea
 x 24
 y 32
 end
-arch desert
-elevation 96
+arch beach
 x 24
 y 33
 end
@@ -6632,13 +6649,11 @@ elevation -36
 x 25
 y 15
 end
-arch desert
-elevation 14
+arch beach
 x 25
 y 16
 end
-arch desert
-elevation 289
+arch beach
 x 25
 y 17
 end
@@ -6657,33 +6672,29 @@ elevation 2129
 x 25
 y 20
 end
-arch hills
-elevation 1252
+arch tree
+blocksview 1
 x 25
 y 21
 end
-arch hills
-elevation 1102
+arch tree
+blocksview 1
 x 25
 y 22
 end
-arch desert
-elevation 188
+arch beach
 x 25
 y 23
 end
-arch desert
-elevation 151
+arch beach
 x 25
 y 24
 end
-arch desert
-elevation 442
+arch beach
 x 25
 y 25
 end
-arch desert
-elevation 225
+arch beach
 x 25
 y 26
 end
@@ -6698,26 +6709,22 @@ x 25
 y 28
 end
 arch shallow_sea
-elevation -10
 x 25
 y 29
 end
-arch shallow_sea
-elevation -10
+arch sea
 x 25
 y 30
 end
-arch shallow_sea
+arch sea
 x 25
 y 31
 end
-arch deep_swamp
-elevation 8
+arch shallow_sea
 x 25
 y 32
 end
-arch desert
-elevation 123
+arch beach
 x 25
 y 33
 end
@@ -6880,18 +6887,15 @@ elevation -9
 x 26
 y 15
 end
-arch desert
-elevation 37
+arch beach
 x 26
 y 16
 end
-arch desert
-elevation 54
+arch beach
 x 26
 y 17
 end
-arch desert
-elevation 587
+arch beach
 x 26
 y 18
 end
@@ -6900,13 +6904,13 @@ elevation 1051
 x 26
 y 19
 end
-arch hills
-elevation 1879
+arch tree
+blocksview 1
 x 26
 y 20
 end
-arch hills
-elevation 1684
+arch tree
+blocksview 1
 x 26
 y 21
 end
@@ -6915,23 +6919,19 @@ elevation 1060
 x 26
 y 22
 end
-arch desert
-elevation 488
+arch beach
 x 26
 y 23
 end
-arch desert
-elevation 114
+arch beach
 x 26
 y 24
 end
-arch desert
-elevation 42
+arch beach
 x 26
 y 25
 end
-arch desert
-elevation 28
+arch beach
 x 26
 y 26
 end
@@ -6941,32 +6941,26 @@ x 26
 y 27
 end
 arch shallow_sea
-elevation -7
 x 26
 y 28
 end
 arch shallow_sea
-elevation -5
 x 26
 y 29
 end
 arch shallow_sea
-elevation -3
 x 26
 y 30
 end
-arch deep_swamp
-elevation 2
+arch shallow_sea
 x 26
 y 31
 end
-arch desert
-elevation 41
+arch shallow_sea
 x 26
 y 32
 end
-arch desert
-elevation 44
+arch beach
 x 26
 y 33
 end
@@ -7129,18 +7123,15 @@ elevation -4
 x 27
 y 15
 end
-arch desert
-elevation 395
+arch beach
 x 27
 y 16
 end
-arch desert
-elevation 634
+arch beach
 x 27
 y 17
 end
-arch desert
-elevation 869
+arch beach
 x 27
 y 18
 end
@@ -7149,8 +7140,8 @@ elevation 1552
 x 27
 y 19
 end
-arch hills
-elevation 1748
+arch tree
+blocksview 1
 x 27
 y 20
 end
@@ -7159,18 +7150,15 @@ elevation 1452
 x 27
 y 21
 end
-arch desert
-elevation 805
+arch beach
 x 27
 y 22
 end
-arch desert
-elevation 69
+arch beach
 x 27
 y 23
 end
-arch desert
-elevation 11
+arch beach
 x 27
 y 24
 end
@@ -7185,7 +7173,6 @@ x 27
 y 26
 end
 arch shallow_sea
-elevation -6
 x 27
 y 27
 end
@@ -7204,18 +7191,16 @@ elevation 7
 x 27
 y 30
 end
-arch desert
-elevation 34
+arch beach
 x 27
 y 31
 end
-arch grass
-elevation 31
+arch tree
+blocksview 1
 x 27
 y 32
 end
-arch desert
-elevation 364
+arch beach
 x 27
 y 33
 end
@@ -7224,8 +7209,8 @@ elevation 2412
 x 27
 y 34
 end
-arch steppe
-elevation 3901
+arch tree
+blocksview 1
 x 27
 y 35
 end
@@ -7378,23 +7363,22 @@ elevation 6
 x 28
 y 15
 end
-arch desert
-elevation 692
+arch beach
 x 28
 y 16
 end
-arch hills
-elevation 1032
+arch tree
+blocksview 1
 x 28
 y 17
 end
-arch hills
-elevation 1175
+arch tree
+blocksview 1
 x 28
 y 18
 end
-arch hills
-elevation 1433
+arch tree
+blocksview 1
 x 28
 y 19
 end
@@ -7403,18 +7387,15 @@ elevation 1347
 x 28
 y 20
 end
-arch desert
-elevation 914
+arch beach
 x 28
 y 21
 end
-arch desert
-elevation 69
+arch beach
 x 28
 y 22
 end
-arch desert
-elevation 61
+arch beach
 x 28
 y 23
 end
@@ -7433,8 +7414,7 @@ elevation -3
 x 28
 y 26
 end
-arch shallow_sea
-elevation -7
+arch sea
 x 28
 y 27
 end
@@ -7443,28 +7423,24 @@ elevation -8
 x 28
 y 28
 end
-arch desert
-elevation 31
+arch beach
 x 28
 y 29
 end
-arch desert
-elevation 47
+arch beach
 x 28
 y 30
 end
-arch desert
-elevation 150
+arch beach
 x 28
 y 31
 end
-arch desert
-elevation 622
+arch beach
 x 28
 y 32
 end
-arch hills
-elevation 1586
+arch tree
+blocksview 1
 x 28
 y 33
 end
@@ -7622,38 +7598,32 @@ elevation -190
 x 29
 y 14
 end
-arch desert
-elevation 173
+arch beach
 x 29
 y 15
 end
-arch desert
-elevation 657
+arch beach
 x 29
 y 16
 end
-arch desert
-elevation 845
+arch beach
 x 29
 y 17
 end
-arch hills
-elevation 1197
+arch tree
+blocksview 1
 x 29
 y 18
 end
-arch desert
-elevation 226
+arch beach
 x 29
 y 19
 end
-arch desert
-elevation 992
+arch beach
 x 29
 y 20
 end
-arch desert
-elevation 135
+arch beach
 x 29
 y 21
 end
@@ -7672,18 +7642,15 @@ elevation -9
 x 29
 y 24
 end
-arch shallow_sea
-elevation -6
+arch sea
 x 29
 y 25
 end
-arch deep_swamp
-elevation 5
+arch sea
 x 29
 y 26
 end
-arch desert
-elevation 11
+arch shallow_sea
 x 29
 y 27
 end
@@ -7692,23 +7659,19 @@ elevation -5
 x 29
 y 28
 end
-arch desert
-elevation 156
+arch beach
 x 29
 y 29
 end
-arch desert
-elevation 633
+arch beach
 x 29
 y 30
 end
-arch desert
-elevation 809
+arch beach
 x 29
 y 31
 end
-arch desert
-elevation 568
+arch beach
 x 29
 y 32
 end
@@ -7871,23 +7834,19 @@ elevation -264
 x 30
 y 14
 end
-arch desert
-elevation 71
+arch beach
 x 30
 y 15
 end
-arch desert
-elevation 55
+arch beach
 x 30
 y 16
 end
-arch desert
-elevation 678
+arch beach
 x 30
 y 17
 end
-arch desert
-elevation 957
+arch beach
 x 30
 y 18
 end
@@ -7896,28 +7855,23 @@ elevation 1159
 x 30
 y 19
 end
-arch desert
-elevation 870
+arch beach
 x 30
 y 20
 end
-arch desert
-elevation 259
+arch shallow_sea
 x 30
 y 21
 end
-arch desert
-elevation 21
+arch shallow_sea
 x 30
 y 22
 end
-arch shallow_sea
-elevation -1
+arch sea
 x 30
 y 23
 end
-arch shallow_sea
-elevation -6
+arch sea
 x 30
 y 24
 end
@@ -7926,23 +7880,19 @@ elevation -2
 x 30
 y 25
 end
-arch desert
-elevation 41
+arch shallow_sea
 x 30
 y 26
 end
-arch desert
-elevation 90
+arch shallow_sea
 x 30
 y 27
 end
-arch desert
-elevation 252
+arch beach
 x 30
 y 28
 end
-arch desert
-elevation 291
+arch beach
 x 30
 y 29
 end
@@ -7956,8 +7906,7 @@ elevation 1198
 x 30
 y 31
 end
-arch desert
-elevation 877
+arch beach
 x 30
 y 32
 end
@@ -8130,13 +8079,11 @@ elevation -9
 x 31
 y 16
 end
-arch desert
-elevation 126
+arch beach
 x 31
 y 17
 end
-arch desert
-elevation 822
+arch beach
 x 31
 y 18
 end
@@ -8145,23 +8092,19 @@ elevation 1069
 x 31
 y 19
 end
-arch desert
-elevation 874
+arch shallow_sea
 x 31
 y 20
 end
-arch desert
-elevation 360
+arch sea
 x 31
 y 21
 end
-arch desert
-elevation 24
+arch shallow_sea
 x 31
 y 22
 end
-arch deep_swamp
-elevation 3
+arch shallow_sea
 x 31
 y 23
 end
@@ -8175,13 +8118,11 @@ elevation 3
 x 31
 y 25
 end
-arch desert
-elevation 91
+arch beach
 x 31
 y 26
 end
-arch desert
-elevation 693
+arch beach
 x 31
 y 27
 end
@@ -8210,8 +8151,7 @@ elevation 1903
 x 31
 y 32
 end
-arch desert
-elevation 833
+arch beach
 x 31
 y 33
 end
@@ -8379,53 +8319,43 @@ elevation -123
 x 32
 y 16
 end
-arch desert
-elevation 10
+arch beach
 x 32
 y 17
 end
-arch desert
-elevation 394
+arch shallow_sea
 x 32
 y 18
 end
-arch desert
-elevation 781
+arch shallow_sea
 x 32
 y 19
 end
-arch desert
-elevation 611
+arch sea
 x 32
 y 20
 end
-arch desert
-elevation 334
+arch sea
 x 32
 y 21
 end
-arch desert
-elevation 114
+arch shallow_sea
 x 32
 y 22
 end
-arch desert
-elevation 15
+arch beach
 x 32
 y 23
 end
-arch desert
-elevation 11
+arch beach
 x 32
 y 24
 end
-arch desert
-elevation 15
+arch beach
 x 32
 y 25
 end
-arch desert
-elevation 730
+arch beach
 x 32
 y 26
 end
@@ -8464,8 +8394,8 @@ elevation 1602
 x 32
 y 33
 end
-arch grass
-elevation 132
+arch tree
+blocksview 1
 x 32
 y 34
 end
@@ -8628,48 +8558,39 @@ elevation -200
 x 33
 y 16
 end
-arch shallow_sea
-elevation -9
+arch sea
 x 33
 y 17
 end
-arch desert
-elevation 365
+arch sea
 x 33
 y 18
 end
-arch desert
-elevation 679
+arch sea
 x 33
 y 19
 end
-arch desert
-elevation 437
+arch shallow_sea
 x 33
 y 20
 end
-arch desert
-elevation 145
+arch shallow_sea
 x 33
 y 21
 end
-arch desert
-elevation 704
+arch beach
 x 33
 y 22
 end
-arch desert
-elevation 697
+arch beach
 x 33
 y 23
 end
-arch desert
-elevation 514
+arch beach
 x 33
 y 24
 end
-arch desert
-elevation 334
+arch beach
 x 33
 y 25
 end
@@ -8678,8 +8599,8 @@ elevation 1343
 x 33
 y 26
 end
-arch hills
-elevation 2169
+arch tree
+blocksview 1
 x 33
 y 27
 end
@@ -8713,8 +8634,8 @@ elevation 1190
 x 33
 y 33
 end
-arch brush
-elevation 277
+arch tree
+blocksview 1
 x 33
 y 34
 end
@@ -8877,23 +8798,19 @@ elevation -258
 x 34
 y 16
 end
-arch shallow_sea
-elevation -36
+arch sea
 x 34
 y 17
 end
-arch desert
-elevation 251
+arch sea
 x 34
 y 18
 end
-arch desert
-elevation 601
+arch shallow_sea
 x 34
 y 19
 end
-arch desert
-elevation 865
+arch beach
 x 34
 y 20
 end
@@ -8912,18 +8829,16 @@ elevation 1287
 x 34
 y 23
 end
-arch desert
-elevation 962
+arch beach
 x 34
 y 24
 end
-arch desert
-elevation 980
+arch beach
 x 34
 y 25
 end
-arch hills
-elevation 1390
+arch tree
+blocksview 1
 x 34
 y 26
 end
@@ -9136,13 +9051,11 @@ elevation -6
 x 35
 y 18
 end
-arch desert
-elevation 160
+arch beach
 x 35
 y 19
 end
-arch desert
-elevation 684
+arch beach
 x 35
 y 20
 end
@@ -9151,23 +9064,21 @@ elevation 1715
 x 35
 y 21
 end
-arch hills
-elevation 1792
+arch tree
+blocksview 1
 x 35
 y 22
 end
-arch hills
-elevation 1416
+arch tree
+blocksview 1
 x 35
 y 23
 end
-arch desert
-elevation 952
+arch beach
 x 35
 y 24
 end
-arch desert
-elevation 381
+arch beach
 x 35
 y 25
 end
@@ -9385,13 +9296,12 @@ elevation -7
 x 36
 y 18
 end
-arch desert
-elevation 19
+arch beach
 x 36
 y 19
 end
-arch hills
-elevation 1405
+arch tree
+blocksview 1
 x 36
 y 20
 end
@@ -9400,28 +9310,24 @@ elevation 1962
 x 36
 y 21
 end
-arch hills
-elevation 1865
+arch tree
+blocksview 1
 x 36
 y 22
 end
-arch desert
-elevation 804
+arch beach
 x 36
 y 23
 end
-arch desert
-elevation 680
+arch beach
 x 36
 y 24
 end
-arch desert
-elevation 389
+arch beach
 x 36
 y 25
 end
-arch desert
-elevation 993
+arch beach
 x 36
 y 26
 end
@@ -9430,8 +9336,7 @@ elevation 1265
 x 36
 y 27
 end
-arch desert
-elevation 799
+arch beach
 x 36
 y 28
 end
@@ -9455,8 +9360,7 @@ elevation 2190
 x 36
 y 32
 end
-arch desert
-elevation 334
+arch beach
 x 36
 y 33
 end
@@ -9634,18 +9538,17 @@ elevation -10
 x 37
 y 18
 end
-arch desert
-elevation 711
+arch beach
 x 37
 y 19
 end
-arch hills
-elevation 1548
+arch tree
+blocksview 1
 x 37
 y 20
 end
-arch hills
-elevation 1983
+arch tree
+blocksview 1
 x 37
 y 21
 end
@@ -9659,43 +9562,37 @@ elevation 1307
 x 37
 y 23
 end
-arch desert
-elevation 886
+arch beach
 x 37
 y 24
 end
-arch desert
-elevation 807
+arch beach
 x 37
 y 25
 end
-arch desert
-elevation 805
+arch beach
 x 37
 y 26
 end
-arch desert
-elevation 370
+arch beach
 x 37
 y 27
 end
-arch desert
-elevation 151
+arch beach
 x 37
 y 28
 end
-arch desert
-elevation 595
+arch beach
 x 37
 y 29
 end
-arch hills
-elevation 2169
+arch tree
+blocksview 1
 x 37
 y 30
 end
-arch hills
-elevation 2905
+arch tree
+blocksview 1
 x 37
 y 31
 end
@@ -9883,13 +9780,11 @@ elevation -10
 x 38
 y 18
 end
-arch desert
-elevation 375
+arch beach
 x 38
 y 19
 end
-arch hills
-elevation 1180
+arch beach
 x 38
 y 20
 end
@@ -9903,28 +9798,23 @@ elevation 1405
 x 38
 y 22
 end
-arch desert
-elevation 975
+arch beach
 x 38
 y 23
 end
-arch desert
-elevation 387
+arch beach
 x 38
 y 24
 end
-arch desert
-elevation 858
+arch beach
 x 38
 y 25
 end
-arch desert
-elevation 763
+arch beach
 x 38
 y 26
 end
-arch desert
-elevation 114
+arch beach
 x 38
 y 27
 end
@@ -9933,8 +9823,7 @@ elevation 112
 x 38
 y 28
 end
-arch desert
-elevation 173
+arch beach
 x 38
 y 29
 end
@@ -10132,13 +10021,11 @@ elevation -10
 x 39
 y 18
 end
-arch desert
-elevation 48
+arch beach
 x 39
 y 19
 end
-arch desert
-elevation 209
+arch beach
 x 39
 y 20
 end
@@ -10147,23 +10034,19 @@ elevation 1093
 x 39
 y 21
 end
-arch desert
-elevation 265
+arch beach
 x 39
 y 22
 end
-arch desert
-elevation 53
+arch beach
 x 39
 y 23
 end
-arch desert
-elevation 468
+arch beach
 x 39
 y 24
 end
-arch desert
-elevation 679
+arch beach
 x 39
 y 25
 end
@@ -10172,8 +10055,7 @@ elevation 1244
 x 39
 y 26
 end
-arch desert
-elevation 590
+arch beach
 x 39
 y 27
 end
@@ -10401,13 +10283,13 @@ elevation 1235
 x 40
 y 22
 end
-arch hills
-elevation 1351
+arch tree
+blocksview 1
 x 40
 y 23
 end
-arch hills
-elevation 1592
+arch tree
+blocksview 1
 x 40
 y 24
 end
@@ -11113,8 +10995,7 @@ elevation -4
 x 43
 y 15
 end
-arch desert
-elevation 642
+arch beach
 x 43
 y 16
 end
@@ -11123,13 +11004,11 @@ elevation 1078
 x 43
 y 17
 end
-arch desert
-elevation 969
+arch beach
 x 43
 y 18
 end
-arch desert
-elevation 832
+arch beach
 x 43
 y 19
 end
@@ -11361,8 +11240,7 @@ arch shallow_sea
 x 44
 y 15
 end
-arch desert
-elevation 804
+arch beach
 x 44
 y 16
 end
@@ -11605,13 +11483,11 @@ elevation -32
 x 45
 y 14
 end
-arch desert
-elevation 54
+arch beach
 x 45
 y 15
 end
-arch desert
-elevation 781
+arch beach
 x 45
 y 16
 end
@@ -11839,8 +11715,7 @@ elevation 638
 x 46
 y 11
 end
-arch desert
-elevation 443
+arch beach
 x 46
 y 12
 end
@@ -11859,8 +11734,7 @@ elevation 29
 x 46
 y 15
 end
-arch desert
-elevation 813
+arch beach
 x 46
 y 16
 end
@@ -12083,8 +11957,7 @@ elevation 591
 x 47
 y 10
 end
-arch desert
-elevation 883
+arch beach
 x 47
 y 11
 end
@@ -12093,23 +11966,19 @@ elevation 765
 x 47
 y 12
 end
-arch desert
-elevation 437
+arch beach
 x 47
 y 13
 end
-arch desert
-elevation 124
+arch beach
 x 47
 y 14
 end
-arch desert
-elevation 180
+arch beach
 x 47
 y 15
 end
-arch desert
-elevation 816
+arch beach
 x 47
 y 16
 end
@@ -12327,13 +12196,11 @@ elevation -321
 x 48
 y 9
 end
-arch desert
-elevation 254
+arch beach
 x 48
 y 10
 end
-arch desert
-elevation 506
+arch beach
 x 48
 y 11
 end
@@ -12342,38 +12209,31 @@ elevation 538
 x 48
 y 12
 end
-arch desert
-elevation 448
+arch beach
 x 48
 y 13
 end
-arch desert
-elevation 134
+arch beach
 x 48
 y 14
 end
-arch desert
-elevation 124
+arch beach
 x 48
 y 15
 end
-arch desert
-elevation 663
+arch beach
 x 48
 y 16
 end
-arch desert
-elevation 789
+arch beach
 x 48
 y 17
 end
-arch desert
-elevation 243
+arch beach
 x 48
 y 18
 end
-arch desert
-elevation 409
+arch beach
 x 48
 y 19
 end
@@ -12581,28 +12441,23 @@ elevation -92
 x 49
 y 10
 end
-arch desert
-elevation 123
+arch beach
 x 49
 y 11
 end
-arch desert
-elevation 366
+arch beach
 x 49
 y 12
 end
-arch desert
-elevation 202
+arch beach
 x 49
 y 13
 end
-arch desert
-elevation 153
+arch beach
 x 49
 y 14
 end
-arch desert
-elevation 61
+arch beach
 x 49
 y 15
 end
@@ -12611,18 +12466,15 @@ elevation 306
 x 49
 y 16
 end
-arch desert
-elevation 812
+arch beach
 x 49
 y 17
 end
-arch desert
-elevation 108
+arch beach
 x 49
 y 18
 end
-arch desert
-elevation 473
+arch beach
 x 49
 y 19
 end
@@ -12874,6 +12726,14 @@ hp 1
 sp 1
 x 12
 y 14
+end
+arch barn2
+name old warehouse
+slaying /navar_city/smugglers_cove/sc_warehouse
+hp 7
+sp 18
+x 15
+y 31
 end
 arch store_armour
 name Olaf's Armor Emporium
