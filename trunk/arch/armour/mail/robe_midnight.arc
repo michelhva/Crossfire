@@ -27,5 +27,5 @@ magic 5
 weight 5000
 value 100000
 material 128
-editable 1024
+editable 5120
 end
