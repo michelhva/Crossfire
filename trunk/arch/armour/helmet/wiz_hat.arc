@@ -1,5 +1,6 @@
 Object wiz_hat
 name Wizard Hat
+nrof 1
 type 34
 face wiz_hat.111
 anim
@@ -11,7 +12,8 @@ speed 0.1
 color_fg black
 last_sp 12
 ac 1
-Int 2
+Int 1
+Pow 1
 sp 5
 protected 6292
 weight 1000
