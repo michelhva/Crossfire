@@ -1,6 +1,6 @@
 Object gryphon
 race animal
-namei Dark Gryphon
+name Dark Gryphon
 randomitems big_wizard
 monster 1
 sleep 1
@@ -65,6 +65,7 @@ Object gryphon2
 name Dark Gryphon
 face gryphon.211
 anim
+facings 2
 gryphon.211
 gryphon.212
 gryphon.213
@@ -115,6 +116,7 @@ Object gryphon4
 name Dark Gryphon
 face gryphon.411
 anim
+facings 2
 gryphon.411
 gryphon.412
 gryphon.413
@@ -140,6 +142,7 @@ Object gryphon5
 name Dark Gryphon
 face gryphon.511
 anim
+facings 2
 gryphon.511
 gryphon.512
 gryphon.513
@@ -166,6 +169,7 @@ Object gryphon6
 name Dark Gryphon
 face gryphon.611
 anim
+facings 2
 gryphon.611
 gryphon.612
 gryphon.613
@@ -192,6 +196,7 @@ Object gryphon7
 name Dark Gryphon
 face gryphon.711
 anim
+facings 2
 gryphon.711
 gryphon.712
 gryphon.713
@@ -217,6 +222,7 @@ Object gryphon8
 name Dark Gryphon
 face gryphon.811
 anim
+facings 2
 gryphon.811
 gryphon.812
 gryphon.813
@@ -243,6 +249,7 @@ Object gryphon9
 name Dark Gryphon
 face gryphon.911
 anim
+facings 2
 gryphon.911
 gryphon.912
 gryphon.913
