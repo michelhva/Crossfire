@@ -1,7 +1,8 @@
 Object god_enchant_weapon_low
-type 8
-invisible 1
 name enchant weapon
-level 8
+face blank.111
+invisible 1
+type 8
+level 10
 editable 0
-end
+end 

@@ -1,7 +1,8 @@
 Object god_grace_limit_medium
-type 8
-invisible 1
 name grace limit
-grace 80
+face blank.111
+invisible 1
+type 8
+grace 300
 editable 0
-end
+end 
