@@ -40,10 +40,10 @@ y=CFPython.GetYPosition(activator)
 #EASILY SETTABLE PARAMETERS
 service_charge=5  #service charges for transactions as a percent
 exchange_rate=10000 #exchange rate for silver (value 1)
-
+bankdatabase="ImperialBank_DB"
 
 fees=(service_charge/100)+1
-bank = CFBank.CFBank()
+bank = CFBank.CFBank(bankdatabase)
 
 text = string.split(CFPython.WhatIsMessage())
 thanks_message = ['Thank you for banking the Imperial Way.', 'Thank you, please come again.',\

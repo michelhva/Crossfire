@@ -26,11 +26,10 @@ import shelve
 import CFgetPaths
 
 class CFBank:
-
-	bankdb_file = '%scrossfirebank' % (CFgetPaths.getPaths('localdir'))
 	bankdb = {}
 
-	def __init__(self):
+	def __init__(self, bankfile):
+		self.bankdb_file = '%s%s' % (CFgetPaths.getPaths('localdir'),bankfile)
 		self.bankdb = shelve.open(self.bankdb_file)
 
 	def deposit(self, user, amount):
