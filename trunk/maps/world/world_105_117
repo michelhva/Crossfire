@@ -3246,6 +3246,25 @@ elevation 8716
 x 13
 y 8
 end
+arch mountain_cave
+msg
+layoutstyle maze
+dungeon_level 8
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 3
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 13
+y 8
+end
 arch mountain
 elevation 8104
 x 13
@@ -4035,6 +4054,25 @@ y 16
 end
 arch mountain
 elevation 7103
+x 16
+y 17
+end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 7
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 3
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
 x 16
 y 17
 end
@@ -5761,6 +5799,25 @@ elevation 8513
 x 23
 y 13
 end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 7
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 3
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 23
+y 13
+end
 arch mountain2
 elevation 9134
 x 23
@@ -6719,6 +6776,10 @@ y 5
 end
 arch brush
 elevation 827
+x 27
+y 6
+end
+arch mountain3
 x 27
 y 6
 end
