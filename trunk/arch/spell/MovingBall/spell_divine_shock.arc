@@ -13,10 +13,10 @@ path_attuned 131072
 path_repelled 8
 other_arch divine_shock
 dam 1
-dam_modifier 12
+dam_modifier 3
 duration 1
-duration_modifier 5
-maxgrace 15
+duration_modifier 4
+maxgrace 5
 attacktype 1048584
 no_drop 1
 invisible 1
