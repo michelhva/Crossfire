@@ -1,11 +1,14 @@
 arch map
 name world_102_110
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_102_109
 tile_path_2 world_103_110
@@ -7922,14 +7925,14 @@ arch hills
 x 39
 y 49
 end
-arch woods_3
+arch cobblestones
 x 40
 end
-arch grass
+arch cobblestones
 x 40
 y 1
 end
-arch grass
+arch cobblestones
 x 40
 y 2
 end
@@ -8132,7 +8135,7 @@ arch cobblestones
 x 41
 y 2
 end
-arch woods_3
+arch cobblestones
 x 41
 y 3
 end
@@ -8335,7 +8338,7 @@ arch cobblestones
 x 42
 y 3
 end
-arch woods_3
+arch cobblestones
 x 42
 y 4
 end
@@ -8538,7 +8541,7 @@ arch cobblestones
 x 43
 y 4
 end
-arch woods_3
+arch cobblestones
 x 43
 y 5
 end
@@ -8737,7 +8740,7 @@ arch cobblestones
 x 44
 y 4
 end
-arch woods_3
+arch cobblestones
 x 44
 y 5
 end
@@ -8936,7 +8939,7 @@ arch cobblestones
 x 45
 y 4
 end
-arch desert
+arch cobblestones
 x 45
 y 5
 end
@@ -9139,7 +9142,7 @@ arch cobblestones
 x 46
 y 5
 end
-arch woods_3
+arch cobblestones
 x 46
 y 6
 end
@@ -9338,7 +9341,7 @@ arch cobblestones
 x 47
 y 5
 end
-arch hills
+arch cobblestones
 x 47
 y 6
 end
@@ -9537,7 +9540,7 @@ arch cobblestones
 x 48
 y 5
 end
-arch steppe
+arch cobblestones
 x 48
 y 6
 end
@@ -9736,7 +9739,7 @@ arch cobblestones
 x 49
 y 5
 end
-arch steppe
+arch cobblestones
 x 49
 y 6
 end

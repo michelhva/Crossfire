@@ -8659,82 +8659,66 @@ elevation 0
 x 34
 y 49
 end
-arch woods_2
-elevation 1752
+arch cobblestones
 x 35
 end
-arch woods_3
-elevation 2121
+arch cobblestones
 x 35
 y 1
 end
-arch woods_3
-elevation 2539
+arch cobblestones
 x 35
 y 2
 end
-arch hills_rocky
-elevation 3190
+arch cobblestones
 x 35
 y 3
 end
-arch hills_rocky
-elevation 3507
+arch cobblestones
 x 35
 y 4
 end
-arch hills_rocky
-elevation 3276
+arch cobblestones
 x 35
 y 5
 end
-arch hills_rocky
-elevation 3612
+arch cobblestones
 x 35
 y 6
 end
-arch hills
-elevation 4073
+arch cobblestones
 x 35
 y 7
 end
-arch hills_rocky
-elevation 3980
+arch cobblestones
 x 35
 y 8
 end
-arch hills_rocky
-elevation 3384
+arch cobblestones
 x 35
 y 9
 end
-arch woods_3
-elevation 2585
+arch cobblestones
 x 35
 y 10
 end
-arch woods_3
-elevation 1746
+arch cobblestones
 x 35
 y 11
 end
-arch woods_3
-elevation 1018
+arch cobblestones
 x 35
 y 12
 end
-arch grass
-elevation 89
+arch cobblestones
 x 35
 y 13
 end
-arch grass
-elevation 831
+arch cobblestones
 x 35
 y 14
 end
-arch woods_3
-elevation 1517
+arch cobblestones
 x 35
 y 15
 end
@@ -8985,8 +8969,7 @@ elevation 2329
 x 36
 y 15
 end
-arch hills_rocky
-elevation 3261
+arch cobblestones
 x 36
 y 16
 end
@@ -9237,8 +9220,7 @@ elevation 3308
 x 37
 y 16
 end
-arch hills_rocky
-elevation 3097
+arch cobblestones
 x 37
 y 17
 end
@@ -9489,8 +9471,7 @@ elevation 727
 x 38
 y 17
 end
-arch woods_3
-elevation 1186
+arch cobblestones
 x 38
 y 18
 end
@@ -9741,8 +9722,7 @@ elevation 64
 x 39
 y 18
 end
-arch grass
-elevation 152
+arch cobblestones
 x 39
 y 19
 end
@@ -9993,8 +9973,7 @@ elevation -5
 x 40
 y 19
 end
-arch grass
-elevation 216
+arch cobblestones
 x 40
 y 20
 end
@@ -10245,8 +10224,7 @@ elevation 299
 x 41
 y 20
 end
-arch grass
-elevation 637
+arch cobblestones
 x 41
 y 21
 end
@@ -10497,8 +10475,7 @@ elevation 407
 x 42
 y 21
 end
-arch brush
-elevation 24
+arch cobblestones
 x 42
 y 22
 end
@@ -10749,8 +10726,7 @@ elevation 43
 x 43
 y 22
 end
-arch deep_swamp
-elevation 8
+arch cobblestones
 x 43
 y 23
 end
@@ -11001,8 +10977,7 @@ elevation 31
 x 44
 y 23
 end
-arch brush
-elevation 39
+arch cobblestones
 x 44
 y 24
 end
@@ -11253,8 +11228,7 @@ elevation 269
 x 45
 y 24
 end
-arch brush
-elevation 668
+arch cobblestones
 x 45
 y 25
 end
@@ -11336,43 +11310,38 @@ elevation 89
 x 45
 y 41
 end
-arch brush
-elevation 431
+arch shallow_sea
+elevation -5
 x 45
 y 42
 end
-arch brush
-elevation 615
+arch shallow_sea
+elevation -5
 x 45
 y 43
 end
-arch brush
-elevation 749
+arch swamp
+elevation 9
 x 45
 y 44
 end
-arch brush
-elevation 765
+arch cobblestones
 x 45
 y 45
 end
-arch brush
-elevation 306
+arch cobblestones
 x 45
 y 46
 end
-arch brush
-elevation 696
+arch cobblestones
 x 45
 y 47
 end
-arch brush
-elevation 604
+arch cobblestones
 x 45
 y 48
 end
-arch brush
-elevation 74
+arch cobblestones
 x 45
 y 49
 end
@@ -11505,8 +11474,7 @@ elevation 222
 x 46
 y 25
 end
-arch brush
-elevation 24
+arch cobblestones
 x 46
 y 26
 end
@@ -11566,15 +11534,30 @@ arch cobblestones
 x 46
 y 40
 end
-arch cobblestones
+arch shallow_sea
+elevation -5
 x 46
 y 41
 end
-arch cobblestones
+arch pier_1_1
+x 46
+y 41
+end
+arch shallow_sea
+elevation -5
 x 46
 y 42
 end
-arch cobblestones
+arch pier_2_1_1
+x 46
+y 42
+end
+arch shallow_sea
+elevation -5
+x 46
+y 43
+end
+arch pier_1_2
 x 46
 y 43
 end
@@ -11736,78 +11719,69 @@ elevation 596
 x 47
 y 26
 end
-arch brush
-elevation 338
+arch cobblestones
 x 47
 y 27
 end
-arch woods_2
-elevation 1674
+arch cobblestones
 x 47
 y 28
 end
-arch woods_2
-elevation 2483
+arch cobblestones
 x 47
 y 29
 end
-arch woods_2
-elevation 2853
+arch cobblestones
 x 47
 y 30
 end
-arch hills_rocky
-elevation 3028
+arch cobblestones
 x 47
 y 31
 end
-arch hills_rocky
-elevation 3104
+arch cobblestones
 x 47
 y 32
 end
-arch woods_2
-elevation 2580
+arch cobblestones
 x 47
 y 33
 end
-arch woods_2
-elevation 1223
+arch cobblestones
 x 47
 y 34
 end
-arch woods_2
-elevation 1765
+arch cobblestones
 x 47
 y 35
 end
-arch woods_2
-elevation 1530
+arch cobblestones
 x 47
 y 36
 end
-arch brush
-elevation 400
+arch cobblestones
 x 47
 y 37
 end
-arch brush
-elevation 208
+arch cobblestones
 x 47
 y 38
 end
-arch brush
-elevation 534
+arch cobblestones
 x 47
 y 39
 end
 arch brush
-elevation 381
+elevation 89
+x 47
+y 40
+end
+arch tower_tob
 x 47
 y 40
 end
 arch brush
-elevation 74
+elevation 165
 x 47
 y 41
 end
@@ -11816,8 +11790,8 @@ elevation -7
 x 47
 y 42
 end
-arch brush
-elevation 22
+arch shallow_sea
+elevation -5
 x 47
 y 43
 end
@@ -12065,8 +12039,8 @@ elevation 49
 x 48
 y 42
 end
-arch swamp
-elevation 2
+arch shallow_sea
+elevation -1
 x 48
 y 43
 end

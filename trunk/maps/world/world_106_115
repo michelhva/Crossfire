@@ -176,8 +176,7 @@ arch desert
 elevation 435
 y 39
 end
-arch brush
-elevation 597
+arch cobblestones
 y 40
 end
 arch cobblestones
@@ -414,8 +413,7 @@ elevation 1287
 x 1
 y 39
 end
-arch jungle_1
-elevation 1458
+arch cobblestones
 x 1
 y 40
 end
@@ -662,8 +660,7 @@ elevation 1651
 x 2
 y 39
 end
-arch jungle_1
-elevation 2038
+arch cobblestones
 x 2
 y 40
 end
@@ -1154,8 +1151,7 @@ arch cobblestones
 x 4
 y 39
 end
-arch hills_rocky
-elevation 3003
+arch cobblestones
 x 4
 y 40
 end
@@ -1395,8 +1391,7 @@ arch cobblestones
 x 5
 y 38
 end
-arch hills_rocky
-elevation 3870
+arch cobblestones
 x 5
 y 39
 end
@@ -1632,13 +1627,11 @@ arch cobblestones
 x 6
 y 36
 end
-arch hills_rocky
-elevation 4784
+arch cobblestones
 x 6
 y 37
 end
-arch hills_rocky
-elevation 4593
+arch cobblestones
 x 6
 y 38
 end
@@ -1841,13 +1834,11 @@ elevation 2630
 x 7
 y 28
 end
-arch hills_rocky
-elevation 4311
+arch cobblestones
 x 7
 y 29
 end
-arch hills
-elevation 4164
+arch cobblestones
 x 7
 y 30
 end
@@ -1871,8 +1862,7 @@ arch cobblestones
 x 7
 y 35
 end
-arch hills_rocky
-elevation 4304
+arch cobblestones
 x 7
 y 36
 end
@@ -2080,8 +2070,7 @@ elevation 3972
 x 8
 y 27
 end
-arch hills
-elevation 3944
+arch cobblestones
 x 8
 y 28
 end
@@ -2097,23 +2086,19 @@ arch cobblestones
 x 8
 y 31
 end
-arch hills_rocky
-elevation 4086
+arch cobblestones
 x 8
 y 32
 end
-arch hills_rocky
-elevation 3920
+arch cobblestones
 x 8
 y 33
 end
-arch hills_rocky
-elevation 4202
+arch cobblestones
 x 8
 y 34
 end
-arch hills_rocky
-elevation 4266
+arch cobblestones
 x 8
 y 35
 end
@@ -2332,8 +2317,7 @@ elevation 3302
 x 9
 y 26
 end
-arch hills
-elevation 4151
+arch cobblestones
 x 9
 y 27
 end
@@ -2574,8 +2558,7 @@ elevation 3119
 x 10
 y 25
 end
-arch hills
-elevation 3352
+arch cobblestones
 x 10
 y 26
 end
@@ -2816,8 +2799,7 @@ elevation 4422
 x 11
 y 24
 end
-arch hills
-elevation 4111
+arch cobblestones
 x 11
 y 25
 end
@@ -3294,8 +3276,7 @@ elevation 3569
 x 13
 y 21
 end
-arch hills
-elevation 4008
+arch cobblestones
 x 13
 y 22
 end
@@ -3307,8 +3288,7 @@ arch cobblestones
 x 13
 y 24
 end
-arch hills
-elevation 3040
+arch cobblestones
 x 13
 y 25
 end
@@ -3537,7 +3517,7 @@ x 14
 y 20
 end
 arch hills
-elevation 3921
+elevation 4301
 x 14
 y 21
 end
@@ -3549,8 +3529,7 @@ arch cobblestones
 x 14
 y 23
 end
-arch hills_rocky
-elevation 4784
+arch cobblestones
 x 14
 y 24
 end
@@ -3783,8 +3762,8 @@ elevation 4301
 x 15
 y 20
 end
-arch hills_rocky
-elevation 3214
+arch tree
+elevation 2516
 x 15
 y 21
 end
@@ -3792,8 +3771,7 @@ arch cobblestones
 x 15
 y 22
 end
-arch mountain
-elevation 5244
+arch cobblestones
 x 15
 y 23
 end
@@ -4032,7 +4010,7 @@ x 16
 y 20
 end
 arch hills
-elevation 3843
+elevation 4301
 x 16
 y 21
 end
@@ -4040,8 +4018,7 @@ arch cobblestones
 x 16
 y 22
 end
-arch mountain
-elevation 5379
+arch cobblestones
 x 16
 y 23
 end
@@ -4288,8 +4265,7 @@ arch cobblestones
 x 17
 y 22
 end
-arch hills
-elevation 4769
+arch cobblestones
 x 17
 y 23
 end
@@ -4536,8 +4512,7 @@ arch cobblestones
 x 18
 y 22
 end
-arch hills
-elevation 3909
+arch cobblestones
 x 18
 y 23
 end
@@ -4784,8 +4759,7 @@ arch cobblestones
 x 19
 y 22
 end
-arch hills_rocky
-elevation 3192
+arch cobblestones
 x 19
 y 23
 end
@@ -5032,8 +5006,7 @@ arch cobblestones
 x 20
 y 22
 end
-arch hills_rocky
-elevation 3181
+arch cobblestones
 x 20
 y 23
 end
@@ -5280,8 +5253,7 @@ arch cobblestones
 x 21
 y 22
 end
-arch hills
-elevation 3907
+arch cobblestones
 x 21
 y 23
 end
@@ -5528,8 +5500,7 @@ arch cobblestones
 x 22
 y 22
 end
-arch hills_rocky
-elevation 4794
+arch cobblestones
 x 22
 y 23
 end
@@ -5776,8 +5747,7 @@ arch cobblestones
 x 23
 y 22
 end
-arch mountain
-elevation 5305
+arch cobblestones
 x 23
 y 23
 end
@@ -6024,8 +5994,7 @@ arch cobblestones
 x 24
 y 22
 end
-arch mountain
-elevation 5125
+arch cobblestones
 x 24
 y 23
 end
@@ -6272,8 +6241,7 @@ arch cobblestones
 x 25
 y 22
 end
-arch hills_rocky
-elevation 4682
+arch cobblestones
 x 25
 y 23
 end
@@ -6506,8 +6474,7 @@ elevation 5048
 x 26
 y 19
 end
-arch hills
-elevation 4451
+arch cobblestones
 x 26
 y 20
 end
@@ -6519,8 +6486,7 @@ arch cobblestones
 x 26
 y 22
 end
-arch hills_rocky
-elevation 3845
+arch cobblestones
 x 26
 y 23
 end
@@ -6748,8 +6714,7 @@ elevation 4047
 x 27
 y 18
 end
-arch steppe
-elevation 4782
+arch cobblestones
 x 27
 y 19
 end
@@ -6761,8 +6726,7 @@ arch cobblestones
 x 27
 y 21
 end
-arch mountain
-elevation 6029
+arch cobblestones
 x 27
 y 22
 end
@@ -6995,8 +6959,7 @@ elevation 3463
 x 28
 y 18
 end
-arch hills_rocky
-elevation 4184
+arch cobblestones
 x 28
 y 19
 end
@@ -7243,8 +7206,7 @@ elevation 2837
 x 29
 y 18
 end
-arch hills
-elevation 2012
+arch cobblestones
 x 29
 y 19
 end
@@ -7491,8 +7453,7 @@ elevation 2622
 x 30
 y 18
 end
-arch hills
-elevation 2788
+arch cobblestones
 x 30
 y 19
 end
@@ -7739,8 +7700,7 @@ elevation 2700
 x 31
 y 18
 end
-arch hills_rocky
-elevation 3715
+arch cobblestones
 x 31
 y 19
 end
@@ -7987,8 +7947,7 @@ elevation 2617
 x 32
 y 18
 end
-arch hills_rocky
-elevation 3698
+arch cobblestones
 x 32
 y 19
 end
@@ -8235,8 +8194,7 @@ elevation 2266
 x 33
 y 18
 end
-arch woods_2
-elevation 2659
+arch cobblestones
 x 33
 y 19
 end
@@ -8483,8 +8441,7 @@ elevation 2138
 x 34
 y 18
 end
-arch hills
-elevation 1757
+arch cobblestones
 x 34
 y 19
 end
@@ -8731,8 +8688,7 @@ elevation 2124
 x 35
 y 18
 end
-arch hills
-elevation 2279
+arch cobblestones
 x 35
 y 19
 end
@@ -8979,8 +8935,7 @@ elevation 1967
 x 36
 y 18
 end
-arch hills
-elevation 2140
+arch cobblestones
 x 36
 y 19
 end
@@ -9227,8 +9182,7 @@ elevation 1258
 x 37
 y 18
 end
-arch woods_2
-elevation 1998
+arch cobblestones
 x 37
 y 19
 end
@@ -9475,8 +9429,7 @@ elevation 734
 x 38
 y 18
 end
-arch hills
-elevation 1765
+arch cobblestones
 x 38
 y 19
 end
@@ -9723,7 +9676,7 @@ elevation 899
 x 39
 y 18
 end
-arch desert
+arch cobblestones
 x 39
 y 19
 end
@@ -9970,7 +9923,7 @@ elevation 206
 x 40
 y 18
 end
-arch desert
+arch cobblestones
 x 40
 y 19
 end
@@ -10217,8 +10170,7 @@ elevation 213
 x 41
 y 18
 end
-arch desert
-elevation 815
+arch cobblestones
 x 41
 y 19
 end
@@ -10465,8 +10417,7 @@ elevation 11
 x 42
 y 18
 end
-arch brush
-elevation 823
+arch cobblestones
 x 42
 y 19
 end
@@ -10713,8 +10664,7 @@ elevation 258
 x 43
 y 18
 end
-arch hills
-elevation 1006
+arch cobblestones
 x 43
 y 19
 end
@@ -10961,8 +10911,7 @@ elevation 859
 x 44
 y 18
 end
-arch woods_2
-elevation 1114
+arch cobblestones
 x 44
 y 19
 end
@@ -11209,8 +11158,7 @@ elevation 1107
 x 45
 y 18
 end
-arch hills
-elevation 1211
+arch cobblestones
 x 45
 y 19
 end
@@ -11457,8 +11405,7 @@ elevation 1018
 x 46
 y 18
 end
-arch hills
-elevation 1190
+arch cobblestones
 x 46
 y 19
 end
@@ -11704,8 +11651,7 @@ elevation 666
 x 47
 y 18
 end
-arch woods_2
-elevation 1139
+arch cobblestones
 x 47
 y 19
 end
@@ -11951,8 +11897,7 @@ elevation 1686
 x 48
 y 18
 end
-arch hills
-elevation 1860
+arch cobblestones
 x 48
 y 19
 end
@@ -12197,8 +12142,7 @@ elevation 2155
 x 49
 y 18
 end
-arch hills
-elevation 2067
+arch cobblestones
 x 49
 y 19
 end

@@ -1,11 +1,14 @@
 arch map
 name world_107_122
-reset_timeout 7200
-difficulty 1
+msg
+
+endmsg
 width 50
 height 50
 enter_x 1
 enter_y 1
+reset_timeout 7200
+difficulty 1
 outdoor 1
 tile_path_1 world_107_121
 tile_path_2 world_108_122
@@ -1283,13 +1286,6 @@ arch hills_rocky
 x 6
 y 31
 end
-arch fort
-slaying /brest/brittany/jessy.1
-hp 16
-sp 29
-x 6
-y 31
-end
 arch hills_rocky
 x 6
 y 32
@@ -2559,7 +2555,7 @@ end
 arch flagstone
 x 13
 end
-arch woods
+arch flagstone
 x 13
 y 1
 end
@@ -2762,7 +2758,7 @@ arch flagstone
 x 14
 y 1
 end
-arch tree
+arch flagstone
 x 14
 y 2
 end
@@ -2965,7 +2961,7 @@ arch flagstone
 x 15
 y 2
 end
-arch tree
+arch flagstone
 x 15
 y 3
 end
@@ -3168,7 +3164,7 @@ arch flagstone
 x 16
 y 3
 end
-arch jungle_1
+arch flagstone
 x 16
 y 4
 end
@@ -3300,39 +3296,39 @@ arch evergreen
 x 16
 y 36
 end
-arch hills
+arch flagstone
 x 16
 y 37
 end
-arch hills
+arch flagstone
 x 16
 y 38
 end
-arch hills
+arch flagstone
 x 16
 y 39
 end
-arch evergreen
+arch flagstone
 x 16
 y 40
 end
-arch hills
+arch flagstone
 x 16
 y 41
 end
-arch hills
+arch flagstone
 x 16
 y 42
 end
-arch hills
+arch flagstone
 x 16
 y 43
 end
-arch hills
+arch flagstone
 x 16
 y 44
 end
-arch hills
+arch flagstone
 x 16
 y 45
 end
@@ -3367,11 +3363,11 @@ arch flagstone
 x 17
 y 3
 end
-arch desert
+arch flagstone
 x 17
 y 4
 end
-arch brush
+arch flagstone
 x 17
 y 5
 end
@@ -3495,7 +3491,7 @@ arch hills
 x 17
 y 35
 end
-arch hills
+arch flagstone
 x 17
 y 36
 end
@@ -3535,7 +3531,7 @@ arch flagstone
 x 17
 y 45
 end
-arch hills
+arch flagstone
 x 17
 y 46
 end
@@ -3558,11 +3554,11 @@ arch grass
 x 18
 y 1
 end
-arch desert
+arch swamp
 x 18
 y 2
 end
-arch flagstone
+arch swamp
 x 18
 y 3
 end
@@ -3574,7 +3570,7 @@ arch flagstone
 x 18
 y 5
 end
-arch hills
+arch flagstone
 x 18
 y 6
 end
@@ -3678,7 +3674,7 @@ arch mountain2
 x 18
 y 31
 end
-arch mountain
+arch mountain2
 x 18
 y 32
 end
@@ -3738,15 +3734,15 @@ arch flagstone
 x 18
 y 46
 end
-arch hills
+arch flagstone
 x 18
 y 47
 end
-arch hills
+arch flagstone
 x 18
 y 48
 end
-arch hills
+arch flagstone
 x 18
 y 49
 end
@@ -3773,7 +3769,7 @@ arch flagstone
 x 19
 y 5
 end
-arch hills
+arch flagstone
 x 19
 y 6
 end
@@ -3877,19 +3873,19 @@ arch mountain
 x 19
 y 31
 end
-arch mountain
+arch mountain2
 x 19
 y 32
 end
-arch mountain
+arch mountain2
 x 19
 y 33
 end
-arch mountain
+arch mountain2
 x 19
 y 34
 end
-arch mountain
+arch mountain2
 x 19
 y 35
 end
@@ -3972,7 +3968,7 @@ arch flagstone
 x 20
 y 5
 end
-arch hills
+arch flagstone
 x 20
 y 6
 end
@@ -4076,11 +4072,11 @@ arch mountain
 x 20
 y 31
 end
-arch mountain
+arch mountain2
 x 20
 y 32
 end
-arch mountain
+arch mountain2
 x 20
 y 33
 end
@@ -4100,7 +4096,7 @@ arch mountain
 x 20
 y 37
 end
-arch mountain
+arch mountain2
 x 20
 y 38
 end
@@ -4171,7 +4167,7 @@ arch flagstone
 x 21
 y 5
 end
-arch hills
+arch flagstone
 x 21
 y 6
 end
@@ -4263,7 +4259,7 @@ arch mountain2
 x 21
 y 28
 end
-arch mountain
+arch mountain2
 x 21
 y 29
 end
@@ -4279,11 +4275,11 @@ arch mountain
 x 21
 y 32
 end
-arch mountain
+arch mountain2
 x 21
 y 33
 end
-arch mountain
+arch mountain2
 x 21
 y 34
 end
@@ -4299,7 +4295,7 @@ arch woods
 x 21
 y 37
 end
-arch mountain
+arch mountain2
 x 21
 y 38
 end
@@ -4370,7 +4366,7 @@ arch flagstone
 x 22
 y 5
 end
-arch hills
+arch flagstone
 x 22
 y 6
 end
@@ -4458,7 +4454,7 @@ arch wasteland
 x 22
 y 27
 end
-arch mountain
+arch mountain2
 x 22
 y 28
 end
@@ -4498,7 +4494,7 @@ arch mountain
 x 22
 y 37
 end
-arch mountain
+arch mountain2
 x 22
 y 38
 end
@@ -4657,7 +4653,7 @@ arch mountain2
 x 23
 y 27
 end
-arch hills
+arch mountain2
 x 23
 y 28
 end
@@ -4689,11 +4685,11 @@ arch mountain
 x 23
 y 35
 end
-arch mountain
+arch mountain2
 x 23
 y 36
 end
-arch mountain
+arch mountain2
 x 23
 y 37
 end
@@ -4764,47 +4760,47 @@ arch swamp
 x 24
 y 4
 end
-arch tree
+arch flagstone
 x 24
 y 5
 end
-arch brush
+arch flagstone
 x 24
 y 6
 end
-arch tree
+arch flagstone
 x 24
 y 7
 end
-arch tree
+arch flagstone
 x 24
 y 8
 end
-arch brush
+arch flagstone
 x 24
 y 9
 end
-arch tree
+arch flagstone
 x 24
 y 10
 end
-arch hills
+arch flagstone
 x 24
 y 11
 end
-arch hills
+arch flagstone
 x 24
 y 12
 end
-arch mountain
+arch flagstone
 x 24
 y 13
 end
-arch mountain
+arch flagstone
 x 24
 y 14
 end
-arch hills
+arch flagstone
 x 24
 y 15
 end
@@ -4852,7 +4848,7 @@ arch mountain2
 x 24
 y 26
 end
-arch mountain
+arch mountain2
 x 24
 y 27
 end
@@ -4864,7 +4860,7 @@ arch hills
 x 24
 y 29
 end
-arch tree
+arch flagstone
 x 24
 y 30
 end
@@ -4872,7 +4868,7 @@ arch flagstone
 x 24
 y 31
 end
-arch jungle_1
+arch flagstone
 x 24
 y 32
 end
@@ -4896,7 +4892,7 @@ arch mountain
 x 24
 y 37
 end
-arch mountain
+arch mountain2
 x 24
 y 38
 end
@@ -5250,19 +5246,19 @@ arch flagstone
 x 26
 y 26
 end
-arch hills
+arch flagstone
 x 26
 y 27
 end
-arch hills
+arch flagstone
 x 26
 y 28
 end
-arch hills_rocky
+arch flagstone
 x 26
 y 29
 end
-arch hills
+arch flagstone
 x 26
 y 30
 end
@@ -9972,4 +9968,11 @@ end
 arch mountain
 x 49
 y 49
+end
+arch fort
+slaying /brest/brittany/jessy.1
+hp 16
+sp 29
+x 6
+y 31
 end

@@ -6888,8 +6888,7 @@ elevation 6634
 x 27
 y 40
 end
-arch mountain
-elevation 6374
+arch mountain_cave2
 x 27
 y 41
 end
@@ -6898,8 +6897,16 @@ elevation 4403
 x 27
 y 42
 end
+arch dirtroad_1_1
+x 27
+y 42
+end
 arch steppe
 elevation 4657
+x 27
+y 43
+end
+arch dirtroad_2_1_1
 x 27
 y 43
 end
@@ -6908,8 +6915,16 @@ elevation 5881
 x 27
 y 44
 end
+arch dirtroad_2_1_1
+x 27
+y 44
+end
 arch mountain
 elevation 6440
+x 27
+y 45
+end
+arch dirtroad_2_2_1
 x 27
 y 45
 end
@@ -7162,6 +7177,10 @@ elevation 5647
 x 28
 y 45
 end
+arch dirtroad_2_1_2
+x 28
+y 45
+end
 arch steppe
 elevation 4886
 x 28
@@ -7401,13 +7420,20 @@ elevation 5926
 x 29
 y 43
 end
-arch mountain
-elevation 5353
+arch dirtroad_1_1
+x 29
+y 44
+end
+arch mountain_cave2
 x 29
 y 44
 end
 arch hills
 elevation 3634
+x 29
+y 45
+end
+arch dirtroad_3_1
 x 29
 y 45
 end
@@ -7660,6 +7686,10 @@ elevation 4723
 x 30
 y 45
 end
+arch dirtroad_2_1_2
+x 30
+y 45
+end
 arch mountain
 elevation 5940
 x 30
@@ -7906,6 +7936,10 @@ y 44
 end
 arch mountain
 elevation 6502
+x 31
+y 45
+end
+arch dirtroad_2_1_2
 x 31
 y 45
 end
@@ -8158,8 +8192,16 @@ elevation 6758
 x 32
 y 45
 end
+arch dirtroad_2_2_3
+x 32
+y 45
+end
 arch steppe
 elevation 4305
+x 32
+y 46
+end
+arch dirtroad_2_2_1
 x 32
 y 46
 end
@@ -8412,6 +8454,10 @@ elevation 4955
 x 33
 y 46
 end
+arch dirtroad_2_1_2
+x 33
+y 46
+end
 arch mountain
 elevation 5102
 x 33
@@ -8661,6 +8707,10 @@ elevation 4846
 x 34
 y 46
 end
+arch dirtroad_2_1_2
+x 34
+y 46
+end
 arch hills
 elevation 4227
 x 34
@@ -8880,13 +8930,13 @@ elevation 2871
 x 35
 y 40
 end
-arch steppe
-elevation 4137
+arch hills
+elevation 2871
 x 35
 y 41
 end
-arch steppe
-elevation 4620
+arch hills
+elevation 2871
 x 35
 y 42
 end
@@ -8906,7 +8956,11 @@ x 35
 y 45
 end
 arch hills
-elevation 3674
+elevation 3236
+x 35
+y 46
+end
+arch dirtroad_2_1_2
 x 35
 y 46
 end
@@ -9119,23 +9173,19 @@ elevation 3414
 x 36
 y 38
 end
-arch steppe
-elevation 3463
+arch farmland
 x 36
 y 39
 end
-arch steppe
-elevation 3642
+arch farmland
 x 36
 y 40
 end
-arch hills
-elevation 3326
+arch farmland
 x 36
 y 41
 end
-arch hills
-elevation 2767
+arch farmland
 x 36
 y 42
 end
@@ -9149,13 +9199,25 @@ elevation 3111
 x 36
 y 44
 end
+arch dirtroad_2_2_2
+x 36
+y 44
+end
 arch hills
 elevation 3236
 x 36
 y 45
 end
+arch dirtroad_2_1_1
+x 36
+y 45
+end
 arch hills
-elevation 1839
+elevation 3236
+x 36
+y 46
+end
+arch dirtroad_2_2_4
 x 36
 y 46
 end
@@ -9368,23 +9430,19 @@ elevation 3956
 x 37
 y 38
 end
-arch hills
-elevation 3611
+arch farmland
 x 37
 y 39
 end
-arch hills
-elevation 3886
+arch farmland
 x 37
 y 40
 end
-arch steppe
-elevation 3724
+arch farmland
 x 37
 y 41
 end
-arch steppe
-elevation 3648
+arch farmland
 x 37
 y 42
 end
@@ -9398,13 +9456,17 @@ elevation 3341
 x 37
 y 44
 end
+arch dirtroad_2_1_2
+x 37
+y 44
+end
 arch woods
 elevation 2620
 x 37
 y 45
 end
 arch hills
-elevation 1910
+elevation 3236
 x 37
 y 46
 end
@@ -9647,13 +9709,17 @@ elevation 2971
 x 38
 y 44
 end
+arch dirtroad_2_1_2
+x 38
+y 44
+end
 arch woods
 elevation 2402
 x 38
 y 45
 end
-arch woods
-elevation 1350
+arch hills
+elevation 3236
 x 38
 y 46
 end
@@ -9893,6 +9959,10 @@ y 43
 end
 arch hills
 elevation 2108
+x 39
+y 44
+end
+arch dirtroad_2_1_2
 x 39
 y 44
 end
@@ -10136,37 +10206,41 @@ x 40
 y 42
 end
 arch hills
-elevation 2066
+elevation 3423
 x 40
 y 43
 end
-arch woods
-elevation 2283
+arch hills
+elevation 2985
 x 40
 y 44
 end
-arch woods
-elevation 2134
+arch dirtroad_1_3
+x 40
+y 44
+end
+arch hills
+elevation 2707
 x 40
 y 45
 end
-arch woods
-elevation 1909
+arch tower_tob
+x 40
+y 45
+end
+arch cobblestones
 x 40
 y 46
 end
-arch hills
-elevation 1521
+arch cobblestones
 x 40
 y 47
 end
-arch hills
-elevation 1140
+arch cobblestones
 x 40
 y 48
 end
-arch evergreen
-elevation 1698
+arch cobblestones
 x 40
 y 49
 end
@@ -10638,6 +10712,10 @@ elevation 2135
 x 42
 y 44
 end
+arch dirtroad_1_4
+x 42
+y 44
+end
 arch woods_2
 elevation 1871
 x 42
@@ -10887,6 +10965,10 @@ elevation 2165
 x 43
 y 44
 end
+arch dirtroad_2_1_2
+x 43
+y 44
+end
 arch hills
 elevation 1791
 x 43
@@ -10904,6 +10986,10 @@ y 47
 end
 arch hills
 elevation 2768
+x 43
+y 48
+end
+arch woodhouse
 x 43
 y 48
 end
@@ -11136,8 +11222,16 @@ elevation 2985
 x 44
 y 44
 end
+arch dirtroad_2_2_3
+x 44
+y 44
+end
 arch hills
 elevation 2707
+x 44
+y 45
+end
+arch dirtroad_2_1_1
 x 44
 y 45
 end
@@ -11146,8 +11240,16 @@ elevation 2527
 x 44
 y 46
 end
+arch dirtroad_2_1_1
+x 44
+y 46
+end
 arch hills
 elevation 3098
+x 44
+y 47
+end
+arch dirtroad_1_2
 x 44
 y 47
 end
@@ -11156,8 +11258,16 @@ elevation 3514
 x 44
 y 48
 end
+arch woodhouse
+x 44
+y 48
+end
 arch hills
 elevation 4026
+x 44
+y 49
+end
+arch woodhouse
 x 44
 y 49
 end
@@ -11380,33 +11490,31 @@ elevation 3973
 x 45
 y 43
 end
-arch steppe
-elevation 3727
+arch hills
 x 45
 y 44
 end
-arch steppe
-elevation 3516
+arch s_shop2
+x 45
+y 44
+end
+arch hills
 x 45
 y 45
 end
-arch steppe
-elevation 3601
+arch hills
 x 45
 y 46
 end
-arch steppe
-elevation 3860
+arch hills
 x 45
 y 47
 end
-arch hills
-elevation 4333
+arch farmland
 x 45
 y 48
 end
-arch hills
-elevation 4747
+arch farmland
 x 45
 y 49
 end
@@ -11634,28 +11742,23 @@ elevation 4222
 x 46
 y 44
 end
-arch steppe
-elevation 4044
+arch hills
 x 46
 y 45
 end
-arch steppe
-elevation 3597
+arch hills
 x 46
 y 46
 end
-arch steppe
-elevation 4377
+arch hills
 x 46
 y 47
 end
-arch hills
-elevation 4562
+arch farmland
 x 46
 y 48
 end
-arch hills
-elevation 4658
+arch farmland
 x 46
 y 49
 end
@@ -11898,13 +12001,11 @@ elevation 4312
 x 47
 y 47
 end
-arch hills
-elevation 4149
+arch farmland
 x 47
 y 48
 end
-arch hills
-elevation 4033
+arch farmland
 x 47
 y 49
 end
@@ -12405,4 +12506,20 @@ arch steppe
 elevation 3658
 x 49
 y 49
+end
+arch barrack_up
+x 35
+y 43
+end
+arch barrack_long
+x 39
+y 43
+end
+arch inn
+x 42
+y 43
+end
+arch house_up
+x 45
+y 45
 end

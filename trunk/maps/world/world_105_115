@@ -8439,11 +8439,15 @@ arch grass
 x 22
 y 34
 end
-arch evergreen
+arch grass
 x 22
 y 35
 end
-arch hills_rocky
+arch ytree_2
+x 22
+y 35
+end
+arch cobblestones
 x 22
 y 36
 end
@@ -8451,7 +8455,7 @@ arch cobblestones
 x 22
 y 37
 end
-arch grass
+arch cobblestones
 x 22
 y 38
 end
@@ -8459,11 +8463,15 @@ arch grass
 x 22
 y 39
 end
-arch farmland
+arch ytree_2
+x 22
+y 39
+end
+arch grass
 x 22
 y 40
 end
-arch farmland
+arch grass
 x 22
 y 41
 end
@@ -8483,11 +8491,11 @@ arch farmland
 x 22
 y 45
 end
-arch brush
+arch farmland
 x 22
 y 46
 end
-arch grass
+arch farmland
 x 22
 y 47
 end
@@ -8638,11 +8646,11 @@ arch evergreen
 x 23
 y 34
 end
-arch brush
+arch grass
 x 23
 y 35
 end
-arch evergreen
+arch cobblestones
 x 23
 y 36
 end
@@ -8650,7 +8658,7 @@ arch cobblestones
 x 23
 y 37
 end
-arch hills
+arch cobblestones
 x 23
 y 38
 end
@@ -8658,11 +8666,11 @@ arch grass
 x 23
 y 39
 end
-arch farmland
+arch grass
 x 23
 y 40
 end
-arch farmland
+arch grass
 x 23
 y 41
 end
@@ -8682,11 +8690,11 @@ arch farmland
 x 23
 y 45
 end
-arch brush
+arch farmland
 x 23
 y 46
 end
-arch brush
+arch farmland
 x 23
 y 47
 end
@@ -8837,11 +8845,15 @@ arch hills_rocky
 x 24
 y 34
 end
-arch brush
+arch grass
 x 24
 y 35
 end
-arch brush
+arch ytree_2
+x 24
+y 35
+end
+arch cobblestones
 x 24
 y 36
 end
@@ -8849,7 +8861,7 @@ arch cobblestones
 x 24
 y 37
 end
-arch grass
+arch cobblestones
 x 24
 y 38
 end
@@ -8857,11 +8869,15 @@ arch grass
 x 24
 y 39
 end
-arch farmland
+arch ytree_2
+x 24
+y 39
+end
+arch grass
 x 24
 y 40
 end
-arch farmland
+arch grass
 x 24
 y 41
 end
@@ -8881,11 +8897,11 @@ arch farmland
 x 24
 y 45
 end
-arch grass
+arch farmland
 x 24
 y 46
 end
-arch brush
+arch farmland
 x 24
 y 47
 end
@@ -9036,11 +9052,11 @@ arch hills_rocky
 x 25
 y 34
 end
-arch tree
+arch grass
 x 25
 y 35
 end
-arch brush
+arch cobblestones
 x 25
 y 36
 end
@@ -9048,15 +9064,15 @@ arch cobblestones
 x 25
 y 37
 end
-arch woods_2
+arch cobblestones
 x 25
 y 38
 end
-arch woods_2
+arch grass
 x 25
 y 39
 end
-arch jungle_1
+arch grass
 x 25
 y 40
 end
@@ -9235,11 +9251,15 @@ arch tree
 x 26
 y 34
 end
-arch hills
+arch grass
 x 26
 y 35
 end
-arch hills_rocky
+arch ytree_2
+x 26
+y 35
+end
+arch cobblestones
 x 26
 y 36
 end
@@ -9247,11 +9267,15 @@ arch cobblestones
 x 26
 y 37
 end
-arch woods_2
+arch cobblestones
 x 26
 y 38
 end
-arch grassdark
+arch grass
+x 26
+y 39
+end
+arch ytree_2
 x 26
 y 39
 end
@@ -9426,11 +9450,11 @@ arch tree
 x 27
 y 34
 end
-arch brush
+arch grass
 x 27
 y 35
 end
-arch woods_2
+arch cobblestones
 x 27
 y 36
 end
@@ -9438,11 +9462,11 @@ arch cobblestones
 x 27
 y 37
 end
-arch grassdark
+arch cobblestones
 x 27
 y 38
 end
-arch evergreen
+arch grass
 x 27
 y 39
 end
@@ -9617,11 +9641,15 @@ arch tree
 x 28
 y 34
 end
-arch brush
+arch grass
 x 28
 y 35
 end
-arch brush
+arch ytree_2
+x 28
+y 35
+end
+arch cobblestones
 x 28
 y 36
 end
@@ -9629,11 +9657,15 @@ arch cobblestones
 x 28
 y 37
 end
-arch evergreen
+arch cobblestones
 x 28
 y 38
 end
-arch evergreen
+arch grass
+x 28
+y 39
+end
+arch ytree_2
 x 28
 y 39
 end
@@ -9816,11 +9848,11 @@ arch hills_rocky
 x 29
 y 34
 end
-arch brush
+arch grass
 x 29
 y 35
 end
-arch brush
+arch cobblestones
 x 29
 y 36
 end
@@ -9828,11 +9860,11 @@ arch cobblestones
 x 29
 y 37
 end
-arch evergreen
+arch cobblestones
 x 29
 y 38
 end
-arch woods_3
+arch grass
 x 29
 y 39
 end
@@ -10018,11 +10050,15 @@ arch tree
 x 30
 y 34
 end
-arch evergreen
+arch grass
 x 30
 y 35
 end
-arch woods_2
+arch ytree_2
+x 30
+y 35
+end
+arch cobblestones
 x 30
 y 36
 end
@@ -10030,11 +10066,15 @@ arch cobblestones
 x 30
 y 37
 end
-arch woods_3
+arch cobblestones
 x 30
 y 38
 end
-arch woods_2
+arch grass
+x 30
+y 39
+end
+arch ytree_2
 x 30
 y 39
 end
@@ -10217,11 +10257,16 @@ arch tree
 x 31
 y 34
 end
-arch evergreen
+arch grass
 x 31
 y 35
 end
-arch woods_2
+arch tower_tob
+name guard tower
+x 31
+y 35
+end
+arch cobblestones
 x 31
 y 36
 end
@@ -10229,15 +10274,11 @@ arch cobblestones
 x 31
 y 37
 end
-arch woods_2
+arch cobblestones
 x 31
 y 38
 end
 arch brush
-x 31
-y 39
-end
-arch woods_2
 x 31
 y 39
 end
@@ -10412,30 +10453,19 @@ arch tree
 x 32
 y 32
 end
-arch jungle_1
+arch tree
 x 32
 y 33
 end
-arch evergreen
+arch tree
 x 32
 y 34
 end
-arch woods_2
+arch grass
 x 32
 y 35
 end
-arch brush
-x 32
-y 36
-end
-arch sign_w
-name Scorn City Limits
-msg
-Santo Dominion - 350 miles north
-Brest - 518 miles south
-Navar City - 948 miles east
-endmsg
-name_pl Scorn City Limits
+arch cobblestones
 x 32
 y 36
 end
@@ -10443,7 +10473,7 @@ arch cobblestones
 x 32
 y 37
 end
-arch flagstone
+arch cobblestones
 x 32
 y 38
 end
@@ -10479,15 +10509,15 @@ arch flagstone
 x 32
 y 46
 end
-arch tree
+arch flagstone
 x 32
 y 47
 end
-arch brush
+arch flagstone
 x 32
 y 48
 end
-arch evergreen
+arch flagstone
 x 32
 y 49
 end
@@ -10628,23 +10658,34 @@ arch tree
 x 33
 y 30
 end
-arch cobblestones
+arch brush
 x 33
 y 31
 end
-arch cobblestones
+arch tree
 x 33
 y 32
 end
-arch cobblestones
+arch tree
 x 33
 y 33
 end
-arch cobblestones
+arch brush
 x 33
 y 34
 end
-arch cobblestones
+arch brush
+x 33
+y 35
+end
+arch sign_w
+name Scorn City Limits
+msg
+Santo Dominion - 350 miles north
+Brest - 518 miles south
+Navar City - 948 miles east
+endmsg
+name_pl Scorn City Limits
 x 33
 y 35
 end
@@ -10656,43 +10697,43 @@ arch cobblestones
 x 33
 y 37
 end
-arch woods_2
+arch cobblestones
 x 33
 y 38
 end
-arch hills_rocky
+arch flagstone
 x 33
 y 39
 end
-arch brush
+arch flagstone
 x 33
 y 40
 end
-arch tree
+arch flagstone
 x 33
 y 41
 end
-arch woods_2
+arch flagstone
 x 33
 y 42
 end
-arch evergreen
+arch flagstone
 x 33
 y 43
 end
-arch tree
+arch flagstone
 x 33
 y 44
 end
-arch tree
+arch flagstone
 x 33
 y 45
 end
-arch evergreen
+arch flagstone
 x 33
 y 46
 end
-arch evergreen
+arch flagstone
 x 33
 y 47
 end
@@ -10819,11 +10860,11 @@ arch jungle_1
 x 34
 y 28
 end
-arch tree
+arch cobblestones
 x 34
 y 29
 end
-arch tree
+arch cobblestones
 x 34
 y 30
 end
@@ -10831,23 +10872,23 @@ arch cobblestones
 x 34
 y 31
 end
-arch brush
+arch cobblestones
 x 34
 y 32
 end
-arch desert
+arch cobblestones
 x 34
 y 33
 end
-arch tree
+arch cobblestones
 x 34
 y 34
 end
-arch hills
+arch cobblestones
 x 34
 y 35
 end
-arch tree
+arch cobblestones
 x 34
 y 36
 end
@@ -10859,11 +10900,11 @@ arch cobblestones
 x 34
 y 38
 end
-arch hills
+arch cobblestones
 x 34
 y 39
 end
-arch brush
+arch cobblestones
 x 34
 y 40
 end
@@ -11018,7 +11059,7 @@ arch jungle_1
 x 35
 y 28
 end
-arch tree
+arch cobblestones
 x 35
 y 29
 end
@@ -11030,27 +11071,27 @@ arch cobblestones
 x 35
 y 31
 end
-arch desert
+arch cobblestones
 x 35
 y 32
 end
-arch desert
+arch cobblestones
 x 35
 y 33
 end
-arch tree
+arch cobblestones
 x 35
 y 34
 end
-arch hills
+arch cobblestones
 x 35
 y 35
 end
-arch tree
+arch cobblestones
 x 35
 y 36
 end
-arch evergreen
+arch cobblestones
 x 35
 y 37
 end
@@ -11058,11 +11099,11 @@ arch cobblestones
 x 35
 y 38
 end
-arch evergreen
+arch cobblestones
 x 35
 y 39
 end
-arch evergreen
+arch cobblestones
 x 35
 y 40
 end
@@ -11217,7 +11258,7 @@ arch desert
 x 36
 y 28
 end
-arch woods
+arch cobblestones
 x 36
 y 29
 end
@@ -11225,7 +11266,7 @@ arch cobblestones
 x 36
 y 30
 end
-arch jungle_1
+arch tree
 x 36
 y 31
 end
@@ -11253,7 +11294,7 @@ arch jungle_2
 x 36
 y 37
 end
-arch cobblestones
+arch jungle_1
 x 36
 y 38
 end
@@ -11261,7 +11302,7 @@ arch cobblestones
 x 36
 y 39
 end
-arch grassmedium
+arch cobblestones
 x 36
 y 40
 end
@@ -11392,31 +11433,31 @@ arch jungle_1
 x 37
 y 22
 end
-arch tree
+arch cobblestones
 x 37
 y 23
 end
-arch brush
+arch cobblestones
 x 37
 y 24
 end
-arch desert
+arch cobblestones
 x 37
 y 25
 end
-arch brush
+arch cobblestones
 x 37
 y 26
 end
-arch brush
+arch cobblestones
 x 37
 y 27
 end
-arch brush
+arch cobblestones
 x 37
 y 28
 end
-arch desert
+arch cobblestones
 x 37
 y 29
 end
@@ -11587,7 +11628,7 @@ arch tree
 x 38
 y 21
 end
-arch jungle_1
+arch cobblestones
 x 38
 y 22
 end
@@ -11655,7 +11696,7 @@ arch hills_rocky
 x 38
 y 38
 end
-arch hills_rocky
+arch cobblestones
 x 38
 y 39
 end
@@ -11663,11 +11704,11 @@ arch cobblestones
 x 38
 y 40
 end
-arch jungle_1
+arch cobblestones
 x 38
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 38
 y 42
 end
@@ -11782,7 +11823,7 @@ arch tree
 x 39
 y 20
 end
-arch brush
+arch cobblestones
 x 39
 y 21
 end
@@ -11794,7 +11835,7 @@ arch cobblestones
 x 39
 y 23
 end
-arch brush
+arch tree
 x 39
 y 24
 end
@@ -11854,7 +11895,7 @@ arch hills_rocky
 x 39
 y 38
 end
-arch hills_rocky
+arch cobblestones
 x 39
 y 39
 end
@@ -11866,7 +11907,7 @@ arch cobblestones
 x 39
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 39
 y 42
 end
@@ -11977,7 +12018,7 @@ arch tree
 x 40
 y 19
 end
-arch tree
+arch cobblestones
 x 40
 y 20
 end
@@ -12057,7 +12098,7 @@ arch hills_rocky
 x 40
 y 39
 end
-arch tree
+arch brush
 x 40
 y 40
 end
@@ -12065,7 +12106,7 @@ arch cobblestones
 x 40
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 40
 y 42
 end
@@ -12168,11 +12209,11 @@ arch brush
 x 41
 y 17
 end
-arch brush
+arch tree
 x 41
 y 18
 end
-arch tree
+arch cobblestones
 x 41
 y 19
 end
@@ -12184,7 +12225,7 @@ arch cobblestones
 x 41
 y 21
 end
-arch tree
+arch brush
 x 41
 y 22
 end
@@ -12264,7 +12305,7 @@ arch cobblestones
 x 41
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 41
 y 42
 end
@@ -12363,7 +12404,7 @@ arch tree
 x 42
 y 16
 end
-arch tree
+arch brush
 x 42
 y 17
 end
@@ -12379,7 +12420,7 @@ arch cobblestones
 x 42
 y 20
 end
-arch tree
+arch brush
 x 42
 y 21
 end
@@ -12463,7 +12504,7 @@ arch cobblestones
 x 42
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 42
 y 42
 end
@@ -12554,11 +12595,11 @@ arch hills
 x 43
 y 14
 end
-arch hills
+arch cobblestones
 x 43
 y 15
 end
-arch hills
+arch cobblestones
 x 43
 y 16
 end
@@ -12570,7 +12611,7 @@ arch cobblestones
 x 43
 y 18
 end
-arch tree
+arch cobblestones
 x 43
 y 19
 end
@@ -12662,7 +12703,7 @@ arch cobblestones
 x 43
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 43
 y 42
 end
@@ -12729,27 +12770,27 @@ arch tree
 x 44
 y 8
 end
-arch hills
+arch cobblestones
 x 44
 y 9
 end
-arch hills
+arch cobblestones
 x 44
 y 10
 end
-arch hills
+arch cobblestones
 x 44
 y 11
 end
-arch hills
+arch cobblestones
 x 44
 y 12
 end
-arch hills
+arch cobblestones
 x 44
 y 13
 end
-arch hills
+arch cobblestones
 x 44
 y 14
 end
@@ -12765,7 +12806,7 @@ arch cobblestones
 x 44
 y 17
 end
-arch hills
+arch cobblestones
 x 44
 y 18
 end
@@ -12861,7 +12902,7 @@ arch cobblestones
 x 44
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 44
 y 42
 end
@@ -12908,15 +12949,15 @@ arch hills
 x 45
 y 3
 end
-arch tree
+arch cobblestones
 x 45
 y 4
 end
-arch tree
+arch cobblestones
 x 45
 y 5
 end
-arch tree
+arch cobblestones
 x 45
 y 6
 end
@@ -12956,7 +12997,7 @@ arch cobblestones
 x 45
 y 15
 end
-arch hills
+arch cobblestones
 x 45
 y 16
 end
@@ -13060,7 +13101,7 @@ arch cobblestones
 x 45
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 45
 y 42
 end
@@ -13092,22 +13133,22 @@ arch jungle_1
 x 45
 y 49
 end
-arch tree
+arch cobblestones
 x 46
 end
-arch evergreens
+arch cobblestones
 x 46
 y 1
 end
-arch hills
+arch cobblestones
 x 46
 y 2
 end
-arch hills
+arch cobblestones
 x 46
 y 3
 end
-arch hills
+arch cobblestones
 x 46
 y 4
 end
@@ -13123,15 +13164,15 @@ arch cobblestones
 x 46
 y 7
 end
-arch hills
+arch cobblestones
 x 46
 y 8
 end
-arch hills
+arch cobblestones
 x 46
 y 9
 end
-arch hills
+arch cobblestones
 x 46
 y 10
 end
@@ -13259,7 +13300,7 @@ arch cobblestones
 x 46
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 46
 y 42
 end
@@ -13458,7 +13499,7 @@ arch cobblestones
 x 47
 y 41
 end
-arch hills_rocky
+arch cobblestones
 x 47
 y 42
 end
@@ -13657,7 +13698,7 @@ arch cobblestones
 x 48
 y 41
 end
-arch tree
+arch cobblestones
 x 48
 y 42
 end
@@ -13856,7 +13897,7 @@ arch cobblestones
 x 49
 y 41
 end
-arch jungle_1
+arch cobblestones
 x 49
 y 42
 end
@@ -14188,7 +14229,7 @@ y 34
 end
 arch farmhouse
 x 23
-y 39
+y 41
 end
 arch mountain_2
 x 27
