@@ -42,6 +42,7 @@ resist_electricity 30
 resist_cold 30
 resist_confusion -50
 attacktype 262145
+weapontype 1
 path_denied 2304
 value 1000000
 magicmap black

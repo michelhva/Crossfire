@@ -26,5 +26,6 @@ resist_fire 30
 
 editable 5120
 attacktype 1
+weapontype 1
 magicmap black
 end

@@ -27,6 +27,7 @@ weight 9000
 value 220000
 editable 5120
 attacktype 257
+weapontype 4
 material 2
 magic 3
 magicmap grey

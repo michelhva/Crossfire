@@ -14,5 +14,6 @@ magic 3
 value 150000
 editable 5120
 attacktype 1
+weapontype 1
 magicmap grey
 end

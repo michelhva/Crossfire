@@ -11,4 +11,5 @@ value 45
 editable 1024
 attacktype 1
 magicmap white
+weapontype 1
 end

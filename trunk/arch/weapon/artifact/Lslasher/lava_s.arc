@@ -14,6 +14,7 @@ speed 0.250000
 type 15
 resist_cold 75
 attacktype 5
+weapontype 1
 material 2
 value 220000
 weight 25000

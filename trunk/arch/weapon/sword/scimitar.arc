@@ -13,4 +13,5 @@ can_impale 1
 can_cut 1
 can_parry 1
 attacktype 1
+weapontype 1
 end
