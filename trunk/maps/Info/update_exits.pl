@@ -34,7 +34,7 @@
 # NEW_MAP_OFFX/Y is the modification to the target location in
 # the exit.
 
-$OLD_MAP_NAME[0]="/santo_dominion/town";
+$OLD_MAP_NAME[0]=".*/santo_dominion/town";
 # Many maps are just called 'town', so this is only useful if you know
 # 'town' is really referring to santo dominion.
 #$OLD_MAP_NAME[0]="(/santo_dominion/town|town|.+/town)";
@@ -47,7 +47,7 @@ $NEW_MAP_OFFX[0]=0;
 $NEW_MAP_OFFY[0]=-9;
 
 # Start of scorn updates
-$OLD_MAP_NAME[1]="/city/city";
+$OLD_MAP_NAME[1]=".*/city/city";
 $OLD_MAP_STARTX[1]=10;
 $OLD_MAP_STARTY[1]=0;
 $OLD_MAP_ENDX[1]=100;
@@ -57,7 +57,7 @@ $NEW_MAP_OFFX[1]=-10;
 $NEW_MAP_OFFY[1]=18;
 
 # Start of scorn updates
-$OLD_MAP_NAME[2]="/city/city";
+$OLD_MAP_NAME[2]=".*/city/city";
 $OLD_MAP_STARTX[2]=0;
 $OLD_MAP_STARTY[2]=0;
 $OLD_MAP_ENDX[2]=9;
@@ -123,6 +123,24 @@ $OLD_MAP_ENDY[8]=100;
 $NEW_MAP_NAME[8]="/world/world_109_126";
 $NEW_MAP_OFFX[8]=13;
 $NEW_MAP_OFFY[8]=17;
+
+$OLD_MAP_NAME[9]='(.+/stoneville|stoneville)';
+$OLD_MAP_STARTX[9]=0;
+$OLD_MAP_STARTY[9]=0;
+$OLD_MAP_ENDX[9]=13;
+$OLD_MAP_ENDY[9]=100;
+$NEW_MAP_NAME[9]="/world/world_102_127";
+$NEW_MAP_OFFX[9]=36;
+$NEW_MAP_OFFY[9]=1;
+
+$OLD_MAP_NAME[10]='(.+/stoneville|stoneville)';
+$OLD_MAP_STARTX[10]=14;
+$OLD_MAP_STARTY[10]=0;
+$OLD_MAP_ENDX[10]=100;
+$OLD_MAP_ENDY[10]=100;
+$NEW_MAP_NAME[10]="/world/world_103_127";
+$NEW_MAP_OFFX[10]=-14;
+$NEW_MAP_OFFY[10]=1;
 
 $VERBOSE=0;
 $error=0;
