@@ -8,7 +8,7 @@ msg
   provide the wearer with protection from cold but 
   increase their damage, strength and help heal 
   the body from damage. A mighty gift from Gnarg sent 
-  to aid you in annihilate His enemies.
+  to aid you in annihilating His enemies.
 
 endmsg
 type 104
