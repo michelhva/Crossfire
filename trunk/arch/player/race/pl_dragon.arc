@@ -2,7 +2,7 @@ Object pl_dragon
 name fire hatchling
 race dragon
 randomitems dragon_player_items
-face pl_dragon.151
+face pl_dragon_r.151
 msg
 Dragons are completely different to any
 other race. Their vast size and bizarre 
@@ -26,17 +26,7 @@ Eventually, a dragon is able to evlove from
 the hatchling stage into a grown-up terrifying
 ancient dragon.
 endmsg
-anim
-pl_dragon.111
-pl_dragon.112
-pl_dragon.131
-pl_dragon.132
-pl_dragon.151
-pl_dragon.152
-pl_dragon.171
-pl_dragon.172
-facings 4
-mina
+animation pl_dragon_r
 is_animated 1
 anim_speed -1
 type 1
