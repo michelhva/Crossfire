@@ -5,8 +5,9 @@ Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 28 11:08:59 1998
 endmsg
-x 18
-y 13
+width 18
+height 13
+outdoor 1
 end
 arch cobblestones2
 end
@@ -317,7 +318,6 @@ y 7
 end
 arch card
 name Gate Pass
-slaying gate_pass
 msg
 The holder of this card is allowed free
 access into and out of the City of Scorn
@@ -327,10 +327,11 @@ of Scorn reserves the right to revoke
 said access at any time of its choosing
 without recompence or liability.
 endmsg
-x 3
-y 7
+slaying gate_pass
 value 800
 identified 1
+x 3
+y 7
 end
 arch dungeon_magic
 x 3
@@ -361,6 +362,10 @@ x 3
 y 10
 end
 arch brush
+x 3
+y 11
+end
+arch lamppost
 x 3
 y 11
 end
@@ -417,7 +422,6 @@ y 6
 end
 arch card
 name Port Pass
-slaying port_pass
 msg
 This is a merchants pass allowing payed
 access between the City of Scorn and the
@@ -427,10 +431,11 @@ the city of scorn must be quarantined in
 the Quarantine Warehouse in the port
 area.
 endmsg
-x 4
-y 6
+slaying port_pass
 value 2500
 identified 1
+x 4
+y 6
 end
 arch dungeon_magic
 x 4
@@ -481,6 +486,10 @@ x 5
 y 1
 end
 arch cobblestones2
+x 5
+y 2
+end
+arch lamppost
 x 5
 y 2
 end
@@ -596,9 +605,9 @@ name gatehouse guard
 msg
 @match who|people
 Yes you can only pass if you be...
- * A citizen of scorn with a password.
- * Have a merchants ``Port Pass''.
- * Have been knighted ``Hero of Scorn''.
+* A citizen of scorn with a password.
+* Have a merchants ``Port Pass''.
+* Have been knighted ``Hero of Scorn''.
 @match hero|Hero|scorn|Scorn
 Only the king can grant `Hero' status.
 @match port|pass
@@ -608,10 +617,10 @@ I am not allow to tell you the password.
 @match *
 Gates are opened only for certain people.
 endmsg
-x 6
-y 2
 friendly 1
 unaggressive 0
+x 6
+y 2
 end
 arch dungeon_floor
 x 6
@@ -654,6 +663,10 @@ x 6
 y 6
 end
 arch mine17
+x 6
+y 6
+end
+arch light3
 x 6
 y 6
 end
@@ -702,23 +715,23 @@ name gatehouse guard
 msg
 @match who|pass|people
 Yes you can only pass if you are
- * Have a merchants ``Port Pass''
- * Are a known ``Hero of Scorn''
- * or know todays password.
+* Have a merchants ``Port Pass''
+* Are a known ``Hero of Scorn''
+* or know todays password.
 @match hero|Hero
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office of Gate Passes.
 @match password|passwd
-I am not allow to tell you the password. 
+I am not allow to tell you the password.
 @match *
 Only certain people may pass.
 endmsg
-x 6
-y 10
 speed_left -0.700000
 friendly 1
 unaggressive 0
+x 6
+y 10
 end
 arch cobblestones2
 x 6
@@ -747,9 +760,9 @@ msg
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
+connected 14
 x 7
 y 1
-connected 14
 end
 arch dungeon_floor
 x 7
@@ -757,24 +770,24 @@ y 2
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 7
 y 2
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 7
 y 2
-connected 13
 end
 arch dungeon_floor
 x 7
 y 3
 end
 arch grate_closed_1
+connected 10
 x 7
 y 3
-connected 10
 end
 arch dungeon_floor
 x 7
@@ -798,10 +811,10 @@ msg
 @match *
 No Comment! Move along
 endmsg
+friendly 1
+unaggressive 0
 x 7
 y 5
-friendly 1
-unaggressive 0
 end
 arch dungeon_floor
 x 7
@@ -813,10 +826,10 @@ msg
 @match *
 No Comment! Move along
 endmsg
-x 7
-y 6
 friendly 1
 unaggressive 0
+x 7
+y 6
 end
 arch dungeon_floor
 x 7
@@ -828,28 +841,28 @@ msg
 @match *
 No Comment! Move along
 endmsg
-x 7
-y 7
 friendly 1
 unaggressive 0
+x 7
+y 7
 end
 arch dungeon_floor
 x 7
 y 8
 end
 arch trigger
-x 7
-y 8
 connected 11
+x 7
+y 8
 end
 arch dungeon_floor
 x 7
 y 9
 end
 arch grate_closed_1
+connected 10
 x 7
 y 9
-connected 10
 end
 arch dungeon_floor
 x 7
@@ -857,15 +870,15 @@ y 10
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 7
 y 10
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 7
 y 10
-connected 13
 end
 arch cobblestones2
 x 7
@@ -877,9 +890,9 @@ msg
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
+connected 14
 x 7
 y 11
-connected 14
 end
 arch cobblestones2
 x 7
@@ -911,24 +924,24 @@ y 2
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 8
 y 2
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 8
 y 2
-connected 13
 end
 arch dungeon_floor
 x 8
 y 3
 end
 arch grate_closed_1
+connected 10
 x 8
 y 3
-connected 10
 end
 arch dungeon_floor
 x 8
@@ -955,9 +968,9 @@ x 8
 y 9
 end
 arch grate_closed_1
+connected 10
 x 8
 y 9
-connected 10
 end
 arch dungeon_floor
 x 8
@@ -965,15 +978,15 @@ y 10
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 8
 y 10
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 8
 y 10
-connected 13
 end
 arch cobblestones2
 x 8
@@ -1009,24 +1022,24 @@ y 2
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 9
 y 2
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 9
 y 2
-connected 13
 end
 arch dungeon_floor
 x 9
 y 3
 end
 arch grate_closed_1
+connected 10
 x 9
 y 3
-connected 10
 end
 arch dungeon_floor
 x 9
@@ -1053,9 +1066,9 @@ x 9
 y 9
 end
 arch grate_closed_1
+connected 10
 x 9
 y 9
-connected 10
 end
 arch dungeon_floor
 x 9
@@ -1063,15 +1076,15 @@ y 10
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 9
 y 10
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 9
 y 10
-connected 13
 end
 arch cobblestones2
 x 9
@@ -1107,9 +1120,9 @@ msg
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
+connected 14
 x 10
 y 1
-connected 14
 end
 arch dungeon_floor
 x 10
@@ -1117,33 +1130,33 @@ y 2
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 10
 y 2
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 10
 y 2
-connected 13
 end
 arch dungeon_floor
 x 10
 y 3
 end
 arch grate_closed_1
+connected 10
 x 10
 y 3
-connected 10
 end
 arch dungeon_floor
 x 10
 y 4
 end
 arch trigger
+connected 11
 x 10
 y 4
-connected 11
 end
 arch dungeon_floor
 x 10
@@ -1155,10 +1168,10 @@ msg
 @match *
 No Comment! Move along
 endmsg
+friendly 1
+unaggressive 0
 x 10
 y 5
-friendly 1
-unaggressive 0
 end
 arch dungeon_floor
 x 10
@@ -1170,10 +1183,10 @@ msg
 @match *
 No Comment! Move along
 endmsg
-x 10
-y 6
 friendly 1
 unaggressive 0
+x 10
+y 6
 end
 arch dungeon_floor
 x 10
@@ -1185,10 +1198,10 @@ msg
 @match *
 No Comment! Move along
 endmsg
-x 10
-y 7
 friendly 1
 unaggressive 0
+x 10
+y 7
 end
 arch dungeon_floor
 x 10
@@ -1199,9 +1212,9 @@ x 10
 y 9
 end
 arch grate_closed_1
+connected 10
 x 10
 y 9
-connected 10
 end
 arch dungeon_floor
 x 10
@@ -1209,15 +1222,15 @@ y 10
 end
 arch check_floor
 slaying port_pass
+connected 12
 x 10
 y 10
-connected 12
 end
 arch check_floor
 slaying hero_of_scorn
+connected 13
 x 10
 y 10
-connected 13
 end
 arch cobblestones2
 x 10
@@ -1229,9 +1242,9 @@ msg
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
+connected 14
 x 10
 y 11
-connected 14
 end
 arch cobblestones2
 x 10
@@ -1260,22 +1273,22 @@ name gatehouse guard
 msg
 @match who|people
 Yes you can only pass if you be...
- * A citizen of scorn with a password.
- * Have a merchants ``Port Pass''.
- * Have been knighted ``Hero of Scorn''.
+* A citizen of scorn with a password.
+* Have a merchants ``Port Pass''.
+* Have been knighted ``Hero of Scorn''.
 @match hero|Hero|scorn|Scorn
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office inside scorn to your left.
 @match password|passwd
-I am not allow to tell you the password. 
+I am not allow to tell you the password.
 @match *
 Gates are opened only for certain people.
 endmsg
-x 11
-y 2
 friendly 1
 unaggressive 0
+x 11
+y 2
 end
 arch dungeon_magic
 x 11
@@ -1322,6 +1335,10 @@ x 11
 y 6
 end
 arch mine11
+x 11
+y 6
+end
+arch light3
 x 11
 y 6
 end
@@ -1374,23 +1391,23 @@ name gatehouse guard
 msg
 @match who|pass|people
 Yes you can only pass if you are
- * Have a merchants ``Port Pass''
- * Are a known ``Hero of Scorn''
- * or know todays password.
+* Have a merchants ``Port Pass''
+* Are a known ``Hero of Scorn''
+* or know todays password.
 @match hero|Hero
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office of Gate Passes.
 @match password|passwd
-I am not allow to tell you the password. 
+I am not allow to tell you the password.
 @match *
 Only certain people may pass.
 endmsg
-x 11
-y 10
 speed_left -0.700000
 friendly 1
 unaggressive 0
+x 11
+y 10
 end
 arch grass
 x 11
@@ -1408,6 +1425,10 @@ x 12
 y 1
 end
 arch cobblestones2
+x 12
+y 2
+end
+arch lamppost
 x 12
 y 2
 end
@@ -1430,9 +1451,9 @@ You hear from behind the eastern wall,
 a loud noise as anchient machinary is
 set in motion to move the rusty gates.
 endmsg
+connected 10
 x 12
 y 4
-connected 10
 end
 arch dungeon_magic
 x 12
@@ -1455,14 +1476,14 @@ x 12
 y 7
 end
 arch button_small
+connected 10
 x 12
 y 7
-connected 10
 end
 arch gateTrg1
+connected 11
 x 12
 y 7
-connected 11
 end
 arch dungeon_magic
 x 12
@@ -1485,6 +1506,10 @@ x 12
 y 9
 end
 arch grass
+x 12
+y 10
+end
+arch lamppost
 x 12
 y 10
 end
@@ -1526,9 +1551,9 @@ On seeing you have a port pass the guard
 turns a rusty handle and says...
 Everything appears in order. Pass friend.
 endmsg
+connected 12
 x 13
 y 4
-connected 12
 end
 arch dungeon_magic
 x 13
@@ -1543,14 +1568,14 @@ x 13
 y 6
 end
 arch button_small
+connected 10
 x 13
 y 6
-connected 10
 end
 arch gateTrg1
+connected 12
 x 13
 y 6
-connected 12
 end
 arch dungeon_magic
 x 13
@@ -1558,16 +1583,16 @@ y 7
 end
 arch button_small
 face button_sma.112
-x 13
-y 7
 value 1
 connected 20
-end
-arch spikes_open
 x 13
 y 7
+end
+arch spikes_open
 speed 0.500000
 connected 20
+x 13
+y 7
 end
 arch boulder
 x 13
@@ -1578,14 +1603,14 @@ x 13
 y 8
 end
 arch button_small
+connected 10
 x 13
 y 8
-connected 10
 end
 arch gateTrg1
+connected 14
 x 13
 y 8
-connected 14
 end
 arch dungeon_magic
 x 13
@@ -1644,9 +1669,9 @@ msg
 The guard seeing that the Hero approches
 turns the handle to open the gate.
 endmsg
+connected 13
 x 14
 y 4
-connected 13
 end
 arch dungeon_magic
 x 14
@@ -1669,14 +1694,14 @@ x 14
 y 7
 end
 arch button_small
+connected 10
 x 14
 y 7
-connected 10
 end
 arch gateTrg1
+connected 13
 x 14
 y 7
-connected 13
 end
 arch dungeon_magic
 x 14
