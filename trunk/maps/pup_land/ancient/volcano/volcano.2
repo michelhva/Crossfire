@@ -5,9 +5,9 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun  6 15:02:33 2000
 endmsg
-x 37
-y 35
-invisible 4
+width 37
+height 35
+darkness 4
 end
 arch dungeon_magic
 end
@@ -234,9 +234,9 @@ arch blocked
 y 33
 end
 arch blocked
-y 34
 no_pass 0
 is_floor 1
+y 34
 end
 arch invis_exit
 slaying volcano.3
@@ -293,9 +293,9 @@ y 4
 end
 arch wagon
 name lore
+type 0
 x 1
 y 4
-type 0
 end
 arch dungeon_magic
 x 1
@@ -394,10 +394,10 @@ x 1
 y 15
 end
 arch mover_3
-x 1
-y 15
 level 1
 attacktype 1
+x 1
+y 15
 end
 arch medium_stones
 x 1
@@ -738,10 +738,10 @@ x 2
 y 15
 end
 arch mover_3
-x 2
-y 15
 level 1
 attacktype 1
+x 2
+y 15
 end
 arch medium_stones
 x 2
@@ -1074,10 +1074,10 @@ x 3
 y 15
 end
 arch mover_3
-x 3
-y 15
 level 1
 attacktype 1
+x 3
+y 15
 end
 arch medium_stones
 x 3
@@ -1418,10 +1418,10 @@ x 4
 y 15
 end
 arch mover_3
-x 4
-y 15
 level 1
 attacktype 1
+x 4
+y 15
 end
 arch light2
 x 4
@@ -1742,23 +1742,23 @@ y 14
 end
 arch spikes_open
 name invisible force
-x 5
-y 14
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 5
+y 14
 end
 arch dungeon_magic
 x 5
 y 15
 end
 arch mover_3
-x 5
-y 15
 level 1
 attacktype 1
+x 5
+y 15
 end
 arch medium_stones
 x 5
@@ -1779,13 +1779,13 @@ y 16
 end
 arch spikes_open
 name invisible force
-x 5
-y 16
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 5
+y 16
 end
 arch dungeon_magic
 x 5
@@ -2090,13 +2090,13 @@ y 14
 end
 arch spikes_open
 name invisible force
-x 6
-y 14
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 6
+y 14
 end
 arch dungeon_magic
 x 6
@@ -2104,16 +2104,16 @@ y 15
 end
 arch pedestal
 name 11
-x 6
-y 15
 protected 11
 connected 11
-end
-arch mover_3
 x 6
 y 15
+end
+arch mover_3
 level 1
 attacktype 1
+x 6
+y 15
 end
 arch light2
 x 6
@@ -2121,19 +2121,20 @@ y 15
 end
 arch permanent_lava
 exp 1000
+slow_move 1.000000
 x 6
 y 15
-slow_move 1.000000
 end
 arch bridge_1
+type 41
 slaying volcano.2
 hp 31
 sp 24
+activate_on_push 1
+activate_on_release 1
+connected 10
 x 6
 y 15
-type 41
-protected 10
-connected 10
 end
 arch dungeon_magic
 x 6
@@ -2145,13 +2146,13 @@ y 16
 end
 arch spikes_open
 name invisible force
-x 6
-y 16
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 6
+y 16
 end
 arch dungeon_magic
 x 6
@@ -2464,10 +2465,10 @@ x 7
 y 15
 end
 arch mover_3
-x 7
-y 15
 level 1
 attacktype 1
+x 7
+y 15
 end
 arch medium_stones
 x 7
@@ -2480,13 +2481,13 @@ y 15
 end
 arch spikes_open
 name invisible force
-x 7
-y 15
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 7
+y 15
 end
 arch dungeon_magic
 x 7
@@ -2498,13 +2499,13 @@ y 16
 end
 arch spikes_open
 name invisible force
-x 7
-y 16
 speed 0.500000
 protected 20
 value 1
 invisible 1
 connected 20
+x 7
+y 16
 end
 arch dungeon_magic
 x 7
@@ -2833,10 +2834,10 @@ x 8
 y 15
 end
 arch mover_3
-x 8
-y 15
 level 1
 attacktype 1
+x 8
+y 15
 end
 arch medium_stones
 x 8
@@ -3177,10 +3178,10 @@ x 9
 y 15
 end
 arch mover_3
-x 9
-y 15
 level 1
 attacktype 1
+x 9
+y 15
 end
 arch medium_stones
 x 9
@@ -3454,10 +3455,10 @@ y 8
 end
 arch pedestal
 name 4
-x 10
-y 8
 protected 4
 connected 4
+x 10
+y 8
 end
 arch medium_stones
 x 10
@@ -3468,38 +3469,39 @@ x 10
 y 9
 end
 arch medium_stones
+type 66
 slaying volcano.2
 hp 23
 sp 22
 x 10
 y 9
-type 66
 end
 arch dirtroad_1_1
 name rail
+type 41
 hp 14
 sp 27
+activate_on_push 1
+activate_on_release 1
+connected 3
 x 10
 y 9
-type 41
-protected 3
-connected 3
 end
 arch wagon
 name lore
+type 0
 x 10
 y 9
-type 0
 end
 arch dungeon_magic
 x 10
 y 10
 end
 arch mover_1
-x 10
-y 10
 level 1
 attacktype 1
+x 10
+y 10
 end
 arch medium_stones
 x 10
@@ -3515,10 +3517,10 @@ x 10
 y 11
 end
 arch mover_1
-x 10
-y 11
 level 1
 attacktype 1
+x 10
+y 11
 end
 arch medium_stones
 x 10
@@ -3534,10 +3536,10 @@ x 10
 y 12
 end
 arch mover_1
-x 10
-y 12
 level 1
 attacktype 1
+x 10
+y 12
 end
 arch medium_stones
 x 10
@@ -3553,10 +3555,10 @@ x 10
 y 13
 end
 arch mover_1
-x 10
-y 13
 level 1
 attacktype 1
+x 10
+y 13
 end
 arch medium_stones
 x 10
@@ -3572,10 +3574,10 @@ x 10
 y 14
 end
 arch mover_1
-x 10
-y 14
 level 1
 attacktype 1
+x 10
+y 14
 end
 arch medium_stones
 x 10
@@ -3591,10 +3593,10 @@ x 10
 y 15
 end
 arch mover_1
-x 10
-y 15
 level 1
 attacktype 1
+x 10
+y 15
 end
 arch medium_stones
 x 10
@@ -4420,20 +4422,20 @@ y 29
 end
 arch button_lever
 name rusty lever
-x 12
-y 29
 protected 5
 connected 5
+x 12
+y 29
 end
 arch locked_door2
 name earth and rocks
-slaying access_lever
+face dirt.111
 msg
 The lever is blocked by an
 accumulation of rocks. You would need
-some tool to remove them. 
+some tool to remove them.
 endmsg
-face dirt.111
+slaying access_lever
 x 12
 y 29
 end
@@ -4517,10 +4519,10 @@ y 3
 end
 arch pedestal
 name 2
-x 13
-y 3
 protected 2
 connected 2
+x 13
+y 3
 end
 arch medium_stones
 x 13
@@ -4740,10 +4742,10 @@ y 27
 end
 arch pedestal
 name 3
-x 13
-y 27
 protected 3
 connected 3
+x 13
+y 27
 end
 arch medium_stones
 x 13
@@ -4848,28 +4850,29 @@ x 14
 y 3
 end
 arch medium_stones
+type 66
 slaying volcano.2
 hp 16
 sp 10
 x 14
 y 3
-type 66
 end
 arch dirtroad_1_4
 name rail
+type 41
 hp 25
 sp 12
+activate_on_push 1
+activate_on_release 1
+connected 1
 x 14
 y 3
-type 41
-protected 1
-connected 1
 end
 arch wagon
 name lore
+type 0
 x 14
 y 3
-type 0
 end
 arch dungeon_magic
 x 14
@@ -4940,10 +4943,10 @@ x 14
 y 10
 end
 arch mover_3
-x 14
-y 10
 level 1
 attacktype 1
+x 14
+y 10
 end
 arch medium_stones
 x 14
@@ -5011,28 +5014,28 @@ y 17
 end
 arch button_small
 name 20
-x 14
-y 17
 protected 20
 weight 1000
 connected 20
+x 14
+y 17
 end
 arch igate_open_2
 name 21
-x 14
-y 17
 speed 0.500000
 protected 21
 value 1
 connected 21
+x 14
+y 17
 end
 arch creator
 name 12
 other_arch small_shield
-x 14
-y 17
 protected 12
 connected 12
+x 14
+y 17
 end
 arch dungeon_magic
 x 14
@@ -5048,19 +5051,19 @@ y 19
 end
 arch button_small
 name 12
-x 14
-y 19
 protected 12
 weight 1000
 connected 12
+x 14
+y 19
 end
 arch creator
 name 5
 other_arch small_shield
-x 14
-y 19
 protected 5
 connected 5
+x 14
+y 19
 end
 arch dungeon_magic
 x 14
@@ -5131,22 +5134,23 @@ x 14
 y 27
 end
 arch medium_stones
+type 66
 slaying volcano.2
 hp 2
 sp 15
 x 14
 y 27
-type 66
 end
 arch dirtroad_1_4
 name rail
+type 41
 hp 10
 sp 9
+activate_on_push 1
+activate_on_release 1
+connected 4
 x 14
 y 27
-type 41
-protected 4
-connected 4
 end
 arch dungeon_magic
 x 14
@@ -5243,10 +5247,10 @@ x 15
 y 3
 end
 arch mover_7
-x 15
-y 3
 level 1
 attacktype 1
+x 15
+y 3
 end
 arch medium_stones
 x 15
@@ -5318,10 +5322,10 @@ x 15
 y 10
 end
 arch mover_3
-x 15
-y 10
 level 1
 attacktype 1
+x 15
+y 10
 end
 arch medium_stones
 x 15
@@ -5485,10 +5489,10 @@ x 15
 y 27
 end
 arch mover_7
-x 15
-y 27
 level 1
 attacktype 1
+x 15
+y 27
 end
 arch medium_stones
 x 15
@@ -5594,10 +5598,10 @@ x 16
 y 3
 end
 arch mover_7
-x 16
-y 3
 level 1
 attacktype 1
+x 16
+y 3
 end
 arch medium_stones
 x 16
@@ -5685,10 +5689,10 @@ x 16
 y 10
 end
 arch mover_3
-x 16
-y 10
 level 1
 attacktype 1
+x 16
+y 10
 end
 arch medium_stones
 x 16
@@ -5773,18 +5777,18 @@ y 19
 end
 arch igate_open_2
 name 12
-x 16
-y 19
 speed 2.000000
 protected 12
 value 1
 connected 12
-end
-arch small_shield
 x 16
 y 19
+end
+arch small_shield
 material 0
 weight 10
+x 16
+y 19
 end
 arch dungeon_magic
 x 16
@@ -5855,10 +5859,10 @@ x 16
 y 27
 end
 arch mover_7
-x 16
-y 27
 level 1
 attacktype 1
+x 16
+y 27
 end
 arch medium_stones
 x 16
@@ -5972,10 +5976,10 @@ x 17
 y 3
 end
 arch mover_7
-x 17
-y 3
 level 1
 attacktype 1
+x 17
+y 3
 end
 arch medium_stones
 x 17
@@ -5991,10 +5995,10 @@ x 17
 y 4
 end
 arch mover_1
-x 17
-y 4
 level 1
 attacktype 1
+x 17
+y 4
 end
 arch medium_stones
 x 17
@@ -6010,10 +6014,10 @@ x 17
 y 5
 end
 arch mover_1
-x 17
-y 5
 level 1
 attacktype 1
+x 17
+y 5
 end
 arch medium_stones
 x 17
@@ -6077,10 +6081,10 @@ x 17
 y 10
 end
 arch mover_3
-x 17
-y 10
 level 1
 attacktype 1
+x 17
+y 10
 end
 arch medium_stones
 x 17
@@ -6177,12 +6181,12 @@ y 19
 end
 arch igate_open_2
 name 11
-x 17
-y 19
 speed 2.000000
 protected 11
 value 1
 connected 11
+x 17
+y 19
 end
 arch dungeon_magic
 x 17
@@ -6253,10 +6257,10 @@ x 17
 y 27
 end
 arch mover_7
-x 17
-y 27
 level 1
 attacktype 1
+x 17
+y 27
 end
 arch light2
 x 17
@@ -6393,10 +6397,10 @@ x 18
 y 5
 end
 arch mover_7
-x 18
-y 5
 level 1
 attacktype 1
+x 18
+y 5
 end
 arch medium_stones
 x 18
@@ -6456,10 +6460,10 @@ x 18
 y 10
 end
 arch mover_5
-x 18
-y 10
 level 1
 attacktype 1
+x 18
+y 10
 end
 arch medium_stones
 x 18
@@ -6475,10 +6479,10 @@ x 18
 y 11
 end
 arch mover_5
-x 18
-y 11
 level 1
 attacktype 1
+x 18
+y 11
 end
 arch medium_stones
 x 18
@@ -6494,10 +6498,10 @@ x 18
 y 12
 end
 arch mover_3
-x 18
-y 12
 level 1
 attacktype 1
+x 18
+y 12
 end
 arch medium_stones
 x 18
@@ -6570,11 +6574,11 @@ y 19
 end
 arch button_small
 name 10
-x 18
-y 19
 protected 10
 weight 10
 connected 10
+x 18
+y 19
 end
 arch dungeon_magic
 x 18
@@ -6637,10 +6641,10 @@ x 18
 y 27
 end
 arch mover_7
-x 18
-y 27
 level 1
 attacktype 1
+x 18
+y 27
 end
 arch medium_stones
 x 18
@@ -6758,10 +6762,10 @@ x 19
 y 5
 end
 arch mover_7
-x 19
-y 5
 level 1
 attacktype 1
+x 19
+y 5
 end
 arch medium_stones
 x 19
@@ -6842,10 +6846,10 @@ x 19
 y 12
 end
 arch mover_3
-x 19
-y 12
 level 1
 attacktype 1
+x 19
+y 12
 end
 arch medium_stones
 x 19
@@ -6993,10 +6997,10 @@ x 19
 y 27
 end
 arch mover_7
-x 19
-y 27
 level 1
 attacktype 1
+x 19
+y 27
 end
 arch light2
 x 19
@@ -7119,19 +7123,19 @@ y 4
 end
 arch gwall_2_1_1
 name gap
+blocksview 0
 x 20
 y 4
-blocksview 0
 end
 arch dungeon_magic
 x 20
 y 5
 end
 arch mover_7
-x 20
-y 5
 level 1
 attacktype 1
+x 20
+y 5
 end
 arch medium_stones
 x 20
@@ -7139,10 +7143,10 @@ y 5
 end
 arch gwall_2_1_1
 name gap
-x 20
-y 5
 no_pass 0
 blocksview 0
+x 20
+y 5
 end
 arch bridge_1
 x 20
@@ -7158,9 +7162,9 @@ y 6
 end
 arch gwall_2_1_1
 name gap
+blocksview 0
 x 20
 y 6
-blocksview 0
 end
 arch dungeon_magic
 x 20
@@ -7220,10 +7224,10 @@ x 20
 y 12
 end
 arch mover_3
-x 20
-y 12
 level 1
 attacktype 1
+x 20
+y 12
 end
 arch medium_stones
 x 20
@@ -7372,10 +7376,10 @@ x 20
 y 27
 end
 arch mover_7
-x 20
-y 27
 level 1
 attacktype 1
+x 20
+y 27
 end
 arch medium_stones
 x 20
@@ -7506,10 +7510,10 @@ x 21
 y 5
 end
 arch mover_7
-x 21
-y 5
 level 1
 attacktype 1
+x 21
+y 5
 end
 arch medium_stones
 x 21
@@ -7583,19 +7587,19 @@ y 11
 end
 arch gwall_2_1_1
 name gap
+blocksview 0
 x 21
 y 11
-blocksview 0
 end
 arch dungeon_magic
 x 21
 y 12
 end
 arch mover_3
-x 21
-y 12
 level 1
 attacktype 1
+x 21
+y 12
 end
 arch medium_stones
 x 21
@@ -7603,10 +7607,10 @@ y 12
 end
 arch gwall_2_1_1
 name gap
-x 21
-y 12
 no_pass 0
 blocksview 0
+x 21
+y 12
 end
 arch bridge_1
 x 21
@@ -7622,9 +7626,9 @@ y 13
 end
 arch gwall_2_1_1
 name gap
+blocksview 0
 x 21
 y 13
-blocksview 0
 end
 arch dungeon_magic
 x 21
@@ -7756,10 +7760,10 @@ x 21
 y 27
 end
 arch mover_7
-x 21
-y 27
 level 1
 attacktype 1
+x 21
+y 27
 end
 arch medium_stones
 x 21
@@ -7885,10 +7889,10 @@ x 22
 y 5
 end
 arch mover_7
-x 22
-y 5
 level 1
 attacktype 1
+x 22
+y 5
 end
 arch medium_stones
 x 22
@@ -7961,10 +7965,10 @@ x 22
 y 12
 end
 arch mover_3
-x 22
-y 12
 level 1
 attacktype 1
+x 22
+y 12
 end
 arch medium_stones
 x 22
@@ -8140,10 +8144,10 @@ x 22
 y 27
 end
 arch mover_7
-x 22
-y 27
 level 1
 attacktype 1
+x 22
+y 27
 end
 arch medium_stones
 x 22
@@ -8281,10 +8285,10 @@ x 23
 y 5
 end
 arch mover_7
-x 23
-y 5
 level 1
 attacktype 1
+x 23
+y 5
 end
 arch medium_stones
 x 23
@@ -8360,10 +8364,10 @@ x 23
 y 12
 end
 arch mover_3
-x 23
-y 12
 level 1
 attacktype 1
+x 23
+y 12
 end
 arch medium_stones
 x 23
@@ -8452,10 +8456,10 @@ x 23
 y 20
 end
 arch mover_5
-x 23
-y 20
 level 1
 attacktype 1
+x 23
+y 20
 end
 arch medium_stones
 x 23
@@ -8466,10 +8470,10 @@ x 23
 y 21
 end
 arch mover_5
-x 23
-y 21
 level 1
 attacktype 1
+x 23
+y 21
 end
 arch medium_stones
 x 23
@@ -8485,10 +8489,10 @@ x 23
 y 22
 end
 arch mover_5
-x 23
-y 22
 level 1
 attacktype 1
+x 23
+y 22
 end
 arch medium_stones
 x 23
@@ -8504,10 +8508,10 @@ x 23
 y 23
 end
 arch mover_5
-x 23
-y 23
 level 1
 attacktype 1
+x 23
+y 23
 end
 arch medium_stones
 x 23
@@ -8523,10 +8527,10 @@ x 23
 y 24
 end
 arch mover_5
-x 23
-y 24
 level 1
 attacktype 1
+x 23
+y 24
 end
 arch medium_stones
 x 23
@@ -8542,10 +8546,10 @@ x 23
 y 25
 end
 arch mover_5
-x 23
-y 25
 level 1
 attacktype 1
+x 23
+y 25
 end
 arch medium_stones
 x 23
@@ -8561,10 +8565,10 @@ x 23
 y 26
 end
 arch mover_5
-x 23
-y 26
 level 1
 attacktype 1
+x 23
+y 26
 end
 arch medium_stones
 x 23
@@ -8580,10 +8584,10 @@ x 23
 y 27
 end
 arch mover_7
-x 23
-y 27
 level 1
 attacktype 1
+x 23
+y 27
 end
 arch medium_stones
 x 23
@@ -8726,10 +8730,10 @@ x 24
 y 5
 end
 arch mover_7
-x 24
-y 5
 level 1
 attacktype 1
+x 24
+y 5
 end
 arch medium_stones
 x 24
@@ -8801,10 +8805,10 @@ x 24
 y 12
 end
 arch mover_3
-x 24
-y 12
 level 1
 attacktype 1
+x 24
+y 12
 end
 arch medium_stones
 x 24
@@ -9110,10 +9114,10 @@ x 25
 y 5
 end
 arch mover_7
-x 25
-y 5
 level 1
 attacktype 1
+x 25
+y 5
 end
 arch medium_stones
 x 25
@@ -9184,22 +9188,23 @@ x 25
 y 12
 end
 arch medium_stones
+type 66
 slaying volcano.2
 hp 23
 sp 5
 x 25
 y 12
-type 66
 end
 arch dirtroad_2_1_2
 name rail
+type 41
 hp 14
 sp 3
+activate_on_push 1
+activate_on_release 1
+connected 2
 x 25
 y 12
-type 41
-protected 2
-connected 2
 end
 arch dungeon_magic
 x 25
@@ -9517,10 +9522,10 @@ y 12
 end
 arch pedestal
 name 1
-x 26
-y 12
 protected 1
 connected 1
+x 26
+y 12
 end
 arch medium_stones
 x 26
@@ -9655,10 +9660,10 @@ x 26
 y 24
 end
 arch mover_3
-x 26
-y 24
 level 1
 attacktype 1
+x 26
+y 24
 end
 arch medium_stones
 x 26
@@ -9972,10 +9977,10 @@ x 27
 y 24
 end
 arch mover_3
-x 27
-y 24
 level 1
 attacktype 1
+x 27
+y 24
 end
 arch medium_stones
 x 27
@@ -10309,10 +10314,10 @@ x 28
 y 24
 end
 arch mover_3
-x 28
-y 24
 level 1
 attacktype 1
+x 28
+y 24
 end
 arch light2
 x 28
@@ -10651,10 +10656,10 @@ x 29
 y 24
 end
 arch mover_3
-x 29
-y 24
 level 1
 attacktype 1
+x 29
+y 24
 end
 arch medium_stones
 x 29
@@ -10805,11 +10810,11 @@ y 4
 end
 arch rock2
 name huge rock
-x 30
-y 4
 type 0
 value 0
 weight 7000000
+x 30
+y 4
 end
 arch dungeon_magic
 x 30
@@ -11004,10 +11009,10 @@ x 30
 y 24
 end
 arch mover_3
-x 30
-y 24
 level 1
 attacktype 1
+x 30
+y 24
 end
 arch light2
 x 30
@@ -11153,14 +11158,14 @@ y 4
 end
 arch shovel_1
 name big shovel
+type 21
 slaying access_lever
 dam 0
-x 31
-y 4
-type 21
 attacktype 0
 material 0
 last_sp 0
+x 31
+y 4
 end
 arch dungeon_magic
 x 31
@@ -11347,10 +11352,10 @@ x 31
 y 24
 end
 arch mover_3
-x 31
-y 24
 level 1
 attacktype 1
+x 31
+y 24
 end
 arch medium_stones
 x 31
@@ -11493,11 +11498,11 @@ y 3
 end
 arch rock2
 name huge rock
-x 32
-y 3
 type 0
 value 0
 weight 7000000
+x 32
+y 3
 end
 arch dungeon_magic
 x 32
@@ -11680,10 +11685,10 @@ x 32
 y 24
 end
 arch mover_3
-x 32
-y 24
 level 1
 attacktype 1
+x 32
+y 24
 end
 arch medium_stones
 x 32
@@ -11850,11 +11855,11 @@ y 5
 end
 arch rock2
 name huge rock
-x 33
-y 5
 type 0
 value 0
 weight 7000000
+x 33
+y 5
 end
 arch dungeon_magic
 x 33
@@ -12053,10 +12058,10 @@ x 33
 y 24
 end
 arch mover_3
-x 33
-y 24
 level 1
 attacktype 1
+x 33
+y 24
 end
 arch medium_stones
 x 33
@@ -12455,10 +12460,10 @@ x 34
 y 24
 end
 arch mover_5
-x 34
-y 24
 level 1
 attacktype 1
+x 34
+y 24
 end
 arch medium_stones
 x 34
@@ -12474,16 +12479,16 @@ y 25
 end
 arch pedestal
 name 21
-x 34
-y 25
 protected 21
 connected 21
-end
-arch mover_5
 x 34
 y 25
+end
+arch mover_5
 level 1
 attacktype 1
+x 34
+y 25
 end
 arch medium_stones
 x 34
@@ -12500,16 +12505,16 @@ y 26
 end
 arch pedestal
 name 21
-x 34
-y 26
 protected 21
 connected 21
-end
-arch mover_5
 x 34
 y 26
+end
+arch mover_5
 level 1
 attacktype 1
+x 34
+y 26
 end
 arch medium_stones
 x 34
@@ -12526,16 +12531,16 @@ y 27
 end
 arch pedestal
 name 21
-x 34
-y 27
 protected 21
 connected 21
-end
-arch mover_5
 x 34
 y 27
+end
+arch mover_5
 level 1
 attacktype 1
+x 34
+y 27
 end
 arch medium_stones
 x 34
@@ -12551,10 +12556,10 @@ x 34
 y 28
 end
 arch mover_5
-x 34
-y 28
 level 1
 attacktype 1
+x 34
+y 28
 end
 arch medium_stones
 x 34
@@ -12570,10 +12575,10 @@ x 34
 y 29
 end
 arch mover_5
-x 34
-y 29
 level 1
 attacktype 1
+x 34
+y 29
 end
 arch medium_stones
 x 34
@@ -12589,10 +12594,10 @@ x 34
 y 30
 end
 arch mover_5
-x 34
-y 30
 level 1
 attacktype 1
+x 34
+y 30
 end
 arch medium_stones
 x 34
@@ -12608,10 +12613,10 @@ x 34
 y 31
 end
 arch mover_5
-x 34
-y 31
 level 1
 attacktype 1
+x 34
+y 31
 end
 arch medium_stones
 x 34
@@ -12653,10 +12658,10 @@ x 34
 y 33
 end
 arch mover_1
-x 34
-y 33
 level 1
 attacktype 1
+x 34
+y 33
 end
 arch medium_stones
 x 34

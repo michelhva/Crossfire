@@ -1,16 +1,16 @@
 arch map
 name treasure
-reset_timeout 7200
-difficulty 13
-width 26
-height 27
-enter_x 1
-enter_y 1
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Tue Jun  6 22:51:57 2000
 endmsg
+width 26
+height 27
+enter_x 1
+enter_y 1
+reset_timeout 7200
+difficulty 13
 end
 arch blocked
 end
@@ -340,11 +340,11 @@ y 20
 end
 arch pedestal
 name 20
-x 1
-y 21
 resist_fire 30
 resist_cold 30
 connected 20
+x 1
+y 21
 end
 arch dungeon_magic
 x 1
@@ -356,11 +356,11 @@ y 21
 end
 arch pedestal
 name 20
-x 1
-y 22
 resist_fire 30
 resist_cold 30
 connected 20
+x 1
+y 22
 end
 arch dungeon_magic
 x 1
@@ -463,14 +463,14 @@ end
 arch statue
 name death machine
 face statue_gargoyle.111
+type 62
 sp 5
 dam 90
-x 2
-y 5
 speed 0.100000
 level 100
-type 62
 blocksview 1
+x 2
+y 5
 end
 arch dungeon_magic
 x 2
@@ -606,11 +606,11 @@ y 21
 end
 arch pedestal
 name 20
-x 2
-y 22
 resist_fire 30
 resist_cold 30
 connected 20
+x 2
+y 22
 end
 arch dungeon_magic
 x 2
@@ -723,25 +723,26 @@ x 3
 y 7
 end
 arch flagstone
+type 41
 hp 3
 sp 5
+activate_on_push 1
+activate_on_release 1
+connected 2
 x 3
 y 7
-type 41
-resist_magic 30
-connected 2
 end
 arch statue
 name death machine
 face statue_gargoyle.111
+type 62
 sp 5
 dam 90
-x 3
-y 7
 speed 0.100000
 level 100
-type 62
 blocksview 1
+x 3
+y 7
 end
 arch dungeon_magic
 x 3
@@ -955,14 +956,14 @@ end
 arch statue
 name death machine
 face statue_gargoyle.111
+type 62
 sp 5
 dam 90
-x 4
-y 5
 speed 0.100000
 level 100
-type 62
 blocksview 1
+x 4
+y 5
 end
 arch dungeon_magic
 x 4
@@ -1108,7 +1109,7 @@ arch monument
 name warning
 msg
 This path leads to Gothwolte's treasure
-hoard. Nobody is allowed to pass! 
+hoard. Nobody is allowed to pass!
 Intruders will suffer incredible pain.
 endmsg
 x 4
@@ -1212,25 +1213,26 @@ x 5
 y 7
 end
 arch flagstone
+type 41
 hp 5
 sp 5
+activate_on_push 1
+activate_on_release 1
+connected 2
 x 5
 y 7
-type 41
-resist_magic 30
-connected 2
 end
 arch statue
 name death machine
 face statue_gargoyle.111
+type 62
 sp 5
 dam 90
-x 5
-y 7
 speed 0.100000
 level 100
-type 62
 blocksview 1
+x 5
+y 7
 end
 arch dungeon_magic
 x 5
@@ -1449,14 +1451,14 @@ end
 arch statue
 name death machine
 face statue_gargoyle.111
+type 62
 sp 5
 dam 90
-x 6
-y 5
 speed 0.100000
 level 100
-type 62
 blocksview 1
+x 6
+y 5
 end
 arch dungeon_magic
 x 6
@@ -1592,11 +1594,11 @@ y 21
 end
 arch pedestal
 name 20
-x 6
-y 22
 resist_fire 30
 resist_cold 30
 connected 20
+x 6
+y 22
 end
 arch dungeon_magic
 x 6
@@ -1883,11 +1885,11 @@ y 20
 end
 arch pedestal
 name 20
-x 7
-y 21
 resist_fire 30
 resist_cold 30
 connected 20
+x 7
+y 21
 end
 arch dungeon_magic
 x 7
@@ -1899,11 +1901,11 @@ y 21
 end
 arch pedestal
 name 20
-x 7
-y 22
 resist_fire 30
 resist_cold 30
 connected 20
+x 7
+y 22
 end
 arch dungeon_magic
 x 7
@@ -2075,25 +2077,25 @@ end
 arch demilich
 name blocked
 face blocked.111
-x 9
 randomitems none
 random_movement 0
+x 9
 end
 arch demilich
 name blocked
 face blocked.111
+randomitems none
+random_movement 0
 x 9
 y 1
-randomitems none
-random_movement 0
 end
 arch demilich
 name blocked
 face blocked.111
-x 9
-y 2
 randomitems none
 random_movement 0
+x 9
+y 2
 end
 arch blocked
 x 9
@@ -2262,25 +2264,25 @@ end
 arch demilich
 name blocked
 face blocked.111
-x 10
 randomitems none
 random_movement 0
+x 10
 end
 arch demilich
 name blocked
 face blocked.111
+randomitems none
+random_movement 0
 x 10
 y 1
-randomitems none
-random_movement 0
 end
 arch demilich
 name blocked
 face blocked.111
-x 10
-y 2
 randomitems none
 random_movement 0
+x 10
+y 2
 end
 arch blocked
 x 10
@@ -2509,25 +2511,25 @@ end
 arch demilich
 name blocked
 face blocked.111
-x 11
 randomitems none
 random_movement 0
+x 11
 end
 arch demilich
 name blocked
 face blocked.111
+randomitems none
+random_movement 0
 x 11
 y 1
-randomitems none
-random_movement 0
 end
 arch demilich
 name blocked
 face blocked.111
-x 11
-y 2
 randomitems none
 random_movement 0
+x 11
+y 2
 end
 arch blocked
 x 11
@@ -2740,24 +2742,24 @@ end
 arch teleporter
 hp 17
 sp 12
-x 11
-y 23
 speed 0.000000
 resist_magic 30
 resist_electricity 30
 connected 10
+x 11
+y 23
 end
 arch corpse
 name Zonk
-msg
-   This Zonk is a symbol of bad luck.
-endmsg
 face imp.171
-x 11
-y 23
+msg
+This Zonk is a symbol of bad luck.
+endmsg
 material 0
 value 10000
 weight 500
+x 11
+y 23
 end
 arch blocked
 x 11
@@ -2774,25 +2776,25 @@ end
 arch demilich
 name blocked
 face blocked.111
-x 12
 randomitems none
 random_movement 0
+x 12
 end
 arch demilich
 name blocked
 face blocked.111
+randomitems none
+random_movement 0
 x 12
 y 1
-randomitems none
-random_movement 0
 end
 arch demilich
 name blocked
 face blocked.111
-x 12
-y 2
 randomitems none
 random_movement 0
+x 12
+y 2
 end
 arch blocked
 x 12
@@ -3005,26 +3007,26 @@ end
 arch teleporter
 hp 17
 sp 12
-x 12
-y 23
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
+x 12
+y 23
 end
 arch wdsm
 msg
-   This famous armour grants permanent
-   immunity to fire. Even the gods
-   watch you with envy. Once you give
-   it away, they will surely destroy it.
+This famous armour grants permanent
+immunity to fire. Even the gods
+watch you with envy. Once you give
+it away, they will surely destroy it.
 endmsg
-x 12
-y 23
 resist_cold 60
 last_sp 6
 no_steal 0
+x 12
+y 23
 end
 arch blocked
 x 12
@@ -3036,26 +3038,26 @@ msg
 Finally! You've reached Gothwolte's
 legendary treasure hoard.
 endmsg
-x 12
-y 25
 resist_magic 30
 connected 2
+x 12
+y 25
 end
 arch button_small
 name 2
-x 12
-y 25
 resist_magic 30
 weight 1000
 connected 2
+x 12
+y 25
 end
 arch creator
 name 1
 other_arch small_shield
-x 12
-y 25
 resist_physical 30
 connected 1
+x 12
+y 25
 end
 arch blocked
 x 12
@@ -3117,14 +3119,14 @@ x 13
 y 7
 end
 arch gem
-title of flawless beauty
 face pretty_crystal.111
-x 13
-y 7
+title of flawless beauty
 speed 0.000000
 value 400000
 weight 100
 is_animated 0
+x 13
+y 7
 end
 arch dungeon_magic
 x 13
@@ -3243,14 +3245,14 @@ x 13
 y 17
 end
 arch gem
-title of flawless beauty
 face pretty_crystal.111
-x 13
-y 17
+title of flawless beauty
 speed 0.000000
 value 400000
 weight 100
 is_animated 0
+x 13
+y 17
 end
 arch dungeon_magic
 x 13
@@ -3591,11 +3593,11 @@ y 4
 end
 arch torch_1
 food 0
-x 15
-y 4
 material 0
 no_pick 1
 changing 0
+x 15
+y 4
 end
 arch dungeon_magic
 x 15
@@ -3666,9 +3668,9 @@ x 15
 y 10
 end
 arch slevel_2_2_2
+no_pass 1
 x 15
 y 10
-no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -3679,9 +3681,9 @@ x 15
 y 11
 end
 arch slevel_3_2
+no_pass 1
 x 15
 y 11
-no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -3692,9 +3694,9 @@ x 15
 y 12
 end
 arch slevel_3_2
+no_pass 1
 x 15
 y 12
-no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -3705,9 +3707,9 @@ x 15
 y 13
 end
 arch slevel_3_2
+no_pass 1
 x 15
 y 13
-no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -3718,9 +3720,9 @@ x 15
 y 14
 end
 arch slevel_2_2_1
+no_pass 1
 x 15
 y 14
-no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -3792,11 +3794,11 @@ y 20
 end
 arch torch_1
 food 0
-x 15
-y 20
 material 0
 no_pick 1
 changing 0
+x 15
+y 20
 end
 arch flagstone
 x 15
@@ -3949,9 +3951,9 @@ x 16
 y 10
 end
 arch slevel_3_3
+no_pass 1
 x 16
 y 10
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -3962,9 +3964,9 @@ x 16
 y 11
 end
 arch slevel_2_2_2
+no_pass 1
 x 16
 y 11
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -3975,9 +3977,9 @@ x 16
 y 12
 end
 arch slevel_3_2
+no_pass 1
 x 16
 y 12
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -3988,9 +3990,9 @@ x 16
 y 13
 end
 arch slevel_2_2_1
+no_pass 1
 x 16
 y 13
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -4001,9 +4003,9 @@ x 16
 y 14
 end
 arch slevel_3_1
+no_pass 1
 x 16
 y 14
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -4082,11 +4084,11 @@ x 16
 y 21
 end
 arch igate_closed_1
-x 16
-y 21
 speed 0.500000
 resist_physical 30
 connected 1
+x 16
+y 21
 end
 arch dungeon_magic
 x 16
@@ -4148,12 +4150,12 @@ y 2
 end
 arch pentagram
 name exit
+type 66
 slaying ../world
 hp 3
 sp 23
 x 17
 y 2
-type 66
 end
 arch dungeon_magic
 x 17
@@ -4240,9 +4242,9 @@ x 17
 y 10
 end
 arch slevel_3_3
+no_pass 1
 x 17
 y 10
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -4253,9 +4255,9 @@ x 17
 y 11
 end
 arch slevel_3_3
+no_pass 1
 x 17
 y 11
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -4376,11 +4378,11 @@ x 17
 y 21
 end
 arch igate_closed_1
-x 17
-y 21
 speed 0.500000
 resist_physical 30
 connected 1
+x 17
+y 21
 end
 arch dungeon_magic
 x 17
@@ -4391,10 +4393,10 @@ x 17
 y 22
 end
 arch button_lever
-x 17
-y 22
 resist_physical 30
 connected 1
+x 17
+y 22
 end
 arch dungeon_magic
 x 17
@@ -4538,9 +4540,9 @@ x 18
 y 10
 end
 arch slevel_3_3
+no_pass 1
 x 18
 y 10
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -4551,9 +4553,9 @@ x 18
 y 11
 end
 arch slevel_2_2_3
+no_pass 1
 x 18
 y 11
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -4564,9 +4566,9 @@ x 18
 y 12
 end
 arch slevel_3_4
+no_pass 1
 x 18
 y 12
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -4577,9 +4579,9 @@ x 18
 y 13
 end
 arch slevel_2_2_4
+no_pass 1
 x 18
 y 13
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -4590,9 +4592,9 @@ x 18
 y 14
 end
 arch slevel_3_1
+no_pass 1
 x 18
 y 14
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -4671,11 +4673,11 @@ x 18
 y 21
 end
 arch igate_closed_1
-x 18
-y 21
 speed 0.500000
 resist_physical 30
 connected 1
+x 18
+y 21
 end
 arch dungeon_magic
 x 18
@@ -4753,11 +4755,11 @@ y 4
 end
 arch torch_1
 food 0
-x 19
-y 4
 material 0
 no_pick 1
 changing 0
+x 19
+y 4
 end
 arch dungeon_magic
 x 19
@@ -4828,9 +4830,9 @@ x 19
 y 10
 end
 arch slevel_2_2_3
+no_pass 1
 x 19
 y 10
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -4841,9 +4843,9 @@ x 19
 y 11
 end
 arch slevel_3_4
+no_pass 1
 x 19
 y 11
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -4854,9 +4856,9 @@ x 19
 y 12
 end
 arch slevel_3_4
+no_pass 1
 x 19
 y 12
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -4867,9 +4869,9 @@ x 19
 y 13
 end
 arch slevel_3_4
+no_pass 1
 x 19
 y 13
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -4880,9 +4882,9 @@ x 19
 y 14
 end
 arch slevel_2_2_4
+no_pass 1
 x 19
 y 14
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -4954,11 +4956,11 @@ y 20
 end
 arch torch_1
 food 0
-x 19
-y 20
 material 0
 no_pick 1
 changing 0
+x 19
+y 20
 end
 arch flagstone
 x 19
@@ -5303,14 +5305,14 @@ x 21
 y 7
 end
 arch gem
-title of flawless beauty
 face pretty_crystal.111
-x 21
-y 7
+title of flawless beauty
 speed 0.000000
 value 400000
 weight 100
 is_animated 0
+x 21
+y 7
 end
 arch dungeon_magic
 x 21
@@ -5429,14 +5431,14 @@ x 21
 y 17
 end
 arch gem
-title of flawless beauty
 face pretty_crystal.111
-x 21
-y 17
+title of flawless beauty
 speed 0.000000
 value 400000
 weight 100
 is_animated 0
+x 21
+y 17
 end
 arch dungeon_magic
 x 21
@@ -5954,30 +5956,30 @@ y 23
 end
 arch button_small
 name zonk
+resist_magic 30
+resist_electricity 30
+weight 1000
+connected 10
 x 23
 y 24
+end
+arch button_small
+name zonk
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
-end
-arch button_small
-name zonk
 x 23
 y 25
-resist_magic 30
-resist_electricity 30
-weight 1000
-connected 10
 end
 arch button_small
 name zonk
-x 23
-y 26
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
+x 23
+y 26
 end
 arch blocked
 x 24
@@ -6204,39 +6206,39 @@ y 23
 end
 arch button_small
 name zonk
-x 24
-y 24
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
+x 24
+y 24
 end
 arch block_door_open
 name 2
-x 24
-y 25
 speed 0.500000
 resist_magic 30
 value 1
 connected 2
+x 24
+y 25
 end
 arch creator
 name creator of chance
 other_arch boulder
-x 24
-y 25
 resist_fire 30
 resist_cold 30
 connected 20
+x 24
+y 25
 end
 arch button_small
 name zonk
-x 24
-y 26
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
+x 24
+y 26
 end
 arch blocked
 x 25
@@ -6403,29 +6405,29 @@ y 23
 end
 arch button_small
 name zonk
-x 25
-y 24
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
+x 25
+y 24
 end
 arch button_small
 name zonk
-x 25
-y 25
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 10
+x 25
+y 25
 end
 arch button_small
 name wdsm
-x 25
-y 26
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 weight 1000
 connected 11
+x 25
+y 26
 end

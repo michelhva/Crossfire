@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 19:47:25 1996
 endmsg
-x 34
-y 21
+width 34
+height 21
 end
 arch woods_2
 end
@@ -532,10 +532,10 @@ x 5
 y 9
 end
 arch bookshelf
-x 5
-y 9
 carrying 8000
 no_pick 1
+x 5
+y 9
 arch tome
 name crocodile
 msg
@@ -543,7 +543,6 @@ How doth the little crocodile
 Improve his shining tail,
 And pour the waters of the Nile
 On every golden scale!
-
 How cheerfully he seems to grin,
 How neatly spreads his claws,
 And welcomes little fishes in,
@@ -678,9 +677,9 @@ x 6
 y 9
 end
 arch bookshelf
+no_pick 1
 x 6
 y 9
-no_pick 1
 end
 arch woodfloor
 x 6
@@ -1159,9 +1158,9 @@ x 10
 y 16
 end
 arch chest_2
+no_pick 1
 x 10
 y 16
-no_pick 1
 end
 arch woodfloor
 x 10
@@ -1238,9 +1237,9 @@ x 11
 y 8
 end
 arch door_look_2
+no_pass 0
 x 11
 y 8
-no_pass 0
 end
 arch woodfloor
 x 11
@@ -1326,39 +1325,42 @@ x 12
 end
 arch woodfloor
 name woods
-slaying agito
 face woods_1.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 12
 y 1
-type 41
-protected 100
-connected 100
 end
 arch woodfloor
 name grass
-slaying agito
 face grass.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 12
 y 2
-type 41
-protected 100
-connected 100
 end
 arch woodfloor
 name grass
-slaying agito
 face grass.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 12
 y 3
-type 41
-protected 100
-connected 100
 end
 arch grass
 x 12
@@ -1378,9 +1380,9 @@ y 6
 end
 arch biglake_nw
 name pool
+no_pass 0
 x 12
 y 6
-no_pass 0
 end
 arch dungeon_floor
 x 12
@@ -1388,9 +1390,9 @@ y 7
 end
 arch biglake_sw
 name pool
+no_pass 0
 x 12
 y 7
-no_pass 0
 end
 arch dungeon_floor
 x 12
@@ -1398,7 +1400,7 @@ y 8
 end
 arch magic_mouth
 msg
-Bath Room 
+Bath Room
 endmsg
 x 12
 y 8
@@ -1452,10 +1454,9 @@ x 12
 y 15
 end
 arch button_lever
+connected 1
 x 12
 y 15
-protected 1
-connected 1
 end
 arch woodfloor
 x 12
@@ -1497,15 +1498,16 @@ x 13
 end
 arch woodfloor
 name woods
-slaying agito
 face woods_1.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 13
 y 1
-type 41
-protected 100
-connected 100
 end
 arch magic_ear
 msg
@@ -1514,36 +1516,38 @@ A man appears and leads you into the
 woods, to the secret agito of the
 Liberation Army:
 "Welcome fellow! We accept you as
- our spy."
+our spy."
 endmsg
-x 13
-y 2
 protected 100
 connected 100
+x 13
+y 2
 end
 arch woodfloor
 name evergreen
-slaying agito
 face tree_2.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 13
 y 2
-type 41
-protected 100
-connected 100
 end
 arch woodfloor
 name grass
-slaying agito
 face grass.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 13
 y 3
-type 41
-protected 100
-connected 100
 end
 arch grass
 x 13
@@ -1563,9 +1567,9 @@ y 6
 end
 arch biglake_ne
 name pool
+no_pass 0
 x 13
 y 6
-no_pass 0
 end
 arch palm
 x 13
@@ -1586,9 +1590,9 @@ y 7
 end
 arch biglake_center
 name pool
+no_pass 0
 x 13
 y 7
-no_pass 0
 end
 arch dungeon_floor
 x 13
@@ -1596,9 +1600,9 @@ y 8
 end
 arch biglake_sw
 name pool
+no_pass 0
 x 13
 y 8
-no_pass 0
 end
 arch dungeon_floor
 x 13
@@ -1646,11 +1650,11 @@ y 15
 end
 arch igate_closed_2
 name royal suite
-x 13
-y 15
 speed 0.500000
 protected 1
 connected 1
+x 13
+y 15
 end
 arch woodfloor
 x 13
@@ -1692,39 +1696,42 @@ x 14
 end
 arch woodfloor
 name woods
-slaying agito
 face woods_1.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 14
 y 1
-type 41
-protected 100
-connected 100
 end
 arch woodfloor
 name grass
-slaying agito
 face grass.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 14
 y 2
-type 41
-protected 100
-connected 100
 end
 arch woodfloor
 name grass
-slaying agito
 face grass.111
+type 41
+slaying agito
 hp 1
 sp 13
+activate_on_push 1
+activate_on_release 1
+connected 100
 x 14
 y 3
-type 41
-protected 100
-connected 100
 end
 arch grass
 x 14
@@ -1752,9 +1759,9 @@ y 7
 end
 arch biglake_ne
 name pool
+no_pass 0
 x 14
 y 7
-no_pass 0
 end
 arch dungeon_floor
 x 14
@@ -1762,9 +1769,9 @@ y 8
 end
 arch biglake_se
 name pool
+no_pass 0
 x 14
 y 8
-no_pass 0
 end
 arch dungeon_floor
 x 14
@@ -1795,18 +1802,18 @@ x 14
 y 12
 end
 arch bench_1_1
+no_pass 1
 x 14
 y 12
-no_pass 1
 end
 arch cobblestones2
 x 14
 y 13
 end
 arch bench_2_2_1
+no_pass 1
 x 14
 y 13
-no_pass 1
 end
 arch cobblestones2
 x 14
@@ -1931,9 +1938,9 @@ x 15
 y 13
 end
 arch bench_2_1_2
+no_pass 1
 x 15
 y 13
-no_pass 1
 end
 arch cobblestones2
 x 15
@@ -1942,10 +1949,10 @@ end
 arch altar
 name Royal Suite (10 platinum)
 slaying platinacoin
-x 15
-y 14
 protected 10
 connected 10
+x 15
+y 14
 end
 arch cobblestones2
 x 15
@@ -2046,7 +2053,7 @@ name Tom
 msg
 @match siegfried
 Pssht, not so loud! Go to the back side
-of the hotel and speak the password 
+of the hotel and speak the password
 again, to the evergreen tree.
 @match *
 Welcome to my sweet hotel.
@@ -2065,9 +2072,9 @@ x 16
 y 13
 end
 arch bench_2_1_2
+no_pass 1
 x 16
 y 13
-no_pass 1
 end
 arch cobblestones2
 x 16
@@ -2077,10 +2084,10 @@ arch altar
 name Single Room (5 gold)
 slaying goldcoin
 food 5
-x 16
-y 14
 protected 20
 connected 20
+x 16
+y 14
 end
 arch cobblestones2
 x 16
@@ -2095,9 +2102,9 @@ x 16
 y 17
 end
 arch door_look_1
+no_pass 0
 x 16
 y 17
-no_pass 0
 end
 arch cobblestones
 x 16
@@ -2182,9 +2189,9 @@ x 17
 y 13
 end
 arch bench_2_1_2
+no_pass 1
 x 17
 y 13
-no_pass 1
 end
 arch cobblestones2
 x 17
@@ -2194,10 +2201,10 @@ arch altar
 name Rest Room (1 silver)
 slaying silvercoin
 food 1
-x 17
-y 14
 protected 30
 connected 30
+x 17
+y 14
 end
 arch cobblestones2
 x 17
@@ -2212,9 +2219,9 @@ x 17
 y 17
 end
 arch door_look_1
+no_pass 0
 x 17
 y 17
-no_pass 0
 end
 arch cobblestones
 x 17
@@ -2311,18 +2318,18 @@ x 18
 y 12
 end
 arch bench_1_1
+no_pass 1
 x 18
 y 12
-no_pass 1
 end
 arch cobblestones2
 x 18
 y 13
 end
 arch bench_2_2_4
+no_pass 1
 x 18
 y 13
-no_pass 1
 end
 arch cobblestones2
 x 18
@@ -2403,10 +2410,9 @@ x 19
 y 7
 end
 arch button_lever
+connected 2
 x 19
 y 7
-protected 2
-connected 2
 end
 arch woodfloor
 x 19
@@ -2414,11 +2420,11 @@ y 8
 end
 arch igate_closed_1
 name single room
-x 19
-y 8
 speed 0.500000
 protected 2
 connected 2
+x 19
+y 8
 end
 arch cobblestones2
 x 19
@@ -2584,11 +2590,11 @@ y 16
 end
 arch igate_closed_2
 name rest room
-x 20
-y 16
 speed 0.500000
 protected 3
 connected 3
+x 20
+y 16
 end
 arch woodfloor
 x 20
@@ -2705,10 +2711,9 @@ x 21
 y 16
 end
 arch button_lever
+connected 3
 x 21
 y 16
-protected 3
-connected 3
 end
 arch woodfloor
 x 21
@@ -3049,9 +3054,9 @@ x 24
 y 15
 end
 arch door_look_2
+no_pass 0
 x 24
 y 15
-no_pass 0
 end
 arch woodfloor
 x 24
@@ -3173,7 +3178,7 @@ y 14
 end
 arch magic_mouth
 msg
-Pool :) 
+Pool :)
 endmsg
 x 25
 y 15
@@ -3274,15 +3279,15 @@ y 12
 end
 arch biglake_nw
 name pool
+no_pass 0
 x 26
 y 12
-no_pass 0
 end
 arch biglake_center
 name pool
+no_pass 0
 x 26
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 26
@@ -3290,9 +3295,9 @@ y 14
 end
 arch biglake_sw
 name pool
+no_pass 0
 x 26
 y 14
-no_pass 0
 end
 arch dungeon_floor
 x 26
@@ -3394,27 +3399,27 @@ y 11
 end
 arch biglake_center
 name pool
+no_pass 0
 x 27
 y 12
-no_pass 0
 end
 arch biglake_center
 name pool
+no_pass 0
 x 27
 y 13
-no_pass 0
 end
 arch mover_1
-x 27
-y 14
 speed 0.500000
 speed_left -1.940000
 level 1
 attacktype 1
+x 27
+y 14
 end
 arch magic_mouth
 msg
-Yoo-hoo! 
+Yoo-hoo!
 endmsg
 x 27
 y 14
@@ -3429,12 +3434,12 @@ x 27
 y 14
 end
 arch mover_1
-x 27
-y 15
 speed 0.500000
 speed_left -1.940000
 level 1
 attacktype 1
+x 27
+y 15
 end
 arch magic_mouth
 msg
@@ -3459,9 +3464,9 @@ end
 arch table
 name water-chute
 face stair3_up.111
+material 64
 x 27
 y 16
-material 64
 end
 arch woodfloor
 x 27
@@ -3563,15 +3568,15 @@ y 12
 end
 arch biglake_ne
 name pool
+no_pass 0
 x 28
 y 12
-no_pass 0
 end
 arch biglake_center
 name pool
+no_pass 0
 x 28
 y 13
-no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -3579,9 +3584,9 @@ y 14
 end
 arch biglake_se
 name pool
+no_pass 0
 x 28
 y 14
-no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4021,18 +4026,18 @@ x 33
 end
 arch button_small
 name 1
-x 33
-y 1
 protected 1
 connected 1
+x 33
+y 1
 end
 arch creator
 name 10
 other_arch boulder
-x 33
-y 1
 protected 10
 connected 10
+x 33
+y 1
 end
 arch blocked
 x 33
@@ -4040,18 +4045,18 @@ y 2
 end
 arch button_small
 name 2
-x 33
-y 3
 protected 2
 connected 2
+x 33
+y 3
 end
 arch creator
 name 20
 other_arch boulder
-x 33
-y 3
 protected 20
 connected 20
+x 33
+y 3
 end
 arch blocked
 x 33
@@ -4059,18 +4064,18 @@ y 4
 end
 arch button_small
 name 3
-x 33
-y 5
 protected 3
 connected 3
+x 33
+y 5
 end
 arch creator
 name 30
 other_arch boulder
-x 33
-y 5
 protected 30
 connected 30
+x 33
+y 5
 end
 arch blocked
 x 33
