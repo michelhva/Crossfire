@@ -8,7 +8,7 @@ no_pick 1
 slow_move 3
 editable 8
 is_floor 1
-smoothlevel 30
+smoothlevel 59
 magicmap khaki
 smoothface hills.111 hills_S.111
 end

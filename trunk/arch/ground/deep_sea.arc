@@ -9,7 +9,7 @@ deep_sea.113
 deep_sea.112
 mina
 magicmap blue
-smoothlevel 3
+smoothlevel 17
 smoothface deep_sea.111 deep_sea_S.111
 smoothface deep_sea.112 deep_sea_S.112
 smoothface deep_sea.113 deep_sea_S.113

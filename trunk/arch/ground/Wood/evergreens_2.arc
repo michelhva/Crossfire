@@ -9,6 +9,6 @@ no_pick 1
 slow_move 3
 is_wooded 1
 editable 8
-smoothlevel 12
+smoothlevel 125
 smoothface evergreens_1.111 empty_S.111
 end
