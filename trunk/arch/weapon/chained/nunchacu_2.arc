@@ -4,6 +4,7 @@ nrof 1
 last_sp 4
 type 15
 face nunchacu_2.111
+weapontype 8
 material 18
 dam 2 
 weight 5500

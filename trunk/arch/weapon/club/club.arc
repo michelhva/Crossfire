@@ -5,6 +5,7 @@ type 15
 face club.111
 material 16
 dam 6
+weapontype 8
 weight 9000
 value 10
 editable 1024

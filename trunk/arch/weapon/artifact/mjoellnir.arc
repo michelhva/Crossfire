@@ -5,6 +5,7 @@ last_sp 8
 type 15
 face mjoellnir.111
 material 2
+weapontype 7
 dam 10
 weight 30000
 value 75000
