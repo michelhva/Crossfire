@@ -1,5 +1,5 @@
 Object potion_restoration
-name potion of restoration
+name potion of life
 face potiongen.111
 value 6000
 type 5
