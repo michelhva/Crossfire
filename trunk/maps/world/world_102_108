@@ -841,6 +841,10 @@ arch tower_tob
 x 4
 y 4
 end
+arch light4
+x 4
+y 4
+end
 arch sea
 x 4
 y 5
@@ -862,6 +866,10 @@ x 4
 y 9
 end
 arch sea
+x 4
+y 10
+end
+arch light4
 x 4
 y 10
 end
@@ -1737,6 +1745,10 @@ arch sea
 x 8
 y 5
 end
+arch light4
+x 8
+y 5
+end
 arch sea
 x 8
 y 6
@@ -2019,6 +2031,10 @@ name South Lighthouse
 slaying /santo_dominion/magara/south_lighthouse/floor_1
 hp 16
 sp 1
+x 9
+y 12
+end
+arch light4
 x 9
 y 12
 end
@@ -2466,6 +2482,10 @@ sp 1
 x 11
 y 7
 end
+arch light4
+x 11
+y 7
+end
 arch sea
 x 11
 y 8
@@ -2475,6 +2495,10 @@ x 11
 y 9
 end
 arch sea
+x 11
+y 10
+end
+arch light3
 x 11
 y 10
 end
@@ -3268,6 +3292,10 @@ arch brush
 x 14
 y 17
 end
+arch lamppost
+x 14
+y 17
+end
 arch brush
 x 14
 y 18
@@ -3777,6 +3805,10 @@ arch grass
 x 16
 y 20
 end
+arch lamppost
+x 16
+y 20
+end
 arch tree
 x 16
 y 21
@@ -3969,6 +4001,10 @@ x 17
 y 12
 end
 arch cobblestones
+x 17
+y 13
+end
+arch lamppost
 x 17
 y 13
 end
@@ -4396,6 +4432,10 @@ x 19
 y 7
 end
 arch grass
+x 19
+y 8
+end
+arch lamppost
 x 19
 y 8
 end
@@ -5132,6 +5172,10 @@ arch brush
 x 22
 y 18
 end
+arch lamppost
+x 22
+y 18
+end
 arch cobblestones
 x 22
 y 19
@@ -5324,6 +5368,10 @@ x 23
 y 11
 end
 arch brush
+x 23
+y 12
+end
+arch lamppost
 x 23
 y 12
 end
@@ -5806,6 +5854,10 @@ x 25
 y 20
 end
 arch brush
+x 25
+y 21
+end
+arch light2
 x 25
 y 21
 end
@@ -6466,6 +6518,10 @@ arch grass
 x 28
 y 14
 end
+arch lamppost
+x 28
+y 14
+end
 arch grass
 x 28
 y 15
@@ -6642,6 +6698,10 @@ x 29
 y 8
 end
 arch grass
+x 29
+y 9
+end
+arch lamppost
 x 29
 y 9
 end
@@ -7103,6 +7163,10 @@ arch grassmedium
 x 31
 y 20
 end
+arch lamppost
+x 31
+y 20
+end
 arch grassmedium
 x 31
 y 21
@@ -7422,7 +7486,7 @@ arch cobblestones
 x 32
 y 48
 end
-arch hills
+arch cobblestones
 x 32
 y 49
 end
@@ -7804,7 +7868,7 @@ arch cobblestones
 x 34
 y 33
 end
-arch hills
+arch cobblestones
 x 34
 y 34
 end
