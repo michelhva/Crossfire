@@ -49,6 +49,9 @@ end
 arch wwall_3_2
 y 6
 end
+arch dungeon_magic
+y 6
+end
 arch woodfloor2
 y 7
 end
@@ -156,6 +159,10 @@ x 1
 y 6
 end
 arch wwall_2_1_2
+x 1
+y 6
+end
+arch dungeon_magic
 x 1
 y 6
 end
@@ -299,6 +306,10 @@ arch wwall_2_1_2
 x 2
 y 6
 end
+arch dungeon_magic
+x 2
+y 6
+end
 arch dirtfloor
 no_magic 1
 damned 1
@@ -410,6 +421,10 @@ arch swall_2_2_2
 x 3
 y 5
 end
+arch dungeon_magic
+x 3
+y 5
+end
 arch woodfloor2
 x 3
 y 6
@@ -419,6 +434,10 @@ x 3
 y 6
 end
 arch wwall_1_3
+x 3
+y 6
+end
+arch dungeon_magic
 x 3
 y 6
 end
@@ -657,6 +676,10 @@ arch swall_2_2_3
 x 5
 y 5
 end
+arch dungeon_magic
+x 5
+y 5
+end
 arch woodfloor2
 x 5
 y 6
@@ -666,6 +689,10 @@ x 5
 y 6
 end
 arch wwall_1_4
+x 5
+y 6
+end
+arch dungeon_magic
 x 5
 y 6
 end
@@ -780,6 +807,10 @@ x 6
 y 6
 end
 arch wwall_2_1_2
+x 6
+y 6
+end
+arch dungeon_magic
 x 6
 y 6
 end
@@ -932,6 +963,10 @@ arch wwall_2_1_2
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 6
+end
 arch dirtfloor
 no_magic 1
 damned 1
@@ -1055,6 +1090,10 @@ x 8
 y 6
 end
 arch wwall_3_4
+x 8
+y 6
+end
+arch dungeon_magic
 x 8
 y 6
 end
