@@ -1,4 +1,5 @@
 Object chess_king
+race chess
 name king
 randomitems standard
 face ch_king.111

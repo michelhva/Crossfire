@@ -1,4 +1,5 @@
 Object ghost
+race undead
 face ghost.111
 randomitems ghost
 color_fg white

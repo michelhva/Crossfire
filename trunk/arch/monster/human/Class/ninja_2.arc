@@ -1,4 +1,5 @@
 Object ninja2
+race human
 name ninja
 randomitems npc_ninja
 face ninja_2.111

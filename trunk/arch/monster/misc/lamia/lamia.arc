@@ -1,7 +1,7 @@
 Object lamia
 randomitems lamia
 face lamia.131
-race chaos
+race faerie
 monster 1
 sleep 1
 anim

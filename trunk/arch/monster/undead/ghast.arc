@@ -1,6 +1,6 @@
 Object ghast
 randomitems standard
-race ghast
+race undead
 face ghast.111
 color_fg black
 anim

@@ -1,4 +1,5 @@
 Object para_fire
+race fire_elemental
 name fire para-elemental
 face para_fire.111
 randomitems para_elemental

@@ -1,6 +1,6 @@
 Object ologhi
 name Olog-hi
-race humanoid
+race goblin
 face ologhi.111
 anim
 ologhi.111

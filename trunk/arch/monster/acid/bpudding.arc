@@ -1,4 +1,5 @@
 Object black_pudding
+race slime
 other_arch black_pudding_split
 name black pudding
 face bpudding.111

@@ -1,4 +1,5 @@
 Object elf_1
+race faerie
 name elf
 randomitems throw_stnd
 face elf_1.111

@@ -1,5 +1,6 @@
 Object fire_elemental
 name fire elemental
+race fire_elemental
 face elem_fire.111
 color_fg red
 anim

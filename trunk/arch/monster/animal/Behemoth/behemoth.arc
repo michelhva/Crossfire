@@ -1,5 +1,6 @@
 Object behemoth
 face behemoth.111
+race animal
 animation behemoth_1
 attacktype 1025
 monster 1

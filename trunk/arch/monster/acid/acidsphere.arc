@@ -1,4 +1,5 @@
 Object acid_sphere
+race slime
 name acid sphere
 face acidsphere.111
 anim

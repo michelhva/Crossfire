@@ -1,4 +1,5 @@
 Object elec_dragon
+race dragon
 name electric dragon hatchling
 randomitems spark
 face elec_drag.171

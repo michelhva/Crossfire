@@ -1,4 +1,5 @@
 Object DK
+race giant
 name Dread Knight
 randomitems DK
 face Bk.111

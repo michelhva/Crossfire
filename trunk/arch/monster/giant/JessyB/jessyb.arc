@@ -1,4 +1,5 @@
 Object jessyb
+race demon
 name Jessy
 randomitems big_wizard
 face jessyb.111

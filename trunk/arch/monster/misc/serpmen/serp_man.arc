@@ -1,4 +1,5 @@
 Object serp_man
+race reptile
 name Serpentman
 face serp_man.131
 randomitems serp_man

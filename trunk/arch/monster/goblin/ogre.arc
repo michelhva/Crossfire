@@ -1,6 +1,6 @@
 Object ogre
 randomitems ogre
-race humanoid
+race giant
 face ogre.111
 anim
 ogre.111

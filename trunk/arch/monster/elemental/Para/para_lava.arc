@@ -1,4 +1,5 @@
 Object para_lava
+race fire_elemental
 name lava para-elemental
 face para_lava.111
 randomitems para_elemental

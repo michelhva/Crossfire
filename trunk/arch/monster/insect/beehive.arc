@@ -1,4 +1,5 @@
 Object beehive
+race insect
 other_arch killer_bee
 name beehive
 face beehive.111

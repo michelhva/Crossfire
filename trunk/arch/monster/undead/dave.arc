@@ -1,5 +1,6 @@
 Object dave
 name Dave
+race undead
 face dave.111
 anim
 dave.111

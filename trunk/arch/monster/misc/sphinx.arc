@@ -2,7 +2,7 @@ Object sphinx
 name sphinx
 face sphinx.171
 randomitems sphinx
-race sphinx
+race unnatural
 monster 1
 sleep 1
 Wis 20

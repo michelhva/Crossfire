@@ -1,4 +1,5 @@
 Object generate_stalker
+race faerie
 name generator
 other_arch stalker
 face stalkergen.111

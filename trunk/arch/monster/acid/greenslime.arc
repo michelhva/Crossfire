@@ -1,4 +1,5 @@
 Object green_slime
+race slime
 name green slime
 face greenslime.111
 color_fg green

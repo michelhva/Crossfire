@@ -1,6 +1,6 @@
 Object scorpion
 face scorpion.111
-race insect
+race animal
 randomitems scorpion
 anim
 scorpion.111

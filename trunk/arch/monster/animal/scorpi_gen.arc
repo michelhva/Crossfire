@@ -1,4 +1,5 @@
 Object generate_scorpion
+race animal
 other_arch scorpion
 name generator
 generator 1

@@ -1,5 +1,5 @@
 Object dwarf
-race humanoid
+race dwarf
 name dwarf
 randomitems standard
 face dwarf.111

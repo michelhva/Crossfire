@@ -1,4 +1,5 @@
 Object chess_pawn
+race chess
 name pawn
 randomitems standard
 face ch_pawn.111

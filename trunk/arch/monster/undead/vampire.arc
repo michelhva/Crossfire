@@ -1,5 +1,6 @@
 Object vampire
 randomitems vampire
+race undead
 face vampire.111
 anim
 vampire.111

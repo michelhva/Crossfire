@@ -1,5 +1,6 @@
 Object lich
 name Lich
+race undead
 randomitems lich
 face lich.111
 anim

@@ -1,4 +1,5 @@
 Object wight
+race undead
 face wight.111
 randomitems wight
 anim

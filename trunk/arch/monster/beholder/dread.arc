@@ -1,6 +1,6 @@
 Object dread
 name Dread
-race animal
+race unnatural
 randomitems beholder_big
 face dread.111
 color_fg blue

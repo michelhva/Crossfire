@@ -1,4 +1,5 @@
 Object generate_serp_man
+race reptile
 other_arch serp_man
 name generator
 generator 1

@@ -1,4 +1,5 @@
 Object nightmare
+race undead
 name nightmare
 face nightmare.111
 anim

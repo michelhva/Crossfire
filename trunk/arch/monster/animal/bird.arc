@@ -1,7 +1,7 @@
 Object bird
 face bird.111
 color_fg brown
-race animal
+race bird
 anim
 bird.111
 bird.112

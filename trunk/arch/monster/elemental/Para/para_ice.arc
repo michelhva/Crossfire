@@ -1,4 +1,5 @@
 Object para_ice
+race water_elemental
 name ice para-elemental
 face para_ice.111
 randomitems para_elemental

@@ -1,5 +1,6 @@
 Object shadowtiger
 name Shadow Tiger
+race animal
 face shadowtiger.111
 anim
 facings 2

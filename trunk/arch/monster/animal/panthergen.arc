@@ -1,4 +1,5 @@
 Object generate_panther
+race animal
 name generator
 other_arch panther
 face panthergen.111

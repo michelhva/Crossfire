@@ -1,4 +1,5 @@
 Object generate_goblin
+race goblin
 other_arch goblin
 name generator
 generator 1

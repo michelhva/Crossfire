@@ -1,5 +1,5 @@
 Object blob
-race blob
+race slime
 face blob.111
 anim
 blob.111

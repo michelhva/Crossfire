@@ -1,4 +1,5 @@
 Object grimreaper
+race undead
 randomitems ring
 face grimreaper.111
 anim

@@ -1,4 +1,5 @@
 Object pet_necro
+race animal
 name pet of Necromancer
 face pet_necro.111
 anim

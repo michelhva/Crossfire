@@ -1,4 +1,5 @@
 Object mabu
+race giant
 name mabu suke
 randomitems giant
 monster 1

@@ -1,7 +1,7 @@
 Object bone_head
 name Evil Master, Bonehead
 randomitems beholder
-race skull
+race demon
 face bone_head.111
 anim
 bone_head.111

@@ -1,5 +1,6 @@
 Object demilich
 name demilich
+race undead
 randomitems demilich
 face demilich.111
 anim

@@ -1,7 +1,7 @@
 Object cyclops
 randomitems cyclops
 face cyclops.131
-race chaos
+race giant
 monster 1
 sleep 1
 Wis 11

@@ -1,7 +1,7 @@
 Object baslic
 name baslic
 randomitems chinese
-race baslic
+race unnatural
 face baslic.171
 anim
 baslic.171

@@ -1,4 +1,5 @@
 Object titan
+race giant
 randomitems titan
 monster 1
 sleep 1

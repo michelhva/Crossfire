@@ -1,4 +1,5 @@
 Object generate_postman
+race human
 other_arch postman
 name generator
 generator 1

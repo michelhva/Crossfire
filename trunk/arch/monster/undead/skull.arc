@@ -1,6 +1,6 @@
 Object skull
 randomitems beholder
-race skull
+race undead
 face skull.111
 anim
 skull.111

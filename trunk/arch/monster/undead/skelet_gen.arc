@@ -1,6 +1,6 @@
 Object generate_skeleton
 other_arch skeleton
-race skeleton
+race undead
 name generator
 generator 1
 alive 1

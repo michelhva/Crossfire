@@ -1,4 +1,5 @@
 Object generate_devil
+race demon
 other_arch devil
 name generator
 generator 1

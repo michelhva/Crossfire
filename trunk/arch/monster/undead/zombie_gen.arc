@@ -1,4 +1,5 @@
 Object generate_zombie
+race undead
 other_arch zombie
 randomitems grave
 name generator

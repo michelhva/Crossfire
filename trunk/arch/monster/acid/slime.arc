@@ -1,4 +1,5 @@
 Object slime
+race slime
 other_arch slime
 face slime.111
 color_fg green

@@ -1,5 +1,5 @@
 Object lesser_dwarven_guard
-race humanoid
+race dwarf
 name lesser dwarven guard
 randomitems ldwar_guard
 face lesser_dwarven_guard.111

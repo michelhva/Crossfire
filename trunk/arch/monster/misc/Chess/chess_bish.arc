@@ -1,4 +1,5 @@
 Object chess_bishop
+race chess
 name bishop
 randomitems standard
 face ch_bish.111
