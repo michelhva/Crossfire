@@ -7,7 +7,7 @@ subtype 35
 level 9
 value 90
 sp 10
-casting_time 30
+casting_time 10
 skill evocation
 path_attuned 8
 other_arch ball_lightning
@@ -19,4 +19,10 @@ maxsp 15
 attacktype 10
 no_drop 1
 invisible 1
+msg
+Ball lightning creates a ball of electrical energy.  This ball heads in
+the direction it is cast, and if it encounters a monsters, it sticks on
+the monster, dancing around shocking them continuously.  The spell
+does have a limited duration.
+endmsg
 end

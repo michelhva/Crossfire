@@ -7,7 +7,7 @@ subtype 15
 level 10
 value 100
 sp 30
-casting_time 30
+casting_time 13
 skill summoning
 path_attuned 2048
 no_drop 1
@@ -20,4 +20,10 @@ dam_modifier 1
 range 0
 maxsp 10
 is_used_up 1
+msg
+Build director creates a director in the facing the direction the character
+casts the spell.  Directors can be used to change the course of certain
+spells - bullets and bolts most notable.  Thus, it can be used to be able
+to fire a spell around a corner, or direct a spell back at the caster.
+endmsg
 end

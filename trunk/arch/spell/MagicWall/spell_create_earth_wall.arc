@@ -4,7 +4,7 @@ name_pl create earth wall
 face spell_summoner.111
 level 4
 sp 6
-casting_time 30
+casting_time 12
 path_attuned 2048
 other_arch earthwall
 skill summoning
@@ -17,4 +17,11 @@ duration 32
 duration_modifier 1
 range 2
 no_pass 1
+msg
+Create earth wall will crete a line of earth walls.  Unlike most magic
+wall spells, the earthwalls cast no spells and do no damage.  However,
+they block most creatures from passing over them, and block vision.
+Also, unlike many of the magic wall spells, earthwalls will stick around
+until they are destroyed.
+endmsg
 end

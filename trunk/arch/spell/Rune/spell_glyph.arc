@@ -9,7 +9,12 @@ invisible 1
 level 12
 value 120
 grace 5
-casting_time 30
+casting_time 15
 skill praying
 path_attuned 2048
+msg
+Glyph is a special rune - when casting the spell, the caster specifies
+what other spell should be encapsulated in the glyph spell.
+When the glyph is activated, that other spell is cast on the target.
+endmsg
 end

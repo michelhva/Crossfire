@@ -4,7 +4,7 @@ name_pl summon fire elemental
 face spell_summoner.111
 level 7
 sp 25
-casting_time 40
+casting_time 12
 path_attuned 64
 other_arch fire_elemental
 dam 20
@@ -20,4 +20,10 @@ attacktype 4
 no_drop 1
 invisible 1
 skill summoning
+msg
+Summon fire elemental summons the creature from the elemental plane of fire.
+This elemental will do the casters wishes, much like a golem.
+Fire elementals, being they are made of fire, are impervious from fire
+based damage, and have fire based attacks.
+endmsg
 end

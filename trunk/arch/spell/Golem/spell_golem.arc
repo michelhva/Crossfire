@@ -4,7 +4,7 @@ name_pl summon golem
 face spell_summoner.111
 level 2
 sp 5
-casting_time 30
+casting_time 10
 path_attuned 64
 other_arch golem
 dam 16
@@ -20,4 +20,11 @@ attacktype 1
 no_drop 1
 invisible 1
 skill summoning
+msg
+Golem summons a magical creature that does the casters wishing.  The
+caster can have it attack other creatures, bash down doors, detonate
+runes, etc.  The golem has a finite life, and this life is shortened
+by any damage it takes.  This golem is a bit more powerful than the
+lesser golem.
+endmsg
 end

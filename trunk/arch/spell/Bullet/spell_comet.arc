@@ -5,7 +5,7 @@ face spell_pyromancy.111
 level 8
 value 80
 sp 15
-casting_time 20
+casting_time 10
 path_attuned 16
 other_arch meteor
 dam 75
@@ -21,4 +21,9 @@ no_drop 1
 invisible 1
 skill pyromancy
 food 10
+msg
+The comet spells fires a comet in a specified direction.  This comet
+inflicts serious physical harm on whatever it hits, and then bursts into
+fire.
+endmsg
 end

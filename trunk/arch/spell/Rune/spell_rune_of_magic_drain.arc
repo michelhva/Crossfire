@@ -9,8 +9,13 @@ invisible 1
 level 14
 value 140
 sp 30
-casting_time 30
+casting_time 15
 skill evocation
 path_attuned 32768
 other_arch rune_drain_magic
+msg
+This creates a rune, that when triggered, drains the mana of the
+target.  This drain in mana will make it impossible the the target to
+cast spells until they regain sufficient mana to do so.
+endmsg
 end

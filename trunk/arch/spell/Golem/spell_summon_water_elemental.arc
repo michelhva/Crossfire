@@ -4,7 +4,7 @@ name_pl summon water elemental
 face spell_summoner.111
 level 5
 sp 15
-casting_time 40
+casting_time 11
 path_attuned 64
 other_arch water_elemental
 dam 40
@@ -20,4 +20,10 @@ attacktype 17
 no_drop 1
 invisible 1
 skill summoning
+msg
+Summon water elemental summons the creature from the elemental plane of
+water.  This elemental will do the casters wishes, much like a golem.
+Water elementals attack with cold and physical attacks.  They are not
+completely immune to cold attacks however.
+endmsg
 end

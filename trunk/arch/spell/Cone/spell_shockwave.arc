@@ -4,7 +4,7 @@ name_pl shockwave
 face spell_evocation.111
 level 14
 sp 26
-casting_time 20
+casting_time 9
 path_attuned 0
 other_arch shockwave
 dam 10
@@ -20,4 +20,9 @@ attacktype 3
 no_drop 1
 invisible 1
 skill evocation
+msg
+Shockwave is a cone of force, hitting creatures with magical and
+physical force.  Because it hits with physical force, any armor the
+hit creatures are wearing will provide them some protection.
+endmsg
 end

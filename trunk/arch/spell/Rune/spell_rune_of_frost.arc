@@ -9,7 +9,7 @@ invisible 1
 level 4
 value 40
 sp 10
-casting_time 30
+casting_time 10
 skill evocation
 path_attuned 2
 other_arch rune_frost

@@ -4,7 +4,7 @@ name_pl mana blast
 face spell_evocation.111
 level 2
 sp 10
-casting_time 15
+casting_time 7
 path_attuned 32768
 other_arch manablast
 dam 4
@@ -20,4 +20,8 @@ attacktype 2
 no_drop 1
 invisible 1
 skill evocation
+msg
+Mana blast fires a cone of magical energy.  The energy is pure magic, 
+which few creatures have resistance to.
+endmsg
 end
