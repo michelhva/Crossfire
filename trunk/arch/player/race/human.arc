@@ -3,6 +3,13 @@ name human
 race human
 randomitems human_player
 face human.171
+msg
+Humans are the generalists of the races.
+They are fit for any trade, and usually
+pick up a skill from their parents in
+addition to what they've learned as
+apprentices in their craft.
+endmsg
 color_fg black
 anim
 human.111
