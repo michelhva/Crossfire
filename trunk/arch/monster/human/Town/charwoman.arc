@@ -23,7 +23,6 @@ sp 1
 maxsp 1
 exp 0
 speed 0.15
-type 6-7
 weight 50000
 level 1
 run_away 90
