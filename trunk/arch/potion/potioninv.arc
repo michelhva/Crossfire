@@ -14,7 +14,7 @@ end
 Object potion_aethereality
 name potion of aethereality
 nrof 1
-face potioninv.111
+face potion_aether.111
 color_fg orange
 type 5
 level 1
