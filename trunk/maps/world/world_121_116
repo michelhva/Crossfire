@@ -12784,12 +12784,10 @@ arch sign
 name Welcome to Navar City
 msg
 Welcome to the city of Navar!
-
-Magic is supressed in public streets 
+Magic is supressed in public streets
 by order of the city council.
-
 Dungeons open: Warehouses
-Even more houses                  
+Even more houses
 Frolicing Mermaid
 All Shops
 Gunther's smithy
@@ -13166,9 +13164,11 @@ sp 28
 x 43
 y 39
 end
-arch rl_house1
-name apartments
-name_pl apartments
+arch temple1
+name temple of Gorokh
+slaying /navar_city/temples/gorokh
+hp 7
+sp 13
 x 45
 y 39
 end
