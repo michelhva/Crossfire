@@ -27,4 +27,5 @@ attacktype 1
 weapontype 5
 name_pl tridents
 client_type 136
+body_arm -1
 end

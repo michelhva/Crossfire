@@ -17,4 +17,5 @@ editable 5120
 magicmap khaki
 name_pl Mjoellnirs
 client_type 100
+body_arm -1
 end

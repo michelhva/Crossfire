@@ -14,4 +14,5 @@ weapontype 1
 magicmap white
 name_pl swords
 client_type 101
+body_arm -1
 end

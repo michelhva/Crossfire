@@ -19,4 +19,6 @@ weight 18000
 value 100000
 editable 5120
 color_fg black
+body_arm -1
+item_power 2
 end

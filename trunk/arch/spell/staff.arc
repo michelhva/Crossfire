@@ -23,4 +23,5 @@ material 16
 editable 2048
 name_pl staves
 client_type 712
+body_range -1
 end

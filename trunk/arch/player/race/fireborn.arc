@@ -46,6 +46,7 @@ level 1
 ac 0
 wc 21
 dam 0
+can_use_shield 0
 can_use_armour 0
 can_use_weapon 0
 path_attuned 2
@@ -66,6 +67,12 @@ resist_poison 100
 resist_cold -30
 resist_ghosthit -50
 editable 0
+# Do they have shoulders?  Or waists?  Or wrists?
+body_range 1
+body_neck 1
+body_neck 2
+body_skill 1
+body_finger 4
 end
 Object fireborn_player_force
 name Fireborn_Force

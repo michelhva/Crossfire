@@ -14,14 +14,15 @@ speed 0.3
 ac 4
 resist_physical 40
 resist_electricity 30
-
 Cha 1
 Str 1
 exp 1
 magic 3
-last_heal 2
 last_sp 27
 weight 15000
 value 4000
 editable 5120
+body_torso -1
+gen_sp_armour 2
+item_power 9
 end

@@ -11,4 +11,5 @@ material 8
 editable 1024
 nrof 1
 color_fg black
+body_shoulder -1
 end

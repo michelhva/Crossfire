@@ -13,4 +13,5 @@ weight 10000
 value 9
 material 128
 editable 1024
+body_torso -1
 end

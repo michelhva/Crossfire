@@ -12,4 +12,5 @@ magicmap yellow
 nrof 1
 name_pl amulets of lifesaving
 client_type 381
+body_neck -1
 end

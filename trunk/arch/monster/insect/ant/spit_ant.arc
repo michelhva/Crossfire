@@ -46,4 +46,5 @@ dam 15
 speed -0.18
 weight 15000
 editable 1
+body_arm 2
 end

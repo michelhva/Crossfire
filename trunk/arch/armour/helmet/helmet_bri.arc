@@ -13,4 +13,6 @@ Pow 2
 sp 1
 editable 5120
 magicmap grey
+body_head -1
+item_power 5
 end

@@ -20,6 +20,7 @@ weight 71000
 food 500
 speed 0.5
 attacktype 1
+can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 Str 4

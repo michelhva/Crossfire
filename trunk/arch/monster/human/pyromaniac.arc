@@ -39,4 +39,5 @@ run_away 99
 exp 500
 editable 1
 color_fg black
+body_skill 1
 end

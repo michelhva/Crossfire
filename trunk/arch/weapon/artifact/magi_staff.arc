@@ -26,4 +26,5 @@ editable 5120
 magicmap black
 name_pl Staves of the Magi
 client_type 100
+body_arm -1
 end

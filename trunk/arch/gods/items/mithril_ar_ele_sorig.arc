@@ -20,11 +20,13 @@ Dex 1
 Str 1
 exp 1
 magic 5
-last_heal 2
+gen_sp_armour 2
 last_sp 27
 weight 15000
 value 4000
 editable 5120
 name_pl mithril chainmails of lightning of Sorig
 client_type 250
+body_torso -1
+item_power 10
 end

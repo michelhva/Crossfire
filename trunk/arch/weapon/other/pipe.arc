@@ -15,4 +15,5 @@ can_parry 1
 attacktype 1
 name_pl pipes
 client_type 145
+body_arm -1
 end

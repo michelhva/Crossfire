@@ -14,4 +14,5 @@ weapontype 5
 magicmap khaki
 name_pl stakes
 client_type 145
+body_arm -1
 end

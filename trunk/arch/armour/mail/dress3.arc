@@ -12,4 +12,5 @@ weight 4500
 value 1000
 material 128
 editable 1024
+body_torso -1
 end

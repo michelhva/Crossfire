@@ -50,6 +50,9 @@ can_use_rod 1
 can_use_wand 1
 can_use_skill 1
 magicmap khaki
+body_skill 1
+body_arm 2
+body_range 1
 end
 More
 Object cyclops_2

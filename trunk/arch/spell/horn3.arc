@@ -13,4 +13,5 @@ material 2
 editable 2048
 name_pl horns
 client_type 721
+body_range -1
 end

@@ -7,4 +7,5 @@ dam 4
 no_drop 1
 sp 19
 editable 0
+body_skill -1
 end

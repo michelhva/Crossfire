@@ -14,4 +14,6 @@ material 256
 resist_magic 95
 editable 5120
 color_fg black
+body_shoulder -1
+item_power 4
 end

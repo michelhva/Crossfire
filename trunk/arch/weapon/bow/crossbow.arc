@@ -15,4 +15,5 @@ editable 1024
 attacktype 1
 name_pl crossbows
 client_type 161
+body_arm -2
 end

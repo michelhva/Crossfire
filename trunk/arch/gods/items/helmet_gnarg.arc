@@ -15,5 +15,6 @@ type 34
 resist_physical 20
 resist_poison 30
 weight 7000
-last_heal 1
+gen_sp_armour 1
+body_head -1
 end

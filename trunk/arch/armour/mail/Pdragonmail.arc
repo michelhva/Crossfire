@@ -10,7 +10,6 @@ Pdragonmail.111
 Pdragonmail.112
 mina
 speed 0.2
-last_heal 9
 last_sp 13
 ac 8
 resist_physical 60
@@ -23,4 +22,7 @@ magic 4
 editable 5120
 identified 1
 color_fg black
+body_torso -1
+gen_sp_armour 9
+item_power 12
 end

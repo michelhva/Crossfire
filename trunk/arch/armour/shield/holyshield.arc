@@ -14,4 +14,6 @@ resist_drain 100
 resist_ghosthit 50
 editable 5120
 magicmap grey
+body_arm -1
+item_power 6
 end

@@ -11,4 +11,5 @@ Cha -2
 material 6
 editable 1024
 color_fg black
+body_head -1
 end

@@ -23,4 +23,5 @@ startequip 1
 magicmap grey
 name_pl bracers
 client_type 310
+body_wrist -2
 end

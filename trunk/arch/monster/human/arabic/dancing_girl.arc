@@ -28,4 +28,6 @@ can_use_wand 1
 can_use_weapon 1
 can_use_bow 1
 editable 1
+body_arm 2
+body_range 1
 end

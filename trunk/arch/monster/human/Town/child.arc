@@ -25,4 +25,7 @@ can_use_wand 1
 can_use_rod 1
 can_use_ring 1
 editable 1
+body_skill 1
+body_finger 2
+body_range 1
 end

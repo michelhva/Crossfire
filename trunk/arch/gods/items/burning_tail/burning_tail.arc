@@ -24,4 +24,6 @@ editable 5120
 magicmap red
 name_pl Burning Tails of many lashings of Ruggilli
 client_type 100
+body_arm -1
+item_power 12
 end

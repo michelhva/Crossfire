@@ -7,4 +7,5 @@ flying 1
 no_drop 1
 sp 32
 editable 0
+body_skill -1
 end

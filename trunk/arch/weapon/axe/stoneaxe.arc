@@ -12,4 +12,5 @@ attacktype 1
 magicmap khaki
 name_pl stoneaxes
 client_type 106
+body_arm -1
 end

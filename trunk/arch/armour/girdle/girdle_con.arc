@@ -17,4 +17,6 @@ weight 2500
 value 85000
 material 8
 editable 5120
+body_waist -1
+item_power 1
 end

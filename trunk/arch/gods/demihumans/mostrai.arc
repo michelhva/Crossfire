@@ -30,6 +30,7 @@ speed 0.20
 can_cast_spell 1
 can_use_weapon 1
 can_use_armour 1
+can_use_shield 1
 msg
 Dwarven deity of metal smithing and warcraft, Giant basher,
 Delver of secrets
@@ -39,8 +40,3 @@ weight 100000
 randomitems Mostrai
 editable 0
 end
-
-
-
-
-

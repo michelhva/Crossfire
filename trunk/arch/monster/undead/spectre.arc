@@ -34,4 +34,6 @@ color_fg black
 speed 0.12
 attacktype 17
 exp 100000
+body_finger 2
+body_range 1
 end

@@ -16,4 +16,5 @@ can_knockback 1
 attacktype 1
 name_pl poleaxes
 client_type 136
+body_arm -1
 end

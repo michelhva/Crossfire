@@ -37,6 +37,7 @@ speed 0.35
 can_cast_spell 1
 can_use_weapon 1
 can_use_armour 1
+can_use_shield 1
 undead 1
 can_see_in_dark 1
 msg

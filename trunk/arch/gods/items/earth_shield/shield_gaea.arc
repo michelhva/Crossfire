@@ -28,4 +28,5 @@ resist_ghosthit -20
 weight 20000
 name_pl Gaea's Shields of Earth
 client_type 260
+body_arm -1
 end

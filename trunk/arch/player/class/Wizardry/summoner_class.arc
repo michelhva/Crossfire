@@ -25,4 +25,5 @@ sp 26
 editable 2048
 path_attuned 64
 path_repelled 65536
+body_skill -1
 end

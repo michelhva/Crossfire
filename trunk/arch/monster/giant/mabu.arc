@@ -31,6 +31,8 @@ pick_up 1
 can_use_weapon 1
 can_use_skill 1
 editable 1
+body_skill 1
+body_arm 2
 end
 More
 Object mabu_2

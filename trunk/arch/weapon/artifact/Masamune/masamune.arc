@@ -31,4 +31,5 @@ magic 3
 magicmap grey
 name_pl Katanas of Masamune
 client_type 100
+body_arm -1
 end

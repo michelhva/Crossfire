@@ -29,5 +29,5 @@ value 1500
 weight 5000
 editable 2048
 resist_magic 30
-
+body_skill -1
 end

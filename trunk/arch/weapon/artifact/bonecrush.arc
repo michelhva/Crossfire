@@ -15,4 +15,5 @@ attacktype 1
 magicmap brown
 name_pl Bonecrushers
 client_type 100
+body_arm -1
 end

@@ -12,4 +12,5 @@ material 8
 stealth 1
 editable 5120
 color_fg green
+item_power 3
 end

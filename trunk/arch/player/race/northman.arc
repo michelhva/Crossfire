@@ -27,6 +27,7 @@ level 1
 ac 10
 wc 21
 dam 1
+can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 path_repelled 2
@@ -43,4 +44,16 @@ Wis -1
 Pow -1
 Cha -1
 editable 0
+body_range 1
+body_arm 2
+body_torso 1
+body_head 1
+body_neck 1
+body_skill 1
+body_finger 2
+body_shoulder 1
+body_foot 2
+body_hand 2
+body_wrist 2
+body_waist 1
 end

@@ -14,4 +14,5 @@ weapontype 1
 magicmap grey
 name_pl light swords
 client_type 101
+body_arm -1
 end

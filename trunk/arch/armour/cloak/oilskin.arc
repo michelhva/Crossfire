@@ -16,4 +16,5 @@ resist_acid 70
 magic -4
 damned 1
 color_fg grey
+body_shoulder -1
 end

@@ -29,4 +29,5 @@ material 12
 sp 26
 editable 2048
 path_attuned 16896
+body_skill -1
 end

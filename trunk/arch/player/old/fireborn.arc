@@ -16,6 +16,7 @@ level 1
 ac 0
 wc 21
 dam 0
+can_use_shield 0
 can_use_armour 0
 can_use_weapon 0
 alive 1

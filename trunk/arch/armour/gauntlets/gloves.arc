@@ -11,4 +11,5 @@ material 8
 weight 100
 editable 1024
 magicmap brown
+body_hand -2
 end

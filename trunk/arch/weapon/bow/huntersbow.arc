@@ -15,4 +15,5 @@ editable 1024
 attacktype 1
 name_pl hunter's bows
 client_type 150
+body_arm -2
 end

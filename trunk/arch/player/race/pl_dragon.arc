@@ -44,6 +44,7 @@ food 999
 speed 1
 attacktype 1
 color_fg light_blue
+can_use_shield 0
 can_use_armour 0
 can_use_weapon 0
 Str 5
@@ -53,6 +54,16 @@ Wis -8
 Int -3
 Pow 5
 editable 0
+# can't use bows anymore with this, so let him use cloaks,
+# bracers, and girdles.
+body_range 1
+body_arm 0
+body_neck 1
+body_skill 1
+body_finger 2
+body_shoulder 1
+body_wrist 2
+body_waist 1
 end
 Object dragon_skin_force
 name dragon skin

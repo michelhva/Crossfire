@@ -21,4 +21,5 @@ editable 5120
 magicmap white
 name_pl Excaliburs
 client_type 100
+body_arm -1
 end

@@ -24,4 +24,5 @@ editable 5120
 magicmap khaki
 name_pl Frost Hammers
 client_type 100
+body_arm -1
 end

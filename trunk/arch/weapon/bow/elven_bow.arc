@@ -17,4 +17,5 @@ attacktype 1
 magicmap brown
 name_pl elven bows
 client_type 150
+body_arm -2
 end

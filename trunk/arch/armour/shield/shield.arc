@@ -12,4 +12,5 @@ weight 15000
 value 22
 editable 1024
 magicmap grey
+body_arm -1
 end
