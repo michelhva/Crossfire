@@ -16,4 +16,5 @@ msg
   This wonderful charm will absorb
   many magics which would affect 
   your movement.
+endmsg
 end
