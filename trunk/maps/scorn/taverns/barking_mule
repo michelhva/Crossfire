@@ -300,6 +300,10 @@ y 15
 end
 arch horn2
 name Gramps' earhorn
+msg
+Property of Gramps Malone
+Git yer paws offa it!
+endmsg
 type 21
 slaying Gramp's earhorn
 x 2
@@ -2205,11 +2209,11 @@ arch woodfloor
 x 20
 y 8
 end
-arch chair_1.4
-x 20
-y 8
-end
 arch woodfloor
+x 20
+y 9
+end
+arch chair_1.4
 x 20
 y 9
 end
@@ -2288,38 +2292,19 @@ arch woodfloor
 x 21
 y 7
 end
+arch woodfloor
+x 21
+y 8
+end
 arch chair_1.1
 x 21
-y 7
-end
-arch halfling3
-name Timmy
-msg
-@match hi|hello
-Hello stranger.
-Looking for adventure?
-@match adventure
-Well I did hear about some dangerous caves nearby.
-@match caves
-If you go south road, past a large rock there are some dangerous
-caves in the mountains to the west of there.
-@match *
-Me, I like beer too much to go adventuring.
-endmsg
-randomitems jail
-stand_still 1
-x 21
-y 7
+y 8
 end
 arch woodfloor
 x 21
-y 8
+y 9
 end
 arch table_3
-x 21
-y 8
-end
-arch woodfloor
 x 21
 y 9
 end
@@ -2417,11 +2402,30 @@ arch woodfloor
 x 22
 y 8
 end
+arch woodfloor
+x 22
+y 9
+end
 arch chair_1.2
 x 22
-y 8
+y 9
 end
-arch woodfloor
+arch halfling3
+name Timmy
+msg
+@match hi|hello
+Hello stranger.
+Looking for adventure?
+@match adventure
+Well I did hear about some dangerous caves nearby.
+@match caves
+If you go south road, past a large rock there are some dangerous
+caves in the mountains to the west of there.
+@match *
+Me, I like beer too much to go adventuring.
+endmsg
+randomitems jail
+stand_still 1
 x 22
 y 9
 end
