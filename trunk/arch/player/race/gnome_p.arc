@@ -25,12 +25,17 @@ general blessing of good luck on all Gnomekind.
 endmsg
 anim
 gnome_p.111
+gnome_p.111
+gnome_p.131
 gnome_p.131
 gnome_p.151
+gnome_p.152
+gnome_p.171
 gnome_p.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10

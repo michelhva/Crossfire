@@ -26,12 +26,17 @@ endmsg
 color_fg black
 anim
 wraithp.111
+wraithp.112
+wraithp.131
 wraithp.131
 wraithp.151
+wraithp.152
+wraithp.171
 wraithp.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 undead 1

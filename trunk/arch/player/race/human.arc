@@ -13,12 +13,17 @@ endmsg
 color_fg black
 anim
 human.111
+human.112
+human.131
 human.131
 human.151
+human.152
+human.171
 human.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10

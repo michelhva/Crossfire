@@ -19,12 +19,17 @@ and are permitted to enter cities.
 endmsg
 anim
 troll_p.111
+troll_p.111
+troll_p.131
 troll_p.131
 troll_p.151
+troll_p.152
+troll_p.171
 troll_p.171
 facings 4
 mina
-is_animated 0
+is_animated 1
+anim_speed -1
 type 1
 level 1
 ac 10
