@@ -1,6 +1,8 @@
 Object god_spelldirect_nightfall
-type 85
-invisible 1
+name divine nightfall
+face blank.111
 slaying nightfall
+invisible 1
+type 85
 editable 0
-end
+end 

@@ -1,6 +1,8 @@
 Object god_spelldirect_retributive_strike
-type 85
+name divine retributive strike
+face blank.111
+slaying cause retributive strike
 invisible 1
-slaying retributive strike
+type 85
 editable 0
-end
+end 
