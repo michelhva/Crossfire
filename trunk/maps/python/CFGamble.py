@@ -2,7 +2,9 @@
 # Todd Mitchell
 #The Python control file for Slot Machines and other such nonsense
 #Please do not put CFPython functions in this file,
-#but rather place these in the calling file
+#but rather place these in the calling file (don't ask me why - it just feels right)
+
+import CFgetPaths
 import os.path
 import shelve
 import random
@@ -11,7 +13,7 @@ class SlotMachine:
 	#sets up the file that holds all the slotmachine jackpots
 	#make sure this points to your writable var/crossfire directory
 	#you can delete that file to reset all the slotmachine jackpots
-        slotfile = '/usr/local/CF/var/crossfire/SlotMachine_file'
+        slotfile = '%sSlotMachine_file' %(CFgetPaths.getPaths("localdir"))
         slotdb = {}
         def __init__(self,slotname,slotlist,minpot,maxpot):
 		slotdb = shelve.open(self.slotfile)

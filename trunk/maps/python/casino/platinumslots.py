@@ -1,10 +1,10 @@
 #SlotMachine configuration file
 #to make a new kind of slot machine, copy this file, change the settings and point the slotmachine to the new file.
-# Standard type Gold Slots
+# Standard type Platinum Slots
 
 import CFPython
 import sys
-sys.path.append('/usr/local/CF/share/crossfire/maps/python')
+sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
 import CFGamble
 
 activator=CFPython.WhoIsActivator()
@@ -15,20 +15,20 @@ slotname= '%s#%s' %(CFPython.GetName(whoami),CFPython.GetMapPath(CFPython.GetMap
 x=CFPython.GetXPosition(activator)
 y=CFPython.GetYPosition(activator)
 	
-cointype = "goldcoin" #What type of coin is this slotmachine using?	
-minpot = 100 #Minimum slot jackpot size	
-maxpot = 50000 #Maxiumum slot jackpot size
+cointype = "platinacoin" #What type of coin is this slotmachine using?	
+minpot = 300 #Minimum slot jackpot size	
+maxpot = 100000 #Maxiumum slot jackpot size
 cost = 1 #Price of usage
 
 #Change the items on the slot spinner or the number of items.    
-slotlist = ["Club", "Staff", "Shield", "Sword", "Wand", "Scroll", "JackPot"]
+slotlist = ["Jester", "Lord", "Lady", "Prince", "Princess", "King", "Queen", "JackPot"]
 
 spinners = 4 #How many spinners on the slotmachine?
 
 
 Slots=CFGamble.SlotMachine(slotname,slotlist,minpot,maxpot)
 
-if (CFPython.PayAmount(activator, cost*10)):#goldcoin
+if (CFPython.PayAmount(activator, cost*50)):#platinumcoin
    Slots.placebet(cost)
    results = Slots.spin(spinners)
    pay = 0
@@ -37,20 +37,22 @@ if (CFPython.PayAmount(activator, cost*10)):#goldcoin
    for item in results:
       #match all but one - pays out by coin e.g 3 to 1 or 4 to 1
       if results.count(item) == spinners-1:
-         if item == "Club":
+         if item == "Jester":
             pay = 1
-         elif item == "Staff":
+         elif item == "Lord":
             pay = 2
-         elif item == "Shield":
+         elif item == "Lady":
             pay = 3
-         elif item == "Sword":
+         elif item == "Prince":
             pay = 4
-         elif item == "Wand":
+         elif item == "Princess":
             pay = 5
-         elif item == "Scroll":
+         elif item == "Queen":
             pay = 10
-         elif item == "JackPot":
+         elif item == "King":
             pay = 20
+	 elif item == "Jackpot":
+            pay = 25
          else:
 	    break
 	 CFPython.Write("%d %ss, a minor win!" %(spinners-1,item),activator)
@@ -63,19 +65,21 @@ if (CFPython.PayAmount(activator, cost*10)):#goldcoin
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
          CFPython.Write('%d %ss, a Major win!' %(spinners,item),activator)
-         if item == "Club":
-            pay = .10
-         elif item == "Staff":
+         if item == "Jester":
+            pay = .1
+         elif item == "Lord":
             pay = .15
-         elif item == "Shield":
+         elif item == "Lady":
             pay = .25
-         elif item == "Sword":
-            pay = .25
-         elif item == "Wand":
-            pay = .35
-         elif item == "Scroll":
-            pay = .50
-         elif item == "JackPot":
+         elif item == "Prince":
+            pay = .3
+         elif item == "Princess":
+            pay = .4
+         elif item == "Queen":
+            pay = .5
+         elif item == "King":
+            pay = .6
+	 elif item == "JackPot":
             pay = 1
          payoff = pot*pay
          Slots.payoff(payoff)
