@@ -633,17 +633,13 @@ arch flagstone
 x 5
 y 12
 end
-arch pl_dragon
-name dragon guard
-face pl_dragon.171
+arch green_dragon1
 msg
 @match hi|enter|open|gate
 Only dragons may enter here.
 @match *
 Welcome to the dragon guild.
 endmsg
-type 0
-unaggressive 1
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1287,11 +1283,23 @@ arch flagstone
 x 11
 y 12
 end
+arch barrel
+x 11
+y 12
+end
 arch flagstone
 x 11
 y 13
 end
+arch barrel
+x 11
+y 13
+end
 arch flagstone
+x 11
+y 14
+end
+arch barrel
 x 11
 y 14
 end
