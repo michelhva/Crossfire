@@ -1,7 +1,7 @@
 Object outpost_tower
 name outpost tower
 type 66
-face out_tower.111
+face out_tower.x11
 no_pick 1
 editable 2
 visibility 100
@@ -11,7 +11,7 @@ More
 Object outpost_tower_2
 name outpost tower
 type 66
-face out_tower.211
+face out_tower.x11
 no_pick 1
 x 1
 visibility 100
@@ -21,7 +21,7 @@ More
 Object outpost_tower_3
 name outpost tower
 type 66
-face out_tower.311
+face out_tower.x11
 no_pick 1
 y 1
 visibility 100
@@ -31,7 +31,7 @@ More
 Object outpost_tower_4
 name outpost tower
 type 66
-face out_tower.411
+face out_tower.x11
 no_pick 1
 x 1
 y 1
