@@ -20,6 +20,7 @@ dam 1
 ac 4
 level 1
 weight 20
-protected 1
+resist_physical 30
+
 editable 1
 end

@@ -22,11 +22,14 @@ Wis 10
 ac -5
 hp 100
 maxhp 100
-armour 45
+resist_physical 45
 attacktype 1025
-immune 1024
-protected 64
-vulnerable 16
+resist_poison 100
+
+resist_acid 30
+
+resist_cold -100
+
 wc -5
 dam 15
 speed -0.2

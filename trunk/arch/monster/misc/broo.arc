@@ -23,8 +23,12 @@ wc 3
 dam 12
 speed -0.21
 attacktype 1025
-immune 279552
-vulnerable 32
+resist_poison 100
+resist_fear 100
+resist_chaos 100
+
+resist_confusion -100
+
 weight 75000
 can_use_skill 1
 can_use_scroll 1

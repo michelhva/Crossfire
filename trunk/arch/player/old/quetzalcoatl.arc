@@ -29,7 +29,11 @@ Con 6
 Wis -8
 Int -8
 Pow 8
-immune 4
-vulnerable 5136
+resist_fire 100
+
+resist_cold -100
+resist_poison -100
+resist_paralyze -100
+
 editable 0
 end

@@ -22,6 +22,8 @@ weight 200
 level 6
 flying 1
 editable 1
-immune 12
+resist_fire 100
+resist_electricity 100
+
 attacktype 8
 end

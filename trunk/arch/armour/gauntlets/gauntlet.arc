@@ -3,7 +3,7 @@ nrof 1
 name gauntlets
 face gauntlet_s.111
 type 100
-armour 3
+resist_physical 3
 value 25
 nrof 1
 material 2

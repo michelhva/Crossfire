@@ -10,8 +10,9 @@ mithril_ar.113
 mina
 speed 0.3
 ac 4
-armour 40
-protected 8
+resist_physical 40
+resist_electricity 30
+
 Cha 1
 Str 1
 exp 1

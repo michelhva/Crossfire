@@ -18,7 +18,7 @@ no_pick 1
 alive 1
 exp 700
 ac 0
-armour 20
+resist_physical 20
 wc 1
 dam 25
 Int 0
@@ -28,7 +28,8 @@ Con 14
 Str 24
 maxhp 165
 level 9
-vulnerable 4
+resist_fire -100
+
 speed 0.20
 weight 200000
 run_away 15

@@ -19,8 +19,11 @@ material 2
 magic 6
 dam 35
 attacktype 261
-protected 4
-immune 16512
+resist_fire 30
+
+resist_drain 100
+resist_fear 100
+
 value 400000
 weight 40000
 editable 5120

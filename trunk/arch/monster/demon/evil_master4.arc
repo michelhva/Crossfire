@@ -21,12 +21,13 @@ exp 4000
 dam 25
 wc -50
 ac -10
-armour 30
+resist_physical 30
 speed 0.500000
 attack_movement 5
 level 100
 attacktype 1
-vulnerable 4
+resist_fire -100
+
 weight 200000
 randomitems raas
 run_away 15

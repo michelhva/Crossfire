@@ -12,7 +12,8 @@ para_air.114
 mina
 monster 1
 alive 1
-immune 8
+resist_electricity 100
+
 attacktype 8
 ac 3
 wc 10

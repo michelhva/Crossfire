@@ -6,7 +6,8 @@ nrof 1
 material 4
 type 73
 value 40
-vulnerable 4
+resist_fire -100
+
 weight 2500
 editable 2048
 magicmap brown
@@ -32,8 +33,10 @@ material 64
 type 73
 value 15
 color_fg yellow
-vulnerable 4
-immune 64
+resist_fire -100
+
+resist_acid 100
+
 weight 500
 editable 2048
 end
@@ -46,8 +49,11 @@ material 64
 type 73
 value 45
 color_fg grey
-vulnerable 12
-immune 64
+resist_fire -100
+resist_electricity -100
+
+resist_acid 100
+
 weight 1000
 editable 2048
 end
@@ -84,7 +90,8 @@ material 64
 type 73
 value 9
 color_fg blue
-immune 64
+resist_acid 100
+
 weight 1500
 editable 2048
 end

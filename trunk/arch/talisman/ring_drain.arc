@@ -13,7 +13,8 @@ value 10000
 weight 40
 type 70
 material 2
-immune 128
+resist_drain 100
+
 editable 6144
 nrof 1
 speed 0.1

@@ -9,8 +9,14 @@ facings 2
 big_demon.171
 big_demon.131
 mina
-protected 3145730
-immune 1060
+resist_magic 30
+resist_godpower 30
+resist_holyword 30
+
+resist_fire 100
+resist_confusion 100
+resist_poison 100
+
 attacktype 1029
 can_see_in_dark 1
 can_cast_spell 1

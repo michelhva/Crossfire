@@ -31,12 +31,15 @@ Wis 10
 ac -5
 hp 100
 maxhp 100
-armour 45
+resist_physical 45
 attacktype 1025
 attack_movement 7
 run_away 50
-immune 1088
-vulnerable 16
+resist_acid 100
+resist_poison 100
+
+resist_cold -100
+
 can_use_bow 1
 wc -5
 dam 15

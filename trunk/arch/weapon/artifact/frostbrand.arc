@@ -9,7 +9,8 @@ dam 9
 weight 22000
 value 85000
 magic 3
-protected 4
+resist_fire 30
+
 attacktype 16
 editable 5120
 magicmap white

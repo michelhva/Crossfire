@@ -2,7 +2,9 @@ Object mercury
 face mercury.111
 material 2
 value 210
-immune 72
+resist_electricity 100
+resist_acid 100
+
 type 73
 nrof 1
 weight 3000
@@ -21,7 +23,9 @@ mina
 speed 0.5
 material 2
 value 400
-immune 72
+resist_electricity 100
+resist_acid 100
+
 type 73
 nrof 1
 weight 8000

@@ -16,7 +16,6 @@ no_pick 1
 attacktype 64
 editable 0
 end
-
 Object vitriol_splash
 name vitriol splash
 other_arch vitriol_pool
@@ -39,7 +38,6 @@ no_pick 1
 attacktype 64
 editable 0
 end
-
 Object vitriol_pool
 type 88
 level 1

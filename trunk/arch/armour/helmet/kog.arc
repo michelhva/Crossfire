@@ -9,7 +9,7 @@ Int 1
 last_heal 5
 weight 2000
 ac 3
-armour 10
+resist_physical 10
 value 100000
 material 2
 editable 1024

@@ -17,7 +17,8 @@ sleep 1
 Wis 15
 see_invisible 1
 no_pick 1
-immune 2
+resist_magic 100
+
 unaggressive 1
 reflect_missile 1
 reflect_spell 1
@@ -28,7 +29,7 @@ sp 25
 maxsp 25
 Pow 3
 ac 0
-armour 75
+resist_physical 75
 exp 1500
 wc 4
 dam 15

@@ -18,8 +18,13 @@ wc -5
 dam 30
 speed -0.25
 attacktype 1089
-immune 279552
-vulnerable 40
+resist_poison 100
+resist_fear 100
+resist_chaos 100
+
+resist_electricity -100
+resist_confusion -100
+
 weight 750000
 monster 1
 no_pick 1

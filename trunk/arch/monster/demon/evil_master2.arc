@@ -19,11 +19,12 @@ exp 6000
 dam 40
 wc -30
 ac -60
-armour 50
+resist_physical 50
 speed 0.700000
 attack_movement 4
 level 100
-immune 2
+resist_magic 100
+
 weight 75000
 randomitems angel
 run_away 18

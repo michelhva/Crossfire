@@ -24,7 +24,12 @@ maxsp 50
 sp 50
 hp 200
 maxhp 200
-immune 21570
+resist_magic 100
+resist_acid 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+
 attacktype 1
 unaggressive 1
 ac 4

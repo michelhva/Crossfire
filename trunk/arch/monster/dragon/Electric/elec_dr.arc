@@ -22,8 +22,13 @@ sp 70
 maxsp 100
 hp 3500
 maxhp 3500
-immune 16440
-vulnerable 4
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_fear 100
+
+resist_fire -100
+
 ac -12
 wc -20
 dam 25

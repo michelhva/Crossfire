@@ -10,7 +10,8 @@ weight 30
 alive 1
 level 1
 no_pick 1
-immune 4
+resist_fire 100
+
 editable 1
 color_fg black
 end

@@ -25,7 +25,8 @@ maxhp 50
 wc 7
 dam 8
 speed 0.08
-protected 8
+resist_electricity 30
+
 weight 140000
 run_away 15
 can_apply 24

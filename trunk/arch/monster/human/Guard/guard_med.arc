@@ -10,7 +10,8 @@ sleep 1
 Wis 10
 see_invisible 1
 no_pick 1
-protected 2
+resist_magic 30
+
 reflect_missile 1
 hp 120
 maxhp 120
@@ -19,7 +20,7 @@ maxsp 20
 Pow 2
 Con 15
 ac 1
-armour 65
+resist_physical 65
 exp 250
 wc 1
 dam 15

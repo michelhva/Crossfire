@@ -15,9 +15,13 @@ mina
 level 8
 Con 10
 color_fg grey
-immune 16448
-vulnerable 4
-protected 8
+resist_acid 100
+resist_fear 100
+
+resist_fire -100
+
+resist_electricity 30
+
 attacktype 65
 exp 500
 ac -1

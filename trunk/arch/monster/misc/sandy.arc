@@ -24,8 +24,10 @@ speed -0.08
 exp 500
 weight 100000
 level 8
-immune 16
+resist_cold 100
+
 attacktype 16
-vulnerable 4
+resist_fire -100
+
 editable 1
 end

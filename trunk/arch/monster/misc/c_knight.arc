@@ -21,11 +21,14 @@ Dex 20
 Int 17
 wc -1
 dam 12
-armour 30
+resist_physical 30
 speed 0.15
 attacktype 1025
-protected 2
-immune 278528
+resist_magic 30
+
+resist_fear 100
+resist_chaos 100
+
 weight 75000
 can_use_skill 1
 can_use_scroll 1

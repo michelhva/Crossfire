@@ -14,13 +14,16 @@ belzebub.112
 belzebub.111
 belzebub.111
 mina
-immune 2
-protected 1032
+resist_magic 100
+
+resist_electricity 30
+resist_poison 30
+
 exp 300000
 ac -14
 wc -20
 dam 40
-armour 35
+resist_physical 35
 Str 80
 Dex 30
 Int 25

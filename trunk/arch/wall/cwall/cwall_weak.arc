@@ -19,7 +19,14 @@ tear_down 1
 hp 100
 maxhp 100
 ac 30
-immune 254
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+
 no_pick 1
 blocksview 1
 alive 1
@@ -48,7 +55,14 @@ tear_down 1
 hp 100
 maxhp 100
 ac 30
-immune 254
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+
 no_pick 1
 blocksview 1
 alive 1

@@ -25,8 +25,14 @@ Int 12
 wc 1
 dam 8
 speed -0.15
-vulnerable 16
-protected 263244
+resist_cold -100
+
+resist_fire 30
+resist_electricity 30
+resist_acid 30
+resist_poison 30
+resist_chaos 30
+
 weight 75000
 can_use_skill 1
 can_use_wand 1

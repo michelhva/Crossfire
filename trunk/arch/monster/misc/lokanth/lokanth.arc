@@ -26,11 +26,19 @@ wc -1
 dam 10
 color_fg green
 speed -0.2
-armour 30
-protected 2
-vulnerable 1048864
-immune 278528
-immune 1088
+resist_physical 30
+resist_magic 30
+
+resist_confusion -100
+resist_weaponmagic -100
+resist_godpower -100
+
+resist_fear 100
+resist_chaos 100
+
+resist_acid 100
+resist_poison 100
+
 weight 85000
 attacktype 1025
 can_cast_spell 1

@@ -10,9 +10,11 @@ para_fire.112
 mina
 monster 1
 alive 1
-immune 4
+resist_fire 100
+
 attacktype 4
-vulnerable 32
+resist_confusion -100
+
 ac 5
 wc 16
 dam 20

@@ -24,7 +24,8 @@ hp 150
 Int 20
 Con 3
 level 12
-immune 2
+resist_magic 100
+
 speed 0.2
 weight 75000
 flying 1

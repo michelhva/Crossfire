@@ -28,5 +28,6 @@ nrof 1
 value 1500
 weight 5000
 editable 2048
-protected 2
+resist_magic 30
+
 end

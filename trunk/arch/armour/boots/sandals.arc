@@ -4,7 +4,7 @@ face sandals.111
 value 5
 weight 500
 last_heal 1
-armour 1
+resist_physical 1
 nrof 1
 type 99
 material 24

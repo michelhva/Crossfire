@@ -17,10 +17,13 @@ hp 100
 maxhp 100
 wc -5
 dam 25
-armour 50
-immune 1024
-protected 64
-vulnerable 16
+resist_physical 50
+resist_poison 100
+
+resist_acid 30
+
+resist_cold -100
+
 speed -0.2
 stand_still 1
 unaggressive 1

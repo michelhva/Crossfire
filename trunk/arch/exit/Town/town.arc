@@ -300,8 +300,3 @@ no_pick 1
 visibility 100
 magicmap grey
 end
-
-
-
-
-

@@ -46,8 +46,17 @@ ac -13
 wc -20
 dam 33
 level 20
-immune 7331
-protected 264
+resist_physical 100
+resist_magic 100
+resist_confusion 100
+resist_drain 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+
+resist_electricity 30
+resist_weaponmagic 30
+
 attacktype 71041
 speed 0.300000
 weight 300000

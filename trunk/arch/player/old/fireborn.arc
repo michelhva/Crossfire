@@ -29,7 +29,12 @@ Con -4
 Cha -4
 Int 3
 Pow 6
-immune 1028
-vulnerable 656
+resist_fire 100
+resist_poison 100
+
+resist_cold -100
+resist_drain -100
+resist_ghosthit -100
+
 editable 0
 end

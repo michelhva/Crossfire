@@ -16,9 +16,14 @@ ac 10
 speed 0.3
 level 4
 type 28
-immune 16513
-vulnerable 2
-protected 16
+resist_physical 100
+resist_drain 100
+resist_fear 100
+
+resist_magic -100
+
+resist_cold 30
+
 attacktype 128
 alive 1
 monster 1

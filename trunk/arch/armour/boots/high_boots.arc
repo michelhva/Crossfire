@@ -6,7 +6,7 @@ last_heal 4
 weight 6500
 ac 1
 nrof 1
-armour 4
+resist_physical 4
 type 99
 material 24
 editable 1024

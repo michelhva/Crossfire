@@ -22,7 +22,8 @@ exp 300
 weight 30000
 level 4
 attacktype 64
-vulnerable 4
+resist_fire -100
+
 hitback 1
 editable 1
 end

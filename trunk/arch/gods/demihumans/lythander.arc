@@ -17,9 +17,12 @@ Int 30
 Wis 30
 Pow 30
 attacktype 32
-immune 32
-protected 32
-vulnerable 32
+resist_confusion 100
+
+resist_confusion 30
+
+resist_confusion -100
+
 path_attuned 65536
 path_repelled 131088
 ac -7

@@ -11,7 +11,7 @@ reflector.112
 mina
 speed 0.25
 ac 3
-armour 5
+resist_physical 5
 reflect_spell 1
 weight 18000
 value 100000

@@ -13,7 +13,8 @@ no_pick 1
 ac 5
 maxsp 1
 weight 25000
-protected 16
+resist_cold 30
+
 editable 1
 undead 1
 end

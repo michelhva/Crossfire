@@ -28,7 +28,12 @@ ac -10
 wc -20
 dam 25
 level 15
-immune 21510
+resist_magic 100
+resist_fire 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+
 speed -0.30
 weight 30000
 run_away 2

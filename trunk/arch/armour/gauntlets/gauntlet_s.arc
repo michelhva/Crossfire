@@ -5,7 +5,7 @@ title of strength
 face gauntlet_s.111
 type 100
 Str 1
-armour 3
+resist_physical 3
 value 65000
 material 2
 weight 2000

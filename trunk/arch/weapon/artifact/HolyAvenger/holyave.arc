@@ -25,8 +25,10 @@ Str 1
 Wis 2
 Cha 2
 attacktype 4194560
-protected 2
-immune 128
+resist_magic 30
+
+resist_drain 100
+
 weight 25000
 value 220000
 editable 5120

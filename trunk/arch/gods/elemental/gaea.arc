@@ -20,9 +20,16 @@ attacktype 16384
 path_attuned 526784
 path_denied 393216
 path_repelled 30
-immune 196736
-protected 196736
-vulnerable 16384
+resist_drain 100
+resist_deplete 100
+resist_death 100
+
+resist_drain 30
+resist_deplete 30
+resist_death 30
+
+resist_fear -100
+
 ac -5
 wc -1
 dam 50

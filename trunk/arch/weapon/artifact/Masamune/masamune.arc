@@ -18,8 +18,11 @@ Dex 2
 Con 2
 Wis 1
 dam 25
-immune 640
-protected 65536
+resist_drain 100
+resist_ghosthit 100
+
+resist_deplete 30
+
 weight 9000
 value 220000
 editable 5120

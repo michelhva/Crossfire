@@ -15,8 +15,10 @@ Pow 30
 monster 1
 alive 1
 attacktype 8
-immune 8
-protected 8
+resist_electricity 100
+
+resist_electricity 30
+
 path_attuned 131096
 path_repelled 256
 path_denied 66561

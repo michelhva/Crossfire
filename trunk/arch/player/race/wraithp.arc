@@ -24,9 +24,14 @@ can_see_in_dark 1
 can_use_armour 1
 can_use_weapon 1
 attacktype 17
-vulnerable 4
-immune 1664
-protected 16
+resist_fire -100
+
+resist_drain 100
+resist_ghosthit 100
+resist_poison 100
+
+resist_cold 30
+
 path_attuned 4
 path_denied 2
 Str -3
@@ -38,7 +43,6 @@ Pow 3
 Cha -4
 editable 0
 end
-
 Object wraith_player_force
 name Wraith_Force
 invisible 1

@@ -16,7 +16,9 @@ undead 1
 hp 1000
 maxhp 1000
 level 15
-protected 3
+resist_physical 30
+resist_magic 30
+
 dam 20
 see_invisible 1
 wc -3

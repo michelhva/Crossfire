@@ -10,7 +10,8 @@ viking.131
 viking.151
 viking.171
 mina
-protected 16
+resist_cold 30
+
 is_animated 0
 type 1
 level 1

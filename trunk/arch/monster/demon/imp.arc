@@ -17,7 +17,7 @@ no_pick 1
 alive 1
 exp 150
 ac 4
-armour 20
+resist_physical 20
 wc 4
 dam 2
 Int 0
@@ -29,8 +29,10 @@ Str 24
 Pow 1
 maxhp 5
 level 1
-protected 2
-immune 4
+resist_magic 30
+
+resist_fire 100
+
 speed 0.25
 weight 200000
 run_away 15

@@ -10,8 +10,14 @@ jessyb.113
 jessyb.112
 mina
 attacktype 1029
-protected 3145730
-immune 1060
+resist_magic 30
+resist_godpower 30
+resist_holyword 30
+
+resist_fire 100
+resist_confusion 100
+resist_poison 100
+
 monster 1
 sleep 1
 Wis 20

@@ -9,9 +9,11 @@ elem_fire.112
 mina
 monster 1
 alive 1
-immune 4
+resist_fire 100
+
 attacktype 4
-vulnerable 32
+resist_confusion -100
+
 glow_radius 1
 ac 2
 wc 10

@@ -26,9 +26,14 @@ Con 10
 wc 1
 dam 8
 speed 0.15
-protected 2
-vulnerable 1048864
-immune 262144
+resist_magic 30
+
+resist_confusion -100
+resist_weaponmagic -100
+resist_godpower -100
+
+resist_chaos 100
+
 weight 75000
 attack_movement 7
 can_use_skill 1
@@ -70,9 +75,16 @@ wc -1
 dam 16
 color_fg red
 speed 0.2
-protected 3
-vulnerable 1048864
-immune 278528
+resist_physical 30
+resist_magic 30
+
+resist_confusion -100
+resist_weaponmagic -100
+resist_godpower -100
+
+resist_fear 100
+resist_chaos 100
+
 weight 75000
 attacktype 1025
 attack_movement 7

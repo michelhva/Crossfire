@@ -23,4 +23,3 @@ slow_move 7
 material 128
 editable 8
 end
-

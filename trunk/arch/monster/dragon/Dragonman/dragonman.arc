@@ -25,8 +25,20 @@ sp 80
 maxsp 80
 hp 3500
 maxhp 3500
-immune 23756
-protected 305
+resist_fire 100
+resist_electricity 100
+resist_acid 100
+resist_drain 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+
+resist_physical 30
+resist_cold 30
+resist_confusion 30
+resist_weaponmagic 30
+
 ac -10
 wc -10
 dam 10

@@ -11,7 +11,7 @@ speed .1
 Str 2
 Dex -1
 color_fg orange
-armour 3
+resist_physical 3
 dam +3
 make_invisible 1
 value 120000

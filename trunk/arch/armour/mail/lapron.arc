@@ -6,7 +6,7 @@ face lapron.111
 color_fg brown
 last_sp 11
 ac 1
-armour 5
+resist_physical 5
 weight 20000
 nrof 1
 value 10

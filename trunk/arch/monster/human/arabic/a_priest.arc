@@ -15,7 +15,8 @@ maxhp 50
 Con 10
 no_pick 1
 exp 500
-protected 2
+resist_magic 30
+
 speed 0.16
 ac 5
 wc 9

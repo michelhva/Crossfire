@@ -6,8 +6,10 @@ attacktype 1025
 monster 1
 sleep 1
 Wis 20
-immune 16384
-protected 2
+resist_fear 100
+
+resist_magic 30
+
 exp 20000
 ac -6
 wc -10

@@ -18,7 +18,8 @@ hp 15
 maxhp 15
 exp 40
 speed -0.20
-vulnerable 2048
+resist_slow -100
+
 weight 50000
 level 3
 can_use_skill 1

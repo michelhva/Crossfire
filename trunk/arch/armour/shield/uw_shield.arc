@@ -6,8 +6,9 @@ type 33
 weight 25000
 value 80000
 ac 4
-armour 15
-protected 65536
+resist_physical 15
+resist_deplete 30
+
 editable 5120
 color_fg black
 end

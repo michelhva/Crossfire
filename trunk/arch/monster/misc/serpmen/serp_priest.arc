@@ -28,9 +28,17 @@ dam 6
 speed 0.15
 see_invisible 1
 attacktype 1025
-protected 7
-vulnerable 16
-immune 263240
+resist_physical 30
+resist_magic 30
+resist_fire 30
+
+resist_cold -100
+
+resist_electricity 100
+resist_acid 100
+resist_poison 100
+resist_chaos 100
+
 weight 75000
 can_apply 20
 can_cast_spell 1

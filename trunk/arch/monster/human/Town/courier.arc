@@ -18,7 +18,7 @@ Dex 15
 Int 12
 speed 0.20
 weight 50000
-armour 20
+resist_physical 20
 level 5
 can_use_skill 1
 can_use_wand 1

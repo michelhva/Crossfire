@@ -16,7 +16,8 @@ hp 10
 maxhp 10
 level 3
 speed 0.10
-immune 1024
+resist_poison 100
+
 attacktype 1025
 exp 50
 weight 200000

@@ -20,10 +20,13 @@ hp 1000
 maxhp 1000
 wc -12
 dam 30
-armour 30
-vulnerable 16
-immune 1024
-protected 64
+resist_physical 30
+resist_cold -100
+
+resist_poison 100
+
+resist_acid 30
+
 attacktype 1025
 attack_movement 7
 generator 1

@@ -20,10 +20,11 @@ exp 5000
 dam 70
 wc -50
 ac -100
-armour 100
+resist_physical 100
 speed .4
 level 50
-vulnerable 16
+resist_cold -100
+
 carrying 6000
 weight 30000
 is_animated 1

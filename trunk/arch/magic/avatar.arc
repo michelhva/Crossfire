@@ -7,7 +7,7 @@ animation avatar
 is_animated 1
 monster 1
 alive 1
-armour 45
+resist_physical 45
 ac -10
 wc -1
 dam 50
@@ -15,7 +15,8 @@ hp 500
 maxhp 500
 level 12
 speed 0.25
-immune 2
+resist_magic 100
+
 exp 1000
 weight 200000
 editable 33

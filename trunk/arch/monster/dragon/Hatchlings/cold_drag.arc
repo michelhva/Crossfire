@@ -29,8 +29,10 @@ sp 40
 maxsp 40
 hp 80
 maxhp 80
-immune 16
-protected 2
+resist_cold 100
+
+resist_magic 30
+
 speed -0.07
 flying 1
 weight 70000

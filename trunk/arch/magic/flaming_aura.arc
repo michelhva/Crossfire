@@ -22,4 +22,3 @@ no_pick 1
 food 2
 is_used_up 1
 end
-

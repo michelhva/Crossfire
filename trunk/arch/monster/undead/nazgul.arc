@@ -18,8 +18,13 @@ speed 0.8
 attack_movement 5
 level 13
 type 28
-immune 16513
-protected 18
+resist_physical 100
+resist_drain 100
+resist_fear 100
+
+resist_magic 30
+resist_cold 30
+
 attacktype 160
 carrying 100
 alive 1

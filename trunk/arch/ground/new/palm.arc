@@ -8,4 +8,3 @@ editable 8
 visibility 100
 color_fg brown
 end
-

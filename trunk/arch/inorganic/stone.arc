@@ -3,7 +3,8 @@ name river stone
 face lstone.111
 material 2
 value 1
-immune 64
+resist_acid 100
+
 type 73
 weight 800
 editable 2048
@@ -15,7 +16,8 @@ name mountain stone
 face lstone.111
 material 2
 value 1
-immune 64
+resist_acid 100
+
 type 73
 weight 800
 editable 2048
@@ -26,7 +28,8 @@ name stone
 face lstone.111
 material 2
 value 1
-immune 64
+resist_acid 100
+
 type 73
 weight 800
 editable 2048

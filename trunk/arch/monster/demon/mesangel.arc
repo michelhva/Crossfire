@@ -29,7 +29,10 @@ hp 500
 maxhp 500
 Con 12
 level 18
-protected 21
+resist_physical 30
+resist_fire 30
+resist_cold 30
+
 attacktype 5
 speed -0.50
 weight 150000

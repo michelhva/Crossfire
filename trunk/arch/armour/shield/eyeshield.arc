@@ -5,8 +5,9 @@ material 32
 type 33
 face eyeshield.111
 ac 3
-armour 3
-protected 2
+resist_physical 3
+resist_magic 30
+
 weight 15000
 value 30000
 editable 5120

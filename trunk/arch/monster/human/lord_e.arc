@@ -20,13 +20,19 @@ exp 10000
 dam 60
 wc -50
 ac -50
-armour 50
+resist_physical 50
 speed 0.95
 speed_left -2.000000
 level 30
-immune 28
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+
 attacktype 30
-vulnerable 6176
+resist_confusion -100
+resist_slow -100
+resist_paralyze -100
+
 carrying 90000
 weight 50000
 pick_up 24

@@ -25,9 +25,14 @@ sp 60
 maxsp 60
 hp 3500
 maxhp 3500
-immune 16388
-protected 2
-vulnerable 48
+resist_fire 100
+resist_fear 100
+
+resist_magic 30
+
+resist_cold -100
+resist_confusion -100
+
 ac -12
 wc -20
 dam 25

@@ -22,7 +22,8 @@ food 999
 speed 1
 luck 1
 attacktype 1
-protected 128
+resist_drain 30
+
 Str -4
 Dex 3
 Con 4

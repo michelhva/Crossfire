@@ -5,7 +5,7 @@ type 34
 face bighorn_he.111
 last_heal 3
 ac 1
-armour 5
+resist_physical 5
 weight 10000
 value 22
 material 18
