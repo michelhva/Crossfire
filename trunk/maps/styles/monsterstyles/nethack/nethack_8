@@ -530,29 +530,12 @@ attacktype 4097
 resist_electricity 0
 randomitems none
 end
-More
-arch mabu_2
-name succubus
-hp 250
-y 6
-attacktype 4097
-end
 arch cobra
 name Red Naga
 hp 630
 exp 3000
 dam 15
 y 7
-attacktype 1029
-unaggressive 1
-end
-More
-arch cobra_2
-name Red Naga
-hp 630
-exp 3000
-dam 15
-y 8
 attacktype 1029
 unaggressive 1
 end
@@ -566,19 +549,6 @@ maxsp 30
 exp 25000
 ac -5
 y 13
-level 9
-end
-More
-arch minor_djinn_2
-name djinni
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-y 14
 level 9
 end
 arch giant
@@ -592,18 +562,6 @@ y 16
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin mummy
-hp 1550
-maxhp 1550
-exp 13500
-dam 35
-wc -3
-y 17
-attacktype 33
-undead 1
-end
 arch minor_djinn
 name erinys
 Con 4
@@ -618,52 +576,14 @@ y 13
 level 9
 attacktype 5
 end
-More
-arch minor_djinn_2
-name erinys
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 1
-y 14
-level 9
-attacktype 5
-end
 arch troll
 x 1
 y 17
-end
-More
-arch troll_2
-x 2
-y 17
-end
-More
-arch troll_3
-x 1
-y 18
-end
-More
-arch troll_4
-x 2
-y 18
 end
 arch cobra
 name cobra
 x 2
 y 6
-end
-More
-arch cobra_2
-name cobra
-hp 30
-x 2
-y 7
-attacktype 1025
 end
 arch giant
 name ettin zombie
@@ -676,18 +596,6 @@ y 8
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin zombie
-hp 550
-maxhp 550
-exp 3500
-dam 35
-x 2
-y 9
-attacktype 33
-undead 1
-end
 arch minor_djinn
 name marilith
 Con 4
@@ -701,33 +609,11 @@ x 2
 y 13
 level 9
 end
-More
-arch minor_djinn_2
-name marilith
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 2
-y 14
-level 9
-end
 arch cobra
 name python
 hp 600
 x 3
 y 6
-attacktype 1
-end
-More
-arch cobra_2
-name python
-hp 600
-x 3
-y 7
 attacktype 1
 end
 arch troll
@@ -738,64 +624,19 @@ x 3
 y 17
 resist_fire 0
 end
-More
-arch troll_2
-name sasquatch
-hp 2000
-exp 16000
-x 4
-y 17
-end
-More
-arch troll_3
-name sasquatch
-hp 2000
-exp 16000
-x 3
-y 18
-end
-More
-arch troll_4
-name sasquatch
-hp 2000
-exp 16000
-x 4
-y 18
-end
 arch giant
 x 4
 y 5
-end
-More
-arch giant_2
-x 4
-y 6
 end
 arch cobra
 name pit viper
 x 4
 y 7
 end
-More
-arch cobra_2
-name pit viper
-hp 30
-x 4
-y 8
-attacktype 1025
-end
 arch giant
 name stone giant
 hp 450
 exp 2500
 x 5
 y 5
-end
-More
-arch giant_2
-name stone giant
-hp 450
-exp 2500
-x 5
-y 6
 end

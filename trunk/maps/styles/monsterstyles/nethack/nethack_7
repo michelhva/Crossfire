@@ -436,18 +436,7 @@ name snake
 y 1
 attacktype 1025
 end
-More
-arch serpent_2
-name snake
-hp 100
-y 1
-attacktype 1025
-end
 arch unicorn
-y 4
-end
-More
-arch unicorn_2
 y 4
 end
 arch mabu
@@ -457,29 +446,12 @@ attacktype 4097
 resist_electricity 0
 randomitems none
 end
-More
-arch mabu_2
-name succubus
-hp 250
-y 12
-attacktype 4097
-end
 arch cobra
 name Red Naga
 hp 630
 exp 3000
 dam 15
 y 13
-attacktype 1029
-unaggressive 1
-end
-More
-arch cobra_2
-name Red Naga
-hp 630
-exp 3000
-dam 15
-y 14
 attacktype 1029
 unaggressive 1
 end
@@ -489,38 +461,15 @@ x 2
 y 1
 attacktype 1025
 end
-More
-arch serpent_2
-name water moccasin
-hp 100
-x 3
-y 1
-attacktype 1025
-end
 arch unicorn
 name grey unicorn
 x 2
-y 3
-end
-More
-arch unicorn_2
-name grey unicorn
-hp 200
-x 3
 y 3
 end
 arch cobra
 name cobra
 x 2
 y 12
-end
-More
-arch cobra_2
-name cobra
-hp 30
-x 2
-y 13
-attacktype 1025
 end
 arch giant
 name ettin zombie
@@ -532,30 +481,11 @@ y 14
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin zombie
-hp 550
-exp 3500
-dam 35
-x 2
-y 15
-attacktype 33
-undead 1
-end
 arch cobra
 name python
 hp 600
 x 3
 y 12
-attacktype 1
-end
-More
-arch cobra_2
-name python
-hp 600
-x 3
-y 13
 attacktype 1
 end
 arch unicorn
@@ -563,47 +493,19 @@ name black unicorn
 x 4
 y 3
 end
-More
-arch unicorn_2
-name black unicorn
-hp 200
-x 5
-y 3
-end
 arch giant
 x 4
 y 11
-end
-More
-arch giant_2
-x 4
-y 12
 end
 arch cobra
 name pit viper
 x 4
 y 13
 end
-More
-arch cobra_2
-name pit viper
-hp 30
-x 4
-y 14
-attacktype 1025
-end
 arch giant
 name stone giant
 hp 450
 exp 2500
 x 5
 y 11
-end
-More
-arch giant_2
-name stone giant
-hp 450
-exp 2500
-x 5
-y 12
 end

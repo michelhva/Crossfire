@@ -1392,18 +1392,6 @@ exp 25000
 ac -5
 level 9
 end
-More
-arch minor_djinn_2
-name djinni
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-level 9
-end
 arch giant
 name ettin mummy
 hp 1550
@@ -1415,121 +1403,13 @@ y 3
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name ettin mummy
-hp 1550
-maxhp 1550
-exp 13500
-dam 35
-wc -3
-y 4
-attacktype 33
-undead 1
-end
 arch serpent
 name long worm
-y 15
-end
-More
-arch serpent_2
-name long worm
-hp 100
 y 15
 end
 arch Balrog
 name Hezrou
 y 17
-end
-More
-arch Balrog_2
-name Hezrou
-hp 4000
-y 17
-end
-More
-arch Balrog_3
-name Hezrou
-hp 4000
-y 17
-end
-More
-arch Balrog_4
-name Hezrou
-hp 4000
-y 17
-end
-More
-arch Balrog_5
-name Hezrou
-hp 4000
-y 18
-end
-More
-arch Balrog_6
-name Hezrou
-hp 4000
-y 18
-end
-More
-arch Balrog_7
-name Hezrou
-hp 4000
-y 18
-end
-More
-arch Balrog_8
-name Hezrou
-hp 4000
-y 18
-end
-More
-arch Balrog_9
-name Hezrou
-hp 4000
-y 19
-end
-More
-arch Balrog_10
-name Hezrou
-hp 4000
-y 19
-end
-More
-arch Balrog_11
-name Hezrou
-hp 4000
-y 19
-end
-More
-arch Balrog_12
-name Hezrou
-hp 4000
-y 19
-end
-More
-arch Balrog_13
-name Hezrou
-hp 4000
-y 20
-end
-More
-arch Balrog_14
-name Hezrou
-hp 4000
-y 20
-end
-More
-arch Balrog_15
-name Hezrou
-hp 4000
-y 20
-end
-More
-arch Balrog_16
-name Hezrou
-hp 4000
-y 20
 end
 arch giant
 name ettin
@@ -1542,33 +1422,7 @@ y 22
 level 11
 attacktype 1
 end
-More
-arch giant_2
-name ettin
-hp 2550
-maxhp 2550
-exp 23500
-dam 40
-wc -5
-y 23
-level 11
-attacktype 1
-end
 arch minor_djinn
-name erinys
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 1
-level 9
-attacktype 5
-end
-More
-arch minor_djinn_2
 name erinys
 Con 4
 Pow 3
@@ -1585,21 +1439,6 @@ arch troll
 x 1
 y 4
 end
-More
-arch troll_2
-x 2
-y 4
-end
-More
-arch troll_3
-x 1
-y 5
-end
-More
-arch troll_4
-x 2
-y 5
-end
 arch giant
 name Frost Giant
 hp 3500
@@ -1609,22 +1448,6 @@ dam 40
 wc -4
 x 1
 y 22
-level 15
-attacktype 17
-resist_fire -30
-resist_cold 100
-undead 1
-end
-More
-arch giant_2
-name Frost Giant
-hp 3500
-maxhp 3500
-exp 23000
-dam 40
-wc -4
-x 1
-y 23
 level 15
 attacktype 17
 resist_fire -30
@@ -1643,29 +1466,9 @@ ac -5
 x 2
 level 9
 end
-More
-arch minor_djinn_2
-name marilith
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 2
-level 9
-end
 arch serpent
 name baby long worm
 x 2
-y 15
-end
-More
-arch serpent_2
-name baby long worm
-hp 100
-x 3
 y 15
 end
 arch cobra
@@ -1680,19 +1483,6 @@ speed 0.200000
 attacktype 65
 unaggressive 1
 end
-More
-arch cobra_2
-name Golden Naga
-hp 930
-maxhp 930
-exp 10000
-dam 15
-x 2
-y 23
-speed 0.200000
-attacktype 65
-unaggressive 1
-end
 arch troll
 name sasquatch
 hp 2000
@@ -1701,43 +1491,11 @@ x 3
 y 4
 resist_fire 0
 end
-More
-arch troll_2
-name sasquatch
-hp 2000
-exp 16000
-x 4
-y 4
-end
-More
-arch troll_3
-name sasquatch
-hp 2000
-exp 16000
-x 3
-y 5
-end
-More
-arch troll_4
-name sasquatch
-hp 2000
-exp 16000
-x 4
-y 5
-end
 arch serpent
 name baby purple worm
 hp 1000
 exp 12000
 x 4
-y 15
-end
-More
-arch serpent_2
-name baby purple worm
-hp 1000
-exp 12000
-x 5
 y 15
 end
 arch skree
@@ -1751,123 +1509,10 @@ attacktype 1029
 resist_magic 60
 randomitems none
 end
-More
-arch skree_2
-name Bone Devil
-race demon
-hp 1500
-exp 30000
-x 5
-y 17
-level 20
-attacktype 1029
-resist_magic 60
-end
-More
-arch skree_3
-name Bone Devil
-race demon
-hp 1500
-exp 30000
-x 4
-y 18
-level 20
-attacktype 1029
-resist_magic 60
-end
-More
-arch skree_4
-name Bone Devil
-race demon
-hp 1500
-exp 30000
-x 5
-y 18
-level 20
-attacktype 1029
-resist_magic 60
-end
 arch big_demon
 name barbed devil
 x 6
 y 7
-end
-More
-arch big_demon_2
-name barbed devil
-hp 1000
-x 7
-y 7
-end
-More
-arch big_demon_3
-name barbed devil
-hp 1000
-x 8
-y 7
-end
-More
-arch big_demon_4
-name barbed devil
-hp 1000
-x 6
-y 8
-end
-More
-arch big_demon_5
-name barbed devil
-hp 1000
-x 7
-y 8
-end
-More
-arch big_demon_6
-name barbed devil
-hp 1000
-x 8
-y 8
-end
-More
-arch big_demon_7
-name barbed devil
-hp 1000
-x 6
-y 9
-end
-More
-arch big_demon_8
-name barbed devil
-hp 1000
-x 7
-y 9
-end
-More
-arch big_demon_9
-name barbed devil
-hp 1000
-x 8
-y 9
-end
-More
-arch big_demon_A
-name barbed devil
-hp 1000
-x 6
-y 10
-end
-More
-arch big_demon_B
-name barbed devil
-hp 1000
-x 7
-y 10
-end
-More
-arch big_demon_C
-name barbed devil
-hp 1000
-x 8
-y 10
 end
 arch dragonman
 name Fire Giant
@@ -1888,18 +1533,6 @@ resist_paralyze 0
 resist_fear 0
 randomitems giant
 end
-More
-arch dragonman_2
-name Fire Giant
-hp 3500
-exp 100000
-dam 40
-x 6
-y 18
-speed 0.200000
-attacktype 5
-resist_cold -50
-end
 arch gaelotroll
 name Ice Troll
 dam 45
@@ -1907,61 +1540,6 @@ wc -15
 ac -8
 x 7
 y 17
-attacktype 17
-end
-More
-arch gaelotroll_2
-name Ice Troll
-hp 3000
-dam 45
-wc -15
-ac -8
-x 8
-y 17
-attacktype 17
-end
-More
-arch gaelotroll_3
-name Ice Troll
-hp 3000
-dam 45
-wc -15
-ac -8
-x 7
-y 18
-attacktype 17
-end
-More
-arch gaelotroll_4
-name Ice Troll
-hp 3000
-dam 45
-wc -15
-ac -8
-x 8
-y 18
-attacktype 17
-end
-More
-arch gaelotroll_5
-name Ice Troll
-hp 3000
-dam 45
-wc -15
-ac -8
-x 7
-y 19
-attacktype 17
-end
-More
-arch gaelotroll_6
-name Ice Troll
-hp 3000
-dam 45
-wc -15
-ac -8
-x 8
-y 19
 attacktype 17
 end
 arch gaelotroll
@@ -1975,66 +1553,6 @@ x 9
 y 17
 attacktype 1
 end
-More
-arch gaelotroll_2
-name Rock Troll
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 10
-y 17
-attacktype 1
-end
-More
-arch gaelotroll_3
-name Rock Troll
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 9
-y 18
-attacktype 1
-end
-More
-arch gaelotroll_4
-name Rock Troll
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 10
-y 18
-attacktype 1
-end
-More
-arch gaelotroll_5
-name Rock Troll
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 9
-y 19
-attacktype 1
-end
-More
-arch gaelotroll_6
-name Rock Troll
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 10
-y 19
-attacktype 1
-end
 arch gaelotroll
 name Umber Hulk
 hp 5000
@@ -2044,66 +1562,6 @@ wc -5
 ac -5
 x 11
 y 17
-attacktype 33
-end
-More
-arch gaelotroll_2
-name Umber Hulk
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 12
-y 17
-attacktype 33
-end
-More
-arch gaelotroll_3
-name Umber Hulk
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 11
-y 18
-attacktype 33
-end
-More
-arch gaelotroll_4
-name Umber Hulk
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 12
-y 18
-attacktype 33
-end
-More
-arch gaelotroll_5
-name Umber Hulk
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 11
-y 19
-attacktype 33
-end
-More
-arch gaelotroll_6
-name Umber Hulk
-hp 5000
-maxhp 5000
-dam 45
-wc -5
-ac -5
-x 12
-y 19
 attacktype 33
 end
 arch giant
@@ -2119,20 +1577,6 @@ y 7
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name giant mummy
-hp 2550
-maxhp 2550
-exp 30500
-dam 35
-wc -3
-ac -3
-x 12
-y 8
-attacktype 33
-undead 1
-end
 arch giant
 name giant zombie
 hp 2000
@@ -2145,19 +1589,6 @@ y 9
 attacktype 33
 undead 1
 end
-More
-arch giant_2
-name giant zombie
-hp 2000
-maxhp 2000
-exp 23000
-dam 35
-wc -3
-x 12
-y 10
-attacktype 33
-undead 1
-end
 arch cobra
 name Black Naga
 hp 630
@@ -2165,17 +1596,6 @@ exp 5000
 dam 15
 x 12
 y 11
-attacktype 65
-unaggressive 1
-end
-More
-arch cobra_2
-name Black Naga
-hp 630
-exp 5000
-dam 15
-x 12
-y 12
 attacktype 65
 unaggressive 1
 end
