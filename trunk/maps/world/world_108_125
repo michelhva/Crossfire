@@ -38,36 +38,31 @@ arch hills_rocky
 elevation 3452
 y 6
 end
-arch hills_rocky
-elevation 4133
+arch mountain
+elevation 5861
 y 7
 end
 arch mountain
 elevation 5861
 y 8
 end
-arch mountain
-elevation 8642
+arch s_mountain
 y 9
 end
-arch mountain2
-elevation 9820
+arch mountain5
 y 10
 end
-arch mountain2
-elevation 9594
+arch mountain5
 y 11
 end
-arch mountain
-elevation 8351
+arch s_mountain
 y 12
 end
 arch mountain
 elevation 6324
 y 13
 end
-arch jungle_1
-elevation 2913
+arch mountain
 y 14
 end
 arch jungle_1
@@ -249,33 +244,27 @@ elevation 6872
 x 1
 y 7
 end
-arch mountain
-elevation 7725
+arch s_mountain
 x 1
 y 8
 end
-arch mountain2
-elevation 9239
+arch mountain5
 x 1
 y 9
 end
-arch mountain2
-elevation 10328
+arch mountain5
 x 1
 y 10
 end
-arch mountain2
-elevation 9880
+arch s_mountain
 x 1
 y 11
 end
-arch mountain
-elevation 8034
+arch s_mountain
 x 1
 y 12
 end
-arch mountain
-elevation 6759
+arch mountain2
 x 1
 y 13
 end
@@ -498,28 +487,23 @@ elevation 7933
 x 2
 y 7
 end
-arch mountain
-elevation 7540
+arch s_mountain
 x 2
 y 8
 end
-arch mountain
-elevation 8373
+arch mountain5
 x 2
 y 9
 end
-arch mountain2
-elevation 9292
+arch mountain5
 x 2
 y 10
 end
-arch mountain2
-elevation 9306
+arch s_mountain
 x 2
 y 11
 end
-arch mountain
-elevation 8326
+arch mountain2
 x 2
 y 12
 end
@@ -742,33 +726,27 @@ elevation 9051
 x 3
 y 6
 end
-arch mountain
-elevation 8086
+arch s_mountain
 x 3
 y 7
 end
-arch mountain
-elevation 5498
+arch s_mountain
 x 3
 y 8
 end
-arch mountain
-elevation 5330
+arch mountain5
 x 3
 y 9
 end
-arch mountain
-elevation 7999
+arch mountain5
 x 3
 y 10
 end
-arch mountain
-elevation 8257
+arch s_mountain
 x 3
 y 11
 end
-arch mountain
-elevation 7913
+arch mountain2
 x 3
 y 12
 end
@@ -986,33 +964,27 @@ elevation 8144
 x 4
 y 5
 end
-arch mountain
-elevation 8996
+arch s_mountain
 x 4
 y 6
 end
-arch mountain
-elevation 8122
+arch s_mountain
 x 4
 y 7
 end
-arch mountain
-elevation 6122
+arch mountain5
 x 4
 y 8
 end
-arch mountain
-elevation 5383
+arch mountain5
 x 4
 y 9
 end
-arch mountain
-elevation 7567
+arch mountain5
 x 4
 y 10
 end
-arch mountain
-elevation 8027
+arch s_mountain
 x 4
 y 11
 end
@@ -1026,8 +998,7 @@ elevation 6239
 x 4
 y 13
 end
-arch hills_rocky
-elevation 4405
+arch mountain
 x 4
 y 14
 end
@@ -1230,43 +1201,35 @@ elevation 7105
 x 5
 y 4
 end
-arch mountain
-elevation 8682
+arch s_mountain
 x 5
 y 5
 end
-arch mountain2
-elevation 9129
+arch s_mountain
 x 5
 y 6
 end
-arch mountain
-elevation 8787
+arch mountain5
 x 5
 y 7
 end
-arch mountain
-elevation 8230
+arch mountain5
 x 5
 y 8
 end
-arch mountain
-elevation 8120
+arch mountain5
 x 5
 y 9
 end
-arch mountain
-elevation 8214
+arch mountain5
 x 5
 y 10
 end
-arch mountain
-elevation 8127
+arch s_mountain
 x 5
 y 11
 end
-arch mountain
-elevation 7247
+arch mountain2
 x 5
 y 12
 end
@@ -1275,8 +1238,7 @@ elevation 5677
 x 5
 y 13
 end
-arch hills_rocky
-elevation 3436
+arch mountain
 x 5
 y 14
 end
@@ -1479,38 +1441,31 @@ elevation 8250
 x 6
 y 4
 end
-arch mountain2
-elevation 9069
+arch s_mountain
 x 6
 y 5
 end
-arch mountain2
-elevation 9455
+arch mountain5
 x 6
 y 6
 end
-arch mountain2
-elevation 9572
+arch mountain5
 x 6
 y 7
 end
-arch mountain2
-elevation 9069
+arch mountain5
 x 6
 y 8
 end
-arch mountain2
-elevation 9619
+arch s_mountain
 x 6
 y 9
 end
-arch mountain2
-elevation 9396
+arch mountain5
 x 6
 y 10
 end
-arch mountain
-elevation 8440
+arch s_mountain
 x 6
 y 11
 end
@@ -1519,13 +1474,11 @@ elevation 6643
 x 6
 y 12
 end
-arch hills_rocky
-elevation 4782
+arch mountain
 x 6
 y 13
 end
-arch hills_rocky
-elevation 3453
+arch mountain
 x 6
 y 14
 end
@@ -1728,38 +1681,31 @@ elevation 9540
 x 7
 y 4
 end
-arch mountain2
-elevation 9290
+arch s_mountain
 x 7
 y 5
 end
-arch mountain
-elevation 8797
+arch mountain5
 x 7
 y 6
 end
-arch mountain2
-elevation 10051
+arch mountain5
 x 7
 y 7
 end
-arch mountain2
-elevation 10531
+arch s_mountain
 x 7
 y 8
 end
-arch mountain2
-elevation 10381
+arch s_mountain
 x 7
 y 9
 end
-arch mountain2
-elevation 9781
+arch mountain5
 x 7
 y 10
 end
-arch mountain
-elevation 8338
+arch s_mountain
 x 7
 y 11
 end
@@ -1768,13 +1714,11 @@ elevation 5940
 x 7
 y 12
 end
-arch jungle_1
-elevation 1957
+arch mountain
 x 7
 y 13
 end
-arch jungle_1
-elevation 2430
+arch mountain
 x 7
 y 14
 end
@@ -1783,8 +1727,8 @@ elevation 2768
 x 7
 y 15
 end
-arch desert
-elevation 731
+arch jungle_1
+elevation 2768
 x 7
 y 16
 end
@@ -1972,43 +1916,35 @@ elevation 10209
 x 8
 y 3
 end
-arch mountain2
-elevation 10816
+arch s_mountain
 x 8
 y 4
 end
-arch mountain2
-elevation 10109
+arch mountain5
 x 8
 y 5
 end
-arch mountain2
-elevation 9141
+arch mountain5
 x 8
 y 6
 end
-arch mountain2
-elevation 10139
+arch s_mountain
 x 8
 y 7
 end
-arch mountain2
-elevation 10745
+arch drifts
 x 8
 y 8
 end
-arch mountain2
-elevation 10293
+arch mountain5
 x 8
 y 9
 end
-arch mountain2
-elevation 9225
+arch mountain5
 x 8
 y 10
 end
-arch mountain
-elevation 7870
+arch s_mountain
 x 8
 y 11
 end
@@ -2017,8 +1953,7 @@ elevation 5664
 x 8
 y 12
 end
-arch jungle_1
-elevation 1769
+arch mountain
 x 8
 y 13
 end
@@ -2216,48 +2151,39 @@ elevation 9821
 x 9
 y 2
 end
-arch mountain2
-elevation 11648
+arch s_mountain
 x 9
 y 3
 end
-arch mountain2
-elevation 11894
+arch s_mountain
 x 9
 y 4
 end
-arch mountain2
-elevation 9977
+arch mountain5
 x 9
 y 5
 end
-arch mountain
-elevation 8594
+arch mountain5
 x 9
 y 6
 end
-arch mountain2
-elevation 10069
+arch drifts
 x 9
 y 7
 end
-arch mountain2
-elevation 10130
+arch drifts
 x 9
 y 8
 end
-arch mountain2
-elevation 9462
+arch mountain5
 x 9
 y 9
 end
-arch mountain
-elevation 8360
+arch mountain5
 x 9
 y 10
 end
-arch mountain
-elevation 7096
+arch s_mountain
 x 9
 y 11
 end
@@ -2266,8 +2192,7 @@ elevation 5667
 x 9
 y 12
 end
-arch hills_rocky
-elevation 4649
+arch mountain
 x 9
 y 13
 end
@@ -2465,48 +2390,39 @@ elevation 11380
 x 10
 y 2
 end
-arch wasteland
-elevation 12620
+arch s_mountain
 x 10
 y 3
 end
-arch wasteland
-elevation 12529
+arch mountain5
 x 10
 y 4
 end
-arch mountain2
-elevation 11516
+arch mountain5
 x 10
 y 5
 end
-arch mountain2
-elevation 10444
+arch s_mountain
 x 10
 y 6
 end
-arch mountain2
-elevation 9514
+arch drifts
 x 10
 y 7
 end
-arch mountain2
-elevation 9049
+arch s_mountain
 x 10
 y 8
 end
-arch mountain
-elevation 8321
+arch mountain5
 x 10
 y 9
 end
-arch mountain
-elevation 7272
+arch s_mountain
 x 10
 y 10
 end
-arch mountain
-elevation 5648
+arch mountain2
 x 10
 y 11
 end
@@ -2709,53 +2625,43 @@ elevation 10715
 x 11
 y 1
 end
-arch wasteland
-elevation 12316
+arch mountain2
 x 11
 y 2
 end
-arch wasteland
-elevation 13028
+arch s_mountain
 x 11
 y 3
 end
-arch wasteland
-elevation 12883
+arch mountain5
 x 11
 y 4
 end
-arch mountain2
-elevation 11960
+arch mountain5
 x 11
 y 5
 end
-arch mountain2
-elevation 10702
+arch s_mountain
 x 11
 y 6
 end
-arch mountain2
-elevation 9277
+arch drifts
 x 11
 y 7
 end
-arch mountain
-elevation 5663
+arch s_mountain
 x 11
 y 8
 end
-arch mountain
-elevation 7576
+arch mountain5
 x 11
 y 9
 end
-arch mountain
-elevation 7118
+arch s_mountain
 x 11
 y 10
 end
-arch mountain
-elevation 6540
+arch mountain2
 x 11
 y 11
 end
@@ -2958,48 +2864,39 @@ elevation 10266
 x 12
 y 1
 end
-arch wasteland
-elevation 12249
+arch mountain2
 x 12
 y 2
 end
-arch wasteland
-elevation 13404
+arch s_mountain
 x 12
 y 3
 end
-arch wasteland
-elevation 13267
+arch mountain5
 x 12
 y 4
 end
-arch mountain2
-elevation 11087
+arch mountain5
 x 12
 y 5
 end
-arch mountain2
-elevation 10641
+arch s_mountain
 x 12
 y 6
 end
-arch mountain2
-elevation 9217
+arch drifts
 x 12
 y 7
 end
-arch mountain
-elevation 7664
+arch mountain5
 x 12
 y 8
 end
-arch mountain
-elevation 7205
+arch mountain5
 x 12
 y 9
 end
-arch mountain
-elevation 6958
+arch s_mountain
 x 12
 y 10
 end
@@ -3008,8 +2905,7 @@ elevation 6525
 x 12
 y 11
 end
-arch mountain
-elevation 6190
+arch mountain2
 x 12
 y 12
 end
@@ -3212,58 +3108,47 @@ elevation 11951
 x 13
 y 2
 end
-arch wasteland
-elevation 13492
+arch s_mountain
 x 13
 y 3
 end
-arch wasteland
-elevation 13763
+arch mountain5
 x 13
 y 4
 end
-arch wasteland
-elevation 13114
+arch mountain5
 x 13
 y 5
 end
-arch mountain2
-elevation 11962
+arch drifts
 x 13
 y 6
 end
-arch mountain2
-elevation 10172
+arch drifts
 x 13
 y 7
 end
-arch mountain
-elevation 8179
+arch mountain5
 x 13
 y 8
 end
-arch mountain
-elevation 6618
+arch mountain5
 x 13
 y 9
 end
-arch mountain
-elevation 6643
+arch s_mountain
 x 13
 y 10
 end
-arch mountain
-elevation 5778
+arch mountain2
 x 13
 y 11
 end
-arch hills
-elevation 4435
+arch mountain2
 x 13
 y 12
 end
-arch mountain
-elevation 5992
+arch mountain2
 x 13
 y 13
 end
@@ -3461,53 +3346,43 @@ elevation 11508
 x 14
 y 2
 end
-arch wasteland
-elevation 13055
+arch s_mountain
 x 14
 y 3
 end
-arch wasteland
-elevation 13905
+arch mountain5
 x 14
 y 4
 end
-arch wasteland
-elevation 14004
+arch s_mountain
 x 14
 y 5
 end
-arch wasteland
-elevation 13100
+arch drifts
 x 14
 y 6
 end
-arch mountain2
-elevation 10920
+arch s_mountain
 x 14
 y 7
 end
-arch mountain
-elevation 7291
+arch mountain5
 x 14
 y 8
 end
-arch mountain
-elevation 5276
+arch mountain5
 x 14
 y 9
 end
-arch mountain
-elevation 6705
+arch s_mountain
 x 14
 y 10
 end
-arch mountain
-elevation 5976
+arch mountain2
 x 14
 y 11
 end
-arch hills_rocky
-elevation 4412
+arch mountain2
 x 14
 y 12
 end
@@ -3710,43 +3585,35 @@ elevation 10638
 x 15
 y 2
 end
-arch mountain2
-elevation 11743
+arch s_mountain
 x 15
 y 3
 end
-arch wasteland
-elevation 12841
+arch mountain5
 x 15
 y 4
 end
-arch wasteland
-elevation 13912
+arch s_mountain
 x 15
 y 5
 end
-arch wasteland
-elevation 13476
+arch drifts
 x 15
 y 6
 end
-arch mountain2
-elevation 11515
+arch s_mountain
 x 15
 y 7
 end
-arch mountain
-elevation 7827
+arch mountain5
 x 15
 y 8
 end
-arch mountain
-elevation 7616
+arch s_mountain
 x 15
 y 9
 end
-arch mountain
-elevation 7161
+arch s_mountain
 x 15
 y 10
 end
@@ -3755,8 +3622,7 @@ elevation 6259
 x 15
 y 11
 end
-arch hills_rocky
-elevation 3921
+arch mountain
 x 15
 y 12
 end
@@ -3959,43 +3825,35 @@ elevation 9844
 x 16
 y 2
 end
-arch mountain
-elevation 6936
+arch s_mountain
 x 16
 y 3
 end
-arch mountain2
-elevation 11628
+arch mountain5
 x 16
 y 4
 end
-arch wasteland
-elevation 13164
+arch mountain5
 x 16
 y 5
 end
-arch wasteland
-elevation 13188
+arch s_mountain
 x 16
 y 6
 end
-arch mountain2
-elevation 11839
+arch mountain5
 x 16
 y 7
 end
-arch mountain2
-elevation 10116
+arch mountain5
 x 16
 y 8
 end
-arch mountain
-elevation 8605
+arch s_mountain
 x 16
 y 9
 end
-arch mountain
-elevation 7317
+arch mountain2
 x 16
 y 10
 end
@@ -4004,8 +3862,7 @@ elevation 5747
 x 16
 y 11
 end
-arch hills
-elevation 4916
+arch mountain
 x 16
 y 12
 end
@@ -4208,53 +4065,43 @@ elevation 9237
 x 17
 y 2
 end
-arch mountain2
-elevation 9104
+arch s_mountain
 x 17
 y 3
 end
-arch mountain2
-elevation 11112
+arch mountain5
 x 17
 y 4
 end
-arch wasteland
-elevation 12179
+arch mountain5
 x 17
 y 5
 end
-arch wasteland
-elevation 12007
+arch mountain5
 x 17
 y 6
 end
-arch mountain2
-elevation 11379
+arch mountain5
 x 17
 y 7
 end
-arch mountain2
-elevation 10191
+arch mountain5
 x 17
 y 8
 end
-arch mountain
-elevation 8604
+arch s_mountain
 x 17
 y 9
 end
-arch mountain
-elevation 6961
+arch mountain2
 x 17
 y 10
 end
-arch hills_rocky
-elevation 3799
+arch mountain
 x 17
 y 11
 end
-arch jungle_1
-elevation 2167
+arch mountain
 x 17
 y 12
 end
@@ -4457,53 +4304,43 @@ elevation 8638
 x 18
 y 2
 end
-arch mountain2
-elevation 10712
+arch s_mountain
 x 18
 y 3
 end
-arch mountain2
-elevation 11385
+arch mountain5
 x 18
 y 4
 end
-arch mountain2
-elevation 9987
+arch mountain5
 x 18
 y 5
 end
-arch mountain2
-elevation 10217
+arch mountain5
 x 18
 y 6
 end
-arch mountain2
-elevation 9324
+arch mountain5
 x 18
 y 7
 end
-arch mountain2
-elevation 9152
+arch s_mountain
 x 18
 y 8
 end
-arch mountain
-elevation 8478
+arch s_mountain
 x 18
 y 9
 end
-arch mountain
-elevation 6596
+arch mountain2
 x 18
 y 10
 end
-arch hills
-elevation 3832
+arch mountain
 x 18
 y 11
 end
-arch woods_2
-elevation 2569
+arch mountain
 x 18
 y 12
 end
@@ -4711,28 +4548,23 @@ elevation 10761
 x 19
 y 3
 end
-arch mountain2
-elevation 11087
+arch s_mountain
 x 19
 y 4
 end
-arch mountain2
-elevation 10433
+arch mountain5
 x 19
 y 5
 end
-arch mountain
-elevation 8458
+arch mountain5
 x 19
 y 6
 end
-arch mountain
-elevation 5363
+arch mountain5
 x 19
 y 7
 end
-arch mountain
-elevation 8169
+arch s_mountain
 x 19
 y 8
 end
@@ -4960,28 +4792,23 @@ elevation 9571
 x 20
 y 3
 end
-arch mountain2
-elevation 10326
+arch s_mountain
 x 20
 y 4
 end
-arch mountain2
-elevation 9944
+arch mountain5
 x 20
 y 5
 end
-arch mountain
-elevation 8670
+arch mountain5
 x 20
 y 6
 end
-arch mountain
-elevation 7944
+arch s_mountain
 x 20
 y 7
 end
-arch mountain
-elevation 7516
+arch mountain2
 x 20
 y 8
 end
@@ -5209,28 +5036,23 @@ elevation 8459
 x 21
 y 3
 end
-arch mountain2
-elevation 9145
+arch s_mountain
 x 21
 y 4
 end
-arch mountain2
-elevation 9233
+arch mountain5
 x 21
 y 5
 end
-arch mountain
-elevation 8817
+arch mountain5
 x 21
 y 6
 end
-arch mountain
-elevation 7333
+arch s_mountain
 x 21
 y 7
 end
-arch mountain
-elevation 7840
+arch mountain2
 x 21
 y 8
 end
@@ -5453,28 +5275,23 @@ elevation 6870
 x 22
 y 2
 end
-arch mountain
-elevation 7988
+arch mountain2
 x 22
 y 3
 end
-arch mountain
-elevation 8398
+arch s_mountain
 x 22
 y 4
 end
-arch mountain
-elevation 7074
+arch mountain5
 x 22
 y 5
 end
-arch mountain2
-elevation 9014
+arch mountain5
 x 22
 y 6
 end
-arch mountain2
-elevation 9336
+arch s_mountain
 x 22
 y 7
 end
@@ -5702,33 +5519,27 @@ elevation 6064
 x 23
 y 2
 end
-arch mountain
-elevation 6780
+arch mountain2
 x 23
 y 3
 end
-arch mountain
-elevation 8001
+arch s_mountain
 x 23
 y 4
 end
-arch mountain
-elevation 8806
+arch s_mountain
 x 23
 y 5
 end
-arch mountain2
-elevation 9563
+arch mountain5
 x 23
 y 6
 end
-arch mountain2
-elevation 10358
+arch mountain5
 x 23
 y 7
 end
-arch mountain2
-elevation 10214
+arch s_mountain
 x 23
 y 8
 end
@@ -5822,18 +5633,15 @@ elevation 8322
 x 23
 y 26
 end
-arch mountain
-elevation 8309
+arch mountain2
 x 23
 y 27
 end
-arch mountain
-elevation 5555
+arch mountain2
 x 23
 y 28
 end
-arch mountain
-elevation 7550
+arch mountain2
 x 23
 y 29
 end
@@ -5951,33 +5759,27 @@ elevation 6536
 x 24
 y 2
 end
-arch mountain
-elevation 6850
+arch mountain2
 x 24
 y 3
 end
-arch mountain
-elevation 7863
+arch mountain2
 x 24
 y 4
 end
-arch mountain
-elevation 8700
+arch s_mountain
 x 24
 y 5
 end
-arch mountain2
-elevation 9977
+arch mountain5
 x 24
 y 6
 end
-arch mountain2
-elevation 10716
+arch mountain5
 x 24
 y 7
 end
-arch mountain2
-elevation 10629
+arch s_mountain
 x 24
 y 8
 end
@@ -5991,13 +5793,11 @@ elevation 7222
 x 24
 y 10
 end
-arch steppe
-elevation 3452
+arch mountain
 x 24
 y 11
 end
-arch hills_rocky
-elevation 4289
+arch mountain
 x 24
 y 12
 end
@@ -6061,23 +5861,19 @@ elevation 7088
 x 24
 y 24
 end
-arch mountain
-elevation 8196
+arch mountain2
 x 24
 y 25
 end
-arch mountain
-elevation 8479
+arch s_mountain
 x 24
 y 26
 end
-arch mountain
-elevation 7998
+arch s_mountain
 x 24
 y 27
 end
-arch mountain
-elevation 7544
+arch mountain2
 x 24
 y 28
 end
@@ -6210,28 +6006,23 @@ elevation 7506
 x 25
 y 4
 end
-arch mountain
-elevation 8769
+arch s_mountain
 x 25
 y 5
 end
-arch mountain2
-elevation 9548
+arch mountain5
 x 25
 y 6
 end
-arch mountain2
-elevation 10072
+arch mountain5
 x 25
 y 7
 end
-arch mountain2
-elevation 9902
+arch mountain5
 x 25
 y 8
 end
-arch mountain
-elevation 8826
+arch s_mountain
 x 25
 y 9
 end
@@ -6240,18 +6031,15 @@ elevation 6657
 x 25
 y 10
 end
-arch hills_rocky
-elevation 3273
+arch mountain
 x 25
 y 11
 end
-arch evergreen
-elevation 2453
+arch mountain
 x 25
 y 12
 end
-arch woods_2
-elevation 2836
+arch mountain
 x 25
 y 13
 end
@@ -6270,8 +6058,7 @@ elevation 3548
 x 25
 y 16
 end
-arch hills
-elevation 3875
+arch mountain
 x 25
 y 17
 end
@@ -6300,28 +6087,23 @@ elevation 6864
 x 25
 y 22
 end
-arch mountain
-elevation 6794
+arch mountain2
 x 25
 y 23
 end
-arch mountain
-elevation 7379
+arch s_mountain
 x 25
 y 24
 end
-arch mountain
-elevation 8005
+arch s_mountain
 x 25
 y 25
 end
-arch mountain
-elevation 8377
+arch mountain5
 x 25
 y 26
 end
-arch mountain
-elevation 8170
+arch s_mountain
 x 25
 y 27
 end
@@ -6459,73 +6241,59 @@ elevation 7618
 x 26
 y 4
 end
-arch mountain
-elevation 8624
+arch s_mountain
 x 26
 y 5
 end
-arch mountain2
-elevation 9001
+arch mountain5
 x 26
 y 6
 end
-arch mountain
-elevation 8341
+arch mountain5
 x 26
 y 7
 end
-arch mountain
-elevation 8560
+arch mountain5
 x 26
 y 8
 end
-arch mountain
-elevation 7752
+arch s_mountain
 x 26
 y 9
 end
-arch mountain
-elevation 6298
+arch mountain2
 x 26
 y 10
 end
-arch hills
-elevation 4730
+arch mountain
 x 26
 y 11
 end
-arch hills
-elevation 3656
+arch mountain
 x 26
 y 12
 end
-arch hills
-elevation 3352
+arch mountain
 x 26
 y 13
 end
-arch woods_2
-elevation 2857
+arch mountain
 x 26
 y 14
 end
-arch hills
-elevation 3136
+arch mountain
 x 26
 y 15
 end
-arch hills
-elevation 3005
+arch mountain
 x 26
 y 16
 end
-arch woods_2
-elevation 1784
+arch mountain
 x 26
 y 17
 end
-arch hills
-elevation 4754
+arch mountain
 x 26
 y 18
 end
@@ -6534,8 +6302,7 @@ elevation 6816
 x 26
 y 19
 end
-arch mountain
-elevation 7891
+arch mountain2
 x 26
 y 20
 end
@@ -6544,28 +6311,23 @@ elevation 7863
 x 26
 y 21
 end
-arch mountain
-elevation 7131
+arch s_mountain
 x 26
 y 22
 end
-arch mountain
-elevation 6629
+arch s_mountain
 x 26
 y 23
 end
-arch mountain
-elevation 6520
+arch mountain5
 x 26
 y 24
 end
-arch mountain
-elevation 7596
+arch mountain5
 x 26
 y 25
 end
-arch mountain
-elevation 8165
+arch s_mountain
 x 26
 y 26
 end
@@ -6708,28 +6470,23 @@ elevation 8017
 x 27
 y 4
 end
-arch mountain
-elevation 8487
+arch mountain2
 x 27
 y 5
 end
-arch mountain
-elevation 8274
+arch s_mountain
 x 27
 y 6
 end
-arch mountain
-elevation 7854
+arch mountain5
 x 27
 y 7
 end
-arch mountain
-elevation 7289
+arch mountain5
 x 27
 y 8
 end
-arch mountain
-elevation 6507
+arch s_mountain
 x 27
 y 9
 end
@@ -6738,43 +6495,35 @@ elevation 5820
 x 27
 y 10
 end
-arch hills
-elevation 4964
+arch mountain2
 x 27
 y 11
 end
-arch hills
-elevation 3457
+arch mountain
 x 27
 y 12
 end
-arch hills
-elevation 3614
+arch mountain
 x 27
 y 13
 end
-arch hills
-elevation 4199
+arch mountain
 x 27
 y 14
 end
-arch woods_2
-elevation 1130
+arch mountain
 x 27
 y 15
 end
-arch woods_2
-elevation 2463
+arch mountain
 x 27
 y 16
 end
-arch hills
-elevation 3698
+arch mountain2
 x 27
 y 17
 end
-arch hills
-elevation 4224
+arch mountain2
 x 27
 y 18
 end
@@ -6788,28 +6537,23 @@ elevation 7460
 x 27
 y 20
 end
-arch mountain
-elevation 7605
+arch mountain2
 x 27
 y 21
 end
-arch mountain
-elevation 7058
+arch s_mountain
 x 27
 y 22
 end
-arch hills
-elevation 4203
+arch mountain5
 x 27
 y 23
 end
-arch mountain
-elevation 5587
+arch mountain5
 x 27
 y 24
 end
-arch mountain
-elevation 6990
+arch s_mountain
 x 27
 y 25
 end
@@ -6962,33 +6706,27 @@ elevation 8360
 x 28
 y 5
 end
-arch mountain
-elevation 7491
+arch s_mountain
 x 28
 y 6
 end
-arch mountain
-elevation 5989
+arch mountain5
 x 28
 y 7
 end
-arch mountain
-elevation 6231
+arch mountain5
 x 28
 y 8
 end
-arch mountain
-elevation 6003
+arch s_mountain
 x 28
 y 9
 end
-arch hills
-elevation 4706
+arch s_mountain
 x 28
 y 10
 end
-arch hills
-elevation 4381
+arch s_mountain
 x 28
 y 11
 end
@@ -6997,68 +6735,55 @@ elevation 5659
 x 28
 y 12
 end
-arch mountain
-elevation 6102
+arch mountain2
 x 28
 y 13
 end
-arch mountain
-elevation 5897
+arch s_mountain
 x 28
 y 14
 end
-arch mountain
-elevation 5650
+arch s_mountain
 x 28
 y 15
 end
-arch mountain
-elevation 5526
+arch s_mountain
 x 28
 y 16
 end
-arch mountain
-elevation 5873
+arch s_mountain
 x 28
 y 17
 end
-arch mountain
-elevation 5894
+arch s_mountain
 x 28
 y 18
 end
-arch mountain
-elevation 6761
+arch s_mountain
 x 28
 y 19
 end
-arch mountain
-elevation 7272
+arch s_mountain
 x 28
 y 20
 end
-arch mountain
-elevation 7250
+arch s_mountain
 x 28
 y 21
 end
-arch mountain
-elevation 6807
+arch mountain5
 x 28
 y 22
 end
-arch mountain
-elevation 6321
+arch mountain5
 x 28
 y 23
 end
-arch mountain
-elevation 6285
+arch s_mountain
 x 28
 y 24
 end
-arch mountain
-elevation 5638
+arch mountain2
 x 28
 y 25
 end
@@ -7206,103 +6931,83 @@ elevation 7728
 x 29
 y 4
 end
-arch mountain
-elevation 7963
+arch mountain2
 x 29
 y 5
 end
-arch mountain
-elevation 7006
+arch s_mountain
 x 29
 y 6
 end
-arch hills
-elevation 3478
+arch mountain5
 x 29
 y 7
 end
-arch mountain
-elevation 5714
+arch mountain5
 x 29
 y 8
 end
-arch mountain
-elevation 5795
+arch mountain5
 x 29
 y 9
 end
-arch hills
-elevation 4773
+arch mountain5
 x 29
 y 10
 end
-arch mountain
-elevation 5988
+arch s_mountain
 x 29
 y 11
 end
-arch mountain
-elevation 6921
+arch s_mountain
 x 29
 y 12
 end
-arch mountain
-elevation 7752
+arch s_mountain
 x 29
 y 13
 end
-arch mountain
-elevation 7929
+arch s_mountain
 x 29
 y 14
 end
-arch mountain
-elevation 7274
+arch mountain5
 x 29
 y 15
 end
-arch mountain
-elevation 8049
+arch mountain5
 x 29
 y 16
 end
-arch mountain
-elevation 7911
+arch mountain5
 x 29
 y 17
 end
-arch mountain
-elevation 7560
+arch mountain5
 x 29
 y 18
 end
-arch mountain
-elevation 7122
+arch s_mountain
 x 29
 y 19
 end
-arch mountain
-elevation 6632
+arch s_mountain
 x 29
 y 20
 end
-arch mountain
-elevation 6645
+arch mountain5
 x 29
 y 21
 end
-arch mountain
-elevation 5913
+arch mountain5
 x 29
 y 22
 end
-arch mountain
-elevation 7089
+arch s_mountain
 x 29
 y 23
 end
-arch mountain
-elevation 6922
+arch s_mountain
 x 29
 y 24
 end
@@ -7460,98 +7165,79 @@ elevation 7142
 x 30
 y 5
 end
-arch mountain
-elevation 6460
+arch s_mountain
 x 30
 y 6
 end
-arch mountain
-elevation 5913
+arch mountain5
 x 30
 y 7
 end
-arch mountain
-elevation 5688
+arch mountain5
 x 30
 y 8
 end
-arch mountain
-elevation 5863
+arch mountain5
 x 30
 y 9
 end
-arch mountain
-elevation 5954
+arch mountain5
 x 30
 y 10
 end
-arch mountain
-elevation 6326
+arch mountain5
 x 30
 y 11
 end
-arch mountain
-elevation 7310
+arch mountain5
 x 30
 y 12
 end
-arch mountain
-elevation 8363
+arch mountain5
 x 30
 y 13
 end
-arch mountain2
-elevation 9032
+arch mountain5
 x 30
 y 14
 end
-arch mountain2
-elevation 9489
+arch mountain5
 x 30
 y 15
 end
-arch mountain2
-elevation 9594
+arch mountain5
 x 30
 y 16
 end
-arch mountain2
-elevation 9150
+arch mountain5
 x 30
 y 17
 end
-arch mountain
-elevation 8579
+arch mountain5
 x 30
 y 18
 end
-arch mountain
-elevation 7462
+arch mountain5
 x 30
 y 19
 end
-arch hills
-elevation 4989
+arch mountain5
 x 30
 y 20
 end
-arch mountain
-elevation 5704
+arch mountain5
 x 30
 y 21
 end
-arch mountain
-elevation 6606
+arch mountain5
 x 30
 y 22
 end
-arch mountain
-elevation 7020
+arch s_mountain
 x 30
 y 23
 end
-arch mountain
-elevation 7109
+arch mountain2
 x 30
 y 24
 end
@@ -7689,8 +7375,7 @@ elevation 4326
 x 31
 y 1
 end
-arch hills_rocky
-elevation 3392
+arch mountain
 x 31
 y 2
 end
@@ -7709,98 +7394,137 @@ elevation 5911
 x 31
 y 5
 end
-arch mountain
-elevation 5786
+arch s_mountain
 x 31
 y 6
 end
-arch mountain
-elevation 5585
+arch mountain5
 x 31
 y 7
 end
-arch mountain
-elevation 5357
+arch mountain5
 x 31
 y 8
 end
-arch mountain
-elevation 5442
+arch s_mountain
 x 31
 y 9
 end
-arch mountain
-elevation 5271
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 31
+y 9
+end
+arch mountain5
 x 31
 y 10
 end
-arch mountain
-elevation 5477
+arch mountain5
 x 31
 y 11
 end
-arch mountain
-elevation 6307
+arch mountain5
 x 31
 y 12
 end
-arch mountain
-elevation 7716
+arch mountain5
 x 31
 y 13
 end
-arch mountain2
-elevation 9193
+arch mountain5
 x 31
 y 14
 end
-arch mountain2
-elevation 9964
+arch mountain5
 x 31
 y 15
 end
-arch mountain2
-elevation 10146
+arch s_mountain
 x 31
 y 16
 end
-arch mountain2
-elevation 9910
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 31
+y 16
+end
+arch s_mountain
 x 31
 y 17
 end
-arch mountain2
-elevation 9163
+arch s_mountain
 x 31
 y 18
 end
-arch mountain
-elevation 7896
+arch mountain5
 x 31
 y 19
 end
-arch mountain
-elevation 6648
+arch mountain5
 x 31
 y 20
 end
-arch mountain
-elevation 5551
+arch mountain5
 x 31
 y 21
 end
-arch mountain
-elevation 6033
+arch mountain5
 x 31
 y 22
 end
-arch mountain
-elevation 6168
+arch s_mountain
 x 31
 y 23
 end
-arch mountain
-elevation 6501
+arch mountain2
 x 31
 y 24
 end
@@ -7929,127 +7653,102 @@ elevation 4079
 x 31
 y 49
 end
-arch hills_rocky
-elevation 3937
+arch hills
 x 32
 end
-arch hills
-elevation 4113
+arch hills_rocky
 x 32
 y 1
 end
-arch hills_rocky
-elevation 4412
+arch mountain
 x 32
 y 2
 end
-arch hills_rocky
-elevation 4503
+arch mountain
 x 32
 y 3
 end
-arch hills_rocky
-elevation 3392
+arch mountain2
 x 32
 y 4
 end
-arch hills
-elevation 4819
+arch s_mountain
 x 32
 y 5
 end
-arch mountain
-elevation 5150
+arch s_mountain
 x 32
 y 6
 end
-arch hills_rocky
-elevation 3868
+arch mountain5
 x 32
 y 7
 end
-arch mountain
-elevation 5160
+arch mountain5
 x 32
 y 8
 end
-arch hills
-elevation 2721
+arch s_mountain
 x 32
 y 9
 end
-arch hills
-elevation 4335
+arch s_mountain
 x 32
 y 10
 end
-arch hills
-elevation 3188
+arch mountain5
 x 32
 y 11
 end
-arch woods_3
-elevation 2747
+arch s_mountain
 x 32
 y 12
 end
-arch mountain
-elevation 6692
+arch s_mountain
 x 32
 y 13
 end
-arch mountain
-elevation 8527
+arch drifts
 x 32
 y 14
 end
-arch mountain2
-elevation 9400
+arch drifts
 x 32
 y 15
 end
-arch mountain2
-elevation 9688
+arch drifts
 x 32
 y 16
 end
-arch mountain2
-elevation 9439
+arch drifts
 x 32
 y 17
 end
-arch mountain2
-elevation 9262
+arch drifts
 x 32
 y 18
 end
-arch mountain
-elevation 8480
+arch s_mountain
 x 32
 y 19
 end
-arch mountain
-elevation 6159
+arch mountain5
 x 32
 y 20
 end
-arch mountain
-elevation 5876
+arch mountain5
 x 32
 y 21
 end
-arch mountain
-elevation 5315
+arch mountain5
 x 32
 y 22
 end
-arch hills
-elevation 4072
+arch s_mountain
 x 32
 y 23
 end
-arch hills
-elevation 4694
+arch mountain
 x 32
 y 24
 end
@@ -8178,12 +7877,10 @@ elevation 4451
 x 32
 y 49
 end
-arch hills_rocky
-elevation 3286
+arch hills
 x 33
 end
-arch hills
-elevation 3962
+arch hills_rocky
 x 33
 y 1
 end
@@ -8192,113 +7889,91 @@ elevation 3626
 x 33
 y 2
 end
-arch hills
-elevation 4399
+arch mountain2
 x 33
 y 3
 end
-arch hills_rocky
-elevation 3810
+arch mountain2
 x 33
 y 4
 end
-arch hills
-elevation 3599
+arch s_mountain
 x 33
 y 5
 end
-arch mountain
-elevation 5167
+arch mountain5
 x 33
 y 6
 end
-arch mountain
-elevation 5647
+arch mountain5
 x 33
 y 7
 end
-arch mountain
-elevation 5491
+arch mountain5
 x 33
 y 8
 end
-arch mountain
-elevation 5164
+arch drifts
 x 33
 y 9
 end
-arch hills
-elevation 4137
+arch drifts
 x 33
 y 10
 end
-arch hills_rocky
-elevation 3543
+arch drifts
 x 33
 y 11
 end
-arch hills_rocky
-elevation 3365
+arch drifts
 x 33
 y 12
 end
-arch mountain
-elevation 5519
+arch drifts
 x 33
 y 13
 end
-arch mountain
-elevation 7391
+arch snow
 x 33
 y 14
 end
-arch mountain
-elevation 8607
+arch snow
 x 33
 y 15
 end
-arch mountain
-elevation 8954
+arch snow
 x 33
 y 16
 end
-arch mountain
-elevation 8017
+arch snow
 x 33
 y 17
 end
-arch mountain2
-elevation 9049
+arch snow
 x 33
 y 18
 end
-arch mountain
-elevation 8674
+arch drifts
 x 33
 y 19
 end
-arch mountain
-elevation 7992
+arch s_mountain
 x 33
 y 20
 end
-arch mountain
-elevation 7361
+arch mountain5
 x 33
 y 21
 end
-arch mountain
-elevation 6858
+arch mountain5
 x 33
 y 22
 end
-arch mountain
-elevation 6527
+arch s_mountain
 x 33
 y 23
 end
-arch mountain
-elevation 6766
+arch mountain2
 x 33
 y 24
 end
@@ -8431,128 +8106,103 @@ arch evergreen
 elevation 2958
 x 34
 end
-arch hills
-elevation 3811
+arch hills_rocky
 x 34
 y 1
 end
-arch hills_rocky
-elevation 4608
+arch mountain
 x 34
 y 2
 end
-arch hills_rocky
-elevation 4845
+arch mountain2
 x 34
 y 3
 end
-arch hills_rocky
-elevation 4740
+arch mountain2
 x 34
 y 4
 end
-arch mountain
-elevation 5236
+arch s_mountain
 x 34
 y 5
 end
-arch mountain
-elevation 5739
+arch mountain5
 x 34
 y 6
 end
-arch mountain
-elevation 6219
+arch mountain5
 x 34
 y 7
 end
-arch mountain
-elevation 6476
+arch s_mountain
 x 34
 y 8
 end
-arch mountain
-elevation 6057
+arch drifts
 x 34
 y 9
 end
-arch hills
-elevation 4548
+arch snow
 x 34
 y 10
 end
-arch evergreen
-elevation 1861
+arch snow
 x 34
 y 11
 end
-arch hills
-elevation 3421
+arch snow
 x 34
 y 12
 end
-arch hills
-elevation 4061
+arch snow
 x 34
 y 13
 end
-arch mountain
-elevation 5944
+arch snow
 x 34
 y 14
 end
-arch mountain
-elevation 7691
+arch snow
 x 34
 y 15
 end
-arch mountain
-elevation 8669
+arch snow
 x 34
 y 16
 end
-arch mountain
-elevation 8147
+arch snow
 x 34
 y 17
 end
-arch mountain2
-elevation 9021
+arch snow
 x 34
 y 18
 end
-arch mountain
-elevation 8782
+arch snow
 x 34
 y 19
 end
-arch mountain
-elevation 8404
+arch drifts
 x 34
 y 20
 end
-arch mountain
-elevation 8300
+arch mountain5
 x 34
 y 21
 end
-arch mountain
-elevation 8129
+arch mountain5
 x 34
 y 22
 end
-arch mountain
-elevation 7976
+arch s_mountain
 x 34
 y 23
 end
-arch mountain
-elevation 7930
+arch s_mountain
 x 34
 y 24
 end
-arch mountain
-elevation 7625
+arch mountain2
 x 34
 y 25
 end
@@ -8561,8 +8211,7 @@ elevation 6488
 x 34
 y 26
 end
-arch hills
-elevation 4016
+arch mountain
 x 34
 y 27
 end
@@ -8695,108 +8344,91 @@ elevation 5423
 x 35
 y 3
 end
-arch mountain
-elevation 5632
+arch s_mountain
 x 35
 y 4
 end
-arch mountain
-elevation 5835
+arch s_mountain
 x 35
 y 5
 end
-arch mountain
-elevation 6099
+arch mountain5
 x 35
 y 6
 end
-arch mountain
-elevation 6511
+arch mountain5
 x 35
 y 7
 end
-arch mountain
-elevation 6961
+arch s_mountain
 x 35
 y 8
 end
-arch mountain
-elevation 6807
+arch snow
 x 35
 y 9
 end
-arch mountain
-elevation 5286
+arch snow
 x 35
 y 10
 end
-arch woods_3
-elevation 1072
+arch snow
 x 35
 y 11
 end
-arch hills_rocky
-elevation 3905
+arch snow
 x 35
 y 12
 end
-arch hills
-elevation 3166
+arch snow
 x 35
 y 13
 end
-arch hills
-elevation 3743
+arch snow
 x 35
 y 14
 end
-arch mountain
-elevation 7254
+arch snow
 x 35
 y 15
 end
-arch mountain
-elevation 8806
+arch air_witch
+x 35
+y 15
+end
+arch snow
 x 35
 y 16
 end
-arch mountain2
-elevation 9693
+arch snow
 x 35
 y 17
 end
-arch mountain2
-elevation 9553
+arch snow
 x 35
 y 18
 end
-arch mountain
-elevation 7836
+arch snow
 x 35
 y 19
 end
-arch mountain
-elevation 7440
+arch drifts
 x 35
 y 20
 end
-arch mountain
-elevation 8503
+arch mountain5
 x 35
 y 21
 end
-arch mountain
-elevation 8618
+arch mountain5
 x 35
 y 22
 end
-arch mountain
-elevation 8300
+arch mountain5
 x 35
 y 23
 end
-arch mountain
-elevation 8327
+arch s_mountain
 x 35
 y 24
 end
@@ -8810,8 +8442,7 @@ elevation 6562
 x 35
 y 26
 end
-arch hills_rocky
-elevation 3977
+arch mountain
 x 35
 y 27
 end
@@ -8929,8 +8560,7 @@ arch hills
 elevation 3918
 x 36
 end
-arch hills
-elevation 4719
+arch hills_rocky
 x 36
 y 1
 end
@@ -8944,108 +8574,116 @@ elevation 5672
 x 36
 y 3
 end
-arch mountain
-elevation 5627
+arch s_mountain
 x 36
 y 4
 end
-arch mountain
-elevation 6198
+arch mountain5
 x 36
 y 5
 end
-arch mountain
-elevation 5633
+arch mountain5
 x 36
 y 6
 end
-arch mountain
-elevation 5790
+arch mountain5
 x 36
 y 7
 end
-arch mountain
-elevation 7466
+arch drifts
 x 36
 y 8
 end
-arch mountain
-elevation 7537
+arch snow
 x 36
 y 9
 end
-arch mountain
-elevation 6731
+arch ipond
 x 36
 y 10
 end
-arch mountain
-elevation 5998
+arch snow
 x 36
 y 11
 end
-arch mountain
-elevation 5360
+arch snow
 x 36
 y 12
 end
-arch mountain
-elevation 5417
+arch snow
 x 36
 y 13
 end
-arch hills
-elevation 4705
+arch snow
 x 36
 y 14
 end
-arch mountain
-elevation 7096
+arch snow
 x 36
 y 15
 end
-arch mountain2
-elevation 9701
+arch snow
 x 36
 y 16
 end
-arch mountain2
-elevation 10430
+arch snow
 x 36
 y 17
 end
-arch mountain2
-elevation 9960
+arch snow
 x 36
 y 18
 end
-arch mountain
-elevation 8752
+arch snow
 x 36
 y 19
 end
-arch mountain
-elevation 7586
+arch drifts
 x 36
 y 20
 end
-arch mountain
-elevation 7804
+arch s_mountain
 x 36
 y 21
 end
-arch mountain
-elevation 8244
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 36
+y 21
+end
+arch mountain5
 x 36
 y 22
 end
-arch mountain
-elevation 8357
+arch mountain5
 x 36
 y 23
 end
-arch mountain
-elevation 7126
+arch s_mountain
 x 36
 y 24
 end
@@ -9059,8 +8697,7 @@ elevation 6648
 x 36
 y 26
 end
-arch hills_rocky
-elevation 4248
+arch mountain
 x 36
 y 27
 end
@@ -9174,12 +8811,10 @@ elevation 6676
 x 36
 y 49
 end
-arch hills
-elevation 3796
+arch hills_rocky
 x 37
 end
-arch hills
-elevation 4539
+arch mountain
 x 37
 y 1
 end
@@ -9188,118 +8823,95 @@ elevation 5184
 x 37
 y 2
 end
-arch mountain
-elevation 5259
+arch mountain2
 x 37
 y 3
 end
-arch mountain
-elevation 6068
+arch s_mountain
 x 37
 y 4
 end
-arch mountain
-elevation 6483
+arch mountain5
 x 37
 y 5
 end
-arch mountain
-elevation 6790
+arch mountain5
 x 37
 y 6
 end
-arch mountain
-elevation 7180
+arch mountain5
 x 37
 y 7
 end
-arch mountain
-elevation 7651
+arch drifts
 x 37
 y 8
 end
-arch mountain
-elevation 7937
+arch snow
 x 37
 y 9
 end
-arch mountain
-elevation 7794
+arch snow
 x 37
 y 10
 end
-arch mountain
-elevation 7535
+arch snow
 x 37
 y 11
 end
-arch mountain
-elevation 7292
+arch snow
 x 37
 y 12
 end
-arch mountain
-elevation 7372
+arch snow
 x 37
 y 13
 end
-arch mountain
-elevation 8167
+arch snow
 x 37
 y 14
 end
-arch mountain2
-elevation 9412
+arch snow
 x 37
 y 15
 end
-arch mountain2
-elevation 10415
+arch snow
 x 37
 y 16
 end
-arch mountain2
-elevation 10657
+arch snow
 x 37
 y 17
 end
-arch mountain2
-elevation 10039
+arch snow
 x 37
 y 18
 end
-arch mountain
-elevation 8094
+arch snow
 x 37
 y 19
 end
-arch mountain
-elevation 6996
+arch drifts
 x 37
 y 20
 end
-arch hills
-elevation 4805
+arch s_mountain
 x 37
 y 21
 end
-arch mountain
-elevation 7979
+arch mountain5
 x 37
 y 22
 end
-arch mountain
-elevation 8508
+arch mountain5
 x 37
 y 23
 end
-arch mountain
-elevation 8255
+arch s_mountain
 x 37
 y 24
 end
-arch mountain
-elevation 7373
+arch mountain2
 x 37
 y 25
 end
@@ -9423,127 +9035,106 @@ elevation 4794
 x 37
 y 49
 end
-arch woods_3
-elevation 2598
+arch hills_rocky
 x 38
 end
-arch hills
-elevation 4481
+arch mountain
 x 38
 y 1
 end
-arch hills
-elevation 4622
+arch mountain
 x 38
 y 2
 end
-arch mountain
-elevation 5301
+arch s_mountain
 x 38
 y 3
 end
-arch mountain
-elevation 6189
+arch s_mountain
 x 38
 y 4
 end
-arch mountain
-elevation 6762
+arch mountain5
 x 38
 y 5
 end
-arch mountain
-elevation 6872
+arch mountain5
 x 38
 y 6
 end
-arch mountain
-elevation 6825
+arch s_mountain
 x 38
 y 7
 end
-arch mountain
-elevation 6914
+arch snow
 x 38
 y 8
 end
-arch mountain
-elevation 7312
+arch snow
 x 38
 y 9
 end
-arch mountain
-elevation 7795
+arch snow
 x 38
 y 10
 end
-arch mountain
-elevation 7396
+arch snow
 x 38
 y 11
 end
-arch mountain
-elevation 8237
+arch snow
 x 38
 y 12
 end
-arch mountain
-elevation 8740
+arch snow
 x 38
 y 13
 end
-arch mountain2
-elevation 9335
+arch snow
 x 38
 y 14
 end
-arch mountain2
-elevation 10733
+arch snow
 x 38
 y 15
 end
-arch mountain2
-elevation 10965
+arch snow
 x 38
 y 16
 end
-arch mountain2
-elevation 9454
+arch snow
 x 38
 y 17
 end
-arch mountain2
-elevation 10035
+arch tree6
+x 38
+y 17
+end
+arch snow
 x 38
 y 18
 end
-arch mountain2
-elevation 9030
+arch snow
 x 38
 y 19
 end
-arch mountain
-elevation 7733
+arch snow
 x 38
 y 20
 end
-arch mountain
-elevation 8613
+arch drifts
 x 38
 y 21
 end
-arch mountain
-elevation 8744
+arch mountain5
 x 38
 y 22
 end
-arch mountain
-elevation 8507
+arch mountain5
 x 38
 y 23
 end
-arch mountain
-elevation 7747
+arch s_mountain
 x 38
 y 24
 end
@@ -9552,13 +9143,11 @@ elevation 6734
 x 38
 y 25
 end
-arch hills_rocky
-elevation 4392
+arch mountain
 x 38
 y 26
 end
-arch hills
-elevation 4003
+arch mountain
 x 38
 y 27
 end
@@ -9672,127 +9261,102 @@ elevation 3351
 x 38
 y 49
 end
-arch hills
-elevation 4009
+arch hills_rocky
 x 39
 end
-arch hills
-elevation 4716
+arch mountain
 x 39
 y 1
 end
-arch mountain
-elevation 5407
+arch mountain2
 x 39
 y 2
 end
-arch mountain
-elevation 5746
+arch s_mountain
 x 39
 y 3
 end
-arch mountain
-elevation 6151
+arch mountain5
 x 39
 y 4
 end
-arch mountain
-elevation 6675
+arch mountain5
 x 39
 y 5
 end
-arch mountain
-elevation 6550
+arch mountain5
 x 39
 y 6
 end
-arch hills
-elevation 4306
+arch drifts
 x 39
 y 7
 end
-arch hills
-elevation 4902
+arch snow
 x 39
 y 8
 end
-arch mountain
-elevation 5839
+arch snow
 x 39
 y 9
 end
-arch mountain
-elevation 7370
+arch snow
 x 39
 y 10
 end
-arch mountain
-elevation 8348
+arch snow
 x 39
 y 11
 end
-arch mountain
-elevation 8886
+arch snow
 x 39
 y 12
 end
-arch mountain
-elevation 7937
+arch snow
 x 39
 y 13
 end
-arch mountain2
-elevation 10343
+arch drifts
 x 39
 y 14
 end
-arch mountain2
-elevation 11180
+arch snow
 x 39
 y 15
 end
-arch mountain2
-elevation 10920
+arch snow
 x 39
 y 16
 end
-arch mountain2
-elevation 10102
+arch snow
 x 39
 y 17
 end
-arch mountain2
-elevation 9670
+arch snow
 x 39
 y 18
 end
-arch mountain2
-elevation 9895
+arch snow
 x 39
 y 19
 end
-arch mountain2
-elevation 10363
+arch snow
 x 39
 y 20
 end
-arch mountain2
-elevation 10274
+arch drifts
 x 39
 y 21
 end
-arch mountain2
-elevation 9513
+arch mountain5
 x 39
 y 22
 end
-arch mountain
-elevation 7572
+arch mountain5
 x 39
 y 23
 end
-arch mountain
-elevation 6026
+arch s_mountain
 x 39
 y 24
 end
@@ -9921,8 +9485,7 @@ elevation 5026
 x 39
 y 49
 end
-arch hills
-elevation 4385
+arch hills_rocky
 x 40
 end
 arch mountain
@@ -9935,113 +9498,99 @@ elevation 5597
 x 40
 y 2
 end
-arch mountain
-elevation 5911
+arch s_mountain
 x 40
 y 3
 end
-arch mountain
-elevation 6097
+arch mountain5
 x 40
 y 4
 end
-arch mountain
-elevation 6503
+arch mountain5
 x 40
 y 5
 end
-arch mountain
-elevation 6455
+arch s_mountain
 x 40
 y 6
 end
-arch mountain
-elevation 5998
+arch drifts
 x 40
 y 7
 end
-arch hills
-elevation 4800
+arch snow
 x 40
 y 8
 end
-arch hills
-elevation 4074
+arch snow
 x 40
 y 9
 end
-arch mountain
-elevation 7541
+arch air_witch
+x 40
+y 9
+end
+arch snow
 x 40
 y 10
 end
-arch mountain2
-elevation 9087
+arch snow
 x 40
 y 11
 end
-arch mountain2
-elevation 9429
+arch snow
 x 40
 y 12
 end
-arch mountain2
-elevation 9827
+arch drifts
 x 40
 y 13
 end
-arch mountain2
-elevation 10438
+arch s_mountain
 x 40
 y 14
 end
-arch mountain2
-elevation 11135
+arch drifts
 x 40
 y 15
 end
-arch mountain2
-elevation 10796
+arch snow
 x 40
 y 16
 end
-arch mountain
-elevation 8570
+arch snow
 x 40
 y 17
 end
-arch mountain
-elevation 7326
+arch snow
 x 40
 y 18
 end
-arch mountain2
-elevation 10449
+arch air_witch
+x 40
+y 18
+end
+arch snow
 x 40
 y 19
 end
-arch mountain2
-elevation 11258
+arch snow
 x 40
 y 20
 end
-arch mountain2
-elevation 10969
+arch drifts
 x 40
 y 21
 end
-arch mountain2
-elevation 9269
+arch mountain5
 x 40
 y 22
 end
-arch mountain
-elevation 7177
+arch mountain5
 x 40
 y 23
 end
-arch hills
-elevation 4829
+arch s_mountain
 x 40
 y 24
 end
@@ -10170,12 +9719,10 @@ elevation 4756
 x 40
 y 49
 end
-arch hills
-elevation 4381
+arch hills_rocky
 x 41
 end
-arch hills
-elevation 4500
+arch mountain2
 x 41
 y 1
 end
@@ -10184,118 +9731,95 @@ elevation 5599
 x 41
 y 2
 end
-arch mountain
-elevation 5097
+arch s_mountain
 x 41
 y 3
 end
-arch mountain
-elevation 5697
+arch mountain5
 x 41
 y 4
 end
-arch mountain
-elevation 5871
+arch mountain5
 x 41
 y 5
 end
-arch mountain
-elevation 7130
+arch s_mountain
 x 41
 y 6
 end
-arch mountain
-elevation 7050
+arch drifts
 x 41
 y 7
 end
-arch mountain
-elevation 6350
+arch snow
 x 41
 y 8
 end
-arch mountain
-elevation 6125
+arch snow
 x 41
 y 9
 end
-arch mountain
-elevation 7918
+arch snow
 x 41
 y 10
 end
-arch mountain2
-elevation 9561
+arch snow
 x 41
 y 11
 end
-arch mountain2
-elevation 9943
+arch drifts
 x 41
 y 12
 end
-arch mountain
-elevation 8833
+arch mountain5
 x 41
 y 13
 end
-arch mountain2
-elevation 10320
+arch mountain5
 x 41
 y 14
 end
-arch mountain2
-elevation 10589
+arch s_mountain
 x 41
 y 15
 end
-arch mountain2
-elevation 10370
+arch snow
 x 41
 y 16
 end
-arch mountain2
-elevation 9801
+arch snow
 x 41
 y 17
 end
-arch mountain2
-elevation 9104
+arch snow
 x 41
 y 18
 end
-arch mountain2
-elevation 10782
+arch snow
 x 41
 y 19
 end
-arch mountain2
-elevation 11557
+arch snow
 x 41
 y 20
 end
-arch mountain2
-elevation 10892
+arch s_mountain
 x 41
 y 21
 end
-arch mountain
-elevation 8624
+arch mountain5
 x 41
 y 22
 end
-arch mountain
-elevation 6537
+arch mountain5
 x 41
 y 23
 end
-arch hills
-elevation 3666
+arch s_mountain
 x 41
 y 24
 end
-arch hills
-elevation 4590
+arch mountain2
 x 41
 y 25
 end
@@ -10419,8 +9943,7 @@ elevation 2013
 x 41
 y 49
 end
-arch hills
-elevation 4870
+arch hills_rocky
 x 42
 end
 arch mountain
@@ -10428,128 +9951,132 @@ elevation 5159
 x 42
 y 1
 end
-arch mountain
-elevation 5670
+arch mountain2
 x 42
 y 2
 end
-arch mountain
-elevation 5566
+arch s_mountain
 x 42
 y 3
 end
-arch mountain
-elevation 6624
+arch mountain5
 x 42
 y 4
 end
-arch mountain
-elevation 6993
+arch mountain5
 x 42
 y 5
 end
-arch mountain
-elevation 8164
+arch s_mountain
 x 42
 y 6
 end
-arch mountain
-elevation 8002
+arch drifts
 x 42
 y 7
 end
-arch mountain
-elevation 7263
+arch snow
 x 42
 y 8
 end
-arch mountain
-elevation 6088
+arch snow
 x 42
 y 9
 end
-arch mountain
-elevation 8063
+arch snow
 x 42
 y 10
 end
-arch mountain2
-elevation 9130
+arch snow
 x 42
 y 11
 end
-arch mountain2
-elevation 9354
+arch drifts
 x 42
 y 12
 end
-arch mountain2
-elevation 9493
+arch s_mountain
 x 42
 y 13
 end
-arch mountain2
-elevation 9678
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 42
+y 13
+end
+arch mountain5
 x 42
 y 14
 end
-arch mountain2
-elevation 9976
+arch s_mountain
 x 42
 y 15
 end
-arch mountain
-elevation 8997
+arch drifts
 x 42
 y 16
 end
-arch mountain2
-elevation 10488
+arch snow
 x 42
 y 17
 end
-arch mountain2
-elevation 10899
+arch snow
 x 42
 y 18
 end
-arch mountain2
-elevation 11193
+arch snow
 x 42
 y 19
 end
-arch mountain2
-elevation 11320
+arch drifts
 x 42
 y 20
 end
-arch mountain2
-elevation 10414
+arch s_mountain
 x 42
 y 21
 end
-arch mountain
-elevation 8538
+arch mountain5
 x 42
 y 22
 end
-arch mountain
-elevation 6125
+arch mountain5
 x 42
 y 23
 end
-arch woods_3
-elevation 2260
+arch s_mountain
 x 42
 y 24
 end
-arch hills
-elevation 3603
+arch mountain
 x 42
 y 25
 end
-arch hills_rocky
-elevation 4860
+arch mountain
 x 42
 y 26
 end
@@ -10682,128 +10209,132 @@ elevation 6378
 x 43
 y 2
 end
-arch mountain
-elevation 5272
+arch s_mountain
 x 43
 y 3
 end
-arch mountain
-elevation 8084
+arch mountain5
 x 43
 y 4
 end
-arch mountain2
-elevation 9299
+arch mountain5
 x 43
 y 5
 end
-arch mountain2
-elevation 9260
+arch mountain5
 x 43
 y 6
 end
-arch mountain
-elevation 8531
+arch drifts
 x 43
 y 7
 end
-arch mountain
-elevation 7493
+arch snow
 x 43
 y 8
 end
-arch mountain
-elevation 6866
+arch snow
 x 43
 y 9
 end
-arch mountain
-elevation 7172
+arch snow
 x 43
 y 10
 end
-arch mountain
-elevation 7285
+arch snow
 x 43
 y 11
 end
-arch mountain
-elevation 7224
+arch snow
 x 43
 y 12
 end
-arch mountain
-elevation 8310
+arch drifts
 x 43
 y 13
 end
-arch mountain2
-elevation 9332
+arch mountain5
 x 43
 y 14
 end
-arch mountain
-elevation 8834
+arch s_mountain
 x 43
 y 15
 end
-arch mountain2
-elevation 10284
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 43
+y 15
+end
+arch drifts
 x 43
 y 16
 end
-arch mountain2
-elevation 10725
+arch snow
 x 43
 y 17
 end
-arch mountain2
-elevation 10993
+arch snow
 x 43
 y 18
 end
-arch mountain2
-elevation 10956
+arch snow
 x 43
 y 19
 end
-arch mountain2
-elevation 10622
+arch drifts
 x 43
 y 20
 end
-arch mountain2
-elevation 9671
+arch mountain5
 x 43
 y 21
 end
-arch mountain
-elevation 7616
+arch mountain5
 x 43
 y 22
 end
-arch mountain
-elevation 5279
+arch mountain5
 x 43
 y 23
 end
-arch mountain
-elevation 5036
+arch s_mountain
 x 43
 y 24
 end
-arch hills
-elevation 3006
+arch mountain
 x 43
 y 25
 end
-arch hills_rocky
-elevation 4931
+arch mountain
 x 43
 y 26
 end
-arch hills_rocky
-elevation 4768
+arch mountain
 x 43
 y 27
 end
@@ -10926,118 +10457,95 @@ elevation 6546
 x 44
 y 1
 end
-arch mountain
-elevation 6843
+arch mountain2
 x 44
 y 2
 end
-arch mountain
-elevation 7843
+arch s_mountain
 x 44
 y 3
 end
-arch mountain2
-elevation 9401
+arch s_mountain
 x 44
 y 4
 end
-arch mountain2
-elevation 10676
+arch mountain5
 x 44
 y 5
 end
-arch mountain2
-elevation 10247
+arch mountain5
 x 44
 y 6
 end
-arch mountain
-elevation 7495
+arch s_mountain
 x 44
 y 7
 end
-arch mountain
-elevation 7558
+arch drifts
 x 44
 y 8
 end
-arch mountain
-elevation 6783
+arch snow
 x 44
 y 9
 end
-arch mountain
-elevation 5285
+arch snow
 x 44
 y 10
 end
-arch mountain
-elevation 5447
+arch snow
 x 44
 y 11
 end
-arch woods_3
-elevation 2977
+arch snow
 x 44
 y 12
 end
-arch mountain
-elevation 6465
+arch drifts
 x 44
 y 13
 end
-arch mountain2
-elevation 9363
+arch mountain5
 x 44
 y 14
 end
-arch mountain2
-elevation 10190
+arch mountain5
 x 44
 y 15
 end
-arch mountain2
-elevation 10427
+arch drifts
 x 44
 y 16
 end
-arch mountain2
-elevation 10362
+arch snow
 x 44
 y 17
 end
-arch mountain2
-elevation 10145
+arch snow
 x 44
 y 18
 end
-arch mountain2
-elevation 9771
+arch snow
 x 44
 y 19
 end
-arch mountain
-elevation 8980
+arch drifts
 x 44
 y 20
 end
-arch mountain
-elevation 8114
+arch mountain5
 x 44
 y 21
 end
-arch mountain
-elevation 7415
+arch mountain5
 x 44
 y 22
 end
-arch mountain
-elevation 6952
+arch s_mountain
 x 44
 y 23
 end
-arch mountain
-elevation 6162
+arch s_mountain
 x 44
 y 24
 end
@@ -11180,113 +10688,95 @@ elevation 6886
 x 45
 y 2
 end
-arch mountain
-elevation 7898
+arch mountain2
 x 45
 y 3
 end
-arch mountain2
-elevation 9622
+arch s_mountain
 x 45
 y 4
 end
-arch mountain2
-elevation 10935
+arch mountain5
 x 45
 y 5
 end
-arch mountain2
-elevation 10529
+arch mountain5
 x 45
 y 6
 end
-arch mountain
-elevation 8765
+arch s_mountain
 x 45
 y 7
 end
-arch mountain
-elevation 7039
+arch drifts
 x 45
 y 8
 end
-arch mountain
-elevation 5894
+arch snow
 x 45
 y 9
 end
-arch mountain
-elevation 5489
+arch snow
 x 45
 y 10
 end
-arch mountain
-elevation 5337
+arch snow
 x 45
 y 11
 end
-arch mountain
-elevation 5757
+arch tree6
+x 45
+y 11
+end
+arch snow
 x 45
 y 12
 end
-arch mountain
-elevation 7909
+arch drifts
 x 45
 y 13
 end
-arch mountain2
-elevation 10034
+arch s_mountain
 x 45
 y 14
 end
-arch mountain2
-elevation 10844
+arch mountain5
 x 45
 y 15
 end
-arch mountain2
-elevation 9514
+arch s_mountain
 x 45
 y 16
 end
-arch mountain2
-elevation 9896
+arch snow
 x 45
 y 17
 end
-arch mountain2
-elevation 9069
+arch snow
 x 45
 y 18
 end
-arch mountain
-elevation 8696
+arch snow
 x 45
 y 19
 end
-arch mountain
-elevation 5633
+arch drifts
 x 45
 y 20
 end
-arch hills_rocky
-elevation 4809
+arch mountain5
 x 45
 y 21
 end
-arch mountain
-elevation 7045
+arch mountain5
 x 45
 y 22
 end
-arch mountain
-elevation 7192
+arch s_mountain
 x 45
 y 23
 end
-arch mountain
-elevation 6868
+arch mountain2
 x 45
 y 24
 end
@@ -11295,8 +10785,7 @@ elevation 6032
 x 45
 y 25
 end
-arch hills_rocky
-elevation 4701
+arch mountain
 x 45
 y 26
 end
@@ -11434,108 +10923,116 @@ elevation 6054
 x 46
 y 3
 end
-arch mountain
-elevation 7697
+arch s_mountain
 x 46
 y 4
 end
-arch mountain2
-elevation 10586
+arch mountain5
 x 46
 y 5
 end
-arch mountain2
-elevation 10275
+arch mountain5
 x 46
 y 6
 end
-arch mountain
-elevation 8572
+arch mountain5
 x 46
 y 7
 end
-arch mountain
-elevation 5566
+arch s_mountain
 x 46
 y 8
 end
-arch hills
-elevation 4437
+arch generate_stalker
+name ice wind
+invisible 1
+other_arch air_witch
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+speed -0.01
+x 46
+y 8
+end
+arch drifts
 x 46
 y 9
 end
-arch hills
-elevation 3626
+arch drifts
 x 46
 y 10
 end
-arch mountain
-elevation 5877
+arch snow
 x 46
 y 11
 end
-arch mountain
-elevation 7142
+arch snow
 x 46
 y 12
 end
-arch mountain2
-elevation 9128
+arch drifts
 x 46
 y 13
 end
-arch mountain2
-elevation 10846
+arch s_mountain
 x 46
 y 14
 end
-arch mountain2
-elevation 11275
+arch mountain5
 x 46
 y 15
 end
-arch mountain2
-elevation 10547
+arch s_mountain
 x 46
 y 16
 end
-arch mountain2
-elevation 9629
+arch drifts
 x 46
 y 17
 end
-arch mountain2
-elevation 9007
+arch snow
 x 46
 y 18
 end
-arch mountain
-elevation 7900
+arch snow
 x 46
 y 19
 end
-arch mountain
-elevation 6583
+arch drifts
 x 46
 y 20
 end
-arch mountain
-elevation 6335
+arch mountain5
 x 46
 y 21
 end
-arch mountain
-elevation 6907
+arch mountain5
 x 46
 y 22
 end
-arch mountain
-elevation 6171
+arch s_mountain
 x 46
 y 23
 end
-arch mountain
-elevation 7122
+arch mountain2
 x 46
 y 24
 end
@@ -11683,103 +11180,83 @@ elevation 6816
 x 47
 y 3
 end
-arch mountain
-elevation 8776
+arch mountain2
 x 47
 y 4
 end
-arch mountain2
-elevation 10032
+arch s_mountain
 x 47
 y 5
 end
-arch mountain2
-elevation 10025
+arch mountain5
 x 47
 y 6
 end
-arch mountain
-elevation 8476
+arch mountain5
 x 47
 y 7
 end
-arch mountain
-elevation 6555
+arch mountain5
 x 47
 y 8
 end
-arch hills
-elevation 3978
+arch mountain5
 x 47
 y 9
 end
-arch hills
-elevation 4396
+arch s_mountain
 x 47
 y 10
 end
-arch mountain
-elevation 6586
+arch snow
 x 47
 y 11
 end
-arch mountain
-elevation 7757
+arch snow
 x 47
 y 12
 end
-arch mountain2
-elevation 9715
+arch drifts
 x 47
 y 13
 end
-arch mountain2
-elevation 10952
+arch s_mountain
 x 47
 y 14
 end
-arch mountain2
-elevation 11068
+arch mountain5
 x 47
 y 15
 end
-arch mountain2
-elevation 10243
+arch s_mountain
 x 47
 y 16
 end
-arch mountain
-elevation 7909
+arch drifts
 x 47
 y 17
 end
-arch mountain
-elevation 8778
+arch snow
 x 47
 y 18
 end
-arch mountain
-elevation 7999
+arch snow
 x 47
 y 19
 end
-arch hills_rocky
-elevation 4684
+arch drifts
 x 47
 y 20
 end
-arch mountain
-elevation 6765
+arch mountain5
 x 47
 y 21
 end
-arch mountain
-elevation 7229
+arch mountain5
 x 47
 y 22
 end
-arch mountain
-elevation 7505
+arch s_mountain
 x 47
 y 23
 end
@@ -11932,103 +11409,95 @@ elevation 7703
 x 48
 y 3
 end
-arch mountain
-elevation 8928
+arch mountain2
 x 48
 y 4
 end
-arch mountain2
-elevation 9634
+arch s_mountain
 x 48
 y 5
 end
-arch mountain2
-elevation 9150
+arch s_mountain
 x 48
 y 6
 end
-arch mountain
-elevation 7769
+arch mountain5
 x 48
 y 7
 end
-arch mountain
-elevation 6388
+arch mountain5
 x 48
 y 8
 end
-arch mountain
-elevation 5933
+arch mountain5
 x 48
 y 9
 end
-arch mountain
-elevation 6293
+arch mountain5
 x 48
 y 10
 end
-arch mountain
-elevation 7205
+arch snow
 x 48
 y 11
 end
-arch mountain
-elevation 8205
+arch snow
 x 48
 y 12
 end
-arch mountain2
-elevation 9165
+arch drifts
 x 48
 y 13
 end
-arch mountain2
-elevation 10045
+arch mountain5
 x 48
 y 14
 end
-arch mountain2
-elevation 10335
+arch mountain5
 x 48
 y 15
 end
-arch mountain
-elevation 8994
+arch mountain5
 x 48
 y 16
 end
-arch mountain
-elevation 8596
+arch s_mountain
 x 48
 y 17
 end
-arch mountain
-elevation 8720
+arch snow
 x 48
 y 18
 end
-arch mountain
-elevation 8259
+arch mover_7
+attacktype 1
 x 48
 y 19
 end
-arch mountain
-elevation 7313
+arch snow
+x 48
+y 19
+end
+arch ladder_up
+slaying world_109_125
+hp 0
+sp 18
+x 48
+y 19
+end
+arch drifts
 x 48
 y 20
 end
-arch mountain
-elevation 6749
+arch mountain5
 x 48
 y 21
 end
-arch mountain
-elevation 7342
+arch mountain5
 x 48
 y 22
 end
-arch mountain
-elevation 7477
+arch s_mountain
 x 48
 y 23
 end
@@ -12186,98 +11655,95 @@ elevation 8843
 x 49
 y 4
 end
-arch mountain
-elevation 8917
+arch mountain2
 x 49
 y 5
 end
-arch mountain
-elevation 7862
+arch s_mountain
 x 49
 y 6
 end
-arch mountain
-elevation 5440
+arch s_mountain
 x 49
 y 7
 end
-arch mountain
-elevation 5671
+arch mountain5
 x 49
 y 8
 end
-arch mountain
-elevation 6296
+arch mountain5
 x 49
 y 9
 end
-arch mountain
-elevation 6722
+arch mountain5
 x 49
 y 10
 end
-arch mountain
-elevation 6880
+arch snow
 x 49
 y 11
 end
-arch mountain
-elevation 6864
+arch snow
 x 49
 y 12
 end
-arch mountain
-elevation 6945
+arch s_mountain
 x 49
 y 13
 end
-arch mountain
-elevation 8241
+arch mountain5
 x 49
 y 14
 end
-arch mountain2
-elevation 9088
+arch mountain5
 x 49
 y 15
 end
-arch mountain2
-elevation 9184
+arch mountain5
 x 49
 y 16
 end
-arch mountain
-elevation 8946
+arch mountain5
 x 49
 y 17
 end
-arch mountain
-elevation 8761
+arch snow
 x 49
 y 18
 end
-arch mountain
-elevation 8598
+arch mountain3
+name large rocks
+type 0
+blocksview 0
+no_pass 1
+x 49
+y 18
+end
+arch snow
 x 49
 y 19
 end
-arch mountain
-elevation 8146
+arch mountain3
+name large rocks
+type 0
+blocksview 0
+no_pass 1
+x 49
+y 19
+end
+arch mountain5
 x 49
 y 20
 end
-arch mountain
-elevation 7591
+arch mountain5
 x 49
 y 21
 end
-arch mountain
-elevation 6739
+arch mountain5
 x 49
 y 22
 end
-arch mountain
-elevation 6647
+arch s_mountain
 x 49
 y 23
 end
