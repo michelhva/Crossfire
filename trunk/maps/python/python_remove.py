@@ -31,3 +31,6 @@ name = CFPython.GetName(activator)
 
 log = CFLog.CFLog()
 log.remove(name)
+
+bank = CFBank.CFBank()
+bank.remove_account(name)
