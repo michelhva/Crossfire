@@ -5,7 +5,7 @@ msg
   This shining plate mail is Mostrai's
   gift to the bravest of his warriors.
   It is highly enchanted, increasing the
-  strenght of the wearer and protecting
+  strength of the wearer and protecting
   against fire.
 endmsg
 ac 3
