@@ -9,6 +9,7 @@ wizard.111
 wizard.131
 wizard.151
 wizard.171
+facings 4
 mina
 is_animated 0
 type 37

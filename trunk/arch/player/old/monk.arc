@@ -7,6 +7,7 @@ monk.151
 monk.131
 monk.111
 monk.171
+facings 4
 mina
 is_animated 0
 type 37

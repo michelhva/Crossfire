@@ -8,6 +8,7 @@ cleric.111
 cleric.131
 cleric.151
 cleric.171
+facings 4
 mina
 is_animated 0
 type 37
