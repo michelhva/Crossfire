@@ -5,113 +5,113 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 24 11:19:39 1997
 endmsg
-x 21
-y 30
+width 21
+height 30
 end
 arch barbarian
+type 0
 hp 100
 maxhp 100
-type 0
 randomitems standard
 monster 1
 unaggressive 1
 end
 arch cleric
+type 0
 hp 100
 maxhp 100
-y 1
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 1
 end
 arch elf
+type 0
 hp 100
 maxhp 100
-y 2
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 2
 end
 arch fireborn
+type 0
 hp 100
 maxhp 100
-y 3
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 3
 end
 arch human
+type 0
 hp 100
 maxhp 100
-y 4
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 4
 end
 arch mage
+type 0
 hp 100
 maxhp 100
-y 5
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 5
 end
 arch ninja
+type 0
 hp 100
 maxhp 100
-y 6
-type 0
 monster 1
 unaggressive 1
+y 6
 end
 arch priest
+type 0
 hp 100
 maxhp 100
-y 7
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 7
 end
 arch swashbuckler
+type 0
 hp 100
 maxhp 100
-y 8
-type 0
 randomitems standard
 monster 1
 unaggressive 1
+y 8
 end
 arch thief
+type 0
 hp 100
 maxhp 100
+monster 1
+unaggressive 1
 y 9
+end
+arch viking
 type 0
 monster 1
 unaggressive 1
-end
-arch viking
 y 10
-type 0
-monster 1
-unaggressive 1
 end
 arch viking
-y 11
 type 0
 monster 1
 unaggressive 1
+y 11
 end
 arch wizard
-y 12
 type 0
 monster 1
 unaggressive 1
+y 12
 end
 arch conjurer
 y 13
@@ -544,10 +544,6 @@ arch mesangel
 x 8
 y 17
 end
-arch Arch Angel
-x 8
-y 18
-end
 arch fire_elemental
 x 9
 y 17
@@ -859,6 +855,10 @@ arch sandy
 x 19
 y 18
 end
+arch dire_wolf
+x 19
+y 21
+end
 arch chess_pawn
 x 19
 y 25
@@ -887,6 +887,14 @@ arch serp_priest
 x 20
 y 2
 end
+arch mastif
+x 20
+y 18
+end
+arch wolf
+x 20
+y 21
+end
 arch chess_queen
 x 20
 y 25
@@ -910,1224 +918,170 @@ end
 arch ent
 y 14
 end
-More
-arch ent_2
-y 14
-end
-More
-arch ent_3
-y 15
-end
-More
-arch ent_4
-y 15
-end
 arch big_demon
 y 18
-end
-More
-arch big_demon_2
-y 18
-end
-More
-arch big_demon_3
-y 18
-end
-More
-arch big_demon_4
-y 19
-end
-More
-arch big_demon_5
-y 19
-end
-More
-arch big_demon_6
-y 19
-end
-More
-arch big_demon_7
-y 20
-end
-More
-arch big_demon_8
-y 20
-end
-More
-arch big_demon_9
-y 20
-end
-More
-arch big_demon_A
-y 21
-end
-More
-arch big_demon_B
-y 21
-end
-More
-arch big_demon_C
-y 21
 end
 arch demon_lord
 x 1
 y 25
 end
-More
-arch demon_lord_1
-x 0
-y 22
-end
-More
-arch demon_lord_2
-x 1
-y 22
-end
-More
-arch demon_lord_3
-x 2
-y 22
-end
-More
-arch demon_lord_4
-x 3
-y 22
-end
-More
-arch demon_lord_5
-x 0
-y 23
-end
-More
-arch demon_lord_6
-x 1
-y 23
-end
-More
-arch demon_lord_7
-x 2
-y 23
-end
-More
-arch demon_lord_8
-x 3
-y 23
-end
-More
-arch demon_lord_9
-x 0
-y 24
-end
-More
-arch demon_lord_10
-x 1
-y 24
-end
-More
-arch demon_lord_11
-x 2
-y 24
-end
-More
-arch demon_lord_12
-x 3
-y 24
-end
-More
-arch demon_lord_13
-x 0
-y 25
-end
-More
-arch demon_lord_15
-x 2
-y 25
-end
-More
-arch demon_lord_16
-x 3
-y 25
-end
-More
-arch demon_lord_17
-x 0
-y 26
-end
-More
-arch demon_lord_18
-x 1
-y 26
-end
-More
-arch demon_lord_19
-x 2
-y 26
-end
-More
-arch demon_lord_20
-x 3
-y 26
-end
-More
-arch demon_lord_21
-x 0
-y 27
-end
-More
-arch demon_lord_22
-x 1
-y 27
-end
-More
-arch demon_lord_23
-x 2
-y 27
-end
-More
-arch demon_lord_24
-x 3
-y 27
-end
-More
-arch demon_lord_25
-x 0
-y 28
-end
-More
-arch demon_lord_26
-x 1
-y 28
-end
-More
-arch demon_lord_27
-x 2
-y 28
-end
-More
-arch demon_lord_28
-x 3
-y 28
-end
-More
-arch demon_lord_29
-x 0
-y 29
-end
-More
-arch demon_lord_30
-x 1
-y 29
-end
-More
-arch demon_lord_31
-x 2
-y 29
-end
-More
-arch demon_lord_32
-x 3
-y 29
-end
 arch Balrog
 x 3
 y 18
-end
-More
-arch Balrog_2
-x 4
-y 18
-end
-More
-arch Balrog_3
-x 5
-y 18
-end
-More
-arch Balrog_4
-x 6
-y 18
-end
-More
-arch Balrog_5
-x 3
-y 19
-end
-More
-arch Balrog_6
-x 4
-y 19
-end
-More
-arch Balrog_7
-x 5
-y 19
-end
-More
-arch Balrog_8
-x 6
-y 19
-end
-More
-arch Balrog_9
-x 3
-y 20
-end
-More
-arch Balrog_10
-x 4
-y 20
-end
-More
-arch Balrog_11
-x 5
-y 20
-end
-More
-arch Balrog_12
-x 6
-y 20
-end
-More
-arch Balrog_13
-x 3
-y 21
-end
-More
-arch Balrog_14
-x 4
-y 21
-end
-More
-arch Balrog_15
-x 5
-y 21
-end
-More
-arch Balrog_16
-x 6
-y 21
 end
 arch g_worm
 x 4
 y 11
 end
-More
-arch g_worm_2
-x 5
-y 11
-end
-More
-arch g_worm_3
-x 4
-y 12
-end
-More
-arch g_worm_4
-x 5
-y 12
-end
 arch Greater_Demon
 x 4
 y 22
-end
-More
-arch Greater_Demon_1
-x 5
-y 22
-end
-More
-arch Greater_Demon_2
-x 6
-y 22
-end
-More
-arch Greater_Demon_3
-x 7
-y 22
-end
-More
-arch Greater_Demon_4
-x 8
-y 22
-end
-More
-arch Greater_Demon_5
-x 9
-y 22
-end
-More
-arch Greater_Demon_6
-x 4
-y 23
-end
-More
-arch Greater_Demon_7
-x 5
-y 23
-end
-More
-arch Greater_Demon_8
-x 6
-y 23
-end
-More
-arch Greater_Demon_9
-x 7
-y 23
-end
-More
-arch Greater_Demon_A
-x 8
-y 23
-end
-More
-arch Greater_Demon_B
-x 9
-y 23
-end
-More
-arch Greater_Demon_C
-x 4
-y 24
-end
-More
-arch Greater_Demon_D
-x 5
-y 24
-end
-More
-arch Greater_Demon_E
-x 6
-y 24
-end
-More
-arch Greater_Demon_F
-x 7
-y 24
-end
-More
-arch Greater_Demon_G
-x 8
-y 24
-end
-More
-arch Greater_Demon_H
-x 9
-y 24
-end
-More
-arch Greater_Demon_I
-x 4
-y 25
-end
-More
-arch Greater_Demon_J
-x 5
-y 25
-end
-More
-arch Greater_Demon_K
-x 6
-y 25
-end
-More
-arch Greater_Demon_L
-x 7
-y 25
-end
-More
-arch Greater_Demon_M
-x 8
-y 25
-end
-More
-arch Greater_Demon_N
-x 9
-y 25
-end
-More
-arch Greater_Demon_O
-x 4
-y 26
-end
-More
-arch Greater_Demon_P
-x 5
-y 26
-end
-More
-arch Greater_Demon_Q
-x 6
-y 26
-end
-More
-arch Greater_Demon_R
-x 7
-y 26
-end
-More
-arch Greater_Demon_S
-x 8
-y 26
-end
-More
-arch Greater_Demon_T
-x 9
-y 26
-end
-More
-arch Greater_Demon_U
-x 4
-y 27
-end
-More
-arch Greater_Demon_V
-x 5
-y 27
-end
-More
-arch Greater_Demon_W
-x 6
-y 27
-end
-More
-arch Greater_Demon_X
-x 7
-y 27
-end
-More
-arch Greater_Demon_Y
-x 8
-y 27
-end
-More
-arch Greater_Demon_Z
-x 9
-y 27
-end
-More
-arch Greater_Demon_a
-x 4
-y 28
-end
-More
-arch Greater_Demon_b
-x 5
-y 28
-end
-More
-arch Greater_Demon_c
-x 6
-y 28
-end
-More
-arch Greater_Demon_d
-x 7
-y 28
-end
-More
-arch Greater_Demon_e
-x 8
-y 28
-end
-More
-arch Greater_Demon_f
-x 9
-y 28
 end
 arch lamia
 x 5
 y 14
 end
-More
-arch lamia_2
-x 6
-y 14
-end
 arch troll
 x 8
-end
-More
-arch troll_2
-x 9
-end
-More
-arch troll_3
-x 8
-end
-More
-arch troll_4
-x 9
 end
 arch gaelotroll
 x 8
 y 2
 end
-More
-arch gaelotroll_2
-x 9
-y 2
-end
-More
-arch gaelotroll_3
-x 8
-y 3
-end
-More
-arch gaelotroll_4
-x 9
-y 3
-end
-More
-arch gaelotroll_5
-x 8
-y 4
-end
-More
-arch gaelotroll_6
-x 9
-y 4
-end
 arch big_wiz
 x 8
 y 10
-end
-More
-arch big_wiz2
-x 9
-y 10
-end
-More
-arch big_wiz3
-x 10
-y 10
-end
-More
-arch big_wiz4
-x 8
-y 11
-end
-More
-arch big_wiz5
-x 9
-y 11
-end
-More
-arch big_wiz6
-x 10
-y 11
-end
-More
-arch big_wiz7
-x 8
-y 12
-end
-More
-arch big_wiz8
-x 9
-y 12
-end
-More
-arch big_wiz9
-x 10
-y 12
 end
 arch byakie
 x 8
 y 14
 end
-More
-arch byakie_2
-x 9
-y 14
-end
-More
-arch byakie_3
-x 8
-y 15
-end
-More
-arch byakie_4
-x 9
-y 15
-end
 arch giant
 x 9
 y 5
-end
-More
-arch giant_2
-x 9
-y 6
 end
 arch titan
 x 9
 y 8
 end
-More
-arch titan_2
-x 8
-y 8
-end
-More
-arch titan_3
-x 8
-y 7
-end
-More
-arch titan_4
-x 9
-y 7
-end
-More
-arch titan_5
-x 10
-y 7
-end
-More
-arch titan_6
-x 10
-y 8
-end
-More
-arch titan_7
-x 10
-y 9
-end
-More
-arch titan_8
-x 9
-y 9
-end
-More
-arch titan_9
-x 8
-y 9
-end
 arch minor_djinn
-x 10
-end
-More
-arch minor_djinn_2
 x 10
 end
 arch djinn
 x 10
 y 2
 end
-More
-arch djinn_2
-x 10
-y 3
-end
 arch dragonman
 x 10
 y 4
-end
-More
-arch dragonman_2
-x 10
-y 5
 end
 arch cyclops
 x 10
 y 14
 end
-More
-arch cyclops_2
-x 11
-y 14
-end
-More
-arch cyclops_3
-x 10
-y 15
-end
-More
-arch cyclops_4
-x 11
-y 15
-end
-More
-arch cyclops_5
-x 10
-y 16
-end
-More
-arch cyclops_6
-x 11
-y 16
-end
 arch dragon
 x 11
-y 2
-end
-More
-arch dragon_2
-x 12
 y 2
 end
 arch chinese_dragon
 x 11
 y 3
 end
-More
-arch chinese_dragon_2
-x 12
-y 3
-end
-More
-arch chinese_dragon_3
-x 11
-y 4
-end
-More
-arch chinese_dragon_4
-x 12
-y 4
-end
 arch big_dragon
 x 11
 y 5
-end
-More
-arch big_dragon_2
-x 12
-y 5
-end
-More
-arch big_dragon_3
-x 13
-y 5
-end
-More
-arch big_dragon_4
-x 11
-y 6
-end
-More
-arch big_dragon_5
-x 12
-y 6
-end
-More
-arch big_dragon_6
-x 13
-y 6
 end
 arch big_elec
 x 11
 y 7
 end
-More
-arch big_elec_2
-x 12
-y 7
-end
-More
-arch big_elec_3
-x 11
-y 8
-end
-More
-arch big_elec_4
-x 12
-y 8
-end
-More
-arch big_elec_5
-x 11
-y 9
-end
-More
-arch big_elec_6
-x 12
-y 9
-end
 arch baslic
 x 11
 y 10
-end
-More
-arch baslic_2
-x 12
-y 10
-end
-More
-arch baslic_3
-x 13
-y 10
-end
-More
-arch baslic_4
-x 11
-y 11
-end
-More
-arch baslic_5
-x 12
-y 11
-end
-More
-arch baslic_6
-x 13
-y 11
 end
 arch big_dragon_worthless
 x 11
 y 22
 end
-More
-arch big_worthless_dragon_2
-x 12
-y 22
-end
-More
-arch big_worthless_dragon_3
-x 13
-y 22
-end
-More
-arch big_worthless_dragon_4
+arch chinese_dragon
 x 11
-y 23
-end
-More
-arch big_worthless_dragon_5
-x 12
-y 23
-end
-More
-arch big_worthless_dragon_6
-x 13
-y 23
+y 24
 end
 arch Cwyvern
 x 12
-y 12
-end
-More
-arch Cwyvern_2
-x 13
 y 12
 end
 arch EDK
 x 12
 y 14
 end
-More
-arch EDK3
-x 12
-y 15
-end
-More
-arch EDK5
-x 12
-y 16
-end
-More
-arch EDK2
-x 13
-y 14
-end
-More
-arch EDK4
-x 13
-y 15
-end
-More
-arch EDK6
-x 13
-y 16
-end
 arch golem_necro
 x 12
 y 17
-end
-More
-arch golem_necro_2
-x 13
-y 17
-end
-More
-arch golem_necro_3
-x 12
-y 18
-end
-More
-arch golem_necro_4
-x 13
-y 18
-end
-More
-arch golem_necro_5
-x 12
-y 19
-end
-More
-arch golem_necro_6
-x 13
-y 19
 end
 arch DK
 x 14
 y 14
 end
-More
-arch DK3
-x 14
-y 15
-end
-More
-arch DK5
-x 14
-y 16
-end
-More
-arch DK2
-x 15
-y 14
-end
-More
-arch DK4
-x 15
-y 15
-end
-More
-arch DK6
-x 15
-y 16
-end
 arch jessyb
 x 14
 y 17
 end
-More
-arch jessyb_2
-x 15
-y 17
-end
-More
-arch jessyb_3
-x 16
-y 17
-end
-More
-arch jessyb_4
-x 17
-y 17
-end
-More
-arch jessyb_5
+arch ArchAngel
 x 14
-y 18
-end
-More
-arch jessyb_6
-x 15
-y 18
-end
-More
-arch jessyb_7
-x 16
-y 18
-end
-More
-arch jessyb_8
-x 17
-y 18
-end
-More
-arch jessyb_9
-x 14
-y 19
-end
-More
-arch jessyb_10
-x 15
-y 19
-end
-More
-arch jessyb_11
-x 16
-y 19
-end
-More
-arch jessyb_12
-x 17
-y 19
-end
-More
-arch jessyb_13
-x 14
-y 20
-end
-More
-arch jessyb_14
-x 15
-y 20
-end
-More
-arch jessyb_15
-x 16
-y 20
-end
-More
-arch jessyb_16
-x 17
-y 20
+y 21
 end
 arch mabu
 x 15
 y 11
 end
-More
-arch mabu_2
-x 15
-y 12
-end
 arch breeder_ant
 x 16
 end
-More
-arch breeder_ant_2
-x 17
-end
 arch slug
 x 16
-y 12
-end
-More
-arch slug_2
-x 17
 y 12
 end
 arch belzebub
 x 16
 y 14
 end
-More
-arch belzebub_2
-x 17
-y 14
-end
-More
-arch belzebub_3
-x 16
-y 15
-end
-More
-arch belzebub_4
-x 17
-y 15
-end
-More
-arch belzebub_5
-x 16
-y 16
-end
-More
-arch belzebub_6
-x 17
-y 16
-end
 arch serpent
 x 18
-y 1
-end
-More
-arch serpent_2
-x 19
 y 1
 end
 arch cobra
 x 18
 y 2
 end
-More
-arch cobra_2
-x 18
-y 3
-end
 arch unicorn
 x 18
-y 9
-end
-More
-arch unicorn_2
-x 19
 y 9
 end
 arch sphinx
 x 18
 y 10
 end
-More
-arch sphinx_2
-x 19
-y 10
-end
 arch behemoth
 x 18
 y 12
-end
-More
-arch behemoth_2
-x 19
-y 12
-end
-More
-arch behemoth_3
-x 18
-y 13
-end
-More
-arch behemoth_4
-x 19
-y 13
 end
 arch dread
 x 18
 y 14
 end
-More
-arch dread_2
-x 19
-y 14
-end
-More
-arch dread_3
-x 18
-y 15
-end
-More
-arch dread_4
-x 19
-y 15
-end
 arch shadowtiger
 x 18
 y 16
 end
-More
-arch shadowtiger_2
-x 19
-y 16
-end
-More
-arch shadowtiger_3
-x 18
-y 17
-end
-More
-arch shadowtiger_4
-x 19
-y 17
-end
 arch fire_serpent
 x 19
 end
-More
-arch fire_serpent_2
+arch polarbear
+x 19
+y 19
+end
+arch bear
 x 20
+y 19
 end

@@ -3522,31 +3522,13 @@ end
 arch spell_summon_pet_monster
 end
 end
-More
-arch giant_2
-name Gromm, Big Giant Shaman
-hp 550
-exp 2000
-x 5
-y 13
-end
 arch giant
 x 6
 y 12
 end
-More
-arch giant_2
-x 6
-y 13
-end
 arch giant
 x 8
 y 12
-end
-More
-arch giant_2
-x 8
-y 13
 end
 arch dread
 name Groopa
@@ -3556,80 +3538,19 @@ carrying 200
 arch improve_con
 end
 end
-More
-arch dread_2
-name Groopa
-hp 1500
-x 9
-y 18
-end
-More
-arch dread_3
-name Groopa
-hp 1500
-x 8
-y 19
-end
-More
-arch dread_4
-name Groopa
-hp 1500
-x 9
-y 19
-end
 arch giant
 x 10
 y 12
-end
-More
-arch giant_2
-x 10
-y 13
 end
 arch giant
 x 12
 y 12
 end
-More
-arch giant_2
-x 12
-y 13
-end
 arch troll
 x 19
 y 4
 end
-More
-arch troll_2
-x 20
-y 4
-end
-More
-arch troll_3
-x 19
-y 5
-end
-More
-arch troll_4
-x 20
-y 5
-end
 arch troll
 x 21
 y 2
-end
-More
-arch troll_2
-x 22
-y 2
-end
-More
-arch troll_3
-x 21
-y 3
-end
-More
-arch troll_4
-x 22
-y 3
 end
