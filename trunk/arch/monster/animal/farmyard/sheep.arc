@@ -20,7 +20,7 @@ dam 1
 attacktype 18
 speed 0.2
 exp 1
-weight 1500
+weight 60000
 resist_cold 10
 attack_movement 2
 editable 1

@@ -18,10 +18,10 @@ hp 12
 maxhp 12
 run_away 80
 wc 15
-dam 5
-speed 0.2
+dam 15
+speed -0.2
 exp 1
-weight 450
+weight 8500
 attack_movement 2
 editable 1
 end
