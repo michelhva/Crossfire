@@ -1,12 +1,18 @@
 Object shadowpup
 name shadowtiger pup
-face panther.111
+face panther.131
 race animal
 anim
-panther.111
-panther.112
+facings 2
+panther.131
+panther.132
 blank.111
-panther.113
+panther.133
+blank.111
+panther.171
+panther.172
+blank.111
+panther.173
 blank.111
 mina
 monster 1
@@ -22,7 +28,7 @@ ac 4
 dam 10
 wc 1
 level 4
-weight 20000
+weight 200000
 run_away 15
 attack_movement 3
 editable 1
