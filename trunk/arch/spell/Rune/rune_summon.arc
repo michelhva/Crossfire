@@ -1,10 +1,9 @@
 Object rune_summon_air_elemental
 name Rune of Summoning
 type 154
-race air_elemental
 speed 1
 hp 1
-slaying summon air elemental
+other_arch spell_summon_air_elemental
 face rune_summon_air.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -20,7 +19,7 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
+attacktype 2
 dam 90
 Cha 20
 maxhp 5
@@ -29,10 +28,9 @@ end
 Object rune_summon_devil
 name Rune of Summoning
 type 154
-race devil
 speed 1
 hp 1
-slaying summon devil
+other_arch spell_summon_devil
 face rune_summon.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -48,7 +46,7 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
+attacktype 2
 dam 90
 Cha 20
 maxhp 5
@@ -57,10 +55,9 @@ end
 Object rune_summon_earth_elemental
 name Rune of Summoning
 type 154
-race earth_elemental
 speed 1
 hp 1
-slaying summon earth elemental
+other_arch spell_summon_earth_elemental
 face rune_sum_earth.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -76,7 +73,7 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
+attacktype 2
 dam 90
 Cha 20
 maxhp 5
@@ -84,10 +81,9 @@ end
 Object rune_summon_fire_elemental
 name Rune of Summoning
 type 154
-race fire_elemental
 speed 1
 hp 1
-slaying summon fire elemental
+other_arch spell_summon_fire_elemental
 face rune_sum_fire.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -103,7 +99,7 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
+attacktype 2
 dam 90
 Cha 20
 maxhp 5
@@ -112,10 +108,9 @@ end
 Object rune_summon_water_elemental
 name Rune of Summoning
 type 154
-race water_elemental
 speed 1
 hp 1
-slaying summon water elemental
+other_arch spell_summon_water_elemental
 face rune_sum_water.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -131,7 +126,7 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 18
+attacktype 2
 dam 90
 Cha 20
 maxhp 5

@@ -1,6 +1,6 @@
 Object rune_confusion
 name Rune of Confusion
-slaying mass confusion
+other_arch spell_mass_confusion
 type 154
 face rune_confusion.111
 hp 2
@@ -19,6 +19,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 6
 Cha 20
 end

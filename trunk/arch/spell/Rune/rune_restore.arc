@@ -3,7 +3,7 @@ name Rune of Restoration
 speed 1
 type 154
 face rune_heal.111
-slaying restoration
+other_arch spell_restoration
 hp 1
 msg
 You set off a Rune of Restoration
@@ -19,6 +19,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 1
 Cha 1
 end

@@ -2,7 +2,7 @@ Object rune_ball_lightning
 name Rune of Ball Lightning
 type 154
 face rune_blightning.111
-slaying ball lightning
+other_arch spell_ball_lightning
 hp 1
 speed 1
 msg

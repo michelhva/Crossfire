@@ -1,6 +1,6 @@
 Object rune_paralysis
 name Rune of Paralysis
-slaying paralyze
+other_arch spell_paralyze
 type 154
 face rune_paralysis.111
 hp 4
@@ -19,6 +19,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 6
 Cha 20
 end

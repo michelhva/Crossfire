@@ -25,7 +25,6 @@ end
 #
 Object rune_burning_hands
 name Rune of Burning Hands
-slaying burning hands
 type 154
 face rune_fire.111
 hp 1
@@ -45,12 +44,10 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 6
 Cha 20
 end
 Object rune_dragonbreath
 name Rune of Dragon's Breath
-slaying dragonbreath
 type 154
 face rune_fire.111
 hp 1
@@ -70,6 +67,5 @@ invisible 1
 no_pick 1
 walk_on 1
 editable 32
-attacktype 6
 Cha 20
 end
