@@ -1,5 +1,4 @@
 arch map
-region scorn
 name world_104_115
 msg
 Creator: Gnat the Gnu
@@ -12559,6 +12558,10 @@ x 45
 y 34
 end
 arch house_2
+name Mike Miller's house
+slaying /scorn/houses/house3.1st
+hp 6
+sp 8
 x 45
 y 34
 end
@@ -12571,6 +12574,10 @@ x 45
 y 35
 end
 arch house_2
+name Abandoned house
+slaying /scorn/houses/house3.2nd
+hp 5
+sp 9
 x 45
 y 35
 end
