@@ -1,5 +1,6 @@
 Object stormbringer
 name Stormbringer
+nrof 1
 last_sp 8
 Str 1
 hp 1
@@ -10,9 +11,9 @@ dam 9
 weight 25000
 value 180000
 magic 4
-protected 2
+protected 10
 immune 128
-attacktype 130
+attacktype 136
 editable 5120
 magicmap black
 end
