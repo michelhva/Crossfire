@@ -15,7 +15,7 @@ Str 2
 resist_physical 30
 resist_cold 20
 Dam 15
-last_heal 1
+hp 1
 value 65000
 weight 9000
 startequip 1
