@@ -1,0 +1,29 @@
+##############################################################
+#
+# Mage Hound
+#
+treasure mage_hound
+  arch dog
+    nrof 1
+    magic 5
+  more
+  arch wolf
+    nrof 1
+    magic 7
+  more
+  arch mastif
+    nrof 1
+    magic 12
+  more
+  arch dire_wolf
+    nrof 1
+    magic 15
+  more
+  arch hellhound
+    nrof 1
+    magic 25
+  more
+  arch s_mastif
+    nrof 1
+    magic 50
+end
