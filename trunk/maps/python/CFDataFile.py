@@ -121,12 +121,14 @@ class CFData:
             return 0
     
     def exist(self, name):
+        '''checks if a record exists given the primary key as "name"'''
         if self.datadb.has_key(name):
             return 1
         else:
             return 0
 
     def get_record(self, name):
+        '''returns a small dictionary of the header and the record by "name"'''
         if self.exist(name):
             record = {}
             for header, item in zip(self.header,self.datadb[name]):
@@ -135,8 +137,9 @@ class CFData:
             return record
         else:
             return 0
-
+        
     def put_record(self, record):
+        '''adds an line entry to the datafile'''
         name = record['#']
         del record['#']
         temp = []
@@ -145,6 +148,10 @@ class CFData:
         self.datadb[name]=temp
         self.datafile.putData(self.datadb)
     
-
-    
+    def get_keys(self):
+        '''returns a sorted list of the primary keys (usually names) in the datafile'''
+        keys = self.datadb.keys()
+        keys.remove('#')
+        keys.sort()
+        return keys
         
