@@ -1,5 +1,6 @@
 Object gram
 name Gram
+nrof 1
 last_sp 15
 type 15
 face gram.111

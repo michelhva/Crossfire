@@ -1,5 +1,6 @@
 Object quarto
 name thin book
+nrof 1
 face quarto.111
 type 8
 material 1

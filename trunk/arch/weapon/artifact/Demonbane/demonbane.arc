@@ -1,5 +1,6 @@
 Object demonbane
 name Demonbane
+nrof 1
 last_sp 9
 type 15
 face demonbane.111

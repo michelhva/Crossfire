@@ -1,5 +1,6 @@
 Object nunchacu_1
 name nunchacu
+nrof 1
 last_sp 4
 type 15
 face nunchacu_1.111

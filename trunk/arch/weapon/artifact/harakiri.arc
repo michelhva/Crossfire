@@ -1,5 +1,6 @@
 Object harakiri
 name Harakiri sword
+nrof 1
 last_sp 6
 type 15
 face harakiri.111

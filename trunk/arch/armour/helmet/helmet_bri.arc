@@ -1,5 +1,6 @@
 Object helmet_of_brilliance
 name helmet
+nrof 1
 title of brilliance
 face helmet_bri.111
 type 34

@@ -1,5 +1,6 @@
 Object taifu_1
 name taifu
+nrof 1
 last_sp 6
 type 15
 face taifu_1.111

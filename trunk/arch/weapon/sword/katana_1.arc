@@ -1,5 +1,6 @@
 Object katana_1
 name katana
+nrof 1
 last_sp 6
 type 15
 face katana_1.111

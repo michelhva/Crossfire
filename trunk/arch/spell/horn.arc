@@ -1,4 +1,5 @@
 Object horn
+nrof 1
 face horn.111
 color_fg orange
 color_bg khaki

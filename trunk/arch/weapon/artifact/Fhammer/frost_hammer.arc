@@ -1,5 +1,6 @@
 Object frost_hammer
 name Frost Hammer
+nrof 1
 last_sp 8
 type 15
 face frost_hammer.111

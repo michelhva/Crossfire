@@ -1,5 +1,6 @@
 Object uw_sword
 name Belzebub's sword
+nrof 1
 last_sp 7
 dam 17
 slaying angel

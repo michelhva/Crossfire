@@ -1,5 +1,6 @@
 Object defender
 name Defender
+nrof 1
 last_sp 8
 ac -1
 armour 20

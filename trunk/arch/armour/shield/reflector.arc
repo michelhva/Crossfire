@@ -1,5 +1,6 @@
 Object reflector
 name polished shield
+nrof 1
 type 33
 face reflector.111
 anim

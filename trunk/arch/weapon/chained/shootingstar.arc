@@ -1,5 +1,6 @@
 Object shootingstar
 name shootingstar
+nrof 1
 last_sp 6
 type 15
 face shootingstar.111

@@ -1,5 +1,6 @@
 Object crown
 name crown
+nrof 1
 face crown.111
 type 34
 material 2

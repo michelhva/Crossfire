@@ -1,5 +1,6 @@
 Object gu_horn
 name Golden Unicorn Horn
+nrof 1
 face gu_horn.114
 maxhp 130
 hp 100

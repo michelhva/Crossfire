@@ -1,5 +1,6 @@
 Object Pdragon_mail
 name Power Dragon Mail
+nrof 1
 type 16
 face Pdragonmail.111
 anim

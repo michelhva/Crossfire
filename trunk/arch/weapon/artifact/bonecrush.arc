@@ -1,5 +1,6 @@
 Object bonecrusher
 name Bonecrusher
+nrof 1
 slaying skeleton
 face bonecrush.111
 type 15

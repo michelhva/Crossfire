@@ -1,5 +1,6 @@
 Object idaten
 name Idaten boots
+nrof 1
 exp 5
 face idaten.111
 anim

@@ -1,5 +1,6 @@
 Object skullcleaver
 name Skullcleaver
+nrof 1
 slaying skull
 face skullcleav.111
 anim

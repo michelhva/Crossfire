@@ -1,5 +1,6 @@
 Object stake
 slaying vampire
+nrof 1
 last_sp 11
 type 15
 face stake.111

@@ -1,5 +1,6 @@
 Object k_dagger
 name Kobold Dagger
+nrof 1
 slaying troll
 face k_dagger.111
 dam 6

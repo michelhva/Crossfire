@@ -1,5 +1,6 @@
 Object darkblade
 name Darkblade
+nrof 1
 type 15
 face darkblade.111
 anim

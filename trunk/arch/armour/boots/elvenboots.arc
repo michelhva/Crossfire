@@ -1,5 +1,6 @@
 Object elvenboots
 name elven boots
+nrof 1
 face elvenboots.111
 value 30000
 weight 500

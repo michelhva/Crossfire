@@ -1,5 +1,6 @@
 Object dragon_mail
 name dragon mail
+nrof 1
 type 16
 face dragonmail.111
 last_heal 9

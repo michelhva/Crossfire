@@ -1,5 +1,6 @@
 Object DShieldm
 name Demonspawn Shield
+nrof 1
 type 33
 face DShield.111
 anim

@@ -1,5 +1,6 @@
 Object wdsm
 name White Dragon Scale Mail
+nrof 1
 type 16
 face wdsm.111
 last_heal 9

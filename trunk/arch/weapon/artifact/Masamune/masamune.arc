@@ -1,5 +1,6 @@
 Object masamune
 name Katana of Masamune
+nrof 1
 type 15
 face masamune.111
 anim
