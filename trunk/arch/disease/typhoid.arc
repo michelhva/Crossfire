@@ -23,6 +23,6 @@ sp 1
 msg
 You feel feverish.  Your muscles spasm oddly....  Breathing is difficult.
 endmsg
-race human,humanoid
+race human,goblin,giant
 level 12
 end

@@ -25,6 +25,6 @@ sp 1
 msg
 You have aches and fever, and you feel nauseous.
 endmsg
-race human,humanoid,troll,animal,insect
+race human,goblin,giant,troll,animal,insect
 level 15
 end
