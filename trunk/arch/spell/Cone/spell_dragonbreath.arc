@@ -4,7 +4,7 @@ name_pl dragonbreath
 face spell_pyromancy.111
 level 12
 sp 13
-casting_time 30
+casting_time 15
 path_attuned 2
 other_arch firebreath
 dam 4
