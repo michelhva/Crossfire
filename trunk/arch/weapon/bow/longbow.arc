@@ -1,4 +1,5 @@
 Object longbow
+name long bow
 race arrows
 type 14
 nrof 1
