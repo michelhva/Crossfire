@@ -34,7 +34,10 @@ ip = CFPython.WhatIsMessage()
 mail = CFMail.CFMail()
 log = CFLog.CFLog()
 total = mail.countmail(name)
-log.login_update(name, ip)
+if log.info(name):
+    log.login_update(name, ip)
+else:
+    log.create(name)
 
 if total > 0:
 	CFPython.Write('You have some mail waiting for you', activator)
