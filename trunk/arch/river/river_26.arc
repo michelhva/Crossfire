@@ -7,6 +7,7 @@ color_fg blue
 editable 8
 visibility 100
 is_water 1
+end
 Object river_sw-ne_l
 face river_26.211
 name river
@@ -16,6 +17,7 @@ color_fg blue
 editable 8
 visibility 100
 is_water 1
+end
 Object river_sw-ne_u
 face river_26.311
 name river
