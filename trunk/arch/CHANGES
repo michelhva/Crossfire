@@ -1,5 +1,20 @@
 Changes for CVS top of tree:
 
+Many many changes since last entry due to new server code and 
+maintenance efforts.  Highlights - large image support allows 
+for images larger than 32x32 - many images consolidated for easier 
+maintenance (ongoing).  Spell and skill code changes heavily
+modified spells and skill arches (more arch based now).
+four point animation added to most player race and classes, smoothing
+images added to support smoothing code and ground arches changed
+to accommodate.  Arches added for weather system, new monsters,
+new items, new npcs, triggered traps and trigger marker added.
+New images added for classic set as well.  See server changelog
+for more info.  Hope to maintain this file better in the future.
+TM 2004-01-26
+
+
+
 Add archetypes from Todd Mitchell.  These add wolfs and bears,
 with bodyparts for them.  Also changes races for readable scroll
 objects so that scrollcase objects can be used.  Add ruined tower.
