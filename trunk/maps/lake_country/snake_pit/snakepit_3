@@ -5,30 +5,24 @@ Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Sun Jun  4 13:29:23 1995
 endmsg
-x 40
-y 40
-invisible 5
+width 40
+height 40
+darkness 5
 end
 arch large_stones
 end
 arch blocked
-msg
-endmsg
 end
 arch large_stones
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch large_stones
 y 2
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch large_stones
@@ -53,8 +47,6 @@ arch large_stones
 y 6
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch large_stones
@@ -112,16 +104,12 @@ arch large_stones
 y 16
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch large_stones
 y 17
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch large_stones
@@ -242,8 +230,6 @@ arch large_stones
 y 37
 end
 arch blocked
-msg
-endmsg
 y 37
 end
 arch large_stones
@@ -660,8 +646,6 @@ x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 20
 end
@@ -670,8 +654,6 @@ x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
@@ -823,9 +805,9 @@ y 10
 end
 arch cave16
 name illusionary wall
+no_pass 0
 x 3
 y 10
-no_pass 0
 end
 arch large_stones
 x 3
@@ -833,9 +815,9 @@ y 11
 end
 arch cave14
 name illusionary wall
+no_pass 0
 x 3
 y 11
-no_pass 0
 end
 arch large_stones
 x 3
@@ -981,8 +963,6 @@ arch large_stones
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch large_stones
@@ -1031,9 +1011,9 @@ y 10
 end
 arch cave15
 name illusionary wall
+no_pass 0
 x 4
 y 10
-no_pass 0
 end
 arch large_stones
 x 4
@@ -1041,9 +1021,9 @@ y 11
 end
 arch cave13
 name illusionary wall
+no_pass 0
 x 4
 y 11
-no_pass 0
 end
 arch large_stones
 x 4
@@ -1213,9 +1193,9 @@ y 10
 end
 arch cave16
 name illusionary wall
+no_pass 0
 x 5
 y 10
-no_pass 0
 end
 arch large_stones
 x 5
@@ -1223,9 +1203,9 @@ y 11
 end
 arch cave14
 name illusionary wall
+no_pass 0
 x 5
 y 11
-no_pass 0
 end
 arch large_stones
 x 5
@@ -1399,9 +1379,9 @@ y 10
 end
 arch cave15
 name illusionary wall
+no_pass 0
 x 6
 y 10
-no_pass 0
 end
 arch large_stones
 x 6
@@ -1409,9 +1389,9 @@ y 11
 end
 arch cave13
 name illusionary wall
+no_pass 0
 x 6
 y 11
-no_pass 0
 end
 arch large_stones
 x 6
@@ -1684,8 +1664,6 @@ x 7
 y 27
 end
 arch blocked
-msg
-endmsg
 x 7
 y 27
 end
@@ -1944,8 +1922,6 @@ x 8
 y 38
 end
 arch blocked
-msg
-endmsg
 x 8
 y 38
 end
@@ -1954,8 +1930,6 @@ x 8
 y 39
 end
 arch blocked
-msg
-endmsg
 x 8
 y 39
 end
@@ -2150,8 +2124,6 @@ x 9
 y 38
 end
 arch blocked
-msg
-endmsg
 x 9
 y 38
 end
@@ -2160,8 +2132,6 @@ x 9
 y 39
 end
 arch blocked
-msg
-endmsg
 x 9
 y 39
 end
@@ -2376,8 +2346,6 @@ x 10
 y 38
 end
 arch blocked
-msg
-endmsg
 x 10
 y 38
 end
@@ -2386,8 +2354,6 @@ x 10
 y 39
 end
 arch blocked
-msg
-endmsg
 x 10
 y 39
 end
@@ -2594,8 +2560,6 @@ x 11
 y 35
 end
 arch blocked
-msg
-endmsg
 x 11
 y 35
 end
@@ -2604,8 +2568,6 @@ x 11
 y 36
 end
 arch blocked
-msg
-endmsg
 x 11
 y 36
 end
@@ -2614,8 +2576,6 @@ x 11
 y 37
 end
 arch blocked
-msg
-endmsg
 x 11
 y 37
 end
@@ -2624,8 +2584,6 @@ x 11
 y 38
 end
 arch blocked
-msg
-endmsg
 x 11
 y 38
 end
@@ -2634,8 +2592,6 @@ x 11
 y 39
 end
 arch blocked
-msg
-endmsg
 x 11
 y 39
 end
@@ -2782,8 +2738,6 @@ x 12
 y 22
 end
 arch blocked
-msg
-endmsg
 x 12
 y 22
 end
@@ -2848,8 +2802,6 @@ x 12
 y 35
 end
 arch blocked
-msg
-endmsg
 x 12
 y 35
 end
@@ -2889,8 +2841,6 @@ arch large_stones
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch large_stones
@@ -2958,8 +2908,6 @@ x 13
 y 9
 end
 arch blocked
-msg
-endmsg
 x 13
 y 9
 end
@@ -3036,8 +2984,6 @@ x 13
 y 22
 end
 arch blocked
-msg
-endmsg
 x 13
 y 22
 end
@@ -3145,8 +3091,6 @@ arch large_stones
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch large_stones
@@ -3154,8 +3098,6 @@ x 14
 y 1
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -3212,8 +3154,6 @@ x 14
 y 8
 end
 arch blocked
-msg
-endmsg
 x 14
 y 8
 end
@@ -3222,8 +3162,6 @@ x 14
 y 9
 end
 arch blocked
-msg
-endmsg
 x 14
 y 9
 end
@@ -3232,8 +3170,6 @@ x 14
 y 10
 end
 arch blocked
-msg
-endmsg
 x 14
 y 10
 end
@@ -3298,8 +3234,6 @@ x 14
 y 22
 end
 arch blocked
-msg
-endmsg
 x 14
 y 22
 end
@@ -3602,8 +3536,6 @@ x 15
 y 35
 end
 arch blocked
-msg
-endmsg
 x 15
 y 35
 end
@@ -3870,9 +3802,9 @@ x 17
 y 2
 end
 arch large_stones
+no_pass 1
 x 17
 y 3
-no_pass 1
 end
 arch magic_banned
 x 17
@@ -3890,11 +3822,11 @@ x 17
 y 4
 end
 arch mover_5
-x 17
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 17
+y 5
 end
 arch large_stones
 x 17
@@ -4072,9 +4004,9 @@ x 18
 y 2
 end
 arch large_stones
+no_pass 1
 x 18
 y 3
-no_pass 1
 end
 arch magic_banned
 x 18
@@ -4092,11 +4024,11 @@ x 18
 y 4
 end
 arch mover_5
-x 18
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 18
+y 5
 end
 arch large_stones
 x 18
@@ -4287,9 +4219,9 @@ x 19
 y 2
 end
 arch large_stones
+no_pass 1
 x 19
 y 3
-no_pass 1
 end
 arch magic_banned
 x 19
@@ -4307,11 +4239,11 @@ x 19
 y 4
 end
 arch mover_5
-x 19
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 19
+y 5
 end
 arch large_stones
 x 19
@@ -4485,9 +4417,9 @@ x 20
 y 2
 end
 arch large_stones
+no_pass 1
 x 20
 y 3
-no_pass 1
 end
 arch magic_banned
 x 20
@@ -4505,11 +4437,11 @@ x 20
 y 4
 end
 arch mover_5
-x 20
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 20
+y 5
 end
 arch large_stones
 x 20
@@ -4672,8 +4604,6 @@ x 20
 y 39
 end
 arch blocked
-msg
-endmsg
 x 20
 y 39
 end
@@ -4689,9 +4619,9 @@ x 21
 y 2
 end
 arch large_stones
+no_pass 1
 x 21
 y 3
-no_pass 1
 end
 arch magic_banned
 x 21
@@ -4709,11 +4639,11 @@ x 21
 y 4
 end
 arch mover_5
-x 21
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 21
+y 5
 end
 arch large_stones
 x 21
@@ -4864,8 +4794,6 @@ x 21
 y 38
 end
 arch blocked
-msg
-endmsg
 x 21
 y 38
 end
@@ -4874,8 +4802,6 @@ x 21
 y 39
 end
 arch blocked
-msg
-endmsg
 x 21
 y 39
 end
@@ -4891,9 +4817,9 @@ x 22
 y 2
 end
 arch large_stones
+no_pass 1
 x 22
 y 3
-no_pass 1
 end
 arch magic_banned
 x 22
@@ -4911,11 +4837,11 @@ x 22
 y 4
 end
 arch mover_5
-x 22
-y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
+x 22
+y 5
 end
 arch large_stones
 x 22
@@ -5205,8 +5131,6 @@ x 23
 y 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 21
 end
@@ -5215,8 +5139,6 @@ x 23
 y 22
 end
 arch blocked
-msg
-endmsg
 x 23
 y 22
 end
@@ -5423,8 +5345,6 @@ x 24
 y 20
 end
 arch blocked
-msg
-endmsg
 x 24
 y 20
 end
@@ -5433,8 +5353,6 @@ x 24
 y 21
 end
 arch blocked
-msg
-endmsg
 x 24
 y 21
 end
@@ -5443,8 +5361,6 @@ x 24
 y 22
 end
 arch blocked
-msg
-endmsg
 x 24
 y 22
 end
@@ -5453,8 +5369,6 @@ x 24
 y 23
 end
 arch blocked
-msg
-endmsg
 x 24
 y 23
 end
@@ -5535,8 +5449,6 @@ x 24
 y 39
 end
 arch blocked
-msg
-endmsg
 x 24
 y 39
 end
@@ -5544,8 +5456,6 @@ arch large_stones
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch large_stones
@@ -5553,8 +5463,6 @@ x 25
 y 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
@@ -5663,8 +5571,6 @@ x 25
 y 19
 end
 arch blocked
-msg
-endmsg
 x 25
 y 19
 end
@@ -5673,8 +5579,6 @@ x 25
 y 20
 end
 arch blocked
-msg
-endmsg
 x 25
 y 20
 end
@@ -5683,8 +5587,6 @@ x 25
 y 21
 end
 arch blocked
-msg
-endmsg
 x 25
 y 21
 end
@@ -5693,8 +5595,6 @@ x 25
 y 22
 end
 arch blocked
-msg
-endmsg
 x 25
 y 22
 end
@@ -5703,8 +5603,6 @@ x 25
 y 23
 end
 arch blocked
-msg
-endmsg
 x 25
 y 23
 end
@@ -5809,8 +5707,6 @@ x 25
 y 39
 end
 arch blocked
-msg
-endmsg
 x 25
 y 39
 end
@@ -5818,8 +5714,6 @@ arch large_stones
 x 26
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch large_stones
@@ -5827,8 +5721,6 @@ x 26
 y 1
 end
 arch blocked
-msg
-endmsg
 x 26
 y 1
 end
@@ -5853,8 +5745,6 @@ x 26
 y 4
 end
 arch blocked
-msg
-endmsg
 x 26
 y 4
 end
@@ -5863,8 +5753,6 @@ x 26
 y 5
 end
 arch blocked
-msg
-endmsg
 x 26
 y 5
 end
@@ -5873,8 +5761,6 @@ x 26
 y 6
 end
 arch blocked
-msg
-endmsg
 x 26
 y 6
 end
@@ -5939,8 +5825,6 @@ x 26
 y 18
 end
 arch blocked
-msg
-endmsg
 x 26
 y 18
 end
@@ -5949,8 +5833,6 @@ x 26
 y 19
 end
 arch blocked
-msg
-endmsg
 x 26
 y 19
 end
@@ -6043,8 +5925,6 @@ x 26
 y 32
 end
 arch blocked
-msg
-endmsg
 x 26
 y 32
 end
@@ -6089,8 +5969,6 @@ x 26
 y 39
 end
 arch blocked
-msg
-endmsg
 x 26
 y 39
 end
@@ -6145,8 +6023,6 @@ x 27
 y 6
 end
 arch blocked
-msg
-endmsg
 x 27
 y 6
 end
@@ -6155,8 +6031,6 @@ x 27
 y 7
 end
 arch blocked
-msg
-endmsg
 x 27
 y 7
 end
@@ -6229,8 +6103,6 @@ x 27
 y 18
 end
 arch blocked
-msg
-endmsg
 x 27
 y 18
 end
@@ -6239,8 +6111,6 @@ x 27
 y 19
 end
 arch blocked
-msg
-endmsg
 x 27
 y 19
 end
@@ -6393,9 +6263,9 @@ end
 arch depositbox
 name nicely make metal chest
 slaying badge_dragon
+carrying 25100
 x 28
 y 2
-carrying 25100
 arch potion_magic
 nrof 4
 end
@@ -6449,8 +6319,6 @@ x 28
 y 7
 end
 arch blocked
-msg
-endmsg
 x 28
 y 7
 end
@@ -6459,8 +6327,6 @@ x 28
 y 8
 end
 arch blocked
-msg
-endmsg
 x 28
 y 8
 end
@@ -6533,8 +6399,6 @@ x 28
 y 19
 end
 arch blocked
-msg
-endmsg
 x 28
 y 19
 end
@@ -6701,8 +6565,6 @@ x 29
 y 8
 end
 arch blocked
-msg
-endmsg
 x 29
 y 8
 end
@@ -6925,8 +6787,6 @@ x 30
 y 9
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
@@ -7331,8 +7191,6 @@ x 32
 y 11
 end
 arch blocked
-msg
-endmsg
 x 32
 y 11
 end
@@ -7789,8 +7647,6 @@ x 34
 y 23
 end
 arch blocked
-msg
-endmsg
 x 34
 y 23
 end
@@ -7937,11 +7793,11 @@ x 35
 y 12
 end
 arch gate_closed_1
-x 35
-y 12
 speed 0.500000
 speed_left -11.100000
 connected 1
+x 35
+y 12
 end
 arch large_stones
 x 35
@@ -7996,8 +7852,6 @@ x 35
 y 23
 end
 arch blocked
-msg
-endmsg
 x 35
 y 23
 end
@@ -8094,8 +7948,6 @@ x 35
 y 39
 end
 arch blocked
-msg
-endmsg
 x 35
 y 39
 end
@@ -8103,8 +7955,6 @@ arch large_stones
 x 36
 end
 arch blocked
-msg
-endmsg
 x 36
 end
 arch large_stones
@@ -8164,11 +8014,11 @@ x 36
 y 12
 end
 arch gate_closed_1
-x 36
-y 12
 speed 0.500000
 speed_left -11.100000
 connected 1
+x 36
+y 12
 end
 arch large_stones
 x 36
@@ -8219,8 +8069,6 @@ x 36
 y 23
 end
 arch blocked
-msg
-endmsg
 x 36
 y 23
 end
@@ -8229,8 +8077,6 @@ x 36
 y 24
 end
 arch blocked
-msg
-endmsg
 x 36
 y 24
 end
@@ -8295,8 +8141,6 @@ x 36
 y 36
 end
 arch blocked
-msg
-endmsg
 x 36
 y 36
 end
@@ -8328,8 +8172,6 @@ arch large_stones
 x 37
 end
 arch blocked
-msg
-endmsg
 x 37
 end
 arch large_stones
@@ -8417,9 +8259,9 @@ x 37
 y 14
 end
 arch button_lever
+connected 1
 x 37
 y 14
-connected 1
 end
 arch large_stones
 x 37
@@ -8585,8 +8427,6 @@ arch large_stones
 x 38
 end
 arch blocked
-msg
-endmsg
 x 38
 end
 arch large_stones
@@ -8650,9 +8490,9 @@ x 38
 y 9
 end
 arch button_lever
+connected 1
 x 38
 y 9
-connected 1
 end
 arch large_stones
 x 38
@@ -8739,8 +8579,6 @@ x 38
 y 21
 end
 arch blocked
-msg
-endmsg
 x 38
 y 21
 end
@@ -8749,8 +8587,6 @@ x 38
 y 22
 end
 arch blocked
-msg
-endmsg
 x 38
 y 22
 end
@@ -8851,8 +8687,6 @@ x 38
 y 35
 end
 arch blocked
-msg
-endmsg
 x 38
 y 35
 end
@@ -8885,8 +8719,6 @@ x 38
 y 39
 end
 arch blocked
-msg
-endmsg
 x 38
 y 39
 end
@@ -8894,8 +8726,6 @@ arch large_stones
 x 39
 end
 arch blocked
-msg
-endmsg
 x 39
 end
 arch large_stones
@@ -8919,8 +8749,6 @@ x 39
 y 3
 end
 arch blocked
-msg
-endmsg
 x 39
 y 3
 end
@@ -8985,8 +8813,6 @@ x 39
 y 11
 end
 arch blocked
-msg
-endmsg
 x 39
 y 11
 end
@@ -9051,8 +8877,6 @@ x 39
 y 19
 end
 arch blocked
-msg
-endmsg
 x 39
 y 19
 end
@@ -9061,8 +8885,6 @@ x 39
 y 20
 end
 arch blocked
-msg
-endmsg
 x 39
 y 20
 end
@@ -9071,8 +8893,6 @@ x 39
 y 21
 end
 arch blocked
-msg
-endmsg
 x 39
 y 21
 end
@@ -9081,8 +8901,6 @@ x 39
 y 22
 end
 arch blocked
-msg
-endmsg
 x 39
 y 22
 end
@@ -9091,8 +8909,6 @@ x 39
 y 23
 end
 arch blocked
-msg
-endmsg
 x 39
 y 23
 end
@@ -9101,8 +8917,6 @@ x 39
 y 24
 end
 arch blocked
-msg
-endmsg
 x 39
 y 24
 end
@@ -9175,8 +8989,6 @@ x 39
 y 33
 end
 arch blocked
-msg
-endmsg
 x 39
 y 33
 end
@@ -9185,8 +8997,6 @@ x 39
 y 34
 end
 arch blocked
-msg
-endmsg
 x 39
 y 34
 end
@@ -9195,8 +9005,6 @@ x 39
 y 35
 end
 arch blocked
-msg
-endmsg
 x 39
 y 35
 end
@@ -9205,8 +9013,6 @@ x 39
 y 36
 end
 arch blocked
-msg
-endmsg
 x 39
 y 36
 end
@@ -9215,8 +9021,6 @@ x 39
 y 37
 end
 arch blocked
-msg
-endmsg
 x 39
 y 37
 end
@@ -9225,8 +9029,6 @@ x 39
 y 38
 end
 arch blocked
-msg
-endmsg
 x 39
 y 38
 end
@@ -9235,63 +9037,31 @@ x 39
 y 39
 end
 arch blocked
-msg
-endmsg
 x 39
 y 39
 end
-arch dragon
-name wyvern of chaos
+arch Cwyvern
+speed 0.5
+flying 1
+carrying 25000
 Con 30
-Wis 30
 Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
+maxhp 300
+resist_fear 100
+resist_blind 50
+resist_cold -100
+resist_confusion -100
+ac 2
+wc 2
 x 2
 y 36
-speed 0.500000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 25000
-flying 1
-arch abil_icestorm
-end
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
 end
-arch spell_sm_lightning
-end
 arch gem
 nrof 500
 end
-end
-More
-arch dragon_2
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 3
-y 36
-speed 0.500000
-level 30
-immune 4117
-protected 8
-attacktype 29
-flying 1
-can_cast_spell 1
 end
 arch demon_lord
 name Visiting Demon Lord, Orcus
@@ -9301,621 +9071,32 @@ hp 9000
 sp 1000
 maxsp 1000
 exp 2000000
-x 6
-y 5
 speed 0.700000
 speed_left -17.569998
 level 70
 immune 4117
 protected 8
 attacktype 1167
+x 6
+y 5
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
 end
 end
-More
-arch demon_lord_1
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 2
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_2
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 2
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_3
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 2
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_4
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 2
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_5
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 3
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_6
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 3
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_7
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 3
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_8
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 3
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_9
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 4
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_10
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 4
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_11
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 4
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_12
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 4
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_13
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 5
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_15
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 5
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_16
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 5
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_17
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 6
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_18
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 6
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_19
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 6
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_20
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 6
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_21
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 7
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_22
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 7
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_23
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 7
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_24
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 7
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_25
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 8
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_26
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 8
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_27
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 8
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_28
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 8
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_29
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 5
-y 9
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_30
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 6
-y 9
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_31
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 7
-y 9
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
-More
-arch demon_lord_32
-name Visiting Demon Lord, Orcus
-Wis 30
-Int 13
-hp 9000
-sp 1000
-maxsp 1000
-exp 2000000
-x 8
-y 9
-speed 0.700000
-speed_left -16.499998
-level 70
-immune 4117
-protected 8
-attacktype 1167
-can_cast_spell 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 9
 y 27
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9923,34 +9104,19 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 9
-y 28
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 9
 y 32
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9958,34 +9124,19 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 9
-y 33
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 10
 y 27
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9993,34 +9144,19 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 10
-y 28
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 10
 y 32
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -10028,34 +9164,19 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 10
-y 33
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 14
 y 25
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -10063,104 +9184,59 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 14
-y 26
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 15
 y 25
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
 end
 arch spell_paralyze
 end
-end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 15
-y 26
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-x 18
-y 34
 speed 1.000000
 speed_left -34.419998
 immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
+x 18
+y 34
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
 end
 arch spell_paralyze
 end
-end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 18
-y 35
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-x 19
-y 34
 speed 1.000000
 speed_left -34.419998
 immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
+x 19
+y 34
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -10168,140 +9244,67 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 19
-y 35
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
-arch dragon
+arch Cwyvern
 name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
 exp 400000
+speed 0.7
+flying 1
+carrying 35000
 dam 40
+hp 6000
+Con 30
+Int 12
+resist_blind 50
+resist_cold -100
+resist_confusion -100
+maxhp 300
+ac 2
+wc 2
 x 21
 y 16
-speed 0.700000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 35000
-flying 1
-arch abil_icestorm
-end
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
-end
-arch spell_sm_lightning
 end
 arch gem
 nrof 700
 end
 end
-More
-arch dragon_2
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-x 22
-y 16
-speed 0.700000
-level 30
-immune 4117
-protected 8
-attacktype 29
+arch Cwyvern
+speed 0.5
 flying 1
-can_cast_spell 1
-end
-arch dragon
-name wyvern of chaos
+carrying 25000
 Con 30
-Wis 30
 Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
+resist_blind 50
+resist_cold -100
+resist_confusion -100
+ac 2
+wc 2
+maxhp 300
 x 21
 y 24
-speed 0.500000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 25000
-flying 1
-arch abil_icestorm
-end
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
-end
-arch spell_sm_lightning
 end
 arch gem
 nrof 500
 end
 end
-More
-arch dragon_2
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 22
-y 24
-speed 0.500000
-level 30
-immune 4117
-protected 8
-attacktype 29
-flying 1
-can_cast_spell 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 23
 y 29
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -10309,34 +9312,19 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 23
-y 30
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 23
 y 34
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -10344,90 +9332,45 @@ end
 arch spell_paralyze
 end
 end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 23
-y 35
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
-end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
+speed 1.000000
+speed_left -34.419998
+immune 1024
+protected 12
+attacktype 82945
+can_see_in_dark 1
 x 24
 y 29
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
 end
 arch spell_paralyze
 end
-end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 24
-y 30
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 end
 arch cobra
 name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-x 24
-y 34
 speed 1.000000
 speed_left -34.419998
 immune 1024
 protected 12
 attacktype 82945
 can_see_in_dark 1
+x 24
+y 34
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
 end
 arch spell_paralyze
 end
-end
-More
-arch cobra_2
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 24
-y 35
-speed 1.000000
-speed_left -29.500000
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 end
 arch dragonman
 name dragonman mercenary
@@ -10435,31 +9378,17 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
-x 30
-y 3
 speed 0.450000
 speed_left -10.249999
 level 20
+x 30
+y 3
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
-end
-More
-arch dragonman_2
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 30
-y 4
-speed 0.450000
-speed_left -5.500000
-level 20
-can_cast_spell 1
 end
 arch dragonman
 name dragonman mercenary
@@ -10467,31 +9396,17 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
-x 31
-y 5
 speed 0.450000
 speed_left -9.410000
 level 20
+x 31
+y 5
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
-end
-More
-arch dragonman_2
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 31
-y 6
-speed 0.450000
-speed_left -5.500000
-level 20
-can_cast_spell 1
 end
 arch dragonman
 name dragonman lieutenant
@@ -10499,12 +9414,12 @@ Wis 30
 hp 9500
 sp 1000
 dam 30
-x 33
-y 3
 speed 0.800000
 speed_left -13.200002
 level 20
 carrying 100
+x 33
+y 3
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -10513,40 +9428,26 @@ arch spell_sm_lightning
 end
 arch key2
 name Dragonbadge
-slaying badge_dragon
+face baby_drag.113
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
-face baby_drag.113
+slaying badge_dragon
 value 10000
 end
 end
-More
-arch dragonman_2
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 33
-y 4
-speed 0.800000
-speed_left -9.700001
-level 20
-can_cast_spell 1
-end
 arch dragonman
 name dragonman mercenary
 Wis 30
 hp 5500
 sp 1000
 dam 30
-x 34
-y 7
 speed 0.450000
 speed_left -10.059999
 level 20
+x 34
+y 7
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -10554,51 +9455,23 @@ end
 arch spell_sm_lightning
 end
 end
-More
-arch dragonman_2
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 34
-y 8
-speed 0.450000
-speed_left -5.500000
-level 20
-can_cast_spell 1
-end
 arch dragonman
 name dragonman mercenary
 Wis 30
 hp 5500
 sp 1000
 dam 30
-x 36
-y 5
 speed 0.450000
 speed_left -8.999999
 level 20
+x 36
+y 5
 arch abil_fear
 end
 arch spell_mass_confusion
 end
 arch spell_sm_lightning
 end
-end
-More
-arch dragonman_2
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 36
-y 6
-speed 0.450000
-speed_left -5.500000
-level 20
-can_cast_spell 1
 end
 arch dragonman
 name dragonman mercenary
@@ -10606,11 +9479,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
-x 36
-y 9
 speed 0.450000
 speed_left -10.129999
 level 20
+x 36
+y 9
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -10618,70 +9491,25 @@ end
 arch spell_sm_lightning
 end
 end
-More
-arch dragonman_2
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 36
-y 10
-speed 0.450000
-speed_left -5.500000
-level 20
-can_cast_spell 1
-end
-arch dragon
-name wyvern of chaos
+arch Cwyvern
+speed 0.5
+flying 1
+carrying 25000
 Con 30
-Wis 30
 Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
+resist_cold -100
+resist_confusion -100
+resist_blind 50
+maxhp 300
+ac 2
+wc 2
 x 36
 y 26
-speed 0.500000
-speed_left -1.840000
-level 30
-immune 4117
-protected 8
-attacktype 29
-carrying 25000
-flying 1
-arch abil_icestorm
-end
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
 end
-arch spell_sm_lightning
-end
 arch gem
 nrof 500
 end
-end
-More
-arch dragon_2
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 37
-y 26
-speed 0.500000
-level 30
-immune 4117
-protected 8
-attacktype 29
-flying 1
-can_cast_spell 1
 end
