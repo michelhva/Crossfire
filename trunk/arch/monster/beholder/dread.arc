@@ -2,15 +2,15 @@ Object dread
 name Dread
 race unnatural
 randomitems beholder_big
-face dread.111
+face dread.x11
 color_fg blue
 anim
-dread.111
-dread.112
-dread.113
-dread.114
-dread.115
-dread.116
+dread.x11
+dread.x12
+dread.x13
+dread.x14
+dread.x15
+dread.x16
 mina
 exp 50000
 monster 1
@@ -45,16 +45,16 @@ end
 More
 Object dread_2
 name Dread
-face dread.211
+face dread.x11
 color_fg blue
 x 1
 anim
-dread.211
-dread.212
-dread.213
-dread.214
-dread.215
-dread.216
+dread.x11
+dread.x12
+dread.x13
+dread.x14
+dread.x15
+dread.x16
 mina
 alive 1
 no_pick 1
@@ -63,16 +63,16 @@ end
 More
 Object dread_3
 name Dread
-face dread.311
+face dread.x11
 color_fg blue
 y 1
 anim
-dread.311
-dread.312
-dread.313
-dread.314
-dread.315
-dread.316
+dread.x11
+dread.x12
+dread.x13
+dread.x14
+dread.x15
+dread.x16
 mina
 alive 1
 no_pick 1
@@ -81,17 +81,17 @@ end
 More
 Object dread_4
 name Dread
-face dread.411
+face dread.x11
 color_fg blue
 x 1
 y 1
 anim
-dread.411
-dread.412
-dread.413
-dread.414
-dread.415
-dread.416
+dread.x11
+dread.x12
+dread.x13
+dread.x14
+dread.x15
+dread.x16
 mina
 alive 1
 no_pick 1
