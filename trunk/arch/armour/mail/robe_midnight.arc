@@ -1,5 +1,6 @@
 Object robe_midnight
 name Midnight Robe
+nrof 1
 type 16
 face robe_midnight.111
 anim
@@ -12,8 +13,8 @@ color_fg black
 last_sp 12
 ac 5
 Dex 1
-Wis 2
 Int 2
+Pow 2
 protected 6294
 immune 64
 vulnerable 66048
