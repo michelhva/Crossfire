@@ -2,6 +2,10 @@ Changes for CVS top of tree:
 
 ------------------------------------------------------------------------------
 
+MSW 2000-11-22: talisman/ring_drain.arc - give object speed 0.1
+so it will animate (animation already in place, just was not being
+used.)
+
 PeterM:  Totally reorganized player/*, splitting it into races and
 classes.  Classes are themselves split into four main subtypes.  
 New images from dnh were also added, as well as new classes/races.
