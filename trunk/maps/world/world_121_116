@@ -9121,6 +9121,10 @@ arch cwall_2_1_2
 x 36
 y 37
 end
+arch dungeon_magic
+x 36
+y 38
+end
 arch cobblestones2
 x 36
 y 38
@@ -9129,29 +9133,57 @@ arch lamppost
 x 36
 y 38
 end
-arch cobblestones2
+arch dungeon_magic
 x 36
 y 39
 end
 arch cobblestones2
 x 36
+y 39
+end
+arch dungeon_magic
+x 36
 y 40
 end
 arch cobblestones2
+x 36
+y 40
+end
+arch dungeon_magic
 x 36
 y 41
 end
 arch cobblestones2
 x 36
+y 41
+end
+arch dungeon_magic
+x 36
 y 42
 end
 arch cobblestones2
+x 36
+y 42
+end
+arch dungeon_magic
 x 36
 y 43
 end
 arch cobblestones2
 x 36
+y 43
+end
+arch dungeon_magic
+x 36
 y 44
+end
+arch cobblestones2
+x 36
+y 44
+end
+arch dungeon_magic
+x 36
+y 45
 end
 arch cobblestones2
 x 36
@@ -9160,6 +9192,10 @@ end
 arch cwall_3_3
 x 36
 y 45
+end
+arch dungeon_magic
+x 36
+y 46
 end
 arch cobblestones2
 x 36
@@ -9178,6 +9214,10 @@ fly_on 0
 x 36
 y 46
 end
+arch dungeon_magic
+x 36
+y 47
+end
 arch cobblestones2
 x 36
 y 47
@@ -9186,9 +9226,17 @@ arch cwall_3_1
 x 36
 y 47
 end
+arch dungeon_magic
+x 36
+y 48
+end
 arch cobblestones2
 x 36
 y 48
+end
+arch dungeon_magic
+x 36
+y 49
 end
 arch cobblestones2
 x 36
@@ -9383,26 +9431,42 @@ arch cwall_2_1_2
 x 37
 y 37
 end
+arch dungeon_magic
+x 37
+y 38
+end
 arch cobblestones2
 x 37
 y 38
 end
-arch grass
-no_pass 1
+arch dungeon_magic
 x 37
 y 39
 end
 arch grass
 no_pass 1
 x 37
+y 39
+end
+arch dungeon_magic
+x 37
 y 40
+end
+arch grass
+no_pass 1
+x 37
+y 40
+end
+arch dungeon_magic
+x 37
+y 41
 end
 arch grass
 no_pass 1
 x 37
 y 41
 end
-arch grass
+arch dungeon_magic
 x 37
 y 42
 end
@@ -9410,13 +9474,25 @@ arch brush
 x 37
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 37
 y 43
 end
 arch cobblestones2
 x 37
+y 43
+end
+arch dungeon_magic
+x 37
 y 44
+end
+arch cobblestones2
+x 37
+y 44
+end
+arch dungeon_magic
+x 37
+y 45
 end
 arch cobblestones2
 x 37
@@ -9426,21 +9502,37 @@ arch cwall_2_1_2
 x 37
 y 45
 end
-arch cobblestones2
+arch dungeon_magic
 x 37
 y 46
 end
 arch cobblestones2
 x 37
+y 46
+end
+arch dungeon_magic
+x 37
+y 47
+end
+arch cobblestones2
+x 37
 y 47
 end
 arch cwall_2_1_2
 x 37
 y 47
 end
+arch dungeon_magic
+x 37
+y 48
+end
 arch cobblestones2
 x 37
 y 48
+end
+arch dungeon_magic
+x 37
+y 49
 end
 arch cobblestones2
 x 37
@@ -9635,23 +9727,43 @@ arch cwall_2_1_2
 x 38
 y 37
 end
+arch dungeon_magic
+x 38
+y 38
+end
 arch cobblestones2
 x 38
 y 38
+end
+arch dungeon_magic
+x 38
+y 39
 end
 arch grass
 no_pass 1
 x 38
 y 39
 end
+arch dungeon_magic
+x 38
+y 40
+end
 arch grass
 x 38
 y 40
+end
+arch dungeon_magic
+x 38
+y 41
 end
 arch grass
 no_pass 1
 x 38
 y 41
+end
+arch dungeon_magic
+x 38
+y 42
 end
 arch grass
 x 38
@@ -9666,13 +9778,25 @@ name_pl Showing Today:
 x 38
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 38
 y 43
 end
 arch cobblestones2
 x 38
+y 43
+end
+arch dungeon_magic
+x 38
 y 44
+end
+arch cobblestones2
+x 38
+y 44
+end
+arch dungeon_magic
+x 38
+y 45
 end
 arch cobblestones2
 x 38
@@ -9682,6 +9806,10 @@ arch cwall_2_2_3
 x 38
 y 45
 end
+arch dungeon_magic
+x 38
+y 46
+end
 arch cobblestones2
 x 38
 y 46
@@ -9689,6 +9817,10 @@ end
 arch cityport_b
 x 38
 y 46
+end
+arch dungeon_magic
+x 38
+y 47
 end
 arch cobblestones2
 x 38
@@ -9698,9 +9830,17 @@ arch cwall_2_2_4
 x 38
 y 47
 end
+arch dungeon_magic
+x 38
+y 48
+end
 arch cobblestones2
 x 38
 y 48
+end
+arch dungeon_magic
+x 38
+y 49
 end
 arch cobblestones2
 x 38
@@ -9895,50 +10035,98 @@ arch cwall_2_1_2
 x 39
 y 37
 end
+arch dungeon_magic
+x 39
+y 38
+end
 arch cobblestones2
 x 39
 y 38
+end
+arch dungeon_magic
+x 39
+y 39
 end
 arch grass
 no_pass 1
 x 39
 y 39
 end
-arch grass
+arch dungeon_magic
 x 39
 y 40
 end
 arch grass
 x 39
+y 40
+end
+arch dungeon_magic
+x 39
 y 41
+end
+arch grass
+x 39
+y 41
+end
+arch dungeon_magic
+x 39
+y 42
 end
 arch grass
 x 39
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 39
 y 43
 end
 arch cobblestones2
 x 39
+y 43
+end
+arch dungeon_magic
+x 39
 y 44
 end
 arch cobblestones2
+x 39
+y 44
+end
+arch dungeon_magic
 x 39
 y 45
 end
 arch cobblestones2
 x 39
+y 45
+end
+arch dungeon_magic
+x 39
 y 46
 end
 arch cobblestones2
+x 39
+y 46
+end
+arch dungeon_magic
 x 39
 y 47
 end
 arch cobblestones2
 x 39
+y 47
+end
+arch dungeon_magic
+x 39
 y 48
+end
+arch cobblestones2
+x 39
+y 48
+end
+arch dungeon_magic
+x 39
+y 49
 end
 arch cobblestones2
 x 39
@@ -10133,6 +10321,10 @@ arch cwall_2_1_2
 x 40
 y 37
 end
+arch dungeon_magic
+x 40
+y 38
+end
 arch cobblestones2
 x 40
 y 38
@@ -10151,27 +10343,51 @@ endmsg
 x 40
 y 38
 end
+arch dungeon_magic
+x 40
+y 39
+end
 arch grass
 no_pass 1
 x 40
 y 39
 end
+arch dungeon_magic
+x 40
+y 40
+end
 arch grass
 x 40
 y 40
+end
+arch dungeon_magic
+x 40
+y 41
 end
 arch grass
 no_pass 1
 x 40
 y 41
 end
+arch dungeon_magic
+x 40
+y 42
+end
 arch grass
 x 40
 y 42
 end
+arch dungeon_magic
+x 40
+y 43
+end
 arch cobblestones2
 x 40
 y 43
+end
+arch dungeon_magic
+x 40
+y 44
 end
 arch grass
 x 40
@@ -10181,13 +10397,25 @@ arch grasspond
 x 40
 y 44
 end
+arch dungeon_magic
+x 40
+y 45
+end
 arch grass
 x 40
 y 45
 end
+arch dungeon_magic
+x 40
+y 46
+end
 arch cobblestones2
 x 40
 y 46
+end
+arch dungeon_magic
+x 40
+y 47
 end
 arch grass
 x 40
@@ -10202,6 +10430,10 @@ name_pl Main St.
 x 40
 y 47
 end
+arch dungeon_magic
+x 40
+y 48
+end
 arch grass
 x 40
 y 48
@@ -10209,6 +10441,10 @@ end
 arch lamppost
 x 40
 y 48
+end
+arch dungeon_magic
+x 40
+y 49
 end
 arch cobblestones2
 x 40
@@ -10403,24 +10639,44 @@ arch cwall_2_1_2
 x 41
 y 37
 end
+arch dungeon_magic
+x 41
+y 38
+end
 arch cobblestones2
 x 41
 y 38
 end
-arch grass
-no_pass 1
+arch dungeon_magic
 x 41
 y 39
 end
 arch grass
 no_pass 1
 x 41
+y 39
+end
+arch dungeon_magic
+x 41
 y 40
 end
 arch grass
 no_pass 1
 x 41
+y 40
+end
+arch dungeon_magic
+x 41
 y 41
+end
+arch grass
+no_pass 1
+x 41
+y 41
+end
+arch dungeon_magic
+x 41
+y 42
 end
 arch grass
 x 41
@@ -10430,9 +10686,17 @@ arch lamppost
 x 41
 y 42
 end
+arch dungeon_magic
+x 41
+y 43
+end
 arch cobblestones2
 x 41
 y 43
+end
+arch dungeon_magic
+x 41
+y 44
 end
 arch grass
 x 41
@@ -10447,6 +10711,10 @@ sp 19
 x 41
 y 44
 end
+arch dungeon_magic
+x 41
+y 45
+end
 arch grass
 x 41
 y 45
@@ -10454,18 +10722,34 @@ end
 arch cobblestones2
 x 41
 y 45
+end
+arch dungeon_magic
+x 41
+y 46
 end
 arch cobblestones2
 x 41
 y 46
 end
-arch grass
+arch dungeon_magic
 x 41
 y 47
 end
 arch grass
 x 41
+y 47
+end
+arch dungeon_magic
+x 41
 y 48
+end
+arch grass
+x 41
+y 48
+end
+arch dungeon_magic
+x 41
+y 49
 end
 arch cobblestones2
 x 41
@@ -10660,53 +10944,97 @@ arch cwall_2_1_2
 x 42
 y 37
 end
-arch cobblestones2
+arch dungeon_magic
 x 42
 y 38
 end
 arch cobblestones2
 x 42
+y 38
+end
+arch dungeon_magic
+x 42
 y 39
 end
 arch cobblestones2
+x 42
+y 39
+end
+arch dungeon_magic
 x 42
 y 40
 end
 arch cobblestones2
 x 42
+y 40
+end
+arch dungeon_magic
+x 42
 y 41
 end
 arch cobblestones2
+x 42
+y 41
+end
+arch dungeon_magic
 x 42
 y 42
 end
 arch cobblestones2
 x 42
+y 42
+end
+arch dungeon_magic
+x 42
 y 43
 end
 arch cobblestones2
+x 42
+y 43
+end
+arch dungeon_magic
 x 42
 y 44
 end
 arch cobblestones2
 x 42
+y 44
+end
+arch dungeon_magic
+x 42
 y 45
+end
+arch cobblestones2
+x 42
+y 45
+end
+arch dungeon_magic
+x 42
+y 46
 end
 arch cobblestones2
 x 42
 y 46
 end
-arch grass
+arch dungeon_magic
 x 42
 y 47
 end
 arch grass
+x 42
+y 47
+end
+arch dungeon_magic
 x 42
 y 48
 end
 arch evergreen
 x 42
 y 48
+end
+arch dungeon_magic
+x 42
+y 49
 end
 arch cobblestones2
 x 42
@@ -10898,21 +11226,41 @@ arch cwall_2_1_2
 x 43
 y 37
 end
+arch dungeon_magic
+x 43
+y 38
+end
 arch cobblestones2
 x 43
 y 38
 end
-arch grass
+arch dungeon_magic
 x 43
 y 39
 end
 arch grass
 x 43
+y 39
+end
+arch dungeon_magic
+x 43
 y 40
+end
+arch grass
+x 43
+y 40
+end
+arch dungeon_magic
+x 43
+y 41
 end
 arch cobblestones2
 x 43
 y 41
+end
+arch dungeon_magic
+x 43
+y 42
 end
 arch grass
 x 43
@@ -10925,11 +11273,15 @@ sp 7
 x 43
 y 42
 end
+arch dungeon_magic
+x 43
+y 43
+end
 arch cobblestones2
 x 43
 y 43
 end
-arch grass
+arch dungeon_magic
 x 43
 y 44
 end
@@ -10937,7 +11289,7 @@ arch tree
 x 43
 y 44
 end
-arch grass
+arch dungeon_magic
 x 43
 y 45
 end
@@ -10945,9 +11297,17 @@ arch brush
 x 43
 y 45
 end
+arch dungeon_magic
+x 43
+y 46
+end
 arch cobblestones2
 x 43
 y 46
+end
+arch dungeon_magic
+x 43
+y 47
 end
 arch grass
 x 43
@@ -10960,9 +11320,17 @@ sp 11
 x 43
 y 47
 end
+arch dungeon_magic
+x 43
+y 48
+end
 arch grass
 x 43
 y 48
+end
+arch dungeon_magic
+x 43
+y 49
 end
 arch cobblestones2
 x 43
@@ -11143,21 +11511,41 @@ arch cwall_2_1_2
 x 44
 y 37
 end
+arch dungeon_magic
+x 44
+y 38
+end
 arch cobblestones2
 x 44
 y 38
 end
-arch grass
+arch dungeon_magic
 x 44
 y 39
 end
 arch grass
 x 44
+y 39
+end
+arch dungeon_magic
+x 44
 y 40
+end
+arch grass
+x 44
+y 40
+end
+arch dungeon_magic
+x 44
+y 41
 end
 arch cobblestones2
 x 44
 y 41
+end
+arch dungeon_magic
+x 44
+y 42
 end
 arch grass
 x 44
@@ -11172,10 +11560,18 @@ sp 7
 x 44
 y 42
 end
+arch dungeon_magic
+x 44
+y 43
+end
 arch cobblestones2
 x 44
 y 43
 end
+arch dungeon_magic
+x 44
+y 44
+end
 arch grass
 x 44
 y 44
@@ -11184,6 +11580,10 @@ arch well
 x 44
 y 44
 end
+arch dungeon_magic
+x 44
+y 45
+end
 arch grass
 x 44
 y 45
@@ -11191,10 +11591,18 @@ end
 arch well
 x 44
 y 45
+end
+arch dungeon_magic
+x 44
+y 46
 end
 arch cobblestones2
 x 44
 y 46
+end
+arch dungeon_magic
+x 44
+y 47
 end
 arch grass
 x 44
@@ -11207,13 +11615,17 @@ sp 1
 x 44
 y 47
 end
-arch grass
+arch dungeon_magic
 x 44
 y 48
 end
 arch evergreen
 x 44
 y 48
+end
+arch dungeon_magic
+x 44
+y 49
 end
 arch cobblestones2
 x 44
@@ -11397,30 +11809,58 @@ arch cwall_2_1_2
 x 45
 y 37
 end
+arch dungeon_magic
+x 45
+y 38
+end
 arch cobblestones2
 x 45
 y 38
 end
-arch grass
+arch dungeon_magic
 x 45
 y 39
 end
 arch grass
 x 45
+y 39
+end
+arch dungeon_magic
+x 45
 y 40
+end
+arch grass
+x 45
+y 40
+end
+arch dungeon_magic
+x 45
+y 41
 end
 arch cobblestones2
 x 45
 y 41
 end
+arch dungeon_magic
+x 45
+y 42
+end
 arch grass
 x 45
 y 42
+end
+arch dungeon_magic
+x 45
+y 43
 end
 arch cobblestones2
 x 45
 y 43
 end
+arch dungeon_magic
+x 45
+y 44
+end
 arch grass
 x 45
 y 44
@@ -11429,6 +11869,10 @@ arch well
 x 45
 y 44
 end
+arch dungeon_magic
+x 45
+y 45
+end
 arch grass
 x 45
 y 45
@@ -11436,10 +11880,18 @@ end
 arch well
 x 45
 y 45
+end
+arch dungeon_magic
+x 45
+y 46
 end
 arch cobblestones2
 x 45
 y 46
+end
+arch dungeon_magic
+x 45
+y 47
 end
 arch grass
 x 45
@@ -11454,6 +11906,10 @@ sp 1
 x 45
 y 47
 end
+arch dungeon_magic
+x 45
+y 48
+end
 arch grass
 x 45
 y 48
@@ -11464,6 +11920,10 @@ hp 27
 sp 4
 x 45
 y 48
+end
+arch dungeon_magic
+x 45
+y 49
 end
 arch cobblestones2
 x 45
@@ -11661,49 +12121,97 @@ arch cwall_2_1_2
 x 46
 y 37
 end
+arch dungeon_magic
+x 46
+y 38
+end
 arch cobblestones2
 x 46
 y 38
 end
-arch grass
+arch dungeon_magic
 x 46
 y 39
 end
 arch grass
 x 46
+y 39
+end
+arch dungeon_magic
+x 46
 y 40
+end
+arch grass
+x 46
+y 40
+end
+arch dungeon_magic
+x 46
+y 41
 end
 arch cobblestones2
 x 46
 y 41
 end
+arch dungeon_magic
+x 46
+y 42
+end
 arch grass
 x 46
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 46
 y 43
 end
 arch cobblestones2
 x 46
+y 43
+end
+arch dungeon_magic
+x 46
 y 44
 end
 arch cobblestones2
+x 46
+y 44
+end
+arch dungeon_magic
 x 46
 y 45
 end
 arch cobblestones2
 x 46
+y 45
+end
+arch dungeon_magic
+x 46
 y 46
 end
 arch cobblestones2
+x 46
+y 46
+end
+arch dungeon_magic
 x 46
 y 47
 end
 arch cobblestones2
 x 46
+y 47
+end
+arch dungeon_magic
+x 46
 y 48
+end
+arch cobblestones2
+x 46
+y 48
+end
+arch dungeon_magic
+x 46
+y 49
 end
 arch cobblestones2
 x 46
@@ -11901,33 +12409,65 @@ arch cwall_2_1_2
 x 47
 y 37
 end
+arch dungeon_magic
+x 47
+y 38
+end
 arch cobblestones2
 x 47
 y 38
 end
-arch grass
+arch dungeon_magic
 x 47
 y 39
 end
 arch grass
 x 47
+y 39
+end
+arch dungeon_magic
+x 47
 y 40
 end
-arch cobblestones2
+arch grass
+x 47
+y 40
+end
+arch dungeon_magic
 x 47
 y 41
 end
 arch cobblestones2
 x 47
+y 41
+end
+arch dungeon_magic
+x 47
 y 42
 end
 arch cobblestones2
+x 47
+y 42
+end
+arch dungeon_magic
 x 47
 y 43
 end
 arch cobblestones2
 x 47
+y 43
+end
+arch dungeon_magic
+x 47
 y 44
+end
+arch cobblestones2
+x 47
+y 44
+end
+arch dungeon_magic
+x 47
+y 45
 end
 arch cobblestones
 x 47
@@ -11937,17 +12477,33 @@ arch lamppost
 x 47
 y 45
 end
-arch cobblestones
+arch dungeon_magic
 x 47
 y 46
 end
 arch cobblestones
 x 47
+y 46
+end
+arch dungeon_magic
+x 47
 y 47
+end
+arch cobblestones
+x 47
+y 47
+end
+arch dungeon_magic
+x 47
+y 48
 end
 arch cobblestones2
 x 47
 y 48
+end
+arch dungeon_magic
+x 47
+y 49
 end
 arch cobblestones2
 x 47
@@ -12145,21 +12701,41 @@ arch cwall_2_1_2
 x 48
 y 37
 end
+arch dungeon_magic
+x 48
+y 38
+end
 arch cobblestones2
 x 48
 y 38
 end
-arch grass
+arch dungeon_magic
 x 48
 y 39
 end
 arch grass
 x 48
+y 39
+end
+arch dungeon_magic
+x 48
 y 40
+end
+arch grass
+x 48
+y 40
+end
+arch dungeon_magic
+x 48
+y 41
 end
 arch cobblestones2
 x 48
 y 41
+end
+arch dungeon_magic
+x 48
+y 42
 end
 arch grass
 x 48
@@ -12172,17 +12748,33 @@ sp 4
 x 48
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 48
 y 43
 end
 arch cobblestones2
 x 48
+y 43
+end
+arch dungeon_magic
+x 48
 y 44
+end
+arch cobblestones2
+x 48
+y 44
+end
+arch dungeon_magic
+x 48
+y 45
 end
 arch cobblestones
 x 48
 y 45
+end
+arch dungeon_magic
+x 48
+y 46
 end
 arch cobblestones
 x 48
@@ -12192,10 +12784,13 @@ arch sign
 name Welcome to Navar City
 msg
 Welcome to the city of Navar!
-Eventually all of the buildings will be
-open, but please give me some time.
+
+Magic is supressed in public streets 
+by order of the city council.
+
 Dungeons open: Warehouses
-Even more houses                  Frolicing Mermaid
+Even more houses                  
+Frolicing Mermaid
 All Shops
 Gunther's smithy
 Lighthouse
@@ -12210,13 +12805,25 @@ name_pl Welcome to Navar City
 x 48
 y 46
 end
+arch dungeon_magic
+x 48
+y 47
+end
 arch cobblestones
 x 48
 y 47
 end
+arch dungeon_magic
+x 48
+y 48
+end
 arch cobblestones2
 x 48
 y 48
+end
+arch dungeon_magic
+x 48
+y 49
 end
 arch cobblestones2
 x 48
@@ -12414,21 +13021,41 @@ arch cwall_2_1_2
 x 49
 y 37
 end
+arch dungeon_magic
+x 49
+y 38
+end
 arch cobblestones2
 x 49
 y 38
 end
-arch grass
+arch dungeon_magic
 x 49
 y 39
 end
 arch grass
 x 49
+y 39
+end
+arch dungeon_magic
+x 49
 y 40
+end
+arch grass
+x 49
+y 40
+end
+arch dungeon_magic
+x 49
+y 41
 end
 arch cobblestones2
 x 49
 y 41
+end
+arch dungeon_magic
+x 49
+y 42
 end
 arch grass
 x 49
@@ -12441,29 +13068,57 @@ sp 3
 x 49
 y 42
 end
-arch cobblestones2
+arch dungeon_magic
 x 49
 y 43
 end
 arch cobblestones2
 x 49
+y 43
+end
+arch dungeon_magic
+x 49
 y 44
 end
-arch cobblestones
+arch cobblestones2
+x 49
+y 44
+end
+arch dungeon_magic
 x 49
 y 45
 end
 arch cobblestones
 x 49
+y 45
+end
+arch dungeon_magic
+x 49
 y 46
+end
+arch cobblestones
+x 49
+y 46
+end
+arch dungeon_magic
+x 49
+y 47
 end
 arch cobblestones
 x 49
 y 47
 end
+arch dungeon_magic
+x 49
+y 48
+end
 arch cobblestones2
 x 49
 y 48
+end
+arch dungeon_magic
+x 49
+y 49
 end
 arch cobblestones2
 x 49
