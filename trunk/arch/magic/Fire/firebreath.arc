@@ -1,6 +1,9 @@
 Object firebreath
 name fire
 type 88
+level 1
+walk_on 1
+fly_on 1
 face fireball.111
 color_fg red
 anim

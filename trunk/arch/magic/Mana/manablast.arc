@@ -1,6 +1,9 @@
 Object manablast
 name mana blast
 type 88
+level 1
+walk_on 1
+fly_on 1
 face destruction.111
 magicmap light_blue
 anim

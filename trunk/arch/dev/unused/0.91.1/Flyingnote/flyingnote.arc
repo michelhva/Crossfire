@@ -1,6 +1,9 @@
 Object flying_note
 name music
 type 88
+level 1
+walk_on 1
+fly_on 1
 face flyingnote.111
 anim
 flyingnote.111

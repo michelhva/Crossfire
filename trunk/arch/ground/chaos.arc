@@ -1,5 +1,7 @@
 Object chaos
 type 88
+walk_on 1
+level 1
 wc -30
 lifesave 1
 name chaos
@@ -27,6 +29,8 @@ is_floor 1
 end
 Object major_chaos
 type 88
+walk_on 1
+level 1
 wc -30
 lifesave 1
 name chaos

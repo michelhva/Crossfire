@@ -1,6 +1,7 @@
 Object flowers
 name flower
 type 88
+level 1
 face flowers.111
 material 32
 speed 0.5

@@ -1,5 +1,8 @@
 Object slow
 type 88
+level 1
+walk_on 1
+fly_on 1
 face slow.111
 anim
 slow.111

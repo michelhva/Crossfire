@@ -1,6 +1,9 @@
 Object counterspell
 name counterspell
 type 88
+level 1
+walk_on 1
+fly_on 1
 face counterspell.111
 hp 8
 color_fg light_blue

@@ -1,6 +1,9 @@
 Object shockwave
 name shockwave
 type 88
+level 1
+walk_on 1
+fly_on 1
 face explosion.111
 anim
 explosion.111

@@ -1,6 +1,9 @@
 Object holy_word
 name fear
 type 88
+level 1
+walk_on 1
+fly_on 1
 slaying undead,demon
 face turnundead.111
 anim

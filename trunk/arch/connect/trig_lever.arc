@@ -6,9 +6,9 @@ no_pick 1
 anim
 handle.111
 handle.112
-handle.111
 mina
-speed 0.2
+is_animated 0
+exp 30
 editable 48
 visibility 50
 end

@@ -1,5 +1,46 @@
 Changes for CVS top of tree:
 
+--- BEGIN apply() cleanup patch --- Jan Echternach 5/26/2000
+
+Added level 1 to all archetypes with type 88 (CONE) that can do damage.
+
+ground/chaos.arc, arch chaos and arch major_chaos
+ground/lava.arc, arch lava and arch permanent_lava
+Added walk_on 1.
+
+ground/chaos_ball.arc, arch chaos_ball
+magic/banishment.arc, arch banishment
+magic/colorspray.arc, arch color_spray
+magic/counterspell.arc, arch counterspell
+magic/face_of_death.arc, arch face_of_death
+magic/shockwave.arc, arch shockwave
+dev/unused/0.91.1/Flyingnote/flyingnote.arc, arch flyingnote
+magic/Cold/icestorm.arc, arch icestorm
+magic/Fire/firebreath.arc, arch firebreath
+magic/Effect/confuse.arc, arch confuse
+magic/Effect/fear.arc, arch fear
+magic/Effect/holy_word.arc, arch holy_word
+magic/Effect/paralyze.arc, arch paralyze
+magic/Effect/slow.arc, arch slow
+magic/Effect/turnundead.arc, arch turn_undead
+magic/Mana/manablast.arc, arch manablast
+Added walk_on 1 and fly_on 1.
+
+connect/trig_altar.arc
+connect/trig_lever.arc
+connect/trig_pedes.arc
+Changes to support bug fixes for trigger types:  Replace speed with exp.
+Set is_animated 0.  Remove last face from animation sequence.
+
+connect/trig_altar.arc
+Bugfix:  Faces where swapped.
+
+connect/trig_button.arc, arch button_trigger
+New archetype.
+
+--- END apply() cleanup patch --- Jan Echternach 5/26/2000
+
+
 Added level 1 to all archetypes with type 5 (POTION), because these
 archetypes are spellcasters and therefore need a level.
 - Jan Echternach 5/24/2000
