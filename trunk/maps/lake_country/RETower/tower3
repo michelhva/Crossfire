@@ -5,8 +5,8 @@ Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Tue Apr  4 10:26:39 1995
 endmsg
-x 25
-y 25
+width 25
+height 25
 end
 arch gwall_2_2_2
 end
@@ -133,18 +133,18 @@ arch spectre
 name Fierce Spectre
 hp 1200
 exp 5000
+carrying 200
 x 1
 y 6
-carrying 200
 arch key2
 name A pinch of magical dust, kinda different
-slaying 24
 face paralyse.111
+slaying 24
 end
 arch key2
 name dust of the Fierce Spectre
-slaying 301
 face enchantment.111
+slaying 301
 end
 end
 arch afloor_right
@@ -152,17 +152,17 @@ x 1
 y 7
 end
 arch locked_door1
+msg
+The wall refuse to admit you in.
+endmsg
 slaying 24
-msg
-The wall refuse to admit you in.
-endmsg
 x 1
 y 7
 end
 arch gwall_2_1_2
+no_pass 0
 x 1
 y 7
-no_pass 0
 end
 arch magic_banned
 x 1
@@ -185,9 +185,9 @@ x 1
 y 9
 end
 arch waybread
-x 1
-y 9
 nrof 2
+x 1
+y 9
 end
 arch magic_banned
 x 1
@@ -198,9 +198,9 @@ x 1
 y 10
 end
 arch waybread
+nrof 3
 x 1
 y 10
-nrof 3
 end
 arch afloor_right
 x 1
@@ -247,17 +247,17 @@ x 1
 y 16
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 1
 y 16
 end
 arch gwall_2_1_2
+no_pass 0
 x 1
 y 16
-no_pass 0
 end
 arch afloor_right
 x 1
@@ -280,17 +280,17 @@ x 1
 y 19
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 1
 y 19
 end
 arch gwall_2_1_2
+no_pass 0
 x 1
 y 19
-no_pass 0
 end
 arch afloor_right
 x 1
@@ -392,9 +392,9 @@ x 2
 y 8
 end
 arch gem
+nrof 10
 x 2
 y 8
-nrof 10
 end
 arch magic_banned
 x 2
@@ -405,9 +405,9 @@ x 2
 y 9
 end
 arch pearl
+nrof 30
 x 2
 y 9
-nrof 30
 end
 arch magic_banned
 x 2
@@ -418,9 +418,9 @@ x 2
 y 10
 end
 arch ruby
+nrof 20
 x 2
 y 10
-nrof 20
 end
 arch afloor_right
 x 2
@@ -475,17 +475,17 @@ x 2
 y 17
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 2
 y 17
 end
 arch gwall_2_1_1
+no_pass 0
 x 2
 y 17
-no_pass 0
 end
 arch afloor_right
 x 2
@@ -744,17 +744,17 @@ x 4
 y 1
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 4
 y 1
 end
 arch gwall_2_1_1
+no_pass 0
 x 4
 y 1
-no_pass 0
 end
 arch afloor_right
 x 4
@@ -881,17 +881,17 @@ x 4
 y 13
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 4
 y 13
 end
 arch gwall_2_1_2
+no_pass 0
 x 4
 y 13
-no_pass 0
 end
 arch afloor_right
 x 4
@@ -1085,9 +1085,9 @@ x 5
 y 10
 end
 arch chest_2
+carrying 1500
 x 5
 y 10
-carrying 1500
 arch potiondex
 end
 end
@@ -1180,17 +1180,17 @@ x 5
 y 23
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 5
 y 23
 end
 arch gwall_2_1_1
+no_pass 0
 x 5
 y 23
-no_pass 0
 end
 arch gwall_3_1
 x 5
@@ -1303,13 +1303,13 @@ arch wraith
 name a darker wraith
 hp 100
 exp 500
+carrying 1040
 x 6
 y 14
-carrying 1040
 arch key2
 name glowing magical dust
-slaying 23
 face paralyse.111
+slaying 23
 nrof 10
 end
 arch ring_nodrain
@@ -1320,17 +1320,17 @@ x 6
 y 15
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 6
 y 15
 end
 arch gwall_2_1_2
+no_pass 0
 x 6
 y 15
-no_pass 0
 end
 arch afloor_right
 x 6
@@ -1456,17 +1456,17 @@ x 7
 y 7
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 7
 y 7
 end
 arch gwall_2_1_2
+no_pass 0
 x 7
 y 7
-no_pass 0
 end
 arch afloor_right
 x 7
@@ -1685,11 +1685,11 @@ y 13
 end
 arch key2
 name glowing magical dust
-slaying 23
 face paralyse.111
+slaying 23
+nrof 10
 x 8
 y 13
-nrof 10
 end
 arch gwall_2_1_2
 x 8
@@ -1787,17 +1787,17 @@ x 9
 y 2
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 9
 y 2
 end
 arch gwall_2_1_2
+no_pass 0
 x 9
 y 2
-no_pass 0
 end
 arch afloor_right
 x 9
@@ -1812,17 +1812,17 @@ x 9
 y 4
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 9
 y 4
 end
 arch gwall_2_1_2
+no_pass 0
 x 9
 y 4
-no_pass 0
 end
 arch afloor_right
 x 9
@@ -1845,17 +1845,17 @@ x 9
 y 7
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 9
 y 7
 end
 arch gwall_2_1_2
+no_pass 0
 x 9
 y 7
-no_pass 0
 end
 arch afloor_right
 x 9
@@ -1926,17 +1926,17 @@ x 9
 y 18
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 9
 y 18
 end
 arch gwall_2_1_2
+no_pass 0
 x 9
 y 18
-no_pass 0
 end
 arch afloor_right
 x 9
@@ -2054,17 +2054,17 @@ x 10
 y 9
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 10
 y 9
 end
 arch gwall_2_1_1
+no_pass 0
 x 10
 y 9
-no_pass 0
 end
 arch gwall_3_2
 x 10
@@ -2079,20 +2079,20 @@ x 10
 y 12
 end
 arch block_door_closed
-x 10
-y 12
 speed 0.500000
 connected 1
+x 10
+y 12
 end
 arch afloor_right
 x 10
 y 13
 end
 arch block_door_closed
-x 10
-y 13
 speed 0.500000
 connected 1
+x 10
+y 13
 end
 arch gwall_2_2_3
 x 10
@@ -2131,17 +2131,17 @@ x 10
 y 19
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 10
 y 19
 end
 arch gwall_2_1_1
+no_pass 0
 x 10
 y 19
-no_pass 0
 end
 arch afloor_right
 x 10
@@ -2285,9 +2285,9 @@ arch altar
 name money altar
 slaying platinum coin
 food 250
+connected 1
 x 11
 y 12
-connected 1
 end
 arch magic_mouth
 msg
@@ -2304,9 +2304,9 @@ arch altar
 name diamond altar
 slaying diamond
 food 30
+connected 1
 x 11
 y 13
-connected 1
 end
 arch afloor_right
 x 11
@@ -2376,17 +2376,17 @@ x 11
 y 22
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 11
 y 22
 end
 arch gwall_2_1_2
+no_pass 0
 x 11
 y 22
-no_pass 0
 end
 arch afloor_right
 x 11
@@ -2448,17 +2448,17 @@ x 12
 y 6
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 12
 y 6
 end
 arch gwall_2_1_1
+no_pass 0
 x 12
 y 6
-no_pass 0
 end
 arch afloor_right
 x 12
@@ -2710,15 +2710,17 @@ x 13
 y 15
 end
 arch locked_door1
-slaying 301
 msg
 The dark panther pushes you back.
 endmsg
+slaying 301
 x 13
 y 15
 end
 arch statue
 name Dark panther
+face panther.131
+no_pass 0
 @match push|how|get
 If you have the dust I requested, I
 won't push you back.
@@ -2737,10 +2739,8 @@ I will give you a prize.
 @match *
 Hello. Finish the training and you may
 get a prize
-face panther.111
 x 13
 y 15
-no_pass 0
 end
 arch afloor_right
 x 13
@@ -2752,12 +2752,12 @@ y 16
 end
 arch sting
 name Undead Banisher
-slaying undead
 msg
 The Banisher glows with fierce bright
-light. 
+light.
 You feel its hunger for power.
 endmsg
+slaying undead
 x 13
 y 16
 end
@@ -3130,17 +3130,17 @@ x 15
 y 19
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 15
 y 19
 end
 arch gwall_2_1_2
+no_pass 0
 x 15
 y 19
-no_pass 0
 end
 arch afloor_right
 x 15
@@ -3226,17 +3226,17 @@ x 16
 y 6
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 16
 y 6
 end
 arch gwall_2_1_1
+no_pass 0
 x 16
 y 6
-no_pass 0
 end
 arch afloor_right
 x 16
@@ -3259,17 +3259,17 @@ x 16
 y 9
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 16
 y 9
 end
 arch gwall_2_1_2
+no_pass 0
 x 16
 y 9
-no_pass 0
 end
 arch afloor_right
 x 16
@@ -3324,17 +3324,17 @@ x 16
 y 16
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 16
 y 16
 end
 arch gwall_2_1_1
+no_pass 0
 x 16
 y 16
-no_pass 0
 end
 arch afloor_right
 x 16
@@ -3463,17 +3463,17 @@ x 17
 y 8
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 17
 y 8
 end
 arch gwall_2_1_1
+no_pass 0
 x 17
 y 8
-no_pass 0
 end
 arch afloor_right
 x 17
@@ -3726,17 +3726,17 @@ x 18
 y 4
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 18
 y 4
 end
 arch gwall_2_1_2
+no_pass 0
 x 18
 y 4
-no_pass 0
 end
 arch afloor_right
 x 18
@@ -3902,17 +3902,17 @@ x 19
 y 1
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 19
 y 1
 end
 arch gwall_2_1_1
+no_pass 0
 x 19
 y 1
-no_pass 0
 end
 arch afloor_right
 x 19
@@ -3967,17 +3967,17 @@ x 19
 y 8
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 19
 y 8
 end
 arch gwall_2_1_1
+no_pass 0
 x 19
 y 8
-no_pass 0
 end
 arch afloor_right
 x 19
@@ -4048,17 +4048,17 @@ x 19
 y 17
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 19
 y 17
 end
 arch gwall_2_1_1
+no_pass 0
 x 19
 y 17
-no_pass 0
 end
 arch afloor_right
 x 19
@@ -4367,17 +4367,17 @@ x 21
 y 8
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 21
 y 8
 end
 arch gwall_3_2
+no_pass 0
 x 21
 y 8
-no_pass 0
 end
 arch afloor_right
 x 21
@@ -4498,13 +4498,13 @@ end
 arch grimreaper
 name mean grimreaper
 hp 150
+carrying 700
 x 21
 y 23
-carrying 700
 arch key2
 name glowing magical dust
-slaying 23
 face paralyse.111
+slaying 23
 nrof 7
 end
 end
@@ -4576,17 +4576,17 @@ x 22
 y 8
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 22
 y 8
 end
 arch gwall_3_4
+no_pass 0
 x 22
 y 8
-no_pass 0
 end
 arch afloor_right
 x 22
@@ -4768,32 +4768,32 @@ x 23
 y 7
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 23
 y 7
 end
 arch gwall_2_1_2
+no_pass 0
 x 23
 y 7
-no_pass 0
 end
 arch afloor_right
 x 23
 y 8
 end
 arch vampire
-name old vampire 
+name old vampire
 hp 350
+carrying 1000
 x 23
 y 8
-carrying 1000
 arch key2
 name glowing magical dust
-slaying 23
 face paralyse.111
+slaying 23
 nrof 10
 end
 end
@@ -4850,17 +4850,17 @@ x 23
 y 15
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 23
 y 15
 end
 arch gwall_2_1_2
+no_pass 0
 x 23
 y 15
-no_pass 0
 end
 arch afloor_right
 x 23
@@ -4907,17 +4907,17 @@ x 23
 y 21
 end
 arch locked_door1
-slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
+slaying 23
 x 23
 y 21
 end
 arch gwall_2_1_2
+no_pass 0
 x 23
 y 21
-no_pass 0
 end
 arch afloor_right
 x 23

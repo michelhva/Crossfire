@@ -2907,8 +2907,7 @@ elevation 1164
 x 11
 y 36
 end
-arch grass
-elevation 42
+arch beach
 x 11
 y 37
 end
@@ -3155,8 +3154,7 @@ arch woods_3
 x 12
 y 36
 end
-arch grass
-elevation 430
+arch beach
 x 12
 y 37
 end
@@ -3690,11 +3688,14 @@ arch jungle_2
 x 14
 y 33
 end
-arch grass
+arch shallow_sea
+no_pass 0
 x 14
 y 36
 end
-arch river_sw-ne_u
+arch mover_3
+attacktype 1
+level 1
 x 14
 y 36
 end
@@ -3702,6 +3703,11 @@ arch shallow_sea
 x 14
 y 37
 end
+arch shallow_sea
+no_pass 0
+x 14
+y 38
+end
 arch mover_5
 level 1
 attacktype 1
@@ -3709,8 +3715,9 @@ x 14
 y 38
 end
 arch shallow_sea
+no_pass 0
 x 14
-y 38
+y 39
 end
 arch mover_5
 level 1
@@ -3719,16 +3726,13 @@ x 14
 y 39
 end
 arch shallow_sea
-x 14
-y 39
-end
-arch mover_5
-level 1
-attacktype 1
+no_pass 0
 x 14
 y 40
 end
-arch shallow_sea
+arch mover_5
+level 1
+attacktype 1
 x 14
 y 40
 end
@@ -4011,17 +4015,19 @@ arch rcrook_ns-se
 x 15
 y 35
 end
-arch mover_5
-level 1
-attacktype 1
-x 15
-y 36
-end
-arch grass
+arch shallow_sea
+no_pass 0
 x 15
 y 36
 end
 arch rjunct_ns-sw
+no_pass 0
+x 15
+y 36
+end
+arch mover_5
+level 1
+attacktype 1
 x 15
 y 36
 end
@@ -4032,21 +4038,14 @@ endmsg
 x 15
 y 37
 end
-arch grass
+arch shallow_sea
+no_pass 0
 x 15
 y 37
 end
 arch mover_6
 level 1
 attacktype 1
-x 15
-y 37
-end
-arch river_sw-n
-x 15
-y 37
-end
-arch rjunct_ns-nw
 x 15
 y 37
 end
@@ -4292,7 +4291,8 @@ arch rjunct_ns-se
 x 16
 y 36
 end
-arch grass
+arch shallow_sea
+no_pass 0
 x 16
 y 37
 end
@@ -4580,15 +4580,12 @@ arch river_nw-se_u
 x 17
 y 36
 end
-arch grass
+arch shallow_sea
+no_pass 0
 x 17
 y 37
 end
 arch river_nw-s
-x 17
-y 37
-end
-arch river_nw-se
 x 17
 y 37
 end
@@ -4609,6 +4606,20 @@ x 17
 y 41
 end
 arch shallow_sea
+no_pass 0
+x 17
+y 42
+end
+arch mover_3
+attacktype 1
+level 1
+x 17
+y 42
+end
+arch magic_mouth
+msg
+You are taken by a strong current
+endmsg
 x 17
 y 42
 end
@@ -4857,11 +4868,7 @@ arch grass
 x 18
 y 36
 end
-arch grass
-x 18
-y 37
-end
-arch river_nw-se_u
+arch beach
 x 18
 y 37
 end
@@ -4878,10 +4885,18 @@ x 18
 y 40
 end
 arch shallow_sea
+no_pass 0
 x 18
 y 41
 end
 arch shallow_sea
+no_pass 0
+x 18
+y 42
+end
+arch mover_2
+attacktype 1
+level 1
 x 18
 y 42
 end
@@ -5145,11 +5160,11 @@ arch woods
 x 19
 y 36
 end
-arch grass
+arch beach
 x 19
 y 37
 end
-arch grass
+arch beach
 x 19
 y 38
 end
@@ -5162,6 +5177,13 @@ x 19
 y 40
 end
 arch shallow_sea
+no_pass 0
+x 19
+y 41
+end
+arch mover_3
+attacktype 1
+level 1
 x 19
 y 41
 end
@@ -5419,6 +5441,13 @@ x 20
 y 40
 end
 arch shallow_sea
+no_pass 0
+x 20
+y 41
+end
+arch mover_3
+attacktype 1
+level 1
 x 20
 y 41
 end
@@ -5688,7 +5717,21 @@ arch shallow_sea
 x 21
 y 40
 end
+arch magic_mouth
+msg
+The current pushes you ashore
+endmsg
+x 21
+y 41
+end
 arch shallow_sea
+no_pass 0
+x 21
+y 41
+end
+arch mover_3
+attacktype 1
+level 1
 x 21
 y 41
 end

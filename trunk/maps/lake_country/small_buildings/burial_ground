@@ -5,31 +5,57 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 20 08:27:08 1995
 endmsg
-x 8
-y 8
+width 8
+height 8
+end
+arch dungeon_floor
 end
 arch flagstone_2_2_2
+end
+arch dungeon_floor
+y 1
 end
 arch flagstone_2_1_1
 y 1
 end
+arch dungeon_floor
+y 2
+end
 arch flagstone_2_1_1
 y 2
+end
+arch dungeon_floor
+y 3
 end
 arch flagstone_2_1_1
 y 3
 end
+arch dungeon_floor
+y 4
+end
 arch flagstone_2_1_1
 y 4
+end
+arch dungeon_floor
+y 5
 end
 arch flagstone_2_1_1
 y 5
 end
+arch dungeon_floor
+y 6
+end
 arch flagstone_2_1_1
 y 6
 end
-arch flagstone_1_1
+arch dungeon_floor
 y 7
+end
+arch flagstone_2_2_1
+y 7
+end
+arch dungeon_floor
+x 1
 end
 arch flagstone_2_1_2
 x 1
@@ -80,33 +106,37 @@ name Ragnarok's gravestone
 msg
 I wish to see Morrigan once more
 endmsg
+material 2
 x 1
 y 1
-material 2
 end
 arch magic_ear
 msg
 @match Ragnarok
 You feel hopeful.
 endmsg
+connected 1
 x 1
 y 1
-connected 1
 end
 arch teleporter
 name An image of a ghost
-slaying /world/world_109_126
+face ghost.111
 msg
 @match *
 "Tell me my name .. Who am I?"
 endmsg
-face ghost.111
+slaying /world/world_109_126
 hp 18
 sp 22
-x 1
-y 1
 speed 0.000000
 connected 1
+x 1
+y 1
+end
+arch dungeon_floor
+x 1
+y 2
 end
 arch dungeon_magic
 x 1
@@ -184,9 +214,9 @@ x 1
 y 3
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 1
 y 3
-speed_left -297.100006
 end
 arch gravestone
 x 1
@@ -327,9 +357,9 @@ x 1
 y 5
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 1
 y 5
-speed_left -297.100006
 end
 arch gravestone
 name Unmoving ghost
@@ -418,9 +448,16 @@ endmsg
 x 1
 y 6
 end
+arch dungeon_floor
+x 1
+y 7
+end
 arch flagstone_2_1_2
 x 1
 y 7
+end
+arch dungeon_floor
+x 2
 end
 arch flagstone_2_1_2
 x 2
@@ -731,12 +768,12 @@ exp 200000
 dam 30
 wc -20
 ac -20
-x 2
-y 5
 level 100
 immune 28
 attacktype 285
 carrying 7500
+x 2
+y 5
 arch staff
 name Staff
 sp 35
@@ -831,17 +868,24 @@ x 2
 y 6
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 2
 y 6
-speed_left -297.100006
 end
 arch gravestone
 x 2
 y 6
 end
+arch dungeon_floor
+x 2
+y 7
+end
 arch flagstone_2_1_2
 x 2
 y 7
+end
+arch dungeon_floor
+x 3
 end
 arch flagstone_2_1_2
 x 3
@@ -912,9 +956,9 @@ x 3
 y 1
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 3
 y 1
-speed_left -297.100006
 end
 arch gravestone
 x 3
@@ -1233,9 +1277,16 @@ arch gravestone
 x 3
 y 6
 end
+arch dungeon_floor
+x 3
+y 7
+end
 arch flagstone_2_1_2
 x 3
 y 7
+end
+arch dungeon_floor
+x 4
 end
 arch flagstone_2_1_2
 x 4
@@ -1612,17 +1663,24 @@ x 4
 y 6
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 4
 y 6
-speed_left -297.100006
 end
 arch gravestone
 x 4
 y 6
 end
+arch dungeon_floor
+x 4
+y 7
+end
 arch flagstone_2_1_2
 x 4
 y 7
+end
+arch dungeon_floor
+x 5
 end
 arch flagstone_2_1_2
 x 5
@@ -1693,9 +1751,9 @@ x 5
 y 1
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 5
 y 1
-speed_left -297.100006
 end
 arch gravestone
 x 5
@@ -1754,11 +1812,11 @@ arch lich
 name Igor, the Lich
 hp 3000
 wc -12
-x 5
-y 2
 speed 2.000000
 level 30
 flying 1
+x 5
+y 2
 end
 arch magic_mouth
 name howling voice
@@ -2018,9 +2076,16 @@ face ghast.111
 x 5
 y 6
 end
+arch dungeon_floor
+x 5
+y 7
+end
 arch flagstone_2_1_2
 x 5
 y 7
+end
+arch dungeon_floor
+x 6
 end
 arch flagstone_2_1_2
 x 6
@@ -2068,9 +2133,9 @@ msg
 @match Ragnarok
 You feel hopeful.
 endmsg
+connected 1
 x 6
 y 1
-connected 1
 end
 arch dungeon_floor
 x 6
@@ -2175,9 +2240,9 @@ x 6
 y 2
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 6
 y 2
-speed_left -297.100006
 end
 arch gravestone
 x 6
@@ -2318,9 +2383,9 @@ x 6
 y 4
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 6
 y 4
-speed_left -297.100006
 end
 arch gravestone
 x 6
@@ -2463,9 +2528,9 @@ x 6
 y 6
 end
 arch rune_ball_lightning
+speed_left -297.100006
 x 6
 y 6
-speed_left -297.100006
 end
 arch gravestone
 name Bear's gravestone
@@ -2475,36 +2540,71 @@ endmsg
 x 6
 y 6
 end
+arch dungeon_floor
+x 6
+y 7
+end
 arch flagstone_2_1_2
 x 6
 y 7
 end
+arch dungeon_floor
+x 7
+end
 arch flagstone_2_2_3
 x 7
 end
-arch flagstone_2_1_1
+arch dungeon_floor
 x 7
 y 1
 end
 arch flagstone_2_1_1
 x 7
+y 1
+end
+arch dungeon_floor
+x 7
 y 2
 end
 arch flagstone_2_1_1
+x 7
+y 2
+end
+arch dungeon_floor
 x 7
 y 3
 end
 arch flagstone_2_1_1
 x 7
+y 3
+end
+arch dungeon_floor
+x 7
 y 4
 end
 arch flagstone_2_1_1
+x 7
+y 4
+end
+arch dungeon_floor
 x 7
 y 5
 end
 arch flagstone_2_1_1
 x 7
+y 5
+end
+arch dungeon_floor
+x 7
 y 6
+end
+arch flagstone_2_1_1
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
 end
 arch flagstone_2_2_4
 x 7
