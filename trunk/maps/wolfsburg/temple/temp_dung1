@@ -10308,12 +10308,6 @@ endmsg
 x 43
 y 15
 end
-More
-arch sphinx_2
-hp 300
-x 44
-y 15
-end
 arch ent
 msg
 @match hi|hello|Hi|Hello
@@ -10336,22 +10330,4 @@ Be careful of my roots, sapling.
 endmsg
 x 43
 y 31
-end
-More
-arch ent_2
-hp 500
-x 44
-y 31
-end
-More
-arch ent_3
-hp 500
-x 43
-y 32
-end
-More
-arch ent_4
-hp 500
-x 44
-y 32
 end
