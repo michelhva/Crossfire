@@ -39,7 +39,7 @@ weight 70000
 food 999
 speed 1
 attacktype 1
-color_fg light_blue
+color_fg red
 can_use_shield 0
 can_use_armour 0
 can_use_weapon 0
