@@ -18,7 +18,8 @@ alive 1
 attacktype 16384
 path_attuned 1025
 path_denied 393216
-resist_confusion 100
+resist_confusion 20
+resist_blind 100
 resist_fear 100
 ac -7
 wc -1
