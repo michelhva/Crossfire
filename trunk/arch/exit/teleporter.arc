@@ -3,6 +3,8 @@ face teleporter.111
 color_fg red
 speed 0.1
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 anim
 teleporter.111

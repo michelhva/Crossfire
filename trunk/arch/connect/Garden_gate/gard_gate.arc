@@ -1,6 +1,8 @@
 Object ggate_open
 name garden gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gard_gate.114
 anim
@@ -23,6 +25,8 @@ end
 Object ggate_closed
 name garden gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gard_gate.111
 anim

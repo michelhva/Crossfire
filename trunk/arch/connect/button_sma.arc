@@ -1,6 +1,8 @@
 Object button_small
 name small button
 type 92
+activate_on_push 1
+activate_on_release 1
 face button_sma.111
 anim
 button_sma.111

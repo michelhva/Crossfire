@@ -4,6 +4,8 @@ face pentagram.111
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 visibility 50
@@ -15,6 +17,8 @@ face pentagram.112
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 x 1
@@ -27,6 +31,8 @@ face pentagram.113
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 x 2
@@ -39,6 +45,8 @@ face pentagram.121
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 y 1
@@ -51,6 +59,8 @@ face pentagram.122
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 y 1
@@ -64,6 +74,8 @@ face pentagram.123
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 y 1
@@ -77,6 +89,8 @@ face pentagram.131
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 y 2
@@ -90,6 +104,8 @@ x 1
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 y 2
@@ -102,6 +118,8 @@ face pentagram.133
 color_fg black
 speed 0
 type 41
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 editable 50
 x 2

@@ -2,6 +2,8 @@ Object button_plate
 name large button
 type 92
 face button_big.111
+activate_on_push 1
+activate_on_release 1
 anim
 button_big.111
 button_big.112

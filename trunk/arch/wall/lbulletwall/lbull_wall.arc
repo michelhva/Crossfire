@@ -2,6 +2,8 @@ Object lbulletwall
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.101
 anim
@@ -28,6 +30,8 @@ Object lbulletwall_1
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.111
 color_bg yellow
@@ -44,6 +48,8 @@ Object lbulletwall_2
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.121
 color_bg yellow
@@ -60,6 +66,8 @@ Object lbulletwall_3
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.131
 color_bg yellow
@@ -76,6 +84,8 @@ Object lbulletwall_4
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.141
 color_bg yellow
@@ -92,6 +102,8 @@ Object lbulletwall_5
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.151
 color_bg yellow
@@ -108,6 +120,8 @@ Object lbulletwall_6
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.161
 color_bg yellow
@@ -124,6 +138,8 @@ Object lbulletwall_7
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.171
 color_bg yellow
@@ -140,6 +156,8 @@ Object lbulletwall_8
 other_arch lbullet
 name large bulletwall
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face lbull_wall.181
 color_bg yellow

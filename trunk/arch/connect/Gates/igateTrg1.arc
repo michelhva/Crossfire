@@ -1,6 +1,8 @@
 Object igateTrg1
 name iron gate
 type 26
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face iron_gate1.118
 anim

@@ -1,6 +1,8 @@
 Object igate_closed_1
 name iron gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face iron_gate1.118
 anim
@@ -28,6 +30,8 @@ end
 Object igate_closed_2
 name iron gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face iron_gate2.116
 anim
@@ -53,6 +57,8 @@ end
 Object igate_open_1
 name iron gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 damned 1
 no_magic 1
@@ -78,6 +84,8 @@ end
 Object igate_open_2
 name iron gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 damned 1
 no_magic 1

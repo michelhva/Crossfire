@@ -1,6 +1,8 @@
 Object stwall_closed_1
 name stone wall
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face stwallsec.118
 anim
@@ -28,6 +30,8 @@ end
 Object stwall_open_1
 name stone wall
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 damned 1
 no_magic 1

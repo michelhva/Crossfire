@@ -2,6 +2,8 @@ Object cannon
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -14,6 +16,8 @@ Object cannon_1
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -27,6 +31,8 @@ Object cannon_2
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -40,6 +46,8 @@ Object cannon_3
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -54,6 +62,8 @@ other_arch shell
 name cannon
 type 62
 level 1
+activate_on_push 1
+activate_on_release 1
 face cannon_0.111
 color_fg brown
 sp 4
@@ -66,6 +76,8 @@ Object cannon_5
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -79,6 +91,8 @@ Object cannon_6
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown
@@ -92,6 +106,8 @@ Object cannon_7
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_7.111
 color_fg brown
@@ -105,6 +121,8 @@ Object cannon_8
 other_arch shell
 name cannon
 type 62
+activate_on_push 1
+activate_on_release 1
 level 1
 face cannon_0.111
 color_fg brown

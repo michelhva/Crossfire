@@ -1,6 +1,8 @@
 Object gate_open_1
 name gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gate_1.111
 anim
@@ -23,6 +25,8 @@ end
 Object gate_closed_1
 name gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gate_1.117
 anim
@@ -47,6 +51,8 @@ end
 Object gate_open_2
 name gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gate_2.111
 anim
@@ -70,6 +76,8 @@ end
 Object gate_closed_2
 name gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face gate_2.115
 anim

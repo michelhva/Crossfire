@@ -1,6 +1,8 @@
 Object pit_closed
 name pit
 type 94
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face hole.11A
 anim
@@ -25,6 +27,8 @@ end
 Object pit_open
 name pit
 type 94
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face hole.111
 anim

@@ -1,6 +1,8 @@
 Object grate_open_1
 name grate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face grate_1.111
 anim
@@ -25,6 +27,8 @@ end
 Object grate_closed_1
 name grate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face grate_1.118
 anim
@@ -51,6 +55,8 @@ end
 Object grate_open_2
 name iron gate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face grate_2.111
 anim
@@ -75,6 +81,8 @@ end
 Object grate_closed_2
 name grate
 type 91
+activate_on_push 1
+activate_on_release 1
 no_pick 1
 face grate_2.118
 anim
