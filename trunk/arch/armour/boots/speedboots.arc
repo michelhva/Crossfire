@@ -1,7 +1,7 @@
 Object speedboots
 name speed boots
 nrof 1
-exp 5
+exp 6
 face speedboots.111
 anim
 speedboots.111
