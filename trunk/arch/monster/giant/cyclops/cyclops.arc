@@ -28,8 +28,8 @@ resist_acid 50
 resist_drain 50
 resist_slow 50
 resist_paralyze 50
-resist_godpower 50
-resist_holyword 50
+resist_godpower 75
+resist_holyword 85
 resist_confusion -100
 see_invisible 1
 exp 400000
