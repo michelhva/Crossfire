@@ -1,5 +1,4 @@
 arch map
-region navar
 name world_121_117
 msg
 
@@ -9398,7 +9397,11 @@ arch dungeon_magic
 x 36
 y 3
 end
-arch grass
+arch cobblestones2
+x 36
+y 3
+end
+arch fog
 x 36
 y 3
 end
@@ -9410,11 +9413,28 @@ arch grass
 x 36
 y 4
 end
+arch fog
+x 36
+y 4
+end
 arch dungeon_magic
 x 36
 y 5
 end
 arch grass
+x 36
+y 5
+end
+arch house_small
+name Zealot's House
+name_pl Zealot's House
+slaying /navar_city/mlab/tavern
+hp 1
+sp 70
+x 36
+y 5
+end
+arch fog
 x 36
 y 5
 end
@@ -9757,11 +9777,11 @@ arch dungeon_magic
 x 37
 y 3
 end
-arch grass
+arch cobblestones2
 x 37
 y 3
 end
-arch cobblestones2
+arch fog
 x 37
 y 3
 end
@@ -9773,7 +9793,16 @@ arch grass
 x 37
 y 4
 end
-arch cobblestones2
+arch tavern
+name Western Navar Tavern
+name_pl Western Scorn Tavern
+slaying /navar_city/mlab/tavern
+hp 26
+sp 1
+x 37
+y 4
+end
+arch fog
 x 37
 y 4
 end
@@ -9785,7 +9814,16 @@ arch grass
 x 37
 y 5
 end
-arch cobblestones2
+arch house_2
+name Run down house
+name_pl Run down house
+slaying /navar_city/mlab/tavern
+hp 39
+sp 76
+x 37
+y 5
+end
+arch fog
 x 37
 y 5
 end
@@ -10122,11 +10160,28 @@ arch cobblestones2
 x 38
 y 3
 end
+arch fog
+x 38
+y 3
+end
 arch dungeon_magic
 x 38
 y 4
 end
-arch cobblestones2
+arch grass
+x 38
+y 4
+end
+arch s_shop2
+name adobe house
+name_pl adobe house
+slaying /navar_city/mlab/tavern
+hp 78
+sp 2
+x 38
+y 4
+end
+arch fog
 x 38
 y 4
 end
@@ -10134,7 +10189,16 @@ arch dungeon_magic
 x 38
 y 5
 end
-arch cobblestones2
+arch grass
+x 38
+y 5
+end
+arch small_temple2
+name private house
+name_pl private house
+slaying /navar_city/mlab/tavern
+hp 80
+sp 76
 x 38
 y 5
 end
@@ -14093,17 +14157,14 @@ arch barrack_long
 x 36
 y 1
 end
-arch barrack_long
+arch wizard_tower
+name very tall tower
+name_pl very tall tower
+slaying /navar_city/mlab/tavern
+hp 1
+sp 20
 x 36
 y 3
-end
-arch barrack_long
-x 36
-y 4
-end
-arch barrack_long
-x 36
-y 5
 end
 arch prison
 slaying /navar_city/city1prison
