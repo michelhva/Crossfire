@@ -10,5 +10,6 @@ slow_move 5
 editable 8
 is_floor 1
 smoothlevel 74
+smoothface treed_hills.111 hills_S.111
 magicmap green
 end

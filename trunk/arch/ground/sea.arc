@@ -6,6 +6,10 @@ sea.112
 sea.113
 sea.114
 mina
+smoothface sea.111 sea_S.111
+smoothface sea.112 sea_S.112
+smoothface sea.113 sea_S.113
+smoothface sea.114 sea_S.114
 color_fg light_blue
 color_bg blue
 speed 0.2

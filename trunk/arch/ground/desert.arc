@@ -11,4 +11,5 @@ is_wooded 1
 is_floor 1
 smoothlevel 9
 editable 8
+smoothface desert.111 desert_S.111
 end

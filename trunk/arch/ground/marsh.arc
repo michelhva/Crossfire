@@ -12,4 +12,5 @@ is_wooded 1
 smoothlevel 7
 editable 8
 is_floor 1
+smoothface marsh.111 marsh_S.111
 end

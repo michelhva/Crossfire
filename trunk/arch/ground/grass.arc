@@ -23,4 +23,5 @@ slow_move 1
 is_wooded 1
 editable 8
 smoothlevel 10
+smoothface grass.111 grass_S.111
 end

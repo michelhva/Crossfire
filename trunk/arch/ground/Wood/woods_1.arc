@@ -9,5 +9,6 @@ slow_move 1
 is_wooded 1
 editable 8
 is_floor 1
+smoothface woods_1.111 grass_S.111
 smoothlevel 74
 end

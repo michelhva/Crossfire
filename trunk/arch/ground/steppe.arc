@@ -7,4 +7,5 @@ is_floor 1
 editable 8
 smoothlevel 5
 magicmap khaki
+smoothface steppe.111 steppe_S.111
 end

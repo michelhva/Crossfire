@@ -10,6 +10,7 @@ slow_move 5
 is_wooded 1
 blocksview 1
 smoothlevel 81
+smoothface jungle_2.111 empty_S.111
 editable 8
 is_floor 1
 end

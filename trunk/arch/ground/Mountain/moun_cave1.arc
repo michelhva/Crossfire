@@ -8,4 +8,5 @@ editable 2
 is_floor 1
 smoothlevel 50
 visibility 50
+smoothface moun_cave1.111 mountain_S.111
 end
