@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 27 12:56:00 1995
 endmsg
-x 24
-y 36
+width 24
+height 36
 end
 arch grass
 end
@@ -744,9 +744,9 @@ x 3
 y 4
 end
 arch guard
+speed_left -0.940000
 x 3
 y 4
-speed_left -0.940000
 end
 arch dungeon_floor
 x 3
@@ -757,9 +757,9 @@ x 3
 y 6
 end
 arch guard
+speed_left -0.940000
 x 3
 y 6
-speed_left -0.940000
 end
 arch grass
 x 3
@@ -932,9 +932,9 @@ x 4
 y 4
 end
 arch guard
+speed_left -0.940000
 x 4
 y 4
-speed_left -0.940000
 end
 arch dungeon_floor
 x 4
@@ -945,9 +945,9 @@ x 4
 y 6
 end
 arch guard
+speed_left -0.940000
 x 4
 y 6
-speed_left -0.940000
 end
 arch grass
 x 4
@@ -2286,9 +2286,9 @@ x 10
 y 6
 end
 arch light_guard
+speed_left -0.940000
 x 10
 y 6
-speed_left -0.940000
 end
 arch grass
 x 10
@@ -2827,14 +2827,14 @@ y 29
 end
 arch sign
 msg
-  Prepare enough platinum, rubies and
+Prepare enough platinum, rubies and
 diamonds. For you need these to gamble.
-Also prepare scrolls of recall to get 
+Also prepare scrolls of recall to get
 out of impasses otherwise you may die
 an agonizing death
-  On the first level, each altar takes
+On the first level, each altar takes
 100 platinum coins to operate.
-  On the second and first level, it
+On the second and first level, it
 takes a lot more. Luck are really hard
 to come by there, but rewards are huge.
 endmsg
@@ -3238,18 +3238,18 @@ x 14
 y 23
 end
 arch knight
+speed_left -1.500000
 x 14
 y 23
-speed_left -1.500000
 end
 arch grass
 x 14
 y 24
 end
 arch knight
+speed_left -1.500000
 x 14
 y 24
-speed_left -1.500000
 end
 arch grass
 x 14
@@ -3264,18 +3264,18 @@ x 14
 y 26
 end
 arch knight
+speed_left -1.500000
 x 14
 y 26
-speed_left -1.500000
 end
 arch grass
 x 14
 y 27
 end
 arch knight
+speed_left -1.500000
 x 14
 y 27
-speed_left -1.500000
 end
 arch grass
 x 14
@@ -3464,18 +3464,18 @@ x 15
 y 23
 end
 arch knight
+speed_left -1.500000
 x 15
 y 23
-speed_left -1.500000
 end
 arch grass
 x 15
 y 24
 end
 arch knight
+speed_left -1.500000
 x 15
 y 24
-speed_left -1.500000
 end
 arch grass
 x 15
@@ -3490,18 +3490,18 @@ x 15
 y 26
 end
 arch knight
+speed_left -1.500000
 x 15
 y 26
-speed_left -1.500000
 end
 arch grass
 x 15
 y 27
 end
 arch knight
+speed_left -1.500000
 x 15
 y 27
-speed_left -1.500000
 end
 arch grass
 x 15
@@ -5449,47 +5449,17 @@ arch guild
 x 2
 y 14
 end
-More
-arch guild_2
-x 3
-y 14
-end
-More
-arch guild_3
-x 2
-y 15
-end
-More
-arch guild_4
-x 3
-y 15
-end
 arch barrack_up
 x 2
 y 29
-end
-More
-arch barrack_up_2
-x 2
-y 30
 end
 arch barrack_up
 x 3
 y 2
 end
-More
-arch barrack_up_2
-x 3
-y 3
-end
 arch house_up
 x 3
 y 9
-end
-More
-arch house_up_2
-x 3
-y 10
 end
 arch store_general
 slaying B_gshop
@@ -5498,74 +5468,25 @@ sp 1
 x 3
 y 12
 end
-More
-arch store_general_2
-slaying B_gshop
-hp 1
-sp 1
-x 4
-y 12
-end
-More
-arch store_general_3
-slaying B_gshop
-hp 1
-sp 1
-x 3
-y 13
-end
-More
-arch store_general_4
-slaying B_gshop
-hp 1
-sp 1
-x 4
-y 13
-end
 arch barrack_up
 x 3
 y 29
-end
-More
-arch barrack_up_2
-x 3
-y 30
 end
 arch barrack_up
 x 4
 y 2
 end
-More
-arch barrack_up_2
-x 4
-y 3
-end
 arch barrack_up
 x 4
 y 29
-end
-More
-arch barrack_up_2
-x 4
-y 30
 end
 arch barrack_up
 x 5
 y 2
 end
-More
-arch barrack_up_2
-x 5
-y 3
-end
 arch barrack_up
 x 5
 y 29
-end
-More
-arch barrack_up_2
-x 5
-y 30
 end
 arch church
 name Royal Church
@@ -5575,33 +5496,6 @@ sp 28
 x 6
 y 22
 end
-More
-arch church_2
-name Royal Church
-slaying church0
-hp 9
-sp 28
-x 7
-y 22
-end
-More
-arch church_3
-name Royal Church
-slaying church0
-hp 9
-sp 28
-x 6
-y 23
-end
-More
-arch church_4
-name Royal Church
-slaying church0
-hp 9
-sp 28
-x 7
-y 23
-end
 arch courthouse
 name Royal Library
 slaying Rlib1
@@ -5610,51 +5504,14 @@ sp 8
 x 6
 y 25
 end
-More
-arch courthouse_2
-name Royal Library
-slaying Rlib1
-hp 2
-sp 8
-x 7
-y 25
-end
-More
-arch courthouse_3
-name Royal Library
-slaying Rlib1
-hp 2
-sp 8
-x 6
-y 26
-end
-More
-arch courthouse_4
-name Royal Library
-slaying Rlib1
-hp 2
-sp 8
-x 7
-y 26
-end
 arch barrack_up
 x 6
 y 29
-end
-More
-arch barrack_up_2
-x 6
-y 30
 end
 arch house_up
 x 7
 y 8
 end
-More
-arch house_up_2
-x 7
-y 9
-end
 arch city_tower
 name towers of luck
 slaying luck1
@@ -5662,15 +5519,6 @@ hp 3
 sp 16
 x 10
 y 30
-end
-More
-arch city_tower_2
-name towers of luck
-slaying luck1
-hp 3
-sp 16
-x 10
-y 31
 end
 arch city_tower
 name tower of luck
@@ -5680,15 +5528,6 @@ sp 5
 x 11
 y 29
 end
-More
-arch city_tower_2
-name tower of luck
-slaying luck1
-hp 3
-sp 5
-x 11
-y 30
-end
 arch city_tower
 name tower of luck
 slaying luck1
@@ -5697,15 +5536,6 @@ sp 15
 x 11
 y 31
 end
-More
-arch city_tower_2
-name tower of luck
-slaying luck1
-hp 19
-sp 15
-x 11
-y 32
-end
 arch city_tower
 name tower of luck
 slaying luck1
@@ -5713,15 +5543,6 @@ hp 17
 sp 5
 x 12
 y 30
-end
-More
-arch city_tower_2
-name tower of luck
-slaying luck1
-hp 17
-sp 5
-x 12
-y 31
 end
 arch store_weapons
 slaying B_wshop
@@ -5730,47 +5551,13 @@ sp 8
 x 13
 y 6
 end
-More
-arch store_weapons_2
-slaying B_wshop
-hp 1
-sp 8
-x 14
-y 6
-end
-More
-arch store_weapons_3
-slaying B_wshop
-hp 1
-sp 8
-x 13
-y 7
-end
-More
-arch store_weapons_4
-slaying B_wshop
-hp 1
-sp 8
-x 14
-y 7
-end
 arch barrack_up
 x 14
 y 2
 end
-More
-arch barrack_up_2
-x 14
-y 3
-end
 arch barrack_up
 x 15
 y 2
-end
-More
-arch barrack_up_2
-x 15
-y 3
 end
 arch barn
 name Arena
@@ -5780,151 +5567,29 @@ sp 20
 x 15
 y 15
 end
-More
-arch barn_2
-name Arena
-slaying arena
-hp 1
-sp 20
-x 16
-y 15
-end
-More
-arch barn_3
-name Arena
-slaying arena
-hp 1
-sp 20
-x 15
-y 16
-end
-More
-arch barn_4
-name Arena
-slaying arena
-hp 1
-sp 20
-x 16
-y 16
-end
 arch barrack_up
 x 16
 y 2
-end
-More
-arch barrack_up_2
-x 16
-y 3
 end
 arch house_up
 x 16
 y 8
 end
-More
-arch house_up_2
-x 16
-y 9
-end
 arch barrack_long
 x 17
-y 17
-end
-More
-arch barrack_long_2
-x 18
 y 17
 end
 arch palace
 x 17
 y 23
 end
-More
-arch palace_2
-x 18
-y 23
-end
-More
-arch palace_3
-x 19
-y 23
-end
-More
-arch palace_4
-x 20
-y 23
-end
-More
-arch palace_5
-x 21
-y 23
-end
-More
-arch palace_6
-x 17
-y 24
-end
-More
-arch palace_7
-x 18
-y 24
-end
-More
-arch palace_8
-x 19
-y 24
-end
-More
-arch palace_9
-x 20
-y 24
-end
-More
-arch palace_10
-x 21
-y 24
-end
-More
-arch palace_11
-x 17
-y 25
-end
-More
-arch palace_12
-x 18
-y 25
-end
-More
-arch palace_13
-x 19
-y 25
-end
-More
-arch palace_14
-x 20
-y 25
-end
-More
-arch palace_15
-x 21
-y 25
-end
 arch barrack_up
 x 17
 y 29
 end
-More
-arch barrack_up_2
-x 17
-y 30
-end
 arch barrack_up
 x 18
 y 29
-end
-More
-arch barrack_up_2
-x 18
-y 30
 end
 arch inn
 name Inn, White Pigeon
@@ -5934,32 +5599,13 @@ sp 14
 x 19
 y 8
 end
-More
-arch inn_2
-name Inn, White Pigeon
-slaying inn
-hp 8
-sp 14
-x 20
-y 8
-end
 arch house_up
 x 19
 y 11
 end
-More
-arch house_up_2
-x 19
-y 12
-end
 arch barrack_up
 x 19
 y 29
-end
-More
-arch barrack_up_2
-x 19
-y 30
 end
 arch prison
 slaying prison0
@@ -5968,64 +5614,15 @@ sp 20
 x 20
 y 2
 end
-More
-arch prison_2
-slaying prison0
-hp 12
-sp 20
-x 21
-y 2
-end
-More
-arch prison_3
-slaying prison0
-hp 12
-sp 20
-x 20
-y 3
-end
-More
-arch prison_4
-slaying prison0
-hp 12
-sp 20
-x 21
-y 3
-end
 arch barn
 x 20
 y 15
 end
-More
-arch barn_2
-x 21
-y 15
-end
-More
-arch barn_3
-x 20
-y 16
-end
-More
-arch barn_4
-x 21
-y 16
-end
 arch barrack_up
 x 20
 y 29
 end
-More
-arch barrack_up_2
-x 20
-y 30
-end
 arch barrack_up
 x 21
 y 29
-end
-More
-arch barrack_up_2
-x 21
-y 30
 end
