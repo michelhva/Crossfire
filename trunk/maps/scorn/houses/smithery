@@ -1,15 +1,15 @@
 arch map
 name Metal Smith's Workshop
-reset_timeout 7200
-difficulty 1
-width 9
-height 12
-enter_x 4
-enter_y 11
 msg
 Creator: CF Java Map Editor
 Date:    12/28/2002
 endmsg
+width 9
+height 12
+enter_x 4
+enter_y 11
+reset_timeout 7200
+difficulty 1
 end
 arch woodfloor
 end
@@ -163,17 +163,18 @@ x 2
 y 1
 end
 arch table_3
+no_pick 1
 x 2
 y 1
 end
 arch quarto
 face book_red.111
-title Titans
 msg
 To make gauntlets of the Titans, you will
 need gauntlets, the heart of a giant, and a
 bottle of philisophical oil.
 endmsg
+title Titans
 no_pick 1
 x 2
 y 1
@@ -222,11 +223,11 @@ arch stonefloor2
 x 2
 y 7
 end
-arch awall_0
+arch swall_2_2_1
 x 2
 y 7
 end
-arch swall_2_2_1
+arch awall_0
 x 2
 y 7
 end
@@ -270,6 +271,7 @@ x 3
 y 1
 end
 arch chair_3.1
+no_pick 1
 x 3
 y 1
 end
@@ -286,19 +288,19 @@ x 3
 y 3
 end
 arch lava
+type 0
 x 3
 y 4
-type 0
 end
 arch lava
+type 0
 x 3
 y 5
-type 0
 end
 arch lava
+type 0
 x 3
 y 6
-type 0
 end
 arch stonefloor2
 x 3
@@ -328,7 +330,7 @@ arch woodfloor
 x 3
 y 11
 end
-arch wall_2_1_2
+arch wall_1_3
 x 3
 y 11
 end
@@ -359,9 +361,9 @@ x 4
 y 3
 end
 arch lava
+type 0
 x 4
 y 4
-type 0
 end
 arch greater_dwarven_guard
 msg
@@ -376,8 +378,6 @@ Go read the books or I'll pound you!
 endmsg
 exp 1
 dam 50
-x 4
-y 4
 speed 2.000000
 level 2
 resist_magic 100
@@ -393,6 +393,8 @@ reflect_spell 1
 can_cast_spell 0
 stand_still 1
 can_see_in_dark 1
+x 4
+y 4
 end
 arch ahole_left
 x 4
@@ -411,9 +413,9 @@ x 4
 y 7
 end
 arch ggate_closed
+connected 10
 x 4
 y 7
-connected 10
 end
 arch woodfloor
 x 4
@@ -424,9 +426,9 @@ name Drop 100 platinum to enter
 name_pl Drop 100 platinum to enter
 slaying platinacoin
 food 100
+connected 10
 x 4
 y 8
-connected 10
 end
 arch woodfloor
 x 4
@@ -459,6 +461,7 @@ x 5
 y 1
 end
 arch chair_3.1
+no_pick 1
 x 5
 y 1
 end
@@ -475,19 +478,19 @@ x 5
 y 3
 end
 arch lava
+type 0
 x 5
 y 4
-type 0
 end
 arch lava
+type 0
 x 5
 y 5
-type 0
 end
 arch lava
+type 0
 x 5
 y 6
-type 0
 end
 arch stonefloor2
 x 5
@@ -517,7 +520,7 @@ arch woodfloor
 x 5
 y 11
 end
-arch wall_2_1_2
+arch wall_1_4
 x 5
 y 11
 end
@@ -532,16 +535,17 @@ x 6
 y 1
 end
 arch table_3
+no_pick 1
 x 6
 y 1
 end
 arch quarto
 face book_red.111
-title Steel
 msg
 Combine a pair of shoes or boots with
 3 crystals of mithril to create steel.
 endmsg
+title Steel
 no_pick 1
 x 6
 y 1
@@ -590,11 +594,11 @@ arch stonefloor2
 x 6
 y 7
 end
-arch awall_0
+arch swall_2_2_4
 x 6
 y 7
 end
-arch swall_2_2_4
+arch awall_0
 x 6
 y 7
 end
@@ -613,7 +617,7 @@ end
 arch platinum_converter
 name Buy shoes (5pp)
 name_pl Buy shoes (5pp)
-other_arch shoes
+other_arch low_boots
 sp 1
 food 5
 x 6
