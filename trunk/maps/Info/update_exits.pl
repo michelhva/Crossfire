@@ -11,38 +11,72 @@
 
 # Name of the old map that we update exits on
 # Note that this can be a regexp.
-$OLD_MAP_NAME="(/santo_dominion/town|../town|../../town)";
 
 # OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the 
 # updates.  For example, scorn/city was broken up on two of the
 # map tiles, so this gets used to correspond that properly.
 # you can use very large END values just to make sure the entire
 # map is covered
-$OLD_MAP_STARTX=3;
-$OLD_MAP_STARTY=12;
-$OLD_MAP_ENDX=27;
-$OLD_MAP_ENDY=100;
 
-# New map names.  OFFX/Y is the offset compared to the old values - these
-# can be negative provided that STARTX above is positive (eg, the
-# map is being shifted.)
+# The list of values here are locations to update to and
+# from.  I set it up this way with explicity value settings
+# instead of initializing each as an array - I think this format
+# makes it easier to see how everything relates.
+#
+# OLD_MAP_NAME: This is the path it tries to match in the slaying field.
+# It can be a regexp.  When updating within a specific directory of
+# a town, including the relative entries is possible.
+# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y is the range of spaces 
+# that we process.  If the location is not in this range, it is unchanged.
+# Note that you can have multiple entries with the same OLD_MAP_NAME
+# value as long as they have different START and END coordinates.
+# NEW_MAP_NAME is the name that will be put into the slaying field.
+# NEW_MAP_OFFX/Y is the modification to the target location in
+# the exit.
 
-$NEW_MAP_NAME="/world/world_102_108";
-$NEW_MAP_OFFX=0;
-$NEW_MAP_OFFY=-9;
+$OLD_MAP_NAME[0]="/santo_dominion/town";
+$OLD_MAP_STARTX[0]=3;
+$OLD_MAP_STARTY[0]=12;
+$OLD_MAP_ENDX[0]=27;
+$OLD_MAP_ENDY[0]=100;
+$NEW_MAP_NAME[0]="/world/world_102_108";
+$NEW_MAP_OFFX[0]=0;
+$NEW_MAP_OFFY[0]=-9;
+
+# Start of scorn updates
+$OLD_MAP_NAME[1]="/city/city";
+$OLD_MAP_STARTX[1]=10;
+$OLD_MAP_STARTY[1]=0;
+$OLD_MAP_ENDX[1]=100;
+$OLD_MAP_ENDY[1]=100;
+$NEW_MAP_NAME[1]="/world/world_105_115";
+$NEW_MAP_OFFX[1]=-10;
+$NEW_MAP_OFFY[1]=18;
+
+# Start of scorn updates
+$OLD_MAP_NAME[2]="/city/city";
+$OLD_MAP_STARTX[2]=0;
+$OLD_MAP_STARTY[2]=0;
+$OLD_MAP_ENDX[2]=9;
+$OLD_MAP_ENDY[2]=100;
+$NEW_MAP_NAME[2]="/world/world_104_115";
+$NEW_MAP_OFFX[2]=40;
+$NEW_MAP_OFFY[2]=18;
+
 
 $VERBOSE=0;
-
-
-if ((($OLD_MAP_STARTX + $NEW_MAP_OFFX) < 0) || 
-    (($OLD_MAP_STARTY + $NEW_MAP_OFFY) < 0 )) {
-	print "Current settings will result in negative destination coordinates.\n";
-	exit(1);
+$error=0;
+for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
+  if ((($OLD_MAP_STARTX[$i] + $NEW_MAP_OFFX[$i]) < 0) || 
+    (($OLD_MAP_STARTY[$i] + $NEW_MAP_OFFY[$i]) < 0 )) {
+	print "oldmap $OLD_MAP_NAME[$i] ($OLD_MAP_STARTX[$i], $OLD_MAP_STARTX[$i] will result in negative destination coordinates.\n";
+	$error=1;
+  }
 }
-
+# Basically, we want to check all the values and then exit.
+exit(1) if ($error);
 
 &maplist(".");
-
 
 while ($file = shift (@maps)) {
     &updatemap;
@@ -72,7 +106,7 @@ sub updatemap {
     }
     $_ = <IN>;
     if (! /^arch map\n/) {
-	print "Error: file $file isn't mapfile. ($_)\n";
+	print "Error: file $file isn't mapfile.\n";
 	return;
     }
     if (! open(OUT, ">$file.new")) {
@@ -119,19 +153,21 @@ sub updatemap {
 	    # do not need to try and process them.  Likewise, the objects
 	    # in the inventory should not contain exits.
 	} else { 
-	    if (m#\nslaying $OLD_MAP_NAME\n#) {
-		$destx = /\nhp (\d+)\n/ ? $1 : 0;
-		$desty = /\nsp (\d+)\n/ ? $1 : 0;
-		if ($destx >= $OLD_MAP_STARTX && $destx <= $OLD_MAP_ENDX  &&
-		    $desty >= $OLD_MAP_STARTY && $desty <= $OLD_MAP_ENDY) {
-		    # Ok.  This exit matches our criteria.  Substitute in
-		    # the new values
-		    s/slaying $OLD_MAP_NAME\n/slaying $NEW_MAP_NAME\n/;
-		    $destx += $NEW_MAP_OFFX;
-		    $desty += $NEW_MAP_OFFY;
-		    s/\nhp \d+\n/\nhp $destx\n/;
-		    s/\nsp \d+\n/\nsp $desty\n/;
-		    $made_change=1;
+	    for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
+		if (m#\nslaying $OLD_MAP_NAME[$i]\n#) {
+		    $destx = /\nhp (\d+)\n/ ? $1 : 0;
+		    $desty = /\nsp (\d+)\n/ ? $1 : 0;
+		    if ($destx >= $OLD_MAP_STARTX[$i] && $destx <= $OLD_MAP_ENDX[$i]  &&
+			$desty >= $OLD_MAP_STARTY[$i] && $desty <= $OLD_MAP_ENDY[$i]) {
+			# Ok.  This exit matches our criteria.  Substitute in
+			# the new values
+			s/slaying $OLD_MAP_NAME[$i]\n/slaying $NEW_MAP_NAME[$i]\n/;
+			$destx += $NEW_MAP_OFFX[$i];
+			$desty += $NEW_MAP_OFFY[$i];
+			s/\nhp \d+\n/\nhp $destx\n/;
+			s/\nsp \d+\n/\nsp $desty\n/;
+			$made_change=1;
+		    }
 		}
 	    }
 	    print OUT $_;
