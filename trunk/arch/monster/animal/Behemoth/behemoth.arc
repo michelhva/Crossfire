@@ -2,14 +2,14 @@ Object behemoth
 face behemoth.111
 race animal
 animation behemoth_1
+randomitems behemoth
 attacktype 1025
 monster 1
 sleep 1
 Wis 20
 resist_fear 100
-
+resist_poision 90
 resist_magic 30
-
 exp 20000
 ac -6
 wc -10
