@@ -4883,6 +4883,10 @@ arch cobblestones2
 x 19
 y 24
 end
+arch lamppost
+x 19
+y 24
+end
 arch grass
 x 19
 y 25
@@ -4900,6 +4904,10 @@ x 19
 y 28
 end
 arch cobblestones2
+x 19
+y 29
+end
+arch lamppost
 x 19
 y 29
 end
@@ -4955,6 +4963,10 @@ arch cobblestones2
 x 19
 y 36
 end
+arch lamppost
+x 19
+y 36
+end
 arch cobblestones2
 x 19
 y 37
@@ -4975,7 +4987,11 @@ arch grass
 x 19
 y 41
 end
-arch brush
+arch cobblestones2
+x 19
+y 42
+end
+arch lamppost
 x 19
 y 42
 end
@@ -5234,7 +5250,7 @@ arch grass
 x 20
 y 41
 end
-arch grass
+arch cobblestones2
 x 20
 y 42
 end
@@ -5693,6 +5709,10 @@ arch cobblestones2
 x 22
 y 32
 end
+arch light2
+x 22
+y 32
+end
 arch grass_only
 x 22
 y 33
@@ -5997,6 +6017,10 @@ arch brush
 x 23
 y 37
 end
+arch lamppost
+x 23
+y 37
+end
 arch grass
 x 23
 y 38
@@ -6283,6 +6307,10 @@ arch cobblestones2
 x 24
 y 44
 end
+arch lamppost
+x 24
+y 44
+end
 arch grass
 x 24
 y 45
@@ -6501,6 +6529,10 @@ arch grass
 x 25
 y 40
 end
+arch lamppost
+x 25
+y 40
+end
 arch grass
 x 25
 y 41
@@ -6680,6 +6712,10 @@ arch grass
 x 26
 y 25
 end
+arch lamppost
+x 26
+y 25
+end
 arch grass
 x 26
 y 26
@@ -6709,7 +6745,15 @@ arch grass
 x 26
 y 30
 end
+arch s_house1
+x 26
+y 30
+end
 arch grass_only
+x 26
+y 31
+end
+arch s_house1
 x 26
 y 31
 end
@@ -6976,7 +7020,15 @@ arch grass
 x 27
 y 30
 end
+arch s_house1
+x 27
+y 30
+end
 arch grass_only
+x 27
+y 31
+end
+arch lamppost
 x 27
 y 31
 end
@@ -7242,6 +7294,10 @@ arch cobblestones2
 x 28
 y 35
 end
+arch light2
+x 28
+y 35
+end
 arch cobblestones2
 x 28
 y 36
@@ -7292,6 +7348,10 @@ y 45
 end
 arch brush
 elevation 313
+x 28
+y 46
+end
+arch lamppost
 x 28
 y 46
 end
@@ -7516,6 +7576,10 @@ x 29
 y 37
 end
 arch cobblestones2
+x 29
+y 38
+end
+arch lamppost
 x 29
 y 38
 end
@@ -7979,6 +8043,10 @@ arch grass
 x 31
 y 25
 end
+arch grass
+x 31
+y 26
+end
 arch grass_only
 x 31
 y 27
@@ -8268,6 +8336,10 @@ arch cobblestones2
 x 32
 y 34
 end
+arch light4
+x 32
+y 34
+end
 arch sea
 x 32
 y 35
@@ -8489,6 +8561,10 @@ arch grass
 x 33
 y 28
 end
+arch lamppost
+x 33
+y 28
+end
 arch pstone_1
 x 33
 y 29
@@ -8556,6 +8632,10 @@ x 33
 y 42
 end
 arch cobblestones2
+x 33
+y 43
+end
+arch lamppost
 x 33
 y 43
 end
@@ -9609,6 +9689,10 @@ elevation -638
 x 37
 y 37
 end
+arch light3
+x 37
+y 37
+end
 arch sea
 elevation -603
 x 37
@@ -9826,6 +9910,10 @@ y 31
 end
 arch sea
 elevation -845
+x 38
+y 32
+end
+arch light3
 x 38
 y 32
 end
@@ -11049,6 +11137,10 @@ elevation -2108
 x 43
 y 30
 end
+arch light3
+x 43
+y 30
+end
 arch sea
 elevation -2273
 x 43
@@ -11091,6 +11183,10 @@ y 38
 end
 arch sea
 elevation -1686
+x 43
+y 39
+end
+arch light3
 x 43
 y 39
 end
@@ -11319,6 +11415,10 @@ y 34
 end
 arch sea
 elevation -2659
+x 44
+y 35
+end
+arch light3
 x 44
 y 35
 end
@@ -12716,10 +12816,6 @@ arch hovels2
 x 26
 y 27
 end
-arch hovels2
-x 26
-y 30
-end
 arch house_up
 x 26
 y 34
@@ -12762,8 +12858,6 @@ name Guild of the Smoking Cauldron
 slaying /darcap/darcap/guilds/smoking_cauldron/ground
 x 31
 y 25
-arch grass
-end
 end
 arch guild
 name Maze House
