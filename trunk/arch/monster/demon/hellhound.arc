@@ -27,6 +27,10 @@ dam 9
 wc -20
 level 20
 attacktype 6
+can_cast_spell 1
+sp 25
+maxsp 40
+Pow 5
 can_see_in_dark 1
 resist_physical 30
 resist_fire 100
