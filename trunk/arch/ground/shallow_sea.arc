@@ -7,6 +7,7 @@ shallow_sea.113
 shallow_sea.114
 mina
 magicmap light_blue
+smoothlevel 3
 speed 0.2
 no_pass 1
 no_pick 1
