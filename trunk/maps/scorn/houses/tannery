@@ -382,11 +382,19 @@ arch swall_3_3
 x 3
 y 6
 end
+arch dungeon_magic
+x 3
+y 6
+end
 arch flagstone
 x 3
 y 7
 end
 arch swall_2_1_1
+x 3
+y 7
+end
+arch dungeon_magic
 x 3
 y 7
 end
@@ -395,6 +403,10 @@ x 3
 y 8
 end
 arch swall_2_1_1
+x 3
+y 8
+end
+arch dungeon_magic
 x 3
 y 8
 end
@@ -410,6 +422,10 @@ arch awall_0
 x 3
 y 9
 end
+arch dungeon_magic
+x 3
+y 9
+end
 arch flagstone
 no_magic 1
 damned 1
@@ -417,6 +433,10 @@ x 3
 y 10
 end
 arch wall_2_1_2
+x 3
+y 10
+end
+arch dungeon_magic
 x 3
 y 10
 end
@@ -472,6 +492,10 @@ x 4
 y 6
 end
 arch swall_1_3
+x 4
+y 6
+end
+arch dungeon_magic
 x 4
 y 6
 end
@@ -688,6 +712,10 @@ arch swall_1_4
 x 6
 y 6
 end
+arch dungeon_magic
+x 6
+y 6
+end
 arch flagstone
 no_magic 1
 damned 1
@@ -778,11 +806,19 @@ arch swall_3_3
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 6
+end
 arch flagstone
 x 7
 y 7
 end
 arch swall_2_1_1
+x 7
+y 7
+end
+arch dungeon_magic
 x 7
 y 7
 end
@@ -791,6 +827,10 @@ x 7
 y 8
 end
 arch swall_2_1_1
+x 7
+y 8
+end
+arch dungeon_magic
 x 7
 y 8
 end
@@ -806,6 +846,10 @@ arch awall_0
 x 7
 y 9
 end
+arch dungeon_magic
+x 7
+y 9
+end
 arch flagstone
 no_magic 1
 damned 1
@@ -813,6 +857,10 @@ x 7
 y 10
 end
 arch wall_2_1_2
+x 7
+y 10
+end
+arch dungeon_magic
 x 7
 y 10
 end

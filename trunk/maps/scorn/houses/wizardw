@@ -68,6 +68,9 @@ end
 arch awall_3_2
 y 6
 end
+arch dungeon_magic
+y 6
+end
 arch snow2
 name Ice Illusion
 name_pl Ice Illusion
@@ -201,6 +204,10 @@ x 1
 y 6
 end
 arch awall_2_1_2
+x 1
+y 6
+end
+arch dungeon_magic
 x 1
 y 6
 end
@@ -343,6 +350,10 @@ arch awall_2_1_2
 x 2
 y 6
 end
+arch dungeon_magic
+x 2
+y 6
+end
 arch snow2
 name Ice Illusion
 name_pl Ice Illusion
@@ -454,6 +465,10 @@ x 3
 y 6
 end
 arch awall_2_1_2
+x 3
+y 6
+end
+arch dungeon_magic
 x 3
 y 6
 end
@@ -572,6 +587,8 @@ y 6
 end
 arch grate_closed_1
 connected 11
+no_magic 1
+damned 1
 x 4
 y 6
 end
@@ -714,6 +731,10 @@ arch awall_2_1_2
 x 5
 y 6
 end
+arch dungeon_magic
+x 5
+y 6
+end
 arch snow2
 name Ice Illusion
 name_pl Ice Illusion
@@ -832,6 +853,10 @@ x 6
 y 6
 end
 arch awall_2_1_2
+x 6
+y 6
+end
+arch dungeon_magic
 x 6
 y 6
 end
@@ -963,6 +988,10 @@ x 7
 y 6
 end
 arch awall_2_1_2
+x 7
+y 6
+end
+arch dungeon_magic
 x 7
 y 6
 end
@@ -1105,6 +1134,10 @@ x 8
 y 6
 end
 arch awall_3_4
+x 8
+y 6
+end
+arch dungeon_magic
 x 8
 y 6
 end
