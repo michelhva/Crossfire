@@ -6,7 +6,7 @@ level 10
 value 100
 sp 25
 casting_time 10
-path_attuned 2048
+path_attuned 4096
 range 25
 range_modifier 5
 maxsp 25
