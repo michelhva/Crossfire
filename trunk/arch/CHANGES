@@ -1,5 +1,9 @@
 Changes for CVS top of tree:
 
+PeterM  2000-12-3:  Convert
+protected/immune/vulnerable/armour to new PR system for
+all arcs.
+
 MSW 2000-12-3:
 Commit for PR code.  General changes was to clean up archetypes that
 were immune/protected/vulnerable to the same attacktype (ie, protected &
