@@ -46,7 +46,8 @@ magicmap red
 end
 More
 Object Greater_Demon_1
-GreatDemon.211
+name Greater Demon
+face GreatDemon.211
 x 1
 y 0
 alive 1
