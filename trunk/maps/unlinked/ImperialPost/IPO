@@ -168,7 +168,7 @@ name Colette
 event_say_plugin Python
 event_say /python/IPO/say.py
 msg
-I'm on a break, shoo shoo
+@match * I'm on a break.
 endmsg
 x 2
 y 2
