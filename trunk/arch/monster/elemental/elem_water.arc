@@ -19,9 +19,8 @@ exp 250
 weight 50000
 level 8
 resist_confusion 100
-
-attacktype 1
-resist_cold -100
-
+attacktype 17
+resist_cold 50
+resist_fire -50
 editable 1
 end
