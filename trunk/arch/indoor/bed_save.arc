@@ -5,6 +5,8 @@ face bed_save.111
 weight 200000
 value 40
 no_pick 1
+no_magic 1
+damned 1
 editable 128
 magicmap brown
 end
