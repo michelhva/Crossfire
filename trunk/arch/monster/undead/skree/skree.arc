@@ -11,7 +11,7 @@ resist_fear 100
 resist_magic 90
 resist_fire 90
 resist_cold 100
-resist_elec 90
+resist_electricity 90
 resist_godpower 80
 resist_holyword 70
 exp 300000
