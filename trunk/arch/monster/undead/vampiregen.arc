@@ -3,6 +3,7 @@ name sarcophagus
 other_arch vampire
 generator 1
 alive 1
+level 1
 face vampiregen.111
 hp 400
 maxhp 400

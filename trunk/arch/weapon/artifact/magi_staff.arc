@@ -13,7 +13,7 @@ speed .2
 material 16
 protected 2
 Int 1
-Pow 2
+Pow 1
 sp 2
 attacktype 257
 dam 20

@@ -1,5 +1,23 @@
 Changes for CVS top of tree:
 
+Too many items gave Pow bonus.  - Jan Echternach 4/17/2000
+
+armour/helmet/wiz_hat.arc
+Changed (Int +1, Pow +1) back to (Int +2).
+
+armour/mail/robe_midnight.arc
+Changed (Pow +2) back to (Wis +2).
+
+weapon/artifact/magi_staff.arc
+Reduced (Pow +2) to (Pow +1).
+
+
+Set level 1 for all archetypes that had alive 1 but no level.
+- Jan Echternach 4/17/2000
+
+Naming.doc:  Fixed a typo.  - Jan Echternach 4/17/2000
+
+
 ---BEGIN BATCH UPDATE--- DAMN 9/17/1999
 Added "nrof 1" to the following archetypes:
 armour/boots/elvenboots.arc

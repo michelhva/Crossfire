@@ -9,6 +9,7 @@ maxhp 60
 ac 10
 exp 20
 alive 1
+level 1
 no_pick 1
 speed -0.003
 maxsp 1

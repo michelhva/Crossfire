@@ -10,6 +10,7 @@ exp 30
 ac 15
 speed 0.02
 alive 1
+level 1
 maxsp 1
 weight 1000000
 editable 1

@@ -12,6 +12,7 @@ speed 0.0003
 immune 4
 vulnerable 48
 alive 1
+level 1
 maxsp 1
 weight 300000
 editable 1

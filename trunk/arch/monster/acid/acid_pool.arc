@@ -2,6 +2,7 @@ Object acid_pool
 name acid pool
 generator 1
 alive 1
+level 1
 no_pick 1
 face acid_pool.111
 anim

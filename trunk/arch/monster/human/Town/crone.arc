@@ -7,6 +7,7 @@ Pow 2
 monster 1
 unaggressive 1
 alive 1
+level 1
 ac 9
 wc 18
 dam 1

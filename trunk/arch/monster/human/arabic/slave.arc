@@ -4,6 +4,7 @@ randomitems slave
 face slave.111
 speed 0.10
 alive 1
+level 1
 monster 1
 no_pick 1
 hp 10
