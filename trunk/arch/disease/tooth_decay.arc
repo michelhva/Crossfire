@@ -8,8 +8,7 @@ wc 1
 magic 1
 Cha -1
 maxhp 1
-maxgrace -1
-food -1
+maxgrace 24
 speed 0.005
 last_sp 0
 maxsp 0
