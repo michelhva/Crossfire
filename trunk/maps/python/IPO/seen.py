@@ -42,9 +42,12 @@ if text[0] == 'seen':
 	if len(text)==2:
 		if log.exist(text[1]):
 			ip, date, count = log.info(text[1])
-			CFPython.Say(whoami, "I have seen '%s' joining %d times, last at %s." % (text[1], count, date))
+			if (CFPython.IsDungeonMaster(activator)):
+				CFPython.Say(whoami, "I have seen '%s' %d times.\nI saw them last coming from\nIP: %s\non %s." % (text[1], count, ip, date))
+			else:
+				CFPython.Say(whoami, "I have seen '%s' %d times.\nI saw them last at %s." % (text[1], count, date))
 		else:
-			CFPython.Say(whoami, "I have never seen '%s' joining" % text[1])
+			CFPython.Say(whoami, "I have never seen '%s'." % text[1])
 	else:
 		CFPython.Say(whoami, 'Usage "seen <friend>"')
 
