@@ -24,4 +24,5 @@ value 68
 color_fg green
 editable 1024
 attacktype 1
+weapontype 5
 end

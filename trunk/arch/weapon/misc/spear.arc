@@ -23,4 +23,6 @@ weight 8500
 value 50
 editable 1024
 magicmap brown
+attacktype 1
+weapontype 5
 end
