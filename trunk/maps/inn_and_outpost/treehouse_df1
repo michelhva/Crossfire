@@ -1,11 +1,15 @@
 arch map
 name DF Outpost 1
 msg
-Creator: CF Java Map Editor
+Creator: Avion
+CF Java Map Editor
 Date:    5/30/2004
 endmsg
 width 10
 height 10
+enter_x 6
+enter_y 6
+outdoor 1
 end
 arch brush
 end
