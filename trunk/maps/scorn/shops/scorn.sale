@@ -1986,9 +1986,19 @@ end
 arch dwall_2_1_2
 x 8
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 1
+end
+arch dungeon_magic
+x 8
+y 1
+end
+arch unholy_ground
+x 8
+y 1
+end
+arch tile_white_floor
 x 8
 y 1
 end
@@ -1998,9 +2008,19 @@ no_pass 1
 x 8
 y 1
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 2
+end
+arch unholy_ground
+x 8
+y 2
+end
+arch tile_white_floor
 x 8
 y 2
 end
@@ -2011,9 +2031,19 @@ unique 1
 x 8
 y 2
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch unholy_ground
+x 8
+y 3
+end
+arch tile_white_floor
 x 8
 y 3
 end
@@ -2024,9 +2054,19 @@ unique 1
 x 8
 y 3
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 4
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch unholy_ground
+x 8
+y 4
+end
+arch tile_white_floor
 x 8
 y 4
 end
@@ -2037,9 +2077,19 @@ unique 1
 x 8
 y 4
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch unholy_ground
+x 8
+y 5
+end
+arch tile_white_floor
 x 8
 y 5
 end
@@ -2050,9 +2100,19 @@ unique 1
 x 8
 y 5
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch unholy_ground
+x 8
+y 6
+end
+arch tile_white_floor
 x 8
 y 6
 end
@@ -2063,8 +2123,19 @@ unique 1
 x 8
 y 6
 end
-arch shop_empty
-type 0
+arch magic_banned
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch unholy_ground
+x 8
+y 7
+end
+arch tile_white_floor
 x 8
 y 7
 end
@@ -2250,8 +2321,19 @@ end
 arch dwall_1_3
 x 9
 end
-arch shop_empty
-type 0
+arch magic_banned
+x 9
+y 1
+end
+arch dungeon_magic
+x 9
+y 1
+end
+arch unholy_ground
+x 9
+y 1
+end
+arch tile_white_floor
 x 9
 y 1
 end
@@ -2269,33 +2351,99 @@ endmsg
 x 9
 y 1
 end
-arch shop_empty
-type 0
+arch magic_banned
 x 9
 y 2
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 9
+y 2
+end
+arch unholy_ground
+x 9
+y 2
+end
+arch tile_white_floor
+x 9
+y 2
+end
+arch magic_banned
 x 9
 y 3
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 9
+y 3
+end
+arch unholy_ground
+x 9
+y 3
+end
+arch tile_white_floor
+x 9
+y 3
+end
+arch magic_banned
 x 9
 y 4
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 9
+y 4
+end
+arch unholy_ground
+x 9
+y 4
+end
+arch tile_white_floor
+x 9
+y 4
+end
+arch magic_banned
 x 9
 y 5
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 9
+y 5
+end
+arch unholy_ground
+x 9
+y 5
+end
+arch tile_white_floor
+x 9
+y 5
+end
+arch magic_banned
 x 9
 y 6
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 9
+y 6
+end
+arch unholy_ground
+x 9
+y 6
+end
+arch tile_white_floor
+x 9
+y 6
+end
+arch magic_banned
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch unholy_ground
+x 9
+y 7
+end
+arch tile_white_floor
 x 9
 y 7
 end
@@ -2465,8 +2613,16 @@ arch dwall_2_1_2
 x 9
 y 19
 end
-arch shop_empty
-type 0
+arch magic_banned
+x 10
+end
+arch dungeon_magic
+x 10
+end
+arch unholy_ground
+x 10
+end
+arch tile_white_floor
 x 10
 end
 arch oakdoor
@@ -2475,47 +2631,135 @@ Thank you for your business!
 Come again please.
 endmsg
 slaying /world/world_105_115
-hp 1
+hp 2
 sp 32
 x 10
 end
-arch shop_empty
-type 0
+arch magic_banned
 x 10
 y 1
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 1
+end
+arch unholy_ground
+x 10
+y 1
+end
+arch tile_white_floor
+x 10
+y 1
+end
+arch magic_banned
 x 10
 y 2
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 2
+end
+arch unholy_ground
+x 10
+y 2
+end
+arch tile_white_floor
+x 10
+y 2
+end
+arch magic_banned
 x 10
 y 3
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 3
+end
+arch unholy_ground
+x 10
+y 3
+end
+arch tile_white_floor
+x 10
+y 3
+end
+arch magic_banned
 x 10
 y 4
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 4
+end
+arch unholy_ground
+x 10
+y 4
+end
+arch tile_white_floor
+x 10
+y 4
+end
+arch magic_banned
 x 10
 y 5
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 5
+end
+arch unholy_ground
+x 10
+y 5
+end
+arch tile_white_floor
+x 10
+y 5
+end
+arch magic_banned
 x 10
 y 6
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 6
+end
+arch unholy_ground
+x 10
+y 6
+end
+arch tile_white_floor
+x 10
+y 6
+end
+arch magic_banned
 x 10
 y 7
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 10
+y 7
+end
+arch unholy_ground
+x 10
+y 7
+end
+arch tile_white_floor
+x 10
+y 7
+end
+arch magic_banned
+x 10
+y 8
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch unholy_ground
+x 10
+y 8
+end
+arch tile_white_floor
 x 10
 y 8
 end
@@ -2523,9 +2767,19 @@ arch shop_mat
 x 10
 y 8
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch unholy_ground
+x 10
+y 9
+end
+arch tile_white_floor
 x 10
 y 9
 end
@@ -2679,8 +2933,19 @@ end
 arch dwall_1_4
 x 11
 end
-arch shop_empty
-type 0
+arch magic_banned
+x 11
+y 1
+end
+arch dungeon_magic
+x 11
+y 1
+end
+arch unholy_ground
+x 11
+y 1
+end
+arch tile_white_floor
 x 11
 y 1
 end
@@ -2696,33 +2961,99 @@ endmsg
 x 11
 y 1
 end
-arch shop_empty
-type 0
+arch magic_banned
 x 11
 y 2
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 11
+y 2
+end
+arch unholy_ground
+x 11
+y 2
+end
+arch tile_white_floor
+x 11
+y 2
+end
+arch magic_banned
 x 11
 y 3
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 11
+y 3
+end
+arch unholy_ground
+x 11
+y 3
+end
+arch tile_white_floor
+x 11
+y 3
+end
+arch magic_banned
 x 11
 y 4
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 11
+y 4
+end
+arch unholy_ground
+x 11
+y 4
+end
+arch tile_white_floor
+x 11
+y 4
+end
+arch magic_banned
 x 11
 y 5
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 11
+y 5
+end
+arch unholy_ground
+x 11
+y 5
+end
+arch tile_white_floor
+x 11
+y 5
+end
+arch magic_banned
 x 11
 y 6
 end
-arch shop_empty
-type 0
+arch dungeon_magic
+x 11
+y 6
+end
+arch unholy_ground
+x 11
+y 6
+end
+arch tile_white_floor
+x 11
+y 6
+end
+arch magic_banned
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 7
+end
+arch unholy_ground
+x 11
+y 7
+end
+arch tile_white_floor
 x 11
 y 7
 end
@@ -2906,9 +3237,19 @@ end
 arch dwall_2_1_2
 x 12
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 1
+end
+arch dungeon_magic
+x 12
+y 1
+end
+arch unholy_ground
+x 12
+y 1
+end
+arch tile_white_floor
 x 12
 y 1
 end
@@ -2918,9 +3259,19 @@ no_pass 1
 x 12
 y 1
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 2
+end
+arch dungeon_magic
+x 12
+y 2
+end
+arch unholy_ground
+x 12
+y 2
+end
+arch tile_white_floor
 x 12
 y 2
 end
@@ -2931,9 +3282,19 @@ unique 1
 x 12
 y 2
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch unholy_ground
+x 12
+y 3
+end
+arch tile_white_floor
 x 12
 y 3
 end
@@ -2944,9 +3305,19 @@ unique 1
 x 12
 y 3
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch unholy_ground
+x 12
+y 4
+end
+arch tile_white_floor
 x 12
 y 4
 end
@@ -2957,9 +3328,19 @@ unique 1
 x 12
 y 4
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch unholy_ground
+x 12
+y 5
+end
+arch tile_white_floor
 x 12
 y 5
 end
@@ -2970,9 +3351,19 @@ unique 1
 x 12
 y 5
 end
-arch shop_empty
-unique 1
-damned 1
+arch magic_banned
+x 12
+y 6
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch unholy_ground
+x 12
+y 6
+end
+arch tile_white_floor
 x 12
 y 6
 end
@@ -2983,8 +3374,19 @@ unique 1
 x 12
 y 6
 end
-arch shop_empty
-type 0
+arch magic_banned
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch unholy_ground
+x 12
+y 7
+end
+arch tile_white_floor
 x 12
 y 7
 end
