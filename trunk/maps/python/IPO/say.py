@@ -38,7 +38,6 @@ sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDire
 
 import string
 import CFLog
-import CFBank
 
 activator=CFPython.WhoIsActivator()
 activatorname=CFPython.GetName(activator)
@@ -48,9 +47,6 @@ y=CFPython.GetYPosition(activator)
 
 log = CFLog.CFLog()
 text = string.split(CFPython.WhatIsMessage())
-
-bank = CFBank.CFBank()
-
 
 if text[0] == 'help' or text[0] == 'yes':
 		message = 'How can I help you ? Here is a quick list of commands:\n\n- pen   (%s platinum)\n- literacy    (%s platinum)\n- mailscroll <friend>   (%s platinum)\n- seen <friend>   (free)\n'%(priceWritingPen,priceScrollOfLiteracy,priceMailScroll)
@@ -113,36 +109,11 @@ elif text[0] == 'seen':
 	if len(text)==2:
 		if log.exist(text[1]):
 			ip, date, count = log.info(text[1])
-			CFPython.Say(whoami, "I have seen '%s' joining %d times, last at %s, using IP: %s" % (text[1], count, date, ip))
+			CFPython.Say(whoami, "I have seen '%s' joining %d times, last at %s." % (text[1], count, date))
 		else:
 			CFPython.Say(whoami, "I have never seen '%s' joining" % text[1])
 	else:
 		CFPython.Say(whoami, 'Usage "seen <friend>"')
-
-elif text[0] == 'deposit':
-	if len(text)==2:
-		if (CFPython.PayAmount(activator, int(text[1])*50000)):
-			bank.deposit(activatorname, int(text[1]))
-			CFPython.Say(whoami, 'Deposited to bank account')
-		else:
-			CFPython.Say(whoami, 'You need %d platinum'%(int(text[1])*1000))
-	else:
-		CFPython.Say(whoami, 'Usage "deposit <amount kp>"')
-
-elif text[0] == 'withdraw':
-	if len(text)==2:
-		if (bank.withdraw(activatorname, int(text[1]))):
-			CFPython.Say(whoami, 'Withdrawn from bank account')
-			id = CFPython.CreateObject('platinum coin', (x, y))
-			CFPython.SetQuantity(id, int(text[1])*1000)
-		else:
-			CFPython.Say(whoami, 'Not enough kp on your account')
-	else:
-		CFPython.Say(whoami, 'Usage "withdraw <amount kp>"')
-
-elif text[0] == 'balance':
-    balance = bank.getbalance(activatorname)
-    CFPython.Say(whoami, 'Amount on bank: %d kp'%balance)
 
 else:
 	CFPython.Say(whoami, 'Do you need help?')
