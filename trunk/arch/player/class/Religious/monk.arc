@@ -3,9 +3,9 @@ name monk
 randomitems monk_class_items
 face monk.111
 anim
-monk.151
-monk.131
 monk.111
+monk.131
+monk.151
 monk.171
 mina
 is_animated 0
