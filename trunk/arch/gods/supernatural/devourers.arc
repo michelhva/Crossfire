@@ -29,6 +29,7 @@ resist_fire -5
 ac -12
 wc -1
 hp 350
+maxhp 350
 dam 50
 last_eat 60
 last_heal -1

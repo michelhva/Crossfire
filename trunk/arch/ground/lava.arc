@@ -1,9 +1,11 @@
+# a specific type of spell effect (cone) which operates
+# as a ground object.
 Object lava
-type 88
+type 102
+subtype 7
 level 1
 walk_on 1
 wc -30
-food 1
 name lava
 face lava.111
 anim
@@ -24,13 +26,15 @@ color_bg red
 speed 0.2
 no_pick 1
 attacktype 4
-hp 60
+duration 60
 dam 3
 is_floor 1
 editable 8
 end
+#
 Object permanent_lava
-type 88
+type 102
+subtype 7
 level 1
 walk_on 1
 wc -30

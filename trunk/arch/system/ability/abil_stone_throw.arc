@@ -4,8 +4,11 @@ type 14
 name rock thrower
 nrof 1
 no_drop 1
-dam 0
+dam 10
 sp 40
 wc 1
 no_strength 0
+invisible 1
+editable 0
+skill missile weapons
 end

@@ -1,5 +1,5 @@
 Object lbulletwall
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -27,7 +27,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_1
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -45,7 +45,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_2
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -63,7 +63,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_3
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -81,7 +81,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_4
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -99,7 +99,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_5
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -117,7 +117,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_6
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -135,7 +135,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_7
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -153,7 +153,7 @@ visibility 100
 magicmap yellow
 end
 Object lbulletwall_8
-other_arch lbullet
+other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1

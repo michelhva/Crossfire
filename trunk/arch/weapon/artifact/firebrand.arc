@@ -16,12 +16,13 @@ weight 22000
 value 75000
 magic 3
 resist_cold 30
-
 attacktype 4
 weapontype 1
 editable 5120
 magicmap red
 name_pl Firebrands
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 5
 end

@@ -1,5 +1,6 @@
 Object demonbane
 name Demonbane
+name_pl Demonbanes
 nrof 1
 last_sp 9
 type 15
@@ -23,12 +24,12 @@ weight 32000
 value 90000
 slaying demon
 resist_fire 30
-
 editable 5120
 attacktype 1
 weapontype 1
 magicmap black
-name_pl Demonbanes
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 7
 end

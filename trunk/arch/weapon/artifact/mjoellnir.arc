@@ -11,12 +11,13 @@ weight 30000
 value 75000
 magic 3
 resist_electricity 30
-
 attacktype 8
 Str 1
 editable 5120
 magicmap khaki
 name_pl Mjoellnirs
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 6
 end

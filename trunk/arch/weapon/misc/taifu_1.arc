@@ -16,4 +16,5 @@ magicmap black
 name_pl taifus
 client_type 145
 body_arm -1
+skill one handed weapons
 end

@@ -18,4 +18,5 @@ color_fg brown
 name_pl lightning bows
 client_type 150
 body_arm -2
+skill missile weapons
 end

@@ -22,6 +22,7 @@ resist_physical 50
 ac -7
 wc -1
 hp 350
+maxhp 350
 dam 40
 level 15
 speed 0.25

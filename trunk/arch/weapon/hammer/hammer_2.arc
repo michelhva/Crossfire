@@ -29,4 +29,5 @@ magicmap grey
 name_pl throwing hammers
 client_type 126
 body_arm -1
+skill one handed weapons
 end

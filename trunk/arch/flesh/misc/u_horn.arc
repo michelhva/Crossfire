@@ -20,4 +20,7 @@ nrof 1
 color_fg black
 name_pl unicorn horns
 client_type 627
+item_power 2
+skill one handed weapons
+body_arm -1
 end

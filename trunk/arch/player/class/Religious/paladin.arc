@@ -27,8 +27,8 @@ end
 Object paladin_holy_symbol
 name Paladin's holy symbol
 face holy_symbol.111
-type 43
-sp 30
+type 74
+skill praying
 material 20
 nrof 1
 value 1500

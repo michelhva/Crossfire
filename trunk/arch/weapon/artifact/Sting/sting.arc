@@ -26,4 +26,6 @@ magicmap grey
 name_pl Stings
 client_type 100
 body_arm -1
+skill one handed weapons
+item_power 4
 end

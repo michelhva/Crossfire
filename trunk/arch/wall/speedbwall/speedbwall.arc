@@ -1,5 +1,5 @@
 Object speedballwall
-other_arch speedball
+other_arch spell_small_speedball
 name speedball wall
 type 62
 activate_on_push 1

@@ -49,4 +49,6 @@ magicmap black
 name_pl Chaos Swords
 client_type 100
 body_arm -1
+item_power 15
+skill one handed weapons
 end

@@ -21,5 +21,6 @@ attacktype 1
 magicmap black
 name_pl shovels
 client_type 145
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

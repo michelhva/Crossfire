@@ -8,4 +8,5 @@ dam 0
 sp 20
 wc 1
 no_strength 1
+skill missile weapons
 end

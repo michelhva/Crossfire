@@ -25,9 +25,7 @@ hp 1
 attacktype 256
 weapontype 1
 resist_poison 30
-
 resist_drain 100
-
 weight 20000
 last_sp 7
 dam 10
@@ -38,4 +36,6 @@ magicmap black
 name_pl Darkblades
 client_type 100
 body_arm -1
+skill one handed weapons
+item_power 15
 end

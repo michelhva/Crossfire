@@ -1,0 +1,22 @@
+Object spell_shockwave
+name shockwave
+name_pl shockwave
+level 14
+sp 26
+casting_time 20
+path_attuned 0
+other_arch shockwave
+dam 10
+dam_modifier 3
+range 18
+duration 2
+range_modifier 5
+maxsp 25
+type 101
+subtype 7
+value 140
+attacktype 3
+no_drop 1
+invisible 1
+skill evocation
+end

@@ -24,5 +24,7 @@ last_sp 9
 editable 5120
 name_pl Lava Slashers
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 15
 end

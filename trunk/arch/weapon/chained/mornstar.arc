@@ -14,4 +14,5 @@ magicmap brown
 name_pl morningstars
 client_type 141
 body_arm -1
+skill one handed weapons
 end

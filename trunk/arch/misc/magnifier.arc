@@ -15,4 +15,6 @@ value 500
 color_fg black
 name_pl magnifying glasses
 client_type 145
+skill one handed weapons
+body_arm -1
 end

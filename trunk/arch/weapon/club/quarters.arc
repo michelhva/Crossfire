@@ -13,5 +13,6 @@ attacktype 1
 magicmap khaki
 name_pl quarterstaffs
 client_type 121
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

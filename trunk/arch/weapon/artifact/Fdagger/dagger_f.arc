@@ -1,5 +1,6 @@
 Object dagger_f
 name dagger of fortune
+name_pl daggers of fortune
 face dagger_f.111
 anim
 dagger_f.111
@@ -22,7 +23,8 @@ weight 2000
 last_sp 5
 editable 5120
 magicmap grey
-name_pl daggers of fortune
 client_type 100
 body_arm -1
+skill one handed weapons
+item_power 5
 end

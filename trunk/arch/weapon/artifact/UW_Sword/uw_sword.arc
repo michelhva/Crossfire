@@ -13,9 +13,7 @@ type 15
 face uw_sword.111
 resist_confusion 100
 resist_drain 100
-
 resist_magic 30
-
 magic 5
 weight 30000
 attacktype 65
@@ -33,5 +31,7 @@ editable 5120
 magicmap white
 name_pl Belzebub's swords
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 40
 end

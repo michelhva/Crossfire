@@ -1,6 +1,9 @@
+# a specific type of spell effect (cone) which operates
+# as a ground object.
 Object chaos_ball
 name chaos
-type 88
+type 102
+subtype 7
 level 1
 walk_on 1
 fly_on 1
@@ -15,7 +18,7 @@ ball_lightning.111
 icestorm.111
 confusion.111
 acid_pool.111
-poisonc.111
+poisoncloud.111
 slow.111
 paralyse.111
 fear.111

@@ -21,4 +21,5 @@ name tooth charm
 name_pl tooth charms
 client_type 381
 body_neck -1
+item_power 6
 end

@@ -19,4 +19,6 @@ magicmap grey
 name_pl Defenders
 client_type 100
 body_arm -1
+skill one handed weapons
+item_power 5
 end
