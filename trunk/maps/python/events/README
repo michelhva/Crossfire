@@ -1,0 +1,14 @@
+The script names following are reserved for global events.
+They will be triggered automatically when the event occurs.
+
+EVENT_BORN  - python_born.py
+EVENT_LOGIN - python_login.py
+EVENT_LOGOUT - python_logout.py
+EVENT_REMOVE - python_remove.py
+EVENT_SHOUT - python_shout.py
+EVENT_MUZZLE - python_muzzle.py
+EVENT_KICK - python_kick.py
+EVENT_MAPENTER - python_mapenter.py
+EVENT_MAPLEAVE - python_mapleave.py
+EVENT_CLOCK - python_clock.py
+EVENT_MAPRESET - python_mapreset.py
