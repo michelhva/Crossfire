@@ -27,6 +27,7 @@ hp 350
 level 15
 speed 0.25
 luck -1
+last_heal -1
 can_cast_spell 1
 can_use_armour 1
 can_use_weapon 1
