@@ -260,20 +260,20 @@ monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch abil_icestorm
+arch ability_cold
 end
-arch spell_sm_lightning
+arch ability_lightning
 end
-arch spell_mass_confusion
+arch ability_mass_confusion
 end
-arch abil_fear
+arch ability_forced_dance
 end
-arch sorcerer_book
-value 1200
-arch spell_invisible
+arch ability_fear
 end
+arch book
+sp 26
 end
-arch spell_dragonbreath
+arch ability_dragon
 end
 end
 arch dungeon_floor
@@ -6232,16 +6232,16 @@ resist_cold 100
 resist_paralyze 100
 carrying 100000
 flying 1
-arch spell_dragonbreath
+arch ability_dragon
 end
-arch spell_mass_confusion
+arch ability_mass_confusion
 end
-arch spell_sm_lightning
+arch ability_lightning
 end
 arch gem
 nrof 2000
 end
-arch abil_icestorm
+arch ability_cold
 end
 end
 More
@@ -6290,16 +6290,16 @@ resist_cold 100
 resist_paralyze 100
 carrying 100000
 flying 1
-arch spell_dragonbreath
+arch ability_dragon
 end
-arch spell_mass_confusion
+arch ability_mass_confusion
 end
-arch spell_sm_lightning
+arch ability_lightning
 end
 arch gem
 nrof 2000
 end
-arch abil_icestorm
+arch ability_cold
 end
 end
 More

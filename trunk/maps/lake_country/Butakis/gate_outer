@@ -5,6 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 28 11:58:46 1995
 endmsg
+width 16
+height 16
 end
 arch mine2
 end
@@ -30,8 +32,8 @@ arch grass
 y 5
 end
 arch exit
-slaying /world/world_109_126
 face flagstone.111
+slaying /world/world_109_126
 hp 21
 sp 28
 y 6
@@ -40,8 +42,8 @@ arch flagstone
 y 6
 end
 arch exit
-slaying /world/world_109_126
 face flagstone.111
+slaying /world/world_109_126
 hp 21
 sp 28
 y 7
@@ -50,8 +52,8 @@ arch flagstone
 y 7
 end
 arch exit
-slaying /world/world_109_126
 face flagstone.111
+slaying /world/world_109_126
 hp 21
 sp 28
 y 8
@@ -104,22 +106,22 @@ x 1
 y 2
 end
 arch block_door_open
-x 1
-y 3
 speed 0.500000
 value 1
 connected 8
+x 1
+y 3
 end
 arch cobblestones2
 x 1
 y 3
 end
 arch block_door_open
-x 1
-y 4
 speed 0.500000
 value 1
 connected 8
+x 1
+y 4
 end
 arch cobblestones2
 x 1
@@ -185,22 +187,22 @@ x 1
 y 9
 end
 arch block_door_open
-x 1
-y 10
 speed 0.500000
 value 1
 connected 9
+x 1
+y 10
 end
 arch cobblestones2
 x 1
 y 10
 end
 arch block_door_open
-x 1
-y 11
 speed 0.500000
 value 1
 connected 9
+x 1
+y 11
 end
 arch cobblestones2
 x 1
@@ -240,9 +242,9 @@ x 2
 y 1
 end
 arch lightningwall_5
+level 15
 x 2
 y 1
-level 15
 end
 arch cobblestones2
 x 2
@@ -251,10 +253,10 @@ end
 arch block_door_closed
 name tunnel wall
 face mine_A.111
-x 2
-y 2
 speed 0.500000
 connected 8
+x 2
+y 2
 end
 arch magic_mouth
 msg
@@ -271,18 +273,18 @@ msg
 "Our policy towards spies is NO MERCY!"
 the guard pulls a trigger.
 endmsg
+connected 8
 x 2
 y 3
-connected 8
 end
 arch magic_ear
 msg
 @match Windwalk|windwalk
 Click.
 endmsg
+connected 2
 x 2
 y 3
-connected 2
 end
 arch cobblestones2
 x 2
@@ -311,30 +313,30 @@ x 2
 y 6
 end
 arch spikes_closed
+speed 0.500000
+connected 2
 x 2
 y 6
-speed 0.500000
-connected 2
 end
 arch flagstone
 x 2
 y 7
 end
 arch spikes_closed
-x 2
-y 7
 speed 0.500000
 connected 2
+x 2
+y 7
 end
 arch flagstone
 x 2
 y 8
 end
 arch spikes_closed
-x 2
-y 8
 speed 0.500000
 connected 2
+x 2
+y 8
 end
 arch cobblestones2
 x 2
@@ -369,18 +371,18 @@ msg
 "Our policy towards spies is NO MERCY!"
 the guard pulls a trigger.
 endmsg
+connected 9
 x 2
 y 11
-connected 9
 end
 arch magic_ear
 msg
 @match Windwalk|windwalk
 Click.
 endmsg
+connected 2
 x 2
 y 11
-connected 2
 end
 arch cobblestones2
 x 2
@@ -393,19 +395,19 @@ end
 arch block_door_closed
 name tunnel wall
 face mine_C.111
-x 2
-y 12
 speed 0.500000
 connected 9
+x 2
+y 12
 end
 arch cobblestones2
 x 2
 y 13
 end
 arch lightningwall_1
+level 15
 x 2
 y 13
-level 15
 end
 arch mine13
 x 2
@@ -466,30 +468,30 @@ x 3
 y 6
 end
 arch spikes_closed
+speed 0.500000
+connected 2
 x 3
 y 6
-speed 0.500000
-connected 2
 end
 arch flagstone
 x 3
 y 7
 end
 arch spikes_closed
-x 3
-y 7
 speed 0.500000
 connected 2
+x 3
+y 7
 end
 arch flagstone
 x 3
 y 8
 end
 arch spikes_closed
-x 3
-y 8
 speed 0.500000
 connected 2
+x 3
+y 8
 end
 arch cobblestones2
 x 3
@@ -659,9 +661,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 5
 y 3
-level 20
 end
 arch cobblestones
 x 5
@@ -676,10 +678,10 @@ x 5
 y 5
 end
 arch grate_closed_1
-x 5
-y 5
 speed 0.500000
 connected 1
+x 5
+y 5
 end
 arch flagstone
 x 5
@@ -698,10 +700,10 @@ x 5
 y 9
 end
 arch grate_closed_1
-x 5
-y 9
 speed 0.500000
 connected 1
+x 5
+y 9
 end
 arch cobblestones
 x 5
@@ -718,9 +720,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 5
 y 11
-level 20
 end
 arch cobblestones
 x 5
@@ -757,9 +759,9 @@ x 6
 y 2
 end
 arch button_small
+connected 6
 x 6
 y 3
-connected 6
 end
 arch cobblestones
 x 6
@@ -812,9 +814,9 @@ x 6
 y 10
 end
 arch button_small
+connected 6
 x 6
 y 11
-connected 6
 end
 arch cobblestones
 x 6
@@ -865,9 +867,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 7
 y 3
-level 20
 end
 arch cobblestones
 x 7
@@ -882,10 +884,10 @@ x 7
 y 5
 end
 arch grate_closed_1
-x 7
-y 5
 speed 0.500000
 connected 1
+x 7
+y 5
 end
 arch flagstone
 x 7
@@ -904,10 +906,10 @@ x 7
 y 9
 end
 arch grate_closed_1
-x 7
-y 9
 speed 0.500000
 connected 1
+x 7
+y 9
 end
 arch cobblestones
 x 7
@@ -924,9 +926,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 7
 y 11
-level 20
 end
 arch cobblestones
 x 7
@@ -949,9 +951,9 @@ x 7
 y 15
 end
 arch button_plate
+connected 1
 x 7
 y 15
-connected 1
 end
 arch cobblestones
 x 8
@@ -968,9 +970,9 @@ x 8
 y 2
 end
 arch button_small
+connected 6
 x 8
 y 3
-connected 6
 end
 arch cobblestones
 x 8
@@ -1023,9 +1025,9 @@ x 8
 y 10
 end
 arch button_small
+connected 6
 x 8
 y 11
-connected 6
 end
 arch cobblestones
 x 8
@@ -1052,11 +1054,11 @@ x 8
 y 15
 end
 arch spikes_open
-x 8
-y 15
 speed 0.500000
 value 1
 connected 6
+x 8
+y 15
 end
 arch boulder
 x 8
@@ -1083,9 +1085,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 9
 y 3
-level 20
 end
 arch cobblestones
 x 9
@@ -1100,10 +1102,10 @@ x 9
 y 5
 end
 arch grate_closed_1
-x 9
-y 5
 speed 0.500000
 connected 1
+x 9
+y 5
 end
 arch flagstone
 x 9
@@ -1122,10 +1124,10 @@ x 9
 y 9
 end
 arch grate_closed_1
-x 9
-y 9
 speed 0.500000
 connected 1
+x 9
+y 9
 end
 arch cobblestones
 x 9
@@ -1142,9 +1144,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 9
 y 11
-level 20
 end
 arch cobblestones
 x 9
@@ -1185,9 +1187,9 @@ x 10
 y 2
 end
 arch button_small
+connected 6
 x 10
 y 3
-connected 6
 end
 arch cobblestones
 x 10
@@ -1240,9 +1242,9 @@ x 10
 y 10
 end
 arch button_small
+connected 6
 x 10
 y 11
-connected 6
 end
 arch cobblestones
 x 10
@@ -1289,9 +1291,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 11
 y 3
-level 20
 end
 arch cobblestones
 x 11
@@ -1306,10 +1308,10 @@ x 11
 y 5
 end
 arch grate_closed_1
-x 11
-y 5
 speed 0.500000
 connected 1
+x 11
+y 5
 end
 arch flagstone
 x 11
@@ -1328,10 +1330,10 @@ x 11
 y 9
 end
 arch grate_closed_1
-x 11
-y 9
 speed 0.500000
 connected 1
+x 11
+y 9
 end
 arch cobblestones
 x 11
@@ -1348,9 +1350,9 @@ end
 arch warrior_1
 name elite warrior
 hp 500
+level 20
 x 11
 y 11
-level 20
 end
 arch cobblestones
 x 11
@@ -1383,9 +1385,9 @@ x 12
 y 1
 end
 arch button_handle
+connected 4
 x 12
 y 1
-connected 4
 end
 arch medium_guard
 x 12
@@ -1421,30 +1423,30 @@ x 12
 y 6
 end
 arch spikes_closed
+speed 0.500000
+connected 2
 x 12
 y 6
-speed 0.500000
-connected 2
 end
 arch flagstone
 x 12
 y 7
 end
 arch spikes_closed
-x 12
-y 7
 speed 0.500000
 connected 2
+x 12
+y 7
 end
 arch flagstone
 x 12
 y 8
 end
 arch spikes_closed
-x 12
-y 8
 speed 0.500000
 connected 2
+x 12
+y 8
 end
 arch cobblestones
 x 12
@@ -1476,9 +1478,9 @@ x 12
 y 13
 end
 arch button_handle
+connected 3
 x 12
 y 13
-connected 3
 end
 arch medium_guard
 x 12
@@ -1515,20 +1517,20 @@ x 13
 y 2
 end
 arch grate_closed_2
-x 13
-y 2
 speed 0.500000
 connected 4
+x 13
+y 2
 end
 arch cobblestones
 x 13
 y 3
 end
 arch grate_closed_2
-x 13
-y 3
 speed 0.500000
 connected 4
+x 13
+y 3
 end
 arch cobblestones
 x 13
@@ -1568,9 +1570,9 @@ msg
 @match Windwalk|windwalk
 Click.
 endmsg
+connected 2
 x 13
 y 7
-connected 2
 end
 arch magic_banned
 x 13
@@ -1625,20 +1627,20 @@ x 13
 y 11
 end
 arch grate_closed_2
-x 13
-y 11
 speed 0.500000
 connected 3
+x 13
+y 11
 end
 arch cobblestones
 x 13
 y 12
 end
 arch grate_closed_2
-x 13
-y 12
 speed 0.500000
 connected 3
+x 13
+y 12
 end
 arch cobblestones
 x 13
@@ -1683,9 +1685,9 @@ x 14
 y 2
 end
 arch button_handle
+connected 4
 x 14
 y 2
-connected 4
 end
 arch medium_guard
 x 14
@@ -1718,11 +1720,11 @@ end
 arch spikes_open
 name wierd cobblestone
 face cobblesto2.111
+speed 0.500000
+value 1
+connected 1
 x 14
 y 4
-speed 0.500000
-value 1
-connected 1
 end
 arch cobblestones
 x 14
@@ -1731,11 +1733,11 @@ end
 arch spikes_open
 name wierd cobblestone
 face cobblesto2.111
-x 14
-y 5
 speed 0.500000
 value 1
 connected 1
+x 14
+y 5
 end
 arch magic_banned
 x 14
@@ -1782,11 +1784,11 @@ end
 arch spikes_open
 name wierd cobblestone
 face cobblesto2.111
-x 14
-y 9
 speed 0.500000
 value 1
 connected 1
+x 14
+y 9
 end
 arch magic_banned
 x 14
@@ -1799,11 +1801,11 @@ end
 arch spikes_open
 name wierd cobblestone
 face cobblesto2.111
-x 14
-y 10
 speed 0.500000
 value 1
 connected 1
+x 14
+y 10
 end
 arch magic_mouth
 msg
@@ -1830,9 +1832,9 @@ x 14
 y 12
 end
 arch button_handle
+connected 3
 x 14
 y 12
-connected 3
 end
 arch medium_guard
 x 14
@@ -1906,8 +1908,8 @@ x 15
 y 5
 end
 arch exit
-slaying Butakis0
 face flagstone.111
+slaying Butakis0
 hp 3
 sp 5
 x 15
@@ -1918,8 +1920,8 @@ x 15
 y 6
 end
 arch exit
-slaying Butakis0
 face flagstone.111
+slaying Butakis0
 hp 3
 sp 5
 x 15
@@ -1930,8 +1932,8 @@ x 15
 y 7
 end
 arch exit
-slaying Butakis0
 face flagstone.111
+slaying Butakis0
 hp 3
 sp 5
 x 15

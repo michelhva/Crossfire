@@ -1,11 +1,12 @@
 arch map
+name <untitled>
 msg
 Creator: Kundi, Xue
 Email:  xkd@soda.berkeley.edu
 Date: Sep 13 01:39:50 1995
 endmsg
-x 8
-y 8
+width 8
+height 8
 end
 arch pstone_1
 end
@@ -92,10 +93,10 @@ arch firewall_5
 name wall
 face swall_8.111
 dam 82
-x 1
-y 4
 speed 0.030000
 speed_left -2.330000
+x 1
+y 4
 end
 arch dungeon_magic
 x 1
@@ -117,14 +118,9 @@ arch pstone_1
 x 1
 y 7
 end
-arch firewall_1
-name wall
-face wwall_8.111
-dam 83
+arch wwall_2_1_2
 x 1
 y 7
-speed 0.032000
-speed_left -2.460000
 end
 arch pstone_1
 x 2
@@ -464,7 +460,7 @@ arch pstone_1
 x 7
 y 4
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 7
 y 4
 end
@@ -483,7 +479,7 @@ arch pstone_1
 x 7
 y 6
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 7
 y 6
 end

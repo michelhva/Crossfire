@@ -1,56 +1,109 @@
 arch map
+name <untitled>
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 27 13:33:10 1995
 endmsg
+width 16
+height 16
+end
+arch woodfloor
 end
 arch wall_2_2_2
+end
+arch woodfloor
+y 1
 end
 arch wall_2_1_1
 y 1
 end
+arch woodfloor
+y 2
+end
 arch wall_2_1_1
 y 2
+end
+arch woodfloor
+y 3
 end
 arch wall_3_2
 y 3
 end
+arch woodfloor
+y 4
+end
 arch wall_2_1_1
 y 4
+end
+arch woodfloor
+y 5
 end
 arch wall_2_1_1
 y 5
 end
+arch woodfloor
+y 6
+end
 arch wall_2_1_1
 y 6
+end
+arch woodfloor
+y 7
 end
 arch wall_2_1_1
 y 7
 end
+arch woodfloor
+y 8
+end
 arch wall_2_1_1
 y 8
+end
+arch woodfloor
+y 9
 end
 arch wall_2_1_1
 y 9
 end
+arch woodfloor
+y 10
+end
 arch wall_2_1_1
 y 10
+end
+arch woodfloor
+y 11
 end
 arch wall_2_1_1
 y 11
 end
+arch woodfloor
+y 12
+end
 arch wall_2_1_1
 y 12
+end
+arch woodfloor
+y 13
 end
 arch wall_2_1_1
 y 13
 end
+arch woodfloor
+y 14
+end
 arch wall_2_1_1
 y 14
 end
+arch woodfloor
+y 15
+end
 arch wall_2_2_1
 y 15
+end
+arch woodfloor
+x 1
 end
 arch wall_2_1_2
 x 1
@@ -70,6 +123,10 @@ arch woodfloor
 x 1
 y 2
 end
+arch woodfloor
+x 1
+y 3
+end
 arch wall_2_1_2
 x 1
 y 3
@@ -118,9 +175,16 @@ arch shop_special
 x 1
 y 14
 end
+arch woodfloor
+x 1
+y 15
+end
 arch wall_2_1_2
 x 1
 y 15
+end
+arch woodfloor
+x 2
 end
 arch wall_2_1_2
 x 2
@@ -133,13 +197,25 @@ arch menu
 x 2
 y 1
 end
+arch woodfloor
+x 2
+y 2
+end
 arch shop_mat
 x 2
 y 2
 end
+arch woodfloor
+x 2
+y 3
+end
 arch wall_2_1_2
 x 2
 y 3
+end
+arch shop_empty
+x 2
+y 4
 end
 arch shop_mat
 x 2
@@ -185,20 +261,39 @@ arch shop_special
 x 2
 y 14
 end
+arch woodfloor
+x 2
+y 15
+end
 arch wall_2_1_2
 x 2
 y 15
 end
+arch woodfloor
+x 3
+end
 arch wall_3_3
 x 3
 end
-arch wall_2_1_1
+arch woodfloor
 x 3
 y 1
 end
 arch wall_2_1_1
 x 3
+y 1
+end
+arch woodfloor
+x 3
 y 2
+end
+arch wall_2_1_1
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
 end
 arch wall_2_2_4
 x 3
@@ -248,11 +343,18 @@ arch shop_empty
 x 3
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 3
 y 15
 end
 arch wall_2_1_2
+x 3
+y 15
+end
+arch woodfloor
+x 4
+end
+arch wall_2_1_2
 x 4
 end
 arch shop_food
@@ -311,11 +413,18 @@ arch shop_food
 x 4
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 4
 y 15
 end
 arch wall_2_1_2
+x 4
+y 15
+end
+arch woodfloor
+x 5
+end
+arch wall_2_1_2
 x 5
 end
 arch shop_food
@@ -374,11 +483,18 @@ arch shop_food
 x 5
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 5
 y 15
 end
 arch wall_2_1_2
+x 5
+y 15
+end
+arch woodfloor
+x 6
+end
+arch wall_2_1_2
 x 6
 end
 arch shop_food
@@ -437,11 +553,18 @@ arch shop_food
 x 6
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 6
 y 15
 end
 arch wall_2_1_2
+x 6
+y 15
+end
+arch woodfloor
+x 7
+end
+arch wall_2_1_2
 x 7
 end
 arch shop_food
@@ -500,11 +623,18 @@ arch shop_food
 x 7
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 7
 y 15
 end
 arch wall_2_1_2
+x 7
+y 15
+end
+arch woodfloor
+x 8
+end
+arch wall_2_1_2
 x 8
 end
 arch shop_food
@@ -563,11 +693,18 @@ arch shop_food
 x 8
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 8
 y 15
 end
 arch wall_2_1_2
+x 8
+y 15
+end
+arch woodfloor
+x 9
+end
+arch wall_2_1_2
 x 9
 end
 arch shop_food
@@ -626,11 +763,18 @@ arch shop_food
 x 9
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 9
 y 15
 end
 arch wall_2_1_2
+x 9
+y 15
+end
+arch woodfloor
+x 10
+end
+arch wall_2_1_2
 x 10
 end
 arch shop_food
@@ -689,11 +833,18 @@ arch shop_food
 x 10
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 10
 y 15
 end
 arch wall_2_1_2
+x 10
+y 15
+end
+arch woodfloor
+x 11
+end
+arch wall_2_1_2
 x 11
 end
 arch shop_food
@@ -752,11 +903,18 @@ arch shop_food
 x 11
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 11
 y 15
 end
 arch wall_2_1_2
+x 11
+y 15
+end
+arch woodfloor
+x 12
+end
+arch wall_2_1_2
 x 12
 end
 arch shop_food
@@ -815,11 +973,18 @@ arch shop_food
 x 12
 y 14
 end
-arch wall_2_1_2
+arch woodfloor
 x 12
 y 15
 end
 arch wall_2_1_2
+x 12
+y 15
+end
+arch woodfloor
+x 13
+end
+arch wall_2_1_2
 x 13
 end
 arch shop_food
@@ -878,9 +1043,16 @@ arch shop_food
 x 13
 y 14
 end
+arch woodfloor
+x 13
+y 15
+end
 arch wall_2_1_2
 x 13
 y 15
+end
+arch woodfloor
+x 14
 end
 arch wall_2_1_2
 x 14
@@ -941,68 +1113,135 @@ arch shop_food
 x 14
 y 14
 end
+arch woodfloor
+x 14
+y 15
+end
 arch wall_2_1_2
 x 14
 y 15
+end
+arch woodfloor
+x 15
 end
 arch wall_2_2_3
 x 15
 end
-arch wall_2_1_1
+arch woodfloor
 x 15
 y 1
 end
 arch wall_2_1_1
 x 15
+y 1
+end
+arch woodfloor
+x 15
 y 2
 end
 arch wall_2_1_1
+x 15
+y 2
+end
+arch woodfloor
 x 15
 y 3
 end
 arch wall_2_1_1
 x 15
+y 3
+end
+arch woodfloor
+x 15
 y 4
 end
 arch wall_2_1_1
+x 15
+y 4
+end
+arch woodfloor
 x 15
 y 5
 end
 arch wall_2_1_1
 x 15
+y 5
+end
+arch woodfloor
+x 15
 y 6
 end
 arch wall_2_1_1
+x 15
+y 6
+end
+arch woodfloor
 x 15
 y 7
 end
 arch wall_2_1_1
 x 15
+y 7
+end
+arch woodfloor
+x 15
 y 8
 end
 arch wall_2_1_1
+x 15
+y 8
+end
+arch woodfloor
 x 15
 y 9
 end
 arch wall_2_1_1
 x 15
+y 9
+end
+arch woodfloor
+x 15
 y 10
 end
 arch wall_2_1_1
+x 15
+y 10
+end
+arch woodfloor
 x 15
 y 11
 end
 arch wall_2_1_1
 x 15
+y 11
+end
+arch woodfloor
+x 15
 y 12
 end
 arch wall_2_1_1
+x 15
+y 12
+end
+arch woodfloor
 x 15
 y 13
 end
 arch wall_2_1_1
 x 15
+y 13
+end
+arch woodfloor
+x 15
 y 14
+end
+arch wall_2_1_1
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
 end
 arch wall_2_2_4
 x 15
