@@ -8,9 +8,8 @@ robe_midnight.111
 robe_midnight.112
 robe_midnight.113
 mina
-speed .1
+speed 0.1
 color_fg black
-last_sp 12
 ac 5
 Dex 1
 Int 2
