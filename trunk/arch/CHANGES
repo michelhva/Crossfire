@@ -1,5 +1,8 @@
 Changes for CVS top of tree:
 
+ground/sea*png: Remove transperancies from png images since they should not
+be transparent.  MSW 8/23/2000
+
 door/Locked/key2.arc, misc/Container/bag.arc, misc/Container/bookshelf.arc,
 misc/Container/cauldron.arc, misc/Container/chest_2.arc,
 misc/Container/depositbox.arc, misc/Container/key_ring.arc,
