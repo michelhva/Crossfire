@@ -11,6 +11,7 @@ firestar.111
 firestar.112
 firestar.113
 mina
+weapontype 7
 speed 0.30
 type 15
 last_sp 9 
