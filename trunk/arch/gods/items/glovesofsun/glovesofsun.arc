@@ -16,10 +16,11 @@ speed 0.25
 material 8
 weight 900
 value 20000
-attacktype 4
+attacktype 5
 ac 1
 dam 2
 Dex 2
 wc 2
 magic 1
+startequip 1
 end 
