@@ -46,7 +46,7 @@ see_invisible 0
 alive 1
 no_pick 1
 speed 0.5
-anim_speed 1.0
+anim_speed 0.4
 weight 400000
 can_apply 25
 can_use_scroll 1
