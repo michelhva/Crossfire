@@ -1,10 +1,10 @@
 # elemental -- nature goddess Gaea
 Object Gaea
 title Devourers
-face ent.111
+face panther.111
 race animal,bird,slime,insect,reptile,water_elemental,earth_elemental,air_elemental,fire_elemental
 slaying undead,unnatural
-animation ent
+animation panther
 is_animated 1
 monster 1
 alive 1
@@ -25,10 +25,10 @@ resist_fear -100
 ac -5
 wc -1
 dam 50
-hp 1000
+hp 500
 last_heal 2
 last_grace 3
-maxhp 1000
+maxhp 500
 level 15
 speed 0.18
 can_cast_spell 1
@@ -39,36 +39,4 @@ endmsg
 exp 1
 weight 500000
 randomitems Gaea
-end
-More
-Object Gaea_2
-name Gaea
-face ent.211
-animation ent_2
-monster 1
-alive 1
-x 1
-weight 500000
-end
-More
-Object Gaea_3
-name Gaea
-face ent.311
-animation ent_3
-monster 1
-alive 1
-y 1
-weight 500000
-end
-More
-Object Gaea_4
-name Gaea
-face ent.411
-animation ent_4
-monster 1
-alive 1
-x 1
-y 1
-weight 500000
-editable 0
 end
