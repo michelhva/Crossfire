@@ -9377,20 +9377,20 @@ arch cobblestones2
 x 43
 y 33
 end
+arch city_tower
+name Very tall tower
+name_pl Very tall tower
+slaying /scorn/mlab/tavern
+hp 1
+sp 20
+x 43
+y 33
+end
 arch dungeon_magic
 x 43
 y 34
 end
 arch grass
-x 43
-y 34
-end
-arch barrack_long
-name Mess Hall
-name_pl Mess Hall
-slaying /scorn/houses/messhall
-hp 24
-sp 4
 x 43
 y 34
 end
@@ -9402,7 +9402,12 @@ arch grass
 x 43
 y 35
 end
-arch house_2
+arch house_small
+name Zealot's House
+name_pl Zealot's House
+slaying /scorn/mlab/tavern
+hp 1
+sp 70
 x 43
 y 35
 end
@@ -9772,6 +9777,15 @@ arch grass
 x 44
 y 34
 end
+arch tavern
+name Western Scorn Tavern
+name_pl Western Scorn Tavern
+slaying /scorn/mlab/tavern
+hp 26
+sp 1
+x 44
+y 34
+end
 arch dungeon_magic
 x 44
 y 35
@@ -9781,6 +9795,11 @@ x 44
 y 35
 end
 arch house_2
+name Run down house
+name_pl Run down house
+slaying /scorn/mlab/tavern
+hp 39
+sp 76
 x 44
 y 35
 end
@@ -10600,7 +10619,12 @@ arch grass
 x 46
 y 35
 end
-arch house_2
+arch barrack_long
+name Mess Hall
+name_pl Mess Hall
+slaying /scorn/houses/messhall
+hp 24
+sp 4
 x 46
 y 35
 end
@@ -10973,10 +10997,6 @@ arch grass
 x 47
 y 35
 end
-arch house_2
-x 47
-y 35
-end
 arch dungeon_magic
 x 47
 y 36
@@ -11283,10 +11303,6 @@ x 48
 y 28
 end
 arch cobblestones2
-x 48
-y 28
-end
-arch barn
 x 48
 y 28
 end
