@@ -24,12 +24,11 @@ attacktype 1
 color_fg light_blue
 can_use_armour 0
 can_use_weapon 1
-Str 4
-Dex -4
-Con 4
-Wis -10
-Int -10
-Pow 7
+Str 6
+Con 6
+Wis -8
+Int -8
+Pow 8
 immune 4
 vulnerable 5136
 editable 0
