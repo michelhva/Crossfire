@@ -10595,6 +10595,7 @@ x 33
 y 15
 end
 arch mountain_cave2
+slaying /!
 msg
 layoutstyle maze
 floorstyle stones2
@@ -10603,12 +10604,11 @@ exitstyle sstair
 decorstyle goblinjunk
 monsterstyle humanoid
 dungeon_level 1
-difficulty 1
 dungeon_depth 5
 orientation 1
-finalmap /quests/peterm/random_quests/goblin_chief
+difficulty 2
+final_map /quests/peterm/quests/goblin_chief
 endmsg
-slaying /!
 is_floor 0
 x 33
 y 15
