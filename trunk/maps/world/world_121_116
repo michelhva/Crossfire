@@ -733,6 +733,11 @@ elevation 2202
 x 3
 y 3
 end
+arch gnoll
+can_see_in_dark 1
+x 3
+y 3
+end
 arch hills
 elevation 2806
 x 3
@@ -977,6 +982,11 @@ elevation 2128
 x 4
 y 2
 end
+arch gnoll
+can_see_in_dark 1
+x 4
+y 2
+end
 arch hills
 elevation 2164
 x 4
@@ -989,6 +999,11 @@ y 4
 end
 arch steppe
 elevation 4198
+x 4
+y 5
+end
+arch gnoll
+can_see_in_dark 1
 x 4
 y 5
 end
@@ -1241,6 +1256,11 @@ elevation 4484
 x 5
 y 5
 end
+arch gnoll
+can_see_in_dark 1
+x 5
+y 5
+end
 arch steppe
 elevation 4534
 x 5
@@ -1470,6 +1490,11 @@ elevation 1962
 x 6
 y 1
 end
+arch gnoll_leader_arc
+can_see_in_dark 1
+x 6
+y 1
+end
 arch hills
 elevation 2790
 x 6
@@ -1482,6 +1507,11 @@ y 3
 end
 arch steppe
 elevation 4244
+x 6
+y 4
+end
+arch gnoll
+can_see_in_dark 1
 x 6
 y 4
 end
@@ -3985,6 +4015,25 @@ elevation 8009
 x 16
 y 6
 end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 6
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 10
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 16
+y 6
+end
 arch mountain
 elevation 6350
 x 16
@@ -4219,6 +4268,25 @@ elevation 8958
 x 17
 y 3
 end
+arch mountain_cave
+msg
+layoutstyle maze
+dungeon_level 8
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 14
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 17
+y 3
+end
 arch mountain2
 elevation 9655
 x 17
@@ -4246,6 +4314,11 @@ y 8
 end
 arch hills
 elevation 2594
+x 17
+y 9
+end
+arch gnoll
+can_see_in_dark 1
 x 17
 y 9
 end
@@ -4453,6 +4526,10 @@ arch steppe
 elevation 4346
 x 18
 end
+arch gnoll
+can_see_in_dark 1
+x 18
+end
 arch mountain
 elevation 5615
 x 18
@@ -4490,6 +4567,11 @@ y 7
 end
 arch steppe
 elevation 4693
+x 18
+y 8
+end
+arch gnoll
+can_see_in_dark 1
 x 18
 y 8
 end
@@ -4704,6 +4786,11 @@ x 19
 end
 arch steppe
 elevation 3373
+x 19
+y 1
+end
+arch gnoll
+can_see_in_dark 1
 x 19
 y 1
 end
@@ -6485,6 +6572,11 @@ elevation 553
 x 26
 y 8
 end
+arch orc
+can_see_in_dark 1
+x 26
+y 8
+end
 arch evergreens
 elevation 1329
 x 26
@@ -6704,6 +6796,11 @@ elevation 3485
 x 27
 y 2
 end
+arch goblin
+can_see_in_dark 1
+x 27
+y 2
+end
 arch hills_rocky
 elevation 4277
 x 27
@@ -6736,6 +6833,11 @@ y 8
 end
 arch tree
 elevation 2239
+x 27
+y 9
+end
+arch orc
+can_see_in_dark 1
 x 27
 y 9
 end
@@ -7192,8 +7294,17 @@ arch hills_rocky
 elevation 3647
 x 29
 end
+arch goblin
+can_see_in_dark 1
+x 29
+end
 arch hills_rocky
 elevation 4137
+x 29
+y 1
+end
+arch goblin
+can_see_in_dark 1
 x 29
 y 1
 end
@@ -7239,6 +7350,11 @@ y 9
 end
 arch brush
 elevation 602
+x 29
+y 10
+end
+arch orc
+can_see_in_dark 1
 x 29
 y 10
 end
@@ -7948,6 +8064,25 @@ elevation 11060
 x 32
 y 2
 end
+arch mountain_cave
+msg
+layoutstyle maze
+dungeon_level 5
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 10
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 32
+y 2
+end
 arch mountain2
 elevation 11287
 x 32
@@ -7970,6 +8105,25 @@ y 6
 end
 arch mountain
 elevation 6258
+x 32
+y 7
+end
+arch mountain_cave
+msg
+layoutstyle onion
+dungeon_level 2
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 5
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
 x 32
 y 7
 end
@@ -8482,6 +8636,25 @@ elevation 7389
 x 34
 y 14
 end
+arch mountain_cave
+msg
+layoutstyle rogue
+dungeon_level 3
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 6
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
+x 34
+y 14
+end
 arch mountain
 elevation 7597
 x 34
@@ -8666,6 +8839,25 @@ y 4
 end
 arch mountain
 elevation 8739
+x 35
+y 5
+end
+arch mountain_cave
+msg
+layoutstyle maze
+dungeon_level 4
+expand2x 1
+treasureoptions 20
+monsterstyle humanoid
+dungeon_depth 7
+xsize 50
+ysize 50
+exitstyle ladder
+decorstyle goblinjunk
+floorstyle stones2
+wallstyle cave2
+endmsg
+slaying /!
 x 35
 y 5
 end
@@ -10709,10 +10901,6 @@ x 41
 y 45
 end
 arch grass
-x 41
-y 45
-end
-arch cobblestones2
 x 41
 y 45
 end
@@ -12779,8 +12967,7 @@ msg
 Welcome to the city of Navar!
 Magic is supressed in public streets
 by order of the city council.
-Dungeons open: Warehouses
-Even more houses
+Please be sure to visit:
 Frolicing Mermaid
 All Shops
 Gunther's smithy
