@@ -1,5 +1,5 @@
 Object depositbox
-name a deposit box
+name deposit box
 other_arch close_dbox
 race gold and jewels
 face depositbox.111

@@ -1,5 +1,5 @@
 Object sack
-name a sack
+name sack
 other_arch close_sack
 face sack.111
 type 122

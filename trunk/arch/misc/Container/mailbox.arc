@@ -1,5 +1,5 @@
 Object mailbox
-name a mailbox
+name mailbox
 other_arch close_mail
 face mailbox.111
 type 122

@@ -1,5 +1,5 @@
 Object bag
-name a bag
+name bag
 other_arch close_bag
 face bag.111
 type 122

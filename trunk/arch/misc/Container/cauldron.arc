@@ -12,7 +12,7 @@ editable 128
 color_fg black
 end
 Object bad_cauldron
-name a cracked cauldron
+name cracked cauldron
 other_arch cauldron_open
 face cauldron.111
 type 122

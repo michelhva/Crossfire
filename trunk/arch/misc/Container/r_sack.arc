@@ -1,5 +1,5 @@
 Object r_sack
-name a rucksack
+name rucksack
 other_arch close_rsack
 face r_sack.111
 type 122

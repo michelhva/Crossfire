@@ -1,5 +1,5 @@
 Object key2
-name a strange key
+name strange key
 race keys
 slaying set_individual_value
 face key2.111
