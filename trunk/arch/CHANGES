@@ -1,5 +1,123 @@
 Changes for CVS top of tree:
 
+---BEGIN BATCH UPDATE--- DAMN 9/17/1999
+Added "nrof 1" to the following archetypes:
+armour/boots/elvenboots.arc
+armour/boots/idaten.arc
+armour/boots/lev_boots.arc
+armour/boots/speedboots.arc
+armour/cloak/magic_resist.arc
+armour/helmet/helmet_bri.arc
+armour/helmet/helmetxray.arc
+armour/mail/Pdragonmail.arc
+armour/mail/dragonmail.arc
+armour/mail/gale.arc
+armour/mail/wdsm.arc
+armour/shield/DShield.arc
+armour/shield/DShieldm.arc
+armour/shield/DShieldms.arc
+armour/shield/DShields.arc
+armour/shield/dragon_shi.arc
+armour/shield/eyeshield.arc
+armour/shield/holyshield.arc
+armour/shield/reflector.arc
+armour/shield/uw_shield.arc
+armour/shield/wds.arc
+flesh/human/corpse.arc
+flesh/human/corpse1.arc
+flesh/human/corpse_pl.arc
+indoor/clock.arc
+misc/Bagpipe/bagpipe.arc
+misc/chalice.arc
+misc/crown.arc
+misc/torch_cyan.arc
+misc/torch_indigo.arc
+misc/torch_vermilion.arc
+readable/bookRead.arc
+readable/book_clasp.arc
+readable/card.arc
+readable/diploma.arc
+readable/letter.arc
+readable/note.arc
+readable/quarto.arc
+readable/scroll.arc
+readable/scroll_2.arc
+readable/tome.arc
+spell/gu_horn.arc
+spell/horn.arc
+spell/horn2.arc
+spell/horn3.arc
+talisman/collar.arc
+weapon/artifact/ChaosSword/CSword.arc
+weapon/artifact/Darkblade/darkblade.arc
+weapon/artifact/Demonbane/demonbane.arc
+weapon/artifact/Fhammer/frost_hammer.arc
+weapon/artifact/Firestar/fakefirestar.arc
+weapon/artifact/Firestar/firestar.arc
+weapon/artifact/Gram/gram.arc
+weapon/artifact/Kdagger/k_dagger.arc
+weapon/artifact/Lslasher/lava_s.arc
+weapon/artifact/Masamune/masamune.arc
+weapon/artifact/Sting/sting.arc
+weapon/artifact/UW_Sword/uw_sword.arc
+weapon/artifact/bonecrush.arc
+weapon/artifact/defender.arc
+weapon/artifact/dragonslay.arc
+weapon/artifact/excalibur.arc
+weapon/artifact/firebrand.arc
+weapon/artifact/frostbrand.arc
+weapon/artifact/harakiri.arc
+weapon/artifact/mjoellnir.arc
+weapon/artifact/skullcleav.arc
+weapon/chained/nunchacu_1.arc
+weapon/chained/nunchacu_2.arc
+weapon/chained/shootingstar.arc
+weapon/misc/shovel_1.arc
+weapon/misc/stake.arc
+weapon/misc/taifu_1.arc
+weapon/sword/katana_1.arc
+
+armour/helmet/wiz_hat.arc
+Changed (Int +2) to (Int +1, Pow +1)
+Added nrof 1
+
+armour/mail/mithril_ar_ele.arc
+Changed (Cha +2) to (Cha +1, speed +1)
+reduced penalties to sp regen and movement speed
+
+armour/mail/robe_midnight.arc
+Changed (Wis +2) to (Pow +2)
+Added nrof 1
+
+spell/power_crystal.arc
+removed duplicate weight entry
+Did _not_ add nrof 1
+
+weapon/artifact/HolyAvenger/holyave.arc
+Added attacktype: blinding and nrof 1
+
+weapon/artifact/Usword/uk_sd.arc
+changed weight 1qq000 (yes, the letter Q) to 11100
+added nrof 1
+
+weapon/artifact/deathbring.arc
+added attacktype: depletion and nrof 1
+
+weapon/artifact/magi_staff.arc
+changed name from Staff of Magi to Staff of the Magi
+changed stat bonuses from (Int +2, Wis +1) to (Int +1, Pow +2)
+added wc +5 and nrof 1
+
+weapon/artifact/mournblade.arc
+changed attacktype: magic, drain to attacktype: drain, weaponmagic
+added nrof 1
+
+weapon/artifact/stormbring.arc
+changed prot: magic to prot: magic, electricity
+changed attacktype: magic, drain to attacktype: electricity, drain
+added nrof 1
+---END BATCH UPDATE--- DAMN 9/17/1999
+
 Give power crystal a weight of one.  This allows it to be picked up - msw
 
 ------------------------------------------------------------------------------
