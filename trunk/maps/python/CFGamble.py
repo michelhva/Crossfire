@@ -4,10 +4,11 @@
 #Please do not put CFPython functions in this file,
 #but rather place these in the calling file (don't ask me why - it just feels right)
 
-import CFgetPaths
 import os.path
 import shelve
 import random
+
+import CFgetPaths
 
 class SlotMachine:
 	#sets up the file that holds all the slotmachine jackpots
