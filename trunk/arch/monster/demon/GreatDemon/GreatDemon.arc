@@ -23,7 +23,7 @@ sp 150
 maxsp 150
 hp 8000
 maxhp 8000
-exp 150000
+exp 250000
 ac -11
 dam 80
 wc -50
@@ -34,7 +34,7 @@ resist_fire 100
 resist_confusion 100
 resist_poison 100
 
-resist_magic 90
+resist_magic 80
 resist_godpower 90
 resist_holyword 90
 

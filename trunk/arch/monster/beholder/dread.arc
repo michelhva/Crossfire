@@ -28,7 +28,7 @@ ac -10
 wc -20
 dam 25
 level 15
-resist_magic 100
+resist_magic 90
 resist_fire 100
 resist_poison 100
 resist_paralyze 100
