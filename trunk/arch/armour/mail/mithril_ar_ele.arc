@@ -12,11 +12,12 @@ speed 0.3
 ac 4
 armour 40
 protected 8
-Cha 2
+Cha 1
 Str 1
+exp 1
 magic 3
-last_heal 5
-last_sp 18
+last_heal 2
+last_sp 27
 weight 15000
 value 4000
 editable 5120
