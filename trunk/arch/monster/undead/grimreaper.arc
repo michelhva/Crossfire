@@ -5,6 +5,8 @@ face grimreaper.111
 anim
 grimreaper.111
 grimreaper.112
+grimreaper.113
+grimreaper.114
 mina
 hp 50
 maxhp 50
