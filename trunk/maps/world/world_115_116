@@ -8109,6 +8109,18 @@ elevation 3794
 x 32
 y 47
 end
+arch note
+name charred paper
+msg
+This charred page reads:
+Day 11 - a pleasant day but some rain kept us in out tent for most of the afternoon.  The apes seem to be highly intelligent but very shy.  Some of the younger males are becoming bolder and <illegible>
+
+They act almost like children who have a secret.
+endmsg
+level 2
+x 32
+y 47
+end
 arch mountain
 elevation 5982
 x 32
@@ -8765,6 +8777,20 @@ y 30
 end
 arch hills
 elevation 3786
+x 35
+y 31
+end
+arch note
+name charred paper
+msg
+This charred page reads:
+Day 13 and Niome is recovering from a nasty ape bite.
+We are not sure why the apes were so aggressive.
+They seemed to be living in the ancient temple ruins perhaps we will be able to find out more when we enter the ruins tomorrow.
+
+<The rest of the page is burned and illegible.>
+endmsg
+level 2
 x 35
 y 31
 end
