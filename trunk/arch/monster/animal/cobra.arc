@@ -1,6 +1,6 @@
 Object cobra
 name giant cobra
-face cobra.111
+face cobra.112
 race reptile
 anim
 cobra.111
@@ -30,7 +30,7 @@ end
 More
 Object cobra_2
 name giant cobra
-face cobra.211
+face cobra.212
 anim
 cobra.211
 cobra.212

@@ -2,18 +2,18 @@ Object acid_spit
 race spit_acid
 type 13
 name acid spit
-face spellball.111
+face acidspit.111
 nrof 1
 anim
-spellball.111
-spellball.111
-spellball.121
-spellball.131
-spellball.141
-spellball.151
-spellball.161
-spellball.171
-spellball.181
+acidspit.111
+acidspit.111
+acidspit.121
+acidspit.131
+acidspit.141
+acidspit.151
+acidspit.161
+acidspit.171
+acidspit.181
 mina
 is_animated 0
 is_turnable 1

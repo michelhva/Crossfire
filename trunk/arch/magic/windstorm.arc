@@ -4,11 +4,11 @@ type 88
 level 1
 walk_on 1
 fly_on 1
-face explosion.111
+face windstorm.111
 anim
-explosion.111
-explosion.112
-explosion.113
+windstorm.111
+windstorm.112
+windstorm.113
 mina
 hp 8
 dam 0
