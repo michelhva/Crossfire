@@ -27,11 +27,11 @@ anim
 dwarf_p.111
 dwarf_p.112
 dwarf_p.131
-dwarf_p.131
+dwarf_p.132
 dwarf_p.151
 dwarf_p.152
 dwarf_p.171
-dwarf_p.171
+dwarf_p.172
 facings 4
 mina
 is_animated 1
