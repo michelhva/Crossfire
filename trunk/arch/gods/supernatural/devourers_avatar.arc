@@ -11,7 +11,7 @@ Dex 30
 Int 30
 Wis 30
 Pow 30
-attacktype 196736
+attacktype 196752
 path_attuned 262144
 path_denied 590082
 path_repelled 129
@@ -19,7 +19,9 @@ resist_death 100
 resist_deplete 100
 resist_fear 100
 resist_drain 100
-resist_fire -100
+resist_fire -50
+resist_cold 50
+resist_physical 20
 ac -12
 wc -1
 hp 350
