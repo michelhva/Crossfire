@@ -1807,6 +1807,16 @@ arch woodfloor2
 x 8
 y 8
 end
+arch book_clasp
+msg
+Speak thee to the dead tree beside the
+temple of Gorgokh - Ask.
+If you answer the riddle you will be
+admitted into the inner sanctum.
+endmsg
+x 8
+y 8
+end
 arch random_treasure
 x 8
 y 8
@@ -5327,7 +5337,7 @@ y 4
 end
 arch oakdoor
 slaying /world/world_121_117
-hp 49
+hp 45
 sp 2
 x 27
 y 4
