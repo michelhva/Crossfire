@@ -575,12 +575,13 @@ msg
 @match landlord|Witherspoon
 Yes old man Witherspoon is a real slum lord.
 @match move|leave|Move
-Bugs aren't so bad, 
-you should see the other 
+Bugs aren't so bad,
+you should see the other
 slums around here
 @match *
 I told the landlord about the bugs, but he's a tightwad.
 endmsg
+randomitems jail
 monster 0
 stand_still 1
 x 3
@@ -1035,6 +1036,7 @@ msg
 @match *
 Gods! I can't seem to find anything to eat around here!
 endmsg
+randomitems jail
 monster 0
 stand_still 1
 x 6
@@ -2720,6 +2722,7 @@ wise cracks about it.
 I never should have married her.
 I should have stayed at sea.
 endmsg
+randomitems jail
 monster 0
 stand_still 1
 x 17
@@ -2796,9 +2799,17 @@ y 20
 end
 arch woman
 msg
-@match *
+@match staff|Staff|stick|Stick
+You'll know its his because he carved
+his name on it.
+@match father|Father|ear|earhorn
 My father is a bit hard of hearing.
+He lost his earhorn too...
+@match *
+My father lost his walking stick,
+if you find it please bring it back to him.
 endmsg
+randomitems jail
 x 17
 y 20
 end
@@ -3052,6 +3063,7 @@ Said he found a treasure map.
 @match *
 Never marry an old pirate..
 endmsg
+randomitems jail
 monster 0
 unaggressive 1
 x 19
@@ -3370,6 +3382,7 @@ y 9
 end
 arch sheep
 name Chancy
+randomitems jail
 monster 0
 unaggressive 1
 sleep 1
@@ -3437,7 +3450,35 @@ arch woodfloor
 x 21
 y 18
 end
+arch check_inv
+slaying Gramp's walking stick
+connected 5
+last_heal 1
+x 21
+y 18
+end
+arch check_inv
+slaying Gramp's earhorn
+connected 6
+last_heal 1
+x 21
+y 18
+end
 arch woodfloor
+x 21
+y 19
+end
+arch check_inv
+slaying Gramp's walking stick
+connected 5
+last_heal 1
+x 21
+y 19
+end
+arch check_inv
+slaying Gramp's earhorn
+connected 6
+last_heal 1
 x 21
 y 19
 end
@@ -3602,14 +3643,60 @@ x 22
 y 18
 end
 arch sage
+name Gramps Malone
 msg
+@match staff|Staff|walking|Walking
+Yup lost my walking stick - have ya seen it?
+@match stick|Stick
+Ya say yer sick?  That's a darn shame!
+I get a touch of the wind myself sometimes...
+@match ear|Ear
+You looking for deer?
+Used to be a woodsman myself.
+Try the woods to the east - lots of game there...
+match woods|east
+Don't mumble - out with it now...
 @match *
 Hunn?  Speak up there!
 endmsg
+randomitems jail
+level 2
+can_cast_spell 0
+monster 0
+stand_still 1
 x 22
 y 18
 end
 arch woodfloor
+x 22
+y 19
+end
+arch magic_mouth
+msg
+You found my staff, thanks.
+Heres a little something for you.
+Don't spend it all on sweets now.
+endmsg
+connected 5
+walk_on 0
+fly_on 0
+food 1
+x 22
+y 19
+end
+arch magic_mouth
+msg
+My horn!  Thanks.
+Here's a little spending money for your trouble.
+Now I can hear again.
+....err drat now she'll be gabbin
+at me all day.  Maybe I better hide
+it again...
+endmsg
+connected 6
+walk_on 0
+fly_on 0
+food 1
 x 22
 y 19
 end
@@ -3978,6 +4065,32 @@ end
 arch blocked
 x 24
 y 21
+end
+arch teleporter
+hp 20
+sp 18
+connected 6
+speed 0.0
+x 24
+y 22
+end
+arch gem
+nrof 3
+x 24
+y 22
+end
+arch teleporter
+hp 20
+sp 18
+connected 5
+speed 0.0
+x 24
+y 23
+end
+arch gem
+nrof 2
+x 24
+y 23
 end
 arch teleporter
 hp 22

@@ -6,22 +6,17 @@ CF Java Map Editor
 Date:    4/27/2003
 endmsg
 width 24
-height 16
+height 17
+end
+arch grass
+end
+arch grass
+y 1
 end
 arch woodfloor
+y 2
 end
 arch wall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wall_2_1_1
-y 1
-end
-arch woodfloor
-y 2
-end
-arch wall_2_1_1
 y 2
 end
 arch woodfloor
@@ -32,20 +27,20 @@ y 3
 end
 arch woodfloor
 y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
 end
 arch wall_3_2
-y 4
-end
-arch woodfloor
-y 5
-end
-arch wall_2_1_1
-y 5
-end
-arch woodfloor
-y 6
-end
-arch wall_2_1_1
 y 6
 end
 arch woodfloor
@@ -57,37 +52,64 @@ end
 arch woodfloor
 y 8
 end
-arch wall_2_2_1
+arch wall_2_1_1
 y 8
 end
-arch grass
+arch woodfloor
 y 9
 end
-arch grass
+arch wall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch wall_3_2
 y 10
 end
 arch grass
 y 11
 end
+arch wall_2_1_1
+y 11
+end
 arch grass
+y 12
+end
+arch wall_2_1_1
 y 12
 end
 arch grass
 y 13
 end
+arch wall_2_1_1
+y 13
+end
 arch grass
+y 14
+end
+arch wall_2_1_1
 y 14
 end
 arch grass
 y 15
 end
-arch woodfloor
+arch wall_2_1_1
+y 15
+end
+arch grass
+y 16
+end
+arch wall_2_2_1
+y 16
+end
+arch grass
 x 1
 end
-arch wall_2_1_2
+arch faerie_dragon
 x 1
 end
-arch woodfloor
+arch grass
 x 1
 y 1
 end
@@ -95,27 +117,31 @@ arch woodfloor
 x 1
 y 2
 end
+arch wall_2_1_2
+x 1
+y 2
+end
 arch woodfloor
 x 1
 y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
 end
 arch barrel
 x 1
-y 3
-end
-arch woodfloor
-x 1
-y 4
-end
-arch wall_1_3
-x 1
-y 4
-end
-arch woodfloor
-x 1
 y 5
 end
 arch woodfloor
+x 1
+y 6
+end
+arch wall_1_3
 x 1
 y 6
 end
@@ -127,15 +153,15 @@ arch woodfloor
 x 1
 y 8
 end
-arch wall_2_1_2
-x 1
-y 8
-end
-arch grass
+arch woodfloor
 x 1
 y 9
 end
-arch grass
+arch woodfloor
+x 1
+y 10
+end
+arch wall_1_3
 x 1
 y 10
 end
@@ -143,11 +169,23 @@ arch grass
 x 1
 y 11
 end
+arch barrel
+x 1
+y 11
+end
 arch grass
 x 1
 y 12
 end
+arch barrel
+x 1
+y 12
+end
 arch grass
+x 1
+y 13
+end
+arch workbench
 x 1
 y 13
 end
@@ -159,17 +197,26 @@ arch grass
 x 1
 y 15
 end
-arch woodfloor
-x 2
+arch grass
+x 1
+y 16
 end
 arch wall_2_1_2
+x 1
+y 16
+end
+arch grass
 x 2
 end
-arch woodfloor
+arch grass
 x 2
 y 1
 end
 arch woodfloor
+x 2
+y 2
+end
+arch wall_2_1_2
 x 2
 y 2
 end
@@ -185,7 +232,18 @@ arch woodfloor
 x 2
 y 5
 end
+arch button_small
+invisible 1
+connected 4
+x 2
+y 5
+end
 arch woodfloor
+x 2
+y 6
+end
+arch mdoor_closed_1
+connected 4
 x 2
 y 6
 end
@@ -193,19 +251,25 @@ arch woodfloor
 x 2
 y 7
 end
+arch button_small
+invisible 1
+connected 4
+x 2
+y 7
+end
 arch woodfloor
 x 2
 y 8
 end
-arch wall_2_1_2
-x 2
-y 8
-end
-arch grass
+arch woodfloor
 x 2
 y 9
 end
-arch grass
+arch woodfloor
+x 2
+y 10
+end
+arch door_2
 x 2
 y 10
 end
@@ -217,6 +281,10 @@ arch grass
 x 2
 y 12
 end
+arch barrel
+x 2
+y 12
+end
 arch grass
 x 2
 y 13
@@ -225,47 +293,79 @@ arch grass
 x 2
 y 14
 end
+arch barrel
+x 2
+y 14
+end
 arch grass
 x 2
 y 15
 end
+arch horn2
+name Gramps' earhorn
+type 21
+slaying Gramp's earhorn
+x 2
+y 15
+end
+arch barrel
+x 2
+y 15
+end
+arch grass
+x 2
+y 16
+end
+arch wall_2_1_2
+x 2
+y 16
+end
+arch grass
+x 3
+end
+arch grass
+x 3
+y 1
+end
 arch woodfloor
 x 3
+y 2
 end
 arch wall_2_1_2
 x 3
+y 2
 end
 arch woodfloor
 x 3
-y 1
+y 3
 end
 arch stove
 is_cauldron 0
 x 3
-y 1
-end
-arch woodfloor
-x 3
-y 2
-end
-arch woodfloor
-x 3
 y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
 end
 arch woman
 name Fran
 msg
-@match mark|Mark
+@match mark
 That bum, all this time he had a girl on the side.
 Too bad he was coming into some coin too...
 Some deal with that bird of his.
-@match Oled|oled
+@match Oled
 He's ok to work for, but he's a pincher if you know what I mean.
 He's usually pretty mellow, but lately he seems a bit tense.
 @match pincher
 You try it an I'll deck you I says to him...
-@match bird|bird
-Ya I heard he stole a goose.
+@match bird|goose
+Ya I heard Mark stole a goose.
 @match who|who
 Your pretty nosey there fella.
 @match service|order
@@ -276,23 +376,16 @@ Ya I work part time at Oled's Cafe too.
 Hey kitchen is off limits!
 Keep it in your scabbard and take a seat there chum.
 endmsg
+randomitems jail
 stand_still 1
-x 3
-y 3
-end
-arch woodfloor
-x 3
-y 4
-end
-arch wall_1_4
-x 3
-y 4
-end
-arch woodfloor
 x 3
 y 5
 end
 arch woodfloor
+x 3
+y 6
+end
+arch wall_1_4
 x 3
 y 6
 end
@@ -304,15 +397,15 @@ arch woodfloor
 x 3
 y 8
 end
-arch wall_2_1_2
-x 3
-y 8
-end
-arch grass
+arch woodfloor
 x 3
 y 9
 end
-arch grass
+arch woodfloor
+x 3
+y 10
+end
+arch wall_2_2_2
 x 3
 y 10
 end
@@ -320,11 +413,23 @@ arch grass
 x 3
 y 11
 end
+arch wall_2_1_1
+x 3
+y 11
+end
 arch grass
 x 3
 y 12
 end
+arch wall_2_1_1
+x 3
+y 12
+end
 arch grass
+x 3
+y 13
+end
+arch wall_2_2_1
 x 3
 y 13
 end
@@ -336,47 +441,48 @@ arch grass
 x 3
 y 15
 end
+arch grass
+x 3
+y 16
+end
+arch wall_2_1_2
+x 3
+y 16
+end
+arch grass
+x 4
+end
+arch grass
+x 4
+y 1
+end
 arch woodfloor
 x 4
+y 2
 end
 arch wall_2_1_2
 x 4
+y 2
 end
 arch blocked
 blocksview 0
 x 4
-y 1
+y 3
 end
 arch woodfloor
 x 4
-y 1
+y 3
 end
 arch stove
 is_cauldron 0
 x 4
-y 1
-end
-arch woodfloor
-x 4
-y 2
-end
-arch wall_1_1
-x 4
-y 2
-end
-arch woodfloor
-x 4
-y 3
-end
-arch wall_2_1_1
-x 4
 y 3
 end
 arch woodfloor
 x 4
 y 4
 end
-arch wall_2_2_4
+arch wall_1_1
 x 4
 y 4
 end
@@ -384,7 +490,15 @@ arch woodfloor
 x 4
 y 5
 end
+arch wall_2_1_1
+x 4
+y 5
+end
 arch woodfloor
+x 4
+y 6
+end
+arch wall_2_2_4
 x 4
 y 6
 end
@@ -396,15 +510,15 @@ arch woodfloor
 x 4
 y 8
 end
-arch window_win2
-x 4
-y 8
-end
-arch grass
+arch woodfloor
 x 4
 y 9
 end
-arch grass
+arch woodfloor
+x 4
+y 10
+end
+arch wall_2_1_2
 x 4
 y 10
 end
@@ -412,7 +526,7 @@ arch grass
 x 4
 y 11
 end
-arch grass
+arch evergreen
 x 4
 y 12
 end
@@ -420,7 +534,15 @@ arch grass
 x 4
 y 13
 end
+arch wall_2_2_3
+x 4
+y 13
+end
 arch grass
+x 4
+y 14
+end
+arch wall_2_1_1
 x 4
 y 14
 end
@@ -428,31 +550,44 @@ arch grass
 x 4
 y 15
 end
-arch woodfloor
+arch wall_2_1_1
+x 4
+y 15
+end
+arch grass
+x 4
+y 16
+end
+arch wall_2_2_4
+x 4
+y 16
+end
+arch grass
 x 5
 end
-arch wall_2_1_2
-x 5
-end
-arch woodfloor
+arch grass
 x 5
 y 1
 end
 arch woodfloor
 x 5
 y 2
+end
+arch wall_2_1_2
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
 end
 arch longtable_1_4
 no_pass 1
 x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch woodfloor
-x 5
 y 4
 end
 arch woodfloor
@@ -471,15 +606,15 @@ arch woodfloor
 x 5
 y 8
 end
-arch wall_2_1_2
-x 5
-y 8
-end
-arch grass
+arch woodfloor
 x 5
 y 9
 end
-arch grass
+arch woodfloor
+x 5
+y 10
+end
+arch window_win2
 x 5
 y 10
 end
@@ -503,15 +638,28 @@ arch grass
 x 5
 y 15
 end
+arch grass
+x 5
+y 16
+end
+arch grass
+x 6
+end
+arch grass
+x 6
+y 1
+end
 arch woodfloor
 x 6
+y 2
 end
 arch wall_2_1_2
 x 6
+y 2
 end
 arch woodfloor
 x 6
-y 1
+y 3
 end
 arch merchant
 name Jagger
@@ -524,73 +672,65 @@ I don't take credit.
 endmsg
 stand_still 1
 x 6
-y 1
-end
-arch woodfloor
-x 6
-y 2
-end
-arch longtable_2_1_2
-no_pass 1
-x 6
-y 2
-end
-arch woodfloor
-x 6
-y 3
-end
-arch booze_table
-slaying money
-food 30
-invisible 1
-x 6
-y 3
-end
-arch chair_1.3
-x 6
 y 3
 end
 arch woodfloor
 x 6
 y 4
 end
+arch longtable_2_1_2
+no_pass 1
+x 6
+y 4
+end
 arch woodfloor
 x 6
 y 5
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 6
+y 5
+end
+arch chair_1.3
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
 end
 arch chair_1.4
 x 6
-y 5
-end
-arch woodfloor
-x 6
-y 6
-end
-arch woodfloor
-x 6
 y 7
 end
 arch woodfloor
 x 6
 y 8
 end
-arch wall_2_1_2
-x 6
-y 8
-end
-arch brush
+arch woodfloor
 x 6
 y 9
 end
-arch barrel
-x 6
-y 9
-end
-arch grass
+arch woodfloor
 x 6
 y 10
 end
-arch grass
+arch wall_2_1_2
+x 6
+y 10
+end
+arch brush
+x 6
+y 11
+end
+arch barrel
 x 6
 y 11
 end
@@ -606,21 +746,22 @@ arch grass
 x 6
 y 14
 end
-arch grass
+arch evergreen
 x 6
 y 15
 end
-arch woodfloor
+arch grass
+x 6
+y 16
+end
+arch grass
 x 7
 end
-arch wall_2_1_2
-x 7
-end
-arch woodfloor
+arch grass
 x 7
 y 1
 end
-arch light4
+arch mover_7
 x 7
 y 1
 end
@@ -628,43 +769,39 @@ arch woodfloor
 x 7
 y 2
 end
-arch longtable_2_1_2
-no_pass 1
+arch wall_2_1_2
 x 7
 y 2
 end
 arch woodfloor
 x 7
 y 3
+end
+arch light4
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch longtable_2_1_2
+no_pass 1
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
 end
 arch booze_table
 slaying money
 food 30
 invisible 1
 x 7
-y 3
-end
-arch chair_1.3
-x 7
-y 3
-end
-arch woodfloor
-x 7
-y 4
-end
-arch wall_0
-x 7
-y 4
-end
-arch light4
-x 7
-y 4
-end
-arch woodfloor
-x 7
 y 5
 end
-arch table_3
+arch chair_1.3
 x 7
 y 5
 end
@@ -672,51 +809,63 @@ arch woodfloor
 x 7
 y 6
 end
+arch wall_0
+x 7
+y 6
+end
+arch light4
+x 7
+y 6
+end
 arch woodfloor
 x 7
 y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
 end
 arch wall_1_1
 x 7
-y 7
+y 9
 end
 arch woodfloor
 x 7
-y 8
+y 10
 end
 arch wall_3_4
 x 7
-y 8
+y 10
 end
 arch woodfloor
 x 7
-y 9
+y 11
 end
 arch wall_2_1_1
 x 7
-y 9
+y 11
 end
 arch woodfloor
 x 7
-y 10
+y 12
 end
 arch wall_2_2_1
-x 7
-y 10
-end
-arch grass
-x 7
-y 11
-end
-arch lamppost
-x 7
-y 11
-end
-arch grass
 x 7
 y 12
 end
 arch grass
+x 7
+y 13
+end
+arch lamppost
 x 7
 y 13
 end
@@ -728,52 +877,57 @@ arch grass
 x 7
 y 15
 end
+arch grass
+x 7
+y 16
+end
+arch grass
+x 8
+end
+arch grass
+x 8
+y 1
+end
 arch woodfloor
 x 8
+y 2
 end
 arch wall_2_1_2
 x 8
+y 2
 end
 arch woodfloor
 x 8
-y 1
+y 3
 end
 arch longtable_1_1
 no_pass 1
 x 8
-y 1
+y 3
 end
 arch woodfloor
 x 8
-y 2
+y 4
 end
 arch longtable_2_2_4
 no_pass 1
 x 8
-y 2
-end
-arch woodfloor
-x 8
-y 3
-end
-arch woodfloor
-x 8
 y 4
 end
 arch woodfloor
 x 8
 y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
 end
 arch chair_1.2
 x 8
-y 5
-end
-arch woodfloor
-x 8
-y 6
-end
-arch woodfloor
-x 8
 y 7
 end
 arch woodfloor
@@ -788,15 +942,15 @@ arch woodfloor
 x 8
 y 10
 end
-arch wall_2_1_2
-x 8
-y 10
-end
-arch grass
+arch woodfloor
 x 8
 y 11
 end
-arch grass
+arch woodfloor
+x 8
+y 12
+end
+arch wall_2_1_2
 x 8
 y 12
 end
@@ -812,17 +966,38 @@ arch grass
 x 8
 y 15
 end
-arch woodfloor
+arch grass
+x 8
+y 16
+end
+arch grass
 x 9
 end
-arch wall_2_1_2
+arch elf_man
+name Celebrity lookalike
+face spock.111
+msg
+@match *
+Some guy named Avion paid
+me 30 gold to stand here
+and look busy...
+endmsg
+animation spock
 x 9
 end
-arch woodfloor
+arch grass
+x 9
+y 1
+end
+arch mover_7
 x 9
 y 1
 end
 arch woodfloor
+x 9
+y 2
+end
+arch wall_2_1_2
 x 9
 y 2
 end
@@ -854,35 +1029,35 @@ arch woodfloor
 x 9
 y 9
 end
+arch woodfloor
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
 arch button_small
 invisible 1
 connected 1
 x 9
-y 9
+y 11
 end
 arch woodfloor
 x 9
-y 10
+y 12
 end
 arch wall_1_3
 x 9
-y 10
+y 12
 end
 arch flagstone
 x 9
-y 11
+y 13
 end
 arch button_small
 invisible 1
 connected 1
-x 9
-y 11
-end
-arch flagstone
-x 9
-y 12
-end
-arch flagstone
 x 9
 y 13
 end
@@ -890,21 +1065,25 @@ arch flagstone
 x 9
 y 14
 end
-arch grass
+arch flagstone
 x 9
 y 15
 end
-arch woodfloor
+arch grass
+x 9
+y 16
+end
+arch grass
 x 10
 end
-arch wall_2_1_2
+arch pixie
 x 10
 end
-arch woodfloor
+arch grass
 x 10
 y 1
 end
-arch chair_1.4
+arch mover_7
 x 10
 y 1
 end
@@ -912,15 +1091,19 @@ arch woodfloor
 x 10
 y 2
 end
+arch wall_2_1_2
+x 10
+y 2
+end
 arch woodfloor
 x 10
 y 3
 end
-arch woodfloor
-x 10
-y 4
-end
 arch chair_1.4
+x 10
+y 3
+end
+arch woodfloor
 x 10
 y 4
 end
@@ -929,6 +1112,10 @@ x 10
 y 5
 end
 arch woodfloor
+x 10
+y 6
+end
+arch chair_1.4
 x 10
 y 6
 end
@@ -944,36 +1131,36 @@ arch woodfloor
 x 10
 y 9
 end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
 arch button_small
 invisible 1
 connected 1
 x 10
-y 9
+y 11
 end
 arch woodfloor
 x 10
-y 10
+y 12
 end
 arch mdoor_closed_1
 connected 1
 x 10
-y 10
+y 12
 end
 arch flagstone
 x 10
-y 11
+y 13
 end
 arch button_small
 invisible 1
 connected 1
-x 10
-y 11
-end
-arch flagstone
-x 10
-y 12
-end
-arch flagstone
 x 10
 y 13
 end
@@ -981,21 +1168,22 @@ arch flagstone
 x 10
 y 14
 end
-arch grass
+arch flagstone
 x 10
 y 15
 end
-arch woodfloor
+arch grass
+x 10
+y 16
+end
+arch grass
 x 11
 end
-arch wall_2_1_2
-x 11
-end
-arch woodfloor
+arch grass
 x 11
 y 1
 end
-arch table_3
+arch mover_7
 x 11
 y 1
 end
@@ -1003,19 +1191,19 @@ arch woodfloor
 x 11
 y 2
 end
-arch woodfloor
+arch wall_2_1_2
 x 11
-y 3
-end
-arch chair_1.1
-x 11
-y 3
+y 2
 end
 arch woodfloor
 x 11
-y 4
+y 3
 end
 arch table_3
+x 11
+y 3
+end
+arch woodfloor
 x 11
 y 4
 end
@@ -1023,77 +1211,90 @@ arch woodfloor
 x 11
 y 5
 end
+arch chair_1.1
+x 11
+y 5
+end
 arch woodfloor
+x 11
+y 6
+end
+arch table_3
 x 11
 y 6
 end
 arch woodfloor
 x 11
 y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
 end
 arch light4
 x 11
-y 7
-end
-arch woodfloor
-x 11
-y 8
-end
-arch woodfloor
-x 11
-y 9
-end
-arch button_small
-invisible 1
-connected 1
-x 11
 y 9
 end
 arch woodfloor
 x 11
 y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch button_small
+invisible 1
+connected 1
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
 end
 arch wall_1_4
 x 11
-y 10
+y 12
 end
 arch flagstone
 x 11
-y 11
+y 13
 end
 arch button_small
 invisible 1
 connected 1
 x 11
-y 11
-end
-arch flagstone
-x 11
-y 12
-end
-arch flagstone
-x 11
 y 13
 end
 arch flagstone
 x 11
 y 14
 end
-arch grass
+arch flagstone
 x 11
 y 15
 end
-arch woodfloor
+arch grass
+x 11
+y 16
+end
+arch grass
 x 12
 end
-arch wall_2_1_2
-x 12
-end
-arch woodfloor
+arch grass
 x 12
 y 1
 end
-arch chair_1.2
+arch mover_7
+x 12
+y 1
+end
+arch cherub
 x 12
 y 1
 end
@@ -1101,15 +1302,19 @@ arch woodfloor
 x 12
 y 2
 end
+arch wall_2_1_2
+x 12
+y 2
+end
 arch woodfloor
 x 12
 y 3
 end
-arch woodfloor
-x 12
-y 4
-end
 arch chair_1.2
+x 12
+y 3
+end
+arch woodfloor
 x 12
 y 4
 end
@@ -1121,11 +1326,11 @@ arch woodfloor
 x 12
 y 6
 end
-arch woodfloor
+arch chair_1.2
 x 12
-y 7
+y 6
 end
-arch chair_1.4
+arch woodfloor
 x 12
 y 7
 end
@@ -1137,23 +1342,27 @@ arch woodfloor
 x 12
 y 9
 end
+arch chair_1.4
+x 12
+y 9
+end
 arch woodfloor
 x 12
 y 10
 end
-arch wall_2_1_2
-x 12
-y 10
-end
-arch grass
+arch woodfloor
 x 12
 y 11
 end
-arch grass
+arch woodfloor
 x 12
 y 12
 end
-arch flagstone
+arch wall_2_1_2
+x 12
+y 12
+end
+arch grass
 x 12
 y 13
 end
@@ -1161,30 +1370,39 @@ arch flagstone
 x 12
 y 14
 end
-arch grass
+arch flagstone
 x 12
 y 15
 end
+arch grass
+x 12
+y 16
+end
+arch grass
+x 13
+end
+arch grass
+x 13
+y 1
+end
+arch mover_7
+x 13
+y 1
+end
 arch woodfloor
 x 13
+y 2
 end
 arch wall_2_1_2
 x 13
+y 2
 end
 arch woodfloor
 x 13
-y 1
+y 3
 end
 arch fireplace
 x 13
-y 1
-end
-arch woodfloor
-x 13
-y 2
-end
-arch woodfloor
-x 13
 y 3
 end
 arch woodfloor
@@ -1199,15 +1417,7 @@ arch woodfloor
 x 13
 y 6
 end
-arch chair_1.1
-x 13
-y 6
-end
 arch woodfloor
-x 13
-y 7
-end
-arch table_3
 x 13
 y 7
 end
@@ -1215,7 +1425,15 @@ arch woodfloor
 x 13
 y 8
 end
+arch chair_1.1
+x 13
+y 8
+end
 arch woodfloor
+x 13
+y 9
+end
+arch table_3
 x 13
 y 9
 end
@@ -1223,19 +1441,19 @@ arch woodfloor
 x 13
 y 10
 end
-arch wall_2_1_2
-x 13
-y 10
-end
-arch grass
+arch woodfloor
 x 13
 y 11
 end
-arch grass
+arch woodfloor
 x 13
 y 12
 end
-arch flagstone
+arch wall_2_1_2
+x 13
+y 12
+end
+arch grass
 x 13
 y 13
 end
@@ -1243,17 +1461,22 @@ arch flagstone
 x 13
 y 14
 end
-arch grass
+arch flagstone
 x 13
 y 15
 end
-arch woodfloor
+arch grass
+x 13
+y 16
+end
+arch grass
 x 14
 end
-arch wall_2_1_2
+arch grass
 x 14
+y 1
 end
-arch woodfloor
+arch mover_7
 x 14
 y 1
 end
@@ -1261,11 +1484,11 @@ arch woodfloor
 x 14
 y 2
 end
-arch woodfloor
+arch wall_2_1_2
 x 14
-y 3
+y 2
 end
-arch chair_1.4
+arch woodfloor
 x 14
 y 3
 end
@@ -1277,6 +1500,10 @@ arch woodfloor
 x 14
 y 5
 end
+arch chair_1.4
+x 14
+y 5
+end
 arch woodfloor
 x 14
 y 6
@@ -1285,47 +1512,47 @@ arch woodfloor
 x 14
 y 7
 end
+arch woodfloor
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
 arch chair_1.2
 x 14
-y 7
+y 9
 end
 arch c_man
 msg
-@match work
-I hear the fellow at the 
+@match work|job
+I hear the fellow at the
 coffee shop is looking for
 someone to do a job.
 @match *
 Nother day, nother ale...
 endmsg
 x 14
-y 7
-end
-arch woodfloor
-x 14
-y 8
-end
-arch woodfloor
-x 14
 y 9
 end
 arch woodfloor
 x 14
 y 10
 end
-arch wall_2_1_2
-x 14
-y 10
-end
-arch grass
+arch woodfloor
 x 14
 y 11
 end
-arch grass
+arch woodfloor
 x 14
 y 12
 end
-arch flagstone
+arch wall_2_1_2
+x 14
+y 12
+end
+arch grass
 x 14
 y 13
 end
@@ -1333,17 +1560,22 @@ arch flagstone
 x 14
 y 14
 end
-arch grass
+arch flagstone
 x 14
 y 15
 end
-arch woodfloor
+arch grass
+x 14
+y 16
+end
+arch grass
 x 15
 end
-arch wall_2_1_2
+arch grass
 x 15
+y 1
 end
-arch woodfloor
+arch mover_7
 x 15
 y 1
 end
@@ -1351,7 +1583,7 @@ arch woodfloor
 x 15
 y 2
 end
-arch chair_1.1
+arch wall_2_1_2
 x 15
 y 2
 end
@@ -1359,97 +1591,106 @@ arch woodfloor
 x 15
 y 3
 end
-arch table_3
-x 15
-y 3
-end
 arch woodfloor
 x 15
 y 4
+end
+arch chair_1.1
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch table_3
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
 end
 arch wall_0
 x 15
-y 4
+y 6
 end
 arch light4
-x 15
-y 4
-end
-arch woodfloor
-x 15
-y 5
-end
-arch woodfloor
 x 15
 y 6
 end
 arch woodfloor
 x 15
 y 7
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
 end
 arch wall_1_1
 x 15
-y 7
+y 9
 end
 arch woodfloor
 x 15
-y 8
+y 10
 end
 arch wall_3_2
 x 15
-y 8
+y 10
 end
 arch woodfloor
 x 15
-y 9
+y 11
 end
 arch wall_2_1_1
 x 15
-y 9
+y 11
 end
 arch woodfloor
 x 15
-y 10
+y 12
 end
 arch wall_2_2_4
 x 15
-y 10
+y 12
 end
 arch grass
 x 15
-y 11
+y 13
 end
 arch lamppost
 x 15
-y 11
-end
-arch grass
-x 15
-y 12
-end
-arch flagstone
-x 15
-y 13
-end
-arch flagstone
-x 15
 y 13
 end
 arch flagstone
 x 15
 y 14
 end
-arch grass
+arch flagstone
+x 15
+y 14
+end
+arch flagstone
 x 15
 y 15
 end
-arch woodfloor
+arch grass
+x 15
+y 16
+end
+arch grass
 x 16
 end
-arch wall_2_1_2
+arch grass
 x 16
+y 1
 end
-arch woodfloor
+arch mover_7
 x 16
 y 1
 end
@@ -1457,11 +1698,11 @@ arch woodfloor
 x 16
 y 2
 end
-arch woodfloor
+arch wall_2_1_2
 x 16
-y 3
+y 2
 end
-arch chair_1.2
+arch woodfloor
 x 16
 y 3
 end
@@ -1470,6 +1711,10 @@ x 16
 y 4
 end
 arch woodfloor
+x 16
+y 5
+end
+arch chair_1.2
 x 16
 y 5
 end
@@ -1485,27 +1730,27 @@ arch woodfloor
 x 16
 y 8
 end
-arch wall_2_1_2
-x 16
-y 8
-end
-arch brush
+arch woodfloor
 x 16
 y 9
 end
-arch brush
+arch woodfloor
 x 16
 y 10
 end
-arch grass
+arch wall_2_1_2
+x 16
+y 10
+end
+arch brush
 x 16
 y 11
 end
-arch grass
+arch brush
 x 16
 y 12
 end
-arch flagstone
+arch grass
 x 16
 y 13
 end
@@ -1513,77 +1758,86 @@ arch flagstone
 x 16
 y 14
 end
-arch grass
+arch flagstone
 x 16
 y 15
 end
-arch woodfloor
+arch grass
+x 16
+y 16
+end
+arch grass
 x 17
 end
-arch wall_2_1_2
+arch grass
 x 17
+y 1
 end
-arch woodfloor
+arch mover_7
 x 17
 y 1
 end
 arch woodfloor
 x 17
 y 2
+end
+arch wall_2_1_2
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
 end
 arch chair_1.4
 x 17
-y 2
-end
-arch woodfloor
-x 17
-y 3
-end
-arch woodfloor
-x 17
 y 4
 end
 arch woodfloor
 x 17
 y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch woodfloor
+x 17
+y 7
 end
 arch chair_1.4
 x 17
-y 5
-end
-arch woodfloor
-x 17
-y 6
-end
-arch woodfloor
-x 17
 y 7
 end
 arch woodfloor
 x 17
 y 8
 end
+arch woodfloor
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 10
+end
 arch wall_2_1_2
 x 17
-y 8
+y 10
 end
 arch brush
 x 17
-y 9
-end
-arch grass
-x 17
-y 10
-end
-arch grass
-x 17
 y 11
 end
 arch grass
 x 17
 y 12
 end
-arch flagstone
+arch grass
 x 17
 y 13
 end
@@ -1591,21 +1845,22 @@ arch flagstone
 x 17
 y 14
 end
-arch grass
+arch flagstone
 x 17
 y 15
 end
-arch woodfloor
+arch grass
+x 17
+y 16
+end
+arch grass
 x 18
 end
-arch wall_2_1_2
-x 18
-end
-arch woodfloor
+arch grass
 x 18
 y 1
 end
-arch chair_1.1
+arch mover_7
 x 18
 y 1
 end
@@ -1613,7 +1868,7 @@ arch woodfloor
 x 18
 y 2
 end
-arch table_3
+arch window_win2
 x 18
 y 2
 end
@@ -1621,19 +1876,19 @@ arch woodfloor
 x 18
 y 3
 end
-arch woodfloor
-x 18
-y 4
-end
 arch chair_1.1
 x 18
-y 4
+y 3
 end
 arch woodfloor
 x 18
-y 5
+y 4
 end
 arch table_3
+x 18
+y 4
+end
+arch woodfloor
 x 18
 y 5
 end
@@ -1641,7 +1896,15 @@ arch woodfloor
 x 18
 y 6
 end
+arch chair_1.1
+x 18
+y 6
+end
 arch woodfloor
+x 18
+y 7
+end
+arch table_3
 x 18
 y 7
 end
@@ -1649,15 +1912,15 @@ arch woodfloor
 x 18
 y 8
 end
-arch wall_2_1_2
-x 18
-y 8
-end
-arch grass
+arch woodfloor
 x 18
 y 9
 end
-arch grass
+arch woodfloor
+x 18
+y 10
+end
+arch wall_2_1_2
 x 18
 y 10
 end
@@ -1665,11 +1928,11 @@ arch grass
 x 18
 y 11
 end
-arch grass
+arch evergreen
 x 18
 y 12
 end
-arch flagstone
+arch grass
 x 18
 y 13
 end
@@ -1677,17 +1940,22 @@ arch flagstone
 x 18
 y 14
 end
-arch grass
+arch flagstone
 x 18
 y 15
 end
-arch woodfloor
+arch grass
+x 18
+y 16
+end
+arch grass
 x 19
 end
-arch wall_2_1_2
+arch grass
 x 19
+y 1
 end
-arch woodfloor
+arch mover_7
 x 19
 y 1
 end
@@ -1695,7 +1963,7 @@ arch woodfloor
 x 19
 y 2
 end
-arch chair_1.2
+arch wall_2_1_2
 x 19
 y 2
 end
@@ -1707,11 +1975,25 @@ arch woodfloor
 x 19
 y 4
 end
-arch woodfloor
-x 19
-y 5
-end
 arch chair_1.2
+x 19
+y 4
+end
+arch farmer
+msg
+@match *
+Sure I had a bit too much,
+but at least I'm not seeing things....
+Hey what was that?
+endmsg
+randomitems jail
+monster 0
+stand_still 1
+will_apply 0
+x 19
+y 4
+end
+arch woodfloor
 x 19
 y 5
 end
@@ -1723,20 +2005,24 @@ arch woodfloor
 x 19
 y 7
 end
+arch chair_1.2
+x 19
+y 7
+end
 arch woodfloor
 x 19
 y 8
+end
+arch woodfloor
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 10
 end
 arch window_win2
 x 19
-y 8
-end
-arch grass
-x 19
-y 9
-end
-arch grass
-x 19
 y 10
 end
 arch grass
@@ -1747,7 +2033,7 @@ arch grass
 x 19
 y 12
 end
-arch flagstone
+arch grass
 x 19
 y 13
 end
@@ -1755,49 +2041,50 @@ arch flagstone
 x 19
 y 14
 end
-arch grass
+arch flagstone
 x 19
 y 15
 end
-arch woodfloor
+arch grass
+x 19
+y 16
+end
+arch grass
 x 20
 end
-arch wall_2_1_2
-x 20
-end
-arch woodfloor
+arch grass
 x 20
 y 1
 end
 arch woodfloor
 x 20
 y 2
+end
+arch wall_2_1_2
+x 20
+y 2
+end
+arch woodfloor
+x 20
+y 3
+end
+arch woodfloor
+x 20
+y 4
 end
 arch light4
 x 20
-y 2
-end
-arch woodfloor
-x 20
-y 3
-end
-arch chair_1.4
-x 20
-y 3
-end
-arch woodfloor
-x 20
 y 4
 end
 arch woodfloor
 x 20
 y 5
 end
-arch woodfloor
-x 20
-y 6
-end
 arch chair_1.4
+x 20
+y 5
+end
+arch woodfloor
 x 20
 y 6
 end
@@ -1809,15 +2096,19 @@ arch woodfloor
 x 20
 y 8
 end
-arch wall_2_1_2
+arch chair_1.4
 x 20
 y 8
 end
-arch grass
+arch woodfloor
 x 20
 y 9
 end
-arch grass
+arch woodfloor
+x 20
+y 10
+end
+arch wall_2_1_2
 x 20
 y 10
 end
@@ -1829,7 +2120,7 @@ arch grass
 x 20
 y 12
 end
-arch flagstone
+arch grass
 x 20
 y 13
 end
@@ -1837,17 +2128,18 @@ arch flagstone
 x 20
 y 14
 end
-arch grass
+arch flagstone
 x 20
 y 15
 end
-arch woodfloor
+arch grass
+x 20
+y 16
+end
+arch grass
 x 21
 end
-arch wall_2_1_2
-x 21
-end
-arch woodfloor
+arch grass
 x 21
 y 1
 end
@@ -1855,15 +2147,11 @@ arch woodfloor
 x 21
 y 2
 end
-arch chair_1.1
+arch wall_2_1_2
 x 21
 y 2
 end
 arch woodfloor
-x 21
-y 3
-end
-arch table_3
 x 21
 y 3
 end
@@ -1871,19 +2159,19 @@ arch woodfloor
 x 21
 y 4
 end
-arch woodfloor
-x 21
-y 5
-end
 arch chair_1.1
 x 21
-y 5
+y 4
 end
 arch woodfloor
 x 21
-y 6
+y 5
 end
 arch table_3
+x 21
+y 5
+end
+arch woodfloor
 x 21
 y 6
 end
@@ -1891,19 +2179,27 @@ arch woodfloor
 x 21
 y 7
 end
+arch chair_1.1
+x 21
+y 7
+end
 arch woodfloor
 x 21
 y 8
 end
-arch wall_2_1_2
+arch table_3
 x 21
 y 8
 end
-arch grass
+arch woodfloor
 x 21
 y 9
 end
-arch grass
+arch woodfloor
+x 21
+y 10
+end
+arch wall_2_1_2
 x 21
 y 10
 end
@@ -1915,7 +2211,7 @@ arch grass
 x 21
 y 12
 end
-arch flagstone
+arch grass
 x 21
 y 13
 end
@@ -1923,34 +2219,35 @@ arch flagstone
 x 21
 y 14
 end
-arch grass
+arch flagstone
 x 21
 y 15
 end
+arch grass
+x 21
+y 16
+end
+arch grass
+x 22
+end
+arch grass
+x 22
+y 1
+end
 arch woodfloor
 x 22
+y 2
 end
 arch wall_2_1_2
 x 22
+y 2
 end
 arch woodfloor
 x 22
-y 1
+y 3
 end
 arch clock
 x 22
-y 1
-end
-arch woodfloor
-x 22
-y 2
-end
-arch woodfloor
-x 22
-y 3
-end
-arch chair_1.2
-x 22
 y 3
 end
 arch woodfloor
@@ -1961,11 +2258,11 @@ arch woodfloor
 x 22
 y 5
 end
-arch woodfloor
-x 22
-y 6
-end
 arch chair_1.2
+x 22
+y 5
+end
+arch woodfloor
 x 22
 y 6
 end
@@ -1976,28 +2273,32 @@ end
 arch woodfloor
 x 22
 y 8
+end
+arch chair_1.2
+x 22
+y 8
+end
+arch woodfloor
+x 22
+y 9
+end
+arch woodfloor
+x 22
+y 10
 end
 arch wall_2_1_2
 x 22
-y 8
-end
-arch grass
-x 22
-y 9
-end
-arch grass
-x 22
 y 10
 end
 arch grass
 x 22
 y 11
 end
-arch grass
+arch evergreen
 x 22
 y 12
 end
-arch flagstone
+arch grass
 x 22
 y 13
 end
@@ -2005,30 +2306,31 @@ arch flagstone
 x 22
 y 14
 end
-arch grass
+arch flagstone
 x 22
 y 15
 end
+arch grass
+x 22
+y 16
+end
+arch grass
+x 23
+end
+arch grass
+x 23
+y 1
+end
+arch spider
+x 23
+y 1
+end
 arch woodfloor
 x 23
+y 2
 end
 arch wall_2_2_3
 x 23
-end
-arch woodfloor
-x 23
-y 1
-end
-arch wall_2_1_1
-x 23
-y 1
-end
-arch woodfloor
-x 23
-y 2
-end
-arch wall_2_1_1
-x 23
 y 2
 end
 arch woodfloor
@@ -2075,15 +2377,23 @@ arch woodfloor
 x 23
 y 8
 end
-arch wall_2_2_4
+arch wall_2_1_1
 x 23
 y 8
 end
-arch grass
+arch woodfloor
 x 23
 y 9
 end
-arch grass
+arch wall_2_1_1
+x 23
+y 9
+end
+arch woodfloor
+x 23
+y 10
+end
+arch wall_2_2_4
 x 23
 y 10
 end
@@ -2095,14 +2405,7 @@ arch grass
 x 23
 y 12
 end
-arch flagstone
-x 23
-y 13
-end
-arch invis_exit
-slaying /world/world_104_116
-hp 42
-sp 3
+arch grass
 x 23
 y 13
 end
@@ -2116,8 +2419,23 @@ hp 42
 sp 3
 x 23
 y 14
+end
+arch flagstone
+x 23
+y 15
+end
+arch invis_exit
+slaying /world/world_104_116
+hp 42
+sp 3
+x 23
+y 15
 end
 arch grass
 x 23
-y 15
+y 16
+end
+arch dragon
+x 8
+y 1
 end

@@ -495,6 +495,17 @@ arch woodfloor
 x 2
 y 21
 end
+arch quarterstaff
+name Gramp's walking stick
+msg
+This staff says:
+Prpty of G Malone - hands off.
+endmsg
+type 21
+slaying Gramp's walking stick
+x 2
+y 21
+end
 arch table_3
 x 2
 y 21
@@ -582,6 +593,7 @@ msg
 @match *
 eeeek!  I think I saw a mouse.
 endmsg
+randomitems jail
 x 3
 y 7
 end
@@ -1098,9 +1110,16 @@ Otherwise he's a bum.
 She runs the place for that rat Witherspoon.
 @match Witherspoon|rat
 Witherspoon owns all these slum..er 'condos'.
+@match Gramps|gramps|Malone|Staff|staff
+Ya ol Gramps Malone is right duffer.
+Plays a good game of orc knuckles.
+I think he left his walking stick here
+last time he came round.
+Think it's under the table...
 @match *
 Darn bird keeps me awake all night...
 endmsg
+randomitems jail
 x 6
 y 21
 end
@@ -2341,6 +2360,7 @@ Mark always keeps the key to that door with him.
 @match *
 Whatda want?
 endmsg
+randomitems jail
 x 14
 y 15
 end
