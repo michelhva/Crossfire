@@ -20,7 +20,7 @@ sp 2
 connected 1
 speed 0.0
 end
-arch skeleton
+arch ghost
 end
 arch cobblestones2
 y 1
@@ -92,14 +92,14 @@ end
 arch cobblestones2
 x 1
 end
-arch skeleton
+arch generate_ghost
 x 1
 end
 arch cobblestones2
 x 1
 y 1
 end
-arch generate_skeleton
+arch ghost
 x 1
 y 1
 end
@@ -481,9 +481,9 @@ x 8
 y 4
 end
 arch stair_up_3
-slaying /quests/todd/aljwaf/ruins
-hp 16
-sp 9
+slaying /world/world_119_116
+hp 39
+sp 18
 x 8
 y 4
 end
@@ -546,6 +546,10 @@ x 9
 y 4
 end
 arch sign
+msg
+Warning: This area is off limits 
+to non-military personnel.
+endmsg
 x 9
 y 4
 end

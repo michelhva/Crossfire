@@ -119,9 +119,9 @@ x 1
 y 1
 end
 arch stair_up_1
-slaying /quests/todd/aljwaf/ruins
-hp 21
-sp 8
+slaying /world/world_119_116
+hp 39
+sp 12
 x 1
 y 1
 end
@@ -742,7 +742,7 @@ msg
 You feel a chill and the room spins around you.
 endmsg
 blocksview 1
-slaying /quests/todd/aljwaf/hall1
+slaying hall1
 hp 1
 sp 10
 x 6

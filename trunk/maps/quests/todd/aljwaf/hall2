@@ -3823,7 +3823,8 @@ y 2
 end
 arch magic_mouth
 msg
-Halt.  None may enter the tomb of Al Jwaf.
+Halt! Who goes there?
+No man may enter the tomb of Al Jwaf.
 endmsg
 fly_on 0
 x 19
@@ -5444,7 +5445,7 @@ arch random_potion
 x 28
 y 17
 end
-arch vampire
+arch fire_witch
 x 28
 y 17
 end
@@ -5490,7 +5491,7 @@ arch random_wealth
 x 28
 y 23
 end
-arch vampire
+arch fire_witch
 x 28
 y 23
 end
@@ -5557,7 +5558,7 @@ name tomb portal
 msg
 You feel a sense of dislocation.
 endmsg
-slaying /quests/todd/aljwaf/tomb
+slaying tomb
 hp 5
 sp 5
 x 29
@@ -5670,7 +5671,7 @@ x 29
 y 13
 end
 arch invis_exit
-slaying /quests/todd/aljwaf/hall1
+slaying hall1
 hp 1
 sp 21
 x 29
@@ -5681,7 +5682,7 @@ x 29
 y 14
 end
 arch invis_exit
-slaying /quests/todd/aljwaf/hall1
+slaying hall1
 hp 1
 sp 22
 x 29
@@ -5692,7 +5693,7 @@ x 29
 y 15
 end
 arch invis_exit
-slaying /quests/todd/aljwaf/hall1
+slaying hall1
 hp 1
 sp 23
 x 29
