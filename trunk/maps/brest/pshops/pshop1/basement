@@ -842,6 +842,14 @@ arch blocked
 x 5
 y 19
 end
+arch blocked
+x 5
+y 20
+end
+arch blocked
+x 5
+y 21
+end
 arch dirtfloor
 x 6
 end
@@ -1039,6 +1047,10 @@ speed 0.0
 x 6
 y 20
 end
+arch blocked
+x 6
+y 21
+end
 arch dirtfloor
 x 7
 end
@@ -1218,6 +1230,10 @@ speed 0.0
 x 7
 y 20
 end
+arch blocked
+x 7
+y 21
+end
 arch dirtfloor
 x 8
 end
@@ -1388,6 +1404,14 @@ end
 arch blocked
 x 8
 y 19
+end
+arch blocked
+x 8
+y 20
+end
+arch blocked
+x 8
+y 21
 end
 arch dirtfloor
 x 9
