@@ -1032,20 +1032,20 @@ arch blocked
 x 6
 y 19
 end
-arch ape
-name female ape
-unaggressive 1
-friendly 1
-sleep 0
-x 6
-y 20
-end
 arch teleporter
 name Main teleporter
 hp 20
 sp 1
 connected 201
 speed 0.0
+x 6
+y 20
+end
+arch ape
+name male ape
+unaggressive 1
+friendly 1
+sleep 0
 x 6
 y 20
 end
@@ -1215,20 +1215,7 @@ arch blocked
 x 7
 y 19
 end
-arch ape
-name male ape
-unaggressive 1
-friendly 1
-sleep 0
-x 7
-y 20
-end
-arch teleporter
-name Main teleporter
-hp 20
-sp 1
-connected 202
-speed 0.0
+arch blocked
 x 7
 y 20
 end
@@ -1345,6 +1332,7 @@ x 8
 y 12
 end
 arch dirtfloor
+unique 1
 x 8
 y 12
 end
@@ -1407,7 +1395,20 @@ arch blocked
 x 8
 y 19
 end
-arch blocked
+arch teleporter
+name Main teleporter
+hp 20
+sp 1
+connected 202
+speed 0.0
+x 8
+y 20
+end
+arch ape
+name female ape
+unaggressive 1
+friendly 1
+sleep 0
 x 8
 y 20
 end
@@ -1560,6 +1561,14 @@ end
 arch blocked
 x 9
 y 19
+end
+arch blocked
+x 9
+y 20
+end
+arch blocked
+x 9
+y 21
 end
 arch dirtfloor
 x 10
@@ -2902,11 +2911,12 @@ y 4
 end
 arch creator
 other_arch dirtfloor
-connected 100
+connected 201
 x 19
 y 5
 end
 arch dirtfloor
+unique 1
 x 19
 y 5
 end
@@ -3025,11 +3035,12 @@ y 4
 end
 arch creator
 other_arch dirtfloor
-connected 100
+connected 202
 x 20
 y 5
 end
 arch dirtfloor
+unique 1
 x 20
 y 5
 end
