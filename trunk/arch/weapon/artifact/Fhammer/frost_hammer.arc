@@ -3,6 +3,7 @@ name Frost Hammer
 nrof 1
 last_sp 8
 type 15
+weapontype 7
 face frost_hammer.111
 anim
 frost_hammer.111
