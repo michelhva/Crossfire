@@ -5,6 +5,7 @@ color_fg orange
 color_bg khaki
 speed 0.1
 type 35
+level 1
 value 5800
 weight 4500
 material 2
