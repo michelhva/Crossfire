@@ -15,5 +15,6 @@ magicmap black
 weapontype 1
 name_pl Deathbringers
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

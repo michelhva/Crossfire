@@ -1,5 +1,6 @@
 Object ring_nodrain
 name strange ring
+name_pl strange rings
 face ring_drain.111
 anim
 ring_drain.111
@@ -14,11 +15,10 @@ weight 40
 type 70
 material 2
 resist_drain 100
-
 editable 6144
 nrof 1
 speed 0.1
-name_pl strange rings
 client_type 390
 body_finger -1
+item_power 4
 end

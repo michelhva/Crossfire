@@ -15,4 +15,5 @@ magicmap brown
 name_pl stonehammers
 client_type 126
 body_arm -1
+skill one handed weapons
 end

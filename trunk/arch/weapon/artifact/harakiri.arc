@@ -17,4 +17,5 @@ magicmap grey
 name_pl Harakiri swords
 client_type 100
 body_arm -1
+skill one handed weapons
 end

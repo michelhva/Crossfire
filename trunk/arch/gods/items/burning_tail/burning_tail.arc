@@ -25,5 +25,6 @@ magicmap red
 name_pl Burning Tails of many lashings of Ruggilli
 client_type 100
 body_arm -1
-item_power 12
+item_power 25
+skill one handed weapons
 end

@@ -1,5 +1,5 @@
 Object lightningwall
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -16,7 +16,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_t
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -46,7 +46,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_1
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -64,7 +64,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_2
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -82,7 +82,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_3
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -100,7 +100,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_4
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -118,7 +118,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_5
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -136,7 +136,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_6
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -154,7 +154,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_7
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1
@@ -172,7 +172,7 @@ visibility 100
 magicmap yellow
 end
 Object lightningwall_8
-other_arch lightning_s
+other_arch spell_sm_lightning
 name lightningwall
 type 62
 activate_on_push 1

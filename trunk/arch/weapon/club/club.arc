@@ -14,4 +14,5 @@ magicmap khaki
 name_pl clubs
 client_type 121
 body_arm -1
+skill one handed weapons
 end

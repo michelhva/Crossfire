@@ -73,6 +73,7 @@ body_neck 1
 body_neck 2
 body_skill 1
 body_finger 4
+glow_radius 4
 end
 Object fireborn_player_force
 name Fireborn_Force

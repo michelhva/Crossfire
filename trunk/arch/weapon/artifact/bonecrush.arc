@@ -16,5 +16,7 @@ weapontype 7
 magicmap brown
 name_pl Bonecrushers
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 4
 end

@@ -21,6 +21,7 @@ path_repelled 65537
 resist_poison 100
 resist_magic -20
 hp 500
+maxhp 500
 ac -5
 wc -3
 dam 50

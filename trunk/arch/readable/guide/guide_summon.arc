@@ -31,6 +31,7 @@ endmsg
 nrof 1
 face book_red.111
 type 8
+skill literacy
 material 1
 weight 4000
 editable 128

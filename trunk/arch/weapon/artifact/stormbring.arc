@@ -13,14 +13,14 @@ value 180000
 magic 4
 resist_magic 30
 resist_electricity 30
-
 resist_drain 100
-
 attacktype 136
 weapontype 1
 editable 5120
 magicmap black
 name_pl Stormbringers
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 20
 end

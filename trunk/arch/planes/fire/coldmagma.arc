@@ -15,7 +15,8 @@ coldmagma.111
 coldmagma.112
 coldmagma.112
 mina
-type 88
+type 102
+subtype 7
 level 30000
 walk_on 1
 is_floor 1
@@ -24,7 +25,6 @@ speed 0.15
 color_fg black
 no_pick 1
 attacktype 4
-hp 1
 dam 75
 editable 8
 wc -30

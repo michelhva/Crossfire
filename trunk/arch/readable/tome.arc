@@ -3,6 +3,7 @@ name tome
 nrof 1
 face tome.111
 type 8
+skill literacy
 material 1
 value 80
 weight 8000

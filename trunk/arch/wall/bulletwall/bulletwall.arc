@@ -1,5 +1,5 @@
 Object bulletwall
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -15,7 +15,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_1
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -32,7 +32,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_2
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -49,7 +49,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_3
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -66,7 +66,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_4
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -83,7 +83,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_5
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -100,7 +100,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_6
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -117,7 +117,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_7
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1
@@ -134,7 +134,7 @@ visibility 100
 magicmap yellow
 end
 Object bulletwall_8
-other_arch bullet
+other_arch spell_magic_bullet
 name bulletwall
 type 62
 activate_on_push 1

@@ -1,6 +1,6 @@
 Object dwarf_priest
 race dwarf
-randomitems book
+randomitems prayer_book
 name dwarf priest
 anim
 dwarf_pr.111

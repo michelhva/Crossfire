@@ -11,4 +11,6 @@ editable 128
 magicmap brown
 name_pl tables
 client_type 8002
+skill two handed weapons
+body_arm -2
 end

@@ -15,4 +15,5 @@ magicmap black
 name_pl vicious axes
 client_type 106
 body_arm -1
+skill one handed weapons
 end

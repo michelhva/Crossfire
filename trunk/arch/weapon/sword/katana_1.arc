@@ -15,4 +15,5 @@ magicmap grey
 name_pl katanas
 client_type 101
 body_arm -1
+skill one handed weapons
 end

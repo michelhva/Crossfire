@@ -29,4 +29,5 @@ magicmap grey
 name_pl throwing daggers
 client_type 101
 body_arm -1
+skill one handed weapons
 end

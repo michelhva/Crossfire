@@ -15,4 +15,5 @@ weapontype 1
 name_pl swords
 client_type 101
 body_arm -1
+skill one handed weapons
 end

@@ -13,7 +13,6 @@ speed .2
 material 16
 weapontype 8
 resist_magic 30
-
 Int 1
 Pow 1
 sp 2
@@ -27,5 +26,7 @@ editable 5120
 magicmap black
 name_pl Staves of the Magi
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
+item_power 15
 end

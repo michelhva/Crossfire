@@ -29,12 +29,12 @@ speed 0.15
 color_fg black
 no_pick 1
 attacktype 4
-hp 1
 dam 75
 editable 8
 wc -30
 lifesave 1
-type 88
+type 102
+subtype 7
 level 30000
 generator 1
 other_arch fire_elemental

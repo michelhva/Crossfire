@@ -14,5 +14,6 @@ last_sp 8
 editable 1024
 name_pl Battle Axes
 client_type 106
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

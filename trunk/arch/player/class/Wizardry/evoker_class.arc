@@ -27,14 +27,14 @@ end
 Object talisman_evoker
 name Evoker's talisman
 face talisman.111
-type 43
+type 74
 weight 1000
 value 3000
 nrof 1
 material 12
-sp 26
 editable 2048
 path_attuned 14
 path_repelled 50240
 body_skill -1
+skill evocation
 end

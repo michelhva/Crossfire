@@ -12,6 +12,8 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end
 Object chair_1.2
 name chair
@@ -27,6 +29,8 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end
 Object chair_1.3
 name chair
@@ -42,6 +46,8 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end
 Object chair_1.4
 name chair
@@ -57,4 +63,6 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end

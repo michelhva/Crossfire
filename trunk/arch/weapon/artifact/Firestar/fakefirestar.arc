@@ -24,5 +24,6 @@ weight 40000
 editable 5120
 name_pl Firestars
 client_type 100
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

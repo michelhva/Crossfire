@@ -25,6 +25,7 @@ ac -7
 wc -1
 dam 40
 hp 350
+maxhp 350
 level 15
 speed 0.25
 luck 2

@@ -20,4 +20,5 @@ type 14
 weight 8000
 magic 5
 body_arm -2
+skill missile weapons
 end

@@ -14,4 +14,5 @@ magicmap brown
 name_pl axes
 client_type 106
 body_arm -1
+skill one handed weapons
 end

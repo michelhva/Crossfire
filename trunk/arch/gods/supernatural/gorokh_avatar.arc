@@ -22,6 +22,7 @@ ac -5
 wc -3
 dam 40
 hp 350
+maxhp 350
 level 15
 speed 0.25
 can_cast_spell 1

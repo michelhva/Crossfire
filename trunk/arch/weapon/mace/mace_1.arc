@@ -14,4 +14,5 @@ magicmap grey
 name_pl maces
 client_type 129
 body_arm -1
+skill one handed weapons
 end

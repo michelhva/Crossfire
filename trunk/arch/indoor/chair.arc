@@ -11,4 +11,6 @@ editable 128
 color_fg black
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end

@@ -1,6 +1,9 @@
 Potion directory.
 
- What with color pixmaps and all, a separate copy of the restore potions
-is needed compared to the normal potions.  For bitmaps, this doesn't make
-a difference, but the file needs to at least exist (as such, links are used).
-But for the actual XPM files, these are colored differently.
+Note that a bunch of potions are also in spell/Potion.
+
+ The difference here is that these are the old potions, that have
+what they do as part of the potion archetype.
+
+the ones in spell/Potion are randomly given attributes by the
+artifact code.

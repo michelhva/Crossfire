@@ -3,6 +3,8 @@ name prayerbook
 slaying protection from fire
 face quarto.111
 type 85
+skill literacy
+
 material 1
 value 0
 weight 5000

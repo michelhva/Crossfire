@@ -19,6 +19,7 @@ resist_poison 100
 resist_magic -10
 resist_physical 40
 hp 500
+maxhp 500
 ac -5
 wc -3
 dam 30

@@ -4,6 +4,7 @@ face scroll_2.111
 race scrolls
 nrof 1
 type 8
+skill literacy
 material 1
 value 34
 weight 350

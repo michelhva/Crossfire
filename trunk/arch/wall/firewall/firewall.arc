@@ -1,5 +1,5 @@
 Object firewall
-other_arch firebullet_s
+other_arch spell_small_fireball
 alive 1
 level 1
 type 62
@@ -20,7 +20,7 @@ editable 32
 visibility 100
 end
 Object firewall_1
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -38,7 +38,7 @@ editable 32
 visibility 100
 end
 Object firewall_2
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -56,7 +56,7 @@ editable 32
 visibility 100
 end
 Object firewall_3
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -74,7 +74,7 @@ editable 32
 visibility 100
 end
 Object firewall_4
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -92,7 +92,7 @@ editable 32
 visibility 100
 end
 Object firewall_5
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -110,7 +110,7 @@ editable 32
 visibility 100
 end
 Object firewall_6
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -128,7 +128,7 @@ editable 32
 visibility 100
 end
 Object firewall_7
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1
@@ -146,7 +146,7 @@ editable 32
 visibility 100
 end
 Object firewall_8
-other_arch firebullet_s
+other_arch spell_small_fireball
 name firewall
 type 62
 activate_on_push 1

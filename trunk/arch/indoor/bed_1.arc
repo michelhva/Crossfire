@@ -12,4 +12,6 @@ editable 128
 magicmap brown
 name_pl beds
 client_type 8002
+body_arm -2
+skill two handed weapons
 end

@@ -1,6 +1,6 @@
 Object dwarf_wiz
 race dwarf
-randomitems book
+randomitems random_books
 name dwarf wizard
 anim
 dwarf_wiz.111

@@ -1,3 +1,5 @@
+# a specific type of spell effect (cone) which operates
+# as a ground object.
 Object fog_wall
 name fog
 face fog.111
@@ -6,7 +8,8 @@ fog.111
 fog.112
 fog.111
 mina
-type 88
+type 102
+subtype 7
 flying 1
 no_pick 1
 color_fg white
@@ -26,7 +29,6 @@ resist_fear 100
 resist_cancellation 100
 resist_deplete 100
 resist_death 100
-
 material 1
 changing 1
 visibility 100

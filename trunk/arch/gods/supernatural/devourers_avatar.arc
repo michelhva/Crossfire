@@ -25,6 +25,7 @@ resist_physical 20
 ac -12
 wc -1
 hp 350
+maxhp 350
 dam 50
 last_eat -3
 last_heal -1

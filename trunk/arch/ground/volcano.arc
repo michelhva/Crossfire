@@ -1,6 +1,6 @@
 Object active_volcano
 name volcano
-other_arch lava
+other_arch spell_create_lava
 face volcano_lo.111
 type 62
 activate_on_push 1
@@ -15,7 +15,7 @@ end
 More
 Object active_volcano_2
 name volcano
-other_arch lava
+other_arch spell_create_lava
 face volcano_lo.211
 type 62
 activate_on_push 1

@@ -14,5 +14,6 @@ attacktype 1
 magicmap brown
 name_pl nunchacus
 client_type 141
-body_arm -1
+body_arm -2
+skill two handed weapons
 end

@@ -12,7 +12,10 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end
+
 Object chair_3.2
 name chair
 weight 60000
@@ -27,4 +30,6 @@ editable 128
 magicmap brown
 name_pl chairs
 client_type 8002
+skill two handed weapons
+body_arm -2
 end

@@ -1,6 +1,6 @@
 Object guildmaster
 race human
-randomitems book
+randomitems random_read
 name guildmaster
 msg
 @match *

@@ -1,5 +1,5 @@
 Object cannon
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -12,8 +12,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_1
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -27,8 +28,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_2
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -42,8 +44,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_3
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -57,8 +60,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_4
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 level 1
@@ -72,8 +76,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_5
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -87,8 +92,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_6
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -102,8 +108,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_7
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
@@ -117,8 +124,9 @@ no_pass 1
 blocksview 1
 editable 32
 end
+#
 Object cannon_8
-other_arch shell
+other_arch spell_shell
 name cannon
 type 62
 activate_on_push 1
