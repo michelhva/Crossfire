@@ -14,7 +14,9 @@ msg
   of life and nature. It is a personal gift from
   Gaea, to protect her beloved children.
 endmsg
+is_animated 1
 ac 4
+speed 0.2
 nrof 1
 startequip 1
 type 33
