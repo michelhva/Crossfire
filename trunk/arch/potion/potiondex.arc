@@ -4,6 +4,7 @@ name potion of dexterity
 face potiondex.111
 color_fg orange
 type 5
+level 1
 material 4
 weight 1500
 value 14000

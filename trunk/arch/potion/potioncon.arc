@@ -4,6 +4,7 @@ name potion of constitution
 face potioncon.111
 color_fg light_blue
 type 5
+level 1
 material 4
 weight 1500
 value 14500

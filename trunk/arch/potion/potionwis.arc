@@ -4,6 +4,7 @@ name potion of wisdom
 face potionwis.111
 color_fg grey
 type 5
+level 1
 material 4
 weight 1500
 value 12000
