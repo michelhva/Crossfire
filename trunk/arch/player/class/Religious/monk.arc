@@ -10,7 +10,7 @@ monk.171
 mina
 is_animated 0
 type 37
-can_use_weapons 1
+can_use_weapon 1
 Str 1
 Dex 1
 Con 1
