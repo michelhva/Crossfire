@@ -10,10 +10,10 @@ enter_y 1
 reset_timeout 7200
 difficulty 1
 outdoor 1
-tile_path_1 world_121_116
-tile_path_2 world_122_117
-tile_path_3 world_121_118
-tile_path_4 world_120_117
+tile_path_1 /world/world_121_116
+tile_path_2 /world/world_122_117
+tile_path_3 /world/world_121_118
+tile_path_4 /world/world_120_117
 end
 arch mountain2
 elevation 10754
@@ -7108,8 +7108,8 @@ x 27
 y 26
 end
 arch woods_2
-blocksview 1
 elevation 1753
+blocksview 1
 x 27
 y 27
 end
@@ -9051,14 +9051,14 @@ end
 arch grass
 x 35
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 end
 arch grass
 x 35
 y 1
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 1
 end
@@ -9066,7 +9066,7 @@ arch grass
 x 35
 y 2
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 2
 end
@@ -9074,7 +9074,7 @@ arch grass
 x 35
 y 3
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 3
 end
@@ -9082,7 +9082,7 @@ arch grass
 x 35
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 4
 end
@@ -9090,7 +9090,7 @@ arch grass
 x 35
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 5
 end
@@ -9098,7 +9098,7 @@ arch grass
 x 35
 y 6
 end
-arch cwall_3_2
+arch westcwall_3_2
 x 35
 y 6
 end
@@ -9106,7 +9106,7 @@ arch grass
 x 35
 y 7
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 7
 end
@@ -9114,7 +9114,7 @@ arch grass
 x 35
 y 8
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 8
 end
@@ -9122,7 +9122,7 @@ arch grass
 x 35
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 9
 end
@@ -9130,7 +9130,7 @@ arch grass
 x 35
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 10
 end
@@ -9138,7 +9138,7 @@ arch grass
 x 35
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 11
 end
@@ -9146,7 +9146,7 @@ arch grass
 x 35
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 12
 end
@@ -9154,7 +9154,7 @@ arch grass
 x 35
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 13
 end
@@ -9162,7 +9162,7 @@ arch grass
 x 35
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 14
 end
@@ -9170,7 +9170,7 @@ arch grass
 x 35
 y 15
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 15
 end
@@ -9178,7 +9178,7 @@ arch grass
 x 35
 y 16
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 35
 y 16
 end
@@ -9425,7 +9425,7 @@ arch cobblestones2
 x 36
 y 6
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 36
 y 6
 end
@@ -9529,7 +9529,7 @@ arch grass
 x 36
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 36
 y 16
 end
@@ -9796,7 +9796,7 @@ arch cobblestones2
 x 37
 y 6
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 37
 y 6
 end
@@ -9902,7 +9902,7 @@ arch grass
 x 37
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 37
 y 16
 end
@@ -10145,7 +10145,7 @@ arch cobblestones2
 x 38
 y 6
 end
-arch cwall_1_3
+arch westcwall_1_3
 x 38
 y 6
 end
@@ -10262,7 +10262,7 @@ arch grass
 x 38
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 38
 y 16
 end
@@ -10624,7 +10624,7 @@ arch grass
 x 39
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 39
 y 16
 end
@@ -10943,7 +10943,7 @@ arch grass
 x 40
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 40
 y 16
 end
@@ -11281,7 +11281,7 @@ arch grass
 x 41
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 41
 y 16
 end
@@ -11607,7 +11607,7 @@ arch grass
 x 42
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 42
 y 16
 end
@@ -11792,6 +11792,7 @@ x 43
 end
 arch small_temple
 name temple of Ruggilli
+name_pl temple of Ruggilli
 slaying /navar_city/temples/ruggilli
 hp 3
 sp 13
@@ -11927,7 +11928,7 @@ arch grass
 x 43
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 43
 y 16
 end
@@ -12262,7 +12263,7 @@ arch grass
 x 44
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 44
 y 16
 end
@@ -12579,7 +12580,7 @@ arch grass
 x 45
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 45
 y 16
 end
@@ -12915,7 +12916,7 @@ arch grass
 x 46
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 46
 y 16
 end
@@ -13232,7 +13233,7 @@ arch grass
 x 47
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 47
 y 16
 end
@@ -13513,6 +13514,7 @@ name strange little store
 msg
 You hear the flap of batwings.
 endmsg
+name_pl strange little store
 slaying /navar_city/misc/thamshop
 hp 4
 sp 13
@@ -13586,7 +13588,7 @@ arch grass
 x 48
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 48
 y 16
 end
@@ -13901,7 +13903,7 @@ arch grass
 x 49
 y 16
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 49
 y 16
 end
@@ -14129,8 +14131,9 @@ sp 2
 x 40
 y 7
 end
-arch guild
+arch guild_west
 name Dreaming Sage's Storage Room
+name_pl Dreaming Sage's Storage Room
 slaying /navar_city/dreaming_sage/storage_room
 hp 1
 sp 10
@@ -14139,6 +14142,7 @@ y 12
 end
 arch temple1
 name temple of Sorig
+name_pl temple of Sorig
 slaying /navar_city/temples/sorig
 hp 7
 sp 13
@@ -14163,6 +14167,7 @@ y 4
 end
 arch house_up
 name Iggy's house
+name_pl Iggy's house
 slaying /navar_city/slums/Iggys_house
 hp 1
 sp 15
@@ -14171,6 +14176,7 @@ y 7
 end
 arch cathedral
 name Mostrai cathedral
+name_pl Mostrai cathedral
 slaying /navar_city/city1church1
 hp 8
 sp 25

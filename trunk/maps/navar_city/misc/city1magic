@@ -1,126 +1,136 @@
 arch map
 name city1magic
+reset_timeout 7200
+fixed_resettime 1
+difficulty 15
+width 21
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator: 
 Email: 
 Date: Tue Nov  2 12:29:36 1993
 endmsg
-x 21
-difficulty 15
-stand_still 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 end
-arch wwall_2_2_2
+arch westcwall_2_2_2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 y 1
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 y 2
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 y 3
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 3
 end
 arch shop_empty
 y 4
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 4
 end
 arch shop_empty
 y 5
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 5
 end
 arch shop_empty
 y 6
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 6
 end
 arch shop_empty
 y 7
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 7
 end
 arch shop_empty
 y 8
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 8
 end
 arch shop_empty
 y 9
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 9
 end
 arch shop_empty
 y 10
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 10
 end
 arch shop_empty
 y 11
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 11
 end
 arch shop_empty
 y 12
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 12
 end
 arch shop_empty
 y 13
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 13
 end
 arch shop_empty
 y 14
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 y 14
 end
 arch shop_empty
 y 15
 end
-arch wwall_2_2_1
+arch westcwall_2_2_1
 y 15
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 1
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 1
 y 1
@@ -134,6 +144,7 @@ y 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 1
 y 2
@@ -144,6 +155,7 @@ y 2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 1
 y 3
@@ -210,20 +222,22 @@ arch shop_empty
 x 1
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 1
 y 15
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 2
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 2
 y 1
@@ -234,6 +248,7 @@ y 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 2
 y 2
@@ -244,6 +259,7 @@ y 2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 2
 y 3
@@ -341,48 +357,58 @@ arch shop_empty
 x 2
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 2
 y 15
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 3
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 3
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 3
 y 1
 end
 arch altar
 name altar of detect magic (10 gp)
+name_pl altar of detect magic (10 gp)
 slaying money
 sp 76
 food 100
 x 3
 y 1
+arch spell_detect_magic
+end
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 3
 y 2
 end
 arch altar
 name altar of detect curse (25 gp)
+name_pl altar of detect curse (25 gp)
 slaying money
 sp 79
 food 250
 x 3
 y 2
+arch spell_detect_curse
+end
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 3
 y 3
@@ -439,20 +465,22 @@ arch shop_empty
 x 3
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 3
 y 15
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 4
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 4
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 4
 y 1
@@ -463,6 +491,7 @@ y 1
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 4
 y 2
@@ -473,6 +502,7 @@ y 2
 end
 arch flagstone
 name floor
+name_pl floor
 face shop_empty.111
 x 4
 y 3
@@ -529,14 +559,14 @@ arch shop_empty
 x 4
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 15
 end
 arch shop_empty
 x 5
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 5
 end
 arch shop_empty
@@ -603,14 +633,14 @@ arch shop_empty
 x 5
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 5
 y 15
 end
 arch shop_empty
 x 6
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 6
 end
 arch shop_ring
@@ -673,14 +703,14 @@ arch shop_empty
 x 6
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 6
 y 15
 end
 arch shop_empty
 x 7
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 7
 end
 arch shop_ring
@@ -743,14 +773,14 @@ arch shop_empty
 x 7
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 7
 y 15
 end
 arch shop_empty
 x 8
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 8
 end
 arch shop_ring
@@ -813,14 +843,14 @@ arch shop_empty
 x 8
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 8
 y 15
 end
 arch shop_empty
 x 9
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 9
 end
 arch shop_ring
@@ -883,14 +913,14 @@ arch shop_empty
 x 9
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 9
 y 15
 end
 arch shop_empty
 x 10
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 10
 end
 arch shop_ring
@@ -953,14 +983,14 @@ arch shop_empty
 x 10
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 10
 y 15
 end
 arch shop_empty
 x 11
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 11
 end
 arch shop_ring
@@ -1023,14 +1053,14 @@ arch shop_empty
 x 11
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 11
 y 15
 end
 arch shop_empty
 x 12
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 12
 end
 arch shop_ring
@@ -1093,14 +1123,14 @@ arch shop_empty
 x 12
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 15
 end
 arch shop_empty
 x 13
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 13
 end
 arch shop_ring
@@ -1163,14 +1193,14 @@ arch shop_empty
 x 13
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 13
 y 15
 end
 arch shop_empty
 x 14
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 14
 end
 arch shop_ring
@@ -1233,14 +1263,14 @@ arch shop_empty
 x 14
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 14
 y 15
 end
 arch shop_empty
 x 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 15
 end
 arch shop_ring
@@ -1303,14 +1333,14 @@ arch shop_empty
 x 15
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 15
 y 15
 end
 arch shop_empty
 x 16
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 16
 end
 arch shop_ring
@@ -1373,14 +1403,14 @@ arch shop_empty
 x 16
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 16
 y 15
 end
 arch shop_empty
 x 17
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 17
 end
 arch shop_ring
@@ -1443,14 +1473,14 @@ arch shop_empty
 x 17
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 17
 y 15
 end
 arch shop_empty
 x 18
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 18
 end
 arch shop_ring
@@ -1513,14 +1543,14 @@ arch shop_empty
 x 18
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 18
 y 15
 end
 arch shop_empty
 x 19
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 19
 end
 arch shop_ring
@@ -1583,21 +1613,21 @@ arch shop_empty
 x 19
 y 15
 end
-arch wwall_2_1_2
+arch westcwall_2_1_2
 x 19
 y 15
 end
 arch shop_empty
 x 20
 end
-arch wwall_2_2_3
+arch westcwall_2_2_3
 x 20
 end
 arch shop_empty
 x 20
 y 1
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 1
 end
@@ -1605,7 +1635,7 @@ arch shop_empty
 x 20
 y 2
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 2
 end
@@ -1613,7 +1643,7 @@ arch shop_empty
 x 20
 y 3
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 3
 end
@@ -1621,7 +1651,7 @@ arch shop_empty
 x 20
 y 4
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 4
 end
@@ -1629,7 +1659,7 @@ arch shop_empty
 x 20
 y 5
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 5
 end
@@ -1637,7 +1667,7 @@ arch shop_empty
 x 20
 y 6
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 6
 end
@@ -1645,7 +1675,7 @@ arch shop_empty
 x 20
 y 7
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 7
 end
@@ -1653,7 +1683,7 @@ arch shop_empty
 x 20
 y 8
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 8
 end
@@ -1661,7 +1691,7 @@ arch shop_empty
 x 20
 y 9
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 9
 end
@@ -1669,7 +1699,7 @@ arch shop_empty
 x 20
 y 10
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 10
 end
@@ -1677,7 +1707,7 @@ arch shop_empty
 x 20
 y 11
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 11
 end
@@ -1685,7 +1715,7 @@ arch shop_empty
 x 20
 y 12
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 12
 end
@@ -1693,7 +1723,7 @@ arch shop_empty
 x 20
 y 13
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 13
 end
@@ -1701,7 +1731,7 @@ arch shop_empty
 x 20
 y 14
 end
-arch wwall_2_1_1
+arch westcwall_2_1_1
 x 20
 y 14
 end
@@ -1709,7 +1739,7 @@ arch shop_empty
 x 20
 y 15
 end
-arch wwall_2_2_4
+arch westcwall_2_2_4
 x 20
 y 15
 end
