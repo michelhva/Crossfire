@@ -8897,14 +8897,10 @@ arch cobblestones2
 x 35
 y 46
 end
-arch invis_exit
+arch guard_house_1
 slaying /navar_city/city1enter
 hp 1
 sp 8
-x 35
-y 46
-end
-arch guard_house_1
 x 35
 y 46
 end
@@ -9193,24 +9189,14 @@ arch cwall_3_3
 x 36
 y 45
 end
-arch dungeon_magic
-x 36
-y 46
-end
-arch cobblestones2
-x 36
-y 46
-end
-arch invis_exit
-slaying /navar_city/city1enter
-hp 18
-sp 4
+arch guard_house_1
+type 0
+no_pass 1
+is_floor 1
 x 36
 y 46
 end
 arch guard_house_2
-walk_on 0
-fly_on 0
 x 36
 y 46
 end
@@ -9498,7 +9484,7 @@ arch cobblestones2
 x 37
 y 45
 end
-arch cwall_2_1_2
+arch cwall_3_3
 x 37
 y 45
 end
@@ -9510,6 +9496,13 @@ arch cobblestones2
 x 37
 y 46
 end
+arch guard_house_2
+slaying /navar_city/city1enter
+hp 18
+sp 4
+x 37
+y 46
+end
 arch dungeon_magic
 x 37
 y 47
@@ -9518,7 +9511,7 @@ arch cobblestones2
 x 37
 y 47
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 37
 y 47
 end
