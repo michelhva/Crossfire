@@ -6241,7 +6241,7 @@ x 28
 y 33
 end
 arch church
-slaying elec.jes
+slaying /brest/elec.jes
 sp 46
 x 28
 y 33
@@ -6925,7 +6925,7 @@ x 31
 y 32
 end
 arch tower_a
-slaying info_first
+slaying /brest/info_first
 hp 38
 sp 66
 x 31
@@ -7408,7 +7408,7 @@ x 33
 y 39
 end
 arch store_magic
-slaying brest.magic
+slaying /brest/brest.magic
 hp 6
 sp 11
 x 33
@@ -8791,7 +8791,7 @@ end
 arch tavern
 name Nasty House
 name_pl Nasty House
-slaying nasty_house
+slaying /brest/nasty_house
 hp 1
 sp 1
 x 39
