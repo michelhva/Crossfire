@@ -4,7 +4,7 @@ type 154
 race air_elemental
 speed 1
 hp 1
-slaying summon evil monster
+slaying summon air elemental
 face rune_summon_air.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -25,13 +25,14 @@ dam 90
 Cha 20
 maxhp 5
 end
+#
 Object rune_summon_devil
 name Rune of Summoning
 type 154
 race devil
 speed 1
 hp 1
-slaying summon evil monster
+slaying summon devil
 face rune_summon.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -52,13 +53,14 @@ dam 90
 Cha 20
 maxhp 5
 end
+#
 Object rune_summon_earth_elemental
 name Rune of Summoning
 type 154
 race earth_elemental
 speed 1
 hp 1
-slaying summon evil monster
+slaying summon earth elemental
 face rune_sum_earth.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -85,7 +87,7 @@ type 154
 race fire_elemental
 speed 1
 hp 1
-slaying summon evil monster
+slaying summon fire elemental
 face rune_sum_fire.111
 msg
 A portal opens up, and screaming hordes pour through!
@@ -106,13 +108,14 @@ dam 90
 Cha 20
 maxhp 5
 end
+#
 Object rune_summon_water_elemental
 name Rune of Summoning
 type 154
 race water_elemental
 speed 1
 hp 1
-slaying summon evil monster
+slaying summon water elemental
 face rune_sum_water.111
 msg
 A portal opens up, and screaming hordes pour through!
