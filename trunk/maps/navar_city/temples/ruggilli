@@ -782,13 +782,13 @@ fly_on 0
 x 8
 y 7
 end
-arch check_inv
-slaying rug_pass
-connected 10
+arch flagstone
 x 8
 y 7
 end
-arch flagstone
+arch check_inv
+slaying rug_pass
+connected 10
 x 8
 y 7
 end

@@ -1004,10 +1004,6 @@ arch pstone_1
 x 5
 y 13
 end
-arch pstone_1
-x 5
-y 13
-end
 arch warrior_1
 name The Servant
 msg
@@ -1033,8 +1029,7 @@ Entrance to Ruggilli's sanctuary is
 hereby permitted,
 signed theservant_
 endmsg
-nrof 2
-slaying rug_pass2
+slaying rug_pass
 end
 end
 arch dirtfloor
