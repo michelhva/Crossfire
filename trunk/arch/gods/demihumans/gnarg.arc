@@ -2,7 +2,7 @@
 Object Gnarg
 title Lythander
 type 50
-face smalltroll
+face smalltroll.111
 slaying faerie,dwarf
 race goblin,giant,troll
 animation small_troll
