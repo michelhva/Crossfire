@@ -23,13 +23,7 @@ path_repelled 30
 resist_drain 100
 resist_deplete 100
 resist_death 100
-
-resist_drain 30
-resist_deplete 30
-resist_death 30
-
 resist_fear -100
-
 ac -5
 wc -1
 dam 50
