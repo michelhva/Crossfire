@@ -4,6 +4,7 @@ type 158
 invisible 1
 attacktype 1048576
 wc 20
+armour 1
 magic 3
 Str -1
 Con -1
@@ -12,7 +13,7 @@ Wis -1
 Int -1
 Cha -1
 maxhp 10
-dam 1
+dam 2
 maxgrace 6
 food -1
 speed 0.05

@@ -3,7 +3,8 @@ name typhoid
 type 158
 attacktype 1048576
 invisible 1
-wc 10
+wc 25
+armour 1
 magic -1
 Str -3
 Con -4
