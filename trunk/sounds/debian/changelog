@@ -1,0 +1,43 @@
+crossfire-client-sounds (1.5.0-0.1) unstable; urgency=low
+
+  * New upstream release.
+  * Migration to cdbs.
+
+ -- Robert J. Tanner <tanner@real-time.com>  Fri, 28 Jan 2005 20:37:44 -0600
+
+crossfire-client-sounds (1.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Update standards version, no changes
+
+ -- Jaakko Niemi <liiwi@debian.org>  Mon,  2 Aug 2004 01:28:44 +0300
+
+crossfire-client-sounds (1.1.0-1) unstable; urgency=low
+
+  * New maintainer
+  * changed name to crossfire-client-sounds following upstream name change
+  * crossfire-client-gtk does not conflict with crossfire-client (closes: #32088)
+  * change rplay dependecy to rplay-client (closes: 52060)
+  * added build-depends (closes: 70230)
+
+ -- Jaakko Niemi <liiwi@debian.org>  Mon, 11 Feb 2002 01:52:20 +0200
+
+crossfire-sounds (0.92.7-3) unstable; urgency=low
+
+  * Moved sounds from /usr/lib to /usr/share
+
+ -- Darren Benham <gecko@debian.org>  Mon, 29 May 2000 10:17:59 -0800
+
+crossfire-sounds (0.92.7-2) unstable; urgency=low
+
+  * Fixed spelling of X in the control file
+
+ -- Darren Benham <gecko@debian.org>  Sat, 16 Jan 1999 23:56:59 -0800
+
+crossfire-sounds (0.92.7-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Darren Benham <gecko@debian.org>  Thu,  7 Jan 1999 21:48:25 -0800
+
+
