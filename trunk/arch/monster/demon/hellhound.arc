@@ -1,6 +1,7 @@
 Object hellhound
 name hellhound
 face hellhound.131
+randomitems hellhound
 race demon
 anim
 facings 2
