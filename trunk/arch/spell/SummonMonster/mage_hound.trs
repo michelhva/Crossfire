@@ -21,9 +21,17 @@ treasure mage_hound
   more
   arch hellhound
     nrof 1
-    magic 25
+    magic 20
+  more
+  arch dire_wolf_sire
+    nrof 1
+    magic 30
   more
   arch s_mastif
     nrof 1
-    magic 50
+    magic 45
+  more
+  arch gr_hellhound
+    nrof 1
+    magic 60
 end

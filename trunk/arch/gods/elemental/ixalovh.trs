@@ -28,19 +28,16 @@ treasure Ixalovh
   more
  arch god_grace_limit_low
    more
+    arch spell_wave
+   more
     arch spell_insect_plague
   more
  arch god_grace_limit_medium
    more
-    arch spell_wave
-     more
     arch spell_siren_call
   more
  arch god_grace_limit_high
   more
-  arch horn_waves
-    chance 3
-   more
-  arch horn_siren
-    chance 3
+    arch spear_ixalovh
+    chance 2
 end

@@ -10,7 +10,7 @@ burningtail.111
 burningtail.112
 burningtail.113
 mina
-speed 0.4
+speed 0.1
 material 256
 dam 40
 weight 10000
@@ -26,5 +26,6 @@ name_pl Burning Tails of many lashings of Ruggilli
 client_type 100
 body_arm -1
 item_power 25
+glow_radius 3
 skill one handed weapons
 end
