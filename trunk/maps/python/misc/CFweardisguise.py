@@ -9,9 +9,6 @@
 
 import CFPython
 
-import sys
-sys.path.append('%s/%s/python' %(CFPython.GetDataDirectory(),CFPython.GetMapDirectory()))
-
 activator=CFPython.WhoIsActivator()
 activatorname=CFPython.GetName(activator)
 whoami=CFPython.WhoAmI()

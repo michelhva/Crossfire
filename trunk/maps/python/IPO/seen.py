@@ -23,13 +23,7 @@
 # seen            - tells player information from logger
 
 import CFPython
-
-import sys
 import string
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
-
-
 import CFLog
 
 activator=CFPython.WhoIsActivator()

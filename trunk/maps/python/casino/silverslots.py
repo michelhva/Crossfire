@@ -2,9 +2,6 @@
 #to make a new kind of slot machine, copy this file, change the settings and point the slotmachine to the new file.
 
 import CFPython
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
 import CFGamble
 import CFItemBroker
 

@@ -1,5 +1,4 @@
 import CFPython
-import sys
 import random
 
 me = CFPython.WhoAmI()

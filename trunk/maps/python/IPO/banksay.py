@@ -24,10 +24,6 @@
 
 import CFPython
 
-import sys
-import os.path
-sys.path.append(os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'python'))
-
 import string
 import random
 import CFBank
