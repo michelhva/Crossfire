@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 20:44:01 1994
 endmsg
-x 42
-y 22
+width 42
+height 22
 end
 arch woodfloor
 end
@@ -1900,6 +1900,10 @@ arch woodfloor
 x 11
 y 19
 end
+arch giant
+x 11
+y 19
+end
 arch woodfloor
 x 11
 y 20
@@ -2066,6 +2070,10 @@ arch woodfloor
 x 12
 y 19
 end
+arch giant
+x 12
+y 19
+end
 arch woodfloor
 x 12
 y 20
@@ -2213,6 +2221,10 @@ x 13
 y 18
 end
 arch woodfloor
+x 13
+y 19
+end
+arch giant
 x 13
 y 19
 end
@@ -2366,6 +2378,10 @@ arch woodfloor
 x 14
 y 19
 end
+arch giant
+x 14
+y 19
+end
 arch woodfloor
 x 14
 y 20
@@ -2516,6 +2532,10 @@ arch woodfloor
 x 15
 y 19
 end
+arch giant
+x 15
+y 19
+end
 arch woodfloor
 x 15
 y 20
@@ -2663,6 +2683,10 @@ x 16
 y 18
 end
 arch woodfloor
+x 16
+y 19
+end
+arch giant
 x 16
 y 19
 end
@@ -6751,654 +6775,123 @@ name Ludo the mighty
 x 9
 y 8
 end
-More
-arch demon_lord_1
-name Ludo the mighty
-hp 3000
-x 8
-y 5
-end
-More
-arch demon_lord_2
-name Ludo the mighty
-hp 3000
-x 9
-y 5
-end
-More
-arch demon_lord_3
-name Ludo the mighty
-hp 3000
-x 10
-y 5
-end
-More
-arch demon_lord_4
-name Ludo the mighty
-hp 3000
-x 11
-y 5
-end
-More
-arch demon_lord_5
-name Ludo the mighty
-hp 3000
-x 8
-y 6
-end
-More
-arch demon_lord_6
-name Ludo the mighty
-hp 3000
-x 9
-y 6
-end
-More
-arch demon_lord_7
-name Ludo the mighty
-hp 3000
-x 10
-y 6
-end
-More
-arch demon_lord_8
-name Ludo the mighty
-hp 3000
-x 11
-y 6
-end
-More
-arch demon_lord_9
-name Ludo the mighty
-hp 3000
-x 8
-y 7
-end
-More
-arch demon_lord_10
-name Ludo the mighty
-hp 3000
-x 9
-y 7
-end
-More
-arch demon_lord_11
-name Ludo the mighty
-hp 3000
-x 10
-y 7
-end
-More
-arch demon_lord_12
-name Ludo the mighty
-hp 3000
-x 11
-y 7
-end
-More
-arch demon_lord_13
-name Ludo the mighty
-hp 3000
-x 8
-y 8
-end
-More
-arch demon_lord_15
-name Ludo the mighty
-hp 3000
-x 10
-y 8
-end
-More
-arch demon_lord_16
-name Ludo the mighty
-hp 3000
-x 11
-y 8
-end
-More
-arch demon_lord_17
-name Ludo the mighty
-hp 3000
-x 8
-y 9
-end
-More
-arch demon_lord_18
-name Ludo the mighty
-hp 3000
-x 9
-y 9
-end
-More
-arch demon_lord_19
-name Ludo the mighty
-hp 3000
-x 10
-y 9
-end
-More
-arch demon_lord_20
-name Ludo the mighty
-hp 3000
-x 11
-y 9
-end
-More
-arch demon_lord_21
-name Ludo the mighty
-hp 3000
-x 8
-y 10
-end
-More
-arch demon_lord_22
-name Ludo the mighty
-hp 3000
-x 9
-y 10
-end
-More
-arch demon_lord_23
-name Ludo the mighty
-hp 3000
-x 10
-y 10
-end
-More
-arch demon_lord_24
-name Ludo the mighty
-hp 3000
-x 11
-y 10
-end
-More
-arch demon_lord_25
-name Ludo the mighty
-hp 3000
-x 8
-y 11
-end
-More
-arch demon_lord_26
-name Ludo the mighty
-hp 3000
-x 9
-y 11
-end
-More
-arch demon_lord_27
-name Ludo the mighty
-hp 3000
-x 10
-y 11
-end
-More
-arch demon_lord_28
-name Ludo the mighty
-hp 3000
-x 11
-y 11
-end
-More
-arch demon_lord_29
-name Ludo the mighty
-hp 3000
-x 8
-y 12
-end
-More
-arch demon_lord_30
-name Ludo the mighty
-hp 3000
-x 9
-y 12
-end
-More
-arch demon_lord_31
-name Ludo the mighty
-hp 3000
-x 10
-y 12
-end
-More
-arch demon_lord_32
-name Ludo the mighty
-hp 3000
-x 11
-y 12
-end
-arch giant
-x 11
-y 19
-end
-More
-arch giant_2
-x 11
-y 20
-end
-arch giant
-x 12
-y 19
-end
-More
-arch giant_2
-x 12
-y 20
-end
 arch cobra
 x 13
 y 13
-end
-More
-arch cobra_2
-x 13
-y 14
 end
 arch cobra
 x 13
 y 15
 end
-More
-arch cobra_2
-x 13
-y 16
-end
-arch giant
-x 13
-y 19
-end
-More
-arch giant_2
-x 13
-y 20
-end
 arch cobra
 x 14
 y 13
 end
-More
-arch cobra_2
-x 14
-y 14
-end
 arch cobra
 x 14
 y 15
-end
-More
-arch cobra_2
-x 14
-y 16
-end
-arch giant
-x 14
-y 19
-end
-More
-arch giant_2
-x 14
-y 20
 end
 arch dragon
 x 15
-y 13
-end
-More
-arch dragon_2
-x 16
 y 13
 end
 arch dragon
 x 15
 y 14
 end
-More
-arch dragon_2
-x 16
-y 14
-end
 arch dragon
 x 15
-y 15
-end
-More
-arch dragon_2
-x 16
 y 15
 end
 arch dragon
 x 15
 y 16
-end
-More
-arch dragon_2
-x 16
-y 16
-end
-arch giant
-x 15
-y 19
-end
-More
-arch giant_2
-x 15
-y 20
-end
-arch giant
-x 16
-y 19
-end
-More
-arch giant_2
-x 16
-y 20
 end
 arch dragon
 x 17
-y 13
-end
-More
-arch dragon_2
-x 18
 y 13
 end
 arch dragon
 x 17
 y 14
 end
-More
-arch dragon_2
-x 18
-y 14
-end
 arch dragon
 x 17
 y 15
 end
-More
-arch dragon_2
-x 18
-y 15
-end
 arch dragon
 x 17
-y 16
-end
-More
-arch dragon_2
-x 18
 y 16
 end
 arch troll
 x 17
 y 19
 end
-More
-arch troll_2
-x 18
-y 19
-end
-More
-arch troll_3
-x 17
-y 20
-end
-More
-arch troll_4
-x 18
-y 20
-end
 arch dragon
 x 19
-y 13
-end
-More
-arch dragon_2
-x 20
 y 13
 end
 arch dragon
 x 19
 y 14
 end
-More
-arch dragon_2
-x 20
-y 14
-end
 arch dragon
 x 19
-y 15
-end
-More
-arch dragon_2
-x 20
 y 15
 end
 arch troll
 x 19
 y 19
-end
-More
-arch troll_2
-x 20
-y 19
-end
-More
-arch troll_3
-x 19
-y 20
-end
-More
-arch troll_4
-x 20
-y 20
 end
 arch troll
 x 21
 y 19
 end
-More
-arch troll_2
-x 22
-y 19
-end
-More
-arch troll_3
-x 21
-y 20
-end
-More
-arch troll_4
-x 22
-y 20
-end
 arch behemoth
 x 26
 y 19
-end
-More
-arch behemoth_2
-x 27
-y 19
-end
-More
-arch behemoth_3
-x 26
-y 20
-end
-More
-arch behemoth_4
-x 27
-y 20
 end
 arch dragon
 x 27
 y 12
 end
-More
-arch dragon_2
-x 28
-y 12
-end
 arch behemoth
 x 28
 y 19
-end
-More
-arch behemoth_2
-x 29
-y 19
-end
-More
-arch behemoth_3
-x 28
-y 20
-end
-More
-arch behemoth_4
-x 29
-y 20
 end
 arch dragon
 x 30
 y 12
 end
-More
-arch dragon_2
-x 31
-y 12
-end
 arch chinese_dragon
 x 31
 y 19
 end
-More
-arch chinese_dragon_2
-x 32
-y 19
-end
-More
-arch chinese_dragon_3
-x 31
-y 20
-end
-More
-arch chinese_dragon_4
-x 32
-y 20
-end
 arch chinese_dragon
 x 33
 y 19
-end
-More
-arch chinese_dragon_2
-x 34
-y 19
-end
-More
-arch chinese_dragon_3
-x 33
-y 20
-end
-More
-arch chinese_dragon_4
-x 34
-y 20
 end
 arch dragon
 x 35
 y 12
 end
-More
-arch dragon_2
-x 36
-y 12
-end
 arch chinese_dragon
 x 35
 y 19
-end
-More
-arch chinese_dragon_2
-x 36
-y 19
-end
-More
-arch chinese_dragon_3
-x 35
-y 20
-end
-More
-arch chinese_dragon_4
-x 36
-y 20
 end
 arch dragon
 x 37
-y 12
-end
-More
-arch dragon_2
-x 38
 y 12
 end
 arch dread
 x 37
 y 15
 end
-More
-arch dread_2
-x 38
-y 15
-end
-More
-arch dread_3
-x 37
-y 16
-end
-More
-arch dread_4
-x 38
-y 16
-end
 arch dread
 x 37
 y 17
 end
-More
-arch dread_2
-x 38
-y 17
-end
-More
-arch dread_3
-x 37
-y 18
-end
-More
-arch dread_4
-x 38
-y 18
-end
 arch chinese_dragon
 x 37
 y 19
-end
-More
-arch chinese_dragon_2
-x 38
-y 19
-end
-More
-arch chinese_dragon_3
-x 37
-y 20
-end
-More
-arch chinese_dragon_4
-x 38
-y 20
 end
