@@ -1084,6 +1084,7 @@ She's a loony,
 we don't have a
 basement.
 endmsg
+randomitems jail
 x 6
 y 20
 end
@@ -1670,17 +1671,6 @@ arch woodfloor
 x 10
 y 17
 end
-arch c_woman
-name Ethil
-msg
-@match *
-I hear something in
-the basement.
-Don't you hear it?
-endmsg
-x 10
-y 17
-end
 arch woodfloor
 x 10
 y 18
@@ -1819,6 +1809,17 @@ x 11
 y 20
 end
 arch woodfloor
+x 11
+y 21
+end
+arch c_woman
+name Ethil
+msg
+@match *
+I hear something in
+the basement.
+Don't you hear it?
+endmsg
 x 11
 y 21
 end
@@ -3255,6 +3256,10 @@ x 21
 y 9
 end
 arch charwoman
+msg
+@match *
+Oooo there's some lovely filth down 'ere.
+endmsg
 x 21
 y 9
 end
