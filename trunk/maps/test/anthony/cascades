@@ -147,7 +147,7 @@ Unexpectantally however, this cascade
 is FASTER than the original cascade.
 --
 The reason is that the `up' spikes
-never fully lowerer before recieving the
+never fully lowerer before receiving the
 boulder (or token object), and so rolls
 the object off faster!
 endmsg
