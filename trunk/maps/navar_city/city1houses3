@@ -5398,7 +5398,7 @@ end
 arch veiled_woman3
 name Gossiping woman
 msg
-@mtach *
+@match *
 Have you heard any gossip?
 endmsg
 x 27

@@ -1,4 +1,4 @@
-# recieve.py - Script for apply event of mailbox
+# receive.py - Script for apply event of mailbox
 #
 # Copyright (C) 2002 Joris Bontje
 #

@@ -532,7 +532,7 @@ Imperial Post Services
 Thank you for choosing the IPS to
 take care of your messages. Want to
 get more ? We have a wide range of
-products ans services to offer to
+products and services to offer to
 anyone. Pirate ? Try  our
 TalkParrots(tm) ! Beholder ? Enjoy
 our fabulous non-stereoscopical cards
@@ -545,7 +545,7 @@ end
 arch book_read
 name Manual
 msg
-Recieving Mail
+Receiving Mail
 -----------------------
 Open the mailbox and get the scrolls,
 read them by applying.
@@ -555,11 +555,11 @@ Get a pencil and be sure that you are
 able to use the literacy skill. You can
 get both at the office, ask Colette for
 help.
-Get a preadressed mailscroll, mark it
+Get a preaddressed mailscroll, mark it
 and write on it with:
 use_skill inscription <text>
 You can write multiple lines, when done
-drop the scoll in the mailbox and it
+drop the scroll in the mailbox and it
 will be send.
 endmsg
 x 7
