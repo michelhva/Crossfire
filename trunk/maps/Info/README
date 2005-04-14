@@ -138,3 +138,23 @@ guilds@mailed_fist	-> scorn@guilds@mailed_fist
 guilds@poisoned_dagger  -> darcap@darcap@guilds@poisoned_dagger
 guilds@purple_butterfly -> pup_land@guilds@purple_butterfly
 guilds@smoking_cauldron -> darcap@darcap@guilds@smoking_cauldron
+
+------------------------------------------------------------------------------
+rewrite_exits.pl:
+
+This is a perl script that basically goes through and updates the slaying
+fields for maps, which makes renaming maps easy.
+
+However, for this to work, map names must be unique.  Often the case, but
+not always.  If it gets a duplicate, it doesn't do anything.
+
+Run it from the top level map directory - it then does it works updating
+all the maps.
+
+------------------------------------------------------------------------------
+rewrite_styles.pl:
+
+Similar to rewrite_exits, but instead for styles.  Designed to fix up the
+uppercase style names that the mlab maps used, and also put them in
+a subdirectory so that the styles won't show up for maps that use random
+styles.
