@@ -8,7 +8,7 @@ weight 2500
 food 10000
 type 82
 nrof 1
-glow_radius -3
+glow_radius 0
 editable 128
 magicmap brown
 name_pl lanterns
