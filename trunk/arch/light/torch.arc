@@ -8,7 +8,7 @@ weight 500
 food 1
 changing 1
 nrof 1
-glow_radius -3
+glow_radius 0
 editable 128
 magicmap brown
 name_pl torches
