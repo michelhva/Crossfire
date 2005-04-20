@@ -440,7 +440,7 @@ x 7
 y 4
 end
 arch diamond_converter
-name 100 nuggets -> a potion
+name 100 large nuggets -> a potion
 slaying largenugget
 other_arch potion_heal
 food 100
@@ -563,7 +563,7 @@ x 9
 y 4
 end
 arch diamond_converter
-name 100 nuggets -> a potion
+name 100 large nuggets -> a potion
 slaying largenugget
 other_arch potion_magic
 food 100
@@ -1066,7 +1066,7 @@ x 17
 y 8
 end
 arch diamond_converter
-name drop 5 nuggets to buy diamonds
+name drop 5 large nuggets to buy diamonds
 slaying largenugget
 food 5
 x 17
