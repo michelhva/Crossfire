@@ -1,6 +1,6 @@
 arch map
-region scorn
 name goths
+region scorn
 msg
 Creator:
 Email:
@@ -4833,15 +4833,21 @@ Its full of a lot of nasty monsters -
 wyverns, giants, beholders.  Do you
 want to go there?
 @match Yes|yes
-Its to the east of the swamp, along
-the north road to Santo Dominion.
+It's almost directly to the northeast of Scorn - about
+400 miles.  Easiest way to get there is to take the
+north road outside of Scorn.  Once you get past the
+lake, start heading east/northeast - you will need to
+climb over some mountains.  If you run across
+a river, just start going north - keep going north past
+the like it flows from - about 75 miles.  The castle
+is in a valley with some hills and woods.
 @match *
 Buzz off.  Can't you see I am in pain!
 endmsg
-hp 130
 level 12
-friendly 1
+hp 130
 unaggressive 0
+friendly 1
 x 22
 y 17
 end
