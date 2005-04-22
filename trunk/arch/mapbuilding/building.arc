@@ -38,6 +38,16 @@ subtype 1
 face mbwoodfloor.111
 slaying woodfloor
 end
+Object building_woodfloor2
+name Dark Wood floor material
+nrof 1
+weight 1500
+value 1500
+type 161
+subtype 1
+face mbwoodfloor2.111
+slaying woodfloor2
+end
 Object building_wall
 name Wall material
 nrof 1
