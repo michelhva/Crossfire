@@ -1,0 +1,13 @@
+treasureone building_objects
+  arch building_firepot
+    chance 10
+  more
+  arch building_brazier
+    chance 8
+  more
+  arch building_fireplace
+    chance 6
+  more
+  arch building_fountain
+    chance 3
+end
