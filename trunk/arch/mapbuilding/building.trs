@@ -24,6 +24,9 @@ treasureone building_material
     chance 8
   list building_marbles
     chance 5
+  more
+  list building_objects
+   chance 5
 end
 treasureone shop_building
   arch building_builder
