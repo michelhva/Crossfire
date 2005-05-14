@@ -1,10 +1,10 @@
 Object golem_necro
 race unnatural
 name golem of Necromancer
-face gol.131
+face gol.x11
 anim
-gol.131
-gol.132
+gol.x11
+gol.x12
 mina
 speed -0.4
 Str 60
@@ -23,9 +23,7 @@ ac -40
 level 50
 resist_electricity 100
 resist_fear 100
-
 resist_magic 50
-
 weight 1500000
 randomitems titan
 run_away 1
@@ -62,72 +60,67 @@ end
 More
 Object golem_necro_2
 name golem of Necromancer
-face gol.211
+face gol.x11
 anim
-gol.211
-gol.212
+gol.x11
+gol.x12
 mina
 monster 1
 alive 1
 x 1
-weight 1500000
 magicmap grey
 end
 More
 Object golem_necro_3
 name golem of Necromancer
-face gol.311
+face gol.x11
 anim
-gol.311
-gol.312
+gol.x11
+gol.x12
 mina
 monster 1
 alive 1
 y 1
-weight 1500000
 magicmap grey
 end
 More
 Object golem_necro_4
 name golem of Necromancer
-face gol.411
+face gol.x11
 anim
-gol.411
-gol.412
+gol.x11
+gol.x12
 mina
 monster 1
 alive 1
 x 1
 y 1
-weight 1500000
 magicmap grey
 end
 More
 Object golem_necro_5
 name golem of Necromancer
-face gol.511
+face gol.x11
 anim
-gol.511
-gol.512
+gol.x11
+gol.x12
 mina
 monster 1
 alive 1
 y 2
-weight 1500000
 magicmap grey
 end
 More
 Object golem_necro_6
 name golem of Necromancer
-face gol.611
+face gol.x11
 anim
-gol.611
-gol.612
+gol.x11
+gol.x12
 mina
 monster 1
 alive 1
 x 1
 y 2
-weight 1500000
 magicmap grey
 end
