@@ -5,16 +5,16 @@ race faerie
 monster 1
 sleep 1
 Wis 18
-face unicorn.171
+face unicorn.x31
 color_fg white
 anim
 facings 2
-unicorn.171
-unicorn.172
-unicorn.173
-unicorn.131
-unicorn.132
-unicorn.133
+unicorn.x31
+unicorn.x32
+unicorn.x33
+unicorn.x71
+unicorn.x72
+unicorn.x73
 mina
 level 6
 Con 8
@@ -29,7 +29,6 @@ resist_acid 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
-
 attacktype 1
 unaggressive 1
 ac 4
@@ -47,16 +46,16 @@ end
 More
 Object unicorn_2
 name unicorn
-face unicorn.271
+face unicorn.x31
 color_fg white
 anim
 facings 2
-unicorn.271
-unicorn.272
-unicorn.273
-unicorn.231
-unicorn.232
-unicorn.233
+unicorn.x31
+unicorn.x32
+unicorn.x33
+unicorn.x71
+unicorn.x72
+unicorn.x73
 mina
 monster 1
 x 1
