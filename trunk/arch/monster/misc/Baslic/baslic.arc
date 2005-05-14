@@ -2,12 +2,12 @@ Object baslic
 name basilisk
 randomitems chinese
 race unnatural
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 monster 1
 sleep 1
@@ -42,12 +42,12 @@ end
 More
 Object baslic_2
 name baslic
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 alive 1
 x 1
@@ -56,12 +56,12 @@ end
 More
 Object baslic_3
 name baslic
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 alive 1
 x 2
@@ -70,12 +70,12 @@ end
 More
 Object baslic_4
 name baslic
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 alive 1
 y 1
@@ -84,12 +84,12 @@ end
 More
 Object baslic_5
 name baslic
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 alive 1
 y 1
@@ -99,12 +99,12 @@ end
 More
 Object baslic_6
 name baslic
-face baslic.x71
+face baslic.x31
 anim
-baslic.x71
-baslic.x72
 baslic.x31
 baslic.x32
+baslic.x71
+baslic.x72
 mina
 alive 1
 y 1
