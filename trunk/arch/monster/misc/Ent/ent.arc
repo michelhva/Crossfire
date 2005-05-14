@@ -1,17 +1,17 @@
 Object ent
 randomitems giant
 race faerie
-face ent.111
+face ent.x11
 color_fg brown
 anim
-ent.111
-ent.111
-ent.111
-ent.112
-ent.112
-ent.113
-ent.113
-ent.112
+ent.x11
+ent.x11
+ent.x11
+ent.x12
+ent.x12
+ent.x13
+ent.x13
+ent.x12
 mina
 msg
 @match *
@@ -31,7 +31,7 @@ Con 10
 maxhp 1500
 alive 1
 speed -0.3
-weight 300000
+weight 3000000
 monster 1
 sleep 1
 Wis 15
@@ -44,61 +44,61 @@ end
 More
 Object ent_2
 name ent
-face ent.211
+face ent.x11
 color_fg brown
 anim
-ent.211
-ent.211
-ent.211
-ent.212
-ent.212
-ent.213
-ent.213
-ent.212
+ent.x11
+ent.x11
+ent.x11
+ent.x12
+ent.x12
+ent.x13
+ent.x13
+ent.x12
 mina
 monster 1
 alive 1
 x 1
-weight 300000
+weight 3000000
 end
 More
 Object ent_3
 name ent
-face ent.311
+face ent.x11
 color_fg brown
 anim
-ent.311
-ent.311
-ent.311
-ent.312
-ent.312
-ent.313
-ent.313
-ent.312
+ent.x11
+ent.x11
+ent.x11
+ent.x12
+ent.x12
+ent.x13
+ent.x13
+ent.x12
 mina
 monster 1
 alive 1
 y 1
-weight 300000
+weight 3000000
 end
 More
 Object ent_4
 name ent
-face ent.411
+face ent.x11
 color_fg brown
 anim
-ent.411
-ent.411
-ent.411
-ent.412
-ent.412
-ent.413
-ent.413
-ent.412
+ent.x11
+ent.x11
+ent.x11
+ent.x12
+ent.x12
+ent.x13
+ent.x13
+ent.x12
 mina
 monster 1
 alive 1
 x 1
 y 1
-weight 300000
+weight 3000000
 end
