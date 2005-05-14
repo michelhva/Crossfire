@@ -4,6 +4,7 @@ randomitems chinese
 race unnatural
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
@@ -44,6 +45,7 @@ Object baslic_2
 name baslic
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
@@ -58,6 +60,7 @@ Object baslic_3
 name baslic
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
@@ -72,6 +75,7 @@ Object baslic_4
 name baslic
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
@@ -86,6 +90,7 @@ Object baslic_5
 name baslic
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
@@ -101,6 +106,7 @@ Object baslic_6
 name baslic
 face baslic.x31
 anim
+facings 2
 baslic.x31
 baslic.x32
 baslic.x71
