@@ -1,15 +1,15 @@
 Object lamia
 randomitems lamia
-face lamia.131
+face lamia.x31
 race faerie
 monster 1
 sleep 1
 anim
 facings 2
-lamia.131
-lamia.132
-lamia.171
-lamia.172
+lamia.x31
+lamia.x32
+lamia.x71
+lamia.x72
 mina
 level 30
 Con 36
@@ -24,12 +24,10 @@ maxsp 50
 sp 50
 resist_physical 50
 resist_magic 50
-
 resist_acid 100
 resist_poison 100
 resist_fear 100
 resist_chaos 100
-
 attacktype 65
 see_invisible 1
 exp 100000
@@ -68,13 +66,13 @@ body_range 1
 end
 More
 Object lamia_2
-face lamia.231
+face lamia.x31
 anim
 facings 2
-lamia.231
-lamia.232
-lamia.271
-lamia.272
+lamia.x31
+lamia.x32
+lamia.x71
+lamia.x72
 mina
 color_fg green
 monster 1

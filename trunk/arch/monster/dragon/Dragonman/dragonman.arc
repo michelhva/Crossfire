@@ -5,17 +5,17 @@ randomitems dragon
 monster 1
 sleep 1
 Wis 20
-face dragonman.x71
+face dragonman.x31
 anim
 facings 2
-dragonman.x71
-dragonman.x72
-dragonman.x73
-dragonman.x72
 dragonman.x31
 dragonman.x32
 dragonman.x33
 dragonman.x32
+dragonman.x71
+dragonman.x72
+dragonman.x73
+dragonman.x72
 mina
 level 18
 Con 11
@@ -53,17 +53,17 @@ end
 More
 Object dragonman_2
 name dragon man
-face dragonman.x71
+face dragonman.x31
 anim
 facings 2
-dragonman.x71
-dragonman.x72
-dragonman.x73
-dragonman.x72
 dragonman.x31
 dragonman.x32
 dragonman.x33
 dragonman.x32
+dragonman.x71
+dragonman.x72
+dragonman.x73
+dragonman.x72
 mina
 monster 1
 alive 1
