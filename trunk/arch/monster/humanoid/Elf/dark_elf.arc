@@ -4,7 +4,7 @@ name dark elf
 randomitems dark_elf
 face dark_elf.131
 anim
-facings2
+facings 2
 dark_elf.131
 dark_elf.132
 dark_elf.171
