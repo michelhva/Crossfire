@@ -1,22 +1,29 @@
 Object gaelotroll
 randomitems giant
 race troll
-face gaelotroll.111
+face gaelotroll.x31
 anim
-gaelotroll.111
-gaelotroll.112
-gaelotroll.113
-gaelotroll.112
-gaelotroll.111
-gaelotroll.112
-gaelotroll.113
-gaelotroll.112
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 resist_fire -100
-
 resist_physical 50
 resist_fear 50
-
 attacktype 65
 can_see_in_dark 1
 exp 70000
@@ -32,7 +39,7 @@ maxhp 3000
 level 12
 alive 1
 speed -0.2
-weight 300000
+weight 3000000
 monster 1
 sleep 1
 Wis 13
@@ -48,102 +55,142 @@ end
 More
 Object gaelotroll_2
 name troll
-face gaelotroll.211
+face gaelotroll.x31
 anim
-gaelotroll.211
-gaelotroll.212
-gaelotroll.213
-gaelotroll.212
-gaelotroll.211
-gaelotroll.212
-gaelotroll.213
-gaelotroll.212
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 monster 1
 alive 1
 x 1
-weight 300000
 magicmap blue
 end
 More
 Object gaelotroll_3
 name troll
-face gaelotroll.311
+face gaelotroll.x31
 anim
-gaelotroll.311
-gaelotroll.312
-gaelotroll.313
-gaelotroll.312
-gaelotroll.311
-gaelotroll.312
-gaelotroll.313
-gaelotroll.312
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 monster 1
 alive 1
 y 1
-weight 300000
 magicmap blue
 end
 More
 Object gaelotroll_4
 name troll
-face gaelotroll.411
+face gaelotroll.x31
 anim
-gaelotroll.411
-gaelotroll.412
-gaelotroll.413
-gaelotroll.412
-gaelotroll.411
-gaelotroll.412
-gaelotroll.413
-gaelotroll.412
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 monster 1
 alive 1
 x 1
 y 1
-weight 300000
 magicmap blue
 end
 More
 Object gaelotroll_5
 name troll
-face gaelotroll.511
+face gaelotroll.x31
 anim
-gaelotroll.511
-gaelotroll.512
-gaelotroll.513
-gaelotroll.512
-gaelotroll.511
-gaelotroll.512
-gaelotroll.513
-gaelotroll.512
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 monster 1
 alive 1
 y 2
-weight 300000
 magicmap blue
 end
 More
 Object gaelotroll_6
 name troll
-face gaelotroll.611
+face gaelotroll.x31
 anim
-gaelotroll.611
-gaelotroll.612
-gaelotroll.613
-gaelotroll.612
-gaelotroll.611
-gaelotroll.612
-gaelotroll.613
-gaelotroll.612
+facings 2
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x31
+gaelotroll.x32
+gaelotroll.x33
+gaelotroll.x32
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
+gaelotroll.x71
+gaelotroll.x72
+gaelotroll.x73
+gaelotroll.x72
 mina
 monster 1
 alive 1
 x 1
 y 2
-weight 300000
 magicmap blue
 end

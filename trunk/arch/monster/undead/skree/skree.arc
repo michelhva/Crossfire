@@ -1,5 +1,5 @@
 Object skree
-face skree.111
+face skree.x31
 race undead
 randomitems skree
 animation skree_1
@@ -37,29 +37,26 @@ undead 1
 end
 More
 Object skree_2
-face skree.211
+face skree.x31
 animation skree_2
 x 1
-weight 1800000
 alive 1
 color_fg black
 end
 More
 Object skree_3
-face skree.311
+face skree.x31
 animation skree_3
 y 1
-weight 1800000
 alive 1
 color_fg black
 end
 More
 Object skree_4
-face skree.411
+face skree.x31
 animation skree_4
 x 1
 y 1
-weight 1800000
 alive 1
 color_fg black
 end
