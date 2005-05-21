@@ -6,9 +6,10 @@ Creator: bt foom
 Email: thomas@astro.psu.edu
 Date: Thu May  2 01:57:58 1996
 endmsg
-hp 14
-sp 14
-x 18
+width 18
+height 16
+enter_x 14
+enter_y 14
 end
 arch woodfloor
 end
@@ -871,17 +872,9 @@ arch shop_empty
 x 10
 y 8
 end
-arch shop_empty
+arch shop_potions
 x 10
 y 9
-end
-arch key2
-name lab key
-slaying alch_lab
-x 10
-y 9
-value 500
-unpaid 1
 end
 arch shop_potions
 x 10
@@ -1009,7 +1002,7 @@ arch woodfloor
 x 11
 y 13
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 11
 y 13
 end
@@ -1040,9 +1033,9 @@ x 12
 y 1
 end
 arch clock
+no_pick 1
 x 12
 y 1
-no_pick 1
 end
 arch woodfloor
 x 12
@@ -1109,11 +1102,11 @@ x 12
 y 12
 end
 arch bench_1_4
-x 12
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 12
 end
 arch woodfloor
 x 12
@@ -1128,7 +1121,7 @@ read old books. They often appear in
 magic shops.
 @match *
 If you're really interested in alchemy
-you'd better buy the lab key and get
+you'd better buy a day pass and get
 going.
 endmsg
 x 12
@@ -1158,23 +1151,23 @@ y 1
 end
 arch table_3
 name lab bench
+no_pick 1
 x 13
 y 1
-no_pick 1
 end
 arch book_read
 name basic instructions
 msg
 To make an alchemical product, assemble
 your ingredients in the cauldron.
-Then cast the spell alchemy upon it. 
-If your recipe is true and your skill is sufficient, 
+Then cast the spell alchemy upon it.
+If your recipe is true and your skill is sufficient,
 then you will have made what you hoped for.
 endmsg
-x 13
-y 1
 level 6
 no_pick 1
+x 13
+y 1
 end
 arch woodfloor
 x 13
@@ -1189,9 +1182,9 @@ x 13
 y 4
 end
 arch cauldron
+no_pick 1
 x 13
 y 4
-no_pick 1
 end
 arch woodfloor
 x 13
@@ -1242,33 +1235,33 @@ x 13
 y 12
 end
 arch bench_2_2_3
-x 13
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 12
 end
 arch woodfloor
 x 13
 y 13
 end
 arch bench_2_1_1
-x 13
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 13
 end
 arch woodfloor
 x 13
 y 14
 end
 arch bench_1_2
-x 13
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 14
 end
 arch woodfloor
 x 13
@@ -1290,9 +1283,9 @@ y 1
 end
 arch table_3
 name lab bench
+no_pick 1
 x 14
 y 1
-no_pick 1
 end
 arch woodfloor
 x 14
@@ -1314,7 +1307,18 @@ arch woodfloor
 x 14
 y 6
 end
+arch pedestal
+invisible 1
+connected 11
+x 14
+y 6
+end
 arch woodfloor
+x 14
+y 7
+end
+arch mdoor_closed_1
+connected 11
 x 14
 y 7
 end
@@ -1322,16 +1326,13 @@ arch woodfloor
 x 14
 y 8
 end
-arch woodfloor
+arch check_floor
+slaying potion_shop1
+connected 11
 x 14
-y 9
+y 8
 end
-arch locked_door1
-slaying alch_lab
-msg
-You need to buy the lab key if you
-want to enter here.
-endmsg
+arch woodfloor
 x 14
 y 9
 end
@@ -1465,7 +1466,7 @@ arch woodfloor
 x 15
 y 9
 end
-arch wwall_2_1_1
+arch wwall_2_2_1
 x 15
 y 9
 end
@@ -1473,15 +1474,7 @@ arch woodfloor
 x 15
 y 10
 end
-arch wwall_2_1_1
-x 15
-y 10
-end
 arch woodfloor
-x 15
-y 11
-end
-arch wwall_2_1_1
 x 15
 y 11
 end
@@ -1489,23 +1482,11 @@ arch woodfloor
 x 15
 y 12
 end
-arch wwall_2_1_1
-x 15
-y 12
-end
 arch woodfloor
 x 15
 y 13
 end
-arch wwall_2_1_1
-x 15
-y 13
-end
 arch woodfloor
-x 15
-y 14
-end
-arch wwall_2_1_1
 x 15
 y 14
 end
@@ -1513,7 +1494,7 @@ arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_2_4
+arch wwall_2_1_2
 x 15
 y 15
 end
@@ -1603,51 +1584,88 @@ arch grass
 x 16
 y 8
 end
-arch grass
+arch tree4
+x 16
+y 8
+end
+arch woodfloor
 x 16
 y 9
 end
-arch grass
+arch wwall_2_1_2
+x 16
+y 9
+end
+arch woodfloor
 x 16
 y 10
 end
-arch tree5
+arch trigger_marker
+msg
+You have one day's use of these facilities.
+endmsg
+slaying potion_shop1
+connected 10
+speed 1.0
+food 504
 x 16
 y 10
 end
-arch grass
+arch altar_trigger
+name Drop 200 platinum for day pass
+slaying platinacoin
+food 200
+connected 10
+x 16
+y 10
+end
+arch woodfloor
 x 16
 y 11
 end
-arch grass
+arch wwall_1_4
+x 16
+y 11
+end
+arch woodfloor
 x 16
 y 12
 end
-arch brush
+arch diamond_converter
+name Mana Potion: 1400 pp
+slaying platinacoin
+food 1400
+other_arch potion_magic
+sp 1
 x 16
 y 12
 end
-arch grass
+arch woodfloor
 x 16
 y 13
 end
-arch tree5
+arch wwall_1_4
 x 16
 y 13
 end
-arch grass
+arch woodfloor
 x 16
 y 14
 end
-arch tree5
+arch diamond_converter
+name Healing Potion: 1400 pp
+slaying platinacoin
+food 1400
+other_arch potion_heal
+sp 1
 x 16
 y 14
 end
-arch grass
+arch woodfloor
 x 16
 y 15
 end
-arch tree5
+arch wwall_2_1_2
 x 16
 y 15
 end
@@ -1717,31 +1735,59 @@ arch grass
 x 17
 y 8
 end
-arch grass
+arch woodfloor
 x 17
 y 9
 end
-arch grass
+arch wwall_2_2_3
+x 17
+y 9
+end
+arch woodfloor
 x 17
 y 10
 end
-arch grass
+arch wwall_2_1_1
+x 17
+y 10
+end
+arch woodfloor
 x 17
 y 11
 end
-arch grass
+arch wwall_3_4
+x 17
+y 11
+end
+arch woodfloor
 x 17
 y 12
 end
-arch grass
+arch wwall_2_1_1
+x 17
+y 12
+end
+arch woodfloor
 x 17
 y 13
 end
-arch grass
+arch wwall_3_4
+x 17
+y 13
+end
+arch woodfloor
 x 17
 y 14
 end
-arch grass
+arch wwall_2_1_1
+x 17
+y 14
+end
+arch woodfloor
+x 17
+y 15
+end
+arch wwall_2_2_4
 x 17
 y 15
 end
