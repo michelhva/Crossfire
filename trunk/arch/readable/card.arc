@@ -2,6 +2,7 @@ Object card
 face card.111
 nrof 1
 type 8
+subtype 12
 material 1
 skill literacy
 value 8

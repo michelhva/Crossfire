@@ -1,6 +1,7 @@
 Object gravestone
 face gravestone.111
-type 38
+type 98
+subtype 48
 material 64
 weight 200000
 value 40
