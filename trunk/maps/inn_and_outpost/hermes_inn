@@ -325,6 +325,8 @@ He's a little slow on the uptake,
 but he's a good kid.
 @match Aza|aza
 Who?  Never heard of him.
+@match White|white
+Look. I'm getting tired of all your questions...understand me?
 @match *
 What can I gettcha?
 endmsg
@@ -1539,9 +1541,10 @@ x 16
 y 1
 end
 arch pearl_converter
-name drop 800 gold to buy healing potion
+name drop 1500 platinum to buy healing potion
 face cauldron.111
-food 800
+slaying platinacoin
+food 1500
 other_arch potion_heal
 x 16
 y 1
