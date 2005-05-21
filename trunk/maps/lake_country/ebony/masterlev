@@ -1221,6 +1221,7 @@ y 1
 end
 arch key2
 name Master key of thievery
+name_pl Master keys of thievery
 slaying Thievery
 x 7
 y 1
@@ -1312,6 +1313,7 @@ y 20
 end
 arch potion_heroism
 name potion of dragon firebreath
+name_pl potions of dragon firebreath
 msg
 =>>
   After quaffing the liquid distilled
@@ -1337,6 +1339,7 @@ y 22
 end
 arch potion_fire
 name potion of courage
+name_pl potions of courage
 msg
 =>>
   It hypnotizes you, gives you courage 
@@ -1466,6 +1469,7 @@ y 20
 end
 arch potion_heroism
 name potion of dragon icebreath
+name_pl potions of dragon icebreath
 msg
 =>>
   After quaffing the liquid distilled
@@ -1491,6 +1495,7 @@ y 22
 end
 arch potion_fire
 name potion of clear mind
+name_pl potions of clear mind
 msg
 =>>
   It clears your thought and make you 
@@ -1620,6 +1625,7 @@ y 20
 end
 arch potion_heroism
 name potion of awesome morningbreath
+name_pl potions of awesome morningbreath
 msg
 =>>
   This stinking liquid grant you the
@@ -1644,6 +1650,7 @@ y 22
 end
 arch potion_fire
 name potion of static protection
+name_pl potions of static protection
 msg
 =>>
   It temporarily enchances your body
@@ -1772,6 +1779,7 @@ y 20
 end
 arch potion_heroism
 name potion of haste self
+name_pl potions of haste self
 msg
 =>>
    Distilled from body fluid of quicklings,
@@ -1801,6 +1809,7 @@ y 22
 end
 arch potion_heroism
 name potion of invisibility
+name_pl potions of invisibility
 face potiongen.111
 sp 26
 x 10
@@ -1974,7 +1983,9 @@ unaggressive 1
 sleep 1
 arch key2
 name Master key of thievery
+name_pl Master keys of thievery
 slaying Thievery
+nrof 1
 end
 arch spell_mass_confusion
 end
@@ -2841,6 +2852,7 @@ y 23
 end
 arch bracers_dex
 name Essence of Flame
+name_pl Essences of Flame
 msg
    It's said to be from the spirit of an
    efreet. It burns with red hot fury.
@@ -3002,6 +3014,7 @@ y 23
 end
 arch amulet
 name amulet of poisoning
+name_pl amulets of poisoning
 face amulet_lif.111
 Dex 1
 x 17
@@ -3149,6 +3162,7 @@ y 23
 end
 arch plate_mail
 name plate mail of courage
+name_pl plate mails of courage
 Str 1
 x 18
 y 23
@@ -3468,6 +3482,7 @@ y 23
 end
 arch mithril_chainmail
 name mithril chainmail of Winter
+name_pl mithril chainmails of Winter
 msg
   This special chainmail is covered
   with patterns of snow flake. It was
@@ -3894,6 +3909,7 @@ y 8
 end
 arch key2
 name Master key of thievery
+name_pl Master keys of thievery
 slaying Thievery
 x 23
 y 8
@@ -4017,6 +4033,7 @@ y 20
 end
 arch ring_nodrain
 name Ring of Power
+name_pl Rings of Power
 msg
   This is the legendary Ring of Power,
   the hero ring
