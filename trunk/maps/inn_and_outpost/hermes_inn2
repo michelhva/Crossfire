@@ -930,6 +930,17 @@ This key is slightly greasy, like it has been oiled.
 endmsg
 slaying Hermes Stash Key
 end
+arch random_wealth
+end
+arch note
+msg
+Mr. White X
+Mr. Red X
+Lady Blue
+Sir Green
+Lord Black
+endmsg
+end
 end
 arch woodfloor2
 x 13
@@ -1000,6 +1011,8 @@ end
 arch chest
 x 14
 y 1
+arch random_plant
+end
 end
 arch woodfloor2
 x 14
