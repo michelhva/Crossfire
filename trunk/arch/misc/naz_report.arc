@@ -17,6 +17,7 @@ face naz_report.111
 color_fg dark_orange
 nrof 1
 type 8
+subtype 34
 material 1
 value 20000
 weight 300

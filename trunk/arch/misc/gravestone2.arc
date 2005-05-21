@@ -1,7 +1,8 @@
 Object gravestone2
 name gravestone
 face gravestone2.111
-type 38
+type 98
+subtype 49
 material 64
 weight 200000
 value 40

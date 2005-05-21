@@ -3,6 +3,7 @@ face note.111
 race scrolls
 nrof 1
 type 8
+subtype 24
 skill literacy
 material 1
 value 8

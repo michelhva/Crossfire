@@ -3,6 +3,7 @@ name book
 nrof 1
 face book_read.111
 type 8
+subtype 3
 skill literacy
 material 1
 value 13
