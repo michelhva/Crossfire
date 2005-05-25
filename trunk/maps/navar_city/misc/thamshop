@@ -1,6 +1,6 @@
 arch map
-region navar
 name Wizards Workshop
+region navar
 msg
 Creator: Avion
 CF Java Map Editor
@@ -658,7 +658,7 @@ y 4
 end
 arch platinum_converter
 name Staff (20 platinum)
-food 20
+food 100
 other_arch staff
 sp 1
 x 7
@@ -670,7 +670,7 @@ y 5
 end
 arch platinum_converter
 name Holy symbol (30 platinum)
-food 30
+food 100
 other_arch holy_symbol
 sp 1
 x 7
