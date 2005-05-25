@@ -1,14 +1,15 @@
 arch map
+name <untitled>
 region scorn
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Sun Jan 24 19:15:22 1999
 endmsg
-hp 12
-sp 17
-x 20
-y 20
+width 20
+height 20
+enter_x 12
+enter_y 17
 end
 arch grass_only
 end
@@ -219,9 +220,9 @@ x 2
 y 5
 end
 arch potato
+value 1
 x 2
 y 5
-value 1
 end
 arch pstone_2
 name garden
@@ -229,9 +230,9 @@ x 2
 y 6
 end
 arch potato
+value 1
 x 2
 y 6
-value 1
 end
 arch pstone_2
 name garden
@@ -330,9 +331,9 @@ x 3
 y 5
 end
 arch potato
+value 1
 x 3
 y 5
-value 1
 end
 arch pstone_2
 name garden
@@ -340,9 +341,9 @@ x 3
 y 6
 end
 arch potato
+value 1
 x 3
 y 6
-value 1
 end
 arch pstone_2
 name garden
@@ -437,9 +438,9 @@ x 4
 y 5
 end
 arch potato
+value 1
 x 4
 y 5
-value 1
 end
 arch pstone_2
 name garden
@@ -447,9 +448,9 @@ x 4
 y 6
 end
 arch potato
+value 1
 x 4
 y 6
-value 1
 end
 arch pstone_2
 name garden
@@ -1211,63 +1212,63 @@ x 11
 y 13
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 13
-no_pick 1
 end
 arch grass_only
 x 11
 y 14
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 14
-no_pick 1
 end
 arch grass_only
 x 11
 y 15
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 15
-no_pick 1
 end
 arch grass_only
 x 11
 y 16
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 16
-no_pick 1
 end
 arch grass_only
 x 11
 y 17
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 17
-no_pick 1
 end
 arch grass_only
 x 11
 y 18
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 18
-no_pick 1
 end
 arch grass_only
 x 11
 y 19
 end
 arch flowers_permanent
+no_pick 1
 x 11
 y 19
-no_pick 1
 end
 arch grass_only
 x 12
@@ -1313,6 +1314,7 @@ x 12
 y 7
 end
 arch altar_gaea
+level 120
 x 12
 y 7
 end
@@ -1452,63 +1454,63 @@ x 13
 y 13
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 13
-no_pick 1
 end
 arch grass_only
 x 13
 y 14
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 14
-no_pick 1
 end
 arch grass_only
 x 13
 y 15
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 15
-no_pick 1
 end
 arch grass_only
 x 13
 y 16
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 16
-no_pick 1
 end
 arch grass_only
 x 13
 y 17
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 17
-no_pick 1
 end
 arch grass_only
 x 13
 y 18
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 18
-no_pick 1
 end
 arch grass_only
 x 13
 y 19
 end
 arch flowers_permanent
+no_pick 1
 x 13
 y 19
-no_pick 1
 end
 arch grass_only
 x 14

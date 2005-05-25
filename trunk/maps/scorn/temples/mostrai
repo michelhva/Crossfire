@@ -1,14 +1,15 @@
 arch map
-region scorn
 name mostrai
+region scorn
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Fri Jan 22 03:37:20 1999
 endmsg
-hp 13
-sp 15
-y 18
+width 16
+height 18
+enter_x 13
+enter_y 15
 end
 arch brush
 end
@@ -478,9 +479,9 @@ have heard that some Goblins are
 sneaking into the city during the
 night and try to capture some of us.
 endmsg
+unaggressive 1
 x 4
 y 7
-unaggressive 1
 end
 arch woodfloor
 x 4
@@ -602,6 +603,7 @@ x 5
 y 12
 end
 arch altar_mostrai
+level 120
 x 5
 y 12
 end

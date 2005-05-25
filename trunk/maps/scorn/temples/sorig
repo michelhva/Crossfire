@@ -1,14 +1,15 @@
 arch map
+name <untitled>
 region scorn
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Sun Jan 24 20:24:07 1999
 endmsg
-hp 8
-sp 14
-x 18
-y 17
+width 18
+height 17
+enter_x 8
+enter_y 14
 end
 arch grass_only
 end
@@ -735,6 +736,7 @@ x 8
 y 5
 end
 arch altar_sorig
+level 120
 x 8
 y 5
 end
@@ -822,9 +824,9 @@ The kingdom of Sorig has no limits.
 @match *
 Fear the wrath of Sorig!
 endmsg
+unaggressive 1
 x 9
 y 4
-unaggressive 1
 end
 arch dungeon_floor
 x 9

@@ -1,15 +1,15 @@
 arch map
-region scorn
 name templevalriel
+region scorn
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Mon Jan 18 02:12:59 1999
 endmsg
-hp 9
-sp 27
-x 20
-y 30
+width 20
+height 30
+enter_x 9
+enter_y 27
 end
 arch grass
 end
@@ -1435,9 +1435,9 @@ msg
 @match *
 Shhh...  Thou shalt pray in silence!
 endmsg
+unaggressive 1
 x 8
 y 5
-unaggressive 1
 end
 arch cobblestones2
 x 8
@@ -1618,6 +1618,7 @@ x 9
 y 7
 end
 arch altar_valriel
+level 120
 x 9
 y 7
 end
