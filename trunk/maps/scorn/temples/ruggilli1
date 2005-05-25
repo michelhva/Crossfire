@@ -1,14 +1,16 @@
 arch map
-region scorn
 name ruggilli1
+region scorn
 msg
 Creator: dnh
 Email: dnh@hawthorn.csse.monash.edu.au
 Date: Wed Jan  3 00:52:39 2001
 endmsg
-hp 4
-sp 16
-weight 3000
+width 16
+height 16
+enter_x 4
+enter_y 16
+reset_timeout 3000
 end
 arch small_stones
 end
@@ -194,7 +196,7 @@ Ruggilli will lend the immolating
 fires to any who choose to follow!
 @match immolating|Immolating|fires|Fires
 Yes! A Flame which will consume your
-enemies! 
+enemies!
 @match follow|Follow|worship|Worship|Door|door|Gate|gate|stair|Stair
 The Consuming worm Ruggilli will only
 accept followers who can pass his
@@ -209,10 +211,10 @@ The eternal flame of Ruggilli will
 prevail
 endmsg
 hp 80
-x 2
-y 7
 friendly 1
 unaggressive 0
+x 2
+y 7
 end
 arch woodfloor
 x 2
@@ -448,10 +450,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-x 5
-y 2
 unaggressive 1
 sleep 1
+x 5
+y 2
 end
 arch woodfloor
 x 5
@@ -637,9 +639,9 @@ y 4
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 7
 y 5
-connected 10
 end
 arch woodfloor
 x 7
@@ -655,9 +657,9 @@ y 6
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 7
 y 7
-connected 10
 end
 arch woodfloor
 x 7
@@ -684,10 +686,10 @@ msg
 ....We...are...Watchhhing...You...
 endmsg
 hp 4000
-x 7
-y 10
 unaggressive 1
 sleep 1
+x 7
+y 10
 end
 arch woodfloor
 x 7
@@ -741,14 +743,15 @@ x 8
 y 4
 end
 arch altar_ruggilli
+level 120
 x 8
 y 4
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 8
 y 5
-connected 10
 end
 arch woodfloor
 x 8
@@ -756,18 +759,18 @@ y 5
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 8
 y 6
-connected 10
 end
 arch woodfloor
 x 8
 y 6
 end
 arch gate_closed_1
+connected 10
 x 8
 y 6
-connected 10
 end
 arch magic_mouth
 msg
@@ -780,9 +783,9 @@ y 7
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 8
 y 7
-connected 10
 end
 arch woodfloor
 x 8
@@ -861,9 +864,9 @@ y 4
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 9
 y 5
-connected 10
 end
 arch woodfloor
 x 9
@@ -879,9 +882,9 @@ y 6
 end
 arch check_inv
 slaying rug_pass
+connected 10
 x 9
 y 7
-connected 10
 end
 arch woodfloor
 x 9
@@ -1036,10 +1039,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-x 11
-y 2
 unaggressive 1
 sleep 1
+x 11
+y 2
 end
 arch woodfloor
 x 11
@@ -1145,10 +1148,10 @@ msg
 ....We...are...Watchhhing...You...
 endmsg
 hp 4000
-x 12
-y 5
 unaggressive 1
 sleep 1
+x 12
+y 5
 end
 arch woodfloor
 x 12
@@ -1181,10 +1184,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-x 12
-y 10
 unaggressive 1
 sleep 1
+x 12
+y 10
 end
 arch woodfloor
 x 12
