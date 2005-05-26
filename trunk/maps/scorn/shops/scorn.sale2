@@ -943,7 +943,7 @@ end
 arch teleporter
 invisible 1
 hp 2
-sp 16
+sp 2
 connected 44
 speed 0.0
 x 4
@@ -975,8 +975,8 @@ y 5
 end
 arch teleporter
 invisible 1
-hp 9
-sp 15
+hp 2
+sp 5
 connected 22
 speed 0.0
 x 4
@@ -1933,9 +1933,7 @@ arch tile_white_floor
 x 8
 y 9
 end
-arch identify_table
-name Drop 25 gold to identify an item.
-food 250
+arch palm
 x 8
 y 9
 end
@@ -1947,7 +1945,7 @@ arch tile_white_floor
 x 8
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 8
 y 10
 end
@@ -1959,6 +1957,12 @@ arch tile_white_floor
 x 8
 y 11
 end
+arch pedestal
+invisible 1
+connected 11
+x 8
+y 11
+end
 arch dungeon_magic
 x 8
 y 12
@@ -1967,7 +1971,7 @@ arch tile_white_floor
 x 8
 y 12
 end
-arch palm
+arch menu
 x 8
 y 12
 end
@@ -2162,9 +2166,13 @@ arch tile_white_floor
 x 9
 y 8
 end
-arch dwall_1_1
+arch dungeon_magic
 x 9
-y 8
+y 9
+end
+arch tile_white_floor
+x 9
+y 9
 end
 arch dungeon_magic
 x 9
@@ -2174,7 +2182,9 @@ arch tile_white_floor
 x 9
 y 9
 end
-arch dwall_2_1_1
+arch check_inv
+slaying pawn_shop1
+connected 11
 x 9
 y 9
 end
@@ -2186,7 +2196,8 @@ arch tile_white_floor
 x 9
 y 10
 end
-arch dwall_2_2_4
+arch mdoor_closed_1
+connected 11
 x 9
 y 10
 end
@@ -2195,6 +2206,12 @@ x 9
 y 11
 end
 arch tile_white_floor
+x 9
+y 11
+end
+arch pedestal
+invisible 1
+connected 11
 x 9
 y 11
 end
@@ -2203,6 +2220,10 @@ x 9
 y 12
 end
 arch tile_white_floor
+x 9
+y 12
+end
+arch shop_mat
 x 9
 y 12
 end
@@ -2210,7 +2231,7 @@ arch shop_empty
 x 9
 y 13
 end
-arch dwall_win2
+arch dwall_2_1_2
 x 9
 y 13
 end
@@ -2380,22 +2401,30 @@ arch tile_white_floor
 x 10
 y 8
 end
-arch check_inv
+arch dungeon_magic
+x 10
+y 9
+end
+arch tile_white_floor
+x 10
+y 9
+end
+arch trigger_marker
+msg
+You have one day's use of these facilities.
+endmsg
 slaying pawn_shop1
-connected 11
-x 10
-y 8
-end
-arch dungeon_magic
+connected 88
+speed 1.0
+food 504
 x 10
 y 9
 end
-arch tile_white_floor
-x 10
-y 9
-end
-arch mdoor_closed_1
-connected 11
+arch altar_trigger
+name Drop 500 gold for day pass
+slaying goldcoin
+food 500
+connected 88
 x 10
 y 9
 end
@@ -2407,9 +2436,7 @@ arch tile_white_floor
 x 10
 y 10
 end
-arch pedestal
-invisible 1
-connected 11
+arch dwall_2_2_3
 x 10
 y 10
 end
@@ -2421,6 +2448,10 @@ arch tile_white_floor
 x 10
 y 11
 end
+arch dwall_win1
+x 10
+y 11
+end
 arch dungeon_magic
 x 10
 y 12
@@ -2429,7 +2460,7 @@ arch tile_white_floor
 x 10
 y 12
 end
-arch shop_mat
+arch dwall_2_2_1
 x 10
 y 12
 end
@@ -2613,19 +2644,11 @@ arch tile_white_floor
 x 11
 y 8
 end
-arch dwall_2_2_2
-x 11
-y 8
-end
 arch dungeon_magic
 x 11
 y 9
 end
 arch tile_white_floor
-x 11
-y 9
-end
-arch dwall_2_1_1
 x 11
 y 9
 end
@@ -2637,7 +2660,7 @@ arch tile_white_floor
 x 11
 y 10
 end
-arch dwall_1_2
+arch platinum_converter
 x 11
 y 10
 end
@@ -2646,6 +2669,10 @@ x 11
 y 11
 end
 arch tile_white_floor
+x 11
+y 11
+end
+arch pearl_converter
 x 11
 y 11
 end
@@ -2654,6 +2681,10 @@ x 11
 y 12
 end
 arch tile_white_floor
+x 11
+y 12
+end
+arch dwall_2_2_3
 x 11
 y 12
 end
@@ -2661,7 +2692,7 @@ arch shop_empty
 x 11
 y 13
 end
-arch dwall_win2
+arch dwall_3_1
 x 11
 y 13
 end
@@ -2829,22 +2860,9 @@ arch tile_white_floor
 x 12
 y 7
 end
-arch trigger_marker
-msg
-You have one day's use of these facilities.
-endmsg
-slaying pawn_shop1
-connected 88
-speed 1.0
-food 504
-x 12
-y 7
-end
-arch altar_trigger
-name Drop 500 gold for day pass
-slaying goldcoin
-food 500
-connected 88
+arch identify_table
+name Drop 25 gold to identify an item.
+food 250
 x 12
 y 7
 end
@@ -2856,15 +2874,15 @@ arch tile_white_floor
 x 12
 y 8
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 12
 y 8
 end
-arch tile_white_floor
+arch dungeon_magic
 x 12
 y 9
 end
-arch dungeon_magic
+arch tile_white_floor
 x 12
 y 9
 end
@@ -2880,11 +2898,19 @@ arch tile_white_floor
 x 12
 y 10
 end
+arch diamond_converter
+x 12
+y 10
+end
 arch dungeon_magic
 x 12
 y 11
 end
 arch tile_white_floor
+x 12
+y 11
+end
+arch ruby_converter
 x 12
 y 11
 end
@@ -2896,7 +2922,7 @@ arch tile_white_floor
 x 12
 y 12
 end
-arch palm
+arch menu
 x 12
 y 12
 end
@@ -3767,7 +3793,7 @@ end
 arch teleporter
 invisible 1
 hp 18
-sp 16
+sp 2
 connected 55
 speed 0.0
 x 16
@@ -3799,8 +3825,8 @@ y 5
 end
 arch teleporter
 invisible 1
-hp 11
-sp 16
+hp 18
+sp 5
 connected 33
 speed 0.0
 x 16

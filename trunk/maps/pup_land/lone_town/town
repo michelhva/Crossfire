@@ -1,5 +1,4 @@
 arch map
-region lonetown
 name town
 msg
 Creator: Gnat the Gnu
@@ -1098,11 +1097,23 @@ arch grass
 x 10
 y 12
 end
+arch evergreens2
+x 10
+y 12
+end
 arch grass
 x 10
 y 13
 end
+arch evergreens2
+x 10
+y 13
+end
 arch grass
+x 10
+y 14
+end
+arch evergreens2
 x 10
 y 14
 end
@@ -1196,7 +1207,7 @@ arch grass
 x 11
 y 13
 end
-arch grass
+arch footpath_3_2
 x 11
 y 14
 end
@@ -1283,6 +1294,10 @@ x 12
 y 13
 end
 arch grass
+x 12
+y 14
+end
+arch footpath_3_4
 x 12
 y 14
 end
@@ -1368,11 +1383,23 @@ arch grass
 x 13
 y 12
 end
+arch evergreens2
+x 13
+y 12
+end
 arch grass
 x 13
 y 13
 end
+arch evergreens2
+x 13
+y 13
+end
 arch grass
+x 13
+y 14
+end
+arch evergreens2
 x 13
 y 14
 end
@@ -2802,6 +2829,13 @@ name General Shop
 slaying gshop
 x 10
 y 9
+end
+arch rl_house2
+name Permanent apartments
+slaying /pup_land/lone_town/apartments/apartment
+unique 1
+x 11
+y 12
 end
 arch barrack_long
 name Magic Show !
