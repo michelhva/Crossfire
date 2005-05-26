@@ -1,5 +1,6 @@
 arch map
 name town
+region lonetown
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -2832,7 +2833,6 @@ y 9
 end
 arch rl_house2
 name Permanent apartments
-slaying /pup_land/lone_town/apartments/apartment
 unique 1
 x 11
 y 12
