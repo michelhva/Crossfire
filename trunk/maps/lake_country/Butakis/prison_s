@@ -301,7 +301,7 @@ end
 arch magic_mouth
 msg
 Royal Guard ask you:
-Who are you looking for
+Who are you looking for?
 endmsg
 x 2
 y 17
@@ -313,7 +313,7 @@ end
 arch magic_mouth
 msg
 Royal Guard ask you:
-Who are you looking for
+Who are you looking for?
 endmsg
 x 2
 y 18
@@ -880,7 +880,7 @@ to use the portals?
 @match *
 If you don't have the permission here,
 please leave; because I will not open
-the gate for you
+the gate for you.
 endmsg
 x 6
 y 16
