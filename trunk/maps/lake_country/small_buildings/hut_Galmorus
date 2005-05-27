@@ -618,7 +618,7 @@ get it.
 Hello!
 I don't know much. Talk to Galmorus if
 you have any questions. If you don't
-mind I'd be alone
+mind I'd be alone.
 endmsg
 type 0
 hp 200
@@ -811,7 +811,7 @@ or don't want to meet guests at the
 moment. So please come visit me again
 some other time. Take some refreshment
 and food before you leave.
--Galmoru
+-Galmorus
 endmsg
 x 6
 y 2
@@ -1210,7 +1210,7 @@ Today I discovered the secret passage
 in my own house! Someone made it
 behide my back.
 I will investigate into it later.
-..
+...
 endmsg
 x 8
 y 14
@@ -2075,12 +2075,12 @@ end
 arch book_read
 name Yellow book
 msg
-[You find the following interesting
+[You find the following interesting]
 ...
 There are two ways to access the Sunset
 Castle. One is by underwater current.
 The other is by way of the druids.
-..
+...
 endmsg
 x 14
 y 14
@@ -2205,8 +2205,8 @@ msg
 ...
 The flying castle was ancient and only
 registered in forgotten legends.
-According to the lengend, it is a
-citadel hidden in the cloud.
+According to the legend, it is a
+citadal hidden in the cloud.
 The only way to it was rumored to be
 carried by a mysterious tornado that
 constantly appeared in the north
@@ -2440,7 +2440,7 @@ north in this land. But all that is
 waiting is death. Many in search of it
 as a final challenge but fail to
 return.
-..
+...
 endmsg
 x 16
 y 14
