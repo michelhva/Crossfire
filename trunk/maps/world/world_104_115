@@ -14304,6 +14304,7 @@ x 44
 y 31
 end
 arch store_alchemy
+name Alchemy Shop
 slaying /scorn/shops/potionshop
 hp 14
 sp 14
@@ -14360,6 +14361,7 @@ x 47
 y 31
 end
 arch store_weapons
+name Bow Shop
 slaying /scorn/shops/bowshop
 hp 14
 sp 14
@@ -14375,7 +14377,7 @@ x 48
 y 24
 end
 arch temple1
-name_pl Temple of Sorig
+name Temple of Sorig
 slaying /scorn/temples/sorig
 hp 8
 sp 15
