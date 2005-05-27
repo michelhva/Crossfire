@@ -114,8 +114,8 @@ x 1
 y 6
 end
 arch platinum_converter
-name Buy Robe (2pp)
-food 2
+name Buy Robe (3pp)
+food 3
 other_arch robe
 sp 1
 x 1
@@ -126,7 +126,8 @@ x 1
 y 7
 end
 arch platinum_converter
-name Buy Cloak (1pp)
+name Buy Cloak (4pp)
+food 4
 other_arch cloak
 sp 1
 x 1
@@ -137,7 +138,8 @@ x 1
 y 8
 end
 arch platinum_converter
-name Buy Dress (1pp)
+name Buy Dress (1000pp)
+food 1000
 other_arch dress1
 sp 1
 x 1
