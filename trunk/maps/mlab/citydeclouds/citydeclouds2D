@@ -107,23 +107,35 @@ end
 arch dwall_3_1
 y 35
 end
-arch flagstone
+arch dungeon_magic
 y 36
 end
 arch flagstone
+y 36
+end
+arch dungeon_magic
 y 37
 end
-arch shop_special
+arch flagstone
 y 37
+end
+arch dungeon_magic
+y 38
 end
 arch flagstone
 y 38
 end
+arch dungeon_magic
+y 39
+end
 arch flagstone
 y 39
 end
 arch shop_special
 y 39
+end
+arch dungeon_magic
+y 40
 end
 arch flagstone
 y 40
@@ -131,11 +143,17 @@ end
 arch shop_special
 y 40
 end
+arch dungeon_magic
+y 41
+end
 arch flagstone
 y 41
 end
 arch shop_special
 y 41
+end
+arch dungeon_magic
+y 42
 end
 arch flagstone
 y 42
@@ -143,11 +161,17 @@ end
 arch shop_special
 y 42
 end
+arch dungeon_magic
+y 43
+end
 arch flagstone
 y 43
 end
 arch shop_special
 y 43
+end
+arch dungeon_magic
+y 44
 end
 arch flagstone
 y 44
@@ -155,11 +179,17 @@ end
 arch shop_special
 y 44
 end
+arch dungeon_magic
+y 45
+end
 arch flagstone
 y 45
 end
 arch shop_special
 y 45
+end
+arch dungeon_magic
+y 46
 end
 arch flagstone
 y 46
@@ -167,19 +197,25 @@ end
 arch shop_special
 y 46
 end
+arch dungeon_magic
+y 47
+end
 arch flagstone
 y 47
 end
 arch shop_special
 y 47
+end
+arch dungeon_magic
+y 48
 end
 arch flagstone
 y 48
 end
-arch flagstone
+arch dungeon_magic
 y 49
 end
-arch shop_special
+arch flagstone
 y 49
 end
 arch flagstone
@@ -296,103 +332,115 @@ arch dwall_3_1
 x 1
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 1
 y 36
 end
 arch flagstone
 x 1
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 37
 end
 arch flagstone
+x 1
+y 37
+end
+arch dungeon_magic
 x 1
 y 38
 end
 arch flagstone
 x 1
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 39
 end
 arch flagstone
 x 1
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 40
 end
 arch flagstone
 x 1
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 41
 end
 arch flagstone
 x 1
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 42
 end
 arch flagstone
 x 1
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 43
 end
 arch flagstone
 x 1
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 44
 end
 arch flagstone
 x 1
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 45
 end
 arch flagstone
 x 1
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 46
 end
 arch flagstone
 x 1
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 1
 y 47
 end
 arch flagstone
+x 1
+y 47
+end
+arch dungeon_magic
 x 1
 y 48
 end
 arch flagstone
 x 1
+y 48
+end
+arch dungeon_magic
+x 1
 y 49
 end
-arch shop_special
+arch flagstone
 x 1
 y 49
 end
@@ -518,29 +566,45 @@ arch dwall_3_1
 x 2
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 2
 y 36
 end
 arch flagstone
 x 2
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 2
 y 37
 end
 arch flagstone
+x 2
+y 37
+end
+arch dungeon_magic
 x 2
 y 38
 end
 arch flagstone
 x 2
+y 38
+end
+arch dungeon_magic
+x 2
+y 39
+end
+arch flagstone
+x 2
 y 39
 end
 arch shop_special
 x 2
 y 39
+end
+arch dungeon_magic
+x 2
+y 40
 end
 arch flagstone
 x 2
@@ -550,6 +614,10 @@ arch shop_special
 x 2
 y 40
 end
+arch dungeon_magic
+x 2
+y 41
+end
 arch flagstone
 x 2
 y 41
@@ -557,6 +625,10 @@ end
 arch shop_special
 x 2
 y 41
+end
+arch dungeon_magic
+x 2
+y 42
 end
 arch flagstone
 x 2
@@ -566,6 +638,10 @@ arch shop_special
 x 2
 y 42
 end
+arch dungeon_magic
+x 2
+y 43
+end
 arch flagstone
 x 2
 y 43
@@ -573,6 +649,10 @@ end
 arch shop_special
 x 2
 y 43
+end
+arch dungeon_magic
+x 2
+y 44
 end
 arch flagstone
 x 2
@@ -582,6 +662,10 @@ arch shop_special
 x 2
 y 44
 end
+arch dungeon_magic
+x 2
+y 45
+end
 arch flagstone
 x 2
 y 45
@@ -589,6 +673,10 @@ end
 arch shop_special
 x 2
 y 45
+end
+arch dungeon_magic
+x 2
+y 46
 end
 arch flagstone
 x 2
@@ -598,6 +686,10 @@ arch shop_special
 x 2
 y 46
 end
+arch dungeon_magic
+x 2
+y 47
+end
 arch flagstone
 x 2
 y 47
@@ -606,15 +698,19 @@ arch shop_special
 x 2
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 2
 y 48
 end
 arch flagstone
 x 2
+y 48
+end
+arch dungeon_magic
+x 2
 y 49
 end
-arch shop_special
+arch flagstone
 x 2
 y 49
 end
@@ -720,103 +816,115 @@ arch dwall_3_1
 x 3
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 36
 end
 arch flagstone
 x 3
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 37
 end
 arch flagstone
+x 3
+y 37
+end
+arch dungeon_magic
 x 3
 y 38
 end
 arch flagstone
 x 3
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 39
 end
 arch flagstone
 x 3
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 40
 end
 arch flagstone
 x 3
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 41
 end
 arch flagstone
 x 3
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 42
 end
 arch flagstone
 x 3
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 43
 end
 arch flagstone
 x 3
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 44
 end
 arch flagstone
 x 3
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 45
 end
 arch flagstone
 x 3
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 46
 end
 arch flagstone
 x 3
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 3
 y 47
 end
 arch flagstone
+x 3
+y 47
+end
+arch dungeon_magic
 x 3
 y 48
 end
 arch flagstone
 x 3
+y 48
+end
+arch dungeon_magic
+x 3
 y 49
 end
-arch shop_special
+arch flagstone
 x 3
 y 49
 end
@@ -942,29 +1050,45 @@ arch dwall_3_1
 x 4
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 36
 end
 arch flagstone
 x 4
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 4
 y 37
 end
 arch flagstone
+x 4
+y 37
+end
+arch dungeon_magic
 x 4
 y 38
 end
 arch flagstone
 x 4
+y 38
+end
+arch dungeon_magic
+x 4
+y 39
+end
+arch flagstone
+x 4
 y 39
 end
 arch shop_special
 x 4
 y 39
+end
+arch dungeon_magic
+x 4
+y 40
 end
 arch flagstone
 x 4
@@ -974,6 +1098,10 @@ arch shop_special
 x 4
 y 40
 end
+arch dungeon_magic
+x 4
+y 41
+end
 arch flagstone
 x 4
 y 41
@@ -981,6 +1109,10 @@ end
 arch shop_special
 x 4
 y 41
+end
+arch dungeon_magic
+x 4
+y 42
 end
 arch flagstone
 x 4
@@ -990,6 +1122,10 @@ arch shop_special
 x 4
 y 42
 end
+arch dungeon_magic
+x 4
+y 43
+end
 arch flagstone
 x 4
 y 43
@@ -997,6 +1133,10 @@ end
 arch shop_special
 x 4
 y 43
+end
+arch dungeon_magic
+x 4
+y 44
 end
 arch flagstone
 x 4
@@ -1006,6 +1146,10 @@ arch shop_special
 x 4
 y 44
 end
+arch dungeon_magic
+x 4
+y 45
+end
 arch flagstone
 x 4
 y 45
@@ -1013,6 +1157,10 @@ end
 arch shop_special
 x 4
 y 45
+end
+arch dungeon_magic
+x 4
+y 46
 end
 arch flagstone
 x 4
@@ -1022,6 +1170,10 @@ arch shop_special
 x 4
 y 46
 end
+arch dungeon_magic
+x 4
+y 47
+end
 arch flagstone
 x 4
 y 47
@@ -1030,15 +1182,19 @@ arch shop_special
 x 4
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 48
 end
 arch flagstone
 x 4
+y 48
+end
+arch dungeon_magic
+x 4
 y 49
 end
-arch shop_special
+arch flagstone
 x 4
 y 49
 end
@@ -1168,103 +1324,115 @@ arch dwall_3_1
 x 5
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 36
 end
 arch flagstone
 x 5
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 37
 end
 arch flagstone
+x 5
+y 37
+end
+arch dungeon_magic
 x 5
 y 38
 end
 arch flagstone
 x 5
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 39
 end
 arch flagstone
 x 5
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 40
 end
 arch flagstone
 x 5
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 41
 end
 arch flagstone
 x 5
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 42
 end
 arch flagstone
 x 5
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 43
 end
 arch flagstone
 x 5
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 44
 end
 arch flagstone
 x 5
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 45
 end
 arch flagstone
 x 5
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 46
 end
 arch flagstone
 x 5
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 5
 y 47
 end
 arch flagstone
+x 5
+y 47
+end
+arch dungeon_magic
 x 5
 y 48
 end
 arch flagstone
 x 5
+y 48
+end
+arch dungeon_magic
+x 5
 y 49
 end
-arch shop_special
+arch flagstone
 x 5
 y 49
 end
@@ -1389,29 +1557,45 @@ arch dwall_3_1
 x 6
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 36
 end
 arch flagstone
 x 6
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 6
 y 37
 end
 arch flagstone
+x 6
+y 37
+end
+arch dungeon_magic
 x 6
 y 38
 end
 arch flagstone
 x 6
+y 38
+end
+arch dungeon_magic
+x 6
+y 39
+end
+arch flagstone
+x 6
 y 39
 end
 arch shop_special
 x 6
 y 39
+end
+arch dungeon_magic
+x 6
+y 40
 end
 arch flagstone
 x 6
@@ -1421,6 +1605,10 @@ arch shop_special
 x 6
 y 40
 end
+arch dungeon_magic
+x 6
+y 41
+end
 arch flagstone
 x 6
 y 41
@@ -1428,6 +1616,10 @@ end
 arch shop_special
 x 6
 y 41
+end
+arch dungeon_magic
+x 6
+y 42
 end
 arch flagstone
 x 6
@@ -1437,6 +1629,10 @@ arch shop_special
 x 6
 y 42
 end
+arch dungeon_magic
+x 6
+y 43
+end
 arch flagstone
 x 6
 y 43
@@ -1444,6 +1640,10 @@ end
 arch shop_special
 x 6
 y 43
+end
+arch dungeon_magic
+x 6
+y 44
 end
 arch flagstone
 x 6
@@ -1453,6 +1653,10 @@ arch shop_special
 x 6
 y 44
 end
+arch dungeon_magic
+x 6
+y 45
+end
 arch flagstone
 x 6
 y 45
@@ -1460,6 +1664,10 @@ end
 arch shop_special
 x 6
 y 45
+end
+arch dungeon_magic
+x 6
+y 46
 end
 arch flagstone
 x 6
@@ -1469,6 +1677,10 @@ arch shop_special
 x 6
 y 46
 end
+arch dungeon_magic
+x 6
+y 47
+end
 arch flagstone
 x 6
 y 47
@@ -1477,15 +1689,19 @@ arch shop_special
 x 6
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 48
 end
 arch flagstone
 x 6
+y 48
+end
+arch dungeon_magic
+x 6
 y 49
 end
-arch shop_special
+arch flagstone
 x 6
 y 49
 end
@@ -1599,57 +1815,113 @@ arch dwall_3_1
 x 7
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 7
 y 36
 end
 arch flagstone
 x 7
+y 36
+end
+arch dungeon_magic
+x 7
 y 37
 end
 arch flagstone
+x 7
+y 37
+end
+arch dungeon_magic
 x 7
 y 38
 end
 arch flagstone
 x 7
+y 38
+end
+arch dungeon_magic
+x 7
 y 39
 end
 arch flagstone
+x 7
+y 39
+end
+arch dungeon_magic
 x 7
 y 40
 end
 arch flagstone
 x 7
+y 40
+end
+arch dungeon_magic
+x 7
 y 41
 end
 arch flagstone
+x 7
+y 41
+end
+arch dungeon_magic
 x 7
 y 42
 end
 arch flagstone
 x 7
+y 42
+end
+arch dungeon_magic
+x 7
 y 43
 end
 arch flagstone
+x 7
+y 43
+end
+arch dungeon_magic
 x 7
 y 44
 end
 arch flagstone
 x 7
+y 44
+end
+arch dungeon_magic
+x 7
 y 45
 end
 arch flagstone
+x 7
+y 45
+end
+arch dungeon_magic
 x 7
 y 46
 end
 arch flagstone
 x 7
+y 46
+end
+arch dungeon_magic
+x 7
 y 47
 end
 arch flagstone
 x 7
+y 47
+end
+arch dungeon_magic
+x 7
 y 48
+end
+arch flagstone
+x 7
+y 48
+end
+arch dungeon_magic
+x 7
+y 49
 end
 arch flagstone
 x 7
@@ -1777,29 +2049,45 @@ arch dwall_3_1
 x 8
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 8
 y 36
 end
 arch flagstone
 x 8
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 8
 y 37
 end
 arch flagstone
+x 8
+y 37
+end
+arch dungeon_magic
 x 8
 y 38
 end
 arch flagstone
 x 8
+y 38
+end
+arch dungeon_magic
+x 8
+y 39
+end
+arch flagstone
+x 8
 y 39
 end
 arch shop_special
 x 8
 y 39
+end
+arch dungeon_magic
+x 8
+y 40
 end
 arch flagstone
 x 8
@@ -1809,6 +2097,10 @@ arch shop_special
 x 8
 y 40
 end
+arch dungeon_magic
+x 8
+y 41
+end
 arch flagstone
 x 8
 y 41
@@ -1816,6 +2108,10 @@ end
 arch shop_special
 x 8
 y 41
+end
+arch dungeon_magic
+x 8
+y 42
 end
 arch flagstone
 x 8
@@ -1825,6 +2121,10 @@ arch shop_special
 x 8
 y 42
 end
+arch dungeon_magic
+x 8
+y 43
+end
 arch flagstone
 x 8
 y 43
@@ -1832,6 +2132,10 @@ end
 arch shop_special
 x 8
 y 43
+end
+arch dungeon_magic
+x 8
+y 44
 end
 arch flagstone
 x 8
@@ -1841,6 +2145,10 @@ arch shop_special
 x 8
 y 44
 end
+arch dungeon_magic
+x 8
+y 45
+end
 arch flagstone
 x 8
 y 45
@@ -1848,6 +2156,10 @@ end
 arch shop_special
 x 8
 y 45
+end
+arch dungeon_magic
+x 8
+y 46
 end
 arch flagstone
 x 8
@@ -1857,6 +2169,10 @@ arch shop_special
 x 8
 y 46
 end
+arch dungeon_magic
+x 8
+y 47
+end
 arch flagstone
 x 8
 y 47
@@ -1865,15 +2181,19 @@ arch shop_special
 x 8
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 8
 y 48
 end
 arch flagstone
 x 8
+y 48
+end
+arch dungeon_magic
+x 8
 y 49
 end
-arch shop_special
+arch flagstone
 x 8
 y 49
 end
@@ -1985,57 +2305,113 @@ arch dwall_3_1
 x 9
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 36
 end
 arch flagstone
 x 9
+y 36
+end
+arch dungeon_magic
+x 9
 y 37
 end
 arch flagstone
+x 9
+y 37
+end
+arch dungeon_magic
 x 9
 y 38
 end
 arch flagstone
 x 9
+y 38
+end
+arch dungeon_magic
+x 9
 y 39
 end
 arch flagstone
+x 9
+y 39
+end
+arch dungeon_magic
 x 9
 y 40
 end
 arch flagstone
 x 9
+y 40
+end
+arch dungeon_magic
+x 9
 y 41
 end
 arch flagstone
+x 9
+y 41
+end
+arch dungeon_magic
 x 9
 y 42
 end
 arch flagstone
 x 9
+y 42
+end
+arch dungeon_magic
+x 9
 y 43
 end
 arch flagstone
+x 9
+y 43
+end
+arch dungeon_magic
 x 9
 y 44
 end
 arch flagstone
 x 9
+y 44
+end
+arch dungeon_magic
+x 9
 y 45
 end
 arch flagstone
+x 9
+y 45
+end
+arch dungeon_magic
 x 9
 y 46
 end
 arch flagstone
 x 9
+y 46
+end
+arch dungeon_magic
+x 9
 y 47
 end
 arch flagstone
 x 9
+y 47
+end
+arch dungeon_magic
+x 9
 y 48
+end
+arch flagstone
+x 9
+y 48
+end
+arch dungeon_magic
+x 9
+y 49
 end
 arch flagstone
 x 9
@@ -2167,29 +2543,45 @@ arch dwall_3_1
 x 10
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 36
 end
 arch flagstone
 x 10
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 10
 y 37
 end
 arch flagstone
+x 10
+y 37
+end
+arch dungeon_magic
 x 10
 y 38
 end
 arch flagstone
 x 10
+y 38
+end
+arch dungeon_magic
+x 10
+y 39
+end
+arch flagstone
+x 10
 y 39
 end
 arch shop_special
 x 10
 y 39
+end
+arch dungeon_magic
+x 10
+y 40
 end
 arch flagstone
 x 10
@@ -2199,6 +2591,10 @@ arch shop_special
 x 10
 y 40
 end
+arch dungeon_magic
+x 10
+y 41
+end
 arch flagstone
 x 10
 y 41
@@ -2206,6 +2602,10 @@ end
 arch shop_special
 x 10
 y 41
+end
+arch dungeon_magic
+x 10
+y 42
 end
 arch flagstone
 x 10
@@ -2215,6 +2615,10 @@ arch shop_special
 x 10
 y 42
 end
+arch dungeon_magic
+x 10
+y 43
+end
 arch flagstone
 x 10
 y 43
@@ -2222,6 +2626,10 @@ end
 arch shop_special
 x 10
 y 43
+end
+arch dungeon_magic
+x 10
+y 44
 end
 arch flagstone
 x 10
@@ -2231,6 +2639,10 @@ arch shop_special
 x 10
 y 44
 end
+arch dungeon_magic
+x 10
+y 45
+end
 arch flagstone
 x 10
 y 45
@@ -2238,6 +2650,10 @@ end
 arch shop_special
 x 10
 y 45
+end
+arch dungeon_magic
+x 10
+y 46
 end
 arch flagstone
 x 10
@@ -2247,6 +2663,10 @@ arch shop_special
 x 10
 y 46
 end
+arch dungeon_magic
+x 10
+y 47
+end
 arch flagstone
 x 10
 y 47
@@ -2255,15 +2675,19 @@ arch shop_special
 x 10
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 48
 end
 arch flagstone
 x 10
+y 48
+end
+arch dungeon_magic
+x 10
 y 49
 end
-arch shop_special
+arch flagstone
 x 10
 y 49
 end
@@ -2377,57 +2801,113 @@ arch dwall_3_1
 x 11
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 11
 y 36
 end
 arch flagstone
 x 11
+y 36
+end
+arch dungeon_magic
+x 11
 y 37
 end
 arch flagstone
+x 11
+y 37
+end
+arch dungeon_magic
 x 11
 y 38
 end
 arch flagstone
 x 11
+y 38
+end
+arch dungeon_magic
+x 11
 y 39
 end
 arch flagstone
+x 11
+y 39
+end
+arch dungeon_magic
 x 11
 y 40
 end
 arch flagstone
 x 11
+y 40
+end
+arch dungeon_magic
+x 11
 y 41
 end
 arch flagstone
+x 11
+y 41
+end
+arch dungeon_magic
 x 11
 y 42
 end
 arch flagstone
 x 11
+y 42
+end
+arch dungeon_magic
+x 11
 y 43
 end
 arch flagstone
+x 11
+y 43
+end
+arch dungeon_magic
 x 11
 y 44
 end
 arch flagstone
 x 11
+y 44
+end
+arch dungeon_magic
+x 11
 y 45
 end
 arch flagstone
+x 11
+y 45
+end
+arch dungeon_magic
 x 11
 y 46
 end
 arch flagstone
 x 11
+y 46
+end
+arch dungeon_magic
+x 11
 y 47
 end
 arch flagstone
 x 11
+y 47
+end
+arch dungeon_magic
+x 11
 y 48
+end
+arch flagstone
+x 11
+y 48
+end
+arch dungeon_magic
+x 11
+y 49
 end
 arch flagstone
 x 11
@@ -2559,29 +3039,45 @@ arch dwall_3_1
 x 12
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 36
 end
 arch flagstone
 x 12
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 12
 y 37
 end
 arch flagstone
+x 12
+y 37
+end
+arch dungeon_magic
 x 12
 y 38
 end
 arch flagstone
 x 12
+y 38
+end
+arch dungeon_magic
+x 12
+y 39
+end
+arch flagstone
+x 12
 y 39
 end
 arch shop_special
 x 12
 y 39
+end
+arch dungeon_magic
+x 12
+y 40
 end
 arch flagstone
 x 12
@@ -2591,6 +3087,10 @@ arch shop_special
 x 12
 y 40
 end
+arch dungeon_magic
+x 12
+y 41
+end
 arch flagstone
 x 12
 y 41
@@ -2598,6 +3098,10 @@ end
 arch shop_special
 x 12
 y 41
+end
+arch dungeon_magic
+x 12
+y 42
 end
 arch flagstone
 x 12
@@ -2607,6 +3111,10 @@ arch shop_special
 x 12
 y 42
 end
+arch dungeon_magic
+x 12
+y 43
+end
 arch flagstone
 x 12
 y 43
@@ -2614,6 +3122,10 @@ end
 arch shop_special
 x 12
 y 43
+end
+arch dungeon_magic
+x 12
+y 44
 end
 arch flagstone
 x 12
@@ -2623,6 +3135,10 @@ arch shop_special
 x 12
 y 44
 end
+arch dungeon_magic
+x 12
+y 45
+end
 arch flagstone
 x 12
 y 45
@@ -2630,6 +3146,10 @@ end
 arch shop_special
 x 12
 y 45
+end
+arch dungeon_magic
+x 12
+y 46
 end
 arch flagstone
 x 12
@@ -2639,6 +3159,10 @@ arch shop_special
 x 12
 y 46
 end
+arch dungeon_magic
+x 12
+y 47
+end
 arch flagstone
 x 12
 y 47
@@ -2647,15 +3171,19 @@ arch shop_special
 x 12
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 48
 end
 arch flagstone
 x 12
+y 48
+end
+arch dungeon_magic
+x 12
 y 49
 end
-arch shop_special
+arch flagstone
 x 12
 y 49
 end
@@ -2781,103 +3309,115 @@ arch dwall_3_1
 x 13
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 13
 y 36
 end
 arch flagstone
 x 13
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 37
 end
 arch flagstone
+x 13
+y 37
+end
+arch dungeon_magic
 x 13
 y 38
 end
 arch flagstone
 x 13
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 39
 end
 arch flagstone
 x 13
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 40
 end
 arch flagstone
 x 13
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 41
 end
 arch flagstone
 x 13
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 42
 end
 arch flagstone
 x 13
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 43
 end
 arch flagstone
 x 13
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 44
 end
 arch flagstone
 x 13
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 45
 end
 arch flagstone
 x 13
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 46
 end
 arch flagstone
 x 13
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 13
 y 47
 end
 arch flagstone
+x 13
+y 47
+end
+arch dungeon_magic
 x 13
 y 48
 end
 arch flagstone
 x 13
+y 48
+end
+arch dungeon_magic
+x 13
 y 49
 end
-arch shop_special
+arch flagstone
 x 13
 y 49
 end
@@ -2999,29 +3539,45 @@ arch dwall_3_1
 x 14
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 14
 y 36
 end
 arch flagstone
 x 14
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 14
 y 37
 end
 arch flagstone
+x 14
+y 37
+end
+arch dungeon_magic
 x 14
 y 38
 end
 arch flagstone
 x 14
+y 38
+end
+arch dungeon_magic
+x 14
+y 39
+end
+arch flagstone
+x 14
 y 39
 end
 arch shop_special
 x 14
 y 39
+end
+arch dungeon_magic
+x 14
+y 40
 end
 arch flagstone
 x 14
@@ -3031,6 +3587,10 @@ arch shop_special
 x 14
 y 40
 end
+arch dungeon_magic
+x 14
+y 41
+end
 arch flagstone
 x 14
 y 41
@@ -3038,6 +3598,10 @@ end
 arch shop_special
 x 14
 y 41
+end
+arch dungeon_magic
+x 14
+y 42
 end
 arch flagstone
 x 14
@@ -3047,6 +3611,10 @@ arch shop_special
 x 14
 y 42
 end
+arch dungeon_magic
+x 14
+y 43
+end
 arch flagstone
 x 14
 y 43
@@ -3054,6 +3622,10 @@ end
 arch shop_special
 x 14
 y 43
+end
+arch dungeon_magic
+x 14
+y 44
 end
 arch flagstone
 x 14
@@ -3063,6 +3635,10 @@ arch shop_special
 x 14
 y 44
 end
+arch dungeon_magic
+x 14
+y 45
+end
 arch flagstone
 x 14
 y 45
@@ -3070,6 +3646,10 @@ end
 arch shop_special
 x 14
 y 45
+end
+arch dungeon_magic
+x 14
+y 46
 end
 arch flagstone
 x 14
@@ -3079,6 +3659,10 @@ arch shop_special
 x 14
 y 46
 end
+arch dungeon_magic
+x 14
+y 47
+end
 arch flagstone
 x 14
 y 47
@@ -3087,15 +3671,19 @@ arch shop_special
 x 14
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 14
 y 48
 end
 arch flagstone
 x 14
+y 48
+end
+arch dungeon_magic
+x 14
 y 49
 end
-arch shop_special
+arch flagstone
 x 14
 y 49
 end
@@ -3221,103 +3809,115 @@ arch dwall_3_1
 x 15
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 15
 y 36
 end
 arch flagstone
 x 15
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 37
 end
 arch flagstone
+x 15
+y 37
+end
+arch dungeon_magic
 x 15
 y 38
 end
 arch flagstone
 x 15
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 39
 end
 arch flagstone
 x 15
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 40
 end
 arch flagstone
 x 15
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 41
 end
 arch flagstone
 x 15
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 42
 end
 arch flagstone
 x 15
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 43
 end
 arch flagstone
 x 15
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 44
 end
 arch flagstone
 x 15
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 45
 end
 arch flagstone
 x 15
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 46
 end
 arch flagstone
 x 15
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 15
 y 47
 end
 arch flagstone
+x 15
+y 47
+end
+arch dungeon_magic
 x 15
 y 48
 end
 arch flagstone
 x 15
+y 48
+end
+arch dungeon_magic
+x 15
 y 49
 end
-arch shop_special
+arch flagstone
 x 15
 y 49
 end
@@ -3451,29 +4051,45 @@ arch dwall_3_1
 x 16
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 16
 y 36
 end
 arch flagstone
 x 16
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 16
 y 37
 end
 arch flagstone
+x 16
+y 37
+end
+arch dungeon_magic
 x 16
 y 38
 end
 arch flagstone
 x 16
+y 38
+end
+arch dungeon_magic
+x 16
+y 39
+end
+arch flagstone
+x 16
 y 39
 end
 arch shop_special
 x 16
 y 39
+end
+arch dungeon_magic
+x 16
+y 40
 end
 arch flagstone
 x 16
@@ -3483,6 +4099,10 @@ arch shop_special
 x 16
 y 40
 end
+arch dungeon_magic
+x 16
+y 41
+end
 arch flagstone
 x 16
 y 41
@@ -3490,6 +4110,10 @@ end
 arch shop_special
 x 16
 y 41
+end
+arch dungeon_magic
+x 16
+y 42
 end
 arch flagstone
 x 16
@@ -3499,6 +4123,10 @@ arch shop_special
 x 16
 y 42
 end
+arch dungeon_magic
+x 16
+y 43
+end
 arch flagstone
 x 16
 y 43
@@ -3506,6 +4134,10 @@ end
 arch shop_special
 x 16
 y 43
+end
+arch dungeon_magic
+x 16
+y 44
 end
 arch flagstone
 x 16
@@ -3515,6 +4147,10 @@ arch shop_special
 x 16
 y 44
 end
+arch dungeon_magic
+x 16
+y 45
+end
 arch flagstone
 x 16
 y 45
@@ -3522,6 +4158,10 @@ end
 arch shop_special
 x 16
 y 45
+end
+arch dungeon_magic
+x 16
+y 46
 end
 arch flagstone
 x 16
@@ -3531,6 +4171,10 @@ arch shop_special
 x 16
 y 46
 end
+arch dungeon_magic
+x 16
+y 47
+end
 arch flagstone
 x 16
 y 47
@@ -3539,15 +4183,19 @@ arch shop_special
 x 16
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 16
 y 48
 end
 arch flagstone
 x 16
+y 48
+end
+arch dungeon_magic
+x 16
 y 49
 end
-arch shop_special
+arch flagstone
 x 16
 y 49
 end
@@ -3673,103 +4321,115 @@ arch dwall_3_1
 x 17
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 17
 y 36
 end
 arch flagstone
 x 17
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 37
 end
 arch flagstone
+x 17
+y 37
+end
+arch dungeon_magic
 x 17
 y 38
 end
 arch flagstone
 x 17
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 39
 end
 arch flagstone
 x 17
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 40
 end
 arch flagstone
 x 17
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 41
 end
 arch flagstone
 x 17
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 42
 end
 arch flagstone
 x 17
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 43
 end
 arch flagstone
 x 17
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 44
 end
 arch flagstone
 x 17
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 45
 end
 arch flagstone
 x 17
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 46
 end
 arch flagstone
 x 17
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 17
 y 47
 end
 arch flagstone
+x 17
+y 47
+end
+arch dungeon_magic
 x 17
 y 48
 end
 arch flagstone
 x 17
+y 48
+end
+arch dungeon_magic
+x 17
 y 49
 end
-arch shop_special
+arch flagstone
 x 17
 y 49
 end
@@ -3899,29 +4559,45 @@ arch dwall_3_1
 x 18
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 18
 y 36
 end
 arch flagstone
 x 18
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 18
 y 37
 end
 arch flagstone
+x 18
+y 37
+end
+arch dungeon_magic
 x 18
 y 38
 end
 arch flagstone
 x 18
+y 38
+end
+arch dungeon_magic
+x 18
+y 39
+end
+arch flagstone
+x 18
 y 39
 end
 arch shop_special
 x 18
 y 39
+end
+arch dungeon_magic
+x 18
+y 40
 end
 arch flagstone
 x 18
@@ -3931,6 +4607,10 @@ arch shop_special
 x 18
 y 40
 end
+arch dungeon_magic
+x 18
+y 41
+end
 arch flagstone
 x 18
 y 41
@@ -3938,6 +4618,10 @@ end
 arch shop_special
 x 18
 y 41
+end
+arch dungeon_magic
+x 18
+y 42
 end
 arch flagstone
 x 18
@@ -3947,6 +4631,10 @@ arch shop_special
 x 18
 y 42
 end
+arch dungeon_magic
+x 18
+y 43
+end
 arch flagstone
 x 18
 y 43
@@ -3954,6 +4642,10 @@ end
 arch shop_special
 x 18
 y 43
+end
+arch dungeon_magic
+x 18
+y 44
 end
 arch flagstone
 x 18
@@ -3963,6 +4655,10 @@ arch shop_special
 x 18
 y 44
 end
+arch dungeon_magic
+x 18
+y 45
+end
 arch flagstone
 x 18
 y 45
@@ -3970,6 +4666,10 @@ end
 arch shop_special
 x 18
 y 45
+end
+arch dungeon_magic
+x 18
+y 46
 end
 arch flagstone
 x 18
@@ -3979,6 +4679,10 @@ arch shop_special
 x 18
 y 46
 end
+arch dungeon_magic
+x 18
+y 47
+end
 arch flagstone
 x 18
 y 47
@@ -3987,15 +4691,19 @@ arch shop_special
 x 18
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 18
 y 48
 end
 arch flagstone
 x 18
+y 48
+end
+arch dungeon_magic
+x 18
 y 49
 end
-arch shop_special
+arch flagstone
 x 18
 y 49
 end
@@ -4132,57 +4840,113 @@ arch dwall_3_1
 x 19
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 19
 y 36
 end
 arch flagstone
 x 19
+y 36
+end
+arch dungeon_magic
+x 19
 y 37
 end
 arch flagstone
+x 19
+y 37
+end
+arch dungeon_magic
 x 19
 y 38
 end
 arch flagstone
 x 19
+y 38
+end
+arch dungeon_magic
+x 19
 y 39
 end
 arch flagstone
+x 19
+y 39
+end
+arch dungeon_magic
 x 19
 y 40
 end
 arch flagstone
 x 19
+y 40
+end
+arch dungeon_magic
+x 19
 y 41
 end
 arch flagstone
+x 19
+y 41
+end
+arch dungeon_magic
 x 19
 y 42
 end
 arch flagstone
 x 19
+y 42
+end
+arch dungeon_magic
+x 19
 y 43
 end
 arch flagstone
+x 19
+y 43
+end
+arch dungeon_magic
 x 19
 y 44
 end
 arch flagstone
 x 19
+y 44
+end
+arch dungeon_magic
+x 19
 y 45
 end
 arch flagstone
+x 19
+y 45
+end
+arch dungeon_magic
 x 19
 y 46
 end
 arch flagstone
 x 19
+y 46
+end
+arch dungeon_magic
+x 19
 y 47
 end
 arch flagstone
 x 19
+y 47
+end
+arch dungeon_magic
+x 19
 y 48
+end
+arch flagstone
+x 19
+y 48
+end
+arch dungeon_magic
+x 19
+y 49
 end
 arch flagstone
 x 19
@@ -4322,29 +5086,45 @@ arch dwall_3_1
 x 20
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 20
 y 36
 end
 arch flagstone
 x 20
-y 37
+y 36
 end
-arch shop_special
+arch dungeon_magic
 x 20
 y 37
 end
 arch flagstone
+x 20
+y 37
+end
+arch dungeon_magic
 x 20
 y 38
 end
 arch flagstone
 x 20
+y 38
+end
+arch dungeon_magic
+x 20
+y 39
+end
+arch flagstone
+x 20
 y 39
 end
 arch shop_special
 x 20
 y 39
+end
+arch dungeon_magic
+x 20
+y 40
 end
 arch flagstone
 x 20
@@ -4354,6 +5134,10 @@ arch shop_special
 x 20
 y 40
 end
+arch dungeon_magic
+x 20
+y 41
+end
 arch flagstone
 x 20
 y 41
@@ -4361,6 +5145,10 @@ end
 arch shop_special
 x 20
 y 41
+end
+arch dungeon_magic
+x 20
+y 42
 end
 arch flagstone
 x 20
@@ -4370,6 +5158,10 @@ arch shop_special
 x 20
 y 42
 end
+arch dungeon_magic
+x 20
+y 43
+end
 arch flagstone
 x 20
 y 43
@@ -4377,6 +5169,10 @@ end
 arch shop_special
 x 20
 y 43
+end
+arch dungeon_magic
+x 20
+y 44
 end
 arch flagstone
 x 20
@@ -4386,6 +5182,10 @@ arch shop_special
 x 20
 y 44
 end
+arch dungeon_magic
+x 20
+y 45
+end
 arch flagstone
 x 20
 y 45
@@ -4393,6 +5193,10 @@ end
 arch shop_special
 x 20
 y 45
+end
+arch dungeon_magic
+x 20
+y 46
 end
 arch flagstone
 x 20
@@ -4402,6 +5206,10 @@ arch shop_special
 x 20
 y 46
 end
+arch dungeon_magic
+x 20
+y 47
+end
 arch flagstone
 x 20
 y 47
@@ -4410,15 +5218,19 @@ arch shop_special
 x 20
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 20
 y 48
 end
 arch flagstone
 x 20
+y 48
+end
+arch dungeon_magic
+x 20
 y 49
 end
-arch shop_special
+arch flagstone
 x 20
 y 49
 end
@@ -4540,57 +5352,113 @@ arch dwall_3_1
 x 21
 y 35
 end
-arch flagstone
+arch dungeon_magic
 x 21
 y 36
 end
 arch flagstone
 x 21
+y 36
+end
+arch dungeon_magic
+x 21
 y 37
 end
 arch flagstone
+x 21
+y 37
+end
+arch dungeon_magic
 x 21
 y 38
 end
 arch flagstone
 x 21
+y 38
+end
+arch dungeon_magic
+x 21
 y 39
 end
 arch flagstone
+x 21
+y 39
+end
+arch dungeon_magic
 x 21
 y 40
 end
 arch flagstone
 x 21
+y 40
+end
+arch dungeon_magic
+x 21
 y 41
 end
 arch flagstone
+x 21
+y 41
+end
+arch dungeon_magic
 x 21
 y 42
 end
 arch flagstone
 x 21
+y 42
+end
+arch dungeon_magic
+x 21
 y 43
 end
 arch flagstone
+x 21
+y 43
+end
+arch dungeon_magic
 x 21
 y 44
 end
 arch flagstone
 x 21
+y 44
+end
+arch dungeon_magic
+x 21
 y 45
 end
 arch flagstone
+x 21
+y 45
+end
+arch dungeon_magic
 x 21
 y 46
 end
 arch flagstone
 x 21
+y 46
+end
+arch dungeon_magic
+x 21
 y 47
 end
 arch flagstone
 x 21
+y 47
+end
+arch dungeon_magic
+x 21
 y 48
+end
+arch flagstone
+x 21
+y 48
+end
+arch dungeon_magic
+x 21
+y 49
 end
 arch flagstone
 x 21
@@ -4697,25 +5565,33 @@ arch dwall_3_1
 x 22
 y 35
 end
-arch flagstone
-x 22
-y 36
-end
-arch shop_special
+arch dungeon_magic
 x 22
 y 36
 end
 arch flagstone
+x 22
+y 36
+end
+arch dungeon_magic
 x 22
 y 37
 end
 arch flagstone
 x 22
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 22
 y 38
+end
+arch flagstone
+x 22
+y 38
+end
+arch dungeon_magic
+x 22
+y 39
 end
 arch flagstone
 x 22
@@ -4725,6 +5601,10 @@ arch shop_special
 x 22
 y 39
 end
+arch dungeon_magic
+x 22
+y 40
+end
 arch flagstone
 x 22
 y 40
@@ -4732,6 +5612,10 @@ end
 arch shop_special
 x 22
 y 40
+end
+arch dungeon_magic
+x 22
+y 41
 end
 arch flagstone
 x 22
@@ -4741,6 +5625,10 @@ arch shop_special
 x 22
 y 41
 end
+arch dungeon_magic
+x 22
+y 42
+end
 arch flagstone
 x 22
 y 42
@@ -4748,6 +5636,10 @@ end
 arch shop_special
 x 22
 y 42
+end
+arch dungeon_magic
+x 22
+y 43
 end
 arch flagstone
 x 22
@@ -4757,6 +5649,10 @@ arch shop_special
 x 22
 y 43
 end
+arch dungeon_magic
+x 22
+y 44
+end
 arch flagstone
 x 22
 y 44
@@ -4764,6 +5660,10 @@ end
 arch shop_special
 x 22
 y 44
+end
+arch dungeon_magic
+x 22
+y 45
 end
 arch flagstone
 x 22
@@ -4773,6 +5673,10 @@ arch shop_special
 x 22
 y 45
 end
+arch dungeon_magic
+x 22
+y 46
+end
 arch flagstone
 x 22
 y 46
@@ -4780,6 +5684,10 @@ end
 arch shop_special
 x 22
 y 46
+end
+arch dungeon_magic
+x 22
+y 47
 end
 arch flagstone
 x 22
@@ -4789,15 +5697,19 @@ arch shop_special
 x 22
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 22
 y 48
 end
 arch flagstone
 x 22
+y 48
+end
+arch dungeon_magic
+x 22
 y 49
 end
-arch shop_special
+arch flagstone
 x 22
 y 49
 end
@@ -4951,6 +5863,10 @@ arch dwall_3_1
 x 23
 y 35
 end
+arch dungeon_magic
+x 23
+y 36
+end
 arch flagstone
 x 23
 y 36
@@ -4959,29 +5875,57 @@ arch guard
 x 23
 y 36
 end
-arch flagstone
+arch dungeon_magic
 x 23
 y 37
 end
 arch flagstone
 x 23
+y 37
+end
+arch dungeon_magic
+x 23
 y 38
 end
 arch flagstone
+x 23
+y 38
+end
+arch dungeon_magic
 x 23
 y 39
 end
 arch flagstone
 x 23
+y 39
+end
+arch dungeon_magic
+x 23
 y 40
 end
 arch flagstone
+x 23
+y 40
+end
+arch dungeon_magic
 x 23
 y 41
 end
 arch flagstone
 x 23
+y 41
+end
+arch dungeon_magic
+x 23
 y 42
+end
+arch flagstone
+x 23
+y 42
+end
+arch dungeon_magic
+x 23
+y 43
 end
 arch flagstone
 x 23
@@ -4991,25 +5935,49 @@ arch a_townsman
 x 23
 y 43
 end
-arch flagstone
+arch dungeon_magic
 x 23
 y 44
 end
 arch flagstone
 x 23
+y 44
+end
+arch dungeon_magic
+x 23
 y 45
 end
 arch flagstone
+x 23
+y 45
+end
+arch dungeon_magic
 x 23
 y 46
 end
 arch flagstone
 x 23
+y 46
+end
+arch dungeon_magic
+x 23
 y 47
 end
 arch flagstone
 x 23
+y 47
+end
+arch dungeon_magic
+x 23
 y 48
+end
+arch flagstone
+x 23
+y 48
+end
+arch dungeon_magic
+x 23
+y 49
 end
 arch flagstone
 x 23
@@ -5125,25 +6093,33 @@ arch dwall_3_1
 x 24
 y 35
 end
-arch flagstone
-x 24
-y 36
-end
-arch shop_special
+arch dungeon_magic
 x 24
 y 36
 end
 arch flagstone
+x 24
+y 36
+end
+arch dungeon_magic
 x 24
 y 37
 end
 arch flagstone
 x 24
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 24
 y 38
+end
+arch flagstone
+x 24
+y 38
+end
+arch dungeon_magic
+x 24
+y 39
 end
 arch flagstone
 x 24
@@ -5153,6 +6129,10 @@ arch shop_special
 x 24
 y 39
 end
+arch dungeon_magic
+x 24
+y 40
+end
 arch flagstone
 x 24
 y 40
@@ -5160,6 +6140,10 @@ end
 arch shop_special
 x 24
 y 40
+end
+arch dungeon_magic
+x 24
+y 41
 end
 arch flagstone
 x 24
@@ -5169,6 +6153,10 @@ arch shop_special
 x 24
 y 41
 end
+arch dungeon_magic
+x 24
+y 42
+end
 arch flagstone
 x 24
 y 42
@@ -5176,6 +6164,10 @@ end
 arch shop_special
 x 24
 y 42
+end
+arch dungeon_magic
+x 24
+y 43
 end
 arch flagstone
 x 24
@@ -5185,6 +6177,10 @@ arch shop_special
 x 24
 y 43
 end
+arch dungeon_magic
+x 24
+y 44
+end
 arch flagstone
 x 24
 y 44
@@ -5192,6 +6188,10 @@ end
 arch shop_special
 x 24
 y 44
+end
+arch dungeon_magic
+x 24
+y 45
 end
 arch flagstone
 x 24
@@ -5201,6 +6201,10 @@ arch shop_special
 x 24
 y 45
 end
+arch dungeon_magic
+x 24
+y 46
+end
 arch flagstone
 x 24
 y 46
@@ -5208,6 +6212,10 @@ end
 arch shop_special
 x 24
 y 46
+end
+arch dungeon_magic
+x 24
+y 47
 end
 arch flagstone
 x 24
@@ -5217,15 +6225,19 @@ arch shop_special
 x 24
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 24
 y 48
 end
 arch flagstone
 x 24
+y 48
+end
+arch dungeon_magic
+x 24
 y 49
 end
-arch shop_special
+arch flagstone
 x 24
 y 49
 end
@@ -5363,107 +6375,115 @@ arch dwall_3_1
 x 25
 y 35
 end
-arch flagstone
-x 25
-y 36
-end
-arch shop_special
+arch dungeon_magic
 x 25
 y 36
 end
 arch flagstone
+x 25
+y 36
+end
+arch dungeon_magic
 x 25
 y 37
 end
 arch flagstone
 x 25
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 38
 end
 arch flagstone
 x 25
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 39
 end
 arch flagstone
 x 25
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 40
 end
 arch flagstone
 x 25
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 41
 end
 arch flagstone
 x 25
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 42
 end
 arch flagstone
 x 25
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 43
 end
 arch flagstone
 x 25
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 44
 end
 arch flagstone
 x 25
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 45
 end
 arch flagstone
 x 25
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 46
 end
 arch flagstone
 x 25
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 25
 y 47
 end
 arch flagstone
+x 25
+y 47
+end
+arch dungeon_magic
 x 25
 y 48
 end
 arch flagstone
 x 25
+y 48
+end
+arch dungeon_magic
+x 25
 y 49
 end
-arch shop_special
+arch flagstone
 x 25
 y 49
 end
@@ -5605,25 +6625,33 @@ arch dwall_3_1
 x 26
 y 35
 end
-arch flagstone
-x 26
-y 36
-end
-arch shop_special
+arch dungeon_magic
 x 26
 y 36
 end
 arch flagstone
+x 26
+y 36
+end
+arch dungeon_magic
 x 26
 y 37
 end
 arch flagstone
 x 26
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 26
 y 38
+end
+arch flagstone
+x 26
+y 38
+end
+arch dungeon_magic
+x 26
+y 39
 end
 arch flagstone
 x 26
@@ -5633,6 +6661,10 @@ arch shop_special
 x 26
 y 39
 end
+arch dungeon_magic
+x 26
+y 40
+end
 arch flagstone
 x 26
 y 40
@@ -5640,6 +6672,10 @@ end
 arch shop_special
 x 26
 y 40
+end
+arch dungeon_magic
+x 26
+y 41
 end
 arch flagstone
 x 26
@@ -5649,6 +6685,10 @@ arch shop_special
 x 26
 y 41
 end
+arch dungeon_magic
+x 26
+y 42
+end
 arch flagstone
 x 26
 y 42
@@ -5656,6 +6696,10 @@ end
 arch shop_special
 x 26
 y 42
+end
+arch dungeon_magic
+x 26
+y 43
 end
 arch flagstone
 x 26
@@ -5665,6 +6709,10 @@ arch shop_special
 x 26
 y 43
 end
+arch dungeon_magic
+x 26
+y 44
+end
 arch flagstone
 x 26
 y 44
@@ -5672,6 +6720,10 @@ end
 arch shop_special
 x 26
 y 44
+end
+arch dungeon_magic
+x 26
+y 45
 end
 arch flagstone
 x 26
@@ -5681,6 +6733,10 @@ arch shop_special
 x 26
 y 45
 end
+arch dungeon_magic
+x 26
+y 46
+end
 arch flagstone
 x 26
 y 46
@@ -5688,6 +6744,10 @@ end
 arch shop_special
 x 26
 y 46
+end
+arch dungeon_magic
+x 26
+y 47
 end
 arch flagstone
 x 26
@@ -5697,15 +6757,19 @@ arch shop_special
 x 26
 y 47
 end
-arch flagstone
+arch dungeon_magic
 x 26
 y 48
 end
 arch flagstone
 x 26
+y 48
+end
+arch dungeon_magic
+x 26
 y 49
 end
-arch shop_special
+arch flagstone
 x 26
 y 49
 end
@@ -5845,107 +6909,115 @@ arch dwall_3_1
 x 27
 y 35
 end
-arch flagstone
-x 27
-y 36
-end
-arch shop_special
+arch dungeon_magic
 x 27
 y 36
 end
 arch flagstone
+x 27
+y 36
+end
+arch dungeon_magic
 x 27
 y 37
 end
 arch flagstone
 x 27
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 38
 end
 arch flagstone
 x 27
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 39
 end
 arch flagstone
 x 27
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 40
 end
 arch flagstone
 x 27
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 41
 end
 arch flagstone
 x 27
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 42
 end
 arch flagstone
 x 27
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 43
 end
 arch flagstone
 x 27
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 44
 end
 arch flagstone
 x 27
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 45
 end
 arch flagstone
 x 27
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 46
 end
 arch flagstone
 x 27
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 27
 y 47
 end
 arch flagstone
+x 27
+y 47
+end
+arch dungeon_magic
 x 27
 y 48
 end
 arch flagstone
 x 27
+y 48
+end
+arch dungeon_magic
+x 27
 y 49
 end
-arch shop_special
+arch flagstone
 x 27
 y 49
 end
@@ -6351,6 +7423,10 @@ arch dwall_3_1
 x 28
 y 35
 end
+arch dungeon_magic
+x 28
+y 36
+end
 arch flagstone
 x 28
 y 36
@@ -6359,53 +7435,105 @@ arch guard
 x 28
 y 36
 end
-arch flagstone
+arch dungeon_magic
 x 28
 y 37
 end
 arch flagstone
 x 28
+y 37
+end
+arch dungeon_magic
+x 28
 y 38
 end
 arch flagstone
+x 28
+y 38
+end
+arch dungeon_magic
 x 28
 y 39
 end
 arch flagstone
 x 28
+y 39
+end
+arch dungeon_magic
+x 28
 y 40
 end
 arch flagstone
+x 28
+y 40
+end
+arch dungeon_magic
 x 28
 y 41
 end
 arch flagstone
 x 28
+y 41
+end
+arch dungeon_magic
+x 28
 y 42
 end
 arch flagstone
+x 28
+y 42
+end
+arch dungeon_magic
 x 28
 y 43
 end
 arch flagstone
 x 28
+y 43
+end
+arch dungeon_magic
+x 28
 y 44
 end
 arch flagstone
+x 28
+y 44
+end
+arch dungeon_magic
 x 28
 y 45
 end
 arch flagstone
 x 28
+y 45
+end
+arch dungeon_magic
+x 28
 y 46
 end
 arch flagstone
+x 28
+y 46
+end
+arch dungeon_magic
 x 28
 y 47
 end
 arch flagstone
 x 28
+y 47
+end
+arch dungeon_magic
+x 28
 y 48
+end
+arch flagstone
+x 28
+y 48
+end
+arch dungeon_magic
+x 28
+y 49
 end
 arch flagstone
 x 28
@@ -6814,6 +7942,10 @@ arch dwall_3_1
 x 29
 y 35
 end
+arch dungeon_magic
+x 29
+y 36
+end
 arch flagstone
 x 29
 y 36
@@ -6822,89 +7954,97 @@ arch firepot
 x 29
 y 36
 end
-arch flagstone
+arch dungeon_magic
 x 29
 y 37
 end
 arch flagstone
 x 29
-y 38
+y 37
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 38
 end
 arch flagstone
 x 29
-y 39
+y 38
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 39
 end
 arch flagstone
 x 29
-y 40
+y 39
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 40
 end
 arch flagstone
 x 29
-y 41
+y 40
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 41
 end
 arch flagstone
 x 29
-y 42
+y 41
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 42
 end
 arch flagstone
 x 29
-y 43
+y 42
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 43
 end
 arch flagstone
 x 29
-y 44
+y 43
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 44
 end
 arch flagstone
 x 29
-y 45
+y 44
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 45
 end
 arch flagstone
 x 29
-y 46
+y 45
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 46
 end
 arch flagstone
 x 29
-y 47
+y 46
 end
-arch shop_special
+arch dungeon_magic
 x 29
 y 47
+end
+arch flagstone
+x 29
+y 47
+end
+arch dungeon_magic
+x 29
+y 48
 end
 arch flagstone
 x 29
@@ -6914,11 +8054,11 @@ arch guard
 x 29
 y 48
 end
-arch flagstone
+arch dungeon_magic
 x 29
 y 49
 end
-arch shop_special
+arch flagstone
 x 29
 y 49
 end

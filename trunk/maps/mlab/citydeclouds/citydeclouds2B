@@ -14858,10 +14858,6 @@ arch dungeon_floor
 x 36
 y 39
 end
-arch dungeon_floor
-x 36
-y 39
-end
 arch goldfloor
 name drop 85 plat
 name_pl drop 85 plat
@@ -14893,10 +14889,6 @@ x 36
 y 40
 end
 arch dungeon_magic
-x 36
-y 41
-end
-arch dungeon_floor
 x 36
 y 41
 end
@@ -14937,10 +14929,6 @@ x 36
 y 42
 end
 arch dungeon_magic
-x 36
-y 43
-end
-arch dungeon_floor
 x 36
 y 43
 end
@@ -16364,27 +16352,34 @@ name_pl floor
 x 39
 y 49
 end
+arch dungeon_magic
+x 40
+end
 arch flagstone
 x 40
 end
 arch guard
 x 40
 end
-arch flagstone
-x 40
-y 1
-end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 1
 end
 arch flagstone
 x 40
-y 2
+y 1
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 2
+end
+arch flagstone
+x 40
+y 2
+end
+arch dungeon_magic
+x 40
+y 3
 end
 arch flagstone
 x 40
@@ -16394,45 +16389,49 @@ arch guard
 x 40
 y 3
 end
-arch flagstone
-x 40
-y 4
-end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 4
 end
 arch flagstone
 x 40
-y 5
+y 4
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 5
 end
 arch flagstone
 x 40
-y 6
+y 5
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 6
 end
 arch flagstone
 x 40
-y 7
+y 6
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 7
 end
 arch flagstone
 x 40
-y 8
+y 7
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 8
+end
+arch flagstone
+x 40
+y 8
+end
+arch dungeon_magic
+x 40
+y 9
 end
 arch flagstone
 x 40
@@ -16442,37 +16441,41 @@ arch guard
 x 40
 y 9
 end
-arch flagstone
-x 40
-y 10
-end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 10
 end
 arch flagstone
 x 40
-y 11
+y 10
 end
-arch shop_scrolls
+arch dungeon_magic
 x 40
 y 11
 end
 arch flagstone
 x 40
-y 12
+y 11
 end
-arch guard
+arch dungeon_magic
 x 40
 y 12
 end
 arch flagstone
 x 40
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 13
+end
+arch flagstone
+x 40
+y 13
+end
+arch dungeon_magic
+x 40
+y 14
 end
 arch flagstone
 x 40
@@ -16482,89 +16485,97 @@ arch guard
 x 40
 y 14
 end
-arch flagstone
-x 40
-y 15
-end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 15
 end
 arch flagstone
 x 40
-y 16
+y 15
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 16
 end
 arch flagstone
 x 40
-y 17
+y 16
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 17
 end
 arch flagstone
 x 40
-y 18
+y 17
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 18
 end
 arch flagstone
 x 40
-y 19
+y 18
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 19
 end
 arch flagstone
 x 40
-y 20
+y 19
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 20
 end
 arch flagstone
 x 40
-y 21
+y 20
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 21
 end
 arch flagstone
 x 40
-y 22
+y 21
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 22
 end
 arch flagstone
 x 40
-y 23
+y 22
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 23
 end
 arch flagstone
 x 40
-y 24
+y 23
 end
-arch shop_amulets
+arch dungeon_magic
 x 40
 y 24
+end
+arch flagstone
+x 40
+y 24
+end
+arch dungeon_magic
+x 40
+y 25
 end
 arch flagstone
 x 40
 y 25
+end
+arch dungeon_magic
+x 40
+y 26
 end
 arch flagstone
 x 40
@@ -16781,8 +16792,15 @@ arch woodwall_2_1_1
 x 40
 y 49
 end
+arch dungeon_magic
+x 41
+end
 arch flagstone
 x 41
+end
+arch dungeon_magic
+x 41
+y 1
 end
 arch flagstone
 x 41
@@ -16792,6 +16810,10 @@ arch shop_scrolls
 x 41
 y 1
 end
+arch dungeon_magic
+x 41
+y 2
+end
 arch flagstone
 x 41
 y 2
@@ -16800,17 +16822,25 @@ arch shop_scrolls
 x 41
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 41
 y 3
 end
 arch flagstone
 x 41
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 41
 y 4
+end
+arch flagstone
+x 41
+y 4
+end
+arch dungeon_magic
+x 41
+y 5
 end
 arch flagstone
 x 41
@@ -16820,6 +16850,10 @@ arch shop_scrolls
 x 41
 y 5
 end
+arch dungeon_magic
+x 41
+y 6
+end
 arch flagstone
 x 41
 y 6
@@ -16827,6 +16861,10 @@ end
 arch shop_scrolls
 x 41
 y 6
+end
+arch dungeon_magic
+x 41
+y 7
 end
 arch flagstone
 x 41
@@ -16836,25 +16874,37 @@ arch shop_scrolls
 x 41
 y 7
 end
-arch flagstone
-x 41
-y 8
-end
-arch shop_scrolls
+arch dungeon_magic
 x 41
 y 8
 end
 arch flagstone
+x 41
+y 8
+end
+arch dungeon_magic
 x 41
 y 9
 end
 arch flagstone
 x 41
+y 9
+end
+arch dungeon_magic
+x 41
+y 10
+end
+arch flagstone
+x 41
 y 10
 end
 arch shop_scrolls
 x 41
 y 10
+end
+arch dungeon_magic
+x 41
+y 11
 end
 arch flagstone
 x 41
@@ -16864,61 +16914,121 @@ arch shop_scrolls
 x 41
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 41
 y 12
 end
 arch flagstone
 x 41
+y 12
+end
+arch dungeon_magic
+x 41
 y 13
 end
 arch flagstone
+x 41
+y 13
+end
+arch dungeon_magic
 x 41
 y 14
 end
 arch flagstone
 x 41
+y 14
+end
+arch dungeon_magic
+x 41
 y 15
 end
 arch flagstone
+x 41
+y 15
+end
+arch dungeon_magic
 x 41
 y 16
 end
 arch flagstone
 x 41
+y 16
+end
+arch dungeon_magic
+x 41
 y 17
 end
 arch flagstone
+x 41
+y 17
+end
+arch dungeon_magic
 x 41
 y 18
 end
 arch flagstone
 x 41
+y 18
+end
+arch dungeon_magic
+x 41
 y 19
 end
 arch flagstone
+x 41
+y 19
+end
+arch dungeon_magic
 x 41
 y 20
 end
 arch flagstone
 x 41
+y 20
+end
+arch dungeon_magic
+x 41
 y 21
 end
 arch flagstone
+x 41
+y 21
+end
+arch dungeon_magic
 x 41
 y 22
 end
 arch flagstone
 x 41
+y 22
+end
+arch dungeon_magic
+x 41
 y 23
 end
 arch flagstone
+x 41
+y 23
+end
+arch dungeon_magic
 x 41
 y 24
 end
 arch flagstone
 x 41
+y 24
+end
+arch dungeon_magic
+x 41
 y 25
+end
+arch flagstone
+x 41
+y 25
+end
+arch dungeon_magic
+x 41
+y 26
 end
 arch flagstone
 x 41
@@ -17140,76 +17250,139 @@ name_pl floor
 x 41
 y 49
 end
-arch flagstone
+arch dungeon_magic
 x 42
 end
 arch flagstone
+x 42
+end
+arch dungeon_magic
 x 42
 y 1
 end
 arch flagstone
 x 42
+y 1
+end
+arch dungeon_magic
+x 42
 y 2
 end
 arch flagstone
+x 42
+y 2
+end
+arch dungeon_magic
 x 42
 y 3
 end
 arch flagstone
 x 42
+y 3
+end
+arch dungeon_magic
+x 42
 y 4
 end
 arch flagstone
+x 42
+y 4
+end
+arch dungeon_magic
 x 42
 y 5
 end
 arch flagstone
 x 42
+y 5
+end
+arch dungeon_magic
+x 42
 y 6
 end
 arch flagstone
+x 42
+y 6
+end
+arch dungeon_magic
 x 42
 y 7
 end
 arch flagstone
 x 42
+y 7
+end
+arch dungeon_magic
+x 42
 y 8
 end
 arch flagstone
+x 42
+y 8
+end
+arch dungeon_magic
 x 42
 y 9
 end
 arch flagstone
 x 42
+y 9
+end
+arch dungeon_magic
+x 42
 y 10
 end
 arch flagstone
+x 42
+y 10
+end
+arch dungeon_magic
 x 42
 y 11
 end
 arch flagstone
 x 42
+y 11
+end
+arch dungeon_magic
+x 42
 y 12
 end
 arch flagstone
 x 42
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 42
 y 13
 end
 arch flagstone
+x 42
+y 13
+end
+arch dungeon_magic
 x 42
 y 14
 end
 arch flagstone
 x 42
+y 14
+end
+arch dungeon_magic
+x 42
+y 15
+end
+arch flagstone
+x 42
 y 15
 end
 arch shop_amulets
 x 42
 y 15
+end
+arch dungeon_magic
+x 42
+y 16
 end
 arch flagstone
 x 42
@@ -17219,6 +17392,10 @@ arch shop_amulets
 x 42
 y 16
 end
+arch dungeon_magic
+x 42
+y 17
+end
 arch flagstone
 x 42
 y 17
@@ -17226,6 +17403,10 @@ end
 arch shop_amulets
 x 42
 y 17
+end
+arch dungeon_magic
+x 42
+y 18
 end
 arch flagstone
 x 42
@@ -17235,6 +17416,10 @@ arch shop_amulets
 x 42
 y 18
 end
+arch dungeon_magic
+x 42
+y 19
+end
 arch flagstone
 x 42
 y 19
@@ -17242,6 +17427,10 @@ end
 arch shop_amulets
 x 42
 y 19
+end
+arch dungeon_magic
+x 42
+y 20
 end
 arch flagstone
 x 42
@@ -17251,6 +17440,10 @@ arch shop_amulets
 x 42
 y 20
 end
+arch dungeon_magic
+x 42
+y 21
+end
 arch flagstone
 x 42
 y 21
@@ -17258,6 +17451,10 @@ end
 arch shop_amulets
 x 42
 y 21
+end
+arch dungeon_magic
+x 42
+y 22
 end
 arch flagstone
 x 42
@@ -17267,6 +17464,10 @@ arch shop_amulets
 x 42
 y 22
 end
+arch dungeon_magic
+x 42
+y 23
+end
 arch flagstone
 x 42
 y 23
@@ -17275,23 +17476,27 @@ arch shop_amulets
 x 42
 y 23
 end
-arch flagstone
-x 42
-y 24
-end
-arch shop_amulets
+arch dungeon_magic
 x 42
 y 24
 end
 arch flagstone
+x 42
+y 24
+end
+arch dungeon_magic
 x 42
 y 25
 end
 arch flagstone
 x 42
+y 25
+end
+arch dungeon_magic
+x 42
 y 26
 end
-arch shop_amulets
+arch flagstone
 x 42
 y 26
 end
@@ -17489,8 +17694,15 @@ name_pl floor
 x 42
 y 49
 end
+arch dungeon_magic
+x 43
+end
 arch flagstone
 x 43
+end
+arch dungeon_magic
+x 43
+y 1
 end
 arch flagstone
 x 43
@@ -17500,6 +17712,10 @@ arch shop_scrolls
 x 43
 y 1
 end
+arch dungeon_magic
+x 43
+y 2
+end
 arch flagstone
 x 43
 y 2
@@ -17508,17 +17724,25 @@ arch shop_scrolls
 x 43
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 43
 y 3
 end
 arch flagstone
 x 43
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 43
 y 4
+end
+arch flagstone
+x 43
+y 4
+end
+arch dungeon_magic
+x 43
+y 5
 end
 arch flagstone
 x 43
@@ -17528,6 +17752,10 @@ arch shop_scrolls
 x 43
 y 5
 end
+arch dungeon_magic
+x 43
+y 6
+end
 arch flagstone
 x 43
 y 6
@@ -17535,6 +17763,10 @@ end
 arch shop_scrolls
 x 43
 y 6
+end
+arch dungeon_magic
+x 43
+y 7
 end
 arch flagstone
 x 43
@@ -17544,25 +17776,37 @@ arch shop_scrolls
 x 43
 y 7
 end
-arch flagstone
-x 43
-y 8
-end
-arch shop_scrolls
+arch dungeon_magic
 x 43
 y 8
 end
 arch flagstone
+x 43
+y 8
+end
+arch dungeon_magic
 x 43
 y 9
 end
 arch flagstone
 x 43
+y 9
+end
+arch dungeon_magic
+x 43
+y 10
+end
+arch flagstone
+x 43
 y 10
 end
 arch shop_scrolls
 x 43
 y 10
+end
+arch dungeon_magic
+x 43
+y 11
 end
 arch flagstone
 x 43
@@ -17572,111 +17816,123 @@ arch shop_scrolls
 x 43
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 43
 y 12
 end
 arch flagstone
 x 43
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 13
 end
 arch flagstone
+x 43
+y 13
+end
+arch dungeon_magic
 x 43
 y 14
 end
 arch flagstone
 x 43
-y 15
+y 14
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 15
 end
 arch flagstone
 x 43
-y 16
+y 15
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 16
 end
 arch flagstone
 x 43
-y 17
+y 16
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 17
 end
 arch flagstone
 x 43
-y 18
+y 17
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 18
 end
 arch flagstone
 x 43
-y 19
+y 18
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 19
 end
 arch flagstone
 x 43
-y 20
+y 19
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 20
 end
 arch flagstone
 x 43
-y 21
+y 20
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 21
 end
 arch flagstone
 x 43
-y 22
+y 21
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 22
 end
 arch flagstone
 x 43
-y 23
+y 22
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 23
 end
 arch flagstone
 x 43
-y 24
+y 23
 end
-arch shop_amulets
+arch dungeon_magic
 x 43
 y 24
 end
 arch flagstone
+x 43
+y 24
+end
+arch dungeon_magic
 x 43
 y 25
 end
 arch flagstone
 x 43
+y 25
+end
+arch dungeon_magic
+x 43
 y 26
 end
-arch shop_amulets
+arch flagstone
 x 43
 y 26
 end
@@ -17923,24 +18179,47 @@ name_pl floor
 x 43
 y 49
 end
-arch flagstone
+arch dungeon_magic
 x 44
 end
 arch flagstone
+x 44
+end
+arch dungeon_magic
 x 44
 y 1
 end
 arch flagstone
 x 44
+y 1
+end
+arch dungeon_magic
+x 44
 y 2
 end
 arch flagstone
+x 44
+y 2
+end
+arch dungeon_magic
 x 44
 y 3
 end
 arch flagstone
 x 44
+y 3
+end
+arch dungeon_magic
+x 44
 y 4
+end
+arch flagstone
+x 44
+y 4
+end
+arch dungeon_magic
+x 44
+y 5
 end
 arch flagstone
 x 44
@@ -17950,53 +18229,93 @@ arch a_townsman
 x 44
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 44
 y 6
 end
 arch flagstone
 x 44
+y 6
+end
+arch dungeon_magic
+x 44
 y 7
 end
 arch flagstone
+x 44
+y 7
+end
+arch dungeon_magic
 x 44
 y 8
 end
 arch flagstone
 x 44
+y 8
+end
+arch dungeon_magic
+x 44
 y 9
 end
 arch flagstone
+x 44
+y 9
+end
+arch dungeon_magic
 x 44
 y 10
 end
 arch flagstone
 x 44
+y 10
+end
+arch dungeon_magic
+x 44
 y 11
 end
 arch flagstone
+x 44
+y 11
+end
+arch dungeon_magic
 x 44
 y 12
 end
 arch flagstone
 x 44
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 44
 y 13
 end
 arch flagstone
+x 44
+y 13
+end
+arch dungeon_magic
 x 44
 y 14
 end
 arch flagstone
 x 44
+y 14
+end
+arch dungeon_magic
+x 44
+y 15
+end
+arch flagstone
+x 44
 y 15
 end
 arch shop_amulets
 x 44
 y 15
+end
+arch dungeon_magic
+x 44
+y 16
 end
 arch flagstone
 x 44
@@ -18006,6 +18325,10 @@ arch shop_amulets
 x 44
 y 16
 end
+arch dungeon_magic
+x 44
+y 17
+end
 arch flagstone
 x 44
 y 17
@@ -18013,6 +18336,10 @@ end
 arch shop_amulets
 x 44
 y 17
+end
+arch dungeon_magic
+x 44
+y 18
 end
 arch flagstone
 x 44
@@ -18022,6 +18349,10 @@ arch shop_amulets
 x 44
 y 18
 end
+arch dungeon_magic
+x 44
+y 19
+end
 arch flagstone
 x 44
 y 19
@@ -18029,6 +18360,10 @@ end
 arch shop_amulets
 x 44
 y 19
+end
+arch dungeon_magic
+x 44
+y 20
 end
 arch flagstone
 x 44
@@ -18038,6 +18373,10 @@ arch shop_amulets
 x 44
 y 20
 end
+arch dungeon_magic
+x 44
+y 21
+end
 arch flagstone
 x 44
 y 21
@@ -18045,6 +18384,10 @@ end
 arch shop_amulets
 x 44
 y 21
+end
+arch dungeon_magic
+x 44
+y 22
 end
 arch flagstone
 x 44
@@ -18054,6 +18397,10 @@ arch shop_amulets
 x 44
 y 22
 end
+arch dungeon_magic
+x 44
+y 23
+end
 arch flagstone
 x 44
 y 23
@@ -18062,23 +18409,27 @@ arch shop_amulets
 x 44
 y 23
 end
-arch flagstone
-x 44
-y 24
-end
-arch shop_amulets
+arch dungeon_magic
 x 44
 y 24
 end
 arch flagstone
+x 44
+y 24
+end
+arch dungeon_magic
 x 44
 y 25
 end
 arch flagstone
 x 44
+y 25
+end
+arch dungeon_magic
+x 44
 y 26
 end
-arch shop_amulets
+arch flagstone
 x 44
 y 26
 end
@@ -18326,8 +18677,15 @@ arch woodwall_0
 x 44
 y 49
 end
+arch dungeon_magic
+x 45
+end
 arch flagstone
 x 45
+end
+arch dungeon_magic
+x 45
+y 1
 end
 arch flagstone
 x 45
@@ -18337,6 +18695,10 @@ arch shop_scrolls
 x 45
 y 1
 end
+arch dungeon_magic
+x 45
+y 2
+end
 arch flagstone
 x 45
 y 2
@@ -18345,17 +18707,25 @@ arch shop_scrolls
 x 45
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 45
 y 3
 end
 arch flagstone
 x 45
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 45
 y 4
+end
+arch flagstone
+x 45
+y 4
+end
+arch dungeon_magic
+x 45
+y 5
 end
 arch flagstone
 x 45
@@ -18365,6 +18735,10 @@ arch shop_scrolls
 x 45
 y 5
 end
+arch dungeon_magic
+x 45
+y 6
+end
 arch flagstone
 x 45
 y 6
@@ -18372,6 +18746,10 @@ end
 arch shop_scrolls
 x 45
 y 6
+end
+arch dungeon_magic
+x 45
+y 7
 end
 arch flagstone
 x 45
@@ -18381,25 +18759,37 @@ arch shop_scrolls
 x 45
 y 7
 end
-arch flagstone
-x 45
-y 8
-end
-arch shop_scrolls
+arch dungeon_magic
 x 45
 y 8
 end
 arch flagstone
+x 45
+y 8
+end
+arch dungeon_magic
 x 45
 y 9
 end
 arch flagstone
 x 45
+y 9
+end
+arch dungeon_magic
+x 45
+y 10
+end
+arch flagstone
+x 45
 y 10
 end
 arch shop_scrolls
 x 45
 y 10
+end
+arch dungeon_magic
+x 45
+y 11
 end
 arch flagstone
 x 45
@@ -18409,37 +18799,73 @@ arch shop_scrolls
 x 45
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 45
 y 12
 end
 arch flagstone
 x 45
+y 12
+end
+arch dungeon_magic
+x 45
 y 13
 end
 arch flagstone
+x 45
+y 13
+end
+arch dungeon_magic
 x 45
 y 14
 end
 arch flagstone
 x 45
+y 14
+end
+arch dungeon_magic
+x 45
 y 15
 end
 arch flagstone
+x 45
+y 15
+end
+arch dungeon_magic
 x 45
 y 16
 end
 arch flagstone
 x 45
+y 16
+end
+arch dungeon_magic
+x 45
 y 17
 end
 arch flagstone
+x 45
+y 17
+end
+arch dungeon_magic
 x 45
 y 18
 end
 arch flagstone
 x 45
+y 18
+end
+arch dungeon_magic
+x 45
 y 19
+end
+arch flagstone
+x 45
+y 19
+end
+arch dungeon_magic
+x 45
+y 20
 end
 arch flagstone
 x 45
@@ -18449,25 +18875,49 @@ arch woman
 x 45
 y 20
 end
-arch flagstone
+arch dungeon_magic
 x 45
 y 21
 end
 arch flagstone
 x 45
+y 21
+end
+arch dungeon_magic
+x 45
 y 22
 end
 arch flagstone
+x 45
+y 22
+end
+arch dungeon_magic
 x 45
 y 23
 end
 arch flagstone
 x 45
+y 23
+end
+arch dungeon_magic
+x 45
 y 24
 end
 arch flagstone
 x 45
+y 24
+end
+arch dungeon_magic
+x 45
 y 25
+end
+arch flagstone
+x 45
+y 25
+end
+arch dungeon_magic
+x 45
+y 26
 end
 arch flagstone
 x 45
@@ -18702,8 +19152,15 @@ speed 0.500000
 x 45
 y 49
 end
+arch dungeon_magic
+x 46
+end
 arch flagstone
 x 46
+end
+arch dungeon_magic
+x 46
+y 1
 end
 arch flagstone
 x 46
@@ -18713,6 +19170,10 @@ arch shop_scrolls
 x 46
 y 1
 end
+arch dungeon_magic
+x 46
+y 2
+end
 arch flagstone
 x 46
 y 2
@@ -18721,17 +19182,25 @@ arch shop_scrolls
 x 46
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 46
 y 3
 end
 arch flagstone
 x 46
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 46
 y 4
+end
+arch flagstone
+x 46
+y 4
+end
+arch dungeon_magic
+x 46
+y 5
 end
 arch flagstone
 x 46
@@ -18741,6 +19210,10 @@ arch shop_scrolls
 x 46
 y 5
 end
+arch dungeon_magic
+x 46
+y 6
+end
 arch flagstone
 x 46
 y 6
@@ -18748,6 +19221,10 @@ end
 arch shop_scrolls
 x 46
 y 6
+end
+arch dungeon_magic
+x 46
+y 7
 end
 arch flagstone
 x 46
@@ -18757,25 +19234,37 @@ arch shop_scrolls
 x 46
 y 7
 end
-arch flagstone
-x 46
-y 8
-end
-arch shop_scrolls
+arch dungeon_magic
 x 46
 y 8
 end
 arch flagstone
+x 46
+y 8
+end
+arch dungeon_magic
 x 46
 y 9
 end
 arch flagstone
 x 46
+y 9
+end
+arch dungeon_magic
+x 46
+y 10
+end
+arch flagstone
+x 46
 y 10
 end
 arch shop_scrolls
 x 46
 y 10
+end
+arch dungeon_magic
+x 46
+y 11
 end
 arch flagstone
 x 46
@@ -18785,29 +19274,45 @@ arch shop_scrolls
 x 46
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 46
 y 12
 end
 arch flagstone
 x 46
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 46
 y 13
 end
 arch flagstone
+x 46
+y 13
+end
+arch dungeon_magic
 x 46
 y 14
 end
 arch flagstone
 x 46
+y 14
+end
+arch dungeon_magic
+x 46
+y 15
+end
+arch flagstone
+x 46
 y 15
 end
 arch shop_amulets
 x 46
 y 15
+end
+arch dungeon_magic
+x 46
+y 16
 end
 arch flagstone
 x 46
@@ -18817,6 +19322,10 @@ arch shop_amulets
 x 46
 y 16
 end
+arch dungeon_magic
+x 46
+y 17
+end
 arch flagstone
 x 46
 y 17
@@ -18824,6 +19333,10 @@ end
 arch shop_amulets
 x 46
 y 17
+end
+arch dungeon_magic
+x 46
+y 18
 end
 arch flagstone
 x 46
@@ -18833,6 +19346,10 @@ arch shop_amulets
 x 46
 y 18
 end
+arch dungeon_magic
+x 46
+y 19
+end
 arch flagstone
 x 46
 y 19
@@ -18840,6 +19357,10 @@ end
 arch shop_amulets
 x 46
 y 19
+end
+arch dungeon_magic
+x 46
+y 20
 end
 arch flagstone
 x 46
@@ -18849,6 +19370,10 @@ arch shop_amulets
 x 46
 y 20
 end
+arch dungeon_magic
+x 46
+y 21
+end
 arch flagstone
 x 46
 y 21
@@ -18856,6 +19381,10 @@ end
 arch shop_amulets
 x 46
 y 21
+end
+arch dungeon_magic
+x 46
+y 22
 end
 arch flagstone
 x 46
@@ -18865,6 +19394,10 @@ arch shop_amulets
 x 46
 y 22
 end
+arch dungeon_magic
+x 46
+y 23
+end
 arch flagstone
 x 46
 y 23
@@ -18873,23 +19406,27 @@ arch shop_amulets
 x 46
 y 23
 end
-arch flagstone
-x 46
-y 24
-end
-arch shop_amulets
+arch dungeon_magic
 x 46
 y 24
 end
 arch flagstone
+x 46
+y 24
+end
+arch dungeon_magic
 x 46
 y 25
 end
 arch flagstone
 x 46
+y 25
+end
+arch dungeon_magic
+x 46
 y 26
 end
-arch shop_amulets
+arch flagstone
 x 46
 y 26
 end
@@ -19121,108 +19658,215 @@ arch dungeon_magic
 x 46
 y 49
 end
-arch flagstone
+arch dungeon_magic
 x 47
 end
 arch flagstone
+x 47
+end
+arch dungeon_magic
 x 47
 y 1
 end
 arch flagstone
 x 47
+y 1
+end
+arch dungeon_magic
+x 47
 y 2
 end
 arch flagstone
+x 47
+y 2
+end
+arch dungeon_magic
 x 47
 y 3
 end
 arch flagstone
 x 47
+y 3
+end
+arch dungeon_magic
+x 47
 y 4
 end
 arch flagstone
+x 47
+y 4
+end
+arch dungeon_magic
 x 47
 y 5
 end
 arch flagstone
 x 47
+y 5
+end
+arch dungeon_magic
+x 47
 y 6
 end
 arch flagstone
+x 47
+y 6
+end
+arch dungeon_magic
 x 47
 y 7
 end
 arch flagstone
 x 47
+y 7
+end
+arch dungeon_magic
+x 47
 y 8
 end
 arch flagstone
+x 47
+y 8
+end
+arch dungeon_magic
 x 47
 y 9
 end
 arch flagstone
 x 47
+y 9
+end
+arch dungeon_magic
+x 47
 y 10
 end
 arch flagstone
+x 47
+y 10
+end
+arch dungeon_magic
 x 47
 y 11
 end
 arch flagstone
 x 47
+y 11
+end
+arch dungeon_magic
+x 47
 y 12
 end
 arch flagstone
+x 47
+y 12
+end
+arch dungeon_magic
 x 47
 y 13
 end
 arch flagstone
 x 47
+y 13
+end
+arch dungeon_magic
+x 47
 y 14
 end
 arch flagstone
+x 47
+y 14
+end
+arch dungeon_magic
 x 47
 y 15
 end
 arch flagstone
 x 47
+y 15
+end
+arch dungeon_magic
+x 47
 y 16
 end
 arch flagstone
+x 47
+y 16
+end
+arch dungeon_magic
 x 47
 y 17
 end
 arch flagstone
 x 47
+y 17
+end
+arch dungeon_magic
+x 47
 y 18
 end
 arch flagstone
+x 47
+y 18
+end
+arch dungeon_magic
 x 47
 y 19
 end
 arch flagstone
 x 47
+y 19
+end
+arch dungeon_magic
+x 47
 y 20
 end
 arch flagstone
+x 47
+y 20
+end
+arch dungeon_magic
 x 47
 y 21
 end
 arch flagstone
 x 47
+y 21
+end
+arch dungeon_magic
+x 47
 y 22
 end
 arch flagstone
+x 47
+y 22
+end
+arch dungeon_magic
 x 47
 y 23
 end
 arch flagstone
 x 47
+y 23
+end
+arch dungeon_magic
+x 47
 y 24
 end
 arch flagstone
 x 47
+y 24
+end
+arch dungeon_magic
+x 47
 y 25
+end
+arch flagstone
+x 47
+y 25
+end
+arch dungeon_magic
+x 47
+y 26
 end
 arch flagstone
 x 47
@@ -19470,8 +20114,15 @@ name_pl floor
 x 47
 y 49
 end
+arch dungeon_magic
+x 48
+end
 arch flagstone
 x 48
+end
+arch dungeon_magic
+x 48
+y 1
 end
 arch flagstone
 x 48
@@ -19481,6 +20132,10 @@ arch shop_scrolls
 x 48
 y 1
 end
+arch dungeon_magic
+x 48
+y 2
+end
 arch flagstone
 x 48
 y 2
@@ -19489,17 +20144,25 @@ arch shop_scrolls
 x 48
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 48
 y 3
 end
 arch flagstone
 x 48
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 48
 y 4
+end
+arch flagstone
+x 48
+y 4
+end
+arch dungeon_magic
+x 48
+y 5
 end
 arch flagstone
 x 48
@@ -19509,6 +20172,10 @@ arch shop_scrolls
 x 48
 y 5
 end
+arch dungeon_magic
+x 48
+y 6
+end
 arch flagstone
 x 48
 y 6
@@ -19516,6 +20183,10 @@ end
 arch shop_scrolls
 x 48
 y 6
+end
+arch dungeon_magic
+x 48
+y 7
 end
 arch flagstone
 x 48
@@ -19525,25 +20196,37 @@ arch shop_scrolls
 x 48
 y 7
 end
-arch flagstone
-x 48
-y 8
-end
-arch shop_scrolls
+arch dungeon_magic
 x 48
 y 8
 end
 arch flagstone
+x 48
+y 8
+end
+arch dungeon_magic
 x 48
 y 9
 end
 arch flagstone
 x 48
+y 9
+end
+arch dungeon_magic
+x 48
+y 10
+end
+arch flagstone
+x 48
 y 10
 end
 arch shop_scrolls
 x 48
 y 10
+end
+arch dungeon_magic
+x 48
+y 11
 end
 arch flagstone
 x 48
@@ -19553,29 +20236,45 @@ arch shop_scrolls
 x 48
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 48
 y 12
 end
 arch flagstone
 x 48
-y 13
+y 12
 end
-arch shop_amulets
+arch dungeon_magic
 x 48
 y 13
 end
 arch flagstone
+x 48
+y 13
+end
+arch dungeon_magic
 x 48
 y 14
 end
 arch flagstone
 x 48
+y 14
+end
+arch dungeon_magic
+x 48
+y 15
+end
+arch flagstone
+x 48
 y 15
 end
 arch shop_amulets
 x 48
 y 15
+end
+arch dungeon_magic
+x 48
+y 16
 end
 arch flagstone
 x 48
@@ -19585,6 +20284,10 @@ arch shop_amulets
 x 48
 y 16
 end
+arch dungeon_magic
+x 48
+y 17
+end
 arch flagstone
 x 48
 y 17
@@ -19592,6 +20295,10 @@ end
 arch shop_amulets
 x 48
 y 17
+end
+arch dungeon_magic
+x 48
+y 18
 end
 arch flagstone
 x 48
@@ -19601,6 +20308,10 @@ arch shop_amulets
 x 48
 y 18
 end
+arch dungeon_magic
+x 48
+y 19
+end
 arch flagstone
 x 48
 y 19
@@ -19608,6 +20319,10 @@ end
 arch shop_amulets
 x 48
 y 19
+end
+arch dungeon_magic
+x 48
+y 20
 end
 arch flagstone
 x 48
@@ -19617,6 +20332,10 @@ arch shop_amulets
 x 48
 y 20
 end
+arch dungeon_magic
+x 48
+y 21
+end
 arch flagstone
 x 48
 y 21
@@ -19624,6 +20343,10 @@ end
 arch shop_amulets
 x 48
 y 21
+end
+arch dungeon_magic
+x 48
+y 22
 end
 arch flagstone
 x 48
@@ -19633,6 +20356,10 @@ arch shop_amulets
 x 48
 y 22
 end
+arch dungeon_magic
+x 48
+y 23
+end
 arch flagstone
 x 48
 y 23
@@ -19641,17 +20368,25 @@ arch shop_amulets
 x 48
 y 23
 end
-arch flagstone
+arch dungeon_magic
 x 48
 y 24
 end
 arch flagstone
 x 48
-y 25
+y 24
 end
-arch shop_amulets
+arch dungeon_magic
 x 48
 y 25
+end
+arch flagstone
+x 48
+y 25
+end
+arch dungeon_magic
+x 48
+y 26
 end
 arch flagstone
 x 48
@@ -19886,8 +20621,15 @@ name_pl floor
 x 48
 y 49
 end
+arch dungeon_magic
+x 49
+end
 arch flagstone
 x 49
+end
+arch dungeon_magic
+x 49
+y 1
 end
 arch flagstone
 x 49
@@ -19897,6 +20639,10 @@ arch shop_scrolls
 x 49
 y 1
 end
+arch dungeon_magic
+x 49
+y 2
+end
 arch flagstone
 x 49
 y 2
@@ -19905,17 +20651,25 @@ arch shop_scrolls
 x 49
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 49
 y 3
 end
 arch flagstone
 x 49
-y 4
+y 3
 end
-arch shop_scrolls
+arch dungeon_magic
 x 49
 y 4
+end
+arch flagstone
+x 49
+y 4
+end
+arch dungeon_magic
+x 49
+y 5
 end
 arch flagstone
 x 49
@@ -19925,6 +20679,10 @@ arch shop_scrolls
 x 49
 y 5
 end
+arch dungeon_magic
+x 49
+y 6
+end
 arch flagstone
 x 49
 y 6
@@ -19932,6 +20690,10 @@ end
 arch shop_scrolls
 x 49
 y 6
+end
+arch dungeon_magic
+x 49
+y 7
 end
 arch flagstone
 x 49
@@ -19941,13 +20703,17 @@ arch shop_scrolls
 x 49
 y 7
 end
+arch dungeon_magic
+x 49
+y 8
+end
 arch flagstone
 x 49
 y 8
 end
-arch shop_scrolls
+arch dungeon_magic
 x 49
-y 8
+y 9
 end
 arch flagstone
 x 49
@@ -19957,6 +20723,10 @@ arch man
 x 49
 y 9
 end
+arch dungeon_magic
+x 49
+y 10
+end
 arch flagstone
 x 49
 y 10
@@ -19964,6 +20734,10 @@ end
 arch shop_scrolls
 x 49
 y 10
+end
+arch dungeon_magic
+x 49
+y 11
 end
 arch flagstone
 x 49
@@ -19973,61 +20747,121 @@ arch shop_scrolls
 x 49
 y 11
 end
-arch flagstone
+arch dungeon_magic
 x 49
 y 12
 end
 arch flagstone
 x 49
+y 12
+end
+arch dungeon_magic
+x 49
 y 13
 end
 arch flagstone
+x 49
+y 13
+end
+arch dungeon_magic
 x 49
 y 14
 end
 arch flagstone
 x 49
+y 14
+end
+arch dungeon_magic
+x 49
 y 15
 end
 arch flagstone
+x 49
+y 15
+end
+arch dungeon_magic
 x 49
 y 16
 end
 arch flagstone
 x 49
+y 16
+end
+arch dungeon_magic
+x 49
 y 17
 end
 arch flagstone
+x 49
+y 17
+end
+arch dungeon_magic
 x 49
 y 18
 end
 arch flagstone
 x 49
+y 18
+end
+arch dungeon_magic
+x 49
 y 19
 end
 arch flagstone
+x 49
+y 19
+end
+arch dungeon_magic
 x 49
 y 20
 end
 arch flagstone
 x 49
+y 20
+end
+arch dungeon_magic
+x 49
 y 21
 end
 arch flagstone
+x 49
+y 21
+end
+arch dungeon_magic
 x 49
 y 22
 end
 arch flagstone
 x 49
+y 22
+end
+arch dungeon_magic
+x 49
 y 23
 end
 arch flagstone
+x 49
+y 23
+end
+arch dungeon_magic
 x 49
 y 24
 end
 arch flagstone
 x 49
+y 24
+end
+arch dungeon_magic
+x 49
 y 25
+end
+arch flagstone
+x 49
+y 25
+end
+arch dungeon_magic
+x 49
+y 26
 end
 arch flagstone
 x 49
