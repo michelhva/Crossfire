@@ -1,6 +1,6 @@
 arch map
-region scorn
 name world_104_115
+region scorn
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -14371,8 +14371,8 @@ end
 arch barn
 name Training Center
 slaying /scorn/crow/train/train
-hp 5
-sp 18
+hp 4
+sp 17
 x 48
 y 24
 end
