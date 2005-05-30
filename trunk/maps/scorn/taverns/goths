@@ -300,6 +300,43 @@ arch chair_1.4
 x 1
 y 10
 end
+arch merchant
+name Bragh O'Leary
+msg
+match Bragh|bragh|O'Leary|o'leary
+Aye, I be Bragh O'Leary former Owner of the
+Scorn Training Center. You be some whelp
+here to gloat over me loss of me Trainin' Center?
+Away wit' ye! BARTENDER! Another Booze! (hic)
+match Train|train|Center|center
+You liked me Trainin' Center did ye? Well good
+for ye! Some bleedin' Consortium bought it from
+the Bank afore I could raise the platinum to pay
+off the foreclosure. Buncha zombie lovers. (hic)
+match Owner|owner
+Aye. I were the owner of the Trainin' Center. I
+tol' the bloody Bank I'd gi' 'em their bloody
+money. Bleedin' slime foreclosed on me.
+match Consortium|consortium
+The consortamum ... constortanum ... BLAST! I
+dinno who they be. I just hears they broke up
+and Moved me Trainin' Center to other parts
+o' the world. The slime! (hic)
+match Move|move
+Well, young'un, I dinna know the details but I
+hears the high level Trainin' Centers are in the
+wilderness near Santo Dominion, Darcap, Brest
+'n Navar. But th' term "near" is used a bit
+loosely here ye unnershtan'? (hic) I dinna know
+what the bloody fools did wit' me low level
+Trainin' Centers.
+match *
+(hic) Leave me be. Kin ye no see I be drinkin'!?
+endmsg
+friendly 1
+x 1
+y 10
+end
 arch woodfloor
 x 1
 y 11
@@ -307,6 +344,14 @@ end
 arch woodfloor
 x 1
 y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
 end
 arch magic_ear
 msg
@@ -324,7 +369,7 @@ Crystal.  The Temple is in a Dark Forest
 just north of the Great East Road.
 endmsg
 x 1
-y 12
+y 14
 end
 arch magic_ear
 msg
@@ -345,7 +390,7 @@ of Scorn.  It's hard going to get
 there.
 endmsg
 x 1
-y 12
+y 14
 end
 arch magic_ear
 msg
@@ -365,7 +410,7 @@ can get to if you take passage on
 a pirate ship.
 endmsg
 x 1
-y 12
+y 14
 end
 arch wizard
 face wizard.151
@@ -398,14 +443,6 @@ resist_magic 30
 monster 1
 friendly 1
 can_cast_spell 1
-x 1
-y 12
-end
-arch woodfloor
-x 1
-y 13
-end
-arch woodfloor
 x 1
 y 14
 end
@@ -701,11 +738,20 @@ arch woodfloor
 x 2
 y 9
 end
+arch chair_1.1
+x 2
+y 9
+end
 arch woodfloor
 x 2
 y 10
 end
 arch table_3
+x 2
+y 10
+end
+arch booze
+no_pick 1
 x 2
 y 10
 end
@@ -713,11 +759,11 @@ arch woodfloor
 x 2
 y 11
 end
-arch woodfloor
+arch chair_1.3
 x 2
-y 12
+y 11
 end
-arch table_3
+arch woodfloor
 x 2
 y 12
 end
@@ -726,6 +772,10 @@ x 2
 y 13
 end
 arch woodfloor
+x 2
+y 14
+end
+arch table_3
 x 2
 y 14
 end
@@ -921,11 +971,11 @@ arch woodfloor
 x 3
 y 9
 end
-arch chair_1.2
-x 3
-y 9
-end
 arch woodfloor
+x 3
+y 10
+end
+arch chair_1.2
 x 3
 y 10
 end
@@ -937,15 +987,15 @@ arch woodfloor
 x 3
 y 12
 end
-arch chair_1.2
-x 3
-y 12
-end
 arch woodfloor
 x 3
 y 13
 end
 arch woodfloor
+x 3
+y 14
+end
+arch chair_1.2
 x 3
 y 14
 end
