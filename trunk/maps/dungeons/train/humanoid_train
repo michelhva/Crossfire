@@ -1,11 +1,14 @@
 arch map
 name humanoid_train
+region wilderness
 msg
-Creator: CF Java Map Editor
+Creator: Gene Alexander
+Editor: CF Java Map Editor
 Date:    5/30/2005
 endmsg
 width 21
 height 21
+outdoor 1
 end
 arch mountain
 elevation 5223
