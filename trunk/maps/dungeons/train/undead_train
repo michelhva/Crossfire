@@ -8,6 +8,8 @@ Date:    5/30/2005
 endmsg
 width 21
 height 21
+enter_x 10
+enter_y 17
 outdoor 1
 end
 arch woods_3
@@ -1820,8 +1822,11 @@ elevation 1785
 x 9
 y 12
 end
-arch lich_dust
-no_pick 1
+arch cwall_0
+name lich dust
+face pix_dust.111
+blocksview 0
+no_pass 0
 x 9
 y 12
 end
@@ -1835,9 +1840,14 @@ x 9
 y 13
 end
 arch altar
+name Drop lich dust
 slaying lich dust
 food 1
 connected 1
+x 9
+y 13
+end
+arch light4
 x 9
 y 13
 end
@@ -2053,10 +2063,11 @@ elevation 1785
 x 10
 y 12
 end
-arch ectoplasm
+arch cwall_0
 name Spectre's ectoplasm
-name_pl spectre ectoplasms
-no_pick 1
+face ectoplasm.111
+blocksview 0
+no_pass 0
 x 10
 y 12
 end
@@ -2070,9 +2081,14 @@ x 10
 y 13
 end
 arch altar
+name Drop Spectre's ectoplasm
 slaying spectre's ectoplasm
 food 1
 connected 2
+x 10
+y 13
+end
+arch light4
 x 10
 y 13
 end
@@ -2283,8 +2299,11 @@ elevation 1785
 x 11
 y 12
 end
-arch skull_tooth
-no_pick 1
+arch cwall_0
+name Skull's tooth
+face tooth.111
+blocksview 0
+no_pass 0
 x 11
 y 12
 end
@@ -2298,9 +2317,14 @@ x 11
 y 13
 end
 arch altar
+name Drop Skull's tooth
 slaying skull's tooth
 food 1
 connected 3
+x 11
+y 13
+end
+arch light4
 x 11
 y 13
 end
