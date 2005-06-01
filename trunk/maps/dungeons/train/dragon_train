@@ -102,8 +102,16 @@ elevation 452
 x 1
 y 1
 end
+arch dwall_2_2_2
+x 1
+y 1
+end
 arch grass
 elevation 452
+x 1
+y 2
+end
+arch dwall_2_1_1
 x 1
 y 2
 end
@@ -112,8 +120,16 @@ elevation 452
 x 1
 y 3
 end
+arch dwall_2_1_1
+x 1
+y 3
+end
 arch grass
 elevation 452
+x 1
+y 4
+end
+arch dwall_2_1_1
 x 1
 y 4
 end
@@ -122,8 +138,16 @@ elevation 452
 x 1
 y 5
 end
+arch dwall_2_1_1
+x 1
+y 5
+end
 arch grass
 elevation 452
+x 1
+y 6
+end
+arch dwall_2_1_1
 x 1
 y 6
 end
@@ -132,8 +156,16 @@ elevation 452
 x 1
 y 7
 end
+arch dwall_2_1_1
+x 1
+y 7
+end
 arch grass
 elevation 452
+x 1
+y 8
+end
+arch dwall_2_1_1
 x 1
 y 8
 end
@@ -142,8 +174,16 @@ elevation 452
 x 1
 y 9
 end
+arch dwall_2_1_1
+x 1
+y 9
+end
 arch grass
 elevation 452
+x 1
+y 10
+end
+arch dwall_2_1_1
 x 1
 y 10
 end
@@ -152,8 +192,16 @@ elevation 452
 x 1
 y 11
 end
+arch dwall_2_1_1
+x 1
+y 11
+end
 arch grass
 elevation 452
+x 1
+y 12
+end
+arch dwall_2_1_1
 x 1
 y 12
 end
@@ -162,8 +210,16 @@ elevation 452
 x 1
 y 13
 end
+arch dwall_2_1_1
+x 1
+y 13
+end
 arch grass
 elevation 452
+x 1
+y 14
+end
+arch dwall_2_1_1
 x 1
 y 14
 end
@@ -172,8 +228,16 @@ elevation 452
 x 1
 y 15
 end
+arch dwall_2_1_1
+x 1
+y 15
+end
 arch grass
 elevation 452
+x 1
+y 16
+end
+arch dwall_2_1_1
 x 1
 y 16
 end
@@ -182,13 +246,25 @@ elevation 452
 x 1
 y 17
 end
+arch dwall_2_1_1
+x 1
+y 17
+end
 arch grass
 elevation 452
 x 1
 y 18
 end
+arch dwall_2_1_1
+x 1
+y 18
+end
 arch grass
 elevation 452
+x 1
+y 19
+end
+arch dwall_2_2_1
 x 1
 y 19
 end
@@ -203,6 +279,10 @@ x 2
 end
 arch grass
 elevation 452
+x 2
+y 1
+end
+arch dwall_2_1_2
 x 2
 y 1
 end
@@ -500,6 +580,10 @@ elevation 452
 x 2
 y 19
 end
+arch dwall_2_1_2
+x 2
+y 19
+end
 arch grass
 elevation 452
 x 2
@@ -514,6 +598,10 @@ elevation 452
 x 3
 y 1
 end
+arch dwall_2_1_2
+x 3
+y 1
+end
 arch invis_exit
 msg
 An unseen force moves you across the world.
@@ -688,6 +776,10 @@ elevation 452
 x 3
 y 19
 end
+arch dwall_2_1_2
+x 3
+y 19
+end
 arch grass
 elevation 452
 x 3
@@ -699,6 +791,10 @@ x 4
 end
 arch grass
 elevation 452
+x 4
+y 1
+end
+arch dwall_2_1_2
 x 4
 y 1
 end
@@ -876,6 +972,10 @@ elevation 452
 x 4
 y 19
 end
+arch dwall_2_1_2
+x 4
+y 19
+end
 arch grass
 elevation 452
 x 4
@@ -887,6 +987,10 @@ x 5
 end
 arch grass
 elevation 452
+x 5
+y 1
+end
+arch dwall_2_1_2
 x 5
 y 1
 end
@@ -1061,6 +1165,10 @@ y 18
 end
 arch grass
 elevation 452
+x 5
+y 19
+end
+arch dwall_2_1_2
 x 5
 y 19
 end
@@ -1075,6 +1183,10 @@ x 6
 end
 arch grass
 elevation 452
+x 6
+y 1
+end
+arch dwall_2_1_2
 x 6
 y 1
 end
@@ -1257,6 +1369,10 @@ y 18
 end
 arch grass
 elevation 452
+x 6
+y 19
+end
+arch dwall_2_1_2
 x 6
 y 19
 end
@@ -1271,6 +1387,10 @@ x 7
 end
 arch grass
 elevation 452
+x 7
+y 1
+end
+arch dwall_2_1_2
 x 7
 y 1
 end
@@ -1469,6 +1589,10 @@ elevation 452
 x 7
 y 19
 end
+arch dwall_2_1_2
+x 7
+y 19
+end
 arch grass
 elevation 452
 x 7
@@ -1480,6 +1604,10 @@ x 8
 end
 arch grass
 elevation 452
+x 8
+y 1
+end
+arch dwall_2_1_2
 x 8
 y 1
 end
@@ -1687,8 +1815,16 @@ elevation 452
 x 8
 y 19
 end
+arch dwall_1_3
+x 8
+y 19
+end
 arch grass
 elevation 452
+x 8
+y 20
+end
+arch dwall_0
 x 8
 y 20
 end
@@ -1698,6 +1834,10 @@ x 9
 end
 arch grass
 elevation 452
+x 9
+y 1
+end
+arch dwall_2_1_2
 x 9
 y 1
 end
@@ -1830,11 +1970,11 @@ elevation 452
 x 9
 y 12
 end
-arch dragon_steak
+arch dwall_0
 name Ancient dragon's steak
-material 256
-no_pick 1
-food 0
+face drag_steak.111
+blocksview 0
+no_pass 0
 x 9
 y 12
 end
@@ -1848,6 +1988,7 @@ x 9
 y 13
 end
 arch altar
+name Drop Ancient dragon's steak
 slaying Ancient dragon's steak
 food 1
 connected 1
@@ -1917,12 +2058,20 @@ elevation 452
 x 9
 y 20
 end
+arch dwall_0
+x 9
+y 20
+end
 arch grass
 elevation 452
 x 10
 end
 arch grass
 elevation 452
+x 10
+y 1
+end
+arch dwall_2_1_2
 x 10
 y 1
 end
@@ -2062,6 +2211,7 @@ x 10
 y 11
 end
 arch dungeon_magic
+elevation 452
 x 10
 y 12
 end
@@ -2070,11 +2220,11 @@ elevation 452
 x 10
 y 12
 end
-arch dragon_steak
+arch dwall_0
 name ancient red dragon's steak
-material 256
-no_pick 1
-food 0
+face drag_steak.111
+blocksview 0
+no_pass 0
 x 10
 y 12
 end
@@ -2088,6 +2238,7 @@ x 10
 y 13
 end
 arch altar
+name Drop ancient red dragon's steak
 slaying ancient red dragon's steak
 food 1
 connected 2
@@ -2168,12 +2319,20 @@ elevation 452
 x 10
 y 20
 end
+arch dwall_0
+x 10
+y 20
+end
 arch grass
 elevation 452
 x 11
 end
 arch grass
 elevation 452
+x 11
+y 1
+end
+arch dwall_2_1_2
 x 11
 y 1
 end
@@ -2298,6 +2457,7 @@ x 11
 y 11
 end
 arch dungeon_magic
+elevation 452
 x 11
 y 12
 end
@@ -2306,11 +2466,11 @@ elevation 452
 x 11
 y 12
 end
-arch dragon_steak
+arch dwall_0
 name Ancient Blue Dragon's steak
-material 256
-no_pick 1
-food 0
+face drag_steak.111
+blocksview 0
+no_pass 0
 x 11
 y 12
 end
@@ -2324,6 +2484,7 @@ x 11
 y 13
 end
 arch altar
+name Drop Ancient Blue Dragon's steak
 slaying Ancient Blue Dragon's steak
 food 1
 connected 3
@@ -2394,12 +2555,20 @@ elevation 452
 x 11
 y 20
 end
+arch dwall_0
+x 11
+y 20
+end
 arch grass
 elevation 452
 x 12
 end
 arch grass
 elevation 452
+x 12
+y 1
+end
+arch dwall_2_1_2
 x 12
 y 1
 end
@@ -2607,8 +2776,16 @@ elevation 452
 x 12
 y 19
 end
+arch dwall_1_4
+x 12
+y 19
+end
 arch grass
 elevation 452
+x 12
+y 20
+end
+arch dwall_0
 x 12
 y 20
 end
@@ -2618,6 +2795,10 @@ x 13
 end
 arch grass
 elevation 452
+x 13
+y 1
+end
+arch dwall_2_1_2
 x 13
 y 1
 end
@@ -2816,6 +2997,10 @@ elevation 452
 x 13
 y 19
 end
+arch dwall_2_1_2
+x 13
+y 19
+end
 arch grass
 elevation 452
 x 13
@@ -2830,6 +3015,10 @@ elevation 452
 x 14
 y 1
 end
+arch dwall_2_1_2
+x 14
+y 1
+end
 arch invis_exit
 msg
 An unseen force moves you across the world.
@@ -3012,6 +3201,10 @@ elevation 452
 x 14
 y 19
 end
+arch dwall_2_1_2
+x 14
+y 19
+end
 arch grass
 elevation 452
 x 14
@@ -3026,6 +3219,10 @@ elevation 452
 x 15
 y 1
 end
+arch dwall_2_1_2
+x 15
+y 1
+end
 arch invis_exit
 msg
 An unseen force moves you across the world.
@@ -3200,6 +3397,10 @@ elevation 452
 x 15
 y 19
 end
+arch dwall_2_1_2
+x 15
+y 19
+end
 arch grass
 elevation 452
 x 15
@@ -3211,6 +3412,10 @@ x 16
 end
 arch grass
 elevation 452
+x 16
+y 1
+end
+arch dwall_2_1_2
 x 16
 y 1
 end
@@ -3388,6 +3593,10 @@ elevation 452
 x 16
 y 19
 end
+arch dwall_2_1_2
+x 16
+y 19
+end
 arch grass
 elevation 452
 x 16
@@ -3402,6 +3611,10 @@ elevation 452
 x 17
 y 1
 end
+arch dwall_2_1_2
+x 17
+y 1
+end
 arch invis_exit
 msg
 An unseen force moves you across the world.
@@ -3576,6 +3789,10 @@ elevation 452
 x 17
 y 19
 end
+arch dwall_2_1_2
+x 17
+y 19
+end
 arch grass
 elevation 452
 x 17
@@ -3587,6 +3804,10 @@ x 18
 end
 arch grass
 elevation 452
+x 18
+y 1
+end
+arch dwall_2_1_2
 x 18
 y 1
 end
@@ -3884,6 +4105,10 @@ elevation 452
 x 18
 y 19
 end
+arch dwall_2_1_2
+x 18
+y 19
+end
 arch grass
 elevation 452
 x 18
@@ -3898,8 +4123,16 @@ elevation 452
 x 19
 y 1
 end
+arch dwall_2_2_3
+x 19
+y 1
+end
 arch grass
 elevation 452
+x 19
+y 2
+end
+arch dwall_2_1_1
 x 19
 y 2
 end
@@ -3908,8 +4141,16 @@ elevation 452
 x 19
 y 3
 end
+arch dwall_2_1_1
+x 19
+y 3
+end
 arch grass
 elevation 452
+x 19
+y 4
+end
+arch dwall_2_1_1
 x 19
 y 4
 end
@@ -3918,8 +4159,16 @@ elevation 452
 x 19
 y 5
 end
+arch dwall_2_1_1
+x 19
+y 5
+end
 arch grass
 elevation 452
+x 19
+y 6
+end
+arch dwall_2_1_1
 x 19
 y 6
 end
@@ -3928,8 +4177,16 @@ elevation 452
 x 19
 y 7
 end
+arch dwall_2_1_1
+x 19
+y 7
+end
 arch grass
 elevation 452
+x 19
+y 8
+end
+arch dwall_2_1_1
 x 19
 y 8
 end
@@ -3938,8 +4195,16 @@ elevation 452
 x 19
 y 9
 end
+arch dwall_2_1_1
+x 19
+y 9
+end
 arch grass
 elevation 452
+x 19
+y 10
+end
+arch dwall_2_1_1
 x 19
 y 10
 end
@@ -3948,8 +4213,16 @@ elevation 452
 x 19
 y 11
 end
+arch dwall_2_1_1
+x 19
+y 11
+end
 arch grass
 elevation 452
+x 19
+y 12
+end
+arch dwall_2_1_1
 x 19
 y 12
 end
@@ -3958,8 +4231,16 @@ elevation 452
 x 19
 y 13
 end
+arch dwall_2_1_1
+x 19
+y 13
+end
 arch grass
 elevation 452
+x 19
+y 14
+end
+arch dwall_2_1_1
 x 19
 y 14
 end
@@ -3968,8 +4249,16 @@ elevation 452
 x 19
 y 15
 end
+arch dwall_2_1_1
+x 19
+y 15
+end
 arch grass
 elevation 452
+x 19
+y 16
+end
+arch dwall_2_1_1
 x 19
 y 16
 end
@@ -3978,13 +4267,25 @@ elevation 452
 x 19
 y 17
 end
+arch dwall_2_1_1
+x 19
+y 17
+end
 arch grass
 elevation 452
 x 19
 y 18
 end
+arch dwall_2_1_1
+x 19
+y 18
+end
 arch grass
 elevation 452
+x 19
+y 19
+end
+arch dwall_2_2_4
 x 19
 y 19
 end
