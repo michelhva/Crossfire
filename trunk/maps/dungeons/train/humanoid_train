@@ -8,6 +8,8 @@ Date:    5/30/2005
 endmsg
 width 21
 height 21
+enter_x 10
+enter_y 17
 outdoor 1
 end
 arch mountain
@@ -1923,9 +1925,14 @@ x 9
 y 13
 end
 arch altar
+name Drop Bonecrusher
 slaying bonecrusher
 food 1
 connected 1
+x 9
+y 13
+end
+arch light4
 x 9
 y 13
 end
@@ -2158,9 +2165,14 @@ x 10
 y 13
 end
 arch altar
+name Drop Firestar
 slaying firestar
 food 1
 connected 2
+x 10
+y 13
+end
+arch light4
 x 10
 y 13
 end
@@ -2388,9 +2400,14 @@ x 11
 y 13
 end
 arch altar
+name Drop Demonspawn Shield
 slaying demonspawn shield
 food 1
 connected 3
+x 11
+y 13
+end
+arch light4
 x 11
 y 13
 end

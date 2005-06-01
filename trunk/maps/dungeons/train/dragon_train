@@ -8,6 +8,8 @@ Date:    5/30/2005
 endmsg
 width 21
 height 21
+enter_x 10
+enter_y 17
 outdoor 1
 end
 arch grass
@@ -1995,6 +1997,10 @@ connected 1
 x 9
 y 13
 end
+arch light4
+x 9
+y 13
+end
 arch dungeon_magic
 x 9
 y 14
@@ -2245,6 +2251,10 @@ connected 2
 x 10
 y 13
 end
+arch light4
+x 10
+y 13
+end
 arch dungeon_magic
 x 10
 y 14
@@ -2489,6 +2499,10 @@ slaying Ancient Blue Dragon's steak
 food 1
 connected 3
 elevation 1785
+x 11
+y 13
+end
+arch light4
 x 11
 y 13
 end
