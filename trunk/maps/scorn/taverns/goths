@@ -303,26 +303,26 @@ end
 arch merchant
 name Bragh O'Leary
 msg
-match Bragh|bragh|O'Leary|o'leary
+@match Bragh|bragh|O'Leary|o'leary
 Aye, I be Bragh O'Leary former Owner of the
 Scorn Training Center. You be some whelp
 here to gloat over me loss of me Trainin' Center?
 Away wit' ye! BARTENDER! Another Booze! (hic)
-match Train|train|Center|center
+@match Train|train|Center|center
 You liked me Trainin' Center did ye? Well good
 for ye! Some bleedin' Consortium bought it from
 the Bank afore I could raise the platinum to pay
 off the foreclosure. Buncha zombie lovers. (hic)
-match Owner|owner
+@match Owner|owner
 Aye. I were the owner of the Trainin' Center. I
 tol' the bloody Bank I'd gi' 'em their bloody
 money. Bleedin' slime foreclosed on me.
-match Consortium|consortium
+@match Consortium|consortium
 The consortamum ... constortanum ... BLAST! I
 dinno who they be. I just hears they broke up
 and Moved me Trainin' Center to other parts
 o' the world. The slime! (hic)
-match Move|move
+@match Move|move
 Well, young'un, I dinna know the details but I
 hears the high level Trainin' Centers are in the
 wilderness near Santo Dominion, Darcap, Brest
@@ -330,7 +330,7 @@ wilderness near Santo Dominion, Darcap, Brest
 loosely here ye unnershtan'? (hic) I dinna know
 what the bloody fools did wit' me low level
 Trainin' Centers.
-match *
+@match *
 (hic) Leave me be. Kin ye no see I be drinkin'!?
 endmsg
 friendly 1
