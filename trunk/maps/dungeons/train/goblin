@@ -1428,7 +1428,15 @@ arch blocked
 x 17
 y 13
 end
+arch swall_1_1
+x 17
+y 13
+end
 arch blocked
+x 17
+y 14
+end
+arch swall_2_1_1
 x 17
 y 14
 end
@@ -1436,18 +1444,35 @@ arch blocked
 x 17
 y 15
 end
+arch swall_2_1_1
+x 17
+y 15
+end
 arch blocked
+x 17
+y 16
+end
+arch swall_1_2
 x 17
 y 16
 end
 arch magic_mouth
 msg
-You have roughly 30 minutes to train
-here. Following that time the Goblins
-will have a meeting to attend and will
-be unavailable a while.
+You have roughly 30 to 45 minutes to
+train here. Following that time the
+Goblins will have a meeting to attend
+and will be unavailable a while.
 endmsg
 connected 777
+food 1
+x 18
+end
+arch magic_mouth
+msg
+TRAINING PERIOD HAS ENDED.
+endmsg
+connected 666
+food 1
 x 18
 end
 arch blocked
@@ -1534,7 +1559,13 @@ arch dwall_2_2_1
 x 18
 y 13
 end
-arch blocked
+arch spikes_moving
+invisible 1
+x 18
+y 14
+end
+arch food
+invisible 1
 x 18
 y 14
 end
@@ -1546,11 +1577,6 @@ end
 arch altar
 food 1
 connected 666
-x 18
-y 16
-end
-arch spikes_open
-connected 777
 x 18
 y 16
 end
@@ -1630,23 +1656,17 @@ arch blocked
 x 19
 y 14
 end
-arch blocked
+arch swall_1_1
+x 19
+y 14
+end
+arch swall_2_1_1
 x 19
 y 15
 end
-arch blocked
+arch swall_1_2
 x 19
 y 16
-end
-arch teleporter
-hp 18
-sp 15
-connected 777
-speed 0.0
-x 20
-end
-arch food
-x 20
 end
 arch blocked
 x 20
@@ -1782,35 +1802,11 @@ arch blocked
 x 21
 y 1
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 1
-end
 arch blocked
 x 21
 y 2
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 2
-end
 arch blocked
-x 21
-y 3
-end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
 x 21
 y 3
 end
@@ -1830,35 +1826,11 @@ arch blocked
 x 21
 y 5
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 5
-end
 arch blocked
 x 21
 y 6
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 6
-end
 arch blocked
-x 21
-y 7
-end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
 x 21
 y 7
 end
@@ -1878,35 +1850,11 @@ arch blocked
 x 21
 y 9
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 9
-end
 arch blocked
 x 21
 y 10
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 10
-end
 arch blocked
-x 21
-y 11
-end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
 x 21
 y 11
 end
@@ -1926,35 +1874,11 @@ arch blocked
 x 21
 y 13
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 13
-end
 arch blocked
 x 21
 y 14
 end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
-x 21
-y 14
-end
 arch blocked
-x 21
-y 15
-end
-arch firewall_3
-invisible 1
-dam 58
-level 100
-speed 0.5
 x 21
 y 15
 end
