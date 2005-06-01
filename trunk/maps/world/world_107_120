@@ -102,6 +102,9 @@ arch woods_3
 elevation 2298
 y 21
 end
+arch dirtroad_1_4
+y 21
+end
 arch hills
 elevation 4223
 y 22
@@ -320,6 +323,10 @@ y 20
 end
 arch hills
 elevation 3138
+x 1
+y 21
+end
+arch dirtroad_1_4
 x 1
 y 21
 end
@@ -572,6 +579,10 @@ elevation 3770
 x 2
 y 21
 end
+arch dirtroad_1_4
+x 2
+y 21
+end
 arch hills
 elevation 4310
 x 2
@@ -821,6 +832,10 @@ elevation 3449
 x 3
 y 21
 end
+arch dirtroad_1_4
+x 3
+y 21
+end
 arch hills
 elevation 3518
 x 3
@@ -1067,6 +1082,10 @@ y 20
 end
 arch woods_3
 elevation 2361
+x 4
+y 21
+end
+arch dirtroad_1_4
 x 4
 y 21
 end
@@ -1326,6 +1345,10 @@ elevation 2188
 x 5
 y 21
 end
+arch dirtroad_1_4
+x 5
+y 21
+end
 arch woods_3
 elevation 1832
 x 5
@@ -1579,6 +1602,10 @@ elevation 2228
 x 6
 y 21
 end
+arch dirtroad_1_4
+x 6
+y 21
+end
 arch woods_3
 elevation 1375
 x 6
@@ -1829,6 +1856,10 @@ y 20
 end
 arch woods_3
 elevation 2717
+x 7
+y 21
+end
+arch dirtroad_1_4
 x 7
 y 21
 end
@@ -2086,6 +2117,10 @@ y 20
 end
 arch jungle_1
 elevation 3358
+x 8
+y 21
+end
+arch dirtroad_1_4
 x 8
 y 21
 end
@@ -2361,6 +2396,10 @@ elevation 3691
 x 9
 y 21
 end
+arch dirtroad_1_4
+x 9
+y 21
+end
 arch hills
 elevation 3406
 x 9
@@ -2621,6 +2660,10 @@ elevation 3395
 x 10
 y 21
 end
+arch dirtroad_1_4
+x 10
+y 21
+end
 arch jungle_1
 elevation 3636
 x 10
@@ -2877,6 +2920,10 @@ elevation 2771
 x 11
 y 21
 end
+arch dirtroad_1_4
+x 11
+y 21
+end
 arch hills
 elevation 3136
 x 11
@@ -3127,6 +3174,10 @@ y 20
 end
 arch woods_3
 elevation 1466
+x 12
+y 21
+end
+arch dirtroad_1_4
 x 12
 y 21
 end
@@ -3383,6 +3434,10 @@ elevation 1431
 x 13
 y 21
 end
+arch dirtroad_1_4
+x 13
+y 21
+end
 arch evergreen
 elevation 2016
 x 13
@@ -3633,6 +3688,10 @@ y 20
 end
 arch jungle_2
 elevation 673
+x 14
+y 21
+end
+arch dirtroad_1_4
 x 14
 y 21
 end
@@ -3893,6 +3952,10 @@ elevation 2332
 x 15
 y 21
 end
+arch dirtroad_1_4
+x 15
+y 21
+end
 arch woods_3
 elevation 2592
 x 15
@@ -4146,6 +4209,10 @@ elevation 3017
 x 16
 y 21
 end
+arch dirtroad_1_4
+x 16
+y 21
+end
 arch jungle_1
 elevation 3125
 x 16
@@ -4392,6 +4459,10 @@ y 20
 end
 arch jungle_1
 elevation 3054
+x 17
+y 21
+end
+arch dirtroad_1_4
 x 17
 y 21
 end
@@ -4644,6 +4715,10 @@ elevation 2661
 x 18
 y 21
 end
+arch dirtroad_1_4
+x 18
+y 21
+end
 arch tree
 elevation 2681
 x 18
@@ -4890,6 +4965,10 @@ y 20
 end
 arch tree
 elevation 2552
+x 19
+y 21
+end
+arch dirtroad_1_4
 x 19
 y 21
 end
@@ -5142,6 +5221,10 @@ elevation 3160
 x 20
 y 21
 end
+arch dirtroad_1_4
+x 20
+y 21
+end
 arch tree
 elevation 1647
 x 20
@@ -5391,6 +5474,10 @@ elevation 3808
 x 21
 y 21
 end
+arch dirtroad_1_4
+x 21
+y 21
+end
 arch jungle_1
 elevation 3574
 x 21
@@ -5637,6 +5724,10 @@ y 20
 end
 arch jungle_1
 elevation 3953
+x 22
+y 21
+end
+arch dirtroad_1_4
 x 22
 y 21
 end
@@ -5893,6 +5984,10 @@ elevation 3318
 x 23
 y 21
 end
+arch dirtroad_1_4
+x 23
+y 21
+end
 arch tree
 elevation 2548
 x 23
@@ -6139,6 +6234,10 @@ y 20
 end
 arch tree
 elevation 2189
+x 24
+y 21
+end
+arch dirtroad_1_4
 x 24
 y 21
 end
@@ -6391,6 +6490,10 @@ elevation 1168
 x 25
 y 21
 end
+arch dirtroad_1_4
+x 25
+y 21
+end
 arch evergreens
 elevation 779
 x 25
@@ -6640,6 +6743,10 @@ elevation 2142
 x 26
 y 21
 end
+arch dirtroad_1_4
+x 26
+y 21
+end
 arch tree
 elevation 2582
 x 26
@@ -6884,8 +6991,16 @@ elevation 4249
 x 27
 y 20
 end
+arch dirtroad_2_2_2
+x 27
+y 20
+end
 arch jungle_1
 elevation 3406
+x 27
+y 21
+end
+arch dirtroad_2_2_4
 x 27
 y 21
 end
@@ -7118,8 +7233,16 @@ elevation 6458
 x 28
 y 17
 end
+arch dirtroad_2_2_2
+x 28
+y 17
+end
 arch mountain
 elevation 6243
+x 28
+y 18
+end
+arch dirtroad_1_2
 x 28
 y 18
 end
@@ -7128,8 +7251,16 @@ elevation 4866
 x 28
 y 19
 end
+arch dirtroad_1_2
+x 28
+y 19
+end
 arch jungle_1
 elevation 4308
+x 28
+y 20
+end
+arch dirtroad_2_2_4
 x 28
 y 20
 end
@@ -7371,6 +7502,10 @@ y 16
 end
 arch mountain
 elevation 5546
+x 29
+y 17
+end
+arch dirtroad_1_3
 x 29
 y 17
 end
