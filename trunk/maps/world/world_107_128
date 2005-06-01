@@ -5078,6 +5078,7 @@ y 19
 end
 arch sea
 elevation -549
+no_pass 0
 x 20
 y 20
 end
@@ -5352,6 +5353,7 @@ y 19
 end
 arch sea
 elevation -339
+no_pass 0
 x 21
 y 20
 end
@@ -7176,6 +7178,7 @@ y 4
 end
 arch shallow_sea
 elevation -49
+no_pass 0
 x 28
 y 5
 end
@@ -7449,6 +7452,7 @@ y 4
 end
 arch shallow_sea
 elevation -9
+no_pass 0
 x 29
 y 5
 end
@@ -12714,6 +12718,7 @@ y 49
 end
 arch longship
 name TC Transport
+slaying /world/world_107_128
 hp 28
 sp 4
 x 20
@@ -12721,6 +12726,7 @@ y 20
 end
 arch longship
 name TC Transport
+slaying /world/world_107_128
 hp 20
 sp 19
 x 28
