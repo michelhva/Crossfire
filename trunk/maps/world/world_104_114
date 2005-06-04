@@ -8947,11 +8947,11 @@ end
 arch exit
 msg
 layoutstyle maze
-dungeon_level 6
+dungeon_level 7
 expand2x 1
 treasureoptions 20
 monsterstyle sylvan
-dungeon_depth 10
+dungeon_depth 8
 xsize 50
 ysize 50
 exitstyle darkforest
@@ -8959,7 +8959,7 @@ doorstyle special/stone
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
-final_map /planes/greenway5
+final_map /planes/greenway3
 exit_on_final_map no
 endmsg
 invisible 1

@@ -1,6 +1,6 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
 msg
 Creator: Avion
 CF Java Map Editor
@@ -8,6 +8,8 @@ Date:    5/24/2004
 endmsg
 width 50
 height 50
+enter_x 31
+enter_y 41
 tile_path_1 /planes/greenway9
 tile_path_2 /planes/greenway1
 tile_path_3 /planes/greenway3
@@ -6220,7 +6222,7 @@ arch darkforest
 x 30
 y 40
 end
-arch darkforest
+arch flagstone
 x 30
 y 41
 end
@@ -6419,15 +6421,19 @@ arch darkforest
 x 31
 y 39
 end
-arch darkforest
+arch flagstone
 x 31
 y 40
 end
-arch darkforest
+arch flagstone
 x 31
 y 41
 end
-arch darkforest
+arch light4
+x 31
+y 41
+end
+arch flagstone
 x 31
 y 42
 end
@@ -6634,7 +6640,7 @@ arch darkforest
 x 32
 y 40
 end
-arch woods_3
+arch flagstone
 x 32
 y 41
 end

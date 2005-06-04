@@ -1,6 +1,6 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
 msg
 Creator: Avion
 CF Java Map Editor
@@ -8,6 +8,8 @@ Date:    5/24/2004
 endmsg
 width 50
 height 50
+enter_x 18
+enter_y 37
 darkness 1
 tile_path_1 /planes/greenway6
 tile_path_2 /planes/greenway9
@@ -3125,7 +3127,7 @@ arch evergreens
 x 15
 y 36
 end
-arch woods_2
+arch tree
 x 15
 y 37
 end
@@ -3316,19 +3318,19 @@ arch evergreens
 x 16
 y 34
 end
-arch evergreens
+arch brush
 x 16
 y 35
 end
-arch evergreens
+arch grass
 x 16
 y 36
 end
-arch woods_2
+arch brush
 x 16
 y 37
 end
-arch evergreens
+arch grass
 x 16
 y 38
 end
@@ -3515,19 +3517,19 @@ arch evergreens
 x 17
 y 34
 end
-arch evergreens
+arch brush
 x 17
 y 35
 end
-arch woods_2
+arch grass
 x 17
 y 36
 end
-arch evergreens
+arch flagstone
 x 17
 y 37
 end
-arch evergreens
+arch brush
 x 17
 y 38
 end
@@ -3714,23 +3716,27 @@ arch evergreens
 x 18
 y 34
 end
-arch evergreens
+arch brush
 x 18
 y 35
 end
-arch woods_2
+arch flagstone
 x 18
 y 36
 end
-arch evergreens
+arch flagstone
 x 18
 y 37
 end
-arch evergreens
+arch light4
+x 18
+y 37
+end
+arch flagstone
 x 18
 y 38
 end
-arch evergreens
+arch tree
 x 18
 y 39
 end
@@ -3917,23 +3923,23 @@ arch evergreens
 x 19
 y 34
 end
-arch evergreens
+arch tree
 x 19
 y 35
 end
-arch evergreens
+arch tree
 x 19
 y 36
 end
-arch evergreens
+arch flagstone
 x 19
 y 37
 end
-arch evergreens
+arch grass
 x 19
 y 38
 end
-arch evergreens
+arch tree
 x 19
 y 39
 end
@@ -4132,7 +4138,7 @@ arch darkforest
 x 20
 y 37
 end
-arch evergreens
+arch tree
 x 20
 y 38
 end
@@ -4340,7 +4346,7 @@ arch darkforest
 x 21
 y 37
 end
-arch woods
+arch tree
 x 21
 y 38
 end
@@ -4539,7 +4545,7 @@ arch evergreens
 x 22
 y 37
 end
-arch evergreens
+arch tree
 x 22
 y 38
 end
@@ -5701,7 +5707,14 @@ arch grass
 x 28
 y 25
 end
-arch grass
+arch brush
+x 28
+y 26
+end
+arch archway_tree
+slaying /world/world_104_114
+hp 43
+sp 17
 x 28
 y 26
 end
