@@ -1,6 +1,6 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
 msg
 Creator: Avion
 CF Java Map Editor
@@ -1021,13 +1021,6 @@ x 5
 y 4
 end
 arch brush
-x 5
-y 5
-end
-arch archway_tree
-slaying /world/world_110_117
-hp 22
-sp 45
 x 5
 y 5
 end
@@ -9525,13 +9518,6 @@ x 46
 y 37
 end
 arch brush
-x 46
-y 38
-end
-arch archway_tree
-slaying /world/world_104_114
-hp 43
-sp 17
 x 46
 y 38
 end

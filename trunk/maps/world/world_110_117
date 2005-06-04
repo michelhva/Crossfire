@@ -4463,7 +4463,7 @@ end
 arch exit
 msg
 layoutstyle rogue
-dungeon_level 6
+dungeon_level 8
 expand2x 1
 treasureoptions 20
 monsterstyle sylvan
@@ -4475,7 +4475,7 @@ doorstyle special/stone
 decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
-final_map /planes/greenway5
+final_map /planes/greenway8
 exit_on_final_map no
 endmsg
 invisible 1
