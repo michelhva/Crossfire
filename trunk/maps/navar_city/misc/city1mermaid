@@ -1,6 +1,6 @@
 arch map
-region navar
 name Frolicing Mermaid
+region navar
 msg
 Creator:
 Email:
@@ -741,6 +741,51 @@ x 7
 y 11
 end
 arch chair_1.2
+x 7
+y 11
+end
+arch fighter
+name TCI Representative
+msg
+@match TCI|tci
+Training Centers Incorporated is the best dang training
+you'll ever get. We have locations all over the world in
+exotic settings. Come fight with us! (heh, they tell us we
+have to say all that)
+@match Location|location
+Well, I don't know about all of them. But our local TCI
+is off the road nouth of here. Just head north for Darcap
+and look for one of our signs!
+@match Hello|hello|Hi|hi
+Well, hello there! Sit down and chat with me a bit. I am
+always looking for new people to tell about TCI.
+@match *
+Hi there young'un. Wanna join TCI?
+endmsg
+reflect_missile 1
+reflect_spell 1
+friendly 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
 x 7
 y 11
 end
