@@ -10224,6 +10224,10 @@ elevation 299
 x 41
 y 20
 end
+arch dirtroad_1_3
+x 41
+y 20
+end
 arch cobblestones
 x 41
 y 21
@@ -10470,8 +10474,19 @@ elevation 411
 x 42
 y 20
 end
+arch dirtroad_1_3
+x 42
+y 20
+end
 arch grass
 elevation 407
+x 42
+y 21
+end
+arch sign_e
+msg
+Training Centers Incorporated
+endmsg
 x 42
 y 21
 end
@@ -10713,6 +10728,10 @@ y 19
 end
 arch grass
 elevation 342
+x 43
+y 20
+end
+arch dirtroad_1_3
 x 43
 y 20
 end
@@ -10962,6 +10981,10 @@ elevation 113
 x 44
 y 20
 end
+arch dirtroad_1_3
+x 44
+y 20
+end
 arch brush
 elevation 149
 x 44
@@ -11208,6 +11231,10 @@ elevation 71
 x 45
 y 20
 end
+arch dirtroad_1_3
+x 45
+y 20
+end
 arch grass
 elevation 296
 x 45
@@ -11446,6 +11473,10 @@ y 19
 end
 arch brush
 elevation 70
+x 46
+y 20
+end
+arch dirtroad_1_3
 x 46
 y 20
 end
@@ -11692,6 +11723,10 @@ elevation 22
 x 47
 y 20
 end
+arch dirtroad_1_3
+x 47
+y 20
+end
 arch brush
 elevation 722
 x 47
@@ -11929,6 +11964,10 @@ y 19
 end
 arch brush
 elevation 213
+x 48
+y 20
+end
+arch dirtroad_1_3
 x 48
 y 20
 end
@@ -12178,6 +12217,10 @@ y 19
 end
 arch brush
 elevation 370
+x 49
+y 20
+end
+arch dirtroad_1_3
 x 49
 y 20
 end

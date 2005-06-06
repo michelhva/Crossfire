@@ -206,6 +206,9 @@ arch woods
 elevation 2926
 y 48
 end
+arch dirtroad_1_3
+y 48
+end
 arch woods
 elevation 2824
 y 49
@@ -451,6 +454,10 @@ y 47
 end
 arch woods
 elevation 2678
+x 1
+y 48
+end
+arch dirtroad_1_3
 x 1
 y 48
 end
@@ -703,6 +710,10 @@ elevation 1954
 x 2
 y 48
 end
+arch dirtroad_1_3
+x 2
+y 48
+end
 arch woods
 elevation 1955
 x 2
@@ -952,6 +963,10 @@ elevation 858
 x 3
 y 48
 end
+arch dirtroad_1_3
+x 3
+y 48
+end
 arch woods
 elevation 1317
 x 3
@@ -1198,6 +1213,10 @@ y 47
 end
 arch desert
 elevation 344
+x 4
+y 48
+end
+arch dirtroad_1_3
 x 4
 y 48
 end
@@ -1478,6 +1497,10 @@ elevation 166
 x 5
 y 48
 end
+arch dirtroad_1_3
+x 5
+y 48
+end
 arch grass
 elevation 659
 x 5
@@ -1659,12 +1682,20 @@ arch dungeon_magic
 x 6
 y 32
 end
+arch dirtroad_2_2_2
+x 6
+y 32
+end
 arch woods_3
 elevation 1561
 x 6
 y 33
 end
 arch dungeon_magic
+x 6
+y 33
+end
+arch dirtroad_2_2_1
 x 6
 y 33
 end
@@ -1744,6 +1775,10 @@ y 47
 end
 arch desert
 elevation 527
+x 6
+y 48
+end
+arch dirtroad_1_3
 x 6
 y 48
 end
@@ -1928,12 +1963,20 @@ arch dungeon_magic
 x 7
 y 32
 end
+arch dirtroad_2_2_3
+x 7
+y 32
+end
 arch evergreen
 elevation 1906
 x 7
 y 33
 end
 arch dungeon_magic
+x 7
+y 33
+end
+arch dirtroad_3_1
 x 7
 y 33
 end
@@ -2017,6 +2060,10 @@ y 47
 end
 arch woods
 elevation 1187
+x 7
+y 48
+end
+arch dirtroad_1_3
 x 7
 y 48
 end
@@ -2206,6 +2253,10 @@ arch dungeon_magic
 x 8
 y 33
 end
+arch dirtroad_1_3
+x 8
+y 33
+end
 arch woods_3
 elevation 1186
 x 8
@@ -2282,6 +2333,10 @@ y 47
 end
 arch woods_3
 elevation 1598
+x 8
+y 48
+end
+arch dirtroad_1_3
 x 8
 y 48
 end
@@ -2554,6 +2609,10 @@ elevation 1562
 x 9
 y 48
 end
+arch dirtroad_1_3
+x 9
+y 48
+end
 arch woods_3
 elevation 1707
 x 9
@@ -2802,13 +2861,25 @@ elevation 1018
 x 10
 y 46
 end
+arch dirtroad_2_2_2
+x 10
+y 46
+end
 arch woods_3
 elevation 1548
 x 10
 y 47
 end
+arch dirtroad_1_1
+x 10
+y 47
+end
 arch woods
 elevation 1178
+x 10
+y 48
+end
+arch dirtroad_2_2_4
 x 10
 y 48
 end
@@ -3057,6 +3128,10 @@ y 45
 end
 arch woods_3
 elevation 1207
+x 11
+y 46
+end
+arch dirtroad_1_3
 x 11
 y 46
 end
@@ -3315,6 +3390,10 @@ y 45
 end
 arch grass
 elevation 500
+x 12
+y 46
+end
+arch dirtroad_1_3
 x 12
 y 46
 end
@@ -3581,6 +3660,10 @@ y 45
 end
 arch brush
 elevation 478
+x 13
+y 46
+end
+arch dirtroad_1_3
 x 13
 y 46
 end
@@ -3851,6 +3934,10 @@ y 45
 end
 arch woods_3
 elevation 2029
+x 14
+y 46
+end
+arch dirtroad_1_3
 x 14
 y 46
 end
@@ -4135,6 +4222,10 @@ elevation 2636
 x 15
 y 46
 end
+arch dirtroad_1_3
+x 15
+y 46
+end
 arch hills_rocky
 elevation 3575
 x 15
@@ -4347,6 +4438,10 @@ arch dungeon_magic
 x 16
 y 33
 end
+arch dirtroad_1_3
+x 16
+y 33
+end
 arch grass
 elevation 354
 x 16
@@ -4433,6 +4528,10 @@ y 45
 end
 arch hills_rocky
 elevation 3318
+x 16
+y 46
+end
+arch dirtroad_1_3
 x 16
 y 46
 end
@@ -4664,12 +4763,20 @@ arch dungeon_magic
 x 17
 y 33
 end
+arch dirtroad_2_2_3
+x 17
+y 33
+end
 arch desert
 elevation 688
 x 17
 y 34
 end
 arch dungeon_magic
+x 17
+y 34
+end
+arch dirtroad_1_1
 x 17
 y 34
 end
@@ -4682,12 +4789,20 @@ arch dungeon_magic
 x 17
 y 35
 end
+arch dirtroad_1_1
+x 17
+y 35
+end
 arch grass
 elevation 11
 x 17
 y 36
 end
 arch dungeon_magic
+x 17
+y 36
+end
+arch dirtroad_2_2_1
 x 17
 y 36
 end
@@ -4754,6 +4869,10 @@ y 45
 end
 arch hills_rocky
 elevation 3945
+x 17
+y 46
+end
+arch dirtroad_1_3
 x 17
 y 46
 end
@@ -5012,6 +5131,10 @@ arch dungeon_magic
 x 18
 y 36
 end
+arch dirtroad_1_3
+x 18
+y 36
+end
 arch deep_swamp
 elevation 1
 x 18
@@ -5083,6 +5206,10 @@ y 45
 end
 arch hills
 elevation 4434
+x 18
+y 46
+end
+arch dirtroad_1_3
 x 18
 y 46
 end
@@ -5341,6 +5468,10 @@ arch dungeon_magic
 x 19
 y 36
 end
+arch dirtroad_1_3
+x 19
+y 36
+end
 arch grass
 elevation 21
 x 19
@@ -5412,6 +5543,10 @@ y 45
 end
 arch hills_rocky
 elevation 4520
+x 19
+y 46
+end
+arch dirtroad_1_3
 x 19
 y 46
 end
@@ -5670,12 +5805,20 @@ arch dungeon_magic
 x 20
 y 36
 end
+arch dirtroad_2_2_3
+x 20
+y 36
+end
 arch grass
 elevation 11
 x 20
 y 37
 end
 arch dungeon_magic
+x 20
+y 37
+end
+arch dirtroad_1_1
 x 20
 y 37
 end
@@ -5688,12 +5831,20 @@ arch dungeon_magic
 x 20
 y 38
 end
+arch dirtroad_1_1
+x 20
+y 38
+end
 arch grass
 elevation 405
 x 20
 y 39
 end
 arch dungeon_magic
+x 20
+y 39
+end
+arch dirtroad_1_1
 x 20
 y 39
 end
@@ -5706,12 +5857,20 @@ arch dungeon_magic
 x 20
 y 40
 end
+arch dirtroad_1_1
+x 20
+y 40
+end
 arch woods_3
 elevation 1129
 x 20
 y 41
 end
 arch dungeon_magic
+x 20
+y 41
+end
+arch dirtroad_1_1
 x 20
 y 41
 end
@@ -5724,6 +5883,10 @@ arch dungeon_magic
 x 20
 y 42
 end
+arch dirtroad_1_1
+x 20
+y 42
+end
 arch woods_3
 elevation 2567
 x 20
@@ -5733,8 +5896,16 @@ arch dungeon_magic
 x 20
 y 43
 end
+arch dirtroad_1_1
+x 20
+y 43
+end
 arch hills
 elevation 3087
+x 20
+y 44
+end
+arch dirtroad_1_1
 x 20
 y 44
 end
@@ -5743,8 +5914,16 @@ elevation 2348
 x 20
 y 45
 end
+arch dirtroad_1_1
+x 20
+y 45
+end
 arch hills
 elevation 4754
+x 20
+y 46
+end
+arch dirtroad_2_2_4
 x 20
 y 46
 end
