@@ -128,8 +128,14 @@ arch hills_rocky
 elevation 4201
 y 27
 end
+arch dirtroad_2_2_2
+y 27
+end
 arch hills_rocky
 elevation 2601
+y 28
+end
+arch dirtroad_2_2_4
 y 28
 end
 arch hills_rocky
@@ -366,6 +372,10 @@ y 26
 end
 arch hills_rocky
 elevation 3260
+x 1
+y 27
+end
+arch dirtroad_1_3
 x 1
 y 27
 end
@@ -610,6 +620,10 @@ elevation 4140
 x 2
 y 27
 end
+arch dirtroad_1_3
+x 2
+y 27
+end
 arch hills_rocky
 elevation 3669
 x 2
@@ -851,8 +865,16 @@ elevation 4875
 x 3
 y 27
 end
+arch dirtroad_2_2_3
+x 3
+y 27
+end
 arch hills_rocky
 elevation 4208
+x 3
+y 28
+end
+arch dirtroad_2_2_1
 x 3
 y 28
 end
@@ -866,8 +888,16 @@ elevation 4363
 x 3
 y 30
 end
+arch dirtroad_2_2_2
+x 3
+y 30
+end
 arch hills_rocky
 elevation 4515
+x 3
+y 31
+end
+arch dirtroad_2_2_1
 x 3
 y 31
 end
@@ -1125,8 +1155,16 @@ elevation 3488
 x 4
 y 28
 end
+arch dirtroad_2_2_3
+x 4
+y 28
+end
 arch hills_rocky
 elevation 3038
+x 4
+y 29
+end
+arch dirtroad_1_1
 x 4
 y 29
 end
@@ -1135,8 +1173,16 @@ elevation 4424
 x 4
 y 30
 end
+arch dirtroad_2_2_4
+x 4
+y 30
+end
 arch mountain
 elevation 5234
+x 4
+y 31
+end
+arch dirtroad_2_2_3
 x 4
 y 31
 end
@@ -1145,13 +1191,25 @@ elevation 4913
 x 4
 y 32
 end
+arch dirtroad_1_1
+x 4
+y 32
+end
 arch mountain
 elevation 5805
 x 4
 y 33
 end
+arch dirtroad_1_1
+x 4
+y 33
+end
 arch mountain
 elevation 5746
+x 4
+y 34
+end
+arch dirtroad_2_2_1
 x 4
 y 34
 end
@@ -1403,6 +1461,10 @@ y 33
 end
 arch hills_rocky
 elevation 4783
+x 5
+y 34
+end
+arch dirtroad_1_3
 x 5
 y 34
 end
@@ -1687,6 +1749,10 @@ elevation 4760
 x 6
 y 34
 end
+arch dirtroad_1_3
+x 6
+y 34
+end
 arch hills_rocky
 elevation 3952
 x 6
@@ -1939,6 +2005,10 @@ elevation 4432
 x 7
 y 34
 end
+arch dirtroad_1_3
+x 7
+y 34
+end
 arch evergreens
 elevation 2799
 x 7
@@ -2176,8 +2246,16 @@ elevation 4379
 x 8
 y 33
 end
+arch dirtroad_2_2_2
+x 8
+y 33
+end
 arch hills_rocky
 elevation 3906
+x 8
+y 34
+end
+arch dirtroad_2_2_4
 x 8
 y 34
 end
@@ -2425,6 +2503,10 @@ y 32
 end
 arch hills_rocky
 elevation 3979
+x 9
+y 33
+end
+arch dirtroad_1_3
 x 9
 y 33
 end
@@ -2704,6 +2786,10 @@ elevation 3755
 x 10
 y 33
 end
+arch dirtroad_1_3
+x 10
+y 33
+end
 arch evergreens
 elevation 2091
 x 10
@@ -2940,6 +3026,10 @@ y 32
 end
 arch hills_rocky
 elevation 3605
+x 11
+y 33
+end
+arch dirtroad_1_3
 x 11
 y 33
 end
@@ -3183,8 +3273,16 @@ elevation 3166
 x 12
 y 33
 end
+arch dirtroad_2_2_3
+x 12
+y 33
+end
 arch hills_rocky
 elevation 3561
+x 12
+y 34
+end
+arch dirtroad_2_2_1
 x 12
 y 34
 end
@@ -3429,8 +3527,19 @@ elevation 3319
 x 13
 y 34
 end
+arch dirtroad_1_3
+x 13
+y 34
+end
 arch hills
 elevation 3824
+x 13
+y 35
+end
+arch sign_w
+msg
+Training Centers Incorporated
+endmsg
 x 13
 y 35
 end

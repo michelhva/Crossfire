@@ -5351,6 +5351,10 @@ arch dungeon_magic
 x 21
 y 19
 end
+arch dirtroad_1_3
+x 21
+y 19
+end
 arch sea
 elevation -339
 no_pass 0
@@ -5629,6 +5633,10 @@ arch dungeon_magic
 x 22
 y 19
 end
+arch dirtroad_1_3
+x 22
+y 19
+end
 arch sea
 elevation -252
 x 22
@@ -5902,6 +5910,10 @@ arch dungeon_magic
 x 23
 y 19
 end
+arch dirtroad_1_3
+x 23
+y 19
+end
 arch sea
 elevation -257
 x 23
@@ -6166,12 +6178,20 @@ arch dungeon_magic
 x 24
 y 18
 end
+arch dirtroad_2_2_2
+x 24
+y 18
+end
 arch grass
 elevation 283
 x 24
 y 19
 end
 arch dungeon_magic
+x 24
+y 19
+end
+arch dirtroad_2_2_4
 x 24
 y 19
 end
@@ -6434,12 +6454,20 @@ arch dungeon_magic
 x 25
 y 17
 end
+arch dirtroad_2_2_2
+x 25
+y 17
+end
 arch grass
 elevation 21
 x 25
 y 18
 end
 arch dungeon_magic
+x 25
+y 18
+end
+arch dirtroad_2_2_4
 x 25
 y 18
 end
@@ -6693,6 +6721,10 @@ arch dungeon_magic
 x 26
 y 15
 end
+arch dirtroad_2_2_2
+x 26
+y 15
+end
 arch woods_3
 elevation 1109
 x 26
@@ -6702,12 +6734,20 @@ arch dungeon_magic
 x 26
 y 16
 end
+arch dirtroad_2_2_1
+x 26
+y 16
+end
 arch grass
 elevation 115
 x 26
 y 17
 end
 arch dungeon_magic
+x 26
+y 17
+end
+arch dirtroad_1_3
 x 26
 y 17
 end
@@ -6974,6 +7014,10 @@ arch dungeon_magic
 x 27
 y 15
 end
+arch dirtroad_2_2_3
+x 27
+y 15
+end
 arch grass
 elevation 433
 x 27
@@ -6983,12 +7027,20 @@ arch dungeon_magic
 x 27
 y 16
 end
+arch dirtroad_3_4
+x 27
+y 16
+end
 arch grass
 elevation 170
 x 27
 y 17
 end
 arch dungeon_magic
+x 27
+y 17
+end
+arch dirtroad_2_2_4
 x 27
 y 17
 end
@@ -7450,6 +7502,10 @@ elevation 348
 x 29
 y 4
 end
+arch dirtroad_1_3
+x 29
+y 4
+end
 arch shallow_sea
 elevation -9
 no_pass 0
@@ -7724,6 +7780,10 @@ elevation 451
 x 30
 y 4
 end
+arch dirtroad_1_3
+x 30
+y 4
+end
 arch shallow_sea
 elevation -9
 x 30
@@ -7993,8 +8053,16 @@ elevation 915
 x 31
 y 4
 end
+arch dirtroad_2_2_3
+x 31
+y 4
+end
 arch grass
 elevation 387
+x 31
+y 5
+end
+arch dirtroad_2_2_1
 x 31
 y 5
 end
@@ -8263,6 +8331,10 @@ elevation 694
 x 32
 y 5
 end
+arch dirtroad_1_3
+x 32
+y 5
+end
 arch shallow_sea
 elevation -6
 x 32
@@ -8512,6 +8584,10 @@ elevation 770
 x 33
 y 5
 end
+arch dirtroad_1_3
+x 33
+y 5
+end
 arch swamp
 elevation 2
 x 33
@@ -8756,8 +8832,16 @@ elevation 1059
 x 34
 y 4
 end
+arch dirtroad_2_2_2
+x 34
+y 4
+end
 arch grass
 elevation 406
+x 34
+y 5
+end
+arch dirtroad_2_2_4
 x 34
 y 5
 end
@@ -9002,6 +9086,10 @@ y 3
 end
 arch grass
 elevation 803
+x 35
+y 4
+end
+arch dirtroad_1_3
 x 35
 y 4
 end
@@ -9254,6 +9342,10 @@ elevation 193
 x 36
 y 4
 end
+arch dirtroad_1_3
+x 36
+y 4
+end
 arch shallow_sea
 elevation -5
 x 36
@@ -9498,8 +9590,16 @@ elevation 817
 x 37
 y 3
 end
+arch dirtroad_2_2_2
+x 37
+y 3
+end
 arch desert
 elevation 28
+x 37
+y 4
+end
+arch dirtroad_2_2_4
 x 37
 y 4
 end
@@ -9744,6 +9844,10 @@ y 2
 end
 arch brush
 elevation 528
+x 38
+y 3
+end
+arch dirtroad_1_3
 x 38
 y 3
 end
@@ -9996,6 +10100,10 @@ elevation 334
 x 39
 y 3
 end
+arch dirtroad_1_3
+x 39
+y 3
+end
 arch shallow_sea
 elevation -8
 x 39
@@ -10242,6 +10350,10 @@ y 2
 end
 arch desert
 elevation 174
+x 40
+y 3
+end
+arch dirtroad_1_3
 x 40
 y 3
 end
@@ -10494,6 +10606,10 @@ elevation 229
 x 41
 y 3
 end
+arch dirtroad_1_3
+x 41
+y 3
+end
 arch shallow_sea
 elevation -3
 x 41
@@ -10740,6 +10856,10 @@ y 2
 end
 arch brush
 elevation 501
+x 42
+y 3
+end
+arch dirtroad_1_3
 x 42
 y 3
 end
@@ -10992,6 +11112,10 @@ elevation 808
 x 43
 y 3
 end
+arch dirtroad_1_3
+x 43
+y 3
+end
 arch deep_swamp
 elevation 9
 x 43
@@ -11241,8 +11365,16 @@ elevation 939
 x 44
 y 3
 end
+arch dirtroad_2_2_3
+x 44
+y 3
+end
 arch brush
 elevation 431
+x 44
+y 4
+end
+arch dirtroad_2_2_1
 x 44
 y 4
 end
@@ -11495,8 +11627,16 @@ elevation 618
 x 45
 y 4
 end
+arch dirtroad_2_2_3
+x 45
+y 4
+end
 arch brush
 elevation 526
+x 45
+y 5
+end
+arch dirtroad_1_1
 x 45
 y 5
 end
@@ -11505,13 +11645,25 @@ elevation 372
 x 45
 y 6
 end
+arch dirtroad_1_1
+x 45
+y 6
+end
 arch desert
 elevation 235
 x 45
 y 7
 end
+arch dirtroad_1_1
+x 45
+y 7
+end
 arch desert
 elevation 146
+x 45
+y 8
+end
+arch dirtroad_2_2_1
 x 45
 y 8
 end
@@ -11764,13 +11916,25 @@ elevation 543
 x 46
 y 8
 end
+arch dirtroad_2_2_3
+x 46
+y 8
+end
 arch brush
 elevation 373
 x 46
 y 9
 end
+arch dirtroad_3_2
+x 46
+y 9
+end
 arch desert
 elevation 31
+x 46
+y 10
+end
+arch dirtroad_1_1
 x 46
 y 10
 end
@@ -12013,8 +12177,16 @@ elevation 576
 x 47
 y 8
 end
+arch dirtroad_2_2_2
+x 47
+y 8
+end
 arch brush
 elevation 282
+x 47
+y 9
+end
+arch dirtroad_2_2_4
 x 47
 y 9
 end
@@ -12257,8 +12429,16 @@ elevation 641
 x 48
 y 7
 end
+arch dirtroad_2_2_2
+x 48
+y 7
+end
 arch desert
 elevation 317
+x 48
+y 8
+end
+arch dirtroad_2_2_4
 x 48
 y 8
 end
@@ -12503,6 +12683,10 @@ y 6
 end
 arch desert
 elevation 304
+x 49
+y 7
+end
+arch dirtroad_1_3
 x 49
 y 7
 end
