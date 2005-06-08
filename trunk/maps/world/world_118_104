@@ -6655,8 +6655,15 @@ arch hills
 elevation 3957
 x 27
 end
+arch dirtroad_1_1
+x 27
+end
 arch hills
 elevation 4474
+x 27
+y 1
+end
+arch dirtroad_1_1
 x 27
 y 1
 end
@@ -6665,8 +6672,16 @@ elevation 4881
 x 27
 y 2
 end
+arch dirtroad_1_1
+x 27
+y 2
+end
 arch hills
 elevation 4562
+x 27
+y 3
+end
+arch dirtroad_1_1
 x 27
 y 3
 end
@@ -6675,8 +6690,16 @@ elevation 3519
 x 27
 y 4
 end
+arch dirtroad_1_1
+x 27
+y 4
+end
 arch mountain
 elevation 5024
+x 27
+y 5
+end
+arch dirtroad_2_2_1
 x 27
 y 5
 end
@@ -6928,6 +6951,10 @@ elevation 4078
 x 28
 y 5
 end
+arch dirtroad_1_3
+x 28
+y 5
+end
 arch mountain
 elevation 5459
 x 28
@@ -7176,8 +7203,16 @@ elevation 3332
 x 29
 y 5
 end
+arch dirtroad_2_2_3
+x 29
+y 5
+end
 arch steppe
 elevation 4553
+x 29
+y 6
+end
+arch dirtroad_2_2_1
 x 29
 y 6
 end
@@ -7223,6 +7258,13 @@ y 14
 end
 arch steppe
 elevation 3988
+x 29
+y 15
+end
+arch sign
+msg
+Training Centers Incorporated
+endmsg
 x 29
 y 15
 end
@@ -7429,8 +7471,16 @@ elevation 3693
 x 30
 y 6
 end
+arch dirtroad_2_2_3
+x 30
+y 6
+end
 arch hills_rocky
 elevation 3750
+x 30
+y 7
+end
+arch dirtroad_1_1
 x 30
 y 7
 end
@@ -7439,8 +7489,16 @@ elevation 4352
 x 30
 y 8
 end
+arch dirtroad_1_1
+x 30
+y 8
+end
 arch hills
 elevation 2904
+x 30
+y 9
+end
+arch dirtroad_2_2_1
 x 30
 y 9
 end
@@ -7469,8 +7527,16 @@ elevation 4924
 x 30
 y 14
 end
+arch dirtroad_2_2_2
+x 30
+y 14
+end
 arch hills_rocky
 elevation 3666
+x 30
+y 15
+end
+arch dirtroad_1_1
 x 30
 y 15
 end
@@ -7692,8 +7758,16 @@ elevation 3109
 x 31
 y 9
 end
+arch dirtroad_2_2_3
+x 31
+y 9
+end
 arch hills
 elevation 3917
+x 31
+y 10
+end
+arch dirtroad_1_1
 x 31
 y 10
 end
@@ -7702,8 +7776,16 @@ elevation 4579
 x 31
 y 11
 end
+arch dirtroad_1_1
+x 31
+y 11
+end
 arch hills
 elevation 4662
+x 31
+y 12
+end
+arch dirtroad_1_1
 x 31
 y 12
 end
@@ -7712,8 +7794,16 @@ elevation 4387
 x 31
 y 13
 end
+arch dirtroad_1_1
+x 31
+y 13
+end
 arch hills
 elevation 3761
+x 31
+y 14
+end
+arch dirtroad_2_2_4
 x 31
 y 14
 end
