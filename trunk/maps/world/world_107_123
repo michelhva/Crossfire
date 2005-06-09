@@ -1,6 +1,6 @@
 arch map
-region brest
 name world_107_123
+region brest
 msg
 
 endmsg
@@ -5186,10 +5186,6 @@ arch flagstone
 x 20
 y 32
 end
-arch light4
-x 20
-y 32
-end
 arch flagstone
 x 20
 y 33
@@ -5224,7 +5220,7 @@ msg
 Lord Ludo invites to step in
 And discover his treasures
 Please deposit 500 gold coins
-On the altar.
+at the Payment Booth.
 Special fees for groups of
 adventurers.
 Please don't touch the artefacts.
@@ -5237,14 +5233,20 @@ arch flagstone
 x 20
 y 40
 end
+arch altar
+invisible 1
+slaying money
+food 5000
+connected 1
+x 20
+y 41
+end
 arch flagstone
 x 20
 y 41
 end
-arch altar
-slaying goldcoin
-food 500
-connected 1
+arch tower_tob_fant
+name Payment Booth
 x 20
 y 41
 end
@@ -5482,6 +5484,14 @@ elevation 1066
 x 21
 y 36
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 21
+y 36
+end
 arch flagstone
 x 21
 y 37
@@ -5629,7 +5639,7 @@ end
 arch sign_e
 msg
 Brest - 3 miles south
-Lake County - 241 miles east
+Lake Country - 241 miles east
 endmsg
 x 22
 y 13
@@ -5655,10 +5665,6 @@ x 22
 y 18
 end
 arch flagstone
-x 22
-y 19
-end
-arch light4
 x 22
 y 19
 end
@@ -5757,18 +5763,13 @@ arch flagstone
 x 22
 y 40
 end
-arch grass
+arch sea
 elevation 2260
 x 22
 y 41
 end
-arch biglake_nw
-name sea
-name_pl sea
-x 22
-y 41
-end
 arch swall_1_3_half
+elevation 2260
 x 22
 y 41
 end
@@ -5941,6 +5942,14 @@ elevation 2311
 x 23
 y 20
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 23
+y 20
+end
 arch grass
 elevation 1427
 x 23
@@ -6012,6 +6021,14 @@ elevation 2875
 x 23
 y 29
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 23
+y 29
+end
 arch flagstone
 x 23
 y 30
@@ -6078,7 +6095,7 @@ arch river_n-s
 x 23
 y 38
 end
-arch grass
+arch sea
 elevation 2442
 x 23
 y 39
@@ -6087,20 +6104,19 @@ arch river_n-s
 x 23
 y 39
 end
-arch grass
-elevation 2172
+arch sea
+elevation 2442
 x 23
 y 40
 end
-arch rjunct_ns-sw
+arch river_n-s
 x 23
 y 40
 end
-arch biglake_nw
-name sea
-name_pl sea
+arch river_n-s
+elevation -504
 x 23
-y 40
+y 41
 end
 arch sea
 elevation -504
@@ -6401,12 +6417,6 @@ y 39
 end
 arch grass
 elevation 2960
-x 24
-y 40
-end
-arch biglake_ne
-name sea
-name_pl sea
 x 24
 y 40
 end
@@ -6923,6 +6933,14 @@ elevation 2424
 x 26
 y 36
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 26
+y 36
+end
 arch flagstone
 x 26
 y 37
@@ -7117,10 +7135,6 @@ arch grass
 x 27
 y 25
 end
-arch light4
-x 27
-y 25
-end
 arch tree
 elevation 1423
 x 27
@@ -7157,10 +7171,6 @@ x 27
 y 33
 end
 arch flagstone
-x 27
-y 34
-end
-arch light4
 x 27
 y 34
 end
@@ -7337,6 +7347,14 @@ x 28
 y 19
 end
 arch grass
+x 28
+y 20
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 28
 y 20
 end
@@ -7622,6 +7640,14 @@ elevation 39
 x 29
 y 29
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 29
+y 29
+end
 arch flagstone
 x 29
 y 30
@@ -7832,10 +7858,6 @@ x 30
 y 18
 end
 arch flagstone
-x 30
-y 19
-end
-arch light4
 x 30
 y 19
 end
@@ -8187,6 +8209,14 @@ arch grass
 x 31
 y 39
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 31
+y 39
+end
 arch grass
 elevation 2838
 x 31
@@ -8432,10 +8462,6 @@ arch flagstone
 x 32
 y 38
 end
-arch light4
-x 32
-y 38
-end
 arch grass
 elevation 333
 x 32
@@ -8604,6 +8630,14 @@ elevation 1688
 x 33
 y 20
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 33
+y 20
+end
 arch tree
 elevation 1078
 x 33
@@ -8661,8 +8695,16 @@ sp 1
 x 33
 y 31
 end
-arch tree
-elevation 1636
+arch grass
+elevation 2319
+x 33
+y 32
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 33
 y 32
 end
@@ -9417,10 +9459,6 @@ elevation 236
 x 36
 y 25
 end
-arch light4
-x 36
-y 25
-end
 arch grass
 x 36
 y 26
@@ -9668,6 +9706,14 @@ elevation 46
 x 37
 y 24
 end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 37
+y 24
+end
 arch grass
 x 37
 y 25
@@ -9689,6 +9735,14 @@ y 28
 end
 arch grass
 elevation 1160
+x 37
+y 29
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 37
 y 29
 end
@@ -9872,7 +9926,8 @@ arch flagstone_2_1_2
 x 38
 y 16
 end
-arch brush
+arch tree
+elevation 753
 x 38
 y 17
 end
@@ -9933,10 +9988,6 @@ arch flagstone
 x 38
 y 31
 end
-arch light4
-x 38
-y 31
-end
 arch flagstone
 x 38
 y 32
@@ -9962,6 +10013,14 @@ x 38
 y 37
 end
 arch grass
+x 38
+y 38
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 38
 y 38
 end
@@ -10100,12 +10159,12 @@ x 39
 y 16
 end
 arch brush
-elevation 319
+elevation 1166
 x 39
 y 17
 end
 arch brush
-elevation 1548
+elevation 1166
 x 39
 y 18
 end
@@ -10114,12 +10173,16 @@ elevation 1015
 x 39
 y 19
 end
-arch light4
-x 39
-y 19
-end
 arch brush
 elevation 1166
+x 39
+y 20
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 39
 y 20
 end
@@ -10399,12 +10462,13 @@ arch flagstone_2_1_2
 x 40
 y 16
 end
-arch tree
-elevation 1774
+arch brush
+elevation 1166
 x 40
 y 17
 end
 arch brush
+elevation 1166
 x 40
 y 18
 end
@@ -12892,7 +12956,7 @@ end
 arch inn
 slaying /brest/brest.inn
 hp 14
-sp 22
+sp 23
 x 31
 y 29
 end
@@ -12947,6 +13011,7 @@ name Scrolls Galore
 slaying /brest/brest.scrolls
 hp 3
 sp 37
+elevation 319
 x 39
 y 17
 end
