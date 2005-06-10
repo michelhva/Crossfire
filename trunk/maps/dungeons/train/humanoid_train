@@ -1237,6 +1237,7 @@ y 8
 end
 arch statue
 face smalltroll.111
+glow_radius 2
 x 6
 y 8
 end
@@ -1286,6 +1287,7 @@ y 12
 end
 arch statue
 face smalltroll.111
+glow_radius 2
 x 6
 y 12
 end
@@ -1690,7 +1692,7 @@ elevation 4956
 x 8
 y 11
 end
-arch swall_2_1_2
+arch swall_3_3
 x 8
 y 11
 end
@@ -1703,12 +1705,20 @@ elevation 4956
 x 8
 y 12
 end
+arch swall_2_1_1
+x 8
+y 12
+end
 arch dungeon_magic
 x 8
 y 13
 end
 arch hills_rocky
 elevation 4956
+x 8
+y 13
+end
+arch swall_1_2
 x 8
 y 13
 end
@@ -2150,7 +2160,7 @@ elevation 4956
 x 10
 y 12
 end
-arch firestar
+arch lamestar
 no_pick 1
 x 10
 y 12
@@ -2166,7 +2176,7 @@ y 13
 end
 arch altar
 name Drop Firestar
-slaying firestar
+slaying lamestar
 food 1
 connected 2
 x 10
@@ -2401,7 +2411,7 @@ y 13
 end
 arch altar
 name Drop Demonspawn Shield
-slaying demonspawn shield
+slaying DShield
 food 1
 connected 3
 x 11
@@ -2596,7 +2606,7 @@ elevation 4956
 x 12
 y 11
 end
-arch swall_2_1_2
+arch swall_3_3
 x 12
 y 11
 end
@@ -2609,12 +2619,20 @@ elevation 4956
 x 12
 y 12
 end
+arch swall_2_1_1
+x 12
+y 12
+end
 arch dungeon_magic
 x 12
 y 13
 end
 arch hills_rocky
 elevation 4956
+x 12
+y 13
+end
+arch swall_1_2
 x 12
 y 13
 end
@@ -2976,6 +2994,7 @@ y 8
 end
 arch statue
 face smalltroll.111
+glow_radius 2
 x 14
 y 8
 end
@@ -3025,6 +3044,7 @@ y 12
 end
 arch statue
 face smalltroll.111
+glow_radius 2
 x 14
 y 12
 end
