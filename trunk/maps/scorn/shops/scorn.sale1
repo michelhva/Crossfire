@@ -1,6 +1,6 @@
 arch map
-region scorn
 name Scorn Sale shop
+region scorn
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
@@ -71,13 +71,13 @@ end
 arch cobblestones2
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 1
 end
 arch dwall_2_2_2
 x 1
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 1
 end
@@ -85,7 +85,7 @@ arch dwall_2_1_1
 x 1
 y 1
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 2
 end
@@ -93,7 +93,7 @@ arch dwall_2_1_1
 x 1
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 3
 end
@@ -101,7 +101,7 @@ arch dwall_2_1_1
 x 1
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 4
 end
@@ -109,7 +109,7 @@ arch dwall_2_1_1
 x 1
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 5
 end
@@ -117,7 +117,7 @@ arch dwall_2_1_1
 x 1
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 6
 end
@@ -125,7 +125,7 @@ arch dwall_2_1_1
 x 1
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 7
 end
@@ -133,7 +133,7 @@ arch dwall_2_1_1
 x 1
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 8
 end
@@ -141,7 +141,7 @@ arch dwall_2_1_1
 x 1
 y 8
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 9
 end
@@ -149,7 +149,7 @@ arch dwall_2_1_1
 x 1
 y 9
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 10
 end
@@ -157,7 +157,7 @@ arch dwall_2_1_1
 x 1
 y 10
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 11
 end
@@ -165,7 +165,7 @@ arch dwall_2_1_1
 x 1
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 12
 end
@@ -173,7 +173,7 @@ arch dwall_2_1_1
 x 1
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 13
 end
@@ -181,7 +181,7 @@ arch dwall_2_1_1
 x 1
 y 13
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 14
 end
@@ -189,7 +189,7 @@ arch dwall_2_1_1
 x 1
 y 14
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 15
 end
@@ -197,7 +197,7 @@ arch dwall_2_1_1
 x 1
 y 15
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 16
 end
@@ -205,7 +205,7 @@ arch dwall_2_1_1
 x 1
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 1
 y 17
 end
@@ -221,7 +221,7 @@ arch cobblestones2
 x 1
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 2
 end
 arch dwall_2_1_2
@@ -232,10 +232,7 @@ x 2
 y 1
 end
 arch dwall_0
-x 2
-y 1
-end
-arch light4
+glow_radius 4
 x 2
 y 1
 end
@@ -245,6 +242,7 @@ y 2
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 2
 y 2
@@ -303,6 +301,7 @@ y 15
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 2
 y 15
@@ -312,14 +311,11 @@ x 2
 y 16
 end
 arch dwall_0
+glow_radius 4
 x 2
 y 16
 end
-arch light4
-x 2
-y 16
-end
-arch shop_empty
+arch woodfloor
 x 2
 y 17
 end
@@ -340,7 +336,7 @@ name guard dog
 x 2
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 3
 end
 arch dwall_2_1_2
@@ -352,51 +348,63 @@ y 1
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 3
 y 1
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 2
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 3
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 4
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 5
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 6
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 7
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 8
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 9
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 3
 y 12
 end
@@ -418,11 +426,12 @@ y 16
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 3
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 3
 y 17
 end
@@ -438,7 +447,7 @@ arch cobblestones2
 x 3
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 4
 end
 arch dwall_2_1_2
@@ -448,19 +457,12 @@ arch shop_empty
 x 4
 y 1
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 4
 y 2
 end
 arch shop_empty
-x 4
-y 3
-end
-arch dwall_0
-x 4
-y 3
-end
-arch light4
 x 4
 y 3
 end
@@ -484,14 +486,6 @@ arch shop_empty
 x 4
 y 8
 end
-arch dwall_0
-x 4
-y 8
-end
-arch light4
-x 4
-y 8
-end
 arch shop_empty
 x 4
 y 9
@@ -504,7 +498,8 @@ arch shop_empty
 x 4
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 4
 y 12
 end
@@ -516,10 +511,6 @@ arch shop_empty
 x 4
 y 14
 end
-arch light4
-x 4
-y 14
-end
 arch shop_empty
 x 4
 y 15
@@ -528,7 +519,7 @@ arch shop_empty
 x 4
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 4
 y 17
 end
@@ -544,7 +535,7 @@ arch cobblestones2
 x 4
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 5
 end
 arch dwall_2_1_2
@@ -554,7 +545,7 @@ arch shop_empty
 x 5
 y 1
 end
-arch shop_empty
+arch woodfloor
 x 5
 y 2
 end
@@ -566,11 +557,12 @@ arch shop_empty
 x 5
 y 3
 end
-arch dwall_1_4
-x 5
-y 3
-end
 arch shop_empty
+x 5
+y 4
+end
+arch firepot
+glow_radius 4
 x 5
 y 4
 end
@@ -590,10 +582,6 @@ arch shop_empty
 x 5
 y 8
 end
-arch dwall_1_4
-x 5
-y 8
-end
 arch shop_empty
 x 5
 y 9
@@ -606,7 +594,8 @@ arch shop_empty
 x 5
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 5
 y 12
 end
@@ -626,7 +615,7 @@ arch shop_empty
 x 5
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 5
 y 17
 end
@@ -646,13 +635,13 @@ arch cobblestones2
 x 5
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 6
 end
 arch dwall_3_3
 x 6
 end
-arch tile_white_floor
+arch woodfloor
 x 6
 y 1
 end
@@ -660,7 +649,7 @@ arch dwall_win1
 x 6
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 6
 y 2
 end
@@ -668,15 +657,15 @@ arch dwall_win1
 x 6
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 3
 end
-arch dwall_4
+arch dwall_win1
 x 6
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 4
 end
@@ -684,7 +673,7 @@ arch dwall_1_2
 x 6
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 5
 end
@@ -698,7 +687,7 @@ slaying Oorgh key
 x 6
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 6
 end
@@ -712,7 +701,7 @@ slaying Oorgh key
 x 6
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 7
 end
@@ -720,11 +709,11 @@ arch dwall_1_1
 x 6
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 8
 end
-arch dwall_4
+arch dwall_2_2_1
 x 6
 y 8
 end
@@ -732,19 +721,12 @@ arch shop_empty
 x 6
 y 9
 end
-arch dwall_1_2
+arch firepot
+glow_radius 4
 x 6
 y 9
 end
 arch shop_empty
-x 6
-y 10
-end
-arch dwall_0
-x 6
-y 10
-end
-arch light4
 x 6
 y 10
 end
@@ -752,7 +734,8 @@ arch shop_empty
 x 6
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 6
 y 12
 end
@@ -772,7 +755,7 @@ arch shop_empty
 x 6
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 17
 end
@@ -788,51 +771,52 @@ arch cobblestones2
 x 6
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 7
 end
 arch dwall_2_1_2
 x 7
 end
-arch tile_white_floor
+arch woodfloor
 x 7
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 7
 y 2
 end
-arch shop_empty
+arch shop_mat
+x 7
+y 2
+end
+arch woodfloor
 x 7
 y 3
 end
-arch dwall_1_3
-x 7
-y 3
-end
-arch shop_empty
+arch woodfloor
 x 7
 y 4
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 7
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 8
 end
@@ -852,11 +836,17 @@ arch shop_empty
 x 7
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 7
 y 12
 end
-arch shop_empty
+arch woodfloor
+x 7
+y 13
+end
+arch firepot
+glow_radius 4
 x 7
 y 13
 end
@@ -872,7 +862,7 @@ arch shop_empty
 x 7
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 17
 end
@@ -888,56 +878,58 @@ arch cobblestones2
 x 7
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 8
 end
 arch dwall_2_1_2
 x 8
 end
-arch tile_white_floor
+arch woodfloor
 x 8
 y 1
 end
-arch tile_white_floor
+arch firepot
+x 8
+y 1
+end
+arch woodfloor
 x 8
 y 2
 end
-arch tile_white_floor
+arch woodfloor
 x 8
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 4
 end
 arch bench_1_4
+name Service Counter
 no_pass 1
 x 8
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 5
 end
-arch light4
-x 8
-y 5
-end
-arch shop_empty
+arch woodfloor
 x 8
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 7
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 8
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 8
 end
@@ -949,19 +941,21 @@ arch shop_empty
 x 8
 y 9
 end
-arch menu
-x 8
-y 9
-end
 arch shop_empty
 x 8
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 8
 y 11
 end
-arch shop_empty
+arch menu
+x 8
+y 11
+end
+arch woodfloor
+name No Sale Area
 x 8
 y 12
 end
@@ -970,10 +964,6 @@ x 8
 y 13
 end
 arch dwall_2_2_2
-x 8
-y 13
-end
-arch light4
 x 8
 y 13
 end
@@ -1021,13 +1011,13 @@ arch cobblestones2
 x 8
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 9
 end
 arch dwall_2_1_2
 x 9
 end
-arch tile_white_floor
+arch woodfloor
 x 9
 y 1
 end
@@ -1039,36 +1029,37 @@ sp 1
 x 9
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 9
 y 2
 end
-arch tile_white_floor
+arch woodfloor
 x 9
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 4
 end
 arch bench_2_1_2
+name Service Counter
 no_pass 1
 x 9
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 9
 y 8
 end
@@ -1084,11 +1075,13 @@ arch shop_empty
 x 9
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 9
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 9
 y 12
 end
@@ -1141,7 +1134,7 @@ y 17
 end
 arch palm
 name House Plant
-no_pass 1
+glow_radius 2
 x 9
 y 17
 end
@@ -1157,13 +1150,13 @@ arch cobblestones2
 x 9
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 10
 end
 arch dwall_2_1_2
 x 10
 end
-arch tile_white_floor
+arch woodfloor
 x 10
 y 1
 end
@@ -1175,19 +1168,11 @@ sp 1
 x 10
 y 1
 end
-arch light4
-x 10
-y 1
-end
-arch tile_white_floor
+arch woodfloor
 x 10
 y 2
 end
-arch tile_white_floor
-x 10
-y 3
-end
-arch shop_mat
+arch woodfloor
 x 10
 y 3
 end
@@ -1205,32 +1190,33 @@ endmsg
 x 10
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 4
 end
 arch bench_2_1_2
+name Service Counter
 no_pass 1
 x 10
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 8
 end
-arch dwall3_3
+arch dwall_2_1_2
 x 10
 y 8
 end
@@ -1238,27 +1224,16 @@ arch shop_empty
 x 10
 y 9
 end
-arch dwall_1_2
-x 10
-y 9
-end
 arch shop_empty
 x 10
 y 10
 end
-arch dwall_0
-x 10
-y 10
-end
-arch light4
-x 10
-y 10
-end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 10
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 10
 y 12
 end
@@ -1305,10 +1280,6 @@ arch woodfloor
 x 10
 y 16
 end
-arch light4
-x 10
-y 16
-end
 arch woodfloor
 x 10
 y 17
@@ -1335,13 +1306,13 @@ arch cobblestones2
 x 10
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 11
 end
 arch dwall_2_1_2
 x 11
 end
-arch tile_white_floor
+arch woodfloor
 x 11
 y 1
 end
@@ -1353,36 +1324,37 @@ sp 1
 x 11
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 11
 y 2
 end
-arch tile_white_floor
+arch woodfloor
 x 11
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 4
 end
 arch bench_2_1_2
+name Service Counter
 no_pass 1
 x 11
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 8
 end
@@ -1398,11 +1370,13 @@ arch shop_empty
 x 11
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 11
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 11
 y 12
 end
@@ -1455,7 +1429,7 @@ y 17
 end
 arch palm
 name House Plant
-no_pass 1
+glow_radius 2
 x 11
 y 17
 end
@@ -1471,56 +1445,58 @@ arch cobblestones2
 x 11
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 12
 end
 arch dwall_2_1_2
 x 12
 end
-arch tile_white_floor
+arch woodfloor
 x 12
 y 1
 end
-arch tile_white_floor
+arch firepot
+x 12
+y 1
+end
+arch woodfloor
 x 12
 y 2
 end
-arch tile_white_floor
+arch woodfloor
 x 12
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 12
 y 4
 end
 arch bench_1_3
+name Service Counter
 no_pass 1
 x 12
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 12
 y 5
 end
-arch light4
-x 12
-y 5
-end
-arch shop_empty
+arch woodfloor
 x 12
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 12
 y 7
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 12
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 12
 y 8
 end
@@ -1528,7 +1504,7 @@ arch dwall_2_1_2
 x 12
 y 8
 end
-arch shop_floor
+arch shop_empty
 x 12
 y 9
 end
@@ -1536,11 +1512,28 @@ arch shop_empty
 x 12
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 12
 y 11
 end
-arch shop_empty
+arch sign
+msg
+NOTICE!
+-=<>=-
+The No Sale Area floor will NOT pay you for items
+dropped there. Use the white tiles for dropping
+items for which you wish to be paid.
+-=<>=-
+The Management
+endmsg
+walk_on 1
+fly_on 1
+x 12
+y 11
+end
+arch woodfloor
+name No Sale Area
 x 12
 y 12
 end
@@ -1549,10 +1542,6 @@ x 12
 y 13
 end
 arch dwall_2_2_3
-x 12
-y 13
-end
-arch light4
 x 12
 y 13
 end
@@ -1600,51 +1589,52 @@ arch cobblestones2
 x 12
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 13
 end
 arch dwall_2_1_2
 x 13
 end
-arch tile_white_floor
+arch woodfloor
 x 13
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 13
 y 2
 end
-arch shop_empty
+arch shop_mat
+x 13
+y 2
+end
+arch woodfloor
 x 13
 y 3
 end
-arch dwall_1_4
-x 13
-y 3
-end
-arch shop_empty
+arch woodfloor
 x 13
 y 4
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 13
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 13
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 13
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 13
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 13
 y 8
 end
@@ -1656,7 +1646,7 @@ arch shop_empty
 x 13
 y 9
 end
-arch shop_empty
+arch shop_floor
 x 13
 y 10
 end
@@ -1664,11 +1654,17 @@ arch shop_empty
 x 13
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 13
 y 12
 end
-arch shop_empty
+arch woodfloor
+x 13
+y 13
+end
+arch firepot
+glow_radius 4
 x 13
 y 13
 end
@@ -1684,7 +1680,7 @@ arch shop_empty
 x 13
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 13
 y 17
 end
@@ -1700,13 +1696,13 @@ arch cobblestones2
 x 13
 y 19
 end
-arch tile_white_floor
+arch woodfloor
 x 14
 end
 arch dwall_3_3
 x 14
 end
-arch tile_white_floor
+arch woodfloor
 x 14
 y 1
 end
@@ -1714,7 +1710,7 @@ arch dwall_win1
 x 14
 y 1
 end
-arch tile_white_floor
+arch woodfloor
 x 14
 y 2
 end
@@ -1722,15 +1718,15 @@ arch dwall_win1
 x 14
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 3
 end
-arch dwall_4
+arch dwall_win1
 x 14
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 4
 end
@@ -1738,7 +1734,7 @@ arch dwall_1_2
 x 14
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 5
 end
@@ -1752,9 +1748,7 @@ slaying Oorgh key
 x 14
 y 5
 end
-arch shop_empty
-unique 1
-damned 1
+arch woodfloor
 x 14
 y 6
 end
@@ -1768,7 +1762,7 @@ slaying Oorgh key
 x 14
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 7
 end
@@ -1776,11 +1770,11 @@ arch dwall_1_1
 x 14
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 8
 end
-arch dwall_4
+arch dwall_2_2_4
 x 14
 y 8
 end
@@ -1788,19 +1782,12 @@ arch shop_empty
 x 14
 y 9
 end
-arch dwall_1_2
+arch firepot
+glow_radius 4
 x 14
 y 9
 end
 arch shop_empty
-x 14
-y 10
-end
-arch dwall_0
-x 14
-y 10
-end
-arch light4
 x 14
 y 10
 end
@@ -1808,7 +1795,8 @@ arch shop_empty
 x 14
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 14
 y 12
 end
@@ -1828,7 +1816,7 @@ arch shop_empty
 x 14
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 14
 y 17
 end
@@ -1844,7 +1832,7 @@ arch cobblestones2
 x 14
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 15
 end
 arch dwall_2_1_2
@@ -1854,7 +1842,7 @@ arch shop_floor
 x 15
 y 1
 end
-arch shop_empty
+arch woodfloor
 x 15
 y 2
 end
@@ -1866,11 +1854,12 @@ arch shop_empty
 x 15
 y 3
 end
-arch dwall_1_3
-x 15
-y 3
-end
 arch shop_empty
+x 15
+y 4
+end
+arch firepot
+glow_radius 4
 x 15
 y 4
 end
@@ -1890,10 +1879,6 @@ arch shop_empty
 x 15
 y 8
 end
-arch dwall_1_3
-x 15
-y 8
-end
 arch shop_empty
 x 15
 y 9
@@ -1906,7 +1891,8 @@ arch shop_empty
 x 15
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 15
 y 12
 end
@@ -1926,7 +1912,7 @@ arch shop_empty
 x 15
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 15
 y 17
 end
@@ -1946,7 +1932,7 @@ arch cobblestones2
 x 15
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 16
 end
 arch dwall_2_1_2
@@ -1956,19 +1942,12 @@ arch shop_empty
 x 16
 y 1
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 16
 y 2
 end
 arch shop_empty
-x 16
-y 3
-end
-arch dwall_0
-x 16
-y 3
-end
-arch light4
 x 16
 y 3
 end
@@ -1992,14 +1971,6 @@ arch shop_empty
 x 16
 y 8
 end
-arch dwall_0
-x 16
-y 8
-end
-arch light4
-x 16
-y 8
-end
 arch shop_empty
 x 16
 y 9
@@ -2012,7 +1983,8 @@ arch shop_empty
 x 16
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 16
 y 12
 end
@@ -2024,10 +1996,6 @@ arch shop_empty
 x 16
 y 14
 end
-arch light4
-x 16
-y 14
-end
 arch shop_empty
 x 16
 y 15
@@ -2036,7 +2004,7 @@ arch shop_empty
 x 16
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 16
 y 17
 end
@@ -2052,7 +2020,7 @@ arch cobblestones2
 x 16
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 17
 end
 arch dwall_2_1_2
@@ -2064,51 +2032,63 @@ y 1
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 17
 y 1
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 2
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 3
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 4
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 5
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 6
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 7
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 8
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 9
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 10
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 11
 end
-arch shop_empty
+arch woodfloor
+name No Sale Area
 x 17
 y 12
 end
@@ -2130,11 +2110,12 @@ y 16
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 17
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 17
 y 17
 end
@@ -2150,7 +2131,7 @@ arch cobblestones2
 x 17
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 18
 end
 arch dwall_2_1_2
@@ -2161,10 +2142,7 @@ x 18
 y 1
 end
 arch dwall_0
-x 18
-y 1
-end
-arch light4
+glow_radius 4
 x 18
 y 1
 end
@@ -2174,6 +2152,7 @@ y 2
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 18
 y 2
@@ -2232,6 +2211,7 @@ y 15
 end
 arch palm
 name House Plant
+glow_radius 2
 no_pass 1
 x 18
 y 15
@@ -2241,14 +2221,11 @@ x 18
 y 16
 end
 arch dwall_0
+glow_radius 4
 x 18
 y 16
 end
-arch light4
-x 18
-y 16
-end
-arch shop_empty
+arch woodfloor
 x 18
 y 17
 end
@@ -2269,13 +2246,13 @@ name guard dog
 x 18
 y 19
 end
-arch shop_empty
+arch woodfloor
 x 19
 end
 arch dwall_2_2_3
 x 19
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 1
 end
@@ -2283,7 +2260,7 @@ arch dwall_2_1_1
 x 19
 y 1
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 2
 end
@@ -2291,7 +2268,7 @@ arch dwall_2_1_1
 x 19
 y 2
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 3
 end
@@ -2299,7 +2276,7 @@ arch dwall_2_1_1
 x 19
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 4
 end
@@ -2307,7 +2284,7 @@ arch dwall_2_1_1
 x 19
 y 4
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 5
 end
@@ -2315,7 +2292,7 @@ arch dwall_2_1_1
 x 19
 y 5
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 6
 end
@@ -2323,7 +2300,7 @@ arch dwall_2_1_1
 x 19
 y 6
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 7
 end
@@ -2331,7 +2308,7 @@ arch dwall_2_1_1
 x 19
 y 7
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 8
 end
@@ -2339,7 +2316,7 @@ arch dwall_2_1_1
 x 19
 y 8
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 9
 end
@@ -2347,7 +2324,7 @@ arch dwall_2_1_1
 x 19
 y 9
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 10
 end
@@ -2355,7 +2332,7 @@ arch dwall_2_1_1
 x 19
 y 10
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 11
 end
@@ -2363,7 +2340,7 @@ arch dwall_2_1_1
 x 19
 y 11
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 12
 end
@@ -2371,7 +2348,7 @@ arch dwall_2_1_1
 x 19
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 13
 end
@@ -2379,7 +2356,7 @@ arch dwall_2_1_1
 x 19
 y 13
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 14
 end
@@ -2387,7 +2364,7 @@ arch dwall_2_1_1
 x 19
 y 14
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 15
 end
@@ -2395,7 +2372,7 @@ arch dwall_2_1_1
 x 19
 y 15
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 16
 end
@@ -2403,7 +2380,7 @@ arch dwall_2_1_1
 x 19
 y 16
 end
-arch shop_empty
+arch woodfloor
 x 19
 y 17
 end
@@ -2508,6 +2485,7 @@ reflect_missile 1
 hitback 1
 unaggressive 1
 friendly 1
+stand_still 1
 sleep 0
 resist_physical 95
 resist_magic 100
