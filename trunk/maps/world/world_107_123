@@ -5505,12 +5505,20 @@ arch swall_2_2_2
 x 21
 y 38
 end
+arch dungeon_magic
+x 21
+y 38
+end
 arch grass
 elevation 26
 x 21
 y 39
 end
 arch swall_1_2
+x 21
+y 39
+end
+arch dungeon_magic
 x 21
 y 39
 end
@@ -5523,12 +5531,20 @@ connected 1
 x 21
 y 40
 end
+arch dungeon_magic
+x 21
+y 40
+end
 arch grass
 elevation 2848
 x 21
 y 41
 end
 arch swall_1_4_half
+x 21
+y 41
+end
+arch dungeon_magic
 x 21
 y 41
 end
@@ -5751,6 +5767,10 @@ x 22
 y 38
 end
 arch swall_1_3
+x 22
+y 38
+end
+arch dungeon_magic
 x 22
 y 38
 end
@@ -6095,12 +6115,20 @@ arch river_n-s
 x 23
 y 38
 end
+arch dungeon_magic
+x 23
+y 38
+end
 arch sea
 elevation 2442
 x 23
 y 39
 end
 arch river_n-s
+x 23
+y 39
+end
+arch dungeon_magic
 x 23
 y 39
 end
@@ -6110,6 +6138,10 @@ x 23
 y 40
 end
 arch river_n-s
+x 23
+y 40
+end
+arch dungeon_magic
 x 23
 y 40
 end
