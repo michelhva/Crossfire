@@ -1,15 +1,15 @@
 arch map
-region brest
 name enigme
+region brest
 msg
 Creator: Master
 Email: master@rahul.net
 Date: Wed Jun  1 00:32:43 1994
 endmsg
-hp 16
-sp 33
-x 18
-y 35
+width 18
+height 35
+enter_x 16
+enter_y 33
 end
 arch dungeon_floor
 end
@@ -368,7 +368,15 @@ arch dungeon_floor
 x 1
 y 32
 end
+arch kobold
+x 1
+y 32
+end
 arch dungeon_floor
+x 1
+y 33
+end
+arch kobold
 x 1
 y 33
 end
@@ -801,13 +809,6 @@ x 3
 y 25
 end
 arch dungeon_floor
-x 3
-y 26
-end
-arch sign
-msg
-Second : How many Grimweaper ?
-endmsg
 x 3
 y 26
 end
@@ -2608,7 +2609,10 @@ arch dungeon_floor
 x 10
 y 33
 end
-arch random_food
+arch sign
+msg
+Third : How many Kobolds?
+endmsg
 x 10
 y 33
 end
@@ -2862,6 +2866,13 @@ arch dungeon_floor
 x 11
 y 33
 end
+arch sign
+msg
+Second : How many Grimreapers?
+endmsg
+x 11
+y 33
+end
 arch dungeon_floor
 x 11
 y 34
@@ -3094,7 +3105,7 @@ y 33
 end
 arch sign
 msg
-Don't forget clues !!!
+First : How many Big-Wizards?
 endmsg
 x 12
 y 33
@@ -3322,10 +3333,6 @@ x 13
 y 32
 end
 arch dungeon_floor
-x 13
-y 33
-end
-arch kobold
 x 13
 y 33
 end
@@ -3591,7 +3598,11 @@ arch dungeon_floor
 x 14
 y 33
 end
-arch kobold
+arch sign
+msg
+Pay attention to the clues listed on the next
+signs.
+endmsg
 x 14
 y 33
 end
@@ -3809,14 +3820,13 @@ arch sign
 msg
 Notice: This dungeon was previously
 one huge map.  I split it up into
-smaller more reasonably sized pieces. 
+smaller more reasonably sized pieces.
 This should just be remembered if some
 of the exits to the different levels
 seem a little haphazardly tossed in,
 and also for the puzzle answers, all
 the maps should be considered as one.
-
- --Mark Wedel
+--Mark Wedel
 endmsg
 x 15
 y 33

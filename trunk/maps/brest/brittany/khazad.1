@@ -1,14 +1,14 @@
 arch map
-region brest
 name khazad
+region brest
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun  6 20:38:39 1994
 endmsg
-x 51
-y 35
-invisible 1
+width 51
+height 35
+darkness 1
 end
 arch dungeon_floor
 end
@@ -315,7 +315,7 @@ end
 arch sign
 msg
 This dungeon was one large map that I
-split into several smaller pieces. 
+split into several smaller pieces.
 This should be kept in mind when
 playing the map
 endmsg
@@ -445,9 +445,9 @@ x 3
 y 21
 end
 arch button_handle
+connected 2
 x 3
 y 21
-connected 2
 end
 arch medium_stones
 x 3
@@ -560,27 +560,27 @@ x 4
 y 19
 end
 arch igate_closed_2
+connected 2
 x 4
 y 19
-connected 2
 end
 arch medium_stones
 x 4
 y 20
 end
 arch igate_closed_2
+connected 2
 x 4
 y 20
-connected 2
 end
 arch medium_stones
 x 4
 y 21
 end
 arch igate_closed_2
+connected 2
 x 4
 y 21
-connected 2
 end
 arch medium_stones
 x 4
@@ -835,6 +835,13 @@ x 6
 y 21
 end
 arch medium_stones
+x 6
+y 21
+end
+arch sign_e
+msg
+Drop key to Moria on altar.
+endmsg
 x 6
 y 21
 end
@@ -967,9 +974,9 @@ end
 arch altar
 slaying cle
 food 1
+connected 1
 x 7
 y 21
-connected 1
 end
 arch medium_stones
 x 7
@@ -1082,27 +1089,27 @@ x 8
 y 19
 end
 arch block_door_closed
+connected 1
 x 8
 y 19
-connected 1
 end
 arch medium_stones
 x 8
 y 20
 end
 arch block_door_closed
+connected 1
 x 8
 y 20
-connected 1
 end
 arch medium_stones
 x 8
 y 21
 end
 arch block_door_closed
+connected 1
 x 8
 y 21
-connected 1
 end
 arch medium_stones
 x 8
@@ -7418,10 +7425,10 @@ end
 arch pit_open
 hp 6
 sp 7
-x 46
-y 32
 speed 0.500000
 value 1
+x 46
+y 32
 end
 arch small_stones
 x 46
