@@ -10,6 +10,7 @@ material 4
 weight 1800
 value 5200
 editable 2048
+randomitems emptypotionbottle
 name_pl magic power potions
 client_type 651
 end
