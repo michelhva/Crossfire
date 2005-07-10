@@ -14,6 +14,7 @@ level 1
 ac 9
 hp 5
 maxhp 5
+randomitems sheep
 run_away 80
 wc 15
 dam 1
