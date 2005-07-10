@@ -1,6 +1,7 @@
 Object small_temple2
 name small temple
 type 66
+blocksview 1
 face smalltemple2.111
 color_fg brown
 no_pick 1

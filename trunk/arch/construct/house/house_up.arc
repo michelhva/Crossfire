@@ -1,6 +1,7 @@
 Object house_up
 name house
 type 66
+blocksview 1
 face house_up.x11
 color_fg brown
 no_pick 1
@@ -11,6 +12,7 @@ More
 Object house_up_2
 name house
 type 66
+blocksview 1
 face house_up.x11
 color_fg brown
 y 1
