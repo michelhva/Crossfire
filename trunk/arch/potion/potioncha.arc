@@ -10,6 +10,7 @@ weight 1500
 value 12500
 Cha 1
 editable 2048
+randomitems emptypotionbottle
 name_pl potions of charisma
 client_type 651
 end

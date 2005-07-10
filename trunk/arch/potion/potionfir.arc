@@ -10,6 +10,7 @@ weight 1800
 value 5200
 resist_cold 90
 editable 2048
+randomitems emptypotionbottle
 name_pl potions of cold resistance
 client_type 651
 end
@@ -25,6 +26,7 @@ weight 1800
 value 28000
 resist_cold 95
 editable 2048
+randomitems emptypotionbottle
 name_pl potions of frost resistance
 client_type 651
 end
