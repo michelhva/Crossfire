@@ -1,6 +1,6 @@
 arch map
-region santodominion
 name world_102_107
+region santodominion
 msg
 
 endmsg
@@ -1960,6 +1960,10 @@ arch cobblestones
 x 9
 y 46
 end
+arch stonebridge_1_4
+x 9
+y 46
+end
 arch brush
 x 9
 y 47
@@ -2155,8 +2159,12 @@ arch sea
 x 10
 y 45
 end
-arch woodfloor2
-name bridge
+arch shallow_sea
+no_pass 0
+x 10
+y 46
+end
+arch stonebridge_2_1_2
 x 10
 y 46
 end
@@ -2355,8 +2363,12 @@ arch sea
 x 11
 y 45
 end
-arch woodfloor2
-name bridge
+arch shallow_sea
+no_pass 0
+x 11
+y 46
+end
+arch stonebridge_2_1_2
 x 11
 y 46
 end
@@ -2555,8 +2567,12 @@ arch sea
 x 12
 y 45
 end
-arch woodfloor2
-name bridge
+arch shallow_sea
+no_pass 0
+x 12
+y 46
+end
+arch stonebridge_2_1_2
 x 12
 y 46
 end
@@ -2755,8 +2771,12 @@ arch shallow_sea
 x 13
 y 45
 end
-arch woodfloor2
-name bridge
+arch shallow_sea
+no_pass 0
+x 13
+y 46
+end
+arch stonebridge_2_1_2
 x 13
 y 46
 end
@@ -2956,6 +2976,10 @@ x 14
 y 45
 end
 arch cobblestones
+x 14
+y 46
+end
+arch stonebridge_1_3
 x 14
 y 46
 end

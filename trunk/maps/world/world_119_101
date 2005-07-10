@@ -8719,9 +8719,7 @@ elevation 19
 x 27
 y 31
 end
-arch s_bridge1a
-name toll bridge
-is_floor 1
+arch stonebridge_1_4
 x 27
 y 31
 end
@@ -8992,9 +8990,13 @@ elevation -9
 x 28
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
+x 28
+y 31
+end
+arch pedestal
+invisible 1
+connected 1
 x 28
 y 31
 end
@@ -9248,9 +9250,7 @@ elevation -9
 x 29
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 29
 y 31
 end
@@ -9504,9 +9504,7 @@ elevation -9
 x 30
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 30
 y 31
 end
@@ -9760,9 +9758,7 @@ elevation -9
 x 31
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 31
 y 31
 end
@@ -10016,9 +10012,7 @@ elevation -9
 x 32
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 32
 y 31
 end
@@ -10272,9 +10266,7 @@ elevation -9
 x 33
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 33
 y 31
 end
@@ -10528,9 +10520,7 @@ elevation -9
 x 34
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
 x 34
 y 31
 end
@@ -10784,9 +10774,13 @@ elevation -9
 x 35
 y 31
 end
-arch s_bridge1
-name toll bridge
-is_floor 1
+arch stonebridge_2_1_2
+x 35
+y 31
+end
+arch pedestal
+invisible 1
+connected 1
 x 35
 y 31
 end
@@ -11039,9 +11033,7 @@ elevation 68
 x 36
 y 31
 end
-arch s_bridge1b
-name toll bridge
-is_floor 1
+arch stonebridge_1_3
 x 36
 y 31
 end
