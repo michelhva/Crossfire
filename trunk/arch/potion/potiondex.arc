@@ -10,7 +10,6 @@ weight 1500
 value 14000
 Dex 1
 editable 2048
-randomitems emptypotionbottle
 name_pl potions of dexterity
 client_type 651
 end

@@ -10,7 +10,6 @@ weight 1500
 value 14500
 Con 1
 editable 2048
-randomitems emptypotionbottle
 name_pl potions of constitution
 client_type 651
 end

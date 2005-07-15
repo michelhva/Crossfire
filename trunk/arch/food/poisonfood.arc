@@ -10,7 +10,6 @@ editable 2048
 identified 0
 name_pl boozes
 client_type 611
-randomitems emptyboozebottle
 cursed 1
 known_cursed 0
 title of poison

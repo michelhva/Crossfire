@@ -11,7 +11,6 @@ value 5200
 editable 2048
 attacktype 1048576
 need_an 1
-randomitems emptypotionbottle
 name_pl improvement potions
 client_type 651
 end

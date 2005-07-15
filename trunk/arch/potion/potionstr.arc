@@ -10,7 +10,6 @@ weight 1500
 value 15000
 Str 1
 editable 2048
-randomitems emptypotionbottle
 name_pl potions of strength
 client_type 651
 end
