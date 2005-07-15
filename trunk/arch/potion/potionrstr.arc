@@ -9,7 +9,6 @@ nrof 1
 weight 1500
 color_fg light_blue
 editable 2048
-randomitems emptypotionbottle
 name_pl potions of life
 client_type 651
 end

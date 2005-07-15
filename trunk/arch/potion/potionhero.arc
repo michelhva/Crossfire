@@ -10,7 +10,6 @@ weight 1000
 value 500
 sp 80
 editable 2048
-randomitems emptypotionbottle
 name_pl potions of heroism
 client_type 651
 end
