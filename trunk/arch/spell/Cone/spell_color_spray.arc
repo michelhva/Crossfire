@@ -7,7 +7,7 @@ sp 35
 casting_time 9
 path_attuned 0
 other_arch color_spray
-dam 8
+dam 20
 dam_modifier 3
 range 10
 duration 2
