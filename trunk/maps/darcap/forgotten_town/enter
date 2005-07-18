@@ -1002,11 +1002,6 @@ arch door_look_1
 x 7
 y 2
 end
-arch mover_5
-attacktype 1
-x 7
-y 2
-end
 arch woodfloor
 x 7
 y 3
@@ -1143,11 +1138,6 @@ x 8
 y 2
 end
 arch door_look_1
-x 8
-y 2
-end
-arch mover_5
-attacktype 1
 x 8
 y 2
 end
@@ -2166,7 +2156,7 @@ y 12
 end
 arch sign
 msg
-Be VERY carefull!
+Be VERY careful!
 endmsg
 walk_on 1
 fly_on 1

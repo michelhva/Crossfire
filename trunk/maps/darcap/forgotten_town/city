@@ -2509,7 +2509,7 @@ Hello Adventurer.
 This is the forgotten-town-quest. Feel free
 to discover all. The main target is to get the
 town-treasure. You can find a resting in the
-palace of the town. Be carefull because of
+palace of the town. Be careful because of
 the monsters in some dungeons.
 
 More information you can get in the palace.
@@ -3155,7 +3155,7 @@ arch marble
 x 5
 y 1
 end
-arch flagstone_2_1_1
+arch flagstone_3_2
 x 5
 y 1
 end
@@ -3175,7 +3175,7 @@ arch marble
 x 5
 y 2
 end
-arch flagstone_2_1_1
+arch flagstone_3_2
 x 5
 y 2
 end
@@ -3195,7 +3195,7 @@ arch marble
 x 5
 y 3
 end
-arch flagstone_2_1_1
+arch flagstone_3_2
 x 5
 y 3
 end
@@ -3213,2717 +3213,2797 @@ y 4
 end
 arch marble
 x 5
+y 4
+end
+arch flagstone_3_1
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch magic_banned
+x 5
+y 5
+end
+arch cobblestones2
+x 5
+y 5
+end
+arch marble
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch magic_banned
+x 5
+y 6
+end
+arch cobblestones2
+x 5
+y 6
+end
+arch marble
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch magic_banned
+x 5
+y 7
+end
+arch cobblestones2
+x 5
+y 7
+end
+arch marble
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch magic_banned
+x 5
+y 8
+end
+arch cobblestones2
+x 5
+y 8
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch magic_banned
+x 5
+y 9
+end
+arch cobblestones2
+x 5
+y 9
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch magic_banned
+x 5
+y 10
+end
+arch cobblestones2
+x 5
+y 10
+end
+arch marble
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch magic_banned
+x 5
+y 11
+end
+arch cobblestones2
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 12
+end
+arch magic_banned
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 12
+end
+arch dungeon_magic
+x 5
+y 13
+end
+arch magic_banned
+x 5
+y 13
+end
+arch cobblestones2
+x 5
+y 13
+end
+arch marble
+x 5
+y 13
+end
+arch dungeon_magic
+x 5
+y 14
+end
+arch magic_banned
+x 5
+y 14
+end
+arch cobblestones2
+x 5
+y 14
+end
+arch dungeon_magic
+x 5
+y 15
+end
+arch magic_banned
+x 5
+y 15
+end
+arch cobblestones2
+x 5
+y 15
+end
+arch dungeon_magic
+x 5
+y 16
+end
+arch magic_banned
+x 5
+y 16
+end
+arch cobblestones2
+x 5
+y 16
+end
+arch marble
+x 5
+y 16
+end
+arch dungeon_magic
+x 5
+y 17
+end
+arch magic_banned
+x 5
+y 17
+end
+arch cobblestones2
+x 5
+y 17
+end
+arch dungeon_magic
+x 5
+y 18
+end
+arch magic_banned
+x 5
+y 18
+end
+arch cobblestones2
+x 5
+y 18
+end
+arch dungeon_magic
+x 5
+y 19
+end
+arch magic_banned
+x 5
+y 19
+end
+arch cobblestones2
+x 5
+y 19
+end
+arch marble
+x 5
+y 19
+end
+arch dungeon_magic
+x 5
+y 20
+end
+arch magic_banned
+x 5
+y 20
+end
+arch cobblestones2
+x 5
+y 20
+end
+arch dungeon_magic
+x 5
+y 21
+end
+arch magic_banned
+x 5
+y 21
+end
+arch cobblestones2
+x 5
+y 21
+end
+arch dungeon_magic
+x 5
+y 22
+end
+arch magic_banned
+x 5
+y 22
+end
+arch cobblestones2
+x 5
+y 22
+end
+arch marble
+x 5
+y 22
+end
+arch dungeon_magic
+x 5
+y 23
+end
+arch magic_banned
+x 5
+y 23
+end
+arch cobblestones2
+x 5
+y 23
+end
+arch dungeon_magic
+x 5
+y 24
+end
+arch magic_banned
+x 5
+y 24
+end
+arch cobblestones2
+x 5
+y 24
+end
+arch dungeon_magic
+x 5
+y 25
+end
+arch magic_banned
+x 5
+y 25
+end
+arch cobblestones2
+x 5
+y 25
+end
+arch marble
+x 5
+y 25
+end
+arch dungeon_magic
+x 5
+y 26
+end
+arch magic_banned
+x 5
+y 26
+end
+arch cobblestones2
+x 5
+y 26
+end
+arch dungeon_magic
+x 5
+y 27
+end
+arch magic_banned
+x 5
+y 27
+end
+arch cobblestones2
+x 5
+y 27
+end
+arch dungeon_magic
+x 5
+y 28
+end
+arch magic_banned
+x 5
+y 28
+end
+arch cobblestones2
+x 5
+y 28
+end
+arch marble
+x 5
+y 28
+end
+arch dungeon_magic
+x 5
+y 29
+end
+arch magic_banned
+x 5
+y 29
+end
+arch cobblestones2
+x 5
+y 29
+end
+arch dungeon_magic
+x 5
+y 30
+end
+arch magic_banned
+x 5
+y 30
+end
+arch cobblestones2
+x 5
+y 30
+end
+arch dungeon_magic
+x 5
+y 31
+end
+arch magic_banned
+x 5
+y 31
+end
+arch cobblestones2
+x 5
+y 31
+end
+arch marble
+x 5
+y 31
+end
+arch dungeon_magic
+x 5
+y 32
+end
+arch magic_banned
+x 5
+y 32
+end
+arch cobblestones2
+x 5
+y 32
+end
+arch dungeon_magic
+x 5
+y 33
+end
+arch magic_banned
+x 5
+y 33
+end
+arch cobblestones2
+x 5
+y 33
+end
+arch igate_closed_1
+connected 12322
+x 5
+y 33
+end
+arch dungeon_magic
+x 5
+y 34
+end
+arch magic_banned
+x 5
+y 34
+end
+arch grass
+x 5
+y 34
+end
+arch dungeon_magic
+x 5
+y 35
+end
+arch magic_banned
+x 5
+y 35
+end
+arch biglake_n
+x 5
+y 35
+end
+arch magic_banned
+x 5
+y 36
+end
+arch dungeon_magic
+x 5
+y 36
+end
+arch grass
+x 5
+y 36
+end
+arch magic_banned
+x 5
+y 37
+end
+arch dungeon_magic
+x 5
+y 37
+end
+arch grass
+x 5
+y 37
+end
+arch dungeon_magic
+x 5
+y 38
+end
+arch magic_banned
+x 5
+y 38
+end
+arch footbridge_2_1_2
+x 5
+y 38
+end
+arch magic_banned
+x 5
+y 39
+end
+arch dungeon_magic
+x 5
+y 39
+end
+arch grass
+x 5
+y 39
+end
+arch magic_banned
+x 5
+y 40
+end
+arch dungeon_magic
+x 5
+y 40
+end
+arch grass
+x 5
+y 40
+end
+arch dungeon_magic
+x 5
+y 41
+end
+arch magic_banned
+x 5
+y 41
+end
+arch biglake_center
+x 5
+y 41
+end
+arch magic_banned
+x 5
+y 42
+end
+arch dungeon_magic
+x 5
+y 42
+end
+arch grass
+x 5
+y 42
+end
+arch magic_banned
+x 5
+y 43
+end
+arch dungeon_magic
+x 5
+y 43
+end
+arch grass
+x 5
+y 43
+end
+arch magic_banned
+x 5
+y 44
+end
+arch dungeon_magic
+x 5
+y 44
+end
+arch footbridge_2_1_2
+x 5
+y 44
+end
+arch magic_banned
+x 5
+y 45
+end
+arch dungeon_magic
+x 5
+y 45
+end
+arch grass
+x 5
+y 45
+end
+arch magic_banned
+x 5
+y 46
+end
+arch dungeon_magic
+x 5
+y 46
+end
+arch grass
+x 5
+y 46
+end
+arch magic_banned
+x 5
+y 47
+end
+arch dungeon_magic
+x 5
+y 47
+end
+arch grass_only
+x 5
+y 47
+end
+arch biglake_s
+x 5
+y 47
+end
+arch magic_banned
+x 5
+y 48
+end
+arch dungeon_magic
+x 5
+y 48
+end
+arch grass_only
+x 5
+y 48
+end
+arch cobblestones2
+x 5
+y 49
+end
+arch flagstone_2_1_2
+x 5
+y 49
+end
+arch cobblestones2
+x 6
+end
+arch flagstone_3_3
+x 6
+end
+arch dungeon_magic
+x 6
+y 1
+end
+arch magic_banned
+x 6
+y 1
+end
+arch cobblestones2
+x 6
+y 1
+end
+arch marble
+x 6
+y 1
+end
+arch flagstone_3_4
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch magic_banned
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 2
+end
+arch marble
+x 6
+y 2
+end
+arch flagstone_3_4
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch magic_banned
+x 6
+y 3
+end
+arch cobblestones2
+x 6
+y 3
+end
+arch marble
+x 6
+y 3
+end
+arch flagstone_4
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch magic_banned
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 4
+end
+arch marble
+x 6
+y 4
+end
+arch flagstone_3_1
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch magic_banned
+x 6
+y 5
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch marble
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch magic_banned
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 6
+end
+arch marble
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch magic_banned
+x 6
+y 7
+end
+arch cobblestones2
+x 6
+y 7
+end
+arch marble
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch magic_banned
+x 6
+y 8
+end
+arch cobblestones2
+x 6
+y 8
+end
+arch marble
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch magic_banned
+x 6
+y 9
+end
+arch cobblestones2
+x 6
+y 9
+end
+arch marble
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch magic_banned
+x 6
+y 10
+end
+arch cobblestones2
+x 6
+y 10
+end
+arch marble
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch magic_banned
+x 6
+y 11
+end
+arch cobblestones2
+x 6
+y 11
+end
+arch marble
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch magic_banned
+x 6
+y 12
+end
+arch cobblestones2
+x 6
+y 12
+end
+arch marble
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch magic_banned
+x 6
+y 13
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch marble
+x 6
+y 13
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch magic_banned
+x 6
+y 14
+end
+arch cobblestones2
+x 6
+y 14
+end
+arch marble
+x 6
+y 14
+end
+arch dungeon_magic
+x 6
+y 15
+end
+arch magic_banned
+x 6
+y 15
+end
+arch cobblestones2
+x 6
+y 15
+end
+arch marble
+x 6
+y 15
+end
+arch dungeon_magic
+x 6
+y 16
+end
+arch magic_banned
+x 6
+y 16
+end
+arch cobblestones2
+x 6
+y 16
+end
+arch marble
+x 6
+y 16
+end
+arch dungeon_magic
+x 6
+y 17
+end
+arch magic_banned
+x 6
+y 17
+end
+arch cobblestones2
+x 6
+y 17
+end
+arch marble
+x 6
+y 17
+end
+arch dungeon_magic
+x 6
+y 18
+end
+arch magic_banned
+x 6
+y 18
+end
+arch cobblestones2
+x 6
+y 18
+end
+arch marble
+x 6
+y 18
+end
+arch dungeon_magic
+x 6
+y 19
+end
+arch magic_banned
+x 6
+y 19
+end
+arch cobblestones2
+x 6
+y 19
+end
+arch marble
+x 6
+y 19
+end
+arch dungeon_magic
+x 6
+y 20
+end
+arch magic_banned
+x 6
+y 20
+end
+arch cobblestones2
+x 6
+y 20
+end
+arch marble
+x 6
+y 20
+end
+arch dungeon_magic
+x 6
+y 21
+end
+arch magic_banned
+x 6
+y 21
+end
+arch cobblestones2
+x 6
+y 21
+end
+arch marble
+x 6
+y 21
+end
+arch dungeon_magic
+x 6
+y 22
+end
+arch magic_banned
+x 6
+y 22
+end
+arch cobblestones2
+x 6
+y 22
+end
+arch marble
+x 6
+y 22
+end
+arch dungeon_magic
+x 6
+y 23
+end
+arch magic_banned
+x 6
+y 23
+end
+arch cobblestones2
+x 6
+y 23
+end
+arch marble
+x 6
+y 23
+end
+arch dungeon_magic
+x 6
+y 24
+end
+arch magic_banned
+x 6
+y 24
+end
+arch cobblestones2
+x 6
+y 24
+end
+arch marble
+x 6
+y 24
+end
+arch dungeon_magic
+x 6
+y 25
+end
+arch magic_banned
+x 6
+y 25
+end
+arch cobblestones2
+x 6
+y 25
+end
+arch marble
+x 6
+y 25
+end
+arch dungeon_magic
+x 6
+y 26
+end
+arch magic_banned
+x 6
+y 26
+end
+arch cobblestones2
+x 6
+y 26
+end
+arch marble
+x 6
+y 26
+end
+arch dungeon_magic
+x 6
+y 27
+end
+arch magic_banned
+x 6
+y 27
+end
+arch cobblestones2
+x 6
+y 27
+end
+arch marble
+x 6
+y 27
+end
+arch dungeon_magic
+x 6
+y 28
+end
+arch magic_banned
+x 6
+y 28
+end
+arch cobblestones2
+x 6
+y 28
+end
+arch marble
+x 6
+y 28
+end
+arch dungeon_magic
+x 6
+y 29
+end
+arch magic_banned
+x 6
+y 29
+end
+arch cobblestones2
+x 6
+y 29
+end
+arch marble
+x 6
+y 29
+end
+arch dungeon_magic
+x 6
+y 30
+end
+arch magic_banned
+x 6
+y 30
+end
+arch cobblestones2
+x 6
+y 30
+end
+arch marble
+x 6
+y 30
+end
+arch dungeon_magic
+x 6
+y 31
+end
+arch magic_banned
+x 6
+y 31
+end
+arch cobblestones2
+x 6
+y 31
+end
+arch marble
+x 6
+y 31
+end
+arch dungeon_magic
+x 6
+y 32
+end
+arch magic_banned
+x 6
+y 32
+end
+arch cobblestones2
+x 6
+y 32
+end
+arch marble
+x 6
+y 32
+end
+arch dungeon_magic
+x 6
+y 33
+end
+arch magic_banned
+x 6
+y 33
+end
+arch cobblestones2
+x 6
+y 33
+end
+arch marble
+x 6
+y 33
+end
+arch igate_closed_1
+connected 12322
+x 6
+y 33
+end
+arch dungeon_magic
+x 6
+y 34
+end
+arch magic_banned
+x 6
+y 34
+end
+arch grass
+x 6
+y 34
+end
+arch dungeon_magic
+x 6
+y 35
+end
+arch magic_banned
+x 6
+y 35
+end
+arch biglake_n
+x 6
+y 35
+end
+arch magic_banned
+x 6
+y 36
+end
+arch dungeon_magic
+x 6
+y 36
+end
+arch grass
+x 6
+y 36
+end
+arch magic_banned
+x 6
+y 37
+end
+arch dungeon_magic
+x 6
+y 37
+end
+arch grass
+x 6
+y 37
+end
+arch dungeon_magic
+x 6
+y 38
+end
+arch magic_banned
+x 6
+y 38
+end
+arch footbridge_2_1_2
+x 6
+y 38
+end
+arch magic_banned
+x 6
+y 39
+end
+arch dungeon_magic
+x 6
+y 39
+end
+arch grass
+x 6
+y 39
+end
+arch magic_banned
+x 6
+y 40
+end
+arch dungeon_magic
+x 6
+y 40
+end
+arch grass
+x 6
+y 40
+end
+arch dungeon_magic
+x 6
+y 41
+end
+arch magic_banned
+x 6
+y 41
+end
+arch biglake_center
+x 6
+y 41
+end
+arch magic_banned
+x 6
+y 42
+end
+arch dungeon_magic
+x 6
+y 42
+end
+arch grass
+x 6
+y 42
+end
+arch magic_banned
+x 6
+y 43
+end
+arch dungeon_magic
+x 6
+y 43
+end
+arch grass
+x 6
+y 43
+end
+arch magic_banned
+x 6
+y 44
+end
+arch dungeon_magic
+x 6
+y 44
+end
+arch footbridge_2_1_2
+x 6
+y 44
+end
+arch magic_banned
+x 6
+y 45
+end
+arch dungeon_magic
+x 6
+y 45
+end
+arch grass
+x 6
+y 45
+end
+arch magic_banned
+x 6
+y 46
+end
+arch dungeon_magic
+x 6
+y 46
+end
+arch grass
+x 6
+y 46
+end
+arch magic_banned
+x 6
+y 47
+end
+arch dungeon_magic
+x 6
+y 47
+end
+arch grass_only
+x 6
+y 47
+end
+arch biglake_s
+x 6
+y 47
+end
+arch magic_banned
+x 6
+y 48
+end
+arch dungeon_magic
+x 6
+y 48
+end
+arch grass_only
+x 6
+y 48
+end
+arch cobblestones2
+x 6
+y 49
+end
+arch flagstone_2_1_2
+x 6
+y 49
+end
+arch cobblestones2
+x 7
+end
+arch flagstone_2_1_2
+x 7
+end
+arch dungeon_magic
+x 7
+y 1
+end
+arch magic_banned
+x 7
+y 1
+end
+arch cobblestones2
+x 7
+y 1
+end
+arch marble
+x 7
+y 1
+end
+arch button_small
+connected 12322
+x 7
+y 1
+end
+arch gateTrg1
+connected 12321
+x 7
+y 1
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch magic_banned
+x 7
+y 2
+end
+arch cobblestones2
+x 7
+y 2
+end
+arch marble
+x 7
+y 2
+end
+arch button_small
+connected 12323
+x 7
+y 2
+end
+arch grate_open_1
+connected 12323
+x 7
+y 2
+end
+arch boulder
+x 7
+y 2
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch magic_banned
+x 7
+y 3
+end
+arch cobblestones2
+x 7
+y 3
+end
+arch marble
+x 7
+y 3
+end
+arch flagstone_3_3
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch magic_banned
+x 7
+y 4
+end
+arch cobblestones2
+x 7
+y 4
+end
+arch marble
+x 7
+y 4
+end
+arch flagstone_3_1
+x 7
+y 4
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch magic_banned
+x 7
+y 5
+end
+arch cobblestones2
+x 7
+y 5
+end
+arch marble
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch magic_banned
+x 7
+y 6
+end
+arch cobblestones2
+x 7
+y 6
+end
+arch marble
+x 7
+y 6
+end
+arch dungeon_magic
+x 7
+y 7
+end
+arch magic_banned
+x 7
+y 7
+end
+arch cobblestones2
+x 7
+y 7
+end
+arch marble
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 8
+end
+arch magic_banned
+x 7
+y 8
+end
+arch cobblestones2
+x 7
+y 8
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch magic_banned
+x 7
+y 9
+end
+arch cobblestones2
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch magic_banned
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 10
+end
+arch marble
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch magic_banned
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch magic_banned
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch magic_banned
+x 7
+y 13
+end
+arch cobblestones2
+x 7
+y 13
+end
+arch marble
+x 7
+y 13
+end
+arch dungeon_magic
+x 7
+y 14
+end
+arch magic_banned
+x 7
+y 14
+end
+arch cobblestones2
+x 7
+y 14
+end
+arch dungeon_magic
+x 7
+y 15
+end
+arch magic_banned
+x 7
+y 15
+end
+arch cobblestones2
+x 7
+y 15
+end
+arch dungeon_magic
+x 7
+y 16
+end
+arch magic_banned
+x 7
+y 16
+end
+arch cobblestones2
+x 7
+y 16
+end
+arch marble
+x 7
+y 16
+end
+arch dungeon_magic
+x 7
+y 17
+end
+arch magic_banned
+x 7
+y 17
+end
+arch cobblestones2
+x 7
+y 17
+end
+arch dungeon_magic
+x 7
+y 18
+end
+arch magic_banned
+x 7
+y 18
+end
+arch cobblestones2
+x 7
+y 18
+end
+arch dungeon_magic
+x 7
+y 19
+end
+arch magic_banned
+x 7
+y 19
+end
+arch cobblestones2
+x 7
+y 19
+end
+arch marble
+x 7
+y 19
+end
+arch dungeon_magic
+x 7
+y 20
+end
+arch magic_banned
+x 7
+y 20
+end
+arch cobblestones2
+x 7
+y 20
+end
+arch dungeon_magic
+x 7
+y 21
+end
+arch magic_banned
+x 7
+y 21
+end
+arch cobblestones2
+x 7
+y 21
+end
+arch dungeon_magic
+x 7
+y 22
+end
+arch magic_banned
+x 7
+y 22
+end
+arch cobblestones2
+x 7
+y 22
+end
+arch marble
+x 7
+y 22
+end
+arch dungeon_magic
+x 7
+y 23
+end
+arch magic_banned
+x 7
+y 23
+end
+arch cobblestones2
+x 7
+y 23
+end
+arch dungeon_magic
+x 7
+y 24
+end
+arch magic_banned
+x 7
+y 24
+end
+arch cobblestones2
+x 7
+y 24
+end
+arch dungeon_magic
+x 7
+y 25
+end
+arch magic_banned
+x 7
+y 25
+end
+arch cobblestones2
+x 7
+y 25
+end
+arch marble
+x 7
+y 25
+end
+arch dungeon_magic
+x 7
+y 26
+end
+arch magic_banned
+x 7
+y 26
+end
+arch cobblestones2
+x 7
+y 26
+end
+arch dungeon_magic
+x 7
+y 27
+end
+arch magic_banned
+x 7
+y 27
+end
+arch cobblestones2
+x 7
+y 27
+end
+arch dungeon_magic
+x 7
+y 28
+end
+arch magic_banned
+x 7
+y 28
+end
+arch cobblestones2
+x 7
+y 28
+end
+arch marble
+x 7
+y 28
+end
+arch dungeon_magic
+x 7
+y 29
+end
+arch magic_banned
+x 7
+y 29
+end
+arch cobblestones2
+x 7
+y 29
+end
+arch dungeon_magic
+x 7
+y 30
+end
+arch magic_banned
+x 7
+y 30
+end
+arch cobblestones2
+x 7
+y 30
+end
+arch dungeon_magic
+x 7
+y 31
+end
+arch magic_banned
+x 7
+y 31
+end
+arch cobblestones2
+x 7
+y 31
+end
+arch marble
+x 7
+y 31
+end
+arch dungeon_magic
+x 7
+y 32
+end
+arch magic_banned
+x 7
+y 32
+end
+arch cobblestones2
+x 7
+y 32
+end
+arch dungeon_magic
+x 7
+y 33
+end
+arch magic_banned
+x 7
+y 33
+end
+arch cobblestones2
+x 7
+y 33
+end
+arch igate_closed_1
+connected 12322
+x 7
+y 33
+end
+arch dungeon_magic
+x 7
+y 34
+end
+arch magic_banned
+x 7
+y 34
+end
+arch grass
+x 7
+y 34
+end
+arch dungeon_magic
+x 7
+y 35
+end
+arch magic_banned
+x 7
+y 35
+end
+arch biglake_n
+x 7
+y 35
+end
+arch magic_banned
+x 7
+y 36
+end
+arch dungeon_magic
+x 7
+y 36
+end
+arch grass
+x 7
+y 36
+end
+arch magic_banned
+x 7
+y 37
+end
+arch dungeon_magic
+x 7
+y 37
+end
+arch grass
+x 7
+y 37
+end
+arch dungeon_magic
+x 7
+y 38
+end
+arch magic_banned
+x 7
+y 38
+end
+arch footbridge_2_1_2
+x 7
+y 38
+end
+arch magic_banned
+x 7
+y 39
+end
+arch dungeon_magic
+x 7
+y 39
+end
+arch grass
+x 7
+y 39
+end
+arch magic_banned
+x 7
+y 40
+end
+arch dungeon_magic
+x 7
+y 40
+end
+arch grass
+x 7
+y 40
+end
+arch dungeon_magic
+x 7
+y 41
+end
+arch magic_banned
+x 7
+y 41
+end
+arch biglake_center
+x 7
+y 41
+end
+arch magic_banned
+x 7
+y 42
+end
+arch dungeon_magic
+x 7
+y 42
+end
+arch grass
+x 7
+y 42
+end
+arch magic_banned
+x 7
+y 43
+end
+arch dungeon_magic
+x 7
+y 43
+end
+arch grass
+x 7
+y 43
+end
+arch magic_banned
+x 7
+y 44
+end
+arch dungeon_magic
+x 7
+y 44
+end
+arch footbridge_2_1_2
+x 7
+y 44
+end
+arch magic_banned
+x 7
+y 45
+end
+arch dungeon_magic
+x 7
+y 45
+end
+arch grass
+x 7
+y 45
+end
+arch magic_banned
+x 7
+y 46
+end
+arch dungeon_magic
+x 7
+y 46
+end
+arch grass
+x 7
+y 46
+end
+arch magic_banned
+x 7
+y 47
+end
+arch dungeon_magic
+x 7
+y 47
+end
+arch grass_only
+x 7
+y 47
+end
+arch biglake_s
+x 7
+y 47
+end
+arch magic_banned
+x 7
+y 48
+end
+arch dungeon_magic
+x 7
+y 48
+end
+arch grass_only
+x 7
+y 48
+end
+arch cobblestones2
+x 7
+y 49
+end
+arch flagstone_2_1_2
+x 7
+y 49
+end
+arch cobblestones2
+x 8
+end
+arch flagstone_3_3
+x 8
+end
+arch dungeon_magic
+x 8
+y 1
+end
+arch magic_banned
+x 8
+y 1
+end
+arch cobblestones2
+x 8
+y 1
+end
+arch marble
+x 8
+y 1
+end
+arch flagstone_3_2
+x 8
+y 1
+end
+arch dungeon_magic
+x 8
+y 2
+end
+arch magic_banned
+x 8
+y 2
+end
+arch cobblestones2
+x 8
+y 2
+end
+arch marble
+x 8
+y 2
+end
+arch flagstone_3_2
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch magic_banned
+x 8
+y 3
+end
+arch cobblestones2
+x 8
+y 3
+end
+arch marble
+x 8
+y 3
+end
+arch flagstone_4
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch magic_banned
+x 8
+y 4
+end
+arch cobblestones2
+x 8
+y 4
+end
+arch marble
+x 8
+y 4
+end
+arch flagstone_3_1
+x 8
+y 4
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch magic_banned
+x 8
+y 5
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch marble
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch magic_banned
+x 8
+y 6
+end
+arch cobblestones2
+x 8
+y 6
+end
+arch marble
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch magic_banned
+x 8
+y 7
+end
+arch cobblestones2
+x 8
+y 7
+end
+arch marble
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 8
+end
+arch magic_banned
+x 8
+y 8
+end
+arch cobblestones2
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch magic_banned
+x 8
+y 9
+end
+arch cobblestones2
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch magic_banned
+x 8
+y 10
+end
+arch cobblestones2
+x 8
+y 10
+end
+arch marble
+x 8
+y 10
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch magic_banned
+x 8
+y 11
+end
+arch cobblestones2
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch magic_banned
+x 8
+y 12
+end
+arch cobblestones2
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch magic_banned
+x 8
+y 13
+end
+arch cobblestones2
+x 8
+y 13
+end
+arch marble
+x 8
+y 13
+end
+arch dungeon_magic
+x 8
+y 14
+end
+arch magic_banned
+x 8
+y 14
+end
+arch cobblestones2
+x 8
+y 14
+end
+arch dungeon_magic
+x 8
+y 15
+end
+arch magic_banned
+x 8
+y 15
+end
+arch cobblestones2
+x 8
+y 15
+end
+arch dungeon_magic
+x 8
+y 16
+end
+arch magic_banned
+x 8
+y 16
+end
+arch cobblestones2
+x 8
+y 16
+end
+arch marble
+x 8
+y 16
+end
+arch dungeon_magic
+x 8
+y 17
+end
+arch magic_banned
+x 8
+y 17
+end
+arch cobblestones2
+x 8
+y 17
+end
+arch dungeon_magic
+x 8
+y 18
+end
+arch magic_banned
+x 8
+y 18
+end
+arch cobblestones2
+x 8
+y 18
+end
+arch dungeon_magic
+x 8
+y 19
+end
+arch magic_banned
+x 8
+y 19
+end
+arch cobblestones2
+x 8
+y 19
+end
+arch marble
+x 8
+y 19
+end
+arch dungeon_magic
+x 8
+y 20
+end
+arch magic_banned
+x 8
+y 20
+end
+arch cobblestones2
+x 8
+y 20
+end
+arch dungeon_magic
+x 8
+y 21
+end
+arch magic_banned
+x 8
+y 21
+end
+arch cobblestones2
+x 8
+y 21
+end
+arch dungeon_magic
+x 8
+y 22
+end
+arch magic_banned
+x 8
+y 22
+end
+arch cobblestones2
+x 8
+y 22
+end
+arch marble
+x 8
+y 22
+end
+arch dungeon_magic
+x 8
+y 23
+end
+arch magic_banned
+x 8
+y 23
+end
+arch cobblestones2
+x 8
+y 23
+end
+arch dungeon_magic
+x 8
+y 24
+end
+arch magic_banned
+x 8
+y 24
+end
+arch cobblestones2
+x 8
+y 24
+end
+arch dungeon_magic
+x 8
+y 25
+end
+arch magic_banned
+x 8
+y 25
+end
+arch cobblestones2
+x 8
+y 25
+end
+arch marble
+x 8
+y 25
+end
+arch dungeon_magic
+x 8
+y 26
+end
+arch magic_banned
+x 8
+y 26
+end
+arch cobblestones2
+x 8
+y 26
+end
+arch dungeon_magic
+x 8
+y 27
+end
+arch magic_banned
+x 8
+y 27
+end
+arch cobblestones2
+x 8
+y 27
+end
+arch dungeon_magic
+x 8
+y 28
+end
+arch magic_banned
+x 8
+y 28
+end
+arch cobblestones2
+x 8
+y 28
+end
+arch marble
+x 8
+y 28
+end
+arch dungeon_magic
+x 8
+y 29
+end
+arch magic_banned
+x 8
+y 29
+end
+arch cobblestones2
+x 8
+y 29
+end
+arch dungeon_magic
+x 8
+y 30
+end
+arch magic_banned
+x 8
+y 30
+end
+arch cobblestones2
+x 8
+y 30
+end
+arch dungeon_magic
+x 8
+y 31
+end
+arch magic_banned
+x 8
+y 31
+end
+arch cobblestones2
+x 8
+y 31
+end
+arch marble
+x 8
+y 31
+end
+arch dungeon_magic
+x 8
+y 32
+end
+arch magic_banned
+x 8
+y 32
+end
+arch cobblestones2
+x 8
+y 32
+end
+arch dungeon_magic
+x 8
+y 33
+end
+arch magic_banned
+x 8
+y 33
+end
+arch cobblestones2
+x 8
+y 33
+end
+arch igate_closed_1
+connected 12322
+x 8
+y 33
+end
+arch dungeon_magic
+x 8
+y 34
+end
+arch magic_banned
+x 8
+y 34
+end
+arch grass
+x 8
+y 34
+end
+arch dungeon_magic
+x 8
+y 35
+end
+arch magic_banned
+x 8
+y 35
+end
+arch biglake_n
+x 8
+y 35
+end
+arch magic_banned
+x 8
+y 36
+end
+arch dungeon_magic
+x 8
+y 36
+end
+arch grass
+x 8
+y 36
+end
+arch magic_banned
+x 8
+y 37
+end
+arch dungeon_magic
+x 8
+y 37
+end
+arch grass
+x 8
+y 37
+end
+arch dungeon_magic
+x 8
+y 38
+end
+arch magic_banned
+x 8
+y 38
+end
+arch footbridge_2_1_2
+x 8
+y 38
+end
+arch magic_banned
+x 8
+y 39
+end
+arch dungeon_magic
+x 8
+y 39
+end
+arch grass
+x 8
+y 39
+end
+arch magic_banned
+x 8
+y 40
+end
+arch dungeon_magic
+x 8
+y 40
+end
+arch grass
+x 8
+y 40
+end
+arch dungeon_magic
+x 8
+y 41
+end
+arch magic_banned
+x 8
+y 41
+end
+arch biglake_center
+x 8
+y 41
+end
+arch magic_banned
+x 8
+y 42
+end
+arch dungeon_magic
+x 8
+y 42
+end
+arch grass
+x 8
+y 42
+end
+arch magic_banned
+x 8
+y 43
+end
+arch dungeon_magic
+x 8
+y 43
+end
+arch grass
+x 8
+y 43
+end
+arch magic_banned
+x 8
+y 44
+end
+arch dungeon_magic
+x 8
+y 44
+end
+arch footbridge_2_1_2
+x 8
+y 44
+end
+arch magic_banned
+x 8
+y 45
+end
+arch dungeon_magic
+x 8
+y 45
+end
+arch grass
+x 8
+y 45
+end
+arch magic_banned
+x 8
+y 46
+end
+arch dungeon_magic
+x 8
+y 46
+end
+arch grass
+x 8
+y 46
+end
+arch magic_banned
+x 8
+y 47
+end
+arch dungeon_magic
+x 8
+y 47
+end
+arch grass_only
+x 8
+y 47
+end
+arch biglake_s
+x 8
+y 47
+end
+arch magic_banned
+x 8
+y 48
+end
+arch dungeon_magic
+x 8
+y 48
+end
+arch grass_only
+x 8
+y 48
+end
+arch cobblestones2
+x 8
+y 49
+end
+arch flagstone_2_1_2
+x 8
+y 49
+end
+arch cobblestones2
+x 9
+end
+arch flagstone_3_3
+x 9
+end
+arch dungeon_magic
+x 9
+y 1
+end
+arch magic_banned
+x 9
+y 1
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch marble
+x 9
+y 1
+end
+arch flagstone_3_4
+x 9
+y 1
+end
+arch dungeon_magic
+x 9
+y 2
+end
+arch magic_banned
+x 9
+y 2
+end
+arch cobblestones2
+x 9
+y 2
+end
+arch marble
+x 9
+y 2
+end
+arch flagstone_3_4
+x 9
+y 2
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch magic_banned
+x 9
+y 3
+end
+arch cobblestones2
+x 9
+y 3
+end
+arch marble
+x 9
+y 3
+end
+arch flagstone_3_4
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 4
+end
+arch magic_banned
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 4
+end
+arch marble
+x 9
 y 4
 end
 arch flagstone_2_2_4
-x 5
-y 4
-end
-arch dungeon_magic
-x 5
-y 5
-end
-arch magic_banned
-x 5
-y 5
-end
-arch cobblestones2
-x 5
-y 5
-end
-arch marble
-x 5
-y 5
-end
-arch dungeon_magic
-x 5
-y 6
-end
-arch magic_banned
-x 5
-y 6
-end
-arch cobblestones2
-x 5
-y 6
-end
-arch marble
-x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 7
-end
-arch magic_banned
-x 5
-y 7
-end
-arch cobblestones2
-x 5
-y 7
-end
-arch marble
-x 5
-y 7
-end
-arch dungeon_magic
-x 5
-y 8
-end
-arch magic_banned
-x 5
-y 8
-end
-arch cobblestones2
-x 5
-y 8
-end
-arch dungeon_magic
-x 5
-y 9
-end
-arch magic_banned
-x 5
-y 9
-end
-arch cobblestones2
-x 5
-y 9
-end
-arch dungeon_magic
-x 5
-y 10
-end
-arch magic_banned
-x 5
-y 10
-end
-arch cobblestones2
-x 5
-y 10
-end
-arch marble
-x 5
-y 10
-end
-arch dungeon_magic
-x 5
-y 11
-end
-arch magic_banned
-x 5
-y 11
-end
-arch cobblestones2
-x 5
-y 11
-end
-arch dungeon_magic
-x 5
-y 12
-end
-arch magic_banned
-x 5
-y 12
-end
-arch cobblestones2
-x 5
-y 12
-end
-arch dungeon_magic
-x 5
-y 13
-end
-arch magic_banned
-x 5
-y 13
-end
-arch cobblestones2
-x 5
-y 13
-end
-arch marble
-x 5
-y 13
-end
-arch dungeon_magic
-x 5
-y 14
-end
-arch magic_banned
-x 5
-y 14
-end
-arch cobblestones2
-x 5
-y 14
-end
-arch dungeon_magic
-x 5
-y 15
-end
-arch magic_banned
-x 5
-y 15
-end
-arch cobblestones2
-x 5
-y 15
-end
-arch dungeon_magic
-x 5
-y 16
-end
-arch magic_banned
-x 5
-y 16
-end
-arch cobblestones2
-x 5
-y 16
-end
-arch marble
-x 5
-y 16
-end
-arch dungeon_magic
-x 5
-y 17
-end
-arch magic_banned
-x 5
-y 17
-end
-arch cobblestones2
-x 5
-y 17
-end
-arch dungeon_magic
-x 5
-y 18
-end
-arch magic_banned
-x 5
-y 18
-end
-arch cobblestones2
-x 5
-y 18
-end
-arch dungeon_magic
-x 5
-y 19
-end
-arch magic_banned
-x 5
-y 19
-end
-arch cobblestones2
-x 5
-y 19
-end
-arch marble
-x 5
-y 19
-end
-arch dungeon_magic
-x 5
-y 20
-end
-arch magic_banned
-x 5
-y 20
-end
-arch cobblestones2
-x 5
-y 20
-end
-arch dungeon_magic
-x 5
-y 21
-end
-arch magic_banned
-x 5
-y 21
-end
-arch cobblestones2
-x 5
-y 21
-end
-arch dungeon_magic
-x 5
-y 22
-end
-arch magic_banned
-x 5
-y 22
-end
-arch cobblestones2
-x 5
-y 22
-end
-arch marble
-x 5
-y 22
-end
-arch dungeon_magic
-x 5
-y 23
-end
-arch magic_banned
-x 5
-y 23
-end
-arch cobblestones2
-x 5
-y 23
-end
-arch dungeon_magic
-x 5
-y 24
-end
-arch magic_banned
-x 5
-y 24
-end
-arch cobblestones2
-x 5
-y 24
-end
-arch dungeon_magic
-x 5
-y 25
-end
-arch magic_banned
-x 5
-y 25
-end
-arch cobblestones2
-x 5
-y 25
-end
-arch marble
-x 5
-y 25
-end
-arch dungeon_magic
-x 5
-y 26
-end
-arch magic_banned
-x 5
-y 26
-end
-arch cobblestones2
-x 5
-y 26
-end
-arch dungeon_magic
-x 5
-y 27
-end
-arch magic_banned
-x 5
-y 27
-end
-arch cobblestones2
-x 5
-y 27
-end
-arch dungeon_magic
-x 5
-y 28
-end
-arch magic_banned
-x 5
-y 28
-end
-arch cobblestones2
-x 5
-y 28
-end
-arch marble
-x 5
-y 28
-end
-arch dungeon_magic
-x 5
-y 29
-end
-arch magic_banned
-x 5
-y 29
-end
-arch cobblestones2
-x 5
-y 29
-end
-arch dungeon_magic
-x 5
-y 30
-end
-arch magic_banned
-x 5
-y 30
-end
-arch cobblestones2
-x 5
-y 30
-end
-arch dungeon_magic
-x 5
-y 31
-end
-arch magic_banned
-x 5
-y 31
-end
-arch cobblestones2
-x 5
-y 31
-end
-arch marble
-x 5
-y 31
-end
-arch dungeon_magic
-x 5
-y 32
-end
-arch magic_banned
-x 5
-y 32
-end
-arch cobblestones2
-x 5
-y 32
-end
-arch dungeon_magic
-x 5
-y 33
-end
-arch magic_banned
-x 5
-y 33
-end
-arch cobblestones2
-x 5
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 5
-y 33
-end
-arch dungeon_magic
-x 5
-y 34
-end
-arch magic_banned
-x 5
-y 34
-end
-arch grass
-x 5
-y 34
-end
-arch dungeon_magic
-x 5
-y 35
-end
-arch magic_banned
-x 5
-y 35
-end
-arch biglake_n
-x 5
-y 35
-end
-arch magic_banned
-x 5
-y 36
-end
-arch dungeon_magic
-x 5
-y 36
-end
-arch grass
-x 5
-y 36
-end
-arch magic_banned
-x 5
-y 37
-end
-arch dungeon_magic
-x 5
-y 37
-end
-arch grass
-x 5
-y 37
-end
-arch dungeon_magic
-x 5
-y 38
-end
-arch magic_banned
-x 5
-y 38
-end
-arch footbridge_2_1_2
-x 5
-y 38
-end
-arch magic_banned
-x 5
-y 39
-end
-arch dungeon_magic
-x 5
-y 39
-end
-arch grass
-x 5
-y 39
-end
-arch magic_banned
-x 5
-y 40
-end
-arch dungeon_magic
-x 5
-y 40
-end
-arch grass
-x 5
-y 40
-end
-arch dungeon_magic
-x 5
-y 41
-end
-arch magic_banned
-x 5
-y 41
-end
-arch biglake_center
-x 5
-y 41
-end
-arch magic_banned
-x 5
-y 42
-end
-arch dungeon_magic
-x 5
-y 42
-end
-arch grass
-x 5
-y 42
-end
-arch magic_banned
-x 5
-y 43
-end
-arch dungeon_magic
-x 5
-y 43
-end
-arch grass
-x 5
-y 43
-end
-arch magic_banned
-x 5
-y 44
-end
-arch dungeon_magic
-x 5
-y 44
-end
-arch footbridge_2_1_2
-x 5
-y 44
-end
-arch magic_banned
-x 5
-y 45
-end
-arch dungeon_magic
-x 5
-y 45
-end
-arch grass
-x 5
-y 45
-end
-arch magic_banned
-x 5
-y 46
-end
-arch dungeon_magic
-x 5
-y 46
-end
-arch grass
-x 5
-y 46
-end
-arch magic_banned
-x 5
-y 47
-end
-arch dungeon_magic
-x 5
-y 47
-end
-arch grass_only
-x 5
-y 47
-end
-arch biglake_s
-x 5
-y 47
-end
-arch magic_banned
-x 5
-y 48
-end
-arch dungeon_magic
-x 5
-y 48
-end
-arch grass_only
-x 5
-y 48
-end
-arch cobblestones2
-x 5
-y 49
-end
-arch flagstone_2_1_2
-x 5
-y 49
-end
-arch cobblestones2
-x 6
-end
-arch flagstone_2_1_2
-x 6
-end
-arch dungeon_magic
-x 6
-y 1
-end
-arch magic_banned
-x 6
-y 1
-end
-arch cobblestones2
-x 6
-y 1
-end
-arch marble
-x 6
-y 1
-end
-arch dungeon_magic
-x 6
-y 2
-end
-arch magic_banned
-x 6
-y 2
-end
-arch cobblestones2
-x 6
-y 2
-end
-arch marble
-x 6
-y 2
-end
-arch dungeon_magic
-x 6
-y 3
-end
-arch magic_banned
-x 6
-y 3
-end
-arch cobblestones2
-x 6
-y 3
-end
-arch marble
-x 6
-y 3
-end
-arch dungeon_magic
-x 6
-y 4
-end
-arch magic_banned
-x 6
-y 4
-end
-arch cobblestones2
-x 6
-y 4
-end
-arch marble
-x 6
-y 4
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch magic_banned
-x 6
-y 5
-end
-arch cobblestones2
-x 6
-y 5
-end
-arch marble
-x 6
-y 5
-end
-arch dungeon_magic
-x 6
-y 6
-end
-arch magic_banned
-x 6
-y 6
-end
-arch cobblestones2
-x 6
-y 6
-end
-arch marble
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch magic_banned
-x 6
-y 7
-end
-arch cobblestones2
-x 6
-y 7
-end
-arch marble
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 8
-end
-arch magic_banned
-x 6
-y 8
-end
-arch cobblestones2
-x 6
-y 8
-end
-arch marble
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
-y 9
-end
-arch magic_banned
-x 6
-y 9
-end
-arch cobblestones2
-x 6
-y 9
-end
-arch marble
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch magic_banned
-x 6
-y 10
-end
-arch cobblestones2
-x 6
-y 10
-end
-arch marble
-x 6
-y 10
-end
-arch dungeon_magic
-x 6
-y 11
-end
-arch magic_banned
-x 6
-y 11
-end
-arch cobblestones2
-x 6
-y 11
-end
-arch marble
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch magic_banned
-x 6
-y 12
-end
-arch cobblestones2
-x 6
-y 12
-end
-arch marble
-x 6
-y 12
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch magic_banned
-x 6
-y 13
-end
-arch cobblestones2
-x 6
-y 13
-end
-arch marble
-x 6
-y 13
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch magic_banned
-x 6
-y 14
-end
-arch cobblestones2
-x 6
-y 14
-end
-arch marble
-x 6
-y 14
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch magic_banned
-x 6
-y 15
-end
-arch cobblestones2
-x 6
-y 15
-end
-arch marble
-x 6
-y 15
-end
-arch dungeon_magic
-x 6
-y 16
-end
-arch magic_banned
-x 6
-y 16
-end
-arch cobblestones2
-x 6
-y 16
-end
-arch marble
-x 6
-y 16
-end
-arch dungeon_magic
-x 6
-y 17
-end
-arch magic_banned
-x 6
-y 17
-end
-arch cobblestones2
-x 6
-y 17
-end
-arch marble
-x 6
-y 17
-end
-arch dungeon_magic
-x 6
-y 18
-end
-arch magic_banned
-x 6
-y 18
-end
-arch cobblestones2
-x 6
-y 18
-end
-arch marble
-x 6
-y 18
-end
-arch dungeon_magic
-x 6
-y 19
-end
-arch magic_banned
-x 6
-y 19
-end
-arch cobblestones2
-x 6
-y 19
-end
-arch marble
-x 6
-y 19
-end
-arch dungeon_magic
-x 6
-y 20
-end
-arch magic_banned
-x 6
-y 20
-end
-arch cobblestones2
-x 6
-y 20
-end
-arch marble
-x 6
-y 20
-end
-arch dungeon_magic
-x 6
-y 21
-end
-arch magic_banned
-x 6
-y 21
-end
-arch cobblestones2
-x 6
-y 21
-end
-arch marble
-x 6
-y 21
-end
-arch dungeon_magic
-x 6
-y 22
-end
-arch magic_banned
-x 6
-y 22
-end
-arch cobblestones2
-x 6
-y 22
-end
-arch marble
-x 6
-y 22
-end
-arch dungeon_magic
-x 6
-y 23
-end
-arch magic_banned
-x 6
-y 23
-end
-arch cobblestones2
-x 6
-y 23
-end
-arch marble
-x 6
-y 23
-end
-arch dungeon_magic
-x 6
-y 24
-end
-arch magic_banned
-x 6
-y 24
-end
-arch cobblestones2
-x 6
-y 24
-end
-arch marble
-x 6
-y 24
-end
-arch dungeon_magic
-x 6
-y 25
-end
-arch magic_banned
-x 6
-y 25
-end
-arch cobblestones2
-x 6
-y 25
-end
-arch marble
-x 6
-y 25
-end
-arch dungeon_magic
-x 6
-y 26
-end
-arch magic_banned
-x 6
-y 26
-end
-arch cobblestones2
-x 6
-y 26
-end
-arch marble
-x 6
-y 26
-end
-arch dungeon_magic
-x 6
-y 27
-end
-arch magic_banned
-x 6
-y 27
-end
-arch cobblestones2
-x 6
-y 27
-end
-arch marble
-x 6
-y 27
-end
-arch dungeon_magic
-x 6
-y 28
-end
-arch magic_banned
-x 6
-y 28
-end
-arch cobblestones2
-x 6
-y 28
-end
-arch marble
-x 6
-y 28
-end
-arch dungeon_magic
-x 6
-y 29
-end
-arch magic_banned
-x 6
-y 29
-end
-arch cobblestones2
-x 6
-y 29
-end
-arch marble
-x 6
-y 29
-end
-arch dungeon_magic
-x 6
-y 30
-end
-arch magic_banned
-x 6
-y 30
-end
-arch cobblestones2
-x 6
-y 30
-end
-arch marble
-x 6
-y 30
-end
-arch dungeon_magic
-x 6
-y 31
-end
-arch magic_banned
-x 6
-y 31
-end
-arch cobblestones2
-x 6
-y 31
-end
-arch marble
-x 6
-y 31
-end
-arch dungeon_magic
-x 6
-y 32
-end
-arch magic_banned
-x 6
-y 32
-end
-arch cobblestones2
-x 6
-y 32
-end
-arch marble
-x 6
-y 32
-end
-arch dungeon_magic
-x 6
-y 33
-end
-arch magic_banned
-x 6
-y 33
-end
-arch cobblestones2
-x 6
-y 33
-end
-arch marble
-x 6
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 6
-y 33
-end
-arch dungeon_magic
-x 6
-y 34
-end
-arch magic_banned
-x 6
-y 34
-end
-arch grass
-x 6
-y 34
-end
-arch dungeon_magic
-x 6
-y 35
-end
-arch magic_banned
-x 6
-y 35
-end
-arch biglake_n
-x 6
-y 35
-end
-arch magic_banned
-x 6
-y 36
-end
-arch dungeon_magic
-x 6
-y 36
-end
-arch grass
-x 6
-y 36
-end
-arch magic_banned
-x 6
-y 37
-end
-arch dungeon_magic
-x 6
-y 37
-end
-arch grass
-x 6
-y 37
-end
-arch dungeon_magic
-x 6
-y 38
-end
-arch magic_banned
-x 6
-y 38
-end
-arch footbridge_2_1_2
-x 6
-y 38
-end
-arch magic_banned
-x 6
-y 39
-end
-arch dungeon_magic
-x 6
-y 39
-end
-arch grass
-x 6
-y 39
-end
-arch magic_banned
-x 6
-y 40
-end
-arch dungeon_magic
-x 6
-y 40
-end
-arch grass
-x 6
-y 40
-end
-arch dungeon_magic
-x 6
-y 41
-end
-arch magic_banned
-x 6
-y 41
-end
-arch biglake_center
-x 6
-y 41
-end
-arch magic_banned
-x 6
-y 42
-end
-arch dungeon_magic
-x 6
-y 42
-end
-arch grass
-x 6
-y 42
-end
-arch magic_banned
-x 6
-y 43
-end
-arch dungeon_magic
-x 6
-y 43
-end
-arch grass
-x 6
-y 43
-end
-arch magic_banned
-x 6
-y 44
-end
-arch dungeon_magic
-x 6
-y 44
-end
-arch footbridge_2_1_2
-x 6
-y 44
-end
-arch magic_banned
-x 6
-y 45
-end
-arch dungeon_magic
-x 6
-y 45
-end
-arch grass
-x 6
-y 45
-end
-arch magic_banned
-x 6
-y 46
-end
-arch dungeon_magic
-x 6
-y 46
-end
-arch grass
-x 6
-y 46
-end
-arch magic_banned
-x 6
-y 47
-end
-arch dungeon_magic
-x 6
-y 47
-end
-arch grass_only
-x 6
-y 47
-end
-arch biglake_s
-x 6
-y 47
-end
-arch magic_banned
-x 6
-y 48
-end
-arch dungeon_magic
-x 6
-y 48
-end
-arch grass_only
-x 6
-y 48
-end
-arch cobblestones2
-x 6
-y 49
-end
-arch flagstone_2_1_2
-x 6
-y 49
-end
-arch cobblestones2
-x 7
-end
-arch flagstone_2_1_2
-x 7
-end
-arch dungeon_magic
-x 7
-y 1
-end
-arch magic_banned
-x 7
-y 1
-end
-arch cobblestones2
-x 7
-y 1
-end
-arch marble
-x 7
-y 1
-end
-arch dungeon_magic
-x 7
-y 2
-end
-arch magic_banned
-x 7
-y 2
-end
-arch cobblestones2
-x 7
-y 2
-end
-arch marble
-x 7
-y 2
-end
-arch dungeon_magic
-x 7
-y 3
-end
-arch magic_banned
-x 7
-y 3
-end
-arch cobblestones2
-x 7
-y 3
-end
-arch marble
-x 7
-y 3
-end
-arch dungeon_magic
-x 7
-y 4
-end
-arch magic_banned
-x 7
-y 4
-end
-arch cobblestones2
-x 7
-y 4
-end
-arch marble
-x 7
-y 4
-end
-arch dungeon_magic
-x 7
-y 5
-end
-arch magic_banned
-x 7
-y 5
-end
-arch cobblestones2
-x 7
-y 5
-end
-arch marble
-x 7
-y 5
-end
-arch dungeon_magic
-x 7
-y 6
-end
-arch magic_banned
-x 7
-y 6
-end
-arch cobblestones2
-x 7
-y 6
-end
-arch marble
-x 7
-y 6
-end
-arch dungeon_magic
-x 7
-y 7
-end
-arch magic_banned
-x 7
-y 7
-end
-arch cobblestones2
-x 7
-y 7
-end
-arch marble
-x 7
-y 7
-end
-arch dungeon_magic
-x 7
-y 8
-end
-arch magic_banned
-x 7
-y 8
-end
-arch cobblestones2
-x 7
-y 8
-end
-arch dungeon_magic
-x 7
-y 9
-end
-arch magic_banned
-x 7
-y 9
-end
-arch cobblestones2
-x 7
-y 9
-end
-arch dungeon_magic
-x 7
-y 10
-end
-arch magic_banned
-x 7
-y 10
-end
-arch cobblestones2
-x 7
-y 10
-end
-arch marble
-x 7
-y 10
-end
-arch dungeon_magic
-x 7
-y 11
-end
-arch magic_banned
-x 7
-y 11
-end
-arch cobblestones2
-x 7
-y 11
-end
-arch dungeon_magic
-x 7
-y 12
-end
-arch magic_banned
-x 7
-y 12
-end
-arch cobblestones2
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch magic_banned
-x 7
-y 13
-end
-arch cobblestones2
-x 7
-y 13
-end
-arch marble
-x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 14
-end
-arch magic_banned
-x 7
-y 14
-end
-arch cobblestones2
-x 7
-y 14
-end
-arch dungeon_magic
-x 7
-y 15
-end
-arch magic_banned
-x 7
-y 15
-end
-arch cobblestones2
-x 7
-y 15
-end
-arch dungeon_magic
-x 7
-y 16
-end
-arch magic_banned
-x 7
-y 16
-end
-arch cobblestones2
-x 7
-y 16
-end
-arch marble
-x 7
-y 16
-end
-arch dungeon_magic
-x 7
-y 17
-end
-arch magic_banned
-x 7
-y 17
-end
-arch cobblestones2
-x 7
-y 17
-end
-arch dungeon_magic
-x 7
-y 18
-end
-arch magic_banned
-x 7
-y 18
-end
-arch cobblestones2
-x 7
-y 18
-end
-arch dungeon_magic
-x 7
-y 19
-end
-arch magic_banned
-x 7
-y 19
-end
-arch cobblestones2
-x 7
-y 19
-end
-arch marble
-x 7
-y 19
-end
-arch dungeon_magic
-x 7
-y 20
-end
-arch magic_banned
-x 7
-y 20
-end
-arch cobblestones2
-x 7
-y 20
-end
-arch dungeon_magic
-x 7
-y 21
-end
-arch magic_banned
-x 7
-y 21
-end
-arch cobblestones2
-x 7
-y 21
-end
-arch dungeon_magic
-x 7
-y 22
-end
-arch magic_banned
-x 7
-y 22
-end
-arch cobblestones2
-x 7
-y 22
-end
-arch marble
-x 7
-y 22
-end
-arch dungeon_magic
-x 7
-y 23
-end
-arch magic_banned
-x 7
-y 23
-end
-arch cobblestones2
-x 7
-y 23
-end
-arch dungeon_magic
-x 7
-y 24
-end
-arch magic_banned
-x 7
-y 24
-end
-arch cobblestones2
-x 7
-y 24
-end
-arch dungeon_magic
-x 7
-y 25
-end
-arch magic_banned
-x 7
-y 25
-end
-arch cobblestones2
-x 7
-y 25
-end
-arch marble
-x 7
-y 25
-end
-arch dungeon_magic
-x 7
-y 26
-end
-arch magic_banned
-x 7
-y 26
-end
-arch cobblestones2
-x 7
-y 26
-end
-arch dungeon_magic
-x 7
-y 27
-end
-arch magic_banned
-x 7
-y 27
-end
-arch cobblestones2
-x 7
-y 27
-end
-arch dungeon_magic
-x 7
-y 28
-end
-arch magic_banned
-x 7
-y 28
-end
-arch cobblestones2
-x 7
-y 28
-end
-arch marble
-x 7
-y 28
-end
-arch dungeon_magic
-x 7
-y 29
-end
-arch magic_banned
-x 7
-y 29
-end
-arch cobblestones2
-x 7
-y 29
-end
-arch dungeon_magic
-x 7
-y 30
-end
-arch magic_banned
-x 7
-y 30
-end
-arch cobblestones2
-x 7
-y 30
-end
-arch dungeon_magic
-x 7
-y 31
-end
-arch magic_banned
-x 7
-y 31
-end
-arch cobblestones2
-x 7
-y 31
-end
-arch marble
-x 7
-y 31
-end
-arch dungeon_magic
-x 7
-y 32
-end
-arch magic_banned
-x 7
-y 32
-end
-arch cobblestones2
-x 7
-y 32
-end
-arch dungeon_magic
-x 7
-y 33
-end
-arch magic_banned
-x 7
-y 33
-end
-arch cobblestones2
-x 7
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 7
-y 33
-end
-arch dungeon_magic
-x 7
-y 34
-end
-arch magic_banned
-x 7
-y 34
-end
-arch grass
-x 7
-y 34
-end
-arch dungeon_magic
-x 7
-y 35
-end
-arch magic_banned
-x 7
-y 35
-end
-arch biglake_n
-x 7
-y 35
-end
-arch magic_banned
-x 7
-y 36
-end
-arch dungeon_magic
-x 7
-y 36
-end
-arch grass
-x 7
-y 36
-end
-arch magic_banned
-x 7
-y 37
-end
-arch dungeon_magic
-x 7
-y 37
-end
-arch grass
-x 7
-y 37
-end
-arch dungeon_magic
-x 7
-y 38
-end
-arch magic_banned
-x 7
-y 38
-end
-arch footbridge_2_1_2
-x 7
-y 38
-end
-arch magic_banned
-x 7
-y 39
-end
-arch dungeon_magic
-x 7
-y 39
-end
-arch grass
-x 7
-y 39
-end
-arch magic_banned
-x 7
-y 40
-end
-arch dungeon_magic
-x 7
-y 40
-end
-arch grass
-x 7
-y 40
-end
-arch dungeon_magic
-x 7
-y 41
-end
-arch magic_banned
-x 7
-y 41
-end
-arch biglake_center
-x 7
-y 41
-end
-arch magic_banned
-x 7
-y 42
-end
-arch dungeon_magic
-x 7
-y 42
-end
-arch grass
-x 7
-y 42
-end
-arch magic_banned
-x 7
-y 43
-end
-arch dungeon_magic
-x 7
-y 43
-end
-arch grass
-x 7
-y 43
-end
-arch magic_banned
-x 7
-y 44
-end
-arch dungeon_magic
-x 7
-y 44
-end
-arch footbridge_2_1_2
-x 7
-y 44
-end
-arch magic_banned
-x 7
-y 45
-end
-arch dungeon_magic
-x 7
-y 45
-end
-arch grass
-x 7
-y 45
-end
-arch magic_banned
-x 7
-y 46
-end
-arch dungeon_magic
-x 7
-y 46
-end
-arch grass
-x 7
-y 46
-end
-arch magic_banned
-x 7
-y 47
-end
-arch dungeon_magic
-x 7
-y 47
-end
-arch grass_only
-x 7
-y 47
-end
-arch biglake_s
-x 7
-y 47
-end
-arch magic_banned
-x 7
-y 48
-end
-arch dungeon_magic
-x 7
-y 48
-end
-arch grass_only
-x 7
-y 48
-end
-arch cobblestones2
-x 7
-y 49
-end
-arch flagstone_2_1_2
-x 7
-y 49
-end
-arch cobblestones2
-x 8
-end
-arch flagstone_2_1_2
-x 8
-end
-arch dungeon_magic
-x 8
-y 1
-end
-arch magic_banned
-x 8
-y 1
-end
-arch cobblestones2
-x 8
-y 1
-end
-arch marble
-x 8
-y 1
-end
-arch dungeon_magic
-x 8
-y 2
-end
-arch magic_banned
-x 8
-y 2
-end
-arch cobblestones2
-x 8
-y 2
-end
-arch marble
-x 8
-y 2
-end
-arch dungeon_magic
-x 8
-y 3
-end
-arch magic_banned
-x 8
-y 3
-end
-arch cobblestones2
-x 8
-y 3
-end
-arch marble
-x 8
-y 3
-end
-arch dungeon_magic
-x 8
-y 4
-end
-arch magic_banned
-x 8
-y 4
-end
-arch cobblestones2
-x 8
-y 4
-end
-arch marble
-x 8
-y 4
-end
-arch dungeon_magic
-x 8
-y 5
-end
-arch magic_banned
-x 8
-y 5
-end
-arch cobblestones2
-x 8
-y 5
-end
-arch marble
-x 8
-y 5
-end
-arch dungeon_magic
-x 8
-y 6
-end
-arch magic_banned
-x 8
-y 6
-end
-arch cobblestones2
-x 8
-y 6
-end
-arch marble
-x 8
-y 6
-end
-arch dungeon_magic
-x 8
-y 7
-end
-arch magic_banned
-x 8
-y 7
-end
-arch cobblestones2
-x 8
-y 7
-end
-arch marble
-x 8
-y 7
-end
-arch dungeon_magic
-x 8
-y 8
-end
-arch magic_banned
-x 8
-y 8
-end
-arch cobblestones2
-x 8
-y 8
-end
-arch dungeon_magic
-x 8
-y 9
-end
-arch magic_banned
-x 8
-y 9
-end
-arch cobblestones2
-x 8
-y 9
-end
-arch dungeon_magic
-x 8
-y 10
-end
-arch magic_banned
-x 8
-y 10
-end
-arch cobblestones2
-x 8
-y 10
-end
-arch marble
-x 8
-y 10
-end
-arch dungeon_magic
-x 8
-y 11
-end
-arch magic_banned
-x 8
-y 11
-end
-arch cobblestones2
-x 8
-y 11
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch magic_banned
-x 8
-y 12
-end
-arch cobblestones2
-x 8
-y 12
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch magic_banned
-x 8
-y 13
-end
-arch cobblestones2
-x 8
-y 13
-end
-arch marble
-x 8
-y 13
-end
-arch dungeon_magic
-x 8
-y 14
-end
-arch magic_banned
-x 8
-y 14
-end
-arch cobblestones2
-x 8
-y 14
-end
-arch dungeon_magic
-x 8
-y 15
-end
-arch magic_banned
-x 8
-y 15
-end
-arch cobblestones2
-x 8
-y 15
-end
-arch dungeon_magic
-x 8
-y 16
-end
-arch magic_banned
-x 8
-y 16
-end
-arch cobblestones2
-x 8
-y 16
-end
-arch marble
-x 8
-y 16
-end
-arch dungeon_magic
-x 8
-y 17
-end
-arch magic_banned
-x 8
-y 17
-end
-arch cobblestones2
-x 8
-y 17
-end
-arch dungeon_magic
-x 8
-y 18
-end
-arch magic_banned
-x 8
-y 18
-end
-arch cobblestones2
-x 8
-y 18
-end
-arch dungeon_magic
-x 8
-y 19
-end
-arch magic_banned
-x 8
-y 19
-end
-arch cobblestones2
-x 8
-y 19
-end
-arch marble
-x 8
-y 19
-end
-arch dungeon_magic
-x 8
-y 20
-end
-arch magic_banned
-x 8
-y 20
-end
-arch cobblestones2
-x 8
-y 20
-end
-arch dungeon_magic
-x 8
-y 21
-end
-arch magic_banned
-x 8
-y 21
-end
-arch cobblestones2
-x 8
-y 21
-end
-arch dungeon_magic
-x 8
-y 22
-end
-arch magic_banned
-x 8
-y 22
-end
-arch cobblestones2
-x 8
-y 22
-end
-arch marble
-x 8
-y 22
-end
-arch dungeon_magic
-x 8
-y 23
-end
-arch magic_banned
-x 8
-y 23
-end
-arch cobblestones2
-x 8
-y 23
-end
-arch dungeon_magic
-x 8
-y 24
-end
-arch magic_banned
-x 8
-y 24
-end
-arch cobblestones2
-x 8
-y 24
-end
-arch dungeon_magic
-x 8
-y 25
-end
-arch magic_banned
-x 8
-y 25
-end
-arch cobblestones2
-x 8
-y 25
-end
-arch marble
-x 8
-y 25
-end
-arch dungeon_magic
-x 8
-y 26
-end
-arch magic_banned
-x 8
-y 26
-end
-arch cobblestones2
-x 8
-y 26
-end
-arch dungeon_magic
-x 8
-y 27
-end
-arch magic_banned
-x 8
-y 27
-end
-arch cobblestones2
-x 8
-y 27
-end
-arch dungeon_magic
-x 8
-y 28
-end
-arch magic_banned
-x 8
-y 28
-end
-arch cobblestones2
-x 8
-y 28
-end
-arch marble
-x 8
-y 28
-end
-arch dungeon_magic
-x 8
-y 29
-end
-arch magic_banned
-x 8
-y 29
-end
-arch cobblestones2
-x 8
-y 29
-end
-arch dungeon_magic
-x 8
-y 30
-end
-arch magic_banned
-x 8
-y 30
-end
-arch cobblestones2
-x 8
-y 30
-end
-arch dungeon_magic
-x 8
-y 31
-end
-arch magic_banned
-x 8
-y 31
-end
-arch cobblestones2
-x 8
-y 31
-end
-arch marble
-x 8
-y 31
-end
-arch dungeon_magic
-x 8
-y 32
-end
-arch magic_banned
-x 8
-y 32
-end
-arch cobblestones2
-x 8
-y 32
-end
-arch dungeon_magic
-x 8
-y 33
-end
-arch magic_banned
-x 8
-y 33
-end
-arch cobblestones2
-x 8
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 8
-y 33
-end
-arch dungeon_magic
-x 8
-y 34
-end
-arch magic_banned
-x 8
-y 34
-end
-arch grass
-x 8
-y 34
-end
-arch dungeon_magic
-x 8
-y 35
-end
-arch magic_banned
-x 8
-y 35
-end
-arch biglake_n
-x 8
-y 35
-end
-arch magic_banned
-x 8
-y 36
-end
-arch dungeon_magic
-x 8
-y 36
-end
-arch grass
-x 8
-y 36
-end
-arch magic_banned
-x 8
-y 37
-end
-arch dungeon_magic
-x 8
-y 37
-end
-arch grass
-x 8
-y 37
-end
-arch dungeon_magic
-x 8
-y 38
-end
-arch magic_banned
-x 8
-y 38
-end
-arch footbridge_2_1_2
-x 8
-y 38
-end
-arch magic_banned
-x 8
-y 39
-end
-arch dungeon_magic
-x 8
-y 39
-end
-arch grass
-x 8
-y 39
-end
-arch magic_banned
-x 8
-y 40
-end
-arch dungeon_magic
-x 8
-y 40
-end
-arch grass
-x 8
-y 40
-end
-arch dungeon_magic
-x 8
-y 41
-end
-arch magic_banned
-x 8
-y 41
-end
-arch biglake_center
-x 8
-y 41
-end
-arch magic_banned
-x 8
-y 42
-end
-arch dungeon_magic
-x 8
-y 42
-end
-arch grass
-x 8
-y 42
-end
-arch magic_banned
-x 8
-y 43
-end
-arch dungeon_magic
-x 8
-y 43
-end
-arch grass
-x 8
-y 43
-end
-arch magic_banned
-x 8
-y 44
-end
-arch dungeon_magic
-x 8
-y 44
-end
-arch footbridge_2_1_2
-x 8
-y 44
-end
-arch magic_banned
-x 8
-y 45
-end
-arch dungeon_magic
-x 8
-y 45
-end
-arch grass
-x 8
-y 45
-end
-arch magic_banned
-x 8
-y 46
-end
-arch dungeon_magic
-x 8
-y 46
-end
-arch grass
-x 8
-y 46
-end
-arch magic_banned
-x 8
-y 47
-end
-arch dungeon_magic
-x 8
-y 47
-end
-arch grass_only
-x 8
-y 47
-end
-arch biglake_s
-x 8
-y 47
-end
-arch magic_banned
-x 8
-y 48
-end
-arch dungeon_magic
-x 8
-y 48
-end
-arch grass_only
-x 8
-y 48
-end
-arch cobblestones2
-x 8
-y 49
-end
-arch flagstone_2_1_2
-x 8
-y 49
-end
-arch cobblestones2
-x 9
-end
-arch flagstone_2_1_2
-x 9
-end
-arch dungeon_magic
-x 9
-y 1
-end
-arch magic_banned
-x 9
-y 1
-end
-arch cobblestones2
-x 9
-y 1
-end
-arch marble
-x 9
-y 1
-end
-arch dungeon_magic
-x 9
-y 2
-end
-arch magic_banned
-x 9
-y 2
-end
-arch cobblestones2
-x 9
-y 2
-end
-arch marble
-x 9
-y 2
-end
-arch dungeon_magic
-x 9
-y 3
-end
-arch magic_banned
-x 9
-y 3
-end
-arch cobblestones2
-x 9
-y 3
-end
-arch marble
-x 9
-y 3
-end
-arch dungeon_magic
-x 9
-y 4
-end
-arch magic_banned
-x 9
-y 4
-end
-arch cobblestones2
-x 9
-y 4
-end
-arch marble
 x 9
 y 4
 end
@@ -9779,7 +9859,7 @@ msg
 @match maveric|Maveric
 Click.
 endmsg
-connected 12322
+connected 12321
 x 14
 y 32
 end
@@ -20085,12 +20165,6 @@ arch house_up
 x 6
 y 45
 end
-arch store_weapons
-name Weaponshop
-slaying shops/weapon
-x 7
-y 2
-end
 arch castle_a
 x 7
 y 36
@@ -20202,10 +20276,6 @@ end
 arch house_up
 x 20
 y 45
-end
-arch store_magic_west
-x 22
-y 2
 end
 arch castle_a
 x 22
