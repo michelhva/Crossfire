@@ -1,6 +1,6 @@
 arch map
-region creation
 name nexus
+region creation
 msg
 Creator: Avion
 CF Java Map Editor
@@ -2148,6 +2148,12 @@ end
 arch tile_white_floor
 no_magic 1
 damned 1
+x 12
+y 12
+end
+arch marker
+slaying quest initial training end
+food 0
 x 12
 y 12
 end

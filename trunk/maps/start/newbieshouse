@@ -1,6 +1,6 @@
 arch map
-region creation
 name starting_house
+region creation
 msg
 Creator: Tchize
 CF Java Map Editor
@@ -2745,6 +2745,16 @@ x 9
 y 4
 end
 arch grass_only
+x 9
+y 4
+end
+arch marker
+lore
+Go through the newbiehouse, and learn how to play the game.
+endlore
+slaying quest initial training start
+speed 1.0
+food 0
 x 9
 y 4
 end
