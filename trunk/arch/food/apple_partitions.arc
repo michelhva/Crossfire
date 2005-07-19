@@ -13,7 +13,7 @@ weight 50
 editable 2048
 identified 1
 client_type 601
-slaying slicingknife:2 apple_fourth
+slaying b_slicingknife:2 apple_fourth
 end
 
 Object apple_fourth
@@ -31,7 +31,7 @@ weight 25
 editable 2048
 identified 1
 client_type 601
-slaying slicingknife:2 apple_eighth
+slaying b_slicingknife:2 apple_eighth
 end
 
 Object apple_eighth
