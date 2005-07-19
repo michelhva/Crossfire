@@ -11,6 +11,7 @@ magicmap grey
 name slicing knife
 name_pl slicing knives
 client_type 101
+slaying cut
 end
 
 Object slicingknife
@@ -25,5 +26,6 @@ magicmap grey
 name slicing knife
 name_pl slicing knives
 client_type 101
+slaying cut
 end
 
