@@ -1,5 +1,6 @@
 arch map
 name Forgotten City
+region Forgotten Town
 msg
 Creator: CF Java Map Editor
 Date:    7/17/2005
@@ -20218,6 +20219,8 @@ x 12
 y 45
 end
 arch store_armour
+name armourshop
+slaying shops/armour
 x 13
 y 2
 end
@@ -20278,6 +20281,7 @@ x 20
 y 45
 end
 arch store_weapons
+name weaponshop
 slaying /darcap/forgotten_town/shops/weapon
 x 22
 y 2
