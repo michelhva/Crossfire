@@ -20277,6 +20277,11 @@ arch house_up
 x 20
 y 45
 end
+arch store_weapons
+slaying /darcap/forgotten_town/shops/weapon
+x 22
+y 2
+end
 arch castle_a
 x 22
 y 36
