@@ -568,12 +568,38 @@ arch woodfloor
 x 4
 y 1
 end
+arch magic_mouth
+msg
+A tiny voice says to you:
+Hello adventurer. You have the TownPass
+so I will teleport you into the town.
+endmsg
+connected 159
+walk_on 0
+fly_on 0
+x 4
+y 1
+end
+arch check_inv
+slaying ftap
+connected 159
+x 4
+y 1
+end
 arch sign_e
 msg
 Entry to the forgotten City
 endmsg
 walk_on 1
 fly_on 1
+x 4
+y 1
+end
+arch teleporter
+invisible 1
+slaying city
+connected 159
+speed 0.0
 x 4
 y 1
 end
