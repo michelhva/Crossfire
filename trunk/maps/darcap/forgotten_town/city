@@ -20191,6 +20191,8 @@ x 9
 y 42
 end
 arch store_alchemy
+name potionshop
+slaying shops/potion
 x 10
 y 2
 end
@@ -20225,6 +20227,8 @@ x 13
 y 2
 end
 arch store_general
+name generalshop
+slaying shops/general
 x 16
 y 2
 end
