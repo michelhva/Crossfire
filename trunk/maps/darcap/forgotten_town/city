@@ -162,7 +162,7 @@ end
 arch cobblestones2
 y 25
 end
-arch flagstone_2_1_1
+arch flagstone_3_2
 y 25
 end
 arch cobblestones2
@@ -261,7 +261,7 @@ end
 arch cobblestones2
 y 41
 end
-arch biglake_center
+arch river_w-e
 y 41
 end
 arch flagstone_2_1_1
@@ -321,61 +321,13 @@ end
 arch flagstone_2_1_2
 x 1
 end
-arch dungeon_magic
-x 1
-y 1
-end
-arch magic_banned
-x 1
-y 1
-end
-arch cobblestones2
-x 1
-y 1
-end
-arch marble
-x 1
-y 1
-end
-arch cobblestones2
-x 1
-y 1
-end
-arch marble
+arch blackmarble
 x 1
 y 1
 end
 arch blackmarble
 x 1
-y 1
-end
-arch dungeon_magic
-x 1
 y 2
-end
-arch magic_banned
-x 1
-y 2
-end
-arch cobblestones2
-x 1
-y 2
-end
-arch blackmarble
-x 1
-y 2
-end
-arch dungeon_magic
-x 1
-y 3
-end
-arch magic_banned
-x 1
-y 3
-end
-arch cobblestones2
-x 1
-y 3
 end
 arch blackmarble
 x 1
@@ -401,583 +353,253 @@ arch flagstone_2_1_2
 x 1
 y 4
 end
-arch dungeon_magic
-x 1
-y 5
-end
-arch magic_banned
-x 1
-y 5
-end
-arch cobblestones2
+arch marble
 x 1
 y 5
 end
 arch marble
 x 1
-y 5
-end
-arch dungeon_magic
-x 1
-y 6
-end
-arch magic_banned
-x 1
-y 6
-end
-arch cobblestones2
-x 1
 y 6
 end
 arch marble
 x 1
-y 6
-end
-arch dungeon_magic
-x 1
-y 7
-end
-arch magic_banned
-x 1
-y 7
-end
-arch cobblestones2
-x 1
 y 7
 end
 arch marble
-x 1
-y 7
-end
-arch dungeon_magic
 x 1
 y 8
 end
-arch magic_banned
-x 1
-y 8
-end
-arch cobblestones2
-x 1
-y 8
-end
-arch dungeon_magic
+arch marble
 x 1
 y 9
 end
-arch magic_banned
-x 1
-y 9
-end
-arch cobblestones2
-x 1
-y 9
-end
-arch dungeon_magic
-x 1
-y 10
-end
-arch magic_banned
-x 1
-y 10
-end
-arch cobblestones2
-x 1
-y 10
-end
 arch marble
 x 1
 y 10
 end
-arch dungeon_magic
+arch marble
 x 1
 y 11
 end
-arch magic_banned
-x 1
-y 11
-end
-arch cobblestones2
-x 1
-y 11
-end
-arch dungeon_magic
+arch marble
 x 1
 y 12
 end
-arch magic_banned
-x 1
-y 12
-end
-arch cobblestones2
-x 1
-y 12
-end
-arch dungeon_magic
-x 1
-y 13
-end
-arch magic_banned
-x 1
-y 13
-end
-arch cobblestones2
-x 1
-y 13
-end
 arch marble
 x 1
 y 13
 end
-arch dungeon_magic
+arch marble
 x 1
 y 14
 end
-arch magic_banned
-x 1
-y 14
-end
-arch cobblestones2
-x 1
-y 14
-end
-arch dungeon_magic
+arch marble
 x 1
 y 15
 end
-arch magic_banned
-x 1
-y 15
-end
-arch cobblestones2
-x 1
-y 15
-end
-arch dungeon_magic
-x 1
-y 16
-end
-arch magic_banned
-x 1
-y 16
-end
-arch cobblestones2
-x 1
-y 16
-end
 arch marble
 x 1
 y 16
 end
-arch dungeon_magic
+arch marble
 x 1
 y 17
 end
-arch magic_banned
-x 1
-y 17
-end
-arch cobblestones2
-x 1
-y 17
-end
-arch dungeon_magic
+arch marble
 x 1
 y 18
-end
-arch magic_banned
-x 1
-y 18
-end
-arch cobblestones2
-x 1
-y 18
-end
-arch dungeon_magic
-x 1
-y 19
-end
-arch magic_banned
-x 1
-y 19
-end
-arch cobblestones2
-x 1
-y 19
 end
 arch marble
 x 1
 y 19
 end
-arch dungeon_magic
+arch marble
 x 1
 y 20
 end
-arch magic_banned
-x 1
-y 20
-end
-arch cobblestones2
-x 1
-y 20
-end
-arch dungeon_magic
+arch marble
 x 1
 y 21
-end
-arch magic_banned
-x 1
-y 21
-end
-arch cobblestones2
-x 1
-y 21
-end
-arch dungeon_magic
-x 1
-y 22
-end
-arch magic_banned
-x 1
-y 22
-end
-arch cobblestones2
-x 1
-y 22
 end
 arch marble
 x 1
 y 22
 end
-arch dungeon_magic
+arch marble
 x 1
 y 23
 end
-arch magic_banned
-x 1
-y 23
-end
-arch cobblestones2
-x 1
-y 23
-end
-arch dungeon_magic
+arch marble
 x 1
 y 24
-end
-arch magic_banned
-x 1
-y 24
-end
-arch cobblestones2
-x 1
-y 24
-end
-arch dungeon_magic
-x 1
-y 25
-end
-arch magic_banned
-x 1
-y 25
-end
-arch cobblestones2
-x 1
-y 25
 end
 arch marble
 x 1
 y 25
 end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 1
-y 26
+y 25
 end
-arch magic_banned
+arch cobblestones2
 x 1
 y 26
 end
 arch cobblestones2
 x 1
-y 26
-end
-arch dungeon_magic
-x 1
-y 27
-end
-arch magic_banned
-x 1
 y 27
 end
 arch cobblestones2
 x 1
-y 27
-end
-arch dungeon_magic
-x 1
-y 28
-end
-arch magic_banned
-x 1
 y 28
 end
 arch cobblestones2
-x 1
-y 28
-end
-arch marble
-x 1
-y 28
-end
-arch dungeon_magic
-x 1
-y 29
-end
-arch magic_banned
 x 1
 y 29
 end
 arch cobblestones2
 x 1
-y 29
-end
-arch dungeon_magic
-x 1
-y 30
-end
-arch magic_banned
-x 1
 y 30
 end
 arch cobblestones2
 x 1
-y 30
-end
-arch dungeon_magic
-x 1
 y 31
 end
-arch magic_banned
+arch altar
+name Drop 200pp for a teleport to scorn
+type 31
+slaying platinum coin
+food 200
+connected 41
+exp 30
 x 1
 y 31
 end
 arch cobblestones2
-x 1
-y 31
-end
-arch marble
-x 1
-y 31
-end
-arch dungeon_magic
+no_magic 1
+damned 1
 x 1
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 1
+y 32
+end
+arch spikes_closed
+connected 41
+x 1
+y 32
+end
+arch teleporter
+invisible 1
+slaying /world/world_105_115
+hp 5
+sp 35
 x 1
 y 32
 end
 arch cobblestones2
 x 1
-y 32
+y 33
 end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 1
 y 33
 end
-arch magic_banned
-x 1
-y 33
-end
-arch cobblestones2
-x 1
-y 33
-end
-arch flagstone_1_3
-x 1
-y 33
-end
-arch dungeon_magic
-x 1
-y 34
-end
-arch magic_banned
+arch grass
 x 1
 y 34
 end
 arch grass
 x 1
-y 34
-end
-arch dungeon_magic
-x 1
 y 35
 end
-arch magic_banned
+arch river_sw-ne_u
 x 1
 y 35
 end
 arch grass
 x 1
-y 35
-end
-arch dungeon_magic
-x 1
 y 36
 end
-arch magic_banned
+arch river_ne-s
 x 1
 y 36
 end
 arch grass
 x 1
-y 36
-end
-arch dungeon_magic
-x 1
 y 37
 end
-arch magic_banned
+arch river_se-n
 x 1
 y 37
 end
 arch grass
 x 1
-y 37
-end
-arch dungeon_magic
-x 1
 y 38
 end
-arch magic_banned
+arch river_nw-se_l
 x 1
 y 38
 end
 arch grass
 x 1
-y 38
-end
-arch dungeon_magic
-x 1
-y 39
-end
-arch magic_banned
-x 1
 y 39
 end
 arch grass
-x 1
-y 39
-end
-arch dungeon_magic
-x 1
-y 40
-end
-arch magic_banned
 x 1
 y 40
 end
 arch grass
 x 1
-y 40
-end
-arch dungeon_magic
-x 1
 y 41
 end
-arch magic_banned
+arch river_w-e
 x 1
 y 41
 end
 arch grass
 x 1
-y 41
-end
-arch biglake_center
-x 1
-y 41
-end
-arch magic_banned
-x 1
 y 42
 end
-arch dungeon_magic
-x 1
-y 42
-end
-arch grass_only
-x 1
-y 42
-end
-arch magic_banned
+arch grass
 x 1
 y 43
 end
-arch dungeon_magic
-x 1
-y 43
-end
-arch grass_only
-x 1
-y 43
-end
-arch magic_banned
+arch grass
 x 1
 y 44
 end
-arch dungeon_magic
+arch river_sw-ne_u
 x 1
 y 44
 end
-arch grass_only
-x 1
-y 44
-end
-arch magic_banned
+arch grass
 x 1
 y 45
 end
-arch dungeon_magic
+arch river_ne-s
 x 1
 y 45
 end
-arch grass_only
-x 1
-y 45
-end
-arch magic_banned
+arch grass
 x 1
 y 46
 end
-arch dungeon_magic
+arch river_se-n
 x 1
 y 46
 end
-arch grass_only
-x 1
-y 46
-end
-arch magic_banned
+arch grass
 x 1
 y 47
 end
-arch dungeon_magic
+arch river_nw-se_l
 x 1
 y 47
 end
-arch grass_only
-x 1
-y 47
-end
-arch magic_banned
-x 1
-y 48
-end
-arch dungeon_magic
-x 1
-y 48
-end
-arch grass_only
+arch grass
 x 1
 y 48
 end
@@ -995,53 +617,13 @@ end
 arch flagstone_2_1_2
 x 2
 end
-arch dungeon_magic
-x 2
-y 1
-end
-arch magic_banned
-x 2
-y 1
-end
-arch cobblestones2
-x 2
-y 1
-end
-arch marble
+arch blackmarble
 x 2
 y 1
 end
 arch blackmarble
 x 2
-y 1
-end
-arch dungeon_magic
-x 2
 y 2
-end
-arch magic_banned
-x 2
-y 2
-end
-arch cobblestones2
-x 2
-y 2
-end
-arch blackmarble
-x 2
-y 2
-end
-arch dungeon_magic
-x 2
-y 3
-end
-arch magic_banned
-x 2
-y 3
-end
-arch cobblestones2
-x 2
-y 3
 end
 arch blackmarble
 x 2
@@ -1067,608 +649,253 @@ arch flagstone_1_3
 x 2
 y 4
 end
-arch dungeon_magic
-x 2
-y 5
-end
-arch magic_banned
-x 2
-y 5
-end
-arch cobblestones2
+arch marble
 x 2
 y 5
 end
 arch marble
 x 2
-y 5
-end
-arch dungeon_magic
-x 2
-y 6
-end
-arch magic_banned
-x 2
-y 6
-end
-arch cobblestones2
-x 2
 y 6
 end
 arch marble
 x 2
-y 6
-end
-arch dungeon_magic
-x 2
-y 7
-end
-arch magic_banned
-x 2
 y 7
 end
 arch cobblestones2
-x 2
-y 7
-end
-arch marble
-x 2
-y 7
-end
-arch dungeon_magic
-x 2
-y 8
-end
-arch magic_banned
 x 2
 y 8
 end
 arch cobblestones2
 x 2
-y 8
-end
-arch dungeon_magic
-x 2
 y 9
-end
-arch magic_banned
-x 2
-y 9
-end
-arch cobblestones2
-x 2
-y 9
-end
-arch dungeon_magic
-x 2
-y 10
-end
-arch magic_banned
-x 2
-y 10
-end
-arch cobblestones2
-x 2
-y 10
 end
 arch marble
 x 2
 y 10
 end
-arch dungeon_magic
-x 2
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 11
 end
 arch cobblestones2
 x 2
-y 11
-end
-arch dungeon_magic
-x 2
 y 12
-end
-arch magic_banned
-x 2
-y 12
-end
-arch cobblestones2
-x 2
-y 12
-end
-arch dungeon_magic
-x 2
-y 13
-end
-arch magic_banned
-x 2
-y 13
-end
-arch cobblestones2
-x 2
-y 13
 end
 arch marble
 x 2
 y 13
 end
-arch dungeon_magic
-x 2
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 14
 end
 arch cobblestones2
 x 2
-y 14
-end
-arch dungeon_magic
-x 2
 y 15
-end
-arch magic_banned
-x 2
-y 15
-end
-arch cobblestones2
-x 2
-y 15
-end
-arch dungeon_magic
-x 2
-y 16
-end
-arch magic_banned
-x 2
-y 16
-end
-arch cobblestones2
-x 2
-y 16
 end
 arch marble
 x 2
 y 16
 end
-arch dungeon_magic
-x 2
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 17
 end
 arch cobblestones2
 x 2
-y 17
-end
-arch dungeon_magic
-x 2
 y 18
-end
-arch magic_banned
-x 2
-y 18
-end
-arch cobblestones2
-x 2
-y 18
-end
-arch dungeon_magic
-x 2
-y 19
-end
-arch magic_banned
-x 2
-y 19
-end
-arch cobblestones2
-x 2
-y 19
 end
 arch marble
 x 2
 y 19
 end
-arch dungeon_magic
-x 2
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 20
 end
 arch cobblestones2
 x 2
-y 20
-end
-arch dungeon_magic
-x 2
 y 21
-end
-arch magic_banned
-x 2
-y 21
-end
-arch cobblestones2
-x 2
-y 21
-end
-arch dungeon_magic
-x 2
-y 22
-end
-arch magic_banned
-x 2
-y 22
-end
-arch cobblestones2
-x 2
-y 22
 end
 arch marble
 x 2
 y 22
 end
-arch dungeon_magic
-x 2
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 23
 end
 arch cobblestones2
 x 2
-y 23
-end
-arch dungeon_magic
-x 2
 y 24
-end
-arch magic_banned
-x 2
-y 24
-end
-arch cobblestones2
-x 2
-y 24
-end
-arch dungeon_magic
-x 2
-y 25
-end
-arch magic_banned
-x 2
-y 25
-end
-arch cobblestones2
-x 2
-y 25
 end
 arch marble
 x 2
 y 25
 end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 2
-y 26
-end
-arch magic_banned
-x 2
-y 26
+y 25
 end
 arch cobblestones2
 x 2
 y 26
 end
-arch dungeon_magic
-x 2
-y 27
-end
-arch magic_banned
+arch cobblestones2
 x 2
 y 27
 end
 arch cobblestones2
 x 2
-y 27
-end
-arch dungeon_magic
-x 2
-y 28
-end
-arch magic_banned
-x 2
 y 28
 end
 arch cobblestones2
-x 2
-y 28
-end
-arch marble
-x 2
-y 28
-end
-arch dungeon_magic
-x 2
-y 29
-end
-arch magic_banned
 x 2
 y 29
 end
 arch cobblestones2
 x 2
-y 29
-end
-arch dungeon_magic
-x 2
-y 30
-end
-arch magic_banned
-x 2
 y 30
 end
 arch cobblestones2
 x 2
-y 30
-end
-arch dungeon_magic
-x 2
 y 31
 end
-arch magic_banned
+arch altar
+name Drop 200pp for a teleport to navar
+type 31
+slaying platinum coin
+food 200
+connected 42
+exp 30
 x 2
 y 31
 end
 arch cobblestones2
-x 2
-y 31
-end
-arch marble
-x 2
-y 31
-end
-arch dungeon_magic
+no_magic 1
+damned 1
 x 2
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 2
+y 32
+end
+arch spikes_closed
+connected 42
+x 2
+y 32
+end
+arch teleporter
+invisible 1
+slaying /world/world_121_116
+hp 37
+sp 46
 x 2
 y 32
 end
 arch cobblestones2
 x 2
-y 32
-end
-arch dungeon_magic
-x 2
 y 33
 end
-arch magic_banned
+arch flagstone_2_1_2
 x 2
 y 33
-end
-arch cobblestones2
-x 2
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 2
-y 33
-end
-arch dungeon_magic
-x 2
-y 34
-end
-arch magic_banned
-x 2
-y 34
 end
 arch grass
 x 2
 y 34
 end
-arch dungeon_magic
+arch grass
 x 2
 y 35
 end
-arch magic_banned
+arch river_sw-e
 x 2
 y 35
 end
 arch grass
 x 2
-y 35
+y 36
 end
-arch biglake_nw
-x 2
-y 35
-end
-arch dungeon_magic
+arch river_sw-ne_l
 x 2
 y 36
 end
-arch magic_banned
-x 2
-y 36
-end
-arch biglake_w
-x 2
-y 36
-end
-arch dungeon_magic
+arch grass
 x 2
 y 37
 end
-arch magic_banned
+arch river_nw-se_u
 x 2
 y 37
 end
-arch biglake_w
-x 2
-y 37
-end
-arch dungeon_magic
+arch grass
 x 2
 y 38
 end
-arch magic_banned
+arch river_nw-e
 x 2
 y 38
 end
-arch biglake_w
-x 2
-y 38
-end
-arch dungeon_magic
+arch grass
 x 2
 y 39
 end
-arch magic_banned
-x 2
-y 39
-end
-arch biglake_w
-x 2
-y 39
-end
-arch dungeon_magic
+arch grass
 x 2
 y 40
 end
-arch magic_banned
-x 2
-y 40
-end
-arch biglake_w
-x 2
-y 40
-end
-arch dungeon_magic
+arch grass
 x 2
 y 41
 end
-arch magic_banned
+arch river_w-e
 x 2
 y 41
 end
-arch biglake_w
-x 2
-y 41
-end
-arch magic_banned
+arch grass
 x 2
 y 42
 end
-arch dungeon_magic
-x 2
-y 42
-end
-arch grass_only
-x 2
-y 42
-end
-arch biglake_w
-x 2
-y 42
-end
-arch magic_banned
+arch grass
 x 2
 y 43
 end
-arch dungeon_magic
-x 2
-y 43
-end
-arch grass_only
-x 2
-y 43
-end
-arch biglake_w
-x 2
-y 43
-end
-arch magic_banned
+arch grass
 x 2
 y 44
 end
-arch dungeon_magic
+arch river_sw-e
 x 2
 y 44
 end
-arch grass_only
-x 2
-y 44
-end
-arch biglake_w
-x 2
-y 44
-end
-arch magic_banned
+arch grass
 x 2
 y 45
 end
-arch dungeon_magic
+arch river_sw-ne_l
 x 2
 y 45
 end
-arch grass_only
-x 2
-y 45
-end
-arch biglake_w
-x 2
-y 45
-end
-arch magic_banned
+arch grass
 x 2
 y 46
 end
-arch dungeon_magic
+arch river_nw-se_u
 x 2
 y 46
 end
-arch grass_only
-x 2
-y 46
-end
-arch biglake_w
-x 2
-y 46
-end
-arch magic_banned
+arch grass
 x 2
 y 47
 end
-arch dungeon_magic
+arch river_nw-e
 x 2
 y 47
 end
-arch grass_only
-x 2
-y 47
-end
-arch biglake_sw
-x 2
-y 47
-end
-arch magic_banned
-x 2
-y 48
-end
-arch dungeon_magic
-x 2
-y 48
-end
-arch grass_only
+arch grass
 x 2
 y 48
 end
@@ -1686,61 +913,13 @@ end
 arch flagstone_2_1_2
 x 3
 end
-arch dungeon_magic
-x 3
-y 1
-end
-arch magic_banned
-x 3
-y 1
-end
-arch cobblestones2
-x 3
-y 1
-end
-arch marble
+arch blackmarble
 x 3
 y 1
 end
 arch blackmarble
 x 3
-y 1
-end
-arch dungeon_magic
-x 3
 y 2
-end
-arch magic_banned
-x 3
-y 2
-end
-arch cobblestones2
-x 3
-y 2
-end
-arch marble
-x 3
-y 2
-end
-arch blackmarble
-x 3
-y 2
-end
-arch dungeon_magic
-x 3
-y 3
-end
-arch magic_banned
-x 3
-y 3
-end
-arch cobblestones2
-x 3
-y 3
-end
-arch marble
-x 3
-y 3
 end
 arch blackmarble
 x 3
@@ -1751,18 +930,6 @@ invisible 1
 connected 1
 x 3
 y 3
-end
-arch dungeon_magic
-x 3
-y 4
-end
-arch magic_banned
-x 3
-y 4
-end
-arch cobblestones2
-x 3
-y 4
 end
 arch marble
 x 3
@@ -1779,18 +946,6 @@ connected 1
 x 3
 y 4
 end
-arch dungeon_magic
-x 3
-y 5
-end
-arch magic_banned
-x 3
-y 5
-end
-arch cobblestones2
-x 3
-y 5
-end
 arch marble
 x 3
 y 5
@@ -1801,61 +956,17 @@ connected 1
 x 3
 y 5
 end
-arch dungeon_magic
-x 3
-y 6
-end
-arch magic_banned
-x 3
-y 6
-end
-arch cobblestones2
+arch marble
 x 3
 y 6
 end
 arch marble
 x 3
-y 6
-end
-arch dungeon_magic
-x 3
-y 7
-end
-arch magic_banned
-x 3
 y 7
 end
 arch cobblestones2
 x 3
-y 7
-end
-arch marble
-x 3
-y 7
-end
-arch dungeon_magic
-x 3
 y 8
-end
-arch magic_banned
-x 3
-y 8
-end
-arch cobblestones2
-x 3
-y 8
-end
-arch marble
-x 3
-y 8
-end
-arch dungeon_magic
-x 3
-y 9
-end
-arch magic_banned
-x 3
-y 9
 end
 arch cobblestones2
 x 3
@@ -1863,47 +974,11 @@ y 9
 end
 arch marble
 x 3
-y 9
-end
-arch dungeon_magic
-x 3
-y 10
-end
-arch magic_banned
-x 3
 y 10
 end
 arch cobblestones2
 x 3
-y 10
-end
-arch marble
-x 3
-y 10
-end
-arch dungeon_magic
-x 3
 y 11
-end
-arch magic_banned
-x 3
-y 11
-end
-arch cobblestones2
-x 3
-y 11
-end
-arch marble
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 12
-end
-arch magic_banned
-x 3
-y 12
 end
 arch cobblestones2
 x 3
@@ -1911,47 +986,11 @@ y 12
 end
 arch marble
 x 3
-y 12
-end
-arch dungeon_magic
-x 3
-y 13
-end
-arch magic_banned
-x 3
 y 13
 end
 arch cobblestones2
 x 3
-y 13
-end
-arch marble
-x 3
-y 13
-end
-arch dungeon_magic
-x 3
 y 14
-end
-arch magic_banned
-x 3
-y 14
-end
-arch cobblestones2
-x 3
-y 14
-end
-arch marble
-x 3
-y 14
-end
-arch dungeon_magic
-x 3
-y 15
-end
-arch magic_banned
-x 3
-y 15
 end
 arch cobblestones2
 x 3
@@ -1959,47 +998,11 @@ y 15
 end
 arch marble
 x 3
-y 15
-end
-arch dungeon_magic
-x 3
-y 16
-end
-arch magic_banned
-x 3
 y 16
 end
 arch cobblestones2
 x 3
-y 16
-end
-arch marble
-x 3
-y 16
-end
-arch dungeon_magic
-x 3
 y 17
-end
-arch magic_banned
-x 3
-y 17
-end
-arch cobblestones2
-x 3
-y 17
-end
-arch marble
-x 3
-y 17
-end
-arch dungeon_magic
-x 3
-y 18
-end
-arch magic_banned
-x 3
-y 18
 end
 arch cobblestones2
 x 3
@@ -2007,47 +1010,11 @@ y 18
 end
 arch marble
 x 3
-y 18
-end
-arch dungeon_magic
-x 3
-y 19
-end
-arch magic_banned
-x 3
 y 19
 end
 arch cobblestones2
 x 3
-y 19
-end
-arch marble
-x 3
-y 19
-end
-arch dungeon_magic
-x 3
 y 20
-end
-arch magic_banned
-x 3
-y 20
-end
-arch cobblestones2
-x 3
-y 20
-end
-arch marble
-x 3
-y 20
-end
-arch dungeon_magic
-x 3
-y 21
-end
-arch magic_banned
-x 3
-y 21
 end
 arch cobblestones2
 x 3
@@ -2055,47 +1022,11 @@ y 21
 end
 arch marble
 x 3
-y 21
-end
-arch dungeon_magic
-x 3
-y 22
-end
-arch magic_banned
-x 3
 y 22
 end
 arch cobblestones2
 x 3
-y 22
-end
-arch marble
-x 3
-y 22
-end
-arch dungeon_magic
-x 3
 y 23
-end
-arch magic_banned
-x 3
-y 23
-end
-arch cobblestones2
-x 3
-y 23
-end
-arch marble
-x 3
-y 23
-end
-arch dungeon_magic
-x 3
-y 24
-end
-arch magic_banned
-x 3
-y 24
 end
 arch cobblestones2
 x 3
@@ -2103,338 +1034,155 @@ y 24
 end
 arch marble
 x 3
-y 24
-end
-arch dungeon_magic
-x 3
 y 25
 end
-arch magic_banned
+arch flagstone_2_1_2
 x 3
 y 25
 end
 arch cobblestones2
 x 3
-y 25
-end
-arch marble
-x 3
-y 25
-end
-arch dungeon_magic
-x 3
-y 26
-end
-arch magic_banned
-x 3
 y 26
 end
 arch cobblestones2
-x 3
-y 26
-end
-arch marble
-x 3
-y 26
-end
-arch dungeon_magic
-x 3
-y 27
-end
-arch magic_banned
 x 3
 y 27
 end
 arch cobblestones2
 x 3
-y 27
-end
-arch marble
-x 3
-y 27
-end
-arch dungeon_magic
-x 3
-y 28
-end
-arch magic_banned
-x 3
 y 28
 end
 arch cobblestones2
-x 3
-y 28
-end
-arch marble
-x 3
-y 28
-end
-arch dungeon_magic
-x 3
-y 29
-end
-arch magic_banned
 x 3
 y 29
 end
 arch cobblestones2
 x 3
-y 29
-end
-arch marble
-x 3
-y 29
-end
-arch dungeon_magic
-x 3
 y 30
-end
-arch magic_banned
-x 3
-y 30
-end
-arch cobblestones2
-x 3
-y 30
-end
-arch marble
-x 3
-y 30
-end
-arch dungeon_magic
-x 3
-y 31
-end
-arch magic_banned
-x 3
-y 31
 end
 arch cobblestones2
 x 3
 y 31
 end
-arch marble
+arch altar
+name Drop 200pp for a teleport to wolfsburg
+type 31
+slaying platinum coin
+food 200
+connected 43
+exp 30
 x 3
 y 31
 end
-arch dungeon_magic
+arch cobblestones2
+no_magic 1
+damned 1
 x 3
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 3
+y 32
+end
+arch spikes_closed
+connected 43
+x 3
+y 32
+end
+arch teleporter
+invisible 1
+slaying /world/world_128_109
+hp 35
+sp 13
 x 3
 y 32
 end
 arch cobblestones2
 x 3
-y 32
+y 33
 end
-arch marble
-x 3
-y 32
-end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 3
 y 33
 end
-arch magic_banned
-x 3
-y 33
-end
-arch cobblestones2
-x 3
-y 33
-end
-arch marble
-x 3
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 3
-y 33
-end
-arch dungeon_magic
-x 3
-y 34
-end
-arch magic_banned
+arch grass
 x 3
 y 34
 end
 arch grass
 x 3
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 3
 y 35
 end
-arch magic_banned
-x 3
-y 35
-end
-arch biglake_n
-x 3
-y 35
-end
-arch magic_banned
-x 3
-y 36
-end
-arch dungeon_magic
+arch grass
 x 3
 y 36
 end
 arch grass
 x 3
-y 36
-end
-arch magic_banned
-x 3
-y 37
-end
-arch dungeon_magic
-x 3
 y 37
 end
 arch grass
 x 3
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 3
 y 38
 end
-arch magic_banned
-x 3
-y 38
-end
-arch footbridge_2_1_2
-x 3
-y 38
-end
-arch magic_banned
-x 3
-y 39
-end
-arch dungeon_magic
+arch grass
 x 3
 y 39
 end
 arch grass
 x 3
-y 39
-end
-arch magic_banned
-x 3
-y 40
-end
-arch dungeon_magic
-x 3
 y 40
 end
 arch grass
 x 3
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 3
 y 41
 end
-arch magic_banned
-x 3
-y 41
-end
-arch biglake_center
-x 3
-y 41
-end
-arch magic_banned
-x 3
-y 42
-end
-arch dungeon_magic
+arch grass
 x 3
 y 42
 end
 arch grass
 x 3
-y 42
-end
-arch magic_banned
-x 3
-y 43
-end
-arch dungeon_magic
-x 3
 y 43
 end
 arch grass
 x 3
-y 43
-end
-arch magic_banned
-x 3
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 3
 y 44
-end
-arch footbridge_2_1_2
-x 3
-y 44
-end
-arch magic_banned
-x 3
-y 45
-end
-arch dungeon_magic
-x 3
-y 45
 end
 arch grass
 x 3
 y 45
 end
-arch magic_banned
-x 3
-y 46
-end
-arch dungeon_magic
+arch grass
 x 3
 y 46
 end
 arch grass
 x 3
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 3
 y 47
 end
-arch dungeon_magic
-x 3
-y 47
-end
-arch grass_only
-x 3
-y 47
-end
-arch biglake_s
-x 3
-y 47
-end
-arch magic_banned
-x 3
-y 48
-end
-arch dungeon_magic
-x 3
-y 48
-end
-arch grass_only
+arch grass
 x 3
 y 48
 end
@@ -2452,53 +1200,13 @@ end
 arch flagstone_2_1_2
 x 4
 end
-arch dungeon_magic
-x 4
-y 1
-end
-arch magic_banned
-x 4
-y 1
-end
-arch cobblestones2
-x 4
-y 1
-end
-arch marble
+arch blackmarble
 x 4
 y 1
 end
 arch blackmarble
 x 4
-y 1
-end
-arch dungeon_magic
-x 4
 y 2
-end
-arch magic_banned
-x 4
-y 2
-end
-arch cobblestones2
-x 4
-y 2
-end
-arch blackmarble
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 3
-end
-arch magic_banned
-x 4
-y 3
-end
-arch cobblestones2
-x 4
-y 3
 end
 arch blackmarble
 x 4
@@ -2507,13 +1215,16 @@ end
 arch sign
 msg
 Hello Adventurer.
-This is the forgotten-town-quest. Feel free
-to discover all. The main target is to get the
-town-treasure. You can find a resting in the
-palace of the town. Be careful because of
-the monsters in some dungeons.
-
+This is the forgotten-town-quest. The prize
+is the town-treasure. You can find a resting 
+in the palace of the town. Be careful because 
+of the monsters in some dungeons.
 More information you can get in the palace.
+
+If you want to cast a town portal you'll find a
+area for it southwest from here. In this area
+you also can find teleporters to different cities.
+
 Greetings
 The Administration
 endmsg
@@ -2542,584 +1253,237 @@ arch flagstone_1_4
 x 4
 y 4
 end
-arch dungeon_magic
-x 4
-y 5
-end
-arch magic_banned
-x 4
-y 5
-end
-arch cobblestones2
+arch marble
 x 4
 y 5
 end
 arch marble
 x 4
-y 5
-end
-arch dungeon_magic
-x 4
-y 6
-end
-arch magic_banned
-x 4
-y 6
-end
-arch cobblestones2
-x 4
 y 6
 end
 arch marble
 x 4
-y 6
-end
-arch dungeon_magic
-x 4
-y 7
-end
-arch magic_banned
-x 4
-y 7
-end
-arch cobblestones2
-x 4
 y 7
 end
 arch marble
-x 4
-y 7
-end
-arch dungeon_magic
 x 4
 y 8
 end
-arch magic_banned
-x 4
-y 8
-end
-arch cobblestones2
-x 4
-y 8
-end
-arch dungeon_magic
+arch marble
 x 4
 y 9
 end
-arch magic_banned
-x 4
-y 9
-end
-arch cobblestones2
-x 4
-y 9
-end
-arch dungeon_magic
-x 4
-y 10
-end
-arch magic_banned
-x 4
-y 10
-end
-arch cobblestones2
-x 4
-y 10
-end
 arch marble
 x 4
 y 10
 end
-arch dungeon_magic
+arch marble
 x 4
 y 11
 end
-arch magic_banned
-x 4
-y 11
-end
-arch cobblestones2
-x 4
-y 11
-end
-arch dungeon_magic
+arch marble
 x 4
 y 12
 end
-arch magic_banned
-x 4
-y 12
-end
-arch cobblestones2
-x 4
-y 12
-end
-arch dungeon_magic
-x 4
-y 13
-end
-arch magic_banned
-x 4
-y 13
-end
-arch cobblestones2
-x 4
-y 13
-end
 arch marble
 x 4
 y 13
 end
-arch dungeon_magic
+arch marble
 x 4
 y 14
 end
-arch magic_banned
-x 4
-y 14
-end
-arch cobblestones2
-x 4
-y 14
-end
-arch dungeon_magic
+arch marble
 x 4
 y 15
 end
-arch magic_banned
-x 4
-y 15
-end
-arch cobblestones2
-x 4
-y 15
-end
-arch dungeon_magic
-x 4
-y 16
-end
-arch magic_banned
-x 4
-y 16
-end
-arch cobblestones2
-x 4
-y 16
-end
 arch marble
 x 4
 y 16
 end
-arch dungeon_magic
+arch marble
 x 4
 y 17
 end
-arch magic_banned
-x 4
-y 17
-end
-arch cobblestones2
-x 4
-y 17
-end
-arch dungeon_magic
+arch marble
 x 4
 y 18
-end
-arch magic_banned
-x 4
-y 18
-end
-arch cobblestones2
-x 4
-y 18
-end
-arch dungeon_magic
-x 4
-y 19
-end
-arch magic_banned
-x 4
-y 19
-end
-arch cobblestones2
-x 4
-y 19
 end
 arch marble
 x 4
 y 19
 end
-arch dungeon_magic
+arch marble
 x 4
 y 20
 end
-arch magic_banned
-x 4
-y 20
-end
-arch cobblestones2
-x 4
-y 20
-end
-arch dungeon_magic
+arch marble
 x 4
 y 21
-end
-arch magic_banned
-x 4
-y 21
-end
-arch cobblestones2
-x 4
-y 21
-end
-arch dungeon_magic
-x 4
-y 22
-end
-arch magic_banned
-x 4
-y 22
-end
-arch cobblestones2
-x 4
-y 22
 end
 arch marble
 x 4
 y 22
 end
-arch dungeon_magic
+arch marble
 x 4
 y 23
 end
-arch magic_banned
-x 4
-y 23
-end
-arch cobblestones2
-x 4
-y 23
-end
-arch dungeon_magic
+arch marble
 x 4
 y 24
-end
-arch magic_banned
-x 4
-y 24
-end
-arch cobblestones2
-x 4
-y 24
-end
-arch dungeon_magic
-x 4
-y 25
-end
-arch magic_banned
-x 4
-y 25
-end
-arch cobblestones2
-x 4
-y 25
 end
 arch marble
 x 4
 y 25
 end
-arch dungeon_magic
+arch flagstone_1_3
 x 4
-y 26
+y 25
 end
-arch magic_banned
+arch cobblestones2
 x 4
 y 26
 end
 arch cobblestones2
 x 4
-y 26
-end
-arch dungeon_magic
-x 4
-y 27
-end
-arch magic_banned
-x 4
 y 27
 end
 arch cobblestones2
 x 4
-y 27
-end
-arch dungeon_magic
-x 4
-y 28
-end
-arch magic_banned
-x 4
 y 28
 end
 arch cobblestones2
-x 4
-y 28
-end
-arch marble
-x 4
-y 28
-end
-arch dungeon_magic
-x 4
-y 29
-end
-arch magic_banned
 x 4
 y 29
 end
 arch cobblestones2
 x 4
-y 29
-end
-arch dungeon_magic
-x 4
-y 30
-end
-arch magic_banned
-x 4
 y 30
 end
 arch cobblestones2
 x 4
-y 30
-end
-arch dungeon_magic
-x 4
 y 31
 end
-arch magic_banned
+arch altar
+name Drop 200pp for a teleport to st. Dominion
+type 31
+slaying platinum coin
+food 200
+connected 44
+exp 30
 x 4
 y 31
 end
 arch cobblestones2
-x 4
-y 31
-end
-arch marble
-x 4
-y 31
-end
-arch dungeon_magic
+no_magic 1
+damned 1
 x 4
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 4
+y 32
+end
+arch spikes_closed
+connected 44
+x 4
+y 32
+end
+arch teleporter
+invisible 1
+slaying /world/world_102_108
+hp 17
+sp 12
 x 4
 y 32
 end
 arch cobblestones2
 x 4
-y 32
+y 33
 end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 4
 y 33
 end
-arch magic_banned
-x 4
-y 33
-end
-arch cobblestones2
-x 4
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 4
-y 33
-end
-arch dungeon_magic
-x 4
-y 34
-end
-arch magic_banned
+arch grass
 x 4
 y 34
 end
 arch grass
 x 4
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 4
 y 35
 end
-arch magic_banned
-x 4
-y 35
-end
-arch biglake_n
-x 4
-y 35
-end
-arch magic_banned
-x 4
-y 36
-end
-arch dungeon_magic
+arch grass
 x 4
 y 36
 end
 arch grass
 x 4
-y 36
-end
-arch magic_banned
-x 4
-y 37
-end
-arch dungeon_magic
-x 4
 y 37
 end
 arch grass
 x 4
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 4
 y 38
 end
-arch magic_banned
-x 4
-y 38
-end
-arch footbridge_2_1_2
-x 4
-y 38
-end
-arch magic_banned
-x 4
-y 39
-end
-arch dungeon_magic
+arch grass
 x 4
 y 39
 end
 arch grass
 x 4
-y 39
-end
-arch magic_banned
-x 4
-y 40
-end
-arch dungeon_magic
-x 4
 y 40
 end
 arch grass
 x 4
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 4
 y 41
 end
-arch magic_banned
-x 4
-y 41
-end
-arch biglake_center
-x 4
-y 41
-end
-arch magic_banned
-x 4
-y 42
-end
-arch dungeon_magic
+arch grass
 x 4
 y 42
 end
 arch grass
 x 4
-y 42
-end
-arch magic_banned
-x 4
-y 43
-end
-arch dungeon_magic
-x 4
 y 43
 end
 arch grass
 x 4
-y 43
-end
-arch magic_banned
-x 4
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 4
 y 44
-end
-arch footbridge_2_1_2
-x 4
-y 44
-end
-arch magic_banned
-x 4
-y 45
-end
-arch dungeon_magic
-x 4
-y 45
 end
 arch grass
 x 4
 y 45
 end
-arch magic_banned
-x 4
-y 46
-end
-arch dungeon_magic
+arch grass
 x 4
 y 46
 end
 arch grass
 x 4
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 4
 y 47
 end
-arch dungeon_magic
-x 4
-y 47
-end
-arch grass_only
-x 4
-y 47
-end
-arch biglake_s
-x 4
-y 47
-end
-arch magic_banned
-x 4
-y 48
-end
-arch dungeon_magic
-x 4
-y 48
-end
-arch grass_only
+arch grass
 x 4
 y 48
 end
@@ -3134,69 +1498,30 @@ end
 arch cobblestones2
 x 5
 end
-arch flagstone_2_1_2
+arch flagstone_2_2_3
 x 5
-end
-arch flagstone_3_3
-x 5
-end
-arch dungeon_magic
-x 5
-y 1
-end
-arch magic_banned
-x 5
-y 1
-end
-arch cobblestones2
-x 5
-y 1
 end
 arch marble
 x 5
 y 1
 end
-arch flagstone_3_2
+arch flagstone_2_1_1
 x 5
 y 1
 end
-arch dungeon_magic
+arch marble
 x 5
 y 2
 end
-arch magic_banned
-x 5
-y 2
-end
-arch cobblestones2
+arch flagstone_2_1_1
 x 5
 y 2
 end
 arch marble
 x 5
-y 2
-end
-arch flagstone_3_2
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
 y 3
 end
-arch magic_banned
-x 5
-y 3
-end
-arch cobblestones2
-x 5
-y 3
-end
-arch marble
-x 5
-y 3
-end
-arch flagstone_3_2
+arch flagstone_2_1_1
 x 5
 y 3
 end
@@ -3220,584 +1545,233 @@ arch flagstone_3_1
 x 5
 y 4
 end
-arch dungeon_magic
-x 5
-y 5
-end
-arch magic_banned
-x 5
-y 5
-end
-arch cobblestones2
+arch marble
 x 5
 y 5
 end
 arch marble
 x 5
-y 5
-end
-arch dungeon_magic
-x 5
-y 6
-end
-arch magic_banned
-x 5
-y 6
-end
-arch cobblestones2
-x 5
 y 6
 end
 arch marble
 x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 7
-end
-arch magic_banned
-x 5
 y 7
 end
 arch cobblestones2
-x 5
-y 7
-end
-arch marble
-x 5
-y 7
-end
-arch dungeon_magic
-x 5
-y 8
-end
-arch magic_banned
 x 5
 y 8
 end
 arch cobblestones2
 x 5
-y 8
-end
-arch dungeon_magic
-x 5
 y 9
-end
-arch magic_banned
-x 5
-y 9
-end
-arch cobblestones2
-x 5
-y 9
-end
-arch dungeon_magic
-x 5
-y 10
-end
-arch magic_banned
-x 5
-y 10
-end
-arch cobblestones2
-x 5
-y 10
 end
 arch marble
 x 5
 y 10
 end
-arch dungeon_magic
-x 5
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 11
 end
 arch cobblestones2
 x 5
-y 11
-end
-arch dungeon_magic
-x 5
 y 12
-end
-arch magic_banned
-x 5
-y 12
-end
-arch cobblestones2
-x 5
-y 12
-end
-arch dungeon_magic
-x 5
-y 13
-end
-arch magic_banned
-x 5
-y 13
-end
-arch cobblestones2
-x 5
-y 13
 end
 arch marble
 x 5
 y 13
 end
-arch dungeon_magic
-x 5
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 14
 end
 arch cobblestones2
 x 5
-y 14
-end
-arch dungeon_magic
-x 5
 y 15
-end
-arch magic_banned
-x 5
-y 15
-end
-arch cobblestones2
-x 5
-y 15
-end
-arch dungeon_magic
-x 5
-y 16
-end
-arch magic_banned
-x 5
-y 16
-end
-arch cobblestones2
-x 5
-y 16
 end
 arch marble
 x 5
 y 16
 end
-arch dungeon_magic
-x 5
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 17
 end
 arch cobblestones2
 x 5
-y 17
-end
-arch dungeon_magic
-x 5
 y 18
-end
-arch magic_banned
-x 5
-y 18
-end
-arch cobblestones2
-x 5
-y 18
-end
-arch dungeon_magic
-x 5
-y 19
-end
-arch magic_banned
-x 5
-y 19
-end
-arch cobblestones2
-x 5
-y 19
 end
 arch marble
 x 5
 y 19
 end
-arch dungeon_magic
-x 5
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 20
 end
 arch cobblestones2
 x 5
-y 20
-end
-arch dungeon_magic
-x 5
 y 21
-end
-arch magic_banned
-x 5
-y 21
-end
-arch cobblestones2
-x 5
-y 21
-end
-arch dungeon_magic
-x 5
-y 22
-end
-arch magic_banned
-x 5
-y 22
-end
-arch cobblestones2
-x 5
-y 22
 end
 arch marble
 x 5
 y 22
 end
-arch dungeon_magic
-x 5
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 23
 end
 arch cobblestones2
 x 5
-y 23
-end
-arch dungeon_magic
-x 5
 y 24
-end
-arch magic_banned
-x 5
-y 24
-end
-arch cobblestones2
-x 5
-y 24
-end
-arch dungeon_magic
-x 5
-y 25
-end
-arch magic_banned
-x 5
-y 25
-end
-arch cobblestones2
-x 5
-y 25
 end
 arch marble
 x 5
 y 25
 end
-arch dungeon_magic
-x 5
-y 26
-end
-arch magic_banned
-x 5
-y 26
-end
 arch cobblestones2
 x 5
 y 26
 end
-arch dungeon_magic
-x 5
-y 27
-end
-arch magic_banned
+arch cobblestones2
 x 5
 y 27
 end
 arch cobblestones2
 x 5
-y 27
-end
-arch dungeon_magic
-x 5
-y 28
-end
-arch magic_banned
-x 5
 y 28
 end
 arch cobblestones2
-x 5
-y 28
-end
-arch marble
-x 5
-y 28
-end
-arch dungeon_magic
-x 5
-y 29
-end
-arch magic_banned
 x 5
 y 29
 end
 arch cobblestones2
 x 5
-y 29
-end
-arch dungeon_magic
-x 5
-y 30
-end
-arch magic_banned
-x 5
 y 30
 end
 arch cobblestones2
 x 5
-y 30
-end
-arch dungeon_magic
-x 5
 y 31
 end
-arch magic_banned
+arch altar
+name Drop 200pp for a teleport to red town
+type 31
+slaying platinum coin
+food 200
+connected 45
+exp 30
 x 5
 y 31
 end
 arch cobblestones2
-x 5
-y 31
-end
-arch marble
-x 5
-y 31
-end
-arch dungeon_magic
+no_magic 1
+damned 1
 x 5
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 5
+y 32
+end
+arch spikes_closed
+connected 45
+x 5
+y 32
+end
+arch teleporter
+invisible 1
+slaying /pup_land/rainbow/station
+hp 7
+sp 3
 x 5
 y 32
 end
 arch cobblestones2
 x 5
-y 32
+y 33
 end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 5
 y 33
 end
-arch magic_banned
-x 5
-y 33
-end
-arch cobblestones2
-x 5
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 5
-y 33
-end
-arch dungeon_magic
-x 5
-y 34
-end
-arch magic_banned
+arch grass
 x 5
 y 34
 end
 arch grass
 x 5
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 5
 y 35
 end
-arch magic_banned
-x 5
-y 35
-end
-arch biglake_n
-x 5
-y 35
-end
-arch magic_banned
-x 5
-y 36
-end
-arch dungeon_magic
+arch grass
 x 5
 y 36
 end
 arch grass
 x 5
-y 36
-end
-arch magic_banned
-x 5
-y 37
-end
-arch dungeon_magic
-x 5
 y 37
 end
 arch grass
 x 5
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 5
 y 38
 end
-arch magic_banned
-x 5
-y 38
-end
-arch footbridge_2_1_2
-x 5
-y 38
-end
-arch magic_banned
-x 5
-y 39
-end
-arch dungeon_magic
+arch grass
 x 5
 y 39
 end
 arch grass
 x 5
-y 39
-end
-arch magic_banned
-x 5
-y 40
-end
-arch dungeon_magic
-x 5
 y 40
 end
 arch grass
 x 5
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 5
 y 41
 end
-arch magic_banned
-x 5
-y 41
-end
-arch biglake_center
-x 5
-y 41
-end
-arch magic_banned
-x 5
-y 42
-end
-arch dungeon_magic
+arch grass
 x 5
 y 42
 end
 arch grass
 x 5
-y 42
-end
-arch magic_banned
-x 5
-y 43
-end
-arch dungeon_magic
-x 5
 y 43
 end
 arch grass
 x 5
-y 43
-end
-arch magic_banned
-x 5
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 5
 y 44
-end
-arch footbridge_2_1_2
-x 5
-y 44
-end
-arch magic_banned
-x 5
-y 45
-end
-arch dungeon_magic
-x 5
-y 45
 end
 arch grass
 x 5
 y 45
 end
-arch magic_banned
-x 5
-y 46
-end
-arch dungeon_magic
+arch grass
 x 5
 y 46
 end
 arch grass
 x 5
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 5
 y 47
 end
-arch dungeon_magic
-x 5
-y 47
-end
-arch grass_only
-x 5
-y 47
-end
-arch biglake_s
-x 5
-y 47
-end
-arch magic_banned
-x 5
-y 48
-end
-arch dungeon_magic
-x 5
-y 48
-end
-arch grass_only
+arch grass
 x 5
 y 48
 end
@@ -3809,163 +1783,44 @@ arch flagstone_2_1_2
 x 5
 y 49
 end
-arch cobblestones2
+arch blocked
 x 6
 end
-arch flagstone_3_3
-x 6
-end
-arch dungeon_magic
+arch blocked
 x 6
 y 1
 end
-arch magic_banned
-x 6
-y 1
-end
-arch cobblestones2
-x 6
-y 1
-end
-arch marble
-x 6
-y 1
-end
-arch flagstone_3_4
-x 6
-y 1
-end
-arch dungeon_magic
+arch blocked
 x 6
 y 2
 end
-arch magic_banned
-x 6
-y 2
-end
-arch cobblestones2
-x 6
-y 2
-end
-arch marble
-x 6
-y 2
-end
-arch flagstone_3_4
-x 6
-y 2
-end
-arch dungeon_magic
-x 6
-y 3
-end
-arch magic_banned
-x 6
-y 3
-end
-arch cobblestones2
+arch blocked
 x 6
 y 3
 end
 arch marble
 x 6
-y 3
-end
-arch flagstone_4
-x 6
-y 3
-end
-arch dungeon_magic
-x 6
 y 4
 end
-arch magic_banned
-x 6
-y 4
-end
-arch cobblestones2
+arch flagstone_2_1_2
 x 6
 y 4
 end
 arch marble
-x 6
-y 4
-end
-arch flagstone_3_1
-x 6
-y 4
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch magic_banned
-x 6
-y 5
-end
-arch cobblestones2
 x 6
 y 5
 end
 arch marble
 x 6
-y 5
-end
-arch dungeon_magic
-x 6
-y 6
-end
-arch magic_banned
-x 6
-y 6
-end
-arch cobblestones2
-x 6
 y 6
 end
 arch marble
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch magic_banned
 x 6
 y 7
 end
 arch cobblestones2
 x 6
-y 7
-end
-arch marble
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
 y 8
-end
-arch magic_banned
-x 6
-y 8
-end
-arch cobblestones2
-x 6
-y 8
-end
-arch marble
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
-y 9
-end
-arch magic_banned
-x 6
-y 9
 end
 arch cobblestones2
 x 6
@@ -3973,47 +1828,11 @@ y 9
 end
 arch marble
 x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch magic_banned
-x 6
 y 10
 end
 arch cobblestones2
 x 6
-y 10
-end
-arch marble
-x 6
-y 10
-end
-arch dungeon_magic
-x 6
 y 11
-end
-arch magic_banned
-x 6
-y 11
-end
-arch cobblestones2
-x 6
-y 11
-end
-arch marble
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch magic_banned
-x 6
-y 12
 end
 arch cobblestones2
 x 6
@@ -4021,47 +1840,11 @@ y 12
 end
 arch marble
 x 6
-y 12
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch magic_banned
-x 6
 y 13
 end
 arch cobblestones2
 x 6
-y 13
-end
-arch marble
-x 6
-y 13
-end
-arch dungeon_magic
-x 6
 y 14
-end
-arch magic_banned
-x 6
-y 14
-end
-arch cobblestones2
-x 6
-y 14
-end
-arch marble
-x 6
-y 14
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch magic_banned
-x 6
-y 15
 end
 arch cobblestones2
 x 6
@@ -4069,47 +1852,11 @@ y 15
 end
 arch marble
 x 6
-y 15
-end
-arch dungeon_magic
-x 6
-y 16
-end
-arch magic_banned
-x 6
 y 16
 end
 arch cobblestones2
 x 6
-y 16
-end
-arch marble
-x 6
-y 16
-end
-arch dungeon_magic
-x 6
 y 17
-end
-arch magic_banned
-x 6
-y 17
-end
-arch cobblestones2
-x 6
-y 17
-end
-arch marble
-x 6
-y 17
-end
-arch dungeon_magic
-x 6
-y 18
-end
-arch magic_banned
-x 6
-y 18
 end
 arch cobblestones2
 x 6
@@ -4117,47 +1864,11 @@ y 18
 end
 arch marble
 x 6
-y 18
-end
-arch dungeon_magic
-x 6
-y 19
-end
-arch magic_banned
-x 6
 y 19
 end
 arch cobblestones2
 x 6
-y 19
-end
-arch marble
-x 6
-y 19
-end
-arch dungeon_magic
-x 6
 y 20
-end
-arch magic_banned
-x 6
-y 20
-end
-arch cobblestones2
-x 6
-y 20
-end
-arch marble
-x 6
-y 20
-end
-arch dungeon_magic
-x 6
-y 21
-end
-arch magic_banned
-x 6
-y 21
 end
 arch cobblestones2
 x 6
@@ -4165,47 +1876,11 @@ y 21
 end
 arch marble
 x 6
-y 21
-end
-arch dungeon_magic
-x 6
-y 22
-end
-arch magic_banned
-x 6
 y 22
 end
 arch cobblestones2
 x 6
-y 22
-end
-arch marble
-x 6
-y 22
-end
-arch dungeon_magic
-x 6
 y 23
-end
-arch magic_banned
-x 6
-y 23
-end
-arch cobblestones2
-x 6
-y 23
-end
-arch marble
-x 6
-y 23
-end
-arch dungeon_magic
-x 6
-y 24
-end
-arch magic_banned
-x 6
-y 24
 end
 arch cobblestones2
 x 6
@@ -4213,338 +1888,172 @@ y 24
 end
 arch marble
 x 6
-y 24
-end
-arch dungeon_magic
-x 6
 y 25
 end
-arch magic_banned
+arch flagstone_1_4
 x 6
 y 25
 end
 arch cobblestones2
 x 6
-y 25
-end
-arch marble
-x 6
-y 25
-end
-arch dungeon_magic
-x 6
 y 26
 end
-arch magic_banned
+arch sign
+msg
+Townportal castingarea
+
+Cast your town portals ONLY here!
+
+The teleporters below are ONEWAY portals!
+Means: If you pay and teleport you must 
+find another way to return.
+
+When you have paid you should hurry up that 
+you get onto the teleporter before it closes 
+again.
+endmsg
 x 6
 y 26
 end
 arch cobblestones2
-x 6
-y 26
-end
-arch marble
-x 6
-y 26
-end
-arch dungeon_magic
-x 6
-y 27
-end
-arch magic_banned
 x 6
 y 27
 end
 arch cobblestones2
 x 6
-y 27
-end
-arch marble
-x 6
-y 27
-end
-arch dungeon_magic
-x 6
-y 28
-end
-arch magic_banned
-x 6
 y 28
 end
 arch cobblestones2
-x 6
-y 28
-end
-arch marble
-x 6
-y 28
-end
-arch dungeon_magic
-x 6
-y 29
-end
-arch magic_banned
 x 6
 y 29
 end
 arch cobblestones2
 x 6
-y 29
-end
-arch marble
-x 6
-y 29
-end
-arch dungeon_magic
-x 6
 y 30
-end
-arch magic_banned
-x 6
-y 30
-end
-arch cobblestones2
-x 6
-y 30
-end
-arch marble
-x 6
-y 30
-end
-arch dungeon_magic
-x 6
-y 31
-end
-arch magic_banned
-x 6
-y 31
 end
 arch cobblestones2
 x 6
 y 31
 end
-arch marble
+arch altar
+name Drop 200pp for a teleport to lone town
+type 31
+slaying platinum coin
+food 200
+connected 46
+exp 30
 x 6
 y 31
 end
-arch dungeon_magic
+arch cobblestones2
+no_magic 1
+damned 1
 x 6
 y 32
 end
-arch magic_banned
+arch teleporter
+speed 0.0
+x 6
+y 32
+end
+arch spikes_closed
+connected 46
+x 6
+y 32
+end
+arch teleporter
+invisible 1
+slaying /pup_land/lone_town/town
+hp 22
+sp 11
 x 6
 y 32
 end
 arch cobblestones2
 x 6
-y 32
+y 33
 end
-arch marble
-x 6
-y 32
-end
-arch dungeon_magic
+arch flagstone_2_1_2
 x 6
 y 33
 end
-arch magic_banned
-x 6
-y 33
-end
-arch cobblestones2
-x 6
-y 33
-end
-arch marble
-x 6
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 6
-y 33
-end
-arch dungeon_magic
-x 6
-y 34
-end
-arch magic_banned
+arch grass
 x 6
 y 34
 end
 arch grass
 x 6
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 6
 y 35
 end
-arch magic_banned
-x 6
-y 35
-end
-arch biglake_n
-x 6
-y 35
-end
-arch magic_banned
-x 6
-y 36
-end
-arch dungeon_magic
+arch grass
 x 6
 y 36
 end
 arch grass
 x 6
-y 36
-end
-arch magic_banned
-x 6
-y 37
-end
-arch dungeon_magic
-x 6
 y 37
 end
 arch grass
 x 6
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 6
 y 38
 end
-arch magic_banned
-x 6
-y 38
-end
-arch footbridge_2_1_2
-x 6
-y 38
-end
-arch magic_banned
-x 6
-y 39
-end
-arch dungeon_magic
+arch grass
 x 6
 y 39
 end
 arch grass
 x 6
-y 39
-end
-arch magic_banned
-x 6
-y 40
-end
-arch dungeon_magic
-x 6
 y 40
 end
 arch grass
 x 6
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 6
 y 41
 end
-arch magic_banned
-x 6
-y 41
-end
-arch biglake_center
-x 6
-y 41
-end
-arch magic_banned
-x 6
-y 42
-end
-arch dungeon_magic
+arch grass
 x 6
 y 42
 end
 arch grass
 x 6
-y 42
-end
-arch magic_banned
-x 6
-y 43
-end
-arch dungeon_magic
-x 6
 y 43
 end
 arch grass
 x 6
-y 43
-end
-arch magic_banned
-x 6
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 6
 y 44
-end
-arch footbridge_2_1_2
-x 6
-y 44
-end
-arch magic_banned
-x 6
-y 45
-end
-arch dungeon_magic
-x 6
-y 45
 end
 arch grass
 x 6
 y 45
 end
-arch magic_banned
-x 6
-y 46
-end
-arch dungeon_magic
+arch grass
 x 6
 y 46
 end
 arch grass
 x 6
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 6
 y 47
 end
-arch dungeon_magic
-x 6
-y 47
-end
-arch grass_only
-x 6
-y 47
-end
-arch biglake_s
-x 6
-y 47
-end
-arch magic_banned
-x 6
-y 48
-end
-arch dungeon_magic
-x 6
-y 48
-end
-arch grass_only
+arch grass
 x 6
 y 48
 end
@@ -4556,27 +2065,8 @@ arch flagstone_2_1_2
 x 6
 y 49
 end
-arch cobblestones2
+arch blocked
 x 7
-end
-arch flagstone_2_1_2
-x 7
-end
-arch dungeon_magic
-x 7
-y 1
-end
-arch magic_banned
-x 7
-y 1
-end
-arch cobblestones2
-x 7
-y 1
-end
-arch marble
-x 7
-y 1
 end
 arch button_small
 connected 12322
@@ -4587,22 +2077,6 @@ arch gateTrg1
 connected 12321
 x 7
 y 1
-end
-arch dungeon_magic
-x 7
-y 2
-end
-arch magic_banned
-x 7
-y 2
-end
-arch cobblestones2
-x 7
-y 2
-end
-arch marble
-x 7
-y 2
 end
 arch button_small
 connected 12323
@@ -4618,624 +2092,247 @@ arch boulder
 x 7
 y 2
 end
-arch dungeon_magic
-x 7
-y 3
-end
-arch magic_banned
-x 7
-y 3
-end
-arch cobblestones2
+arch blocked
 x 7
 y 3
 end
 arch marble
 x 7
-y 3
-end
-arch flagstone_3_3
-x 7
-y 3
-end
-arch dungeon_magic
-x 7
 y 4
 end
-arch magic_banned
-x 7
-y 4
-end
-arch cobblestones2
+arch flagstone_2_1_2
 x 7
 y 4
 end
 arch marble
-x 7
-y 4
-end
-arch flagstone_3_1
-x 7
-y 4
-end
-arch dungeon_magic
-x 7
-y 5
-end
-arch magic_banned
-x 7
-y 5
-end
-arch cobblestones2
 x 7
 y 5
 end
 arch marble
 x 7
-y 5
-end
-arch dungeon_magic
-x 7
-y 6
-end
-arch magic_banned
-x 7
-y 6
-end
-arch cobblestones2
-x 7
 y 6
 end
 arch marble
 x 7
-y 6
-end
-arch dungeon_magic
-x 7
-y 7
-end
-arch magic_banned
-x 7
-y 7
-end
-arch cobblestones2
-x 7
 y 7
 end
 arch marble
-x 7
-y 7
-end
-arch dungeon_magic
 x 7
 y 8
 end
-arch magic_banned
-x 7
-y 8
-end
-arch cobblestones2
-x 7
-y 8
-end
-arch dungeon_magic
+arch marble
 x 7
 y 9
 end
-arch magic_banned
-x 7
-y 9
-end
-arch cobblestones2
-x 7
-y 9
-end
-arch dungeon_magic
-x 7
-y 10
-end
-arch magic_banned
-x 7
-y 10
-end
-arch cobblestones2
-x 7
-y 10
-end
 arch marble
 x 7
 y 10
 end
-arch dungeon_magic
+arch marble
 x 7
 y 11
 end
-arch magic_banned
-x 7
-y 11
-end
-arch cobblestones2
-x 7
-y 11
-end
-arch dungeon_magic
+arch marble
 x 7
 y 12
 end
-arch magic_banned
-x 7
-y 12
-end
-arch cobblestones2
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch magic_banned
-x 7
-y 13
-end
-arch cobblestones2
-x 7
-y 13
-end
 arch marble
 x 7
 y 13
 end
-arch dungeon_magic
+arch marble
 x 7
 y 14
 end
-arch magic_banned
-x 7
-y 14
-end
-arch cobblestones2
-x 7
-y 14
-end
-arch dungeon_magic
+arch marble
 x 7
 y 15
 end
-arch magic_banned
-x 7
-y 15
-end
-arch cobblestones2
-x 7
-y 15
-end
-arch dungeon_magic
-x 7
-y 16
-end
-arch magic_banned
-x 7
-y 16
-end
-arch cobblestones2
-x 7
-y 16
-end
 arch marble
 x 7
 y 16
 end
-arch dungeon_magic
+arch marble
 x 7
 y 17
 end
-arch magic_banned
-x 7
-y 17
-end
-arch cobblestones2
-x 7
-y 17
-end
-arch dungeon_magic
+arch marble
 x 7
 y 18
 end
-arch magic_banned
-x 7
-y 18
-end
-arch cobblestones2
-x 7
-y 18
-end
-arch dungeon_magic
-x 7
-y 19
-end
-arch magic_banned
-x 7
-y 19
-end
-arch cobblestones2
-x 7
-y 19
-end
 arch marble
 x 7
 y 19
 end
-arch dungeon_magic
+arch marble
 x 7
 y 20
 end
-arch magic_banned
-x 7
-y 20
-end
-arch cobblestones2
-x 7
-y 20
-end
-arch dungeon_magic
+arch marble
 x 7
 y 21
 end
-arch magic_banned
-x 7
-y 21
-end
-arch cobblestones2
-x 7
-y 21
-end
-arch dungeon_magic
-x 7
-y 22
-end
-arch magic_banned
-x 7
-y 22
-end
-arch cobblestones2
-x 7
-y 22
-end
 arch marble
 x 7
 y 22
 end
-arch dungeon_magic
+arch marble
 x 7
 y 23
 end
-arch magic_banned
-x 7
-y 23
-end
-arch cobblestones2
-x 7
-y 23
-end
-arch dungeon_magic
+arch marble
 x 7
 y 24
-end
-arch magic_banned
-x 7
-y 24
-end
-arch cobblestones2
-x 7
-y 24
-end
-arch dungeon_magic
-x 7
-y 25
-end
-arch magic_banned
-x 7
-y 25
-end
-arch cobblestones2
-x 7
-y 25
 end
 arch marble
 x 7
 y 25
 end
-arch dungeon_magic
+arch flagstone_2_2_3
+x 7
+y 25
+end
+arch marble
 x 7
 y 26
 end
-arch magic_banned
+arch flagstone_2_1_1
 x 7
 y 26
 end
-arch cobblestones2
-x 7
-y 26
-end
-arch dungeon_magic
+arch marble
 x 7
 y 27
 end
-arch magic_banned
+arch flagstone_2_1_1
 x 7
 y 27
-end
-arch cobblestones2
-x 7
-y 27
-end
-arch dungeon_magic
-x 7
-y 28
-end
-arch magic_banned
-x 7
-y 28
-end
-arch cobblestones2
-x 7
-y 28
 end
 arch marble
 x 7
 y 28
 end
-arch dungeon_magic
+arch flagstone_2_1_1
+x 7
+y 28
+end
+arch marble
 x 7
 y 29
 end
-arch magic_banned
+arch flagstone_2_1_1
 x 7
 y 29
 end
-arch cobblestones2
-x 7
-y 29
-end
-arch dungeon_magic
+arch marble
 x 7
 y 30
 end
-arch magic_banned
+arch flagstone_2_1_1
 x 7
 y 30
-end
-arch cobblestones2
-x 7
-y 30
-end
-arch dungeon_magic
-x 7
-y 31
-end
-arch magic_banned
-x 7
-y 31
-end
-arch cobblestones2
-x 7
-y 31
 end
 arch marble
 x 7
 y 31
 end
-arch dungeon_magic
+arch flagstone_2_1_1
+x 7
+y 31
+end
+arch marble
 x 7
 y 32
 end
-arch magic_banned
+arch flagstone_2_1_1
 x 7
 y 32
 end
-arch cobblestones2
-x 7
-y 32
-end
-arch dungeon_magic
+arch marble
 x 7
 y 33
 end
-arch magic_banned
+arch flagstone_2_2_4
 x 7
 y 33
 end
-arch cobblestones2
-x 7
-y 33
-end
-arch igate_closed_1
-connected 12322
-x 7
-y 33
-end
-arch dungeon_magic
-x 7
-y 34
-end
-arch magic_banned
+arch grass
 x 7
 y 34
 end
 arch grass
 x 7
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 7
 y 35
 end
-arch magic_banned
-x 7
-y 35
-end
-arch biglake_n
-x 7
-y 35
-end
-arch magic_banned
-x 7
-y 36
-end
-arch dungeon_magic
+arch grass
 x 7
 y 36
 end
 arch grass
 x 7
-y 36
-end
-arch magic_banned
-x 7
-y 37
-end
-arch dungeon_magic
-x 7
 y 37
 end
 arch grass
 x 7
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 7
 y 38
 end
-arch magic_banned
-x 7
-y 38
-end
-arch footbridge_2_1_2
-x 7
-y 38
-end
-arch magic_banned
-x 7
-y 39
-end
-arch dungeon_magic
+arch grass
 x 7
 y 39
 end
 arch grass
 x 7
-y 39
-end
-arch magic_banned
-x 7
-y 40
-end
-arch dungeon_magic
-x 7
 y 40
 end
 arch grass
 x 7
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 7
 y 41
 end
-arch magic_banned
-x 7
-y 41
-end
-arch biglake_center
-x 7
-y 41
-end
-arch magic_banned
-x 7
-y 42
-end
-arch dungeon_magic
+arch grass
 x 7
 y 42
 end
 arch grass
 x 7
-y 42
-end
-arch magic_banned
-x 7
-y 43
-end
-arch dungeon_magic
-x 7
 y 43
 end
 arch grass
 x 7
-y 43
-end
-arch magic_banned
-x 7
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 7
 y 44
-end
-arch footbridge_2_1_2
-x 7
-y 44
-end
-arch magic_banned
-x 7
-y 45
-end
-arch dungeon_magic
-x 7
-y 45
 end
 arch grass
 x 7
 y 45
 end
-arch magic_banned
-x 7
-y 46
-end
-arch dungeon_magic
+arch grass
 x 7
 y 46
 end
 arch grass
 x 7
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 7
 y 47
 end
-arch dungeon_magic
-x 7
-y 47
-end
-arch grass_only
-x 7
-y 47
-end
-arch biglake_s
-x 7
-y 47
-end
-arch magic_banned
-x 7
-y 48
-end
-arch dungeon_magic
-x 7
-y 48
-end
-arch grass_only
+arch grass
 x 7
 y 48
 end
@@ -5247,479 +2344,140 @@ arch flagstone_2_1_2
 x 7
 y 49
 end
-arch cobblestones2
+arch blocked
 x 8
 end
-arch flagstone_3_3
-x 8
-end
-arch dungeon_magic
+arch blocked
 x 8
 y 1
 end
-arch magic_banned
-x 8
-y 1
-end
-arch cobblestones2
-x 8
-y 1
-end
-arch marble
-x 8
-y 1
-end
-arch flagstone_3_2
-x 8
-y 1
-end
-arch dungeon_magic
+arch blocked
 x 8
 y 2
 end
-arch magic_banned
-x 8
-y 2
-end
-arch cobblestones2
-x 8
-y 2
-end
-arch marble
-x 8
-y 2
-end
-arch flagstone_3_2
-x 8
-y 2
-end
-arch dungeon_magic
-x 8
-y 3
-end
-arch magic_banned
-x 8
-y 3
-end
-arch cobblestones2
+arch blocked
 x 8
 y 3
 end
 arch marble
 x 8
-y 3
-end
-arch flagstone_4
-x 8
-y 3
-end
-arch dungeon_magic
-x 8
 y 4
 end
-arch magic_banned
-x 8
-y 4
-end
-arch cobblestones2
+arch flagstone_2_1_2
 x 8
 y 4
 end
 arch marble
-x 8
-y 4
-end
-arch flagstone_3_1
-x 8
-y 4
-end
-arch dungeon_magic
-x 8
-y 5
-end
-arch magic_banned
-x 8
-y 5
-end
-arch cobblestones2
 x 8
 y 5
 end
 arch marble
 x 8
-y 5
-end
-arch dungeon_magic
-x 8
-y 6
-end
-arch magic_banned
-x 8
-y 6
-end
-arch cobblestones2
-x 8
 y 6
 end
 arch marble
 x 8
-y 6
-end
-arch dungeon_magic
-x 8
-y 7
-end
-arch magic_banned
-x 8
 y 7
 end
 arch cobblestones2
-x 8
-y 7
-end
-arch marble
-x 8
-y 7
-end
-arch dungeon_magic
-x 8
-y 8
-end
-arch magic_banned
 x 8
 y 8
 end
 arch cobblestones2
 x 8
-y 8
-end
-arch dungeon_magic
-x 8
 y 9
-end
-arch magic_banned
-x 8
-y 9
-end
-arch cobblestones2
-x 8
-y 9
-end
-arch dungeon_magic
-x 8
-y 10
-end
-arch magic_banned
-x 8
-y 10
-end
-arch cobblestones2
-x 8
-y 10
 end
 arch marble
 x 8
 y 10
 end
-arch dungeon_magic
-x 8
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 11
 end
 arch cobblestones2
 x 8
-y 11
-end
-arch dungeon_magic
-x 8
 y 12
-end
-arch magic_banned
-x 8
-y 12
-end
-arch cobblestones2
-x 8
-y 12
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch magic_banned
-x 8
-y 13
-end
-arch cobblestones2
-x 8
-y 13
 end
 arch marble
 x 8
 y 13
 end
-arch dungeon_magic
-x 8
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 14
 end
 arch cobblestones2
 x 8
-y 14
-end
-arch dungeon_magic
-x 8
 y 15
-end
-arch magic_banned
-x 8
-y 15
-end
-arch cobblestones2
-x 8
-y 15
-end
-arch dungeon_magic
-x 8
-y 16
-end
-arch magic_banned
-x 8
-y 16
-end
-arch cobblestones2
-x 8
-y 16
 end
 arch marble
 x 8
 y 16
 end
-arch dungeon_magic
-x 8
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 17
 end
 arch cobblestones2
 x 8
-y 17
-end
-arch dungeon_magic
-x 8
 y 18
-end
-arch magic_banned
-x 8
-y 18
-end
-arch cobblestones2
-x 8
-y 18
-end
-arch dungeon_magic
-x 8
-y 19
-end
-arch magic_banned
-x 8
-y 19
-end
-arch cobblestones2
-x 8
-y 19
 end
 arch marble
 x 8
 y 19
 end
-arch dungeon_magic
-x 8
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 20
 end
 arch cobblestones2
 x 8
-y 20
-end
-arch dungeon_magic
-x 8
 y 21
-end
-arch magic_banned
-x 8
-y 21
-end
-arch cobblestones2
-x 8
-y 21
-end
-arch dungeon_magic
-x 8
-y 22
-end
-arch magic_banned
-x 8
-y 22
-end
-arch cobblestones2
-x 8
-y 22
 end
 arch marble
 x 8
 y 22
 end
-arch dungeon_magic
-x 8
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 23
 end
 arch cobblestones2
 x 8
-y 23
-end
-arch dungeon_magic
-x 8
 y 24
-end
-arch magic_banned
-x 8
-y 24
-end
-arch cobblestones2
-x 8
-y 24
-end
-arch dungeon_magic
-x 8
-y 25
-end
-arch magic_banned
-x 8
-y 25
-end
-arch cobblestones2
-x 8
-y 25
 end
 arch marble
 x 8
 y 25
 end
-arch dungeon_magic
-x 8
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 26
 end
 arch cobblestones2
 x 8
-y 26
-end
-arch dungeon_magic
-x 8
 y 27
-end
-arch magic_banned
-x 8
-y 27
-end
-arch cobblestones2
-x 8
-y 27
-end
-arch dungeon_magic
-x 8
-y 28
-end
-arch magic_banned
-x 8
-y 28
-end
-arch cobblestones2
-x 8
-y 28
 end
 arch marble
 x 8
 y 28
 end
-arch dungeon_magic
-x 8
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 8
 y 29
 end
 arch cobblestones2
 x 8
-y 29
-end
-arch dungeon_magic
-x 8
 y 30
-end
-arch magic_banned
-x 8
-y 30
-end
-arch cobblestones2
-x 8
-y 30
-end
-arch dungeon_magic
-x 8
-y 31
-end
-arch magic_banned
-x 8
-y 31
-end
-arch cobblestones2
-x 8
-y 31
 end
 arch marble
 x 8
 y 31
 end
-arch dungeon_magic
-x 8
-y 32
-end
-arch magic_banned
-x 8
-y 32
-end
 arch cobblestones2
 x 8
 y 32
-end
-arch dungeon_magic
-x 8
-y 33
-end
-arch magic_banned
-x 8
-y 33
 end
 arch cobblestones2
 x 8
@@ -5730,187 +2488,83 @@ connected 12322
 x 8
 y 33
 end
-arch dungeon_magic
-x 8
-y 34
-end
-arch magic_banned
+arch grass
 x 8
 y 34
 end
 arch grass
 x 8
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 8
 y 35
 end
-arch magic_banned
-x 8
-y 35
-end
-arch biglake_n
-x 8
-y 35
-end
-arch magic_banned
-x 8
-y 36
-end
-arch dungeon_magic
+arch grass
 x 8
 y 36
 end
 arch grass
 x 8
-y 36
-end
-arch magic_banned
-x 8
-y 37
-end
-arch dungeon_magic
-x 8
 y 37
 end
 arch grass
 x 8
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 8
 y 38
 end
-arch magic_banned
-x 8
-y 38
-end
-arch footbridge_2_1_2
-x 8
-y 38
-end
-arch magic_banned
-x 8
-y 39
-end
-arch dungeon_magic
+arch grass
 x 8
 y 39
 end
 arch grass
 x 8
-y 39
-end
-arch magic_banned
-x 8
-y 40
-end
-arch dungeon_magic
-x 8
 y 40
 end
 arch grass
 x 8
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 8
 y 41
 end
-arch magic_banned
-x 8
-y 41
-end
-arch biglake_center
-x 8
-y 41
-end
-arch magic_banned
-x 8
-y 42
-end
-arch dungeon_magic
+arch grass
 x 8
 y 42
 end
 arch grass
 x 8
-y 42
-end
-arch magic_banned
-x 8
-y 43
-end
-arch dungeon_magic
-x 8
 y 43
 end
 arch grass
 x 8
-y 43
-end
-arch magic_banned
-x 8
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 8
 y 44
-end
-arch footbridge_2_1_2
-x 8
-y 44
-end
-arch magic_banned
-x 8
-y 45
-end
-arch dungeon_magic
-x 8
-y 45
 end
 arch grass
 x 8
 y 45
 end
-arch magic_banned
-x 8
-y 46
-end
-arch dungeon_magic
+arch grass
 x 8
 y 46
 end
 arch grass
 x 8
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 8
 y 47
 end
-arch dungeon_magic
-x 8
-y 47
-end
-arch grass_only
-x 8
-y 47
-end
-arch biglake_s
-x 8
-y 47
-end
-arch magic_banned
-x 8
-y 48
-end
-arch dungeon_magic
-x 8
-y 48
-end
-arch grass_only
+arch grass
 x 8
 y 48
 end
@@ -5925,66 +2579,30 @@ end
 arch cobblestones2
 x 9
 end
-arch flagstone_3_3
+arch flagstone_2_2_2
 x 9
-end
-arch dungeon_magic
-x 9
-y 1
-end
-arch magic_banned
-x 9
-y 1
-end
-arch cobblestones2
-x 9
-y 1
 end
 arch marble
 x 9
 y 1
 end
-arch flagstone_3_4
+arch flagstone_2_1_1
 x 9
 y 1
 end
-arch dungeon_magic
+arch marble
 x 9
 y 2
 end
-arch magic_banned
-x 9
-y 2
-end
-arch cobblestones2
+arch flagstone_2_1_1
 x 9
 y 2
 end
 arch marble
 x 9
-y 2
-end
-arch flagstone_3_4
-x 9
-y 2
-end
-arch dungeon_magic
-x 9
 y 3
 end
-arch magic_banned
-x 9
-y 3
-end
-arch cobblestones2
-x 9
-y 3
-end
-arch marble
-x 9
-y 3
-end
-arch flagstone_3_4
+arch flagstone_2_1_1
 x 9
 y 3
 end
@@ -6008,77 +2626,21 @@ arch flagstone_2_2_4
 x 9
 y 4
 end
-arch dungeon_magic
-x 9
-y 5
-end
-arch magic_banned
-x 9
-y 5
-end
-arch cobblestones2
+arch marble
 x 9
 y 5
 end
 arch marble
 x 9
-y 5
-end
-arch dungeon_magic
-x 9
-y 6
-end
-arch magic_banned
-x 9
-y 6
-end
-arch cobblestones2
-x 9
 y 6
 end
 arch marble
-x 9
-y 6
-end
-arch dungeon_magic
-x 9
-y 7
-end
-arch magic_banned
 x 9
 y 7
 end
 arch cobblestones2
 x 9
-y 7
-end
-arch marble
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
 y 8
-end
-arch magic_banned
-x 9
-y 8
-end
-arch cobblestones2
-x 9
-y 8
-end
-arch marble
-x 9
-y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch magic_banned
-x 9
-y 9
 end
 arch cobblestones2
 x 9
@@ -6086,47 +2648,11 @@ y 9
 end
 arch marble
 x 9
-y 9
-end
-arch dungeon_magic
-x 9
-y 10
-end
-arch magic_banned
-x 9
 y 10
 end
 arch cobblestones2
 x 9
-y 10
-end
-arch marble
-x 9
-y 10
-end
-arch dungeon_magic
-x 9
 y 11
-end
-arch magic_banned
-x 9
-y 11
-end
-arch cobblestones2
-x 9
-y 11
-end
-arch marble
-x 9
-y 11
-end
-arch dungeon_magic
-x 9
-y 12
-end
-arch magic_banned
-x 9
-y 12
 end
 arch cobblestones2
 x 9
@@ -6134,47 +2660,11 @@ y 12
 end
 arch marble
 x 9
-y 12
-end
-arch dungeon_magic
-x 9
-y 13
-end
-arch magic_banned
-x 9
 y 13
 end
 arch cobblestones2
 x 9
-y 13
-end
-arch marble
-x 9
-y 13
-end
-arch dungeon_magic
-x 9
 y 14
-end
-arch magic_banned
-x 9
-y 14
-end
-arch cobblestones2
-x 9
-y 14
-end
-arch marble
-x 9
-y 14
-end
-arch dungeon_magic
-x 9
-y 15
-end
-arch magic_banned
-x 9
-y 15
 end
 arch cobblestones2
 x 9
@@ -6182,47 +2672,11 @@ y 15
 end
 arch marble
 x 9
-y 15
-end
-arch dungeon_magic
-x 9
-y 16
-end
-arch magic_banned
-x 9
 y 16
 end
 arch cobblestones2
 x 9
-y 16
-end
-arch marble
-x 9
-y 16
-end
-arch dungeon_magic
-x 9
 y 17
-end
-arch magic_banned
-x 9
-y 17
-end
-arch cobblestones2
-x 9
-y 17
-end
-arch marble
-x 9
-y 17
-end
-arch dungeon_magic
-x 9
-y 18
-end
-arch magic_banned
-x 9
-y 18
 end
 arch cobblestones2
 x 9
@@ -6230,47 +2684,11 @@ y 18
 end
 arch marble
 x 9
-y 18
-end
-arch dungeon_magic
-x 9
-y 19
-end
-arch magic_banned
-x 9
 y 19
 end
 arch cobblestones2
 x 9
-y 19
-end
-arch marble
-x 9
-y 19
-end
-arch dungeon_magic
-x 9
 y 20
-end
-arch magic_banned
-x 9
-y 20
-end
-arch cobblestones2
-x 9
-y 20
-end
-arch marble
-x 9
-y 20
-end
-arch dungeon_magic
-x 9
-y 21
-end
-arch magic_banned
-x 9
-y 21
 end
 arch cobblestones2
 x 9
@@ -6278,47 +2696,11 @@ y 21
 end
 arch marble
 x 9
-y 21
-end
-arch dungeon_magic
-x 9
-y 22
-end
-arch magic_banned
-x 9
 y 22
 end
 arch cobblestones2
 x 9
-y 22
-end
-arch marble
-x 9
-y 22
-end
-arch dungeon_magic
-x 9
 y 23
-end
-arch magic_banned
-x 9
-y 23
-end
-arch cobblestones2
-x 9
-y 23
-end
-arch marble
-x 9
-y 23
-end
-arch dungeon_magic
-x 9
-y 24
-end
-arch magic_banned
-x 9
-y 24
 end
 arch cobblestones2
 x 9
@@ -6326,47 +2708,11 @@ y 24
 end
 arch marble
 x 9
-y 24
-end
-arch dungeon_magic
-x 9
-y 25
-end
-arch magic_banned
-x 9
 y 25
 end
 arch cobblestones2
 x 9
-y 25
-end
-arch marble
-x 9
-y 25
-end
-arch dungeon_magic
-x 9
 y 26
-end
-arch magic_banned
-x 9
-y 26
-end
-arch cobblestones2
-x 9
-y 26
-end
-arch marble
-x 9
-y 26
-end
-arch dungeon_magic
-x 9
-y 27
-end
-arch magic_banned
-x 9
-y 27
 end
 arch cobblestones2
 x 9
@@ -6374,47 +2720,11 @@ y 27
 end
 arch marble
 x 9
-y 27
-end
-arch dungeon_magic
-x 9
-y 28
-end
-arch magic_banned
-x 9
 y 28
 end
 arch cobblestones2
 x 9
-y 28
-end
-arch marble
-x 9
-y 28
-end
-arch dungeon_magic
-x 9
 y 29
-end
-arch magic_banned
-x 9
-y 29
-end
-arch cobblestones2
-x 9
-y 29
-end
-arch marble
-x 9
-y 29
-end
-arch dungeon_magic
-x 9
-y 30
-end
-arch magic_banned
-x 9
-y 30
 end
 arch cobblestones2
 x 9
@@ -6422,53 +2732,13 @@ y 30
 end
 arch marble
 x 9
-y 30
-end
-arch dungeon_magic
-x 9
-y 31
-end
-arch magic_banned
-x 9
 y 31
 end
 arch cobblestones2
 x 9
-y 31
-end
-arch marble
-x 9
-y 31
-end
-arch dungeon_magic
-x 9
-y 32
-end
-arch magic_banned
-x 9
 y 32
 end
 arch cobblestones2
-x 9
-y 32
-end
-arch marble
-x 9
-y 32
-end
-arch dungeon_magic
-x 9
-y 33
-end
-arch magic_banned
-x 9
-y 33
-end
-arch cobblestones2
-x 9
-y 33
-end
-arch marble
 x 9
 y 33
 end
@@ -6477,187 +2747,83 @@ connected 12322
 x 9
 y 33
 end
-arch dungeon_magic
-x 9
-y 34
-end
-arch magic_banned
+arch grass
 x 9
 y 34
 end
 arch grass
 x 9
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 9
 y 35
 end
-arch magic_banned
-x 9
-y 35
-end
-arch biglake_n
-x 9
-y 35
-end
-arch magic_banned
-x 9
-y 36
-end
-arch dungeon_magic
+arch grass
 x 9
 y 36
 end
 arch grass
 x 9
-y 36
-end
-arch magic_banned
-x 9
-y 37
-end
-arch dungeon_magic
-x 9
 y 37
 end
 arch grass
 x 9
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 9
 y 38
 end
-arch magic_banned
-x 9
-y 38
-end
-arch footbridge_2_1_2
-x 9
-y 38
-end
-arch magic_banned
-x 9
-y 39
-end
-arch dungeon_magic
+arch grass
 x 9
 y 39
 end
 arch grass
 x 9
-y 39
-end
-arch magic_banned
-x 9
-y 40
-end
-arch dungeon_magic
-x 9
 y 40
 end
 arch grass
 x 9
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 9
 y 41
 end
-arch magic_banned
-x 9
-y 41
-end
-arch biglake_center
-x 9
-y 41
-end
-arch magic_banned
-x 9
-y 42
-end
-arch dungeon_magic
+arch grass
 x 9
 y 42
 end
 arch grass
 x 9
-y 42
-end
-arch magic_banned
-x 9
-y 43
-end
-arch dungeon_magic
-x 9
 y 43
 end
 arch grass
 x 9
-y 43
-end
-arch magic_banned
-x 9
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 9
 y 44
-end
-arch footbridge_2_1_2
-x 9
-y 44
-end
-arch magic_banned
-x 9
-y 45
-end
-arch dungeon_magic
-x 9
-y 45
 end
 arch grass
 x 9
 y 45
 end
-arch magic_banned
-x 9
-y 46
-end
-arch dungeon_magic
+arch grass
 x 9
 y 46
 end
 arch grass
 x 9
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 9
 y 47
 end
-arch dungeon_magic
-x 9
-y 47
-end
-arch grass_only
-x 9
-y 47
-end
-arch biglake_s
-x 9
-y 47
-end
-arch magic_banned
-x 9
-y 48
-end
-arch dungeon_magic
-x 9
-y 48
-end
-arch grass_only
+arch grass
 x 9
 y 48
 end
@@ -6675,455 +2841,135 @@ end
 arch flagstone_2_1_2
 x 10
 end
-arch dungeon_magic
-x 10
-y 1
-end
-arch magic_banned
-x 10
-y 1
-end
-arch cobblestones2
-x 10
-y 1
-end
 arch marble
 x 10
 y 1
 end
-arch dungeon_magic
-x 10
-y 2
-end
-arch magic_banned
+arch marble
 x 10
 y 2
 end
 arch marble
 x 10
-y 2
-end
-arch dungeon_magic
-x 10
-y 3
-end
-arch magic_banned
-x 10
-y 3
-end
-arch cobblestones2
-x 10
 y 3
 end
 arch marble
-x 10
-y 3
-end
-arch dungeon_magic
-x 10
-y 4
-end
-arch magic_banned
-x 10
-y 4
-end
-arch cobblestones2
 x 10
 y 4
 end
 arch marble
 x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 5
-end
-arch magic_banned
-x 10
-y 5
-end
-arch cobblestones2
-x 10
 y 5
 end
 arch marble
-x 10
-y 5
-end
-arch dungeon_magic
-x 10
-y 6
-end
-arch magic_banned
-x 10
-y 6
-end
-arch cobblestones2
 x 10
 y 6
 end
 arch marble
 x 10
-y 6
-end
-arch dungeon_magic
-x 10
-y 7
-end
-arch magic_banned
-x 10
-y 7
-end
-arch cobblestones2
-x 10
 y 7
 end
 arch marble
-x 10
-y 7
-end
-arch dungeon_magic
 x 10
 y 8
 end
-arch magic_banned
-x 10
-y 8
-end
-arch cobblestones2
-x 10
-y 8
-end
-arch dungeon_magic
+arch marble
 x 10
 y 9
 end
-arch magic_banned
-x 10
-y 9
-end
-arch cobblestones2
-x 10
-y 9
-end
-arch dungeon_magic
-x 10
-y 10
-end
-arch magic_banned
-x 10
-y 10
-end
-arch cobblestones2
-x 10
-y 10
-end
 arch marble
 x 10
 y 10
 end
-arch dungeon_magic
+arch marble
 x 10
 y 11
 end
-arch magic_banned
-x 10
-y 11
-end
-arch cobblestones2
-x 10
-y 11
-end
-arch dungeon_magic
+arch marble
 x 10
 y 12
 end
-arch magic_banned
-x 10
-y 12
-end
-arch cobblestones2
-x 10
-y 12
-end
-arch dungeon_magic
-x 10
-y 13
-end
-arch magic_banned
-x 10
-y 13
-end
-arch cobblestones2
-x 10
-y 13
-end
 arch marble
 x 10
 y 13
 end
-arch dungeon_magic
+arch marble
 x 10
 y 14
 end
-arch magic_banned
-x 10
-y 14
-end
-arch cobblestones2
-x 10
-y 14
-end
-arch dungeon_magic
+arch marble
 x 10
 y 15
 end
-arch magic_banned
-x 10
-y 15
-end
-arch cobblestones2
-x 10
-y 15
-end
-arch dungeon_magic
-x 10
-y 16
-end
-arch magic_banned
-x 10
-y 16
-end
-arch cobblestones2
-x 10
-y 16
-end
 arch marble
 x 10
 y 16
 end
-arch dungeon_magic
+arch marble
 x 10
 y 17
 end
-arch magic_banned
-x 10
-y 17
-end
-arch cobblestones2
-x 10
-y 17
-end
-arch dungeon_magic
+arch marble
 x 10
 y 18
 end
-arch magic_banned
-x 10
-y 18
-end
-arch cobblestones2
-x 10
-y 18
-end
-arch dungeon_magic
-x 10
-y 19
-end
-arch magic_banned
-x 10
-y 19
-end
-arch cobblestones2
-x 10
-y 19
-end
 arch marble
 x 10
 y 19
 end
-arch dungeon_magic
+arch marble
 x 10
 y 20
 end
-arch magic_banned
-x 10
-y 20
-end
-arch cobblestones2
-x 10
-y 20
-end
-arch dungeon_magic
+arch marble
 x 10
 y 21
 end
-arch magic_banned
-x 10
-y 21
-end
-arch cobblestones2
-x 10
-y 21
-end
-arch dungeon_magic
-x 10
-y 22
-end
-arch magic_banned
-x 10
-y 22
-end
-arch cobblestones2
-x 10
-y 22
-end
 arch marble
 x 10
 y 22
 end
-arch dungeon_magic
+arch marble
 x 10
 y 23
 end
-arch magic_banned
-x 10
-y 23
-end
-arch cobblestones2
-x 10
-y 23
-end
-arch dungeon_magic
+arch marble
 x 10
 y 24
-end
-arch magic_banned
-x 10
-y 24
-end
-arch cobblestones2
-x 10
-y 24
-end
-arch dungeon_magic
-x 10
-y 25
-end
-arch magic_banned
-x 10
-y 25
-end
-arch cobblestones2
-x 10
-y 25
 end
 arch marble
 x 10
 y 25
 end
-arch dungeon_magic
+arch marble
 x 10
 y 26
 end
-arch magic_banned
-x 10
-y 26
-end
-arch cobblestones2
-x 10
-y 26
-end
-arch dungeon_magic
+arch marble
 x 10
 y 27
-end
-arch magic_banned
-x 10
-y 27
-end
-arch cobblestones2
-x 10
-y 27
-end
-arch dungeon_magic
-x 10
-y 28
-end
-arch magic_banned
-x 10
-y 28
-end
-arch cobblestones2
-x 10
-y 28
 end
 arch marble
 x 10
 y 28
 end
-arch dungeon_magic
+arch marble
 x 10
 y 29
 end
-arch magic_banned
-x 10
-y 29
-end
-arch cobblestones2
-x 10
-y 29
-end
-arch dungeon_magic
+arch marble
 x 10
 y 30
-end
-arch magic_banned
-x 10
-y 30
-end
-arch cobblestones2
-x 10
-y 30
-end
-arch dungeon_magic
-x 10
-y 31
-end
-arch magic_banned
-x 10
-y 31
-end
-arch cobblestones2
-x 10
-y 31
 end
 arch marble
 x 10
 y 31
 end
-arch dungeon_magic
+arch marble
 x 10
 y 32
 end
-arch magic_banned
-x 10
-y 32
-end
-arch cobblestones2
-x 10
-y 32
-end
-arch dungeon_magic
-x 10
-y 33
-end
-arch magic_banned
-x 10
-y 33
-end
-arch cobblestones2
+arch marble
 x 10
 y 33
 end
@@ -7132,187 +2978,83 @@ connected 12322
 x 10
 y 33
 end
-arch dungeon_magic
-x 10
-y 34
-end
-arch magic_banned
+arch grass
 x 10
 y 34
 end
 arch grass
 x 10
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 10
 y 35
 end
-arch magic_banned
-x 10
-y 35
-end
-arch biglake_n
-x 10
-y 35
-end
-arch magic_banned
-x 10
-y 36
-end
-arch dungeon_magic
+arch grass
 x 10
 y 36
 end
 arch grass
 x 10
-y 36
-end
-arch magic_banned
-x 10
-y 37
-end
-arch dungeon_magic
-x 10
 y 37
 end
 arch grass
 x 10
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 10
 y 38
 end
-arch magic_banned
-x 10
-y 38
-end
-arch footbridge_2_1_2
-x 10
-y 38
-end
-arch magic_banned
-x 10
-y 39
-end
-arch dungeon_magic
+arch grass
 x 10
 y 39
 end
 arch grass
 x 10
-y 39
-end
-arch magic_banned
-x 10
-y 40
-end
-arch dungeon_magic
-x 10
 y 40
 end
 arch grass
 x 10
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 10
 y 41
 end
-arch magic_banned
-x 10
-y 41
-end
-arch biglake_center
-x 10
-y 41
-end
-arch magic_banned
-x 10
-y 42
-end
-arch dungeon_magic
+arch grass
 x 10
 y 42
 end
 arch grass
 x 10
-y 42
-end
-arch magic_banned
-x 10
-y 43
-end
-arch dungeon_magic
-x 10
 y 43
 end
 arch grass
 x 10
-y 43
-end
-arch magic_banned
-x 10
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 10
 y 44
-end
-arch footbridge_2_1_2
-x 10
-y 44
-end
-arch magic_banned
-x 10
-y 45
-end
-arch dungeon_magic
-x 10
-y 45
 end
 arch grass
 x 10
 y 45
 end
-arch magic_banned
-x 10
-y 46
-end
-arch dungeon_magic
+arch grass
 x 10
 y 46
 end
 arch grass
 x 10
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 10
 y 47
 end
-arch dungeon_magic
-x 10
-y 47
-end
-arch grass_only
-x 10
-y 47
-end
-arch biglake_s
-x 10
-y 47
-end
-arch magic_banned
-x 10
-y 48
-end
-arch dungeon_magic
-x 10
-y 48
-end
-arch grass_only
+arch grass
 x 10
 y 48
 end
@@ -7330,457 +3072,133 @@ end
 arch flagstone_2_1_2
 x 11
 end
-arch dungeon_magic
-x 11
-y 1
-end
-arch magic_banned
-x 11
-y 1
-end
-arch cobblestones2
-x 11
-y 1
-end
 arch marble
 x 11
 y 1
 end
-arch dungeon_magic
-x 11
-y 2
-end
-arch magic_banned
-x 11
-y 2
-end
-arch cobblestones2
+arch marble
 x 11
 y 2
 end
 arch marble
 x 11
-y 2
-end
-arch dungeon_magic
-x 11
-y 3
-end
-arch magic_banned
-x 11
-y 3
-end
-arch cobblestones2
-x 11
 y 3
 end
 arch marble
-x 11
-y 3
-end
-arch dungeon_magic
-x 11
-y 4
-end
-arch magic_banned
-x 11
-y 4
-end
-arch cobblestones2
 x 11
 y 4
 end
 arch marble
 x 11
-y 4
-end
-arch dungeon_magic
-x 11
-y 5
-end
-arch magic_banned
-x 11
-y 5
-end
-arch cobblestones2
-x 11
 y 5
 end
 arch marble
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 6
-end
-arch magic_banned
-x 11
-y 6
-end
-arch cobblestones2
 x 11
 y 6
 end
 arch marble
 x 11
-y 6
-end
-arch dungeon_magic
-x 11
-y 7
-end
-arch magic_banned
-x 11
 y 7
 end
 arch cobblestones2
-x 11
-y 7
-end
-arch marble
-x 11
-y 7
-end
-arch dungeon_magic
-x 11
-y 8
-end
-arch magic_banned
 x 11
 y 8
 end
 arch cobblestones2
 x 11
-y 8
-end
-arch dungeon_magic
-x 11
 y 9
-end
-arch magic_banned
-x 11
-y 9
-end
-arch cobblestones2
-x 11
-y 9
-end
-arch dungeon_magic
-x 11
-y 10
-end
-arch magic_banned
-x 11
-y 10
-end
-arch cobblestones2
-x 11
-y 10
 end
 arch marble
 x 11
 y 10
 end
-arch dungeon_magic
-x 11
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 11
 end
 arch cobblestones2
 x 11
-y 11
-end
-arch dungeon_magic
-x 11
 y 12
-end
-arch magic_banned
-x 11
-y 12
-end
-arch cobblestones2
-x 11
-y 12
-end
-arch dungeon_magic
-x 11
-y 13
-end
-arch magic_banned
-x 11
-y 13
-end
-arch cobblestones2
-x 11
-y 13
 end
 arch marble
 x 11
 y 13
 end
-arch dungeon_magic
-x 11
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 14
 end
 arch cobblestones2
 x 11
-y 14
-end
-arch dungeon_magic
-x 11
 y 15
-end
-arch magic_banned
-x 11
-y 15
-end
-arch cobblestones2
-x 11
-y 15
-end
-arch dungeon_magic
-x 11
-y 16
-end
-arch magic_banned
-x 11
-y 16
-end
-arch cobblestones2
-x 11
-y 16
 end
 arch marble
 x 11
 y 16
 end
-arch dungeon_magic
-x 11
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 17
 end
 arch cobblestones2
 x 11
-y 17
-end
-arch dungeon_magic
-x 11
 y 18
-end
-arch magic_banned
-x 11
-y 18
-end
-arch cobblestones2
-x 11
-y 18
-end
-arch dungeon_magic
-x 11
-y 19
-end
-arch magic_banned
-x 11
-y 19
-end
-arch cobblestones2
-x 11
-y 19
 end
 arch marble
 x 11
 y 19
 end
-arch dungeon_magic
-x 11
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 20
 end
 arch cobblestones2
 x 11
-y 20
-end
-arch dungeon_magic
-x 11
 y 21
-end
-arch magic_banned
-x 11
-y 21
-end
-arch cobblestones2
-x 11
-y 21
-end
-arch dungeon_magic
-x 11
-y 22
-end
-arch magic_banned
-x 11
-y 22
-end
-arch cobblestones2
-x 11
-y 22
 end
 arch marble
 x 11
 y 22
 end
-arch dungeon_magic
-x 11
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 23
 end
 arch cobblestones2
 x 11
-y 23
-end
-arch dungeon_magic
-x 11
 y 24
-end
-arch magic_banned
-x 11
-y 24
-end
-arch cobblestones2
-x 11
-y 24
-end
-arch dungeon_magic
-x 11
-y 25
-end
-arch magic_banned
-x 11
-y 25
-end
-arch cobblestones2
-x 11
-y 25
 end
 arch marble
 x 11
 y 25
 end
-arch dungeon_magic
-x 11
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 26
 end
 arch cobblestones2
 x 11
-y 26
-end
-arch dungeon_magic
-x 11
 y 27
-end
-arch magic_banned
-x 11
-y 27
-end
-arch cobblestones2
-x 11
-y 27
-end
-arch dungeon_magic
-x 11
-y 28
-end
-arch magic_banned
-x 11
-y 28
-end
-arch cobblestones2
-x 11
-y 28
 end
 arch marble
 x 11
 y 28
 end
-arch dungeon_magic
-x 11
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 11
 y 29
 end
 arch cobblestones2
 x 11
-y 29
-end
-arch dungeon_magic
-x 11
 y 30
-end
-arch magic_banned
-x 11
-y 30
-end
-arch cobblestones2
-x 11
-y 30
-end
-arch dungeon_magic
-x 11
-y 31
-end
-arch magic_banned
-x 11
-y 31
-end
-arch cobblestones2
-x 11
-y 31
 end
 arch marble
 x 11
 y 31
 end
-arch dungeon_magic
-x 11
-y 32
-end
-arch magic_banned
-x 11
-y 32
-end
 arch cobblestones2
 x 11
 y 32
-end
-arch dungeon_magic
-x 11
-y 33
-end
-arch magic_banned
-x 11
-y 33
 end
 arch cobblestones2
 x 11
@@ -7791,187 +3209,83 @@ connected 12322
 x 11
 y 33
 end
-arch dungeon_magic
-x 11
-y 34
-end
-arch magic_banned
+arch grass
 x 11
 y 34
 end
 arch grass
 x 11
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 11
 y 35
 end
-arch magic_banned
-x 11
-y 35
-end
-arch biglake_n
-x 11
-y 35
-end
-arch magic_banned
-x 11
-y 36
-end
-arch dungeon_magic
+arch grass
 x 11
 y 36
 end
 arch grass
 x 11
-y 36
-end
-arch magic_banned
-x 11
-y 37
-end
-arch dungeon_magic
-x 11
 y 37
 end
 arch grass
 x 11
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 11
 y 38
 end
-arch magic_banned
-x 11
-y 38
-end
-arch footbridge_2_1_2
-x 11
-y 38
-end
-arch magic_banned
-x 11
-y 39
-end
-arch dungeon_magic
+arch grass
 x 11
 y 39
 end
 arch grass
 x 11
-y 39
-end
-arch magic_banned
-x 11
-y 40
-end
-arch dungeon_magic
-x 11
 y 40
 end
 arch grass
 x 11
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 11
 y 41
 end
-arch magic_banned
-x 11
-y 41
-end
-arch biglake_center
-x 11
-y 41
-end
-arch magic_banned
-x 11
-y 42
-end
-arch dungeon_magic
+arch grass
 x 11
 y 42
 end
 arch grass
 x 11
-y 42
-end
-arch magic_banned
-x 11
-y 43
-end
-arch dungeon_magic
-x 11
 y 43
 end
 arch grass
 x 11
-y 43
-end
-arch magic_banned
-x 11
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 11
 y 44
-end
-arch footbridge_2_1_2
-x 11
-y 44
-end
-arch magic_banned
-x 11
-y 45
-end
-arch dungeon_magic
-x 11
-y 45
 end
 arch grass
 x 11
 y 45
 end
-arch magic_banned
-x 11
-y 46
-end
-arch dungeon_magic
+arch grass
 x 11
 y 46
 end
 arch grass
 x 11
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 11
 y 47
 end
-arch dungeon_magic
-x 11
-y 47
-end
-arch grass_only
-x 11
-y 47
-end
-arch biglake_s
-x 11
-y 47
-end
-arch magic_banned
-x 11
-y 48
-end
-arch dungeon_magic
-x 11
-y 48
-end
-arch grass_only
+arch grass
 x 11
 y 48
 end
@@ -7989,141 +3303,37 @@ end
 arch flagstone_2_1_2
 x 12
 end
-arch dungeon_magic
-x 12
-y 1
-end
-arch magic_banned
-x 12
-y 1
-end
-arch cobblestones2
-x 12
-y 1
-end
 arch marble
 x 12
 y 1
 end
-arch dungeon_magic
-x 12
-y 2
-end
-arch magic_banned
-x 12
-y 2
-end
-arch cobblestones2
+arch marble
 x 12
 y 2
 end
 arch marble
 x 12
-y 2
-end
-arch dungeon_magic
-x 12
-y 3
-end
-arch magic_banned
-x 12
-y 3
-end
-arch cobblestones2
-x 12
 y 3
 end
 arch marble
-x 12
-y 3
-end
-arch dungeon_magic
-x 12
-y 4
-end
-arch magic_banned
-x 12
-y 4
-end
-arch cobblestones2
 x 12
 y 4
 end
 arch marble
 x 12
-y 4
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch magic_banned
-x 12
-y 5
-end
-arch cobblestones2
-x 12
 y 5
 end
 arch marble
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 6
-end
-arch magic_banned
-x 12
-y 6
-end
-arch cobblestones2
 x 12
 y 6
 end
 arch marble
 x 12
-y 6
-end
-arch dungeon_magic
-x 12
-y 7
-end
-arch magic_banned
-x 12
 y 7
 end
 arch cobblestones2
 x 12
-y 7
-end
-arch marble
-x 12
-y 7
-end
-arch dungeon_magic
-x 12
 y 8
-end
-arch magic_banned
-x 12
-y 8
-end
-arch cobblestones2
-x 12
-y 8
-end
-arch marble
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch magic_banned
-x 12
-y 9
 end
 arch cobblestones2
 x 12
@@ -8131,47 +3341,11 @@ y 9
 end
 arch marble
 x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 10
-end
-arch magic_banned
-x 12
 y 10
 end
 arch cobblestones2
 x 12
-y 10
-end
-arch marble
-x 12
-y 10
-end
-arch dungeon_magic
-x 12
 y 11
-end
-arch magic_banned
-x 12
-y 11
-end
-arch cobblestones2
-x 12
-y 11
-end
-arch marble
-x 12
-y 11
-end
-arch dungeon_magic
-x 12
-y 12
-end
-arch magic_banned
-x 12
-y 12
 end
 arch cobblestones2
 x 12
@@ -8179,47 +3353,11 @@ y 12
 end
 arch marble
 x 12
-y 12
-end
-arch dungeon_magic
-x 12
-y 13
-end
-arch magic_banned
-x 12
 y 13
 end
 arch cobblestones2
 x 12
-y 13
-end
-arch marble
-x 12
-y 13
-end
-arch dungeon_magic
-x 12
 y 14
-end
-arch magic_banned
-x 12
-y 14
-end
-arch cobblestones2
-x 12
-y 14
-end
-arch marble
-x 12
-y 14
-end
-arch dungeon_magic
-x 12
-y 15
-end
-arch magic_banned
-x 12
-y 15
 end
 arch cobblestones2
 x 12
@@ -8227,47 +3365,11 @@ y 15
 end
 arch marble
 x 12
-y 15
-end
-arch dungeon_magic
-x 12
-y 16
-end
-arch magic_banned
-x 12
 y 16
 end
 arch cobblestones2
 x 12
-y 16
-end
-arch marble
-x 12
-y 16
-end
-arch dungeon_magic
-x 12
 y 17
-end
-arch magic_banned
-x 12
-y 17
-end
-arch cobblestones2
-x 12
-y 17
-end
-arch marble
-x 12
-y 17
-end
-arch dungeon_magic
-x 12
-y 18
-end
-arch magic_banned
-x 12
-y 18
 end
 arch cobblestones2
 x 12
@@ -8275,47 +3377,11 @@ y 18
 end
 arch marble
 x 12
-y 18
-end
-arch dungeon_magic
-x 12
-y 19
-end
-arch magic_banned
-x 12
 y 19
 end
 arch cobblestones2
 x 12
-y 19
-end
-arch marble
-x 12
-y 19
-end
-arch dungeon_magic
-x 12
 y 20
-end
-arch magic_banned
-x 12
-y 20
-end
-arch cobblestones2
-x 12
-y 20
-end
-arch marble
-x 12
-y 20
-end
-arch dungeon_magic
-x 12
-y 21
-end
-arch magic_banned
-x 12
-y 21
 end
 arch cobblestones2
 x 12
@@ -8323,47 +3389,11 @@ y 21
 end
 arch marble
 x 12
-y 21
-end
-arch dungeon_magic
-x 12
-y 22
-end
-arch magic_banned
-x 12
 y 22
 end
 arch cobblestones2
 x 12
-y 22
-end
-arch marble
-x 12
-y 22
-end
-arch dungeon_magic
-x 12
 y 23
-end
-arch magic_banned
-x 12
-y 23
-end
-arch cobblestones2
-x 12
-y 23
-end
-arch marble
-x 12
-y 23
-end
-arch dungeon_magic
-x 12
-y 24
-end
-arch magic_banned
-x 12
-y 24
 end
 arch cobblestones2
 x 12
@@ -8371,47 +3401,11 @@ y 24
 end
 arch marble
 x 12
-y 24
-end
-arch dungeon_magic
-x 12
-y 25
-end
-arch magic_banned
-x 12
 y 25
 end
 arch cobblestones2
 x 12
-y 25
-end
-arch marble
-x 12
-y 25
-end
-arch dungeon_magic
-x 12
 y 26
-end
-arch magic_banned
-x 12
-y 26
-end
-arch cobblestones2
-x 12
-y 26
-end
-arch marble
-x 12
-y 26
-end
-arch dungeon_magic
-x 12
-y 27
-end
-arch magic_banned
-x 12
-y 27
 end
 arch cobblestones2
 x 12
@@ -8419,47 +3413,11 @@ y 27
 end
 arch marble
 x 12
-y 27
-end
-arch dungeon_magic
-x 12
-y 28
-end
-arch magic_banned
-x 12
 y 28
 end
 arch cobblestones2
 x 12
-y 28
-end
-arch marble
-x 12
-y 28
-end
-arch dungeon_magic
-x 12
 y 29
-end
-arch magic_banned
-x 12
-y 29
-end
-arch cobblestones2
-x 12
-y 29
-end
-arch marble
-x 12
-y 29
-end
-arch dungeon_magic
-x 12
-y 30
-end
-arch magic_banned
-x 12
-y 30
 end
 arch cobblestones2
 x 12
@@ -8467,53 +3425,13 @@ y 30
 end
 arch marble
 x 12
-y 30
-end
-arch dungeon_magic
-x 12
-y 31
-end
-arch magic_banned
-x 12
 y 31
 end
 arch cobblestones2
 x 12
-y 31
-end
-arch marble
-x 12
-y 31
-end
-arch dungeon_magic
-x 12
-y 32
-end
-arch magic_banned
-x 12
 y 32
 end
 arch cobblestones2
-x 12
-y 32
-end
-arch marble
-x 12
-y 32
-end
-arch dungeon_magic
-x 12
-y 33
-end
-arch magic_banned
-x 12
-y 33
-end
-arch cobblestones2
-x 12
-y 33
-end
-arch marble
 x 12
 y 33
 end
@@ -8522,187 +3440,83 @@ connected 12322
 x 12
 y 33
 end
-arch dungeon_magic
-x 12
-y 34
-end
-arch magic_banned
+arch grass
 x 12
 y 34
 end
 arch grass
 x 12
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 12
 y 35
 end
-arch magic_banned
-x 12
-y 35
-end
-arch biglake_n
-x 12
-y 35
-end
-arch magic_banned
-x 12
-y 36
-end
-arch dungeon_magic
+arch grass
 x 12
 y 36
 end
 arch grass
 x 12
-y 36
-end
-arch magic_banned
-x 12
-y 37
-end
-arch dungeon_magic
-x 12
 y 37
 end
 arch grass
 x 12
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 12
 y 38
 end
-arch magic_banned
-x 12
-y 38
-end
-arch footbridge_2_1_2
-x 12
-y 38
-end
-arch magic_banned
-x 12
-y 39
-end
-arch dungeon_magic
+arch grass
 x 12
 y 39
 end
 arch grass
 x 12
-y 39
-end
-arch magic_banned
-x 12
-y 40
-end
-arch dungeon_magic
-x 12
 y 40
 end
 arch grass
 x 12
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 12
 y 41
 end
-arch magic_banned
-x 12
-y 41
-end
-arch biglake_center
-x 12
-y 41
-end
-arch magic_banned
-x 12
-y 42
-end
-arch dungeon_magic
+arch grass
 x 12
 y 42
 end
 arch grass
 x 12
-y 42
-end
-arch magic_banned
-x 12
-y 43
-end
-arch dungeon_magic
-x 12
 y 43
 end
 arch grass
 x 12
-y 43
-end
-arch magic_banned
-x 12
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 12
 y 44
-end
-arch footbridge_2_1_2
-x 12
-y 44
-end
-arch magic_banned
-x 12
-y 45
-end
-arch dungeon_magic
-x 12
-y 45
 end
 arch grass
 x 12
 y 45
 end
-arch magic_banned
-x 12
-y 46
-end
-arch dungeon_magic
+arch grass
 x 12
 y 46
 end
 arch grass
 x 12
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 12
 y 47
 end
-arch dungeon_magic
-x 12
-y 47
-end
-arch grass_only
-x 12
-y 47
-end
-arch biglake_s
-x 12
-y 47
-end
-arch magic_banned
-x 12
-y 48
-end
-arch dungeon_magic
-x 12
-y 48
-end
-arch grass_only
+arch grass
 x 12
 y 48
 end
@@ -8720,447 +3534,131 @@ end
 arch flagstone_2_1_2
 x 13
 end
-arch dungeon_magic
-x 13
-y 1
-end
-arch magic_banned
-x 13
-y 1
-end
-arch cobblestones2
-x 13
-y 1
-end
 arch marble
 x 13
 y 1
 end
-arch dungeon_magic
-x 13
-y 2
-end
-arch magic_banned
-x 13
-y 2
-end
-arch cobblestones2
+arch marble
 x 13
 y 2
 end
 arch marble
 x 13
-y 2
-end
-arch dungeon_magic
-x 13
-y 3
-end
-arch magic_banned
-x 13
-y 3
-end
-arch cobblestones2
-x 13
 y 3
 end
 arch marble
-x 13
-y 3
-end
-arch dungeon_magic
-x 13
-y 4
-end
-arch magic_banned
-x 13
-y 4
-end
-arch cobblestones2
 x 13
 y 4
 end
 arch marble
 x 13
-y 4
-end
-arch dungeon_magic
-x 13
-y 5
-end
-arch magic_banned
-x 13
-y 5
-end
-arch cobblestones2
-x 13
 y 5
 end
 arch marble
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
-y 6
-end
-arch magic_banned
-x 13
-y 6
-end
-arch cobblestones2
 x 13
 y 6
 end
 arch marble
 x 13
-y 6
-end
-arch dungeon_magic
-x 13
-y 7
-end
-arch magic_banned
-x 13
-y 7
-end
-arch cobblestones2
-x 13
 y 7
 end
 arch marble
-x 13
-y 7
-end
-arch dungeon_magic
 x 13
 y 8
 end
-arch magic_banned
-x 13
-y 8
-end
-arch cobblestones2
-x 13
-y 8
-end
-arch dungeon_magic
+arch marble
 x 13
 y 9
 end
-arch magic_banned
-x 13
-y 9
-end
-arch cobblestones2
-x 13
-y 9
-end
-arch dungeon_magic
-x 13
-y 10
-end
-arch magic_banned
-x 13
-y 10
-end
-arch cobblestones2
-x 13
-y 10
-end
 arch marble
 x 13
 y 10
 end
-arch dungeon_magic
+arch marble
 x 13
 y 11
 end
-arch magic_banned
-x 13
-y 11
-end
-arch cobblestones2
-x 13
-y 11
-end
-arch dungeon_magic
+arch marble
 x 13
 y 12
 end
-arch magic_banned
-x 13
-y 12
-end
-arch cobblestones2
-x 13
-y 12
-end
-arch dungeon_magic
-x 13
-y 13
-end
-arch magic_banned
-x 13
-y 13
-end
-arch cobblestones2
-x 13
-y 13
-end
 arch marble
 x 13
 y 13
 end
-arch dungeon_magic
+arch marble
 x 13
 y 14
 end
-arch magic_banned
-x 13
-y 14
-end
-arch cobblestones2
-x 13
-y 14
-end
-arch dungeon_magic
+arch marble
 x 13
 y 15
 end
-arch magic_banned
-x 13
-y 15
-end
-arch cobblestones2
-x 13
-y 15
-end
-arch dungeon_magic
-x 13
-y 16
-end
-arch magic_banned
-x 13
-y 16
-end
-arch cobblestones2
-x 13
-y 16
-end
 arch marble
 x 13
 y 16
 end
-arch dungeon_magic
+arch marble
 x 13
 y 17
 end
-arch magic_banned
-x 13
-y 17
-end
-arch cobblestones2
-x 13
-y 17
-end
-arch dungeon_magic
+arch marble
 x 13
 y 18
 end
-arch magic_banned
-x 13
-y 18
-end
-arch cobblestones2
-x 13
-y 18
-end
-arch dungeon_magic
-x 13
-y 19
-end
-arch magic_banned
-x 13
-y 19
-end
-arch cobblestones2
-x 13
-y 19
-end
 arch marble
 x 13
 y 19
 end
-arch dungeon_magic
+arch marble
 x 13
 y 20
 end
-arch magic_banned
-x 13
-y 20
-end
-arch cobblestones2
-x 13
-y 20
-end
-arch dungeon_magic
+arch marble
 x 13
 y 21
 end
-arch magic_banned
-x 13
-y 21
-end
-arch cobblestones2
-x 13
-y 21
-end
-arch dungeon_magic
-x 13
-y 22
-end
-arch magic_banned
-x 13
-y 22
-end
-arch cobblestones2
-x 13
-y 22
-end
 arch marble
 x 13
 y 22
 end
-arch dungeon_magic
+arch marble
 x 13
 y 23
 end
-arch magic_banned
-x 13
-y 23
-end
-arch cobblestones2
-x 13
-y 23
-end
-arch dungeon_magic
+arch marble
 x 13
 y 24
-end
-arch magic_banned
-x 13
-y 24
-end
-arch cobblestones2
-x 13
-y 24
-end
-arch dungeon_magic
-x 13
-y 25
-end
-arch magic_banned
-x 13
-y 25
-end
-arch cobblestones2
-x 13
-y 25
 end
 arch marble
 x 13
 y 25
 end
-arch dungeon_magic
+arch marble
 x 13
 y 26
 end
-arch magic_banned
-x 13
-y 26
-end
-arch cobblestones2
-x 13
-y 26
-end
-arch dungeon_magic
+arch marble
 x 13
 y 27
-end
-arch magic_banned
-x 13
-y 27
-end
-arch cobblestones2
-x 13
-y 27
-end
-arch dungeon_magic
-x 13
-y 28
-end
-arch magic_banned
-x 13
-y 28
-end
-arch cobblestones2
-x 13
-y 28
 end
 arch marble
 x 13
 y 28
 end
-arch dungeon_magic
+arch marble
 x 13
 y 29
 end
-arch magic_banned
-x 13
-y 29
-end
-arch cobblestones2
-x 13
-y 29
-end
-arch dungeon_magic
+arch marble
 x 13
 y 30
-end
-arch magic_banned
-x 13
-y 30
-end
-arch cobblestones2
-x 13
-y 30
-end
-arch dungeon_magic
-x 13
-y 31
-end
-arch magic_banned
-x 13
-y 31
-end
-arch cobblestones2
-x 13
-y 31
 end
 arch marble
 x 13
 y 31
 end
-arch dungeon_magic
-x 13
-y 32
-end
-arch magic_banned
-x 13
-y 32
-end
-arch cobblestones2
+arch marble
 x 13
 y 32
 end
@@ -9168,15 +3666,7 @@ arch knight
 x 13
 y 32
 end
-arch dungeon_magic
-x 13
-y 33
-end
-arch magic_banned
-x 13
-y 33
-end
-arch cobblestones2
+arch marble
 x 13
 y 33
 end
@@ -9185,49 +3675,21 @@ connected 12322
 x 13
 y 33
 end
-arch dungeon_magic
-x 13
-y 34
-end
-arch magic_banned
+arch grass
 x 13
 y 34
 end
 arch grass
 x 13
-y 34
-end
-arch dungeon_magic
-x 13
 y 35
 end
-arch magic_banned
+arch river_w-e
 x 13
 y 35
-end
-arch biglake_n
-x 13
-y 35
-end
-arch magic_banned
-x 13
-y 36
-end
-arch dungeon_magic
-x 13
-y 36
 end
 arch grass
 x 13
 y 36
-end
-arch magic_banned
-x 13
-y 37
-end
-arch dungeon_magic
-x 13
-y 37
 end
 arch grass
 x 13
@@ -9240,25 +3702,13 @@ endmsg
 x 13
 y 37
 end
-arch dungeon_magic
+arch grass
 x 13
 y 38
 end
-arch magic_banned
+arch river_w-e
 x 13
 y 38
-end
-arch footbridge_2_1_2
-x 13
-y 38
-end
-arch magic_banned
-x 13
-y 39
-end
-arch dungeon_magic
-x 13
-y 39
 end
 arch grass
 x 13
@@ -9271,49 +3721,21 @@ endmsg
 x 13
 y 39
 end
-arch magic_banned
-x 13
-y 40
-end
-arch dungeon_magic
+arch grass
 x 13
 y 40
 end
 arch grass
 x 13
-y 40
-end
-arch dungeon_magic
-x 13
 y 41
 end
-arch magic_banned
+arch river_w-e
 x 13
 y 41
-end
-arch biglake_center
-x 13
-y 41
-end
-arch magic_banned
-x 13
-y 42
-end
-arch dungeon_magic
-x 13
-y 42
 end
 arch grass
 x 13
 y 42
-end
-arch magic_banned
-x 13
-y 43
-end
-arch dungeon_magic
-x 13
-y 43
 end
 arch grass
 x 13
@@ -9326,25 +3748,13 @@ endmsg
 x 13
 y 43
 end
-arch magic_banned
+arch grass
 x 13
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 13
 y 44
-end
-arch footbridge_2_1_2
-x 13
-y 44
-end
-arch magic_banned
-x 13
-y 45
-end
-arch dungeon_magic
-x 13
-y 45
 end
 arch grass
 x 13
@@ -9357,43 +3767,22 @@ endmsg
 x 13
 y 45
 end
-arch magic_banned
-x 13
-y 46
-end
-arch dungeon_magic
+arch grass
 x 13
 y 46
 end
 arch grass
 x 13
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 13
 y 47
 end
-arch dungeon_magic
-x 13
-y 47
-end
-arch grass_only
-x 13
-y 47
-end
-arch biglake_s
-x 13
-y 47
-end
-arch magic_banned
-x 13
-y 48
-end
-arch dungeon_magic
-x 13
-y 48
-end
-arch grass_only
+arch grass
+no_pass 1
+no_magic 1
+damned 1
 x 13
 y 48
 end
@@ -9411,445 +3800,129 @@ end
 arch flagstone_2_1_2
 x 14
 end
-arch dungeon_magic
-x 14
-y 1
-end
-arch magic_banned
-x 14
-y 1
-end
-arch cobblestones2
-x 14
-y 1
-end
 arch marble
 x 14
 y 1
 end
-arch dungeon_magic
-x 14
-y 2
-end
-arch magic_banned
-x 14
-y 2
-end
-arch cobblestones2
+arch marble
 x 14
 y 2
 end
 arch marble
 x 14
-y 2
-end
-arch dungeon_magic
-x 14
-y 3
-end
-arch magic_banned
-x 14
-y 3
-end
-arch cobblestones2
-x 14
 y 3
 end
 arch marble
-x 14
-y 3
-end
-arch dungeon_magic
-x 14
-y 4
-end
-arch magic_banned
-x 14
-y 4
-end
-arch cobblestones2
 x 14
 y 4
 end
 arch marble
 x 14
-y 4
-end
-arch dungeon_magic
-x 14
-y 5
-end
-arch magic_banned
-x 14
-y 5
-end
-arch cobblestones2
-x 14
 y 5
 end
 arch marble
-x 14
-y 5
-end
-arch dungeon_magic
-x 14
-y 6
-end
-arch magic_banned
-x 14
-y 6
-end
-arch cobblestones2
 x 14
 y 6
 end
 arch marble
 x 14
-y 6
-end
-arch dungeon_magic
-x 14
-y 7
-end
-arch magic_banned
-x 14
 y 7
 end
 arch cobblestones2
-x 14
-y 7
-end
-arch marble
-x 14
-y 7
-end
-arch dungeon_magic
-x 14
-y 8
-end
-arch magic_banned
 x 14
 y 8
 end
 arch cobblestones2
 x 14
-y 8
-end
-arch dungeon_magic
-x 14
 y 9
-end
-arch magic_banned
-x 14
-y 9
-end
-arch cobblestones2
-x 14
-y 9
-end
-arch dungeon_magic
-x 14
-y 10
-end
-arch magic_banned
-x 14
-y 10
-end
-arch cobblestones2
-x 14
-y 10
 end
 arch marble
 x 14
 y 10
 end
-arch dungeon_magic
-x 14
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 11
 end
 arch cobblestones2
 x 14
-y 11
-end
-arch dungeon_magic
-x 14
 y 12
-end
-arch magic_banned
-x 14
-y 12
-end
-arch cobblestones2
-x 14
-y 12
-end
-arch dungeon_magic
-x 14
-y 13
-end
-arch magic_banned
-x 14
-y 13
-end
-arch cobblestones2
-x 14
-y 13
 end
 arch marble
 x 14
 y 13
 end
-arch dungeon_magic
-x 14
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 14
 end
 arch cobblestones2
 x 14
-y 14
-end
-arch dungeon_magic
-x 14
 y 15
-end
-arch magic_banned
-x 14
-y 15
-end
-arch cobblestones2
-x 14
-y 15
-end
-arch dungeon_magic
-x 14
-y 16
-end
-arch magic_banned
-x 14
-y 16
-end
-arch cobblestones2
-x 14
-y 16
 end
 arch marble
 x 14
 y 16
 end
-arch dungeon_magic
-x 14
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 17
 end
 arch cobblestones2
 x 14
-y 17
-end
-arch dungeon_magic
-x 14
 y 18
-end
-arch magic_banned
-x 14
-y 18
-end
-arch cobblestones2
-x 14
-y 18
-end
-arch dungeon_magic
-x 14
-y 19
-end
-arch magic_banned
-x 14
-y 19
-end
-arch cobblestones2
-x 14
-y 19
 end
 arch marble
 x 14
 y 19
 end
-arch dungeon_magic
-x 14
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 20
 end
 arch cobblestones2
 x 14
-y 20
-end
-arch dungeon_magic
-x 14
 y 21
-end
-arch magic_banned
-x 14
-y 21
-end
-arch cobblestones2
-x 14
-y 21
-end
-arch dungeon_magic
-x 14
-y 22
-end
-arch magic_banned
-x 14
-y 22
-end
-arch cobblestones2
-x 14
-y 22
 end
 arch marble
 x 14
 y 22
 end
-arch dungeon_magic
-x 14
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 23
 end
 arch cobblestones2
 x 14
-y 23
-end
-arch dungeon_magic
-x 14
 y 24
-end
-arch magic_banned
-x 14
-y 24
-end
-arch cobblestones2
-x 14
-y 24
-end
-arch dungeon_magic
-x 14
-y 25
-end
-arch magic_banned
-x 14
-y 25
-end
-arch cobblestones2
-x 14
-y 25
 end
 arch marble
 x 14
 y 25
 end
-arch dungeon_magic
-x 14
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 26
 end
 arch cobblestones2
 x 14
-y 26
-end
-arch dungeon_magic
-x 14
 y 27
-end
-arch magic_banned
-x 14
-y 27
-end
-arch cobblestones2
-x 14
-y 27
-end
-arch dungeon_magic
-x 14
-y 28
-end
-arch magic_banned
-x 14
-y 28
-end
-arch cobblestones2
-x 14
-y 28
 end
 arch marble
 x 14
 y 28
 end
-arch dungeon_magic
-x 14
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 14
 y 29
 end
 arch cobblestones2
 x 14
-y 29
-end
-arch dungeon_magic
-x 14
 y 30
-end
-arch magic_banned
-x 14
-y 30
-end
-arch cobblestones2
-x 14
-y 30
-end
-arch dungeon_magic
-x 14
-y 31
-end
-arch magic_banned
-x 14
-y 31
-end
-arch cobblestones2
-x 14
-y 31
 end
 arch marble
 x 14
 y 31
-end
-arch dungeon_magic
-x 14
-y 32
-end
-arch magic_banned
-x 14
-y 32
 end
 arch cobblestones2
 x 14
@@ -9872,14 +3945,6 @@ endmsg
 x 14
 y 32
 end
-arch dungeon_magic
-x 14
-y 33
-end
-arch magic_banned
-x 14
-y 33
-end
 arch cobblestones2
 x 14
 y 33
@@ -9889,184 +3954,79 @@ connected 12322
 x 14
 y 33
 end
-arch dungeon_magic
-x 14
-y 34
-end
-arch magic_banned
+arch footpath_2_1_1
 x 14
 y 34
 end
 arch grass
 x 14
-y 34
+y 35
 end
-arch magic_ear
-msg
-@match maveric|Maveric
-Click.
-endmsg
-connected 12322
-x 14
-y 34
-end
-arch footbridge_0
-x 14
-y 34
-end
-arch dungeon_magic
+arch bridge_ns
 x 14
 y 35
 end
-arch magic_banned
-x 14
-y 35
-end
-arch footbridge_0
-x 14
-y 35
-end
-arch dungeon_magic
+arch footpath_2_1_1
 x 14
 y 36
 end
-arch magic_banned
-x 14
-y 36
-end
-arch footbridge_0
-x 14
-y 36
-end
-arch dungeon_magic
+arch footpath_2_1_1
 x 14
 y 37
 end
-arch magic_banned
-x 14
-y 37
-end
-arch footbridge_0
-x 14
-y 37
-end
-arch dungeon_magic
+arch grass
 x 14
 y 38
 end
-arch magic_banned
+arch bridge_ns
 x 14
 y 38
 end
-arch footbridge_2_1_2
-x 14
-y 38
-end
-arch dungeon_magic
+arch footpath_2_1_1
 x 14
 y 39
 end
-arch magic_banned
-x 14
-y 39
-end
-arch footbridge_0
-x 14
-y 39
-end
-arch dungeon_magic
+arch footpath_2_1_1
 x 14
 y 40
 end
-arch magic_banned
-x 14
-y 40
-end
-arch footbridge_0
-x 14
-y 40
-end
-arch dungeon_magic
+arch grass
 x 14
 y 41
 end
-arch magic_banned
+arch bridge_ns
 x 14
 y 41
 end
-arch footbridge_0
-x 14
-y 41
-end
-arch magic_banned
+arch footpath_2_1_1
 x 14
 y 42
 end
-arch dungeon_magic
-x 14
-y 42
-end
-arch footbridge_0
-x 14
-y 42
-end
-arch magic_banned
+arch footpath_2_1_1
 x 14
 y 43
 end
-arch dungeon_magic
-x 14
-y 43
-end
-arch footbridge_0
-x 14
-y 43
-end
-arch magic_banned
+arch grass
 x 14
 y 44
 end
-arch dungeon_magic
+arch bridge_ns
 x 14
 y 44
 end
-arch footbridge_2_1_2
-x 14
-y 44
-end
-arch magic_banned
+arch footpath_2_1_1
 x 14
 y 45
 end
-arch dungeon_magic
-x 14
-y 45
-end
-arch footbridge_0
-x 14
-y 45
-end
-arch magic_banned
+arch footpath_2_1_1
 x 14
 y 46
 end
-arch dungeon_magic
-x 14
-y 46
-end
-arch footbridge_0
-x 14
-y 46
-end
-arch magic_banned
+arch grass
 x 14
 y 47
 end
-arch dungeon_magic
-x 14
-y 47
-end
-arch footbridge_0
+arch bridge_ns
 x 14
 y 47
 end
@@ -10074,14 +4034,6 @@ arch locked_door1
 slaying final_forgotten_town_key
 x 14
 y 47
-end
-arch magic_banned
-x 14
-y 48
-end
-arch dungeon_magic
-x 14
-y 48
 end
 arch grass_only
 x 14
@@ -10106,141 +4058,37 @@ end
 arch flagstone_2_1_2
 x 15
 end
-arch dungeon_magic
-x 15
-y 1
-end
-arch magic_banned
-x 15
-y 1
-end
-arch cobblestones2
-x 15
-y 1
-end
 arch marble
 x 15
 y 1
 end
-arch dungeon_magic
-x 15
-y 2
-end
-arch magic_banned
-x 15
-y 2
-end
-arch cobblestones2
+arch marble
 x 15
 y 2
 end
 arch marble
 x 15
-y 2
-end
-arch dungeon_magic
-x 15
-y 3
-end
-arch magic_banned
-x 15
-y 3
-end
-arch cobblestones2
-x 15
 y 3
 end
 arch marble
-x 15
-y 3
-end
-arch dungeon_magic
-x 15
-y 4
-end
-arch magic_banned
-x 15
-y 4
-end
-arch cobblestones2
 x 15
 y 4
 end
 arch marble
 x 15
-y 4
-end
-arch dungeon_magic
-x 15
-y 5
-end
-arch magic_banned
-x 15
-y 5
-end
-arch cobblestones2
-x 15
 y 5
 end
 arch marble
-x 15
-y 5
-end
-arch dungeon_magic
-x 15
-y 6
-end
-arch magic_banned
-x 15
-y 6
-end
-arch cobblestones2
 x 15
 y 6
 end
 arch marble
 x 15
-y 6
-end
-arch dungeon_magic
-x 15
-y 7
-end
-arch magic_banned
-x 15
 y 7
 end
 arch cobblestones2
 x 15
-y 7
-end
-arch marble
-x 15
-y 7
-end
-arch dungeon_magic
-x 15
 y 8
-end
-arch magic_banned
-x 15
-y 8
-end
-arch cobblestones2
-x 15
-y 8
-end
-arch marble
-x 15
-y 8
-end
-arch dungeon_magic
-x 15
-y 9
-end
-arch magic_banned
-x 15
-y 9
 end
 arch cobblestones2
 x 15
@@ -10248,47 +4096,11 @@ y 9
 end
 arch marble
 x 15
-y 9
-end
-arch dungeon_magic
-x 15
-y 10
-end
-arch magic_banned
-x 15
 y 10
 end
 arch cobblestones2
 x 15
-y 10
-end
-arch marble
-x 15
-y 10
-end
-arch dungeon_magic
-x 15
 y 11
-end
-arch magic_banned
-x 15
-y 11
-end
-arch cobblestones2
-x 15
-y 11
-end
-arch marble
-x 15
-y 11
-end
-arch dungeon_magic
-x 15
-y 12
-end
-arch magic_banned
-x 15
-y 12
 end
 arch cobblestones2
 x 15
@@ -10296,47 +4108,11 @@ y 12
 end
 arch marble
 x 15
-y 12
-end
-arch dungeon_magic
-x 15
-y 13
-end
-arch magic_banned
-x 15
 y 13
 end
 arch cobblestones2
 x 15
-y 13
-end
-arch marble
-x 15
-y 13
-end
-arch dungeon_magic
-x 15
 y 14
-end
-arch magic_banned
-x 15
-y 14
-end
-arch cobblestones2
-x 15
-y 14
-end
-arch marble
-x 15
-y 14
-end
-arch dungeon_magic
-x 15
-y 15
-end
-arch magic_banned
-x 15
-y 15
 end
 arch cobblestones2
 x 15
@@ -10344,47 +4120,11 @@ y 15
 end
 arch marble
 x 15
-y 15
-end
-arch dungeon_magic
-x 15
-y 16
-end
-arch magic_banned
-x 15
 y 16
 end
 arch cobblestones2
 x 15
-y 16
-end
-arch marble
-x 15
-y 16
-end
-arch dungeon_magic
-x 15
 y 17
-end
-arch magic_banned
-x 15
-y 17
-end
-arch cobblestones2
-x 15
-y 17
-end
-arch marble
-x 15
-y 17
-end
-arch dungeon_magic
-x 15
-y 18
-end
-arch magic_banned
-x 15
-y 18
 end
 arch cobblestones2
 x 15
@@ -10392,47 +4132,11 @@ y 18
 end
 arch marble
 x 15
-y 18
-end
-arch dungeon_magic
-x 15
-y 19
-end
-arch magic_banned
-x 15
 y 19
 end
 arch cobblestones2
 x 15
-y 19
-end
-arch marble
-x 15
-y 19
-end
-arch dungeon_magic
-x 15
 y 20
-end
-arch magic_banned
-x 15
-y 20
-end
-arch cobblestones2
-x 15
-y 20
-end
-arch marble
-x 15
-y 20
-end
-arch dungeon_magic
-x 15
-y 21
-end
-arch magic_banned
-x 15
-y 21
 end
 arch cobblestones2
 x 15
@@ -10440,47 +4144,11 @@ y 21
 end
 arch marble
 x 15
-y 21
-end
-arch dungeon_magic
-x 15
-y 22
-end
-arch magic_banned
-x 15
 y 22
 end
 arch cobblestones2
 x 15
-y 22
-end
-arch marble
-x 15
-y 22
-end
-arch dungeon_magic
-x 15
 y 23
-end
-arch magic_banned
-x 15
-y 23
-end
-arch cobblestones2
-x 15
-y 23
-end
-arch marble
-x 15
-y 23
-end
-arch dungeon_magic
-x 15
-y 24
-end
-arch magic_banned
-x 15
-y 24
 end
 arch cobblestones2
 x 15
@@ -10488,47 +4156,11 @@ y 24
 end
 arch marble
 x 15
-y 24
-end
-arch dungeon_magic
-x 15
-y 25
-end
-arch magic_banned
-x 15
 y 25
 end
 arch cobblestones2
 x 15
-y 25
-end
-arch marble
-x 15
-y 25
-end
-arch dungeon_magic
-x 15
 y 26
-end
-arch magic_banned
-x 15
-y 26
-end
-arch cobblestones2
-x 15
-y 26
-end
-arch marble
-x 15
-y 26
-end
-arch dungeon_magic
-x 15
-y 27
-end
-arch magic_banned
-x 15
-y 27
 end
 arch cobblestones2
 x 15
@@ -10536,47 +4168,11 @@ y 27
 end
 arch marble
 x 15
-y 27
-end
-arch dungeon_magic
-x 15
-y 28
-end
-arch magic_banned
-x 15
 y 28
 end
 arch cobblestones2
 x 15
-y 28
-end
-arch marble
-x 15
-y 28
-end
-arch dungeon_magic
-x 15
 y 29
-end
-arch magic_banned
-x 15
-y 29
-end
-arch cobblestones2
-x 15
-y 29
-end
-arch marble
-x 15
-y 29
-end
-arch dungeon_magic
-x 15
-y 30
-end
-arch magic_banned
-x 15
-y 30
 end
 arch cobblestones2
 x 15
@@ -10584,37 +4180,9 @@ y 30
 end
 arch marble
 x 15
-y 30
-end
-arch dungeon_magic
-x 15
-y 31
-end
-arch magic_banned
-x 15
 y 31
 end
 arch cobblestones2
-x 15
-y 31
-end
-arch marble
-x 15
-y 31
-end
-arch dungeon_magic
-x 15
-y 32
-end
-arch magic_banned
-x 15
-y 32
-end
-arch cobblestones2
-x 15
-y 32
-end
-arch marble
 x 15
 y 32
 end
@@ -10622,19 +4190,7 @@ arch knight
 x 15
 y 32
 end
-arch dungeon_magic
-x 15
-y 33
-end
-arch magic_banned
-x 15
-y 33
-end
 arch cobblestones2
-x 15
-y 33
-end
-arch marble
 x 15
 y 33
 end
@@ -10643,49 +4199,21 @@ connected 12322
 x 15
 y 33
 end
-arch dungeon_magic
-x 15
-y 34
-end
-arch magic_banned
+arch grass
 x 15
 y 34
 end
 arch grass
 x 15
-y 34
-end
-arch dungeon_magic
-x 15
 y 35
 end
-arch magic_banned
+arch river_w-e
 x 15
 y 35
-end
-arch biglake_n
-x 15
-y 35
-end
-arch magic_banned
-x 15
-y 36
-end
-arch dungeon_magic
-x 15
-y 36
 end
 arch grass
 x 15
 y 36
-end
-arch magic_banned
-x 15
-y 37
-end
-arch dungeon_magic
-x 15
-y 37
 end
 arch grass
 x 15
@@ -10698,25 +4226,13 @@ endmsg
 x 15
 y 37
 end
-arch dungeon_magic
+arch grass
 x 15
 y 38
 end
-arch magic_banned
+arch river_w-e
 x 15
 y 38
-end
-arch footbridge_2_1_2
-x 15
-y 38
-end
-arch magic_banned
-x 15
-y 39
-end
-arch dungeon_magic
-x 15
-y 39
 end
 arch grass
 x 15
@@ -10729,49 +4245,21 @@ endmsg
 x 15
 y 39
 end
-arch magic_banned
-x 15
-y 40
-end
-arch dungeon_magic
+arch grass
 x 15
 y 40
 end
 arch grass
 x 15
-y 40
-end
-arch dungeon_magic
-x 15
 y 41
 end
-arch magic_banned
+arch river_w-e
 x 15
 y 41
-end
-arch biglake_center
-x 15
-y 41
-end
-arch magic_banned
-x 15
-y 42
-end
-arch dungeon_magic
-x 15
-y 42
 end
 arch grass
 x 15
 y 42
-end
-arch magic_banned
-x 15
-y 43
-end
-arch dungeon_magic
-x 15
-y 43
 end
 arch grass
 x 15
@@ -10784,25 +4272,13 @@ endmsg
 x 15
 y 43
 end
-arch magic_banned
+arch grass
 x 15
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 15
 y 44
-end
-arch footbridge_2_1_2
-x 15
-y 44
-end
-arch magic_banned
-x 15
-y 45
-end
-arch dungeon_magic
-x 15
-y 45
 end
 arch grass
 x 15
@@ -10815,43 +4291,22 @@ endmsg
 x 15
 y 45
 end
-arch magic_banned
-x 15
-y 46
-end
-arch dungeon_magic
+arch grass
 x 15
 y 46
 end
 arch grass
 x 15
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 15
 y 47
 end
-arch dungeon_magic
-x 15
-y 47
-end
-arch grass_only
-x 15
-y 47
-end
-arch biglake_s
-x 15
-y 47
-end
-arch magic_banned
-x 15
-y 48
-end
-arch dungeon_magic
-x 15
-y 48
-end
-arch grass_only
+arch grass
+no_pass 1
+no_magic 1
+damned 1
 x 15
 y 48
 end
@@ -10869,459 +4324,135 @@ end
 arch flagstone_2_1_2
 x 16
 end
-arch dungeon_magic
-x 16
-y 1
-end
-arch magic_banned
-x 16
-y 1
-end
-arch cobblestones2
-x 16
-y 1
-end
 arch marble
 x 16
 y 1
 end
-arch dungeon_magic
-x 16
-y 2
-end
-arch magic_banned
-x 16
-y 2
-end
-arch cobblestones2
+arch marble
 x 16
 y 2
 end
 arch marble
 x 16
-y 2
-end
-arch dungeon_magic
-x 16
-y 3
-end
-arch magic_banned
-x 16
-y 3
-end
-arch cobblestones2
-x 16
 y 3
 end
 arch marble
-x 16
-y 3
-end
-arch dungeon_magic
-x 16
-y 4
-end
-arch magic_banned
-x 16
-y 4
-end
-arch cobblestones2
 x 16
 y 4
 end
 arch marble
 x 16
-y 4
-end
-arch dungeon_magic
-x 16
-y 5
-end
-arch magic_banned
-x 16
-y 5
-end
-arch cobblestones2
-x 16
 y 5
 end
 arch marble
-x 16
-y 5
-end
-arch dungeon_magic
-x 16
-y 6
-end
-arch magic_banned
-x 16
-y 6
-end
-arch cobblestones2
 x 16
 y 6
 end
 arch marble
 x 16
-y 6
-end
-arch dungeon_magic
-x 16
-y 7
-end
-arch magic_banned
-x 16
-y 7
-end
-arch cobblestones2
-x 16
 y 7
 end
 arch marble
-x 16
-y 7
-end
-arch dungeon_magic
 x 16
 y 8
 end
-arch magic_banned
-x 16
-y 8
-end
-arch cobblestones2
-x 16
-y 8
-end
-arch dungeon_magic
+arch marble
 x 16
 y 9
 end
-arch magic_banned
-x 16
-y 9
-end
-arch cobblestones2
-x 16
-y 9
-end
-arch dungeon_magic
-x 16
-y 10
-end
-arch magic_banned
-x 16
-y 10
-end
-arch cobblestones2
-x 16
-y 10
-end
 arch marble
 x 16
 y 10
 end
-arch dungeon_magic
+arch marble
 x 16
 y 11
 end
-arch magic_banned
-x 16
-y 11
-end
-arch cobblestones2
-x 16
-y 11
-end
-arch dungeon_magic
+arch marble
 x 16
 y 12
 end
-arch magic_banned
-x 16
-y 12
-end
-arch cobblestones2
-x 16
-y 12
-end
-arch dungeon_magic
-x 16
-y 13
-end
-arch magic_banned
-x 16
-y 13
-end
-arch cobblestones2
-x 16
-y 13
-end
 arch marble
 x 16
 y 13
 end
-arch dungeon_magic
+arch marble
 x 16
 y 14
 end
-arch magic_banned
-x 16
-y 14
-end
-arch cobblestones2
-x 16
-y 14
-end
-arch dungeon_magic
+arch marble
 x 16
 y 15
 end
-arch magic_banned
-x 16
-y 15
-end
-arch cobblestones2
-x 16
-y 15
-end
-arch dungeon_magic
-x 16
-y 16
-end
-arch magic_banned
-x 16
-y 16
-end
-arch cobblestones2
-x 16
-y 16
-end
 arch marble
 x 16
 y 16
 end
-arch dungeon_magic
+arch marble
 x 16
 y 17
 end
-arch magic_banned
-x 16
-y 17
-end
-arch cobblestones2
-x 16
-y 17
-end
-arch dungeon_magic
+arch marble
 x 16
 y 18
 end
-arch magic_banned
-x 16
-y 18
-end
-arch cobblestones2
-x 16
-y 18
-end
-arch dungeon_magic
-x 16
-y 19
-end
-arch magic_banned
-x 16
-y 19
-end
-arch cobblestones2
-x 16
-y 19
-end
 arch marble
 x 16
 y 19
 end
-arch dungeon_magic
+arch marble
 x 16
 y 20
 end
-arch magic_banned
-x 16
-y 20
-end
-arch cobblestones2
-x 16
-y 20
-end
-arch dungeon_magic
+arch marble
 x 16
 y 21
 end
-arch magic_banned
-x 16
-y 21
-end
-arch cobblestones2
-x 16
-y 21
-end
-arch dungeon_magic
-x 16
-y 22
-end
-arch magic_banned
-x 16
-y 22
-end
-arch cobblestones2
-x 16
-y 22
-end
 arch marble
 x 16
 y 22
 end
-arch dungeon_magic
+arch marble
 x 16
 y 23
 end
-arch magic_banned
-x 16
-y 23
-end
-arch cobblestones2
-x 16
-y 23
-end
-arch dungeon_magic
+arch marble
 x 16
 y 24
-end
-arch magic_banned
-x 16
-y 24
-end
-arch cobblestones2
-x 16
-y 24
-end
-arch dungeon_magic
-x 16
-y 25
-end
-arch magic_banned
-x 16
-y 25
-end
-arch cobblestones2
-x 16
-y 25
 end
 arch marble
 x 16
 y 25
 end
-arch dungeon_magic
+arch marble
 x 16
 y 26
 end
-arch magic_banned
-x 16
-y 26
-end
-arch cobblestones2
-x 16
-y 26
-end
-arch dungeon_magic
+arch marble
 x 16
 y 27
-end
-arch magic_banned
-x 16
-y 27
-end
-arch cobblestones2
-x 16
-y 27
-end
-arch dungeon_magic
-x 16
-y 28
-end
-arch magic_banned
-x 16
-y 28
-end
-arch cobblestones2
-x 16
-y 28
 end
 arch marble
 x 16
 y 28
 end
-arch dungeon_magic
+arch marble
 x 16
 y 29
 end
-arch magic_banned
-x 16
-y 29
-end
-arch cobblestones2
-x 16
-y 29
-end
-arch dungeon_magic
+arch marble
 x 16
 y 30
-end
-arch magic_banned
-x 16
-y 30
-end
-arch cobblestones2
-x 16
-y 30
-end
-arch dungeon_magic
-x 16
-y 31
-end
-arch magic_banned
-x 16
-y 31
-end
-arch cobblestones2
-x 16
-y 31
 end
 arch marble
 x 16
 y 31
 end
-arch dungeon_magic
+arch marble
 x 16
 y 32
 end
-arch magic_banned
-x 16
-y 32
-end
-arch cobblestones2
-x 16
-y 32
-end
-arch dungeon_magic
-x 16
-y 33
-end
-arch magic_banned
-x 16
-y 33
-end
-arch cobblestones2
+arch marble
 x 16
 y 33
 end
@@ -11330,187 +4461,83 @@ connected 12322
 x 16
 y 33
 end
-arch dungeon_magic
-x 16
-y 34
-end
-arch magic_banned
+arch grass
 x 16
 y 34
 end
 arch grass
 x 16
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 16
 y 35
 end
-arch magic_banned
-x 16
-y 35
-end
-arch biglake_n
-x 16
-y 35
-end
-arch magic_banned
-x 16
-y 36
-end
-arch dungeon_magic
+arch grass
 x 16
 y 36
 end
 arch grass
 x 16
-y 36
-end
-arch magic_banned
-x 16
-y 37
-end
-arch dungeon_magic
-x 16
 y 37
 end
 arch grass
 x 16
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 16
 y 38
 end
-arch magic_banned
-x 16
-y 38
-end
-arch footbridge_2_1_2
-x 16
-y 38
-end
-arch magic_banned
-x 16
-y 39
-end
-arch dungeon_magic
+arch grass
 x 16
 y 39
 end
 arch grass
 x 16
-y 39
-end
-arch magic_banned
-x 16
-y 40
-end
-arch dungeon_magic
-x 16
 y 40
 end
 arch grass
 x 16
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 16
 y 41
 end
-arch magic_banned
-x 16
-y 41
-end
-arch biglake_center
-x 16
-y 41
-end
-arch magic_banned
-x 16
-y 42
-end
-arch dungeon_magic
+arch grass
 x 16
 y 42
 end
 arch grass
 x 16
-y 42
-end
-arch magic_banned
-x 16
-y 43
-end
-arch dungeon_magic
-x 16
 y 43
 end
 arch grass
 x 16
-y 43
-end
-arch magic_banned
-x 16
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 16
 y 44
-end
-arch footbridge_2_1_2
-x 16
-y 44
-end
-arch magic_banned
-x 16
-y 45
-end
-arch dungeon_magic
-x 16
-y 45
 end
 arch grass
 x 16
 y 45
 end
-arch magic_banned
-x 16
-y 46
-end
-arch dungeon_magic
+arch grass
 x 16
 y 46
 end
 arch grass
 x 16
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 16
 y 47
 end
-arch dungeon_magic
-x 16
-y 47
-end
-arch grass_only
-x 16
-y 47
-end
-arch biglake_s
-x 16
-y 47
-end
-arch magic_banned
-x 16
-y 48
-end
-arch dungeon_magic
-x 16
-y 48
-end
-arch grass_only
+arch grass
 x 16
 y 48
 end
@@ -11528,457 +4555,133 @@ end
 arch flagstone_2_1_2
 x 17
 end
-arch dungeon_magic
-x 17
-y 1
-end
-arch magic_banned
-x 17
-y 1
-end
-arch cobblestones2
-x 17
-y 1
-end
 arch marble
 x 17
 y 1
 end
-arch dungeon_magic
-x 17
-y 2
-end
-arch magic_banned
-x 17
-y 2
-end
-arch cobblestones2
+arch marble
 x 17
 y 2
 end
 arch marble
 x 17
-y 2
-end
-arch dungeon_magic
-x 17
-y 3
-end
-arch magic_banned
-x 17
-y 3
-end
-arch cobblestones2
-x 17
 y 3
 end
 arch marble
-x 17
-y 3
-end
-arch dungeon_magic
-x 17
-y 4
-end
-arch magic_banned
-x 17
-y 4
-end
-arch cobblestones2
 x 17
 y 4
 end
 arch marble
 x 17
-y 4
-end
-arch dungeon_magic
-x 17
-y 5
-end
-arch magic_banned
-x 17
-y 5
-end
-arch cobblestones2
-x 17
 y 5
 end
 arch marble
-x 17
-y 5
-end
-arch dungeon_magic
-x 17
-y 6
-end
-arch magic_banned
-x 17
-y 6
-end
-arch cobblestones2
 x 17
 y 6
 end
 arch marble
 x 17
-y 6
-end
-arch dungeon_magic
-x 17
-y 7
-end
-arch magic_banned
-x 17
 y 7
 end
 arch cobblestones2
-x 17
-y 7
-end
-arch marble
-x 17
-y 7
-end
-arch dungeon_magic
-x 17
-y 8
-end
-arch magic_banned
 x 17
 y 8
 end
 arch cobblestones2
 x 17
-y 8
-end
-arch dungeon_magic
-x 17
 y 9
-end
-arch magic_banned
-x 17
-y 9
-end
-arch cobblestones2
-x 17
-y 9
-end
-arch dungeon_magic
-x 17
-y 10
-end
-arch magic_banned
-x 17
-y 10
-end
-arch cobblestones2
-x 17
-y 10
 end
 arch marble
 x 17
 y 10
 end
-arch dungeon_magic
-x 17
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 11
 end
 arch cobblestones2
 x 17
-y 11
-end
-arch dungeon_magic
-x 17
 y 12
-end
-arch magic_banned
-x 17
-y 12
-end
-arch cobblestones2
-x 17
-y 12
-end
-arch dungeon_magic
-x 17
-y 13
-end
-arch magic_banned
-x 17
-y 13
-end
-arch cobblestones2
-x 17
-y 13
 end
 arch marble
 x 17
 y 13
 end
-arch dungeon_magic
-x 17
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 14
 end
 arch cobblestones2
 x 17
-y 14
-end
-arch dungeon_magic
-x 17
 y 15
-end
-arch magic_banned
-x 17
-y 15
-end
-arch cobblestones2
-x 17
-y 15
-end
-arch dungeon_magic
-x 17
-y 16
-end
-arch magic_banned
-x 17
-y 16
-end
-arch cobblestones2
-x 17
-y 16
 end
 arch marble
 x 17
 y 16
 end
-arch dungeon_magic
-x 17
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 17
 end
 arch cobblestones2
 x 17
-y 17
-end
-arch dungeon_magic
-x 17
 y 18
-end
-arch magic_banned
-x 17
-y 18
-end
-arch cobblestones2
-x 17
-y 18
-end
-arch dungeon_magic
-x 17
-y 19
-end
-arch magic_banned
-x 17
-y 19
-end
-arch cobblestones2
-x 17
-y 19
 end
 arch marble
 x 17
 y 19
 end
-arch dungeon_magic
-x 17
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 20
 end
 arch cobblestones2
 x 17
-y 20
-end
-arch dungeon_magic
-x 17
 y 21
-end
-arch magic_banned
-x 17
-y 21
-end
-arch cobblestones2
-x 17
-y 21
-end
-arch dungeon_magic
-x 17
-y 22
-end
-arch magic_banned
-x 17
-y 22
-end
-arch cobblestones2
-x 17
-y 22
 end
 arch marble
 x 17
 y 22
 end
-arch dungeon_magic
-x 17
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 23
 end
 arch cobblestones2
 x 17
-y 23
-end
-arch dungeon_magic
-x 17
 y 24
-end
-arch magic_banned
-x 17
-y 24
-end
-arch cobblestones2
-x 17
-y 24
-end
-arch dungeon_magic
-x 17
-y 25
-end
-arch magic_banned
-x 17
-y 25
-end
-arch cobblestones2
-x 17
-y 25
 end
 arch marble
 x 17
 y 25
 end
-arch dungeon_magic
-x 17
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 26
 end
 arch cobblestones2
 x 17
-y 26
-end
-arch dungeon_magic
-x 17
 y 27
-end
-arch magic_banned
-x 17
-y 27
-end
-arch cobblestones2
-x 17
-y 27
-end
-arch dungeon_magic
-x 17
-y 28
-end
-arch magic_banned
-x 17
-y 28
-end
-arch cobblestones2
-x 17
-y 28
 end
 arch marble
 x 17
 y 28
 end
-arch dungeon_magic
-x 17
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 17
 y 29
 end
 arch cobblestones2
 x 17
-y 29
-end
-arch dungeon_magic
-x 17
 y 30
-end
-arch magic_banned
-x 17
-y 30
-end
-arch cobblestones2
-x 17
-y 30
-end
-arch dungeon_magic
-x 17
-y 31
-end
-arch magic_banned
-x 17
-y 31
-end
-arch cobblestones2
-x 17
-y 31
 end
 arch marble
 x 17
 y 31
 end
-arch dungeon_magic
-x 17
-y 32
-end
-arch magic_banned
-x 17
-y 32
-end
 arch cobblestones2
 x 17
 y 32
-end
-arch dungeon_magic
-x 17
-y 33
-end
-arch magic_banned
-x 17
-y 33
 end
 arch cobblestones2
 x 17
@@ -11989,187 +4692,83 @@ connected 12322
 x 17
 y 33
 end
-arch dungeon_magic
-x 17
-y 34
-end
-arch magic_banned
+arch grass
 x 17
 y 34
 end
 arch grass
 x 17
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 17
 y 35
 end
-arch magic_banned
-x 17
-y 35
-end
-arch biglake_n
-x 17
-y 35
-end
-arch magic_banned
-x 17
-y 36
-end
-arch dungeon_magic
+arch grass
 x 17
 y 36
 end
 arch grass
 x 17
-y 36
-end
-arch magic_banned
-x 17
-y 37
-end
-arch dungeon_magic
-x 17
 y 37
 end
 arch grass
 x 17
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 17
 y 38
 end
-arch magic_banned
-x 17
-y 38
-end
-arch footbridge_2_1_2
-x 17
-y 38
-end
-arch magic_banned
-x 17
-y 39
-end
-arch dungeon_magic
+arch grass
 x 17
 y 39
 end
 arch grass
 x 17
-y 39
-end
-arch magic_banned
-x 17
-y 40
-end
-arch dungeon_magic
-x 17
 y 40
 end
 arch grass
 x 17
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 17
 y 41
 end
-arch magic_banned
-x 17
-y 41
-end
-arch biglake_center
-x 17
-y 41
-end
-arch magic_banned
-x 17
-y 42
-end
-arch dungeon_magic
+arch grass
 x 17
 y 42
 end
 arch grass
 x 17
-y 42
-end
-arch magic_banned
-x 17
-y 43
-end
-arch dungeon_magic
-x 17
 y 43
 end
 arch grass
 x 17
-y 43
-end
-arch magic_banned
-x 17
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 17
 y 44
-end
-arch footbridge_2_1_2
-x 17
-y 44
-end
-arch magic_banned
-x 17
-y 45
-end
-arch dungeon_magic
-x 17
-y 45
 end
 arch grass
 x 17
 y 45
 end
-arch magic_banned
-x 17
-y 46
-end
-arch dungeon_magic
+arch grass
 x 17
 y 46
 end
 arch grass
 x 17
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 17
 y 47
 end
-arch dungeon_magic
-x 17
-y 47
-end
-arch grass_only
-x 17
-y 47
-end
-arch biglake_s
-x 17
-y 47
-end
-arch magic_banned
-x 17
-y 48
-end
-arch dungeon_magic
-x 17
-y 48
-end
-arch grass_only
+arch grass
 x 17
 y 48
 end
@@ -12187,141 +4786,37 @@ end
 arch flagstone_2_1_2
 x 18
 end
-arch dungeon_magic
-x 18
-y 1
-end
-arch magic_banned
-x 18
-y 1
-end
-arch cobblestones2
-x 18
-y 1
-end
 arch marble
 x 18
 y 1
 end
-arch dungeon_magic
-x 18
-y 2
-end
-arch magic_banned
-x 18
-y 2
-end
-arch cobblestones2
+arch marble
 x 18
 y 2
 end
 arch marble
 x 18
-y 2
-end
-arch dungeon_magic
-x 18
-y 3
-end
-arch magic_banned
-x 18
-y 3
-end
-arch cobblestones2
-x 18
 y 3
 end
 arch marble
-x 18
-y 3
-end
-arch dungeon_magic
-x 18
-y 4
-end
-arch magic_banned
-x 18
-y 4
-end
-arch cobblestones2
 x 18
 y 4
 end
 arch marble
 x 18
-y 4
-end
-arch dungeon_magic
-x 18
-y 5
-end
-arch magic_banned
-x 18
-y 5
-end
-arch cobblestones2
-x 18
 y 5
 end
 arch marble
-x 18
-y 5
-end
-arch dungeon_magic
-x 18
-y 6
-end
-arch magic_banned
-x 18
-y 6
-end
-arch cobblestones2
 x 18
 y 6
 end
 arch marble
 x 18
-y 6
-end
-arch dungeon_magic
-x 18
-y 7
-end
-arch magic_banned
-x 18
 y 7
 end
 arch cobblestones2
 x 18
-y 7
-end
-arch marble
-x 18
-y 7
-end
-arch dungeon_magic
-x 18
 y 8
-end
-arch magic_banned
-x 18
-y 8
-end
-arch cobblestones2
-x 18
-y 8
-end
-arch marble
-x 18
-y 8
-end
-arch dungeon_magic
-x 18
-y 9
-end
-arch magic_banned
-x 18
-y 9
 end
 arch cobblestones2
 x 18
@@ -12329,47 +4824,11 @@ y 9
 end
 arch marble
 x 18
-y 9
-end
-arch dungeon_magic
-x 18
-y 10
-end
-arch magic_banned
-x 18
 y 10
 end
 arch cobblestones2
 x 18
-y 10
-end
-arch marble
-x 18
-y 10
-end
-arch dungeon_magic
-x 18
 y 11
-end
-arch magic_banned
-x 18
-y 11
-end
-arch cobblestones2
-x 18
-y 11
-end
-arch marble
-x 18
-y 11
-end
-arch dungeon_magic
-x 18
-y 12
-end
-arch magic_banned
-x 18
-y 12
 end
 arch cobblestones2
 x 18
@@ -12377,47 +4836,11 @@ y 12
 end
 arch marble
 x 18
-y 12
-end
-arch dungeon_magic
-x 18
-y 13
-end
-arch magic_banned
-x 18
 y 13
 end
 arch cobblestones2
 x 18
-y 13
-end
-arch marble
-x 18
-y 13
-end
-arch dungeon_magic
-x 18
 y 14
-end
-arch magic_banned
-x 18
-y 14
-end
-arch cobblestones2
-x 18
-y 14
-end
-arch marble
-x 18
-y 14
-end
-arch dungeon_magic
-x 18
-y 15
-end
-arch magic_banned
-x 18
-y 15
 end
 arch cobblestones2
 x 18
@@ -12425,47 +4848,11 @@ y 15
 end
 arch marble
 x 18
-y 15
-end
-arch dungeon_magic
-x 18
-y 16
-end
-arch magic_banned
-x 18
 y 16
 end
 arch cobblestones2
 x 18
-y 16
-end
-arch marble
-x 18
-y 16
-end
-arch dungeon_magic
-x 18
 y 17
-end
-arch magic_banned
-x 18
-y 17
-end
-arch cobblestones2
-x 18
-y 17
-end
-arch marble
-x 18
-y 17
-end
-arch dungeon_magic
-x 18
-y 18
-end
-arch magic_banned
-x 18
-y 18
 end
 arch cobblestones2
 x 18
@@ -12473,47 +4860,11 @@ y 18
 end
 arch marble
 x 18
-y 18
-end
-arch dungeon_magic
-x 18
-y 19
-end
-arch magic_banned
-x 18
 y 19
 end
 arch cobblestones2
 x 18
-y 19
-end
-arch marble
-x 18
-y 19
-end
-arch dungeon_magic
-x 18
 y 20
-end
-arch magic_banned
-x 18
-y 20
-end
-arch cobblestones2
-x 18
-y 20
-end
-arch marble
-x 18
-y 20
-end
-arch dungeon_magic
-x 18
-y 21
-end
-arch magic_banned
-x 18
-y 21
 end
 arch cobblestones2
 x 18
@@ -12521,47 +4872,11 @@ y 21
 end
 arch marble
 x 18
-y 21
-end
-arch dungeon_magic
-x 18
-y 22
-end
-arch magic_banned
-x 18
 y 22
 end
 arch cobblestones2
 x 18
-y 22
-end
-arch marble
-x 18
-y 22
-end
-arch dungeon_magic
-x 18
 y 23
-end
-arch magic_banned
-x 18
-y 23
-end
-arch cobblestones2
-x 18
-y 23
-end
-arch marble
-x 18
-y 23
-end
-arch dungeon_magic
-x 18
-y 24
-end
-arch magic_banned
-x 18
-y 24
 end
 arch cobblestones2
 x 18
@@ -12569,47 +4884,11 @@ y 24
 end
 arch marble
 x 18
-y 24
-end
-arch dungeon_magic
-x 18
-y 25
-end
-arch magic_banned
-x 18
 y 25
 end
 arch cobblestones2
 x 18
-y 25
-end
-arch marble
-x 18
-y 25
-end
-arch dungeon_magic
-x 18
 y 26
-end
-arch magic_banned
-x 18
-y 26
-end
-arch cobblestones2
-x 18
-y 26
-end
-arch marble
-x 18
-y 26
-end
-arch dungeon_magic
-x 18
-y 27
-end
-arch magic_banned
-x 18
-y 27
 end
 arch cobblestones2
 x 18
@@ -12617,47 +4896,11 @@ y 27
 end
 arch marble
 x 18
-y 27
-end
-arch dungeon_magic
-x 18
-y 28
-end
-arch magic_banned
-x 18
 y 28
 end
 arch cobblestones2
 x 18
-y 28
-end
-arch marble
-x 18
-y 28
-end
-arch dungeon_magic
-x 18
 y 29
-end
-arch magic_banned
-x 18
-y 29
-end
-arch cobblestones2
-x 18
-y 29
-end
-arch marble
-x 18
-y 29
-end
-arch dungeon_magic
-x 18
-y 30
-end
-arch magic_banned
-x 18
-y 30
 end
 arch cobblestones2
 x 18
@@ -12665,53 +4908,13 @@ y 30
 end
 arch marble
 x 18
-y 30
-end
-arch dungeon_magic
-x 18
-y 31
-end
-arch magic_banned
-x 18
 y 31
 end
 arch cobblestones2
 x 18
-y 31
-end
-arch marble
-x 18
-y 31
-end
-arch dungeon_magic
-x 18
-y 32
-end
-arch magic_banned
-x 18
 y 32
 end
 arch cobblestones2
-x 18
-y 32
-end
-arch marble
-x 18
-y 32
-end
-arch dungeon_magic
-x 18
-y 33
-end
-arch magic_banned
-x 18
-y 33
-end
-arch cobblestones2
-x 18
-y 33
-end
-arch marble
 x 18
 y 33
 end
@@ -12720,187 +4923,83 @@ connected 12322
 x 18
 y 33
 end
-arch dungeon_magic
-x 18
-y 34
-end
-arch magic_banned
+arch grass
 x 18
 y 34
 end
 arch grass
 x 18
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 18
 y 35
 end
-arch magic_banned
-x 18
-y 35
-end
-arch biglake_n
-x 18
-y 35
-end
-arch magic_banned
-x 18
-y 36
-end
-arch dungeon_magic
+arch grass
 x 18
 y 36
 end
 arch grass
 x 18
-y 36
-end
-arch magic_banned
-x 18
-y 37
-end
-arch dungeon_magic
-x 18
 y 37
 end
 arch grass
 x 18
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 18
 y 38
 end
-arch magic_banned
-x 18
-y 38
-end
-arch footbridge_2_1_2
-x 18
-y 38
-end
-arch magic_banned
-x 18
-y 39
-end
-arch dungeon_magic
+arch grass
 x 18
 y 39
 end
 arch grass
 x 18
-y 39
-end
-arch magic_banned
-x 18
-y 40
-end
-arch dungeon_magic
-x 18
 y 40
 end
 arch grass
 x 18
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 18
 y 41
 end
-arch magic_banned
-x 18
-y 41
-end
-arch biglake_center
-x 18
-y 41
-end
-arch magic_banned
-x 18
-y 42
-end
-arch dungeon_magic
+arch grass
 x 18
 y 42
 end
 arch grass
 x 18
-y 42
-end
-arch magic_banned
-x 18
-y 43
-end
-arch dungeon_magic
-x 18
 y 43
 end
 arch grass
 x 18
-y 43
-end
-arch magic_banned
-x 18
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 18
 y 44
-end
-arch footbridge_2_1_2
-x 18
-y 44
-end
-arch magic_banned
-x 18
-y 45
-end
-arch dungeon_magic
-x 18
-y 45
 end
 arch grass
 x 18
 y 45
 end
-arch magic_banned
-x 18
-y 46
-end
-arch dungeon_magic
+arch grass
 x 18
 y 46
 end
 arch grass
 x 18
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 18
 y 47
 end
-arch dungeon_magic
-x 18
-y 47
-end
-arch grass_only
-x 18
-y 47
-end
-arch biglake_s
-x 18
-y 47
-end
-arch magic_banned
-x 18
-y 48
-end
-arch dungeon_magic
-x 18
-y 48
-end
-arch grass_only
+arch grass
 x 18
 y 48
 end
@@ -12918,459 +5017,135 @@ end
 arch flagstone_2_1_2
 x 19
 end
-arch dungeon_magic
-x 19
-y 1
-end
-arch magic_banned
-x 19
-y 1
-end
-arch cobblestones2
-x 19
-y 1
-end
 arch marble
 x 19
 y 1
 end
-arch dungeon_magic
-x 19
-y 2
-end
-arch magic_banned
-x 19
-y 2
-end
-arch cobblestones2
+arch marble
 x 19
 y 2
 end
 arch marble
 x 19
-y 2
-end
-arch dungeon_magic
-x 19
-y 3
-end
-arch magic_banned
-x 19
-y 3
-end
-arch cobblestones2
-x 19
 y 3
 end
 arch marble
-x 19
-y 3
-end
-arch dungeon_magic
-x 19
-y 4
-end
-arch magic_banned
-x 19
-y 4
-end
-arch cobblestones2
 x 19
 y 4
 end
 arch marble
 x 19
-y 4
-end
-arch dungeon_magic
-x 19
-y 5
-end
-arch magic_banned
-x 19
-y 5
-end
-arch cobblestones2
-x 19
 y 5
 end
 arch marble
-x 19
-y 5
-end
-arch dungeon_magic
-x 19
-y 6
-end
-arch magic_banned
-x 19
-y 6
-end
-arch cobblestones2
 x 19
 y 6
 end
 arch marble
 x 19
-y 6
-end
-arch dungeon_magic
-x 19
-y 7
-end
-arch magic_banned
-x 19
-y 7
-end
-arch cobblestones2
-x 19
 y 7
 end
 arch marble
-x 19
-y 7
-end
-arch dungeon_magic
 x 19
 y 8
 end
-arch magic_banned
-x 19
-y 8
-end
-arch cobblestones2
-x 19
-y 8
-end
-arch dungeon_magic
+arch marble
 x 19
 y 9
 end
-arch magic_banned
-x 19
-y 9
-end
-arch cobblestones2
-x 19
-y 9
-end
-arch dungeon_magic
-x 19
-y 10
-end
-arch magic_banned
-x 19
-y 10
-end
-arch cobblestones2
-x 19
-y 10
-end
 arch marble
 x 19
 y 10
 end
-arch dungeon_magic
+arch marble
 x 19
 y 11
 end
-arch magic_banned
-x 19
-y 11
-end
-arch cobblestones2
-x 19
-y 11
-end
-arch dungeon_magic
+arch marble
 x 19
 y 12
 end
-arch magic_banned
-x 19
-y 12
-end
-arch cobblestones2
-x 19
-y 12
-end
-arch dungeon_magic
-x 19
-y 13
-end
-arch magic_banned
-x 19
-y 13
-end
-arch cobblestones2
-x 19
-y 13
-end
 arch marble
 x 19
 y 13
 end
-arch dungeon_magic
+arch marble
 x 19
 y 14
 end
-arch magic_banned
-x 19
-y 14
-end
-arch cobblestones2
-x 19
-y 14
-end
-arch dungeon_magic
+arch marble
 x 19
 y 15
 end
-arch magic_banned
-x 19
-y 15
-end
-arch cobblestones2
-x 19
-y 15
-end
-arch dungeon_magic
-x 19
-y 16
-end
-arch magic_banned
-x 19
-y 16
-end
-arch cobblestones2
-x 19
-y 16
-end
 arch marble
 x 19
 y 16
 end
-arch dungeon_magic
+arch marble
 x 19
 y 17
 end
-arch magic_banned
-x 19
-y 17
-end
-arch cobblestones2
-x 19
-y 17
-end
-arch dungeon_magic
+arch marble
 x 19
 y 18
 end
-arch magic_banned
-x 19
-y 18
-end
-arch cobblestones2
-x 19
-y 18
-end
-arch dungeon_magic
-x 19
-y 19
-end
-arch magic_banned
-x 19
-y 19
-end
-arch cobblestones2
-x 19
-y 19
-end
 arch marble
 x 19
 y 19
 end
-arch dungeon_magic
+arch marble
 x 19
 y 20
 end
-arch magic_banned
-x 19
-y 20
-end
-arch cobblestones2
-x 19
-y 20
-end
-arch dungeon_magic
+arch marble
 x 19
 y 21
 end
-arch magic_banned
-x 19
-y 21
-end
-arch cobblestones2
-x 19
-y 21
-end
-arch dungeon_magic
-x 19
-y 22
-end
-arch magic_banned
-x 19
-y 22
-end
-arch cobblestones2
-x 19
-y 22
-end
 arch marble
 x 19
 y 22
 end
-arch dungeon_magic
+arch marble
 x 19
 y 23
 end
-arch magic_banned
-x 19
-y 23
-end
-arch cobblestones2
-x 19
-y 23
-end
-arch dungeon_magic
+arch marble
 x 19
 y 24
-end
-arch magic_banned
-x 19
-y 24
-end
-arch cobblestones2
-x 19
-y 24
-end
-arch dungeon_magic
-x 19
-y 25
-end
-arch magic_banned
-x 19
-y 25
-end
-arch cobblestones2
-x 19
-y 25
 end
 arch marble
 x 19
 y 25
 end
-arch dungeon_magic
+arch marble
 x 19
 y 26
 end
-arch magic_banned
-x 19
-y 26
-end
-arch cobblestones2
-x 19
-y 26
-end
-arch dungeon_magic
+arch marble
 x 19
 y 27
-end
-arch magic_banned
-x 19
-y 27
-end
-arch cobblestones2
-x 19
-y 27
-end
-arch dungeon_magic
-x 19
-y 28
-end
-arch magic_banned
-x 19
-y 28
-end
-arch cobblestones2
-x 19
-y 28
 end
 arch marble
 x 19
 y 28
 end
-arch dungeon_magic
+arch marble
 x 19
 y 29
 end
-arch magic_banned
-x 19
-y 29
-end
-arch cobblestones2
-x 19
-y 29
-end
-arch dungeon_magic
+arch marble
 x 19
 y 30
-end
-arch magic_banned
-x 19
-y 30
-end
-arch cobblestones2
-x 19
-y 30
-end
-arch dungeon_magic
-x 19
-y 31
-end
-arch magic_banned
-x 19
-y 31
-end
-arch cobblestones2
-x 19
-y 31
 end
 arch marble
 x 19
 y 31
 end
-arch dungeon_magic
+arch marble
 x 19
 y 32
 end
-arch magic_banned
-x 19
-y 32
-end
-arch cobblestones2
-x 19
-y 32
-end
-arch dungeon_magic
-x 19
-y 33
-end
-arch magic_banned
-x 19
-y 33
-end
-arch cobblestones2
+arch marble
 x 19
 y 33
 end
@@ -13379,187 +5154,83 @@ connected 12322
 x 19
 y 33
 end
-arch dungeon_magic
-x 19
-y 34
-end
-arch magic_banned
+arch grass
 x 19
 y 34
 end
 arch grass
 x 19
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 19
 y 35
 end
-arch magic_banned
-x 19
-y 35
-end
-arch biglake_n
-x 19
-y 35
-end
-arch magic_banned
-x 19
-y 36
-end
-arch dungeon_magic
+arch grass
 x 19
 y 36
 end
 arch grass
 x 19
-y 36
-end
-arch magic_banned
-x 19
-y 37
-end
-arch dungeon_magic
-x 19
 y 37
 end
 arch grass
 x 19
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 19
 y 38
 end
-arch magic_banned
-x 19
-y 38
-end
-arch footbridge_2_1_2
-x 19
-y 38
-end
-arch magic_banned
-x 19
-y 39
-end
-arch dungeon_magic
+arch grass
 x 19
 y 39
 end
 arch grass
 x 19
-y 39
-end
-arch magic_banned
-x 19
-y 40
-end
-arch dungeon_magic
-x 19
 y 40
 end
 arch grass
 x 19
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 19
 y 41
 end
-arch magic_banned
-x 19
-y 41
-end
-arch biglake_center
-x 19
-y 41
-end
-arch magic_banned
-x 19
-y 42
-end
-arch dungeon_magic
+arch grass
 x 19
 y 42
 end
 arch grass
 x 19
-y 42
-end
-arch magic_banned
-x 19
-y 43
-end
-arch dungeon_magic
-x 19
 y 43
 end
 arch grass
 x 19
-y 43
-end
-arch magic_banned
-x 19
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 19
 y 44
-end
-arch footbridge_2_1_2
-x 19
-y 44
-end
-arch magic_banned
-x 19
-y 45
-end
-arch dungeon_magic
-x 19
-y 45
 end
 arch grass
 x 19
 y 45
 end
-arch magic_banned
-x 19
-y 46
-end
-arch dungeon_magic
+arch grass
 x 19
 y 46
 end
 arch grass
 x 19
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 19
 y 47
 end
-arch dungeon_magic
-x 19
-y 47
-end
-arch grass_only
-x 19
-y 47
-end
-arch biglake_s
-x 19
-y 47
-end
-arch magic_banned
-x 19
-y 48
-end
-arch dungeon_magic
-x 19
-y 48
-end
-arch grass_only
+arch grass
 x 19
 y 48
 end
@@ -13577,457 +5248,133 @@ end
 arch flagstone_2_1_2
 x 20
 end
-arch dungeon_magic
-x 20
-y 1
-end
-arch magic_banned
-x 20
-y 1
-end
-arch cobblestones2
-x 20
-y 1
-end
 arch marble
 x 20
 y 1
 end
-arch dungeon_magic
-x 20
-y 2
-end
-arch magic_banned
-x 20
-y 2
-end
-arch cobblestones2
+arch marble
 x 20
 y 2
 end
 arch marble
 x 20
-y 2
-end
-arch dungeon_magic
-x 20
-y 3
-end
-arch magic_banned
-x 20
-y 3
-end
-arch cobblestones2
-x 20
 y 3
 end
 arch marble
-x 20
-y 3
-end
-arch dungeon_magic
-x 20
-y 4
-end
-arch magic_banned
-x 20
-y 4
-end
-arch cobblestones2
 x 20
 y 4
 end
 arch marble
 x 20
-y 4
-end
-arch dungeon_magic
-x 20
-y 5
-end
-arch magic_banned
-x 20
-y 5
-end
-arch cobblestones2
-x 20
 y 5
 end
 arch marble
-x 20
-y 5
-end
-arch dungeon_magic
-x 20
-y 6
-end
-arch magic_banned
-x 20
-y 6
-end
-arch cobblestones2
 x 20
 y 6
 end
 arch marble
 x 20
-y 6
-end
-arch dungeon_magic
-x 20
-y 7
-end
-arch magic_banned
-x 20
 y 7
 end
 arch cobblestones2
-x 20
-y 7
-end
-arch marble
-x 20
-y 7
-end
-arch dungeon_magic
-x 20
-y 8
-end
-arch magic_banned
 x 20
 y 8
 end
 arch cobblestones2
 x 20
-y 8
-end
-arch dungeon_magic
-x 20
 y 9
-end
-arch magic_banned
-x 20
-y 9
-end
-arch cobblestones2
-x 20
-y 9
-end
-arch dungeon_magic
-x 20
-y 10
-end
-arch magic_banned
-x 20
-y 10
-end
-arch cobblestones2
-x 20
-y 10
 end
 arch marble
 x 20
 y 10
 end
-arch dungeon_magic
-x 20
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 11
 end
 arch cobblestones2
 x 20
-y 11
-end
-arch dungeon_magic
-x 20
 y 12
-end
-arch magic_banned
-x 20
-y 12
-end
-arch cobblestones2
-x 20
-y 12
-end
-arch dungeon_magic
-x 20
-y 13
-end
-arch magic_banned
-x 20
-y 13
-end
-arch cobblestones2
-x 20
-y 13
 end
 arch marble
 x 20
 y 13
 end
-arch dungeon_magic
-x 20
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 14
 end
 arch cobblestones2
 x 20
-y 14
-end
-arch dungeon_magic
-x 20
 y 15
-end
-arch magic_banned
-x 20
-y 15
-end
-arch cobblestones2
-x 20
-y 15
-end
-arch dungeon_magic
-x 20
-y 16
-end
-arch magic_banned
-x 20
-y 16
-end
-arch cobblestones2
-x 20
-y 16
 end
 arch marble
 x 20
 y 16
 end
-arch dungeon_magic
-x 20
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 17
 end
 arch cobblestones2
 x 20
-y 17
-end
-arch dungeon_magic
-x 20
 y 18
-end
-arch magic_banned
-x 20
-y 18
-end
-arch cobblestones2
-x 20
-y 18
-end
-arch dungeon_magic
-x 20
-y 19
-end
-arch magic_banned
-x 20
-y 19
-end
-arch cobblestones2
-x 20
-y 19
 end
 arch marble
 x 20
 y 19
 end
-arch dungeon_magic
-x 20
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 20
 end
 arch cobblestones2
 x 20
-y 20
-end
-arch dungeon_magic
-x 20
 y 21
-end
-arch magic_banned
-x 20
-y 21
-end
-arch cobblestones2
-x 20
-y 21
-end
-arch dungeon_magic
-x 20
-y 22
-end
-arch magic_banned
-x 20
-y 22
-end
-arch cobblestones2
-x 20
-y 22
 end
 arch marble
 x 20
 y 22
 end
-arch dungeon_magic
-x 20
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 23
 end
 arch cobblestones2
 x 20
-y 23
-end
-arch dungeon_magic
-x 20
 y 24
-end
-arch magic_banned
-x 20
-y 24
-end
-arch cobblestones2
-x 20
-y 24
-end
-arch dungeon_magic
-x 20
-y 25
-end
-arch magic_banned
-x 20
-y 25
-end
-arch cobblestones2
-x 20
-y 25
 end
 arch marble
 x 20
 y 25
 end
-arch dungeon_magic
-x 20
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 26
 end
 arch cobblestones2
 x 20
-y 26
-end
-arch dungeon_magic
-x 20
 y 27
-end
-arch magic_banned
-x 20
-y 27
-end
-arch cobblestones2
-x 20
-y 27
-end
-arch dungeon_magic
-x 20
-y 28
-end
-arch magic_banned
-x 20
-y 28
-end
-arch cobblestones2
-x 20
-y 28
 end
 arch marble
 x 20
 y 28
 end
-arch dungeon_magic
-x 20
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 20
 y 29
 end
 arch cobblestones2
 x 20
-y 29
-end
-arch dungeon_magic
-x 20
 y 30
-end
-arch magic_banned
-x 20
-y 30
-end
-arch cobblestones2
-x 20
-y 30
-end
-arch dungeon_magic
-x 20
-y 31
-end
-arch magic_banned
-x 20
-y 31
-end
-arch cobblestones2
-x 20
-y 31
 end
 arch marble
 x 20
 y 31
 end
-arch dungeon_magic
-x 20
-y 32
-end
-arch magic_banned
-x 20
-y 32
-end
 arch cobblestones2
 x 20
 y 32
-end
-arch dungeon_magic
-x 20
-y 33
-end
-arch magic_banned
-x 20
-y 33
 end
 arch cobblestones2
 x 20
@@ -14038,187 +5385,83 @@ connected 12322
 x 20
 y 33
 end
-arch dungeon_magic
-x 20
-y 34
-end
-arch magic_banned
+arch grass
 x 20
 y 34
 end
 arch grass
 x 20
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 20
 y 35
 end
-arch magic_banned
-x 20
-y 35
-end
-arch biglake_n
-x 20
-y 35
-end
-arch magic_banned
-x 20
-y 36
-end
-arch dungeon_magic
+arch grass
 x 20
 y 36
 end
 arch grass
 x 20
-y 36
-end
-arch magic_banned
-x 20
-y 37
-end
-arch dungeon_magic
-x 20
 y 37
 end
 arch grass
 x 20
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 20
 y 38
 end
-arch magic_banned
-x 20
-y 38
-end
-arch footbridge_2_1_2
-x 20
-y 38
-end
-arch magic_banned
-x 20
-y 39
-end
-arch dungeon_magic
+arch grass
 x 20
 y 39
 end
 arch grass
 x 20
-y 39
-end
-arch magic_banned
-x 20
-y 40
-end
-arch dungeon_magic
-x 20
 y 40
 end
 arch grass
 x 20
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 20
 y 41
 end
-arch magic_banned
-x 20
-y 41
-end
-arch biglake_center
-x 20
-y 41
-end
-arch magic_banned
-x 20
-y 42
-end
-arch dungeon_magic
+arch grass
 x 20
 y 42
 end
 arch grass
 x 20
-y 42
-end
-arch magic_banned
-x 20
-y 43
-end
-arch dungeon_magic
-x 20
 y 43
 end
 arch grass
 x 20
-y 43
-end
-arch magic_banned
-x 20
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 20
 y 44
-end
-arch footbridge_2_1_2
-x 20
-y 44
-end
-arch magic_banned
-x 20
-y 45
-end
-arch dungeon_magic
-x 20
-y 45
 end
 arch grass
 x 20
 y 45
 end
-arch magic_banned
-x 20
-y 46
-end
-arch dungeon_magic
+arch grass
 x 20
 y 46
 end
 arch grass
 x 20
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 20
 y 47
 end
-arch dungeon_magic
-x 20
-y 47
-end
-arch grass_only
-x 20
-y 47
-end
-arch biglake_s
-x 20
-y 47
-end
-arch magic_banned
-x 20
-y 48
-end
-arch dungeon_magic
-x 20
-y 48
-end
-arch grass_only
+arch grass
 x 20
 y 48
 end
@@ -14236,141 +5479,37 @@ end
 arch flagstone_2_1_2
 x 21
 end
-arch dungeon_magic
-x 21
-y 1
-end
-arch magic_banned
-x 21
-y 1
-end
-arch cobblestones2
-x 21
-y 1
-end
 arch marble
 x 21
 y 1
 end
-arch dungeon_magic
-x 21
-y 2
-end
-arch magic_banned
-x 21
-y 2
-end
-arch cobblestones2
+arch marble
 x 21
 y 2
 end
 arch marble
 x 21
-y 2
-end
-arch dungeon_magic
-x 21
-y 3
-end
-arch magic_banned
-x 21
-y 3
-end
-arch cobblestones2
-x 21
 y 3
 end
 arch marble
-x 21
-y 3
-end
-arch dungeon_magic
-x 21
-y 4
-end
-arch magic_banned
-x 21
-y 4
-end
-arch cobblestones2
 x 21
 y 4
 end
 arch marble
 x 21
-y 4
-end
-arch dungeon_magic
-x 21
-y 5
-end
-arch magic_banned
-x 21
-y 5
-end
-arch cobblestones2
-x 21
 y 5
 end
 arch marble
-x 21
-y 5
-end
-arch dungeon_magic
-x 21
-y 6
-end
-arch magic_banned
-x 21
-y 6
-end
-arch cobblestones2
 x 21
 y 6
 end
 arch marble
 x 21
-y 6
-end
-arch dungeon_magic
-x 21
-y 7
-end
-arch magic_banned
-x 21
 y 7
 end
 arch cobblestones2
 x 21
-y 7
-end
-arch marble
-x 21
-y 7
-end
-arch dungeon_magic
-x 21
 y 8
-end
-arch magic_banned
-x 21
-y 8
-end
-arch cobblestones2
-x 21
-y 8
-end
-arch marble
-x 21
-y 8
-end
-arch dungeon_magic
-x 21
-y 9
-end
-arch magic_banned
-x 21
-y 9
 end
 arch cobblestones2
 x 21
@@ -14378,47 +5517,11 @@ y 9
 end
 arch marble
 x 21
-y 9
-end
-arch dungeon_magic
-x 21
-y 10
-end
-arch magic_banned
-x 21
 y 10
 end
 arch cobblestones2
 x 21
-y 10
-end
-arch marble
-x 21
-y 10
-end
-arch dungeon_magic
-x 21
 y 11
-end
-arch magic_banned
-x 21
-y 11
-end
-arch cobblestones2
-x 21
-y 11
-end
-arch marble
-x 21
-y 11
-end
-arch dungeon_magic
-x 21
-y 12
-end
-arch magic_banned
-x 21
-y 12
 end
 arch cobblestones2
 x 21
@@ -14426,47 +5529,11 @@ y 12
 end
 arch marble
 x 21
-y 12
-end
-arch dungeon_magic
-x 21
-y 13
-end
-arch magic_banned
-x 21
 y 13
 end
 arch cobblestones2
 x 21
-y 13
-end
-arch marble
-x 21
-y 13
-end
-arch dungeon_magic
-x 21
 y 14
-end
-arch magic_banned
-x 21
-y 14
-end
-arch cobblestones2
-x 21
-y 14
-end
-arch marble
-x 21
-y 14
-end
-arch dungeon_magic
-x 21
-y 15
-end
-arch magic_banned
-x 21
-y 15
 end
 arch cobblestones2
 x 21
@@ -14474,47 +5541,11 @@ y 15
 end
 arch marble
 x 21
-y 15
-end
-arch dungeon_magic
-x 21
-y 16
-end
-arch magic_banned
-x 21
 y 16
 end
 arch cobblestones2
 x 21
-y 16
-end
-arch marble
-x 21
-y 16
-end
-arch dungeon_magic
-x 21
 y 17
-end
-arch magic_banned
-x 21
-y 17
-end
-arch cobblestones2
-x 21
-y 17
-end
-arch marble
-x 21
-y 17
-end
-arch dungeon_magic
-x 21
-y 18
-end
-arch magic_banned
-x 21
-y 18
 end
 arch cobblestones2
 x 21
@@ -14522,47 +5553,11 @@ y 18
 end
 arch marble
 x 21
-y 18
-end
-arch dungeon_magic
-x 21
-y 19
-end
-arch magic_banned
-x 21
 y 19
 end
 arch cobblestones2
 x 21
-y 19
-end
-arch marble
-x 21
-y 19
-end
-arch dungeon_magic
-x 21
 y 20
-end
-arch magic_banned
-x 21
-y 20
-end
-arch cobblestones2
-x 21
-y 20
-end
-arch marble
-x 21
-y 20
-end
-arch dungeon_magic
-x 21
-y 21
-end
-arch magic_banned
-x 21
-y 21
 end
 arch cobblestones2
 x 21
@@ -14570,47 +5565,11 @@ y 21
 end
 arch marble
 x 21
-y 21
-end
-arch dungeon_magic
-x 21
-y 22
-end
-arch magic_banned
-x 21
 y 22
 end
 arch cobblestones2
 x 21
-y 22
-end
-arch marble
-x 21
-y 22
-end
-arch dungeon_magic
-x 21
 y 23
-end
-arch magic_banned
-x 21
-y 23
-end
-arch cobblestones2
-x 21
-y 23
-end
-arch marble
-x 21
-y 23
-end
-arch dungeon_magic
-x 21
-y 24
-end
-arch magic_banned
-x 21
-y 24
 end
 arch cobblestones2
 x 21
@@ -14618,47 +5577,11 @@ y 24
 end
 arch marble
 x 21
-y 24
-end
-arch dungeon_magic
-x 21
-y 25
-end
-arch magic_banned
-x 21
 y 25
 end
 arch cobblestones2
 x 21
-y 25
-end
-arch marble
-x 21
-y 25
-end
-arch dungeon_magic
-x 21
 y 26
-end
-arch magic_banned
-x 21
-y 26
-end
-arch cobblestones2
-x 21
-y 26
-end
-arch marble
-x 21
-y 26
-end
-arch dungeon_magic
-x 21
-y 27
-end
-arch magic_banned
-x 21
-y 27
 end
 arch cobblestones2
 x 21
@@ -14666,47 +5589,11 @@ y 27
 end
 arch marble
 x 21
-y 27
-end
-arch dungeon_magic
-x 21
-y 28
-end
-arch magic_banned
-x 21
 y 28
 end
 arch cobblestones2
 x 21
-y 28
-end
-arch marble
-x 21
-y 28
-end
-arch dungeon_magic
-x 21
 y 29
-end
-arch magic_banned
-x 21
-y 29
-end
-arch cobblestones2
-x 21
-y 29
-end
-arch marble
-x 21
-y 29
-end
-arch dungeon_magic
-x 21
-y 30
-end
-arch magic_banned
-x 21
-y 30
 end
 arch cobblestones2
 x 21
@@ -14714,53 +5601,13 @@ y 30
 end
 arch marble
 x 21
-y 30
-end
-arch dungeon_magic
-x 21
-y 31
-end
-arch magic_banned
-x 21
 y 31
 end
 arch cobblestones2
 x 21
-y 31
-end
-arch marble
-x 21
-y 31
-end
-arch dungeon_magic
-x 21
-y 32
-end
-arch magic_banned
-x 21
 y 32
 end
 arch cobblestones2
-x 21
-y 32
-end
-arch marble
-x 21
-y 32
-end
-arch dungeon_magic
-x 21
-y 33
-end
-arch magic_banned
-x 21
-y 33
-end
-arch cobblestones2
-x 21
-y 33
-end
-arch marble
 x 21
 y 33
 end
@@ -14769,187 +5616,83 @@ connected 12322
 x 21
 y 33
 end
-arch dungeon_magic
-x 21
-y 34
-end
-arch magic_banned
+arch grass
 x 21
 y 34
 end
 arch grass
 x 21
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 21
 y 35
 end
-arch magic_banned
-x 21
-y 35
-end
-arch biglake_n
-x 21
-y 35
-end
-arch magic_banned
-x 21
-y 36
-end
-arch dungeon_magic
+arch grass
 x 21
 y 36
 end
 arch grass
 x 21
-y 36
-end
-arch magic_banned
-x 21
-y 37
-end
-arch dungeon_magic
-x 21
 y 37
 end
 arch grass
 x 21
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 21
 y 38
 end
-arch magic_banned
-x 21
-y 38
-end
-arch footbridge_2_1_2
-x 21
-y 38
-end
-arch magic_banned
-x 21
-y 39
-end
-arch dungeon_magic
+arch grass
 x 21
 y 39
 end
 arch grass
 x 21
-y 39
-end
-arch magic_banned
-x 21
-y 40
-end
-arch dungeon_magic
-x 21
 y 40
 end
 arch grass
 x 21
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 21
 y 41
 end
-arch magic_banned
-x 21
-y 41
-end
-arch biglake_center
-x 21
-y 41
-end
-arch magic_banned
-x 21
-y 42
-end
-arch dungeon_magic
+arch grass
 x 21
 y 42
 end
 arch grass
 x 21
-y 42
-end
-arch magic_banned
-x 21
-y 43
-end
-arch dungeon_magic
-x 21
 y 43
 end
 arch grass
 x 21
-y 43
-end
-arch magic_banned
-x 21
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 21
 y 44
-end
-arch footbridge_2_1_2
-x 21
-y 44
-end
-arch magic_banned
-x 21
-y 45
-end
-arch dungeon_magic
-x 21
-y 45
 end
 arch grass
 x 21
 y 45
 end
-arch magic_banned
-x 21
-y 46
-end
-arch dungeon_magic
+arch grass
 x 21
 y 46
 end
 arch grass
 x 21
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 21
 y 47
 end
-arch dungeon_magic
-x 21
-y 47
-end
-arch grass_only
-x 21
-y 47
-end
-arch biglake_s
-x 21
-y 47
-end
-arch magic_banned
-x 21
-y 48
-end
-arch dungeon_magic
-x 21
-y 48
-end
-arch grass_only
+arch grass
 x 21
 y 48
 end
@@ -14967,459 +5710,135 @@ end
 arch flagstone_2_1_2
 x 22
 end
-arch dungeon_magic
-x 22
-y 1
-end
-arch magic_banned
-x 22
-y 1
-end
-arch cobblestones2
-x 22
-y 1
-end
 arch marble
 x 22
 y 1
 end
-arch dungeon_magic
-x 22
-y 2
-end
-arch magic_banned
-x 22
-y 2
-end
-arch cobblestones2
+arch marble
 x 22
 y 2
 end
 arch marble
 x 22
-y 2
-end
-arch dungeon_magic
-x 22
-y 3
-end
-arch magic_banned
-x 22
-y 3
-end
-arch cobblestones2
-x 22
 y 3
 end
 arch marble
-x 22
-y 3
-end
-arch dungeon_magic
-x 22
-y 4
-end
-arch magic_banned
-x 22
-y 4
-end
-arch cobblestones2
 x 22
 y 4
 end
 arch marble
 x 22
-y 4
-end
-arch dungeon_magic
-x 22
-y 5
-end
-arch magic_banned
-x 22
-y 5
-end
-arch cobblestones2
-x 22
 y 5
 end
 arch marble
-x 22
-y 5
-end
-arch dungeon_magic
-x 22
-y 6
-end
-arch magic_banned
-x 22
-y 6
-end
-arch cobblestones2
 x 22
 y 6
 end
 arch marble
 x 22
-y 6
-end
-arch dungeon_magic
-x 22
-y 7
-end
-arch magic_banned
-x 22
-y 7
-end
-arch cobblestones2
-x 22
 y 7
 end
 arch marble
-x 22
-y 7
-end
-arch dungeon_magic
 x 22
 y 8
 end
-arch magic_banned
-x 22
-y 8
-end
-arch cobblestones2
-x 22
-y 8
-end
-arch dungeon_magic
+arch marble
 x 22
 y 9
 end
-arch magic_banned
-x 22
-y 9
-end
-arch cobblestones2
-x 22
-y 9
-end
-arch dungeon_magic
-x 22
-y 10
-end
-arch magic_banned
-x 22
-y 10
-end
-arch cobblestones2
-x 22
-y 10
-end
 arch marble
 x 22
 y 10
 end
-arch dungeon_magic
+arch marble
 x 22
 y 11
 end
-arch magic_banned
-x 22
-y 11
-end
-arch cobblestones2
-x 22
-y 11
-end
-arch dungeon_magic
+arch marble
 x 22
 y 12
 end
-arch magic_banned
-x 22
-y 12
-end
-arch cobblestones2
-x 22
-y 12
-end
-arch dungeon_magic
-x 22
-y 13
-end
-arch magic_banned
-x 22
-y 13
-end
-arch cobblestones2
-x 22
-y 13
-end
 arch marble
 x 22
 y 13
 end
-arch dungeon_magic
+arch marble
 x 22
 y 14
 end
-arch magic_banned
-x 22
-y 14
-end
-arch cobblestones2
-x 22
-y 14
-end
-arch dungeon_magic
+arch marble
 x 22
 y 15
 end
-arch magic_banned
-x 22
-y 15
-end
-arch cobblestones2
-x 22
-y 15
-end
-arch dungeon_magic
-x 22
-y 16
-end
-arch magic_banned
-x 22
-y 16
-end
-arch cobblestones2
-x 22
-y 16
-end
 arch marble
 x 22
 y 16
 end
-arch dungeon_magic
+arch marble
 x 22
 y 17
 end
-arch magic_banned
-x 22
-y 17
-end
-arch cobblestones2
-x 22
-y 17
-end
-arch dungeon_magic
+arch marble
 x 22
 y 18
 end
-arch magic_banned
-x 22
-y 18
-end
-arch cobblestones2
-x 22
-y 18
-end
-arch dungeon_magic
-x 22
-y 19
-end
-arch magic_banned
-x 22
-y 19
-end
-arch cobblestones2
-x 22
-y 19
-end
 arch marble
 x 22
 y 19
 end
-arch dungeon_magic
+arch marble
 x 22
 y 20
 end
-arch magic_banned
-x 22
-y 20
-end
-arch cobblestones2
-x 22
-y 20
-end
-arch dungeon_magic
+arch marble
 x 22
 y 21
 end
-arch magic_banned
-x 22
-y 21
-end
-arch cobblestones2
-x 22
-y 21
-end
-arch dungeon_magic
-x 22
-y 22
-end
-arch magic_banned
-x 22
-y 22
-end
-arch cobblestones2
-x 22
-y 22
-end
 arch marble
 x 22
 y 22
 end
-arch dungeon_magic
+arch marble
 x 22
 y 23
 end
-arch magic_banned
-x 22
-y 23
-end
-arch cobblestones2
-x 22
-y 23
-end
-arch dungeon_magic
+arch marble
 x 22
 y 24
-end
-arch magic_banned
-x 22
-y 24
-end
-arch cobblestones2
-x 22
-y 24
-end
-arch dungeon_magic
-x 22
-y 25
-end
-arch magic_banned
-x 22
-y 25
-end
-arch cobblestones2
-x 22
-y 25
 end
 arch marble
 x 22
 y 25
 end
-arch dungeon_magic
+arch marble
 x 22
 y 26
 end
-arch magic_banned
-x 22
-y 26
-end
-arch cobblestones2
-x 22
-y 26
-end
-arch dungeon_magic
+arch marble
 x 22
 y 27
-end
-arch magic_banned
-x 22
-y 27
-end
-arch cobblestones2
-x 22
-y 27
-end
-arch dungeon_magic
-x 22
-y 28
-end
-arch magic_banned
-x 22
-y 28
-end
-arch cobblestones2
-x 22
-y 28
 end
 arch marble
 x 22
 y 28
 end
-arch dungeon_magic
+arch marble
 x 22
 y 29
 end
-arch magic_banned
-x 22
-y 29
-end
-arch cobblestones2
-x 22
-y 29
-end
-arch dungeon_magic
+arch marble
 x 22
 y 30
-end
-arch magic_banned
-x 22
-y 30
-end
-arch cobblestones2
-x 22
-y 30
-end
-arch dungeon_magic
-x 22
-y 31
-end
-arch magic_banned
-x 22
-y 31
-end
-arch cobblestones2
-x 22
-y 31
 end
 arch marble
 x 22
 y 31
 end
-arch dungeon_magic
+arch marble
 x 22
 y 32
 end
-arch magic_banned
-x 22
-y 32
-end
-arch cobblestones2
-x 22
-y 32
-end
-arch dungeon_magic
-x 22
-y 33
-end
-arch magic_banned
-x 22
-y 33
-end
-arch cobblestones2
+arch marble
 x 22
 y 33
 end
@@ -15428,187 +5847,83 @@ connected 12322
 x 22
 y 33
 end
-arch dungeon_magic
-x 22
-y 34
-end
-arch magic_banned
+arch grass
 x 22
 y 34
 end
 arch grass
 x 22
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 22
 y 35
 end
-arch magic_banned
-x 22
-y 35
-end
-arch biglake_n
-x 22
-y 35
-end
-arch magic_banned
-x 22
-y 36
-end
-arch dungeon_magic
+arch grass
 x 22
 y 36
 end
 arch grass
 x 22
-y 36
-end
-arch magic_banned
-x 22
-y 37
-end
-arch dungeon_magic
-x 22
 y 37
 end
 arch grass
 x 22
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 22
 y 38
 end
-arch magic_banned
-x 22
-y 38
-end
-arch footbridge_2_1_2
-x 22
-y 38
-end
-arch magic_banned
-x 22
-y 39
-end
-arch dungeon_magic
+arch grass
 x 22
 y 39
 end
 arch grass
 x 22
-y 39
-end
-arch magic_banned
-x 22
-y 40
-end
-arch dungeon_magic
-x 22
 y 40
 end
 arch grass
 x 22
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 22
 y 41
 end
-arch magic_banned
-x 22
-y 41
-end
-arch biglake_center
-x 22
-y 41
-end
-arch magic_banned
-x 22
-y 42
-end
-arch dungeon_magic
+arch grass
 x 22
 y 42
 end
 arch grass
 x 22
-y 42
-end
-arch magic_banned
-x 22
-y 43
-end
-arch dungeon_magic
-x 22
 y 43
 end
 arch grass
 x 22
-y 43
-end
-arch magic_banned
-x 22
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 22
 y 44
-end
-arch footbridge_2_1_2
-x 22
-y 44
-end
-arch magic_banned
-x 22
-y 45
-end
-arch dungeon_magic
-x 22
-y 45
 end
 arch grass
 x 22
 y 45
 end
-arch magic_banned
-x 22
-y 46
-end
-arch dungeon_magic
+arch grass
 x 22
 y 46
 end
 arch grass
 x 22
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 22
 y 47
 end
-arch dungeon_magic
-x 22
-y 47
-end
-arch grass_only
-x 22
-y 47
-end
-arch biglake_s
-x 22
-y 47
-end
-arch magic_banned
-x 22
-y 48
-end
-arch dungeon_magic
-x 22
-y 48
-end
-arch grass_only
+arch grass
 x 22
 y 48
 end
@@ -15626,457 +5941,133 @@ end
 arch flagstone_2_1_2
 x 23
 end
-arch dungeon_magic
-x 23
-y 1
-end
-arch magic_banned
-x 23
-y 1
-end
-arch cobblestones2
-x 23
-y 1
-end
 arch marble
 x 23
 y 1
 end
-arch dungeon_magic
-x 23
-y 2
-end
-arch magic_banned
-x 23
-y 2
-end
-arch cobblestones2
+arch marble
 x 23
 y 2
 end
 arch marble
 x 23
-y 2
-end
-arch dungeon_magic
-x 23
-y 3
-end
-arch magic_banned
-x 23
-y 3
-end
-arch cobblestones2
-x 23
 y 3
 end
 arch marble
-x 23
-y 3
-end
-arch dungeon_magic
-x 23
-y 4
-end
-arch magic_banned
-x 23
-y 4
-end
-arch cobblestones2
 x 23
 y 4
 end
 arch marble
 x 23
-y 4
-end
-arch dungeon_magic
-x 23
-y 5
-end
-arch magic_banned
-x 23
-y 5
-end
-arch cobblestones2
-x 23
 y 5
 end
 arch marble
-x 23
-y 5
-end
-arch dungeon_magic
-x 23
-y 6
-end
-arch magic_banned
-x 23
-y 6
-end
-arch cobblestones2
 x 23
 y 6
 end
 arch marble
 x 23
-y 6
-end
-arch dungeon_magic
-x 23
-y 7
-end
-arch magic_banned
-x 23
 y 7
 end
 arch cobblestones2
-x 23
-y 7
-end
-arch marble
-x 23
-y 7
-end
-arch dungeon_magic
-x 23
-y 8
-end
-arch magic_banned
 x 23
 y 8
 end
 arch cobblestones2
 x 23
-y 8
-end
-arch dungeon_magic
-x 23
 y 9
-end
-arch magic_banned
-x 23
-y 9
-end
-arch cobblestones2
-x 23
-y 9
-end
-arch dungeon_magic
-x 23
-y 10
-end
-arch magic_banned
-x 23
-y 10
-end
-arch cobblestones2
-x 23
-y 10
 end
 arch marble
 x 23
 y 10
 end
-arch dungeon_magic
-x 23
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 11
 end
 arch cobblestones2
 x 23
-y 11
-end
-arch dungeon_magic
-x 23
 y 12
-end
-arch magic_banned
-x 23
-y 12
-end
-arch cobblestones2
-x 23
-y 12
-end
-arch dungeon_magic
-x 23
-y 13
-end
-arch magic_banned
-x 23
-y 13
-end
-arch cobblestones2
-x 23
-y 13
 end
 arch marble
 x 23
 y 13
 end
-arch dungeon_magic
-x 23
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 14
 end
 arch cobblestones2
 x 23
-y 14
-end
-arch dungeon_magic
-x 23
 y 15
-end
-arch magic_banned
-x 23
-y 15
-end
-arch cobblestones2
-x 23
-y 15
-end
-arch dungeon_magic
-x 23
-y 16
-end
-arch magic_banned
-x 23
-y 16
-end
-arch cobblestones2
-x 23
-y 16
 end
 arch marble
 x 23
 y 16
 end
-arch dungeon_magic
-x 23
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 17
 end
 arch cobblestones2
 x 23
-y 17
-end
-arch dungeon_magic
-x 23
 y 18
-end
-arch magic_banned
-x 23
-y 18
-end
-arch cobblestones2
-x 23
-y 18
-end
-arch dungeon_magic
-x 23
-y 19
-end
-arch magic_banned
-x 23
-y 19
-end
-arch cobblestones2
-x 23
-y 19
 end
 arch marble
 x 23
 y 19
 end
-arch dungeon_magic
-x 23
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 20
 end
 arch cobblestones2
 x 23
-y 20
-end
-arch dungeon_magic
-x 23
 y 21
-end
-arch magic_banned
-x 23
-y 21
-end
-arch cobblestones2
-x 23
-y 21
-end
-arch dungeon_magic
-x 23
-y 22
-end
-arch magic_banned
-x 23
-y 22
-end
-arch cobblestones2
-x 23
-y 22
 end
 arch marble
 x 23
 y 22
 end
-arch dungeon_magic
-x 23
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 23
 end
 arch cobblestones2
 x 23
-y 23
-end
-arch dungeon_magic
-x 23
 y 24
-end
-arch magic_banned
-x 23
-y 24
-end
-arch cobblestones2
-x 23
-y 24
-end
-arch dungeon_magic
-x 23
-y 25
-end
-arch magic_banned
-x 23
-y 25
-end
-arch cobblestones2
-x 23
-y 25
 end
 arch marble
 x 23
 y 25
 end
-arch dungeon_magic
-x 23
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 26
 end
 arch cobblestones2
 x 23
-y 26
-end
-arch dungeon_magic
-x 23
 y 27
-end
-arch magic_banned
-x 23
-y 27
-end
-arch cobblestones2
-x 23
-y 27
-end
-arch dungeon_magic
-x 23
-y 28
-end
-arch magic_banned
-x 23
-y 28
-end
-arch cobblestones2
-x 23
-y 28
 end
 arch marble
 x 23
 y 28
 end
-arch dungeon_magic
-x 23
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 23
 y 29
 end
 arch cobblestones2
 x 23
-y 29
-end
-arch dungeon_magic
-x 23
 y 30
-end
-arch magic_banned
-x 23
-y 30
-end
-arch cobblestones2
-x 23
-y 30
-end
-arch dungeon_magic
-x 23
-y 31
-end
-arch magic_banned
-x 23
-y 31
-end
-arch cobblestones2
-x 23
-y 31
 end
 arch marble
 x 23
 y 31
 end
-arch dungeon_magic
-x 23
-y 32
-end
-arch magic_banned
-x 23
-y 32
-end
 arch cobblestones2
 x 23
 y 32
-end
-arch dungeon_magic
-x 23
-y 33
-end
-arch magic_banned
-x 23
-y 33
 end
 arch cobblestones2
 x 23
@@ -16087,187 +6078,83 @@ connected 12322
 x 23
 y 33
 end
-arch dungeon_magic
-x 23
-y 34
-end
-arch magic_banned
+arch grass
 x 23
 y 34
 end
 arch grass
 x 23
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 23
 y 35
 end
-arch magic_banned
-x 23
-y 35
-end
-arch biglake_n
-x 23
-y 35
-end
-arch magic_banned
-x 23
-y 36
-end
-arch dungeon_magic
+arch grass
 x 23
 y 36
 end
 arch grass
 x 23
-y 36
-end
-arch magic_banned
-x 23
-y 37
-end
-arch dungeon_magic
-x 23
 y 37
 end
 arch grass
 x 23
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 23
 y 38
 end
-arch magic_banned
-x 23
-y 38
-end
-arch footbridge_2_1_2
-x 23
-y 38
-end
-arch magic_banned
-x 23
-y 39
-end
-arch dungeon_magic
+arch grass
 x 23
 y 39
 end
 arch grass
 x 23
-y 39
-end
-arch magic_banned
-x 23
-y 40
-end
-arch dungeon_magic
-x 23
 y 40
 end
 arch grass
 x 23
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 23
 y 41
 end
-arch magic_banned
-x 23
-y 41
-end
-arch biglake_center
-x 23
-y 41
-end
-arch magic_banned
-x 23
-y 42
-end
-arch dungeon_magic
+arch grass
 x 23
 y 42
 end
 arch grass
 x 23
-y 42
-end
-arch magic_banned
-x 23
-y 43
-end
-arch dungeon_magic
-x 23
 y 43
 end
 arch grass
 x 23
-y 43
-end
-arch magic_banned
-x 23
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 23
 y 44
-end
-arch footbridge_2_1_2
-x 23
-y 44
-end
-arch magic_banned
-x 23
-y 45
-end
-arch dungeon_magic
-x 23
-y 45
 end
 arch grass
 x 23
 y 45
 end
-arch magic_banned
-x 23
-y 46
-end
-arch dungeon_magic
+arch grass
 x 23
 y 46
 end
 arch grass
 x 23
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 23
 y 47
 end
-arch dungeon_magic
-x 23
-y 47
-end
-arch grass_only
-x 23
-y 47
-end
-arch biglake_s
-x 23
-y 47
-end
-arch magic_banned
-x 23
-y 48
-end
-arch dungeon_magic
-x 23
-y 48
-end
-arch grass_only
+arch grass
 x 23
 y 48
 end
@@ -16285,141 +6172,37 @@ end
 arch flagstone_2_1_2
 x 24
 end
-arch dungeon_magic
-x 24
-y 1
-end
-arch magic_banned
-x 24
-y 1
-end
-arch cobblestones2
-x 24
-y 1
-end
 arch marble
 x 24
 y 1
 end
-arch dungeon_magic
-x 24
-y 2
-end
-arch magic_banned
-x 24
-y 2
-end
-arch cobblestones2
+arch marble
 x 24
 y 2
 end
 arch marble
 x 24
-y 2
-end
-arch dungeon_magic
-x 24
-y 3
-end
-arch magic_banned
-x 24
-y 3
-end
-arch cobblestones2
-x 24
 y 3
 end
 arch marble
-x 24
-y 3
-end
-arch dungeon_magic
-x 24
-y 4
-end
-arch magic_banned
-x 24
-y 4
-end
-arch cobblestones2
 x 24
 y 4
 end
 arch marble
 x 24
-y 4
-end
-arch dungeon_magic
-x 24
-y 5
-end
-arch magic_banned
-x 24
-y 5
-end
-arch cobblestones2
-x 24
 y 5
 end
 arch marble
-x 24
-y 5
-end
-arch dungeon_magic
-x 24
-y 6
-end
-arch magic_banned
-x 24
-y 6
-end
-arch cobblestones2
 x 24
 y 6
 end
 arch marble
 x 24
-y 6
-end
-arch dungeon_magic
-x 24
-y 7
-end
-arch magic_banned
-x 24
 y 7
 end
 arch cobblestones2
 x 24
-y 7
-end
-arch marble
-x 24
-y 7
-end
-arch dungeon_magic
-x 24
 y 8
-end
-arch magic_banned
-x 24
-y 8
-end
-arch cobblestones2
-x 24
-y 8
-end
-arch marble
-x 24
-y 8
-end
-arch dungeon_magic
-x 24
-y 9
-end
-arch magic_banned
-x 24
-y 9
 end
 arch cobblestones2
 x 24
@@ -16427,47 +6210,11 @@ y 9
 end
 arch marble
 x 24
-y 9
-end
-arch dungeon_magic
-x 24
-y 10
-end
-arch magic_banned
-x 24
 y 10
 end
 arch cobblestones2
 x 24
-y 10
-end
-arch marble
-x 24
-y 10
-end
-arch dungeon_magic
-x 24
 y 11
-end
-arch magic_banned
-x 24
-y 11
-end
-arch cobblestones2
-x 24
-y 11
-end
-arch marble
-x 24
-y 11
-end
-arch dungeon_magic
-x 24
-y 12
-end
-arch magic_banned
-x 24
-y 12
 end
 arch cobblestones2
 x 24
@@ -16475,47 +6222,11 @@ y 12
 end
 arch marble
 x 24
-y 12
-end
-arch dungeon_magic
-x 24
-y 13
-end
-arch magic_banned
-x 24
 y 13
 end
 arch cobblestones2
 x 24
-y 13
-end
-arch marble
-x 24
-y 13
-end
-arch dungeon_magic
-x 24
 y 14
-end
-arch magic_banned
-x 24
-y 14
-end
-arch cobblestones2
-x 24
-y 14
-end
-arch marble
-x 24
-y 14
-end
-arch dungeon_magic
-x 24
-y 15
-end
-arch magic_banned
-x 24
-y 15
 end
 arch cobblestones2
 x 24
@@ -16523,47 +6234,11 @@ y 15
 end
 arch marble
 x 24
-y 15
-end
-arch dungeon_magic
-x 24
-y 16
-end
-arch magic_banned
-x 24
 y 16
 end
 arch cobblestones2
 x 24
-y 16
-end
-arch marble
-x 24
-y 16
-end
-arch dungeon_magic
-x 24
 y 17
-end
-arch magic_banned
-x 24
-y 17
-end
-arch cobblestones2
-x 24
-y 17
-end
-arch marble
-x 24
-y 17
-end
-arch dungeon_magic
-x 24
-y 18
-end
-arch magic_banned
-x 24
-y 18
 end
 arch cobblestones2
 x 24
@@ -16571,47 +6246,11 @@ y 18
 end
 arch marble
 x 24
-y 18
-end
-arch dungeon_magic
-x 24
-y 19
-end
-arch magic_banned
-x 24
 y 19
 end
 arch cobblestones2
 x 24
-y 19
-end
-arch marble
-x 24
-y 19
-end
-arch dungeon_magic
-x 24
 y 20
-end
-arch magic_banned
-x 24
-y 20
-end
-arch cobblestones2
-x 24
-y 20
-end
-arch marble
-x 24
-y 20
-end
-arch dungeon_magic
-x 24
-y 21
-end
-arch magic_banned
-x 24
-y 21
 end
 arch cobblestones2
 x 24
@@ -16619,47 +6258,11 @@ y 21
 end
 arch marble
 x 24
-y 21
-end
-arch dungeon_magic
-x 24
-y 22
-end
-arch magic_banned
-x 24
 y 22
 end
 arch cobblestones2
 x 24
-y 22
-end
-arch marble
-x 24
-y 22
-end
-arch dungeon_magic
-x 24
 y 23
-end
-arch magic_banned
-x 24
-y 23
-end
-arch cobblestones2
-x 24
-y 23
-end
-arch marble
-x 24
-y 23
-end
-arch dungeon_magic
-x 24
-y 24
-end
-arch magic_banned
-x 24
-y 24
 end
 arch cobblestones2
 x 24
@@ -16667,47 +6270,11 @@ y 24
 end
 arch marble
 x 24
-y 24
-end
-arch dungeon_magic
-x 24
-y 25
-end
-arch magic_banned
-x 24
 y 25
 end
 arch cobblestones2
 x 24
-y 25
-end
-arch marble
-x 24
-y 25
-end
-arch dungeon_magic
-x 24
 y 26
-end
-arch magic_banned
-x 24
-y 26
-end
-arch cobblestones2
-x 24
-y 26
-end
-arch marble
-x 24
-y 26
-end
-arch dungeon_magic
-x 24
-y 27
-end
-arch magic_banned
-x 24
-y 27
 end
 arch cobblestones2
 x 24
@@ -16715,47 +6282,11 @@ y 27
 end
 arch marble
 x 24
-y 27
-end
-arch dungeon_magic
-x 24
-y 28
-end
-arch magic_banned
-x 24
 y 28
 end
 arch cobblestones2
 x 24
-y 28
-end
-arch marble
-x 24
-y 28
-end
-arch dungeon_magic
-x 24
 y 29
-end
-arch magic_banned
-x 24
-y 29
-end
-arch cobblestones2
-x 24
-y 29
-end
-arch marble
-x 24
-y 29
-end
-arch dungeon_magic
-x 24
-y 30
-end
-arch magic_banned
-x 24
-y 30
 end
 arch cobblestones2
 x 24
@@ -16763,53 +6294,13 @@ y 30
 end
 arch marble
 x 24
-y 30
-end
-arch dungeon_magic
-x 24
-y 31
-end
-arch magic_banned
-x 24
 y 31
 end
 arch cobblestones2
 x 24
-y 31
-end
-arch marble
-x 24
-y 31
-end
-arch dungeon_magic
-x 24
-y 32
-end
-arch magic_banned
-x 24
 y 32
 end
 arch cobblestones2
-x 24
-y 32
-end
-arch marble
-x 24
-y 32
-end
-arch dungeon_magic
-x 24
-y 33
-end
-arch magic_banned
-x 24
-y 33
-end
-arch cobblestones2
-x 24
-y 33
-end
-arch marble
 x 24
 y 33
 end
@@ -16818,187 +6309,83 @@ connected 12322
 x 24
 y 33
 end
-arch dungeon_magic
-x 24
-y 34
-end
-arch magic_banned
+arch grass
 x 24
 y 34
 end
 arch grass
 x 24
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 24
 y 35
 end
-arch magic_banned
-x 24
-y 35
-end
-arch biglake_n
-x 24
-y 35
-end
-arch magic_banned
-x 24
-y 36
-end
-arch dungeon_magic
+arch grass
 x 24
 y 36
 end
 arch grass
 x 24
-y 36
-end
-arch magic_banned
-x 24
-y 37
-end
-arch dungeon_magic
-x 24
 y 37
 end
 arch grass
 x 24
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 24
 y 38
 end
-arch magic_banned
-x 24
-y 38
-end
-arch footbridge_2_1_2
-x 24
-y 38
-end
-arch magic_banned
-x 24
-y 39
-end
-arch dungeon_magic
+arch grass
 x 24
 y 39
 end
 arch grass
 x 24
-y 39
-end
-arch magic_banned
-x 24
-y 40
-end
-arch dungeon_magic
-x 24
 y 40
 end
 arch grass
 x 24
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 24
 y 41
 end
-arch magic_banned
-x 24
-y 41
-end
-arch biglake_center
-x 24
-y 41
-end
-arch magic_banned
-x 24
-y 42
-end
-arch dungeon_magic
+arch grass
 x 24
 y 42
 end
 arch grass
 x 24
-y 42
-end
-arch magic_banned
-x 24
-y 43
-end
-arch dungeon_magic
-x 24
 y 43
 end
 arch grass
 x 24
-y 43
-end
-arch magic_banned
-x 24
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 24
 y 44
-end
-arch footbridge_2_1_2
-x 24
-y 44
-end
-arch magic_banned
-x 24
-y 45
-end
-arch dungeon_magic
-x 24
-y 45
 end
 arch grass
 x 24
 y 45
 end
-arch magic_banned
-x 24
-y 46
-end
-arch dungeon_magic
+arch grass
 x 24
 y 46
 end
 arch grass
 x 24
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 24
 y 47
 end
-arch dungeon_magic
-x 24
-y 47
-end
-arch grass_only
-x 24
-y 47
-end
-arch biglake_s
-x 24
-y 47
-end
-arch magic_banned
-x 24
-y 48
-end
-arch dungeon_magic
-x 24
-y 48
-end
-arch grass_only
+arch grass
 x 24
 y 48
 end
@@ -17016,447 +6403,135 @@ end
 arch flagstone_2_1_2
 x 25
 end
-arch dungeon_magic
-x 25
-y 1
-end
-arch magic_banned
-x 25
-y 1
-end
-arch cobblestones2
-x 25
-y 1
-end
 arch marble
 x 25
 y 1
 end
-arch dungeon_magic
-x 25
-y 2
-end
-arch magic_banned
+arch marble
 x 25
 y 2
 end
 arch marble
 x 25
-y 2
-end
-arch dungeon_magic
-x 25
-y 3
-end
-arch magic_banned
-x 25
 y 3
 end
 arch marble
-x 25
-y 3
-end
-arch dungeon_magic
-x 25
-y 4
-end
-arch magic_banned
 x 25
 y 4
 end
 arch marble
 x 25
-y 4
-end
-arch dungeon_magic
-x 25
-y 5
-end
-arch magic_banned
-x 25
-y 5
-end
-arch cobblestones2
-x 25
 y 5
 end
 arch marble
-x 25
-y 5
-end
-arch dungeon_magic
-x 25
-y 6
-end
-arch magic_banned
-x 25
-y 6
-end
-arch cobblestones2
 x 25
 y 6
 end
 arch marble
 x 25
-y 6
-end
-arch dungeon_magic
-x 25
-y 7
-end
-arch magic_banned
-x 25
-y 7
-end
-arch cobblestones2
-x 25
 y 7
 end
 arch marble
-x 25
-y 7
-end
-arch dungeon_magic
 x 25
 y 8
 end
-arch magic_banned
-x 25
-y 8
-end
-arch cobblestones2
-x 25
-y 8
-end
-arch dungeon_magic
+arch marble
 x 25
 y 9
 end
-arch magic_banned
-x 25
-y 9
-end
-arch cobblestones2
-x 25
-y 9
-end
-arch dungeon_magic
-x 25
-y 10
-end
-arch magic_banned
-x 25
-y 10
-end
-arch cobblestones2
-x 25
-y 10
-end
 arch marble
 x 25
 y 10
 end
-arch dungeon_magic
+arch marble
 x 25
 y 11
 end
-arch magic_banned
-x 25
-y 11
-end
-arch cobblestones2
-x 25
-y 11
-end
-arch dungeon_magic
+arch marble
 x 25
 y 12
 end
-arch magic_banned
-x 25
-y 12
-end
-arch cobblestones2
-x 25
-y 12
-end
-arch dungeon_magic
-x 25
-y 13
-end
-arch magic_banned
-x 25
-y 13
-end
-arch cobblestones2
-x 25
-y 13
-end
 arch marble
 x 25
 y 13
 end
-arch dungeon_magic
+arch marble
 x 25
 y 14
 end
-arch magic_banned
-x 25
-y 14
-end
-arch cobblestones2
-x 25
-y 14
-end
-arch dungeon_magic
+arch marble
 x 25
 y 15
 end
-arch magic_banned
-x 25
-y 15
-end
-arch cobblestones2
-x 25
-y 15
-end
-arch dungeon_magic
-x 25
-y 16
-end
-arch magic_banned
-x 25
-y 16
-end
-arch cobblestones2
-x 25
-y 16
-end
 arch marble
 x 25
 y 16
 end
-arch dungeon_magic
+arch marble
 x 25
 y 17
 end
-arch magic_banned
-x 25
-y 17
-end
-arch cobblestones2
-x 25
-y 17
-end
-arch dungeon_magic
+arch marble
 x 25
 y 18
 end
-arch magic_banned
-x 25
-y 18
-end
-arch cobblestones2
-x 25
-y 18
-end
-arch dungeon_magic
-x 25
-y 19
-end
-arch magic_banned
-x 25
-y 19
-end
-arch cobblestones2
-x 25
-y 19
-end
 arch marble
 x 25
 y 19
 end
-arch dungeon_magic
+arch marble
 x 25
 y 20
 end
-arch magic_banned
-x 25
-y 20
-end
-arch cobblestones2
-x 25
-y 20
-end
-arch dungeon_magic
+arch marble
 x 25
 y 21
 end
-arch magic_banned
-x 25
-y 21
-end
-arch cobblestones2
-x 25
-y 21
-end
-arch dungeon_magic
-x 25
-y 22
-end
-arch magic_banned
-x 25
-y 22
-end
-arch cobblestones2
-x 25
-y 22
-end
 arch marble
 x 25
 y 22
 end
-arch dungeon_magic
+arch marble
 x 25
 y 23
 end
-arch magic_banned
-x 25
-y 23
-end
-arch cobblestones2
-x 25
-y 23
-end
-arch dungeon_magic
+arch marble
 x 25
 y 24
-end
-arch magic_banned
-x 25
-y 24
-end
-arch cobblestones2
-x 25
-y 24
-end
-arch dungeon_magic
-x 25
-y 25
-end
-arch magic_banned
-x 25
-y 25
-end
-arch cobblestones2
-x 25
-y 25
 end
 arch marble
 x 25
 y 25
 end
-arch dungeon_magic
+arch marble
 x 25
 y 26
 end
-arch magic_banned
-x 25
-y 26
-end
-arch cobblestones2
-x 25
-y 26
-end
-arch dungeon_magic
+arch marble
 x 25
 y 27
-end
-arch magic_banned
-x 25
-y 27
-end
-arch cobblestones2
-x 25
-y 27
-end
-arch dungeon_magic
-x 25
-y 28
-end
-arch magic_banned
-x 25
-y 28
-end
-arch cobblestones2
-x 25
-y 28
 end
 arch marble
 x 25
 y 28
 end
-arch dungeon_magic
+arch marble
 x 25
 y 29
 end
-arch magic_banned
-x 25
-y 29
-end
-arch cobblestones2
-x 25
-y 29
-end
-arch dungeon_magic
+arch marble
 x 25
 y 30
-end
-arch magic_banned
-x 25
-y 30
-end
-arch cobblestones2
-x 25
-y 30
-end
-arch dungeon_magic
-x 25
-y 31
-end
-arch magic_banned
-x 25
-y 31
-end
-arch cobblestones2
-x 25
-y 31
 end
 arch marble
 x 25
 y 31
 end
-arch dungeon_magic
+arch marble
 x 25
 y 32
 end
-arch magic_banned
-x 25
-y 32
-end
-arch cobblestones2
-x 25
-y 32
-end
-arch dungeon_magic
-x 25
-y 33
-end
-arch magic_banned
-x 25
-y 33
-end
-arch cobblestones2
+arch marble
 x 25
 y 33
 end
@@ -17465,187 +6540,83 @@ connected 12322
 x 25
 y 33
 end
-arch dungeon_magic
-x 25
-y 34
-end
-arch magic_banned
+arch grass
 x 25
 y 34
 end
 arch grass
 x 25
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_w-e
 x 25
 y 35
 end
-arch magic_banned
-x 25
-y 35
-end
-arch biglake_n
-x 25
-y 35
-end
-arch magic_banned
-x 25
-y 36
-end
-arch dungeon_magic
+arch grass
 x 25
 y 36
 end
 arch grass
 x 25
-y 36
-end
-arch magic_banned
-x 25
-y 37
-end
-arch dungeon_magic
-x 25
 y 37
 end
 arch grass
 x 25
-y 37
+y 38
 end
-arch dungeon_magic
+arch river_w-e
 x 25
 y 38
 end
-arch magic_banned
-x 25
-y 38
-end
-arch footbridge_2_1_2
-x 25
-y 38
-end
-arch magic_banned
-x 25
-y 39
-end
-arch dungeon_magic
+arch grass
 x 25
 y 39
 end
 arch grass
 x 25
-y 39
-end
-arch magic_banned
-x 25
-y 40
-end
-arch dungeon_magic
-x 25
 y 40
 end
 arch grass
 x 25
-y 40
+y 41
 end
-arch dungeon_magic
+arch river_w-e
 x 25
 y 41
 end
-arch magic_banned
-x 25
-y 41
-end
-arch biglake_center
-x 25
-y 41
-end
-arch magic_banned
-x 25
-y 42
-end
-arch dungeon_magic
+arch grass
 x 25
 y 42
 end
 arch grass
 x 25
-y 42
-end
-arch magic_banned
-x 25
-y 43
-end
-arch dungeon_magic
-x 25
 y 43
 end
 arch grass
 x 25
-y 43
-end
-arch magic_banned
-x 25
 y 44
 end
-arch dungeon_magic
+arch river_w-e
 x 25
 y 44
-end
-arch footbridge_2_1_2
-x 25
-y 44
-end
-arch magic_banned
-x 25
-y 45
-end
-arch dungeon_magic
-x 25
-y 45
 end
 arch grass
 x 25
 y 45
 end
-arch magic_banned
-x 25
-y 46
-end
-arch dungeon_magic
+arch grass
 x 25
 y 46
 end
 arch grass
 x 25
-y 46
+y 47
 end
-arch magic_banned
+arch river_w-e
 x 25
 y 47
 end
-arch dungeon_magic
-x 25
-y 47
-end
-arch grass_only
-x 25
-y 47
-end
-arch biglake_s
-x 25
-y 47
-end
-arch magic_banned
-x 25
-y 48
-end
-arch dungeon_magic
-x 25
-y 48
-end
-arch grass_only
+arch grass
 x 25
 y 48
 end
@@ -17663,449 +6634,133 @@ end
 arch flagstone_2_1_2
 x 26
 end
-arch dungeon_magic
-x 26
-y 1
-end
-arch magic_banned
-x 26
-y 1
-end
-arch cobblestones2
-x 26
-y 1
-end
 arch marble
 x 26
 y 1
 end
-arch dungeon_magic
-x 26
-y 2
-end
-arch magic_banned
+arch marble
 x 26
 y 2
 end
 arch marble
 x 26
-y 2
-end
-arch dungeon_magic
-x 26
-y 3
-end
-arch magic_banned
-x 26
 y 3
 end
 arch marble
-x 26
-y 3
-end
-arch cobblestones2
-x 26
-y 3
-end
-arch dungeon_magic
-x 26
-y 4
-end
-arch magic_banned
 x 26
 y 4
 end
 arch marble
 x 26
-y 4
-end
-arch dungeon_magic
-x 26
-y 5
-end
-arch magic_banned
-x 26
-y 5
-end
-arch cobblestones2
-x 26
 y 5
 end
 arch marble
-x 26
-y 5
-end
-arch dungeon_magic
-x 26
-y 6
-end
-arch magic_banned
-x 26
-y 6
-end
-arch cobblestones2
 x 26
 y 6
 end
 arch marble
 x 26
-y 6
-end
-arch dungeon_magic
-x 26
-y 7
-end
-arch magic_banned
-x 26
 y 7
 end
 arch cobblestones2
-x 26
-y 7
-end
-arch marble
-x 26
-y 7
-end
-arch dungeon_magic
-x 26
-y 8
-end
-arch magic_banned
 x 26
 y 8
 end
 arch cobblestones2
 x 26
-y 8
-end
-arch dungeon_magic
-x 26
 y 9
-end
-arch magic_banned
-x 26
-y 9
-end
-arch cobblestones2
-x 26
-y 9
-end
-arch dungeon_magic
-x 26
-y 10
-end
-arch magic_banned
-x 26
-y 10
-end
-arch cobblestones2
-x 26
-y 10
 end
 arch marble
 x 26
 y 10
 end
-arch dungeon_magic
-x 26
-y 11
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 11
 end
 arch cobblestones2
 x 26
-y 11
-end
-arch dungeon_magic
-x 26
 y 12
-end
-arch magic_banned
-x 26
-y 12
-end
-arch cobblestones2
-x 26
-y 12
-end
-arch dungeon_magic
-x 26
-y 13
-end
-arch magic_banned
-x 26
-y 13
-end
-arch cobblestones2
-x 26
-y 13
 end
 arch marble
 x 26
 y 13
 end
-arch dungeon_magic
-x 26
-y 14
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 14
 end
 arch cobblestones2
 x 26
-y 14
-end
-arch dungeon_magic
-x 26
 y 15
-end
-arch magic_banned
-x 26
-y 15
-end
-arch cobblestones2
-x 26
-y 15
-end
-arch dungeon_magic
-x 26
-y 16
-end
-arch magic_banned
-x 26
-y 16
-end
-arch cobblestones2
-x 26
-y 16
 end
 arch marble
 x 26
 y 16
 end
-arch dungeon_magic
-x 26
-y 17
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 17
 end
 arch cobblestones2
 x 26
-y 17
-end
-arch dungeon_magic
-x 26
 y 18
-end
-arch magic_banned
-x 26
-y 18
-end
-arch cobblestones2
-x 26
-y 18
-end
-arch dungeon_magic
-x 26
-y 19
-end
-arch magic_banned
-x 26
-y 19
-end
-arch cobblestones2
-x 26
-y 19
 end
 arch marble
 x 26
 y 19
 end
-arch dungeon_magic
-x 26
-y 20
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 20
 end
 arch cobblestones2
 x 26
-y 20
-end
-arch dungeon_magic
-x 26
 y 21
-end
-arch magic_banned
-x 26
-y 21
-end
-arch cobblestones2
-x 26
-y 21
-end
-arch dungeon_magic
-x 26
-y 22
-end
-arch magic_banned
-x 26
-y 22
-end
-arch cobblestones2
-x 26
-y 22
 end
 arch marble
 x 26
 y 22
 end
-arch dungeon_magic
-x 26
-y 23
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 23
 end
 arch cobblestones2
 x 26
-y 23
-end
-arch dungeon_magic
-x 26
 y 24
-end
-arch magic_banned
-x 26
-y 24
-end
-arch cobblestones2
-x 26
-y 24
-end
-arch dungeon_magic
-x 26
-y 25
-end
-arch magic_banned
-x 26
-y 25
-end
-arch cobblestones2
-x 26
-y 25
 end
 arch marble
 x 26
 y 25
 end
-arch dungeon_magic
-x 26
-y 26
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 26
 end
 arch cobblestones2
 x 26
-y 26
-end
-arch dungeon_magic
-x 26
 y 27
-end
-arch magic_banned
-x 26
-y 27
-end
-arch cobblestones2
-x 26
-y 27
-end
-arch dungeon_magic
-x 26
-y 28
-end
-arch magic_banned
-x 26
-y 28
-end
-arch cobblestones2
-x 26
-y 28
 end
 arch marble
 x 26
 y 28
 end
-arch dungeon_magic
-x 26
-y 29
-end
-arch magic_banned
+arch cobblestones2
 x 26
 y 29
 end
 arch cobblestones2
 x 26
-y 29
-end
-arch dungeon_magic
-x 26
 y 30
-end
-arch magic_banned
-x 26
-y 30
-end
-arch cobblestones2
-x 26
-y 30
-end
-arch dungeon_magic
-x 26
-y 31
-end
-arch magic_banned
-x 26
-y 31
-end
-arch cobblestones2
-x 26
-y 31
 end
 arch marble
 x 26
 y 31
 end
-arch dungeon_magic
-x 26
-y 32
-end
-arch magic_banned
-x 26
-y 32
-end
 arch cobblestones2
 x 26
 y 32
-end
-arch dungeon_magic
-x 26
-y 33
-end
-arch magic_banned
-x 26
-y 33
 end
 arch cobblestones2
 x 26
@@ -18116,207 +6771,99 @@ connected 12322
 x 26
 y 33
 end
-arch dungeon_magic
-x 26
-y 34
-end
-arch magic_banned
+arch grass
 x 26
 y 34
 end
 arch grass
 x 26
-y 34
+y 35
 end
-arch dungeon_magic
+arch river_se-w
 x 26
 y 35
 end
-arch magic_banned
-x 26
-y 35
-end
-arch biglake_n
-x 26
-y 35
-end
-arch dungeon_magic
+arch grass
 x 26
 y 36
 end
-arch magic_banned
+arch river_nw-se_l
 x 26
 y 36
 end
-arch biglake_center
-x 26
-y 36
-end
-arch dungeon_magic
+arch grass
 x 26
 y 37
 end
-arch magic_banned
-x 26
-y 37
-end
-arch biglake_center
-x 26
-y 37
-end
-arch dungeon_magic
+arch grass
 x 26
 y 38
 end
-arch magic_banned
+arch river_se-w
 x 26
 y 38
 end
-arch biglake_center
-x 26
-y 38
-end
-arch dungeon_magic
+arch grass
 x 26
 y 39
 end
-arch magic_banned
+arch river_nw-se_l
 x 26
 y 39
 end
-arch biglake_center
-x 26
-y 39
-end
-arch dungeon_magic
+arch grass
 x 26
 y 40
 end
-arch magic_banned
-x 26
-y 40
-end
-arch biglake_center
-x 26
-y 40
-end
-arch dungeon_magic
+arch grass
 x 26
 y 41
 end
-arch magic_banned
+arch river_w-e
 x 26
 y 41
 end
-arch biglake_center
-x 26
-y 41
-end
-arch magic_banned
+arch grass
 x 26
 y 42
 end
-arch dungeon_magic
-x 26
-y 42
-end
-arch grass_only
-x 26
-y 42
-end
-arch biglake_center
-x 26
-y 42
-end
-arch magic_banned
+arch grass
 x 26
 y 43
 end
-arch dungeon_magic
+arch river_sw-ne_u
 x 26
 y 43
 end
-arch grass_only
-x 26
-y 43
-end
-arch biglake_center
-x 26
-y 43
-end
-arch magic_banned
+arch grass
 x 26
 y 44
 end
-arch dungeon_magic
+arch river_ne-w
 x 26
 y 44
 end
-arch grass_only
-x 26
-y 44
-end
-arch biglake_center
-x 26
-y 44
-end
-arch magic_banned
+arch grass
 x 26
 y 45
 end
-arch dungeon_magic
-x 26
-y 45
-end
-arch grass_only
-x 26
-y 45
-end
-arch biglake_center
-x 26
-y 45
-end
-arch magic_banned
+arch grass
 x 26
 y 46
 end
-arch dungeon_magic
+arch river_sw-ne_u
 x 26
 y 46
 end
-arch grass_only
-x 26
-y 46
-end
-arch biglake_center
-x 26
-y 46
-end
-arch magic_banned
+arch grass
 x 26
 y 47
 end
-arch dungeon_magic
+arch river_ne-w
 x 26
 y 47
 end
-arch grass_only
-x 26
-y 47
-end
-arch biglake_s
-x 26
-y 47
-end
-arch magic_banned
-x 26
-y 48
-end
-arch dungeon_magic
-x 26
-y 48
-end
-arch grass_only
+arch grass
 x 26
 y 48
 end
@@ -18334,133 +6881,37 @@ end
 arch flagstone_2_1_2
 x 27
 end
-arch dungeon_magic
-x 27
-y 1
-end
-arch magic_banned
-x 27
-y 1
-end
-arch cobblestones2
+arch marble
 x 27
 y 1
 end
 arch marble
 x 27
-y 1
-end
-arch dungeon_magic
-x 27
-y 2
-end
-arch magic_banned
-x 27
-y 2
-end
-arch cobblestones2
-x 27
 y 2
 end
 arch marble
-x 27
-y 2
-end
-arch dungeon_magic
-x 27
-y 3
-end
-arch magic_banned
 x 27
 y 3
 end
 arch marble
 x 27
-y 3
-end
-arch dungeon_magic
-x 27
-y 4
-end
-arch magic_banned
-x 27
 y 4
 end
 arch marble
 x 27
-y 4
-end
-arch dungeon_magic
-x 27
-y 5
-end
-arch magic_banned
-x 27
-y 5
-end
-arch cobblestones2
-x 27
 y 5
 end
 arch marble
-x 27
-y 5
-end
-arch dungeon_magic
-x 27
-y 6
-end
-arch magic_banned
-x 27
-y 6
-end
-arch cobblestones2
 x 27
 y 6
 end
 arch marble
 x 27
-y 6
-end
-arch dungeon_magic
-x 27
-y 7
-end
-arch magic_banned
-x 27
 y 7
 end
 arch cobblestones2
 x 27
-y 7
-end
-arch marble
-x 27
-y 7
-end
-arch dungeon_magic
-x 27
 y 8
-end
-arch magic_banned
-x 27
-y 8
-end
-arch cobblestones2
-x 27
-y 8
-end
-arch marble
-x 27
-y 8
-end
-arch dungeon_magic
-x 27
-y 9
-end
-arch magic_banned
-x 27
-y 9
 end
 arch cobblestones2
 x 27
@@ -18468,47 +6919,11 @@ y 9
 end
 arch marble
 x 27
-y 9
-end
-arch dungeon_magic
-x 27
-y 10
-end
-arch magic_banned
-x 27
 y 10
 end
 arch cobblestones2
 x 27
-y 10
-end
-arch marble
-x 27
-y 10
-end
-arch dungeon_magic
-x 27
 y 11
-end
-arch magic_banned
-x 27
-y 11
-end
-arch cobblestones2
-x 27
-y 11
-end
-arch marble
-x 27
-y 11
-end
-arch dungeon_magic
-x 27
-y 12
-end
-arch magic_banned
-x 27
-y 12
 end
 arch cobblestones2
 x 27
@@ -18516,47 +6931,11 @@ y 12
 end
 arch marble
 x 27
-y 12
-end
-arch dungeon_magic
-x 27
-y 13
-end
-arch magic_banned
-x 27
 y 13
 end
 arch cobblestones2
 x 27
-y 13
-end
-arch marble
-x 27
-y 13
-end
-arch dungeon_magic
-x 27
 y 14
-end
-arch magic_banned
-x 27
-y 14
-end
-arch cobblestones2
-x 27
-y 14
-end
-arch marble
-x 27
-y 14
-end
-arch dungeon_magic
-x 27
-y 15
-end
-arch magic_banned
-x 27
-y 15
 end
 arch cobblestones2
 x 27
@@ -18564,47 +6943,11 @@ y 15
 end
 arch marble
 x 27
-y 15
-end
-arch dungeon_magic
-x 27
-y 16
-end
-arch magic_banned
-x 27
 y 16
 end
 arch cobblestones2
 x 27
-y 16
-end
-arch marble
-x 27
-y 16
-end
-arch dungeon_magic
-x 27
 y 17
-end
-arch magic_banned
-x 27
-y 17
-end
-arch cobblestones2
-x 27
-y 17
-end
-arch marble
-x 27
-y 17
-end
-arch dungeon_magic
-x 27
-y 18
-end
-arch magic_banned
-x 27
-y 18
 end
 arch cobblestones2
 x 27
@@ -18612,47 +6955,11 @@ y 18
 end
 arch marble
 x 27
-y 18
-end
-arch dungeon_magic
-x 27
-y 19
-end
-arch magic_banned
-x 27
 y 19
 end
 arch cobblestones2
 x 27
-y 19
-end
-arch marble
-x 27
-y 19
-end
-arch dungeon_magic
-x 27
 y 20
-end
-arch magic_banned
-x 27
-y 20
-end
-arch cobblestones2
-x 27
-y 20
-end
-arch marble
-x 27
-y 20
-end
-arch dungeon_magic
-x 27
-y 21
-end
-arch magic_banned
-x 27
-y 21
 end
 arch cobblestones2
 x 27
@@ -18660,47 +6967,11 @@ y 21
 end
 arch marble
 x 27
-y 21
-end
-arch dungeon_magic
-x 27
-y 22
-end
-arch magic_banned
-x 27
 y 22
 end
 arch cobblestones2
 x 27
-y 22
-end
-arch marble
-x 27
-y 22
-end
-arch dungeon_magic
-x 27
 y 23
-end
-arch magic_banned
-x 27
-y 23
-end
-arch cobblestones2
-x 27
-y 23
-end
-arch marble
-x 27
-y 23
-end
-arch dungeon_magic
-x 27
-y 24
-end
-arch magic_banned
-x 27
-y 24
 end
 arch cobblestones2
 x 27
@@ -18708,47 +6979,11 @@ y 24
 end
 arch marble
 x 27
-y 24
-end
-arch dungeon_magic
-x 27
-y 25
-end
-arch magic_banned
-x 27
 y 25
 end
 arch cobblestones2
 x 27
-y 25
-end
-arch marble
-x 27
-y 25
-end
-arch dungeon_magic
-x 27
 y 26
-end
-arch magic_banned
-x 27
-y 26
-end
-arch cobblestones2
-x 27
-y 26
-end
-arch marble
-x 27
-y 26
-end
-arch dungeon_magic
-x 27
-y 27
-end
-arch magic_banned
-x 27
-y 27
 end
 arch cobblestones2
 x 27
@@ -18756,47 +6991,11 @@ y 27
 end
 arch marble
 x 27
-y 27
-end
-arch dungeon_magic
-x 27
-y 28
-end
-arch magic_banned
-x 27
 y 28
 end
 arch cobblestones2
 x 27
-y 28
-end
-arch marble
-x 27
-y 28
-end
-arch dungeon_magic
-x 27
 y 29
-end
-arch magic_banned
-x 27
-y 29
-end
-arch cobblestones2
-x 27
-y 29
-end
-arch marble
-x 27
-y 29
-end
-arch dungeon_magic
-x 27
-y 30
-end
-arch magic_banned
-x 27
-y 30
 end
 arch cobblestones2
 x 27
@@ -18804,53 +7003,13 @@ y 30
 end
 arch marble
 x 27
-y 30
-end
-arch dungeon_magic
-x 27
-y 31
-end
-arch magic_banned
-x 27
 y 31
 end
 arch cobblestones2
 x 27
-y 31
-end
-arch marble
-x 27
-y 31
-end
-arch dungeon_magic
-x 27
-y 32
-end
-arch magic_banned
-x 27
 y 32
 end
 arch cobblestones2
-x 27
-y 32
-end
-arch marble
-x 27
-y 32
-end
-arch dungeon_magic
-x 27
-y 33
-end
-arch magic_banned
-x 27
-y 33
-end
-arch cobblestones2
-x 27
-y 33
-end
-arch marble
 x 27
 y 33
 end
@@ -18859,211 +7018,115 @@ connected 12322
 x 27
 y 33
 end
-arch dungeon_magic
-x 27
-y 34
-end
-arch magic_banned
+arch grass
 x 27
 y 34
 end
 arch grass
 x 27
-y 34
-end
-arch dungeon_magic
-x 27
 y 35
 end
-arch magic_banned
+arch river_nw-se_u
 x 27
 y 35
 end
 arch grass
 x 27
-y 35
+y 36
 end
-arch biglake_ne
-x 27
-y 35
-end
-arch dungeon_magic
+arch river_nw-se
 x 27
 y 36
 end
-arch magic_banned
-x 27
-y 36
-end
-arch biglake_e
-x 27
-y 36
-end
-arch dungeon_magic
+arch grass
 x 27
 y 37
 end
-arch magic_banned
+arch river_nw-se_l
 x 27
 y 37
 end
-arch biglake_e
-x 27
-y 37
-end
-arch dungeon_magic
+arch grass
 x 27
 y 38
 end
-arch magic_banned
+arch river_nw-se_u
 x 27
 y 38
 end
-arch biglake_e
-x 27
-y 38
-end
-arch dungeon_magic
+arch grass
 x 27
 y 39
 end
-arch magic_banned
+arch river_nw-s
 x 27
 y 39
 end
-arch biglake_e
-x 27
-y 39
-end
-arch dungeon_magic
+arch grass
 x 27
 y 40
 end
-arch magic_banned
+arch river_n-s
 x 27
 y 40
 end
-arch biglake_e
-x 27
-y 40
-end
-arch dungeon_magic
+arch grass
 x 27
 y 41
 end
-arch magic_banned
+arch rjunct_ns-w
 x 27
 y 41
 end
-arch biglake_e
-x 27
-y 41
-end
-arch magic_banned
+arch grass
 x 27
 y 42
 end
-arch dungeon_magic
+arch river_n-s
 x 27
 y 42
 end
-arch grass_only
-x 27
-y 42
-end
-arch biglake_e
-x 27
-y 42
-end
-arch magic_banned
+arch grass
 x 27
 y 43
 end
-arch dungeon_magic
+arch river_sw-n
 x 27
 y 43
 end
-arch grass_only
-x 27
-y 43
-end
-arch biglake_e
-x 27
-y 43
-end
-arch magic_banned
+arch grass
 x 27
 y 44
 end
-arch dungeon_magic
+arch river_sw-ne_l
 x 27
 y 44
 end
-arch grass_only
-x 27
-y 44
-end
-arch biglake_e
-x 27
-y 44
-end
-arch magic_banned
+arch grass
 x 27
 y 45
 end
-arch dungeon_magic
+arch river_sw-ne_u
 x 27
 y 45
 end
-arch grass_only
-x 27
-y 45
-end
-arch biglake_e
-x 27
-y 45
-end
-arch magic_banned
+arch grass
 x 27
 y 46
 end
-arch dungeon_magic
+arch river_sw-ne
 x 27
 y 46
 end
-arch grass_only
-x 27
-y 46
-end
-arch biglake_e
-x 27
-y 46
-end
-arch magic_banned
+arch grass
 x 27
 y 47
 end
-arch dungeon_magic
+arch river_sw-ne_l
 x 27
 y 47
 end
-arch grass_only
-x 27
-y 47
-end
-arch biglake_se
-x 27
-y 47
-end
-arch magic_banned
-x 27
-y 48
-end
-arch dungeon_magic
-x 27
-y 48
-end
-arch grass_only
+arch grass
 x 27
 y 48
 end
@@ -19081,447 +7144,135 @@ end
 arch flagstone_2_1_2
 x 28
 end
-arch dungeon_magic
-x 28
-y 1
-end
-arch magic_banned
-x 28
-y 1
-end
-arch cobblestones2
-x 28
-y 1
-end
 arch marble
 x 28
 y 1
 end
-arch dungeon_magic
-x 28
-y 2
-end
-arch magic_banned
+arch marble
 x 28
 y 2
 end
 arch marble
 x 28
-y 2
-end
-arch dungeon_magic
-x 28
-y 3
-end
-arch magic_banned
-x 28
 y 3
 end
 arch marble
-x 28
-y 3
-end
-arch dungeon_magic
-x 28
-y 4
-end
-arch magic_banned
 x 28
 y 4
 end
 arch marble
 x 28
-y 4
-end
-arch dungeon_magic
-x 28
-y 5
-end
-arch magic_banned
-x 28
-y 5
-end
-arch cobblestones2
-x 28
 y 5
 end
 arch marble
-x 28
-y 5
-end
-arch dungeon_magic
-x 28
-y 6
-end
-arch magic_banned
-x 28
-y 6
-end
-arch cobblestones2
 x 28
 y 6
 end
 arch marble
 x 28
-y 6
-end
-arch dungeon_magic
-x 28
-y 7
-end
-arch magic_banned
-x 28
-y 7
-end
-arch cobblestones2
-x 28
 y 7
 end
 arch marble
-x 28
-y 7
-end
-arch dungeon_magic
 x 28
 y 8
 end
-arch magic_banned
-x 28
-y 8
-end
-arch cobblestones2
-x 28
-y 8
-end
-arch dungeon_magic
+arch marble
 x 28
 y 9
 end
-arch magic_banned
-x 28
-y 9
-end
-arch cobblestones2
-x 28
-y 9
-end
-arch dungeon_magic
-x 28
-y 10
-end
-arch magic_banned
-x 28
-y 10
-end
-arch cobblestones2
-x 28
-y 10
-end
 arch marble
 x 28
 y 10
 end
-arch dungeon_magic
+arch marble
 x 28
 y 11
 end
-arch magic_banned
-x 28
-y 11
-end
-arch cobblestones2
-x 28
-y 11
-end
-arch dungeon_magic
+arch marble
 x 28
 y 12
 end
-arch magic_banned
-x 28
-y 12
-end
-arch cobblestones2
-x 28
-y 12
-end
-arch dungeon_magic
-x 28
-y 13
-end
-arch magic_banned
-x 28
-y 13
-end
-arch cobblestones2
-x 28
-y 13
-end
 arch marble
 x 28
 y 13
 end
-arch dungeon_magic
+arch marble
 x 28
 y 14
 end
-arch magic_banned
-x 28
-y 14
-end
-arch cobblestones2
-x 28
-y 14
-end
-arch dungeon_magic
+arch marble
 x 28
 y 15
 end
-arch magic_banned
-x 28
-y 15
-end
-arch cobblestones2
-x 28
-y 15
-end
-arch dungeon_magic
-x 28
-y 16
-end
-arch magic_banned
-x 28
-y 16
-end
-arch cobblestones2
-x 28
-y 16
-end
 arch marble
 x 28
 y 16
 end
-arch dungeon_magic
+arch marble
 x 28
 y 17
 end
-arch magic_banned
-x 28
-y 17
-end
-arch cobblestones2
-x 28
-y 17
-end
-arch dungeon_magic
+arch marble
 x 28
 y 18
 end
-arch magic_banned
-x 28
-y 18
-end
-arch cobblestones2
-x 28
-y 18
-end
-arch dungeon_magic
-x 28
-y 19
-end
-arch magic_banned
-x 28
-y 19
-end
-arch cobblestones2
-x 28
-y 19
-end
 arch marble
 x 28
 y 19
 end
-arch dungeon_magic
+arch marble
 x 28
 y 20
 end
-arch magic_banned
-x 28
-y 20
-end
-arch cobblestones2
-x 28
-y 20
-end
-arch dungeon_magic
+arch marble
 x 28
 y 21
 end
-arch magic_banned
-x 28
-y 21
-end
-arch cobblestones2
-x 28
-y 21
-end
-arch dungeon_magic
-x 28
-y 22
-end
-arch magic_banned
-x 28
-y 22
-end
-arch cobblestones2
-x 28
-y 22
-end
 arch marble
 x 28
 y 22
 end
-arch dungeon_magic
+arch marble
 x 28
 y 23
 end
-arch magic_banned
-x 28
-y 23
-end
-arch cobblestones2
-x 28
-y 23
-end
-arch dungeon_magic
+arch marble
 x 28
 y 24
-end
-arch magic_banned
-x 28
-y 24
-end
-arch cobblestones2
-x 28
-y 24
-end
-arch dungeon_magic
-x 28
-y 25
-end
-arch magic_banned
-x 28
-y 25
-end
-arch cobblestones2
-x 28
-y 25
 end
 arch marble
 x 28
 y 25
 end
-arch dungeon_magic
+arch marble
 x 28
 y 26
 end
-arch magic_banned
-x 28
-y 26
-end
-arch cobblestones2
-x 28
-y 26
-end
-arch dungeon_magic
+arch marble
 x 28
 y 27
-end
-arch magic_banned
-x 28
-y 27
-end
-arch cobblestones2
-x 28
-y 27
-end
-arch dungeon_magic
-x 28
-y 28
-end
-arch magic_banned
-x 28
-y 28
-end
-arch cobblestones2
-x 28
-y 28
 end
 arch marble
 x 28
 y 28
 end
-arch dungeon_magic
+arch marble
 x 28
 y 29
 end
-arch magic_banned
-x 28
-y 29
-end
-arch cobblestones2
-x 28
-y 29
-end
-arch dungeon_magic
+arch marble
 x 28
 y 30
-end
-arch magic_banned
-x 28
-y 30
-end
-arch cobblestones2
-x 28
-y 30
-end
-arch dungeon_magic
-x 28
-y 31
-end
-arch magic_banned
-x 28
-y 31
-end
-arch cobblestones2
-x 28
-y 31
 end
 arch marble
 x 28
 y 31
 end
-arch dungeon_magic
+arch marble
 x 28
 y 32
 end
-arch magic_banned
-x 28
-y 32
-end
-arch cobblestones2
-x 28
-y 32
-end
-arch dungeon_magic
-x 28
-y 33
-end
-arch magic_banned
-x 28
-y 33
-end
-arch cobblestones2
+arch marble
 x 28
 y 33
 end
@@ -19529,187 +7280,107 @@ arch flagstone_1_4
 x 28
 y 33
 end
-arch dungeon_magic
-x 28
-y 34
-end
-arch magic_banned
-x 28
-y 34
-end
 arch grass
 x 28
 y 34
 end
-arch dungeon_magic
-x 28
-y 35
-end
-arch magic_banned
+arch grass
 x 28
 y 35
 end
 arch grass
 x 28
-y 35
-end
-arch dungeon_magic
-x 28
 y 36
 end
-arch magic_banned
+arch river_nw-se_u
 x 28
 y 36
 end
 arch grass
 x 28
-y 36
-end
-arch dungeon_magic
-x 28
 y 37
 end
-arch magic_banned
+arch river_nw-s
 x 28
 y 37
 end
 arch grass
 x 28
-y 37
-end
-arch dungeon_magic
-x 28
 y 38
 end
-arch magic_banned
+arch river_n-s
 x 28
 y 38
 end
 arch grass
 x 28
-y 38
-end
-arch dungeon_magic
-x 28
 y 39
 end
-arch magic_banned
+arch river_n-s
 x 28
 y 39
 end
 arch grass
 x 28
-y 39
-end
-arch dungeon_magic
-x 28
 y 40
 end
-arch magic_banned
+arch river_n-s
 x 28
 y 40
 end
 arch grass
 x 28
-y 40
-end
-arch dungeon_magic
-x 28
 y 41
 end
-arch magic_banned
+arch rjunct_ns-e
 x 28
 y 41
 end
 arch grass
 x 28
-y 41
+y 42
 end
-arch biglake_center
-x 28
-y 41
-end
-arch magic_banned
+arch river_n-s
 x 28
 y 42
 end
-arch dungeon_magic
-x 28
-y 42
-end
-arch grass_only
-x 28
-y 42
-end
-arch magic_banned
+arch grass
 x 28
 y 43
 end
-arch dungeon_magic
+arch river_n-s
 x 28
 y 43
 end
-arch grass_only
-x 28
-y 43
-end
-arch magic_banned
+arch grass
 x 28
 y 44
 end
-arch dungeon_magic
+arch river_n-s
 x 28
 y 44
 end
-arch grass_only
-x 28
-y 44
-end
-arch magic_banned
+arch grass
 x 28
 y 45
 end
-arch dungeon_magic
+arch river_sw-n
 x 28
 y 45
 end
-arch grass_only
-x 28
-y 45
-end
-arch magic_banned
+arch grass
 x 28
 y 46
 end
-arch dungeon_magic
+arch river_sw-ne_l
 x 28
 y 46
 end
-arch grass_only
-x 28
-y 46
-end
-arch magic_banned
+arch grass
 x 28
 y 47
 end
-arch dungeon_magic
-x 28
-y 47
-end
-arch grass_only
-x 28
-y 47
-end
-arch magic_banned
-x 28
-y 48
-end
-arch dungeon_magic
-x 28
-y 48
-end
-arch grass_only
+arch grass
 x 28
 y 48
 end
@@ -20055,7 +7726,7 @@ arch cobblestones2
 x 29
 y 41
 end
-arch biglake_center
+arch river_w-e
 x 29
 y 41
 end

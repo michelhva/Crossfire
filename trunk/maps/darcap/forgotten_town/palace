@@ -7,7 +7,8 @@ Date:    7/19/2005
 endmsg
 width 30
 height 20
-enter_y 9
+enter_x 9
+enter_y 19
 end
 arch dungeon_magic
 end
@@ -110,22 +111,13 @@ end
 arch marble
 y 8
 end
-arch stwall_1_2
+arch stwall_2_1_1
 y 8
 end
-arch dungeon_magic
-y 9
-end
-arch magic_banned
-y 9
-end
 arch marble
 y 9
 end
-arch oakdoor
-slaying city
-hp 25
-sp 4
+arch stwall_2_1_1
 y 9
 end
 arch dungeon_magic
@@ -137,7 +129,7 @@ end
 arch marble
 y 10
 end
-arch stwall_1_1
+arch stwall_2_1_1
 y 10
 end
 arch dungeon_magic
@@ -260,262 +252,119 @@ end
 arch stwall_2_1_2
 x 1
 end
-arch dungeon_magic
-x 1
-y 1
-end
-arch magic_banned
-x 1
-y 1
-end
 arch marble
 x 1
 y 1
 end
-arch clock
+arch slevel_3_2
 x 1
 y 1
-end
-arch dungeon_magic
-x 1
-y 2
-end
-arch magic_banned
-x 1
-y 2
 end
 arch marble
 x 1
 y 2
 end
-arch dungeon_magic
+arch slevel_3_2
 x 1
-y 3
-end
-arch magic_banned
-x 1
-y 3
+y 2
 end
 arch marble
 x 1
 y 3
 end
-arch dungeon_magic
+arch slevel_3_2
 x 1
-y 4
-end
-arch magic_banned
-x 1
-y 4
+y 3
 end
 arch marble
 x 1
 y 4
 end
-arch dungeon_magic
+arch slevel_2_2_1
 x 1
-y 5
-end
-arch magic_banned
-x 1
-y 5
+y 4
 end
 arch marble
 x 1
 y 5
 end
-arch chair_3.2
+arch knight
 x 1
 y 5
-end
-arch fighter
-x 1
-y 5
-end
-arch dungeon_magic
-x 1
-y 6
-end
-arch magic_banned
-x 1
-y 6
 end
 arch marble
 x 1
 y 6
 end
-arch table_3
-type 0
-no_pick 1
-no_pass 1
+arch knight
 x 1
 y 6
-end
-arch dungeon_magic
-x 1
-y 7
-end
-arch magic_banned
-x 1
-y 7
 end
 arch marble
 x 1
 y 7
 end
-arch dungeon_magic
+arch knight
 x 1
-y 8
-end
-arch magic_banned
-x 1
-y 8
+y 7
 end
 arch marble
 x 1
 y 8
 end
-arch guard
+arch knight
 x 1
 y 8
-end
-arch dungeon_magic
-x 1
-y 9
-end
-arch magic_banned
-x 1
-y 9
 end
 arch marble
 x 1
 y 9
 end
-arch dungeon_magic
+arch knight
 x 1
-y 10
-end
-arch magic_banned
-x 1
-y 10
+y 9
 end
 arch marble
 x 1
 y 10
 end
-arch guard
+arch knight
 x 1
 y 10
-end
-arch dungeon_magic
-x 1
-y 11
-end
-arch magic_banned
-x 1
-y 11
 end
 arch marble
 x 1
 y 11
 end
-arch dungeon_magic
+arch knight
 x 1
-y 12
-end
-arch magic_banned
-x 1
-y 12
+y 11
 end
 arch marble
 x 1
 y 12
 end
-arch dungeon_magic
-x 1
-y 13
-end
-arch magic_banned
-x 1
-y 13
-end
 arch marble
 x 1
 y 13
 end
-arch dungeon_magic
-x 1
-y 14
-end
-arch magic_banned
+arch marble
 x 1
 y 14
 end
 arch marble
 x 1
-y 14
-end
-arch dungeon_magic
-x 1
-y 15
-end
-arch magic_banned
-x 1
 y 15
 end
 arch marble
-x 1
-y 15
-end
-arch dungeon_magic
-x 1
-y 16
-end
-arch magic_banned
 x 1
 y 16
 end
 arch marble
 x 1
-y 16
-end
-arch dungeon_magic
-x 1
-y 17
-end
-arch magic_banned
-x 1
 y 17
 end
 arch marble
-x 1
-y 17
-end
-arch longtable_2_2_2
-x 1
-y 17
-end
-arch random_food
-x 1
-y 17
-end
-arch dungeon_magic
-x 1
-y 18
-end
-arch magic_banned
-x 1
-y 18
-end
-arch marble
-x 1
-y 18
-end
-arch longtable_1_2
-x 1
-y 18
-end
-arch random_food
 x 1
 y 18
 end
@@ -547,1155 +396,935 @@ end
 arch stwall_2_1_2
 x 2
 end
-arch dungeon_magic
-x 2
-y 1
-end
-arch magic_banned
-x 2
-y 1
-end
 arch marble
 x 2
 y 1
 end
-arch dungeon_magic
+arch knight
 x 2
-y 2
+y 1
 end
-arch magic_banned
+arch marble
 x 2
 y 2
 end
 arch marble
 x 2
+y 3
+end
+arch knight
+x 2
+y 3
+end
+arch marble
+x 2
+y 4
+end
+arch slevel_3_1
+x 2
+y 4
+end
+arch marble
+x 2
+y 5
+end
+arch knight
+x 2
+y 5
+end
+arch marble
+x 2
+y 6
+end
+arch knight
+x 2
+y 6
+end
+arch marble
+x 2
+y 7
+end
+arch knight
+x 2
+y 7
+end
+arch marble
+x 2
+y 8
+end
+arch knight
+x 2
+y 8
+end
+arch marble
+x 2
+y 9
+end
+arch knight
+x 2
+y 9
+end
+arch marble
+x 2
+y 10
+end
+arch knight
+x 2
+y 10
+end
+arch marble
+x 2
+y 11
+end
+arch marble
+x 2
+y 12
+end
+arch marble
+x 2
+y 13
+end
+arch marble
+x 2
+y 14
+end
+arch marble
+x 2
+y 15
+end
+arch marble
+x 2
+y 16
+end
+arch marble
+x 2
+y 17
+end
+arch marble
+x 2
+y 18
+end
+arch dungeon_magic
+x 2
+y 19
+end
+arch magic_banned
+x 2
+y 19
+end
+arch marble
+x 2
+y 19
+end
+arch stwall_2_1_2
+x 2
+y 19
+end
+arch dungeon_magic
+x 3
+end
+arch magic_banned
+x 3
+end
+arch marble
+x 3
+end
+arch stwall_2_1_2
+x 3
+end
+arch marble
+x 3
+y 1
+end
+arch slevel_3_2
+x 3
+y 1
+end
+arch marble
+x 3
 y 2
 end
-arch dungeon_magic
-x 2
+arch slevel_3_2
+x 3
+y 2
+end
+arch marble
+x 3
 y 3
 end
-arch magic_banned
-x 2
+arch slevel_2_2_1
+x 3
 y 3
 end
 arch marble
-x 2
+x 3
+y 4
+end
+arch slevel_3_1
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch knight
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch knight
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
+end
+arch knight
+x 3
+y 7
+end
+arch marble
+x 3
+y 8
+end
+arch knight
+x 3
+y 8
+end
+arch marble
+x 3
+y 9
+end
+arch knight
+x 3
+y 9
+end
+arch marble
+x 3
+y 10
+end
+arch marble
+x 3
+y 11
+end
+arch marble
+x 3
+y 12
+end
+arch marble
+x 3
+y 13
+end
+arch marble
+x 3
+y 14
+end
+arch marble
+x 3
+y 15
+end
+arch marble
+x 3
+y 16
+end
+arch marble
+x 3
+y 17
+end
+arch marble
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
+y 19
+end
+arch magic_banned
+x 3
+y 19
+end
+arch marble
+x 3
+y 19
+end
+arch stwall_2_1_2
+x 3
+y 19
+end
+arch dungeon_magic
+x 4
+end
+arch magic_banned
+x 4
+end
+arch marble
+x 4
+end
+arch stwall_2_1_2
+x 4
+end
+arch marble
+x 4
+y 1
+end
+arch knight
+x 4
+y 1
+end
+arch marble
+x 4
+y 2
+end
+arch marble
+x 4
 y 3
 end
-arch dungeon_magic
-x 2
+arch slevel_3_1
+x 4
+y 3
+end
+arch marble
+x 4
 y 4
 end
-arch magic_banned
-x 2
+arch slevel_3_1
+x 4
 y 4
 end
 arch marble
-x 2
-y 4
-end
-arch dungeon_magic
-x 2
+x 4
 y 5
 end
-arch magic_banned
-x 2
+arch knight
+x 4
 y 5
 end
 arch marble
-x 2
+x 4
+y 6
+end
+arch knight
+x 4
+y 6
+end
+arch marble
+x 4
+y 7
+end
+arch knight
+x 4
+y 7
+end
+arch marble
+x 4
+y 8
+end
+arch knight
+x 4
+y 8
+end
+arch marble
+x 4
+y 9
+end
+arch marble
+x 4
+y 10
+end
+arch marble
+x 4
+y 11
+end
+arch marble
+x 4
+y 12
+end
+arch marble
+x 4
+y 13
+end
+arch marble
+x 4
+y 14
+end
+arch marble
+x 4
+y 15
+end
+arch marble
+x 4
+y 16
+end
+arch marble
+x 4
+y 17
+end
+arch marble
+x 4
+y 18
+end
+arch dungeon_magic
+x 4
+y 19
+end
+arch magic_banned
+x 4
+y 19
+end
+arch marble
+x 4
+y 19
+end
+arch stwall_2_1_2
+x 4
+y 19
+end
+arch dungeon_magic
+x 5
+end
+arch magic_banned
+x 5
+end
+arch marble
+x 5
+end
+arch stwall_2_1_2
+x 5
+end
+arch marble
+x 5
+y 1
+end
+arch slevel_3_2
+x 5
+y 1
+end
+arch marble
+x 5
+y 2
+end
+arch slevel_2_2_1
+x 5
+y 2
+end
+arch marble
+x 5
+y 3
+end
+arch slevel_3_1
+x 5
+y 3
+end
+arch marble
+x 5
+y 4
+end
+arch slevel_3_1
+x 5
+y 4
+end
+arch marble
+x 5
 y 5
 end
-arch chair_3.2
-x 2
+arch knight
+x 5
 y 5
 end
-arch guildmaster
-name wizard
+arch marble
+x 5
+y 6
+end
+arch knight
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
+end
+arch knight
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch marble
+x 5
+y 9
+end
+arch marble
+x 5
+y 10
+end
+arch marble
+x 5
+y 11
+end
+arch marble
+x 5
+y 12
+end
+arch marble
+x 5
+y 13
+end
+arch marble
+x 5
+y 14
+end
+arch marble
+x 5
+y 15
+end
+arch marble
+x 5
+y 16
+end
+arch marble
+x 5
+y 17
+end
+arch marble
+x 5
+y 18
+end
+arch dungeon_magic
+x 5
+y 19
+end
+arch magic_banned
+x 5
+y 19
+end
+arch marble
+x 5
+y 19
+end
+arch stwall_2_1_2
+x 5
+y 19
+end
+arch dungeon_magic
+x 6
+end
+arch magic_banned
+x 6
+end
+arch marble
+x 6
+end
+arch stwall_2_1_2
+x 6
+end
+arch marble
+x 6
+y 1
+end
+arch knight
+name Guard of the ancient mages
 face wizard.151
+level 100
+speed 1.0
+attacktype 8388607
+wc 20
+hp 25000
+maxhp 25000
+ac -20
+Con 1500
+hitback 1
+sp 2500
+maxsp 2500
+Pow 1000
+path_attuned 924025
+can_see_in_dark 1
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_ring 1
+can_use_wand 1
+can_use_rod 1
+can_use_scroll 1
+can_use_skill 1
+resist_physical 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+animation NONE
+x 6
+y 1
+arch random_scroll
 hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 2
-y 5
 end
-arch dungeon_magic
-x 2
-y 6
-end
-arch magic_banned
-x 2
-y 6
-end
-arch marble
-x 2
-y 6
-end
-arch table_3
-type 0
-no_pick 1
-no_pass 1
-x 2
-y 6
-end
-arch dungeon_magic
-x 2
-y 7
-end
-arch magic_banned
-x 2
-y 7
-end
-arch marble
-x 2
-y 7
-end
-arch dungeon_magic
-x 2
-y 8
-end
-arch magic_banned
-x 2
-y 8
-end
-arch marble
-x 2
-y 8
-end
-arch dungeon_magic
-x 2
-y 9
-end
-arch magic_banned
-x 2
-y 9
-end
-arch marble
-x 2
-y 9
-end
-arch dungeon_magic
-x 2
-y 10
-end
-arch magic_banned
-x 2
-y 10
-end
-arch marble
-x 2
-y 10
-end
-arch dungeon_magic
-x 2
-y 11
-end
-arch magic_banned
-x 2
-y 11
-end
-arch marble
-x 2
-y 11
-end
-arch dungeon_magic
-x 2
-y 12
-end
-arch magic_banned
-x 2
-y 12
-end
-arch marble
-x 2
-y 12
-end
-arch dungeon_magic
-x 2
-y 13
-end
-arch magic_banned
-x 2
-y 13
-end
-arch marble
-x 2
-y 13
-end
-arch dungeon_magic
-x 2
-y 14
-end
-arch magic_banned
-x 2
-y 14
-end
-arch marble
-x 2
-y 14
-end
-arch dungeon_magic
-x 2
-y 15
-end
-arch magic_banned
-x 2
-y 15
-end
-arch marble
-x 2
-y 15
-end
-arch dungeon_magic
-x 2
-y 16
-end
-arch magic_banned
-x 2
-y 16
-end
-arch marble
-x 2
-y 16
-end
-arch dungeon_magic
-x 2
-y 17
-end
-arch magic_banned
-x 2
-y 17
-end
-arch marble
-x 2
-y 17
-end
-arch longtable_2_1_2
-x 2
-y 17
-end
-arch random_food
-x 2
-y 17
-end
-arch dungeon_magic
-x 2
-y 18
-end
-arch magic_banned
-x 2
-y 18
-end
-arch marble
-x 2
-y 18
-end
-arch dungeon_magic
-x 2
-y 19
-end
-arch magic_banned
-x 2
-y 19
-end
-arch marble
-x 2
-y 19
-end
-arch stwall_2_1_2
-x 2
-y 19
-end
-arch dungeon_magic
-x 3
-end
-arch magic_banned
-x 3
-end
-arch marble
-x 3
-end
-arch stwall_2_1_2
-x 3
-end
-arch dungeon_magic
-x 3
-y 1
-end
-arch magic_banned
-x 3
-y 1
-end
-arch marble
-x 3
-y 1
-end
-arch knight
-x 3
-y 1
-end
-arch dungeon_magic
-x 3
-y 2
-end
-arch magic_banned
-x 3
-y 2
-end
-arch marble
-x 3
-y 2
-end
-arch knight
-x 3
-y 2
-end
-arch dungeon_magic
-x 3
-y 3
-end
-arch magic_banned
-x 3
-y 3
-end
-arch marble
-x 3
-y 3
-end
-arch knight
-x 3
-y 3
-end
-arch dungeon_magic
-x 3
-y 4
-end
-arch magic_banned
-x 3
-y 4
-end
-arch marble
-x 3
-y 4
-end
-arch table_4
-type 0
-no_pick 1
-no_pass 1
-x 3
-y 4
-end
-arch dungeon_magic
-x 3
-y 5
-end
-arch magic_banned
-x 3
-y 5
-end
-arch marble
-x 3
-y 5
-end
-arch table_4
-type 0
-no_pick 1
-no_pass 1
-x 3
-y 5
-end
-arch dungeon_magic
-x 3
-y 6
-end
-arch magic_banned
-x 3
-y 6
-end
-arch marble
-x 3
-y 6
-end
-arch table_3
-type 0
-no_pick 1
-no_pass 1
-x 3
-y 6
-end
-arch dungeon_magic
-x 3
-y 7
-end
-arch magic_banned
-x 3
-y 7
-end
-arch marble
-x 3
-y 7
-end
-arch dungeon_magic
-x 3
-y 8
-end
-arch magic_banned
-x 3
-y 8
-end
-arch marble
-x 3
-y 8
-end
-arch charwoman
-x 3
-y 8
-end
-arch dungeon_magic
-x 3
-y 9
-end
-arch magic_banned
-x 3
-y 9
-end
-arch marble
-x 3
-y 9
-end
-arch dungeon_magic
-x 3
-y 10
-end
-arch magic_banned
-x 3
-y 10
-end
-arch marble
-x 3
-y 10
-end
-arch dungeon_magic
-x 3
-y 11
-end
-arch magic_banned
-x 3
-y 11
-end
-arch marble
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 12
-end
-arch magic_banned
-x 3
-y 12
-end
-arch marble
-x 3
-y 12
-end
-arch dungeon_magic
-x 3
-y 13
-end
-arch magic_banned
-x 3
-y 13
-end
-arch marble
-x 3
-y 13
-end
-arch dungeon_magic
-x 3
-y 14
-end
-arch magic_banned
-x 3
-y 14
-end
-arch marble
-x 3
-y 14
-end
-arch dungeon_magic
-x 3
-y 15
-end
-arch magic_banned
-x 3
-y 15
-end
-arch marble
-x 3
-y 15
-end
-arch dungeon_magic
-x 3
-y 16
-end
-arch magic_banned
-x 3
-y 16
-end
-arch marble
-x 3
-y 16
-end
-arch dungeon_magic
-x 3
-y 17
-end
-arch magic_banned
-x 3
-y 17
-end
-arch marble
-x 3
-y 17
-end
-arch longtable_2_1_2
-x 3
-y 17
-end
-arch random_food
-x 3
-y 17
-end
-arch dungeon_magic
-x 3
-y 18
-end
-arch magic_banned
-x 3
-y 18
-end
-arch marble
-x 3
-y 18
-end
-arch dungeon_magic
-x 3
-y 19
-end
-arch magic_banned
-x 3
-y 19
-end
-arch marble
-x 3
-y 19
-end
-arch stwall_2_1_2
-x 3
-y 19
-end
-arch dungeon_magic
-x 4
-end
-arch magic_banned
-x 4
-end
-arch marble
-x 4
-end
-arch stwall_2_1_2
-x 4
-end
-arch dungeon_magic
-x 4
-y 1
-end
-arch magic_banned
-x 4
-y 1
-end
-arch marble
-x 4
-y 1
-end
-arch knight
-x 4
-y 1
-end
-arch dungeon_magic
-x 4
-y 2
-end
-arch magic_banned
-x 4
-y 2
-end
-arch marble
-x 4
-y 2
-end
-arch knight
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 3
-end
-arch magic_banned
-x 4
-y 3
-end
-arch marble
-x 4
-y 3
-end
-arch knight
-x 4
-y 3
-end
-arch dungeon_magic
-x 4
-y 4
-end
-arch magic_banned
-x 4
-y 4
-end
-arch marble
-x 4
-y 4
-end
-arch dungeon_magic
-x 4
-y 5
-end
-arch magic_banned
-x 4
-y 5
-end
-arch marble
-x 4
-y 5
-end
-arch dungeon_magic
-x 4
-y 6
-end
-arch magic_banned
-x 4
-y 6
-end
-arch marble
-x 4
-y 6
-end
-arch dungeon_magic
-x 4
-y 7
-end
-arch magic_banned
-x 4
-y 7
-end
-arch marble
-x 4
-y 7
-end
-arch dungeon_magic
-x 4
-y 8
-end
-arch magic_banned
-x 4
-y 8
-end
-arch marble
-x 4
-y 8
-end
-arch dungeon_magic
-x 4
-y 9
-end
-arch magic_banned
-x 4
-y 9
-end
-arch marble
-x 4
-y 9
-end
-arch dungeon_magic
-x 4
-y 10
-end
-arch magic_banned
-x 4
-y 10
-end
-arch marble
-x 4
-y 10
-end
-arch dungeon_magic
-x 4
-y 11
-end
-arch magic_banned
-x 4
-y 11
-end
-arch marble
-x 4
-y 11
-end
-arch dungeon_magic
-x 4
-y 12
-end
-arch magic_banned
-x 4
-y 12
-end
-arch marble
-x 4
-y 12
-end
-arch chair_2.4
-x 4
-y 12
-end
-arch dungeon_magic
-x 4
-y 13
-end
-arch magic_banned
-x 4
-y 13
-end
-arch marble
-x 4
-y 13
-end
-arch dungeon_magic
-x 4
-y 14
-end
-arch magic_banned
-x 4
-y 14
-end
-arch marble
-x 4
-y 14
-end
-arch dungeon_magic
-x 4
-y 15
-end
-arch magic_banned
-x 4
-y 15
-end
-arch marble
-x 4
-y 15
-end
-arch dungeon_magic
-x 4
-y 16
-end
-arch magic_banned
-x 4
-y 16
-end
-arch marble
-x 4
-y 16
-end
-arch dungeon_magic
-x 4
-y 17
-end
-arch magic_banned
-x 4
-y 17
-end
-arch marble
-x 4
-y 17
-end
-arch longtable_2_1_2
-x 4
-y 17
-end
-arch random_food
-x 4
-y 17
-end
-arch dungeon_magic
-x 4
-y 18
-end
-arch magic_banned
-x 4
-y 18
-end
-arch marble
-x 4
-y 18
-end
-arch dungeon_magic
-x 4
-y 19
-end
-arch magic_banned
-x 4
-y 19
-end
-arch marble
-x 4
-y 19
-end
-arch stwall_2_1_2
-x 4
-y 19
-end
-arch dungeon_magic
-x 5
-end
-arch magic_banned
-x 5
-end
-arch marble
-x 5
-end
-arch stwall_2_1_2
-x 5
-end
-arch dungeon_magic
-x 5
-y 1
-end
-arch magic_banned
-x 5
-y 1
-end
-arch marble
-x 5
-y 1
-end
-arch knight
-x 5
-y 1
-end
-arch dungeon_magic
-x 5
-y 2
-end
-arch magic_banned
-x 5
-y 2
-end
-arch marble
-x 5
-y 2
-end
-arch knight
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 3
-end
-arch magic_banned
-x 5
-y 3
-end
-arch marble
-x 5
-y 3
-end
-arch knight
-x 5
-y 3
-end
-arch dungeon_magic
-x 5
-y 4
-end
-arch magic_banned
-x 5
-y 4
-end
-arch marble
-x 5
-y 4
-end
-arch dungeon_magic
-x 5
-y 5
-end
-arch magic_banned
-x 5
-y 5
-end
-arch marble
-x 5
-y 5
-end
-arch dungeon_magic
-x 5
-y 6
-end
-arch magic_banned
-x 5
-y 6
-end
-arch marble
-x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 7
-end
-arch magic_banned
-x 5
-y 7
-end
-arch marble
-x 5
-y 7
-end
-arch chair_2.4
-x 5
-y 7
-end
-arch dungeon_magic
-x 5
-y 8
-end
-arch magic_banned
-x 5
-y 8
-end
-arch marble
-x 5
-y 8
-end
-arch dungeon_magic
-x 5
-y 9
-end
-arch magic_banned
-x 5
-y 9
-end
-arch marble
-x 5
-y 9
-end
-arch dungeon_magic
-x 5
-y 10
-end
-arch magic_banned
-x 5
-y 10
-end
-arch marble
-x 5
-y 10
-end
-arch dungeon_magic
-x 5
-y 11
-end
-arch magic_banned
-x 5
-y 11
-end
-arch marble
-x 5
-y 11
-end
-arch chair_2.1
-x 5
-y 11
-end
-arch guildmaster
-name summoner
-face wizard_yellow.151
+arch random_scroll
 hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 5
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch ability_dragonbreath
+end
+arch abil_ball_lightning
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+arch abil_create_fire_wall
+end
+arch abil_frostbolt
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_medium_fireball
+end
+arch abil_poison_cloud
+end
+arch abil_slow
+end
+end
+arch marble
+x 6
+y 2
+end
+arch slevel_3_1
+x 6
+y 2
+end
+arch marble
+x 6
+y 3
+end
+arch slevel_3_1
+x 6
+y 3
+end
+arch marble
+x 6
+y 4
+end
+arch slevel_3_1
+x 6
+y 4
+end
+arch marble
+x 6
+y 5
+end
+arch knight
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch knight
+x 6
+y 6
+end
+arch marble
+x 6
+y 7
+end
+arch marble
+x 6
+y 8
+end
+arch marble
+x 6
+y 9
+end
+arch marble
+x 6
+y 10
+end
+arch marble
+x 6
 y 11
 end
-arch dungeon_magic
-x 5
-y 12
+arch knight
+x 6
+y 11
 end
-arch magic_banned
-x 5
+arch marble
+x 6
 y 12
 end
 arch marble
-x 5
-y 12
-end
-arch table_3
-x 5
-y 12
-end
-arch dungeon_magic
-x 5
-y 13
-end
-arch magic_banned
-x 5
+x 6
 y 13
 end
 arch marble
-x 5
-y 13
-end
-arch chair_2.3
-x 5
-y 13
-end
-arch dungeon_magic
-x 5
-y 14
-end
-arch magic_banned
-x 5
+x 6
 y 14
 end
 arch marble
-x 5
-y 14
-end
-arch dungeon_magic
-x 5
-y 15
-end
-arch magic_banned
-x 5
+x 6
 y 15
 end
 arch marble
-x 5
-y 15
-end
-arch charwoman
-x 5
-y 15
-end
-arch dungeon_magic
-x 5
-y 16
-end
-arch magic_banned
-x 5
+x 6
 y 16
 end
 arch marble
-x 5
-y 16
-end
-arch dungeon_magic
-x 5
-y 17
-end
-arch magic_banned
-x 5
+x 6
 y 17
 end
 arch marble
-x 5
-y 17
-end
-arch longtable_2_1_2
-x 5
-y 17
-end
-arch random_food
-x 5
-y 17
-end
-arch dungeon_magic
-x 5
-y 18
-end
-arch magic_banned
-x 5
-y 18
-end
-arch marble
-x 5
+x 6
 y 18
 end
 arch dungeon_magic
-x 5
+x 6
 y 19
 end
 arch magic_banned
-x 5
+x 6
 y 19
 end
 arch marble
-x 5
+x 6
 y 19
 end
 arch stwall_2_1_2
-x 5
+x 6
 y 19
 end
 arch dungeon_magic
-x 6
+x 7
 end
 arch magic_banned
-x 6
+x 7
 end
 arch marble
-x 6
+x 7
 end
 arch stwall_2_1_2
-x 6
+x 7
 end
-arch dungeon_magic
-x 6
-y 1
-end
-arch magic_banned
-x 6
+arch marble
+x 7
 y 1
 end
 arch marble
-x 6
+x 7
+y 2
+end
+arch slevel_3_1
+x 7
+y 2
+end
+arch marble
+x 7
+y 3
+end
+arch slevel_3_1
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch slevel_3_1
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch knight
+x 7
+y 5
+end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch marble
+x 7
+y 10
+end
+arch knight
+x 7
+y 10
+end
+arch marble
+x 7
+y 11
+end
+arch knight
+x 7
+y 11
+end
+arch marble
+x 7
+y 12
+end
+arch marble
+x 7
+y 13
+end
+arch marble
+x 7
+y 14
+end
+arch marble
+x 7
+y 15
+end
+arch marble
+x 7
+y 16
+end
+arch marble
+x 7
+y 17
+end
+arch marble
+x 7
+y 18
+end
+arch dungeon_magic
+x 7
+y 19
+end
+arch magic_banned
+x 7
+y 19
+end
+arch marble
+x 7
+y 19
+end
+arch stwall_2_1_2
+x 7
+y 19
+end
+arch dungeon_magic
+x 8
+end
+arch magic_banned
+x 8
+end
+arch marble
+x 8
+end
+arch stwall_2_1_2
+x 8
+end
+arch marble
+x 8
 y 1
 end
-arch stol_king_1
-x 6
+arch stol_king_2
+x 8
 y 1
 end
 arch guildmaster
 name King
 msg
+@match jerry|jipsy
+Hey do you know my monsters? Have you 
+been in the city when they did break out?
+@match maveric|founder
+Maveric was the founder and first king of 
+our great town. He is now buried in a 
+catacomb below this palace.
+@match forgotten town
+Forgotten Town... That is the terrible name
+some people gave our city because for a 
+long time no travellers came here. They just 
+didn't pass the test and died.
+@match quest
+I know lots about quests. But i wont tell
+you what i know. The only hint I'll give is: in 
+the southern part of my city you can find a 
+large quest.
 @match *
-Hello Adventurer! If you want to do the
-quest you must go to my basement and 
-kill my monsters Jerry and Jipsy to show 
-that you are worthy!
+Did you notice the large number of guards? 
+They do protect me, so do not even cosider 
+to attack me. They surely will kill you.
 endmsg
+reflect_missile 1
+can_cast_spell 0
 friendly 1
 stand_still 1
 resist_physical 100
@@ -1719,1342 +1348,390 @@ resist_chaos 100
 resist_blind 100
 resist_holyword 100
 resist_godpower 100
-x 6
+x 8
 y 1
 end
-arch dungeon_magic
-x 6
+arch marble
+x 8
 y 2
 end
-arch magic_banned
-x 6
+arch slevel_3_1
+x 8
 y 2
 end
 arch marble
-x 6
-y 2
-end
-arch table_3
-x 6
-y 2
-end
-arch dungeon_magic
-x 6
+x 8
 y 3
 end
-arch magic_banned
-x 6
+arch slevel_3_1
+x 8
 y 3
 end
 arch marble
-x 6
-y 3
-end
-arch dungeon_magic
-x 6
+x 8
 y 4
 end
-arch magic_banned
-x 6
+arch slevel_3_1
+x 8
 y 4
 end
 arch marble
-x 6
-y 4
-end
-arch dungeon_magic
-x 6
+x 8
 y 5
 end
-arch magic_banned
-x 6
+arch magic_mouth
+msg
+One of the knights whispers to you:
+Never attack the Guards of the 
+ancient mages. You wont live long...
+endmsg
+x 8
 y 5
 end
 arch marble
-x 6
-y 5
-end
-arch dungeon_magic
-x 6
-y 6
-end
-arch magic_banned
-x 6
+x 8
 y 6
 end
 arch marble
-x 6
-y 6
-end
-arch chair_2.1
-x 6
-y 6
-end
-arch a_townsman3
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch magic_banned
-x 6
+x 8
 y 7
 end
 arch marble
-x 6
-y 7
-end
-arch table_3
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 8
-end
-arch magic_banned
-x 6
+x 8
 y 8
 end
 arch marble
-x 6
-y 8
-end
-arch chair_2.3
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
+x 8
 y 9
 end
-arch magic_banned
-x 6
+arch knight
+x 8
 y 9
 end
 arch marble
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
+x 8
 y 10
 end
-arch magic_banned
-x 6
+arch knight
+x 8
 y 10
 end
 arch marble
-x 6
-y 10
-end
-arch dungeon_magic
-x 6
+x 8
 y 11
 end
-arch magic_banned
-x 6
+arch knight
+x 8
 y 11
 end
 arch marble
-x 6
-y 11
-end
-arch chair_2.1
-x 6
-y 11
-end
-arch guildmaster
-name wizard
-face wizard.151
-hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch magic_banned
-x 6
+x 8
 y 12
 end
 arch marble
-x 6
-y 12
-end
-arch table_3
-x 6
-y 12
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch magic_banned
-x 6
+x 8
 y 13
 end
 arch marble
-x 6
-y 13
-end
-arch chair_2.3
-x 6
-y 13
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch magic_banned
-x 6
+x 8
 y 14
 end
 arch marble
-x 6
-y 14
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch magic_banned
-x 6
+x 8
 y 15
 end
 arch marble
-x 6
-y 15
-end
-arch dungeon_magic
-x 6
-y 16
-end
-arch magic_banned
-x 6
+x 8
 y 16
 end
 arch marble
-x 6
-y 16
-end
-arch dungeon_magic
-x 6
-y 17
-end
-arch magic_banned
-x 6
+x 8
 y 17
 end
 arch marble
-x 6
-y 17
-end
-arch longtable_2_1_2
-x 6
-y 17
-end
-arch random_food
-x 6
-y 17
-end
-arch random_food
-x 6
-y 17
-end
-arch dungeon_magic
-x 6
-y 18
-end
-arch magic_banned
-x 6
-y 18
-end
-arch marble
-x 6
+x 8
 y 18
 end
 arch dungeon_magic
-x 6
+x 8
 y 19
 end
 arch magic_banned
-x 6
+x 8
 y 19
 end
 arch marble
-x 6
+x 8
 y 19
+end
+arch stwall_1_3
+x 8
+y 19
+end
+arch dungeon_magic
+x 9
+end
+arch magic_banned
+x 9
+end
+arch marble
+x 9
 end
 arch stwall_2_1_2
-x 6
-y 19
-end
-arch dungeon_magic
-x 7
-end
-arch magic_banned
-x 7
+x 9
 end
 arch marble
-x 7
-end
-arch stwall_2_1_2
-x 7
-end
-arch dungeon_magic
-x 7
-y 1
-end
-arch magic_banned
-x 7
-y 1
-end
-arch marble
-x 7
+x 9
 y 1
 end
 arch stol_king_2
-x 7
+x 9
 y 1
 end
 arch princess
-x 7
+reflect_missile 1
+can_cast_spell 0
+friendly 1
+stand_still 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+x 9
 y 1
 end
-arch dungeon_magic
-x 7
+arch marble
+x 9
 y 2
 end
-arch magic_banned
-x 7
+arch slevel_3_1
+x 9
 y 2
 end
 arch marble
-x 7
-y 2
-end
-arch table_3
-x 7
-y 2
-end
-arch dungeon_magic
-x 7
+x 9
 y 3
 end
-arch magic_banned
-x 7
+arch slevel_3_1
+x 9
 y 3
 end
 arch marble
-x 7
-y 3
-end
-arch dungeon_magic
-x 7
+x 9
 y 4
 end
-arch magic_banned
-x 7
-y 4
-end
-arch marble
-x 7
-y 4
-end
-arch dungeon_magic
-x 7
-y 5
-end
-arch magic_banned
-x 7
-y 5
-end
-arch marble
-x 7
-y 5
-end
-arch dungeon_magic
-x 7
-y 6
-end
-arch magic_banned
-x 7
-y 6
-end
-arch marble
-x 7
-y 6
-end
-arch chair_2.1
-x 7
-y 6
-end
-arch dungeon_magic
-x 7
-y 7
-end
-arch magic_banned
-x 7
-y 7
-end
-arch marble
-x 7
-y 7
-end
-arch table_3
-x 7
-y 7
-end
-arch dungeon_magic
-x 7
-y 8
-end
-arch magic_banned
-x 7
-y 8
-end
-arch marble
-x 7
-y 8
-end
-arch chair_2.3
-x 7
-y 8
-end
-arch dungeon_magic
-x 7
-y 9
-end
-arch magic_banned
-x 7
-y 9
-end
-arch marble
-x 7
-y 9
-end
-arch dungeon_magic
-x 7
-y 10
-end
-arch magic_banned
-x 7
-y 10
-end
-arch marble
-x 7
-y 10
-end
-arch dungeon_magic
-x 7
-y 11
-end
-arch magic_banned
-x 7
-y 11
-end
-arch marble
-x 7
-y 11
-end
-arch dungeon_magic
-x 7
-y 12
-end
-arch magic_banned
-x 7
-y 12
-end
-arch marble
-x 7
-y 12
-end
-arch chair_2.2
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch magic_banned
-x 7
-y 13
-end
-arch marble
-x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 14
-end
-arch magic_banned
-x 7
-y 14
-end
-arch marble
-x 7
-y 14
-end
-arch dungeon_magic
-x 7
-y 15
-end
-arch magic_banned
-x 7
-y 15
-end
-arch marble
-x 7
-y 15
-end
-arch dungeon_magic
-x 7
-y 16
-end
-arch magic_banned
-x 7
-y 16
-end
-arch marble
-x 7
-y 16
-end
-arch dungeon_magic
-x 7
-y 17
-end
-arch magic_banned
-x 7
-y 17
-end
-arch marble
-x 7
-y 17
-end
-arch longtable_2_1_2
-x 7
-y 17
-end
-arch random_food
-x 7
-y 17
-end
-arch dungeon_magic
-x 7
-y 18
-end
-arch magic_banned
-x 7
-y 18
-end
-arch marble
-x 7
-y 18
-end
-arch dungeon_magic
-x 7
-y 19
-end
-arch magic_banned
-x 7
-y 19
-end
-arch marble
-x 7
-y 19
-end
-arch stwall_2_1_2
-x 7
-y 19
-end
-arch dungeon_magic
-x 8
-end
-arch magic_banned
-x 8
-end
-arch marble
-x 8
-end
-arch stwall_2_1_2
-x 8
-end
-arch dungeon_magic
-x 8
-y 1
-end
-arch magic_banned
-x 8
-y 1
-end
-arch marble
-x 8
-y 1
-end
-arch knight
-x 8
-y 1
-end
-arch dungeon_magic
-x 8
-y 2
-end
-arch magic_banned
-x 8
-y 2
-end
-arch marble
-x 8
-y 2
-end
-arch knight
-x 8
-y 2
-end
-arch dungeon_magic
-x 8
-y 3
-end
-arch magic_banned
-x 8
-y 3
-end
-arch marble
-x 8
-y 3
-end
-arch knight
-x 8
-y 3
-end
-arch dungeon_magic
-x 8
-y 4
-end
-arch magic_banned
-x 8
+arch slevel_3_1
+x 9
 y 4
 end
 arch marble
-x 8
-y 4
-end
-arch dungeon_magic
-x 8
+x 9
 y 5
 end
-arch magic_banned
-x 8
+arch magic_mouth
+msg
+One of the knights whispers to you:
+Never attack the Guards of the 
+ancient mages. You wont live long...
+endmsg
+x 9
 y 5
 end
 arch marble
-x 8
-y 5
-end
-arch dungeon_magic
-x 8
-y 6
-end
-arch magic_banned
-x 8
+x 9
 y 6
 end
 arch marble
-x 8
-y 6
-end
-arch dungeon_magic
-x 8
-y 7
-end
-arch magic_banned
-x 8
+x 9
 y 7
 end
 arch marble
-x 8
-y 7
-end
-arch chair_2.2
-x 8
-y 7
-end
-arch dungeon_magic
-x 8
-y 8
-end
-arch magic_banned
-x 8
+x 9
 y 8
 end
 arch marble
-x 8
-y 8
-end
-arch dungeon_magic
-x 8
+x 9
 y 9
-end
-arch magic_banned
-x 8
-y 9
-end
-arch marble
-x 8
-y 9
-end
-arch dungeon_magic
-x 8
-y 10
-end
-arch magic_banned
-x 8
-y 10
-end
-arch marble
-x 8
-y 10
-end
-arch dungeon_magic
-x 8
-y 11
-end
-arch magic_banned
-x 8
-y 11
-end
-arch marble
-x 8
-y 11
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch magic_banned
-x 8
-y 12
-end
-arch marble
-x 8
-y 12
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch magic_banned
-x 8
-y 13
-end
-arch marble
-x 8
-y 13
-end
-arch dungeon_magic
-x 8
-y 14
-end
-arch magic_banned
-x 8
-y 14
-end
-arch marble
-x 8
-y 14
-end
-arch dungeon_magic
-x 8
-y 15
-end
-arch magic_banned
-x 8
-y 15
-end
-arch marble
-x 8
-y 15
-end
-arch dungeon_magic
-x 8
-y 16
-end
-arch magic_banned
-x 8
-y 16
-end
-arch marble
-x 8
-y 16
-end
-arch dungeon_magic
-x 8
-y 17
-end
-arch magic_banned
-x 8
-y 17
-end
-arch marble
-x 8
-y 17
-end
-arch longtable_2_1_2
-x 8
-y 17
-end
-arch random_food
-x 8
-y 17
-end
-arch dungeon_magic
-x 8
-y 18
-end
-arch magic_banned
-x 8
-y 18
-end
-arch marble
-x 8
-y 18
-end
-arch dungeon_magic
-x 8
-y 19
-end
-arch magic_banned
-x 8
-y 19
-end
-arch marble
-x 8
-y 19
-end
-arch stwall_2_1_2
-x 8
-y 19
-end
-arch dungeon_magic
-x 9
-end
-arch magic_banned
-x 9
-end
-arch marble
-x 9
-end
-arch stwall_2_1_2
-x 9
-end
-arch dungeon_magic
-x 9
-y 1
-end
-arch magic_banned
-x 9
-y 1
-end
-arch marble
-x 9
-y 1
 end
 arch knight
 x 9
-y 1
-end
-arch dungeon_magic
-x 9
-y 2
-end
-arch magic_banned
-x 9
-y 2
+y 9
 end
 arch marble
 x 9
-y 2
+y 10
 end
 arch knight
 x 9
-y 2
-end
-arch dungeon_magic
-x 9
-y 3
-end
-arch magic_banned
-x 9
-y 3
+y 10
 end
 arch marble
 x 9
-y 3
+y 11
 end
 arch knight
 x 9
+y 11
+end
+arch marble
+x 9
+y 12
+end
+arch marble
+x 9
+y 13
+end
+arch marble
+x 9
+y 14
+end
+arch marble
+x 9
+y 15
+end
+arch marble
+x 9
+y 16
+end
+arch marble
+x 9
+y 17
+end
+arch marble
+x 9
+y 18
+end
+arch marble
+x 9
+y 19
+end
+arch oakdoor
+slaying /darcap/forgotten_town/city
+hp 25
+sp 4
+x 9
+y 19
+end
+arch dungeon_magic
+x 10
+end
+arch magic_banned
+x 10
+end
+arch marble
+x 10
+end
+arch stwall_2_1_2
+x 10
+end
+arch marble
+x 10
+y 1
+end
+arch marble
+x 10
+y 2
+end
+arch slevel_3_1
+x 10
+y 2
+end
+arch marble
+x 10
 y 3
 end
-arch dungeon_magic
-x 9
+arch slevel_3_1
+x 10
+y 3
+end
+arch marble
+x 10
 y 4
 end
-arch magic_banned
-x 9
+arch slevel_3_1
+x 10
 y 4
 end
 arch marble
-x 9
-y 4
-end
-arch dungeon_magic
-x 9
+x 10
 y 5
-end
-arch magic_banned
-x 9
-y 5
-end
-arch marble
-x 9
-y 5
-end
-arch dungeon_magic
-x 9
-y 6
-end
-arch magic_banned
-x 9
-y 6
-end
-arch marble
-x 9
-y 6
-end
-arch dungeon_magic
-x 9
-y 7
-end
-arch magic_banned
-x 9
-y 7
-end
-arch marble
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
-y 8
-end
-arch magic_banned
-x 9
-y 8
-end
-arch marble
-x 9
-y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch magic_banned
-x 9
-y 9
-end
-arch marble
-x 9
-y 9
-end
-arch dungeon_magic
-x 9
-y 10
-end
-arch magic_banned
-x 9
-y 10
-end
-arch marble
-x 9
-y 10
-end
-arch dungeon_magic
-x 9
-y 11
-end
-arch magic_banned
-x 9
-y 11
-end
-arch marble
-x 9
-y 11
-end
-arch dungeon_magic
-x 9
-y 12
-end
-arch magic_banned
-x 9
-y 12
-end
-arch marble
-x 9
-y 12
-end
-arch dungeon_magic
-x 9
-y 13
-end
-arch magic_banned
-x 9
-y 13
-end
-arch marble
-x 9
-y 13
-end
-arch dungeon_magic
-x 9
-y 14
-end
-arch magic_banned
-x 9
-y 14
-end
-arch marble
-x 9
-y 14
-end
-arch dungeon_magic
-x 9
-y 15
-end
-arch magic_banned
-x 9
-y 15
-end
-arch marble
-x 9
-y 15
-end
-arch dungeon_magic
-x 9
-y 16
-end
-arch magic_banned
-x 9
-y 16
-end
-arch marble
-x 9
-y 16
-end
-arch dungeon_magic
-x 9
-y 17
-end
-arch magic_banned
-x 9
-y 17
-end
-arch marble
-x 9
-y 17
-end
-arch longtable_2_1_2
-x 9
-y 17
-end
-arch random_food
-x 9
-y 17
-end
-arch dungeon_magic
-x 9
-y 18
-end
-arch magic_banned
-x 9
-y 18
-end
-arch marble
-x 9
-y 18
-end
-arch dungeon_magic
-x 9
-y 19
-end
-arch magic_banned
-x 9
-y 19
-end
-arch marble
-x 9
-y 19
-end
-arch stwall_2_1_2
-x 9
-y 19
-end
-arch dungeon_magic
-x 10
-end
-arch magic_banned
-x 10
-end
-arch marble
-x 10
-end
-arch stwall_2_1_2
-x 10
-end
-arch dungeon_magic
-x 10
-y 1
-end
-arch magic_banned
-x 10
-y 1
-end
-arch marble
-x 10
-y 1
 end
 arch knight
 x 10
-y 1
-end
-arch dungeon_magic
-x 10
-y 2
-end
-arch magic_banned
-x 10
-y 2
+y 5
 end
 arch marble
 x 10
-y 2
+y 6
+end
+arch marble
+x 10
+y 7
+end
+arch marble
+x 10
+y 8
+end
+arch marble
+x 10
+y 9
+end
+arch marble
+x 10
+y 10
 end
 arch knight
 x 10
-y 2
-end
-arch dungeon_magic
-x 10
-y 3
-end
-arch magic_banned
-x 10
-y 3
+y 10
 end
 arch marble
 x 10
-y 3
+y 11
 end
 arch knight
 x 10
-y 3
-end
-arch dungeon_magic
-x 10
-y 4
-end
-arch magic_banned
-x 10
-y 4
-end
-arch marble
-x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 5
-end
-arch magic_banned
-x 10
-y 5
-end
-arch marble
-x 10
-y 5
-end
-arch dungeon_magic
-x 10
-y 6
-end
-arch magic_banned
-x 10
-y 6
-end
-arch marble
-x 10
-y 6
-end
-arch dungeon_magic
-x 10
-y 7
-end
-arch magic_banned
-x 10
-y 7
-end
-arch marble
-x 10
-y 7
-end
-arch dungeon_magic
-x 10
-y 8
-end
-arch magic_banned
-x 10
-y 8
-end
-arch marble
-x 10
-y 8
-end
-arch dungeon_magic
-x 10
-y 9
-end
-arch magic_banned
-x 10
-y 9
-end
-arch marble
-x 10
-y 9
-end
-arch chair_2.4
-x 10
-y 9
-end
-arch dungeon_magic
-x 10
-y 10
-end
-arch magic_banned
-x 10
-y 10
-end
-arch marble
-x 10
-y 10
-end
-arch dungeon_magic
-x 10
-y 11
-end
-arch magic_banned
-x 10
 y 11
 end
 arch marble
-x 10
-y 11
-end
-arch dungeon_magic
-x 10
-y 12
-end
-arch magic_banned
 x 10
 y 12
 end
 arch marble
 x 10
-y 12
-end
-arch dungeon_magic
-x 10
-y 13
-end
-arch magic_banned
-x 10
 y 13
 end
 arch marble
-x 10
-y 13
-end
-arch dungeon_magic
-x 10
-y 14
-end
-arch magic_banned
 x 10
 y 14
 end
 arch marble
 x 10
-y 14
-end
-arch dungeon_magic
-x 10
-y 15
-end
-arch magic_banned
-x 10
 y 15
 end
 arch marble
-x 10
-y 15
-end
-arch dungeon_magic
-x 10
-y 16
-end
-arch magic_banned
 x 10
 y 16
 end
 arch marble
 x 10
-y 16
-end
-arch dungeon_magic
-x 10
 y 17
-end
-arch magic_banned
-x 10
-y 17
-end
-arch marble
-x 10
-y 17
-end
-arch longtable_2_1_2
-x 10
-y 17
-end
-arch random_food
-x 10
-y 17
-end
-arch dungeon_magic
-x 10
-y 18
-end
-arch magic_banned
-x 10
-y 18
 end
 arch marble
 x 10
@@ -3072,7 +1749,7 @@ arch marble
 x 10
 y 19
 end
-arch stwall_2_1_2
+arch stwall_1_4
 x 10
 y 19
 end
@@ -3088,259 +1765,217 @@ end
 arch stwall_2_1_2
 x 11
 end
-arch dungeon_magic
-x 11
-y 1
-end
-arch magic_banned
-x 11
-y 1
-end
 arch marble
 x 11
 y 1
 end
-arch dungeon_magic
+arch knight
+name Guard of the ancient mages
+face wizard.151
+level 100
+speed 1.0
+attacktype 8388607
+wc 20
+hp 25000
+maxhp 25000
+ac -20
+Con 1500
+hitback 1
+sp 2500
+maxsp 2500
+Pow 1000
+path_attuned 924025
+can_see_in_dark 1
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_ring 1
+can_use_wand 1
+can_use_rod 1
+can_use_scroll 1
+can_use_skill 1
+resist_physical 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+animation NONE
+x 11
+y 1
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch ability_dragonbreath
+end
+arch abil_ball_lightning
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+arch abil_create_fire_wall
+end
+arch abil_frostbolt
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_medium_fireball
+end
+arch abil_poison_cloud
+end
+arch abil_slow
+end
+end
+arch marble
 x 11
 y 2
 end
-arch magic_banned
+arch slevel_3_1
 x 11
 y 2
 end
 arch marble
 x 11
-y 2
-end
-arch dungeon_magic
-x 11
 y 3
 end
-arch magic_banned
+arch slevel_3_1
 x 11
 y 3
 end
 arch marble
 x 11
-y 3
-end
-arch dungeon_magic
-x 11
 y 4
 end
-arch magic_banned
+arch slevel_3_1
 x 11
 y 4
 end
 arch marble
 x 11
-y 4
-end
-arch dungeon_magic
-x 11
 y 5
 end
-arch magic_banned
+arch knight
 x 11
 y 5
-end
-arch marble
-x 11
-y 5
-end
-arch charwoman
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 6
-end
-arch magic_banned
-x 11
-y 6
 end
 arch marble
 x 11
 y 6
 end
-arch dungeon_magic
+arch knight
 x 11
-y 7
-end
-arch magic_banned
-x 11
-y 7
+y 6
 end
 arch marble
 x 11
 y 7
 end
-arch dungeon_magic
-x 11
-y 8
-end
-arch magic_banned
+arch marble
 x 11
 y 8
 end
 arch marble
 x 11
-y 8
-end
-arch chair_2.1
-x 11
-y 8
-end
-arch a_townsman
-x 11
-y 8
-end
-arch dungeon_magic
-x 11
-y 9
-end
-arch magic_banned
-x 11
 y 9
 end
 arch marble
 x 11
-y 9
-end
-arch table_3
-x 11
-y 9
-end
-arch dungeon_magic
-x 11
 y 10
-end
-arch magic_banned
-x 11
-y 10
-end
-arch marble
-x 11
-y 10
-end
-arch chair_2.3
-x 11
-y 10
-end
-arch dungeon_magic
-x 11
-y 11
-end
-arch magic_banned
-x 11
-y 11
 end
 arch marble
 x 11
 y 11
 end
-arch dungeon_magic
+arch knight
 x 11
-y 12
-end
-arch magic_banned
-x 11
-y 12
+y 11
 end
 arch marble
 x 11
 y 12
 end
-arch dungeon_magic
-x 11
-y 13
-end
-arch magic_banned
+arch marble
 x 11
 y 13
 end
 arch marble
 x 11
-y 13
-end
-arch chair_2.4
-x 11
-y 13
-end
-arch dungeon_magic
-x 11
-y 14
-end
-arch magic_banned
-x 11
 y 14
 end
 arch marble
 x 11
-y 14
-end
-arch dungeon_magic
-x 11
-y 15
-end
-arch magic_banned
-x 11
 y 15
 end
 arch marble
-x 11
-y 15
-end
-arch dungeon_magic
-x 11
-y 16
-end
-arch magic_banned
 x 11
 y 16
 end
 arch marble
 x 11
-y 16
-end
-arch dungeon_magic
-x 11
-y 17
-end
-arch magic_banned
-x 11
 y 17
 end
 arch marble
-x 11
-y 17
-end
-arch longtable_2_2_3
-x 11
-y 17
-end
-arch random_food
-x 11
-y 17
-end
-arch dungeon_magic
-x 11
-y 18
-end
-arch magic_banned
-x 11
-y 18
-end
-arch marble
-x 11
-y 18
-end
-arch longtable_1_2
-x 11
-y 18
-end
-arch random_food
 x 11
 y 18
 end
@@ -3372,250 +2007,101 @@ end
 arch stwall_2_1_2
 x 12
 end
-arch dungeon_magic
-x 12
-y 1
-end
-arch magic_banned
-x 12
-y 1
-end
 arch marble
 x 12
 y 1
 end
-arch dungeon_magic
+arch slevel_3_4
 x 12
-y 2
-end
-arch magic_banned
-x 12
-y 2
+y 1
 end
 arch marble
 x 12
 y 2
 end
-arch dungeon_magic
+arch slevel_2_2_4
 x 12
-y 3
-end
-arch magic_banned
-x 12
-y 3
+y 2
 end
 arch marble
 x 12
 y 3
 end
-arch dungeon_magic
+arch slevel_3_1
 x 12
-y 4
-end
-arch magic_banned
-x 12
-y 4
+y 3
 end
 arch marble
 x 12
 y 4
 end
-arch dungeon_magic
+arch slevel_3_1
 x 12
-y 5
-end
-arch magic_banned
-x 12
-y 5
+y 4
 end
 arch marble
 x 12
 y 5
 end
-arch dungeon_magic
+arch knight
 x 12
-y 6
-end
-arch magic_banned
-x 12
-y 6
+y 5
 end
 arch marble
 x 12
 y 6
 end
-arch dungeon_magic
+arch knight
 x 12
-y 7
-end
-arch magic_banned
-x 12
-y 7
+y 6
 end
 arch marble
 x 12
 y 7
 end
-arch dungeon_magic
+arch knight
 x 12
-y 8
-end
-arch magic_banned
-x 12
-y 8
+y 7
 end
 arch marble
 x 12
 y 8
 end
-arch chair_2.1
-x 12
-y 8
-end
-arch fatman
-random_movement 0
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch magic_banned
+arch marble
 x 12
 y 9
 end
 arch marble
 x 12
-y 9
-end
-arch table_3
-x 12
-y 9
-end
-arch waybread
-x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 10
-end
-arch magic_banned
-x 12
 y 10
 end
 arch marble
-x 12
-y 10
-end
-arch chair_2.3
-x 12
-y 10
-end
-arch dungeon_magic
-x 12
-y 11
-end
-arch magic_banned
 x 12
 y 11
 end
 arch marble
 x 12
-y 11
-end
-arch dungeon_magic
-x 12
-y 12
-end
-arch magic_banned
-x 12
 y 12
 end
 arch marble
-x 12
-y 12
-end
-arch chair_2.1
-x 12
-y 12
-end
-arch dungeon_magic
-x 12
-y 13
-end
-arch magic_banned
 x 12
 y 13
 end
 arch marble
 x 12
-y 13
-end
-arch table_3
-x 12
-y 13
-end
-arch dungeon_magic
-x 12
-y 14
-end
-arch magic_banned
-x 12
 y 14
 end
 arch marble
-x 12
-y 14
-end
-arch chair_2.3
-x 12
-y 14
-end
-arch dungeon_magic
-x 12
-y 15
-end
-arch magic_banned
 x 12
 y 15
 end
 arch marble
 x 12
-y 15
-end
-arch dungeon_magic
-x 12
-y 16
-end
-arch magic_banned
-x 12
 y 16
 end
 arch marble
 x 12
-y 16
-end
-arch dungeon_magic
-x 12
 y 17
-end
-arch magic_banned
-x 12
-y 17
-end
-arch marble
-x 12
-y 17
-end
-arch dungeon_magic
-x 12
-y 18
-end
-arch magic_banned
-x 12
-y 18
 end
 arch marble
 x 12
@@ -3649,238 +2135,101 @@ end
 arch stwall_2_1_2
 x 13
 end
-arch dungeon_magic
-x 13
-y 1
-end
-arch magic_banned
-x 13
-y 1
-end
 arch marble
 x 13
 y 1
 end
-arch dungeon_magic
+arch knight
 x 13
-y 2
+y 1
 end
-arch magic_banned
+arch marble
 x 13
 y 2
 end
 arch marble
 x 13
-y 2
-end
-arch dungeon_magic
-x 13
 y 3
 end
-arch magic_banned
+arch slevel_3_1
 x 13
 y 3
 end
 arch marble
 x 13
-y 3
-end
-arch dungeon_magic
-x 13
 y 4
 end
-arch magic_banned
+arch slevel_3_1
 x 13
 y 4
 end
 arch marble
 x 13
-y 4
-end
-arch dungeon_magic
-x 13
 y 5
 end
-arch magic_banned
+arch knight
 x 13
 y 5
 end
 arch marble
 x 13
-y 5
-end
-arch dungeon_magic
-x 13
 y 6
 end
-arch magic_banned
+arch knight
 x 13
 y 6
 end
 arch marble
 x 13
-y 6
-end
-arch dungeon_magic
-x 13
 y 7
 end
-arch magic_banned
+arch knight
 x 13
 y 7
 end
 arch marble
 x 13
-y 7
-end
-arch dungeon_magic
-x 13
 y 8
 end
-arch magic_banned
+arch knight
 x 13
 y 8
 end
 arch marble
 x 13
-y 8
-end
-arch dungeon_magic
-x 13
-y 9
-end
-arch magic_banned
-x 13
 y 9
 end
 arch marble
-x 13
-y 9
-end
-arch chair_2.2
-x 13
-y 9
-end
-arch dungeon_magic
-x 13
-y 10
-end
-arch magic_banned
 x 13
 y 10
 end
 arch marble
 x 13
-y 10
-end
-arch dungeon_magic
-x 13
-y 11
-end
-arch magic_banned
-x 13
 y 11
 end
 arch marble
 x 13
-y 11
-end
-arch dungeon_magic
-x 13
-y 12
-end
-arch magic_banned
-x 13
 y 12
 end
 arch marble
-x 13
-y 12
-end
-arch chair_2.1
-x 13
-y 12
-end
-arch sailor
-random_movement 0
-x 13
-y 12
-end
-arch dungeon_magic
-x 13
-y 13
-end
-arch magic_banned
 x 13
 y 13
 end
 arch marble
 x 13
-y 13
-end
-arch table_3
-x 13
-y 13
-end
-arch dungeon_magic
-x 13
-y 14
-end
-arch magic_banned
-x 13
 y 14
 end
 arch marble
-x 13
-y 14
-end
-arch chair_2.3
-x 13
-y 14
-end
-arch dungeon_magic
-x 13
-y 15
-end
-arch magic_banned
 x 13
 y 15
 end
 arch marble
 x 13
-y 15
-end
-arch dungeon_magic
-x 13
-y 16
-end
-arch magic_banned
-x 13
 y 16
 end
 arch marble
 x 13
-y 16
-end
-arch dungeon_magic
-x 13
 y 17
-end
-arch magic_banned
-x 13
-y 17
-end
-arch marble
-x 13
-y 17
-end
-arch dungeon_magic
-x 13
-y 18
-end
-arch magic_banned
-x 13
-y 18
 end
 arch marble
 x 13
@@ -3914,237 +2263,109 @@ end
 arch stwall_2_1_2
 x 14
 end
-arch dungeon_magic
-x 14
-y 1
-end
-arch magic_banned
-x 14
-y 1
-end
 arch marble
 x 14
 y 1
 end
-arch dungeon_magic
+arch slevel_3_4
 x 14
-y 2
-end
-arch magic_banned
-x 14
-y 2
+y 1
 end
 arch marble
 x 14
 y 2
 end
-arch dungeon_magic
+arch slevel_3_4
 x 14
-y 3
-end
-arch magic_banned
-x 14
-y 3
+y 2
 end
 arch marble
 x 14
 y 3
 end
-arch dungeon_magic
+arch slevel_2_2_4
 x 14
-y 4
-end
-arch magic_banned
-x 14
-y 4
+y 3
 end
 arch marble
 x 14
 y 4
 end
-arch chair_1.4
+arch slevel_3_1
 x 14
 y 4
 end
-arch dungeon_magic
+arch marble
 x 14
 y 5
 end
-arch magic_banned
+arch knight
 x 14
 y 5
 end
 arch marble
 x 14
-y 5
-end
-arch chair_1.4
-x 14
-y 5
-end
-arch dungeon_magic
-x 14
 y 6
 end
-arch magic_banned
+arch knight
 x 14
 y 6
 end
 arch marble
 x 14
-y 6
-end
-arch chair_1.4
-x 14
-y 6
-end
-arch dungeon_magic
-x 14
 y 7
 end
-arch magic_banned
+arch knight
 x 14
 y 7
-end
-arch marble
-x 14
-y 7
-end
-arch chair_1.4
-x 14
-y 7
-end
-arch dungeon_magic
-x 14
-y 8
-end
-arch magic_banned
-x 14
-y 8
 end
 arch marble
 x 14
 y 8
 end
-arch dungeon_magic
+arch knight
 x 14
-y 9
-end
-arch magic_banned
-x 14
-y 9
+y 8
 end
 arch marble
 x 14
 y 9
 end
-arch dungeon_magic
+arch knight
 x 14
-y 10
-end
-arch magic_banned
-x 14
-y 10
+y 9
 end
 arch marble
 x 14
 y 10
 end
-arch dungeon_magic
-x 14
-y 11
-end
-arch magic_banned
-x 14
-y 11
-end
 arch marble
 x 14
 y 11
 end
-arch dungeon_magic
-x 14
-y 12
-end
-arch magic_banned
+arch marble
 x 14
 y 12
 end
 arch marble
 x 14
-y 12
-end
-arch dungeon_magic
-x 14
-y 13
-end
-arch magic_banned
-x 14
 y 13
 end
 arch marble
-x 14
-y 13
-end
-arch chair_2.2
-x 14
-y 13
-end
-arch dungeon_magic
-x 14
-y 14
-end
-arch magic_banned
 x 14
 y 14
 end
 arch marble
 x 14
-y 14
-end
-arch dungeon_magic
-x 14
-y 15
-end
-arch magic_banned
-x 14
 y 15
 end
 arch marble
-x 14
-y 15
-end
-arch dungeon_magic
-x 14
-y 16
-end
-arch magic_banned
 x 14
 y 16
 end
 arch marble
 x 14
-y 16
-end
-arch dungeon_magic
-x 14
 y 17
-end
-arch magic_banned
-x 14
-y 17
-end
-arch marble
-x 14
-y 17
-end
-arch dungeon_magic
-x 14
-y 18
-end
-arch magic_banned
-x 14
-y 18
 end
 arch marble
 x 14
@@ -4178,17 +2399,450 @@ end
 arch stwall_2_1_2
 x 15
 end
-arch dungeon_magic
+arch marble
 x 15
 y 1
 end
-arch magic_banned
+arch knight
 x 15
 y 1
 end
 arch marble
 x 15
+y 2
+end
+arch marble
+x 15
+y 3
+end
+arch knight
+x 15
+y 3
+end
+arch marble
+x 15
+y 4
+end
+arch slevel_3_1
+x 15
+y 4
+end
+arch marble
+x 15
+y 5
+end
+arch knight
+x 15
+y 5
+end
+arch marble
+x 15
+y 6
+end
+arch knight
+x 15
+y 6
+end
+arch marble
+x 15
+y 7
+end
+arch knight
+x 15
+y 7
+end
+arch marble
+x 15
+y 8
+end
+arch knight
+x 15
+y 8
+end
+arch marble
+x 15
+y 9
+end
+arch knight
+x 15
+y 9
+end
+arch marble
+x 15
+y 10
+end
+arch knight
+x 15
+y 10
+end
+arch marble
+x 15
+y 11
+end
+arch marble
+x 15
+y 12
+end
+arch marble
+x 15
+y 13
+end
+arch marble
+x 15
+y 14
+end
+arch marble
+x 15
+y 15
+end
+arch marble
+x 15
+y 16
+end
+arch marble
+x 15
+y 17
+end
+arch marble
+x 15
+y 18
+end
+arch dungeon_magic
+x 15
+y 19
+end
+arch magic_banned
+x 15
+y 19
+end
+arch marble
+x 15
+y 19
+end
+arch stwall_2_1_2
+x 15
+y 19
+end
+arch dungeon_magic
+x 16
+end
+arch magic_banned
+x 16
+end
+arch marble
+x 16
+end
+arch stwall_2_1_2
+x 16
+end
+arch marble
+x 16
 y 1
+end
+arch slevel_3_4
+x 16
+y 1
+end
+arch marble
+x 16
+y 2
+end
+arch slevel_3_4
+x 16
+y 2
+end
+arch marble
+x 16
+y 3
+end
+arch slevel_3_4
+x 16
+y 3
+end
+arch marble
+x 16
+y 4
+end
+arch slevel_2_2_4
+x 16
+y 4
+end
+arch marble
+x 16
+y 5
+end
+arch knight
+x 16
+y 5
+end
+arch marble
+x 16
+y 6
+end
+arch knight
+x 16
+y 6
+end
+arch marble
+x 16
+y 7
+end
+arch knight
+x 16
+y 7
+end
+arch marble
+x 16
+y 8
+end
+arch knight
+x 16
+y 8
+end
+arch marble
+x 16
+y 9
+end
+arch knight
+x 16
+y 9
+end
+arch marble
+x 16
+y 10
+end
+arch knight
+x 16
+y 10
+end
+arch marble
+x 16
+y 11
+end
+arch knight
+x 16
+y 11
+end
+arch marble
+x 16
+y 12
+end
+arch marble
+x 16
+y 13
+end
+arch marble
+x 16
+y 14
+end
+arch marble
+x 16
+y 15
+end
+arch marble
+x 16
+y 16
+end
+arch swall_2_2_2
+x 16
+y 16
+end
+arch marble
+x 16
+y 17
+end
+arch swall_2_1_1
+x 16
+y 17
+end
+arch marble
+x 16
+y 18
+end
+arch swall_1_2
+x 16
+y 18
+end
+arch dungeon_magic
+x 16
+y 19
+end
+arch magic_banned
+x 16
+y 19
+end
+arch marble
+x 16
+y 19
+end
+arch stwall_2_1_2
+x 16
+y 19
+end
+arch dungeon_magic
+x 17
+end
+arch magic_banned
+x 17
+end
+arch marble
+x 17
+end
+arch stwall_2_1_2
+x 17
+end
+arch marble
+x 17
+y 1
+end
+arch swall_1_1
+x 17
+y 1
+end
+arch marble
+x 17
+y 2
+end
+arch swall_2_1_1
+x 17
+y 2
+end
+arch marble
+x 17
+y 3
+end
+arch swall_2_1_1
+x 17
+y 3
+end
+arch marble
+x 17
+y 4
+end
+arch swall_1_2
+x 17
+y 4
+end
+arch marble
+x 17
+y 5
+end
+arch marble
+x 17
+y 6
+end
+arch marble
+x 17
+y 7
+end
+arch marble
+x 17
+y 8
+end
+arch marble
+x 17
+y 9
+end
+arch marble
+x 17
+y 10
+end
+arch marble
+x 17
+y 11
+end
+arch marble
+x 17
+y 12
+end
+arch marble
+x 17
+y 13
+end
+arch marble
+x 17
+y 14
+end
+arch marble
+x 17
+y 15
+end
+arch marble
+x 17
+y 16
+end
+arch ggate_open
+x 17
+y 16
+end
+arch marble
+x 17
+y 17
+end
+arch marble
+x 17
+y 18
+end
+arch dungeon_magic
+x 17
+y 19
+end
+arch magic_banned
+x 17
+y 19
+end
+arch marble
+x 17
+y 19
+end
+arch stwall_2_1_2
+x 17
+y 19
+end
+arch dungeon_magic
+x 18
+end
+arch magic_banned
+x 18
+end
+arch marble
+x 18
+end
+arch stwall_2_1_2
+x 18
+end
+arch magic_banned
+x 18
+y 1
+end
+arch marble
+x 18
+y 1
+end
+arch marble
+x 18
+y 2
+end
+arch grate_closed_1
+connected 221
+x 18
+y 2
+end
+arch marble
+x 18
+y 3
+end
+arch altar
+name drop 20000 diamonds for FT-Access Pass
+slaying diamond
+food 20000
+connected 221
+x 18
+y 3
+end
+arch marble
+x 18
+y 4
 end
 arch sign
 msg
@@ -4198,1165 +2852,64 @@ the test at the beginning twice.
 endmsg
 walk_on 1
 fly_on 1
-x 15
-y 1
-end
-arch dungeon_magic
-x 15
-y 2
-end
-arch magic_banned
-x 15
-y 2
-end
-arch marble
-x 15
-y 2
-end
-arch dungeon_magic
-x 15
-y 3
-end
-arch magic_banned
-x 15
-y 3
-end
-arch marble
-x 15
-y 3
-end
-arch chair_1.1
-x 15
-y 3
-end
-arch guildmaster
-name summoner
-face wizard_yellow.151
-hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 15
-y 3
-end
-arch dungeon_magic
-x 15
-y 4
-end
-arch magic_banned
-x 15
+x 18
 y 4
 end
 arch marble
-x 15
-y 4
-end
-arch woodfloor
-x 15
-y 4
-end
-arch slevel_2_2_2
-no_pass 1
-x 15
-y 4
-end
-arch dungeon_magic
-x 15
-y 5
-end
-arch magic_banned
-x 15
+x 18
 y 5
 end
 arch marble
-x 15
-y 5
-end
-arch woodfloor
-x 15
-y 5
-end
-arch slevel_3_2
-no_pass 1
-x 15
-y 5
-end
-arch dungeon_magic
-x 15
-y 6
-end
-arch magic_banned
-x 15
+x 18
 y 6
 end
 arch marble
-x 15
-y 6
-end
-arch woodfloor
-x 15
-y 6
-end
-arch slevel_3_2
-no_pass 1
-x 15
-y 6
-end
-arch dungeon_magic
-x 15
-y 7
-end
-arch magic_banned
-x 15
+x 18
 y 7
 end
 arch marble
-x 15
-y 7
-end
-arch woodfloor
-x 15
-y 7
-end
-arch slevel_2_2_1
-no_pass 1
-x 15
-y 7
-end
-arch dungeon_magic
-x 15
-y 8
-end
-arch magic_banned
-x 15
+x 18
 y 8
 end
 arch marble
-x 15
-y 8
-end
-arch chair_1.3
-x 15
-y 8
-end
-arch dungeon_magic
-x 15
-y 9
-end
-arch magic_banned
-x 15
+x 18
 y 9
 end
 arch marble
-x 15
-y 9
-end
-arch dungeon_magic
-x 15
-y 10
-end
-arch magic_banned
-x 15
+x 18
 y 10
 end
 arch marble
-x 15
-y 10
-end
-arch dungeon_magic
-x 15
-y 11
-end
-arch magic_banned
-x 15
+x 18
 y 11
 end
 arch marble
-x 15
-y 11
-end
-arch dungeon_magic
-x 15
-y 12
-end
-arch magic_banned
-x 15
+x 18
 y 12
 end
 arch marble
-x 15
-y 12
-end
-arch dungeon_magic
-x 15
-y 13
-end
-arch magic_banned
-x 15
+x 18
 y 13
 end
 arch marble
-x 15
-y 13
-end
-arch dungeon_magic
-x 15
-y 14
-end
-arch magic_banned
-x 15
+x 18
 y 14
 end
 arch marble
-x 15
-y 14
-end
-arch dungeon_magic
-x 15
-y 15
-end
-arch magic_banned
-x 15
+x 18
 y 15
 end
 arch marble
-x 15
-y 15
-end
-arch dungeon_magic
-x 15
+x 18
 y 16
-end
-arch magic_banned
-x 15
-y 16
-end
-arch marble
-x 15
-y 16
-end
-arch dungeon_magic
-x 15
-y 17
-end
-arch magic_banned
-x 15
-y 17
-end
-arch marble
-x 15
-y 17
-end
-arch dungeon_magic
-x 15
-y 18
-end
-arch magic_banned
-x 15
-y 18
-end
-arch marble
-x 15
-y 18
-end
-arch dungeon_magic
-x 15
-y 19
-end
-arch magic_banned
-x 15
-y 19
-end
-arch marble
-x 15
-y 19
-end
-arch stwall_2_1_2
-x 15
-y 19
-end
-arch dungeon_magic
-x 16
-end
-arch magic_banned
-x 16
-end
-arch marble
-x 16
-end
-arch stwall_2_1_2
-x 16
-end
-arch dungeon_magic
-x 16
-y 1
-end
-arch magic_banned
-x 16
-y 1
-end
-arch marble
-x 16
-y 1
-end
-arch altar
-name drop 20000 diamonds for FT-Access Pass
-slaying diamond
-food 20000
-connected 221
-x 16
-y 1
-end
-arch dungeon_magic
-x 16
-y 2
-end
-arch magic_banned
-x 16
-y 2
-end
-arch marble
-x 16
-y 2
-end
-arch swall_1_4
-x 16
-y 2
-end
-arch dungeon_magic
-x 16
-y 3
-end
-arch magic_banned
-x 16
-y 3
-end
-arch marble
-x 16
-y 3
-end
-arch chair_1.1
-x 16
-y 3
-end
-arch guildmaster
-name priest
-face priestnew.151
-hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 16
-y 3
-end
-arch dungeon_magic
-x 16
-y 4
-end
-arch magic_banned
-x 16
-y 4
-end
-arch marble
-x 16
-y 4
-end
-arch woodfloor
-x 16
-y 4
-end
-arch slevel_3_3
-no_pass 1
-x 16
-y 4
-end
-arch dungeon_magic
-x 16
-y 5
-end
-arch magic_banned
-x 16
-y 5
-end
-arch marble
-x 16
-y 5
-end
-arch woodfloor
-x 16
-y 5
-end
-arch dungeon_magic
-x 16
-y 6
-end
-arch magic_banned
-x 16
-y 6
-end
-arch marble
-x 16
-y 6
-end
-arch woodfloor
-x 16
-y 6
-end
-arch dungeon_magic
-x 16
-y 7
-end
-arch magic_banned
-x 16
-y 7
-end
-arch marble
-x 16
-y 7
-end
-arch woodfloor
-x 16
-y 7
-end
-arch slevel_3_1
-no_pass 1
-x 16
-y 7
-end
-arch dungeon_magic
-x 16
-y 8
-end
-arch magic_banned
-x 16
-y 8
-end
-arch marble
-x 16
-y 8
-end
-arch chair_1.3
-x 16
-y 8
-end
-arch dungeon_magic
-x 16
-y 9
-end
-arch magic_banned
-x 16
-y 9
-end
-arch marble
-x 16
-y 9
-end
-arch dungeon_magic
-x 16
-y 10
-end
-arch magic_banned
-x 16
-y 10
-end
-arch marble
-x 16
-y 10
-end
-arch dungeon_magic
-x 16
-y 11
-end
-arch magic_banned
-x 16
-y 11
-end
-arch marble
-x 16
-y 11
-end
-arch dungeon_magic
-x 16
-y 12
-end
-arch magic_banned
-x 16
-y 12
-end
-arch marble
-x 16
-y 12
-end
-arch dungeon_magic
-x 16
-y 13
-end
-arch magic_banned
-x 16
-y 13
-end
-arch marble
-x 16
-y 13
-end
-arch dungeon_magic
-x 16
-y 14
-end
-arch magic_banned
-x 16
-y 14
-end
-arch marble
-x 16
-y 14
-end
-arch dungeon_magic
-x 16
-y 15
-end
-arch magic_banned
-x 16
-y 15
-end
-arch marble
-x 16
-y 15
-end
-arch charwoman
-x 16
-y 15
-end
-arch dungeon_magic
-x 16
-y 16
-end
-arch magic_banned
-x 16
-y 16
-end
-arch marble
-x 16
-y 16
-end
-arch dungeon_magic
-x 16
-y 17
-end
-arch magic_banned
-x 16
-y 17
-end
-arch marble
-x 16
-y 17
-end
-arch dungeon_magic
-x 16
-y 18
-end
-arch magic_banned
-x 16
-y 18
-end
-arch marble
-x 16
-y 18
-end
-arch dungeon_magic
-x 16
-y 19
-end
-arch magic_banned
-x 16
-y 19
-end
-arch marble
-x 16
-y 19
-end
-arch stwall_2_1_2
-x 16
-y 19
-end
-arch dungeon_magic
-x 17
-end
-arch magic_banned
-x 17
-end
-arch marble
-x 17
-end
-arch stwall_2_1_2
-x 17
-end
-arch dungeon_magic
-x 17
-y 1
-end
-arch magic_banned
-x 17
-y 1
-end
-arch marble
-x 17
-y 1
-end
-arch grate_closed_2
-connected 221
-x 17
-y 1
-end
-arch dungeon_magic
-x 17
-y 2
-end
-arch magic_banned
-x 17
-y 2
-end
-arch marble
-x 17
-y 2
-end
-arch swall_2_1_2
-x 17
-y 2
-end
-arch dungeon_magic
-x 17
-y 3
-end
-arch magic_banned
-x 17
-y 3
-end
-arch marble
-x 17
-y 3
-end
-arch chair_1.1
-x 17
-y 3
-end
-arch guildmaster
-name alchemist
-face alchemist.151
-hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 17
-y 3
-end
-arch dungeon_magic
-x 17
-y 4
-end
-arch magic_banned
-x 17
-y 4
-end
-arch marble
-x 17
-y 4
-end
-arch woodfloor
-x 17
-y 4
-end
-arch slevel_3_3
-no_pass 1
-x 17
-y 4
-end
-arch dungeon_magic
-x 17
-y 5
-end
-arch magic_banned
-x 17
-y 5
-end
-arch marble
-x 17
-y 5
-end
-arch woodfloor
-x 17
-y 5
-end
-arch dungeon_magic
-x 17
-y 6
-end
-arch magic_banned
-x 17
-y 6
-end
-arch marble
-x 17
-y 6
-end
-arch woodfloor
-x 17
-y 6
-end
-arch dungeon_magic
-x 17
-y 7
-end
-arch magic_banned
-x 17
-y 7
-end
-arch marble
-x 17
-y 7
-end
-arch woodfloor
-x 17
-y 7
-end
-arch slevel_3_1
-no_pass 1
-x 17
-y 7
-end
-arch dungeon_magic
-x 17
-y 8
-end
-arch magic_banned
-x 17
-y 8
-end
-arch marble
-x 17
-y 8
-end
-arch chair_1.3
-x 17
-y 8
-end
-arch dungeon_magic
-x 17
-y 9
-end
-arch magic_banned
-x 17
-y 9
-end
-arch marble
-x 17
-y 9
-end
-arch dungeon_magic
-x 17
-y 10
-end
-arch magic_banned
-x 17
-y 10
-end
-arch marble
-x 17
-y 10
-end
-arch dungeon_magic
-x 17
-y 11
-end
-arch magic_banned
-x 17
-y 11
-end
-arch marble
-x 17
-y 11
-end
-arch dungeon_magic
-x 17
-y 12
-end
-arch magic_banned
-x 17
-y 12
-end
-arch marble
-x 17
-y 12
-end
-arch dungeon_magic
-x 17
-y 13
-end
-arch magic_banned
-x 17
-y 13
-end
-arch marble
-x 17
-y 13
-end
-arch dungeon_magic
-x 17
-y 14
-end
-arch magic_banned
-x 17
-y 14
-end
-arch marble
-x 17
-y 14
-end
-arch dungeon_magic
-x 17
-y 15
-end
-arch magic_banned
-x 17
-y 15
-end
-arch marble
-x 17
-y 15
-end
-arch dungeon_magic
-x 17
-y 16
-end
-arch magic_banned
-x 17
-y 16
-end
-arch marble
-x 17
-y 16
-end
-arch dungeon_magic
-x 17
-y 17
-end
-arch magic_banned
-x 17
-y 17
-end
-arch marble
-x 17
-y 17
-end
-arch dungeon_magic
-x 17
-y 18
-end
-arch magic_banned
-x 17
-y 18
-end
-arch marble
-x 17
-y 18
-end
-arch dungeon_magic
-x 17
-y 19
-end
-arch magic_banned
-x 17
-y 19
-end
-arch marble
-x 17
-y 19
-end
-arch stwall_2_1_2
-x 17
-y 19
-end
-arch dungeon_magic
-x 18
-end
-arch magic_banned
-x 18
-end
-arch marble
-x 18
-end
-arch stwall_2_1_2
-x 18
-end
-arch dungeon_magic
-x 18
-y 1
-end
-arch magic_banned
-x 18
-y 1
-end
-arch marble
-x 18
-y 1
-end
-arch dungeon_magic
-x 18
-y 2
-end
-arch magic_banned
-x 18
-y 2
-end
-arch marble
-x 18
-y 2
 end
 arch swall_1_3
 x 18
-y 2
-end
-arch dungeon_magic
-x 18
-y 3
-end
-arch magic_banned
-x 18
-y 3
-end
-arch marble
-x 18
-y 3
-end
-arch chair_1.1
-x 18
-y 3
-end
-arch guildmaster
-name warlock
-face mage.151
-hp 100
-maxhp 100
-pick_up 0
-randomitems standard
-x 18
-y 3
-end
-arch dungeon_magic
-x 18
-y 4
-end
-arch magic_banned
-x 18
-y 4
-end
-arch marble
-x 18
-y 4
-end
-arch woodfloor
-x 18
-y 4
-end
-arch slevel_2_2_3
-no_pass 1
-x 18
-y 4
-end
-arch dungeon_magic
-x 18
-y 5
-end
-arch magic_banned
-x 18
-y 5
-end
-arch marble
-x 18
-y 5
-end
-arch woodfloor
-x 18
-y 5
-end
-arch slevel_3_4
-no_pass 1
-x 18
-y 5
-end
-arch dungeon_magic
-x 18
-y 6
-end
-arch magic_banned
-x 18
-y 6
-end
-arch marble
-x 18
-y 6
-end
-arch woodfloor
-x 18
-y 6
-end
-arch slevel_3_4
-no_pass 1
-x 18
-y 6
-end
-arch dungeon_magic
-x 18
-y 7
-end
-arch magic_banned
-x 18
-y 7
-end
-arch marble
-x 18
-y 7
-end
-arch woodfloor
-x 18
-y 7
-end
-arch slevel_2_2_4
-no_pass 1
-x 18
-y 7
-end
-arch dungeon_magic
-x 18
-y 8
-end
-arch magic_banned
-x 18
-y 8
-end
-arch marble
-x 18
-y 8
-end
-arch chair_1.3
-x 18
-y 8
-end
-arch dungeon_magic
-x 18
-y 9
-end
-arch magic_banned
-x 18
-y 9
-end
-arch marble
-x 18
-y 9
-end
-arch dungeon_magic
-x 18
-y 10
-end
-arch magic_banned
-x 18
-y 10
-end
-arch marble
-x 18
-y 10
-end
-arch dungeon_magic
-x 18
-y 11
-end
-arch magic_banned
-x 18
-y 11
-end
-arch marble
-x 18
-y 11
-end
-arch dungeon_magic
-x 18
-y 12
-end
-arch magic_banned
-x 18
-y 12
-end
-arch marble
-x 18
-y 12
-end
-arch dungeon_magic
-x 18
-y 13
-end
-arch magic_banned
-x 18
-y 13
-end
-arch marble
-x 18
-y 13
-end
-arch dungeon_magic
-x 18
-y 14
-end
-arch magic_banned
-x 18
-y 14
-end
-arch marble
-x 18
-y 14
-end
-arch dungeon_magic
-x 18
-y 15
-end
-arch magic_banned
-x 18
-y 15
-end
-arch marble
-x 18
-y 15
-end
-arch dungeon_magic
-x 18
-y 16
-end
-arch magic_banned
-x 18
 y 16
 end
 arch marble
 x 18
-y 16
-end
-arch dungeon_magic
-x 18
 y 17
-end
-arch magic_banned
-x 18
-y 17
-end
-arch marble
-x 18
-y 17
-end
-arch dungeon_magic
-x 18
-y 18
-end
-arch magic_banned
-x 18
-y 18
 end
 arch marble
 x 18
@@ -5798,7 +3351,7 @@ end
 arch monument
 name R.I.P.
 msg
-Here rests Maveric the founder 
+Here rests Maveric the founder
 of the forgotten town.
 endmsg
 x 23
@@ -6102,17 +3655,6 @@ end
 arch stwall_2_2_4
 x 29
 y 12
-end
-arch mabu
-unaggressive 1
-friendly 1
-sleep 0
-x 16
-y 5
-end
-arch mabu
-x 17
-y 5
 end
 arch titan
 name Jipsy
