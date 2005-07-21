@@ -10,7 +10,7 @@ editable 1024
 magicmap grey
 name slicing knife
 name_pl slicing knives
-client_type 101
+client_type 8021
 slaying cut
 end
 
@@ -25,7 +25,7 @@ editable 1024
 magicmap grey
 name slicing knife
 name_pl slicing knives
-client_type 101
+client_type 8021
 slaying cut
 end
 
