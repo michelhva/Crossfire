@@ -941,7 +941,7 @@ end
 arch magic_mouth
 msg
 The angry merchant speaks to you:
-Hey adventurer, in the basement 
+Hey adventurer, in the basement
 everything belongs to me. You may
 not take anything. If you step down
 prepare to die!
@@ -1001,6 +1001,10 @@ x 13
 y 11
 end
 arch stonefloor2
+x 13
+y 12
+end
+arch menu
 x 13
 y 12
 end

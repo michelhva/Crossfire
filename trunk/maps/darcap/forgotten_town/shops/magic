@@ -198,7 +198,7 @@ msg
 @match altar|why
 The merchant in the generalshop came
 to me and have stolen my rod. That rod
-was a gift from the high council of the 
+was a gift from the high council of the
 ancient mages for me. I had it in the cage
 here in the shop. As I were outside the
 merchant came and have stolen it. Would
@@ -207,9 +207,9 @@ you help me to get it back?
 Ok you must go to the generalshop. In
 the basement there is a personal depot
 of the merchant. It is guarded by two old
-and very strong creatures. You must be 
+and very strong creatures. You must be
 very careful. There is only one rod. Please
-bring it to me and put it on the altar next 
+bring it to me and put it on the altar next
 to me. You will get a reward for it.
 @match *
 I'm too angry to help you.
@@ -1041,6 +1041,10 @@ x 13
 y 11
 end
 arch stonefloor2
+x 13
+y 12
+end
+arch menu
 x 13
 y 12
 end
