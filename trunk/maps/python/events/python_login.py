@@ -28,16 +28,15 @@ activator = CFPython.WhoIsActivator()
 name = CFPython.GetName(activator)
 ip = CFPython.WhatIsMessage()
 
-mail = CFMail.CFMail()
 log = CFLog.CFLog()
 
-
-total = mail.countmail(name)
 if log.info(name):
     log.login_update(name, ip)
 else:
     log.create(name)
 
+mail = CFMail.CFMail()
+total = mail.countmail(name)
 if total > 0:
 	CFPython.Write('You have some mail waiting for you', activator)
 else:
