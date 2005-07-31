@@ -412,10 +412,6 @@ arch marble
 x 2
 y 3
 end
-arch knight
-x 2
-y 3
-end
 arch marble
 x 2
 y 4
@@ -931,18 +927,18 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 100
-speed 1.0
+level 116
+speed 3.0
 attacktype 8388607
 wc 20
-hp 25000
-maxhp 25000
+hp 40000
+maxhp 40000
 ac -20
 Con 1500
 hitback 1
 sp 2500
 maxsp 2500
-Pow 1000
+Pow 100
 path_attuned 924025
 can_see_in_dark 1
 can_use_weapon 1
@@ -974,6 +970,7 @@ resist_blind 100
 resist_holyword 100
 resist_godpower 100
 animation NONE
+immune -1
 x 6
 y 1
 arch random_scroll
@@ -1169,6 +1166,125 @@ end
 arch marble
 x 7
 y 1
+end
+arch knight
+name Guard of the ancient mages
+face wizard.151
+level 116
+speed 3.0
+attacktype 8388607
+wc 20
+hp 40000
+maxhp 40000
+ac -20
+Con 1500
+hitback 1
+sp 2500
+maxsp 2500
+Pow 100
+path_attuned 924025
+can_see_in_dark 1
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_ring 1
+can_use_wand 1
+can_use_rod 1
+can_use_scroll 1
+can_use_skill 1
+resist_physical 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+animation NONE
+immune -1
+x 7
+y 1
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch ability_dragonbreath
+end
+arch abil_ball_lightning
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+arch abil_create_fire_wall
+end
+arch abil_frostbolt
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_medium_fireball
+end
+arch abil_poison_cloud
+end
+arch abil_slow
+end
 end
 arch marble
 x 7
@@ -1302,25 +1418,25 @@ arch guildmaster
 name King
 msg
 @match jerry|jipsy
-Hey do you know my monsters? Have you 
+Hey do you know my monsters? Have you
 been in the city when they did break out?
 @match maveric|founder
-Maveric was the founder and first king of 
-our great town. He is now buried in a 
+Maveric was the founder and first king of
+our great town. He is now buried in a
 catacomb below this palace.
 @match forgotten town
 Forgotten Town... That is the terrible name
-some people gave our city because for a 
-long time no travellers came here. They just 
+some people gave our city because for a
+long time no travellers came here. They just
 didn't pass the test and died.
 @match quest
 I know lots about quests. But i wont tell
-you what i know. The only hint I'll give is: in 
-the southern part of my city you can find a 
+you what i know. The only hint I'll give is: in
+the southern part of my city you can find a
 large quest.
 @match *
-Did you notice the large number of guards? 
-They do protect me, so do not even cosider 
+Did you notice the large number of guards?
+They do protect me, so do not even cosider
 to attack me. They surely will kill you.
 endmsg
 reflect_missile 1
@@ -1348,6 +1464,7 @@ resist_chaos 100
 resist_blind 100
 resist_holyword 100
 resist_godpower 100
+immune -1
 x 8
 y 1
 end
@@ -1375,16 +1492,16 @@ arch slevel_3_1
 x 8
 y 4
 end
-arch marble
-x 8
-y 5
-end
 arch magic_mouth
 msg
 One of the knights whispers to you:
-Never attack the Guards of the 
+Never attack the Guards of the
 ancient mages. You wont live long...
 endmsg
+x 8
+y 5
+end
+arch marble
 x 8
 y 5
 end
@@ -1514,6 +1631,7 @@ resist_chaos 100
 resist_blind 100
 resist_holyword 100
 resist_godpower 100
+immune -1
 x 9
 y 1
 end
@@ -1541,16 +1659,16 @@ arch slevel_3_1
 x 9
 y 4
 end
-arch marble
-x 9
-y 5
-end
 arch magic_mouth
 msg
 One of the knights whispers to you:
-Never attack the Guards of the 
+Never attack the Guards of the
 ancient mages. You wont live long...
 endmsg
+x 9
+y 5
+end
+arch marble
 x 9
 y 5
 end
@@ -1644,6 +1762,125 @@ end
 arch marble
 x 10
 y 1
+end
+arch knight
+name Guard of the ancient mages
+face wizard.151
+level 116
+speed 3.0
+attacktype 8388607
+wc 20
+hp 40000
+maxhp 40000
+ac -20
+Con 1500
+hitback 1
+sp 2500
+maxsp 2500
+Pow 100
+path_attuned 924025
+can_see_in_dark 1
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_ring 1
+can_use_wand 1
+can_use_rod 1
+can_use_scroll 1
+can_use_skill 1
+resist_physical 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_turn_undead 100
+resist_death 100
+resist_chaos 100
+resist_blind 100
+resist_holyword 100
+resist_godpower 100
+animation NONE
+immune -1
+x 10
+y 1
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_scroll
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch random_spells
+hp 100
+end
+arch ability_dragonbreath
+end
+arch abil_ball_lightning
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+arch abil_create_fire_wall
+end
+arch abil_frostbolt
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_medium_fireball
+end
+arch abil_poison_cloud
+end
+arch abil_slow
+end
 end
 arch marble
 x 10
@@ -1772,18 +2009,18 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 100
-speed 1.0
+level 116
+speed 3.0
 attacktype 8388607
 wc 20
-hp 25000
-maxhp 25000
+hp 40000
+maxhp 40000
 ac -20
 Con 1500
 hitback 1
 sp 2500
 maxsp 2500
-Pow 1000
+Pow 100
 path_attuned 924025
 can_see_in_dark 1
 can_use_weapon 1
@@ -1815,6 +2052,7 @@ resist_blind 100
 resist_holyword 100
 resist_godpower 100
 animation NONE
+immune -1
 x 11
 y 1
 arch random_scroll
@@ -2412,10 +2650,6 @@ x 15
 y 2
 end
 arch marble
-x 15
-y 3
-end
-arch knight
 x 15
 y 3
 end
@@ -2833,9 +3067,9 @@ x 18
 y 3
 end
 arch altar
-name drop 20000 diamonds for FT-Access Pass
+name drop 30000 diamonds for FT-Access Pass
 slaying diamond
-food 20000
+food 30000
 connected 221
 x 18
 y 3
