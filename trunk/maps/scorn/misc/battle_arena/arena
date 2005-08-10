@@ -1,13 +1,13 @@
 arch map
-region scornarena
 name arena
+region scornarena
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed 8.11.2000
 endmsg
-x 35
-y 45
+width 35
+height 45
 end
 arch cobblestones2
 end
@@ -230,57 +230,57 @@ arch blocked
 y 35
 end
 arch lightningwall_5
-y 36
 speed 1.000000
+y 36
 end
 arch igate_closed_1
 name 1
-y 37
 speed 0.500000
 protected 1
 connected 1
+y 37
 end
 arch igate_closed_1
 name 2
-y 38
 speed 0.500000
 protected 2
 connected 2
+y 38
 end
 arch detector
 name 3 - open teleporter-gate
 slaying lightning
-y 39
 protected 3
 connected 3
+y 39
 end
 arch blocked
 y 40
 end
 arch button_small
 name 21 - victory
-y 41
 protected 21
 connected 21
+y 41
 end
 arch creator
 name 20
 other_arch scroll
 hp 10000
-y 41
 protected 20
 connected 20
+y 41
 end
 arch igate_closed_1
 name 3
-y 42
 speed 0.500000
 protected 3
 connected 3
+y 42
 end
 arch lightningwall_1
-y 43
 speed 1.000000
+y 43
 end
 arch blocked
 y 44
@@ -588,33 +588,33 @@ x 1
 y 35
 end
 arch lightningwall_5
+speed 1.000000
 x 1
 y 36
-speed 1.000000
 end
 arch igate_closed_1
 name 4
-x 1
-y 37
 speed 0.500000
 protected 4
 connected 4
+x 1
+y 37
 end
 arch igate_closed_1
 name 5
-x 1
-y 38
 speed 0.500000
 protected 5
 connected 5
+x 1
+y 38
 end
 arch detector
 name 6 - teleport players
 slaying lightning
-x 1
-y 39
 protected 6
 connected 6
+x 1
+y 39
 end
 arch blocked
 x 1
@@ -1031,33 +1031,33 @@ x 2
 y 35
 end
 arch lightningwall_5
+speed 1.000000
 x 2
 y 36
-speed 1.000000
 end
 arch igate_closed_1
 name 7
-x 2
-y 37
 speed 0.500000
 protected 7
 connected 7
+x 2
+y 37
 end
 arch igate_closed_1
 name 8
-x 2
-y 38
 speed 0.500000
 protected 8
 connected 8
+x 2
+y 38
 end
 arch detector
 name 9 - open pits
 slaying lightning
-x 2
-y 39
 protected 9
 connected 9
+x 2
+y 39
 end
 arch blocked
 x 2
@@ -1247,11 +1247,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 3
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 3
+y 16
 end
 arch cwall_2_2_2
 x 3
@@ -1259,11 +1259,11 @@ y 16
 end
 arch stonefloor2
 name wall
-x 3
-y 17
 no_pass 1
 no_magic 1
 damned 1
+x 3
+y 17
 end
 arch cwall_2_1_1
 x 3
@@ -1271,11 +1271,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 3
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 3
+y 18
 end
 arch cwall_2_2_1
 x 3
@@ -1334,11 +1334,11 @@ right the hell in!
 endmsg
 hp 180
 maxhp 180
-x 3
-y 22
 friendly 1
 unaggressive 0
 random_movement 0
+x 3
+y 22
 end
 arch dungeon_magic
 x 3
@@ -1592,10 +1592,10 @@ Is it really so much fun?
 endmsg
 hp 150
 maxhp 150
-x 4
-y 7
 friendly 1
 unaggressive 0
+x 4
+y 7
 end
 arch dungeon_magic
 x 4
@@ -1691,11 +1691,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 4
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 4
+y 16
 end
 arch cwall_2_1_2
 x 4
@@ -1703,19 +1703,19 @@ y 16
 end
 arch stonefloor2
 name wall
-x 4
-y 17
 no_pass 1
 no_magic 1
 damned 1
+x 4
+y 17
 end
 arch stonefloor2
 name wall
-x 4
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 4
+y 18
 end
 arch cwall_2_1_2
 x 4
@@ -1898,76 +1898,76 @@ name 15
 msg
 THERE CAN ONLY BE ONE!!!
 endmsg
-x 4
-y 36
 protected 15
 connected 15
+x 4
+y 36
 end
 arch button_small
 name 14
-x 4
-y 36
 protected 14
 connected 14
-end
-arch mover_5
 x 4
 y 36
-level 1
-attacktype 1
 end
 arch mover_5
+level 1
+attacktype 1
+x 4
+y 36
+end
+arch mover_5
+level 1
+attacktype 1
 x 4
 y 37
-level 1
-attacktype 1
 end
 arch mover_5
+level 1
+attacktype 1
 x 4
 y 38
-level 1
-attacktype 1
 end
 arch mover_5
-x 4
-y 39
 level 1
 attacktype 1
+x 4
+y 39
 end
 arch kobold
 name dummy
 hp 200
 maxhp 200
-x 4
-y 39
 friendly 1
 unaggressive 1
+x 4
+y 39
 end
 arch mover_5
-x 4
-y 40
 level 1
 attacktype 1
+x 4
+y 40
 end
 arch grate_closed_1
 name 9
-x 4
-y 40
 speed 0.500000
 protected 9
 connected 9
+x 4
+y 40
 end
 arch mover_5
+level 1
+attacktype 1
 x 4
 y 41
-level 1
-attacktype 1
 end
 arch mover_5
-x 4
-y 42
 level 1
 attacktype 1
+x 4
+y 42
 end
 arch magic_mouth
 name 11
@@ -1976,23 +1976,23 @@ Ladieees aaand Gentelmeeen!!
 The Gladiators are ready for
 Cooombaaat!
 endmsg
-x 4
-y 43
 protected 11
 connected 11
+x 4
+y 43
 end
 arch button_small
 name 10
-x 4
-y 43
 protected 10
 connected 10
-end
-arch mover_3
 x 4
 y 43
+end
+arch mover_3
 level 1
 attacktype 1
+x 4
+y 43
 end
 arch blocked
 x 4
@@ -2099,12 +2099,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 5
-y 10
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 5
+y 10
 arch booze
 name medicine
 end
@@ -2151,21 +2151,21 @@ y 15
 end
 arch stonefloor2
 name wall
-x 5
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 5
+y 16
 end
 arch cwall_2_2_3
 x 5
 y 16
 end
 arch mover_3
-x 5
-y 17
 level 1
 attacktype 1
+x 5
+y 17
 end
 arch stonefloor2
 name stonefloor
@@ -2179,11 +2179,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 5
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 5
+y 18
 end
 arch cwall_2_2_4
 x 5
@@ -2244,12 +2244,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 5
-y 24
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 5
+y 24
 arch booze
 name medicine
 end
@@ -2348,79 +2348,79 @@ y 35
 end
 arch button_small
 name 13
-x 5
-y 36
 protected 13
 connected 13
+x 5
+y 36
 end
 arch mover_7
+level 1
+attacktype 1
 x 5
 y 36
-level 1
-attacktype 1
 end
 arch button_small
 name 13
+protected 13
+connected 13
 x 5
 y 37
-protected 13
-connected 13
 end
 arch mover_1
+level 1
+attacktype 1
 x 5
 y 37
-level 1
-attacktype 1
 end
 arch button_small
 name 13
-x 5
-y 38
 protected 13
 connected 13
-end
-arch mover_1
 x 5
 y 38
+end
+arch mover_1
 level 1
 attacktype 1
+x 5
+y 38
 end
 arch button_small
 name 13
-x 5
-y 39
 protected 13
 connected 13
-end
-arch mover_1
 x 5
 y 39
-level 1
-attacktype 1
 end
 arch mover_1
+level 1
+attacktype 1
+x 5
+y 39
+end
+arch mover_1
+level 1
+attacktype 1
 x 5
 y 40
-level 1
-attacktype 1
 end
 arch mover_3
+level 1
+attacktype 1
 x 5
 y 41
-level 1
-attacktype 1
 end
 arch mover_1
+level 1
+attacktype 1
 x 5
 y 42
-level 1
-attacktype 1
 end
 arch mover_3
-x 5
-y 43
 level 1
 attacktype 1
+x 5
+y 43
 end
 arch blocked
 x 5
@@ -2486,11 +2486,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 6
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 6
 end
 arch slevel_4
 x 6
@@ -2498,23 +2498,23 @@ y 6
 end
 arch stonefloor2
 name wall
-x 6
-y 7
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_4
 x 6
 y 7
 end
+arch slevel_3_4
+x 6
+y 7
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 8
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_4
 x 6
@@ -2522,23 +2522,23 @@ y 8
 end
 arch stonefloor2
 name wall
-x 6
-y 9
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_4
 x 6
 y 9
 end
+arch slevel_3_4
+x 6
+y 9
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 10
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_4
 x 6
@@ -2546,23 +2546,23 @@ y 10
 end
 arch stonefloor2
 name wall
-x 6
-y 11
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_4
 x 6
 y 11
 end
+arch slevel_3_4
+x 6
+y 11
+end
 arch stonefloor2
 name wall
-x 6
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 12
 end
 arch slevel_3_4
 x 6
@@ -2570,11 +2570,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 6
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 13
 end
 arch slevel_3_4
 x 6
@@ -2582,11 +2582,11 @@ y 13
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 14
-no_pass 1
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 6
@@ -2605,28 +2605,28 @@ y 15
 end
 arch stonefloor2
 name wall
-x 6
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 16
 end
 arch slevel_3_1
 x 6
 y 16
 end
 arch mover_3
-x 6
-y 17
 level 1
 attacktype 1
+x 6
+y 17
 end
 arch pedestal
 name 7
-x 6
-y 17
 protected 7
 connected 7
+x 6
+y 17
 end
 arch battleground
 hp 28
@@ -2636,11 +2636,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 6
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 18
 end
 arch slevel_3_3
 x 6
@@ -2663,19 +2663,19 @@ y 19
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 20
-no_pass 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 name wall
-x 6
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 21
 end
 arch slevel_3_4
 x 6
@@ -2683,23 +2683,23 @@ y 21
 end
 arch stonefloor2
 name wall
-x 6
-y 22
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_4
 x 6
 y 22
 end
+arch slevel_3_4
+x 6
+y 22
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 23
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_4
 x 6
@@ -2707,23 +2707,23 @@ y 23
 end
 arch stonefloor2
 name wall
-x 6
-y 24
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_4
 x 6
 y 24
 end
+arch slevel_3_4
+x 6
+y 24
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 25
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_4
 x 6
@@ -2731,11 +2731,11 @@ y 25
 end
 arch stonefloor2
 name wall
-x 6
-y 26
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 26
 end
 arch slevel_3_4
 x 6
@@ -2743,11 +2743,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 6
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 6
+y 27
 end
 arch slevel_3_4
 x 6
@@ -2755,11 +2755,11 @@ y 27
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 6
 y 28
-no_pass 1
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 6
@@ -2842,28 +2842,28 @@ x 6
 y 39
 end
 arch mover_7
+level 1
+attacktype 1
 x 6
 y 40
-level 1
-attacktype 1
 end
 arch mover_1
+level 1
+attacktype 1
 x 6
 y 41
-level 1
-attacktype 1
 end
 arch mover_7
+level 1
+attacktype 1
 x 6
 y 42
-level 1
-attacktype 1
 end
 arch mover_1
-x 6
-y 43
 level 1
 attacktype 1
+x 6
+y 43
 end
 arch blocked
 x 6
@@ -2929,11 +2929,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 7
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 6
 end
 arch slevel_3_1
 x 7
@@ -2983,11 +2983,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 7
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 14
 end
 arch slevel_2_2_3
 x 7
@@ -2995,11 +2995,11 @@ y 14
 end
 arch stonefloor2
 name wall
-x 7
-y 15
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 15
 end
 arch slevel_3_4
 x 7
@@ -3007,11 +3007,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 7
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 16
 end
 arch slevel_2_2_4
 x 7
@@ -3022,10 +3022,10 @@ x 7
 y 17
 end
 arch mover_3
-x 7
-y 17
 level 1
 attacktype 1
+x 7
+y 17
 end
 arch battleground
 hp 28
@@ -3034,19 +3034,19 @@ x 7
 y 17
 end
 arch grate_closed_2
-x 7
-y 17
 speed 0.500000
 protected 13
 connected 13
+x 7
+y 17
 end
 arch stonefloor2
 name wall
-x 7
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 18
 end
 arch slevel_2_2_3
 x 7
@@ -3054,11 +3054,11 @@ y 18
 end
 arch stonefloor2
 name wall
-x 7
-y 19
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 19
 end
 arch slevel_3_4
 x 7
@@ -3066,11 +3066,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 7
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 20
 end
 arch slevel_2_2_4
 x 7
@@ -3120,11 +3120,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 7
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 7
+y 28
 end
 arch slevel_3_3
 x 7
@@ -3197,39 +3197,39 @@ end
 arch detector
 name 11
 slaying scroll
-x 7
-y 36
 protected 11
 connected 11
+x 7
+y 36
 end
 arch button_small
 name 12 - four scrolls
-x 7
-y 36
 protected 12
 weight 800
 connected 12
+x 7
+y 36
 end
 arch creator
 name 10
 other_arch scroll
 hp 10000
-x 7
-y 36
 protected 10
 connected 10
+x 7
+y 36
 end
 arch igateTrg1
 name 12 - trigger
-x 7
-y 37
 protected 12
 connected 12
+x 7
+y 37
 end
 arch lightningwall_1
+speed 1.000000
 x 7
 y 38
-speed 1.000000
 end
 arch blocked
 x 7
@@ -3315,11 +3315,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 8
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 8
+y 6
 end
 arch slevel_3_1
 x 8
@@ -3453,11 +3453,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 8
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 8
+y 28
 end
 arch slevel_3_3
 x 8
@@ -3530,39 +3530,39 @@ end
 arch detector
 name 15
 slaying scroll
-x 8
-y 36
 protected 15
 connected 15
+x 8
+y 36
 end
 arch button_small
 name 16 - four scrolls
-x 8
-y 36
 protected 16
 weight 800
 connected 16
+x 8
+y 36
 end
 arch creator
 name 14
 other_arch scroll
 hp 10000
-x 8
-y 36
 protected 14
 connected 14
+x 8
+y 36
 end
 arch igateTrg1
 name 16 - trigger
-x 8
-y 37
 protected 16
 connected 16
+x 8
+y 37
 end
 arch lightningwall_1
+speed 1.000000
 x 8
 y 38
-speed 1.000000
 end
 arch flagstone
 x 8
@@ -3677,23 +3677,23 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 9
-y 5
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 9
+y 5
 arch booze
 name medicine
 end
 end
 arch stonefloor2
 name wall
-x 9
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 9
+y 6
 end
 arch slevel_3_1
 x 9
@@ -3827,11 +3827,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 9
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 9
+y 28
 end
 arch slevel_3_3
 x 9
@@ -3852,12 +3852,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 9
-y 29
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 9
+y 29
 arch booze
 name medicine
 end
@@ -4034,13 +4034,13 @@ msg
 @match *
 Gni hi hi... Mostrai rules!
 endmsg
-x 10
-y 3
 run_away 0
 pick_up 0
 will_apply 0
 friendly 1
 random_movement 0
+x 10
+y 3
 end
 arch dungeon_magic
 x 10
@@ -4064,11 +4064,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 10
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 10
+y 6
 end
 arch slevel_3_1
 x 10
@@ -4202,11 +4202,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 10
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 10
+y 28
 end
 arch slevel_3_3
 x 10
@@ -4372,11 +4372,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 11
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 11
+y 6
 end
 arch slevel_3_1
 x 11
@@ -4510,11 +4510,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 11
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 11
+y 28
 end
 arch slevel_3_3
 x 11
@@ -4541,21 +4541,21 @@ x 11
 y 30
 end
 arch wizard
+face wizard.111
 msg
 @match *
 Most gladiators don't know how to use
 magic efficiently!
 endmsg
-face wizard.111
+type 0
 hp 100
 maxhp 100
-x 11
-y 30
 level 10
-type 0
 randomitems standard
 monster 1
 friendly 1
+x 11
+y 30
 end
 arch dungeon_magic
 x 11
@@ -4701,19 +4701,19 @@ y 5
 end
 arch stonefloor2
 name wall
-x 12
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 6
 end
 arch stonefloor2
 name wall
-x 12
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 7
 end
 arch slevel_2_2_1
 x 12
@@ -4745,11 +4745,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 12
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 12
 end
 arch slevel_2_2_2
 x 12
@@ -4757,11 +4757,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 12
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 13
 end
 arch slevel_3_2
 x 12
@@ -4769,11 +4769,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 12
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 14
 end
 arch slevel_2_2_1
 x 12
@@ -4811,11 +4811,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 12
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 20
 end
 arch slevel_2_2_2
 x 12
@@ -4823,11 +4823,11 @@ y 20
 end
 arch stonefloor2
 name wall
-x 12
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 21
 end
 arch slevel_3_2
 x 12
@@ -4835,11 +4835,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 12
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 22
 end
 arch slevel_2_2_1
 x 12
@@ -4871,11 +4871,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 12
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 27
 end
 arch slevel_2_2_2
 x 12
@@ -4883,11 +4883,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 12
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 12
+y 28
 end
 arch dungeon_magic
 x 12
@@ -5076,11 +5076,11 @@ y 6
 end
 arch stonefloor2
 name wall
-x 13
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 7
 end
 arch slevel_3_1
 x 13
@@ -5112,11 +5112,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 13
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 12
 end
 arch slevel_3_3
 x 13
@@ -5140,11 +5140,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 13
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 14
 end
 arch slevel_3_1
 x 13
@@ -5182,11 +5182,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 13
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 20
 end
 arch slevel_3_3
 x 13
@@ -5210,11 +5210,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 13
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 22
 end
 arch slevel_3_1
 x 13
@@ -5246,11 +5246,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 13
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 13
+y 27
 end
 arch slevel_3_3
 x 13
@@ -5423,19 +5423,19 @@ y 5
 end
 arch stonefloor2
 name wall
-x 14
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 6
 end
 arch stonefloor2
 name wall
-x 14
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 7
 end
 arch slevel_2_2_4
 x 14
@@ -5467,11 +5467,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 14
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 12
 end
 arch slevel_2_2_3
 x 14
@@ -5479,11 +5479,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 14
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 13
 end
 arch slevel_3_4
 x 14
@@ -5495,11 +5495,11 @@ y 14
 end
 arch stonefloor2
 name wall
-x 14
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 14
 end
 arch slevel_2_2_4
 x 14
@@ -5537,11 +5537,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 14
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 20
 end
 arch slevel_2_2_3
 x 14
@@ -5549,11 +5549,11 @@ y 20
 end
 arch stonefloor2
 name wall
-x 14
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 21
 end
 arch slevel_3_4
 x 14
@@ -5561,11 +5561,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 14
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 22
 end
 arch slevel_2_2_4
 x 14
@@ -5597,11 +5597,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 14
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 27
 end
 arch slevel_2_2_3
 x 14
@@ -5609,11 +5609,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 14
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 14
+y 28
 end
 arch dungeon_magic
 x 14
@@ -5696,12 +5696,12 @@ x 14
 y 37
 end
 arch grate_open_2
+speed 0.500000
+protected 1
+value 1
+connected 1
 x 14
 y 37
-speed 0.500000
-protected 1
-value 1
-connected 1
 end
 arch dungeon_magic
 x 14
@@ -5712,12 +5712,12 @@ x 14
 y 38
 end
 arch grate_open_2
-x 14
-y 38
 speed 0.500000
 protected 1
 value 1
 connected 1
+x 14
+y 38
 end
 arch dungeon_magic
 x 14
@@ -5728,12 +5728,12 @@ x 14
 y 39
 end
 arch grate_open_2
-x 14
-y 39
 speed 0.500000
 protected 1
 value 1
 connected 1
+x 14
+y 39
 end
 arch dungeon_magic
 x 14
@@ -5779,19 +5779,19 @@ y 1
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 15
 y 2
-no_pass 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 name wall
-x 15
-y 3
 no_pass 1
 no_magic 1
 damned 1
+x 15
+y 3
 end
 arch slevel_3_4
 x 15
@@ -5799,11 +5799,11 @@ y 3
 end
 arch stonefloor2
 name wall
-x 15
-y 4
 no_pass 1
 no_magic 1
 damned 1
+x 15
+y 4
 end
 arch slevel_3_4
 x 15
@@ -5811,11 +5811,11 @@ y 4
 end
 arch stonefloor2
 name wall
-x 15
-y 5
 no_pass 1
 no_magic 1
 damned 1
+x 15
+y 5
 end
 arch slevel_3_4
 x 15
@@ -5823,11 +5823,11 @@ y 5
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 15
 y 6
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_1
 x 15
@@ -5961,11 +5961,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 15
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 15
+y 28
 end
 arch slevel_3_3
 x 15
@@ -6043,11 +6043,11 @@ end
 arch pit_closed
 hp 17
 sp 4
+protected 9
+invisible 1
+connected 9
 x 15
 y 37
-protected 9
-invisible 1
-connected 9
 end
 arch dungeon_magic
 x 15
@@ -6061,11 +6061,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 15
-y 38
 protected 9
 invisible 1
 connected 9
+x 15
+y 38
 end
 arch dungeon_magic
 x 15
@@ -6079,11 +6079,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 15
-y 39
 protected 9
 invisible 1
 connected 9
+x 15
+y 39
 end
 arch dungeon_magic
 x 15
@@ -6133,11 +6133,11 @@ x 15
 y 43
 end
 arch grate_closed_2
-x 15
-y 43
 speed 0.500000
 protected 3
 connected 3
+x 15
+y 43
 end
 arch dungeon_magic
 x 15
@@ -6167,11 +6167,11 @@ y 1
 end
 arch stonefloor2
 name wall
-x 16
-y 2
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 2
 end
 arch slevel_3_1
 x 16
@@ -6181,6 +6181,12 @@ arch dungeon_magic
 x 16
 y 3
 end
+arch battleground
+hp 28
+sp 37
+x 16
+y 3
+end
 arch cobblestones
 x 16
 y 3
@@ -6189,11 +6195,23 @@ arch dungeon_magic
 x 16
 y 4
 end
+arch battleground
+hp 28
+sp 37
+x 16
+y 4
+end
 arch cobblestones
 x 16
 y 4
 end
 arch dungeon_magic
+x 16
+y 5
+end
+arch battleground
+hp 28
+sp 37
 x 16
 y 5
 end
@@ -6203,11 +6221,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 16
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 6
 end
 arch slevel_1_3
 x 16
@@ -6341,11 +6359,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 16
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 28
 end
 arch slevel_2_2_3
 x 16
@@ -6353,11 +6371,11 @@ y 28
 end
 arch stonefloor2
 name wall
-x 16
-y 29
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 29
 end
 arch slevel_3_4
 x 16
@@ -6369,11 +6387,11 @@ y 30
 end
 arch stonefloor2
 name wall
-x 16
-y 30
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 30
 end
 arch cwall_2_2_2
 x 16
@@ -6399,11 +6417,11 @@ y 32
 end
 arch stonefloor2
 name wall
-x 16
-y 32
 no_pass 1
 no_magic 1
 damned 1
+x 16
+y 32
 end
 arch cwall_2_2_1
 x 16
@@ -6449,11 +6467,11 @@ end
 arch pit_closed
 hp 17
 sp 4
+protected 9
+invisible 1
+connected 9
 x 16
 y 37
-protected 9
-invisible 1
-connected 9
 end
 arch dungeon_magic
 x 16
@@ -6467,11 +6485,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 16
-y 38
 protected 9
 invisible 1
 connected 9
+x 16
+y 38
 end
 arch dungeon_magic
 x 16
@@ -6485,11 +6503,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 16
-y 39
 protected 9
 invisible 1
 connected 9
+x 16
+y 39
 end
 arch dungeon_magic
 x 16
@@ -6509,10 +6527,10 @@ y 41
 end
 arch button_lever
 name accept
-x 16
-y 41
 protected 1
 connected 1
+x 16
+y 41
 end
 arch dungeon_magic
 x 16
@@ -6532,10 +6550,10 @@ y 43
 end
 arch pedestal
 name 4
-x 16
-y 43
 protected 4
 connected 4
+x 16
+y 43
 end
 arch flagstone
 x 16
@@ -6545,11 +6563,11 @@ arch teleporter
 slaying arena
 hp 26
 sp 44
-x 16
-y 43
 speed 0.000000
 protected 6
 connected 6
+x 16
+y 43
 end
 arch dungeon_magic
 x 16
@@ -6579,11 +6597,11 @@ y 1
 end
 arch stonefloor2
 name wall
-x 17
-y 2
 no_pass 1
 no_magic 1
 damned 1
+x 17
+y 2
 end
 arch slevel_3_1
 x 17
@@ -6593,6 +6611,12 @@ arch dungeon_magic
 x 17
 y 3
 end
+arch battleground
+hp 28
+sp 37
+x 17
+y 3
+end
 arch cobblestones
 x 17
 y 3
@@ -6601,6 +6625,12 @@ arch dungeon_magic
 x 17
 y 4
 end
+arch battleground
+hp 28
+sp 37
+x 17
+y 4
+end
 arch cobblestones
 x 17
 y 4
@@ -6609,6 +6639,12 @@ arch dungeon_magic
 x 17
 y 5
 end
+arch battleground
+hp 28
+sp 37
+x 17
+y 5
+end
 arch cobblestones
 x 17
 y 5
@@ -6617,16 +6653,22 @@ arch dungeon_magic
 x 17
 y 6
 end
+arch battleground
+hp 28
+sp 37
+x 17
+y 6
+end
 arch pstone_2
 x 17
 y 6
 end
 arch grate_closed_1
-x 17
-y 6
 speed 0.500000
 protected 21
 connected 21
+x 17
+y 6
 end
 arch battleground
 hp 28
@@ -6758,16 +6800,22 @@ arch dungeon_magic
 x 17
 y 28
 end
+arch battleground
+hp 28
+sp 37
+x 17
+y 28
+end
 arch pstone_2
 x 17
 y 28
 end
 arch grate_closed_1
-x 17
-y 28
 speed 0.500000
 protected 21
 connected 21
+x 17
+y 28
 end
 arch dungeon_magic
 x 17
@@ -6779,6 +6827,12 @@ A cheering crowd is waiting for you
 upstairs... You are the hero of
 the day!
 endmsg
+x 17
+y 29
+end
+arch battleground
+hp 28
+sp 37
 x 17
 y 29
 end
@@ -6800,11 +6854,11 @@ y 30
 end
 arch stonefloor2
 name wall
-x 17
-y 30
 no_pass 1
 no_magic 1
 damned 1
+x 17
+y 30
 end
 arch cwall_2_1_2
 x 17
@@ -6825,11 +6879,11 @@ y 32
 end
 arch stonefloor2
 name wall
-x 17
-y 32
 no_pass 1
 no_magic 1
 damned 1
+x 17
+y 32
 end
 arch cwall_2_1_2
 x 17
@@ -6975,11 +7029,11 @@ y 1
 end
 arch stonefloor2
 name wall
-x 18
-y 2
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 2
 end
 arch slevel_3_1
 x 18
@@ -6989,6 +7043,12 @@ arch dungeon_magic
 x 18
 y 3
 end
+arch battleground
+hp 28
+sp 37
+x 18
+y 3
+end
 arch cobblestones
 x 18
 y 3
@@ -6997,11 +7057,23 @@ arch dungeon_magic
 x 18
 y 4
 end
+arch battleground
+hp 28
+sp 37
+x 18
+y 4
+end
 arch cobblestones
 x 18
 y 4
 end
 arch dungeon_magic
+x 18
+y 5
+end
+arch battleground
+hp 28
+sp 37
 x 18
 y 5
 end
@@ -7011,11 +7083,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 18
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 6
 end
 arch slevel_1_4
 x 18
@@ -7149,11 +7221,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 18
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 28
 end
 arch slevel_2_2_2
 x 18
@@ -7161,11 +7233,11 @@ y 28
 end
 arch stonefloor2
 name wall
-x 18
-y 29
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 29
 end
 arch slevel_3_2
 x 18
@@ -7177,11 +7249,11 @@ y 30
 end
 arch stonefloor2
 name wall
-x 18
-y 30
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 30
 end
 arch cwall_2_2_3
 x 18
@@ -7207,11 +7279,11 @@ y 32
 end
 arch stonefloor2
 name wall
-x 18
-y 32
 no_pass 1
 no_magic 1
 damned 1
+x 18
+y 32
 end
 arch cwall_2_2_4
 x 18
@@ -7257,11 +7329,11 @@ end
 arch pit_closed
 hp 17
 sp 4
+protected 9
+invisible 1
+connected 9
 x 18
 y 37
-protected 9
-invisible 1
-connected 9
 end
 arch dungeon_magic
 x 18
@@ -7275,11 +7347,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 18
-y 38
 protected 9
 invisible 1
 connected 9
+x 18
+y 38
 end
 arch dungeon_magic
 x 18
@@ -7293,11 +7365,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 18
-y 39
 protected 9
 invisible 1
 connected 9
+x 18
+y 39
 end
 arch dungeon_magic
 x 18
@@ -7317,10 +7389,10 @@ y 41
 end
 arch button_lever
 name accept
-x 18
-y 41
 protected 2
 connected 2
+x 18
+y 41
 end
 arch dungeon_magic
 x 18
@@ -7340,10 +7412,10 @@ y 43
 end
 arch pedestal
 name 5
-x 18
-y 43
 protected 5
 connected 5
+x 18
+y 43
 end
 arch flagstone
 x 18
@@ -7353,11 +7425,11 @@ arch teleporter
 slaying arena
 hp 33
 sp 44
-x 18
-y 43
 speed 0.000000
 protected 6
 connected 6
+x 18
+y 43
 end
 arch dungeon_magic
 x 18
@@ -7387,19 +7459,19 @@ y 1
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 19
 y 2
-no_pass 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 name wall
-x 19
-y 3
 no_pass 1
 no_magic 1
 damned 1
+x 19
+y 3
 end
 arch slevel_3_2
 x 19
@@ -7407,11 +7479,11 @@ y 3
 end
 arch stonefloor2
 name wall
-x 19
-y 4
 no_pass 1
 no_magic 1
 damned 1
+x 19
+y 4
 end
 arch slevel_3_2
 x 19
@@ -7419,11 +7491,11 @@ y 4
 end
 arch stonefloor2
 name wall
-x 19
-y 5
 no_pass 1
 no_magic 1
 damned 1
+x 19
+y 5
 end
 arch slevel_3_2
 x 19
@@ -7431,11 +7503,11 @@ y 5
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 19
 y 6
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_1
 x 19
@@ -7569,11 +7641,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 19
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 19
+y 28
 end
 arch slevel_3_3
 x 19
@@ -7651,11 +7723,11 @@ end
 arch pit_closed
 hp 17
 sp 4
+protected 9
+invisible 1
+connected 9
 x 19
 y 37
-protected 9
-invisible 1
-connected 9
 end
 arch dungeon_magic
 x 19
@@ -7669,11 +7741,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 19
-y 38
 protected 9
 invisible 1
 connected 9
+x 19
+y 38
 end
 arch dungeon_magic
 x 19
@@ -7687,11 +7759,11 @@ end
 arch pit_closed
 hp 17
 sp 4
-x 19
-y 39
 protected 9
 invisible 1
 connected 9
+x 19
+y 39
 end
 arch dungeon_magic
 x 19
@@ -7741,11 +7813,11 @@ x 19
 y 43
 end
 arch grate_closed_2
-x 19
-y 43
 speed 0.500000
 protected 3
 connected 3
+x 19
+y 43
 end
 arch dungeon_magic
 x 19
@@ -7807,19 +7879,19 @@ y 5
 end
 arch stonefloor2
 name wall
-x 20
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 6
 end
 arch stonefloor2
 name wall
-x 20
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 7
 end
 arch slevel_2_2_1
 x 20
@@ -7851,11 +7923,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 20
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 12
 end
 arch slevel_2_2_2
 x 20
@@ -7863,11 +7935,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 20
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 13
 end
 arch slevel_3_2
 x 20
@@ -7875,11 +7947,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 20
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 14
 end
 arch slevel_2_2_1
 x 20
@@ -7917,11 +7989,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 20
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 20
 end
 arch slevel_2_2_2
 x 20
@@ -7929,11 +8001,11 @@ y 20
 end
 arch stonefloor2
 name wall
-x 20
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 21
 end
 arch slevel_3_2
 x 20
@@ -7941,11 +8013,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 20
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 22
 end
 arch slevel_2_2_1
 x 20
@@ -7977,11 +8049,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 20
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 27
 end
 arch slevel_2_2_2
 x 20
@@ -7989,11 +8061,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 20
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 20
+y 28
 end
 arch dungeon_magic
 x 20
@@ -8076,12 +8148,12 @@ x 20
 y 37
 end
 arch grate_open_2
+speed 0.500000
+protected 2
+value 1
+connected 2
 x 20
 y 37
-speed 0.500000
-protected 2
-value 1
-connected 2
 end
 arch dungeon_magic
 x 20
@@ -8092,12 +8164,12 @@ x 20
 y 38
 end
 arch grate_open_2
-x 20
-y 38
 speed 0.500000
 protected 2
 value 1
 connected 2
+x 20
+y 38
 end
 arch dungeon_magic
 x 20
@@ -8108,12 +8180,12 @@ x 20
 y 39
 end
 arch grate_open_2
-x 20
-y 39
 speed 0.500000
 protected 2
 value 1
 connected 2
+x 20
+y 39
 end
 arch dungeon_magic
 x 20
@@ -8222,11 +8294,11 @@ y 7
 end
 arch stonefloor2
 name wall
-x 21
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 7
 end
 arch slevel_3_1
 x 21
@@ -8258,11 +8330,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 21
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 12
 end
 arch slevel_3_3
 x 21
@@ -8286,11 +8358,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 21
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 14
 end
 arch slevel_3_1
 x 21
@@ -8328,11 +8400,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 21
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 20
 end
 arch slevel_3_3
 x 21
@@ -8356,11 +8428,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 21
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 22
 end
 arch slevel_3_1
 x 21
@@ -8392,11 +8464,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 21
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 21
+y 27
 end
 arch slevel_3_3
 x 21
@@ -8581,11 +8653,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 22
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 6
 end
 arch slevel_4
 x 22
@@ -8593,11 +8665,11 @@ y 7
 end
 arch stonefloor2
 name wall
-x 22
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 7
 end
 arch slevel_2_2_4
 x 22
@@ -8629,11 +8701,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 22
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 12
 end
 arch slevel_2_2_3
 x 22
@@ -8641,11 +8713,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 22
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 13
 end
 arch slevel_3_4
 x 22
@@ -8653,11 +8725,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 22
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 14
 end
 arch slevel_2_2_4
 x 22
@@ -8695,11 +8767,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 22
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 20
 end
 arch slevel_2_2_3
 x 22
@@ -8707,11 +8779,11 @@ y 20
 end
 arch stonefloor2
 name wall
-x 22
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 21
 end
 arch slevel_3_4
 x 22
@@ -8719,11 +8791,11 @@ y 21
 end
 arch stonefloor2
 name wall
-x 22
-y 22
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 22
 end
 arch slevel_2_2_4
 x 22
@@ -8755,11 +8827,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 22
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 27
 end
 arch slevel_2_2_3
 x 22
@@ -8767,11 +8839,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 22
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 22
+y 28
 end
 arch dungeon_magic
 x 22
@@ -8945,12 +9017,12 @@ endmsg
 hp 100
 maxhp 100
 ac -30
-x 23
-y 4
 level 10
 friendly 1
 unaggressive 0
 random_movement 0
+x 23
+y 4
 end
 arch dungeon_magic
 x 23
@@ -8962,11 +9034,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 23
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 23
+y 6
 end
 arch slevel_3_1
 x 23
@@ -9100,11 +9172,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 23
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 23
+y 28
 end
 arch slevel_3_3
 x 23
@@ -9274,11 +9346,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 24
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 24
+y 6
 end
 arch slevel_3_1
 x 24
@@ -9412,11 +9484,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 24
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 24
+y 28
 end
 arch slevel_3_3
 x 24
@@ -9623,23 +9695,23 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 25
-y 5
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 25
+y 5
 arch booze
 name medicine
 end
 end
 arch stonefloor2
 name wall
-x 25
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 25
+y 6
 end
 arch slevel_3_1
 x 25
@@ -9773,11 +9845,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 25
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 25
+y 28
 end
 arch slevel_3_3
 x 25
@@ -9798,12 +9870,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 25
-y 29
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 25
+y 29
 arch booze
 name medicine
 end
@@ -9960,11 +10032,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 26
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 26
+y 6
 end
 arch slevel_3_1
 x 26
@@ -10098,11 +10170,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 26
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 26
+y 28
 end
 arch slevel_3_3
 x 26
@@ -10245,10 +10317,10 @@ x 26
 y 44
 end
 arch button_lever
-x 26
-y 44
 protected 1
 connected 1
+x 26
+y 44
 end
 arch cobblestones2
 x 27
@@ -10310,11 +10382,11 @@ y 5
 end
 arch stonefloor2
 name wall
-x 27
-y 6
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 6
 end
 arch slevel_3_1
 x 27
@@ -10364,11 +10436,11 @@ y 13
 end
 arch stonefloor2
 name wall
-x 27
-y 14
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 14
 end
 arch slevel_2_2_2
 x 27
@@ -10376,11 +10448,11 @@ y 14
 end
 arch stonefloor2
 name wall
-x 27
-y 15
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 15
 end
 arch slevel_3_2
 x 27
@@ -10388,11 +10460,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 27
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 16
 end
 arch slevel_2_2_1
 x 27
@@ -10403,10 +10475,10 @@ x 27
 y 17
 end
 arch mover_7
-x 27
-y 17
 level 1
 attacktype 1
+x 27
+y 17
 end
 arch battleground
 hp 28
@@ -10415,19 +10487,19 @@ x 27
 y 17
 end
 arch grate_closed_2
-x 27
-y 17
 speed 0.500000
 protected 13
 connected 13
+x 27
+y 17
 end
 arch stonefloor2
 name wall
-x 27
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 18
 end
 arch slevel_2_2_2
 x 27
@@ -10435,11 +10507,11 @@ y 18
 end
 arch stonefloor2
 name wall
-x 27
-y 19
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 19
 end
 arch slevel_3_2
 x 27
@@ -10447,11 +10519,11 @@ y 19
 end
 arch stonefloor2
 name wall
-x 27
-y 20
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 20
 end
 arch slevel_2_2_1
 x 27
@@ -10501,11 +10573,11 @@ y 27
 end
 arch stonefloor2
 name wall
-x 27
-y 28
 no_pass 1
 no_magic 1
 damned 1
+x 27
+y 28
 end
 arch slevel_3_3
 x 27
@@ -10620,12 +10692,12 @@ x 27
 y 44
 end
 arch igate_open_2
-x 27
-y 44
 speed 0.500000
 protected 1
 value 1
 connected 1
+x 27
+y 44
 end
 arch cobblestones2
 x 28
@@ -10687,19 +10759,19 @@ y 5
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 6
-no_pass 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 name wall
-x 28
-y 7
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 7
 end
 arch slevel_3_2
 x 28
@@ -10707,23 +10779,23 @@ y 7
 end
 arch stonefloor2
 name wall
-x 28
-y 8
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_2
 x 28
 y 8
 end
+arch slevel_3_2
+x 28
+y 8
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 9
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_2
 x 28
@@ -10731,23 +10803,23 @@ y 9
 end
 arch stonefloor2
 name wall
-x 28
-y 10
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_2
 x 28
 y 10
 end
+arch slevel_3_2
+x 28
+y 10
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 11
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_2
 x 28
@@ -10755,11 +10827,11 @@ y 11
 end
 arch stonefloor2
 name wall
-x 28
-y 12
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 12
 end
 arch slevel_3_2
 x 28
@@ -10767,11 +10839,11 @@ y 12
 end
 arch stonefloor2
 name wall
-x 28
-y 13
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 13
 end
 arch slevel_3_2
 x 28
@@ -10779,11 +10851,11 @@ y 13
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 14
-no_pass 1
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 28
@@ -10802,28 +10874,28 @@ y 15
 end
 arch stonefloor2
 name wall
-x 28
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 16
 end
 arch slevel_3_1
 x 28
 y 16
 end
 arch mover_7
-x 28
-y 17
 level 1
 attacktype 1
+x 28
+y 17
 end
 arch pedestal
 name 8
-x 28
-y 17
 protected 8
 connected 8
+x 28
+y 17
 end
 arch battleground
 hp 28
@@ -10833,11 +10905,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 28
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 18
 end
 arch slevel_3_3
 x 28
@@ -10860,19 +10932,19 @@ y 19
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 20
-no_pass 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 name wall
-x 28
-y 21
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 21
 end
 arch slevel_3_2
 x 28
@@ -10880,23 +10952,23 @@ y 21
 end
 arch stonefloor2
 name wall
-x 28
-y 22
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_2
 x 28
 y 22
 end
+arch slevel_3_2
+x 28
+y 22
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 23
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_2
 x 28
@@ -10904,23 +10976,23 @@ y 23
 end
 arch stonefloor2
 name wall
-x 28
-y 24
 no_pass 1
 no_magic 1
 damned 1
-end
-arch slevel_3_2
 x 28
 y 24
 end
+arch slevel_3_2
+x 28
+y 24
+end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 25
-no_pass 1
-no_magic 1
-damned 1
 end
 arch slevel_3_2
 x 28
@@ -10928,11 +11000,11 @@ y 25
 end
 arch stonefloor2
 name wall
-x 28
-y 26
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 26
 end
 arch slevel_3_2
 x 28
@@ -10940,11 +11012,11 @@ y 26
 end
 arch stonefloor2
 name wall
-x 28
-y 27
 no_pass 1
 no_magic 1
 damned 1
+x 28
+y 27
 end
 arch slevel_3_2
 x 28
@@ -10952,11 +11024,11 @@ y 27
 end
 arch stonefloor2
 name wall
+no_pass 1
+no_magic 1
+damned 1
 x 28
 y 28
-no_pass 1
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 28
@@ -11028,10 +11100,10 @@ y 36
 end
 arch button_small
 name 20
-x 28
-y 37
 protected 20
 connected 20
+x 28
+y 37
 end
 arch flagstone
 name darkness
@@ -11042,12 +11114,12 @@ end
 arch teleporter
 slaying entrance
 sp 23
-x 28
-y 37
 speed 0.000000
 protected 20
 invisible 1
 connected 20
+x 28
+y 37
 end
 arch blocked
 x 28
@@ -11193,12 +11265,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 29
-y 10
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 29
+y 10
 arch booze
 name medicine
 end
@@ -11245,21 +11317,21 @@ y 15
 end
 arch stonefloor2
 name wall
-x 29
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 29
+y 16
 end
 arch cwall_2_2_2
 x 29
 y 16
 end
 arch mover_7
-x 29
-y 17
 level 1
 attacktype 1
+x 29
+y 17
 end
 arch stonefloor2
 name stonefloor
@@ -11273,11 +11345,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 29
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 29
+y 18
 end
 arch cwall_2_2_1
 x 29
@@ -11338,12 +11410,12 @@ msg
 When a combatant gets badly injured,
 we save his life.
 endmsg
-x 29
-y 24
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 29
+y 24
 arch booze
 name medicine
 end
@@ -11652,11 +11724,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 30
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 30
+y 16
 end
 arch cwall_2_1_2
 x 30
@@ -11664,19 +11736,19 @@ y 16
 end
 arch stonefloor2
 name wall
-x 30
-y 17
 no_pass 1
 no_magic 1
 damned 1
+x 30
+y 17
 end
 arch stonefloor2
 name wall
-x 30
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 30
+y 18
 end
 arch cwall_2_1_2
 x 30
@@ -11948,12 +12020,12 @@ msg
 At the first-aide station we bring all
 the gladiators back to perfect health.
 endmsg
-x 31
-y 4
 carrying 6500
 randomitems none
 friendly 1
 unaggressive 0
+x 31
+y 4
 arch booze
 name medicine
 end
@@ -12088,11 +12160,11 @@ y 15
 end
 arch stonefloor2
 name wall
-x 31
-y 16
 no_pass 1
 no_magic 1
 damned 1
+x 31
+y 16
 end
 arch cwall_2_2_3
 x 31
@@ -12100,11 +12172,11 @@ y 16
 end
 arch stonefloor2
 name wall
-x 31
-y 17
 no_pass 1
 no_magic 1
 damned 1
+x 31
+y 17
 end
 arch cwall_2_1_1
 x 31
@@ -12112,11 +12184,11 @@ y 17
 end
 arch stonefloor2
 name wall
-x 31
-y 18
 no_pass 1
 no_magic 1
 damned 1
+x 31
+y 18
 end
 arch cwall_2_2_4
 x 31
@@ -12606,10 +12678,10 @@ msg
 You can learn a lot by watching other
 people fight. Come, sit down.
 endmsg
-x 32
-y 22
 friendly 1
 unaggressive 0
+x 32
+y 22
 end
 arch dungeon_magic
 x 32
@@ -12796,12 +12868,12 @@ x 32
 y 44
 end
 arch igate_open_2
-x 32
-y 44
 speed 0.500000
 protected 2
 value 1
 connected 2
+x 32
+y 44
 end
 arch cobblestones2
 x 33
@@ -13151,10 +13223,10 @@ x 33
 y 44
 end
 arch button_lever
-x 33
-y 44
 protected 2
 connected 2
+x 33
+y 44
 end
 arch cobblestones2
 x 34
