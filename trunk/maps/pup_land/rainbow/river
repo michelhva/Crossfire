@@ -1,6 +1,6 @@
 arch map
-region pupland
 name exit
+region pupland
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -473,10 +473,13 @@ x 7
 y 2
 end
 arch mover_3
-speed 0.500000
-speed_left -1.330000
-level 1
+face director.141
 attacktype 1
+speed 0.5
+sp 4
+level 1
+speed_left -1.330000
+animation mover_4
 x 7
 y 3
 end
@@ -498,10 +501,13 @@ x 7
 y 4
 end
 arch mover_3
-speed 0.500000
-speed_left -1.330000
-level 1
+face director.121
 attacktype 1
+speed 0.5
+sp 2
+level 1
+speed_left -1.330000
+animation mover_2
 x 7
 y 5
 end
