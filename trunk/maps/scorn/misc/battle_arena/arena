@@ -6181,13 +6181,10 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 16
-y 3
-end
-arch cobblestones
 x 16
 y 3
 end
@@ -6195,13 +6192,10 @@ arch dungeon_magic
 x 16
 y 4
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 16
-y 4
-end
-arch cobblestones
 x 16
 y 4
 end
@@ -6209,13 +6203,10 @@ arch dungeon_magic
 x 16
 y 5
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 16
-y 5
-end
-arch cobblestones
 x 16
 y 5
 end
@@ -6611,13 +6602,10 @@ arch dungeon_magic
 x 17
 y 3
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 17
-y 3
-end
-arch cobblestones
 x 17
 y 3
 end
@@ -6625,13 +6613,10 @@ arch dungeon_magic
 x 17
 y 4
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 17
-y 4
-end
-arch cobblestones
 x 17
 y 4
 end
@@ -6639,27 +6624,21 @@ arch dungeon_magic
 x 17
 y 5
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 17
-y 5
-end
-arch cobblestones
 x 17
 y 5
 end
 arch dungeon_magic
-x 17
-y 6
-end
-arch battleground
-hp 28
-sp 37
 x 17
 y 6
 end
 arch pstone_2
+type 58
+hp 28
+sp 37
 x 17
 y 6
 end
@@ -6800,13 +6779,10 @@ arch dungeon_magic
 x 17
 y 28
 end
-arch battleground
+arch pstone_2
+type 58
 hp 28
 sp 37
-x 17
-y 28
-end
-arch pstone_2
 x 17
 y 28
 end
@@ -6830,13 +6806,10 @@ endmsg
 x 17
 y 29
 end
-arch battleground
+arch pstone_2
+type 58
 hp 28
 sp 37
-x 17
-y 29
-end
-arch pstone_2
 x 17
 y 29
 end
@@ -7043,13 +7016,10 @@ arch dungeon_magic
 x 18
 y 3
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 18
-y 3
-end
-arch cobblestones
 x 18
 y 3
 end
@@ -7057,13 +7027,10 @@ arch dungeon_magic
 x 18
 y 4
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 18
-y 4
-end
-arch cobblestones
 x 18
 y 4
 end
@@ -7071,13 +7038,10 @@ arch dungeon_magic
 x 18
 y 5
 end
-arch battleground
+arch cobblestones
+type 58
 hp 28
 sp 37
-x 18
-y 5
-end
-arch cobblestones
 x 18
 y 5
 end
@@ -10647,15 +10611,45 @@ arch blocked
 x 27
 y 35
 end
-arch blocked
+arch mover_4
+attacktype 1
+level 1
 x 27
 y 36
 end
-arch blocked
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
+x 27
+y 36
+end
+arch mover_3
+attacktype 1
+level 1
 x 27
 y 37
 end
-arch blocked
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
+x 27
+y 37
+end
+arch mover_2
+attacktype 1
+level 1
+x 27
+y 38
+end
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
 x 27
 y 38
 end
@@ -11094,13 +11088,22 @@ arch blocked
 x 28
 y 35
 end
-arch blocked
+arch mover_5
+attacktype 1
+level 1
 x 28
 y 36
 end
-arch button_small
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
+x 28
+y 36
+end
+arch pedestal
 name 20
-protected 20
 connected 20
 x 28
 y 37
@@ -11112,16 +11115,26 @@ x 28
 y 37
 end
 arch teleporter
+invisible 1
 slaying entrance
 sp 23
-speed 0.000000
-protected 20
-invisible 1
 connected 20
+speed 0.0
+protected 20
 x 28
 y 37
 end
-arch blocked
+arch mover_1
+attacktype 1
+level 1
+x 28
+y 38
+end
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
 x 28
 y 38
 end
@@ -11512,15 +11525,45 @@ arch blocked
 x 29
 y 35
 end
-arch blocked
+arch mover_6
+attacktype 1
+level 1
 x 29
 y 36
 end
-arch blocked
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
+x 29
+y 36
+end
+arch mover_7
+attacktype 1
+level 1
 x 29
 y 37
 end
-arch blocked
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
+x 29
+y 37
+end
+arch mover_8
+attacktype 1
+level 1
+x 29
+y 38
+end
+arch flagstone
+name darkness
+face blocked.111
+no_magic 1
+damned 1
 x 29
 y 38
 end
