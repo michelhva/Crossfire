@@ -9,6 +9,7 @@ food 1
 changing 1
 nrof 1
 glow_radius 0
+is_lightable 1
 editable 128
 magicmap brown
 name_pl torches
@@ -49,6 +50,7 @@ value 0
 weight 500
 speed 0.15
 glow_radius 2
+is_lightable 1
 editable 128
 name_pl torches
 client_type 1102
