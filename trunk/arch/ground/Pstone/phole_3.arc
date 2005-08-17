@@ -7,4 +7,5 @@ color_fg brown
 walk_on 1
 editable 2
 visibility 100
+client_type 25012
 end

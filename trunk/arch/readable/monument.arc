@@ -8,4 +8,5 @@ no_pick 1
 editable 128
 visibility 40
 magicmap white
+client_type 25021
 end

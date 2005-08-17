@@ -6,6 +6,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object town_2
 name small town
@@ -15,6 +16,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_2.2
@@ -34,6 +36,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_3.2
@@ -53,6 +56,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_4.2
@@ -93,6 +97,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_5.2
@@ -154,6 +159,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_6.2
@@ -215,6 +221,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 More
 Object town_7.2

@@ -11,4 +11,5 @@ is_animated 0
 exp 30
 editable 48
 visibility 50
+client_type 25042
 end

@@ -7,6 +7,7 @@ no_pick 1
 no_pass 1
 editable 64
 visibility 100
+client_type 25012
 end
 More
 Object burning_store_alchemy_2

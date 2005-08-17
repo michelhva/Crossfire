@@ -34,6 +34,7 @@ nrof 1
 material 12
 editable 2048
 path_attuned 16896
+client_type 451
 body_skill -1
 skill sorcery
 end

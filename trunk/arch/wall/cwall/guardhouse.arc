@@ -8,6 +8,7 @@ type 66
 blocksview 1
 editable 770
 magicmap grey
+client_type 25012
 end
 Object guard_house_2
 name Guard House
@@ -19,6 +20,7 @@ type 66
 blocksview 1
 editable 770
 magicmap grey
+client_type 25012
 end
 Object guard_house_3
 name Guard House
@@ -30,6 +32,7 @@ type 66
 blocksview 1
 editable 770
 magicmap grey
+client_type 25012
 end
 Object guard_house_1
 name Guard House
@@ -41,4 +44,5 @@ type 66
 blocksview 1
 editable 770
 magicmap grey
+client_type 25012
 end

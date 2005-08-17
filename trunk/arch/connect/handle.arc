@@ -12,4 +12,5 @@ mina
 editable 48
 visibility 50
 color_fg black
+client_type 25042
 end

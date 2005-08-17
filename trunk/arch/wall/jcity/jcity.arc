@@ -7,6 +7,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_1_2
 name wall
@@ -17,6 +18,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_1_4
 name wall
@@ -27,6 +29,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_2_1
 name wall
@@ -37,6 +40,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_1_1
 name wall
@@ -47,6 +51,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_1_1
 name wall
@@ -57,6 +62,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_2_2
 name wall
@@ -67,6 +73,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_3_2
 name wall
@@ -77,6 +84,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_1_3
 name wall
@@ -87,6 +95,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_2_4
 name wall
@@ -97,6 +106,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_1_2
 name wall
@@ -107,6 +117,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_3_1
 name wall
@@ -117,6 +128,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_2_2_3
 name wall
@@ -127,6 +139,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_3_4
 name wall
@@ -137,6 +150,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_3_3
 name wall
@@ -147,6 +161,7 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
 Object jcity_4
 name wall
@@ -157,4 +172,5 @@ type 66
 editable 2
 visibility 100
 magicmap grey
+client_type 25012
 end
