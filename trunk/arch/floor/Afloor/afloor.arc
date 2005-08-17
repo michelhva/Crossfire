@@ -24,6 +24,7 @@ color_fg black
 color_bg brown
 editable 2
 visibility 100
+client_type 25012
 end
 Object ahole_left
 face ahole.171
@@ -33,4 +34,5 @@ color_fg black
 color_bg brown
 editable 2
 visibility 100
+client_type 25012
 end

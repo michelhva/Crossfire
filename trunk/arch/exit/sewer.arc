@@ -11,6 +11,7 @@ You open the sewer access
 grid and jumps down.
 My god, you are stinking!
 endmsg
+client_type 25012
 end
 Object sewer_access2
 name sewer
@@ -25,5 +26,6 @@ You open the sewer access
 grid and jumps down.
 My god, you are stinking!
 endmsg
+client_type 25012
 end
 

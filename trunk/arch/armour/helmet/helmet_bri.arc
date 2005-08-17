@@ -1,5 +1,7 @@
 Object helmet_of_brilliance
 name helmet
+name_pl helmets
+client_type 270
 nrof 1
 title of brilliance
 face helmet_bri.111

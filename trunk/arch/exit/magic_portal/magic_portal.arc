@@ -14,6 +14,7 @@ mina
 walk_on 1
 fly_on 1
 editable 2
+client_type 25011
 end
 Object magic_portal
 face magic_portal.11L
@@ -91,4 +92,5 @@ changing 1
 walk_on 1
 fly_on 1
 editable 2
+client_type 25011
 end

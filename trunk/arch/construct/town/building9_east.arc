@@ -7,6 +7,7 @@ no_pass 1
 editable 2
 visibility 100
 magicmap brown
+client_type 25012
 end
 More
 Object building9_2_east

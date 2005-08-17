@@ -7,4 +7,5 @@ no_pick 1
 editable 2
 is_floor 1
 visibility 50
+client_type 25012
 end

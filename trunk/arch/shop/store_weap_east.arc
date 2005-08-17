@@ -8,6 +8,7 @@ no_pass 1
 editable 64
 visibility 100
 magicmap yellow
+client_type 25012
 end
 More
 Object store_weapons_2_east

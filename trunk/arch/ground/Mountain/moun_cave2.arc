@@ -9,4 +9,5 @@ visibility 50
 smoothlevel 100
 magicmap grey
 smoothface moun_cave2.111 mountain_S.111
+client_type 25012
 end

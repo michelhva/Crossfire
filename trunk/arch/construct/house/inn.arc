@@ -7,6 +7,7 @@ no_pick 1
 editable 2
 visibility 100
 magicmap red
+client_type 25012
 end
 More
 Object inn_2

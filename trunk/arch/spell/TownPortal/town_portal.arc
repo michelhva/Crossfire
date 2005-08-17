@@ -31,4 +31,5 @@ magic_portal.112
 mina
 editable 2
 exp 1
+client_type 25011
 end

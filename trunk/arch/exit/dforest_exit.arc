@@ -9,4 +9,5 @@ is_floor 1
 walk_on 1
 smoothface darkforest.111 darkforest_S.111
 smoothlevel 136
+client_type 25012
 end

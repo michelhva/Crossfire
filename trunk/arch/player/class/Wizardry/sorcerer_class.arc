@@ -36,4 +36,5 @@ ac 1
 sp 1
 weight 1000
 material 128
+client_type 270
 end

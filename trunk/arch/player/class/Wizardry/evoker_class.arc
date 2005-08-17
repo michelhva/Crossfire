@@ -35,6 +35,7 @@ material 12
 editable 2048
 path_attuned 14
 path_repelled 50240
+client_type 451
 body_skill -1
 skill evocation
 end

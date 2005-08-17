@@ -14,4 +14,5 @@ no_pick 1
 walk_on 1
 editable 48
 visibility 50
+client_type 25041
 end
