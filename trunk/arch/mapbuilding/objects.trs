@@ -8,6 +8,9 @@ treasureone building_objects
   arch building_fireplace
     chance 6
   more
+  arch building_sign
+    chance 4
+  more
   arch building_fountain
     chance 3
 end

@@ -22,11 +22,24 @@ treasureone building_material
   more
   arch building_lever
     chance 8
+  more
+  arch building_button
+    chance 3
+  more
   list building_marbles
     chance 5
   more
   list building_objects
    chance 5
+  more
+  arch building_vertical_gate_inv
+    chance 1
+  more
+  arch building_horizontal_gate_inv
+    chance 1
+  more
+  list building_talking_objects
+   chance 1
 end
 treasureone shop_building
   arch building_builder

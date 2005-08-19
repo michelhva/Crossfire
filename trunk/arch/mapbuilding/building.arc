@@ -99,3 +99,33 @@ subtype 3
 slaying button_lever
 face mblever.111
 end
+Object building_button
+name Button material
+nrof 1
+weight 100
+value 2000
+type 161
+subtype 3
+slaying button_small
+face mbbutton.111
+end
+Object building_vertical_gate_inv
+name Vertical inverted gate material
+nrof 1
+weight 150
+value 3000
+type 161
+subtype 3
+slaying igate_open_1
+face mbiron_gate_inv1.111
+end
+Object building_horizontal_gate_inv
+name Horizontal inverted gate material
+nrof 1
+weight 150
+value 3000
+type 161
+subtype 3
+slaying igate_open_2
+face mbiron_gate_inv2.111
+end

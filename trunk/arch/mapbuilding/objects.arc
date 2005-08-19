@@ -38,3 +38,13 @@ subtype 3
 face mbfountain.111
 slaying fountain
 end
+Object building_sign
+name Sign material
+nrof 1
+weight 1500
+value 25000
+type 161
+subtype 3
+face mbsign.111
+slaying sign
+end
