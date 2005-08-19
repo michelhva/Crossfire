@@ -414,7 +414,6 @@ arch book_read
 name Building gates and buttons/pedestals
 msg
 Some items, like gates, require buttons, pedestals, ..., something to be opened and closed.
-(pedestals are invisible, and will open the door when you step on them)
 To build a gate with its associated button:
 * put a marking rune at the spot where you wish to build the door. The text can be whatever you want, make sure to remember it.
 * build the gate on this spot
@@ -424,6 +423,12 @@ Your button will now activate the gate when you apply it.
 Note that you can link together as many gates, buttons, pedestals, as you want.
 As long as you use the same text on the marking rune, they will all work together.
 To build gates activated by other buttons, just use another text.
+Normally all gates with a single marking rune text are either all up or all down at a given time, however if you want one open while another is closed, make use of inverted gates.
+Also, it is possible to make buttons, levers, and pedestals underneath gates, however it requires things to be made in a specific order.
+* make 2 marking runes on the square that you want to build the button and gate on
+* build the gate first
+* then build the button underneath it
+This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
 material 0
 no_pick 1
@@ -592,6 +597,25 @@ arch tile_white_floor
 x 7
 y 6
 end
+arch book_read
+name Signs and talking books
+msg
+When making signs and talking (or listening) books, you need to place a book or scroll with the text you want on the square you're building on just like a marking rune.
+With the talking/listening books, they will take the name and picture of the book used to create them as well.
+For the talking and listening books, you also need to connect them with a marking rune just like gates buttons and levers, which in the case of the talking books, makes the book say it's message when activated, and in the case of listening books, it causes saying the phrase that the book looks for to act like pulling a lever.
+For the listening books, the message must be in this format:
+
+@match blah
+Click.
+
+Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
+endmsg
+material 0
+no_pick 1
+identified 1
+x 7
+y 6
+end
 arch tile_white_floor
 x 7
 y 7
@@ -601,8 +625,7 @@ name Building restrictions
 msg
 To build on a spot, all items on this spot must be 'buildable'.
 Buildable items will display 'this is a buildable item' when examined.
-The only exception is that you can build on marking runes, as they are used for making gates and buttons work together.
-You can not build on the border of maps. Don't worry, you should have some clear messages on why you can't build.
+There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
 endmsg
 material 0
 no_pick 1
