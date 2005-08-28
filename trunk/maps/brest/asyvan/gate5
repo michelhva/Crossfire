@@ -2450,15 +2450,15 @@ arch devil
 x 16
 y 8
 end
-arch dirtfloor
-x 16
-y 9
-end
 arch magic_mouth
 msg
 
 Turn the handle and regret your action
 endmsg
+x 16
+y 9
+end
+arch dirtfloor
 x 16
 y 9
 end
@@ -2616,15 +2616,15 @@ arch devil
 x 17
 y 8
 end
-arch dirtfloor
-x 17
-y 9
-end
 arch magic_mouth
 msg
 
 Turn the handle and regret your action
 endmsg
+x 17
+y 9
+end
+arch dirtfloor
 x 17
 y 9
 end
@@ -2940,16 +2940,16 @@ arch devil
 x 19
 y 7
 end
-arch dirtfloor
-x 19
-y 8
-end
 arch magic_mouth
 msg
 
 Once again, do NOT turn this handle
 unless you know what will happen..
 endmsg
+x 19
+y 8
+end
+arch dirtfloor
 x 19
 y 8
 end

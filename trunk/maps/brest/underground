@@ -797,14 +797,6 @@ y 7
 resist_physical 30
 connected 1
 end
-arch woodfloor
-x 2
-y 8
-end
-arch dungeon_magic
-x 2
-y 8
-end
 arch magic_mouth
 msg
      Ah! Ah! Ah!
@@ -812,6 +804,14 @@ msg
  ENSTB's underground!
 May the force be with U
 endmsg
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 8
+end
+arch dungeon_magic
 x 2
 y 8
 end
