@@ -1318,10 +1318,6 @@ arch grass
 x 15
 y 5
 end
-arch cobblestones
-x 15
-y 6
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
@@ -1331,14 +1327,18 @@ x 15
 y 6
 end
 arch cobblestones
+x 15
+y 6
+end
+arch exit
+invisible 1
+slaying /world/world_116_104
+hp 13
+sp 23
 x 15
 y 7
 end
-arch exit
-invisible 1
-slaying /world/world_116_104
-hp 13
-sp 23
+arch cobblestones
 x 15
 y 7
 end

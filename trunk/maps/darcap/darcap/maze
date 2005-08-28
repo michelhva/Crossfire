@@ -505,14 +505,14 @@ arch wwall_2_1_2
 x 1
 y 28
 end
-arch woodfloor
-x 1
-y 29
-end
 arch magic_mouth
 msg
 Too late to back out now!
 endmsg
+x 1
+y 29
+end
+arch woodfloor
 x 1
 y 29
 end
@@ -32563,13 +32563,13 @@ arch dungeon_magic
 x 87
 y 25
 end
-arch woodfloor
-x 87
-y 25
-end
 arch invis_exit
 slaying maze
 sp 29
+x 87
+y 25
+end
+arch woodfloor
 x 87
 y 25
 end

@@ -932,12 +932,6 @@ end
 arch wwall_2_1_2
 x 13
 end
-arch stonefloor2
-no_magic 1
-damned 1
-x 13
-y 1
-end
 arch magic_mouth
 msg
 The angry merchant speaks to you:
@@ -946,6 +940,12 @@ everything belongs to me. You may
 not take anything. If you step down
 prepare to die!
 endmsg
+x 13
+y 1
+end
+arch stonefloor2
+no_magic 1
+damned 1
 x 13
 y 1
 end
