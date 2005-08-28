@@ -834,15 +834,15 @@ arch swall_2_2_4
 x 9
 y 6
 end
-arch pstone_1
-x 9
-y 7
-end
 arch button_small
 x 9
 y 7
 invisible 1
 connected 5
+end
+arch pstone_1
+x 9
+y 7
 end
 arch spikes_closed
 x 9
@@ -850,15 +850,15 @@ y 7
 speed 1.000000
 connected 4
 end
-arch pstone_1
-x 9
-y 8
-end
 arch button_small
 x 9
 y 8
 invisible 1
 connected 4
+end
+arch pstone_1
+x 9
+y 8
 end
 arch spikes_closed
 x 9
@@ -944,15 +944,15 @@ arch swall_2_2_4
 x 10
 y 5
 end
-arch pstone_1
-x 10
-y 6
-end
 arch button_small
 x 10
 y 6
 invisible 1
 connected 6
+end
+arch pstone_1
+x 10
+y 6
 end
 arch spikes_closed
 x 10
@@ -976,15 +976,15 @@ arch swall_1_2
 x 10
 y 8
 end
-arch pstone_1
-x 10
-y 9
-end
 arch button_small
 x 10
 y 9
 invisible 1
 connected 3
+end
+arch pstone_1
+x 10
+y 9
 end
 arch spikes_closed
 x 10
@@ -1074,15 +1074,15 @@ arch swall_2_2_4
 x 11
 y 4
 end
-arch pstone_1
-x 11
-y 5
-end
 arch button_small
 x 11
 y 5
 invisible 1
 connected 7
+end
+arch pstone_1
+x 11
+y 5
 end
 arch spikes_closed
 x 11
@@ -1124,15 +1124,15 @@ arch swall_0
 x 11
 y 9
 end
-arch pstone_1
-x 11
-y 10
-end
 arch button_small
 x 11
 y 10
 invisible 1
 connected 2
+end
+arch pstone_1
+x 11
+y 10
 end
 arch spikes_closed
 x 11
@@ -1205,15 +1205,15 @@ arch swall_2_1_2
 x 12
 y 3
 end
-arch pstone_1
-x 12
-y 4
-end
 arch button_small
 x 12
 y 4
 invisible 1
 connected 8
+end
+arch pstone_1
+x 12
+y 4
 end
 arch spikes_closed
 x 12
@@ -1238,10 +1238,6 @@ x 12
 y 6
 connected 100
 end
-arch pstone_1
-x 12
-y 7
-end
 arch button_small
 x 12
 y 7
@@ -1250,13 +1246,17 @@ connected 202
 end
 arch pstone_1
 x 12
-y 8
+y 7
 end
 arch button_small
 x 12
 y 8
 invisible 1
 connected 201
+end
+arch pstone_1
+x 12
+y 8
 end
 arch pstone_1
 x 12
@@ -1275,15 +1275,15 @@ arch swall_1_4
 x 12
 y 10
 end
-arch pstone_1
-x 12
-y 11
-end
 arch button_small
 x 12
 y 11
 invisible 1
 connected 1
+end
+arch pstone_1
+x 12
+y 11
 end
 arch spikes_open
 x 12
@@ -1352,15 +1352,15 @@ arch swall_2_1_2
 x 13
 y 3
 end
-arch pstone_1
-x 13
-y 4
-end
 arch button_small
 x 13
 y 4
 invisible 1
 connected 9
+end
+arch pstone_1
+x 13
+y 4
 end
 arch spikes_closed
 x 13
@@ -1385,10 +1385,6 @@ x 13
 y 6
 connected 100
 end
-arch pstone_1
-x 13
-y 7
-end
 arch button_small
 x 13
 y 7
@@ -1397,13 +1393,17 @@ connected 203
 end
 arch pstone_1
 x 13
-y 8
+y 7
 end
 arch button_small
 x 13
 y 8
 invisible 1
 connected 204
+end
+arch pstone_1
+x 13
+y 8
 end
 arch pstone_1
 x 13
@@ -1422,15 +1422,15 @@ arch swall_1_3
 x 13
 y 10
 end
-arch pstone_1
-x 13
-y 11
-end
 arch button_small
 x 13
 y 11
 invisible 1
 connected 16
+end
+arch pstone_1
+x 13
+y 11
 end
 arch spikes_closed
 x 13
@@ -1503,15 +1503,15 @@ arch swall_2_2_1
 x 14
 y 4
 end
-arch pstone_1
-x 14
-y 5
-end
 arch button_small
 x 14
 y 5
 invisible 1
 connected 10
+end
+arch pstone_1
+x 14
+y 5
 end
 arch spikes_closed
 x 14
@@ -1553,15 +1553,15 @@ arch swall_0
 x 14
 y 9
 end
-arch pstone_1
-x 14
-y 10
-end
 arch button_small
 x 14
 y 10
 invisible 1
 connected 15
+end
+arch pstone_1
+x 14
+y 10
 end
 arch spikes_closed
 x 14
@@ -1639,15 +1639,15 @@ arch swall_2_2_1
 x 15
 y 5
 end
-arch pstone_1
-x 15
-y 6
-end
 arch button_small
 x 15
 y 6
 invisible 1
 connected 11
+end
+arch pstone_1
+x 15
+y 6
 end
 arch spikes_closed
 x 15
@@ -1671,15 +1671,15 @@ arch swall_1_2
 x 15
 y 8
 end
-arch pstone_1
-x 15
-y 9
-end
 arch button_small
 x 15
 y 9
 invisible 1
 connected 14
+end
+arch pstone_1
+x 15
+y 9
 end
 arch spikes_closed
 x 15
@@ -1765,15 +1765,15 @@ arch swall_2_2_1
 x 16
 y 6
 end
-arch pstone_1
-x 16
-y 7
-end
 arch button_small
 x 16
 y 7
 invisible 1
 connected 12
+end
+arch pstone_1
+x 16
+y 7
 end
 arch spikes_closed
 x 16
@@ -1781,15 +1781,15 @@ y 7
 speed 1.000000
 connected 11
 end
-arch pstone_1
-x 16
-y 8
-end
 arch button_small
 x 16
 y 8
 invisible 1
 connected 13
+end
+arch pstone_1
+x 16
+y 8
 end
 arch spikes_closed
 x 16

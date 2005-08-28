@@ -907,14 +907,14 @@ arch wwall_2_2_4
 x 11
 y 14
 end
-arch cobblestones2
-x 12
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
 hp 16
 sp 22
+x 12
+end
+arch cobblestones2
 x 12
 end
 arch cobblestones2
@@ -973,10 +973,6 @@ arch cobblestones2
 x 12
 y 13
 end
-arch cobblestones2
-x 12
-y 14
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
@@ -986,13 +982,17 @@ x 12
 y 14
 end
 arch cobblestones2
-x 13
+x 12
+y 14
 end
 arch exit
 invisible 1
 slaying /world/world_116_104
 hp 16
 sp 22
+x 13
+end
+arch cobblestones2
 x 13
 end
 arch cobblestones2
@@ -1047,10 +1047,6 @@ arch cobblestones2
 x 13
 y 13
 end
-arch cobblestones2
-x 13
-y 14
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
@@ -1060,7 +1056,8 @@ x 13
 y 14
 end
 arch cobblestones2
-x 14
+x 13
+y 14
 end
 arch exit
 invisible 1
@@ -1071,7 +1068,6 @@ x 14
 end
 arch cobblestones2
 x 14
-y 1
 end
 arch exit
 invisible 1
@@ -1083,7 +1079,7 @@ y 1
 end
 arch cobblestones2
 x 14
-y 2
+y 1
 end
 arch exit
 invisible 1
@@ -1095,7 +1091,7 @@ y 2
 end
 arch cobblestones2
 x 14
-y 3
+y 2
 end
 arch exit
 invisible 1
@@ -1107,7 +1103,7 @@ y 3
 end
 arch cobblestones2
 x 14
-y 4
+y 3
 end
 arch exit
 invisible 1
@@ -1119,7 +1115,7 @@ y 4
 end
 arch cobblestones2
 x 14
-y 5
+y 4
 end
 arch exit
 invisible 1
@@ -1131,7 +1127,7 @@ y 5
 end
 arch cobblestones2
 x 14
-y 6
+y 5
 end
 arch exit
 invisible 1
@@ -1143,7 +1139,7 @@ y 6
 end
 arch cobblestones2
 x 14
-y 7
+y 6
 end
 arch exit
 invisible 1
@@ -1155,7 +1151,7 @@ y 7
 end
 arch cobblestones2
 x 14
-y 8
+y 7
 end
 arch exit
 invisible 1
@@ -1167,7 +1163,7 @@ y 8
 end
 arch cobblestones2
 x 14
-y 9
+y 8
 end
 arch exit
 invisible 1
@@ -1179,7 +1175,7 @@ y 9
 end
 arch cobblestones2
 x 14
-y 10
+y 9
 end
 arch exit
 invisible 1
@@ -1191,7 +1187,7 @@ y 10
 end
 arch cobblestones2
 x 14
-y 11
+y 10
 end
 arch exit
 invisible 1
@@ -1203,7 +1199,7 @@ y 11
 end
 arch cobblestones2
 x 14
-y 12
+y 11
 end
 arch exit
 invisible 1
@@ -1215,7 +1211,7 @@ y 12
 end
 arch cobblestones2
 x 14
-y 13
+y 12
 end
 arch exit
 invisible 1
@@ -1226,14 +1222,18 @@ x 14
 y 13
 end
 arch cobblestones2
+x 14
+y 13
+end
+arch exit
+invisible 1
+slaying /world/world_116_104
+hp 16
+sp 22
 x 14
 y 14
 end
-arch exit
-invisible 1
-slaying /world/world_116_104
-hp 16
-sp 22
+arch cobblestones2
 x 14
 y 14
 end

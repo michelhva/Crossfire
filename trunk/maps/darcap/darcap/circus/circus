@@ -1509,14 +1509,14 @@ arch pstone_1
 x 12
 y 16
 end
-arch pstone_1
-x 12
-y 17
-end
 arch invis_exit
 slaying /world/world_116_102
 hp 35
 sp 28
+x 12
+y 17
+end
+arch pstone_1
 x 12
 y 17
 end

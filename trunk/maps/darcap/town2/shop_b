@@ -4296,15 +4296,15 @@ arch cobblestones2
 x 28
 y 1
 end
-arch cobblestones2
-x 28
-y 2
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
 hp 15
 sp 23
+x 28
+y 2
+end
+arch cobblestones2
 x 28
 y 2
 end
@@ -4324,15 +4324,15 @@ arch cobblestones2
 x 28
 y 6
 end
-arch cobblestones2
-x 28
-y 7
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
 hp 15
 sp 23
+x 28
+y 7
+end
+arch cobblestones2
 x 28
 y 7
 end
@@ -4439,10 +4439,6 @@ arch cobblestones2
 x 29
 y 1
 end
-arch cobblestones2
-x 29
-y 2
-end
 arch exit
 invisible 1
 slaying /world/world_116_104
@@ -4453,7 +4449,7 @@ y 2
 end
 arch cobblestones2
 x 29
-y 3
+y 2
 end
 arch exit
 invisible 1
@@ -4465,7 +4461,7 @@ y 3
 end
 arch cobblestones2
 x 29
-y 4
+y 3
 end
 arch exit
 invisible 1
@@ -4477,7 +4473,7 @@ y 4
 end
 arch cobblestones2
 x 29
-y 5
+y 4
 end
 arch exit
 invisible 1
@@ -4489,7 +4485,7 @@ y 5
 end
 arch cobblestones2
 x 29
-y 6
+y 5
 end
 arch exit
 invisible 1
@@ -4500,14 +4496,18 @@ x 29
 y 6
 end
 arch cobblestones2
+x 29
+y 6
+end
+arch exit
+invisible 1
+slaying /world/world_116_104
+hp 15
+sp 23
 x 29
 y 7
 end
-arch exit
-invisible 1
-slaying /world/world_116_104
-hp 15
-sp 23
+arch cobblestones2
 x 29
 y 7
 end

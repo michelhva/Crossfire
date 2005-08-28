@@ -564,10 +564,6 @@ end
 arch awall_2_1_2
 x 4
 end
-arch woodfloor
-x 4
-y 1
-end
 arch magic_mouth
 msg
 A tiny voice says to you:
@@ -577,6 +573,18 @@ endmsg
 connected 159
 walk_on 0
 fly_on 0
+x 4
+y 1
+end
+arch teleporter
+invisible 1
+slaying city
+connected 159
+speed 0.0
+x 4
+y 1
+end
+arch woodfloor
 x 4
 y 1
 end
@@ -592,14 +600,6 @@ Entry to the forgotten City
 endmsg
 walk_on 1
 fly_on 1
-x 4
-y 1
-end
-arch teleporter
-invisible 1
-slaying city
-connected 159
-speed 0.0
 x 4
 y 1
 end
@@ -2041,17 +2041,17 @@ arch swall_1_2
 x 13
 y 17
 end
+arch button_small
+invisible 1
+connected 1
+x 13
+y 18
+end
 arch woodfloor
 x 13
 y 18
 end
 arch grate_closed_2
-connected 1
-x 13
-y 18
-end
-arch button_small
-invisible 1
 connected 1
 x 13
 y 18
@@ -2230,13 +2230,13 @@ arch rune_small_lightning
 x 14
 y 17
 end
-arch woodfloor
-x 14
-y 18
-end
 arch button_small
 invisible 1
 connected 1
+x 14
+y 18
+end
+arch woodfloor
 x 14
 y 18
 end

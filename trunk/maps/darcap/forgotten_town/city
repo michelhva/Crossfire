@@ -961,6 +961,12 @@ arch blackmarble
 x 3
 y 2
 end
+arch button_small
+invisible 1
+connected 1
+x 3
+y 3
+end
 arch blackmarble
 x 3
 y 3
@@ -969,7 +975,7 @@ arch button_small
 invisible 1
 connected 1
 x 3
-y 3
+y 4
 end
 arch marble
 x 3
@@ -984,15 +990,9 @@ arch button_small
 invisible 1
 connected 1
 x 3
-y 4
-end
-arch marble
-x 3
 y 5
 end
-arch button_small
-invisible 1
-connected 1
+arch marble
 x 3
 y 5
 end
@@ -4419,6 +4419,14 @@ arch marble
 x 14
 y 31
 end
+arch magic_mouth
+msg
+STOP! If you want to pass you must tell
+me who was the founder of this town!
+endmsg
+x 14
+y 32
+end
 arch marble
 x 14
 y 32
@@ -4429,14 +4437,6 @@ msg
 Click.
 endmsg
 connected 12321
-x 14
-y 32
-end
-arch magic_mouth
-msg
-STOP! If you want to pass you must tell
-me who was the founder of this town!
-endmsg
 x 14
 y 32
 end
@@ -4677,15 +4677,15 @@ arch marble
 x 15
 y 31
 end
-arch marble
-x 15
-y 32
-end
 arch magic_mouth
 msg
 STOP! If you want to pass you must tell
 me who was the founder of this town!
 endmsg
+x 15
+y 32
+end
+arch marble
 x 15
 y 32
 end
