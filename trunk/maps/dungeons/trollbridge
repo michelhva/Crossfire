@@ -19,9 +19,6 @@ end
 arch dwall_win2
 y 1
 end
-arch woodfloor
-y 2
-end
 arch invis_exit
 slaying /world/world_105_115
 hp 19
@@ -29,7 +26,7 @@ sp 8
 y 2
 end
 arch woodfloor
-y 3
+y 2
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -38,7 +35,7 @@ sp 8
 y 3
 end
 arch woodfloor
-y 4
+y 3
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -47,7 +44,7 @@ sp 8
 y 4
 end
 arch woodfloor
-y 5
+y 4
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -56,7 +53,7 @@ sp 8
 y 5
 end
 arch woodfloor
-y 6
+y 5
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -65,12 +62,15 @@ sp 8
 y 6
 end
 arch woodfloor
+y 6
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 19
+sp 8
 y 7
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 19
-sp 8
+arch woodfloor
 y 7
 end
 arch woodfloor
@@ -485,10 +485,6 @@ arch dwall_win2
 x 6
 y 1
 end
-arch woodfloor
-x 6
-y 2
-end
 arch button_small
 invisible 1
 connected 1
@@ -497,7 +493,7 @@ y 2
 end
 arch woodfloor
 x 6
-y 3
+y 2
 end
 arch button_small
 invisible 1
@@ -507,7 +503,7 @@ y 3
 end
 arch woodfloor
 x 6
-y 4
+y 3
 end
 arch button_small
 invisible 1
@@ -517,7 +513,7 @@ y 4
 end
 arch woodfloor
 x 6
-y 5
+y 4
 end
 arch button_small
 invisible 1
@@ -527,7 +523,7 @@ y 5
 end
 arch woodfloor
 x 6
-y 6
+y 5
 end
 arch button_small
 invisible 1
@@ -536,12 +532,16 @@ x 6
 y 6
 end
 arch woodfloor
+x 6
+y 6
+end
+arch button_small
+invisible 1
+connected 1
 x 6
 y 7
 end
-arch button_small
-invisible 1
-connected 1
+arch woodfloor
 x 6
 y 7
 end
@@ -1124,13 +1124,13 @@ arch woodfloor
 x 14
 y 6
 end
-arch woodfloor
-x 14
-y 7
-end
 arch button_small
 invisible 1
 connected 3
+x 14
+y 7
+end
+arch woodfloor
 x 14
 y 7
 end
@@ -1592,10 +1592,6 @@ arch dwall_win2
 x 22
 y 1
 end
-arch woodfloor
-x 22
-y 2
-end
 arch button_small
 invisible 1
 connected 1
@@ -1604,7 +1600,7 @@ y 2
 end
 arch woodfloor
 x 22
-y 3
+y 2
 end
 arch button_small
 invisible 1
@@ -1614,7 +1610,7 @@ y 3
 end
 arch woodfloor
 x 22
-y 4
+y 3
 end
 arch button_small
 invisible 1
@@ -1624,7 +1620,7 @@ y 4
 end
 arch woodfloor
 x 22
-y 5
+y 4
 end
 arch button_small
 invisible 1
@@ -1634,7 +1630,7 @@ y 5
 end
 arch woodfloor
 x 22
-y 6
+y 5
 end
 arch button_small
 invisible 1
@@ -1643,12 +1639,16 @@ x 22
 y 6
 end
 arch woodfloor
+x 22
+y 6
+end
+arch button_small
+invisible 1
+connected 1
 x 22
 y 7
 end
-arch button_small
-invisible 1
-connected 1
+arch woodfloor
 x 22
 y 7
 end
@@ -2026,10 +2026,6 @@ arch dwall_win2
 x 29
 y 1
 end
-arch woodfloor
-x 29
-y 2
-end
 arch invis_exit
 slaying /world/world_105_115
 hp 23
@@ -2039,7 +2035,7 @@ y 2
 end
 arch woodfloor
 x 29
-y 3
+y 2
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -2050,7 +2046,7 @@ y 3
 end
 arch woodfloor
 x 29
-y 4
+y 3
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -2061,7 +2057,7 @@ y 4
 end
 arch woodfloor
 x 29
-y 5
+y 4
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -2072,7 +2068,7 @@ y 5
 end
 arch woodfloor
 x 29
-y 6
+y 5
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -2082,13 +2078,17 @@ x 29
 y 6
 end
 arch woodfloor
+x 29
+y 6
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 23
+sp 8
 x 29
 y 7
 end
-arch invis_exit
-slaying /world/world_105_115
-hp 23
-sp 8
+arch woodfloor
 x 29
 y 7
 end
