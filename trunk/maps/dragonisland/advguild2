@@ -2231,21 +2231,21 @@ x 11
 y 14
 connected 4
 end
-arch button_small
-x 11
-y 15
-connected 2
-end
-arch woodfloor
-x 11
-y 15
-end
 arch magic_mouth
 msg
 Practicing against floating,
 spellcasting monsters - please don't
 damage the generators.
 endmsg
+x 11
+y 15
+end
+arch button_small
+x 11
+y 15
+connected 2
+end
+arch woodfloor
 x 11
 y 15
 end
@@ -2632,21 +2632,21 @@ x 13
 y 10
 connected 3
 end
-arch button_small
-x 13
-y 11
-connected 3
-end
-arch woodfloor
-x 13
-y 11
-end
 arch magic_mouth
 msg
 Undead practicing room - please leave
 generators intact to allow some
 practice to those who come after you.
 endmsg
+x 13
+y 11
+end
+arch button_small
+x 13
+y 11
+connected 3
+end
+arch woodfloor
 x 13
 y 11
 end

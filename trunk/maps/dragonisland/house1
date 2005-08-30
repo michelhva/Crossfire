@@ -13,13 +13,13 @@ end
 arch brush
 y 1
 end
-arch cobblestones2
-y 2
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 9
 sp 18
+y 2
+end
+arch cobblestones2
 y 2
 end
 arch brush

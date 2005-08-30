@@ -879,14 +879,14 @@ arch cobblestones2
 x 7
 y 14
 end
-arch grass
-x 7
-y 15
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 4
 sp 13
+x 7
+y 15
+end
+arch grass
 x 7
 y 15
 end

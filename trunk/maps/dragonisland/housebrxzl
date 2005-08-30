@@ -2299,17 +2299,6 @@ arch river_w-e
 x 9
 y 18
 end
-arch grass
-x 9
-y 19
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
-x 9
-y 19
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -2318,13 +2307,17 @@ x 9
 y 19
 end
 arch grass
+x 9
+y 19
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 9
 y 20
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 9
 y 20
 end
@@ -2444,17 +2437,6 @@ arch river_w-e
 x 9
 y 41
 end
-arch grass
-x 9
-y 42
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
-x 9
-y 42
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -2463,13 +2445,17 @@ x 9
 y 42
 end
 arch grass
+x 9
+y 42
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 9
 y 43
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 9
 y 43
 end
@@ -2608,14 +2594,14 @@ arch grass
 x 10
 y 19
 end
-arch cobblestones2
-x 10
-y 19
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
 sp 9
+x 10
+y 19
+end
+arch cobblestones2
 x 10
 y 19
 end
@@ -2623,14 +2609,14 @@ arch grass
 x 10
 y 20
 end
-arch cobblestones2
-x 10
-y 20
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
 sp 9
+x 10
+y 20
+end
+arch cobblestones2
 x 10
 y 20
 end
@@ -2763,6 +2749,13 @@ arch bridge_ns
 x 10
 y 41
 end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
+x 10
+y 42
+end
 arch grass
 x 10
 y 42
@@ -2776,20 +2769,13 @@ slaying /world/world_103_127
 hp 12
 sp 9
 x 10
-y 42
+y 43
 end
 arch grass
 x 10
 y 43
 end
 arch cobblestones2
-x 10
-y 43
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
 x 10
 y 43
 end
@@ -2903,10 +2889,6 @@ arch river_w-e
 x 11
 y 18
 end
-arch grass
-x 11
-y 19
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -2915,13 +2897,17 @@ x 11
 y 19
 end
 arch grass
+x 11
+y 19
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 11
 y 20
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 11
 y 20
 end
@@ -3041,10 +3027,6 @@ arch river_w-e
 x 11
 y 41
 end
-arch grass
-x 11
-y 42
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -3053,13 +3035,17 @@ x 11
 y 42
 end
 arch grass
+x 11
+y 42
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 11
 y 43
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 11
 y 43
 end
@@ -8562,17 +8548,6 @@ arch river_w-e
 x 32
 y 41
 end
-arch grass
-x 32
-y 42
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
-x 32
-y 42
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -8581,13 +8556,17 @@ x 32
 y 42
 end
 arch grass
+x 32
+y 42
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 32
 y 43
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 32
 y 43
 end
@@ -8831,14 +8810,14 @@ arch grass
 x 33
 y 42
 end
-arch cobblestones2
-x 33
-y 42
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
 sp 9
+x 33
+y 42
+end
+arch cobblestones2
 x 33
 y 42
 end
@@ -8846,14 +8825,14 @@ arch grass
 x 33
 y 43
 end
-arch cobblestones2
-x 33
-y 43
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
 sp 9
+x 33
+y 43
+end
+arch cobblestones2
 x 33
 y 43
 end
@@ -9080,10 +9059,6 @@ arch river_w-e
 x 34
 y 41
 end
-arch grass
-x 34
-y 42
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -9092,13 +9067,17 @@ x 34
 y 42
 end
 arch grass
+x 34
+y 42
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 34
 y 43
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 34
 y 43
 end
@@ -12414,17 +12393,6 @@ arch river_w-e
 x 49
 y 18
 end
-arch grass
-x 49
-y 19
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
-x 49
-y 19
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -12433,13 +12401,17 @@ x 49
 y 19
 end
 arch grass
+x 49
+y 19
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 49
 y 20
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 49
 y 20
 end
@@ -12575,6 +12547,13 @@ arch grass
 x 50
 y 19
 end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
+x 50
+y 19
+end
 arch cobblestones2
 x 50
 y 19
@@ -12584,20 +12563,13 @@ slaying /world/world_103_127
 hp 12
 sp 9
 x 50
-y 19
+y 20
 end
 arch grass
 x 50
 y 20
 end
 arch cobblestones2
-x 50
-y 20
-end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
 x 50
 y 20
 end
@@ -12716,10 +12688,6 @@ arch river_w-e
 x 51
 y 18
 end
-arch grass
-x 51
-y 19
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 12
@@ -12728,13 +12696,17 @@ x 51
 y 19
 end
 arch grass
+x 51
+y 19
+end
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 9
 x 51
 y 20
 end
-arch invis_exit
-slaying /world/world_103_127
-hp 12
-sp 9
+arch grass
 x 51
 y 20
 end
