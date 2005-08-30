@@ -1595,14 +1595,14 @@ arch wall_1_2
 x 8
 y 9
 end
-arch woodfloor
-x 8
-y 10
-end
 arch magic_mouth
 msg
 Local Guild Bank
 endmsg
+x 8
+y 10
+end
+arch woodfloor
 x 8
 y 10
 end

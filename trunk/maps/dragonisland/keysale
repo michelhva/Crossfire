@@ -799,19 +799,19 @@ y 12
 speed 0.500000
 connected 1
 end
+arch magic_mouth
+msg
+Come in!
+endmsg
+x 7
+y 13
+end
 arch button_small
 x 7
 y 13
 connected 1
 end
 arch cobblestones2
-x 7
-y 13
-end
-arch magic_mouth
-msg
-Come in!
-endmsg
 x 7
 y 13
 end

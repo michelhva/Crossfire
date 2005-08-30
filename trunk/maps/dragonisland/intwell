@@ -1744,18 +1744,18 @@ arch wwall_2_1_2
 x 10
 y 6
 end
+arch magic_mouth
+msg
+Congratulations!
+endmsg
+x 10
+y 7
+end
 arch dirtfloor
 x 10
 y 7
 end
 arch random_treasure
-x 10
-y 7
-end
-arch magic_mouth
-msg
-Congratulations!
-endmsg
 x 10
 y 7
 end

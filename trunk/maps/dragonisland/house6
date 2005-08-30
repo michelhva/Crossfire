@@ -2021,14 +2021,14 @@ arch woodfloor
 x 15
 y 5
 end
-arch woodfloor
-x 15
-y 6
-end
 arch magic_mouth
 msg
 So you dare enter through spikes!
 endmsg
+x 15
+y 6
+end
+arch woodfloor
 x 15
 y 6
 end

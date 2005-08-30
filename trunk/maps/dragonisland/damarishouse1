@@ -943,14 +943,14 @@ arch grass
 x 10
 y 13
 end
-arch grass
-x 10
-y 14
-end
 arch invis_exit
 slaying /world/world_103_127
 hp 8
 sp 14
+x 10
+y 14
+end
+arch grass
 x 10
 y 14
 end
