@@ -140,13 +140,13 @@ arch woodfloor2
 x 2
 y 1
 end
-arch woodfloor2
-x 2
-y 2
-end
 arch button_small
 invisible 1
 connected 1
+x 2
+y 2
+end
+arch woodfloor2
 x 2
 y 2
 end
@@ -159,10 +159,6 @@ connected 1
 x 2
 y 3
 end
-arch woodfloor2
-x 2
-y 4
-end
 arch button_small
 invisible 1
 connected 1
@@ -171,11 +167,15 @@ y 4
 end
 arch woodfloor2
 x 2
-y 5
+y 4
 end
 arch button_small
 invisible 1
 connected 4
+x 2
+y 5
+end
+arch woodfloor2
 x 2
 y 5
 end
@@ -188,13 +188,13 @@ connected 4
 x 2
 y 6
 end
-arch woodfloor2
+arch button_small
+invisible 1
+connected 4
 x 2
 y 7
 end
-arch button_small
-invisible 1
-connected 4
+arch woodfloor2
 x 2
 y 7
 end
@@ -430,13 +430,13 @@ arch woodfloor2
 x 6
 y 1
 end
-arch woodfloor2
-x 6
-y 2
-end
 arch button_small
 invisible 1
 connected 2
+x 6
+y 2
+end
+arch woodfloor2
 x 6
 y 2
 end
@@ -449,10 +449,6 @@ connected 2
 x 6
 y 3
 end
-arch woodfloor2
-x 6
-y 4
-end
 arch button_small
 invisible 1
 connected 2
@@ -461,11 +457,15 @@ y 4
 end
 arch woodfloor2
 x 6
-y 5
+y 4
 end
 arch button_small
 invisible 1
 connected 5
+x 6
+y 5
+end
+arch woodfloor2
 x 6
 y 5
 end
@@ -478,13 +478,13 @@ connected 5
 x 6
 y 6
 end
-arch woodfloor2
+arch button_small
+invisible 1
+connected 5
 x 6
 y 7
 end
-arch button_small
-invisible 1
-connected 5
+arch woodfloor2
 x 6
 y 7
 end
@@ -712,13 +712,13 @@ arch woodfloor2
 x 10
 y 1
 end
-arch woodfloor2
-x 10
-y 2
-end
 arch button_small
 invisible 1
 connected 3
+x 10
+y 2
+end
+arch woodfloor2
 x 10
 y 2
 end
@@ -731,10 +731,6 @@ connected 3
 x 10
 y 3
 end
-arch woodfloor2
-x 10
-y 4
-end
 arch button_small
 invisible 1
 connected 3
@@ -743,11 +739,15 @@ y 4
 end
 arch woodfloor2
 x 10
-y 5
+y 4
 end
 arch button_small
 invisible 1
 connected 6
+x 10
+y 5
+end
+arch woodfloor2
 x 10
 y 5
 end
@@ -760,13 +760,13 @@ connected 6
 x 10
 y 6
 end
-arch woodfloor2
+arch button_small
+invisible 1
+connected 6
 x 10
 y 7
 end
-arch button_small
-invisible 1
-connected 6
+arch woodfloor2
 x 10
 y 7
 end
@@ -1034,13 +1034,13 @@ arch woodfloor2
 x 14
 y 4
 end
-arch woodfloor2
-x 14
-y 5
-end
 arch button_small
 invisible 1
 connected 7
+x 14
+y 5
+end
+arch woodfloor2
 x 14
 y 5
 end
@@ -1053,13 +1053,13 @@ connected 7
 x 14
 y 6
 end
-arch woodfloor2
-x 14
-y 7
-end
 arch button_small
 invisible 1
 connected 7
+x 14
+y 7
+end
+arch woodfloor2
 x 14
 y 7
 end
@@ -1292,14 +1292,6 @@ arch woodfloor2
 x 18
 y 2
 end
-arch woodfloor2
-x 18
-y 3
-end
-arch woodwall_1_3
-x 18
-y 3
-end
 arch magic_mouth
 msg
 The key opens the door.
@@ -1308,6 +1300,14 @@ connected 10
 walk_on 0
 fly_on 0
 food 1
+x 18
+y 3
+end
+arch woodfloor2
+x 18
+y 3
+end
+arch woodwall_1_3
 x 18
 y 3
 end
