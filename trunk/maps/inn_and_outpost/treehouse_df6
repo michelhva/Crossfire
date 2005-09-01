@@ -11,13 +11,13 @@ enter_x 6
 enter_y 6
 outdoor 1
 end
-arch brush
-end
 arch invis_exit
 slaying /world/world_104_114
 hp 35
 sp 34
 fly_on 0
+end
+arch brush
 end
 arch woods_2
 name foilage
@@ -67,14 +67,14 @@ blocksview 1
 slow_move 3
 y 8
 end
-arch brush
-y 9
-end
 arch invis_exit
 slaying /world/world_104_114
 hp 35
 sp 34
 fly_on 0
+y 9
+end
+arch brush
 y 9
 end
 arch woods_2
@@ -606,14 +606,14 @@ slow_move 3
 x 8
 y 9
 end
-arch brush
-x 9
-end
 arch invis_exit
 slaying /world/world_104_114
 hp 35
 sp 34
 fly_on 0
+x 9
+end
+arch brush
 x 9
 end
 arch woods_2
@@ -672,15 +672,15 @@ slow_move 3
 x 9
 y 8
 end
-arch brush
-x 9
-y 9
-end
 arch invis_exit
 slaying /world/world_104_114
 hp 35
 sp 34
 fly_on 0
+x 9
+y 9
+end
+arch brush
 x 9
 y 9
 end

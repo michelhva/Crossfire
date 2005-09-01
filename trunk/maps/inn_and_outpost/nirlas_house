@@ -12,15 +12,21 @@ enter_y 6
 difficulty 8
 outdoor 1
 end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 1
+end
 end
 arch woods_2
 name foilage
@@ -32,322 +38,316 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+y 2
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 2
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 3
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 3
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 4
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 4
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 5
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 5
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 6
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 6
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 7
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 7
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 8
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 8
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 9
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 9
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 10
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 10
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 11
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 11
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 12
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 12
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 13
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 13
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 14
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+y 14
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 15
+end
+arch grass
+y 15
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 16
+end
+arch grass
+y 16
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 17
+end
+arch grass
+y 17
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 18
+end
+arch grass
+y 18
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 19
+end
+arch grass
+y 19
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 20
+end
+arch grass
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 21
+end
+arch grass
+y 21
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 22
+end
+arch grass
+y 22
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 23
+end
+arch grass
+y 23
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 24
+end
+arch grass
+y 24
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 25
+end
+arch grass
+y 25
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 26
+end
+arch grass
+y 26
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 27
+end
+arch grass
+y 27
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 28
+end
+arch grass
+y 28
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+y 29
+end
+arch grass
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 1
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+x 1
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
+x 1
 y 1
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-y 2
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 2
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 3
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 3
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 4
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 4
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 5
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 5
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 6
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 6
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 7
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 7
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 8
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 8
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 9
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 9
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 10
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 10
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 11
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 11
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 12
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 12
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 13
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 13
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-y 14
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 14
-end
-arch grass
-y 15
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 15
-end
-arch grass
-y 16
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 16
-end
-arch grass
-y 17
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 17
-end
-arch grass
-y 18
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 18
-end
-arch grass
-y 19
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 19
-end
-arch grass
-y 20
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 20
-end
-arch grass
-y 21
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 21
-end
-arch grass
-y 22
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 22
-end
-arch grass
-y 23
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 23
-end
-arch grass
-y 24
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 24
-end
-arch grass
-y 25
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 25
-end
-arch grass
-y 26
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 26
-end
-arch grass
-y 27
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 27
-end
-arch grass
-y 28
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 28
-end
-arch grass
-y 29
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-y 29
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-x 1
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-x 1
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-x 1
-y 1
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
 x 1
 y 2
 end
@@ -435,10 +435,6 @@ slow_move 3
 x 1
 y 14
 end
-arch grass
-x 1
-y 15
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -449,7 +445,7 @@ y 15
 end
 arch grass
 x 1
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -461,7 +457,7 @@ y 16
 end
 arch grass
 x 1
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -472,14 +468,18 @@ x 1
 y 17
 end
 arch grass
+x 1
+y 17
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 1
 y 18
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 1
 y 18
 end
@@ -553,6 +553,13 @@ slow_move 3
 x 1
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 1
+y 29
+end
 arch grass
 x 1
 y 29
@@ -561,19 +568,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 1
-y 29
-end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
 x 2
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
 x 2
 end
 arch woods_2
@@ -698,10 +698,6 @@ slow_move 3
 x 2
 y 14
 end
-arch grass
-x 2
-y 15
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -712,7 +708,7 @@ y 15
 end
 arch grass
 x 2
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -724,7 +720,7 @@ y 16
 end
 arch grass
 x 2
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -735,14 +731,18 @@ x 2
 y 17
 end
 arch grass
+x 2
+y 17
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 2
 y 18
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 2
 y 18
 end
@@ -848,6 +848,13 @@ slow_move 3
 x 2
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 2
+y 29
+end
 arch grass
 x 2
 y 29
@@ -856,19 +863,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 2
-y 29
+x 3
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 3
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 3
 end
 arch woods_2
@@ -971,10 +971,6 @@ slow_move 3
 x 3
 y 14
 end
-arch grass
-x 3
-y 15
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -985,7 +981,7 @@ y 15
 end
 arch grass
 x 3
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -997,7 +993,7 @@ y 16
 end
 arch grass
 x 3
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -1009,7 +1005,7 @@ y 17
 end
 arch grass
 x 3
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -1020,14 +1016,18 @@ x 3
 y 18
 end
 arch grass
+x 3
+y 18
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 3
 y 19
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 3
 y 19
 end
@@ -1126,6 +1126,13 @@ slow_move 3
 x 3
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 3
+y 29
+end
 arch grass
 x 3
 y 29
@@ -1134,19 +1141,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 3
-y 29
+x 4
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 4
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 4
 end
 arch woods_2
@@ -1297,10 +1297,6 @@ slow_move 3
 x 4
 y 15
 end
-arch grass
-x 4
-y 16
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -1310,14 +1306,18 @@ x 4
 y 16
 end
 arch grass
+x 4
+y 16
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 4
 y 17
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 4
 y 17
 end
@@ -1445,6 +1445,13 @@ slow_move 3
 x 4
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 4
+y 29
+end
 arch grass
 x 4
 y 29
@@ -1453,19 +1460,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 4
-y 29
+x 5
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 5
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 5
 end
 arch woods_2
@@ -1577,10 +1577,6 @@ slow_move 3
 x 5
 y 15
 end
-arch grass
-x 5
-y 16
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -1590,14 +1586,18 @@ x 5
 y 16
 end
 arch grass
+x 5
+y 16
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 5
 y 17
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 5
 y 17
 end
@@ -1713,6 +1713,13 @@ slow_move 3
 x 5
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 5
+y 29
+end
 arch grass
 x 5
 y 29
@@ -1721,19 +1728,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 5
-y 29
+x 6
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 6
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 6
 end
 arch woods_2
@@ -1920,6 +1920,13 @@ slow_move 3
 x 6
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 6
+y 29
+end
 arch grass
 x 6
 y 29
@@ -1928,19 +1935,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 6
-y 29
+x 7
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 7
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 7
 end
 arch woods_2
@@ -2026,10 +2026,6 @@ smoothlevel 254
 x 7
 y 13
 end
-arch grass
-x 7
-y 14
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -2040,7 +2036,7 @@ y 14
 end
 arch grass
 x 7
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -2052,7 +2048,7 @@ y 15
 end
 arch grass
 x 7
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -2064,7 +2060,7 @@ y 16
 end
 arch grass
 x 7
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -2075,14 +2071,18 @@ x 7
 y 17
 end
 arch grass
+x 7
+y 17
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 7
 y 18
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 7
 y 18
 end
@@ -2152,6 +2152,13 @@ slow_move 3
 x 7
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 7
+y 29
+end
 arch grass
 x 7
 y 29
@@ -2160,19 +2167,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 7
-y 29
+x 8
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 8
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 8
 end
 arch woods_2
@@ -2266,15 +2266,15 @@ arch wall_1_4
 x 8
 y 13
 end
-arch grass
-x 8
-y 14
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 8
+y 14
+end
+arch grass
 x 8
 y 14
 end
@@ -2292,15 +2292,15 @@ slow_move 3
 x 8
 y 16
 end
-arch grass
-x 8
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 8
+y 17
+end
+arch grass
 x 8
 y 17
 end
@@ -2343,15 +2343,15 @@ smoothlevel 254
 x 8
 y 24
 end
-arch grass
-x 8
-y 25
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 8
+y 25
+end
+arch grass
 x 8
 y 25
 end
@@ -2376,6 +2376,13 @@ slow_move 3
 x 8
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 8
+y 29
+end
 arch grass
 x 8
 y 29
@@ -2384,19 +2391,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 8
-y 29
+x 9
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 9
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 9
 end
 arch woods_2
@@ -2507,15 +2507,15 @@ slow_move 3
 x 9
 y 16
 end
-arch grass
-x 9
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 9
+y 17
+end
+arch grass
 x 9
 y 17
 end
@@ -2566,10 +2566,6 @@ smoothlevel 254
 x 9
 y 24
 end
-arch grass
-x 9
-y 25
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -2580,7 +2576,7 @@ y 25
 end
 arch grass
 x 9
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -2591,14 +2587,18 @@ x 9
 y 26
 end
 arch grass
+x 9
+y 26
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 9
 y 27
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 9
 y 27
 end
@@ -2609,6 +2609,13 @@ slow_move 3
 x 9
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 9
+y 29
+end
 arch grass
 x 9
 y 29
@@ -2617,19 +2624,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 9
-y 29
+x 10
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 10
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 10
 end
 arch woods_2
@@ -2728,15 +2728,15 @@ slow_move 3
 x 10
 y 16
 end
-arch grass
-x 10
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 10
+y 17
+end
+arch grass
 x 10
 y 17
 end
@@ -2802,10 +2802,6 @@ arch wall_2_2_1
 x 10
 y 25
 end
-arch grass
-x 10
-y 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -2815,14 +2811,18 @@ x 10
 y 26
 end
 arch grass
+x 10
+y 26
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 10
 y 27
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 10
 y 27
 end
@@ -2833,6 +2833,13 @@ slow_move 3
 x 10
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 10
+y 29
+end
 arch grass
 x 10
 y 29
@@ -2841,19 +2848,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 10
-y 29
+x 11
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 11
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 11
 end
 arch woods_2
@@ -2966,15 +2966,15 @@ sleep 0
 x 11
 y 16
 end
-arch grass
-x 11
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 11
+y 17
+end
+arch grass
 x 11
 y 17
 end
@@ -3043,15 +3043,15 @@ smoothlevel 254
 x 11
 y 26
 end
-arch grass
-x 11
-y 27
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 11
+y 27
+end
+arch grass
 x 11
 y 27
 end
@@ -3062,6 +3062,13 @@ slow_move 3
 x 11
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 11
+y 29
+end
 arch grass
 x 11
 y 29
@@ -3070,19 +3077,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 11
-y 29
+x 12
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 12
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 12
 end
 arch woods_2
@@ -3197,15 +3197,15 @@ arch wall_2_2_1
 x 12
 y 16
 end
-arch grass
-x 12
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 12
+y 17
+end
+arch grass
 x 12
 y 17
 end
@@ -3272,6 +3272,13 @@ slow_move 3
 x 12
 y 28
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+x 12
+y 29
+end
 arch grass
 x 12
 y 29
@@ -3280,19 +3287,12 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-x 12
-y 29
+x 13
 end
 arch woods_2
 name foilage
 blocksview 1
 slow_move 3
-x 13
-end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
 x 13
 end
 arch woods_2
@@ -3427,10 +3427,6 @@ arch wall_2_2_4
 x 13
 y 16
 end
-arch grass
-x 13
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -3441,7 +3437,7 @@ y 17
 end
 arch grass
 x 13
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3453,7 +3449,7 @@ y 18
 end
 arch grass
 x 13
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3465,7 +3461,7 @@ y 19
 end
 arch grass
 x 13
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3476,14 +3472,18 @@ x 13
 y 20
 end
 arch grass
+x 13
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 13
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 13
 y 21
 end
@@ -3529,10 +3529,6 @@ slow_move 3
 x 13
 y 27
 end
-arch grass
-x 13
-y 28
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -3543,7 +3539,7 @@ y 28
 end
 arch grass
 x 13
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3552,16 +3548,20 @@ sp 25
 x 13
 y 29
 end
-arch woods_2
-name foilage
-blocksview 1
-slow_move 3
-x 14
+arch grass
+x 13
+y 29
 end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+x 14
+end
+arch woods_2
+name foilage
+blocksview 1
+slow_move 3
 x 14
 end
 arch woods_2
@@ -3679,10 +3679,6 @@ slow_move 3
 x 14
 y 15
 end
-arch grass
-x 14
-y 16
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -3693,7 +3689,7 @@ y 16
 end
 arch grass
 x 14
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3705,7 +3701,7 @@ y 17
 end
 arch grass
 x 14
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3717,7 +3713,7 @@ y 18
 end
 arch grass
 x 14
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3728,14 +3724,18 @@ x 14
 y 19
 end
 arch grass
+x 14
+y 19
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 14
 y 20
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 14
 y 20
 end
@@ -3774,10 +3774,6 @@ slow_move 3
 x 14
 y 25
 end
-arch grass
-x 14
-y 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -3788,7 +3784,7 @@ y 26
 end
 arch grass
 x 14
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3800,7 +3796,7 @@ y 27
 end
 arch grass
 x 14
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3812,7 +3808,7 @@ y 28
 end
 arch grass
 x 14
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3822,12 +3818,16 @@ x 14
 y 29
 end
 arch grass
+x 14
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 15
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 15
 end
 arch woods_2
@@ -3837,10 +3837,6 @@ slow_move 3
 x 15
 y 1
 end
-arch grass
-x 15
-y 2
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -3851,7 +3847,7 @@ y 2
 end
 arch grass
 x 15
-y 3
+y 2
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3863,7 +3859,7 @@ y 3
 end
 arch grass
 x 15
-y 4
+y 3
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -3874,14 +3870,18 @@ x 15
 y 4
 end
 arch grass
+x 15
+y 4
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 15
 y 5
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 15
 y 5
 end
@@ -3890,15 +3890,15 @@ smoothlevel 254
 x 15
 y 6
 end
-arch grass
-x 15
-y 7
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 15
+y 7
+end
+arch grass
 x 15
 y 7
 end
@@ -3966,6 +3966,14 @@ slow_move 3
 x 15
 y 15
 end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
+x 15
+y 16
+end
 arch grass
 x 15
 y 16
@@ -3976,7 +3984,7 @@ hp 4
 sp 25
 fly_on 0
 x 15
-y 16
+y 17
 end
 arch grass
 x 15
@@ -3992,7 +4000,7 @@ hp 4
 sp 25
 fly_on 0
 x 15
-y 17
+y 18
 end
 arch grass
 x 15
@@ -4004,7 +4012,7 @@ hp 4
 sp 25
 fly_on 0
 x 15
-y 18
+y 19
 end
 arch grass
 x 15
@@ -4015,18 +4023,10 @@ slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
-x 15
-y 19
-end
-arch grass
 x 15
 y 20
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 15
 y 20
 end
@@ -4061,10 +4061,6 @@ slow_move 3
 x 15
 y 25
 end
-arch grass
-x 15
-y 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4075,7 +4071,7 @@ y 26
 end
 arch grass
 x 15
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4087,7 +4083,7 @@ y 27
 end
 arch grass
 x 15
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4099,7 +4095,7 @@ y 28
 end
 arch grass
 x 15
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4109,13 +4105,25 @@ x 15
 y 29
 end
 arch grass
-x 16
+x 15
+y 29
 end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 x 16
+end
+arch grass
+x 16
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
+x 16
+y 1
 end
 arch grass
 x 16
@@ -4127,7 +4135,7 @@ hp 4
 sp 25
 fly_on 0
 x 16
-y 1
+y 2
 end
 arch grass
 x 16
@@ -4139,7 +4147,7 @@ hp 4
 sp 25
 fly_on 0
 x 16
-y 2
+y 3
 end
 arch grass
 x 16
@@ -4151,7 +4159,7 @@ hp 4
 sp 25
 fly_on 0
 x 16
-y 3
+y 4
 end
 arch grass
 x 16
@@ -4162,18 +4170,10 @@ slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
-x 16
-y 4
-end
-arch grass
 x 16
 y 5
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 16
 y 5
 end
@@ -4182,10 +4182,6 @@ smoothlevel 254
 x 16
 y 6
 end
-arch grass
-x 16
-y 7
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4196,7 +4192,7 @@ y 7
 end
 arch grass
 x 16
-y 8
+y 7
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4208,7 +4204,7 @@ y 8
 end
 arch grass
 x 16
-y 9
+y 8
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4220,7 +4216,7 @@ y 9
 end
 arch grass
 x 16
-y 10
+y 9
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4232,7 +4228,7 @@ y 10
 end
 arch grass
 x 16
-y 11
+y 10
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4243,14 +4239,18 @@ x 16
 y 11
 end
 arch grass
+x 16
+y 11
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 16
 y 12
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 16
 y 12
 end
@@ -4289,10 +4289,6 @@ slow_move 3
 x 16
 y 17
 end
-arch grass
-x 16
-y 18
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4303,7 +4299,7 @@ y 18
 end
 arch grass
 x 16
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4314,14 +4310,18 @@ x 16
 y 19
 end
 arch grass
+x 16
+y 19
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 16
 y 20
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 16
 y 20
 end
@@ -4364,10 +4364,6 @@ slow_move 3
 x 16
 y 25
 end
-arch grass
-x 16
-y 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4378,7 +4374,7 @@ y 26
 end
 arch grass
 x 16
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4390,7 +4386,7 @@ y 27
 end
 arch grass
 x 16
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4402,7 +4398,7 @@ y 28
 end
 arch grass
 x 16
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4412,13 +4408,25 @@ x 16
 y 29
 end
 arch grass
-x 17
+x 16
+y 29
 end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 x 17
+end
+arch grass
+x 17
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
+x 17
+y 1
 end
 arch grass
 x 17
@@ -4430,7 +4438,7 @@ hp 4
 sp 25
 fly_on 0
 x 17
-y 1
+y 2
 end
 arch grass
 x 17
@@ -4442,7 +4450,7 @@ hp 4
 sp 25
 fly_on 0
 x 17
-y 2
+y 3
 end
 arch grass
 x 17
@@ -4454,7 +4462,7 @@ hp 4
 sp 25
 fly_on 0
 x 17
-y 3
+y 4
 end
 arch grass
 x 17
@@ -4465,18 +4473,10 @@ slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
-x 17
-y 4
-end
-arch grass
 x 17
 y 5
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 17
 y 5
 end
@@ -4485,10 +4485,6 @@ smoothlevel 254
 x 17
 y 6
 end
-arch grass
-x 17
-y 7
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4499,7 +4495,7 @@ y 7
 end
 arch grass
 x 17
-y 8
+y 7
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4511,7 +4507,7 @@ y 8
 end
 arch grass
 x 17
-y 9
+y 8
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4523,7 +4519,7 @@ y 9
 end
 arch grass
 x 17
-y 10
+y 9
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4534,14 +4530,18 @@ x 17
 y 10
 end
 arch grass
+x 17
+y 10
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 17
 y 11
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 17
 y 11
 end
@@ -4581,10 +4581,6 @@ slow_move 3
 x 17
 y 17
 end
-arch grass
-x 17
-y 18
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4595,7 +4591,7 @@ y 18
 end
 arch grass
 x 17
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4606,14 +4602,18 @@ x 17
 y 19
 end
 arch grass
+x 17
+y 19
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 17
 y 20
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 17
 y 20
 end
@@ -4661,10 +4661,6 @@ slow_move 3
 x 17
 y 26
 end
-arch grass
-x 17
-y 27
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4675,7 +4671,7 @@ y 27
 end
 arch grass
 x 17
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4687,7 +4683,7 @@ y 28
 end
 arch grass
 x 17
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4697,7 +4693,8 @@ x 17
 y 29
 end
 arch grass
-x 18
+x 17
+y 29
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4706,14 +4703,17 @@ sp 25
 x 18
 end
 arch grass
+x 18
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 18
 y 1
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 18
 y 1
 end
@@ -4904,10 +4904,6 @@ slow_move 3
 x 18
 y 26
 end
-arch grass
-x 18
-y 27
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -4918,7 +4914,7 @@ y 27
 end
 arch grass
 x 18
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4930,7 +4926,7 @@ y 28
 end
 arch grass
 x 18
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -4940,12 +4936,16 @@ x 18
 y 29
 end
 arch grass
+x 18
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 19
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 19
 end
 arch woods_2
@@ -5117,10 +5117,6 @@ slow_move 3
 x 19
 y 25
 end
-arch grass
-x 19
-y 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5131,7 +5127,7 @@ y 26
 end
 arch grass
 x 19
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5143,7 +5139,7 @@ y 27
 end
 arch grass
 x 19
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5155,7 +5151,7 @@ y 28
 end
 arch grass
 x 19
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5165,12 +5161,16 @@ x 19
 y 29
 end
 arch grass
+x 19
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 20
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 20
 end
 arch woods_2
@@ -5246,15 +5246,15 @@ slow_move 3
 x 20
 y 11
 end
-arch grass
-x 20
-y 12
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 20
+y 12
+end
+arch grass
 x 20
 y 12
 end
@@ -5287,10 +5287,6 @@ slow_move 3
 x 20
 y 17
 end
-arch grass
-x 20
-y 18
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5300,14 +5296,18 @@ x 20
 y 18
 end
 arch grass
+x 20
+y 18
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 20
 y 19
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 20
 y 19
 end
@@ -5346,10 +5346,6 @@ slow_move 3
 x 20
 y 24
 end
-arch grass
-x 20
-y 25
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5360,7 +5356,7 @@ y 25
 end
 arch grass
 x 20
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5372,7 +5368,7 @@ y 26
 end
 arch grass
 x 20
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5384,7 +5380,7 @@ y 27
 end
 arch grass
 x 20
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5396,7 +5392,7 @@ y 28
 end
 arch grass
 x 20
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5406,12 +5402,16 @@ x 20
 y 29
 end
 arch grass
+x 20
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 21
 end
 arch woods_2
@@ -5506,10 +5506,6 @@ slow_move 3
 x 21
 y 11
 end
-arch grass
-x 21
-y 12
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5519,14 +5515,18 @@ x 21
 y 12
 end
 arch grass
+x 21
+y 12
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 21
 y 13
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 21
 y 13
 end
@@ -5608,10 +5608,6 @@ slow_move 3
 x 21
 y 23
 end
-arch grass
-x 21
-y 24
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5622,7 +5618,7 @@ y 24
 end
 arch grass
 x 21
-y 25
+y 24
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5634,7 +5630,7 @@ y 25
 end
 arch grass
 x 21
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5646,7 +5642,7 @@ y 26
 end
 arch grass
 x 21
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5658,7 +5654,7 @@ y 27
 end
 arch grass
 x 21
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5670,7 +5666,7 @@ y 28
 end
 arch grass
 x 21
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5680,12 +5676,16 @@ x 21
 y 29
 end
 arch grass
+x 21
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 22
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 22
 end
 arch woods_2
@@ -5829,10 +5829,6 @@ slow_move 3
 x 22
 y 19
 end
-arch grass
-x 22
-y 20
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -5843,7 +5839,7 @@ y 20
 end
 arch grass
 x 22
-y 21
+y 20
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5855,7 +5851,7 @@ y 21
 end
 arch grass
 x 22
-y 22
+y 21
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5867,7 +5863,7 @@ y 22
 end
 arch grass
 x 22
-y 23
+y 22
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5879,7 +5875,7 @@ y 23
 end
 arch grass
 x 22
-y 24
+y 23
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5891,7 +5887,7 @@ y 24
 end
 arch grass
 x 22
-y 25
+y 24
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5903,7 +5899,7 @@ y 25
 end
 arch grass
 x 22
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5915,7 +5911,7 @@ y 26
 end
 arch grass
 x 22
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5927,7 +5923,7 @@ y 27
 end
 arch grass
 x 22
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5939,7 +5935,7 @@ y 28
 end
 arch grass
 x 22
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -5949,12 +5945,16 @@ x 22
 y 29
 end
 arch grass
+x 22
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 23
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 23
 end
 arch woods_2
@@ -6072,10 +6072,6 @@ slow_move 3
 x 23
 y 17
 end
-arch grass
-x 23
-y 18
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -6086,7 +6082,7 @@ y 18
 end
 arch grass
 x 23
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6098,7 +6094,7 @@ y 19
 end
 arch grass
 x 23
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6110,7 +6106,7 @@ y 20
 end
 arch grass
 x 23
-y 21
+y 20
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6122,7 +6118,7 @@ y 21
 end
 arch grass
 x 23
-y 22
+y 21
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6134,7 +6130,7 @@ y 22
 end
 arch grass
 x 23
-y 23
+y 22
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6146,7 +6142,7 @@ y 23
 end
 arch grass
 x 23
-y 24
+y 23
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6158,7 +6154,7 @@ y 24
 end
 arch grass
 x 23
-y 25
+y 24
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6170,7 +6166,7 @@ y 25
 end
 arch grass
 x 23
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6182,7 +6178,7 @@ y 26
 end
 arch grass
 x 23
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6194,7 +6190,7 @@ y 27
 end
 arch grass
 x 23
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6206,7 +6202,7 @@ y 28
 end
 arch grass
 x 23
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6216,12 +6212,16 @@ x 23
 y 29
 end
 arch grass
+x 23
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 24
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 24
 end
 arch woods_2
@@ -6303,10 +6303,6 @@ slow_move 3
 x 24
 y 12
 end
-arch grass
-x 24
-y 13
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -6316,14 +6312,18 @@ x 24
 y 13
 end
 arch grass
+x 24
+y 13
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
+fly_on 0
 x 24
 y 14
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
-fly_on 0
+arch grass
 x 24
 y 14
 end
@@ -6341,10 +6341,6 @@ slow_move 3
 x 24
 y 16
 end
-arch grass
-x 24
-y 17
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -6355,7 +6351,7 @@ y 17
 end
 arch grass
 x 24
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6367,7 +6363,7 @@ y 18
 end
 arch grass
 x 24
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6379,7 +6375,7 @@ y 19
 end
 arch grass
 x 24
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6391,7 +6387,7 @@ y 20
 end
 arch grass
 x 24
-y 21
+y 20
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6402,7 +6398,7 @@ y 21
 end
 arch grass
 x 24
-y 22
+y 21
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6413,7 +6409,7 @@ y 22
 end
 arch grass
 x 24
-y 23
+y 22
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6424,7 +6420,7 @@ y 23
 end
 arch grass
 x 24
-y 24
+y 23
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6435,7 +6431,7 @@ y 24
 end
 arch grass
 x 24
-y 25
+y 24
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6446,7 +6442,7 @@ y 25
 end
 arch grass
 x 24
-y 26
+y 25
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6457,7 +6453,7 @@ y 26
 end
 arch grass
 x 24
-y 27
+y 26
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6468,7 +6464,7 @@ y 27
 end
 arch grass
 x 24
-y 28
+y 27
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6479,7 +6475,7 @@ y 28
 end
 arch grass
 x 24
-y 29
+y 28
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6489,12 +6485,16 @@ x 24
 y 29
 end
 arch grass
+x 24
+y 29
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 25
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 25
 end
 arch woods_2
@@ -6563,10 +6563,6 @@ slow_move 3
 x 25
 y 10
 end
-arch grass
-x 25
-y 11
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -6577,7 +6573,7 @@ y 11
 end
 arch grass
 x 25
-y 12
+y 11
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6589,7 +6585,7 @@ y 12
 end
 arch grass
 x 25
-y 13
+y 12
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6601,7 +6597,7 @@ y 13
 end
 arch grass
 x 25
-y 14
+y 13
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6613,7 +6609,7 @@ y 14
 end
 arch grass
 x 25
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6625,7 +6621,7 @@ y 15
 end
 arch grass
 x 25
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6637,7 +6633,7 @@ y 16
 end
 arch grass
 x 25
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6649,7 +6645,7 @@ y 17
 end
 arch grass
 x 25
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6661,7 +6657,7 @@ y 18
 end
 arch grass
 x 25
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6673,7 +6669,7 @@ y 19
 end
 arch grass
 x 25
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6684,13 +6680,17 @@ x 25
 y 20
 end
 arch grass
+x 25
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 25
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 25
 y 21
 end
@@ -6726,13 +6726,13 @@ arch blocked
 x 25
 y 29
 end
-arch grass
-x 26
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+x 26
+end
+arch grass
 x 26
 end
 arch woods_2
@@ -6801,10 +6801,6 @@ slow_move 3
 x 26
 y 10
 end
-arch grass
-x 26
-y 11
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -6815,7 +6811,7 @@ y 11
 end
 arch grass
 x 26
-y 12
+y 11
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6827,7 +6823,7 @@ y 12
 end
 arch grass
 x 26
-y 13
+y 12
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6839,7 +6835,7 @@ y 13
 end
 arch grass
 x 26
-y 14
+y 13
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6851,7 +6847,7 @@ y 14
 end
 arch grass
 x 26
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6863,7 +6859,7 @@ y 15
 end
 arch grass
 x 26
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6875,7 +6871,7 @@ y 16
 end
 arch grass
 x 26
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6887,7 +6883,7 @@ y 17
 end
 arch grass
 x 26
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6899,7 +6895,7 @@ y 18
 end
 arch grass
 x 26
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6911,7 +6907,7 @@ y 19
 end
 arch grass
 x 26
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -6922,13 +6918,17 @@ x 26
 y 20
 end
 arch grass
+x 26
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 26
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 26
 y 21
 end
@@ -6936,13 +6936,13 @@ arch blocked
 x 26
 y 22
 end
-arch grass
-x 27
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+x 27
+end
+arch grass
 x 27
 end
 arch woods_2
@@ -7028,10 +7028,6 @@ slow_move 3
 x 27
 y 10
 end
-arch grass
-x 27
-y 11
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -7042,7 +7038,7 @@ y 11
 end
 arch grass
 x 27
-y 12
+y 11
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7054,7 +7050,7 @@ y 12
 end
 arch grass
 x 27
-y 13
+y 12
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7066,7 +7062,7 @@ y 13
 end
 arch grass
 x 27
-y 14
+y 13
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7078,7 +7074,7 @@ y 14
 end
 arch grass
 x 27
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7090,7 +7086,7 @@ y 15
 end
 arch grass
 x 27
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7102,7 +7098,7 @@ y 16
 end
 arch grass
 x 27
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7114,7 +7110,7 @@ y 17
 end
 arch grass
 x 27
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7126,7 +7122,7 @@ y 18
 end
 arch grass
 x 27
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7138,7 +7134,7 @@ y 19
 end
 arch grass
 x 27
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7149,13 +7145,17 @@ x 27
 y 20
 end
 arch grass
+x 27
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 27
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 27
 y 21
 end
@@ -7163,13 +7163,13 @@ arch blocked
 x 27
 y 22
 end
-arch grass
-x 28
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
+x 28
+end
+arch grass
 x 28
 end
 arch woods_2
@@ -7193,15 +7193,15 @@ slow_move 3
 x 28
 y 3
 end
-arch grass
-x 28
-y 4
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
 fly_on 0
+x 28
+y 4
+end
+arch grass
 x 28
 y 4
 end
@@ -7247,10 +7247,6 @@ slow_move 3
 x 28
 y 10
 end
-arch grass
-x 28
-y 11
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -7261,7 +7257,7 @@ y 11
 end
 arch grass
 x 28
-y 12
+y 11
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7273,7 +7269,7 @@ y 12
 end
 arch grass
 x 28
-y 13
+y 12
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7285,7 +7281,7 @@ y 13
 end
 arch grass
 x 28
-y 14
+y 13
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7297,7 +7293,7 @@ y 14
 end
 arch grass
 x 28
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7309,7 +7305,7 @@ y 15
 end
 arch grass
 x 28
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7321,7 +7317,7 @@ y 16
 end
 arch grass
 x 28
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7333,7 +7329,7 @@ y 17
 end
 arch grass
 x 28
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7345,7 +7341,7 @@ y 18
 end
 arch grass
 x 28
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7357,7 +7353,7 @@ y 19
 end
 arch grass
 x 28
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7368,13 +7364,17 @@ x 28
 y 20
 end
 arch grass
+x 28
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 28
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 28
 y 21
 end
@@ -7382,9 +7382,6 @@ arch blocked
 x 28
 y 22
 end
-arch grass
-x 29
-end
 arch invis_exit
 slaying /world/world_116_101
 hp 4
@@ -7393,7 +7390,6 @@ x 29
 end
 arch grass
 x 29
-y 1
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7404,7 +7400,7 @@ y 1
 end
 arch grass
 x 29
-y 2
+y 1
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7415,7 +7411,7 @@ y 2
 end
 arch grass
 x 29
-y 3
+y 2
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7426,7 +7422,7 @@ y 3
 end
 arch grass
 x 29
-y 4
+y 3
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7437,7 +7433,7 @@ y 4
 end
 arch grass
 x 29
-y 5
+y 4
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7448,7 +7444,7 @@ y 5
 end
 arch grass
 x 29
-y 6
+y 5
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7459,7 +7455,7 @@ y 6
 end
 arch grass
 x 29
-y 7
+y 6
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7470,7 +7466,7 @@ y 7
 end
 arch grass
 x 29
-y 8
+y 7
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7481,7 +7477,7 @@ y 8
 end
 arch grass
 x 29
-y 9
+y 8
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7492,7 +7488,7 @@ y 9
 end
 arch grass
 x 29
-y 10
+y 9
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7503,7 +7499,7 @@ y 10
 end
 arch grass
 x 29
-y 11
+y 10
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7514,7 +7510,7 @@ y 11
 end
 arch grass
 x 29
-y 12
+y 11
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7525,7 +7521,7 @@ y 12
 end
 arch grass
 x 29
-y 13
+y 12
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7536,7 +7532,7 @@ y 13
 end
 arch grass
 x 29
-y 14
+y 13
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7547,7 +7543,7 @@ y 14
 end
 arch grass
 x 29
-y 15
+y 14
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7558,7 +7554,7 @@ y 15
 end
 arch grass
 x 29
-y 16
+y 15
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7569,7 +7565,7 @@ y 16
 end
 arch grass
 x 29
-y 17
+y 16
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7580,7 +7576,7 @@ y 17
 end
 arch grass
 x 29
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7591,7 +7587,7 @@ y 18
 end
 arch grass
 x 29
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7602,7 +7598,7 @@ y 19
 end
 arch grass
 x 29
-y 20
+y 19
 end
 arch invis_exit
 slaying /world/world_116_101
@@ -7612,13 +7608,17 @@ x 29
 y 20
 end
 arch grass
+x 29
+y 20
+end
+arch invis_exit
+slaying /world/world_116_101
+hp 4
+sp 25
 x 29
 y 21
 end
-arch invis_exit
-slaying /world/world_116_101
-hp 4
-sp 25
+arch grass
 x 29
 y 21
 end

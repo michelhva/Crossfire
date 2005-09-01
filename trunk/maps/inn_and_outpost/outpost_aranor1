@@ -11,12 +11,18 @@ enter_x 10
 enter_y 16
 outdoor 1
 end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
+end
 arch hills_rocky
 end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+y 1
 end
 arch hills_rocky
 y 1
@@ -25,7 +31,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 1
+y 2
 end
 arch grass
 y 2
@@ -34,7 +40,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 2
+y 3
 end
 arch hills
 y 3
@@ -43,7 +49,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 3
+y 4
 end
 arch hills
 y 4
@@ -52,7 +58,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 4
+y 5
 end
 arch grass
 y 5
@@ -61,7 +67,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 5
+y 6
 end
 arch grass
 y 6
@@ -70,7 +76,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 6
+y 7
 end
 arch hills
 y 7
@@ -79,7 +85,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 7
+y 8
 end
 arch hills
 y 8
@@ -88,7 +94,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 8
+y 9
 end
 arch tree
 y 9
@@ -97,7 +103,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 9
+y 10
 end
 arch hills_rocky
 y 10
@@ -106,7 +112,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 10
+y 11
 end
 arch hills_rocky
 y 11
@@ -115,7 +121,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 11
+y 12
 end
 arch hills_rocky
 y 12
@@ -124,7 +130,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 12
+y 13
 end
 arch hills_rocky
 y 13
@@ -133,7 +139,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 13
+y 14
 end
 arch hills_rocky
 y 14
@@ -142,7 +148,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 14
+y 15
 end
 arch hills
 y 15
@@ -151,7 +157,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 15
+y 16
 end
 arch hills_rocky
 y 16
@@ -160,7 +166,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 16
+y 17
 end
 arch hills
 y 17
@@ -169,7 +175,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 17
+y 18
 end
 arch hills_rocky
 y 18
@@ -178,7 +184,7 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 18
+y 19
 end
 arch hills_rocky
 y 19
@@ -187,15 +193,9 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-y 19
-end
-arch hills_rocky
 x 1
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 1
 end
 arch hills_rocky
@@ -270,10 +270,6 @@ arch hills_rocky
 x 1
 y 18
 end
-arch hills_rocky
-x 1
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
@@ -282,12 +278,16 @@ x 1
 y 19
 end
 arch hills_rocky
+x 1
+y 19
+end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
 x 2
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 2
 end
 arch hills_rocky
@@ -394,6 +394,13 @@ arch hills_rocky
 x 2
 y 18
 end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
+x 2
+y 19
+end
 arch treed_hills
 x 2
 y 19
@@ -402,16 +409,9 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-x 2
-y 19
-end
-arch hills_rocky
 x 3
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 3
 end
 arch hills_rocky
@@ -538,6 +538,13 @@ arch hills
 x 3
 y 18
 end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
+x 3
+y 19
+end
 arch treed_hills
 x 3
 y 19
@@ -546,16 +553,9 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-x 3
-y 19
-end
-arch hills_rocky
 x 4
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 4
 end
 arch hills_rocky
@@ -666,6 +666,13 @@ arch tree
 x 4
 y 18
 end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
+x 4
+y 19
+end
 arch hills
 x 4
 y 19
@@ -674,16 +681,9 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-x 4
-y 19
-end
-arch hills_rocky
 x 5
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 5
 end
 arch cobblestones2
@@ -786,10 +786,6 @@ arch tree
 x 5
 y 18
 end
-arch hills
-x 5
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
@@ -798,12 +794,16 @@ x 5
 y 19
 end
 arch hills
+x 5
+y 19
+end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
 x 6
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills
 x 6
 end
 arch cobblestones2
@@ -918,14 +918,14 @@ arch hills
 x 6
 y 18
 end
-arch treed_hills
-x 6
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 6
+y 19
+end
+arch treed_hills
 x 6
 y 19
 end
@@ -1051,14 +1051,14 @@ arch hills
 x 7
 y 18
 end
-arch tree
-x 7
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 7
+y 19
+end
+arch tree
 x 7
 y 19
 end
@@ -1183,14 +1183,14 @@ arch hills
 x 8
 y 18
 end
-arch hills
-x 8
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 8
+y 19
+end
+arch hills
 x 8
 y 19
 end
@@ -1308,14 +1308,14 @@ arch cobblestones
 x 9
 y 18
 end
-arch cobblestones
-x 9
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 9
+y 19
+end
+arch cobblestones
 x 9
 y 19
 end
@@ -1445,14 +1445,14 @@ arch cobblestones
 x 10
 y 18
 end
-arch cobblestones
-x 10
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 10
+y 19
+end
+arch cobblestones
 x 10
 y 19
 end
@@ -1554,14 +1554,14 @@ arch cobblestones
 x 11
 y 18
 end
-arch hills
-x 11
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 11
+y 19
+end
+arch hills
 x 11
 y 19
 end
@@ -1663,14 +1663,14 @@ arch hills
 x 12
 y 18
 end
-arch hills_rocky
-x 12
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 12
+y 19
+end
+arch hills_rocky
 x 12
 y 19
 end
@@ -1796,14 +1796,14 @@ arch hills
 x 13
 y 18
 end
-arch hills_rocky
-x 13
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 13
+y 19
+end
+arch hills_rocky
 x 13
 y 19
 end
@@ -1917,14 +1917,14 @@ arch hills
 x 14
 y 18
 end
-arch hills_rocky
-x 14
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 14
+y 19
+end
+arch hills_rocky
 x 14
 y 19
 end
@@ -2038,14 +2038,14 @@ arch hills
 x 15
 y 18
 end
-arch hills_rocky
-x 15
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 15
+y 19
+end
+arch hills_rocky
 x 15
 y 19
 end
@@ -2151,14 +2151,14 @@ arch hills
 x 16
 y 18
 end
-arch hills_rocky
-x 16
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 16
+y 19
+end
+arch hills_rocky
 x 16
 y 19
 end
@@ -2292,14 +2292,14 @@ arch hills_rocky
 x 17
 y 18
 end
-arch hills_rocky
-x 17
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 17
+y 19
+end
+arch hills_rocky
 x 17
 y 19
 end
@@ -2426,14 +2426,14 @@ arch hills_rocky
 x 18
 y 18
 end
-arch hills_rocky
-x 18
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 18
+y 19
+end
+arch hills_rocky
 x 18
 y 19
 end
@@ -2556,14 +2556,14 @@ arch hills_rocky
 x 19
 y 18
 end
-arch hills_rocky
-x 19
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 19
+y 19
+end
+arch hills_rocky
 x 19
 y 19
 end
@@ -2686,14 +2686,14 @@ arch hills_rocky
 x 20
 y 18
 end
-arch hills_rocky
-x 20
-y 19
-end
 arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
+x 20
+y 19
+end
+arch hills_rocky
 x 20
 y 19
 end
@@ -2788,6 +2788,13 @@ arch cwall_2_2_4
 x 21
 y 12
 end
+arch invis_exit
+slaying /world/world_105_114
+hp 29
+sp 29
+x 21
+y 13
+end
 arch grass
 x 21
 y 13
@@ -2797,7 +2804,7 @@ slaying /world/world_105_114
 hp 29
 sp 29
 x 21
-y 13
+y 14
 end
 arch grass
 x 21
@@ -2808,7 +2815,7 @@ slaying /world/world_105_114
 hp 29
 sp 29
 x 21
-y 14
+y 15
 end
 arch hills
 x 21
@@ -2819,7 +2826,7 @@ slaying /world/world_105_114
 hp 29
 sp 29
 x 21
-y 15
+y 16
 end
 arch hills
 x 21
@@ -2830,7 +2837,7 @@ slaying /world/world_105_114
 hp 29
 sp 29
 x 21
-y 16
+y 17
 end
 arch hills_rocky
 x 21
@@ -2841,7 +2848,7 @@ slaying /world/world_105_114
 hp 29
 sp 29
 x 21
-y 17
+y 18
 end
 arch hills_rocky
 x 21
@@ -2851,17 +2858,10 @@ arch invis_exit
 slaying /world/world_105_114
 hp 29
 sp 29
-x 21
-y 18
-end
-arch hills_rocky
 x 21
 y 19
 end
-arch invis_exit
-slaying /world/world_105_114
-hp 29
-sp 29
+arch hills_rocky
 x 21
 y 19
 end
