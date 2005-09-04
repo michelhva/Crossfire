@@ -1711,16 +1711,16 @@ arch flagstone
 x 10
 y 16
 end
-arch flagstone
-x 10
-y 17
-end
 arch magic_mouth
 msg
 You hear two booming voices:
 "Did you feel a draft just now, Fonzy?"
 "Yeah, southwest wind.
 endmsg
+x 10
+y 17
+end
+arch flagstone
 x 10
 y 17
 end

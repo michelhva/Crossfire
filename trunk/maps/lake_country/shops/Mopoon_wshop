@@ -3445,10 +3445,6 @@ arch cave4
 x 21
 y 15
 end
-arch dungeon_floor
-x 21
-y 16
-end
 arch magic_mouth
 msg
 That's how you deal with electric
@@ -3457,6 +3453,10 @@ electricity whenever the shoot it.
 Now get out of here. I'd love to keep
 my pet alive for now."
 endmsg
+x 21
+y 16
+end
+arch dungeon_floor
 x 21
 y 16
 end

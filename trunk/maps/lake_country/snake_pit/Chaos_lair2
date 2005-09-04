@@ -2690,6 +2690,14 @@ arch large_stones
 x 10
 y 4
 end
+arch magic_mouth
+msg
+  Blasts of hot air coming from inner
+cavern. Hotter than any fire
+endmsg
+x 10
+y 5
+end
 arch mover_5
 x 10
 y 5
@@ -2698,14 +2706,6 @@ speed_left -1.910000
 attacktype 1
 end
 arch large_stones
-x 10
-y 5
-end
-arch magic_mouth
-msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
-endmsg
 x 10
 y 5
 end
@@ -2949,6 +2949,14 @@ arch large_stones
 x 11
 y 4
 end
+arch magic_mouth
+msg
+  Blasts of hot air coming from inner
+cavern. Hotter than any fire
+endmsg
+x 11
+y 5
+end
 arch mover_5
 x 11
 y 5
@@ -2966,17 +2974,9 @@ msg
 cavern. Hotter than any fire
 endmsg
 x 11
-y 5
-end
-arch large_stones
-x 11
 y 6
 end
-arch magic_mouth
-msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
-endmsg
+arch large_stones
 x 11
 y 6
 end
@@ -4161,10 +4161,6 @@ arch large_stones
 x 15
 y 5
 end
-arch large_stones
-x 15
-y 6
-end
 arch magic_mouth
 msg
   Blasts of hot air coming from inner
@@ -4174,14 +4170,18 @@ x 15
 y 6
 end
 arch large_stones
+x 15
+y 6
+end
+arch magic_mouth
+msg
+  Blasts of hot air coming from inner
+cavern. Hotter than any fire
+endmsg
 x 15
 y 7
 end
-arch magic_mouth
-msg
-  Blasts of hot air coming from inner
-cavern. Hotter than any fire
-endmsg
+arch large_stones
 x 15
 y 7
 end
@@ -4429,15 +4429,15 @@ arch cave10
 x 16
 y 5
 end
-arch large_stones
-x 16
-y 6
-end
 arch magic_mouth
 msg
   Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
+x 16
+y 6
+end
+arch large_stones
 x 16
 y 6
 end

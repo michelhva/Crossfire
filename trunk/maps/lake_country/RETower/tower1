@@ -3571,10 +3571,6 @@ end
 arch dwall_2_1_2
 x 18
 end
-arch dungeon_floor
-x 18
-y 1
-end
 arch magic_mouth
 msg
 If you can't teleport out with the
@@ -3583,6 +3579,10 @@ because someone litter here and made
 the teleporter malfunction. Clear it
 up and it will function again.
 endmsg
+x 18
+y 1
+end
+arch dungeon_floor
 x 18
 y 1
 end
@@ -3871,10 +3871,6 @@ arch madman
 x 19
 y 5
 end
-arch dungeon_floor
-x 19
-y 6
-end
 arch magic_mouth
 msg
 If you can't teleport out with the
@@ -3883,6 +3879,10 @@ because someone litter here and made
 the teleporter malfunction. Clear it
 up and it will function again.
 endmsg
+x 19
+y 6
+end
+arch dungeon_floor
 x 19
 y 6
 end
@@ -4317,10 +4317,6 @@ end
 arch dwall_2_1_2
 x 21
 end
-arch dungeon_floor
-x 21
-y 1
-end
 arch magic_mouth
 msg
 If you can't teleport out with the
@@ -4329,6 +4325,10 @@ because someone litter here and made
 the teleporter malfunction. Clear it
 up and it will function again.
 endmsg
+x 21
+y 1
+end
+arch dungeon_floor
 x 21
 y 1
 end
@@ -4366,10 +4366,6 @@ arch mover_3
 x 21
 y 3
 end
-arch dungeon_floor
-x 21
-y 4
-end
 arch magic_mouth
 msg
 If you can't teleport out with the
@@ -4378,6 +4374,10 @@ because someone litter here and made
 the teleporter malfunction. Clear it
 up and it will function again.
 endmsg
+x 21
+y 4
+end
+arch dungeon_floor
 x 21
 y 4
 end
@@ -4842,10 +4842,6 @@ arch dungeon_floor
 x 23
 y 3
 end
-arch dungeon_floor
-x 23
-y 4
-end
 arch magic_mouth
 msg
 If you can't teleport out with the
@@ -4854,6 +4850,10 @@ because someone litter here and made
 the teleporter malfunction. Clear it
 up and it will function again.
 endmsg
+x 23
+y 4
+end
+arch dungeon_floor
 x 23
 y 4
 end

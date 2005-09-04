@@ -444,10 +444,6 @@ arch shop_mat
 x 5
 y 7
 end
-arch shop_empty
-x 5
-y 8
-end
 arch magic_mouth
 msg
 Klondor says, "Take your time to check
@@ -457,6 +453,10 @@ are bonus collection.
 can help you. Just drop 20 gold coins
 for each item."
 endmsg
+x 5
+y 8
+end
+arch shop_empty
 x 5
 y 8
 end

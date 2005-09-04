@@ -3723,16 +3723,16 @@ arch flagstone
 x 19
 y 10
 end
-arch flagstone
-x 19
-y 11
-end
 arch magic_mouth
 msg
 Do you want to continue on this silly
 test?  Well, then, go on and kill these
 pesty worms
 endmsg
+x 19
+y 11
+end
+arch flagstone
 x 19
 y 11
 end

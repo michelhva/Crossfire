@@ -383,6 +383,14 @@ arch mine2
 x 1
 y 17
 end
+arch magic_mouth
+msg
+To activate teleporter say
+"activate".
+endmsg
+x 1
+y 18
+end
 arch woodfloor
 x 1
 y 18
@@ -395,14 +403,6 @@ endmsg
 x 1
 y 18
 connected 1
-end
-arch magic_mouth
-msg
-To activate teleporter say
-"activate".
-endmsg
-x 1
-y 18
 end
 arch teleporter
 slaying luck1

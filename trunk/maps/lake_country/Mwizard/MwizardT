@@ -455,14 +455,14 @@ arch random_shield
 x 2
 y 17
 end
-arch flagstone
-x 2
-y 18
-end
 arch magic_mouth
 msg
 You feel breeze ...
 endmsg
+x 2
+y 18
+end
+arch flagstone
 x 2
 y 18
 end
@@ -1714,14 +1714,14 @@ arch random_wealth
 x 10
 y 4
 end
-arch flagstone
-x 10
-y 5
-end
 arch magic_mouth
 msg
 The floor here is missing something made of gold
 endmsg
+x 10
+y 5
+end
+arch flagstone
 x 10
 y 5
 end
