@@ -49,9 +49,6 @@ end
 arch guard
 y 6
 end
-arch cobblestones2
-y 7
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 15
@@ -59,7 +56,7 @@ sp 41
 y 7
 end
 arch cobblestones2
-y 8
+y 7
 end
 arch invis_exit
 slaying /world/world_109_126
@@ -68,12 +65,15 @@ sp 41
 y 8
 end
 arch cobblestones2
+y 8
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 15
+sp 41
 y 9
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 15
-sp 41
+arch cobblestones2
 y 9
 end
 arch grass
@@ -1397,10 +1397,6 @@ arch guard
 x 14
 y 6
 end
-arch cobblestones2
-x 14
-y 7
-end
 arch invis_exit
 slaying fortress
 hp 2
@@ -1410,7 +1406,7 @@ y 7
 end
 arch cobblestones2
 x 14
-y 8
+y 7
 end
 arch invis_exit
 slaying fortress
@@ -1421,12 +1417,16 @@ y 8
 end
 arch cobblestones2
 x 14
-y 9
+y 8
 end
 arch invis_exit
 slaying fortress
 hp 2
 sp 10
+x 14
+y 9
+end
+arch cobblestones2
 x 14
 y 9
 end

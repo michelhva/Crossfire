@@ -22,20 +22,20 @@ end
 arch biglake_sw
 y 1
 end
-arch swamp
-y 2
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
 y 2
 end
+arch swamp
+y 2
+end
 arch magic_ear
 msg
 @match slurp|Slurp|swallow|Swallow
@@ -53,20 +53,20 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 3
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
 y 3
 end
+arch swamp
+y 3
+end
 arch magic_ear
 msg
 @match slurp|Slurp|swallow|Swallow
@@ -84,20 +84,20 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 4
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
 y 4
 end
+arch swamp
+y 4
+end
 arch magic_ear
 msg
 @match slurp|Slurp|swallow|Swallow
@@ -115,20 +115,20 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 5
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
 y 5
 end
+arch swamp
+y 5
+end
 arch magic_ear
 msg
 @match slurp|Slurp|swallow|Swallow
@@ -146,18 +146,18 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 6
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+y 6
+end
+arch swamp
 y 6
 end
 arch magic_ear
@@ -177,18 +177,18 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 7
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+y 7
+end
+arch swamp
 y 7
 end
 arch magic_ear
@@ -208,18 +208,18 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 8
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+y 8
+end
+arch swamp
 y 8
 end
 arch magic_ear
@@ -239,18 +239,18 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-y 9
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+y 9
+end
+arch swamp
 y 9
 end
 arch magic_ear
@@ -270,18 +270,18 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
+arch magic_mouth
+msg
+  The marsh comes to life at this
+section. Mud stirring and and turns.
+  A big mouth of mud forms. It seems to
+sense you. It rises and hesitates before
+you, as if regarding you
+for permission.
+endmsg
 y 10
 end
-arch magic_mouth
-msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
-endmsg
+arch swamp
 y 10
 end
 arch magic_ear
@@ -348,15 +348,11 @@ arch swamp
 x 1
 y 2
 end
-arch swamp
-x 1
-y 3
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
@@ -364,6 +360,10 @@ endmsg
 x 1
 y 3
 end
+arch swamp
+x 1
+y 3
+end
 arch magic_ear
 msg
 @match slurp|Slurp|swallow|Swallow
@@ -383,19 +383,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-x 1
-y 4
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 1
+y 4
+end
+arch swamp
 x 1
 y 4
 end
@@ -418,19 +418,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-x 1
-y 5
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 1
+y 5
+end
+arch swamp
 x 1
 y 5
 end
@@ -453,19 +453,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-x 1
-y 6
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 1
+y 6
+end
+arch swamp
 x 1
 y 6
 end
@@ -488,19 +488,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-x 1
-y 7
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 1
+y 7
+end
+arch swamp
 x 1
 y 7
 end
@@ -523,19 +523,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
+arch magic_mouth
+msg
+  The marsh comes to life at this
+section. Mud stirring and and turns.
+  A big mouth of mud forms. It seems to
+sense you. It rises and hesitates before
+you, as if regarding you
+for permission.
+endmsg
 x 1
 y 8
 end
-arch magic_mouth
-msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
-endmsg
+arch swamp
 x 1
 y 8
 end
@@ -606,18 +606,18 @@ arch biglake_s
 x 1
 y 19
 end
-arch swamp
-x 2
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 2
+end
+arch swamp
 x 2
 end
 arch magic_ear
@@ -665,19 +665,19 @@ arch biglake_sew
 x 2
 y 5
 end
-arch swamp
-x 2
-y 6
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 2
+y 6
+end
+arch swamp
 x 2
 y 6
 end
@@ -700,19 +700,19 @@ speed 0.000000
 invisible 1
 connected 2
 end
-arch swamp
-x 2
-y 7
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 2
+y 7
+end
+arch swamp
 x 2
 y 7
 end
@@ -791,18 +791,18 @@ arch biglake_s
 x 2
 y 19
 end
-arch swamp
-x 3
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 3
+end
+arch swamp
 x 3
 end
 arch magic_ear
@@ -910,18 +910,18 @@ arch biglake_s
 x 3
 y 19
 end
-arch swamp
-x 4
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 4
+end
+arch swamp
 x 4
 end
 arch magic_ear
@@ -941,19 +941,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
-x 4
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 4
+y 1
+end
+arch swamp
 x 4
 y 1
 end
@@ -976,19 +976,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
+arch magic_mouth
+msg
+  The marsh comes to life at this
+section. Mud stirring and and turns.
+  A big mouth of mud forms. It seems to
+sense you. It rises and hesitates before
+you, as if regarding you
+for permission.
+endmsg
 x 4
 y 2
 end
-arch magic_mouth
-msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
-endmsg
+arch swamp
 x 4
 y 2
 end
@@ -1095,18 +1095,18 @@ arch biglake_sn
 x 4
 y 19
 end
-arch swamp
-x 5
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 5
+end
+arch swamp
 x 5
 end
 arch magic_ear
@@ -1126,19 +1126,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
-x 5
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 5
+y 1
+end
+arch swamp
 x 5
 y 1
 end
@@ -1161,19 +1161,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
+arch magic_mouth
+msg
+  The marsh comes to life at this
+section. Mud stirring and and turns.
+  A big mouth of mud forms. It seems to
+sense you. It rises and hesitates before
+you, as if regarding you
+for permission.
+endmsg
 x 5
 y 2
 end
-arch magic_mouth
-msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
-endmsg
+arch swamp
 x 5
 y 2
 end
@@ -1264,18 +1264,18 @@ arch biglake_sn
 x 5
 y 19
 end
-arch swamp
-x 6
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 6
+end
+arch swamp
 x 6
 end
 arch magic_ear
@@ -1295,19 +1295,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
-x 6
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 6
+y 1
+end
+arch swamp
 x 6
 y 1
 end
@@ -1330,19 +1330,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
+arch magic_mouth
+msg
+  The marsh comes to life at this
+section. Mud stirring and and turns.
+  A big mouth of mud forms. It seems to
+sense you. It rises and hesitates before
+you, as if regarding you
+for permission.
+endmsg
 x 6
 y 2
 end
-arch magic_mouth
-msg
-  The marsh comes to life at this
-section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
-sense you. It rises and hesitates before
-you, as if regarding you
-for permission.
-endmsg
+arch swamp
 x 6
 y 2
 end
@@ -1442,18 +1442,18 @@ arch biglake_sn
 x 6
 y 19
 end
-arch swamp
-x 7
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 7
+end
+arch swamp
 x 7
 end
 arch magic_ear
@@ -1473,19 +1473,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
-x 7
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 7
+y 1
+end
+arch swamp
 x 7
 y 1
 end
@@ -1588,18 +1588,18 @@ arch biglake_sn
 x 7
 y 19
 end
-arch swamp
-x 8
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 8
+end
+arch swamp
 x 8
 end
 arch magic_ear
@@ -1619,19 +1619,19 @@ speed 0.000000
 invisible 1
 connected 1
 end
-arch swamp
-x 8
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+  A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 8
+y 1
+end
+arch swamp
 x 8
 y 1
 end
@@ -2632,14 +2632,14 @@ arch swamp
 x 17
 y 17
 end
-arch swamp
-x 17
-y 18
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 37
 sp 41
+x 17
+y 18
+end
+arch swamp
 x 17
 y 18
 end
@@ -2746,10 +2746,6 @@ arch biglake_sw
 x 18
 y 16
 end
-arch swamp
-x 18
-y 17
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 37
@@ -2759,7 +2755,7 @@ y 17
 end
 arch swamp
 x 18
-y 18
+y 17
 end
 arch invis_exit
 slaying /world/world_109_126
@@ -2769,13 +2765,17 @@ x 18
 y 18
 end
 arch swamp
+x 18
+y 18
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 37
+sp 41
 x 18
 y 19
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 37
-sp 41
+arch swamp
 x 18
 y 19
 end
@@ -2873,10 +2873,6 @@ arch biglake_sew
 x 19
 y 17
 end
-arch swamp
-x 19
-y 18
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 37
@@ -2885,13 +2881,17 @@ x 19
 y 18
 end
 arch swamp
+x 19
+y 18
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 37
+sp 41
 x 19
 y 19
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 37
-sp 41
+arch swamp
 x 19
 y 19
 end

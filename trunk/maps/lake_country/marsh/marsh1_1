@@ -13,20 +13,20 @@ Email: gnu@foo.bar
 Date: Fri Mar 24 09:53:04 1995
 endmsg
 end
-arch swamp
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 33
 sp 37
 end
 arch swamp
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 33
+sp 37
 y 1
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 33
-sp 37
+arch swamp
 y 1
 end
 arch swamp
@@ -89,9 +89,6 @@ end
 arch biglake_sw
 y 19
 end
-arch swamp
-x 1
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 33
@@ -100,7 +97,6 @@ x 1
 end
 arch swamp
 x 1
-y 1
 end
 arch invis_exit
 slaying /world/world_109_126
@@ -110,13 +106,17 @@ x 1
 y 1
 end
 arch swamp
+x 1
+y 1
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 33
+sp 37
 x 1
 y 2
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 33
-sp 37
+arch swamp
 x 1
 y 2
 end
@@ -892,10 +892,6 @@ arch swamp
 x 7
 y 17
 end
-arch swamp
-x 7
-y 18
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
@@ -905,6 +901,10 @@ sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 7
+y 18
+end
+arch swamp
 x 7
 y 18
 end
@@ -2027,10 +2027,6 @@ arch water_elemental
 x 18
 y 1
 end
-arch swamp
-x 18
-y 2
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
@@ -2040,6 +2036,10 @@ sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 18
+y 2
+end
+arch swamp
 x 18
 y 2
 end

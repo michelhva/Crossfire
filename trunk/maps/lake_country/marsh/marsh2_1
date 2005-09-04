@@ -49,9 +49,6 @@ end
 arch biglake_sew
 y 10
 end
-arch jungle_2
-y 11
-end
 arch invis_exit
 slaying /world/world_109_126
 hp 32
@@ -59,12 +56,15 @@ sp 42
 y 11
 end
 arch jungle_2
+y 11
+end
+arch invis_exit
+slaying /world/world_109_126
+hp 32
+sp 42
 y 12
 end
-arch invis_exit
-slaying /world/world_109_126
-hp 32
-sp 42
+arch jungle_2
 y 12
 end
 arch jungle_2
@@ -948,10 +948,6 @@ end
 arch biglake_sn
 x 10
 end
-arch swamp
-x 10
-y 1
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
@@ -961,6 +957,10 @@ sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 10
+y 1
+end
+arch swamp
 x 10
 y 1
 end
@@ -1865,10 +1865,6 @@ arch swamp
 x 18
 y 15
 end
-arch swamp
-x 18
-y 16
-end
 arch magic_mouth
 msg
   The marsh comes to life at this
@@ -1878,6 +1874,10 @@ sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
 endmsg
+x 18
+y 16
+end
+arch swamp
 x 18
 y 16
 end

@@ -144,15 +144,15 @@ arch large_stones
 x 3
 y 3
 end
-arch large_stones
-x 3
-y 4
-end
 arch magic_mouth
 msg
   You find a crude shelter from the harsh
 battles
 endmsg
+x 3
+y 4
+end
+arch large_stones
 x 3
 y 4
 end

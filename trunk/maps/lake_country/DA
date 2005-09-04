@@ -746,16 +746,16 @@ arch rune_dragonbreath
 x 7
 y 9
 end
-arch woodfloor
-name Yellowstone ground
-face stoneblock.115
-x 7
-y 10
-end
 arch magic_mouth
 msg
 A strong evil aura forces you back!
 endmsg
+x 7
+y 10
+end
+arch woodfloor
+name Yellowstone ground
+face stoneblock.115
 x 7
 y 10
 end
@@ -917,16 +917,16 @@ x 8
 y 9
 attacktype 1
 end
-arch woodfloor
-name Yellowstone ground
-face stoneblock.115
-x 8
-y 10
-end
 arch magic_mouth
 msg
 A strong evil aura forces you back!
 endmsg
+x 8
+y 10
+end
+arch woodfloor
+name Yellowstone ground
+face stoneblock.115
 x 8
 y 10
 end
@@ -1070,16 +1070,16 @@ arch rune_dragonbreath
 x 9
 y 9
 end
-arch woodfloor
-name Yellowstone ground
-face stoneblock.115
-x 9
-y 10
-end
 arch magic_mouth
 msg
 A strong evil aura forces you back!
 endmsg
+x 9
+y 10
+end
+arch woodfloor
+name Yellowstone ground
+face stoneblock.115
 x 9
 y 10
 end
