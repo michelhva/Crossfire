@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name world_109_126
+region lakecountry
 msg
 
 endmsg
 width 50
 height 50
-enter_x 1
-enter_y 1
+enter_x 25
+enter_y 25
 reset_timeout 7200
 difficulty 1
 outdoor 1
@@ -3689,11 +3689,6 @@ arch jungle_2
 x 14
 y 33
 end
-arch shallow_sea
-no_pass 0
-x 14
-y 36
-end
 arch mover_3
 attacktype 1
 level 1
@@ -3701,14 +3696,14 @@ x 14
 y 36
 end
 arch shallow_sea
+no_pass 0
+x 14
+y 36
+end
+arch shallow_sea
 x 14
 y 37
 end
-arch shallow_sea
-no_pass 0
-x 14
-y 38
-end
 arch mover_5
 level 1
 attacktype 1
@@ -3718,7 +3713,7 @@ end
 arch shallow_sea
 no_pass 0
 x 14
-y 39
+y 38
 end
 arch mover_5
 level 1
@@ -3728,12 +3723,17 @@ y 39
 end
 arch shallow_sea
 no_pass 0
+x 14
+y 39
+end
+arch mover_5
+level 1
+attacktype 1
 x 14
 y 40
 end
-arch mover_5
-level 1
-attacktype 1
+arch shallow_sea
+no_pass 0
 x 14
 y 40
 end
@@ -4016,6 +4016,12 @@ arch rcrook_ns-se
 x 15
 y 35
 end
+arch mover_5
+level 1
+attacktype 1
+x 15
+y 36
+end
 arch shallow_sea
 no_pass 0
 x 15
@@ -4026,12 +4032,6 @@ no_pass 0
 x 15
 y 36
 end
-arch mover_5
-level 1
-attacktype 1
-x 15
-y 36
-end
 arch magic_mouth
 msg
 You are taken by a strong current
@@ -4039,14 +4039,14 @@ endmsg
 x 15
 y 37
 end
-arch shallow_sea
-no_pass 0
-x 15
-y 37
-end
 arch mover_6
 level 1
 attacktype 1
+x 15
+y 37
+end
+arch shallow_sea
+no_pass 0
 x 15
 y 37
 end
@@ -4606,11 +4606,6 @@ arch shallow_sea
 x 17
 y 41
 end
-arch shallow_sea
-no_pass 0
-x 17
-y 42
-end
 arch mover_3
 attacktype 1
 level 1
@@ -4621,6 +4616,11 @@ arch magic_mouth
 msg
 You are taken by a strong current
 endmsg
+x 17
+y 42
+end
+arch shallow_sea
+no_pass 0
 x 17
 y 42
 end
@@ -4890,14 +4890,14 @@ no_pass 0
 x 18
 y 41
 end
-arch shallow_sea
-no_pass 0
-x 18
-y 42
-end
 arch mover_2
 attacktype 1
 level 1
+x 18
+y 42
+end
+arch shallow_sea
+no_pass 0
 x 18
 y 42
 end
@@ -5177,14 +5177,14 @@ arch shallow_sea
 x 19
 y 40
 end
-arch shallow_sea
-no_pass 0
-x 19
-y 41
-end
 arch mover_3
 attacktype 1
 level 1
+x 19
+y 41
+end
+arch shallow_sea
+no_pass 0
 x 19
 y 41
 end
@@ -5441,14 +5441,14 @@ arch shallow_sea
 x 20
 y 40
 end
-arch shallow_sea
-no_pass 0
-x 20
-y 41
-end
 arch mover_3
 attacktype 1
 level 1
+x 20
+y 41
+end
+arch shallow_sea
+no_pass 0
 x 20
 y 41
 end
@@ -5725,14 +5725,14 @@ endmsg
 x 21
 y 41
 end
-arch shallow_sea
-no_pass 0
-x 21
-y 41
-end
 arch mover_3
 attacktype 1
 level 1
+x 21
+y 41
+end
+arch shallow_sea
+no_pass 0
 x 21
 y 41
 end
@@ -9463,14 +9463,14 @@ arch lake
 x 36
 y 40
 end
-arch deep_swamp
-x 36
-y 41
-end
 arch invis_exit
 slaying /lake_country/marsh/marsh2_2
 hp 17
 sp 17
+x 36
+y 41
+end
+arch deep_swamp
 x 36
 y 41
 end
