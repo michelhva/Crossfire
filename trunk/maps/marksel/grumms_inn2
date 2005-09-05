@@ -150,13 +150,12 @@ arch woodfloor2
 x 2
 y 1
 end
-arch woodfloor2
+arch button_small
+connected 1
 x 2
 y 2
 end
-arch button_small
-invisible 1
-connected 1
+arch woodfloor2
 x 2
 y 2
 end
@@ -169,23 +168,21 @@ connected 1
 x 2
 y 3
 end
-arch woodfloor2
-x 2
-y 4
-end
 arch button_small
-invisible 1
 connected 1
 x 2
 y 4
 end
 arch woodfloor2
 x 2
-y 5
+y 4
 end
 arch button_small
-invisible 1
 connected 2
+x 2
+y 5
+end
+arch woodfloor2
 x 2
 y 5
 end
@@ -198,13 +195,12 @@ connected 2
 x 2
 y 6
 end
-arch woodfloor2
+arch button_small
+connected 2
 x 2
 y 7
 end
-arch button_small
-invisible 1
-connected 2
+arch woodfloor2
 x 2
 y 7
 end
@@ -704,13 +700,12 @@ arch woodfloor2
 x 10
 y 1
 end
-arch woodfloor2
+arch button_small
+connected 3
 x 10
 y 2
 end
-arch button_small
-invisible 1
-connected 3
+arch woodfloor2
 x 10
 y 2
 end
@@ -723,23 +718,21 @@ connected 3
 x 10
 y 3
 end
-arch woodfloor2
-x 10
-y 4
-end
 arch button_small
-invisible 1
 connected 3
 x 10
 y 4
 end
 arch woodfloor2
 x 10
-y 5
+y 4
 end
 arch button_small
-invisible 1
 connected 4
+x 10
+y 5
+end
+arch woodfloor2
 x 10
 y 5
 end
@@ -752,13 +745,12 @@ connected 4
 x 10
 y 6
 end
-arch woodfloor2
+arch button_small
+connected 4
 x 10
 y 7
 end
-arch button_small
-invisible 1
-connected 4
+arch woodfloor2
 x 10
 y 7
 end
@@ -1230,13 +1222,12 @@ arch woodfloor2
 x 18
 y 4
 end
-arch woodfloor2
+arch button_small
+connected 5
 x 18
 y 5
 end
-arch button_small
-invisible 1
-connected 5
+arch woodfloor2
 x 18
 y 5
 end
@@ -1249,13 +1240,12 @@ connected 5
 x 18
 y 6
 end
-arch woodfloor2
+arch button_small
+connected 5
 x 18
 y 7
 end
-arch button_small
-invisible 1
-connected 5
+arch woodfloor2
 x 18
 y 7
 end

@@ -165,15 +165,15 @@ arch dungeon_floor
 x 2
 y 2
 end
-arch dungeon_floor
-x 2
-y 3
-end
 arch magic_mouth
 msg
 Yuck. Don't they clean this place out?
 Something smells rotten..
 endmsg
+x 2
+y 3
+end
+arch dungeon_floor
 x 2
 y 3
 end
