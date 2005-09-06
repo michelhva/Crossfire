@@ -635,17 +635,6 @@ arch cwall_2_2_4
 x 4
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 4
-y 7
-end
-arch button_lever
-x 4
-y 7
-connected 1
-end
 arch magic_mouth
 msg
 To think he could save his own soul
@@ -664,6 +653,17 @@ heavens.
 endmsg
 x 4
 y 7
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 4
+y 7
+end
+arch button_lever
+x 4
+y 7
+connected 1
 end
 arch stair_up_1
 slaying ttower11

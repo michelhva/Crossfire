@@ -173,13 +173,12 @@ arch barrel
 x 1
 y 7
 end
-arch woodfloor2
+arch button_small
+connected 10
 x 1
 y 8
 end
-arch button_small
-invisible 1
-connected 10
+arch woodfloor2
 x 1
 y 8
 end
@@ -301,13 +300,12 @@ arch woodfloor2
 x 2
 y 7
 end
-arch woodfloor2
+arch button_small
+connected 10
 x 2
 y 8
 end
-arch button_small
-invisible 1
-connected 10
+arch woodfloor2
 x 2
 y 8
 end
@@ -413,10 +411,6 @@ arch woodfloor2
 x 3
 y 6
 end
-arch woodfloor2
-x 3
-y 7
-end
 arch magic_mouth
 msg
 ARROOOOO!
@@ -431,11 +425,14 @@ y 7
 end
 arch woodfloor2
 x 3
-y 8
+y 7
 end
 arch button_small
-invisible 1
 connected 10
+x 3
+y 8
+end
+arch woodfloor2
 x 3
 y 8
 end
@@ -564,13 +561,12 @@ arch woodfloor2
 x 4
 y 7
 end
-arch woodfloor2
+arch button_small
+connected 10
 x 4
 y 8
 end
-arch button_small
-invisible 1
-connected 10
+arch woodfloor2
 x 4
 y 8
 end
@@ -641,15 +637,15 @@ arch woodfloor2
 x 4
 y 16
 end
-arch woodfloor2
-x 4
-y 17
-end
 arch magic_mouth
 msg
 These walls look ...chewed on.
 endmsg
 food 1
+x 4
+y 17
+end
+arch woodfloor2
 x 4
 y 17
 end
@@ -703,13 +699,12 @@ arch woodfloor2
 x 5
 y 7
 end
-arch woodfloor2
+arch button_small
+connected 10
 x 5
 y 8
 end
-arch button_small
-invisible 1
-connected 10
+arch woodfloor2
 x 5
 y 8
 end
@@ -922,14 +917,14 @@ arch woodfloor2
 x 6
 y 18
 end
-arch woodfloor2
-x 6
-y 19
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 16
 sp 32
+x 6
+y 19
+end
+arch woodfloor2
 x 6
 y 19
 end
@@ -1027,10 +1022,6 @@ arch woodfloor2
 x 7
 y 16
 end
-arch woodfloor2
-x 7
-y 17
-end
 arch magic_mouth
 msg
 It looks like something has been nibbling on the walls.
@@ -1041,16 +1032,20 @@ y 17
 end
 arch woodfloor2
 x 7
-y 18
+y 17
 end
 arch woodfloor2
 x 7
-y 19
+y 18
 end
 arch invis_exit
 slaying /world/world_122_117
 hp 16
 sp 32
+x 7
+y 19
+end
+arch woodfloor2
 x 7
 y 19
 end
@@ -1148,14 +1143,14 @@ arch woodfloor2
 x 8
 y 18
 end
-arch woodfloor2
-x 8
-y 19
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 16
 sp 32
+x 8
+y 19
+end
+arch woodfloor2
 x 8
 y 19
 end

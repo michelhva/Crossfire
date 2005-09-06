@@ -1532,12 +1532,6 @@ arch unholy_ground
 x 8
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 8
-y 8
-end
 arch magic_mouth
 msg
 There was a wizard.
@@ -1553,6 +1547,12 @@ He who hast slain the slayer must be
 delt justice.
 
 endmsg
+x 8
+y 8
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
 x 8
 y 8
 end

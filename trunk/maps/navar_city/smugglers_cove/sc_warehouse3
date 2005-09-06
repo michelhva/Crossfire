@@ -151,10 +151,6 @@ arch cave4
 x 1
 y 6
 end
-arch dirtfloor
-x 1
-y 7
-end
 arch invis_exit
 slaying sc_warehouse2
 hp 14
@@ -164,12 +160,16 @@ y 7
 end
 arch dirtfloor
 x 1
-y 8
+y 7
 end
 arch invis_exit
 slaying sc_warehouse2
 hp 13
 sp 11
+x 1
+y 8
+end
+arch dirtfloor
 x 1
 y 8
 end

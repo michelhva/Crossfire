@@ -1725,12 +1725,6 @@ arch cwall_2_1_2
 x 10
 y 3
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 10
-y 4
-end
 arch magic_mouth
 msg
 It is said that the wizard created
@@ -1745,6 +1739,12 @@ reach the heavens.
 But the wizard knew nothing.
 
 endmsg
+x 10
+y 4
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
 x 10
 y 4
 end

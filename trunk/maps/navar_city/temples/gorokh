@@ -255,15 +255,14 @@ arch marble
 x 2
 y 8
 end
-arch marble
-x 2
-y 9
-end
 arch teleporter
-invisible 1
 hp 12
 sp 8
 speed 0.05
+x 2
+y 9
+end
+arch marble
 x 2
 y 9
 end
@@ -742,15 +741,15 @@ arch flagstone
 x 6
 y 15
 end
-arch flagstone
-x 6
-y 16
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
 fly_on 0
+x 6
+y 16
+end
+arch flagstone
 x 6
 y 16
 end
@@ -837,15 +836,15 @@ arch flagstone
 x 7
 y 15
 end
-arch flagstone
-x 7
-y 16
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
 fly_on 0
+x 7
+y 16
+end
+arch flagstone
 x 7
 y 16
 end
@@ -950,15 +949,15 @@ arch flagstone
 x 8
 y 15
 end
-arch flagstone
-x 8
-y 16
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
 fly_on 0
+x 8
+y 16
+end
+arch flagstone
 x 8
 y 16
 end
@@ -1206,16 +1205,15 @@ end
 arch medium_stones
 x 11
 end
-arch medium_stones
-x 11
-y 1
-end
 arch teleporter
-invisible 1
 hp 10
 sp 3
 connected 1
 speed 0.0
+x 11
+y 1
+end
+arch medium_stones
 x 11
 y 1
 end
@@ -1401,15 +1399,14 @@ arch marble
 x 12
 y 8
 end
-arch marble
-x 12
-y 9
-end
 arch teleporter
-invisible 1
 hp 2
 sp 9
 speed 0.05
+x 12
+y 9
+end
+arch marble
 x 12
 y 9
 end

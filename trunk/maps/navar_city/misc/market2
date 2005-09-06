@@ -13,11 +13,11 @@ enter_y 1
 difficulty 2
 outdoor 1
 end
-arch cobblestones2
-end
 arch invis_exit
 slaying /world/world_122_117
 sp 11
+end
+arch cobblestones2
 end
 arch cobblestones2
 y 1
@@ -49,12 +49,12 @@ end
 arch cobblestones2
 y 10
 end
-arch cobblestones2
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 sp 11
+y 11
+end
+arch cobblestones2
 y 11
 end
 arch cobblestones2
@@ -999,13 +999,13 @@ arch cobblestones2
 x 13
 y 11
 end
-arch cobblestones2
-x 14
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 2
 sp 11
+x 14
+end
+arch cobblestones2
 x 14
 end
 arch cobblestones2
@@ -1064,10 +1064,6 @@ arch cobblestones2
 x 14
 y 10
 end
-arch cobblestones2
-x 14
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 2
@@ -1076,12 +1072,16 @@ x 14
 y 11
 end
 arch cobblestones2
+x 14
+y 11
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 2
+sp 11
 x 15
 end
-arch invis_exit
-slaying /world/world_122_117
-hp 2
-sp 11
+arch cobblestones2
 x 15
 end
 arch cobblestones2
@@ -1148,14 +1148,14 @@ arch cobblestones2
 x 15
 y 10
 end
-arch cobblestones2
-x 15
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 2
 sp 11
+x 15
+y 11
+end
+arch cobblestones2
 x 15
 y 11
 end
@@ -2965,6 +2965,14 @@ arch cobblestones
 x 40
 y 7
 end
+arch magic_mouth
+msg
+If only you had the key...
+endmsg
+food 1
+x 40
+y 8
+end
 arch cobblestones
 x 40
 y 8
@@ -2973,14 +2981,6 @@ arch check_inv
 slaying marketkey
 connected 6
 last_heal 1
-x 40
-y 8
-end
-arch magic_mouth
-msg
-If only you had the key...
-endmsg
-food 1
 x 40
 y 8
 end
@@ -3229,13 +3229,13 @@ arch lamppost
 x 43
 y 11
 end
-arch cobblestones2
-x 44
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 4
 sp 11
+x 44
+end
+arch cobblestones2
 x 44
 end
 arch cobblestones2
@@ -3302,10 +3302,6 @@ arch cobblestones2
 x 44
 y 10
 end
-arch cobblestones2
-x 44
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 4
@@ -3314,12 +3310,16 @@ x 44
 y 11
 end
 arch cobblestones2
+x 44
+y 11
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 4
+sp 11
 x 45
 end
-arch invis_exit
-slaying /world/world_122_117
-hp 4
-sp 11
+arch cobblestones2
 x 45
 end
 arch cobblestones2
@@ -3386,14 +3386,14 @@ arch cobblestones2
 x 45
 y 10
 end
-arch cobblestones2
-x 45
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 4
 sp 11
+x 45
+y 11
+end
+arch cobblestones2
 x 45
 y 11
 end
@@ -4410,13 +4410,13 @@ arch lamppost
 x 58
 y 11
 end
-arch cobblestones2
-x 59
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 6
 sp 11
+x 59
+end
+arch cobblestones2
 x 59
 end
 arch cobblestones2
@@ -4459,14 +4459,14 @@ arch cobblestones2
 x 59
 y 10
 end
-arch cobblestones2
-x 59
-y 11
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 6
 sp 11
+x 59
+y 11
+end
+arch cobblestones2
 x 59
 y 11
 end

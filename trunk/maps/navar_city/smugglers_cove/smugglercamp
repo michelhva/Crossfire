@@ -13,15 +13,12 @@ enter_y 1
 difficulty 7
 outdoor 1
 end
-arch grass
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 21
 sp 29
 end
 arch grass
-y 1
 end
 arch invis_exit
 slaying /world/world_122_117
@@ -30,7 +27,7 @@ sp 29
 y 1
 end
 arch grass
-y 2
+y 1
 end
 arch invis_exit
 slaying /world/world_122_117
@@ -39,12 +36,15 @@ sp 29
 y 2
 end
 arch grass
+y 2
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 21
+sp 29
 y 3
 end
-arch invis_exit
-slaying /world/world_122_117
-hp 21
-sp 29
+arch grass
 y 3
 end
 arch grass
@@ -130,13 +130,13 @@ end
 arch sea
 y 24
 end
-arch grass
-x 1
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 21
 sp 29
+x 1
+end
+arch grass
 x 1
 end
 arch grass
@@ -241,13 +241,13 @@ arch sea
 x 1
 y 24
 end
-arch grass
-x 2
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 21
 sp 29
+x 2
+end
+arch grass
 x 2
 end
 arch grass
@@ -394,13 +394,13 @@ arch sea
 x 2
 y 24
 end
-arch grass
-x 3
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 21
 sp 29
+x 3
+end
+arch grass
 x 3
 end
 arch grass

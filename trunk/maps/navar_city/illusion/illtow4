@@ -143,14 +143,14 @@ sp 12
 x 1
 y 1
 end
-arch cobblestones
-x 1
-y 2
-end
 arch magic_mouth
 msg
 YOU WILL DIE SCUMMER!!!!!!!!!!!!!!!!!!
 endmsg
+x 1
+y 2
+end
+arch cobblestones
 x 1
 y 2
 end
@@ -278,10 +278,6 @@ end
 arch wall_2_1_2
 x 2
 end
-arch cobblestones
-x 2
-y 1
-end
 arch magic_mouth
 msg
 YOU WILL DIE SCUMMER!!!!!!!!!!!!!!!!!!
@@ -290,13 +286,17 @@ x 2
 y 1
 end
 arch cobblestones
+x 2
+y 1
+end
+arch magic_mouth
+msg
+YOU WILL DIE SCUMMER!!!!!!!!!!!!!!!!!!
+endmsg
 x 2
 y 2
 end
-arch magic_mouth
-msg
-YOU WILL DIE SCUMMER!!!!!!!!!!!!!!!!!!
-endmsg
+arch cobblestones
 x 2
 y 2
 end
