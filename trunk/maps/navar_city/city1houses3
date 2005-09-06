@@ -2554,14 +2554,6 @@ arch wall_2_1_1
 x 11
 y 22
 end
-arch woodfloor2
-x 11
-y 23
-end
-arch wall_2_1_1
-x 11
-y 23
-end
 arch magic_mouth
 msg
 Don't steal the bingo money!
@@ -2570,6 +2562,14 @@ connected 6
 walk_on 0
 fly_on 0
 food 1
+x 11
+y 23
+end
+arch woodfloor2
+x 11
+y 23
+end
+arch wall_2_1_1
 x 11
 y 23
 end

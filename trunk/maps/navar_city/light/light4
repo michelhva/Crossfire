@@ -95,15 +95,15 @@ arch cobblestones2
 x 1
 y 4
 end
-arch cobblestones2
-x 1
-y 5
-end
 arch magic_mouth
 msg
 You look across all of Navar, taking
 in all of its wonder
 endmsg
+x 1
+y 5
+end
+arch cobblestones2
 x 1
 y 5
 end
@@ -306,16 +306,16 @@ end
 arch swall_2_1_2
 x 5
 end
-arch cobblestones2
-x 5
-y 1
-end
 arch magic_mouth
 msg
 You look north into the docks, seeing
 the many interesting warehouses, and
 all of the ships tied up to the docks
 endmsg
+x 5
+y 1
+end
+arch cobblestones2
 x 5
 y 1
 end
@@ -356,10 +356,6 @@ arch cobblestones2
 x 5
 y 8
 end
-arch cobblestones2
-x 5
-y 9
-end
 arch magic_mouth
 msg
 Here you can see across both Navar and
@@ -368,6 +364,10 @@ here...and viewing through it you can
 barely see the island nation of Kient
 and see its many warship
 endmsg
+x 5
+y 9
+end
+arch cobblestones2
 x 5
 y 9
 end
@@ -563,10 +563,6 @@ arch cobblestones2
 x 9
 y 4
 end
-arch cobblestones2
-x 9
-y 5
-end
 arch magic_mouth
 msg
 You look out across the bay and see
@@ -577,6 +573,10 @@ loading and unloading cargo on the
 deck.
 Could this be the smugglers ship?
 endmsg
+x 9
+y 5
+end
+arch cobblestones2
 x 9
 y 5
 end

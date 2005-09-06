@@ -4382,10 +4382,6 @@ arch dungeon_magic
 x 29
 y 13
 end
-arch cobblestones2
-x 29
-y 14
-end
 arch invis_exit
 slaying /navar_city/temples/gorokh2
 hp 1
@@ -4395,12 +4391,16 @@ y 14
 end
 arch cobblestones2
 x 29
-y 15
+y 14
 end
 arch invis_exit
 slaying /navar_city/temples/gorokh2
 hp 1
 sp 9
+x 29
+y 15
+end
+arch cobblestones2
 x 29
 y 15
 end

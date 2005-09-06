@@ -2387,13 +2387,12 @@ arch roughwall_2_2_4
 x 12
 y 11
 end
-arch permanent_lava
+arch button_small
+connected 16
 x 12
 y 12
 end
-arch button_small
-invisible 1
-connected 16
+arch permanent_lava
 x 12
 y 12
 end
@@ -2422,13 +2421,12 @@ arch rune_blast
 x 12
 y 15
 end
-arch permanent_lava
+arch button_small
+connected 15
 x 12
 y 16
 end
-arch button_small
-invisible 1
-connected 15
+arch permanent_lava
 x 12
 y 16
 end
@@ -2477,14 +2475,6 @@ arch rune_blast
 x 12
 y 22
 end
-arch pstone_1
-x 12
-y 23
-end
-arch swall_2_1_2
-x 12
-y 23
-end
 arch magic_mouth
 msg
 THAT IS NOT THE BEST SACRIFICE!
@@ -2493,6 +2483,14 @@ endmsg
 connected 21
 walk_on 0
 fly_on 0
+x 12
+y 23
+end
+arch pstone_1
+x 12
+y 23
+end
+arch swall_2_1_2
 x 12
 y 23
 end
@@ -2688,14 +2686,6 @@ arch permanent_lava
 x 13
 y 22
 end
-arch pstone_1
-x 13
-y 23
-end
-arch swall_2_1_2
-x 13
-y 23
-end
 arch magic_mouth
 msg
 FOOD IS INDEED THE BEST SACRIFICE.
@@ -2703,6 +2693,14 @@ endmsg
 connected 20
 walk_on 0
 fly_on 0
+x 13
+y 23
+end
+arch pstone_1
+x 13
+y 23
+end
+arch swall_2_1_2
 x 13
 y 23
 end
@@ -2866,19 +2864,19 @@ arch permanent_lava
 x 14
 y 22
 end
-arch pstone_1
-x 14
-y 23
-end
-arch swall_2_1_2
-x 14
-y 23
-end
 arch magic_mouth
 msg
 THAT IS NOT THE BEST SACRIFICE!
 TAKE THIS GIFT OF DESTRUCTION!
 endmsg
+x 14
+y 23
+end
+arch pstone_1
+x 14
+y 23
+end
+arch swall_2_1_2
 x 14
 y 23
 end

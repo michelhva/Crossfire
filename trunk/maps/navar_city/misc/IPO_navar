@@ -405,14 +405,14 @@ arch tile_tan_floor
 x 5
 y 8
 end
-arch tile_tan_floor
-x 5
-y 9
-end
 arch invis_exit
 slaying /world/world_122_117
 hp 1
 sp 7
+x 5
+y 9
+end
+arch tile_tan_floor
 x 5
 y 9
 end

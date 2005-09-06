@@ -1520,12 +1520,6 @@ arch unholy_ground
 x 7
 y 12
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 7
-y 13
-end
 arch magic_mouth
 msg
 When the tower was completed there
@@ -1542,6 +1536,12 @@ for the wizard was useful, moreso
 than the last.
 
 endmsg
+x 7
+y 13
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
 x 7
 y 13
 end

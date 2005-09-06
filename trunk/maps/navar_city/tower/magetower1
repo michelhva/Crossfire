@@ -619,10 +619,6 @@ arch bwall_2_2_1
 x 4
 y 7
 end
-arch cobblestones
-x 4
-y 8
-end
 arch magic_mouth
 msg
 A Magic Mouth appears before you:
@@ -632,6 +628,10 @@ master is, what art my master
 practices, and who my master hates the
 most.
 endmsg
+x 4
+y 8
+end
+arch cobblestones
 x 4
 y 8
 end

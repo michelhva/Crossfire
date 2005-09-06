@@ -363,16 +363,16 @@ arch table_3
 x 1
 y 25
 end
-arch woodfloor
-x 1
-y 26
-end
 arch magic_mouth
 msg
 Oh no...you have intereupted a meeting
 of 'FED UP WITH ELVES' they look
 pretty pissed.
 endmsg
+x 1
+y 26
+end
+arch woodfloor
 x 1
 y 26
 end
@@ -581,10 +581,6 @@ arch chair_1.1
 x 2
 y 25
 end
-arch woodfloor
-x 2
-y 26
-end
 arch magic_mouth
 msg
 Oh no...you have intereupted a meeting
@@ -595,15 +591,19 @@ x 2
 y 26
 end
 arch woodfloor
+x 2
+y 26
+end
+arch magic_mouth
+msg
+Oh no...you have intereupted a meeting
+of 'FED UP WITH ELVES' they look
+pretty pissed.
+endmsg
 x 2
 y 27
 end
-arch magic_mouth
-msg
-Oh no...you have intereupted a meeting
-of 'FED UP WITH ELVES' they look
-pretty pissed.
-endmsg
+arch woodfloor
 x 2
 y 27
 end
@@ -2151,14 +2151,14 @@ sp 2
 x 10
 y 12
 end
-arch woodfloor
-x 10
-y 13
-end
 arch magic_mouth
 msg
 ACK!!! A house of the Dead!!!!
 endmsg
+x 10
+y 13
+end
+arch woodfloor
 x 10
 y 13
 end
@@ -5338,10 +5338,6 @@ arch woodfloor
 x 27
 y 2
 end
-arch woodfloor
-x 27
-y 3
-end
 arch magic_mouth
 msg
 You see an Angel appear before you
@@ -5352,6 +5348,10 @@ hovel.  The owners have gone through
 great hardships.  So if you do feel
 the need to take anything YOU WILL DIE!
 endmsg
+x 27
+y 3
+end
+arch woodfloor
 x 27
 y 3
 end

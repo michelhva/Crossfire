@@ -11,12 +11,12 @@ height 50
 enter_x 11
 enter_y 2
 end
-arch cobblestones2
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+end
+arch cobblestones2
 end
 arch grass
 y 1
@@ -165,13 +165,13 @@ end
 arch grass
 y 49
 end
-arch cobblestones2
-x 1
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 1
+end
+arch cobblestones2
 x 1
 end
 arch grass
@@ -370,13 +370,13 @@ arch grass
 x 1
 y 49
 end
-arch cobblestones2
+arch invis_exit
+slaying /world/world_121_117
+hp 39
+sp 6
 x 2
 end
-arch invis_exit
-slaying /world/world_121_117
-hp 39
-sp 6
+arch cobblestones2
 x 2
 end
 arch grass
@@ -735,13 +735,13 @@ arch grass
 x 2
 y 49
 end
-arch cobblestones2
+arch invis_exit
+slaying /world/world_121_117
+hp 39
+sp 6
 x 3
 end
-arch invis_exit
-slaying /world/world_121_117
-hp 39
-sp 6
+arch cobblestones2
 x 3
 end
 arch grass
@@ -984,13 +984,13 @@ arch grass
 x 3
 y 49
 end
-arch cobblestones2
-x 4
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 4
+end
+arch cobblestones2
 x 4
 end
 arch grass
@@ -1246,13 +1246,13 @@ arch grass
 x 4
 y 49
 end
-arch cobblestones2
-x 5
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 5
+end
+arch cobblestones2
 x 5
 end
 arch grass
@@ -1516,13 +1516,13 @@ arch grass
 x 5
 y 49
 end
-arch cobblestones2
-x 6
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 6
+end
+arch cobblestones2
 x 6
 end
 arch grass
@@ -1853,13 +1853,13 @@ arch grass
 x 6
 y 49
 end
-arch cobblestones2
-x 7
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 7
+end
+arch cobblestones2
 x 7
 end
 arch grass
@@ -2135,13 +2135,13 @@ arch grass
 x 7
 y 49
 end
-arch cobblestones2
-x 8
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 8
+end
+arch cobblestones2
 x 8
 end
 arch grass
@@ -2422,13 +2422,13 @@ arch grass
 x 8
 y 49
 end
-arch cobblestones2
-x 9
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 9
+end
+arch cobblestones2
 x 9
 end
 arch grass
@@ -2695,13 +2695,13 @@ arch grass
 x 9
 y 49
 end
-arch cobblestones2
-x 10
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 10
+end
+arch cobblestones2
 x 10
 end
 arch grass
@@ -3026,13 +3026,13 @@ arch grass
 x 10
 y 49
 end
-arch cobblestones2
-x 11
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 11
+end
+arch cobblestones2
 x 11
 end
 arch grass
@@ -3391,13 +3391,13 @@ arch grass
 x 11
 y 49
 end
-arch cobblestones2
-x 12
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 12
+end
+arch cobblestones2
 x 12
 end
 arch grass
@@ -3723,13 +3723,13 @@ arch grass
 x 12
 y 49
 end
-arch cobblestones2
-x 13
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 13
+end
+arch cobblestones2
 x 13
 end
 arch grass
@@ -4018,13 +4018,13 @@ arch grass
 x 13
 y 49
 end
-arch cobblestones2
-x 14
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 14
+end
+arch cobblestones2
 x 14
 end
 arch grass
@@ -4291,13 +4291,13 @@ arch grass
 x 14
 y 49
 end
-arch cobblestones2
-x 15
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 15
+end
+arch cobblestones2
 x 15
 end
 arch grass
@@ -4564,13 +4564,13 @@ arch grass
 x 15
 y 49
 end
-arch cobblestones2
-x 16
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 16
+end
+arch cobblestones2
 x 16
 end
 arch grass
@@ -4920,13 +4920,13 @@ arch grass
 x 16
 y 49
 end
-arch cobblestones2
-x 17
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 17
+end
+arch cobblestones2
 x 17
 end
 arch grass
@@ -5177,13 +5177,13 @@ arch grass
 x 17
 y 49
 end
-arch cobblestones2
-x 18
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 18
+end
+arch cobblestones2
 x 18
 end
 arch grass
@@ -5439,13 +5439,13 @@ arch grass
 x 18
 y 49
 end
-arch cobblestones2
-x 19
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 19
+end
+arch cobblestones2
 x 19
 end
 arch grass
@@ -5680,13 +5680,13 @@ arch grass
 x 19
 y 49
 end
-arch cobblestones2
-x 20
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 20
+end
+arch cobblestones2
 x 20
 end
 arch grass
@@ -6045,13 +6045,13 @@ arch grass
 x 20
 y 49
 end
-arch cobblestones2
-x 21
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 21
+end
+arch cobblestones2
 x 21
 end
 arch grass
@@ -6249,9 +6249,6 @@ end
 arch grass
 x 21
 y 49
-end
-arch cobblestones2
-x 22
 end
 arch invis_exit
 slaying /world/world_121_117
@@ -6259,6 +6256,9 @@ hp 40
 sp 6
 x 22
 end
+arch cobblestones2
+x 22
+end
 arch grass
 x 22
 y 1
@@ -6856,9 +6856,6 @@ end
 arch blocked
 x 27
 y 49
-end
-arch cobblestones2
-x 28
 end
 arch invis_exit
 slaying /world/world_121_117
@@ -6866,6 +6863,9 @@ hp 39
 sp 6
 x 28
 end
+arch cobblestones2
+x 28
+end
 arch grass
 x 28
 y 1
@@ -7061,9 +7061,6 @@ end
 arch grass
 x 28
 y 49
-end
-arch cobblestones2
-x 29
 end
 arch invis_exit
 slaying /world/world_121_117
@@ -7071,6 +7068,9 @@ hp 39
 sp 6
 x 29
 end
+arch cobblestones2
+x 29
+end
 arch grass
 x 29
 y 1
@@ -7267,13 +7267,13 @@ arch grass
 x 29
 y 49
 end
-arch cobblestones2
+arch invis_exit
+slaying /world/world_121_117
+hp 39
+sp 6
 x 30
 end
-arch invis_exit
-slaying /world/world_121_117
-hp 39
-sp 6
+arch cobblestones2
 x 30
 end
 arch grass
@@ -7632,13 +7632,13 @@ arch grass
 x 30
 y 49
 end
-arch cobblestones2
+arch invis_exit
+slaying /world/world_121_117
+hp 39
+sp 6
 x 31
 end
-arch invis_exit
-slaying /world/world_121_117
-hp 39
-sp 6
+arch cobblestones2
 x 31
 end
 arch grass
@@ -7904,14 +7904,14 @@ arch woodfloor2
 x 31
 y 45
 end
-arch woodfloor2
-x 31
-y 46
-end
 arch invis_exit
 slaying rockgardens
 hp 31
 sp 21
+x 31
+y 46
+end
+arch woodfloor2
 x 31
 y 46
 end
@@ -7935,13 +7935,13 @@ arch grass
 x 31
 y 49
 end
-arch cobblestones2
-x 32
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 32
+end
+arch cobblestones2
 x 32
 end
 arch grass
@@ -8194,13 +8194,13 @@ arch grass
 x 32
 y 49
 end
-arch cobblestones2
-x 33
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 33
+end
+arch cobblestones2
 x 33
 end
 arch grass
@@ -8454,13 +8454,13 @@ arch grass
 x 33
 y 49
 end
-arch cobblestones2
-x 34
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 34
+end
+arch cobblestones2
 x 34
 end
 arch grass
@@ -8735,13 +8735,13 @@ arch grass
 x 34
 y 49
 end
-arch cobblestones2
-x 35
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 35
+end
+arch cobblestones2
 x 35
 end
 arch grass
@@ -9032,13 +9032,13 @@ arch grass
 x 35
 y 49
 end
-arch cobblestones2
-x 36
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 36
+end
+arch cobblestones2
 x 36
 end
 arch grass
@@ -9073,14 +9073,14 @@ arch woodfloor2
 x 36
 y 6
 end
-arch woodfloor2
-x 36
-y 7
-end
 arch invis_exit
 slaying rockgardens
 hp 36
 sp 31
+x 36
+y 7
+end
+arch woodfloor2
 x 36
 y 7
 end
@@ -9311,13 +9311,13 @@ arch grass
 x 36
 y 49
 end
-arch cobblestones2
-x 37
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 37
+end
+arch cobblestones2
 x 37
 end
 arch grass
@@ -9348,14 +9348,14 @@ arch woodfloor2
 x 37
 y 6
 end
-arch woodfloor2
-x 37
-y 7
-end
 arch invis_exit
 slaying rockgardens
 hp 37
 sp 31
+x 37
+y 7
+end
+arch woodfloor2
 x 37
 y 7
 end
@@ -9588,13 +9588,13 @@ arch grass
 x 37
 y 49
 end
-arch cobblestones2
-x 38
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 39
 sp 6
+x 38
+end
+arch cobblestones2
 x 38
 end
 arch grass
@@ -9625,14 +9625,14 @@ arch woodfloor2
 x 38
 y 6
 end
-arch woodfloor2
-x 38
-y 7
-end
 arch invis_exit
 slaying rockgardens
 hp 38
 sp 31
+x 38
+y 7
+end
+arch woodfloor2
 x 38
 y 7
 end
@@ -9892,13 +9892,13 @@ arch grass
 x 38
 y 49
 end
-arch cobblestones2
-x 39
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 39
+end
+arch cobblestones2
 x 39
 end
 arch grass
@@ -10257,13 +10257,13 @@ arch grass
 x 39
 y 49
 end
-arch cobblestones2
-x 40
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 40
+end
+arch cobblestones2
 x 40
 end
 arch grass
@@ -10597,13 +10597,13 @@ arch grass
 x 40
 y 49
 end
-arch cobblestones2
-x 41
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 41
+end
+arch cobblestones2
 x 41
 end
 arch grass
@@ -10850,13 +10850,13 @@ arch grass
 x 41
 y 49
 end
-arch cobblestones2
-x 42
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 42
+end
+arch cobblestones2
 x 42
 end
 arch grass
@@ -11127,13 +11127,13 @@ arch grass
 x 42
 y 49
 end
-arch cobblestones2
-x 43
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 43
+end
+arch cobblestones2
 x 43
 end
 arch grass
@@ -11438,13 +11438,13 @@ arch grass
 x 43
 y 49
 end
-arch cobblestones2
-x 44
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 44
+end
+arch cobblestones2
 x 44
 end
 arch grass
@@ -11735,13 +11735,13 @@ arch grass
 x 44
 y 49
 end
-arch cobblestones2
-x 45
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 45
+end
+arch cobblestones2
 x 45
 end
 arch grass
@@ -12000,13 +12000,13 @@ arch grass
 x 45
 y 49
 end
-arch cobblestones2
-x 46
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 46
+end
+arch cobblestones2
 x 46
 end
 arch grass
@@ -12314,13 +12314,13 @@ arch grass
 x 46
 y 49
 end
-arch cobblestones2
-x 47
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 47
+end
+arch cobblestones2
 x 47
 end
 arch grass
@@ -12608,13 +12608,13 @@ arch grass
 x 47
 y 49
 end
-arch cobblestones2
-x 48
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 48
+end
+arch cobblestones2
 x 48
 end
 arch grass
@@ -12973,13 +12973,13 @@ arch grass
 x 48
 y 49
 end
-arch cobblestones2
-x 49
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 40
 sp 6
+x 49
+end
+arch cobblestones2
 x 49
 end
 arch grass

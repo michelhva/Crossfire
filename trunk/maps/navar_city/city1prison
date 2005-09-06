@@ -729,6 +729,13 @@ arch dungeon_floor
 x 5
 y 1
 end
+arch magic_mouth
+msg
+HALT! Who goes there
+endmsg
+x 5
+y 2
+end
 arch dungeon_floor
 x 5
 y 2
@@ -743,13 +750,6 @@ endmsg
 x 5
 y 2
 connected 10
-end
-arch magic_mouth
-msg
-HALT! Who goes there
-endmsg
-x 5
-y 2
 end
 arch dungeon_floor
 x 5

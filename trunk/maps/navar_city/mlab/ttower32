@@ -3742,10 +3742,6 @@ arch cwall_1_4
 x 14
 y 7
 end
-arch flagstone
-x 14
-y 8
-end
 arch magic_mouth
 msg
 Perhaps now the bones of the bricks
@@ -3753,6 +3749,10 @@ of the tower to the sky shall rest.
 Perhaps some are nolonger captive.
 Perhaps not.
 endmsg
+x 14
+y 8
+end
+arch flagstone
 x 14
 y 8
 end

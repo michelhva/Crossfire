@@ -1747,17 +1747,6 @@ arch wall_2_1_2
 x 10
 y 12
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 10
-y 13
-end
-arch button_lever
-x 10
-y 13
-connected 2
-end
 arch magic_mouth
 msg
 The wizard grew old... he was
@@ -1774,6 +1763,17 @@ grave. The student learned well.
 endmsg
 x 10
 y 13
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 10
+y 13
+end
+arch button_lever
+x 10
+y 13
+connected 2
 end
 arch button_lever
 face lever.112

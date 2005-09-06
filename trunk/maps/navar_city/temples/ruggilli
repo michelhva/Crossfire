@@ -351,14 +351,14 @@ arch small_stones
 x 3
 y 14
 end
-arch flagstone
-x 3
-y 15
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 43
 sp 0
+x 3
+y 15
+end
+arch flagstone
 x 3
 y 15
 end
@@ -431,14 +431,14 @@ arch small_stones
 x 4
 y 14
 end
-arch flagstone
-x 4
-y 15
-end
 arch invis_exit
 slaying /world/world_121_117
 hp 43
 sp 0
+x 4
+y 15
+end
+arch flagstone
 x 4
 y 15
 end

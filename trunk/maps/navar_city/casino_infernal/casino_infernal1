@@ -2574,10 +2574,6 @@ arch dungeon_magic
 x 13
 y 9
 end
-arch cobblestones2
-x 13
-y 10
-end
 arch magic_mouth
 msg
 My my, at Napoleon did surrender
@@ -2585,6 +2581,10 @@ Oh yeah, and I have met my destiny in quite a similar way
 The history book on the shelf
 Is always repeating itself
 endmsg
+x 13
+y 10
+end
+arch cobblestones2
 x 13
 y 10
 end
@@ -2705,14 +2705,14 @@ arch grass
 x 13
 y 28
 end
-arch grass
-x 13
-y 29
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 43
 sp 40
+x 13
+y 29
+end
+arch grass
 x 13
 y 29
 end
@@ -2882,14 +2882,14 @@ arch grass
 x 14
 y 28
 end
-arch grass
-x 14
-y 29
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 43
 sp 40
+x 14
+y 29
+end
+arch grass
 x 14
 y 29
 end
@@ -2970,10 +2970,6 @@ arch dungeon_magic
 x 15
 y 9
 end
-arch cobblestones2
-x 15
-y 10
-end
 arch magic_mouth
 msg
 Waterloo - I was defeated, you won the war
@@ -2982,6 +2978,10 @@ Waterloo - Couldn't escape if I wanted to
 Waterloo - Knowing my fate is to be with you
 Waterloo - Finally facing my Waterloo
 endmsg
+x 15
+y 10
+end
+arch cobblestones2
 x 15
 y 10
 end
@@ -3074,14 +3074,14 @@ arch grass
 x 15
 y 28
 end
-arch grass
-x 15
-y 29
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 43
 sp 40
+x 15
+y 29
+end
+arch grass
 x 15
 y 29
 end
@@ -3259,14 +3259,14 @@ arch grass
 x 16
 y 28
 end
-arch grass
-x 16
-y 29
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 43
 sp 40
+x 16
+y 29
+end
+arch grass
 x 16
 y 29
 end
@@ -3473,14 +3473,14 @@ arch grass
 x 17
 y 28
 end
-arch grass
-x 17
-y 29
-end
 arch invis_exit
 slaying /world/world_121_116
 hp 43
 sp 40
+x 17
+y 29
+end
+arch grass
 x 17
 y 29
 end
@@ -4377,16 +4377,16 @@ arch cobblestones
 x 21
 y 15
 end
-arch cobblestones2
-x 21
-y 16
-end
 arch magic_mouth
 msg
 You hear angry muttering coming from inside this slotmachine.
 Perhaps it is broken.
 endmsg
 food 1
+x 21
+y 16
+end
+arch cobblestones2
 x 21
 y 16
 end

@@ -937,10 +937,6 @@ arch bwall_2_2_1
 x 6
 y 22
 end
-arch cobblestones
-x 6
-y 23
-end
 arch magic_mouth
 msg
 Look at the welp, thinking he is all
@@ -952,6 +948,10 @@ you must answer me my riddle....
 What is at the end of time and at the
 begining of the end
 endmsg
+x 6
+y 23
+end
+arch cobblestones
 x 6
 y 23
 end

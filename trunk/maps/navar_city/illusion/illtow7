@@ -953,10 +953,6 @@ arch pstone_3
 x 10
 y 7
 end
-arch pstone_3
-x 10
-y 8
-end
 arch magic_mouth
 msg
 A voice enters your head:
@@ -968,7 +964,7 @@ y 8
 end
 arch pstone_3
 x 10
-y 9
+y 8
 end
 arch magic_mouth
 msg
@@ -980,15 +976,19 @@ x 10
 y 9
 end
 arch pstone_3
+x 10
+y 9
+end
+arch magic_mouth
+msg
+A voice enters your head:
+  YOU SHOULD HAVE QUIT WHILE YOU WERE
+  AHEAD.
+endmsg
 x 10
 y 10
 end
-arch magic_mouth
-msg
-A voice enters your head:
-  YOU SHOULD HAVE QUIT WHILE YOU WERE
-  AHEAD.
-endmsg
+arch pstone_3
 x 10
 y 10
 end

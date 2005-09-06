@@ -3827,16 +3827,16 @@ x 17
 y 9
 blocksview 1
 end
-arch woodfloor
-x 17
-y 10
-end
 arch magic_mouth
 msg
 You hear some muffled voices....
    "Now where did those drunken slobs
 get off too? What! Out drinking again??
 endmsg
+x 17
+y 10
+end
+arch woodfloor
 x 17
 y 10
 end
