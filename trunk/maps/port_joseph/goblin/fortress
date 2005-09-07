@@ -1837,14 +1837,14 @@ arch sea
 x 12
 y 21
 end
-arch grass_only
-x 12
-y 22
-end
 arch invis_exit
 slaying /world/world_100_114
 hp 21
 sp 30
+x 12
+y 22
+end
+arch grass_only
 x 12
 y 22
 end
@@ -1964,14 +1964,14 @@ arch woodfloor
 x 13
 y 21
 end
-arch woodfloor
-x 13
-y 22
-end
 arch invis_exit
 slaying /world/world_100_114
 hp 21
 sp 30
+x 13
+y 22
+end
+arch woodfloor
 x 13
 y 22
 end
@@ -2085,14 +2085,14 @@ arch woodfloor
 x 14
 y 21
 end
-arch woodfloor
-x 14
-y 22
-end
 arch invis_exit
 slaying /world/world_100_114
 hp 21
 sp 30
+x 14
+y 22
+end
+arch woodfloor
 x 14
 y 22
 end
@@ -2229,14 +2229,14 @@ arch woodfloor
 x 15
 y 21
 end
-arch woodfloor
-x 15
-y 22
-end
 arch invis_exit
 slaying /world/world_100_114
 hp 21
 sp 30
+x 15
+y 22
+end
+arch woodfloor
 x 15
 y 22
 end
@@ -2378,14 +2378,14 @@ arch sea
 x 16
 y 21
 end
-arch pstone_2
-x 16
-y 22
-end
 arch invis_exit
 slaying /world/world_100_114
 hp 21
 sp 30
+x 16
+y 22
+end
+arch pstone_2
 x 16
 y 22
 end

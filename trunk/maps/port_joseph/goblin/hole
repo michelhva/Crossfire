@@ -650,14 +650,14 @@ arch random_food
 x 5
 y 12
 end
-arch small_stones
-x 5
-y 13
-end
 arch magic_mouth
 msg
 A secret room
 endmsg
+x 5
+y 13
+end
+arch small_stones
 x 5
 y 13
 end

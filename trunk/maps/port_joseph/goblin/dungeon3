@@ -1979,14 +1979,14 @@ arch cobblestones
 x 13
 y 4
 end
-arch cobblestones
-x 13
-y 5
-end
 arch magic_mouth
 msg
 Here sits a food stained altar.
 endmsg
+x 13
+y 5
+end
+arch cobblestones
 x 13
 y 5
 end

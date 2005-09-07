@@ -711,10 +711,6 @@ arch dungeon_floor
 x 3
 y 27
 end
-arch dungeon_floor
-x 3
-y 28
-end
 arch magic_mouth
 msg
 On the wall is a painting.
@@ -724,6 +720,10 @@ lush plantlife.  The statue has its
 arm out and is pointing behind you and
 to your right
 endmsg
+x 3
+y 28
+end
+arch dungeon_floor
 x 3
 y 28
 end

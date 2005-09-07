@@ -1267,14 +1267,14 @@ arch woodfloor
 x 9
 y 10
 end
-arch woodfloor
-x 9
-y 11
-end
 arch magic_mouth
 msg
 The deck of the ship . . 
 endmsg
+x 9
+y 11
+end
+arch woodfloor
 x 9
 y 11
 end

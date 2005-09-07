@@ -19,6 +19,12 @@ end
 arch shallow_sea
 y 3
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+y 4
+end
 arch beach
 y 4
 end
@@ -26,7 +32,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 4
+y 5
 end
 arch beach
 y 5
@@ -35,7 +41,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 5
+y 6
 end
 arch pstone_1
 y 6
@@ -44,7 +50,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 6
+y 7
 end
 arch beach
 y 7
@@ -53,7 +59,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 7
+y 8
 end
 arch pstone_1
 y 8
@@ -62,7 +68,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 8
+y 9
 end
 arch beach
 y 9
@@ -71,7 +77,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 9
+y 10
 end
 arch grass
 y 10
@@ -80,7 +86,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 10
+y 11
 end
 arch grass
 y 11
@@ -89,7 +95,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 11
+y 12
 end
 arch grass
 y 12
@@ -98,7 +104,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 12
+y 13
 end
 arch brush
 y 13
@@ -107,7 +113,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 13
+y 14
 end
 arch brush
 y 14
@@ -116,7 +122,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 14
+y 15
 end
 arch brush
 y 15
@@ -125,7 +131,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 15
+y 16
 end
 arch grass
 y 16
@@ -134,7 +140,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 16
+y 17
 end
 arch grass
 y 17
@@ -143,7 +149,7 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 17
+y 18
 end
 arch grass
 y 18
@@ -152,15 +158,9 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-y 18
-end
-arch grass
 y 19
 end
-arch invis_exit
-slaying /world/world_101_114
-hp 15
-sp 27
+arch grass
 y 19
 end
 arch sea
@@ -1819,14 +1819,14 @@ arch woodfloor2
 x 17
 y 18
 end
-arch woodfloor2
-x 17
-y 19
-end
 arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
+x 17
+y 19
+end
+arch woodfloor2
 x 17
 y 19
 end
@@ -2401,14 +2401,14 @@ arch shallow_sea
 x 24
 y 2
 end
-arch beach
-x 24
-y 3
-end
 arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
+x 24
+y 3
+end
+arch beach
 x 24
 y 3
 end
@@ -2424,10 +2424,6 @@ arch shallow_sea
 x 24
 y 6
 end
-arch pstone_1
-x 24
-y 7
-end
 arch invis_exit
 slaying /world/world_101_114
 hp 15
@@ -2437,7 +2433,7 @@ y 7
 end
 arch pstone_1
 x 24
-y 8
+y 7
 end
 arch invis_exit
 slaying /world/world_101_114
@@ -2448,7 +2444,7 @@ y 8
 end
 arch pstone_1
 x 24
-y 9
+y 8
 end
 arch invis_exit
 slaying /world/world_101_114
@@ -2456,6 +2452,17 @@ hp 15
 sp 27
 x 24
 y 9
+end
+arch pstone_1
+x 24
+y 9
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 24
+y 10
 end
 arch grass
 x 24
@@ -2466,7 +2473,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 10
+y 11
 end
 arch grass
 x 24
@@ -2477,7 +2484,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 11
+y 12
 end
 arch brush
 x 24
@@ -2488,7 +2495,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 12
+y 13
 end
 arch pstone_1
 x 24
@@ -2499,7 +2506,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 13
+y 14
 end
 arch brush
 x 24
@@ -2510,7 +2517,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 14
+y 15
 end
 arch brush
 x 24
@@ -2521,7 +2528,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 15
+y 16
 end
 arch brush
 x 24
@@ -2532,7 +2539,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 16
+y 17
 end
 arch brush
 x 24
@@ -2543,7 +2550,7 @@ slaying /world/world_101_114
 hp 15
 sp 27
 x 24
-y 17
+y 18
 end
 arch brush
 x 24
@@ -2553,17 +2560,10 @@ arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
-x 24
-y 18
-end
-arch brush
 x 24
 y 19
 end
-arch invis_exit
-slaying /world/world_101_114
-hp 15
-sp 27
+arch brush
 x 24
 y 19
 end
