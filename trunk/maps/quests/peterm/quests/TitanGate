@@ -483,6 +483,14 @@ arch dungeon_floor
 x 6
 y 2
 end
+arch magic_mouth
+msg
+You better not attack the guards or
+they'll never let you in.
+endmsg
+x 6
+y 3
+end
 arch dungeon_floor
 x 6
 y 3
@@ -495,18 +503,6 @@ y 3
 end
 arch magic_mouth
 msg
-You better not attack the guards or
-they'll never let you in.
-endmsg
-x 6
-y 3
-end
-arch dungeon_floor
-x 6
-y 4
-end
-arch magic_mouth
-msg
 Halt!  Who goes there!
 endmsg
 x 6
@@ -514,12 +510,16 @@ y 4
 end
 arch dungeon_floor
 x 6
-y 5
+y 4
 end
 arch magic_mouth
 msg
 Hmm, these guards look thirsty.
 endmsg
+x 6
+y 5
+end
+arch dungeon_floor
 x 6
 y 5
 end
@@ -618,6 +618,14 @@ arch dungeon_floor
 x 7
 y 2
 end
+arch magic_mouth
+msg
+You better not attack the guards or
+they'll never let you in.
+endmsg
+x 7
+y 3
+end
 arch dungeon_floor
 x 7
 y 3
@@ -630,18 +638,6 @@ y 3
 end
 arch magic_mouth
 msg
-You better not attack the guards or
-they'll never let you in.
-endmsg
-x 7
-y 3
-end
-arch dungeon_floor
-x 7
-y 4
-end
-arch magic_mouth
-msg
 Halt!  Who goes there!
 endmsg
 x 7
@@ -649,12 +645,16 @@ y 4
 end
 arch dungeon_floor
 x 7
-y 5
+y 4
 end
 arch magic_mouth
 msg
 Hmm, these guards look thirsty.
 endmsg
+x 7
+y 5
+end
+arch dungeon_floor
 x 7
 y 5
 end

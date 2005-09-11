@@ -1212,15 +1212,15 @@ end
 arch cave4
 x 5
 end
-arch pstone_2
-x 5
-y 1
-end
 arch magic_mouth
 msg
 This seems to be a quick exit to the
 mountains.
 endmsg
+x 5
+y 1
+end
+arch pstone_2
 x 5
 y 1
 end
@@ -3907,14 +3907,14 @@ arch sabre
 x 16
 y 19
 end
-arch pstone_2
-x 16
-y 20
-end
 arch magic_mouth
 msg
 Which one is it?
 endmsg
+x 16
+y 20
+end
+arch pstone_2
 x 16
 y 20
 end
