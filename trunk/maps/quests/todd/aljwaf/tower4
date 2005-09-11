@@ -30,6 +30,12 @@ end
 arch bwall_1_2
 y 3
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 37
+sp 7
+y 4
+end
 arch pstone_1
 y 4
 end
@@ -40,18 +46,12 @@ arch invis_exit
 slaying /world/world_119_116
 hp 37
 sp 7
-y 4
+y 5
 end
 arch pstone_1
 y 5
 end
 arch cobblestones
-y 5
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 37
-sp 7
 y 5
 end
 arch pstone_1
@@ -528,6 +528,13 @@ arch cobblestones
 x 6
 y 11
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 37
+sp 7
+x 6
+y 12
+end
 arch cobblestones
 x 6
 y 12
@@ -536,19 +543,12 @@ arch invis_exit
 slaying /world/world_119_116
 hp 37
 sp 7
-x 6
-y 12
+x 7
 end
 arch pstone_1
 x 7
 end
 arch cobblestones
-x 7
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 37
-sp 7
 x 7
 end
 arch cobblestones
@@ -869,18 +869,18 @@ arch spider_gen
 x 11
 y 11
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 37
+sp 7
+x 11
+y 12
+end
 arch pstone_1
 x 11
 y 12
 end
 arch cobblestones
-x 11
-y 12
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 37
-sp 7
 x 11
 y 12
 end
@@ -967,6 +967,13 @@ arch bwall_1_2
 x 12
 y 9
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 37
+sp 7
+x 12
+y 10
+end
 arch pstone_1
 x 12
 y 10
@@ -980,7 +987,7 @@ slaying /world/world_119_116
 hp 37
 sp 7
 x 12
-y 10
+y 11
 end
 arch pstone_1
 x 12
@@ -995,20 +1002,13 @@ slaying /world/world_119_116
 hp 37
 sp 7
 x 12
-y 11
+y 12
 end
 arch pstone_1
 x 12
 y 12
 end
 arch cobblestones
-x 12
-y 12
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 37
-sp 7
 x 12
 y 12
 end

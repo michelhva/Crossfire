@@ -657,15 +657,15 @@ arch dirtfloor
 x 6
 y 2
 end
-arch dirtfloor
-x 6
-y 3
-end
 arch magic_mouth
 msg
 You hear a faint muttering.
 endmsg
 food 1
+x 6
+y 3
+end
+arch dirtfloor
 x 6
 y 3
 end

@@ -34,6 +34,12 @@ end
 arch bwall_1_2
 y 3
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 29
+sp 26
+y 4
+end
 arch pstone_1
 y 4
 end
@@ -44,7 +50,7 @@ arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
-y 4
+y 5
 end
 arch pstone_1
 y 5
@@ -56,18 +62,12 @@ arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
-y 5
+y 6
 end
 arch pstone_1
 y 6
 end
 arch cobblestones
-y 6
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 29
-sp 26
 y 6
 end
 arch cobblestones
@@ -408,16 +408,16 @@ arch bwall_2_1_2
 x 4
 y 12
 end
-arch pstone_1
-x 5
-end
-arch cobblestones
-x 5
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 5
+end
+arch pstone_1
+x 5
+end
+arch cobblestones
 x 5
 end
 arch pstone_1
@@ -522,16 +522,16 @@ arch bwall_1_3
 x 5
 y 12
 end
-arch pstone_1
-x 6
-end
-arch cobblestones
-x 6
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 6
+end
+arch pstone_1
+x 6
+end
+arch cobblestones
 x 6
 end
 arch pstone_1
@@ -592,6 +592,13 @@ arch cobblestones
 x 6
 y 11
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 29
+sp 26
+x 6
+y 12
+end
 arch cobblestones
 x 6
 y 12
@@ -600,19 +607,12 @@ arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
-x 6
-y 12
+x 7
 end
 arch pstone_1
 x 7
 end
 arch cobblestones
-x 7
-end
-arch invis_exit
-slaying /world/world_119_116
-hp 29
-sp 26
 x 7
 end
 arch cobblestones
@@ -671,16 +671,16 @@ arch bwall_1_4
 x 7
 y 12
 end
-arch pstone_1
-x 8
-end
-arch cobblestones
-x 8
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 8
+end
+arch pstone_1
+x 8
+end
+arch cobblestones
 x 8
 end
 arch cobblestones
@@ -1753,10 +1753,6 @@ arch pstone_1
 x 23
 y 1
 end
-arch pstone_1
-x 23
-y 2
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
@@ -1766,7 +1762,7 @@ y 2
 end
 arch pstone_1
 x 23
-y 3
+y 2
 end
 arch invis_exit
 slaying /world/world_119_116
@@ -1777,7 +1773,7 @@ y 3
 end
 arch pstone_1
 x 23
-y 4
+y 3
 end
 arch invis_exit
 slaying /world/world_119_116
@@ -1787,13 +1783,17 @@ x 23
 y 4
 end
 arch pstone_1
+x 23
+y 4
+end
+arch invis_exit
+slaying /world/world_119_116
+hp 29
+sp 26
 x 23
 y 5
 end
-arch invis_exit
-slaying /world/world_119_116
-hp 29
-sp 26
+arch pstone_1
 x 23
 y 5
 end
@@ -2161,13 +2161,13 @@ arch pstone_1
 x 27
 y 12
 end
-arch pstone_1
-x 28
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 28
+end
+arch pstone_1
 x 28
 end
 arch woodfloor2
@@ -2236,13 +2236,13 @@ arch pstone_1
 x 28
 y 12
 end
-arch pstone_1
-x 29
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 29
+end
+arch pstone_1
 x 29
 end
 arch woodfloor2
@@ -2324,13 +2324,13 @@ arch pstone_1
 x 29
 y 12
 end
-arch pstone_1
-x 30
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 30
+end
+arch pstone_1
 x 30
 end
 arch woodfloor2
@@ -2413,10 +2413,6 @@ arch bwall_1_3
 x 30
 y 11
 end
-arch pstone_1
-x 30
-y 12
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
@@ -2425,12 +2421,16 @@ x 30
 y 12
 end
 arch pstone_1
+x 30
+y 12
+end
+arch invis_exit
+slaying /world/world_119_116
+hp 29
+sp 26
 x 31
 end
-arch invis_exit
-slaying /world/world_119_116
-hp 29
-sp 26
+arch pstone_1
 x 31
 end
 arch woodfloor2
@@ -2509,14 +2509,14 @@ sp 11
 x 31
 y 11
 end
-arch pstone_1
-x 31
-y 12
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 31
+y 12
+end
+arch pstone_1
 x 31
 y 12
 end
@@ -2591,14 +2591,14 @@ arch bwall_1_4
 x 32
 y 11
 end
-arch pstone_1
-x 32
-y 12
-end
 arch invis_exit
 slaying /world/world_119_116
 hp 29
 sp 26
+x 32
+y 12
+end
+arch pstone_1
 x 32
 y 12
 end
