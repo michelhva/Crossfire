@@ -1805,14 +1805,14 @@ arch cwall_3_1
 x 7
 y 27
 end
-arch marble
-x 7
-y 28
-end
 arch magic_mouth
 msg
 Who DARES enter my CASTLE!!!!
 endmsg
+x 7
+y 28
+end
+arch marble
 x 7
 y 28
 end
@@ -3834,15 +3834,15 @@ arch marble
 x 18
 y 4
 end
-arch marble
-x 18
-y 5
-end
 arch magic_mouth
 msg
 You hear a most unholy roar and wonder
 what type of creature awaits you
 endmsg
+x 18
+y 5
+end
+arch marble
 x 18
 y 5
 end
@@ -3984,16 +3984,16 @@ arch marble
 x 18
 y 36
 end
-arch marble
-x 18
-y 37
-end
 arch magic_mouth
 msg
 WHO DARES ENTER THESE WALLS!!!!!!!
 You'll shall parish and I will feast
 on your soul
 endmsg
+x 18
+y 37
+end
+arch marble
 x 18
 y 37
 end
@@ -4044,15 +4044,15 @@ arch marble
 x 19
 y 4
 end
-arch marble
-x 19
-y 5
-end
 arch magic_mouth
 msg
 You hear a most unholy roar and wonder
 what type of creature awaits you
 endmsg
+x 19
+y 5
+end
+arch marble
 x 19
 y 5
 end
@@ -4230,16 +4230,16 @@ arch marble
 x 19
 y 36
 end
-arch marble
-x 19
-y 37
-end
 arch magic_mouth
 msg
 WHO DARES ENTER THESE WALLS!!!!!!!
 You'll shall parish and I will feast
 on your soul
 endmsg
+x 19
+y 37
+end
+arch marble
 x 19
 y 37
 end
@@ -4290,15 +4290,15 @@ arch marble
 x 20
 y 4
 end
-arch marble
-x 20
-y 5
-end
 arch magic_mouth
 msg
 You hear a most unholy roar and wonder
 what type of creature awaits you
 endmsg
+x 20
+y 5
+end
+arch marble
 x 20
 y 5
 end
@@ -4477,15 +4477,15 @@ arch marble
 x 21
 y 4
 end
-arch marble
-x 21
-y 5
-end
 arch magic_mouth
 msg
 You hear a most unholy roar and wonder
 what type of creature awaits you
 endmsg
+x 21
+y 5
+end
+arch marble
 x 21
 y 5
 end
@@ -6717,18 +6717,18 @@ arch cwall_2_2_4
 x 32
 y 17
 end
+arch magic_mouth
+msg
+You here an evil laugh
+endmsg
+x 32
+y 18
+end
 arch marble
 x 32
 y 18
 end
 arch rune_frost
-x 32
-y 18
-end
-arch magic_mouth
-msg
-You here an evil laugh
-endmsg
 x 32
 y 18
 end
