@@ -224,10 +224,6 @@ arch cave4
 x 4
 y 18
 end
-arch pstone_2
-x 4
-y 19
-end
 arch invis_exit
 slaying Entrance
 hp 21
@@ -237,7 +233,7 @@ y 19
 end
 arch pstone_2
 x 4
-y 20
+y 19
 end
 arch invis_exit
 slaying Entrance
@@ -248,12 +244,16 @@ y 20
 end
 arch pstone_2
 x 4
-y 21
+y 20
 end
 arch invis_exit
 slaying Entrance
 hp 21
 sp 3
+x 4
+y 21
+end
+arch pstone_2
 x 4
 y 21
 end
@@ -305,10 +305,6 @@ arch cave5
 x 5
 y 19
 end
-arch pstone_2
-x 5
-y 20
-end
 arch invis_exit
 slaying Entrance
 hp 21
@@ -318,12 +314,16 @@ y 20
 end
 arch pstone_2
 x 5
-y 21
+y 20
 end
 arch invis_exit
 slaying Entrance
 hp 21
 sp 3
+x 5
+y 21
+end
+arch pstone_2
 x 5
 y 21
 end
@@ -1527,14 +1527,14 @@ arch cave13
 x 16
 y 10
 end
-arch pstone_2
-x 16
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting down from the tunnel ahead.
 endmsg
+x 16
+y 11
+end
+arch pstone_2
 x 16
 y 11
 end
@@ -1693,14 +1693,14 @@ x 17
 y 3
 no_pass 1
 end
-arch pstone_2
-x 17
-y 4
-end
 arch invis_exit
 slaying ElectricHatchery
 hp 9
 sp 25
+x 17
+y 4
+end
+arch pstone_2
 x 17
 y 4
 end
@@ -1744,14 +1744,14 @@ arch pstone_2
 x 17
 y 10
 end
-arch pstone_2
-x 17
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting from the tunnel above.
 endmsg
+x 17
+y 11
+end
+arch pstone_2
 x 17
 y 11
 end
@@ -1923,10 +1923,6 @@ x 18
 y 3
 no_pass 1
 end
-arch pstone_2
-x 18
-y 4
-end
 arch invis_exit
 slaying ElectricHatchery
 hp 10
@@ -1936,12 +1932,16 @@ y 4
 end
 arch pstone_2
 x 18
-y 5
+y 4
 end
 arch invis_exit
 slaying ElectricHatchery
 hp 9
 sp 24
+x 18
+y 5
+end
+arch pstone_2
 x 18
 y 5
 end
@@ -1977,14 +1977,14 @@ arch pstone_2
 x 18
 y 10
 end
-arch pstone_2
-x 18
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting from the tunnel above.
 endmsg
+x 18
+y 11
+end
+arch pstone_2
 x 18
 y 11
 end
@@ -2060,15 +2060,15 @@ arch generate_dragon
 x 18
 y 27
 end
-arch pstone_2
-x 18
-y 28
-end
 arch magic_mouth
 msg
 A biting chill is wafting up from the
 caves in this direction.
 endmsg
+x 18
+y 28
+end
+arch pstone_2
 x 18
 y 28
 end
@@ -2174,10 +2174,6 @@ x 19
 y 3
 no_pass 1
 end
-arch pstone_2
-x 19
-y 4
-end
 arch invis_exit
 slaying ElectricHatchery
 hp 9
@@ -2187,12 +2183,16 @@ y 4
 end
 arch pstone_2
 x 19
-y 5
+y 4
 end
 arch invis_exit
 slaying ElectricHatchery
 hp 10
 sp 24
+x 19
+y 5
+end
+arch pstone_2
 x 19
 y 5
 end
@@ -2224,14 +2224,14 @@ arch pstone_2
 x 19
 y 10
 end
-arch pstone_2
-x 19
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting from the tunnel above.
 endmsg
+x 19
+y 11
+end
+arch pstone_2
 x 19
 y 11
 end
@@ -2303,15 +2303,15 @@ arch pstone_2
 x 19
 y 27
 end
-arch pstone_2
-x 19
-y 28
-end
 arch magic_mouth
 msg
 A biting chill is wafting up from the
 caves in this direction.
 endmsg
+x 19
+y 28
+end
+arch pstone_2
 x 19
 y 28
 end
@@ -2347,14 +2347,14 @@ arch pstone_2
 x 19
 y 33
 end
-arch pstone_2
-x 19
-y 34
-end
 arch invis_exit
 slaying IceHatchery
 hp 3
 sp 5
+x 19
+y 34
+end
+arch pstone_2
 x 19
 y 34
 end
@@ -2454,14 +2454,14 @@ arch pstone_2
 x 20
 y 10
 end
-arch pstone_2
-x 20
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting from the tunnel above.
 endmsg
+x 20
+y 11
+end
+arch pstone_2
 x 20
 y 11
 end
@@ -2533,15 +2533,15 @@ arch pstone_2
 x 20
 y 27
 end
-arch pstone_2
-x 20
-y 28
-end
 arch magic_mouth
 msg
 A biting chill is wafting up from the
 caves in this direction.
 endmsg
+x 20
+y 28
+end
+arch pstone_2
 x 20
 y 28
 end
@@ -2577,10 +2577,6 @@ arch pstone_2
 x 20
 y 33
 end
-arch pstone_2
-x 20
-y 34
-end
 arch invis_exit
 slaying IceHatchery
 hp 4
@@ -2590,12 +2586,16 @@ y 34
 end
 arch pstone_2
 x 20
-y 35
+y 34
 end
 arch invis_exit
 slaying IceHatchery
 hp 3
 sp 5
+x 20
+y 35
+end
+arch pstone_2
 x 20
 y 35
 end
@@ -2695,14 +2695,14 @@ arch cave5
 x 21
 y 10
 end
-arch pstone_2
-x 21
-y 11
-end
 arch magic_mouth
 msg
 You smell ozone wafting from the tunnel above.
 endmsg
+x 21
+y 11
+end
+arch pstone_2
 x 21
 y 11
 end
@@ -2782,15 +2782,15 @@ arch pstone_2
 x 21
 y 27
 end
-arch pstone_2
-x 21
-y 28
-end
 arch magic_mouth
 msg
 A biting chill is wafting up from the
 caves in this direction.
 endmsg
+x 21
+y 28
+end
+arch pstone_2
 x 21
 y 28
 end
@@ -2818,10 +2818,6 @@ arch pstone_2
 x 21
 y 33
 end
-arch pstone_2
-x 21
-y 34
-end
 arch invis_exit
 slaying IceHatchery
 hp 5
@@ -2831,12 +2827,16 @@ y 34
 end
 arch pstone_2
 x 21
-y 35
+y 34
 end
 arch invis_exit
 slaying IceHatchery
 hp 4
 sp 5
+x 21
+y 35
+end
+arch pstone_2
 x 21
 y 35
 end
@@ -3027,15 +3027,15 @@ arch generate_dragon
 x 22
 y 27
 end
-arch pstone_2
-x 22
-y 28
-end
 arch magic_mouth
 msg
 A biting chill is wafting up from the
 caves in this direction.
 endmsg
+x 22
+y 28
+end
+arch pstone_2
 x 22
 y 28
 end
@@ -4541,10 +4541,6 @@ arch cave4
 x 34
 y 19
 end
-arch pstone_2
-x 34
-y 20
-end
 arch invis_exit
 slaying FireHatchery
 hp 5
@@ -4552,9 +4548,9 @@ sp 10
 x 34
 y 20
 end
-arch pstone_1
+arch pstone_2
 x 34
-y 21
+y 20
 end
 arch invis_exit
 slaying FireHatchery
@@ -4563,14 +4559,18 @@ sp 11
 x 34
 y 21
 end
-arch pstone_2
+arch pstone_1
 x 34
-y 22
+y 21
 end
 arch invis_exit
 slaying FireHatchery
 hp 5
 sp 12
+x 34
+y 22
+end
+arch pstone_2
 x 34
 y 22
 end
@@ -4618,10 +4618,6 @@ arch cave5
 x 35
 y 20
 end
-arch pstone_2
-x 35
-y 21
-end
 arch invis_exit
 slaying FireHatchery
 hp 5
@@ -4631,12 +4627,16 @@ y 21
 end
 arch pstone_2
 x 35
-y 22
+y 21
 end
 arch invis_exit
 slaying FireHatchery
 hp 5
 sp 12
+x 35
+y 22
+end
+arch pstone_2
 x 35
 y 22
 end
