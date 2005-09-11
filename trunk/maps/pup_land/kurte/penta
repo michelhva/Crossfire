@@ -6,22 +6,19 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr  2 16:40:38 1996
 endmsg
-x 17
-y 17
+width 17
+height 17
 end
 arch grass
-end
-arch pstone_1
 end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
 end
-arch grass
-y 1
-end
 arch pstone_1
+end
+arch grass
 y 1
 end
 arch invis_exit
@@ -30,10 +27,10 @@ hp 29
 sp 24
 y 1
 end
-arch grass
-y 2
-end
 arch pstone_1
+y 1
+end
+arch grass
 y 2
 end
 arch invis_exit
@@ -42,10 +39,10 @@ hp 29
 sp 24
 y 2
 end
-arch grass
-y 3
-end
 arch pstone_1
+y 2
+end
+arch grass
 y 3
 end
 arch invis_exit
@@ -54,10 +51,10 @@ hp 29
 sp 24
 y 3
 end
-arch grass
-y 4
-end
 arch pstone_1
+y 3
+end
+arch grass
 y 4
 end
 arch invis_exit
@@ -66,8 +63,8 @@ hp 29
 sp 24
 y 4
 end
-arch grass
-y 5
+arch pstone_1
+y 4
 end
 arch invis_exit
 slaying ../world
@@ -76,7 +73,7 @@ sp 24
 y 5
 end
 arch grass
-y 6
+y 5
 end
 arch invis_exit
 slaying ../world
@@ -85,7 +82,7 @@ sp 24
 y 6
 end
 arch grass
-y 7
+y 6
 end
 arch invis_exit
 slaying ../world
@@ -94,9 +91,9 @@ sp 24
 y 7
 end
 arch grass
-y 8
+y 7
 end
-arch pstone_1
+arch grass
 y 8
 end
 arch invis_exit
@@ -105,10 +102,10 @@ hp 29
 sp 24
 y 8
 end
-arch grass
-y 9
-end
 arch pstone_1
+y 8
+end
+arch grass
 y 9
 end
 arch invis_exit
@@ -117,8 +114,8 @@ hp 29
 sp 24
 y 9
 end
-arch grass
-y 10
+arch pstone_1
+y 9
 end
 arch invis_exit
 slaying ../world
@@ -127,7 +124,7 @@ sp 24
 y 10
 end
 arch grass
-y 11
+y 10
 end
 arch invis_exit
 slaying ../world
@@ -136,9 +133,9 @@ sp 24
 y 11
 end
 arch grass
-y 12
+y 11
 end
-arch pstone_1
+arch grass
 y 12
 end
 arch invis_exit
@@ -147,10 +144,10 @@ hp 29
 sp 24
 y 12
 end
-arch grass
-y 13
-end
 arch pstone_1
+y 12
+end
+arch grass
 y 13
 end
 arch invis_exit
@@ -159,7 +156,16 @@ hp 29
 sp 24
 y 13
 end
+arch pstone_1
+y 13
+end
 arch grass
+y 14
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 y 14
 end
 arch pstone_1
@@ -169,39 +175,33 @@ arch invis_exit
 slaying ../world
 hp 29
 sp 24
-y 14
-end
-arch grass
 y 15
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 y 15
 end
 arch grass
 y 16
 end
-arch pstone_1
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+y 16
+end
+arch pstone_1
 y 16
 end
 arch grass
 x 1
 end
-arch pstone_1
-x 1
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 1
+end
+arch pstone_1
 x 1
 end
 arch grass
@@ -296,6 +296,13 @@ arch grass
 x 1
 y 16
 end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
+x 1
+y 16
+end
 arch pstone_1
 x 1
 y 16
@@ -304,16 +311,9 @@ arch invis_exit
 slaying ../world
 hp 29
 sp 24
-x 1
-y 16
-end
-arch grass
 x 2
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 x 2
 end
 arch grass
@@ -392,6 +392,13 @@ arch grass
 x 2
 y 16
 end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
+x 2
+y 16
+end
 arch pstone_1
 x 2
 y 16
@@ -400,16 +407,9 @@ arch invis_exit
 slaying ../world
 hp 29
 sp 24
-x 2
-y 16
-end
-arch grass
 x 3
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 x 3
 end
 arch grass
@@ -437,34 +437,34 @@ x 3
 y 5
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 3
 y 6
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 3
 y 7
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 3
 y 8
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 3
 y 9
-no_pass 1
-blocksview 1
 end
 arch evergreen
-x 3
-y 10
 no_pass 1
 blocksview 1
+x 3
+y 10
 end
 arch grass
 x 3
@@ -486,10 +486,6 @@ arch grass
 x 3
 y 15
 end
-arch grass
-x 3
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -498,12 +494,16 @@ x 3
 y 16
 end
 arch grass
+x 3
+y 16
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 x 4
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 x 4
 end
 arch grass
@@ -523,10 +523,10 @@ x 4
 y 3
 end
 arch evergreen
-x 4
-y 4
 no_pass 1
 blocksview 1
+x 4
+y 4
 end
 arch grass
 x 4
@@ -557,10 +557,10 @@ x 4
 y 11
 end
 arch evergreen
-x 4
-y 12
 no_pass 1
 blocksview 1
+x 4
+y 12
 end
 arch grass
 x 4
@@ -578,10 +578,6 @@ arch grass
 x 4
 y 15
 end
-arch grass
-x 4
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -590,15 +586,19 @@ x 4
 y 16
 end
 arch grass
+x 4
+y 16
+end
+arch grass
+x 5
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 x 5
 end
 arch pstone_1
-x 5
-end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
 x 5
 end
 arch grass
@@ -665,27 +665,27 @@ arch grass
 x 5
 y 16
 end
-arch pstone_1
-x 5
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 5
+y 16
+end
+arch pstone_1
 x 5
 y 16
 end
 arch grass
 x 6
 end
-arch pstone_1
-x 6
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 6
+end
+arch pstone_1
 x 6
 end
 arch grass
@@ -697,10 +697,10 @@ x 6
 y 2
 end
 arch evergreen
-x 6
-y 3
 no_pass 1
 blocksview 1
+x 6
+y 3
 end
 arch grass
 x 6
@@ -739,10 +739,10 @@ x 6
 y 12
 end
 arch evergreen
-x 6
-y 13
 no_pass 1
 blocksview 1
+x 6
+y 13
 end
 arch grass
 x 6
@@ -760,27 +760,27 @@ arch grass
 x 6
 y 16
 end
-arch pstone_1
-x 6
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 6
+y 16
+end
+arch pstone_1
 x 6
 y 16
 end
 arch grass
 x 7
 end
-arch pstone_1
-x 7
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 7
+end
+arch pstone_1
 x 7
 end
 arch grass
@@ -796,10 +796,10 @@ x 7
 y 2
 end
 arch evergreen
-x 7
-y 3
 no_pass 1
 blocksview 1
+x 7
+y 3
 end
 arch grass
 x 7
@@ -838,10 +838,10 @@ x 7
 y 12
 end
 arch evergreen
-x 7
-y 13
 no_pass 1
 blocksview 1
+x 7
+y 13
 end
 arch grass
 x 7
@@ -855,10 +855,6 @@ arch pstone_1
 x 7
 y 15
 end
-arch grass
-x 7
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -867,15 +863,19 @@ x 7
 y 16
 end
 arch grass
+x 7
+y 16
+end
+arch grass
+x 8
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 x 8
 end
 arch pstone_1
-x 8
-end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
 x 8
 end
 arch grass
@@ -887,10 +887,10 @@ x 8
 y 2
 end
 arch evergreen
-x 8
-y 3
 no_pass 1
 blocksview 1
+x 8
+y 3
 end
 arch grass
 x 8
@@ -907,10 +907,6 @@ end
 arch grass
 x 8
 y 7
-end
-arch grass
-x 8
-y 8
 end
 arch invis_exit
 slaying house
@@ -921,6 +917,10 @@ y 8
 end
 arch grass
 x 8
+y 8
+end
+arch grass
+x 8
 y 9
 end
 arch grass
@@ -936,10 +936,10 @@ x 8
 y 12
 end
 arch evergreen
-x 8
-y 13
 no_pass 1
 blocksview 1
+x 8
+y 13
 end
 arch grass
 x 8
@@ -953,27 +953,27 @@ arch pstone_1
 x 8
 y 15
 end
-arch pstone_1
-x 8
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 8
+y 16
+end
+arch pstone_1
 x 8
 y 16
 end
 arch grass
 x 9
 end
-arch pstone_1
-x 9
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 9
+end
+arch pstone_1
 x 9
 end
 arch grass
@@ -989,10 +989,10 @@ x 9
 y 2
 end
 arch evergreen
-x 9
-y 3
 no_pass 1
 blocksview 1
+x 9
+y 3
 end
 arch grass
 x 9
@@ -1031,10 +1031,10 @@ x 9
 y 12
 end
 arch evergreen
-x 9
-y 13
 no_pass 1
 blocksview 1
+x 9
+y 13
 end
 arch grass
 x 9
@@ -1048,27 +1048,27 @@ arch pstone_1
 x 9
 y 15
 end
-arch pstone_1
-x 9
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 9
+y 16
+end
+arch pstone_1
 x 9
 y 16
 end
 arch grass
 x 10
 end
-arch pstone_1
-x 10
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 10
+end
+arch pstone_1
 x 10
 end
 arch grass
@@ -1080,10 +1080,10 @@ x 10
 y 2
 end
 arch evergreen
-x 10
-y 3
 no_pass 1
 blocksview 1
+x 10
+y 3
 end
 arch grass
 x 10
@@ -1122,10 +1122,10 @@ x 10
 y 12
 end
 arch evergreen
-x 10
-y 13
 no_pass 1
 blocksview 1
+x 10
+y 13
 end
 arch grass
 x 10
@@ -1143,27 +1143,27 @@ arch grass
 x 10
 y 16
 end
-arch pstone_1
-x 10
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 10
+y 16
+end
+arch pstone_1
 x 10
 y 16
 end
 arch grass
 x 11
 end
-arch pstone_1
-x 11
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 11
+end
+arch pstone_1
 x 11
 end
 arch grass
@@ -1226,10 +1226,6 @@ arch grass
 x 11
 y 15
 end
-arch grass
-x 11
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -1238,15 +1234,19 @@ x 11
 y 16
 end
 arch grass
+x 11
+y 16
+end
+arch grass
+x 12
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 x 12
 end
 arch pstone_1
-x 12
-end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
 x 12
 end
 arch grass
@@ -1270,10 +1270,10 @@ x 12
 y 3
 end
 arch evergreen
-x 12
-y 4
 no_pass 1
 blocksview 1
+x 12
+y 4
 end
 arch grass
 x 12
@@ -1304,10 +1304,10 @@ x 12
 y 11
 end
 arch evergreen
-x 12
-y 12
 no_pass 1
 blocksview 1
+x 12
+y 12
 end
 arch grass
 x 12
@@ -1333,10 +1333,6 @@ arch grass
 x 12
 y 16
 end
-arch pstone_1
-x 12
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -1344,16 +1340,20 @@ sp 24
 x 12
 y 16
 end
-arch grass
-x 13
-end
 arch pstone_1
+x 12
+y 16
+end
+arch grass
 x 13
 end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 13
+end
+arch pstone_1
 x 13
 end
 arch grass
@@ -1381,34 +1381,34 @@ x 13
 y 5
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 13
 y 6
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 13
 y 7
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 13
 y 8
-no_pass 1
-blocksview 1
 end
 arch evergreen
+no_pass 1
+blocksview 1
 x 13
 y 9
-no_pass 1
-blocksview 1
 end
 arch evergreen
-x 13
-y 10
 no_pass 1
 blocksview 1
+x 13
+y 10
 end
 arch grass
 x 13
@@ -1438,27 +1438,27 @@ arch pstone_1
 x 13
 y 15
 end
-arch pstone_1
-x 13
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 13
+y 16
+end
+arch pstone_1
 x 13
 y 16
 end
 arch grass
 x 14
 end
-arch pstone_1
-x 14
-end
 arch invis_exit
 slaying ../world
 hp 29
 sp 24
+x 14
+end
+arch pstone_1
 x 14
 end
 arch grass
@@ -1545,6 +1545,13 @@ arch pstone_1
 x 14
 y 15
 end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
+x 14
+y 16
+end
 arch pstone_1
 x 14
 y 16
@@ -1553,16 +1560,9 @@ arch invis_exit
 slaying ../world
 hp 29
 sp 24
-x 14
-y 16
-end
-arch grass
 x 15
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 x 15
 end
 arch grass
@@ -1673,10 +1673,6 @@ arch pstone_1
 x 15
 y 15
 end
-arch pstone_1
-x 15
-y 16
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -1685,7 +1681,8 @@ x 15
 y 16
 end
 arch pstone_1
-x 16
+x 15
+y 16
 end
 arch invis_exit
 slaying ../world
@@ -1695,7 +1692,6 @@ x 16
 end
 arch pstone_1
 x 16
-y 1
 end
 arch invis_exit
 slaying ../world
@@ -1706,7 +1702,7 @@ y 1
 end
 arch pstone_1
 x 16
-y 2
+y 1
 end
 arch invis_exit
 slaying ../world
@@ -1714,6 +1710,17 @@ hp 29
 sp 24
 x 16
 y 2
+end
+arch pstone_1
+x 16
+y 2
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
+x 16
+y 3
 end
 arch grass
 x 16
@@ -1724,7 +1731,7 @@ slaying ../world
 hp 29
 sp 24
 x 16
-y 3
+y 4
 end
 arch grass
 x 16
@@ -1735,7 +1742,7 @@ slaying ../world
 hp 29
 sp 24
 x 16
-y 4
+y 5
 end
 arch grass
 x 16
@@ -1746,16 +1753,9 @@ slaying ../world
 hp 29
 sp 24
 x 16
-y 5
-end
-arch grass
-x 16
 y 6
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch grass
 x 16
 y 6
 end
@@ -1763,10 +1763,6 @@ arch grass
 x 16
 y 7
 end
-arch pstone_1
-x 16
-y 7
-end
 arch invis_exit
 slaying ../world
 hp 29
@@ -1774,11 +1770,11 @@ sp 24
 x 16
 y 7
 end
-arch grass
-x 16
-y 8
-end
 arch pstone_1
+x 16
+y 7
+end
+arch grass
 x 16
 y 8
 end
@@ -1789,11 +1785,11 @@ sp 24
 x 16
 y 8
 end
-arch grass
-x 16
-y 9
-end
 arch pstone_1
+x 16
+y 8
+end
+arch grass
 x 16
 y 9
 end
@@ -1804,11 +1800,11 @@ sp 24
 x 16
 y 9
 end
-arch grass
-x 16
-y 10
-end
 arch pstone_1
+x 16
+y 9
+end
+arch grass
 x 16
 y 10
 end
@@ -1821,7 +1817,7 @@ y 10
 end
 arch pstone_1
 x 16
-y 11
+y 10
 end
 arch invis_exit
 slaying ../world
@@ -1832,7 +1828,7 @@ y 11
 end
 arch pstone_1
 x 16
-y 12
+y 11
 end
 arch invis_exit
 slaying ../world
@@ -1843,7 +1839,7 @@ y 12
 end
 arch pstone_1
 x 16
-y 13
+y 12
 end
 arch invis_exit
 slaying ../world
@@ -1854,7 +1850,7 @@ y 13
 end
 arch pstone_1
 x 16
-y 14
+y 13
 end
 arch invis_exit
 slaying ../world
@@ -1865,7 +1861,7 @@ y 14
 end
 arch pstone_1
 x 16
-y 15
+y 14
 end
 arch invis_exit
 slaying ../world
@@ -1875,18 +1871,22 @@ x 16
 y 15
 end
 arch pstone_1
+x 16
+y 15
+end
+arch invis_exit
+slaying ../world
+hp 29
+sp 24
 x 16
 y 16
 end
-arch invis_exit
-slaying ../world
-hp 29
-sp 24
+arch pstone_1
 x 16
 y 16
 end
 arch pentagram_111
+type 0
 x 7
 y 7
-type 0
 end

@@ -40,13 +40,13 @@ end
 arch cave4
 y 5
 end
-arch large_stones
-y 6
-end
 arch invis_exit
 slaying cave1
 hp 19
 sp 3
+y 6
+end
+arch large_stones
 y 6
 end
 arch large_stones

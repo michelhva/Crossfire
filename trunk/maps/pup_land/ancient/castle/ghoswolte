@@ -1497,10 +1497,6 @@ arch flagstone
 x 11
 y 20
 end
-arch flagstone
-x 11
-y 21
-end
 arch magic_mouth
 msg
 "Please kill me!!"
@@ -1511,16 +1507,20 @@ y 21
 end
 arch flagstone
 x 11
-y 22
+y 21
 end
 arch flagstone
 x 11
-y 23
+y 22
 end
 arch magic_mouth
 msg
 You hear a groan...
 endmsg
+x 11
+y 23
+end
+arch flagstone
 x 11
 y 23
 end

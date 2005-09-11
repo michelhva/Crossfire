@@ -111,14 +111,14 @@ arch dun16
 x 1
 y 6
 end
-arch dungeon_floor
-x 1
-y 7
-end
 arch invis_exit
 slaying e_hall
 hp 14
 sp 2
+x 1
+y 7
+end
+arch dungeon_floor
 x 1
 y 7
 end

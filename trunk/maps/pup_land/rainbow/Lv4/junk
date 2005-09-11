@@ -72,13 +72,13 @@ end
 arch blocked
 y 12
 end
-arch pstone_1
-x 1
-end
 arch invis_exit
 slaying path7
 hp 13
 sp 19
+x 1
+end
+arch pstone_1
 x 1
 end
 arch pstone_1
@@ -419,9 +419,6 @@ arch rough_wall_2_2_1
 x 5
 y 12
 end
-arch pstone_1
-x 6
-end
 arch invis_exit
 slaying path7
 hp 18
@@ -430,6 +427,9 @@ x 6
 end
 arch pstone_1
 x 6
+end
+arch pstone_1
+x 6
 y 1
 end
 arch pstone_1
@@ -773,14 +773,14 @@ end
 arch blocked
 x 10
 y 12
-end
-arch pstone_1
-x 11
 end
 arch invis_exit
 slaying mf
 hp 2
 sp 12
+x 11
+end
+arch pstone_1
 x 11
 end
 arch pstone_1

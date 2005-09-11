@@ -7,12 +7,12 @@ Email: gnu@foo.bar
 Date: Thu Jun 27 09:04:41 1996
 endmsg
 end
-arch permanent_lava
-end
 arch invis_exit
 slaying e_hall
 hp 19
 sp 19
+end
+arch permanent_lava
 end
 arch permanent_lava
 y 1

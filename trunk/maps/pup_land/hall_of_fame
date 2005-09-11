@@ -804,14 +804,14 @@ arch flagstone
 x 5
 y 26
 end
-arch flagstone
-x 5
-y 27
-end
 arch invis_exit
 slaying terminal
 hp 10
 sp 8
+x 5
+y 27
+end
+arch flagstone
 x 5
 y 27
 end
@@ -958,14 +958,14 @@ arch flagstone
 x 6
 y 26
 end
-arch flagstone
-x 6
-y 27
-end
 arch invis_exit
 slaying terminal
 hp 10
 sp 8
+x 6
+y 27
+end
+arch flagstone
 x 6
 y 27
 end
@@ -1087,14 +1087,14 @@ arch flagstone
 x 7
 y 26
 end
-arch flagstone
-x 7
-y 27
-end
 arch invis_exit
 slaying terminal
 hp 10
 sp 8
+x 7
+y 27
+end
+arch flagstone
 x 7
 y 27
 end

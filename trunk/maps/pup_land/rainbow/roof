@@ -376,17 +376,17 @@ x 5
 y 3
 blocksview 0
 end
-arch jungle_1
-x 5
-y 4
-blocksview 0
-end
 arch teleporter
 hp 12
 sp 11
 x 5
 y 4
 invisible 1
+end
+arch jungle_1
+x 5
+y 4
+blocksview 0
 end
 arch flagstone
 x 5

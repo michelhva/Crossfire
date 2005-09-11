@@ -4826,15 +4826,15 @@ arch dungeon_magic
 x 26
 y 18
 end
-arch sea
-no_pass 0
-x 26
-y 18
-end
 arch invis_exit
 slaying l_hB
 hp 1
 sp 3
+x 26
+y 18
+end
+arch sea
+no_pass 0
 x 26
 y 18
 end

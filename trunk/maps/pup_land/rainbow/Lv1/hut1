@@ -255,14 +255,14 @@ arch dungeon_magic
 x 3
 y 6
 end
-arch woodfloor
-x 3
-y 6
-end
 arch invis_exit
 slaying prison
 hp 6
 sp 2
+x 3
+y 6
+end
+arch woodfloor
 x 3
 y 6
 end

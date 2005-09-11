@@ -23,9 +23,6 @@ end
 arch wall_1_2_ruin
 y 2
 end
-arch pstone_1
-y 3
-end
 arch invis_exit
 slaying village
 hp 5
@@ -33,12 +30,15 @@ sp 6
 y 3
 end
 arch pstone_1
+y 3
+end
+arch invis_exit
+slaying village
+hp 5
+sp 6
 y 4
 end
-arch invis_exit
-slaying village
-hp 5
-sp 6
+arch pstone_1
 y 4
 end
 arch pstone_1
@@ -71,6 +71,12 @@ end
 arch wall_1_2_ruin
 y 9
 end
+arch invis_exit
+slaying village
+hp 5
+sp 6
+y 10
+end
 arch pstone_1
 y 10
 end
@@ -78,15 +84,9 @@ arch invis_exit
 slaying village
 hp 5
 sp 6
-y 10
-end
-arch woodfloor
 y 11
 end
-arch invis_exit
-slaying village
-hp 5
-sp 6
+arch woodfloor
 y 11
 end
 arch woodfloor
@@ -107,13 +107,13 @@ end
 arch wall_1_2_ruin
 y 14
 end
-arch woodfloor
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+y 15
+end
+arch woodfloor
 y 15
 end
 arch pstone_1
@@ -197,14 +197,14 @@ hp 0
 x 1
 y 14
 end
-arch woodfloor
-x 1
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 1
+y 15
+end
+arch woodfloor
 x 1
 y 15
 end
@@ -285,14 +285,14 @@ hp 0
 x 2
 y 14
 end
-arch woodfloor
-x 2
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 2
+y 15
+end
+arch woodfloor
 x 2
 y 15
 end
@@ -373,14 +373,14 @@ hp 0
 x 3
 y 14
 end
-arch woodfloor
-x 3
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 3
+y 15
+end
+arch woodfloor
 x 3
 y 15
 end
@@ -473,13 +473,13 @@ arch wall_1_4_ruin
 x 4
 y 15
 end
-arch pstone_1
-x 5
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 5
+end
+arch pstone_1
 x 5
 end
 arch pstone_1
@@ -565,13 +565,13 @@ arch wall_2_1_2
 x 5
 y 15
 end
-arch pstone_1
+arch invis_exit
+slaying village
+hp 5
+sp 6
 x 6
 end
-arch invis_exit
-slaying village
-hp 5
-sp 6
+arch pstone_1
 x 6
 end
 arch pstone_1
@@ -765,14 +765,14 @@ arch button_lever
 x 7
 y 14
 end
-arch woodfloor
-x 7
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 7
+y 15
+end
+arch woodfloor
 x 7
 y 15
 end
@@ -896,14 +896,14 @@ arch wall_1_2_ruin
 x 8
 y 14
 end
-arch woodfloor
-x 8
-y 15
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 8
+y 15
+end
+arch woodfloor
 x 8
 y 15
 end
@@ -981,13 +981,13 @@ arch wall_1_4_ruin
 x 9
 y 15
 end
-arch pstone_1
-x 10
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 10
+end
+arch pstone_1
 x 10
 end
 arch pstone_1
@@ -1412,14 +1412,14 @@ arch wall_1_2_ruin
 x 15
 y 3
 end
-arch pstone_1
-x 15
-y 4
-end
 arch invis_exit
 slaying village
 hp 5
 sp 6
+x 15
+y 4
+end
+arch pstone_1
 x 15
 y 4
 end
@@ -1463,6 +1463,13 @@ arch wall_1_2_ruin
 x 15
 y 9
 end
+arch invis_exit
+slaying village
+hp 5
+sp 6
+x 15
+y 10
+end
 arch pstone_1
 x 15
 y 10
@@ -1472,16 +1479,9 @@ slaying village
 hp 5
 sp 6
 x 15
-y 10
-end
-arch woodfloor
-x 15
 y 11
 end
-arch invis_exit
-slaying village
-hp 5
-sp 6
+arch woodfloor
 x 15
 y 11
 end

@@ -738,14 +738,14 @@ arch pstone_3
 x 7
 y 14
 end
-arch pstone_2
-x 7
-y 15
-end
 arch invis_exit
 slaying ruin
 hp 4
 sp 5
+x 7
+y 15
+end
+arch pstone_2
 x 7
 y 15
 end
@@ -825,14 +825,14 @@ arch pstone_3
 x 8
 y 14
 end
-arch pstone_2
-x 8
-y 15
-end
 arch invis_exit
 slaying ruin
 hp 5
 sp 5
+x 8
+y 15
+end
+arch pstone_2
 x 8
 y 15
 end

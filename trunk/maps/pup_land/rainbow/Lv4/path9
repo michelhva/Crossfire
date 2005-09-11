@@ -28,13 +28,13 @@ end
 arch rough_wall_1_4
 y 5
 end
-arch pstone_1
-y 6
-end
 arch invis_exit
 slaying e-hall
 hp 15
 sp 2
+y 6
+end
+arch pstone_1
 y 6
 end
 arch pstone_1
@@ -982,13 +982,13 @@ arch pstone_1
 x 11
 y 13
 end
-arch pstone_1
-x 11
-y 14
-end
 arch invis_exit
 slaying statue
 hp 11
+x 11
+y 14
+end
+arch pstone_1
 x 11
 y 14
 end

@@ -550,13 +550,13 @@ arch rough_wall_1_3
 x 10
 y 3
 end
-arch pstone_1
-x 10
-y 4
-end
 arch invis_exit
 slaying e-hall
 sp 8
+x 10
+y 4
+end
+arch pstone_1
 x 10
 y 4
 end

@@ -617,14 +617,14 @@ arch medium_stones
 x 3
 y 25
 end
-arch medium_stones
-x 3
-y 26
-end
 arch invis_exit
 slaying ../s_f/cave2
 hp 15
 sp 3
+x 3
+y 26
+end
+arch medium_stones
 x 3
 y 26
 end
@@ -2390,13 +2390,13 @@ arch large_stones
 x 14
 y 26
 end
-arch medium_stones
-x 15
-end
 arch invis_exit
 slaying ../rainbow/islands
 hp 28
 sp 24
+x 15
+end
+arch medium_stones
 x 15
 end
 arch medium_stones

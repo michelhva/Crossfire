@@ -1067,13 +1067,13 @@ arch pstone_1
 x 8
 y 18
 end
-arch pstone_1
-x 8
-y 19
-end
 arch invis_exit
 slaying junk
 hp 6
+x 8
+y 19
+end
+arch pstone_1
 x 8
 y 19
 end
@@ -1237,13 +1237,13 @@ end
 arch rough_wall_1_3
 x 10
 end
-arch pstone_1
-x 10
-y 1
-end
 arch invis_exit
 slaying e-hall
 sp 1
+x 10
+y 1
+end
+arch pstone_1
 x 10
 y 1
 end
@@ -1560,13 +1560,13 @@ arch rough_wall_1_2
 x 12
 y 19
 end
-arch pstone_1
-x 13
-end
 arch invis_exit
 slaying alter
 hp 1
 sp 15
+x 13
+end
+arch pstone_1
 x 13
 end
 arch pstone_1
@@ -1641,13 +1641,13 @@ arch pstone_1
 x 13
 y 18
 end
-arch pstone_1
-x 13
-y 19
-end
 arch invis_exit
 slaying junk
 hp 1
+x 13
+y 19
+end
+arch pstone_1
 x 13
 y 19
 end
@@ -2217,13 +2217,13 @@ arch pstone_1
 x 18
 y 18
 end
-arch pstone_1
-x 18
-y 19
-end
 arch invis_exit
 slaying junk
 hp 6
+x 18
+y 19
+end
+arch pstone_1
 x 18
 y 19
 end
@@ -2387,13 +2387,13 @@ end
 arch rough_wall_1_3
 x 20
 end
-arch pstone_1
-x 20
-y 1
-end
 arch invis_exit
 slaying e-hall
 sp 1
+x 20
+y 1
+end
+arch pstone_1
 x 20
 y 1
 end

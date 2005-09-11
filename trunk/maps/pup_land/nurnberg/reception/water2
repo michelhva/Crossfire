@@ -692,14 +692,14 @@ arch swall_2_2_4
 x 5
 y 6
 end
-arch dungeon_floor
-x 5
-y 7
-end
 arch magic_mouth
 msg
 Drop frozen water.
 endmsg
+x 5
+y 7
+end
+arch dungeon_floor
 x 5
 y 7
 end

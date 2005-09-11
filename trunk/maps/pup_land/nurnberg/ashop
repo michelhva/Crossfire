@@ -10,12 +10,12 @@ x 23
 y 23
 level 7
 end
-arch cobblestones
-end
 arch invis_exit
 slaying city
 hp 14
 sp 23
+end
+arch cobblestones
 end
 arch cobblestones
 y 1
@@ -41,9 +41,6 @@ end
 arch cobblestones
 y 8
 end
-arch cobblestones
-y 9
-end
 arch invis_exit
 slaying city
 hp 14
@@ -51,12 +48,15 @@ sp 25
 y 9
 end
 arch cobblestones
+y 9
+end
+arch invis_exit
+slaying city
+hp 14
+sp 25
 y 10
 end
-arch invis_exit
-slaying city
-hp 14
-sp 25
+arch cobblestones
 y 10
 end
 arch cobblestones
@@ -92,13 +92,13 @@ end
 arch cobblestones
 y 21
 end
-arch cobblestones
-y 22
-end
 arch invis_exit
 slaying city
 hp 14
 sp 26
+y 22
+end
+arch cobblestones
 y 22
 end
 arch grass
@@ -2554,14 +2554,14 @@ arch grass
 x 22
 y 21
 end
-arch cobblestones
-x 22
-y 22
-end
 arch invis_exit
 slaying city
 hp 17
 sp 26
+x 22
+y 22
+end
+arch cobblestones
 x 22
 y 22
 end

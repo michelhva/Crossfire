@@ -414,14 +414,14 @@ y 18
 speed 0.500000
 connected 666
 end
-arch flagstone
-x 2
-y 19
-end
 arch magic_mouth
 msg
 You've been unlucky, but..
 endmsg
+x 2
+y 19
+end
+arch flagstone
 x 2
 y 19
 end
@@ -440,14 +440,14 @@ arch flagstone
 x 2
 y 20
 end
-arch flagstone
-x 2
-y 21
-end
 arch magic_mouth
 msg
 Money can settle it!
 endmsg
+x 2
+y 21
+end
+arch flagstone
 x 2
 y 21
 end

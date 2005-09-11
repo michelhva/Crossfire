@@ -11,13 +11,13 @@ arch pstone_1
 end
 arch rough_wall_1_4
 end
-arch pstone_1
-y 1
-end
 arch invis_exit
 slaying path7
 hp 10
 sp 1
+y 1
+end
+arch pstone_1
 y 1
 end
 arch pstone_1
@@ -44,13 +44,13 @@ end
 arch rough_wall_1_4
 y 7
 end
-arch pstone_1
-y 8
-end
 arch invis_exit
 slaying path4
 hp 10
 sp 4
+y 8
+end
+arch pstone_1
 y 8
 end
 arch pstone_1
@@ -630,13 +630,13 @@ arch blocked
 x 6
 y 15
 end
-arch pstone_1
-x 7
-end
 arch invis_exit
 slaying path8
 hp 5
 sp 15
+x 7
+end
+arch pstone_1
 x 7
 end
 arch pstone_1
@@ -1398,13 +1398,13 @@ arch pstone_1
 x 14
 y 14
 end
-arch pstone_1
-x 14
-y 15
-end
 arch invis_exit
 slaying statue
 hp 1
+x 14
+y 15
+end
+arch pstone_1
 x 14
 y 15
 end
@@ -1419,13 +1419,13 @@ arch rough_wall_1_3
 x 15
 y 1
 end
-arch pstone_1
-x 15
-y 2
-end
 arch invis_exit
 slaying path9
 sp 6
+x 15
+y 2
+end
+arch pstone_1
 x 15
 y 2
 end

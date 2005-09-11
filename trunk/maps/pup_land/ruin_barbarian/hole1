@@ -1064,10 +1064,6 @@ end
 arch dun2
 x 5
 end
-arch flagstone
-x 5
-y 1
-end
 arch magic_mouth
 msg
 Something is written on the door. But
@@ -1084,6 +1080,10 @@ of the gate is in the state of decay:
  bo..le .. w.ne
  p.t..n .f a.th.r..lity"
 endmsg
+x 5
+y 1
+end
+arch flagstone
 x 5
 y 1
 end

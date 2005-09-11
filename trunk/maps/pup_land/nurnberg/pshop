@@ -3118,10 +3118,6 @@ end
 arch cobblestones2
 x 24
 end
-arch cobblestones2
-x 24
-y 1
-end
 arch invis_exit
 slaying city
 hp 12
@@ -3130,13 +3126,17 @@ x 24
 y 1
 end
 arch cobblestones2
+x 24
+y 1
+end
+arch invis_exit
+slaying city
+hp 12
+sp 15
 x 24
 y 2
 end
-arch invis_exit
-slaying city
-hp 12
-sp 15
+arch cobblestones2
 x 24
 y 2
 end
@@ -3224,14 +3224,14 @@ arch cobblestones2
 x 24
 y 23
 end
-arch cobblestones2
-x 24
-y 24
-end
 arch invis_exit
 slaying city
 hp 12
 sp 17
+x 24
+y 24
+end
+arch cobblestones2
 x 24
 y 24
 end

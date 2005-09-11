@@ -55,12 +55,12 @@ end
 arch cave3
 y 7
 end
-arch pstone_4
-y 8
-end
 arch invis_exit
 slaying hidden
 hp 8
+y 8
+end
+arch pstone_4
 y 8
 end
 arch cave17

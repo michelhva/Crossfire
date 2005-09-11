@@ -561,10 +561,6 @@ arch swall_1_1
 x 4
 y 1
 end
-arch flagstone
-x 4
-y 2
-end
 arch magic_mouth
 msg
 You hear..
@@ -572,6 +568,10 @@ You hear..
   abilities. But they have only poor
   Str..."
 endmsg
+x 4
+y 2
+end
+arch flagstone
 x 4
 y 2
 end
@@ -920,16 +920,16 @@ arch swall_2_1_1
 x 6
 y 9
 end
-arch flagstone
-x 6
-y 10
-end
 arch magic_mouth
 msg
 You hear...
  "Hyper goblins are very strong,
   but they are too slow..."
 endmsg
+x 6
+y 10
+end
+arch flagstone
 x 6
 y 10
 end
@@ -961,16 +961,16 @@ arch swall_1_1
 x 6
 y 13
 end
-arch flagstone
-x 6
-y 14
-end
 arch magic_mouth
 msg
 You hear..
  "Hyper kobolds move very quickly,
   but they are weak..."
 endmsg
+x 6
+y 14
+end
+arch flagstone
 x 6
 y 14
 end
@@ -1925,16 +1925,16 @@ arch swall_1_1
 x 14
 y 1
 end
-arch flagstone
-x 14
-y 2
-end
 arch magic_mouth
 msg
 You hear ..
  "Hyper beholders have high magical
   potential. But their Con is poor..."
 endmsg
+x 14
+y 2
+end
+arch flagstone
 x 14
 y 2
 end
@@ -1998,10 +1998,6 @@ arch swall_2_1_1
 x 14
 y 9
 end
-arch flagstone
-x 14
-y 10
-end
 arch magic_mouth
 msg
 You hear..
@@ -2009,6 +2005,10 @@ You hear..
   ability. But they are weak in
   magic..." 
 endmsg
+x 14
+y 10
+end
+arch flagstone
 x 14
 y 10
 end

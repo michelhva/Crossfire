@@ -104,13 +104,13 @@ arch pstone_4
 x 1
 y 8
 end
-arch pstone_4
-x 1
-y 9
-end
 arch invis_exit
 slaying hidden
 hp 1
+x 1
+y 9
+end
+arch pstone_4
 x 1
 y 9
 end
@@ -320,13 +320,13 @@ arch cave3
 x 4
 y 9
 end
-arch pstone_4
-x 5
-end
 arch invis_exit
 slaying sec-p
 hp 5
 sp 9
+x 5
+end
+arch pstone_4
 x 5
 end
 arch pstone_4
@@ -375,13 +375,13 @@ arch pstone_4
 x 5
 y 8
 end
-arch pstone_4
-x 5
-y 9
-end
 arch invis_exit
 slaying sec-p
 hp 5
+x 5
+y 9
+end
+arch pstone_4
 x 5
 y 9
 end

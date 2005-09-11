@@ -69,13 +69,13 @@ end
 arch blocked
 y 10
 end
-arch pstone_1
-x 1
-end
 arch invis_exit
 slaying statue
 hp 5
 sp 15
+x 1
+end
+arch pstone_1
 x 1
 end
 arch pstone_1
@@ -634,13 +634,13 @@ arch rough_wall_1_3
 x 10
 y 8
 end
-arch pstone_1
-x 10
-y 9
-end
 arch invis_exit
 slaying key
 sp 14
+x 10
+y 9
+end
+arch pstone_1
 x 10
 y 9
 end

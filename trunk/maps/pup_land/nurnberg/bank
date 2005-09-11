@@ -2813,10 +2813,6 @@ arch grass
 x 24
 y 6
 end
-arch cobblestones
-x 24
-y 7
-end
 arch invis_exit
 slaying city
 hp 25
@@ -2825,13 +2821,17 @@ x 24
 y 7
 end
 arch cobblestones
+x 24
+y 7
+end
+arch invis_exit
+slaying city
+hp 25
+sp 22
 x 24
 y 8
 end
-arch invis_exit
-slaying city
-hp 25
-sp 22
+arch cobblestones
 x 24
 y 8
 end

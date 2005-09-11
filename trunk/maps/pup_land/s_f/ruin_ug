@@ -1157,226 +1157,217 @@ arch flagstone
 x 10
 y 5
 end
-arch pstone_1
-x 10
-y 6
-end
-arch dungeon_floor
-x 10
-y 6
-end
 arch altar
 slaying uw_sword
 food 1
 x 10
 y 6
 protected 4
-invisible 1
 connected 4
 end
 arch pstone_1
 x 10
-y 7
-end
-arch flagstone
-x 10
-y 7
-end
-arch pstone_1
-x 10
-y 8
-end
-arch pstone_1
-x 10
-y 9
-end
-arch flagstone
-x 10
-y 9
-end
-arch pstone_1
-x 10
-y 10
-end
-arch flagstone
-x 10
-y 10
-end
-arch pstone_1
-x 10
-y 11
-end
-arch pstone_1
-x 10
-y 12
-end
-arch pstone_1
-x 10
-y 13
-end
-arch pstone_2
-x 10
-y 13
-end
-arch pstone_1
-x 10
-y 14
-end
-arch pstone_2
-x 10
-y 15
-end
-arch rough_wall_2_1_2
-x 10
-y 15
-end
-arch pstone_3
-x 11
-end
-arch rough_wall_2_1_2
-x 11
-end
-arch pstone_1
-x 11
-y 1
-end
-arch pstone_3
-x 11
-y 1
-end
-arch pstone_1
-x 11
-y 2
-end
-arch pstone_1
-x 11
-y 3
-end
-arch flagstone
-x 11
-y 3
-end
-arch pstone_1
-x 11
-y 4
-end
-arch flagstone
-x 11
-y 4
-end
-arch pstone_1
-x 11
-y 5
-end
-arch flagstone
-x 11
-y 5
-end
-arch pstone_1
-x 11
 y 6
-end
-arch flagstone
-x 11
-y 6
-end
-arch pstone_1
-x 11
-y 7
-end
-arch flagstone
-x 11
-y 7
-end
-arch pstone_1
-x 11
-y 8
-end
-arch flagstone
-x 11
-y 8
-end
-arch pstone_1
-x 11
-y 9
-end
-arch flagstone
-x 11
-y 9
-end
-arch pstone_1
-x 11
-y 10
-end
-arch pstone_1
-x 11
-y 11
-end
-arch pstone_1
-x 11
-y 12
-end
-arch pstone_1
-x 11
-y 13
-end
-arch pstone_1
-x 11
-y 14
-end
-arch pstone_2
-x 11
-y 14
-end
-arch pstone_2
-x 11
-y 15
-end
-arch rough_wall_2_1_2
-x 11
-y 15
-end
-arch pstone_3
-x 12
-end
-arch rough_wall_2_1_2
-x 12
-end
-arch pstone_1
-x 12
-y 1
-end
-arch pstone_3
-x 12
-y 1
-end
-arch pstone_1
-x 12
-y 2
-end
-arch pstone_2
-x 12
-y 2
-end
-arch pstone_1
-x 12
-y 3
-end
-arch pstone_2
-x 12
-y 3
-end
-arch flagstone
-x 12
-y 3
-end
-arch pstone_1
-x 12
-y 4
 end
 arch dungeon_floor
-x 12
+x 10
+y 6
+end
+arch pstone_1
+x 10
+y 7
+end
+arch flagstone
+x 10
+y 7
+end
+arch pstone_1
+x 10
+y 8
+end
+arch pstone_1
+x 10
+y 9
+end
+arch flagstone
+x 10
+y 9
+end
+arch pstone_1
+x 10
+y 10
+end
+arch flagstone
+x 10
+y 10
+end
+arch pstone_1
+x 10
+y 11
+end
+arch pstone_1
+x 10
+y 12
+end
+arch pstone_1
+x 10
+y 13
+end
+arch pstone_2
+x 10
+y 13
+end
+arch pstone_1
+x 10
+y 14
+end
+arch pstone_2
+x 10
+y 15
+end
+arch rough_wall_2_1_2
+x 10
+y 15
+end
+arch pstone_3
+x 11
+end
+arch rough_wall_2_1_2
+x 11
+end
+arch pstone_1
+x 11
+y 1
+end
+arch pstone_3
+x 11
+y 1
+end
+arch pstone_1
+x 11
+y 2
+end
+arch pstone_1
+x 11
+y 3
+end
+arch flagstone
+x 11
+y 3
+end
+arch pstone_1
+x 11
 y 4
+end
+arch flagstone
+x 11
+y 4
+end
+arch pstone_1
+x 11
+y 5
+end
+arch flagstone
+x 11
+y 5
+end
+arch pstone_1
+x 11
+y 6
+end
+arch flagstone
+x 11
+y 6
+end
+arch pstone_1
+x 11
+y 7
+end
+arch flagstone
+x 11
+y 7
+end
+arch pstone_1
+x 11
+y 8
+end
+arch flagstone
+x 11
+y 8
+end
+arch pstone_1
+x 11
+y 9
+end
+arch flagstone
+x 11
+y 9
+end
+arch pstone_1
+x 11
+y 10
+end
+arch pstone_1
+x 11
+y 11
+end
+arch pstone_1
+x 11
+y 12
+end
+arch pstone_1
+x 11
+y 13
+end
+arch pstone_1
+x 11
+y 14
+end
+arch pstone_2
+x 11
+y 14
+end
+arch pstone_2
+x 11
+y 15
+end
+arch rough_wall_2_1_2
+x 11
+y 15
+end
+arch pstone_3
+x 12
+end
+arch rough_wall_2_1_2
+x 12
+end
+arch pstone_1
+x 12
+y 1
+end
+arch pstone_3
+x 12
+y 1
+end
+arch pstone_1
+x 12
+y 2
+end
+arch pstone_2
+x 12
+y 2
+end
+arch pstone_1
+x 12
+y 3
+end
+arch pstone_2
+x 12
+y 3
+end
+arch flagstone
+x 12
+y 3
 end
 arch altar
 slaying crown
@@ -1384,8 +1375,15 @@ food 1
 x 12
 y 4
 protected 3
-invisible 1
 connected 3
+end
+arch pstone_1
+x 12
+y 4
+end
+arch dungeon_floor
+x 12
+y 4
 end
 arch pstone_1
 x 12
@@ -1394,14 +1392,6 @@ end
 arch flagstone
 x 12
 y 5
-end
-arch pstone_1
-x 12
-y 6
-end
-arch dungeon_floor
-x 12
-y 6
 end
 arch altar
 slaying mithril_chainmail
@@ -1409,8 +1399,15 @@ food 1
 x 12
 y 6
 protected 5
-invisible 1
 connected 5
+end
+arch pstone_1
+x 12
+y 6
+end
+arch dungeon_floor
+x 12
+y 6
 end
 arch pstone_1
 x 12
@@ -1420,6 +1417,14 @@ arch flagstone
 x 12
 y 7
 end
+arch altar
+slaying cloak
+food 1
+x 12
+y 8
+protected 7
+connected 7
+end
 arch pstone_1
 x 12
 y 8
@@ -1427,15 +1432,6 @@ end
 arch dungeon_floor
 x 12
 y 8
-end
-arch altar
-slaying cloak
-food 1
-x 12
-y 8
-protected 7
-invisible 1
-connected 7
 end
 arch pstone_1
 x 12
@@ -1658,6 +1654,14 @@ arch flagstone
 x 14
 y 5
 end
+arch altar
+slaying uw_shield
+food 1
+x 14
+y 6
+protected 6
+connected 6
+end
 arch pstone_1
 x 14
 y 6
@@ -1665,15 +1669,6 @@ end
 arch dungeon_floor
 x 14
 y 6
-end
-arch altar
-slaying uw_shield
-food 1
-x 14
-y 6
-protected 6
-invisible 1
-connected 6
 end
 arch pstone_1
 x 14
@@ -2097,17 +2092,17 @@ arch rough_wall_2_1_2
 x 18
 y 9
 end
+arch invis_exit
+slaying cave1
+sp 7
+x 18
+y 10
+end
 arch pstone_1
 x 18
 y 10
 end
 arch dungeon_magic
-x 18
-y 10
-end
-arch invis_exit
-slaying cave1
-sp 7
 x 18
 y 10
 end
