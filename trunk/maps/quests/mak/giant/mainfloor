@@ -1582,15 +1582,15 @@ arch cobblestones
 x 10
 y 20
 end
-arch cobblestones
-x 10
-y 21
-end
 arch magic_mouth
 msg
 You can here loud snoring coming from
 behind this door.
 endmsg
+x 10
+y 21
+end
+arch cobblestones
 x 10
 y 21
 end

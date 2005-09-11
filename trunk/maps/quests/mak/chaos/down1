@@ -2191,15 +2191,15 @@ arch dungeon_floor
 x 11
 y 21
 end
-arch dungeon_floor
-x 11
-y 22
-end
 arch magic_mouth
 msg
 These kobolds seem to have gone insane
 by the madness of this place
 endmsg
+x 11
+y 22
+end
+arch dungeon_floor
 x 11
 y 22
 end

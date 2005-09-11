@@ -635,15 +635,15 @@ arch dungeon_magic
 x 2
 y 11
 end
-arch marble
-x 2
-y 11
-end
 arch magic_mouth
 msg
 Pull the lever to start the trial
 or say 'help' to chicken out
 endmsg
+x 2
+y 11
+end
+arch marble
 x 2
 y 11
 end
@@ -5783,14 +5783,14 @@ connected 107
 x 12
 y 3
 end
-arch marble
-x 12
-y 3
-end
 arch magic_mouth
 msg
 Drop the ancient bracers.
 endmsg
+x 12
+y 3
+end
+arch marble
 x 12
 y 3
 end
@@ -6235,14 +6235,14 @@ connected 106
 x 13
 y 3
 end
-arch marble
-x 13
-y 3
-end
 arch magic_mouth
 msg
 Drop the soft shoes here.
 endmsg
+x 13
+y 3
+end
+arch marble
 x 13
 y 3
 end
@@ -6746,14 +6746,14 @@ connected 105
 x 14
 y 3
 end
-arch marble
-x 14
-y 3
-end
 arch magic_mouth
 msg
 Drop the silk gloves here.
 endmsg
+x 14
+y 3
+end
+arch marble
 x 14
 y 3
 end
@@ -7210,14 +7210,14 @@ connected 104
 x 15
 y 3
 end
-arch marble
-x 15
-y 3
-end
 arch magic_mouth
 msg
 Drop the bearskin belt here.
 endmsg
+x 15
+y 3
+end
+arch marble
 x 15
 y 3
 end
@@ -7707,14 +7707,14 @@ connected 103
 x 16
 y 3
 end
-arch marble
-x 16
-y 3
-end
 arch magic_mouth
 msg
 Drop the banded mail here.
 endmsg
+x 16
+y 3
+end
+arch marble
 x 16
 y 3
 end
@@ -8159,14 +8159,14 @@ connected 102
 x 17
 y 3
 end
-arch marble
-x 17
-y 3
-end
 arch magic_mouth
 msg
 Drop the sharp axe here.
 endmsg
+x 17
+y 3
+end
+arch marble
 x 17
 y 3
 end
@@ -8670,14 +8670,14 @@ connected 101
 x 18
 y 3
 end
-arch marble
-x 18
-y 3
-end
 arch magic_mouth
 msg
 Drop the strongman diploma here.
 endmsg
+x 18
+y 3
+end
+arch marble
 x 18
 y 3
 end
@@ -13120,10 +13120,6 @@ arch dungeon_magic
 x 27
 y 40
 end
-arch marble
-x 27
-y 40
-end
 arch magic_mouth
 msg
 The watcher says:
@@ -13134,6 +13130,10 @@ the way to the plates to show us that
 you atleast have some strength in that
 scrawny body.
 endmsg
+x 27
+y 40
+end
+arch marble
 x 27
 y 40
 end

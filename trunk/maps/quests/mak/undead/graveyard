@@ -893,14 +893,14 @@ arch grass
 x 8
 y 15
 end
-arch brush
-x 8
-y 16
-end
 arch invis_exit
 slaying ../MainFloor
 hp 25
 sp 27
+x 8
+y 16
+end
+arch brush
 x 8
 y 16
 end
