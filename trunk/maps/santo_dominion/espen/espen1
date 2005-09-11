@@ -695,16 +695,16 @@ arch door_look_1
 x 6
 y 13
 end
-arch dungeon_floor
-x 6
-y 14
-end
 arch magic_mouth
 msg
 So,  you didn't follow my advise...
 
 This shall be your doom...
 endmsg
+x 6
+y 14
+end
+arch dungeon_floor
 x 6
 y 14
 end
