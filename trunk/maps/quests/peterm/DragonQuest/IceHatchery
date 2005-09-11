@@ -617,10 +617,6 @@ arch cave8
 x 3
 y 3
 end
-arch pstone_2
-x 3
-y 4
-end
 arch invis_exit
 slaying WyvernNest
 hp 19
@@ -629,13 +625,17 @@ x 3
 y 4
 end
 arch pstone_2
+x 3
+y 4
+end
+arch invis_exit
+slaying WyvernNest
+hp 19
+sp 34
 x 3
 y 5
 end
-arch invis_exit
-slaying WyvernNest
-hp 19
-sp 34
+arch pstone_2
 x 3
 y 5
 end
@@ -828,10 +828,6 @@ x 4
 y 3
 no_pass 1
 end
-arch pstone_2
-x 4
-y 4
-end
 arch invis_exit
 slaying WyvernNest
 hp 20
@@ -840,13 +836,17 @@ x 4
 y 4
 end
 arch pstone_2
+x 4
+y 4
+end
+arch invis_exit
+slaying WyvernNest
+hp 20
+sp 34
 x 4
 y 5
 end
-arch invis_exit
-slaying WyvernNest
-hp 20
-sp 34
+arch pstone_2
 x 4
 y 5
 end
@@ -995,10 +995,6 @@ x 5
 y 3
 no_pass 1
 end
-arch pstone_2
-x 5
-y 4
-end
 arch invis_exit
 slaying WyvernNest
 hp 21
@@ -1007,13 +1003,17 @@ x 5
 y 4
 end
 arch pstone_2
+x 5
+y 4
+end
+arch invis_exit
+slaying WyvernNest
+hp 21
+sp 34
 x 5
 y 5
 end
-arch invis_exit
-slaying WyvernNest
-hp 21
-sp 34
+arch pstone_2
 x 5
 y 5
 end
@@ -1162,14 +1162,14 @@ x 6
 y 3
 no_pass 1
 end
-arch pstone_2
-x 6
-y 4
-end
 arch invis_exit
 slaying WyvernNest
 hp 21
 sp 34
+x 6
+y 4
+end
+arch pstone_2
 x 6
 y 4
 end
