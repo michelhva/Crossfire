@@ -2609,10 +2609,6 @@ arch potion_cold
 x 15
 y 14
 end
-arch afloor_right
-x 15
-y 15
-end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
@@ -2623,6 +2619,10 @@ The hall echoes with loud voice:
    for this test yet, go back by word
    of recall." 
 endmsg
+x 15
+y 15
+end
+arch afloor_right
 x 15
 y 15
 end

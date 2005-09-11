@@ -967,14 +967,14 @@ arch dungeon_magic
 x 4
 y 12
 end
-arch flagstone
-x 4
-y 12
-end
 arch magic_mouth
 msg
 Rotate clockwise.
 endmsg
+x 4
+y 12
+end
+arch flagstone
 x 4
 y 12
 end

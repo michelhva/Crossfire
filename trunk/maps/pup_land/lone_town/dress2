@@ -1265,14 +1265,14 @@ arch rough_wall_1_3
 x 10
 y 6
 end
-arch marble
-x 10
-y 7
-end
 arch magic_mouth
 msg
 underground of dressing room
 endmsg
+x 10
+y 7
+end
+arch marble
 x 10
 y 7
 end

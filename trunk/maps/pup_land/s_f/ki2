@@ -158,12 +158,12 @@ x 1
 y 8
 end
 arch mover_1
-x 1
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
+x 1
+y 8
 end
 arch woodfloor
 x 1
@@ -207,50 +207,57 @@ arch dungeon_magic
 x 2
 y 1
 end
-arch woodfloor
-x 2
-y 2
-end
-arch dungeon_magic
-x 2
-y 2
-end
 arch button_small
-x 2
-y 2
 protected 51
 invisible 1
 connected 51
+x 2
+y 2
 end
 arch woodfloor
 x 2
-y 3
+y 2
 end
 arch dungeon_magic
 x 2
-y 3
+y 2
 end
 arch button_small
-x 2
-y 3
 protected 41
 invisible 1
 connected 41
+x 2
+y 3
 end
 arch woodfloor
 x 2
-y 4
+y 3
 end
 arch dungeon_magic
 x 2
-y 4
+y 3
 end
 arch button_small
-x 2
-y 4
 protected 31
 invisible 1
 connected 31
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 4
+end
+arch dungeon_magic
+x 2
+y 4
+end
+arch button_small
+protected 21
+invisible 1
+connected 21
+x 2
+y 5
 end
 arch woodfloor
 x 2
@@ -259,13 +266,6 @@ end
 arch dungeon_magic
 x 2
 y 5
-end
-arch button_small
-x 2
-y 5
-protected 21
-invisible 1
-connected 21
 end
 arch woodfloor
 x 2
@@ -288,65 +288,65 @@ x 2
 y 8
 end
 arch mover_1
-x 2
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 2
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 51
 value 1
 connected 51
+x 2
+y 8
 end
 arch woodfloor
 x 2
 y 9
 end
 arch grate_open_1
-x 2
-y 9
 speed 0.500000
 protected 41
 value 1
 connected 41
+x 2
+y 9
 end
 arch woodfloor
 x 2
 y 10
 end
 arch grate_open_1
-x 2
-y 10
 speed 0.500000
 protected 31
 value 1
 connected 31
+x 2
+y 10
 end
 arch woodfloor
 x 2
 y 11
 end
 arch grate_open_1
-x 2
-y 11
 speed 0.500000
 protected 21
 value 1
 connected 21
+x 2
+y 11
 end
 arch woodfloor
 x 2
 y 12
 end
 arch ytree
+no_pass 1
 x 2
 y 12
-no_pass 1
 end
 arch woodfloor
 x 2
@@ -369,51 +369,58 @@ end
 arch dungeon_magic
 x 3
 y 1
-end
-arch woodfloor
-x 3
-y 2
-end
-arch dungeon_magic
-x 3
-y 2
 end
 arch button_small
-x 3
-y 2
 protected 52
 invisible 1
 connected 52
+x 3
+y 2
 end
 arch woodfloor
 x 3
-y 3
+y 2
 end
 arch dungeon_magic
 x 3
-y 3
+y 2
 end
 arch button_small
-x 3
-y 3
 protected 42
 invisible 1
 connected 42
+x 3
+y 3
 end
 arch woodfloor
 x 3
-y 4
+y 3
 end
 arch dungeon_magic
 x 3
-y 4
+y 3
 end
 arch button_small
-x 3
-y 4
 protected 32
 invisible 1
 connected 32
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch button_small
+protected 22
+invisible 1
+connected 22
+x 3
+y 5
 end
 arch woodfloor
 x 3
@@ -422,13 +429,6 @@ end
 arch dungeon_magic
 x 3
 y 5
-end
-arch button_small
-x 3
-y 5
-protected 22
-invisible 1
-connected 22
 end
 arch woodfloor
 x 3
@@ -451,56 +451,56 @@ x 3
 y 8
 end
 arch mover_1
-x 3
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 3
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 52
 value 1
 connected 52
+x 3
+y 8
 end
 arch woodfloor
 x 3
 y 9
 end
 arch grate_open_1
-x 3
-y 9
 speed 0.500000
 protected 42
 value 1
 connected 42
+x 3
+y 9
 end
 arch woodfloor
 x 3
 y 10
 end
 arch grate_open_1
-x 3
-y 10
 speed 0.500000
 protected 32
 value 1
 connected 32
+x 3
+y 10
 end
 arch woodfloor
 x 3
 y 11
 end
 arch grate_open_1
-x 3
-y 11
 speed 0.500000
 protected 22
 value 1
 connected 22
+x 3
+y 11
 end
 arch woodfloor
 x 3
@@ -532,50 +532,57 @@ arch dungeon_magic
 x 4
 y 1
 end
-arch woodfloor
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 2
-end
 arch button_small
-x 4
-y 2
 protected 53
 invisible 1
 connected 53
+x 4
+y 2
 end
 arch woodfloor
 x 4
-y 3
+y 2
 end
 arch dungeon_magic
 x 4
-y 3
+y 2
 end
 arch button_small
-x 4
-y 3
 protected 43
 invisible 1
 connected 43
+x 4
+y 3
 end
 arch woodfloor
 x 4
-y 4
+y 3
 end
 arch dungeon_magic
 x 4
-y 4
+y 3
 end
 arch button_small
-x 4
-y 4
 protected 33
 invisible 1
 connected 33
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch button_small
+protected 23
+invisible 1
+connected 23
+x 4
+y 5
 end
 arch woodfloor
 x 4
@@ -584,13 +591,6 @@ end
 arch dungeon_magic
 x 4
 y 5
-end
-arch button_small
-x 4
-y 5
-protected 23
-invisible 1
-connected 23
 end
 arch woodfloor
 x 4
@@ -613,56 +613,56 @@ x 4
 y 8
 end
 arch mover_1
-x 4
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 4
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 53
 value 1
 connected 53
+x 4
+y 8
 end
 arch woodfloor
 x 4
 y 9
 end
 arch grate_open_1
-x 4
-y 9
 speed 0.500000
 protected 43
 value 1
 connected 43
+x 4
+y 9
 end
 arch woodfloor
 x 4
 y 10
 end
 arch grate_open_1
-x 4
-y 10
 speed 0.500000
 protected 33
 value 1
 connected 33
+x 4
+y 10
 end
 arch woodfloor
 x 4
 y 11
 end
 arch grate_open_1
-x 4
-y 11
 speed 0.500000
 protected 23
 value 1
 connected 23
+x 4
+y 11
 end
 arch note
 msg
@@ -677,9 +677,9 @@ x 4
 y 12
 end
 arch ytree
+no_pass 1
 x 4
 y 12
-no_pass 1
 end
 arch woodfloor
 x 4
@@ -702,51 +702,58 @@ end
 arch dungeon_magic
 x 5
 y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 2
 end
 arch button_small
-x 5
-y 2
 protected 54
 invisible 1
 connected 54
+x 5
+y 2
 end
 arch woodfloor
 x 5
-y 3
+y 2
 end
 arch dungeon_magic
 x 5
-y 3
+y 2
 end
 arch button_small
-x 5
-y 3
 protected 44
 invisible 1
 connected 44
+x 5
+y 3
 end
 arch woodfloor
 x 5
-y 4
+y 3
 end
 arch dungeon_magic
 x 5
-y 4
+y 3
 end
 arch button_small
-x 5
-y 4
 protected 34
 invisible 1
 connected 34
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch button_small
+protected 24
+invisible 1
+connected 24
+x 5
+y 5
 end
 arch woodfloor
 x 5
@@ -755,13 +762,6 @@ end
 arch dungeon_magic
 x 5
 y 5
-end
-arch button_small
-x 5
-y 5
-protected 24
-invisible 1
-connected 24
 end
 arch woodfloor
 x 5
@@ -784,56 +784,56 @@ x 5
 y 8
 end
 arch mover_1
-x 5
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 5
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 54
 value 1
 connected 54
+x 5
+y 8
 end
 arch woodfloor
 x 5
 y 9
 end
 arch grate_open_1
-x 5
-y 9
 speed 0.500000
 protected 44
 value 1
 connected 44
+x 5
+y 9
 end
 arch woodfloor
 x 5
 y 10
 end
 arch grate_open_1
-x 5
-y 10
 speed 0.500000
 protected 34
 value 1
 connected 34
+x 5
+y 10
 end
 arch woodfloor
 x 5
 y 11
 end
 arch grate_open_1
-x 5
-y 11
 speed 0.500000
 protected 24
 value 1
 connected 24
+x 5
+y 11
 end
 arch note
 msg
@@ -850,9 +850,9 @@ x 5
 y 12
 end
 arch ytree
+no_pass 1
 x 5
 y 12
-no_pass 1
 end
 arch woodfloor
 x 5
@@ -867,14 +867,6 @@ x 6
 end
 arch wwall_2_1_2
 x 6
-end
-arch woodfloor
-x 6
-y 1
-end
-arch dungeon_magic
-x 6
-y 1
 end
 arch magic_mouth
 msg
@@ -885,48 +877,63 @@ y 1
 end
 arch woodfloor
 x 6
-y 2
+y 1
 end
 arch dungeon_magic
 x 6
-y 2
+y 1
 end
 arch button_small
-x 6
-y 2
 protected 55
 invisible 1
 connected 55
+x 6
+y 2
 end
 arch woodfloor
 x 6
-y 3
+y 2
 end
 arch dungeon_magic
 x 6
-y 3
+y 2
 end
 arch button_small
-x 6
-y 3
 protected 45
 invisible 1
 connected 45
+x 6
+y 3
 end
 arch woodfloor
 x 6
-y 4
+y 3
 end
 arch dungeon_magic
 x 6
-y 4
+y 3
 end
 arch button_small
-x 6
-y 4
 protected 35
 invisible 1
 connected 35
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch button_small
+protected 25
+invisible 1
+connected 25
+x 6
+y 5
 end
 arch woodfloor
 x 6
@@ -935,13 +942,6 @@ end
 arch dungeon_magic
 x 6
 y 5
-end
-arch button_small
-x 6
-y 5
-protected 25
-invisible 1
-connected 25
 end
 arch woodfloor
 x 6
@@ -964,56 +964,56 @@ x 6
 y 8
 end
 arch mover_1
-x 6
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 6
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 55
 value 1
 connected 55
+x 6
+y 8
 end
 arch woodfloor
 x 6
 y 9
 end
 arch grate_open_1
-x 6
-y 9
 speed 0.500000
 protected 45
 value 1
 connected 45
+x 6
+y 9
 end
 arch woodfloor
 x 6
 y 10
 end
 arch grate_open_1
-x 6
-y 10
 speed 0.500000
 protected 35
 value 1
 connected 35
+x 6
+y 10
 end
 arch woodfloor
 x 6
 y 11
 end
 arch grate_open_1
-x 6
-y 11
 speed 0.500000
 protected 25
 value 1
 connected 25
+x 6
+y 11
 end
 arch woodfloor
 x 6
@@ -1052,50 +1052,57 @@ sp 1
 x 7
 y 1
 end
-arch woodfloor
-x 7
-y 2
-end
-arch dungeon_magic
-x 7
-y 2
-end
 arch button_small
-x 7
-y 2
 protected 56
 invisible 1
 connected 56
+x 7
+y 2
 end
 arch woodfloor
 x 7
-y 3
+y 2
 end
 arch dungeon_magic
 x 7
-y 3
+y 2
 end
 arch button_small
-x 7
-y 3
 protected 46
 invisible 1
 connected 46
+x 7
+y 3
 end
 arch woodfloor
 x 7
-y 4
+y 3
 end
 arch dungeon_magic
 x 7
-y 4
+y 3
 end
 arch button_small
-x 7
-y 4
 protected 36
 invisible 1
 connected 36
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 4
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch button_small
+protected 26
+invisible 1
+connected 26
+x 7
+y 5
 end
 arch woodfloor
 x 7
@@ -1104,13 +1111,6 @@ end
 arch dungeon_magic
 x 7
 y 5
-end
-arch button_small
-x 7
-y 5
-protected 26
-invisible 1
-connected 26
 end
 arch woodfloor
 x 7
@@ -1133,65 +1133,65 @@ x 7
 y 8
 end
 arch mover_1
-x 7
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
-end
-arch grate_open_1
 x 7
 y 8
+end
+arch grate_open_1
 speed 0.500000
 protected 56
 value 1
 connected 56
+x 7
+y 8
 end
 arch woodfloor
 x 7
 y 9
 end
 arch grate_open_1
-x 7
-y 9
 speed 0.500000
 protected 46
 value 1
 connected 46
+x 7
+y 9
 end
 arch woodfloor
 x 7
 y 10
 end
 arch grate_open_1
-x 7
-y 10
 speed 0.500000
 protected 36
 value 1
 connected 36
+x 7
+y 10
 end
 arch woodfloor
 x 7
 y 11
 end
 arch grate_open_1
-x 7
-y 11
 speed 0.500000
 protected 26
 value 1
 connected 26
+x 7
+y 11
 end
 arch woodfloor
 x 7
 y 12
 end
 arch ytree
+no_pass 1
 x 7
 y 12
-no_pass 1
 end
 arch woodfloor
 x 7
@@ -1268,12 +1268,12 @@ x 8
 y 8
 end
 arch mover_1
-x 8
-y 8
 speed 1.000000
 speed_left -3.980000
 level 1
 attacktype 1
+x 8
+y 8
 end
 arch woodfloor
 x 8

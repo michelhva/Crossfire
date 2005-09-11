@@ -545,17 +545,16 @@ x 5
 y 3
 no_pass 0
 end
-arch woodfloor
-x 5
-y 4
-end
 arch exit
 slaying town_ud1
 hp 5
 sp 21
 x 5
 y 4
-invisible 1
+end
+arch woodfloor
+x 5
+y 4
 end
 arch woodfloor
 x 5

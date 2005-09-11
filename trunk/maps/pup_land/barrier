@@ -48,13 +48,13 @@ end
 arch dwall_2_2_1
 y 6
 end
-arch cobblestones2
-y 7
-end
 arch invis_exit
 slaying world
 hp 19
 sp 33
+y 7
+end
+arch cobblestones2
 y 7
 end
 arch cobblestones2
@@ -3044,14 +3044,14 @@ arch dwall_2_2_4
 x 31
 y 6
 end
-arch cobblestones2
-x 31
-y 7
-end
 arch invis_exit
 slaying world
 hp 22
 sp 33
+x 31
+y 7
+end
+arch cobblestones2
 x 31
 y 7
 end

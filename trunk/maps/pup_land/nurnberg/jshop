@@ -81,13 +81,13 @@ end
 arch evergreen
 y 23
 end
-arch cobblestones
-y 24
-end
 arch invis_exit
 slaying city
 hp 17
 sp 15
+y 24
+end
+arch cobblestones
 y 24
 end
 arch evergreens
@@ -1417,14 +1417,14 @@ arch cobblestones
 x 11
 y 23
 end
-arch cobblestones
-x 11
-y 24
-end
 arch invis_exit
 slaying city
 hp 18
 sp 15
+x 11
+y 24
+end
+arch cobblestones
 x 11
 y 24
 end
@@ -1552,14 +1552,14 @@ arch cobblestones
 x 12
 y 23
 end
-arch cobblestones
-x 12
-y 24
-end
 arch invis_exit
 slaying city
 hp 18
 sp 15
+x 12
+y 24
+end
+arch cobblestones
 x 12
 y 24
 end
@@ -2968,14 +2968,14 @@ arch evergreen
 x 24
 y 23
 end
-arch cobblestones
-x 24
-y 24
-end
 arch invis_exit
 slaying city
 hp 20
 sp 15
+x 24
+y 24
+end
+arch cobblestones
 x 24
 y 24
 end

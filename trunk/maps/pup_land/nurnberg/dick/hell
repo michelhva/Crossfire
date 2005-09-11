@@ -4508,14 +4508,14 @@ arch dungeon_magic
 x 15
 y 24
 end
-arch pstone_1
-x 15
-y 24
-end
 arch magic_mouth
 msg
 Treasure Room 
 endmsg
+x 15
+y 24
+end
+arch pstone_1
 x 15
 y 24
 end
@@ -5955,14 +5955,14 @@ y 5
 level 1
 attacktype 1
 end
-arch afloor_right
-x 20
-y 5
-end
 arch magic_mouth
 msg
 3
 endmsg
+x 20
+y 5
+end
+arch afloor_right
 x 20
 y 5
 end

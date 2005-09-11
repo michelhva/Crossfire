@@ -442,16 +442,15 @@ arch dungeon_magic
 x 2
 y 14
 end
-arch flagstone
-x 2
-y 14
-end
 arch button_small
 x 2
 y 14
 protected 93
-invisible 1
 connected 93
+end
+arch flagstone
+x 2
+y 14
 end
 arch flagstone
 x 2
@@ -839,16 +838,15 @@ arch dungeon_magic
 x 4
 y 14
 end
-arch flagstone
-x 4
-y 14
-end
 arch button_small
 x 4
 y 14
 protected 93
-invisible 1
 connected 93
+end
+arch flagstone
+x 4
+y 14
 end
 arch flagstone
 x 4

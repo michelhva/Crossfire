@@ -60,13 +60,13 @@ end
 arch rough_wall_1_4
 y 6
 end
-arch pstone_1
-y 7
-end
 arch invis_exit
 slaying ruin_ug
 hp 18
 sp 10
+y 7
+end
+arch pstone_1
 y 7
 end
 arch large_stones
@@ -1100,15 +1100,14 @@ arch large_stones
 x 8
 y 3
 end
-arch large_stones
-x 8
-y 4
-end
 arch button_small
 x 8
 y 4
-invisible 1
 connected 1
+end
+arch large_stones
+x 8
+y 4
 end
 arch pstone_1
 x 8
@@ -2164,13 +2163,13 @@ arch rough_wall_2_1_1
 x 19
 y 2
 end
-arch pstone_1
-x 19
-y 3
-end
 arch invis_exit
 slaying cave2
 sp 6
+x 19
+y 3
+end
+arch pstone_1
 x 19
 y 3
 end

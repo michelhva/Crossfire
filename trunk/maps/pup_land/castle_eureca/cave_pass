@@ -1506,14 +1506,14 @@ slaying 1623543
 x 8
 y 9
 end
-arch pstone_1
-x 8
-y 10
-end
 arch magic_mouth
 msg
 guard room 
 endmsg
+x 8
+y 10
+end
+arch pstone_1
 x 8
 y 10
 end

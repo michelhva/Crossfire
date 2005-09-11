@@ -707,10 +707,6 @@ arch dungeon_magic
 x 4
 y 3
 end
-arch evergreens
-x 4
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 5
@@ -718,9 +714,9 @@ sp 18
 x 4
 y 4
 end
-arch grass
+arch evergreens
 x 4
-y 5
+y 4
 end
 arch invis_exit
 slaying reception
@@ -731,7 +727,7 @@ y 5
 end
 arch grass
 x 4
-y 6
+y 5
 end
 arch invis_exit
 slaying reception
@@ -742,7 +738,7 @@ y 6
 end
 arch grass
 x 4
-y 7
+y 6
 end
 arch invis_exit
 slaying reception
@@ -753,7 +749,7 @@ y 7
 end
 arch grass
 x 4
-y 8
+y 7
 end
 arch invis_exit
 slaying reception
@@ -764,7 +760,7 @@ y 8
 end
 arch grass
 x 4
-y 9
+y 8
 end
 arch invis_exit
 slaying reception
@@ -773,15 +769,9 @@ sp 5
 x 4
 y 9
 end
-arch cobblestones2
+arch grass
 x 4
-y 10
-end
-arch cobblestones2
-face swall_A.111
-x 4
-y 10
-is_floor 0
+y 9
 end
 arch invis_exit
 slaying water4
@@ -789,6 +779,23 @@ hp 20
 sp 11
 x 4
 y 10
+end
+arch cobblestones2
+x 4
+y 10
+end
+arch cobblestones2
+face swall_A.111
+is_floor 0
+x 4
+y 10
+end
+arch invis_exit
+slaying water4
+hp 20
+sp 11
+x 4
+y 11
 end
 arch cobblestones2
 x 4
@@ -800,16 +807,16 @@ y 11
 end
 arch cobblestones2
 face grate_2.118
+is_floor 0
 x 4
 y 11
-is_floor 0
 end
 arch invis_exit
 slaying water4
 hp 20
 sp 11
 x 4
-y 11
+y 12
 end
 arch cobblestones2
 x 4
@@ -817,20 +824,9 @@ y 12
 end
 arch cobblestones2
 face swall_A.111
-x 4
-y 12
 is_floor 0
-end
-arch invis_exit
-slaying water4
-hp 20
-sp 11
 x 4
 y 12
-end
-arch grass
-x 4
-y 13
 end
 arch invis_exit
 slaying reception
@@ -841,7 +837,7 @@ y 13
 end
 arch grass
 x 4
-y 14
+y 13
 end
 arch invis_exit
 slaying reception
@@ -852,7 +848,7 @@ y 14
 end
 arch grass
 x 4
-y 15
+y 14
 end
 arch invis_exit
 slaying reception
@@ -863,7 +859,7 @@ y 15
 end
 arch grass
 x 4
-y 16
+y 15
 end
 arch invis_exit
 slaying reception
@@ -874,7 +870,7 @@ y 16
 end
 arch grass
 x 4
-y 17
+y 16
 end
 arch invis_exit
 slaying reception
@@ -883,27 +879,27 @@ sp 13
 x 4
 y 17
 end
+arch grass
+x 4
+y 17
+end
+arch invis_exit
+slaying reception
+hp 17
+sp 17
+x 4
+y 18
+end
 arch cobblestones2
 x 4
 y 18
 end
 arch grass
 face dwall_A.111
-x 4
-y 18
 is_floor 0
-end
-arch invis_exit
-slaying reception
-hp 17
-sp 17
 x 4
 y 18
 end
-arch cobblestones2
-x 4
-y 19
-end
 arch invis_exit
 slaying reception
 hp 17
@@ -913,7 +909,7 @@ y 19
 end
 arch cobblestones2
 x 4
-y 20
+y 19
 end
 arch invis_exit
 slaying reception
@@ -923,13 +919,17 @@ x 4
 y 20
 end
 arch cobblestones2
+x 4
+y 20
+end
+arch invis_exit
+slaying reception
+hp 17
+sp 17
 x 4
 y 21
 end
-arch invis_exit
-slaying reception
-hp 17
-sp 17
+arch cobblestones2
 x 4
 y 21
 end
@@ -972,14 +972,14 @@ arch dungeon_magic
 x 5
 y 3
 end
-arch evergreens
-x 5
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 5
+y 4
+end
+arch evergreens
 x 5
 y 4
 end
@@ -1049,16 +1049,14 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 5
 y 12
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
-x 5
-y 12
 level 20
 immune 254
 alive 1
@@ -1066,6 +1064,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 5
+y 12
 end
 arch dungeon_magic
 x 5
@@ -1077,9 +1077,9 @@ y 13
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 13
-level 1
 end
 arch dungeon_magic
 x 5
@@ -1091,17 +1091,15 @@ y 14
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 14
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
-x 5
-y 14
 level 20
 immune 254
 alive 1
@@ -1109,6 +1107,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 5
+y 14
 end
 arch dungeon_magic
 x 5
@@ -1120,9 +1120,9 @@ y 15
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 15
-level 1
 end
 arch dungeon_magic
 x 5
@@ -1134,9 +1134,9 @@ y 16
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 16
-level 1
 end
 arch dungeon_magic
 x 5
@@ -1148,17 +1148,15 @@ y 17
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 17
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
-x 5
-y 17
 level 20
 immune 254
 alive 1
@@ -1166,6 +1164,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 5
+y 17
 end
 arch dungeon_magic
 x 5
@@ -1177,9 +1177,9 @@ y 18
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 18
-level 1
 end
 arch dungeon_magic
 x 5
@@ -1191,9 +1191,9 @@ y 19
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 19
-level 1
 end
 arch dungeon_magic
 x 5
@@ -1205,16 +1205,14 @@ y 20
 end
 arch mover_1
 maxhp 1
+level 1
 x 5
 y 20
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
-x 5
-y 20
 level 20
 immune 254
 alive 1
@@ -1222,15 +1220,17 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-end
-arch cobblestones2
 x 5
-y 21
+y 20
 end
 arch invis_exit
 slaying reception
 hp 17
 sp 17
+x 5
+y 21
+end
+arch cobblestones2
 x 5
 y 21
 end
@@ -1301,14 +1301,14 @@ arch dungeon_magic
 x 6
 y 3
 end
-arch evergreens
-x 6
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 6
+y 4
+end
+arch evergreens
 x 6
 y 4
 end
@@ -1350,9 +1350,9 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 6
 y 12
-level 1
 end
 arch flagstone
 x 6
@@ -1392,18 +1392,18 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 6
 y 20
-level 1
-end
-arch cobblestones2
-x 6
-y 21
 end
 arch invis_exit
 slaying reception
 hp 17
 sp 17
+x 6
+y 21
+end
+arch cobblestones2
 x 6
 y 21
 end
@@ -1450,14 +1450,14 @@ arch dungeon_magic
 x 7
 y 3
 end
-arch grass
-x 7
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 7
+y 4
+end
+arch grass
 x 7
 y 4
 end
@@ -1499,9 +1499,9 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 7
 y 12
-level 1
 end
 arch flagstone
 x 7
@@ -1553,17 +1553,15 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 7
 y 20
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
-x 7
-y 20
 level 20
 immune 254
 alive 1
@@ -1571,6 +1569,15 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 7
+y 20
+end
+arch invis_exit
+slaying reception
+hp 17
+sp 17
+x 7
+y 21
 end
 arch cobblestones2
 x 7
@@ -1578,14 +1585,7 @@ y 21
 end
 arch grass
 face dwall_5.111
-x 7
-y 21
 is_floor 0
-end
-arch invis_exit
-slaying reception
-hp 17
-sp 17
 x 7
 y 21
 end
@@ -1632,14 +1632,14 @@ arch dungeon_magic
 x 8
 y 3
 end
-arch evergreens
-x 8
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 8
+y 4
+end
+arch evergreens
 x 8
 y 4
 end
@@ -1729,17 +1729,15 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 8
 y 12
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
-x 8
-y 12
 level 20
 immune 254
 alive 1
@@ -1747,6 +1745,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 8
+y 12
 end
 arch flagstone
 x 8
@@ -1801,18 +1801,18 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 8
 y 20
-level 1
-end
-arch grass
-x 8
-y 21
 end
 arch invis_exit
 slaying reception
 hp 21
 sp 17
+x 8
+y 21
+end
+arch grass
 x 8
 y 21
 end
@@ -1859,14 +1859,14 @@ arch dungeon_magic
 x 9
 y 3
 end
-arch evergreens
-x 9
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 9
+y 4
+end
+arch evergreens
 x 9
 y 4
 end
@@ -1916,9 +1916,9 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 9
 y 12
-level 1
 end
 arch flagstone
 x 9
@@ -1970,18 +1970,18 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 9
 y 20
-level 1
-end
-arch grass
-x 9
-y 21
 end
 arch invis_exit
 slaying reception
 hp 22
 sp 17
+x 9
+y 21
+end
+arch grass
 x 9
 y 21
 end
@@ -2036,14 +2036,14 @@ arch dungeon_magic
 x 10
 y 3
 end
-arch grass
-x 10
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 10
+y 4
+end
+arch grass
 x 10
 y 4
 end
@@ -2067,7 +2067,6 @@ arch scroll
 msg
 * : jungle
 X : entrance
-
 **********
 *******X**
 +-------+
@@ -2109,9 +2108,9 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 10
 y 12
-level 1
 end
 arch flagstone
 x 10
@@ -2151,17 +2150,15 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 10
 y 20
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
-x 10
-y 20
 level 20
 immune 254
 alive 1
@@ -2169,15 +2166,17 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-end
-arch grass
 x 10
-y 21
+y 20
 end
 arch invis_exit
 slaying reception
 hp 23
 sp 17
+x 10
+y 21
+end
+arch grass
 x 10
 y 21
 end
@@ -2224,14 +2223,14 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch evergreens
-x 11
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 11
+y 4
+end
+arch evergreens
 x 11
 y 4
 end
@@ -2281,17 +2280,15 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 11
 y 12
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
-x 11
-y 12
 level 20
 immune 254
 alive 1
@@ -2299,6 +2296,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 11
+y 12
 end
 arch flagstone
 x 11
@@ -2338,18 +2337,18 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 11
 y 20
-level 1
-end
-arch grass
-x 11
-y 21
 end
 arch invis_exit
 slaying reception
 hp 24
 sp 17
+x 11
+y 21
+end
+arch grass
 x 11
 y 21
 end
@@ -2396,14 +2395,14 @@ arch dungeon_magic
 x 12
 y 3
 end
-arch evergreens
-x 12
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 12
+y 4
+end
+arch evergreens
 x 12
 y 4
 end
@@ -2453,9 +2452,9 @@ y 12
 end
 arch mover_3
 maxhp 1
+level 1
 x 12
 y 12
-level 1
 end
 arch flagstone
 x 12
@@ -2495,18 +2494,18 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 12
 y 20
-level 1
-end
-arch grass
-x 12
-y 21
 end
 arch invis_exit
 slaying reception
 hp 25
 sp 17
+x 12
+y 21
+end
+arch grass
 x 12
 y 21
 end
@@ -2577,14 +2576,14 @@ arch dungeon_magic
 x 13
 y 3
 end
-arch evergreens
-x 13
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 13
+y 4
+end
+arch evergreens
 x 13
 y 4
 end
@@ -2634,16 +2633,14 @@ y 12
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 12
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
-x 13
-y 12
 level 20
 immune 254
 alive 1
@@ -2651,6 +2648,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 13
+y 12
 end
 arch flagstone
 x 13
@@ -2658,9 +2657,9 @@ y 13
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 13
-level 1
 end
 arch flagstone
 x 13
@@ -2668,9 +2667,9 @@ y 14
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 14
-level 1
 end
 arch flagstone
 x 13
@@ -2678,17 +2677,15 @@ y 15
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 15
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
-x 13
-y 15
 level 20
 immune 254
 alive 1
@@ -2696,6 +2693,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 13
+y 15
 end
 arch flagstone
 x 13
@@ -2703,9 +2702,9 @@ y 16
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 16
-level 1
 end
 arch flagstone
 x 13
@@ -2713,9 +2712,9 @@ y 17
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 17
-level 1
 end
 arch flagstone
 x 13
@@ -2723,17 +2722,15 @@ y 18
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 18
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
-x 13
-y 18
 level 20
 immune 254
 alive 1
@@ -2741,6 +2738,8 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
+x 13
+y 18
 end
 arch flagstone
 x 13
@@ -2748,9 +2747,9 @@ y 19
 end
 arch mover_5
 maxhp 1
+level 1
 x 13
 y 19
-level 1
 end
 arch dungeon_magic
 x 13
@@ -2762,16 +2761,14 @@ y 20
 end
 arch mover_7
 maxhp 1
+level 1
 x 13
 y 20
-level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
-x 13
-y 20
 level 20
 immune 254
 alive 1
@@ -2779,15 +2776,17 @@ no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-end
-arch grass
 x 13
-y 21
+y 20
 end
 arch invis_exit
 slaying reception
 hp 26
 sp 17
+x 13
+y 21
+end
+arch grass
 x 13
 y 21
 end
@@ -2834,14 +2833,14 @@ arch dungeon_magic
 x 14
 y 3
 end
-arch grass
-x 14
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 14
+y 4
+end
+arch grass
 x 14
 y 4
 end
@@ -2965,14 +2964,14 @@ arch flagstone
 x 14
 y 20
 end
-arch grass
-x 14
-y 21
-end
 arch invis_exit
 slaying reception
 hp 27
 sp 17
+x 14
+y 21
+end
+arch grass
 x 14
 y 21
 end
@@ -3019,14 +3018,14 @@ arch dungeon_magic
 x 15
 y 3
 end
-arch evergreens
-x 15
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 15
+y 4
+end
+arch evergreens
 x 15
 y 4
 end
@@ -3063,11 +3062,11 @@ x 15
 y 7
 end
 arch locked_door2
-slaying 7775237749
 msg
 You need the special key to open this door.
 You'll find the key on the third floor!
 endmsg
+slaying 7775237749
 x 15
 y 7
 end
@@ -3155,20 +3154,20 @@ arch flagstone
 x 15
 y 20
 end
+arch invis_exit
+slaying electricity4
+hp 17
+sp 6
+x 15
+y 21
+end
 arch cobblestones2
 x 15
 y 21
 end
 arch cobblestones2
 face swall_5.111
-x 15
-y 21
 is_floor 0
-end
-arch invis_exit
-slaying electricity4
-hp 17
-sp 6
 x 15
 y 21
 end
@@ -3215,14 +3214,14 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch grass
-x 16
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 16
+y 4
+end
+arch grass
 x 16
 y 4
 end
@@ -3334,6 +3333,13 @@ arch flagstone
 x 16
 y 20
 end
+arch invis_exit
+slaying electricity4
+hp 17
+sp 6
+x 16
+y 21
+end
 arch cobblestones2
 x 16
 y 21
@@ -3344,14 +3350,7 @@ y 21
 end
 arch cobblestones2
 face grate_1.118
-x 16
-y 21
 is_floor 0
-end
-arch invis_exit
-slaying electricity4
-hp 17
-sp 6
 x 16
 y 21
 end
@@ -3398,14 +3397,14 @@ arch dungeon_magic
 x 17
 y 3
 end
-arch evergreens
-x 17
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 17
+y 4
+end
+arch evergreens
 x 17
 y 4
 end
@@ -3509,20 +3508,20 @@ arch flagstone
 x 17
 y 20
 end
+arch invis_exit
+slaying electricity4
+hp 17
+sp 6
+x 17
+y 21
+end
 arch cobblestones2
 x 17
 y 21
 end
 arch cobblestones2
 face swall_5.111
-x 17
-y 21
 is_floor 0
-end
-arch invis_exit
-slaying electricity4
-hp 17
-sp 6
 x 17
 y 21
 end
@@ -3569,14 +3568,14 @@ arch dungeon_magic
 x 18
 y 3
 end
-arch grass
-x 18
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 18
+y 4
+end
+arch grass
 x 18
 y 4
 end
@@ -3617,10 +3616,10 @@ x 18
 y 10
 end
 arch grate_closed_1
-x 18
-y 10
 speed 0.500000
 connected 1
+x 18
+y 10
 end
 arch flagstone
 x 18
@@ -3666,14 +3665,14 @@ arch flagstone
 x 18
 y 20
 end
-arch grass
-x 18
-y 21
-end
 arch invis_exit
 slaying reception
 hp 31
 sp 17
+x 18
+y 21
+end
+arch grass
 x 18
 y 21
 end
@@ -3720,14 +3719,14 @@ arch dungeon_magic
 x 19
 y 3
 end
-arch evergreens
-x 19
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 19
+y 4
+end
+arch evergreens
 x 19
 y 4
 end
@@ -3763,9 +3762,9 @@ x 19
 y 9
 end
 arch button_lever
+connected 1
 x 19
 y 9
-connected 1
 end
 arch flagstone
 x 19
@@ -3823,14 +3822,14 @@ arch flagstone
 x 19
 y 20
 end
-arch grass
-x 19
-y 21
-end
 arch invis_exit
 slaying reception
 hp 32
 sp 17
+x 19
+y 21
+end
+arch grass
 x 19
 y 21
 end
@@ -3877,14 +3876,14 @@ arch dungeon_magic
 x 20
 y 3
 end
-arch evergreens
-x 20
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 6
 sp 18
+x 20
+y 4
+end
+arch evergreens
 x 20
 y 4
 end
@@ -4024,14 +4023,14 @@ arch flagstone
 x 20
 y 20
 end
-arch grass
-x 20
-y 21
-end
 arch invis_exit
 slaying reception
 hp 33
 sp 17
+x 20
+y 21
+end
+arch grass
 x 20
 y 21
 end
@@ -4102,10 +4101,6 @@ arch dungeon_magic
 x 21
 y 3
 end
-arch evergreens
-x 21
-y 4
-end
 arch invis_exit
 slaying ../city
 hp 7
@@ -4113,6 +4108,17 @@ sp 18
 x 21
 y 4
 end
+arch evergreens
+x 21
+y 4
+end
+arch invis_exit
+slaying ../city
+hp 7
+sp 19
+x 21
+y 5
+end
 arch grass
 x 21
 y 5
@@ -4122,7 +4128,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 5
+y 6
 end
 arch grass
 x 21
@@ -4133,7 +4139,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 6
+y 7
 end
 arch evergreens
 x 21
@@ -4144,7 +4150,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 7
+y 8
 end
 arch grass
 x 21
@@ -4155,7 +4161,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 8
+y 9
 end
 arch grass
 x 21
@@ -4166,7 +4172,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 9
+y 10
 end
 arch evergreens
 x 21
@@ -4177,7 +4183,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 10
+y 11
 end
 arch evergreens
 x 21
@@ -4188,7 +4194,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 11
+y 12
 end
 arch evergreens
 x 21
@@ -4199,7 +4205,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 12
+y 13
 end
 arch grass
 x 21
@@ -4210,7 +4216,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 13
+y 14
 end
 arch grass
 x 21
@@ -4221,7 +4227,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 14
+y 15
 end
 arch grass
 x 21
@@ -4232,7 +4238,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 15
+y 16
 end
 arch evergreens
 x 21
@@ -4243,7 +4249,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 16
+y 17
 end
 arch evergreens
 x 21
@@ -4254,7 +4260,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 17
+y 18
 end
 arch evergreens
 x 21
@@ -4265,7 +4271,7 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 18
+y 19
 end
 arch evergreens
 x 21
@@ -4276,27 +4282,20 @@ slaying ../city
 hp 7
 sp 19
 x 21
-y 19
-end
-arch evergreens
-x 21
-y 20
-end
-arch invis_exit
-slaying ../city
-hp 7
-sp 19
-x 21
 y 20
 end
 arch evergreens
 x 21
-y 21
+y 20
 end
 arch invis_exit
 slaying ../city
 hp 7
 sp 20
+x 21
+y 21
+end
+arch evergreens
 x 21
 y 21
 end

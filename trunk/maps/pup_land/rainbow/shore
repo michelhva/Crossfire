@@ -9,12 +9,12 @@ endmsg
 width 16
 height 20
 end
-arch grass
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+end
+arch grass
 end
 arch hills_rocky
 y 1
@@ -91,13 +91,13 @@ end
 arch sea
 y 19
 end
-arch grass
-x 1
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 1
+end
+arch grass
 x 1
 end
 arch hills_rocky
@@ -165,16 +165,15 @@ arch sea
 x 1
 y 13
 end
-arch sea
-no_pass 0
-x 1
-y 14
-end
 arch exit
 slaying entrance1
 hp 2
 sp 12
-invisible 1
+x 1
+y 14
+end
+arch sea
+no_pass 0
 x 1
 y 14
 end
@@ -200,13 +199,13 @@ arch sea
 x 1
 y 19
 end
-arch grass
-x 2
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 2
+end
+arch grass
 x 2
 end
 arch hills_rocky
@@ -324,16 +323,16 @@ arch sea
 x 2
 y 19
 end
-arch grass
-x 3
-end
-arch tree
-x 3
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 3
+end
+arch grass
+x 3
+end
+arch tree
 x 3
 end
 arch hills
@@ -437,13 +436,13 @@ arch sea
 x 3
 y 19
 end
-arch grass
-x 4
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 4
+end
+arch grass
 x 4
 end
 arch grass
@@ -559,13 +558,13 @@ arch sea
 x 4
 y 19
 end
-arch grass
-x 5
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 5
+end
+arch grass
 x 5
 end
 arch grass
@@ -669,13 +668,13 @@ arch sea
 x 5
 y 19
 end
-arch grass
-x 6
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 6
+end
+arch grass
 x 6
 end
 arch grass
@@ -779,13 +778,13 @@ arch sea
 x 6
 y 19
 end
-arch grass
+arch invis_exit
+slaying islands
+hp 17
+sp 20
 x 7
 end
-arch invis_exit
-slaying islands
-hp 17
-sp 20
+arch grass
 x 7
 end
 arch grass
@@ -911,13 +910,13 @@ arch sea
 x 7
 y 19
 end
-arch grass
-x 8
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 8
+end
+arch grass
 x 8
 end
 arch grass
@@ -1021,13 +1020,13 @@ arch sea
 x 8
 y 19
 end
-arch grass
-x 9
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 9
+end
+arch grass
 x 9
 end
 arch grass
@@ -1143,13 +1142,13 @@ arch sea
 x 9
 y 19
 end
-arch grass
-x 10
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 10
+end
+arch grass
 x 10
 end
 arch grass
@@ -1268,13 +1267,13 @@ arch sea
 x 10
 y 19
 end
-arch grass
-x 11
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 11
+end
+arch grass
 x 11
 end
 arch grass
@@ -1391,13 +1390,13 @@ arch sea
 x 11
 y 19
 end
-arch grass
-x 12
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 12
+end
+arch grass
 x 12
 end
 arch grass
@@ -1506,13 +1505,13 @@ arch sea
 x 12
 y 19
 end
-arch grass
-x 13
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 13
+end
+arch grass
 x 13
 end
 arch grass
@@ -1638,13 +1637,13 @@ arch sea
 x 13
 y 19
 end
-arch grass
-x 14
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 14
+end
+arch grass
 x 14
 end
 arch grass
@@ -1762,16 +1761,16 @@ arch sea
 x 14
 y 19
 end
-arch grass
-x 15
-end
-arch tree
-x 15
-end
 arch invis_exit
 slaying islands
 hp 17
 sp 20
+x 15
+end
+arch grass
+x 15
+end
+arch tree
 x 15
 end
 arch grass

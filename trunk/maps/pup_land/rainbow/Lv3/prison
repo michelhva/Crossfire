@@ -436,13 +436,13 @@ arch cave2
 x 3
 y 15
 end
-arch permanent_lava
-x 4
-end
 arch invis_exit
 slaying w-path
 hp 1
 sp 9
+x 4
+end
+arch permanent_lava
 x 4
 end
 arch permanent_lava

@@ -746,14 +746,14 @@ arch grass
 x 5
 y 16
 end
-arch grass
-x 5
-y 17
-end
 arch invis_exit
 slaying ../rainbow/red_town/town
 hp 4
 sp 1
+x 5
+y 17
+end
+arch grass
 x 5
 y 17
 end

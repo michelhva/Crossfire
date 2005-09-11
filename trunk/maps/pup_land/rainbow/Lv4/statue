@@ -83,13 +83,13 @@ end
 arch blocked
 y 15
 end
-arch pstone_1
-x 1
-end
 arch invis_exit
 slaying e-hall
 hp 14
 sp 15
+x 1
+end
+arch pstone_1
 x 1
 end
 arch pstone_1
@@ -493,13 +493,13 @@ arch pstone_1
 x 5
 y 14
 end
-arch pstone_1
-x 5
-y 15
-end
 arch invis_exit
 slaying demi
 hp 1
+x 5
+y 15
+end
+arch pstone_1
 x 5
 y 15
 end
@@ -930,13 +930,13 @@ arch blocked
 x 10
 y 15
 end
-arch pstone_1
-x 11
-end
 arch invis_exit
 slaying path9
 hp 11
 sp 14
+x 11
+end
+arch pstone_1
 x 11
 end
 arch pstone_1

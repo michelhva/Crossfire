@@ -5941,10 +5941,6 @@ arch rough_wall_3_1
 x 31
 y 4
 end
-arch medium_stones
-x 31
-y 5
-end
 arch invis_exit
 slaying cave.b2
 hp 1
@@ -5954,7 +5950,7 @@ y 5
 end
 arch medium_stones
 x 31
-y 6
+y 5
 end
 arch invis_exit
 slaying cave.b2
@@ -5965,7 +5961,7 @@ y 6
 end
 arch medium_stones
 x 31
-y 7
+y 6
 end
 arch invis_exit
 slaying cave.b2
@@ -5976,7 +5972,7 @@ y 7
 end
 arch medium_stones
 x 31
-y 8
+y 7
 end
 arch invis_exit
 slaying cave.b2
@@ -5987,7 +5983,7 @@ y 8
 end
 arch medium_stones
 x 31
-y 9
+y 8
 end
 arch invis_exit
 slaying cave.b2
@@ -5998,12 +5994,16 @@ y 9
 end
 arch medium_stones
 x 31
-y 10
+y 9
 end
 arch invis_exit
 slaying cave.b2
 hp 1
 sp 10
+x 31
+y 10
+end
+arch medium_stones
 x 31
 y 10
 end

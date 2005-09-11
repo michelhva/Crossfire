@@ -108,13 +108,13 @@ end
 arch grass
 y 25
 end
-arch cobblestones2
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+y 26
+end
+arch cobblestones2
 y 26
 end
 arch small_stones
@@ -251,14 +251,14 @@ arch grass
 x 1
 y 25
 end
-arch cobblestones2
-x 1
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 1
+y 26
+end
+arch cobblestones2
 x 1
 y 26
 end
@@ -292,9 +292,9 @@ x 2
 y 3
 end
 arch door_look_1
+no_pass 0
 x 2
 y 3
-no_pass 0
 end
 arch small_stones
 x 2
@@ -400,14 +400,14 @@ arch grass
 x 2
 y 25
 end
-arch cobblestones2
-x 2
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 2
+y 26
+end
+arch cobblestones2
 x 2
 y 26
 end
@@ -557,14 +557,14 @@ arch grass
 x 3
 y 25
 end
-arch cobblestones2
-x 3
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 3
+y 26
+end
+arch cobblestones2
 x 3
 y 26
 end
@@ -698,14 +698,14 @@ arch grass
 x 4
 y 25
 end
-arch cobblestones2
-x 4
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 4
+y 26
+end
+arch cobblestones2
 x 4
 y 26
 end
@@ -724,18 +724,18 @@ x 5
 y 2
 end
 arch button_small
+connected 1
 x 5
 y 3
-connected 1
 end
 arch small_stones
 x 5
 y 3
 end
 arch button_small
+connected 1
 x 5
 y 4
-connected 1
 end
 arch small_stones
 x 5
@@ -857,14 +857,14 @@ arch grass
 x 5
 y 25
 end
-arch cobblestones2
-x 5
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 5
+y 26
+end
+arch cobblestones2
 x 5
 y 26
 end
@@ -891,34 +891,34 @@ x 6
 y 2
 end
 arch button_small
+connected 1
 x 6
 y 3
-connected 1
 end
 arch cobblestones2
 x 6
 y 3
 end
 arch grate_closed_2
-x 6
-y 3
 speed 0.500000
 connected 1
+x 6
+y 3
 end
 arch button_small
+connected 1
 x 6
 y 4
-connected 1
 end
 arch cobblestones2
 x 6
 y 4
 end
 arch grate_closed_2
-x 6
-y 4
 speed 0.500000
 connected 1
+x 6
+y 4
 end
 arch grass
 x 6
@@ -1044,14 +1044,14 @@ arch grass
 x 6
 y 25
 end
-arch cobblestones2
-x 6
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 6
+y 26
+end
+arch cobblestones2
 x 6
 y 26
 end
@@ -1075,18 +1075,18 @@ x 7
 y 2
 end
 arch button_small
+connected 1
 x 7
 y 3
-connected 1
 end
 arch cobblestones2
 x 7
 y 3
 end
 arch button_small
+connected 1
 x 7
 y 4
-connected 1
 end
 arch cobblestones2
 x 7
@@ -1200,14 +1200,14 @@ arch grass
 x 7
 y 25
 end
-arch cobblestones2
-x 7
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 7
+y 26
+end
+arch cobblestones2
 x 7
 y 26
 end
@@ -1338,14 +1338,14 @@ arch grass
 x 8
 y 25
 end
-arch cobblestones2
-x 8
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 8
+y 26
+end
+arch cobblestones2
 x 8
 y 26
 end
@@ -1472,14 +1472,14 @@ arch grass
 x 9
 y 25
 end
-arch cobblestones2
-x 9
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 9
+y 26
+end
+arch cobblestones2
 x 9
 y 26
 end
@@ -1614,14 +1614,14 @@ arch grass
 x 10
 y 25
 end
-arch cobblestones2
-x 10
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 10
+y 26
+end
+arch cobblestones2
 x 10
 y 26
 end
@@ -1756,7 +1756,6 @@ arch sign
 msg
 The quest of Pupland Alchemy Society
 Membership is not available now.
-
 endmsg
 x 11
 y 24
@@ -1765,14 +1764,14 @@ arch grass
 x 11
 y 25
 end
-arch cobblestones2
-x 11
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 11
+y 26
+end
+arch cobblestones2
 x 11
 y 26
 end
@@ -1907,14 +1906,14 @@ arch wwall_2_2_1
 x 12
 y 25
 end
-arch cobblestones2
-x 12
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 12
+y 26
+end
+arch cobblestones2
 x 12
 y 26
 end
@@ -1946,9 +1945,9 @@ x 13
 y 6
 end
 arch door_look_1
+no_pass 0
 x 13
 y 6
-no_pass 0
 end
 arch dungeon_floor
 x 13
@@ -2007,10 +2006,10 @@ x 13
 y 17
 end
 arch cauldron
-x 13
-y 17
 unpaid 1
 identified 1
+x 13
+y 17
 end
 arch shop_empty
 x 13
@@ -2046,15 +2045,15 @@ y 24
 end
 arch key2
 name PAS Member's card
-slaying PAS_Members_card
+face card.111
 msg
 Pupland Alchemy Society
 Member's card.
 endmsg
-face card.111
+slaying PAS_Members_card
+no_pick 1
 x 13
 y 24
-no_pick 1
 end
 arch dungeon_floor
 x 13
@@ -2064,14 +2063,14 @@ arch wwall_2_1_2
 x 13
 y 25
 end
-arch cobblestones2
-x 13
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 13
+y 26
+end
+arch cobblestones2
 x 13
 y 26
 end
@@ -2206,14 +2205,14 @@ arch wwall_2_2_4
 x 14
 y 25
 end
-arch cobblestones2
-x 14
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 14
+y 26
+end
+arch cobblestones2
 x 14
 y 26
 end
@@ -2297,12 +2296,12 @@ msg
 Welcome to the ingredients store,
 Cauldron! 
 endmsg
-hp 100
-x 15
-y 10
 type 0
+hp 100
 monster 1
 friendly 1
+x 15
+y 10
 end
 arch dungeon_floor
 x 15
@@ -2372,14 +2371,14 @@ arch grass
 x 15
 y 25
 end
-arch cobblestones2
-x 15
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 15
+y 26
+end
+arch cobblestones2
 x 15
 y 26
 end
@@ -2514,14 +2513,14 @@ arch evergreen
 x 16
 y 25
 end
-arch cobblestones2
-x 16
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 16
+y 26
+end
+arch cobblestones2
 x 16
 y 26
 end
@@ -2648,14 +2647,14 @@ arch evergreen
 x 17
 y 25
 end
-arch cobblestones2
-x 17
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 17
+y 26
+end
+arch cobblestones2
 x 17
 y 26
 end
@@ -2785,14 +2784,14 @@ arch grass
 x 18
 y 25
 end
-arch cobblestones2
-x 18
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 18
+y 26
+end
+arch cobblestones2
 x 18
 y 26
 end
@@ -2923,14 +2922,14 @@ arch grass
 x 19
 y 25
 end
-arch cobblestones2
-x 19
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 19
+y 26
+end
+arch cobblestones2
 x 19
 y 26
 end
@@ -3069,14 +3068,14 @@ arch grass
 x 20
 y 25
 end
-arch cobblestones2
-x 20
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 20
+y 26
+end
+arch cobblestones2
 x 20
 y 26
 end
@@ -3211,14 +3210,14 @@ arch grass
 x 21
 y 25
 end
-arch cobblestones2
-x 21
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 21
+y 26
+end
+arch cobblestones2
 x 21
 y 26
 end
@@ -3345,14 +3344,14 @@ arch evergreen
 x 22
 y 25
 end
-arch cobblestones2
-x 22
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 22
+y 26
+end
+arch cobblestones2
 x 22
 y 26
 end
@@ -3483,14 +3482,14 @@ arch grass
 x 23
 y 25
 end
-arch cobblestones2
-x 23
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 23
+y 26
+end
+arch cobblestones2
 x 23
 y 26
 end
@@ -3612,22 +3611,22 @@ end
 arch key2
 name Golden
 slaying PAS_GMembers_card
+unique 1
 x 24
 y 25
-unique 1
 end
 arch cwall_1_4
 x 24
 y 25
 end
-arch cobblestones2
-x 24
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
 sp 24
+x 24
+y 26
+end
+arch cobblestones2
 x 24
 y 26
 end
@@ -3756,10 +3755,6 @@ arch cwall_1_3
 x 25
 y 25
 end
-arch cobblestones2
-x 25
-y 26
-end
 arch invis_exit
 slaying city
 hp 14
@@ -3768,11 +3763,11 @@ x 25
 y 26
 end
 arch cobblestones2
-x 26
+x 25
+y 26
 end
 arch cobblestones2
 x 26
-y 1
 end
 arch invis_exit
 slaying city
@@ -3783,7 +3778,7 @@ y 1
 end
 arch cobblestones2
 x 26
-y 2
+y 1
 end
 arch invis_exit
 slaying city
@@ -3794,7 +3789,7 @@ y 2
 end
 arch cobblestones2
 x 26
-y 3
+y 2
 end
 arch invis_exit
 slaying city
@@ -3805,7 +3800,7 @@ y 3
 end
 arch cobblestones2
 x 26
-y 4
+y 3
 end
 arch invis_exit
 slaying city
@@ -3816,7 +3811,7 @@ y 4
 end
 arch cobblestones2
 x 26
-y 5
+y 4
 end
 arch invis_exit
 slaying city
@@ -3827,7 +3822,7 @@ y 5
 end
 arch cobblestones2
 x 26
-y 6
+y 5
 end
 arch invis_exit
 slaying city
@@ -3838,7 +3833,7 @@ y 6
 end
 arch cobblestones2
 x 26
-y 7
+y 6
 end
 arch invis_exit
 slaying city
@@ -3849,7 +3844,7 @@ y 7
 end
 arch cobblestones2
 x 26
-y 8
+y 7
 end
 arch invis_exit
 slaying city
@@ -3860,7 +3855,7 @@ y 8
 end
 arch cobblestones2
 x 26
-y 9
+y 8
 end
 arch invis_exit
 slaying city
@@ -3871,7 +3866,7 @@ y 9
 end
 arch cobblestones2
 x 26
-y 10
+y 9
 end
 arch invis_exit
 slaying city
@@ -3882,7 +3877,7 @@ y 10
 end
 arch cobblestones2
 x 26
-y 11
+y 10
 end
 arch invis_exit
 slaying city
@@ -3893,7 +3888,7 @@ y 11
 end
 arch cobblestones2
 x 26
-y 12
+y 11
 end
 arch invis_exit
 slaying city
@@ -3904,7 +3899,7 @@ y 12
 end
 arch cobblestones2
 x 26
-y 13
+y 12
 end
 arch invis_exit
 slaying city
@@ -3915,7 +3910,7 @@ y 13
 end
 arch cobblestones2
 x 26
-y 14
+y 13
 end
 arch invis_exit
 slaying city
@@ -3926,7 +3921,7 @@ y 14
 end
 arch cobblestones2
 x 26
-y 15
+y 14
 end
 arch invis_exit
 slaying city
@@ -3937,7 +3932,7 @@ y 15
 end
 arch cobblestones2
 x 26
-y 16
+y 15
 end
 arch invis_exit
 slaying city
@@ -3948,7 +3943,7 @@ y 16
 end
 arch cobblestones2
 x 26
-y 17
+y 16
 end
 arch invis_exit
 slaying city
@@ -3959,7 +3954,7 @@ y 17
 end
 arch cobblestones2
 x 26
-y 18
+y 17
 end
 arch invis_exit
 slaying city
@@ -3970,7 +3965,7 @@ y 18
 end
 arch cobblestones2
 x 26
-y 19
+y 18
 end
 arch invis_exit
 slaying city
@@ -3981,7 +3976,7 @@ y 19
 end
 arch cobblestones2
 x 26
-y 20
+y 19
 end
 arch invis_exit
 slaying city
@@ -3992,7 +3987,7 @@ y 20
 end
 arch cobblestones2
 x 26
-y 21
+y 20
 end
 arch invis_exit
 slaying city
@@ -4003,7 +3998,7 @@ y 21
 end
 arch cobblestones2
 x 26
-y 22
+y 21
 end
 arch invis_exit
 slaying city
@@ -4014,7 +4009,7 @@ y 22
 end
 arch cobblestones2
 x 26
-y 23
+y 22
 end
 arch invis_exit
 slaying city
@@ -4025,7 +4020,7 @@ y 23
 end
 arch cobblestones2
 x 26
-y 24
+y 23
 end
 arch invis_exit
 slaying city
@@ -4035,13 +4030,17 @@ x 26
 y 24
 end
 arch cobblestones2
+x 26
+y 24
+end
+arch invis_exit
+slaying city
+hp 14
+sp 24
 x 26
 y 25
 end
-arch invis_exit
-slaying city
-hp 14
-sp 24
+arch cobblestones2
 x 26
 y 25
 end

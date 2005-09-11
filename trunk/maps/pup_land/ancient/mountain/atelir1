@@ -814,10 +814,6 @@ end
 arch mine2
 x 5
 end
-arch flagstone
-x 5
-y 1
-end
 arch magic_mouth
 msg
 Something written on the door:
@@ -832,6 +828,10 @@ Something written on the door:
  bottle of wine
  potion of aethereality"
 endmsg
+x 5
+y 1
+end
+arch flagstone
 x 5
 y 1
 end

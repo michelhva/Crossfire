@@ -3111,10 +3111,6 @@ arch afloor_right
 x 15
 y 14
 end
-arch afloor_right
-x 15
-y 15
-end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
@@ -3124,6 +3120,10 @@ The hall echoes with loud voice:
    But doors will prevent you
    from going through..."
 endmsg
+x 15
+y 15
+end
+arch afloor_right
 x 15
 y 15
 end

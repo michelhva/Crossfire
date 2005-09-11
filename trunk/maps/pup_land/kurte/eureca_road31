@@ -5,8 +5,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr  3 11:40:56 1996
 endmsg
-x 39
-y 39
+width 39
+height 39
 end
 arch blocked
 end
@@ -983,26 +983,24 @@ arch afloor_right
 x 6
 y 5
 end
-arch afloor_right
-x 6
-y 6
-end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
-
   "I'll test your knowledge about
    shining kingdom. Don't mistake..
-
    You will see many illusions..."
 endmsg
 x 6
 y 6
 end
-arch button_lever
+arch afloor_right
 x 6
 y 6
+end
+arch button_lever
 connected 1000
+x 6
+y 6
 end
 arch afloor_right
 x 6
@@ -1339,9 +1337,9 @@ msg
 @match two|three
 Click.
 endmsg
+connected 202
 x 8
 y 13
-connected 202
 end
 arch wall_2_1_1
 x 8
@@ -1392,9 +1390,9 @@ msg
 @match one|two
 Click.
 endmsg
+connected 204
 x 8
 y 20
-connected 204
 end
 arch wall_2_1_1
 x 8
@@ -1445,9 +1443,9 @@ msg
 @match one|two
 Click.
 endmsg
+connected 207
 x 8
 y 27
-connected 207
 end
 arch wall_2_1_1
 x 8
@@ -1521,45 +1519,43 @@ x 9
 y 10
 end
 arch igate_closed_1
-x 9
-y 11
 speed 0.500000
 connected 1000
-end
-arch afloor_right
 x 9
-y 12
+y 11
 end
 arch magic_mouth
 msg
 To join the Liberation Army, where did
 you go?
-
  1. Tower of Ordeal
  2. Power Plant
  3. Tower of Pupuly 
-
 Answer one,two or three.
 endmsg
+x 9
+y 12
+end
+arch afloor_right
 x 9
 y 12
 end
 arch pit_closed
 hp 16
 sp 4
+connected 202
 x 9
 y 13
-connected 202
 end
 arch afloor_right
 x 9
 y 14
 end
 arch igate_closed_1
-x 9
-y 14
 speed 0.500000
 connected 102
+x 9
+y 14
 end
 arch afloor_right
 x 9
@@ -1577,15 +1573,10 @@ arch afloor_right
 x 9
 y 18
 end
-arch afloor_right
-x 9
-y 19
-end
 arch magic_mouth
 msg
 What did you get in the Tower of
 Ordeal?
-
  1. Ordeal key
  2. Eureca Key
  3. some cloak
@@ -1593,22 +1584,26 @@ endmsg
 x 9
 y 19
 end
+arch afloor_right
+x 9
+y 19
+end
 arch pit_closed
 hp 16
 sp 4
+connected 204
 x 9
 y 20
-connected 204
 end
 arch afloor_right
 x 9
 y 21
 end
 arch igate_closed_1
-x 9
-y 21
 speed 0.500000
 connected 104
+x 9
+y 21
 end
 arch afloor_right
 x 9
@@ -1626,39 +1621,37 @@ arch afloor_right
 x 9
 y 25
 end
-arch afloor_right
-x 9
-y 26
-end
 arch magic_mouth
 msg
 There was a scroll in the Tower of
 Ordeal. What was written in it?
-
  1. Bird week
  2. Natural food is healthy
  3. Let's protect nature
-
 endmsg
+x 9
+y 26
+end
+arch afloor_right
 x 9
 y 26
 end
 arch pit_closed
 hp 16
 sp 4
+connected 207
 x 9
 y 27
-connected 207
 end
 arch afloor_right
 x 9
 y 28
 end
 arch igate_closed_1
-x 9
-y 28
 speed 0.500000
 connected 107
+x 9
+y 28
 end
 arch afloor_right
 x 9
@@ -1740,9 +1733,9 @@ msg
 @match one
 Click.
 endmsg
+connected 102
 x 10
 y 13
-connected 102
 end
 arch wall_2_1_1
 x 10
@@ -1793,9 +1786,9 @@ msg
 @match three
 Click.
 endmsg
+connected 104
 x 10
 y 20
-connected 104
 end
 arch wall_2_1_1
 x 10
@@ -1846,9 +1839,9 @@ msg
 @match three
 Click.
 endmsg
+connected 107
 x 10
 y 27
-connected 107
 end
 arch wall_2_1_1
 x 10
@@ -1872,12 +1865,12 @@ msg
 @match *
 Do you want to join us? 
 endmsg
-hp 100
-x 10
-y 29
 type 0
+hp 100
 monster 1
 friendly 1
+x 10
+y 29
 end
 arch afloor_right
 x 10
@@ -1927,10 +1920,10 @@ x 11
 y 8
 end
 arch igate_closed_2
-x 11
-y 9
 speed 0.500000
 connected 1000
+x 11
+y 9
 end
 arch wall_2_1_2
 x 11
@@ -2111,21 +2104,19 @@ arch wall_3_1
 x 12
 y 8
 end
-arch afloor_right
-x 12
-y 9
-end
 arch magic_mouth
 msg
 To join the Regular Army, where did
 you go?
-
  1. Tower of Ordeal
  2. Power Plant
  3. Tower of Pupuly 
-
 Answer one,two or three.
 endmsg
+x 12
+y 9
+end
+arch afloor_right
 x 12
 y 9
 end
@@ -2161,18 +2152,17 @@ arch wall_2_1_2
 x 12
 y 15
 end
-arch afloor_right
-x 12
-y 16
-end
 arch magic_mouth
 msg
 Who are servants of Eureca?
-
  1. Pupuly ,only
  2. Pupuly & Cordish
  3. Pupuly & Bauer
 endmsg
+x 12
+y 16
+end
+arch afloor_right
 x 12
 y 16
 end
@@ -2208,18 +2198,17 @@ arch wall_2_1_2
 x 12
 y 22
 end
-arch afloor_right
-x 12
-y 23
-end
 arch magic_mouth
 msg
 What did you encounter in the Cave?
-
  1. Mistelious Room
  2. Eternal Road
  3. Ultimate Route
 endmsg
+x 12
+y 23
+end
+arch afloor_right
 x 12
 y 23
 end
@@ -2255,11 +2244,11 @@ arch wall_2_1_2
 x 12
 y 29
 end
-arch afloor_right
+arch magic_mouth
 x 12
 y 30
 end
-arch magic_mouth
+arch afloor_right
 x 12
 y 30
 end
@@ -2315,9 +2304,9 @@ msg
 @match one
 Click.
 endmsg
+connected 301
 x 13
 y 8
-connected 301
 end
 arch wall_2_1_2
 x 13
@@ -2326,9 +2315,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 401
 x 13
 y 9
-connected 401
 end
 arch afloor_right
 x 13
@@ -2339,9 +2328,9 @@ msg
 @match two|three
 Click.
 endmsg
+connected 401
 x 13
 y 10
-connected 401
 end
 arch wall_2_1_2
 x 13
@@ -2372,9 +2361,9 @@ msg
 @match two
 Click.
 endmsg
+connected 304
 x 13
 y 15
-connected 304
 end
 arch wall_2_1_2
 x 13
@@ -2383,9 +2372,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 404
 x 13
 y 16
-connected 404
 end
 arch afloor_right
 x 13
@@ -2396,9 +2385,9 @@ msg
 @match one|three
 Click.
 endmsg
+connected 404
 x 13
 y 17
-connected 404
 end
 arch wall_2_1_2
 x 13
@@ -2429,9 +2418,9 @@ msg
 @match two
 Click.
 endmsg
+connected 307
 x 13
 y 22
-connected 307
 end
 arch wall_2_1_2
 x 13
@@ -2440,9 +2429,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 407
 x 13
 y 23
-connected 407
 end
 arch afloor_right
 x 13
@@ -2453,9 +2442,9 @@ msg
 @match one|three
 Click.
 endmsg
+connected 407
 x 13
 y 24
-connected 407
 end
 arch wall_2_1_2
 x 13
@@ -2486,9 +2475,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 13
 y 29
-connected 30
 end
 arch wall_2_1_2
 x 13
@@ -2497,9 +2486,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 13
 y 30
-connected 205
 end
 arch afloor_right
 x 13
@@ -2510,9 +2499,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 13
 y 31
-connected 40
 end
 arch wall_2_1_2
 x 13
@@ -2566,10 +2555,10 @@ x 14
 y 9
 end
 arch igate_closed_2
-x 14
-y 9
 speed 0.500000
 connected 301
+x 14
+y 9
 end
 arch afloor_right
 x 14
@@ -2616,10 +2605,10 @@ x 14
 y 16
 end
 arch igate_closed_2
-x 14
-y 16
 speed 0.500000
 connected 304
+x 14
+y 16
 end
 arch afloor_right
 x 14
@@ -2666,10 +2655,10 @@ x 14
 y 23
 end
 arch igate_closed_2
-x 14
-y 23
 speed 0.500000
 connected 307
+x 14
+y 23
 end
 arch afloor_right
 x 14
@@ -2716,10 +2705,10 @@ x 14
 y 30
 end
 arch igate_closed_2
-x 14
-y 30
 speed 0.500000
 connected 305
+x 14
+y 30
 end
 arch afloor_right
 x 14
@@ -2809,9 +2798,9 @@ msg
 @match two|three
 Click.
 endmsg
+connected 203
 x 15
 y 13
-connected 203
 end
 arch wall_2_1_1
 x 15
@@ -2862,9 +2851,9 @@ msg
 @match one|three
 Click.
 endmsg
+connected 206
 x 15
 y 20
-connected 206
 end
 arch wall_2_1_1
 x 15
@@ -2915,9 +2904,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 15
 y 27
-connected 201
 end
 arch wall_2_1_1
 x 15
@@ -2998,14 +2987,9 @@ arch afloor_right
 x 16
 y 11
 end
-arch afloor_right
-x 16
-y 12
-end
 arch magic_mouth
 msg
 Who attacked Tower of Pupuly?
-
  1. Nuzgul
  2. Ologhi
  3. Evil master
@@ -3013,22 +2997,26 @@ endmsg
 x 16
 y 12
 end
+arch afloor_right
+x 16
+y 12
+end
 arch pit_closed
 hp 16
 sp 4
+connected 203
 x 16
 y 13
-connected 203
 end
 arch afloor_right
 x 16
 y 14
 end
 arch igate_closed_1
-x 16
-y 14
 speed 0.500000
 connected 103
+x 16
+y 14
 end
 arch afloor_right
 x 16
@@ -3046,14 +3034,9 @@ arch afloor_right
 x 16
 y 18
 end
-arch afloor_right
-x 16
-y 19
-end
 arch magic_mouth
 msg
 Which statement is correct?
-
  1. Eureca is the boss of gang.
  2. Eureca has the Treasure.
  3. Eureca's wife is Bauer.
@@ -3061,22 +3044,26 @@ endmsg
 x 16
 y 19
 end
+arch afloor_right
+x 16
+y 19
+end
 arch pit_closed
 hp 16
 sp 4
+connected 206
 x 16
 y 20
-connected 206
 end
 arch afloor_right
 x 16
 y 21
 end
 arch igate_closed_1
-x 16
-y 21
 speed 0.500000
 connected 106
+x 16
+y 21
 end
 arch afloor_right
 x 16
@@ -3094,30 +3081,30 @@ arch afloor_right
 x 16
 y 25
 end
-arch afloor_right
+arch magic_mouth
 x 16
 y 26
 end
-arch magic_mouth
+arch afloor_right
 x 16
 y 26
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 16
 y 27
-connected 105
 end
 arch afloor_right
 x 16
 y 28
 end
 arch igate_closed_1
-x 16
-y 28
 speed 0.500000
 connected 5
+x 16
+y 28
 end
 arch afloor_right
 x 16
@@ -3219,9 +3206,9 @@ msg
 @match one
 Click.
 endmsg
+connected 103
 x 17
 y 13
-connected 103
 end
 arch wall_2_1_1
 x 17
@@ -3246,10 +3233,10 @@ msg
 Thank you for saving me. 
 endmsg
 hp 500
-x 17
-y 15
 friendly 1
 unaggressive 0
+x 17
+y 15
 end
 arch afloor_right
 x 17
@@ -3284,9 +3271,9 @@ msg
 @match two
 Click.
 endmsg
+connected 106
 x 17
 y 20
-connected 106
 end
 arch wall_2_1_1
 x 17
@@ -3337,9 +3324,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 17
 y 27
-connected 101
 end
 arch wall_2_1_1
 x 17
@@ -3603,18 +3590,17 @@ arch wall_2_1_2
 x 19
 y 8
 end
-arch afloor_right
-x 19
-y 9
-end
 arch magic_mouth
 msg
 What is Cordish?
-
  1. Pupuly's servant
  2. Bauer's spy
  3. Eureca's servant
 endmsg
+x 19
+y 9
+end
+arch afloor_right
 x 19
 y 9
 end
@@ -3650,18 +3636,17 @@ arch wall_2_1_2
 x 19
 y 15
 end
-arch afloor_right
-x 19
-y 16
-end
 arch magic_mouth
 msg
 Where did the Reguler Army reach?
-
  1. Upper level of the Castle of Eureca
  2. Underground of the Castle of Eureca
  3. Entrance of the Castle of Eureca
 endmsg
+x 19
+y 16
+end
+arch afloor_right
 x 19
 y 16
 end
@@ -3697,11 +3682,11 @@ arch wall_2_1_2
 x 19
 y 22
 end
-arch afloor_right
+arch magic_mouth
 x 19
 y 23
 end
-arch magic_mouth
+arch afloor_right
 x 19
 y 23
 end
@@ -3737,11 +3722,11 @@ arch wall_2_1_2
 x 19
 y 29
 end
-arch afloor_right
+arch magic_mouth
 x 19
 y 30
 end
-arch magic_mouth
+arch afloor_right
 x 19
 y 30
 end
@@ -3809,9 +3794,9 @@ msg
 @match three
 Click.
 endmsg
+connected 303
 x 20
 y 8
-connected 303
 end
 arch wall_2_1_2
 x 20
@@ -3820,9 +3805,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 403
 x 20
 y 9
-connected 403
 end
 arch afloor_right
 x 20
@@ -3833,9 +3818,9 @@ msg
 @match one|two
 Click.
 endmsg
+connected 403
 x 20
 y 10
-connected 403
 end
 arch wall_2_1_2
 x 20
@@ -3866,9 +3851,9 @@ msg
 @match two
 Click.
 endmsg
+connected 306
 x 20
 y 15
-connected 306
 end
 arch wall_2_1_2
 x 20
@@ -3877,9 +3862,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 406
 x 20
 y 16
-connected 406
 end
 arch afloor_right
 x 20
@@ -3890,9 +3875,9 @@ msg
 @match one|three
 Click.
 endmsg
+connected 406
 x 20
 y 17
-connected 406
 end
 arch wall_2_1_2
 x 20
@@ -3923,9 +3908,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 20
 y 22
-connected 30
 end
 arch wall_2_1_2
 x 20
@@ -3934,9 +3919,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 20
 y 23
-connected 205
 end
 arch afloor_right
 x 20
@@ -3947,9 +3932,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 20
 y 24
-connected 40
 end
 arch wall_2_1_2
 x 20
@@ -3980,9 +3965,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 20
 y 29
-connected 30
 end
 arch wall_2_1_2
 x 20
@@ -3991,9 +3976,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 20
 y 30
-connected 205
 end
 arch afloor_right
 x 20
@@ -4004,9 +3989,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 20
 y 31
-connected 40
 end
 arch wall_2_1_2
 x 20
@@ -4064,10 +4049,10 @@ x 21
 y 9
 end
 arch igate_closed_2
-x 21
-y 9
 speed 0.500000
 connected 303
+x 21
+y 9
 end
 arch afloor_right
 x 21
@@ -4114,10 +4099,10 @@ x 21
 y 16
 end
 arch igate_closed_2
-x 21
-y 16
 speed 0.500000
 connected 306
+x 21
+y 16
 end
 arch afloor_right
 x 21
@@ -4164,10 +4149,10 @@ x 21
 y 23
 end
 arch igate_closed_2
-x 21
-y 23
 speed 0.500000
 connected 305
+x 21
+y 23
 end
 arch afloor_right
 x 21
@@ -4214,10 +4199,10 @@ x 21
 y 30
 end
 arch igate_closed_2
-x 21
-y 30
 speed 0.500000
 connected 305
+x 21
+y 30
 end
 arch afloor_right
 x 21
@@ -4319,9 +4304,9 @@ msg
 @match two|three
 Click.
 endmsg
+connected 205
 x 22
 y 13
-connected 205
 end
 arch wall_2_1_1
 x 22
@@ -4372,9 +4357,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 22
 y 20
-connected 201
 end
 arch wall_2_1_1
 x 22
@@ -4425,9 +4410,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 22
 y 27
-connected 201
 end
 arch wall_2_1_1
 x 22
@@ -4508,14 +4493,9 @@ arch afloor_right
 x 23
 y 11
 end
-arch afloor_right
-x 23
-y 12
-end
 arch magic_mouth
 msg
 Why did the war occur?
-
  1. Eureca's absence
  2. Bauer's absence
  3. Alex's absence
@@ -4523,22 +4503,26 @@ endmsg
 x 23
 y 12
 end
+arch afloor_right
+x 23
+y 12
+end
 arch pit_closed
 hp 16
 sp 4
+connected 205
 x 23
 y 13
-connected 205
 end
 arch afloor_right
 x 23
 y 14
 end
 arch igate_closed_1
-x 23
-y 14
 speed 0.500000
 connected 105
+x 23
+y 14
 end
 arch afloor_right
 x 23
@@ -4556,30 +4540,30 @@ arch afloor_right
 x 23
 y 18
 end
-arch afloor_right
+arch magic_mouth
 x 23
 y 19
 end
-arch magic_mouth
+arch afloor_right
 x 23
 y 19
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 23
 y 20
-connected 105
 end
 arch afloor_right
 x 23
 y 21
 end
 arch igate_closed_1
-x 23
-y 21
 speed 0.500000
 connected 5
+x 23
+y 21
 end
 arch afloor_right
 x 23
@@ -4597,30 +4581,30 @@ arch afloor_right
 x 23
 y 25
 end
-arch afloor_right
+arch magic_mouth
 x 23
 y 26
 end
-arch magic_mouth
+arch afloor_right
 x 23
 y 26
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 23
 y 27
-connected 105
 end
 arch afloor_right
 x 23
 y 28
 end
 arch igate_closed_1
-x 23
-y 28
 speed 0.500000
 connected 5
+x 23
+y 28
 end
 arch afloor_right
 x 23
@@ -4722,9 +4706,9 @@ msg
 @match one
 Click.
 endmsg
+connected 105
 x 24
 y 13
-connected 105
 end
 arch wall_2_1_1
 x 24
@@ -4750,11 +4734,11 @@ Go away.
 endmsg
 Con 30
 hp 5000
-x 24
-y 15
 level 1
 friendly 1
 unaggressive 0
+x 24
+y 15
 end
 arch afloor_right
 x 24
@@ -4789,9 +4773,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 24
 y 20
-connected 101
 end
 arch wall_2_1_1
 x 24
@@ -4842,9 +4826,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 24
 y 27
-connected 101
 end
 arch wall_2_1_1
 x 24
@@ -5112,18 +5096,17 @@ arch wall_2_1_2
 x 26
 y 8
 end
-arch afloor_right
-x 26
-y 9
-end
 arch magic_mouth
 msg
 Where is the Eureca's Treasure?
-
  1. under the Kurte's house
  2. under the Castle of Eureca
  3. under the Castle of Bauer
 endmsg
+x 26
+y 9
+end
+arch afloor_right
 x 26
 y 9
 end
@@ -5159,11 +5142,11 @@ arch wall_2_1_2
 x 26
 y 15
 end
-arch afloor_right
+arch magic_mouth
 x 26
 y 16
 end
-arch magic_mouth
+arch afloor_right
 x 26
 y 16
 end
@@ -5199,11 +5182,11 @@ arch wall_2_1_2
 x 26
 y 22
 end
-arch afloor_right
+arch magic_mouth
 x 26
 y 23
 end
-arch magic_mouth
+arch afloor_right
 x 26
 y 23
 end
@@ -5239,11 +5222,11 @@ arch wall_2_1_2
 x 26
 y 29
 end
-arch afloor_right
+arch magic_mouth
 x 26
 y 30
 end
-arch magic_mouth
+arch afloor_right
 x 26
 y 30
 end
@@ -5311,9 +5294,9 @@ msg
 @match two
 Click.
 endmsg
+connected 305
 x 27
 y 8
-connected 305
 end
 arch wall_2_1_2
 x 27
@@ -5322,9 +5305,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 27
 y 9
-connected 205
 end
 arch afloor_right
 x 27
@@ -5335,9 +5318,9 @@ msg
 @match one|three
 Click.
 endmsg
-x 27
-y 10
 connected 405
+x 27
+y 10
 end
 arch wall_2_1_2
 x 27
@@ -5368,9 +5351,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 27
 y 15
-connected 30
 end
 arch wall_2_1_2
 x 27
@@ -5379,9 +5362,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 27
 y 16
-connected 205
 end
 arch afloor_right
 x 27
@@ -5392,9 +5375,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 27
 y 17
-connected 40
 end
 arch wall_2_1_2
 x 27
@@ -5425,9 +5408,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 27
 y 22
-connected 30
 end
 arch wall_2_1_2
 x 27
@@ -5436,9 +5419,9 @@ end
 arch pit_closed
 hp 3
 sp 15
+connected 205
 x 27
 y 23
-connected 205
 end
 arch afloor_right
 x 27
@@ -5449,9 +5432,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 27
 y 24
-connected 40
 end
 arch wall_2_1_2
 x 27
@@ -5482,9 +5465,9 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 27
 y 29
-connected 30
 end
 arch wall_2_1_2
 x 27
@@ -5493,9 +5476,9 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 27
-y 30
 connected 205
+x 27
+y 30
 end
 arch afloor_right
 x 27
@@ -5506,9 +5489,9 @@ msg
 @match miss
 Click.
 endmsg
-x 27
-y 31
 connected 40
+x 27
+y 31
 end
 arch wall_2_1_2
 x 27
@@ -5566,10 +5549,10 @@ x 28
 y 9
 end
 arch igate_closed_2
-x 28
-y 9
 speed 0.500000
 connected 305
+x 28
+y 9
 end
 arch afloor_right
 x 28
@@ -5616,10 +5599,10 @@ x 28
 y 16
 end
 arch igate_closed_2
-x 28
-y 16
 speed 0.500000
 connected 305
+x 28
+y 16
 end
 arch afloor_right
 x 28
@@ -5666,10 +5649,10 @@ x 28
 y 23
 end
 arch igate_closed_2
-x 28
-y 23
 speed 0.500000
 connected 305
+x 28
+y 23
 end
 arch afloor_right
 x 28
@@ -5716,10 +5699,10 @@ x 28
 y 30
 end
 arch igate_closed_2
-x 28
-y 30
 speed 0.500000
 connected 305
+x 28
+y 30
 end
 arch afloor_right
 x 28
@@ -5821,9 +5804,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 29
 y 13
-connected 201
 end
 arch wall_2_1_1
 x 29
@@ -5874,9 +5857,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 29
 y 20
-connected 201
 end
 arch wall_2_1_1
 x 29
@@ -5927,9 +5910,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 201
 x 29
 y 27
-connected 201
 end
 arch wall_2_1_1
 x 29
@@ -6014,30 +5997,30 @@ arch afloor_right
 x 30
 y 11
 end
-arch afloor_right
+arch magic_mouth
 x 30
 y 12
 end
-arch magic_mouth
+arch afloor_right
 x 30
 y 12
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 30
 y 13
-connected 105
 end
 arch afloor_right
 x 30
 y 14
 end
 arch igate_closed_1
-x 30
-y 14
 speed 0.500000
 connected 5
+x 30
+y 14
 end
 arch afloor_right
 x 30
@@ -6055,30 +6038,30 @@ arch afloor_right
 x 30
 y 18
 end
-arch afloor_right
+arch magic_mouth
 x 30
 y 19
 end
-arch magic_mouth
+arch afloor_right
 x 30
 y 19
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 30
 y 20
-connected 105
 end
 arch afloor_right
 x 30
 y 21
 end
 arch igate_closed_1
-x 30
-y 21
 speed 0.500000
 connected 5
+x 30
+y 21
 end
 arch afloor_right
 x 30
@@ -6096,30 +6079,30 @@ arch afloor_right
 x 30
 y 25
 end
-arch afloor_right
+arch magic_mouth
 x 30
 y 26
 end
-arch magic_mouth
+arch afloor_right
 x 30
 y 26
 end
 arch pit_closed
 hp 16
 sp 4
+connected 105
 x 30
 y 27
-connected 105
 end
 arch afloor_right
 x 30
 y 28
 end
 arch igate_closed_1
-x 30
-y 28
 speed 0.500000
 connected 5
+x 30
+y 28
 end
 arch afloor_right
 x 30
@@ -6225,9 +6208,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 31
 y 13
-connected 101
 end
 arch wall_2_1_1
 x 31
@@ -6278,9 +6261,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 31
 y 20
-connected 101
 end
 arch wall_2_1_1
 x 31
@@ -6331,9 +6314,9 @@ msg
 @match good
 Click.
 endmsg
+connected 101
 x 31
 y 27
-connected 101
 end
 arch wall_2_1_1
 x 31
@@ -6697,11 +6680,11 @@ arch wall_2_1_2
 x 33
 y 29
 end
-arch afloor_right
+arch magic_mouth
 x 33
 y 30
 end
-arch magic_mouth
+arch afloor_right
 x 33
 y 30
 end
@@ -6789,19 +6772,19 @@ msg
 @match good
 Click.
 endmsg
+connected 30
 x 34
 y 29
-connected 30
 end
 arch wall_2_2_4
 x 34
 y 29
 end
 arch igate_closed_2
-x 34
-y 30
 speed 0.500000
 connected 305
+x 34
+y 30
 end
 arch afloor_right
 x 34
@@ -6812,9 +6795,9 @@ msg
 @match miss
 Click.
 endmsg
+connected 40
 x 34
 y 31
-connected 40
 end
 arch wall_2_2_3
 x 34

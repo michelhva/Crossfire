@@ -134,13 +134,13 @@ arch permanent_lava
 x 1
 y 8
 end
-arch permanent_lava
-x 1
-y 9
-end
 arch invis_exit
 slaying prison
 hp 4
+x 1
+y 9
+end
+arch permanent_lava
 x 1
 y 9
 end
@@ -1216,13 +1216,13 @@ end
 arch cave4
 x 19
 end
-arch permanent_lava
-x 19
-y 1
-end
 arch invis_exit
 slaying e_hall
 sp 1
+x 19
+y 1
+end
+arch permanent_lava
 x 19
 y 1
 end

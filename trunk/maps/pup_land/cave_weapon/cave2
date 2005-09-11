@@ -3262,14 +3262,14 @@ protected 70
 invisible 1
 connected 70
 end
-arch dungeon_floor
-x 14
-y 21
-end
 arch magic_mouth
 msg
 Guard Room
 endmsg
+x 14
+y 21
+end
+arch dungeon_floor
 x 14
 y 21
 end

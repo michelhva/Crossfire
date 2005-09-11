@@ -2669,13 +2669,13 @@ x 20
 y 14
 no_pass 0
 end
-arch cobblestones2
-x 20
-y 15
-end
 arch invis_exit
 slaying city
 hp 23
+x 20
+y 15
+end
+arch cobblestones2
 x 20
 y 15
 end

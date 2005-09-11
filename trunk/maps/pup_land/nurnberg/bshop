@@ -10,12 +10,12 @@ x 25
 y 23
 level 5
 end
-arch cobblestones
-end
 arch invis_exit
 slaying city
 hp 17
 sp 16
+end
+arch cobblestones
 end
 arch grass
 y 1
@@ -787,13 +787,13 @@ arch biglake_center
 x 6
 y 22
 end
-arch cobblestones
-x 7
-end
 arch invis_exit
 slaying city
 hp 18
 sp 16
+x 7
+end
+arch cobblestones
 x 7
 end
 arch cobblestones
@@ -900,13 +900,13 @@ arch biglake_center
 x 7
 y 22
 end
-arch cobblestones
-x 8
-end
 arch invis_exit
 slaying city
 hp 18
 sp 16
+x 8
+end
+arch cobblestones
 x 8
 end
 arch cobblestones
@@ -2812,13 +2812,13 @@ arch biglake_ne
 x 23
 y 22
 end
-arch cobblestones
-x 24
-end
 arch invis_exit
 slaying city
 hp 20
 sp 16
+x 24
+end
+arch cobblestones
 x 24
 end
 arch grass

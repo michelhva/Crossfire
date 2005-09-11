@@ -2751,14 +2751,14 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch small_stones
-x 10
-y 4
-end
 arch invis_exit
 slaying raffle2_u3a
 hp 6
 sp 13
+x 10
+y 4
+end
+arch small_stones
 x 10
 y 4
 end
@@ -3926,14 +3926,14 @@ arch small_stones
 x 14
 y 3
 end
-arch small_stones
-x 14
-y 4
-end
 arch invis_exit
 slaying raffle2_u3a
 hp 10
 sp 13
+x 14
+y 4
+end
+arch small_stones
 x 14
 y 4
 end

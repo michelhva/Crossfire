@@ -11151,6 +11151,14 @@ endmsg
 x 26
 y 1
 end
+arch button_small
+x 26
+y 1
+protected 10
+weight 3158
+invisible 1
+connected 10
+end
 arch afloor_right
 x 26
 y 1
@@ -11162,14 +11170,6 @@ x 26
 y 1
 weight 0
 no_pick 1
-end
-arch button_small
-x 26
-y 1
-protected 10
-weight 3158
-invisible 1
-connected 10
 end
 arch key2
 name Cristal Ball

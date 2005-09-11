@@ -946,18 +946,18 @@ arch small_stones
 x 6
 y 13
 end
+arch invis_exit
+slaying raffle2_u3
+hp 10
+sp 5
+x 6
+y 14
+end
 arch small_stones
 x 6
 y 14
 end
 arch dungeon_magic
-x 6
-y 14
-end
-arch invis_exit
-slaying raffle2_u3
-hp 10
-sp 5
 x 6
 y 14
 end
@@ -1505,14 +1505,14 @@ arch small_stones
 x 10
 y 13
 end
-arch small_stones
-x 10
-y 14
-end
 arch invis_exit
 slaying raffle2_u3
 hp 14
 sp 5
+x 10
+y 14
+end
+arch small_stones
 x 10
 y 14
 end

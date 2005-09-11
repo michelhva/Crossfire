@@ -6,8 +6,8 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr  3 11:40:56 1996
 endmsg
-x 39
-y 39
+width 39
+height 39
 end
 arch blocked
 end
@@ -1251,10 +1251,6 @@ arch afloor_right
 x 6
 y 5
 end
-arch afloor_right
-x 6
-y 6
-end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
@@ -1265,9 +1261,11 @@ endmsg
 x 6
 y 6
 end
-arch button_lever
+arch afloor_right
 x 6
 y 6
+end
+arch button_lever
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
@@ -1275,6 +1273,8 @@ resist_drain 30
 resist_weaponmagic 30
 resist_ghosthit 30
 connected 1000
+x 6
+y 6
 end
 arch afloor_right
 x 6
@@ -1721,13 +1721,13 @@ msg
 @match two|three
 Click.
 endmsg
-x 8
-y 13
 resist_magic 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 202
+x 8
+y 13
 end
 arch wall_2_1_1
 x 8
@@ -1778,13 +1778,13 @@ msg
 @match one|two
 Click.
 endmsg
-x 8
-y 20
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 204
+x 8
+y 20
 end
 arch wall_2_1_1
 x 8
@@ -1835,8 +1835,6 @@ msg
 @match one|two
 Click.
 endmsg
-x 8
-y 27
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -1844,6 +1842,8 @@ resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 207
+x 8
+y 27
 end
 arch wall_2_1_1
 x 8
@@ -1957,8 +1957,6 @@ x 9
 y 11
 end
 arch igate_closed_1
-x 9
-y 11
 speed 0.500000
 resist_electricity 30
 resist_confusion 30
@@ -1967,10 +1965,8 @@ resist_drain 30
 resist_weaponmagic 30
 resist_ghosthit 30
 connected 1000
-end
-arch afloor_right
 x 9
-y 12
+y 11
 end
 arch magic_mouth
 msg
@@ -1986,32 +1982,36 @@ y 12
 end
 arch afloor_right
 x 9
+y 12
+end
+arch afloor_right
+x 9
 y 13
 end
 arch pit_closed
 hp 16
 sp 4
-x 9
-y 13
 resist_magic 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 202
+x 9
+y 13
 end
 arch afloor_right
 x 9
 y 14
 end
 arch igate_closed_1
-x 9
-y 14
 speed 0.500000
 resist_magic 30
 resist_fire 30
 resist_confusion 30
 resist_acid 30
 connected 102
+x 9
+y 14
 end
 arch afloor_right
 x 9
@@ -2029,10 +2029,6 @@ arch afloor_right
 x 9
 y 18
 end
-arch afloor_right
-x 9
-y 19
-end
 arch magic_mouth
 msg
 What is located under Nurnberg ?
@@ -2045,31 +2041,35 @@ y 19
 end
 arch afloor_right
 x 9
+y 19
+end
+arch afloor_right
+x 9
 y 20
 end
 arch pit_closed
 hp 16
 sp 4
-x 9
-y 20
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 204
+x 9
+y 20
 end
 arch afloor_right
 x 9
 y 21
 end
 arch igate_closed_1
-x 9
-y 21
 speed 0.500000
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 104
+x 9
+y 21
 end
 arch afloor_right
 x 9
@@ -2087,10 +2087,6 @@ arch afloor_right
 x 9
 y 25
 end
-arch afloor_right
-x 9
-y 26
-end
 arch magic_mouth
 msg
 There was a scroll in the Tower of
@@ -2104,13 +2100,15 @@ y 26
 end
 arch afloor_right
 x 9
+y 26
+end
+arch afloor_right
+x 9
 y 27
 end
 arch pit_closed
 hp 16
 sp 4
-x 9
-y 27
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -2118,14 +2116,14 @@ resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 207
+x 9
+y 27
 end
 arch afloor_right
 x 9
 y 28
 end
 arch igate_closed_1
-x 9
-y 28
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -2133,6 +2131,8 @@ resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 107
+x 9
+y 28
 end
 arch afloor_right
 x 9
@@ -2262,13 +2262,13 @@ msg
 @match one
 Click.
 endmsg
-x 10
-y 13
 resist_magic 30
 resist_fire 30
 resist_confusion 30
 resist_acid 30
 connected 102
+x 10
+y 13
 end
 arch wall_2_1_1
 x 10
@@ -2319,12 +2319,12 @@ msg
 @match three
 Click.
 endmsg
-x 10
-y 20
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 104
+x 10
+y 20
 end
 arch wall_2_1_1
 x 10
@@ -2375,14 +2375,14 @@ msg
 @match three
 Click.
 endmsg
-x 10
-y 27
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 107
+x 10
+y 27
 end
 arch wall_2_1_1
 x 10
@@ -2414,12 +2414,12 @@ msg
 @match hi|hello
 Do you want to join us? 
 endmsg
-hp 100
-x 10
-y 31
 type 0
+hp 100
 monster 1
 friendly 1
+x 10
+y 31
 end
 arch afloor_right
 x 10
@@ -2513,8 +2513,6 @@ x 11
 y 9
 end
 arch igate_closed_2
-x 11
-y 9
 speed 0.500000
 resist_electricity 30
 resist_confusion 30
@@ -2523,6 +2521,8 @@ resist_drain 30
 resist_weaponmagic 30
 resist_ghosthit 30
 connected 1000
+x 11
+y 9
 end
 arch afloor_right
 x 11
@@ -2751,10 +2751,6 @@ arch wall_3_1
 x 12
 y 8
 end
-arch afloor_right
-x 12
-y 9
-end
 arch magic_mouth
 msg
 To join the Regular Army, where did
@@ -2764,6 +2760,10 @@ you go?
  3. Tower of Pupuly 
 Answer one,two or three.
 endmsg
+x 12
+y 9
+end
+arch afloor_right
 x 12
 y 9
 end
@@ -2799,10 +2799,6 @@ arch wall_2_1_2
 x 12
 y 15
 end
-arch afloor_right
-x 12
-y 16
-end
 arch magic_mouth
 msg
 Who are servants of Eureca?
@@ -2810,6 +2806,10 @@ Who are servants of Eureca?
  2. Pupuly & Cordish
  3. Pupuly & Bauer
 endmsg
+x 12
+y 16
+end
+arch afloor_right
 x 12
 y 16
 end
@@ -2845,10 +2845,6 @@ arch wall_2_1_2
 x 12
 y 22
 end
-arch afloor_right
-x 12
-y 23
-end
 arch magic_mouth
 msg
 What did you encounter in the Cave?
@@ -2856,6 +2852,10 @@ What did you encounter in the Cave?
  2. Eternal Road
  3. Ultimate Route
 endmsg
+x 12
+y 23
+end
+arch afloor_right
 x 12
 y 23
 end
@@ -2891,16 +2891,16 @@ arch wall_2_1_2
 x 12
 y 29
 end
-arch afloor_right
-x 12
-y 30
-end
 arch magic_mouth
 msg
 To go to the "agito" of liberation
 army,
 you tell password to ...
 endmsg
+x 12
+y 30
+end
+arch afloor_right
 x 12
 y 30
 end
@@ -2984,14 +2984,14 @@ msg
 @match one
 Click.
 endmsg
-x 13
-y 8
 resist_physical 30
 resist_fire 30
 resist_electricity 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 301
+x 13
+y 8
 end
 arch wall_2_1_2
 x 13
@@ -3004,13 +3004,13 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 13
-y 9
 resist_physical 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 401
+x 13
+y 9
 end
 arch afloor_right
 x 13
@@ -3021,13 +3021,13 @@ msg
 @match two|three
 Click.
 endmsg
-x 13
-y 10
 resist_physical 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 401
+x 13
+y 10
 end
 arch wall_2_1_2
 x 13
@@ -3058,12 +3058,12 @@ msg
 @match two
 Click.
 endmsg
-x 13
-y 15
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 304
+x 13
+y 15
 end
 arch wall_2_1_2
 x 13
@@ -3076,13 +3076,13 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 13
-y 16
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 404
+x 13
+y 16
 end
 arch afloor_right
 x 13
@@ -3093,13 +3093,13 @@ msg
 @match one|three
 Click.
 endmsg
-x 13
-y 17
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 404
+x 13
+y 17
 end
 arch wall_2_1_2
 x 13
@@ -3130,14 +3130,14 @@ msg
 @match two
 Click.
 endmsg
-x 13
-y 22
 resist_physical 30
 resist_magic 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 307
+x 13
+y 22
 end
 arch wall_2_1_2
 x 13
@@ -3150,8 +3150,6 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 13
-y 23
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -3159,6 +3157,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 407
+x 13
+y 23
 end
 arch afloor_right
 x 13
@@ -3169,8 +3169,6 @@ msg
 @match one|three
 Click.
 endmsg
-x 13
-y 24
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -3178,6 +3176,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 407
+x 13
+y 24
 end
 arch wall_2_1_2
 x 13
@@ -3208,8 +3208,6 @@ msg
 @match tree|Tree
 Click.
 endmsg
-x 13
-y 29
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -3217,6 +3215,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 311
+x 13
+y 29
 end
 arch wall_2_1_2
 x 13
@@ -3229,8 +3229,6 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 13
-y 30
 resist_physical 30
 resist_magic 30
 resist_electricity 30
@@ -3238,6 +3236,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 411
+x 13
+y 30
 end
 arch afloor_right
 x 13
@@ -3248,8 +3248,6 @@ msg
 @match man
 Click.
 endmsg
-x 13
-y 31
 resist_physical 30
 resist_magic 30
 resist_electricity 30
@@ -3257,6 +3255,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 411
+x 13
+y 31
 end
 arch wall_2_1_2
 x 13
@@ -3369,8 +3369,6 @@ x 14
 y 9
 end
 arch igate_closed_2
-x 14
-y 9
 speed 0.500000
 resist_physical 30
 resist_fire 30
@@ -3378,6 +3376,8 @@ resist_electricity 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 301
+x 14
+y 9
 end
 arch afloor_right
 x 14
@@ -3424,13 +3424,13 @@ x 14
 y 16
 end
 arch igate_closed_2
-x 14
-y 16
 speed 0.500000
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 304
+x 14
+y 16
 end
 arch afloor_right
 x 14
@@ -3477,8 +3477,6 @@ x 14
 y 23
 end
 arch igate_closed_2
-x 14
-y 23
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -3486,6 +3484,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 307
+x 14
+y 23
 end
 arch afloor_right
 x 14
@@ -3532,8 +3532,6 @@ x 14
 y 30
 end
 arch igate_closed_2
-x 14
-y 30
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -3542,6 +3540,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 311
+x 14
+y 30
 end
 arch afloor_right
 x 14
@@ -3662,14 +3662,14 @@ msg
 @match two|three
 Click.
 endmsg
-x 15
-y 13
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 203
+x 15
+y 13
 end
 arch wall_2_1_1
 x 15
@@ -3720,14 +3720,14 @@ msg
 @match one|three
 Click.
 endmsg
-x 15
-y 20
 resist_magic 30
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 206
+x 15
+y 20
 end
 arch wall_2_1_1
 x 15
@@ -3778,13 +3778,13 @@ msg
 @match castle|Castle
 Click.
 endmsg
-x 15
-y 27
 resist_magic 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 210
+x 15
+y 27
 end
 arch wall_2_1_1
 x 15
@@ -3900,10 +3900,6 @@ arch afloor_right
 x 16
 y 11
 end
-arch afloor_right
-x 16
-y 12
-end
 arch magic_mouth
 msg
 Who attacked Tower of Pupuly?
@@ -3916,27 +3912,29 @@ y 12
 end
 arch afloor_right
 x 16
+y 12
+end
+arch afloor_right
+x 16
 y 13
 end
 arch pit_closed
 hp 16
 sp 4
-x 16
-y 13
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 203
+x 16
+y 13
 end
 arch afloor_right
 x 16
 y 14
 end
 arch igate_closed_1
-x 16
-y 14
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -3944,6 +3942,8 @@ resist_fire 30
 resist_confusion 30
 resist_acid 30
 connected 103
+x 16
+y 14
 end
 arch afloor_right
 x 16
@@ -3961,10 +3961,6 @@ arch afloor_right
 x 16
 y 18
 end
-arch afloor_right
-x 16
-y 19
-end
 arch magic_mouth
 msg
 Which statement is correct?
@@ -3977,33 +3973,37 @@ y 19
 end
 arch afloor_right
 x 16
+y 19
+end
+arch afloor_right
+x 16
 y 20
 end
 arch pit_closed
 hp 16
 sp 4
-x 16
-y 20
 resist_magic 30
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 206
+x 16
+y 20
 end
 arch afloor_right
 x 16
 y 21
 end
 arch igate_closed_1
-x 16
-y 21
 speed 0.500000
 resist_magic 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 106
+x 16
+y 21
 end
 arch afloor_right
 x 16
@@ -4021,10 +4021,6 @@ arch afloor_right
 x 16
 y 25
 end
-arch afloor_right
-x 16
-y 26
-end
 arch magic_mouth
 msg
 There is the "agito" of the liberation
@@ -4035,26 +4031,28 @@ y 26
 end
 arch afloor_right
 x 16
+y 26
+end
+arch afloor_right
+x 16
 y 27
 end
 arch pit_closed
 hp 35
 sp 17
-x 16
-y 27
 resist_magic 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 210
+x 16
+y 27
 end
 arch afloor_right
 x 16
 y 28
 end
 arch igate_closed_1
-x 16
-y 28
 speed 0.500000
 resist_magic 30
 resist_fire 30
@@ -4062,6 +4060,8 @@ resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 110
+x 16
+y 28
 end
 arch afloor_right
 x 16
@@ -4198,14 +4198,14 @@ msg
 @match one
 Click.
 endmsg
-x 17
-y 13
 resist_physical 30
 resist_magic 30
 resist_fire 30
 resist_confusion 30
 resist_acid 30
 connected 103
+x 17
+y 13
 end
 arch wall_2_1_1
 x 17
@@ -4238,10 +4238,10 @@ msg
 Thank you for saving me. 
 endmsg
 hp 500
-x 17
-y 17
 friendly 1
 unaggressive 0
+x 17
+y 17
 end
 arch afloor_right
 x 17
@@ -4268,13 +4268,13 @@ msg
 @match two
 Click.
 endmsg
-x 17
-y 20
 resist_magic 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 106
+x 17
+y 20
 end
 arch wall_2_1_1
 x 17
@@ -4325,14 +4325,14 @@ msg
 @match hotel|Hotel|Inn|inn
 Click.
 endmsg
-x 17
-y 27
 resist_magic 30
 resist_fire 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 110
+x 17
+y 27
 end
 arch wall_2_1_1
 x 17
@@ -4366,10 +4366,10 @@ Go to the rear of the hotel,
 and say the password to evergreen tree.
 endmsg
 hp 180
-x 17
-y 31
 friendly 1
 unaggressive 0
+x 17
+y 31
 end
 arch afloor_right
 x 17
@@ -4674,10 +4674,6 @@ end
 arch wall_2_1_2
 x 19
 y 8
-end
-arch afloor_right
-x 19
-y 9
 end
 arch magic_mouth
 msg
@@ -4691,6 +4687,10 @@ y 9
 end
 arch afloor_right
 x 19
+y 9
+end
+arch afloor_right
+x 19
 y 10
 end
 arch wall_2_1_2
@@ -4721,10 +4721,6 @@ arch wall_2_1_2
 x 19
 y 15
 end
-arch afloor_right
-x 19
-y 16
-end
 arch magic_mouth
 msg
 Where did the Reguler Army reach?
@@ -4732,6 +4728,10 @@ Where did the Reguler Army reach?
  2. Underground of the Castle of Eureca
  3. Entrance of the Castle of Eureca
 endmsg
+x 19
+y 16
+end
+arch afloor_right
 x 19
 y 16
 end
@@ -4767,15 +4767,15 @@ arch wall_2_1_2
 x 19
 y 22
 end
-arch afloor_right
-x 19
-y 23
-end
 arch magic_mouth
 msg
 Where does Sumson hang around?
 - In the ... bar.
 endmsg
+x 19
+y 23
+end
+arch afloor_right
 x 19
 y 23
 end
@@ -4811,14 +4811,14 @@ arch wall_2_1_2
 x 19
 y 29
 end
-arch afloor_right
-x 19
-y 30
-end
 arch magic_mouth
 msg
 What does Alex want?
 endmsg
+x 19
+y 30
+end
+arch afloor_right
 x 19
 y 30
 end
@@ -4917,8 +4917,6 @@ msg
 @match three
 Click.
 endmsg
-x 20
-y 8
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -4926,6 +4924,8 @@ resist_electricity 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 303
+x 20
+y 8
 end
 arch wall_2_1_2
 x 20
@@ -4938,14 +4938,14 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 20
-y 9
 resist_physical 30
 resist_magic 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 403
+x 20
+y 9
 end
 arch afloor_right
 x 20
@@ -4956,14 +4956,14 @@ msg
 @match one|two
 Click.
 endmsg
-x 20
-y 10
 resist_physical 30
 resist_magic 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 403
+x 20
+y 10
 end
 arch wall_2_1_2
 x 20
@@ -4994,13 +4994,13 @@ msg
 @match two
 Click.
 endmsg
-x 20
-y 15
 resist_magic 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 306
+x 20
+y 15
 end
 arch wall_2_1_2
 x 20
@@ -5013,14 +5013,14 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 20
-y 16
 resist_magic 30
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 406
+x 20
+y 16
 end
 arch afloor_right
 x 20
@@ -5031,14 +5031,14 @@ msg
 @match one|three
 Click.
 endmsg
-x 20
-y 17
 resist_magic 30
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 406
+x 20
+y 17
 end
 arch wall_2_1_2
 x 20
@@ -5069,14 +5069,14 @@ msg
 @match nightflower|night flower
 Click.
 endmsg
-x 20
-y 22
 resist_magic 30
 resist_fire 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 310
+x 20
+y 22
 end
 arch wall_2_1_2
 x 20
@@ -5089,14 +5089,14 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 20
-y 23
 resist_magic 30
 resist_electricity 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 410
+x 20
+y 23
 end
 arch afloor_right
 x 20
@@ -5107,14 +5107,14 @@ msg
 @match town|berg
 Click.
 endmsg
-x 20
-y 24
 resist_magic 30
 resist_electricity 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 410
+x 20
+y 24
 end
 arch wall_2_1_2
 x 20
@@ -5145,14 +5145,14 @@ msg
 @match treasure|Treasure
 Click.
 endmsg
-x 20
-y 29
 resist_magic 30
 resist_electricity 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 314
+x 20
+y 29
 end
 arch wall_2_1_2
 x 20
@@ -5165,8 +5165,6 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 20
-y 30
 resist_magic 30
 resist_fire 30
 resist_electricity 30
@@ -5174,6 +5172,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 414
+x 20
+y 30
 end
 arch afloor_right
 x 20
@@ -5184,8 +5184,6 @@ msg
 @match sav
 Click.
 endmsg
-x 20
-y 31
 resist_magic 30
 resist_fire 30
 resist_electricity 30
@@ -5193,6 +5191,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 414
+x 20
+y 31
 end
 arch wall_2_1_2
 x 20
@@ -5281,8 +5281,6 @@ x 21
 y 9
 end
 arch igate_closed_2
-x 21
-y 9
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -5291,6 +5289,8 @@ resist_electricity 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 303
+x 21
+y 9
 end
 arch afloor_right
 x 21
@@ -5337,14 +5337,14 @@ x 21
 y 16
 end
 arch igate_closed_2
-x 21
-y 16
 speed 0.500000
 resist_magic 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 306
+x 21
+y 16
 end
 arch afloor_right
 x 21
@@ -5391,8 +5391,6 @@ x 21
 y 23
 end
 arch igate_closed_2
-x 21
-y 23
 speed 0.500000
 resist_magic 30
 resist_fire 30
@@ -5400,6 +5398,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 310
+x 21
+y 23
 end
 arch afloor_right
 x 21
@@ -5446,8 +5446,6 @@ x 21
 y 30
 end
 arch igate_closed_2
-x 21
-y 30
 speed 0.500000
 resist_magic 30
 resist_electricity 30
@@ -5455,6 +5453,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 314
+x 21
+y 30
 end
 arch afloor_right
 x 21
@@ -5587,14 +5587,14 @@ msg
 @match two|three
 Click.
 endmsg
-x 22
-y 13
 resist_physical 30
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 205
+x 22
+y 13
 end
 arch wall_2_1_1
 x 22
@@ -5645,13 +5645,13 @@ msg
 @match house|House
 Click.
 endmsg
-x 22
-y 20
 resist_physical 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 209
+x 22
+y 20
 end
 arch wall_2_1_1
 x 22
@@ -5702,14 +5702,14 @@ msg
 @match went
 Click.
 endmsg
-x 22
-y 27
 resist_physical 30
 resist_fire 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 213
+x 22
+y 27
 end
 arch wall_2_1_1
 x 22
@@ -5825,10 +5825,6 @@ arch afloor_right
 x 23
 y 11
 end
-arch afloor_right
-x 23
-y 12
-end
 arch magic_mouth
 msg
 Why did the war occur?
@@ -5841,33 +5837,37 @@ y 12
 end
 arch afloor_right
 x 23
+y 12
+end
+arch afloor_right
+x 23
 y 13
 end
 arch pit_closed
 hp 16
 sp 4
-x 23
-y 13
 resist_physical 30
 resist_fire 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 205
+x 23
+y 13
 end
 arch afloor_right
 x 23
 y 14
 end
 arch igate_closed_1
-x 23
-y 14
 speed 0.500000
 resist_physical 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 105
+x 23
+y 14
 end
 arch afloor_right
 x 23
@@ -5885,10 +5885,6 @@ arch afloor_right
 x 23
 y 18
 end
-arch afloor_right
-x 23
-y 19
-end
 arch magic_mouth
 msg
 To go to the underground of the guild
@@ -5900,26 +5896,28 @@ y 19
 end
 arch afloor_right
 x 23
+y 19
+end
+arch afloor_right
+x 23
 y 20
 end
 arch pit_closed
 hp 35
 sp 17
-x 23
-y 20
 resist_physical 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 209
+x 23
+y 20
 end
 arch afloor_right
 x 23
 y 21
 end
 arch igate_closed_1
-x 23
-y 21
 speed 0.500000
 resist_physical 30
 resist_fire 30
@@ -5927,6 +5925,8 @@ resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 109
+x 23
+y 21
 end
 arch afloor_right
 x 23
@@ -5944,10 +5944,6 @@ arch afloor_right
 x 23
 y 25
 end
-arch afloor_right
-x 23
-y 26
-end
 arch magic_mouth
 msg
 To find Eureca,
@@ -5960,33 +5956,37 @@ y 26
 end
 arch afloor_right
 x 23
+y 26
+end
+arch afloor_right
+x 23
 y 27
 end
 arch pit_closed
 hp 35
 sp 17
-x 23
-y 27
 resist_physical 30
 resist_fire 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 213
+x 23
+y 27
 end
 arch afloor_right
 x 23
 y 28
 end
 arch igate_closed_1
-x 23
-y 28
 speed 0.500000
 resist_physical 30
 resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 113
+x 23
+y 28
 end
 arch afloor_right
 x 23
@@ -6123,13 +6123,13 @@ msg
 @match one
 Click.
 endmsg
-x 24
-y 13
 resist_physical 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 105
+x 24
+y 13
 end
 arch wall_2_1_1
 x 24
@@ -6180,14 +6180,14 @@ msg
 @match jungle|Jungle
 Click.
 endmsg
-x 24
-y 20
 resist_physical 30
 resist_fire 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 109
+x 24
+y 20
 end
 arch wall_2_1_1
 x 24
@@ -6214,18 +6214,18 @@ x 24
 y 24
 end
 arch elf
+face elf.151
 msg
 @match hi|hello
 If you want to join us, go to the
 Reception Office.
 endmsg
-face elf.151
-hp 100
-x 24
-y 24
 type 0
+hp 100
 monster 1
 friendly 1
+x 24
+y 24
 end
 arch afloor_right
 x 24
@@ -6252,13 +6252,13 @@ msg
 @match dig|dug
 Click.
 endmsg
-x 24
-y 27
 resist_physical 30
 resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 113
+x 24
+y 27
 end
 arch wall_2_1_1
 x 24
@@ -6296,8 +6296,6 @@ hp 30000
 maxhp 30000
 wc -50
 ac -70
-x 24
-y 31
 level 15
 resist_physical 100
 resist_fire 100
@@ -6310,6 +6308,8 @@ reflect_missile 1
 reflect_spell 1
 can_use_armour 0
 can_use_weapon 0
+x 24
+y 31
 end
 arch afloor_right
 x 24
@@ -6619,10 +6619,6 @@ arch wall_2_1_2
 x 26
 y 8
 end
-arch afloor_right
-x 26
-y 9
-end
 arch magic_mouth
 msg
 Who is Kurte?
@@ -6630,6 +6626,10 @@ Who is Kurte?
  2. a teacher
  3. Eureca's friend
 endmsg
+x 26
+y 9
+end
+arch afloor_right
 x 26
 y 9
 end
@@ -6665,15 +6665,15 @@ arch wall_2_1_2
 x 26
 y 15
 end
-arch afloor_right
-x 26
-y 16
-end
 arch magic_mouth
 msg
 What do you need to pass the barrier
 station?
 endmsg
+x 26
+y 16
+end
+arch afloor_right
 x 26
 y 16
 end
@@ -6709,14 +6709,14 @@ arch wall_2_1_2
 x 26
 y 22
 end
-arch afloor_right
-x 26
-y 23
-end
 arch magic_mouth
 msg
 What does Bauer want?
 endmsg
+x 26
+y 23
+end
+arch afloor_right
 x 26
 y 23
 end
@@ -6752,15 +6752,15 @@ arch wall_2_1_2
 x 26
 y 29
 end
-arch afloor_right
-x 26
-y 30
-end
 arch magic_mouth
 msg
 To see Eureca's family,
 you need three ...
 endmsg
+x 26
+y 30
+end
+arch afloor_right
 x 26
 y 30
 end
@@ -6859,13 +6859,13 @@ msg
 @match two
 Click.
 endmsg
-x 27
-y 8
 resist_physical 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 305
+x 27
+y 8
 end
 arch wall_2_1_2
 x 27
@@ -6878,14 +6878,14 @@ end
 arch pit_closed
 hp 3
 sp 15
-x 27
-y 9
 resist_physical 30
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 405
+x 27
+y 9
 end
 arch afloor_right
 x 27
@@ -6896,14 +6896,14 @@ msg
 @match one|three
 Click.
 endmsg
-x 27
-y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 405
+x 27
+y 10
 end
 arch wall_2_1_2
 x 27
@@ -6934,14 +6934,14 @@ msg
 @match passport
 Click.
 endmsg
-x 27
-y 15
 resist_physical 30
 resist_fire 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 309
+x 27
+y 15
 end
 arch wall_2_1_2
 x 27
@@ -6954,14 +6954,14 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 27
-y 16
 resist_physical 30
 resist_electricity 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 409
+x 27
+y 16
 end
 arch afloor_right
 x 27
@@ -6972,14 +6972,14 @@ msg
 @match password
 Click.
 endmsg
-x 27
-y 17
 resist_physical 30
 resist_electricity 30
 resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 409
+x 27
+y 17
 end
 arch wall_2_1_2
 x 27
@@ -7010,14 +7010,14 @@ msg
 @match treasure|Treasure
 Click.
 endmsg
-x 27
-y 22
 resist_physical 30
 resist_electricity 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 313
+x 27
+y 22
 end
 arch wall_2_1_2
 x 27
@@ -7030,8 +7030,6 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 27
-y 23
 resist_physical 30
 resist_fire 30
 resist_electricity 30
@@ -7039,6 +7037,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 413
+x 27
+y 23
 end
 arch afloor_right
 x 27
@@ -7049,8 +7049,6 @@ msg
 @match sav
 Click.
 endmsg
-x 27
-y 24
 resist_physical 30
 resist_fire 30
 resist_electricity 30
@@ -7058,6 +7056,8 @@ resist_cold 30
 resist_drain 30
 resist_weaponmagic 30
 connected 413
+x 27
+y 24
 end
 arch wall_2_1_2
 x 27
@@ -7088,14 +7088,14 @@ msg
 @match torch
 Click.
 endmsg
-x 27
-y 29
 resist_fire 30
 resist_electricity 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 316
+x 27
+y 29
 end
 arch wall_2_1_2
 x 27
@@ -7108,12 +7108,12 @@ end
 arch pit_closed
 hp 2
 sp 35
-x 27
-y 30
 resist_confusion 30
 resist_drain 30
 resist_weaponmagic 30
 connected 416
+x 27
+y 30
 end
 arch afloor_right
 x 27
@@ -7124,12 +7124,12 @@ msg
 @match the
 Click.
 endmsg
-x 27
-y 31
 resist_confusion 30
 resist_drain 30
 resist_weaponmagic 30
 connected 416
+x 27
+y 31
 end
 arch wall_2_1_2
 x 27
@@ -7218,14 +7218,14 @@ x 28
 y 9
 end
 arch igate_closed_2
-x 28
-y 9
 speed 0.500000
 resist_physical 30
 resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 305
+x 28
+y 9
 end
 arch afloor_right
 x 28
@@ -7272,8 +7272,6 @@ x 28
 y 16
 end
 arch igate_closed_2
-x 28
-y 16
 speed 0.500000
 resist_physical 30
 resist_fire 30
@@ -7281,6 +7279,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 309
+x 28
+y 16
 end
 arch afloor_right
 x 28
@@ -7327,8 +7327,6 @@ x 28
 y 23
 end
 arch igate_closed_2
-x 28
-y 23
 speed 0.500000
 resist_physical 30
 resist_electricity 30
@@ -7336,6 +7334,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 313
+x 28
+y 23
 end
 arch afloor_right
 x 28
@@ -7382,8 +7382,6 @@ x 28
 y 30
 end
 arch igate_closed_2
-x 28
-y 30
 speed 0.500000
 resist_fire 30
 resist_electricity 30
@@ -7391,6 +7389,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 316
+x 28
+y 30
 end
 arch afloor_right
 x 28
@@ -7523,12 +7523,12 @@ msg
 @match blackbird
 Click.
 endmsg
-x 29
-y 13
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 208
+x 29
+y 13
 end
 arch wall_2_1_1
 x 29
@@ -7579,13 +7579,13 @@ msg
 @match guild|Guild
 Click.
 endmsg
-x 29
-y 20
 resist_fire 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 212
+x 29
+y 20
 end
 arch wall_2_1_1
 x 29
@@ -7636,8 +7636,6 @@ msg
 @match under
 Click.
 endmsg
-x 29
-y 27
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -7645,6 +7643,8 @@ resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 215
+x 29
+y 27
 end
 arch wall_2_1_1
 x 29
@@ -7760,10 +7760,6 @@ arch afloor_right
 x 30
 y 11
 end
-arch afloor_right
-x 30
-y 12
-end
 arch magic_mouth
 msg
 What is the password of the Liberation
@@ -7774,31 +7770,35 @@ y 12
 end
 arch afloor_right
 x 30
+y 12
+end
+arch afloor_right
+x 30
 y 13
 end
 arch pit_closed
 hp 35
 sp 17
-x 30
-y 13
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 208
+x 30
+y 13
 end
 arch afloor_right
 x 30
 y 14
 end
 arch igate_closed_1
-x 30
-y 14
 speed 0.500000
 resist_fire 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 108
+x 30
+y 14
 end
 arch afloor_right
 x 30
@@ -7816,10 +7816,6 @@ arch afloor_right
 x 30
 y 18
 end
-arch afloor_right
-x 30
-y 19
-end
 arch magic_mouth
 msg
 To enter the prison in the castle of
@@ -7830,31 +7826,35 @@ y 19
 end
 arch afloor_right
 x 30
+y 19
+end
+arch afloor_right
+x 30
 y 20
 end
 arch pit_closed
 hp 35
 sp 17
-x 30
-y 20
 resist_fire 30
 resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 212
+x 30
+y 20
 end
 arch afloor_right
 x 30
 y 21
 end
 arch igate_closed_1
-x 30
-y 21
 speed 0.500000
 resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 112
+x 30
+y 21
 end
 arch afloor_right
 x 30
@@ -7872,10 +7872,6 @@ arch afloor_right
 x 30
 y 25
 end
-arch afloor_right
-x 30
-y 26
-end
 arch magic_mouth
 msg
 The entrance to the upper level
@@ -7887,13 +7883,15 @@ y 26
 end
 arch afloor_right
 x 30
+y 26
+end
+arch afloor_right
+x 30
 y 27
 end
 arch pit_closed
 hp 35
 sp 17
-x 30
-y 27
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -7901,14 +7899,14 @@ resist_cold 30
 resist_acid 30
 resist_drain 30
 connected 215
+x 30
+y 27
 end
 arch afloor_right
 x 30
 y 28
 end
 arch igate_closed_1
-x 30
-y 28
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -7916,6 +7914,8 @@ resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 115
+x 30
+y 28
 end
 arch afloor_right
 x 30
@@ -7939,10 +7939,10 @@ Bernie, you must endure.
 endmsg
 Con 100
 hp 18000
-x 30
-y 31
 friendly 1
 unaggressive 0
+x 30
+y 31
 end
 arch afloor_right
 x 30
@@ -8067,13 +8067,13 @@ msg
 @match Siegfried
 Click.
 endmsg
-x 31
-y 13
 resist_fire 30
 resist_electricity 30
 resist_confusion 30
 resist_acid 30
 connected 108
+x 31
+y 13
 end
 arch wall_2_1_1
 x 31
@@ -8135,12 +8135,12 @@ msg
 @match aque|Aque
 Click.
 endmsg
-x 31
-y 20
 resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 112
+x 31
+y 20
 end
 arch wall_2_1_1
 x 31
@@ -8173,11 +8173,11 @@ msg
 We have to save Eureca! 
 endmsg
 hp 180
-x 31
-y 24
 carrying 100
 friendly 1
 unaggressive 0
+x 31
+y 24
 end
 arch afloor_right
 x 31
@@ -8204,14 +8204,14 @@ msg
 @match Eternal|eternal
 Click.
 endmsg
-x 31
-y 27
 resist_physical 30
 resist_magic 30
 resist_cold 30
 resist_confusion 30
 resist_acid 30
 connected 115
+x 31
+y 27
 end
 arch wall_2_1_1
 x 31
@@ -8241,10 +8241,10 @@ arch woman
 name Lauretta
 Con 100
 hp 18000
-x 31
-y 31
 friendly 1
 unaggressive 0
+x 31
+y 31
 end
 arch afloor_right
 x 31
@@ -8657,14 +8657,14 @@ arch wall_2_1_2
 x 33
 y 29
 end
-arch afloor_right
-x 33
-y 30
-end
 arch magic_mouth
 msg
 Where is Eureca?
 endmsg
+x 33
+y 30
+end
+arch afloor_right
 x 33
 y 30
 end
@@ -8866,8 +8866,6 @@ msg
 @match i don't know|no idea
 Click.
 endmsg
-x 34
-y 29
 resist_physical 30
 resist_fire 30
 resist_electricity 30
@@ -8875,30 +8873,30 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 317
+x 34
+y 29
 end
 arch wall_2_2_4
 x 34
 y 29
 end
 arch marker
-slaying scolar of kurte
 msg
 Congratulations, you passed the test!
 You are now a scolar of Kurte.
 endmsg
+slaying scolar of kurte
 hp 1
 food 0
+speed 1.000000
 x 34
 y 30
-speed 1.000000
 end
 arch afloor_right
 x 34
 y 30
 end
 arch igate_closed_2
-x 34
-y 30
 speed 0.500000
 resist_physical 30
 resist_fire 30
@@ -8907,6 +8905,8 @@ resist_cold 30
 resist_confusion 30
 resist_weaponmagic 30
 connected 317
+x 34
+y 30
 end
 arch afloor_right
 x 34
@@ -9274,16 +9274,16 @@ x 36
 y 30
 end
 arch marker
-slaying scolar of kurte
 msg
 Congratulations, you passed the test!
 You are now a scolar of Kurte.
 endmsg
+slaying scolar of kurte
 hp 1
 food 0
+speed 1.000000
 x 36
 y 31
-speed 1.000000
 end
 arch afloor_right
 x 36
@@ -9490,9 +9490,9 @@ now!
 endmsg
 hp 200
 exp 1
+friendly 1
 x 37
 y 29
-friendly 1
 end
 arch afloor_right
 x 37
@@ -9500,13 +9500,13 @@ y 30
 end
 arch check_inv
 slaying scolar of kurte
-x 37
-y 31
 resist_physical 30
 resist_electricity 30
 resist_acid 30
 resist_drain 30
 connected 99
+x 37
+y 31
 end
 arch afloor_right
 x 37
@@ -9516,10 +9516,10 @@ arch teleporter
 slaying house
 hp 8
 sp 11
-x 37
-y 31
 speed 0.000000
 connected 99
+x 37
+y 31
 end
 arch afloor_right
 x 37

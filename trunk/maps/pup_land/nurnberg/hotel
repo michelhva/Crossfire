@@ -1395,14 +1395,14 @@ no_pass 0
 x 12
 y 7
 end
-arch dungeon_floor
-x 12
-y 8
-end
 arch magic_mouth
 msg
 Bath Room
 endmsg
+x 12
+y 8
+end
+arch dungeon_floor
 x 12
 y 8
 end

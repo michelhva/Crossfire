@@ -11,12 +11,18 @@ sp 11
 x 13
 y 13
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+end
 arch pstone_3
 end
 arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
+y 1
 end
 arch pstone_2
 y 1
@@ -25,7 +31,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 1
+y 2
 end
 arch pstone_3
 y 2
@@ -34,7 +40,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 2
+y 3
 end
 arch pstone_2
 y 3
@@ -43,7 +49,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 3
+y 4
 end
 arch pstone_2
 y 4
@@ -55,7 +61,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 4
+y 5
 end
 arch pstone_2
 y 5
@@ -64,7 +70,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 5
+y 6
 end
 arch pstone_2
 y 6
@@ -73,7 +79,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 6
+y 7
 end
 arch pstone_2
 y 7
@@ -82,7 +88,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 7
+y 8
 end
 arch pstone_2
 y 8
@@ -91,7 +97,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 8
+y 9
 end
 arch pstone_3
 y 9
@@ -100,7 +106,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 9
+y 10
 end
 arch pstone_2
 y 10
@@ -109,7 +115,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 10
+y 11
 end
 arch pstone_2
 y 11
@@ -118,7 +124,7 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 11
+y 12
 end
 arch pstone_1
 y 12
@@ -127,15 +133,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-y 12
-end
-arch pstone_3
 x 1
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_3
 x 1
 end
 arch pstone_3
@@ -190,6 +190,13 @@ arch pstone_2
 x 1
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 1
+y 12
+end
 arch pstone_1
 x 1
 y 12
@@ -198,16 +205,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 1
-y 12
-end
-arch pstone_3
 x 2
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_3
 x 2
 end
 arch pstone_2
@@ -258,6 +258,13 @@ arch pstone_1
 x 2
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 2
+y 12
+end
 arch pstone_1
 x 2
 y 12
@@ -266,16 +273,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 2
-y 12
-end
-arch pstone_2
 x 3
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 3
 end
 arch pstone_3
@@ -319,9 +319,9 @@ x 3
 y 9
 end
 arch pillars
+no_pass 1
 x 3
 y 9
-no_pass 1
 end
 arch pstone_1
 x 3
@@ -331,6 +331,13 @@ arch pstone_1
 x 3
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 3
+y 12
+end
 arch pstone_2
 x 3
 y 12
@@ -339,16 +346,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 3
-y 12
-end
-arch pstone_3
 x 4
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_3
 x 4
 end
 arch pstone_2
@@ -399,6 +399,13 @@ arch pstone_2
 x 4
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 4
+y 12
+end
 arch pstone_1
 x 4
 y 12
@@ -407,16 +414,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 4
-y 12
-end
-arch pstone_3
 x 5
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_3
 x 5
 end
 arch pstone_2
@@ -473,10 +473,6 @@ arch pstone_2
 x 5
 y 11
 end
-arch pstone_2
-x 5
-y 12
-end
 arch invis_exit
 slaying ../rainbow/islands
 hp 19
@@ -485,12 +481,16 @@ x 5
 y 12
 end
 arch pstone_2
+x 5
+y 12
+end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
 x 6
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 6
 end
 arch pstone_2
@@ -541,10 +541,6 @@ arch pstone_2
 x 6
 y 11
 end
-arch pstone_2
-x 6
-y 12
-end
 arch invis_exit
 slaying ../rainbow/islands
 hp 19
@@ -553,12 +549,16 @@ x 6
 y 12
 end
 arch pstone_2
+x 6
+y 12
+end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
 x 7
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 7
 end
 arch pstone_2
@@ -578,9 +578,9 @@ x 7
 y 3
 end
 arch pillars
+no_pass 1
 x 7
 y 3
-no_pass 1
 end
 arch pstone_2
 x 7
@@ -614,9 +614,9 @@ x 7
 y 9
 end
 arch pillars
+no_pass 1
 x 7
 y 9
-no_pass 1
 end
 arch pstone_1
 x 7
@@ -626,10 +626,6 @@ arch pstone_2
 x 7
 y 11
 end
-arch pstone_2
-x 7
-y 12
-end
 arch invis_exit
 slaying ../rainbow/islands
 hp 19
@@ -638,12 +634,16 @@ x 7
 y 12
 end
 arch pstone_2
+x 7
+y 12
+end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
 x 8
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 8
 end
 arch pstone_2
@@ -690,10 +690,6 @@ arch pstone_1
 x 8
 y 11
 end
-arch pstone_2
-x 8
-y 12
-end
 arch invis_exit
 slaying ../rainbow/islands
 hp 19
@@ -702,12 +698,16 @@ x 8
 y 12
 end
 arch pstone_2
+x 8
+y 12
+end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
 x 9
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 9
 end
 arch pstone_2
@@ -735,9 +735,9 @@ x 9
 y 5
 end
 arch pillars
+no_pass 1
 x 9
 y 5
-no_pass 1
 end
 arch pstone_2
 x 9
@@ -781,6 +781,13 @@ arch pstone_2
 x 9
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 9
+y 12
+end
 arch pstone_1
 x 9
 y 12
@@ -789,16 +796,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 9
-y 12
-end
-arch pstone_2
 x 10
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 10
 end
 arch pstone_2
@@ -845,6 +845,13 @@ arch pstone_2
 x 10
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 10
+y 12
+end
 arch pstone_1
 x 10
 y 12
@@ -853,16 +860,9 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 10
-y 12
-end
-arch pstone_2
 x 11
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_2
 x 11
 end
 arch pstone_2
@@ -909,6 +909,13 @@ arch pstone_1
 x 11
 y 11
 end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 11
+y 12
+end
 arch pstone_1
 x 11
 y 12
@@ -917,21 +924,10 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 11
-y 12
-end
-arch pstone_2
-x 12
-end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
 x 12
 end
 arch pstone_2
 x 12
-y 1
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -942,7 +938,7 @@ y 1
 end
 arch pstone_2
 x 12
-y 2
+y 1
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -953,7 +949,7 @@ y 2
 end
 arch pstone_2
 x 12
-y 3
+y 2
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -964,7 +960,7 @@ y 3
 end
 arch pstone_2
 x 12
-y 4
+y 3
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -975,7 +971,7 @@ y 4
 end
 arch pstone_2
 x 12
-y 5
+y 4
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -983,6 +979,17 @@ hp 19
 sp 26
 x 12
 y 5
+end
+arch pstone_2
+x 12
+y 5
+end
+arch invis_exit
+slaying ../rainbow/islands
+hp 19
+sp 26
+x 12
+y 6
 end
 arch pstone_1
 x 12
@@ -993,7 +1000,7 @@ slaying ../rainbow/islands
 hp 19
 sp 26
 x 12
-y 6
+y 7
 end
 arch pstone_2
 x 12
@@ -1004,7 +1011,7 @@ slaying ../rainbow/islands
 hp 19
 sp 26
 x 12
-y 7
+y 8
 end
 arch pstone_2
 x 12
@@ -1015,7 +1022,7 @@ slaying ../rainbow/islands
 hp 19
 sp 26
 x 12
-y 8
+y 9
 end
 arch pstone_1
 x 12
@@ -1026,7 +1033,7 @@ slaying ../rainbow/islands
 hp 19
 sp 26
 x 12
-y 9
+y 10
 end
 arch pstone_1
 x 12
@@ -1037,7 +1044,7 @@ slaying ../rainbow/islands
 hp 19
 sp 26
 x 12
-y 10
+y 11
 end
 arch pstone_1
 x 12
@@ -1047,17 +1054,10 @@ arch invis_exit
 slaying ../rainbow/islands
 hp 19
 sp 26
-x 12
-y 11
-end
-arch pstone_1
 x 12
 y 12
 end
-arch invis_exit
-slaying ../rainbow/islands
-hp 19
-sp 26
+arch pstone_1
 x 12
 y 12
 end

@@ -857,6 +857,14 @@ arch afloor_right
 x 8
 y 7
 end
+arch magic_mouth
+msg
+The hall echoed with the loud voice:
+ "What is your motive in coming here?
+endmsg
+x 8
+y 8
+end
 arch afloor_right
 x 8
 y 8
@@ -870,14 +878,6 @@ x 8
 y 8
 resist_physical 30
 connected 1
-end
-arch magic_mouth
-msg
-The hall echoed with the loud voice:
- "What is your motive in coming here?
-endmsg
-x 8
-y 8
 end
 arch afloor_right
 x 8

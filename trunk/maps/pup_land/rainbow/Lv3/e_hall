@@ -13,13 +13,13 @@ arch permanent_lava
 end
 arch cave4
 end
-arch permanent_lava
-y 1
-end
 arch invis_exit
 slaying w-path
 hp 19
 sp 1
+y 1
+end
+arch permanent_lava
 y 1
 end
 arch permanent_lava
@@ -2212,12 +2212,12 @@ arch cave10
 x 19
 y 18
 end
-arch permanent_lava
+arch invis_exit
+slaying e-path
 x 19
 y 19
 end
-arch invis_exit
-slaying e-path
+arch permanent_lava
 x 19
 y 19
 end

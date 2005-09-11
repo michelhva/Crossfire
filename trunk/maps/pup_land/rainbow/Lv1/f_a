@@ -998,14 +998,14 @@ arch dungeon_magic
 x 6
 y 14
 end
-arch dungeon_floor
-x 6
-y 14
-end
 arch invis_exit
 slaying e_hall
 hp 7
 sp 1
+x 6
+y 14
+end
+arch dungeon_floor
 x 6
 y 14
 end

@@ -1028,16 +1028,16 @@ arch swall_1_2
 x 6
 y 9
 end
-arch flagstone
-x 6
-y 10
-end
 arch magic_mouth
 msg
 You hear...
   "The Enhanced staff raises the magic
    abilities, but it drains Con..."
 endmsg
+x 6
+y 10
+end
+arch flagstone
 x 6
 y 10
 end
@@ -1069,16 +1069,16 @@ arch swall_1_2
 x 6
 y 13
 end
-arch flagstone
-x 6
-y 14
-end
 arch magic_mouth
 msg
 You hear..
   "The Enchanted bow has a poor
    shooting speed."
 endmsg
+x 6
+y 14
+end
+arch flagstone
 x 6
 y 14
 end
@@ -2140,16 +2140,16 @@ arch swall_1_2
 x 14
 y 1
 end
-arch flagstone
-x 14
-y 2
-end
 arch magic_mouth
 msg
 You hear some voice,
   "Enhanced Axe raises your Str, 
    but it drains your Dex..." 
 endmsg
+x 14
+y 2
+end
+arch flagstone
 x 14
 y 2
 end
@@ -2213,16 +2213,16 @@ arch swall_1_2
 x 14
 y 9
 end
-arch flagstone
-x 14
-y 10
-end
 arch magic_mouth
 msg
 You hear a voice,
   "Enhanced hammer can inflict lots
    of damage, but it is too heavy..
 endmsg
+x 14
+y 10
+end
+arch flagstone
 x 14
 y 10
 end
@@ -2250,16 +2250,16 @@ arch swall_1_1
 x 14
 y 13
 end
-arch flagstone
-x 14
-y 14
-end
 arch magic_mouth
 msg
 You hear,
   "Enhanced nunchacu raises Dex,
    but it is damned..."
 endmsg
+x 14
+y 14
+end
+arch flagstone
 x 14
 y 14
 end
