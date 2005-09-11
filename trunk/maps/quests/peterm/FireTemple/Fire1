@@ -434,18 +434,18 @@ arch dun12
 x 1
 y 23
 end
+arch invis_exit
+slaying Fire1
+hp 19
+sp 23
+x 1
+y 24
+end
 arch pstone_1
 x 1
 y 24
 end
 arch permanent_lava
-x 1
-y 24
-end
-arch invis_exit
-slaying Fire1
-hp 19
-sp 23
 x 1
 y 24
 end
@@ -1539,18 +1539,18 @@ end
 arch dun2
 x 7
 end
+arch invis_exit
+slaying Fire1
+hp 24
+sp 11
+x 7
+y 1
+end
 arch pstone_1
 x 7
 y 1
 end
 arch permanent_lava
-x 7
-y 1
-end
-arch invis_exit
-slaying Fire1
-hp 24
-sp 11
 x 7
 y 1
 end
@@ -3394,18 +3394,18 @@ y 29
 speed 0.500000
 connected 1
 end
+arch invis_exit
+slaying Fire1
+hp 7
+sp 11
+x 15
+y 30
+end
 arch pstone_1
 x 15
 y 30
 end
 arch permanent_lava
-x 15
-y 30
-end
-arch invis_exit
-slaying Fire1
-hp 7
-sp 11
 x 15
 y 30
 end
@@ -3549,10 +3549,6 @@ arch pstone_1
 x 16
 y 27
 end
-arch pstone_1
-x 16
-y 28
-end
 arch magic_mouth
 msg
 The fire god demands sacrifice of an
@@ -3560,6 +3556,10 @@ enemy elemental's residue.
 
 
 endmsg
+x 16
+y 28
+end
+arch pstone_1
 x 16
 y 28
 end
@@ -3590,18 +3590,18 @@ y 29
 speed 0.500000
 connected 1
 end
+arch invis_exit
+slaying Fire1
+hp 8
+sp 11
+x 16
+y 30
+end
 arch pstone_1
 x 16
 y 30
 end
 arch permanent_lava
-x 16
-y 30
-end
-arch invis_exit
-slaying Fire1
-hp 8
-sp 11
 x 16
 y 30
 end
@@ -3753,18 +3753,18 @@ y 29
 speed 0.500000
 connected 1
 end
+arch invis_exit
+slaying Fire1
+hp 9
+sp 11
+x 17
+y 30
+end
 arch pstone_1
 x 17
 y 30
 end
 arch permanent_lava
-x 17
-y 30
-end
-arch invis_exit
-slaying Fire1
-hp 9
-sp 11
 x 17
 y 30
 end
@@ -5329,18 +5329,18 @@ end
 arch dun2
 x 25
 end
+arch invis_exit
+slaying Fire1
+hp 13
+sp 23
+x 25
+y 1
+end
 arch pstone_1
 x 25
 y 1
 end
 arch permanent_lava
-x 25
-y 1
-end
-arch invis_exit
-slaying Fire1
-hp 13
-sp 23
 x 25
 y 1
 end
@@ -6537,14 +6537,6 @@ arch dun6
 x 30
 y 23
 end
-arch pstone_1
-x 30
-y 24
-end
-arch permanent_lava
-x 30
-y 24
-end
 arch invis_exit
 slaying Fire2
 hp 1
@@ -6562,6 +6554,14 @@ endmsg
 x 30
 y 24
 invisible 1
+end
+arch pstone_1
+x 30
+y 24
+end
+arch permanent_lava
+x 30
+y 24
 end
 arch pstone_1
 x 30

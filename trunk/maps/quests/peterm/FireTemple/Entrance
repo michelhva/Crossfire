@@ -1810,14 +1810,14 @@ arch pstone_1
 x 10
 y 5
 end
-arch permanent_lava
-x 10
-y 5
-end
 arch invis_exit
 slaying LavaChamber
 hp 17
 sp 30
+x 10
+y 5
+end
+arch permanent_lava
 x 10
 y 5
 end
@@ -2016,14 +2016,14 @@ arch pstone_1
 x 11
 y 5
 end
-arch permanent_lava
-x 11
-y 5
-end
 arch invis_exit
 slaying LavaChamber
 hp 18
 sp 30
+x 11
+y 5
+end
+arch permanent_lava
 x 11
 y 5
 end
@@ -2214,14 +2214,14 @@ arch pstone_1
 x 12
 y 5
 end
-arch flagstone
-x 12
-y 5
-end
 arch invis_exit
 slaying LavaChamber
 hp 19
 sp 30
+x 12
+y 5
+end
+arch flagstone
 x 12
 y 5
 end
@@ -2436,14 +2436,14 @@ arch pstone_1
 x 13
 y 5
 end
-arch flagstone
-x 13
-y 5
-end
 arch invis_exit
 slaying LavaChamber
 hp 20
 sp 30
+x 13
+y 5
+end
+arch flagstone
 x 13
 y 5
 end
