@@ -2556,19 +2556,19 @@ arch permanent_lava
 x 17
 y 9
 end
-arch pstone_2
-x 17
-y 10
-end
-arch flagstone
-x 17
-y 10
-end
 arch magic_mouth
 msg
 A blast of hot air comes up the
 stairs.  The heat below is unbearable
 endmsg
+x 17
+y 10
+end
+arch pstone_2
+x 17
+y 10
+end
+arch flagstone
 x 17
 y 10
 end
@@ -2579,19 +2579,19 @@ sp 13
 x 17
 y 10
 end
-arch pstone_2
-x 17
-y 11
-end
-arch flagstone
-x 17
-y 11
-end
 arch magic_mouth
 msg
 A blast of hot air comes up the
 stairs.  The heat below is unbearable
 endmsg
+x 17
+y 11
+end
+arch pstone_2
+x 17
+y 11
+end
+arch flagstone
 x 17
 y 11
 end
@@ -2754,18 +2754,18 @@ arch permanent_lava
 x 17
 y 30
 end
+arch invis_exit
+slaying Entrance
+hp 10
+sp 6
+x 17
+y 31
+end
 arch pstone_1
 x 17
 y 31
 end
 arch permanent_lava
-x 17
-y 31
-end
-arch invis_exit
-slaying Entrance
-hp 10
-sp 6
 x 17
 y 31
 end
@@ -2877,19 +2877,19 @@ x 18
 y 9
 speed_left -3.100000
 end
-arch pstone_2
-x 18
-y 10
-end
-arch flagstone
-x 18
-y 10
-end
 arch magic_mouth
 msg
 A blast of hot air comes up the
 stairs.  The heat below is unbearable
 endmsg
+x 18
+y 10
+end
+arch pstone_2
+x 18
+y 10
+end
+arch flagstone
 x 18
 y 10
 end
@@ -2900,19 +2900,19 @@ sp 13
 x 18
 y 10
 end
-arch pstone_2
-x 18
-y 11
-end
-arch flagstone
-x 18
-y 11
-end
 arch magic_mouth
 msg
 A blast of hot air comes up the
 stairs.  The heat below is unbearable
 endmsg
+x 18
+y 11
+end
+arch pstone_2
+x 18
+y 11
+end
+arch flagstone
 x 18
 y 11
 end
@@ -3067,18 +3067,18 @@ arch permanent_lava
 x 18
 y 30
 end
+arch invis_exit
+slaying Entrance
+hp 11
+sp 6
+x 18
+y 31
+end
 arch pstone_1
 x 18
 y 31
 end
 arch permanent_lava
-x 18
-y 31
-end
-arch invis_exit
-slaying Entrance
-hp 11
-sp 6
 x 18
 y 31
 end
@@ -3357,18 +3357,18 @@ arch flagstone
 x 19
 y 30
 end
+arch invis_exit
+slaying Entrance
+hp 12
+sp 6
+x 19
+y 31
+end
 arch pstone_1
 x 19
 y 31
 end
 arch flagstone
-x 19
-y 31
-end
-arch invis_exit
-slaying Entrance
-hp 12
-sp 6
 x 19
 y 31
 end
@@ -3647,18 +3647,18 @@ arch flagstone
 x 20
 y 30
 end
+arch invis_exit
+slaying Entrance
+hp 13
+sp 6
+x 20
+y 31
+end
 arch pstone_1
 x 20
 y 31
 end
 arch flagstone
-x 20
-y 31
-end
-arch invis_exit
-slaying Entrance
-hp 13
-sp 6
 x 20
 y 31
 end
@@ -5621,10 +5621,6 @@ arch cave9
 x 29
 y 13
 end
-arch pstone_2
-x 29
-y 14
-end
 arch invis_exit
 slaying Passageway
 hp 6
@@ -5634,12 +5630,16 @@ y 14
 end
 arch pstone_2
 x 29
-y 15
+y 14
 end
 arch invis_exit
 slaying Passageway
 hp 6
 sp 6
+x 29
+y 15
+end
+arch pstone_2
 x 29
 y 15
 end
@@ -5737,10 +5737,6 @@ arch cave5
 x 30
 y 13
 end
-arch pstone_1
-x 30
-y 14
-end
 arch invis_exit
 slaying LavaChamber
 hp 29
@@ -5750,12 +5746,16 @@ y 14
 end
 arch pstone_1
 x 30
-y 15
+y 14
 end
 arch invis_exit
 slaying LavaChamber
 hp 29
 sp 15
+x 30
+y 15
+end
+arch pstone_1
 x 30
 y 15
 end
