@@ -283,16 +283,16 @@ arch magic_banned
 x 3
 y 3
 end
-arch woodfloor
-x 3
-y 3
-end
 arch magic_mouth
 msg
 From upstairs you get a whiff of
 brimstone, and you hear something
 massive shifting its weight about.
 endmsg
+x 3
+y 3
+end
+arch woodfloor
 x 3
 y 3
 end
@@ -325,14 +325,6 @@ arch magic_banned
 x 3
 y 5
 end
-arch woodfloor
-x 3
-y 5
-end
-arch pentagram
-x 3
-y 5
-end
 arch magic_mouth
 msg
 Four elementals, one of each kind,
@@ -341,6 +333,14 @@ visited the four towers of mastery.
 Only those who have stood at their
 tops in the small pentagrams may pass.
 endmsg
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 5
+end
+arch pentagram
 x 3
 y 5
 end
@@ -603,16 +603,16 @@ arch magic_banned
 x 5
 y 3
 end
-arch woodfloor
-x 5
-y 3
-end
 arch magic_mouth
 msg
 From upstairs you get a whiff of
 brimstone, and you hear something
 massive shifting its weight about.
 endmsg
+x 5
+y 3
+end
+arch woodfloor
 x 5
 y 3
 end
@@ -653,16 +653,16 @@ arch magic_banned
 x 5
 y 5
 end
-arch woodfloor
-x 5
-y 5
-end
 arch magic_mouth
 msg
 From upstairs you get a whiff of
 brimstone, and you hear something
 massive shifting its weight about.
 endmsg
+x 5
+y 5
+end
+arch woodfloor
 x 5
 y 5
 end
