@@ -907,9 +907,6 @@ arch dun_2_1_2
 x 4
 y 29
 end
-arch dun_2_1_2
-x 5
-end
 arch magic_mouth
 msg
 Go to your doom robber!
@@ -917,6 +914,9 @@ endmsg
 connected 7
 walk_on 0
 fly_on 0
+x 5
+end
+arch dun_2_1_2
 x 5
 end
 arch marble
@@ -1933,9 +1933,6 @@ arch dun_2_1_2
 x 9
 y 29
 end
-arch dun_2_1_2
-x 10
-end
 arch magic_mouth
 msg
 Shazzamm!
@@ -1943,6 +1940,9 @@ endmsg
 connected 9
 walk_on 0
 fly_on 0
+x 10
+end
+arch dun_2_1_2
 x 10
 end
 arch marble
@@ -3289,14 +3289,6 @@ arch rock
 x 16
 y 21
 end
-arch stonefloor2
-x 16
-y 22
-end
-arch dun_1_3
-x 16
-y 22
-end
 arch magic_mouth
 msg
 Clank!
@@ -3309,11 +3301,18 @@ y 22
 end
 arch stonefloor2
 x 16
-y 23
+y 22
+end
+arch dun_1_3
+x 16
+y 22
 end
 arch button_small
-invisible 1
 connected 10
+x 16
+y 23
+end
+arch stonefloor2
 x 16
 y 23
 end
@@ -3826,16 +3825,16 @@ connected 1
 x 19
 y 1
 end
-arch stonefloor2
-x 19
-y 2
-end
 arch magic_mouth
 msg
 Halt! Who goes there?
 No man may enter the tomb of Al Jwaf.
 endmsg
 fly_on 0
+x 19
+y 2
+end
+arch stonefloor2
 x 19
 y 2
 end
@@ -5675,10 +5674,6 @@ arch dun_2_2_4
 x 29
 y 12
 end
-arch stonefloor2
-x 29
-y 13
-end
 arch invis_exit
 slaying hall1
 hp 1
@@ -5688,7 +5683,7 @@ y 13
 end
 arch stonefloor2
 x 29
-y 14
+y 13
 end
 arch invis_exit
 slaying hall1
@@ -5699,12 +5694,16 @@ y 14
 end
 arch stonefloor2
 x 29
-y 15
+y 14
 end
 arch invis_exit
 slaying hall1
 hp 1
 sp 23
+x 29
+y 15
+end
+arch stonefloor2
 x 29
 y 15
 end

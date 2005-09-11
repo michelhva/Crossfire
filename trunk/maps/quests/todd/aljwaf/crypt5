@@ -290,27 +290,25 @@ end
 arch bwall_2_1_2
 x 5
 end
-arch dirtfloor
-x 5
-y 1
-end
 arch button_small
-invisible 1
 connected 4
 x 5
 y 1
 end
 arch dirtfloor
 x 5
-y 2
+y 1
 end
 arch dirtfloor
 x 5
-y 3
+y 2
 end
 arch button_small
-invisible 1
 connected 1
+x 5
+y 3
+end
+arch dirtfloor
 x 5
 y 3
 end
@@ -330,13 +328,12 @@ arch dirtfloor
 x 5
 y 7
 end
-arch dirtfloor
+arch button_small
+connected 1
 x 5
 y 8
 end
-arch button_small
-invisible 1
-connected 1
+arch dirtfloor
 x 5
 y 8
 end
@@ -370,27 +367,25 @@ arch dirtfloor
 x 6
 y 4
 end
-arch dirtfloor
-x 6
-y 5
-end
 arch button_small
-invisible 1
 connected 3
 x 6
 y 5
 end
 arch dirtfloor
 x 6
-y 6
+y 5
 end
 arch dirtfloor
 x 6
-y 7
+y 6
 end
 arch button_small
-invisible 1
 connected 5
+x 6
+y 7
+end
+arch dirtfloor
 x 6
 y 7
 end
@@ -462,13 +457,12 @@ arch dirtfloor
 x 8
 y 1
 end
-arch dirtfloor
+arch button_small
+connected 1
 x 8
 y 2
 end
-arch button_small
-invisible 1
-connected 1
+arch dirtfloor
 x 8
 y 2
 end
@@ -491,13 +485,12 @@ arch dirtfloor
 x 8
 y 5
 end
-arch dirtfloor
+arch button_small
+connected 1
 x 8
 y 6
 end
-arch button_small
-invisible 1
-connected 1
+arch dirtfloor
 x 8
 y 6
 end
@@ -527,13 +520,12 @@ arch dirtfloor
 x 9
 y 1
 end
-arch dirtfloor
+arch button_small
+connected 5
 x 9
 y 2
 end
-arch button_small
-invisible 1
-connected 5
+arch dirtfloor
 x 9
 y 2
 end
@@ -553,32 +545,30 @@ endmsg
 x 9
 y 4
 end
-arch dirtfloor
-x 9
-y 5
-end
 arch button_small
-invisible 1
 connected 4
 x 9
 y 5
 end
 arch dirtfloor
 x 9
-y 6
+y 5
 end
 arch dirtfloor
 x 9
-y 7
+y 6
 end
 arch button_small
-invisible 1
 connected 2
 x 9
 y 7
 end
 arch dirtfloor
 x 9
+y 7
+end
+arch dirtfloor
+x 9
 y 8
 end
 arch dirtfloor
@@ -623,18 +613,17 @@ arch dirtfloor
 x 10
 y 7
 end
-arch dirtfloor
-x 10
-y 8
-end
 arch button_small
-invisible 1
 connected 1
 x 10
 y 8
 end
 arch dirtfloor
 x 10
+y 8
+end
+arch dirtfloor
+x 10
 y 9
 end
 arch bwall_2_1_2
@@ -647,13 +636,12 @@ end
 arch bwall_2_1_2
 x 11
 end
-arch dirtfloor
+arch button_small
+connected 1
 x 11
 y 1
 end
-arch button_small
-invisible 1
-connected 1
+arch dirtfloor
 x 11
 y 1
 end
@@ -669,27 +657,25 @@ arch dirtfloor
 x 11
 y 4
 end
-arch dirtfloor
-x 11
-y 5
-end
 arch button_small
-invisible 1
 connected 5
 x 11
 y 5
 end
 arch dirtfloor
 x 11
-y 6
+y 5
 end
 arch dirtfloor
 x 11
-y 7
+y 6
 end
 arch button_small
-invisible 1
 connected 4
+x 11
+y 7
+end
+arch dirtfloor
 x 11
 y 7
 end
@@ -715,13 +701,12 @@ arch dirtfloor
 x 12
 y 1
 end
-arch dirtfloor
+arch button_small
+connected 2
 x 12
 y 2
 end
-arch button_small
-invisible 1
-connected 2
+arch dirtfloor
 x 12
 y 2
 end
@@ -763,13 +748,12 @@ end
 arch bwall_2_1_2
 x 13
 end
-arch dirtfloor
+arch button_small
+connected 4
 x 13
 y 1
 end
-arch button_small
-invisible 1
-connected 4
+arch dirtfloor
 x 13
 y 1
 end
@@ -781,41 +765,38 @@ arch dirtfloor
 x 13
 y 3
 end
-arch dirtfloor
-x 13
-y 4
-end
 arch button_small
-invisible 1
 connected 1
 x 13
 y 4
 end
 arch dirtfloor
 x 13
-y 5
+y 4
 end
 arch dirtfloor
 x 13
-y 6
+y 5
 end
 arch button_small
-invisible 1
 connected 5
 x 13
 y 6
 end
 arch dirtfloor
 x 13
-y 7
+y 6
 end
 arch dirtfloor
 x 13
-y 8
+y 7
 end
 arch button_small
-invisible 1
 connected 2
+x 13
+y 8
+end
+arch dirtfloor
 x 13
 y 8
 end
@@ -883,37 +864,34 @@ arch dirtfloor
 x 15
 y 1
 end
-arch dirtfloor
-x 15
-y 2
-end
 arch button_small
-invisible 1
 connected 3
 x 15
 y 2
 end
 arch dirtfloor
 x 15
-y 3
+y 2
 end
 arch dirtfloor
 x 15
-y 4
+y 3
 end
 arch button_small
-invisible 1
 connected 2
 x 15
 y 4
 end
 arch dirtfloor
 x 15
-y 5
+y 4
 end
 arch button_small
-invisible 1
 connected 4
+x 15
+y 5
+end
+arch dirtfloor
 x 15
 y 5
 end
@@ -921,18 +899,17 @@ arch dirtfloor
 x 15
 y 6
 end
-arch dirtfloor
-x 15
-y 7
-end
 arch button_small
-invisible 1
 connected 1
 x 15
 y 7
 end
 arch dirtfloor
 x 15
+y 7
+end
+arch dirtfloor
+x 15
 y 8
 end
 arch dirtfloor
@@ -949,18 +926,17 @@ end
 arch bwall_2_1_2
 x 16
 end
-arch dirtfloor
-x 16
-y 1
-end
 arch button_small
-invisible 1
 connected 5
 x 16
 y 1
 end
 arch dirtfloor
 x 16
+y 1
+end
+arch dirtfloor
+x 16
 y 2
 end
 arch dirtfloor
@@ -1005,13 +981,12 @@ arch dirtfloor
 x 17
 y 1
 end
-arch dirtfloor
+arch button_small
+connected 4
 x 17
 y 2
 end
-arch button_small
-invisible 1
-connected 4
+arch dirtfloor
 x 17
 y 2
 end
@@ -1019,13 +994,12 @@ arch dirtfloor
 x 17
 y 3
 end
-arch dirtfloor
+arch button_small
+connected 3
 x 17
 y 4
 end
-arch button_small
-invisible 1
-connected 3
+arch dirtfloor
 x 17
 y 4
 end
@@ -1037,13 +1011,12 @@ arch dirtfloor
 x 17
 y 6
 end
-arch dirtfloor
+arch button_small
+connected 3
 x 17
 y 7
 end
-arch button_small
-invisible 1
-connected 3
+arch dirtfloor
 x 17
 y 7
 end
@@ -1104,13 +1077,12 @@ endmsg
 x 18
 y 7
 end
-arch dirtfloor
+arch button_small
+connected 2
 x 18
 y 8
 end
-arch button_small
-invisible 1
-connected 2
+arch dirtfloor
 x 18
 y 8
 end
