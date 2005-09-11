@@ -1234,15 +1234,15 @@ x 6
 y 4
 no_pass 1
 end
-arch dungeon_floor
-x 6
-y 5
-end
 arch magic_mouth
 msg
 These simple gravestones don't mark
 anyone important.
 endmsg
+x 6
+y 5
+end
+arch dungeon_floor
 x 6
 y 5
 end
@@ -1997,15 +1997,15 @@ arch dungeon_floor
 x 10
 y 6
 end
-arch dungeon_floor
-x 10
-y 7
-end
 arch magic_mouth
 msg
 People getting their own rooms must
 have been important in life.
 endmsg
+x 10
+y 7
+end
+arch dungeon_floor
 x 10
 y 7
 end
@@ -2076,15 +2076,15 @@ arch dungeon_floor
 x 10
 y 19
 end
-arch dungeon_floor
-x 10
-y 20
-end
 arch magic_mouth
 msg
 There seems to be some really
 important person burried down here.
 endmsg
+x 10
+y 20
+end
+arch dungeon_floor
 x 10
 y 20
 end
@@ -2752,15 +2752,15 @@ x 14
 y 4
 no_pass 1
 end
-arch dungeon_floor
-x 14
-y 5
-end
 arch magic_mouth
 msg
 These simple gravestones don't mark
 anyone important.
 endmsg
+x 14
+y 5
+end
+arch dungeon_floor
 x 14
 y 5
 end

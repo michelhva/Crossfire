@@ -2659,15 +2659,15 @@ arch pstone_1
 x 15
 y 12
 end
-arch pstone_1
-x 15
-y 13
-end
 arch magic_mouth
 msg
 Pull the lever to start the trial
 or say 'help' to chicken out
 endmsg
+x 15
+y 13
+end
+arch pstone_1
 x 15
 y 13
 end

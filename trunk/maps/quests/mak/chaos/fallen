@@ -712,15 +712,15 @@ arch mine2
 x 3
 y 30
 end
-arch flagstone
-x 3
-y 31
-end
 arch magic_mouth
 msg
 You have a really bad feeling about
 this place.
 endmsg
+x 3
+y 31
+end
+arch flagstone
 x 3
 y 31
 end
@@ -5707,15 +5707,15 @@ arch mine2
 x 28
 y 30
 end
-arch flagstone
-x 28
-y 31
-end
 arch magic_mouth
 msg
 You have a really bad feeling about
 this place.
 endmsg
+x 28
+y 31
+end
+arch flagstone
 x 28
 y 31
 end
