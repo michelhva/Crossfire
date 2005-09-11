@@ -344,15 +344,15 @@ arch wwall_1_4
 x 2
 y 3
 end
-arch woodfloor
-x 2
-y 4
-end
 arch magic_mouth
 msg
 You must have the Amulet of Yendor to
 exit.
 endmsg
+x 2
+y 4
+end
+arch woodfloor
 x 2
 y 4
 end
@@ -794,15 +794,15 @@ arch wwall_3_1
 x 6
 y 3
 end
-arch woodfloor
-x 6
-y 4
-end
 arch magic_mouth
 msg
 Step on the mat to enter the Nethack
 Store.
 endmsg
+x 6
+y 4
+end
+arch woodfloor
 x 6
 y 4
 end
@@ -928,10 +928,6 @@ arch woodfloor
 x 7
 y 1
 end
-arch woodfloor
-x 7
-y 2
-end
 arch magic_mouth
 msg
 Welcome to Nethack in Crossfire.
@@ -960,6 +956,10 @@ To play Nethack in Crossfire, step
 onto the teleporter and say
 "Understood".
 endmsg
+x 7
+y 2
+end
+arch woodfloor
 x 7
 y 2
 end
@@ -1084,10 +1084,6 @@ sp 1
 x 8
 y 1
 end
-arch woodfloor
-x 8
-y 2
-end
 arch magic_mouth
 msg
 Welcome to Nethack in Crossfire.
@@ -1116,6 +1112,10 @@ To play Nethack in Crossfire, step
 onto the teleporter and say
 "Understood".
 endmsg
+x 8
+y 2
+end
+arch woodfloor
 x 8
 y 2
 end
@@ -1225,10 +1225,6 @@ end
 arch wwall_2_1_2
 x 9
 end
-arch woodfloor
-x 9
-y 1
-end
 arch magic_mouth
 msg
 Welcome to Nethack in Crossfire.
@@ -1257,6 +1253,10 @@ To play Nethack in Crossfire, step
 onto the teleporter and say
 "Understood".
 endmsg
+x 9
+y 1
+end
+arch woodfloor
 x 9
 y 1
 end
@@ -1865,10 +1865,6 @@ arch woodfloor
 x 14
 y 2
 end
-arch woodfloor
-x 14
-y 3
-end
 arch magic_mouth
 msg
 To begin your quest for the amulet,
@@ -1878,6 +1874,10 @@ DIFFERENT set of random maps, but
 they will all end up at the Wizard of
 Yendor.
 endmsg
+x 14
+y 3
+end
+arch woodfloor
 x 14
 y 3
 end
