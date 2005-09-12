@@ -950,10 +950,6 @@ connected 7
 x 3
 y 1
 end
-arch cobblestones
-x 3
-y 1
-end
 arch magic_mouth
 msg
 Hmmmm.  There's something strange
@@ -962,6 +958,10 @@ feeling that simply taking the
 Stone and leaving might not
 be wise.
 endmsg
+x 3
+y 1
+end
+arch cobblestones
 x 3
 y 1
 end

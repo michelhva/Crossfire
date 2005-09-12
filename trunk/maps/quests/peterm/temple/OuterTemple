@@ -2048,15 +2048,15 @@ connected 1
 x 7
 y 3
 end
-arch pstone_1
-x 7
-y 4
-end
 arch magic_mouth
 msg
 The altar here has ten small angular depressions
 shaped like gemstones.
 endmsg
+x 7
+y 4
+end
+arch pstone_1
 x 7
 y 4
 end
@@ -2334,15 +2334,15 @@ connected 1
 x 8
 y 3
 end
-arch pstone_1
-x 8
-y 4
-end
 arch magic_mouth
 msg
 The altar here has some depressions
 in the shape of gemstones.
 endmsg
+x 8
+y 4
+end
+arch pstone_1
 x 8
 y 4
 end

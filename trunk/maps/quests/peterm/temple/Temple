@@ -5216,10 +5216,6 @@ arch medium_stones
 x 18
 y 30
 end
-arch medium_stones
-x 18
-y 31
-end
 arch magic_mouth
 msg
 This path must lead to the temple of
@@ -5231,16 +5227,20 @@ x 18
 y 31
 end
 arch medium_stones
+x 18
+y 31
+end
+arch magic_mouth
+msg
+This path must lead to the temple of
+the Dark Gods..  It looks dangerous:
+the trees have taken life and are
+dancing in strange patterns
+endmsg
 x 18
 y 32
 end
-arch magic_mouth
-msg
-This path must lead to the temple of
-the Dark Gods..  It looks dangerous:
-the trees have taken life and are
-dancing in strange patterns
-endmsg
+arch medium_stones
 x 18
 y 32
 end

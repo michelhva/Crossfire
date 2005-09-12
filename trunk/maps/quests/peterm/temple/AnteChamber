@@ -742,16 +742,16 @@ arch dungeon_magic
 x 5
 y 10
 end
-arch pstone_1
-x 5
-y 10
-end
 arch magic_mouth
 msg
 You hear faint zapping sounds,
 and smell an odor of ozone.
 endmsg
 food 1
+x 5
+y 10
+end
+arch pstone_1
 x 5
 y 10
 end
@@ -770,16 +770,16 @@ connected 5
 x 5
 y 11
 end
-arch pstone_1
-x 5
-y 12
-end
 arch magic_mouth
 msg
 You might want to simply run past this
 fellow!  He looks very dangerous
 endmsg
 food 1
+x 5
+y 12
+end
+arch pstone_1
 x 5
 y 12
 end
@@ -1493,14 +1493,14 @@ connected 6
 x 10
 y 16
 end
-arch pstone_1
-x 10
-y 17
-end
 arch magic_mouth
 msg
 This door is cold to the touch.
 endmsg
+x 10
+y 17
+end
+arch pstone_1
 x 10
 y 17
 end
@@ -1771,15 +1771,15 @@ connected 4
 x 12
 y 4
 end
-arch pstone_1
-x 12
-y 5
-end
 arch magic_mouth
 msg
 An ominous grunting sound comes from
 beyond the door.
 endmsg
+x 12
+y 5
+end
+arch pstone_1
 x 12
 y 5
 end
@@ -2710,10 +2710,6 @@ end
 arch bwall_2_1_2
 x 19
 end
-arch pstone_1
-x 19
-y 1
-end
 arch magic_mouth
 msg
 Hmmm.  Are those magical writings near
@@ -2722,6 +2718,10 @@ must be guarding their treasure with
 magical traps as well as with their
 foul pets
 endmsg
+x 19
+y 1
+end
+arch pstone_1
 x 19
 y 1
 end
@@ -2842,15 +2842,15 @@ end
 arch bwall_2_1_2
 x 20
 end
-arch pstone_1
-x 20
-y 1
-end
 arch magic_mouth
 msg
 Ugh!  A troll.  Better get those
 fire spells ready!
 endmsg
+x 20
+y 1
+end
+arch pstone_1
 x 20
 y 1
 end
