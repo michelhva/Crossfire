@@ -2563,14 +2563,14 @@ arch wwall_2_1_1
 x 19
 y 12
 end
-arch woodfloor
-x 19
-y 13
-end
 arch magic_mouth
 msg
 You find a secret door!
 endmsg
+x 19
+y 13
+end
+arch woodfloor
 x 19
 y 13
 end

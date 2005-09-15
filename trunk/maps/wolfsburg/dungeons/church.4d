@@ -5975,15 +5975,15 @@ arch dun4
 x 41
 y 29
 end
-arch flagstone
-x 41
-y 30
-end
 arch magic_mouth
 msg
 A small village has been built in what
 was once a great meeting hall
 endmsg
+x 41
+y 30
+end
+arch flagstone
 x 41
 y 30
 end
@@ -5992,15 +5992,15 @@ x 41
 y 30
 connected 2
 end
-arch flagstone
-x 41
-y 31
-end
 arch magic_mouth
 msg
 A small village has been built in what
 was once a great meeting hall
 endmsg
+x 41
+y 31
+end
+arch flagstone
 x 41
 y 31
 end

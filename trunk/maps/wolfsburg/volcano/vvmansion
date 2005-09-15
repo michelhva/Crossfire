@@ -2343,14 +2343,13 @@ arch grass
 x 15
 y 24
 end
-arch dungeon_floor
-x 16
-end
 arch exit
-invisible 1
 slaying /world/world_129_108
 hp 6
 sp 30
+x 16
+end
+arch dungeon_floor
 x 16
 end
 arch dungeon_floor
@@ -2497,14 +2496,13 @@ arch grass
 x 16
 y 24
 end
-arch dungeon_floor
-x 17
-end
 arch exit
-invisible 1
 slaying /world/world_129_108
 hp 6
 sp 30
+x 17
+end
+arch dungeon_floor
 x 17
 end
 arch dungeon_floor

@@ -32,9 +32,6 @@ end
 arch awall_1_4
 y 5
 end
-arch cobblestones
-y 6
-end
 arch invis_exit
 slaying /world/world_128_109
 hp 17
@@ -42,12 +39,15 @@ sp 39
 y 6
 end
 arch cobblestones
+y 6
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 17
+sp 39
 y 7
 end
-arch invis_exit
-slaying /world/world_128_109
-hp 17
-sp 39
+arch cobblestones
 y 7
 end
 arch cobblestones
@@ -1823,10 +1823,6 @@ arch cobblestones
 x 19
 y 6
 end
-arch cobblestones
-x 19
-y 6
-end
 arch invis_exit
 slaying /world/world_128_109
 hp 18
@@ -1836,7 +1832,7 @@ y 6
 end
 arch cobblestones
 x 19
-y 7
+y 6
 end
 arch cobblestones
 x 19
@@ -1846,6 +1842,10 @@ arch invis_exit
 slaying /world/world_128_109
 hp 18
 sp 39
+x 19
+y 7
+end
+arch cobblestones
 x 19
 y 7
 end

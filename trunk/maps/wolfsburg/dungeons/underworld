@@ -1166,15 +1166,15 @@ arch woodfloor
 x 7
 y 7
 end
-arch woodfloor
-x 7
-y 8
-end
 arch magic_mouth
 msg
 Speak The Name Of The Lord Of the Land
 Below and You May Enter
 endmsg
+x 7
+y 8
+end
+arch woodfloor
 x 7
 y 8
 end
@@ -2971,17 +2971,16 @@ arch bwall_2_1_2
 x 13
 y 31
 end
-arch dirtfloor
-x 13
-y 32
-end
 arch exit
 slaying underworld
 hp 11
 sp 15
 x 13
 y 32
-invisible 1
+end
+arch dirtfloor
+x 13
+y 32
 end
 arch dirtfloor
 x 13
@@ -4293,15 +4292,15 @@ endmsg
 x 19
 y 17
 end
-arch cobblestones2
-x 19
-y 18
-end
 arch magic_mouth
 msg
 A statue of the ancient Hero, Kelly
 
 endmsg
+x 19
+y 18
+end
+arch cobblestones2
 x 19
 y 18
 end
