@@ -398,10 +398,6 @@ arch dungeon_magic
 x 3
 y 6
 end
-arch dirtfloor
-x 3
-y 6
-end
 arch magic_mouth
 name Guard
 msg
@@ -410,6 +406,10 @@ Stand back.  Guards only.
 endmsg
 walk_on 0
 fly_on 0
+x 3
+y 6
+end
+arch dirtfloor
 x 3
 y 6
 end
@@ -844,10 +844,6 @@ arch dungeon_magic
 x 6
 y 9
 end
-arch dirtfloor
-x 6
-y 9
-end
 arch magic_mouth
 name magicmouth
 msg
@@ -857,11 +853,11 @@ endmsg
 x 6
 y 9
 end
-arch dungeon_magic
-x 6
-y 10
-end
 arch dirtfloor
+x 6
+y 9
+end
+arch dungeon_magic
 x 6
 y 10
 end
@@ -874,11 +870,11 @@ endmsg
 x 6
 y 10
 end
-arch dungeon_magic
-x 6
-y 11
-end
 arch dirtfloor
+x 6
+y 10
+end
+arch dungeon_magic
 x 6
 y 11
 end
@@ -897,6 +893,10 @@ fly_on 0
 x 6
 y 11
 end
+arch dirtfloor
+x 6
+y 11
+end
 arch dun0
 name Frosty
 face witch_fire.111
@@ -908,16 +908,16 @@ arch dungeon_magic
 x 6
 y 12
 end
-arch dirtfloor
-x 6
-y 12
-end
 arch magic_mouth
 name magicmouth
 msg
 The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.
 Pereodically you notice guards drop more rubies on the piles.
 endmsg
+x 6
+y 12
+end
+arch dirtfloor
 x 6
 y 12
 end
@@ -1592,10 +1592,6 @@ arch dungeon_magic
 x 12
 y 10
 end
-arch dirtfloor
-x 12
-y 10
-end
 arch magic_mouth
 name Tourist Guide
 msg
@@ -1603,6 +1599,10 @@ msg
 Greetings!  You can purchase premium tickets right here!
 Premium tickets give you access to the exclusive view from the center of the arena, right where all the action is!
 endmsg
+x 12
+y 10
+end
+arch dirtfloor
 x 12
 y 10
 end
@@ -1707,10 +1707,6 @@ arch dungeon_magic
 x 13
 y 5
 end
-arch dirtfloor
-x 13
-y 5
-end
 arch magic_mouth
 name Arena Master
 msg
@@ -1722,6 +1718,10 @@ You will probably need some more rubies to power them.  I think 250 should do it
 endmsg
 walk_on 0
 fly_on 0
+x 13
+y 5
+end
+arch dirtfloor
 x 13
 y 5
 end

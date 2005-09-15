@@ -1198,15 +1198,6 @@ exp 1800
 x 5
 y 6
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 5
-y 7
-end
 arch magic_mouth
 name magicmouth
 msg
@@ -1214,6 +1205,15 @@ Sorry..  I just can't get them powered again.
 Must be a short somewhere...
 You'll have to manually power them on the alter.
 endmsg
+x 5
+y 7
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 5
 y 7
 end
@@ -4474,16 +4474,16 @@ arch dungeon_magic
 x 19
 y 2
 end
-arch dirtfloor
-x 19
-y 2
-end
 arch magic_mouth
 name magicmouth
 msg
 Paying Spectators Only!
 Purchase your ticket at the registration office!
 endmsg
+x 19
+y 2
+end
+arch dirtfloor
 x 19
 y 2
 end
@@ -4801,14 +4801,14 @@ arch dungeon_magic
 x 19
 y 25
 end
-arch dirtfloor
-x 19
-y 25
-end
 arch invis_exit
 slaying /world/world_115_115
 hp 20
 sp 30
+x 19
+y 25
+end
+arch dirtfloor
 x 19
 y 25
 end
@@ -7972,15 +7972,6 @@ exp 1800
 x 33
 y 6
 end
-arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
-slaying team2
-x 33
-y 7
-end
 arch magic_mouth
 name magicmouth
 msg
@@ -7988,6 +7979,15 @@ Sorry..  I just can't get them powered again.
 Must be a short somewhere...
 You'll have to manually power them on the alter.
 endmsg
+x 33
+y 7
+end
+arch battleground
+hp 4
+sp 11
+maxhp 34
+maxsp 11
+slaying team2
 x 33
 y 7
 end
