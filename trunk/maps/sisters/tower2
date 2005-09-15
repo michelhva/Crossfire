@@ -673,10 +673,6 @@ arch flagstone
 x 5
 y 6
 end
-arch cobblestones
-x 5
-y 7
-end
 arch magic_mouth
 msg
 You sense something funny 
@@ -685,6 +681,10 @@ to be watching you and waiting
 for you to make a mistake.
  
 endmsg
+x 5
+y 7
+end
+arch cobblestones
 x 5
 y 7
 end

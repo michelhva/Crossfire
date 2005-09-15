@@ -722,10 +722,6 @@ arch awall_2_2_4
 x 13
 y 11
 end
-arch flagstone
-x 13
-y 12
-end
 arch magic_mouth
 msg
 This chamber looks like a large
@@ -735,14 +731,18 @@ x 13
 y 12
 end
 arch flagstone
+x 13
+y 12
+end
+arch magic_mouth
+msg
+This chamber looks like a large
+tomb.
+endmsg
 x 13
 y 13
 end
-arch magic_mouth
-msg
-This chamber looks like a large
-tomb.
-endmsg
+arch flagstone
 x 13
 y 13
 end
@@ -1133,15 +1133,15 @@ vulnerable 0
 x 15
 y 19
 end
-arch flagstone
-x 15
-y 20
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 15
+y 20
+end
+arch flagstone
 x 15
 y 20
 end
@@ -1407,15 +1407,15 @@ arch weak_wall_2
 x 17
 y 4
 end
-arch flagstone
-x 17
-y 5
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 17
+y 5
+end
+arch flagstone
 x 17
 y 5
 end
@@ -1475,15 +1475,15 @@ arch flagstone
 x 17
 y 19
 end
-arch flagstone
-x 17
-y 20
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 17
+y 20
+end
+arch flagstone
 x 17
 y 20
 end
@@ -2008,15 +2008,15 @@ arch cwall_0
 x 20
 y 20
 end
-arch flagstone
-x 20
-y 21
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 20
+y 21
+end
+arch flagstone
 x 20
 y 21
 end
@@ -2079,15 +2079,15 @@ arch weak_wall_2
 x 21
 y 4
 end
-arch flagstone
-x 21
-y 5
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 21
+y 5
+end
+arch flagstone
 x 21
 y 5
 end
@@ -2552,15 +2552,15 @@ arch weak_wall_2
 x 24
 y 4
 end
-arch flagstone
-x 24
-y 5
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 24
+y 5
+end
+arch flagstone
 x 24
 y 5
 end
@@ -2883,15 +2883,15 @@ vulnerable 0
 x 25
 y 18
 end
-arch flagstone
-x 25
-y 19
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 25
+y 19
+end
+arch flagstone
 x 25
 y 19
 end
@@ -2946,15 +2946,15 @@ arch flagstone
 x 26
 y 5
 end
-arch flagstone
-x 26
-y 6
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 26
+y 6
+end
+arch flagstone
 x 26
 y 6
 end
@@ -2966,10 +2966,6 @@ arch flagstone
 x 26
 y 8
 end
-arch flagstone
-x 26
-y 9
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
@@ -2980,6 +2976,10 @@ y 9
 end
 arch flagstone
 x 26
+y 9
+end
+arch flagstone
+x 26
 y 10
 end
 arch dungeon_magic
@@ -2994,15 +2994,15 @@ arch dungeon_magic
 x 26
 y 11
 end
-arch flagstone
+arch magic_mouth
+msg
+There are cryptic symbols on the
+wall here.
+endmsg
 x 26
 y 12
 end
-arch magic_mouth
-msg
-There are cryptic symbols on the
-wall here.
-endmsg
+arch flagstone
 x 26
 y 12
 end
@@ -3347,15 +3347,15 @@ arch random_wealth
 x 28
 y 18
 end
-arch flagstone
-x 28
-y 19
-end
 arch magic_mouth
 msg
 There are cryptic symbols on the
 wall here.
 endmsg
+x 28
+y 19
+end
+arch flagstone
 x 28
 y 19
 end

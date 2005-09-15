@@ -39,9 +39,6 @@ end
 arch flagstone
 y 7
 end
-arch awall_2_1_1
-y 7
-end
 arch magic_mouth
 msg
 You hear the sound of rock sliding on
@@ -49,6 +46,9 @@ rock.
 endmsg
 y 7
 connected 10
+end
+arch awall_2_1_1
+y 7
 end
 arch flagstone
 y 8
