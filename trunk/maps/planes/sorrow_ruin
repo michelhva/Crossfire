@@ -11,13 +11,12 @@ height 40
 difficulty 15
 darkness 3
 end
-arch pstone_3
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
+end
+arch pstone_3
 end
 arch cobblestones2
 y 1
@@ -119,24 +118,22 @@ arch rubble
 blocksview 1
 y 17
 end
-arch pstone_3
-y 18
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
 y 18
 end
 arch pstone_3
+y 18
+end
+arch exit
+slaying harcanna_wood
+hp 31
+sp 3
 y 19
 end
-arch exit
-invisible 1
-slaying harcanna_wood
-hp 31
-sp 3
+arch pstone_3
 y 19
 end
 arch blocked
@@ -805,15 +802,14 @@ arch cobblestones2
 x 3
 y 18
 end
-arch cobblestones2
-x 3
-y 19
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
+x 3
+y 19
+end
+arch cobblestones2
 x 3
 y 19
 end
@@ -1055,15 +1051,14 @@ arch cobblestones2
 x 4
 y 18
 end
-arch cobblestones2
-x 4
-y 19
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
+x 4
+y 19
+end
+arch cobblestones2
 x 4
 y 19
 end
@@ -4602,14 +4597,13 @@ arch blocked
 x 18
 y 39
 end
-arch pstone_3
-x 19
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
+x 19
+end
+arch pstone_3
 x 19
 end
 arch pstone_2
@@ -4676,12 +4670,7 @@ arch statue
 x 19
 y 8
 end
-arch cobblestones2
-x 19
-y 9
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
@@ -4689,14 +4678,17 @@ x 19
 y 9
 end
 arch cobblestones2
+x 19
+y 9
+end
+arch exit
+slaying harcanna_wood
+hp 31
+sp 3
 x 19
 y 10
 end
-arch exit
-invisible 1
-slaying harcanna_wood
-hp 31
-sp 3
+arch cobblestones2
 x 19
 y 10
 end
@@ -4764,15 +4756,14 @@ arch flagstone_2_2_4
 x 19
 y 18
 end
-arch pstone_3
-x 19
-y 19
-end
 arch exit
-invisible 1
 slaying harcanna_wood
 hp 31
 sp 3
+x 19
+y 19
+end
+arch pstone_3
 x 19
 y 19
 end
