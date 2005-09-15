@@ -10535,10 +10535,6 @@ arch dungeon_magic
 x 40
 y 38
 end
-arch cobblestones2
-x 40
-y 38
-end
 arch magic_mouth
 msg
 Someone scribbles in crayon...
@@ -10550,6 +10546,10 @@ To start both, go to the courthouse.
 Ask the people there about the 'quest'
 Good Luck
 endmsg
+x 40
+y 38
+end
+arch cobblestones2
 x 40
 y 38
 end

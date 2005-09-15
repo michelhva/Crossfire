@@ -8523,16 +8523,6 @@ elevation -16
 x 20
 y 7
 end
-arch shallow_sea
-no_pass 0
-elevation -16
-x 20
-y 8
-end
-arch stonebridge_2_1_2
-x 20
-y 8
-end
 arch invis_exit
 msg
 Something is amiss here...
@@ -8540,6 +8530,16 @@ endmsg
 slaying /dungeons/trollbridge
 hp 2
 sp 4
+x 20
+y 8
+end
+arch shallow_sea
+no_pass 0
+elevation -16
+x 20
+y 8
+end
+arch stonebridge_2_1_2
 x 20
 y 8
 end
@@ -8702,19 +8702,19 @@ arch pier_2_2_3
 x 20
 y 29
 end
+arch invis_exit
+slaying /scorn/anthony/prison
+hp 15
+sp 1
+x 20
+y 30
+end
 arch dungeon_magic
 x 20
 y 30
 end
 arch cobblestones2
 elevation 22
-x 20
-y 30
-end
-arch invis_exit
-slaying /scorn/anthony/prison
-hp 15
-sp 1
 x 20
 y 30
 end
@@ -9464,16 +9464,6 @@ elevation 4
 x 22
 y 7
 end
-arch shallow_sea
-no_pass 0
-elevation -16
-x 22
-y 8
-end
-arch stonebridge_2_1_2
-x 22
-y 8
-end
 arch invis_exit
 msg
 Oh no, something is not right here...
@@ -9481,6 +9471,16 @@ endmsg
 slaying /dungeons/trollbridge
 hp 29
 sp 3
+x 22
+y 8
+end
+arch shallow_sea
+no_pass 0
+elevation -16
+x 22
+y 8
+end
+arch stonebridge_2_1_2
 x 22
 y 8
 end

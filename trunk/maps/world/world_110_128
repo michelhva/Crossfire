@@ -6983,11 +6983,6 @@ elevation 1178
 x 28
 y 7
 end
-arch darkforest
-elevation 1487
-x 28
-y 8
-end
 arch exit
 msg
 layoutstyle spiral
@@ -7004,9 +6999,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 28
+y 8
+end
+arch darkforest
+elevation 1487
 x 28
 y 8
 end
@@ -7065,11 +7064,6 @@ elevation 2369
 x 28
 y 19
 end
-arch darkforest
-elevation 2132
-x 28
-y 20
-end
 arch exit
 msg
 layoutstyle maze
@@ -7086,9 +7080,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 28
+y 20
+end
+arch darkforest
+elevation 2132
 x 28
 y 20
 end
@@ -7265,11 +7263,6 @@ elevation 1658
 x 29
 y 3
 end
-arch darkforest
-elevation 1510
-x 29
-y 4
-end
 arch exit
 msg
 layoutstyle maze
@@ -7286,9 +7279,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 29
+y 4
+end
+arch darkforest
+elevation 1510
 x 29
 y 4
 end
@@ -7585,11 +7582,6 @@ elevation 2410
 x 30
 y 9
 end
-arch darkforest
-elevation 2568
-x 30
-y 10
-end
 arch exit
 msg
 layoutstyle maze
@@ -7606,9 +7598,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 30
+y 10
+end
+arch darkforest
+elevation 2568
 x 30
 y 10
 end
@@ -7700,11 +7696,6 @@ elevation 1359
 x 30
 y 24
 end
-arch darkforest
-elevation 2108
-x 30
-y 25
-end
 arch exit
 msg
 layoutstyle maze
@@ -7721,9 +7712,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 30
+y 25
+end
+arch darkforest
+elevation 2108
 x 30
 y 25
 end
@@ -7920,11 +7915,6 @@ elevation 2611
 x 31
 y 12
 end
-arch darkforest
-elevation 2339
-x 31
-y 13
-end
 arch exit
 msg
 layoutstyle rogue
@@ -7941,9 +7931,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 31
+y 13
+end
+arch darkforest
+elevation 2339
 x 31
 y 13
 end
@@ -7951,11 +7945,6 @@ arch darkforest
 elevation 2344
 x 31
 y 14
-end
-arch darkforest
-elevation 2590
-x 31
-y 15
 end
 arch exit
 msg
@@ -7973,9 +7962,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 31
+y 15
+end
+arch darkforest
+elevation 2590
 x 31
 y 15
 end
@@ -8008,11 +8001,6 @@ elevation 2215
 x 31
 y 19
 end
-arch darkforest
-elevation 1658
-x 31
-y 20
-end
 arch exit
 msg
 layoutstyle maze
@@ -8029,9 +8017,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 31
+y 20
+end
+arch darkforest
+elevation 1658
 x 31
 y 20
 end
@@ -8071,11 +8063,6 @@ elevation 2746
 x 31
 y 26
 end
-arch darkforest
-elevation 1946
-x 31
-y 27
-end
 arch exit
 msg
 layoutstyle maze
@@ -8092,9 +8079,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 31
+y 27
+end
+arch darkforest
+elevation 1946
 x 31
 y 27
 end
@@ -8328,11 +8319,6 @@ elevation 841
 x 32
 y 19
 end
-arch darkforest
-elevation 999
-x 32
-y 20
-end
 arch exit
 msg
 layoutstyle maze
@@ -8349,9 +8335,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 32
+y 20
+end
+arch darkforest
+elevation 999
 x 32
 y 20
 end
@@ -8507,11 +8497,6 @@ arch hills_rocky
 elevation 1361
 x 33
 end
-arch darkforest
-elevation 1788
-x 33
-y 1
-end
 arch exit
 msg
 layoutstyle spiral
@@ -8528,9 +8513,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 33
+y 1
+end
+arch darkforest
+elevation 1788
 x 33
 y 1
 end
@@ -8586,11 +8575,6 @@ elevation 3203
 x 33
 y 9
 end
-arch darkforest
-elevation 3240
-x 33
-y 10
-end
 arch exit
 msg
 layoutstyle maze
@@ -8607,9 +8591,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 33
+y 10
+end
+arch darkforest
+elevation 3240
 x 33
 y 10
 end
@@ -9232,11 +9220,6 @@ elevation 3171
 x 35
 y 15
 end
-arch darkforest
-elevation 2864
-x 35
-y 16
-end
 arch exit
 msg
 layoutstyle rogue
@@ -9255,9 +9238,13 @@ wallstyle trees
 final_map /planes/greenway5
 exit_on_final_map no
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 35
+y 16
+end
+arch darkforest
+elevation 2864
 x 35
 y 16
 end
@@ -9614,11 +9601,6 @@ elevation 3210
 x 36
 y 22
 end
-arch darkforest
-elevation 2578
-x 36
-y 23
-end
 arch exit
 msg
 layoutstyle maze
@@ -9635,9 +9617,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 36
+y 23
+end
+arch darkforest
+elevation 2578
 x 36
 y 23
 end
@@ -9812,11 +9798,6 @@ elevation 1401
 x 37
 y 5
 end
-arch darkforest
-elevation 2237
-x 37
-y 6
-end
 arch exit
 msg
 layoutstyle maze
@@ -9833,9 +9814,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 37
+y 6
+end
+arch darkforest
+elevation 2237
 x 37
 y 6
 end
@@ -9931,11 +9916,6 @@ elevation 2619
 x 37
 y 19
 end
-arch darkforest
-elevation 2882
-x 37
-y 20
-end
 arch exit
 msg
 layoutstyle maze
@@ -9952,9 +9932,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 37
+y 20
+end
+arch darkforest
+elevation 2882
 x 37
 y 20
 end
@@ -9978,11 +9962,6 @@ elevation 2110
 x 37
 y 24
 end
-arch darkforest
-elevation 1876
-x 37
-y 25
-end
 arch exit
 msg
 layoutstyle maze
@@ -9999,9 +9978,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 37
+y 25
+end
+arch darkforest
+elevation 1876
 x 37
 y 25
 end
@@ -10182,11 +10165,6 @@ elevation 2769
 x 38
 y 10
 end
-arch darkforest
-elevation 2636
-x 38
-y 11
-end
 arch exit
 msg
 layoutstyle maze
@@ -10203,9 +10181,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 38
+y 11
+end
+arch darkforest
+elevation 2636
 x 38
 y 11
 end
@@ -10278,11 +10260,6 @@ elevation 2291
 x 38
 y 21
 end
-arch darkforest
-elevation 1808
-x 38
-y 22
-end
 arch exit
 msg
 layoutstyle rogue
@@ -10299,9 +10276,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 38
+y 22
+end
+arch darkforest
+elevation 1808
 x 38
 y 22
 end
@@ -10525,11 +10506,6 @@ elevation 2833
 x 39
 y 13
 end
-arch darkforest
-elevation 2958
-x 39
-y 14
-end
 arch exit
 msg
 layoutstyle rogue
@@ -10546,9 +10522,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 39
+y 14
+end
+arch darkforest
+elevation 2958
 x 39
 y 14
 end
@@ -10758,11 +10738,6 @@ elevation 2089
 x 40
 y 3
 end
-arch darkforest
-elevation 1535
-x 40
-y 4
-end
 arch exit
 msg
 layoutstyle spiral
@@ -10779,9 +10754,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 4
+end
+arch darkforest
+elevation 1535
 x 40
 y 4
 end
@@ -10815,11 +10794,6 @@ elevation 2112
 x 40
 y 10
 end
-arch darkforest
-elevation 2280
-x 40
-y 11
-end
 arch exit
 msg
 layoutstyle maze
@@ -10836,9 +10810,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 11
+end
+arch darkforest
+elevation 2280
 x 40
 y 11
 end
@@ -10857,11 +10835,6 @@ elevation 2827
 x 40
 y 14
 end
-arch darkforest
-elevation 2931
-x 40
-y 15
-end
 arch exit
 msg
 layoutstyle rogue
@@ -10878,9 +10851,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 15
+end
+arch darkforest
+elevation 2931
 x 40
 y 15
 end
@@ -10888,11 +10865,6 @@ arch darkforest
 elevation 2706
 x 40
 y 16
-end
-arch darkforest
-elevation 2525
-x 40
-y 17
 end
 arch exit
 msg
@@ -10910,9 +10882,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 17
+end
+arch darkforest
+elevation 2525
 x 40
 y 17
 end
@@ -10932,11 +10908,6 @@ elevation 2737
 x 40
 y 19
 end
-arch darkforest
-elevation 2558
-x 40
-y 20
-end
 arch exit
 msg
 layoutstyle rogue
@@ -10953,9 +10924,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 20
+end
+arch darkforest
+elevation 2558
 x 40
 y 20
 end
@@ -11011,11 +10986,6 @@ elevation 896
 x 40
 y 28
 end
-arch darkforest
-elevation 799
-x 40
-y 29
-end
 arch exit
 msg
 layoutstyle maze
@@ -11032,9 +11002,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 40
+y 29
+end
+arch darkforest
+elevation 799
 x 40
 y 29
 end
@@ -11283,11 +11257,6 @@ elevation 1301
 x 41
 y 24
 end
-arch darkforest
-elevation 417
-x 41
-y 25
-end
 arch exit
 msg
 layoutstyle maze
@@ -11304,9 +11273,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 41
+y 25
+end
+arch darkforest
+elevation 417
 x 41
 y 25
 end
@@ -11508,11 +11481,6 @@ elevation 2367
 x 42
 y 13
 end
-arch darkforest
-elevation 2618
-x 42
-y 14
-end
 arch exit
 msg
 layoutstyle rogue
@@ -11529,9 +11497,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 42
+y 14
+end
+arch darkforest
+elevation 2618
 x 42
 y 14
 end
@@ -11766,11 +11738,6 @@ elevation 1110
 x 43
 y 1
 end
-arch darkforest
-elevation 1499
-x 43
-y 2
-end
 arch exit
 msg
 layoutstyle spiral
@@ -11787,9 +11754,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 43
+y 2
+end
+arch darkforest
+elevation 1499
 x 43
 y 2
 end
@@ -12132,11 +12103,6 @@ elevation 2300
 x 44
 y 11
 end
-arch darkforest
-elevation 2149
-x 44
-y 12
-end
 arch exit
 msg
 layoutstyle maze
@@ -12153,9 +12119,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 44
+y 12
+end
+arch darkforest
+elevation 2149
 x 44
 y 12
 end
@@ -12197,11 +12167,6 @@ elevation 1791
 x 44
 y 19
 end
-arch darkforest
-elevation 1692
-x 44
-y 20
-end
 arch exit
 msg
 layoutstyle spiral
@@ -12218,9 +12183,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 44
+y 20
+end
+arch darkforest
+elevation 1692
 x 44
 y 20
 end
@@ -12517,11 +12486,6 @@ elevation 1080
 x 45
 y 24
 end
-arch darkforest
-elevation 1022
-x 45
-y 25
-end
 arch exit
 msg
 layoutstyle maze
@@ -12538,9 +12502,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 45
+y 25
+end
+arch darkforest
+elevation 1022
 x 45
 y 25
 end
@@ -13366,11 +13334,6 @@ elevation 1339
 x 48
 y 23
 end
-arch darkforest
-elevation 1388
-x 48
-y 24
-end
 arch exit
 msg
 layoutstyle spiral
@@ -13387,9 +13350,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 48
+y 24
+end
+arch darkforest
+elevation 1388
 x 48
 y 24
 end
@@ -13607,11 +13574,6 @@ elevation 1572
 x 49
 y 17
 end
-arch darkforest
-elevation 1466
-x 49
-y 18
-end
 arch exit
 msg
 layoutstyle spiral
@@ -13628,9 +13590,13 @@ decorstyle outdoor_lush
 floorstyle outdoor_lush
 wallstyle trees
 endmsg
-invisible 1
 slaying /!
 fly_on 0
+x 49
+y 18
+end
+arch darkforest
+elevation 1466
 x 49
 y 18
 end
