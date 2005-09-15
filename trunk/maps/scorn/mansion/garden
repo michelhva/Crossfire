@@ -20557,15 +20557,15 @@ arch food
 x 55
 y 34
 end
-arch small_stones
-x 55
-y 35
-end
 arch magic_mouth
 msg
 You feel an unusual draft against this
 wall
 endmsg
+x 55
+y 35
+end
+arch small_stones
 x 55
 y 35
 end

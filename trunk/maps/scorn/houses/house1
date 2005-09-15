@@ -948,14 +948,14 @@ blocksview 1
 x 10
 y 10
 end
-arch cobblestones
-x 10
-y 11
-end
 arch magic_mouth
 msg
 The house is being over run with monsters!
 endmsg
+x 10
+y 11
+end
+arch cobblestones
 x 10
 y 11
 end
@@ -971,15 +971,15 @@ arch cobblestones
 x 10
 y 14
 end
-arch cobblestones
-x 10
-y 15
-end
 arch exit
 slaying /world/world_105_115
 hp 8
 sp 45
 invisible 1
+x 10
+y 15
+end
+arch cobblestones
 x 10
 y 15
 end
@@ -1035,14 +1035,14 @@ blocksview 1
 x 11
 y 10
 end
-arch cobblestones
-x 11
-y 11
-end
 arch magic_mouth
 msg
 The house is being over run with monsters!
 endmsg
+x 11
+y 11
+end
+arch cobblestones
 x 11
 y 11
 end
@@ -1058,15 +1058,15 @@ arch cobblestones
 x 11
 y 14
 end
-arch cobblestones
-x 11
-y 15
-end
 arch exit
 slaying /world/world_105_115
 hp 8
 sp 45
 invisible 1
+x 11
+y 15
+end
+arch cobblestones
 x 11
 y 15
 end

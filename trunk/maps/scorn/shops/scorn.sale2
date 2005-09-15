@@ -3605,16 +3605,16 @@ arch dungeon_magic
 x 15
 y 8
 end
-arch tile_white_floor
-name items to discard
-x 15
-y 8
-end
 arch invis_exit
 name emergency exit for players
 slaying scorn.sale2
 hp 8
 sp 15
+x 15
+y 8
+end
+arch tile_white_floor
+name items to discard
 x 15
 y 8
 end

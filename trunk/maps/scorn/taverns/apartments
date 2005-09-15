@@ -1425,14 +1425,14 @@ arch cobblestones2
 x 12
 y 1
 end
-arch pstone_1
-x 12
-y 2
-end
 arch invis_exit
 slaying /world/world_105_115
 hp 10
 sp 34
+x 12
+y 2
+end
+arch pstone_1
 x 12
 y 2
 end
@@ -1532,14 +1532,14 @@ arch cobblestones2
 x 13
 y 1
 end
-arch pstone_1
-x 13
-y 2
-end
 arch invis_exit
 slaying /world/world_105_115
 hp 10
 sp 34
+x 13
+y 2
+end
+arch pstone_1
 x 13
 y 2
 end

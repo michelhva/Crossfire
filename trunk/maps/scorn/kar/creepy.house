@@ -318,15 +318,15 @@ end
 arch mine2
 x 2
 end
-arch dirtfloor
-x 2
-y 1
-end
 arch magic_mouth
 msg
 WHO DARES ENTER THE CREEPY CRYPT?
 YOU WILL PARISH! 
 endmsg
+x 2
+y 1
+end
+arch dirtfloor
 x 2
 y 1
 end
@@ -1404,16 +1404,16 @@ arch cobblestones2
 x 9
 y 4
 end
-arch cobblestones2
-x 9
-y 5
-end
 arch magic_mouth
 msg
 Heh, Heh Heh, you thought you beat my
 haunted house, but you have only yet to 
 begin!  You shall perish...
 endmsg
+x 9
+y 5
+end
+arch cobblestones2
 x 9
 y 5
 end

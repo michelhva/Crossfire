@@ -934,10 +934,6 @@ arch dungeon_magic
 x 7
 y 12
 end
-arch cobblestones2
-x 7
-y 12
-end
 arch magic_mouth
 msg
 Welcome to Skud's Currency Exchange.
@@ -945,6 +941,10 @@ Please form a single file line.
 Have a nice day.
 (idea credited to Eric Mehlhaff)
 endmsg
+x 7
+y 12
+end
+arch cobblestones2
 x 7
 y 12
 end
@@ -1088,10 +1088,6 @@ arch dungeon_magic
 x 8
 y 12
 end
-arch cobblestones2
-x 8
-y 12
-end
 arch magic_mouth
 msg
 Welcome to Skud's Currency Exchange.
@@ -1099,6 +1095,10 @@ Please form a single file line.
 Have a nice day.
 (idea credited to Eric Mehlhaff)
 endmsg
+x 8
+y 12
+end
+arch cobblestones2
 x 8
 y 12
 end

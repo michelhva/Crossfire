@@ -180,14 +180,13 @@ arch light2
 x 1
 y 4
 end
-arch dirtfloor
+arch button_small
+connected 1
+activate_on_release 0
 x 1
 y 5
 end
-arch button_small
-invisible 1
-connected 1
-activate_on_release 0
+arch dirtfloor
 x 1
 y 5
 end
@@ -330,14 +329,13 @@ arch dirtfloor
 x 2
 y 3
 end
-arch dirtfloor
+arch button_small
+connected 1
+activate_on_release 0
 x 2
 y 4
 end
-arch button_small
-invisible 1
-connected 1
-activate_on_release 0
+arch dirtfloor
 x 2
 y 4
 end
@@ -1320,14 +1318,13 @@ arch dirtfloor
 x 8
 y 9
 end
-arch dirtfloor
+arch button_small
+connected 1
+activate_on_release 0
 x 8
 y 10
 end
-arch button_small
-invisible 1
-connected 1
-activate_on_release 0
+arch dirtfloor
 x 8
 y 10
 end

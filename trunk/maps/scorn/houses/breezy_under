@@ -2665,15 +2665,15 @@ arch generate_goblin
 x 16
 y 1
 end
-arch dungeon_floor
-x 16
-y 2
-end
 arch magic_mouth
 msg
 Skitter....
 endmsg
 food 1
+x 16
+y 2
+end
+arch dungeon_floor
 x 16
 y 2
 end
@@ -2689,15 +2689,15 @@ arch dungeon_floor
 x 16
 y 4
 end
-arch dungeon_floor
-x 16
-y 5
-end
 arch magic_mouth
 msg
 Hmm, someone needs to dust these cobwebs...
 endmsg
 food 1
+x 16
+y 5
+end
+arch dungeon_floor
 x 16
 y 5
 end
@@ -3012,10 +3012,6 @@ arch dungeon_floor
 x 17
 y 25
 end
-arch dungeon_floor
-x 17
-y 26
-end
 arch magic_mouth
 msg
 You hear a gate open.
@@ -3023,6 +3019,10 @@ endmsg
 connected 5
 walk_on 0
 fly_on 0
+x 17
+y 26
+end
+arch dungeon_floor
 x 17
 y 26
 end
@@ -4204,10 +4204,6 @@ arch dungeon_floor
 x 24
 y 21
 end
-arch dungeon_floor
-x 24
-y 22
-end
 arch magic_mouth
 msg
 Click!
@@ -4215,6 +4211,10 @@ endmsg
 connected 15
 walk_on 0
 fly_on 0
+x 24
+y 22
+end
+arch dungeon_floor
 x 24
 y 22
 end
@@ -4399,10 +4399,6 @@ arch dungeon_floor
 x 25
 y 21
 end
-arch dungeon_floor
-x 25
-y 22
-end
 arch magic_mouth
 msg
 Click!
@@ -4410,6 +4406,10 @@ endmsg
 connected 18
 walk_on 0
 fly_on 0
+x 25
+y 22
+end
+arch dungeon_floor
 x 25
 y 22
 end
@@ -4588,14 +4588,14 @@ arch dungeon_floor
 x 26
 y 21
 end
-arch dungeon_floor
-x 26
-y 22
-end
 arch magic_mouth
 connected 17
 walk_on 0
 fly_on 0
+x 26
+y 22
+end
+arch dungeon_floor
 x 26
 y 22
 end

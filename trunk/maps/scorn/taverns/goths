@@ -5104,15 +5104,15 @@ arch woodfloor
 x 23
 y 21
 end
-arch woodfloor
-x 23
-y 22
-end
 arch magic_mouth
 msg
 You see some grafitti on the wall.
 It says : The Gate Password is "Chain"
 endmsg
+x 23
+y 22
+end
+arch woodfloor
 x 23
 y 22
 end
@@ -6726,10 +6726,6 @@ arch chair_1.1
 x 31
 y 16
 end
-arch woodfloor
-x 31
-y 17
-end
 arch magic_mouth
 msg
 The Dragonlords fear to keep the
@@ -6740,6 +6736,10 @@ have hidden it in a mountain eyrie
 near their lair:  you must search the
 high mountains near their lair.
 endmsg
+x 31
+y 17
+end
+arch woodfloor
 x 31
 y 17
 end
@@ -6919,15 +6919,14 @@ arch woodfloor
 x 32
 y 15
 end
-arch woodfloor
-x 32
-y 16
-end
 arch altar
 slaying emerald
 food 7
-invisible 1
 connected 123
+x 32
+y 16
+end
+arch woodfloor
 x 32
 y 16
 end

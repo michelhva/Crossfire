@@ -877,15 +877,15 @@ arch dwall_1_4
 x 7
 y 13
 end
-arch woodfloor
-x 7
-y 14
-end
 arch magic_mouth
 msg
 HELP!
 This church has been over run with zombies
 endmsg
+x 7
+y 14
+end
+arch woodfloor
 x 7
 y 14
 end
@@ -1533,15 +1533,15 @@ arch dwall_1_3
 x 13
 y 13
 end
-arch woodfloor
-x 13
-y 14
-end
 arch magic_mouth
 msg
 HELP!
 This church has been over run with zombies
 endmsg
+x 13
+y 14
+end
+arch woodfloor
 x 13
 y 14
 end

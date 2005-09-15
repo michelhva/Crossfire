@@ -303,15 +303,15 @@ arch bwall_2_1_2
 x 3
 y 1
 end
-arch dungeon_floor
-x 3
-y 2
-end
 arch magic_mouth
 msg
 You hear some smaller rocks fall down
 near you!
 endmsg
+x 3
+y 2
+end
+arch dungeon_floor
 x 3
 y 2
 end
@@ -492,18 +492,17 @@ end
 arch bwall_2_1_2
 x 5
 end
-arch dungeon_floor
-x 5
-y 1
-end
 arch button_small
 msg
 Your hear a distant sound..
 endmsg
 x 5
 y 1
-invisible 1
 connected 22
+end
+arch dungeon_floor
+x 5
+y 1
 end
 arch weak_wall_6
 x 5
@@ -683,15 +682,15 @@ arch bwall_3_1
 x 6
 y 10
 end
-arch dungeon_floor
-x 6
-y 11
-end
 arch magic_mouth
 msg
 You hear some smaller rocks fall down
 near you!
 endmsg
+x 6
+y 11
+end
+arch dungeon_floor
 x 6
 y 11
 end

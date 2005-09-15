@@ -302,14 +302,14 @@ arch woodfloor
 x 4
 y 8
 end
-arch woodfloor
-x 4
-y 9
-end
 arch invis_exit
 slaying /world/world_104_116
 hp 46
 sp 8
+x 4
+y 9
+end
+arch woodfloor
 x 4
 y 9
 end

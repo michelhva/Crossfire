@@ -214,15 +214,15 @@ sp 1
 x 1
 y 1
 end
-arch dungeon_floor
-x 1
-y 2
-end
 arch magic_mouth
 msg
 Smells like goblins...
 endmsg
 connected 10
+x 1
+y 2
+end
+arch dungeon_floor
 x 1
 y 2
 end
@@ -400,10 +400,6 @@ end
 arch dun_2_1_2
 x 2
 end
-arch dungeon_floor
-x 2
-y 1
-end
 arch magic_mouth
 msg
 Aaaaoooooooo!
@@ -414,13 +410,17 @@ y 1
 end
 arch dungeon_floor
 x 2
-y 2
+y 1
 end
 arch magic_mouth
 msg
 You hear echos of orc laughter.
 endmsg
 connected 10
+x 2
+y 2
+end
+arch dungeon_floor
 x 2
 y 2
 end
@@ -2245,10 +2245,6 @@ arch dungeon_floor
 x 13
 y 19
 end
-arch dungeon_floor
-x 13
-y 20
-end
 arch magic_mouth
 msg
 SHREEEEEEIIIIIIKKKKKKKK!
@@ -2256,6 +2252,10 @@ endmsg
 connected 31
 walk_on 0
 fly_on 0
+x 13
+y 20
+end
+arch dungeon_floor
 x 13
 y 20
 end
@@ -2852,10 +2852,6 @@ arch dun_2_1_2
 x 16
 y 16
 end
-arch dungeon_floor
-x 16
-y 17
-end
 arch magic_mouth
 msg
 ooOOoooOOO
@@ -2866,13 +2862,17 @@ y 17
 end
 arch dungeon_floor
 x 16
-y 18
+y 17
 end
 arch magic_mouth
 msg
 OOOoooOOO
 Be careful with that axe Eugine....
 endmsg
+x 16
+y 18
+end
+arch dungeon_floor
 x 16
 y 18
 end
@@ -3027,10 +3027,6 @@ arch dun_1_3
 x 17
 y 16
 end
-arch dungeon_floor
-x 17
-y 17
-end
 arch magic_mouth
 msg
 oooOOooooOOO
@@ -3042,13 +3038,17 @@ y 17
 end
 arch dungeon_floor
 x 17
-y 18
+y 17
 end
 arch magic_mouth
 msg
 OOooooOOOOooo
 You are standing on my foOOOooot!
 endmsg
+x 17
+y 18
+end
+arch dungeon_floor
 x 17
 y 18
 end
@@ -3199,10 +3199,6 @@ connected 7
 x 18
 y 16
 end
-arch dungeon_floor
-x 18
-y 17
-end
 arch magic_mouth
 msg
 OOoooooooOOOooooo
@@ -3212,8 +3208,11 @@ x 18
 y 17
 end
 arch button_small
-invisible 1
 connected 15
+x 18
+y 17
+end
+arch dungeon_floor
 x 18
 y 17
 end
@@ -3417,15 +3416,15 @@ arch dungeon_floor
 x 19
 y 17
 end
-arch dungeon_floor
-x 19
-y 18
-end
 arch magic_mouth
 msg
 ooOOOoooOO
 WhooOOOoo let those dogs looOOse?
 endmsg
+x 19
+y 18
+end
+arch dungeon_floor
 x 19
 y 18
 end

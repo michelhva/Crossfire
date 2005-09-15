@@ -1167,10 +1167,6 @@ arch grass
 x 9
 y 17
 end
-arch grass
-x 9
-y 18
-end
 arch exit
 slaying /world/world_105_115
 hp 20
@@ -1178,7 +1174,10 @@ sp 39
 x 9
 y 18
 speed_left -0.500000
-invisible 1
+end
+arch grass
+x 9
+y 18
 end
 arch grass
 x 9
@@ -1275,10 +1274,6 @@ arch grass
 x 10
 y 17
 end
-arch grass
-x 10
-y 18
-end
 arch exit
 slaying /world/world_105_115
 hp 20
@@ -1286,7 +1281,10 @@ sp 39
 x 10
 y 18
 speed_left -0.500000
-invisible 1
+end
+arch grass
+x 10
+y 18
 end
 arch grass
 x 10

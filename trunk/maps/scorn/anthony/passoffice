@@ -1234,14 +1234,14 @@ arch woodfloor
 x 9
 y 9
 end
-arch woodfloor
-x 9
-y 10
-end
 arch invis_exit
 slaying portgate
 hp 4
 sp 10
+x 9
+y 10
+end
+arch woodfloor
 x 9
 y 10
 end
@@ -1341,14 +1341,14 @@ arch woodfloor
 x 10
 y 9
 end
-arch woodfloor
-x 10
-y 10
-end
 arch invis_exit
 slaying portgate
 hp 4
 sp 10
+x 10
+y 10
+end
+arch woodfloor
 x 10
 y 10
 end

@@ -1857,6 +1857,13 @@ arch ogre
 x 19
 y 9
 end
+arch magic_mouth
+msg
+Better close the doors so more bandits don't come in.
+endmsg
+x 19
+y 10
+end
 arch pstone_1
 x 19
 y 10
@@ -1864,13 +1871,6 @@ end
 arch igate_open_1
 connected 91
 no_pass 0
-x 19
-y 10
-end
-arch magic_mouth
-msg
-Better close the doors so more bandits don't come in.
-endmsg
 x 19
 y 10
 end
@@ -1962,6 +1962,13 @@ arch pstone_1
 x 20
 y 9
 end
+arch magic_mouth
+msg
+Better close the doors so more bandits don't come in.
+endmsg
+x 20
+y 10
+end
 arch pstone_1
 x 20
 y 10
@@ -1969,13 +1976,6 @@ end
 arch igate_open_1
 connected 91
 no_pass 0
-x 20
-y 10
-end
-arch magic_mouth
-msg
-Better close the doors so more bandits don't come in.
-endmsg
 x 20
 y 10
 end
@@ -2081,6 +2081,13 @@ Wis 2
 x 21
 y 9
 end
+arch magic_mouth
+msg
+Better close the doors so more bandits don't come in.
+endmsg
+x 21
+y 10
+end
 arch pstone_1
 x 21
 y 10
@@ -2088,13 +2095,6 @@ end
 arch igate_open_1
 connected 91
 no_pass 0
-x 21
-y 10
-end
-arch magic_mouth
-msg
-Better close the doors so more bandits don't come in.
-endmsg
 x 21
 y 10
 end

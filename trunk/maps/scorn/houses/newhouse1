@@ -138,14 +138,14 @@ Alfalda's Place
 endmsg
 x 1
 end
-arch grass
-x 1
-y 1
-end
 arch magic_mouth
 msg
 Before you stands a sandstone house.
 endmsg
+x 1
+y 1
+end
+arch grass
 x 1
 y 1
 end
