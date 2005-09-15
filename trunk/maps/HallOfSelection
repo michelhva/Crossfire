@@ -1153,16 +1153,16 @@ arch cwall_2_1_2
 x 4
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 16
-end
 arch magic_mouth
 msg
 Step forward to become a Warlock.
 endmsg
+x 4
+y 16
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 16
 end
@@ -1179,12 +1179,6 @@ end
 arch swall_2_1_2
 x 4
 y 17
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 18
 end
 arch magic_mouth
 msg
@@ -1193,6 +1187,12 @@ endmsg
 x 4
 y 18
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 18
+end
 arch dungeon_magic
 x 4
 y 18
@@ -1207,16 +1207,16 @@ arch swall_2_1_2
 x 4
 y 19
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 20
-end
 arch magic_mouth
 msg
 Step forward to become a Summoner.
 endmsg
+x 4
+y 20
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 20
 end
@@ -1233,12 +1233,6 @@ end
 arch swall_2_1_2
 x 4
 y 21
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 22
 end
 arch magic_mouth
 msg
@@ -1247,6 +1241,12 @@ endmsg
 x 4
 y 22
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 22
+end
 arch dungeon_magic
 x 4
 y 22
@@ -1260,12 +1260,6 @@ end
 arch swall_2_1_2
 x 4
 y 23
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 24
 end
 arch magic_mouth
 msg
@@ -1276,6 +1270,12 @@ endmsg
 x 4
 y 24
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 24
+end
 arch dungeon_magic
 x 4
 y 24
@@ -1290,12 +1290,6 @@ arch swall_2_1_2
 x 4
 y 25
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 26
-end
 arch magic_mouth
 msg
 Step forward to become a Sorcerer.
@@ -1305,6 +1299,12 @@ endmsg
 x 4
 y 26
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 26
+end
 arch dungeon_magic
 x 4
 y 26
@@ -1319,12 +1319,6 @@ arch swall_2_1_2
 x 4
 y 27
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 28
-end
 arch magic_mouth
 msg
 Step forward to become a Devotee.
@@ -1332,6 +1326,12 @@ endmsg
 x 4
 y 28
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 28
+end
 arch dungeon_magic
 x 4
 y 28
@@ -1366,18 +1366,18 @@ arch swall_2_1_2
 x 4
 y 31
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 32
-end
 arch magic_mouth
 msg
 Step onto this exit only if you're
 here by mistake.  You will not be
 given a class.
 endmsg
+x 4
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 32
 end
@@ -1513,12 +1513,6 @@ arch cwall_2_1_2
 x 5
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 16
-end
 arch magic_mouth
 msg
 Warlock
@@ -1537,6 +1531,12 @@ endmsg
 x 5
 y 16
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 16
+end
 arch dungeon_magic
 x 5
 y 16
@@ -1550,12 +1550,6 @@ end
 arch swall_1_3
 x 5
 y 17
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 18
 end
 arch magic_mouth
 msg
@@ -1585,6 +1579,12 @@ endmsg
 x 5
 y 18
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 18
+end
 arch dungeon_magic
 x 5
 y 18
@@ -1598,12 +1598,6 @@ end
 arch swall_1_3
 x 5
 y 19
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 20
 end
 arch magic_mouth
 msg
@@ -1627,6 +1621,12 @@ endmsg
 x 5
 y 20
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 20
+end
 arch dungeon_magic
 x 5
 y 20
@@ -1640,12 +1640,6 @@ end
 arch swall_1_3
 x 5
 y 21
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 22
 end
 arch magic_mouth
 msg
@@ -1665,6 +1659,12 @@ endmsg
 x 5
 y 22
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 22
+end
 arch dungeon_magic
 x 5
 y 22
@@ -1678,12 +1678,6 @@ end
 arch swall_1_3
 x 5
 y 23
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 24
 end
 arch magic_mouth
 msg
@@ -1710,6 +1704,12 @@ endmsg
 x 5
 y 24
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 24
+end
 arch dungeon_magic
 x 5
 y 24
@@ -1723,12 +1723,6 @@ end
 arch swall_1_3
 x 5
 y 25
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 26
 end
 arch magic_mouth
 msg
@@ -1760,6 +1754,12 @@ endmsg
 x 5
 y 26
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 26
+end
 arch dungeon_magic
 x 5
 y 26
@@ -1773,12 +1773,6 @@ end
 arch swall_1_3
 x 5
 y 27
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 28
 end
 arch magic_mouth
 msg
@@ -1800,6 +1794,12 @@ endmsg
 x 5
 y 28
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 5
+y 28
+end
 arch dungeon_magic
 x 5
 y 28
@@ -1834,18 +1834,18 @@ arch swall_1_3
 x 5
 y 31
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 32
-end
 arch magic_mouth
 msg
 Step onto this exit only if you're
 here by mistake.  You will not be
 given a class.
 endmsg
+x 5
+y 32
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 32
 end
@@ -3121,12 +3121,6 @@ arch cwall_2_1_2
 x 9
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 16
-end
 arch magic_mouth
 msg
 Warrior
@@ -3139,6 +3133,12 @@ However, your education has neglected
 the magical arts, religious devotion,
 and lacks breadth in general.
 endmsg
+x 9
+y 16
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 9
 y 16
 end
@@ -3155,12 +3155,6 @@ end
 arch swall_1_4
 x 9
 y 17
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 18
 end
 arch magic_mouth
 msg
@@ -3191,6 +3185,12 @@ endmsg
 x 9
 y 18
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 18
+end
 arch dungeon_magic
 x 9
 y 18
@@ -3204,12 +3204,6 @@ end
 arch swall_1_4
 x 9
 y 19
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 20
 end
 arch magic_mouth
 msg
@@ -3236,6 +3230,12 @@ endmsg
 x 9
 y 20
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 20
+end
 arch dungeon_magic
 x 9
 y 20
@@ -3249,12 +3249,6 @@ end
 arch swall_1_4
 x 9
 y 21
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 22
 end
 arch magic_mouth
 msg
@@ -3274,6 +3268,12 @@ endmsg
 x 9
 y 22
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 22
+end
 arch dungeon_magic
 x 9
 y 22
@@ -3287,12 +3287,6 @@ end
 arch swall_1_4
 x 9
 y 23
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 24
 end
 arch magic_mouth
 msg
@@ -3313,6 +3307,12 @@ endmsg
 x 9
 y 24
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 24
+end
 arch dungeon_magic
 x 9
 y 24
@@ -3326,12 +3326,6 @@ end
 arch swall_1_4
 x 9
 y 25
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 26
 end
 arch magic_mouth
 msg
@@ -3351,6 +3345,12 @@ endmsg
 x 9
 y 26
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 26
+end
 arch dungeon_magic
 x 9
 y 26
@@ -3364,12 +3364,6 @@ end
 arch swall_1_4
 x 9
 y 27
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 28
 end
 arch magic_mouth
 msg
@@ -3394,6 +3388,12 @@ endmsg
 x 9
 y 28
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 9
+y 28
+end
 arch dungeon_magic
 x 9
 y 28
@@ -3407,12 +3407,6 @@ end
 arch swall_1_4
 x 9
 y 29
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 30
 end
 arch magic_mouth
 msg
@@ -3429,6 +3423,12 @@ tune with the holy powers, you can
 tell when a god has marked an object
 as accursed.
 endmsg
+x 9
+y 30
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 9
 y 30
 end
@@ -3535,17 +3535,17 @@ arch cwall_2_1_2
 x 10
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 16
-end
 arch magic_mouth
 msg
 Step on the circle to become a
 Warrior.
 endmsg
+x 10
+y 16
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 10
 y 16
 end
@@ -3562,12 +3562,6 @@ end
 arch swall_2_1_2
 x 10
 y 17
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 18
 end
 arch magic_mouth
 msg
@@ -3577,6 +3571,12 @@ endmsg
 x 10
 y 18
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 10
+y 18
+end
 arch dungeon_magic
 x 10
 y 18
@@ -3591,12 +3591,6 @@ arch swall_2_1_2
 x 10
 y 19
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 20
-end
 arch magic_mouth
 msg
 Step forward to become a
@@ -3605,6 +3599,12 @@ endmsg
 x 10
 y 20
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 10
+y 20
+end
 arch dungeon_magic
 x 10
 y 20
@@ -3619,16 +3619,16 @@ arch swall_2_1_2
 x 10
 y 21
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 22
-end
 arch magic_mouth
 msg
 Step forward to become a Ninja.
 endmsg
+x 10
+y 22
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 10
 y 22
 end
@@ -3645,12 +3645,6 @@ end
 arch swall_2_1_2
 x 10
 y 23
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 24
 end
 arch magic_mouth
 msg
@@ -3659,6 +3653,12 @@ endmsg
 x 10
 y 24
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 10
+y 24
+end
 arch dungeon_magic
 x 10
 y 24
@@ -3672,12 +3672,6 @@ end
 arch swall_2_1_2
 x 10
 y 25
-end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 26
 end
 arch magic_mouth
 msg
@@ -3689,6 +3683,12 @@ endmsg
 x 10
 y 26
 end
+arch flagstone
+name floor
+face shop_empty.111
+x 10
+y 26
+end
 arch dungeon_magic
 x 10
 y 26
@@ -3703,16 +3703,16 @@ arch swall_2_1_2
 x 10
 y 27
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 28
-end
 arch magic_mouth
 msg
 Step forward to become a Paladin.
 endmsg
+x 10
+y 28
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 10
 y 28
 end
@@ -3730,16 +3730,16 @@ arch swall_2_1_2
 x 10
 y 29
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 30
-end
 arch magic_mouth
 msg
 Step forward to become a Priest.
 endmsg
+x 10
+y 30
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 10
 y 30
 end
