@@ -2825,14 +2825,14 @@ end
 arch cobblestones2
 x 12
 end
-arch cobblestones2
-x 12
-y 1
-end
 arch magic_mouth
 msg
 You get a very uneasy feeling
 endmsg
+x 12
+y 1
+end
+arch cobblestones2
 x 12
 y 1
 end
@@ -5298,6 +5298,13 @@ arch pstone_2
 x 22
 y 25
 end
+arch magic_mouth
+msg
+The Demlick laughs evilly at you
+endmsg
+x 22
+y 26
+end
 arch pstone_2
 x 22
 y 26
@@ -5317,13 +5324,6 @@ You have killed many of my subjects, but I
 will summon more and the ones you have yet
 to face will surely kill you, so give up now
 foolish human.
-endmsg
-x 22
-y 26
-end
-arch magic_mouth
-msg
-The Demlick laughs evilly at you
 endmsg
 x 22
 y 26
@@ -5511,15 +5511,15 @@ arch pstone_1
 x 23
 y 17
 end
-arch cobblestones2
-x 23
-y 18
-end
 arch magic_mouth
 msg
 You hear a low voice to the south say :
 "Hey you, come here!
 endmsg
+x 23
+y 18
+end
+arch cobblestones2
 x 23
 y 18
 end

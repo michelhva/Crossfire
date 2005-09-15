@@ -989,15 +989,15 @@ arch dungeon_floor
 x 3
 y 7
 end
-arch dungeon_floor
-x 3
-y 8
-end
 arch magic_mouth
 msg
 A writing on the wall: "Danger! Trap
 ahead!"
 endmsg
+x 3
+y 8
+end
+arch dungeon_floor
 x 3
 y 8
 end
@@ -4252,15 +4252,15 @@ arch bwall_1_4
 x 13
 y 42
 end
-arch dungeon_floor
-x 13
-y 43
-end
 arch magic_mouth
 msg
 There are some bloodstaines on the
 wall
 endmsg
+x 13
+y 43
+end
+arch dungeon_floor
 x 13
 y 43
 end
@@ -5115,16 +5115,16 @@ arch weak_wall_6
 x 16
 y 23
 end
-arch dungeon_floor
-x 16
-y 24
-end
 arch magic_mouth
 msg
 There are some smaller cracks in the 
 walls here.
 
 endmsg
+x 16
+y 24
+end
+arch dungeon_floor
 x 16
 y 24
 end
@@ -6636,14 +6636,14 @@ arch dungeon_floor
 x 21
 y 26
 end
-arch dungeon_floor
-x 21
-y 27
-end
 arch magic_mouth
 msg
 A sign: "Danger! Fire experiments!"
 endmsg
+x 21
+y 27
+end
+arch dungeon_floor
 x 21
 y 27
 end
@@ -6823,10 +6823,6 @@ arch bwall_2_1_2
 x 22
 y 8
 end
-arch dungeon_floor
-x 22
-y 9
-end
 arch magic_mouth
 msg
 You notice a writing on the wall: 
@@ -6837,15 +6833,19 @@ x 22
 y 9
 end
 arch dungeon_floor
+x 22
+y 9
+end
+arch magic_mouth
+msg
+You notice a writing on the wall: 
+"Teleporter Experiment: Might only work
+one-way!!!"
+endmsg
 x 22
 y 10
 end
-arch magic_mouth
-msg
-You notice a writing on the wall: 
-"Teleporter Experiment: Might only work
-one-way!!!"
-endmsg
+arch dungeon_floor
 x 22
 y 10
 end
@@ -9310,14 +9310,14 @@ arch dungeon_magic
 x 29
 y 38
 end
-arch dungeon_floor
-x 29
-y 39
-end
 arch magic_mouth
 msg
 A sign: "Room of Sacrifice
 endmsg
+x 29
+y 39
+end
+arch dungeon_floor
 x 29
 y 39
 end
@@ -9337,14 +9337,14 @@ arch dungeon_floor
 x 29
 y 43
 end
-arch dungeon_floor
-x 29
-y 44
-end
 arch magic_mouth
 msg
 Sign: "Yarid's Private Rooms"
 endmsg
+x 29
+y 44
+end
+arch dungeon_floor
 x 29
 y 44
 end
@@ -9954,14 +9954,14 @@ arch bwall_2_2_1
 x 31
 y 41
 end
-arch dungeon_floor
-x 31
-y 42
-end
 arch magic_mouth
 msg
 A sign: "Beware! New experiments!
 endmsg
+x 31
+y 42
+end
+arch dungeon_floor
 x 31
 y 42
 end
@@ -11402,15 +11402,15 @@ name a god's statue
 x 36
 y 34
 end
-arch dungeon_floor
-x 36
-y 35
-end
 arch magic_mouth
 msg
 A sign: "Danger! Unsuccessful 
 experiment!" 
 endmsg
+x 36
+y 35
+end
+arch dungeon_floor
 x 36
 y 35
 end

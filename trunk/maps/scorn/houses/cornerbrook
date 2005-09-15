@@ -1616,13 +1616,13 @@ arch swall_2_1_2
 x 9
 y 24
 end
-arch grass
-x 10
-end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
 sp 8
+x 10
+end
+arch grass
 x 10
 end
 arch dirtfloor
@@ -1745,13 +1745,13 @@ arch swall_2_1_2
 x 10
 y 24
 end
-arch grass
-x 11
-end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
 sp 8
+x 11
+end
+arch grass
 x 11
 end
 arch stonefloor2
@@ -1874,13 +1874,13 @@ arch swall_2_1_2
 x 11
 y 24
 end
-arch grass
-x 12
-end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
 sp 8
+x 12
+end
+arch grass
 x 12
 end
 arch stonefloor2
@@ -2007,13 +2007,13 @@ arch swall_2_1_2
 x 12
 y 24
 end
-arch grass
-x 13
-end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
 sp 8
+x 13
+end
+arch grass
 x 13
 end
 arch grass
@@ -3668,10 +3668,6 @@ stand_still 1
 x 22
 y 18
 end
-arch woodfloor
-x 22
-y 19
-end
 arch magic_mouth
 msg
 You found my staff, thanks.
@@ -3698,6 +3694,10 @@ connected 6
 walk_on 0
 fly_on 0
 food 1
+x 22
+y 19
+end
+arch woodfloor
 x 22
 y 19
 end

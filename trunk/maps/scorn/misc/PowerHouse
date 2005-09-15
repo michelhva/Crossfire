@@ -6828,18 +6828,18 @@ arch wall_1_4
 x 17
 y 31
 end
+arch magic_mouth
+msg
+Free sample.
+endmsg
+x 17
+y 32
+end
 arch magic_banned
 x 17
 y 32
 end
 arch flagstone
-x 17
-y 32
-end
-arch magic_mouth
-msg
-Free sample.
-endmsg
 x 17
 y 32
 end

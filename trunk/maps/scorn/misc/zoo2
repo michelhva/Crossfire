@@ -8029,13 +8029,12 @@ arch dungeon_magic
 x 18
 y 20
 end
-arch pstone_1
+arch button_small
+connected 1
 x 18
 y 20
 end
-arch button_small
-invisible 1
-connected 1
+arch pstone_1
 x 18
 y 20
 end
@@ -8511,13 +8510,12 @@ arch dungeon_magic
 x 19
 y 24
 end
-arch pstone_1
+arch button_small
+connected 2
 x 19
 y 24
 end
-arch button_small
-invisible 1
-connected 2
+arch pstone_1
 x 19
 y 24
 end
@@ -8914,13 +8912,12 @@ arch dungeon_magic
 x 20
 y 20
 end
-arch pstone_1
+arch button_small
+connected 1
 x 20
 y 20
 end
-arch button_small
-invisible 1
-connected 1
+arch pstone_1
 x 20
 y 20
 end
@@ -10747,13 +10744,12 @@ arch dungeon_magic
 x 24
 y 20
 end
-arch pstone_1
+arch button_small
+connected 2
 x 24
 y 20
 end
-arch button_small
-invisible 1
-connected 2
+arch pstone_1
 x 24
 y 20
 end
@@ -10788,13 +10784,12 @@ arch dungeon_magic
 x 24
 y 23
 end
-arch pstone_1
+arch button_small
+connected 1
 x 24
 y 23
 end
-arch button_small
-invisible 1
-connected 1
+arch pstone_1
 x 24
 y 23
 end

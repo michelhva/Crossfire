@@ -1266,14 +1266,14 @@ arch wwall_2_1_2
 x 7
 y 16
 end
-arch woodfloor
-x 7
-y 17
-end
 arch magic_mouth
 msg
 Honk Honk.
 endmsg
+x 7
+y 17
+end
+arch woodfloor
 x 7
 y 17
 end
@@ -1667,13 +1667,13 @@ arch swall_2_1_2
 x 9
 y 24
 end
-arch grass
-x 10
-end
 arch invis_exit
 slaying /world/world_105_116
 hp 5
 sp 8
+x 10
+end
+arch grass
 x 10
 end
 arch dirtfloor
@@ -1838,13 +1838,13 @@ arch swall_2_1_2
 x 10
 y 24
 end
-arch grass
-x 11
-end
 arch invis_exit
 slaying /world/world_105_116
 hp 5
 sp 8
+x 11
+end
+arch grass
 x 11
 end
 arch grass
@@ -1907,13 +1907,12 @@ arch wwall_1_3
 x 11
 y 13
 end
-arch woodfloor
+arch button_small
+connected 5
 x 11
 y 14
 end
-arch button_small
-invisible 1
-connected 5
+arch woodfloor
 x 11
 y 14
 end
@@ -1991,13 +1990,13 @@ arch swall_2_1_2
 x 11
 y 24
 end
-arch grass
-x 12
-end
 arch invis_exit
 slaying /world/world_105_116
 hp 6
 sp 8
+x 12
+end
+arch grass
 x 12
 end
 arch grass
@@ -2044,13 +2043,12 @@ arch grass
 x 12
 y 11
 end
-arch stonefloor2
+arch button_small
+connected 5
 x 12
 y 12
 end
-arch button_small
-invisible 1
-connected 5
+arch stonefloor2
 x 12
 y 12
 end
@@ -2063,13 +2061,12 @@ connected 5
 x 12
 y 13
 end
-arch woodfloor
+arch button_small
+connected 5
 x 12
 y 14
 end
-arch button_small
-invisible 1
-connected 5
+arch woodfloor
 x 12
 y 14
 end
@@ -2125,13 +2122,13 @@ arch swall_2_1_2
 x 12
 y 24
 end
-arch grass
-x 13
-end
 arch invis_exit
 slaying /world/world_105_116
 hp 6
 sp 8
+x 13
+end
+arch grass
 x 13
 end
 arch grass
@@ -2178,13 +2175,12 @@ arch dirtfloor
 x 13
 y 11
 end
-arch stonefloor2
+arch button_small
+connected 5
 x 13
 y 12
 end
-arch button_small
-invisible 1
-connected 5
+arch stonefloor2
 x 13
 y 12
 end
@@ -2257,13 +2253,13 @@ arch swall_2_1_2
 x 13
 y 24
 end
-arch grass
-x 14
-end
 arch invis_exit
 slaying /world/world_105_116
 hp 6
 sp 8
+x 14
+end
+arch grass
 x 14
 end
 arch grass

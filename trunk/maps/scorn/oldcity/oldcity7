@@ -4321,14 +4321,14 @@ arch mine12
 x 18
 y 4
 end
-arch dungeon_floor
-x 18
-y 5
-end
 arch magic_mouth
 msg
 You see the Gnome's treasure
 endmsg
+x 18
+y 5
+end
+arch dungeon_floor
 x 18
 y 5
 end

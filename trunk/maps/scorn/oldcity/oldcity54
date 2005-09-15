@@ -1158,15 +1158,15 @@ arch awall_2_1_2
 x 4
 y 4
 end
-arch large_stones
-x 4
-y 5
-end
 arch magic_mouth
 msg
 The skeleton grins at you, expecting you
 to say something.
 endmsg
+x 4
+y 5
+end
+arch large_stones
 x 4
 y 5
 end

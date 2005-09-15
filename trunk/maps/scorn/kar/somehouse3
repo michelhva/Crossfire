@@ -845,14 +845,14 @@ blocksview 1
 x 8
 y 7
 end
-arch dirtfloor
-x 8
-y 8
-end
 arch magic_mouth
 msg
 A sign on the door reads, "Do not enter"
 endmsg
+x 8
+y 8
+end
+arch dirtfloor
 x 8
 y 8
 end

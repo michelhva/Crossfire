@@ -6259,10 +6259,6 @@ arch cave4
 x 24
 y 16
 end
-arch large_stones
-x 24
-y 17
-end
 arch magic_mouth
 msg
 You discover the hole from which the
@@ -6274,14 +6270,14 @@ endmsg
 x 24
 y 17
 end
+arch large_stones
+x 24
+y 17
+end
 arch chole_1
 name Hell and Beyond
 x 24
 y 17
-end
-arch large_stones
-x 24
-y 18
 end
 arch magic_mouth
 msg
@@ -6289,6 +6285,10 @@ WELL DONE ADVENTURER!!! You have
 blocked the portal the monsters have
 been using!
 endmsg
+x 24
+y 18
+end
+arch large_stones
 x 24
 y 18
 end
@@ -6388,16 +6388,16 @@ arch rock
 x 24
 y 29
 end
-arch pstone_1
-x 24
-y 30
-end
 arch magic_mouth
 msg
 WELL DONE ADVENTURER!!! You have
 blocked the portal the monsters have
 been using!
 endmsg
+x 24
+y 30
+end
+arch pstone_1
 x 24
 y 30
 end

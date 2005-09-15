@@ -603,14 +603,14 @@ arch pstone_1
 x 6
 y 14
 end
-arch pstone_2
-x 6
-y 15
-end
 arch invis_exit
 slaying /world/world_105_115
 hp 1
 sp 40
+x 6
+y 15
+end
+arch pstone_2
 x 6
 y 15
 end

@@ -1489,10 +1489,6 @@ sp 13
 x 10
 y 13
 end
-arch cobblestones2
-x 10
-y 14
-end
 arch magic_mouth
 msg
 The Guards kneel to the 
@@ -1506,7 +1502,7 @@ connected 25
 end
 arch cobblestones2
 x 10
-y 15
+y 14
 end
 arch magic_mouth
 msg
@@ -1519,13 +1515,13 @@ connected 22
 walk_on 0
 fly_on 0
 end
-arch knight
+arch cobblestones2
 x 10
 y 15
 end
-arch cobblestones2
+arch knight
 x 10
-y 16
+y 15
 end
 arch magic_mouth
 msg
@@ -1537,6 +1533,10 @@ y 16
 connected 20
 walk_on 0
 fly_on 0
+end
+arch cobblestones2
+x 10
+y 16
 end
 arch knight
 x 10
@@ -2058,10 +2058,6 @@ arch cobblestones2
 x 13
 y 14
 end
-arch cobblestones2
-x 13
-y 15
-end
 arch magic_mouth
 msg
 The guards bow to the Noble of Scorn
@@ -2072,13 +2068,13 @@ walk_on 0
 fly_on 0
 connected 23
 end
-arch knight
+arch cobblestones2
 x 13
 y 15
 end
-arch cobblestones2
+arch knight
 x 13
-y 16
+y 15
 end
 arch magic_mouth
 msg
@@ -2090,6 +2086,10 @@ y 16
 connected 21
 walk_on 0
 fly_on 0
+end
+arch cobblestones2
+x 13
+y 16
 end
 arch knight
 x 13

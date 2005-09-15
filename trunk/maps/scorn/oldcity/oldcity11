@@ -1223,18 +1223,18 @@ slaying temple
 x 4
 y 31
 end
+arch magic_mouth
+msg
+You enter a very old temple
+endmsg
+x 4
+y 32
+end
 arch cobblestones
 x 4
 y 32
 end
 arch chair_3.1
-x 4
-y 32
-end
-arch magic_mouth
-msg
-You enter a very old temple
-endmsg
 x 4
 y 32
 end

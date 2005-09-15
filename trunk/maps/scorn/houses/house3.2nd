@@ -111,18 +111,18 @@ arch torch_1
 no_pick 1
 x 1
 end
+arch magic_mouth
+msg
+PATH OF THE TRICKSMASTER
+endmsg
+x 1
+y 1
+end
 arch dungeon_magic
 x 1
 y 1
 end
 arch woodfloor
-x 1
-y 1
-end
-arch magic_mouth
-msg
-PATH OF THE TRICKSMASTER
-endmsg
 x 1
 y 1
 end
@@ -373,18 +373,18 @@ arch torch_1
 no_pick 1
 x 3
 end
+arch magic_mouth
+msg
+PATH OF THE WIZARD
+endmsg
+x 3
+y 1
+end
 arch dungeon_magic
 x 3
 y 1
 end
 arch woodfloor
-x 3
-y 1
-end
-arch magic_mouth
-msg
-PATH OF THE WIZARD
-endmsg
 x 3
 y 1
 end
@@ -626,18 +626,18 @@ arch torch_1
 no_pick 1
 x 5
 end
+arch magic_mouth
+msg
+PATH OF THE WARRIOR
+endmsg
+x 5
+y 1
+end
 arch dungeon_magic
 x 5
 y 1
 end
 arch woodfloor
-x 5
-y 1
-end
-arch magic_mouth
-msg
-PATH OF THE WARRIOR
-endmsg
 x 5
 y 1
 end
@@ -743,6 +743,13 @@ arch wall_2_1_2
 x 5
 y 8
 end
+arch magic_mouth
+msg
+A house with no door...?
+endmsg
+x 5
+y 9
+end
 arch dungeon_magic
 x 5
 y 9
@@ -757,13 +764,6 @@ walk_on 0
 x 5
 y 9
 end
-arch magic_mouth
-msg
-A house with no door...?
-endmsg
-x 5
-y 9
-end
 arch dungeon_magic
 x 6
 end
@@ -773,20 +773,20 @@ end
 arch wall_2_1_2
 x 6
 end
-arch dungeon_magic
-x 6
-y 1
-end
-arch woodfloor
-x 6
-y 1
-end
 arch magic_mouth
 msg
 A voice booms :
 NOW CHOOSE YOUR PATH
 endmsg
 food 1
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 1
+end
+arch woodfloor
 x 6
 y 1
 end
