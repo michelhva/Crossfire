@@ -92,10 +92,6 @@ other_arch nightmare
 x 1
 y 8
 end
-arch flagstone
-x 1
-y 9
-end
 arch magic_mouth
 msg
 You see here a mural of four
@@ -103,6 +99,10 @@ black spirits guarding the
 doorway to a prison wherein
 a snake-woman resides.
 endmsg
+x 1
+y 9
+end
+arch flagstone
 x 1
 y 9
 end
@@ -681,10 +681,6 @@ arch awall_2_1_2
 x 6
 y 1
 end
-arch flagstone
-x 6
-y 2
-end
 arch magic_mouth
 msg
 You see here four black spirits
@@ -692,6 +688,10 @@ bound in chains made of fire.
 The snake god appears in the
 background.
 endmsg
+x 6
+y 2
+end
+arch flagstone
 x 6
 y 2
 end
@@ -1021,16 +1021,16 @@ arch awall_1_4
 x 8
 y 17
 end
-arch flagstone
-x 8
-y 18
-end
 arch magic_mouth
 msg
 You see here a mural of
 several men being eaten
 by dark spirits of chaos.
 endmsg
+x 8
+y 18
+end
+arch flagstone
 x 8
 y 18
 end
@@ -1260,10 +1260,6 @@ arch awall_2_1_2
 x 10
 y 10
 end
-arch flagstone
-x 10
-y 11
-end
 arch magic_mouth
 msg
 You see here a mural of a the
@@ -1271,6 +1267,10 @@ snake god giving birth to a
 snake woman. The snake god
 is horrified.
 endmsg
+x 10
+y 11
+end
+arch flagstone
 x 10
 y 11
 end
@@ -1730,16 +1730,16 @@ arch awall_2_1_2
 x 13
 y 19
 end
-arch flagstone
-x 13
-y 20
-end
 arch magic_mouth
 msg
 You see here a mural of
 a lamia gouging the eyes
 from a woman.
 endmsg
+x 13
+y 20
+end
+arch flagstone
 x 13
 y 20
 end
@@ -1780,10 +1780,6 @@ arch awall_2_1_2
 x 14
 y 2
 end
-arch flagstone
-x 14
-y 3
-end
 arch magic_mouth
 msg
 You see here a mural of  three
@@ -1791,6 +1787,10 @@ sisters sitting by a stream weaving.
 They are making a shimmering
 cloak with a golden spinning wheel.
 endmsg
+x 14
+y 3
+end
+arch flagstone
 x 14
 y 3
 end
@@ -1846,10 +1846,6 @@ arch awall_2_2_1
 x 14
 y 12
 end
-arch flagstone
-x 14
-y 13
-end
 arch magic_mouth
 msg
 This room is filled with many
@@ -1860,13 +1856,17 @@ y 13
 end
 arch flagstone
 x 14
-y 14
+y 13
 end
 arch magic_mouth
 msg
 This room is filled with many cryptic
 murals.
 endmsg
+x 14
+y 14
+end
+arch flagstone
 x 14
 y 14
 end

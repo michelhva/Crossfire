@@ -710,14 +710,14 @@ sp 1
 x 7
 y 1
 end
-arch flagstone
-x 7
-y 2
-end
 arch magic_mouth
 msg
 You hear old women talking nearby.
 endmsg
+x 7
+y 2
+end
+arch flagstone
 x 7
 y 2
 end
@@ -836,14 +836,14 @@ sp 1
 x 8
 y 1
 end
-arch flagstone
-x 8
-y 2
-end
 arch magic_mouth
 msg
 You hear old women talking nearby.
 endmsg
+x 8
+y 2
+end
+arch flagstone
 x 8
 y 2
 end
