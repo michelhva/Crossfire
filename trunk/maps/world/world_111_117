@@ -10336,16 +10336,16 @@ elevation 9882
 x 39
 y 41
 end
-arch mountain2
-elevation 9882
-x 39
-y 42
-end
 arch magic_mouth
 msg
 You notice a well-hidden cave, high in
 the mountains here.
 endmsg
+x 39
+y 42
+end
+arch mountain2
+elevation 9882
 x 39
 y 42
 end

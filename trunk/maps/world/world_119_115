@@ -5087,6 +5087,14 @@ elevation 2890
 x 20
 y 25
 end
+arch magic_mouth
+msg
+Dust Storm!
+endmsg
+connected 2
+x 20
+y 26
+end
 arch desert
 elevation 3934
 x 20
@@ -5100,14 +5108,6 @@ level 8
 connected 2
 speed 0.0
 no_pass 0
-x 20
-y 26
-end
-arch magic_mouth
-msg
-Dust Storm!
-endmsg
-connected 2
 x 20
 y 26
 end
@@ -7194,6 +7194,14 @@ elevation 2890
 x 28
 y 37
 end
+arch magic_mouth
+msg
+Dust Storm!
+endmsg
+connected 1
+x 28
+y 38
+end
 arch dunes
 elevation 2890
 x 28
@@ -7207,14 +7215,6 @@ level 8
 connected 1
 speed 0.0
 no_pass 0
-x 28
-y 38
-end
-arch magic_mouth
-msg
-Dust Storm!
-endmsg
-connected 1
 x 28
 y 38
 end

@@ -1449,16 +1449,16 @@ elevation -98
 x 6
 y 9
 end
-arch shallow_sea
-elevation -67
-no_pass 0
-x 6
-y 10
-end
 arch magic_mouth
 msg
 You swim out to the ship
 endmsg
+x 6
+y 10
+end
+arch shallow_sea
+elevation -67
+no_pass 0
 x 6
 y 10
 end

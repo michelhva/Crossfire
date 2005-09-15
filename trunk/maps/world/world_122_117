@@ -6148,6 +6148,13 @@ elevation 4319
 x 18
 y 49
 end
+arch magic_mouth
+msg
+Hmmm...what is that ship doing so far
+out in the bay??
+endmsg
+x 19
+end
 arch sea1
 x 19
 end
@@ -6155,13 +6162,6 @@ arch dungeon_magic
 x 19
 end
 arch pier_1_2
-x 19
-end
-arch magic_mouth
-msg
-Hmmm...what is that ship doing so far
-out in the bay??
-endmsg
 x 19
 end
 arch cobblestones2

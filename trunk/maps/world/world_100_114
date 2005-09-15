@@ -5324,18 +5324,18 @@ arch pstone_1
 x 21
 y 28
 end
+arch invis_exit
+slaying /port_joseph/goblin/fortress
+hp 14
+sp 21
+x 21
+y 29
+end
 arch pstone_1
 x 21
 y 29
 end
 arch bridge_ns
-x 21
-y 29
-end
-arch invis_exit
-slaying /port_joseph/goblin/fortress
-hp 14
-sp 21
 x 21
 y 29
 end
