@@ -4,7 +4,7 @@ race gold and jewels
 face platbar.111
 color_fg grey
 nrof 1
-type 73
+type 60
 material 2
 materialname platinum
 value 50000

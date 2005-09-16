@@ -4,7 +4,7 @@ race gold and jewels
 face goldbar.111
 color_fg orange
 nrof 1
-type 73
+type 60
 material 2
 materialname gold
 value 10000
