@@ -4,7 +4,7 @@ race gold and jewels
 face silverbar.111
 color_fg grey
 nrof 1
-type 73
+type 60
 material 2
 materialname silver
 value 1000
