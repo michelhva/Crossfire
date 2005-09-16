@@ -2850,6 +2850,16 @@ x 11
 y 5
 elevation 3812
 end
+arch small_temple
+name hole
+name_pl snow cave
+slaying /whalingoutpost/misc/icehole1
+face ihole.111
+hp 36
+sp 37
+x 11
+y 5
+end
 arch flagstone
 face snow.111
 x 11
