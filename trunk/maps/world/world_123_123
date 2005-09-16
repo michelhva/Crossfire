@@ -2128,6 +2128,7 @@ arch shallow_sea
 x 8
 y 19
 elevation -67
+no_pass 0
 end
 arch shallow_sea
 x 8
@@ -2373,10 +2374,11 @@ x 9
 y 18
 elevation -129
 end
-arch sea
+arch shallow_sea
 x 9
 y 19
-elevation -179
+elevation -67
+no_pass 0
 end
 arch sea
 x 9
@@ -2625,10 +2627,11 @@ x 10
 y 18
 elevation -221
 end
-arch sea
+arch shallow_sea
 x 10
 y 19
-elevation -321
+elevation -67
+no_pass 0
 end
 arch sea
 x 10
@@ -2878,20 +2881,23 @@ x 11
 y 18
 elevation -319
 end
-arch sea
+arch shallow_sea
 x 11
 y 19
-elevation -473
+elevation -67
+no_pass 0
 end
-arch sea
+arch shallow_sea
 x 11
 y 20
-elevation -607
+elevation -67
+no_pass 0
 end
-arch sea
+arch shallow_sea
 x 11
 y 21
-elevation -719
+elevation -67
+no_pass 0
 end
 arch sea
 x 11
@@ -3137,10 +3143,11 @@ x 12
 y 20
 elevation -813
 end
-arch sea
+arch shallow_sea
 x 12
 y 21
-elevation -973
+elevation -67
+no_pass 0
 end
 arch sea
 x 12
@@ -3388,20 +3395,21 @@ x 13
 y 18
 elevation -549
 end
-arch sea
+arch shallow_sea
 x 13
 y 19
-elevation -798
+elevation -9
 end
-arch sea
+arch shallow_sea
 x 13
 y 20
-elevation -1019
+elevation -9
 end
-arch sea
+arch shallow_sea
 x 13
 y 21
-elevation -1219
+elevation -67
+no_pass 0
 end
 arch sea
 x 13
@@ -3641,20 +3649,40 @@ x 14
 y 18
 elevation -692
 end
-arch sea
+arch shallow_sea
 x 14
 y 19
-elevation -968
+elevation -9
 end
-arch sea
+arch shallow_sea
 x 14
 y 20
-elevation -1219
+elevation -67
+no_pass 0
 end
-arch sea
+arch stair3_ystone_do
+slaying /whalingoutpost/underwaterdungeon/level1
+msg
+You descend the staircase ... into darkness
+
+endmsg
+hp 26
+sp 40
+x 14
+y 20
+end
+arch shallow_sea
+x 14
+y 20
+elevation -67
+no_pass 0
+is_floor 0
+end
+arch shallow_sea
 x 14
 y 21
-elevation -1450
+elevation -67
+no_pass 0
 end
 arch sea
 x 14
@@ -3890,20 +3918,20 @@ x 15
 y 18
 elevation -848
 end
-arch sea
+arch shallow_sea
 x 15
 y 19
-elevation -1136
+elevation -9
 end
-arch sea
+arch shallow_sea
 x 15
 y 20
-elevation -1405
+elevation -9
 end
-arch sea
+arch shallow_sea
 x 15
 y 21
-elevation -1658
+elevation -9
 end
 arch sea
 x 15
