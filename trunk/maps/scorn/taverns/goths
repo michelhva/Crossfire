@@ -701,6 +701,8 @@ end
 arch stair_down
 name Stairs to the Cellar
 slaying goths0
+hp 4
+sp 1
 x 2
 y 1
 end
@@ -6858,7 +6860,7 @@ end
 arch stair_3_up
 name Stairs going up
 slaying goths2
-hp 30
+hp 31
 sp 1
 x 32
 y 1
