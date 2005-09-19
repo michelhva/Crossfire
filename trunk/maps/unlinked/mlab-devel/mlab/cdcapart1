@@ -6590,6 +6590,10 @@ arch wwall_2_1_2
 x 11
 y 14
 end
+arch dungeon_magic
+x 11
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -6600,9 +6604,7 @@ arch bookshelf
 x 11
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 11
 y 16
 end
@@ -6610,11 +6612,19 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 11
+y 16
+end
+arch dungeon_magic
+x 11
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 17
+end
+arch dungeon_magic
 x 11
 y 18
 end
@@ -6622,13 +6632,31 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 11
+y 18
+end
+arch dungeon_magic
+x 11
 y 19
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 11
+y 19
+end
+arch dungeon_magic
+x 11
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 11
+y 20
+end
+arch dungeon_magic
+x 11
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -7459,6 +7487,10 @@ arch wwall_2_1_2
 x 12
 y 14
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -7469,9 +7501,7 @@ arch shop_books
 x 12
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 12
 y 16
 end
@@ -7479,11 +7509,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 12
+y 16
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 12
 y 17
 end
 arch shop_books
 x 12
 y 17
+end
+arch dungeon_magic
+x 12
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -7495,6 +7539,10 @@ arch shop_books
 x 12
 y 18
 end
+arch dungeon_magic
+x 12
+y 19
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -7504,12 +7552,20 @@ end
 arch shop_books
 x 12
 y 19
+end
+arch dungeon_magic
+x 12
+y 20
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 12
 y 20
+end
+arch dungeon_magic
+x 12
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -8320,6 +8376,10 @@ arch wwall_2_1_2
 x 13
 y 14
 end
+arch dungeon_magic
+x 13
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -8330,9 +8390,7 @@ arch bookshelf
 x 13
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 13
 y 16
 end
@@ -8340,15 +8398,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 13
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 13
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 17
+end
+arch shop_books
+x 13
+y 17
+end
+arch dungeon_magic
 x 13
 y 18
 end
@@ -8356,9 +8422,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 13
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 13
 y 19
 end
@@ -8366,7 +8432,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 13
+y 19
+end
+arch shop_books
+x 13
+y 19
+end
+arch dungeon_magic
+x 13
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 13
+y 20
+end
+arch dungeon_magic
+x 13
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -9188,6 +9272,10 @@ arch wwall_2_1_2
 x 14
 y 14
 end
+arch dungeon_magic
+x 14
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -9198,9 +9286,7 @@ arch shop_books
 x 14
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 14
 y 16
 end
@@ -9208,15 +9294,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 14
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 14
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 14
+y 17
+end
+arch shop_books
+x 14
+y 17
+end
+arch dungeon_magic
 x 14
 y 18
 end
@@ -9224,9 +9318,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 14
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 14
 y 19
 end
@@ -9234,7 +9328,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 14
+y 19
+end
+arch shop_books
+x 14
+y 19
+end
+arch dungeon_magic
+x 14
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 14
+y 20
+end
+arch dungeon_magic
+x 14
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -9644,13 +9756,13 @@ arch chest_2
 x 15
 y 10
 carrying 3310
-arch lantern2_unlit
-end
-arch torch_unlit
+arch bag
 end
 arch flint_and_steel
 end
-arch bag
+arch torch_unlit
+end
+arch lantern2_unlit
 end
 end
 arch marble
@@ -9689,6 +9801,10 @@ arch wwall_2_1_2
 x 15
 y 14
 end
+arch dungeon_magic
+x 15
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -9699,9 +9815,7 @@ arch bookshelf
 x 15
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 15
 y 16
 end
@@ -9709,15 +9823,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 15
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 15
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 15
+y 17
+end
+arch shop_books
+x 15
+y 17
+end
+arch dungeon_magic
 x 15
 y 18
 end
@@ -9725,9 +9847,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 15
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 15
 y 19
 end
@@ -9735,7 +9857,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 15
+y 19
+end
+arch shop_books
+x 15
+y 19
+end
+arch dungeon_magic
+x 15
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 15
+y 20
+end
+arch dungeon_magic
+x 15
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -10219,6 +10359,10 @@ arch wwall_2_1_2
 x 16
 y 14
 end
+arch dungeon_magic
+x 16
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -10229,9 +10373,7 @@ arch shop_books
 x 16
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 16
 y 16
 end
@@ -10239,15 +10381,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 16
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 16
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 16
+y 17
+end
+arch shop_books
+x 16
+y 17
+end
+arch dungeon_magic
 x 16
 y 18
 end
@@ -10255,9 +10405,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 16
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 16
 y 19
 end
@@ -10265,7 +10415,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 16
+y 19
+end
+arch shop_books
+x 16
+y 19
+end
+arch dungeon_magic
+x 16
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 16
+y 20
+end
+arch dungeon_magic
+x 16
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -10712,6 +10880,10 @@ arch wwall_2_1_2
 x 17
 y 14
 end
+arch dungeon_magic
+x 17
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -10722,9 +10894,7 @@ arch bookshelf
 x 17
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 17
 y 16
 end
@@ -10732,15 +10902,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 17
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 17
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 17
+y 17
+end
+arch shop_books
+x 17
+y 17
+end
+arch dungeon_magic
 x 17
 y 18
 end
@@ -10748,9 +10926,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 17
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 17
 y 19
 end
@@ -10758,7 +10936,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 17
+y 19
+end
+arch shop_books
+x 17
+y 19
+end
+arch dungeon_magic
+x 17
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 17
+y 20
+end
+arch dungeon_magic
+x 17
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -11218,6 +11414,10 @@ arch wwall_2_1_2
 x 18
 y 14
 end
+arch dungeon_magic
+x 18
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11228,9 +11428,7 @@ arch shop_books
 x 18
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 18
 y 16
 end
@@ -11238,15 +11436,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 18
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 18
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 18
+y 17
+end
+arch shop_books
+x 18
+y 17
+end
+arch dungeon_magic
 x 18
 y 18
 end
@@ -11254,9 +11460,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 18
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 18
 y 19
 end
@@ -11264,7 +11470,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 18
+y 19
+end
+arch shop_books
+x 18
+y 19
+end
+arch dungeon_magic
+x 18
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 18
+y 20
+end
+arch dungeon_magic
+x 18
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -11711,6 +11935,10 @@ arch wwall_2_1_2
 x 19
 y 14
 end
+arch dungeon_magic
+x 19
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11721,9 +11949,7 @@ arch bookshelf
 x 19
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 19
 y 16
 end
@@ -11731,11 +11957,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 19
+y 16
+end
+arch dungeon_magic
+x 19
+y 17
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 19
 y 17
 end
 arch shop_books
 x 19
 y 17
+end
+arch dungeon_magic
+x 19
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -11747,6 +11987,10 @@ arch shop_books
 x 19
 y 18
 end
+arch dungeon_magic
+x 19
+y 19
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11756,12 +12000,20 @@ end
 arch shop_books
 x 19
 y 19
+end
+arch dungeon_magic
+x 19
+y 20
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 19
 y 20
+end
+arch dungeon_magic
+x 19
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -12212,6 +12464,10 @@ arch wwall_2_1_2
 x 20
 y 14
 end
+arch dungeon_magic
+x 20
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -12222,9 +12478,7 @@ arch shop_books
 x 20
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 20
 y 16
 end
@@ -12232,11 +12486,19 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 20
+y 16
+end
+arch dungeon_magic
+x 20
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 20
+y 17
+end
+arch dungeon_magic
 x 20
 y 18
 end
@@ -12244,13 +12506,31 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 20
+y 18
+end
+arch dungeon_magic
+x 20
 y 19
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 20
+y 19
+end
+arch dungeon_magic
+x 20
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 20
+y 20
+end
+arch dungeon_magic
+x 20
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -12679,6 +12959,10 @@ arch wwall_2_1_2
 x 21
 y 14
 end
+arch dungeon_magic
+x 21
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -12689,9 +12973,7 @@ arch bookshelf
 x 21
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 21
 y 16
 end
@@ -12699,7 +12981,21 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 21
+y 16
+end
+arch dungeon_magic
+x 21
 y 17
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 21
+y 17
+end
+arch dungeon_magic
+x 21
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -12714,9 +13010,7 @@ sp 54
 x 21
 y 18
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 21
 y 19
 end
@@ -12724,7 +13018,21 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 21
+y 19
+end
+arch dungeon_magic
+x 21
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 21
+y 20
+end
+arch dungeon_magic
+x 21
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -13175,6 +13483,10 @@ arch wwall_2_1_2
 x 22
 y 14
 end
+arch dungeon_magic
+x 22
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13185,9 +13497,7 @@ arch shop_books
 x 22
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 22
 y 16
 end
@@ -13195,11 +13505,19 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 22
+y 16
+end
+arch dungeon_magic
+x 22
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 22
+y 17
+end
+arch dungeon_magic
 x 22
 y 18
 end
@@ -13207,13 +13525,31 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 22
+y 18
+end
+arch dungeon_magic
+x 22
 y 19
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 22
+y 19
+end
+arch dungeon_magic
+x 22
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 22
+y 20
+end
+arch dungeon_magic
+x 22
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -13651,6 +13987,10 @@ arch wwall_2_1_2
 x 23
 y 14
 end
+arch dungeon_magic
+x 23
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13661,9 +14001,7 @@ arch bookshelf
 x 23
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 23
 y 16
 end
@@ -13671,11 +14009,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 23
+y 16
+end
+arch dungeon_magic
+x 23
+y 17
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 23
 y 17
 end
 arch shop_books
 x 23
 y 17
+end
+arch dungeon_magic
+x 23
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -13687,6 +14039,10 @@ arch shop_books
 x 23
 y 18
 end
+arch dungeon_magic
+x 23
+y 19
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13696,12 +14052,20 @@ end
 arch shop_books
 x 23
 y 19
+end
+arch dungeon_magic
+x 23
+y 20
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 23
 y 20
+end
+arch dungeon_magic
+x 23
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -14574,6 +14938,10 @@ x 24
 y 14
 weight 10000
 end
+arch dungeon_magic
+x 24
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -14584,9 +14952,7 @@ arch shop_books
 x 24
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 24
 y 16
 end
@@ -14594,15 +14960,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 24
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 24
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 24
+y 17
+end
+arch shop_books
+x 24
+y 17
+end
+arch dungeon_magic
 x 24
 y 18
 end
@@ -14610,9 +14984,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 24
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 24
 y 19
 end
@@ -14620,7 +14994,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 24
+y 19
+end
+arch shop_books
+x 24
+y 19
+end
+arch dungeon_magic
+x 24
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 24
+y 20
+end
+arch dungeon_magic
+x 24
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -15439,6 +15831,10 @@ arch wwall_2_1_2
 x 25
 y 14
 end
+arch dungeon_magic
+x 25
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -15449,9 +15845,7 @@ arch bookshelf
 x 25
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 25
 y 16
 end
@@ -15459,15 +15853,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 25
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 25
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 25
+y 17
+end
+arch shop_books
+x 25
+y 17
+end
+arch dungeon_magic
 x 25
 y 18
 end
@@ -15475,9 +15877,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 25
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 25
 y 19
 end
@@ -15485,7 +15887,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 25
+y 19
+end
+arch shop_books
+x 25
+y 19
+end
+arch dungeon_magic
+x 25
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 25
+y 20
+end
+arch dungeon_magic
+x 25
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -16483,6 +16903,10 @@ arch wwall_2_1_2
 x 26
 y 14
 end
+arch dungeon_magic
+x 26
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16493,9 +16917,7 @@ arch shop_books
 x 26
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 26
 y 16
 end
@@ -16503,15 +16925,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 26
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 26
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 26
+y 17
+end
+arch shop_books
+x 26
+y 17
+end
+arch dungeon_magic
 x 26
 y 18
 end
@@ -16519,9 +16949,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 26
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 26
 y 19
 end
@@ -16529,7 +16959,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 26
+y 19
+end
+arch shop_books
+x 26
+y 19
+end
+arch dungeon_magic
+x 26
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 26
+y 20
+end
+arch dungeon_magic
+x 26
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -17232,6 +17680,10 @@ arch wwall_2_1_2
 x 27
 y 14
 end
+arch dungeon_magic
+x 27
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -17242,9 +17694,7 @@ arch bookshelf
 x 27
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 27
 y 16
 end
@@ -17252,15 +17702,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 27
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 27
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 27
+y 17
+end
+arch shop_books
+x 27
+y 17
+end
+arch dungeon_magic
 x 27
 y 18
 end
@@ -17268,9 +17726,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 27
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 27
 y 19
 end
@@ -17278,7 +17736,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 27
+y 19
+end
+arch shop_books
+x 27
+y 19
+end
+arch dungeon_magic
+x 27
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 20
+end
+arch dungeon_magic
+x 27
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -17955,6 +18431,10 @@ arch wwall_2_1_2
 x 28
 y 14
 end
+arch dungeon_magic
+x 28
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -17965,9 +18445,7 @@ arch shop_books
 x 28
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 28
 y 16
 end
@@ -17975,15 +18453,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 28
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 28
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 28
+y 17
+end
+arch shop_books
+x 28
+y 17
+end
+arch dungeon_magic
 x 28
 y 18
 end
@@ -17991,9 +18477,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 28
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 28
 y 19
 end
@@ -18001,7 +18487,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 28
+y 19
+end
+arch shop_books
+x 28
+y 19
+end
+arch dungeon_magic
+x 28
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 20
+end
+arch dungeon_magic
+x 28
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -18705,6 +19209,10 @@ arch wwall_2_1_2
 x 29
 y 14
 end
+arch dungeon_magic
+x 29
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -18715,9 +19223,7 @@ arch bookshelf
 x 29
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 29
 y 16
 end
@@ -18725,15 +19231,23 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 29
-y 17
+y 16
 end
-arch shop_books
+arch dungeon_magic
 x 29
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 29
+y 17
+end
+arch shop_books
+x 29
+y 17
+end
+arch dungeon_magic
 x 29
 y 18
 end
@@ -18741,9 +19255,9 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 29
-y 19
+y 18
 end
-arch shop_books
+arch dungeon_magic
 x 29
 y 19
 end
@@ -18751,7 +19265,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 29
+y 19
+end
+arch shop_books
+x 29
+y 19
+end
+arch dungeon_magic
+x 29
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 20
+end
+arch dungeon_magic
+x 29
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -19386,6 +19918,10 @@ arch wwall_2_1_2
 x 30
 y 14
 end
+arch dungeon_magic
+x 30
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -19396,9 +19932,7 @@ arch shop_books
 x 30
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 30
 y 16
 end
@@ -19406,11 +19940,25 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 30
+y 16
+end
+arch dungeon_magic
+x 30
+y 17
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
 y 17
 end
 arch shop_books
 x 30
 y 17
+end
+arch dungeon_magic
+x 30
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -19422,6 +19970,10 @@ arch shop_books
 x 30
 y 18
 end
+arch dungeon_magic
+x 30
+y 19
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -19431,12 +19983,20 @@ end
 arch shop_books
 x 30
 y 19
+end
+arch dungeon_magic
+x 30
+y 20
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 30
 y 20
+end
+arch dungeon_magic
+x 30
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -20087,6 +20647,10 @@ arch wwall_2_1_2
 x 31
 y 14
 end
+arch dungeon_magic
+x 31
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20097,9 +20661,7 @@ arch bookshelf
 x 31
 y 15
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 31
 y 16
 end
@@ -20107,11 +20669,19 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 31
+y 16
+end
+arch dungeon_magic
+x 31
 y 17
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 31
+y 17
+end
+arch dungeon_magic
 x 31
 y 18
 end
@@ -20119,13 +20689,31 @@ arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 31
+y 18
+end
+arch dungeon_magic
+x 31
 y 19
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 31
+y 19
+end
+arch dungeon_magic
+x 31
 y 20
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 20
+end
+arch dungeon_magic
+x 31
+y 21
 end
 arch woodfloor2
 name woodfloor
@@ -20794,6 +21382,10 @@ arch wwall_2_1_2
 x 32
 y 14
 end
+arch dungeon_magic
+x 32
+y 15
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20803,6 +21395,10 @@ end
 arch shop_books
 x 32
 y 15
+end
+arch dungeon_magic
+x 32
+y 16
 end
 arch woodfloor2
 name woodfloor
@@ -20814,6 +21410,10 @@ arch shop_books
 x 32
 y 16
 end
+arch dungeon_magic
+x 32
+y 17
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20823,6 +21423,10 @@ end
 arch shop_books
 x 32
 y 17
+end
+arch dungeon_magic
+x 32
+y 18
 end
 arch woodfloor2
 name woodfloor
@@ -20834,6 +21438,10 @@ arch shop_books
 x 32
 y 18
 end
+arch dungeon_magic
+x 32
+y 19
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20844,6 +21452,10 @@ arch shop_books
 x 32
 y 19
 end
+arch dungeon_magic
+x 32
+y 20
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20853,6 +21465,10 @@ end
 arch shop_books
 x 32
 y 20
+end
+arch dungeon_magic
+x 32
+y 21
 end
 arch woodfloor2
 name woodfloor
