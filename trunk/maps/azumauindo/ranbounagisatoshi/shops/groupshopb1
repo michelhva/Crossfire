@@ -2,6 +2,7 @@ arch map
 reset_timeout 2000
 difficulty 1
 region azumauindo
+darkness 3
 width 32
 height 32
 enter_x 1
@@ -11,7 +12,6 @@ Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
 endmsg
-outdoor 1
 end
 arch blocked
 end
@@ -151,81 +151,161 @@ arch blocked
 x 1
 y 10
 end
-arch blocked
+arch dungeon_magic
 x 1
 y 11
 end
 arch blocked
 x 1
+y 11
+end
+arch dungeon_magic
+x 1
 y 12
 end
 arch blocked
+x 1
+y 12
+end
+arch dungeon_magic
 x 1
 y 13
 end
 arch blocked
 x 1
+y 13
+end
+arch dungeon_magic
+x 1
 y 14
 end
 arch blocked
+x 1
+y 14
+end
+arch dungeon_magic
 x 1
 y 15
 end
 arch blocked
 x 1
+y 15
+end
+arch dungeon_magic
+x 1
 y 16
 end
 arch blocked
+x 1
+y 16
+end
+arch dungeon_magic
 x 1
 y 17
 end
 arch blocked
 x 1
+y 17
+end
+arch dungeon_magic
+x 1
 y 18
 end
 arch blocked
+x 1
+y 18
+end
+arch dungeon_magic
 x 1
 y 19
 end
 arch blocked
 x 1
+y 19
+end
+arch dungeon_magic
+x 1
 y 20
 end
 arch blocked
+x 1
+y 20
+end
+arch dungeon_magic
 x 1
 y 21
 end
 arch blocked
 x 1
+y 21
+end
+arch dungeon_magic
+x 1
 y 22
 end
 arch blocked
+x 1
+y 22
+end
+arch dungeon_magic
 x 1
 y 23
 end
 arch blocked
 x 1
+y 23
+end
+arch dungeon_magic
+x 1
 y 24
 end
 arch blocked
+x 1
+y 24
+end
+arch dungeon_magic
 x 1
 y 25
 end
 arch blocked
 x 1
+y 25
+end
+arch dungeon_magic
+x 1
 y 26
 end
 arch blocked
+x 1
+y 26
+end
+arch dungeon_magic
 x 1
 y 27
 end
 arch blocked
 x 1
+y 27
+end
+arch dungeon_magic
+x 1
 y 28
 end
 arch blocked
 x 1
+y 28
+end
+arch dungeon_magic
+x 1
 y 29
+end
+arch blocked
+x 1
+y 29
+end
+arch dungeon_magic
+x 1
+y 30
 end
 arch blocked
 x 1
@@ -238,6 +318,10 @@ end
 arch blocked
 x 2
 end
+arch dungeon_magic
+x 2
+y 1
+end
 arch blocked
 x 2
 y 1
@@ -246,11 +330,15 @@ arch dungeon_magic
 x 2
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 2
 end
-arch ewall_2_2_2
+arch mine10
+x 2
+y 2
+end
+arch blocked
 x 2
 y 2
 end
@@ -258,11 +346,15 @@ arch dungeon_magic
 x 2
 y 3
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 3
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 3
+end
+arch blocked
 x 2
 y 3
 end
@@ -270,11 +362,15 @@ arch dungeon_magic
 x 2
 y 4
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 4
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 4
+end
+arch blocked
 x 2
 y 4
 end
@@ -282,11 +378,15 @@ arch dungeon_magic
 x 2
 y 5
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 5
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 5
+end
+arch blocked
 x 2
 y 5
 end
@@ -294,11 +394,15 @@ arch dungeon_magic
 x 2
 y 6
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 6
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 6
+end
+arch blocked
 x 2
 y 6
 end
@@ -306,11 +410,15 @@ arch dungeon_magic
 x 2
 y 7
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 7
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 7
+end
+arch blocked
 x 2
 y 7
 end
@@ -318,11 +426,15 @@ arch dungeon_magic
 x 2
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 8
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 8
+end
+arch blocked
 x 2
 y 8
 end
@@ -330,11 +442,15 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 9
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 9
+end
+arch blocked
 x 2
 y 9
 end
@@ -342,11 +458,15 @@ arch dungeon_magic
 x 2
 y 10
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 10
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 10
+end
+arch blocked
 x 2
 y 10
 end
@@ -354,11 +474,15 @@ arch dungeon_magic
 x 2
 y 11
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 11
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 11
+end
+arch blocked
 x 2
 y 11
 end
@@ -366,11 +490,15 @@ arch dungeon_magic
 x 2
 y 12
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 12
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 12
+end
+arch blocked
 x 2
 y 12
 end
@@ -378,11 +506,15 @@ arch dungeon_magic
 x 2
 y 13
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 13
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 13
+end
+arch blocked
 x 2
 y 13
 end
@@ -390,11 +522,15 @@ arch dungeon_magic
 x 2
 y 14
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 14
 end
-arch ewall_3_2
+arch mine3
+x 2
+y 14
+end
+arch blocked
 x 2
 y 14
 end
@@ -402,11 +538,15 @@ arch dungeon_magic
 x 2
 y 15
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 15
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 15
+end
+arch blocked
 x 2
 y 15
 end
@@ -414,11 +554,15 @@ arch dungeon_magic
 x 2
 y 16
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 16
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 16
+end
+arch blocked
 x 2
 y 16
 end
@@ -426,11 +570,15 @@ arch dungeon_magic
 x 2
 y 17
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 17
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 17
+end
+arch blocked
 x 2
 y 17
 end
@@ -438,11 +586,15 @@ arch dungeon_magic
 x 2
 y 18
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 18
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 18
+end
+arch blocked
 x 2
 y 18
 end
@@ -450,11 +602,15 @@ arch dungeon_magic
 x 2
 y 19
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 19
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 19
+end
+arch blocked
 x 2
 y 19
 end
@@ -462,11 +618,15 @@ arch dungeon_magic
 x 2
 y 20
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 20
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 20
+end
+arch blocked
 x 2
 y 20
 end
@@ -474,11 +634,15 @@ arch dungeon_magic
 x 2
 y 21
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 21
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 21
+end
+arch blocked
 x 2
 y 21
 end
@@ -486,11 +650,15 @@ arch dungeon_magic
 x 2
 y 22
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 22
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 22
+end
+arch blocked
 x 2
 y 22
 end
@@ -498,11 +666,15 @@ arch dungeon_magic
 x 2
 y 23
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 23
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 23
+end
+arch blocked
 x 2
 y 23
 end
@@ -510,11 +682,15 @@ arch dungeon_magic
 x 2
 y 24
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 24
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 24
+end
+arch blocked
 x 2
 y 24
 end
@@ -522,11 +698,15 @@ arch dungeon_magic
 x 2
 y 25
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 25
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 25
+end
+arch blocked
 x 2
 y 25
 end
@@ -534,11 +714,15 @@ arch dungeon_magic
 x 2
 y 26
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 26
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 26
+end
+arch blocked
 x 2
 y 26
 end
@@ -546,11 +730,15 @@ arch dungeon_magic
 x 2
 y 27
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 27
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 27
+end
+arch blocked
 x 2
 y 27
 end
@@ -558,11 +746,15 @@ arch dungeon_magic
 x 2
 y 28
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 28
 end
-arch ewall_2_1_1
+arch mine3
+x 2
+y 28
+end
+arch blocked
 x 2
 y 28
 end
@@ -570,13 +762,21 @@ arch dungeon_magic
 x 2
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 2
 y 29
 end
-arch ewall_2_2_1
+arch mine4
 x 2
 y 29
+end
+arch blocked
+x 2
+y 29
+end
+arch dungeon_magic
+x 2
+y 30
 end
 arch blocked
 x 2
@@ -589,6 +789,10 @@ end
 arch blocked
 x 3
 end
+arch dungeon_magic
+x 3
+y 1
+end
 arch blocked
 x 3
 y 1
@@ -597,11 +801,11 @@ arch dungeon_magic
 x 3
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 3
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 3
 y 2
 end
@@ -742,7 +946,7 @@ x 3
 y 16
 end
 arch check_inv
-slaying azamauingshodos1lvl0
+slaying azamauingshodos1lvl2
 x 3
 y 16
 connected 8
@@ -769,7 +973,7 @@ x 3
 y 18
 end
 arch check_inv
-slaying azamauingshodos1lvl0
+slaying azamauingshodos1lvl2
 x 3
 y 18
 connected 8
@@ -886,13 +1090,21 @@ arch dungeon_magic
 x 3
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 3
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 3
 y 29
+end
+arch blocked
+x 3
+y 29
+end
+arch dungeon_magic
+x 3
+y 30
 end
 arch blocked
 x 3
@@ -905,6 +1117,10 @@ end
 arch blocked
 x 4
 end
+arch dungeon_magic
+x 4
+y 1
+end
 arch blocked
 x 4
 y 1
@@ -913,11 +1129,11 @@ arch dungeon_magic
 x 4
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 4
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 4
 y 2
 end
@@ -960,7 +1176,7 @@ end
 arch key2
 name shop key 2
 name_pl shop key 2
-slaying azamauingshodos2lvl0
+slaying azamauingshodos2lvl2
 x 4
 y 5
 end
@@ -1127,7 +1343,7 @@ end
 arch key2
 name shop key 1
 name_pl shop key 1
-slaying azamauingshodos1lvl0
+slaying azamauingshodos1lvl2
 x 4
 y 20
 end
@@ -1223,13 +1439,21 @@ arch dungeon_magic
 x 4
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 4
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 4
 y 29
+end
+arch blocked
+x 4
+y 29
+end
+arch dungeon_magic
+x 4
+y 30
 end
 arch blocked
 x 4
@@ -1242,6 +1466,10 @@ end
 arch blocked
 x 5
 end
+arch dungeon_magic
+x 5
+y 1
+end
 arch blocked
 x 5
 y 1
@@ -1250,11 +1478,11 @@ arch dungeon_magic
 x 5
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 5
 y 2
 end
@@ -1558,13 +1786,21 @@ arch dungeon_magic
 x 5
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 29
 end
-arch ewall_3_1
+arch mine2
 x 5
 y 29
+end
+arch blocked
+x 5
+y 29
+end
+arch dungeon_magic
+x 5
+y 30
 end
 arch blocked
 x 5
@@ -1577,6 +1813,10 @@ end
 arch blocked
 x 6
 end
+arch dungeon_magic
+x 6
+y 1
+end
 arch blocked
 x 6
 y 1
@@ -1585,11 +1825,11 @@ arch dungeon_magic
 x 6
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 6
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 6
 y 2
 end
@@ -1683,7 +1923,7 @@ x 6
 y 13
 end
 arch check_inv
-slaying azamauingshodos2lvl0
+slaying azamauingshodos2lvl2
 x 6
 y 13
 connected 80
@@ -1710,7 +1950,7 @@ x 6
 y 15
 end
 arch check_inv
-slaying azamauingshodos2lvl0
+slaying azamauingshodos2lvl2
 x 6
 y 15
 connected 80
@@ -1836,13 +2076,21 @@ arch dungeon_magic
 x 6
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 6
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 6
 y 29
+end
+arch blocked
+x 6
+y 29
+end
+arch dungeon_magic
+x 6
+y 30
 end
 arch blocked
 x 6
@@ -1855,6 +2103,10 @@ end
 arch blocked
 x 7
 end
+arch dungeon_magic
+x 7
+y 1
+end
 arch blocked
 x 7
 y 1
@@ -1863,11 +2115,11 @@ arch dungeon_magic
 x 7
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 7
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 7
 y 2
 end
@@ -2191,13 +2443,21 @@ arch dungeon_magic
 x 7
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 7
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 7
 y 29
+end
+arch blocked
+x 7
+y 29
+end
+arch dungeon_magic
+x 7
+y 30
 end
 arch blocked
 x 7
@@ -2210,6 +2470,10 @@ end
 arch blocked
 x 8
 end
+arch dungeon_magic
+x 8
+y 1
+end
 arch blocked
 x 8
 y 1
@@ -2218,11 +2482,11 @@ arch dungeon_magic
 x 8
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 8
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 8
 y 2
 end
@@ -2660,13 +2924,21 @@ arch dungeon_magic
 x 8
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 8
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 8
 y 29
+end
+arch blocked
+x 8
+y 29
+end
+arch dungeon_magic
+x 8
+y 30
 end
 arch blocked
 x 8
@@ -2679,6 +2951,10 @@ end
 arch blocked
 x 9
 end
+arch dungeon_magic
+x 9
+y 1
+end
 arch blocked
 x 9
 y 1
@@ -2687,11 +2963,11 @@ arch dungeon_magic
 x 9
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 9
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 9
 y 2
 end
@@ -3159,13 +3435,21 @@ arch dungeon_magic
 x 9
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 9
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 9
 y 29
+end
+arch blocked
+x 9
+y 29
+end
+arch dungeon_magic
+x 9
+y 30
 end
 arch blocked
 x 9
@@ -3178,6 +3462,10 @@ end
 arch blocked
 x 10
 end
+arch dungeon_magic
+x 10
+y 1
+end
 arch blocked
 x 10
 y 1
@@ -3186,11 +3474,11 @@ arch dungeon_magic
 x 10
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 10
 y 2
 end
@@ -3656,13 +3944,21 @@ arch dungeon_magic
 x 10
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 10
 y 29
+end
+arch blocked
+x 10
+y 29
+end
+arch dungeon_magic
+x 10
+y 30
 end
 arch blocked
 x 10
@@ -3675,6 +3971,10 @@ end
 arch blocked
 x 11
 end
+arch dungeon_magic
+x 11
+y 1
+end
 arch blocked
 x 11
 y 1
@@ -3683,11 +3983,11 @@ arch dungeon_magic
 x 11
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 11
 y 2
 end
@@ -4139,13 +4439,21 @@ arch dungeon_magic
 x 11
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 11
 y 29
+end
+arch blocked
+x 11
+y 29
+end
+arch dungeon_magic
+x 11
+y 30
 end
 arch blocked
 x 11
@@ -4158,6 +4466,10 @@ end
 arch blocked
 x 12
 end
+arch dungeon_magic
+x 12
+y 1
+end
 arch blocked
 x 12
 y 1
@@ -4166,11 +4478,11 @@ arch dungeon_magic
 x 12
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 12
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 12
 y 2
 end
@@ -4708,13 +5020,21 @@ arch dungeon_magic
 x 12
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 12
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 12
 y 29
+end
+arch blocked
+x 12
+y 29
+end
+arch dungeon_magic
+x 12
+y 30
 end
 arch blocked
 x 12
@@ -4727,6 +5047,10 @@ end
 arch blocked
 x 13
 end
+arch dungeon_magic
+x 13
+y 1
+end
 arch blocked
 x 13
 y 1
@@ -4735,11 +5059,11 @@ arch dungeon_magic
 x 13
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 13
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 13
 y 2
 end
@@ -5233,13 +5557,21 @@ arch dungeon_magic
 x 13
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 13
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 13
 y 29
+end
+arch blocked
+x 13
+y 29
+end
+arch dungeon_magic
+x 13
+y 30
 end
 arch blocked
 x 13
@@ -5252,6 +5584,10 @@ end
 arch blocked
 x 14
 end
+arch dungeon_magic
+x 14
+y 1
+end
 arch blocked
 x 14
 y 1
@@ -5260,11 +5596,11 @@ arch dungeon_magic
 x 14
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 14
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 14
 y 2
 end
@@ -5582,16 +5918,24 @@ arch dungeon_magic
 x 14
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 14
 y 29
 end
-arch ewall_3_1
+arch mine2
 x 14
 y 29
 end
 arch blocked
 x 14
+y 29
+end
+arch dungeon_magic
+x 14
+y 30
+end
+arch blocked
+x 14
 y 30
 end
 arch blocked
@@ -5601,6 +5945,10 @@ end
 arch blocked
 x 15
 end
+arch dungeon_magic
+x 15
+y 1
+end
 arch blocked
 x 15
 y 1
@@ -5609,11 +5957,11 @@ arch dungeon_magic
 x 15
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 15
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 15
 y 2
 end
@@ -5829,13 +6177,21 @@ arch dungeon_magic
 x 15
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 15
 y 29
 end
-arch ewall_1_3
+arch mine2
 x 15
 y 29
+end
+arch blocked
+x 15
+y 29
+end
+arch dungeon_magic
+x 15
+y 30
 end
 arch blocked
 x 15
@@ -5848,6 +6204,10 @@ end
 arch blocked
 x 16
 end
+arch dungeon_magic
+x 16
+y 1
+end
 arch blocked
 x 16
 y 1
@@ -5856,11 +6216,11 @@ arch dungeon_magic
 x 16
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 16
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 16
 y 2
 end
@@ -6076,16 +6436,21 @@ arch dungeon_magic
 x 16
 y 29
 end
-arch invis_exit
-slaying /world/world_127_101
-hp 19
-sp 44
+arch dungeon_floor
 x 16
 y 29
 end
-arch woodfloor
+arch mine2
 x 16
 y 29
+end
+arch blocked
+x 16
+y 29
+end
+arch dungeon_magic
+x 16
+y 30
 end
 arch blocked
 x 16
@@ -6098,6 +6463,10 @@ end
 arch blocked
 x 17
 end
+arch dungeon_magic
+x 17
+y 1
+end
 arch blocked
 x 17
 y 1
@@ -6106,11 +6475,11 @@ arch dungeon_magic
 x 17
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 17
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 17
 y 2
 end
@@ -6326,16 +6695,21 @@ arch dungeon_magic
 x 17
 y 29
 end
-arch invis_exit
-slaying /world/world_127_101
-hp 19
-sp 44
+arch dungeon_floor
 x 17
 y 29
 end
-arch woodfloor
+arch mine2
 x 17
 y 29
+end
+arch blocked
+x 17
+y 29
+end
+arch dungeon_magic
+x 17
+y 30
 end
 arch blocked
 x 17
@@ -6348,6 +6722,10 @@ end
 arch blocked
 x 18
 end
+arch dungeon_magic
+x 18
+y 1
+end
 arch blocked
 x 18
 y 1
@@ -6356,11 +6734,11 @@ arch dungeon_magic
 x 18
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 18
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 18
 y 2
 end
@@ -6576,13 +6954,21 @@ arch dungeon_magic
 x 18
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 18
 y 29
 end
-arch ewall_1_4
+arch mine2
 x 18
 y 29
+end
+arch blocked
+x 18
+y 29
+end
+arch dungeon_magic
+x 18
+y 30
 end
 arch blocked
 x 18
@@ -6595,6 +6981,10 @@ end
 arch blocked
 x 19
 end
+arch dungeon_magic
+x 19
+y 1
+end
 arch blocked
 x 19
 y 1
@@ -6603,11 +6993,11 @@ arch dungeon_magic
 x 19
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 19
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 19
 y 2
 end
@@ -6823,13 +7213,21 @@ arch dungeon_magic
 x 19
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 19
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 19
 y 29
+end
+arch blocked
+x 19
+y 29
+end
+arch dungeon_magic
+x 19
+y 30
 end
 arch blocked
 x 19
@@ -6842,6 +7240,10 @@ end
 arch blocked
 x 20
 end
+arch dungeon_magic
+x 20
+y 1
+end
 arch blocked
 x 20
 y 1
@@ -6850,11 +7252,11 @@ arch dungeon_magic
 x 20
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 20
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 20
 y 2
 end
@@ -7070,13 +7472,21 @@ arch dungeon_magic
 x 20
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 20
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 20
 y 29
+end
+arch blocked
+x 20
+y 29
+end
+arch dungeon_magic
+x 20
+y 30
 end
 arch blocked
 x 20
@@ -7089,6 +7499,10 @@ end
 arch blocked
 x 21
 end
+arch dungeon_magic
+x 21
+y 1
+end
 arch blocked
 x 21
 y 1
@@ -7097,11 +7511,11 @@ arch dungeon_magic
 x 21
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 21
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 21
 y 2
 end
@@ -7317,13 +7731,21 @@ arch dungeon_magic
 x 21
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 21
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 21
 y 29
+end
+arch blocked
+x 21
+y 29
+end
+arch dungeon_magic
+x 21
+y 30
 end
 arch blocked
 x 21
@@ -7336,6 +7758,10 @@ end
 arch blocked
 x 22
 end
+arch dungeon_magic
+x 22
+y 1
+end
 arch blocked
 x 22
 y 1
@@ -7344,11 +7770,11 @@ arch dungeon_magic
 x 22
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 22
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 22
 y 2
 end
@@ -7564,13 +7990,21 @@ arch dungeon_magic
 x 22
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 22
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 22
 y 29
+end
+arch blocked
+x 22
+y 29
+end
+arch dungeon_magic
+x 22
+y 30
 end
 arch blocked
 x 22
@@ -7583,6 +8017,10 @@ end
 arch blocked
 x 23
 end
+arch dungeon_magic
+x 23
+y 1
+end
 arch blocked
 x 23
 y 1
@@ -7591,11 +8029,11 @@ arch dungeon_magic
 x 23
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 23
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 23
 y 2
 end
@@ -7811,13 +8249,21 @@ arch dungeon_magic
 x 23
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 23
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 23
 y 29
+end
+arch blocked
+x 23
+y 29
+end
+arch dungeon_magic
+x 23
+y 30
 end
 arch blocked
 x 23
@@ -7830,6 +8276,10 @@ end
 arch blocked
 x 24
 end
+arch dungeon_magic
+x 24
+y 1
+end
 arch blocked
 x 24
 y 1
@@ -7838,11 +8288,11 @@ arch dungeon_magic
 x 24
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 24
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 24
 y 2
 end
@@ -7853,24 +8303,17 @@ end
 arch woodfloor
 x 24
 y 3
+end
+arch dungeon_magic
+x 24
+y 4
+end
+arch woodfloor
+x 24
+y 4
 end
 arch stair_up_1
-slaying groupshop2
-hp 24
-sp 3
-x 24
-y 3
-end
-arch dungeon_magic
-x 24
-y 4
-end
-arch woodfloor
-x 24
-y 4
-end
-arch stair_down_1
-slaying groupshopb1
+slaying groupshop
 hp 24
 sp 4
 x 24
@@ -8060,8 +8503,8 @@ arch woodfloor
 x 24
 y 27
 end
-arch stair_down_3
-slaying groupshopb1
+arch stair_up_3
+slaying groupshop
 hp 24
 sp 27
 x 24
@@ -8075,24 +8518,25 @@ arch woodfloor
 x 24
 y 28
 end
-arch stair_up_3
-slaying groupshop2
-hp 24
-sp 28
-x 24
-y 28
-end
 arch dungeon_magic
 x 24
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 24
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 24
 y 29
+end
+arch blocked
+x 24
+y 29
+end
+arch dungeon_magic
+x 24
+y 30
 end
 arch blocked
 x 24
@@ -8105,6 +8549,10 @@ end
 arch blocked
 x 25
 end
+arch dungeon_magic
+x 25
+y 1
+end
 arch blocked
 x 25
 y 1
@@ -8113,11 +8561,11 @@ arch dungeon_magic
 x 25
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 25
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 25
 y 2
 end
@@ -8128,24 +8576,17 @@ end
 arch woodfloor
 x 25
 y 3
+end
+arch dungeon_magic
+x 25
+y 4
+end
+arch woodfloor
+x 25
+y 4
 end
 arch stair_up_1
-slaying groupshop2
-hp 25
-sp 3
-x 25
-y 3
-end
-arch dungeon_magic
-x 25
-y 4
-end
-arch woodfloor
-x 25
-y 4
-end
-arch stair_down_1
-slaying groupshopb1
+slaying groupshop
 hp 25
 sp 4
 x 25
@@ -8339,8 +8780,8 @@ arch woodfloor
 x 25
 y 27
 end
-arch stair_down_3
-slaying groupshopb1
+arch stair_up_3
+slaying groupshop
 hp 25
 sp 27
 x 25
@@ -8354,24 +8795,25 @@ arch woodfloor
 x 25
 y 28
 end
-arch stair_up_3
-slaying groupshop2
-hp 25
-sp 28
-x 25
-y 28
-end
 arch dungeon_magic
 x 25
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 25
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 25
 y 29
+end
+arch blocked
+x 25
+y 29
+end
+arch dungeon_magic
+x 25
+y 30
 end
 arch blocked
 x 25
@@ -8384,6 +8826,10 @@ end
 arch blocked
 x 26
 end
+arch dungeon_magic
+x 26
+y 1
+end
 arch blocked
 x 26
 y 1
@@ -8392,11 +8838,11 @@ arch dungeon_magic
 x 26
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 26
 y 2
 end
-arch ewall_3_3
+arch mine16
 x 26
 y 2
 end
@@ -8409,6 +8855,10 @@ x 26
 y 3
 end
 arch ewall_2_1_1
+x 26
+y 3
+end
+arch mine5
 x 26
 y 3
 end
@@ -8712,17 +9162,29 @@ arch ewall_2_1_1
 x 26
 y 28
 end
+arch mine8
+x 26
+y 28
+end
 arch dungeon_magic
 x 26
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 26
 y 29
 end
-arch ewall_3_1
+arch mine13
 x 26
 y 29
+end
+arch blocked
+x 26
+y 29
+end
+arch dungeon_magic
+x 26
+y 30
 end
 arch blocked
 x 26
@@ -8735,6 +9197,10 @@ end
 arch blocked
 x 27
 end
+arch dungeon_magic
+x 27
+y 1
+end
 arch blocked
 x 27
 y 1
@@ -8743,11 +9209,11 @@ arch dungeon_magic
 x 27
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 27
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 27
 y 2
 end
@@ -8762,7 +9228,7 @@ end
 arch key2
 name shop key 2
 name_pl shop key 2
-slaying azamauingshodos2lvl0
+slaying azamauingshodos2lvl2
 x 27
 y 3
 end
@@ -8820,6 +9286,10 @@ arch ewall_2_1_2
 x 27
 y 6
 end
+arch dungeon_magic
+x 27
+y 7
+end
 arch light2
 x 27
 y 7
@@ -8835,13 +9305,17 @@ end
 arch key2
 name shop key 2
 name_pl shop key 2
-slaying azamauingshodos2lvl0
+slaying azamauingshodos2lvl2
 x 27
 y 7
 value 300000
 unpaid 1
 unique 1
 end
+arch dungeon_magic
+x 27
+y 8
+end
 arch light2
 x 27
 y 8
@@ -8853,6 +9327,10 @@ end
 arch woodfloor
 x 27
 y 8
+end
+arch dungeon_magic
+x 27
+y 9
 end
 arch light2
 x 27
@@ -8866,6 +9344,10 @@ arch woodfloor
 x 27
 y 9
 end
+arch dungeon_magic
+x 27
+y 10
+end
 arch light2
 x 27
 y 10
@@ -8877,6 +9359,10 @@ end
 arch woodfloor
 x 27
 y 10
+end
+arch dungeon_magic
+x 27
+y 11
 end
 arch light2
 x 27
@@ -8890,6 +9376,10 @@ arch woodfloor
 x 27
 y 11
 end
+arch dungeon_magic
+x 27
+y 12
+end
 arch light2
 x 27
 y 12
@@ -8901,6 +9391,10 @@ end
 arch woodfloor
 x 27
 y 12
+end
+arch dungeon_magic
+x 27
+y 13
 end
 arch light2
 x 27
@@ -8914,6 +9408,10 @@ arch woodfloor
 x 27
 y 13
 end
+arch dungeon_magic
+x 27
+y 14
+end
 arch light2
 x 27
 y 14
@@ -8925,6 +9423,10 @@ end
 arch woodfloor
 x 27
 y 14
+end
+arch dungeon_magic
+x 27
+y 15
 end
 arch light2
 x 27
@@ -8938,6 +9440,10 @@ arch woodfloor
 x 27
 y 15
 end
+arch dungeon_magic
+x 27
+y 16
+end
 arch light2
 x 27
 y 16
@@ -8949,6 +9455,10 @@ end
 arch woodfloor
 x 27
 y 16
+end
+arch dungeon_magic
+x 27
+y 17
 end
 arch light2
 x 27
@@ -8962,6 +9472,10 @@ arch woodfloor
 x 27
 y 17
 end
+arch dungeon_magic
+x 27
+y 18
+end
 arch light2
 x 27
 y 18
@@ -8973,6 +9487,10 @@ end
 arch woodfloor
 x 27
 y 18
+end
+arch dungeon_magic
+x 27
+y 19
 end
 arch light2
 x 27
@@ -8986,6 +9504,10 @@ arch woodfloor
 x 27
 y 19
 end
+arch dungeon_magic
+x 27
+y 20
+end
 arch light2
 x 27
 y 20
@@ -8998,6 +9520,10 @@ arch woodfloor
 x 27
 y 20
 end
+arch dungeon_magic
+x 27
+y 21
+end
 arch light2
 x 27
 y 21
@@ -9009,6 +9535,10 @@ end
 arch woodfloor
 x 27
 y 21
+end
+arch dungeon_magic
+x 27
+y 22
 end
 arch light2
 x 27
@@ -9027,6 +9557,10 @@ face rune_mark.111
 x 27
 y 22
 end
+arch dungeon_magic
+x 27
+y 23
+end
 arch light2
 x 27
 y 23
@@ -9042,6 +9576,10 @@ end
 arch shop_mat
 x 27
 y 23
+end
+arch dungeon_magic
+x 27
+y 24
 end
 arch light2
 x 27
@@ -9079,7 +9617,7 @@ end
 arch key2
 name shop key 1
 name_pl shop key 1
-slaying azamauingshodos1lvl0
+slaying azamauingshodos1lvl2
 x 27
 y 26
 end
@@ -9129,13 +9667,21 @@ arch dungeon_magic
 x 27
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 27
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 27
 y 29
+end
+arch blocked
+x 27
+y 29
+end
+arch dungeon_magic
+x 27
+y 30
 end
 arch blocked
 x 27
@@ -9148,6 +9694,10 @@ end
 arch blocked
 x 28
 end
+arch dungeon_magic
+x 28
+y 1
+end
 arch blocked
 x 28
 y 1
@@ -9156,11 +9706,11 @@ arch dungeon_magic
 x 28
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 28
 y 2
 end
-arch ewall_2_1_2
+arch mine2
 x 28
 y 2
 end
@@ -9239,6 +9789,14 @@ arch ewall_2_1_2
 x 28
 y 6
 end
+arch mine6
+x 28
+y 6
+end
+arch dungeon_magic
+x 28
+y 7
+end
 arch light2
 x 28
 y 7
@@ -9254,13 +9812,17 @@ end
 arch key2
 name shop key 1
 name_pl shop key 1
-slaying azamauingshodos1lvl0
+slaying azamauingshodos1lvl2
 x 28
 y 7
 value 300000
 unpaid 1
 unique 1
 end
+arch dungeon_magic
+x 28
+y 8
+end
 arch light2
 x 28
 y 8
@@ -9273,6 +9835,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 8
+end
+arch dungeon_magic
+x 28
+y 9
 end
 arch light2
 x 28
@@ -9287,6 +9853,10 @@ face woodfloor.111
 x 28
 y 9
 end
+arch dungeon_magic
+x 28
+y 10
+end
 arch light2
 x 28
 y 10
@@ -9299,6 +9869,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 10
+end
+arch dungeon_magic
+x 28
+y 11
 end
 arch light2
 x 28
@@ -9313,6 +9887,10 @@ face woodfloor.111
 x 28
 y 11
 end
+arch dungeon_magic
+x 28
+y 12
+end
 arch light2
 x 28
 y 12
@@ -9325,6 +9903,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 12
+end
+arch dungeon_magic
+x 28
+y 13
 end
 arch light2
 x 28
@@ -9339,6 +9921,10 @@ face woodfloor.111
 x 28
 y 13
 end
+arch dungeon_magic
+x 28
+y 14
+end
 arch light2
 x 28
 y 14
@@ -9351,6 +9937,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 14
+end
+arch dungeon_magic
+x 28
+y 15
 end
 arch light2
 x 28
@@ -9365,6 +9955,10 @@ face woodfloor.111
 x 28
 y 15
 end
+arch dungeon_magic
+x 28
+y 16
+end
 arch light2
 x 28
 y 16
@@ -9377,6 +9971,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 16
+end
+arch dungeon_magic
+x 28
+y 17
 end
 arch light2
 x 28
@@ -9391,6 +9989,10 @@ face woodfloor.111
 x 28
 y 17
 end
+arch dungeon_magic
+x 28
+y 18
+end
 arch light2
 x 28
 y 18
@@ -9403,6 +10005,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 18
+end
+arch dungeon_magic
+x 28
+y 19
 end
 arch light2
 x 28
@@ -9417,6 +10023,10 @@ face woodfloor.111
 x 28
 y 19
 end
+arch dungeon_magic
+x 28
+y 20
+end
 arch light2
 x 28
 y 20
@@ -9429,6 +10039,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 20
+end
+arch dungeon_magic
+x 28
+y 21
 end
 arch light2
 x 28
@@ -9443,6 +10057,10 @@ face woodfloor.111
 x 28
 y 21
 end
+arch dungeon_magic
+x 28
+y 22
+end
 arch light2
 x 28
 y 22
@@ -9456,6 +10074,10 @@ face woodfloor.111
 x 28
 y 22
 end
+arch dungeon_magic
+x 28
+y 23
+end
 arch light2
 x 28
 y 23
@@ -9468,6 +10090,10 @@ arch shop_food
 face woodfloor.111
 x 28
 y 23
+end
+arch dungeon_magic
+x 28
+y 24
 end
 arch light2
 x 28
@@ -9491,6 +10117,10 @@ x 28
 y 25
 end
 arch ewall_2_1_2
+x 28
+y 25
+end
+arch mine6
 x 28
 y 25
 end
@@ -9561,13 +10191,21 @@ arch dungeon_magic
 x 28
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 28
 y 29
 end
-arch ewall_2_1_2
+arch mine2
 x 28
 y 29
+end
+arch blocked
+x 28
+y 29
+end
+arch dungeon_magic
+x 28
+y 30
 end
 arch blocked
 x 28
@@ -9580,6 +10218,10 @@ end
 arch blocked
 x 29
 end
+arch dungeon_magic
+x 29
+y 1
+end
 arch blocked
 x 29
 y 1
@@ -9588,11 +10230,11 @@ arch dungeon_magic
 x 29
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 2
 end
-arch ewall_2_2_3
+arch mine9
 x 29
 y 2
 end
@@ -9600,11 +10242,11 @@ arch dungeon_magic
 x 29
 y 3
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 3
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 3
 end
@@ -9612,11 +10254,11 @@ arch dungeon_magic
 x 29
 y 4
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 4
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 4
 end
@@ -9624,11 +10266,11 @@ arch dungeon_magic
 x 29
 y 5
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 5
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 5
 end
@@ -9636,11 +10278,11 @@ arch dungeon_magic
 x 29
 y 6
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 6
 end
-arch ewall_3_4
+arch mine14
 x 29
 y 6
 end
@@ -9648,11 +10290,11 @@ arch dungeon_magic
 x 29
 y 7
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 7
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 7
 end
@@ -9660,11 +10302,11 @@ arch dungeon_magic
 x 29
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 8
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 8
 end
@@ -9672,11 +10314,11 @@ arch dungeon_magic
 x 29
 y 9
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 9
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 9
 end
@@ -9684,11 +10326,11 @@ arch dungeon_magic
 x 29
 y 10
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 10
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 10
 end
@@ -9696,11 +10338,11 @@ arch dungeon_magic
 x 29
 y 11
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 11
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 11
 end
@@ -9708,11 +10350,11 @@ arch dungeon_magic
 x 29
 y 12
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 12
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 12
 end
@@ -9720,11 +10362,11 @@ arch dungeon_magic
 x 29
 y 13
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 13
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 13
 end
@@ -9732,11 +10374,11 @@ arch dungeon_magic
 x 29
 y 14
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 14
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 14
 end
@@ -9744,11 +10386,11 @@ arch dungeon_magic
 x 29
 y 15
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 15
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 15
 end
@@ -9756,11 +10398,11 @@ arch dungeon_magic
 x 29
 y 16
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 16
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 16
 end
@@ -9768,11 +10410,11 @@ arch dungeon_magic
 x 29
 y 17
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 17
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 17
 end
@@ -9780,11 +10422,11 @@ arch dungeon_magic
 x 29
 y 18
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 18
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 18
 end
@@ -9792,11 +10434,11 @@ arch dungeon_magic
 x 29
 y 19
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 19
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 19
 end
@@ -9804,11 +10446,11 @@ arch dungeon_magic
 x 29
 y 20
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 20
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 20
 end
@@ -9816,11 +10458,11 @@ arch dungeon_magic
 x 29
 y 21
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 21
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 21
 end
@@ -9828,11 +10470,11 @@ arch dungeon_magic
 x 29
 y 22
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 22
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 22
 end
@@ -9840,11 +10482,11 @@ arch dungeon_magic
 x 29
 y 23
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 23
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 23
 end
@@ -9852,11 +10494,11 @@ arch dungeon_magic
 x 29
 y 24
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 24
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 24
 end
@@ -9864,11 +10506,11 @@ arch dungeon_magic
 x 29
 y 25
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 25
 end
-arch ewall_3_4
+arch mine14
 x 29
 y 25
 end
@@ -9876,11 +10518,11 @@ arch dungeon_magic
 x 29
 y 26
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 26
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 26
 end
@@ -9888,11 +10530,11 @@ arch dungeon_magic
 x 29
 y 27
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 27
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 27
 end
@@ -9900,11 +10542,11 @@ arch dungeon_magic
 x 29
 y 28
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 28
 end
-arch ewall_2_1_1
+arch mine3
 x 29
 y 28
 end
@@ -9912,13 +10554,21 @@ arch dungeon_magic
 x 29
 y 29
 end
-arch woodfloor
+arch dungeon_floor
 x 29
 y 29
 end
-arch ewall_2_2_4
+arch mine12
 x 29
 y 29
+end
+arch blocked
+x 29
+y 29
+end
+arch dungeon_magic
+x 29
+y 30
 end
 arch blocked
 x 29
@@ -9931,121 +10581,241 @@ end
 arch blocked
 x 30
 end
-arch blocked
+arch dungeon_magic
 x 30
 y 1
 end
 arch blocked
 x 30
+y 1
+end
+arch dungeon_magic
+x 30
 y 2
 end
 arch blocked
+x 30
+y 2
+end
+arch dungeon_magic
 x 30
 y 3
 end
 arch blocked
 x 30
+y 3
+end
+arch dungeon_magic
+x 30
 y 4
 end
 arch blocked
+x 30
+y 4
+end
+arch dungeon_magic
 x 30
 y 5
 end
 arch blocked
 x 30
+y 5
+end
+arch dungeon_magic
+x 30
 y 6
 end
 arch blocked
+x 30
+y 6
+end
+arch dungeon_magic
 x 30
 y 7
 end
 arch blocked
 x 30
+y 7
+end
+arch dungeon_magic
+x 30
 y 8
 end
 arch blocked
+x 30
+y 8
+end
+arch dungeon_magic
 x 30
 y 9
 end
 arch blocked
 x 30
+y 9
+end
+arch dungeon_magic
+x 30
 y 10
 end
 arch blocked
+x 30
+y 10
+end
+arch dungeon_magic
 x 30
 y 11
 end
 arch blocked
 x 30
+y 11
+end
+arch dungeon_magic
+x 30
 y 12
 end
 arch blocked
+x 30
+y 12
+end
+arch dungeon_magic
 x 30
 y 13
 end
 arch blocked
 x 30
+y 13
+end
+arch dungeon_magic
+x 30
 y 14
 end
 arch blocked
+x 30
+y 14
+end
+arch dungeon_magic
 x 30
 y 15
 end
 arch blocked
 x 30
+y 15
+end
+arch dungeon_magic
+x 30
 y 16
 end
 arch blocked
+x 30
+y 16
+end
+arch dungeon_magic
 x 30
 y 17
 end
 arch blocked
 x 30
+y 17
+end
+arch dungeon_magic
+x 30
 y 18
 end
 arch blocked
+x 30
+y 18
+end
+arch dungeon_magic
 x 30
 y 19
 end
 arch blocked
 x 30
+y 19
+end
+arch dungeon_magic
+x 30
 y 20
 end
 arch blocked
+x 30
+y 20
+end
+arch dungeon_magic
 x 30
 y 21
 end
 arch blocked
 x 30
+y 21
+end
+arch dungeon_magic
+x 30
 y 22
 end
 arch blocked
+x 30
+y 22
+end
+arch dungeon_magic
 x 30
 y 23
 end
 arch blocked
 x 30
+y 23
+end
+arch dungeon_magic
+x 30
 y 24
 end
 arch blocked
+x 30
+y 24
+end
+arch dungeon_magic
 x 30
 y 25
 end
 arch blocked
 x 30
+y 25
+end
+arch dungeon_magic
+x 30
 y 26
 end
 arch blocked
+x 30
+y 26
+end
+arch dungeon_magic
 x 30
 y 27
 end
 arch blocked
 x 30
+y 27
+end
+arch dungeon_magic
+x 30
 y 28
 end
 arch blocked
 x 30
+y 28
+end
+arch dungeon_magic
+x 30
 y 29
+end
+arch blocked
+x 30
+y 29
+end
+arch dungeon_magic
+x 30
+y 30
 end
 arch blocked
 x 30
@@ -10058,89 +10828,177 @@ end
 arch blocked
 x 31
 end
-arch blocked
+arch dungeon_magic
 x 31
 y 1
 end
 arch blocked
 x 31
+y 1
+end
+arch dungeon_magic
+x 31
 y 2
 end
 arch blocked
+x 31
+y 2
+end
+arch dungeon_magic
 x 31
 y 3
 end
 arch blocked
 x 31
+y 3
+end
+arch dungeon_magic
+x 31
 y 4
 end
 arch blocked
+x 31
+y 4
+end
+arch dungeon_magic
 x 31
 y 5
 end
 arch blocked
 x 31
+y 5
+end
+arch dungeon_magic
+x 31
 y 6
 end
 arch blocked
+x 31
+y 6
+end
+arch dungeon_magic
 x 31
 y 7
 end
 arch blocked
 x 31
+y 7
+end
+arch dungeon_magic
+x 31
 y 8
 end
 arch blocked
+x 31
+y 8
+end
+arch dungeon_magic
 x 31
 y 9
 end
 arch blocked
 x 31
+y 9
+end
+arch dungeon_magic
+x 31
 y 10
 end
 arch blocked
+x 31
+y 10
+end
+arch dungeon_magic
 x 31
 y 11
 end
 arch blocked
 x 31
+y 11
+end
+arch dungeon_magic
+x 31
 y 12
 end
 arch blocked
+x 31
+y 12
+end
+arch dungeon_magic
 x 31
 y 13
 end
 arch blocked
 x 31
+y 13
+end
+arch dungeon_magic
+x 31
 y 14
 end
 arch blocked
+x 31
+y 14
+end
+arch dungeon_magic
 x 31
 y 15
 end
 arch blocked
 x 31
+y 15
+end
+arch dungeon_magic
+x 31
 y 16
 end
 arch blocked
+x 31
+y 16
+end
+arch dungeon_magic
 x 31
 y 17
 end
 arch blocked
 x 31
+y 17
+end
+arch dungeon_magic
+x 31
 y 18
 end
 arch blocked
+x 31
+y 18
+end
+arch dungeon_magic
 x 31
 y 19
 end
 arch blocked
 x 31
+y 19
+end
+arch dungeon_magic
+x 31
 y 20
 end
 arch blocked
 x 31
+y 20
+end
+arch dungeon_magic
+x 31
 y 21
+end
+arch blocked
+x 31
+y 21
+end
+arch dungeon_magic
+x 31
+y 22
 end
 arch blocked
 x 31
