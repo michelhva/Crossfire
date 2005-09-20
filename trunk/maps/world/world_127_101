@@ -1,8 +1,8 @@
 arch map
 name world_127_101
-region azumauindo
 reset_timeout 7200
 difficulty 1
+region azumauindo
 width 50
 height 50
 enter_x 1
@@ -5574,6 +5574,10 @@ y 43
 elevation 1663
 end
 arch building10_east
+name mise
+slaying /azumauindo/ranbounagisatoshi/shops/groupshop
+hp 17
+sp 28
 x 18
 y 43
 end
