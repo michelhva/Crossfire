@@ -1,8 +1,8 @@
 arch map
 name ground
-region azumauindo
 reset_timeout 7200
 difficulty 1
+region azumauindo
 width 25
 height 25
 enter_x 12
@@ -5494,8 +5494,9 @@ speed 0.000000
 connected 20
 end
 arch key2
+Ketsueki Itsuryuu Key
 name Ketsueki Itsuryuu Key
-name_pl Dreaming Sage Key
+name_pl Ketsueki Itsuryuu Keys
 slaying ketsueki_itsuryuu
 x 24
 end
