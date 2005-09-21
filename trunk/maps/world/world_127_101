@@ -5575,6 +5575,7 @@ elevation 1663
 end
 arch building10_east
 name mise
+name_pl mise
 slaying /azumauindo/ranbounagisatoshi/shops/groupshop
 hp 17
 sp 28
@@ -6278,16 +6279,10 @@ y 45
 elevation 46
 end
 arch house2_east
-slaying /!
-msg
-floorstyle darkwood
-exitstyle door
-wallstyle eastern
-monsterstyle chaos
-dungeon_level 10
-dungeon_depth 1
-decorstyle easternsimple
-endmsg
+name shouhou senta
+slaying /azumauindo/ranbounagisatoshi/shops/tradecenter
+hp 7
+sp 15
 x 20
 y 45
 end
