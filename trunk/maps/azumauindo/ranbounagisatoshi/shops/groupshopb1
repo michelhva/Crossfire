@@ -1174,8 +1174,8 @@ x 4
 y 5
 end
 arch key2
-name shop key 2
-name_pl shop key 2
+name mise key 2
+name_pl mise key 2
 slaying azamauingshodos2lvl2
 x 4
 y 5
@@ -1341,8 +1341,8 @@ x 4
 y 20
 end
 arch key2
-name shop key 1
-name_pl shop key 1
+name mise key 1
+name_pl mise key 1
 slaying azamauingshodos1lvl2
 x 4
 y 20
@@ -8292,7 +8292,7 @@ arch dungeon_floor
 x 24
 y 2
 end
-arch mine2
+arch mine16
 x 24
 y 2
 end
@@ -8301,6 +8301,10 @@ x 24
 y 3
 end
 arch woodfloor
+x 24
+y 3
+end
+arch mine4
 x 24
 y 3
 end
@@ -8327,6 +8331,13 @@ arch woodfloor
 x 24
 y 5
 end
+arch stair_down_1
+slaying groupshopb2
+hp 24
+sp 5
+x 24
+y 5
+end
 arch dungeon_magic
 x 24
 y 6
@@ -8492,6 +8503,13 @@ x 24
 y 26
 end
 arch woodfloor
+x 24
+y 26
+end
+arch stair_down_3
+slaying groupshopb2
+hp 24
+sp 26
 x 24
 y 26
 end
@@ -8518,6 +8536,10 @@ arch woodfloor
 x 24
 y 28
 end
+arch mine10
+x 24
+y 28
+end
 arch dungeon_magic
 x 24
 y 29
@@ -8526,7 +8548,7 @@ arch dungeon_floor
 x 24
 y 29
 end
-arch mine2
+arch mine12
 x 24
 y 29
 end
@@ -8565,7 +8587,11 @@ arch dungeon_floor
 x 25
 y 2
 end
-arch mine2
+arch mine16
+x 25
+y 2
+end
+arch blocked
 x 25
 y 2
 end
@@ -8574,6 +8600,10 @@ x 25
 y 3
 end
 arch woodfloor
+x 25
+y 3
+end
+arch mine13
 x 25
 y 3
 end
@@ -8597,6 +8627,13 @@ x 25
 y 5
 end
 arch woodfloor
+x 25
+y 5
+end
+arch stair_down_1
+slaying groupshopb2
+hp 25
+sp 5
 x 25
 y 5
 end
@@ -8772,6 +8809,13 @@ arch woodfloor
 x 25
 y 26
 end
+arch stair_down_3
+slaying groupshopb2
+hp 25
+sp 26
+x 25
+y 26
+end
 arch dungeon_magic
 x 25
 y 27
@@ -8795,6 +8839,14 @@ arch woodfloor
 x 25
 y 28
 end
+arch mine16
+x 25
+y 28
+end
+arch blocked
+x 25
+y 28
+end
 arch dungeon_magic
 x 25
 y 29
@@ -8803,7 +8855,7 @@ arch dungeon_floor
 x 25
 y 29
 end
-arch mine2
+arch mine13
 x 25
 y 29
 end
@@ -8846,6 +8898,10 @@ arch mine16
 x 26
 y 2
 end
+arch blocked
+x 26
+y 2
+end
 arch dungeon_magic
 x 26
 y 3
@@ -8858,7 +8914,7 @@ arch ewall_2_1_1
 x 26
 y 3
 end
-arch mine5
+arch mine12
 x 26
 y 3
 end
@@ -9162,7 +9218,11 @@ arch ewall_2_1_1
 x 26
 y 28
 end
-arch mine8
+arch mine9
+x 26
+y 28
+end
+arch blocked
 x 26
 y 28
 end
@@ -9303,8 +9363,8 @@ x 27
 y 7
 end
 arch key2
-name shop key 2
-name_pl shop key 2
+name mise key 2
+name_pl mise key 2
 slaying azamauingshodos2lvl2
 x 27
 y 7
@@ -9810,8 +9870,8 @@ x 28
 y 7
 end
 arch key2
-name shop key 1
-name_pl shop key 1
+name mise key 1
+name_pl mise key 1
 slaying azamauingshodos1lvl2
 x 28
 y 7
