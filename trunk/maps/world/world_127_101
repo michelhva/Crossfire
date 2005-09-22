@@ -4837,17 +4837,10 @@ y 46
 elevation 358
 end
 arch house2_east
-slaying /!
-msg
-layoutstyle onion
-exitstyle door
-floorstyle darkwood
-wallstyle eastern
-monsterstyle city
-dungeon_level 1
-dungeon_depth 1
-decorstyle easternsimple
-endmsg
+name itteifuhen apa-to
+slaying /azumauindo/ranbounagisatoshi/apartments/sapartment
+hp 6
+sp 12
 x 16
 y 46
 end
@@ -6280,6 +6273,7 @@ elevation 46
 end
 arch house2_east
 name shouhou senta
+name_pl shouhou senta
 slaying /azumauindo/ranbounagisatoshi/shops/tradecenter
 hp 7
 sp 15
