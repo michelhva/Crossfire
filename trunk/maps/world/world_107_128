@@ -5040,6 +5040,12 @@ arch dungeon_magic
 x 20
 y 15
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 20
+y 15
+end
 arch grass
 elevation 834
 x 20
@@ -5049,12 +5055,24 @@ arch dungeon_magic
 x 20
 y 16
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 20
+y 16
+end
 arch grass
 elevation 751
 x 20
 y 17
 end
 arch dungeon_magic
+x 20
+y 17
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 20
 y 17
 end
@@ -5315,6 +5333,12 @@ arch dungeon_magic
 x 21
 y 15
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 21
+y 15
+end
 arch woods_3
 elevation 1183
 x 21
@@ -5324,12 +5348,41 @@ arch dungeon_magic
 x 21
 y 16
 end
+arch skeleton_leader_arc
+name Darky
+title Dead First Mate
+randomitems none
+level 120
+carrying 80000
+hp 600
+maxhp 600
+resist_physical 30
+resist_cold 40
+x 21
+y 16
+arch chain_mail
+applied 1
+end
+arch small_shield
+applied 1
+end
+arch rapier
+applied 1
+weapontype 1
+end
+end
 arch woods_3
 elevation 1129
 x 21
 y 17
 end
 arch dungeon_magic
+x 21
+y 17
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 21
 y 17
 end
@@ -5597,6 +5650,12 @@ arch dungeon_magic
 x 22
 y 15
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 22
+y 15
+end
 arch woods_3
 elevation 1158
 x 22
@@ -5606,12 +5665,24 @@ arch dungeon_magic
 x 22
 y 16
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 22
+y 16
+end
 arch woods_3
 elevation 1069
 x 22
 y 17
 end
 arch dungeon_magic
+x 22
+y 17
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 22
 y 17
 end
@@ -9322,13 +9393,30 @@ arch desert
 elevation 952
 x 36
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 36
+end
 arch brush
 elevation 347
 x 36
 y 1
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 36
+y 1
+end
 arch woods_2
 elevation 1203
+x 36
+y 2
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 36
 y 2
 end
@@ -9575,13 +9663,47 @@ arch woods
 elevation 1044
 x 37
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 37
+end
 arch brush
 elevation 952
 x 37
 y 1
 end
+arch skeleton_leader_arc
+name Sunny
+title Dead Captain
+randomitems none
+level 120
+carrying 80000
+hp 600
+maxhp 600
+resist_physical 30
+resist_cold 40
+x 37
+y 1
+arch chain_mail
+applied 1
+end
+arch small_shield
+applied 1
+end
+arch rapier
+applied 1
+weapontype 1
+end
+end
 arch brush
 elevation 690
+x 37
+y 2
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 37
 y 2
 end
@@ -9832,13 +9954,30 @@ arch woods_2
 elevation 1363
 x 38
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 38
+end
 arch woods
 elevation 1196
 x 38
 y 1
 end
+arch skeleton
+name Dead Seaman
+title crew member
+x 38
+y 1
+end
 arch woods
 elevation 1123
+x 38
+y 2
+end
+arch skeleton
+name Dead Seaman
+title crew member
 x 38
 y 2
 end
