@@ -8719,7 +8719,12 @@ elevation 19
 x 27
 y 31
 end
+arch dirtroad_1_3
+x 27
+y 31
+end
 arch stonebridge_1_4
+elevation 19
 x 27
 y 31
 end
@@ -11033,7 +11038,12 @@ elevation 68
 x 36
 y 31
 end
+arch dirtroad_1_3
+x 36
+y 31
+end
 arch stonebridge_1_3
+elevation 68
 x 36
 y 31
 end
@@ -14447,4 +14457,24 @@ arch brush
 elevation 81
 x 49
 y 49
+end
+arch dragon
+x 35
+y 29
+end
+arch dragon
+x 38
+y 28
+end
+arch dragon
+x 39
+y 32
+end
+arch dragon
+x 41
+y 27
+end
+arch dragon
+x 41
+y 30
 end
