@@ -195,6 +195,9 @@ end
 arch woodfloor2
 y 25
 end
+arch chair_cw_1.1
+y 25
+end
 arch dungeon_magic
 y 26
 end
@@ -259,6 +262,9 @@ arch dungeon_magic
 y 36
 end
 arch woodfloor
+y 36
+end
+arch chair_cw_1.3
 y 36
 end
 arch dungeon_magic
@@ -683,6 +689,10 @@ arch woodfloor
 x 1
 y 25
 end
+arch chair_cw_1.1
+x 1
+y 25
+end
 arch dungeon_magic
 x 1
 y 26
@@ -768,6 +778,10 @@ x 1
 y 36
 end
 arch woodfloor2
+x 1
+y 36
+end
+arch chair_cw_1.3
 x 1
 y 36
 end
@@ -1258,6 +1272,10 @@ arch woodfloor
 x 2
 y 25
 end
+arch chair_cw_1.1
+x 2
+y 25
+end
 arch dungeon_magic
 x 2
 y 26
@@ -1343,6 +1361,10 @@ x 2
 y 36
 end
 arch woodfloor2
+x 2
+y 36
+end
+arch chair_cw_1.3
 x 2
 y 36
 end
@@ -1872,6 +1894,10 @@ arch woodfloor2
 x 3
 y 25
 end
+arch chair_cw_1.1
+x 3
+y 25
+end
 arch dungeon_magic
 x 3
 y 26
@@ -1957,6 +1983,10 @@ x 3
 y 36
 end
 arch woodfloor
+x 3
+y 36
+end
+arch chair_cw_1.3
 x 3
 y 36
 end
@@ -2438,6 +2468,10 @@ arch woodfloor2
 x 4
 y 25
 end
+arch chair_cw_1.1
+x 4
+y 25
+end
 arch dungeon_magic
 x 4
 y 26
@@ -2523,6 +2557,10 @@ x 4
 y 36
 end
 arch woodfloor
+x 4
+y 36
+end
+arch chair_cw_1.3
 x 4
 y 36
 end
@@ -3008,6 +3046,10 @@ arch woodfloor
 x 5
 y 25
 end
+arch chair_cw_1.1
+x 5
+y 25
+end
 arch dungeon_magic
 x 5
 y 26
@@ -3093,6 +3135,10 @@ x 5
 y 36
 end
 arch woodfloor2
+x 5
+y 36
+end
+arch chair_cw_1.3
 x 5
 y 36
 end
@@ -3612,6 +3658,10 @@ arch woodfloor
 x 6
 y 25
 end
+arch chair_cw_1.1
+x 6
+y 25
+end
 arch dungeon_magic
 x 6
 y 26
@@ -3942,6 +3992,12 @@ arch dungeon_magic
 x 7
 y 1
 end
+arch check_inv
+slaying prisondemadnessSMLibE2sakey
+x 7
+y 1
+connected 10083
+end
 arch dungeon_floor
 x 7
 y 1
@@ -3958,6 +4014,12 @@ arch dungeon_floor
 x 7
 y 2
 end
+arch grate_closed_1
+x 7
+y 2
+speed 0.500000
+connected 10083
+end
 arch light2
 x 7
 y 3
@@ -3965,6 +4027,11 @@ end
 arch dungeon_magic
 x 7
 y 3
+end
+arch pedestal_trigger
+x 7
+y 3
+connected 10083
 end
 arch dungeon_floor
 x 7
@@ -4167,6 +4234,10 @@ x 7
 y 25
 end
 arch woodfloor2
+x 7
+y 25
+end
+arch chair_cw_1.1
 x 7
 y 25
 end
@@ -4523,6 +4594,12 @@ arch dungeon_magic
 x 8
 y 1
 end
+arch check_inv
+slaying prisondemadnessSMLibE2sakey
+x 8
+y 1
+connected 10083
+end
 arch dungeon_floor
 x 8
 y 1
@@ -4539,6 +4616,12 @@ arch dungeon_floor
 x 8
 y 2
 end
+arch grate_closed_1
+x 8
+y 2
+speed 0.500000
+connected 10083
+end
 arch light2
 x 8
 y 3
@@ -4546,6 +4629,11 @@ end
 arch dungeon_magic
 x 8
 y 3
+end
+arch pedestal_trigger
+x 8
+y 3
+connected 10083
 end
 arch dungeon_floor
 x 8
@@ -5909,6 +5997,17 @@ arch woodfloor
 x 10
 y 25
 end
+arch table_cw_3
+x 10
+y 25
+end
+arch key2
+name le salon key
+slaying prisondemadnessSMLibE2sakey
+face key_brown.111
+x 10
+y 25
+end
 arch dungeon_magic
 x 10
 y 26
@@ -5930,6 +6029,10 @@ x 10
 y 28
 end
 arch woodfloor2
+x 10
+y 28
+end
+arch chair_cw_1.2
 x 10
 y 28
 end
@@ -5938,6 +6041,10 @@ x 10
 y 29
 end
 arch woodfloor
+x 10
+y 29
+end
+arch chair_cw_1.2
 x 10
 y 29
 end
@@ -5946,6 +6053,10 @@ x 10
 y 30
 end
 arch woodfloor
+x 10
+y 30
+end
+arch chair_cw_1.2
 x 10
 y 30
 end
@@ -5954,6 +6065,10 @@ x 10
 y 31
 end
 arch woodfloor2
+x 10
+y 31
+end
+arch chair_cw_1.2
 x 10
 y 31
 end
@@ -5962,6 +6077,10 @@ x 10
 y 32
 end
 arch woodfloor2
+x 10
+y 32
+end
+arch chair_cw_1.2
 x 10
 y 32
 end
@@ -5970,6 +6089,10 @@ x 10
 y 33
 end
 arch woodfloor
+x 10
+y 33
+end
+arch chair_cw_1.2
 x 10
 y 33
 end
@@ -5994,6 +6117,10 @@ x 10
 y 36
 end
 arch woodfloor2
+x 10
+y 36
+end
+arch table_cw_3
 x 10
 y 36
 end

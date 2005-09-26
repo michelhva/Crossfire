@@ -38168,9 +38168,18 @@ arch c_woman
 name receptionist
 name_pl receptionist
 msg
-@match *
+@match hi|hello
  We have many nice rooms.
 Please don't hurt me.
+
+@match dragon
+I fear them, and their lord
+Please don't hurt me.
+
+@match elf|lord|Valdak
+I know only that the elves know more.
+Please don't hurt me.
+
 endmsg
 x 34
 y 113
@@ -45703,9 +45712,31 @@ y 109
 end
 arch northman
 msg
-@match *
+@match hi|hello
 A rest is good for the warrior
 spirit! Especially a rich one eheheh!
+
+@match elf|lord|Valdak
+You speak of Valdak?
+
+@match yes
+Well... he was once a good elf, but
+now he's said to be a dark elf, can't
+tell the diffrence between the do I
+can't. I don't trust any elf, silent
+they are, will steal your money
+pouch, your armour, and your
+daughter... all in the blink of en
+eye! Now it's time for me to rest.
+
+@match no
+Well I can't help you then. Resting
+time.
+
+@match dragon
+Dragons, you don't say! That's why I
+stay inside hehe!
+
 endmsg
 x 41
 y 109
@@ -91614,6 +91645,13 @@ x 76
 y 25
 end
 arch elf_man
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 76
 y 25
 end
@@ -91650,6 +91688,13 @@ x 76
 y 29
 end
 arch elf_man
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 76
 y 29
 end
@@ -96716,6 +96761,13 @@ x 79
 y 30
 end
 arch elf_man
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 79
 y 30
 end
@@ -100243,6 +100295,13 @@ x 81
 y 29
 end
 arch elf_1
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 81
 y 29
 end
@@ -101846,6 +101905,13 @@ x 82
 y 24
 end
 arch elf_man
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 82
 y 24
 end
@@ -101926,6 +101992,16 @@ x 82
 y 36
 end
 arch elf_man
+msg
+@match hi|hello
+The day is dark even when there is
+light from the wings of the monsters
+that fly with impunity. I cannot talk
+my friend, we may all soon be dust.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 82
 y 36
 end
@@ -105100,6 +105176,13 @@ x 84
 y 27
 end
 arch elf_man
+msg
+@match hi|hello
+I must pray, please leave me be.
+@match lord|Valdak
+*the elf man's expression turns
+grimly unhappy*
+endmsg
 x 84
 y 27
 end
@@ -110004,6 +110087,23 @@ x 87
 y 47
 end
 arch elf_man
+msg
+@match hi|hello
+Times are troubled, I must attended
+to my prayers.
+@match troubled|time|pray
+The lord of a powerful castle to the
+east, it is said, has amassed an army
+of dragons. For what he will do with
+them I fear is to our peril.
+@match elf|lord|Valdak
+Oh I shudder at the name Vladak in
+both terror and terrible sadness. Lord
+Valdak used to be the leader of we of
+the elven kind but something happend
+and now... he plots against this
+city.
+endmsg
 x 87
 y 47
 end
@@ -118432,6 +118532,29 @@ x 92
 y 53
 end
 arch elf_1
+msg
+@match hi|hello
+I have no part in that dark elf
+lord's plans! I am first and foremost
+a citizen of the City De Clouds.
+@match lord|Lord|dark
+Not too far past this city's eastern
+gates is the castle of the elf lord
+Valdak. He was once a good ruler of
+all the elves in this realm... but...
+then it changed.
+@match it|change
+I've spoken of too much, even though
+it is common knowlege in this city
+the high magistrate wishes to keep it
+from all but the mightiest of men...
+for any lesser being would be crushed
+if even a thought of attack against
+the dark elf lord was attempted...
+Valdak's dragon spies lurk always, we
+fear his forces will attack soon.
+ 
+endmsg
 x 92
 y 53
 end
@@ -124180,6 +124303,13 @@ x 95
 y 128
 end
 arch northman
+msg
+@match elf|lord|Valdak
+Eh? I know little of what ye say...
+but I'll tell you this, I trust
+little those of the elven and dragon
+kinds.
+endmsg
 x 95
 y 128
 unaggressive 1
@@ -125473,8 +125603,15 @@ y 102
 end
 arch courier
 msg
-@match *
+@match hi|hello
 Going to the post office...
+@match dragon|army
+Those creatures circle us at this
+very minute, the winged bringers of
+death... I have heard wisperings of
+an army of dragons in the mists just
+beyond the city, unseen... you would
+be best to flee... as I wish I could.
 endmsg
 x 96
 y 102
@@ -125601,6 +125738,12 @@ x 96
 y 118
 end
 arch fatman
+msg
+@match *
+Jolly! It's good to be here, I know
+of know dangers! Jolly!
+
+endmsg
 x 96
 y 118
 end
@@ -132901,6 +133044,28 @@ x 101
 y 96
 end
 arch sage
+name wise sage
+name_pl wise sage
+msg
+@match hi|hello
+Well speak up, ask your question!
+@match elf|lord|Valdak
+Yes yes, that is of which we most do
+not wish to hear. The elf lord Valdak
+plots our destruction the wind
+wispers.
+@match dragon|army
+Yes yes, Valdak has amassed a huge
+army of dragons with which to attack
+us, it is said. Where he gained the
+power to bring together these
+creatures it is not known, but I
+suspect it must be a greater power.
+Recently all has gone quiet and we
+greatly fear attack is near... and,
+alas, our final doom (for what can
+stop such beasts?).
+endmsg
 x 101
 y 96
 end
@@ -136165,9 +136330,25 @@ arch wizard
 name hooded merchant
 name_pl master of transferrence
 msg
-@match *
+@match hi|hello
 Welcome and stay for awhile,
 replenish thy spirit and abilities.
+
+@match elf|lord|Valdak
+To the west... but the castle of the
+dark elf lord is gaurded in
+opposition by the military of this
+city... 
+
+@match dragon
+Dragons here, the spies and soldiers
+of the dark elf lord... do not meddle
+in their affairs, flee in terror
+instead...
+
+
+
+
 endmsg
 face wizard.151
 hp 100

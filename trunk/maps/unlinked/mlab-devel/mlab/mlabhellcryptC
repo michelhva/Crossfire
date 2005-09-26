@@ -16071,7 +16071,6 @@ arch ladder_bi_up
 slaying mlabhellcryptD
 msg
 You are glad to have escaped...
-
 endmsg
 hp 7
 sp 6
@@ -29390,6 +29389,13 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 36
+y 75
+end
+arch stair3_gstone_do
+slaying mlabhellcryptB
+hp 36
+sp 75
 x 36
 y 75
 end

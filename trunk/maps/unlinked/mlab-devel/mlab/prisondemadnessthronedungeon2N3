@@ -11,6 +11,7 @@ Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Fri Sep 16 13:59:49 2005
 endmsg
+tile_path_2 /mlab/prisondemadnessthronedungeon2N3E1
 tile_path_3 /mlab/prisondemadnessthronedungeon2N2
 tile_path_4 /mlab/prisondemadnessSMLibN1E2
 end
@@ -1637,7 +1638,7 @@ arch dungeon_floor
 x 15
 y 3
 end
-arch mine3
+arch mine4
 x 15
 y 3
 end
@@ -1649,19 +1650,11 @@ arch dungeon_floor
 x 15
 y 4
 end
-arch mine3
-x 15
-y 4
-end
 arch dungeon_magic
 x 15
 y 5
 end
 arch dungeon_floor
-x 15
-y 5
-end
-arch mine3
 x 15
 y 5
 end
@@ -1673,7 +1666,7 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch mine3
+arch mine10
 x 15
 y 6
 end
