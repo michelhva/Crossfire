@@ -4838,11 +4838,13 @@ elevation 358
 end
 arch house2_east
 name itteifuhen apa-to
+name_pl itteifuhen apa-to
 slaying /azumauindo/ranbounagisatoshi/apartments/sapartment
 hp 6
 sp 12
 x 16
 y 46
+unique 1
 end
 arch brush
 x 16
@@ -6626,6 +6628,10 @@ y 47
 elevation 44
 end
 arch building1_east
+name mise
+slaying /azumauindo/ranbounagisatoshi/shops/potionshop1
+hp 16
+sp 26
 x 21
 y 47
 end
