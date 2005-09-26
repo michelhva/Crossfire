@@ -3,7 +3,7 @@ reset_timeout 7200
 difficulty 1
 darkness 3
 width 64
-height 64
+height 120
 enter_x 15
 enter_y 2
 msg
@@ -1539,6 +1539,62 @@ endmsg
 x 3
 y 55
 end
+arch blocked
+x 3
+y 64
+end
+arch blocked
+x 3
+y 65
+end
+arch blocked
+x 3
+y 66
+end
+arch blocked
+x 3
+y 67
+end
+arch blocked
+x 3
+y 68
+end
+arch blocked
+x 3
+y 69
+end
+arch blocked
+x 3
+y 70
+end
+arch blocked
+x 3
+y 71
+end
+arch blocked
+x 3
+y 72
+end
+arch blocked
+x 3
+y 73
+end
+arch blocked
+x 3
+y 74
+end
+arch blocked
+x 3
+y 75
+end
+arch blocked
+x 3
+y 76
+end
+arch blocked
+x 3
+y 77
+end
 arch dirtfloor
 x 4
 end
@@ -1969,6 +2025,110 @@ endmsg
 x 4
 y 55
 end
+arch blocked
+x 4
+y 64
+end
+arch graymarble
+x 4
+y 65
+end
+arch stwall_4
+x 4
+y 65
+end
+arch greenmarble
+x 4
+y 66
+end
+arch stwall_3_4
+x 4
+y 66
+end
+arch graymarble
+x 4
+y 67
+end
+arch stwall_3_4
+x 4
+y 67
+end
+arch greenmarble
+x 4
+y 68
+end
+arch stwall_3_4
+x 4
+y 68
+end
+arch graymarble
+x 4
+y 69
+end
+arch stwall_3_4
+x 4
+y 69
+end
+arch greenmarble
+x 4
+y 70
+end
+arch stwall_3_4
+x 4
+y 70
+end
+arch graymarble
+x 4
+y 71
+end
+arch stwall_3_4
+x 4
+y 71
+end
+arch greenmarble
+x 4
+y 72
+end
+arch stwall_3_4
+x 4
+y 72
+end
+arch graymarble
+x 4
+y 73
+end
+arch stwall_3_4
+x 4
+y 73
+end
+arch greenmarble
+x 4
+y 74
+end
+arch stwall_3_4
+x 4
+y 74
+end
+arch graymarble
+x 4
+y 75
+end
+arch stwall_3_4
+x 4
+y 75
+end
+arch greenmarble
+x 4
+y 76
+end
+arch stwall_4
+x 4
+y 76
+end
+arch blocked
+x 4
+y 77
+end
 arch dirtfloor
 x 5
 end
@@ -2377,6 +2537,70 @@ endmsg
 x 5
 y 55
 end
+arch blocked
+x 5
+y 64
+end
+arch greenmarble
+x 5
+y 65
+end
+arch stwall_3_1
+x 5
+y 65
+end
+arch graymarble
+x 5
+y 66
+end
+arch greenmarble
+x 5
+y 67
+end
+arch graymarble
+x 5
+y 68
+end
+arch greenmarble
+x 5
+y 69
+end
+arch graymarble
+x 5
+y 70
+end
+arch greenmarble
+x 5
+y 71
+end
+arch graymarble
+x 5
+y 72
+end
+arch greenmarble
+x 5
+y 73
+end
+arch graymarble
+x 5
+y 74
+end
+arch greenmarble
+x 5
+y 75
+end
+arch graymarble
+x 5
+y 76
+end
+arch stwall_3_3
+x 5
+y 76
+end
+arch blocked
+x 5
+y 77
+end
 arch dirtfloor
 x 6
 end
@@ -2759,6 +2983,107 @@ endmsg
 x 6
 y 55
 end
+arch blocked
+x 6
+y 63
+end
+arch blocked
+x 6
+y 64
+end
+arch graymarble
+x 6
+y 65
+end
+arch stwall_3_1
+x 6
+y 65
+end
+arch greenmarble
+x 6
+y 66
+end
+arch graymarble
+x 6
+y 67
+end
+arch sarcophagus_container2
+x 6
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch greenmarble
+x 6
+y 68
+end
+arch graymarble
+x 6
+y 69
+end
+arch greenmarble
+x 6
+y 70
+end
+arch sarcophagus_container2
+x 6
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 6
+y 71
+end
+arch greenmarble
+x 6
+y 72
+end
+arch graymarble
+x 6
+y 73
+end
+arch sarcophagus_container2
+x 6
+y 73
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch greenmarble
+x 6
+y 74
+end
+arch graymarble
+x 6
+y 75
+end
+arch greenmarble
+x 6
+y 76
+end
+arch stwall_3_3
+x 6
+y 76
+end
+arch blocked
+x 6
+y 77
+end
 arch dirtfloor
 x 7
 end
@@ -3111,6 +3436,78 @@ endmsg
 x 7
 y 55
 end
+arch blocked
+x 7
+y 63
+end
+arch graymarble
+x 7
+y 64
+end
+arch stwall_4
+x 7
+y 64
+end
+arch greenmarble
+x 7
+y 65
+end
+arch stwall_2_2_4
+x 7
+y 65
+end
+arch graymarble
+x 7
+y 66
+end
+arch greenmarble
+x 7
+y 67
+end
+arch graymarble
+x 7
+y 68
+end
+arch greenmarble
+x 7
+y 69
+end
+arch graymarble
+x 7
+y 70
+end
+arch greenmarble
+x 7
+y 71
+end
+arch graymarble
+x 7
+y 72
+end
+arch greenmarble
+x 7
+y 73
+end
+arch graymarble
+x 7
+y 74
+end
+arch greenmarble
+x 7
+y 75
+end
+arch graymarble
+x 7
+y 76
+end
+arch stwall_3_3
+x 7
+y 76
+end
+arch blocked
+x 7
+y 77
+end
 arch dirtfloor
 x 8
 end
@@ -3453,6 +3850,78 @@ endmsg
 x 8
 y 55
 end
+arch blocked
+x 8
+y 63
+end
+arch greenmarble
+x 8
+y 64
+end
+arch stwall_3_1
+x 8
+y 64
+end
+arch graymarble
+x 8
+y 65
+end
+arch altar_devourers
+x 8
+y 65
+end
+arch greenmarble
+x 8
+y 66
+end
+arch graymarble
+x 8
+y 67
+end
+arch greenmarble
+x 8
+y 68
+end
+arch graymarble
+x 8
+y 69
+end
+arch greenmarble
+x 8
+y 70
+end
+arch graymarble
+x 8
+y 71
+end
+arch greenmarble
+x 8
+y 72
+end
+arch graymarble
+x 8
+y 73
+end
+arch greenmarble
+x 8
+y 74
+end
+arch graymarble
+x 8
+y 75
+end
+arch greenmarble
+x 8
+y 76
+end
+arch stwall_3_3
+x 8
+y 76
+end
+arch blocked
+x 8
+y 77
+end
 arch dirtfloor
 x 9
 end
@@ -3798,6 +4267,104 @@ msg
 endmsg
 x 9
 y 55
+end
+arch blocked
+x 9
+y 63
+end
+arch graymarble
+x 9
+y 64
+end
+arch stwall_4
+x 9
+y 64
+end
+arch greenmarble
+x 9
+y 65
+end
+arch stwall_2_2_1
+x 9
+y 65
+end
+arch graymarble
+x 9
+y 66
+end
+arch greenmarble
+x 9
+y 67
+end
+arch sarcophagus_container2
+x 9
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 9
+y 68
+end
+arch greenmarble
+x 9
+y 69
+end
+arch graymarble
+x 9
+y 70
+end
+arch sarcophagus_container2
+x 9
+y 70
+end
+arch greenmarble
+x 9
+y 71
+end
+arch graymarble
+x 9
+y 72
+end
+arch greenmarble
+x 9
+y 73
+end
+arch sarcophagus_container2
+x 9
+y 73
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 9
+y 74
+end
+arch greenmarble
+x 9
+y 75
+end
+arch graymarble
+x 9
+y 76
+end
+arch stwall_3_3
+x 9
+y 76
+end
+arch blocked
+x 9
+y 77
 end
 arch dirtfloor
 x 10
@@ -4178,6 +4745,74 @@ msg
 endmsg
 x 10
 y 55
+end
+arch blocked
+x 10
+y 63
+end
+arch blocked
+x 10
+y 64
+end
+arch graymarble
+x 10
+y 65
+end
+arch stwall_3_1
+x 10
+y 65
+end
+arch greenmarble
+x 10
+y 66
+end
+arch graymarble
+x 10
+y 67
+end
+arch greenmarble
+x 10
+y 68
+end
+arch graymarble
+x 10
+y 69
+end
+arch greenmarble
+x 10
+y 70
+end
+arch graymarble
+x 10
+y 71
+end
+arch greenmarble
+x 10
+y 72
+end
+arch graymarble
+x 10
+y 73
+end
+arch greenmarble
+x 10
+y 74
+end
+arch graymarble
+x 10
+y 75
+end
+arch greenmarble
+x 10
+y 76
+end
+arch stwall_3_3
+x 10
+y 76
+end
+arch blocked
+x 10
+y 77
 end
 arch dirtfloor
 x 11
@@ -4575,6 +5210,74 @@ endmsg
 x 11
 y 55
 end
+arch blocked
+x 11
+y 63
+end
+arch blocked
+x 11
+y 64
+end
+arch greenmarble
+x 11
+y 65
+end
+arch stwall_3_1
+x 11
+y 65
+end
+arch graymarble
+x 11
+y 66
+end
+arch greenmarble
+x 11
+y 67
+end
+arch graymarble
+x 11
+y 68
+end
+arch greenmarble
+x 11
+y 69
+end
+arch graymarble
+x 11
+y 70
+end
+arch greenmarble
+x 11
+y 71
+end
+arch graymarble
+x 11
+y 72
+end
+arch greenmarble
+x 11
+y 73
+end
+arch graymarble
+x 11
+y 74
+end
+arch greenmarble
+x 11
+y 75
+end
+arch graymarble
+x 11
+y 76
+end
+arch stwall_3_3
+x 11
+y 76
+end
+arch blocked
+x 11
+y 77
+end
 arch dirtfloor
 x 12
 end
@@ -4960,6 +5663,97 @@ endmsg
 x 12
 y 55
 end
+arch blocked
+x 12
+y 63
+end
+arch greenmarble
+x 12
+y 64
+end
+arch stwall_4
+x 12
+y 64
+end
+arch graymarble
+x 12
+y 65
+end
+arch stwall_2_2_4
+x 12
+y 65
+end
+arch greenmarble
+x 12
+y 66
+end
+arch graymarble
+x 12
+y 67
+end
+arch sarcophagus_container2
+x 12
+y 67
+end
+arch greenmarble
+x 12
+y 68
+end
+arch graymarble
+x 12
+y 69
+end
+arch greenmarble
+x 12
+y 70
+end
+arch sarcophagus_container2
+x 12
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 12
+y 71
+end
+arch greenmarble
+x 12
+y 72
+end
+arch graymarble
+x 12
+y 73
+end
+arch sarcophagus_container2
+x 12
+y 73
+end
+arch greenmarble
+x 12
+y 74
+end
+arch graymarble
+x 12
+y 75
+end
+arch greenmarble
+x 12
+y 76
+end
+arch stwall_3_3
+x 12
+y 76
+end
+arch blocked
+x 12
+y 77
+end
 arch dirtfloor
 x 13
 end
@@ -5350,6 +6144,78 @@ endmsg
 x 13
 y 55
 end
+arch blocked
+x 13
+y 63
+end
+arch graymarble
+x 13
+y 64
+end
+arch stwall_3_1
+x 13
+y 64
+end
+arch greenmarble
+x 13
+y 65
+end
+arch altar_devourers
+x 13
+y 65
+end
+arch graymarble
+x 13
+y 66
+end
+arch greenmarble
+x 13
+y 67
+end
+arch graymarble
+x 13
+y 68
+end
+arch greenmarble
+x 13
+y 69
+end
+arch graymarble
+x 13
+y 70
+end
+arch greenmarble
+x 13
+y 71
+end
+arch graymarble
+x 13
+y 72
+end
+arch greenmarble
+x 13
+y 73
+end
+arch graymarble
+x 13
+y 74
+end
+arch greenmarble
+x 13
+y 75
+end
+arch graymarble
+x 13
+y 76
+end
+arch stwall_3_3
+x 13
+y 76
+end
+arch blocked
+x 13
+y 77
+end
 arch dirtfloor
 x 14
 end
@@ -5702,6 +6568,78 @@ endmsg
 x 14
 y 55
 end
+arch blocked
+x 14
+y 63
+end
+arch greenmarble
+x 14
+y 64
+end
+arch stwall_4
+x 14
+y 64
+end
+arch graymarble
+x 14
+y 65
+end
+arch stwall_2_2_1
+x 14
+y 65
+end
+arch greenmarble
+x 14
+y 66
+end
+arch graymarble
+x 14
+y 67
+end
+arch greenmarble
+x 14
+y 68
+end
+arch graymarble
+x 14
+y 69
+end
+arch greenmarble
+x 14
+y 70
+end
+arch graymarble
+x 14
+y 71
+end
+arch greenmarble
+x 14
+y 72
+end
+arch graymarble
+x 14
+y 73
+end
+arch greenmarble
+x 14
+y 74
+end
+arch graymarble
+x 14
+y 75
+end
+arch greenmarble
+x 14
+y 76
+end
+arch stwall_3_3
+x 14
+y 76
+end
+arch blocked
+x 14
+y 77
+end
 arch dirtfloor
 x 15
 end
@@ -6044,6 +6982,100 @@ endmsg
 x 15
 y 55
 end
+arch blocked
+x 15
+y 63
+end
+arch blocked
+x 15
+y 64
+end
+arch greenmarble
+x 15
+y 65
+end
+arch stwall_3_1
+x 15
+y 65
+end
+arch graymarble
+x 15
+y 66
+end
+arch greenmarble
+x 15
+y 67
+end
+arch sarcophagus_container2
+x 15
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 15
+y 68
+end
+arch greenmarble
+x 15
+y 69
+end
+arch graymarble
+x 15
+y 70
+end
+arch sarcophagus_container2
+x 15
+y 70
+end
+arch greenmarble
+x 15
+y 71
+end
+arch graymarble
+x 15
+y 72
+end
+arch greenmarble
+x 15
+y 73
+end
+arch sarcophagus_container2
+x 15
+y 73
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 15
+y 74
+end
+arch greenmarble
+x 15
+y 75
+end
+arch graymarble
+x 15
+y 76
+end
+arch stwall_3_3
+x 15
+y 76
+end
+arch blocked
+x 15
+y 77
+end
 arch dirtfloor
 x 16
 end
@@ -6357,6 +7389,70 @@ msg
 endmsg
 x 16
 y 55
+end
+arch blocked
+x 16
+y 64
+end
+arch graymarble
+x 16
+y 65
+end
+arch stwall_3_1
+x 16
+y 65
+end
+arch greenmarble
+x 16
+y 66
+end
+arch graymarble
+x 16
+y 67
+end
+arch greenmarble
+x 16
+y 68
+end
+arch graymarble
+x 16
+y 69
+end
+arch greenmarble
+x 16
+y 70
+end
+arch graymarble
+x 16
+y 71
+end
+arch greenmarble
+x 16
+y 72
+end
+arch graymarble
+x 16
+y 73
+end
+arch greenmarble
+x 16
+y 74
+end
+arch graymarble
+x 16
+y 75
+end
+arch greenmarble
+x 16
+y 76
+end
+arch stwall_3_3
+x 16
+y 76
+end
+arch blocked
+x 16
+y 77
 end
 arch dirtfloor
 x 17
@@ -6740,6 +7836,70 @@ endmsg
 x 17
 y 55
 end
+arch blocked
+x 17
+y 64
+end
+arch greenmarble
+x 17
+y 65
+end
+arch stwall_3_1
+x 17
+y 65
+end
+arch graymarble
+x 17
+y 66
+end
+arch greenmarble
+x 17
+y 67
+end
+arch graymarble
+x 17
+y 68
+end
+arch greenmarble
+x 17
+y 69
+end
+arch graymarble
+x 17
+y 70
+end
+arch greenmarble
+x 17
+y 71
+end
+arch graymarble
+x 17
+y 72
+end
+arch greenmarble
+x 17
+y 73
+end
+arch graymarble
+x 17
+y 74
+end
+arch greenmarble
+x 17
+y 75
+end
+arch graymarble
+x 17
+y 76
+end
+arch stwall_3_3
+x 17
+y 76
+end
+arch blocked
+x 17
+y 77
+end
 arch dirtfloor
 x 18
 end
@@ -6974,63 +8134,63 @@ carrying 60000
 run_away 0
 reflect_spell 1
 no_steal 1
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
 arch random_talisman
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
 end
 end
 arch greenmarble
@@ -7226,6 +8386,89 @@ msg
 endmsg
 x 18
 y 55
+end
+arch blocked
+x 18
+y 64
+end
+arch graymarble
+x 18
+y 65
+end
+arch stwall_3_1
+x 18
+y 65
+end
+arch greenmarble
+x 18
+y 66
+end
+arch graymarble
+x 18
+y 67
+end
+arch sarcophagus_container2
+x 18
+y 67
+end
+arch greenmarble
+x 18
+y 68
+end
+arch graymarble
+x 18
+y 69
+end
+arch greenmarble
+x 18
+y 70
+end
+arch sarcophagus_container2
+x 18
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 18
+y 71
+end
+arch greenmarble
+x 18
+y 72
+end
+arch graymarble
+x 18
+y 73
+end
+arch sarcophagus_container2
+x 18
+y 73
+end
+arch greenmarble
+x 18
+y 74
+end
+arch graymarble
+x 18
+y 75
+end
+arch greenmarble
+x 18
+y 76
+end
+arch stwall_3_3
+x 18
+y 76
+end
+arch blocked
+x 18
+y 77
 end
 arch dirtfloor
 x 19
@@ -7708,6 +8951,70 @@ endmsg
 x 19
 y 55
 end
+arch blocked
+x 19
+y 64
+end
+arch greenmarble
+x 19
+y 65
+end
+arch stwall_3_1
+x 19
+y 65
+end
+arch graymarble
+x 19
+y 66
+end
+arch greenmarble
+x 19
+y 67
+end
+arch graymarble
+x 19
+y 68
+end
+arch greenmarble
+x 19
+y 69
+end
+arch graymarble
+x 19
+y 70
+end
+arch greenmarble
+x 19
+y 71
+end
+arch graymarble
+x 19
+y 72
+end
+arch greenmarble
+x 19
+y 73
+end
+arch graymarble
+x 19
+y 74
+end
+arch greenmarble
+x 19
+y 75
+end
+arch graymarble
+x 19
+y 76
+end
+arch stwall_3_3
+x 19
+y 76
+end
+arch blocked
+x 19
+y 77
+end
 arch dirtfloor
 x 20
 end
@@ -8182,6 +9489,70 @@ endmsg
 x 20
 y 55
 end
+arch blocked
+x 20
+y 64
+end
+arch graymarble
+x 20
+y 65
+end
+arch stwall_3_1
+x 20
+y 65
+end
+arch greenmarble
+x 20
+y 66
+end
+arch graymarble
+x 20
+y 67
+end
+arch greenmarble
+x 20
+y 68
+end
+arch graymarble
+x 20
+y 69
+end
+arch greenmarble
+x 20
+y 70
+end
+arch graymarble
+x 20
+y 71
+end
+arch greenmarble
+x 20
+y 72
+end
+arch graymarble
+x 20
+y 73
+end
+arch greenmarble
+x 20
+y 74
+end
+arch graymarble
+x 20
+y 75
+end
+arch greenmarble
+x 20
+y 76
+end
+arch stwall_3_3
+x 20
+y 76
+end
+arch blocked
+x 20
+y 77
+end
 arch dirtfloor
 x 21
 end
@@ -8648,6 +10019,89 @@ endmsg
 x 21
 y 55
 end
+arch blocked
+x 21
+y 64
+end
+arch greenmarble
+x 21
+y 65
+end
+arch stwall_3_1
+x 21
+y 65
+end
+arch graymarble
+x 21
+y 66
+end
+arch greenmarble
+x 21
+y 67
+end
+arch sarcophagus_container2
+x 21
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 21
+y 68
+end
+arch greenmarble
+x 21
+y 69
+end
+arch graymarble
+x 21
+y 70
+end
+arch sarcophagus_container2
+x 21
+y 70
+end
+arch greenmarble
+x 21
+y 71
+end
+arch graymarble
+x 21
+y 72
+end
+arch greenmarble
+x 21
+y 73
+end
+arch sarcophagus_container2
+x 21
+y 73
+end
+arch graymarble
+x 21
+y 74
+end
+arch greenmarble
+x 21
+y 75
+end
+arch graymarble
+x 21
+y 76
+end
+arch stwall_3_3
+x 21
+y 76
+end
+arch blocked
+x 21
+y 77
+end
 arch dirtfloor
 x 22
 end
@@ -9112,6 +10566,70 @@ endmsg
 x 22
 y 55
 end
+arch blocked
+x 22
+y 64
+end
+arch graymarble
+x 22
+y 65
+end
+arch stwall_3_1
+x 22
+y 65
+end
+arch greenmarble
+x 22
+y 66
+end
+arch graymarble
+x 22
+y 67
+end
+arch greenmarble
+x 22
+y 68
+end
+arch graymarble
+x 22
+y 69
+end
+arch greenmarble
+x 22
+y 70
+end
+arch graymarble
+x 22
+y 71
+end
+arch greenmarble
+x 22
+y 72
+end
+arch graymarble
+x 22
+y 73
+end
+arch greenmarble
+x 22
+y 74
+end
+arch graymarble
+x 22
+y 75
+end
+arch greenmarble
+x 22
+y 76
+end
+arch stwall_3_3
+x 22
+y 76
+end
+arch blocked
+x 22
+y 77
+end
 arch dirtfloor
 x 23
 end
@@ -9480,6 +10998,70 @@ endmsg
 x 23
 y 55
 end
+arch blocked
+x 23
+y 64
+end
+arch greenmarble
+x 23
+y 65
+end
+arch stwall_3_1
+x 23
+y 65
+end
+arch graymarble
+x 23
+y 66
+end
+arch greenmarble
+x 23
+y 67
+end
+arch graymarble
+x 23
+y 68
+end
+arch greenmarble
+x 23
+y 69
+end
+arch graymarble
+x 23
+y 70
+end
+arch greenmarble
+x 23
+y 71
+end
+arch graymarble
+x 23
+y 72
+end
+arch greenmarble
+x 23
+y 73
+end
+arch graymarble
+x 23
+y 74
+end
+arch greenmarble
+x 23
+y 75
+end
+arch graymarble
+x 23
+y 76
+end
+arch stwall_3_3
+x 23
+y 76
+end
+arch blocked
+x 23
+y 77
+end
 arch dirtfloor
 x 24
 end
@@ -9845,6 +11427,89 @@ endmsg
 x 24
 y 55
 end
+arch blocked
+x 24
+y 64
+end
+arch graymarble
+x 24
+y 65
+end
+arch stwall_3_1
+x 24
+y 65
+end
+arch greenmarble
+x 24
+y 66
+end
+arch graymarble
+x 24
+y 67
+end
+arch sarcophagus_container2
+x 24
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch greenmarble
+x 24
+y 68
+end
+arch graymarble
+x 24
+y 69
+end
+arch greenmarble
+x 24
+y 70
+end
+arch sarcophagus_container2
+x 24
+y 70
+end
+arch graymarble
+x 24
+y 71
+end
+arch greenmarble
+x 24
+y 72
+end
+arch graymarble
+x 24
+y 73
+end
+arch sarcophagus_container2
+x 24
+y 73
+end
+arch greenmarble
+x 24
+y 74
+end
+arch graymarble
+x 24
+y 75
+end
+arch greenmarble
+x 24
+y 76
+end
+arch stwall_3_3
+x 24
+y 76
+end
+arch blocked
+x 24
+y 77
+end
 arch dirtfloor
 x 25
 end
@@ -10207,6 +11872,70 @@ msg
 endmsg
 x 25
 y 55
+end
+arch blocked
+x 25
+y 64
+end
+arch greenmarble
+x 25
+y 65
+end
+arch stwall_3_1
+x 25
+y 65
+end
+arch graymarble
+x 25
+y 66
+end
+arch greenmarble
+x 25
+y 67
+end
+arch graymarble
+x 25
+y 68
+end
+arch greenmarble
+x 25
+y 69
+end
+arch graymarble
+x 25
+y 70
+end
+arch greenmarble
+x 25
+y 71
+end
+arch graymarble
+x 25
+y 72
+end
+arch greenmarble
+x 25
+y 73
+end
+arch graymarble
+x 25
+y 74
+end
+arch greenmarble
+x 25
+y 75
+end
+arch graymarble
+x 25
+y 76
+end
+arch stwall_3_3
+x 25
+y 76
+end
+arch blocked
+x 25
+y 77
 end
 arch dirtfloor
 x 26
@@ -10689,6 +12418,74 @@ msg
 endmsg
 x 26
 y 55
+end
+arch blocked
+x 26
+y 63
+end
+arch blocked
+x 26
+y 64
+end
+arch graymarble
+x 26
+y 65
+end
+arch stwall_3_1
+x 26
+y 65
+end
+arch greenmarble
+x 26
+y 66
+end
+arch graymarble
+x 26
+y 67
+end
+arch greenmarble
+x 26
+y 68
+end
+arch graymarble
+x 26
+y 69
+end
+arch greenmarble
+x 26
+y 70
+end
+arch graymarble
+x 26
+y 71
+end
+arch greenmarble
+x 26
+y 72
+end
+arch graymarble
+x 26
+y 73
+end
+arch greenmarble
+x 26
+y 74
+end
+arch graymarble
+x 26
+y 75
+end
+arch greenmarble
+x 26
+y 76
+end
+arch stwall_3_3
+x 26
+y 76
+end
+arch blocked
+x 26
+y 77
 end
 arch dirtfloor
 x 27
@@ -11163,6 +12960,104 @@ endmsg
 x 27
 y 55
 end
+arch blocked
+x 27
+y 63
+end
+arch graymarble
+x 27
+y 64
+end
+arch stwall_4
+x 27
+y 64
+end
+arch greenmarble
+x 27
+y 65
+end
+arch stwall_2_2_4
+x 27
+y 65
+end
+arch graymarble
+x 27
+y 66
+end
+arch greenmarble
+x 27
+y 67
+end
+arch sarcophagus_container2
+x 27
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 27
+y 68
+end
+arch greenmarble
+x 27
+y 69
+end
+arch graymarble
+x 27
+y 70
+end
+arch sarcophagus_container2
+x 27
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch greenmarble
+x 27
+y 71
+end
+arch graymarble
+x 27
+y 72
+end
+arch greenmarble
+x 27
+y 73
+end
+arch sarcophagus_container2
+x 27
+y 73
+end
+arch graymarble
+x 27
+y 74
+end
+arch greenmarble
+x 27
+y 75
+end
+arch graymarble
+x 27
+y 76
+end
+arch stwall_3_3
+x 27
+y 76
+end
+arch blocked
+x 27
+y 77
+end
 arch dirtfloor
 x 28
 end
@@ -11619,6 +13514,78 @@ msg
 endmsg
 x 28
 y 55
+end
+arch blocked
+x 28
+y 63
+end
+arch greenmarble
+x 28
+y 64
+end
+arch stwall_3_1
+x 28
+y 64
+end
+arch graymarble
+x 28
+y 65
+end
+arch altar_devourers
+x 28
+y 65
+end
+arch greenmarble
+x 28
+y 66
+end
+arch graymarble
+x 28
+y 67
+end
+arch greenmarble
+x 28
+y 68
+end
+arch graymarble
+x 28
+y 69
+end
+arch greenmarble
+x 28
+y 70
+end
+arch graymarble
+x 28
+y 71
+end
+arch greenmarble
+x 28
+y 72
+end
+arch graymarble
+x 28
+y 73
+end
+arch greenmarble
+x 28
+y 74
+end
+arch graymarble
+x 28
+y 75
+end
+arch greenmarble
+x 28
+y 76
+end
+arch stwall_3_3
+x 28
+y 76
+end
+arch blocked
+x 28
+y 77
 end
 arch dirtfloor
 x 29
@@ -12122,6 +14089,78 @@ endmsg
 x 29
 y 55
 end
+arch blocked
+x 29
+y 63
+end
+arch graymarble
+x 29
+y 64
+end
+arch stwall_4
+x 29
+y 64
+end
+arch greenmarble
+x 29
+y 65
+end
+arch stwall_2_2_1
+x 29
+y 65
+end
+arch graymarble
+x 29
+y 66
+end
+arch greenmarble
+x 29
+y 67
+end
+arch graymarble
+x 29
+y 68
+end
+arch greenmarble
+x 29
+y 69
+end
+arch graymarble
+x 29
+y 70
+end
+arch greenmarble
+x 29
+y 71
+end
+arch graymarble
+x 29
+y 72
+end
+arch greenmarble
+x 29
+y 73
+end
+arch graymarble
+x 29
+y 74
+end
+arch greenmarble
+x 29
+y 75
+end
+arch graymarble
+x 29
+y 76
+end
+arch stwall_3_3
+x 29
+y 76
+end
+arch blocked
+x 29
+y 77
+end
 arch dirtfloor
 x 30
 end
@@ -12546,6 +14585,93 @@ msg
 endmsg
 x 30
 y 55
+end
+arch blocked
+x 30
+y 63
+end
+arch blocked
+x 30
+y 64
+end
+arch graymarble
+x 30
+y 65
+end
+arch stwall_3_1
+x 30
+y 65
+end
+arch greenmarble
+x 30
+y 66
+end
+arch graymarble
+x 30
+y 67
+end
+arch sarcophagus_container2
+x 30
+y 67
+end
+arch greenmarble
+x 30
+y 68
+end
+arch graymarble
+x 30
+y 69
+end
+arch greenmarble
+x 30
+y 70
+end
+arch sarcophagus_container2
+x 30
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 30
+y 71
+end
+arch greenmarble
+x 30
+y 72
+end
+arch graymarble
+x 30
+y 73
+end
+arch sarcophagus_container2
+x 30
+y 73
+end
+arch greenmarble
+x 30
+y 74
+end
+arch graymarble
+x 30
+y 75
+end
+arch greenmarble
+x 30
+y 76
+end
+arch stwall_3_3
+x 30
+y 76
+end
+arch blocked
+x 30
+y 77
 end
 arch blocked
 name nothing
@@ -13046,6 +15172,80 @@ x 31
 y 55
 end
 arch blocked
+x 31
+y 63
+end
+arch blocked
+x 31
+y 64
+end
+arch greenmarble
+x 31
+y 65
+end
+arch stwall_3_1
+x 31
+y 65
+end
+arch graymarble
+x 31
+y 66
+end
+arch greenmarble
+x 31
+y 67
+end
+arch graymarble
+x 31
+y 68
+end
+arch greenmarble
+x 31
+y 69
+end
+arch graymarble
+x 31
+y 70
+end
+arch greenmarble
+x 31
+y 71
+end
+arch graymarble
+x 31
+y 72
+end
+arch greenmarble
+x 31
+y 73
+end
+arch graymarble
+x 31
+y 74
+end
+arch pedestal
+slaying undead
+x 31
+y 75
+connected 200222
+end
+arch greenmarble
+x 31
+y 75
+end
+arch graymarble
+x 31
+y 76
+end
+arch stwall_3_3
+x 31
+y 76
+end
+arch blocked
+x 31
+y 77
+end
+arch blocked
 name nothing
 name_pl nothing
 x 32
@@ -13508,6 +15708,120 @@ msg
 endmsg
 x 32
 y 55
+end
+arch blocked
+x 32
+y 63
+end
+arch greenmarble
+x 32
+y 64
+end
+arch stwall_4
+x 32
+y 64
+end
+arch graymarble
+x 32
+y 65
+end
+arch stwall_2_2_4
+x 32
+y 65
+end
+arch greenmarble
+x 32
+y 66
+end
+arch graymarble
+x 32
+y 67
+end
+arch greenmarble
+x 32
+y 68
+end
+arch graymarble
+x 32
+y 69
+end
+arch greenmarble
+x 32
+y 70
+end
+arch graymarble
+x 32
+y 71
+end
+arch greenmarble
+x 32
+y 72
+end
+arch dungeon_magic
+x 32
+y 73
+end
+arch graymarble
+x 32
+y 73
+end
+arch stwall_2_2_2
+x 32
+y 73
+end
+arch dungeon_magic
+x 32
+y 74
+end
+arch greenmarble
+x 32
+y 74
+end
+arch stwall_2_2_1
+x 32
+y 74
+end
+arch dungeon_magic
+x 32
+y 75
+end
+arch graymarble
+x 32
+y 75
+end
+arch rune_death
+Cha 1
+hp 20000
+x 32
+y 75
+level 100
+invisible 0
+end
+arch igate_closed_2
+x 32
+y 75
+speed 0.500000
+connected 200222
+end
+arch dungeon_magic
+x 32
+y 76
+end
+arch greenmarble
+x 32
+y 76
+end
+arch stwall_3_3
+x 32
+y 76
+end
+arch dungeon_magic
+x 32
+y 77
+end
+arch blocked
+x 32
+y 77
 end
 arch blocked
 name nothing
@@ -13973,6 +16287,155 @@ x 33
 y 55
 end
 arch blocked
+x 33
+y 63
+end
+arch graymarble
+x 33
+y 64
+end
+arch stwall_3_1
+x 33
+y 64
+end
+arch greenmarble
+x 33
+y 65
+end
+arch stair_down_3
+slaying mlabhellcryptA
+hp 33
+sp 65
+x 33
+y 65
+end
+arch altar_devourers
+x 33
+y 65
+end
+arch graymarble
+x 33
+y 66
+end
+arch greenmarble
+x 33
+y 67
+end
+arch sarcophagus_container2
+x 33
+y 67
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch graymarble
+x 33
+y 68
+end
+arch greenmarble
+x 33
+y 69
+end
+arch graymarble
+x 33
+y 70
+end
+arch sarcophagus_container2
+x 33
+y 70
+carrying 11000
+arch random_wealth
+end
+arch random_wealth
+end
+arch bones5
+end
+end
+arch greenmarble
+x 33
+y 71
+end
+arch graymarble
+x 33
+y 72
+end
+arch dungeon_magic
+x 33
+y 73
+end
+arch greenmarble
+x 33
+y 73
+end
+arch stwall_3_3
+x 33
+y 73
+end
+arch dungeon_magic
+x 33
+y 74
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 33
+y 74
+end
+arch stwall_3_1
+x 33
+y 74
+end
+arch dungeon_magic
+x 33
+y 75
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 33
+y 75
+end
+arch rune_death
+Cha 1
+hp 20000
+x 33
+y 75
+level 100
+invisible 0
+end
+arch igate_closed_2
+x 33
+y 75
+speed 0.500000
+connected 200222
+end
+arch dungeon_magic
+x 33
+y 76
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 33
+y 76
+end
+arch stwall_3_3
+x 33
+y 76
+end
+arch dungeon_magic
+x 33
+y 77
+end
+arch blocked
+x 33
+y 77
+end
+arch blocked
 name nothing
 name_pl nothing
 x 34
@@ -14401,6 +16864,126 @@ x 34
 y 55
 end
 arch blocked
+x 34
+y 63
+end
+arch greenmarble
+x 34
+y 64
+end
+arch stwall_4
+x 34
+y 64
+end
+arch graymarble
+x 34
+y 65
+end
+arch stwall_2_2_1
+x 34
+y 65
+end
+arch greenmarble
+x 34
+y 66
+end
+arch graymarble
+x 34
+y 67
+end
+arch greenmarble
+x 34
+y 68
+end
+arch graymarble
+x 34
+y 69
+end
+arch greenmarble
+x 34
+y 70
+end
+arch graymarble
+x 34
+y 71
+end
+arch greenmarble
+x 34
+y 72
+end
+arch dungeon_magic
+x 34
+y 73
+end
+arch graymarble
+x 34
+y 73
+end
+arch stwall_3_3
+x 34
+y 73
+end
+arch dungeon_magic
+x 34
+y 74
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 34
+y 74
+end
+arch stwall_3_1
+x 34
+y 74
+end
+arch dungeon_magic
+x 34
+y 75
+end
+arch pedestal
+slaying undead
+x 34
+y 75
+connected 200222
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 34
+y 75
+end
+arch rune_death
+Cha 1
+hp 20000
+x 34
+y 75
+level 100
+invisible 0
+end
+arch dungeon_magic
+x 34
+y 76
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 34
+y 76
+end
+arch stwall_3_3
+x 34
+y 76
+end
+arch dungeon_magic
+x 34
+y 77
+end
+arch blocked
+x 34
+y 77
+end
+arch blocked
 name nothing
 name_pl nothing
 x 35
@@ -14806,6 +17389,140 @@ msg
 endmsg
 x 35
 y 55
+end
+arch blocked
+x 35
+y 63
+end
+arch blocked
+x 35
+y 64
+end
+arch greenmarble
+x 35
+y 65
+end
+arch slevel_3_2
+x 35
+y 65
+end
+arch stwall_3_1
+x 35
+y 65
+end
+arch graymarble
+x 35
+y 66
+end
+arch slevel_3_2
+x 35
+y 66
+end
+arch firepot
+x 35
+y 66
+end
+arch greenmarble
+x 35
+y 67
+end
+arch slevel_3_2
+x 35
+y 67
+end
+arch graymarble
+x 35
+y 68
+end
+arch slevel_3_2
+x 35
+y 68
+end
+arch greenmarble
+x 35
+y 69
+end
+arch slevel_3_2
+x 35
+y 69
+end
+arch graymarble
+x 35
+y 70
+end
+arch slevel_3_2
+x 35
+y 70
+end
+arch greenmarble
+x 35
+y 71
+end
+arch slevel_3_2
+x 35
+y 71
+end
+arch graymarble
+x 35
+y 72
+end
+arch slevel_3_2
+x 35
+y 72
+end
+arch firepot
+x 35
+y 72
+end
+arch greenmarble
+x 35
+y 73
+end
+arch slevel_3_2
+x 35
+y 73
+end
+arch stwall_3_3
+x 35
+y 73
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 35
+y 74
+end
+arch stwall_3_1
+x 35
+y 74
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 35
+y 75
+end
+arch rune_death
+Cha 1
+hp 20000
+x 35
+y 75
+level 100
+invisible 0
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 35
+y 76
+end
+arch stwall_3_3
+x 35
+y 76
+end
+arch blocked
+x 35
+y 77
 end
 arch dirtfloor
 x 36
@@ -15185,6 +17902,131 @@ endmsg
 x 36
 y 55
 end
+arch blocked
+x 36
+y 64
+end
+arch graymarble
+x 36
+y 65
+end
+arch stwall_3_1
+x 36
+y 65
+end
+arch greenmarble
+x 36
+y 66
+end
+arch firepot
+x 36
+y 66
+end
+arch graymarble
+x 36
+y 67
+end
+arch firepot
+x 36
+y 67
+end
+arch rune_restoration
+x 36
+y 68
+end
+arch greenmarble
+x 36
+y 68
+end
+arch altar_devourers
+x 36
+y 68
+end
+arch rune_restoration
+x 36
+y 69
+end
+arch graymarble
+x 36
+y 69
+end
+arch altar_devourers
+x 36
+y 69
+end
+arch rune_restoration
+x 36
+y 70
+end
+arch greenmarble
+x 36
+y 70
+end
+arch altar_devourers
+x 36
+y 70
+end
+arch graymarble
+x 36
+y 71
+end
+arch firepot
+x 36
+y 71
+end
+arch greenmarble
+x 36
+y 72
+end
+arch firepot
+x 36
+y 72
+end
+arch graymarble
+x 36
+y 73
+end
+arch stwall_3_3
+x 36
+y 73
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 36
+y 74
+end
+arch stwall_3_1
+x 36
+y 74
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 36
+y 75
+end
+arch stair3_gstone_up
+slaying mlabhellcryptC
+hp 36
+sp 75
+x 36
+y 75
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 36
+y 76
+end
+arch stwall_3_3
+x 36
+y 76
+end
+arch blocked
+x 36
+y 77
+end
 arch dirtfloor
 x 37
 end
@@ -15576,6 +18418,116 @@ x 37
 y 55
 end
 arch blocked
+x 37
+y 64
+end
+arch greenmarble
+x 37
+y 65
+end
+arch stwall_4
+x 37
+y 65
+end
+arch graymarble
+x 37
+y 66
+end
+arch stwall_3_2
+x 37
+y 66
+end
+arch greenmarble
+x 37
+y 67
+end
+arch stwall_3_2
+x 37
+y 67
+end
+arch graymarble
+x 37
+y 68
+end
+arch stwall_3_2
+x 37
+y 68
+end
+arch greenmarble
+x 37
+y 69
+end
+arch stwall_3_2
+x 37
+y 69
+end
+arch graymarble
+x 37
+y 70
+end
+arch stwall_3_2
+x 37
+y 70
+end
+arch greenmarble
+x 37
+y 71
+end
+arch stwall_3_2
+x 37
+y 71
+end
+arch graymarble
+x 37
+y 72
+end
+arch stwall_3_2
+x 37
+y 72
+end
+arch greenmarble
+x 37
+y 73
+end
+arch stwall_4
+x 37
+y 73
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 37
+y 74
+end
+arch stwall_4
+x 37
+y 74
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 37
+y 75
+end
+arch stwall_3_2
+x 37
+y 75
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 37
+y 76
+end
+arch stwall_4
+x 37
+y 76
+end
+arch blocked
+x 37
+y 77
+end
+arch blocked
 msg
 endmsg
 x 38
@@ -15909,6 +18861,62 @@ msg
 endmsg
 x 38
 y 55
+end
+arch blocked
+x 38
+y 64
+end
+arch blocked
+x 38
+y 65
+end
+arch blocked
+x 38
+y 66
+end
+arch blocked
+x 38
+y 67
+end
+arch blocked
+x 38
+y 68
+end
+arch blocked
+x 38
+y 69
+end
+arch blocked
+x 38
+y 70
+end
+arch blocked
+x 38
+y 71
+end
+arch blocked
+x 38
+y 72
+end
+arch blocked
+x 38
+y 73
+end
+arch blocked
+x 38
+y 74
+end
+arch blocked
+x 38
+y 75
+end
+arch blocked
+x 38
+y 76
+end
+arch blocked
+x 38
+y 77
 end
 arch blocked
 msg

@@ -68099,9 +68099,15 @@ arch fatman
 name Proprietor
 name_pl Proprietor
 msg
-@match *
+@match hi|hello
 Welcome to the dragon dock. Please
 show your pass.
+
+@match lord|Valdak
+Oh... that buisness... I'd not
+venture to that castle far enough to
+the west if I were you.
+
 endmsg
 x 48
 y 111
