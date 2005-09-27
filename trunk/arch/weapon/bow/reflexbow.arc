@@ -8,7 +8,7 @@ face reflexbow.111
 color_fg brown
 dam 23
 weight 6000
-value 5000
+value 25000
 sp 47
 no_strength 0
 editable 1024
@@ -18,6 +18,30 @@ client_type 151
 body_arm -2
 skill missile weapons
 end
+
+Object reflexbow_ivory
+name reflex bow
+race arrows
+type 14
+nrof 1
+material 16
+materialname ivory
+face reflexbow_bone.111
+color_fg brown
+dam 23
+weight 6000
+value 65000
+sp 47
+no_strength 0
+editable 1024
+attacktype 1
+name_pl reflex bows
+client_type 151
+body_arm -2
+skill missile weapons
+end
+
+
 
 Object reflexbow_bone
 name reflex bow
@@ -40,3 +64,4 @@ client_type 151
 body_arm -2
 skill missile weapons
 end
+
