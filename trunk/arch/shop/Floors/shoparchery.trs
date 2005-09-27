@@ -1,0 +1,22 @@
+treasureone shoparchery
+  list missile_weapons
+    chance 99
+    more
+  list shoparcheryonly
+    chance 1
+end
+#
+treasureone shoparcheryonly
+  arch reflexbow
+    magic 3
+    chance 30
+  more
+  arch handcrossbow
+    magic 3
+    chance 20
+  more
+  arch arrow
+    magic 3
+    chance 50
+    nrof 30
+end
