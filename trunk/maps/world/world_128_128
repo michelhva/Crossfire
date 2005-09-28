@@ -12,10 +12,10 @@ Email: gnu@foo.bar
 Date: Fri Feb 25 22:55:47 2005
 endmsg
 outdoor 1
-tile_path_1 world_128_127
-tile_path_2 world_129_128
-tile_path_3 world_128_129
-tile_path_4 world_127_128
+tile_path_1 /world/world_128_127
+tile_path_2 /world/world_129_128
+tile_path_3 /world/world_128_129
+tile_path_4 /world/world_127_128
 end
 arch deep_sea
 elevation -13283
@@ -7333,6 +7333,10 @@ x 28
 y 43
 elevation -3890
 end
+arch cave11
+x 28
+y 43
+end
 arch sea
 x 28
 y 44
@@ -9849,6 +9853,16 @@ x 38
 y 42
 elevation 3812
 end
+arch small_temple
+name hole
+name_pl snow cave
+slaying /whalingoutpost/misc/holeinice1
+face ihole.111
+hp 19
+sp 2
+x 38
+y 42
+end
 arch flagstone
 face snow.111
 x 38
@@ -9866,6 +9880,16 @@ face snow.111
 x 38
 y 45
 elevation 3812
+end
+arch small_temple
+name hole
+name_pl snow cave
+slaying /whalingoutpost/misc/holeinice1
+face ihole.111
+hp 18
+sp 47
+x 38
+y 45
 end
 arch s_mountain
 x 38
