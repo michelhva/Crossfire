@@ -3140,6 +3140,50 @@ arch stair_down_2
 x 9
 y 33
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 33
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 9
 y 34
@@ -3148,6 +3192,50 @@ arch stair_down_2
 x 9
 y 34
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 34
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 9
 y 35
@@ -4290,6 +4378,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -4358,6 +4450,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -4653,6 +4749,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -4721,6 +4821,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -5572,6 +5676,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -5640,6 +5748,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -5940,6 +6052,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -6008,6 +6124,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7080,6 +7200,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7148,6 +7272,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7580,6 +7708,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7648,6 +7780,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7746,12 +7882,60 @@ arch greenmarble
 x 23
 y 30
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 23
+y 30
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch greenmarble
 x 23
 y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7796,6 +7980,10 @@ y 32
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7858,6 +8046,10 @@ y 35
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7902,6 +8094,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -7943,6 +8139,50 @@ end
 arch greenmarble
 x 23
 y 37
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 23
+y 37
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 23
@@ -8110,6 +8350,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -8178,6 +8422,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -8520,6 +8768,50 @@ arch stair_up_2
 x 25
 y 12
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 25
+y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 25
 y 13
@@ -8527,6 +8819,50 @@ end
 arch stair_up_2
 x 25
 y 13
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 25
+y 13
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 25
@@ -8992,6 +9328,10 @@ y 46
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -9180,10 +9520,6 @@ arch greenmarble
 x 27
 y 10
 end
-arch table_2
-x 27
-y 10
-end
 arch greenmarble
 x 27
 y 11
@@ -9196,9 +9532,49 @@ arch greenmarble
 x 27
 y 12
 end
-arch chair_2.4
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
 x 27
 y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 27
@@ -9206,6 +9582,10 @@ y 13
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -9248,9 +9628,49 @@ arch greenmarble
 x 27
 y 14
 end
-arch chair_2.4
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
 x 27
 y 14
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 27
@@ -9261,10 +9681,6 @@ x 27
 y 15
 end
 arch greenmarble
-x 27
-y 16
-end
-arch table_2
 x 27
 y 16
 end
@@ -9395,6 +9811,10 @@ y 46
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -9980,7 +10400,31 @@ arch greenmarble
 x 29
 y 9
 end
+arch desk
+name Zorn's desk
+name_pl Zorn's desks
+slaying irritable_zorn_key
+container 100000
+Str 20
+x 29
+y 9
+arch claypipe
+name Zorn's pipe
+name_pl Zorn's pipes
+end
+arch pouch
+name Tobacco pouch
+name_pl Tobacco pouches
+race pipeweed
+end
+end
 arch greenmarble
+x 29
+y 10
+end
+arch chair_2.3
+name Desk chair
+name_pl Desk chairs
 x 29
 y 10
 end
@@ -10757,10 +11201,6 @@ arch greenmarble
 x 31
 y 10
 end
-arch table_2
-x 31
-y 10
-end
 arch greenmarble
 x 31
 y 11
@@ -10773,9 +11213,49 @@ arch greenmarble
 x 31
 y 12
 end
-arch chair_2.2
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
 x 31
 y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 31
@@ -10783,6 +11263,10 @@ y 13
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -10825,9 +11309,49 @@ arch greenmarble
 x 31
 y 14
 end
-arch chair_2.2
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
 x 31
 y 14
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 31
@@ -10838,10 +11362,6 @@ x 31
 y 15
 end
 arch greenmarble
-x 31
-y 16
-end
-arch table_2
 x 31
 y 16
 end
@@ -10972,6 +11492,10 @@ y 46
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -11374,6 +11898,10 @@ y 46
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -11582,6 +12110,50 @@ arch stair_up_4
 x 33
 y 12
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 33
+y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 33
 y 13
@@ -11589,6 +12161,50 @@ end
 arch stair_up_4
 x 33
 y 13
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 33
+y 13
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 33
@@ -11886,6 +12502,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -11954,6 +12574,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12270,6 +12894,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12338,6 +12966,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12436,12 +13068,60 @@ arch greenmarble
 x 35
 y 30
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 35
+y 30
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch greenmarble
 x 35
 y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12486,6 +13166,10 @@ y 32
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12548,6 +13232,10 @@ y 35
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12592,6 +13280,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12633,6 +13325,50 @@ end
 arch greenmarble
 x 35
 y 37
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 35
+y 37
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch greenmarble
 x 35
@@ -12800,6 +13536,10 @@ y 9
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -12868,6 +13608,10 @@ y 16
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -14248,6 +14992,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -14316,6 +15064,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -14616,6 +15368,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -14684,6 +15440,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -15530,6 +16290,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -15598,6 +16362,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -15898,6 +16666,10 @@ y 31
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -15966,6 +16738,10 @@ y 36
 end
 arch guard
 name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
 randomitems guard_h
 level 50
 exp 12000
@@ -17147,6 +17923,50 @@ arch stair_down_4
 x 49
 y 33
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 49
+y 33
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 49
 y 34
@@ -17154,6 +17974,50 @@ end
 arch stair_down_4
 x 49
 y 34
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+The guard stares ahead fearlessly ignoring all conversation.
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 49
+y 34
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 49
