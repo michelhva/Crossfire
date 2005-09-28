@@ -14461,6 +14461,20 @@ x 12
 y 40
 end
 arch guildmaster
+msg
+@match hi|hello
+I wonder what ever happened to the
+Marquis...
+
+@match marquis|Marquis
+Yes, there has been no word from him
+for some time. Dark clouds clutter
+they skys of his castle to the
+south...
+
+
+
+endmsg
 x 12
 y 40
 end
@@ -15552,6 +15566,17 @@ x 13
 y 45
 end
 arch sage
+msg
+@match *
+I'm too busy to answer your queries.
+
+@match marquis|Marquis
+Ah the Marquis! Yes I know him... or
+rather, knew him. Strange occurances
+have been manifest among his estate
+to the south...
+
+endmsg
 x 13
 y 45
 end
@@ -22514,9 +22539,17 @@ y 34
 end
 arch guildmaster
 msg
-@match *
+@match hi|hello
 Standing around, waiting for an
-audience with the king...
+audience with the king... normally I
+would have gone to the Marquis...
+but...
+
+@match marquis|Marquis
+The Marquis has been absent for quite
+some time...
+
+
 endmsg
 x 20
 y 34
@@ -37752,154 +37785,154 @@ y 87
 nrof 3
 carrying 75
 randomitems none
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
 arch note
 name O-W-N-E-D-!
 name_pl O-W-N-E-D-!
 msg
 You've been had! AHHAHAHAHAH!!!11111
 endmsg
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
 end
 end
 arch dungeon_magic
@@ -38171,15 +38204,12 @@ msg
 @match hi|hello
  We have many nice rooms.
 Please don't hurt me.
-
 @match dragon
 I fear them, and their lord
 Please don't hurt me.
-
 @match elf|lord|Valdak
 I know only that the elves know more.
 Please don't hurt me.
-
 endmsg
 x 34
 y 113
@@ -45715,10 +45745,8 @@ msg
 @match hi|hello
 A rest is good for the warrior
 spirit! Especially a rich one eheheh!
-
 @match elf|lord|Valdak
 You speak of Valdak?
-
 @match yes
 Well... he was once a good elf, but
 now he's said to be a dark elf, can't
@@ -45728,15 +45756,12 @@ they are, will steal your money
 pouch, your armour, and your
 daughter... all in the blink of en
 eye! Now it's time for me to rest.
-
 @match no
 Well I can't help you then. Resting
 time.
-
 @match dragon
 Dragons, you don't say! That's why I
 stay inside hehe!
-
 endmsg
 x 41
 y 109
@@ -125742,7 +125767,6 @@ msg
 @match *
 Jolly! It's good to be here, I know
 of know dangers! Jolly!
-
 endmsg
 x 96
 y 118
@@ -136333,22 +136357,16 @@ msg
 @match hi|hello
 Welcome and stay for awhile,
 replenish thy spirit and abilities.
-
 @match elf|lord|Valdak
 To the west... but the castle of the
 dark elf lord is gaurded in
 opposition by the military of this
 city... 
-
 @match dragon
 Dragons here, the spies and soldiers
 of the dark elf lord... do not meddle
 in their affairs, flee in terror
 instead...
-
-
-
-
 endmsg
 face wizard.151
 hp 100
