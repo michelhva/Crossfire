@@ -14465,15 +14465,11 @@ msg
 @match hi|hello
 I wonder what ever happened to the
 Marquis...
-
 @match marquis|Marquis
 Yes, there has been no word from him
 for some time. Dark clouds clutter
 they skys of his castle to the
 south...
-
-
-
 endmsg
 x 12
 y 40
@@ -15569,13 +15565,11 @@ arch sage
 msg
 @match *
 I'm too busy to answer your queries.
-
 @match marquis|Marquis
 Ah the Marquis! Yes I know him... or
 rather, knew him. Strange occurances
 have been manifest among his estate
 to the south...
-
 endmsg
 x 13
 y 45
@@ -22544,12 +22538,9 @@ Standing around, waiting for an
 audience with the king... normally I
 would have gone to the Marquis...
 but...
-
 @match marquis|Marquis
 The Marquis has been absent for quite
 some time...
-
-
 endmsg
 x 20
 y 34
@@ -37785,154 +37776,154 @@ y 87
 nrof 3
 carrying 75
 randomitems none
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_blades
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
+arch trap_needle
+end
 arch note
 name O-W-N-E-D-!
 name_pl O-W-N-E-D-!
 msg
 You've been had! AHHAHAHAHAH!!!11111
 endmsg
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
 end
 end
 arch dungeon_magic
@@ -123920,10 +123911,18 @@ face shop_empty.111
 x 95
 y 79
 end
+arch cwall_2_2_2
+x 95
+y 79
+end
 arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
+x 95
+y 80
+end
+arch cwall_2_1_1
 x 95
 y 80
 end
@@ -123934,7 +123933,11 @@ face shop_empty.111
 x 95
 y 81
 end
-arch cwall_2_2_2
+arch cwall_2_1_1
+x 95
+y 81
+end
+arch cwall_1_1
 x 95
 y 81
 end
@@ -125440,21 +125443,37 @@ face shop_empty.111
 x 96
 y 79
 end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch cwall_2_1_2
+x 96
+y 79
+end
+arch light2
 x 96
 y 80
 end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch marble
+x 96
+y 80
+end
+arch stair_down_3
+slaying cdcunderbigstre1
+hp 65
+sp 62
+x 96
+y 80
+end
+arch light2
 x 96
 y 81
 end
-arch cwall_2_2_3
+arch marble
+x 96
+y 81
+end
+arch stair_up_3
+slaying cdcscasino
+hp 1
+sp 13
 x 96
 y 81
 end
@@ -125465,7 +125484,11 @@ face shop_empty.111
 x 96
 y 82
 end
-arch cwall_2_2_4
+arch cwall_2_1_2
+x 96
+y 82
+end
+arch cwall_1_3
 x 96
 y 82
 end
@@ -126983,10 +127006,18 @@ face shop_empty.111
 x 97
 y 79
 end
+arch cwall_2_2_3
+x 97
+y 79
+end
 arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
+x 97
+y 80
+end
+arch cwall_2_1_1
 x 97
 y 80
 end
@@ -126997,10 +127028,18 @@ face shop_empty.111
 x 97
 y 81
 end
+arch cwall_2_1_1
+x 97
+y 81
+end
 arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
+x 97
+y 82
+end
+arch cwall_2_2_4
 x 97
 y 82
 end

@@ -93,7 +93,10 @@ end
 arch marble
 y 13
 end
-arch cwall_3_2
+arch cwall_2_1_1
+y 13
+end
+arch cwall_1_1
 y 13
 end
 arch marble
@@ -239,7 +242,10 @@ arch marble
 x 1
 y 13
 end
-arch cwall_2_2_3
+arch stair_down_3
+slaying citydeclouds2
+hp 96
+sp 81
 x 1
 y 13
 end
@@ -247,7 +253,11 @@ arch marble
 x 1
 y 14
 end
-arch cwall_3_1
+arch cwall_2_1_2
+x 1
+y 14
+end
+arch cwall_1_3
 x 1
 y 14
 end
