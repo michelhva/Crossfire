@@ -122,7 +122,10 @@ end
 arch cobblestones2
 x 1
 y 2
-unique 1
+end
+arch random_wealth
+x 1
+y 2
 end
 arch dungeon_magic
 x 1
@@ -195,11 +198,10 @@ arch marble
 x 1
 y 9
 end
-arch slotmachine2
+arch slotmachine1
 name KingMaker
 name_pl KingMaker
 slaying imperial
-face slotmachine1.111
 event_apply /python/casino/imperialslots.py
 event_apply_plugin Python
 food 0
@@ -262,12 +264,18 @@ end
 arch cobblestones2
 x 2
 y 1
-unique 1
+end
+arch random_wealth
+x 2
+y 1
 end
 arch cobblestones2
 x 2
 y 2
-unique 1
+end
+arch random_wealth
+x 2
+y 2
 end
 arch dungeon_magic
 x 2
@@ -336,11 +344,10 @@ face marble_blgr.111
 x 2
 y 9
 end
-arch slotmachine2
+arch slotmachine1
 name KingMaker
 name_pl KingMaker
 slaying imperial
-face slotmachine1.111
 event_apply /python/casino/imperialslots.py
 event_apply_plugin Python
 food 0
@@ -403,12 +410,18 @@ end
 arch cobblestones2
 x 3
 y 1
-unique 1
+end
+arch random_wealth
+x 3
+y 1
 end
 arch cobblestones2
 x 3
 y 2
-unique 1
+end
+arch random_wealth
+x 3
+y 2
 end
 arch dungeon_magic
 x 3
@@ -477,11 +490,10 @@ arch marble
 x 3
 y 9
 end
-arch slotmachine2
+arch slotmachine1
 name KingMaker
 name_pl KingMaker
 slaying imperial
-face slotmachine1.111
 event_apply /python/casino/imperialslots.py
 event_apply_plugin Python
 food 0
@@ -544,12 +556,18 @@ end
 arch cobblestones2
 x 4
 y 1
-unique 1
+end
+arch random_wealth
+x 4
+y 1
 end
 arch cobblestones2
 x 4
 y 2
-unique 1
+end
+arch random_wealth
+x 4
+y 2
 end
 arch dungeon_magic
 x 4
@@ -624,11 +642,10 @@ face marble_blgr.111
 x 4
 y 9
 end
-arch slotmachine2
+arch slotmachine1
 name KingMaker
 name_pl KingMaker
 slaying imperial
-face slotmachine1.111
 event_apply /python/casino/imperialslots.py
 event_apply_plugin Python
 food 0
@@ -691,12 +708,18 @@ end
 arch cobblestones2
 x 5
 y 1
-unique 1
+end
+arch random_wealth
+x 5
+y 1
 end
 arch cobblestones2
 x 5
 y 2
-unique 1
+end
+arch random_wealth
+x 5
+y 2
 end
 arch dungeon_magic
 x 5
@@ -804,12 +827,18 @@ end
 arch cobblestones2
 x 6
 y 1
-unique 1
+end
+arch random_wealth
+x 6
+y 1
 end
 arch cobblestones2
 x 6
 y 2
-unique 1
+end
+arch random_wealth
+x 6
+y 2
 end
 arch dungeon_magic
 x 6
@@ -920,17 +949,13 @@ arch cwall_2_2_1
 x 7
 y 1
 end
-arch creator
-other_arch gem
-hp 0
-x 7
-y 2
-connected 1
-end
 arch cobblestones2
 x 7
 y 2
-unique 1
+end
+arch random_wealth
+x 7
+y 2
 end
 arch dungeon_magic
 x 7
