@@ -94134,10 +94134,6 @@ arch woodfloor
 x 63
 y 55
 end
-arch swall_2_2_2
-x 63
-y 55
-end
 arch wall_1_1
 x 63
 y 55
@@ -96244,156 +96240,171 @@ x 64
 y 54
 unique 1
 end
+arch light1
+x 64
+y 55
+end
 arch dungeon_magic
 x 64
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 64
 y 55
 end
-arch swall_2_1_2
+arch slevel_2_2_2
 x 64
 y 55
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 56
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 56
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 57
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 57
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 58
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 58
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 59
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 59
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 60
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 60
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 61
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 61
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 62
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 62
-end
-arch blocked
-name nothing
-name_pl nothing
-x 64
-y 63
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
-x 64
-y 63
 end
 arch cwall_2_2_2
 x 64
+y 55
+end
+arch light1
+x 64
+y 56
+end
+arch marble
+x 64
+y 56
+end
+arch slevel_3_2
+x 64
+y 56
+end
+arch cwall_2_1_1
+x 64
+y 56
+end
+arch light1
+x 64
+y 57
+end
+arch marble
+x 64
+y 57
+end
+arch slevel_3_2
+x 64
+y 57
+end
+arch cwall_2_1_1
+x 64
+y 57
+end
+arch light1
+x 64
+y 58
+end
+arch marble
+x 64
+y 58
+end
+arch slevel_3_2
+x 64
+y 58
+end
+arch cwall_2_1_1
+x 64
+y 58
+end
+arch light1
+x 64
+y 59
+end
+arch marble
+x 64
+y 59
+end
+arch slevel_3_2
+x 64
+y 59
+end
+arch cwall_2_1_1
+x 64
+y 59
+end
+arch light1
+x 64
+y 60
+end
+arch marble
+x 64
+y 60
+end
+arch slevel_3_2
+x 64
+y 60
+end
+arch cwall_2_1_1
+x 64
+y 60
+end
+arch light1
+x 64
+y 61
+end
+arch marble
+x 64
+y 61
+end
+arch slevel_3_2
+x 64
+y 61
+end
+arch cwall_2_1_1
+x 64
+y 61
+end
+arch light1
+x 64
+y 62
+end
+arch marble
+x 64
+y 62
+end
+arch slevel_3_2
+x 64
+y 62
+end
+arch cwall_2_1_1
+x 64
+y 62
+end
+arch light1
+x 64
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 64
+y 63
+end
+arch slevel_3_2
+x 64
+y 63
+end
+arch cwall_2_1_1
+x 64
+y 63
+end
+arch cwall_1_1
+x 64
+y 63
+end
+arch light1
 x 64
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 64
+y 64
+end
+arch marble
+x 64
+y 64
+end
+arch slevel_2_2_1
 x 64
 y 64
 end
@@ -98286,160 +98297,114 @@ x 65
 y 54
 unique 1
 end
+arch light1
+x 65
+y 55
+end
 arch dungeon_magic
 x 65
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 65
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 65
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_2_1_2
 x 65
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 65
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch stair_up_3
+slaying citydeclouds2
+hp 96
+sp 80
 x 65
-y 63
+y 62
 end
-arch cwall_2_2_3
+arch light2
 x 65
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 65
-y 64
-no_pass 0
-blocksview 0
+y 63
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light1
 x 65
 y 64
 end
-arch cwall_2_2_4
+arch dungeon_magic
+x 65
+y 64
+end
+arch marble
+x 65
+y 64
+end
+arch slevel_3_1
+x 65
+y 64
+end
+arch dwall_win2
 x 65
 y 64
 end
@@ -100315,152 +100280,107 @@ x 66
 y 54
 unique 1
 end
+arch light1
+x 66
+y 55
+end
 arch dungeon_magic
 x 66
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 66
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 66
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_2_1_2
 x 66
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 66
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 66
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 66
+y 63
+end
+arch light1
 x 66
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 66
+y 64
+end
+arch marble
+x 66
+y 64
+end
+arch slevel_3_1
+x 66
+y 64
+end
+arch dwall_win2
 x 66
 y 64
 end
@@ -102363,152 +102283,107 @@ x 67
 y 54
 unique 1
 end
+arch light1
+x 67
+y 55
+end
 arch dungeon_magic
 x 67
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 67
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 67
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_2_1_2
 x 67
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 67
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 67
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 67
+y 63
+end
+arch light1
 x 67
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 67
+y 64
+end
+arch marble
+x 67
+y 64
+end
+arch slevel_3_1
+x 67
+y 64
+end
+arch dwall_win2
 x 67
 y 64
 end
@@ -104383,156 +104258,107 @@ x 68
 y 54
 unique 1
 end
+arch light1
+x 68
+y 55
+end
 arch dungeon_magic
 x 68
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 68
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 68
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_2_1_2
 x 68
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 61
 end
-arch drake
+arch marble
 x 68
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
-x 68
-y 62
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 68
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 68
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 68
+y 63
+end
+arch light1
 x 68
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 68
+y 64
+end
+arch marble
+x 68
+y 64
+end
+arch slevel_3_1
+x 68
+y 64
+end
+arch dwall_win2
 x 68
 y 64
 end
@@ -106390,152 +106216,107 @@ x 69
 y 54
 unique 1
 end
+arch light1
+x 69
+y 55
+end
 arch dungeon_magic
 x 69
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 69
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 69
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_2_1_2
 x 69
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 69
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 69
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 69
+y 63
+end
+arch light1
 x 69
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 69
+y 64
+end
+arch marble
+x 69
+y 64
+end
+arch slevel_3_1
+x 69
+y 64
+end
+arch dwall_win2
 x 69
 y 64
 end
@@ -108482,152 +108263,107 @@ x 70
 y 54
 unique 1
 end
+arch light1
+x 70
+y 55
+end
 arch dungeon_magic
 x 70
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 70
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 70
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_1_3
 x 70
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 57
-no_pass 0
-blocksview 0
+y 56
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 70
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 70
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 70
+y 63
+end
+arch light1
 x 70
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 70
+y 64
+end
+arch marble
+x 70
+y 64
+end
+arch slevel_3_1
+x 70
+y 64
+end
+arch dwall_win2
 x 70
 y 64
 end
@@ -110639,6 +110375,11 @@ x 71
 y 53
 unique 1
 end
+arch pedestal_trigger
+x 71
+y 54
+connected 836719
+end
 arch dungeon_magic
 x 71
 y 54
@@ -110650,160 +110391,113 @@ x 71
 y 54
 unique 1
 end
+arch light1
+x 71
+y 55
+end
 arch dungeon_magic
 x 71
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 71
 y 55
 end
-arch swall_2_1_2
+arch slevel_3_3
 x 71
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch mdoor_closed_2
 x 71
-y 56
-no_pass 0
-blocksview 0
+y 55
+connected 836719
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch pedestal_trigger
+x 71
+y 56
+connected 836719
+end
+arch marble
+x 71
+y 56
+end
+arch light2
 x 71
 y 57
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch marble
 x 71
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
-x 71
-y 58
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 71
-y 59
-no_pass 0
-blocksview 0
+y 58
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 71
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 71
-y 61
-no_pass 0
-blocksview 0
+y 60
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 71
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 71
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light2
 x 71
 y 63
 end
-arch cwall_2_2_2
+arch marble
 x 71
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
-x 71
-y 64
-no_pass 0
-blocksview 0
-end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light1
 x 71
 y 64
 end
-arch cwall_2_2_1
+arch dungeon_magic
+x 71
+y 64
+end
+arch marble
+x 71
+y 64
+end
+arch slevel_3_1
+x 71
+y 64
+end
+arch dwall_win2
 x 71
 y 64
 end
@@ -112770,156 +112464,171 @@ x 72
 y 54
 unique 1
 end
+arch light1
+x 72
+y 55
+end
 arch dungeon_magic
 x 72
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch marble
 x 72
 y 55
 end
-arch swall_2_1_2
+arch slevel_2_2_3
 x 72
 y 55
 end
-arch blocked
-name nothing
-name_pl nothing
+arch cwall_1_1
 x 72
-y 56
-no_pass 0
-blocksview 0
+y 55
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch light1
 x 72
 y 56
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 72
+y 56
+end
+arch slevel_3_4
+x 72
+y 56
+end
+arch cwall_2_1_1
+x 72
+y 56
+end
+arch light1
 x 72
 y 57
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch marble
 x 72
 y 57
 end
-arch blocked
-name nothing
-name_pl nothing
+arch slevel_3_4
 x 72
-y 58
-no_pass 0
-blocksview 0
+y 57
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch cwall_2_1_1
+x 72
+y 57
+end
+arch light1
 x 72
 y 58
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 72
+y 58
+end
+arch slevel_3_4
+x 72
+y 58
+end
+arch cwall_2_1_1
+x 72
+y 58
+end
+arch light1
 x 72
 y 59
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch marble
 x 72
 y 59
 end
-arch blocked
-name nothing
-name_pl nothing
+arch slevel_3_4
 x 72
-y 60
-no_pass 0
-blocksview 0
+y 59
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch cwall_2_1_1
+x 72
+y 59
+end
+arch light1
 x 72
 y 60
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 72
+y 60
+end
+arch slevel_3_4
+x 72
+y 60
+end
+arch cwall_2_1_1
+x 72
+y 60
+end
+arch light1
 x 72
 y 61
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch marble
 x 72
 y 61
 end
-arch blocked
-name nothing
-name_pl nothing
+arch slevel_3_4
 x 72
-y 62
-no_pass 0
-blocksview 0
+y 61
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch cwall_2_1_1
+x 72
+y 61
+end
+arch light1
 x 72
 y 62
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
 x 72
-y 63
-no_pass 0
-blocksview 0
+y 62
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch slevel_3_4
 x 72
-y 63
+y 62
 end
-arch cwall_2_2_3
+arch cwall_2_1_1
+x 72
+y 62
+end
+arch light1
 x 72
 y 63
 end
-arch blocked
-name nothing
-name_pl nothing
+arch marble
+x 72
+y 63
+end
+arch slevel_3_4
+x 72
+y 63
+end
+arch cwall_2_1_1
+x 72
+y 63
+end
+arch cwall_1_1
+x 72
+y 63
+end
+arch light1
 x 72
 y 64
-no_pass 0
-blocksview 0
 end
-arch evergreens
-name cloud
-name_pl cloud
-face fog.111
+arch dungeon_magic
+x 72
+y 64
+end
+arch marble
+x 72
+y 64
+end
+arch slevel_2_2_4
 x 72
 y 64
 end
@@ -114270,10 +113979,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 73
-y 55
-end
-arch swall_2_2_3
 x 73
 y 55
 end
@@ -178827,20 +178532,20 @@ x 142
 y 128
 level 54
 carrying 280100
+arch fire_dragon
+end
+arch cold_dragon
+end
+arch elec_dragon
+end
+arch faerie_dragon
+end
 arch key2
 name Czarthin's claw
 name_pl Czarthin's claws
 slaying cdcczarthinclaw1mystarea
 face dragon_claw.111
 no_steal 1
-end
-arch faerie_dragon
-end
-arch elec_dragon
-end
-arch cold_dragon
-end
-arch fire_dragon
 end
 end
 arch blocked
