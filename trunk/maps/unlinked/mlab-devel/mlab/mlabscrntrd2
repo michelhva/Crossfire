@@ -224,10 +224,6 @@ name_pl woodfloor
 x 1
 y 1
 end
-arch dragon
-x 1
-y 1
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -252,10 +248,6 @@ name_pl woodfloor
 x 1
 y 5
 end
-arch dragon
-x 1
-y 5
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -265,10 +257,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 1
-y 7
-end
-arch beholder
 x 1
 y 7
 end
@@ -293,10 +281,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 1
-y 11
-end
-arch elec_dragon
 x 1
 y 11
 end
@@ -345,10 +329,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 1
-y 19
-end
-arch dragon
 x 1
 y 19
 end
@@ -443,10 +423,6 @@ name_pl woodfloor
 x 2
 y 3
 end
-arch fire_dragon
-x 2
-y 3
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -483,10 +459,6 @@ name_pl woodfloor
 x 2
 y 9
 end
-arch fire_dragon
-x 2
-y 9
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -511,10 +483,6 @@ name_pl woodfloor
 x 2
 y 13
 end
-arch fire_dragon
-x 2
-y 13
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -524,10 +492,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 2
-y 15
-end
-arch panther
 x 2
 y 15
 end
@@ -546,10 +510,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 2
-y 18
-end
-arch dragon
 x 2
 y 18
 end
@@ -703,10 +663,6 @@ name_pl woodfloor
 x 3
 y 11
 end
-arch dragon
-x 3
-y 11
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -737,10 +693,6 @@ name_pl woodfloor
 x 3
 y 16
 end
-arch fire_dragon
-x 3
-y 16
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -756,10 +708,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 3
-y 19
-end
-arch elec_dragon
 x 3
 y 19
 end
@@ -831,10 +779,6 @@ name_pl woodfloor
 x 4
 y 2
 end
-arch dragon
-x 4
-y 2
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -874,10 +818,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 4
-y 9
-end
-arch elec_dragon
 x 4
 y 9
 end
@@ -947,10 +887,6 @@ name_pl woodfloor
 x 4
 y 20
 end
-arch beholder
-x 4
-y 20
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -992,10 +928,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 5
-y 3
-end
-arch fire_dragon
 x 5
 y 3
 end
@@ -1047,10 +979,6 @@ name_pl woodfloor
 x 5
 y 11
 end
-arch beholder
-x 5
-y 11
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1060,10 +988,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 5
-y 13
-end
-arch fire_dragon
 x 5
 y 13
 end
@@ -1091,10 +1015,6 @@ name_pl woodfloor
 x 5
 y 17
 end
-arch dragon
-x 5
-y 17
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1104,10 +1024,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 5
-y 19
-end
-arch dragon
 x 5
 y 19
 end
@@ -1146,10 +1062,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 6
-y 1
-end
-arch beholder
 x 6
 y 1
 end
@@ -1244,10 +1156,6 @@ name_pl woodfloor
 x 6
 y 15
 end
-arch elec_dragon
-x 6
-y 15
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1259,6 +1167,18 @@ name woodfloor
 name_pl woodfloor
 x 6
 y 17
+end
+arch magic_mouth
+msg
+You have a bad feeling about
+plundering that which is behind this
+door, you think about turning back
+and remeber that few are
+compassionate towards theives.
+
+endmsg
+x 6
+y 18
 end
 arch woodfloor2
 name woodfloor

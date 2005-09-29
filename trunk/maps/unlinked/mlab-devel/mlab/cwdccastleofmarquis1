@@ -6128,11 +6128,19 @@ arch marble
 x 15
 y 28
 end
+arch magic_mouth
+msg
+Sacrifice is demanded!..
+
+endmsg
+x 15
+y 29
+end
 arch button_trigger
 x 15
 y 29
-weight 3
-connected 325000
+weight 325000
+connected 3
 end
 arch dungeon_floor
 x 15
@@ -6616,8 +6624,8 @@ end
 arch button_trigger
 x 16
 y 29
-weight 3
-connected 325000
+weight 325000
+connected 3
 end
 arch dungeon_floor
 x 16
