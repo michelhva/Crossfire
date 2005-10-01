@@ -3036,6 +3036,50 @@ arch tile_white_floor
 x 9
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 9
 y 10
@@ -3123,6 +3167,50 @@ end
 arch tile_floor
 x 9
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 9
@@ -3585,6 +3673,50 @@ arch tile_white_floor
 x 10
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 10
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 10
 y 10
@@ -3672,6 +3804,50 @@ end
 arch tile_floor
 x 10
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 10
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 10
@@ -4135,6 +4311,50 @@ arch tile_floor
 x 11
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 11
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 11
 y 10
@@ -4328,7 +4548,8 @@ arch brush
 x 11
 y 51
 end
-arch hedge_1_4
+arch tree5
+name ornamental pine
 x 11
 y 51
 end
@@ -4431,6 +4652,50 @@ end
 arch tile_floor
 x 12
 y 9
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 12
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 12
@@ -4716,7 +4981,8 @@ arch brush
 x 12
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 12
 y 51
 end
@@ -4819,6 +5085,50 @@ end
 arch tile_white_floor
 x 13
 y 9
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 13
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 13
@@ -5144,886 +5454,878 @@ arch brush
 x 13
 y 51
 end
-arch hedge_2_1_2
-x 13
-y 51
-end
-arch sea
-name moat
-x 13
-y 52
-end
-arch sea
-name moat
-x 13
-y 53
-end
-arch sea
-name moat
-x 13
-y 54
-end
-arch brush
-x 13
-y 55
-end
-arch dungeon_magic
-x 13
-y 55
-end
-arch brush
-x 13
-y 56
-end
-arch earth
-name road
-x 13
-y 56
-end
-arch brush
-x 13
-y 57
-end
-arch earth
-name road
-x 13
-y 57
-end
-arch brush
-x 13
-y 58
-end
-arch brush
-x 14
-end
-arch brush
-x 14
-y 1
-end
-arch brush
-x 14
-y 2
-end
-arch brush
-x 14
-y 3
-end
-arch dungeon_magic
-x 14
-y 3
-end
-arch sea
-name moat
-x 14
-y 4
-end
-arch sea
-name moat
-x 14
-y 5
-end
-arch sea
-name moat
-x 14
-y 6
-end
-arch brush
-x 14
-y 7
-end
-arch cobblestones2
-x 14
-y 8
-end
-arch swall_1_4
-x 14
-y 8
-end
-arch tile_white_floor
-x 14
-y 9
-end
-arch tile_white_floor
-x 14
-y 10
-end
-arch tile_floor
-x 14
-y 11
-end
-arch tile_floor
-x 14
-y 12
-end
-arch tile_white_floor
-x 14
-y 13
-end
-arch tile_white_floor
-x 14
-y 14
-end
-arch tile_floor
-x 14
-y 15
-end
-arch tile_floor
-x 14
-y 16
-end
-arch tile_white_floor
-x 14
-y 17
-end
-arch tile_white_floor
-x 14
-y 18
-end
-arch tile_floor
-x 14
-y 19
-end
-arch tile_floor
-x 14
-y 20
-end
-arch tile_white_floor
-x 14
-y 21
-end
-arch tile_white_floor
-x 14
-y 22
-end
-arch tile_floor
-x 14
-y 23
-end
-arch tile_floor
-x 14
-y 24
-end
-arch tile_white_floor
-x 14
-y 25
-end
-arch tile_white_floor
-x 14
-y 26
-end
-arch tile_floor
-x 14
-y 27
-end
-arch tile_floor
-x 14
-y 28
-end
-arch tile_white_floor
-x 14
-y 29
-end
-arch tile_white_floor
-x 14
-y 30
-end
-arch tile_floor
-x 14
-y 31
-end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
-x 14
-y 31
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
-end
-arch tile_floor
-x 14
-y 32
-end
-arch cwall_1_3
-x 14
-y 32
-end
-arch tile_white_floor
-x 14
-y 33
-end
-arch tile_white_floor
-x 14
-y 34
-end
-arch tile_floor
-x 14
-y 35
-end
-arch cwall_1_3
-x 14
-y 35
-end
-arch tile_floor
-x 14
-y 36
-end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
-x 14
-y 36
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
-end
-arch tile_white_floor
-x 14
-y 37
-end
-arch tile_white_floor
-x 14
-y 38
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 38
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 14
-y 39
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 39
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 14
-y 40
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 40
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 14
-y 41
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 41
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 14
-y 42
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 42
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 14
-y 43
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 43
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 14
-y 44
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 44
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 14
-y 45
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 14
-y 45
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 14
-y 46
-end
-arch tile_floor
-x 14
-y 47
-end
-arch tile_floor
-x 14
-y 48
-end
-arch cobblestones2
-x 14
-y 49
-end
-arch swall_1_4
-x 14
-y 49
-end
-arch cobblestones2
-x 14
-y 50
-end
-arch swall_1_4
-x 14
-y 50
-end
-arch brush
-x 14
-y 51
-end
-arch hedge_1_3
-x 14
-y 51
-end
-arch sea
-name moat
-x 14
-y 52
-end
-arch sea
-name moat
-x 14
-y 53
-end
-arch sea
-name moat
-x 14
-y 54
-end
-arch brush
-x 14
-y 55
-end
-arch dungeon_magic
-x 14
-y 55
-end
-arch brush
-x 14
-y 56
-end
-arch earth
-name road
-x 14
-y 56
-end
-arch brush
-x 14
-y 57
-end
-arch earth
-name road
-x 14
-y 57
-end
-arch brush
-x 14
-y 58
-end
-arch brush
-x 15
-end
-arch brush
-x 15
-y 1
-end
-arch brush
-x 15
-y 2
-end
-arch brush
-x 15
-y 3
-end
-arch dungeon_magic
-x 15
-y 3
-end
-arch sea
-name moat
-x 15
-y 4
-end
-arch sea
-name moat
-x 15
-y 5
-end
-arch sea
-name moat
-x 15
-y 6
-end
-arch brush
-x 15
-y 7
-end
-arch cobblestones2
-x 15
-y 8
-end
-arch swall_2_1_2
-x 15
-y 8
-end
-arch tile_floor
-x 15
-y 9
-end
-arch tile_floor
-x 15
-y 10
-end
-arch tile_white_floor
-x 15
-y 11
-end
-arch tile_white_floor
-x 15
-y 12
-end
-arch tile_floor
-x 15
-y 13
-end
-arch tile_floor
-x 15
-y 14
-end
-arch tile_white_floor
-x 15
-y 15
-end
-arch tile_white_floor
-x 15
-y 16
-end
-arch tile_floor
-x 15
-y 17
-end
-arch tile_floor
-x 15
-y 18
-end
-arch tile_white_floor
-x 15
-y 19
-end
-arch tile_white_floor
-x 15
-y 20
-end
-arch tile_floor
-x 15
-y 21
-end
-arch tile_floor
-x 15
-y 22
-end
-arch tile_white_floor
-x 15
-y 23
-end
-arch tile_white_floor
-x 15
-y 24
-end
-arch tile_floor
-x 15
-y 25
-end
-arch tile_floor
-x 15
-y 26
-end
-arch tile_white_floor
-x 15
-y 27
-end
-arch tile_white_floor
-x 15
-y 28
-end
-arch tile_floor
-x 15
-y 29
-end
-arch tile_floor
-x 15
-y 30
-end
-arch tile_white_floor
-x 15
-y 31
-end
-arch tile_white_floor
-x 15
-y 32
-end
-arch tile_floor
-x 15
-y 33
-end
-arch tile_floor
-x 15
-y 34
-end
-arch tile_white_floor
-x 15
-y 35
-end
-arch tile_white_floor
-x 15
-y 36
-end
-arch tile_floor
-x 15
-y 37
-end
-arch tile_floor
-x 15
-y 38
-end
-arch brazier
-x 15
-y 38
-end
-arch tile_white_floor
-x 15
-y 39
-end
-arch tile_white_floor
-x 15
-y 40
-end
-arch brazier
-x 15
-y 40
-end
-arch tile_floor
-x 15
-y 41
-end
-arch tile_floor
-x 15
-y 42
-end
-arch tile_white_floor
-x 15
-y 43
-end
-arch brazier
-x 15
-y 43
-end
-arch tile_white_floor
-x 15
-y 44
-end
-arch tile_floor
-x 15
-y 45
-end
-arch brazier
-x 15
-y 45
-end
-arch tile_floor
-x 15
-y 46
-end
-arch tile_white_floor
-x 15
-y 47
-end
-arch tile_white_floor
-x 15
-y 48
-end
-arch cobblestones2
-x 15
-y 49
-end
-arch swall_2_1_2
-x 15
-y 49
-end
-arch cobblestones2
-x 15
-y 50
-end
-arch swall_2_1_2
-x 15
-y 50
-end
-arch brush
-x 15
-y 51
-end
 arch tree5
 name ornamental pine
+x 13
+y 51
+end
+arch sea
+name moat
+x 13
+y 52
+end
+arch sea
+name moat
+x 13
+y 53
+end
+arch sea
+name moat
+x 13
+y 54
+end
+arch brush
+x 13
+y 55
+end
+arch dungeon_magic
+x 13
+y 55
+end
+arch brush
+x 13
+y 56
+end
+arch earth
+name road
+x 13
+y 56
+end
+arch brush
+x 13
+y 57
+end
+arch earth
+name road
+x 13
+y 57
+end
+arch brush
+x 13
+y 58
+end
+arch brush
+x 14
+end
+arch brush
+x 14
+y 1
+end
+arch brush
+x 14
+y 2
+end
+arch brush
+x 14
+y 3
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch sea
+name moat
+x 14
+y 4
+end
+arch sea
+name moat
+x 14
+y 5
+end
+arch sea
+name moat
+x 14
+y 6
+end
+arch brush
+x 14
+y 7
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch swall_1_4
+x 14
+y 8
+end
+arch tile_white_floor
+x 14
+y 9
+end
+arch tile_white_floor
+x 14
+y 10
+end
+arch tile_floor
+x 14
+y 11
+end
+arch tile_floor
+x 14
+y 12
+end
+arch tile_white_floor
+x 14
+y 13
+end
+arch tile_white_floor
+x 14
+y 14
+end
+arch tile_floor
+x 14
+y 15
+end
+arch tile_floor
+x 14
+y 16
+end
+arch tile_white_floor
+x 14
+y 17
+end
+arch tile_white_floor
+x 14
+y 18
+end
+arch tile_floor
+x 14
+y 19
+end
+arch tile_floor
+x 14
+y 20
+end
+arch tile_white_floor
+x 14
+y 21
+end
+arch tile_white_floor
+x 14
+y 22
+end
+arch tile_floor
+x 14
+y 23
+end
+arch tile_floor
+x 14
+y 24
+end
+arch tile_white_floor
+x 14
+y 25
+end
+arch tile_white_floor
+x 14
+y 26
+end
+arch tile_floor
+x 14
+y 27
+end
+arch tile_floor
+x 14
+y 28
+end
+arch tile_white_floor
+x 14
+y 29
+end
+arch tile_white_floor
+x 14
+y 30
+end
+arch tile_floor
+x 14
+y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 14
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
+arch tile_floor
+x 14
+y 32
+end
+arch cwall_1_3
+x 14
+y 32
+end
+arch tile_white_floor
+x 14
+y 33
+end
+arch tile_white_floor
+x 14
+y 34
+end
+arch tile_floor
+x 14
+y 35
+end
+arch cwall_1_3
+x 14
+y 35
+end
+arch tile_floor
+x 14
+y 36
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 14
+y 36
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
+arch tile_white_floor
+x 14
+y 37
+end
+arch tile_white_floor
+x 14
+y 38
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 38
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 14
+y 39
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 39
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 14
+y 40
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 40
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 14
+y 41
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 41
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 14
+y 42
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 42
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 14
+y 43
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 43
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 14
+y 44
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 44
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 14
+y 45
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 14
+y 45
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 14
+y 46
+end
+arch tile_floor
+x 14
+y 47
+end
+arch tile_floor
+x 14
+y 48
+end
+arch cobblestones2
+x 14
+y 49
+end
+arch swall_1_4
+x 14
+y 49
+end
+arch cobblestones2
+x 14
+y 50
+end
+arch swall_1_4
+x 14
+y 50
+end
+arch brush
+x 14
+y 51
+end
+arch sea
+name moat
+x 14
+y 52
+end
+arch sea
+name moat
+x 14
+y 53
+end
+arch sea
+name moat
+x 14
+y 54
+end
+arch brush
+x 14
+y 55
+end
+arch dungeon_magic
+x 14
+y 55
+end
+arch brush
+x 14
+y 56
+end
+arch earth
+name road
+x 14
+y 56
+end
+arch brush
+x 14
+y 57
+end
+arch earth
+name road
+x 14
+y 57
+end
+arch brush
+x 14
+y 58
+end
+arch brush
+x 15
+end
+arch brush
+x 15
+y 1
+end
+arch brush
+x 15
+y 2
+end
+arch brush
+x 15
+y 3
+end
+arch dungeon_magic
+x 15
+y 3
+end
+arch sea
+name moat
+x 15
+y 4
+end
+arch sea
+name moat
+x 15
+y 5
+end
+arch sea
+name moat
+x 15
+y 6
+end
+arch brush
+x 15
+y 7
+end
+arch cobblestones2
+x 15
+y 8
+end
+arch swall_2_1_2
+x 15
+y 8
+end
+arch tile_floor
+x 15
+y 9
+end
+arch tile_floor
+x 15
+y 10
+end
+arch tile_white_floor
+x 15
+y 11
+end
+arch tile_white_floor
+x 15
+y 12
+end
+arch tile_floor
+x 15
+y 13
+end
+arch tile_floor
+x 15
+y 14
+end
+arch tile_white_floor
+x 15
+y 15
+end
+arch tile_white_floor
+x 15
+y 16
+end
+arch tile_floor
+x 15
+y 17
+end
+arch tile_floor
+x 15
+y 18
+end
+arch tile_white_floor
+x 15
+y 19
+end
+arch tile_white_floor
+x 15
+y 20
+end
+arch tile_floor
+x 15
+y 21
+end
+arch tile_floor
+x 15
+y 22
+end
+arch tile_white_floor
+x 15
+y 23
+end
+arch tile_white_floor
+x 15
+y 24
+end
+arch tile_floor
+x 15
+y 25
+end
+arch tile_floor
+x 15
+y 26
+end
+arch tile_white_floor
+x 15
+y 27
+end
+arch tile_white_floor
+x 15
+y 28
+end
+arch tile_floor
+x 15
+y 29
+end
+arch tile_floor
+x 15
+y 30
+end
+arch tile_white_floor
+x 15
+y 31
+end
+arch tile_white_floor
+x 15
+y 32
+end
+arch tile_floor
+x 15
+y 33
+end
+arch tile_floor
+x 15
+y 34
+end
+arch tile_white_floor
+x 15
+y 35
+end
+arch tile_white_floor
+x 15
+y 36
+end
+arch tile_floor
+x 15
+y 37
+end
+arch tile_floor
+x 15
+y 38
+end
+arch brazier
+x 15
+y 38
+end
+arch tile_white_floor
+x 15
+y 39
+end
+arch tile_white_floor
+x 15
+y 40
+end
+arch brazier
+x 15
+y 40
+end
+arch tile_floor
+x 15
+y 41
+end
+arch tile_floor
+x 15
+y 42
+end
+arch tile_white_floor
+x 15
+y 43
+end
+arch brazier
+x 15
+y 43
+end
+arch tile_white_floor
+x 15
+y 44
+end
+arch tile_floor
+x 15
+y 45
+end
+arch brazier
+x 15
+y 45
+end
+arch tile_floor
+x 15
+y 46
+end
+arch tile_white_floor
+x 15
+y 47
+end
+arch tile_white_floor
+x 15
+y 48
+end
+arch cobblestones2
+x 15
+y 49
+end
+arch swall_2_1_2
+x 15
+y 49
+end
+arch cobblestones2
+x 15
+y 50
+end
+arch swall_2_1_2
+x 15
+y 50
+end
+arch brush
 x 15
 y 51
 end
@@ -6511,10 +6813,6 @@ x 16
 y 50
 end
 arch brush
-x 16
-y 51
-end
-arch hedge_1_4
 x 16
 y 51
 end
@@ -6617,6 +6915,50 @@ end
 arch tile_white_floor
 x 17
 y 9
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 17
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 17
@@ -6942,7 +7284,8 @@ arch brush
 x 17
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 17
 y 51
 end
@@ -7045,6 +7388,50 @@ end
 arch tile_white_floor
 x 18
 y 9
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 18
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 18
@@ -7418,798 +7805,790 @@ arch brush
 x 18
 y 51
 end
-arch hedge_2_1_2
-x 18
-y 51
-end
-arch sea
-name moat
-x 18
-y 52
-end
-arch sea
-name moat
-x 18
-y 53
-end
-arch sea
-name moat
-x 18
-y 54
-end
-arch brush
-x 18
-y 55
-end
-arch dungeon_magic
-x 18
-y 55
-end
-arch brush
-x 18
-y 56
-end
-arch earth
-name road
-x 18
-y 56
-end
-arch brush
-x 18
-y 57
-end
-arch earth
-name road
-x 18
-y 57
-end
-arch brush
-x 18
-y 58
-end
-arch brush
-x 19
-end
-arch brush
-x 19
-y 1
-end
-arch brush
-x 19
-y 2
-end
-arch brush
-x 19
-y 3
-end
-arch dungeon_magic
-x 19
-y 3
-end
-arch sea
-name moat
-x 19
-y 4
-end
-arch sea
-name moat
-x 19
-y 5
-end
-arch sea
-name moat
-x 19
-y 6
-end
-arch brush
-x 19
-y 7
-end
-arch cobblestones2
-x 19
-y 8
-end
-arch swall_1_4
-x 19
-y 8
-end
-arch tile_floor
-x 19
-y 9
-end
-arch tile_floor
-x 19
-y 10
-end
-arch tile_white_floor
-x 19
-y 11
-end
-arch tile_white_floor
-x 19
-y 12
-end
-arch tile_floor
-x 19
-y 13
-end
-arch tile_floor
-x 19
-y 14
-end
-arch tile_white_floor
-x 19
-y 15
-end
-arch tile_white_floor
-x 19
-y 16
-end
-arch tile_floor
-x 19
-y 17
-end
-arch tile_floor
-x 19
-y 18
-end
-arch tile_white_floor
-x 19
-y 19
-end
-arch tile_white_floor
-x 19
-y 20
-end
-arch tile_floor
-x 19
-y 21
-end
-arch tile_floor
-x 19
-y 22
-end
-arch tile_white_floor
-x 19
-y 23
-end
-arch tile_white_floor
-x 19
-y 24
-end
-arch tile_floor
-x 19
-y 25
-end
-arch tile_floor
-x 19
-y 26
-end
-arch tile_white_floor
-x 19
-y 27
-end
-arch tile_white_floor
-x 19
-y 28
-end
-arch tile_floor
-x 19
-y 29
-end
-arch tile_floor
-x 19
-y 30
-end
-arch tile_white_floor
-x 19
-y 31
-end
-arch tile_white_floor
-x 19
-y 32
-end
-arch brazier
-x 19
-y 32
-end
-arch tile_floor
-x 19
-y 33
-end
-arch tile_floor
-x 19
-y 34
-end
-arch tile_white_floor
-x 19
-y 35
-end
-arch brazier
-x 19
-y 35
-end
-arch tile_white_floor
-x 19
-y 36
-end
-arch tile_floor
-x 19
-y 37
-end
-arch tile_floor
-x 19
-y 38
-end
-arch tile_white_floor
-x 19
-y 39
-end
-arch tile_white_floor
-x 19
-y 40
-end
-arch tile_floor
-x 19
-y 41
-end
-arch tile_floor
-x 19
-y 42
-end
-arch tile_white_floor
-x 19
-y 43
-end
-arch tile_white_floor
-x 19
-y 44
-end
-arch tile_floor
-x 19
-y 45
-end
-arch tile_floor
-x 19
-y 46
-end
-arch chair_1.2
-name Reading chair
-name_pl Reading chairs
-no_pick 1
-identified 1
-x 19
-y 46
-end
-arch tile_white_floor
-x 19
-y 47
-end
-arch tile_white_floor
-x 19
-y 48
-end
-arch cobblestones2
-x 19
-y 49
-end
-arch swall_1_4
-x 19
-y 49
-end
-arch cobblestones2
-x 19
-y 50
-end
-arch swall_1_4
-x 19
-y 50
-end
-arch brush
-x 19
-y 51
-end
-arch hedge_1_3
-x 19
-y 51
-end
-arch sea
-name moat
-x 19
-y 52
-end
-arch sea
-name moat
-x 19
-y 53
-end
-arch sea
-name moat
-x 19
-y 54
-end
-arch brush
-x 19
-y 55
-end
-arch dungeon_magic
-x 19
-y 55
-end
-arch brush
-x 19
-y 56
-end
-arch earth
-name road
-x 19
-y 56
-end
-arch brush
-x 19
-y 57
-end
-arch earth
-name road
-x 19
-y 57
-end
-arch brush
-x 19
-y 58
-end
-arch brush
-x 20
-end
-arch brush
-x 20
-y 1
-end
-arch brush
-x 20
-y 2
-end
-arch brush
-x 20
-y 3
-end
-arch dungeon_magic
-x 20
-y 3
-end
-arch sea
-name moat
-x 20
-y 4
-end
-arch sea
-name moat
-x 20
-y 5
-end
-arch sea
-name moat
-x 20
-y 6
-end
-arch brush
-x 20
-y 7
-end
-arch cobblestones2
-x 20
-y 8
-end
-arch swall_2_1_2
-x 20
-y 8
-end
-arch tile_floor
-x 20
-y 9
-end
-arch tile_floor
-x 20
-y 10
-end
-arch tile_white_floor
-x 20
-y 11
-end
-arch tile_white_floor
-x 20
-y 12
-end
-arch tile_floor
-x 20
-y 13
-end
-arch tile_floor
-x 20
-y 14
-end
-arch tile_white_floor
-x 20
-y 15
-end
-arch tile_white_floor
-x 20
-y 16
-end
-arch tile_floor
-x 20
-y 17
-end
-arch tile_floor
-x 20
-y 18
-end
-arch tile_white_floor
-x 20
-y 19
-end
-arch tile_white_floor
-x 20
-y 20
-end
-arch tile_floor
-x 20
-y 21
-end
-arch tile_floor
-x 20
-y 22
-end
-arch tile_white_floor
-x 20
-y 23
-end
-arch tile_white_floor
-x 20
-y 24
-end
-arch tile_floor
-x 20
-y 25
-end
-arch tile_floor
-x 20
-y 26
-end
-arch tile_white_floor
-x 20
-y 27
-end
-arch tile_white_floor
-x 20
-y 28
-end
-arch tile_floor
-x 20
-y 29
-end
-arch tile_floor
-x 20
-y 30
-end
-arch tile_white_floor
-x 20
-y 31
-end
-arch tile_white_floor
-x 20
-y 32
-end
-arch brazier
-x 20
-y 32
-end
-arch tile_floor
-x 20
-y 33
-end
-arch tile_floor
-x 20
-y 34
-end
-arch tile_white_floor
-x 20
-y 35
-end
-arch brazier
-x 20
-y 35
-end
-arch tile_white_floor
-x 20
-y 36
-end
-arch tile_floor
-x 20
-y 37
-end
-arch tile_floor
-x 20
-y 38
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 38
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 20
-y 39
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 39
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 20
-y 40
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 40
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 20
-y 41
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 41
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 20
-y 42
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 42
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 20
-y 43
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 43
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_white_floor
-x 20
-y 44
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 44
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 20
-y 45
-end
-arch bookshelf
-name Zorn Library Shelf
-name_pl Zorn Library Shelves
-no_pick 1
-x 20
-y 45
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-arch random_reading
-end
-end
-arch tile_floor
-x 20
-y 46
-end
-arch tile_white_floor
-x 20
-y 47
-end
-arch tile_white_floor
-x 20
-y 48
-end
-arch cobblestones2
-x 20
-y 49
-end
-arch swall_2_1_2
-x 20
-y 49
-end
-arch cobblestones2
-x 20
-y 50
-end
-arch swall_2_1_2
-x 20
-y 50
-end
-arch brush
-x 20
-y 51
-end
 arch tree5
 name ornamental pine
+x 18
+y 51
+end
+arch sea
+name moat
+x 18
+y 52
+end
+arch sea
+name moat
+x 18
+y 53
+end
+arch sea
+name moat
+x 18
+y 54
+end
+arch brush
+x 18
+y 55
+end
+arch dungeon_magic
+x 18
+y 55
+end
+arch brush
+x 18
+y 56
+end
+arch earth
+name road
+x 18
+y 56
+end
+arch brush
+x 18
+y 57
+end
+arch earth
+name road
+x 18
+y 57
+end
+arch brush
+x 18
+y 58
+end
+arch brush
+x 19
+end
+arch brush
+x 19
+y 1
+end
+arch brush
+x 19
+y 2
+end
+arch brush
+x 19
+y 3
+end
+arch dungeon_magic
+x 19
+y 3
+end
+arch sea
+name moat
+x 19
+y 4
+end
+arch sea
+name moat
+x 19
+y 5
+end
+arch sea
+name moat
+x 19
+y 6
+end
+arch brush
+x 19
+y 7
+end
+arch cobblestones2
+x 19
+y 8
+end
+arch swall_1_4
+x 19
+y 8
+end
+arch tile_floor
+x 19
+y 9
+end
+arch tile_floor
+x 19
+y 10
+end
+arch tile_white_floor
+x 19
+y 11
+end
+arch tile_white_floor
+x 19
+y 12
+end
+arch tile_floor
+x 19
+y 13
+end
+arch tile_floor
+x 19
+y 14
+end
+arch tile_white_floor
+x 19
+y 15
+end
+arch tile_white_floor
+x 19
+y 16
+end
+arch tile_floor
+x 19
+y 17
+end
+arch tile_floor
+x 19
+y 18
+end
+arch tile_white_floor
+x 19
+y 19
+end
+arch tile_white_floor
+x 19
+y 20
+end
+arch tile_floor
+x 19
+y 21
+end
+arch tile_floor
+x 19
+y 22
+end
+arch tile_white_floor
+x 19
+y 23
+end
+arch tile_white_floor
+x 19
+y 24
+end
+arch tile_floor
+x 19
+y 25
+end
+arch tile_floor
+x 19
+y 26
+end
+arch tile_white_floor
+x 19
+y 27
+end
+arch tile_white_floor
+x 19
+y 28
+end
+arch tile_floor
+x 19
+y 29
+end
+arch tile_floor
+x 19
+y 30
+end
+arch tile_white_floor
+x 19
+y 31
+end
+arch tile_white_floor
+x 19
+y 32
+end
+arch brazier
+x 19
+y 32
+end
+arch tile_floor
+x 19
+y 33
+end
+arch tile_floor
+x 19
+y 34
+end
+arch tile_white_floor
+x 19
+y 35
+end
+arch brazier
+x 19
+y 35
+end
+arch tile_white_floor
+x 19
+y 36
+end
+arch tile_floor
+x 19
+y 37
+end
+arch tile_floor
+x 19
+y 38
+end
+arch tile_white_floor
+x 19
+y 39
+end
+arch tile_white_floor
+x 19
+y 40
+end
+arch tile_floor
+x 19
+y 41
+end
+arch tile_floor
+x 19
+y 42
+end
+arch tile_white_floor
+x 19
+y 43
+end
+arch tile_white_floor
+x 19
+y 44
+end
+arch tile_floor
+x 19
+y 45
+end
+arch tile_floor
+x 19
+y 46
+end
+arch chair_1.2
+name Reading chair
+name_pl Reading chairs
+no_pick 1
+identified 1
+x 19
+y 46
+end
+arch tile_white_floor
+x 19
+y 47
+end
+arch tile_white_floor
+x 19
+y 48
+end
+arch cobblestones2
+x 19
+y 49
+end
+arch swall_1_4
+x 19
+y 49
+end
+arch cobblestones2
+x 19
+y 50
+end
+arch swall_1_4
+x 19
+y 50
+end
+arch brush
+x 19
+y 51
+end
+arch sea
+name moat
+x 19
+y 52
+end
+arch sea
+name moat
+x 19
+y 53
+end
+arch sea
+name moat
+x 19
+y 54
+end
+arch brush
+x 19
+y 55
+end
+arch dungeon_magic
+x 19
+y 55
+end
+arch brush
+x 19
+y 56
+end
+arch earth
+name road
+x 19
+y 56
+end
+arch brush
+x 19
+y 57
+end
+arch earth
+name road
+x 19
+y 57
+end
+arch brush
+x 19
+y 58
+end
+arch brush
+x 20
+end
+arch brush
+x 20
+y 1
+end
+arch brush
+x 20
+y 2
+end
+arch brush
+x 20
+y 3
+end
+arch dungeon_magic
+x 20
+y 3
+end
+arch sea
+name moat
+x 20
+y 4
+end
+arch sea
+name moat
+x 20
+y 5
+end
+arch sea
+name moat
+x 20
+y 6
+end
+arch brush
+x 20
+y 7
+end
+arch cobblestones2
+x 20
+y 8
+end
+arch swall_2_1_2
+x 20
+y 8
+end
+arch tile_floor
+x 20
+y 9
+end
+arch tile_floor
+x 20
+y 10
+end
+arch tile_white_floor
+x 20
+y 11
+end
+arch tile_white_floor
+x 20
+y 12
+end
+arch tile_floor
+x 20
+y 13
+end
+arch tile_floor
+x 20
+y 14
+end
+arch tile_white_floor
+x 20
+y 15
+end
+arch tile_white_floor
+x 20
+y 16
+end
+arch tile_floor
+x 20
+y 17
+end
+arch tile_floor
+x 20
+y 18
+end
+arch tile_white_floor
+x 20
+y 19
+end
+arch tile_white_floor
+x 20
+y 20
+end
+arch tile_floor
+x 20
+y 21
+end
+arch tile_floor
+x 20
+y 22
+end
+arch tile_white_floor
+x 20
+y 23
+end
+arch tile_white_floor
+x 20
+y 24
+end
+arch tile_floor
+x 20
+y 25
+end
+arch tile_floor
+x 20
+y 26
+end
+arch tile_white_floor
+x 20
+y 27
+end
+arch tile_white_floor
+x 20
+y 28
+end
+arch tile_floor
+x 20
+y 29
+end
+arch tile_floor
+x 20
+y 30
+end
+arch tile_white_floor
+x 20
+y 31
+end
+arch tile_white_floor
+x 20
+y 32
+end
+arch brazier
+x 20
+y 32
+end
+arch tile_floor
+x 20
+y 33
+end
+arch tile_floor
+x 20
+y 34
+end
+arch tile_white_floor
+x 20
+y 35
+end
+arch brazier
+x 20
+y 35
+end
+arch tile_white_floor
+x 20
+y 36
+end
+arch tile_floor
+x 20
+y 37
+end
+arch tile_floor
+x 20
+y 38
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 38
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 20
+y 39
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 39
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 20
+y 40
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 40
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 20
+y 41
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 41
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 20
+y 42
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 42
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 20
+y 43
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 43
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_white_floor
+x 20
+y 44
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 44
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 20
+y 45
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+no_pick 1
+x 20
+y 45
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch tile_floor
+x 20
+y 46
+end
+arch tile_white_floor
+x 20
+y 47
+end
+arch tile_white_floor
+x 20
+y 48
+end
+arch cobblestones2
+x 20
+y 49
+end
+arch swall_2_1_2
+x 20
+y 49
+end
+arch cobblestones2
+x 20
+y 50
+end
+arch swall_2_1_2
+x 20
+y 50
+end
+arch brush
 x 20
 y 51
 end
@@ -8395,6 +8774,50 @@ end
 arch tile_floor
 x 21
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 21
@@ -8663,10 +9086,6 @@ x 21
 y 50
 end
 arch brush
-x 21
-y 51
-end
-arch hedge_1_4
 x 21
 y 51
 end
@@ -9174,7 +9593,8 @@ arch brush
 x 22
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 22
 y 51
 end
@@ -9828,7 +10248,8 @@ arch brush
 x 23
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 23
 y 51
 end
@@ -10220,7 +10641,8 @@ arch brush
 x 24
 y 51
 end
-arch hedge_1_3
+arch tree5
+name ornamental pine
 x 24
 y 51
 end
@@ -12002,6 +12424,10 @@ name Tobacco pouch
 name_pl Tobacco pouches
 race tobacco
 end
+end
+arch light3
+x 29
+y 9
 end
 arch greenmarble
 x 29
@@ -14375,7 +14801,8 @@ arch brush
 x 34
 y 51
 end
-arch hedge_1_4
+arch tree5
+name ornamental pine
 x 34
 y 51
 end
@@ -15029,7 +15456,8 @@ arch brush
 x 35
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 35
 y 51
 end
@@ -15537,7 +15965,8 @@ arch brush
 x 36
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 36
 y 51
 end
@@ -15644,6 +16073,10 @@ arch tile_white_floor
 x 37
 y 11
 end
+arch firepot
+x 37
+y 11
+end
 arch tile_white_floor
 x 37
 y 12
@@ -15680,6 +16113,10 @@ arch tile_white_floor
 x 37
 y 20
 end
+arch firepot
+x 37
+y 20
+end
 arch tile_floor
 x 37
 y 21
@@ -15697,6 +16134,10 @@ x 37
 y 24
 end
 arch tile_floor
+x 37
+y 25
+end
+arch firepot
 x 37
 y 25
 end
@@ -15720,9 +16161,57 @@ arch tile_floor
 x 37
 y 30
 end
+arch firepot
+x 37
+y 30
+end
 arch tile_white_floor
 x 37
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 37
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 37
@@ -15970,10 +16459,6 @@ arch brush
 x 37
 y 51
 end
-arch hedge_1_3
-x 37
-y 51
-end
 arch sea
 name moat
 x 37
@@ -16081,7 +16566,21 @@ arch tile_floor
 x 38
 y 12
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 12
+end
 arch tile_white_floor
+x 38
+y 13
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 13
 end
@@ -16093,7 +16592,21 @@ arch tile_floor
 x 38
 y 15
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 15
+end
 arch tile_floor
+x 38
+y 16
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 16
 end
@@ -16101,11 +16614,32 @@ arch tile_white_floor
 x 38
 y 17
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 17
+end
 arch tile_white_floor
 x 38
 y 18
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 18
+end
 arch tile_floor
+x 38
+y 19
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 19
 end
@@ -16117,7 +16651,21 @@ arch tile_white_floor
 x 38
 y 21
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 21
+end
 arch tile_white_floor
+x 38
+y 22
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 22
 end
@@ -16125,7 +16673,21 @@ arch tile_floor
 x 38
 y 23
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 23
+end
 arch tile_floor
+x 38
+y 24
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 24
 end
@@ -16137,7 +16699,21 @@ arch tile_white_floor
 x 38
 y 26
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 26
+end
 arch tile_floor
+x 38
+y 27
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 27
 end
@@ -16145,7 +16721,21 @@ arch tile_floor
 x 38
 y 28
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 38
+y 28
+end
 arch tile_white_floor
+x 38
+y 29
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 38
 y 29
 end
@@ -16325,11 +16915,6 @@ arch brush
 x 38
 y 51
 end
-arch tree5
-name ornamental pine
-x 38
-y 51
-end
 arch sea
 name moat
 x 38
@@ -16433,11 +17018,73 @@ arch tile_floor
 x 39
 y 11
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 39
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 39
 y 12
 end
+arch longtable_3_2
+name dining hall table
+x 39
+y 12
+end
+arch random_food
+x 39
+y 12
+end
 arch tile_white_floor
+x 39
+y 13
+end
+arch longtable_1_2
+name dining hall table
+x 39
+y 13
+end
+arch random_food
 x 39
 y 13
 end
@@ -16449,7 +17096,25 @@ arch tile_floor
 x 39
 y 15
 end
+arch longtable_1_1
+name dining hall table
+x 39
+y 15
+end
+arch random_food
+x 39
+y 15
+end
 arch tile_floor
+x 39
+y 16
+end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 16
+end
+arch random_food
 x 39
 y 16
 end
@@ -16457,7 +17122,25 @@ arch tile_white_floor
 x 39
 y 17
 end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 17
+end
+arch random_food
+x 39
+y 17
+end
 arch tile_white_floor
+x 39
+y 18
+end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 18
+end
+arch random_food
 x 39
 y 18
 end
@@ -16465,7 +17148,20 @@ arch tile_floor
 x 39
 y 19
 end
+arch longtable_1_2
+name dining hall table
+x 39
+y 19
+end
+arch random_food
+x 39
+y 19
+end
 arch tile_floor
+x 39
+y 20
+end
+arch firepot
 x 39
 y 20
 end
@@ -16473,7 +17169,25 @@ arch tile_white_floor
 x 39
 y 21
 end
+arch longtable_1_1
+name dining hall table
+x 39
+y 21
+end
+arch random_food
+x 39
+y 21
+end
 arch tile_white_floor
+x 39
+y 22
+end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 22
+end
+arch random_food
 x 39
 y 22
 end
@@ -16481,7 +17195,25 @@ arch tile_floor
 x 39
 y 23
 end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 23
+end
+arch random_food
+x 39
+y 23
+end
 arch tile_floor
+x 39
+y 24
+end
+arch longtable_1_2
+name dining hall table
+x 39
+y 24
+end
+arch random_food
 x 39
 y 24
 end
@@ -16489,7 +17221,20 @@ arch tile_white_floor
 x 39
 y 25
 end
+arch firepot
+x 39
+y 25
+end
 arch tile_white_floor
+x 39
+y 26
+end
+arch longtable_1_1
+name dining hall table
+x 39
+y 26
+end
+arch random_food
 x 39
 y 26
 end
@@ -16497,11 +17242,38 @@ arch tile_floor
 x 39
 y 27
 end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 27
+end
+arch random_food
+x 39
+y 27
+end
 arch tile_floor
 x 39
 y 28
 end
+arch longtable_2_1_1
+name dining hall table
+x 39
+y 28
+end
+arch random_food
+x 39
+y 28
+end
 arch tile_white_floor
+x 39
+y 29
+end
+arch longtable_1_2
+name dining hall table
+x 39
+y 29
+end
+arch random_food
 x 39
 y 29
 end
@@ -16609,10 +17381,6 @@ arch brush
 x 39
 y 51
 end
-arch hedge_1_4
-x 39
-y 51
-end
 arch sea
 name moat
 x 39
@@ -16713,6 +17481,50 @@ arch tile_floor
 x 40
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 40
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 40
 y 10
@@ -16721,11 +17533,29 @@ arch tile_white_floor
 x 40
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 40
+y 11
+end
 arch tile_white_floor
 x 40
 y 12
 end
+arch longtable_2_1_2
+name dining hall table
+x 40
+y 12
+end
+arch random_food
+x 40
+y 12
+end
 arch tile_floor
+x 40
+y 13
+end
+arch firepot
 x 40
 y 13
 end
@@ -16737,7 +17567,21 @@ arch tile_white_floor
 x 40
 y 15
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 15
+end
 arch tile_white_floor
+x 40
+y 16
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 16
 end
@@ -16745,11 +17589,32 @@ arch tile_floor
 x 40
 y 17
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 17
+end
 arch tile_floor
 x 40
 y 18
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 18
+end
 arch tile_white_floor
+x 40
+y 19
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 19
 end
@@ -16761,7 +17626,21 @@ arch tile_floor
 x 40
 y 21
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 21
+end
 arch tile_floor
+x 40
+y 22
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 22
 end
@@ -16769,7 +17648,21 @@ arch tile_white_floor
 x 40
 y 23
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 23
+end
 arch tile_white_floor
+x 40
+y 24
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 24
 end
@@ -16781,7 +17674,21 @@ arch tile_floor
 x 40
 y 26
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 26
+end
 arch tile_white_floor
+x 40
+y 27
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 27
 end
@@ -16789,7 +17696,21 @@ arch tile_white_floor
 x 40
 y 28
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 40
+y 28
+end
 arch tile_floor
+x 40
+y 29
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 40
 y 29
 end
@@ -17029,7 +17950,8 @@ arch brush
 x 40
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 40
 y 51
 end
@@ -17133,6 +18055,50 @@ arch tile_floor
 x 41
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 41
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 41
 y 10
@@ -17141,7 +18107,21 @@ arch tile_white_floor
 x 41
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 41
+y 11
+end
 arch tile_white_floor
+x 41
+y 12
+end
+arch longtable_2_1_2
+name dining hall table
+x 41
+y 12
+end
+arch random_food
 x 41
 y 12
 end
@@ -17465,7 +18445,8 @@ arch brush
 x 41
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 41
 y 51
 end
@@ -17572,7 +18553,21 @@ arch tile_floor
 x 42
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 42
+y 11
+end
 arch tile_floor
+x 42
+y 12
+end
+arch longtable_2_1_2
+name dining hall table
+x 42
+y 12
+end
+arch random_food
 x 42
 y 12
 end
@@ -17588,7 +18583,21 @@ arch tile_floor
 x 42
 y 15
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 15
+end
 arch tile_floor
+x 42
+y 16
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 16
 end
@@ -17596,11 +18605,32 @@ arch tile_white_floor
 x 42
 y 17
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 17
+end
 arch tile_white_floor
 x 42
 y 18
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 18
+end
 arch tile_floor
+x 42
+y 19
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 19
 end
@@ -17612,7 +18642,21 @@ arch tile_white_floor
 x 42
 y 21
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 21
+end
 arch tile_white_floor
+x 42
+y 22
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 22
 end
@@ -17620,7 +18664,21 @@ arch tile_floor
 x 42
 y 23
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 23
+end
 arch tile_floor
+x 42
+y 24
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 24
 end
@@ -17632,7 +18690,21 @@ arch tile_white_floor
 x 42
 y 26
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 26
+end
 arch tile_floor
+x 42
+y 27
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 27
 end
@@ -17640,7 +18712,21 @@ arch tile_floor
 x 42
 y 28
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 42
+y 28
+end
 arch tile_white_floor
+x 42
+y 29
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 42
 y 29
 end
@@ -17786,10 +18872,6 @@ arch brush
 x 42
 y 51
 end
-arch hedge_1_3
-x 42
-y 51
-end
 arch sea
 name moat
 x 42
@@ -17893,11 +18975,70 @@ arch tile_floor
 x 43
 y 11
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 43
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 43
 y 12
 end
+arch longtable_2_1_2
+name dining hall table
+x 43
+y 12
+end
+arch wine
+name Vino de Zorn
+name_pl Vino's de Zorn
+x 43
+y 12
+end
 arch tile_white_floor
+x 43
+y 13
+end
+arch firepot
 x 43
 y 13
 end
@@ -17909,7 +19050,25 @@ arch tile_floor
 x 43
 y 15
 end
+arch longtable_1_1
+name dining hall table
+x 43
+y 15
+end
+arch random_food
+x 43
+y 15
+end
 arch tile_floor
+x 43
+y 16
+end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 16
+end
+arch random_food
 x 43
 y 16
 end
@@ -17917,7 +19076,25 @@ arch tile_white_floor
 x 43
 y 17
 end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 17
+end
+arch random_food
+x 43
+y 17
+end
 arch tile_white_floor
+x 43
+y 18
+end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 18
+end
+arch random_food
 x 43
 y 18
 end
@@ -17925,7 +19102,20 @@ arch tile_floor
 x 43
 y 19
 end
+arch longtable_1_2
+name dining hall table
+x 43
+y 19
+end
+arch random_food
+x 43
+y 19
+end
 arch tile_floor
+x 43
+y 20
+end
+arch firepot
 x 43
 y 20
 end
@@ -17933,7 +19123,25 @@ arch tile_white_floor
 x 43
 y 21
 end
+arch longtable_1_1
+name dining hall table
+x 43
+y 21
+end
+arch random_food
+x 43
+y 21
+end
 arch tile_white_floor
+x 43
+y 22
+end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 22
+end
+arch random_food
 x 43
 y 22
 end
@@ -17941,7 +19149,25 @@ arch tile_floor
 x 43
 y 23
 end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 23
+end
+arch random_food
+x 43
+y 23
+end
 arch tile_floor
+x 43
+y 24
+end
+arch longtable_1_2
+name dining hall table
+x 43
+y 24
+end
+arch random_food
 x 43
 y 24
 end
@@ -17949,7 +19175,20 @@ arch tile_white_floor
 x 43
 y 25
 end
+arch firepot
+x 43
+y 25
+end
 arch tile_white_floor
+x 43
+y 26
+end
+arch longtable_1_1
+name dining hall table
+x 43
+y 26
+end
+arch random_food
 x 43
 y 26
 end
@@ -17957,11 +19196,38 @@ arch tile_floor
 x 43
 y 27
 end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 27
+end
+arch random_food
+x 43
+y 27
+end
 arch tile_floor
 x 43
 y 28
 end
+arch longtable_2_1_1
+name dining hall table
+x 43
+y 28
+end
+arch random_food
+x 43
+y 28
+end
 arch tile_white_floor
+x 43
+y 29
+end
+arch longtable_1_2
+name dining hall table
+x 43
+y 29
+end
+arch random_food
 x 43
 y 29
 end
@@ -18107,11 +19373,6 @@ arch brush
 x 43
 y 51
 end
-arch tree5
-name ornamental pine
-x 43
-y 51
-end
 arch sea
 name moat
 x 43
@@ -18215,7 +19476,21 @@ arch tile_white_floor
 x 44
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 44
+y 11
+end
 arch tile_white_floor
+x 44
+y 12
+end
+arch longtable_2_1_2
+name dining hall table
+x 44
+y 12
+end
+arch random_food
 x 44
 y 12
 end
@@ -18231,7 +19506,21 @@ arch tile_white_floor
 x 44
 y 15
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 15
+end
 arch tile_white_floor
+x 44
+y 16
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 16
 end
@@ -18239,11 +19528,32 @@ arch tile_floor
 x 44
 y 17
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 17
+end
 arch tile_floor
 x 44
 y 18
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 18
+end
 arch tile_white_floor
+x 44
+y 19
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 19
 end
@@ -18255,7 +19565,21 @@ arch tile_floor
 x 44
 y 21
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 21
+end
 arch tile_floor
+x 44
+y 22
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 22
 end
@@ -18263,7 +19587,21 @@ arch tile_white_floor
 x 44
 y 23
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 23
+end
 arch tile_white_floor
+x 44
+y 24
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 24
 end
@@ -18275,7 +19613,21 @@ arch tile_floor
 x 44
 y 26
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 26
+end
 arch tile_white_floor
+x 44
+y 27
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 27
 end
@@ -18283,7 +19635,21 @@ arch tile_white_floor
 x 44
 y 28
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 44
+y 28
+end
 arch tile_floor
+x 44
+y 29
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 44
 y 29
 end
@@ -18495,10 +19861,6 @@ arch brush
 x 44
 y 51
 end
-arch hedge_1_4
-x 44
-y 51
-end
 arch sea
 name moat
 x 44
@@ -18599,6 +19961,50 @@ arch tile_floor
 x 45
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 45
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 45
 y 10
@@ -18607,7 +20013,21 @@ arch tile_white_floor
 x 45
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 45
+y 11
+end
 arch tile_white_floor
+x 45
+y 12
+end
+arch longtable_2_1_2
+name dining hall table
+x 45
+y 12
+end
+arch random_food
 x 45
 y 12
 end
@@ -18915,7 +20335,8 @@ arch brush
 x 45
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 45
 y 51
 end
@@ -19019,6 +20440,50 @@ arch tile_white_floor
 x 46
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 46
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 46
 y 10
@@ -19027,11 +20492,29 @@ arch tile_floor
 x 46
 y 11
 end
+arch stol_king_1
+name zorn family seating
+x 46
+y 11
+end
 arch tile_floor
 x 46
 y 12
 end
+arch longtable_2_1_2
+name dining hall table
+x 46
+y 12
+end
+arch random_food
+x 46
+y 12
+end
 arch tile_white_floor
+x 46
+y 13
+end
+arch firepot
 x 46
 y 13
 end
@@ -19043,7 +20526,21 @@ arch tile_floor
 x 46
 y 15
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 15
+end
 arch tile_floor
+x 46
+y 16
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 16
 end
@@ -19051,11 +20548,32 @@ arch tile_white_floor
 x 46
 y 17
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 17
+end
 arch tile_white_floor
 x 46
 y 18
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 18
+end
 arch tile_floor
+x 46
+y 19
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 19
 end
@@ -19067,7 +20585,21 @@ arch tile_white_floor
 x 46
 y 21
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 21
+end
 arch tile_white_floor
+x 46
+y 22
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 22
 end
@@ -19075,7 +20607,21 @@ arch tile_floor
 x 46
 y 23
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 23
+end
 arch tile_floor
+x 46
+y 24
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 24
 end
@@ -19087,7 +20633,21 @@ arch tile_white_floor
 x 46
 y 26
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 26
+end
 arch tile_floor
+x 46
+y 27
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 27
 end
@@ -19095,7 +20655,21 @@ arch tile_floor
 x 46
 y 28
 end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
+x 46
+y 28
+end
 arch tile_white_floor
+x 46
+y 29
+end
+arch chair_2.4
+name dining hall chair
+no_pick 1
+identified 1
 x 46
 y 29
 end
@@ -19247,7 +20821,8 @@ arch brush
 x 46
 y 51
 end
-arch hedge_2_1_2
+arch tree5
+name ornamental pine
 x 46
 y 51
 end
@@ -19351,6 +20926,50 @@ arch tile_white_floor
 x 47
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 47
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 47
 y 10
@@ -19359,11 +20978,73 @@ arch tile_floor
 x 47
 y 11
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 47
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 47
 y 12
 end
+arch longtable_2_2_3
+name dining hall table
+x 47
+y 12
+end
+arch random_food
+x 47
+y 12
+end
 arch tile_white_floor
+x 47
+y 13
+end
+arch longtable_1_2
+name dining hall table
+x 47
+y 13
+end
+arch random_food
 x 47
 y 13
 end
@@ -19375,7 +21056,25 @@ arch tile_floor
 x 47
 y 15
 end
+arch longtable_1_1
+name dining hall table
+x 47
+y 15
+end
+arch random_food
+x 47
+y 15
+end
 arch tile_floor
+x 47
+y 16
+end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 16
+end
+arch random_food
 x 47
 y 16
 end
@@ -19383,7 +21082,25 @@ arch tile_white_floor
 x 47
 y 17
 end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 17
+end
+arch random_food
+x 47
+y 17
+end
 arch tile_white_floor
+x 47
+y 18
+end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 18
+end
+arch random_food
 x 47
 y 18
 end
@@ -19391,7 +21108,20 @@ arch tile_floor
 x 47
 y 19
 end
+arch longtable_1_2
+name dining hall table
+x 47
+y 19
+end
+arch random_food
+x 47
+y 19
+end
 arch tile_floor
+x 47
+y 20
+end
+arch firepot
 x 47
 y 20
 end
@@ -19399,7 +21129,25 @@ arch tile_white_floor
 x 47
 y 21
 end
+arch longtable_1_1
+name dining hall table
+x 47
+y 21
+end
+arch random_food
+x 47
+y 21
+end
 arch tile_white_floor
+x 47
+y 22
+end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 22
+end
+arch random_food
 x 47
 y 22
 end
@@ -19407,7 +21155,25 @@ arch tile_floor
 x 47
 y 23
 end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 23
+end
+arch random_food
+x 47
+y 23
+end
 arch tile_floor
+x 47
+y 24
+end
+arch longtable_1_2
+name dining hall table
+x 47
+y 24
+end
+arch random_food
 x 47
 y 24
 end
@@ -19415,7 +21181,20 @@ arch tile_white_floor
 x 47
 y 25
 end
+arch firepot
+x 47
+y 25
+end
 arch tile_white_floor
+x 47
+y 26
+end
+arch longtable_1_1
+name dining hall table
+x 47
+y 26
+end
+arch random_food
 x 47
 y 26
 end
@@ -19423,11 +21202,38 @@ arch tile_floor
 x 47
 y 27
 end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 27
+end
+arch random_food
+x 47
+y 27
+end
 arch tile_floor
 x 47
 y 28
 end
+arch longtable_2_1_1
+name dining hall table
+x 47
+y 28
+end
+arch random_food
+x 47
+y 28
+end
 arch tile_white_floor
+x 47
+y 29
+end
+arch longtable_1_2
+name dining hall table
+x 47
+y 29
+end
+arch random_food
 x 47
 y 29
 end
@@ -19608,7 +21414,8 @@ arch brush
 x 47
 y 51
 end
-arch hedge_1_3
+arch tree5
+name ornamental pine
 x 47
 y 51
 end
@@ -19712,6 +21519,50 @@ arch tile_floor
 x 48
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 48
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 48
 y 10
@@ -19724,7 +21575,21 @@ arch tile_white_floor
 x 48
 y 12
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 12
+end
 arch tile_floor
+x 48
+y 13
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 13
 end
@@ -19736,7 +21601,21 @@ arch tile_white_floor
 x 48
 y 15
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 15
+end
 arch tile_white_floor
+x 48
+y 16
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 16
 end
@@ -19744,11 +21623,32 @@ arch tile_floor
 x 48
 y 17
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 17
+end
 arch tile_floor
 x 48
 y 18
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 18
+end
 arch tile_white_floor
+x 48
+y 19
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 19
 end
@@ -19760,7 +21660,21 @@ arch tile_floor
 x 48
 y 21
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 21
+end
 arch tile_floor
+x 48
+y 22
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 22
 end
@@ -19768,7 +21682,21 @@ arch tile_white_floor
 x 48
 y 23
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 23
+end
 arch tile_white_floor
+x 48
+y 24
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 24
 end
@@ -19780,7 +21708,21 @@ arch tile_floor
 x 48
 y 26
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 26
+end
 arch tile_white_floor
+x 48
+y 27
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 27
 end
@@ -19788,7 +21730,21 @@ arch tile_white_floor
 x 48
 y 28
 end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
+x 48
+y 28
+end
 arch tile_floor
+x 48
+y 29
+end
+arch chair_2.2
+name dining hall chair
+no_pick 1
+identified 1
 x 48
 y 29
 end
@@ -19799,6 +21755,50 @@ end
 arch tile_white_floor
 x 48
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 48
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 48
@@ -20090,11 +22090,59 @@ arch tile_floor
 x 49
 y 9
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 49
+y 9
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 49
 y 10
 end
 arch tile_white_floor
+x 49
+y 11
+end
+arch firepot
 x 49
 y 11
 end
@@ -20134,6 +22182,10 @@ arch tile_white_floor
 x 49
 y 20
 end
+arch firepot
+x 49
+y 20
+end
 arch tile_floor
 x 49
 y 21
@@ -20151,6 +22203,10 @@ x 49
 y 24
 end
 arch tile_floor
+x 49
+y 25
+end
+arch firepot
 x 49
 y 25
 end
@@ -20174,9 +22230,57 @@ arch tile_floor
 x 49
 y 30
 end
+arch firepot
+x 49
+y 30
+end
 arch tile_white_floor
 x 49
 y 31
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 49
+y 31
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 49
