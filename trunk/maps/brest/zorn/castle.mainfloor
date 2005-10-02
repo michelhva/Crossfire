@@ -2791,11 +2791,19 @@ arch swall_1_1
 x 8
 y 33
 end
+arch dungeon_magic
+x 8
+y 33
+end
 arch cobblestones2
 x 8
 y 34
 end
 arch swall_1_2
+x 8
+y 34
+end
+arch dungeon_magic
 x 8
 y 34
 end
@@ -3036,6 +3044,118 @@ arch tile_white_floor
 x 9
 y 9
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 9
+end
+arch tile_white_floor
+x 9
+y 10
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 10
+end
+arch tile_floor
+x 9
+y 11
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 11
+end
+arch tile_floor
+x 9
+y 12
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 12
+end
+arch tile_white_floor
+x 9
+y 13
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 13
+end
+arch tile_white_floor
+x 9
+y 14
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 14
+end
+arch tile_floor
+x 9
+y 15
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 15
+end
+arch tile_floor
+x 9
+y 16
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 9
+y 16
+end
+arch tile_white_floor
+x 9
+y 17
+end
+arch brazier
+x 9
+y 17
+end
+arch tile_white_floor
+x 9
+y 18
+end
+arch brazier
+x 9
+y 18
+end
+arch tile_floor
+x 9
+y 19
+end
 arch guard
 name fearless zorn guard
 msg
@@ -3069,7 +3189,55 @@ resist_paralyze 25
 resist_fear 100
 resist_blind 25
 x 9
-y 9
+y 19
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
+arch tile_floor
+x 9
+y 20
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 20
 arch shadow
 name zorn guard shadow
 sp 100
@@ -3082,49 +3250,9 @@ end
 end
 arch tile_white_floor
 x 9
-y 10
+y 21
 end
-arch tile_floor
-x 9
-y 11
-end
-arch tile_floor
-x 9
-y 12
-end
-arch tile_white_floor
-x 9
-y 13
-end
-arch tile_white_floor
-x 9
-y 14
-end
-arch tile_floor
-x 9
-y 15
-end
-arch tile_floor
-x 9
-y 16
-end
-arch tile_white_floor
-x 9
-y 17
-end
-arch tile_white_floor
-x 9
-y 18
-end
-arch tile_floor
-x 9
-y 19
-end
-arch tile_floor
-x 9
-y 20
-end
-arch tile_white_floor
+arch brazier
 x 9
 y 21
 end
@@ -3132,15 +3260,111 @@ arch tile_white_floor
 x 9
 y 22
 end
+arch brazier
+x 9
+y 22
+end
 arch tile_floor
 x 9
 y 23
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 23
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 9
 y 24
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 24
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
+x 9
+y 25
+end
+arch brazier
 x 9
 y 25
 end
@@ -3148,19 +3372,119 @@ arch tile_white_floor
 x 9
 y 26
 end
+arch brazier
+x 9
+y 26
+end
 arch tile_floor
 x 9
 y 27
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 27
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 9
 y 28
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 9
+y 28
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 9
 y 29
 end
+arch brazier
+x 9
+y 29
+end
 arch tile_white_floor
+x 9
+y 30
+end
+arch brazier
 x 9
 y 30
 end
@@ -3228,49 +3552,9 @@ arch stair_down_2
 x 9
 y 33
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 9
 y 33
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
 x 9
@@ -3280,49 +3564,9 @@ arch stair_down_2
 x 9
 y 34
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 9
 y 34
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
 x 9
@@ -3673,51 +3917,19 @@ arch tile_white_floor
 x 10
 y 9
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 10
 y 9
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
+x 10
+y 10
+end
+arch brazier
 x 10
 y 10
 end
@@ -3725,7 +3937,23 @@ arch tile_floor
 x 10
 y 11
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 10
+y 11
+end
 arch tile_floor
+x 10
+y 12
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 10
 y 12
 end
@@ -3733,11 +3961,31 @@ arch tile_white_floor
 x 10
 y 13
 end
+arch brazier
+x 10
+y 13
+end
 arch tile_white_floor
 x 10
 y 14
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 10
+y 14
+end
 arch tile_floor
+x 10
+y 15
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 10
 y 15
 end
@@ -3749,7 +3997,23 @@ arch tile_white_floor
 x 10
 y 17
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 17
+end
 arch tile_white_floor
+x 10
+y 18
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 18
 end
@@ -3757,7 +4021,23 @@ arch tile_floor
 x 10
 y 19
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 19
+end
 arch tile_floor
+x 10
+y 20
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 20
 end
@@ -3765,7 +4045,23 @@ arch tile_white_floor
 x 10
 y 21
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 21
+end
 arch tile_white_floor
+x 10
+y 22
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 22
 end
@@ -3773,7 +4069,23 @@ arch tile_floor
 x 10
 y 23
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 23
+end
 arch tile_floor
+x 10
+y 24
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 24
 end
@@ -3781,7 +4093,23 @@ arch tile_white_floor
 x 10
 y 25
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 25
+end
 arch tile_white_floor
+x 10
+y 26
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 26
 end
@@ -3789,11 +4117,35 @@ arch tile_floor
 x 10
 y 27
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 27
+end
 arch tile_floor
 x 10
 y 28
 end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 10
+y 28
+end
 arch tile_white_floor
+x 10
+y 29
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 10
 y 29
 end
@@ -3861,9 +4213,97 @@ arch tile_white_floor
 x 10
 y 33
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 10
+y 33
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 10
 y 34
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 10
+y 34
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 10
@@ -4311,51 +4751,23 @@ arch tile_floor
 x 11
 y 9
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 11
 y 9
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
+x 11
+y 10
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 11
 y 10
 end
@@ -4363,7 +4775,23 @@ arch tile_white_floor
 x 11
 y 11
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 11
+y 11
+end
 arch tile_white_floor
+x 11
+y 12
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 11
 y 12
 end
@@ -4371,7 +4799,23 @@ arch tile_floor
 x 11
 y 13
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 11
+y 13
+end
 arch tile_floor
+x 11
+y 14
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 11
 y 14
 end
@@ -4436,6 +4880,14 @@ x 11
 y 29
 end
 arch tile_floor
+x 11
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 11
 y 30
 end
@@ -4653,51 +5105,23 @@ arch tile_floor
 x 12
 y 9
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 12
 y 9
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
+x 12
+y 10
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 12
 y 10
 end
@@ -4705,11 +5129,35 @@ arch tile_white_floor
 x 12
 y 11
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 12
+y 11
+end
 arch tile_white_floor
 x 12
 y 12
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 12
+y 12
+end
 arch tile_floor
+x 12
+y 13
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 12
 y 13
 end
@@ -4778,6 +5226,14 @@ x 12
 y 29
 end
 arch tile_floor
+x 12
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 12
 y 30
 end
@@ -5086,51 +5542,19 @@ arch tile_white_floor
 x 13
 y 9
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 13
 y 9
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
+x 13
+y 10
+end
+arch brazier
 x 13
 y 10
 end
@@ -5138,11 +5562,31 @@ arch tile_floor
 x 13
 y 11
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 13
+y 11
+end
 arch tile_floor
 x 13
 y 12
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 13
+y 12
+end
 arch tile_white_floor
+x 13
+y 13
+end
+arch brazier
 x 13
 y 13
 end
@@ -5211,6 +5655,14 @@ x 13
 y 29
 end
 arch tile_white_floor
+x 13
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 13
 y 30
 end
@@ -5550,7 +6002,19 @@ arch swall_1_4
 x 14
 y 8
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch tile_white_floor
+x 14
+y 9
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 14
 y 9
 end
@@ -5558,7 +6022,23 @@ arch tile_white_floor
 x 14
 y 10
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 14
+y 10
+end
 arch tile_floor
+x 14
+y 11
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 14
 y 11
 end
@@ -5571,6 +6051,11 @@ x 14
 y 13
 end
 arch tile_white_floor
+x 14
+y 14
+end
+arch slevel_0
+name conductor's platform
 x 14
 y 14
 end
@@ -5635,6 +6120,14 @@ x 14
 y 29
 end
 arch tile_white_floor
+x 14
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 14
 y 30
 end
@@ -6038,6 +6531,10 @@ arch swall_1_4
 x 14
 y 50
 end
+arch dungeon_magic
+x 14
+y 50
+end
 arch brush
 x 14
 y 51
@@ -6133,11 +6630,31 @@ arch swall_2_1_2
 x 15
 y 8
 end
+arch dungeon_magic
+x 15
+y 8
+end
 arch tile_floor
 x 15
 y 9
 end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
+x 15
+y 9
+end
 arch tile_floor
+x 15
+y 10
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 15
 y 10
 end
@@ -6325,6 +6842,10 @@ arch swall_2_1_2
 x 15
 y 50
 end
+arch dungeon_magic
+x 15
+y 50
+end
 arch brush
 x 15
 y 51
@@ -6420,7 +6941,19 @@ arch swall_1_3
 x 16
 y 8
 end
+arch dungeon_magic
+x 16
+y 8
+end
 arch tile_floor
+x 16
+y 9
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+no_pick 1
+identified 1
 x 16
 y 9
 end
@@ -6809,6 +7342,10 @@ x 16
 y 50
 end
 arch swall_1_3
+x 16
+y 50
+end
+arch dungeon_magic
 x 16
 y 50
 end
@@ -7041,6 +7578,14 @@ x 17
 y 29
 end
 arch tile_white_floor
+x 17
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 17
 y 30
 end
@@ -7517,6 +8062,14 @@ arch tile_white_floor
 x 18
 y 30
 end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 18
+y 30
+end
 arch tile_floor
 x 18
 y 31
@@ -7901,6 +8454,10 @@ arch swall_1_4
 x 19
 y 8
 end
+arch dungeon_magic
+x 19
+y 8
+end
 arch tile_floor
 x 19
 y 9
@@ -7986,6 +8543,14 @@ x 19
 y 29
 end
 arch tile_floor
+x 19
+y 30
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 19
 y 30
 end
@@ -8093,6 +8658,10 @@ arch swall_1_4
 x 19
 y 50
 end
+arch dungeon_magic
+x 19
+y 50
+end
 arch brush
 x 19
 y 51
@@ -8188,6 +8757,10 @@ arch swall_2_1_2
 x 20
 y 8
 end
+arch dungeon_magic
+x 20
+y 8
+end
 arch tile_floor
 x 20
 y 9
@@ -8224,7 +8797,23 @@ arch tile_floor
 x 20
 y 17
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 17
+end
 arch tile_floor
+x 20
+y 18
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 18
 end
@@ -8232,7 +8821,23 @@ arch tile_white_floor
 x 20
 y 19
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 19
+end
 arch tile_white_floor
+x 20
+y 20
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 20
 end
@@ -8240,7 +8845,23 @@ arch tile_floor
 x 20
 y 21
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 21
+end
 arch tile_floor
+x 20
+y 22
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 22
 end
@@ -8248,7 +8869,23 @@ arch tile_white_floor
 x 20
 y 23
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 23
+end
 arch tile_white_floor
+x 20
+y 24
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 24
 end
@@ -8256,7 +8893,23 @@ arch tile_floor
 x 20
 y 25
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 25
+end
 arch tile_floor
+x 20
+y 26
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 26
 end
@@ -8264,11 +8917,35 @@ arch tile_white_floor
 x 20
 y 27
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 27
+end
 arch tile_white_floor
 x 20
 y 28
 end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
+x 20
+y 28
+end
 arch tile_floor
+x 20
+y 29
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+no_pick 1
+identified 1
 x 20
 y 29
 end
@@ -8588,6 +9265,10 @@ arch swall_2_1_2
 x 20
 y 50
 end
+arch dungeon_magic
+x 20
+y 50
+end
 arch brush
 x 20
 y 51
@@ -8683,6 +9364,10 @@ arch swall_1_3
 x 21
 y 8
 end
+arch dungeon_magic
+x 21
+y 8
+end
 arch tile_white_floor
 x 21
 y 9
@@ -8719,7 +9404,15 @@ arch tile_white_floor
 x 21
 y 17
 end
+arch brazier
+x 21
+y 17
+end
 arch tile_white_floor
+x 21
+y 18
+end
+arch brazier
 x 21
 y 18
 end
@@ -8727,11 +9420,103 @@ arch tile_floor
 x 21
 y 19
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 19
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 21
 y 20
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 20
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
+x 21
+y 21
+end
+arch brazier
 x 21
 y 21
 end
@@ -8739,15 +9524,111 @@ arch tile_white_floor
 x 21
 y 22
 end
+arch brazier
+x 21
+y 22
+end
 arch tile_floor
 x 21
 y 23
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 23
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 21
 y 24
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 24
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
+x 21
+y 25
+end
+arch brazier
 x 21
 y 25
 end
@@ -8755,19 +9636,119 @@ arch tile_white_floor
 x 21
 y 26
 end
+arch brazier
+x 21
+y 26
+end
 arch tile_floor
 x 21
 y 27
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 27
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 21
 y 28
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 21
+y 28
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 21
 y 29
 end
+arch brazier
+x 21
+y 29
+end
 arch tile_white_floor
+x 21
+y 30
+end
+arch brazier
 x 21
 y 30
 end
@@ -9082,6 +10063,10 @@ x 21
 y 50
 end
 arch swall_1_3
+x 21
+y 50
+end
+arch dungeon_magic
 x 21
 y 50
 end
@@ -10405,17 +11390,193 @@ arch tile_white_floor
 x 24
 y 11
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 24
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 24
 y 12
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 24
+y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 24
 y 13
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 24
+y 13
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 24
 y 14
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 24
+y 14
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 24
@@ -10774,49 +11935,9 @@ arch stair_up_2
 x 25
 y 12
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 25
 y 12
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
 x 25
@@ -10826,49 +11947,9 @@ arch stair_up_2
 x 25
 y 13
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 25
 y 13
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
 x 25
@@ -11513,14 +12594,21 @@ arch swall_1_4
 x 27
 y 8
 end
+arch dungeon_magic
+x 27
+y 8
+end
+arch dungeon_magic
+x 27
+y 9
+end
 arch greenmarble
 x 27
 y 9
 end
-arch statue
-face statue_knight.111
+arch dungeon_magic
 x 27
-y 9
+y 10
 end
 arch greenmarble
 x 27
@@ -12028,9 +13116,25 @@ arch swall_2_1_2
 x 28
 y 8
 end
+arch dungeon_magic
+x 28
+y 8
+end
+arch dungeon_magic
+x 28
+y 9
+end
 arch greenmarble
 x 28
 y 9
+end
+arch firepot
+x 28
+y 9
+end
+arch dungeon_magic
+x 28
+y 10
 end
 arch greenmarble
 x 28
@@ -12039,6 +13143,68 @@ end
 arch greenmarble
 x 28
 y 11
+end
+arch guard
+name fearless zorn guard sergeant
+msg
+@match *
+Move along.
+endmsg
+level 70
+exp 20000
+speed 0.1
+carrying 28000
+attacktype 1
+dam 45
+wc -5
+hp 700
+maxhp 700
+ac -10
+Con 20
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
+resist_fear 100
+resist_blind 30
+x 28
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+applied 1
+sp 21
+level 20
+hp 25
+maxhp 25
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
+end
 end
 arch greenmarble
 x 28
@@ -12401,6 +13567,14 @@ end
 arch swall_2_1_2
 x 29
 y 8
+end
+arch dungeon_magic
+x 29
+y 8
+end
+arch dungeon_magic
+x 29
+y 9
 end
 arch greenmarble
 x 29
@@ -12429,6 +13603,10 @@ arch light3
 x 29
 y 9
 end
+arch dungeon_magic
+x 29
+y 10
+end
 arch greenmarble
 x 29
 y 10
@@ -12444,6 +13622,68 @@ end
 arch greenmarble
 x 29
 y 11
+end
+arch guard
+name fearless zorn guard sergeant
+msg
+@match *
+Move along.
+endmsg
+level 70
+exp 20000
+speed 0.1
+carrying 28000
+attacktype 1
+dam 45
+wc -5
+hp 700
+maxhp 700
+ac -10
+Con 20
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
+resist_fear 100
+resist_blind 30
+x 29
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+applied 1
+sp 21
+level 20
+hp 25
+maxhp 25
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
+end
 end
 arch greenmarble
 x 29
@@ -12551,7 +13791,15 @@ arch greenmarble
 x 29
 y 33
 end
+arch light3
+x 29
+y 33
+end
 arch greenmarble
+x 29
+y 34
+end
+arch light3
 x 29
 y 34
 end
@@ -12827,9 +14075,25 @@ arch swall_2_1_2
 x 30
 y 8
 end
+arch dungeon_magic
+x 30
+y 8
+end
+arch dungeon_magic
+x 30
+y 9
+end
 arch greenmarble
 x 30
 y 9
+end
+arch firepot
+x 30
+y 9
+end
+arch dungeon_magic
+x 30
+y 10
 end
 arch greenmarble
 x 30
@@ -12838,6 +14102,68 @@ end
 arch greenmarble
 x 30
 y 11
+end
+arch guard
+name fearless zorn guard sergeant
+msg
+@match *
+Move along.
+endmsg
+level 70
+exp 20000
+speed 0.1
+carrying 28000
+attacktype 1
+dam 45
+wc -5
+hp 700
+maxhp 700
+ac -10
+Con 20
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
+resist_fear 100
+resist_blind 30
+x 30
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+applied 1
+sp 21
+level 20
+hp 25
+maxhp 25
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
+end
 end
 arch greenmarble
 x 30
@@ -13201,14 +14527,21 @@ arch swall_1_3
 x 31
 y 8
 end
+arch dungeon_magic
+x 31
+y 8
+end
+arch dungeon_magic
+x 31
+y 9
+end
 arch greenmarble
 x 31
 y 9
 end
-arch statue
-face statue_knight.111
+arch dungeon_magic
 x 31
-y 9
+y 10
 end
 arch greenmarble
 x 31
@@ -14123,49 +15456,9 @@ arch stair_up_4
 x 33
 y 12
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 33
 y 12
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
 x 33
@@ -14175,49 +15468,9 @@ arch stair_up_4
 x 33
 y 13
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 33
 y 13
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
 x 33
@@ -14404,7 +15657,6 @@ as if the castle is watching you,
 judging you and looking to see if
 perhaps you have some item that
 allows you to enter.
-
 You recall tales that say Zorn is
 known to bring his pet in with him
 when he comes home.
@@ -14565,17 +15817,193 @@ arch tile_floor
 x 34
 y 11
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 34
+y 11
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 34
 y 12
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 34
+y 12
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 34
 y 13
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 34
+y 13
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_white_floor
 x 34
 y 14
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 34
+y 14
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_floor
 x 34
@@ -16058,6 +17486,10 @@ x 37
 y 8
 end
 arch swall_1_4
+x 37
+y 8
+end
+arch dungeon_magic
 x 37
 y 8
 end
@@ -16455,6 +17887,10 @@ arch swall_1_4
 x 37
 y 50
 end
+arch dungeon_magic
+x 37
+y 50
+end
 arch brush
 x 37
 y 51
@@ -16547,6 +17983,10 @@ x 38
 y 8
 end
 arch swall_2_1_2
+x 38
+y 8
+end
+arch dungeon_magic
 x 38
 y 8
 end
@@ -16911,6 +18351,10 @@ arch swall_2_1_2
 x 38
 y 50
 end
+arch dungeon_magic
+x 38
+y 50
+end
 arch brush
 x 38
 y 51
@@ -17003,6 +18447,10 @@ x 39
 y 8
 end
 arch swall_1_3
+x 39
+y 8
+end
+arch dungeon_magic
 x 39
 y 8
 end
@@ -17374,6 +18822,10 @@ x 39
 y 50
 end
 arch swall_1_3
+x 39
+y 50
+end
+arch dungeon_magic
 x 39
 y 50
 end
@@ -18541,6 +19993,10 @@ arch swall_1_4
 x 42
 y 8
 end
+arch dungeon_magic
+x 42
+y 8
+end
 arch tile_white_floor
 x 42
 y 9
@@ -18868,6 +20324,10 @@ arch swall_1_4
 x 42
 y 50
 end
+arch dungeon_magic
+x 42
+y 50
+end
 arch brush
 x 42
 y 51
@@ -18960,6 +20420,10 @@ x 43
 y 8
 end
 arch swall_2_1_2
+x 43
+y 8
+end
+arch dungeon_magic
 x 43
 y 8
 end
@@ -19369,6 +20833,10 @@ arch swall_2_1_2
 x 43
 y 50
 end
+arch dungeon_magic
+x 43
+y 50
+end
 arch brush
 x 43
 y 51
@@ -19461,6 +20929,10 @@ x 44
 y 8
 end
 arch swall_1_3
+x 44
+y 8
+end
+arch dungeon_magic
 x 44
 y 8
 end
@@ -19854,6 +21326,10 @@ x 44
 y 50
 end
 arch swall_1_3
+x 44
+y 50
+end
+arch dungeon_magic
 x 44
 y 50
 end
@@ -21812,9 +23288,97 @@ arch tile_floor
 x 48
 y 33
 end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 48
+y 33
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
+end
 arch tile_floor
 x 48
 y 34
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+randomitems guard_h
+level 50
+exp 12000
+speed 0.09
+attacktype 1
+dam 35
+wc 10
+hp 500
+maxhp 500
+ac -5
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+can_use_skill 1
+stand_still 0
+pick_up 24
+run_away 5
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+x 48
+y 34
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_weapon 1
+can_use_bow 1
+can_use_armour 1
+end
 end
 arch tile_white_floor
 x 48
@@ -22298,49 +23862,9 @@ arch stair_down_4
 x 49
 y 33
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 49
 y 33
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_floor
 x 49
@@ -22350,49 +23874,9 @@ arch stair_down_4
 x 49
 y 34
 end
-arch guard
-name fearless zorn guard
-msg
-@match *
-...
-endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
-hp 500
-maxhp 500
-ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
+arch dungeon_magic
 x 49
 y 34
-arch shadow
-name zorn guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-end
 end
 arch tile_white_floor
 x 49
@@ -22915,11 +24399,19 @@ arch swall_1_1
 x 50
 y 33
 end
+arch dungeon_magic
+x 50
+y 33
+end
 arch cobblestones2
 x 50
 y 34
 end
 arch swall_1_2
+x 50
+y 34
+end
+arch dungeon_magic
 x 50
 y 34
 end
