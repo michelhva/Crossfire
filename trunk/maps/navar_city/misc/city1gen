@@ -13,6 +13,11 @@ Creator:
 Email:
 Date: Fri Oct 29 14:53:55 1993
 endmsg
+shopitems *:0
+shopmin 1
+shopmax 5000
+shoprace human
+shopgreed 1.0
 end
 arch cobblestones2
 end

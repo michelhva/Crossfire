@@ -5,6 +5,11 @@ msg
 Creator: Ryo Saeba
 Date:    1/25/2004
 endmsg
+shopitems building material:95;*:-100
+shopmin 500
+shopmax 20000
+shoprace human
+shopgreed 1.0
 width 23
 height 13
 enter_x 17

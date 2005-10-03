@@ -13,6 +13,11 @@ Creator:
 Email: 
 Date: Tue Nov  2 12:29:36 1993
 endmsg
+shopitems power_crystal:30;rod:36;skillscroll:15;weapon improver:10;armour improver:10;scroll:32;wand:34;spellbook:42;ring:20;amulet:23;horn:39;potion:18;gem:2;cloak:2;*:-40
+shopmin 40
+shopmax 500000
+shoprace human
+shopgreed 1.0
 end
 arch flagstone
 name floor
