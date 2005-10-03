@@ -6,6 +6,11 @@ Creator: Avion
 CF Java Map Editor
 Date:    10/9/2003
 endmsg
+shopitems *:-10
+shopmin 50
+shopmax 5000
+shoprace faerie
+shopgreed 1.0
 width 60
 height 12
 enter_x 1

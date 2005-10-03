@@ -5,6 +5,11 @@ msg
 Creator: CF Java Map Editor
 Date:    2/28/2002
 endmsg
+shopitems cloak:20;gem:20;scroll:20;wand:21;rod:22;horn:24;ring:26;amulet:22;treasure:16;*:0
+shopmin 1
+shopmax 500000
+shoprace dragon
+shopgreed 1.0
 width 16
 height 16
 enter_x 7

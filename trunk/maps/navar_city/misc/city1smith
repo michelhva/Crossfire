@@ -6,6 +6,11 @@ Creator:
 Email:
 Date: Wed Oct 27 11:21:39 1993
 endmsg
+shopitems weapon:50;armour:54;shield:52;helmet:33;*:-100
+shopmin 500
+shopmax 5000000
+shoprace dwarf
+shopgreed 2.2
 width 16
 height 10
 difficulty 15
