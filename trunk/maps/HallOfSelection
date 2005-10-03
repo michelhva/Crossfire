@@ -1560,10 +1560,10 @@ spells daily, and your capacity to
 cast them has increased hugely.
 You've had some training in weaponry
 to help defend yourself, but you tend
-to leave most of the fighting
-to others, so your physical training
-has been somewhat lacking.
-You've never learend to use magic
+to leave most of the fighting to
+others, so your physical training has
+been somewhat lacking.
+You've never learned to use magic
 innately, but instead rely on a magic
 talisman to channel mana for you.
 The attack spells have imprinted
@@ -1698,8 +1698,8 @@ Your dependence on magical devices
 extends to the use of a talisman to
 channel mana.  The talisman has
 become attuned to detonation and
-trasmutation because of how you've
-used it.
+transmutation because of the way you
+have used it.
 endmsg
 x 5
 y 24
@@ -1732,7 +1732,7 @@ obsessive.  Your frequent practice
 has greatly enhanced your powers, and
 your intellect has been sharpened
 enormously by your quest for ever
-betterways to channel energies.
+better ways to channel energies.
 However, you've totally neglected to
 learn to use weaponry, and you're
 soft and weak.  Barbarians used to
@@ -1789,7 +1789,8 @@ you to learn weaponry as well,
 against your will.  You will find
 that they were wise to do so, but you
 haven't trained as assiduously as you
-should have, so you are soft and weak.
+should have, so you are soft and
+weak.
 endmsg
 x 5
 y 28
@@ -2248,7 +2249,7 @@ end
 arch magic_mouth
 msg
 Welcome to the Hall of Selection.
-Here, you will pick what your
+Here you will pick what your
 character's initial skills shall be.
 Different classes start out with
 different skills, but as you play the
@@ -2256,10 +2257,10 @@ game, you will be able to 'train'
 your character to do whatever task
 you wish.  Like a person, your
 character can learn a new career, IF
-his native abilities allow it.
-Your choice of class will, however,
-have a permanent effect on how the
-player shall appear on the board.
+his native abilities allow it.  Your
+choice of class will, however, have a
+permanent effect on how the player
+will appear on the board.
 endmsg
 x 7
 y 8
@@ -2292,14 +2293,14 @@ not to drop things you don't want to.
 Some things are gone forever if you
 drop them onto the ground.
 You can use the command "help" to
-learn more about other commands.
-The ',' (comma) key also picks up
-objects below you.  Another important
-key is the ' key, which tells your
-client that you're about to begin a
-text command.  On some clients you
-can click in a window to type in a
-text command.
+learn more about other commands.  The
+',' (comma) key also picks up objects
+below you.  Another important key is
+the ' key, which tells your client
+that you're about to begin a text
+command.  On some clients you can
+click in a window to type in a text
+command.
 endmsg
 x 7
 y 9
@@ -2315,7 +2316,7 @@ end
 arch magic_mouth
 msg
 Crossfire primer #2:
-skills
+Skills
 Crossfire players can have many
 skills.  Type in the command "skills"
 to see which ones you have.  Right
@@ -2324,8 +2325,8 @@ will be able to choose your beginning
 skills, which are determined by your
 choice of class.
 The main ones are magic, weapons, and
-praying.  There are many more.
-Some you will use like this:
+praying.  There are many more.  Some
+you will use like this:
 use_skill alchemy
 Others, like praying, weapons, and
 magic are automatic.
@@ -2345,17 +2346,19 @@ arch magic_mouth
 msg
 Crossfire primer #3:
 Magic
-Players with the magic skill can cast
-magical spells.
-Magical spells are used in this way:
-by typing, for example:
+Players with magic skills can cast
+magical spells. The magic skills are
+evocation, pyromancy, sorcery, and
+summoning. 
+Magical spells are used by typing, for 
+example:
 cast small lightning
 cast burning hands
-Either of these commands will set the
-RANGE ATTACK to that magic spell.
-Then, "firing" in a direction will
-invoke that spell in that direction.
-Magical energy is call mana, and it
+These commands will set the RANGE
+ATTACK to that magic spell.  Then,
+"firing" in a direction will invoke
+that spell in that direction.
+Magical energy is called mana, and it
 is depleted whenever a player invokes
 a magical spell.   Mana is normally
 replenished slowly, but certain items
@@ -2383,22 +2386,22 @@ in much the same way, for example,
 by typing:
 cast holy word
 cast burning hands
-Either of these commands will set the
-RANGE ATTACK to that praying skill.
-Then, "firing" in a direction will
-invoke that prayer in that direction.
-Grace is a measure of how pleased
-your god is with you at the moment.
-Your god will grant you favors if
-you have sufficient grace for the
-favor, or even sometimes if you don't.
+These commands will set the RANGE
+ATTACK to that prayer.  Then,
+"firing" in a direction will invoke
+that prayer in that direction.  Grace
+is a measure of how pleased your god
+is with you at the moment.  Your god
+will grant you favors if you have
+sufficient grace for the favor, or
+even sometimes if you don't.
 However, asking for big favors when
 you have insufficient grace may bring
 down divine retribution.
-Grace is slowly replenished, up
-to a point.  Beyond that point, you
-must pray to gain more grace.
-This is a convenient way to do this:
+Grace is slowly replenished, up to a
+point.  Beyond that point, you must
+pray to gain more grace.  This is a
+convenient way to do this:
 bind use_skill praying
 P
 Then simply hit the P key repeatedly.
@@ -2433,14 +2436,15 @@ h l
 bjn
 Running in a direction is done by
 <Ctrl> directon.  Firing in
-a direction is <shift> direction.
+a direction is <Shift> direction.
 It's generally better to hit a
 monster with a weapon besides your
-fists.   Click on your inventory
+fists.  Click on your inventory
 until you figure out how to get a
 weapon to be marked "wielded".  Then,
 you'll be able to hit the monster
-with the weapon when you run into him.
+with the weapon when you run into
+him.
 endmsg
 x 7
 y 13
@@ -2465,11 +2469,11 @@ Religions are acquired by praying at
 an altar.  Any player with the
 praying skill may pray at an altar
 and become a devotee of that god.
-The various dieties are very
+The various deities are very
 different from each other.  Beginning
 players should probably choose either
-Mostrai or Valriel, and avoid Gaea and
-Rugilli.  Temples for most of the
+Mostrai or Valriel, and avoid Gaea
+and Rugilli.  Temples for most of the
 religions are in the town Scorn,
 where you will appear after you
 choose a class.
@@ -3213,7 +3217,7 @@ balance and agility, and you've also
 become strong and hardy.  Because of
 occasional oarswork, you and your
 shipmates have an admirable command
-of rythm, and you can sing well.
+of rhythm, and you can sing well.
 You've learned to make the most of
 your time in port:  after you pass
 out drunk in a bar and wake to find
@@ -3332,15 +3336,15 @@ msg
 Monk
 In the Monastery, they believed in
 mental discipline and peace through
-physical training, meditation, and to
-a lesser extent, religious devotion.
-Your mental equilibrium requires you
-to forego the use of weapons, but
-your physical training in karate
-means you're not helpless.  Your
-inner peacefulness grants you the
-ability to regenerate faster and to
-sense auras.
+physical training, meditation, and,
+to a lesser extent, religious
+devotion.  Your mental equilibrium
+requires you to forego the use of
+weapons, but your physical training
+in karate means you're not helpless.
+Your inner peacefulness grants you
+the ability to regenerate faster and
+to sense auras.
 endmsg
 x 9
 y 26
@@ -3373,12 +3377,12 @@ emphasis on 'priest'.  You've been
 taught archery and the use of
 weapons, but great care has been
 taken that you're doctrinally
-correct.  Now you've been sent out
-in the world to convert the
-unrighteous and destroy the enemies
-of the faith, and your churchmembers
-have been charged a pretty penny to
-equip you to do it!
+correct.  Now you've been sent out in
+the world to convert the unrighteous
+and destroy the enemies of the faith,
+and your churchmembers have been
+charged a pretty penny to equip you
+to do it!
 All other areas of your education
 have been neglected.  Perhaps aware
 of your deficiency, your superiors
