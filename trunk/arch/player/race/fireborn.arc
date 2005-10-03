@@ -6,10 +6,10 @@ face fireborn.111
 color_fg red
 msg
 Legends say that fireborn are sparks struck
-off the anvil of creation which had life and
-spirit, and after time, mind. Those who
+off the anvil of creation, with life and
+spirit, and eventually mind. Those who
 research magic think that they are relatives
-of some  kind to will 'o the wisps. An
+of some kind to will o' the wisps. An
 observer seeing one for the first time would
 see a strangely intelligent vortex of
 flame somehow carrying items without burning
