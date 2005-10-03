@@ -8,6 +8,8 @@ Date: Fri Oct 15 13:50:25 1993
 endmsg
 hp 14
 stand_still 1
+shopitems armour:50;shield:50;helmet:40;cloak:40;boots:40;gloves:40;bracers:50;girdle:50;*:-50
+shopmax 2000
 end
 arch shop_empty
 end
