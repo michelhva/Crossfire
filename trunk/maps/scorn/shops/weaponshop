@@ -7,6 +7,8 @@ Date: Fri Oct 15 13:53:40 1993
 endmsg
 sp 14
 stand_still 1
+shopitems weapon:80;*:-50
+shopmax 3000   
 end
 arch shop_empty
 end

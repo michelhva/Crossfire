@@ -11,6 +11,8 @@ height 16
 enter_x 14
 enter_y 14
 fixed_resettime 1
+shopitems amulet:25;ring:40;potion:40;book:35;scroll:40;spellbook:40;skillscroll:50;wand:40;*:-50
+shopmax 2000
 end
 arch shop_empty
 end
