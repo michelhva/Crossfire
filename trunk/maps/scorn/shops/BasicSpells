@@ -115,13 +115,11 @@ y 3
 arch cleric_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_cause_medium_wounds
 end
 end
 arch cleric_book
-value 1500
 identified 1
 unpaid 1
 randomitems none
@@ -129,7 +127,6 @@ arch spell_cause_heavy_wounds
 end
 end
 arch cleric_book
-value 250
 identified 1
 unpaid 1
 randomitems none
@@ -154,13 +151,11 @@ y 4
 arch cleric_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_cause_medium_wounds
 end
 end
 arch cleric_book
-value 1500
 identified 1
 unpaid 1
 randomitems none
@@ -168,7 +163,6 @@ arch spell_cause_heavy_wounds
 end
 end
 arch cleric_book
-value 250
 identified 1
 unpaid 1
 randomitems none
@@ -193,13 +187,11 @@ y 5
 arch cleric_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_cause_medium_wounds
 end
 end
 arch cleric_book
-value 1500
 identified 1
 unpaid 1
 randomitems none
@@ -207,7 +199,6 @@ arch spell_cause_heavy_wounds
 end
 end
 arch cleric_book
-value 250
 identified 1
 unpaid 1
 randomitems none
@@ -232,13 +223,11 @@ y 6
 arch cleric_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_cause_medium_wounds
 end
 end
 arch cleric_book
-value 1500
 identified 1
 unpaid 1
 randomitems none
@@ -246,7 +235,6 @@ arch spell_cause_heavy_wounds
 end
 end
 arch cleric_book
-value 250
 identified 1
 unpaid 1
 randomitems none
@@ -271,13 +259,11 @@ y 7
 arch cleric_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_cause_medium_wounds
 end
 end
 arch cleric_book
-value 1500
 identified 1
 unpaid 1
 randomitems none
@@ -285,7 +271,6 @@ arch spell_cause_heavy_wounds
 end
 end
 arch cleric_book
-value 250
 identified 1
 unpaid 1
 randomitems none
@@ -430,7 +415,6 @@ y 3
 arch evoker_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_armour
 end
@@ -438,7 +422,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_icestorm
 end
@@ -446,7 +429,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_small_snowstorm
 end
@@ -454,7 +436,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_small_bullet
 end
@@ -477,7 +458,6 @@ y 4
 arch evoker_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_detect_monster
 end
@@ -485,7 +465,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_mana_blast
 end
@@ -493,7 +472,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_small_manaball
 end
@@ -501,7 +479,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 750
 randomitems none
 arch spell_frostbolt
 end
@@ -524,7 +501,6 @@ y 5
 arch evoker_book
 identified 1
 unpaid 1
-value 750
 randomitems none
 arch spell_manabolt
 end
@@ -532,7 +508,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 750
 randomitems none
 arch spell_medium_snowstorm
 end
@@ -540,7 +515,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 1000
 randomitems none
 arch spell_lg_magic_bullet
 end
@@ -548,7 +522,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 1000
 randomitems none
 arch spell_rune_of_frost
 end
@@ -571,7 +544,6 @@ y 6
 arch evoker_book
 identified 1
 unpaid 1
-value 1000
 randomitems none
 arch spell_medium_manaball
 end
@@ -579,7 +551,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 1250
 randomitems none
 arch spell_large_snowstorm
 end
@@ -587,7 +558,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 1750
 randomitems none
 arch spell_bullet_swarm
 end
@@ -595,7 +565,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 1500
 randomitems none
 arch spell_large_manaball
 end
@@ -618,7 +587,6 @@ y 7
 arch evoker_book
 identified 1
 unpaid 1
-value 2000
 randomitems none
 arch spell_create_frost_wall
 end
@@ -626,7 +594,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 2500
 randomitems none
 arch spell_bullet_storm
 end
@@ -634,7 +601,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 2500
 randomitems none
 arch spell_cancellation
 end
@@ -642,7 +608,6 @@ end
 arch evoker_book
 identified 1
 unpaid 1
-value 2500
 randomitems none
 arch spell_create_pool_of_chaos
 end
@@ -796,7 +761,6 @@ x 5
 y 3
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_burning_hands
@@ -804,7 +768,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_sm_lightning
@@ -812,7 +775,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 500
 identified 1
 randomitems none
 arch spell_firebolt
@@ -820,7 +782,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_small_fireball
@@ -839,7 +800,6 @@ x 5
 y 4
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_burning_hands
@@ -847,7 +807,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_sm_lightning
@@ -855,7 +814,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 500
 identified 1
 randomitems none
 arch spell_firebolt
@@ -863,7 +821,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 250
 identified 1
 randomitems none
 arch spell_small_fireball
@@ -882,7 +839,6 @@ x 5
 y 5
 arch pyro_book
 unpaid 1
-value 750
 identified 1
 randomitems none
 arch spell_medium_fireball
@@ -890,7 +846,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 1000
 identified 1
 randomitems none
 arch spell_faery_fire
@@ -898,7 +853,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 1000
 identified 1
 randomitems none
 arch spell_large_lightning
@@ -906,7 +860,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 1000
 identified 1
 randomitems none
 arch spell_rune_of_fire
@@ -925,7 +878,6 @@ x 5
 y 6
 arch pyro_book
 unpaid 1
-value 1250
 identified 1
 randomitems none
 arch spell_large_fireball
@@ -933,7 +885,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 1500
 identified 1
 randomitems none
 arch spell_create_bomb
@@ -941,7 +892,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 1500
 identified 1
 randomitems none
 arch spell_create_fire_wall
@@ -949,7 +899,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 2000
 identified 1
 randomitems none
 arch spell_rune_of_shocking
@@ -968,7 +917,6 @@ x 5
 y 7
 arch pyro_book
 unpaid 1
-value 2500
 identified 1
 randomitems none
 arch spell_rune_of_blasting
@@ -976,7 +924,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 3000
 identified 1
 randomitems none
 arch spell_firetrap
@@ -984,7 +931,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 4000
 identified 1
 randomitems none
 arch spell_build_fireball_wall
@@ -992,7 +938,6 @@ end
 end
 arch pyro_book
 unpaid 1
-value 3500
 identified 1
 randomitems none
 arch spell_build_lightning_wall
@@ -1148,7 +1093,6 @@ y 3
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_detect_magic
 end
@@ -1156,7 +1100,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_magic_bullet
 end
@@ -1164,7 +1107,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_magic_missile
 end
@@ -1172,7 +1114,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_marking_rune
 end
@@ -1191,7 +1132,6 @@ y 4
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_probe
 end
@@ -1199,7 +1139,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 250
 randomitems none
 arch spell_slow
 end
@@ -1207,7 +1146,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 500
 randomitems none
 arch spell_confusion
 end
@@ -1215,7 +1153,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 500
 randomitems none
 arch spell_paralyze
 end
@@ -1234,7 +1171,6 @@ y 5
 arch sorcerer_book
 unpaid 1
 identified 1
-value 500
 randomitems none
 arch spell_poison_cloud
 end
@@ -1242,7 +1178,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_dexterity
 end
@@ -1250,7 +1185,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 750
 randomitems none
 arch spell_charisma
 end
@@ -1258,7 +1192,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 500
 randomitems none
 arch spell_strength
 end
@@ -1277,7 +1210,6 @@ y 6
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1000
 randomitems none
 arch spell_constitution
 end
@@ -1285,7 +1217,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1000
 randomitems none
 arch spell_disarm
 end
@@ -1293,7 +1224,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1000
 randomitems none
 arch spell_fear
 end
@@ -1301,7 +1231,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1250
 randomitems none
 arch spell_dark_vision
 end
@@ -1320,7 +1249,6 @@ y 7
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1250
 randomitems none
 arch spell_magic_mapping
 end
@@ -1328,7 +1256,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1500
 randomitems none
 arch spell_invisible
 end
@@ -1336,7 +1263,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1250
 randomitems none
 arch spell_transference
 end
@@ -1344,7 +1270,6 @@ end
 arch sorcerer_book
 unpaid 1
 identified 1
-value 1250
 randomitems none
 arch spell_steambolt
 end
@@ -1499,7 +1424,6 @@ y 3
 arch summoner_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_create_missile
 end
@@ -1507,7 +1431,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_earth_to_dust
 end
@@ -1515,7 +1438,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 250
 randomitems none
 arch spell_lesser_summon_golem
 end
@@ -1523,7 +1445,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_summon_fog
 end
@@ -1542,7 +1463,6 @@ y 4
 arch summoner_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_summon_pet_monster
 end
@@ -1550,7 +1470,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 500
 randomitems none
 arch spell_summon_golem
 end
@@ -1558,7 +1477,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 750
 randomitems none
 arch spell_alchemy
 end
@@ -1566,7 +1484,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1000
 randomitems none
 arch spell_create_earth_wall
 end
@@ -1585,7 +1502,6 @@ y 5
 arch summoner_book
 identified 1
 unpaid 1
-value 1250
 randomitems none
 arch spell_summon_water_elemental
 end
@@ -1593,7 +1509,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1000
 randomitems none
 arch spell_summon_earth_elemental
 end
@@ -1601,7 +1516,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1250
 randomitems none
 arch spell_charm_monsters
 end
@@ -1609,7 +1523,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 750
 randomitems none
 arch spell_counterspell
 end
@@ -1628,7 +1541,6 @@ y 6
 arch summoner_book
 identified 1
 unpaid 1
-value 1500
 randomitems none
 arch spell_create_food
 end
@@ -1636,7 +1548,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1500
 randomitems none
 arch spell_summon_air_elemental
 end
@@ -1644,7 +1555,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1250
 randomitems none
 arch spell_mystic_fist
 end
@@ -1652,7 +1562,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 2000
 randomitems none
 arch spell_counterwall
 end
@@ -1671,7 +1580,6 @@ y 7
 arch summoner_book
 identified 1
 unpaid 1
-value 2500
 randomitems none
 arch spell_build_director
 end
@@ -1679,7 +1587,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 1750
 randomitems none
 arch spell_summon_fire_elemental
 end
@@ -1687,7 +1594,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 2750
 randomitems none
 arch spell_dancing_sword
 end
@@ -1695,7 +1601,6 @@ end
 arch summoner_book
 identified 1
 unpaid 1
-value 3000
 randomitems none
 arch spell_pentagram
 end
