@@ -11,4 +11,5 @@ editable 2048
 identified 1
 name_pl boozes
 client_type 611
+slaying vial_posion:posion
 end
