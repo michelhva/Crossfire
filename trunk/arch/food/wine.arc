@@ -12,4 +12,5 @@ editable 2048
 identified 1
 name_pl bottles of wine
 client_type 611
+slaying vial_poison:wine_poison
 end

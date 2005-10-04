@@ -12,4 +12,5 @@ editable 2048
 identified 1
 name_pl glasses of wine
 client_type 611
+slaying vial_poison:w_glass_poison
 end
