@@ -11,6 +11,7 @@ name_pl vials
 title posion
 client_type 649
 slaying taint
+food 2
 msg
 A poison of some sort.
 Maybe it could be used
