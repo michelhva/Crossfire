@@ -1,5 +1,5 @@
-Object lightgreenamarble
-face lightgreenamarble.111
+Object lightgreenmarble
+face lightgreenmarble.111
 no_pick 1
 is_floor 1
 editable 8
