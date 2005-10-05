@@ -1,6 +1,11 @@
 arch map
 reset_timeout 7200
 region azumauindo
+shopitems *:0
+shopmin 50
+shopmax 2000000
+shoprace human
+shopgreed 1.0
 difficulty 1
 width 16
 height 16
