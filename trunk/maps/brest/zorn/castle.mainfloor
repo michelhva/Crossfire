@@ -2099,8 +2099,13 @@ arch brush
 x 7
 y 7
 end
-arch phole_1
-name hole in the ground
+arch ladder_down
+msg
+It sure is dark ...
+endmsg
+slaying /brest/zorn/castle.basement0
+hp 7
+sp 7
 x 7
 y 7
 end
@@ -17521,6 +17526,10 @@ arch tile_floor
 x 37
 y 14
 end
+arch firepot
+x 37
+y 14
+end
 arch tile_white_floor
 x 37
 y 15
@@ -23719,6 +23728,10 @@ x 49
 y 13
 end
 arch tile_floor
+x 49
+y 14
+end
+arch firepot
 x 49
 y 14
 end
