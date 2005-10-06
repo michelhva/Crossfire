@@ -1,6 +1,7 @@
 Object booze
 face booze.111
 color_fg orange
+randomitems emptyboozebottle
 food 100
 nrof 1
 type 54
