@@ -1,5 +1,6 @@
 Object water
 face water.111
+randomitems emptywaterbottle
 color_fg blue
 food 5
 nrof 1

@@ -1,6 +1,7 @@
 Object poison
 name booze
 face booze.111
+randomitems emptyboozebottle
 color_fg orange
 nrof 1
 type 7
@@ -18,6 +19,7 @@ end
 Object wine_poison
 name bottle of wine
 face wine.111
+randomitems emptywinebottle
 color_fg red
 food 75
 nrof 1
@@ -55,6 +57,7 @@ end
 #
 Object water_poison
 face water.111
+randomitems emptywaterbottle
 color_fg blue
 food 5
 nrof 1
