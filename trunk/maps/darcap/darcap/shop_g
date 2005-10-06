@@ -1,6 +1,8 @@
 arch map
 region darcap
 stand_still 1
+shopitems food:100;flesh:50:*:-80
+shopmax 8000
 end
 arch woodfloor
 end

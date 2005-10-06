@@ -9,6 +9,9 @@ width 17
 height 15
 enter_x 13
 enter_y 13
+shopitems scroll:60;ring:60;amulet:60;potion:40;wand:50;rod:50;*:-60
+shopmin 500
+shopmax 80000
 end
 arch stonefloor2
 end

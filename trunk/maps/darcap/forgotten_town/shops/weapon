@@ -9,6 +9,9 @@ width 15
 height 15
 enter_x 7
 enter_y 14
+shopitems weapon:75;bow:35;*:-40
+shopmax 80000
+shopmin 500
 end
 arch dungeon_magic
 end
