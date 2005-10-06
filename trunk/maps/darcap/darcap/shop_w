@@ -9,6 +9,8 @@ endmsg
 hp 13
 sp 14
 stand_still 1
+shopitems weapon:80;bow:40;*:-50
+shopmax 8000
 end
 arch shop_empty
 end

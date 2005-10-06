@@ -9,6 +9,9 @@ width 15
 height 15
 enter_x 13
 enter_y 13
+shopitems light source:50;inorganic:20;*:0
+shopmin 500
+shopmax 60000
 end
 arch stonefloor2
 end
