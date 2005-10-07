@@ -493,14 +493,14 @@ y 4
 end
 arch sign
 name Brest Message Board
-name_pl Scorn Message Board
+name_pl Brest Message Board
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
 endmsg
 event_say /python/IPO/board.py
 event_say_plugin Python
-event_say_options Scorn board
+event_say_options Brest board
 x 7
 y 4
 end
