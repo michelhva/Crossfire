@@ -1,30 +1,33 @@
-Object dark_elf
+Object dark_elf2
 race faerie
-name dark elf
-randomitems dark_elf
-face dark_elf.111
+name dark elf captain
+randomitems dark_elf2
+face dark_elf2.131
 anim
-dark_elf.111
-dark_elf.112
+facings 2
+dark_elf2.131
+dark_elf2.132
+dark_elf2.171
+dark_elf2.172
 mina
 monster 1
 sleep 1
-Wis 20
+Wis 25
 no_pick 1
 alive 1
-exp 20
+exp 40
 ac 1
 wc 1
-dam 4
-Pow 1
+dam 8
+Pow 2
 Int 15
 Str 13
 Dex 25
-maxsp 20
+maxsp 40
 can_cast_spell 1
-hp 20
-maxhp 20
-level 9
+hp 40
+maxhp 40
+level 18
 speed 0.5
 weight 50000
 pick_up 24
