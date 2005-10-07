@@ -3,6 +3,11 @@ region brest
 x 20
 y 20
 difficulty 9
+shopitems armour:23;shield:21;helmet:20;cloak:15;boots:18;gloves:13;bracers:30;girdle:40;armour improver:35;ring:0;*:-80;
+shopmin 250
+shopmax 150000
+race human
+shopgreed 1.0
 end
 arch shop_empty
 end

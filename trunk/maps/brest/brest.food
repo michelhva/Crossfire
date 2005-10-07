@@ -7,6 +7,11 @@ Email: gnu@foo.bar
 Date: Tue May 31 18:33:43 1994
 endmsg
 difficulty 9
+shopitems food:45;*:-100
+shopmin 1
+shopmax 150000
+race human
+shopgreed 1.0
 x 20
 y 20
 end

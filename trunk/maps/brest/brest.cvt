@@ -3,6 +3,11 @@ region brest
 x 20
 y 20
 difficulty 9
+shopitems *:-40
+shopmin 250
+shopmax 150000
+race human
+shopgreed 1.2
 end
 arch woodfloor
 end
