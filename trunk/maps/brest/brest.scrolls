@@ -1,6 +1,11 @@
 arch map
 name brest.scrolls
 region brest
+shopitems scroll:95;spellbook:-50;*:-100;
+shopmin 5
+shopmax 150000
+race human
+shopgreed 1.0
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
