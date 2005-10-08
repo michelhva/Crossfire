@@ -19,7 +19,7 @@ alive 1
 undead 1
 flying 1
 exp 400000
-level 105
+level 130
 attacktype 17
 resist_magic 100
 resist_cold 100
