@@ -12,12 +12,15 @@ mina
 monster 1
 sleep 1
 Wis 40
+Pow 40
+Con 40
+Int 
 no_pick 1
 alive 1
 undead 1
 flying 1
 exp 50000
-level 100
+level 105
 attacktype 17
 resist_magic 100
 resist_cold 100
@@ -30,11 +33,9 @@ resist_blind 100
 resist_death 100
 resist_confusion 100
 resist_ghosthit 100
-ac -10
-Pow 40
+ac -30
 maxsp 10000
 hp 10000
-Con 20
 maxhp 10000
 wc -5
 dam 100

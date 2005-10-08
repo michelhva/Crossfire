@@ -12,25 +12,30 @@ treasure deathshead
   chance 50
   more
   arch spell_face_of_death
-  chance 50
+  more
+  arch spell_meteor_swarm
   more
   arch spell_hellfire
   more
   arch spell_burning_hands
   more
-  arch spell_medium_fireball
+  arch spell_large_fireball
   more
   arch spell_mass_confusion
+  more
+  arch spell_negabolt
+  more
+  arch spell_negaball
   more
   arch abil_slow
   more
   arch gem
-  nrof 10
-  chance 20
+  nrof 20
+  chance 50
   more
   arch gem
-  nrof 20
-  chance 10
+  nrof 40
+  chance 20
   end
 
 
