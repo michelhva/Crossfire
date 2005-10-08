@@ -1,4 +1,5 @@
 Object deathshead
+name Death's Head
 randomitems deathshead
 race undead
 face deathshead.111
