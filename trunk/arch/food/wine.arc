@@ -1,7 +1,7 @@
 Object wine
 name bottle of wine
 face wine.111
-randomitems emptywinebottle
+on_use_yield winebottle_empty
 color_fg red
 food 75
 nrof 1
