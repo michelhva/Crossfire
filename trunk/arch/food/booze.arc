@@ -1,7 +1,7 @@
 Object booze
 face booze.111
 color_fg orange
-randomitems emptyboozebottle
+on_use_yield boozebottle_empty
 food 100
 nrof 1
 type 54
@@ -12,5 +12,5 @@ editable 2048
 identified 1
 name_pl boozes
 client_type 611
-slaying vial_posion:posion
+slaying vial_poison:poison
 end

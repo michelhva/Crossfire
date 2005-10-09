@@ -10,7 +10,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -26,7 +26,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -42,7 +42,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -58,7 +58,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -74,7 +74,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -90,7 +90,7 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
 
@@ -106,6 +106,6 @@ material 32
 value 4
 weight 150
 editable 2048
-randomitems emptyvialbottle
+on_use_yield vial_empty
 client_type 611
 end
