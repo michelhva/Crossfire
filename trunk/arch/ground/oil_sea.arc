@@ -8,8 +8,8 @@ oil_sea.114
 oil_sea.113
 oil_sea.112
 mina
-name oil
-name_pl oil
+name oil ocean
+name_pl oil ocean
 magicmap blue
 smoothlevel 16
 smoothface oil_sea.111 oil_sea_S.111
