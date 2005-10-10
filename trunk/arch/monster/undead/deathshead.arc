@@ -35,6 +35,7 @@ resist_ghosthit 100
 ac -50
 wc -70
 maxsp 10000
+sp 10000
 hp 12000
 maxhp 12000
 dam 100
