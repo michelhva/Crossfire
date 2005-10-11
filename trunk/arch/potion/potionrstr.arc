@@ -10,5 +10,6 @@ weight 1500
 color_fg light_blue
 editable 2048
 name_pl potions of life
+on_use_yield potion_empty
 client_type 651
 end

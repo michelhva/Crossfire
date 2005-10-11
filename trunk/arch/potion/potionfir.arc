@@ -11,6 +11,7 @@ value 5200
 resist_cold 90
 editable 2048
 name_pl potions of cold resistance
+on_use_yield potion_empty
 client_type 651
 end
 Object potion_fire2
@@ -26,6 +27,7 @@ value 28000
 resist_cold 95
 editable 2048
 name_pl potions of frost resistance
+on_use_yield potion_empty
 client_type 651
 end
 
