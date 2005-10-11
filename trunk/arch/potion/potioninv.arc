@@ -11,6 +11,7 @@ value 10000
 resist_physical 90
 editable 2048
 name_pl potions of invulnerability
+on_use_yield potion_empty
 client_type 651
 end
 Object potion_aethereality
@@ -26,6 +27,7 @@ value 28000
 resist_physical 95
 editable 2048
 name_pl potions of aethereality
+on_use_yield potion_empty
 client_type 651
 end
 
