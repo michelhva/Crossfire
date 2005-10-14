@@ -11499,6 +11499,19 @@ arch grass
 x 42
 y 39
 end
+arch minihouse
+name abandoned temple
+slaying /scorn/misc/kboldtemp1
+msg
+It looks as if someone took up refuge
+here...
+
+endmsg
+hp 8
+sp 1
+x 42
+y 39
+end
 arch dungeon_magic
 x 42
 y 40
