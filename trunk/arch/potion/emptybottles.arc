@@ -1,3 +1,23 @@
+Object coffee_empty
+name empty cup
+name_pl empty cups
+nrof 1
+last_sp 10
+type 15
+face coffee_empty.111
+material 4
+dam 1
+weight 50
+value 1
+editable 1024
+attacktype 1
+weapontype 8
+magicmap brown
+client_type 611
+body_arm -1
+skill one handed weapons
+end
+
 Object w_glass_empty
 name empty glass
 name_pl empty glasses
