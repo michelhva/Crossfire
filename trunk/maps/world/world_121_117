@@ -1,6 +1,6 @@
 arch map
-region navar
 name world_121_117
+region navar
 msg
 
 endmsg
@@ -6844,6 +6844,10 @@ elevation 2947
 x 26
 y 24
 end
+arch dirtroad_2_2_1
+x 26
+y 24
+end
 arch steppe
 elevation 3127
 x 26
@@ -7095,6 +7099,10 @@ y 23
 end
 arch steppe
 elevation 3122
+x 27
+y 24
+end
+arch dirtroad_1_4
 x 27
 y 24
 end
@@ -7353,8 +7361,16 @@ elevation 3445
 x 28
 y 24
 end
+arch dirtroad_2_2_3
+x 28
+y 24
+end
 arch hills
 elevation 3933
+x 28
+y 25
+end
+arch dirtroad_2_2_1
 x 28
 y 25
 end
@@ -7612,13 +7628,25 @@ elevation 4365
 x 29
 y 25
 end
+arch dirtroad_2_2_3
+x 29
+y 25
+end
 arch steppe
 elevation 4325
 x 29
 y 26
 end
+arch dirtroad_1_1
+x 29
+y 26
+end
 arch steppe
 elevation 3973
+x 29
+y 27
+end
+arch dirtroad_2_2_1
 x 29
 y 27
 end
@@ -7666,8 +7694,8 @@ elevation 3717
 x 29
 y 35
 end
-arch hills
-elevation 4053
+arch steppe
+elevation 4602
 x 29
 y 36
 end
@@ -7676,8 +7704,8 @@ elevation 3609
 x 29
 y 37
 end
-arch hills_rocky
-elevation 3118
+arch woods_2
+elevation 2588
 x 29
 y 38
 end
@@ -7864,6 +7892,10 @@ elevation 4542
 x 30
 y 27
 end
+arch dirtroad_1_4
+x 30
+y 27
+end
 arch jungle_1
 elevation 2155
 x 30
@@ -7903,13 +7935,25 @@ elevation 4984
 x 30
 y 34
 end
+arch dirtroad_2_2_2
+x 30
+y 34
+end
 arch steppe
 elevation 4258
 x 30
 y 35
 end
-arch hills_rocky
-elevation 3521
+arch dirtroad_1_1
+x 30
+y 35
+end
+arch steppe
+elevation 3698
+x 30
+y 36
+end
+arch dirtroad_2_2_4
 x 30
 y 36
 end
@@ -7918,8 +7962,8 @@ elevation 2232
 x 30
 y 37
 end
-arch hills_rocky
-elevation 2830
+arch woods_2
+elevation 2588
 x 30
 y 38
 end
@@ -8110,8 +8154,16 @@ elevation 4775
 x 31
 y 27
 end
+arch dirtroad_2_2_3
+x 31
+y 27
+end
 arch steppe
 elevation 3604
+x 31
+y 28
+end
+arch dirtroad_1_1
 x 31
 y 28
 end
@@ -8124,8 +8176,12 @@ arch bridge_ns
 x 31
 y 29
 end
-arch hills
-elevation 3932
+arch steppe
+elevation 4681
+x 31
+y 30
+end
+arch dirtroad_1_1
 x 31
 y 30
 end
@@ -8134,8 +8190,16 @@ elevation 4681
 x 31
 y 31
 end
+arch dirtroad_1_1
+x 31
+y 31
+end
 arch steppe
 elevation 4858
+x 31
+y 32
+end
+arch dirtroad_1_1
 x 31
 y 32
 end
@@ -8144,18 +8208,26 @@ elevation 4717
 x 31
 y 33
 end
+arch dirtroad_1_1
+x 31
+y 33
+end
 arch hills
 elevation 4015
 x 31
 y 34
 end
-arch steppe
-elevation 3621
+arch dirtroad_2_2_4
+x 31
+y 34
+end
+arch tree
+elevation 1666
 x 31
 y 35
 end
-arch steppe
-elevation 3698
+arch tree
+elevation 1666
 x 31
 y 36
 end
@@ -14153,6 +14225,14 @@ arch mountain
 elevation 7573
 x 49
 y 49
+end
+arch barn
+name dragon hangar - Navar
+slaying /navar_city/dragon_hangar/hangar
+hp 15
+sp 1
+x 28
+y 36
 end
 arch barrack_long
 x 36
