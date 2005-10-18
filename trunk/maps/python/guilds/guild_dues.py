@@ -16,27 +16,27 @@
 #
 # author:Avion temitchell@sourceforge.net
 
-import CFPython
+import Crossfire
 import CFGuilds
 import CFItemBroker
 import random
 import string
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=whoami.WhoAmI()
 
 remarklist = ['Excellent','Thank You','Thank You','Thank You', 'Thank You', 'Great', 'OK', 'Wonderful', 'Swell', 'Dude', 'Big Spender']
 exclaimlist = ['Hey','Hey','Hey','Hey', 'Now just a minute', 'AHEM', 'OK...Wait a minute', 'Look chowderhead']
 buddylist = ['buddy','buddy','buddy','buddy','pal','friend','friend','friend','friend','dude','chum', 'sweetie']
 
-guildname=CFPython.GetEventOptions(whoami,6) # 6 is say event
-text = string.split(CFPython.WhatIsMessage())
+guildname=Crossfire.ScriptParameters() # 6 is say event
+text = string.split(Crossfire.WhatIsMessage())
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     cointype = "imperial" #What type of token are we using for guild dues?
-    object = CFPython.CheckInventory(activator,cointype)
+    object = activator.CheckInventory(cointype)
 
     if text[0] == 'help' or text[0] == 'yes':
         message='Let me know how many %s you want to pay.  Say pay <amount>' %cointype
@@ -50,7 +50,7 @@ if (guildname):
                     guild.pay_dues(activatorname,cost)
                     message = "%s, %d %s paid to the guild." %(random.choice(remarklist),cost, cointype)
                 else:
-                    if cost > 1: 
+                    if cost > 1:
                        message ="%s, you don't have %d %ss." %(random.choice(exclaimlist),cost,cointype)
                     else:
                         message ="You don't have any %s %s." %(cointype,random.choice(buddylist))
@@ -59,7 +59,7 @@ if (guildname):
         else:
             message = "How much ya wanna pay %s?" %(random.choice(buddylist))
     else:
-        message = "Howdy %s, paying some guild dues today?" %(random.choice(buddylist))        
-    CFPython.Say(whoami, message)
+        message = "Howdy %s, paying some guild dues today?" %(random.choice(buddylist))
+    whoami.Say(message)
 else:
-    CFPython.Write('Guildname Error, please notify a DM', activator)
+    activator.Write('Guildname Error, please notify a DM')

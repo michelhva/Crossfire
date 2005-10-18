@@ -19,35 +19,35 @@
 # The author can be reached via e-mail at temitchell@sourceforge.net
 #
 
-import CFPython
+import Crossfire
 import CFGuilds
 
 def find_player(object):
-    while (CFPython.GetType(object) != 1) : #1 is type 'Player'
-        object = CFPython.GetPreviousObject(object)
+    while (object.Type != 1) : #1 is type 'Player'
+        object = object.Above
         if not object:
             return 0
     return object
-   
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-map = CFPython.GetMap(activator)
-whoami=CFPython.WhoAmI()
 
-guildname=CFPython.GetEventOptions(whoami,1) # 1 is 'apply' event
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+map = activator.Map
+whoami=Crossfire.WhoAmI()
+
+guildname=Crossfire.ScriptParameters() # 1 is 'apply' event
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     #find players by coords
-    ob=CFPython.GetFirstObjectOnSquare(map,9,16)
+    ob=map.GetFirstObjectOnSquare(9,16)
     player = find_player(ob)
     if player: # look for player
-        charname=CFPython.GetName(player)
+        charname=player.Name
         in_guild = CFGuilds.SearchGuilds(charname)
         if in_guild == 0:
             if guild.info(charname):
                 #already a member
-                message = '%s is already a member.' %charname    
+                message = '%s is already a member.' %charname
             else:
                 guild.add_member(charname, 'Initiate')
                 message = 'Added %s to the guild' %charname
@@ -58,6 +58,6 @@ if (guildname):
 else:
     print 'Guild Join Error: %s' %(guildname)
     message = 'Guild Join Error, please notify a DM'
-    
-CFPython.Say(whoami, message)
-    
+
+whoami.Say(message)
+

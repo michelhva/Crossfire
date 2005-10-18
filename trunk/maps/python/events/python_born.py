@@ -20,11 +20,10 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFLog
 
-activator = CFPython.WhoIsActivator()
-name = CFPython.GetName(activator)
+activator = Crossfire.WhoIsActivator()
 
 log = CFLog.CFLog()
-log.create(name)
+log.create(activator.Name)

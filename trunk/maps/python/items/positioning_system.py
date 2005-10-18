@@ -1,43 +1,43 @@
-import CFPython
+import Crossfire
 
 world_prefix = '/world/world_'
 world_len = len( world_prefix ) + len( 'xxx_xxx' )
 world_sep = '_'
 world_map_size = 50
 
-CFPython.SetReturnValue( 1 )
+Crossfire.SetReturnValue( 1 )
 
-player = CFPython.WhoIsActivator()
-gps = CFPython.WhoAmI()
-map = CFPython.GetMap( player )
+player = Crossfire.WhoIsActivator()
+gps = Crossfire.WhoAmI()
+map = player.Map
 
 if ( map == 0 ):
-	CFPython.CFWrite( 'You\'re lost in a vacuum!', player )
+	player.Write( 'You\'re lost in a vacuum!')
 else:
-	path = CFPython.GetMapPath( map )
+	path = map.Path
 	if ( path.find( world_prefix ) != 0 ) or ( len( path ) != world_len ):
-		CFPython.Write( 'You can\'t position yourself here.', player )
+		player.Write( 'You can\'t position yourself here.' )
 	else:
-		marked = CFPython.GetMarkedItem( player )
+		marked = player.MarkedItem
 
-		if ( marked != gps ) and ( CFPython.GetFood( gps ) == 0 ):
-			CFPython.Write( 'You must fix the origin of the positioning system first!', player )
+		if ( marked != gps ) and ( gps.Food == 0 ):
+			player.Write( 'You must fix the origin of the positioning system first!' )
 		else:
 			coord = path.split( world_sep )
 			if ( len( coord ) != 3 ):
-				CFPython.Write( 'Strange place, you can\'t position yourself...', player )
+				player.Write( 'Strange place, you can\'t position yourself...' )
 			else:
 				map_x = int( coord[ 1 ] ) - 99
 				map_y = int( coord[ 2 ] ) - 99
-				x = map_x * world_map_size + CFPython.GetXPosition( player )
-				y = map_y * world_map_size + CFPython.GetYPosition( player )
+				x = map_x * world_map_size + player.X
+				y = map_y * world_map_size + player.Y
 
 				if ( marked == gps ):
-					CFPython.SetHP( gps, x )
-					CFPython.SetSP( gps, y )
-					CFPython.SetFood( gps, 1 )
-					CFPython.Write( 'You reset the origin of the system.', player )
+					gps.HP=x
+					gps.SP=y
+					gps.Food=1
+					player.Write( 'You reset the origin of the system.' )
 				else:
-					x = x - CFPython.GetHP( gps )
-					y = y - CFPython.GetSP( gps )
-					CFPython.Write( 'You are at %s:%s.'%( x, y ), player )
+					x = x - gps.HP
+					y = y - gps.SP
+					player.Write( 'You are at %s:%s.'%( x, y ))

@@ -10,7 +10,7 @@
 #
 # Please help by adding new styles of insults to this fine script.
 
-import CFPython
+import Crossfire
 from random import choice
 
 def Insult(style):
@@ -42,13 +42,13 @@ def Insult(style):
     prefixA = ['You are a','Your Matron\'s a', 'You']
     prefixAn = ['You are an', 'Your Matron\'s an', 'You']
 
-##NO STYLE 
+##NO STYLE
   else:
     return "No such style stupid."
-    
+
   vowels = ['a', 'e', 'i', 'o', 'u']
   isvowel = 0
-  
+
   rnoun = choice(noun)
   radj1 = choice(adj1)
   radj2 = choice(adj2)
@@ -63,9 +63,9 @@ def Insult(style):
   return insult
 
 
-activator=CFPython.WhoIsActivator()
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+whoami=Crossfire.WhoAmI()
 #style of insult desired to hurl in event options
-style = CFPython.GetEventOptions(whoami,1) # 1 is apply event
+style = Crossfire.ScriptParameters() # 1 is apply event
 
-CFPython.Write(Insult(style),activator)
+activator.Write(Insult(style))

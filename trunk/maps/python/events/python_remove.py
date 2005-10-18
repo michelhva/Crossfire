@@ -21,13 +21,13 @@
 # Updated to use new path functions in CFPython and Bank
 # acount cleanup - Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFLog
 import CFBank
 import CFGuilds
 
-activator = CFPython.WhoIsActivator()
-name = CFPython.GetName(activator)
+activator = Crossfire.WhoIsActivator()
+name = activator.Name
 
 log = CFLog.CFLog()
 log.remove(name)

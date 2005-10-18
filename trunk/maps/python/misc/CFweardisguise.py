@@ -7,22 +7,22 @@
 # This script is meant for items that can be worn or carried really
 # I can't say how it will react if you hook it to other types of objects.
 
-import CFPython
+import Crossfire
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
 
-option=CFPython.GetEventOptions(whoami,1) # 1 is apply event
-    
+option=Crossfire.ScriptParameters() # 1 is apply event
+
 if option:
-    inv = CFPython.CheckInventory(activator, option) #Remove any previous disguise
+    inv = activator.CheckInventory(option) #Remove any previous disguise
     if inv:
-        CFPython.RemoveObject(inv)
-        #print "removing tag"      
+        inv.Remove()
+        #print "removing tag"
 
-    if not CFPython.IsApplied(whoami): #is the object is being applied
-        tag = CFPython.CreateInvisibleObjectInside(activator, option)
-        CFPython.SetName(tag, option)
+    if not whoami.Applied: #is the object is being applied
+        tag = activator.CreateInvisibleObjectInside(option)
+        tag.Name=option
         #print "adding tag"
-    
+
