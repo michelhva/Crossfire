@@ -94,92 +94,8 @@ arch grassbrown
 x 2
 y 2
 end
-arch grassbrown
-x 2
-y 3
-end
-arch grassbrown
-x 2
-y 4
-end
-arch grassbrown
-x 2
-y 5
-end
-arch grassbrown
-x 2
-y 6
-end
-arch grassbrown
-x 2
-y 7
-end
-arch grassbrown
-x 2
-y 8
-end
-arch moat_2_1_2
-x 2
-y 9
-end
-arch grassbrown
-x 3
-end
-arch moat_2_1_2
-x 3
-end
-arch grassbrown
-x 3
-y 1
-end
-arch grassbrown
-x 3
-y 2
-end
-arch grassbrown
-x 3
-y 3
-end
-arch grassbrown
-x 3
-y 4
-end
-arch grassbrown
-x 3
-y 5
-end
-arch grassbrown
-x 3
-y 6
-end
-arch grassbrown
-x 3
-y 7
-end
-arch grassbrown
-x 3
-y 8
-end
-arch moat_2_1_2
-x 3
-y 9
-end
-arch grassbrown
-x 4
-end
-arch moat_2_1_2
-x 4
-end
-arch grassbrown
-x 4
-y 1
-end
-arch grassbrown
-x 4
-y 2
-end
 arch dungeon_magic
-x 4
+x 2
 y 2
 end
 arch stair_down
@@ -195,7 +111,91 @@ wallstyle wooden
 floorstyle stones2
 exitstyle sstair
 endmsg
-slaying /@!templatetest
+slaying /@!%ntree/main
+x 2
+y 2
+end
+arch grassbrown
+x 2
+y 3
+end
+arch grassbrown
+x 2
+y 4
+end
+arch grassbrown
+x 2
+y 5
+end
+arch grassbrown
+x 2
+y 6
+end
+arch grassbrown
+x 2
+y 7
+end
+arch grassbrown
+x 2
+y 8
+end
+arch moat_2_1_2
+x 2
+y 9
+end
+arch grassbrown
+x 3
+end
+arch moat_2_1_2
+x 3
+end
+arch grassbrown
+x 3
+y 1
+end
+arch grassbrown
+x 3
+y 2
+end
+arch grassbrown
+x 3
+y 3
+end
+arch grassbrown
+x 3
+y 4
+end
+arch grassbrown
+x 3
+y 5
+end
+arch grassbrown
+x 3
+y 6
+end
+arch grassbrown
+x 3
+y 7
+end
+arch grassbrown
+x 3
+y 8
+end
+arch moat_2_1_2
+x 3
+y 9
+end
+arch grassbrown
+x 4
+end
+arch moat_2_1_2
+x 4
+end
+arch grassbrown
+x 4
+y 1
+end
+arch grassbrown
 x 4
 y 2
 end
@@ -325,6 +325,28 @@ arch grassbrown
 x 7
 y 2
 end
+arch dungeon_magic
+x 7
+y 2
+end
+arch stair_down
+name stairs going down (xystuff)
+msg
+layoutstyle onion
+symmetry 0
+xsize 40
+ysize 40
+dungeon_level 1
+dungeon_depth 1
+decorstyle furniture
+wallstyle wooden
+floorstyle stones2
+exitstyle sstair
+endmsg
+slaying /@!%ntree/x%x/y%y/templatetest
+x 7
+y 2
+end
 arch grassbrown
 x 7
 y 3
@@ -333,11 +355,55 @@ arch grassbrown
 x 7
 y 4
 end
+arch dungeon_magic
+x 7
+y 4
+end
+arch stair_down
+name stairs going down (xystuff)
+msg
+layoutstyle onion
+symmetry 0
+xsize 40
+ysize 40
+dungeon_level 1
+dungeon_depth 1
+decorstyle furniture
+wallstyle wooden
+floorstyle stones2
+exitstyle sstair
+endmsg
+slaying /@!%ntree/x%x/y%y/templatetest
+x 7
+y 4
+end
 arch grassbrown
 x 7
 y 5
 end
 arch grassbrown
+x 7
+y 6
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch stair_down
+name stairs going down (xystuff)
+msg
+layoutstyle onion
+symmetry 0
+xsize 40
+ysize 40
+dungeon_level 1
+dungeon_depth 1
+decorstyle furniture
+wallstyle wooden
+floorstyle stones2
+exitstyle sstair
+endmsg
+slaying /@!%ntree/x%x/y%y/templatetest
 x 7
 y 6
 end
