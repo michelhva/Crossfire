@@ -1006,6 +1006,14 @@ arch magic_banned
 x 3
 y 1
 end
+arch creator
+slaying Ticket To Stoneville
+other_arch card
+connected 21
+lifesave 1
+x 3
+y 1
+end
 arch cobblestones2
 x 3
 y 1
@@ -1014,12 +1022,24 @@ arch magic_banned
 x 3
 y 2
 end
+arch magic_mouth
+msg
+Drop 1000 gold coins to buy a ticket to
+Stoneville. 
+endmsg
+x 3
+y 2
+end
 arch cobblestones2
 x 3
 y 2
 end
-arch swall_0
-face swall_AA.111
+arch altar_trigger
+name Ticket Booth
+slaying money
+food 10000
+last_sp 1
+connected 21
 x 3
 y 2
 end
@@ -3437,7 +3457,7 @@ y 20
 end
 arch altar_trigger
 name Out Of Order
-slaying Out Of Order
+slaying Ticket To Stoneville
 food 1
 connected 6
 x 10
@@ -10975,6 +10995,9 @@ msg
 Please hurry up or we will be moving
 without you.
 endmsg
+slaying /world/world_103_127
+hp 5
+sp 15
 x 12
 y 20
 end
