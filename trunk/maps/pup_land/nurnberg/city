@@ -4334,9 +4334,11 @@ y 21
 end
 arch sign
 name Nurnberg Message Board
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options Nurnberg  Board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Nurnberg  Board
+end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.

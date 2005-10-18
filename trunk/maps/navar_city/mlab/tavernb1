@@ -7988,8 +7988,10 @@ arch slotmachine3
 name Imps and Devils
 name_pl Silver Sliver
 slaying silvercoin
-event_apply /python/casino/silverslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/silverslots.py
+title Python
+end
 food 0
 x 30
 y 27
@@ -8363,8 +8365,10 @@ end
 arch slotmachine2
 name Yellow Dog
 name_pl Golden Nugget
-event_apply /python/casino/goldslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/goldslots.py
+title Python
+end
 food 0
 x 31
 y 27
@@ -8701,8 +8705,10 @@ end
 arch slotmachine2
 name Golden Nugget
 name_pl Golden Nugget
-event_apply /python/casino/goldslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/goldslots.py
+title Python
+end
 food 0
 x 32
 y 25
@@ -8730,8 +8736,10 @@ end
 arch slotmachine2
 name Golden Nugget
 name_pl Golden Nugget
-event_apply /python/casino/goldslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/goldslots.py
+title Python
+end
 food 0
 x 32
 y 27
@@ -9100,8 +9108,10 @@ slaying platinacoin
 msg
 Drop a platinum coin to play.
 endmsg
-event_apply /python/casino/platinumslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/platinumslots.py
+title Python
+end
 x 33
 y 25
 end
@@ -9129,8 +9139,10 @@ arch slotmachine3
 name Silver Sliver
 name_pl Silver Sliver
 slaying silvercoin
-event_apply /python/casino/silverslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/silverslots.py
+title Python
+end
 food 0
 x 33
 y 27
@@ -9440,8 +9452,10 @@ end
 arch slotmachine2
 name Yellow Dog
 name_pl Golden Nugget
-event_apply /python/casino/goldslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/goldslots.py
+title Python
+end
 food 0
 x 34
 y 25
@@ -9474,8 +9488,10 @@ slaying platinacoin
 msg
 Drop a platinum coin to play.
 endmsg
-event_apply /python/casino/platinumslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/platinumslots.py
+title Python
+end
 x 34
 y 27
 end
@@ -9751,8 +9767,10 @@ arch slotmachine3
 name Silver Sliver
 name_pl Silver Sliver
 slaying silvercoin
-event_apply /python/casino/silverslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/silverslots.py
+title Python
+end
 food 0
 x 35
 y 25
@@ -9780,8 +9798,10 @@ end
 arch slotmachine2
 name Golden Nugget
 name_pl Golden Nugget
-event_apply /python/casino/goldslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/goldslots.py
+title Python
+end
 food 0
 x 35
 y 27
@@ -10100,8 +10120,10 @@ slaying platinacoin
 msg
 Drop a platinum coin to play.
 endmsg
-event_apply /python/casino/platinumslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/platinumslots.py
+title Python
+end
 x 36
 y 25
 end
@@ -10133,8 +10155,10 @@ slaying platinacoin
 msg
 Drop a platinum coin to play.
 endmsg
-event_apply /python/casino/platinumslots.py
-event_apply_plugin Python
+arch event_apply 
+slaying /python/casino/platinumslots.py
+title Python
+end
 x 36
 y 27
 end

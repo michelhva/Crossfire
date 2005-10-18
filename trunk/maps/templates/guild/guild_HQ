@@ -614,9 +614,11 @@ y 1
 end
 arch sign
 name GuildMaster Message Board
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options GUILD_TEMPLATE_GM_board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name GUILD_TEMPLATE_GM_board
+end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
@@ -656,9 +658,11 @@ y 7
 end
 arch crystalball
 name Guild Oracle
-event_say_plugin Python
-event_say /python/guilds/guildoracle.py
-event_say_options GUILD_TEMPLATE
+arch event_say
+title Python
+slaying /python/guilds/guildoracle.py
+name GUILD_TEMPLATE
+end
 name_pl Guild Oracle
 material 256
 no_pick 1
@@ -697,8 +701,10 @@ y 13
 end
 arch sign
 name GuildRankings
-event_apply_plugin Python
-event_apply /python/guilds/guildboard.py
+arch event_apply
+title Python
+slaying /python/guilds/guildboard.py
+end
 x 7
 y 13
 end

@@ -1,7 +1,7 @@
 Mail and Messageboard Python scripts for Crossfire
 Joris Bontje <jbontje@suespammers.org>
 
-Updated Sept 2005 by Ryo Saeba
+Updated Oct. 2005 by Gros
 
 This collection offers scripts and a map that allow you
 to send mail (including items) to your fellow players and place public
@@ -10,7 +10,7 @@ It also allows for NPCs who can report on player login activity (seen.py).
 (note the bank script has been moved to banksay.py)
 
 Requirements:
-- Crossfire (1.4x or higher(version must have system path functions in Python Plugin))
+- Crossfire (October 19th, 2005 CVS code or later, requires v2.0 plugin interface)
 - Python (2.0 or higher)
 - Python Crossfire plugin (latest)
 

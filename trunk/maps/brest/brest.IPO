@@ -115,10 +115,14 @@ x 1
 y 4
 end
 arch mailbox
-event_close /python/IPO/send.py
-event_close_plugin Python
-event_apply /python/IPO/receive.py
-event_apply_plugin Python
+arch event_close
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply
+slaying /python/IPO/receive.py
+title Python
+end
 x 1
 y 4
 material 0
@@ -175,8 +179,10 @@ msg
 Seems the mail's down... sorry, come
 back once the required law is passed.
 endmsg
-event_say /python/IPO/say.py
-event_say_plugin Python
+arch event_say
+slaying /python/IPO/say.py
+title Python
+end
 x 2
 y 2
 level 115
@@ -498,9 +504,11 @@ msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
 endmsg
-event_say /python/IPO/board.py
-event_say_plugin Python
-event_say_options Brest board
+arch event_say
+slaying /python/IPO/board.py
+title Python
+name Brest board
+end
 x 7
 y 4
 end

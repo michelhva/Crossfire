@@ -19,17 +19,17 @@
 
 import os
 import string
-import CFPython
+import Crossfire
 
 class CFDataFile:
     '''Plain text storage for Crossfire data'''
-    
+
     def __init__(self, datafile_name):
         '''make datafile paths for datafile 'object'
         - these all go in ../var/crossfire/datafiles to keep the local dir clean'''
         self.datafile_name = datafile_name
-        self.filename = os.path.join((CFPython.GetLocalDirectory()),'datafiles',datafile_name)
-        
+        self.filename = os.path.join((Crossfire.LocalDirectory()),'datafiles',datafile_name)
+
     def exists(self):
         '''checks for datafile - no need to load it yet'''
         if os.path.isfile(self.filename):
@@ -69,7 +69,7 @@ class CFDataFile:
                 templist = list.split('|')
                 DF[templist[0]] = templist[1:]
             return DF
-        
+
     def putData(self, dic):
         '''Writes dictionary to formatted file - uses | character as a delimiter'''
         try:
@@ -90,7 +90,7 @@ class CFDataFile:
                     tmp.append(str(item))
                 temp = '%s|%s\n' %(entry, (string.join(tmp,'|')))
                 file.write(temp)
-            file.close()        
+            file.close()
 
 class CFData:
     '''CFData Object is basically a dictionary parsed from the datafile -
@@ -100,7 +100,7 @@ class CFData:
     def __init__(self, filename, header):
         self.header = header
         self.datafile = CFDataFile(filename)
-        
+
         if self.datafile.exists():
             self.datadb = self.datafile.getData()
             if self.datadb['#'] != self.header:
@@ -119,7 +119,7 @@ class CFData:
             return 1
         else:
             return 0
-    
+
     def exist(self, name):
         '''checks if a record exists given the primary key as "name"'''
         if self.datadb.has_key(name):
@@ -137,7 +137,7 @@ class CFData:
             return record
         else:
             return 0
-        
+
     def put_record(self, record):
         '''adds an line entry to the datafile'''
         name = record['#']
@@ -147,11 +147,11 @@ class CFData:
             temp.append(record[item])
         self.datadb[name]=temp
         self.datafile.putData(self.datadb)
-    
+
     def get_keys(self):
         '''returns a sorted list of the primary keys (usually names) in the datafile'''
         keys = self.datadb.keys()
         keys.remove('#')
         keys.sort()
         return keys
-        
+

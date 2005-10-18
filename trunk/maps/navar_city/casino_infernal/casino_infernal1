@@ -1227,9 +1227,10 @@ y 15
 end
 arch slotmachine3
 name GoldFinger
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 last_sp 1
 x 7
@@ -1285,8 +1286,10 @@ y 23
 end
 arch c_woman
 name Ruby
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 msg
 @match *
 Sorry I'm on my break.
@@ -1588,8 +1591,10 @@ y 12
 end
 arch slotmachine2
 name TheMagistrate
-event_apply_plugin Python
-event_apply /python/casino/imperialslots.py
+arch event_apply
+title Python
+slaying /python/casino/imperialslots.py
+end
 msg
 Imperial banknotes only!
 endmsg
@@ -1617,9 +1622,10 @@ y 16
 end
 arch slotmachine2
 name BigNugget
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 last_sp 1
 x 9
@@ -2042,9 +2048,10 @@ y 15
 end
 arch slotmachine3
 name GoldBrick
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 last_sp 1
 x 11
@@ -2424,9 +2431,10 @@ end
 arch slotmachine3
 name Silverado
 face slotmachine2.111
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 food 0
 last_sp 1
 x 12
@@ -2671,8 +2679,10 @@ end
 arch slotmachine2
 name WolvesBane
 face slotmachine1.111
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 x 13
 y 24
 end
@@ -3448,8 +3458,10 @@ y 24
 end
 arch slotmachine1
 name Starlight
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 x 17
 y 24
 end
@@ -3746,9 +3758,10 @@ y 25
 end
 arch slotmachine3
 name WhiteLightning
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 food 0
 last_sp 1
 x 18
@@ -3935,9 +3948,10 @@ y 13
 end
 arch slotmachine2
 name DwarfHorde
-event_apply_plugin Python
-event_apply /python/casino/diamondslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/diamondslots.py
+end
 food 0
 last_sp 1
 x 19
@@ -3953,9 +3967,10 @@ y 15
 end
 arch slotmachine3
 name GoldenShower
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 x 19
 y 15
@@ -4068,8 +4083,10 @@ x 19
 y 26
 end
 arch cobblestones2
-event_say_plugin Python
-event_say casinodoor.py
+arch event_say
+title Python
+slaying casinodoor.py
+end
 x 19
 y 27
 end
@@ -4357,9 +4374,10 @@ end
 arch slotmachine2
 name KingMaker
 face slotmachine1.111
-event_apply_plugin Python
-event_apply /python/casino/imperialslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/imperialslots.py
+end
 food 0
 last_sp 1
 x 21
@@ -4393,9 +4411,11 @@ end
 arch slotmachine2
 name Moria
 face slotmachine1.111
-event_apply_plugin Python
-event_apply /python/misc/CFInsulter.py
-event_apply_options shakespear
+arch event_apply
+title Python
+slaying /python/misc/CFInsulter.py
+name shakespear
+end
 msg
 You hear angry muttering coming from inside this slotmachine.
 Perhaps it is broken.
@@ -4827,9 +4847,10 @@ y 13
 end
 arch slotmachine2
 name MineShaft
-event_apply_plugin Python
-event_apply /python/casino/diamondslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/diamondslots.py
+end
 food 0
 last_sp 1
 x 23
@@ -4845,9 +4866,10 @@ y 15
 end
 arch slotmachine3
 name MidasTouch
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
-slaying
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 last_sp 1
 x 23

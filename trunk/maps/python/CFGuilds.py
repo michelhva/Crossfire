@@ -18,14 +18,14 @@
 #
 # The author can be reached via e-mail at temitchell@sourceforge.net
 
-import CFPython
+import Crossfire
 
 from time import localtime, strftime, time
 import os
 from CFDataFile import CFDataFile, CFData
 
 def GuildUpdate():
-    GuildList = os.path.join(CFPython.GetDataDirectory(),CFPython.GetMapDirectory(),'templates','guild','GuildList')
+    GuildList = os.path.join(Crossfire.DataDirectory(),Crossfire.MapDirectory(),'templates','guild','GuildList')
     try:
             guildfile = open(GuildList,'r')
             guildlisting = guildfile.read().split('\n')
@@ -65,7 +65,7 @@ class CFGuildHouses:
             return record
         else:
             return 0
-        
+
     def list_guilds(self):
           return self.guildhouselist.get_keys()
 
@@ -91,8 +91,8 @@ class CFGuildHouses:
             self.guildhouselist.put_record(record)
             return 1
         else:
-            return 0       
-        
+            return 0
+
     def change_status(self, name, status):
         record = self.info(name)
         if record:
@@ -104,7 +104,7 @@ class CFGuildHouses:
                 return 0
         else:
             return 0
-        
+
     def add_questpoints(self, name, number):
         record = self.info(name)
         if record:
@@ -118,7 +118,7 @@ class CFGuildHouses:
             return 1
         else:
             return 0
-                    
+
     def update_points(self, name, number):
         record = self.info(name)
         if record:
@@ -161,7 +161,7 @@ class CFGuild:
             return 1
         except:
             return 0
-        
+
     def remove_member(self, name):
         try:
             self.guildlist.remove_record(name)
@@ -196,7 +196,7 @@ class CFGuild:
             return 1
         else:
             return 0
-        
+
     def remove_demerits(self, name, number):
         record = self.info(name)
         if record:
@@ -210,7 +210,7 @@ class CFGuild:
             return 1
         else:
             return 0
-        
+
     def add_questpoints(self, name, number):
         record = self.info(name)
         if record:
@@ -224,7 +224,7 @@ class CFGuild:
             return 1
         else:
             return 0
-    
+
     def pay_dues(self, name, number):
         record = self.info(name)
         if record:

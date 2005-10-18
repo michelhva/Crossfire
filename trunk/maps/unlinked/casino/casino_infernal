@@ -236,8 +236,10 @@ msg
 Drop a platinum coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/platinumslots.py
+arch event_apply
+title Python
+slaying /python/casino/platinumslots.py
+end
 x 1
 y 8
 end
@@ -262,8 +264,10 @@ name #4
 msg
 Drop a gold coin to play.
 endmsg
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 title Slot
 x 1
 y 10
@@ -290,8 +294,10 @@ msg
 Drop a silver coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 x 1
 y 12
 end
@@ -416,8 +422,10 @@ msg
 Drop a platinum coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/platinumslots.py
+arch event_apply
+title Python
+slaying /python/casino/platinumslots.py
+end
 x 2
 y 8
 end
@@ -443,8 +451,10 @@ msg
 Drop a gold coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 x 2
 y 10
 end
@@ -470,8 +480,10 @@ msg
 Drop a silver coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 x 2
 y 12
 end
@@ -596,8 +608,10 @@ msg
 Drop a platinum coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/platinumslots.py
+arch event_apply
+title Python
+slaying /python/casino/platinumslots.py
+end
 x 3
 y 8
 end
@@ -623,8 +637,10 @@ msg
 Drop a gold coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 x 3
 y 10
 end
@@ -650,8 +666,10 @@ msg
 Drop a silver coin to play.
 endmsg
 title Slot
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 x 3
 y 12
 end

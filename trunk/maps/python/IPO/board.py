@@ -22,62 +22,62 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFBoard
 import string
 
 board = CFBoard.CFBoard()
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
 
-boardname=CFPython.GetEventOptions(whoami,6) # 6 is say event
+boardname=Crossfire.ScriptParameters() # 6 is say event
 print "Activated %s" %boardname
 
 if (boardname):
 
-	text = string.split(CFPython.WhatIsMessage(), ' ', 1)
+	text = string.split(Crossfire.WhatIsMessage(), ' ', 1)
 
 	if text[0] == 'help' or text[0] == 'yes':
 		message='Help for %s\nList of commands:\n\n- list\n- write <message>\n- remove <id>\n'%boardname
-		CFPython.Write(message, activator)
+		activator.Write(message)
 
 	elif text[0] == 'write':
 		if len(text)==2:
 			board.write(boardname, activatorname, text[1])
-			CFPython.Write('Added to %s'%boardname, activator)
+			activator.Write('Added to %s'%boardname)
 		else:
-			CFPython.Write('Usage "write <text>"', activator)
+			activator.Write('Usage "write <text>"')
 
 	elif text[0] == 'list':
 		total = board.countmsg(boardname)
 		if total > 0:
-			CFPython.Write('Content of %s:'%boardname, activator)
+			activator.Write('Content of %s:'%boardname)
 			elements = board.list(boardname)
 			element = []
 			id = 1
 			for element in elements:
 				author, message = element
-				CFPython.Write('<%d> (%s) %s'%(id,author,message), activator)
+				activator.Write('<%d> (%s) %s'%(id,author,message))
 				id=id+1
 		else:
-			CFPython.Write('%s is empty'%boardname, activator)
+			activator.Write('%s is empty'%boardname)
 
 	elif text[0] == 'remove':
 		if len(text)==2:
-			if board.getauthor(boardname,int(text[1]))==activatorname or CFPython.IsDungeonMaster(activator):
+			if board.getauthor(boardname,int(text[1]))==activatorname or activator.IsDungeonMaster:
 				if board.delete(boardname, int(text[1])):
-					CFPython.Write('Removed from %s'%boardname, activator)
+					activator.Write('Removed from %s'%boardname)
 				else:
-					CFPython.Write('Doesn\'t exist on %s'%boardname, activator)
+					activator.Write('Doesn\'t exist on %s'%boardname)
 			else:
-				CFPython.Write('Access denied', activator)
+				activator.Write('Access denied')
 		else:
-			CFPython.Write('Usage "remove <id>"', activator)
+			activator.Write('Usage "remove <id>"')
 
 	else:
-		CFPython.Write('Do you need help?', activator)
+		activator.Write('Do you need help?')
 
 else:
-	CFPython.Write('Board Error', activator)
+	activator.Write('Board Error')

@@ -361,8 +361,10 @@ y 8
 end
 arch woman
 name Nancy
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 msg
 @match *
 Sorry I am on break, please come back later.

@@ -951,10 +951,14 @@ x 4
 y 19
 end
 arch mailbox
-event_close_plugin Python
-event_close /scorn/ImperialPost/send.py
-event_apply_plugin Python
-event_apply /scorn/ImperialPost/receive.py
+arch event_close
+title Python
+slaying /scorn/ImperialPost/send.py
+end
+arch event_apply
+title Python
+slaying /scorn/ImperialPost/receive.py
+end
 x 4
 y 19
 end

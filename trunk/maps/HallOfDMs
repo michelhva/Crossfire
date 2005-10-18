@@ -713,9 +713,11 @@ y 26
 end
 arch sign
 name Petitions for the DM
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options Petitions board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Petitions board
+end
 msg
 I am a talking board, designed for leaving messages for the DM.
 If you don't know what to say, say help.
@@ -2473,8 +2475,10 @@ y 28
 end
 arch chicken
 name The Great Chicken Oracle
-event_say_plugin Python
-event_say /python/IPO/seen.py
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 msg
 @match *
 The Great Chicken Oracle is out of service.  Buk Buk Buka.
@@ -2799,10 +2803,14 @@ x 13
 y 28
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -4248,9 +4256,11 @@ y 26
 end
 arch sign
 name DM Message Board
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options DM board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name DM board
+end
 msg
 I am a talking board, designed for inter-DM messages.
 If you don't know what to say, say help.

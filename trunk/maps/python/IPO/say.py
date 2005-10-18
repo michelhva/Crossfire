@@ -1,4 +1,4 @@
-# Script for say event of IPO employees 
+# Script for say event of IPO employees
 #
 # Copyright (C) 2002 Joris Bontje
 #
@@ -43,74 +43,75 @@ storage_y = 2
 # Post office sack name (one word without space)
 sackName = 'package'
 
-import CFPython
+import Crossfire
 import string
 import CFLog
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
-x=CFPython.GetXPosition(activator)
-y=CFPython.GetYPosition(activator)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
+x=activator.X
+y=activator.Y
 
 log = CFLog.CFLog()
-text = string.split(CFPython.WhatIsMessage())
+text = string.split(Crossfire.WhatIsMessage())
 
 if text[0] == 'help' or text[0] == 'yes':
 		message = 'How can I help you ? Here is a quick list of commands:\n\n- pen   (%s platinum)\n- literacy    (%s platinum)\n- mailscroll <friend>   (%s platinum)\n- bag <friend>   (%s platinum)\n- package <friend>   (%s platinum)\n- carton <friend>   (%s platinum)\n- send <friend>\n- receive'%(priceWritingPen,priceScrollOfLiteracy,priceMailScroll,priceBag,pricePackage,priceCarton)
-		CFPython.Say(whoami,message)
+		whoami.Say(message)
+        
 
 elif text[0] == 'pen':
-	if (CFPython.PayAmount(activator, priceWritingPen*priceFactor)):
-		CFPython.Say(whoami, 'Here is your IPO Writing Pen')
-		id = CFPython.CreateObject('writing pen', (x, y))
-		CFPython.SetName(id, 'IPO Writing Pen')
-		CFPython.SetValue(id, 0)
+	if (activator.PayAmount(priceWritingPen*priceFactor)):
+		whoami.Say('Here is your IPO Writing Pen')
+		id = activator.Map.CreateObject('writing pen', x, y)
+		id.Name='IPO Writing Pen'
+		id.Value=0
 	else:
-		CFPython.Say(whoami, 'You need %s platinum for an IPO Writing Pen'%priceWritingPen)
+		whoami.Say('You need %s platinum for an IPO Writing Pen'%priceWritingPen)
 
 elif text[0] == 'literacy':
-	if (CFPython.PayAmount(activator,priceScrollOfLiteracy*priceFactor)):
-        	CFPython.Say(whoami, 'Here is your IPO Scroll of Literacy')
-        	id = CFPython.CreateObject('scroll of literacy', (x, y))
-		CFPython.SetName(id, 'IPO Scroll of Literacy')
-		CFPython.SetValue(id, 0)
+	if (activator.PayAmount(priceScrollOfLiteracy*priceFactor)):
+        	whoami.Say('Here is your IPO Scroll of Literacy')
+        	id = activator.Map.CreateObject('scroll of literacy', x, y)
+		id.SetName='IPO Scroll of Literacy'
+		id.SetValue=0
 	else:
-		CFPython.Say(whoami, 'You need %s platinum for an IPO Scroll of Literacy'%priceScrollOfLiteracy)
+		whoami.Say('You need %s platinum for an IPO Scroll of Literacy'%priceScrollOfLiteracy)
 
 
 elif text[0] == 'mailscroll':
 	if len(text)==2:
 		if log.info(text[1]):
-			if (CFPython.PayAmount(activator, priceMailScroll*priceFactor)):
-				CFPython.Say(whoami, 'Here is your mailscroll')
-				id = CFPython.CreateObject('scroll', (x, y))
-				CFPython.SetName(id, 'mailscroll T: '+text[1]+' F: '+ activatorname)
-				CFPython.SetValue(id, 0)
+			if (activator.PayAmount(priceMailScroll*priceFactor)):
+				whoami.Say('Here is your mailscroll')
+				id = activator.Map.CreateObject('scroll', x, y)
+				id.Name='mailscroll T: '+text[1]+' F: '+ activatorname
+				id.Value=0
 			else:
-				CFPython.Say(whoami, 'You need %s platinum for a mailscroll'%priceMailScroll)
+				whoami.Say('You need %s platinum for a mailscroll'%priceMailScroll)
 		else:
-			CFPython.Say(whoami, 'I don\'t know any %s'%text[1])
+			whoami.Say('I don\'t know any %s'%text[1])
 
 	else:
-		CFPython.Say(whoami, 'Usage "mailscroll <friend>"')
+		whoami.Say('Usage "mailscroll <friend>"')
 
 
 elif text[0] == 'mailwarning':
-	if (CFPython.IsDungeonMaster(activator)):
+	if (activator.IsDungeonMaster):
 		if len(text)==2:
 			if log.info(text[1]):
-				CFPython.Say(whoami, 'Here is your mailwarning')
-				id = CFPython.CreateObject('diploma', (x, y))
-				CFPython.SetName(id, 'mailwarning T: '+text[1]+' F: '+ activatorname)
-				CFPython.SetValue(id, 0)
+				whoami.Say('Here is your mailwarning')
+				id = activator.Map.CreateObject('diploma', x, y)
+				id.Name='mailwarning T: '+text[1]+' F: '+ activatorname
+				id.Value=0
 			else:
-				CFPython.Say(whoami, 'I don\'t know any %s'%text[1])
+				whoami.Say('I don\'t know any %s'%text[1])
 
 		else:
-			CFPython.Say(whoami, 'Usage "mailwarning <foo>"')
+			whoami.Say('Usage "mailwarning <foo>"')
 	else:
-		CFPython.Say(whoami, 'You need to be DM to be able to use this command')
+		whoami.Say('You need to be DM to be able to use this command')
 
 elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 	if (len(text) == 2):
@@ -128,59 +129,60 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 				max = 100000
 				item = 'r_sack'
 
-			if ( CFPython.PayAmount(activator, price*priceFactor) ):
-				box = CFPython.CreateObject(item, (x, y))
-				CFPython.SetName(box, sackName + ' T: ' + text[1] + ' F: ' + activatorname)
-				CFPython.SetWeightLimit(box, max)
-				CFPython.SetStrength(box, 0)
-				CFPython.Say(whoami, 'Here is your %s'%text[0])
-				CFPython.InsertObjectInside(box, activator)
+			if ( activator.PayAmount(price*priceFactor) ):
+				box = activator.Map.CreateObject(item, x, y)
+				box.Name=sackName + ' T: ' + text[1] + ' F: ' + activatorname
+				box.WeightLimit=max
+				box.Strength=0
+				whoami.Say(whoami, 'Here is your %s'%text[0])
+				activator.InsertObject(box)
 			else:
-				CFPython.Say(whoami, 'You need %s platinum to buy a %s'%( price, text[0] ) )
+				whoami.Say('You need %s platinum to buy a %s'%( price, text[0] ) )
 
 		else:
-			CFPython.Say(whoami, 'I don\'t know any %s'%text[1])
+			whoami.Say('I don\'t know any %s'%text[1])
 
 	else:
-		CFPython.Say(whoami, 'Send a %s to who?'%text[0] )
+		whoami.Say('Send a %s to who?'%text[0] )
 
 elif text[0] == 'send':
 	if len(text) == 2:
-		inv = CFPython.CheckInventory(activator,sackName)
+		inv = activator.CheckInventory(sackName)
 		map = 0
 		if inv != 0:
 			while inv != 0:
-				next = CFPython.GetNextObject(inv)
-				text2=string.split(CFPython.GetName(inv))
+				next = inv.Below
+				text2=string.split(inv.Name)
 				if text2[0]==sackName and text2[1]=='T:' and text2[3]=='F:' and text2[2] == text[1]:
-					map = CFPython.ReadyMap(storage_map)
+					map = Crossfire.ReadyMap(storage_map)
 					if map == 0:
-						CFPython.Say(whoami, 'I\'m sorry but the post can\'t send your package now.')
+						whoami.Say('I\'m sorry but the post can\'t send your package now.')
 					else:
-						CFPython.Teleport(inv, map, storage_x, storage_y)
-						CFPython.Say(whoami, 'Package sent')
+						inv.Teleport(map, storage_x, storage_y)
+						whoami.Say('Package sent')
 				inv = next
 		else:
-			CFPython.Say(whoami, 'No package to send.')
+			whoami.Say('No package to send.')
 	else:
-		CFPython.Say(whoami, 'Send packages to who?')
+		whoami.Say('Send packages to who?')
 elif text[0] == 'receive':
-	map = CFPython.ReadyMap(storage_map)
+	map = Crossfire.ReadyMap(storage_map)
 	if ( map != 0 ):
-		item = CFPython.GetObjectAt(map, storage_x, storage_y)
+		item = map.GetObjectAt(storage_x, storage_y)
 		count = 0
 		while item != 0:
-			previous = CFPython.GetPreviousObject(item)
-			text2 = string.split(CFPython.GetName(item))
+			previous = item.above
+			text2 = string.split(item.Name)
 			if ( len(text2) == 5 ) and ( text2[0] == sackName ) and ( text2[2] == activatorname ):
-				CFPython.InsertObjectInside(item,activator)
+				activator.InsertObjectInside(item)
 				count = count + 1
 			item = previous
 		if ( count == 0 ):
-			CFPython.Say(whoami, 'No package for you, sorry.')
+			whoami.Say('No package for you, sorry.')
 		else:
-			CFPython.Say(whoami, 'Here you go.')
+			whoami.Say('Here you go.')
 	else:
-		CFPython.Say(whoami, 'Sorry, our package delivery service is currently in strike. Please come back later.')
+		whoami.Say('Sorry, our package delivery service is currently in strike. Please come back later.')
 else:
-	CFPython.Say(whoami, 'Do you need help?')
+	whoami.Say('Do you need help?')
+Crossfire.setReturnValue(1)

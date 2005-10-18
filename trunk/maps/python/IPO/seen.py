@@ -1,4 +1,4 @@
-# Script for seen event 
+# Script for seen event
 #
 # Copyright (C) 2002 Joris Bontje
 #
@@ -22,19 +22,19 @@
 #
 # seen            - tells player information from logger
 
-import CFPython
+import Crossfire
 import string
 import CFLog
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
-isDM=CFPython.IsDungeonMaster(activator)
-x=CFPython.GetXPosition(activator)
-y=CFPython.GetYPosition(activator)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
+isDM=activator.IsDungeonMaster
+x=activator.X
+y=activator.Y
 
 log = CFLog.CFLog()
-text = string.split(CFPython.WhatIsMessage())
+text = string.split(Crossfire.WhatIsMessage())
 
 if text[0] == 'seen':
     if len(text)==2:
@@ -49,12 +49,12 @@ if text[0] == 'seen':
     else:
         message = 'Usage "seen <player>"'
 
-elif text[0] == 'help': 
+elif text[0] == 'help':
     if isDM:
         message = "How can I help you? Here is a quick list of commands:\nseen, info, muzzlecount, lastmuzzle, kickcount, lastkick"
     else:
         message = "I have seen just about everybody - go ahead and ask me."
-        
+
 elif text[0] == 'muzzlecount' and isDM:
     if len(text)==2:
         record = log.info(text[1])
@@ -84,7 +84,7 @@ elif text[0] == 'kickcount' and isDM:
             message = "I have no knowledge of '%s'." % text[1]
     else:
         message = 'Usage "kickcount <player>"'
-        
+
 elif text[0] == 'lastkick' and isDM:
     if len(text)==2:
         record = log.info(text[1])
@@ -107,4 +107,4 @@ elif text[0] == 'info' and isDM:
 else:
     message = "Do you need help?"
 
-CFPython.Say(whoami, message)
+whoami.Say(message)

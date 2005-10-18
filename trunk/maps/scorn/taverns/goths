@@ -1361,8 +1361,10 @@ y 1
 end
 arch slotmachine2
 name Gerty Gold
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 slaying
 food 0
 x 5
@@ -1753,8 +1755,10 @@ y 1
 end
 arch slotmachine3
 name Sally Silver
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply 
+title Python
+slaying /python/casino/silverslots.py
+end
 slaying
 food 0
 x 7
@@ -3805,8 +3809,10 @@ x 16
 y 27
 end
 arch man
-event_say_plugin Python
-event_say /python/IPO/seen.py
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 msg
 @match *
 Howdy

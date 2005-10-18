@@ -25,7 +25,7 @@
 # and rewritten to use plain text file storage (CFDataFile) instead of shelve.
 
 
-import CFPython
+import Crossfire
 
 from time import localtime, strftime, time
 from CFDataFile import CFDataFile, CFData
@@ -60,21 +60,21 @@ class CFLog:
         record['Last_Login_Date']=date
         record['Login_Count']=int(record['Login_Count'])+1
         self.log.put_record(record)
-        
+
     def kick_update(self, name):
         date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
         record = self.log.get_record(name)
         record['Kick_Count']=int(record['Kick_Count'])+1
         record['Last_Kick_Date']=date
         self.log.put_record(record)
-        
+
     def muzzle_update(self, name):
         date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
         record = self.log.get_record(name)
         record['Muzzle_Count']=int(record['Muzzle_Count'])+1
         record['Last_Muzzle_Date']=date
         self.log.put_record(record)
-        
+
     def info(self, name):
         record = self.log.get_record(name)
         if record:

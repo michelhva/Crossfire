@@ -1992,8 +1992,10 @@ end
 arch man
 name Hoff
 face man.131
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 msg
 @match *
 I'm too busy to answer your queries.

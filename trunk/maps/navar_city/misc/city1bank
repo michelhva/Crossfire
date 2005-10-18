@@ -1068,8 +1068,10 @@ y 5
 end
 arch c_man
 name Sal
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 msg
 @match *
 Sorry the abacus is down at the moment...
