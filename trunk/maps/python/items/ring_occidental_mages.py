@@ -1,32 +1,32 @@
-import CFPython
+import Crossfire
 import random
 
-me = CFPython.WhoAmI()
-ac = CFPython.WhoIsActivator()
+me = Crossfire.WhoAmI()
+ac = Crossfire.WhoIsActivator()
 r  = random.random()
 
-if (CFPython.IsApplied(me)):
+if (me.Applied):
     if   (r <= 0.01):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetDexterity(me, CFPython.GetDexterity(me)+1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Dexterity= me.Dexterity+1
     elif (r <= 0.02):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetIntelligence(me, CFPython.GetIntelligence(me)+1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Intelligence= me.Intelligence+1
     elif (r <= 0.03):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetConstitution(me, CFPython.GetConstitution(me)+1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Constitution= me.Constitution+1
     elif (r >= 0.99):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetDexterity(me, CFPython.GetDexterity(me)-1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Dexterity= me.Dexterity-1
     elif (r >= 0.98):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetIntelligence(me, CFPython.GetIntelligence(me)-1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Intelligence= me.Intelligence-1
     elif (r >= 0.97):
-        CFPython.SetIdentified(me,0)
-        CFPython.SetCursed(me, 1)
-        CFPython.SetConstitution(me, CFPython.GetConstitution(me)-1)
+        me.Identified=0
+        me.Cursed= 1
+        me.Constitution= me.Constitution-1

@@ -20,13 +20,13 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFMail
 import CFLog
 
-activator = CFPython.WhoIsActivator()
-name = CFPython.GetName(activator)
-ip = CFPython.WhatIsMessage()
+activator = Crossfire.WhoIsActivator()
+name = activator.Name
+ip = Crossfire.WhatIsMessage()
 
 log = CFLog.CFLog()
 
@@ -38,7 +38,7 @@ else:
 mail = CFMail.CFMail()
 total = mail.countmail(name)
 if total > 0:
-	CFPython.Write('You have some mail waiting for you', activator)
+	activator.Write('You have some mail waiting for you')
 else:
-	CFPython.Write('No mail...', activator)
+	activator.Write('No mail...')
 

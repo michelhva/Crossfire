@@ -1,14 +1,14 @@
-import CFPython
+import Crossfire
 import CFGuilds
 
 def mycmp(a, b):
     return cmp(a[1], b[1])
 
-activator=CFPython.WhoIsActivator()
+activator=Crossfire.WhoIsActivator()
 guilds = CFGuilds.CFGuildHouses()
 
-CFPython.Write('Guild Standings:', activator)
-CFPython.Write('Guild - Points - Status', activator)
+activator.Write('Guild Standings:')
+activator.Write('Guild - Points - Status')
 
 guildlist = guilds.list_guilds()
 standings = []
@@ -18,4 +18,4 @@ for guild in guildlist:
         standings.append([record['Points'], guild, record['Status']])
 standings.sort(mycmp)
 for item in standings:
-    CFPython.Write('%s - %s - %s' %(item[1],item[0],item[2]), activator)
+    activator.Write('%s - %s - %s' %(item[1],item[0],item[2]))

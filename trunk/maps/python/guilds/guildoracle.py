@@ -16,26 +16,26 @@
 #
 # authors: majorwoo josh@woosworld.net, Avion temitchell@sourceforge.net
 
-import CFPython
+import Crossfire
 import CFGuilds
 import CFLog
 
 import sys
 import string
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
-isDM=CFPython.IsDungeonMaster(activator)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
+isDM=activator.IsDungeonMaster
 
 log=CFLog.CFLog()
-guildname=CFPython.GetEventOptions(whoami,6) # 6 is say event
+guildname=Crossfire.ScriptParameters() # 6 is say event
 print "Activated %s" %guildname
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     guildhouse = CFGuilds.CFGuildHouses()
-    text = string.split(CFPython.WhatIsMessage())
+    text = string.split(Crossfire.WhatIsMessage())
 
     if text[0] == 'help' or text[0] == 'yes':
         if isDM:
@@ -60,17 +60,17 @@ if (guildname):
                 #delete them
                 guild.remove_member(text[1])
             else:
-                #if we didn't find them on the board    
-                message = '%s was not a member' %text[1]                                
+                #if we didn't find them on the board
+                message = '%s was not a member' %text[1]
         else:
             message = 'Usage "remove <member_name>"'
 
     elif text[0] == 'list':
         list = guild.list_members()
         for member in list:
-            CFPython.Write(member, activator)       
+            activator.Write(member)
         message = 'Total members = ' + str(len(list))
-    
+
     elif text[0] == 'promote':
         if len(text)==2:
             record = guild.info(text[1])
@@ -80,8 +80,8 @@ if (guildname):
                     message = '%s promoted to %s' %(text[1], record['Rank'])
                 else:
                     message = 'You cannot promote %s' %text[1]
-            else:  
-                message = '%s is not a member' %text[1]                                
+            else:
+                message = '%s is not a member' %text[1]
         else:
             message = 'Usage "promote <member_name>"'
 
@@ -95,7 +95,7 @@ if (guildname):
                 else:
                     message = 'You cannot demote %s' %text[1]
             else:
-                message = '%s is not a member' %text[1]                                
+                message = '%s is not a member' %text[1]
         else:
             message = 'Usage "demote <member_name>"'
 
@@ -109,28 +109,28 @@ if (guildname):
                 else:
                     message = '%s is not a valid status' %text[2]
             else:
-                message = '%s is not a member' %text[1]                                
+                message = '%s is not a member' %text[1]
         else:
             message = 'Usage "status <member_name> <status>\n%s"' %str(guild.status)
 
 # DM commands
     #add user directly
-    elif text[0] == 'add' and isDM: 
+    elif text[0] == 'add' and isDM:
         if len(text)==2:
             #check if they are a player
             if log.info(text[1]):
                 #see if they are on the board already
                 if guild.info(text[1]):
                     #already a member
-                    message = '%s is already a member.' %text[1]    
+                    message = '%s is already a member.' %text[1]
                 else:
                     guild.add_member(text[1], 'Initiate')
                     message = 'Added %s to the guild' %text[1]
             else:
-                message = 'Sorry, I don\'t know any %s' %text[1]                          
+                message = 'Sorry, I don\'t know any %s' %text[1]
         else:
             message = 'Usage "add <membername>"'
-            
+
     #change guild status
     elif text[0] == 'guildstatus' and isDM:
         if len(text)==2:
@@ -142,7 +142,7 @@ if (guildname):
                 else:
                     message = '%s is not a valid status' %text[1]
             else:
-                message = '%s is not a guild' %guildname                               
+                message = '%s is not a guild' %guildname
         else:
             message = 'Usage "guildstatus <status>\n%s"' %str(guildhouse.status)
 
@@ -151,4 +151,4 @@ if (guildname):
 
 else:
     message = 'Board Error'
-CFPython.Say(whoami, message)
+whoami.Say(message)

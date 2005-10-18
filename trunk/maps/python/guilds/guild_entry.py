@@ -17,26 +17,26 @@
 #
 # authors: majorwoo josh@woosworld.net, Avion temitchell@sourceforge.net
 
-import CFPython
+import Crossfire
 import CFGuilds
 
 import sys
 import string
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-mymap = CFPython.GetMap(activator)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+mymap = activator.Map
 x=15
 y=29
-whoami=CFPython.WhoAmI()
-guildname=CFPython.GetEventOptions(whoami,6) # 6 is say event
+whoami=Crossfire.WhoAmI()
+guildname=Crossfire.ScriptParameters() # 6 is say event
 
 if (guildname):
 
     guild = CFGuilds.CFGuild(guildname)
-    text = string.split(CFPython.WhatIsMessage())
+    text = string.split(Crossfire.WhatIsMessage())
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
-    found = 0 
+    found = 0
     if text[0] == 'enter' or text[0] == 'Enter':
 
             if guildrecord['Status'] == 'inactive':
@@ -47,7 +47,7 @@ if (guildname):
 
             else:
                 if guildrecord['Status'] == 'probation':
-                    CFPython.Write('This guild is currently under probation.\nPlease see a DM for more information', activator)
+                    activator.Write('This guild is currently under probation.\nPlease see a DM for more information'
 
                 record = guild.info(activatorname) #see if they are on the board
                 if record:
@@ -59,10 +59,10 @@ if (guildname):
                         y=22
                     else:
                         message = 'Entry granted for %s' %activatorname
-                        y=22   
+                        y=22
                 else:
                     message = 'You try my patience %s.  BEGONE!' %activatorname
-                CFPython.Teleport(activator,mymap,int(x),int(y)) #teleport them
+                activator.Teleport(mymap,int(x),int(y)) #teleport them
 
     elif text[0] == 'buy' or text[0] == 'Buy':
         if guildrecord['Status'] == 'inactive':
@@ -71,16 +71,16 @@ if (guildname):
                 x = 30
                 y = 22
                 message = "Proceed, but know ye that three are required to found a guild and the cost is high"
-                CFPython.Teleport(activator,mymap,int(x),int(y)) #teleport them
+                activator.Teleport(mymap,int(x),int(y)) #teleport them
             else:
                 message = "Sorry you already belong to the %s guild.  You must quit that guild before founding your own." %in_guild
         else:
             message = 'This guild is already owned.'
     else:
         message = 'This is the entry to the great %s guild.  Enter or begone!' %guildname
-        
+
 else:
     message = 'Guild Guardian Error, please notify a DM'
-    
-CFPython.Say(whoami,message)
+
+whoami.Say(message)
 

@@ -1,14 +1,14 @@
-import CFPython
+import Crossfire
 import CFGuilds
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
-mymap = CFPython.GetMap(activator)
-mapname = CFPython.GetName(mymap)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
+mymap = activator.Map
+mapname = mymap.Name
 trank = 0
 
-points=CFPython.GetEventOptions(whoami,1) # 1 is apply event
+points=Crossfire.ScriptParameters() # 1 is apply event
 
 if points:
     guild = CFGuilds.SearchGuilds(activatorname)

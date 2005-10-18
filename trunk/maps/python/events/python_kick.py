@@ -17,12 +17,11 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 
-import CFPython
+import Crossfire
 import CFLog
 
-activator = CFPython.WhoIsActivator()
-name = CFPython.GetName(activator)
+activator = Crossfire.WhoIsActivator()
 
 log = CFLog.CFLog()
-log.kick_update(name)
-    
+log.kick_update(activator.Name)
+
