@@ -3026,10 +3026,14 @@ x 6
 y 46
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -3611,10 +3615,14 @@ x 7
 y 46
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -4053,10 +4061,14 @@ x 8
 y 46
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -4574,10 +4586,14 @@ x 9
 y 46
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -7041,10 +7057,14 @@ x 14
 y 21
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1

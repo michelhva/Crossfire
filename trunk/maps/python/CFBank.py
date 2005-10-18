@@ -23,13 +23,13 @@
 import os.path
 import shelve
 
-import CFPython
+import Crossfire
 
 class CFBank:
 	bankdb = {}
 
 	def __init__(self, bankfile):
-		self.bankdb_file = os.path.join(CFPython.GetLocalDirectory(),bankfile)
+		self.bankdb_file = os.path.join(Crossfire.LocalDirectory(),bankfile)
 		self.bankdb = shelve.open(self.bankdb_file)
 
 	def deposit(self, user, amount):
@@ -52,7 +52,7 @@ class CFBank:
             		return self.bankdb[user]
         	else:
             		return 0
-	
+
 	def remove_account(self,user):
 		if self.bankdb.has_key(user):
 			del self.bankdb[user]

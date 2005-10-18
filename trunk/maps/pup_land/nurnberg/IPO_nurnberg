@@ -133,10 +133,14 @@ x 1
 y 8
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -222,8 +226,10 @@ y 1
 end
 arch small_troll
 name Betty-Lou
-event_say_plugin Python
-event_say /python/IPO/say.py
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
 friendly 1
 stand_still 1
 sleep 0

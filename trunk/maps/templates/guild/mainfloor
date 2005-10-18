@@ -1057,9 +1057,11 @@ y 7
 end
 arch beholder
 name Jack
-event_say_plugin Python
-event_say /python/guilds/guild_dues.py
-event_say_options GUILD_TEMPLATE
+arch event_say
+title Python
+slaying /python/guilds/guild_dues.py
+name GUILD_TEMPLATE
+end
 msg
 Sorry, I'm on my break.
 endmsg
@@ -4504,9 +4506,11 @@ y 24
 end
 arch sign
 name Guardian
-event_say_plugin Python
-event_say /python/guilds/guild_entry.py
-event_say_options GUILD_TEMPLATE
+arch event_say
+title Python
+slaying /python/guilds/guild_entry.py
+name GUILD_TEMPLATE
+end
 x 15
 y 25
 end
@@ -8691,10 +8695,14 @@ x 30
 y 5
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -8892,9 +8900,11 @@ x 31
 end
 arch button_lever
 name The Big Lever
-event_apply_plugin Python
-event_apply /python/guilds/guildbuy.py
-event_apply_options GUILD_TEMPLATE
+arch event_apply
+title Python
+slaying /python/guilds/guildbuy.py
+name GUILD_TEMPLATE
+end
 msg
 Pull to establish this guild.
 endmsg
@@ -8991,9 +9001,11 @@ y 7
 end
 arch sign
 name Guild Message Board
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options GUILD_TEMPLATE_board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name GUILD_TEMPLATE_board
+end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
@@ -9277,9 +9289,11 @@ x 32
 y 28
 end
 arch altar
-event_apply_plugin Python
-event_apply /python/guilds/guildbuy.py
-event_apply_options GUILD_TEMPLATE
+arch event_apply
+title Python
+slaying /python/guilds/guildbuy.py
+name GUILD_TEMPLATE
+end
 msg
 Please drop 5000 imperial notes for guild.
 endmsg

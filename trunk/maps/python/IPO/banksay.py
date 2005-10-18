@@ -1,4 +1,4 @@
-# Script for say event of Imperial Bank Tellers 
+# Script for say event of Imperial Bank Tellers
 #
 # Copyright (C) 2002 Joris Bontje
 #
@@ -18,22 +18,22 @@
 #
 # The author can be reached via e-mail at jbontje@suespammers.org
 #
-# Updated to use new path functions in CFPython and broken and 
+# Updated to use new path functions in CFPython and broken and
 # modified a bit by -Todd Mitchell
 
 
-import CFPython
+import Crossfire
 
 import string
 import random
 import CFBank
 import CFItemBroker
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
-x=CFPython.GetXPosition(activator)
-y=CFPython.GetYPosition(activator)
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
+x=activator.X
+y=activator.Y
 
 
 #EASILY SETTABLE PARAMETERS
@@ -44,7 +44,7 @@ bankdatabase="ImperialBank_DB"
 fees=(service_charge/100.0)+1
 bank = CFBank.CFBank(bankdatabase)
 
-text = string.split(CFPython.WhatIsMessage())
+text = string.split(Crossfire.WhatIsMessage())
 thanks_message = ['Thank you for banking the Imperial Way.', 'Thank you, please come \
 again.', 'Thank you, please come again.','Thank you for banking the Imperial Way.', \
 'Thank you for your patronage.', 'Thank you, have a nice day.', 'Thank you. "Service" \
@@ -61,7 +61,7 @@ if text[0] == 'help' or text[0] == 'yes':
 
 elif text[0] == 'deposit':
 	if len(text)==2:
-		if (CFPython.PayAmount(activator, int((int(text[1])*exchange_rate)*fees))):
+		if (activator.PayAmount(int((int(text[1])*exchange_rate)*fees))):
 			bank.deposit(activatorname, int(text[1]))
 			message = '%d received, %d imperials deposited to bank account.  %s' \
 			%((int(text[1])*(exchange_rate/50))*fees,int(text[1]),random.choice(thanks_message))
@@ -75,7 +75,7 @@ elif text[0] == 'withdraw':
 		if (bank.withdraw(activatorname, int(text[1]))):
 			message = '%d imperials withdrawn from bank account.  %s' \
 			%(int(text[1]),random.choice(thanks_message))
-			id = CFPython.CreateObject('imperial', (x, y))
+			id = activator.Map.CreateObject('imperial', (x, y))
 			CFItemBroker.Item(id).add(int(text[1]))
 		else:
 			message = 'Not enough imperials on your account'
@@ -84,11 +84,11 @@ elif text[0] == 'withdraw':
 
 elif text[0] == 'exchange':
     if len(text)==2:
-        inv=CFPython.CheckInventory(activator,'imperial')
+        inv=activator.CheckInventory('imperial')
         if inv:
             pay = CFItemBroker.Item(inv).subtract(int(text[1]))
             if pay:
-                id = CFPython.CreateObject('platinum coin', (x, y))
+                id = activator.Map.CreateObject('platinum coin', (x, y))
                 CFItemBroker.Item(id).add(int(text[1])*(exchange_rate/50))
                 message = random.choice(thanks_message)
             else:
@@ -96,7 +96,7 @@ elif text[0] == 'exchange':
         else:
             message = 'Sorry, you do not have any imperials'
     else:
-        message = 'Usage "exchange <amount>" (imperials to platimum coins)' 
+        message = 'Usage "exchange <amount>" (imperials to platimum coins)'
 
 elif text[0] == 'balance':
     balance = bank.getbalance(activatorname)
@@ -109,4 +109,4 @@ elif text[0] == 'balance':
 else:
 	message = 'Do you need help?'
 
-CFPython.Say(whoami, message)
+whoami.Say(message)

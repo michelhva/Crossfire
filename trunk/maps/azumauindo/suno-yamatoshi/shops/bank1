@@ -436,10 +436,12 @@ end
 arch merchant
 name Bank Accountant
 name_pl Bank Accountant
-event_say /python/IPO/banksay.py
-event_say_plugin Python
 x 2
 y 8
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch dungeon_magic
 x 2

@@ -20,13 +20,13 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFMail
 import string
 
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
 
 mail = CFMail.CFMail()
 total = mail.countmail(activatorname)
@@ -37,26 +37,26 @@ if total > 0:
         for element in elements:
 		type, fromname, message = element
 		if type==1:
-	                msgob = CFPython.CreateObjectInside('scroll', whoami)
-	                CFPython.SetName(msgob,'mailscroll F: '+fromname+' T: '+activatorname)
-	                CFPython.SetMessage(msgob, message)
-	                CFPython.SetValue(msgob, 0)
+	                msgob = whoami.CreateObject('scroll')
+	                msgob.Name='mailscroll F: '+fromname+' T: '+activatorname
+	                msgob.Message=message
+	                msgob.Value=0
 		elif type==2:
-	                msgob = CFPython.CreateObjectInside('note', whoami)
-	                CFPython.SetName(msgob,'newspaper D: '+fromname)
-	                CFPython.SetMessage(msgob, message)
-	                CFPython.SetValue(msgob, 0)
+	                msgob = whoami.CreateObject('note')
+	                msgob.Name='newspaper D: '+fromname
+	                msgob.Message=message
+	                msgob.Value=0
 		elif type==3:
-	                msgob = CFPython.CreateObjectInside('diploma', whoami)
-	                CFPython.SetName(msgob,'mailwarning F: '+fromname+' T: '+activatorname)
-	                CFPython.SetMessage(msgob, message)
-	                CFPython.SetValue(msgob, 0)
+	                msgob = whoami.CreateObject('diploma')
+	                msgob.Name='mailwarning F: '+fromname+' T: '+activatorname
+	                msgob.Message=message
+	                msgob.Value=0
 		else:
 			print 'ERROR: unknown mailtype\n'
 
 if total == 1:
-	CFPython.Write('You got 1 mail.', activator)
+	activator.Write('You got 1 mail.')
 elif total > 1:
-	CFPython.Write('You got %s mails.'%total, activator)
+	activator.Write('You got %s mails.'%total)
 else:
-	CFPython.Write('You haven\'t got any mail.', activator)
+	activator.Write('You haven\'t got any mail.')

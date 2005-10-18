@@ -277,8 +277,10 @@ y 2
 end
 arch blue_dragon2
 name Edwardo
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 msg
 @match *
 Sorry I am on break, please come back later.
@@ -804,9 +806,11 @@ y 13
 end
 arch sign
 name Santo Dominion Message Board
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options Santo Dominion Board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Santo Dominion Board
+end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
@@ -1674,10 +1678,14 @@ x 14
 y 5
 end
 arch mailbox
-event_close_plugin Python
-event_close /python/IPO/send.py
-event_apply_plugin Python
-event_apply /python/IPO/receive.py
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 material 0
 weight 0
 no_pick 1
@@ -1726,9 +1734,11 @@ y 13
 end
 arch sign
 name Petitions for the DMs
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options Petitions board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Petitions board
+end
 msg
 I am a talking board, designed for leaving messages for the DMs.
 If you don't know what to say, say help.
@@ -2143,8 +2153,10 @@ y 3
 end
 arch fatwoman
 name Betina
-event_say_plugin Python
-event_say /python/IPO/say.py
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
 stand_still 1
 x 18
 y 3

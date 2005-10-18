@@ -2240,9 +2240,11 @@ y 2
 end
 arch c_man
 name Rudy
-event_say_plugin Python
-event_say /python/misc/CFInsulter.py
-event_say_options texas
+arch event_say
+title Python
+slaying /python/misc/CFInsulter.py
+name texas
+end
 x 13
 y 2
 end

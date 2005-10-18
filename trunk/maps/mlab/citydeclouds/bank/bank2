@@ -3066,8 +3066,10 @@ y 17
 end
 arch courier
 name Bank of Skud Representative
-event_say_plugin Python
-event_say /python/IPO/banksay.py
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 name_pl Bank of Skud Representative
 x 8
 y 17

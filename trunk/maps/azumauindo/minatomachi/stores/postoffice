@@ -411,10 +411,14 @@ x 2
 y 18
 end
 arch mailbox
-event_close /python/IPO/send.py
-event_close_plugin Python
-event_apply /python/IPO/receive.py
-event_apply_plugin Python
+arch event_close
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply
+slaying /python/IPO/receive.py
+title Python
+end
 x 2
 y 18
 material 0
@@ -579,10 +583,14 @@ x 3
 y 18
 end
 arch mailbox
-event_close /python/IPO/send.py
-event_close_plugin Python
-event_apply /python/IPO/receive.py
-event_apply_plugin Python
+arch event_close 
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply 
+slaying /python/IPO/receive.py
+title Python
+end
 x 3
 y 18
 material 0
@@ -653,8 +661,10 @@ end
 arch guildmaster
 name postmaster
 name_pl postmaster
-event_say /python/IPO/say.py
-event_say_plugin Python
+arch event_say 
+slaying /python/IPO/say.py
+title Python
+end
 x 4
 y 3
 end
@@ -731,10 +741,14 @@ x 4
 y 18
 end
 arch mailbox
-event_close /python/IPO/send.py
-event_close_plugin Python
-event_apply /python/IPO/receive.py
-event_apply_plugin Python
+arch event_close 
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply 
+slaying /python/IPO/receive.py
+title Python
+end
 x 4
 y 18
 material 0
@@ -899,10 +913,14 @@ x 5
 y 18
 end
 arch mailbox
-event_close /python/IPO/send.py
-event_close_plugin Python
-event_apply /python/IPO/receive.py
-event_apply_plugin Python
+arch event_close 
+slaying /python/IPO/send.py
+title Python
+end
+arch event_apply 
+slaying /python/IPO/receive.py
+title Python
+end
 x 5
 y 18
 material 0

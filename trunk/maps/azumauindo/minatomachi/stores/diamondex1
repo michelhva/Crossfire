@@ -2905,8 +2905,10 @@ end
 arch man
 name Accountant
 name_pl Accountant
-event_say /python/IPO/banksay.py
-event_say_plugin Python
+arch event_say 
+slaying /python/IPO/banksay.py
+title Python
+end
 x 9
 y 7
 end

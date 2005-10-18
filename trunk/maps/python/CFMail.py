@@ -23,11 +23,11 @@
 import os.path
 import shelve
 
-import CFPython
+import Crossfire
 
 class CFMail:
 
-	maildb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfiremail')
+	maildb_file = os.path.join(Crossfire.LocalDirectory(),'crossfiremail')
 	maildb = {}
 	total = 0
 
@@ -48,8 +48,8 @@ class CFMail:
 			elements=self.maildb[toname]
 			del self.maildb[toname]
 			return elements
-			
-	
+
+
 	def countmail(self, toname):
 		if self.maildb.has_key(toname):
 			return len(self.maildb[toname])

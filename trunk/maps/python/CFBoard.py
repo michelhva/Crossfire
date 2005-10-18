@@ -23,11 +23,11 @@
 import os.path
 import shelve
 
-import CFPython
+import Crossfire
 
 class CFBoard:
 
-	boarddb_file = os.path.join(CFPython.GetLocalDirectory(),'crossfireboard')
+	boarddb_file = os.path.join(Crossfire.LocalDirectory(),'crossfireboard')
 	boarddb = {}
 	total = 0
 
@@ -46,8 +46,8 @@ class CFBoard:
 		if self.boarddb.has_key(boardname):
 			elements=self.boarddb[boardname]
 			return elements
-			
-	
+
+
 	def delete(self, boardname, id):
 		if self.boarddb.has_key(boardname):
 			if id>0 and id<=len(self.boarddb[boardname]):
@@ -62,7 +62,7 @@ class CFBoard:
                         return len(self.boarddb[boardname])
                 else:
                         return 0
-	
+
 	def getauthor(self, boardname, id):
 		if self.boarddb.has_key(boardname):
 			if id>0 and id<=len(self.boarddb[boardname]):

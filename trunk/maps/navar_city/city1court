@@ -1680,9 +1680,11 @@ y 13
 end
 arch sign
 name Petitions for the DMs
-event_say_plugin Python
-event_say /python/IPO/board.py
-event_say_options Petitions board
+arch event_say
+title Python
+slaying /python/IPO/board.py
+name Petitions board
+end
 msg
 I am a talking board, designed for leaving messages for the DMs.
 If you don't know what to say, say help.

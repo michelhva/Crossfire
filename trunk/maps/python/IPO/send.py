@@ -20,61 +20,62 @@
 #
 #Updated to use new path functions in CFPython -Todd Mitchell
 
-import CFPython
+import Crossfire
 import CFMail
 import string
 from time import localtime, strftime, time
 
 mail = CFMail.CFMail()
 date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-activator=CFPython.WhoIsActivator()
-activatorname=CFPython.GetName(activator)
-whoami=CFPython.WhoAmI()
+activator=Crossfire.WhoIsActivator()
+activatorname=activator.Name
+whoami=Crossfire.WhoAmI()
 idlist=[]
 
-inv = CFPython.CheckInventory(CFPython.WhoAmI(),"mailscroll")
-if inv != 0:
-	while inv!=0:
-		text=string.split(CFPython.GetName(inv))
+inv = whoami.CheckInventory("mailscroll")
+if inv != None:
+	while inv!=None:
+		print("INV:%s" %inv.Name)
+		text=string.split(inv.Name)
 		if text[0]=='mailscroll' and text[1]=='T:' and text[3]=='F:':
 			idlist.append(inv)
 			toname=text[2]
 			fromname=text[4]
-			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, CFPython.GetMessage(inv)[:-1])
-			CFPython.Write('mailscroll to '+toname+' sent.', activator)
+			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, inv.Message[:-1])
+			activator.Write('mailscroll to '+toname+' sent.')
 			mail.send(1, toname, fromname, message)
 		elif text[0]=='mailscroll' and text[1]=='F:' and text[3]=='T:':
 			idlist.append(inv)
 			fromname=text[2]
 			toname=text[4]
-			message=CFPython.GetMessage(inv)[:-1]+'\n'
+			message=inv.Message[:-1]+'\n'
 			mail.send(1, toname, fromname, message)
 		else:
 			print "ID: %d"%inv
-			print "Name: "+CFPython.GetName(inv)
-		inv=CFPython.GetNextObject(inv)
+			print "Name: "+inv.Name
+		inv=inv.Below
 
-inv = CFPython.CheckInventory(CFPython.WhoAmI(),"mailwarning")
-if inv != 0:
-	while inv!=0:
-		text=string.split(CFPython.GetName(inv))
+inv = whoami.CheckInventory("mailwarning")
+if inv != None:
+	while inv!=None:
+		text=string.split(inv.Name)
 		if text[0]=='mailwarning' and text[1]=='T:' and text[3]=='F:':
 			idlist.append(inv)
 			toname=text[2]
 			fromname=text[4]
-			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, CFPython.GetMessage(inv)[:-1])
-			CFPython.Write('mailwarning to '+toname+' sent.', activator)
+			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, inv.Message[:-1])
+			activator.Write('mailwarning to '+toname+' sent.')
 			mail.send(3, toname, fromname, message)
 		elif text[0]=='mailwarning' and text[1]=='F:' and text[3]=='T:':
 			idlist.append(inv)
 			fromname=text[2]
 			toname=text[4]
-			message=CFPython.GetMessage(inv)[:-1]+'\n'
+			message=inv.Message[:-1]+'\n'
 			mail.send(3, toname, fromname, message)
 		else:
 			print "ID: %d"%inv
-			print "Name: "+CFPython.GetName(inv)
-		inv=CFPython.GetNextObject(inv)
+			print "Name: "+inv.Name
+		inv=inv.Below
 
 for inv in idlist:
-	CFPython.RemoveObject(inv)
+	inv.Remove()

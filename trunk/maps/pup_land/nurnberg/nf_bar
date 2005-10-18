@@ -1246,8 +1246,10 @@ x 8
 y 8
 end
 arch sailor
-event_say_plugin Python
-event_say /python/IPO/seen.py
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 msg
 @match *
 ...Shake it baby!
@@ -1411,8 +1413,10 @@ y 18
 end
 arch slotmachine2
 name Midas Touch
-event_apply_plugin Python
-event_apply /python/casino/goldslots.py
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 food 0
 x 9
 y 18
@@ -1726,8 +1730,10 @@ y 18
 end
 arch slotmachine3
 name Silver Penny-0-Rama
-event_apply_plugin Python
-event_apply /python/casino/silverslots.py
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 food 0
 x 11
 y 18
