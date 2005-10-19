@@ -720,7 +720,7 @@ arch dungeon_magic
 x 3
 y 16
 end
-arch hills_rocky
+arch steppe
 elevation 4956
 x 3
 y 16
@@ -914,7 +914,7 @@ arch dungeon_magic
 x 4
 y 16
 end
-arch hills_rocky
+arch steppe
 elevation 4956
 x 4
 y 16
@@ -923,7 +923,7 @@ arch dungeon_magic
 x 4
 y 17
 end
-arch hills_rocky
+arch steppe
 elevation 4956
 x 4
 y 17
@@ -1018,8 +1018,7 @@ arch dungeon_magic
 x 5
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 6
 end
@@ -1027,8 +1026,7 @@ arch dungeon_magic
 x 5
 y 7
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 7
 end
@@ -1036,8 +1034,7 @@ arch dungeon_magic
 x 5
 y 8
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 8
 end
@@ -1045,8 +1042,7 @@ arch dungeon_magic
 x 5
 y 9
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 9
 end
@@ -1054,8 +1050,7 @@ arch dungeon_magic
 x 5
 y 10
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 10
 end
@@ -1063,8 +1058,7 @@ arch dungeon_magic
 x 5
 y 11
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 11
 end
@@ -1072,8 +1066,7 @@ arch dungeon_magic
 x 5
 y 12
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 12
 end
@@ -1081,8 +1074,7 @@ arch dungeon_magic
 x 5
 y 13
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 13
 end
@@ -1090,8 +1082,7 @@ arch dungeon_magic
 x 5
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 5
 y 14
 end
@@ -1212,8 +1203,7 @@ arch dungeon_magic
 x 6
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 6
 y 6
 end
@@ -1304,8 +1294,7 @@ arch dungeon_magic
 x 6
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 6
 y 14
 end
@@ -1426,8 +1415,7 @@ arch dungeon_magic
 x 7
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 7
 y 6
 end
@@ -1511,8 +1499,7 @@ arch dungeon_magic
 x 7
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 7
 y 14
 end
@@ -1520,8 +1507,7 @@ arch dungeon_magic
 x 7
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 7
 y 15
 end
@@ -1560,16 +1546,11 @@ elevation 5223
 x 7
 y 18
 end
-arch mountain
-no_pass 1
-no_magic 1
-damned 1
-elevation 5223
+arch steppe
 x 7
 y 19
 end
-arch mountain
-elevation 5223
+arch steppe
 x 7
 y 20
 end
@@ -1633,8 +1614,7 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 8
 y 6
 end
@@ -1735,8 +1715,7 @@ arch dungeon_magic
 x 8
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 8
 y 15
 end
@@ -1770,16 +1749,11 @@ sp 11
 x 8
 y 18
 end
-arch mountain
-elevation 5223
+arch steppe
 x 8
 y 18
 end
-arch mountain
-no_pass 1
-no_magic 1
-damned 1
-elevation 5223
+arch steppe
 x 8
 y 19
 end
@@ -1848,8 +1822,7 @@ arch dungeon_magic
 x 9
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 9
 y 6
 end
@@ -1942,7 +1915,7 @@ connected 1
 x 9
 y 13
 end
-arch light4
+arch light2
 x 9
 y 13
 end
@@ -1950,8 +1923,7 @@ arch dungeon_magic
 x 9
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 9
 y 14
 end
@@ -1959,8 +1931,7 @@ arch dungeon_magic
 x 9
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 9
 y 15
 end
@@ -1968,8 +1939,7 @@ arch dungeon_magic
 x 9
 y 16
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 9
 y 16
 end
@@ -1977,8 +1947,7 @@ arch dungeon_magic
 x 9
 y 17
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 9
 y 17
 end
@@ -1994,8 +1963,7 @@ sp 11
 x 9
 y 18
 end
-arch mountain
-elevation 5223
+arch steppe
 x 9
 y 18
 end
@@ -2036,8 +2004,7 @@ sp 11
 x 10
 y 2
 end
-arch mountain
-elevation 5223
+arch steppe
 x 10
 y 2
 end
@@ -2072,8 +2039,7 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 10
 y 6
 end
@@ -2138,6 +2104,10 @@ slaying /!
 x 10
 y 10
 end
+arch light2
+x 10
+y 10
+end
 arch dungeon_magic
 x 10
 y 11
@@ -2182,16 +2152,11 @@ connected 2
 x 10
 y 13
 end
-arch light4
-x 10
-y 13
-end
 arch dungeon_magic
 x 10
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 10
 y 14
 end
@@ -2211,7 +2176,13 @@ Training Centers Incorporated
 Please pay the designated fee to enter
 the training center to train with our
 humanoid trainers.
+-=+=-
+Cowards need not enter. Cowardly
+running about may get one ejected
+from entering this training center.
 endmsg
+walk_on 1
+fly_on 1
 x 10
 y 15
 end
@@ -2219,8 +2190,7 @@ arch dungeon_magic
 x 10
 y 16
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 10
 y 16
 end
@@ -2267,11 +2237,7 @@ arch mountain
 elevation 5223
 x 11
 end
-arch mountain
-no_pass 1
-no_magic 1
-damned 1
-elevation 5223
+arch steppe
 x 11
 y 1
 end
@@ -2287,8 +2253,7 @@ sp 11
 x 11
 y 2
 end
-arch mountain
-elevation 5223
+arch steppe
 x 11
 y 2
 end
@@ -2296,8 +2261,7 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 3
 end
@@ -2305,8 +2269,7 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 4
 end
@@ -2314,8 +2277,7 @@ arch dungeon_magic
 x 11
 y 5
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 5
 end
@@ -2323,8 +2285,7 @@ arch dungeon_magic
 x 11
 y 6
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 6
 end
@@ -2417,7 +2378,7 @@ connected 3
 x 11
 y 13
 end
-arch light4
+arch light2
 x 11
 y 13
 end
@@ -2425,8 +2386,7 @@ arch dungeon_magic
 x 11
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 14
 end
@@ -2434,8 +2394,7 @@ arch dungeon_magic
 x 11
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 11
 y 15
 end
@@ -2487,15 +2446,10 @@ elevation 5223
 x 11
 y 20
 end
-arch mountain
-elevation 5223
+arch steppe
 x 12
 end
-arch mountain
-no_pass 1
-no_magic 1
-damned 1
-elevation 5223
+arch steppe
 x 12
 y 1
 end
@@ -2649,8 +2603,7 @@ arch dungeon_magic
 x 12
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 12
 y 15
 end
@@ -2702,8 +2655,7 @@ elevation 5223
 x 12
 y 20
 end
-arch mountain
-elevation 5223
+arch steppe
 x 13
 end
 arch mountain
@@ -2856,8 +2808,7 @@ arch dungeon_magic
 x 13
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 13
 y 15
 end
@@ -3015,8 +2966,7 @@ arch dungeon_magic
 x 14
 y 10
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 14
 y 10
 end
@@ -3070,8 +3020,7 @@ arch dungeon_magic
 x 14
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 14
 y 15
 end
@@ -3219,8 +3168,7 @@ arch dungeon_magic
 x 15
 y 10
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 15
 y 10
 end
@@ -3228,8 +3176,7 @@ arch dungeon_magic
 x 15
 y 11
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 15
 y 11
 end
@@ -3264,8 +3211,7 @@ arch dungeon_magic
 x 15
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 15
 y 15
 end
@@ -3382,6 +3328,10 @@ elevation 4956
 x 16
 y 6
 end
+arch permanent_lava
+x 16
+y 6
+end
 arch dungeon_magic
 x 16
 y 7
@@ -3413,8 +3363,7 @@ arch dungeon_magic
 x 16
 y 10
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 10
 end
@@ -3422,8 +3371,7 @@ arch dungeon_magic
 x 16
 y 11
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 11
 end
@@ -3431,8 +3379,7 @@ arch dungeon_magic
 x 16
 y 12
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 12
 end
@@ -3440,8 +3387,7 @@ arch dungeon_magic
 x 16
 y 13
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 13
 end
@@ -3449,8 +3395,7 @@ arch dungeon_magic
 x 16
 y 14
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 14
 end
@@ -3458,8 +3403,7 @@ arch dungeon_magic
 x 16
 y 15
 end
-arch hills_rocky
-elevation 4956
+arch steppe
 x 16
 y 15
 end
@@ -3558,12 +3502,20 @@ elevation 4956
 x 17
 y 4
 end
+arch permanent_lava
+x 17
+y 4
+end
 arch dungeon_magic
 x 17
 y 5
 end
 arch hills_rocky
 elevation 4956
+x 17
+y 5
+end
+arch permanent_lava
 x 17
 y 5
 end
@@ -3573,6 +3525,10 @@ y 6
 end
 arch hills_rocky
 elevation 4956
+x 17
+y 6
+end
+arch permanent_lava
 x 17
 y 6
 end
@@ -3582,6 +3538,10 @@ y 7
 end
 arch hills_rocky
 elevation 4956
+x 17
+y 7
+end
+arch permanent_lava
 x 17
 y 7
 end
@@ -3785,6 +3745,10 @@ elevation 5223
 x 18
 y 5
 end
+arch permanent_lava
+x 18
+y 5
+end
 arch invis_exit
 msg
 An unseen force moves you across the world.
@@ -3816,6 +3780,10 @@ y 7
 end
 arch mountain
 elevation 5223
+x 18
+y 7
+end
+arch permanent_lava
 x 18
 y 7
 end
@@ -4063,6 +4031,10 @@ elevation 5223
 x 19
 y 5
 end
+arch permanent_lava
+x 19
+y 5
+end
 arch mountain
 no_pass 1
 no_magic 1
@@ -4071,11 +4043,19 @@ elevation 5223
 x 19
 y 6
 end
+arch permanent_lava
+x 19
+y 6
+end
 arch mountain
 no_pass 1
 no_magic 1
 damned 1
 elevation 5223
+x 19
+y 7
+end
+arch permanent_lava
 x 19
 y 7
 end
@@ -4211,6 +4191,10 @@ y 5
 end
 arch mountain
 elevation 5223
+x 20
+y 6
+end
+arch permanent_lava
 x 20
 y 6
 end
@@ -4299,4 +4283,8 @@ resist_deplete 50
 resist_death 50
 x 9
 y 3
+end
+arch active_volcano
+x 15
+y 5
 end
