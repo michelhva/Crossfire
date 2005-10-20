@@ -6261,12 +6261,20 @@ arch flagstone
 x 24
 y 44
 end
+arch dirtroad_1_1
+x 24
+y 45
+end
 arch flagstone
 x 24
 y 45
 end
-arch woods_3
-elevation 1286
+arch grass
+elevation 675
+x 24
+y 46
+end
+arch dirtroad_3_2
 x 24
 y 46
 end
@@ -6275,13 +6283,25 @@ elevation 675
 x 24
 y 47
 end
+arch dirtroad_1_1
+x 24
+y 47
+end
 arch desert
 elevation 804
 x 24
 y 48
 end
+arch dirtroad_1_1
+x 24
+y 48
+end
 arch desert
 elevation 481
+x 24
+y 49
+end
+arch dirtroad_2_2_1
 x 24
 y 49
 end
@@ -6533,6 +6553,10 @@ elevation 628
 x 25
 y 46
 end
+arch dirtroad_1_3
+x 25
+y 46
+end
 arch grass
 elevation 95
 x 25
@@ -6545,6 +6569,10 @@ y 48
 end
 arch desert
 elevation 801
+x 25
+y 49
+end
+arch dirtroad_1_3
 x 25
 y 49
 end
@@ -6778,8 +6806,12 @@ arch flagstone
 x 26
 y 45
 end
-arch jungle_1
-elevation 1005
+arch desert
+elevation 628
+x 26
+y 46
+end
+arch dirtroad_1_3
 x 26
 y 46
 end
@@ -6795,6 +6827,10 @@ y 48
 end
 arch desert
 elevation 887
+x 26
+y 49
+end
+arch dirtroad_1_3
 x 26
 y 49
 end
@@ -7040,8 +7076,12 @@ elevation 885
 x 27
 y 45
 end
-arch jungle_1
-elevation 1027
+arch grass
+elevation 845
+x 27
+y 46
+end
+arch dirtroad_2_2_3
 x 27
 y 46
 end
@@ -7050,13 +7090,25 @@ elevation 884
 x 27
 y 47
 end
+arch dirtroad_1_1
+x 27
+y 47
+end
 arch grass
 elevation 845
 x 27
 y 48
 end
+arch dirtroad_1_1
+x 27
+y 48
+end
 arch grass
 elevation 973
+x 27
+y 49
+end
+arch dirtroad_2_2_4
 x 27
 y 49
 end
@@ -12518,4 +12570,12 @@ arch mountain
 elevation 6884
 x 49
 y 49
+end
+arch barn
+name dragon hangar - Lake Country
+slaying /lake_country/dragon_hangar/hangar
+hp 15
+sp 1
+x 25
+y 47
 end
