@@ -1,6 +1,6 @@
 arch map
-region lonetown
 name townA_mshop_ud
+region lonetown
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -8,6 +8,9 @@ Date: Wed Jan 31 18:12:04 1996
 endmsg
 width 15
 height 16
+shopitem *:100
+shopmin 10000
+shopgreed 50.0
 end
 arch shop_empty
 end
@@ -210,9 +213,8 @@ x 2
 y 2
 end
 arch elvenboots
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 2
 end
@@ -221,9 +223,8 @@ x 2
 y 3
 end
 arch levitationboots
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 3
 end
@@ -232,9 +233,8 @@ x 2
 y 4
 end
 arch bracers_ac
-value 100000
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 4
 end
@@ -243,9 +243,8 @@ x 2
 y 5
 end
 arch girdle_dam
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 5
 end
@@ -254,9 +253,8 @@ x 2
 y 6
 end
 arch sandals
-value 500
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 6
 end
@@ -265,7 +263,6 @@ x 2
 y 7
 end
 arch dragon_mail
-value 750000
 unpaid 1
 x 2
 y 7
@@ -275,7 +272,6 @@ x 2
 y 8
 end
 arch dragon_shield
-value 750000
 unpaid 1
 x 2
 y 8
@@ -285,7 +281,6 @@ x 2
 y 9
 end
 arch eyeshield
-value 750000
 unpaid 1
 x 2
 y 9
@@ -295,9 +290,8 @@ x 2
 y 10
 end
 arch ring_nodrain
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 2
 y 10
 end
@@ -491,9 +485,8 @@ x 4
 y 2
 end
 arch elven_bow
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 2
 end
@@ -502,9 +495,8 @@ x 4
 y 3
 end
 arch bonecrusher
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 3
 end
@@ -513,9 +505,8 @@ x 4
 y 4
 end
 arch firebrand
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 4
 end
@@ -524,9 +515,8 @@ x 4
 y 5
 end
 arch frostbrand
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 5
 end
@@ -535,9 +525,8 @@ x 4
 y 6
 end
 arch excalibur
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 6
 end
@@ -546,9 +535,8 @@ x 4
 y 7
 end
 arch dragonslayer
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 7
 end
@@ -557,9 +545,8 @@ x 4
 y 8
 end
 arch defender
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 8
 end
@@ -568,9 +555,8 @@ x 4
 y 9
 end
 arch amulet_lifesave
-value 750000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 9
 end
@@ -579,9 +565,8 @@ x 4
 y 10
 end
 arch ring
-value 50000
-unpaid 1
 identified 1
+unpaid 1
 x 4
 y 10
 end
@@ -724,6 +709,7 @@ x 6
 y 2
 end
 arch scroll_oratory
+unpaid 1
 x 6
 y 2
 end
@@ -732,6 +718,7 @@ x 6
 y 3
 end
 arch scroll_stealing
+unpaid 1
 x 6
 y 3
 end
@@ -740,6 +727,7 @@ x 6
 y 4
 end
 arch scroll_singing
+unpaid 1
 x 6
 y 4
 end
@@ -748,6 +736,7 @@ x 6
 y 5
 end
 arch scroll_literacy
+unpaid 1
 x 6
 y 5
 end
@@ -760,6 +749,7 @@ x 6
 y 7
 end
 arch scroll_punching
+unpaid 1
 x 6
 y 7
 end
@@ -768,6 +758,7 @@ x 6
 y 8
 end
 arch scroll_one_handed_weapons
+unpaid 1
 x 6
 y 8
 end
@@ -776,6 +767,7 @@ x 6
 y 9
 end
 arch scroll_karate
+unpaid 1
 x 6
 y 9
 end
@@ -784,6 +776,7 @@ x 6
 y 10
 end
 arch scroll_jumping
+unpaid 1
 x 6
 y 10
 end
@@ -792,6 +785,7 @@ x 6
 y 11
 end
 arch scroll_missile_weap
+unpaid 1
 x 6
 y 11
 end
@@ -934,6 +928,7 @@ x 7
 y 14
 end
 arch scroll_two_handed_weapons
+unpaid 1
 x 7
 y 14
 end
@@ -960,6 +955,7 @@ x 8
 y 2
 end
 arch scroll_bargaining
+unpaid 1
 x 8
 y 2
 end
@@ -968,6 +964,7 @@ x 8
 y 3
 end
 arch scroll_woodsman
+unpaid 1
 x 8
 y 3
 end
@@ -976,6 +973,7 @@ x 8
 y 4
 end
 arch scroll_thaumaturgy
+unpaid 1
 x 8
 y 4
 end
@@ -984,6 +982,7 @@ x 8
 y 5
 end
 arch scroll_jewelry
+unpaid 1
 x 8
 y 5
 end
@@ -992,6 +991,7 @@ x 8
 y 6
 end
 arch scroll_smithing
+unpaid 1
 x 8
 y 6
 end
@@ -1000,6 +1000,7 @@ x 8
 y 7
 end
 arch scroll_bowyer
+unpaid 1
 x 8
 y 7
 end
@@ -1008,9 +1009,8 @@ x 8
 y 8
 end
 arch holy_symbol
-value 150000
-unpaid 1
 identified 1
+unpaid 1
 x 8
 y 8
 end
@@ -1019,6 +1019,7 @@ x 8
 y 9
 end
 arch scroll_pyromancy
+unpaid 1
 x 8
 y 9
 end
@@ -1027,6 +1028,7 @@ x 8
 y 10
 end
 arch scroll_evocation
+unpaid 1
 x 8
 y 10
 end
@@ -1035,6 +1037,7 @@ x 8
 y 11
 end
 arch scroll_sorcery
+unpaid 1
 x 8
 y 11
 end
@@ -1143,6 +1146,7 @@ x 10
 y 2
 end
 arch scroll_alchemy
+unpaid 1
 x 10
 y 2
 end
@@ -1151,6 +1155,7 @@ x 10
 y 3
 end
 arch scroll_summoning
+unpaid 1
 x 10
 y 3
 end
@@ -1159,9 +1164,8 @@ x 10
 y 4
 end
 arch lockpicks
-value 100000
-unpaid 1
 identified 1
+unpaid 1
 x 10
 y 4
 end
@@ -1170,6 +1174,7 @@ x 10
 y 5
 end
 arch scroll_disarm_traps
+unpaid 1
 x 10
 y 5
 end
@@ -1178,6 +1183,7 @@ x 10
 y 6
 end
 arch scroll_set_traps
+unpaid 1
 x 10
 y 6
 end
@@ -1186,6 +1192,7 @@ x 10
 y 7
 end
 arch scroll_hiding
+unpaid 1
 x 10
 y 7
 end
@@ -1194,6 +1201,7 @@ x 10
 y 8
 end
 arch scroll_climbing
+unpaid 1
 x 10
 y 8
 end
@@ -1202,6 +1210,7 @@ x 10
 y 9
 end
 arch scroll_sense_mag
+unpaid 1
 x 10
 y 9
 end
@@ -1210,6 +1219,7 @@ x 10
 y 10
 end
 arch scroll_sense_curse
+unpaid 1
 x 10
 y 10
 end
@@ -1218,6 +1228,7 @@ x 10
 y 11
 end
 arch scroll_use_magic_item
+unpaid 1
 x 10
 y 11
 end
@@ -1226,6 +1237,7 @@ x 10
 y 12
 end
 arch scroll_find_traps
+unpaid 1
 x 10
 y 12
 end
@@ -1234,6 +1246,7 @@ x 10
 y 13
 end
 arch scroll_praying
+unpaid 1
 x 10
 y 13
 end
@@ -1382,7 +1395,6 @@ x 12
 y 2
 end
 arch prepare_weapon
-value 750000
 unpaid 1
 x 12
 y 2
@@ -1392,7 +1404,6 @@ x 12
 y 3
 end
 arch improve_wis
-value 750000
 unpaid 1
 x 12
 y 3
@@ -1402,7 +1413,6 @@ x 12
 y 4
 end
 arch improve_weight
-value 750000
 unpaid 1
 x 12
 y 4
@@ -1412,7 +1422,6 @@ x 12
 y 5
 end
 arch improve_str
-value 750000
 unpaid 1
 x 12
 y 5
@@ -1422,7 +1431,6 @@ x 12
 y 6
 end
 arch improve_pow
-value 750000
 unpaid 1
 x 12
 y 6
@@ -1432,7 +1440,6 @@ x 12
 y 7
 end
 arch improve_int
-value 750000
 unpaid 1
 x 12
 y 7
@@ -1442,7 +1449,6 @@ x 12
 y 8
 end
 arch improve_enchantment
-value 750000
 unpaid 1
 x 12
 y 8
@@ -1452,7 +1458,6 @@ x 12
 y 9
 end
 arch improve_dex
-value 750000
 unpaid 1
 x 12
 y 9
@@ -1462,7 +1467,6 @@ x 12
 y 10
 end
 arch improve_damage
-value 750000
 unpaid 1
 x 12
 y 10
@@ -1472,7 +1476,6 @@ x 12
 y 11
 end
 arch improve_con
-value 750000
 unpaid 1
 x 12
 y 11
@@ -1482,7 +1485,6 @@ x 12
 y 12
 end
 arch improve_cha
-value 750000
 unpaid 1
 x 12
 y 12
@@ -1492,7 +1494,6 @@ x 12
 y 13
 end
 arch ench_armour
-value 750000
 unpaid 1
 x 12
 y 13
