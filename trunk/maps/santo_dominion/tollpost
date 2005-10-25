@@ -833,6 +833,12 @@ arch dirtfloor
 x 6
 y 13
 end
+arch button_lever
+x 6
+y 13
+protected 3
+connected 3
+end
 arch dirtfloor
 x 6
 y 14
@@ -1084,6 +1090,12 @@ end
 arch dirtfloor
 x 8
 y 6
+end
+arch button_lever
+x 8
+y 6
+protected 2
+connected 2
 end
 arch dirtfloor
 x 8
@@ -2134,6 +2146,12 @@ end
 arch dirtfloor
 x 15
 y 8
+end
+arch button_lever
+x 15
+y 8
+protected 1
+connected 1
 end
 arch dirtfloor
 x 15
