@@ -5,6 +5,9 @@ Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jul 23 15:02:59 1997
 endmsg
+shopitems book:61;spellbook:71;amulet:31;ring:41;*:-49
+shopmax 35000
+shopmin 2500
 end
 arch woodfloor
 end

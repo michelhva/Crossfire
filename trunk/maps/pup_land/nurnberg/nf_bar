@@ -8,6 +8,9 @@ Date: Sat Feb 10 05:55:01 1996
 endmsg
 width 27
 height 20
+shopitems food:100;*:-100
+shopmax 5000
+shopgreed 1.5
 end
 arch cobblestones
 end
