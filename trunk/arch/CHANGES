@@ -1,5 +1,10 @@
 Changes for CVS top of tree:
 
+Make bullet swarm fire small bullets instead of magic bullets. Previously
+bullet swarm (which is an evocation spell) gave sorcery exp.
+Andreas Kirschbaum 2005-10-28
+
+
 Correct rune definitions. Some runes did use obsolete fields or had
 inconsistent definitions.
 Andreas Kirschbaum 2004-09-14
