@@ -10,7 +10,7 @@ value 70
 sp 6
 casting_time 5
 path_attuned 16
-other_arch spell_magic_bullet
+other_arch spell_small_bullet
 duration 3
 duration_modifier 4
 maxsp 12
