@@ -1,5 +1,10 @@
 Changes for CVS top of tree:
 
+Add new force archetype monk_no_use_weapon. It will be inserted into
+inventories of monk players to prevent them from using weapons.
+Andreas Kirschbaum 2005-11-01
+
+
 Make bullet swarm fire small bullets instead of magic bullets. Previously
 bullet swarm (which is an evocation spell) gave sorcery exp.
 Andreas Kirschbaum 2005-10-28
