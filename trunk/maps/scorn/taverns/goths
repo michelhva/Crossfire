@@ -309,34 +309,34 @@ arch merchant
 name Bragh O'Leary
 msg
 @match Bragh|bragh|O'Leary|o'leary
-Aye, I be Bragh O'Leary former Owner of the
-Scorn Training Center. You be some whelp
-here to gloat over me loss of me Trainin' Center?
-Away wit' ye! BARTENDER! Another Booze! (hic)
+Aye, I be BRAGH O'LEARY former OWNER of the
+Scorn TRAININ' CENTER. You be some whelp
+here to gloat over me loss of me TRAININ' CENTER?
+Away wit' ye! Bartender! Another Booze! (hic)
 @match Train|train|Center|center
-You liked me Trainin' Center did ye? Well good
-for ye! Some bleedin' Consortium bought it from
+You liked me TRAININ' CENTER did ye? Well good
+for ye! Some bleedin' CONSORTIUM bought it from
 the Bank afore I could raise the platinum to pay
 off the foreclosure. Buncha zombie lovers. (hic)
 @match Owner|owner
-Aye. I were the owner of the Trainin' Center. I
+Aye. I were the owner of the TRAININ' CENTER. I
 tol' the bloody Bank I'd gi' 'em their bloody
 money. Bleedin' slime foreclosed on me.
 @match Consortium|consortium
 The consortamum ... constortanum ... BLAST! I
 dinno who they be. I just hears they broke up
-and Moved me Trainin' Center to other parts
+and MOVED me TRAININ' CENTER to other parts
 o' the world. The slime! (hic) I also hears they
 ha' repr'sentatives tha' hang out in taverns to
 recruit people inta their centers.
 @match Move|move
 Well, young'un, I dinna know the details but I
-hears the high level Trainin' Centers are in the
+hears the high level TRAININ' CENTERs are in the
 wilderness near Santo Dominion, Darcap, Brest
 'n Navar. But th' term "near" is used a bit
 loosely here ye unnershtan'? (hic) I dinna know
 what the bloody fools did wit' me low level
-Trainin' Centers. Anyway, ask around in the
+TRAININ' CENTERs. Anyway, ask around in the
 taverns in them towns. Some'n there will be
 able to answer ye questions.
 @match *
@@ -1361,14 +1361,14 @@ y 1
 end
 arch slotmachine2
 name Gerty Gold
-arch event_apply
-title Python
-slaying /python/casino/goldslots.py
-end
 slaying
 food 0
 x 5
 y 1
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
 end
 arch woodfloor
 x 5
@@ -1755,14 +1755,14 @@ y 1
 end
 arch slotmachine3
 name Sally Silver
-arch event_apply 
-title Python
-slaying /python/casino/silverslots.py
-end
 slaying
 food 0
 x 7
 y 1
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
 end
 arch woodfloor
 x 7
@@ -3809,10 +3809,6 @@ x 16
 y 27
 end
 arch man
-arch event_say
-title Python
-slaying /python/IPO/seen.py
-end
 msg
 @match *
 Howdy
@@ -3821,6 +3817,10 @@ unaggressive 0
 friendly 1
 x 16
 y 27
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
 end
 arch woodfloor
 x 16
