@@ -5418,7 +5418,16 @@ sp 4
 x 21
 y 24
 end
-arch woods_2
+arch brush
+elevation 1384
+x 21
+y 25
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 21
 y 25
 end
@@ -5454,10 +5463,6 @@ elevation 1566
 x 21
 y 31
 end
-arch house_1
-x 21
-y 31
-end
 arch brush
 x 21
 y 32
@@ -5468,15 +5473,17 @@ x 21
 y 33
 end
 arch brush
+elevation 2755
+x 21
+y 34
+end
+arch brush
 elevation 561
 x 21
-y 34
+y 35
 end
 arch house_1
-x 21
-y 34
-end
-arch tree
+elevation 561
 x 21
 y 35
 end
@@ -5730,18 +5737,22 @@ arch flagstone
 x 22
 y 30
 end
-arch tree
-elevation 617
+arch brush
+elevation 1017
 x 22
 y 31
 end
-arch tree
-elevation 1510
+arch brush
+elevation 1017
 x 22
 y 32
 end
 arch brush
 elevation 210
+x 22
+y 33
+end
+arch tree3
 x 22
 y 33
 end
@@ -6062,8 +6073,16 @@ elevation 2611
 x 23
 y 31
 end
+arch tree3
+x 23
+y 31
+end
 arch brush
 elevation 1017
+x 23
+y 32
+end
+arch tree3
 x 23
 y 32
 end
@@ -6985,6 +7004,14 @@ y 37
 end
 arch grass
 elevation 2308
+x 26
+y 38
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 26
 y 38
 end
@@ -9030,7 +9057,16 @@ elevation 1337
 x 34
 y 36
 end
-arch tree
+arch grass
+elevation 1509
+x 34
+y 37
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
 x 34
 y 37
 end
@@ -12954,6 +12990,14 @@ arch evergreens
 elevation 2216
 x 49
 y 49
+end
+arch l_shop1
+name Acme Inc.
+slaying /brest/shops/buildshop
+hp 6
+sp 24
+x 21
+y 31
 end
 arch city_tower_fant
 name Tower of  Tanguy
