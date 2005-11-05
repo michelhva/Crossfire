@@ -58,6 +58,16 @@ subtype 2
 face mbwall.111
 slaying wall_0
 end
+Object building_wall2
+name DWall material
+nrof 1
+weight 1500
+value 1500
+type 161
+subtype 2
+face mbdwall.111
+slaying dwall_0
+end
 Object building_vertical_gate
 name Vertical gate material
 nrof 1
