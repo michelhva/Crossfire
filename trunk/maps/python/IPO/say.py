@@ -185,4 +185,4 @@ elif text[0] == 'receive':
 		whoami.Say('Sorry, our package delivery service is currently in strike. Please come back later.')
 else:
 	whoami.Say('Do you need help?')
-Crossfire.setReturnValue(1)
+Crossfire.SetReturnValue(1)
