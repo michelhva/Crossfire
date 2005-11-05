@@ -1914,7 +1914,6 @@ Welcome to your new town house located
 in beautiful downtown Brest. Brest Realty
 hopes you will have a long and happy
 residency in our town.
-
 Note that many areas of your new
 home are buildable. Some materials
 may not fit with the existing walls and
@@ -1981,6 +1980,7 @@ arch check_inv
 slaying brest_town_house
 last_sp 0
 connected 321
+walk_off 0
 x 8
 y 30
 end
