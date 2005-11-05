@@ -65,7 +65,7 @@ weight 1500
 value 1500
 type 161
 subtype 2
-face mbdwall.111
+face mbdwall_0.111
 slaying dwall_0
 end
 Object building_vertical_gate
