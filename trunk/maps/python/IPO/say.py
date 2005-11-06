@@ -150,7 +150,7 @@ elif text[0] == 'send':
 		inv = activator.CheckInventory(sackName)
 		map = 0
 		if inv != 0:
-			while inv != 0:
+			while inv:
 				next = inv.Below
 				text2=string.split(inv.Name)
 				if text2[0]==sackName and text2[1]=='T:' and text2[3]=='F:' and text2[2] == text[1]:
@@ -168,10 +168,10 @@ elif text[0] == 'send':
 elif text[0] == 'receive':
 	map = Crossfire.ReadyMap(storage_map)
 	if ( map != 0 ):
-		item = map.GetObjectAt(storage_x, storage_y)
+		item = map.ObjectAt(storage_x, storage_y)
 		count = 0
-		while item != 0:
-			previous = item.above
+		while item:
+			previous = item.Above
 			text2 = string.split(item.Name)
 			if ( len(text2) == 5 ) and ( text2[0] == sackName ) and ( text2[2] == activatorname ):
 				activator.InsertObjectInside(item)
