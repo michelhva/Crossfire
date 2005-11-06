@@ -19,7 +19,7 @@ o Once you got all ingredients to complete
   a recipe, you must put them into your
   cauldron. The amount of ingredients must
   also be correct. Put the cauldron on the
-  floor, close it and cast the spell
+  floor, close it and use the skill
   "alchemy" upon it. If you are lucky you
   will get what you longed for.
 o Use alchemy to earn money as well as for
