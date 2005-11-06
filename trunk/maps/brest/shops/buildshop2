@@ -465,7 +465,7 @@ arch tile_floor
 x 3
 y 18
 end
-arch wwall_3_2
+arch wwall_2_1_1
 x 3
 y 18
 end
@@ -556,39 +556,39 @@ arch wwall_win2
 x 4
 y 3
 end
-arch shop_empty
+arch shop_building
 x 4
 y 4
 end
-arch shop_empty
+arch shop_building
 x 4
 y 5
 end
-arch shop_empty
+arch shop_building
 x 4
 y 6
 end
-arch shop_empty
+arch shop_building
 x 4
 y 7
 end
-arch shop_empty
+arch shop_building
 x 4
 y 8
 end
-arch shop_empty
+arch shop_building
 x 4
 y 9
 end
-arch shop_empty
+arch shop_building
 x 4
 y 10
 end
-arch shop_empty
+arch shop_building
 x 4
 y 11
 end
-arch shop_empty
+arch shop_building
 x 4
 y 12
 end
@@ -604,105 +604,39 @@ arch shop_empty
 x 4
 y 15
 end
-arch shop_empty
+arch shop_building
 x 4
 y 16
 end
-arch shop_empty
+arch shop_building
 x 4
 y 17
 end
-arch tile_floor
+arch shop_building
 x 4
 y 18
 end
-arch wwall_win2
-x 4
-y 18
-end
-arch tile_floor
+arch shop_building
 x 4
 y 19
 end
-arch tile_floor
+arch shop_building
 x 4
 y 20
 end
-arch book_read
-name Signs and talking books
-msg
-When making signs and talking (or listening) books, you need to place a book or scroll with the text you want on the square you're building on just like a marking rune.
-With the talking/listening books, they will take the name and picture of the book used to create them as well.
-For the talking and listening books, you also need to connect them with a marking rune just like gates buttons and levers, which in the case of the talking books, makes the book say it's message when activated, and in the case of listening books, it causes saying the phrase that the book looks for to act like pulling a lever.
-For the listening books, the message must be in this format:
-@match blah
-Click.
-Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 4
-y 20
-end
-arch tile_floor
+arch shop_building
 x 4
 y 21
 end
-arch book_read
-name Building restrictions
-msg
-To build on a spot, all items on this spot must be 'buildable'.
-Buildable items will display 'this is a buildable item' when examined.
-There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 4
-y 21
-end
-arch tile_floor
+arch shop_building
 x 4
 y 22
 end
-arch book_read
-name Building other items
-msg
-All items not requiring any special handling are built simply by marking the appropriate material and firing the builder.
-Note that, to avoid any issue, those items can not be picked up.
-Note also that you can build an item on another.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 4
-y 22
-end
-arch tile_floor
+arch shop_building
 x 4
 y 23
 end
-arch book_read
-name Basic building instructions
-msg
-To build your own home, you can use different items:
-* generic builder: this tool lets you build anything. You need one to build.
-* generic destroyer: this tool lets you destroy a built item. This will remove any built item, except floors and walls.
-* materials: you need those to build items. For instance, a 'Wood floor material' enables you to build a woodfloor.
-To build an item:
-* apply the builder
-* mark the material of the item you want to build
-* fire the builder in the desired direction
-Of course, the material is used when you build, so you need to buy quite a few.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 4
-y 23
-end
-arch tile_floor
+arch shop_building
 x 4
 y 24
 end
@@ -809,98 +743,31 @@ arch shop_empty
 x 5
 y 17
 end
-arch tile_floor
+arch shop_empty
 x 5
 y 18
 end
-arch wwall_win2
-x 5
-y 18
-end
-arch tile_floor
+arch shop_empty
 x 5
 y 19
 end
-arch tile_floor
+arch shop_empty
 x 5
 y 20
 end
-arch book_read
-name Building floor and walls
-msg
-Building enables you to put walls and floors where you want.
-Building a floor lets you remove walls. This is the only way to remove them.
-You can change an existing floor by building another on top. Same goes for walls.
-All created floors are magic, and will preserve items you put on them.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 5
-y 20
-end
-arch tile_floor
+arch shop_empty
 x 5
 y 21
 end
-arch book_read
-name Building gates and buttons/pedestals
-msg
-Some items, like gates, require buttons, pedestals, ..., something to be opened and closed.
-To build a gate with its associated button:
-* put a marking rune at the spot where you wish to build the door. The text can be whatever you want, make sure to remember it.
-* build the gate on this spot
-* put a marking rune at the spot where you with to put the button. Use the same text as for the door.
-* build the button
-Your button will now activate the gate when you apply it.
-Note that you can link together as many gates, buttons, pedestals, as you want.
-As long as you use the same text on the marking rune, they will all work together.
-To build gates activated by other buttons, just use another text.
-Normally all gates with a single marking rune text are either all up or all down at a given time, however if you want one open while another is closed, make use of inverted gates.
-Also, it is possible to make buttons, levers, and pedestals underneath gates, however it requires things to be made in a specific order.
-* make 2 marking runes on the square that you want to build the button and gate on
-* build the gate first
-* then build the button underneath it
-This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 5
-y 21
-end
-arch tile_floor
+arch shop_empty
 x 5
 y 22
 end
-arch book_read
-name Removing items
-msg
-To remove built items, you need a 'generic destroyer'.
-Simply apply it, and fire in the desired direction. It will remove the first built item from the location.
-Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
-Note that the destroyer will not remove walls or floors.
-endmsg
-material 0
-no_pick 1
-identified 1
-x 5
-y 22
-end
-arch tile_floor
+arch shop_empty
 x 5
 y 23
 end
-arch sign
-msg
-Welcome to Acme. Inc construction shop!
-You will find here everything you need to build your own customized home, sweet home.
-Make sure to read our documentation on how to build nice maps.
-endmsg
-x 5
-y 23
-end
-arch tile_floor
+arch shop_empty
 x 5
 y 24
 end
@@ -955,11 +822,11 @@ arch wwall_2_1_2
 x 6
 y 3
 end
-arch shop_empty
+arch shop_building
 x 6
 y 4
 end
-arch shop_empty
+arch shop_building
 x 6
 y 5
 end
@@ -991,11 +858,11 @@ arch shop_building
 x 6
 y 12
 end
-arch shop_building
+arch shop_empty
 x 6
 y 13
 end
-arch shop_building
+arch shop_empty
 x 6
 y 14
 end
@@ -1003,61 +870,39 @@ arch shop_empty
 x 6
 y 15
 end
-arch shop_empty
+arch shop_building
 x 6
 y 16
 end
-arch shop_empty
+arch shop_building
 x 6
 y 17
 end
-arch shop_mat
-x 6
-y 17
-end
-arch tile_floor
+arch shop_building
 x 6
 y 18
 end
-arch wwall_win2
-x 6
-y 18
-end
-arch tile_floor
+arch shop_building
 x 6
 y 19
 end
-arch shop_mat
-x 6
-y 19
-end
-arch tile_floor
+arch shop_building
 x 6
 y 20
 end
-arch tile_floor
+arch shop_building
 x 6
 y 21
 end
-arch tile_floor
+arch shop_building
 x 6
 y 22
 end
-arch tile_floor
+arch shop_building
 x 6
 y 23
 end
-arch tile_floor
-x 6
-y 24
-end
-arch oakdoor
-msg
-Thank you for your visit!
-endmsg
-slaying /world/world_107_123
-hp 21
-sp 33
+arch shop_building
 x 6
 y 24
 end
@@ -1112,39 +957,39 @@ arch shop_empty
 x 7
 y 5
 end
-arch shop_building
+arch shop_empty
 x 7
 y 6
 end
-arch shop_building
+arch shop_empty
 x 7
 y 7
 end
-arch shop_building
+arch shop_empty
 x 7
 y 8
 end
-arch shop_building
+arch shop_empty
 x 7
 y 9
 end
-arch shop_building
+arch shop_empty
 x 7
 y 10
 end
-arch shop_building
+arch shop_empty
 x 7
 y 11
 end
-arch shop_building
+arch shop_empty
 x 7
 y 12
 end
-arch shop_building
+arch shop_empty
 x 7
 y 13
 end
-arch shop_building
+arch shop_empty
 x 7
 y 14
 end
@@ -1160,39 +1005,31 @@ arch shop_empty
 x 7
 y 17
 end
-arch tile_floor
+arch shop_empty
 x 7
 y 18
 end
-arch wwall_win2
-x 7
-y 18
-end
-arch tile_floor
+arch shop_empty
 x 7
 y 19
 end
-arch menu
-x 7
-y 19
-end
-arch tile_floor
+arch shop_empty
 x 7
 y 20
 end
-arch tile_floor
+arch shop_empty
 x 7
 y 21
 end
-arch tile_floor
+arch shop_empty
 x 7
 y 22
 end
-arch tile_floor
+arch shop_empty
 x 7
 y 23
 end
-arch tile_floor
+arch shop_empty
 x 7
 y 24
 end
@@ -1235,39 +1072,39 @@ arch wwall_win2
 x 8
 y 3
 end
-arch shop_empty
+arch shop_building
 x 8
 y 4
 end
-arch shop_empty
+arch shop_building
 x 8
 y 5
 end
-arch shop_empty
+arch shop_building
 x 8
 y 6
 end
-arch shop_empty
+arch shop_building
 x 8
 y 7
 end
-arch shop_empty
+arch shop_building
 x 8
 y 8
 end
-arch shop_empty
+arch shop_building
 x 8
 y 9
 end
-arch shop_empty
+arch shop_building
 x 8
 y 10
 end
-arch shop_empty
+arch shop_building
 x 8
 y 11
 end
-arch shop_empty
+arch shop_building
 x 8
 y 12
 end
@@ -1283,67 +1120,39 @@ arch shop_empty
 x 8
 y 15
 end
-arch shop_empty
+arch shop_building
 x 8
 y 16
 end
-arch shop_empty
+arch shop_building
 x 8
 y 17
 end
-arch tile_floor
+arch shop_building
 x 8
 y 18
 end
-arch wwall_2_2_3
-x 8
-y 18
-end
-arch tile_floor
+arch shop_building
 x 8
 y 19
 end
-arch wwall_win1
-x 8
-y 19
-end
-arch tile_floor
+arch shop_building
 x 8
 y 20
 end
-arch wwall_win1
-x 8
-y 20
-end
-arch tile_floor
+arch shop_building
 x 8
 y 21
 end
-arch wwall_2_1_1
-x 8
-y 21
-end
-arch tile_floor
+arch shop_building
 x 8
 y 22
 end
-arch wwall_2_1_1
-x 8
-y 22
-end
-arch tile_floor
+arch shop_building
 x 8
 y 23
 end
-arch wwall_win1
-x 8
-y 23
-end
-arch tile_floor
-x 8
-y 24
-end
-arch wwall_win1
+arch shop_building
 x 8
 y 24
 end
@@ -1351,7 +1160,7 @@ arch tile_floor
 x 8
 y 25
 end
-arch wwall_3_1
+arch wwall_win2
 x 8
 y 25
 end
@@ -1509,11 +1318,11 @@ arch wwall_2_1_2
 x 10
 y 3
 end
-arch shop_empty
+arch shop_building
 x 10
 y 4
 end
-arch shop_empty
+arch shop_building
 x 10
 y 5
 end
@@ -1545,11 +1354,11 @@ arch shop_building
 x 10
 y 12
 end
-arch shop_building
+arch shop_empty
 x 10
 y 13
 end
-arch shop_building
+arch shop_empty
 x 10
 y 14
 end
@@ -1557,39 +1366,39 @@ arch shop_empty
 x 10
 y 15
 end
-arch shop_empty
+arch shop_building
 x 10
 y 16
 end
-arch shop_empty
+arch shop_building
 x 10
 y 17
 end
-arch shop_empty
+arch shop_building
 x 10
 y 18
 end
-arch shop_empty
+arch shop_building
 x 10
 y 19
 end
-arch shop_empty
+arch shop_building
 x 10
 y 20
 end
-arch shop_empty
+arch shop_building
 x 10
 y 21
 end
-arch shop_empty
+arch shop_building
 x 10
 y 22
 end
-arch shop_empty
+arch shop_building
 x 10
 y 23
 end
-arch shop_empty
+arch shop_building
 x 10
 y 24
 end
@@ -1640,39 +1449,39 @@ arch shop_empty
 x 11
 y 5
 end
-arch shop_building
+arch shop_empty
 x 11
 y 6
 end
-arch shop_building
+arch shop_empty
 x 11
 y 7
 end
-arch shop_building
+arch shop_empty
 x 11
 y 8
 end
-arch shop_building
+arch shop_empty
 x 11
 y 9
 end
-arch shop_building
+arch shop_empty
 x 11
 y 10
 end
-arch shop_building
+arch shop_empty
 x 11
 y 11
 end
-arch shop_building
+arch shop_empty
 x 11
 y 12
 end
-arch shop_building
+arch shop_empty
 x 11
 y 13
 end
-arch shop_building
+arch shop_empty
 x 11
 y 14
 end
@@ -1684,11 +1493,11 @@ arch shop_empty
 x 11
 y 16
 end
-arch shop_building
+arch shop_empty
 x 11
 y 17
 end
-arch shop_building
+arch shop_empty
 x 11
 y 18
 end
@@ -1700,11 +1509,11 @@ arch shop_empty
 x 11
 y 20
 end
-arch shop_building
+arch shop_empty
 x 11
 y 21
 end
-arch shop_building
+arch shop_empty
 x 11
 y 22
 end
@@ -1755,39 +1564,39 @@ arch wwall_win2
 x 12
 y 3
 end
-arch shop_empty
+arch shop_building
 x 12
 y 4
 end
-arch shop_empty
+arch shop_building
 x 12
 y 5
 end
-arch shop_empty
+arch shop_building
 x 12
 y 6
 end
-arch shop_empty
+arch shop_building
 x 12
 y 7
 end
-arch shop_empty
+arch shop_building
 x 12
 y 8
 end
-arch shop_empty
+arch shop_building
 x 12
 y 9
 end
-arch shop_empty
+arch shop_building
 x 12
 y 10
 end
-arch shop_empty
+arch shop_building
 x 12
 y 11
 end
-arch shop_empty
+arch shop_building
 x 12
 y 12
 end
@@ -1803,7 +1612,7 @@ arch shop_empty
 x 12
 y 15
 end
-arch shop_empty
+arch shop_building
 x 12
 y 16
 end
@@ -1815,11 +1624,11 @@ arch shop_building
 x 12
 y 18
 end
-arch shop_empty
+arch shop_building
 x 12
 y 19
 end
-arch shop_empty
+arch shop_building
 x 12
 y 20
 end
@@ -1831,11 +1640,11 @@ arch shop_building
 x 12
 y 22
 end
-arch shop_empty
+arch shop_building
 x 12
 y 23
 end
-arch shop_empty
+arch shop_building
 x 12
 y 24
 end
@@ -1930,11 +1739,11 @@ arch shop_empty
 x 13
 y 16
 end
-arch shop_building
+arch shop_empty
 x 13
 y 17
 end
-arch shop_building
+arch shop_empty
 x 13
 y 18
 end
@@ -1946,11 +1755,11 @@ arch shop_empty
 x 13
 y 20
 end
-arch shop_building
+arch shop_empty
 x 13
 y 21
 end
-arch shop_building
+arch shop_empty
 x 13
 y 22
 end
@@ -2001,11 +1810,11 @@ arch wwall_2_1_2
 x 14
 y 3
 end
-arch shop_empty
+arch shop_building
 x 14
 y 4
 end
-arch shop_empty
+arch shop_building
 x 14
 y 5
 end
@@ -2037,11 +1846,11 @@ arch shop_building
 x 14
 y 12
 end
-arch shop_building
+arch shop_empty
 x 14
 y 13
 end
-arch shop_building
+arch shop_empty
 x 14
 y 14
 end
@@ -2049,7 +1858,7 @@ arch shop_empty
 x 14
 y 15
 end
-arch shop_empty
+arch shop_building
 x 14
 y 16
 end
@@ -2061,11 +1870,11 @@ arch shop_building
 x 14
 y 18
 end
-arch shop_empty
+arch shop_building
 x 14
 y 19
 end
-arch shop_empty
+arch shop_building
 x 14
 y 20
 end
@@ -2077,11 +1886,11 @@ arch shop_building
 x 14
 y 22
 end
-arch shop_empty
+arch shop_building
 x 14
 y 23
 end
-arch shop_empty
+arch shop_building
 x 14
 y 24
 end
@@ -2132,39 +1941,39 @@ arch shop_empty
 x 15
 y 5
 end
-arch shop_building
+arch shop_empty
 x 15
 y 6
 end
-arch shop_building
+arch shop_empty
 x 15
 y 7
 end
-arch shop_building
+arch shop_empty
 x 15
 y 8
 end
-arch shop_building
+arch shop_empty
 x 15
 y 9
 end
-arch shop_building
+arch shop_empty
 x 15
 y 10
 end
-arch shop_building
+arch shop_empty
 x 15
 y 11
 end
-arch shop_building
+arch shop_empty
 x 15
 y 12
 end
-arch shop_building
+arch shop_empty
 x 15
 y 13
 end
-arch shop_building
+arch shop_empty
 x 15
 y 14
 end
@@ -2176,11 +1985,11 @@ arch shop_empty
 x 15
 y 16
 end
-arch shop_building
+arch shop_empty
 x 15
 y 17
 end
-arch shop_building
+arch shop_empty
 x 15
 y 18
 end
@@ -2192,11 +2001,11 @@ arch shop_empty
 x 15
 y 20
 end
-arch shop_building
+arch shop_empty
 x 15
 y 21
 end
-arch shop_building
+arch shop_empty
 x 15
 y 22
 end
@@ -2247,39 +2056,39 @@ arch wwall_win2
 x 16
 y 3
 end
-arch shop_empty
+arch shop_building
 x 16
 y 4
 end
-arch shop_empty
+arch shop_building
 x 16
 y 5
 end
-arch shop_empty
+arch shop_building
 x 16
 y 6
 end
-arch shop_empty
+arch shop_building
 x 16
 y 7
 end
-arch shop_empty
+arch shop_building
 x 16
 y 8
 end
-arch shop_empty
+arch shop_building
 x 16
 y 9
 end
-arch shop_empty
+arch shop_building
 x 16
 y 10
 end
-arch shop_empty
+arch shop_building
 x 16
 y 11
 end
-arch shop_empty
+arch shop_building
 x 16
 y 12
 end
@@ -2295,7 +2104,7 @@ arch shop_empty
 x 16
 y 15
 end
-arch shop_empty
+arch shop_building
 x 16
 y 16
 end
@@ -2307,11 +2116,11 @@ arch shop_building
 x 16
 y 18
 end
-arch shop_empty
+arch shop_building
 x 16
 y 19
 end
-arch shop_empty
+arch shop_building
 x 16
 y 20
 end
@@ -2323,11 +2132,11 @@ arch shop_building
 x 16
 y 22
 end
-arch shop_empty
+arch shop_building
 x 16
 y 23
 end
-arch shop_empty
+arch shop_building
 x 16
 y 24
 end
@@ -2422,11 +2231,11 @@ arch shop_empty
 x 17
 y 16
 end
-arch shop_building
+arch shop_empty
 x 17
 y 17
 end
-arch shop_building
+arch shop_empty
 x 17
 y 18
 end
@@ -2438,11 +2247,11 @@ arch shop_empty
 x 17
 y 20
 end
-arch shop_building
+arch shop_empty
 x 17
 y 21
 end
-arch shop_building
+arch shop_empty
 x 17
 y 22
 end
@@ -2497,11 +2306,11 @@ arch wwall_2_1_2
 x 18
 y 3
 end
-arch shop_empty
+arch shop_building
 x 18
 y 4
 end
-arch shop_empty
+arch shop_building
 x 18
 y 5
 end
@@ -2533,11 +2342,11 @@ arch shop_building
 x 18
 y 12
 end
-arch shop_building
+arch shop_empty
 x 18
 y 13
 end
-arch shop_building
+arch shop_empty
 x 18
 y 14
 end
@@ -2545,7 +2354,7 @@ arch shop_empty
 x 18
 y 15
 end
-arch shop_empty
+arch shop_building
 x 18
 y 16
 end
@@ -2557,11 +2366,11 @@ arch shop_building
 x 18
 y 18
 end
-arch shop_empty
+arch shop_building
 x 18
 y 19
 end
-arch shop_empty
+arch shop_building
 x 18
 y 20
 end
@@ -2573,11 +2382,11 @@ arch shop_building
 x 18
 y 22
 end
-arch shop_empty
+arch shop_building
 x 18
 y 23
 end
-arch shop_empty
+arch shop_building
 x 18
 y 24
 end
@@ -2636,39 +2445,39 @@ arch shop_empty
 x 19
 y 5
 end
-arch shop_building
+arch shop_empty
 x 19
 y 6
 end
-arch shop_building
+arch shop_empty
 x 19
 y 7
 end
-arch shop_building
+arch shop_empty
 x 19
 y 8
 end
-arch shop_building
+arch shop_empty
 x 19
 y 9
 end
-arch shop_building
+arch shop_empty
 x 19
 y 10
 end
-arch shop_building
+arch shop_empty
 x 19
 y 11
 end
-arch shop_building
+arch shop_empty
 x 19
 y 12
 end
-arch shop_building
+arch shop_empty
 x 19
 y 13
 end
-arch shop_building
+arch shop_empty
 x 19
 y 14
 end
@@ -2680,11 +2489,11 @@ arch shop_empty
 x 19
 y 16
 end
-arch shop_building
+arch shop_empty
 x 19
 y 17
 end
-arch shop_building
+arch shop_empty
 x 19
 y 18
 end
@@ -2696,11 +2505,11 @@ arch shop_empty
 x 19
 y 20
 end
-arch shop_building
+arch shop_empty
 x 19
 y 21
 end
-arch shop_building
+arch shop_empty
 x 19
 y 22
 end
@@ -2755,39 +2564,39 @@ arch wwall_win2
 x 20
 y 3
 end
-arch shop_empty
+arch shop_building
 x 20
 y 4
 end
-arch shop_empty
+arch shop_building
 x 20
 y 5
 end
-arch shop_empty
+arch shop_building
 x 20
 y 6
 end
-arch shop_empty
+arch shop_building
 x 20
 y 7
 end
-arch shop_empty
+arch shop_building
 x 20
 y 8
 end
-arch shop_empty
+arch shop_building
 x 20
 y 9
 end
-arch shop_empty
+arch shop_building
 x 20
 y 10
 end
-arch shop_empty
+arch shop_building
 x 20
 y 11
 end
-arch shop_empty
+arch shop_building
 x 20
 y 12
 end
@@ -2803,7 +2612,7 @@ arch shop_empty
 x 20
 y 15
 end
-arch shop_empty
+arch shop_building
 x 20
 y 16
 end
@@ -2815,11 +2624,11 @@ arch shop_building
 x 20
 y 18
 end
-arch shop_empty
+arch shop_building
 x 20
 y 19
 end
-arch shop_empty
+arch shop_building
 x 20
 y 20
 end
@@ -2831,11 +2640,11 @@ arch shop_building
 x 20
 y 22
 end
-arch shop_empty
+arch shop_building
 x 20
 y 23
 end
-arch shop_empty
+arch shop_building
 x 20
 y 24
 end
@@ -2938,11 +2747,11 @@ arch shop_empty
 x 21
 y 16
 end
-arch shop_building
+arch shop_empty
 x 21
 y 17
 end
-arch shop_building
+arch shop_empty
 x 21
 y 18
 end
@@ -2954,11 +2763,11 @@ arch shop_empty
 x 21
 y 20
 end
-arch shop_building
+arch shop_empty
 x 21
 y 21
 end
-arch shop_building
+arch shop_empty
 x 21
 y 22
 end
@@ -3021,11 +2830,11 @@ arch wwall_2_1_2
 x 22
 y 3
 end
-arch shop_empty
+arch shop_building
 x 22
 y 4
 end
-arch shop_empty
+arch shop_building
 x 22
 y 5
 end
@@ -3057,11 +2866,11 @@ arch shop_building
 x 22
 y 12
 end
-arch shop_building
+arch shop_empty
 x 22
 y 13
 end
-arch shop_building
+arch shop_empty
 x 22
 y 14
 end
@@ -3069,7 +2878,7 @@ arch shop_empty
 x 22
 y 15
 end
-arch shop_empty
+arch shop_building
 x 22
 y 16
 end
@@ -3081,11 +2890,11 @@ arch shop_building
 x 22
 y 18
 end
-arch shop_empty
+arch shop_building
 x 22
 y 19
 end
-arch shop_empty
+arch shop_building
 x 22
 y 20
 end
@@ -3097,11 +2906,11 @@ arch shop_building
 x 22
 y 22
 end
-arch shop_empty
+arch shop_building
 x 22
 y 23
 end
-arch shop_empty
+arch shop_building
 x 22
 y 24
 end
@@ -3156,39 +2965,39 @@ arch shop_empty
 x 23
 y 5
 end
-arch shop_building
+arch shop_empty
 x 23
 y 6
 end
-arch shop_building
+arch shop_empty
 x 23
 y 7
 end
-arch shop_building
+arch shop_empty
 x 23
 y 8
 end
-arch shop_building
+arch shop_empty
 x 23
 y 9
 end
-arch shop_building
+arch shop_empty
 x 23
 y 10
 end
-arch shop_building
+arch shop_empty
 x 23
 y 11
 end
-arch shop_building
+arch shop_empty
 x 23
 y 12
 end
-arch shop_building
+arch shop_empty
 x 23
 y 13
 end
-arch shop_building
+arch shop_empty
 x 23
 y 14
 end
@@ -3200,11 +3009,11 @@ arch shop_empty
 x 23
 y 16
 end
-arch shop_building
+arch shop_empty
 x 23
 y 17
 end
-arch shop_building
+arch shop_empty
 x 23
 y 18
 end
@@ -3216,11 +3025,11 @@ arch shop_empty
 x 23
 y 20
 end
-arch shop_building
+arch shop_empty
 x 23
 y 21
 end
-arch shop_building
+arch shop_empty
 x 23
 y 22
 end
@@ -3279,14 +3088,18 @@ arch shop_empty
 x 24
 y 4
 end
-arch stair_up_2
-slaying /brest/shops/buildshop2
+arch stair_down
+slaying /brest/shops/buildshop
 hp 24
 sp 4
 x 24
 y 4
 end
 arch shop_empty
+x 24
+y 5
+end
+arch menu
 x 24
 y 5
 end
