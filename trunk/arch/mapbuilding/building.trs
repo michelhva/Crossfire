@@ -11,9 +11,6 @@ treasureone building_material
   arch building_wall
     chance 25
   more
-  arch building_wall2
-    chance 20
-  more
   arch building_vertical_gate
     chance 10
   more
@@ -52,5 +49,46 @@ treasureone shop_building
     chance 2
   more
   list building_material
-    chance 98
+    chance 78
+  more
+  list building_material_stonewall_norm
+    chance 20  
+end
+treasureone shop_building_fant
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_fant
+    chance 20  
+end
+treasureone shop_building_west
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_west
+    chance 20  
+end
+##For areas like scorn area, sells DWall
+treasureone building_material_stonewall_norm
+  arch building_wall2
+end
+##For brest area, sells Red Cwall rather then DWall
+treasureone building_material_stonewall_fant
+  arch building_wall4
+end
+##For navar area, sells West Cwall rather then DWall
+treasureone building_material_stonewall_west
+  arch building_wall3
 end
