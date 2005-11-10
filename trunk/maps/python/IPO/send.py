@@ -27,55 +27,33 @@ from time import localtime, strftime, time
 
 mail = CFMail.CFMail()
 date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
-activator=Crossfire.WhoIsActivator()
-activatorname=activator.Name
-whoami=Crossfire.WhoAmI()
-idlist=[]
+activator = Crossfire.WhoIsActivator()
+activatorname = activator.Name
+whoami = Crossfire.WhoAmI()
+idlist = []
 
-inv = whoami.CheckInventory("mailscroll")
-if inv != None:
-	while inv!=None:
-		print("INV:%s" %inv.Name)
-		text=string.split(inv.Name)
-		if text[0]=='mailscroll' and text[1]=='T:' and text[3]=='F:':
-			idlist.append(inv)
-			toname=text[2]
-			fromname=text[4]
-			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, inv.Message[:-1])
-			activator.Write('mailscroll to '+toname+' sent.')
-			mail.send(1, toname, fromname, message)
-		elif text[0]=='mailscroll' and text[1]=='F:' and text[3]=='T:':
-			idlist.append(inv)
-			fromname=text[2]
-			toname=text[4]
-			message=inv.Message[:-1]+'\n'
-			mail.send(1, toname, fromname, message)
+inv = whoami.Inventory
+while inv:
+	text = string.split(inv.Name)
+	if text[0] == 'mailscroll' or text[0] == 'mailwarning':
+		if text[0] == 'mailscroll':
+			type = 1
 		else:
-			print "ID: %d"%inv
-			print "Name: "+inv.Name
-		inv=inv.Below
-
-inv = whoami.CheckInventory("mailwarning")
-if inv != None:
-	while inv!=None:
-		text=string.split(inv.Name)
-		if text[0]=='mailwarning' and text[1]=='T:' and text[3]=='F:':
+			type = 3
+		if text[1] == 'T:' and text[3] == 'F:':
 			idlist.append(inv)
-			toname=text[2]
-			fromname=text[4]
-			message='From: %s\nTo: %s\nDate: %s\n\n%s\n' % (fromname, toname, date, inv.Message[:-1])
-			activator.Write('mailwarning to '+toname+' sent.')
-			mail.send(3, toname, fromname, message)
-		elif text[0]=='mailwarning' and text[1]=='F:' and text[3]=='T:':
+			toname = text[2]
+			fromname = text[4]
+			message = 'From: %s\nTo: %s\nDate: %s\n\n%s\n'%(fromname, toname, date, inv.Message[:-1])
+			activator.Write(text[0]+' to '+toname+' sent.')
+			mail.send(type, toname, fromname, message)
+		elif text[1] == 'F:' and text[3] == 'T:':
 			idlist.append(inv)
-			fromname=text[2]
-			toname=text[4]
-			message=inv.Message[:-1]+'\n'
-			mail.send(3, toname, fromname, message)
-		else:
-			print "ID: %d"%inv
-			print "Name: "+inv.Name
-		inv=inv.Below
+			fromname = text[2]
+			toname = text[4]
+			message = inv.Message[:-1]+'\n'
+			mail.send(type, toname, fromname, message)
+	inv = inv.Below
 
 for inv in idlist:
 	inv.Remove()
