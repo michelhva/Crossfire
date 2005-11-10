@@ -29,7 +29,7 @@ import CFLog
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
 whoami=Crossfire.WhoAmI()
-isDM=activator.IsDungeonMaster
+isDM=activator.DungeonMaster
 x=activator.X
 y=activator.Y
 
@@ -49,7 +49,7 @@ if text[0] == 'seen':
     else:
         message = 'Usage "seen <player>"'
 
-elif text[0] == 'help':
+elif text[0] == 'help' or text[0] == 'yes':
     if isDM:
         message = "How can I help you? Here is a quick list of commands:\nseen, info, muzzlecount, lastmuzzle, kickcount, lastkick"
     else:
@@ -108,3 +108,4 @@ else:
     message = "Do you need help?"
 
 whoami.Say(message)
+Crossfire.SetReturnValue(1)
