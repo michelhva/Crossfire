@@ -32,11 +32,11 @@ The mailboxes could be put in different places, there should be a few around out
 
 
 *******Imperial Banking**************
-These are Imperial bank (actually Scuds Bank) if you want to 
-add some banks to non-imperial cities (?) maybe consider making different 
-scripts to and use a different currency and a new account database 
-so players can have other bank accout (bankdatabase="<your bank>Bank_DB")
-changing the bank notes is harder since it involves making a new arch, but 
+These are Imperial bank (actually Scuds Bank) if you want to
+add some banks to non-imperial cities (?) maybe consider making different
+scripts to and use a different currency and a new account database
+so players can have other bank account (bankdatabase="<your bank>Bank_DB")
+changing the bank notes is harder since it involves making a new arch, but
 you should be able to do so with little problems.
 
 But remember less is more....
@@ -44,7 +44,7 @@ But remember less is more....
 Right now the only place to get imperial script is the bank.  I think it is better
 to keep it this way and not use imperial script as treasure or make converters.
 Maybe on a rare occasion have imperials as a quest reward, but remember all Python
-studff should be optional.  Do however consider using imperials for python gadgetry
+stuff should be optional.  Do however consider using imperials for python gadgetry
 (like slot machines or other such optional gizmos), but only in the Imperial lands.
 
 Make sure you have updated the python_remove.py script to remove accounts when players quit
