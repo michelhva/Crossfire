@@ -76,6 +76,8 @@ class CFLog:
         self.log.put_record(record)
 
     def info(self, name):
+        if name == '#':
+            return 0
         record = self.log.get_record(name)
         if record:
             return record
