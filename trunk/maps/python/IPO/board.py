@@ -28,14 +28,12 @@ import string
 
 board = CFBoard.CFBoard()
 
-activator=Crossfire.WhoIsActivator()
-activatorname=activator.Name
-whoami=Crossfire.WhoAmI()
+activator = Crossfire.WhoIsActivator()
+activatorname = activator.Name
+whoami = Crossfire.WhoAmI()
 
-boardname=Crossfire.ScriptParameters() # 6 is say event
-print "Activated %s" %boardname
-
-if (boardname):
+boardname = Crossfire.ScriptParameters()
+if boardname:
 
 	text = string.split(Crossfire.WhatIsMessage(), ' ', 1)
 
@@ -44,7 +42,7 @@ if (boardname):
 		activator.Write(message)
 
 	elif text[0] == 'write':
-		if len(text)==2:
+		if len(text) == 2:
 			board.write(boardname, activatorname, text[1])
 			activator.Write('Added to %s'%boardname)
 		else:
@@ -59,15 +57,16 @@ if (boardname):
 			id = 1
 			for element in elements:
 				author, message = element
-				activator.Write('<%d> (%s) %s'%(id,author,message))
-				id=id+1
+				activator.Write('<%d> (%s) %s'%(id, author, message))
+				id = id+1
 		else:
 			activator.Write('%s is empty'%boardname)
 
 	elif text[0] == 'remove':
-		if len(text)==2:
-			if board.getauthor(boardname,int(text[1]))==activatorname or activator.IsDungeonMaster:
-				if board.delete(boardname, int(text[1])):
+		if len(text) == 2:
+			index = int(text[1])
+			if board.getauthor(boardname, index) == activatorname or activator.DungeonMaster:
+				if board.delete(boardname, index):
 					activator.Write('Removed from %s'%boardname)
 				else:
 					activator.Write('Doesn\'t exist on %s'%boardname)
