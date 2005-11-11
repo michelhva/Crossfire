@@ -84,7 +84,7 @@ if (activator.PayAmount(cost*10)):#goldcoin
          id = activator.Map.CreateObject(cointype, x, y)
          CFItemBroker.Item(id).add(payoff)
 	 if payoff == 1:
-            message == "you win %d %s!" %(payoff,cointype)
+            message = "you win %d %s!" %(payoff,cointype)
 	 else:
 	    message = "You win %d %ss!!" %(payoff,cointype)
          break

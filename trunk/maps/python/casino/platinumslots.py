@@ -94,7 +94,7 @@ if (activator.PayAmount(cost*50)):#platinumcoin
          break
       else:
          message = "Better luck next time!"
-   activator.Write(message,activator)
+   activator.Write(message)
    activator.Write("%d in the Jackpot, Play again?" %Slots.checkslot())
 else:
    activator.Write("Sorry, you do not have enough money")
