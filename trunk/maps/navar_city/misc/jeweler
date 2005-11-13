@@ -1,17 +1,17 @@
 arch map
-region navar
 name jeweler
+reset_timeout 7200
+difficulty 2
+region navar
+width 13
+height 14
+enter_x 7
+enter_y 13
 msg
 Creator: Avion
 CFJavaEditor
 Date: 21/02/04
 endmsg
-width 13
-height 14
-enter_x 7
-enter_y 13
-reset_timeout 7200
-difficulty 2
 outdoor 1
 end
 arch shallow_sea
@@ -117,7 +117,7 @@ arch woodfloor
 x 2
 y 1
 end
-arch woodwall_2_2_2
+arch bwall_2_2_2
 x 2
 y 1
 end
@@ -125,7 +125,7 @@ arch woodfloor
 x 2
 y 2
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 2
 y 2
 end
@@ -134,6 +134,10 @@ x 2
 y 3
 end
 arch woodwall_2_1_1
+x 2
+y 3
+end
+arch bwall_1_2
 x 2
 y 3
 end
@@ -153,11 +157,15 @@ arch woodwall_2_1_1
 x 2
 y 5
 end
+arch bwall_1_1
+x 2
+y 5
+end
 arch woodfloor
 x 2
 y 6
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 2
 y 6
 end
@@ -165,7 +173,7 @@ arch woodfloor
 x 2
 y 7
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 2
 y 7
 end
@@ -174,6 +182,10 @@ x 2
 y 8
 end
 arch woodwall_2_1_1
+x 2
+y 8
+end
+arch bwall_1_2
 x 2
 y 8
 end
@@ -190,6 +202,10 @@ x 2
 y 10
 end
 arch woodwall_2_1_1
+x 2
+y 10
+end
+arch bwall_1_1
 x 2
 y 10
 end
@@ -201,11 +217,11 @@ arch swall_1_4_half
 x 2
 y 11
 end
-arch woodwall_2_1_1
+arch dungeon_magic
 x 2
 y 11
 end
-arch dungeon_magic
+arch bwall_2_1_1
 x 2
 y 11
 end
@@ -213,7 +229,7 @@ arch woodfloor
 x 2
 y 12
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 2
 y 12
 end
@@ -221,7 +237,7 @@ arch woodfloor
 x 2
 y 13
 end
-arch woodwall_2_2_1
+arch bwall_2_2_1
 x 2
 y 13
 end
@@ -232,7 +248,7 @@ arch woodfloor
 x 3
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 3
 y 1
 end
@@ -242,10 +258,10 @@ y 2
 end
 arch platinum_converter
 name Buy Amulet (100pp)
-other_arch amulet
 name_pl Buy Amulet (100pp)
-food 100
+other_arch amulet
 sp 1
+food 100
 x 3
 y 2
 end
@@ -301,7 +317,7 @@ arch woodfloor
 x 3
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 3
 y 13
 end
@@ -312,7 +328,7 @@ arch woodfloor
 x 4
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 4
 y 1
 end
@@ -321,9 +337,9 @@ x 4
 y 2
 end
 arch table
-no_pick 1
 x 4
 y 2
+no_pick 1
 end
 arch woodfloor
 x 4
@@ -389,7 +405,7 @@ arch woodfloor
 x 4
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 4
 y 13
 end
@@ -400,7 +416,7 @@ arch woodfloor
 x 5
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 5
 y 1
 end
@@ -409,9 +425,9 @@ x 5
 y 2
 end
 arch table
-no_pick 1
 x 5
 y 2
+no_pick 1
 end
 arch woodfloor
 x 5
@@ -465,7 +481,7 @@ arch woodfloor
 x 5
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 5
 y 13
 end
@@ -477,6 +493,10 @@ x 6
 y 1
 end
 arch woodwall_2_1_2
+x 6
+y 1
+end
+arch bwall_1_3
 x 6
 y 1
 end
@@ -485,9 +505,9 @@ x 6
 y 2
 end
 arch bookshelf
-no_pick 1
 x 6
 y 2
+no_pick 1
 end
 arch woodfloor
 x 6
@@ -553,7 +573,7 @@ arch woodfloor
 x 6
 y 13
 end
-arch woodwall_1_3
+arch bwall_1_3
 x 6
 y 13
 end
@@ -573,9 +593,9 @@ x 7
 y 2
 end
 arch clock
-no_pick 1
 x 7
 y 2
+no_pick 1
 end
 arch woodfloor
 x 7
@@ -659,14 +679,18 @@ arch woodwall_2_1_2
 x 8
 y 1
 end
+arch bwall_1_4
+x 8
+y 1
+end
 arch woodfloor
 x 8
 y 2
 end
 arch bookshelf
-no_pick 1
 x 8
 y 2
+no_pick 1
 end
 arch woodfloor
 x 8
@@ -732,7 +756,7 @@ arch woodfloor
 x 8
 y 13
 end
-arch woodwall_1_4
+arch bwall_1_4
 x 8
 y 13
 end
@@ -743,7 +767,7 @@ arch woodfloor
 x 9
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 9
 y 1
 end
@@ -752,9 +776,9 @@ x 9
 y 2
 end
 arch table
-no_pick 1
 x 9
 y 2
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -809,29 +833,29 @@ x 9
 y 12
 end
 arch trigger_marker
+slaying jewler_navar
 msg
 You have one day's use of these facilities.
 endmsg
-slaying jewler_navar
-connected 10
-speed 1.0
 food 504
 x 9
 y 12
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
+name_pl Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 9
 y 12
+connected 10
 end
 arch woodfloor
 x 9
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 9
 y 13
 end
@@ -842,7 +866,7 @@ arch woodfloor
 x 10
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 10
 y 1
 end
@@ -851,9 +875,9 @@ x 10
 y 2
 end
 arch table
-no_pick 1
 x 10
 y 2
+no_pick 1
 end
 arch woodfloor
 x 10
@@ -900,21 +924,21 @@ x 10
 y 10
 end
 arch pedestal
-invisible 1
-connected 11
 x 10
 y 10
+invisible 1
+connected 11
 end
 arch woodfloor
 x 10
 y 11
 end
 arch ggate_closed
-damned 1
-no_magic 1
-connected 11
 x 10
 y 11
+connected 11
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 10
@@ -922,15 +946,15 @@ y 12
 end
 arch check_floor
 slaying jewler_navar
-connected 11
 x 10
 y 12
+connected 11
 end
 arch woodfloor
 x 10
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 10
 y 13
 end
@@ -941,7 +965,7 @@ arch woodfloor
 x 11
 y 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 11
 y 1
 end
@@ -951,10 +975,10 @@ y 2
 end
 arch platinum_converter
 name Buy Ring (50pp)
-other_arch ring
-food 50
-sp 1
 name_pl Buy Ring (50pp)
+other_arch ring
+sp 1
+food 50
 x 11
 y 2
 end
@@ -1014,7 +1038,7 @@ arch woodfloor
 x 11
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 11
 y 13
 end
@@ -1025,7 +1049,7 @@ arch woodfloor
 x 12
 y 1
 end
-arch woodwall_2_2_3
+arch bwall_2_2_3
 x 12
 y 1
 end
@@ -1033,7 +1057,7 @@ arch woodfloor
 x 12
 y 2
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 2
 end
@@ -1041,7 +1065,7 @@ arch woodfloor
 x 12
 y 3
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 3
 end
@@ -1049,7 +1073,7 @@ arch woodfloor
 x 12
 y 4
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 4
 end
@@ -1057,7 +1081,7 @@ arch woodfloor
 x 12
 y 5
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 5
 end
@@ -1065,7 +1089,7 @@ arch woodfloor
 x 12
 y 6
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 6
 end
@@ -1073,7 +1097,7 @@ arch woodfloor
 x 12
 y 7
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 7
 end
@@ -1081,7 +1105,7 @@ arch woodfloor
 x 12
 y 8
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 8
 end
@@ -1089,7 +1113,7 @@ arch woodfloor
 x 12
 y 9
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 9
 end
@@ -1097,15 +1121,11 @@ arch woodfloor
 x 12
 y 10
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 10
 end
 arch woodfloor
-x 12
-y 11
-end
-arch woodwall_2_1_1
 x 12
 y 11
 end
@@ -1117,11 +1137,15 @@ arch dungeon_magic
 x 12
 y 11
 end
+arch bwall_2_1_1
+x 12
+y 11
+end
 arch woodfloor
 x 12
 y 12
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 12
 y 12
 end
@@ -1129,7 +1153,7 @@ arch woodfloor
 x 12
 y 13
 end
-arch woodwall_2_2_4
+arch bwall_2_2_4
 x 12
 y 13
 end
