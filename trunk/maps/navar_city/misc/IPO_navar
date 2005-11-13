@@ -1,82 +1,83 @@
 arch map
-region navar
 name Imperial Post Office
+difficulty 2
+region navar
+width 10
+height 10
+enter_x 5
+enter_y 8
 msg
 Creator: Commander Gros
 Email: yann.chachkoff@mailandnews.com
 Date: Wed Sep  5 22:09:24 2001
 Following a Lord MiDS idea
 endmsg
-width 10
-height 10
-enter_x 5
-enter_y 8
 end
 arch tile_tan_floor
 end
-arch wall_2_2_2
+arch bwall_2_2_2
 end
 arch tile_tan_floor
 y 1
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 1
 end
 arch tile_tan_floor
 y 2
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 2
 end
 arch tile_tan_floor
-y 3
-end
-arch wall_3_2
 y 3
 end
 arch dungeon_magic
 y 3
 end
+arch bwall_3_2
+y 3
+end
 arch tile_tan_floor
 y 4
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 4
 end
 arch tile_tan_floor
 y 5
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 5
 end
 arch tile_tan_floor
 y 6
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 6
 end
 arch tile_tan_floor
 y 7
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 7
 end
 arch tile_tan_floor
 y 8
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 y 8
 end
 arch tile_tan_floor
 y 9
 end
-arch wall_2_2_1
+arch bwall_2_2_1
 y 9
 end
 arch tile_tan_floor
 x 1
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 1
 end
 arch tile_tan_floor
@@ -103,6 +104,10 @@ arch dungeon_magic
 x 1
 y 3
 end
+arch bwall_1_3
+x 1
+y 3
+end
 arch tile_tan_floor
 x 1
 y 4
@@ -115,11 +120,12 @@ Greetings.  Have a pleasant day.
 We donna tollerate no shenanigans around these parts.
 endmsg
 exp 0
-unaggressive 1
-friendly 1
-stand_still 1
+
 x 1
 y 4
+friendly 1
+unaggressive 1
+stand_still 1
 end
 arch tile_tan_floor
 x 1
@@ -139,30 +145,32 @@ y 8
 end
 arch sign
 name Navar Message Board
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Navar board
-end
+name_pl Navar Message Board
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
 endmsg
 x 1
 y 8
+arch event_say
+name Navar board
+name_pl Navar board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch tile_tan_floor
 x 1
 y 9
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 1
 y 9
 end
 arch tile_tan_floor
 x 2
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 2
 end
 arch tile_tan_floor
@@ -171,9 +179,10 @@ y 1
 end
 arch halfling2
 name Gofer
-friendly 1
+name_pl Gofer
 x 2
 y 1
+friendly 1
 end
 arch tile_tan_floor
 x 2
@@ -215,14 +224,14 @@ arch tile_tan_floor
 x 2
 y 9
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 2
 y 9
 end
 arch tile_tan_floor
 x 3
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 3
 end
 arch tile_tan_floor
@@ -243,6 +252,7 @@ y 2
 end
 arch cauldron
 name Coffee supplies
+name_pl Coffee supplies
 x 3
 y 2
 end
@@ -255,6 +265,10 @@ x 3
 y 3
 end
 arch dungeon_magic
+x 3
+y 3
+end
+arch bwall_0
 x 3
 y 3
 end
@@ -282,14 +296,14 @@ arch tile_tan_floor
 x 3
 y 9
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 3
 y 9
 end
 arch tile_tan_floor
 x 4
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 4
 end
 arch tile_tan_floor
@@ -306,18 +320,19 @@ y 2
 end
 arch c_woman
 name Babs
-arch event_say
-title Python
-slaying /python/IPO/say.py
-end
+name_pl Babs
 msg
 @match *
 I'm on a break.
 endmsg
-monster 0
-stand_still 1
 x 4
 y 2
+monster 0
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
 end
 arch tile_tan_floor
 x 4
@@ -355,14 +370,14 @@ arch tile_tan_floor
 x 4
 y 9
 end
-arch wall_1_3
+arch bwall_1_3
 x 4
 y 9
 end
 arch tile_tan_floor
 x 5
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 5
 end
 arch tile_tan_floor
@@ -386,6 +401,10 @@ x 5
 y 3
 end
 arch dungeon_magic
+x 5
+y 3
+end
+arch bwall_0
 x 5
 y 3
 end
@@ -423,7 +442,7 @@ end
 arch tile_tan_floor
 x 6
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 6
 end
 arch tile_tan_floor
@@ -478,14 +497,14 @@ arch tile_tan_floor
 x 6
 y 9
 end
-arch wall_1_4
+arch bwall_1_4
 x 6
 y 9
 end
 arch tile_tan_floor
 x 7
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 7
 end
 arch tile_tan_floor
@@ -505,6 +524,10 @@ x 7
 y 3
 end
 arch dungeon_magic
+x 7
+y 3
+end
+arch bwall_1_4
 x 7
 y 3
 end
@@ -530,6 +553,7 @@ y 7
 end
 arch scroll
 name Prospectus
+name_pl Prospectus
 msg
 Imperial Post Services
 -----------------------
@@ -548,6 +572,7 @@ y 7
 end
 arch book_read
 name Manual
+name_pl Manual
 msg
 Receiving Mail
 -----------------------
@@ -581,14 +606,14 @@ arch tile_tan_floor
 x 7
 y 9
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 7
 y 9
 end
 arch tile_tan_floor
 x 8
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 8
 end
 arch tile_tan_floor
@@ -607,11 +632,11 @@ arch tile_tan_floor
 x 8
 y 3
 end
-arch wall_2_1_2
+arch dungeon_magic
 x 8
 y 3
 end
-arch dungeon_magic
+arch bwall_2_1_2
 x 8
 y 3
 end
@@ -620,19 +645,19 @@ x 8
 y 4
 end
 arch mailbox
-arch event_close
-title Python
-slaying /python/IPO/send.py
-end
+x 8
+y 4
+material 0
+weight 0
+no_pick 1
 arch event_apply
 title Python
 slaying /python/IPO/receive.py
 end
-material 0
-weight 0
-no_pick 1
-x 8
-y 4
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
 end
 arch tile_tan_floor
 x 8
@@ -658,21 +683,21 @@ arch tile_tan_floor
 x 8
 y 9
 end
-arch wall_2_1_2
+arch bwall_2_1_2
 x 8
 y 9
 end
 arch tile_tan_floor
 x 9
 end
-arch wall_2_2_3
+arch bwall_2_2_3
 x 9
 end
 arch tile_tan_floor
 x 9
 y 1
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 1
 end
@@ -680,15 +705,11 @@ arch tile_tan_floor
 x 9
 y 2
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 2
 end
 arch tile_tan_floor
-x 9
-y 3
-end
-arch wall_3_4
 x 9
 y 3
 end
@@ -696,11 +717,15 @@ arch dungeon_magic
 x 9
 y 3
 end
+arch bwall_3_4
+x 9
+y 3
+end
 arch tile_tan_floor
 x 9
 y 4
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 4
 end
@@ -708,7 +733,7 @@ arch tile_tan_floor
 x 9
 y 5
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 5
 end
@@ -716,7 +741,7 @@ arch tile_tan_floor
 x 9
 y 6
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 6
 end
@@ -724,7 +749,7 @@ arch tile_tan_floor
 x 9
 y 7
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 7
 end
@@ -732,7 +757,7 @@ arch tile_tan_floor
 x 9
 y 8
 end
-arch wall_2_1_1
+arch bwall_2_1_1
 x 9
 y 8
 end
@@ -740,7 +765,7 @@ arch tile_tan_floor
 x 9
 y 9
 end
-arch wall_2_2_4
+arch bwall_2_2_4
 x 9
 y 9
 end

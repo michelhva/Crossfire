@@ -1,6 +1,13 @@
 arch map
 name Wizards Workshop
+reset_timeout 7200
+difficulty 1
 region navar
+darkness 2
+width 9
+height 14
+enter_x 4
+enter_y 13
 msg
 Creator: Avion
 CF Java Map Editor
@@ -8,46 +15,39 @@ Date:    22/02/2004
 Modified by: Gene Alexander
 Date:    30 May 2004
 endmsg
-width 9
-height 14
-enter_x 4
-enter_y 13
-reset_timeout 7200
-difficulty 1
-darkness 2
 end
 arch tile_white_floor
 end
-arch woodwall_2_2_2
+arch bwall_2_2_2
 end
 arch tile_white_floor
 y 1
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 1
 end
 arch tile_white_floor
 y 2
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 2
 end
 arch tile_white_floor
 y 3
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 3
 end
 arch tile_white_floor
 y 4
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 4
 end
 arch tile_white_floor
 y 5
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 5
 end
 arch tile_white_floor
@@ -59,52 +59,55 @@ end
 arch dungeon_magic
 y 6
 end
+arch bwall_2_1_1
+y 6
+end
 arch cobblestones2
 y 7
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 7
 end
 arch cobblestones2
 y 8
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 8
 end
 arch cobblestones2
 y 9
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 9
 end
 arch cobblestones2
 y 10
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 10
 end
 arch cobblestones2
 y 11
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 11
 end
 arch cobblestones2
 y 12
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 y 12
 end
 arch cobblestones2
 y 13
 end
-arch woodwall_2_2_1
+arch bwall_2_2_1
 y 13
 end
 arch tile_white_floor
 x 1
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 1
 end
 arch tile_white_floor
@@ -121,10 +124,11 @@ y 3
 end
 arch platinum_converter
 name Talisman of evocation (100 diamonds)
+name_pl Talisman of evocation (100 diamonds)
 slaying gem
-food 100
 other_arch talisman_evocation
 sp 1
+food 100
 x 1
 y 3
 end
@@ -134,10 +138,11 @@ y 4
 end
 arch platinum_converter
 name Talisman of sorcery (100 diamonds)
+name_pl Talisman of sorcery (100 diamonds)
 slaying gem
-food 100
 other_arch talisman_sorcery
 sp 1
+food 100
 x 1
 y 4
 end
@@ -147,10 +152,11 @@ y 5
 end
 arch platinum_converter
 name Talisman of pyromancy (100 diamonds)
+name_pl Talisman of pyromancy (100 diamonds)
 slaying gem
-food 100
 other_arch talisman_pyromancy
 sp 1
+food 100
 x 1
 y 5
 end
@@ -198,14 +204,14 @@ arch cobblestones2
 x 1
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 1
 y 13
 end
 arch tile_white_floor
 x 2
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 2
 end
 arch cobblestones2
@@ -268,14 +274,14 @@ arch cobblestones2
 x 2
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 2
 y 13
 end
 arch tile_white_floor
 x 3
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 3
 end
 arch cobblestones2
@@ -358,14 +364,14 @@ arch cobblestones2
 x 3
 y 13
 end
-arch woodwall_1_3
+arch bwall_1_3
 x 3
 y 13
 end
 arch tile_white_floor
 x 4
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 4
 end
 arch cobblestones2
@@ -397,21 +403,21 @@ x 4
 y 5
 end
 arch pedestal
-invisible 1
-connected 11
 x 4
 y 5
+invisible 1
+connected 11
 end
 arch cobblestones2
 x 4
 y 6
 end
 arch grate_closed_1
+x 4
+y 6
 connected 11
 no_magic 1
 damned 1
-x 4
-y 6
 end
 arch cobblestones2
 x 4
@@ -419,32 +425,32 @@ y 7
 end
 arch check_floor
 slaying tham_navar
-connected 11
 x 4
 y 7
+connected 11
 end
 arch cobblestones2
 x 4
 y 8
 end
 arch trigger_marker
+slaying tham_navar
 msg
 You have one day's use of these facilities.
 endmsg
-slaying tham_navar
-connected 10
-speed 1.0
 food 504
 x 4
 y 8
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
+name_pl Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 4
 y 8
+connected 10
 end
 arch cobblestones2
 x 4
@@ -467,8 +473,8 @@ x 4
 y 13
 end
 arch oakdoor
-face odoor_2.111
 slaying /world/world_121_117
+face odoor_2.111
 hp 48
 sp 8
 x 4
@@ -477,7 +483,7 @@ end
 arch tile_white_floor
 x 5
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 5
 end
 arch cobblestones2
@@ -560,14 +566,14 @@ arch cobblestones2
 x 5
 y 13
 end
-arch woodwall_1_4
+arch bwall_1_4
 x 5
 y 13
 end
 arch tile_white_floor
 x 6
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 6
 end
 arch cobblestones2
@@ -630,14 +636,14 @@ arch cobblestones2
 x 6
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 6
 y 13
 end
 arch tile_white_floor
 x 7
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 7
 end
 arch tile_white_floor
@@ -658,9 +664,10 @@ y 4
 end
 arch platinum_converter
 name Staff (100 platinum)
-food 100
+name_pl Staff (100 platinum)
 other_arch staff
 sp 1
+food 100
 x 7
 y 4
 end
@@ -670,9 +677,10 @@ y 5
 end
 arch platinum_converter
 name Holy symbol (120 platinum)
-food 120
+name_pl Holy symbol (120 platinum)
 other_arch holy_symbol
 sp 1
+food 120
 x 7
 y 5
 end
@@ -720,21 +728,21 @@ arch cobblestones2
 x 7
 y 13
 end
-arch woodwall_2_1_2
+arch bwall_2_1_2
 x 7
 y 13
 end
 arch tile_white_floor
 x 8
 end
-arch woodwall_2_2_3
+arch bwall_2_2_3
 x 8
 end
 arch tile_white_floor
 x 8
 y 1
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 1
 end
@@ -742,7 +750,7 @@ arch tile_white_floor
 x 8
 y 2
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 2
 end
@@ -750,7 +758,7 @@ arch tile_white_floor
 x 8
 y 3
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 3
 end
@@ -758,7 +766,7 @@ arch tile_white_floor
 x 8
 y 4
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 4
 end
@@ -766,7 +774,7 @@ arch tile_white_floor
 x 8
 y 5
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 5
 end
@@ -782,11 +790,15 @@ arch dungeon_magic
 x 8
 y 6
 end
+arch bwall_2_1_1
+x 8
+y 6
+end
 arch cobblestones2
 x 8
 y 7
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 7
 end
@@ -794,7 +806,7 @@ arch cobblestones2
 x 8
 y 8
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 8
 end
@@ -802,7 +814,7 @@ arch cobblestones2
 x 8
 y 9
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 9
 end
@@ -810,7 +822,7 @@ arch cobblestones2
 x 8
 y 10
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 10
 end
@@ -818,7 +830,7 @@ arch cobblestones2
 x 8
 y 11
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 11
 end
@@ -826,7 +838,7 @@ arch cobblestones2
 x 8
 y 12
 end
-arch woodwall_2_1_1
+arch bwall_2_1_1
 x 8
 y 12
 end
@@ -834,7 +846,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch woodwall_2_2_4
+arch bwall_2_2_4
 x 8
 y 13
 end
