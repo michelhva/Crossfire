@@ -1,11 +1,6 @@
 arch map
 name brest.scrolls
 region brest
-shopitems scroll:95;spellbook:-50;*:-100;
-shopmin 5
-shopmax 150000
-race human
-shopgreed 1.0
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
@@ -14,6 +9,11 @@ endmsg
 width 20
 height 40
 outdoor 1
+shopitem scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:-50;*:-100;
+shopmin 5
+shopmax 150000
+race human
+shopgreed 0.95
 tile_path_2 /brest/brest.scrolls.right
 end
 arch brush
