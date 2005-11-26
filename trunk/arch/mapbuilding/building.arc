@@ -52,6 +52,18 @@ randomitems shop_building_west
 editable 64
 editor_folder arch/shop/Floors
 end
+Object shop_building_east
+name tiles
+is_floor 1
+face shop_building.111
+no_pick 1
+no_magic 1
+type 68
+auto_apply 1
+randomitems shop_building_east
+editable 64
+editor_folder arch/shop/Floors
+end
 Object building_woodfloor
 name Wood floor material
 nrof 1
@@ -85,8 +97,8 @@ end
 Object building_wall2
 name DWall material
 nrof 1
-weight 1500
-value 1500
+weight 1700
+value 1750
 type 161
 subtype 2
 face mbdwall_0.111
@@ -95,8 +107,8 @@ end
 Object building_wall3
 name WestCWall material
 nrof 1
-weight 1500
-value 1350
+weight 1700
+value 1650
 type 161
 subtype 2
 face mbwestcwall_0.111
@@ -105,12 +117,22 @@ end
 Object building_wall4
 name Red CWall material
 nrof 1
-weight 1500
-value 1650
+weight 1700
+value 1900
 type 161
 subtype 2
 face mbredcwall_0.111
 slaying redcwall_0
+end
+Object building_wall5
+name EastWall material
+nrof 1
+weight 1000
+value 1600
+type 161
+subtype 2
+face mbewall_0.111
+slaying ewall_0
 end
 Object building_vertical_gate
 name Vertical gate material

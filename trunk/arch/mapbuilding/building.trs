@@ -80,6 +80,19 @@ treasureone shop_building_west
   list building_material_stonewall_west
     chance 20  
 end
+treasureone shop_building_east
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_stonewall_east
+    chance 20  
+end
 ##For areas like scorn area, sells DWall
 treasureone building_material_stonewall_norm
   arch building_wall2
@@ -92,3 +105,12 @@ end
 treasureone building_material_stonewall_west
   arch building_wall3
 end
+##For areas like azumauindo area, sells DWall and EastWall (japanese paper wall)
+treasureone building_material_stonewall_east
+  arch building_wall2
+    chance 50
+  more
+  arch building_wall5
+    chance 50
+end
+
