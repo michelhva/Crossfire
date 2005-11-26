@@ -13919,6 +13919,16 @@ arch pstone_2
 x 21
 y 17
 end
+arch note
+msg
+We weren't able t. get mu.h loot from
+th. bank but we plan an.ther heist
+so.n.
+
+endmsg
+x 21
+y 17
+end
 arch unholy_ground
 x 21
 y 18
@@ -30573,6 +30583,10 @@ arch pstone_2
 x 47
 y 54
 end
+arch slevel_2_2_2
+x 47
+y 54
+end
 arch unholy_ground
 x 47
 y 55
@@ -31171,6 +31185,10 @@ arch pstone_2
 x 48
 y 53
 end
+arch slevel_2_2_2
+x 48
+y 53
+end
 arch unholy_ground
 x 48
 y 54
@@ -31182,6 +31200,18 @@ end
 arch unholy_ground
 x 48
 y 55
+end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 48
+y 55
+connected 1
 end
 arch pstone_2
 x 48
@@ -31775,6 +31805,10 @@ arch pstone_2
 x 49
 y 52
 end
+arch slevel_2_2_2
+x 49
+y 52
+end
 arch unholy_ground
 x 49
 y 53
@@ -31786,6 +31820,18 @@ end
 arch unholy_ground
 x 49
 y 54
+end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 49
+y 54
+connected 1
 end
 arch pstone_2
 x 49
@@ -32433,6 +32479,10 @@ arch pstone_2
 x 50
 y 51
 end
+arch slevel_2_2_2
+x 50
+y 51
+end
 arch unholy_ground
 x 50
 y 52
@@ -32444,6 +32494,18 @@ end
 arch unholy_ground
 x 50
 y 53
+end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 50
+y 53
+connected 1
 end
 arch pstone_2
 x 50
@@ -32472,6 +32534,12 @@ end
 arch slevel_2_2_2
 x 50
 y 55
+end
+arch block_door_closed
+x 50
+y 55
+speed 0.500000
+connected 1
 end
 arch unholy_ground
 x 50
@@ -33073,6 +33141,10 @@ arch pstone_2
 x 51
 y 50
 end
+arch slevel_2_2_2
+x 51
+y 50
+end
 arch unholy_ground
 x 51
 y 51
@@ -33084,6 +33156,18 @@ end
 arch unholy_ground
 x 51
 y 52
+end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 51
+y 52
+connected 1
 end
 arch pstone_2
 x 51
@@ -33113,6 +33197,12 @@ arch slevel_2_2_2
 x 51
 y 54
 end
+arch block_door_closed
+x 51
+y 54
+speed 0.500000
+connected 1
+end
 arch unholy_ground
 x 51
 y 55
@@ -33120,6 +33210,12 @@ end
 arch pstone_2
 x 51
 y 55
+end
+arch block_door_closed
+x 51
+y 55
+speed 0.500000
+connected 1
 end
 arch unholy_ground
 x 51
@@ -33713,6 +33809,10 @@ arch pstone_2
 x 52
 y 49
 end
+arch slevel_2_2_2
+x 52
+y 49
+end
 arch cave14
 x 52
 y 49
@@ -33729,6 +33829,18 @@ arch unholy_ground
 x 52
 y 51
 end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 52
+y 51
+connected 1
+end
 arch pstone_2
 x 52
 y 51
@@ -33757,6 +33869,12 @@ arch slevel_2_2_2
 x 52
 y 53
 end
+arch block_door_closed
+x 52
+y 53
+speed 0.500000
+connected 1
+end
 arch unholy_ground
 x 52
 y 54
@@ -33764,6 +33882,12 @@ end
 arch pstone_2
 x 52
 y 54
+end
+arch block_door_closed
+x 52
+y 54
+speed 0.500000
+connected 1
 end
 arch unholy_ground
 x 52
@@ -34409,6 +34533,12 @@ arch slevel_2_2_2
 x 53
 y 52
 end
+arch block_door_closed
+x 53
+y 52
+speed 0.500000
+connected 1
+end
 arch unholy_ground
 x 53
 y 53
@@ -34417,9 +34547,27 @@ arch pstone_2
 x 53
 y 53
 end
+arch block_door_closed
+x 53
+y 53
+speed 0.500000
+connected 1
+end
 arch unholy_ground
 x 53
 y 54
+end
+arch magic_ear
+msg
+@match ali barbra
+You hear the thunderous roar of rock
+sliding against rock.
+
+
+endmsg
+x 53
+y 54
+connected 1
 end
 arch pstone_2
 x 53
