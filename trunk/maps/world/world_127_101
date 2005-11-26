@@ -6629,6 +6629,7 @@ elevation 44
 end
 arch building1_east
 name mise
+name_pl mise
 slaying /azumauindo/ranbounagisatoshi/shops/potionshop1
 hp 16
 sp 26
@@ -12931,6 +12932,10 @@ x 41
 y 49
 elevation -7
 end
+arch dungeon_magic
+x 41
+y 49
+end
 arch farmland
 x 42
 end
@@ -13394,6 +13399,10 @@ x 42
 y 49
 elevation -7
 end
+arch dungeon_magic
+x 42
+y 49
+end
 arch farmland
 x 43
 end
@@ -13720,40 +13729,72 @@ x 43
 y 42
 elevation -3
 end
+arch dungeon_magic
+x 43
+y 42
+end
 arch shallow_sea
 x 43
 y 43
 elevation -9
+end
+arch dungeon_magic
+x 43
+y 43
 end
 arch shallow_sea
 x 43
 y 44
 elevation -52
 end
+arch dungeon_magic
+x 43
+y 44
+end
 arch shallow_sea
 x 43
 y 45
 elevation -71
+end
+arch dungeon_magic
+x 43
+y 45
 end
 arch shallow_sea
 x 43
 y 46
 elevation -3
 end
+arch dungeon_magic
+x 43
+y 46
+end
 arch shallow_sea
 x 43
 y 47
 elevation -9
+end
+arch dungeon_magic
+x 43
+y 47
 end
 arch shallow_sea
 x 43
 y 48
 elevation -52
 end
+arch dungeon_magic
+x 43
+y 48
+end
 arch shallow_sea
 x 43
 y 49
 elevation -71
+end
+arch dungeon_magic
+x 43
+y 49
 end
 arch farmland
 x 44
@@ -14019,25 +14060,45 @@ x 44
 y 38
 elevation -6
 end
+arch dungeon_magic
+x 44
+y 38
+end
 arch shallow_sea
 x 44
 y 39
 elevation -10
+end
+arch dungeon_magic
+x 44
+y 39
 end
 arch shallow_sea
 x 44
 y 40
 elevation -10
 end
+arch dungeon_magic
+x 44
+y 40
+end
 arch shallow_sea
 x 44
 y 41
 elevation -47
 end
+arch dungeon_magic
+x 44
+y 41
+end
 arch shallow_sea
 x 44
 y 42
 elevation -77
+end
+arch dungeon_magic
+x 44
+y 42
 end
 arch sea
 x 44
@@ -14331,15 +14392,27 @@ x 45
 y 36
 elevation -9
 end
+arch dungeon_magic
+x 45
+y 36
+end
 arch shallow_sea
 x 45
 y 37
 elevation -21
 end
+arch dungeon_magic
+x 45
+y 37
+end
 arch shallow_sea
 x 45
 y 38
 elevation -37
+end
+arch dungeon_magic
+x 45
+y 38
 end
 arch shallow_sea
 x 45
@@ -14681,6 +14754,10 @@ arch shallow_sea
 x 46
 y 36
 elevation -10
+end
+arch dungeon_magic
+x 46
+y 36
 end
 arch shallow_sea
 x 46
@@ -15045,6 +15122,10 @@ x 47
 y 36
 elevation -21
 end
+arch dungeon_magic
+x 47
+y 36
+end
 arch shallow_sea
 x 47
 y 37
@@ -15377,6 +15458,10 @@ arch shallow_sea
 x 48
 y 36
 elevation -26
+end
+arch dungeon_magic
+x 48
+y 36
 end
 arch shallow_sea
 x 48
@@ -15748,6 +15833,10 @@ arch shallow_sea
 x 49
 y 36
 elevation -24
+end
+arch dungeon_magic
+x 49
+y 36
 end
 arch shallow_sea
 x 49
