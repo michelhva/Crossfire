@@ -474,6 +474,10 @@ arch marble
 x 2
 y 28
 end
+arch dungeon_magic
+x 2
+y 29
+end
 arch light2
 x 2
 y 29
@@ -481,6 +485,19 @@ end
 arch marble
 x 2
 y 29
+end
+arch stair_down_3
+slaying theaterb1
+hp 2
+sp 29
+x 2
+y 29
+end
+arch spikes_closed
+x 2
+y 29
+speed 0.500000
+connected 100
 end
 arch light1
 x 2
@@ -928,6 +945,17 @@ end
 arch marble
 x 3
 y 29
+end
+arch altar
+name Place here the turban of Ali
+name_pl Place here the turban of Ali
+slaying ali's turban
+face altarnone.111
+food 1
+x 3
+y 29
+connected 100
+is_animated 0
 end
 arch light1
 x 3

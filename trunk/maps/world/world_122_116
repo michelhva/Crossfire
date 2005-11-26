@@ -624,10 +624,18 @@ x 2
 y 5
 elevation 12539
 end
-arch mountain2
+arch mountain
 x 2
 y 6
-elevation 11202
+elevation 8474
+end
+arch mountain_cave
+name ali's cave
+slaying /navar_city/misc/aliscave
+hp 53
+sp 54
+x 2
+y 6
 end
 arch mountain2
 x 2
@@ -1438,6 +1446,7 @@ y 34
 end
 arch a_civic
 name civic theater
+name_pl civic theater
 slaying /navar_city/misc/theater
 hp 15
 sp 28
