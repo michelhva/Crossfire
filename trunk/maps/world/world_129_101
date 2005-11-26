@@ -1242,6 +1242,14 @@ arch pier_2_1_2
 x 3
 y 45
 end
+arch house1_east
+name mise
+slaying /azumauindo/minatomachi/stores/buildshop
+hp 1
+sp 22
+x 3
+y 45
+end
 arch sea
 x 3
 y 46
@@ -1553,6 +1561,10 @@ y 44
 elevation 541
 end
 arch building1_east
+name mise
+slaying /azumauindo/minatomachi/stores/buildshop
+hp 16
+sp 26
 x 4
 y 44
 end
