@@ -39,16 +39,19 @@ if total > 0:
 		if type==1:
 	                msgob = whoami.CreateObject('scroll')
 	                msgob.Name='mailscroll F: '+fromname+' T: '+activatorname
+	                msgob.NamePl='mailscrolls F: '+fromname+' T: '+activatorname
 	                msgob.Message=message
 	                msgob.Value=0
 		elif type==2:
 	                msgob = whoami.CreateObject('note')
 	                msgob.Name='newspaper D: '+fromname
+	                msgob.NamePl='newspapers D: '+fromname
 	                msgob.Message=message
 	                msgob.Value=0
 		elif type==3:
 	                msgob = whoami.CreateObject('diploma')
 	                msgob.Name='mailwarning F: '+fromname+' T: '+activatorname
+	                msgob.NamePl='mailwarnings F: '+fromname+' T: '+activatorname
 	                msgob.Message=message
 	                msgob.Value=0
 		else:
