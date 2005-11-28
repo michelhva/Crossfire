@@ -443,6 +443,7 @@ x 5
 y 5
 weight 1000000
 can_roll 1
+move_type 1
 end
 arch button_plate
 x 5
@@ -706,6 +707,7 @@ y 7
 weight 2000000
 no_pass 1
 can_roll 1
+move_type 1
 end
 arch flagstone
 x 7
