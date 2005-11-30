@@ -46,3 +46,55 @@ editable 8
 is_floor 1
 smoothlevel 20
 end
+Object sea_nw
+name sea
+face sea_nw.111
+color_fg light_blue
+color_bg blue
+speed 0.2
+no_pass 1
+no_pick 1
+is_water 1
+editable 8
+is_floor 1
+smoothlevel 20
+end
+Object sea_ne
+name sea
+face sea_ne.111
+color_fg light_blue
+color_bg blue
+speed 0.2
+no_pass 1
+no_pick 1
+is_water 1
+editable 8
+is_floor 1
+smoothlevel 20
+end
+Object sea_sw
+name sea
+face sea_sw.111
+color_fg light_blue
+color_bg blue
+speed 0.2
+no_pass 1
+no_pick 1
+is_water 1
+editable 8
+is_floor 1
+smoothlevel 20
+end
+Object sea_se
+name sea
+face sea_se.111
+color_fg light_blue
+color_bg blue
+speed 0.2
+no_pick 1
+no_pass 1
+is_water 1
+editable 8
+is_floor 1
+smoothlevel 20
+end
