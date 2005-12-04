@@ -4,7 +4,7 @@ name_pl rune of transference
 face spell_sorcery.111
 type 101
 subtype 2
-other_arch spell_transference
+other_arch rune_transferrence
 no_drop 1
 invisible 1
 level 6
