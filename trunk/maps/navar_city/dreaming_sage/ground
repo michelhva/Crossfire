@@ -1,6 +1,6 @@
 arch map
-region navar
 name ground
+region navar
 msg
 Creator: CF Java Map Editor
 Date:    1/10/2002
@@ -5185,6 +5185,8 @@ end
 arch perm_magic_portal
 name Navar
 slaying /world/world_121_116
+hp 48
+sp 45
 walk_on 0
 fly_on 0
 x 24
