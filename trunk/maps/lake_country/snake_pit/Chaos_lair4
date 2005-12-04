@@ -128,9 +128,6 @@ endmsg
 y 19
 end
 arch blocked
-y 22
-end
-arch blocked
 msg
 endmsg
 x 1
@@ -252,10 +249,6 @@ endmsg
 x 1
 y 19
 end
-arch blocked
-x 1
-y 22
-end
 arch large_stones
 x 2
 end
@@ -376,10 +369,6 @@ msg
 endmsg
 x 2
 y 19
-end
-arch blocked
-x 2
-y 22
 end
 arch large_stones
 x 3
