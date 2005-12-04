@@ -40,7 +40,7 @@ class CFDataFile:
     def make_file(self, header):
         '''creates a datafile, making the column header from a list passed in'''
         try:
-            file = open(self.filename,'w')
+            file = open(self.filename,'wb')
         except:
             print "Can't create datafile %s" % self.datafile_name
         else:
@@ -56,7 +56,7 @@ class CFDataFile:
         '''Gets the formatted file as a dictionary
         The # key contains the column headers for the file and indicates the 'primary' key'''
         try:
-            file = open(self.filename,'r')
+            file = open(self.filename,'rb')
         except:
             raise 'Unable to read %s' % self.filename
         else:
