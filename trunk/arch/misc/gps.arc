@@ -4,6 +4,11 @@ face gps.111
 type 9
 weight 6500
 identified 1
-event_apply_plugin Python
-event_apply /python/items/positioning_system.py
+randomitems gps
+end
+Object gps_event
+type 116
+subtype 1
+title Python
+slaying /python/items/positioning_system.py
 end
