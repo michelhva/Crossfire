@@ -45,8 +45,8 @@ smoothface oil_sea.111 oil_sea_S.111
 smoothface oil_sea.112 oil_sea_S.112
 smoothface oil_sea.113 oil_sea_S.113
 smoothface oil_sea.114 oil_sea_S.114
-speed 0.02
-no_pass 1
+speed 0.01
+no_pass 0
 no_pick 1
 is_water 1
 editable 8
