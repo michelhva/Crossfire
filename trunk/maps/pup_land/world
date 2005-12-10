@@ -5452,6 +5452,14 @@ arch dungeon_magic
 x 28
 y 37
 end
+arch invis_exit
+slaying rainbow/islands
+hp 25
+sp 6
+invisible 0
+x 28
+y 37
+end
 arch grass
 x 28
 y 37
