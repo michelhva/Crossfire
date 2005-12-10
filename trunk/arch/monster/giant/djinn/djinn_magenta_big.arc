@@ -2,7 +2,7 @@ Object djinn_magenta_big
 race faerie
 name djinn
 randomitems djinn_magenta
-face djinn_magenta.x11
+face djinn_magenta_big.x11
 monster 1
 sleep 1
 Wis 50
