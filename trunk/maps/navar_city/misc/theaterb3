@@ -13,6 +13,7 @@ Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
 endmsg
 outdoor 1
+tile_path_4 /navar_city/misc/theaterb4
 end
 arch marble
 end
@@ -63,9 +64,13 @@ end
 arch marble
 y 6
 end
-arch blocked
-msg
-endmsg
+arch spikes_open
+y 6
+speed 0.500000
+value 1
+connected 3
+end
+arch boulder
 y 6
 end
 arch marble
@@ -906,11 +911,18 @@ arch marble
 x 1
 y 2
 end
-arch blocked
-msg
-endmsg
+arch button_small
 x 1
 y 2
+weight 1000
+connected 2
+end
+arch spikes_open
+x 1
+y 2
+speed 0.050000
+value 1
+connected 2
 end
 arch marble
 x 1
@@ -926,9 +938,14 @@ arch marble
 x 1
 y 4
 end
-arch blocked
-msg
-endmsg
+arch teleporter
+hp 1
+sp 2
+x 1
+y 4
+speed 0.001000
+end
+arch boulder
 x 1
 y 4
 end
@@ -1856,11 +1873,18 @@ arch marble
 x 2
 y 2
 end
-arch blocked
-msg
-endmsg
+arch button_small
 x 2
 y 2
+weight 2000
+connected 3
+end
+arch grate_open_1
+x 2
+y 2
+speed 0.500000
+value 1
+connected 1
 end
 arch marble
 x 2
@@ -8078,6 +8102,12 @@ arch oil_sea
 x 10
 y 82
 end
+arch mover_3
+x 10
+y 83
+level 1
+attacktype 1
+end
 arch oil_sea
 x 10
 y 83
@@ -8085,6 +8115,12 @@ end
 arch slevel_3_4
 x 10
 y 83
+end
+arch mover_3
+x 10
+y 84
+level 1
+attacktype 1
 end
 arch oil_sea
 x 10
@@ -8094,6 +8130,12 @@ arch slevel_3_4
 x 10
 y 84
 end
+arch mover_3
+x 10
+y 85
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 10
 y 85
@@ -8101,6 +8143,12 @@ end
 arch slevel_3_4
 x 10
 y 85
+end
+arch mover_3
+x 10
+y 86
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 10
@@ -8110,6 +8158,12 @@ arch slevel_3_4
 x 10
 y 86
 end
+arch mover_3
+x 10
+y 87
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 10
 y 87
@@ -8117,6 +8171,12 @@ end
 arch slevel_3_4
 x 10
 y 87
+end
+arch mover_3
+x 10
+y 88
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 10
@@ -8126,6 +8186,12 @@ arch slevel_3_4
 x 10
 y 88
 end
+arch mover_3
+x 10
+y 89
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 10
 y 89
@@ -8134,6 +8200,12 @@ arch slevel_3_4
 x 10
 y 89
 end
+arch mover_3
+x 10
+y 90
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 10
 y 90
@@ -8141,6 +8213,12 @@ end
 arch slevel_3_4
 x 10
 y 90
+end
+arch mover_3
+x 10
+y 91
+level 1
+attacktype 1
 end
 arch oil_sea
 x 10
@@ -8149,6 +8227,12 @@ end
 arch slevel_3_4
 x 10
 y 91
+end
+arch mover_3
+x 10
+y 92
+level 1
+attacktype 1
 end
 arch oil_sea
 x 10
@@ -8808,6 +8892,12 @@ arch oil_sea
 x 11
 y 81
 end
+arch mover_5
+x 11
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea
 x 11
 y 82
@@ -8815,6 +8905,14 @@ end
 arch slevel_3_1
 x 11
 y 82
+end
+arch detector
+slaying djinn
+x 11
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -8834,6 +8932,14 @@ x 11
 y 83
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 11
+y 84
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -8854,6 +8960,14 @@ y 84
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 11
+y 85
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 11
@@ -8872,6 +8986,14 @@ x 11
 y 85
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 11
+y 86
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -8892,6 +9014,14 @@ y 86
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 11
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 11
@@ -8910,6 +9040,14 @@ x 11
 y 87
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 11
+y 88
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -8930,6 +9068,14 @@ y 88
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 11
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 11
@@ -8948,6 +9094,14 @@ x 11
 y 89
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 11
+y 90
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -8968,6 +9122,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 11
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 11
@@ -8987,6 +9149,14 @@ y 91
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 11
+y 92
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 11
@@ -9005,6 +9175,12 @@ x 11
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 11
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea
 x 11
@@ -9630,6 +9806,12 @@ arch oil_sea
 x 12
 y 81
 end
+arch mover_5
+x 12
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea
 x 12
 y 82
@@ -9637,6 +9819,14 @@ end
 arch slevel_3_1
 x 12
 y 82
+end
+arch detector
+slaying djinn
+x 12
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -9657,6 +9847,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 12
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9664,6 +9862,14 @@ x 12
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 12
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -9673,6 +9879,14 @@ y 85
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 12
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9681,6 +9895,14 @@ y 86
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 12
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9689,9 +9911,13 @@ y 87
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 12
-y 87
+y 88
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -9701,6 +9927,18 @@ y 88
 no_pass 0
 blocksview 0
 end
+arch fog
+x 12
+y 88
+end
+arch detector
+slaying djinn
+x 12
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9708,6 +9946,14 @@ x 12
 y 89
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 12
+y 90
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -9717,6 +9963,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 12
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9724,6 +9978,14 @@ x 12
 y 91
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 12
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -9743,6 +10005,12 @@ x 12
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 12
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea
 x 12
@@ -10396,6 +10664,12 @@ arch oil_sea_ultra_viscous
 x 13
 y 81
 end
+arch mover_5
+x 13
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 13
 y 82
@@ -10403,6 +10677,14 @@ end
 arch slevel_3_1
 x 13
 y 82
+end
+arch detector
+slaying djinn
+x 13
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -10423,6 +10705,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 13
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10430,6 +10720,14 @@ x 13
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 13
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -10442,6 +10740,14 @@ end
 arch fog
 x 13
 y 85
+end
+arch detector
+slaying djinn
+x 13
+y 86
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -10451,6 +10757,14 @@ y 86
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 13
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10458,6 +10772,14 @@ x 13
 y 87
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 13
+y 88
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -10467,6 +10789,14 @@ y 88
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 13
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10475,6 +10805,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 13
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10483,9 +10821,13 @@ y 90
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 13
-y 90
+y 91
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -10494,6 +10836,14 @@ x 13
 y 91
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 13
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -10513,6 +10863,12 @@ x 13
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 13
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 13
@@ -11196,6 +11552,12 @@ arch oil_sea
 x 14
 y 81
 end
+arch mover_5
+x 14
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 14
 y 82
@@ -11203,6 +11565,14 @@ end
 arch slevel_3_1
 x 14
 y 82
+end
+arch detector
+slaying djinn
+x 14
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -11223,6 +11593,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 14
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -11230,6 +11608,14 @@ x 14
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 14
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -11239,801 +11625,913 @@ y 85
 no_pass 0
 blocksview 0
 end
-arch blocked
-name nothing
-name_pl nothing
+arch detector
+slaying djinn
 x 14
 y 86
-no_pass 0
-blocksview 0
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
 name_pl nothing
 x 14
-y 87
-no_pass 0
-blocksview 0
-end
-arch fog
-x 14
-y 87
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 88
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 89
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 90
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 91
-no_pass 0
-blocksview 0
-end
-arch invis_exit
-slaying theaterb4
-hp 14
-sp 92
-x 14
-y 92
-end
-arch dungeon_magic
-x 14
-y 92
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 92
-no_pass 0
-blocksview 0
-end
-arch oil_sea_ultra_viscous
-x 14
-y 93
-end
-arch slevel_3_3
-x 14
-y 93
-end
-arch oil_sea
-x 14
-y 94
-end
-arch oil_sea
-x 14
-y 95
-end
-arch oil_sea
-x 14
-y 96
-end
-arch oil_sea
-x 14
-y 97
-end
-arch oil_sea
-x 14
-y 98
-end
-arch oil_sea_ultra_viscous
-x 14
-y 99
-end
-arch oil_sea
-x 14
-y 100
-end
-arch oil_sea
-x 14
-y 101
-end
-arch oil_sea
-x 14
-y 102
-end
-arch oil_sea
-x 14
-y 103
-end
-arch oil_sea
-x 14
-y 104
-end
-arch oil_sea
-x 14
-y 105
-end
-arch oil_sea
-x 14
-y 106
-end
-arch oil_sea
-x 14
-y 107
-end
-arch oil_sea
-x 14
-y 108
-end
-arch oil_sea
-x 14
-y 109
-end
-arch oil_sea
-x 14
-y 110
-end
-arch cave16
-x 14
-y 110
-end
-arch oil_sea
-x 14
-y 111
-end
-arch cave3
-x 14
-y 111
-end
-arch oil_sea
-x 14
-y 112
-end
-arch cave17
-x 14
-y 112
-end
-arch oil_sea
-x 14
-y 113
-end
-arch blocked
-msg
-endmsg
-x 14
-y 113
-end
-arch oil_sea
-x 14
-y 114
-end
-arch blocked
-msg
-endmsg
-x 14
-y 114
-end
-arch oil_sea
-x 14
-y 115
-end
-arch blocked
-msg
-endmsg
-x 14
-y 115
-end
-arch oil_sea
-x 14
-y 116
-end
-arch blocked
-msg
-endmsg
-x 14
-y 116
-end
-arch oil_sea
-x 14
-y 117
-end
-arch blocked
-msg
-endmsg
-x 14
-y 117
-end
-arch marble
-x 15
-end
-arch blocked
-msg
-endmsg
-x 15
-end
-arch marble
-x 15
-y 1
-end
-arch blocked
-msg
-endmsg
-x 15
-y 1
-end
-arch marble
-x 15
-y 2
-end
-arch blocked
-msg
-endmsg
-x 15
-y 2
-end
-arch marble
-x 15
-y 3
-end
-arch blocked
-msg
-endmsg
-x 15
-y 3
-end
-arch marble
-x 15
-y 4
-end
-arch blocked
-msg
-endmsg
-x 15
-y 4
-end
-arch marble
-x 15
-y 5
-end
-arch blocked
-msg
-endmsg
-x 15
-y 5
-end
-arch marble
-x 15
-y 6
-end
-arch blocked
-msg
-endmsg
-x 15
-y 6
-end
-arch marble
-x 15
-y 7
-end
-arch blocked
-msg
-endmsg
-x 15
-y 7
-end
-arch marble
-x 15
-y 8
-end
-arch blocked
-msg
-endmsg
-x 15
-y 8
-end
-arch marble
-x 15
-y 9
-end
-arch blocked
-msg
-endmsg
-x 15
-y 9
-end
-arch marble
-x 15
-y 10
-end
-arch blocked
-msg
-endmsg
-x 15
-y 10
-end
-arch marble
-x 15
-y 11
-end
-arch blocked
-msg
-endmsg
-x 15
-y 11
-end
-arch marble
-x 15
-y 12
-end
-arch blocked
-msg
-endmsg
-x 15
-y 12
-end
-arch marble
-x 15
-y 13
-end
-arch blocked
-msg
-endmsg
-x 15
-y 13
-end
-arch marble
-x 15
-y 14
-end
-arch blocked
-msg
-endmsg
-x 15
-y 14
-end
-arch marble
-x 15
-y 15
-end
-arch blocked
-msg
-endmsg
-x 15
-y 15
-end
-arch marble
-x 15
-y 16
-end
-arch blocked
-msg
-endmsg
-x 15
-y 16
-end
-arch marble
-x 15
-y 17
-end
-arch cave18
-x 15
-y 17
-end
-arch marble
-x 15
-y 18
-end
-arch cave3
-x 15
-y 18
-end
-arch marble
-x 15
-y 19
-end
-arch cave17
-x 15
-y 19
-end
-arch marble
-x 15
-y 20
-end
-arch blocked
-msg
-endmsg
-x 15
-y 20
-end
-arch marble
-x 15
-y 21
-end
-arch blocked
-msg
-endmsg
-x 15
-y 21
-end
-arch marble
-x 15
-y 22
-end
-arch blocked
-msg
-endmsg
-x 15
-y 22
-end
-arch marble
-x 15
-y 23
-end
-arch blocked
-msg
-endmsg
-x 15
-y 23
-end
-arch marble
-x 15
-y 24
-end
-arch blocked
-msg
-endmsg
-x 15
-y 24
-end
-arch marble
-x 15
-y 25
-end
-arch blocked
-msg
-endmsg
-x 15
-y 25
-end
-arch marble
-x 15
-y 26
-end
-arch cave4
-x 15
-y 26
-end
-arch marble
-x 15
-y 27
-end
-arch marble
-x 15
-y 28
-end
-arch marble
-x 15
-y 29
-end
-arch marble
-x 15
-y 30
-end
-arch marble
-x 15
-y 31
-end
-arch marble
-x 15
-y 32
-end
-arch marble
-x 15
-y 33
-end
-arch marble
-x 15
-y 34
-end
-arch marble
-x 15
-y 35
-end
-arch marble
-x 15
-y 36
-end
-arch marble
-x 15
-y 37
-end
-arch marble
-x 15
-y 38
-end
-arch fire_elemental
-x 15
-y 38
-end
-arch marble
-x 15
-y 39
-end
-arch marble
-x 15
-y 40
-end
-arch marble
-x 15
-y 41
-end
-arch marble
-x 15
-y 42
-end
-arch marble
-x 15
-y 43
-end
-arch marble
-x 15
-y 44
-end
-arch marble
-x 15
-y 45
-end
-arch marble
-x 15
-y 46
-end
-arch marble
-x 15
-y 47
-end
-arch marble
-x 15
-y 48
-end
-arch djinn
-x 15
-y 48
-end
-arch marble
-x 15
-y 49
-end
-arch marble
-x 15
-y 50
-end
-arch marble
-x 15
-y 51
-end
-arch marble
-x 15
-y 52
-end
-arch marble
-x 15
-y 53
-end
-arch marble
-x 15
-y 54
-end
-arch marble
-x 15
-y 55
-end
-arch marble
-x 15
-y 56
-end
-arch marble
-x 15
-y 57
-end
-arch cave12
-x 15
-y 57
-end
-arch marble
-x 15
-y 58
-end
-arch cave9
-x 15
-y 58
-end
-arch marble
-x 15
-y 59
-end
-arch marble
-x 15
-y 60
-end
-arch marble
-x 15
-y 61
-end
-arch cave21
-x 15
-y 61
-end
-arch marble
-x 15
-y 62
-end
-arch cave21
-x 15
-y 62
-end
-arch marble
-x 15
-y 63
-end
-arch cave21
-x 15
-y 63
-end
-arch marble
-x 15
-y 64
-end
-arch cave21
-x 15
-y 64
-end
-arch marble
-x 15
-y 65
-end
-arch cave21
-x 15
-y 65
-end
-arch marble
-x 15
-y 66
-end
-arch marble
-x 15
-y 67
-end
-arch marble
-x 15
-y 68
-end
-arch slevel_3_1
-x 15
-y 68
-end
-arch marble
-x 15
-y 69
-end
-arch slevel_3_1
-x 15
-y 69
-end
-arch oil_sea
-x 15
-y 70
-end
-arch oil_sea
-x 15
-y 71
-end
-arch oil_sea
-x 15
-y 72
-end
-arch oil_sea_ultra_viscous
-x 15
-y 73
-end
-arch oil_sea
-x 15
-y 74
-end
-arch oil_sea
-x 15
-y 75
-end
-arch oil_sea_ultra_viscous
-x 15
-y 76
-end
-arch oil_sea
-x 15
-y 77
-end
-arch oil_sea
-x 15
-y 78
-end
-arch oil_sea
-x 15
-y 79
-end
-arch oil_sea
-x 15
-y 80
-end
-arch oil_sea
-x 15
-y 81
-end
-arch oil_sea_ultra_viscous
-x 15
-y 82
-end
-arch slevel_3_1
-x 15
-y 82
-end
-arch invis_exit
-slaying theaterb4
-hp 15
-sp 83
-x 15
-y 83
-end
-arch dungeon_magic
-x 15
-y 83
-end
-arch blocked
-name nothing
-name_pl nothing
-x 15
-y 83
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 15
-y 84
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 15
-y 85
-no_pass 0
-blocksview 0
-end
-arch blocked
-name nothing
-name_pl nothing
-x 15
 y 86
 no_pass 0
 blocksview 0
 end
 arch djinn_magenta_big
+x 14
+y 86
+end
+arch detector
+slaying djinn
+x 14
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 87
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 14
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 88
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 14
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 89
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 14
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 90
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 14
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 91
+no_pass 0
+blocksview 0
+end
+arch fog
+x 14
+y 91
+end
+arch detector
+slaying djinn
+x 14
+y 92
+speed 0.100000
+invisible 1
+connected 1
+end
+arch invis_exit
+slaying theaterb4
+hp 14
+sp 92
+x 14
+y 92
+end
+arch dungeon_magic
+x 14
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 92
+no_pass 0
+blocksview 0
+end
+arch mover_1
+x 14
+y 93
+level 1
+attacktype 1
+end
+arch oil_sea_ultra_viscous
+x 14
+y 93
+end
+arch slevel_3_3
+x 14
+y 93
+end
+arch oil_sea
+x 14
+y 94
+end
+arch oil_sea
+x 14
+y 95
+end
+arch oil_sea
+x 14
+y 96
+end
+arch oil_sea
+x 14
+y 97
+end
+arch oil_sea
+x 14
+y 98
+end
+arch oil_sea_ultra_viscous
+x 14
+y 99
+end
+arch oil_sea
+x 14
+y 100
+end
+arch oil_sea
+x 14
+y 101
+end
+arch oil_sea
+x 14
+y 102
+end
+arch oil_sea
+x 14
+y 103
+end
+arch oil_sea
+x 14
+y 104
+end
+arch oil_sea
+x 14
+y 105
+end
+arch oil_sea
+x 14
+y 106
+end
+arch oil_sea
+x 14
+y 107
+end
+arch oil_sea
+x 14
+y 108
+end
+arch oil_sea
+x 14
+y 109
+end
+arch oil_sea
+x 14
+y 110
+end
+arch cave16
+x 14
+y 110
+end
+arch oil_sea
+x 14
+y 111
+end
+arch cave3
+x 14
+y 111
+end
+arch oil_sea
+x 14
+y 112
+end
+arch cave17
+x 14
+y 112
+end
+arch oil_sea
+x 14
+y 113
+end
+arch blocked
+msg
+endmsg
+x 14
+y 113
+end
+arch oil_sea
+x 14
+y 114
+end
+arch blocked
+msg
+endmsg
+x 14
+y 114
+end
+arch oil_sea
+x 14
+y 115
+end
+arch blocked
+msg
+endmsg
+x 14
+y 115
+end
+arch oil_sea
+x 14
+y 116
+end
+arch blocked
+msg
+endmsg
+x 14
+y 116
+end
+arch oil_sea
+x 14
+y 117
+end
+arch blocked
+msg
+endmsg
+x 14
+y 117
+end
+arch marble
+x 15
+end
+arch blocked
+msg
+endmsg
+x 15
+end
+arch marble
+x 15
+y 1
+end
+arch blocked
+msg
+endmsg
+x 15
+y 1
+end
+arch marble
+x 15
+y 2
+end
+arch blocked
+msg
+endmsg
+x 15
+y 2
+end
+arch marble
+x 15
+y 3
+end
+arch blocked
+msg
+endmsg
+x 15
+y 3
+end
+arch marble
+x 15
+y 4
+end
+arch blocked
+msg
+endmsg
+x 15
+y 4
+end
+arch marble
+x 15
+y 5
+end
+arch blocked
+msg
+endmsg
+x 15
+y 5
+end
+arch marble
+x 15
+y 6
+end
+arch blocked
+msg
+endmsg
+x 15
+y 6
+end
+arch marble
+x 15
+y 7
+end
+arch blocked
+msg
+endmsg
+x 15
+y 7
+end
+arch marble
+x 15
+y 8
+end
+arch blocked
+msg
+endmsg
+x 15
+y 8
+end
+arch marble
+x 15
+y 9
+end
+arch blocked
+msg
+endmsg
+x 15
+y 9
+end
+arch marble
+x 15
+y 10
+end
+arch blocked
+msg
+endmsg
+x 15
+y 10
+end
+arch marble
+x 15
+y 11
+end
+arch blocked
+msg
+endmsg
+x 15
+y 11
+end
+arch marble
+x 15
+y 12
+end
+arch blocked
+msg
+endmsg
+x 15
+y 12
+end
+arch marble
+x 15
+y 13
+end
+arch blocked
+msg
+endmsg
+x 15
+y 13
+end
+arch marble
+x 15
+y 14
+end
+arch blocked
+msg
+endmsg
+x 15
+y 14
+end
+arch marble
+x 15
+y 15
+end
+arch blocked
+msg
+endmsg
+x 15
+y 15
+end
+arch marble
+x 15
+y 16
+end
+arch blocked
+msg
+endmsg
+x 15
+y 16
+end
+arch marble
+x 15
+y 17
+end
+arch cave18
+x 15
+y 17
+end
+arch marble
+x 15
+y 18
+end
+arch cave3
+x 15
+y 18
+end
+arch marble
+x 15
+y 19
+end
+arch cave17
+x 15
+y 19
+end
+arch marble
+x 15
+y 20
+end
+arch blocked
+msg
+endmsg
+x 15
+y 20
+end
+arch marble
+x 15
+y 21
+end
+arch blocked
+msg
+endmsg
+x 15
+y 21
+end
+arch marble
+x 15
+y 22
+end
+arch blocked
+msg
+endmsg
+x 15
+y 22
+end
+arch marble
+x 15
+y 23
+end
+arch blocked
+msg
+endmsg
+x 15
+y 23
+end
+arch marble
+x 15
+y 24
+end
+arch blocked
+msg
+endmsg
+x 15
+y 24
+end
+arch marble
+x 15
+y 25
+end
+arch blocked
+msg
+endmsg
+x 15
+y 25
+end
+arch marble
+x 15
+y 26
+end
+arch cave4
+x 15
+y 26
+end
+arch marble
+x 15
+y 27
+end
+arch marble
+x 15
+y 28
+end
+arch marble
+x 15
+y 29
+end
+arch marble
+x 15
+y 30
+end
+arch marble
+x 15
+y 31
+end
+arch marble
+x 15
+y 32
+end
+arch marble
+x 15
+y 33
+end
+arch marble
+x 15
+y 34
+end
+arch marble
+x 15
+y 35
+end
+arch marble
+x 15
+y 36
+end
+arch marble
+x 15
+y 37
+end
+arch marble
+x 15
+y 38
+end
+arch fire_elemental
+x 15
+y 38
+end
+arch marble
+x 15
+y 39
+end
+arch marble
+x 15
+y 40
+end
+arch marble
+x 15
+y 41
+end
+arch marble
+x 15
+y 42
+end
+arch marble
+x 15
+y 43
+end
+arch marble
+x 15
+y 44
+end
+arch marble
+x 15
+y 45
+end
+arch marble
+x 15
+y 46
+end
+arch marble
+x 15
+y 47
+end
+arch marble
+x 15
+y 48
+end
+arch djinn
+x 15
+y 48
+end
+arch marble
+x 15
+y 49
+end
+arch marble
+x 15
+y 50
+end
+arch marble
+x 15
+y 51
+end
+arch marble
+x 15
+y 52
+end
+arch marble
+x 15
+y 53
+end
+arch marble
+x 15
+y 54
+end
+arch marble
+x 15
+y 55
+end
+arch marble
+x 15
+y 56
+end
+arch marble
+x 15
+y 57
+end
+arch cave12
+x 15
+y 57
+end
+arch marble
+x 15
+y 58
+end
+arch cave9
+x 15
+y 58
+end
+arch marble
+x 15
+y 59
+end
+arch marble
+x 15
+y 60
+end
+arch marble
+x 15
+y 61
+end
+arch cave21
+x 15
+y 61
+end
+arch marble
+x 15
+y 62
+end
+arch cave21
+x 15
+y 62
+end
+arch marble
+x 15
+y 63
+end
+arch cave21
+x 15
+y 63
+end
+arch marble
+x 15
+y 64
+end
+arch cave21
+x 15
+y 64
+end
+arch marble
+x 15
+y 65
+end
+arch cave21
+x 15
+y 65
+end
+arch marble
+x 15
+y 66
+end
+arch marble
+x 15
+y 67
+end
+arch marble
+x 15
+y 68
+end
+arch slevel_3_1
+x 15
+y 68
+end
+arch marble
+x 15
+y 69
+end
+arch slevel_3_1
+x 15
+y 69
+end
+arch oil_sea
+x 15
+y 70
+end
+arch oil_sea
+x 15
+y 71
+end
+arch oil_sea
+x 15
+y 72
+end
+arch oil_sea_ultra_viscous
+x 15
+y 73
+end
+arch oil_sea
+x 15
+y 74
+end
+arch oil_sea
+x 15
+y 75
+end
+arch oil_sea_ultra_viscous
+x 15
+y 76
+end
+arch oil_sea
+x 15
+y 77
+end
+arch oil_sea
+x 15
+y 78
+end
+arch oil_sea
+x 15
+y 79
+end
+arch oil_sea
+x 15
+y 80
+end
+arch oil_sea
+x 15
+y 81
+end
+arch mover_5
+x 15
+y 82
+level 1
+attacktype 1
+end
+arch oil_sea_ultra_viscous
+x 15
+y 82
+end
+arch slevel_3_1
+x 15
+y 82
+end
+arch detector
+slaying djinn
+x 15
+y 83
+speed 0.100000
+invisible 1
+connected 1
+end
+arch invis_exit
+slaying theaterb4
+hp 15
+sp 83
+x 15
+y 83
+end
+arch dungeon_magic
+x 15
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 83
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 15
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 84
+no_pass 0
+blocksview 0
+end
+arch fog
+x 15
+y 84
+end
+arch detector
+slaying djinn
+x 15
+y 85
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 85
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
 x 15
 y 86
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 86
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying djinn
+x 15
+y 87
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -12043,6 +12541,18 @@ y 87
 no_pass 0
 blocksview 0
 end
+arch fog
+x 15
+y 87
+end
+arch detector
+slaying djinn
+x 15
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12050,6 +12560,14 @@ x 15
 y 88
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 15
+y 89
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -12059,6 +12577,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 15
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12067,6 +12593,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 15
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12075,9 +12609,13 @@ y 91
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 15
-y 91
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -12097,6 +12635,12 @@ x 15
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 15
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 15
@@ -12750,6 +13294,12 @@ arch oil_sea_ultra_viscous
 x 16
 y 81
 end
+arch mover_5
+x 16
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 16
 y 82
@@ -12757,6 +13307,14 @@ end
 arch slevel_3_1
 x 16
 y 82
+end
+arch detector
+slaying djinn
+x 16
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -12777,6 +13335,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 16
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12785,9 +13351,13 @@ y 84
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 16
-y 84
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -12797,6 +13367,14 @@ y 85
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 16
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12804,6 +13382,14 @@ x 16
 y 86
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 16
+y 87
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -12813,6 +13399,14 @@ y 87
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 16
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12820,6 +13414,14 @@ x 16
 y 88
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 16
+y 89
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -12829,6 +13431,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 16
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12837,6 +13447,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 16
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12844,6 +13462,14 @@ x 16
 y 91
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 16
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -12863,6 +13489,12 @@ x 16
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 16
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 16
@@ -13478,6 +14110,12 @@ arch oil_sea_ultra_viscous
 x 17
 y 81
 end
+arch mover_5
+x 17
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 17
 y 82
@@ -13485,6 +14123,14 @@ end
 arch slevel_3_1
 x 17
 y 82
+end
+arch detector
+slaying djinn
+x 17
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -13505,6 +14151,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13513,6 +14167,14 @@ y 84
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 85
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13521,9 +14183,13 @@ y 85
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 17
-y 85
+y 86
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -13533,6 +14199,14 @@ y 86
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13541,6 +14215,14 @@ y 87
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13549,9 +14231,13 @@ y 88
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 17
-y 88
+y 89
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -13561,6 +14247,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13569,6 +14263,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 17
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13577,9 +14279,13 @@ y 91
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 17
-y 91
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -13599,6 +14305,12 @@ x 17
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 17
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 17
@@ -14238,9 +14950,11 @@ arch oil_sea_ultra_viscous
 x 18
 y 81
 end
-arch djinn_magenta
+arch mover_5
 x 18
-y 81
+y 82
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 18
@@ -14249,6 +14963,14 @@ end
 arch slevel_3_1
 x 18
 y 82
+end
+arch detector
+slaying djinn
+x 18
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -14269,6 +14991,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 18
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14276,6 +15006,14 @@ x 18
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 18
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -14285,6 +15023,14 @@ y 85
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 18
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14292,6 +15038,18 @@ x 18
 y 86
 no_pass 0
 blocksview 0
+end
+arch fog
+x 18
+y 86
+end
+arch detector
+slaying djinn
+x 18
+y 87
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -14301,6 +15059,14 @@ y 87
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 18
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14308,6 +15074,14 @@ x 18
 y 88
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 18
+y 89
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -14317,6 +15091,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 18
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14325,6 +15107,18 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch fog
+x 18
+y 90
+end
+arch detector
+slaying djinn
+x 18
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14332,6 +15126,14 @@ x 18
 y 91
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 18
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -14351,6 +15153,12 @@ x 18
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 18
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea
 x 18
@@ -14992,6 +15800,12 @@ arch oil_sea
 x 19
 y 81
 end
+arch mover_5
+x 19
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea
 x 19
 y 82
@@ -14999,6 +15813,14 @@ end
 arch slevel_3_1
 x 19
 y 82
+end
+arch detector
+slaying djinn
+x 19
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15019,6 +15841,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 19
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15026,6 +15856,14 @@ x 19
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 19
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -15035,6 +15873,14 @@ y 85
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 19
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15043,6 +15889,14 @@ y 86
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 19
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15051,9 +15905,13 @@ y 87
 no_pass 0
 blocksview 0
 end
-arch fog
+arch detector
+slaying djinn
 x 19
-y 87
+y 88
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -15063,6 +15921,14 @@ y 88
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 19
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15070,6 +15936,14 @@ x 19
 y 89
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 19
+y 90
+speed 0.100000
+invisible 1
+connected 1
 end
 arch blocked
 name nothing
@@ -15079,6 +15953,14 @@ y 90
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 19
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15086,6 +15968,14 @@ x 19
 y 91
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 19
+y 92
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15105,6 +15995,12 @@ x 19
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 19
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea
 x 19
@@ -15754,6 +16650,12 @@ arch oil_sea
 x 20
 y 81
 end
+arch mover_5
+x 20
+y 82
+level 1
+attacktype 1
+end
 arch oil_sea
 x 20
 y 82
@@ -15761,6 +16663,14 @@ end
 arch slevel_3_1
 x 20
 y 82
+end
+arch detector
+slaying djinn
+x 20
+y 83
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15781,6 +16691,14 @@ y 83
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 20
+y 84
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 20
@@ -15799,6 +16717,14 @@ x 20
 y 84
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 20
+y 85
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15819,6 +16745,14 @@ y 85
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 20
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 20
@@ -15837,6 +16771,14 @@ x 20
 y 86
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 20
+y 87
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15857,6 +16799,14 @@ y 87
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 20
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 20
@@ -15875,6 +16825,14 @@ x 20
 y 88
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 20
+y 89
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15895,6 +16853,14 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 20
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 20
@@ -15913,6 +16879,14 @@ x 20
 y 90
 no_pass 0
 blocksview 0
+end
+arch detector
+slaying djinn
+x 20
+y 91
+speed 0.100000
+invisible 1
+connected 1
 end
 arch invis_exit
 slaying theaterb4
@@ -15933,6 +16907,14 @@ y 91
 no_pass 0
 blocksview 0
 end
+arch detector
+slaying djinn
+x 20
+y 92
+speed 0.100000
+invisible 1
+connected 1
+end
 arch invis_exit
 slaying theaterb4
 hp 20
@@ -15951,6 +16933,12 @@ x 20
 y 92
 no_pass 0
 blocksview 0
+end
+arch mover_1
+x 20
+y 93
+level 1
+attacktype 1
 end
 arch oil_sea
 x 20
@@ -16600,6 +17588,12 @@ arch oil_sea
 x 21
 y 82
 end
+arch mover_7
+x 21
+y 83
+level 1
+attacktype 1
+end
 arch oil_sea
 x 21
 y 83
@@ -16607,6 +17601,12 @@ end
 arch slevel_3_2
 x 21
 y 83
+end
+arch mover_7
+x 21
+y 84
+level 1
+attacktype 1
 end
 arch oil_sea
 x 21
@@ -16616,6 +17616,12 @@ arch slevel_3_2
 x 21
 y 84
 end
+arch mover_7
+x 21
+y 85
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 21
 y 85
@@ -16623,6 +17629,12 @@ end
 arch slevel_3_2
 x 21
 y 85
+end
+arch mover_7
+x 21
+y 86
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 21
@@ -16632,6 +17644,12 @@ arch slevel_3_2
 x 21
 y 86
 end
+arch mover_7
+x 21
+y 87
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 21
 y 87
@@ -16639,6 +17657,12 @@ end
 arch slevel_3_2
 x 21
 y 87
+end
+arch mover_7
+x 21
+y 88
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 21
@@ -16648,6 +17672,12 @@ arch slevel_3_2
 x 21
 y 88
 end
+arch mover_7
+x 21
+y 89
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 21
 y 89
@@ -16655,6 +17685,12 @@ end
 arch slevel_3_2
 x 21
 y 89
+end
+arch mover_7
+x 21
+y 90
+level 1
+attacktype 1
 end
 arch oil_sea_ultra_viscous
 x 21
@@ -16664,6 +17700,12 @@ arch slevel_3_2
 x 21
 y 90
 end
+arch mover_7
+x 21
+y 91
+level 1
+attacktype 1
+end
 arch oil_sea_ultra_viscous
 x 21
 y 91
@@ -16671,6 +17713,12 @@ end
 arch slevel_3_2
 x 21
 y 91
+end
+arch mover_7
+x 21
+y 92
+level 1
+attacktype 1
 end
 arch oil_sea
 x 21

@@ -2075,6 +2075,18 @@ x 27
 y 76
 end
 arch blocked
+x 28
+y 5
+end
+arch blocked
+x 28
+y 6
+end
+arch blocked
+x 28
+y 7
+end
+arch blocked
 msg
 endmsg
 x 28
@@ -2111,6 +2123,33 @@ x 28
 y 76
 end
 arch blocked
+x 29
+y 5
+end
+arch marble
+x 29
+y 6
+end
+arch teleporter
+hp 16
+sp 88
+x 29
+y 6
+speed 0.000000
+connected 5
+end
+arch key2
+name rod of ali
+slaying rodofalitheaterb4
+face rod_heavy.111
+x 29
+y 6
+end
+arch blocked
+x 29
+y 7
+end
+arch blocked
 msg
 endmsg
 x 29
@@ -2145,6 +2184,18 @@ msg
 endmsg
 x 29
 y 76
+end
+arch blocked
+x 30
+y 5
+end
+arch blocked
+x 30
+y 6
+end
+arch blocked
+x 30
+y 7
 end
 arch blocked
 msg
@@ -2188,6 +2239,24 @@ msg
 endmsg
 x 30
 y 76
+end
+arch blocked
+x 31
+y 5
+end
+arch marble
+x 31
+y 6
+end
+arch button_small
+x 31
+y 6
+weight 3000
+connected 5
+end
+arch blocked
+x 31
+y 7
 end
 arch blocked
 msg
