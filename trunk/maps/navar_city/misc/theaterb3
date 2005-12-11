@@ -4,7 +4,7 @@ difficulty 1
 region navar
 darkness 2
 width 32
-height 64
+height 118
 enter_x 1
 enter_y 1
 msg
@@ -491,6 +491,400 @@ endmsg
 y 63
 end
 arch marble
+y 64
+end
+arch blocked
+msg
+endmsg
+y 64
+end
+arch marble
+y 65
+end
+arch blocked
+msg
+endmsg
+y 65
+end
+arch marble
+y 66
+end
+arch blocked
+msg
+endmsg
+y 66
+end
+arch marble
+y 67
+end
+arch cave18
+y 67
+end
+arch marble
+y 68
+end
+arch cave3
+y 68
+end
+arch marble
+y 69
+end
+arch slevel_3_1
+y 69
+end
+arch cave3
+y 69
+end
+arch marble
+y 70
+end
+arch slevel_3_1
+y 70
+end
+arch cave3
+y 70
+end
+arch oil_sea
+y 71
+end
+arch cave3
+y 71
+end
+arch oil_sea
+y 72
+end
+arch cave3
+y 72
+end
+arch oil_sea
+y 73
+end
+arch cave3
+y 73
+end
+arch oil_sea
+y 74
+end
+arch cave17
+y 74
+end
+arch oil_sea
+y 75
+end
+arch blocked
+msg
+endmsg
+y 75
+end
+arch oil_sea
+y 76
+end
+arch blocked
+msg
+endmsg
+y 76
+end
+arch oil_sea
+y 77
+end
+arch blocked
+msg
+endmsg
+y 77
+end
+arch oil_sea
+y 78
+end
+arch blocked
+msg
+endmsg
+y 78
+end
+arch oil_sea
+y 79
+end
+arch blocked
+msg
+endmsg
+y 79
+end
+arch oil_sea
+y 80
+end
+arch blocked
+msg
+endmsg
+y 80
+end
+arch oil_sea
+y 81
+end
+arch cave18
+y 81
+end
+arch oil_sea
+y 82
+end
+arch cave3
+y 82
+end
+arch oil_sea
+y 83
+end
+arch cave3
+y 83
+end
+arch oil_sea
+y 84
+end
+arch cave3
+y 84
+end
+arch oil_sea
+y 85
+end
+arch cave3
+y 85
+end
+arch oil_sea
+y 86
+end
+arch cave3
+y 86
+end
+arch oil_sea
+y 87
+end
+arch cave17
+y 87
+end
+arch oil_sea
+y 88
+end
+arch blocked
+msg
+endmsg
+y 88
+end
+arch oil_sea
+y 89
+end
+arch blocked
+msg
+endmsg
+y 89
+end
+arch oil_sea
+y 90
+end
+arch blocked
+msg
+endmsg
+y 90
+end
+arch oil_sea
+y 91
+end
+arch cave18
+y 91
+end
+arch oil_sea
+y 92
+end
+arch cave3
+y 92
+end
+arch oil_sea
+y 93
+end
+arch cave3
+y 93
+end
+arch oil_sea
+y 94
+end
+arch cave3
+y 94
+end
+arch oil_sea
+y 95
+end
+arch cave3
+y 95
+end
+arch oil_sea
+y 96
+end
+arch cave3
+y 96
+end
+arch oil_sea
+y 97
+end
+arch cave17
+y 97
+end
+arch oil_sea
+y 98
+end
+arch blocked
+msg
+endmsg
+y 98
+end
+arch oil_sea
+y 99
+end
+arch blocked
+msg
+endmsg
+y 99
+end
+arch oil_sea
+y 100
+end
+arch blocked
+msg
+endmsg
+y 100
+end
+arch oil_sea
+y 101
+end
+arch blocked
+msg
+endmsg
+y 101
+end
+arch oil_sea
+y 102
+end
+arch blocked
+msg
+endmsg
+y 102
+end
+arch oil_sea
+y 103
+end
+arch blocked
+msg
+endmsg
+y 103
+end
+arch oil_sea
+y 104
+end
+arch blocked
+msg
+endmsg
+y 104
+end
+arch oil_sea
+y 105
+end
+arch blocked
+msg
+endmsg
+y 105
+end
+arch oil_sea
+y 106
+end
+arch blocked
+msg
+endmsg
+y 106
+end
+arch oil_sea
+y 107
+end
+arch blocked
+msg
+endmsg
+y 107
+end
+arch oil_sea
+y 108
+end
+arch blocked
+msg
+endmsg
+y 108
+end
+arch oil_sea
+y 109
+end
+arch blocked
+msg
+endmsg
+y 109
+end
+arch oil_sea
+y 110
+end
+arch blocked
+msg
+endmsg
+y 110
+end
+arch oil_sea
+y 111
+end
+arch blocked
+msg
+endmsg
+y 111
+end
+arch oil_sea
+y 112
+end
+arch blocked
+msg
+endmsg
+y 112
+end
+arch oil_sea
+y 113
+end
+arch blocked
+msg
+endmsg
+y 113
+end
+arch oil_sea
+y 114
+end
+arch blocked
+msg
+endmsg
+y 114
+end
+arch oil_sea
+y 115
+end
+arch blocked
+msg
+endmsg
+y 115
+end
+arch oil_sea
+y 116
+end
+arch blocked
+msg
+endmsg
+y 116
+end
+arch oil_sea
+y 117
+end
+arch blocked
+msg
+endmsg
+y 117
+end
+arch marble
 x 1
 end
 arch blocked
@@ -1027,6 +1421,420 @@ x 1
 y 63
 end
 arch marble
+x 1
+y 64
+end
+arch cave18
+x 1
+y 64
+end
+arch marble
+x 1
+y 65
+end
+arch cave3
+x 1
+y 65
+end
+arch marble
+x 1
+y 66
+end
+arch cave3
+x 1
+y 66
+end
+arch marble
+x 1
+y 67
+end
+arch cave13
+x 1
+y 67
+end
+arch marble
+x 1
+y 68
+end
+arch marble
+x 1
+y 69
+end
+arch slevel_3_1
+x 1
+y 69
+end
+arch djinn_magenta
+x 1
+y 69
+end
+arch marble
+x 1
+y 70
+end
+arch slevel_3_1
+x 1
+y 70
+end
+arch oil_sea
+x 1
+y 71
+end
+arch oil_sea
+x 1
+y 72
+end
+arch oil_sea
+x 1
+y 73
+end
+arch oil_sea
+x 1
+y 74
+end
+arch cave16
+x 1
+y 74
+end
+arch oil_sea
+x 1
+y 75
+end
+arch cave3
+x 1
+y 75
+end
+arch oil_sea
+x 1
+y 76
+end
+arch cave3
+x 1
+y 76
+end
+arch oil_sea
+x 1
+y 77
+end
+arch cave3
+x 1
+y 77
+end
+arch oil_sea
+x 1
+y 78
+end
+arch cave3
+x 1
+y 78
+end
+arch oil_sea
+x 1
+y 79
+end
+arch cave3
+x 1
+y 79
+end
+arch oil_sea
+x 1
+y 80
+end
+arch cave3
+x 1
+y 80
+end
+arch oil_sea
+x 1
+y 81
+end
+arch cave13
+x 1
+y 81
+end
+arch oil_sea
+x 1
+y 82
+end
+arch oil_sea
+x 1
+y 83
+end
+arch oil_sea
+x 1
+y 84
+end
+arch oil_sea
+x 1
+y 85
+end
+arch oil_sea
+x 1
+y 86
+end
+arch oil_sea
+x 1
+y 87
+end
+arch cave16
+x 1
+y 87
+end
+arch oil_sea
+x 1
+y 88
+end
+arch cave3
+x 1
+y 88
+end
+arch oil_sea
+x 1
+y 89
+end
+arch cave3
+x 1
+y 89
+end
+arch oil_sea
+x 1
+y 90
+end
+arch cave3
+x 1
+y 90
+end
+arch oil_sea
+x 1
+y 91
+end
+arch cave13
+x 1
+y 91
+end
+arch oil_sea
+x 1
+y 92
+end
+arch oil_sea
+x 1
+y 93
+end
+arch oil_sea
+x 1
+y 94
+end
+arch oil_sea
+x 1
+y 95
+end
+arch oil_sea
+x 1
+y 96
+end
+arch oil_sea
+x 1
+y 97
+end
+arch cave16
+x 1
+y 97
+end
+arch oil_sea
+x 1
+y 98
+end
+arch cave3
+x 1
+y 98
+end
+arch oil_sea
+x 1
+y 99
+end
+arch cave3
+x 1
+y 99
+end
+arch oil_sea
+x 1
+y 100
+end
+arch cave17
+x 1
+y 100
+end
+arch oil_sea
+x 1
+y 101
+end
+arch blocked
+msg
+endmsg
+x 1
+y 101
+end
+arch oil_sea
+x 1
+y 102
+end
+arch blocked
+msg
+endmsg
+x 1
+y 102
+end
+arch oil_sea
+x 1
+y 103
+end
+arch blocked
+msg
+endmsg
+x 1
+y 103
+end
+arch oil_sea
+x 1
+y 104
+end
+arch blocked
+msg
+endmsg
+x 1
+y 104
+end
+arch oil_sea
+x 1
+y 105
+end
+arch blocked
+msg
+endmsg
+x 1
+y 105
+end
+arch oil_sea
+x 1
+y 106
+end
+arch blocked
+msg
+endmsg
+x 1
+y 106
+end
+arch oil_sea
+x 1
+y 107
+end
+arch blocked
+msg
+endmsg
+x 1
+y 107
+end
+arch oil_sea
+x 1
+y 108
+end
+arch blocked
+msg
+endmsg
+x 1
+y 108
+end
+arch oil_sea
+x 1
+y 109
+end
+arch blocked
+msg
+endmsg
+x 1
+y 109
+end
+arch oil_sea
+x 1
+y 110
+end
+arch blocked
+msg
+endmsg
+x 1
+y 110
+end
+arch oil_sea
+x 1
+y 111
+end
+arch blocked
+msg
+endmsg
+x 1
+y 111
+end
+arch oil_sea
+x 1
+y 112
+end
+arch blocked
+msg
+endmsg
+x 1
+y 112
+end
+arch oil_sea
+x 1
+y 113
+end
+arch blocked
+msg
+endmsg
+x 1
+y 113
+end
+arch oil_sea
+x 1
+y 114
+end
+arch blocked
+msg
+endmsg
+x 1
+y 114
+end
+arch oil_sea
+x 1
+y 115
+end
+arch blocked
+msg
+endmsg
+x 1
+y 115
+end
+arch oil_sea
+x 1
+y 116
+end
+arch blocked
+msg
+endmsg
+x 1
+y 116
+end
+arch oil_sea
+x 1
+y 117
+end
+arch blocked
+msg
+endmsg
+x 1
+y 117
+end
+arch marble
 x 2
 end
 arch blocked
@@ -1511,6 +2319,340 @@ x 2
 y 63
 end
 arch marble
+x 2
+y 64
+end
+arch cave13
+x 2
+y 64
+end
+arch marble
+x 2
+y 65
+end
+arch cave21
+x 2
+y 65
+end
+arch marble
+x 2
+y 66
+end
+arch cave21
+x 2
+y 66
+end
+arch marble
+x 2
+y 67
+end
+arch marble
+x 2
+y 68
+end
+arch djinn_magenta
+x 2
+y 68
+end
+arch marble
+x 2
+y 69
+end
+arch slevel_3_1
+x 2
+y 69
+end
+arch marble
+x 2
+y 70
+end
+arch slevel_3_1
+x 2
+y 70
+end
+arch oil_sea
+x 2
+y 71
+end
+arch oil_sea
+x 2
+y 72
+end
+arch oil_sea
+x 2
+y 73
+end
+arch oil_sea
+x 2
+y 74
+end
+arch oil_sea
+x 2
+y 75
+end
+arch oil_sea
+x 2
+y 76
+end
+arch oil_sea
+x 2
+y 77
+end
+arch oil_sea
+x 2
+y 78
+end
+arch oil_sea
+x 2
+y 79
+end
+arch oil_sea
+x 2
+y 80
+end
+arch oil_sea
+x 2
+y 81
+end
+arch oil_sea
+x 2
+y 82
+end
+arch oil_sea
+x 2
+y 83
+end
+arch oil_sea
+x 2
+y 84
+end
+arch oil_sea
+x 2
+y 85
+end
+arch oil_sea
+x 2
+y 86
+end
+arch oil_sea
+x 2
+y 87
+end
+arch oil_sea
+x 2
+y 88
+end
+arch oil_sea
+x 2
+y 89
+end
+arch oil_sea
+x 2
+y 90
+end
+arch oil_sea
+x 2
+y 91
+end
+arch oil_sea
+x 2
+y 92
+end
+arch oil_sea
+x 2
+y 93
+end
+arch oil_sea
+x 2
+y 94
+end
+arch oil_sea
+x 2
+y 95
+end
+arch oil_sea
+x 2
+y 96
+end
+arch oil_sea
+x 2
+y 97
+end
+arch oil_sea
+x 2
+y 98
+end
+arch oil_sea
+x 2
+y 99
+end
+arch oil_sea
+x 2
+y 100
+end
+arch cave16
+x 2
+y 100
+end
+arch oil_sea
+x 2
+y 101
+end
+arch cave3
+x 2
+y 101
+end
+arch oil_sea
+x 2
+y 102
+end
+arch cave3
+x 2
+y 102
+end
+arch oil_sea
+x 2
+y 103
+end
+arch cave3
+x 2
+y 103
+end
+arch oil_sea
+x 2
+y 104
+end
+arch cave3
+x 2
+y 104
+end
+arch oil_sea
+x 2
+y 105
+end
+arch cave3
+x 2
+y 105
+end
+arch oil_sea
+x 2
+y 106
+end
+arch cave17
+x 2
+y 106
+end
+arch oil_sea
+x 2
+y 107
+end
+arch blocked
+msg
+endmsg
+x 2
+y 107
+end
+arch oil_sea
+x 2
+y 108
+end
+arch blocked
+msg
+endmsg
+x 2
+y 108
+end
+arch oil_sea
+x 2
+y 109
+end
+arch blocked
+msg
+endmsg
+x 2
+y 109
+end
+arch oil_sea
+x 2
+y 110
+end
+arch blocked
+msg
+endmsg
+x 2
+y 110
+end
+arch oil_sea
+x 2
+y 111
+end
+arch blocked
+msg
+endmsg
+x 2
+y 111
+end
+arch oil_sea
+x 2
+y 112
+end
+arch blocked
+msg
+endmsg
+x 2
+y 112
+end
+arch oil_sea
+x 2
+y 113
+end
+arch blocked
+msg
+endmsg
+x 2
+y 113
+end
+arch oil_sea
+x 2
+y 114
+end
+arch blocked
+msg
+endmsg
+x 2
+y 114
+end
+arch oil_sea
+x 2
+y 115
+end
+arch blocked
+msg
+endmsg
+x 2
+y 115
+end
+arch oil_sea
+x 2
+y 116
+end
+arch blocked
+msg
+endmsg
+x 2
+y 116
+end
+arch oil_sea
+x 2
+y 117
+end
+arch blocked
+msg
+endmsg
+x 2
+y 117
+end
+arch marble
 x 3
 end
 arch blocked
@@ -1953,6 +3095,306 @@ x 3
 y 63
 end
 arch marble
+x 3
+y 64
+end
+arch cave21
+x 3
+y 64
+end
+arch marble
+x 3
+y 65
+end
+arch cave21
+x 3
+y 65
+end
+arch marble
+x 3
+y 66
+end
+arch cave21
+x 3
+y 66
+end
+arch marble
+x 3
+y 67
+end
+arch marble
+x 3
+y 68
+end
+arch marble
+x 3
+y 69
+end
+arch slevel_3_1
+x 3
+y 69
+end
+arch marble
+x 3
+y 70
+end
+arch slevel_3_1
+x 3
+y 70
+end
+arch oil_sea
+x 3
+y 71
+end
+arch oil_sea
+x 3
+y 72
+end
+arch oil_sea
+x 3
+y 73
+end
+arch oil_sea
+x 3
+y 74
+end
+arch oil_sea
+x 3
+y 75
+end
+arch oil_sea
+x 3
+y 76
+end
+arch oil_sea
+x 3
+y 77
+end
+arch oil_sea
+x 3
+y 78
+end
+arch oil_sea
+x 3
+y 79
+end
+arch oil_sea
+x 3
+y 80
+end
+arch oil_sea
+x 3
+y 81
+end
+arch oil_sea
+x 3
+y 82
+end
+arch oil_sea
+x 3
+y 83
+end
+arch oil_sea
+x 3
+y 84
+end
+arch oil_sea
+x 3
+y 85
+end
+arch oil_sea
+x 3
+y 86
+end
+arch oil_sea
+x 3
+y 87
+end
+arch oil_sea
+x 3
+y 88
+end
+arch oil_sea
+x 3
+y 89
+end
+arch oil_sea
+x 3
+y 90
+end
+arch oil_sea
+x 3
+y 91
+end
+arch oil_sea
+x 3
+y 92
+end
+arch oil_sea
+x 3
+y 93
+end
+arch oil_sea
+x 3
+y 94
+end
+arch oil_sea
+x 3
+y 95
+end
+arch oil_sea
+x 3
+y 96
+end
+arch oil_sea
+x 3
+y 97
+end
+arch oil_sea
+x 3
+y 98
+end
+arch oil_sea
+x 3
+y 99
+end
+arch oil_sea
+x 3
+y 100
+end
+arch oil_sea
+x 3
+y 101
+end
+arch oil_sea
+x 3
+y 102
+end
+arch oil_sea
+x 3
+y 103
+end
+arch oil_sea
+x 3
+y 104
+end
+arch oil_sea
+x 3
+y 105
+end
+arch oil_sea
+x 3
+y 106
+end
+arch cave16
+x 3
+y 106
+end
+arch oil_sea
+x 3
+y 107
+end
+arch cave3
+x 3
+y 107
+end
+arch oil_sea
+x 3
+y 108
+end
+arch cave3
+x 3
+y 108
+end
+arch oil_sea
+x 3
+y 109
+end
+arch cave17
+x 3
+y 109
+end
+arch oil_sea
+x 3
+y 110
+end
+arch blocked
+msg
+endmsg
+x 3
+y 110
+end
+arch oil_sea
+x 3
+y 111
+end
+arch blocked
+msg
+endmsg
+x 3
+y 111
+end
+arch oil_sea
+x 3
+y 112
+end
+arch blocked
+msg
+endmsg
+x 3
+y 112
+end
+arch oil_sea
+x 3
+y 113
+end
+arch blocked
+msg
+endmsg
+x 3
+y 113
+end
+arch oil_sea
+x 3
+y 114
+end
+arch blocked
+msg
+endmsg
+x 3
+y 114
+end
+arch oil_sea
+x 3
+y 115
+end
+arch blocked
+msg
+endmsg
+x 3
+y 115
+end
+arch oil_sea
+x 3
+y 116
+end
+arch blocked
+msg
+endmsg
+x 3
+y 116
+end
+arch oil_sea
+x 3
+y 117
+end
+arch blocked
+msg
+endmsg
+x 3
+y 117
+end
+arch marble
 x 4
 end
 arch blocked
@@ -2399,6 +3841,302 @@ x 4
 y 63
 end
 arch marble
+x 4
+y 64
+end
+arch cave21
+x 4
+y 64
+end
+arch marble
+x 4
+y 65
+end
+arch cave21
+x 4
+y 65
+end
+arch marble
+x 4
+y 66
+end
+arch cave21
+x 4
+y 66
+end
+arch marble
+x 4
+y 67
+end
+arch djinn_magenta
+x 4
+y 67
+end
+arch marble
+x 4
+y 68
+end
+arch marble
+x 4
+y 69
+end
+arch slevel_3_1
+x 4
+y 69
+end
+arch djinn_magenta
+x 4
+y 69
+end
+arch marble
+x 4
+y 70
+end
+arch slevel_3_1
+x 4
+y 70
+end
+arch oil_sea
+x 4
+y 71
+end
+arch oil_sea
+x 4
+y 72
+end
+arch oil_sea
+x 4
+y 73
+end
+arch oil_sea
+x 4
+y 74
+end
+arch oil_sea
+x 4
+y 75
+end
+arch oil_sea
+x 4
+y 76
+end
+arch oil_sea
+x 4
+y 77
+end
+arch oil_sea
+x 4
+y 78
+end
+arch oil_sea
+x 4
+y 79
+end
+arch oil_sea
+x 4
+y 80
+end
+arch oil_sea
+x 4
+y 81
+end
+arch oil_sea
+x 4
+y 82
+end
+arch oil_sea_ultra_viscous
+x 4
+y 83
+end
+arch djinn_magenta
+x 4
+y 83
+end
+arch oil_sea_ultra_viscous
+x 4
+y 84
+end
+arch oil_sea_ultra_viscous
+x 4
+y 85
+end
+arch oil_sea_ultra_viscous
+x 4
+y 86
+end
+arch oil_sea_ultra_viscous
+x 4
+y 87
+end
+arch oil_sea_ultra_viscous
+x 4
+y 88
+end
+arch djinn_magenta
+x 4
+y 88
+end
+arch oil_sea_ultra_viscous
+x 4
+y 89
+end
+arch oil_sea_ultra_viscous
+x 4
+y 90
+end
+arch oil_sea_ultra_viscous
+x 4
+y 91
+end
+arch oil_sea_ultra_viscous
+x 4
+y 92
+end
+arch oil_sea
+x 4
+y 93
+end
+arch oil_sea
+x 4
+y 94
+end
+arch oil_sea
+x 4
+y 95
+end
+arch oil_sea
+x 4
+y 96
+end
+arch oil_sea
+x 4
+y 97
+end
+arch oil_sea
+x 4
+y 98
+end
+arch oil_sea
+x 4
+y 99
+end
+arch oil_sea
+x 4
+y 100
+end
+arch oil_sea
+x 4
+y 101
+end
+arch oil_sea
+x 4
+y 102
+end
+arch oil_sea
+x 4
+y 103
+end
+arch oil_sea
+x 4
+y 104
+end
+arch oil_sea
+x 4
+y 105
+end
+arch oil_sea
+x 4
+y 106
+end
+arch oil_sea
+x 4
+y 107
+end
+arch oil_sea
+x 4
+y 108
+end
+arch oil_sea
+x 4
+y 109
+end
+arch cave16
+x 4
+y 109
+end
+arch oil_sea
+x 4
+y 110
+end
+arch cave3
+x 4
+y 110
+end
+arch oil_sea
+x 4
+y 111
+end
+arch cave3
+x 4
+y 111
+end
+arch oil_sea
+x 4
+y 112
+end
+arch cave3
+x 4
+y 112
+end
+arch oil_sea
+x 4
+y 113
+end
+arch cave17
+x 4
+y 113
+end
+arch oil_sea
+x 4
+y 114
+end
+arch blocked
+msg
+endmsg
+x 4
+y 114
+end
+arch oil_sea
+x 4
+y 115
+end
+arch blocked
+msg
+endmsg
+x 4
+y 115
+end
+arch oil_sea
+x 4
+y 116
+end
+arch blocked
+msg
+endmsg
+x 4
+y 116
+end
+arch oil_sea
+x 4
+y 117
+end
+arch blocked
+msg
+endmsg
+x 4
+y 117
+end
+arch marble
 x 5
 end
 arch blocked
@@ -2803,6 +4541,270 @@ end
 arch cave21
 x 5
 y 63
+end
+arch marble
+x 5
+y 64
+end
+arch cave21
+x 5
+y 64
+end
+arch marble
+x 5
+y 65
+end
+arch cave21
+x 5
+y 65
+end
+arch marble
+x 5
+y 66
+end
+arch marble
+x 5
+y 67
+end
+arch marble
+x 5
+y 68
+end
+arch marble
+x 5
+y 69
+end
+arch slevel_3_1
+x 5
+y 69
+end
+arch marble
+x 5
+y 70
+end
+arch slevel_3_1
+x 5
+y 70
+end
+arch oil_sea
+x 5
+y 71
+end
+arch oil_sea
+x 5
+y 72
+end
+arch oil_sea
+x 5
+y 73
+end
+arch oil_sea
+x 5
+y 74
+end
+arch oil_sea_ultra_viscous
+x 5
+y 75
+end
+arch oil_sea_ultra_viscous
+x 5
+y 76
+end
+arch oil_sea_ultra_viscous
+x 5
+y 77
+end
+arch oil_sea_ultra_viscous
+x 5
+y 78
+end
+arch djinn_magenta
+x 5
+y 78
+end
+arch oil_sea_ultra_viscous
+x 5
+y 79
+end
+arch oil_sea_ultra_viscous
+x 5
+y 80
+end
+arch oil_sea_ultra_viscous
+x 5
+y 81
+end
+arch oil_sea_ultra_viscous
+x 5
+y 82
+end
+arch oil_sea_ultra_viscous
+x 5
+y 83
+end
+arch oil_sea
+x 5
+y 84
+end
+arch oil_sea
+x 5
+y 85
+end
+arch oil_sea
+x 5
+y 86
+end
+arch oil_sea
+x 5
+y 87
+end
+arch oil_sea
+x 5
+y 88
+end
+arch oil_sea
+x 5
+y 89
+end
+arch oil_sea
+x 5
+y 90
+end
+arch oil_sea
+x 5
+y 91
+end
+arch oil_sea_ultra_viscous
+x 5
+y 92
+end
+arch oil_sea_ultra_viscous
+x 5
+y 93
+end
+arch oil_sea_ultra_viscous
+x 5
+y 94
+end
+arch djinn_magenta
+x 5
+y 94
+end
+arch oil_sea_ultra_viscous
+x 5
+y 95
+end
+arch oil_sea_ultra_viscous
+x 5
+y 96
+end
+arch oil_sea_ultra_viscous
+x 5
+y 97
+end
+arch oil_sea_ultra_viscous
+x 5
+y 98
+end
+arch oil_sea_ultra_viscous
+x 5
+y 99
+end
+arch oil_sea_ultra_viscous
+x 5
+y 100
+end
+arch oil_sea_ultra_viscous
+x 5
+y 101
+end
+arch djinn_magenta
+x 5
+y 101
+end
+arch oil_sea_ultra_viscous
+x 5
+y 102
+end
+arch oil_sea
+x 5
+y 103
+end
+arch oil_sea
+x 5
+y 104
+end
+arch oil_sea
+x 5
+y 105
+end
+arch oil_sea
+x 5
+y 106
+end
+arch oil_sea
+x 5
+y 107
+end
+arch oil_sea
+x 5
+y 108
+end
+arch oil_sea
+x 5
+y 109
+end
+arch oil_sea
+x 5
+y 110
+end
+arch oil_sea
+x 5
+y 111
+end
+arch oil_sea
+x 5
+y 112
+end
+arch oil_sea
+x 5
+y 113
+end
+arch cave16
+x 5
+y 113
+end
+arch oil_sea
+x 5
+y 114
+end
+arch cave3
+x 5
+y 114
+end
+arch oil_sea
+x 5
+y 115
+end
+arch cave3
+x 5
+y 115
+end
+arch oil_sea
+x 5
+y 116
+end
+arch cave3
+x 5
+y 116
+end
+arch oil_sea
+x 5
+y 117
+end
+arch cave3
+x 5
+y 117
 end
 arch marble
 x 6
@@ -3211,6 +5213,258 @@ end
 arch cave21
 x 6
 y 63
+end
+arch marble
+x 6
+y 64
+end
+arch cave21
+x 6
+y 64
+end
+arch marble
+x 6
+y 65
+end
+arch cave21
+x 6
+y 65
+end
+arch marble
+x 6
+y 66
+end
+arch marble
+x 6
+y 67
+end
+arch marble
+x 6
+y 68
+end
+arch djinn_magenta
+x 6
+y 68
+end
+arch marble
+x 6
+y 69
+end
+arch slevel_3_1
+x 6
+y 69
+end
+arch marble
+x 6
+y 70
+end
+arch slevel_3_1
+x 6
+y 70
+end
+arch oil_sea
+x 6
+y 71
+end
+arch oil_sea
+x 6
+y 72
+end
+arch oil_sea
+x 6
+y 73
+end
+arch oil_sea
+x 6
+y 74
+end
+arch oil_sea_ultra_viscous
+x 6
+y 75
+end
+arch oil_sea_ultra_viscous
+x 6
+y 76
+end
+arch oil_sea
+x 6
+y 77
+end
+arch oil_sea
+x 6
+y 78
+end
+arch oil_sea
+x 6
+y 79
+end
+arch oil_sea
+x 6
+y 80
+end
+arch oil_sea
+x 6
+y 81
+end
+arch oil_sea
+x 6
+y 82
+end
+arch oil_sea_ultra_viscous
+x 6
+y 83
+end
+arch oil_sea
+x 6
+y 84
+end
+arch oil_sea
+x 6
+y 85
+end
+arch oil_sea
+x 6
+y 86
+end
+arch oil_sea
+x 6
+y 87
+end
+arch oil_sea
+x 6
+y 88
+end
+arch oil_sea
+x 6
+y 89
+end
+arch oil_sea
+x 6
+y 90
+end
+arch oil_sea
+x 6
+y 91
+end
+arch oil_sea_ultra_viscous
+x 6
+y 92
+end
+arch oil_sea
+x 6
+y 93
+end
+arch oil_sea
+x 6
+y 94
+end
+arch oil_sea
+x 6
+y 95
+end
+arch oil_sea
+x 6
+y 96
+end
+arch oil_sea
+x 6
+y 97
+end
+arch oil_sea
+x 6
+y 98
+end
+arch oil_sea
+x 6
+y 99
+end
+arch oil_sea
+x 6
+y 100
+end
+arch oil_sea
+x 6
+y 101
+end
+arch oil_sea_ultra_viscous
+x 6
+y 102
+end
+arch oil_sea
+x 6
+y 103
+end
+arch oil_sea
+x 6
+y 104
+end
+arch oil_sea
+x 6
+y 105
+end
+arch oil_sea
+x 6
+y 106
+end
+arch oil_sea
+x 6
+y 107
+end
+arch oil_sea
+x 6
+y 108
+end
+arch oil_sea
+x 6
+y 109
+end
+arch oil_sea
+x 6
+y 110
+end
+arch oil_sea
+x 6
+y 111
+end
+arch oil_sea
+x 6
+y 112
+end
+arch oil_sea
+x 6
+y 113
+end
+arch oil_sea
+x 6
+y 114
+end
+arch cave15
+x 6
+y 114
+end
+arch oil_sea
+x 6
+y 115
+end
+arch cave1
+x 6
+y 115
+end
+arch oil_sea
+x 6
+y 116
+end
+arch cave1
+x 6
+y 116
+end
+arch oil_sea
+x 6
+y 117
+end
+arch cave1
+x 6
+y 117
 end
 arch marble
 x 7
@@ -3619,6 +5873,288 @@ end
 arch cave21
 x 7
 y 63
+end
+arch marble
+x 7
+y 64
+end
+arch cave21
+x 7
+y 64
+end
+arch marble
+x 7
+y 65
+end
+arch cave21
+x 7
+y 65
+end
+arch marble
+x 7
+y 66
+end
+arch djinn_magenta
+x 7
+y 66
+end
+arch marble
+x 7
+y 67
+end
+arch marble
+x 7
+y 68
+end
+arch marble
+x 7
+y 69
+end
+arch slevel_2_2_4
+x 7
+y 69
+end
+arch djinn_magenta
+x 7
+y 69
+end
+arch marble
+x 7
+y 70
+end
+arch slevel_3_1
+x 7
+y 70
+end
+arch oil_sea
+x 7
+y 71
+end
+arch oil_sea
+x 7
+y 72
+end
+arch oil_sea
+x 7
+y 73
+end
+arch oil_sea
+x 7
+y 74
+end
+arch oil_sea_ultra_viscous
+x 7
+y 75
+end
+arch djinn_magenta
+x 7
+y 75
+end
+arch oil_sea_ultra_viscous
+x 7
+y 76
+end
+arch oil_sea
+x 7
+y 77
+end
+arch oil_sea
+x 7
+y 78
+end
+arch oil_sea
+x 7
+y 79
+end
+arch oil_sea
+x 7
+y 80
+end
+arch oil_sea
+x 7
+y 81
+end
+arch oil_sea
+x 7
+y 82
+end
+arch oil_sea_ultra_viscous
+x 7
+y 83
+end
+arch oil_sea
+x 7
+y 84
+end
+arch oil_sea
+x 7
+y 85
+end
+arch oil_sea
+x 7
+y 86
+end
+arch oil_sea
+x 7
+y 87
+end
+arch oil_sea
+x 7
+y 88
+end
+arch oil_sea
+x 7
+y 89
+end
+arch oil_sea
+x 7
+y 90
+end
+arch oil_sea
+x 7
+y 91
+end
+arch oil_sea_ultra_viscous
+x 7
+y 92
+end
+arch oil_sea
+x 7
+y 93
+end
+arch oil_sea
+x 7
+y 94
+end
+arch oil_sea
+x 7
+y 95
+end
+arch oil_sea
+x 7
+y 96
+end
+arch oil_sea
+x 7
+y 97
+end
+arch oil_sea
+x 7
+y 98
+end
+arch oil_sea
+x 7
+y 99
+end
+arch oil_sea
+x 7
+y 100
+end
+arch oil_sea
+x 7
+y 101
+end
+arch oil_sea_ultra_viscous
+x 7
+y 102
+end
+arch oil_sea
+x 7
+y 103
+end
+arch oil_sea
+x 7
+y 104
+end
+arch oil_sea
+x 7
+y 105
+end
+arch oil_sea
+x 7
+y 106
+end
+arch oil_sea
+x 7
+y 107
+end
+arch oil_sea
+x 7
+y 108
+end
+arch oil_sea
+x 7
+y 109
+end
+arch oil_sea
+x 7
+y 110
+end
+arch cave15
+x 7
+y 110
+end
+arch oil_sea
+x 7
+y 111
+end
+arch cave1
+x 7
+y 111
+end
+arch oil_sea
+x 7
+y 112
+end
+arch cave1
+x 7
+y 112
+end
+arch oil_sea
+x 7
+y 113
+end
+arch cave1
+x 7
+y 113
+end
+arch oil_sea
+x 7
+y 114
+end
+arch cave20
+x 7
+y 114
+end
+arch oil_sea
+x 7
+y 115
+end
+arch blocked
+msg
+endmsg
+x 7
+y 115
+end
+arch oil_sea
+x 7
+y 116
+end
+arch blocked
+msg
+endmsg
+x 7
+y 116
+end
+arch oil_sea
+x 7
+y 117
+end
+arch blocked
+msg
+endmsg
+x 7
+y 117
 end
 arch marble
 x 8
@@ -4045,6 +6581,308 @@ x 8
 y 63
 end
 arch marble
+x 8
+y 64
+end
+arch cave21
+x 8
+y 64
+end
+arch marble
+x 8
+y 65
+end
+arch djinn_magenta
+x 8
+y 65
+end
+arch marble
+x 8
+y 66
+end
+arch marble
+x 8
+y 67
+end
+arch djinn_magenta
+x 8
+y 67
+end
+arch marble
+x 8
+y 68
+end
+arch slevel_3_1
+x 8
+y 68
+end
+arch marble
+x 8
+y 69
+end
+arch marble
+x 8
+y 70
+end
+arch slevel_2_2_4
+x 8
+y 70
+end
+arch oil_sea
+x 8
+y 71
+end
+arch oil_sea
+x 8
+y 72
+end
+arch oil_sea
+x 8
+y 73
+end
+arch oil_sea
+x 8
+y 74
+end
+arch oil_sea_ultra_viscous
+x 8
+y 75
+end
+arch oil_sea_ultra_viscous
+x 8
+y 76
+end
+arch oil_sea
+x 8
+y 77
+end
+arch oil_sea
+x 8
+y 78
+end
+arch oil_sea_ultra_viscous
+x 8
+y 79
+end
+arch oil_sea_ultra_viscous
+x 8
+y 80
+end
+arch oil_sea_ultra_viscous
+x 8
+y 81
+end
+arch oil_sea_ultra_viscous
+x 8
+y 82
+end
+arch djinn_magenta
+x 8
+y 82
+end
+arch oil_sea_ultra_viscous
+x 8
+y 83
+end
+arch oil_sea_ultra_viscous
+x 8
+y 84
+end
+arch oil_sea_ultra_viscous
+x 8
+y 85
+end
+arch oil_sea
+x 8
+y 86
+end
+arch oil_sea
+x 8
+y 87
+end
+arch oil_sea
+x 8
+y 88
+end
+arch oil_sea
+x 8
+y 89
+end
+arch oil_sea_ultra_viscous
+x 8
+y 90
+end
+arch djinn_magenta
+x 8
+y 90
+end
+arch oil_sea_ultra_viscous
+x 8
+y 91
+end
+arch oil_sea_ultra_viscous
+x 8
+y 92
+end
+arch oil_sea_ultra_viscous
+x 8
+y 93
+end
+arch oil_sea_ultra_viscous
+x 8
+y 94
+end
+arch oil_sea_ultra_viscous
+x 8
+y 95
+end
+arch djinn_magenta
+x 8
+y 95
+end
+arch oil_sea_ultra_viscous
+x 8
+y 96
+end
+arch oil_sea
+x 8
+y 97
+end
+arch oil_sea
+x 8
+y 98
+end
+arch oil_sea
+x 8
+y 99
+end
+arch oil_sea
+x 8
+y 100
+end
+arch oil_sea
+x 8
+y 101
+end
+arch oil_sea_ultra_viscous
+x 8
+y 102
+end
+arch oil_sea
+x 8
+y 103
+end
+arch oil_sea
+x 8
+y 104
+end
+arch oil_sea
+x 8
+y 105
+end
+arch oil_sea
+x 8
+y 106
+end
+arch oil_sea
+x 8
+y 107
+end
+arch oil_sea
+x 8
+y 108
+end
+arch cave15
+x 8
+y 108
+end
+arch oil_sea
+x 8
+y 109
+end
+arch cave1
+x 8
+y 109
+end
+arch oil_sea
+x 8
+y 110
+end
+arch cave20
+x 8
+y 110
+end
+arch oil_sea
+x 8
+y 111
+end
+arch blocked
+msg
+endmsg
+x 8
+y 111
+end
+arch oil_sea
+x 8
+y 112
+end
+arch blocked
+msg
+endmsg
+x 8
+y 112
+end
+arch oil_sea
+x 8
+y 113
+end
+arch blocked
+msg
+endmsg
+x 8
+y 113
+end
+arch oil_sea
+x 8
+y 114
+end
+arch blocked
+msg
+endmsg
+x 8
+y 114
+end
+arch oil_sea
+x 8
+y 115
+end
+arch blocked
+msg
+endmsg
+x 8
+y 115
+end
+arch oil_sea
+x 8
+y 116
+end
+arch blocked
+msg
+endmsg
+x 8
+y 116
+end
+arch oil_sea
+x 8
+y 117
+end
+arch blocked
+msg
+endmsg
+x 8
+y 117
+end
+arch marble
 x 9
 end
 arch blocked
@@ -4445,6 +7283,284 @@ end
 arch cave21
 x 9
 y 63
+end
+arch marble
+x 9
+y 64
+end
+arch cave21
+x 9
+y 64
+end
+arch marble
+x 9
+y 65
+end
+arch marble
+x 9
+y 66
+end
+arch marble
+x 9
+y 67
+end
+arch marble
+x 9
+y 68
+end
+arch slevel_3_1
+x 9
+y 68
+end
+arch marble
+x 9
+y 69
+end
+arch slevel_3_1
+x 9
+y 69
+end
+arch oil_sea
+x 9
+y 70
+end
+arch oil_sea
+x 9
+y 71
+end
+arch oil_sea
+x 9
+y 72
+end
+arch oil_sea
+x 9
+y 73
+end
+arch oil_sea
+x 9
+y 74
+end
+arch oil_sea_ultra_viscous
+x 9
+y 75
+end
+arch oil_sea_ultra_viscous
+x 9
+y 76
+end
+arch oil_sea
+x 9
+y 77
+end
+arch oil_sea
+x 9
+y 78
+end
+arch oil_sea_ultra_viscous
+x 9
+y 79
+end
+arch oil_sea
+x 9
+y 80
+end
+arch oil_sea
+x 9
+y 81
+end
+arch oil_sea
+x 9
+y 82
+end
+arch oil_sea
+x 9
+y 83
+end
+arch oil_sea
+x 9
+y 84
+end
+arch oil_sea_ultra_viscous
+x 9
+y 85
+end
+arch oil_sea
+x 9
+y 86
+end
+arch oil_sea
+x 9
+y 87
+end
+arch oil_sea
+x 9
+y 88
+end
+arch oil_sea
+x 9
+y 89
+end
+arch oil_sea_ultra_viscous
+x 9
+y 90
+end
+arch oil_sea
+x 9
+y 91
+end
+arch oil_sea
+x 9
+y 92
+end
+arch oil_sea
+x 9
+y 93
+end
+arch oil_sea
+x 9
+y 94
+end
+arch oil_sea
+x 9
+y 95
+end
+arch oil_sea_ultra_viscous
+x 9
+y 96
+end
+arch oil_sea
+x 9
+y 97
+end
+arch oil_sea
+x 9
+y 98
+end
+arch oil_sea
+x 9
+y 99
+end
+arch oil_sea
+x 9
+y 100
+end
+arch oil_sea
+x 9
+y 101
+end
+arch oil_sea_ultra_viscous
+x 9
+y 102
+end
+arch oil_sea
+x 9
+y 103
+end
+arch oil_sea
+x 9
+y 104
+end
+arch oil_sea
+x 9
+y 105
+end
+arch oil_sea
+x 9
+y 106
+end
+arch oil_sea
+x 9
+y 107
+end
+arch oil_sea
+x 9
+y 108
+end
+arch cave16
+x 9
+y 108
+end
+arch oil_sea
+x 9
+y 109
+end
+arch cave3
+x 9
+y 109
+end
+arch oil_sea
+x 9
+y 110
+end
+arch cave3
+x 9
+y 110
+end
+arch oil_sea
+x 9
+y 111
+end
+arch cave3
+x 9
+y 111
+end
+arch oil_sea
+x 9
+y 112
+end
+arch cave17
+x 9
+y 112
+end
+arch oil_sea
+x 9
+y 113
+end
+arch blocked
+msg
+endmsg
+x 9
+y 113
+end
+arch oil_sea
+x 9
+y 114
+end
+arch blocked
+msg
+endmsg
+x 9
+y 114
+end
+arch oil_sea
+x 9
+y 115
+end
+arch blocked
+msg
+endmsg
+x 9
+y 115
+end
+arch oil_sea
+x 9
+y 116
+end
+arch blocked
+msg
+endmsg
+x 9
+y 116
+end
+arch oil_sea
+x 9
+y 117
+end
+arch blocked
+msg
+endmsg
+x 9
+y 117
 end
 arch marble
 x 10
@@ -4867,6 +7983,312 @@ x 10
 y 63
 end
 arch marble
+x 10
+y 64
+end
+arch cave21
+x 10
+y 64
+end
+arch marble
+x 10
+y 65
+end
+arch djinn_magenta
+x 10
+y 65
+end
+arch marble
+x 10
+y 66
+end
+arch marble
+x 10
+y 67
+end
+arch marble
+x 10
+y 68
+end
+arch slevel_3_1
+x 10
+y 68
+end
+arch djinn_magenta
+x 10
+y 68
+end
+arch marble
+x 10
+y 69
+end
+arch slevel_3_1
+x 10
+y 69
+end
+arch oil_sea
+x 10
+y 70
+end
+arch oil_sea
+x 10
+y 71
+end
+arch oil_sea
+x 10
+y 72
+end
+arch oil_sea
+x 10
+y 73
+end
+arch oil_sea
+x 10
+y 74
+end
+arch oil_sea_ultra_viscous
+x 10
+y 75
+end
+arch oil_sea_ultra_viscous
+x 10
+y 76
+end
+arch oil_sea
+x 10
+y 77
+end
+arch oil_sea
+x 10
+y 78
+end
+arch oil_sea_ultra_viscous
+x 10
+y 79
+end
+arch oil_sea
+x 10
+y 80
+end
+arch oil_sea
+x 10
+y 81
+end
+arch oil_sea
+x 10
+y 82
+end
+arch oil_sea
+x 10
+y 83
+end
+arch slevel_3_4
+x 10
+y 83
+end
+arch oil_sea
+x 10
+y 84
+end
+arch slevel_3_4
+x 10
+y 84
+end
+arch oil_sea_ultra_viscous
+x 10
+y 85
+end
+arch slevel_3_4
+x 10
+y 85
+end
+arch oil_sea_ultra_viscous
+x 10
+y 86
+end
+arch slevel_3_4
+x 10
+y 86
+end
+arch oil_sea_ultra_viscous
+x 10
+y 87
+end
+arch slevel_3_4
+x 10
+y 87
+end
+arch oil_sea_ultra_viscous
+x 10
+y 88
+end
+arch slevel_3_4
+x 10
+y 88
+end
+arch oil_sea_ultra_viscous
+x 10
+y 89
+end
+arch slevel_3_4
+x 10
+y 89
+end
+arch oil_sea_ultra_viscous
+x 10
+y 90
+end
+arch slevel_3_4
+x 10
+y 90
+end
+arch oil_sea
+x 10
+y 91
+end
+arch slevel_3_4
+x 10
+y 91
+end
+arch oil_sea
+x 10
+y 92
+end
+arch slevel_3_4
+x 10
+y 92
+end
+arch oil_sea
+x 10
+y 93
+end
+arch oil_sea
+x 10
+y 94
+end
+arch oil_sea
+x 10
+y 95
+end
+arch oil_sea_ultra_viscous
+x 10
+y 96
+end
+arch oil_sea_ultra_viscous
+x 10
+y 97
+end
+arch oil_sea_ultra_viscous
+x 10
+y 98
+end
+arch djinn_magenta
+x 10
+y 98
+end
+arch oil_sea_ultra_viscous
+x 10
+y 99
+end
+arch oil_sea
+x 10
+y 100
+end
+arch oil_sea
+x 10
+y 101
+end
+arch oil_sea_ultra_viscous
+x 10
+y 102
+end
+arch oil_sea
+x 10
+y 103
+end
+arch oil_sea
+x 10
+y 104
+end
+arch oil_sea
+x 10
+y 105
+end
+arch oil_sea
+x 10
+y 106
+end
+arch oil_sea
+x 10
+y 107
+end
+arch oil_sea
+x 10
+y 108
+end
+arch oil_sea
+x 10
+y 109
+end
+arch oil_sea
+x 10
+y 110
+end
+arch oil_sea
+x 10
+y 111
+end
+arch oil_sea
+x 10
+y 112
+end
+arch cave16
+x 10
+y 112
+end
+arch oil_sea
+x 10
+y 113
+end
+arch cave3
+x 10
+y 113
+end
+arch oil_sea
+x 10
+y 114
+end
+arch cave3
+x 10
+y 114
+end
+arch oil_sea
+x 10
+y 115
+end
+arch cave3
+x 10
+y 115
+end
+arch oil_sea
+x 10
+y 116
+end
+arch cave17
+x 10
+y 116
+end
+arch oil_sea
+x 10
+y 117
+end
+arch blocked
+msg
+endmsg
+x 10
+y 117
+end
+arch marble
 x 11
 end
 arch blocked
@@ -5295,6 +8717,408 @@ x 11
 y 63
 end
 arch marble
+x 11
+y 64
+end
+arch cave21
+x 11
+y 64
+end
+arch marble
+x 11
+y 65
+end
+arch marble
+x 11
+y 66
+end
+arch marble
+x 11
+y 67
+end
+arch djinn_magenta
+x 11
+y 67
+end
+arch marble
+x 11
+y 68
+end
+arch slevel_3_1
+x 11
+y 68
+end
+arch marble
+x 11
+y 69
+end
+arch slevel_3_1
+x 11
+y 69
+end
+arch oil_sea
+x 11
+y 70
+end
+arch oil_sea
+x 11
+y 71
+end
+arch oil_sea
+x 11
+y 72
+end
+arch oil_sea_ultra_viscous
+x 11
+y 73
+end
+arch oil_sea_ultra_viscous
+x 11
+y 74
+end
+arch oil_sea_ultra_viscous
+x 11
+y 75
+end
+arch oil_sea_ultra_viscous
+x 11
+y 76
+end
+arch oil_sea_ultra_viscous
+x 11
+y 77
+end
+arch oil_sea_ultra_viscous
+x 11
+y 78
+end
+arch djinn_magenta
+x 11
+y 78
+end
+arch oil_sea_ultra_viscous
+x 11
+y 79
+end
+arch oil_sea
+x 11
+y 80
+end
+arch oil_sea
+x 11
+y 81
+end
+arch oil_sea
+x 11
+y 82
+end
+arch slevel_3_1
+x 11
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 83
+x 11
+y 83
+end
+arch dungeon_magic
+x 11
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 83
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 84
+x 11
+y 84
+end
+arch dungeon_magic
+x 11
+y 84
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 84
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 85
+x 11
+y 85
+end
+arch dungeon_magic
+x 11
+y 85
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 85
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 86
+x 11
+y 86
+end
+arch dungeon_magic
+x 11
+y 86
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 86
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 87
+x 11
+y 87
+end
+arch dungeon_magic
+x 11
+y 87
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 87
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 88
+x 11
+y 88
+end
+arch dungeon_magic
+x 11
+y 88
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 88
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 89
+x 11
+y 89
+end
+arch dungeon_magic
+x 11
+y 89
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 89
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 90
+x 11
+y 90
+end
+arch dungeon_magic
+x 11
+y 90
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 90
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 91
+x 11
+y 91
+end
+arch dungeon_magic
+x 11
+y 91
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 11
+sp 92
+x 11
+y 92
+end
+arch dungeon_magic
+x 11
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 11
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea
+x 11
+y 93
+end
+arch slevel_3_3
+x 11
+y 93
+end
+arch oil_sea
+x 11
+y 94
+end
+arch oil_sea
+x 11
+y 95
+end
+arch oil_sea_ultra_viscous
+x 11
+y 96
+end
+arch oil_sea
+x 11
+y 97
+end
+arch oil_sea
+x 11
+y 98
+end
+arch oil_sea_ultra_viscous
+x 11
+y 99
+end
+arch oil_sea
+x 11
+y 100
+end
+arch oil_sea
+x 11
+y 101
+end
+arch oil_sea_ultra_viscous
+x 11
+y 102
+end
+arch oil_sea
+x 11
+y 103
+end
+arch oil_sea
+x 11
+y 104
+end
+arch oil_sea
+x 11
+y 105
+end
+arch oil_sea
+x 11
+y 106
+end
+arch oil_sea
+x 11
+y 107
+end
+arch oil_sea
+x 11
+y 108
+end
+arch oil_sea
+x 11
+y 109
+end
+arch oil_sea
+x 11
+y 110
+end
+arch oil_sea
+x 11
+y 111
+end
+arch oil_sea
+x 11
+y 112
+end
+arch oil_sea
+x 11
+y 113
+end
+arch oil_sea
+x 11
+y 114
+end
+arch oil_sea
+x 11
+y 115
+end
+arch oil_sea
+x 11
+y 116
+end
+arch cave16
+x 11
+y 116
+end
+arch oil_sea
+x 11
+y 117
+end
+arch cave3
+x 11
+y 117
+end
+arch marble
 x 12
 end
 arch blocked
@@ -5713,6 +9537,336 @@ end
 arch cave21
 x 12
 y 63
+end
+arch marble
+x 12
+y 64
+end
+arch cave21
+x 12
+y 64
+end
+arch marble
+x 12
+y 65
+end
+arch djinn_magenta
+x 12
+y 65
+end
+arch marble
+x 12
+y 66
+end
+arch marble
+x 12
+y 67
+end
+arch marble
+x 12
+y 68
+end
+arch slevel_3_1
+x 12
+y 68
+end
+arch djinn_magenta
+x 12
+y 68
+end
+arch marble
+x 12
+y 69
+end
+arch slevel_3_1
+x 12
+y 69
+end
+arch oil_sea
+x 12
+y 70
+end
+arch oil_sea
+x 12
+y 71
+end
+arch oil_sea
+x 12
+y 72
+end
+arch oil_sea_ultra_viscous
+x 12
+y 73
+end
+arch oil_sea
+x 12
+y 74
+end
+arch oil_sea
+x 12
+y 75
+end
+arch oil_sea
+x 12
+y 76
+end
+arch oil_sea
+x 12
+y 77
+end
+arch oil_sea
+x 12
+y 78
+end
+arch oil_sea_ultra_viscous
+x 12
+y 79
+end
+arch oil_sea
+x 12
+y 80
+end
+arch oil_sea
+x 12
+y 81
+end
+arch oil_sea
+x 12
+y 82
+end
+arch slevel_3_1
+x 12
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 12
+sp 83
+x 12
+y 83
+end
+arch dungeon_magic
+x 12
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 87
+no_pass 0
+blocksview 0
+end
+arch fog
+x 12
+y 87
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 12
+sp 92
+x 12
+y 92
+end
+arch dungeon_magic
+x 12
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea
+x 12
+y 93
+end
+arch slevel_3_3
+x 12
+y 93
+end
+arch oil_sea
+x 12
+y 94
+end
+arch oil_sea
+x 12
+y 95
+end
+arch oil_sea_ultra_viscous
+x 12
+y 96
+end
+arch oil_sea
+x 12
+y 97
+end
+arch oil_sea
+x 12
+y 98
+end
+arch oil_sea_ultra_viscous
+x 12
+y 99
+end
+arch oil_sea_ultra_viscous
+x 12
+y 100
+end
+arch oil_sea_ultra_viscous
+x 12
+y 101
+end
+arch djinn_magenta
+x 12
+y 101
+end
+arch oil_sea_ultra_viscous
+x 12
+y 102
+end
+arch oil_sea
+x 12
+y 103
+end
+arch oil_sea
+x 12
+y 104
+end
+arch oil_sea
+x 12
+y 105
+end
+arch oil_sea
+x 12
+y 106
+end
+arch oil_sea
+x 12
+y 107
+end
+arch oil_sea
+x 12
+y 108
+end
+arch oil_sea
+x 12
+y 109
+end
+arch oil_sea
+x 12
+y 110
+end
+arch oil_sea
+x 12
+y 111
+end
+arch oil_sea
+x 12
+y 112
+end
+arch oil_sea
+x 12
+y 113
+end
+arch oil_sea
+x 12
+y 114
+end
+arch cave15
+x 12
+y 114
+end
+arch oil_sea
+x 12
+y 115
+end
+arch cave1
+x 12
+y 115
+end
+arch oil_sea
+x 12
+y 116
+end
+arch cave1
+x 12
+y 116
+end
+arch oil_sea
+x 12
+y 117
+end
+arch cave1
+x 12
+y 117
 end
 arch marble
 x 13
@@ -6159,6 +10313,350 @@ x 13
 y 63
 end
 arch marble
+x 13
+y 64
+end
+arch cave21
+x 13
+y 64
+end
+arch marble
+x 13
+y 65
+end
+arch marble
+x 13
+y 66
+end
+arch marble
+x 13
+y 67
+end
+arch marble
+x 13
+y 68
+end
+arch slevel_3_1
+x 13
+y 68
+end
+arch marble
+x 13
+y 69
+end
+arch slevel_3_1
+x 13
+y 69
+end
+arch oil_sea
+x 13
+y 70
+end
+arch oil_sea
+x 13
+y 71
+end
+arch oil_sea
+x 13
+y 72
+end
+arch oil_sea_ultra_viscous
+x 13
+y 73
+end
+arch oil_sea
+x 13
+y 74
+end
+arch oil_sea
+x 13
+y 75
+end
+arch oil_sea
+x 13
+y 76
+end
+arch oil_sea
+x 13
+y 77
+end
+arch oil_sea
+x 13
+y 78
+end
+arch oil_sea_ultra_viscous
+x 13
+y 79
+end
+arch oil_sea_ultra_viscous
+x 13
+y 80
+end
+arch oil_sea_ultra_viscous
+x 13
+y 81
+end
+arch oil_sea_ultra_viscous
+x 13
+y 82
+end
+arch slevel_3_1
+x 13
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 13
+sp 83
+x 13
+y 83
+end
+arch dungeon_magic
+x 13
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 85
+no_pass 0
+blocksview 0
+end
+arch fog
+x 13
+y 85
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 87
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 90
+no_pass 0
+blocksview 0
+end
+arch fog
+x 13
+y 90
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 13
+sp 92
+x 13
+y 92
+end
+arch dungeon_magic
+x 13
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 13
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea_ultra_viscous
+x 13
+y 93
+end
+arch slevel_3_3
+x 13
+y 93
+end
+arch oil_sea_ultra_viscous
+x 13
+y 94
+end
+arch oil_sea_ultra_viscous
+x 13
+y 95
+end
+arch oil_sea_ultra_viscous
+x 13
+y 96
+end
+arch oil_sea
+x 13
+y 97
+end
+arch oil_sea
+x 13
+y 98
+end
+arch oil_sea_ultra_viscous
+x 13
+y 99
+end
+arch oil_sea
+x 13
+y 100
+end
+arch oil_sea
+x 13
+y 101
+end
+arch oil_sea
+x 13
+y 102
+end
+arch oil_sea
+x 13
+y 103
+end
+arch oil_sea
+x 13
+y 104
+end
+arch oil_sea
+x 13
+y 105
+end
+arch oil_sea
+x 13
+y 106
+end
+arch oil_sea
+x 13
+y 107
+end
+arch oil_sea
+x 13
+y 108
+end
+arch oil_sea
+x 13
+y 109
+end
+arch oil_sea
+x 13
+y 110
+end
+arch cave15
+x 13
+y 110
+end
+arch oil_sea
+x 13
+y 111
+end
+arch cave1
+x 13
+y 111
+end
+arch oil_sea
+x 13
+y 112
+end
+arch cave1
+x 13
+y 112
+end
+arch oil_sea
+x 13
+y 113
+end
+arch cave1
+x 13
+y 113
+end
+arch oil_sea
+x 13
+y 114
+end
+arch cave20
+x 13
+y 114
+end
+arch oil_sea
+x 13
+y 115
+end
+arch blocked
+msg
+endmsg
+x 13
+y 115
+end
+arch oil_sea
+x 13
+y 116
+end
+arch blocked
+msg
+endmsg
+x 13
+y 116
+end
+arch oil_sea
+x 13
+y 117
+end
+arch blocked
+msg
+endmsg
+x 13
+y 117
+end
+arch marble
 x 14
 end
 arch blocked
@@ -6605,6 +11103,358 @@ end
 arch cave21
 x 14
 y 63
+end
+arch marble
+x 14
+y 64
+end
+arch cave21
+x 14
+y 64
+end
+arch marble
+x 14
+y 65
+end
+arch cave21
+x 14
+y 65
+end
+arch marble
+x 14
+y 66
+end
+arch marble
+x 14
+y 67
+end
+arch djinn_magenta
+x 14
+y 67
+end
+arch marble
+x 14
+y 68
+end
+arch slevel_3_1
+x 14
+y 68
+end
+arch marble
+x 14
+y 69
+end
+arch slevel_3_1
+x 14
+y 69
+end
+arch oil_sea_ultra_viscous
+x 14
+y 70
+end
+arch oil_sea_ultra_viscous
+x 14
+y 71
+end
+arch oil_sea_ultra_viscous
+x 14
+y 72
+end
+arch oil_sea_ultra_viscous
+x 14
+y 73
+end
+arch oil_sea_ultra_viscous
+x 14
+y 74
+end
+arch oil_sea_ultra_viscous
+x 14
+y 75
+end
+arch oil_sea_ultra_viscous
+x 14
+y 76
+end
+arch oil_sea
+x 14
+y 77
+end
+arch oil_sea
+x 14
+y 78
+end
+arch oil_sea
+x 14
+y 79
+end
+arch oil_sea
+x 14
+y 80
+end
+arch oil_sea
+x 14
+y 81
+end
+arch oil_sea_ultra_viscous
+x 14
+y 82
+end
+arch slevel_3_1
+x 14
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 14
+sp 83
+x 14
+y 83
+end
+arch dungeon_magic
+x 14
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 87
+no_pass 0
+blocksview 0
+end
+arch fog
+x 14
+y 87
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 14
+sp 92
+x 14
+y 92
+end
+arch dungeon_magic
+x 14
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea_ultra_viscous
+x 14
+y 93
+end
+arch slevel_3_3
+x 14
+y 93
+end
+arch oil_sea
+x 14
+y 94
+end
+arch oil_sea
+x 14
+y 95
+end
+arch oil_sea
+x 14
+y 96
+end
+arch oil_sea
+x 14
+y 97
+end
+arch oil_sea
+x 14
+y 98
+end
+arch oil_sea_ultra_viscous
+x 14
+y 99
+end
+arch oil_sea
+x 14
+y 100
+end
+arch oil_sea
+x 14
+y 101
+end
+arch oil_sea
+x 14
+y 102
+end
+arch oil_sea
+x 14
+y 103
+end
+arch oil_sea
+x 14
+y 104
+end
+arch oil_sea
+x 14
+y 105
+end
+arch oil_sea
+x 14
+y 106
+end
+arch oil_sea
+x 14
+y 107
+end
+arch oil_sea
+x 14
+y 108
+end
+arch oil_sea
+x 14
+y 109
+end
+arch oil_sea
+x 14
+y 110
+end
+arch cave16
+x 14
+y 110
+end
+arch oil_sea
+x 14
+y 111
+end
+arch cave3
+x 14
+y 111
+end
+arch oil_sea
+x 14
+y 112
+end
+arch cave17
+x 14
+y 112
+end
+arch oil_sea
+x 14
+y 113
+end
+arch blocked
+msg
+endmsg
+x 14
+y 113
+end
+arch oil_sea
+x 14
+y 114
+end
+arch blocked
+msg
+endmsg
+x 14
+y 114
+end
+arch oil_sea
+x 14
+y 115
+end
+arch blocked
+msg
+endmsg
+x 14
+y 115
+end
+arch oil_sea
+x 14
+y 116
+end
+arch blocked
+msg
+endmsg
+x 14
+y 116
+end
+arch oil_sea
+x 14
+y 117
+end
+arch blocked
+msg
+endmsg
+x 14
+y 117
 end
 arch marble
 x 15
@@ -7041,6 +11891,342 @@ end
 arch cave21
 x 15
 y 63
+end
+arch marble
+x 15
+y 64
+end
+arch cave21
+x 15
+y 64
+end
+arch marble
+x 15
+y 65
+end
+arch cave21
+x 15
+y 65
+end
+arch marble
+x 15
+y 66
+end
+arch marble
+x 15
+y 67
+end
+arch marble
+x 15
+y 68
+end
+arch slevel_3_1
+x 15
+y 68
+end
+arch marble
+x 15
+y 69
+end
+arch slevel_3_1
+x 15
+y 69
+end
+arch oil_sea
+x 15
+y 70
+end
+arch oil_sea
+x 15
+y 71
+end
+arch oil_sea
+x 15
+y 72
+end
+arch oil_sea_ultra_viscous
+x 15
+y 73
+end
+arch oil_sea
+x 15
+y 74
+end
+arch oil_sea
+x 15
+y 75
+end
+arch oil_sea_ultra_viscous
+x 15
+y 76
+end
+arch oil_sea
+x 15
+y 77
+end
+arch oil_sea
+x 15
+y 78
+end
+arch oil_sea
+x 15
+y 79
+end
+arch oil_sea
+x 15
+y 80
+end
+arch oil_sea
+x 15
+y 81
+end
+arch oil_sea_ultra_viscous
+x 15
+y 82
+end
+arch slevel_3_1
+x 15
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 15
+sp 83
+x 15
+y 83
+end
+arch dungeon_magic
+x 15
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 86
+no_pass 0
+blocksview 0
+end
+arch djinn_magenta_big
+x 15
+y 86
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 87
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 91
+no_pass 0
+blocksview 0
+end
+arch fog
+x 15
+y 91
+end
+arch invis_exit
+slaying theaterb4
+hp 15
+sp 92
+x 15
+y 92
+end
+arch dungeon_magic
+x 15
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 15
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea_ultra_viscous
+x 15
+y 93
+end
+arch slevel_3_3
+x 15
+y 93
+end
+arch oil_sea
+x 15
+y 94
+end
+arch oil_sea
+x 15
+y 95
+end
+arch oil_sea
+x 15
+y 96
+end
+arch oil_sea
+x 15
+y 97
+end
+arch oil_sea
+x 15
+y 98
+end
+arch oil_sea_ultra_viscous
+x 15
+y 99
+end
+arch oil_sea
+x 15
+y 100
+end
+arch oil_sea
+x 15
+y 101
+end
+arch oil_sea
+x 15
+y 102
+end
+arch oil_sea
+x 15
+y 103
+end
+arch oil_sea
+x 15
+y 104
+end
+arch oil_sea
+x 15
+y 105
+end
+arch oil_sea
+x 15
+y 106
+end
+arch oil_sea
+x 15
+y 107
+end
+arch oil_sea
+x 15
+y 108
+end
+arch oil_sea
+x 15
+y 109
+end
+arch oil_sea
+x 15
+y 110
+end
+arch oil_sea
+x 15
+y 111
+end
+arch oil_sea
+x 15
+y 112
+end
+arch cave16
+x 15
+y 112
+end
+arch oil_sea
+x 15
+y 113
+end
+arch cave3
+x 15
+y 113
+end
+arch oil_sea
+x 15
+y 114
+end
+arch cave3
+x 15
+y 114
+end
+arch oil_sea
+x 15
+y 115
+end
+arch cave3
+x 15
+y 115
+end
+arch oil_sea
+x 15
+y 116
+end
+arch cave17
+x 15
+y 116
+end
+arch oil_sea
+x 15
+y 117
+end
+arch blocked
+msg
+endmsg
+x 15
+y 117
 end
 arch marble
 x 16
@@ -7467,6 +12653,328 @@ end
 arch cave21
 x 16
 y 63
+end
+arch marble
+x 16
+y 64
+end
+arch cave21
+x 16
+y 64
+end
+arch marble
+x 16
+y 65
+end
+arch cave21
+x 16
+y 65
+end
+arch marble
+x 16
+y 66
+end
+arch djinn_magenta
+x 16
+y 66
+end
+arch marble
+x 16
+y 67
+end
+arch marble
+x 16
+y 68
+end
+arch slevel_3_1
+x 16
+y 68
+end
+arch djinn_magenta
+x 16
+y 68
+end
+arch marble
+x 16
+y 69
+end
+arch slevel_3_1
+x 16
+y 69
+end
+arch oil_sea
+x 16
+y 70
+end
+arch oil_sea
+x 16
+y 71
+end
+arch oil_sea
+x 16
+y 72
+end
+arch oil_sea_ultra_viscous
+x 16
+y 73
+end
+arch oil_sea
+x 16
+y 74
+end
+arch oil_sea
+x 16
+y 75
+end
+arch oil_sea_ultra_viscous
+x 16
+y 76
+end
+arch oil_sea_ultra_viscous
+x 16
+y 77
+end
+arch oil_sea_ultra_viscous
+x 16
+y 78
+end
+arch oil_sea_ultra_viscous
+x 16
+y 79
+end
+arch oil_sea_ultra_viscous
+x 16
+y 80
+end
+arch oil_sea_ultra_viscous
+x 16
+y 81
+end
+arch oil_sea_ultra_viscous
+x 16
+y 82
+end
+arch slevel_3_1
+x 16
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 16
+sp 83
+x 16
+y 83
+end
+arch dungeon_magic
+x 16
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 84
+no_pass 0
+blocksview 0
+end
+arch fog
+x 16
+y 84
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 87
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 16
+sp 92
+x 16
+y 92
+end
+arch dungeon_magic
+x 16
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 16
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea_ultra_viscous
+x 16
+y 93
+end
+arch slevel_3_3
+x 16
+y 93
+end
+arch oil_sea
+x 16
+y 94
+end
+arch oil_sea
+x 16
+y 95
+end
+arch oil_sea
+x 16
+y 96
+end
+arch oil_sea
+x 16
+y 97
+end
+arch oil_sea
+x 16
+y 98
+end
+arch oil_sea_ultra_viscous
+x 16
+y 99
+end
+arch oil_sea
+x 16
+y 100
+end
+arch oil_sea
+x 16
+y 101
+end
+arch oil_sea
+x 16
+y 102
+end
+arch oil_sea
+x 16
+y 103
+end
+arch oil_sea
+x 16
+y 104
+end
+arch oil_sea
+x 16
+y 105
+end
+arch oil_sea
+x 16
+y 106
+end
+arch oil_sea
+x 16
+y 107
+end
+arch oil_sea
+x 16
+y 108
+end
+arch oil_sea
+x 16
+y 109
+end
+arch oil_sea
+x 16
+y 110
+end
+arch oil_sea
+x 16
+y 111
+end
+arch oil_sea
+x 16
+y 112
+end
+arch oil_sea
+x 16
+y 113
+end
+arch oil_sea
+x 16
+y 114
+end
+arch oil_sea
+x 16
+y 115
+end
+arch oil_sea
+x 16
+y 116
+end
+arch cave16
+x 16
+y 116
+end
+arch oil_sea
+x 16
+y 117
+end
+arch cave3
+x 16
+y 117
 end
 arch marble
 x 17
@@ -7879,6 +13387,340 @@ x 17
 y 63
 end
 arch marble
+x 17
+y 64
+end
+arch cave21
+x 17
+y 64
+end
+arch marble
+x 17
+y 65
+end
+arch cave21
+x 17
+y 65
+end
+arch marble
+x 17
+y 66
+end
+arch marble
+x 17
+y 67
+end
+arch marble
+x 17
+y 68
+end
+arch slevel_3_1
+x 17
+y 68
+end
+arch marble
+x 17
+y 69
+end
+arch slevel_3_1
+x 17
+y 69
+end
+arch oil_sea_ultra_viscous
+x 17
+y 70
+end
+arch oil_sea_ultra_viscous
+x 17
+y 71
+end
+arch oil_sea_ultra_viscous
+x 17
+y 72
+end
+arch oil_sea_ultra_viscous
+x 17
+y 73
+end
+arch oil_sea_ultra_viscous
+x 17
+y 74
+end
+arch oil_sea
+x 17
+y 75
+end
+arch oil_sea_ultra_viscous
+x 17
+y 76
+end
+arch djinn_magenta
+x 17
+y 76
+end
+arch oil_sea_ultra_viscous
+x 17
+y 77
+end
+arch oil_sea
+x 17
+y 78
+end
+arch oil_sea
+x 17
+y 79
+end
+arch oil_sea
+x 17
+y 80
+end
+arch oil_sea_ultra_viscous
+x 17
+y 81
+end
+arch oil_sea_ultra_viscous
+x 17
+y 82
+end
+arch slevel_3_1
+x 17
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 17
+sp 83
+x 17
+y 83
+end
+arch dungeon_magic
+x 17
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 85
+no_pass 0
+blocksview 0
+end
+arch fog
+x 17
+y 85
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 87
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 88
+no_pass 0
+blocksview 0
+end
+arch fog
+x 17
+y 88
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 91
+no_pass 0
+blocksview 0
+end
+arch fog
+x 17
+y 91
+end
+arch invis_exit
+slaying theaterb4
+hp 17
+sp 92
+x 17
+y 92
+end
+arch dungeon_magic
+x 17
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 17
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea_ultra_viscous
+x 17
+y 93
+end
+arch slevel_3_3
+x 17
+y 93
+end
+arch oil_sea_ultra_viscous
+x 17
+y 94
+end
+arch oil_sea_ultra_viscous
+x 17
+y 95
+end
+arch oil_sea
+x 17
+y 96
+end
+arch oil_sea
+x 17
+y 97
+end
+arch oil_sea
+x 17
+y 98
+end
+arch oil_sea_ultra_viscous
+x 17
+y 99
+end
+arch djinn_magenta
+x 17
+y 99
+end
+arch oil_sea_ultra_viscous
+x 17
+y 100
+end
+arch oil_sea_ultra_viscous
+x 17
+y 101
+end
+arch oil_sea
+x 17
+y 102
+end
+arch oil_sea
+x 17
+y 103
+end
+arch oil_sea
+x 17
+y 104
+end
+arch oil_sea
+x 17
+y 105
+end
+arch oil_sea
+x 17
+y 106
+end
+arch oil_sea
+x 17
+y 107
+end
+arch oil_sea
+x 17
+y 108
+end
+arch oil_sea
+x 17
+y 109
+end
+arch oil_sea
+x 17
+y 110
+end
+arch oil_sea
+x 17
+y 111
+end
+arch oil_sea
+x 17
+y 112
+end
+arch oil_sea
+x 17
+y 113
+end
+arch oil_sea
+x 17
+y 114
+end
+arch oil_sea
+x 17
+y 115
+end
+arch cave15
+x 17
+y 115
+end
+arch oil_sea
+x 17
+y 116
+end
+arch cave1
+x 17
+y 116
+end
+arch oil_sea
+x 17
+y 117
+end
+arch cave1
+x 17
+y 117
+end
+arch marble
 x 18
 end
 arch blocked
@@ -8294,9 +14136,361 @@ arch marble
 x 18
 y 63
 end
-arch cave21
+arch earthwall
+name wall
+name_pl wall
+face cave21.111
+hp 32000
+maxhp 32000
 x 18
 y 63
+end
+arch marble
+x 18
+y 64
+end
+arch earthwall
+name wall
+name_pl wall
+face cave21.111
+hp 32000
+maxhp 32000
+x 18
+y 64
+end
+arch marble
+x 18
+y 65
+end
+arch marble
+x 18
+y 66
+end
+arch marble
+x 18
+y 67
+end
+arch djinn_magenta
+x 18
+y 67
+end
+arch marble
+x 18
+y 68
+end
+arch slevel_3_1
+x 18
+y 68
+end
+arch marble
+x 18
+y 69
+end
+arch slevel_3_1
+x 18
+y 69
+end
+arch oil_sea
+x 18
+y 70
+end
+arch oil_sea
+x 18
+y 71
+end
+arch oil_sea
+x 18
+y 72
+end
+arch oil_sea_ultra_viscous
+x 18
+y 73
+end
+arch oil_sea_ultra_viscous
+x 18
+y 74
+end
+arch oil_sea
+x 18
+y 75
+end
+arch oil_sea_ultra_viscous
+x 18
+y 76
+end
+arch oil_sea_ultra_viscous
+x 18
+y 77
+end
+arch oil_sea
+x 18
+y 78
+end
+arch oil_sea
+x 18
+y 79
+end
+arch oil_sea
+x 18
+y 80
+end
+arch oil_sea_ultra_viscous
+x 18
+y 81
+end
+arch djinn_magenta
+x 18
+y 81
+end
+arch oil_sea_ultra_viscous
+x 18
+y 82
+end
+arch slevel_3_1
+x 18
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 18
+sp 83
+x 18
+y 83
+end
+arch dungeon_magic
+x 18
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 87
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 18
+sp 92
+x 18
+y 92
+end
+arch dungeon_magic
+x 18
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 18
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea
+x 18
+y 93
+end
+arch slevel_3_3
+x 18
+y 93
+end
+arch oil_sea
+x 18
+y 94
+end
+arch oil_sea_ultra_viscous
+x 18
+y 95
+end
+arch oil_sea_ultra_viscous
+x 18
+y 96
+end
+arch oil_sea
+x 18
+y 97
+end
+arch oil_sea
+x 18
+y 98
+end
+arch oil_sea_ultra_viscous
+x 18
+y 99
+end
+arch oil_sea
+x 18
+y 100
+end
+arch oil_sea_ultra_viscous
+x 18
+y 101
+end
+arch oil_sea
+x 18
+y 102
+end
+arch oil_sea
+x 18
+y 103
+end
+arch oil_sea
+x 18
+y 104
+end
+arch oil_sea
+x 18
+y 105
+end
+arch oil_sea
+x 18
+y 106
+end
+arch oil_sea
+x 18
+y 107
+end
+arch oil_sea
+x 18
+y 108
+end
+arch oil_sea
+x 18
+y 109
+end
+arch oil_sea
+x 18
+y 110
+end
+arch cave15
+x 18
+y 110
+end
+arch oil_sea
+x 18
+y 111
+end
+arch cave1
+x 18
+y 111
+end
+arch oil_sea
+x 18
+y 112
+end
+arch cave1
+x 18
+y 112
+end
+arch oil_sea
+x 18
+y 113
+end
+arch cave1
+x 18
+y 113
+end
+arch oil_sea
+x 18
+y 114
+end
+arch cave1
+x 18
+y 114
+end
+arch oil_sea
+x 18
+y 115
+end
+arch cave20
+x 18
+y 115
+end
+arch oil_sea
+x 18
+y 116
+end
+arch blocked
+msg
+endmsg
+x 18
+y 116
+end
+arch oil_sea
+x 18
+y 117
+end
+arch blocked
+msg
+endmsg
+x 18
+y 117
 end
 arch marble
 x 19
@@ -8711,6 +14905,370 @@ x 19
 y 63
 end
 arch marble
+x 19
+y 64
+end
+arch cave21
+x 19
+y 64
+end
+arch marble
+x 19
+y 65
+end
+arch djinn_magenta
+x 19
+y 65
+end
+arch marble
+x 19
+y 66
+end
+arch marble
+x 19
+y 67
+end
+arch marble
+x 19
+y 68
+end
+arch slevel_3_1
+x 19
+y 68
+end
+arch marble
+x 19
+y 69
+end
+arch slevel_3_1
+x 19
+y 69
+end
+arch oil_sea
+x 19
+y 70
+end
+arch oil_sea
+x 19
+y 71
+end
+arch oil_sea
+x 19
+y 72
+end
+arch oil_sea_ultra_viscous
+x 19
+y 73
+end
+arch oil_sea_ultra_viscous
+x 19
+y 74
+end
+arch oil_sea
+x 19
+y 75
+end
+arch oil_sea_ultra_viscous
+x 19
+y 76
+end
+arch oil_sea_ultra_viscous
+x 19
+y 77
+end
+arch oil_sea
+x 19
+y 78
+end
+arch oil_sea
+x 19
+y 79
+end
+arch oil_sea
+x 19
+y 80
+end
+arch oil_sea
+x 19
+y 81
+end
+arch oil_sea
+x 19
+y 82
+end
+arch slevel_3_1
+x 19
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 19
+sp 83
+x 19
+y 83
+end
+arch dungeon_magic
+x 19
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 83
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 84
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 85
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 86
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 87
+no_pass 0
+blocksview 0
+end
+arch fog
+x 19
+y 87
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 88
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 89
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 90
+no_pass 0
+blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 19
+sp 92
+x 19
+y 92
+end
+arch dungeon_magic
+x 19
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 19
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea
+x 19
+y 93
+end
+arch slevel_3_3
+x 19
+y 93
+end
+arch oil_sea
+x 19
+y 94
+end
+arch oil_sea
+x 19
+y 95
+end
+arch oil_sea_ultra_viscous
+x 19
+y 96
+end
+arch oil_sea
+x 19
+y 97
+end
+arch oil_sea
+x 19
+y 98
+end
+arch oil_sea_ultra_viscous
+x 19
+y 99
+end
+arch oil_sea
+x 19
+y 100
+end
+arch oil_sea_ultra_viscous
+x 19
+y 101
+end
+arch oil_sea
+x 19
+y 102
+end
+arch oil_sea
+x 19
+y 103
+end
+arch oil_sea
+x 19
+y 104
+end
+arch oil_sea
+x 19
+y 105
+end
+arch oil_sea
+x 19
+y 106
+end
+arch oil_sea
+x 19
+y 107
+end
+arch cave15
+x 19
+y 107
+end
+arch oil_sea
+x 19
+y 108
+end
+arch cave1
+x 19
+y 108
+end
+arch oil_sea
+x 19
+y 109
+end
+arch cave1
+x 19
+y 109
+end
+arch oil_sea
+x 19
+y 110
+end
+arch cave20
+x 19
+y 110
+end
+arch oil_sea
+x 19
+y 111
+end
+arch blocked
+msg
+endmsg
+x 19
+y 111
+end
+arch oil_sea
+x 19
+y 112
+end
+arch blocked
+msg
+endmsg
+x 19
+y 112
+end
+arch oil_sea
+x 19
+y 113
+end
+arch blocked
+msg
+endmsg
+x 19
+y 113
+end
+arch oil_sea
+x 19
+y 114
+end
+arch blocked
+msg
+endmsg
+x 19
+y 114
+end
+arch oil_sea
+x 19
+y 115
+end
+arch blocked
+msg
+endmsg
+x 19
+y 115
+end
+arch oil_sea
+x 19
+y 116
+end
+arch blocked
+msg
+endmsg
+x 19
+y 116
+end
+arch oil_sea
+x 19
+y 117
+end
+arch blocked
+msg
+endmsg
+x 19
+y 117
+end
+arch marble
 x 20
 end
 arch blocked
@@ -9105,6 +15663,458 @@ x 20
 y 63
 end
 arch marble
+x 20
+y 64
+end
+arch cave21
+x 20
+y 64
+end
+arch marble
+x 20
+y 65
+end
+arch marble
+x 20
+y 66
+end
+arch djinn_magenta
+x 20
+y 66
+end
+arch marble
+x 20
+y 67
+end
+arch marble
+x 20
+y 68
+end
+arch slevel_3_1
+x 20
+y 68
+end
+arch djinn_magenta
+x 20
+y 68
+end
+arch marble
+x 20
+y 69
+end
+arch slevel_3_1
+x 20
+y 69
+end
+arch oil_sea
+x 20
+y 70
+end
+arch oil_sea
+x 20
+y 71
+end
+arch oil_sea
+x 20
+y 72
+end
+arch oil_sea_ultra_viscous
+x 20
+y 73
+end
+arch oil_sea_ultra_viscous
+x 20
+y 74
+end
+arch oil_sea
+x 20
+y 75
+end
+arch oil_sea_ultra_viscous
+x 20
+y 76
+end
+arch oil_sea_ultra_viscous
+x 20
+y 77
+end
+arch oil_sea
+x 20
+y 78
+end
+arch oil_sea
+x 20
+y 79
+end
+arch oil_sea
+x 20
+y 80
+end
+arch oil_sea
+x 20
+y 81
+end
+arch oil_sea
+x 20
+y 82
+end
+arch slevel_3_1
+x 20
+y 82
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 83
+x 20
+y 83
+end
+arch dungeon_magic
+x 20
+y 83
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 83
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 84
+x 20
+y 84
+end
+arch dungeon_magic
+x 20
+y 84
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 84
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 85
+x 20
+y 85
+end
+arch dungeon_magic
+x 20
+y 85
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 85
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 86
+x 20
+y 86
+end
+arch dungeon_magic
+x 20
+y 86
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 86
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 87
+x 20
+y 87
+end
+arch dungeon_magic
+x 20
+y 87
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 87
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 88
+x 20
+y 88
+end
+arch dungeon_magic
+x 20
+y 88
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 88
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 89
+x 20
+y 89
+end
+arch dungeon_magic
+x 20
+y 89
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 89
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 90
+x 20
+y 90
+end
+arch dungeon_magic
+x 20
+y 90
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 90
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 91
+x 20
+y 91
+end
+arch dungeon_magic
+x 20
+y 91
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 91
+no_pass 0
+blocksview 0
+end
+arch invis_exit
+slaying theaterb4
+hp 20
+sp 92
+x 20
+y 92
+end
+arch dungeon_magic
+x 20
+y 92
+end
+arch blocked
+name nothing
+name_pl nothing
+x 20
+y 92
+no_pass 0
+blocksview 0
+end
+arch oil_sea
+x 20
+y 93
+end
+arch slevel_3_3
+x 20
+y 93
+end
+arch oil_sea
+x 20
+y 94
+end
+arch oil_sea
+x 20
+y 95
+end
+arch oil_sea_ultra_viscous
+x 20
+y 96
+end
+arch djinn_magenta
+x 20
+y 96
+end
+arch oil_sea_ultra_viscous
+x 20
+y 97
+end
+arch oil_sea_ultra_viscous
+x 20
+y 98
+end
+arch oil_sea_ultra_viscous
+x 20
+y 99
+end
+arch oil_sea
+x 20
+y 100
+end
+arch oil_sea_ultra_viscous
+x 20
+y 101
+end
+arch oil_sea
+x 20
+y 102
+end
+arch oil_sea
+x 20
+y 103
+end
+arch oil_sea
+x 20
+y 104
+end
+arch oil_sea
+x 20
+y 105
+end
+arch oil_sea
+x 20
+y 106
+end
+arch oil_sea
+x 20
+y 107
+end
+arch cave16
+x 20
+y 107
+end
+arch oil_sea
+x 20
+y 108
+end
+arch cave3
+x 20
+y 108
+end
+arch oil_sea
+x 20
+y 109
+end
+arch cave3
+x 20
+y 109
+end
+arch oil_sea
+x 20
+y 110
+end
+arch cave3
+x 20
+y 110
+end
+arch oil_sea
+x 20
+y 111
+end
+arch cave3
+x 20
+y 111
+end
+arch oil_sea
+x 20
+y 112
+end
+arch cave17
+x 20
+y 112
+end
+arch oil_sea
+x 20
+y 113
+end
+arch blocked
+msg
+endmsg
+x 20
+y 113
+end
+arch oil_sea
+x 20
+y 114
+end
+arch blocked
+msg
+endmsg
+x 20
+y 114
+end
+arch oil_sea
+x 20
+y 115
+end
+arch blocked
+msg
+endmsg
+x 20
+y 115
+end
+arch oil_sea
+x 20
+y 116
+end
+arch blocked
+msg
+endmsg
+x 20
+y 116
+end
+arch oil_sea
+x 20
+y 117
+end
+arch blocked
+msg
+endmsg
+x 20
+y 117
+end
+arch marble
 x 21
 end
 arch blocked
@@ -9489,6 +16499,310 @@ end
 arch cave21
 x 21
 y 63
+end
+arch marble
+x 21
+y 64
+end
+arch cave21
+x 21
+y 64
+end
+arch marble
+x 21
+y 65
+end
+arch cave21
+x 21
+y 65
+end
+arch marble
+x 21
+y 66
+end
+arch marble
+x 21
+y 67
+end
+arch marble
+x 21
+y 68
+end
+arch slevel_3_1
+x 21
+y 68
+end
+arch marble
+x 21
+y 69
+end
+arch slevel_3_1
+x 21
+y 69
+end
+arch oil_sea
+x 21
+y 70
+end
+arch oil_sea
+x 21
+y 71
+end
+arch oil_sea
+x 21
+y 72
+end
+arch oil_sea_ultra_viscous
+x 21
+y 73
+end
+arch djinn_magenta
+x 21
+y 73
+end
+arch oil_sea_ultra_viscous
+x 21
+y 74
+end
+arch oil_sea
+x 21
+y 75
+end
+arch oil_sea_ultra_viscous
+x 21
+y 76
+end
+arch djinn_magenta
+x 21
+y 76
+end
+arch oil_sea_ultra_viscous
+x 21
+y 77
+end
+arch oil_sea
+x 21
+y 78
+end
+arch oil_sea
+x 21
+y 79
+end
+arch oil_sea
+x 21
+y 80
+end
+arch oil_sea
+x 21
+y 81
+end
+arch oil_sea
+x 21
+y 82
+end
+arch oil_sea
+x 21
+y 83
+end
+arch slevel_3_2
+x 21
+y 83
+end
+arch oil_sea
+x 21
+y 84
+end
+arch slevel_3_2
+x 21
+y 84
+end
+arch oil_sea_ultra_viscous
+x 21
+y 85
+end
+arch slevel_3_2
+x 21
+y 85
+end
+arch oil_sea_ultra_viscous
+x 21
+y 86
+end
+arch slevel_3_2
+x 21
+y 86
+end
+arch oil_sea_ultra_viscous
+x 21
+y 87
+end
+arch slevel_3_2
+x 21
+y 87
+end
+arch oil_sea_ultra_viscous
+x 21
+y 88
+end
+arch slevel_3_2
+x 21
+y 88
+end
+arch oil_sea_ultra_viscous
+x 21
+y 89
+end
+arch slevel_3_2
+x 21
+y 89
+end
+arch oil_sea_ultra_viscous
+x 21
+y 90
+end
+arch slevel_3_2
+x 21
+y 90
+end
+arch oil_sea_ultra_viscous
+x 21
+y 91
+end
+arch slevel_3_2
+x 21
+y 91
+end
+arch oil_sea
+x 21
+y 92
+end
+arch slevel_3_2
+x 21
+y 92
+end
+arch oil_sea
+x 21
+y 93
+end
+arch oil_sea
+x 21
+y 94
+end
+arch oil_sea
+x 21
+y 95
+end
+arch oil_sea_ultra_viscous
+x 21
+y 96
+end
+arch oil_sea
+x 21
+y 97
+end
+arch oil_sea
+x 21
+y 98
+end
+arch oil_sea
+x 21
+y 99
+end
+arch oil_sea
+x 21
+y 100
+end
+arch oil_sea_ultra_viscous
+x 21
+y 101
+end
+arch oil_sea
+x 21
+y 102
+end
+arch oil_sea
+x 21
+y 103
+end
+arch oil_sea
+x 21
+y 104
+end
+arch oil_sea
+x 21
+y 105
+end
+arch oil_sea
+x 21
+y 106
+end
+arch oil_sea
+x 21
+y 107
+end
+arch oil_sea
+x 21
+y 108
+end
+arch oil_sea
+x 21
+y 109
+end
+arch oil_sea
+x 21
+y 110
+end
+arch oil_sea
+x 21
+y 111
+end
+arch oil_sea
+x 21
+y 112
+end
+arch cave16
+x 21
+y 112
+end
+arch oil_sea
+x 21
+y 113
+end
+arch cave3
+x 21
+y 113
+end
+arch oil_sea
+x 21
+y 114
+end
+arch cave3
+x 21
+y 114
+end
+arch oil_sea
+x 21
+y 115
+end
+arch cave3
+x 21
+y 115
+end
+arch oil_sea
+x 21
+y 116
+end
+arch cave3
+x 21
+y 116
+end
+arch oil_sea
+x 21
+y 117
+end
+arch cave3
+x 21
+y 117
 end
 arch marble
 x 22
@@ -9896,6 +17210,262 @@ x 22
 y 63
 end
 arch marble
+x 22
+y 64
+end
+arch cave21
+x 22
+y 64
+end
+arch marble
+x 22
+y 65
+end
+arch cave21
+x 22
+y 65
+end
+arch marble
+x 22
+y 66
+end
+arch cave21
+x 22
+y 66
+end
+arch marble
+x 22
+y 67
+end
+arch marble
+x 22
+y 68
+end
+arch slevel_3_1
+x 22
+y 68
+end
+arch djinn_magenta
+x 22
+y 68
+end
+arch marble
+x 22
+y 69
+end
+arch slevel_3_1
+x 22
+y 69
+end
+arch oil_sea
+x 22
+y 70
+end
+arch oil_sea
+x 22
+y 71
+end
+arch oil_sea
+x 22
+y 72
+end
+arch oil_sea_ultra_viscous
+x 22
+y 73
+end
+arch oil_sea_ultra_viscous
+x 22
+y 74
+end
+arch oil_sea
+x 22
+y 75
+end
+arch oil_sea_ultra_viscous
+x 22
+y 76
+end
+arch oil_sea_ultra_viscous
+x 22
+y 77
+end
+arch oil_sea_ultra_viscous
+x 22
+y 78
+end
+arch djinn_magenta
+x 22
+y 78
+end
+arch oil_sea_ultra_viscous
+x 22
+y 79
+end
+arch oil_sea
+x 22
+y 80
+end
+arch oil_sea
+x 22
+y 81
+end
+arch oil_sea
+x 22
+y 82
+end
+arch oil_sea
+x 22
+y 83
+end
+arch oil_sea
+x 22
+y 84
+end
+arch oil_sea_ultra_viscous
+x 22
+y 85
+end
+arch oil_sea
+x 22
+y 86
+end
+arch oil_sea
+x 22
+y 87
+end
+arch oil_sea
+x 22
+y 88
+end
+arch oil_sea
+x 22
+y 89
+end
+arch oil_sea
+x 22
+y 90
+end
+arch oil_sea_ultra_viscous
+x 22
+y 91
+end
+arch oil_sea
+x 22
+y 92
+end
+arch oil_sea
+x 22
+y 93
+end
+arch oil_sea
+x 22
+y 94
+end
+arch oil_sea
+x 22
+y 95
+end
+arch oil_sea_ultra_viscous
+x 22
+y 96
+end
+arch oil_sea
+x 22
+y 97
+end
+arch oil_sea
+x 22
+y 98
+end
+arch oil_sea
+x 22
+y 99
+end
+arch oil_sea
+x 22
+y 100
+end
+arch oil_sea_ultra_viscous
+x 22
+y 101
+end
+arch oil_sea
+x 22
+y 102
+end
+arch oil_sea
+x 22
+y 103
+end
+arch oil_sea
+x 22
+y 104
+end
+arch oil_sea
+x 22
+y 105
+end
+arch oil_sea
+x 22
+y 106
+end
+arch oil_sea
+x 22
+y 107
+end
+arch oil_sea
+x 22
+y 108
+end
+arch oil_sea
+x 22
+y 109
+end
+arch oil_sea
+x 22
+y 110
+end
+arch oil_sea
+x 22
+y 111
+end
+arch oil_sea
+x 22
+y 112
+end
+arch oil_sea
+x 22
+y 113
+end
+arch oil_sea
+x 22
+y 114
+end
+arch oil_sea
+x 22
+y 115
+end
+arch cave15
+x 22
+y 115
+end
+arch oil_sea
+x 22
+y 116
+end
+arch cave1
+x 22
+y 116
+end
+arch oil_sea
+x 22
+y 117
+end
+arch cave1
+x 22
+y 117
+end
+arch marble
 x 23
 end
 arch blocked
@@ -10308,6 +17878,278 @@ x 23
 y 63
 end
 arch marble
+x 23
+y 64
+end
+arch cave21
+x 23
+y 64
+end
+arch marble
+x 23
+y 65
+end
+arch cave21
+x 23
+y 65
+end
+arch marble
+x 23
+y 66
+end
+arch cave21
+x 23
+y 66
+end
+arch marble
+x 23
+y 67
+end
+arch djinn_magenta
+x 23
+y 67
+end
+arch marble
+x 23
+y 68
+end
+arch slevel_3_1
+x 23
+y 68
+end
+arch marble
+x 23
+y 69
+end
+arch marble
+x 23
+y 70
+end
+arch slevel_2_2_1
+x 23
+y 70
+end
+arch oil_sea
+x 23
+y 71
+end
+arch oil_sea
+x 23
+y 72
+end
+arch oil_sea_ultra_viscous
+x 23
+y 73
+end
+arch oil_sea_ultra_viscous
+x 23
+y 74
+end
+arch oil_sea
+x 23
+y 75
+end
+arch oil_sea_ultra_viscous
+x 23
+y 76
+end
+arch oil_sea_ultra_viscous
+x 23
+y 77
+end
+arch oil_sea_ultra_viscous
+x 23
+y 78
+end
+arch oil_sea_ultra_viscous
+x 23
+y 79
+end
+arch oil_sea
+x 23
+y 80
+end
+arch oil_sea
+x 23
+y 81
+end
+arch oil_sea
+x 23
+y 82
+end
+arch oil_sea
+x 23
+y 83
+end
+arch oil_sea
+x 23
+y 84
+end
+arch oil_sea_ultra_viscous
+x 23
+y 85
+end
+arch oil_sea
+x 23
+y 86
+end
+arch oil_sea
+x 23
+y 87
+end
+arch oil_sea
+x 23
+y 88
+end
+arch oil_sea
+x 23
+y 89
+end
+arch oil_sea
+x 23
+y 90
+end
+arch oil_sea_ultra_viscous
+x 23
+y 91
+end
+arch oil_sea
+x 23
+y 92
+end
+arch oil_sea
+x 23
+y 93
+end
+arch oil_sea
+x 23
+y 94
+end
+arch oil_sea
+x 23
+y 95
+end
+arch oil_sea_ultra_viscous
+x 23
+y 96
+end
+arch oil_sea
+x 23
+y 97
+end
+arch oil_sea
+x 23
+y 98
+end
+arch oil_sea
+x 23
+y 99
+end
+arch oil_sea
+x 23
+y 100
+end
+arch oil_sea_ultra_viscous
+x 23
+y 101
+end
+arch oil_sea
+x 23
+y 102
+end
+arch oil_sea
+x 23
+y 103
+end
+arch oil_sea
+x 23
+y 104
+end
+arch oil_sea
+x 23
+y 105
+end
+arch oil_sea
+x 23
+y 106
+end
+arch oil_sea
+x 23
+y 107
+end
+arch oil_sea
+x 23
+y 108
+end
+arch oil_sea
+x 23
+y 109
+end
+arch oil_sea
+x 23
+y 110
+end
+arch oil_sea
+x 23
+y 111
+end
+arch cave15
+x 23
+y 111
+end
+arch oil_sea
+x 23
+y 112
+end
+arch cave1
+x 23
+y 112
+end
+arch oil_sea
+x 23
+y 113
+end
+arch cave1
+x 23
+y 113
+end
+arch oil_sea
+x 23
+y 114
+end
+arch cave1
+x 23
+y 114
+end
+arch oil_sea
+x 23
+y 115
+end
+arch cave20
+x 23
+y 115
+end
+arch oil_sea
+x 23
+y 116
+end
+arch blocked
+msg
+endmsg
+x 23
+y 116
+end
+arch oil_sea
+x 23
+y 117
+end
+arch blocked
+msg
+endmsg
+x 23
+y 117
+end
+arch marble
 x 24
 end
 arch blocked
@@ -10710,6 +18552,302 @@ end
 arch cave21
 x 24
 y 63
+end
+arch marble
+x 24
+y 64
+end
+arch cave21
+x 24
+y 64
+end
+arch marble
+x 24
+y 65
+end
+arch cave21
+x 24
+y 65
+end
+arch marble
+x 24
+y 66
+end
+arch djinn_magenta
+x 24
+y 66
+end
+arch marble
+x 24
+y 67
+end
+arch marble
+x 24
+y 68
+end
+arch marble
+x 24
+y 69
+end
+arch slevel_2_2_1
+x 24
+y 69
+end
+arch djinn_magenta
+x 24
+y 69
+end
+arch marble
+x 24
+y 70
+end
+arch slevel_3_1
+x 24
+y 70
+end
+arch oil_sea
+x 24
+y 71
+end
+arch oil_sea
+x 24
+y 72
+end
+arch oil_sea_ultra_viscous
+x 24
+y 73
+end
+arch oil_sea_ultra_viscous
+x 24
+y 74
+end
+arch oil_sea
+x 24
+y 75
+end
+arch oil_sea
+x 24
+y 76
+end
+arch oil_sea
+x 24
+y 77
+end
+arch oil_sea
+x 24
+y 78
+end
+arch oil_sea_ultra_viscous
+x 24
+y 79
+end
+arch oil_sea_ultra_viscous
+x 24
+y 80
+end
+arch oil_sea_ultra_viscous
+x 24
+y 81
+end
+arch oil_sea_ultra_viscous
+x 24
+y 82
+end
+arch oil_sea_ultra_viscous
+x 24
+y 83
+end
+arch oil_sea_ultra_viscous
+x 24
+y 84
+end
+arch oil_sea_ultra_viscous
+x 24
+y 85
+end
+arch oil_sea
+x 24
+y 86
+end
+arch oil_sea
+x 24
+y 87
+end
+arch oil_sea
+x 24
+y 88
+end
+arch oil_sea
+x 24
+y 89
+end
+arch oil_sea
+x 24
+y 90
+end
+arch oil_sea_ultra_viscous
+x 24
+y 91
+end
+arch djinn_magenta
+x 24
+y 91
+end
+arch oil_sea_ultra_viscous
+x 24
+y 92
+end
+arch oil_sea_ultra_viscous
+x 24
+y 93
+end
+arch oil_sea_ultra_viscous
+x 24
+y 94
+end
+arch oil_sea_ultra_viscous
+x 24
+y 95
+end
+arch oil_sea_ultra_viscous
+x 24
+y 96
+end
+arch oil_sea
+x 24
+y 97
+end
+arch oil_sea
+x 24
+y 98
+end
+arch oil_sea
+x 24
+y 99
+end
+arch oil_sea
+x 24
+y 100
+end
+arch oil_sea_ultra_viscous
+x 24
+y 101
+end
+arch oil_sea
+x 24
+y 102
+end
+arch oil_sea
+x 24
+y 103
+end
+arch oil_sea
+x 24
+y 104
+end
+arch oil_sea
+x 24
+y 105
+end
+arch oil_sea
+x 24
+y 106
+end
+arch oil_sea
+x 24
+y 107
+end
+arch oil_sea
+x 24
+y 108
+end
+arch cave15
+x 24
+y 108
+end
+arch oil_sea
+x 24
+y 109
+end
+arch cave1
+x 24
+y 109
+end
+arch oil_sea
+x 24
+y 110
+end
+arch cave1
+x 24
+y 110
+end
+arch oil_sea
+x 24
+y 111
+end
+arch cave20
+x 24
+y 111
+end
+arch oil_sea
+x 24
+y 112
+end
+arch blocked
+msg
+endmsg
+x 24
+y 112
+end
+arch oil_sea
+x 24
+y 113
+end
+arch blocked
+msg
+endmsg
+x 24
+y 113
+end
+arch oil_sea
+x 24
+y 114
+end
+arch blocked
+msg
+endmsg
+x 24
+y 114
+end
+arch oil_sea
+x 24
+y 115
+end
+arch blocked
+msg
+endmsg
+x 24
+y 115
+end
+arch oil_sea
+x 24
+y 116
+end
+arch blocked
+msg
+endmsg
+x 24
+y 116
+end
+arch oil_sea
+x 24
+y 117
+end
+arch blocked
+msg
+endmsg
+x 24
+y 117
 end
 arch marble
 x 25
@@ -11106,6 +19244,292 @@ end
 arch cave21
 x 25
 y 63
+end
+arch marble
+x 25
+y 64
+end
+arch cave21
+x 25
+y 64
+end
+arch marble
+x 25
+y 65
+end
+arch marble
+x 25
+y 66
+end
+arch marble
+x 25
+y 67
+end
+arch marble
+x 25
+y 68
+end
+arch djinn_magenta
+x 25
+y 68
+end
+arch marble
+x 25
+y 69
+end
+arch slevel_3_1
+x 25
+y 69
+end
+arch marble
+x 25
+y 70
+end
+arch slevel_3_1
+x 25
+y 70
+end
+arch oil_sea
+x 25
+y 71
+end
+arch oil_sea
+x 25
+y 72
+end
+arch oil_sea_ultra_viscous
+x 25
+y 73
+end
+arch oil_sea_ultra_viscous
+x 25
+y 74
+end
+arch oil_sea
+x 25
+y 75
+end
+arch oil_sea
+x 25
+y 76
+end
+arch oil_sea
+x 25
+y 77
+end
+arch oil_sea
+x 25
+y 78
+end
+arch oil_sea
+x 25
+y 79
+end
+arch oil_sea
+x 25
+y 80
+end
+arch oil_sea
+x 25
+y 81
+end
+arch oil_sea_ultra_viscous
+x 25
+y 82
+end
+arch djinn_magenta
+x 25
+y 82
+end
+arch oil_sea_ultra_viscous
+x 25
+y 83
+end
+arch oil_sea
+x 25
+y 84
+end
+arch oil_sea
+x 25
+y 85
+end
+arch oil_sea
+x 25
+y 86
+end
+arch oil_sea
+x 25
+y 87
+end
+arch oil_sea
+x 25
+y 88
+end
+arch oil_sea
+x 25
+y 89
+end
+arch oil_sea
+x 25
+y 90
+end
+arch oil_sea
+x 25
+y 91
+end
+arch oil_sea
+x 25
+y 92
+end
+arch oil_sea_ultra_viscous
+x 25
+y 93
+end
+arch oil_sea
+x 25
+y 94
+end
+arch oil_sea
+x 25
+y 95
+end
+arch oil_sea
+x 25
+y 96
+end
+arch oil_sea
+x 25
+y 97
+end
+arch oil_sea
+x 25
+y 98
+end
+arch oil_sea
+x 25
+y 99
+end
+arch oil_sea
+x 25
+y 100
+end
+arch oil_sea_ultra_viscous
+x 25
+y 101
+end
+arch oil_sea
+x 25
+y 102
+end
+arch oil_sea
+x 25
+y 103
+end
+arch oil_sea
+x 25
+y 104
+end
+arch oil_sea
+x 25
+y 105
+end
+arch oil_sea
+x 25
+y 106
+end
+arch oil_sea
+x 25
+y 107
+end
+arch oil_sea
+x 25
+y 108
+end
+arch cave16
+x 25
+y 108
+end
+arch oil_sea
+x 25
+y 109
+end
+arch cave3
+x 25
+y 109
+end
+arch oil_sea
+x 25
+y 110
+end
+arch cave3
+x 25
+y 110
+end
+arch oil_sea
+x 25
+y 111
+end
+arch cave3
+x 25
+y 111
+end
+arch oil_sea
+x 25
+y 112
+end
+arch cave17
+x 25
+y 112
+end
+arch oil_sea
+x 25
+y 113
+end
+arch blocked
+msg
+endmsg
+x 25
+y 113
+end
+arch oil_sea
+x 25
+y 114
+end
+arch blocked
+msg
+endmsg
+x 25
+y 114
+end
+arch oil_sea
+x 25
+y 115
+end
+arch blocked
+msg
+endmsg
+x 25
+y 115
+end
+arch oil_sea
+x 25
+y 116
+end
+arch blocked
+msg
+endmsg
+x 25
+y 116
+end
+arch oil_sea
+x 25
+y 117
+end
+arch blocked
+msg
+endmsg
+x 25
+y 117
 end
 arch marble
 x 26
@@ -11506,6 +19930,270 @@ x 26
 y 63
 end
 arch marble
+x 26
+y 64
+end
+arch cave21
+x 26
+y 64
+end
+arch marble
+x 26
+y 65
+end
+arch djinn_magenta
+x 26
+y 65
+end
+arch marble
+x 26
+y 66
+end
+arch marble
+x 26
+y 67
+end
+arch marble
+x 26
+y 68
+end
+arch marble
+x 26
+y 69
+end
+arch slevel_3_1
+x 26
+y 69
+end
+arch djinn_magenta
+x 26
+y 69
+end
+arch marble
+x 26
+y 70
+end
+arch slevel_3_1
+x 26
+y 70
+end
+arch oil_sea
+x 26
+y 71
+end
+arch oil_sea
+x 26
+y 72
+end
+arch oil_sea_ultra_viscous
+x 26
+y 73
+end
+arch djinn_magenta
+x 26
+y 73
+end
+arch oil_sea_ultra_viscous
+x 26
+y 74
+end
+arch oil_sea_ultra_viscous
+x 26
+y 75
+end
+arch oil_sea_ultra_viscous
+x 26
+y 76
+end
+arch oil_sea_ultra_viscous
+x 26
+y 77
+end
+arch oil_sea_ultra_viscous
+x 26
+y 78
+end
+arch oil_sea_ultra_viscous
+x 26
+y 79
+end
+arch oil_sea_ultra_viscous
+x 26
+y 80
+end
+arch oil_sea_ultra_viscous
+x 26
+y 81
+end
+arch oil_sea_ultra_viscous
+x 26
+y 82
+end
+arch oil_sea_ultra_viscous
+x 26
+y 83
+end
+arch oil_sea
+x 26
+y 84
+end
+arch oil_sea
+x 26
+y 85
+end
+arch oil_sea
+x 26
+y 86
+end
+arch oil_sea
+x 26
+y 87
+end
+arch oil_sea
+x 26
+y 88
+end
+arch oil_sea
+x 26
+y 89
+end
+arch oil_sea
+x 26
+y 90
+end
+arch oil_sea
+x 26
+y 91
+end
+arch oil_sea
+x 26
+y 92
+end
+arch oil_sea_ultra_viscous
+x 26
+y 93
+end
+arch oil_sea
+x 26
+y 94
+end
+arch oil_sea
+x 26
+y 95
+end
+arch oil_sea
+x 26
+y 96
+end
+arch oil_sea
+x 26
+y 97
+end
+arch oil_sea
+x 26
+y 98
+end
+arch oil_sea
+x 26
+y 99
+end
+arch oil_sea
+x 26
+y 100
+end
+arch oil_sea_ultra_viscous
+x 26
+y 101
+end
+arch oil_sea
+x 26
+y 102
+end
+arch oil_sea
+x 26
+y 103
+end
+arch oil_sea
+x 26
+y 104
+end
+arch oil_sea
+x 26
+y 105
+end
+arch oil_sea
+x 26
+y 106
+end
+arch oil_sea
+x 26
+y 107
+end
+arch oil_sea
+x 26
+y 108
+end
+arch oil_sea
+x 26
+y 109
+end
+arch oil_sea
+x 26
+y 110
+end
+arch oil_sea
+x 26
+y 111
+end
+arch oil_sea
+x 26
+y 112
+end
+arch cave16
+x 26
+y 112
+end
+arch oil_sea
+x 26
+y 113
+end
+arch cave3
+x 26
+y 113
+end
+arch oil_sea
+x 26
+y 114
+end
+arch cave3
+x 26
+y 114
+end
+arch oil_sea
+x 26
+y 115
+end
+arch cave3
+x 26
+y 115
+end
+arch oil_sea
+x 26
+y 116
+end
+arch cave3
+x 26
+y 116
+end
+arch oil_sea
+x 26
+y 117
+end
+arch cave3
+x 26
+y 117
+end
+arch marble
 x 27
 end
 arch blocked
@@ -11894,6 +20582,266 @@ end
 arch cave21
 x 27
 y 63
+end
+arch marble
+x 27
+y 64
+end
+arch cave21
+x 27
+y 64
+end
+arch marble
+x 27
+y 65
+end
+arch cave21
+x 27
+y 65
+end
+arch marble
+x 27
+y 66
+end
+arch marble
+x 27
+y 67
+end
+arch djinn_magenta
+x 27
+y 67
+end
+arch marble
+x 27
+y 68
+end
+arch marble
+x 27
+y 69
+end
+arch slevel_3_1
+x 27
+y 69
+end
+arch marble
+x 27
+y 70
+end
+arch slevel_3_1
+x 27
+y 70
+end
+arch oil_sea
+x 27
+y 71
+end
+arch oil_sea
+x 27
+y 72
+end
+arch oil_sea_ultra_viscous
+x 27
+y 73
+end
+arch oil_sea
+x 27
+y 74
+end
+arch oil_sea
+x 27
+y 75
+end
+arch oil_sea
+x 27
+y 76
+end
+arch oil_sea
+x 27
+y 77
+end
+arch oil_sea
+x 27
+y 78
+end
+arch oil_sea
+x 27
+y 79
+end
+arch oil_sea
+x 27
+y 80
+end
+arch oil_sea
+x 27
+y 81
+end
+arch oil_sea
+x 27
+y 82
+end
+arch oil_sea_ultra_viscous
+x 27
+y 83
+end
+arch oil_sea
+x 27
+y 84
+end
+arch oil_sea
+x 27
+y 85
+end
+arch oil_sea
+x 27
+y 86
+end
+arch oil_sea
+x 27
+y 87
+end
+arch oil_sea
+x 27
+y 88
+end
+arch oil_sea
+x 27
+y 89
+end
+arch oil_sea
+x 27
+y 90
+end
+arch oil_sea
+x 27
+y 91
+end
+arch oil_sea
+x 27
+y 92
+end
+arch oil_sea_ultra_viscous
+x 27
+y 93
+end
+arch oil_sea_ultra_viscous
+x 27
+y 94
+end
+arch oil_sea_ultra_viscous
+x 27
+y 95
+end
+arch oil_sea_ultra_viscous
+x 27
+y 96
+end
+arch djinn_magenta
+x 27
+y 96
+end
+arch oil_sea_ultra_viscous
+x 27
+y 97
+end
+arch oil_sea_ultra_viscous
+x 27
+y 98
+end
+arch oil_sea_ultra_viscous
+x 27
+y 99
+end
+arch oil_sea_ultra_viscous
+x 27
+y 100
+end
+arch oil_sea_ultra_viscous
+x 27
+y 101
+end
+arch oil_sea
+x 27
+y 102
+end
+arch oil_sea
+x 27
+y 103
+end
+arch oil_sea
+x 27
+y 104
+end
+arch oil_sea
+x 27
+y 105
+end
+arch oil_sea
+x 27
+y 106
+end
+arch oil_sea
+x 27
+y 107
+end
+arch oil_sea
+x 27
+y 108
+end
+arch oil_sea
+x 27
+y 109
+end
+arch oil_sea
+x 27
+y 110
+end
+arch oil_sea
+x 27
+y 111
+end
+arch oil_sea
+x 27
+y 112
+end
+arch oil_sea
+x 27
+y 113
+end
+arch cave15
+x 27
+y 113
+end
+arch oil_sea
+x 27
+y 114
+end
+arch cave1
+x 27
+y 114
+end
+arch oil_sea
+x 27
+y 115
+end
+arch cave1
+x 27
+y 115
+end
+arch oil_sea
+x 27
+y 116
+end
+arch cave1
+x 27
+y 116
+end
+arch oil_sea
+x 27
+y 117
+end
+arch cave1
+x 27
+y 117
 end
 arch marble
 x 28
@@ -12334,6 +21282,294 @@ end
 arch cave21
 x 28
 y 63
+end
+arch marble
+x 28
+y 64
+end
+arch cave21
+x 28
+y 64
+end
+arch marble
+x 28
+y 65
+end
+arch cave21
+x 28
+y 65
+end
+arch marble
+x 28
+y 66
+end
+arch cave21
+x 28
+y 66
+end
+arch marble
+x 28
+y 67
+end
+arch marble
+x 28
+y 68
+end
+arch marble
+x 28
+y 69
+end
+arch slevel_3_1
+x 28
+y 69
+end
+arch djinn_magenta
+x 28
+y 69
+end
+arch marble
+x 28
+y 70
+end
+arch slevel_3_1
+x 28
+y 70
+end
+arch oil_sea
+x 28
+y 71
+end
+arch oil_sea
+x 28
+y 72
+end
+arch oil_sea_ultra_viscous
+x 28
+y 73
+end
+arch oil_sea
+x 28
+y 74
+end
+arch oil_sea
+x 28
+y 75
+end
+arch oil_sea
+x 28
+y 76
+end
+arch oil_sea
+x 28
+y 77
+end
+arch oil_sea
+x 28
+y 78
+end
+arch oil_sea
+x 28
+y 79
+end
+arch oil_sea
+x 28
+y 80
+end
+arch oil_sea
+x 28
+y 81
+end
+arch oil_sea
+x 28
+y 82
+end
+arch oil_sea_ultra_viscous
+x 28
+y 83
+end
+arch oil_sea_ultra_viscous
+x 28
+y 84
+end
+arch oil_sea_ultra_viscous
+x 28
+y 85
+end
+arch oil_sea_ultra_viscous
+x 28
+y 86
+end
+arch oil_sea_ultra_viscous
+x 28
+y 87
+end
+arch djinn_magenta
+x 28
+y 87
+end
+arch oil_sea_ultra_viscous
+x 28
+y 88
+end
+arch oil_sea_ultra_viscous
+x 28
+y 89
+end
+arch oil_sea_ultra_viscous
+x 28
+y 90
+end
+arch oil_sea_ultra_viscous
+x 28
+y 91
+end
+arch oil_sea_ultra_viscous
+x 28
+y 92
+end
+arch oil_sea_ultra_viscous
+x 28
+y 93
+end
+arch oil_sea
+x 28
+y 94
+end
+arch oil_sea
+x 28
+y 95
+end
+arch oil_sea
+x 28
+y 96
+end
+arch oil_sea
+x 28
+y 97
+end
+arch oil_sea
+x 28
+y 98
+end
+arch oil_sea
+x 28
+y 99
+end
+arch oil_sea
+x 28
+y 100
+end
+arch oil_sea
+x 28
+y 101
+end
+arch oil_sea
+x 28
+y 102
+end
+arch oil_sea
+x 28
+y 103
+end
+arch oil_sea
+x 28
+y 104
+end
+arch oil_sea
+x 28
+y 105
+end
+arch oil_sea
+x 28
+y 106
+end
+arch oil_sea
+x 28
+y 107
+end
+arch oil_sea
+x 28
+y 108
+end
+arch oil_sea
+x 28
+y 109
+end
+arch cave15
+x 28
+y 109
+end
+arch oil_sea
+x 28
+y 110
+end
+arch cave1
+x 28
+y 110
+end
+arch oil_sea
+x 28
+y 111
+end
+arch cave1
+x 28
+y 111
+end
+arch oil_sea
+x 28
+y 112
+end
+arch cave1
+x 28
+y 112
+end
+arch oil_sea
+x 28
+y 113
+end
+arch cave20
+x 28
+y 113
+end
+arch oil_sea
+x 28
+y 114
+end
+arch blocked
+msg
+endmsg
+x 28
+y 114
+end
+arch oil_sea
+x 28
+y 115
+end
+arch blocked
+msg
+endmsg
+x 28
+y 115
+end
+arch oil_sea
+x 28
+y 116
+end
+arch blocked
+msg
+endmsg
+x 28
+y 116
+end
+arch oil_sea
+x 28
+y 117
+end
+arch blocked
+msg
+endmsg
+x 28
+y 117
 end
 arch marble
 x 29
@@ -12796,6 +22032,346 @@ x 29
 y 63
 end
 arch marble
+x 29
+y 64
+end
+arch cave21
+x 29
+y 64
+end
+arch marble
+x 29
+y 65
+end
+arch cave21
+x 29
+y 65
+end
+arch marble
+x 29
+y 66
+end
+arch cave21
+x 29
+y 66
+end
+arch marble
+x 29
+y 67
+end
+arch cave15
+x 29
+y 67
+end
+arch marble
+x 29
+y 68
+end
+arch cave1
+x 29
+y 68
+end
+arch marble
+x 29
+y 69
+end
+arch slevel_3_1
+x 29
+y 69
+end
+arch cave1
+x 29
+y 69
+end
+arch marble
+x 29
+y 70
+end
+arch slevel_3_1
+x 29
+y 70
+end
+arch cave1
+x 29
+y 70
+end
+arch oil_sea
+x 29
+y 71
+end
+arch cave1
+x 29
+y 71
+end
+arch oil_sea
+x 29
+y 72
+end
+arch cave14
+x 29
+y 72
+end
+arch oil_sea_ultra_viscous
+x 29
+y 73
+end
+arch oil_sea
+x 29
+y 74
+end
+arch cave15
+x 29
+y 74
+end
+arch oil_sea
+x 29
+y 75
+end
+arch cave1
+x 29
+y 75
+end
+arch oil_sea
+x 29
+y 76
+end
+arch cave1
+x 29
+y 76
+end
+arch oil_sea
+x 29
+y 77
+end
+arch cave14
+x 29
+y 77
+end
+arch oil_sea
+x 29
+y 78
+end
+arch oil_sea
+x 29
+y 79
+end
+arch oil_sea
+x 29
+y 80
+end
+arch oil_sea
+x 29
+y 81
+end
+arch oil_sea
+x 29
+y 82
+end
+arch oil_sea
+x 29
+y 83
+end
+arch oil_sea
+x 29
+y 84
+end
+arch oil_sea
+x 29
+y 85
+end
+arch oil_sea
+x 29
+y 86
+end
+arch oil_sea
+x 29
+y 87
+end
+arch oil_sea
+x 29
+y 88
+end
+arch oil_sea
+x 29
+y 89
+end
+arch oil_sea
+x 29
+y 90
+end
+arch oil_sea
+x 29
+y 91
+end
+arch oil_sea
+x 29
+y 92
+end
+arch oil_sea
+x 29
+y 93
+end
+arch oil_sea
+x 29
+y 94
+end
+arch oil_sea
+x 29
+y 95
+end
+arch oil_sea
+x 29
+y 96
+end
+arch oil_sea
+x 29
+y 97
+end
+arch oil_sea
+x 29
+y 98
+end
+arch oil_sea
+x 29
+y 99
+end
+arch oil_sea
+x 29
+y 100
+end
+arch oil_sea
+x 29
+y 101
+end
+arch oil_sea
+x 29
+y 102
+end
+arch oil_sea
+x 29
+y 103
+end
+arch oil_sea
+x 29
+y 104
+end
+arch oil_sea
+x 29
+y 105
+end
+arch oil_sea
+x 29
+y 106
+end
+arch cave15
+x 29
+y 106
+end
+arch oil_sea
+x 29
+y 107
+end
+arch cave1
+x 29
+y 107
+end
+arch oil_sea
+x 29
+y 108
+end
+arch cave1
+x 29
+y 108
+end
+arch oil_sea
+x 29
+y 109
+end
+arch cave20
+x 29
+y 109
+end
+arch oil_sea
+x 29
+y 110
+end
+arch blocked
+msg
+endmsg
+x 29
+y 110
+end
+arch oil_sea
+x 29
+y 111
+end
+arch blocked
+msg
+endmsg
+x 29
+y 111
+end
+arch oil_sea
+x 29
+y 112
+end
+arch blocked
+msg
+endmsg
+x 29
+y 112
+end
+arch oil_sea
+x 29
+y 113
+end
+arch blocked
+msg
+endmsg
+x 29
+y 113
+end
+arch oil_sea
+x 29
+y 114
+end
+arch blocked
+msg
+endmsg
+x 29
+y 114
+end
+arch oil_sea
+x 29
+y 115
+end
+arch blocked
+msg
+endmsg
+x 29
+y 115
+end
+arch oil_sea
+x 29
+y 116
+end
+arch blocked
+msg
+endmsg
+x 29
+y 116
+end
+arch oil_sea
+x 29
+y 117
+end
+arch blocked
+msg
+endmsg
+x 29
+y 117
+end
+arch marble
 x 30
 end
 arch blocked
@@ -13334,6 +22910,431 @@ x 30
 y 63
 end
 arch marble
+x 30
+y 64
+end
+arch cave1
+x 30
+y 64
+end
+arch marble
+x 30
+y 65
+end
+arch cave1
+x 30
+y 65
+end
+arch marble
+x 30
+y 66
+end
+arch cave1
+x 30
+y 66
+end
+arch marble
+x 30
+y 67
+end
+arch cave20
+x 30
+y 67
+end
+arch marble
+x 30
+y 68
+end
+arch blocked
+msg
+endmsg
+x 30
+y 68
+end
+arch marble
+x 30
+y 69
+end
+arch slevel_3_1
+x 30
+y 69
+end
+arch blocked
+msg
+endmsg
+x 30
+y 69
+end
+arch marble
+x 30
+y 70
+end
+arch slevel_3_1
+x 30
+y 70
+end
+arch blocked
+msg
+endmsg
+x 30
+y 70
+end
+arch oil_sea
+x 30
+y 71
+end
+arch blocked
+msg
+endmsg
+x 30
+y 71
+end
+arch oil_sea
+x 30
+y 72
+end
+arch cave4
+x 30
+y 72
+end
+arch oil_sea_ultra_viscous
+x 30
+y 73
+end
+arch ladder_down
+slaying theaterb4
+hp 30
+sp 73
+x 30
+y 73
+end
+arch oil_sea
+x 30
+y 74
+end
+arch cave2
+x 30
+y 74
+end
+arch oil_sea
+x 30
+y 75
+end
+arch blocked
+msg
+endmsg
+x 30
+y 75
+end
+arch oil_sea
+x 30
+y 76
+end
+arch blocked
+msg
+endmsg
+x 30
+y 76
+end
+arch oil_sea
+x 30
+y 77
+end
+arch cave19
+x 30
+y 77
+end
+arch oil_sea
+x 30
+y 78
+end
+arch cave1
+x 30
+y 78
+end
+arch oil_sea
+x 30
+y 79
+end
+arch cave1
+x 30
+y 79
+end
+arch oil_sea
+x 30
+y 80
+end
+arch cave1
+x 30
+y 80
+end
+arch oil_sea
+x 30
+y 81
+end
+arch cave1
+x 30
+y 81
+end
+arch oil_sea
+x 30
+y 82
+end
+arch cave1
+x 30
+y 82
+end
+arch oil_sea
+x 30
+y 83
+end
+arch cave1
+x 30
+y 83
+end
+arch oil_sea
+x 30
+y 84
+end
+arch cave1
+x 30
+y 84
+end
+arch oil_sea
+x 30
+y 85
+end
+arch cave14
+x 30
+y 85
+end
+arch oil_sea
+x 30
+y 86
+end
+arch oil_sea
+x 30
+y 87
+end
+arch oil_sea
+x 30
+y 88
+end
+arch oil_sea
+x 30
+y 89
+end
+arch oil_sea
+x 30
+y 90
+end
+arch oil_sea
+x 30
+y 91
+end
+arch oil_sea
+x 30
+y 92
+end
+arch oil_sea
+x 30
+y 93
+end
+arch oil_sea
+x 30
+y 94
+end
+arch oil_sea
+x 30
+y 95
+end
+arch oil_sea
+x 30
+y 96
+end
+arch oil_sea
+x 30
+y 97
+end
+arch oil_sea
+x 30
+y 98
+end
+arch oil_sea
+x 30
+y 99
+end
+arch cave15
+x 30
+y 99
+end
+arch oil_sea
+x 30
+y 100
+end
+arch cave1
+x 30
+y 100
+end
+arch oil_sea
+x 30
+y 101
+end
+arch cave1
+x 30
+y 101
+end
+arch oil_sea
+x 30
+y 102
+end
+arch cave1
+x 30
+y 102
+end
+arch oil_sea
+x 30
+y 103
+end
+arch cave1
+x 30
+y 103
+end
+arch oil_sea
+x 30
+y 104
+end
+arch cave1
+x 30
+y 104
+end
+arch oil_sea
+x 30
+y 105
+end
+arch cave1
+x 30
+y 105
+end
+arch oil_sea
+x 30
+y 106
+end
+arch cave20
+x 30
+y 106
+end
+arch oil_sea
+x 30
+y 107
+end
+arch blocked
+msg
+endmsg
+x 30
+y 107
+end
+arch oil_sea
+x 30
+y 108
+end
+arch blocked
+msg
+endmsg
+x 30
+y 108
+end
+arch oil_sea
+x 30
+y 109
+end
+arch blocked
+msg
+endmsg
+x 30
+y 109
+end
+arch oil_sea
+x 30
+y 110
+end
+arch blocked
+msg
+endmsg
+x 30
+y 110
+end
+arch oil_sea
+x 30
+y 111
+end
+arch blocked
+msg
+endmsg
+x 30
+y 111
+end
+arch oil_sea
+x 30
+y 112
+end
+arch blocked
+msg
+endmsg
+x 30
+y 112
+end
+arch oil_sea
+x 30
+y 113
+end
+arch blocked
+msg
+endmsg
+x 30
+y 113
+end
+arch oil_sea
+x 30
+y 114
+end
+arch blocked
+msg
+endmsg
+x 30
+y 114
+end
+arch oil_sea
+x 30
+y 115
+end
+arch blocked
+msg
+endmsg
+x 30
+y 115
+end
+arch oil_sea
+x 30
+y 116
+end
+arch blocked
+msg
+endmsg
+x 30
+y 116
+end
+arch oil_sea
+x 30
+y 117
+end
+arch blocked
+msg
+endmsg
+x 30
+y 117
+end
+arch marble
 x 31
 end
 arch blocked
@@ -13942,4 +23943,516 @@ msg
 endmsg
 x 31
 y 63
+end
+arch marble
+x 31
+y 64
+end
+arch blocked
+msg
+endmsg
+x 31
+y 64
+end
+arch marble
+x 31
+y 65
+end
+arch blocked
+msg
+endmsg
+x 31
+y 65
+end
+arch marble
+x 31
+y 66
+end
+arch blocked
+msg
+endmsg
+x 31
+y 66
+end
+arch marble
+x 31
+y 67
+end
+arch blocked
+msg
+endmsg
+x 31
+y 67
+end
+arch marble
+x 31
+y 68
+end
+arch blocked
+msg
+endmsg
+x 31
+y 68
+end
+arch marble
+x 31
+y 69
+end
+arch slevel_3_1
+x 31
+y 69
+end
+arch blocked
+msg
+endmsg
+x 31
+y 69
+end
+arch marble
+x 31
+y 70
+end
+arch slevel_3_1
+x 31
+y 70
+end
+arch blocked
+msg
+endmsg
+x 31
+y 70
+end
+arch oil_sea
+x 31
+y 71
+end
+arch blocked
+msg
+endmsg
+x 31
+y 71
+end
+arch oil_sea
+x 31
+y 72
+end
+arch cave19
+x 31
+y 72
+end
+arch oil_sea
+x 31
+y 73
+end
+arch cave1
+x 31
+y 73
+end
+arch oil_sea
+x 31
+y 74
+end
+arch cave20
+x 31
+y 74
+end
+arch oil_sea
+x 31
+y 75
+end
+arch blocked
+msg
+endmsg
+x 31
+y 75
+end
+arch oil_sea
+x 31
+y 76
+end
+arch blocked
+msg
+endmsg
+x 31
+y 76
+end
+arch oil_sea
+x 31
+y 77
+end
+arch blocked
+msg
+endmsg
+x 31
+y 77
+end
+arch oil_sea
+x 31
+y 78
+end
+arch blocked
+msg
+endmsg
+x 31
+y 78
+end
+arch oil_sea
+x 31
+y 79
+end
+arch blocked
+msg
+endmsg
+x 31
+y 79
+end
+arch oil_sea
+x 31
+y 80
+end
+arch blocked
+msg
+endmsg
+x 31
+y 80
+end
+arch oil_sea
+x 31
+y 81
+end
+arch blocked
+msg
+endmsg
+x 31
+y 81
+end
+arch oil_sea
+x 31
+y 82
+end
+arch blocked
+msg
+endmsg
+x 31
+y 82
+end
+arch oil_sea
+x 31
+y 83
+end
+arch blocked
+msg
+endmsg
+x 31
+y 83
+end
+arch oil_sea
+x 31
+y 84
+end
+arch blocked
+msg
+endmsg
+x 31
+y 84
+end
+arch oil_sea
+x 31
+y 85
+end
+arch cave19
+x 31
+y 85
+end
+arch oil_sea
+x 31
+y 86
+end
+arch cave1
+x 31
+y 86
+end
+arch oil_sea
+x 31
+y 87
+end
+arch cave1
+x 31
+y 87
+end
+arch oil_sea
+x 31
+y 88
+end
+arch cave1
+x 31
+y 88
+end
+arch oil_sea
+x 31
+y 89
+end
+arch cave1
+x 31
+y 89
+end
+arch oil_sea
+x 31
+y 90
+end
+arch cave1
+x 31
+y 90
+end
+arch oil_sea
+x 31
+y 91
+end
+arch cave1
+x 31
+y 91
+end
+arch oil_sea
+x 31
+y 92
+end
+arch cave1
+x 31
+y 92
+end
+arch oil_sea
+x 31
+y 93
+end
+arch cave1
+x 31
+y 93
+end
+arch oil_sea
+x 31
+y 94
+end
+arch cave1
+x 31
+y 94
+end
+arch oil_sea
+x 31
+y 95
+end
+arch cave1
+x 31
+y 95
+end
+arch oil_sea
+x 31
+y 96
+end
+arch cave1
+x 31
+y 96
+end
+arch oil_sea
+x 31
+y 97
+end
+arch cave1
+x 31
+y 97
+end
+arch oil_sea
+x 31
+y 98
+end
+arch cave1
+x 31
+y 98
+end
+arch oil_sea
+x 31
+y 99
+end
+arch cave20
+x 31
+y 99
+end
+arch oil_sea
+x 31
+y 100
+end
+arch blocked
+msg
+endmsg
+x 31
+y 100
+end
+arch oil_sea
+x 31
+y 101
+end
+arch blocked
+msg
+endmsg
+x 31
+y 101
+end
+arch oil_sea
+x 31
+y 102
+end
+arch blocked
+msg
+endmsg
+x 31
+y 102
+end
+arch oil_sea
+x 31
+y 103
+end
+arch blocked
+msg
+endmsg
+x 31
+y 103
+end
+arch oil_sea
+x 31
+y 104
+end
+arch blocked
+msg
+endmsg
+x 31
+y 104
+end
+arch oil_sea
+x 31
+y 105
+end
+arch blocked
+msg
+endmsg
+x 31
+y 105
+end
+arch oil_sea
+x 31
+y 106
+end
+arch blocked
+msg
+endmsg
+x 31
+y 106
+end
+arch oil_sea
+x 31
+y 107
+end
+arch blocked
+msg
+endmsg
+x 31
+y 107
+end
+arch oil_sea
+x 31
+y 108
+end
+arch blocked
+msg
+endmsg
+x 31
+y 108
+end
+arch oil_sea
+x 31
+y 109
+end
+arch blocked
+msg
+endmsg
+x 31
+y 109
+end
+arch oil_sea
+x 31
+y 110
+end
+arch blocked
+msg
+endmsg
+x 31
+y 110
+end
+arch oil_sea
+x 31
+y 111
+end
+arch blocked
+msg
+endmsg
+x 31
+y 111
+end
+arch oil_sea
+x 31
+y 112
+end
+arch blocked
+msg
+endmsg
+x 31
+y 112
+end
+arch oil_sea
+x 31
+y 113
+end
+arch blocked
+msg
+endmsg
+x 31
+y 113
+end
+arch oil_sea
+x 31
+y 114
+end
+arch blocked
+msg
+endmsg
+x 31
+y 114
+end
+arch oil_sea
+x 31
+y 115
+end
+arch blocked
+msg
+endmsg
+x 31
+y 115
+end
+arch oil_sea
+x 31
+y 116
+end
+arch blocked
+msg
+endmsg
+x 31
+y 116
+end
+arch oil_sea
+x 31
+y 117
+end
+arch blocked
+msg
+endmsg
+x 31
+y 117
 end
