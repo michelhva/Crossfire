@@ -8925,6 +8925,13 @@ arch dungeon_magic
 x 11
 y 83
 end
+arch mover_4
+x 11
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -8951,6 +8958,13 @@ end
 arch dungeon_magic
 x 11
 y 84
+end
+arch mover_3
+x 11
+y 84
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -8979,6 +8993,13 @@ arch dungeon_magic
 x 11
 y 85
 end
+arch mover_3
+x 11
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9005,6 +9026,13 @@ end
 arch dungeon_magic
 x 11
 y 86
+end
+arch mover_3
+x 11
+y 86
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -9033,6 +9061,13 @@ arch dungeon_magic
 x 11
 y 87
 end
+arch mover_3
+x 11
+y 87
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9059,6 +9094,13 @@ end
 arch dungeon_magic
 x 11
 y 88
+end
+arch mover_3
+x 11
+y 88
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -9087,6 +9129,13 @@ arch dungeon_magic
 x 11
 y 89
 end
+arch mover_3
+x 11
+y 89
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9113,6 +9162,13 @@ end
 arch dungeon_magic
 x 11
 y 90
+end
+arch mover_3
+x 11
+y 90
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -9141,6 +9197,13 @@ arch dungeon_magic
 x 11
 y 91
 end
+arch mover_3
+x 11
+y 91
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9167,6 +9230,13 @@ end
 arch dungeon_magic
 x 11
 y 92
+end
+arch mover_2
+x 11
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -9839,6 +9909,13 @@ arch dungeon_magic
 x 12
 y 83
 end
+arch mover_5
+x 12
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -9997,6 +10074,13 @@ end
 arch dungeon_magic
 x 12
 y 92
+end
+arch mover_1
+x 12
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10697,6 +10781,13 @@ arch dungeon_magic
 x 13
 y 83
 end
+arch mover_5
+x 13
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10855,6 +10946,13 @@ end
 arch dungeon_magic
 x 13
 y 92
+end
+arch mover_1
+x 13
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -11584,6 +11682,13 @@ end
 arch dungeon_magic
 x 14
 y 83
+end
+arch mover_5
+x 14
+y 83
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -11748,6 +11853,13 @@ arch dungeon_magic
 x 14
 y 92
 end
+arch mover_1
+x 14
+y 92
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12465,6 +12577,13 @@ arch dungeon_magic
 x 15
 y 83
 end
+arch mover_5
+x 15
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -12627,6 +12746,13 @@ end
 arch dungeon_magic
 x 15
 y 92
+end
+arch mover_1
+x 15
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -13327,6 +13453,13 @@ arch dungeon_magic
 x 16
 y 83
 end
+arch mover_5
+x 16
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13481,6 +13614,13 @@ end
 arch dungeon_magic
 x 16
 y 92
+end
+arch mover_1
+x 16
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -14143,6 +14283,13 @@ arch dungeon_magic
 x 17
 y 83
 end
+arch mover_5
+x 17
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14297,6 +14444,13 @@ end
 arch dungeon_magic
 x 17
 y 92
+end
+arch mover_1
+x 17
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -14983,6 +15137,13 @@ arch dungeon_magic
 x 18
 y 83
 end
+arch mover_5
+x 18
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15145,6 +15306,13 @@ end
 arch dungeon_magic
 x 18
 y 92
+end
+arch mover_1
+x 18
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -15833,6 +16001,13 @@ arch dungeon_magic
 x 19
 y 83
 end
+arch mover_5
+x 19
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -15987,6 +16162,13 @@ end
 arch dungeon_magic
 x 19
 y 92
+end
+arch mover_1
+x 19
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -16683,6 +16865,13 @@ arch dungeon_magic
 x 20
 y 83
 end
+arch mover_6
+x 20
+y 83
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -16709,6 +16898,13 @@ end
 arch dungeon_magic
 x 20
 y 84
+end
+arch mover_7
+x 20
+y 84
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -16737,6 +16933,13 @@ arch dungeon_magic
 x 20
 y 85
 end
+arch mover_7
+x 20
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -16763,6 +16966,13 @@ end
 arch dungeon_magic
 x 20
 y 86
+end
+arch mover_7
+x 20
+y 86
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -16791,6 +17001,13 @@ arch dungeon_magic
 x 20
 y 87
 end
+arch mover_7
+x 20
+y 87
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -16817,6 +17034,13 @@ end
 arch dungeon_magic
 x 20
 y 88
+end
+arch mover_7
+x 20
+y 88
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -16845,6 +17069,13 @@ arch dungeon_magic
 x 20
 y 89
 end
+arch mover_7
+x 20
+y 89
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -16871,6 +17102,13 @@ end
 arch dungeon_magic
 x 20
 y 90
+end
+arch mover_7
+x 20
+y 90
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -16899,6 +17137,13 @@ arch dungeon_magic
 x 20
 y 91
 end
+arch mover_7
+x 20
+y 91
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -16925,6 +17170,13 @@ end
 arch dungeon_magic
 x 20
 y 92
+end
+arch mover_8
+x 20
+y 92
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
