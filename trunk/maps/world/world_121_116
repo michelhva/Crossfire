@@ -13,10 +13,10 @@ Email: gnu@foo.bar
 Date: Sun Jun  2 21:14:53 2002
 endmsg
 outdoor 1
-tile_path_1 world_121_115
-tile_path_2 world_122_116
-tile_path_3 world_121_117
-tile_path_4 world_120_116
+tile_path_1 /world/world_121_115
+tile_path_2 /world/world_122_116
+tile_path_3 /world/world_121_117
+tile_path_4 /world/world_120_116
 end
 arch desert
 elevation 89
@@ -10156,6 +10156,7 @@ end
 arch westcwall_2_1_2
 x 38
 y 28
+blocksview 0
 end
 arch city_tower_west
 x 38
@@ -10945,9 +10946,10 @@ arch grass
 x 40
 y 37
 end
-arch igateTrg1
+arch igate_closed_1
 x 40
 y 37
+speed 0.500000
 end
 arch westcityport_a
 x 40
@@ -13200,9 +13202,10 @@ arch grass
 x 46
 y 37
 end
-arch igateTrg1
+arch igate_closed_1
 x 46
 y 37
+speed 0.500000
 end
 arch westcityport_a
 x 46
@@ -13817,6 +13820,7 @@ end
 arch westcwall_2_1_2
 x 48
 y 28
+blocksview 0
 end
 arch city_tower_west
 x 48
