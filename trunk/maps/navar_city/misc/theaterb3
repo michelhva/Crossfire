@@ -911,18 +911,12 @@ arch marble
 x 1
 y 2
 end
-arch button_small
-x 1
-y 2
-weight 1000
-connected 2
-end
 arch spikes_open
 x 1
 y 2
 speed 0.050000
 value 1
-connected 2
+connected 1
 end
 arch marble
 x 1
@@ -1879,13 +1873,6 @@ y 2
 weight 2000
 connected 3
 end
-arch grate_open_1
-x 2
-y 2
-speed 0.500000
-value 1
-connected 1
-end
 arch marble
 x 2
 y 3
@@ -8907,7 +8894,7 @@ x 11
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 83
 speed 0.100000
@@ -8941,7 +8928,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 84
 speed 0.100000
@@ -8975,7 +8962,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 85
 speed 0.100000
@@ -9009,7 +8996,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 86
 speed 0.100000
@@ -9043,7 +9030,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 87
 speed 0.100000
@@ -9077,7 +9064,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 88
 speed 0.100000
@@ -9111,7 +9098,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 89
 speed 0.100000
@@ -9145,7 +9132,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 90
 speed 0.100000
@@ -9179,7 +9166,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 91
 speed 0.100000
@@ -9213,7 +9200,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 11
 y 92
 speed 0.100000
@@ -9891,7 +9878,7 @@ x 12
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 83
 speed 0.100000
@@ -9925,7 +9912,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 84
 speed 0.100000
@@ -9937,79 +9924,79 @@ name nothing
 name_pl nothing
 x 12
 y 84
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 12
-y 85
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 12
-y 85
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 12
-y 86
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 12
-y 86
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 12
-y 87
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 12
-y 87
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 12
-y 88
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 12
-y 88
 no_pass 0
 blocksview 0
 end
 arch fog
 x 12
+y 84
+end
+arch detector
+slaying rod of ali
+x 12
+y 85
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 85
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 12
+y 86
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 86
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 12
+y 87
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 87
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 12
 y 88
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 12
+y 88
+no_pass 0
+blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 89
 speed 0.100000
@@ -10025,7 +10012,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 90
 speed 0.100000
@@ -10041,7 +10028,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 91
 speed 0.100000
@@ -10057,7 +10044,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 12
 y 92
 speed 0.100000
@@ -10763,7 +10750,7 @@ x 13
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 83
 speed 0.100000
@@ -10797,7 +10784,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 84
 speed 0.100000
@@ -10813,19 +10800,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 85
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_4
-x 13
-y 85
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10836,19 +10816,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 86
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 86
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10859,19 +10832,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 87
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 87
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10882,19 +10848,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 88
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 88
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10905,19 +10864,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 89
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 89
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10928,19 +10880,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 90
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 90
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10951,19 +10896,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 91
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_3
-x 13
-y 91
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -10973,8 +10911,12 @@ y 91
 no_pass 0
 blocksview 0
 end
+arch fog
+x 13
+y 91
+end
 arch detector
-slaying djinn
+slaying rod of ali
 x 13
 y 92
 speed 0.100000
@@ -10992,7 +10934,7 @@ arch dungeon_magic
 x 13
 y 92
 end
-arch mover_2
+arch mover_1
 x 13
 y 92
 speed 1.000000
@@ -11710,7 +11652,7 @@ x 14
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 14
 y 83
 speed 0.100000
@@ -11744,7 +11686,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 14
 y 84
 speed 0.100000
@@ -11760,32 +11702,9 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 14
 y 85
-speed 0.100000
-invisible 1
-connected 1
-end
-arch mover_5
-x 14
-y 85
-speed 1.000000
-level 1
-attacktype 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 85
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 14
-y 86
 speed 0.100000
 invisible 1
 connected 1
@@ -11794,16 +11713,36 @@ arch blocked
 name nothing
 name_pl nothing
 x 14
-y 86
+y 85
 no_pass 0
 blocksview 0
 end
 arch djinn_magenta_big
 x 14
+y 85
+carrying 7000
+arch rod_heavy
+name rod of ali
+end
+end
+arch detector
+slaying rod of ali
+x 14
 y 86
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 86
+no_pass 0
+blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 14
 y 87
 speed 0.100000
@@ -11815,79 +11754,79 @@ name nothing
 name_pl nothing
 x 14
 y 87
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 14
-y 88
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 88
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 14
-y 89
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 89
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 14
-y 90
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 90
-no_pass 0
-blocksview 0
-end
-arch detector
-slaying djinn
-x 14
-y 91
-speed 0.100000
-invisible 1
-connected 1
-end
-arch blocked
-name nothing
-name_pl nothing
-x 14
-y 91
 no_pass 0
 blocksview 0
 end
 arch fog
 x 14
-y 91
+y 87
 end
 arch detector
-slaying djinn
+slaying rod of ali
+x 14
+y 88
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 88
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 14
+y 89
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 89
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 14
+y 90
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 90
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
+x 14
+y 91
+speed 0.100000
+invisible 1
+connected 1
+end
+arch blocked
+name nothing
+name_pl nothing
+x 14
+y 91
+no_pass 0
+blocksview 0
+end
+arch detector
+slaying rod of ali
 x 14
 y 92
 speed 0.100000
@@ -12611,7 +12550,7 @@ x 15
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 83
 speed 0.100000
@@ -12645,7 +12584,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 84
 speed 0.100000
@@ -12660,24 +12599,13 @@ y 84
 no_pass 0
 blocksview 0
 end
-arch fog
-x 15
-y 84
-end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 85
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_5
-x 15
-y 85
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -12688,7 +12616,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 86
 speed 0.100000
@@ -12704,7 +12632,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 87
 speed 0.100000
@@ -12719,12 +12647,8 @@ y 87
 no_pass 0
 blocksview 0
 end
-arch fog
-x 15
-y 87
-end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 88
 speed 0.100000
@@ -12740,7 +12664,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 89
 speed 0.100000
@@ -12756,7 +12680,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 90
 speed 0.100000
@@ -12772,7 +12696,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 91
 speed 0.100000
@@ -12788,7 +12712,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 15
 y 92
 speed 0.100000
@@ -13494,7 +13418,7 @@ x 16
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 83
 speed 0.100000
@@ -13528,7 +13452,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 84
 speed 0.100000
@@ -13544,19 +13468,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 85
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_5
-x 16
-y 85
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -13567,7 +13484,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 86
 speed 0.100000
@@ -13583,7 +13500,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 87
 speed 0.100000
@@ -13599,7 +13516,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 88
 speed 0.100000
@@ -13615,7 +13532,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 89
 speed 0.100000
@@ -13631,7 +13548,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 90
 speed 0.100000
@@ -13647,7 +13564,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 91
 speed 0.100000
@@ -13663,7 +13580,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 16
 y 92
 speed 0.100000
@@ -14331,7 +14248,7 @@ x 17
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 83
 speed 0.100000
@@ -14365,7 +14282,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 84
 speed 0.100000
@@ -14381,19 +14298,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 85
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_6
-x 17
-y 85
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14404,19 +14314,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 86
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 86
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14427,19 +14330,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 87
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 87
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14450,19 +14346,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 88
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 88
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14473,19 +14362,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 89
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 89
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14495,20 +14377,17 @@ y 89
 no_pass 0
 blocksview 0
 end
+arch fog
+x 17
+y 89
+end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 90
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 90
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14519,19 +14398,12 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 91
 speed 0.100000
 invisible 1
 connected 1
-end
-arch mover_7
-x 17
-y 91
-speed 1.000000
-level 1
-attacktype 1
 end
 arch blocked
 name nothing
@@ -14542,7 +14414,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 17
 y 92
 speed 0.100000
@@ -14560,7 +14432,7 @@ arch dungeon_magic
 x 17
 y 92
 end
-arch mover_8
+arch mover_1
 x 17
 y 92
 speed 1.000000
@@ -15234,7 +15106,7 @@ x 18
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 83
 speed 0.100000
@@ -15268,7 +15140,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 84
 speed 0.100000
@@ -15283,8 +15155,12 @@ y 84
 no_pass 0
 blocksview 0
 end
+arch fog
+x 18
+y 84
+end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 85
 speed 0.100000
@@ -15300,7 +15176,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 86
 speed 0.100000
@@ -15315,12 +15191,8 @@ y 86
 no_pass 0
 blocksview 0
 end
-arch fog
-x 18
-y 86
-end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 87
 speed 0.100000
@@ -15336,7 +15208,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 88
 speed 0.100000
@@ -15352,7 +15224,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 89
 speed 0.100000
@@ -15368,7 +15240,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 90
 speed 0.100000
@@ -15383,12 +15255,8 @@ y 90
 no_pass 0
 blocksview 0
 end
-arch fog
-x 18
-y 90
-end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 91
 speed 0.100000
@@ -15404,7 +15272,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 18
 y 92
 speed 0.100000
@@ -16098,7 +15966,7 @@ x 19
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 83
 speed 0.100000
@@ -16132,7 +16000,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 84
 speed 0.100000
@@ -16148,7 +16016,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 85
 speed 0.100000
@@ -16164,7 +16032,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 86
 speed 0.100000
@@ -16180,7 +16048,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 87
 speed 0.100000
@@ -16196,7 +16064,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 88
 speed 0.100000
@@ -16212,7 +16080,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 89
 speed 0.100000
@@ -16228,7 +16096,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 90
 speed 0.100000
@@ -16244,7 +16112,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 91
 speed 0.100000
@@ -16260,7 +16128,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 19
 y 92
 speed 0.100000
@@ -16962,7 +16830,7 @@ x 20
 y 82
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 83
 speed 0.100000
@@ -16996,7 +16864,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 84
 speed 0.100000
@@ -17030,7 +16898,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 85
 speed 0.100000
@@ -17064,7 +16932,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 86
 speed 0.100000
@@ -17098,7 +16966,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 87
 speed 0.100000
@@ -17132,7 +17000,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 88
 speed 0.100000
@@ -17166,7 +17034,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 89
 speed 0.100000
@@ -17200,7 +17068,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 90
 speed 0.100000
@@ -17234,7 +17102,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 91
 speed 0.100000
@@ -17268,7 +17136,7 @@ no_pass 0
 blocksview 0
 end
 arch detector
-slaying djinn
+slaying rod of ali
 x 20
 y 92
 speed 0.100000
