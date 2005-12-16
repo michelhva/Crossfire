@@ -121,54 +121,112 @@ arch shallow_sea
 y 25
 elevation -9
 end
-arch shallow_sea
+arch dungeon_magic
 y 26
-elevation -9
+end
+arch grass
+y 26
+end
+arch westcwall_2_1_2
+y 26
+end
+arch dungeon_magic
+y 27
 end
 arch grass
 y 27
-elevation 16
+end
+arch shallow_sea
+y 27
+end
+arch dungeon_magic
+y 28
 end
 arch grass
 y 28
-elevation 49
 end
-arch woods_3
+arch shallow_sea
+y 28
+end
+arch dungeon_magic
 y 29
-elevation 1231
 end
-arch hills
+arch grass
+y 29
+end
+arch shallow_sea
+y 29
+end
+arch dungeon_magic
 y 30
-elevation 1963
 end
-arch woods_2
+arch grass
+y 30
+end
+arch shallow_sea
+y 30
+end
+arch dungeon_magic
 y 31
-elevation 2321
 end
-arch woods_2
+arch grass
+y 31
+end
+arch shallow_sea
+y 31
+end
+arch dungeon_magic
 y 32
-elevation 1596
 end
-arch steppe
+arch grass
+y 32
+end
+arch shallow_sea
+y 32
+end
+arch dungeon_magic
 y 33
-elevation 4227
 end
-arch hills_rocky
+arch grass
+y 33
+end
+arch shallow_sea
+y 33
+end
+arch dungeon_magic
 y 34
-elevation 3541
+end
+arch grass
+y 34
+end
+arch shallow_sea
+y 34
+end
+arch dungeon_magic
+y 35
 end
 arch grass
 y 35
-elevation 865
 end
-arch desert
+arch shallow_sea
+y 35
+end
+arch dungeon_magic
 y 36
-elevation 196
+end
+arch grass
+y 36
+end
+arch shallow_sea
+y 36
+end
+arch dungeon_magic
+y 37
 end
 arch grass
 y 37
 end
-arch westcwall_2_1_2
+arch westcityport_a
 y 37
 end
 arch dungeon_magic
@@ -378,34 +436,77 @@ x 1
 y 25
 elevation 2
 end
-arch shallow_sea
+arch dungeon_magic
 x 1
 y 26
 end
 arch grass
 x 1
-y 27
-elevation 23
+y 26
 end
-arch brush
+arch westcwall_2_2_3
+x 1
+y 26
+end
+arch dungeon_magic
+x 1
+y 27
+end
+arch grass
+x 1
+y 27
+end
+arch westcwall_2_1_1
+x 1
+y 27
+end
+arch dungeon_magic
 x 1
 y 28
-elevation 38
+end
+arch grass
+x 1
+y 28
+end
+arch westcwall_2_1_1
+x 1
+y 28
+end
+arch dungeon_magic
+x 1
+y 29
 end
 arch grass
 x 1
 y 29
-elevation 615
 end
-arch tree
+arch westcwall_2_1_1
+x 1
+y 29
+end
+arch dungeon_magic
 x 1
 y 30
-elevation 1094
 end
-arch tree
+arch grass
+x 1
+y 30
+end
+arch westcwall_2_1_1
+x 1
+y 30
+end
+arch dungeon_magic
 x 1
 y 31
-elevation 1612
+end
+arch grass
+x 1
+y 31
+end
+arch westcwall_2_1_1
+x 1
+y 31
 end
 arch dungeon_magic
 x 1
@@ -415,7 +516,7 @@ arch grass
 x 1
 y 32
 end
-arch westcwall_2_2_2
+arch westcwall_3_2
 x 1
 y 32
 end
@@ -1611,7 +1712,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 5
 y 1
@@ -1673,7 +1773,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 5
 y 9
@@ -2620,7 +2719,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 8
 y 3
@@ -4392,7 +4490,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 13
 y 2
@@ -4754,7 +4851,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 14
 end
@@ -5209,7 +5305,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 15
 y 17
@@ -5912,7 +6007,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 17
 y 12
@@ -5949,7 +6043,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 17
 y 15
@@ -6257,7 +6350,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 18
 y 7
@@ -6334,7 +6426,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 18
 y 18
@@ -6608,7 +6699,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 19
 y 3
@@ -6670,7 +6760,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 19
 y 11
@@ -7082,7 +7171,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 20
 y 14
@@ -7502,7 +7590,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 21
 y 30
@@ -7753,7 +7840,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 22
 y 7
@@ -7825,7 +7911,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 22
 y 17
@@ -7882,7 +7967,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 22
 y 24
@@ -7919,7 +8003,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 22
 y 27
@@ -8482,7 +8565,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 24
 y 12
@@ -8539,7 +8621,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 24
 y 19
@@ -8809,7 +8890,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 25
 y 22
@@ -9043,7 +9123,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 26
 y 18
@@ -9115,7 +9194,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 26
 y 28
@@ -9161,7 +9239,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 26
 y 33
@@ -9275,7 +9352,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 27
 y 5
@@ -9347,7 +9423,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 27
 y 15
@@ -9630,7 +9705,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 28
 y 21
@@ -9706,7 +9780,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 28
 y 32
@@ -9815,7 +9888,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 29
 y 3
@@ -9877,7 +9949,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 29
 y 11
@@ -9964,7 +10035,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 29
 y 24
@@ -10103,7 +10173,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 30
 y 1
@@ -10150,7 +10219,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 30
 y 6
@@ -10605,7 +10673,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 32
 end
@@ -10636,7 +10703,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 32
 y 2
@@ -10723,7 +10789,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 32
 y 15
@@ -10765,7 +10830,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 32
 y 19
@@ -10817,7 +10881,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 32
 y 25
@@ -11051,7 +11114,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 33
 y 21
@@ -11315,7 +11377,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 34
 y 23
@@ -11367,7 +11428,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 34
 y 29
@@ -11541,7 +11601,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 35
 y 13
@@ -11588,7 +11647,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 35
 y 18
@@ -12039,7 +12097,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 37
 y 11
@@ -12308,7 +12365,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 38
 y 14
@@ -12527,7 +12583,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 39
 y 7
@@ -12811,7 +12866,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 40
 y 13
@@ -13281,7 +13335,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 42
 y 10
@@ -13898,7 +13951,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 44
 y 16
@@ -14207,7 +14259,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 45
 y 6
@@ -14542,7 +14593,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 46
 y 2
@@ -14604,7 +14654,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 46
 y 10
@@ -15138,7 +15187,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 48
 y 13
@@ -15389,7 +15437,6 @@ decorstyle rugged
 symmetry 1
 dungeon_depth 2
 orientation 1
-
 endmsg
 x 49
 y 9
