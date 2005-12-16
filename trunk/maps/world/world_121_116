@@ -10149,11 +10149,20 @@ arch dungeon_magic
 x 38
 y 28
 end
+arch dungeon_magic
+x 38
+y 28
+end
 arch grass
 x 38
 y 28
 end
-arch westcwall_2_1_2
+arch grate_closed_1
+x 38
+y 28
+speed 0.500000
+end
+arch westcityport_a
 x 38
 y 28
 blocksview 0
@@ -13813,11 +13822,20 @@ arch dungeon_magic
 x 48
 y 28
 end
+arch dungeon_magic
+x 48
+y 28
+end
 arch grass
 x 48
 y 28
 end
-arch westcwall_2_1_2
+arch grate_closed_1
+x 48
+y 28
+speed 0.500000
+end
+arch westcityport_a
 x 48
 y 28
 blocksview 0
