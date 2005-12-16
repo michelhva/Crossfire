@@ -10820,6 +10820,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_4
+x 13
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -10828,10 +10835,6 @@ y 85
 no_pass 0
 blocksview 0
 end
-arch fog
-x 13
-y 85
-end
 arch detector
 slaying djinn
 x 13
@@ -10839,6 +10842,13 @@ y 86
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 86
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10855,6 +10865,13 @@ y 87
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 87
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10871,6 +10888,13 @@ y 88
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 88
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10887,6 +10911,13 @@ y 89
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 89
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10903,6 +10934,13 @@ y 90
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 90
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10919,6 +10957,13 @@ y 91
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_3
+x 13
+y 91
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -10947,7 +10992,7 @@ arch dungeon_magic
 x 13
 y 92
 end
-arch mover_1
+arch mover_2
 x 13
 y 92
 speed 1.000000
@@ -11721,6 +11766,13 @@ y 85
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_5
+x 14
+y 85
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -12620,6 +12672,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_5
+x 15
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13492,6 +13551,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_5
+x 16
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14322,6 +14388,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_6
+x 17
+y 85
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14338,6 +14411,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_7
+x 17
+y 86
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14354,6 +14434,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_7
+x 17
+y 87
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14370,6 +14457,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_7
+x 17
+y 88
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14386,6 +14480,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_7
+x 17
+y 89
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14402,6 +14503,13 @@ speed 0.100000
 invisible 1
 connected 1
 end
+arch mover_7
+x 17
+y 90
+speed 1.000000
+level 1
+attacktype 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -14417,6 +14525,13 @@ y 91
 speed 0.100000
 invisible 1
 connected 1
+end
+arch mover_7
+x 17
+y 91
+speed 1.000000
+level 1
+attacktype 1
 end
 arch blocked
 name nothing
@@ -14445,7 +14560,7 @@ arch dungeon_magic
 x 17
 y 92
 end
-arch mover_1
+arch mover_8
 x 17
 y 92
 speed 1.000000
