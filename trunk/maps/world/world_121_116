@@ -10149,34 +10149,24 @@ arch dungeon_magic
 x 38
 y 28
 end
-arch dungeon_magic
-x 38
-y 28
-end
 arch grass
 x 38
 y 28
 end
-arch grate_closed_1
+arch westcwall_2_1_2
 x 38
 y 28
-speed 0.500000
 end
-arch westcityport_a
+arch dungeon_magic
 x 38
-y 28
-blocksview 0
+y 29
+end
+arch grass
+x 38
+y 29
 end
 arch city_tower_west
 x 38
-y 28
-end
-arch dungeon_magic
-x 38
-y 29
-end
-arch grass
-x 38
 y 29
 end
 arch dungeon_magic
@@ -10184,10 +10174,6 @@ x 38
 y 30
 end
 arch grass
-x 38
-y 30
-end
-arch ytree_2
 x 38
 y 30
 end
@@ -10196,6 +10182,10 @@ x 38
 y 31
 end
 arch grass
+x 38
+y 31
+end
+arch ytree_2
 x 38
 y 31
 end
@@ -13822,25 +13812,11 @@ arch dungeon_magic
 x 48
 y 28
 end
-arch dungeon_magic
-x 48
-y 28
-end
 arch grass
 x 48
 y 28
 end
-arch grate_closed_1
-x 48
-y 28
-speed 0.500000
-end
-arch westcityport_a
-x 48
-y 28
-blocksview 0
-end
-arch city_tower_west
+arch westcwall_2_1_2
 x 48
 y 28
 end
@@ -13849,6 +13825,10 @@ x 48
 y 29
 end
 arch grass
+x 48
+y 29
+end
+arch city_tower_west
 x 48
 y 29
 end
