@@ -2,11 +2,6 @@ Object s_castle
 name castle
 type 66
 face s_castle.x11
-speed -0.300
-anim
-castle_a.x11
-castle_a.x12
-mina
 no_pick 1
 editable 2
 visibility 100
