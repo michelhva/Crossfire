@@ -2640,21 +2640,27 @@ name_pl woodfloor
 x 8
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 8
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_2
+x 8
+y 8
+end
+arch dungeon_floor
 x 8
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 8
+y 9
+end
+arch dungeon_floor
+x 8
+y 10
+end
+arch cwall_2_2_1
 x 8
 y 10
 end
@@ -3090,21 +3096,30 @@ name_pl woodfloor
 x 9
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 9
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_2
+x 9
+y 8
+end
+arch dungeon_floor
 x 9
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch stair_up_1
+slaying castle2
+hp 9
+sp 9
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch cwall_1_3
 x 9
 y 10
 end
@@ -3458,21 +3473,27 @@ name_pl woodfloor
 x 10
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 10
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_3
+x 10
+y 8
+end
+arch dungeon_floor
 x 10
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_2
+x 10
+y 9
+end
+arch dungeon_floor
+x 10
+y 10
+end
+arch slevel_2_2_4
 x 10
 y 10
 end
@@ -10620,15 +10641,27 @@ arch snow
 x 29
 y 14
 end
-arch snow
+arch dungeon_floor
 x 29
 y 15
 end
-arch snow
+arch stwall_2_2_2
+x 29
+y 15
+end
+arch dungeon_floor
 x 29
 y 16
 end
-arch snow
+arch stwall_2_1_1
+x 29
+y 16
+end
+arch dungeon_floor
+x 29
+y 17
+end
+arch stwall_2_2_1
 x 29
 y 17
 end
@@ -10876,7 +10909,7 @@ arch istone
 x 29
 y 50
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 29
 y 50
 end
@@ -10924,7 +10957,7 @@ arch istone
 x 29
 y 56
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 29
 y 56
 end
@@ -11042,15 +11075,23 @@ arch snow
 x 30
 y 14
 end
-arch snow
+arch dungeon_floor
 x 30
 y 15
 end
-arch snow
+arch stwall_2_1_2
+x 30
+y 15
+end
+arch dungeon_floor
 x 30
 y 16
 end
-arch snow
+arch dungeon_floor
+x 30
+y 17
+end
+arch stwall_2_1_2
 x 30
 y 17
 end
@@ -11302,11 +11343,15 @@ arch slevel_3_3
 x 30
 y 49
 end
-arch dungeon_floor
+arch istone
 x 30
 y 50
 end
 arch slevel_3_3
+x 30
+y 50
+end
+arch cwall_1_3
 x 30
 y 50
 end
@@ -11340,7 +11385,7 @@ name_pl woodfloor
 x 30
 y 55
 end
-arch dungeon_floor
+arch istone
 x 30
 y 56
 end
@@ -11348,7 +11393,7 @@ arch slevel_3_1
 x 30
 y 56
 end
-arch grate_closed_1
+arch cwall_1_3
 x 30
 y 56
 end
@@ -11449,43 +11494,71 @@ arch cwall_1_4
 x 31
 y 11
 end
-arch snow
+arch dungeon_floor
 x 31
 y 12
 end
-arch snow
+arch woodwall_2_2_2
+x 31
+y 12
+end
+arch dungeon_floor
 x 31
 y 13
 end
-arch snow
+arch woodwall_2_1_1
+x 31
+y 13
+end
+arch dungeon_floor
 x 31
 y 14
 end
-arch snow
+arch woodwall_1_2
+x 31
+y 14
+end
+arch dungeon_floor
 x 31
 y 15
 end
-arch tree6
+arch stwall_1_3
 x 31
 y 15
 end
-arch snow
+arch dungeon_floor
 x 31
 y 16
 end
-arch snow
+arch dungeon_floor
 x 31
 y 17
 end
-arch snow
+arch stwall_1_3
+x 31
+y 17
+end
+arch dungeon_floor
 x 31
 y 18
 end
-arch snow
+arch woodwall_1_1
+x 31
+y 18
+end
+arch dungeon_floor
 x 31
 y 19
 end
-arch snow
+arch woodwall_2_1_1
+x 31
+y 19
+end
+arch dungeon_floor
+x 31
+y 20
+end
+arch woodwall_2_2_1
 x 31
 y 20
 end
@@ -11850,39 +11923,55 @@ arch cwall_1_3
 x 32
 y 11
 end
-arch snow
+arch dungeon_floor
 x 32
 y 12
 end
-arch snow
+arch woodwall_1_3
+x 32
+y 12
+end
+arch dungeon_floor
 x 32
 y 13
 end
-arch snow
+arch dungeon_floor
 x 32
 y 14
 end
-arch snow
+arch swall_1_4
+x 32
+y 14
+end
+arch dungeon_floor
 x 32
 y 15
 end
-arch snow
+arch dungeon_floor
 x 32
 y 16
 end
-arch snow
+arch dungeon_floor
 x 32
 y 17
 end
-arch snow
+arch dungeon_floor
 x 32
 y 18
 end
-arch snow
+arch swall_1_4
+x 32
+y 18
+end
+arch dungeon_floor
 x 32
 y 19
 end
-arch snow
+arch dungeon_floor
+x 32
+y 20
+end
+arch woodwall_2_1_2
 x 32
 y 20
 end
@@ -12227,43 +12316,68 @@ arch slevel_3_1
 x 33
 y 11
 end
-arch snow5
-x 33
-y 11
-end
-arch snow
+arch dungeon_floor
 x 33
 y 12
 end
-arch snow
+arch door_2
+x 33
+y 12
+no_pass 0
+end
+arch dungeon_floor
 x 33
 y 13
 end
-arch snow
+arch dungeon_floor
 x 33
 y 14
 end
-arch snow
+arch swall_2_2_3
+x 33
+y 14
+end
+arch dungeon_floor
 x 33
 y 15
 end
-arch snow
+arch swall_2_1_1
+x 33
+y 15
+end
+arch dungeon_floor
 x 33
 y 16
 end
-arch snow
+arch swall_2_1_1
+x 33
+y 16
+end
+arch dungeon_floor
 x 33
 y 17
 end
-arch snow
+arch swall_2_1_1
+x 33
+y 17
+end
+arch dungeon_floor
 x 33
 y 18
 end
-arch snow
+arch swall_2_2_4
+x 33
+y 18
+end
+arch dungeon_floor
 x 33
 y 19
 end
-arch snow
+arch dungeon_floor
+x 33
+y 20
+end
+arch woodwall_2_1_2
 x 33
 y 20
 end
@@ -12491,11 +12605,15 @@ arch slevel_3_3
 x 33
 y 49
 end
-arch dungeon_floor
+arch istone
 x 33
 y 50
 end
 arch slevel_3_3
+x 33
+y 50
+end
+arch cwall_1_4
 x 33
 y 50
 end
@@ -12529,7 +12647,7 @@ name_pl woodfloor
 x 33
 y 55
 end
-arch dungeon_floor
+arch istone
 x 33
 y 56
 end
@@ -12537,7 +12655,7 @@ arch slevel_3_1
 x 33
 y 56
 end
-arch grate_closed_1
+arch cwall_1_4
 x 33
 y 56
 end
@@ -12638,43 +12756,47 @@ arch slevel_3_1
 x 34
 y 11
 end
-arch snow5
-x 34
-y 11
-end
-arch snow
+arch dungeon_floor
 x 34
 y 12
 end
-arch snow
+arch woodwall_1_4
+x 34
+y 12
+end
+arch dungeon_floor
 x 34
 y 13
 end
-arch snow
+arch dungeon_floor
 x 34
 y 14
 end
-arch snow
+arch dungeon_floor
 x 34
 y 15
 end
-arch snow
+arch dungeon_floor
 x 34
 y 16
 end
-arch snow
+arch dungeon_floor
 x 34
 y 17
 end
-arch snow
+arch dungeon_floor
 x 34
 y 18
 end
-arch snow
+arch dungeon_floor
 x 34
 y 19
 end
-arch snow
+arch dungeon_floor
+x 34
+y 20
+end
+arch woodwall_2_1_2
 x 34
 y 20
 end
@@ -12894,7 +13016,7 @@ arch istone
 x 34
 y 50
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 34
 y 50
 end
@@ -12942,7 +13064,7 @@ arch istone
 x 34
 y 56
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 34
 y 56
 end
@@ -13032,10 +13154,6 @@ arch flagstone
 x 35
 y 10
 end
-arch snow5
-x 35
-y 10
-end
 arch flagstone
 x 35
 y 11
@@ -13048,47 +13166,67 @@ arch cwall_1_4
 x 35
 y 11
 end
-arch snow
+arch dungeon_floor
 x 35
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 35
+y 12
+end
+arch dungeon_floor
 x 35
 y 13
 end
-arch tree6
+arch bed_1
 x 35
 y 13
 end
-arch snow
+arch dungeon_floor
 x 35
 y 14
 end
-arch snow
+arch dungeon_floor
 x 35
 y 15
 end
-arch snow
+arch bench_1_4
+x 35
+y 15
+end
+arch dungeon_floor
 x 35
 y 16
 end
-arch snow
+arch longtable_1_4
+x 35
+y 16
+end
+arch dungeon_floor
 x 35
 y 17
 end
-arch tree6
+arch bench_1_4
 x 35
 y 17
 end
-arch snow
+arch dungeon_floor
 x 35
 y 18
 end
-arch snow
+arch dungeon_floor
 x 35
 y 19
 end
-arch snow
+arch bed_1
+x 35
+y 19
+end
+arch dungeon_floor
+x 35
+y 20
+end
+arch woodwall_2_1_2
 x 35
 y 20
 end
@@ -13434,39 +13572,59 @@ arch cwall_1_3
 x 36
 y 11
 end
-arch snow
+arch dungeon_floor
 x 36
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 36
+y 12
+end
+arch dungeon_floor
 x 36
 y 13
 end
-arch snow
+arch dungeon_floor
 x 36
 y 14
 end
-arch snow
+arch dungeon_floor
 x 36
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 36
+y 15
+end
+arch dungeon_floor
 x 36
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 36
+y 16
+end
+arch dungeon_floor
 x 36
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 36
+y 17
+end
+arch dungeon_floor
 x 36
 y 18
 end
-arch snow
+arch dungeon_floor
 x 36
 y 19
 end
-arch snow
+arch dungeon_floor
+x 36
+y 20
+end
+arch woodwall_2_1_2
 x 36
 y 20
 end
@@ -13824,10 +13982,6 @@ arch flagstone
 x 37
 y 10
 end
-arch snow5
-x 37
-y 10
-end
 arch flagstone
 x 37
 y 11
@@ -13836,43 +13990,67 @@ arch slevel_3_1
 x 37
 y 11
 end
-arch snow5
-x 37
-y 11
-end
-arch snow
+arch dungeon_floor
 x 37
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 37
+y 12
+end
+arch dungeon_floor
 x 37
 y 13
 end
-arch snow
+arch bed_1
+x 37
+y 13
+end
+arch dungeon_floor
 x 37
 y 14
 end
-arch snow
+arch dungeon_floor
 x 37
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 37
+y 15
+end
+arch dungeon_floor
 x 37
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 37
+y 16
+end
+arch dungeon_floor
 x 37
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 37
+y 17
+end
+arch dungeon_floor
 x 37
 y 18
 end
-arch snow
+arch dungeon_floor
 x 37
 y 19
 end
-arch snow
+arch bed_1
+x 37
+y 19
+end
+arch dungeon_floor
+x 37
+y 20
+end
+arch woodwall_2_1_2
 x 37
 y 20
 end
@@ -14234,10 +14412,6 @@ arch flagstone
 x 38
 y 10
 end
-arch snow5
-x 38
-y 10
-end
 arch flagstone
 x 38
 y 11
@@ -14246,43 +14420,59 @@ arch slevel_3_1
 x 38
 y 11
 end
-arch snow5
-x 38
-y 11
-end
-arch snow
+arch dungeon_floor
 x 38
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 38
+y 12
+end
+arch dungeon_floor
 x 38
 y 13
 end
-arch snow
+arch dungeon_floor
 x 38
 y 14
 end
-arch snow
+arch dungeon_floor
 x 38
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 38
+y 15
+end
+arch dungeon_floor
 x 38
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 38
+y 16
+end
+arch dungeon_floor
 x 38
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 38
+y 17
+end
+arch dungeon_floor
 x 38
 y 18
 end
-arch snow
+arch dungeon_floor
 x 38
 y 19
 end
-arch snow
+arch dungeon_floor
+x 38
+y 20
+end
+arch woodwall_2_1_2
 x 38
 y 20
 end
@@ -14612,15 +14802,7 @@ arch flagstone
 x 39
 y 9
 end
-arch snow5
-x 39
-y 9
-end
 arch flagstone
-x 39
-y 10
-end
-arch snow5
 x 39
 y 10
 end
@@ -14636,39 +14818,67 @@ arch cwall_1_4
 x 39
 y 11
 end
-arch snow
+arch dungeon_floor
 x 39
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 39
+y 12
+end
+arch dungeon_floor
 x 39
 y 13
 end
-arch snow
+arch bed_1
+x 39
+y 13
+end
+arch dungeon_floor
 x 39
 y 14
 end
-arch snow
+arch dungeon_floor
 x 39
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 39
+y 15
+end
+arch dungeon_floor
 x 39
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 39
+y 16
+end
+arch dungeon_floor
 x 39
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 39
+y 17
+end
+arch dungeon_floor
 x 39
 y 18
 end
-arch snow
+arch dungeon_floor
 x 39
 y 19
 end
-arch snow
+arch bed_1
+x 39
+y 19
+end
+arch dungeon_floor
+x 39
+y 20
+end
+arch woodwall_2_1_2
 x 39
 y 20
 end
@@ -15060,10 +15270,6 @@ arch flagstone
 x 40
 y 9
 end
-arch snow5
-x 40
-y 9
-end
 arch flagstone
 x 40
 y 10
@@ -15080,39 +15286,59 @@ arch cwall_1_3
 x 40
 y 11
 end
-arch snow
+arch dungeon_floor
 x 40
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 40
+y 12
+end
+arch dungeon_floor
 x 40
 y 13
 end
-arch snow
+arch dungeon_floor
 x 40
 y 14
 end
-arch snow
+arch dungeon_floor
 x 40
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 40
+y 15
+end
+arch dungeon_floor
 x 40
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 40
+y 16
+end
+arch dungeon_floor
 x 40
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 40
+y 17
+end
+arch dungeon_floor
 x 40
 y 18
 end
-arch snow
+arch dungeon_floor
 x 40
 y 19
 end
-arch snow
+arch dungeon_floor
+x 40
+y 20
+end
+arch woodwall_2_1_2
 x 40
 y 20
 end
@@ -15504,15 +15730,7 @@ arch flagstone
 x 41
 y 9
 end
-arch snow5
-x 41
-y 9
-end
 arch flagstone
-x 41
-y 10
-end
-arch snow5
 x 41
 y 10
 end
@@ -15524,43 +15742,67 @@ arch slevel_3_1
 x 41
 y 11
 end
-arch snow5
-x 41
-y 11
-end
-arch snow
+arch dungeon_floor
 x 41
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 41
+y 12
+end
+arch dungeon_floor
 x 41
 y 13
 end
-arch snow
+arch bed_1
+x 41
+y 13
+end
+arch dungeon_floor
 x 41
 y 14
 end
-arch snow
+arch dungeon_floor
 x 41
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 41
+y 15
+end
+arch dungeon_floor
 x 41
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 41
+y 16
+end
+arch dungeon_floor
 x 41
 y 17
 end
-arch snow
+arch bench_2_1_2
+x 41
+y 17
+end
+arch dungeon_floor
 x 41
 y 18
 end
-arch snow
+arch dungeon_floor
 x 41
 y 19
 end
-arch snow
+arch bed_1
+x 41
+y 19
+end
+arch dungeon_floor
+x 41
+y 20
+end
+arch woodwall_2_1_2
 x 41
 y 20
 end
@@ -15960,10 +16202,6 @@ arch flagstone
 x 42
 y 10
 end
-arch snow5
-x 42
-y 10
-end
 arch flagstone
 x 42
 y 11
@@ -15972,2063 +16210,2172 @@ arch slevel_3_1
 x 42
 y 11
 end
-arch snow5
-x 42
-y 11
-end
-arch snow
+arch dungeon_floor
 x 42
 y 12
 end
-arch snow
+arch woodwall_2_1_2
+x 42
+y 12
+end
+arch dungeon_floor
 x 42
 y 13
 end
-arch snow
+arch dungeon_floor
 x 42
 y 14
 end
-arch snow
+arch dungeon_floor
 x 42
 y 15
 end
-arch snow
+arch bench_2_1_2
+x 42
+y 15
+end
+arch dungeon_floor
 x 42
 y 16
 end
-arch snow
+arch longtable_2_1_2
+x 42
+y 16
+end
+arch dungeon_floor
 x 42
 y 17
+end
+arch bench_2_1_2
+x 42
+y 17
+end
+arch dungeon_floor
+x 42
+y 18
+end
+arch dungeon_floor
+x 42
+y 19
+end
+arch dungeon_floor
+x 42
+y 20
+end
+arch woodwall_2_1_2
+x 42
+y 20
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 21
+no_pass 0
+end
+arch ice
+x 42
+y 21
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 22
+no_pass 0
+end
+arch ice
+x 42
+y 22
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 23
+no_pass 0
+end
+arch ice
+x 42
+y 23
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 24
+no_pass 0
+end
+arch ice
+x 42
+y 24
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 25
+no_pass 0
+end
+arch ice
+x 42
+y 25
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 26
+no_pass 0
+end
+arch ice
+x 42
+y 26
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 27
+no_pass 0
+end
+arch ice
+x 42
+y 27
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 28
+no_pass 0
+end
+arch ice
+x 42
+y 28
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 29
+no_pass 0
+end
+arch ice
+x 42
+y 29
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 30
+no_pass 0
+end
+arch ice
+x 42
+y 30
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 31
+no_pass 0
+end
+arch ice
+x 42
+y 31
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 32
+no_pass 0
+end
+arch ice
+x 42
+y 32
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 33
+no_pass 0
+end
+arch ice
+x 42
+y 33
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 34
+no_pass 0
+end
+arch ice
+x 42
+y 34
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 35
+no_pass 0
+end
+arch ice
+x 42
+y 35
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 36
+no_pass 0
+end
+arch ice
+x 42
+y 36
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 37
+no_pass 0
+end
+arch ice
+x 42
+y 37
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 38
+no_pass 0
+end
+arch ice
+x 42
+y 38
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 39
+no_pass 0
+end
+arch ice
+x 42
+y 39
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 40
+no_pass 0
+end
+arch ice
+x 42
+y 40
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 41
+no_pass 0
+end
+arch ice
+x 42
+y 41
+end
+arch shallow_sea
+name water
+name_pl water
+x 42
+y 42
+no_pass 0
+end
+arch ice
+x 42
+y 42
+end
+arch snow
+x 42
+y 43
+end
+arch snow
+x 42
+y 44
+end
+arch snow
+x 42
+y 45
+end
+arch snow
+x 42
+y 46
+end
+arch snow
+x 42
+y 47
+end
+arch snow
+x 42
+y 48
+end
+arch snow
+x 42
+y 49
+end
+arch snow
+x 42
+y 50
+end
+arch snow
+x 42
+y 51
+end
+arch flagstone
+x 42
+y 52
+end
+arch slevel_3_3
+x 42
+y 52
+end
+arch snow5
+x 42
+y 52
+end
+arch flagstone
+x 42
+y 53
+end
+arch flagstone
+x 42
+y 54
+end
+arch istone
+x 42
+y 55
+end
+arch cwall_2_1_2
+x 42
+y 55
+end
+arch s_mountain
+x 42
+y 56
+end
+arch s_mountain
+x 42
+y 57
+end
+arch s_mountain
+x 42
+y 58
+end
+arch s_mountain
+x 42
+y 59
+end
+arch s_mountain
+x 42
+y 60
+end
+arch s_mountain
+x 42
+y 61
+end
+arch s_mountain
+x 42
+y 62
+end
+arch blocked
+x 42
+y 63
+end
+arch s_mountain
+x 42
+y 63
+end
+arch blocked
+x 43
+end
+arch s_mountain
+x 43
+end
+arch s_mountain
+x 43
+y 1
+end
+arch s_mountain
+x 43
+y 2
+end
+arch s_mountain
+x 43
+y 3
+end
+arch s_mountain
+x 43
+y 4
+end
+arch s_mountain
+x 43
+y 5
+end
+arch s_mountain
+x 43
+y 6
+end
+arch s_mountain
+x 43
+y 7
+end
+arch istone
+x 43
+y 8
+end
+arch cwall_2_1_2
+x 43
+y 8
+end
+arch flagstone
+x 43
+y 9
+end
+arch flagstone
+x 43
+y 10
+end
+arch flagstone
+x 43
+y 11
+end
+arch slevel_3_1
+x 43
+y 11
+end
+arch cwall_1_4
+x 43
+y 11
+end
+arch dungeon_floor
+x 43
+y 12
+end
+arch woodwall_2_1_2
+x 43
+y 12
+end
+arch dungeon_floor
+x 43
+y 13
+end
+arch bed_1
+x 43
+y 13
+end
+arch dungeon_floor
+x 43
+y 14
+end
+arch dungeon_floor
+x 43
+y 15
+end
+arch bench_1_3
+x 43
+y 15
+end
+arch dungeon_floor
+x 43
+y 16
+end
+arch longtable_1_3
+x 43
+y 16
+end
+arch dungeon_floor
+x 43
+y 17
+end
+arch bench_1_3
+x 43
+y 17
+end
+arch dungeon_floor
+x 43
+y 18
+end
+arch dungeon_floor
+x 43
+y 19
+end
+arch bed_1
+x 43
+y 19
+end
+arch dungeon_floor
+x 43
+y 20
+end
+arch woodwall_2_1_2
+x 43
+y 20
+end
+arch snow
+x 43
+y 21
+end
+arch snow
+x 43
+y 22
+end
+arch snow
+x 43
+y 23
+end
+arch snow
+x 43
+y 24
+end
+arch snow
+x 43
+y 25
+end
+arch snow
+x 43
+y 26
+end
+arch snow
+x 43
+y 27
+end
+arch snow
+x 43
+y 28
+end
+arch snow
+x 43
+y 29
+end
+arch snow
+x 43
+y 30
+end
+arch snow
+x 43
+y 31
+end
+arch snow
+x 43
+y 32
+end
+arch snow
+x 43
+y 33
+end
+arch snow
+x 43
+y 34
+end
+arch snow
+x 43
+y 35
+end
+arch snow
+x 43
+y 36
+end
+arch snow
+x 43
+y 37
+end
+arch snow
+x 43
+y 38
+end
+arch snow
+x 43
+y 39
+end
+arch snow
+x 43
+y 40
+end
+arch snow
+x 43
+y 41
+end
+arch snow
+x 43
+y 42
+end
+arch snow
+x 43
+y 43
+end
+arch snow
+x 43
+y 44
+end
+arch snow
+x 43
+y 45
+end
+arch snow
+x 43
+y 46
+end
+arch snow
+x 43
+y 47
+end
+arch snow
+x 43
+y 48
+end
+arch snow
+x 43
+y 49
+end
+arch snow
+x 43
+y 50
+end
+arch snow
+x 43
+y 51
+end
+arch flagstone
+x 43
+y 52
+end
+arch slevel_3_3
+x 43
+y 52
+end
+arch cwall_1_4
+x 43
+y 52
+end
+arch flagstone
+x 43
+y 53
+end
+arch flagstone
+x 43
+y 54
+end
+arch snow5
+x 43
+y 54
+end
+arch istone
+x 43
+y 55
+end
+arch cwall_2_1_2
+x 43
+y 55
+end
+arch s_mountain
+x 43
+y 56
+end
+arch s_mountain
+x 43
+y 57
+end
+arch s_mountain
+x 43
+y 58
+end
+arch s_mountain
+x 43
+y 59
+end
+arch s_mountain
+x 43
+y 60
+end
+arch s_mountain
+x 43
+y 61
+end
+arch s_mountain
+x 43
+y 62
+end
+arch blocked
+x 43
+y 63
+end
+arch s_mountain
+x 43
+y 63
+end
+arch blocked
+x 44
+end
+arch s_mountain
+x 44
+end
+arch s_mountain
+x 44
+y 1
+end
+arch s_mountain
+x 44
+y 2
+end
+arch s_mountain
+x 44
+y 3
+end
+arch s_mountain
+x 44
+y 4
+end
+arch s_mountain
+x 44
+y 5
+end
+arch s_mountain
+x 44
+y 6
+end
+arch s_mountain
+x 44
+y 7
+end
+arch istone
+x 44
+y 8
+end
+arch cwall_2_1_2
+x 44
+y 8
+end
+arch flagstone
+x 44
+y 9
+end
+arch flagstone
+x 44
+y 10
+end
+arch flagstone
+x 44
+y 11
+end
+arch slevel_3_1
+x 44
+y 11
+end
+arch cwall_1_3
+x 44
+y 11
+end
+arch dungeon_floor
+x 44
+y 12
+end
+arch woodwall_1_3
+x 44
+y 12
+end
+arch dungeon_floor
+x 44
+y 13
+end
+arch dungeon_floor
+x 44
+y 14
+end
+arch dungeon_floor
+x 44
+y 15
+end
+arch dungeon_floor
+x 44
+y 16
+end
+arch dungeon_floor
+x 44
+y 17
+end
+arch dungeon_floor
+x 44
+y 18
+end
+arch dungeon_floor
+x 44
+y 19
+end
+arch dungeon_floor
+x 44
+y 20
+end
+arch woodwall_2_1_2
+x 44
+y 20
+end
+arch snow
+x 44
+y 21
+end
+arch snow
+x 44
+y 22
+end
+arch snow
+x 44
+y 23
+end
+arch snow
+x 44
+y 24
+end
+arch snow
+x 44
+y 25
+end
+arch snow
+x 44
+y 26
+end
+arch snow
+x 44
+y 27
+end
+arch snow
+x 44
+y 28
+end
+arch snow
+x 44
+y 29
+end
+arch snow
+x 44
+y 30
+end
+arch snow
+x 44
+y 31
+end
+arch snow
+x 44
+y 32
+end
+arch snow
+x 44
+y 33
+end
+arch snow
+x 44
+y 34
+end
+arch snow
+x 44
+y 35
+end
+arch snow
+x 44
+y 36
+end
+arch snow
+x 44
+y 37
+end
+arch snow
+x 44
+y 38
+end
+arch snow
+x 44
+y 39
+end
+arch snow
+x 44
+y 40
+end
+arch snow
+x 44
+y 41
+end
+arch snow
+x 44
+y 42
+end
+arch snow
+x 44
+y 43
+end
+arch snow
+x 44
+y 44
+end
+arch snow
+x 44
+y 45
+end
+arch snow
+x 44
+y 46
+end
+arch snow
+x 44
+y 47
+end
+arch snow
+x 44
+y 48
+end
+arch snow
+x 44
+y 49
+end
+arch snow
+x 44
+y 50
+end
+arch snow
+x 44
+y 51
+end
+arch flagstone
+x 44
+y 52
+end
+arch slevel_3_3
+x 44
+y 52
+end
+arch cwall_1_3
+x 44
+y 52
+end
+arch flagstone
+x 44
+y 53
+end
+arch snow5
+x 44
+y 53
+end
+arch flagstone
+x 44
+y 54
+end
+arch snow5
+x 44
+y 54
+end
+arch istone
+x 44
+y 55
+end
+arch cwall_2_1_2
+x 44
+y 55
+end
+arch s_mountain
+x 44
+y 56
+end
+arch s_mountain
+x 44
+y 57
+end
+arch s_mountain
+x 44
+y 58
+end
+arch s_mountain
+x 44
+y 59
+end
+arch s_mountain
+x 44
+y 60
+end
+arch s_mountain
+x 44
+y 61
+end
+arch s_mountain
+x 44
+y 62
+end
+arch blocked
+x 44
+y 63
+end
+arch s_mountain
+x 44
+y 63
+end
+arch blocked
+x 45
+end
+arch s_mountain
+x 45
+end
+arch s_mountain
+x 45
+y 1
+end
+arch s_mountain
+x 45
+y 2
+end
+arch s_mountain
+x 45
+y 3
+end
+arch s_mountain
+x 45
+y 4
+end
+arch s_mountain
+x 45
+y 5
+end
+arch s_mountain
+x 45
+y 6
+end
+arch s_mountain
+x 45
+y 7
+end
+arch istone
+x 45
+y 8
+end
+arch cwall_2_1_2
+x 45
+y 8
+end
+arch flagstone
+x 45
+y 9
+end
+arch flagstone
+x 45
+y 10
+end
+arch flagstone
+x 45
+y 11
+end
+arch slevel_3_1
+x 45
+y 11
+end
+arch dungeon_floor
+x 45
+y 12
+end
+arch door_2
+x 45
+y 12
+no_pass 0
+end
+arch dungeon_floor
+x 45
+y 13
+end
+arch dungeon_floor
+x 45
+y 14
+end
+arch swall_2_2_2
+x 45
+y 14
+end
+arch dungeon_floor
+x 45
+y 15
+end
+arch swall_2_1_1
+x 45
+y 15
+end
+arch dungeon_floor
+x 45
+y 16
+end
+arch swall_2_1_1
+x 45
+y 16
+end
+arch dungeon_floor
+x 45
+y 17
+end
+arch swall_2_1_1
+x 45
+y 17
+end
+arch dungeon_floor
+x 45
+y 18
+end
+arch swall_2_2_1
+x 45
+y 18
+end
+arch dungeon_floor
+x 45
+y 19
+end
+arch dungeon_floor
+x 45
+y 20
+end
+arch woodwall_2_1_2
+x 45
+y 20
+end
+arch snow
+x 45
+y 21
+end
+arch snow
+x 45
+y 22
+end
+arch snow
+x 45
+y 23
+end
+arch snow
+x 45
+y 24
+end
+arch snow
+x 45
+y 25
+end
+arch snow
+x 45
+y 26
+end
+arch snow
+x 45
+y 27
+end
+arch snow
+x 45
+y 28
+end
+arch snow
+x 45
+y 29
+end
+arch snow
+x 45
+y 30
+end
+arch snow
+x 45
+y 31
+end
+arch snow
+x 45
+y 32
+end
+arch snow
+x 45
+y 33
+end
+arch snow
+x 45
+y 34
+end
+arch snow
+x 45
+y 35
+end
+arch snow
+x 45
+y 36
+end
+arch snow
+x 45
+y 37
+end
+arch snow
+x 45
+y 38
+end
+arch snow
+x 45
+y 39
+end
+arch snow
+x 45
+y 40
+end
+arch snow
+x 45
+y 41
+end
+arch snow
+x 45
+y 42
+end
+arch snow
+x 45
+y 43
+end
+arch snow
+x 45
+y 44
+end
+arch snow
+x 45
+y 45
+end
+arch snow
+x 45
+y 46
+end
+arch snow
+x 45
+y 47
+end
+arch snow
+x 45
+y 48
+end
+arch snow
+x 45
+y 49
+end
+arch snow
+x 45
+y 50
+end
+arch snow
+x 45
+y 51
+end
+arch flagstone
+x 45
+y 52
+end
+arch slevel_3_3
+x 45
+y 52
+end
+arch snow5
+x 45
+y 52
+end
+arch flagstone
+x 45
+y 53
+end
+arch snow5
+x 45
+y 53
+end
+arch flagstone
+x 45
+y 54
+end
+arch snow5
+x 45
+y 54
+end
+arch istone
+x 45
+y 55
+end
+arch cwall_2_1_2
+x 45
+y 55
+end
+arch s_mountain
+x 45
+y 56
+end
+arch s_mountain
+x 45
+y 57
+end
+arch s_mountain
+x 45
+y 58
+end
+arch s_mountain
+x 45
+y 59
+end
+arch s_mountain
+x 45
+y 60
+end
+arch s_mountain
+x 45
+y 61
+end
+arch s_mountain
+x 45
+y 62
+end
+arch blocked
+x 45
+y 63
+end
+arch s_mountain
+x 45
+y 63
+end
+arch blocked
+x 46
+end
+arch s_mountain
+x 46
+end
+arch s_mountain
+x 46
+y 1
+end
+arch s_mountain
+x 46
+y 2
+end
+arch s_mountain
+x 46
+y 3
+end
+arch s_mountain
+x 46
+y 4
+end
+arch s_mountain
+x 46
+y 5
+end
+arch s_mountain
+x 46
+y 6
+end
+arch s_mountain
+x 46
+y 7
+end
+arch istone
+x 46
+y 8
+end
+arch cwall_2_1_2
+x 46
+y 8
+end
+arch flagstone
+x 46
+y 9
+end
+arch flagstone
+x 46
+y 10
+end
+arch flagstone
+x 46
+y 11
+end
+arch slevel_3_1
+x 46
+y 11
+end
+arch dungeon_floor
+x 46
+y 12
+end
+arch woodwall_1_4
+x 46
+y 12
+end
+arch dungeon_floor
+x 46
+y 13
+end
+arch dungeon_floor
+x 46
+y 14
+end
+arch swall_1_3
+x 46
+y 14
+end
+arch dungeon_floor
+x 46
+y 15
+end
+arch dungeon_floor
+x 46
+y 16
+end
+arch dungeon_floor
+x 46
+y 17
+end
+arch dungeon_floor
+x 46
+y 18
+end
+arch swall_1_3
+x 46
+y 18
+end
+arch dungeon_floor
+x 46
+y 19
+end
+arch dungeon_floor
+x 46
+y 20
+end
+arch woodwall_2_1_2
+x 46
+y 20
+end
+arch snow
+x 46
+y 21
+end
+arch snow
+x 46
+y 22
+end
+arch snow
+x 46
+y 23
+end
+arch snow
+x 46
+y 24
+end
+arch snow
+x 46
+y 25
+end
+arch snow
+x 46
+y 26
+end
+arch snow
+x 46
+y 27
+end
+arch snow
+x 46
+y 28
+end
+arch snow
+x 46
+y 29
+end
+arch snow
+x 46
+y 30
+end
+arch snow
+x 46
+y 31
+end
+arch snow
+x 46
+y 32
+end
+arch snow
+x 46
+y 33
+end
+arch snow
+x 46
+y 34
+end
+arch snow
+x 46
+y 35
+end
+arch snow
+x 46
+y 36
+end
+arch snow
+x 46
+y 37
+end
+arch snow
+x 46
+y 38
+end
+arch snow
+x 46
+y 39
+end
+arch snow
+x 46
+y 40
+end
+arch snow
+x 46
+y 41
+end
+arch snow
+x 46
+y 42
+end
+arch snow
+x 46
+y 43
+end
+arch snow
+x 46
+y 44
+end
+arch snow
+x 46
+y 45
+end
+arch snow
+x 46
+y 46
+end
+arch snow
+x 46
+y 47
+end
+arch snow
+x 46
+y 48
+end
+arch snow
+x 46
+y 49
+end
+arch snow
+x 46
+y 50
+end
+arch snow
+x 46
+y 51
+end
+arch flagstone
+x 46
+y 52
+end
+arch slevel_3_3
+x 46
+y 52
+end
+arch snow5
+x 46
+y 52
+end
+arch flagstone
+x 46
+y 53
+end
+arch snow5
+x 46
+y 53
+end
+arch flagstone
+x 46
+y 54
+end
+arch istone
+x 46
+y 55
+end
+arch cwall_2_1_2
+x 46
+y 55
+end
+arch s_mountain
+x 46
+y 56
+end
+arch s_mountain
+x 46
+y 57
+end
+arch s_mountain
+x 46
+y 58
+end
+arch s_mountain
+x 46
+y 59
+end
+arch s_mountain
+x 46
+y 60
+end
+arch s_mountain
+x 46
+y 61
+end
+arch s_mountain
+x 46
+y 62
+end
+arch blocked
+x 46
+y 63
+end
+arch s_mountain
+x 46
+y 63
+end
+arch blocked
+x 47
+end
+arch s_mountain
+x 47
+end
+arch s_mountain
+x 47
+y 1
+end
+arch s_mountain
+x 47
+y 2
+end
+arch s_mountain
+x 47
+y 3
+end
+arch s_mountain
+x 47
+y 4
+end
+arch s_mountain
+x 47
+y 5
+end
+arch s_mountain
+x 47
+y 6
+end
+arch istone
+x 47
+y 7
+end
+arch cwall_2_2_2
+x 47
+y 7
+end
+arch istone
+x 47
+y 8
+end
+arch cwall_2_2_4
+x 47
+y 8
+end
+arch istone
+x 47
+y 9
+end
+arch door_1
+x 47
+y 9
+no_pass 0
+end
+arch istone
+x 47
+y 10
+end
+arch door_1
+x 47
+y 10
+no_pass 0
+end
+arch istone
+x 47
+y 11
+end
+arch cwall_1_4
+x 47
+y 11
+end
+arch dungeon_floor
+x 47
+y 12
+end
+arch woodwall_2_2_3
+x 47
+y 12
+end
+arch dungeon_floor
+x 47
+y 13
+end
+arch woodwall_2_1_1
+x 47
+y 13
+end
+arch dungeon_floor
+x 47
+y 14
+end
+arch woodwall_1_2
+x 47
+y 14
+end
+arch dungeon_floor
+x 47
+y 15
+end
+arch stwall_1_4
+x 47
+y 15
+end
+arch dungeon_floor
+x 47
+y 16
+end
+arch dungeon_floor
+x 47
+y 17
+end
+arch stwall_1_4
+x 47
+y 17
+end
+arch dungeon_floor
+x 47
+y 18
+end
+arch woodwall_1_1
+x 47
+y 18
+end
+arch dungeon_floor
+x 47
+y 19
+end
+arch woodwall_2_1_1
+x 47
+y 19
+end
+arch dungeon_floor
+x 47
+y 20
+end
+arch woodwall_2_2_4
+x 47
+y 20
+end
+arch snow
+x 47
+y 21
+end
+arch snow
+x 47
+y 22
+end
+arch snow
+x 47
+y 23
+end
+arch snow
+x 47
+y 24
+end
+arch snow
+x 47
+y 25
+end
+arch snow
+x 47
+y 26
+end
+arch snow
+x 47
+y 27
+end
+arch snow
+x 47
+y 28
+end
+arch snow
+x 47
+y 29
+end
+arch snow
+x 47
+y 30
+end
+arch snow
+x 47
+y 31
+end
+arch snow
+x 47
+y 32
+end
+arch snow
+x 47
+y 33
+end
+arch snow
+x 47
+y 34
+end
+arch snow
+x 47
+y 35
+end
+arch snow
+x 47
+y 36
+end
+arch snow
+x 47
+y 37
+end
+arch snow
+x 47
+y 38
+end
+arch snow
+x 47
+y 39
+end
+arch snow
+x 47
+y 40
+end
+arch snow
+x 47
+y 41
+end
+arch snow
+x 47
+y 42
+end
+arch snow
+x 47
+y 43
+end
+arch snow
+x 47
+y 44
+end
+arch snow
+x 47
+y 45
+end
+arch snow
+x 47
+y 46
+end
+arch snow
+x 47
+y 47
+end
+arch snow
+x 47
+y 48
+end
+arch snow
+x 47
+y 49
+end
+arch snow
+x 47
+y 50
+end
+arch snow
+x 47
+y 51
+end
+arch istone
+x 47
+y 52
+end
+arch cwall_1_4
+x 47
+y 52
+end
+arch istone
+x 47
+y 53
+end
+arch door_1
+x 47
+y 53
+no_pass 0
+end
+arch istone
+x 47
+y 54
+end
+arch door_1
+x 47
+y 54
+no_pass 0
+end
+arch istone
+x 47
+y 55
+end
+arch cwall_2_2_3
+x 47
+y 55
+end
+arch istone
+x 47
+y 56
+end
+arch cwall_2_2_1
+x 47
+y 56
+end
+arch s_mountain
+x 47
+y 57
+end
+arch s_mountain
+x 47
+y 58
+end
+arch s_mountain
+x 47
+y 59
+end
+arch s_mountain
+x 47
+y 60
+end
+arch s_mountain
+x 47
+y 61
+end
+arch s_mountain
+x 47
+y 62
+end
+arch blocked
+x 47
+y 63
+end
+arch s_mountain
+x 47
+y 63
+end
+arch blocked
+x 48
+end
+arch s_mountain
+x 48
+end
+arch s_mountain
+x 48
+y 1
+end
+arch s_mountain
+x 48
+y 2
+end
+arch s_mountain
+x 48
+y 3
+end
+arch s_mountain
+x 48
+y 4
+end
+arch istone
+x 48
+y 5
+end
+arch cwall_2_2_2
+x 48
+y 5
+end
+arch istone
+x 48
+y 6
+end
+arch cwall_2_1_1
+x 48
+y 6
+end
+arch istone
+x 48
+y 7
+end
+arch cwall_2_2_4
+x 48
+y 7
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 48
+y 8
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 48
+y 9
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 48
+y 10
+end
+arch istone
+x 48
+y 11
+end
+arch cwall_2_2_3
+x 48
+y 11
+end
+arch istone
+x 48
+y 12
+end
+arch cwall_2_1_1
+x 48
+y 12
+end
+arch istone
+x 48
+y 13
+end
+arch cwall_2_2_1
+x 48
+y 13
+end
+arch snow
+x 48
+y 14
+end
+arch dungeon_floor
+x 48
+y 15
+end
+arch stwall_2_1_2
+x 48
+y 15
+end
+arch dungeon_floor
+x 48
+y 16
+end
+arch dungeon_floor
+x 48
+y 17
+end
+arch stwall_2_1_2
+x 48
+y 17
+end
+arch snow
+x 48
+y 18
+end
+arch snow
+x 48
+y 19
+end
+arch snow
+x 48
+y 20
+end
+arch snow
+x 48
+y 21
+end
+arch snow
+x 48
+y 22
+end
+arch snow
+x 48
+y 23
+end
+arch snow
+x 48
+y 24
+end
+arch snow
+x 48
+y 25
+end
+arch snow
+x 48
+y 26
+end
+arch snow
+x 48
+y 27
+end
+arch snow
+x 48
+y 28
+end
+arch snow
+x 48
+y 29
+end
+arch snow
+x 48
+y 30
+end
+arch snow
+x 48
+y 31
+end
+arch snow
+x 48
+y 32
+end
+arch snow
+x 48
+y 33
+end
+arch snow
+x 48
+y 34
+end
+arch snow
+x 48
+y 35
+end
+arch snow
+x 48
+y 36
 end
 arch tree6
-x 42
-y 17
-end
-arch snow
-x 42
-y 18
-end
-arch snow
-x 42
-y 19
-end
-arch snow
-x 42
-y 20
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 21
-no_pass 0
-end
-arch ice
-x 42
-y 21
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 22
-no_pass 0
-end
-arch ice
-x 42
-y 22
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 23
-no_pass 0
-end
-arch ice
-x 42
-y 23
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 24
-no_pass 0
-end
-arch ice
-x 42
-y 24
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 25
-no_pass 0
-end
-arch ice
-x 42
-y 25
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 26
-no_pass 0
-end
-arch ice
-x 42
-y 26
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 27
-no_pass 0
-end
-arch ice
-x 42
-y 27
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 28
-no_pass 0
-end
-arch ice
-x 42
-y 28
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 29
-no_pass 0
-end
-arch ice
-x 42
-y 29
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 30
-no_pass 0
-end
-arch ice
-x 42
-y 30
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 31
-no_pass 0
-end
-arch ice
-x 42
-y 31
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 32
-no_pass 0
-end
-arch ice
-x 42
-y 32
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 33
-no_pass 0
-end
-arch ice
-x 42
-y 33
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 34
-no_pass 0
-end
-arch ice
-x 42
-y 34
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 35
-no_pass 0
-end
-arch ice
-x 42
-y 35
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 36
-no_pass 0
-end
-arch ice
-x 42
-y 36
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 37
-no_pass 0
-end
-arch ice
-x 42
-y 37
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 38
-no_pass 0
-end
-arch ice
-x 42
-y 38
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 39
-no_pass 0
-end
-arch ice
-x 42
-y 39
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 40
-no_pass 0
-end
-arch ice
-x 42
-y 40
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 41
-no_pass 0
-end
-arch ice
-x 42
-y 41
-end
-arch shallow_sea
-name water
-name_pl water
-x 42
-y 42
-no_pass 0
-end
-arch ice
-x 42
-y 42
-end
-arch snow
-x 42
-y 43
-end
-arch snow
-x 42
-y 44
-end
-arch snow
-x 42
-y 45
-end
-arch snow
-x 42
-y 46
-end
-arch snow
-x 42
-y 47
-end
-arch snow
-x 42
-y 48
-end
-arch snow
-x 42
-y 49
-end
-arch snow
-x 42
-y 50
-end
-arch snow
-x 42
-y 51
-end
-arch flagstone
-x 42
-y 52
-end
-arch slevel_3_3
-x 42
-y 52
-end
-arch snow5
-x 42
-y 52
-end
-arch flagstone
-x 42
-y 53
-end
-arch flagstone
-x 42
-y 54
-end
-arch istone
-x 42
-y 55
-end
-arch cwall_2_1_2
-x 42
-y 55
-end
-arch s_mountain
-x 42
-y 56
-end
-arch s_mountain
-x 42
-y 57
-end
-arch s_mountain
-x 42
-y 58
-end
-arch s_mountain
-x 42
-y 59
-end
-arch s_mountain
-x 42
-y 60
-end
-arch s_mountain
-x 42
-y 61
-end
-arch s_mountain
-x 42
-y 62
-end
-arch blocked
-x 42
-y 63
-end
-arch s_mountain
-x 42
-y 63
-end
-arch blocked
-x 43
-end
-arch s_mountain
-x 43
-end
-arch s_mountain
-x 43
-y 1
-end
-arch s_mountain
-x 43
-y 2
-end
-arch s_mountain
-x 43
-y 3
-end
-arch s_mountain
-x 43
-y 4
-end
-arch s_mountain
-x 43
-y 5
-end
-arch s_mountain
-x 43
-y 6
-end
-arch s_mountain
-x 43
-y 7
-end
-arch istone
-x 43
-y 8
-end
-arch cwall_2_1_2
-x 43
-y 8
-end
-arch flagstone
-x 43
-y 9
-end
-arch flagstone
-x 43
-y 10
-end
-arch flagstone
-x 43
-y 11
-end
-arch slevel_3_1
-x 43
-y 11
-end
-arch cwall_1_4
-x 43
-y 11
-end
-arch snow
-x 43
-y 12
-end
-arch snow
-x 43
-y 13
-end
-arch snow
-x 43
-y 14
-end
-arch snow
-x 43
-y 15
-end
-arch snow
-x 43
-y 16
-end
-arch snow
-x 43
-y 17
-end
-arch snow
-x 43
-y 18
-end
-arch snow
-x 43
-y 19
-end
-arch snow
-x 43
-y 20
-end
-arch snow
-x 43
-y 21
-end
-arch snow
-x 43
-y 22
-end
-arch snow
-x 43
-y 23
-end
-arch snow
-x 43
-y 24
-end
-arch snow
-x 43
-y 25
-end
-arch snow
-x 43
-y 26
-end
-arch snow
-x 43
-y 27
-end
-arch snow
-x 43
-y 28
-end
-arch snow
-x 43
-y 29
-end
-arch snow
-x 43
-y 30
-end
-arch snow
-x 43
-y 31
-end
-arch snow
-x 43
-y 32
-end
-arch snow
-x 43
-y 33
-end
-arch snow
-x 43
-y 34
-end
-arch snow
-x 43
-y 35
-end
-arch snow
-x 43
-y 36
-end
-arch snow
-x 43
-y 37
-end
-arch snow
-x 43
-y 38
-end
-arch snow
-x 43
-y 39
-end
-arch snow
-x 43
-y 40
-end
-arch snow
-x 43
-y 41
-end
-arch snow
-x 43
-y 42
-end
-arch snow
-x 43
-y 43
-end
-arch snow
-x 43
-y 44
-end
-arch snow
-x 43
-y 45
-end
-arch snow
-x 43
-y 46
-end
-arch snow
-x 43
-y 47
-end
-arch snow
-x 43
-y 48
-end
-arch snow
-x 43
-y 49
-end
-arch snow
-x 43
-y 50
-end
-arch snow
-x 43
-y 51
-end
-arch flagstone
-x 43
-y 52
-end
-arch slevel_3_3
-x 43
-y 52
-end
-arch cwall_1_4
-x 43
-y 52
-end
-arch flagstone
-x 43
-y 53
-end
-arch flagstone
-x 43
-y 54
-end
-arch snow5
-x 43
-y 54
-end
-arch istone
-x 43
-y 55
-end
-arch cwall_2_1_2
-x 43
-y 55
-end
-arch s_mountain
-x 43
-y 56
-end
-arch s_mountain
-x 43
-y 57
-end
-arch s_mountain
-x 43
-y 58
-end
-arch s_mountain
-x 43
-y 59
-end
-arch s_mountain
-x 43
-y 60
-end
-arch s_mountain
-x 43
-y 61
-end
-arch s_mountain
-x 43
-y 62
-end
-arch blocked
-x 43
-y 63
-end
-arch s_mountain
-x 43
-y 63
-end
-arch blocked
-x 44
-end
-arch s_mountain
-x 44
-end
-arch s_mountain
-x 44
-y 1
-end
-arch s_mountain
-x 44
-y 2
-end
-arch s_mountain
-x 44
-y 3
-end
-arch s_mountain
-x 44
-y 4
-end
-arch s_mountain
-x 44
-y 5
-end
-arch s_mountain
-x 44
-y 6
-end
-arch s_mountain
-x 44
-y 7
-end
-arch istone
-x 44
-y 8
-end
-arch cwall_2_1_2
-x 44
-y 8
-end
-arch flagstone
-x 44
-y 9
-end
-arch flagstone
-x 44
-y 10
-end
-arch flagstone
-x 44
-y 11
-end
-arch slevel_3_1
-x 44
-y 11
-end
-arch cwall_1_3
-x 44
-y 11
-end
-arch snow
-x 44
-y 12
-end
-arch snow
-x 44
-y 13
-end
-arch snow
-x 44
-y 14
-end
-arch tree6
-x 44
-y 14
-end
-arch snow
-x 44
-y 15
-end
-arch snow
-x 44
-y 16
-end
-arch snow
-x 44
-y 17
-end
-arch snow
-x 44
-y 18
-end
-arch snow
-x 44
-y 19
-end
-arch snow
-x 44
-y 20
-end
-arch snow
-x 44
-y 21
-end
-arch snow
-x 44
-y 22
-end
-arch snow
-x 44
-y 23
-end
-arch snow
-x 44
-y 24
-end
-arch snow
-x 44
-y 25
-end
-arch snow
-x 44
-y 26
-end
-arch snow
-x 44
-y 27
-end
-arch snow
-x 44
-y 28
-end
-arch snow
-x 44
-y 29
-end
-arch snow
-x 44
-y 30
-end
-arch snow
-x 44
-y 31
-end
-arch snow
-x 44
-y 32
-end
-arch snow
-x 44
-y 33
-end
-arch snow
-x 44
-y 34
-end
-arch snow
-x 44
-y 35
-end
-arch snow
-x 44
-y 36
-end
-arch snow
-x 44
-y 37
-end
-arch snow
-x 44
-y 38
-end
-arch snow
-x 44
-y 39
-end
-arch snow
-x 44
-y 40
-end
-arch snow
-x 44
-y 41
-end
-arch snow
-x 44
-y 42
-end
-arch snow
-x 44
-y 43
-end
-arch snow
-x 44
-y 44
-end
-arch snow
-x 44
-y 45
-end
-arch snow
-x 44
-y 46
-end
-arch snow
-x 44
-y 47
-end
-arch snow
-x 44
-y 48
-end
-arch snow
-x 44
-y 49
-end
-arch snow
-x 44
-y 50
-end
-arch snow
-x 44
-y 51
-end
-arch flagstone
-x 44
-y 52
-end
-arch slevel_3_3
-x 44
-y 52
-end
-arch cwall_1_3
-x 44
-y 52
-end
-arch flagstone
-x 44
-y 53
-end
-arch snow5
-x 44
-y 53
-end
-arch flagstone
-x 44
-y 54
-end
-arch snow5
-x 44
-y 54
-end
-arch istone
-x 44
-y 55
-end
-arch cwall_2_1_2
-x 44
-y 55
-end
-arch s_mountain
-x 44
-y 56
-end
-arch s_mountain
-x 44
-y 57
-end
-arch s_mountain
-x 44
-y 58
-end
-arch s_mountain
-x 44
-y 59
-end
-arch s_mountain
-x 44
-y 60
-end
-arch s_mountain
-x 44
-y 61
-end
-arch s_mountain
-x 44
-y 62
-end
-arch blocked
-x 44
-y 63
-end
-arch s_mountain
-x 44
-y 63
-end
-arch blocked
-x 45
-end
-arch s_mountain
-x 45
-end
-arch s_mountain
-x 45
-y 1
-end
-arch s_mountain
-x 45
-y 2
-end
-arch s_mountain
-x 45
-y 3
-end
-arch s_mountain
-x 45
-y 4
-end
-arch s_mountain
-x 45
-y 5
-end
-arch s_mountain
-x 45
-y 6
-end
-arch s_mountain
-x 45
-y 7
-end
-arch istone
-x 45
-y 8
-end
-arch cwall_2_1_2
-x 45
-y 8
-end
-arch flagstone
-x 45
-y 9
-end
-arch flagstone
-x 45
-y 10
-end
-arch snow5
-x 45
-y 10
-end
-arch flagstone
-x 45
-y 11
-end
-arch slevel_3_1
-x 45
-y 11
-end
-arch snow5
-x 45
-y 11
-end
-arch snow
-x 45
-y 12
-end
-arch snow
-x 45
-y 13
-end
-arch snow
-x 45
-y 14
-end
-arch snow
-x 45
-y 15
-end
-arch snow
-x 45
-y 16
-end
-arch snow
-x 45
-y 17
-end
-arch snow
-x 45
-y 18
-end
-arch snow
-x 45
-y 19
-end
-arch snow
-x 45
-y 20
-end
-arch snow
-x 45
-y 21
-end
-arch snow
-x 45
-y 22
-end
-arch snow
-x 45
-y 23
-end
-arch snow
-x 45
-y 24
-end
-arch snow
-x 45
-y 25
-end
-arch snow
-x 45
-y 26
-end
-arch snow
-x 45
-y 27
-end
-arch snow
-x 45
-y 28
-end
-arch snow
-x 45
-y 29
-end
-arch snow
-x 45
-y 30
-end
-arch snow
-x 45
-y 31
-end
-arch snow
-x 45
-y 32
-end
-arch snow
-x 45
-y 33
-end
-arch snow
-x 45
-y 34
-end
-arch snow
-x 45
-y 35
-end
-arch snow
-x 45
-y 36
-end
-arch snow
-x 45
-y 37
-end
-arch snow
-x 45
-y 38
-end
-arch snow
-x 45
-y 39
-end
-arch snow
-x 45
-y 40
-end
-arch snow
-x 45
-y 41
-end
-arch snow
-x 45
-y 42
-end
-arch snow
-x 45
-y 43
-end
-arch snow
-x 45
-y 44
-end
-arch snow
-x 45
-y 45
-end
-arch snow
-x 45
-y 46
-end
-arch snow
-x 45
-y 47
-end
-arch snow
-x 45
-y 48
-end
-arch snow
-x 45
-y 49
-end
-arch snow
-x 45
-y 50
-end
-arch snow
-x 45
-y 51
-end
-arch flagstone
-x 45
-y 52
-end
-arch slevel_3_3
-x 45
-y 52
-end
-arch snow5
-x 45
-y 52
-end
-arch flagstone
-x 45
-y 53
-end
-arch snow5
-x 45
-y 53
-end
-arch flagstone
-x 45
-y 54
-end
-arch snow5
-x 45
-y 54
-end
-arch istone
-x 45
-y 55
-end
-arch cwall_2_1_2
-x 45
-y 55
-end
-arch s_mountain
-x 45
-y 56
-end
-arch s_mountain
-x 45
-y 57
-end
-arch s_mountain
-x 45
-y 58
-end
-arch s_mountain
-x 45
-y 59
-end
-arch s_mountain
-x 45
-y 60
-end
-arch s_mountain
-x 45
-y 61
-end
-arch s_mountain
-x 45
-y 62
-end
-arch blocked
-x 45
-y 63
-end
-arch s_mountain
-x 45
-y 63
-end
-arch blocked
-x 46
-end
-arch s_mountain
-x 46
-end
-arch s_mountain
-x 46
-y 1
-end
-arch s_mountain
-x 46
-y 2
-end
-arch s_mountain
-x 46
-y 3
-end
-arch s_mountain
-x 46
-y 4
-end
-arch s_mountain
-x 46
-y 5
-end
-arch s_mountain
-x 46
-y 6
-end
-arch s_mountain
-x 46
-y 7
-end
-arch istone
-x 46
-y 8
-end
-arch cwall_2_1_2
-x 46
-y 8
-end
-arch flagstone
-x 46
-y 9
-end
-arch snow5
-x 46
-y 9
-end
-arch flagstone
-x 46
-y 10
-end
-arch snow5
-x 46
-y 10
-end
-arch flagstone
-x 46
-y 11
-end
-arch slevel_3_1
-x 46
-y 11
-end
-arch snow5
-x 46
-y 11
-end
-arch snow
-x 46
-y 12
-end
-arch snow
-x 46
-y 13
-end
-arch snow
-x 46
-y 14
-end
-arch snow
-x 46
-y 15
-end
-arch snow
-x 46
-y 16
-end
-arch snow
-x 46
-y 17
-end
-arch snow
-x 46
-y 18
-end
-arch snow
-x 46
-y 19
-end
-arch snow
-x 46
-y 20
-end
-arch snow
-x 46
-y 21
-end
-arch snow
-x 46
-y 22
-end
-arch snow
-x 46
-y 23
-end
-arch snow
-x 46
-y 24
-end
-arch snow
-x 46
-y 25
-end
-arch snow
-x 46
-y 26
-end
-arch snow
-x 46
-y 27
-end
-arch snow
-x 46
-y 28
-end
-arch snow
-x 46
-y 29
-end
-arch snow
-x 46
-y 30
-end
-arch snow
-x 46
-y 31
-end
-arch snow
-x 46
-y 32
-end
-arch snow
-x 46
-y 33
-end
-arch snow
-x 46
-y 34
-end
-arch snow
-x 46
-y 35
-end
-arch snow
-x 46
-y 36
-end
-arch snow
-x 46
-y 37
-end
-arch snow
-x 46
-y 38
-end
-arch snow
-x 46
-y 39
-end
-arch snow
-x 46
-y 40
-end
-arch snow
-x 46
-y 41
-end
-arch snow
-x 46
-y 42
-end
-arch snow
-x 46
-y 43
-end
-arch snow
-x 46
-y 44
-end
-arch snow
-x 46
-y 45
-end
-arch snow
-x 46
-y 46
-end
-arch snow
-x 46
-y 47
-end
-arch snow
-x 46
-y 48
-end
-arch snow
-x 46
-y 49
-end
-arch snow
-x 46
-y 50
-end
-arch snow
-x 46
-y 51
-end
-arch flagstone
-x 46
-y 52
-end
-arch slevel_3_3
-x 46
-y 52
-end
-arch snow5
-x 46
-y 52
-end
-arch flagstone
-x 46
-y 53
-end
-arch snow5
-x 46
-y 53
-end
-arch flagstone
-x 46
-y 54
-end
-arch istone
-x 46
-y 55
-end
-arch cwall_2_1_2
-x 46
-y 55
-end
-arch s_mountain
-x 46
-y 56
-end
-arch s_mountain
-x 46
-y 57
-end
-arch s_mountain
-x 46
-y 58
-end
-arch s_mountain
-x 46
-y 59
-end
-arch s_mountain
-x 46
-y 60
-end
-arch s_mountain
-x 46
-y 61
-end
-arch s_mountain
-x 46
-y 62
-end
-arch blocked
-x 46
-y 63
-end
-arch s_mountain
-x 46
-y 63
-end
-arch blocked
-x 47
-end
-arch s_mountain
-x 47
-end
-arch s_mountain
-x 47
-y 1
-end
-arch s_mountain
-x 47
-y 2
-end
-arch s_mountain
-x 47
-y 3
-end
-arch s_mountain
-x 47
-y 4
-end
-arch s_mountain
-x 47
-y 5
-end
-arch s_mountain
-x 47
-y 6
-end
-arch istone
-x 47
-y 7
-end
-arch cwall_2_2_2
-x 47
-y 7
-end
-arch istone
-x 47
-y 8
-end
-arch cwall_2_2_4
-x 47
-y 8
-end
-arch istone
-x 47
-y 9
-end
-arch door_1
-x 47
-y 9
-no_pass 0
-end
-arch istone
-x 47
-y 10
-end
-arch door_1
-x 47
-y 10
-no_pass 0
-end
-arch istone
-x 47
-y 11
-end
-arch cwall_1_4
-x 47
-y 11
-end
-arch snow
-x 47
-y 12
-end
-arch snow
-x 47
-y 13
-end
-arch snow
-x 47
-y 14
-end
-arch snow
-x 47
-y 15
-end
-arch snow
-x 47
-y 16
-end
-arch snow
-x 47
-y 17
-end
-arch snow
-x 47
-y 18
-end
-arch snow
-x 47
-y 19
-end
-arch snow
-x 47
-y 20
-end
-arch snow
-x 47
-y 21
-end
-arch snow
-x 47
-y 22
-end
-arch snow
-x 47
-y 23
-end
-arch snow
-x 47
-y 24
-end
-arch snow
-x 47
-y 25
-end
-arch snow
-x 47
-y 26
-end
-arch snow
-x 47
-y 27
-end
-arch snow
-x 47
-y 28
-end
-arch snow
-x 47
-y 29
-end
-arch snow
-x 47
-y 30
-end
-arch snow
-x 47
-y 31
-end
-arch snow
-x 47
-y 32
-end
-arch snow
-x 47
-y 33
-end
-arch snow
-x 47
-y 34
-end
-arch snow
-x 47
-y 35
-end
-arch snow
-x 47
-y 36
-end
-arch snow
-x 47
-y 37
-end
-arch snow
-x 47
-y 38
-end
-arch snow
-x 47
-y 39
-end
-arch snow
-x 47
-y 40
-end
-arch snow
-x 47
-y 41
-end
-arch snow
-x 47
-y 42
-end
-arch snow
-x 47
-y 43
-end
-arch snow
-x 47
-y 44
-end
-arch snow
-x 47
-y 45
-end
-arch snow
-x 47
-y 46
-end
-arch snow
-x 47
-y 47
-end
-arch snow
-x 47
-y 48
-end
-arch snow
-x 47
-y 49
-end
-arch snow
-x 47
-y 50
-end
-arch snow
-x 47
-y 51
-end
-arch istone
-x 47
-y 52
-end
-arch cwall_1_4
-x 47
-y 52
-end
-arch istone
-x 47
-y 53
-end
-arch door_1
-x 47
-y 53
-no_pass 0
-end
-arch istone
-x 47
-y 54
-end
-arch door_1
-x 47
-y 54
-no_pass 0
-end
-arch istone
-x 47
-y 55
-end
-arch cwall_2_2_3
-x 47
-y 55
-end
-arch istone
-x 47
-y 56
-end
-arch cwall_2_2_1
-x 47
-y 56
-end
-arch s_mountain
-x 47
-y 57
-end
-arch s_mountain
-x 47
-y 58
-end
-arch s_mountain
-x 47
-y 59
-end
-arch s_mountain
-x 47
-y 60
-end
-arch s_mountain
-x 47
-y 61
-end
-arch s_mountain
-x 47
-y 62
-end
-arch blocked
-x 47
-y 63
-end
-arch s_mountain
-x 47
-y 63
-end
-arch blocked
-x 48
-end
-arch s_mountain
-x 48
-end
-arch s_mountain
-x 48
-y 1
-end
-arch s_mountain
-x 48
-y 2
-end
-arch s_mountain
-x 48
-y 3
-end
-arch s_mountain
-x 48
-y 4
-end
-arch istone
-x 48
-y 5
-end
-arch cwall_2_2_2
-x 48
-y 5
-end
-arch istone
-x 48
-y 6
-end
-arch cwall_2_1_1
-x 48
-y 6
-end
-arch istone
-x 48
-y 7
-end
-arch cwall_2_2_4
-x 48
-y 7
-end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 48
-y 8
-end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 48
-y 9
-end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
-x 48
-y 10
-end
-arch istone
-x 48
-y 11
-end
-arch cwall_2_2_3
-x 48
-y 11
-end
-arch istone
-x 48
-y 12
-end
-arch cwall_2_1_1
-x 48
-y 12
-end
-arch istone
-x 48
-y 13
-end
-arch cwall_2_2_1
-x 48
-y 13
-end
-arch snow
-x 48
-y 14
-end
-arch snow
-x 48
-y 15
-end
-arch snow
-x 48
-y 16
-end
-arch snow
-x 48
-y 17
-end
-arch snow
-x 48
-y 18
-end
-arch snow
-x 48
-y 19
-end
-arch snow
-x 48
-y 20
-end
-arch snow
-x 48
-y 21
-end
-arch snow
-x 48
-y 22
-end
-arch snow
-x 48
-y 23
-end
-arch snow
-x 48
-y 24
-end
-arch snow
-x 48
-y 25
-end
-arch snow
-x 48
-y 26
-end
-arch snow
-x 48
-y 27
-end
-arch snow
-x 48
-y 28
-end
-arch snow
-x 48
-y 29
-end
-arch snow
-x 48
-y 30
-end
-arch snow
-x 48
-y 31
-end
-arch snow
-x 48
-y 32
-end
-arch snow
-x 48
-y 33
-end
-arch snow
-x 48
-y 34
-end
-arch snow
-x 48
-y 35
-end
-arch snow
-x 48
-y 36
-end
-arch tree6
 x 48
 y 36
 end
@@ -18266,15 +18613,27 @@ arch cwall_2_2_1
 x 49
 y 14
 end
-arch snow
+arch dungeon_floor
 x 49
 y 15
 end
-arch snow
+arch stwall_2_2_3
+x 49
+y 15
+end
+arch dungeon_floor
 x 49
 y 16
 end
-arch snow
+arch stwall_2_1_1
+x 49
+y 16
+end
+arch dungeon_floor
+x 49
+y 17
+end
+arch stwall_2_2_4
 x 49
 y 17
 end
