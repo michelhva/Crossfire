@@ -1,6 +1,6 @@
 Object christmas_tree5
 name christmas tree
-face tree_5_christmas.111
+face tree_5_christmas.x11
 no_pick 1
 slow_move 1
 is_wooded 1
@@ -13,7 +13,7 @@ end
 
 Object christmas_s_tree5
 name snow covered christmas tree
-face s_tree_5_christmas.111
+face s_tree_5_christmas.x11
 no_pick 1
 slow_move 1
 is_wooded 1
