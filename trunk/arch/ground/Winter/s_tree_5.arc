@@ -1,6 +1,6 @@
 Object s_tree5
 name snow covered tree
-face s_tree_5.111
+face s_tree_5.x11
 no_pick 1
 slow_move 1
 is_wooded 1
