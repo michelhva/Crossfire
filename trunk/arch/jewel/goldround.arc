@@ -1,6 +1,6 @@
 Object goldround
-name gold coin
-name_pl gold coins
+name gold round
+name_pl gold rounds
 race gold and jewels
 face goldround.111
 color_fg orange

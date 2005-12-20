@@ -1,6 +1,6 @@
 Object silverround
-name silver coin
-name_pl silver coins
+name silver round
+name_pl silver rounds
 race gold and jewels
 face silverround.111
 color_fg grey
