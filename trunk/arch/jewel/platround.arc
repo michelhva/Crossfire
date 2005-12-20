@@ -1,6 +1,6 @@
 Object platround
-name platinum coin
-name_pl platinum coins
+name platinum round
+name_pl platinum rounds
 race gold and jewels
 face platround.111
 color_fg grey
