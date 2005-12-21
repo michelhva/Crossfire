@@ -3402,6 +3402,13 @@ arch flagstone
 x 13
 y 12
 end
+arch ladder_down
+slaying castle2
+hp 13
+sp 12
+x 13
+y 12
+end
 arch flagstone
 x 13
 y 13
@@ -4772,7 +4779,10 @@ arch flagstone
 x 28
 y 56
 end
-arch snow4
+arch stair_down_3
+slaying castle2
+hp 28
+sp 56
 x 28
 y 56
 end
