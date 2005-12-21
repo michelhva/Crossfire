@@ -1,5 +1,6 @@
 arch map
 name foodshop
+difficulty 2
 region scorn
 width 16
 height 16
@@ -169,7 +170,10 @@ arch swall_1_4
 x 1
 y 12
 end
-arch shop_empty
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 1
 y 13
 end
@@ -177,7 +181,10 @@ arch shop_mat
 x 1
 y 13
 end
-arch shop_empty
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 1
 y 14
 end
@@ -247,7 +254,10 @@ arch swall_2_1_2
 x 2
 y 12
 end
-arch shop_empty
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 2
 y 13
 end
@@ -255,7 +265,10 @@ arch menu
 x 2
 y 13
 end
-arch shop_empty
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 2
 y 14
 end
@@ -266,7 +279,10 @@ sp 32
 x 2
 y 15
 end
-arch shop_empty
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 2
 y 15
 end
