@@ -3947,6 +3947,13 @@ name_pl woodfloor
 x 13
 y 12
 end
+arch ladder_up
+slaying castle3
+hp 13
+sp 12
+x 13
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -6186,6 +6193,13 @@ x 28
 y 55
 end
 arch flagstone
+x 28
+y 56
+end
+arch stair_up_3
+slaying castle3
+hp 28
+sp 56
 x 28
 y 56
 end
