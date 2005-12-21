@@ -11501,11 +11501,11 @@ y 39
 end
 arch minihouse
 name abandoned temple
+name_pl abandoned temple
 slaying /scorn/misc/kboldtemp1
 msg
 It looks as if someone took up refuge
 here...
-
 endmsg
 hp 8
 sp 1
@@ -12231,7 +12231,7 @@ x 44
 y 31
 end
 arch store_weapons
-name Weapon shop
+name Weapon Shop
 name_pl Weapon shop
 slaying /scorn/shops/weaponshop
 hp 1
@@ -14225,7 +14225,22 @@ arch dungeon_magic
 x 49
 y 31
 end
+arch swall_0
+name no pass
+x 49
+y 31
+invisible 1
+end
 arch brush
+x 49
+y 31
+end
+arch barrack_up
+name Food Shop Warehouse
+name_pl Food Shop
+slaying /scorn/shops/foodshop
+hp 2
+sp 14
 x 49
 y 31
 end
