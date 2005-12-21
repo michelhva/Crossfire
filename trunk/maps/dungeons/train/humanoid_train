@@ -2361,6 +2361,19 @@ no_pick 1
 x 11
 y 12
 end
+arch magic_mouth
+msg
+The shield we seek has this message
+when one examines the shield:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+There is a evil spirit in the shield.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+If that is not the shield you wish to offer
+then you do not have the correct one.
+endmsg
+x 11
+y 13
+end
 arch dungeon_magic
 x 11
 y 13
@@ -2375,10 +2388,12 @@ name Drop Demonspawn Shield
 slaying DShield
 food 1
 connected 3
+elevation 4956
 x 11
 y 13
 end
 arch light2
+elevation 4956
 x 11
 y 13
 end
