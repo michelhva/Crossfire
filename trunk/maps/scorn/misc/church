@@ -1,6 +1,6 @@
 arch map
-region scorn
 name church
+region scorn
 msg
 Creator:
 Email:
@@ -1146,8 +1146,7 @@ arch woodfloor
 x 10
 y 5
 end
-arch altar
-food 0
+arch altar_none
 x 10
 y 5
 end
