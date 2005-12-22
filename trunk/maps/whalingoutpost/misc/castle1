@@ -886,6 +886,10 @@ arch s_mountain
 x 2
 y 51
 end
+arch dungeon_magic
+x 2
+y 52
+end
 arch istone
 x 2
 y 52
@@ -894,6 +898,10 @@ arch cwall_2_2_2
 x 2
 y 52
 end
+arch dungeon_magic
+x 2
+y 53
+end
 arch istone
 x 2
 y 53
@@ -901,6 +909,10 @@ end
 arch cwall_2_1_1
 x 2
 y 53
+end
+arch dungeon_magic
+x 2
+y 54
 end
 arch istone
 x 2
@@ -910,6 +922,10 @@ arch cwall_2_1_1
 x 2
 y 54
 end
+arch dungeon_magic
+x 2
+y 55
+end
 arch istone
 x 2
 y 55
@@ -917,6 +933,10 @@ end
 arch cwall_2_1_1
 x 2
 y 55
+end
+arch dungeon_magic
+x 2
+y 56
 end
 arch istone
 x 2
@@ -1010,15 +1030,27 @@ name_pl woodfloor
 x 3
 y 8
 end
+arch lspear
+x 3
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 3
 y 9
 end
+arch lspear
+x 3
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 3
+y 10
+end
+arch lspear
 x 3
 y 10
 end
@@ -1206,11 +1238,15 @@ arch cwall_2_1_1
 x 3
 y 51
 end
+arch dungeon_magic
+x 3
+y 52
+end
 arch istone
 x 3
 y 52
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 3
 y 52
 end
@@ -1226,17 +1262,28 @@ name_pl woodfloor
 x 3
 y 54
 end
+arch stair_down_4
+slaying castleb1
+hp 3
+sp 54
+x 3
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 3
 y 55
 end
+arch dungeon_magic
+x 3
+y 56
+end
 arch istone
 x 3
 y 56
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 3
 y 56
 end
@@ -1320,9 +1367,17 @@ name_pl woodfloor
 x 4
 y 6
 end
+arch sword_4
+x 4
+y 6
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 4
+y 7
+end
+arch sword_4
 x 4
 y 7
 end
@@ -1332,9 +1387,17 @@ name_pl woodfloor
 x 4
 y 8
 end
+arch lspear
+x 4
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 4
+y 9
+end
+arch lspear
 x 4
 y 9
 end
@@ -1344,15 +1407,27 @@ name_pl woodfloor
 x 4
 y 10
 end
+arch lspear
+x 4
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 4
 y 11
 end
+arch sword_4
+x 4
+y 11
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 4
+y 12
+end
+arch sword_4
 x 4
 y 12
 end
@@ -1530,9 +1605,15 @@ name_pl woodfloor
 x 4
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
+x 4
+y 52
+end
+arch dungeon_floor
+x 4
+y 52
+end
+arch cwall_2_1_2
 x 4
 y 52
 end
@@ -1541,6 +1622,11 @@ name woodfloor
 name_pl woodfloor
 x 4
 y 53
+end
+arch button_lever
+x 4
+y 53
+connected 1000
 end
 arch woodfloor2
 name woodfloor
@@ -1554,9 +1640,15 @@ name_pl woodfloor
 x 4
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
+x 4
+y 56
+end
+arch dungeon_floor
+x 4
+y 56
+end
+arch cwall_2_1_2
 x 4
 y 56
 end
@@ -1638,9 +1730,17 @@ name_pl woodfloor
 x 5
 y 5
 end
+arch sword_4
+x 5
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 6
+end
+arch sword_4
 x 5
 y 6
 end
@@ -1680,9 +1780,17 @@ name_pl woodfloor
 x 5
 y 12
 end
+arch sword_4
+x 5
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 13
+end
+arch sword_4
 x 5
 y 13
 end
@@ -1858,33 +1966,65 @@ name_pl woodfloor
 x 5
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_magic
 x 5
 y 52
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 5
+y 52
+end
+arch cwall_2_2_3
+x 5
+y 52
+end
+arch dungeon_magic
 x 5
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 5
+y 53
+end
+arch cwall_1_2
+x 5
+y 53
+end
+arch dungeon_magic
 x 5
 y 54
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 5
+y 54
+end
+arch igate_closed_2
+x 5
+y 54
+speed 0.500000
+connected 1000
+end
+arch dungeon_magic
 x 5
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 5
+y 55
+end
+arch cwall_1_1
+x 5
+y 55
+end
+arch dungeon_magic
+x 5
+y 56
+end
+arch dungeon_floor
+x 5
+y 56
+end
+arch cwall_2_2_4
 x 5
 y 56
 end
@@ -1960,9 +2100,17 @@ name_pl woodfloor
 x 6
 y 4
 end
+arch sword_4
+x 6
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 5
+end
+arch sword_4
 x 6
 y 5
 end
@@ -1978,9 +2126,17 @@ name_pl woodfloor
 x 6
 y 7
 end
+arch swall_1_1
+x 6
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 8
+end
+arch swall_2_1_1
 x 6
 y 8
 end
@@ -1990,15 +2146,27 @@ name_pl woodfloor
 x 6
 y 9
 end
+arch swall_2_1_1
+x 6
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 6
 y 10
 end
+arch swall_2_1_1
+x 6
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 11
+end
+arch swall_1_2
 x 6
 y 11
 end
@@ -2014,9 +2182,17 @@ name_pl woodfloor
 x 6
 y 13
 end
+arch sword_4
+x 6
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 14
+end
+arch sword_4
 x 6
 y 14
 end
@@ -2286,6 +2462,10 @@ name_pl woodfloor
 x 7
 y 4
 end
+arch sword_4
+x 7
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2304,9 +2484,17 @@ name_pl woodfloor
 x 7
 y 7
 end
+arch shield
+x 7
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 8
+end
+arch shield
 x 7
 y 8
 end
@@ -2316,15 +2504,27 @@ name_pl woodfloor
 x 7
 y 9
 end
+arch shield
+x 7
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 7
 y 10
 end
+arch shield
+x 7
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 11
+end
+arch shield
 x 7
 y 11
 end
@@ -2343,6 +2543,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 14
+end
+arch sword_4
 x 7
 y 14
 end
@@ -2522,6 +2726,10 @@ name_pl woodfloor
 x 7
 y 52
 end
+arch wwall_0
+x 7
+y 52
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2543,6 +2751,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 56
+end
+arch wwall_0
 x 7
 y 56
 end
@@ -2616,9 +2828,17 @@ name_pl woodfloor
 x 8
 y 3
 end
+arch lspear
+x 8
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 8
+y 4
+end
+arch lspear
 x 8
 y 4
 end
@@ -3072,9 +3292,17 @@ name_pl woodfloor
 x 9
 y 3
 end
+arch lspear
+x 9
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 4
+end
+arch lspear
 x 9
 y 4
 end
@@ -3093,6 +3321,13 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 7
+end
+arch stair_down_1
+slaying castleb1
+hp 9
+sp 7
 x 9
 y 7
 end
@@ -3153,6 +3388,10 @@ name_pl woodfloor
 x 9
 y 15
 end
+arch snow5
+x 9
+y 15
+end
 arch istone
 x 9
 y 16
@@ -3353,6 +3592,10 @@ name_pl woodfloor
 x 9
 y 48
 end
+arch snow5
+x 9
+y 48
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3368,6 +3611,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 51
+end
+arch wwall_0
 x 9
 y 51
 end
@@ -3404,6 +3651,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 57
+end
+arch wwall_0
 x 9
 y 57
 end
@@ -3469,9 +3720,17 @@ name_pl woodfloor
 x 10
 y 3
 end
+arch lspear
+x 10
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 10
+y 4
+end
+arch lspear
 x 10
 y 4
 end
@@ -3547,6 +3806,10 @@ name_pl woodfloor
 x 10
 y 15
 end
+arch snow5
+x 10
+y 15
+end
 arch istone
 x 10
 y 16
@@ -3743,6 +4006,10 @@ name_pl woodfloor
 x 10
 y 48
 end
+arch snow5
+x 10
+y 48
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3885,9 +4152,17 @@ name_pl woodfloor
 x 11
 y 7
 end
+arch shield
+x 11
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 8
+end
+arch shield
 x 11
 y 8
 end
@@ -3897,15 +4172,27 @@ name_pl woodfloor
 x 11
 y 9
 end
+arch shield
+x 11
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 11
 y 10
 end
+arch shield
+x 11
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 11
+end
+arch shield
 x 11
 y 11
 end
@@ -4343,6 +4630,10 @@ name_pl woodfloor
 x 11
 y 52
 end
+arch wwall_0
+x 11
+y 52
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4364,6 +4655,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 56
+end
+arch wwall_0
 x 11
 y 56
 end
@@ -4441,6 +4736,10 @@ name_pl woodfloor
 x 12
 y 4
 end
+arch mace
+x 12
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4459,9 +4758,17 @@ name_pl woodfloor
 x 12
 y 7
 end
+arch swall_1_1
+x 12
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 8
+end
+arch swall_2_1_1
 x 12
 y 8
 end
@@ -4471,15 +4778,27 @@ name_pl woodfloor
 x 12
 y 9
 end
+arch swall_2_1_1
+x 12
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 12
 y 10
 end
+arch swall_2_1_1
+x 12
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 11
+end
+arch swall_1_2
 x 12
 y 11
 end
@@ -4498,6 +4817,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 14
+end
+arch mace
 x 12
 y 14
 end
@@ -4681,6 +5004,10 @@ name_pl woodfloor
 x 12
 y 54
 end
+arch wwall_0
+x 12
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4771,6 +5098,10 @@ name_pl woodfloor
 x 13
 y 5
 end
+arch mace
+x 13
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4816,6 +5147,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 13
+end
+arch mace
 x 13
 y 13
 end
@@ -5121,6 +5456,10 @@ name_pl woodfloor
 x 14
 y 6
 end
+arch mace
+x 14
+y 6
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -5154,6 +5493,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 14
+y 12
+end
+arch mace
 x 14
 y 12
 end
@@ -5481,9 +5824,17 @@ name_pl woodfloor
 x 15
 y 9
 end
+arch snow5
+x 15
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 15
+y 10
+end
+arch snow5
 x 15
 y 10
 end
@@ -5705,9 +6056,17 @@ name_pl woodfloor
 x 15
 y 53
 end
+arch snow5
+x 15
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 15
+y 54
+end
+arch snow5
 x 15
 y 54
 end
@@ -8875,34 +9234,21 @@ arch snow
 x 24
 y 27
 end
-arch cave1
-name mountain top
-name_pl mountain top
+arch cave10
 x 24
 y 27
-blocksview 0
 end
 arch snow
 x 24
 y 28
 end
-arch cave1
-name mountain top
-name_pl mountain top
-x 24
-y 28
-blocksview 0
-end
 arch snow
 x 24
 y 29
 end
-arch cave1
-name mountain top
-name_pl mountain top
+arch cave11
 x 24
 y 29
-blocksview 0
 end
 arch snow
 x 24
@@ -9317,17 +9663,46 @@ arch istone
 x 25
 y 27
 end
+arch cave19
+name mountain top
+name_pl mountain top
+x 25
+y 27
+blocksview 0
+end
 arch cwall_2_2_1
 x 25
 y 27
+end
+arch invis_exit
+slaying castleb1keep
+hp 25
+sp 28
+x 25
+y 28
 end
 arch snow
 x 25
 y 28
 end
+arch cave1
+name mountain top
+name_pl mountain top
+x 25
+y 28
+no_pass 0
+blocksview 0
+end
 arch istone
 x 25
 y 29
+end
+arch cave20
+name mountain top
+name_pl mountain top
+x 25
+y 29
+blocksview 0
 end
 arch cwall_2_2_2
 x 25
@@ -10161,6 +10536,10 @@ name_pl woodfloor
 x 27
 y 32
 end
+arch shadowtiger
+x 27
+y 32
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -10306,6 +10685,10 @@ x 27
 y 53
 end
 arch flagstone
+x 27
+y 54
+end
+arch snow5
 x 27
 y 54
 end
@@ -10699,7 +11082,15 @@ arch flagstone
 x 28
 y 53
 end
+arch snow5
+x 28
+y 53
+end
 arch flagstone
+x 28
+y 54
+end
+arch snow5
 x 28
 y 54
 end
@@ -10707,7 +11098,15 @@ arch flagstone
 x 28
 y 55
 end
+arch snow5
+x 28
+y 55
+end
 arch flagstone
+x 28
+y 56
+end
+arch snow5
 x 28
 y 56
 end
@@ -10941,6 +11340,10 @@ arch longtable_3_3
 x 29
 y 28
 end
+arch shadowtiger
+x 29
+y 28
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -10996,6 +11399,11 @@ name woodfloor
 name_pl woodfloor
 x 29
 y 36
+end
+arch button_lever
+x 29
+y 36
+connected 3
 end
 arch istone
 x 29
@@ -11531,6 +11939,10 @@ arch slevel_3_3
 x 30
 y 49
 end
+arch snow5
+x 30
+y 49
+end
 arch istone
 x 30
 y 50
@@ -11549,9 +11961,17 @@ name_pl woodfloor
 x 30
 y 51
 end
+arch snow5
+x 30
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 30
+y 52
+end
+arch snow5
 x 30
 y 52
 end
@@ -11561,9 +11981,17 @@ name_pl woodfloor
 x 30
 y 53
 end
+arch snow5
+x 30
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 30
+y 54
+end
+arch snow5
 x 30
 y 54
 end
@@ -11572,6 +12000,14 @@ name woodfloor
 name_pl woodfloor
 x 30
 y 55
+end
+arch snow5
+x 30
+y 55
+end
+arch dungeon_magic
+x 30
+y 56
 end
 arch istone
 x 30
@@ -11850,7 +12286,7 @@ arch dungeon_floor
 x 31
 y 31
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 31
 y 31
 end
@@ -11858,7 +12294,21 @@ arch dungeon_floor
 x 31
 y 32
 end
+arch stair_up_1
+slaying castle2
+hp 31
+sp 32
+x 31
+y 32
+end
 arch dungeon_floor
+x 31
+y 33
+end
+arch stair_down_1
+slaying castleb1keep
+hp 31
+sp 33
 x 31
 y 33
 end
@@ -11878,6 +12328,10 @@ arch flagstone
 x 31
 y 36
 end
+arch snow5
+x 31
+y 36
+end
 arch istone
 x 31
 y 37
@@ -11885,6 +12339,7 @@ end
 arch mdoor_closed_2
 x 31
 y 37
+connected 3
 end
 arch snow
 x 31
@@ -11964,11 +12419,19 @@ arch slevel_3_3
 x 31
 y 49
 end
+arch snow5
+x 31
+y 49
+end
 arch dungeon_floor
 x 31
 y 50
 end
 arch slevel_3_3
+x 31
+y 50
+end
+arch snow5
 x 31
 y 50
 end
@@ -11978,9 +12441,17 @@ name_pl woodfloor
 x 31
 y 51
 end
+arch snow5
+x 31
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 31
+y 52
+end
+arch snow5
 x 31
 y 52
 end
@@ -11990,9 +12461,17 @@ name_pl woodfloor
 x 31
 y 53
 end
+arch snow5
+x 31
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 31
+y 54
+end
+arch snow5
 x 31
 y 54
 end
@@ -12001,6 +12480,14 @@ name woodfloor
 name_pl woodfloor
 x 31
 y 55
+end
+arch snow4
+x 31
+y 55
+end
+arch dungeon_magic
+x 31
+y 56
 end
 arch dungeon_floor
 x 31
@@ -12155,6 +12642,10 @@ arch dungeon_floor
 x 32
 y 19
 end
+arch snow5
+x 32
+y 19
+end
 arch dungeon_floor
 x 32
 y 20
@@ -12251,10 +12742,6 @@ arch dungeon_floor
 x 32
 y 31
 end
-arch cwall_2_1_2
-x 32
-y 31
-end
 arch dungeon_floor
 x 32
 y 32
@@ -12279,6 +12766,10 @@ arch flagstone
 x 32
 y 36
 end
+arch snow5
+x 32
+y 36
+end
 arch istone
 x 32
 y 37
@@ -12286,6 +12777,7 @@ end
 arch mdoor_closed_2
 x 32
 y 37
+connected 3
 end
 arch snow
 x 32
@@ -12373,11 +12865,19 @@ arch slevel_3_3
 x 32
 y 49
 end
+arch snow4
+x 32
+y 49
+end
 arch dungeon_floor
 x 32
 y 50
 end
 arch slevel_3_3
+x 32
+y 50
+end
+arch snow5
 x 32
 y 50
 end
@@ -12387,9 +12887,17 @@ name_pl woodfloor
 x 32
 y 51
 end
+arch snow5
+x 32
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 32
+y 52
+end
+arch snow5
 x 32
 y 52
 end
@@ -12399,9 +12907,17 @@ name_pl woodfloor
 x 32
 y 53
 end
+arch snow5
+x 32
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 32
+y 54
+end
+arch snow5
 x 32
 y 54
 end
@@ -12410,6 +12926,14 @@ name woodfloor
 name_pl woodfloor
 x 32
 y 55
+end
+arch snow4
+x 32
+y 55
+end
+arch dungeon_magic
+x 32
+y 56
 end
 arch dungeon_floor
 x 32
@@ -12565,6 +13089,10 @@ arch dungeon_floor
 x 33
 y 18
 end
+arch snow5
+x 33
+y 18
+end
 arch swall_2_2_4
 x 33
 y 18
@@ -12573,11 +13101,19 @@ arch dungeon_floor
 x 33
 y 19
 end
+arch snow5
+x 33
+y 19
+end
 arch dungeon_floor
 x 33
 y 20
 end
-arch woodwall_2_1_2
+arch snow5
+x 33
+y 20
+end
+arch woodwall_win2
 x 33
 y 20
 end
@@ -12673,7 +13209,7 @@ arch dungeon_floor
 x 33
 y 31
 end
-arch cwall_3_4
+arch cwall_2_1_1
 x 33
 y 31
 end
@@ -12805,6 +13341,10 @@ arch slevel_3_3
 x 33
 y 49
 end
+arch snow4
+x 33
+y 49
+end
 arch istone
 x 33
 y 50
@@ -12823,9 +13363,17 @@ name_pl woodfloor
 x 33
 y 51
 end
+arch snow5
+x 33
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 33
+y 52
+end
+arch snow5
 x 33
 y 52
 end
@@ -12835,9 +13383,17 @@ name_pl woodfloor
 x 33
 y 53
 end
+arch snow5
+x 33
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 33
+y 54
+end
+arch snow5
 x 33
 y 54
 end
@@ -12846,6 +13402,14 @@ name woodfloor
 name_pl woodfloor
 x 33
 y 55
+end
+arch snow5
+x 33
+y 55
+end
+arch dungeon_magic
+x 33
+y 56
 end
 arch istone
 x 33
@@ -12989,6 +13553,10 @@ x 34
 y 18
 end
 arch dungeon_floor
+x 34
+y 19
+end
+arch snow5
 x 34
 y 19
 end
@@ -13496,6 +14064,10 @@ name_pl floor
 x 35
 y 27
 end
+arch fireplace
+x 35
+y 27
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -13511,6 +14083,10 @@ end
 arch afloor_left
 name floor
 name_pl floor
+x 35
+y 30
+end
+arch behemoth
 x 35
 y 30
 end
@@ -13535,6 +14111,10 @@ end
 arch afloor_left
 name floor
 name_pl floor
+x 35
+y 34
+end
+arch behemoth
 x 35
 y 34
 end
@@ -17280,6 +17860,10 @@ arch dungeon_floor
 x 44
 y 19
 end
+arch snow5
+x 44
+y 19
+end
 arch dungeon_floor
 x 44
 y 20
@@ -17595,6 +18179,10 @@ arch dungeon_floor
 x 45
 y 18
 end
+arch snow5
+x 45
+y 18
+end
 arch swall_2_2_1
 x 45
 y 18
@@ -17603,11 +18191,19 @@ arch dungeon_floor
 x 45
 y 19
 end
+arch snow5
+x 45
+y 19
+end
 arch dungeon_floor
 x 45
 y 20
 end
-arch woodwall_2_1_2
+arch snow5
+x 45
+y 20
+end
+arch woodwall_win2
 x 45
 y 20
 end
@@ -17922,6 +18518,10 @@ x 46
 y 18
 end
 arch dungeon_floor
+x 46
+y 19
+end
+arch snow5
 x 46
 y 19
 end
@@ -18417,6 +19017,7 @@ arch igate_closed_2
 x 47
 y 53
 speed 0.500000
+connected 2
 end
 arch istone
 x 47
@@ -18426,6 +19027,7 @@ arch igate_closed_2
 x 47
 y 54
 speed 0.500000
+connected 2
 end
 arch istone
 x 47
@@ -18517,7 +19119,7 @@ arch istone
 x 48
 y 7
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 48
 y 7
 end
@@ -18543,7 +19145,7 @@ arch istone
 x 48
 y 11
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 48
 y 11
 end
@@ -18751,15 +19353,37 @@ arch cwall_2_2_4
 x 48
 y 52
 end
+arch pedestal_trigger
+x 48
+y 53
+connected 2
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 48
 y 53
 end
+arch snow5
+x 48
+y 53
+end
+arch big_elec
+x 48
+y 53
+end
+arch pedestal_trigger
+x 48
+y 54
+connected 2
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 48
+y 54
+end
+arch snow5
 x 48
 y 54
 end
@@ -18773,7 +19397,7 @@ arch istone
 x 48
 y 56
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 48
 y 56
 end
@@ -18857,39 +19481,65 @@ name_pl woodfloor
 x 49
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch chest
+x 49
+y 6
+end
+arch dungeon_floor
 x 49
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_3
+x 49
+y 7
+end
+arch dungeon_floor
 x 49
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_2
+x 49
+y 8
+end
+arch dungeon_floor
 x 49
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch igate_closed_2
+x 49
+y 9
+speed 0.500000
+end
+arch dungeon_floor
 x 49
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_1
+x 49
+y 10
+end
+arch dungeon_floor
+x 49
+y 11
+end
+arch cwall_3_1
 x 49
 y 11
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 49
+y 12
+end
+arch stair_up_4
+slaying castle2
+hp 49
+sp 12
+x 49
+y 12
+end
+arch acid_pool
 x 49
 y 12
 end
@@ -19095,9 +19745,15 @@ name_pl woodfloor
 x 49
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_pool
+x 49
+y 51
+end
+arch dungeon_floor
+x 49
+y 52
+end
+arch door_2
 x 49
 y 52
 end
@@ -19119,9 +19775,16 @@ name_pl woodfloor
 x 49
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch button_plate
+x 49
+y 55
+connected 3
+end
+arch dungeon_floor
+x 49
+y 56
+end
+arch cwall_2_1_2
 x 49
 y 56
 end
@@ -19131,11 +19794,15 @@ name_pl woodfloor
 x 49
 y 57
 end
+arch chest
+x 49
+y 57
+end
 arch istone
 x 49
 y 58
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 49
 y 58
 end
@@ -19203,9 +19870,17 @@ name_pl woodfloor
 x 50
 y 5
 end
+arch acid_sphere
+x 50
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 50
+y 6
+end
+arch cold_dragon
 x 50
 y 6
 end
@@ -19215,9 +19890,17 @@ name_pl woodfloor
 x 50
 y 7
 end
+arch cold_dragon
+x 50
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 50
+y 8
+end
+arch acid_sphere
 x 50
 y 8
 end
@@ -19227,15 +19910,25 @@ name_pl woodfloor
 x 50
 y 9
 end
+arch cold_dragon
+x 50
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 50
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 50
+y 10
+end
+arch dungeon_floor
+x 50
+y 11
+end
+arch cwall_2_1_2
 x 50
 y 11
 end
@@ -19245,9 +19938,17 @@ name_pl woodfloor
 x 50
 y 12
 end
+arch acid_sphere
+x 50
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 50
+y 13
+end
+arch acid_sphere
 x 50
 y 13
 end
@@ -19421,39 +20122,57 @@ name_pl woodfloor
 x 50
 y 50
 end
+arch acid_sphere
+x 50
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 50
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 50
+y 51
+end
+arch dungeon_floor
 x 50
 y 52
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_2
+x 50
+y 52
+end
+arch dungeon_floor
 x 50
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 50
+y 53
+end
+arch dungeon_floor
 x 50
 y 54
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 50
+y 54
+end
+arch dungeon_floor
 x 50
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 50
+y 55
+end
+arch dungeon_floor
+x 50
+y 56
+end
+arch cwall_3_1
 x 50
 y 56
 end
@@ -19463,9 +20182,11 @@ name_pl woodfloor
 x 50
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 50
+y 58
+end
+arch cwall_2_2_3
 x 50
 y 58
 end
@@ -19473,7 +20194,7 @@ arch istone
 x 50
 y 59
 end
-arch cwall_2_2_3
+arch cwall_3_4
 x 50
 y 59
 end
@@ -19529,9 +20250,17 @@ name_pl woodfloor
 x 51
 y 4
 end
+arch cold_dragon
+x 51
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 5
+end
+arch cold_dragon
 x 51
 y 5
 end
@@ -19541,9 +20270,17 @@ name_pl woodfloor
 x 51
 y 6
 end
+arch cold_dragon
+x 51
+y 6
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 7
+end
+arch cold_dragon
 x 51
 y 7
 end
@@ -19565,9 +20302,11 @@ name_pl woodfloor
 x 51
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 51
+y 11
+end
+arch cwall_2_1_2
 x 51
 y 11
 end
@@ -19577,15 +20316,30 @@ name_pl woodfloor
 x 51
 y 12
 end
+arch acid_sphere
+x 51
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 51
 y 13
 end
+arch acid_sphere
+x 51
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 14
+end
+arch stair_down_3
+slaying castleb1
+hp 51
+sp 14
 x 51
 y 14
 end
@@ -19743,9 +20497,17 @@ name_pl woodfloor
 x 51
 y 49
 end
+arch acid_sphere
+x 51
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 50
+end
+arch acid_sphere
 x 51
 y 50
 end
@@ -19755,9 +20517,15 @@ name_pl woodfloor
 x 51
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 51
+y 51
+end
+arch dungeon_floor
+x 51
+y 52
+end
+arch cwall_2_1_2
 x 51
 y 52
 end
@@ -19767,9 +20535,20 @@ name_pl woodfloor
 x 51
 y 53
 end
+arch spikes_moving
+dam 20
+x 51
+y 53
+speed 0.500000
+speed_left -0.860000
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 54
+end
+arch chinese_dragon
 x 51
 y 54
 end
@@ -19779,9 +20558,11 @@ name_pl woodfloor
 x 51
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 51
+y 56
+end
+arch cwall_2_1_2
 x 51
 y 56
 end
@@ -19791,15 +20572,25 @@ name_pl woodfloor
 x 51
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch elec_dragon
+x 51
+y 57
+end
+arch dungeon_floor
+x 51
+y 58
+end
+arch door_2
 x 51
 y 58
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 51
+y 59
+end
+arch cold_dragon
 x 51
 y 59
 end
@@ -19859,9 +20650,17 @@ name_pl woodfloor
 x 52
 y 4
 end
+arch cold_dragon
+x 52
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 52
+y 5
+end
+arch cold_dragon
 x 52
 y 5
 end
@@ -19871,51 +20670,71 @@ name_pl woodfloor
 x 52
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 52
+y 6
+end
+arch dungeon_floor
 x 52
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_2
+x 52
+y 7
+end
+arch dungeon_floor
 x 52
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_2
+x 52
+y 8
+end
+arch dungeon_floor
 x 52
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch door_1
+x 52
+y 9
+end
+arch dungeon_floor
 x 52
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_1
+x 52
+y 10
+end
+arch dungeon_floor
 x 52
 y 11
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_4
+x 52
+y 11
+end
+arch dungeon_floor
 x 52
 y 12
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 52
+y 12
+end
+arch dungeon_floor
 x 52
 y 13
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 52
+y 13
+end
+arch dungeon_floor
+x 52
+y 14
+end
+arch cwall_3_2
 x 52
 y 14
 end
@@ -19923,7 +20742,7 @@ arch istone
 x 52
 y 15
 end
-arch cwall_2_2_3
+arch cwall_3_4
 x 52
 y 15
 end
@@ -20311,33 +21130,47 @@ arch cwall_2_2_4
 x 52
 y 48
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 52
 y 49
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch igate_closed_2
+x 52
+y 49
+speed 0.500000
+connected 1
+end
+arch dungeon_floor
 x 52
 y 50
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_1
+x 52
+y 50
+end
+arch dungeon_floor
 x 52
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 52
+y 51
+end
+arch dungeon_floor
+x 52
+y 52
+end
+arch cwall_2_2_4
 x 52
 y 52
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 52
+y 53
+end
+arch boulder
 x 52
 y 53
 end
@@ -20353,9 +21186,11 @@ name_pl woodfloor
 x 52
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 52
+y 56
+end
+arch cwall_2_1_2
 x 52
 y 56
 end
@@ -20365,15 +21200,23 @@ name_pl woodfloor
 x 52
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch elec_dragon
+x 52
+y 57
+end
+arch dungeon_floor
 x 52
 y 58
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_4
+x 52
+y 58
+end
+arch dungeon_floor
+x 52
+y 59
+end
+arch door_1
 x 52
 y 59
 end
@@ -20429,9 +21272,21 @@ name_pl woodfloor
 x 53
 y 3
 end
+arch chest
+x 53
+y 3
+end
+arch cold_dragon
+x 53
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 53
+y 4
+end
+arch cold_dragon
 x 53
 y 4
 end
@@ -20441,21 +21296,35 @@ name_pl woodfloor
 x 53
 y 5
 end
+arch acid_sphere
+x 53
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 53
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 53
+y 6
+end
+arch dungeon_floor
+x 53
+y 7
+end
+arch cwall_2_1_2
 x 53
 y 7
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 53
+y 8
+end
+arch cold_dragon
 x 53
 y 8
 end
@@ -20471,9 +21340,15 @@ name_pl woodfloor
 x 53
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 53
+y 10
+end
+arch dungeon_floor
+x 53
+y 11
+end
+arch cwall_2_1_2
 x 53
 y 11
 end
@@ -20483,21 +21358,35 @@ name_pl woodfloor
 x 53
 y 12
 end
+arch acid_sphere
+x 53
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 53
 y 13
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 53
+y 13
+end
+arch dungeon_floor
+x 53
+y 14
+end
+arch cwall_1_3
 x 53
 y 14
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 53
+y 15
+end
+arch snow5
 x 53
 y 15
 end
@@ -20685,6 +21574,14 @@ name_pl woodfloor
 x 53
 y 48
 end
+arch snow5
+x 53
+y 48
+end
+arch chinese_dragon
+x 53
+y 48
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20697,21 +21594,31 @@ name_pl woodfloor
 x 53
 y 50
 end
+arch chinese_dragon
+x 53
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 53
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 53
+y 52
+end
+arch door_2
 x 53
 y 52
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 53
+y 53
+end
+arch elec_dragon
 x 53
 y 53
 end
@@ -20727,9 +21634,18 @@ name_pl woodfloor
 x 53
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch stair_down_2
+slaying castleb1
+hp 53
+sp 55
+x 53
+y 55
+end
+arch dungeon_floor
+x 53
+y 56
+end
+arch cwall_2_1_2
 x 53
 y 56
 end
@@ -20739,9 +21655,18 @@ name_pl woodfloor
 x 53
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch stair_down_2
+slaying castleb1
+hp 53
+sp 57
+x 53
+y 57
+end
+arch dungeon_floor
+x 53
+y 58
+end
+arch cwall_2_1_2
 x 53
 y 58
 end
@@ -20754,6 +21679,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 53
+y 60
+end
+arch bed_1
 x 53
 y 60
 end
@@ -20801,9 +21730,21 @@ name_pl woodfloor
 x 54
 y 3
 end
+arch chest
+x 54
+y 3
+end
+arch cold_dragon
+x 54
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 54
+y 4
+end
+arch cold_dragon
 x 54
 y 4
 end
@@ -20813,15 +21754,25 @@ name_pl woodfloor
 x 54
 y 5
 end
+arch cold_dragon
+x 54
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 54
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 54
+y 6
+end
+arch dungeon_floor
+x 54
+y 7
+end
+arch cwall_2_1_2
 x 54
 y 7
 end
@@ -20831,9 +21782,20 @@ name_pl woodfloor
 x 54
 y 8
 end
+arch cold_dragon
+x 54
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 54
+y 9
+end
+arch stair_up_1
+slaying castle2
+hp 54
+sp 9
 x 54
 y 9
 end
@@ -20843,9 +21805,15 @@ name_pl woodfloor
 x 54
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 54
+y 10
+end
+arch dungeon_floor
+x 54
+y 11
+end
+arch cwall_2_1_2
 x 54
 y 11
 end
@@ -20855,21 +21823,43 @@ name_pl woodfloor
 x 54
 y 12
 end
+arch stair_down_2
+slaying castleb1
+hp 54
+sp 12
+x 54
+y 12
+end
+arch acid_sphere
+x 54
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 54
 y 13
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 54
+y 13
+end
+arch dungeon_floor
 x 54
 y 14
+end
+arch igate_closed_1
+x 54
+y 14
+speed 0.500000
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 54
+y 15
+end
+arch snow5
 x 54
 y 15
 end
@@ -21081,6 +22071,10 @@ name_pl woodfloor
 x 54
 y 48
 end
+arch snow5
+x 54
+y 48
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -21099,51 +22093,69 @@ name_pl woodfloor
 x 54
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 54
 y 52
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_2
+x 54
+y 52
+end
+arch dungeon_floor
 x 54
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 54
+y 53
+end
+arch dungeon_floor
 x 54
 y 54
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 54
+y 54
+end
+arch dungeon_floor
 x 54
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 54
+y 55
+end
+arch dungeon_floor
 x 54
 y 56
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_3_4
+x 54
+y 56
+end
+arch dungeon_floor
 x 54
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 54
+y 57
+end
+arch dungeon_floor
+x 54
+y 58
+end
+arch cwall_3_1
 x 54
 y 58
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 54
+y 59
+end
+arch chinese_dragon
 x 54
 y 59
 end
@@ -21197,9 +22209,21 @@ name_pl woodfloor
 x 55
 y 3
 end
+arch chest
+x 55
+y 3
+end
+arch cold_dragon
+x 55
+y 3
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 55
+y 4
+end
+arch cold_dragon
 x 55
 y 4
 end
@@ -21209,15 +22233,25 @@ name_pl woodfloor
 x 55
 y 5
 end
+arch cold_dragon
+x 55
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 55
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 55
+y 6
+end
+arch dungeon_floor
+x 55
+y 7
+end
+arch cwall_2_1_2
 x 55
 y 7
 end
@@ -21227,9 +22261,17 @@ name_pl woodfloor
 x 55
 y 8
 end
+arch cold_dragon
+x 55
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 55
+y 9
+end
+arch cold_dragon
 x 55
 y 9
 end
@@ -21239,9 +22281,15 @@ name_pl woodfloor
 x 55
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 55
+y 10
+end
+arch dungeon_floor
+x 55
+y 11
+end
+arch cwall_2_1_2
 x 55
 y 11
 end
@@ -21251,15 +22299,25 @@ name_pl woodfloor
 x 55
 y 12
 end
+arch acid_sphere
+x 55
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 55
 y 13
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 55
+y 13
+end
+arch dungeon_floor
+x 55
+y 14
+end
+arch cwall_1_4
 x 55
 y 14
 end
@@ -21525,11 +22583,21 @@ arch cwall_2_2_1
 x 55
 y 47
 end
+arch pedestal_trigger
+x 55
+y 48
+connected 1
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 55
 y 48
+end
+arch fireplace
+x 55
+y 48
+no_pass 0
 end
 arch woodfloor2
 name woodfloor
@@ -21543,15 +22611,25 @@ name_pl woodfloor
 x 55
 y 50
 end
+arch chair_1.2
+x 55
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 55
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch chair_1.2
+x 55
+y 51
+end
+arch dungeon_floor
+x 55
+y 52
+end
+arch cwall_2_1_2
 x 55
 y 52
 end
@@ -21561,9 +22639,17 @@ name_pl woodfloor
 x 55
 y 53
 end
+arch cold_dragon
+x 55
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 55
+y 54
+end
+arch cold_dragon
 x 55
 y 54
 end
@@ -21573,9 +22659,15 @@ name_pl woodfloor
 x 55
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 55
+y 55
+end
+arch dungeon_floor
+x 55
+y 56
+end
+arch door_2
 x 55
 y 56
 end
@@ -21585,9 +22677,11 @@ name_pl woodfloor
 x 55
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 55
+y 58
+end
+arch cwall_2_1_2
 x 55
 y 58
 end
@@ -21655,9 +22749,17 @@ name_pl woodfloor
 x 56
 y 4
 end
+arch cold_dragon
+x 56
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 56
+y 5
+end
+arch cold_dragon
 x 56
 y 5
 end
@@ -21667,33 +22769,47 @@ name_pl woodfloor
 x 56
 y 6
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch green_slime
+x 56
+y 6
+end
+arch dungeon_floor
 x 56
 y 7
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_3
+x 56
+y 7
+end
+arch dungeon_floor
 x 56
 y 8
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 8
+end
+arch dungeon_floor
 x 56
 y 9
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 9
+end
+arch dungeon_floor
 x 56
 y 10
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 10
+end
+arch dungeon_floor
+x 56
+y 11
+end
+arch cwall_2_2_4
 x 56
 y 11
 end
@@ -21703,15 +22819,25 @@ name_pl woodfloor
 x 56
 y 12
 end
+arch acid_sphere
+x 56
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 56
 y 13
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch acid_sphere
+x 56
+y 13
+end
+arch dungeon_floor
+x 56
+y 14
+end
+arch cwall_2_2_3
 x 56
 y 14
 end
@@ -21719,7 +22845,7 @@ arch istone
 x 56
 y 15
 end
-arch cwall_2_2_2
+arch cwall_3_2
 x 56
 y 15
 end
@@ -21863,55 +22989,71 @@ arch istone
 x 56
 y 48
 end
-arch cwall_2_2_1
+arch cwall_3_2
 x 56
 y 48
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 56
 y 49
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 49
+end
+arch dungeon_floor
 x 56
 y 50
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 50
+end
+arch dungeon_floor
 x 56
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 51
+end
+arch dungeon_floor
 x 56
 y 52
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_3_1
+x 56
+y 52
+end
+arch dungeon_floor
 x 56
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch door_1
+x 56
+y 53
+end
+arch dungeon_floor
 x 56
 y 54
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_1
+x 56
+y 54
+end
+arch dungeon_floor
 x 56
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 56
+y 55
+end
+arch dungeon_floor
+x 56
+y 56
+end
+arch cwall_2_2_1
 x 56
 y 56
 end
@@ -21921,15 +23063,19 @@ name_pl woodfloor
 x 56
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 56
 y 58
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_3
+x 56
+y 58
+end
+arch dungeon_floor
+x 56
+y 59
+end
+arch door_1
 x 56
 y 59
 end
@@ -21989,9 +23135,17 @@ name_pl woodfloor
 x 57
 y 4
 end
+arch acid_sphere
+x 57
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 5
+end
+arch green_slime
 x 57
 y 5
 end
@@ -22001,9 +23155,17 @@ name_pl woodfloor
 x 57
 y 6
 end
+arch green_slime
+x 57
+y 6
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 7
+end
+arch green_slime
 x 57
 y 7
 end
@@ -22013,9 +23175,17 @@ name_pl woodfloor
 x 57
 y 8
 end
+arch green_slime
+x 57
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 9
+end
+arch black_pudding
 x 57
 y 9
 end
@@ -22025,9 +23195,17 @@ name_pl woodfloor
 x 57
 y 10
 end
+arch black_pudding
+x 57
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 11
+end
+arch acid_sphere
 x 57
 y 11
 end
@@ -22037,15 +23215,31 @@ name_pl woodfloor
 x 57
 y 12
 end
+arch acid_sphere
+x 57
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 57
 y 13
 end
+arch acid_sphere
+x 57
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 14
+end
+arch chest
+x 57
+y 14
+end
+arch acid_sphere
 x 57
 y 14
 end
@@ -22199,9 +23393,20 @@ name_pl woodfloor
 x 57
 y 49
 end
+arch stair_up_1
+slaying castle2
+hp 57
+sp 49
+x 57
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 50
+end
+arch chinese_dragon
 x 57
 y 50
 end
@@ -22211,9 +23416,11 @@ name_pl woodfloor
 x 57
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 57
+y 52
+end
+arch cwall_2_1_2
 x 57
 y 52
 end
@@ -22223,9 +23430,17 @@ name_pl woodfloor
 x 57
 y 53
 end
+arch cold_dragon
+x 57
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 54
+end
+arch cold_dragon
 x 57
 y 54
 end
@@ -22235,9 +23450,15 @@ name_pl woodfloor
 x 57
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cold_dragon
+x 57
+y 55
+end
+arch dungeon_floor
+x 57
+y 56
+end
+arch cwall_2_1_2
 x 57
 y 56
 end
@@ -22247,15 +23468,21 @@ name_pl woodfloor
 x 57
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 57
+y 58
+end
+arch door_2
 x 57
 y 58
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 59
+end
+arch cold_dragon
 x 57
 y 59
 end
@@ -22319,9 +23546,17 @@ name_pl woodfloor
 x 58
 y 5
 end
+arch green_slime
+x 58
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 58
+y 6
+end
+arch green_slime
 x 58
 y 6
 end
@@ -22331,9 +23566,17 @@ name_pl woodfloor
 x 58
 y 7
 end
+arch green_slime
+x 58
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 58
+y 8
+end
+arch acid_sphere
 x 58
 y 8
 end
@@ -22343,9 +23586,17 @@ name_pl woodfloor
 x 58
 y 9
 end
+arch black_pudding
+x 58
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 58
+y 10
+end
+arch black_pudding
 x 58
 y 10
 end
@@ -22355,15 +23606,27 @@ name_pl woodfloor
 x 58
 y 11
 end
+arch black_pudding
+x 58
+y 11
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 58
 y 12
 end
+arch acid_sphere
+x 58
+y 12
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 58
+y 13
+end
+arch acid_sphere
 x 58
 y 13
 end
@@ -22539,33 +23802,43 @@ name_pl woodfloor
 x 58
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
 x 58
 y 52
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_2_3
+x 58
+y 52
+end
+arch dungeon_floor
 x 58
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_2_1_1
+x 58
+y 53
+end
+arch dungeon_floor
 x 58
 y 54
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch cwall_1_2
+x 58
+y 54
+end
+arch dungeon_floor
 x 58
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch door_1
+x 58
+y 55
+end
+arch dungeon_floor
+x 58
+y 56
+end
+arch cwall_2_1_2
 x 58
 y 56
 end
@@ -22575,9 +23848,15 @@ name_pl woodfloor
 x 58
 y 57
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch elec_dragon
+x 58
+y 57
+end
+arch dungeon_floor
+x 58
+y 58
+end
+arch cwall_2_2_2
 x 58
 y 58
 end
@@ -22585,7 +23864,7 @@ arch istone
 x 58
 y 59
 end
-arch cwall_2_2_2
+arch cwall_3_2
 x 58
 y 59
 end
@@ -22653,9 +23932,17 @@ name_pl woodfloor
 x 59
 y 6
 end
+arch green_slime
+x 59
+y 6
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 59
+y 7
+end
+arch acid_sphere
 x 59
 y 7
 end
@@ -22665,9 +23952,17 @@ name_pl woodfloor
 x 59
 y 8
 end
+arch green_slime
+x 59
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 59
+y 9
+end
+arch black_pudding
 x 59
 y 9
 end
@@ -22677,15 +23972,27 @@ name_pl woodfloor
 x 59
 y 10
 end
+arch black_pudding
+x 59
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 59
 y 11
 end
+arch acid_sphere
+x 59
+y 11
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 59
+y 12
+end
+arch acid_sphere
 x 59
 y 12
 end
@@ -22863,15 +24170,21 @@ name_pl woodfloor
 x 59
 y 51
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 59
+y 52
+end
+arch door_2
 x 59
 y 52
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 59
+y 53
+end
+arch big_elec
 x 59
 y 53
 end
@@ -22887,9 +24200,11 @@ name_pl woodfloor
 x 59
 y 55
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch dungeon_floor
+x 59
+y 56
+end
+arch cwall_2_1_2
 x 59
 y 56
 end
@@ -22899,11 +24214,15 @@ name_pl woodfloor
 x 59
 y 57
 end
+arch elec_dragon
+x 59
+y 57
+end
 arch istone
 x 59
 y 58
 end
-arch cwall_2_2_2
+arch cwall_3_3
 x 59
 y 58
 end
@@ -22987,15 +24306,27 @@ name_pl woodfloor
 x 60
 y 8
 end
+arch chest
+x 60
+y 8
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 60
 y 9
 end
+arch chest
+x 60
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 60
+y 10
+end
+arch chest
 x 60
 y 10
 end
@@ -23197,9 +24528,17 @@ name_pl woodfloor
 x 60
 y 53
 end
+arch chest
+x 60
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 60
+y 54
+end
+arch chest
 x 60
 y 54
 end
@@ -23209,11 +24548,15 @@ name_pl woodfloor
 x 60
 y 55
 end
+arch chest
+x 60
+y 55
+end
 arch istone
 x 60
 y 56
 end
-arch cwall_2_2_2
+arch cwall_3_3
 x 60
 y 56
 end

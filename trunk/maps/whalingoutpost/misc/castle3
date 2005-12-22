@@ -12,38 +12,57 @@ Date: Tue Aug  3 23:32:57 2004
 endmsg
 outdoor 1
 end
-arch dungeon_magic
-x 1
-y 6
+arch fog
+y 4
 end
-arch dungeon_magic
-x 1
-y 7
-end
-arch dungeon_magic
-x 1
-y 8
-end
-arch dungeon_magic
-x 1
-y 9
-end
-arch dungeon_magic
-x 1
-y 10
-end
-arch dungeon_magic
-x 1
-y 11
-end
-arch dungeon_magic
-x 1
+arch fog
 y 12
 end
-arch dungeon_magic
-x 1
+arch fog
 y 46
 end
+arch fog
+y 50
+end
+arch fog
+y 55
+end
+arch dungeon_magic
+x 1
+y 6
+end
+arch dungeon_magic
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
+end
+arch dungeon_magic
+x 1
+y 9
+end
+arch fog
+x 1
+y 9
+end
+arch dungeon_magic
+x 1
+y 10
+end
+arch dungeon_magic
+x 1
+y 11
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch fog
+x 1
+y 17
+end
 arch dungeon_magic
 x 1
 y 51
@@ -53,6 +72,10 @@ x 1
 y 52
 end
 arch dungeon_magic
+x 1
+y 53
+end
+arch fog
 x 1
 y 53
 end
@@ -71,6 +94,14 @@ end
 arch dungeon_magic
 x 1
 y 57
+end
+arch fog
+x 1
+y 57
+end
+arch fog
+x 1
+y 62
 end
 arch dungeon_magic
 x 2
@@ -156,6 +187,14 @@ arch dungeon_magic
 x 2
 y 14
 end
+arch fog
+x 2
+y 14
+end
+arch fog
+x 2
+y 43
+end
 arch dungeon_magic
 x 2
 y 49
@@ -240,11 +279,23 @@ arch dungeon_magic
 x 2
 y 59
 end
+arch fog
+x 2
+y 60
+end
+arch fog
+x 3
+y 1
+end
 arch dungeon_magic
 x 3
 y 3
 end
 arch dungeon_magic
+x 3
+y 4
+end
+arch fog
 x 3
 y 4
 end
@@ -349,6 +400,10 @@ x 3
 y 48
 end
 arch dungeon_magic
+x 3
+y 49
+end
+arch fog
 x 3
 y 49
 end
@@ -556,6 +611,10 @@ arch dungeon_magic
 x 4
 y 16
 end
+arch fog
+x 4
+y 17
+end
 arch dungeon_magic
 x 4
 y 47
@@ -608,11 +667,19 @@ arch snow4
 x 4
 y 53
 end
+arch cold_dragon
+x 4
+y 53
+end
 arch flagstone
 x 4
 y 54
 end
 arch snow4
+x 4
+y 54
+end
+arch cold_dragon
 x 4
 y 54
 end
@@ -814,6 +881,10 @@ arch dungeon_magic
 x 5
 y 47
 end
+arch fog
+x 5
+y 47
+end
 arch istone
 x 5
 y 48
@@ -959,6 +1030,9 @@ end
 arch dungeon_magic
 x 5
 y 61
+end
+arch fog
+x 6
 end
 arch dungeon_magic
 x 6
@@ -1126,6 +1200,10 @@ arch dungeon_magic
 x 6
 y 17
 end
+arch fog
+x 6
+y 21
+end
 arch dungeon_magic
 x 6
 y 46
@@ -1289,6 +1367,10 @@ x 6
 y 61
 end
 arch dungeon_magic
+x 6
+y 62
+end
+arch fog
 x 6
 y 62
 end
@@ -1474,6 +1556,10 @@ arch dungeon_magic
 x 7
 y 17
 end
+arch fog
+x 7
+y 17
+end
 arch dungeon_magic
 x 7
 y 46
@@ -1503,6 +1589,10 @@ x 7
 y 49
 end
 arch snow4
+x 7
+y 49
+end
+arch cold_dragon
 x 7
 y 49
 end
@@ -1625,6 +1715,10 @@ x 7
 y 58
 end
 arch flagstone
+x 7
+y 59
+end
+arch cold_dragon
 x 7
 y 59
 end
@@ -1826,6 +1920,10 @@ arch dungeon_magic
 x 8
 y 17
 end
+arch fog
+x 8
+y 43
+end
 arch dungeon_magic
 x 8
 y 46
@@ -1855,6 +1953,10 @@ x 8
 y 49
 end
 arch snow4
+x 8
+y 49
+end
+arch cold_dragon
 x 8
 y 49
 end
@@ -1969,6 +2071,10 @@ x 8
 y 58
 end
 arch flagstone
+x 8
+y 59
+end
+arch cold_dragon
 x 8
 y 59
 end
@@ -2166,6 +2272,10 @@ arch dungeon_magic
 x 9
 y 46
 end
+arch fog
+x 9
+y 46
+end
 arch istone
 x 9
 y 47
@@ -2191,6 +2301,10 @@ x 9
 y 49
 end
 arch snow4
+x 9
+y 49
+end
+arch cold_dragon
 x 9
 y 49
 end
@@ -2332,6 +2446,10 @@ arch dungeon_magic
 x 9
 y 62
 end
+arch fog
+x 9
+y 63
+end
 arch dungeon_magic
 x 10
 y 1
@@ -2497,6 +2615,10 @@ end
 arch dungeon_magic
 x 10
 y 17
+end
+arch fog
+x 10
+y 19
 end
 arch dungeon_magic
 x 10
@@ -2668,7 +2790,15 @@ arch dungeon_magic
 x 10
 y 62
 end
+arch fog
+x 10
+y 62
+end
 arch dungeon_magic
+x 11
+y 1
+end
+arch fog
 x 11
 y 1
 end
@@ -3146,9 +3276,17 @@ arch dungeon_magic
 x 12
 y 16
 end
+arch fog
+x 12
+y 16
+end
 arch dungeon_magic
 x 12
 y 17
+end
+arch fog
+x 12
+y 43
 end
 arch dungeon_magic
 x 12
@@ -3183,6 +3321,13 @@ x 12
 y 50
 end
 arch snow4
+x 12
+y 50
+end
+arch ladder_down
+slaying castle2
+hp 12
+sp 50
 x 12
 y 50
 end
@@ -3276,6 +3421,10 @@ arch flagstone
 x 12
 y 58
 end
+arch cold_dragon
+x 12
+y 58
+end
 arch flagstone
 x 12
 y 59
@@ -3303,6 +3452,9 @@ end
 arch dungeon_magic
 x 12
 y 62
+end
+arch fog
+x 13
 end
 arch dungeon_magic
 x 13
@@ -3547,6 +3699,10 @@ arch flagstone
 x 13
 y 58
 end
+arch cold_dragon
+x 13
+y 58
+end
 arch istone
 x 13
 y 59
@@ -3570,6 +3726,10 @@ end
 arch dungeon_magic
 x 13
 y 61
+end
+arch fog
+x 13
+y 63
 end
 arch dungeon_magic
 x 14
@@ -3671,11 +3831,19 @@ arch dungeon_magic
 x 14
 y 16
 end
+arch fog
+x 14
+y 19
+end
 arch dungeon_magic
 x 14
 y 47
 end
 arch dungeon_magic
+x 14
+y 48
+end
+arch fog
 x 14
 y 48
 end
@@ -3711,7 +3879,15 @@ arch flagstone
 x 14
 y 52
 end
+arch cold_dragon
+x 14
+y 52
+end
 arch flagstone
+x 14
+y 53
+end
+arch cold_dragon
 x 14
 y 53
 end
@@ -3775,11 +3951,19 @@ arch dungeon_magic
 x 14
 y 61
 end
+arch fog
+x 14
+y 62
+end
 arch dungeon_magic
 x 15
 y 3
 end
 arch dungeon_magic
+x 15
+y 4
+end
+arch fog
 x 15
 y 4
 end
@@ -3879,6 +4063,10 @@ arch dungeon_magic
 x 15
 y 15
 end
+arch fog
+x 15
+y 44
+end
 arch dungeon_magic
 x 15
 y 48
@@ -3983,6 +4171,10 @@ arch dungeon_magic
 x 15
 y 60
 end
+arch fog
+x 16
+y 1
+end
 arch dungeon_magic
 x 16
 y 4
@@ -4064,6 +4256,10 @@ x 16
 y 13
 end
 arch dungeon_magic
+x 16
+y 14
+end
+arch fog
 x 16
 y 14
 end
@@ -4151,6 +4347,10 @@ arch dungeon_magic
 x 16
 y 59
 end
+arch fog
+x 16
+y 59
+end
 arch dungeon_magic
 x 17
 y 6
@@ -4167,6 +4367,10 @@ arch dungeon_magic
 x 17
 y 9
 end
+arch fog
+x 17
+y 9
+end
 arch dungeon_magic
 x 17
 y 10
@@ -4178,6 +4382,14 @@ end
 arch dungeon_magic
 x 17
 y 12
+end
+arch fog
+x 17
+y 46
+end
+arch fog
+x 17
+y 50
 end
 arch dungeon_magic
 x 17
@@ -4207,11 +4419,79 @@ arch dungeon_magic
 x 17
 y 57
 end
+arch fog
+x 18
+y 54
+end
+arch fog
+x 18
+y 61
+end
+arch fog
+x 19
+y 2
+end
+arch fog
+x 19
+y 5
+end
+arch fog
+x 19
+y 13
+end
+arch fog
+x 19
+y 18
+end
+arch fog
+x 20
+y 50
+end
+arch fog
+x 20
+y 58
+end
+arch fog
+x 21
+y 9
+end
+arch fog
+x 21
+y 29
+end
+arch fog
+x 21
+y 48
+end
+arch fog
+x 22
+y 52
+end
+arch fog
+x 22
+y 56
+end
+arch fog
+x 23
+y 35
+end
+arch fog
+x 23
+y 39
+end
+arch fog
+x 23
+y 47
+end
 arch dungeon_magic
 x 24
 y 25
 end
 arch dungeon_magic
+x 24
+y 26
+end
+arch fog
 x 24
 y 26
 end
@@ -4232,6 +4512,10 @@ x 24
 y 30
 end
 arch dungeon_magic
+x 24
+y 31
+end
+arch fog
 x 24
 y 31
 end
@@ -4262,6 +4546,14 @@ end
 arch dungeon_magic
 x 24
 y 38
+end
+arch fog
+x 24
+y 61
+end
+arch fog
+x 25
+y 22
 end
 arch dungeon_magic
 x 25
@@ -4495,6 +4787,10 @@ arch dungeon_magic
 x 26
 y 51
 end
+arch fog
+x 26
+y 51
+end
 arch dungeon_magic
 x 26
 y 52
@@ -4511,6 +4807,10 @@ arch dungeon_magic
 x 26
 y 55
 end
+arch fog
+x 26
+y 55
+end
 arch dungeon_magic
 x 26
 y 56
@@ -4520,6 +4820,10 @@ x 26
 y 57
 end
 arch dungeon_magic
+x 26
+y 58
+end
+arch fog
 x 26
 y 58
 end
@@ -4543,6 +4847,109 @@ arch cwall_3_1
 x 27
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 27
+end
+arch ladder_up
+slaying castle4
+hp 27
+sp 27
+x 27
+y 27
+end
+arch elec_dragon
+x 27
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 29
+end
+arch elec_dragon
+x 27
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 30
+end
+arch elec_dragon
+x 27
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 31
+end
+arch elec_dragon
+x 27
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 32
+end
+arch elec_dragon
+x 27
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 33
+end
+arch elec_dragon
+x 27
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 34
+end
+arch elec_dragon
+x 27
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 35
+end
+arch elec_dragon
+x 27
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 27
+y 36
+end
+arch elec_dragon
+x 27
+y 36
+end
 arch istone
 x 27
 y 37
@@ -4562,6 +4969,10 @@ end
 arch dungeon_magic
 x 27
 y 39
+end
+arch fog
+x 27
+y 41
 end
 arch dungeon_magic
 x 27
@@ -4695,6 +5106,86 @@ arch cwall_2_1_2
 x 28
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 27
+end
+arch wwall_0
+x 28
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 29
+end
+arch wwall_0
+x 28
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 31
+end
+arch wwall_0
+x 28
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 33
+end
+arch wwall_0
+x 28
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 35
+end
+arch wwall_0
+x 28
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 28
+y 36
+end
 arch istone
 x 28
 y 37
@@ -4710,6 +5201,14 @@ end
 arch dungeon_magic
 x 28
 y 39
+end
+arch fog
+x 28
+y 44
+end
+arch fog
+x 28
+y 46
 end
 arch dungeon_magic
 x 28
@@ -4735,6 +5234,10 @@ arch snow5
 x 28
 y 50
 end
+arch cold_dragon
+x 28
+y 50
+end
 arch flagstone
 x 28
 y 51
@@ -4748,6 +5251,10 @@ x 28
 y 52
 end
 arch snow5
+x 28
+y 52
+end
+arch cold_dragon
 x 28
 y 52
 end
@@ -4764,6 +5271,10 @@ x 28
 y 54
 end
 arch snow4
+x 28
+y 54
+end
+arch cold_dragon
 x 28
 y 54
 end
@@ -4802,6 +5313,10 @@ arch dungeon_magic
 x 28
 y 58
 end
+arch fog
+x 28
+y 60
+end
 arch dungeon_floor
 x 29
 y 15
@@ -4826,6 +5341,10 @@ arch stwall_2_2_1
 x 29
 y 17
 end
+arch fog
+x 29
+y 21
+end
 arch dungeon_magic
 x 29
 y 24
@@ -4845,6 +5364,102 @@ end
 arch cwall_3_1
 x 29
 y 26
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 27
+end
+arch elec_dragon
+x 29
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 28
+end
+arch bench_1_1
+x 29
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 29
+end
+arch bench_2_1_1
+x 29
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 30
+end
+arch bench_2_1_1
+x 29
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 31
+end
+arch bench_2_1_1
+x 29
+y 31
+end
+arch big_elec
+x 29
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 32
+end
+arch bench_2_1_1
+x 29
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 33
+end
+arch bench_1_2
+x 29
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 29
+y 36
+end
+arch elec_dragon
+x 29
+y 36
 end
 arch istone
 x 29
@@ -4906,6 +5521,10 @@ arch snow4
 x 29
 y 52
 end
+arch chinese_dragon
+x 29
+y 52
+end
 arch flagstone
 x 29
 y 53
@@ -4927,6 +5546,10 @@ x 29
 y 55
 end
 arch snow4
+x 29
+y 55
+end
+arch cold_dragon
 x 29
 y 55
 end
@@ -4953,6 +5576,10 @@ end
 arch dungeon_magic
 x 29
 y 58
+end
+arch fog
+x 29
+y 63
 end
 arch dungeon_floor
 x 30
@@ -4994,6 +5621,114 @@ arch cwall_3_1
 x 30
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 27
+end
+arch chair_1.1
+x 30
+y 27
+end
+arch elec_dragon
+x 30
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 28
+end
+arch longtable_2_2_2
+x 30
+y 28
+end
+arch big_elec
+x 30
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 29
+end
+arch longtable_3_2
+x 30
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 30
+end
+arch longtable_3_2
+x 30
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 31
+end
+arch longtable_3_2
+x 30
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 32
+end
+arch longtable_3_2
+x 30
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 33
+end
+arch longtable_2_2_1
+x 30
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 34
+end
+arch bench_1_4
+x 30
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 35
+end
+arch wwall_0
+x 30
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 30
+y 36
+end
+arch elec_dragon
+x 30
+y 36
+end
 arch istone
 x 30
 y 37
@@ -5014,7 +5749,15 @@ arch dungeon_magic
 x 30
 y 39
 end
+arch fog
+x 30
+y 39
+end
 arch dungeon_magic
+x 30
+y 48
+end
+arch fog
 x 30
 y 48
 end
@@ -5039,6 +5782,10 @@ x 30
 y 51
 end
 arch snow4
+x 30
+y 51
+end
+arch cold_dragon
 x 30
 y 51
 end
@@ -5134,6 +5881,106 @@ arch cwall_2_1_2
 x 31
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 27
+end
+arch chair_1.1
+x 31
+y 27
+end
+arch elec_dragon
+x 31
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 28
+end
+arch longtable_3_3
+x 31
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 29
+end
+arch longtable_4
+x 31
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 30
+end
+arch longtable_4
+x 31
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 31
+end
+arch longtable_4
+x 31
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 32
+end
+arch longtable_4
+x 31
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 33
+end
+arch longtable_3_1
+x 31
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 34
+end
+arch bench_2_1_2
+x 31
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 31
+y 36
+end
+arch elec_dragon
+x 31
+y 36
+end
 arch istone
 x 31
 y 37
@@ -5187,6 +6034,10 @@ x 31
 y 53
 end
 arch snow4
+x 31
+y 53
+end
+arch cold_dragon
 x 31
 y 53
 end
@@ -5226,6 +6077,10 @@ arch dungeon_magic
 x 32
 y 24
 end
+arch fog
+x 32
+y 24
+end
 arch dungeon_magic
 x 32
 y 25
@@ -5237,6 +6092,106 @@ end
 arch cwall_2_1_2
 x 32
 y 26
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 27
+end
+arch stol_king_1
+x 32
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 28
+end
+arch longtable_3_3
+x 32
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 29
+end
+arch longtable_4
+x 32
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 30
+end
+arch longtable_4
+x 32
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 31
+end
+arch longtable_4
+x 32
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 32
+end
+arch longtable_4
+x 32
+y 32
+end
+arch big_elec
+x 32
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 33
+end
+arch longtable_3_1
+x 32
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 34
+end
+arch bench_2_1_2
+x 32
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 32
+y 36
+end
+arch elec_dragon
+x 32
+y 36
 end
 arch istone
 x 32
@@ -5286,6 +6241,10 @@ arch snow4
 x 32
 y 52
 end
+arch cold_dragon
+x 32
+y 52
+end
 arch flagstone
 x 32
 y 53
@@ -5307,6 +6266,10 @@ x 32
 y 55
 end
 arch snow4
+x 32
+y 55
+end
+arch cold_dragon
 x 32
 y 55
 end
@@ -5325,6 +6288,14 @@ end
 arch dungeon_magic
 x 32
 y 57
+end
+arch fog
+x 32
+y 57
+end
+arch fog
+x 32
+y 61
 end
 arch dungeon_magic
 x 33
@@ -5345,6 +6316,114 @@ end
 arch cwall_3_1
 x 33
 y 26
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 27
+end
+arch chair_1.1
+x 33
+y 27
+end
+arch elec_dragon
+x 33
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 28
+end
+arch longtable_2_2_3
+x 33
+y 28
+end
+arch big_elec
+x 33
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 29
+end
+arch longtable_3_4
+x 33
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 30
+end
+arch longtable_3_4
+x 33
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 31
+end
+arch longtable_3_4
+x 33
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 32
+end
+arch longtable_3_4
+x 33
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 33
+end
+arch longtable_2_2_4
+x 33
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 34
+end
+arch bench_1_3
+x 33
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 35
+end
+arch wwall_0
+x 33
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 33
+y 36
+end
+arch elec_dragon
+x 33
+y 36
 end
 arch istone
 x 33
@@ -5394,6 +6473,10 @@ arch snow4
 x 33
 y 51
 end
+arch cold_dragon
+x 33
+y 51
+end
 arch flagstone
 x 33
 y 52
@@ -5415,6 +6498,10 @@ x 33
 y 54
 end
 arch snow4
+x 33
+y 54
+end
+arch chinese_dragon
 x 33
 y 54
 end
@@ -5446,6 +6533,10 @@ arch dungeon_magic
 x 33
 y 58
 end
+arch fog
+x 34
+y 21
+end
 arch dungeon_magic
 x 34
 y 24
@@ -5466,6 +6557,94 @@ arch cwall_3_1
 x 34
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 27
+end
+arch elec_dragon
+x 34
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 28
+end
+arch bench_1_1
+x 34
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 29
+end
+arch bench_2_1_1
+x 34
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 30
+end
+arch bench_2_1_1
+x 34
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 31
+end
+arch bench_2_1_1
+x 34
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 32
+end
+arch bench_2_1_1
+x 34
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 33
+end
+arch bench_1_2
+x 34
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 34
+y 36
+end
 arch istone
 x 34
 y 37
@@ -5485,6 +6664,14 @@ end
 arch dungeon_magic
 x 34
 y 39
+end
+arch fog
+x 34
+y 39
+end
+arch fog
+x 34
+y 45
 end
 arch dungeon_magic
 x 34
@@ -5517,6 +6704,14 @@ end
 arch snow4
 x 34
 y 51
+end
+arch chinese_dragon
+x 34
+y 51
+carrying 100
+arch key2
+slaying castle2key2
+end
 end
 arch flagstone
 x 34
@@ -5590,6 +6785,86 @@ arch cwall_2_1_2
 x 35
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 27
+end
+arch wwall_0
+x 35
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 29
+end
+arch wwall_0
+x 35
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 31
+end
+arch wwall_0
+x 35
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 33
+end
+arch wwall_0
+x 35
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 35
+end
+arch wwall_0
+x 35
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 35
+y 36
+end
 arch istone
 x 35
 y 37
@@ -5654,6 +6929,10 @@ arch snow4
 x 35
 y 53
 end
+arch cold_dragon
+x 35
+y 53
+end
 arch flagstone
 x 35
 y 54
@@ -5678,6 +6957,10 @@ arch snow5
 x 35
 y 56
 end
+arch cold_dragon
+x 35
+y 56
+end
 arch istone
 x 35
 y 57
@@ -5691,6 +6974,10 @@ x 35
 y 57
 end
 arch dungeon_magic
+x 35
+y 58
+end
+arch fog
 x 35
 y 58
 end
@@ -5714,6 +7001,109 @@ arch cwall_3_1
 x 36
 y 26
 end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 27
+end
+arch elec_dragon
+x 36
+y 27
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 28
+end
+arch elec_dragon
+x 36
+y 28
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 29
+end
+arch elec_dragon
+x 36
+y 29
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 30
+end
+arch elec_dragon
+x 36
+y 30
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 31
+end
+arch elec_dragon
+x 36
+y 31
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 32
+end
+arch elec_dragon
+x 36
+y 32
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 33
+end
+arch elec_dragon
+x 36
+y 33
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 34
+end
+arch elec_dragon
+x 36
+y 34
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 35
+end
+arch elec_dragon
+x 36
+y 35
+end
+arch woodfloor2
+name woodfloor
+name_pl woodfloor
+x 36
+y 36
+end
+arch stair_3_down
+slaying castle2
+hp 36
+sp 36
+x 36
+y 36
+end
 arch istone
 x 36
 y 37
@@ -5735,6 +7125,10 @@ x 36
 y 39
 end
 arch dungeon_magic
+x 36
+y 48
+end
+arch fog
 x 36
 y 48
 end
@@ -5849,6 +7243,10 @@ end
 arch dungeon_magic
 x 36
 y 58
+end
+arch fog
+x 37
+y 20
 end
 arch dungeon_magic
 x 37
@@ -5970,6 +7368,14 @@ arch dungeon_magic
 x 37
 y 39
 end
+arch fog
+x 37
+y 41
+end
+arch fog
+x 37
+y 44
+end
 arch dungeon_magic
 x 37
 y 48
@@ -5991,6 +7397,10 @@ x 37
 y 52
 end
 arch dungeon_magic
+x 37
+y 53
+end
+arch fog
 x 37
 y 53
 end
@@ -6110,6 +7520,14 @@ arch dungeon_magic
 x 38
 y 39
 end
+arch fog
+x 38
+y 59
+end
+arch fog
+x 39
+y 23
+end
 arch dungeon_magic
 x 39
 y 25
@@ -6135,6 +7553,10 @@ x 39
 y 30
 end
 arch dungeon_magic
+x 39
+y 31
+end
+arch fog
 x 39
 y 31
 end
@@ -6166,6 +7588,61 @@ arch dungeon_magic
 x 39
 y 38
 end
+arch fog
+x 39
+y 38
+end
+arch fog
+x 40
+y 48
+end
+arch fog
+x 40
+y 55
+end
+arch fog
+x 41
+y 27
+end
+arch fog
+x 41
+y 35
+end
+arch fog
+x 42
+y 52
+end
+arch fog
+x 43
+y 4
+end
+arch fog
+x 43
+y 7
+end
+arch fog
+x 43
+y 30
+end
+arch fog
+x 44
+y 47
+end
+arch fog
+x 44
+y 50
+end
+arch fog
+x 44
+y 56
+end
+arch fog
+x 45
+y 14
+end
+arch fog
+x 46
+end
 arch dungeon_magic
 x 46
 y 6
@@ -6179,6 +7656,10 @@ x 46
 y 8
 end
 arch dungeon_magic
+x 46
+y 9
+end
+arch fog
 x 46
 y 9
 end
@@ -6196,10 +7677,6 @@ y 12
 end
 arch dungeon_magic
 x 46
-y 46
-end
-arch dungeon_magic
-x 46
 y 51
 end
 arch dungeon_magic
@@ -6207,6 +7684,10 @@ x 46
 y 52
 end
 arch dungeon_magic
+x 46
+y 53
+end
+arch fog
 x 46
 y 53
 end
@@ -6334,6 +7815,10 @@ arch stwall_2_2_1
 x 47
 y 17
 end
+arch fog
+x 47
+y 47
+end
 arch dungeon_magic
 x 47
 y 49
@@ -6410,6 +7895,10 @@ arch dungeon_magic
 x 47
 y 57
 end
+arch fog
+x 47
+y 57
+end
 arch dungeon_magic
 x 47
 y 58
@@ -6418,11 +7907,19 @@ arch dungeon_magic
 x 47
 y 59
 end
+arch fog
+x 47
+y 61
+end
 arch dungeon_magic
 x 48
 y 3
 end
 arch dungeon_magic
+x 48
+y 4
+end
+arch fog
 x 48
 y 4
 end
@@ -6474,11 +7971,19 @@ arch snow4
 x 48
 y 9
 end
+arch cold_dragon
+x 48
+y 9
+end
 arch flagstone
 x 48
 y 10
 end
 arch snow4
+x 48
+y 10
+end
+arch cold_dragon
 x 48
 y 10
 end
@@ -6546,6 +8051,10 @@ arch stwall_2_1_2
 x 48
 y 17
 end
+arch fog
+x 48
+y 45
+end
 arch dungeon_magic
 x 48
 y 48
@@ -6594,11 +8103,19 @@ arch snow4
 x 48
 y 53
 end
+arch cold_dragon
+x 48
+y 53
+end
 arch flagstone
 x 48
 y 54
 end
 arch snow4
+x 48
+y 54
+end
+arch cold_dragon
 x 48
 y 54
 end
@@ -6607,6 +8124,10 @@ x 48
 y 55
 end
 arch snow4
+x 48
+y 55
+end
+arch acid_sphere
 x 48
 y 55
 end
@@ -6794,11 +8315,19 @@ arch stwall_2_2_4
 x 49
 y 17
 end
+arch fog
+x 49
+y 19
+end
 arch dungeon_magic
 x 49
 y 47
 end
 arch dungeon_magic
+x 49
+y 48
+end
+arch fog
 x 49
 y 48
 end
@@ -6830,11 +8359,19 @@ arch snow4
 x 49
 y 51
 end
+arch acid_sphere
+x 49
+y 51
+end
 arch flagstone
 x 49
 y 52
 end
 arch snow4
+x 49
+y 52
+end
+arch cold_dragon
 x 49
 y 52
 end
@@ -6843,6 +8380,10 @@ x 49
 y 53
 end
 arch snow4
+x 49
+y 53
+end
+arch acid_sphere
 x 49
 y 53
 end
@@ -6851,6 +8392,10 @@ x 49
 y 54
 end
 arch snow4
+x 49
+y 54
+end
+arch chinese_dragon
 x 49
 y 54
 end
@@ -6867,6 +8412,10 @@ x 49
 y 56
 end
 arch snow4
+x 49
+y 56
+end
+arch chinese_dragon
 x 49
 y 56
 end
@@ -7024,6 +8573,13 @@ arch snow5
 x 50
 y 12
 end
+arch ladder_down
+slaying castle2
+hp 50
+sp 12
+x 50
+y 12
+end
 arch flagstone
 x 50
 y 13
@@ -7088,6 +8644,10 @@ arch snow4
 x 50
 y 50
 end
+arch acid_sphere
+x 50
+y 50
+end
 arch flagstone
 x 50
 y 51
@@ -7096,6 +8656,10 @@ arch snow4
 x 50
 y 51
 end
+arch acid_sphere
+x 50
+y 51
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -7121,6 +8685,10 @@ x 50
 y 53
 end
 arch snow5
+x 50
+y 53
+end
+arch cold_dragon
 x 50
 y 53
 end
@@ -7179,6 +8747,10 @@ x 50
 y 58
 end
 arch snow5
+x 50
+y 58
+end
+arch acid_sphere
 x 50
 y 58
 end
@@ -7372,11 +8944,19 @@ arch dungeon_magic
 x 51
 y 17
 end
+arch fog
+x 51
+y 44
+end
 arch dungeon_magic
 x 51
 y 46
 end
 arch dungeon_magic
+x 51
+y 47
+end
+arch fog
 x 51
 y 47
 end
@@ -7400,6 +8980,10 @@ arch snow4
 x 51
 y 49
 end
+arch acid_sphere
+x 51
+y 49
+end
 arch flagstone
 x 51
 y 50
@@ -7408,6 +8992,13 @@ arch snow4
 x 51
 y 50
 end
+arch ladder_down
+slaying castle2
+hp 51
+sp 50
+x 51
+y 50
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -7433,6 +9024,10 @@ x 51
 y 52
 end
 arch snow5
+x 51
+y 52
+end
+arch cold_dragon
 x 51
 y 52
 end
@@ -7447,6 +9042,10 @@ x 51
 y 53
 end
 arch snow5
+x 51
+y 53
+end
+arch chinese_dragon
 x 51
 y 53
 end
@@ -7478,6 +9077,10 @@ arch snow5
 x 51
 y 55
 end
+arch cold_dragon
+x 51
+y 55
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -7499,6 +9102,10 @@ x 51
 y 57
 end
 arch slevel_2_2_1
+x 51
+y 57
+end
+arch cold_dragon
 x 51
 y 57
 end
@@ -7507,6 +9114,10 @@ x 51
 y 58
 end
 arch snow5
+x 51
+y 58
+end
+arch acid_sphere
 x 51
 y 58
 end
@@ -7515,6 +9126,10 @@ x 51
 y 59
 end
 arch snow5
+x 51
+y 59
+end
+arch acid_sphere
 x 51
 y 59
 end
@@ -7531,6 +9146,10 @@ x 51
 y 60
 end
 arch dungeon_magic
+x 51
+y 61
+end
+arch fog
 x 51
 y 61
 end
@@ -7716,6 +9335,10 @@ arch dungeon_magic
 x 52
 y 17
 end
+arch fog
+x 52
+y 17
+end
 arch dungeon_magic
 x 52
 y 46
@@ -7748,6 +9371,10 @@ arch snow4
 x 52
 y 49
 end
+arch cold_dragon
+x 52
+y 49
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -7759,6 +9386,10 @@ x 52
 y 50
 end
 arch snow5
+x 52
+y 50
+end
+arch chinese_dragon
 x 52
 y 50
 end
@@ -7842,6 +9473,10 @@ arch slevel_2_2_1
 x 52
 y 56
 end
+arch acid_sphere
+x 52
+y 56
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -7849,6 +9484,10 @@ x 52
 y 57
 end
 arch slevel_2_2_1
+x 52
+y 57
+end
+arch cold_dragon
 x 52
 y 57
 end
@@ -7863,6 +9502,10 @@ x 52
 y 58
 end
 arch snow5
+x 52
+y 58
+end
+arch chinese_dragon
 x 52
 y 58
 end
@@ -7915,6 +9558,10 @@ x 53
 y 3
 end
 arch snow4
+x 53
+y 3
+end
+arch cold_dragon
 x 53
 y 3
 end
@@ -8092,6 +9739,10 @@ arch snow4
 x 53
 y 48
 end
+arch acid_sphere
+x 53
+y 48
+end
 arch flagstone
 x 53
 y 49
@@ -8100,6 +9751,10 @@ arch snow4
 x 53
 y 49
 end
+arch acid_sphere
+x 53
+y 49
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -8139,6 +9794,10 @@ x 53
 y 52
 end
 arch snow5
+x 53
+y 52
+end
+arch acid_sphere
 x 53
 y 52
 end
@@ -8153,6 +9812,10 @@ x 53
 y 53
 end
 arch snow5
+x 53
+y 53
+end
+arch cold_dragon
 x 53
 y 53
 end
@@ -8184,6 +9847,10 @@ arch snow5
 x 53
 y 55
 end
+arch cold_dragon
+x 53
+y 55
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -8191,6 +9858,10 @@ x 53
 y 56
 end
 arch slevel_2_2_1
+x 53
+y 56
+end
+arch acid_sphere
 x 53
 y 56
 end
@@ -8234,6 +9905,10 @@ arch snow5
 x 53
 y 60
 end
+arch acid_sphere
+x 53
+y 60
+end
 arch istone
 x 53
 y 61
@@ -8249,6 +9924,9 @@ end
 arch dungeon_magic
 x 53
 y 62
+end
+arch fog
+x 54
 end
 arch dungeon_magic
 x 54
@@ -8271,6 +9949,10 @@ x 54
 y 3
 end
 arch snow4
+x 54
+y 3
+end
+arch cold_dragon
 x 54
 y 3
 end
@@ -8444,6 +10126,10 @@ arch snow4
 x 54
 y 48
 end
+arch cold_dragon
+x 54
+y 48
+end
 arch flagstone
 x 54
 y 49
@@ -8466,6 +10152,10 @@ arch snow5
 x 54
 y 50
 end
+arch cold_dragon
+x 54
+y 50
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -8477,6 +10167,10 @@ x 54
 y 51
 end
 arch snow5
+x 54
+y 51
+end
+arch chinese_dragon
 x 54
 y 51
 end
@@ -8518,6 +10212,10 @@ arch slevel_0
 x 54
 y 54
 end
+arch cold_dragon
+x 54
+y 54
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -8535,6 +10233,10 @@ x 54
 y 56
 end
 arch slevel_3_1
+x 54
+y 56
+end
+arch chinese_dragon
 x 54
 y 56
 end
@@ -8562,7 +10264,15 @@ arch snow5
 x 54
 y 58
 end
+arch cold_dragon
+x 54
+y 58
+end
 arch flagstone
+x 54
+y 59
+end
+arch chinese_dragon
 x 54
 y 59
 end
@@ -8590,6 +10300,10 @@ arch dungeon_magic
 x 54
 y 62
 end
+arch fog
+x 54
+y 63
+end
 arch dungeon_magic
 x 55
 y 1
@@ -8611,6 +10325,10 @@ x 55
 y 3
 end
 arch snow4
+x 55
+y 3
+end
+arch cold_dragon
 x 55
 y 3
 end
@@ -8740,11 +10458,19 @@ arch snow5
 x 55
 y 14
 end
+arch cold_dragon
+x 55
+y 14
+end
 arch flagstone
 x 55
 y 15
 end
 arch snow5
+x 55
+y 15
+end
+arch cold_dragon
 x 55
 y 15
 end
@@ -8763,6 +10489,10 @@ end
 arch dungeon_magic
 x 55
 y 17
+end
+arch fog
+x 55
+y 18
 end
 arch dungeon_magic
 x 55
@@ -8788,6 +10518,10 @@ arch snow4
 x 55
 y 48
 end
+arch acid_sphere
+x 55
+y 48
+end
 arch flagstone
 x 55
 y 49
@@ -8796,6 +10530,10 @@ arch snow4
 x 55
 y 49
 end
+arch chinese_dragon
+x 55
+y 49
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -8849,6 +10587,10 @@ x 55
 y 53
 end
 arch snow5
+x 55
+y 53
+end
+arch cold_dragon
 x 55
 y 53
 end
@@ -8859,6 +10601,10 @@ x 55
 y 54
 end
 arch slevel_3_4
+x 55
+y 54
+end
+arch acid_sphere
 x 55
 y 54
 end
@@ -8873,6 +10619,10 @@ x 55
 y 55
 end
 arch snow5
+x 55
+y 55
+end
+arch cold_dragon
 x 55
 y 55
 end
@@ -9002,6 +10752,10 @@ arch snow5
 x 56
 y 6
 end
+arch cold_dragon
+x 56
+y 6
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -9088,6 +10842,10 @@ arch snow5
 x 56
 y 14
 end
+arch cold_dragon
+x 56
+y 14
+end
 arch istone
 x 56
 y 15
@@ -9111,6 +10869,10 @@ end
 arch dungeon_magic
 x 56
 y 17
+end
+arch fog
+x 56
+y 43
 end
 arch dungeon_magic
 x 56
@@ -9172,6 +10934,10 @@ arch snow5
 x 56
 y 51
 end
+arch cold_dragon
+x 56
+y 51
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -9193,6 +10959,10 @@ x 56
 y 53
 end
 arch slevel_2_2_3
+x 56
+y 53
+end
+arch cold_dragon
 x 56
 y 53
 end
@@ -9206,6 +10976,10 @@ arch slevel_3_4
 x 56
 y 54
 end
+arch acid_sphere
+x 56
+y 54
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -9233,6 +11007,10 @@ x 56
 y 57
 end
 arch slevel_2_2_4
+x 56
+y 57
+end
+arch cold_dragon
 x 56
 y 57
 end
@@ -9243,6 +11021,10 @@ x 56
 y 58
 end
 arch slevel_2_2_4
+x 56
+y 58
+end
+arch acid_sphere
 x 56
 y 58
 end
@@ -9251,6 +11033,10 @@ x 56
 y 59
 end
 arch snow5
+x 56
+y 59
+end
+arch cold_dragon
 x 56
 y 59
 end
@@ -9328,6 +11114,10 @@ arch snow5
 x 57
 y 6
 end
+arch cold_dragon
+x 57
+y 6
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -9335,6 +11125,10 @@ x 57
 y 7
 end
 arch slevel_2_2_3
+x 57
+y 7
+end
+arch cold_dragon
 x 57
 y 7
 end
@@ -9452,11 +11246,19 @@ arch snow4
 x 57
 y 49
 end
+arch acid_sphere
+x 57
+y 49
+end
 arch flagstone
 x 57
 y 50
 end
 arch snow5
+x 57
+y 50
+end
+arch chinese_dragon
 x 57
 y 50
 end
@@ -9481,6 +11283,10 @@ x 57
 y 52
 end
 arch slevel_2_2_3
+x 57
+y 52
+end
+arch cold_dragon
 x 57
 y 52
 end
@@ -9508,6 +11314,10 @@ arch snow5
 x 57
 y 54
 end
+arch chinese_dragon
+x 57
+y 54
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -9525,6 +11335,10 @@ x 57
 y 56
 end
 arch slevel_2_2_4
+x 57
+y 56
+end
+arch acid_sphere
 x 57
 y 56
 end
@@ -9541,6 +11355,14 @@ end
 arch snow5
 x 57
 y 57
+end
+arch chinese_dragon
+x 57
+y 57
+carrying 100
+arch key2
+slaying castle2key1
+end
 end
 arch flagstone
 x 57
@@ -9551,6 +11373,10 @@ x 57
 y 59
 end
 arch snow5
+x 57
+y 59
+end
+arch acid_sphere
 x 57
 y 59
 end
@@ -9567,6 +11393,10 @@ x 57
 y 60
 end
 arch dungeon_magic
+x 57
+y 61
+end
+arch fog
 x 57
 y 61
 end
@@ -9700,6 +11530,10 @@ arch dungeon_magic
 x 58
 y 47
 end
+arch fog
+x 58
+y 47
+end
 arch istone
 x 58
 y 48
@@ -9746,6 +11580,10 @@ arch slevel_2_2_3
 x 58
 y 52
 end
+arch acid_sphere
+x 58
+y 52
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -9753,6 +11591,10 @@ x 58
 y 53
 end
 arch slevel_2_2_3
+x 58
+y 53
+end
+arch cold_dragon
 x 58
 y 53
 end
@@ -9870,7 +11712,15 @@ arch flagstone
 x 59
 y 9
 end
+arch cold_dragon
+x 59
+y 9
+end
 arch flagstone
+x 59
+y 10
+end
+arch cold_dragon
 x 59
 y 10
 end
@@ -9903,6 +11753,10 @@ x 59
 y 14
 end
 arch dungeon_magic
+x 59
+y 15
+end
+arch fog
 x 59
 y 15
 end
@@ -9942,7 +11796,15 @@ arch flagstone
 x 59
 y 51
 end
+arch acid_sphere
+x 59
+y 51
+end
 arch flagstone
+x 59
+y 52
+end
+arch chinese_dragon
 x 59
 y 52
 end
@@ -9958,6 +11820,10 @@ arch flagstone
 x 59
 y 54
 end
+arch cold_dragon
+x 59
+y 54
+end
 arch flagstone
 x 59
 y 55
@@ -9966,11 +11832,19 @@ arch flagstone
 x 59
 y 56
 end
+arch cold_dragon
+x 59
+y 56
+end
 arch flagstone
 x 59
 y 57
 end
 arch snow5
+x 59
+y 57
+end
+arch cold_dragon
 x 59
 y 57
 end
@@ -10001,6 +11875,10 @@ end
 arch dungeon_magic
 x 59
 y 61
+end
+arch fog
+x 59
+y 62
 end
 arch dungeon_magic
 x 60
@@ -10162,7 +12040,15 @@ arch snow5
 x 60
 y 54
 end
+arch acid_sphere
+x 60
+y 54
+end
 arch flagstone
+x 60
+y 55
+end
+arch cold_dragon
 x 60
 y 55
 end
@@ -10205,6 +12091,10 @@ end
 arch dungeon_magic
 x 60
 y 60
+end
+arch fog
+x 61
+y 1
 end
 arch dungeon_magic
 x 61
@@ -10366,6 +12256,10 @@ arch dungeon_magic
 x 61
 y 57
 end
+arch fog
+x 61
+y 57
+end
 arch dungeon_magic
 x 61
 y 58
@@ -10373,6 +12267,14 @@ end
 arch dungeon_magic
 x 61
 y 59
+end
+arch fog
+x 61
+y 60
+end
+arch fog
+x 62
+y 1
 end
 arch dungeon_magic
 x 62
@@ -10390,6 +12292,10 @@ arch dungeon_magic
 x 62
 y 9
 end
+arch fog
+x 62
+y 9
+end
 arch dungeon_magic
 x 62
 y 10
@@ -10403,6 +12309,10 @@ x 62
 y 12
 end
 arch dungeon_magic
+x 62
+y 51
+end
+arch fog
 x 62
 y 51
 end
@@ -10429,4 +12339,20 @@ end
 arch dungeon_magic
 x 62
 y 57
+end
+arch fog
+x 63
+y 5
+end
+arch fog
+x 63
+y 47
+end
+arch fog
+x 63
+y 55
+end
+arch fog
+x 63
+y 60
 end
