@@ -1864,7 +1864,7 @@ sp 15
 x 17
 y 14
 end
-arch grass
+arch pstone_1
 x 17
 y 15
 end
@@ -1969,7 +1969,7 @@ arch evergreen
 x 18
 y 14
 end
-arch grass
+arch pstone_1
 x 18
 y 15
 end
@@ -1977,15 +1977,11 @@ arch grass
 x 18
 y 16
 end
-arch dwall_2_2_2
-x 18
-y 16
-end
 arch grass
 x 18
 y 17
 end
-arch dwall_2_2_4
+arch dwall_2_1_2
 x 18
 y 17
 end
@@ -2107,7 +2103,7 @@ arch river_w-e
 x 19
 y 13
 end
-arch pstone_1
+arch grass
 x 19
 y 14
 end
@@ -2115,11 +2111,11 @@ arch dwall_1_1
 x 19
 y 14
 end
-arch grass
+arch pstone_1
 x 19
 y 15
 end
-arch dwall_2_1_1
+arch cityport_b
 x 19
 y 15
 end
@@ -2127,7 +2123,7 @@ arch grass
 x 19
 y 16
 end
-arch dwall_3_1
+arch dwall_2_1_1
 x 19
 y 16
 end
@@ -2136,6 +2132,10 @@ x 19
 y 17
 end
 arch brush
+x 19
+y 17
+end
+arch dwall_3_1
 x 19
 y 17
 end
@@ -2213,11 +2213,11 @@ arch rcrook_we-sw
 x 20
 y 13
 end
-arch pstone_1
+arch grass
 x 20
 y 14
 end
-arch grass
+arch pstone_1
 x 20
 y 15
 end
@@ -2225,15 +2225,11 @@ arch grass
 x 20
 y 16
 end
-arch dwall_2_2_3
-x 20
-y 16
-end
 arch grass
 x 20
 y 17
 end
-arch dwall_2_1_1
+arch dwall_2_2_3
 x 20
 y 17
 end
@@ -2616,6 +2612,7 @@ x 24
 y 14
 end
 arch river_nw-se_u
+no_pass 0
 x 24
 y 14
 end
