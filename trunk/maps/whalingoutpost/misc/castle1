@@ -12637,6 +12637,11 @@ arch snow5
 x 31
 y 54
 end
+arch pedestal_trigger
+x 31
+y 55
+connected 10021
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -12662,6 +12667,13 @@ end
 arch grate_closed_1
 x 31
 y 56
+connected 10021
+end
+arch check_inv
+slaying castle1antartickey1234bb2
+x 31
+y 57
+connected 10021
 end
 arch s_mountain
 x 31
@@ -13083,6 +13095,11 @@ arch snow5
 x 32
 y 54
 end
+arch pedestal_trigger
+x 32
+y 55
+connected 10021
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13108,6 +13125,13 @@ end
 arch grate_closed_1
 x 32
 y 56
+connected 10021
+end
+arch check_inv
+slaying castle1antartickey1234bb2
+x 32
+y 57
+connected 10021
 end
 arch s_mountain
 x 32

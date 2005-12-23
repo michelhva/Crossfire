@@ -714,7 +714,11 @@ arch grass
 x 2
 y 7
 end
-arch tavern
+arch s_shop2
+name small house
+slaying /navar_city/spyhouse
+hp 16
+sp 18
 x 2
 y 7
 end
@@ -4137,6 +4141,7 @@ y 9
 end
 arch bank_west
 name Bank of Skud, Navar Branch
+name_pl Bank of Skud, Navar Branch
 slaying /navar_city/misc/city1bank
 hp 7
 sp 14
