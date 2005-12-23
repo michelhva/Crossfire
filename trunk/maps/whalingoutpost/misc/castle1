@@ -1605,6 +1605,10 @@ name_pl woodfloor
 x 4
 y 51
 end
+arch sword_4
+x 4
+y 51
+end
 arch dungeon_magic
 x 4
 y 52
@@ -1655,6 +1659,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 4
+y 57
+end
+arch sword_4
 x 4
 y 57
 end
@@ -1960,9 +1968,17 @@ name_pl woodfloor
 x 5
 y 50
 end
+arch sword_4
+x 5
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 51
+end
+arch sword_4
 x 5
 y 51
 end
@@ -2034,9 +2050,17 @@ name_pl woodfloor
 x 5
 y 57
 end
+arch sword_4
+x 5
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 58
+end
+arch sword_4
 x 5
 y 58
 end
@@ -2346,9 +2370,17 @@ name_pl woodfloor
 x 6
 y 49
 end
+arch sword_4
+x 6
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 50
+end
+arch sword_4
 x 6
 y 50
 end
@@ -2400,9 +2432,17 @@ name_pl woodfloor
 x 6
 y 58
 end
+arch sword_4
+x 6
+y 58
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 59
+end
+arch sword_4
 x 6
 y 59
 end
@@ -2708,6 +2748,10 @@ name_pl woodfloor
 x 7
 y 49
 end
+arch sword_4
+x 7
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2773,6 +2817,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 59
+end
+arch sword_4
 x 7
 y 59
 end
@@ -3212,6 +3260,14 @@ name_pl woodfloor
 x 8
 y 54
 end
+arch longtable_1_4
+x 8
+y 54
+end
+arch large_morningstar
+x 8
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3242,9 +3298,17 @@ name_pl woodfloor
 x 8
 y 59
 end
+arch lspear
+x 8
+y 59
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 8
+y 60
+end
+arch lspear
 x 8
 y 60
 end
@@ -3630,15 +3694,33 @@ name_pl woodfloor
 x 9
 y 53
 end
-arch woodfloor2
-name woodfloor
-name_pl woodfloor
+arch longtable_1_1
+x 9
+y 53
+end
+arch large_morningstar
+x 9
+y 53
+end
+arch longtable_4
+x 9
+y 54
+end
+arch large_morningstar
 x 9
 y 54
 end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 55
+end
+arch longtable_1_2
+x 9
+y 55
+end
+arch large_morningstar
 x 9
 y 55
 end
@@ -3670,9 +3752,17 @@ name_pl woodfloor
 x 9
 y 59
 end
+arch lspear
+x 9
+y 59
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 9
+y 60
+end
+arch lspear
 x 9
 y 60
 end
@@ -4046,6 +4136,14 @@ name_pl woodfloor
 x 10
 y 54
 end
+arch longtable_1_3
+x 10
+y 54
+end
+arch large_morningstar
+x 10
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4076,9 +4174,17 @@ name_pl woodfloor
 x 10
 y 59
 end
+arch lspear
+x 10
+y 59
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 10
+y 60
+end
+arch lspear
 x 10
 y 60
 end
@@ -4612,6 +4718,10 @@ name_pl woodfloor
 x 11
 y 49
 end
+arch sword_4
+x 11
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4677,6 +4787,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 59
+end
+arch sword_4
 x 11
 y 59
 end
@@ -4974,9 +5088,17 @@ name_pl woodfloor
 x 12
 y 49
 end
+arch sword_4
+x 12
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 50
+end
+arch sword_4
 x 12
 y 50
 end
@@ -5032,9 +5154,17 @@ name_pl woodfloor
 x 12
 y 58
 end
+arch sword_4
+x 12
+y 58
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 59
+end
+arch sword_4
 x 12
 y 59
 end
@@ -5336,9 +5466,17 @@ name_pl woodfloor
 x 13
 y 50
 end
+arch sword_4
+x 13
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 51
+end
+arch sword_4
 x 13
 y 51
 end
@@ -5378,9 +5516,17 @@ name_pl woodfloor
 x 13
 y 57
 end
+arch sword_4
+x 13
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 58
+end
+arch sword_4
 x 13
 y 58
 end
@@ -5694,9 +5840,17 @@ name_pl woodfloor
 x 14
 y 51
 end
+arch sword_4
+x 14
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 14
+y 52
+end
+arch sword_4
 x 14
 y 52
 end
@@ -5724,9 +5878,17 @@ name_pl woodfloor
 x 14
 y 56
 end
+arch sword_4
+x 14
+y 56
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 14
+y 57
+end
+arch sword_4
 x 14
 y 57
 end
