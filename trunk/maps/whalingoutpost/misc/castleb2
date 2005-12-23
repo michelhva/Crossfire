@@ -1,0 +1,2327 @@
+arch map
+reset_timeout 7200
+difficulty 1
+darkness 3
+width 140
+height 140
+enter_x 1
+enter_y 1
+msg
+Creator: Mikeeusa
+Email: gnu@foo.bar
+Date: Tue Aug  3 23:32:57 2004
+endmsg
+end
+arch blocked
+msg
+endmsg
+x 104
+y 122
+end
+arch blocked
+msg
+endmsg
+x 104
+y 123
+end
+arch istone
+x 105
+y 121
+end
+arch cave16
+x 105
+y 121
+end
+arch istone
+x 105
+y 122
+end
+arch cave17
+x 105
+y 122
+end
+arch blocked
+msg
+endmsg
+x 105
+y 123
+end
+arch blocked
+msg
+endmsg
+x 105
+y 124
+end
+arch blocked
+msg
+endmsg
+x 105
+y 125
+end
+arch istone
+x 106
+y 120
+end
+arch cave21
+x 106
+y 120
+end
+arch istone
+x 106
+y 121
+end
+arch cave21
+x 106
+y 121
+end
+arch istone
+x 106
+y 122
+end
+arch cave16
+x 106
+y 122
+end
+arch istone
+x 106
+y 123
+end
+arch cave3
+x 106
+y 123
+end
+arch istone
+x 106
+y 124
+end
+arch cave17
+x 106
+y 124
+end
+arch blocked
+msg
+endmsg
+x 106
+y 125
+end
+arch blocked
+msg
+endmsg
+x 106
+y 126
+end
+arch istone
+x 107
+y 119
+end
+arch cave14
+x 107
+y 119
+end
+arch istone
+x 107
+y 120
+end
+arch cave21
+x 107
+y 120
+end
+arch istone
+x 107
+y 121
+end
+arch cave21
+x 107
+y 121
+end
+arch istone
+x 107
+y 122
+end
+arch cave21
+x 107
+y 122
+end
+arch istone
+x 107
+y 123
+end
+arch istone
+x 107
+y 124
+end
+arch cave16
+x 107
+y 124
+end
+arch istone
+x 107
+y 125
+end
+arch cave17
+x 107
+y 125
+end
+arch blocked
+msg
+endmsg
+x 107
+y 126
+end
+arch blocked
+msg
+endmsg
+x 107
+y 127
+end
+arch blocked
+msg
+endmsg
+x 108
+y 118
+end
+arch istone
+x 108
+y 119
+end
+arch cave19
+x 108
+y 119
+end
+arch istone
+x 108
+y 120
+end
+arch cave1
+x 108
+y 120
+end
+arch istone
+x 108
+y 121
+end
+arch cave14
+x 108
+y 121
+end
+arch istone
+x 108
+y 122
+end
+arch cave21
+x 108
+y 122
+end
+arch istone
+x 108
+y 123
+end
+arch istone
+x 108
+y 124
+end
+arch istone
+x 108
+y 125
+end
+arch cave16
+x 108
+y 125
+end
+arch istone
+x 108
+y 126
+end
+arch cave17
+x 108
+y 126
+end
+arch blocked
+msg
+endmsg
+x 108
+y 127
+end
+arch blocked
+msg
+endmsg
+x 109
+y 118
+end
+arch blocked
+msg
+endmsg
+x 109
+y 119
+end
+arch blocked
+msg
+endmsg
+x 109
+y 120
+end
+arch istone
+x 109
+y 121
+end
+arch cave19
+x 109
+y 121
+end
+arch istone
+x 109
+y 122
+end
+arch cave14
+x 109
+y 122
+end
+arch istone
+x 109
+y 123
+end
+arch istone
+x 109
+y 124
+end
+arch istone
+x 109
+y 125
+end
+arch istone
+x 109
+y 126
+end
+arch cave2
+x 109
+y 126
+end
+arch blocked
+msg
+endmsg
+x 109
+y 127
+end
+arch blocked
+msg
+endmsg
+x 109
+y 128
+end
+arch blocked
+msg
+endmsg
+x 110
+y 120
+end
+arch blocked
+msg
+endmsg
+x 110
+y 121
+end
+arch istone
+x 110
+y 122
+end
+arch cave19
+x 110
+y 122
+end
+arch istone
+x 110
+y 123
+end
+arch cave1
+x 110
+y 123
+end
+arch istone
+x 110
+y 124
+end
+arch cave14
+x 110
+y 124
+end
+arch istone
+x 110
+y 125
+end
+arch istone
+x 110
+y 126
+end
+arch cave16
+x 110
+y 126
+end
+arch istone
+x 110
+y 127
+end
+arch cave17
+x 110
+y 127
+end
+arch blocked
+msg
+endmsg
+x 110
+y 128
+end
+arch blocked
+msg
+endmsg
+x 111
+y 121
+end
+arch blocked
+msg
+endmsg
+x 111
+y 122
+end
+arch blocked
+msg
+endmsg
+x 111
+y 123
+end
+arch istone
+x 111
+y 124
+end
+arch cave4
+x 111
+y 124
+end
+arch istone
+x 111
+y 125
+end
+arch istone
+x 111
+y 126
+end
+arch istone
+x 111
+y 127
+end
+arch cave2
+x 111
+y 127
+end
+arch blocked
+msg
+endmsg
+x 111
+y 128
+end
+arch blocked
+msg
+endmsg
+x 112
+y 123
+end
+arch istone
+x 112
+y 124
+end
+arch cave19
+x 112
+y 124
+end
+arch istone
+x 112
+y 125
+end
+arch cave14
+x 112
+y 125
+end
+arch istone
+x 112
+y 126
+end
+arch istone
+x 112
+y 127
+end
+arch cave2
+x 112
+y 127
+end
+arch blocked
+msg
+endmsg
+x 112
+y 128
+end
+arch blocked
+msg
+endmsg
+x 112
+y 129
+end
+arch blocked
+msg
+endmsg
+x 113
+y 123
+end
+arch blocked
+msg
+endmsg
+x 113
+y 124
+end
+arch istone
+x 113
+y 125
+end
+arch cave4
+x 113
+y 125
+end
+arch istone
+x 113
+y 126
+end
+arch istone
+x 113
+y 127
+end
+arch cave16
+x 113
+y 127
+end
+arch istone
+x 113
+y 128
+end
+arch cave17
+x 113
+y 128
+end
+arch blocked
+msg
+endmsg
+x 113
+y 129
+end
+arch blocked
+msg
+endmsg
+x 114
+y 124
+end
+arch istone
+x 114
+y 125
+end
+arch cave4
+x 114
+y 125
+end
+arch istone
+x 114
+y 126
+end
+arch istone
+x 114
+y 127
+end
+arch istone
+x 114
+y 128
+end
+arch cave2
+x 114
+y 128
+end
+arch blocked
+msg
+endmsg
+x 114
+y 129
+end
+arch blocked
+msg
+endmsg
+x 115
+y 122
+end
+arch blocked
+msg
+endmsg
+x 115
+y 123
+end
+arch blocked
+msg
+endmsg
+x 115
+y 124
+end
+arch istone
+x 115
+y 125
+end
+arch cave4
+x 115
+y 125
+end
+arch istone
+x 115
+y 126
+end
+arch istone
+x 115
+y 127
+end
+arch istone
+x 115
+y 128
+end
+arch cave2
+x 115
+y 128
+end
+arch blocked
+msg
+endmsg
+x 115
+y 129
+end
+arch blocked
+msg
+endmsg
+x 115
+y 130
+end
+arch blocked
+msg
+endmsg
+x 116
+y 120
+end
+arch blocked
+msg
+endmsg
+x 116
+y 121
+end
+arch blocked
+msg
+endmsg
+x 116
+y 122
+end
+arch istone
+x 116
+y 123
+end
+arch cave18
+x 116
+y 123
+end
+arch istone
+x 116
+y 124
+end
+arch cave3
+x 116
+y 124
+end
+arch istone
+x 116
+y 125
+end
+arch cave13
+x 116
+y 125
+end
+arch istone
+x 116
+y 126
+end
+arch istone
+x 116
+y 127
+end
+arch istone
+x 116
+y 128
+end
+arch cave16
+x 116
+y 128
+end
+arch istone
+x 116
+y 129
+end
+arch cave17
+x 116
+y 129
+end
+arch blocked
+msg
+endmsg
+x 116
+y 130
+end
+arch blocked
+msg
+endmsg
+x 116
+y 131
+end
+arch blocked
+msg
+endmsg
+x 116
+y 132
+end
+arch blocked
+msg
+endmsg
+x 117
+y 119
+end
+arch blocked
+msg
+endmsg
+x 117
+y 120
+end
+arch istone
+x 117
+y 121
+end
+arch cave18
+x 117
+y 121
+end
+arch istone
+x 117
+y 122
+end
+arch cave3
+x 117
+y 122
+end
+arch istone
+x 117
+y 123
+end
+arch cave13
+x 117
+y 123
+end
+arch istone
+x 117
+y 124
+end
+arch mine0
+x 117
+y 124
+end
+arch istone
+x 117
+y 125
+end
+arch istone
+x 117
+y 126
+end
+arch mine0
+x 117
+y 126
+end
+arch istone
+x 117
+y 127
+end
+arch istone
+x 117
+y 128
+end
+arch mine0
+x 117
+y 128
+end
+arch istone
+x 117
+y 129
+end
+arch cave16
+x 117
+y 129
+end
+arch istone
+x 117
+y 130
+end
+arch cave3
+x 117
+y 130
+end
+arch istone
+x 117
+y 131
+end
+arch cave17
+x 117
+y 131
+end
+arch blocked
+msg
+endmsg
+x 117
+y 132
+end
+arch blocked
+msg
+endmsg
+x 117
+y 133
+end
+arch blocked
+msg
+endmsg
+x 118
+y 118
+end
+arch blocked
+msg
+endmsg
+x 118
+y 119
+end
+arch istone
+x 118
+y 120
+end
+arch cave18
+x 118
+y 120
+end
+arch istone
+x 118
+y 121
+end
+arch cave13
+x 118
+y 121
+end
+arch istone
+x 118
+y 122
+end
+arch mine0
+x 118
+y 122
+end
+arch istone
+x 118
+y 123
+end
+arch istone
+x 118
+y 124
+end
+arch istone
+x 118
+y 125
+end
+arch istone
+x 118
+y 126
+end
+arch istone
+x 118
+y 127
+end
+arch istone
+x 118
+y 128
+end
+arch istone
+x 118
+y 129
+end
+arch istone
+x 118
+y 130
+end
+arch mine0
+x 118
+y 130
+end
+arch istone
+x 118
+y 131
+end
+arch cave16
+x 118
+y 131
+end
+arch istone
+x 118
+y 132
+end
+arch cave17
+x 118
+y 132
+end
+arch blocked
+msg
+endmsg
+x 118
+y 133
+end
+arch blocked
+msg
+endmsg
+x 118
+y 134
+end
+arch blocked
+msg
+endmsg
+x 119
+y 118
+end
+arch istone
+x 119
+y 119
+end
+arch cave18
+x 119
+y 119
+end
+arch istone
+x 119
+y 120
+end
+arch cave13
+x 119
+y 120
+end
+arch istone
+x 119
+y 121
+end
+arch istone
+x 119
+y 122
+end
+arch istone
+x 119
+y 123
+end
+arch istone
+x 119
+y 124
+end
+arch istone
+x 119
+y 125
+end
+arch istone
+x 119
+y 126
+end
+arch istone
+x 119
+y 127
+end
+arch istone
+x 119
+y 128
+end
+arch istone
+x 119
+y 129
+end
+arch istone
+x 119
+y 130
+end
+arch istone
+x 119
+y 131
+end
+arch istone
+x 119
+y 132
+end
+arch cave16
+x 119
+y 132
+end
+arch istone
+x 119
+y 133
+end
+arch cave17
+x 119
+y 133
+end
+arch blocked
+msg
+endmsg
+x 119
+y 134
+end
+arch blocked
+msg
+endmsg
+x 120
+y 117
+end
+arch blocked
+msg
+endmsg
+x 120
+y 118
+end
+arch istone
+x 120
+y 119
+end
+arch cave4
+x 120
+y 119
+end
+arch istone
+x 120
+y 120
+end
+arch mine0
+x 120
+y 120
+end
+arch istone
+x 120
+y 121
+end
+arch istone
+x 120
+y 122
+end
+arch istone
+x 120
+y 123
+end
+arch istone
+x 120
+y 124
+end
+arch istone
+x 120
+y 125
+end
+arch istone
+x 120
+y 126
+end
+arch mine0
+x 120
+y 126
+end
+arch istone
+x 120
+y 127
+end
+arch istone
+x 120
+y 128
+end
+arch istone
+x 120
+y 129
+end
+arch istone
+x 120
+y 130
+end
+arch istone
+x 120
+y 131
+end
+arch istone
+x 120
+y 132
+end
+arch mine0
+x 120
+y 132
+end
+arch istone
+x 120
+y 133
+end
+arch cave2
+x 120
+y 133
+end
+arch blocked
+msg
+endmsg
+x 120
+y 134
+end
+arch blocked
+msg
+endmsg
+x 120
+y 135
+end
+arch blocked
+msg
+endmsg
+x 121
+y 117
+end
+arch istone
+x 121
+y 118
+end
+arch cave18
+x 121
+y 118
+end
+arch istone
+x 121
+y 119
+end
+arch cave13
+x 121
+y 119
+end
+arch istone
+x 121
+y 120
+end
+arch istone
+x 121
+y 121
+end
+arch istone
+x 121
+y 122
+end
+arch istone
+x 121
+y 123
+end
+arch mine0
+x 121
+y 123
+end
+arch istone
+x 121
+y 124
+end
+arch istone
+x 121
+y 125
+end
+arch istone
+x 121
+y 126
+end
+arch istone
+x 121
+y 127
+end
+arch istone
+x 121
+y 128
+end
+arch istone
+x 121
+y 129
+end
+arch mine0
+x 121
+y 129
+end
+arch istone
+x 121
+y 130
+end
+arch istone
+x 121
+y 131
+end
+arch istone
+x 121
+y 132
+end
+arch istone
+x 121
+y 133
+end
+arch cave16
+x 121
+y 133
+end
+arch istone
+x 121
+y 134
+end
+arch cave17
+x 121
+y 134
+end
+arch blocked
+msg
+endmsg
+x 121
+y 135
+end
+arch blocked
+msg
+endmsg
+x 122
+y 117
+end
+arch istone
+x 122
+y 118
+end
+arch cave4
+x 122
+y 118
+end
+arch istone
+x 122
+y 119
+end
+arch mine0
+x 122
+y 119
+end
+arch istone
+x 122
+y 120
+end
+arch istone
+x 122
+y 121
+end
+arch istone
+x 122
+y 122
+end
+arch istone
+x 122
+y 123
+end
+arch istone
+x 122
+y 124
+end
+arch istone
+x 122
+y 125
+end
+arch istone
+x 122
+y 126
+end
+arch istone
+x 122
+y 127
+end
+arch istone
+x 122
+y 128
+end
+arch istone
+x 122
+y 129
+end
+arch istone
+x 122
+y 130
+end
+arch istone
+x 122
+y 131
+end
+arch istone
+x 122
+y 132
+end
+arch istone
+x 122
+y 133
+end
+arch mine0
+x 122
+y 133
+end
+arch istone
+x 122
+y 134
+end
+arch cave2
+x 122
+y 134
+end
+arch blocked
+msg
+endmsg
+x 122
+y 135
+end
+arch blocked
+msg
+endmsg
+x 123
+y 117
+end
+arch istone
+x 123
+y 118
+end
+arch cave4
+x 123
+y 118
+end
+arch istone
+x 123
+y 119
+end
+arch istone
+x 123
+y 120
+end
+arch istone
+x 123
+y 121
+end
+arch istone
+x 123
+y 122
+end
+arch istone
+x 123
+y 123
+end
+arch istone
+x 123
+y 124
+end
+arch istone
+x 123
+y 125
+end
+arch mine0
+x 123
+y 125
+end
+arch istone
+x 123
+y 126
+end
+arch istone
+x 123
+y 127
+end
+arch mine0
+x 123
+y 127
+end
+arch istone
+x 123
+y 128
+end
+arch istone
+x 123
+y 129
+end
+arch istone
+x 123
+y 130
+end
+arch istone
+x 123
+y 131
+end
+arch istone
+x 123
+y 132
+end
+arch istone
+x 123
+y 133
+end
+arch istone
+x 123
+y 134
+end
+arch cave2
+x 123
+y 134
+end
+arch blocked
+msg
+endmsg
+x 123
+y 135
+end
+arch blocked
+msg
+endmsg
+x 124
+y 117
+end
+arch istone
+x 124
+y 118
+end
+arch cave4
+x 124
+y 118
+end
+arch istone
+x 124
+y 119
+end
+arch mine0
+x 124
+y 119
+end
+arch istone
+x 124
+y 120
+end
+arch istone
+x 124
+y 121
+end
+arch istone
+x 124
+y 122
+end
+arch mine0
+x 124
+y 122
+end
+arch istone
+x 124
+y 123
+end
+arch istone
+x 124
+y 124
+end
+arch istone
+x 124
+y 125
+end
+arch istone
+x 124
+y 126
+end
+arch stair3_gstone_up
+slaying castleb1
+hp 9
+sp 54
+x 124
+y 126
+end
+arch istone
+x 124
+y 127
+end
+arch istone
+x 124
+y 128
+end
+arch istone
+x 124
+y 129
+end
+arch istone
+x 124
+y 130
+end
+arch mine0
+x 124
+y 130
+end
+arch istone
+x 124
+y 131
+end
+arch istone
+x 124
+y 132
+end
+arch istone
+x 124
+y 133
+end
+arch mine0
+x 124
+y 133
+end
+arch istone
+x 124
+y 134
+end
+arch cave2
+x 124
+y 134
+end
+arch blocked
+msg
+endmsg
+x 124
+y 135
+end
+arch blocked
+msg
+endmsg
+x 125
+y 117
+end
+arch istone
+x 125
+y 118
+end
+arch cave4
+x 125
+y 118
+end
+arch istone
+x 125
+y 119
+end
+arch istone
+x 125
+y 120
+end
+arch istone
+x 125
+y 121
+end
+arch istone
+x 125
+y 122
+end
+arch istone
+x 125
+y 123
+end
+arch istone
+x 125
+y 124
+end
+arch istone
+x 125
+y 125
+end
+arch mine0
+x 125
+y 125
+end
+arch istone
+x 125
+y 126
+end
+arch istone
+x 125
+y 127
+end
+arch mine0
+x 125
+y 127
+end
+arch istone
+x 125
+y 128
+end
+arch istone
+x 125
+y 129
+end
+arch istone
+x 125
+y 130
+end
+arch istone
+x 125
+y 131
+end
+arch istone
+x 125
+y 132
+end
+arch istone
+x 125
+y 133
+end
+arch istone
+x 125
+y 134
+end
+arch cave2
+x 125
+y 134
+end
+arch blocked
+msg
+endmsg
+x 125
+y 135
+end
+arch blocked
+msg
+endmsg
+x 126
+y 117
+end
+arch istone
+x 126
+y 118
+end
+arch cave4
+x 126
+y 118
+end
+arch istone
+x 126
+y 119
+end
+arch mine0
+x 126
+y 119
+end
+arch istone
+x 126
+y 120
+end
+arch istone
+x 126
+y 121
+end
+arch istone
+x 126
+y 122
+end
+arch istone
+x 126
+y 123
+end
+arch istone
+x 126
+y 124
+end
+arch istone
+x 126
+y 125
+end
+arch istone
+x 126
+y 126
+end
+arch istone
+x 126
+y 127
+end
+arch istone
+x 126
+y 128
+end
+arch istone
+x 126
+y 129
+end
+arch istone
+x 126
+y 130
+end
+arch istone
+x 126
+y 131
+end
+arch istone
+x 126
+y 132
+end
+arch istone
+x 126
+y 133
+end
+arch mine0
+x 126
+y 133
+end
+arch istone
+x 126
+y 134
+end
+arch cave2
+x 126
+y 134
+end
+arch blocked
+msg
+endmsg
+x 126
+y 135
+end
+arch blocked
+msg
+endmsg
+x 127
+y 117
+end
+arch istone
+x 127
+y 118
+end
+arch cave19
+x 127
+y 118
+end
+arch istone
+x 127
+y 119
+end
+arch cave14
+x 127
+y 119
+end
+arch istone
+x 127
+y 120
+end
+arch istone
+x 127
+y 121
+end
+arch istone
+x 127
+y 122
+end
+arch istone
+x 127
+y 123
+end
+arch mine0
+x 127
+y 123
+end
+arch istone
+x 127
+y 124
+end
+arch istone
+x 127
+y 125
+end
+arch istone
+x 127
+y 126
+end
+arch istone
+x 127
+y 127
+end
+arch istone
+x 127
+y 128
+end
+arch istone
+x 127
+y 129
+end
+arch mine0
+x 127
+y 129
+end
+arch istone
+x 127
+y 130
+end
+arch istone
+x 127
+y 131
+end
+arch istone
+x 127
+y 132
+end
+arch istone
+x 127
+y 133
+end
+arch cave15
+x 127
+y 133
+end
+arch istone
+x 127
+y 134
+end
+arch cave20
+x 127
+y 134
+end
+arch blocked
+msg
+endmsg
+x 127
+y 135
+end
+arch blocked
+msg
+endmsg
+x 128
+y 117
+end
+arch blocked
+msg
+endmsg
+x 128
+y 118
+end
+arch istone
+x 128
+y 119
+end
+arch cave4
+x 128
+y 119
+end
+arch istone
+x 128
+y 120
+end
+arch mine0
+x 128
+y 120
+end
+arch istone
+x 128
+y 121
+end
+arch istone
+x 128
+y 122
+end
+arch istone
+x 128
+y 123
+end
+arch istone
+x 128
+y 124
+end
+arch istone
+x 128
+y 125
+end
+arch istone
+x 128
+y 126
+end
+arch mine0
+x 128
+y 126
+end
+arch istone
+x 128
+y 127
+end
+arch istone
+x 128
+y 128
+end
+arch istone
+x 128
+y 129
+end
+arch istone
+x 128
+y 130
+end
+arch istone
+x 128
+y 131
+end
+arch istone
+x 128
+y 132
+end
+arch mine0
+x 128
+y 132
+end
+arch istone
+x 128
+y 133
+end
+arch cave2
+x 128
+y 133
+end
+arch blocked
+msg
+endmsg
+x 128
+y 134
+end
+arch blocked
+msg
+endmsg
+x 128
+y 135
+end
+arch blocked
+msg
+endmsg
+x 129
+y 118
+end
+arch istone
+x 129
+y 119
+end
+arch cave19
+x 129
+y 119
+end
+arch istone
+x 129
+y 120
+end
+arch cave14
+x 129
+y 120
+end
+arch istone
+x 129
+y 121
+end
+arch istone
+x 129
+y 122
+end
+arch istone
+x 129
+y 123
+end
+arch istone
+x 129
+y 124
+end
+arch istone
+x 129
+y 125
+end
+arch istone
+x 129
+y 126
+end
+arch istone
+x 129
+y 127
+end
+arch istone
+x 129
+y 128
+end
+arch istone
+x 129
+y 129
+end
+arch istone
+x 129
+y 130
+end
+arch istone
+x 129
+y 131
+end
+arch istone
+x 129
+y 132
+end
+arch cave15
+x 129
+y 132
+end
+arch istone
+x 129
+y 133
+end
+arch cave20
+x 129
+y 133
+end
+arch blocked
+msg
+endmsg
+x 129
+y 134
+end
+arch blocked
+msg
+endmsg
+x 130
+y 118
+end
+arch blocked
+msg
+endmsg
+x 130
+y 119
+end
+arch istone
+x 130
+y 120
+end
+arch cave19
+x 130
+y 120
+end
+arch istone
+x 130
+y 121
+end
+arch cave14
+x 130
+y 121
+end
+arch istone
+x 130
+y 122
+end
+arch mine0
+x 130
+y 122
+end
+arch istone
+x 130
+y 123
+end
+arch istone
+x 130
+y 124
+end
+arch istone
+x 130
+y 125
+end
+arch istone
+x 130
+y 126
+end
+arch istone
+x 130
+y 127
+end
+arch istone
+x 130
+y 128
+end
+arch istone
+x 130
+y 129
+end
+arch istone
+x 130
+y 130
+end
+arch mine0
+x 130
+y 130
+end
+arch istone
+x 130
+y 131
+end
+arch cave15
+x 130
+y 131
+end
+arch istone
+x 130
+y 132
+end
+arch cave20
+x 130
+y 132
+end
+arch blocked
+msg
+endmsg
+x 130
+y 133
+end
+arch blocked
+msg
+endmsg
+x 130
+y 134
+end
+arch blocked
+msg
+endmsg
+x 131
+y 119
+end
+arch blocked
+msg
+endmsg
+x 131
+y 120
+end
+arch istone
+x 131
+y 121
+end
+arch cave19
+x 131
+y 121
+end
+arch istone
+x 131
+y 122
+end
+arch cave1
+x 131
+y 122
+end
+arch istone
+x 131
+y 123
+end
+arch cave14
+x 131
+y 123
+end
+arch istone
+x 131
+y 124
+end
+arch mine0
+x 131
+y 124
+end
+arch istone
+x 131
+y 125
+end
+arch istone
+x 131
+y 126
+end
+arch mine0
+x 131
+y 126
+end
+arch istone
+x 131
+y 127
+end
+arch istone
+x 131
+y 128
+end
+arch mine0
+x 131
+y 128
+end
+arch istone
+x 131
+y 129
+end
+arch cave15
+x 131
+y 129
+end
+arch istone
+x 131
+y 130
+end
+arch cave1
+x 131
+y 130
+end
+arch istone
+x 131
+y 131
+end
+arch cave20
+x 131
+y 131
+end
+arch blocked
+msg
+endmsg
+x 131
+y 132
+end
+arch blocked
+msg
+endmsg
+x 131
+y 133
+end
+arch blocked
+msg
+endmsg
+x 132
+y 120
+end
+arch blocked
+msg
+endmsg
+x 132
+y 121
+end
+arch blocked
+msg
+endmsg
+x 132
+y 122
+end
+arch istone
+x 132
+y 123
+end
+arch cave19
+x 132
+y 123
+end
+arch istone
+x 132
+y 124
+end
+arch cave1
+x 132
+y 124
+end
+arch istone
+x 132
+y 125
+end
+arch cave1
+x 132
+y 125
+end
+arch istone
+x 132
+y 126
+end
+arch cave1
+x 132
+y 126
+end
+arch istone
+x 132
+y 127
+end
+arch cave1
+x 132
+y 127
+end
+arch istone
+x 132
+y 128
+end
+arch cave1
+x 132
+y 128
+end
+arch istone
+x 132
+y 129
+end
+arch cave20
+x 132
+y 129
+end
+arch blocked
+msg
+endmsg
+x 132
+y 130
+end
+arch blocked
+msg
+endmsg
+x 132
+y 131
+end
+arch blocked
+msg
+endmsg
+x 132
+y 132
+end
+arch blocked
+msg
+endmsg
+x 133
+y 122
+end
+arch blocked
+msg
+endmsg
+x 133
+y 123
+end
+arch blocked
+msg
+endmsg
+x 133
+y 124
+end
+arch blocked
+msg
+endmsg
+x 133
+y 125
+end
+arch blocked
+msg
+endmsg
+x 133
+y 126
+end
+arch blocked
+msg
+endmsg
+x 133
+y 127
+end
+arch blocked
+msg
+endmsg
+x 133
+y 128
+end
+arch blocked
+msg
+endmsg
+x 133
+y 129
+end
+arch blocked
+msg
+endmsg
+x 133
+y 130
+end
