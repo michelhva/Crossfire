@@ -702,6 +702,14 @@ arch grass
 x 6
 y 15
 end
+arch market1
+name Acme Building Supply
+slaying /pup_land/lone_town/shops/buildshop
+hp 19
+sp 20
+x 6
+y 15
+end
 arch cobblestones
 x 6
 y 16
@@ -820,6 +828,14 @@ arch grass
 x 7
 y 15
 end
+arch market2
+name Acme Building Supply
+slaying /pup_land/lone_town/shops/buildshop
+hp 19
+sp 20
+x 7
+y 15
+end
 arch cobblestones
 x 7
 y 16
@@ -911,6 +927,14 @@ x 8
 y 14
 end
 arch grass
+x 8
+y 15
+end
+arch market3
+name Acme Building Supply
+slaying /pup_land/lone_town/shops/buildshop
+hp 20
+sp 20
 x 8
 y 15
 end
