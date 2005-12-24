@@ -79,7 +79,7 @@ arch ewall_2_2_2
 x 1
 y 1
 end
-arch wwall_0
+arch ewall_redpost
 x 1
 y 1
 end
@@ -93,7 +93,7 @@ arch ewall_2_1_1
 x 1
 y 2
 end
-arch wwall_0
+arch ewall_redpost
 x 1
 y 2
 end
@@ -107,10 +107,6 @@ arch ewall_2_1_1
 x 1
 y 3
 end
-arch wwall_0
-x 1
-y 3
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -237,10 +233,6 @@ arch ewall_2_1_1
 x 1
 y 14
 end
-arch wwall_0
-x 1
-y 14
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -251,7 +243,7 @@ arch ewall_2_1_1
 x 1
 y 15
 end
-arch wwall_0
+arch ewall_redpost
 x 1
 y 15
 end
@@ -265,7 +257,7 @@ arch ewall_2_2_1
 x 1
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 1
 y 16
 end
@@ -286,7 +278,7 @@ arch ewall_2_1_2
 x 2
 y 1
 end
-arch wwall_0
+arch ewall_redpost
 x 2
 y 1
 end
@@ -400,7 +392,7 @@ arch ewall_2_1_2
 x 2
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 2
 y 16
 end
@@ -418,10 +410,6 @@ x 3
 y 1
 end
 arch ewall_2_1_2
-x 3
-y 1
-end
-arch wwall_0
 x 3
 y 1
 end
@@ -516,10 +504,6 @@ x 3
 y 16
 end
 arch ewall_2_1_2
-x 3
-y 16
-end
-arch wwall_0
 x 3
 y 16
 end
@@ -684,6 +668,13 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 5
+end
+arch stair_3_up
+slaying shrine2
+hp 5
+sp 5
 x 5
 y 5
 end
@@ -1001,6 +992,10 @@ name_pl woodfloor
 x 7
 y 5
 end
+arch ewall_redpost
+x 7
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1010,6 +1005,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 7
+end
+arch ewall_redpost
 x 7
 y 7
 end
@@ -1025,6 +1024,10 @@ name_pl woodfloor
 x 7
 y 9
 end
+arch ewall_redpost
+x 7
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1034,6 +1037,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 11
+end
+arch ewall_redpost
 x 7
 y 11
 end
@@ -1202,7 +1209,7 @@ arch ewall_1_3
 x 8
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 8
 y 16
 end
@@ -1448,7 +1455,7 @@ arch ewall_1_4
 x 10
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 10
 y 16
 end
@@ -1505,6 +1512,10 @@ name_pl woodfloor
 x 11
 y 5
 end
+arch ewall_redpost
+x 11
+y 5
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1514,6 +1525,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 7
+end
+arch ewall_redpost
 x 11
 y 7
 end
@@ -1529,6 +1544,10 @@ name_pl woodfloor
 x 11
 y 9
 end
+arch ewall_redpost
+x 11
+y 9
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1538,6 +1557,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 11
+y 11
+end
+arch ewall_redpost
 x 11
 y 11
 end
@@ -2029,10 +2052,6 @@ arch ewall_2_1_2
 x 15
 y 1
 end
-arch wwall_0
-x 15
-y 1
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2127,10 +2146,6 @@ arch ewall_2_1_2
 x 15
 y 16
 end
-arch wwall_0
-x 15
-y 16
-end
 arch blocked
 x 15
 y 17
@@ -2148,7 +2163,7 @@ arch ewall_2_1_2
 x 16
 y 1
 end
-arch wwall_0
+arch ewall_redpost
 x 16
 y 1
 end
@@ -2286,7 +2301,7 @@ arch ewall_2_1_2
 x 16
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 16
 y 16
 end
@@ -2307,7 +2322,7 @@ arch ewall_2_2_3
 x 17
 y 1
 end
-arch wwall_0
+arch ewall_redpost
 x 17
 y 1
 end
@@ -2321,7 +2336,7 @@ arch ewall_2_1_1
 x 17
 y 2
 end
-arch wwall_0
+arch ewall_redpost
 x 17
 y 2
 end
@@ -2335,10 +2350,6 @@ arch ewall_2_1_1
 x 17
 y 3
 end
-arch wwall_0
-x 17
-y 3
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2465,10 +2476,6 @@ arch ewall_2_1_1
 x 17
 y 14
 end
-arch wwall_0
-x 17
-y 14
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2479,7 +2486,7 @@ arch ewall_2_1_1
 x 17
 y 15
 end
-arch wwall_0
+arch ewall_redpost
 x 17
 y 15
 end
@@ -2493,7 +2500,7 @@ arch ewall_2_2_4
 x 17
 y 16
 end
-arch wwall_0
+arch ewall_redpost
 x 17
 y 16
 end
