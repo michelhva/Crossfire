@@ -664,6 +664,7 @@ y 10
 end
 arch sage
 name spy of Azumauindo
+name_pl spy of Azumauindo
 msg
 @match *
 We have gathered up these Navarians
@@ -673,7 +674,6 @@ Chest. We burned the first group
 alive as they were unhelpful. This
 group is equally so. See if you can
 get any information out of them.
-
 endmsg
 x 4
 y 10
@@ -767,6 +767,7 @@ y 4
 carrying 100
 arch key2
 name antartic castle key
+name_pl antartic castle key
 slaying castle1antartickey1234bb2
 face key_blue.111
 end
@@ -1145,6 +1146,7 @@ y 14
 end
 arch bed_save
 name futon to reality
+name_pl futon to reality
 x 7
 y 14
 end
@@ -1166,6 +1168,7 @@ y 17
 end
 arch bed_save
 name futon to reality
+name_pl futon to reality
 x 7
 y 17
 end
@@ -2400,6 +2403,15 @@ arch woodfloor
 x 16
 y 11
 end
+arch dungeon_magic
+x 16
+y 12
+end
+arch pedestal_trigger
+x 16
+y 12
+connected 200
+end
 arch woodfloor
 x 16
 y 12
@@ -2407,6 +2419,18 @@ end
 arch woodfloor
 x 16
 y 13
+end
+arch igate_closed_1
+x 16
+y 13
+speed 0.500000
+connected 200
+end
+arch check_inv
+slaying azaspyenterancenavar1
+x 16
+y 14
+connected 200
 end
 arch woodfloor
 x 16
@@ -2547,6 +2571,15 @@ arch woodfloor
 x 17
 y 11
 end
+arch dungeon_magic
+x 17
+y 12
+end
+arch pedestal_trigger
+x 17
+y 12
+connected 200
+end
 arch woodfloor
 x 17
 y 12
@@ -2554,6 +2587,18 @@ end
 arch woodfloor
 x 17
 y 13
+end
+arch igate_closed_1
+x 17
+y 13
+speed 0.500000
+connected 200
+end
+arch check_inv
+slaying azaspyenterancenavar1
+x 17
+y 14
+connected 200
 end
 arch woodfloor
 x 17

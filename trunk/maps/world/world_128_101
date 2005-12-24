@@ -24,6 +24,9 @@ arch hills_rocky
 y 1
 elevation 2773
 end
+arch dungeon_magic
+y 2
+end
 arch hills_rocky
 y 2
 elevation 2773
@@ -39,16 +42,32 @@ face snow.111
 y 3
 elevation 3812
 end
+arch s_mountain_cave
+slaying /azumauindo/misc/cave1
+hp 5
+sp 17
+y 3
+end
+arch dungeon_magic
+y 4
+end
 arch flagstone
 face snow.111
 y 4
 elevation 3812
+end
+arch s_mountain
+y 4
+blocksview 0
 end
 arch cave2
 name mountain top
 name_pl mountain top
 y 4
 blocksview 0
+end
+arch dungeon_magic
+y 5
 end
 arch flagstone
 name mountain
@@ -57,6 +76,9 @@ face mountain5.111
 y 5
 elevation 11000
 blocksview 1
+end
+arch dungeon_magic
+y 6
 end
 arch flagstone
 face snow.111
@@ -341,29 +363,31 @@ x 1
 y 1
 elevation 2693
 end
+arch dungeon_magic
+x 1
+y 2
+end
 arch hills_rocky
 x 1
 y 2
 elevation 2693
 end
-arch cave16
+arch cave2
 name mountain top
 name_pl mountain top
 x 1
 y 2
 blocksview 0
 end
-arch hills_rocky
+arch flagstone
+face snow.111
 x 1
 y 3
-elevation 2773
+elevation 3812
 end
-arch cave17
-name mountain top
-name_pl mountain top
+arch dungeon_magic
 x 1
-y 3
-blocksview 0
+y 4
 end
 arch flagstone
 face snow.111
@@ -377,6 +401,10 @@ name_pl mountain top
 x 1
 y 4
 blocksview 0
+end
+arch dungeon_magic
+x 1
+y 5
 end
 arch flagstone
 face snow.111
@@ -394,6 +422,10 @@ name_pl mountain top
 x 1
 y 5
 blocksview 0
+end
+arch dungeon_magic
+x 1
+y 6
 end
 arch flagstone
 face snow.111
@@ -686,40 +718,62 @@ arch farmland
 x 2
 y 1
 end
+arch dungeon_magic
+x 2
+y 2
+end
 arch hills_rocky
 x 2
 y 2
 elevation 1197
 end
-arch hills_rocky
-x 2
-y 3
-elevation 2773
-end
 arch cave16
 name mountain top
 name_pl mountain top
 x 2
-y 3
+y 2
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 3
 end
 arch hills_rocky
 x 2
-y 4
+y 3
 elevation 2773
 end
 arch cave17
 name mountain top
 name_pl mountain top
 x 2
-y 4
+y 3
 blocksview 0
+end
+arch flagstone
+face snow.111
+x 2
+y 4
+elevation 3812
 end
 arch flagstone
 face snow.111
 x 2
 y 5
 elevation 3812
+end
+arch house2_east
+name ichidou
+name_pl ichidou
+slaying /azumauindo/misc/shrine1
+hp 9
+sp 15
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 6
 end
 arch flagstone
 face snow.111
@@ -730,6 +784,10 @@ end
 arch s_mountain
 x 2
 y 6
+end
+arch dungeon_magic
+x 2
+y 7
 end
 arch flagstone
 face snow.111
@@ -1079,27 +1137,54 @@ x 3
 y 2
 elevation 1197
 end
-arch hills_rocky
+arch dungeon_magic
 x 3
 y 3
-elevation 2773
 end
 arch hills_rocky
 x 3
-y 4
+y 3
 elevation 2773
 end
 arch cave16
 name mountain top
 name_pl mountain top
 x 3
+y 3
+blocksview 0
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch hills_rocky
+x 3
+y 4
+elevation 2773
+end
+arch mountain
+x 3
+y 4
+end
+arch cave3
+name mountain top
+name_pl mountain top
+x 3
 y 4
 blocksview 0
 end
+arch dungeon_magic
+x 3
+y 5
+end
 arch hills_rocky
 x 3
 y 5
 elevation 2773
+end
+arch mountain
+x 3
+y 5
 end
 arch cave3
 name mountain top
@@ -1108,10 +1193,18 @@ x 3
 y 5
 blocksview 0
 end
+arch dungeon_magic
+x 3
+y 6
+end
 arch hills_rocky
 x 3
 y 6
 elevation 2773
+end
+arch mountain
+x 3
+y 6
 end
 arch cave3
 name mountain top
@@ -1119,11 +1212,19 @@ name_pl mountain top
 x 3
 y 6
 blocksview 0
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch hills_rocky
 x 3
 y 7
 elevation 2773
+end
+arch mountain
+x 3
+y 7
 end
 arch cave3
 name mountain top
@@ -1476,20 +1577,41 @@ x 4
 y 4
 elevation 2693
 end
-arch hills_rocky
+arch mountain
+x 4
+y 4
+end
+arch flagstone
+name hill
+name_pl hill
+face hillsrocky.111
 x 4
 y 5
-elevation 2693
+end
+arch mountain_cave
+slaying /azumauindo/misc/cave1
+hp 23
+sp 61
+x 4
+y 5
 end
 arch hills_rocky
 x 4
 y 6
-elevation 2693
+elevation 2773
+end
+arch mountain
+x 4
+y 6
 end
 arch hills_rocky
 x 4
 y 7
 elevation 2693
+end
+arch mountain
+x 4
+y 7
 end
 arch hills_rocky
 x 4
@@ -1840,10 +1962,18 @@ x 5
 y 5
 elevation 2530
 end
+arch mountain
+x 5
+y 5
+end
 arch hills_rocky
 x 5
 y 6
 elevation 2530
+end
+arch mountain
+x 5
+y 6
 end
 arch hills_rocky
 x 5
