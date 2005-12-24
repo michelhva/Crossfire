@@ -1,0 +1,130 @@
+package com.realtime.crossfire.jxclient;
+import  com.realtime.crossfire.jxclient.*;
+import java.util.*;
+import java.io.*;
+
+public class CfPlayer extends CfItem
+{
+    private static java.util.List<CrossfireStatsListener> mylisteners_stats =
+            new ArrayList<CrossfireStatsListener>();
+    private static java.util.List<CrossfirePlayerListener> mylisteners_player =
+            new ArrayList<CrossfirePlayerListener>();
+
+    private static Stats mystats = new Stats();
+
+    public CfPlayer(int tag, int weight, Face face, String name)
+    {
+        super(0,tag,0,weight,face,name,name,1);
+    }
+    public static Stats getStats()
+    {
+        return mystats;
+    }
+    public static java.util.List getCrossfirePlayerListeners()
+    {
+        return mylisteners_player;
+    }
+    public static java.util.List getCrossfireStatsListeners()
+    {
+        return mylisteners_stats;
+    }
+    public static void setStats(DataInputStream dis) throws IOException
+    {
+        int pos = 0;
+        int len = dis.available();
+        while(pos<len)
+        {
+            int stat = dis.readUnsignedByte();
+            pos+=1;
+            switch (stat)
+            {
+                case Stats.CS_STAT_EXP:
+                    mystats.setExperience(dis.readUnsignedShort());
+                    pos+=2;
+                    break;
+                case Stats.CS_STAT_SPEED:
+                    mystats.setStat(stat, dis.readInt());
+                    pos+=4;
+                    break;
+                case Stats.CS_STAT_WEAP_SP:
+                    mystats.setStat(stat, dis.readInt());
+                    pos+=4;
+                    break;
+                case Stats.CS_STAT_RANGE:
+                {
+                    int length = dis.readUnsignedByte();
+                    pos+=1;
+                    byte buf[] = new byte[length];
+                    dis.readFully(buf);
+                    String str = new String(buf);
+                    pos+=length;
+                    mystats.setRange(str);
+                }
+                    break;
+                case Stats.CS_STAT_TITLE:
+                {
+                    int length = dis.readUnsignedByte();
+                    pos+=1;
+                    byte buf[] = new byte[length];
+
+                    dis.readFully(buf);
+                    String str = new String(buf);
+                    pos+=length;
+                    mystats.setTitle(str);
+                }
+                    break;
+                case Stats.CS_STAT_WEIGHT_LIM:
+                    mystats.setStat(Stats.CS_STAT_WEIGHT_LIM, dis.readInt());
+                    pos+=4;
+                    break;
+                case Stats.CS_STAT_EXP64:
+                    mystats.setExperience(dis.readLong());
+                    pos+=8;
+                    break;
+                case Stats.CS_STAT_HP:
+                case Stats.CS_STAT_MAXHP:
+                case Stats.CS_STAT_SP:
+                case Stats.CS_STAT_MAXSP:
+                case Stats.CS_STAT_STR:
+                case Stats.CS_STAT_INT:
+                case Stats.CS_STAT_WIS:
+                case Stats.CS_STAT_DEX:
+                case Stats.CS_STAT_CON:
+                case Stats.CS_STAT_CHA:
+                case Stats.CS_STAT_LEVEL:
+                case Stats.CS_STAT_WC:
+                case Stats.CS_STAT_AC:
+                case Stats.CS_STAT_DAM:
+                case Stats.CS_STAT_ARMOUR:
+                case Stats.CS_STAT_FOOD:
+                case Stats.CS_STAT_POW:
+                case Stats.CS_STAT_GRACE:
+                case Stats.CS_STAT_MAXGRACE:
+                case Stats.CS_STAT_FLAGS:
+                    mystats.setStat(stat, dis.readShort());
+                    pos+=2;
+                    break;
+                default:
+                    if ((stat >=100) && (stat < (100+Stats.RESIST_TYPES)))
+                    {
+                        mystats.setStat(stat, dis.readShort());
+                        pos+=2;
+                    }
+                    else if ((stat>=Stats.CS_STAT_SKILLINFO)&&(stat<250))
+                    {
+                        Skill sk = Stats.getSkill(stat-Stats.CS_STAT_SKILLINFO);
+                        sk.setLevel(dis.readUnsignedByte());
+                        sk.setExperience(dis.readLong());
+                        pos+=9;
+                    }
+                    break;
+            }
+        }
+        CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(),mystats);
+        Iterator it = mylisteners_stats.iterator();
+        while (it.hasNext())
+        {
+            ((CrossfireStatsListener)it.next()).CommandStatsReceived(evt);
+        }
+    }
+}

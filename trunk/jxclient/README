@@ -1,0 +1,26 @@
+Requires:
+---------
+- Sun JVM 1.5.x or higher;
+- At least 384MB of memory;
+
+Recommended:
+------------
+- Sun JVM 1.6.0 or higher (Mustang b60 and onwards);
+- Driver-level support for hardware accelerated operations
+  (Either OpenGL or DirectX, depending on your system).
+
+Fullscreen support:
+-------------------
+The JXClient uses the fullscreen support provided by the JVM.
+Note that under Linux with a Sun JXM 1.5, fullscreen mode is
+not supported.
+Although the client will switch to windowed mode if real
+fullscreen is not available, it is important to note that 
+accelerated support will probably end up being disabled. If
+you are using Linux, I strongly encourage you to try running
+the "Mustang" 1.6 JVM instead (Mustang is available on 
+http://java.sun.com -->Early access downloads).
+To check if the graphical operations are accelerated, you can
+add "-Dsun.java2d.trace=log,timestamp,count,out:java2d.log" to
+your JVM command line, run the client, then check the content
+of java2d.log.
