@@ -756,20 +756,18 @@ x 2
 y 4
 elevation 3812
 end
+arch shrine_east_r
+slaying /azumauindo/misc/shrine1
+hp 9
+sp 15
+x 2
+y 4
+end
 arch flagstone
 face snow.111
 x 2
 y 5
 elevation 3812
-end
-arch house2_east
-name ichidou
-name_pl ichidou
-slaying /azumauindo/misc/shrine1
-hp 9
-sp 15
-x 2
-y 5
 end
 arch dungeon_magic
 x 2
