@@ -164,6 +164,10 @@ arch istone
 x 1
 y 5
 end
+arch cold_dragon
+x 1
+y 5
+end
 arch istone
 x 1
 y 6
@@ -302,11 +306,23 @@ arch istone
 x 2
 y 7
 end
+arch acid_pool
+x 2
+y 7
+end
 arch istone
 x 2
 y 8
 end
+arch acid_pool
+x 2
+y 8
+end
 arch istone
+x 2
+y 9
+end
+arch acid_pool
 x 2
 y 9
 end
@@ -428,11 +444,19 @@ arch istone
 x 3
 y 3
 end
+arch dire_wolf_sire
+x 3
+y 3
+end
 arch istone
 x 3
 y 4
 end
 arch istone
+x 3
+y 5
+end
+arch chinese_dragon
 x 3
 y 5
 end
@@ -570,6 +594,10 @@ arch istone
 x 4
 y 4
 end
+arch acid_sphere
+x 4
+y 4
+end
 arch istone
 x 4
 y 5
@@ -582,6 +610,10 @@ arch istone
 x 4
 y 7
 end
+arch cold_dragon
+x 4
+y 7
+end
 arch istone
 x 4
 y 8
@@ -591,6 +623,10 @@ x 4
 y 9
 end
 arch istone
+x 4
+y 10
+end
+arch dire_wolf_sire
 x 4
 y 10
 end
@@ -686,6 +722,10 @@ arch istone
 x 5
 y 2
 end
+arch cold_dragon
+x 5
+y 2
+end
 arch istone
 x 5
 y 3
@@ -715,6 +755,10 @@ x 5
 y 9
 end
 arch istone
+x 5
+y 10
+end
+arch chinese_dragon
 x 5
 y 10
 end
@@ -812,11 +856,19 @@ arch istone
 x 6
 y 4
 end
+arch chinese_dragon
+x 6
+y 4
+end
 arch istone
 x 6
 y 5
 end
 arch istone
+x 6
+y 6
+end
+arch dire_wolf_sire
 x 6
 y 6
 end
@@ -829,6 +881,13 @@ x 6
 y 8
 end
 arch istone
+x 6
+y 9
+end
+arch stair_down_2
+slaying castleb3
+hp 57
+sp 40
 x 6
 y 9
 end
@@ -976,11 +1035,19 @@ arch istone
 x 7
 y 12
 end
+arch dire_wolf_sire
+x 7
+y 12
+end
 arch istone
 x 7
 y 13
 end
 arch istone
+x 7
+y 14
+end
+arch cold_dragon
 x 7
 y 14
 end
@@ -1159,6 +1226,10 @@ x 8
 y 7
 end
 arch istone
+x 8
+y 8
+end
+arch cold_dragon
 x 8
 y 8
 end
@@ -1382,6 +1453,10 @@ arch istone
 x 9
 y 10
 end
+arch acid_sphere
+x 9
+y 10
+end
 arch istone
 x 9
 y 11
@@ -1399,6 +1474,10 @@ x 9
 y 14
 end
 arch istone
+x 9
+y 15
+end
+arch acid_sphere
 x 9
 y 15
 end
@@ -1574,6 +1653,10 @@ arch istone
 x 10
 y 7
 end
+arch acid_pool
+x 10
+y 7
+end
 arch istone
 x 10
 y 8
@@ -1598,6 +1681,10 @@ arch istone
 x 10
 y 13
 end
+arch chinese_dragon
+x 10
+y 13
+end
 arch istone
 x 10
 y 14
@@ -1618,6 +1705,10 @@ arch istone
 x 10
 y 18
 end
+arch dire_wolf_sire
+x 10
+y 18
+end
 arch istone
 x 10
 y 19
@@ -1634,11 +1725,23 @@ arch istone
 x 10
 y 22
 end
+arch acid_pool
+x 10
+y 22
+end
 arch istone
 x 10
 y 23
 end
+arch acid_pool
+x 10
+y 23
+end
 arch istone
+x 10
+y 24
+end
+arch acid_pool
 x 10
 y 24
 end
@@ -1797,6 +1900,10 @@ arch istone
 x 11
 y 7
 end
+arch acid_pool
+x 11
+y 7
+end
 arch istone
 x 11
 y 8
@@ -1842,6 +1949,10 @@ x 11
 y 18
 end
 arch istone
+x 11
+y 19
+end
+arch cold_dragon
 x 11
 y 19
 end
@@ -2012,6 +2123,10 @@ arch istone
 x 12
 y 7
 end
+arch acid_pool
+x 12
+y 7
+end
 arch istone
 x 12
 y 8
@@ -2025,6 +2140,10 @@ x 12
 y 10
 end
 arch istone
+x 12
+y 11
+end
+arch cold_dragon
 x 12
 y 11
 end
@@ -2076,7 +2195,15 @@ arch istone
 x 12
 y 23
 end
+arch dire_wolf_sire
+x 12
+y 23
+end
 arch istone
+x 12
+y 24
+end
+arch chinese_dragon
 x 12
 y 24
 end
@@ -2258,6 +2385,10 @@ arch istone
 x 13
 y 16
 end
+arch acid_sphere
+x 13
+y 16
+end
 arch istone
 x 13
 y 17
@@ -2303,6 +2434,10 @@ x 13
 y 27
 end
 arch istone
+x 13
+y 28
+end
+arch cold_dragon
 x 13
 y 28
 end
@@ -2454,6 +2589,10 @@ arch istone
 x 14
 y 14
 end
+arch cold_dragon
+x 14
+y 14
+end
 arch istone
 x 14
 y 15
@@ -2463,6 +2602,10 @@ x 14
 y 16
 end
 arch istone
+x 14
+y 17
+end
+arch chinese_dragon
 x 14
 y 17
 end
@@ -2479,6 +2622,10 @@ x 14
 y 20
 end
 arch istone
+x 14
+y 21
+end
+arch acid_sphere
 x 14
 y 21
 end
@@ -2672,6 +2819,10 @@ arch istone
 x 15
 y 16
 end
+arch dire_wolf_sire
+x 15
+y 16
+end
 arch istone
 x 15
 y 17
@@ -2720,11 +2871,19 @@ arch istone
 x 15
 y 28
 end
+arch chinese_dragon
+x 15
+y 28
+end
 arch istone
 x 15
 y 29
 end
 arch istone
+x 15
+y 30
+end
+arch acid_sphere
 x 15
 y 30
 end
@@ -2910,6 +3069,10 @@ arch istone
 x 16
 y 21
 end
+arch cold_dragon
+x 16
+y 21
+end
 arch istone
 x 16
 y 22
@@ -2923,6 +3086,10 @@ x 16
 y 24
 end
 arch istone
+x 16
+y 25
+end
+arch acid_sphere
 x 16
 y 25
 end
@@ -3356,7 +3523,15 @@ arch istone
 x 18
 y 27
 end
+arch cold_dragon
+x 18
+y 27
+end
 arch istone
+x 18
+y 28
+end
+arch dire_wolf_sire
 x 18
 y 28
 end
@@ -3368,7 +3543,15 @@ arch istone
 x 18
 y 30
 end
+arch acid_sphere
+x 18
+y 30
+end
 arch istone
+x 18
+y 31
+end
+arch chinese_dragon
 x 18
 y 31
 end
@@ -3511,6 +3694,10 @@ x 19
 y 33
 end
 arch istone
+x 19
+y 34
+end
+arch cold_dragon
 x 19
 y 34
 end
@@ -3734,6 +3921,10 @@ arch istone
 x 21
 y 32
 end
+arch acid_sphere
+x 21
+y 32
+end
 arch istone
 x 21
 y 33
@@ -3837,6 +4028,10 @@ x 22
 y 32
 end
 arch istone
+x 22
+y 33
+end
+arch dire_wolf_sire
 x 22
 y 33
 end
@@ -3930,6 +4125,10 @@ arch istone
 x 23
 y 30
 end
+arch cold_dragon
+x 23
+y 30
+end
 arch istone
 x 23
 y 31
@@ -4031,6 +4230,10 @@ x 24
 y 31
 end
 arch istone
+x 24
+y 32
+end
+arch chinese_dragon
 x 24
 y 32
 end
@@ -4145,6 +4348,10 @@ x 25
 y 34
 end
 arch istone
+x 25
+y 35
+end
+arch cold_dragon
 x 25
 y 35
 end
@@ -4338,6 +4545,10 @@ arch istone
 x 27
 y 31
 end
+arch cold_dragon
+x 27
+y 31
+end
 arch istone
 x 27
 y 32
@@ -4346,11 +4557,19 @@ arch istone
 x 27
 y 33
 end
+arch acid_sphere
+x 27
+y 33
+end
 arch istone
 x 27
 y 34
 end
 arch istone
+x 27
+y 35
+end
+arch chinese_dragon
 x 27
 y 35
 end
@@ -4561,6 +4780,10 @@ x 29
 y 33
 end
 arch istone
+x 29
+y 34
+end
+arch dire_wolf_sire
 x 29
 y 34
 end
@@ -4664,6 +4887,10 @@ arch istone
 x 30
 y 33
 end
+arch acid_pool
+x 30
+y 33
+end
 arch istone
 x 30
 y 34
@@ -4681,6 +4908,10 @@ x 30
 y 37
 end
 arch istone
+x 30
+y 38
+end
+arch acid_sphere
 x 30
 y 38
 end
@@ -4762,11 +4993,19 @@ arch istone
 x 31
 y 33
 end
+arch acid_pool
+x 31
+y 33
+end
 arch istone
 x 31
 y 34
 end
 arch istone
+x 31
+y 35
+end
+arch acid_sphere
 x 31
 y 35
 end
@@ -4779,6 +5018,10 @@ x 31
 y 37
 end
 arch istone
+x 31
+y 38
+end
+arch chinese_dragon
 x 31
 y 38
 end
@@ -4879,6 +5122,10 @@ x 32
 y 32
 end
 arch istone
+x 32
+y 33
+end
+arch acid_pool
 x 32
 y 33
 end
@@ -5010,11 +5257,19 @@ arch istone
 x 33
 y 35
 end
+arch cold_dragon
+x 33
+y 35
+end
 arch istone
 x 33
 y 36
 end
 arch istone
+x 33
+y 37
+end
+arch dire_wolf_sire
 x 33
 y 37
 end
@@ -5031,6 +5286,10 @@ x 33
 y 40
 end
 arch istone
+x 33
+y 41
+end
+arch cold_dragon
 x 33
 y 41
 end
@@ -5266,6 +5525,10 @@ arch istone
 x 35
 y 39
 end
+arch acid_sphere
+x 35
+y 39
+end
 arch istone
 x 35
 y 40
@@ -5283,6 +5546,10 @@ x 35
 y 43
 end
 arch istone
+x 35
+y 44
+end
+arch acid_pool
 x 35
 y 44
 end
@@ -5399,6 +5666,10 @@ x 36
 y 43
 end
 arch istone
+x 36
+y 44
+end
+arch acid_pool
 x 36
 y 44
 end
@@ -5502,6 +5773,10 @@ arch istone
 x 37
 y 44
 end
+arch acid_pool
+x 37
+y 44
+end
 arch istone
 x 37
 y 45
@@ -5578,6 +5853,10 @@ arch istone
 x 38
 y 38
 end
+arch chinese_dragon
+x 38
+y 38
+end
 arch istone
 x 38
 y 39
@@ -5591,6 +5870,10 @@ x 38
 y 41
 end
 arch istone
+x 38
+y 42
+end
+arch acid_sphere
 x 38
 y 42
 end
@@ -5685,6 +5968,10 @@ x 39
 y 41
 end
 arch istone
+x 39
+y 42
+end
+arch dire_wolf_sire
 x 39
 y 42
 end
@@ -5882,11 +6169,19 @@ arch istone
 x 41
 y 41
 end
+arch acid_sphere
+x 41
+y 41
+end
 arch istone
 x 41
 y 42
 end
 arch istone
+x 41
+y 43
+end
+arch chinese_dragon
 x 41
 y 43
 end
@@ -5965,6 +6260,10 @@ x 42
 y 38
 end
 arch istone
+x 42
+y 39
+end
+arch cold_dragon
 x 42
 y 39
 end
@@ -6168,11 +6467,19 @@ arch istone
 x 44
 y 42
 end
+arch cold_dragon
+x 44
+y 42
+end
 arch istone
 x 44
 y 43
 end
 arch istone
+x 44
+y 44
+end
+arch acid_sphere
 x 44
 y 44
 end
@@ -6359,6 +6666,10 @@ x 46
 y 41
 end
 arch istone
+x 46
+y 42
+end
+arch chinese_dragon
 x 46
 y 42
 end
@@ -6480,6 +6791,10 @@ arch istone
 x 47
 y 45
 end
+arch cold_dragon
+x 47
+y 45
+end
 arch istone
 x 47
 y 46
@@ -6699,6 +7014,10 @@ x 49
 y 43
 end
 arch istone
+x 49
+y 44
+end
+arch dire_wolf_sire
 x 49
 y 44
 end
@@ -6816,6 +7135,10 @@ arch istone
 x 50
 y 43
 end
+arch acid_sphere
+x 50
+y 43
+end
 arch istone
 x 50
 y 44
@@ -6940,6 +7263,10 @@ arch istone
 x 51
 y 45
 end
+arch chinese_dragon
+x 51
+y 45
+end
 arch istone
 x 51
 y 46
@@ -7025,6 +7352,10 @@ x 52
 y 41
 end
 arch istone
+x 52
+y 42
+end
+arch cold_dragon
 x 52
 y 42
 end
@@ -7138,6 +7469,10 @@ arch istone
 x 53
 y 45
 end
+arch acid_sphere
+x 53
+y 45
+end
 arch istone
 x 53
 y 46
@@ -7244,6 +7579,10 @@ arch istone
 x 54
 y 48
 end
+arch cold_dragon
+x 54
+y 48
+end
 arch istone
 x 54
 y 49
@@ -7305,6 +7644,10 @@ x 55
 y 41
 end
 arch istone
+x 55
+y 42
+end
+arch acid_pool
 x 55
 y 42
 end
@@ -7396,6 +7739,10 @@ arch istone
 x 56
 y 42
 end
+arch acid_pool
+x 56
+y 42
+end
 arch istone
 x 56
 y 43
@@ -7404,11 +7751,19 @@ arch istone
 x 56
 y 44
 end
+arch acid_sphere
+x 56
+y 44
+end
 arch istone
 x 56
 y 45
 end
 arch istone
+x 56
+y 46
+end
+arch dire_wolf_sire
 x 56
 y 46
 end
@@ -7484,11 +7839,19 @@ arch istone
 x 57
 y 42
 end
+arch acid_pool
+x 57
+y 42
+end
 arch istone
 x 57
 y 43
 end
 arch istone
+x 57
+y 44
+end
+arch chinese_dragon
 x 57
 y 44
 end
@@ -7681,6 +8044,10 @@ x 59
 y 48
 end
 arch istone
+x 59
+y 49
+end
+arch acid_pool
 x 59
 y 49
 end
@@ -7770,11 +8137,19 @@ arch istone
 x 60
 y 47
 end
+arch acid_sphere
+x 60
+y 47
+end
 arch istone
 x 60
 y 48
 end
 arch istone
+x 60
+y 49
+end
+arch acid_pool
 x 60
 y 49
 end
@@ -7885,6 +8260,10 @@ x 61
 y 48
 end
 arch istone
+x 61
+y 49
+end
+arch acid_pool
 x 61
 y 49
 end
@@ -8038,11 +8417,19 @@ arch istone
 x 62
 y 44
 end
+arch cold_dragon
+x 62
+y 44
+end
 arch istone
 x 62
 y 45
 end
 arch istone
+x 62
+y 46
+end
+arch chinese_dragon
 x 62
 y 46
 end
@@ -8276,6 +8663,10 @@ arch istone
 x 63
 y 48
 end
+arch dire_wolf_sire
+x 63
+y 48
+end
 arch istone
 x 63
 y 49
@@ -8285,6 +8676,10 @@ x 63
 y 50
 end
 arch istone
+x 63
+y 51
+end
+arch cold_dragon
 x 63
 y 51
 end
@@ -8482,6 +8877,10 @@ arch istone
 x 64
 y 52
 end
+arch acid_sphere
+x 64
+y 52
+end
 arch istone
 x 64
 y 53
@@ -8499,6 +8898,10 @@ x 64
 y 56
 end
 arch istone
+x 64
+y 57
+end
+arch cold_dragon
 x 64
 y 57
 end
@@ -8624,6 +9027,10 @@ arch istone
 x 65
 y 47
 end
+arch acid_sphere
+x 65
+y 47
+end
 arch istone
 x 65
 y 48
@@ -8633,6 +9040,10 @@ x 65
 y 49
 end
 arch istone
+x 65
+y 50
+end
+arch chinese_dragon
 x 65
 y 50
 end
@@ -8656,6 +9067,10 @@ arch istone
 x 65
 y 55
 end
+arch chinese_dragon
+x 65
+y 55
+end
 arch istone
 x 65
 y 56
@@ -8669,6 +9084,10 @@ x 65
 y 58
 end
 arch istone
+x 65
+y 59
+end
+arch cold_dragon
 x 65
 y 59
 end
@@ -8804,6 +9223,10 @@ arch istone
 x 66
 y 53
 end
+arch dire_wolf_sire
+x 66
+y 53
+end
 arch istone
 x 66
 y 54
@@ -8837,6 +9260,10 @@ x 66
 y 61
 end
 arch istone
+x 66
+y 62
+end
+arch acid_pool
 x 66
 y 62
 end
@@ -8944,6 +9371,10 @@ arch istone
 x 67
 y 48
 end
+arch cold_dragon
+x 67
+y 48
+end
 arch istone
 x 67
 y 49
@@ -8988,11 +9419,19 @@ arch istone
 x 67
 y 59
 end
+arch dire_wolf_sire
+x 67
+y 59
+end
 arch istone
 x 67
 y 60
 end
 arch istone
+x 67
+y 61
+end
+arch acid_sphere
 x 67
 y 61
 end
@@ -9004,7 +9443,15 @@ arch istone
 x 67
 y 63
 end
+arch acid_pool
+x 67
+y 63
+end
 arch istone
+x 67
+y 64
+end
+arch acid_pool
 x 67
 y 64
 end
@@ -9154,6 +9601,10 @@ arch istone
 x 68
 y 54
 end
+arch cold_dragon
+x 68
+y 54
+end
 arch istone
 x 68
 y 55
@@ -9163,6 +9614,10 @@ x 68
 y 56
 end
 arch istone
+x 68
+y 57
+end
+arch acid_sphere
 x 68
 y 57
 end
@@ -9183,6 +9638,10 @@ x 68
 y 61
 end
 arch istone
+x 68
+y 62
+end
+arch chinese_dragon
 x 68
 y 62
 end
@@ -9380,11 +9839,23 @@ arch istone
 x 69
 y 55
 end
+arch acid_pool
+x 69
+y 55
+end
 arch istone
 x 69
 y 56
 end
+arch acid_pool
+x 69
+y 56
+end
 arch istone
+x 69
+y 57
+end
+arch acid_pool
 x 69
 y 57
 end
@@ -9649,6 +10120,10 @@ x 70
 y 64
 end
 arch istone
+x 70
+y 65
+end
+arch acid_sphere
 x 70
 y 65
 end
@@ -9844,6 +10319,10 @@ arch istone
 x 71
 y 63
 end
+arch cold_dragon
+x 71
+y 63
+end
 arch istone
 x 71
 y 64
@@ -9861,6 +10340,10 @@ x 71
 y 67
 end
 arch istone
+x 71
+y 68
+end
+arch cold_dragon
 x 71
 y 68
 end
@@ -10064,6 +10547,10 @@ arch istone
 x 72
 y 69
 end
+arch dire_wolf_sire
+x 72
+y 69
+end
 arch istone
 x 72
 y 70
@@ -10260,6 +10747,10 @@ arch istone
 x 73
 y 72
 end
+arch cold_dragon
+x 73
+y 72
+end
 arch istone
 x 73
 y 73
@@ -10456,6 +10947,10 @@ arch istone
 x 74
 y 73
 end
+arch acid_sphere
+x 74
+y 73
+end
 arch istone
 x 74
 y 74
@@ -10674,6 +11169,10 @@ arch istone
 x 75
 y 77
 end
+arch chinese_dragon
+x 75
+y 77
+end
 arch istone
 x 75
 y 78
@@ -10782,6 +11281,10 @@ arch istone
 x 76
 y 66
 end
+arch acid_sphere
+x 76
+y 66
+end
 arch istone
 x 76
 y 67
@@ -10842,6 +11345,10 @@ arch istone
 x 76
 y 75
 end
+arch cold_dragon
+x 76
+y 75
+end
 arch istone
 x 76
 y 76
@@ -10862,7 +11369,15 @@ arch istone
 x 76
 y 80
 end
+arch cold_dragon
+x 76
+y 80
+end
 arch istone
+x 76
+y 81
+end
+arch acid_sphere
 x 76
 y 81
 end
@@ -10966,6 +11481,10 @@ arch istone
 x 77
 y 68
 end
+arch cold_dragon
+x 77
+y 68
+end
 arch istone
 x 77
 y 69
@@ -11038,6 +11557,10 @@ arch istone
 x 77
 y 79
 end
+arch dire_wolf_sire
+x 77
+y 79
+end
 arch istone
 x 77
 y 80
@@ -11050,7 +11573,15 @@ arch istone
 x 77
 y 82
 end
+arch acid_pool
+x 77
+y 82
+end
 arch istone
+x 77
+y 83
+end
+arch acid_pool
 x 77
 y 83
 end
@@ -11162,6 +11693,10 @@ arch istone
 x 78
 y 70
 end
+arch acid_sphere
+x 78
+y 70
+end
 arch istone
 x 78
 y 71
@@ -11248,11 +11783,19 @@ arch istone
 x 78
 y 81
 end
+arch chinese_dragon
+x 78
+y 81
+end
 arch istone
 x 78
 y 82
 end
 arch istone
+x 78
+y 83
+end
+arch acid_pool
 x 78
 y 83
 end
@@ -11570,6 +12113,10 @@ arch istone
 x 80
 y 71
 end
+arch dire_wolf_sire
+x 80
+y 71
+end
 arch istone
 x 80
 y 72
@@ -11642,6 +12189,10 @@ arch istone
 x 80
 y 83
 end
+arch cold_dragon
+x 80
+y 83
+end
 arch istone
 x 80
 y 84
@@ -11718,6 +12269,10 @@ arch istone
 x 81
 y 72
 end
+arch cold_dragon
+x 81
+y 72
+end
 arch istone
 x 81
 y 73
@@ -11734,6 +12289,10 @@ arch istone
 x 81
 y 76
 end
+arch cold_dragon
+x 81
+y 76
+end
 arch istone
 x 81
 y 77
@@ -11742,7 +12301,15 @@ arch istone
 x 81
 y 78
 end
+arch acid_sphere
+x 81
+y 78
+end
 arch istone
+x 81
+y 79
+end
+arch cold_dragon
 x 81
 y 79
 end
@@ -11751,6 +12318,10 @@ x 81
 y 80
 end
 arch istone
+x 81
+y 81
+end
+arch acid_sphere
 x 81
 y 81
 end
@@ -11767,6 +12338,10 @@ x 81
 y 84
 end
 arch istone
+x 81
+y 85
+end
+arch acid_sphere
 x 81
 y 85
 end
@@ -11886,6 +12461,10 @@ arch istone
 x 82
 y 79
 end
+arch dire_wolf_sire
+x 82
+y 79
+end
 arch istone
 x 82
 y 80
@@ -11902,6 +12481,10 @@ arch istone
 x 82
 y 83
 end
+arch chinese_dragon
+x 82
+y 83
+end
 arch istone
 x 82
 y 84
@@ -11911,6 +12494,10 @@ x 82
 y 85
 end
 arch istone
+x 82
+y 86
+end
+arch cold_dragon
 x 82
 y 86
 end
@@ -12102,6 +12689,10 @@ arch istone
 x 83
 y 81
 end
+arch acid_sphere
+x 83
+y 81
+end
 arch istone
 x 83
 y 82
@@ -12119,6 +12710,10 @@ x 83
 y 85
 end
 arch istone
+x 83
+y 86
+end
+arch acid_sphere
 x 83
 y 86
 end
@@ -12286,6 +12881,10 @@ arch istone
 x 84
 y 82
 end
+arch cold_dragon
+x 84
+y 82
+end
 arch istone
 x 84
 y 83
@@ -12500,6 +13099,10 @@ arch istone
 x 85
 y 85
 end
+arch dire_wolf_sire
+x 85
+y 85
+end
 arch istone
 x 85
 y 86
@@ -12508,7 +13111,15 @@ arch istone
 x 85
 y 87
 end
+arch cold_dragon
+x 85
+y 87
+end
 arch istone
+x 85
+y 88
+end
+arch dire_wolf_sire
 x 85
 y 88
 end
@@ -12532,6 +13143,10 @@ arch istone
 x 85
 y 93
 end
+arch dire_wolf_sire
+x 85
+y 93
+end
 arch istone
 x 85
 y 94
@@ -12544,11 +13159,23 @@ arch istone
 x 85
 y 96
 end
+arch acid_pool
+x 85
+y 96
+end
 arch istone
 x 85
 y 97
 end
+arch acid_pool
+x 85
+y 97
+end
 arch istone
+x 85
+y 98
+end
+arch acid_pool
 x 85
 y 98
 end
@@ -12674,6 +13301,10 @@ arch istone
 x 86
 y 84
 end
+arch acid_pool
+x 86
+y 84
+end
 arch istone
 x 86
 y 85
@@ -12690,11 +13321,19 @@ arch istone
 x 86
 y 88
 end
+arch acid_sphere
+x 86
+y 88
+end
 arch istone
 x 86
 y 89
 end
 arch istone
+x 86
+y 90
+end
+arch chinese_dragon
 x 86
 y 90
 end
@@ -12706,11 +13345,19 @@ arch istone
 x 86
 y 92
 end
+arch acid_sphere
+x 86
+y 92
+end
 arch istone
 x 86
 y 93
 end
 arch istone
+x 86
+y 94
+end
+arch cold_dragon
 x 86
 y 94
 end
@@ -12723,6 +13370,10 @@ x 86
 y 96
 end
 arch istone
+x 86
+y 97
+end
+arch dire_wolf_sire
 x 86
 y 97
 end
@@ -12900,7 +13551,15 @@ arch istone
 x 87
 y 85
 end
+arch acid_pool
+x 87
+y 85
+end
 arch istone
+x 87
+y 86
+end
+arch acid_pool
 x 87
 y 86
 end
@@ -12944,6 +13603,10 @@ arch istone
 x 87
 y 96
 end
+arch acid_sphere
+x 87
+y 96
+end
 arch istone
 x 87
 y 97
@@ -12953,6 +13616,10 @@ x 87
 y 98
 end
 arch istone
+x 87
+y 99
+end
+arch cold_dragon
 x 87
 y 99
 end
@@ -13156,6 +13823,10 @@ arch istone
 x 88
 y 93
 end
+arch chinese_dragon
+x 88
+y 93
+end
 arch istone
 x 88
 y 94
@@ -13164,11 +13835,19 @@ arch istone
 x 88
 y 95
 end
+arch dire_wolf_sire
+x 88
+y 95
+end
 arch istone
 x 88
 y 96
 end
 arch istone
+x 88
+y 97
+end
+arch chinese_dragon
 x 88
 y 97
 end
@@ -13184,6 +13863,10 @@ arch istone
 x 88
 y 100
 end
+arch acid_sphere
+x 88
+y 100
+end
 arch istone
 x 88
 y 101
@@ -13196,11 +13879,23 @@ arch istone
 x 88
 y 103
 end
+arch acid_pool
+x 88
+y 103
+end
 arch istone
 x 88
 y 104
 end
+arch acid_pool
+x 88
+y 104
+end
 arch istone
+x 88
+y 105
+end
+arch acid_pool
 x 88
 y 105
 end
@@ -13374,6 +14069,10 @@ arch istone
 x 89
 y 91
 end
+arch dire_wolf_sire
+x 89
+y 91
+end
 arch istone
 x 89
 y 92
@@ -13406,6 +14105,10 @@ arch istone
 x 89
 y 99
 end
+arch dire_wolf_sire
+x 89
+y 99
+end
 arch istone
 x 89
 y 100
@@ -13415,6 +14118,10 @@ x 89
 y 101
 end
 arch istone
+x 89
+y 102
+end
+arch chinese_dragon
 x 89
 y 102
 end
@@ -13528,6 +14235,10 @@ arch istone
 x 90
 y 92
 end
+arch cold_dragon
+x 90
+y 92
+end
 arch istone
 x 90
 y 93
@@ -13541,6 +14252,10 @@ x 90
 y 95
 end
 arch istone
+x 90
+y 96
+end
+arch cold_dragon
 x 90
 y 96
 end
@@ -13560,6 +14275,10 @@ arch istone
 x 90
 y 100
 end
+arch acid_sphere
+x 90
+y 100
+end
 arch istone
 x 90
 y 101
@@ -13573,6 +14292,10 @@ x 90
 y 103
 end
 arch istone
+x 90
+y 104
+end
+arch dire_wolf_sire
 x 90
 y 104
 end
@@ -13700,7 +14423,15 @@ arch istone
 x 91
 y 92
 end
+arch acid_sphere
+x 91
+y 92
+end
 arch istone
+x 91
+y 93
+end
+arch chinese_dragon
 x 91
 y 93
 end
@@ -13720,6 +14451,10 @@ arch istone
 x 91
 y 97
 end
+arch acid_sphere
+x 91
+y 97
+end
 arch istone
 x 91
 y 98
@@ -13736,6 +14471,10 @@ arch istone
 x 91
 y 101
 end
+arch cold_dragon
+x 91
+y 101
+end
 arch istone
 x 91
 y 102
@@ -13748,11 +14487,19 @@ arch istone
 x 91
 y 104
 end
+arch acid_sphere
+x 91
+y 104
+end
 arch istone
 x 91
 y 105
 end
 arch istone
+x 91
+y 106
+end
+arch cold_dragon
 x 91
 y 106
 end
@@ -13874,6 +14621,10 @@ arch istone
 x 92
 y 95
 end
+arch dire_wolf_sire
+x 92
+y 95
+end
 arch istone
 x 92
 y 96
@@ -13886,6 +14637,10 @@ arch istone
 x 92
 y 98
 end
+arch chinese_dragon
+x 92
+y 98
+end
 arch istone
 x 92
 y 99
@@ -13895,6 +14650,10 @@ x 92
 y 100
 end
 arch istone
+x 92
+y 101
+end
+arch dire_wolf_sire
 x 92
 y 101
 end
@@ -13923,6 +14682,10 @@ x 92
 y 107
 end
 arch istone
+x 92
+y 108
+end
+arch cold_dragon
 x 92
 y 108
 end
@@ -14026,6 +14789,10 @@ arch istone
 x 93
 y 93
 end
+arch cold_dragon
+x 93
+y 93
+end
 arch istone
 x 93
 y 94
@@ -14034,7 +14801,15 @@ arch istone
 x 93
 y 95
 end
+arch acid_pool
+x 93
+y 95
+end
 arch istone
+x 93
+y 96
+end
+arch acid_pool
 x 93
 y 96
 end
@@ -14062,7 +14837,15 @@ arch istone
 x 93
 y 102
 end
+arch acid_sphere
+x 93
+y 102
+end
 arch istone
+x 93
+y 103
+end
+arch chinese_dragon
 x 93
 y 103
 end
@@ -14079,6 +14862,10 @@ x 93
 y 106
 end
 arch istone
+x 93
+y 107
+end
+arch acid_sphere
 x 93
 y 107
 end
@@ -14220,6 +15007,10 @@ arch istone
 x 94
 y 97
 end
+arch acid_pool
+x 94
+y 97
+end
 arch istone
 x 94
 y 98
@@ -14229,6 +15020,10 @@ x 94
 y 99
 end
 arch istone
+x 94
+y 100
+end
+arch acid_sphere
 x 94
 y 100
 end
@@ -14256,6 +15051,10 @@ arch istone
 x 94
 y 106
 end
+arch dire_wolf_sire
+x 94
+y 106
+end
 arch istone
 x 94
 y 107
@@ -14265,6 +15064,10 @@ x 94
 y 108
 end
 arch istone
+x 94
+y 109
+end
+arch chinese_dragon
 x 94
 y 109
 end
@@ -14422,6 +15225,10 @@ arch istone
 x 95
 y 98
 end
+arch acid_pool
+x 95
+y 98
+end
 arch istone
 x 95
 y 99
@@ -14438,6 +15245,10 @@ arch istone
 x 95
 y 102
 end
+arch cold_dragon
+x 95
+y 102
+end
 arch istone
 x 95
 y 103
@@ -14447,6 +15258,10 @@ x 95
 y 104
 end
 arch istone
+x 95
+y 105
+end
+arch acid_sphere
 x 95
 y 105
 end
@@ -14682,6 +15497,10 @@ arch istone
 x 96
 y 103
 end
+arch dire_wolf_sire
+x 96
+y 103
+end
 arch istone
 x 96
 y 104
@@ -14690,11 +15509,19 @@ arch istone
 x 96
 y 105
 end
+arch chinese_dragon
+x 96
+y 105
+end
 arch istone
 x 96
 y 106
 end
 arch istone
+x 96
+y 107
+end
+arch cold_dragon
 x 96
 y 107
 end
@@ -14707,6 +15534,10 @@ x 96
 y 109
 end
 arch istone
+x 96
+y 110
+end
+arch acid_sphere
 x 96
 y 110
 end
@@ -14902,6 +15733,10 @@ arch istone
 x 97
 y 107
 end
+arch acid_sphere
+x 97
+y 107
+end
 arch istone
 x 97
 y 108
@@ -14919,6 +15754,10 @@ x 97
 y 111
 end
 arch istone
+x 97
+y 112
+end
+arch cold_dragon
 x 97
 y 112
 end
@@ -15114,6 +15953,10 @@ arch istone
 x 98
 y 110
 end
+arch dire_wolf_sire
+x 98
+y 110
+end
 arch istone
 x 98
 y 111
@@ -15130,11 +15973,19 @@ arch istone
 x 98
 y 114
 end
+arch acid_sphere
+x 98
+y 114
+end
 arch istone
 x 98
 y 115
 end
 arch istone
+x 98
+y 116
+end
+arch cold_dragon
 x 98
 y 116
 end
@@ -15306,11 +16157,23 @@ arch istone
 x 99
 y 111
 end
+arch acid_pool
+x 99
+y 111
+end
 arch istone
 x 99
 y 112
 end
+arch acid_pool
+x 99
+y 112
+end
 arch istone
+x 99
+y 113
+end
+arch acid_pool
 x 99
 y 113
 end
@@ -15482,6 +16345,10 @@ arch istone
 x 100
 y 115
 end
+arch dire_wolf_sire
+x 100
+y 115
+end
 arch istone
 x 100
 y 116
@@ -15491,6 +16358,10 @@ x 100
 y 117
 end
 arch istone
+x 100
+y 118
+end
+arch acid_pool
 x 100
 y 118
 end
@@ -15626,6 +16497,10 @@ arch istone
 x 101
 y 115
 end
+arch chinese_dragon
+x 101
+y 115
+end
 arch istone
 x 101
 y 116
@@ -15635,6 +16510,10 @@ x 101
 y 117
 end
 arch istone
+x 101
+y 118
+end
+arch acid_pool
 x 101
 y 118
 end
@@ -15779,6 +16658,10 @@ x 102
 y 117
 end
 arch istone
+x 102
+y 118
+end
+arch acid_pool
 x 102
 y 118
 end
@@ -16049,6 +16932,10 @@ x 104
 y 116
 end
 arch istone
+x 104
+y 117
+end
+arch cold_dragon
 x 104
 y 117
 end
@@ -16189,6 +17076,10 @@ x 105
 y 118
 end
 arch istone
+x 105
+y 119
+end
+arch dire_wolf_sire
 x 105
 y 119
 end
@@ -16315,6 +17206,10 @@ x 106
 y 120
 end
 arch istone
+x 106
+y 121
+end
+arch cold_dragon
 x 106
 y 121
 end
@@ -16521,6 +17416,10 @@ x 108
 y 122
 end
 arch istone
+x 108
+y 123
+end
+arch dire_wolf_sire
 x 108
 y 123
 end
