@@ -5,9 +5,10 @@ Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Wed Apr 12 22:38:04 2000
 endmsg
-x 14
-y 12
-level 7
+width 14
+height 12
+difficulty 7
+outdoor 1
 end
 arch mountain
 end
@@ -28,6 +29,12 @@ y 9
 end
 arch small_stones
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+y 11
 end
 arch small_stones
 y 11
@@ -47,7 +54,7 @@ arch small_stones
 x 1
 y 7
 end
-arch small_stones
+arch pstone_2
 x 1
 y 8
 end
@@ -59,7 +66,14 @@ arch small_stones
 x 1
 y 10
 end
-arch small_stones
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 1
+y 11
+end
+arch pstone_2
 x 1
 y 11
 end
@@ -87,9 +101,16 @@ arch small_stones
 x 2
 y 9
 end
-arch small_stones
+arch pstone_2
 x 2
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 2
+y 11
 end
 arch small_stones
 x 2
@@ -107,11 +128,11 @@ arch small_stones
 x 3
 y 6
 end
-arch small_stones
+arch pstone_2
 x 3
 y 7
 end
-arch small_stones
+arch pstone_2
 x 3
 y 8
 end
@@ -122,6 +143,13 @@ end
 arch small_stones
 x 3
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 3
+y 11
 end
 arch small_stones
 x 3
@@ -146,13 +174,20 @@ arch small_stones
 x 4
 y 8
 end
-arch small_stones
+arch pstone_2
 x 4
 y 9
 end
 arch small_stones
 x 4
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 4
+y 11
 end
 arch small_stones
 x 4
@@ -175,9 +210,9 @@ y 7
 end
 arch small_troll
 name troll guard
+unaggressive 1
 x 5
 y 7
-unaggressive 1
 end
 arch small_stones
 x 5
@@ -191,7 +226,14 @@ arch small_stones
 x 5
 y 10
 end
-arch small_stones
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 5
+y 11
+end
+arch pstone_2
 x 5
 y 11
 end
@@ -216,21 +258,18 @@ y 6
 end
 arch small_troll
 name troll guard
+unaggressive 1
 x 6
 y 6
-unaggressive 1
 end
 arch small_stones
 x 6
 y 7
 end
-arch firebolt
-name campfire
+arch campfire
+glow_radius 4
 x 6
 y 7
-type 0
-no_pass 1
-flying 0
 end
 arch small_stones
 x 6
@@ -238,9 +277,9 @@ y 8
 end
 arch small_troll
 name troll guard
+unaggressive 1
 x 6
 y 8
-unaggressive 1
 end
 arch small_stones
 x 6
@@ -249,6 +288,13 @@ end
 arch small_stones
 x 6
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 6
+y 11
 end
 arch small_stones
 x 6
@@ -272,21 +318,28 @@ y 7
 end
 arch small_troll
 name troll guard
+unaggressive 1
 x 7
 y 7
-unaggressive 1
 end
 arch small_stones
 x 7
 y 8
 end
-arch small_stones
+arch pstone_2
 x 7
 y 9
 end
 arch small_stones
 x 7
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 7
+y 11
 end
 arch small_stones
 x 7
@@ -307,11 +360,11 @@ arch small_stones
 x 8
 y 7
 end
-arch small_stones
+arch pstone_2
 x 8
 y 8
 end
-arch small_stones
+arch pstone_2
 x 8
 y 9
 end
@@ -319,14 +372,14 @@ arch small_stones
 x 8
 y 10
 end
-arch small_stones
-x 8
-y 11
-end
 arch exit
 slaying ../MainFloor
 hp 5
 sp 21
+x 8
+y 11
+end
+arch pstone_2
 x 8
 y 11
 end
@@ -357,6 +410,13 @@ arch small_stones
 x 9
 y 10
 end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 9
+y 11
+end
 arch small_stones
 x 9
 y 11
@@ -389,7 +449,14 @@ arch small_stones
 x 10
 y 10
 end
-arch small_stones
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 10
+y 11
+end
+arch pstone_2
 x 10
 y 11
 end
@@ -401,7 +468,7 @@ arch medium_stones
 x 11
 y 5
 end
-arch small_stones
+arch pstone_2
 x 11
 y 6
 end
@@ -409,7 +476,7 @@ arch small_stones
 x 11
 y 7
 end
-arch small_stones
+arch pstone_2
 x 11
 y 8
 end
@@ -420,6 +487,13 @@ end
 arch small_stones
 x 11
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 11
+y 11
 end
 arch small_stones
 x 11
@@ -448,9 +522,16 @@ arch small_stones
 x 12
 y 9
 end
-arch small_stones
+arch pstone_2
 x 12
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 12
+y 11
 end
 arch small_stones
 x 12
@@ -471,17 +552,24 @@ arch small_stones
 x 13
 y 7
 end
-arch small_stones
+arch pstone_2
 x 13
 y 8
 end
-arch small_stones
+arch pstone_2
 x 13
 y 9
 end
 arch small_stones
 x 13
 y 10
+end
+arch exit
+slaying ../MainFloor
+hp 5
+sp 21
+x 13
+y 11
 end
 arch small_stones
 x 13
