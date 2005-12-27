@@ -6478,13 +6478,12 @@ endmsg
 end
 arch key2
 name a blue crystal
-face blue_crystal.111
 slaying blue_crystal
 msg
 It pulsates a pattern attuned to some
 unknown device
 endmsg
-face pretty_crystal.111
+face blue_crystal.111
 value 60000
 end
 arch potion_heal
