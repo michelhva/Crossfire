@@ -1,5 +1,5 @@
 Object store_magic_northwest
-name mise
+name shop
 face store_magi_northwest.x11
 color_fg blue
 type 66
@@ -10,7 +10,7 @@ visibility 100
 end
 More
 Object store_magic_2_northwest
-name mise
+name shop
 face store_magi_northwest.x11
 color_fg blue
 type 66
@@ -21,7 +21,7 @@ visibility 100
 end
 More
 Object store_magic_3_northwest
-name mise
+name shop
 face store_magi_northwest.x11
 color_fg blue
 type 66
@@ -31,7 +31,7 @@ visibility 100
 end
 More
 Object store_magic_4_northwest
-name mise
+name shop
 face store_magi_northwest.x11
 color_fg blue
 type 66
