@@ -1,6 +1,6 @@
 Object rose_pink
 name pink rose
-face rose_red.111
+face rose_pink.111
 food 5
 nrof 1
 type 6
@@ -54,5 +54,20 @@ weight 2
 editable 2048
 magicmap yellow
 name_pl yellow roses
+client_type 601
+end
+Object rose_black
+name black rose
+face rose_black.111
+food 5
+nrof 1
+type 6
+material 32
+value 160
+color_fg black
+weight 2
+editable 2048
+magicmap black
+name_pl black roses
 client_type 601
 end
