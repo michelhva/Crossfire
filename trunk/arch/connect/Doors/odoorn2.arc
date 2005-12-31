@@ -4,12 +4,12 @@ type 91
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-face odoorn2.114
+face odoorn2.111
 anim
-odoorn2.111
-odoorn2.112
-odoorn2.113
 odoorn2.114
+odoorn2.113
+odoorn2.112
+odoorn2.111
 mina
 is_animated 0
 no_pass 1
@@ -31,12 +31,12 @@ activate_on_release 1
 no_pick 1
 damned 1
 no_magic 1
-face odoorn2.111
+face odoorn2.114
 anim
-odoorn2.111
-odoorn2.112
-odoorn2.113
 odoorn2.114
+odoorn2.113
+odoorn2.112
+odoorn2.111
 mina
 is_animated 0
 wc 0
