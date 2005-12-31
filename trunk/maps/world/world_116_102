@@ -13226,20 +13226,20 @@ slaying /darcap/darcap/shop_w
 x 19
 y 37
 end
-arch guild
+arch guild_northwest
 name Guild of the Poisoned Dagger
 slaying /darcap/darcap/guilds/poisoned_dagger/ground
 no_pass 0
 x 19
 y 40
 end
-arch store_magic
+arch store_magic_northwest
 name Mirkland's Magic
 slaying /darcap/darcap/shop_m
 x 19
 y 43
 end
-arch guild
+arch guild_northwest
 name Poisoned Dagger's storage room
 slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
 hp 1
@@ -13307,7 +13307,7 @@ sp 14
 x 28
 y 25
 end
-arch guild
+arch guild_northwest
 name Smoking Cauldron's storage room
 slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
 hp 1
@@ -13315,7 +13315,7 @@ sp 10
 x 28
 y 27
 end
-arch castle_a
+arch castle_a_northwest
 name forgotten city
 slaying /darcap/forgotten_town/enter
 x 28
@@ -13339,13 +13339,13 @@ name ware house
 x 28
 y 41
 end
-arch guild
+arch guild_northwest
 name Guild of the Smoking Cauldron
 slaying /darcap/darcap/guilds/smoking_cauldron/ground
 x 31
 y 25
 end
-arch guild
+arch guild_northwest
 name Maze House
 slaying /darcap/darcap/maze
 hp 85
@@ -13362,7 +13362,7 @@ arch house_largish
 x 31
 y 31
 end
-arch tower_a
+arch city_tower_northwest
 name Lighthouse
 x 32
 y 33
