@@ -16,6 +16,7 @@ type 101
 subtype 4
 value 50
 Dex 30
+Con 50
 attacktype 10
 range 24
 no_drop 1
