@@ -1,8 +1,8 @@
 # Basically same as the spell, but does a little less damage.
 #
 Object ability_dragonbreath
-name dragonbreath
-name_pl dragonbreath
+name dragonbreath ability
+name_pl dragonbreath ability
 level 12
 sp 13
 casting_time 5

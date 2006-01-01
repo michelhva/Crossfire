@@ -1,6 +1,6 @@
 Object abil_create_fire_wall
-name create fire wall
-name_pl create fire wall
+name create fire wall ability
+name_pl create fire wall ability
 level 6
 sp 5
 casting_time 4

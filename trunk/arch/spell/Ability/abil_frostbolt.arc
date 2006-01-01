@@ -1,6 +1,6 @@
 Object abil_frostbolt
-name frostbolt
-name_pl frostbolts
+name frostbolt ability
+name_pl frostbolts ability
 level 3
 sp 12
 casting_time 3

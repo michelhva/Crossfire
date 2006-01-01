@@ -1,6 +1,6 @@
 Object abil_slow
-name slow
-name_pl slow
+name slow ability
+name_pl slow ability
 level 1
 sp 5
 casting_time 10

@@ -1,6 +1,6 @@
 Object abil_poison_cloud
-name poison cloud
-name_pl poison cloud
+name poison cloud ability
+name_pl poison cloud ability
 level 2
 sp 5
 casting_time 10
