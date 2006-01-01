@@ -1,6 +1,6 @@
 Object abil_medium_fireball
-name medium fireball
-name_pl medium fireball
+name medium fireball ability
+name_pl medium fireball ability
 level 3
 sp 10
 casting_time 10

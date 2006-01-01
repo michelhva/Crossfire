@@ -1,6 +1,6 @@
 Object abil_create_frost_wall
-name create frost wall
-name_pl create frost wall
+name create frost wall ability
+name_pl create frost wall ability
 level 8
 sp 8
 casting_time 3

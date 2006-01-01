@@ -1,6 +1,6 @@
 Object abil_icestorm
-name icestorm
-name_pl icestorm
+name icestorm ability
+name_pl icestorm ability
 level 1
 sp 5
 casting_time 3

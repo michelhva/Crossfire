@@ -1,6 +1,6 @@
 Object abil_ball_lightning
-name ball lightning
-name_pl ball lightning
+name ball lightning ability
+name_pl ball lightning ability
 type 101
 subtype 35
 level 9

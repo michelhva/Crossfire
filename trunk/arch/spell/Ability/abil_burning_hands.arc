@@ -1,6 +1,6 @@
 Object abil_burning_hands
-name burning hands
-name_pl burning hands
+name burning hands ability
+name_pl burning hands ability
 level 1
 sp 5
 casting_time 5
