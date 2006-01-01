@@ -1,3 +1,6 @@
+# This archetype was used for dragon players' abilities. It has been replaced
+# by spell_large_icestorm. Nevertheless it cannot be deleted because existing
+# players may contain such an object.
 Object spelldirect_large_icestorm
 name large icestorm
 name_pl large icestorm

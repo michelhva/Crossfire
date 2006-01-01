@@ -1,3 +1,6 @@
+# This archetype was used for dragon players' abilities. It has been replaced
+# by spell_ball_lightning. Nevertheless it cannot be deleted because existing
+# players may contain such an object.
 Object spelldirect_ball_lightning
 name ball lightning
 name_pl ball lightning
