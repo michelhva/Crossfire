@@ -1,3 +1,6 @@
+# This archetype was used for dragon players' abilities. It has been replaced
+# by spell_poison_cloud. Nevertheless it cannot be deleted because existing
+# players may contain such an object.
 Object spelldirect_poison_cloud
 name poison cloud
 name_pl poison cloud
