@@ -16,9 +16,9 @@ mina
 speed 0.25
 Cha -5
 msg
-  There is a powerful evil spirit in the shield
-  dominating over you. You are struggling to 
-  remain control of yourself.
+  There is a powerful evil spirit in the
+  shield dominating your mind. You are
+  struggling to retain control of yourself.
 endmsg
 resist_fire 30
 resist_drain 100

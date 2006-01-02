@@ -16,10 +16,12 @@ Con 1
 exp 10
 randomitems resurrection_failure
 msg
-This spell brings back a dead character.  The character suffers less
-experience and constitution loss compared to raise dead.
+This spell brings back a dead character.  The
+character suffers less experience and
+constitution loss than that caused by the raise
+dead spell.
 
-Note: This spell is only useful on servers which use the permanent death
-mode of play.
+Note: This spell is only useful on servers
+which use the permanent death mode of play.
 endmsg
 end

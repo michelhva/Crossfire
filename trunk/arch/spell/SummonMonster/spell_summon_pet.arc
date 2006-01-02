@@ -15,9 +15,11 @@ invisible 1
 attack_movement 16
 randomitems mage_pet_monster
 msg
-This creates some number of monsters to help out the spellcaster.
-These monsters are not under direct control (like golems) but rather
-think for their own.  They typically attack other creatures and bash
-down doors.  The creatures persist until they are killed.
+This creates a number of monsters to help out
+the spellcaster.  These monsters are not
+under direct control (like golems) but rather
+think on their own.  They typically attack
+other creatures and bash down doors.  The
+creatures persist until they are killed.
 endmsg
 end

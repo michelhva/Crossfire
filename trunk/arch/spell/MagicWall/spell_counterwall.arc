@@ -20,9 +20,11 @@ maxsp 20
 range 2
 range_modifier 15
 msg
-Counterwall creates a wall that fires counterspells.  Counterspells are
-coned spells that prevent spells from passing through the effected area.
-Counterwalls can be useful to constantly neutralize spell effects.
-The counterwall itself does have a finite duration.
+Counterwall creates a wall that fires
+counterspells.  Counterspells are cone spells
+that prevent spells from passing through the
+affected area.  Counterwalls can be useful to
+constantly neutralize spell effects.  The
+counterwall itself has a finite duration.
 endmsg
 end

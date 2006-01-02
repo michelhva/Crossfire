@@ -22,9 +22,11 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Lesser olem summons a magical creature that does the casters wishing.  The
-caster can have it attack other creatures, bash down doors, detonate
-runes, etc.  The golem has a finite life, and this life is shortened
-by any damage it takes.
+Lesser golem summons a magical creature that
+does the caster's wishes.  The caster can
+have it attack other creatures, bash down
+doors, detonate runes, etc.  The golem has a
+finite lifetime, and this life is shortened
+any time it takes damage.
 endmsg
 end

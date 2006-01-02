@@ -6,7 +6,8 @@ hp 1
 other_arch spell_summon_air_elemental
 face rune_summon_air.111
 msg
-A portal opens up, and screaming hordes pour through!
+A portal opens up, and screaming hordes pour
+through!
 endmsg
 anim
 rune_summon_air.111
@@ -33,7 +34,8 @@ hp 1
 other_arch spell_summon_devil
 face rune_summon.111
 msg
-A portal opens up, and screaming hordes pour through!
+A portal opens up, and screaming hordes pour
+through!
 endmsg
 anim
 rune_summon.111
@@ -60,7 +62,8 @@ hp 1
 other_arch spell_summon_earth_elemental
 face rune_sum_earth.111
 msg
-A portal opens up, and screaming hordes pour through!
+A portal opens up, and screaming hordes pour
+through!
 endmsg
 anim
 rune_sum_earth.111
@@ -86,7 +89,8 @@ hp 1
 other_arch spell_summon_fire_elemental
 face rune_sum_fire.111
 msg
-A portal opens up, and screaming hordes pour through!
+A portal opens up, and screaming hordes pour
+through!
 endmsg
 anim
 rune_sum_fire.111
@@ -113,7 +117,8 @@ hp 1
 other_arch spell_summon_water_elemental
 face rune_sum_water.111
 msg
-A portal opens up, and screaming hordes pour through!
+A portal opens up, and screaming hordes pour
+through!
 endmsg
 anim
 rune_sum_water.111

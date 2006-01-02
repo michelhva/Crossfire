@@ -17,7 +17,9 @@ dam 2
 dam_modifier 10
 monster 1
 msg
-This spell creates fog near the player, that moves about randomly.
-The fog has no harmful effect, but can block visibility.
+This spell creates fog near the player. The
+fog moves about randomly after being
+summoned.  It has no harmful effect, but can
+block visibility.
 endmsg
 end

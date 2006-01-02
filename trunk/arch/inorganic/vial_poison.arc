@@ -15,6 +15,6 @@ food 2
 msg
 A poison of some sort.
 Maybe it could be used
-to taint someones food.
+to taint someone's food.
 endmsg
 end

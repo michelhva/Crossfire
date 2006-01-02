@@ -21,7 +21,8 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Mana blast fires a cone of magical energy.  The energy is pure magic, 
-which few creatures have resistance to.
+Mana blast fires a cone of magical energy.
+The energy is pure magic, which few creatures
+have resistance to.
 endmsg
 end

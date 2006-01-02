@@ -21,8 +21,9 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Counterspell shoots out a cone of energy that absorbs other spell
-energy.  This can be used to counter incoming spells so that they do
+Counterspell shoots out a cone of energy that
+absorbs other spell energy.  This can be used
+to counter incoming spells so that they do
 not hit the character.
 endmsg
 end

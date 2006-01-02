@@ -13,6 +13,7 @@ path_attuned 128
 no_drop 1
 invisible 1
 msg
-Consecrate is used to convert an altar into an altar for your god.
+Consecrate is used to convert an altar into
+an altar for your god.
 endmsg
 end

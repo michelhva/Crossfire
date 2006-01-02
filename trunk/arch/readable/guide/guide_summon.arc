@@ -1,14 +1,13 @@
 Object guide_summon
 name guide to the Art of Summoning
 msg
-o Basically there are two classes of
-  summoning spells: 1. The golem-like
-  spells summon a creature that will
-  move straight forward attempting to kill
-  any monster blocking the way.
-  2. The petmonster-like spells are capable
-  of summoning masses of little helpers,
-  fighting for your cause.
+o There are two classes of summoning spells:
+  Golem-type spells, which summon a creature
+  that will move straight forward attempting
+  to kill any monster blocking the way; and
+  Petmonster-type spells, which summon masses
+  of little helpers, that fight in your
+  cause.
 o Use golem-like spells to take down strong
   enemies. For example: "summon golem",
   "summon xxx elemental", "staff to snake",
@@ -24,9 +23,9 @@ o It is probably stupid to use *nothing*
   except summoning spells. But there are
   situations where a summoner survives
   while another wizard would have died.
-  And once you have seen the first Balrog
-  fall to your avatar, there will be no
-  doubt about your power.
+  Once you have seen the first Balrog fall to
+  your avatar, there will be no doubt about
+  your power.
 endmsg
 nrof 1
 face book_red.111

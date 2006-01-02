@@ -19,8 +19,10 @@ resist_physical 20
 ac 2
 maxgrace 8
 msg
-Iron skin toughens the skin of the recipient, making them harder to hit and
-reducing the amount of damage the character takes from physical attacks.  It
-does not provide any additional protection to non physical attacks.
+Iron skin toughens the skin of the recipient,
+making them harder to hit and reducing the
+amount of damage they take from physical
+attacks.  It does not provide any additional
+protection to non-physical attacks.
 endmsg
 end

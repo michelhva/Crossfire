@@ -13,9 +13,11 @@ skill summoning
 path_attuned 2048
 face penta.111
 msg
-Pentagram is a special rune - when casting the spell, the caster specifies
-what other spell should be encapsulated in the pentagram spell.
-When the pentagram is activated, that other spell is then cast, which
-could be summon monster for example.
+Pentagram is a special rune - when casting
+the spell, the caster specifies what other
+spell should be encapsulated in the pentagram
+spell.  When the pentagram is activated, the
+encapsulated spell, which could be a
+summoning spell, is cast.
 endmsg
 end

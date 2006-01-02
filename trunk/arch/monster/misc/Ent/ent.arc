@@ -15,7 +15,7 @@ ent.x12
 mina
 msg
 @match *
-Hey! Careful of my roots stranger.
+Hey! Careful of my roots, stranger.
 endmsg
 unaggressive 1
 resist_fire -50

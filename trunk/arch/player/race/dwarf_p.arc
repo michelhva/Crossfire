@@ -14,8 +14,8 @@ hardiness is unknown. Their thick musculature
 makes them slow of body, and seemingly, some
 of their muscle has crept into their brain.
 Perhaps their repetitive tasks dull their
-minds, perhaps they're just plain born
-dumb.
+minds, perhaps they're simply born dumb.
+
 Dwarves can see in the dark, but they're
 slightly impious and tend to be a bit poor at
 controlling magic. Despite this, there are

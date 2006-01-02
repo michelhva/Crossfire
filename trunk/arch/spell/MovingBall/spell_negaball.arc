@@ -20,9 +20,11 @@ attacktype 144
 no_drop 1
 invisible 1
 msg
-Negative energy balls creates a ball of negatvie energy.  This ball heads in
-the direction it is cast, and if it encounters a monsters, it sticks on
-the monster, draining the monster and doing cold damage as it does so.
-The spell does have a limited duration.
+Negative energy balls creates a ball of
+negatvie energy.  This ball heads in the
+direction it is cast, and if it encounters a
+monster, it sticks to the monster, draining
+the monster and doing cold damage as it does
+so.  The spell has a limited duration.
 endmsg
 end

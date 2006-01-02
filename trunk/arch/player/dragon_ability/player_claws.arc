@@ -34,7 +34,7 @@ Object electric_clawing
 name electric claws
 title clawing
 msg
-Your claws emmit sparks of electricity!
+Your claws emit sparks of electricity!
 endmsg
 type 74
 subtype 31
