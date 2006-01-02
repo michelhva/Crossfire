@@ -2095,14 +2095,24 @@ name moat
 x 7
 y 6
 end
+arch magic_mouth
+msg
+Something looks odd here on this corner.
+endmsg
+food 1
+x 7
+y 7
+end
 arch brush
 x 7
 y 7
 end
 arch ladder_down
+name a well hidden hole in the ground
 msg
 It sure is dark ...
 endmsg
+invisible 1
 slaying /brest/zorn/castle.basement0
 hp 7
 sp 7
@@ -3553,11 +3563,14 @@ arch tile_white_floor
 x 9
 y 33
 end
-arch stair_down_2
+arch dungeon_magic
 x 9
 y 33
 end
-arch dungeon_magic
+arch stair_down_3
+slaying castle.basement0
+hp 9
+sp 33
 x 9
 y 33
 end
@@ -3565,11 +3578,14 @@ arch tile_white_floor
 x 9
 y 34
 end
-arch stair_down_2
+arch dungeon_magic
 x 9
 y 34
 end
-arch dungeon_magic
+arch stair_down_1
+slaying castle.basement0
+hp 9
+sp 34
 x 9
 y 34
 end
@@ -23871,11 +23887,14 @@ arch tile_floor
 x 49
 y 33
 end
-arch stair_down_4
+arch dungeon_magic
 x 49
 y 33
 end
-arch dungeon_magic
+arch stair_down_3
+slaying castle.basement0
+hp 49
+sp 33
 x 49
 y 33
 end
@@ -23883,11 +23902,14 @@ arch tile_floor
 x 49
 y 34
 end
-arch stair_down_4
+arch dungeon_magic
 x 49
 y 34
 end
-arch dungeon_magic
+arch stair_down_1
+slaying castle.basement0
+hp 49
+sp 34
 x 49
 y 34
 end
