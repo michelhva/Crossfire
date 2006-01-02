@@ -13,9 +13,9 @@ startequip 1
 editable 2048
 nrof 1
 msg
-  This wonderful charm will absorb
-  many magics which would affect 
-  your movement.
+  This wonderful charm will absorb many
+  magics which would otherwise affect your
+  movement.
 endmsg
 name tooth charm
 name_pl tooth charms

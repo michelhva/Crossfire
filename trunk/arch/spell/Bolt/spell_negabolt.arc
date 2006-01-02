@@ -20,7 +20,8 @@ range 24
 no_drop 1
 invisible 1
 msg
-The negative energe bolt hits creatures, draining them of experience
-while also hitting them with a cold attack.
+The negative energe bolt hits creatures,
+draining them of experience and also
+hitting them with a cold attack.
 endmsg
 end

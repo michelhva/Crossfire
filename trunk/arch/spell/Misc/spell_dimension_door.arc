@@ -16,14 +16,17 @@ subtype 13
 no_drop 1
 invisible 1
 msg
-Dimension door allows for a short range teleportation - the character is
-transported in the direction the spell is cast.  No magic zones can not
-be passed through, and the character can not end up on the same space as
-a monster.
+Dimension door allows for a short range
+teleportation: the character is transported
+in the direction the spell is cast.  Zones 
+where magic is blocked cannot be passed
+through, and the character will not end up in
+the space space as a monster.
 
-If the player specifies a count, the spell will attempt to transport
-the character that specific number of spaces.  Otherwise, the spell
-will attempt to transport the character the maximum number of
-spaces.
+If the player specifies a count, the spell
+will attempt to transport the character that
+specific number of spaces.  Otherwise, the
+spell will attempt to transport the character
+the maximum number of spaces.
 endmsg
 end

@@ -17,8 +17,9 @@ maxsp 3
 range 2
 range_modifier 3
 msg
-Earth to dust causes damage to all earth walls and other weak walls
-within the immediate area of the caster.  It does not damage any other
-objects or monsters.
+Earth to dust causes damage to all earth
+walls and other weak walls within the
+immediate area of the caster.  It does not
+damage any other objects or monsters.
 endmsg
 end

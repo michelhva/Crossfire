@@ -15,9 +15,11 @@ invisible 1
 damned 1
 maxgrace 30
 msg
-Remove damnation eliminates the damned status of any objects the character
-currently has equipped.  This allows the character to unequip these
-items.  It does not alter the damned status for objects that are not
+Remove damnation eliminates the damned status
+of any objects the character currently has
+equipped.  This allows the character to
+unequip these items.  It does not alter the
+damned status for objects that are not
 equipped.
 endmsg
 end

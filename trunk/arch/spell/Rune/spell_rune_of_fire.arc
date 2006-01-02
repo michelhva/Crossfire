@@ -14,6 +14,7 @@ skill pyromancy
 path_attuned 2
 other_arch rune_fire
 msg
-This creates a rune that detonates in fire when a creature triggers it.
+This creates a rune that detonates in fire
+when a creature triggers it.
 endmsg
 end

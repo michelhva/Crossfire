@@ -1,6 +1,10 @@
 Object guide_wizard
 name guide to Wizardry
 msg
+o There are four separate magic skills: 
+  evocation, pyromancy, sorcery, and 
+  summoning. Each skill allows a different
+  set of spells to be learned and used.
 o To advance in the powerful art of magic
   you must first learn some spells.
   Spellbooks can be bought in magic stores.
@@ -26,8 +30,8 @@ o Most monsters are vulnerable to certain
   monster. This will increase your efficiency.
 o Your magic attacks might soon become very
   powerful. But don't forget to seize your
-  full capabilities:  Use spells for protection,
-  concealing, summoning,... be inventive!
+  full capabilities: use spells for protection,
+  concealing, summoning... be inventive!
 endmsg
 nrof 1
 face book_red.111

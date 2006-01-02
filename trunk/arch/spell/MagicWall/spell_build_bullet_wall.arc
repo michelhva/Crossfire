@@ -22,8 +22,9 @@ maxsp 10
 is_used_up 1
 tear_down 1
 msg
-Build bullet wall creates a wall that will fire bullets.  The
-bullet damages creatures as per the magic bullet spell.  The bulletwall
-itself can be torn down, and will eventually expire on its own.
+Build bullet wall creates a wall that fires
+magic bullets, as per the magic bullet spell.
+The bullet wall itself can be torn down, and
+will eventually expire on its own.
 endmsg
 end

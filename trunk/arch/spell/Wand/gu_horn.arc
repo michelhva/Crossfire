@@ -20,14 +20,15 @@ type 35
 material 2
 weight 5000
 msg
-  A beautiful unicorn horn shines with
-golden light. You feel really soothing
-holding it. 
-  It sure is one of the most powerful
-healing artifact in the realm. It is
-rumored to have been created by a god of
-healing. Hanuk imprisoned the god by
-trickery and acquired the artifact.
+A beautiful unicorn horn shining with golden
+light. You feel a sence of peace when you
+hold it.
+
+This is one of the most powerful healing
+artifact in the realm. It is rumored to have
+been created by a god of healing. Hanuk
+imprisoned the god by trickery and acquired
+the artifact.
 endmsg
 editable 4096
 name_pl Golden Unicorn Horns

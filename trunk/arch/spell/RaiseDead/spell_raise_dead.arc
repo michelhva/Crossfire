@@ -16,10 +16,11 @@ Con 2
 exp 5
 randomitems raise_dead_failure
 msg
-This spell brings back a dead character.  The raised character does lose
-some experience, and their constitution is diminished.
+This spell brings back a dead character.  The
+raised character loses some experience and
+their constitution is diminished.
 
-Note: This spell is only useful on servers which use the permanent death
-mode of play.
+Note: This spell is only useful on servers
+which use the permanent death mode of play.
 endmsg
 end

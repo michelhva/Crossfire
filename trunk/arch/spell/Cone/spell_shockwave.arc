@@ -21,8 +21,9 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Shockwave is a cone of force, hitting creatures with magical and
-physical force.  Because it hits with physical force, any armor the
-hit creatures are wearing will provide them some protection.
+Shockwave is a cone of force, hitting
+creatures with magical and physical force.
+Because it hits with physical force, armor
+provides some protection from this attack.
 endmsg
 end

@@ -13,8 +13,11 @@ casting_time 15
 skill sorcery
 path_attuned 2048
 msg
-Magic rune is a special rune - when casting the spell, the caster specifies
-what other spell should be encapsulated in the magic rune spell.
-When the magic rune is activated, that other spell is cast on the target.
+Magic rune is a special rune - when casting
+the spell, the caster specifies what other
+spell should be encapsulated in the magic
+rune spell.  When the magic rune is
+activated, that other spell is cast on the
+target.
 endmsg
 end

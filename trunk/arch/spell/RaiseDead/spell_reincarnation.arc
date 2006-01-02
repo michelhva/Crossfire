@@ -16,11 +16,14 @@ exp 20
 randomitems reincarnation_failure
 race reincarnation_races
 msg
-This spell brings back a dead character, but as a potentially new
-race (the character could be luck and end up with what they had before).
-The character will have all the benefits and penalties of the new race.
+This spell brings back a dead character,
+usually as a new race, although the character
+could be lucky and end up as the same race
+they had previously.  The character will have
+all the benefits and penalties of the new
+race.
 
-Note: This spell is only useful on servers which use the permanent death
-mode of play.
+Note: This spell is only useful on servers
+which use the permanent death mode of play.
 endmsg
 end

@@ -2,13 +2,13 @@ Object guide_alchemy
 name guide to Alchemy
 msg
 o To practice the art of alchemy, you will
-  first need to learn some receipes.
+  first need to learn some recipes.
   These can be found in some of the old
   books that are sold in magic shops.
-o To earn your a little money, you
-  should kill some orcs/goblins and cast
-  the spell "alchemy" over the loot,
-  turning it into small gold nuggets.
+o To earn a little money, you should kill 
+  some orcs/goblins and cast the spell 
+  "alchemy" over the loot, turning it 
+  into small gold nuggets.
 o When you know some recipes, you must
   try to collect the listed ingredients.
   Some can be bought in alchemy-shops,
@@ -20,7 +20,7 @@ o Once you got all ingredients to complete
   cauldron. The amount of ingredients must
   also be correct. Put the cauldron on the
   floor, close it and use the skill
-  "alchemy" upon it. If you are lucky you
+  "alchemy" upon it. If you are lucky, you
   will get what you longed for.
 o Use alchemy to earn money as well as for
   creating potions/balms for combat.

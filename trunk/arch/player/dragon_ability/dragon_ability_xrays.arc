@@ -1,7 +1,8 @@
 Object dragon_ability_xrays
 name xrays
 msg
-Your senses are stimulated. You gain the ability of xray-view!
+Your senses are stimulated. You gain the
+ability of X-ray vision!
 endmsg
 type 114
 invisible 1

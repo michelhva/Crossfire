@@ -21,9 +21,11 @@ range 0
 maxsp 10
 is_used_up 1
 msg
-Build director creates a director in the facing the direction the character
-casts the spell.  Directors can be used to change the course of certain
-spells - bullets and bolts most notable.  Thus, it can be used to be able
-to fire a spell around a corner, or direct a spell back at the caster.
+Build director creates a director facing the
+direction of the caster.  Directors can be
+used to change the course of certain spells -
+most notably bullets and bolts.  Thus, it can
+be used to be able to fire a spell around a
+corner, or direct a spell back at the caster.
 endmsg
 end

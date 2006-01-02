@@ -5,10 +5,10 @@ o To become a mighty warrior, you need
   basically three things: A good weapon,
   good armour and physical toughness.
   Then you can kill your foes simply by
-  "running into them".
+  running into them.
 o Physical toughness means you will need
   high Str (for good attacking power) and
-  Con (for many hitpoints) -stats. Look
+  Con (for many hitpoints) stats. Look
   for "potions of Strength/Constitution".
   Try to get items that speed up your
   health-regeneration too.

@@ -9,6 +9,7 @@ Lythander. Being of Faerie, they heal more
 slowly than other races, but mana flows into
 them more quickly. They also need far less
 food than other races.
+
 Every elf is taught the use of a bow, but
 their long lives allow them to take up any
 trade. They are weaker and less hardy than
@@ -17,8 +18,9 @@ generally make more powerful spellcasters.
 However, they have a notoriously offhanded
 attitude toward their religious devotions
 and make poor priests.
+
 As a race, Elves possess a preternatural
-beauty and eyes that see into the dark.
+beauty and eyes that see in the dark.
 endmsg
 anim
 elf.111

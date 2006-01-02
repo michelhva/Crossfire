@@ -8,7 +8,7 @@ editable 2
 visibility 100
 msg
 You open the sewer access
-grid and jumps down.
+grid and jump down.
 My god, you are stinking!
 endmsg
 client_type 25012
@@ -23,7 +23,7 @@ editable 2
 visibility 100
 msg
 You open the sewer access
-grid and jumps down.
+grid and jump down.
 My god, you are stinking!
 endmsg
 client_type 25012

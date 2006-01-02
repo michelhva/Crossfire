@@ -15,6 +15,7 @@ thought of intimacy with the other repulsive.
 Despite that, they coexist peacefully enough:
 perhaps because their interests and needs
 never conflict.
+
 Gnomes do not have nearly the strength or
 hardiness of dwarves, and they are even more
 clumsy. They are quite spiritual, and make

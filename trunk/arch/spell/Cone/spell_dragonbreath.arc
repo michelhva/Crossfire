@@ -22,10 +22,11 @@ no_drop 1
 invisible 1
 skill pyromancy
 msg
-Dragonbreath is a cone spell that fires sheets of fire.  One of the main
-advantages it has over may spells is that it will still effect creatures
-immune to magic, as the spell shoots pure fire.  Target creatures still
-have to be vulnerable to the effects of fire for this to do any damage
-of course.
+Dragonbreath is a cone effect that fires
+sheets of fire.  Since this fire is not
+magical, it affects many creatures that are
+immune to magic.  Target creatures still have
+to be vulnerable to the effects of fire for
+this to do any damage, of course.
 endmsg
 end

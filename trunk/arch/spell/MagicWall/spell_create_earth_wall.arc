@@ -19,10 +19,13 @@ range 2
 range_modifier 10
 no_pass 1
 msg
-Create earth wall will crete a line of earth walls.  Unlike most magic
-wall spells, the earthwalls cast no spells and do no damage.  However,
-they block most creatures from passing over them, and block vision.
-Also, unlike many of the magic wall spells, earthwalls will stick around
-until they are destroyed.
+Create earth wall will create a line of earth
+walls.  Unlike other magic wall spells, the
+earthwalls cast no spells and do no damage.
+However, they block most creatures from
+passing over them, and block vision.  Also,
+unlike many of the magic wall spells,
+earthwalls will stay around until they are
+destroyed.
 endmsg
 end

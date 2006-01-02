@@ -13,7 +13,8 @@ path_attuned 128
 no_drop 1
 invisible 1
 msg
-Disarm is a safe way to disarm traps.  It never fails, but one must cast
-the spell, and thus use up spell points to do so.
+Disarm is a safe way to disarm traps.  It
+never fails, but one must cast the spell, and
+thus use up spell points to do so.
 endmsg
 end

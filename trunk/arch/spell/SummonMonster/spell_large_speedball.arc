@@ -15,8 +15,10 @@ no_drop 1
 invisible 1
 monster 1
 msg
-Speedballs are magical forms of energy that hunt out enemies to hit.
-They do a small amount of damage and slow the creature so struck.  The
-speedball dissapates after it hits a creature.
+Speedballs are bundles of magical energy that
+hunt out enemies to hit.  They do a small
+amount of damage and slow the creatures they
+strike.  After speedballs hit a creature,
+they dissipate.
 endmsg
 end
