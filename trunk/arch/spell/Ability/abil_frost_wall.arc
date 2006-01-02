@@ -19,4 +19,5 @@ dam_modifier 3
 maxsp 8
 attacktype 16
 range 2
+no_pass 1
 end

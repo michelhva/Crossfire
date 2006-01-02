@@ -28,4 +28,5 @@ normal fireballs.  The wall can be torn down
 by creatures, and will eventually expire of
 its own accord.
 endmsg
+no_pass 1
 end
