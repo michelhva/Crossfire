@@ -1920,10 +1920,6 @@ name dirt floor
 x 6
 y 9
 end
-arch dun0
-x 6
-y 9
-end
 arch earth
 name dirt floor
 x 6
@@ -2331,20 +2327,8 @@ name dirt floor
 x 7
 y 8
 end
-arch sign
-msg
-Nothing to do here yet folks. :-p
-endmsg
-glow_radius 3
-x 7
-y 8
-end
 arch earth
 name dirt floor
-x 7
-y 9
-end
-arch dun0
 x 7
 y 9
 end
@@ -17106,6 +17090,7 @@ name hole in the ground
 msg
 You enter a forgotten storage room.
 endmsg
+slaying castle.basement0
 hp 48
 sp 9
 x 47
@@ -17126,6 +17111,7 @@ y 9
 end
 arch phole_2
 name hole in the flagstones
+slaying castle.basement0
 hp 48
 sp 7
 x 47
