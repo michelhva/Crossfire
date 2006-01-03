@@ -1,3 +1,22 @@
+//
+// This file is part of JXClient, the Fullscreen Java Crossfire Client.
+//
+//    JXClient is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    JXClient is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with JXClient; if not, write to the Free Software
+//    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+//
+// JXClient is (C)2005 by Yann Chachkoff.
+//
 package com.realtime.crossfire.jxclient;
 import  com.realtime.crossfire.jxclient.*;
 
@@ -12,6 +31,15 @@ import javax.swing.event.*;
 import java.awt.image.*;
 //import com.sixlegs.png.*;
 
+/**
+ * One of the two most important classes, ServerConnection performs most of the
+ * network-related work. It either decodes commands sent by the server itself,
+ * or delegates their processing to other classes, like Map or Faces.
+ *
+ * @version 1.0
+ * @author Lauwenmark
+ * @since 1.0
+ */
 public class ServerConnection extends Thread
 {
 
@@ -38,14 +66,48 @@ public class ServerConnection extends Thread
     private static String                  myhost = new String("localhost");
     private static int                     myport = 13327;
 
+    /**
+     * Represents the unconnected status of the client, which is the first to
+     * happen during a normal gaming session.
+     * @since 1.0
+     */
     public static final int         STATUS_UNCONNECTED = 0;
+
+    /**
+     * Represents the status of the client that is used during play.
+     * @since 1.0
+     */
     public static final int         STATUS_PLAYING     = 1;
+
+    /**
+     * Represents the status of the client that is displaying a Query dialog.
+     * @since 1.0
+     */
     public static final int         STATUS_QUERY       = 2;
-    /*public static final int         MAP_WIDTH=25;
-    public static final int         MAP_HEIGHT=19;*/
+
+    /**
+     * The width of the map displayed, in squares.
+     * @since 1.0
+     */
     public static final int         MAP_WIDTH  =17;
+
+    /**
+     * The height of the map displayed, in squares.
+     * @since 1.0
+     */
     public static final int         MAP_HEIGHT =13;
+
+    /**
+     * The total number of map layers to display.
+     * @since 1.0
+     */
     public static final int         NUM_LAYERS =3;
+
+    /**
+     * The pixel size of the gaming squares. Notice that they are supposed to
+     * be *squares*, so only a single value is needed :)
+     * @since 1.0
+     */
     public static final int         SQUARE_SIZE = 64;
 
     public static final int MSG_TYPE_BOOK_CLASP_1 = 1;
@@ -62,6 +124,12 @@ public class ServerConnection extends Thread
 
     private static int                     mystatus = STATUS_UNCONNECTED;
     private static String mystatus_sem = new String("mystatus_sem");
+
+    /**
+     * The Thread Main loop. ServerConnection contains its own Thread, so it
+     * can monitor the socket content in parallel with the GUI handling loop.
+     * @since 1.0
+     */
     public void run()
     {
         setStatus(STATUS_PLAYING);
@@ -79,10 +147,23 @@ public class ServerConnection extends Thread
             System.exit(0);
         }
     }
+
+    /**
+     * Tests if there are some data waiting on the socket. Just a simple wrapper
+     * for an InputStream.available() check.
+     * @return True if there is some data waiting, else false.
+     * @since 1.0
+     */
     public synchronized boolean waitForData() throws IOException
     {
         return (in.available() > 0) ? true : false;
     }
+
+    /**
+     * Reads the next available packet sent by the Crossfire server on the
+     * network.
+     * @since 1.0
+     */
     public synchronized void readPacket() throws IOException, UnknownCommandException
     {
         int len = 0;
@@ -113,6 +194,12 @@ public class ServerConnection extends Thread
         }
         command(cmdstr, dis);
     }
+
+    /**
+     * Writes a Crossfire Message on the socket, so it is sent to the server.
+     * @param str The message to sent.
+     * @since 1.0
+     */
     public static void writePacket(String str) throws IOException
     {
         synchronized(bout)
@@ -127,12 +214,28 @@ public class ServerConnection extends Thread
             }
         }
     }
+
+    /**
+     * Creates a new ServerConnection that will be used to communicate with the
+     * server located at the given hostname:port address.
+     * Note that the connection is not performed by the constructor - you need
+     * to call the connect() method.
+     * @param hostname The hostname (or IP address) of the server.
+     * @param port The TCP port on which the server is listening.
+     * @since 1.0
+     */
     public ServerConnection(String hostname, int port)
     {
         buf = new byte[2];
         myhost = hostname;
         myport = port;
     }
+
+    /**
+     * Attempts to connect the client to the server using the previously defined
+     * hostname:port address.
+     * @since 1.0
+     */
     public void connect()
     {
         try
@@ -151,142 +254,387 @@ public class ServerConnection extends Thread
         }
 
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * goodbye S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireGoodbyeListener(CrossfireGoodbyeListener listener)
     {
         mylisteners_goodbye.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * goodbye S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireGoodbyeListener(CrossfireGoodbyeListener listener)
     {
         mylisteners_goodbye.remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * addme_success S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireAddmeSuccessListener(CrossfireAddmeSuccessListener listener)
     {
         mylisteners_addme_success.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * addme_success S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireAddmeSuccessListener(CrossfireAddmeSuccessListener listener)
     {
         mylisteners_addme_success.remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * delitem S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireDelitemListener(CrossfireDelitemListener listener)
     {
         ItemsList.getCrossfireDelitemListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * delitem S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireDelitemListener(CrossfireDelitemListener listener)
     {
         ItemsList.getCrossfireDelitemListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * item1 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireItem1Listener(CrossfireItem1Listener listener)
     {
         ItemsList.getCrossfireItem1Listeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * item1 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireItem1Listener(CrossfireItem1Listener listener)
     {
         ItemsList.getCrossfireItem1Listeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * item2 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireItem2Listener(CrossfireItem2Listener listener)
     {
         ItemsList.getCrossfireItem2Listeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * item2 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireItem2Listener(CrossfireItem2Listener listener)
     {
         ItemsList.getCrossfireItem2Listeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * map1 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMap1Listeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * map1 S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMap1Listeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * newmap S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireNewmapListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * newmap S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireNewmapListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * player S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
         CfPlayer.getCrossfirePlayerListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * player S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
         CfPlayer.getCrossfirePlayerListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * stats S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireStatsListener(CrossfireStatsListener listener)
     {
         CfPlayer.getCrossfireStatsListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * stats S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireStatsListener(CrossfireStatsListener listener)
     {
         CfPlayer.getCrossfireStatsListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * upditem S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireUpditemListener(CrossfireUpditemListener listener)
     {
         ItemsList.getCrossfireUpditemListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * upditem S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireUpditemListener(CrossfireUpditemListener listener)
     {
         ItemsList.getCrossfireUpditemListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * mapscroll S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMapscrollListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * mapscroll S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMapscrollListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * delinv S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireDelinvListener(CrossfireDelinvListener listener)
     {
         ItemsList.getCrossfireDelinvListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * delinv S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireDelinvListener(CrossfireDelinvListener listener)
     {
         ItemsList.getCrossfireDelinvListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * drawinfo S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireDrawinfoListener(CrossfireDrawinfoListener listener)
     {
         mylisteners_drawinfo.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * drawinfo S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireDrawinfoListener(CrossfireDrawinfoListener listener)
     {
         mylisteners_drawinfo.remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * drawextinfo S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener)
     {
         mylisteners_drawextinfo.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * drawextinfo S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener)
     {
         mylisteners_drawextinfo.remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * magicmap S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMagicmapListeners().add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * magicmap S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMagicmapListeners().remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * addme_failed S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireAddmeFailedListener(CrossfireAddmeFailedListener listener)
     {
         mylisteners_addme_failed.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * addme_failed S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireAddmeFailedListener(CrossfireAddmeFailedListener listener)
     {
         mylisteners_addme_failed.remove(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * query S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void addCrossfireQueryListener(CrossfireQueryListener listener)
     {
         mylisteners_query.add(listener);
     }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * query S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
     public synchronized void removeCrossfireQueryListener(CrossfireQueryListener listener)
     {
         mylisteners_query.remove(listener);
     }
+
+    /**
+     * Sets the current status of the client to the given value. See the various
+     * STATUS_ constants.
+     * @param nstatus The new status value.
+     * @since 1.0
+     */
     public void setStatus(int nstatus)
     {
         synchronized(mystatus_sem)
@@ -294,6 +642,12 @@ public class ServerConnection extends Thread
             mystatus = nstatus;
         }
     }
+
+    /**
+     * Gets the current status of the client. See the STATUS_ constants.
+     * @since 1.0
+     * @return A value representing the current status.
+     */
     public int getStatus()
     {
         synchronized(mystatus_sem)
@@ -302,6 +656,13 @@ public class ServerConnection extends Thread
         }
     }
 
+    /**
+     * This is the main command handler, in which the command received is
+     * decoded, and the appropriate method called.
+     * @param cmd The S->C command received.
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     private void command(String cmd, DataInputStream dis) throws IOException, UnknownCommandException
     {
         if (cmd.startsWith("image"))
@@ -396,27 +757,69 @@ public class ServerConnection extends Thread
             throw new UnknownCommandException("Unknown command: "+cmd);
         }
     }
+
+    /**
+     * Handles the image server to client command.
+     * @param cmd The S->C command, in this case "image".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_image(String cmd, DataInputStream dis) throws IOException
     {
         int pixmap = Faces.setImage(dis);
         com.realtime.crossfire.jxclient.Map.updateFace(pixmap);
     }
+
+    /**
+     * Handles the goodbye server to client command.
+     * @param cmd The S->C command, in this case "goodbye".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_goodbye(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the addme_success server to client command.
+     * @param cmd The S->C command, in this case "addme_success".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_addme_success(String cmd, DataInputStream dis) throws IOException
     {
         //System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the item server to client command.
+     * @param cmd The S->C command, in this case "item".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_item(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the sound server to client command
+     * @param cmd The S->C command, in this case "sound".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_sound(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the drawinfo server to client command.
+     * @param cmd The S->C command, in this case "drawinfo".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_drawinfo(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -433,10 +836,24 @@ public class ServerConnection extends Thread
             ((CrossfireDrawinfoListener)it.next()).CommandDrawinfoReceived(evt);
         }
     }
+
+    /**
+     * Handles the anim server to client command.
+     * @param cmd The S->C command, in this case "anim".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_anim(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the version server to client command.
+     * @param cmd The S->C command, in this case "version".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_version(String cmd, DataInputStream dis) throws IOException
     {
         writePacket("version 1023 1027 JXClient Java Client Pegasus 0.1");
@@ -446,6 +863,13 @@ public class ServerConnection extends Thread
         writePacket("requestinfo skill_info");
         writePacket("toggleextendedtext 1");
     }
+
+    /**
+     * Handles the replyinfo server to client command.
+     * @param cmd The S->C command, in this case "replyinfo".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_replyinfo(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -473,10 +897,24 @@ public class ServerConnection extends Thread
             }
         }
     }
+
+    /**
+     * Handles the addme_failed server to client command.
+     * @param cmd The S->C command, in this case "addme_failed".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_addme_failed(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the setup server to client command.
+     * @param cmd The S->C command, in this case "setup".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_setup(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -486,6 +924,13 @@ public class ServerConnection extends Thread
 
         String str = new String(buf);
     }
+
+    /**
+     * Handles the query server to client command.
+     * @param cmd The S->C command, in this case "query".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_query(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -504,6 +949,13 @@ public class ServerConnection extends Thread
             ((CrossfireQueryListener)it.next()).CommandQueryReceived(evt);
         }
     }
+
+    /**
+     * Handles the extendedtextset server to client command.
+     * @param cmd The S->C command, in this case "extendedtextset".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_ExtendedTextSet(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -513,10 +965,24 @@ public class ServerConnection extends Thread
 
         String str = new String(buf);
     }
+
+    /**
+     * Handles the extendedinfoset server to client command.
+     * @param cmd The S->C command, in this case "extendedinfoset".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_ExtendedInfoSet(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the drawextinfo server to client command.
+     * @param cmd The S->C command, in this case "drawextinfo".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_drawextinfo(String cmd, DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -536,18 +1002,47 @@ public class ServerConnection extends Thread
             ((CrossfireDrawextinfoListener)it.next()).CommandDrawextinfoReceived(evt);
         }
     }
+
+    /**
+     * Handles the Smooth server to client command.
+     * @param cmd The S->C command, in this case "smooth".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_smooth(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Handles the MapExtended server to client command.
+     * @param cmd The S->C command, in this case "MapExtended".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.0
+     */
     void cmd_mapextended(String cmd, DataInputStream dis) throws IOException
     {
         System.out.println("Command: "+cmd);
     }
+
+    /**
+     * Returns the list of all items at the given location.
+     * Usually, this is either an inventory content, or the list of objects on
+     * the floor.
+     * @param location The object tag identifier of the location to get items from.
+     * @return Known items, as a List object.
+     * @since 1.0
+     */
     public java.util.List getItems(int location)
     {
         return ItemsList.getItems(location);
     }
+
+    /**
+     * Returns the current player.
+     * @return The current player, as a CfPlayer object.
+     * @since 1.0
+     */
     public CfPlayer getPlayer()
     {
         return ItemsList.getPlayer();

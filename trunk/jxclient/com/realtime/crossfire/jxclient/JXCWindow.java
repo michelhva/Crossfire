@@ -1,3 +1,22 @@
+//
+// This file is part of JXClient, the Fullscreen Java Crossfire Client.
+//
+//    JXClient is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    JXClient is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with JXClient; if not, write to the Free Software
+//    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+//
+// JXClient is (C)2005 by Yann Chachkoff.
+//
 package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.*;
 import java.util.*;
@@ -8,6 +27,12 @@ import javax.swing.event.*;
 import java.awt.image.*;
 import java.io.*;
 
+/**
+ *
+ * @version 1.0
+ * @author Lauwenmark
+ * @since 1.0
+ */
 public class JXCWindow extends JFrame implements KeyListener, MouseInputListener,
                                                  CrossfireDrawextinfoListener,
                                                  CrossfireQueryListener
@@ -20,6 +45,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public final static int DLG_BOOK       = 1;
     public final static int DLG_QUERY      = 2;
     public final static int DLG_KEYBIND    = 3;
+    public final static int DLG_CARD       = 4;
+    public final static int DLG_PAPER      = 5;
+    public final static int DLG_SIGN       = 6;
+    public final static int DLG_MONUMENT   = 7;
+    public final static int DLG_SCRIPTED_DIALOG = 8;
+    public final static int DLG_MOTD       = 9;
 
     private DisplayMode     oldDisplayMode=null;
     private long            framecount = 0;
@@ -35,11 +66,20 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private DisplayMode     mymode = null;
     private Spell           mycurrentspell = null;
     private static SpellBeltItem[]         myspellbelt = new SpellBeltItem[12];
+    private boolean isfullscreen = false;
 
     private java.util.List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
     private java.util.List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
     private java.util.List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_card    = new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_paper   = new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_sign    = new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_monument= new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_scripted_dialog = new ArrayList<GUIElement>();
+    private java.util.List<GUIElement> mydialog_motd    = new ArrayList<GUIElement>();
+
     private java.util.List<GUIElement> mydialog_current = null;
+
     private JXCSkin myskin = new JXCSkinPrelude();
 
     private java.util.List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
@@ -250,6 +290,24 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 case DLG_KEYBIND:
                     mydialog_current = mydialog_keybind;
                     break;
+                case DLG_CARD:
+                    mydialog_current = mydialog_card;
+                    break;
+                case DLG_PAPER:
+                    mydialog_current = mydialog_paper;
+                    break;
+                case DLG_SIGN:
+                    mydialog_current = mydialog_sign;
+                    break;
+                case DLG_MONUMENT:
+                    mydialog_current = mydialog_monument;
+                    break;
+                case DLG_SCRIPTED_DIALOG:
+                    mydialog_current = mydialog_scripted_dialog;
+                    break;
+                case DLG_MOTD:
+                    mydialog_current = mydialog_motd;
+                    break;
             }
         }
     }
@@ -257,6 +315,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        isfullscreen = gd.isFullScreenSupported();
         if(gd.isFullScreenSupported()==false)
         {
             System.out.println("Warning ! True full-screen support is not available.");
@@ -327,8 +386,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void redrawGUI()
     {
         Graphics g = mybufferstrategy.getDrawGraphics();
-        if (mybufferstrategy.contentsRestored()) {
-        // Surface was recreated and reset, may require redrawing.
+        if (mybufferstrategy.contentsRestored())
+        {
+            // Surface was recreated and reset, may require redrawing.
             g.setColor(Color.BLACK);
             g.fillRect(0,0,getWidth(),getHeight());
         }
@@ -336,15 +396,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         while (it.hasNext())
         {
             GUIElement element = (GUIElement)it.next();
-
             if (element.isVisible())
             {
                 if (element instanceof GUIMap)
                 {
                     GUIMap mel = (GUIMap)element;
                     mel.redraw(g);
-                    //g.drawImage(
-                    //    element.getBuffer(), element.getX(), element.getY(), this);
                 }
                 else
                 {
@@ -353,6 +410,20 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
             }
         }
+        redrawGUIDialog(g);
+        g.dispose();
+        mybufferstrategy.show();
+        if (mybufferstrategy.contentsLost())
+        {
+        // The surface was lost since last call to getDrawGraphics, you
+        // may need to redraw.
+            g.setColor(Color.BLACK);
+            g.fillRect(0,0,getWidth(),getHeight());
+        }
+    }
+    private void redrawGUIDialog(Graphics g)
+    {
+        Iterator it;
         if (getDialogStatus()!=DLG_NONE)
         {
             it = mydialog_current.iterator();
@@ -378,14 +449,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     }
                 }
             }
-        }
-        g.dispose();
-        mybufferstrategy.show();
-        if (mybufferstrategy.contentsLost()) {
-        // The surface was lost since last call to getDrawGraphics, you
-        // may need to redraw.
-            g.setColor(Color.BLACK);
-            g.fillRect(0,0,getWidth(),getHeight());
         }
     }
     public void init(int w, int h, int b, int f)
@@ -438,6 +501,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return myserver;
     }
+    private void launchSpellFromBelt(int idx)
+    {
+        java.util.List lp = new java.util.ArrayList();
+        lp.add(this);
+        lp.add(myspellbelt[idx]);
+        GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
+        fcmd.execute();
+    }
     public void handleKeyPress(KeyEvent e)
     {
         if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
@@ -459,6 +530,42 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         switch(e.getKeyCode())
         {
+            case KeyEvent.VK_F1:
+                launchSpellFromBelt(0);
+                break;
+            case KeyEvent.VK_F2:
+                launchSpellFromBelt(1);
+                break;
+            case KeyEvent.VK_F3:
+                launchSpellFromBelt(2);
+                break;
+            case KeyEvent.VK_F4:
+                launchSpellFromBelt(3);
+                break;
+            case KeyEvent.VK_F5:
+                launchSpellFromBelt(4);
+                break;
+            case KeyEvent.VK_F6:
+                launchSpellFromBelt(5);
+                break;
+            case KeyEvent.VK_F7:
+                launchSpellFromBelt(6);
+                break;
+            case KeyEvent.VK_F8:
+                launchSpellFromBelt(7);
+                break;
+            case KeyEvent.VK_F9:
+                launchSpellFromBelt(8);
+                break;
+            case KeyEvent.VK_F10:
+                launchSpellFromBelt(9);
+                break;
+            case KeyEvent.VK_F11:
+                launchSpellFromBelt(10);
+                break;
+            case KeyEvent.VK_F12:
+                launchSpellFromBelt(11);
+                break;
             case KeyEvent.VK_UP:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
@@ -741,6 +848,41 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 System.out.println("Subtype is:"+evt.getSubType());
                 setDialogStatus(DLG_BOOK);
                 break;
+            case 2: //Cards
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_CARD);
+                break;
+            case 3: //Papers
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_PAPER);
+                break;
+            case 4: //Signs
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_SIGN);
+                break;
+            case 5: //Monuments
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_MONUMENT);
+                break;
+            case 6: //Scripted Dialogs
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_SCRIPTED_DIALOG);
+                break;
+            case 7: // Message of the Day
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_MOTD);
+                break;
+            default: //Let's consider those as books for now, k ?
+                System.out.println("Message is:"+evt.getMessage());
+                System.out.println("Subtype is:"+evt.getSubType());
+                setDialogStatus(DLG_BOOK);
+                break;
         }
     }
     public void CommandQueryReceived(CrossfireCommandQueryEvent evt)
@@ -796,6 +938,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mygui = myskin.getMainInterface(myserver,this);
             mydialog_query   = myskin.getDialogQuery(myserver,this);
             mydialog_book    = myskin.getDialogBook(myserver, this, 1);
+            mydialog_card    = myskin.getDialogBook(myserver, this, 2);
+            mydialog_paper   = myskin.getDialogBook(myserver, this, 3);
+            mydialog_sign    = myskin.getDialogBook(myserver, this, 4);
+            mydialog_monument    = myskin.getDialogBook(myserver, this, 5);
+            mydialog_scripted_dialog    = myskin.getDialogBook(myserver, this, 6);
+            mydialog_motd    = myskin.getDialogBook(myserver, this, 7);
+
             mydialog_keybind = myskin.getDialogKeyBind(myserver, this);
         }
         catch (JXCSkinException e)

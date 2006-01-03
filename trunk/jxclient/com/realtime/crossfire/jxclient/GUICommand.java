@@ -1,3 +1,22 @@
+//
+// This file is part of JXClient, the Fullscreen Java Crossfire Client.
+//
+//    JXClient is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    JXClient is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with JXClient; if not, write to the Free Software
+//    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+//
+// JXClient is (C)2005 by Yann Chachkoff.
+//
 package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.*;
 import java.util.*;
@@ -7,6 +26,12 @@ import javax.swing.*;
 import java.awt.image.*;
 import java.io.*;
 
+/**
+ *
+ * @version 1.0
+ * @author Lauwenmark
+ * @since 1.0
+ */
 public class GUICommand
 {
     private GUIElement mytarget;
@@ -25,6 +50,7 @@ public class GUICommand
     public static final int CMD_GUI_START  = 9;
     public static final int CMD_GUI_LEAVE_DIALOG  = 10;
     public static final int CMD_GUI_SEND_COMMAND = 11;
+    public static final int CMD_GUI_SPELLBELT = 12;
 
     public GUICommand(GUIElement element, int order, Object params)
     {
@@ -77,10 +103,38 @@ public class GUICommand
                 ((JXCWindow)myparams).setDialogStatus(JXCWindow.DLG_NONE);
                 break;
             case CMD_GUI_SEND_COMMAND:
+            {
                 java.util.List lp = (java.util.List)myparams;
                 JXCWindow jxcw = (JXCWindow)lp.get(0);
                 String cmd = (String)lp.get(1);
                 jxcw.send("command 0 "+cmd);
+            }
+                break;
+            case CMD_GUI_SPELLBELT:
+            {
+                java.util.List lp = (java.util.List)myparams;
+                JXCWindow jxcw = (JXCWindow)lp.get(0);
+                SpellBeltItem myspellbelt = (SpellBeltItem)lp.get(1);
+
+                if ((myspellbelt != null)&&(myspellbelt.getSpell()!=null))
+                {
+                    int status = myspellbelt.getStatus();
+                    try
+                    {
+                        if (status==SpellBeltItem.STATUS_CAST)
+                            jxcw.getServerConnection().writePacket("command 0 cast "+
+                                    myspellbelt.getSpell().getInternalName());
+                        else
+                            jxcw.getServerConnection().writePacket("command 0 invoke "+
+                                    myspellbelt.getSpell().getInternalName());
+                    }
+                    catch (Exception ex)
+                    {
+                        ex.printStackTrace();
+                        System.exit(0);
+                    }
+                }
+            }
                 break;
         }
     }
