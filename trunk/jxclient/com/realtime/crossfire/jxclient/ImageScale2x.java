@@ -1,3 +1,22 @@
+//
+// This file is part of JXClient, the Fullscreen Java Crossfire Client.
+//
+//    JXClient is free software; you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation; either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    JXClient is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with JXClient; if not, write to the Free Software
+//    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+//
+// JXClient is (C)2005 by Yann Chachkoff.
+//
 package com.realtime.crossfire.jxclient;
 
 import java.awt.image.BufferedImage;
@@ -9,7 +28,7 @@ import com.realtime.crossfire.jxclient.*;
 
 /**
  * A utility to perform the scale2x algorithm on a Java Image
- * 
+ *
  * @author Kevin Glass
  */
 public class ImageScale2x
@@ -20,7 +39,7 @@ public class ImageScale2x
     private int width;
     /** The height of the image */
     private int height;
-    
+
     /**
      * Create a new scaler that will scale the passed image
      *
@@ -30,30 +49,30 @@ public class ImageScale2x
     {
         width = srcImage.getWidth();
         height = srcImage.getHeight();
-        
+
         srcData = new int[width*height];
-        srcImage.getRGB(0,0,width,height,srcData,0,width);              
+        srcImage.getRGB(0,0,width,height,srcData,0,width);
     }
-    
+
     /**
-     * Retrieve the scaled image. Note this is the method that actually 
+     * Retrieve the scaled image. Note this is the method that actually
      * does the work so it may take some time to return
-     * 
+     *
      * @return The newly scaled image
      */
     public BufferedImage getScaledImage()
     {
         RawScale2x scaler = new RawScale2x(srcData,width,height);
-        
+
         BufferedImage image = new BufferedImage(width*2,height*2,BufferedImage.TYPE_INT_ARGB);
         image.setRGB(0,0,width*2,height*2,scaler.getScaledData(),0,width*2);
-        
+
         return image;
     }
-    
+
     /**
      * An entry point and a bit of test code
-     * 
+     *
      * @param argv The arguments passed in to the test code
      */
     public static void main(String argv[])
@@ -71,7 +90,7 @@ public class ImageScale2x
             outFile += ".png";
             System.out.println("Writing: "+outFile);
             ImageIO.write(out,"PNG",new File(outFile));
-        } 
+        }
         catch (Exception e)
         {
             e.printStackTrace();
