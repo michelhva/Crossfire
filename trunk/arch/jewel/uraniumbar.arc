@@ -33,6 +33,7 @@ material 2
 materialname enriched uranium
 glow_radius 1
 value 400000
+# adeb0
 weight 10000
 identified 1
 editable 2048
@@ -42,4 +43,22 @@ end
 #Above composition ^^
 #99.9% U235
 
+Object depleteduraniumbar
+name depleted uranium bar
+race gold and jewels
+face uraniumbar.111
+color_fg grey
+nrof 1
+type 73
+material 2
+materialname depleted uranium
+value 20
+weight 10000
+identified 1
+editable 2048
+name_pl depleted uranium bars
+client_type 2005
+end
+#Above composition ^^
+#99.9% U238
 
