@@ -716,6 +716,7 @@ y 7
 end
 arch s_shop2
 name small house
+name_pl small house
 slaying /navar_city/spyhouse
 hp 16
 sp 18
@@ -2751,6 +2752,14 @@ x 8
 y 7
 end
 arch brush
+x 8
+y 7
+end
+arch castle_west
+name Jail
+slaying /navar_city/jail/jail
+hp 1
+sp 7
 x 8
 y 7
 end
