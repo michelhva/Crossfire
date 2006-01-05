@@ -22,6 +22,7 @@ import com.realtime.crossfire.jxclient.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.util.prefs.*;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -55,9 +56,61 @@ public class jxclient
     {
         try
         {
-           JXCWindow jxwin = new JXCWindow();
-           jxwin.init(Integer.parseInt(args[0]), Integer.parseInt(args[1]),
-                      Integer.parseInt(args[2]), Integer.parseInt(args[3]));
+            Preferences prefs = Preferences.userRoot();
+            String str_width  = prefs.get("width", "1024");
+            String str_height = prefs.get("height", "768");
+            String str_bpp    = prefs.get("bpp", "-1");
+            String str_freq   = prefs.get("frequency", "0");
+            String str_skin   = prefs.get("skin", "jxcskin_default.jar");
+
+            for(int i=0; i<args.length; i++)
+            {
+                if ((args[i].equals("-W"))&&(i+1<args.length))
+                {
+                    str_width = args[i+1];
+                    i++;
+                }
+                else if ((args[i].equals("-H"))&&(i+1<args.length))
+                {
+                    str_height = args[i+1];
+                    i++;
+                }
+                else if ((args[i].equals("-B"))&&(i+1<args.length))
+                {
+                    str_bpp = args[i+1];
+                    i++;
+                }
+                else if ((args[i].equals("-F"))&&(i+1<args.length))
+                {
+                    str_freq = args[i+1];
+                    i++;
+                }
+                else if ((args[i].equals("-F"))&&(i+1<args.length))
+                {
+                    str_skin = args[i+1];
+                    i++;
+                }
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Available options:");
+                    System.out.println(" -W <size> : Width of the screen, in pixels;");
+                    System.out.println(" -H <size> : Height of the screen, in pixels;");
+                    System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
+                    System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
+                    System.out.println(" -S <skin.jar> : Jar file containing the skin to use (unimplemented);");
+                    System.exit(0);
+                }
+            }
+            prefs.put("width",      str_width);
+            prefs.put("height",     str_height);
+            prefs.put("bpp",        str_bpp);
+            prefs.put("frequency",  str_freq);
+            prefs.put("skin",       str_skin);
+
+            JXCWindow jxwin = new JXCWindow();
+            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height),
+                      Integer.parseInt(str_bpp), Integer.parseInt(str_freq));
         }
         catch (Exception e)
         {
