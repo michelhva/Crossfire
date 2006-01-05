@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name Mwizard6
+region lakecountry
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 05:29:28 1995
 endmsg
-x 22
-y 30
+width 22
+height 30
 end
 arch flagstone
 end
@@ -1536,9 +1536,9 @@ y 16
 end
 arch button_lever
 name One
+connected 666
 x 9
 y 16
-connected 666
 end
 arch flagstone
 x 9
@@ -1735,10 +1735,10 @@ y 18
 end
 arch grate_closed_1
 name One
-x 10
-y 18
 speed 0.500000
 connected 666
+x 10
+y 18
 end
 arch dungeon_magic
 x 10
@@ -1754,10 +1754,10 @@ y 20
 end
 arch grate_closed_1
 name Two
-x 10
-y 20
 speed 0.500000
 connected 6662
+x 10
+y 20
 end
 arch flagstone
 x 10
@@ -1912,9 +1912,9 @@ y 16
 end
 arch button_lever
 name Two
+connected 6662
 x 11
 y 16
-connected 6662
 end
 arch flagstone
 x 11
@@ -2990,9 +2990,9 @@ x 18
 y 18
 end
 arch cwall_3_3
+no_pass 0
 x 18
 y 18
-no_pass 0
 end
 arch flagstone
 x 18
@@ -3418,27 +3418,27 @@ arch flagstone
 x 20
 y 25
 end
-arch flagstone
-x 20
-y 26
-end
 arch magic_ear
 msg
 @match Takisis
 Click.
 endmsg
+connected 99
 x 20
 y 26
-connected 99
+end
+arch flagstone
+x 20
+y 26
 end
 arch teleporter
 slaying MwizardG
 hp 10
 sp 10
-x 20
-y 26
 speed 0.000000
 connected 99
+x 20
+y 26
 end
 arch flagstone
 x 20
@@ -3694,9 +3694,9 @@ end
 arch jessyb
 name Oppie
 hp 10000
+carrying 100
 x 5
 y 19
-carrying 100
 arch key2
 name Ying
 slaying ying
@@ -3715,9 +3715,9 @@ end
 arch jessyb
 name Fonz
 hp 10000
+carrying 100
 x 13
 y 20
-carrying 100
 arch key2
 name Yang
 slaying yang
