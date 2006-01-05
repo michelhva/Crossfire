@@ -48,7 +48,8 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
             throws IOException
     {
         if (picture != null)
-            mybackground = javax.imageio.ImageIO.read(new File(picture));
+            mybackground =
+                javax.imageio.ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
         x = nx;
@@ -111,14 +112,11 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         myindex++;
         render();
     }
-    public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt)
+    private void addTextLine(String txt, int txttype)
     {
-        String[] txtlines = evt.getText().split("\n");
-        for(int i=0; i<txtlines.length;i++)
+        mytext.add(txt);
+        switch(txttype)
         {
-            mytext.add(txtlines[i]);
-            switch(evt.getTextType())
-            {
             case 0: //black
                 mytextcolor.add(Color.WHITE);
                 break;
@@ -161,10 +159,32 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
             default:
                 mytextcolor.add(Color.WHITE);
                 break;
+        }
+        scrollDown();
+    }
+    public static final int MAX_LINE_LENGTH = 40;
+    
+    public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt)
+    {
+        String[] txtlines = evt.getText().split("\n");
+        for(int i=0; i<txtlines.length;i++)
+        {
+            if (txtlines[i].length()>MAX_LINE_LENGTH)
+            {
+                int k=0;
+                for(k=MAX_LINE_LENGTH; k<txtlines[i].length();k+=MAX_LINE_LENGTH)
+                {
+                    String str = txtlines[i].substring(k-MAX_LINE_LENGTH,k);
+                    addTextLine(str, evt.getTextType());
+                }
+                String strf = txtlines[i].substring(k-MAX_LINE_LENGTH,txtlines[i].length());
+                addTextLine(strf, evt.getTextType());
+            }
+            else
+            {
+                addTextLine(txtlines[i], evt.getTextType());
             }
         }
-        if (mytext.size()>mynrlines)
-            myindex++;
         render();
     }
     public void scrollUp()
