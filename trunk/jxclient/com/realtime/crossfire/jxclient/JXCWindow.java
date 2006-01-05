@@ -309,6 +309,27 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     mydialog_current = mydialog_motd;
                     break;
             }
+            if (nv != DLG_NONE)
+            {
+                activateFirstTextArea(mydialog_current);
+            }
+        }
+    }
+    private void activateFirstTextArea(java.util.List<GUIElement> list)
+    {
+        Iterator it = list.iterator();
+        while (it.hasNext())
+        {
+            GUIElement e = (GUIElement)it.next();
+            if (e instanceof com.realtime.crossfire.jxclient.GUIText)
+            {
+                if (e.isVisible())
+                {
+                    deactivateCurrentElement();
+                    e.setActive(true);
+                    myactive_element = e;
+                }
+            }
         }
     }
     private void initRendering()
@@ -324,7 +345,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             oldDisplayMode = gd.getDisplayMode();
 
             DisplayMode ndm = mymode;
-            this.setSize(1024,768);
+            this.setSize(mymode.getWidth(),mymode.getHeight());
             this.setVisible(true);
         }
         else
