@@ -5,9 +5,9 @@ Creator: CF Java Map Editor
 Date:    10/16/2005
 endmsg
 width 10
-height 10
-enter_x 4
-enter_y 8
+height 24
+enter_x 5
+enter_y 11
 end
 arch moat_2_2_2
 end
@@ -35,8 +35,53 @@ end
 arch moat_2_1_1
 y 8
 end
-arch moat_2_2_1
+arch flagstone
 y 9
+end
+arch moat_3_2
+y 9
+end
+arch flagstone
+y 10
+end
+arch moat_3_2
+y 10
+end
+arch flagstone
+y 11
+end
+arch moat_3_2
+y 11
+end
+arch flagstone
+y 12
+end
+arch moat_3_2
+y 12
+end
+arch moat_3_2
+y 13
+end
+arch moat_2_1_1
+y 14
+end
+arch moat_2_1_1
+y 15
+end
+arch moat_2_1_1
+y 16
+end
+arch moat_2_1_1
+y 17
+end
+arch moat_2_1_1
+y 18
+end
+arch moat_2_1_1
+y 19
+end
+arch moat_2_2_1
+y 20
 end
 arch grassbrown
 x 1
@@ -76,9 +121,73 @@ arch grassbrown
 x 1
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 1
 y 9
+end
+arch moat_3_3
+x 1
+y 9
+end
+arch flagstone
+x 1
+y 10
+end
+arch moat_4
+x 1
+y 10
+end
+arch flagstone
+x 1
+y 11
+end
+arch moat_4
+x 1
+y 11
+end
+arch flagstone
+x 1
+y 12
+end
+arch moat_4
+x 1
+y 12
+end
+arch dirtfloor
+x 1
+y 13
+end
+arch moat_3_1
+x 1
+y 13
+end
+arch dirtfloor
+x 1
+y 14
+end
+arch dirtfloor
+x 1
+y 15
+end
+arch dirtfloor
+x 1
+y 16
+end
+arch dirtfloor
+x 1
+y 17
+end
+arch dirtfloor
+x 1
+y 18
+end
+arch dirtfloor
+x 1
+y 19
+end
+arch moat_2_1_2
+x 1
+y 20
 end
 arch grassbrown
 x 2
@@ -139,10 +248,84 @@ arch grassbrown
 x 2
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 2
 y 9
 end
+arch moat_3_3
+x 2
+y 9
+end
+arch flagstone
+x 2
+y 10
+end
+arch moat_4
+x 2
+y 10
+end
+arch flagstone
+x 2
+y 11
+end
+arch moat_4
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch moat_4
+x 2
+y 12
+end
+arch dirtfloor
+x 2
+y 13
+end
+arch moat_3_1
+x 2
+y 13
+end
+arch dirtfloor
+x 2
+y 14
+end
+arch dirtfloor
+x 2
+y 15
+end
+arch dungeon_magic
+x 2
+y 15
+end
+arch stair_down
+name stairs going down (shared apartment)
+slaying /@%ntree/non-random1!/scorn/apartment/apartments
+x 2
+y 15
+end
+arch dirtfloor
+x 2
+y 16
+end
+arch dirtfloor
+x 2
+y 17
+end
+arch dirtfloor
+x 2
+y 18
+end
+arch dirtfloor
+x 2
+y 19
+end
+arch moat_2_1_2
+x 2
+y 20
+end
 arch grassbrown
 x 3
 end
@@ -181,10 +364,74 @@ arch grassbrown
 x 3
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 3
 y 9
 end
+arch moat_3_3
+x 3
+y 9
+end
+arch flagstone
+x 3
+y 10
+end
+arch moat_4
+x 3
+y 10
+end
+arch flagstone
+x 3
+y 11
+end
+arch moat_4
+x 3
+y 11
+end
+arch flagstone
+x 3
+y 12
+end
+arch moat_4
+x 3
+y 12
+end
+arch dirtfloor
+x 3
+y 13
+end
+arch moat_3_1
+x 3
+y 13
+end
+arch dirtfloor
+x 3
+y 14
+end
+arch dirtfloor
+x 3
+y 15
+end
+arch dirtfloor
+x 3
+y 16
+end
+arch dirtfloor
+x 3
+y 17
+end
+arch dirtfloor
+x 3
+y 18
+end
+arch dirtfloor
+x 3
+y 19
+end
+arch moat_2_1_2
+x 3
+y 20
+end
 arch grassbrown
 x 4
 end
@@ -223,10 +470,74 @@ arch grassbrown
 x 4
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 4
 y 9
 end
+arch moat_2_2_3
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch moat_3_4
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch moat_3_4
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch moat_3_4
+x 4
+y 12
+end
+arch dirtfloor
+x 4
+y 13
+end
+arch moat_2_2_4
+x 4
+y 13
+end
+arch dirtfloor
+x 4
+y 14
+end
+arch dirtfloor
+x 4
+y 15
+end
+arch dirtfloor
+x 4
+y 16
+end
+arch dirtfloor
+x 4
+y 17
+end
+arch dirtfloor
+x 4
+y 18
+end
+arch dirtfloor
+x 4
+y 19
+end
+arch moat_2_1_2
+x 4
+y 20
+end
 arch grassbrown
 x 5
 end
@@ -261,13 +572,83 @@ arch grassbrown
 x 5
 y 7
 end
+arch sign
+name Random template
+msg
+This is for testing randomly generated template maps.
+endmsg
+x 5
+y 7
+end
 arch grassbrown
 x 5
 y 8
 end
-arch moat_2_1_2
+arch flagstone
+name rock bridge
+face minedoor_8.111
 x 5
 y 9
+end
+arch flagstone
+name rock bridge
+face minedoor_8.111
+x 5
+y 10
+end
+arch flagstone
+name rock bridge
+face minedoor_8.111
+x 5
+y 11
+end
+arch flagstone
+name rock bridge
+face minedoor_8.111
+x 5
+y 12
+end
+arch flagstone
+name rock bridge
+face minedoor_8.111
+x 5
+y 13
+end
+arch dirtfloor
+x 5
+y 14
+end
+arch dirtfloor
+x 5
+y 15
+end
+arch sign
+name Fixed template
+msg
+This is for testing non-randomly generated template maps.
+endmsg
+x 5
+y 15
+end
+arch dirtfloor
+x 5
+y 16
+end
+arch dirtfloor
+x 5
+y 17
+end
+arch dirtfloor
+x 5
+y 18
+end
+arch dirtfloor
+x 5
+y 19
+end
+arch moat_2_1_2
+x 5
+y 20
 end
 arch grassbrown
 x 6
@@ -307,9 +688,73 @@ arch grassbrown
 x 6
 y 8
 end
-arch moat_2_1_2
+arch grassbrown
 x 6
 y 9
+end
+arch moat_2_2_2
+x 6
+y 9
+end
+arch flagstone
+x 6
+y 10
+end
+arch moat_3_2
+x 6
+y 10
+end
+arch flagstone
+x 6
+y 11
+end
+arch moat_3_2
+x 6
+y 11
+end
+arch flagstone
+x 6
+y 12
+end
+arch moat_3_2
+x 6
+y 12
+end
+arch dirtfloor
+x 6
+y 13
+end
+arch moat_2_2_1
+x 6
+y 13
+end
+arch dirtfloor
+x 6
+y 14
+end
+arch dirtfloor
+x 6
+y 15
+end
+arch dirtfloor
+x 6
+y 16
+end
+arch dirtfloor
+x 6
+y 17
+end
+arch dirtfloor
+x 6
+y 18
+end
+arch dirtfloor
+x 6
+y 19
+end
+arch moat_2_1_2
+x 6
+y 20
 end
 arch grassbrown
 x 7
@@ -415,9 +860,73 @@ arch grassbrown
 x 7
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 7
 y 9
+end
+arch moat_3_3
+x 7
+y 9
+end
+arch flagstone
+x 7
+y 10
+end
+arch moat_4
+x 7
+y 10
+end
+arch flagstone
+x 7
+y 11
+end
+arch moat_4
+x 7
+y 11
+end
+arch flagstone
+x 7
+y 12
+end
+arch moat_4
+x 7
+y 12
+end
+arch dirtfloor
+x 7
+y 13
+end
+arch moat_3_1
+x 7
+y 13
+end
+arch dirtfloor
+x 7
+y 14
+end
+arch dirtfloor
+x 7
+y 15
+end
+arch dirtfloor
+x 7
+y 16
+end
+arch dirtfloor
+x 7
+y 17
+end
+arch dirtfloor
+x 7
+y 18
+end
+arch dirtfloor
+x 7
+y 19
+end
+arch moat_2_1_2
+x 7
+y 20
 end
 arch grassbrown
 x 8
@@ -457,9 +966,73 @@ arch grassbrown
 x 8
 y 8
 end
-arch moat_2_1_2
+arch flagstone
 x 8
 y 9
+end
+arch moat_3_3
+x 8
+y 9
+end
+arch flagstone
+x 8
+y 10
+end
+arch moat_4
+x 8
+y 10
+end
+arch flagstone
+x 8
+y 11
+end
+arch moat_4
+x 8
+y 11
+end
+arch flagstone
+x 8
+y 12
+end
+arch moat_4
+x 8
+y 12
+end
+arch dirtfloor
+x 8
+y 13
+end
+arch moat_3_1
+x 8
+y 13
+end
+arch dirtfloor
+x 8
+y 14
+end
+arch dirtfloor
+x 8
+y 15
+end
+arch dirtfloor
+x 8
+y 16
+end
+arch dirtfloor
+x 8
+y 17
+end
+arch dirtfloor
+x 8
+y 18
+end
+arch dirtfloor
+x 8
+y 19
+end
+arch moat_2_1_2
+x 8
+y 20
 end
 arch grassbrown
 x 9
@@ -531,7 +1104,95 @@ arch moat_2_1_1
 x 9
 y 8
 end
-arch moat_2_2_4
+arch flagstone
 x 9
 y 9
+end
+arch moat_3_4
+x 9
+y 9
+end
+arch flagstone
+x 9
+y 10
+end
+arch moat_3_4
+x 9
+y 10
+end
+arch flagstone
+x 9
+y 11
+end
+arch moat_3_4
+x 9
+y 11
+end
+arch flagstone
+x 9
+y 12
+end
+arch moat_3_4
+x 9
+y 12
+end
+arch dirtfloor
+x 9
+y 13
+end
+arch moat_3_4
+x 9
+y 13
+end
+arch dirtfloor
+x 9
+y 14
+end
+arch moat_2_1_1
+x 9
+y 14
+end
+arch dirtfloor
+x 9
+y 15
+end
+arch moat_2_1_1
+x 9
+y 15
+end
+arch dirtfloor
+x 9
+y 16
+end
+arch moat_2_1_1
+x 9
+y 16
+end
+arch dirtfloor
+x 9
+y 17
+end
+arch moat_2_1_1
+x 9
+y 17
+end
+arch dirtfloor
+x 9
+y 18
+end
+arch moat_2_1_1
+x 9
+y 18
+end
+arch dirtfloor
+x 9
+y 19
+end
+arch moat_2_1_1
+x 9
+y 19
+end
+arch moat_2_2_4
+x 9
+y 20
 end
