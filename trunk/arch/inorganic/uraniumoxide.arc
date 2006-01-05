@@ -14,5 +14,7 @@ name_pl piles
 client_type 641
 end
 # This is what is found in the wild, don't put uranium (it is used for a quest)
-# on your maps, put this uraniumoxide instead if you must.
+# on your maps, put this uraniumoxide instead if you must. However uraniumoxide
+# should be very very rare in the crossfire world.
+
 
