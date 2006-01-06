@@ -1,6 +1,6 @@
 arch map
-region nurnberg
 name city
+region nurnberg
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -4138,7 +4138,7 @@ arch grass
 x 26
 y 21
 end
-arch grass
+arch cobblestones
 x 26
 y 22
 end
@@ -4150,7 +4150,7 @@ arch grass
 x 26
 y 24
 end
-arch grass
+arch cobblestones
 x 26
 y 25
 end
@@ -4334,17 +4334,17 @@ y 21
 end
 arch sign
 name Nurnberg Message Board
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Nurnberg  Board
-end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, say help.
 endmsg
 x 27
 y 21
+arch event_say
+name Nurnberg  Board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch grass
 x 27
@@ -4936,4 +4936,12 @@ hp 14
 sp 32
 x 26
 y 8
+end
+arch barn
+name Dragon Hangar
+slaying /pup_land/nurnberg/dragonhangar/hangar
+hp 15
+sp 1
+x 26
+y 23
 end
