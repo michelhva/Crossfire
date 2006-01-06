@@ -96,6 +96,14 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
     }
     protected void redrawSquare(Graphics g, MapSquare square, int nz)
     {
+        if (square == null) //Sometimes happen. Not sure of the origin, but I think
+                            //it is related to a scrolling faster than a non-cached
+                            //image happening. Seems harmless to simply ignore the
+                            //null square here.
+        {
+            System.err.println("Warning ! Null square detected");
+            return;
+        }
         if (square.isDirty()==false)
             return;
         if (nz == 0)
