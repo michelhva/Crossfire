@@ -106,7 +106,7 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
         switch (mytype)
         {
             case ITEM_FLOOR:
-                list = ItemsList.getItems(0);
+                list = ItemsList.getItems(ItemsList.getCurrentFloor());
                 if ((list.size()> myindex)&&(myindex>0))
                     myitem = (CfItem)list.get(myindex);
                 else
@@ -145,7 +145,7 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
         switch (mytype)
         {
             case ITEM_FLOOR:
-                list = ItemsList.getItems(0);
+                list = ItemsList.getItems(ItemsList.getCurrentFloor());
                 if ((list.size()> myindex)&&(myindex>0))
                     myitem = (CfItem)list.get(myindex);
                 else
@@ -441,8 +441,20 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
             case ITEM_FLOOR:
                 if (myitem == item)
                 {
-                    if (myitem.getLocation()!=0)
+                    if (myitem.getLocation()!=ItemsList.getCurrentFloor())
                         myitem = null;
+                    render();
+                }
+                else if (myitem != null)
+                {
+                    if (myitem.getLocation()!=ItemsList.getCurrentFloor())
+                    {
+                        java.util.List list = ItemsList.getItems(ItemsList.getCurrentFloor());
+                        if ((list.size()> myindex)&&(myindex>=0))
+                            myitem = (CfItem)list.get(myindex);
+                        else
+                            myitem = null;
+                    }
                     render();
                 }
                 break;
@@ -468,10 +480,9 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
         switch (mytype)
         {
             case ITEM_FLOOR:
-                if (item.getLocation()==0)
+                if (item.getLocation()==ItemsList.getCurrentFloor())
                 {
-                    list = ItemsList.getItems(0);
-
+                    list = ItemsList.getItems(ItemsList.getCurrentFloor());
                     if (list.size()> myindex)
                         myitem = (CfItem)list.get(myindex);
                     else
@@ -506,9 +517,9 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
         switch (mytype)
         {
             case ITEM_FLOOR:
-                if (item.getLocation()==0)
+                if (item.getLocation()==ItemsList.getCurrentFloor())
                 {
-                    list = ItemsList.getItems(0);
+                    list = ItemsList.getItems(ItemsList.getCurrentFloor());
 
                     if (list.size()> myindex)
                         myitem = (CfItem)list.get(myindex);
