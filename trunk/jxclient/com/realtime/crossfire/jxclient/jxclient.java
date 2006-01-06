@@ -85,7 +85,7 @@ public class jxclient
                     str_freq = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-F"))&&(i+1<args.length))
+                else if ((args[i].equals("-S"))&&(i+1<args.length))
                 {
                     str_skin = args[i+1];
                     i++;
@@ -99,7 +99,7 @@ public class jxclient
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
                     System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
                     System.out.println(" -S <skin.jar> : Jar file containing the skin to use (unimplemented);");
-                    System.exit(0);
+                    System.exit(1);
                 }
             }
             prefs.put("width",      str_width);
