@@ -41,8 +41,9 @@ public class ItemsList
 {
     private static java.util.List<CfItem>         items   = new ArrayList<CfItem>();
     private static Hashtable<String,CfItem>       myitems = new Hashtable<String,CfItem>();
-    private static CfPlayer                       myplayer= null;
-    private static java.util.List<Spell>          myspells= new ArrayList<Spell>();
+    private static CfPlayer                      myplayer = null;
+    private static java.util.List<Spell>         myspells = new ArrayList<Spell>();
+    private static int                     mycurrentfloor = 0;
 
     private static java.util.List<CrossfireDelitemListener> mylisteners_delitem =
             new ArrayList<CrossfireDelitemListener>();
@@ -243,22 +244,40 @@ public class ItemsList
             }
         }
     }
+    public static int getCurrentFloor()
+    {
+        return mycurrentfloor;
+    }
     public static void updateItem(DataInputStream dis) throws IOException
     {
         int len = dis.available();
         int pos = 0;
-
         int flags = dis.readUnsignedByte();
         int tag = dis.readInt();
         CfItem item = myitems.get(String.valueOf(tag));
         if ((myplayer != null)&&(myplayer.getTag()==tag))
             item = myplayer;
 
+
         if ((flags & CfItem.UPD_FLAGS)!=0)
         {
+            boolean wasopen = false;
+            if (mycurrentfloor == item.getTag())
+            {
+                System.out.println("Item "+item.getName()+" was open");
+                wasopen = item.isOpen();
+            }
             int obfl = dis.readInt();
             item.setFlags(obfl);
             pos+=4;
+            if (item.isOpen())
+            {
+                mycurrentfloor = item.getTag();
+            }
+            else if (wasopen==true)
+            {
+                mycurrentfloor = 0;
+            }
         }
         if ((flags & CfItem.UPD_WEIGHT)!=0)
         {
@@ -304,7 +323,8 @@ public class ItemsList
         Iterator it = mylisteners_upditem.iterator();
         while (it.hasNext())
         {
-            ((CrossfireUpditemListener)it.next()).CommandUpditemReceived(evt);
+            CrossfireUpditemListener guielt = (CrossfireUpditemListener)it.next();
+            guielt.CommandUpditemReceived(evt);
         }
     }
     public static void createPlayer(DataInputStream dis) throws IOException
