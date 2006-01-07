@@ -558,39 +558,43 @@ arch awall_2_1_2
 x 3
 y 19
 end
-arch woodfloor
+arch invis_exit
+slaying city
+hp 3
+sp 2
 x 4
 end
-arch awall_2_1_2
+arch check_inv
+slaying ftap
+connected 159
+no_pass 1
 x 4
 end
 arch magic_mouth
 msg
 A tiny voice says to you:
-Hello adventurer. You have the TownPass
-so I will teleport you into the town.
+Hello adventurer. Since you have the TownPass
+you may take the shortcut into the town.
 endmsg
 connected 159
 walk_on 0
 fly_on 0
 x 4
-y 1
-end
-arch teleporter
-invisible 1
-slaying city
-connected 159
-speed 0.0
-x 4
-y 1
 end
 arch woodfloor
 x 4
-y 1
+end
+arch grate_closed_1
+connected 159
+x 4
 end
 arch check_inv
 slaying ftap
 connected 159
+x 4
+y 1
+end
+arch woodfloor
 x 4
 y 1
 end
