@@ -11,6 +11,24 @@ enter_y 2
 end
 arch cobblestones2
 end
+arch guildmaster
+name dwarf
+face dwarf_p.111
+hp 100
+maxhp 100
+pick_up 0
+randomitems standard
+arch quest_override
+msg
+@match 1
+First sentence
+@match 2
+Second sentence
+endmsg
+name_pl dummy
+hp 7
+end
+end
 arch cobblestones2
 y 1
 end
@@ -106,14 +124,6 @@ endlore
 name_pl dummy
 end
 end
-arch quest_override
-msg
-@match quest
-You completed the quest already.
-endmsg
-hp 8
-name_pl dummy
-end
 end
 arch cobblestones2
 x 2
@@ -187,14 +197,6 @@ arch dungeon_floor
 x 5
 end
 arch cobblestones2
-x 5
-y 1
-end
-arch marker
-msg
-Random event.
-endmsg
-slaying quest Test random
 x 5
 y 1
 end
