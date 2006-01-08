@@ -11,7 +11,7 @@ wiz_hat.112
 wiz_hat.113
 mina
 speed 0.1
-color_fg black
+magicmap black
 last_sp 12
 ac 1
 Int 2
