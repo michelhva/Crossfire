@@ -14,7 +14,7 @@ material 128
 materialname astolare
 resist_magic 95
 editable 5120
-color_fg black
+magicmap black
 body_shoulder -1
 item_power 4
 end

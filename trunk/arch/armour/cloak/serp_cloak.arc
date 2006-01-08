@@ -6,7 +6,7 @@ type 87
 face serp_cloak.111
 ac 1
 weight 700
-color_fg green
+magicmap green
 resist_poison 30
 value 900
 material 8
