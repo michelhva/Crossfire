@@ -5,7 +5,7 @@ client_type 255
 nrof 1
 type 16
 face dress1.111
-color_fg blue
+magicmap blue
 resist_physical 1
 last_sp 5
 Cha 2

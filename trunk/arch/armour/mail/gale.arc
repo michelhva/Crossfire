@@ -6,7 +6,7 @@ nrof 1
 face gale.111
 Dex 2
 ac 4
-color_fg brown
+magicmap brown
 resist_physical 40
 speed 2.000000
 type 16

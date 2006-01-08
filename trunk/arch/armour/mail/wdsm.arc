@@ -23,7 +23,7 @@ resist_cold 30
 resist_fire 95
 magic -3
 editable 5120
-color_fg black
+magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5

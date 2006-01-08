@@ -22,7 +22,7 @@ resist_electricity 30
 magic 4
 editable 5120
 identified 1
-color_fg black
+magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 12

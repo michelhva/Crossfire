@@ -5,7 +5,7 @@ client_type 256
 nrof 1
 type 16
 face elven_robe.111
-color_fg green
+magicmap green
 last_sp 12
 ac 3
 stealth 1

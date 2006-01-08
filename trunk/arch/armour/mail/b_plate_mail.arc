@@ -5,7 +5,7 @@ name_pl plate mails
 client_type 252
 type 16
 face b_plate_mail.111
-color_fg blue
+magicmap blue
 last_sp 7
 material 2
 materialname bronze

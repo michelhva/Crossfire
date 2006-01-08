@@ -5,7 +5,7 @@ client_type 257
 nrof 1
 type 16
 face lapron.111
-color_fg brown
+magicmap brown
 last_sp 11
 ac 1
 resist_physical 5
