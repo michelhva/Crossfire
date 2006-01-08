@@ -12,7 +12,7 @@ resist_physical 20
 weight 20000
 value 30
 editable 1024
-color_fg black
+magicmap black
 body_torso -1
 gen_sp_armour 10
 end

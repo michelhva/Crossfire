@@ -16,7 +16,7 @@ resist_fire 40
 magic 3
 editable 5120
 identified 1
-color_fg black
+magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5
