@@ -7,8 +7,9 @@ sys.path.insert(0, os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirector
 
 path = os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/events/init')
 
-scripts = os.listdir(path)
+if os.path.exists(path):
+	scripts = os.listdir(path)
 
-for script in scripts:
-	if (script.endswith('.py')):
-		execfile(os.path.join(path, script))
+	for script in scripts:
+		if (script.endswith('.py')):
+			execfile(os.path.join(path, script))
