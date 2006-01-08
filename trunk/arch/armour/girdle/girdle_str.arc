@@ -13,7 +13,7 @@ girdle_str.113
 girdle_str.114
 mina
 speed 0.1
-color_fg red
+magicmap red
 Str 2
 weight 2500
 value 80000

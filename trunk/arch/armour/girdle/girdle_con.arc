@@ -11,7 +11,7 @@ girdle_con.111
 girdle_con.112
 mina
 speed 0.1
-color_fg blue
+magicmap blue
 Con 2
 weight 2500
 value 85000

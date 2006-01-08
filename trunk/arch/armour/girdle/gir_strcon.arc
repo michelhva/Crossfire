@@ -11,7 +11,7 @@ gir_strcon.111
 gir_strcon.112
 mina
 speed 0.1
-color_fg orange
+magicmap orange
 Str 1
 Con 1
 weight 2500
