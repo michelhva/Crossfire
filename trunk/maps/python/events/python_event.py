@@ -10,8 +10,9 @@ import os
 
 path = os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/events', Crossfire.ScriptParameters())
 
-scripts = os.listdir(path)
+if os.path.exists(path):
+	scripts = os.listdir(path)
 
-for script in scripts:
-	if (script.endswith('.py')):
-		execfile(os.path.join(path, script))
+	for script in scripts:
+		if (script.endswith('.py')):
+			execfile(os.path.join(path, script))
