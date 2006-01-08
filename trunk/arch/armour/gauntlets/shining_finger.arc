@@ -9,7 +9,7 @@ anim
 shining_finger.111
 shining_finger.112
 mina
-color_fg black
+magicmap black
 speed .1
 Str 2
 resist_physical 3
