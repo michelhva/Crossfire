@@ -30,7 +30,7 @@ resist_physical 10
 weight 25000
 value 100000
 editable 5120
-color_fg black
+magicmap black
 body_arm -1
 item_power 8
 end
