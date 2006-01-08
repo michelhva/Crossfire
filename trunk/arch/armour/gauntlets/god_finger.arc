@@ -12,7 +12,7 @@ mina
 speed .1
 Str 2
 Dex -1
-color_fg orange
+magicmap orange
 resist_physical 3
 dam +3
 make_invisible 1
