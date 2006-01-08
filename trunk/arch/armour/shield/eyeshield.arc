@@ -14,7 +14,7 @@ weight 15000
 value 30000
 editable 5120
 identified 1
-color_fg white
+magicmap white
 body_arm -1
 item_power 2
 end
