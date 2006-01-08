@@ -11,7 +11,7 @@ exp 3
 material 8
 stealth 1
 editable 5120
-color_fg green
+magicmap green
 item_power 3
 body_foot -2
 end

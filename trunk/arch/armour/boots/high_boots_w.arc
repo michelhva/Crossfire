@@ -14,7 +14,7 @@ type 99
 material 8
 materialname white leather
 editable 1024
-color_fg white
+magicmap white
 body_foot -2
 gen_sp_armour 4
 end
@@ -35,7 +35,7 @@ type 99
 material 2
 materialname white steel
 editable 1024
-color_fg white
+magicmap white
 body_foot -2
 gen_sp_armour 4
 end

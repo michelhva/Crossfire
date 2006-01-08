@@ -17,7 +17,7 @@ type 99
 material 8
 resist_physical 3
 editable 5120
-color_fg black
+magicmap black
 body_foot -2
 item_power 25
 end
