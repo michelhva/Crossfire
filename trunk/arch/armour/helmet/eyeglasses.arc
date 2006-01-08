@@ -11,6 +11,6 @@ Cha -2
 material 4
 materialname glass
 editable 1024
-color_fg black
+magicmap black
 body_head -1
 end
