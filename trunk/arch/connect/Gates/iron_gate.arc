@@ -25,7 +25,7 @@ maxsp 0
 dam 6
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object igate_closed_2
 name iron gate
@@ -52,7 +52,7 @@ dam 6
 maxsp 0
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object igate_open_1
 name iron gate
@@ -79,7 +79,7 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object igate_open_2
 name iron gate
@@ -104,5 +104,5 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
