@@ -5,7 +5,7 @@ msg
 @match sesame
 Click.
 endmsg
-color_fg white
+magicmap white
 color_bg green
 no_pick 1
 invisible 1

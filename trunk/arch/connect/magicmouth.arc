@@ -1,6 +1,6 @@
 Object magic_mouth
 face magicmouth.111
-color_fg white
+magicmap white
 color_bg green
 type 98
 activate_on_push 1
