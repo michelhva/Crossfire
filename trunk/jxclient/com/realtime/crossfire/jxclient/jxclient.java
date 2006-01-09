@@ -91,6 +91,10 @@ public class jxclient
                     str_skin = args[i+1];
                     i++;
                 }
+                else if ((args[i].equals("-opengl")))
+                {
+                    System.setProperty("sun.java2d.opengl", "True");
+                }
                 else
                 {
                     System.out.println("");
@@ -100,6 +104,7 @@ public class jxclient
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
                     System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
                     System.out.println(" -S <skin> : Class containing the skin to use.");
+                    System.out.println(" -opengl   : Enable the OpenGL rendering pipeline.");
                     System.exit(1);
                 }
             }
