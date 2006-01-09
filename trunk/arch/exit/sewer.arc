@@ -1,7 +1,7 @@
 Object sewer_access
 name sewer
 face sewer_access.111
-color_fg brown
+magicmap brown
 type 66
 no_pick 1
 editable 2
@@ -16,7 +16,7 @@ end
 Object sewer_access2
 name sewer
 face sewer_access.112
-color_fg brown
+magicmap brown
 type 66
 no_pick 1
 editable 2

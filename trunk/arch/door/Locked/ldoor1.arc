@@ -6,7 +6,7 @@ You need the special key to open this door.
 endmsg
 no_pass 1
 face ldoor1.111
-color_fg dark_orange
+magicmap dark_orange
 type 20
 no_pick 1
 editable 16

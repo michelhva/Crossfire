@@ -1,6 +1,6 @@
 Object exit
 face exit.111
-color_fg blue
+magicmap blue
 speed 0.5
 type 66
 no_pick 1

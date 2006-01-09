@@ -4,7 +4,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10

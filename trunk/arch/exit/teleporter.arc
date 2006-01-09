@@ -1,6 +1,6 @@
 Object teleporter
 face teleporter.111
-color_fg red
+magicmap red
 speed 0.1
 type 41
 activate_on_push 1

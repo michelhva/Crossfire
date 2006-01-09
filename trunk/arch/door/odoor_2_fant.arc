@@ -4,7 +4,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2_fant_blue-green.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10
@@ -22,7 +22,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2_fant_blue-yellow.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10
@@ -40,7 +40,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2_fant_brown.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10
@@ -58,7 +58,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2_fant_red-white.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10
@@ -76,7 +76,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face odoor_2_fant_red-yellow.111
-color_fg orange
+magicmap orange
 hp 400
 exp 1
 ac 10
