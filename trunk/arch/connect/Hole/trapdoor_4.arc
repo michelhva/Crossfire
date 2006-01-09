@@ -11,5 +11,5 @@ no_pick 1
 weight 120000
 editable 2
 visibility 50
-color_fg black
+magicmap black
 end

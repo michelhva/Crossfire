@@ -22,7 +22,7 @@ wc 10
 maxsp 0
 editable 18
 visibility 50
-color_fg black
+magicmap black
 end
 Object pit_open
 name pit
@@ -49,5 +49,5 @@ wc 0
 maxsp 1
 editable 18
 visibility 50
-color_fg black
+magicmap black
 end
