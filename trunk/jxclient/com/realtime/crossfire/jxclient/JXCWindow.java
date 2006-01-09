@@ -80,7 +80,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private java.util.List<GUIElement> mydialog_current = null;
 
-    private JXCSkin myskin = new JXCSkinPrelude();
+    private JXCSkin myskin = null;
 
     private java.util.List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
     private boolean[] key_shift = new boolean[]{false, false, false, false};
@@ -472,12 +472,22 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    public void init(int w, int h, int b, int f)
+    public void init(int w, int h, int b, int f, String skinclass)
     {
         addKeyListener(this);
         addMouseListener(this);
         addMouseMotionListener(this);
         mymode = new DisplayMode(w,h,b,f);
+        try
+        {
+            myskin = (JXCSkin)(Class.forName(skinclass).newInstance());
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            System.exit(1);
+        }
+
         try
         {
             initRendering();

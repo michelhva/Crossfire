@@ -37,7 +37,8 @@ public class Spell
 
     public Spell(String filename, String spellname, String id) throws IOException
     {
-        myspellpic   = javax.imageio.ImageIO.read(new File(filename));
+        myspellpic   =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(filename));
         myspellname = spellname;
         myid = id;
     }

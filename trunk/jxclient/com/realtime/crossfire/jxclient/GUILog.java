@@ -42,6 +42,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
     private int mynrlines;
     private int mylogtype;
     private int myindex;
+    private int mynrchars = 40;
 
     public GUILog
             (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nt)
@@ -58,6 +59,35 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         h = nh;
         myfont = nf;
         mynrlines = nnr;
+        myindex = 0;
+        mylogtype = nt;
+
+        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        Graphics2D g = mybuffer.createGraphics();
+        if (mybackground != null)
+            g.drawImage(mybackground, x, y, null);
+        g.dispose();
+        myname = nn;
+    }
+    public GUILog
+          (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nnw, int nt)
+            throws IOException
+    {
+        if (picture != null)
+            mybackground =
+                    javax.imageio.ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
+        else
+            mybackground = null;
+        x = nx;
+        y = ny;
+        w = nw;
+        h = nh;
+        myfont = nf;
+        mynrlines = nnr;
+        mynrchars = nnw;
         myindex = 0;
         mylogtype = nt;
 
@@ -162,22 +192,21 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         }
         scrollDown();
     }
-    public static final int MAX_LINE_LENGTH = 40;
-    
+
     public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt)
     {
         String[] txtlines = evt.getText().split("\n");
         for(int i=0; i<txtlines.length;i++)
         {
-            if (txtlines[i].length()>MAX_LINE_LENGTH)
+            if (txtlines[i].length()>mynrchars)
             {
                 int k=0;
-                for(k=MAX_LINE_LENGTH; k<txtlines[i].length();k+=MAX_LINE_LENGTH)
+                for(k=mynrchars; k<txtlines[i].length();k+=mynrchars)
                 {
-                    String str = txtlines[i].substring(k-MAX_LINE_LENGTH,k);
+                    String str = txtlines[i].substring(k-mynrchars,k);
                     addTextLine(str, evt.getTextType());
                 }
-                String strf = txtlines[i].substring(k-MAX_LINE_LENGTH,txtlines[i].length());
+                String strf = txtlines[i].substring(k-mynrchars,txtlines[i].length());
                 addTextLine(strf, evt.getTextType());
             }
             else

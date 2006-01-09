@@ -50,7 +50,8 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             throws IOException
     {
         if (picture != null)
-            mybackground = javax.imageio.ImageIO.read(new File(picture));
+            mybackground =
+                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         else
             mybackground = null;
         x = nx;

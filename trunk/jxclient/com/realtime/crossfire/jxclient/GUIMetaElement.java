@@ -46,8 +46,10 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
                           String pic_udp, Font nf, GUIText txt, GUILabel comment,
                           int meta_id) throws IOException
     {
-        mypicture_tcp = javax.imageio.ImageIO.read(new File(pic_tcp));
-        mypicture_udp = javax.imageio.ImageIO.read(new File(pic_udp));
+        mypicture_tcp =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
+        mypicture_udp =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_udp));
         x = nx;
         y = ny;
         w = nw;
