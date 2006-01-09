@@ -18,7 +18,7 @@ spinner.11D
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_-90
 name spinner
@@ -46,7 +46,7 @@ spinner.11D
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_-45
 name spinner
@@ -74,7 +74,7 @@ spinner.11D
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_45
 name spinner
@@ -102,7 +102,7 @@ spinner.111
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_90
 name spinner
@@ -130,7 +130,7 @@ spinner.111
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_135
 name spinner
@@ -152,7 +152,7 @@ spinner.111
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
 Object spinner_180
 name spinner
@@ -172,5 +172,5 @@ spinner.11D
 mina
 editable 32
 visibility 50
-color_fg black
+magicmap black
 end
