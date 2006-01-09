@@ -27,7 +27,7 @@ director.181
 director.183
 director.185
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -48,7 +48,7 @@ director.111
 director.112
 director.113
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -70,7 +70,7 @@ director.123
 director.124
 director.125
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -90,7 +90,7 @@ director.131
 director.132
 director.133
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -112,7 +112,7 @@ director.143
 director.144
 director.145
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -132,7 +132,7 @@ director.151
 director.152
 director.153
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -154,7 +154,7 @@ director.163
 director.164
 director.165
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -174,7 +174,7 @@ director.171
 director.172
 director.173
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
@@ -196,7 +196,7 @@ director.183
 director.184
 director.185
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 type 112
 activate_on_push 1
