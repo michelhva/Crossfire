@@ -39,6 +39,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
     private boolean need_update = false;
     private boolean new_map_happened = true;
     private BufferedImage myblacktile = null;
+    private boolean use_big_images = true;
+    private int mysquaresize;
+
     public GUIMap
             (String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
@@ -48,7 +51,42 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         h = nh;
         myname = nn;
 
-        myblacktile = javax.imageio.ImageIO.read(new File("cache/black.png"));
+        myblacktile =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
+
+        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        Graphics2D g = mybuffer.createGraphics();
+        g.setColor(Color.BLACK);
+        g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
+        mysquaresize = ServerConnection.SQUARE_SIZE;
+        g.dispose();
+    }
+    public GUIMap
+            (String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
+    {
+        x = nx;
+        y = ny;
+        w = nw;
+        h = nh;
+        myname = nn;
+
+        use_big_images = big;
+
+        if (big)
+        {
+            myblacktile =
+                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
+            mysquaresize = ServerConnection.SQUARE_SIZE;
+        }
+        else
+        {
+            myblacktile =
+                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black.png"));
+            mysquaresize = 32;
+        }
 
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
@@ -89,10 +127,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
     protected void cleanSquare(Graphics g, MapSquare square)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(((square.getXPos()-10)*ServerConnection.SQUARE_SIZE),
-                     ((square.getYPos()-10)*ServerConnection.SQUARE_SIZE),
-                   ServerConnection.SQUARE_SIZE,
-                   ServerConnection.SQUARE_SIZE);
+        g.fillRect(((square.getXPos()-10)*mysquaresize),
+                   ((square.getYPos()-10)*mysquaresize),
+                   mysquaresize, mysquaresize);
     }
     protected void redrawSquare(Graphics g, MapSquare square, int nz)
     {
@@ -115,11 +152,21 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             Face f = square.getFace(nz);
             if (f != null)
             {
-                BufferedImage img = f.getPicture();
-                int px = (square.getXPos()-10)*ServerConnection.SQUARE_SIZE;
-                int py = (square.getYPos()-10)*ServerConnection.SQUARE_SIZE;
-                int psx = px - (img.getWidth()-ServerConnection.SQUARE_SIZE);
-                int psy = py - (img.getHeight()-ServerConnection.SQUARE_SIZE);
+                BufferedImage img = null;
+
+                if (use_big_images==true)
+                {
+                    img = f.getPicture();
+                }
+                else
+                {
+                    img = f.getOriginalPicture();
+                }
+
+                int px = (square.getXPos()-10)*mysquaresize;
+                int py = (square.getYPos()-10)*mysquaresize;
+                int psx = px - (img.getWidth()-mysquaresize);
+                int psy = py - (img.getHeight()-mysquaresize);
                 g.drawImage(img, psx, psy, img.getWidth(), img.getHeight(), null);
             }
         }

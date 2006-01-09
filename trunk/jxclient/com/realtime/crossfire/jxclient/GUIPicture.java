@@ -37,7 +37,8 @@ public class GUIPicture extends GUIElement
     public GUIPicture
             (String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
     {
-        BufferedImage img = javax.imageio.ImageIO.read(new File(picture));
+        BufferedImage img =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         x = nx;
         y = ny;
         w = nw;

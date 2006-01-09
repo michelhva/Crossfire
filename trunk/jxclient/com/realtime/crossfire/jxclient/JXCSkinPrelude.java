@@ -50,7 +50,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_stats  = font_default_medium.deriveFont(12f);
         }
@@ -133,7 +133,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_default_large  = font_default_medium.deriveFont(16f);
             font_menu   = font_default_medium.deriveFont(14f);
@@ -157,7 +157,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/regular.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/regular.ttf");
             font_default_small  = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_default_small  = font_default_small.deriveFont(16f);
             font_cmdline = font_default_small.deriveFont(14f);
@@ -178,7 +178,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/courbd.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/courbd.ttf");
             font_log  = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_log  = font_log.deriveFont(8f);
         }
@@ -280,7 +280,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_default_large  = font_default_medium.deriveFont(16f);
             font_menu   = font_default_medium.deriveFont(14f);
@@ -304,7 +304,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/regular.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/regular.ttf");
             font_default_small  = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_default_small  = font_default_small.deriveFont(8f);
             font_cmdline = font_default_small.deriveFont(14f);
@@ -325,7 +325,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/courbd.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/courbd.ttf");
             font_log  = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_log  = font_log.deriveFont(8f);
         }
@@ -1797,7 +1797,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_metaurl = font_metaurl.deriveFont(16f);
             font_description = font_metaurl.deriveFont(14f);
@@ -1966,7 +1966,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_metaurl = font_metaurl.deriveFont(14f);
         }
@@ -2048,7 +2048,7 @@ public class JXCSkinPrelude implements JXCSkin
         InputStream ttf=null;
         try
         {
-            ttf = new FileInputStream("default.theme/fonts/default.ttf");
+            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
             font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
             font_metaurl = font_metaurl.deriveFont(14f);
         }

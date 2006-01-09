@@ -23,6 +23,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.prefs.*;
+import java.io.*;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -61,8 +62,8 @@ public class jxclient
             String str_height = prefs.get("height", "768");
             String str_bpp    = prefs.get("bpp", "-1");
             String str_freq   = prefs.get("frequency", "0");
-            String str_skin   = prefs.get("skin", "jxcskin_default.jar");
-
+            String str_skin   = prefs.get("skin", "com.realtime.crossfire.jxclient.JXCSkinPrelude");
+            boolean mkdir_result = (new File("cache")).mkdirs();
             for(int i=0; i<args.length; i++)
             {
                 if ((args[i].equals("-W"))&&(i+1<args.length))
@@ -98,7 +99,7 @@ public class jxclient
                     System.out.println(" -H <size> : Height of the screen, in pixels;");
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
                     System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
-                    System.out.println(" -S <skin.jar> : Jar file containing the skin to use (unimplemented);");
+                    System.out.println(" -S <skin> : Class containing the skin to use.");
                     System.exit(1);
                 }
             }
@@ -110,7 +111,7 @@ public class jxclient
 
             JXCWindow jxwin = new JXCWindow();
             jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height),
-                      Integer.parseInt(str_bpp), Integer.parseInt(str_freq));
+                      Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin);
         }
         catch (Exception e)
         {

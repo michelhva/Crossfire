@@ -1,18 +1,39 @@
 <?xml version="1.0"?>
-<project name="jxclient" default="compile" basedir=".">
-	<property name="src" value="."/>
-	<property name="build" value="build"/>
-	<target name="init">
-		<mkdir dir="${build}"/>
-	</target>
-	<target name="compile" depends="init">
-		<javac srcdir="${src}" destdir="${build}"/>
-	</target>
-	<target name="jar" depends="compile">
-		<jar destfile="jxclient.jar" basedir="${build}">
-			<manifest>
-				<attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
-			</manifest>
-		</jar>
-	</target>
+<project name="jxclient" default="all" basedir=".">
+    <property name="src" value="."/>
+    <property name="build" value="build"/>
+    <target name="init">
+        <mkdir dir="${build}"/>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}" target="1.5"/>
+    </target>
+    <target name="jar" depends="compile">
+        <copy file="cache/black.png" todir="${build}"/>
+        <copy file="cache/black_big.png" todir="${build}"/>
+        <jar destfile="jxclient.jar" basedir="${build}" excludes="**/JXCSkinPrelude.class">
+            <exclude name="**/skins/**"/>
+            <manifest>
+                <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name="skin.prelude" depends="compile">
+        <mkdir dir="${build}/skins/prelude/default.theme"/>
+        <copy todir="${build}/skins/prelude/default.theme">
+            <fileset dir="default.theme"/>
+        </copy>
+        <copy file="${build}/com/realtime/crossfire/jxclient/JXCSkinPrelude.class"
+              todir="${build}/skins/prelude/com/realtime/crossfire/jxclient"/>
+        <jar destfile="jxcskin_prelude.jar" basedir="${build}/skins/prelude">
+        </jar>
+    </target>
+    <target name="clean">
+        <delete dir="${build}" failonerror="false"/>
+        <delete dir="default.theme/com" failonerror="false"/>
+        <delete file="jxclient.jar" failonerror="false"/>
+        <delete file="jxcskin_prelude.jar" failonerror="false"/>
+    </target>
+    <target name="all" depends="jar,skin.prelude">
+    </target>
 </project>

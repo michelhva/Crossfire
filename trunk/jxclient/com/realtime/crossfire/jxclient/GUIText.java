@@ -42,8 +42,10 @@ public class GUIText extends GUIElement implements KeyListener
             (String nn, int nx, int ny, int nw, int nh, String picactive,
                    String picinactive, Font nf, String txt)  throws IOException
     {
-        mybackground_active = javax.imageio.ImageIO.read(new File(picactive));
-        mybackground_inactive = javax.imageio.ImageIO.read(new File(picinactive));
+        mybackground_active =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
+        mybackground_inactive =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
         x = nx;
         y = ny;
         w = nw;

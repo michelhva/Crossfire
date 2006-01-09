@@ -62,11 +62,16 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
              Font mft)
             throws IOException
     {
-        mypicbackground = javax.imageio.ImageIO.read(new File(picture));
-        mypiccursed   = javax.imageio.ImageIO.read(new File(pic_cursed));
-        mypicapplied  = javax.imageio.ImageIO.read(new File(pic_applied));
-        mypicselector = javax.imageio.ImageIO.read(new File(pic_selector));
-        mypiclocked   = javax.imageio.ImageIO.read(new File(pic_locked));
+        mypicbackground =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+        mypiccursed   =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_cursed));
+        mypicapplied  =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_applied));
+        mypicselector =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_selector));
+        mypiclocked   =
+            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
         myindex = index;
         x = nx;
         y = ny;

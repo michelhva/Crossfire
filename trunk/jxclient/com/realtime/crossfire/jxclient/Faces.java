@@ -44,7 +44,6 @@ public class Faces
     private static Face[]                  faces = new Face[NRFACES];
     static
     {
-        System.out.println("Static Faces");
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -98,7 +97,6 @@ public class Faces
         try
         {
             BufferedImage img = new PngImage().read(dis, true);
-            //BufferedImage img = ImageIO.read(dis);
             BufferedImage imx2 = null;
             try
             {
