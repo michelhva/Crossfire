@@ -22,7 +22,7 @@ maxsp 1
 ac 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object grate_closed_1
 name grate
@@ -50,7 +50,7 @@ ac 1
 pass_thru 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object grate_open_2
 name iron gate
@@ -76,7 +76,7 @@ maxsp 1
 ac 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object grate_closed_2
 name grate
@@ -104,5 +104,5 @@ maxsp 0
 pass_thru 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end

@@ -20,7 +20,7 @@ dam 1
 maxsp 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object gate_closed_1
 name gate
@@ -46,7 +46,7 @@ maxsp 0
 dam 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object gate_open_2
 name gate
@@ -71,7 +71,7 @@ dam 1
 maxsp 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object gate_closed_2
 name gate
@@ -98,5 +98,5 @@ dam 1
 maxsp 0
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end

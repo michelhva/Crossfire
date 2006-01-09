@@ -29,5 +29,5 @@ maxhp 20
 hp 20
 speed 0.35
 value 1
-color_fg black
+magicmap black
 end

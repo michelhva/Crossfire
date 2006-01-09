@@ -25,7 +25,7 @@ dam 8
 ac 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object spikes_open
 name spikes
@@ -52,7 +52,7 @@ maxsp 1
 ac 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object spikes_closed
 name spikes
@@ -81,7 +81,7 @@ ac 1
 pass_thru 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object spikes_hidden
 name spikes
@@ -108,5 +108,5 @@ maxsp 1
 ac 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
