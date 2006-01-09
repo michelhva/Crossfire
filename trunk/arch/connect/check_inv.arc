@@ -9,5 +9,5 @@ walk_on 1
 walk_off 1
 slaying setme
 last_sp 1
-color_fg black
+magicmap black
 end

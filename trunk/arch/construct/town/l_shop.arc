@@ -1,7 +1,7 @@
 Object l_shop1
 name shop
 face l_shop1.111
-color_fg black
+magicmap black
 color_bg yellow
 type 66
 no_pick 1

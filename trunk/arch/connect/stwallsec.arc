@@ -25,7 +25,7 @@ maxsp 0
 dam 6
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end
 Object stwall_open_1
 name stone wall
@@ -52,5 +52,5 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg black
+magicmap black
 end

@@ -7,7 +7,7 @@ barrack_l.x11
 barrack_l.x12
 mina
 speed -0.1
-color_fg brown
+magicmap brown
 no_pick 1
 editable 2
 visibility 100
@@ -23,7 +23,7 @@ barrack_l.x11
 barrack_l.x12
 mina
 speed -0.1
-color_fg brown
+magicmap brown
 x 1
 no_pick 1
 visibility 100

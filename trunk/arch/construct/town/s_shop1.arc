@@ -1,7 +1,7 @@
 Object s_shop1
 name small shop
 face s_shop1.111
-color_fg black
+magicmap black
 color_bg yellow
 type 66
 visibility 100
