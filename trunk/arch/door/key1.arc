@@ -1,7 +1,7 @@
 Object key
 race keys
 face key1.111
-color_fg orange
+magicmap orange
 nrof 1
 type 24
 material 2

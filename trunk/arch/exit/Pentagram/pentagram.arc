@@ -1,7 +1,7 @@
 Object pentagram_111
 name pentagram
 face pentagram.111
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -14,7 +14,7 @@ More
 Object pentagram_112
 name pentagram
 face pentagram.112
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -28,7 +28,7 @@ More
 Object pentagram_113
 name pentagram
 face pentagram.113
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -42,7 +42,7 @@ More
 Object pentagram_121
 name pentagram
 face pentagram.121
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -56,7 +56,7 @@ More
 Object pentagram_122
 name pentagram
 face pentagram.122
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -71,7 +71,7 @@ More
 Object pentagram_123
 name pentagram
 face pentagram.123
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -86,7 +86,7 @@ More
 Object pentagram_131
 name pentagram
 face pentagram.131
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -101,7 +101,7 @@ Object pentagram_132
 name pentagram
 face pentagram.132
 x 1
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1
@@ -115,7 +115,7 @@ More
 Object pentagram_133
 name pentagram
 face pentagram.133
-color_fg black
+magicmap black
 speed 0
 type 41
 activate_on_push 1

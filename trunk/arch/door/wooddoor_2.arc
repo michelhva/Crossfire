@@ -3,7 +3,7 @@ name door
 randomitems door
 no_pass 1
 face wooddoor_2.111
-color_fg brown
+magicmap brown
 hp 400
 exp 1
 ac 10

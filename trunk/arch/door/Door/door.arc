@@ -4,7 +4,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_0.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -21,7 +21,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_1.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -38,7 +38,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_2.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -55,7 +55,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_3.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -72,7 +72,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_4.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -89,7 +89,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_5.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -106,7 +106,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_6.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -123,7 +123,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_7.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -140,7 +140,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_8.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -157,7 +157,7 @@ randomitems door
 no_pass 1
 blocksview 1
 face door_9.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -174,7 +174,7 @@ name door
 no_pass 1
 blocksview 1
 face door_A.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -191,7 +191,7 @@ name door
 no_pass 1
 blocksview 1
 face door_B.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -208,7 +208,7 @@ name door
 no_pass 1
 blocksview 1
 face door_C.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -225,7 +225,7 @@ name door
 no_pass 1
 blocksview 1
 face door_D.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -242,7 +242,7 @@ name door
 no_pass 1
 blocksview 1
 face door_E.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10
@@ -259,7 +259,7 @@ name door
 no_pass 1
 blocksview 1
 face door_F.111
-color_fg dark_orange
+magicmap dark_orange
 hp 400
 exp 1
 ac 10

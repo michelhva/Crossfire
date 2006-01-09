@@ -1,7 +1,7 @@
 Object dforest_exit
 type 66
 face darkforest.111
-color_fg green
+magicmap green
 no_pick 1
 editable 2
 visibility 100
