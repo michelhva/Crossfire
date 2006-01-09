@@ -21,7 +21,7 @@ maxsp 0
 dam 6
 editable 16
 visibility 50
-color_fg brown
+magicmap brown
 end
 Object odoorm2rw_open_1
 name wood door
@@ -44,6 +44,6 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg brown
+magicmap brown
 end
 
