@@ -21,7 +21,7 @@ maxsp 0
 dam 6
 editable 16
 visibility 50
-color_fg brown
+magicmap brown
 end
 Object mdoor_closed_2
 name stone door
@@ -46,7 +46,7 @@ maxsp 0
 dam 6
 editable 16
 visibility 50
-color_fg grey
+magicmap grey
 end
 Object mdoor_open_1
 name wood door
@@ -69,7 +69,7 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg brown
+magicmap brown
 end
 Object mdoor_open_2
 name stone door
@@ -92,5 +92,5 @@ dam 6
 maxsp 1
 editable 16
 visibility 50
-color_fg grey
+magicmap grey
 end
