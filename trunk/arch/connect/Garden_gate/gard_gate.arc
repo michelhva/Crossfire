@@ -20,7 +20,7 @@ visibility 100
 ac 1
 wc 0
 pass_thru 1
-color_fg black
+magicmap black
 end
 Object ggate_closed
 name garden gate
@@ -45,5 +45,5 @@ ac 1
 wc 3
 no_pass 1
 pass_thru 1
-color_fg black
+magicmap black
 end

@@ -11,6 +11,6 @@ lever.112
 mina
 editable 48
 visibility 50
-color_fg black
+magicmap black
 client_type 25042
 end
