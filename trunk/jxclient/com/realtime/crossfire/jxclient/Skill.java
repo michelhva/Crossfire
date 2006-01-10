@@ -57,4 +57,8 @@ public class Skill
     {
         return mylevel;
     }
+    public String toString()
+    {
+        return myname;
+    }
 }
