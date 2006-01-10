@@ -93,6 +93,31 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private boolean is_run_active = false;
     private boolean is_fire_active = false;
 
+    public boolean checkRun()
+    {
+        return is_run_active;
+    }
+    public boolean checkFire()
+    {
+        return is_fire_active;
+    }
+    public void terminateScript(ScriptProcess sp)
+    {
+        System.out.println("Script "+sp+" terminated");
+        myserver.removeScriptMonitor((CrossfireScriptMonitorListener)sp);
+    }
+    public void runScript(String cmdline)
+    {
+        System.out.println("Script to run: "+cmdline);
+        try
+        {
+            ScriptProcess sp = new ScriptProcess(cmdline, this);
+        }
+        catch (IOException e)
+        {
+            System.out.println("Unable to run script: "+cmdline);
+        }
+    }
     public void setCurrentSpell(Spell s)
     {
         mycurrentspell = s;

@@ -63,6 +63,9 @@ public class ServerConnection extends Thread
     private static java.util.List<CrossfireQueryListener> mylisteners_query =
             new ArrayList<CrossfireQueryListener>();
 
+    private static java.util.List<CrossfireScriptMonitorListener> scripts_monitor =
+            new ArrayList<CrossfireScriptMonitorListener>();
+
     private static String                  myhost = new String("localhost");
     private static int                     myport = 13327;
 
@@ -204,6 +207,12 @@ public class ServerConnection extends Thread
     {
         synchronized(bout)
         {
+            Iterator it = scripts_monitor.iterator();
+            while (it.hasNext())
+            {
+                ((CrossfireScriptMonitorListener)it.next()).commandSent(str);
+            }
+
             bout.writeShort((short)str.length());
             bout.writeBytes(str);
             synchronized(out)
@@ -752,6 +761,18 @@ public class ServerConnection extends Thread
         {
             cmd_replyinfo(cmd, dis);
         }
+        else if (cmd.startsWith("addspell"))
+        {
+            cmd_addspell(cmd, dis);
+        }
+        else if (cmd.startsWith("updspell"))
+        {
+            cmd_updspell(cmd, dis);
+        }
+        else if (cmd.startsWith("delspell"))
+        {
+            cmd_delspell(cmd, dis);
+        }
         else
         {
             throw new UnknownCommandException("Unknown command: "+cmd);
@@ -760,9 +781,39 @@ public class ServerConnection extends Thread
 
     /**
      * Handles the image server to client command.
-     * @param cmd The S->C command, in this case "image".
+     * @param cmd The S->C command, in this case "addspell".
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
+     */
+    void cmd_addspell(String cmd, DataInputStream dis) throws IOException
+    {
+    }
+
+    /**
+     * Handles the image server to client command.
+     * @param cmd The S->C command, in this case "updspell".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.3
+     */
+    void cmd_updspell(String cmd, DataInputStream dis) throws IOException
+    {
+    }
+
+    /**
+     * Handles the image server to client command.
+     * @param cmd The S->C command, in this case "delspell".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.3
+     */
+    void cmd_delspell(String cmd, DataInputStream dis) throws IOException
+    {
+    }
+
+    /**
+     * Handles the image server to client command.
+     * @param cmd The S->C command, in this case "image".
+     * @param dis The DataInputStream holding the content of the message.
+     * @since 1.3
      */
     void cmd_image(String cmd, DataInputStream dis) throws IOException
     {
@@ -858,7 +909,7 @@ public class ServerConnection extends Thread
     {
         writePacket("version 1023 1027 JXClient Java Client Pegasus 0.1");
         writePacket("toggleextendedtext 1 2 3 4 5 6 7");
-        writePacket("setup sound 0 exp64 1 map1cmd 1 darkness 1 newmapcmd 1 facecache 1 extendedMapInfos 1 extendedTextInfos 1 itemcmd 2 mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
+        writePacket("setup sound 0 exp64 1 map1cmd 1 darkness 1 newmapcmd 1 facecache 1 extendedMapInfos 1 extendedTextInfos 1 itemcmd 2 spellmon 1 mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
         writePacket("requestinfo image_info");
         writePacket("requestinfo skill_info");
         writePacket("toggleextendedtext 1");
@@ -1046,5 +1097,23 @@ public class ServerConnection extends Thread
     public CfPlayer getPlayer()
     {
         return ItemsList.getPlayer();
+    }
+    public void addScriptMonitor(CrossfireScriptMonitorListener listener)
+    {
+        scripts_monitor.add(listener);
+    }
+    public void removeScriptMonitor(CrossfireScriptMonitorListener listener)
+    {
+        scripts_monitor.remove(listener);
+    }
+    public void drawInfo(String msg, int col)
+    {
+        CrossfireCommandDrawinfoEvent evt = new
+                CrossfireCommandDrawinfoEvent(this,msg,col);
+        Iterator it = mylisteners_drawinfo.iterator();
+        while (it.hasNext())
+        {
+            ((CrossfireDrawinfoListener)it.next()).CommandDrawinfoReceived(evt);
+        }
     }
 }

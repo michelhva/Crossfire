@@ -87,6 +87,10 @@ public class GUICommandText extends GUIText implements KeyListener
                         {
                             ((JXCWindow)e.getSource()).removeKeyBinding();
                         }
+                        else if (mytext.startsWith("script "))
+                        {
+                            ((JXCWindow)e.getSource()).runScript(mytext.substring(7));
+                        }
                         else
                         {
                             ((JXCWindow)e.getSource()).send("command 0 "+mytext);
