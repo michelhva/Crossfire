@@ -34,6 +34,7 @@ public class MapSquare
     private Face[] myface=new Face[ServerConnection.NUM_LAYERS];
     private boolean isdirty = false;
     private int mydarkness = 0;
+    private int dirtycounter = 0;
 
     public MapSquare(int nx, int ny)
     {
@@ -118,6 +119,7 @@ public class MapSquare
     public void dirty()
     {
         isdirty = true;
+        dirtycounter = 2;
         for(int layer = 0; layer < ServerConnection.NUM_LAYERS; layer++)
         {
             if ((myhead[layer] == this)&&(myface[layer]!=null))
@@ -154,7 +156,9 @@ public class MapSquare
     }
     public void clean()
     {
-        isdirty = false;
+        dirtycounter--;
+        if (dirtycounter <= 0)
+            isdirty = false;
     }
     public MapSquare getHead(int layer)
     {
