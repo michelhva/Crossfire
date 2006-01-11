@@ -764,6 +764,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             case KeyEvent.VK_W:
                 send("command 0 who");
                 break;
+            case KeyEvent.VK_QUOTE:
+                activateFirstTextArea(mygui);
+                break;
+            case KeyEvent.VK_QUOTEDBL:
+                activateFirstTextArea(mygui);
+                if (myactive_element != null)
+                {
+                    ((GUIText)myactive_element).setText("say ");
+                }
+                break;
             default:
                 break;
         }
