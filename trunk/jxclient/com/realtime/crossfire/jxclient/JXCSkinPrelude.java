@@ -392,8 +392,8 @@ public class JXCSkinPrelude implements JXCSkin
             //UpperPane (207,27)
             GUIPicture gui_title_back = new GUIPicture("title_back", 0+207, 0+27,
                     1024, 128, "default.theme/pictures/title.png");
-            GUILabel gui_label_hp = new GUILabel("label_hp", 235+207, 64+27,
-                    36, 16, null, font_types, Stats.CS_STAT_HP);
+            GUILabel gui_label_hp = new GUILabel("label_hp", 236+207, 64+27,
+                    20, 16, null, font_types, Stats.CS_STAT_HP);
             GUILabel gui_label_fp = new GUILabel("label_fp", 284+207, 64+27,
                     36, 16, null, font_types, Stats.CS_STAT_FOOD);
             GUILabel gui_label_sp = new GUILabel("label_sp", 333+207, 64+27,
@@ -1032,7 +1032,7 @@ public class JXCSkinPrelude implements JXCSkin
             GUILabel gui_label_sstat_exp = new GUILabel("label_sstat_exp", 0+319, 27+621,
                     64, 20, null, font_stats, Stats.CS_STAT_EXP64);
             GUILabel gui_label_sstat_range = new GUILabel("label_sstat_range", 0+319, 49+621,
-                    64, 20, null, font_stats, Stats.CS_STAT_RANGE);
+                    85, 20, null, font_stats, Stats.CS_STAT_RANGE);
             GUILabel gui_label_sstat_wc = new GUILabel("label_sstat_wc", 200+319, 4+621,
                     56, 20, null, font_stats, Stats.CS_STAT_WC);
             GUILabel gui_label_sstat_ac = new GUILabel("label_sstat_ac", 200+319, 27+621,
@@ -1045,6 +1045,17 @@ public class JXCSkinPrelude implements JXCSkin
             //Panel (199,551)
             GUIPicture gui_panel_back = new GUIPicture("panel_back", 0+199, 0+551,
                     700, 230, "default.theme/pictures/background_panel.png");
+            GUIPicture gui_panel_spells = new GUIPicture("panel_spells", 392+199, 74+551,
+                    224, 123, "default.theme/pictures/spell_panel.png");
+            GUILabel gui_panel_spells_icon = new GUILabel("label_panel_spells_icon",
+                    400+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_ICON);
+            GUILabel gui_panel_spells_name = new GUILabel("label_panel_spells_name",
+                    450+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_NAME);
+
+            gui_panel_spells.setVisible(false);
+            gui_panel_spells_icon.setVisible(false);
+            gui_panel_spells_name.setVisible(false);
+
             GUIItem gui_floor0 = new GUIItem("floor0", 0+199+9, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
@@ -1341,6 +1352,12 @@ public class JXCSkinPrelude implements JXCSkin
                                       GUICommand.CMD_HIDE,""));
             command_rsp_display.add(new GUICommand(gui_btn_rinv_down,
                                       GUICommand.CMD_HIDE, ""));
+            command_rsp_display.add(new GUICommand(gui_panel_spells,
+                                      GUICommand.CMD_SHOW, ""));
+            command_rsp_display.add(new GUICommand(gui_panel_spells_icon,
+                                    GUICommand.CMD_SHOW, ""));
+            command_rsp_display.add(new GUICommand(gui_panel_spells_name,
+                                    GUICommand.CMD_SHOW, ""));
 
             command_rsp_undisplay.add(new GUICommand(gui_rsp0, GUICommand.CMD_HIDE, ""));
             command_rsp_undisplay.add(new GUICommand(gui_rsp1, GUICommand.CMD_HIDE, ""));
@@ -1390,6 +1407,12 @@ public class JXCSkinPrelude implements JXCSkin
                                       GUICommand.CMD_SHOW,""));
             command_rsp_undisplay.add(new GUICommand(gui_btn_rinv_down,
                                       GUICommand.CMD_SHOW, ""));
+            command_rsp_undisplay.add(new GUICommand(gui_panel_spells,
+                                      GUICommand.CMD_HIDE, ""));
+            command_rsp_undisplay.add(new GUICommand(gui_panel_spells_icon,
+                                      GUICommand.CMD_HIDE, ""));
+            command_rsp_undisplay.add(new GUICommand(gui_panel_spells_name,
+                                      GUICommand.CMD_HIDE, ""));
 
             GUIButton gui_btn_rsp_display = new GUIButton("btn_rsp_display",
                     690+72, 22+732, 25, 14,
@@ -1615,6 +1638,9 @@ public class JXCSkinPrelude implements JXCSkin
 
             myserver.addCrossfireMagicmapListener(gui_magicmap);
 
+            p.addSpellListener(gui_panel_spells_icon);
+            p.addSpellListener(gui_panel_spells_name);
+
             mygui.add(gui_map);
             mygui.add(gui_sword_back);
             mygui.add(gui_gauge_hp_back);
@@ -1769,6 +1795,9 @@ public class JXCSkinPrelude implements JXCSkin
             mygui.add(gui_btn_menu);
             mygui.add(gui_magicmap_content);
             mygui.add(gui_magicmap);
+            mygui.add(gui_panel_spells);
+            mygui.add(gui_panel_spells_icon);
+            mygui.add(gui_panel_spells_name);
         }
         catch (Exception e)
         {
