@@ -9,7 +9,7 @@ width 40
 height 26
 enter_x 19
 enter_y 20
-shopitems building material:95;item builder:95;*:-100
+shopitem building material:95;item builder:95;*:-100
 shopgreed 1.0
 end
 arch cobblestones
@@ -2416,9 +2416,13 @@ arch cobblestones
 x 18
 y 22
 end
-arch window_win2
+arch wall_1_3
 x 18
 y 22
+end
+arch dungeon_magic
+x 18
+y 23
 end
 arch cobblestones
 x 18
@@ -2542,20 +2546,29 @@ arch cobblestones
 x 19
 y 21
 end
-arch oakdoor
+arch invis_exit
 slaying /pup_land/lone_town/town
-hp 7
+hp 6
 sp 16
 x 19
-y 21
+y 22
+end
+arch dungeon_magic
+x 19
+y 22
 end
 arch cobblestones
 x 19
 y 22
 end
-arch window_win2
+arch door_2
+no_pass 0
 x 19
 y 22
+end
+arch dungeon_magic
+x 19
+y 23
 end
 arch cobblestones
 x 19
@@ -2676,20 +2689,29 @@ arch cobblestones
 x 20
 y 21
 end
-arch oakdoor
+arch invis_exit
 slaying /pup_land/lone_town/town
 hp 7
 sp 16
 x 20
-y 21
+y 22
+end
+arch dungeon_magic
+x 20
+y 22
 end
 arch cobblestones
 x 20
 y 22
 end
-arch window_win2
+arch door_2
+no_pass 0
 x 20
 y 22
+end
+arch dungeon_magic
+x 20
+y 23
 end
 arch cobblestones
 x 20
@@ -2861,9 +2883,13 @@ arch cobblestones
 x 21
 y 22
 end
-arch window_win2
+arch wall_1_4
 x 21
 y 22
+end
+arch dungeon_magic
+x 21
+y 23
 end
 arch cobblestones
 x 21
