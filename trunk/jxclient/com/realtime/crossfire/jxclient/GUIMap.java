@@ -37,6 +37,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
                                                   CrossfireMapscrollListener
 {
     private boolean need_update = false;
+    private int need_update_cnt = 0;
     private boolean new_map_happened = true;
     private BufferedImage myblacktile = null;
     private boolean use_big_images = true;
@@ -109,7 +110,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             }
             if (need_update == true)
             {
-                need_update = false;
+                need_update_cnt--;
+                if (need_update_cnt <= 0)
+                    need_update = false;
                 MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
                 for (int nz=0; nz<ServerConnection.NUM_LAYERS; nz++)
                 {
@@ -193,6 +196,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         synchronized(mybuffer)
         {
             need_update = true;
+            need_update_cnt = 2;
         }
     }
     public void CommandNewmapReceived(CrossfireCommandNewmapEvent evt)
@@ -204,6 +208,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         synchronized(mybuffer)
         {
             need_update = true;
+            need_update_cnt = 2;
             new_map_happened = true;
         }
     }
@@ -212,6 +217,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         synchronized(mybuffer)
         {
             need_update = true;
+            need_update_cnt = 2;
         }
     }
     public void refresh()
@@ -219,6 +225,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         synchronized(mybuffer)
         {
             need_update = true;
+            need_update_cnt = 2;
             new_map_happened = true;
         }
     }
