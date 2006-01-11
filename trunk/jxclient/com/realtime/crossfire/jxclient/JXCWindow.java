@@ -640,6 +640,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 launchSpellFromBelt(11);
                 break;
             case KeyEvent.VK_UP:
+            case KeyEvent.VK_NUMPAD8:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
                     send("command 0 run 1");
@@ -653,7 +654,51 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 else
                     send("command 0 north");
                 break;
+            case KeyEvent.VK_NUMPAD9:
+                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                {
+                    send("command 0 run 2");
+                    is_run_active = true;
+                }
+                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                {
+                    send("command 0 fire 2");
+                    is_fire_active = true;
+                }
+                else
+                    send("command 0 northeast");
+                break;
+            case KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_NUMPAD6:
+                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                {
+                    send("command 0 run 3");
+                    is_run_active = true;
+                }
+                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                {
+                    send("command 0 fire 3");
+                    is_fire_active = true;
+                }
+                else
+                    send("command 0 east");
+                break;
+            case KeyEvent.VK_NUMPAD3:
+                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                {
+                    send("command 0 run 4");
+                    is_run_active = true;
+                }
+                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                {
+                    send("command 0 fire 4");
+                    is_fire_active = true;
+                }
+                else
+                    send("command 0 southeast");
+                break;
             case KeyEvent.VK_DOWN:
+            case KeyEvent.VK_NUMPAD2:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
                     send("command 0 run 5");
@@ -667,7 +712,22 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 else
                     send("command 0 south");
                 break;
+            case KeyEvent.VK_NUMPAD1:
+                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                {
+                    send("command 0 run 6");
+                    is_run_active = true;
+                }
+                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                {
+                    send("command 0 fire 6");
+                    is_fire_active = true;
+                }
+                else
+                    send("command 0 southwest");
+                break;
             case KeyEvent.VK_LEFT:
+            case KeyEvent.VK_NUMPAD4:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
                     send("command 0 run 7");
@@ -681,19 +741,19 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 else
                     send("command 0 west");
                 break;
-            case KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_NUMPAD7:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 3");
+                    send("command 0 run 8");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 3");
+                    send("command 0 fire 8");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 east");
+                    send("command 0 northwest");
                 break;
             case KeyEvent.VK_A:
                 send("command 0 apply");
