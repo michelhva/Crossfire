@@ -86,6 +86,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private boolean[] key_shift = new boolean[]{false, false, false, false};
     private java.util.List<GUICommand> mycurrentkeybinding = null;
 
+    private java.util.List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
+
     public final static int KEY_SHIFT_SHIFT = 0;
     public final static int KEY_SHIFT_CTRL  = 1;
     public final static int KEY_SHIFT_ALT   = 2;
@@ -118,9 +120,24 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             System.out.println("Unable to run script: "+cmdline);
         }
     }
+    public void addSpellListener(SpellListener s)
+    {
+        myspelllisteners.add(s);
+    }
+    public void removeSpellListener(SpellListener s)
+    {
+        myspelllisteners.remove(s);
+    }
     public void setCurrentSpell(Spell s)
     {
         mycurrentspell = s;
+        Iterator it = myspelllisteners.iterator();
+        SpellChangedEvent evt = new SpellChangedEvent(this, s);
+        while (it.hasNext())
+        {
+            SpellListener sl = (SpellListener)it.next();
+            sl.SpellChanged(evt);
+        }
     }
     public Spell getCurrentSpell()
     {

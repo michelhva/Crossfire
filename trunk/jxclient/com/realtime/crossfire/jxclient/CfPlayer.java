@@ -64,7 +64,9 @@ public class CfPlayer extends CfItem
             switch (stat)
             {
                 case Stats.CS_STAT_EXP:
-                    mystats.setExperience(dis.readUnsignedShort());
+                    long experi = dis.readUnsignedShort();
+                    System.out.println("Setting experience to:"+experi);
+                    mystats.setExperience(experi);
                     pos+=2;
                     break;
                 case Stats.CS_STAT_SPEED:
@@ -103,7 +105,9 @@ public class CfPlayer extends CfItem
                     pos+=4;
                     break;
                 case Stats.CS_STAT_EXP64:
-                    mystats.setExperience(dis.readLong());
+                    experi = dis.readLong();
+                    System.out.println("Setting long experience to:"+experi);
+                    mystats.setExperience(experi);
                     pos+=8;
                     break;
                 case Stats.CS_STAT_HP:

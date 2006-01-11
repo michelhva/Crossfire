@@ -37,14 +37,20 @@ import javax.swing.text.html.parser.*;
  */
 public class GUILabel extends GUIElement implements CrossfireStatsListener,
                                                     CrossfireQueryListener,
-                                                    CrossfireDrawextinfoListener
+                                                    CrossfireDrawextinfoListener,
+                                                    SpellListener
 {
     private BufferedImage mybackground = null;
     private Font myfont;
     private String mycaption=new String("");
     private int mystat=0;
     private boolean stat_based = false;
+    private boolean spell_based = false;
     private Color mycolor = Color.WHITE;
+    public static final int LABEL_SPELL_NAME = -1;
+    public static final int LABEL_SPELL_ICON = -2;
+    public static final int LABEL_SPELL_COST = -3;
+    public static final int LABEL_SPELL_LEVEL = -4;
 
     private void commonInit(String nn, int nx, int ny, int nw, int nh, String picture, Font nf)
             throws IOException
@@ -95,7 +101,10 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     {
         commonInit(nn,nx,ny,nw,nh,picture,nf);
         mystat = stat;
-        stat_based = true;
+        if (stat >= 0)
+            stat_based = true;
+        else // Spell or special display
+            spell_based = true;
         myname = nn;
         render();
     }
@@ -106,7 +115,10 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     {
         commonInit(nn,nx,ny,nw,nh,picture,nf);
         mystat = stat;
-        stat_based = true;
+        if (stat >= 0)
+            stat_based = true;
+        else // Spell or special display
+            spell_based = true;
         mycolor = clr;
         myname = nn;
         render();
@@ -151,28 +163,32 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     }
     public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
     {
-        Stats s = evt.getStats();
-        switch (mystat)
+        if (stat_based)
         {
-            case Stats.CS_STAT_SPEED:
-            case Stats.CS_STAT_WEAP_SP:
-                mycaption = String.valueOf(s.getStat(mystat)/1000)+"."+
-                        String.valueOf(s.getStat(mystat)%1000);
-                break;
-            case Stats.CS_STAT_RANGE:
-                mycaption = s.getRange();
-                break;
-            case Stats.CS_STAT_TITLE:
-                mycaption = s.getTitle();
-                break;
-            case Stats.CS_STAT_EXP64:
-                mycaption = String.valueOf(s.getStat(mystat));
-                break;
-            default:
-                mycaption = String.valueOf(s.getStat(mystat));
-                break;
+            Stats s = evt.getStats();
+            switch (mystat)
+            {
+                case Stats.CS_STAT_SPEED:
+                case Stats.CS_STAT_WEAP_SP:
+                    mycaption = String.valueOf(s.getStat(mystat)/1000)+"."+
+                            String.valueOf(s.getStat(mystat)%1000);
+                    break;
+                case Stats.CS_STAT_RANGE:
+                    mycaption = s.getRange();
+                    break;
+                case Stats.CS_STAT_TITLE:
+                    mycaption = s.getTitle();
+                    break;
+                case Stats.CS_STAT_EXP64:
+                case Stats.CS_STAT_EXP:
+                    mycaption = String.valueOf(s.getExperience());
+                    break;
+                default:
+                    mycaption = String.valueOf(s.getStat(mystat));
+                    break;
+            }
+            render();
         }
-        render();
     }
     public void CommandQueryReceived(CrossfireCommandQueryEvent evt)
     {
@@ -269,6 +285,45 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             myfonts.pop();
             mycolors.pop();
             //System.out.println("End Tag:"+tag);
+        }
+    }
+    public void SpellChanged(SpellChangedEvent evt)
+    {
+        if (spell_based)
+        {
+            Spell sp = evt.getSpell();
+            if (sp == null)
+            {
+                mycaption = "";
+            }
+            else
+            {
+                switch (mystat)
+                {
+                    case LABEL_SPELL_NAME:
+                        mycaption = sp.getName();
+                        break;
+                    case LABEL_SPELL_ICON:
+                        mycaption="";
+                        mybackground = sp.getPicture();
+                        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+                        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+                        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+                        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+                        Graphics2D g = mybuffer.createGraphics();
+                        if (mybackground != null)
+                            g.drawImage(mybackground, x, y, null);
+                        g.dispose();
+                        break;
+                    case LABEL_SPELL_COST:
+                        mycaption="";
+                        break;
+                    case LABEL_SPELL_LEVEL:
+                        mycaption="";
+                        break;
+                }
+            }
+            render();
         }
     }
 }
