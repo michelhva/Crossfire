@@ -24,7 +24,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.prefs.*;
 import java.io.*;
-import com.sixlegs.png.*;
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
  * by itself - most of the work in done in JXCWindow or ServerConnection.
@@ -57,7 +56,7 @@ public class jxclient
     {
         try
         {
-            PngImage p = new PngImage();
+            Object p = Class.forName("com.sixlegs.png.PngImage");
         }
         catch (Exception e)
         {
