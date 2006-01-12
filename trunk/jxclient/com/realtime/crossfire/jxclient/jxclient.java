@@ -24,7 +24,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.prefs.*;
 import java.io.*;
-
+import com.sixlegs.png.*;
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
  * by itself - most of the work in done in JXCWindow or ServerConnection.
@@ -55,6 +55,15 @@ public class jxclient
      */
     public jxclient(String args[])
     {
+        try
+        {
+            PngImage p = new PngImage();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Sixlegs PNG Library not correctly installed, aborting");
+            System.exit(0);
+        }
         try
         {
             Preferences prefs = Preferences.userRoot();
