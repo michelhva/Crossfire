@@ -1,6 +1,6 @@
 Object cudgel
 nrof 1
-name cudgels
+name cudgel
 last_sp 25
 type 15
 face big_club.111
