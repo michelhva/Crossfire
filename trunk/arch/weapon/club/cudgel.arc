@@ -3,7 +3,7 @@ nrof 1
 name cudgel
 last_sp 25
 type 15
-face big_club.111
+face cudgel.111
 color_fg blue
 material 2
 materialname bronze
