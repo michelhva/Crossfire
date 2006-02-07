@@ -15,7 +15,7 @@ smoothface sea.114 sea_S.114
 color_fg light_blue
 color_bg blue
 speed 0.2
-no_pass 1
+move_block all -boat
 no_pick 1
 is_water 1
 editable 8

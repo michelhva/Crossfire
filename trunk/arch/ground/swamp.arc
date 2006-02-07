@@ -13,4 +13,5 @@ editable 8
 smoothlevel 9
 smoothface swamp.111 swamp_S.111
 is_floor 1
+move_block boat swim
 end

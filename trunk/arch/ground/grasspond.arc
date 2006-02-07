@@ -11,4 +11,5 @@ editable 8
 is_floor 1
 smoothlevel 40
 smoothface grasspond.111 grass_S.111
+move_block boat swim
 end

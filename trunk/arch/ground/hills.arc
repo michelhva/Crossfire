@@ -11,4 +11,5 @@ is_floor 1
 smoothlevel 59
 magicmap khaki
 smoothface hills.111 hills_S.111
+move_block boat swim
 end

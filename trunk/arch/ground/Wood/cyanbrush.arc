@@ -11,4 +11,5 @@ editable 8
 is_floor 1
 smoothlevel 45
 smoothface cyanbrush.111 cyangrass_S.111
+move_block boat swim
 end

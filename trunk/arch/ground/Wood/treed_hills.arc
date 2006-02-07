@@ -12,4 +12,5 @@ is_floor 1
 smoothlevel 130
 smoothface treed_hills.111 hills_S.111
 magicmap green
+move_block boat swim
 end

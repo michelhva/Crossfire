@@ -10,4 +10,5 @@ slow_move 1
 smoothlevel 35
 smoothface farmland.111 empty_S.111
 editable 8
+move_block boat swim
 end

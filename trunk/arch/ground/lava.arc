@@ -30,6 +30,7 @@ duration 60
 dam 3
 is_floor 1
 editable 8
+move_block boat swim
 end
 #
 Object permanent_lava
@@ -63,4 +64,5 @@ hp 1
 dam 3
 editable 8
 is_floor 1
+move_block boat swim
 end
