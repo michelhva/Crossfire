@@ -7,4 +7,5 @@ editable 8
 smoothlevel 30
 smoothface cobblesto2.111 empty_S.111
 magicmap yellow
+move_block boat swim
 end

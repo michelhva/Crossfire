@@ -11,6 +11,7 @@ is_wooded 1
 editable 8
 smoothlevel 40
 smoothface grass.111 grass_S.111
+move_block boat swim
 end
 Object grass_only
 name grass
@@ -25,4 +26,5 @@ is_wooded 1
 editable 8
 smoothlevel 40
 smoothface grass.111 grass_S.111
+move_block boat swim
 end

@@ -12,4 +12,5 @@ is_floor 1
 smoothlevel 60
 smoothface hillsrocky.111 hillsrocky_S.111
 magicmap brown
+move_block boat swim
 end

@@ -13,4 +13,5 @@ editable 8
 visibility 100
 smoothface woods_3.111 sgrass_S.111
 smoothlevel 127
+move_block boat swim
 end
