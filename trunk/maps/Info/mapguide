@@ -1,6 +1,49 @@
 This is a guide on what is an acceptable map and what is unacceptable.
 Only acceptable maps will be put in the official Crossfire map distribution
 
+------------------------------------------------------------------------------
+
+Map Naming/Directory Scheme:
+
+Note that these rules are ordered in importance, eg, if a rule conflicts,
+the lower number rule takes precedence.
+
+1) Each city should have its' own top level directory (eg, scorn, navar_city,
+   santo_dominion) and be accessible on a world map. All buildings in the
+   city and located nearby or related to it are in the respective city
+   directory. City/town names are also used for nearby regions. If one
+   desires to create a new city then create a new top level directory with
+   the city name and use the new city name for the region in the maps that
+   are associated with the new city.
+
+2) If the map is part of a larger quest, a /quests/name_of_quest/ directory
+   should be made, and all the maps for the quest placed in there (also see
+   NOTE below about number of maps per directory). If some portions of the
+   quest has maps in cities or other places, a README should be included
+   explaining this. Note in general, having README's for all quests
+   explaining the flow probably isn't a bad idea in the case someone else
+   needs to work on it.
+
+3) If a map is independent (eg, the map is one you just go there, kill and
+   get exp), it should be in the /dungeons/ directory. If the dungeon is
+   comprised of several maps (eg, multilevel dungeon), a subdirectory
+   should be made to hold all of these maps (also see NOTE below about number
+   of maps per directory).
+
+4) Maps should fall into one of the categories above - if it does not, and
+   you are not sure, send a message to crossfire-devel@lists.real-time.com.
+   
+NOTE: If a map or set of maps is near a particular city then place the proper
+region in the map header. Use of the map maker's name as part of the
+directory structure or map name is not encouraged and may result in maps
+being excluded from CVS. While this type of directory scheme was done in the
+past it is now deprecated. Attempt to use a logical tree structure for maps
+and try to avoid dumping more than 15 to 20 maps in a single directory (this
+does not apply to /world/). Dumping a massive number of maps in a single
+directory is highly discouraged, Just Say No.
+
+------------------------------------------------------------------------------
+
 1) Check that all exits lead where they are supposed to.  Unless there is
 a specific reason an exit leads only one direction (like a trap door or
 perhaps a teleporter), players should be able to exit back from where they
