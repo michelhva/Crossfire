@@ -98,6 +98,18 @@ def do_memory():
 
 	dict['s'] = x
 		
+
+def do_resist():
+	whoami.Say('Resistance test')
+	who = Crossfire.WhoIsActivator()
+	for r in range(25):
+		whoami.Say(' %d -> %d'%(r,who.GetResist(r)))
+
+def do_basics():
+	whoami.Say('Basic test')
+	who = Crossfire.WhoIsActivator()
+	whoami.Say('type = %d'%who.Type)
+
 whoami.Say( 'plugin test' )
 
 topic = Crossfire.WhatIsMessage().split()
@@ -117,5 +129,9 @@ elif topic[0] == 'ref':
 	do_activator()
 elif topic[0] == 'memory':
 	do_memory()
+elif topic[0] == 'resist':
+	do_resist()
+elif topic[0] == 'basics':
+	do_basics()
 else:
 	do_help()
