@@ -23,7 +23,7 @@ def do_arch():
 	arch = archs[which]
 	whoami.Say('random = %s'%arch.Name)
 
-	arch = Crossfire.WhoIsActivator().Archetype()
+	arch = Crossfire.WhoIsActivator().Archetype
 	whoami.Say('your archetype is %s'%arch.Name)
 
 def do_maps():
