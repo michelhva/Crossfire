@@ -21,7 +21,7 @@ no_drop 1
 invisible 1
 msg
 Negative energy balls creates a ball of
-negatvie energy.  This ball heads in the
+negative energy.  This ball heads in the
 direction it is cast, and if it encounters a
 monster, it sticks to the monster, draining
 the monster and doing cold damage as it does
