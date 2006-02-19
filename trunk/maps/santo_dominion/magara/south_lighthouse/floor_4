@@ -125,10 +125,10 @@ arch small_stones
 x 1
 y 1
 end
-arch stair_down
-slaying floor_3
-hp 14
-sp 1
+arch stair_up
+slaying floor_1
+hp 16
+sp 3
 x 1
 y 1
 end

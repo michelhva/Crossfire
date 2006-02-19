@@ -4500,6 +4500,13 @@ name floor
 x 16
 y 3
 end
+arch stair_down
+slaying floor_4
+hp 1
+sp 1
+x 16
+y 3
+end
 arch key
 x 16
 y 3
