@@ -43,7 +43,6 @@ run_away 5
 attack_movement 5
 color_fg brown
 end
-more
 Object gr_hellhound
 name greater hellhound
 randomitems gr_hellhound
