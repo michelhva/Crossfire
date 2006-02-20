@@ -26,7 +26,6 @@ type 68
 auto_apply 1
 randomitems shop_building
 editable 64
-editor_folder arch/shop/Floors
 end
 Object shop_building_fant
 name tiles
@@ -38,7 +37,6 @@ type 68
 auto_apply 1
 randomitems shop_building_fant
 editable 64
-editor_folder arch/shop/Floors
 end
 Object shop_building_west
 name tiles
@@ -50,7 +48,6 @@ type 68
 auto_apply 1
 randomitems shop_building_west
 editable 64
-editor_folder arch/shop/Floors
 end
 Object shop_building_east
 name tiles
@@ -62,7 +59,6 @@ type 68
 auto_apply 1
 randomitems shop_building_east
 editable 64
-editor_folder arch/shop/Floors
 end
 Object building_woodfloor
 name Wood floor material
