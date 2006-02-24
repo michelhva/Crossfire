@@ -1,6 +1,6 @@
 arch map
-region scorn
 name Scorn Pawn Shop
+region scorn
 msg
 Creator: Gene Alexander
 email: gene@eracc.com
@@ -11,7 +11,7 @@ width 21
 height 20
 enter_x 10
 enter_y 2
-shopitems *:5
+shopitem *:5
 shopmax 3000
 end
 arch shop_empty
@@ -1167,6 +1167,10 @@ arch dwall_2_1_2
 x 5
 y 1
 end
+arch check_inv
+x 5
+y 2
+end
 arch dungeon_magic
 x 5
 y 2
@@ -1890,7 +1894,11 @@ end
 arch sign_w
 name Pawn
 msg
-Items sold in these booths will be moved to the pawn shop floor.
+Items sold in these booths will be moved
+to the pawn shop floor. Note if one picks
+up an item after dropping it in a booth
+one has to pay the purchase price to get
+the item back.
 endmsg
 x 8
 y 4
@@ -1908,6 +1916,23 @@ x 8
 y 6
 end
 arch tile_white_floor
+x 8
+y 6
+end
+arch sign
+name info
+msg
+Scorn Pawn Shop
+---
+Items you sell here will stay roughly
+"forever" unless someone buys the
+item. If the shop gets too crowded
+with items a Proprietor will clear
+out the excess.
+You can sell items in the pawn booths
+or you can go and browse our inventory
+of items for a small fee.
+endmsg
 x 8
 y 6
 end
@@ -1955,13 +1980,13 @@ arch dungeon_magic
 x 8
 y 11
 end
-arch tile_white_floor
-x 8
-y 11
-end
 arch pedestal
 invisible 1
 connected 11
+x 8
+y 11
+end
+arch tile_white_floor
 x 8
 y 11
 end
@@ -2079,6 +2104,9 @@ end
 arch dwall_2_1_2
 x 9
 end
+arch swall_1_1_half
+x 9
+end
 arch dungeon_magic
 x 9
 y 1
@@ -2087,11 +2115,7 @@ arch tile_white_floor
 x 9
 y 1
 end
-arch stair_down_1
-name first floor
-slaying /scorn/shops/scorn.sale1
-hp 9
-sp 1
+arch swall_2_1_1
 x 9
 y 1
 end
@@ -2103,20 +2127,7 @@ arch tile_white_floor
 x 9
 y 2
 end
-arch sign
-name info
-msg
-Scorn Pawn Shop
----
-Items you sell here will stay roughly
-"forever" unless someone buys the
-item. If the shop gets too crowded
-with items a Proprietor will clear
-out the excess.
-You can sell items in the pawn booths
-or you can go and browse our inventory
-of items for a small fee.
-endmsg
+arch swall_2_1_1
 x 9
 y 2
 end
@@ -2125,6 +2136,10 @@ x 9
 y 3
 end
 arch tile_white_floor
+x 9
+y 3
+end
+arch swall_2_2_1
 x 9
 y 3
 end
@@ -2167,26 +2182,18 @@ end
 arch tile_white_floor
 x 9
 y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch tile_white_floor
-x 9
-y 9
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch tile_white_floor
-x 9
-y 9
 end
 arch check_inv
 slaying pawn_shop1
 connected 11
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch tile_white_floor
 x 9
 y 9
 end
@@ -2207,13 +2214,13 @@ arch dungeon_magic
 x 9
 y 11
 end
-arch tile_white_floor
-x 9
-y 11
-end
 arch pedestal
 invisible 1
 connected 11
+x 9
+y 11
+end
+arch tile_white_floor
 x 9
 y 11
 end
@@ -2355,11 +2362,19 @@ arch tile_white_floor
 x 10
 y 2
 end
+arch shop_mat
+x 10
+y 2
+end
 arch dungeon_magic
 x 10
 y 3
 end
 arch tile_white_floor
+x 10
+y 3
+end
+arch swall_2_1_2
 x 10
 y 3
 end
@@ -2368,6 +2383,10 @@ x 10
 y 4
 end
 arch tile_white_floor
+x 10
+y 4
+end
+arch shop_mat
 x 10
 y 4
 end
@@ -2404,10 +2423,6 @@ x 10
 y 8
 end
 arch dungeon_magic
-x 10
-y 9
-end
-arch tile_white_floor
 x 10
 y 9
 end
@@ -2422,8 +2437,13 @@ food 504
 x 10
 y 9
 end
+arch tile_white_floor
+x 10
+y 9
+end
 arch altar_trigger
 name Drop 500 gold for day pass
+face chalice.111
 slaying goldcoin
 food 500
 connected 88
@@ -2562,6 +2582,9 @@ end
 arch dwall_2_1_2
 x 11
 end
+arch swall_1_1_half
+x 11
+end
 arch dungeon_magic
 x 11
 y 1
@@ -2570,11 +2593,7 @@ arch tile_white_floor
 x 11
 y 1
 end
-arch stair_down_1
-name first floor
-slaying /scorn/shops/scorn.sale1
-hp 11
-sp 1
+arch swall_2_1_1
 x 11
 y 1
 end
@@ -2586,15 +2605,7 @@ arch tile_white_floor
 x 11
 y 2
 end
-arch sign
-name charity
-msg
-Charity - Help keep Scorn clean
------
-Please use this shop entry area
-for dropping free items to be used
-by other citizens in need.
-endmsg
+arch swall_2_1_1
 x 11
 y 2
 end
@@ -2603,6 +2614,10 @@ x 11
 y 3
 end
 arch tile_white_floor
+x 11
+y 3
+end
+arch swall_2_2_4
 x 11
 y 3
 end
@@ -2833,7 +2848,11 @@ end
 arch sign_e
 name Pawn
 msg
-Items sold in these booths will be moved to the pawn shop floor.
+Items sold in these booths will be moved
+to the pawn shop floor. Note if one picks
+up an item after dropping it in a booth
+one has to pay the purchase price to get
+the item back.
 endmsg
 x 12
 y 4
@@ -2851,6 +2870,18 @@ x 12
 y 6
 end
 arch tile_white_floor
+x 12
+y 6
+end
+arch sign
+name charity
+msg
+Charity - Help keep Scorn clean
+-----
+Please use this shop entry area
+for dropping free items to be used
+by other citizens in need.
+endmsg
 x 12
 y 6
 end
