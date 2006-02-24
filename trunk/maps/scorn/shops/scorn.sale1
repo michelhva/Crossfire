@@ -355,11 +355,6 @@ no_pass 1
 x 3
 y 1
 end
-arch woodfloor
-name No Sale Area
-x 3
-y 2
-end
 arch dungeon_magic
 x 3
 y 2
@@ -367,7 +362,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 3
+y 2
 end
 arch dungeon_magic
 x 3
@@ -376,7 +371,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 4
+y 3
 end
 arch dungeon_magic
 x 3
@@ -385,7 +380,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 5
+y 4
 end
 arch dungeon_magic
 x 3
@@ -394,7 +389,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 6
+y 5
 end
 arch dungeon_magic
 x 3
@@ -403,7 +398,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 7
+y 6
 end
 arch dungeon_magic
 x 3
@@ -412,7 +407,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 8
+y 7
 end
 arch dungeon_magic
 x 3
@@ -421,7 +416,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 9
+y 8
 end
 arch dungeon_magic
 x 3
@@ -430,7 +425,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 10
+y 9
 end
 arch dungeon_magic
 x 3
@@ -439,7 +434,7 @@ end
 arch woodfloor
 name No Sale Area
 x 3
-y 11
+y 10
 end
 arch dungeon_magic
 x 3
@@ -447,10 +442,15 @@ y 11
 end
 arch woodfloor
 name No Sale Area
+x 3
+y 11
+end
+arch dungeon_magic
 x 3
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 3
 y 12
 end
@@ -503,12 +503,12 @@ arch shop_empty
 x 4
 y 1
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 4
 y 2
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 4
 y 2
 end
@@ -548,12 +548,12 @@ arch shop_empty
 x 4
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 4
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 4
 y 12
 end
@@ -599,15 +599,15 @@ arch shop_empty
 x 5
 y 1
 end
+arch dungeon_magic
+x 5
+y 2
+end
 arch woodfloor
 x 5
 y 2
 end
 arch shop_mat
-x 5
-y 2
-end
-arch dungeon_magic
 x 5
 y 2
 end
@@ -652,12 +652,12 @@ arch shop_empty
 x 5
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 5
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 5
 y 12
 end
@@ -808,12 +808,12 @@ arch shop_empty
 x 6
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 6
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 6
 y 12
 end
@@ -914,6 +914,10 @@ arch shop_empty
 x 7
 y 11
 end
+arch dungeon_magic
+x 7
+y 12
+end
 arch woodfloor
 name No Sale Area
 x 7
@@ -921,7 +925,7 @@ y 12
 end
 arch dungeon_magic
 x 7
-y 12
+y 13
 end
 arch woodfloor
 x 7
@@ -929,10 +933,6 @@ y 13
 end
 arch firepot
 glow_radius 4
-x 7
-y 13
-end
-arch dungeon_magic
 x 7
 y 13
 end
@@ -1031,6 +1031,10 @@ arch shop_empty
 x 8
 y 10
 end
+arch dungeon_magic
+x 8
+y 11
+end
 arch woodfloor
 name No Sale Area
 x 8
@@ -1042,14 +1046,10 @@ y 11
 end
 arch dungeon_magic
 x 8
-y 11
+y 12
 end
 arch woodfloor
 name No Sale Area
-x 8
-y 12
-end
-arch dungeon_magic
 x 8
 y 12
 end
@@ -1115,11 +1115,7 @@ arch woodfloor
 x 9
 y 1
 end
-arch stair_up_1
-name second floor
-slaying /scorn/shops/scorn.sale2
-hp 9
-sp 1
+arch firepot
 x 9
 y 1
 end
@@ -1169,21 +1165,21 @@ arch shop_empty
 x 9
 y 10
 end
-arch woodfloor
-name No Sale Area
-x 9
-y 11
-end
 arch dungeon_magic
 x 9
 y 11
 end
 arch woodfloor
 name No Sale Area
+x 9
+y 11
+end
+arch dungeon_magic
 x 9
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 9
 y 12
 end
@@ -1330,6 +1326,10 @@ arch shop_empty
 x 10
 y 10
 end
+arch dungeon_magic
+x 10
+y 11
+end
 arch woodfloor
 name No Sale Area
 x 10
@@ -1337,17 +1337,13 @@ y 11
 end
 arch dungeon_magic
 x 10
-y 11
+y 12
 end
 arch woodfloor
 x 10
 y 12
 end
 arch shop_mat
-x 10
-y 12
-end
-arch dungeon_magic
 x 10
 y 12
 end
@@ -1426,11 +1422,7 @@ arch woodfloor
 x 11
 y 1
 end
-arch stair_up_1
-name second floor
-slaying /scorn/shops/scorn.sale2
-hp 11
-sp 1
+arch firepot
 x 11
 y 1
 end
@@ -1480,21 +1472,21 @@ arch shop_empty
 x 11
 y 10
 end
-arch woodfloor
-name No Sale Area
-x 11
-y 11
-end
 arch dungeon_magic
 x 11
 y 11
 end
 arch woodfloor
 name No Sale Area
+x 11
+y 11
+end
+arch dungeon_magic
 x 11
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 11
 y 12
 end
@@ -1630,6 +1622,10 @@ arch shop_empty
 x 12
 y 10
 end
+arch dungeon_magic
+x 12
+y 11
+end
 arch woodfloor
 name No Sale Area
 x 12
@@ -1652,14 +1648,10 @@ y 11
 end
 arch dungeon_magic
 x 12
-y 11
+y 12
 end
 arch woodfloor
 name No Sale Area
-x 12
-y 12
-end
-arch dungeon_magic
 x 12
 y 12
 end
@@ -1780,6 +1772,10 @@ arch shop_empty
 x 13
 y 11
 end
+arch dungeon_magic
+x 13
+y 12
+end
 arch woodfloor
 name No Sale Area
 x 13
@@ -1787,7 +1783,7 @@ y 12
 end
 arch dungeon_magic
 x 13
-y 12
+y 13
 end
 arch woodfloor
 x 13
@@ -1795,10 +1791,6 @@ y 13
 end
 arch firepot
 glow_radius 4
-x 13
-y 13
-end
-arch dungeon_magic
 x 13
 y 13
 end
@@ -1941,12 +1933,12 @@ arch shop_empty
 x 14
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 14
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 14
 y 12
 end
@@ -1992,15 +1984,15 @@ arch shop_floor
 x 15
 y 1
 end
+arch dungeon_magic
+x 15
+y 2
+end
 arch woodfloor
 x 15
 y 2
 end
 arch shop_mat
-x 15
-y 2
-end
-arch dungeon_magic
 x 15
 y 2
 end
@@ -2045,12 +2037,12 @@ arch shop_empty
 x 15
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 15
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 15
 y 12
 end
@@ -2100,12 +2092,12 @@ arch shop_empty
 x 16
 y 1
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 16
 y 2
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 16
 y 2
 end
@@ -2145,12 +2137,12 @@ arch shop_empty
 x 16
 y 11
 end
-arch woodfloor
-name No Sale Area
+arch dungeon_magic
 x 16
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 16
 y 12
 end
@@ -2203,11 +2195,6 @@ no_pass 1
 x 17
 y 1
 end
-arch woodfloor
-name No Sale Area
-x 17
-y 2
-end
 arch dungeon_magic
 x 17
 y 2
@@ -2215,7 +2202,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 3
+y 2
 end
 arch dungeon_magic
 x 17
@@ -2224,7 +2211,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 4
+y 3
 end
 arch dungeon_magic
 x 17
@@ -2233,7 +2220,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 5
+y 4
 end
 arch dungeon_magic
 x 17
@@ -2242,7 +2229,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 6
+y 5
 end
 arch dungeon_magic
 x 17
@@ -2251,7 +2238,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 7
+y 6
 end
 arch dungeon_magic
 x 17
@@ -2260,7 +2247,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 8
+y 7
 end
 arch dungeon_magic
 x 17
@@ -2269,7 +2256,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 9
+y 8
 end
 arch dungeon_magic
 x 17
@@ -2278,7 +2265,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 10
+y 9
 end
 arch dungeon_magic
 x 17
@@ -2287,7 +2274,7 @@ end
 arch woodfloor
 name No Sale Area
 x 17
-y 11
+y 10
 end
 arch dungeon_magic
 x 17
@@ -2295,10 +2282,15 @@ y 11
 end
 arch woodfloor
 name No Sale Area
+x 17
+y 11
+end
+arch dungeon_magic
 x 17
 y 12
 end
-arch dungeon_magic
+arch woodfloor
+name No Sale Area
 x 17
 y 12
 end
