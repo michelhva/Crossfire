@@ -1,18 +1,18 @@
 arch map
 name Scorn Sale shop
 region scorn
-shopitems *:10
-shopmax 1500
-width 21
-height 20
-enter_x 9
-enter_y 16
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
 Date:    7/1/2004
 endmsg
+width 21
+height 20
+enter_x 9
+enter_y 16
 outdoor 1
+shopitem *:10
+shopmax 1500
 end
 arch grass
 end
@@ -703,6 +703,10 @@ end
 arch dwall_3_3
 x 6
 end
+arch dungeon_magic
+x 6
+y 1
+end
 arch woodfloor
 x 6
 y 1
@@ -711,6 +715,10 @@ arch dwall_win1
 x 6
 y 1
 end
+arch dungeon_magic
+x 6
+y 2
+end
 arch woodfloor
 x 6
 y 2
@@ -718,6 +726,10 @@ end
 arch dwall_win1
 x 6
 y 2
+end
+arch dungeon_magic
+x 6
+y 3
 end
 arch woodfloor
 x 6
@@ -847,10 +859,6 @@ arch woodfloor
 x 7
 y 1
 end
-arch dungeon_magic
-x 7
-y 1
-end
 arch woodfloor
 x 7
 y 2
@@ -859,15 +867,7 @@ arch shop_mat
 x 7
 y 2
 end
-arch dungeon_magic
-x 7
-y 2
-end
 arch woodfloor
-x 7
-y 3
-end
-arch dungeon_magic
 x 7
 y 3
 end
@@ -982,15 +982,7 @@ arch woodfloor
 x 8
 y 2
 end
-arch dungeon_magic
-x 8
-y 2
-end
 arch woodfloor
-x 8
-y 3
-end
-arch dungeon_magic
 x 8
 y 3
 end
@@ -1131,23 +1123,11 @@ sp 1
 x 9
 y 1
 end
-arch dungeon_magic
-x 9
-y 1
-end
 arch woodfloor
 x 9
 y 2
 end
-arch dungeon_magic
-x 9
-y 2
-end
 arch woodfloor
-x 9
-y 3
-end
-arch dungeon_magic
 x 9
 y 3
 end
@@ -1290,23 +1270,11 @@ sp 1
 x 10
 y 1
 end
-arch dungeon_magic
-x 10
-y 1
-end
 arch woodfloor
 x 10
 y 2
 end
-arch dungeon_magic
-x 10
-y 2
-end
 arch woodfloor
-x 10
-y 3
-end
-arch dungeon_magic
 x 10
 y 3
 end
@@ -1466,23 +1434,11 @@ sp 1
 x 11
 y 1
 end
-arch dungeon_magic
-x 11
-y 1
-end
 arch woodfloor
 x 11
 y 2
 end
-arch dungeon_magic
-x 11
-y 2
-end
 arch woodfloor
-x 11
-y 3
-end
-arch dungeon_magic
 x 11
 y 3
 end
@@ -1625,15 +1581,7 @@ arch woodfloor
 x 12
 y 2
 end
-arch dungeon_magic
-x 12
-y 2
-end
 arch woodfloor
-x 12
-y 3
-end
-arch dungeon_magic
 x 12
 y 3
 end
@@ -1777,10 +1725,6 @@ arch woodfloor
 x 13
 y 1
 end
-arch dungeon_magic
-x 13
-y 1
-end
 arch woodfloor
 x 13
 y 2
@@ -1789,15 +1733,7 @@ arch shop_mat
 x 13
 y 2
 end
-arch dungeon_magic
-x 13
-y 2
-end
 arch woodfloor
-x 13
-y 3
-end
-arch dungeon_magic
 x 13
 y 3
 end
@@ -1900,6 +1836,10 @@ end
 arch dwall_3_3
 x 14
 end
+arch dungeon_magic
+x 14
+y 1
+end
 arch woodfloor
 x 14
 y 1
@@ -1908,6 +1848,10 @@ arch dwall_win1
 x 14
 y 1
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch woodfloor
 x 14
 y 2
@@ -1915,6 +1859,10 @@ end
 arch dwall_win1
 x 14
 y 2
+end
+arch dungeon_magic
+x 14
+y 3
 end
 arch woodfloor
 x 14
