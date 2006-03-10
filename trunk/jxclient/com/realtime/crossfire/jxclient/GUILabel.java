@@ -51,6 +51,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     public static final int LABEL_SPELL_ICON = -2;
     public static final int LABEL_SPELL_COST = -3;
     public static final int LABEL_SPELL_LEVEL = -4;
+    public static final int LABEL_SPELL_DESCRIPTION = -5;
 
     private void commonInit(String nn, int nx, int ny, int nw, int nh, String picture, Font nf)
             throws IOException
@@ -303,6 +304,9 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                     case LABEL_SPELL_NAME:
                         mycaption = sp.getName();
                         break;
+                    case LABEL_SPELL_DESCRIPTION:
+                        mycaption = sp.getMessage();
+                        break;
                     case LABEL_SPELL_ICON:
                         mycaption="";
                         mybackground = sp.getPicture();
@@ -316,10 +320,10 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                         g.dispose();
                         break;
                     case LABEL_SPELL_COST:
-                        mycaption="";
+                        mycaption="M:"+sp.getMana()+" G:"+sp.getGrace();
                         break;
                     case LABEL_SPELL_LEVEL:
-                        mycaption="";
+                        mycaption=Integer.toString(sp.getLevel());
                         break;
                 }
             }

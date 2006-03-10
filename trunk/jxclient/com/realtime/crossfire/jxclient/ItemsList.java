@@ -39,11 +39,16 @@ import java.awt.image.*;
  */
 public class ItemsList
 {
-    private static java.util.List<CfItem>         items   = new ArrayList<CfItem>();
-    private static Hashtable<String,CfItem>       myitems = new Hashtable<String,CfItem>();
-    private static CfPlayer                      myplayer = null;
-    private static java.util.List<Spell>         myspells = new ArrayList<Spell>();
-    private static int                     mycurrentfloor = 0;
+    public static final int SPELLMODE_LOCAL = 0;
+    public static final int SPELLMODE_SENT  = 1;
+
+    private static int                            myspellmode = SPELLMODE_LOCAL;
+
+    private static java.util.List<CfItem>         items    = new ArrayList<CfItem>();
+    private static Hashtable<String,CfItem>       myitems  = new Hashtable<String,CfItem>();
+    private static CfPlayer                       myplayer = null;
+    private static java.util.List<Spell>          myspells = new ArrayList<Spell>();
+    private static int                            mycurrentfloor = 0;
 
     private static java.util.List<CrossfireDelitemListener> mylisteners_delitem =
             new ArrayList<CrossfireDelitemListener>();
@@ -55,6 +60,13 @@ public class ItemsList
             new ArrayList<CrossfireUpditemListener>();
     private static java.util.List<CrossfireDelinvListener> mylisteners_delinv =
             new ArrayList<CrossfireDelinvListener>();
+
+    private static java.util.List<CrossfireSpellAddedListener> mylisteners_addspell =
+            new ArrayList<CrossfireSpellAddedListener>();
+    private static java.util.List<CrossfireSpellUpdatedListener> mylisteners_updspell =
+            new ArrayList<CrossfireSpellUpdatedListener>();
+    private static java.util.List<CrossfireSpellRemovedListener> mylisteners_delspell =
+            new ArrayList<CrossfireSpellRemovedListener>();
 
     static
     {
@@ -87,6 +99,43 @@ public class ItemsList
     public static java.util.List getCrossfireDelinvListeners()
     {
         return mylisteners_delinv;
+    }
+    public static java.util.List getCrossfireSpellAddedListeners()
+    {
+        return mylisteners_addspell;
+    }
+    public static java.util.List getCrossfireSpellUpdatedListeners()
+    {
+        return mylisteners_updspell;
+    }
+    public static java.util.List getCrossfireSpellRemovedListeners()
+    {
+        return mylisteners_delspell;
+    }
+    public static void setSpellMode(int nm)
+    {
+        myspellmode = nm;
+        if(nm == SPELLMODE_LOCAL)
+        {
+            myspells.clear();
+            try
+            {
+                initSpells();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+                System.exit(1);
+            }
+        }
+        else
+        {
+            myspells.clear();
+        }
+    }
+    public static int getSpellMode()
+    {
+        return myspellmode;
     }
     public static java.util.List getItems(int location)
     {
@@ -350,6 +399,11 @@ public class ItemsList
     }
     private static void initSpells() throws IOException
     {
+        if (myspellmode != SPELLMODE_LOCAL)
+        {
+            myspells.clear();
+            return;
+        }
         myspells.add(new Spell("default.theme/pictures/spells/si_001.png",   "Small Lightning",
                               "small lightning"));
         myspells.add(new Spell("default.theme/pictures/spells/si_002.png",   "Large Lightning",
@@ -740,5 +794,76 @@ public class ItemsList
                               "town portal"));
         myspells.add(new Spell("default.theme/pictures/spells/si_196.png", "Missile Swarm",
                               "missile swarm"));
+    }
+    public static void addSpell(DataInputStream dis) throws IOException
+    {
+        int len = dis.available();
+        int pos = 0;
+        while (pos < len)
+        {
+            int tag    = dis.readInt();
+            int level  = dis.readUnsignedShort();
+            int castingtime = dis.readUnsignedShort();
+            int mana   = dis.readUnsignedShort();
+            int grace  = dis.readUnsignedShort();
+            int damage = dis.readUnsignedShort();
+            int skill  = dis.readUnsignedByte();
+            int path   = dis.readInt();
+            int face   = dis.readInt();
+            int namel  = dis.readUnsignedByte();
+            pos+=24;
+            byte buf[] = new byte[namel];
+            dis.readFully(buf);
+            String name = new String(buf);
+            pos+=namel;
+            int msgl = dis.readUnsignedShort();
+            pos+=2;
+            String msg = "";
+            if (msgl > 0)
+            {
+                buf = new byte[msgl];
+                dis.readFully(buf);
+                msg = new String(buf);
+                pos+=msgl;
+            }
+            Faces.ensureFaceExists(face);
+            Faces.getFace(face).setName("spell_"+tag);
+            try
+            {
+                ServerConnection.writePacket("askface "+face);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+
+            Spell sp = new Spell(Faces.getFace(face), tag, name, msg);
+            sp.setLevel(level);
+            sp.setCastingTime(castingtime);
+            sp.setMana(mana);
+            sp.setGrace(grace);
+            sp.setDamage(damage);
+            sp.setSkill(skill);
+            myspells.add(sp);
+
+            CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(
+                new Object(),sp);
+            Iterator it = mylisteners_addspell.iterator();
+            while (it.hasNext())
+            {
+                ((CrossfireSpellAddedListener)it.next()).CommandAddSpellReceived(evt);
+            }
+
+        }
+    }
+    public static void updateSpell(DataInputStream dis) throws IOException
+    {
+        System.out.println("Update spell");
+    }
+    public static void deleteSpell(DataInputStream dis) throws IOException
+    {
+        int len = dis.available();
+        int spelltag = dis.readInt();
+        System.out.println("Deleting spell:"+spelltag);
     }
 }

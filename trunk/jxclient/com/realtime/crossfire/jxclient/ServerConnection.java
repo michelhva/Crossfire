@@ -639,6 +639,72 @@ public class ServerConnection extends Thread
     }
 
     /**
+     * Adds a new listener monitoring the
+     * addspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void addCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
+    {
+        ItemsList.getCrossfireSpellAddedListeners().add(listener);
+    }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * addspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void removeCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
+    {
+        ItemsList.getCrossfireSpellAddedListeners().remove(listener);
+    }
+
+    /**
+     * Adds a new listener monitoring the
+     * updspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void addCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
+    {
+        ItemsList.getCrossfireSpellUpdatedListeners().add(listener);
+    }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * updspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void removeCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
+    {
+        ItemsList.getCrossfireSpellUpdatedListeners().remove(listener);
+    }
+
+    /**
+     * Adds a new listener monitoring the
+     * delspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void addCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
+    {
+        ItemsList.getCrossfireSpellRemovedListeners().add(listener);
+    }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * delspell S->C messages.
+     * @param listener The listener to remove.
+     * @since 1.0
+     */
+    public synchronized void removeCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
+    {
+        ItemsList.getCrossfireSpellRemovedListeners().remove(listener);
+    }
+
+    /**
      * Sets the current status of the client to the given value. See the various
      * STATUS_ constants.
      * @param nstatus The new status value.
@@ -787,6 +853,7 @@ public class ServerConnection extends Thread
      */
     void cmd_addspell(String cmd, DataInputStream dis) throws IOException
     {
+        ItemsList.addSpell(dis);
     }
 
     /**
@@ -797,6 +864,7 @@ public class ServerConnection extends Thread
      */
     void cmd_updspell(String cmd, DataInputStream dis) throws IOException
     {
+        ItemsList.updateSpell(dis);
     }
 
     /**
@@ -807,6 +875,7 @@ public class ServerConnection extends Thread
      */
     void cmd_delspell(String cmd, DataInputStream dis) throws IOException
     {
+        ItemsList.deleteSpell(dis);
     }
 
     /**
@@ -974,6 +1043,21 @@ public class ServerConnection extends Thread
         dis.readFully(buf);
 
         String str = new String(buf);
+        String[] datas = str.split(" ");
+        for(int i=0; i<datas.length; i++)
+        {
+            if (datas[i].equals("spellmon"))
+            {
+                if (datas[i+1].equals("1"))
+                {
+                    //System.out.println("New Spell Mode activated.");
+                    ItemsList.setSpellMode(ItemsList.SPELLMODE_SENT);
+                }
+                else
+                    ItemsList.setSpellMode(ItemsList.SPELLMODE_LOCAL);
+            }
+        }
+        //System.out.println("Received setup command:"+str);
     }
 
     /**
