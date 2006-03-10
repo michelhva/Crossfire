@@ -34,7 +34,9 @@ import java.io.*;
  */
 public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1Listener,
                                         CrossfireUpditemListener, CrossfireDelitemListener,
-                                        CrossfireItem2Listener
+                                        CrossfireItem2Listener, CrossfireSpellAddedListener,
+                                        CrossfireSpellRemovedListener,
+                                        CrossfireSpellUpdatedListener
 {
     protected int myindex = 0;
     protected BufferedImage mypiccursed;
@@ -135,9 +137,9 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
                 break;
             case ITEM_SPELLLIST:
                 if ((myindex >= 0)&&(myindex<ItemsList.getSpellList().size()))
-                {
                     myspell = (Spell)ItemsList.getSpellList().get(myindex);
-                }
+                else
+                    myspell = null;
                 break;
         }
         //CommandItem1Received(new CrossfireCommandItem1Event(myserverconnection, myitem));
@@ -176,9 +178,9 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
                 break;
             case ITEM_SPELLLIST:
                 if ((myindex >= 0)&&(myindex<ItemsList.getSpellList().size()))
-                {
                     myspell = (Spell)ItemsList.getSpellList().get(myindex);
-                }
+                else
+                    myspell = null;
                 break;
         }
         //    CommandItem1Received(new CrossfireCommandItem1Event(myserverconnection, myitem));
@@ -560,5 +562,25 @@ public class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1
             myitem = null;
             render();
         }
+    }
+    public void CommandAddSpellReceived(CrossfireCommandAddSpellEvent evt)
+    {
+        myindex--;
+        scrollDown();
+    }
+    public void CommandUpdSpellReceived(CrossfireCommandUpdSpellEvent evt)
+    {
+        myindex--;
+        scrollDown();
+    }
+    public void CommandDelSpellReceived(CrossfireCommandDelSpellEvent evt)
+    {
+        myindex--;
+        scrollDown();
+    }
+    public void setVisible(boolean v)
+    {
+        super.setVisible(v);
+        render();
     }
 }

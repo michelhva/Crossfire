@@ -26,7 +26,7 @@ import  com.realtime.crossfire.jxclient.*;
  * @author Lauwenmark
  * @since 1.0
  */
-public class SpellBeltItem
+public class SpellBeltItem 
 {
     public static final int STATUS_CAST = 0;
     public static final int STATUS_INVOKE = 1;

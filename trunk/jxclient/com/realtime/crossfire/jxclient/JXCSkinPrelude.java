@@ -1051,10 +1051,14 @@ public class JXCSkinPrelude implements JXCSkin
                     400+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_ICON);
             GUILabel gui_panel_spells_name = new GUILabel("label_panel_spells_name",
                     450+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_NAME);
+            GUILabel gui_panel_spells_description = new GUILabel("label_panel_spells_description",
+                    450+199, 105+551, 100, 20, null, font_stats,
+                    GUILabel.LABEL_SPELL_DESCRIPTION);
 
             gui_panel_spells.setVisible(false);
             gui_panel_spells_icon.setVisible(false);
             gui_panel_spells_name.setVisible(false);
+            gui_panel_spells_description.setVisible(false);
 
             GUIItem gui_floor0 = new GUIItem("floor0", 0+199+9, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
@@ -1358,6 +1362,8 @@ public class JXCSkinPrelude implements JXCSkin
                                     GUICommand.CMD_SHOW, ""));
             command_rsp_display.add(new GUICommand(gui_panel_spells_name,
                                     GUICommand.CMD_SHOW, ""));
+            command_rsp_display.add(new GUICommand(gui_panel_spells_description,
+                                    GUICommand.CMD_SHOW, ""));
 
             command_rsp_undisplay.add(new GUICommand(gui_rsp0, GUICommand.CMD_HIDE, ""));
             command_rsp_undisplay.add(new GUICommand(gui_rsp1, GUICommand.CMD_HIDE, ""));
@@ -1413,6 +1419,8 @@ public class JXCSkinPrelude implements JXCSkin
                                       GUICommand.CMD_HIDE, ""));
             command_rsp_undisplay.add(new GUICommand(gui_panel_spells_name,
                                       GUICommand.CMD_HIDE, ""));
+            command_rsp_undisplay.add(new GUICommand(gui_panel_spells_description,
+                                    GUICommand.CMD_HIDE, ""));
 
             GUIButton gui_btn_rsp_display = new GUIButton("btn_rsp_display",
                     690+72, 22+732, 25, 14,
@@ -1640,6 +1648,70 @@ public class JXCSkinPrelude implements JXCSkin
 
             p.addSpellListener(gui_panel_spells_icon);
             p.addSpellListener(gui_panel_spells_name);
+            p.addSpellListener(gui_panel_spells_description);
+
+            myserver.addCrossfireSpellAddedListener(gui_rsp0);
+            myserver.addCrossfireSpellAddedListener(gui_rsp1);
+            myserver.addCrossfireSpellAddedListener(gui_rsp2);
+            myserver.addCrossfireSpellAddedListener(gui_rsp3);
+            myserver.addCrossfireSpellAddedListener(gui_rsp4);
+            myserver.addCrossfireSpellAddedListener(gui_rsp5);
+            myserver.addCrossfireSpellAddedListener(gui_rsp6);
+            myserver.addCrossfireSpellAddedListener(gui_rsp7);
+            myserver.addCrossfireSpellAddedListener(gui_rsp8);
+            myserver.addCrossfireSpellAddedListener(gui_rsp9);
+            myserver.addCrossfireSpellAddedListener(gui_rspA);
+            myserver.addCrossfireSpellAddedListener(gui_rspB);
+            myserver.addCrossfireSpellAddedListener(gui_rspC);
+            myserver.addCrossfireSpellAddedListener(gui_rspD);
+            myserver.addCrossfireSpellAddedListener(gui_rspE);
+            myserver.addCrossfireSpellAddedListener(gui_rspF);
+            myserver.addCrossfireSpellAddedListener(gui_rspG);
+            myserver.addCrossfireSpellAddedListener(gui_rspH);
+            myserver.addCrossfireSpellAddedListener(gui_rspI);
+            myserver.addCrossfireSpellAddedListener(gui_rspJ);
+
+            myserver.addCrossfireSpellRemovedListener(gui_rsp0);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp1);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp2);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp3);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp4);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp5);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp6);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp7);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp8);
+            myserver.addCrossfireSpellRemovedListener(gui_rsp9);
+            myserver.addCrossfireSpellRemovedListener(gui_rspA);
+            myserver.addCrossfireSpellRemovedListener(gui_rspB);
+            myserver.addCrossfireSpellRemovedListener(gui_rspC);
+            myserver.addCrossfireSpellRemovedListener(gui_rspD);
+            myserver.addCrossfireSpellRemovedListener(gui_rspE);
+            myserver.addCrossfireSpellRemovedListener(gui_rspF);
+            myserver.addCrossfireSpellRemovedListener(gui_rspG);
+            myserver.addCrossfireSpellRemovedListener(gui_rspH);
+            myserver.addCrossfireSpellRemovedListener(gui_rspI);
+            myserver.addCrossfireSpellRemovedListener(gui_rspJ);
+
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp0);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp1);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp2);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp3);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp4);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp5);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp6);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp7);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp8);
+            myserver.addCrossfireSpellUpdatedListener(gui_rsp9);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspA);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspB);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspC);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspD);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspE);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspF);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspG);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspH);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspI);
+            myserver.addCrossfireSpellUpdatedListener(gui_rspJ);
 
             mygui.add(gui_map);
             mygui.add(gui_sword_back);
@@ -1798,6 +1870,7 @@ public class JXCSkinPrelude implements JXCSkin
             mygui.add(gui_panel_spells);
             mygui.add(gui_panel_spells_icon);
             mygui.add(gui_panel_spells_name);
+            mygui.add(gui_panel_spells_description);
         }
         catch (Exception e)
         {

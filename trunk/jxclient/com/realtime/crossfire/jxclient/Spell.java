@@ -31,20 +31,109 @@ import java.io.*;
  */
 public class Spell
 {
-    private BufferedImage myspellpic;
+    private BufferedImage myspellpic = null;
     private String myspellname;
     private String myid;
+
+    private int     mytag;
+    private int     mylevel;
+    private int     mycastingtime;
+    private int     mymana;
+    private int     mygrace;
+    private int     mydamage;
+    private int     myskill;
+    private int     mypath;
+    private Face    myface;
+    private String  myname;
+    private String  mymessage;
+
+    public int getTag()
+    {
+        return mytag;
+    }
+    public int getLevel()
+    {
+        return mylevel;
+    }
+    public int getCastingTime()
+    {
+        return mycastingtime;
+    }
+    public int getMana()
+    {
+        return mymana;
+    }
+    public int getGrace()
+    {
+        return mygrace;
+    }
+    public int getDamage()
+    {
+        return mydamage;
+    }
+    public int getSkill()
+    {
+        return myskill;
+    }
+    public int getPath()
+    {
+        return mypath;
+    }
+    public String getName()
+    {
+        return myname;
+    }
+    public String getMessage()
+    {
+        return mymessage;
+    }
+    public Face getFace()
+    {
+        return myface;
+    }
+    public void setLevel(int nv)
+    {
+        mylevel = nv;
+    }
+    public void setCastingTime(int nv)
+    {
+        mycastingtime = nv;
+    }
+    public void setMana(int nv)
+    {
+        mymana = nv;
+    }
+    public void setGrace(int nv)
+    {
+        mygrace = nv;
+    }
+    public void setDamage(int nv)
+    {
+        mydamage = nv;
+    }
+    public void setSkill(int nv)
+    {
+        myskill = nv;
+    }
+    public void setPath(int nv)
+    {
+        mypath = nv;
+    }
+
+    public Spell(Face f, int tag, String spellname, String spellmessage)
+    {
+        myface = f;
+        mytag = tag;
+        myname = spellname;
+        mymessage = spellmessage;
+    }
 
     public Spell(String filename, String spellname, String id) throws IOException
     {
         myspellpic   =
             javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(filename));
-        myspellname = spellname;
+        myname = spellname;
         myid = id;
-    }
-    public String getName()
-    {
-        return myspellname;
     }
     public String getInternalName()
     {
@@ -52,6 +141,18 @@ public class Spell
     }
     public BufferedImage getPicture()
     {
-        return myspellpic;
+        if (myspellpic != null)
+            return myspellpic;
+        else
+        {
+            return myface.getOriginalPicture();
+        }
+    }
+    public String toString()
+    {
+        String str = new String("Name:"+myname+" ID:"+mytag+" Level:"+mylevel);
+        str = str+" Time:"+mycastingtime+" Mana:"+mymana+" Grace:"+mygrace;
+        str = str+" Damage:"+mydamage+" Skill:"+myskill+" Path:"+mypath;
+        return str;
     }
 }

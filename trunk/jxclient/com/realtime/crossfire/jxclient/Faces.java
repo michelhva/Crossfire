@@ -133,7 +133,6 @@ public class Faces
         {
             //BufferedImage im = ImageIO.read(new File("cache/"+pixname+".x2.png"));
             //BufferedImage oim = ImageIO.read(new File("cache/"+pixname+".x1.png"));
-
             BufferedImage im = new PngImage().read(new File("cache/"+pixname+".x2.png"));
             BufferedImage oim = new PngImage().read(new File("cache/"+pixname+".x1.png"));
 
