@@ -4171,6 +4171,11 @@ arch flagstone
 x 19
 y 5
 end
+arch button_handle
+connected 1
+x 19
+y 5
+end
 arch flagstone
 x 19
 y 6
@@ -4189,6 +4194,11 @@ x 19
 y 7
 end
 arch flagstone
+x 19
+y 8
+end
+arch button_handle
+connected 2
 x 19
 y 8
 end
