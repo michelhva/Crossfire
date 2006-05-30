@@ -14,4 +14,5 @@ editable 5120
 magicmap white
 body_foot -2
 item_power 1
+map_layer item
 end
