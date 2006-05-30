@@ -21,6 +21,7 @@ is_water 1
 editable 8
 is_floor 1
 smoothlevel 20
+client_anim_sync 1
 end
 Object sea1
 name sea
@@ -45,6 +46,7 @@ is_water 1
 editable 8
 is_floor 1
 smoothlevel 20
+client_anim_sync 1
 end
 Object sea_nw
 name sea
