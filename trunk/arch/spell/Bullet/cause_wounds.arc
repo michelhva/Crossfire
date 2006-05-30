@@ -1,11 +1,11 @@
 Object cause_wounds
 type 102
 subtype 5
-face healing.111
+face cause.111
 anim
-healing.111
-healing.112
-healing.111
+cause.111
+cause.112
+cause.111
 mina
 is_animated 1
 is_turnable 0

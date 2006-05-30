@@ -1,12 +1,12 @@
 Object manabolt
 type 102
 subtype 4
-face destruction.111
+face manabolt.111
 anim
-destruction.111
-destruction.112
-destruction.113
-destruction.114
+manabolt.111
+manabolt.112
+manabolt.113
+manabolt.114
 mina
 magicmap light_blue
 flying 1

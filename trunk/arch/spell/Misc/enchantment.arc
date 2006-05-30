@@ -16,4 +16,5 @@ no_pick 1
 see_anywhere 1
 food 5
 editable 0
+visibility 255
 end
