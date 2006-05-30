@@ -4,13 +4,13 @@ type 102
 subtype 7
 walk_on 1
 fly_on 1
-face destruction.111
+face manabolt.111
 magicmap light_blue
 anim
-destruction.111
-destruction.112
-destruction.113
-destruction.114
+manabolt.111
+manabolt.112
+manabolt.113
+manabolt.114
 mina
 speed 1
 wc -50
