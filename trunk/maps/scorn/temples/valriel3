@@ -1,13 +1,15 @@
 arch map
-region scorn
 name valriel3
+region scorn
+darkness 2
+width 16
+height 16
+enter_y 3
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Fri Jan 22 01:59:02 1999
 endmsg
-sp 3
-invisible 2
 end
 arch woodfloor
 end
@@ -247,6 +249,7 @@ monsterstyle angel
 symmetry 4
 orientation 2
 dungeon_depth 99
+dungeon_name Valriel's church
 endmsg
 hp 0
 sp 0
