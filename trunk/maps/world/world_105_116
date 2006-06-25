@@ -1,6 +1,6 @@
 arch map
-region scorn
 name world_105_116
+region scorn
 msg
 
 endmsg
@@ -2964,6 +2964,9 @@ x 9
 y 5
 end
 arch house_small
+slaying /scorn/houses/easy_house.1.a
+hp 10
+sp 19
 x 9
 y 5
 end
