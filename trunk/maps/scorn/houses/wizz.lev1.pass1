@@ -757,6 +757,11 @@ arch dungeon_floor
 x 7
 y 5
 end
+arch button_small
+x 7
+y 6
+connected 22
+end
 arch dungeon_floor
 x 7
 y 6
@@ -764,6 +769,11 @@ end
 arch block_door_closed
 x 7
 y 6
+connected 22
+end
+arch button_small
+x 7
+y 7
 connected 22
 end
 arch dungeon_floor
