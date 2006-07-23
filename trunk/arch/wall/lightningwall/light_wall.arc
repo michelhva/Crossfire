@@ -9,6 +9,7 @@ dam 5
 face light_wall.101
 color_bg yellow
 speed -0.1
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -39,6 +40,7 @@ maxsp 1
 dam 5
 is_animated 0
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -57,6 +59,7 @@ color_bg yellow
 sp 1
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -74,6 +77,7 @@ face light_wall.121
 color_bg yellow
 sp 2
 speed -0.04
+no_pick 1
 no_pass 1
 dam 5
 blocksview 1
@@ -93,6 +97,7 @@ color_bg yellow
 sp 3
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -111,6 +116,7 @@ color_bg yellow
 sp 4
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -129,6 +135,7 @@ color_bg yellow
 sp 5
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -147,6 +154,7 @@ color_bg yellow
 sp 6
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -165,6 +173,7 @@ color_bg yellow
 sp 7
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
@@ -183,6 +192,7 @@ color_bg yellow
 sp 8
 dam 5
 speed -0.04
+no_pick 1
 no_pass 1
 blocksview 1
 editable 32
