@@ -3672,16 +3672,16 @@ endmsg
 x 14
 y 23
 end
-arch marble
-x 14
-y 23
-end
 arch magic_ear
 msg
 @match maveric|Maveric
 Click.
 endmsg
 connected 12321
+x 14
+y 23
+end
+arch marble
 x 14
 y 23
 end
