@@ -323,10 +323,10 @@ msg
 The holder of this card is allowed free
 access into and out of the City of Scorn
 to the rest of the continent without
-further charges and penalities. The City
+further charges and penalties. The City
 of Scorn reserves the right to revoke
 said access at any time of its choosing
-without recompence or liability.
+without recompense or liability.
 endmsg
 slaying gate_pass
 value 800
@@ -606,15 +606,15 @@ name gatehouse guard
 msg
 @match who|people
 Yes you can only pass if you be...
-* A citizen of scorn with a password.
+* A citizen of Scorn with a password.
 * Have a merchants ``Port Pass''.
 * Have been knighted ``Hero of Scorn''.
 @match hero|Hero|scorn|Scorn
 Only the king can grant `Hero' status.
 @match port|pass
-See the Office inside scorn to your left.
+See the Office inside Scorn to your left.
 @match password|passwd
-I am not allow to tell you the password.
+I am not allowed to tell you the password.
 @match *
 Gates are opened only for certain people.
 endmsg
@@ -1449,7 +1449,7 @@ arch magic_mouth
 name magic_mouth (gate open/close)
 msg
 You hear from behind the eastern wall,
-a loud noise as anchient machinary is
+a loud noise as ancient machinery is
 set in motion to move the rusty gates.
 endmsg
 connected 10
@@ -1667,7 +1667,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-The guard seeing that the Hero approches
+The guard seeing that the Hero approaches
 turns the handle to open the gate.
 endmsg
 connected 13
