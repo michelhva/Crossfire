@@ -4026,8 +4026,8 @@ end
 arch guard
 name talkative prison guard
 msg
-@match crises
-The crises of all these monsters poping
+@match crisis
+The crisis of all these monsters popping
 up all over the city. We get rid of one
 batch and they just re-appear a few
 days later!
@@ -4044,7 +4044,7 @@ Road.
 @match *
 I wouldn't go in there if I was ye.
 This is where we keep the monsters
-captured in the city since the crises
+captured in the city since the crisis
 started.
 endmsg
 x 12

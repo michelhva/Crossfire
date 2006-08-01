@@ -986,11 +986,11 @@ arch guard
 name goggle eyed guard
 msg
 @match post|game|won
-This post has become the most sort 
+This post has become the most sought 
 after post amongst the guards. It 
 has the best view in the prison!
 @match clothes
-Give her cloths, and spoil the view!
+Give her clothes, and spoil the view!
 Not likely.
 @match watch|view
 Yes can't you see the great looking
@@ -1704,7 +1704,7 @@ name prison guard
 msg
 @match poem|cleric|eric|Eric
   A priestly young person called Eric,
-   Whilst practising to be a cleric,
+   Whilst practicing to be a cleric,
     Misspelt his god's name,
      'twas really a shame,
       And thus ended Eric, the cleric.
@@ -2020,7 +2020,7 @@ arch holy_priest
 name Eric the Cleric
 msg
 @match name
-I'm Eric and I and I used to be a Cleric.
+I'm Eric and I used to be a Cleric.
 @match bad|boy
 Yes I graffitied on the `Street of Gods'
 signpost and now I am a prisoner here.
@@ -2122,7 +2122,7 @@ x 15
 y 3
 end
 arch prisoner
-name Manicled Prisoner on bed
+name Manacled prisoner on bed
 msg
 @match what|prisoner|goblin|when
 When the guard fell asleep at his post,
@@ -2186,7 +2186,7 @@ name Sailor with a pegleg
 msg
 @match *
 That was the best fight I have ever
-seen in Gork's Tavern. I'll love to do
+seen in Gork's Tavern. I'd love to do
 that again.
 endmsg
 x 15
@@ -2926,8 +2926,8 @@ Oh please get rid of those horrible
 Orc's and I'll give you a Merchants
 Gate Pass.
 @match gate|pass|merchant
-Just go to the furthest corner from the
-door and dug into the wall and you will
+Just go to the farthest corner from the
+door and dig into the wall and you will
 find it.
 @match *
 I was arrested for streaking.
