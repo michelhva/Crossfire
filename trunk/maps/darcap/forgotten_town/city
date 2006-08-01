@@ -108,23 +108,35 @@ end
 arch flagstone_2_1_1
 y 15
 end
+arch dungeon_magic
+y 16
+end
 arch cobblestones2
 y 16
 end
 arch flagstone_3_2
 y 16
 end
+arch dungeon_magic
+y 17
+end
 arch cobblestones2
 y 17
 end
 arch flagstone_2_1_1
 y 17
 end
+arch dungeon_magic
+y 18
+end
 arch cobblestones2
 y 18
 end
-arch flagstone_2_1_1
+arch flagstone_3_2
 y 18
+end
+arch dungeon_magic
+y 19
 end
 arch cobblestones2
 y 19
@@ -346,6 +358,10 @@ arch marble
 x 1
 y 15
 end
+arch dungeon_magic
+x 1
+y 16
+end
 arch marble
 x 1
 y 16
@@ -354,11 +370,30 @@ arch flagstone_2_1_2
 x 1
 y 16
 end
-arch cobblestones2
+arch dungeon_magic
 x 1
 y 17
 end
 arch cobblestones2
+x 1
+y 17
+end
+arch teleporter
+slaying /azumauindo/misc/entrance1
+hp 8
+sp 14
+x 1
+y 17
+end
+arch dungeon_magic
+x 1
+y 18
+end
+arch cobblestones2
+x 1
+y 18
+end
+arch flagstone_2_1_2
 x 1
 y 18
 end
@@ -626,6 +661,10 @@ arch marble
 x 2
 y 15
 end
+arch dungeon_magic
+x 2
+y 16
+end
 arch marble
 x 2
 y 16
@@ -634,11 +673,28 @@ arch flagstone_2_1_2
 x 2
 y 16
 end
-arch cobblestones2
+arch dungeon_magic
 x 2
 y 17
 end
 arch cobblestones2
+x 2
+y 17
+end
+arch igateTrg2
+connected 1223
+x 2
+y 17
+end
+arch dungeon_magic
+x 2
+y 18
+end
+arch cobblestones2
+x 2
+y 18
+end
+arch flagstone_1_3
 x 2
 y 18
 end
@@ -913,6 +969,10 @@ arch marble
 x 3
 y 15
 end
+arch dungeon_magic
+x 3
+y 16
+end
 arch marble
 x 3
 y 16
@@ -921,13 +981,37 @@ arch flagstone_2_1_2
 x 3
 y 16
 end
-arch cobblestones2
+arch dungeon_magic
+x 3
+y 17
+end
+arch check_floor
+connected 1223
+slaying azumauindolvl0pass
 x 3
 y 17
 end
 arch cobblestones2
 x 3
+y 17
+end
+arch dungeon_magic
+x 3
 y 18
+end
+arch cobblestones2
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
+y 19
+end
+arch check_floor
+connected 1223
+slaying azumauindolvl0pass
+x 3
+y 19
 end
 arch cobblestones2
 x 3
