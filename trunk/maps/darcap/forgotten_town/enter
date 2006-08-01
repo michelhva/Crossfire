@@ -427,7 +427,7 @@ end
 arch woodfloor
 x 3
 end
-arch awall_2_1_2
+arch awall_1_3
 x 3
 end
 arch woodfloor
@@ -734,7 +734,7 @@ end
 arch woodfloor
 x 5
 end
-arch awall_2_1_2
+arch awall_1_4
 x 5
 end
 arch woodfloor
@@ -3121,8 +3121,8 @@ end
 end
 arch dragon_exit
 slaying city
-x 10
-y 17
 hp 2
 sp 2
+x 10
+y 17
 end
