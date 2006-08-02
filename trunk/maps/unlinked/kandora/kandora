@@ -5,8 +5,8 @@ Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Tue Jan 26 18:06:47 1999
 endmsg
-x 40
-y 28
+width 40
+height 28
 end
 arch woods
 end
@@ -950,9 +950,9 @@ x 7
 y 4
 end
 arch mountain4
+no_pass 0
 x 7
 y 5
-no_pass 0
 end
 arch magic_ear
 msg
@@ -961,17 +961,17 @@ A dwarf pops up from behind a rock,
 blindfolds you, and begins leading
 down into a hidden valley....
 endmsg
+connected 22
 x 7
 y 5
-connected 22
 end
 arch teleporter
 slaying cave/mithril
 sp 15
-x 7
-y 5
 invisible 1
 connected 22
+x 7
+y 5
 end
 arch hills_rocky
 x 7
@@ -1096,9 +1096,17 @@ arch hills_rocky
 x 8
 y 5
 end
+arch grassmedium
+x 8
+y 6
+end
 arch fernsdense
 x 8
 y 6
+end
+arch grassmedium
+x 8
+y 7
 end
 arch biglake_nw
 x 8
@@ -1107,6 +1115,10 @@ end
 arch river_w-e
 x 8
 y 7
+end
+arch brush
+x 8
+y 8
 end
 arch biglake_sw
 x 8
@@ -1218,6 +1230,10 @@ arch desert
 x 9
 y 5
 end
+arch grassmedium
+x 9
+y 6
+end
 arch fernsdense
 x 9
 y 6
@@ -1233,6 +1249,10 @@ end
 arch sea
 x 9
 y 9
+end
+arch jungle_1
+x 9
+y 10
 end
 arch biglake_sw
 x 9
@@ -1332,6 +1352,10 @@ end
 arch desert
 x 10
 y 5
+end
+arch grassmedium
+x 10
+y 6
 end
 arch biglake_nw
 x 10
@@ -1455,6 +1479,10 @@ arch desert
 x 11
 y 5
 end
+arch swamp
+x 11
+y 6
+end
 arch biglake_ne
 x 11
 y 6
@@ -1474,6 +1502,10 @@ end
 arch sea
 x 11
 y 9
+end
+arch jungle_1
+x 11
+y 10
 end
 arch biglake_se
 x 11
@@ -1592,6 +1624,10 @@ arch deep_swamp
 x 12
 y 6
 end
+arch swamp
+x 12
+y 7
+end
 arch biglake_ne
 x 12
 y 7
@@ -1599,6 +1635,10 @@ end
 arch biglake_w
 x 12
 y 8
+end
+arch jungle_1
+x 12
+y 9
 end
 arch biglake_se
 x 12
@@ -1986,9 +2026,17 @@ arch swamp
 x 15
 y 7
 end
+arch swamp
+x 15
+y 8
+end
 arch biglake_ne
 x 15
 y 8
+end
+arch woods
+x 15
+y 9
 end
 arch biglake_sw
 x 15
@@ -2226,6 +2274,10 @@ y 4
 end
 arch swamp
 x 17
+y 5
+end
+arch swamp
+x 17
 y 6
 end
 arch swamp
@@ -2375,6 +2427,10 @@ arch swamp
 x 18
 y 7
 end
+arch swamp
+x 18
+y 8
+end
 arch biglake_nw
 x 18
 y 8
@@ -2501,6 +2557,10 @@ end
 arch biglake_w
 x 19
 y 9
+end
+arch brush
+x 19
+y 10
 end
 arch biglake_sw
 x 19
@@ -2874,6 +2934,10 @@ arch swamp
 x 22
 y 6
 end
+arch swamp
+x 22
+y 7
+end
 arch biglake_nw
 x 22
 y 7
@@ -2889,6 +2953,10 @@ end
 arch biglake_w
 x 22
 y 10
+end
+arch grassmedium
+x 22
+y 11
 end
 arch biglake_sew
 x 22
@@ -3008,6 +3076,10 @@ end
 arch biglake_w
 x 23
 y 9
+end
+arch grassmedium
+x 23
+y 10
 end
 arch biglake_se
 x 23
@@ -3523,6 +3595,10 @@ arch biglake_w
 x 27
 y 9
 end
+arch grassmedium
+x 27
+y 10
+end
 arch biglake_sw
 x 27
 y 10
@@ -3800,6 +3876,10 @@ arch swamp
 x 29
 y 5
 end
+arch swamp
+x 29
+y 6
+end
 arch biglake_nw
 x 29
 y 6
@@ -3807,6 +3887,10 @@ end
 arch biglake_w
 x 29
 y 7
+end
+arch swamp
+x 29
+y 8
 end
 arch biglake_se
 x 29
@@ -3816,6 +3900,10 @@ arch ytree
 x 29
 y 8
 end
+arch swamp
+x 29
+y 9
+end
 arch biglake_ne
 x 29
 y 9
@@ -3823,6 +3911,10 @@ end
 arch biglake_w
 x 29
 y 10
+end
+arch grassmedium
+x 29
+y 11
 end
 arch biglake_sw
 x 29
@@ -3892,6 +3984,10 @@ arch dunes
 x 29
 y 26
 end
+arch dunes
+x 29
+y 27
+end
 arch biglake_nw
 x 29
 y 27
@@ -3946,6 +4042,10 @@ end
 arch biglake_w
 x 30
 y 11
+end
+arch grassmedium
+x 30
+y 12
 end
 arch biglake_sw
 x 30
@@ -4038,6 +4138,10 @@ arch swamp
 x 31
 y 4
 end
+arch swamp
+x 31
+y 5
+end
 arch biglake_nw
 x 31
 y 5
@@ -4045,6 +4149,10 @@ end
 arch biglake_w
 x 31
 y 6
+end
+arch swamp
+x 31
+y 7
 end
 arch biglake_se
 x 31
@@ -4057,6 +4165,10 @@ end
 arch deep_swamp
 x 31
 y 9
+end
+arch swamp
+x 31
+y 10
 end
 arch biglake_ne
 x 31
@@ -4189,6 +4301,10 @@ arch deep_swamp
 x 32
 y 10
 end
+arch swamp
+x 32
+y 11
+end
 arch biglake_ne
 x 32
 y 11
@@ -4196,6 +4312,10 @@ end
 arch biglake_w
 x 32
 y 12
+end
+arch grassmedium
+x 32
+y 13
 end
 arch biglake_sw
 x 32
@@ -4479,6 +4599,10 @@ arch deep_swamp
 x 34
 y 11
 end
+arch swamp
+x 34
+y 12
+end
 arch biglake_ne
 x 34
 y 12
@@ -4578,6 +4702,10 @@ arch small_stones
 x 35
 y 3
 end
+arch small_stones
+x 35
+y 4
+end
 arch biglake_nw
 x 35
 y 4
@@ -4610,6 +4738,10 @@ arch deep_swamp
 x 35
 y 11
 end
+arch swamp
+x 35
+y 12
+end
 arch biglake_nw
 x 35
 y 12
@@ -4633,6 +4765,10 @@ end
 arch grass
 x 35
 y 16
+end
+arch grass
+x 35
+y 17
 end
 arch biglake_nw
 x 35
@@ -4696,6 +4832,10 @@ arch small_stones
 x 36
 y 2
 end
+arch small_stones
+x 36
+y 3
+end
 arch biglake_nw
 x 36
 y 3
@@ -4811,6 +4951,10 @@ arch dirtroad_1_3
 x 37
 y 1
 end
+arch small_stones
+x 37
+y 2
+end
 arch biglake_nw
 x 37
 y 2
@@ -4850,6 +4994,10 @@ end
 arch deep_swamp
 x 37
 y 10
+end
+arch swamp
+x 37
+y 11
 end
 arch biglake_nw
 x 37
@@ -4925,6 +5073,10 @@ y 27
 end
 arch small_stones
 x 38
+end
+arch small_stones
+x 38
+y 1
 end
 arch biglake_nw
 x 38
@@ -5037,6 +5189,9 @@ end
 arch biglake_sn
 x 38
 y 27
+end
+arch small_stones
+x 39
 end
 arch biglake_nw
 x 39
@@ -5163,9 +5318,9 @@ x 5
 y 3
 end
 arch castle_a
+speed_left -0.518000
 x 17
 y 11
-speed_left -0.518000
 end
 arch city_tower
 x 33
