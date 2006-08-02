@@ -184,6 +184,24 @@ arch woodfloor
 x 1
 y 7
 end
+arch mover_1
+x 1
+y 7
+end
+arch magic_mouth
+msg
+You feel that your god will not be able
+to help you if you step through this door.
+endmsg
+connected 421
+x 1
+y 8
+end
+arch button_small
+connected 421
+x 1
+y 8
+end
 arch woodfloor
 x 1
 y 8
@@ -304,7 +322,7 @@ arch woodfloor
 x 2
 y 2
 end
-arch awall_2_1_2
+arch awall_win2
 x 2
 y 2
 end
@@ -328,7 +346,15 @@ arch woodfloor
 x 2
 y 7
 end
+arch mover_2
+x 2
+y 7
+end
 arch woodfloor
+x 2
+y 8
+end
+arch mover_3
 x 2
 y 8
 end
@@ -438,7 +464,7 @@ arch woodfloor
 x 3
 y 2
 end
-arch awall_2_1_2
+arch awall_win2
 x 3
 y 2
 end
@@ -601,6 +627,7 @@ end
 arch sign_e
 msg
 Entry to the forgotten City
+Only higher level players!
 endmsg
 walk_on 1
 fly_on 1
@@ -611,7 +638,7 @@ arch woodfloor
 x 4
 y 2
 end
-arch awall_2_1_2
+arch awall_win2
 x 4
 y 2
 end
