@@ -3790,7 +3790,9 @@ is due a spell which was spoken for 350 years
 resistant agains all physical forces.
 
 Now adventurer, finish your work and decide
-yourself for one side!"
+yourself for one side but be warned: If you 
+enter the teleporter there is no way back! You
+must succeed!"
 endmsg
 connected 1
 food 1
@@ -4191,6 +4193,7 @@ no_pick 1
 end
 end
 arch big_wiz
+name Grimsu
 level 60
 exp 1000
 attacktype 129
