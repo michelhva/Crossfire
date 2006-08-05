@@ -1,6 +1,7 @@
 Object map
 type 22
 slaying /HallOfSelection
+race /HallsOfExtSelection
 face map.111
 x 16
 y 16
