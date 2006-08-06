@@ -1,14 +1,14 @@
 arch map
 name ground_floor
 region lonetown
-msg
-Creator: Gene Alexander
-Date:    Mon Nov  7 18:54:00 UTC 2005
-endmsg
 width 40
 height 40
 enter_x 26
 enter_y 36
+msg
+Creator: Gene Alexander
+Date:    Mon Nov  7 18:54:00 UTC 2005
+endmsg
 end
 arch cobblestones
 end
@@ -22,235 +22,235 @@ arch grass
 y 3
 end
 arch dwall_2_2_2
+y 3
 type 77
 is_buildable 1
-y 3
 end
 arch grass
 y 4
 end
 arch dwall_2_1_1
-type 77
 y 4
+type 77
 end
 arch grass
 y 5
 end
 arch dwall_2_1_1
-type 77
 y 5
+type 77
 end
 arch grass
 y 6
 end
 arch dwall_2_1_1
-type 77
 y 6
+type 77
 end
 arch grass
 y 7
 end
 arch dwall_2_1_1
-type 77
 y 7
+type 77
 end
 arch grass
 y 8
 end
 arch dwall_2_1_1
-type 77
 y 8
+type 77
 end
 arch grass
 y 9
 end
 arch dwall_2_1_1
-type 77
 y 9
+type 77
 end
 arch grass
 y 10
 end
 arch dwall_3_2
+y 10
 type 77
 is_buildable 1
-y 10
 end
 arch grass
 y 11
 end
 arch dwall_2_1_1
-type 77
 y 11
+type 77
 end
 arch grass
 y 12
 end
 arch dwall_2_1_1
-type 77
 y 12
+type 77
 end
 arch grass
 y 13
 end
 arch dwall_2_1_1
-type 77
 y 13
+type 77
 end
 arch grass
 y 14
 end
 arch dwall_2_1_1
-type 77
 y 14
+type 77
 end
 arch grass
 y 15
 end
 arch dwall_2_1_1
-type 77
 y 15
+type 77
 end
 arch grass
 y 16
 end
 arch dwall_2_1_1
-type 77
 y 16
+type 77
 end
 arch grass
 y 17
 end
 arch dwall_2_1_1
-type 77
 y 17
+type 77
 end
 arch grass
 y 18
 end
 arch dwall_2_1_1
-type 77
 y 18
+type 77
 end
 arch grass
 y 19
 end
 arch dwall_2_1_1
-type 77
 y 19
+type 77
 end
 arch grass
 y 20
 end
 arch dwall_2_1_1
-type 77
 y 20
+type 77
 end
 arch grass
 y 21
 end
 arch dwall_2_1_1
-type 77
 y 21
+type 77
 end
 arch grass
 y 22
 end
 arch dwall_2_1_1
-type 77
 y 22
+type 77
 end
 arch grass
 y 23
 end
 arch dwall_2_1_1
-type 77
 y 23
+type 77
 end
 arch grass
 y 24
 end
 arch dwall_2_1_1
-type 77
 y 24
+type 77
 end
 arch grass
 y 25
 end
 arch dwall_2_1_1
-type 77
 y 25
+type 77
 end
 arch grass
 y 26
 end
 arch dwall_2_1_1
-type 77
 y 26
+type 77
 end
 arch grass
 y 27
 end
 arch dwall_2_1_1
-type 77
 y 27
+type 77
 end
 arch grass
 y 28
 end
 arch dwall_2_1_1
-type 77
 y 28
+type 77
 end
 arch grass
 y 29
 end
 arch dwall_2_1_1
-type 77
 y 29
+type 77
 end
 arch grass
 y 30
 end
 arch dwall_2_1_1
-type 77
 y 30
+type 77
 end
 arch grass
 y 31
 end
 arch dwall_2_1_1
-type 77
 y 31
+type 77
 end
 arch grass
 y 32
 end
 arch dwall_2_1_1
-type 77
 y 32
+type 77
 end
 arch grass
 y 33
 end
 arch dwall_2_1_1
-type 77
 y 33
+type 77
 end
 arch grass
 y 34
 end
 arch dwall_2_1_1
-type 77
 y 34
+type 77
 end
 arch grass
 y 35
 end
 arch dwall_2_2_1
+y 35
 type 77
 is_buildable 1
-y 35
 end
 arch grass
 y 36
@@ -280,9 +280,9 @@ x 1
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 1
 y 3
+type 77
 end
 arch woodfloor
 x 1
@@ -313,9 +313,9 @@ x 1
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 1
 y 10
+type 77
 end
 arch grass
 x 1
@@ -423,9 +423,9 @@ x 1
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 1
 y 35
+type 77
 end
 arch grass
 x 1
@@ -459,9 +459,9 @@ x 2
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 2
 y 3
+type 77
 end
 arch woodfloor2
 x 2
@@ -478,10 +478,10 @@ end
 arch teleporter
 hp 11
 sp 31
-connected 1002
-speed 0.0
 x 2
 y 6
+speed 0.0
+connected 1002
 end
 arch key2
 name LTAP Basement Key
@@ -496,10 +496,10 @@ end
 arch teleporter
 hp 15
 sp 31
-connected 1008
-speed 0.0
 x 2
 y 7
+speed 0.0
+connected 1008
 end
 arch key2
 name LTAP Mudroom Key
@@ -520,9 +520,9 @@ x 2
 y 10
 end
 arch dwall_1_3
-type 77
 x 2
 y 10
+type 77
 end
 arch grass
 x 2
@@ -625,9 +625,9 @@ x 2
 y 35
 end
 arch dwall_1_3
-type 77
 x 2
 y 35
+type 77
 end
 arch grass
 x 2
@@ -661,9 +661,9 @@ x 3
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 3
 y 3
+type 77
 end
 arch woodfloor
 x 3
@@ -680,10 +680,10 @@ end
 arch teleporter
 hp 11
 sp 32
-connected 1004
-speed 0.0
 x 3
 y 6
+speed 0.0
+connected 1004
 end
 arch key2
 name LTAP Upper Key
@@ -698,10 +698,10 @@ end
 arch teleporter
 hp 15
 sp 32
-connected 1010
-speed 0.0
 x 3
 y 7
+speed 0.0
+connected 1010
 end
 arch key2
 name LTAP Kitchen Key
@@ -867,9 +867,9 @@ x 4
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 4
 y 3
+type 77
 end
 arch woodfloor2
 x 4
@@ -886,10 +886,10 @@ end
 arch teleporter
 hp 11
 sp 33
-connected 1006
-speed 0.0
 x 4
 y 6
+speed 0.0
+connected 1006
 end
 arch key2
 name LTAP Greatroom Key
@@ -904,10 +904,10 @@ end
 arch teleporter
 hp 15
 sp 33
-connected 1012
-speed 0.0
 x 4
 y 7
+speed 0.0
+connected 1012
 end
 arch key2
 name LTAP Study Key
@@ -1073,9 +1073,9 @@ x 5
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 5
 y 3
+type 77
 end
 arch woodfloor
 x 5
@@ -1086,56 +1086,56 @@ x 5
 y 5
 end
 arch dwall_2_2_2
-type 77
-is_buildable 1
 x 5
 y 5
+type 77
+is_buildable 1
 end
 arch woodfloor
 x 5
 y 6
 end
 arch dwall_2_1_1
-type 77
 x 5
 y 6
+type 77
 end
 arch woodfloor2
 x 5
 y 7
 end
 arch dwall_2_1_1
-type 77
 x 5
 y 7
+type 77
 end
 arch woodfloor
 x 5
 y 8
 end
 arch dwall_2_1_1
-type 77
 x 5
 y 8
+type 77
 end
 arch woodfloor2
 x 5
 y 9
 end
 arch dwall_2_1_1
-type 77
 x 5
 y 9
+type 77
 end
 arch grass
 x 5
 y 10
 end
 arch dwall_2_2_1
-type 77
-is_buildable 1
 x 5
 y 10
+type 77
+is_buildable 1
 end
 arch grass
 x 5
@@ -1238,9 +1238,9 @@ x 5
 y 35
 end
 arch dwall_1_4
-type 77
 x 5
 y 35
+type 77
 end
 arch grass
 x 5
@@ -1274,9 +1274,9 @@ x 6
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 6
 y 3
+type 77
 end
 arch woodfloor2
 x 6
@@ -1287,9 +1287,9 @@ x 6
 y 5
 end
 arch dwall_2_1_2
-type 77
 x 6
 y 5
+type 77
 end
 arch woodfloor2
 x 6
@@ -1312,9 +1312,9 @@ x 6
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 6
 y 10
+type 77
 end
 arch grass
 x 6
@@ -1417,9 +1417,9 @@ x 6
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 6
 y 35
+type 77
 end
 arch grass
 x 6
@@ -1453,75 +1453,75 @@ x 7
 y 3
 end
 arch dwall3_3
-type 77
-is_buildable 1
 x 7
 y 3
+type 77
+is_buildable 1
 end
 arch small_stones
 x 7
 y 4
 end
 arch dwall_2_1_1
-type 77
 x 7
 y 4
+type 77
 end
 arch grass
 x 7
 y 5
 end
 arch dwall_3_4
-type 77
-is_buildable 1
 x 7
 y 5
+type 77
+is_buildable 1
 end
 arch grass
 x 7
 y 6
 end
 arch dwall_2_1_1
-type 77
 x 7
 y 6
+type 77
 end
 arch grass
 x 7
 y 7
 end
 arch dwall_2_1_1
-type 77
 x 7
 y 7
+type 77
 end
 arch grass
 x 7
 y 8
 end
 arch dwall_2_1_1
-type 77
 x 7
 y 8
+type 77
 end
 arch grass
 x 7
 y 9
 end
 arch dwall_2_1_1
-type 77
 x 7
 y 9
+type 77
 end
 arch grass
 x 7
 y 10
 end
 arch dwall_2_2_4
+x 7
+y 10
 type 77
 is_buildable 1
-x 7
-y 10
 end
 arch grass
 x 7
@@ -1624,9 +1624,9 @@ x 7
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 7
 y 35
+type 77
 end
 arch grass
 x 7
@@ -1660,9 +1660,9 @@ x 8
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 8
 y 3
+type 77
 end
 arch grass
 x 8
@@ -1793,9 +1793,9 @@ x 8
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 8
 y 35
+type 77
 end
 arch grass
 x 8
@@ -1829,9 +1829,9 @@ x 9
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 9
 y 3
+type 77
 end
 arch grass
 x 9
@@ -1918,25 +1918,25 @@ x 9
 y 17
 end
 arch small_stones
-no_pass 1
-no_magic 1
-damned 1
 x 9
 y 18
+no_pass 1
+no_magic 1
+damned 1
 end
 arch cobblestones2
-no_pass 1
-no_magic 1
-damned 1
 x 9
 y 19
-end
-arch grass
 no_pass 1
 no_magic 1
 damned 1
+end
+arch grass
 x 9
 y 20
+no_pass 1
+no_magic 1
+damned 1
 end
 arch grass
 x 9
@@ -2023,9 +2023,9 @@ x 9
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 9
 y 35
+type 77
 end
 arch small_stones
 x 9
@@ -2059,28 +2059,28 @@ x 10
 y 3
 end
 arch dwall3_3
-type 77
-is_buildable 1
 x 10
 y 3
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 4
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 4
+type 77
 end
 arch woodfloor
 x 10
 y 5
 end
 arch dwall_win1
-type 77
 x 10
 y 5
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2091,9 +2091,9 @@ x 10
 y 6
 end
 arch dwall_win1
-type 77
 x 10
 y 6
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2104,9 +2104,9 @@ x 10
 y 7
 end
 arch dwall_win1
-type 77
 x 10
 y 7
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2117,37 +2117,37 @@ x 10
 y 8
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 8
+type 77
 end
 arch woodfloor
 x 10
 y 9
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 10
 y 9
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 10
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 10
+type 77
 end
 arch woodfloor
 x 10
 y 11
 end
 arch dwall_win1
-type 77
 x 10
 y 11
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2158,9 +2158,9 @@ x 10
 y 12
 end
 arch dwall_win1
-type 77
 x 10
 y 12
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2171,9 +2171,9 @@ x 10
 y 13
 end
 arch dwall_win1
-type 77
 x 10
 y 13
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2184,37 +2184,37 @@ x 10
 y 14
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 14
+type 77
 end
 arch woodfloor
 x 10
 y 15
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 10
 y 15
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 16
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 16
+type 77
 end
 arch woodfloor
 x 10
 y 17
 end
 arch dwall_win1
-type 77
 x 10
 y 17
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2225,9 +2225,9 @@ x 10
 y 18
 end
 arch dwall_1_2
-type 77
 x 10
 y 18
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2245,27 +2245,27 @@ x 10
 y 19
 end
 arch igate_closed_2
-connected 222
 x 10
 y 19
+connected 222
 end
 arch woodfloor2
 x 10
 y 20
 end
 arch dwall_1_1
-type 77
 x 10
 y 20
+type 77
 end
 arch woodfloor
 x 10
 y 21
 end
 arch dwall_win1
-type 77
 x 10
 y 21
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2276,56 +2276,56 @@ x 10
 y 22
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 22
+type 77
 end
 arch woodfloor
 x 10
 y 23
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 10
 y 23
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 24
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 24
+type 77
 end
 arch woodfloor
 x 10
 y 25
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 10
 y 25
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 26
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 26
+type 77
 end
 arch woodfloor
 x 10
 y 27
 end
 arch dwall_win1
-type 77
 x 10
 y 27
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2336,48 +2336,48 @@ x 10
 y 28
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 28
+type 77
 end
 arch woodfloor
 x 10
 y 29
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 10
 y 29
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 10
 y 30
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 30
+type 77
 end
 arch magic_mouth
 msg
 Drop 10000 diamonds for a basement key.
 endmsg
+x 10
+y 31
 connected 1001
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 10
-y 31
 end
 arch woodfloor
 x 10
 y 31
 end
 arch dwall_win1
-type 77
 x 10
 y 31
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2387,21 +2387,21 @@ arch magic_mouth
 msg
 Drop 10000 diamonds for an upper floor key.
 endmsg
+x 10
+y 32
 connected 1003
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 10
-y 32
 end
 arch woodfloor2
 x 10
 y 32
 end
 arch dwall_win1
-type 77
 x 10
 y 32
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2411,21 +2411,21 @@ arch magic_mouth
 msg
 Drop 10000 diamonds for a greatroom key.
 endmsg
+x 10
+y 33
 connected 1005
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 10
-y 33
 end
 arch woodfloor
 x 10
 y 33
 end
 arch dwall_win1
-type 77
 x 10
 y 33
+type 77
 end
 arch dungeon_magic
 x 10
@@ -2436,19 +2436,19 @@ x 10
 y 34
 end
 arch dwall_2_1_1
-type 77
 x 10
 y 34
+type 77
 end
 arch woodfloor
 x 10
 y 35
 end
 arch dwall_3_1
-type 77
-is_buildable 1
 x 10
 y 35
+type 77
+is_buildable 1
 end
 arch grass
 x 10
@@ -2486,38 +2486,36 @@ x 11
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 3
+type 77
 end
 arch duplicator
 other_arch stove
-connected 9002
-activate_on_release 0
 x 11
 y 4
+connected 9002
+activate_on_release 0
 end
 arch creator
 other_arch stove
-connected 9002
-lifesave 1
 hp 0
-level 2
-activate_on_push 0
 x 11
 y 4
+level 2
+connected 9002
+lifesave 1
+activate_on_push 0
 end
 arch woodfloor
 x 11
 y 4
 end
 arch stove
-no_pick 0
-identified 1
-is_cauldron 0
-magic 3
 x 11
 y 4
+magic 3
+identified 1
 end
 arch woodfloor2
 x 11
@@ -2537,24 +2535,24 @@ y 8
 end
 arch altar_trigger
 name New Stove 30000 Rubies
+slaying ruby
 msg
 Removing your old stove. Please wait.
 endmsg
-slaying ruby
-food 30000
-connected 9002
 exp 60
+food 30000
 x 11
 y 8
+connected 9002
 end
 arch woodfloor2
 x 11
 y 9
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 9
+type 77
 end
 arch woodfloor
 x 11
@@ -2581,9 +2579,9 @@ x 11
 y 15
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 15
+type 77
 end
 arch woodfloor
 x 11
@@ -2594,27 +2592,27 @@ x 11
 y 17
 end
 arch button_small
-connected 222
 x 11
 y 18
+connected 222
 end
 arch woodfloor
 x 11
 y 18
 end
 arch button_small
-connected 222
 x 11
 y 19
+connected 222
 end
 arch woodfloor2
 x 11
 y 19
 end
 arch button_small
-connected 222
 x 11
 y 20
+connected 222
 end
 arch woodfloor
 x 11
@@ -2633,9 +2631,9 @@ x 11
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 23
+type 77
 end
 arch woodfloor
 x 11
@@ -2646,18 +2644,18 @@ name basement stairs
 slaying /pup_land/lone_town/apartment/basement
 hp 11
 sp 24
-unique 1
 x 11
 y 24
+unique 1
 end
 arch woodfloor2
 x 11
 y 25
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 25
+type 77
 end
 arch woodfloor
 x 11
@@ -2676,9 +2674,9 @@ x 11
 y 29
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 29
+type 77
 end
 arch woodfloor
 x 11
@@ -2686,25 +2684,25 @@ y 30
 end
 arch trigger_marker
 slaying ltap_base
-connected 1002
 food 0
 x 11
 y 31
+connected 1002
 end
 arch altar
-invisible 1
 slaying diamond
 food 10000
-connected 1002
 x 11
 y 31
+invisible 1
+connected 1002
 end
 arch check_inv
 slaying ltap_base
-last_sp 0
-connected 1001
 x 11
 y 31
+last_sp 0
+connected 1001
 end
 arch woodfloor2
 x 11
@@ -2712,25 +2710,25 @@ y 31
 end
 arch trigger_marker
 slaying ltap_upper
-connected 1004
 food 0
 x 11
 y 32
+connected 1004
 end
 arch altar
-invisible 1
 slaying diamond
 food 10000
-connected 1004
 x 11
 y 32
+invisible 1
+connected 1004
 end
 arch check_inv
 slaying ltap_upper
-last_sp 0
-connected 1003
 x 11
 y 32
+last_sp 0
+connected 1003
 end
 arch woodfloor
 x 11
@@ -2738,25 +2736,25 @@ y 32
 end
 arch trigger_marker
 slaying ltap_great
-connected 1006
 food 0
 x 11
 y 33
+connected 1006
 end
 arch altar
-invisible 1
 slaying diamond
 food 10000
-connected 1006
 x 11
 y 33
+invisible 1
+connected 1006
 end
 arch check_inv
 slaying ltap_great
-last_sp 0
-connected 1005
 x 11
 y 33
+last_sp 0
+connected 1005
 end
 arch woodfloor2
 x 11
@@ -2771,9 +2769,9 @@ x 11
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 11
 y 35
+type 77
 end
 arch grass
 x 11
@@ -2811,9 +2809,9 @@ x 12
 y 3
 end
 arch dwall_win2
-type 77
 x 12
 y 3
+type 77
 end
 arch dungeon_magic
 x 12
@@ -2844,9 +2842,9 @@ x 12
 y 9
 end
 arch dwall_win2
-type 77
 x 12
 y 9
+type 77
 end
 arch woodfloor2
 x 12
@@ -2871,21 +2869,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 12
 y 14
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 12
 y 15
 end
 arch dwall_2_1_2
-type 77
 x 12
 y 15
+type 77
 end
 arch woodfloor2
 x 12
@@ -2894,12 +2892,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 12
 y 16
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 12
@@ -2928,27 +2926,27 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 12
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 12
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 12
 y 23
+type 77
 end
 arch button_small
-invisible 1
-connected 833
 x 12
 y 24
+invisible 1
+connected 833
 end
 arch woodfloor2
 x 12
@@ -2956,10 +2954,10 @@ y 24
 end
 arch locked_door2
 name basement door
+slaying LTAP Basement Key
 msg
 You need the LTAP Basement Key to open this door.
 endmsg
-slaying LTAP Basement Key
 x 12
 y 24
 end
@@ -2968,15 +2966,15 @@ x 12
 y 25
 end
 arch dwall_1_3
-type 77
 x 12
 y 25
+type 77
 end
 arch button_small
-invisible 1
-connected 833
 x 12
 y 26
+invisible 1
+connected 833
 end
 arch woodfloor2
 x 12
@@ -2987,10 +2985,10 @@ x 12
 y 27
 end
 arch button_small
-invisible 1
-connected 832
 x 12
 y 28
+invisible 1
+connected 832
 end
 arch woodfloor2
 x 12
@@ -3001,15 +2999,15 @@ x 12
 y 29
 end
 arch dwall_1_3
-type 77
 x 12
 y 29
+type 77
 end
 arch button_small
-invisible 1
-connected 832
 x 12
 y 30
+invisible 1
+connected 832
 end
 arch woodfloor2
 x 12
@@ -3036,9 +3034,9 @@ x 12
 y 35
 end
 arch dwall_win2
-type 77
 x 12
 y 35
+type 77
 end
 arch dungeon_magic
 x 12
@@ -3076,9 +3074,9 @@ x 13
 y 3
 end
 arch dwall_win2
-type 77
 x 13
 y 3
+type 77
 end
 arch dungeon_magic
 x 13
@@ -3106,18 +3104,18 @@ y 8
 end
 arch button_lever
 name kitchen door lever
-connected 417
 x 13
 y 8
+connected 417
 end
 arch woodfloor2
 x 13
 y 9
 end
 arch dwall_1_3
-type 77
 x 13
 y 9
+type 77
 end
 arch woodfloor
 x 13
@@ -3142,21 +3140,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 13
 y 14
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 13
 y 15
 end
 arch dwall_2_1_2
-type 77
 x 13
 y 15
+type 77
 end
 arch woodfloor
 x 13
@@ -3165,12 +3163,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 13
 y 16
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 13
@@ -3199,52 +3197,52 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 13
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 13
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 13
 y 23
+type 77
 end
 arch button_small
-invisible 1
-connected 833
 x 13
 y 24
+invisible 1
+connected 833
 end
 arch woodfloor
 x 13
 y 24
 end
 arch button_small
-invisible 1
-connected 833
 x 13
 y 25
+invisible 1
+connected 833
 end
 arch woodfloor2
 x 13
 y 25
 end
 arch mdoor_closed_1
-connected 833
 x 13
 y 25
+connected 833
 end
 arch button_small
-invisible 1
-connected 833
 x 13
 y 26
+invisible 1
+connected 833
 end
 arch woodfloor
 x 13
@@ -3255,35 +3253,35 @@ x 13
 y 27
 end
 arch button_small
-invisible 1
-connected 832
 x 13
 y 28
+invisible 1
+connected 832
 end
 arch woodfloor
 x 13
 y 28
 end
 arch button_small
-invisible 1
-connected 832
 x 13
 y 29
+invisible 1
+connected 832
 end
 arch woodfloor2
 x 13
 y 29
 end
 arch mdoor_closed_1
-connected 832
 x 13
 y 29
+connected 832
 end
 arch button_small
-invisible 1
-connected 832
 x 13
 y 30
+invisible 1
+connected 832
 end
 arch woodfloor
 x 13
@@ -3314,9 +3312,9 @@ x 13
 y 35
 end
 arch dwall_win2
-type 77
 x 13
 y 35
+type 77
 end
 arch dungeon_magic
 x 13
@@ -3354,9 +3352,9 @@ x 14
 y 3
 end
 arch dwall_win2
-type 77
 x 14
 y 3
+type 77
 end
 arch dungeon_magic
 x 14
@@ -3388,9 +3386,9 @@ y 9
 end
 arch mdoor_closed_1
 name kitchen door
-connected 417
 x 14
 y 9
+connected 417
 end
 arch woodfloor2
 x 14
@@ -3415,21 +3413,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 14
 y 14
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 14
 y 15
 end
 arch dwall_2_1_2
-type 77
 x 14
 y 15
+type 77
 end
 arch woodfloor2
 x 14
@@ -3438,12 +3436,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 14
 y 16
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 14
@@ -3472,27 +3470,27 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 14
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 14
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 14
 y 23
+type 77
 end
 arch button_small
-invisible 1
-connected 833
 x 14
 y 24
+invisible 1
+connected 833
 end
 arch woodfloor2
 x 14
@@ -3500,10 +3498,10 @@ y 24
 end
 arch locked_door2
 name upper floor door
+slaying LTAP Upper Key
 msg
 You need the LTAP Upper Key to open this door.
 endmsg
-slaying LTAP Upper Key
 x 14
 y 24
 end
@@ -3512,15 +3510,15 @@ x 14
 y 25
 end
 arch dwall_1_4
-type 77
 x 14
 y 25
+type 77
 end
 arch button_small
-invisible 1
-connected 833
 x 14
 y 26
+invisible 1
+connected 833
 end
 arch woodfloor2
 x 14
@@ -3531,10 +3529,10 @@ x 14
 y 27
 end
 arch button_small
-invisible 1
-connected 832
 x 14
 y 28
+invisible 1
+connected 832
 end
 arch woodfloor2
 x 14
@@ -3545,15 +3543,15 @@ x 14
 y 29
 end
 arch dwall_1_4
-type 77
 x 14
 y 29
+type 77
 end
 arch button_small
-invisible 1
-connected 832
 x 14
 y 30
+invisible 1
+connected 832
 end
 arch woodfloor2
 x 14
@@ -3580,9 +3578,9 @@ x 14
 y 35
 end
 arch dwall_win2
-type 77
 x 14
 y 35
+type 77
 end
 arch dungeon_magic
 x 14
@@ -3620,36 +3618,36 @@ x 15
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 3
+type 77
 end
 arch duplicator
 other_arch cauldron
-connected 9001
-activate_on_release 0
 x 15
 y 4
+connected 9001
+activate_on_release 0
 end
 arch creator
 other_arch cauldron
-connected 9001
-lifesave 1
 hp 0
-level 2
-activate_on_push 0
 x 15
 y 4
+level 2
+connected 9001
+lifesave 1
+activate_on_push 0
 end
 arch woodfloor
 x 15
 y 4
 end
 arch cauldron
-identified 1
-magic 3
 x 15
 y 4
+magic 3
+identified 1
 end
 arch woodfloor2
 x 15
@@ -3669,24 +3667,24 @@ y 8
 end
 arch altar_trigger
 name New Cauldron 30000 Rubies
+slaying ruby
 msg
 Removing your old cauldron. Please wait.
 endmsg
-slaying ruby
-food 30000
-connected 9001
 exp 60
+food 30000
 x 15
 y 8
+connected 9001
 end
 arch woodfloor2
 x 15
 y 9
 end
 arch dwall_1_4
-type 77
 x 15
 y 9
+type 77
 end
 arch woodfloor
 x 15
@@ -3694,9 +3692,9 @@ y 10
 end
 arch button_lever
 name kitchen door lever
-connected 417
 x 15
 y 10
+connected 417
 end
 arch woodfloor2
 x 15
@@ -3719,9 +3717,9 @@ x 15
 y 15
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 15
+type 77
 end
 arch woodfloor
 x 15
@@ -3756,9 +3754,9 @@ x 15
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 23
+type 77
 end
 arch woodfloor
 x 15
@@ -3769,18 +3767,18 @@ name upper floor stairs
 slaying /pup_land/lone_town/apartment/upper1
 hp 15
 sp 24
-unique 1
 x 15
 y 24
+unique 1
 end
 arch woodfloor2
 x 15
 y 25
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 25
+type 77
 end
 arch woodfloor
 x 15
@@ -3799,9 +3797,9 @@ x 15
 y 29
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 29
+type 77
 end
 arch woodfloor
 x 15
@@ -3809,25 +3807,25 @@ y 30
 end
 arch trigger_marker
 slaying ltap_mud
-connected 1008
 food 0
 x 15
 y 31
+connected 1008
 end
 arch altar
-invisible 1
 slaying diamond
 food 10000
-connected 1008
 x 15
 y 31
+invisible 1
+connected 1008
 end
 arch check_inv
 slaying ltap_mud
-last_sp 0
-connected 1007
 x 15
 y 31
+last_sp 0
+connected 1007
 end
 arch woodfloor2
 x 15
@@ -3835,25 +3833,25 @@ y 31
 end
 arch trigger_marker
 slaying ltap_kitchen
-connected 1010
 food 0
 x 15
 y 32
+connected 1010
 end
 arch altar
-invisible 1
 slaying diamond
 food 30000
-connected 1010
 x 15
 y 32
+invisible 1
+connected 1010
 end
 arch check_inv
 slaying ltap_kitchen
-last_sp 0
-connected 1009
 x 15
 y 32
+last_sp 0
+connected 1009
 end
 arch woodfloor
 x 15
@@ -3861,25 +3859,25 @@ y 32
 end
 arch trigger_marker
 slaying ltap_study
-connected 1012
 food 0
 x 15
 y 33
+connected 1012
 end
 arch altar
-invisible 1
 slaying diamond
 food 25000
-connected 1012
 x 15
 y 33
+invisible 1
+connected 1012
 end
 arch check_inv
 slaying ltap_study
-last_sp 0
-connected 1011
 x 15
 y 33
+last_sp 0
+connected 1011
 end
 arch woodfloor2
 x 15
@@ -3894,9 +3892,9 @@ x 15
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 15
 y 35
+type 77
 end
 arch grass
 x 15
@@ -3934,94 +3932,94 @@ x 16
 y 3
 end
 arch dwall3_3
-type 77
-is_buildable 1
 x 16
 y 3
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
 y 4
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 4
+type 77
 end
 arch woodfloor
 x 16
 y 5
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 5
+type 77
 end
 arch woodfloor2
 x 16
 y 6
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 6
+type 77
 end
 arch woodfloor
 x 16
 y 7
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 7
+type 77
 end
 arch woodfloor2
 x 16
 y 8
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 8
+type 77
 end
 arch woodfloor
 x 16
 y 9
 end
 arch dwall_3_4
-type 77
-is_buildable 1
 x 16
 y 9
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
 y 10
 end
 arch dwall_3_2
-type 77
-is_buildable 1
 x 16
 y 10
+type 77
+is_buildable 1
 end
 arch woodfloor
 x 16
 y 11
 end
 arch dwall_1_2
-type 77
 x 16
 y 11
+type 77
 end
 arch woodfloor2
 x 16
 y 12
 end
 arch locked_door2
+slaying LTAP Kitchen Key
 msg
 You need the LTAP Kitchen Key to open this door.
 endmsg
-slaying LTAP Kitchen Key
 x 16
 y 12
 end
@@ -4030,65 +4028,65 @@ x 16
 y 13
 end
 arch dwall_1_1
-type 77
 x 16
 y 13
+type 77
 end
 arch woodfloor2
 x 16
 y 14
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 14
+type 77
 end
 arch woodfloor
 x 16
 y 15
 end
 arch dwall_3_4
-type 77
-is_buildable 1
 x 16
 y 15
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
 y 16
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 16
+type 77
 end
 arch woodfloor
 x 16
 y 17
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 17
+type 77
 end
 arch woodfloor2
 x 16
 y 18
 end
 arch dwall_1_2
-type 77
 x 16
 y 18
+type 77
 end
 arch woodfloor
 x 16
 y 19
 end
 arch locked_door2
+slaying LTAP Mudroom Key
 msg
 You need the mud room key to open this door.
 endmsg
-slaying LTAP Mudroom Key
 x 16
 y 19
 end
@@ -4097,56 +4095,56 @@ x 16
 y 20
 end
 arch dwall_1_1
-type 77
 x 16
 y 20
+type 77
 end
 arch woodfloor
 x 16
 y 21
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 21
+type 77
 end
 arch woodfloor2
 x 16
 y 22
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 22
+type 77
 end
 arch woodfloor
 x 16
 y 23
 end
 arch dwall_4
-type 77
-is_buildable 1
 x 16
 y 23
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
 y 24
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 24
+type 77
 end
 arch woodfloor
 x 16
 y 25
 end
 arch dwall_2_2_4
-type 77
-is_buildable 1
 x 16
 y 25
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
@@ -4165,98 +4163,98 @@ x 16
 y 29
 end
 arch dwall_2_2_3
-type 77
-is_buildable 1
 x 16
 y 29
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 16
 y 30
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 30
+type 77
 end
 arch magic_mouth
 msg
 Drop 10000 diamonds for a mudroom key.
 endmsg
+x 16
+y 31
 connected 1007
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 16
-y 31
 end
 arch woodfloor
 x 16
 y 31
 end
 arch dwall_win1
-type 77
 x 16
 y 31
+type 77
 end
 arch magic_mouth
 msg
 Drop 30000 diamonds for a kitchen key.
 endmsg
+x 16
+y 32
 connected 1009
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 16
-y 32
 end
 arch woodfloor2
 x 16
 y 32
 end
 arch dwall_win1
-type 77
 x 16
 y 32
+type 77
 end
 arch magic_mouth
 msg
 Drop 25000 diamonds for a study key.
 endmsg
+x 16
+y 33
 connected 1011
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 16
-y 33
 end
 arch woodfloor
 x 16
 y 33
 end
 arch dwall_win1
-type 77
 x 16
 y 33
+type 77
 end
 arch woodfloor2
 x 16
 y 34
 end
 arch dwall_2_1_1
-type 77
 x 16
 y 34
+type 77
 end
 arch woodfloor
 x 16
 y 35
 end
 arch dwall_3_1
+x 16
+y 35
 type 77
 is_buildable 1
-x 16
-y 35
 end
 arch grass
 x 16
@@ -4294,9 +4292,9 @@ x 17
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 17
 y 3
+type 77
 end
 arch woodfloor
 x 17
@@ -4327,9 +4325,9 @@ x 17
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 17
 y 10
+type 77
 end
 arch woodfloor2
 x 17
@@ -4350,12 +4348,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 14
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 17
@@ -4364,12 +4362,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 15
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 17
@@ -4378,12 +4376,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 16
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 17
@@ -4392,12 +4390,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 17
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 17
@@ -4418,12 +4416,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 21
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 17
@@ -4432,21 +4430,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 17
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 17
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 17
 y 23
+type 77
 end
 arch woodfloor
 x 17
@@ -4497,9 +4495,9 @@ x 17
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 17
 y 35
+type 77
 end
 arch grass
 x 17
@@ -4537,9 +4535,9 @@ x 18
 y 3
 end
 arch dwall_win2
-type 77
 x 18
 y 3
+type 77
 end
 arch dungeon_magic
 x 18
@@ -4556,12 +4554,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 18
 y 5
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 18
@@ -4570,12 +4568,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 18
 y 6
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 18
@@ -4584,12 +4582,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 18
 y 7
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 18
@@ -4598,12 +4596,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 18
 y 8
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 18
@@ -4614,9 +4612,9 @@ x 18
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 18
 y 10
+type 77
 end
 arch woodfloor
 x 18
@@ -4625,12 +4623,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 18
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 18
@@ -4679,21 +4677,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 18
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 18
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 18
 y 23
+type 77
 end
 arch woodfloor2
 x 18
@@ -4744,9 +4742,9 @@ x 18
 y 35
 end
 arch dwall_win2
-type 77
 x 18
 y 35
+type 77
 end
 arch dungeon_magic
 x 18
@@ -4784,9 +4782,9 @@ x 19
 y 3
 end
 arch dwall_win2
-type 77
 x 19
 y 3
+type 77
 end
 arch dungeon_magic
 x 19
@@ -4821,9 +4819,9 @@ x 19
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 19
 y 10
+type 77
 end
 arch woodfloor2
 x 19
@@ -4832,12 +4830,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 19
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -4886,21 +4884,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 19
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 19
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 19
 y 23
+type 77
 end
 arch woodfloor
 x 19
@@ -4951,9 +4949,9 @@ x 19
 y 35
 end
 arch dwall_win2
-type 77
 x 19
 y 35
+type 77
 end
 arch dungeon_magic
 x 19
@@ -4991,9 +4989,9 @@ x 20
 y 3
 end
 arch dwall_win2
-type 77
 x 20
 y 3
+type 77
 end
 arch dungeon_magic
 x 20
@@ -5028,9 +5026,9 @@ x 20
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 20
 y 10
+type 77
 end
 arch woodfloor
 x 20
@@ -5039,12 +5037,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 20
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 20
@@ -5093,21 +5091,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 20
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 20
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 20
 y 23
+type 77
 end
 arch woodfloor2
 x 20
@@ -5158,9 +5156,9 @@ x 20
 y 35
 end
 arch dwall_win2
-type 77
 x 20
 y 35
+type 77
 end
 arch dungeon_magic
 x 20
@@ -5198,9 +5196,9 @@ x 21
 y 3
 end
 arch dwall_win2
-type 77
 x 21
 y 3
+type 77
 end
 arch dungeon_magic
 x 21
@@ -5217,12 +5215,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 21
 y 5
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 21
@@ -5231,12 +5229,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 21
 y 6
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 21
@@ -5245,12 +5243,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 21
 y 7
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 21
@@ -5259,12 +5257,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 21
 y 8
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 21
@@ -5275,9 +5273,9 @@ x 21
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 21
 y 10
+type 77
 end
 arch woodfloor2
 x 21
@@ -5286,12 +5284,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 21
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 21
@@ -5340,21 +5338,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 21
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 21
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 21
 y 23
+type 77
 end
 arch woodfloor
 x 21
@@ -5405,9 +5403,9 @@ x 21
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 21
 y 35
+type 77
 end
 arch grass
 x 21
@@ -5445,9 +5443,9 @@ x 22
 y 3
 end
 arch dwall_win2
-type 77
 x 22
 y 3
+type 77
 end
 arch dungeon_magic
 x 22
@@ -5482,9 +5480,9 @@ x 22
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 22
 y 10
+type 77
 end
 arch woodfloor
 x 22
@@ -5493,12 +5491,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 22
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 22
@@ -5547,21 +5545,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 22
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 22
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 22
 y 23
+type 77
 end
 arch woodfloor2
 x 22
@@ -5612,9 +5610,9 @@ x 22
 y 35
 end
 arch dwall_2_1_2
-type 77
 x 22
 y 35
+type 77
 end
 arch grass
 x 22
@@ -5652,9 +5650,9 @@ x 23
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 23
 y 3
+type 77
 end
 arch woodfloor
 x 23
@@ -5685,9 +5683,9 @@ x 23
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 23
 y 10
+type 77
 end
 arch woodfloor2
 x 23
@@ -5696,12 +5694,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 23
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 23
@@ -5750,21 +5748,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 23
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 23
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 23
 y 23
+type 77
 end
 arch woodfloor
 x 23
@@ -5815,9 +5813,9 @@ x 23
 y 35
 end
 arch dwall_win2
-type 77
 x 23
 y 35
+type 77
 end
 arch dungeon_magic
 x 23
@@ -5855,9 +5853,9 @@ x 24
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 24
 y 3
+type 77
 end
 arch woodfloor2
 x 24
@@ -5870,12 +5868,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 24
 y 5
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 24
@@ -5884,12 +5882,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 24
 y 6
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 24
@@ -5898,12 +5896,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 24
 y 7
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 24
@@ -5912,12 +5910,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 24
 y 8
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 24
@@ -5928,9 +5926,9 @@ x 24
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 24
 y 10
+type 77
 end
 arch woodfloor
 x 24
@@ -5939,12 +5937,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 24
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 24
@@ -5993,21 +5991,21 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 24
 y 22
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 24
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 24
 y 23
+type 77
 end
 arch woodfloor2
 x 24
@@ -6050,19 +6048,19 @@ x 24
 y 33
 end
 arch dwall_2_2_2
-type 77
-is_buildable 1
 x 24
 y 33
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 24
 y 34
 end
 arch dwall_win1
-type 77
 x 24
 y 34
+type 77
 end
 arch dungeon_magic
 x 24
@@ -6072,22 +6070,22 @@ arch magic_mouth
 msg
 Please drop 5000 diamonds to purchase an apartment.
 endmsg
+x 24
+y 35
 connected 3201
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 24
-y 35
 end
 arch woodfloor
 x 24
 y 35
 end
 arch dwall_2_2_4
-type 77
-is_buildable 1
 x 24
 y 35
+type 77
+is_buildable 1
 end
 arch grass
 x 24
@@ -6125,9 +6123,9 @@ x 25
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 25
 y 3
+type 77
 end
 arch woodfloor
 x 25
@@ -6158,9 +6156,9 @@ x 25
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 25
 y 10
+type 77
 end
 arch woodfloor2
 x 25
@@ -6169,12 +6167,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 25
 y 11
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 25
@@ -6225,9 +6223,9 @@ x 25
 y 23
 end
 arch dwall_1_3
-type 77
 x 25
 y 23
+type 77
 end
 arch woodfloor
 x 25
@@ -6262,9 +6260,9 @@ x 25
 y 31
 end
 arch button_small
-connected 3202
 x 25
 y 32
+connected 3202
 end
 arch woodfloor
 x 25
@@ -6275,16 +6273,16 @@ x 25
 y 33
 end
 arch dwall_1_3
-type 77
 x 25
 y 33
+type 77
 end
 arch check_inv
 slaying ltaprtmnt
-connected 3202
-walk_off 0
 x 25
 y 34
+connected 3202
+walk_off 0
 end
 arch cobblestones2
 x 25
@@ -6333,9 +6331,9 @@ x 26
 y 3
 end
 arch dwall_win2
-type 77
 x 26
 y 3
+type 77
 end
 arch dungeon_magic
 x 26
@@ -6362,10 +6360,10 @@ x 26
 y 8
 end
 arch button_small
-invisible 1
-connected 5703
 x 26
 y 9
+invisible 1
+connected 5703
 end
 arch woodfloor
 x 26
@@ -6376,15 +6374,15 @@ x 26
 y 10
 end
 arch dwall_1_3
-type 77
 x 26
 y 10
+type 77
 end
 arch button_small
-invisible 1
-connected 5703
 x 26
 y 11
+invisible 1
+connected 5703
 end
 arch woodfloor
 x 26
@@ -6439,10 +6437,10 @@ x 26
 y 23
 end
 arch locked_door1
+slaying LTAP Greatroom Key
 msg
 You need the LTAP Greatroom Key to open this door.
 endmsg
-slaying LTAP Greatroom Key
 x 26
 y 23
 end
@@ -6480,6 +6478,7 @@ y 31
 end
 arch tome
 name Apartment Owner Guide
+name_pl Apartment Owner Guides
 msg
 Welcome to your new apartment.
 -=-
@@ -6494,40 +6493,39 @@ expensive, but we think it's worth the cost.
 Enjoy extending and exploring your new
 apartment.
 endmsg
-name_pl Apartment Owner Guides
-level 5
 x 26
 y 31
+level 5
 end
 arch button_small
-connected 3202
 x 26
 y 32
+connected 3202
 end
 arch woodfloor2
 x 26
 y 32
 end
 arch button_small
-connected 3202
 x 26
 y 33
+connected 3202
 end
 arch woodfloor
 x 26
 y 33
 end
 arch mdoor_closed_2
-connected 3202
 x 26
 y 33
+connected 3202
 end
 arch check_inv
 slaying ltaprtmnt
-connected 3202
-walk_off 0
 x 26
 y 34
+connected 3202
+walk_off 0
 end
 arch cobblestones2
 x 26
@@ -6535,28 +6533,28 @@ y 34
 end
 arch trigger_marker
 slaying ltaprtmnt
-connected 3200
 food 0
-activate_on_release 0
 x 26
 y 35
+connected 3200
+activate_on_release 0
 end
 arch check_inv
 slaying ltaprtmnt
+x 26
+y 35
 last_sp 0
 connected 3201
 walk_off 0
-x 26
-y 35
 end
 arch altar
 name 3200
-invisible 1
 slaying diamond
 food 5000
-connected 3200
 x 26
 y 35
+invisible 1
+connected 3200
 end
 arch cobblestones2
 x 26
@@ -6601,9 +6599,9 @@ x 27
 y 3
 end
 arch dwall_win2
-type 77
 x 27
 y 3
+type 77
 end
 arch dungeon_magic
 x 27
@@ -6620,12 +6618,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 27
 y 5
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -6634,12 +6632,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 27
 y 6
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor2
 x 27
@@ -6648,12 +6646,12 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 27
 y 7
+material 256
+container 300000
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -6662,51 +6660,51 @@ end
 arch bookshelf
 name large bookshelf
 name_pl large bookshelves
-material 256
-no_pick 1
-container 300000
 Str 20
 x 27
 y 8
+material 256
+container 300000
+no_pick 1
 end
 arch button_small
-invisible 1
-connected 5703
 x 27
 y 9
+invisible 1
+connected 5703
 end
 arch woodfloor2
 x 27
 y 9
 end
 arch button_small
-invisible 1
-connected 5703
 x 27
 y 10
+invisible 1
+connected 5703
 end
 arch woodfloor
 x 27
 y 10
 end
 arch mdoor_closed_1
-connected 5703
 x 27
 y 10
+connected 5703
 end
 arch locked_door1
+slaying LTAP Study Key
 msg
 You need the LTAP Study Key to open this door.
 endmsg
-slaying LTAP Study Key
 x 27
 y 10
 end
 arch button_small
-invisible 1
-connected 5703
 x 27
 y 11
+invisible 1
+connected 5703
 end
 arch woodfloor2
 x 27
@@ -6761,9 +6759,9 @@ x 27
 y 23
 end
 arch dwall_1_4
-type 77
 x 27
 y 23
+type 77
 end
 arch woodfloor
 x 27
@@ -6798,9 +6796,9 @@ x 27
 y 31
 end
 arch button_small
-connected 3202
 x 27
 y 32
+connected 3202
 end
 arch woodfloor
 x 27
@@ -6811,16 +6809,16 @@ x 27
 y 33
 end
 arch dwall_1_4
-type 77
 x 27
 y 33
+type 77
 end
 arch check_inv
 slaying ltaprtmnt
-connected 3202
-walk_off 0
 x 27
 y 34
+connected 3202
+walk_off 0
 end
 arch cobblestones2
 x 27
@@ -6869,9 +6867,9 @@ x 28
 y 3
 end
 arch dwall_win2
-type 77
 x 28
 y 3
+type 77
 end
 arch dungeon_magic
 x 28
@@ -6898,10 +6896,10 @@ x 28
 y 8
 end
 arch button_small
-invisible 1
-connected 5703
 x 28
 y 9
+invisible 1
+connected 5703
 end
 arch woodfloor
 x 28
@@ -6912,15 +6910,15 @@ x 28
 y 10
 end
 arch dwall_1_4
-type 77
 x 28
 y 10
+type 77
 end
 arch button_small
-invisible 1
-connected 5703
 x 28
 y 11
+invisible 1
+connected 5703
 end
 arch woodfloor
 x 28
@@ -6975,9 +6973,9 @@ x 28
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 28
 y 23
+type 77
 end
 arch woodfloor2
 x 28
@@ -7020,19 +7018,19 @@ x 28
 y 33
 end
 arch dwall_2_2_3
-type 77
-is_buildable 1
 x 28
 y 33
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 28
 y 34
 end
 arch dwall_win1
-type 77
 x 28
 y 34
+type 77
 end
 arch dungeon_magic
 x 28
@@ -7043,10 +7041,10 @@ x 28
 y 35
 end
 arch dwall_2_2_1
-type 77
-is_buildable 1
 x 28
 y 35
+type 77
+is_buildable 1
 end
 arch grass
 x 28
@@ -7084,9 +7082,9 @@ x 29
 y 3
 end
 arch dwall_2_1_2
-type 77
 x 29
 y 3
+type 77
 end
 arch woodfloor
 x 29
@@ -7094,21 +7092,21 @@ y 4
 end
 arch desk
 name heavy desk
-no_pick 1
-container 160000
 Str 20
 x 29
 y 4
+container 160000
+no_pick 1
 end
 arch woodfloor2
 x 29
 y 5
 end
 arch chair_2.3
-no_pick 1
-identified 1
 x 29
 y 5
+no_pick 1
+identified 1
 end
 arch woodfloor
 x 29
@@ -7131,9 +7129,9 @@ x 29
 y 10
 end
 arch dwall_2_1_2
-type 77
 x 29
 y 10
+type 77
 end
 arch woodfloor2
 x 29
@@ -7154,12 +7152,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 14
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 29
@@ -7168,12 +7166,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 15
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -7182,12 +7180,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 16
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 29
@@ -7196,12 +7194,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 17
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -7210,12 +7208,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 18
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor2
 x 29
@@ -7224,12 +7222,12 @@ end
 arch dresser2
 name Large storage chest
 name_pl Large storage chests
-material 256
-no_pick 1
-container 800000
 Str 50
 x 29
 y 19
+material 256
+container 800000
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -7248,9 +7246,9 @@ x 29
 y 23
 end
 arch dwall_2_1_2
-type 77
 x 29
 y 23
+type 77
 end
 arch woodfloor
 x 29
@@ -7294,27 +7292,27 @@ y 33
 end
 arch creator
 other_arch altar_none
-level 40
-connected 393939
 x 29
 y 34
+level 40
+connected 393939
 end
 arch goldfloor
 name Drop 30 holy symbols for an altar
 slaying holy_symbol
 food 30
-connected 393939
 x 29
 y 34
+connected 393939
 end
 arch woodfloor2
 x 29
 y 35
 end
 arch dwall_win2
-type 77
 x 29
 y 35
+type 77
 end
 arch dungeon_magic
 x 29
@@ -7352,28 +7350,28 @@ x 30
 y 3
 end
 arch dwall_2_2_3
-type 77
-is_buildable 1
 x 30
 y 3
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 30
 y 4
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 4
+type 77
 end
 arch woodfloor
 x 30
 y 5
 end
 arch dwall_win1
-type 77
 x 30
 y 5
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7384,9 +7382,9 @@ x 30
 y 6
 end
 arch dwall_win1
-type 77
 x 30
 y 6
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7397,9 +7395,9 @@ x 30
 y 7
 end
 arch dwall_win1
-type 77
 x 30
 y 7
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7410,37 +7408,37 @@ x 30
 y 8
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 8
+type 77
 end
 arch woodfloor
 x 30
 y 9
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 9
+type 77
 end
 arch woodfloor2
 x 30
 y 10
 end
 arch dwall_3_4
-type 77
-is_buildable 1
 x 30
 y 10
+type 77
+is_buildable 1
 end
 arch woodfloor
 x 30
 y 11
 end
 arch dwall_win1
-type 77
 x 30
 y 11
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7451,9 +7449,9 @@ x 30
 y 12
 end
 arch dwall_win1
-type 77
 x 30
 y 12
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7464,9 +7462,9 @@ x 30
 y 13
 end
 arch dwall_win1
-type 77
 x 30
 y 13
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7477,63 +7475,63 @@ x 30
 y 14
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 14
+type 77
 end
 arch woodfloor
 x 30
 y 15
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 15
+type 77
 end
 arch woodfloor2
 x 30
 y 16
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 16
+type 77
 end
 arch woodfloor
 x 30
 y 17
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 17
+type 77
 end
 arch woodfloor2
 x 30
 y 18
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 18
+type 77
 end
 arch woodfloor
 x 30
 y 19
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 19
+type 77
 end
 arch woodfloor2
 x 30
 y 20
 end
 arch dwall_win1
-type 77
 x 30
 y 20
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7544,9 +7542,9 @@ x 30
 y 21
 end
 arch dwall_win1
-type 77
 x 30
 y 21
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7557,9 +7555,9 @@ x 30
 y 22
 end
 arch dwall_win1
-type 77
 x 30
 y 22
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7570,28 +7568,28 @@ x 30
 y 23
 end
 arch dwall_3_4
-type 77
-is_buildable 1
 x 30
 y 23
+type 77
+is_buildable 1
 end
 arch woodfloor2
 x 30
 y 24
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 24
+type 77
 end
 arch woodfloor
 x 30
 y 25
 end
 arch dwall_win1
-type 77
 x 30
 y 25
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7602,9 +7600,9 @@ x 30
 y 26
 end
 arch dwall_win1
-type 77
 x 30
 y 26
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7615,9 +7613,9 @@ x 30
 y 27
 end
 arch dwall_win1
-type 77
 x 30
 y 27
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7628,36 +7626,36 @@ x 30
 y 28
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 28
+type 77
 end
 arch woodfloor
 x 30
 y 29
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 29
+type 77
 end
 arch woodfloor2
 x 30
 y 30
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 30
+type 77
 end
 arch woodfloor
 x 30
 y 31
 end
 arch dwall_win1
-type 77
 x 30
 y 31
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7668,9 +7666,9 @@ x 30
 y 32
 end
 arch dwall_win1
-type 77
 x 30
 y 32
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7681,9 +7679,9 @@ x 30
 y 33
 end
 arch dwall_win1
-type 77
 x 30
 y 33
+type 77
 end
 arch dungeon_magic
 x 30
@@ -7694,19 +7692,19 @@ x 30
 y 34
 end
 arch dwall_2_1_1
-type 77
 x 30
 y 34
+type 77
 end
 arch woodfloor
 x 30
 y 35
 end
 arch dwall_2_2_4
-type 77
-is_buildable 1
 x 30
 y 35
+type 77
+is_buildable 1
 end
 arch grass
 x 30
