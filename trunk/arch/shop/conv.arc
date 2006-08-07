@@ -72,11 +72,6 @@ walk_on 1
 editable 64
 visibility 100
 end
-# DON'T USE THIS OBJECT YET
-# it needs some server code which is under discussion
-# a character having amberium or jade coins without the server code in
-# place would be able to simply walk out of shops with stuff, without
-# actually paying anything.
 Object platinum_converter2
 name convert platinum into jade
 other_arch jadecoin
@@ -89,11 +84,6 @@ walk_on 1
 editable 64
 visibility 100
 end
-# DON'T USE THIS OBJECT YET
-# it needs some server code which is under discussion
-# a character having amberium or jade coins without the server code in
-# place would be able to simply walk out of shops with stuff, without
-# actually paying anything.
 Object jade_converter
 name convert jade into amberium
 other_arch ambercoin
