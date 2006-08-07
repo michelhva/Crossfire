@@ -11,8 +11,6 @@ width 21
 height 20
 enter_x 10
 enter_y 2
-shopitems *:5
-shopmax 3000
 end
 arch shop_empty
 end
@@ -2437,16 +2435,25 @@ food 504
 x 10
 y 9
 end
-arch tile_white_floor
-x 10
-y 9
-end
 arch altar_trigger
 name Drop 500 gold for day pass
 face chalice.111
 slaying goldcoin
 food 500
 connected 88
+x 10
+y 9
+end
+arch tile_white_floor
+x 10
+y 9
+end
+arch chalice
+name Drop 500 gold for day pass
+type 0
+weight 0
+value 0
+no_pick 1
 x 10
 y 9
 end
