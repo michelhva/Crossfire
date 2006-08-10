@@ -1,12 +1,12 @@
 arch map
 name Demon1
+width 15
+height 25
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Mon May 30 13:08:53 1994
 endmsg
-x 15
-y 25
 end
 arch woodfloor
 end
@@ -1598,6 +1598,7 @@ y 20
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch lich
 x 9
@@ -1925,6 +1926,7 @@ y 18
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch spectre
 x 11
@@ -1957,6 +1959,7 @@ y 22
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch spectre
 x 11
@@ -2237,6 +2240,7 @@ y 20
 speed 0.000000
 resist_physical 30
 connected 1
+activate_on_release 0
 end
 arch lich
 x 13
@@ -2399,6 +2403,7 @@ y 6
 resist_physical 30
 invisible 1
 connected 1
+activate_on_push 0
 end
 arch pentagram_111
 x 1
@@ -2446,6 +2451,7 @@ y 1
 resist_physical 30
 invisible 1
 connected 1
+activate_on_push 0
 end
 arch pentagram_111
 hp 11
@@ -2455,6 +2461,7 @@ y 11
 resist_physical 30
 invisible 1
 connected 1
+activate_on_push 0
 end
 arch pentagram_111
 x 11
@@ -2468,6 +2475,7 @@ y 6
 resist_physical 30
 invisible 1
 connected 1
+activate_on_push 0
 end
 arch pentagram_111
 x 11
