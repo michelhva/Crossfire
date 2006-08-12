@@ -110,6 +110,8 @@ endmsg
 material 2
 x 1
 y 1
+no_pick 1
+material 0
 end
 arch magic_ear
 msg
@@ -220,8 +222,14 @@ x 1
 y 3
 end
 arch gravestone
+name Sannantes's Gravestone
+msg
+Sannantes Rests Here
+endmsg
 x 1
 y 3
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -289,8 +297,15 @@ x 1
 y 4
 end
 arch gravestone
+name X. Ofrendisa's Gravestone
+msg
+Here lies Xavines Ofrendisa,
+Fourth Princess of Khundsdorf
+endmsg
 x 1
 y 4
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -444,10 +459,12 @@ end
 arch gravestone
 name EagleEye's gravestone
 msg
-I wish to rest in peac
+I wish to rest in peace
 endmsg
 x 1
 y 6
+no_pick 1
+material 0
 end
 arch dungeon_floor
 x 1
@@ -582,6 +599,8 @@ I will revenge
 endmsg
 x 2
 y 2
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -649,8 +668,14 @@ x 2
 y 3
 end
 arch gravestone
+name Volgenriss's Gravestone
+msg
+Volgenriss Sleeps forever Here.
+endmsg
 x 2
 y 3
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -718,8 +743,14 @@ x 2
 y 4
 end
 arch gravestone
+name A nearly erased Gravestone
+msg
+H.j..uik .es. H.r.
+endmsg
 x 2
 y 4
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -875,8 +906,15 @@ x 2
 y 6
 end
 arch gravestone
+name Arch Stenton's Gravestone
+msg
+Arch Stenton Lies Here, and died as
+he lived, without any gold in his pockets.
+endmsg
 x 2
 y 6
+no_pick 1
+material 0
 end
 arch dungeon_floor
 x 2
@@ -963,8 +1001,14 @@ x 3
 y 1
 end
 arch gravestone
+name Unnamed Gravestone
+msg
+Whoever he may be, may He Find Fido(tm).
+endmsg
 x 3
 y 1
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1008,8 +1052,14 @@ x 3
 y 2
 end
 arch gravestone
+name Gurunarri's Gravestone
+msg
+In Memoriam, His Wife and 44 Children.
+endmsg
 x 3
 y 2
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1053,8 +1103,14 @@ x 3
 y 3
 end
 arch gravestone
+name Ancient Gravestone
+msg
+I told them I was sick !
+endmsg
 x 3
 y 3
+no_pick 1
+material 0
 end
 arch corpse1
 name A newly killed adventurer's corpse
@@ -1138,8 +1194,15 @@ x 3
 y 4
 end
 arch gravestone
+name Klurissa's Gravestone
+msg
+May She Eternally Hunt Dragons,
+In the Celestial Caves of Oron.
+endmsg
 x 3
 y 4
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1207,8 +1270,11 @@ x 3
 y 5
 end
 arch gravestone
+name Gurashdah the Old's Gravestone
 x 3
 y 5
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1276,8 +1342,11 @@ x 3
 y 6
 end
 arch gravestone
+name Gurashdah the Young's Gravestone
 x 3
 y 6
+no_pick 1
+material 0
 end
 arch dungeon_floor
 x 3
@@ -1359,8 +1428,15 @@ x 4
 y 1
 end
 arch gravestone
+name Hrivenness's Gravestone
+msg
+Hrivernness Rests Here, after a
+short life of 947 years.
+endmsg
 x 4
 y 1
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1404,8 +1480,14 @@ x 4
 y 2
 end
 arch gravestone
+name Driffens Gravestone
+msg
+Remember Us, the Driffens
+endmsg
 x 4
 y 2
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1449,8 +1531,16 @@ x 4
 y 3
 end
 arch gravestone
+name Farkhenn's Gravestone
+msg
+Last House of Family Farkhenn.
+Please clean your feet before
+stepping inside.
+endmsg
 x 4
 y 3
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1518,8 +1608,14 @@ x 4
 y 4
 end
 arch gravestone
+name Jurudas's Gravestone
+msg
+Jurudas Sleeps Forever Here.
+endmsg
 x 4
 y 4
+no_pick 1
+material 0
 end
 arch corpse
 name bob's decayed corpse
@@ -1596,8 +1692,16 @@ x 4
 y 5
 end
 arch gravestone
+name Morind's Gravestone
+msg
+   *** RIP ***
+Morind Termaness
+ 3474EK-3561EK
+endmsg
 x 4
 y 5
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1670,8 +1774,11 @@ x 4
 y 6
 end
 arch gravestone
+name <erased name>
 x 4
 y 6
+no_pick 1
+material 0
 end
 arch dungeon_floor
 x 4
@@ -1758,8 +1865,14 @@ x 5
 y 1
 end
 arch gravestone
+name Ancient Gravestone
+msg
+Simosianius Alidritus Rests Here
+endmsg
 x 5
 y 1
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1809,6 +1922,8 @@ Death cannot trap me
 endmsg
 x 5
 y 2
+no_pick 1
+material 0
 end
 arch lich
 name Igor, the Lich
@@ -1862,8 +1977,11 @@ x 5
 y 3
 end
 arch gravestone
+name Hajij's Gravestone
 x 5
 y 3
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -1931,8 +2049,14 @@ x 5
 y 4
 end
 arch gravestone
+name Jurudan's Gravestone
+msg
+Jurudan the Blond rests here.
+endmsg
 x 5
 y 4
+no_pick 1
+material 0
 end
 arch magic_mouth
 name howling voice
@@ -2004,6 +2128,8 @@ name Elbereth's gravestone
 msg
 Peace! in life or in death!
 endmsg
+no_pick 1
+material 0
 x 5
 y 5
 end
@@ -2173,6 +2299,8 @@ msg
 I wish someone bring Dragonbane back
 and rid the land of dragons
 endmsg
+no_pick 1
+material 0
 x 6
 y 1
 end
@@ -2247,6 +2375,12 @@ x 6
 y 2
 end
 arch gravestone
+name Ragnor's Gravestone
+msg
+Rumors of my death are greatly exaggerated.
+endmsg
+no_pick 1
+material 0
 x 6
 y 2
 end
@@ -2316,6 +2450,12 @@ x 6
 y 3
 end
 arch gravestone
+name Memorial of 444719
+msg
+High Priestess of Fido, Marshall of the Crusaders.
+endmsg
+no_pick 1
+material 0
 x 6
 y 3
 end
@@ -2390,6 +2530,9 @@ x 6
 y 4
 end
 arch gravestone
+name Aldurian Noren Rests Here
+no_pick 1
+material 0
 x 6
 y 4
 end
