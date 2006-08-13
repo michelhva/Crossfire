@@ -1,12 +1,13 @@
 arch map
-region pupland
 name port_e
+region pupland
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:35:14 1996
 endmsg
-x 32
+width 32
+height 16
 end
 arch sea
 no_pass 0
@@ -127,28 +128,28 @@ x 2
 y 1
 end
 arch sea
+no_pass 0
 x 2
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 2
 y 3
-no_pass 0
 end
 arch sea
 x 2
 y 4
 end
 arch sea
+no_pass 0
 x 2
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 2
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 2
@@ -194,28 +195,28 @@ x 3
 y 1
 end
 arch sea
+no_pass 0
 x 3
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 3
 y 3
-no_pass 0
 end
 arch sea
 x 3
 y 4
 end
 arch sea
+no_pass 0
 x 3
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 3
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 3
@@ -265,45 +266,45 @@ x 4
 y 1
 end
 arch sea
+no_pass 0
 x 4
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 4
 y 2
 end
 arch sea
-x 4
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 4
 y 3
 end
+arch pier_2_1_1
+x 4
+y 3
+end
 arch sea
+no_pass 0
 x 4
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 4
 y 4
 end
 arch sea
+no_pass 0
 x 4
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 4
 y 5
 end
 arch sea
+no_pass 0
 x 4
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 4
@@ -424,27 +425,27 @@ x 6
 y 1
 end
 arch sea
+no_pass 0
 x 6
 y 2
-no_pass 0
 end
 arch sea
 x 6
 y 3
 end
 arch sea
+no_pass 0
 x 6
 y 4
-no_pass 0
 end
 arch sea
 x 6
 y 5
 end
 arch sea
+no_pass 0
 x 6
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 6
@@ -490,27 +491,27 @@ x 7
 y 1
 end
 arch sea
+no_pass 0
 x 7
 y 2
-no_pass 0
 end
 arch sea
 x 7
 y 3
 end
 arch sea
+no_pass 0
 x 7
 y 4
-no_pass 0
 end
 arch sea
 x 7
 y 5
 end
 arch sea
+no_pass 0
 x 7
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 7
@@ -564,45 +565,45 @@ x 8
 y 1
 end
 arch sea
+no_pass 0
 x 8
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 8
 y 2
 end
 arch sea
-x 8
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 8
 y 3
 end
+arch pier_2_1_1
+x 8
+y 3
+end
 arch sea
+no_pass 0
 x 8
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 8
 y 4
 end
 arch sea
+no_pass 0
 x 8
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 8
 y 5
 end
 arch sea
+no_pass 0
 x 8
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 8
@@ -723,29 +724,29 @@ x 10
 y 1
 end
 arch sea
+no_pass 0
 x 10
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 10
 y 3
-no_pass 0
 end
 arch sea
+no_pass 0
 x 10
 y 4
-no_pass 0
 end
 arch sea
+no_pass 0
 x 10
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 10
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 10
@@ -791,29 +792,29 @@ x 11
 y 1
 end
 arch sea
+no_pass 0
 x 11
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 11
 y 3
-no_pass 0
 end
 arch sea
+no_pass 0
 x 11
 y 4
-no_pass 0
 end
 arch sea
+no_pass 0
 x 11
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 11
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 11
@@ -863,45 +864,45 @@ x 12
 y 1
 end
 arch sea
+no_pass 0
 x 12
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 12
 y 2
 end
 arch sea
-x 12
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 12
 y 3
 end
+arch pier_2_1_1
+x 12
+y 3
+end
 arch sea
+no_pass 0
 x 12
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 12
 y 4
 end
 arch sea
+no_pass 0
 x 12
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 12
 y 5
 end
 arch sea
+no_pass 0
 x 12
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 12
@@ -1026,28 +1027,28 @@ x 14
 y 1
 end
 arch sea
+no_pass 0
 x 14
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 14
 y 3
-no_pass 0
 end
 arch sea
 x 14
 y 4
 end
 arch sea
+no_pass 0
 x 14
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 14
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 14
@@ -1100,28 +1101,28 @@ x 15
 y 1
 end
 arch sea
+no_pass 0
 x 15
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 15
 y 3
-no_pass 0
 end
 arch sea
 x 15
 y 4
 end
 arch sea
+no_pass 0
 x 15
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 15
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 15
@@ -1178,45 +1179,45 @@ x 16
 y 1
 end
 arch sea
+no_pass 0
 x 16
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 16
 y 2
 end
 arch sea
-x 16
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 16
 y 3
 end
+arch pier_2_1_1
+x 16
+y 3
+end
 arch sea
+no_pass 0
 x 16
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 16
 y 4
 end
 arch sea
+no_pass 0
 x 16
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 16
 y 5
 end
 arch sea
+no_pass 0
 x 16
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 16
@@ -1341,28 +1342,28 @@ x 18
 y 1
 end
 arch sea
+no_pass 0
 x 18
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 18
 y 3
-no_pass 0
 end
 arch sea
 x 18
 y 4
 end
 arch sea
+no_pass 0
 x 18
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 18
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 18
@@ -1408,28 +1409,28 @@ x 19
 y 1
 end
 arch sea
+no_pass 0
 x 19
 y 2
-no_pass 0
 end
 arch sea
+no_pass 0
 x 19
 y 3
-no_pass 0
 end
 arch sea
 x 19
 y 4
 end
 arch sea
+no_pass 0
 x 19
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 19
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 19
@@ -1483,45 +1484,45 @@ x 20
 y 1
 end
 arch sea
+no_pass 0
 x 20
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 20
 y 2
 end
 arch sea
-x 20
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 20
 y 3
 end
+arch pier_2_1_1
+x 20
+y 3
+end
 arch sea
+no_pass 0
 x 20
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 20
 y 4
 end
 arch sea
+no_pass 0
 x 20
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 20
 y 5
 end
 arch sea
+no_pass 0
 x 20
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 20
@@ -1646,24 +1647,24 @@ x 22
 y 2
 end
 arch sea
+no_pass 0
 x 22
 y 3
-no_pass 0
 end
 arch sea
+no_pass 0
 x 22
 y 4
-no_pass 0
 end
 arch sea
+no_pass 0
 x 22
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 22
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 22
@@ -1713,24 +1714,24 @@ x 23
 y 2
 end
 arch sea
+no_pass 0
 x 23
 y 3
-no_pass 0
 end
 arch sea
+no_pass 0
 x 23
 y 4
-no_pass 0
 end
 arch sea
+no_pass 0
 x 23
 y 5
-no_pass 0
 end
 arch sea
+no_pass 0
 x 23
 y 6
-no_pass 0
 end
 arch cobblestones2
 x 23
@@ -1780,45 +1781,45 @@ x 24
 y 1
 end
 arch sea
+no_pass 0
 x 24
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 24
 y 2
 end
 arch sea
-x 24
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 24
 y 3
 end
+arch pier_2_1_1
+x 24
+y 3
+end
 arch sea
+no_pass 0
 x 24
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 24
 y 4
 end
 arch sea
+no_pass 0
 x 24
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 24
 y 5
 end
 arch sea
+no_pass 0
 x 24
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 24
@@ -2002,9 +2003,9 @@ x 27
 y 1
 end
 arch sea
+no_pass 0
 x 27
 y 2
-no_pass 0
 end
 arch galleon
 x 27
@@ -2015,9 +2016,9 @@ x 27
 y 3
 end
 arch sea
+no_pass 0
 x 27
 y 4
-no_pass 0
 end
 arch galleon
 x 27
@@ -2028,9 +2029,9 @@ x 27
 y 5
 end
 arch sea
+no_pass 0
 x 27
 y 6
-no_pass 0
 end
 arch galleon
 x 27
@@ -2053,11 +2054,11 @@ x 27
 y 9
 end
 arch wizard
-x 27
-y 9
 type 0
 monster 1
 unaggressive 1
+x 27
+y 9
 end
 arch cobblestones2
 x 27
@@ -2091,45 +2092,45 @@ x 28
 y 1
 end
 arch sea
+no_pass 0
 x 28
 y 2
-no_pass 0
 end
 arch pier_1_1
 x 28
 y 2
 end
 arch sea
-x 28
-y 3
 no_pass 0
-end
-arch pier_2_1_1
 x 28
 y 3
 end
+arch pier_2_1_1
+x 28
+y 3
+end
 arch sea
+no_pass 0
 x 28
 y 4
-no_pass 0
 end
 arch pier_2_1_1
 x 28
 y 4
 end
 arch sea
+no_pass 0
 x 28
 y 5
-no_pass 0
 end
 arch pier_2_1_1
 x 28
 y 5
 end
 arch sea
+no_pass 0
 x 28
 y 6
-no_pass 0
 end
 arch pier_2_1_1
 x 28
@@ -2187,9 +2188,9 @@ x 29
 y 1
 end
 arch sea
+no_pass 0
 x 29
 y 2
-no_pass 0
 end
 arch galleon
 x 29
@@ -2200,9 +2201,9 @@ x 29
 y 3
 end
 arch sea
+no_pass 0
 x 29
 y 4
-no_pass 0
 end
 arch galleon
 x 29
@@ -2213,9 +2214,9 @@ x 29
 y 5
 end
 arch sea
+no_pass 0
 x 29
 y 6
-no_pass 0
 end
 arch galleon
 x 29
@@ -2445,6 +2446,10 @@ x 10
 y 6
 end
 arch s_ship
+name To big Pupland
+slaying /world/world_081_025
+hp 6
+sp 19
 x 14
 y 2
 end
