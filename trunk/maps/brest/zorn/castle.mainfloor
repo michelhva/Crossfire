@@ -1,14 +1,14 @@
 arch map
 name castle.mainfloor
 region brest
-msg
-Creator: Gene Alexander
-Date:    9/26/2005
-endmsg
 width 59
 height 59
 enter_x 29
 enter_y 3
+msg
+Creator: Gene Alexander
+Date:    9/26/2005
+endmsg
 outdoor 1
 end
 arch brush
@@ -734,10 +734,10 @@ y 7
 end
 arch lamppost
 name Security light
-glow_radius 5
-no_pass 1
 x 3
 y 7
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -2109,15 +2109,15 @@ y 7
 end
 arch ladder_down
 name a well hidden hole in the ground
+slaying /brest/zorn/castle.basement0
 msg
 It sure is dark ...
 endmsg
-invisible 1
-slaying /brest/zorn/castle.basement0
 hp 7
 sp 7
 x 7
 y 7
+invisible 1
 end
 arch tree5
 name ornamental pine
@@ -2155,17 +2155,7 @@ arch brush
 x 7
 y 11
 end
-arch tree5
-name ornamental pine
-x 7
-y 11
-end
 arch brush
-x 7
-y 12
-end
-arch tree5
-name ornamental pine
 x 7
 y 12
 end
@@ -2227,17 +2217,7 @@ arch brush
 x 7
 y 19
 end
-arch tree5
-name ornamental pine
-x 7
-y 19
-end
 arch brush
-x 7
-y 20
-end
-arch tree5
-name ornamental pine
 x 7
 y 20
 end
@@ -2299,17 +2279,7 @@ arch brush
 x 7
 y 27
 end
-arch tree5
-name ornamental pine
-x 7
-y 27
-end
 arch brush
-x 7
-y 28
-end
-arch tree5
-name ornamental pine
 x 7
 y 28
 end
@@ -2415,17 +2385,7 @@ arch brush
 x 7
 y 41
 end
-arch tree5
-name ornamental pine
-x 7
-y 41
-end
 arch brush
-x 7
-y 42
-end
-arch tree5
-name ornamental pine
 x 7
 y 42
 end
@@ -2618,7 +2578,7 @@ arch cobblestones2
 x 8
 y 10
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 8
 y 10
 end
@@ -2626,7 +2586,11 @@ arch cobblestones2
 x 8
 y 11
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 8
+y 11
+end
+arch dungeon_magic
 x 8
 y 11
 end
@@ -2634,7 +2598,11 @@ arch cobblestones2
 x 8
 y 12
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 8
+y 12
+end
+arch dungeon_magic
 x 8
 y 12
 end
@@ -2642,7 +2610,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 8
 y 13
 end
@@ -2682,7 +2650,7 @@ arch cobblestones2
 x 8
 y 18
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 8
 y 18
 end
@@ -2690,7 +2658,11 @@ arch cobblestones2
 x 8
 y 19
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 8
+y 19
+end
+arch dungeon_magic
 x 8
 y 19
 end
@@ -2698,7 +2670,11 @@ arch cobblestones2
 x 8
 y 20
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 8
+y 20
+end
+arch dungeon_magic
 x 8
 y 20
 end
@@ -2706,7 +2682,7 @@ arch cobblestones2
 x 8
 y 21
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 8
 y 21
 end
@@ -2746,7 +2722,7 @@ arch cobblestones2
 x 8
 y 26
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 8
 y 26
 end
@@ -2754,7 +2730,11 @@ arch cobblestones2
 x 8
 y 27
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 8
+y 27
+end
+arch dungeon_magic
 x 8
 y 27
 end
@@ -2762,7 +2742,11 @@ arch cobblestones2
 x 8
 y 28
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 8
+y 28
+end
+arch dungeon_magic
 x 8
 y 28
 end
@@ -2770,7 +2754,7 @@ arch cobblestones2
 x 8
 y 29
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 8
 y 29
 end
@@ -2866,7 +2850,7 @@ arch cobblestones2
 x 8
 y 40
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 8
 y 40
 end
@@ -2874,7 +2858,11 @@ arch cobblestones2
 x 8
 y 41
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 8
+y 41
+end
+arch dungeon_magic
 x 8
 y 41
 end
@@ -2882,7 +2870,11 @@ arch cobblestones2
 x 8
 y 42
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 8
+y 42
+end
+arch dungeon_magic
 x 8
 y 42
 end
@@ -2890,7 +2882,7 @@ arch cobblestones2
 x 8
 y 43
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 8
 y 43
 end
@@ -2938,7 +2930,7 @@ arch cobblestones2
 x 8
 y 49
 end
-arch cwall_3_2
+arch cwall_2_1_1
 x 8
 y 49
 end
@@ -3062,10 +3054,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 9
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 9
@@ -3074,10 +3066,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 10
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 9
@@ -3086,10 +3078,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 11
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 9
@@ -3098,10 +3090,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 12
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 9
@@ -3110,10 +3102,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 13
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 9
@@ -3122,10 +3114,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 14
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 9
@@ -3134,10 +3126,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 15
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 9
@@ -3146,10 +3138,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 9
 y 16
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 9
@@ -3177,23 +3169,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 19
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3203,16 +3189,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 19
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -3225,23 +3217,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 20
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3251,16 +3237,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 20
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -3289,42 +3281,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 9
 y 23
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -3337,23 +3329,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 24
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3363,16 +3349,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 24
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -3401,42 +3393,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 9
 y 27
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -3449,23 +3441,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 28
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3475,16 +3461,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 28
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -3513,23 +3505,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3539,16 +3525,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -3607,23 +3599,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3633,16 +3619,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -3652,10 +3644,10 @@ end
 arch chair_1.4
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 9
 y 37
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 9
@@ -3712,10 +3704,10 @@ end
 arch chair_1.4
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 9
 y 46
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 9
@@ -3727,23 +3719,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 47
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3753,16 +3739,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 47
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -3775,23 +3767,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 9
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -3801,23 +3787,30 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 9
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 9
 y 49
 end
-arch cwall_1_3
+arch statue
+face statue_knight.111
 x 9
 y 49
 end
@@ -3825,16 +3818,11 @@ arch cobblestones2
 x 9
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 9
 y 50
 end
 arch brush
-x 9
-y 51
-end
-arch tree5
-name ornamental pine
 x 9
 y 51
 end
@@ -3941,10 +3929,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 10
 y 9
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -3961,10 +3949,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 10
 y 11
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -3973,10 +3961,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 10
 y 12
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -3993,10 +3981,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 10
 y 14
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4005,10 +3993,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 10
 y 15
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4021,10 +4009,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 17
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4033,10 +4021,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 18
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4045,10 +4033,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 19
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4057,10 +4045,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 20
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4069,10 +4057,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 21
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4081,10 +4069,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 22
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4093,10 +4081,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 23
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4105,10 +4093,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 24
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4117,10 +4105,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 25
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4129,10 +4117,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 26
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4141,10 +4129,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 27
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 10
@@ -4153,10 +4141,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 28
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4165,10 +4153,10 @@ end
 arch chair_1.4
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 10
 y 29
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 10
@@ -4184,42 +4172,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 10
 y 31
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -4240,23 +4228,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 10
+y 33
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -4266,16 +4248,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 10
-y 33
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -4288,23 +4276,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 10
+y 34
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -4314,16 +4296,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 10
-y 34
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -4344,23 +4332,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 10
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -4370,16 +4352,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 10
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -4393,9 +4381,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 38
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4424,9 +4412,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 39
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4455,9 +4443,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 40
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4486,9 +4474,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 41
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4517,9 +4505,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 42
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4548,9 +4536,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 43
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4579,9 +4567,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 44
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4610,9 +4598,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 10
 y 45
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -4650,25 +4638,20 @@ arch cobblestones2
 x 10
 y 49
 end
-arch statue
-face statue_knight.111
-x 10
-y 49
-end
 arch cobblestones2
 x 10
 y 50
 end
-arch cwall_2_1_2
+arch swall_0
+face swall_AA.111
+x 10
+y 50
+end
+arch dungeon_magic
 x 10
 y 50
 end
 arch brush
-x 10
-y 51
-end
-arch tree5
-name ornamental pine
 x 10
 y 51
 end
@@ -4775,10 +4758,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 9
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 11
@@ -4787,10 +4770,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 10
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 11
@@ -4799,10 +4782,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 11
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 11
@@ -4811,10 +4794,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 12
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 11
@@ -4823,10 +4806,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 13
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 11
@@ -4835,10 +4818,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 11
 y 14
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 11
@@ -4907,10 +4890,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 11
 y 30
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 11
@@ -4987,10 +4970,10 @@ end
 arch chair_1.4
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 11
 y 46
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 11
@@ -5013,16 +4996,11 @@ arch cobblestones2
 x 11
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 11
 y 50
 end
 arch brush
-x 11
-y 51
-end
-arch tree5
-name ornamental pine
 x 11
 y 51
 end
@@ -5129,10 +5107,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 12
 y 9
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 12
@@ -5141,10 +5119,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 12
 y 10
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5153,10 +5131,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 12
 y 11
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5165,10 +5143,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 12
 y 12
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 12
@@ -5177,10 +5155,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 12
 y 13
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 12
@@ -5253,10 +5231,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 12
 y 30
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5301,10 +5279,10 @@ end
 arch chair_1.1
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 12
 y 38
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5313,10 +5291,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 12
 y 39
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5325,10 +5303,10 @@ end
 arch chair_1.3
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 12
 y 40
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 12
@@ -5341,10 +5319,10 @@ end
 arch chair_1.1
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 12
 y 42
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5353,10 +5331,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 12
 y 43
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5365,10 +5343,10 @@ end
 arch chair_1.3
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 12
 y 44
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 12
@@ -5381,10 +5359,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 12
 y 46
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 12
@@ -5400,23 +5378,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 12
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -5426,23 +5398,29 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 12
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 12
 y 49
 end
-arch cwall_1_4
+arch cwall_2_2_2
 x 12
 y 49
 end
@@ -5450,7 +5428,7 @@ arch cobblestones2
 x 12
 y 50
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 12
 y 50
 end
@@ -5566,10 +5544,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 13
 y 9
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 13
@@ -5586,10 +5564,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 13
 y 11
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 13
@@ -5598,10 +5576,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 13
 y 12
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 13
@@ -5682,10 +5660,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 13
 y 30
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 13
@@ -5697,23 +5675,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 13
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -5723,16 +5695,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 13
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -5769,23 +5747,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 13
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -5795,16 +5767,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 13
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -5850,10 +5828,10 @@ end
 arch chair_1.2
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 13
 y 46
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 13
@@ -5869,23 +5847,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 13
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -5895,16 +5867,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 13
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -5919,7 +5897,7 @@ arch cobblestones2
 x 13
 y 50
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 13
 y 50
 end
@@ -6034,10 +6012,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 14
 y 9
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 14
@@ -6046,10 +6024,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 14
 y 10
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 14
@@ -6058,10 +6036,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 14
 y 11
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 14
@@ -6147,10 +6125,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 14
 y 30
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 14
@@ -6162,23 +6140,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 14
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -6188,16 +6160,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 14
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -6234,23 +6212,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 14
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -6260,16 +6232,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 14
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -6283,9 +6261,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 38
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6314,9 +6292,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 39
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6345,9 +6323,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 40
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6376,9 +6354,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 41
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6407,9 +6385,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 42
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6438,9 +6416,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 43
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6469,9 +6447,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 44
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6500,9 +6478,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 14
 y 45
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -6540,7 +6518,8 @@ arch cobblestones2
 x 14
 y 49
 end
-arch swall_1_4
+arch statue
+face statue_knight.111
 x 14
 y 49
 end
@@ -6548,11 +6527,7 @@ arch cobblestones2
 x 14
 y 50
 end
-arch swall_1_4
-x 14
-y 50
-end
-arch dungeon_magic
+arch cwall_1_3
 x 14
 y 50
 end
@@ -6662,10 +6637,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 15
 y 9
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 15
@@ -6674,10 +6649,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 15
 y 10
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 15
@@ -6851,15 +6826,12 @@ arch cobblestones2
 x 15
 y 49
 end
-arch swall_2_1_2
-x 15
-y 49
-end
 arch cobblestones2
 x 15
 y 50
 end
-arch swall_2_1_2
+arch swall_0
+face swall_AA.111
 x 15
 y 50
 end
@@ -6973,10 +6945,10 @@ end
 arch chair
 name orchestra chair
 name_pl orchestra chairs
-no_pick 1
-identified 1
 x 16
 y 9
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 16
@@ -7097,9 +7069,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 38
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7128,9 +7100,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 39
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7159,9 +7131,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 40
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7190,9 +7162,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 41
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7221,9 +7193,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 42
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7252,9 +7224,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 43
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7283,9 +7255,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 44
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7314,9 +7286,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 16
 y 45
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -7354,7 +7326,8 @@ arch cobblestones2
 x 16
 y 49
 end
-arch swall_1_3
+arch statue
+face statue_knight.111
 x 16
 y 49
 end
@@ -7362,11 +7335,7 @@ arch cobblestones2
 x 16
 y 50
 end
-arch swall_1_3
-x 16
-y 50
-end
-arch dungeon_magic
+arch cwall_1_4
 x 16
 y 50
 end
@@ -7480,23 +7449,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 17
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -7506,16 +7469,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 17
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -7605,10 +7574,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 17
 y 30
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 17
@@ -7620,23 +7589,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 17
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -7646,16 +7609,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 17
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -7692,23 +7661,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 17
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -7718,16 +7681,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 17
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -7773,10 +7742,10 @@ end
 arch chair_1.4
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 17
 y 46
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 17
@@ -7792,23 +7761,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 17
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -7818,16 +7781,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 17
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -7842,7 +7811,7 @@ arch cobblestones2
 x 17
 y 50
 end
-arch cwall_2_2_1
+arch cwall_3_1
 x 17
 y 50
 end
@@ -7961,23 +7930,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 18
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -7987,16 +7950,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 18
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -8086,10 +8055,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 18
 y 30
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8101,23 +8070,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 18
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -8127,16 +8090,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 18
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -8173,23 +8142,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 18
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -8199,16 +8162,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 18
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -8222,10 +8191,10 @@ end
 arch chair_1.1
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 18
 y 38
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8234,10 +8203,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 18
 y 39
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8246,10 +8215,10 @@ end
 arch chair_1.3
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 18
 y 40
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 18
@@ -8262,10 +8231,10 @@ end
 arch chair_1.1
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 18
 y 42
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8274,10 +8243,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 18
 y 43
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8286,10 +8255,10 @@ end
 arch chair_1.3
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 18
 y 44
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 18
@@ -8302,10 +8271,10 @@ end
 arch table_3
 name Reading table
 name_pl Reading tables
-no_pick 1
-identified 1
 x 18
 y 46
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 18
@@ -8321,23 +8290,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 18
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -8347,16 +8310,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 18
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -8371,7 +8340,7 @@ arch cobblestones2
 x 18
 y 50
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 18
 y 50
 end
@@ -8570,10 +8539,10 @@ end
 arch chair_1.3
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 19
 y 30
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 19
@@ -8650,10 +8619,10 @@ end
 arch chair_1.2
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 19
 y 46
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 19
@@ -8667,7 +8636,8 @@ arch cobblestones2
 x 19
 y 49
 end
-arch swall_1_4
+arch statue
+face statue_knight.111
 x 19
 y 49
 end
@@ -8675,11 +8645,7 @@ arch cobblestones2
 x 19
 y 50
 end
-arch swall_1_4
-x 19
-y 50
-end
-arch dungeon_magic
+arch cwall_1_3
 x 19
 y 50
 end
@@ -8821,10 +8787,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 17
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8833,10 +8799,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 18
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8845,10 +8811,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 19
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8857,10 +8823,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 20
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8869,10 +8835,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 21
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8881,10 +8847,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 22
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8893,10 +8859,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 23
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8905,10 +8871,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 24
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8917,10 +8883,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 25
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8929,10 +8895,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 26
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8941,10 +8907,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 27
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 20
@@ -8953,10 +8919,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 28
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -8965,10 +8931,10 @@ end
 arch chair_1.2
 name ballroom chair
 name_pl ballroom chairs
-no_pick 1
-identified 1
 x 20
 y 29
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 20
@@ -9017,9 +8983,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 38
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9048,9 +9014,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 39
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9079,9 +9045,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 40
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9110,9 +9076,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 41
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9141,9 +9107,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 42
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9172,9 +9138,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 43
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9203,9 +9169,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 44
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9234,9 +9200,9 @@ end
 arch bookshelf
 name Zorn Library Shelf
 name_pl Zorn Library Shelves
-no_pick 1
 x 20
 y 45
+no_pick 1
 arch random_reading
 end
 arch random_reading
@@ -9274,15 +9240,12 @@ arch cobblestones2
 x 20
 y 49
 end
-arch swall_2_1_2
-x 20
-y 49
-end
 arch cobblestones2
 x 20
 y 50
 end
-arch swall_2_1_2
+arch swall_0
+face swall_AA.111
 x 20
 y 50
 end
@@ -9447,42 +9410,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 21
 y 19
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -9495,23 +9458,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 20
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -9521,16 +9478,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 20
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -9559,42 +9522,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 21
 y 23
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -9607,23 +9570,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 24
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -9633,16 +9590,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 24
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -9671,42 +9634,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 21
 y 27
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -9719,23 +9682,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 28
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -9745,16 +9702,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 28
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -9783,23 +9746,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -9809,16 +9766,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -9830,18 +9793,18 @@ x 21
 y 32
 end
 arch button_small
-connected 3
 x 21
 y 33
+connected 3
 end
 arch tile_white_floor
 x 21
 y 33
 end
 arch button_small
-connected 3
 x 21
 y 34
+connected 3
 end
 arch tile_white_floor
 x 21
@@ -9865,23 +9828,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -9891,16 +9848,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -9910,10 +9873,10 @@ end
 arch chair_1.2
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 21
 y 37
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 21
@@ -9970,10 +9933,10 @@ end
 arch chair_1.2
 name Reading chair
 name_pl Reading chairs
-no_pick 1
-identified 1
 x 21
 y 46
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 21
@@ -9985,23 +9948,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 47
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10011,16 +9968,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 47
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -10033,23 +9996,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 21
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10059,23 +10016,30 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 21
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 21
 y 49
 end
-arch swall_1_3
+arch statue
+face statue_knight.111
 x 21
 y 49
 end
@@ -10083,11 +10047,7 @@ arch cobblestones2
 x 21
 y 50
 end
-arch swall_1_3
-x 21
-y 50
-end
-arch dungeon_magic
+arch cwall_1_4
 x 21
 y 50
 end
@@ -10201,23 +10161,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 22
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10227,16 +10181,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 22
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -10273,23 +10233,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 22
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10299,16 +10253,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 22
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -10440,32 +10400,32 @@ x 22
 y 32
 end
 arch button_small
-connected 3
 x 22
 y 33
+connected 3
 end
 arch tile_white_floor
 x 22
 y 33
 end
 arch igate_closed_2
-connected 3
 x 22
 y 33
+connected 3
 end
 arch button_small
-connected 3
 x 22
 y 34
+connected 3
 end
 arch tile_white_floor
 x 22
 y 34
 end
 arch igate_closed_2
-connected 3
 x 22
 y 34
+connected 3
 end
 arch tile_floor
 x 22
@@ -10591,7 +10551,7 @@ arch cobblestones2
 x 22
 y 50
 end
-arch cwall_2_2_1
+arch cwall_3_1
 x 22
 y 50
 end
@@ -10710,23 +10670,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10736,16 +10690,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -10782,23 +10742,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -10808,16 +10762,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -10886,42 +10846,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 23
 y 30
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -10929,10 +10889,10 @@ x 23
 y 31
 end
 arch rune_create_bomb
-level 30
 Cha 50
 x 23
 y 31
+level 30
 end
 arch guard
 name fearless zorn guard
@@ -10940,42 +10900,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 23
 y 31
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -10988,23 +10948,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 32
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11014,31 +10968,37 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 32
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch button_small
-connected 3
 x 23
 y 33
+connected 3
 end
 arch greenmarble
 x 23
 y 33
 end
 arch button_small
-connected 3
 x 23
 y 34
+connected 3
 end
 arch greenmarble
 x 23
@@ -11054,23 +11014,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 35
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11080,16 +11034,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 35
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -11097,10 +11057,10 @@ x 23
 y 36
 end
 arch rune_create_bomb
-level 30
 Cha 50
 x 23
 y 36
+level 30
 end
 arch guard
 name fearless zorn guard
@@ -11108,23 +11068,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11134,16 +11088,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -11156,23 +11116,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 23
+y 37
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11182,16 +11136,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 23
-y 37
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -11242,11 +11202,16 @@ arch greenmarble
 x 23
 y 49
 end
+arch statue
+face statue_knight.111
+x 23
+y 49
+end
 arch cobblestones2
 x 23
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 23
 y 50
 end
@@ -11365,23 +11330,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 24
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11391,16 +11350,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 24
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -11417,23 +11382,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 24
+y 11
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11443,16 +11402,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 24
-y 11
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -11465,42 +11430,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 24
 y 12
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -11513,23 +11478,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 24
+y 13
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11539,16 +11498,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 24
-y 13
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -11561,23 +11526,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 24
+y 14
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11587,16 +11546,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 24
-y 14
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -11613,23 +11578,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 24
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -11639,16 +11598,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 24
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -11803,10 +11768,6 @@ arch marble
 x 24
 y 48
 end
-arch brazier
-x 24
-y 48
-end
 arch greenmarble
 x 24
 y 49
@@ -11815,16 +11776,16 @@ arch cobblestones2
 x 24
 y 50
 end
-arch cwall_2_1_2
+arch swall_0
+face swall_AA.111
+x 24
+y 50
+end
+arch dungeon_magic
 x 24
 y 50
 end
 arch brush
-x 24
-y 51
-end
-arch tree5
-name ornamental pine
 x 24
 y 51
 end
@@ -11948,27 +11909,33 @@ arch brazier
 x 25
 y 11
 end
+arch dungeon_magic
+x 25
+y 12
+end
 arch tile_floor
 x 25
 y 12
 end
 arch stair_up_2
+slaying castle.upper.floor.one
+hp 25
+sp 12
 x 25
 y 12
 end
 arch dungeon_magic
 x 25
-y 12
+y 13
 end
 arch tile_white_floor
 x 25
 y 13
 end
 arch stair_up_2
-x 25
-y 13
-end
-arch dungeon_magic
+slaying castle.upper.floor.one
+hp 25
+sp 13
 x 25
 y 13
 end
@@ -12128,11 +12095,16 @@ arch greenmarble
 x 25
 y 49
 end
+arch statue
+face statue_knight.111
+x 25
+y 49
+end
 arch cobblestones2
 x 25
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 25
 y 50
 end
@@ -12242,7 +12214,7 @@ arch cobblestones2
 x 26
 y 8
 end
-arch cwall_2_2_3
+arch cwall_3_3
 x 26
 y 8
 end
@@ -12440,23 +12412,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 26
+y 46
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -12466,23 +12432,29 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 26
-y 46
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 26
 y 47
 end
-arch cwall_2_2_2
+arch cwall_1_4
 x 26
 y 47
 end
@@ -12490,7 +12462,11 @@ arch cobblestones2
 x 26
 y 48
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 26
+y 48
+end
+arch dungeon_magic
 x 26
 y 48
 end
@@ -12498,7 +12474,11 @@ arch cobblestones2
 x 26
 y 49
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 26
+y 49
+end
+arch dungeon_magic
 x 26
 y 49
 end
@@ -12506,7 +12486,7 @@ arch cobblestones2
 x 26
 y 50
 end
-arch cwall_2_2_4
+arch cwall_1_3
 x 26
 y 50
 end
@@ -12611,11 +12591,7 @@ arch cobblestones2
 x 27
 y 8
 end
-arch swall_1_4
-x 27
-y 8
-end
-arch dungeon_magic
+arch cwall_1_3
 x 27
 y 8
 end
@@ -12624,6 +12600,11 @@ x 27
 y 9
 end
 arch greenmarble
+x 27
+y 9
+end
+arch statue
+face statue_knight.111
 x 27
 y 9
 end
@@ -12653,42 +12634,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 27
 y 12
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -12701,23 +12682,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 27
+y 13
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -12727,16 +12702,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 27
-y 13
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -12749,23 +12730,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 27
+y 14
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -12775,16 +12750,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 27
-y 14
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -12930,23 +12911,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 27
+y 46
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -12956,16 +12931,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 27
-y 46
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -13002,9 +12983,9 @@ y 51
 end
 arch bench_1_1
 name railing
-no_pass 1
 x 27
 y 51
+no_pass 1
 end
 arch sea
 name moat
@@ -13017,9 +12998,9 @@ y 52
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 27
 y 52
+no_pass 1
 end
 arch sea
 name moat
@@ -13032,9 +13013,9 @@ y 53
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 27
 y 53
+no_pass 1
 end
 arch sea
 name moat
@@ -13047,9 +13028,9 @@ y 54
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 27
 y 54
+no_pass 1
 end
 arch brush
 x 27
@@ -13061,9 +13042,9 @@ y 55
 end
 arch bench_1_2
 name railing
-no_pass 1
 x 27
 y 55
+no_pass 1
 end
 arch dungeon_magic
 x 27
@@ -13133,7 +13114,7 @@ arch cobblestones2
 x 28
 y 8
 end
-arch swall_2_1_2
+arch swall_1_4
 x 28
 y 8
 end
@@ -13171,24 +13152,18 @@ msg
 @match *
 Move along.
 endmsg
-level 70
-exp 20000
-speed 0.1
-carrying 28000
-attacktype 1
-dam 45
-wc -5
+Con 20
 hp 700
 maxhp 700
+exp 20000
+dam 45
+wc -5
 ac -10
-Con 20
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 28
+y 11
+speed 0.1
+level 70
+attacktype 1
 resist_fire 30
 resist_electricity 30
 resist_cold 30
@@ -13198,16 +13173,22 @@ resist_poison 30
 resist_paralyze 30
 resist_fear 100
 resist_blind 30
-x 28
-y 11
+carrying 28000
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 arch falchion
 applied 1
@@ -13216,11 +13197,11 @@ arch mithril_chainmail
 applied 1
 end
 arch rod_light
-applied 1
-sp 21
-level 20
 hp 25
 maxhp 25
+sp 21
+level 20
+applied 1
 end
 arch skill_one_handed_weapon
 end
@@ -13293,9 +13274,9 @@ y 27
 end
 arch check_floor
 slaying zorn_pet_pelt
-connected 1
 x 28
 y 28
+connected 1
 end
 arch greenmarble
 x 28
@@ -13370,41 +13351,41 @@ x 28
 y 45
 end
 arch button_small
-invisible 1
-connected 1
 x 28
 y 46
+invisible 1
+connected 1
 end
 arch greenmarble
 x 28
 y 46
 end
 arch button_small
-invisible 1
-connected 1
 x 28
 y 47
+invisible 1
+connected 1
 end
 arch check_floor
 slaying zorn_pet_pelt
-no_pass 1
 x 28
 y 47
+no_pass 1
 end
 arch cobblestones2
 x 28
 y 47
 end
 arch mdoor_closed_2
-connected 1
 x 28
 y 47
+connected 1
 end
 arch button_small
-invisible 1
-connected 1
 x 28
 y 48
+invisible 1
+connected 1
 end
 arch cobblestones2
 x 28
@@ -13412,10 +13393,10 @@ y 48
 end
 arch check_floor
 slaying zorn_pet_pelt
-last_sp 0
-connected 2
 x 28
 y 49
+last_sp 0
+connected 2
 end
 arch cobblestones2
 x 28
@@ -13430,30 +13411,30 @@ x 28
 y 51
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 52
+invisible 1
 end
 arch sea
 name moat
+x 28
+y 52
 no_pass 0
-x 28
-y 52
 end
 arch cobblestones2
 x 28
 y 52
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 53
+invisible 1
 end
 arch sea
 name moat
@@ -13465,12 +13446,12 @@ x 28
 y 53
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 54
+invisible 1
 end
 arch sea
 name moat
@@ -13482,12 +13463,12 @@ x 28
 y 54
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 55
+invisible 1
 end
 arch brush
 x 28
@@ -13498,12 +13479,12 @@ x 28
 y 55
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 56
+invisible 1
 end
 arch brush
 x 28
@@ -13515,12 +13496,12 @@ x 28
 y 56
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 57
+invisible 1
 end
 arch brush
 x 28
@@ -13532,12 +13513,12 @@ x 28
 y 57
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 28
 y 58
+invisible 1
 end
 arch brush
 x 28
@@ -13604,12 +13585,12 @@ end
 arch desk
 name Zorn's desk
 name_pl Zorn's desks
-no_pick 1
 slaying irritable_zorn_key
-container 100000
 Str 20
 x 29
 y 9
+container 100000
+no_pick 1
 arch claypipe
 name Zorn's pipe
 name_pl Zorn's pipes
@@ -13635,10 +13616,10 @@ end
 arch chair_2.3
 name Desk chair
 name_pl Desk chairs
-no_pick 1
-identified 1
 x 29
 y 10
+no_pick 1
+identified 1
 end
 arch greenmarble
 x 29
@@ -13650,24 +13631,18 @@ msg
 @match *
 Move along.
 endmsg
-level 70
-exp 20000
-speed 0.1
-carrying 28000
-attacktype 1
-dam 45
-wc -5
+Con 20
 hp 700
 maxhp 700
+exp 20000
+dam 45
+wc -5
 ac -10
-Con 20
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 29
+y 11
+speed 0.1
+level 70
+attacktype 1
 resist_fire 30
 resist_electricity 30
 resist_cold 30
@@ -13677,16 +13652,22 @@ resist_poison 30
 resist_paralyze 30
 resist_fear 100
 resist_blind 30
-x 29
-y 11
+carrying 28000
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 arch falchion
 applied 1
@@ -13695,11 +13676,11 @@ arch mithril_chainmail
 applied 1
 end
 arch rod_light
-applied 1
-sp 21
-level 20
 hp 25
 maxhp 25
+sp 21
+level 20
+applied 1
 end
 arch skill_one_handed_weapon
 end
@@ -13780,9 +13761,9 @@ y 27
 end
 arch check_floor
 slaying zorn_pet_pelt
-connected 1
 x 29
 y 28
+connected 1
 end
 arch greenmarble
 x 29
@@ -13877,41 +13858,41 @@ x 29
 y 45
 end
 arch button_small
-invisible 1
-connected 1
 x 29
 y 46
+invisible 1
+connected 1
 end
 arch greenmarble
 x 29
 y 46
 end
 arch button_small
-invisible 1
-connected 1
 x 29
 y 47
+invisible 1
+connected 1
 end
 arch check_floor
 slaying zorn_pet_pelt
-no_pass 1
 x 29
 y 47
+no_pass 1
 end
 arch cobblestones2
 x 29
 y 47
 end
 arch mdoor_closed_2
-connected 1
 x 29
 y 47
+connected 1
 end
 arch button_small
-invisible 1
-connected 1
 x 29
 y 48
+invisible 1
+connected 1
 end
 arch cobblestones2
 x 29
@@ -13919,10 +13900,10 @@ y 48
 end
 arch check_floor
 slaying zorn_pet_pelt
-last_sp 0
-connected 2
 x 29
 y 49
+last_sp 0
+connected 2
 end
 arch cobblestones2
 x 29
@@ -13937,30 +13918,30 @@ x 29
 y 51
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 52
+invisible 1
 end
 arch sea
 name moat
+x 29
+y 52
 no_pass 0
-x 29
-y 52
 end
 arch cobblestones2
 x 29
 y 52
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 53
+invisible 1
 end
 arch sea
 name moat
@@ -13972,12 +13953,12 @@ x 29
 y 53
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 54
+invisible 1
 end
 arch sea
 name moat
@@ -13989,12 +13970,12 @@ x 29
 y 54
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 55
+invisible 1
 end
 arch brush
 x 29
@@ -14005,12 +13986,12 @@ x 29
 y 55
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 56
+invisible 1
 end
 arch brush
 x 29
@@ -14022,12 +14003,12 @@ x 29
 y 56
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 57
+invisible 1
 end
 arch brush
 x 29
@@ -14039,12 +14020,12 @@ x 29
 y 57
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 29
 y 58
+invisible 1
 end
 arch brush
 x 29
@@ -14092,7 +14073,7 @@ arch cobblestones2
 x 30
 y 8
 end
-arch swall_2_1_2
+arch swall_1_3
 x 30
 y 8
 end
@@ -14130,24 +14111,18 @@ msg
 @match *
 Move along.
 endmsg
-level 70
-exp 20000
-speed 0.1
-carrying 28000
-attacktype 1
-dam 45
-wc -5
+Con 20
 hp 700
 maxhp 700
+exp 20000
+dam 45
+wc -5
 ac -10
-Con 20
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 30
+y 11
+speed 0.1
+level 70
+attacktype 1
 resist_fire 30
 resist_electricity 30
 resist_cold 30
@@ -14157,16 +14132,22 @@ resist_poison 30
 resist_paralyze 30
 resist_fear 100
 resist_blind 30
-x 30
-y 11
+carrying 28000
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 arch falchion
 applied 1
@@ -14175,11 +14156,11 @@ arch mithril_chainmail
 applied 1
 end
 arch rod_light
-applied 1
-sp 21
-level 20
 hp 25
 maxhp 25
+sp 21
+level 20
+applied 1
 end
 arch skill_one_handed_weapon
 end
@@ -14252,9 +14233,9 @@ y 27
 end
 arch check_floor
 slaying zorn_pet_pelt
-connected 1
 x 30
 y 28
+connected 1
 end
 arch greenmarble
 x 30
@@ -14329,41 +14310,41 @@ x 30
 y 45
 end
 arch button_small
-invisible 1
-connected 1
 x 30
 y 46
+invisible 1
+connected 1
 end
 arch greenmarble
 x 30
 y 46
 end
 arch button_small
-invisible 1
-connected 1
 x 30
 y 47
+invisible 1
+connected 1
 end
 arch check_floor
 slaying zorn_pet_pelt
-no_pass 1
 x 30
 y 47
+no_pass 1
 end
 arch cobblestones2
 x 30
 y 47
 end
 arch mdoor_closed_2
-connected 1
 x 30
 y 47
+connected 1
 end
 arch button_small
-invisible 1
-connected 1
 x 30
 y 48
+invisible 1
+connected 1
 end
 arch cobblestones2
 x 30
@@ -14371,10 +14352,10 @@ y 48
 end
 arch check_floor
 slaying zorn_pet_pelt
-last_sp 0
-connected 2
 x 30
 y 49
+last_sp 0
+connected 2
 end
 arch cobblestones2
 x 30
@@ -14389,30 +14370,30 @@ x 30
 y 51
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 52
+invisible 1
 end
 arch sea
 name moat
+x 30
+y 52
 no_pass 0
-x 30
-y 52
 end
 arch cobblestones2
 x 30
 y 52
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 53
+invisible 1
 end
 arch sea
 name moat
@@ -14424,12 +14405,12 @@ x 30
 y 53
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 54
+invisible 1
 end
 arch sea
 name moat
@@ -14441,12 +14422,12 @@ x 30
 y 54
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 55
+invisible 1
 end
 arch brush
 x 30
@@ -14457,12 +14438,12 @@ x 30
 y 55
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 56
+invisible 1
 end
 arch brush
 x 30
@@ -14474,12 +14455,12 @@ x 30
 y 56
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 57
+invisible 1
 end
 arch brush
 x 30
@@ -14491,12 +14472,12 @@ x 30
 y 57
 end
 arch exit
-invisible 1
 slaying /brest/brest.scrolls.right
 hp 6
 sp 4
 x 30
 y 58
+invisible 1
 end
 arch brush
 x 30
@@ -14544,11 +14525,7 @@ arch cobblestones2
 x 31
 y 8
 end
-arch swall_1_3
-x 31
-y 8
-end
-arch dungeon_magic
+arch cwall_1_4
 x 31
 y 8
 end
@@ -14557,6 +14534,11 @@ x 31
 y 9
 end
 arch greenmarble
+x 31
+y 9
+end
+arch statue
+face statue_knight.111
 x 31
 y 9
 end
@@ -14586,42 +14568,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 31
 y 12
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -14634,23 +14616,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 31
+y 13
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -14660,16 +14636,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 31
-y 13
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -14682,23 +14664,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 31
+y 14
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -14708,16 +14684,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 31
-y 14
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -14863,23 +14845,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 31
+y 46
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -14889,16 +14865,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 31
-y 46
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -14935,9 +14917,9 @@ y 51
 end
 arch bench_1_1
 name railing
-no_pass 1
 x 31
 y 51
+no_pass 1
 end
 arch sea
 name moat
@@ -14950,9 +14932,9 @@ y 52
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 31
 y 52
+no_pass 1
 end
 arch sea
 name moat
@@ -14965,9 +14947,9 @@ y 53
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 31
 y 53
+no_pass 1
 end
 arch sea
 name moat
@@ -14980,9 +14962,9 @@ y 54
 end
 arch bench_2_1_1
 name railing
-no_pass 1
 x 31
 y 54
+no_pass 1
 end
 arch brush
 x 31
@@ -14994,9 +14976,9 @@ y 55
 end
 arch bench_1_2
 name railing
-no_pass 1
 x 31
 y 55
+no_pass 1
 end
 arch dungeon_magic
 x 31
@@ -15071,7 +15053,7 @@ arch cobblestones2
 x 32
 y 8
 end
-arch cwall_2_2_2
+arch cwall_3_3
 x 32
 y 8
 end
@@ -15269,23 +15251,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 32
+y 46
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -15295,23 +15271,29 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 32
-y 46
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 32
 y 47
 end
-arch cwall_2_2_3
+arch cwall_1_3
 x 32
 y 47
 end
@@ -15319,7 +15301,11 @@ arch cobblestones2
 x 32
 y 48
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 32
+y 48
+end
+arch dungeon_magic
 x 32
 y 48
 end
@@ -15327,7 +15313,11 @@ arch cobblestones2
 x 32
 y 49
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 32
+y 49
+end
+arch dungeon_magic
 x 32
 y 49
 end
@@ -15335,7 +15325,7 @@ arch cobblestones2
 x 32
 y 50
 end
-arch cwall_2_2_1
+arch cwall_1_4
 x 32
 y 50
 end
@@ -15469,27 +15459,33 @@ arch brazier
 x 33
 y 11
 end
+arch dungeon_magic
+x 33
+y 12
+end
 arch tile_white_floor
 x 33
 y 12
 end
 arch stair_up_4
+slaying castle.upper.floor.one
+hp 33
+sp 12
 x 33
 y 12
 end
 arch dungeon_magic
 x 33
-y 12
+y 13
 end
 arch tile_floor
 x 33
 y 13
 end
 arch stair_up_4
-x 33
-y 13
-end
-arch dungeon_magic
+slaying castle.upper.floor.one
+hp 33
+sp 13
 x 33
 y 13
 end
@@ -15649,11 +15645,16 @@ arch greenmarble
 x 33
 y 49
 end
+arch statue
+face statue_knight.111
+x 33
+y 49
+end
 arch cobblestones2
 x 33
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 33
 y 50
 end
@@ -15682,9 +15683,9 @@ You recall tales that say Zorn is
 known to bring his pet in with him
 when he comes home.
 endmsg
-connected 2
 x 33
 y 53
+connected 2
 end
 arch sea
 name moat
@@ -15792,23 +15793,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 34
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -15818,16 +15813,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 34
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -15844,23 +15845,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 34
+y 11
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -15870,16 +15865,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 34
-y 11
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -15892,42 +15893,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 34
 y 12
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -15940,23 +15941,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 34
+y 13
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -15966,16 +15961,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 34
-y 13
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -15988,23 +15989,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 34
+y 14
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16014,16 +16009,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 34
-y 14
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -16040,23 +16041,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 34
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16066,16 +16061,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 34
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -16230,10 +16231,6 @@ arch marble
 x 34
 y 48
 end
-arch brazier
-x 34
-y 48
-end
 arch greenmarble
 x 34
 y 49
@@ -16242,16 +16239,16 @@ arch cobblestones2
 x 34
 y 50
 end
-arch cwall_2_1_2
+arch swall_0
+face swall_AA.111
+x 34
+y 50
+end
+arch dungeon_magic
 x 34
 y 50
 end
 arch brush
-x 34
-y 51
-end
-arch tree5
-name ornamental pine
 x 34
 y 51
 end
@@ -16361,23 +16358,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16387,16 +16378,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -16433,23 +16430,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16459,16 +16450,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -16537,42 +16534,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 35
 y 30
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -16580,10 +16577,10 @@ x 35
 y 31
 end
 arch rune_create_bomb
-level 30
 Cha 50
 x 35
 y 31
+level 30
 end
 arch guard
 name fearless zorn guard
@@ -16591,42 +16588,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 35
 y 31
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -16639,23 +16636,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 32
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16665,31 +16656,37 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 32
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch button_small
-connected 4
 x 35
 y 33
+connected 4
 end
 arch greenmarble
 x 35
 y 33
 end
 arch button_small
-connected 4
 x 35
 y 34
+connected 4
 end
 arch greenmarble
 x 35
@@ -16705,23 +16702,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 35
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16731,16 +16722,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 35
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -16748,10 +16745,10 @@ x 35
 y 36
 end
 arch rune_create_bomb
-level 30
 Cha 50
 x 35
 y 36
+level 30
 end
 arch guard
 name fearless zorn guard
@@ -16759,23 +16756,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16785,16 +16776,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -16807,23 +16804,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 35
+y 37
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -16833,16 +16824,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 35
-y 37
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch greenmarble
@@ -16893,11 +16890,16 @@ arch greenmarble
 x 35
 y 49
 end
+arch statue
+face statue_knight.111
+x 35
+y 49
+end
 arch cobblestones2
 x 35
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 35
 y 50
 end
@@ -17016,23 +17018,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 36
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -17042,16 +17038,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 36
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -17088,23 +17090,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 36
+y 16
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -17114,16 +17110,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 36
-y 16
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -17255,32 +17257,32 @@ x 36
 y 32
 end
 arch button_small
-connected 4
 x 36
 y 33
+connected 4
 end
 arch tile_floor
 x 36
 y 33
 end
 arch igate_closed_2
-connected 4
 x 36
 y 33
+connected 4
 end
 arch button_small
-connected 4
 x 36
 y 34
+connected 4
 end
 arch tile_floor
 x 36
 y 34
 end
 arch igate_closed_2
-connected 4
 x 36
 y 34
+connected 4
 end
 arch tile_white_floor
 x 36
@@ -17406,7 +17408,7 @@ arch cobblestones2
 x 36
 y 50
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 36
 y 50
 end
@@ -17632,23 +17634,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 37
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -17658,16 +17654,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 37
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -17679,18 +17681,18 @@ x 37
 y 32
 end
 arch button_small
-connected 4
 x 37
 y 33
+connected 4
 end
 arch tile_floor
 x 37
 y 33
 end
 arch button_small
-connected 4
 x 37
 y 34
+connected 4
 end
 arch tile_floor
 x 37
@@ -17714,23 +17716,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 37
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -17740,16 +17736,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 37
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -17858,23 +17860,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 37
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -17884,23 +17880,30 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 37
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 37
 y 49
 end
-arch swall_1_4
+arch statue
+face statue_knight.111
 x 37
 y 49
 end
@@ -17908,11 +17911,7 @@ arch cobblestones2
 x 37
 y 50
 end
-arch swall_1_4
-x 37
-y 50
-end
-arch dungeon_magic
+arch cwall_1_3
 x 37
 y 50
 end
@@ -18033,10 +18032,10 @@ y 12
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 12
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18044,10 +18043,10 @@ y 13
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 13
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18059,10 +18058,10 @@ y 15
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 15
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18070,10 +18069,10 @@ y 16
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 16
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18081,10 +18080,10 @@ y 17
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 17
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18092,10 +18091,10 @@ y 18
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 18
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18103,10 +18102,10 @@ y 19
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 19
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18118,10 +18117,10 @@ y 21
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 21
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18129,10 +18128,10 @@ y 22
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 22
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18140,10 +18139,10 @@ y 23
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 23
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18151,10 +18150,10 @@ y 24
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 24
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18166,10 +18165,10 @@ y 26
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 26
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18177,10 +18176,10 @@ y 27
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 27
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 38
@@ -18188,10 +18187,10 @@ y 28
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 28
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18199,10 +18198,10 @@ y 29
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 38
 y 29
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 38
@@ -18364,15 +18363,12 @@ arch cobblestones2
 x 38
 y 49
 end
-arch swall_2_1_2
-x 38
-y 49
-end
 arch cobblestones2
 x 38
 y 50
 end
-arch swall_2_1_2
+arch swall_0
+face swall_AA.111
 x 38
 y 50
 end
@@ -18497,23 +18493,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 39
+y 11
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -18523,16 +18513,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 39
-y 11
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -18838,7 +18834,8 @@ arch cobblestones2
 x 39
 y 49
 end
-arch swall_1_3
+arch statue
+face statue_knight.111
 x 39
 y 49
 end
@@ -18846,11 +18843,7 @@ arch cobblestones2
 x 39
 y 50
 end
-arch swall_1_3
-x 39
-y 50
-end
-arch dungeon_magic
+arch cwall_1_4
 x 39
 y 50
 end
@@ -18964,23 +18957,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 40
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -18990,16 +18977,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 40
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -19046,10 +19039,10 @@ y 15
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 15
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19057,10 +19050,10 @@ y 16
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 16
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19068,10 +19061,10 @@ y 17
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 17
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19079,10 +19072,10 @@ y 18
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 18
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19090,10 +19083,10 @@ y 19
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 19
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19105,10 +19098,10 @@ y 21
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 21
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19116,10 +19109,10 @@ y 22
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 22
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19127,10 +19120,10 @@ y 23
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 23
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19138,10 +19131,10 @@ y 24
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 24
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19153,10 +19146,10 @@ y 26
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 26
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19164,10 +19157,10 @@ y 27
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 27
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 40
@@ -19175,10 +19168,10 @@ y 28
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 28
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19186,10 +19179,10 @@ y 29
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 40
 y 29
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 40
@@ -19205,23 +19198,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 40
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19231,16 +19218,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 40
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -19277,23 +19270,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 40
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19303,16 +19290,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 40
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -19369,23 +19362,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 40
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19395,16 +19382,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 40
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -19419,7 +19412,7 @@ arch cobblestones2
 x 40
 y 50
 end
-arch cwall_2_2_1
+arch cwall_3_1
 x 40
 y 50
 end
@@ -19538,23 +19531,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 41
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19564,16 +19551,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 41
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -19684,23 +19677,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 41
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19710,16 +19697,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 41
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -19756,23 +19749,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 41
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19782,16 +19769,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 41
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -19864,23 +19857,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 41
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -19890,16 +19877,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 41
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -19914,7 +19907,7 @@ arch cobblestones2
 x 41
 y 50
 end
-arch cwall_2_2_4
+arch cwall_3_1
 x 41
 y 50
 end
@@ -20066,10 +20059,10 @@ y 15
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 15
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20077,10 +20070,10 @@ y 16
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 16
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20088,10 +20081,10 @@ y 17
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 17
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20099,10 +20092,10 @@ y 18
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 18
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20110,10 +20103,10 @@ y 19
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 19
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20125,10 +20118,10 @@ y 21
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 21
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20136,10 +20129,10 @@ y 22
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 22
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20147,10 +20140,10 @@ y 23
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 23
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20158,10 +20151,10 @@ y 24
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 24
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20173,10 +20166,10 @@ y 26
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 26
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20184,10 +20177,10 @@ y 27
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 27
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 42
@@ -20195,10 +20188,10 @@ y 28
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 28
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20206,10 +20199,10 @@ y 29
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 42
 y 29
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 42
@@ -20337,7 +20330,8 @@ arch cobblestones2
 x 42
 y 49
 end
-arch swall_1_4
+arch statue
+face statue_knight.111
 x 42
 y 49
 end
@@ -20345,11 +20339,7 @@ arch cobblestones2
 x 42
 y 50
 end
-arch swall_1_4
-x 42
-y 50
-end
-arch dungeon_magic
+arch cwall_1_3
 x 42
 y 50
 end
@@ -20470,23 +20460,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 43
+y 11
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -20496,16 +20480,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 43
-y 11
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -20846,15 +20836,12 @@ arch cobblestones2
 x 43
 y 49
 end
-arch swall_2_1_2
-x 43
-y 49
-end
 arch cobblestones2
 x 43
 y 50
 end
-arch swall_2_1_2
+arch swall_0
+face swall_AA.111
 x 43
 y 50
 end
@@ -21005,10 +20992,10 @@ y 15
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 15
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21016,10 +21003,10 @@ y 16
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 16
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21027,10 +21014,10 @@ y 17
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 17
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21038,10 +21025,10 @@ y 18
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 18
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21049,10 +21036,10 @@ y 19
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 19
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21064,10 +21051,10 @@ y 21
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 21
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21075,10 +21062,10 @@ y 22
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 22
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21086,10 +21073,10 @@ y 23
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 23
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21097,10 +21084,10 @@ y 24
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 24
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21112,10 +21099,10 @@ y 26
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 26
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21123,10 +21110,10 @@ y 27
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 27
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 44
@@ -21134,10 +21121,10 @@ y 28
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 28
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21145,10 +21132,10 @@ y 29
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 44
 y 29
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 44
@@ -21164,23 +21151,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 44
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21190,16 +21171,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 44
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -21236,23 +21223,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 44
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21262,16 +21243,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 44
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -21342,7 +21329,8 @@ arch cobblestones2
 x 44
 y 49
 end
-arch swall_1_3
+arch statue
+face statue_knight.111
 x 44
 y 49
 end
@@ -21350,11 +21338,7 @@ arch cobblestones2
 x 44
 y 50
 end
-arch swall_1_3
-x 44
-y 50
-end
-arch dungeon_magic
+arch cwall_1_4
 x 44
 y 50
 end
@@ -21468,23 +21452,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 45
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21494,16 +21472,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 45
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -21614,23 +21598,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 45
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21640,16 +21618,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 45
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -21686,23 +21670,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 45
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21712,16 +21690,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 45
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -21778,23 +21762,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 45
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21804,16 +21782,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 45
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
@@ -21828,7 +21812,7 @@ arch cobblestones2
 x 45
 y 50
 end
-arch cwall_2_2_1
+arch cwall_3_1
 x 45
 y 50
 end
@@ -21947,23 +21931,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 46
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -21973,16 +21951,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 46
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -22029,10 +22013,10 @@ y 15
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 15
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22040,10 +22024,10 @@ y 16
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 16
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22051,10 +22035,10 @@ y 17
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 17
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22062,10 +22046,10 @@ y 18
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 18
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22073,10 +22057,10 @@ y 19
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 19
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22088,10 +22072,10 @@ y 21
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 21
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22099,10 +22083,10 @@ y 22
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 22
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22110,10 +22094,10 @@ y 23
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 23
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22121,10 +22105,10 @@ y 24
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 24
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22136,10 +22120,10 @@ y 26
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 26
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22147,10 +22131,10 @@ y 27
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 27
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 46
@@ -22158,10 +22142,10 @@ y 28
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 28
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22169,10 +22153,10 @@ y 29
 end
 arch chair_2.4
 name dining hall chair
-no_pick 1
-identified 1
 x 46
 y 29
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 46
@@ -22264,23 +22248,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 46
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -22290,23 +22268,29 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 46
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 46
 y 49
 end
-arch cwall_1_3
+arch cwall_2_2_3
 x 46
 y 49
 end
@@ -22314,7 +22298,7 @@ arch cobblestones2
 x 46
 y 50
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 46
 y 50
 end
@@ -22433,23 +22417,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 47
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -22459,16 +22437,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 47
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -22485,23 +22469,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 47
+y 11
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -22511,16 +22489,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 47
-y 11
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -22907,16 +22891,11 @@ arch cobblestones2
 x 47
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 47
 y 50
 end
 arch brush
-x 47
-y 51
-end
-arch tree5
-name ornamental pine
 x 47
 y 51
 end
@@ -23026,23 +23005,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 48
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23052,16 +23025,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 48
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -23078,10 +23057,10 @@ y 12
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 12
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23089,10 +23068,10 @@ y 13
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 13
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23104,10 +23083,10 @@ y 15
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 15
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23115,10 +23094,10 @@ y 16
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 16
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23126,10 +23105,10 @@ y 17
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 17
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23137,10 +23116,10 @@ y 18
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 18
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23148,10 +23127,10 @@ y 19
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 19
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23163,10 +23142,10 @@ y 21
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 21
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23174,10 +23153,10 @@ y 22
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 22
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23185,10 +23164,10 @@ y 23
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 23
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23196,10 +23175,10 @@ y 24
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 24
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23211,10 +23190,10 @@ y 26
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 26
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23222,10 +23201,10 @@ y 27
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 27
+no_pick 1
+identified 1
 end
 arch tile_white_floor
 x 48
@@ -23233,10 +23212,10 @@ y 28
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 28
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23244,10 +23223,10 @@ y 29
 end
 arch chair_2.2
 name dining hall chair
-no_pick 1
-identified 1
 x 48
 y 29
+no_pick 1
+identified 1
 end
 arch tile_floor
 x 48
@@ -23263,42 +23242,42 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
-resist_fear 100
-resist_blind 25
 x 48
 y 31
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -23319,23 +23298,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 48
+y 33
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23345,16 +23318,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 48
-y 33
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -23367,23 +23346,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 48
+y 34
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23393,16 +23366,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 48
-y 34
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -23423,23 +23402,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 48
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23449,16 +23422,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 48
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -23557,25 +23536,20 @@ arch cobblestones2
 x 48
 y 49
 end
-arch statue
-face statue_knight.111
-x 48
-y 49
-end
 arch cobblestones2
 x 48
 y 50
 end
-arch cwall_2_1_2
+arch swall_0
+face swall_AA.111
+x 48
+y 50
+end
+arch dungeon_magic
 x 48
 y 50
 end
 arch brush
-x 48
-y 51
-end
-arch tree5
-name ornamental pine
 x 48
 y 51
 end
@@ -23685,23 +23659,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 49
+y 9
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23711,16 +23679,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 49
-y 9
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -23837,23 +23811,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 49
+y 31
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23863,16 +23831,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 49
-y 31
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_white_floor
@@ -23931,23 +23905,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 49
+y 36
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -23957,16 +23925,22 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 49
-y 36
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch tile_floor
@@ -24075,23 +24049,17 @@ msg
 @match *
 ...
 endmsg
-randomitems guard_h
-level 50
-exp 12000
-speed 0.09
-attacktype 1
-dam 35
-wc 10
 hp 500
 maxhp 500
+exp 12000
+dam 35
+wc 10
 ac -5
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_skill 1
-stand_still 0
-pick_up 24
-run_away 5
+x 49
+y 48
+speed 0.09
+level 50
+attacktype 1
 resist_fire 25
 resist_electricity 25
 resist_cold 25
@@ -24101,23 +24069,30 @@ resist_poison 25
 resist_paralyze 25
 resist_fear 100
 resist_blind 25
-x 49
-y 48
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
 arch shadow
 name zorn guard shadow
 sp 100
 maxsp 100
 path_attuned 4
-can_use_weapon 1
 can_use_bow 1
 can_use_armour 1
+can_use_weapon 1
 end
 end
 arch cobblestones2
 x 49
 y 49
 end
-arch cwall_1_4
+arch statue
+face statue_knight.111
 x 49
 y 49
 end
@@ -24125,16 +24100,11 @@ arch cobblestones2
 x 49
 y 50
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 49
 y 50
 end
 arch brush
-x 49
-y 51
-end
-arch tree5
-name ornamental pine
 x 49
 y 51
 end
@@ -24246,7 +24216,7 @@ arch cobblestones2
 x 50
 y 10
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 50
 y 10
 end
@@ -24254,7 +24224,11 @@ arch cobblestones2
 x 50
 y 11
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 50
+y 11
+end
+arch dungeon_magic
 x 50
 y 11
 end
@@ -24262,7 +24236,11 @@ arch cobblestones2
 x 50
 y 12
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 50
+y 12
+end
+arch dungeon_magic
 x 50
 y 12
 end
@@ -24270,7 +24248,7 @@ arch cobblestones2
 x 50
 y 13
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 50
 y 13
 end
@@ -24310,7 +24288,7 @@ arch cobblestones2
 x 50
 y 18
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 50
 y 18
 end
@@ -24318,7 +24296,11 @@ arch cobblestones2
 x 50
 y 19
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 50
+y 19
+end
+arch dungeon_magic
 x 50
 y 19
 end
@@ -24326,7 +24308,11 @@ arch cobblestones2
 x 50
 y 20
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 50
+y 20
+end
+arch dungeon_magic
 x 50
 y 20
 end
@@ -24334,7 +24320,7 @@ arch cobblestones2
 x 50
 y 21
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 50
 y 21
 end
@@ -24374,7 +24360,7 @@ arch cobblestones2
 x 50
 y 26
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 50
 y 26
 end
@@ -24382,7 +24368,11 @@ arch cobblestones2
 x 50
 y 27
 end
-arch cwall_2_1_1
+arch swall_1_1
+x 50
+y 27
+end
+arch dungeon_magic
 x 50
 y 27
 end
@@ -24390,7 +24380,11 @@ arch cobblestones2
 x 50
 y 28
 end
-arch cwall_2_1_1
+arch swall_1_2
+x 50
+y 28
+end
+arch dungeon_magic
 x 50
 y 28
 end
@@ -24398,7 +24392,7 @@ arch cobblestones2
 x 50
 y 29
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 50
 y 29
 end
@@ -24462,7 +24456,7 @@ arch cobblestones2
 x 50
 y 36
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 50
 y 36
 end
@@ -24470,7 +24464,12 @@ arch cobblestones2
 x 50
 y 37
 end
-arch cwall_2_1_1
+arch swall_0
+face swall_55.111
+x 50
+y 37
+end
+arch dungeon_magic
 x 50
 y 37
 end
@@ -24478,7 +24477,7 @@ arch cobblestones2
 x 50
 y 38
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 50
 y 38
 end
@@ -24542,7 +24541,7 @@ arch cobblestones2
 x 50
 y 46
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 50
 y 46
 end
@@ -24550,7 +24549,12 @@ arch cobblestones2
 x 50
 y 47
 end
-arch cwall_2_1_1
+arch swall_0
+face swall_55.111
+x 50
+y 47
+end
+arch dungeon_magic
 x 50
 y 47
 end
@@ -24558,7 +24562,7 @@ arch cobblestones2
 x 50
 y 48
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 50
 y 48
 end
@@ -24566,7 +24570,7 @@ arch cobblestones2
 x 50
 y 49
 end
-arch cwall_3_4
+arch cwall_2_1_1
 x 50
 y 49
 end
@@ -24706,17 +24710,7 @@ arch brush
 x 51
 y 11
 end
-arch tree5
-name ornamental pine
-x 51
-y 11
-end
 arch brush
-x 51
-y 12
-end
-arch tree5
-name ornamental pine
 x 51
 y 12
 end
@@ -24778,17 +24772,7 @@ arch brush
 x 51
 y 19
 end
-arch tree5
-name ornamental pine
-x 51
-y 19
-end
 arch brush
-x 51
-y 20
-end
-arch tree5
-name ornamental pine
 x 51
 y 20
 end
@@ -24850,17 +24834,7 @@ arch brush
 x 51
 y 27
 end
-arch tree5
-name ornamental pine
-x 51
-y 27
-end
 arch brush
-x 51
-y 28
-end
-arch tree5
-name ornamental pine
 x 51
 y 28
 end
@@ -25017,11 +24991,6 @@ x 51
 y 46
 end
 arch brush
-x 51
-y 47
-end
-arch tree5
-name ornamental pine
 x 51
 y 47
 end
@@ -26067,10 +26036,10 @@ y 7
 end
 arch lamppost
 name Security light
-glow_radius 5
-no_pass 1
 x 55
 y 7
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
 x 55
