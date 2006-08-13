@@ -21,7 +21,7 @@ int altitude[MAX_SIZE][MAX_SIZE];
 #define MAP_SIZE    50
 
 /* There will be a total of 2500 maps (eek) - 50 in
- * each diretion.  STARTX and STARTY are where to start
+ * each diretion.  startx and starty are where to start
  * numbering from.  I chose 100 for a few reasons - 1) it
  * gives room to the left and above to add some things (another
  * continent for that matter), and 2) since the format allows
@@ -31,8 +31,7 @@ int altitude[MAX_SIZE][MAX_SIZE];
  * So hopefully that should be large enough.
  */
 
-#define STARTX	100
-#define STARTY	100
+int startx=100, starty=100;
 
 typedef enum {
     None=0,
@@ -90,7 +89,7 @@ char *Terrain_Names[][2] = {
  
 
 
-void write_crossfire_maps(int mapx, int mapy)
+void write_crossfire_maps(int mapy, int mapx)
 {
     int x, y,n,q, nx, ny,r1,r2,ax=0,ay=0, j, k;
     char name[512];
@@ -190,10 +189,10 @@ void write_crossfire_maps(int mapx, int mapy)
 	(mapy / MAP_SIZE) * MAP_SIZE != mapy) {
 	fprintf(stderr,"Warning - generated map does not evenly tile.\n");
     }
-    for (nx= STARTX; nx<(STARTX + (mapx/ MAP_SIZE)); nx++) {
-	for (ny= STARTY; ny<(STARTY + (mapy/ MAP_SIZE)); ny++) {
-	    ax = (nx - STARTX) * MAP_SIZE;
-	    ay = (ny - STARTY) * MAP_SIZE;
+    for (nx= startx; nx<(startx + (mapx/ MAP_SIZE)); nx++) {
+	for (ny= starty; ny<(starty + (mapy/ MAP_SIZE)); ny++) {
+	    ax = (nx - startx) * MAP_SIZE;
+	    ay = (ny - starty) * MAP_SIZE;
 
 	    sprintf(name,MAP_FORMAT,nx,ny);
 	    if ((fp=fopen(name, "w"))==NULL) {
@@ -209,22 +208,22 @@ void write_crossfire_maps(int mapx, int mapy)
 
 	    /* don't do difficult, reset time, or enter coordinates */
 	    /* Set up the tile paths */
-	    if (ny != STARTY) {
+	    if (ny != starty) {
 		fprintf(fp,"tile_path_1 ");
 		fprintf(fp,MAP_FORMAT,nx, ny-1);
 		fprintf(fp,"\n");
 	    }
-	    if ((nx+1) < STARTX + (mapx/ MAP_SIZE)) {
+	    if ((nx+1) < startx + (mapx/ MAP_SIZE)) {
 		fprintf(fp,"tile_path_2 ");
 		fprintf(fp,MAP_FORMAT,nx+1, ny);
 		fprintf(fp,"\n");
 	    }
-	    if ((ny+1) < STARTY + (mapy/ MAP_SIZE)) {
+	    if ((ny+1) < starty + (mapy/ MAP_SIZE)) {
 		fprintf(fp,"tile_path_3 ");
 		fprintf(fp,MAP_FORMAT,nx, ny+1);
 		fprintf(fp,"\n");
 	    }
-	    if (nx != STARTX) {
+	    if (nx != startx) {
 		fprintf(fp,"tile_path_4 ");
 		fprintf(fp,MAP_FORMAT,nx-1, ny);
 		fprintf(fp,"\n");
@@ -270,7 +269,7 @@ main(int argc, char *argv)
     extern char *optarg;
 
     seed = time(NULL);
-    while ((c = getopt(argc, argv,"x:y:s:l:n:w:p:m"))!=-1) {
+    while ((c = getopt(argc, argv,"x:y:X:Y:s:l:n:w:p:m"))!=-1) {
 	switch (c) {
 	    case 'l':
 		land = atoi(optarg);
@@ -312,6 +311,12 @@ main(int argc, char *argv)
 		max_y = atoi(optarg);
 		break;
 
+	    case 'X':
+	        startx = atoi(optarg);
+
+	    case 'Y':
+	        starty = atoi(optarg);
+
 	    case 's':
 		seed = atoi(optarg);
 		break;
@@ -328,8 +333,8 @@ main(int argc, char *argv)
 
     fprintf(stderr,"Making %d X %d map, seed %d, land %d, passes = %d\n", max_x, max_y, seed, land, npasses);
     fprintf(stderr,"wpasses =%d, water=%d\n", wpasses, water);
-    fprintf(stderr,"-x %d -y %d -s %d -p %d -n %d -w %d -l %d\n",
-	    max_x, max_y, seed, wpasses, npasses, water, land);
+    fprintf(stderr,"-x %d -y %d -X %d -Y %d -s %d -p %d -n %d -w %d -l %d\n",
+	    max_x, max_y, startx, starty, seed, wpasses, npasses, water, land);
 
     srandom(seed);
 
