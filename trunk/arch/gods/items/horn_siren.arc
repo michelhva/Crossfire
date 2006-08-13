@@ -6,7 +6,7 @@ randomitems horn_siren
 msg
   Putting this shell to your ear, you hear a
   strange and haunting melody.
- endmsg
+endmsg
 type 35
 level 40
 value 590
