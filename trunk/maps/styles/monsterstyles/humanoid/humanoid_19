@@ -51,10 +51,6 @@ arch spell_paralyze
 end
 arch abil_slow
 end
-arch skill_sorcery
-end
-arch skill_pyromancy
-end
 arch skill_missile_weapon
 end
 arch plate_mail
@@ -76,5 +72,21 @@ nrof 300
 end
 arch corpse
 weight 750000
+end
+arch abil_fear
+end
+arch spell_sm_lightning
+end
+arch skill_sorcery
+end
+arch skill_pyromancy
+end
+arch skill_evocation
+end
+arch skill_summoning
+end
+arch skill_use_magic_item
+end
+arch skill_punching
 end
 end
