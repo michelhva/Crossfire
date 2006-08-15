@@ -15,6 +15,7 @@ def do_help():
 	whoami.Say(' - ref: some checks on objects references')
 	whoami.Say(' - mark: marked item')
 	whoami.Say(' - memory: storage-related tests')
+	whoami.Say(' - time: time of day tests')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -110,6 +111,17 @@ def do_basics():
 	who = Crossfire.WhoIsActivator()
 	whoami.Say('type = %d'%who.Type)
 
+def do_time():
+	cftime = Crossfire.GetTime()
+	whoami.Say('Year: %d'%cftime[0])
+	whoami.Say('Month: %d'%cftime[1])
+	whoami.Say('Day: %d'%cftime[2])
+	whoami.Say('Hour: %d'%cftime[3])
+	whoami.Say('Minute: %d'%cftime[4])
+	whoami.Say('Day of week: %d'%cftime[5])
+	whoami.Say('Week of year: %d'%cftime[6])
+	whoami.Say('Season: %d'%cftime[7])
+
 whoami.Say( 'plugin test' )
 
 topic = Crossfire.WhatIsMessage().split()
@@ -133,5 +145,7 @@ elif topic[0] == 'resist':
 	do_resist()
 elif topic[0] == 'basics':
 	do_basics()
+elif topic[0] == 'time':
+	do_time()
 else:
 	do_help()
