@@ -7,7 +7,14 @@ msg
 @match *
 I'm too busy to answer your queries.
 endmsg
-face sage.111
+face sage.151
+anim
+facings 4
+sage.111
+sage.131
+sage.151
+sage.171
+mina
 Pow 5
 Int 25
 Dex 5
