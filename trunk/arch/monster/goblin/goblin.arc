@@ -1,11 +1,18 @@
 Object goblin
 randomitems goblin
 race goblin
-face goblin.111
+face goblin.151
 color_fg green
 anim
+facings 4
 goblin.111
 goblin.112
+goblin.131
+goblin.132
+goblin.151
+goblin.152
+goblin.171
+goblin.172
 mina
 monster 1
 sleep 1
