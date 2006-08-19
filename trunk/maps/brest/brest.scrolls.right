@@ -1,19 +1,19 @@
 arch map
 name brest.scrolls.right
 region brest
+shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
+shopgreed 1.0
+shopmin 5
+shopmax 150000
+shoprace human
+width 30
+height 40
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
 Date:    5/23/2005
 endmsg
-width 30
-height 40
 outdoor 1
-shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
-shopmin 5
-shopmax 150000
-shoprace human
-shopgreed 1.0
 tile_path_4 brest.scrolls
 end
 arch brush
@@ -85,15 +85,15 @@ arch brush
 y 15
 end
 arch swall_1_3_half
+y 15
 no_magic 1
 damned 1
-y 15
 end
 arch lamppost
 name Lighted fence post
+y 15
 glow_radius 5
 no_pass 1
-y 15
 end
 arch footpath_2_2_3
 y 16
@@ -510,9 +510,9 @@ x 2
 y 16
 end
 arch fireplace
-glow_radius 3
 x 2
 y 16
+glow_radius 3
 end
 arch tile_white_floor
 x 2
@@ -647,9 +647,9 @@ x 2
 y 33
 end
 arch fireplace
-glow_radius 3
 x 2
 y 33
+glow_radius 3
 end
 arch shop_empty
 x 2
@@ -793,18 +793,18 @@ x 3
 y 16
 end
 arch table_3
-no_pick 1
 x 3
 y 16
+no_pick 1
 end
 arch shop_empty
 x 3
 y 17
 end
 arch chair_2.3
-no_pick 1
 x 3
 y 17
+no_pick 1
 end
 arch shop_empty
 x 3
@@ -840,6 +840,10 @@ x 3
 y 23
 end
 arch shop_empty
+x 3
+y 24
+end
+arch fireplace
 x 3
 y 24
 end
@@ -885,18 +889,18 @@ x 3
 y 32
 end
 arch chair_2.1
-no_pick 1
 x 3
 y 32
+no_pick 1
 end
 arch shop_empty
 x 3
 y 33
 end
 arch table_3
-no_pick 1
 x 3
 y 33
+no_pick 1
 end
 arch shop_empty
 x 3
@@ -967,10 +971,10 @@ y 2
 end
 arch lamppost
 name Security light
-glow_radius 5
-no_pass 1
 x 4
 y 2
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 4
@@ -990,9 +994,9 @@ y 4
 end
 arch biglake_n
 name fish pond
-no_pass 0
 x 4
 y 5
+no_pass 0
 end
 arch footbridge_0
 name dock
@@ -1001,9 +1005,9 @@ y 5
 end
 arch biglake_center
 name fish pond
-no_pass 0
 x 4
 y 6
+no_pass 0
 end
 arch biglake_center
 name fish pond
@@ -1063,9 +1067,9 @@ x 4
 y 16
 end
 arch chair_2.2
-no_pick 1
 x 4
 y 16
+no_pick 1
 end
 arch shop_empty
 x 4
@@ -1140,9 +1144,9 @@ x 4
 y 33
 end
 arch chair_2.2
-no_pick 1
 x 4
 y 33
+no_pick 1
 end
 arch shop_empty
 x 4
@@ -1161,17 +1165,17 @@ x 4
 y 35
 end
 arch swall_2_2_2
-no_magic 1
-damned 1
 x 4
 y 35
+no_magic 1
+damned 1
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 4
 y 35
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
 x 4
@@ -1182,10 +1186,10 @@ x 4
 y 36
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 4
 y 36
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 4
@@ -1196,10 +1200,10 @@ x 4
 y 37
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 4
 y 37
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 4
@@ -1210,10 +1214,10 @@ x 4
 y 38
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 4
 y 38
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 4
@@ -1229,10 +1233,10 @@ y 39
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 4
 y 39
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 5
@@ -1268,9 +1272,9 @@ y 5
 end
 arch biglake_center
 name fish pond
-no_pass 0
 x 5
 y 6
+no_pass 0
 end
 arch biglake_center
 name fish pond
@@ -1413,32 +1417,24 @@ arch dungeon_magic
 x 5
 y 35
 end
-arch director_7
-x 5
-y 35
-end
 arch brush
 x 5
 y 35
 end
 arch swall_2_2_3
-no_magic 1
-damned 1
 x 5
 y 35
+no_magic 1
+damned 1
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 5
 y 35
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
-x 5
-y 36
-end
-arch director_7
 x 5
 y 36
 end
@@ -1447,16 +1443,12 @@ x 5
 y 36
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 5
 y 36
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 5
-y 37
-end
-arch director_7
 x 5
 y 37
 end
@@ -1465,16 +1457,12 @@ x 5
 y 37
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 5
 y 37
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 5
-y 38
-end
-arch director_7
 x 5
 y 38
 end
@@ -1483,16 +1471,12 @@ x 5
 y 38
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 5
 y 38
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 5
-y 39
-end
-arch director_7
 x 5
 y 39
 end
@@ -1506,10 +1490,10 @@ y 39
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 5
 y 39
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 6
@@ -1818,10 +1802,10 @@ y 2
 end
 arch lamppost
 name Security light
-glow_radius 5
-no_pass 1
 x 7
 y 2
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 7
@@ -1992,10 +1976,10 @@ x 7
 y 33
 end
 arch book_clasp
-identified 1
-unpaid 1
 x 7
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 7
@@ -2211,10 +2195,10 @@ x 8
 y 33
 end
 arch book_clasp
-identified 1
-unpaid 1
 x 8
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 8
@@ -2522,10 +2506,10 @@ x 9
 y 33
 end
 arch book_clasp
-identified 1
-unpaid 1
 x 9
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 9
@@ -2604,9 +2588,9 @@ y 2
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 10
 y 3
+connected 5
 end
 arch brush
 x 10
@@ -2618,9 +2602,9 @@ y 3
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 10
 y 4
+connected 5
 end
 arch brush
 x 10
@@ -2632,9 +2616,9 @@ y 4
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 10
 y 5
+connected 5
 end
 arch brush
 x 10
@@ -2803,10 +2787,10 @@ x 10
 y 33
 end
 arch book_clasp
-identified 1
-unpaid 1
 x 10
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 10
@@ -2871,7 +2855,7 @@ arch flagstone_2_1_2
 x 11
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 2
 end
@@ -2879,7 +2863,7 @@ arch wwall_2_2_2
 x 11
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 3
 end
@@ -2889,40 +2873,40 @@ y 3
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 11
 y 4
+connected 5
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 6
-no_pass 1
 x 11
 y 4
+connected 6
+no_pass 1
 end
 arch magic_mouth
 msg
 Only those with something of Zorn's may pass ...
 endmsg
-connected 6
-walk_on 0
-fly_on 0
 food 1
 x 11
 y 4
+connected 6
+walk_on 0
+fly_on 0
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 4
 end
 arch gate_closed_2
+x 11
+y 4
 connected 5
 no_magic 1
 damned 1
-x 11
-y 4
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 5
 end
@@ -2930,7 +2914,7 @@ arch wwall_1_1
 x 11
 y 5
 end
-arch shop_empty
+arch tile_white_floor
 x 11
 y 6
 end
@@ -2938,11 +2922,7 @@ arch wwall_win1
 x 11
 y 6
 end
-arch shop_empty
-x 11
-y 7
-end
-arch swall_1_4_half
+arch tile_white_floor
 x 11
 y 7
 end
@@ -3093,10 +3073,10 @@ x 11
 y 33
 end
 arch book_clasp
-identified 1
-unpaid 1
 x 11
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 11
@@ -3161,7 +3141,7 @@ arch flagstone_2_1_2
 x 12
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 2
 end
@@ -3171,47 +3151,47 @@ y 2
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 12
 y 3
+connected 5
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 3
 end
 arch check_inv
 slaying irritable_zorn_key
-connected 5
 x 12
 y 4
+connected 5
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 4
 end
 arch check_inv
 slaying irritable_zorn_key
+x 12
+y 5
 connected 5
+end
+arch tile_white_floor
 x 12
 y 5
 end
-arch shop_empty
-x 12
-y 5
-end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 6
 end
-arch shop_empty
+arch dungeon_magic
 x 12
 y 7
 end
-arch shop_empty
+arch tile_white_floor
 x 12
 y 7
 end
-arch swall_2_1_2
+arch brazier
 x 12
 y 7
 end
@@ -3224,9 +3204,9 @@ x 12
 y 9
 end
 arch chair_2.4
-no_pick 1
 x 12
 y 9
+no_pick 1
 end
 arch shop_empty
 x 12
@@ -3443,11 +3423,7 @@ arch flagstone_2_1_2
 x 13
 y 1
 end
-arch shop_empty
-x 13
-y 2
-end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 2
 end
@@ -3455,39 +3431,31 @@ arch wwall_2_1_2
 x 13
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 3
 end
-arch brazier
-x 13
-y 3
-end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 4
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 5
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 6
 end
-arch brazier
-x 13
-y 6
-end
-arch shop_empty
+arch dungeon_magic
 x 13
 y 7
 end
-arch shop_empty
+arch tile_white_floor
 x 13
 y 7
 end
-arch swall_2_1_2
+arch swall_1_4
 x 13
 y 7
 end
@@ -3496,27 +3464,27 @@ x 13
 y 8
 end
 arch chair_2.1
-no_pick 1
 x 13
 y 8
+no_pick 1
 end
 arch shop_empty
 x 13
 y 9
 end
 arch table_3
-no_pick 1
 x 13
 y 9
+no_pick 1
 end
 arch shop_empty
 x 13
 y 10
 end
 arch chair_2.3
-no_pick 1
 x 13
 y 10
+no_pick 1
 end
 arch shop_empty
 x 13
@@ -3654,10 +3622,10 @@ name APPLY ME TO ENTER!
 slaying /brest/brest.scrolls.right
 hp 17
 sp 36
-walk_on 0
-fly_on 0
 x 13
 y 36
+walk_on 0
+fly_on 0
 end
 arch dungeon_magic
 x 13
@@ -3680,10 +3648,10 @@ name APPLY ME TO ENTER!
 slaying /brest/brest.scrolls.right
 hp 17
 sp 38
-walk_on 0
-fly_on 0
 x 13
 y 38
+walk_on 0
+fly_on 0
 end
 arch dungeon_magic
 x 13
@@ -3708,7 +3676,7 @@ arch flagstone_2_1_2
 x 14
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 2
 end
@@ -3716,27 +3684,27 @@ arch wwall_win2
 x 14
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 3
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 4
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 5
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 6
 end
-arch shop_empty
+arch dungeon_magic
 x 14
 y 7
 end
-arch shop_empty
+arch tile_white_floor
 x 14
 y 7
 end
@@ -3753,9 +3721,9 @@ x 14
 y 9
 end
 arch chair_2.2
-no_pick 1
 x 14
 y 9
+no_pick 1
 end
 arch shop_empty
 x 14
@@ -3880,17 +3848,17 @@ x 14
 y 35
 end
 arch swall_2_2_2
-no_magic 1
-damned 1
 x 14
 y 35
+no_magic 1
+damned 1
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 14
 y 35
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -3901,10 +3869,10 @@ x 14
 y 36
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 14
 y 36
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 14
@@ -3915,10 +3883,10 @@ x 14
 y 37
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 14
 y 37
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 14
@@ -3929,10 +3897,10 @@ x 14
 y 38
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 14
 y 38
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 14
@@ -3948,10 +3916,10 @@ y 39
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 14
 y 39
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 15
@@ -3964,7 +3932,7 @@ arch flagstone_2_1_2
 x 15
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 15
 y 2
 end
@@ -3972,35 +3940,35 @@ arch wwall_2_1_2
 x 15
 y 2
 end
-arch shop_empty
+arch tile_white_floor
 x 15
 y 3
 end
-arch shop_mat
-x 15
-y 3
-end
-arch shop_empty
+arch tile_white_floor
 x 15
 y 4
 end
-arch shop_empty
+arch tile_white_floor
 x 15
 y 5
 end
-arch shop_empty
+arch shop_mat
+x 15
+y 5
+end
+arch tile_white_floor
 x 15
 y 6
 end
-arch shop_empty
+arch dungeon_magic
 x 15
 y 7
 end
-arch shop_empty
+arch tile_white_floor
 x 15
 y 7
 end
-arch swall_2_1_2
+arch swall_1_3
 x 15
 y 7
 end
@@ -4133,50 +4101,50 @@ x 15
 y 29
 end
 arch tome
-identified 1
-unpaid 1
 x 15
 y 29
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
 y 30
 end
 arch tome
-identified 1
-unpaid 1
 x 15
 y 30
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
 y 31
 end
 arch tome
-identified 1
-unpaid 1
 x 15
 y 31
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
 y 32
 end
 arch tome
-identified 1
-unpaid 1
 x 15
 y 32
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
 y 33
 end
 arch tome
-identified 1
-unpaid 1
 x 15
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
@@ -4190,32 +4158,24 @@ arch dungeon_magic
 x 15
 y 35
 end
-arch director_7
-x 15
-y 35
-end
 arch brush
 x 15
 y 35
 end
 arch swall_2_2_3
-no_magic 1
-damned 1
 x 15
 y 35
+no_magic 1
+damned 1
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 15
 y 35
+glow_radius 5
+no_pass 1
 end
 arch dungeon_magic
-x 15
-y 36
-end
-arch director_7
 x 15
 y 36
 end
@@ -4224,16 +4184,12 @@ x 15
 y 36
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 15
 y 36
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 15
-y 37
-end
-arch director_7
 x 15
 y 37
 end
@@ -4242,16 +4198,12 @@ x 15
 y 37
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 15
 y 37
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 15
-y 38
-end
-arch director_7
 x 15
 y 38
 end
@@ -4260,16 +4212,12 @@ x 15
 y 38
 end
 arch swall_2_1_1
-no_magic 1
-damned 1
 x 15
 y 38
+no_magic 1
+damned 1
 end
 arch dungeon_magic
-x 15
-y 39
-end
-arch director_7
 x 15
 y 39
 end
@@ -4283,10 +4231,10 @@ y 39
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 15
 y 39
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 16
@@ -4299,7 +4247,7 @@ arch flagstone_2_1_2
 x 16
 y 1
 end
-arch shop_empty
+arch tile_white_floor
 x 16
 y 2
 end
@@ -4307,27 +4255,35 @@ arch wwall_2_1_2
 x 16
 y 2
 end
-arch swall_1_1_half
-x 16
-y 2
-end
-arch shop_empty
+arch dungeon_magic
 x 16
 y 3
 end
-arch swall_2_1_1
+arch tile_white_floor
 x 16
 y 3
 end
-arch shop_empty
+arch brazier
+x 16
+y 3
+end
+arch dungeon_magic
 x 16
 y 4
 end
-arch swall_2_1_1
+arch tile_white_floor
 x 16
 y 4
 end
-arch shop_empty
+arch swall_1_1
+x 16
+y 4
+end
+arch dungeon_magic
+x 16
+y 5
+end
+arch tile_white_floor
 x 16
 y 5
 end
@@ -4335,23 +4291,27 @@ arch swall_2_1_1
 x 16
 y 5
 end
-arch shop_empty
+arch dungeon_magic
 x 16
 y 6
 end
-arch swall_2_1_1
+arch tile_white_floor
 x 16
 y 6
 end
-arch shop_empty
+arch swall_1_2
+x 16
+y 6
+end
+arch dungeon_magic
 x 16
 y 7
 end
-arch shop_empty
+arch tile_white_floor
 x 16
 y 7
 end
-arch swall_2_2_4
+arch brazier
 x 16
 y 7
 end
@@ -4435,23 +4395,23 @@ arch shop_empty
 x 16
 y 26
 end
-arch shop_empty
-x 16
-y 27
-end
 arch brazier
 x 16
+y 26
+end
+arch shop_empty
+x 16
+y 27
+end
+arch swall_1_1
+x 16
 y 27
 end
 arch shop_empty
 x 16
 y 28
 end
-arch shop_empty
-x 16
-y 28
-end
-arch swall_2_2_2
+arch swall_3_2
 x 16
 y 28
 end
@@ -4467,7 +4427,7 @@ arch shop_empty
 x 16
 y 30
 end
-arch swall_2_1_1
+arch swall_1_2
 x 16
 y 30
 end
@@ -4475,7 +4435,7 @@ arch shop_empty
 x 16
 y 31
 end
-arch swall_2_1_1
+arch brazier
 x 16
 y 31
 end
@@ -4483,7 +4443,7 @@ arch shop_empty
 x 16
 y 32
 end
-arch swall_2_1_1
+arch swall_1_1
 x 16
 y 32
 end
@@ -4508,13 +4468,6 @@ x 16
 y 34
 end
 arch dungeon_magic
-x 16
-y 35
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 16
 y 35
 end
@@ -4539,19 +4492,12 @@ name APPLY ME TO EXIT!
 slaying /brest/brest.scrolls.right
 hp 12
 sp 36
-walk_on 0
-fly_on 0
 x 16
 y 36
+walk_on 0
+fly_on 0
 end
 arch dungeon_magic
-x 16
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 16
 y 37
 end
@@ -4572,17 +4518,10 @@ name APPLY ME TO EXIT!
 slaying /brest/brest.scrolls.right
 hp 12
 sp 38
-walk_on 0
-fly_on 0
 x 16
 y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 16
-y 39
+walk_on 0
+fly_on 0
 end
 arch brush
 x 16
@@ -4611,38 +4550,51 @@ arch wwall_win2
 x 17
 y 2
 end
-arch shop_empty
+arch dungeon_magic
 x 17
 y 3
 end
-arch shop_empty
+arch tile_white_floor
 x 17
 y 3
 end
-arch shop_mat
-x 17
-y 3
-end
-arch shop_empty
+arch dungeon_magic
 x 17
 y 4
 end
-arch shop_empty
+arch tile_white_floor
+x 17
+y 4
+end
+arch dungeon_magic
 x 17
 y 5
 end
-arch shop_scrolls
-exp 4
+arch tile_white_floor
+x 17
+y 5
+end
+arch shop_mat
+x 17
+y 5
+end
+arch dungeon_magic
 x 17
 y 6
 end
-arch shop_scrolls
-exp 4
+arch tile_white_floor
+x 17
+y 6
+end
+arch dungeon_magic
 x 17
 y 7
 end
-arch shop_scrolls
-exp 4
+arch tile_white_floor
+x 17
+y 7
+end
+arch shop_empty
 x 17
 y 8
 end
@@ -4724,19 +4676,27 @@ arch shop_empty
 x 17
 y 25
 end
-arch shop_empty
+arch dungeon_magic
 x 17
 y 26
 end
-arch shop_empty
+arch tile_white_floor
+x 17
+y 26
+end
+arch dungeon_magic
 x 17
 y 27
 end
-arch shop_empty
+arch tile_white_floor
+x 17
+y 27
+end
+arch dungeon_magic
 x 17
 y 28
 end
-arch shop_empty
+arch tile_white_floor
 x 17
 y 28
 end
@@ -4768,10 +4728,6 @@ arch tile_white_floor
 x 17
 y 31
 end
-arch brazier
-x 17
-y 31
-end
 arch dungeon_magic
 x 17
 y 32
@@ -4782,6 +4738,7 @@ y 32
 end
 arch merchant
 name Irritable Zorn
+title Scroll Maker
 msg
 @match Key|key
 You want my key? You'll have to kill me to get it you
@@ -4795,31 +4752,34 @@ advice. Leave me alone.
 So, you want a quest do you? If you can enter my
 home you may just find one. But you need a key to
 enter my home. Now quit bothering me, moron.
+@match Given Name|given name|Name|name
+Why do you want to know my given name? I am
+content to be called by my family name. Go away.
+@match Zacharus|zacharus
+Why hello old friend! I don't recall your face but
+only my closest friends know my given name. I
+am sure you have my castle key as I give one to
+all my friends. Remember to carry my pet in with
+you to get past the invisible barrier at the front
+doors. It is good to see you!
 @match *
 Don't bother me. Just do your shopping and get out.
 endmsg
-title Scroll Maker
-level 200
-exp 20000
-speed 1.5
-carrying 53700
-attacktype 65921
-dam 85
-wc -100
+Con 85
+Pow 15
 hp 10000
 maxhp 10000
-ac -120
-Con 85
-reflect_missile 1
-hitback 1
-reflect_spell 1
 sp 100
 maxsp 500
-Pow 15
-path_attuned 607
-see_invisible 1
-can_see_in_dark 1
-run_away 5
+exp 2000000
+dam 85
+wc -100
+ac -120
+x 17
+y 32
+speed 1.5
+level 200
+attacktype 65921
 resist_physical 99
 resist_magic 85
 resist_fire 85
@@ -4829,20 +4789,29 @@ resist_confusion 85
 resist_acid 85
 resist_drain 85
 resist_weaponmagic 85
-resist_ghosthit 100
-resist_poison 100
+resist_ghosthit 99
+resist_poison 99
 resist_slow 75
 resist_paralyze 75
+resist_turn_undead 99
 resist_fear 85
-resist_deplete 100
-resist_turn_undead 100
-resist_death 100
-resist_chaos 100
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 99
+resist_holyword 50
 resist_blind 75
-resist_holyword 75
-resist_godpower 100
-x 17
-y 32
+path_attuned 607
+carrying 53700
+randomitems human_parts
+see_invisible 1
+hitback 1
+reflect_missile 1
+reflect_spell 1
+run_away 5
+pick_up 1
+sleep 1
+can_see_in_dark 1
 arch spell_large_icestorm
 end
 arch spell_dragonbreath
@@ -4856,100 +4825,99 @@ end
 arch mournblade
 name Zorn's Mournblade
 name_pl Zorn's Mournblades
-weight 20000
-value 200000
-material 256
 dam 10
-last_sp 5
-magic 0
 resist_magic 35
+material 256
+value 200000
+weight 20000
+magic 0
+last_sp 5
 applied 1
 end
 arch mithril_chainmail
 name Zorn's chainmail
 name_pl Zorn's chainmails
-last_heal 1
-last_sp 10
-magic 1
+Wis 1
+Int 1
 ac 7
+resist_magic 35
+magic 1
+last_sp 10
 item_power 2
 applied 1
-resist_magic 35
-Int 1
-Wis 1
 end
 arch key2
 name Zorn's key
 name_pl Zorn's keys
 slaying irritable_zorn_key
 end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
 arch high_boots
 name Zorn's boots
 name_pl Zorn's boots
-weight 2500
-value 600
-material 256
 ac 2
-item_power 2
-applied 1
 resist_physical 5
 resist_magic 5
+material 256
+value 600
+weight 2500
+item_power 2
+applied 1
 end
 arch rod_light
 name rod of sunspear
 name_pl rods of sunspear
-value 3500
-sp 161
-level 110
 hp 500
 maxhp 500
+sp 161
+level 110
+value 3500
 startequip 1
 end
 arch rod_light
 name rod of sanctuary
 name_pl rods of sanctuary
-value 3500
-sp 190
-level 110
 hp 500
 maxhp 500
-startequip 1
-end
-arch key2
-name iamzorn
-face key_brown.111
-msg
-Identifies Zorn to the check_inv tiles so he will "speak" if irritated.
-endmsg
-name_pl iamzorn
-no_pick 1
-invisible 1
-slaying iamzorn
+sp 190
+level 110
+value 3500
 startequip 1
 end
 arch skill_use_magic_item
 can_use_skill 1
+end
+arch skill_stealing
+end
+arch skill_praying
+end
+arch skill_summoning
+end
+arch skill_throwing
+end
+arch skill_karate
+end
+arch skill_punching
+end
+arch skill_sorcery
+end
+arch skill_pyromancy
+end
+arch skill_evocation
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
 end
 end
 arch dungeon_magic
 x 17
 y 33
 end
-arch check_floor
-name iamzorn
-race merchant
-connected 4
+arch button_small
 x 17
 y 33
-end
-arch button_small
 invisible 1
 connected 2
-x 17
-y 33
 end
 arch tile_white_floor
 x 17
@@ -4967,37 +4935,23 @@ arch dungeon_magic
 x 17
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch button_small
 x 17
 y 35
-end
-arch button_small
 invisible 1
 connected 2
-x 17
-y 35
 end
 arch brush
 x 17
 y 35
 end
 arch flowers_permanent
-weight 0
-no_pick 1
 x 17
 y 35
+weight 0
+no_pick 1
 end
 arch dungeon_magic
-x 17
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 17
 y 36
 end
@@ -5009,13 +4963,6 @@ arch dungeon_magic
 x 17
 y 37
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 17
-y 37
-end
 arch footpath_3_2
 x 17
 y 37
@@ -5024,23 +4971,9 @@ arch dungeon_magic
 x 17
 y 38
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 17
-y 38
-end
 arch footpath_2_2_4
 x 17
 y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 17
-y 39
 end
 arch brush
 x 17
@@ -5069,35 +5002,43 @@ arch wwall_2_1_2
 x 18
 y 2
 end
-arch shop_empty
+arch dungeon_magic
 x 18
 y 3
 end
-arch shop_empty
+arch tile_white_floor
+x 18
+y 3
+end
+arch dungeon_magic
 x 18
 y 4
 end
-arch shop_empty
+arch tile_white_floor
+x 18
+y 4
+end
+arch dungeon_magic
 x 18
 y 5
 end
-arch brazier
+arch tile_white_floor
 x 18
 y 5
 end
-arch shop_empty
+arch dungeon_magic
 x 18
 y 6
 end
-arch wwall_1_1
+arch tile_white_floor
 x 18
 y 6
 end
-arch shop_empty
+arch dungeon_magic
 x 18
 y 7
 end
-arch wwall_2_1_1
+arch tile_white_floor
 x 18
 y 7
 end
@@ -5105,15 +5046,7 @@ arch shop_empty
 x 18
 y 8
 end
-arch wwall_1_2
-x 18
-y 8
-end
 arch shop_empty
-x 18
-y 9
-end
-arch brazier
 x 18
 y 9
 end
@@ -5213,19 +5146,23 @@ arch shop_empty
 x 18
 y 24
 end
-arch wwall_0
-x 18
-y 24
-end
 arch shop_empty
 x 18
 y 25
 end
-arch shop_empty
+arch dungeon_magic
 x 18
 y 26
 end
-arch shop_empty
+arch tile_white_floor
+x 18
+y 26
+end
+arch dungeon_magic
+x 18
+y 27
+end
+arch tile_white_floor
 x 18
 y 27
 end
@@ -5233,11 +5170,11 @@ arch shop_mat
 x 18
 y 27
 end
-arch shop_empty
+arch dungeon_magic
 x 18
 y 28
 end
-arch shop_empty
+arch tile_white_floor
 x 18
 y 28
 end
@@ -5285,18 +5222,11 @@ arch dungeon_magic
 x 18
 y 33
 end
-arch check_floor
-name iamzorn
-race merchant
-connected 4
+arch button_small
 x 18
 y 33
-end
-arch button_small
 invisible 1
 connected 2
-x 18
-y 33
 end
 arch tile_white_floor
 x 18
@@ -5306,57 +5236,36 @@ arch dungeon_magic
 x 18
 y 34
 end
-arch check_floor
-name iamzorn
-race merchant
-connected 4
+arch button_small
 x 18
 y 34
-end
-arch button_small
 invisible 1
 connected 2
-x 18
-y 34
 end
 arch tile_white_floor
 x 18
 y 34
 end
 arch mdoor_closed_1
-connected 2
 x 18
 y 34
+connected 2
 end
 arch dungeon_magic
 x 18
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch button_small
 x 18
 y 35
-end
-arch button_small
 invisible 1
 connected 2
-x 18
-y 35
 end
 arch footpath_1_1
 x 18
 y 35
 end
 arch dungeon_magic
-x 18
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 18
 y 36
 end
@@ -5368,25 +5277,11 @@ arch dungeon_magic
 x 18
 y 37
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 18
-y 37
-end
 arch footpath_2_2_4
 x 18
 y 37
 end
 arch dungeon_magic
-x 18
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 18
 y 38
 end
@@ -5401,13 +5296,6 @@ Exit to the West
 endmsg
 x 18
 y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 18
-y 39
 end
 arch brush
 x 18
@@ -5532,19 +5420,27 @@ arch shop_empty
 x 19
 y 25
 end
-arch shop_empty
+arch dungeon_magic
 x 19
 y 26
 end
-arch shop_empty
+arch tile_white_floor
+x 19
+y 26
+end
+arch dungeon_magic
 x 19
 y 27
 end
-arch shop_empty
+arch tile_white_floor
+x 19
+y 27
+end
+arch dungeon_magic
 x 19
 y 28
 end
-arch shop_empty
+arch tile_white_floor
 x 19
 y 28
 end
@@ -5576,10 +5472,6 @@ arch tile_white_floor
 x 19
 y 31
 end
-arch brazier
-x 19
-y 31
-end
 arch dungeon_magic
 x 19
 y 32
@@ -5596,18 +5488,11 @@ arch dungeon_magic
 x 19
 y 33
 end
-arch check_floor
-name iamzorn
-race merchant
-connected 4
+arch button_small
 x 19
 y 33
-end
-arch button_small
 invisible 1
 connected 2
-x 19
-y 33
 end
 arch tile_white_floor
 x 19
@@ -5625,37 +5510,23 @@ arch dungeon_magic
 x 19
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch button_small
 x 19
 y 35
-end
-arch button_small
 invisible 1
 connected 2
-x 19
-y 35
 end
 arch brush
 x 19
 y 35
 end
 arch flowers_permanent
-weight 0
-no_pick 1
 x 19
 y 35
+weight 0
+no_pick 1
 end
 arch dungeon_magic
-x 19
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 19
 y 36
 end
@@ -5667,13 +5538,6 @@ arch dungeon_magic
 x 19
 y 37
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 19
-y 37
-end
 arch brush
 x 19
 y 37
@@ -5682,23 +5546,9 @@ arch dungeon_magic
 x 19
 y 38
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 19
-y 38
-end
 arch brush
 x 19
 y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 19
-y 39
 end
 arch brush
 x 19
@@ -5836,23 +5686,23 @@ arch shop_empty
 x 20
 y 26
 end
-arch shop_empty
-x 20
-y 27
-end
 arch brazier
 x 20
+y 26
+end
+arch shop_empty
+x 20
+y 27
+end
+arch swall_1_1
+x 20
 y 27
 end
 arch shop_empty
 x 20
 y 28
 end
-arch shop_empty
-x 20
-y 28
-end
-arch swall_2_2_3
+arch swall_3_4
 x 20
 y 28
 end
@@ -5868,7 +5718,7 @@ arch shop_empty
 x 20
 y 30
 end
-arch swall_2_1_1
+arch swall_1_2
 x 20
 y 30
 end
@@ -5876,7 +5726,7 @@ arch shop_empty
 x 20
 y 31
 end
-arch swall_2_1_1
+arch brazier
 x 20
 y 31
 end
@@ -5884,7 +5734,7 @@ arch shop_empty
 x 20
 y 32
 end
-arch swall_2_1_1
+arch swall_1_1
 x 20
 y 32
 end
@@ -5912,13 +5762,6 @@ arch dungeon_magic
 x 20
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 20
-y 35
-end
 arch small_stones
 x 20
 y 35
@@ -5931,25 +5774,11 @@ arch dungeon_magic
 x 20
 y 36
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 20
-y 36
-end
 arch brush
 x 20
 y 36
 end
 arch dungeon_magic
-x 20
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
 x 20
 y 37
 end
@@ -5961,23 +5790,9 @@ arch dungeon_magic
 x 20
 y 38
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 20
-y 38
-end
 arch brush
 x 20
 y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 20
-y 39
 end
 arch brush
 x 20
@@ -6175,50 +5990,50 @@ x 21
 y 29
 end
 arch scroll
-identified 1
-unpaid 1
 x 21
 y 29
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 21
 y 30
 end
 arch scroll
-identified 1
-unpaid 1
 x 21
 y 30
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 21
 y 31
 end
 arch scroll
-identified 1
-unpaid 1
 x 21
 y 31
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 21
 y 32
 end
 arch scroll
-identified 1
-unpaid 1
 x 21
 y 32
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 21
 y 33
 end
 arch scroll
-identified 1
-unpaid 1
 x 21
 y 33
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 21
@@ -6228,13 +6043,6 @@ arch wwall_2_1_2
 x 21
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 21
-y 35
-end
 arch brush
 x 21
 y 35
@@ -6243,45 +6051,17 @@ arch tree5
 x 21
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 21
-y 36
-end
 arch brush
 x 21
 y 36
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 21
 y 37
 end
 arch brush
 x 21
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 21
 y 38
-end
-arch brush
-x 21
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 21
-y 39
 end
 arch brush
 x 21
@@ -6446,56 +6226,21 @@ arch wwall_win2
 x 22
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 22
-y 35
-end
 arch brush
 x 22
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 22
 y 36
 end
 arch brush
 x 22
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 22
 y 37
 end
 arch brush
 x 22
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 22
 y 38
-end
-arch brush
-x 22
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 22
-y 39
 end
 arch brush
 x 22
@@ -6673,56 +6418,21 @@ arch wwall_win2
 x 23
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 23
-y 35
-end
 arch brush
 x 23
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 23
 y 36
 end
 arch brush
 x 23
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 23
 y 37
 end
 arch brush
 x 23
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 23
 y 38
-end
-arch brush
-x 23
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 23
-y 39
 end
 arch brush
 x 23
@@ -6967,13 +6677,6 @@ arch wwall_2_1_2
 x 24
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 24
-y 35
-end
 arch brush
 x 24
 y 35
@@ -6982,45 +6685,17 @@ arch tree5
 x 24
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 24
-y 36
-end
 arch brush
 x 24
 y 36
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 24
 y 37
 end
 arch brush
 x 24
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 24
 y 38
-end
-arch brush
-x 24
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 24
-y 39
 end
 arch brush
 x 24
@@ -7054,9 +6729,9 @@ x 25
 y 3
 end
 arch chair_2.4
-no_pick 1
 x 25
 y 3
+no_pick 1
 end
 arch shop_empty
 x 25
@@ -7183,9 +6858,9 @@ x 25
 y 33
 end
 arch chair_2.4
-no_pick 1
 x 25
 y 33
+no_pick 1
 end
 arch shop_empty
 x 25
@@ -7195,56 +6870,21 @@ arch wwall_win2
 x 25
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 25
-y 35
-end
 arch brush
 x 25
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 25
 y 36
 end
 arch brush
 x 25
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 25
 y 37
 end
 arch brush
 x 25
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 25
 y 38
-end
-arch brush
-x 25
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 25
-y 39
 end
 arch brush
 x 25
@@ -7278,18 +6918,18 @@ x 26
 y 3
 end
 arch table_3
-no_pick 1
 x 26
 y 3
+no_pick 1
 end
 arch shop_empty
 x 26
 y 4
 end
 arch chair_2.3
-no_pick 1
 x 26
 y 4
+no_pick 1
 end
 arch shop_empty
 x 26
@@ -7429,18 +7069,18 @@ x 26
 y 32
 end
 arch chair_2.1
-no_pick 1
 x 26
 y 32
+no_pick 1
 end
 arch shop_empty
 x 26
 y 33
 end
 arch table_3
-no_pick 1
 x 26
 y 33
+no_pick 1
 end
 arch shop_empty
 x 26
@@ -7450,56 +7090,21 @@ arch wwall_win2
 x 26
 y 34
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 26
-y 35
-end
 arch brush
 x 26
 y 35
 end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
+arch brush
 x 26
 y 36
 end
 arch brush
 x 26
-y 36
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 26
 y 37
 end
 arch brush
 x 26
-y 37
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 26
 y 38
-end
-arch brush
-x 26
-y 38
-end
-arch check_floor
-name iamzorn
-slaying iamzorn
-connected 4
-x 26
-y 39
 end
 arch brush
 x 26
@@ -7814,10 +7419,10 @@ y 39
 end
 arch lamppost
 name Lighted fence post
-glow_radius 5
-no_pass 1
 x 27
 y 39
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 28
@@ -8295,10 +7900,10 @@ y 39
 end
 arch fishboat
 name Zorn's fishing boat
+slaying /world/world_107_123
 msg
 The spirit of Zorn expels you ...
 endmsg
-slaying /world/world_107_123
 hp 38
 sp 17
 x 4
