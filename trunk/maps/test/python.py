@@ -16,6 +16,8 @@ def do_help():
 	whoami.Say(' - mark: marked item')
 	whoami.Say(' - memory: storage-related tests')
 	whoami.Say(' - time: time of day tests')
+	whoami.Say(' - timer: timer activation test')
+	whoami.Say(' - timer_kill: kill specified timer')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -122,6 +124,22 @@ def do_time():
 	whoami.Say('Week of year: %d'%cftime[6])
 	whoami.Say('Season: %d'%cftime[7])
 
+def do_timer():
+	id = whoami.CreateTimer(3,1)
+	if id >= 0:
+		whoami.Say('The countdown started with a 3 second delay, timerid = %d'%id)
+	else:
+		whoami.Say('Timer failure: %d'%id)
+
+def do_timer_kill():
+	if ( len(topic) < 2 ):
+		whoami.Say('Kill which timer?')
+	else:
+		timer = int(topic[1])
+		whoami.Say('DestroyTimer %d'%timer);
+		res = Crossfire.DestroyTimer(timer)
+		whoami.Say(' => %d'%res)
+
 whoami.Say( 'plugin test' )
 
 topic = Crossfire.WhatIsMessage().split()
@@ -147,5 +165,9 @@ elif topic[0] == 'basics':
 	do_basics()
 elif topic[0] == 'time':
 	do_time()
+elif topic[0] == 'timer':
+	do_timer()
+elif topic[0] == 'timer_kill':
+	do_timer_kill()
 else:
 	do_help()

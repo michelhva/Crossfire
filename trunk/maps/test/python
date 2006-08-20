@@ -1,12 +1,12 @@
 arch map
-region scorn
 name python
+region scorn
+width 5
+height 5
 msg
 Creator: CF Java Map Editor
 Date:    7/15/2005
 endmsg
-width 5
-height 5
 end
 arch cobblestones2
 end
@@ -56,8 +56,12 @@ arch sage
 x 2
 y 2
 arch event_say
-slaying /test/python.py
 title Python
+slaying /test/python.py
+end
+arch event_timer
+title Python
+slaying /test/python_timer.py
 end
 end
 arch cobblestones2
