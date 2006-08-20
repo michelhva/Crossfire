@@ -1,19 +1,19 @@
 arch map
-region brest
 name brest
+difficulty 9
+region brest
+shopitems food:45;*:-100
+shopgreed 1.0
+shopmin 1
+shopmax 150000
+shoprace human
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 18:33:43 1994
 endmsg
-difficulty 9
-shopitems food:45;*:-100
-shopmin 1
-shopmax 150000
-shoprace human
-shopgreed 1.0
-x 20
-y 20
 end
 arch shop_empty
 end
@@ -833,7 +833,7 @@ arch shop_empty
 x 8
 y 18
 end
-arch redcwall_2_1_1
+arch redcwall_win1
 x 8
 y 18
 end
@@ -841,7 +841,7 @@ arch shop_empty
 x 8
 y 19
 end
-arch redcwall_3_1
+arch redcwall_2_2_4
 x 8
 y 19
 end
@@ -923,27 +923,23 @@ arch shop_empty
 x 9
 y 17
 end
-arch redcwall_2_1_2
+arch redcwall_win2
 x 9
 y 17
 end
 arch woodfloor
 x 9
 y 18
+end
+arch woodfloor
+x 9
+y 19
 end
 arch oakdoor
 slaying /world/world_107_123
 hp 28
 sp 38
 x 9
-y 18
-end
-arch woodfloor
-x 9
-y 19
-end
-arch redcwall_2_1_2
-x 9
 y 19
 end
 arch shop_empty
@@ -1036,7 +1032,7 @@ arch shop_empty
 x 10
 y 17
 end
-arch redcwall_2_1_2
+arch redcwall_win2
 x 10
 y 17
 end
@@ -1052,7 +1048,7 @@ arch woodfloor
 x 10
 y 19
 end
-arch redcwall_2_1_2
+arch redcwall_1_4
 x 10
 y 19
 end
@@ -1138,7 +1134,7 @@ arch shop_empty
 x 11
 y 18
 end
-arch redcwall_2_1_1
+arch redcwall_win1
 x 11
 y 18
 end
