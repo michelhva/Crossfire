@@ -1,13 +1,13 @@
 arch map
-region scorn
 name Abandoned house
+region scorn
+width 10
+height 11
 msg
 Creator: Huhanhi
 Created with :  CF Java Map Editor
 Date:    3/23/2005
 endmsg
-width 10
-height 10
 end
 arch dungeon_magic
 end
@@ -31,8 +31,8 @@ arch woodfloor2
 y 2
 end
 arch window_win1
-blocksview 1
 y 2
+blocksview 1
 end
 arch dungeon_magic
 y 3
@@ -68,8 +68,8 @@ arch woodfloor2
 y 6
 end
 arch window_win1
-blocksview 1
 y 6
+blocksview 1
 end
 arch dungeon_magic
 y 7
@@ -99,6 +99,18 @@ arch bird
 y 9
 end
 arch dungeon_magic
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+y 10
+end
+arch cobblestones2
+y 10
+end
+arch dungeon_magic
 x 1
 end
 arch woodfloor2
@@ -108,8 +120,8 @@ arch wall_2_1_2
 x 1
 end
 arch torch_1
-no_pick 1
 x 1
+no_pick 1
 end
 arch magic_mouth
 msg
@@ -135,10 +147,10 @@ x 1
 y 2
 end
 arch locked_door1
-blocksview 1
 slaying /scorn/houses/house3.2nd/path.key
 x 1
 y 2
+blocksview 1
 end
 arch dungeon_magic
 x 1
@@ -173,9 +185,9 @@ x 1
 y 5
 end
 arch woodfloor
-blocksview 1
 x 1
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 1
@@ -200,13 +212,13 @@ y 7
 end
 arch gauntlets
 name thief's gauntlets
-value 10000
-magic 2
-ac 2
-item_power 2
 Dex 2
+ac 2
 x 1
 y 7
+value 10000
+magic 2
+item_power 2
 end
 arch dungeon_magic
 x 1
@@ -233,12 +245,27 @@ x 1
 y 9
 arch apple
 name egg
-face ant_egg.111
 name_pl eggs
+face ant_egg.111
+food 50
 nrof 3
 value 3
-food 50
 end
+end
+arch dungeon_magic
+x 1
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+x 1
+y 10
+end
+arch cobblestones2
+x 1
+y 10
 end
 arch dungeon_magic
 x 2
@@ -306,11 +333,11 @@ x 2
 y 5
 end
 arch random_wealth
-blocksview 1
 hp 2
 exp 6
 x 2
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 2
@@ -361,6 +388,21 @@ x 2
 y 9
 end
 arch dungeon_magic
+x 2
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+x 2
+y 10
+end
+arch cobblestones2
+x 2
+y 10
+end
+arch dungeon_magic
 x 3
 end
 arch woodfloor2
@@ -370,8 +412,8 @@ arch wall_2_1_2
 x 3
 end
 arch torch_1
-no_pick 1
 x 3
+no_pick 1
 end
 arch magic_mouth
 msg
@@ -397,11 +439,11 @@ x 3
 y 2
 end
 arch locked_door1
-face ldoor_blue1.111
-blocksview 1
 slaying /scorn/houses/house3.2nd/path.key
+face ldoor_blue1.111
 x 3
 y 2
+blocksview 1
 end
 arch dungeon_magic
 x 3
@@ -484,14 +526,23 @@ x 3
 y 9
 end
 arch grassdark
-name Apply to exit
-type 66
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch invis_exit
 slaying /world/world_104_115
 hp 45
 sp 35
-walk_on 0
 x 3
-y 9
+y 10
+end
+arch cobblestones2
+x 3
+y 10
 end
 arch dungeon_magic
 x 4
@@ -551,9 +602,9 @@ x 4
 y 5
 end
 arch woodfloor
-blocksview 1
 x 4
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 4
@@ -578,14 +629,14 @@ y 7
 end
 arch robe
 title of Lesser Protection
-value 10000
-magic 2
-item_power 2
+x 4
+y 7
 resist_fire 25
 resist_electricity 25
 resist_cold 25
-x 4
-y 7
+value 10000
+magic 2
+item_power 2
 end
 arch dungeon_magic
 x 4
@@ -604,14 +655,23 @@ x 4
 y 9
 end
 arch grassdark
-name Apply to exit
-type 66
+x 4
+y 9
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch invis_exit
 slaying /world/world_104_115
 hp 45
 sp 35
-walk_on 0
 x 4
-y 9
+y 10
+end
+arch cobblestones2
+x 4
+y 10
 end
 arch dungeon_magic
 x 5
@@ -623,8 +683,8 @@ arch wall_2_1_2
 x 5
 end
 arch torch_1
-no_pick 1
 x 5
+no_pick 1
 end
 arch magic_mouth
 msg
@@ -650,11 +710,11 @@ x 5
 y 2
 end
 arch locked_door1
-face ldoor_white1.111
-blocksview 1
 slaying /scorn/houses/house3.2nd/path.key
+face ldoor_white1.111
 x 5
 y 2
+blocksview 1
 end
 arch dungeon_magic
 x 5
@@ -697,11 +757,11 @@ x 5
 y 5
 end
 arch random_wealth
-blocksview 1
 hp 2
 exp 6
 x 5
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 5
@@ -755,14 +815,23 @@ x 5
 y 9
 end
 arch grassdark
-name Apply to exit
-type 66
+x 5
+y 9
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch invis_exit
 slaying /world/world_104_115
 hp 45
 sp 35
-walk_on 0
 x 5
-y 9
+y 10
+end
+arch cobblestones2
+x 5
+y 10
 end
 arch dungeon_magic
 x 6
@@ -879,14 +948,23 @@ x 6
 y 9
 end
 arch grassdark
-name Apply to exit
-type 66
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch invis_exit
 slaying /world/world_104_115
 hp 45
 sp 35
-walk_on 0
 x 6
-y 9
+y 10
+end
+arch cobblestones2
+x 6
+y 10
 end
 arch dungeon_magic
 x 7
@@ -898,8 +976,8 @@ arch wall_2_1_2
 x 7
 end
 arch torch_1
-no_pick 1
 x 7
+no_pick 1
 end
 arch dungeon_magic
 x 7
@@ -931,8 +1009,8 @@ y 3
 arch key2
 name Key of the Path
 name_pl Keys of the Path
-identified 1
 slaying /scorn/houses/house3.2nd/path.key
+identified 1
 end
 end
 arch dungeon_magic
@@ -952,9 +1030,9 @@ x 7
 y 5
 end
 arch woodfloor
-blocksview 1
 x 7
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 7
@@ -979,14 +1057,14 @@ y 7
 end
 arch broadsword
 title of Crushing
-value 10000
-dam 16
-last_sp 10
-wc -1
-item_power 2
 Str 2
+dam 16
+wc -1
 x 7
 y 7
+value 10000
+last_sp 10
+item_power 2
 end
 arch dungeon_magic
 x 7
@@ -1007,6 +1085,21 @@ end
 arch grass
 x 7
 y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 10
 end
 arch dungeon_magic
 x 8
@@ -1073,11 +1166,11 @@ x 8
 y 5
 end
 arch random_wealth
-blocksview 1
 hp 2
 exp 6
 x 8
 y 5
+blocksview 1
 end
 arch dungeon_magic
 x 8
@@ -1126,6 +1219,21 @@ end
 arch grass
 x 8
 y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+x 8
+y 10
+end
+arch cobblestones2
+x 8
+y 10
 end
 arch dungeon_magic
 x 9
@@ -1239,4 +1347,19 @@ end
 arch grass
 x 9
 y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 45
+sp 35
+x 9
+y 10
+end
+arch cobblestones2
+x 9
+y 10
 end
