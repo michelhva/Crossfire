@@ -18,6 +18,10 @@ def do_help():
 	whoami.Say(' - time: time of day tests')
 	whoami.Say(' - timer: timer activation test')
 	whoami.Say(' - timer_kill: kill specified timer')
+	whoami.Say(' - misc: other tests')
+	whoami.Say(' - exp')
+	whoami.Say(' - const: constants and such')
+	whoami.Say(' - move')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -140,6 +144,57 @@ def do_timer_kill():
 		res = Crossfire.DestroyTimer(timer)
 		whoami.Say(' => %d'%res)
 
+def do_misc():
+	inv = whoami.Inventory
+	if inv != 0:
+		whoami.Say("First inv = %s"%inv.Name)
+		whoami.Say("Inv.Env = %s"%inv.Env.Name)
+	else:
+		whoami.Say("Empty inv??")
+
+def do_exp():
+	who = Crossfire.WhoIsActivator()
+	if ( len(topic) < 2 ):
+		whoami.Say("Your exp is %d"%who.Exp)
+		whoami.Say("Syntax is: exp <value> [option] [skill]")
+	else:
+		value = int(topic[1])
+		skill = ""
+		arg = 0
+		if ( len(topic) > 2 ):
+			arg = int(topic[2])
+			if ( len(topic) > 3):
+				i = 3
+				while ( i < len(topic) ):
+					skill = skill + topic[i] + ' '
+					i = i + 1
+				skill = skill.rstrip()
+		who.AddExp(value, skill, arg)
+		whoami.Say("ok, added %d exp to %s"%(value,skill))
+
+def do_const():
+	whoami.Say("%s => %d"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH))
+	whoami.Say("Player type => %d"%Crossfire.Type.PLAYER)
+	whoami.Say("Move Fly High => %d"%Crossfire.Move.FLY_HIGH)
+
+def dump_move(title, move):
+	moves = [
+		Crossfire.Move.WALK,
+		Crossfire.Move.FLY_LOW,
+		Crossfire.Move.FLY_HIGH,
+		Crossfire.Move.FLYING,
+		Crossfire.Move.SWIM,
+		Crossfire.Move.BOAT ]
+	s = title + ':'
+	for t in moves:
+		if move & t:
+			s = s + ' ' + Crossfire.MoveName[t]
+	return s
+
+def do_move():
+	who = Crossfire.WhoIsActivator()
+	whoami.Say(dump_move("movetype", who.MoveType))
+
 whoami.Say( 'plugin test' )
 
 topic = Crossfire.WhatIsMessage().split()
@@ -169,5 +224,13 @@ elif topic[0] == 'timer':
 	do_timer()
 elif topic[0] == 'timer_kill':
 	do_timer_kill()
+elif topic[0] == 'misc':
+	do_misc()
+elif topic[0] == 'exp':
+	do_exp()
+elif topic[0] == 'const':
+	do_const()
+elif topic[0] == 'move':
+	do_move()
 else:
 	do_help()
