@@ -111,32 +111,34 @@ end
 arch brush
 y 15
 end
-arch swall_2_1_1
-y 15
-end
-arch brush
-y 16
-end
-arch swall_2_1_1
-y 16
-end
-arch brush
-y 17
-end
-arch swall_2_1_1
-y 17
-end
-arch brush
-y 18
-end
 arch swall_3_2
-y 18
+y 15
+no_magic 1
+damned 1
 end
 arch lamppost
 name Lighted fence post
-y 18
+y 15
 glow_radius 5
 no_pass 1
+end
+arch brush
+y 16
+end
+arch swall_2_1_1
+y 16
+end
+arch brush
+y 17
+end
+arch swall_2_1_1
+y 17
+end
+arch brush
+y 18
+end
+arch swall_2_1_1
+y 18
 end
 arch brush
 y 19
@@ -237,7 +239,7 @@ end
 arch brush
 y 35
 end
-arch swall_2_2_1
+arch swall_1_2_half
 y 35
 end
 arch lamppost
@@ -343,7 +345,17 @@ arch brush
 x 1
 y 15
 end
+arch swall_2_1_2
+x 1
+y 15
+no_magic 1
+damned 1
+end
 arch brush
+x 1
+y 16
+end
+arch tree5
 x 1
 y 16
 end
@@ -351,11 +363,15 @@ arch brush
 x 1
 y 17
 end
+arch tree5
+x 1
+y 17
+end
 arch brush
 x 1
 y 18
 end
-arch swall_2_1_2
+arch tree5
 x 1
 y 18
 end
@@ -363,7 +379,15 @@ arch brush
 x 1
 y 19
 end
+arch tree5
+x 1
+y 19
+end
 arch brush
+x 1
+y 20
+end
+arch tree5
 x 1
 y 20
 end
@@ -371,7 +395,15 @@ arch brush
 x 1
 y 21
 end
+arch tree5
+x 1
+y 21
+end
 arch brush
+x 1
+y 22
+end
+arch tree5
 x 1
 y 22
 end
@@ -379,7 +411,15 @@ arch brush
 x 1
 y 23
 end
+arch tree5
+x 1
+y 23
+end
 arch brush
+x 1
+y 24
+end
+arch tree5
 x 1
 y 24
 end
@@ -387,7 +427,15 @@ arch brush
 x 1
 y 25
 end
+arch tree5
+x 1
+y 25
+end
 arch brush
+x 1
+y 26
+end
+arch tree5
 x 1
 y 26
 end
@@ -395,7 +443,15 @@ arch brush
 x 1
 y 27
 end
+arch tree5
+x 1
+y 27
+end
 arch brush
+x 1
+y 28
+end
+arch tree5
 x 1
 y 28
 end
@@ -403,36 +459,31 @@ arch brush
 x 1
 y 29
 end
-arch tree
+arch tree5
 x 1
 y 29
-no_pass 1
-no_magic 1
-damned 1
 end
 arch brush
 x 1
 y 30
 end
-arch tree
+arch tree5
 x 1
 y 30
-no_pass 1
-no_magic 1
-damned 1
 end
 arch brush
 x 1
 y 31
 end
-arch tree
+arch tree5
 x 1
 y 31
-no_pass 1
-no_magic 1
-damned 1
 end
 arch brush
+x 1
+y 32
+end
+arch tree5
 x 1
 y 32
 end
@@ -440,15 +491,19 @@ arch brush
 x 1
 y 33
 end
+arch tree5
+x 1
+y 33
+end
 arch brush
 x 1
 y 34
 end
-arch brush
+arch tree5
 x 1
-y 35
+y 34
 end
-arch swall_2_1_2
+arch brush
 x 1
 y 35
 end
@@ -556,6 +611,12 @@ arch brush
 x 2
 y 15
 end
+arch swall_2_1_2
+x 2
+y 15
+no_magic 1
+damned 1
+end
 arch brush
 x 2
 y 16
@@ -565,10 +626,6 @@ x 2
 y 17
 end
 arch brush
-x 2
-y 18
-end
-arch swall_2_1_2
 x 2
 y 18
 end
@@ -616,34 +673,13 @@ arch brush
 x 2
 y 29
 end
-arch tree
-x 2
-y 29
-no_pass 1
-no_magic 1
-damned 1
-end
 arch brush
 x 2
 y 30
 end
-arch tree
-x 2
-y 30
-no_pass 1
-no_magic 1
-damned 1
-end
 arch brush
 x 2
 y 31
-end
-arch tree
-x 2
-y 31
-no_pass 1
-no_magic 1
-damned 1
 end
 arch brush
 x 2
@@ -658,10 +694,6 @@ x 2
 y 34
 end
 arch brush
-x 2
-y 35
-end
-arch swall_2_1_2
 x 2
 y 35
 end
@@ -769,6 +801,12 @@ arch brush
 x 3
 y 15
 end
+arch swall_2_1_2
+x 3
+y 15
+no_magic 1
+damned 1
+end
 arch brush
 x 3
 y 16
@@ -777,20 +815,17 @@ arch brush
 x 3
 y 17
 end
+arch tree5
+x 3
+y 17
+end
 arch brush
 x 3
 y 18
 end
-arch swall_1_3_half
+arch tree5
 x 3
 y 18
-end
-arch lamppost
-name Lighted fence post
-x 3
-y 18
-glow_radius 5
-no_pass 1
 end
 arch brush
 x 3
@@ -828,15 +863,7 @@ arch brush
 x 3
 y 24
 end
-arch tree5
-x 3
-y 24
-end
 arch brush
-x 3
-y 25
-end
-arch tree5
 x 3
 y 25
 end
@@ -868,18 +895,23 @@ arch brush
 x 3
 y 30
 end
-arch tree
+arch tree5
 x 3
 y 30
-no_pass 1
-no_magic 1
-damned 1
 end
 arch brush
 x 3
 y 31
 end
+arch tree5
+x 3
+y 31
+end
 arch brush
+x 3
+y 32
+end
+arch tree5
 x 3
 y 32
 end
@@ -892,10 +924,6 @@ x 3
 y 34
 end
 arch brush
-x 3
-y 35
-end
-arch swall_2_1_2
 x 3
 y 35
 end
@@ -981,6 +1009,12 @@ end
 arch brush
 x 4
 y 15
+end
+arch swall_2_1_2
+x 4
+y 15
+no_magic 1
+damned 1
 end
 arch brush
 x 4
@@ -1054,19 +1088,27 @@ arch flagstone_2_1_1
 x 4
 y 23
 end
+arch dungeon_magic
+x 4
+y 24
+end
 arch stonefloor2
 x 4
 y 24
 end
-arch flagstone_2_1_1
+arch swall_2_1_1
 x 4
 y 24
+end
+arch dungeon_magic
+x 4
+y 25
 end
 arch stonefloor2
 x 4
 y 25
 end
-arch flagstone_2_1_1
+arch swall_2_1_1
 x 4
 y 25
 end
@@ -1147,10 +1189,6 @@ x 4
 y 34
 end
 arch brush
-x 4
-y 35
-end
-arch swall_2_1_2
 x 4
 y 35
 end
@@ -1248,9 +1286,18 @@ arch brush
 x 5
 y 15
 end
-arch tree5
+arch swall_1_3_half
 x 5
 y 15
+no_magic 1
+damned 1
+end
+arch lamppost
+name Lighted fence post
+x 5
+y 15
+glow_radius 5
+no_pass 1
 end
 arch stonefloor2
 x 5
@@ -1378,10 +1425,6 @@ arch brush
 x 5
 y 35
 end
-arch swall_2_1_2
-x 5
-y 35
-end
 arch brush
 x 5
 y 36
@@ -1427,6 +1470,8 @@ end
 arch swall_2_2_2
 x 6
 y 2
+no_magic 1
+damned 1
 end
 arch brush
 x 6
@@ -1482,6 +1527,8 @@ end
 arch swall_2_2_1
 x 6
 y 7
+no_magic 1
+damned 1
 end
 arch brush
 x 6
@@ -1627,16 +1674,9 @@ arch brush
 x 6
 y 35
 end
-arch swall_1_3_half
+arch tree5
 x 6
 y 35
-end
-arch lamppost
-name Lighted fence post
-x 6
-y 35
-glow_radius 5
-no_pass 1
 end
 arch brush
 x 6
@@ -1742,6 +1782,10 @@ x 7
 y 12
 end
 arch brush
+x 7
+y 13
+end
+arch tree5
 x 7
 y 13
 end
@@ -1864,6 +1908,10 @@ x 7
 y 35
 end
 arch brush
+x 7
+y 36
+end
+arch tree5
 x 7
 y 36
 end
@@ -2545,7 +2593,7 @@ arch shop_empty
 x 10
 y 24
 end
-arch flagstone_2_1_2
+arch flagstone_2_2_3
 x 10
 y 24
 end
@@ -2553,7 +2601,7 @@ arch shop_empty
 x 10
 y 25
 end
-arch flagstone_2_1_2
+arch flagstone_2_2_4
 x 10
 y 25
 end
@@ -2617,6 +2665,16 @@ NOT friendly.
 endmsg
 x 10
 y 33
+walk_on 1
+fly_on 1
+end
+arch magic_mouth
+msg
+This side of the shop gives you a feeling of intense danger.
+endmsg
+food 1
+x 10
+y 34
 end
 arch stonefloor2
 x 10
@@ -2696,6 +2754,12 @@ end
 arch brush
 x 11
 y 6
+end
+arch button_small
+x 11
+y 7
+invisible 1
+connected 3
 end
 arch brush
 x 11
@@ -2819,15 +2883,7 @@ arch shop_empty
 x 11
 y 24
 end
-arch flagstone_2_1_2
-x 11
-y 24
-end
 arch shop_empty
-x 11
-y 25
-end
-arch flagstone_2_1_2
 x 11
 y 25
 end
@@ -2888,6 +2944,14 @@ arch shop_mat
 x 11
 y 33
 end
+arch magic_mouth
+msg
+This side of the shop gives you a feeling of intense danger.
+endmsg
+food 1
+x 11
+y 34
+end
 arch button_small
 x 11
 y 34
@@ -2897,6 +2961,12 @@ end
 arch stonefloor2
 x 11
 y 34
+end
+arch button_small
+x 11
+y 35
+invisible 1
+connected 1
 end
 arch stonefloor2
 x 11
@@ -3092,15 +3162,7 @@ arch shop_empty
 x 12
 y 24
 end
-arch flagstone_2_1_2
-x 12
-y 24
-end
 arch shop_empty
-x 12
-y 25
-end
-arch flagstone_2_1_2
 x 12
 y 25
 end
@@ -3161,6 +3223,14 @@ arch stonefloor2
 x 12
 y 33
 end
+arch magic_mouth
+msg
+This side of the shop gives you a feeling of intense danger.
+endmsg
+food 1
+x 12
+y 34
+end
 arch button_small
 x 12
 y 34
@@ -3170,6 +3240,12 @@ end
 arch stonefloor2
 x 12
 y 34
+end
+arch button_small
+x 12
+y 35
+invisible 1
+connected 1
 end
 arch stonefloor2
 x 12
@@ -3383,7 +3459,7 @@ arch shop_empty
 x 13
 y 24
 end
-arch flagstone_2_1_2
+arch flagstone_2_2_2
 x 13
 y 24
 end
@@ -3391,7 +3467,7 @@ arch shop_empty
 x 13
 y 25
 end
-arch flagstone_2_1_2
+arch flagstone_2_2_1
 x 13
 y 25
 end
@@ -3447,6 +3523,14 @@ end
 arch menu
 x 13
 y 33
+end
+arch magic_mouth
+msg
+This side of the shop gives you a feeling of intense danger.
+endmsg
+food 1
+x 13
+y 34
 end
 arch stonefloor2
 x 13
@@ -4088,6 +4172,10 @@ arch brush
 x 16
 y 13
 end
+arch tree5
+x 16
+y 13
+end
 arch stonefloor2
 x 16
 y 14
@@ -4210,6 +4298,10 @@ arch brush
 x 16
 y 36
 end
+arch tree5
+x 16
+y 36
+end
 arch footpath_2_1_2
 x 16
 y 37
@@ -4241,16 +4333,18 @@ arch brush
 x 17
 y 2
 end
-arch lamppost
-name Lighted fence post
-x 17
-y 2
-glow_radius 5
-no_pass 1
-end
 arch swall_2_2_3
 x 17
 y 2
+no_magic 1
+damned 1
+end
+arch lamppost
+name Lighted fence post
+x 17
+y 2
+glow_radius 5
+no_pass 1
 end
 arch brush
 x 17
@@ -4302,6 +4396,8 @@ x 17
 y 7
 glow_radius 5
 no_pass 1
+no_magic 1
+damned 1
 end
 arch swall_2_2_4
 x 17
@@ -5085,6 +5181,10 @@ end
 arch cyclops
 name Orville
 title hyper cyclops
+msg
+@match *
+ROAR!
+endmsg
 dam 80
 wc -25
 ac -30
@@ -5105,6 +5205,10 @@ end
 arch cyclops
 name Wilbur
 title hyper cyclops
+msg
+@match *
+GRRRRRR!
+endmsg
 dam 80
 wc -25
 ac -30
