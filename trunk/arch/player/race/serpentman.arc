@@ -23,12 +23,12 @@ endmsg
 anim
 serpentman.111
 serpentman.112
-serpentman.171
-serpentman.172
-serpentman.151
-serpentman.152
 serpentman.131
 serpentman.132
+serpentman.151
+serpentman.152
+serpentman.171
+serpentman.172
 facings 4
 mina
 is_animated 0
