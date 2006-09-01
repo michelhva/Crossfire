@@ -1,6 +1,6 @@
 Object sorcerer_book
-name sorcerer's spellbook
-name_pl sorcerer's spellbooks
+name grimoire
+name_pl grimoires
 face sorcerer_book.111
 type 85
 skill literacy
@@ -17,8 +17,8 @@ end
 # Starting spellbooks for sorcers.
 #
 Object sorcerer_book_l1
-name sorcerer's spellbook
-name_pl sorcerer's spellbooks
+name grimoire
+name_pl grimoires
 face sorcerer_book.111
 type 85
 skill literacy

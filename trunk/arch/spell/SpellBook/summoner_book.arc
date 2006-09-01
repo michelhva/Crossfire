@@ -1,6 +1,6 @@
 Object summoner_book
-name summoner's spellbook
-name_pl summoner's spellbooks
+name codex
+name_pl codexes
 face summoner_book.111
 type 85
 skill literacy
@@ -15,8 +15,8 @@ randomitems summoner_book
 end
 #
 Object summoner_book_l1
-name summoners's spellbook
-name_pl summoners's spellbooks
+name codex
+name_pl codexes
 face summoner_book.111
 type 85
 skill literacy

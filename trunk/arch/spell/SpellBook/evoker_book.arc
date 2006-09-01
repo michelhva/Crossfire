@@ -1,6 +1,6 @@
 Object evoker_book
-name evoker's spellbook
-name_pl evoker's spellbooks
+name spellbook
+name_pl spellbooks
 face evoker_book.111
 type 85
 skill literacy
@@ -15,8 +15,8 @@ randomitems evocation_book
 end
 #
 Object evoker_book_l1
-name evoker's spellbook
-name_pl evoker's spellbooks
+name spellbook
+name_pl spellbooks
 face evoker_book.111
 type 85
 skill literacy
