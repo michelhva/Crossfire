@@ -1,6 +1,6 @@
 Object pyro_book
-name pyromancer's spellbook
-name_pl pyromancer's spellbooks
+name flametome
+name_pl flametomes
 face pyro_book.111
 type 85
 skill literacy
@@ -15,8 +15,8 @@ randomitems pyromancy_book
 end
 #
 Object pyro_book_l1
-name pyromancer's spellbook
-name_pl pyromancer's spellbooks
+name flametome
+name_pl flametomes
 face pyro_book.111
 type 85
 skill literacy
