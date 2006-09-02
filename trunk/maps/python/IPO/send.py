@@ -26,7 +26,7 @@ import string
 from time import localtime, strftime, time
 
 mail = CFMail.CFMail()
-date = strftime("%a, %d %b %Y %H:%M:%S CEST", localtime(time()))
+date = strftime("%a, %d %b %Y %H:%M:%S %Z", localtime(time()))
 activator = Crossfire.WhoIsActivator()
 activatorname = activator.Name
 whoami = Crossfire.WhoAmI()
