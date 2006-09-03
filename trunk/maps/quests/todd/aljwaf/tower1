@@ -1,23 +1,20 @@
 arch map
 name tower1
+difficulty 7
+width 13
+height 13
+enter_x 6
+enter_y 12
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/18/2002
 endmsg
-width 13
-height 13
-enter_x 6
-enter_y 12
-difficulty 7
 outdoor 1
 end
 arch pstone_1
 end
 arch pstone_1
-y 1
-end
-arch random_reading
 y 1
 end
 arch cobblestones
@@ -80,10 +77,13 @@ end
 arch pstone_1
 y 12
 end
-arch pstone_1
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
 x 1
 end
-arch random_reading
+arch pstone_1
 x 1
 end
 arch cobblestones
@@ -115,9 +115,9 @@ as the jewels.  What he was going to do with
 them, I cannot say...
 -Professor Ing
 endmsg
-level 6
 x 1
 y 3
+level 6
 end
 arch rock
 x 1
@@ -175,6 +175,12 @@ arch pstone_1
 x 1
 y 12
 end
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
+x 2
+end
 arch pstone_1
 x 2
 end
@@ -189,9 +195,9 @@ General Magic Construction 101
 Today we shall discuss the magical nature
 of certain gems and minerals...
 endmsg
-level 6
 x 2
 y 1
+level 6
 end
 arch rock
 x 2
@@ -201,11 +207,15 @@ arch cobblestones
 x 2
 y 2
 end
-arch rock
+arch random_reading
+x 2
+y 2
+end
+arch cobblestones
 x 2
 y 3
 end
-arch cobblestones
+arch rock
 x 2
 y 3
 end
@@ -213,9 +223,9 @@ arch trap_rocks
 msg
 You set off some falling rocks!
 endmsg
-level 5
 x 2
 y 3
+level 5
 end
 arch cobblestones
 x 2
@@ -268,6 +278,12 @@ end
 arch bwall_2_2_1
 x 2
 y 12
+end
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
+x 3
 end
 arch pstone_1
 x 3
@@ -324,9 +340,9 @@ arch trap_rocks
 msg
 You set off some falling rocks!
 endmsg
-level 5
 x 3
 y 9
+level 5
 end
 arch cobblestones
 x 3
@@ -386,9 +402,9 @@ arch trap_rocks
 msg
 You set off some falling rocks!
 endmsg
-level 5
 x 4
 y 6
+level 5
 end
 arch cobblestones
 x 4
@@ -504,11 +520,11 @@ y 1
 end
 arch skeletalmage
 name student
-randomitems none
-attack_movement 1
-resist_fire 80
 x 6
 y 1
+attack_movement 1
+resist_fire 80
+randomitems none
 arch spell_sm_lightning
 level 6
 end
@@ -527,19 +543,19 @@ y 4
 end
 arch skeletalmage
 name Professor Ing
-randomitems none
-level 8
-exp 1000
-dam 10
 hp 180
 maxhp 180
-ac 0
 sp 30
 maxsp 30
-attack_movement 1
-resist_fire 80
+exp 1000
+dam 10
+ac 0
 x 6
 y 4
+attack_movement 1
+level 8
+resist_fire 80
+randomitems none
 arch abil_create_fire_wall
 end
 arch spell_mass_confusion
@@ -741,13 +757,17 @@ arch cobblestones
 x 9
 y 1
 end
-arch skeletalmage
-name student
-randomitems none
-attack_movement 1
-resist_fire 80
+arch random_reading
 x 9
 y 1
+end
+arch skeletalmage
+name student
+x 9
+y 1
+attack_movement 1
+resist_fire 80
+randomitems none
 arch spell_sm_lightning
 level 6
 end
@@ -932,9 +952,9 @@ arch trap_rocks
 msg
 You set off some falling rocks!
 endmsg
-level 5
 x 11
 y 7
+level 5
 end
 arch pstone_1
 x 11
@@ -1007,13 +1027,34 @@ arch bwall_1_2
 x 12
 y 5
 end
-arch pstone_1
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
 x 12
 y 6
 end
 arch pstone_1
 x 12
+y 6
+end
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
+x 12
 y 7
+end
+arch pstone_1
+x 12
+y 7
+end
+arch invis_exit
+slaying /world/world_119_116
+hp 31
+sp 37
+x 12
+y 8
 end
 arch pstone_1
 x 12
