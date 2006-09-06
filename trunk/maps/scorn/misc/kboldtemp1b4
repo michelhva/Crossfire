@@ -1944,11 +1944,11 @@ arch dirtfloor
 x 14
 y 1
 end
-arch silvercoin
+arch altar_valkyrie
 x 14
 y 1
 end
-arch kobold
+arch giant
 exp 0
 
 x 14
@@ -1958,33 +1958,27 @@ arch dirtfloor
 x 14
 y 2
 end
-arch silvercoin
-x 14
-y 2
-end
-arch kobold
-exp 0
-
-x 14
-y 2
-end
 arch dirtfloor
 x 14
 y 3
 end
-arch silvercoin
-x 14
-y 3
-end
-arch kobold
-exp 0
-
+arch door_2
 x 14
 y 3
 end
 arch dirtfloor
 x 14
 y 4
+end
+arch magic_mouth
+x 14
+y 4
+msg
+You hear angry noises behind the door.
+Whatever is in there, sounds more dangerous
+than a kobold.  You wonder if you should
+just leave it alone.
+endmsg
 end
 arch kobold
 exp 0
