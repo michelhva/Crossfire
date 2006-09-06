@@ -1913,6 +1913,7 @@ arch platinum_converter2
 name convert jade into platinum
 slaying jadecoin
 other_arch platinacoin
+sp 100
 food 1
 x 12
 y 12
@@ -2258,6 +2259,7 @@ arch jade_converter
 name convert amberium into jade
 slaying ambercoin
 other_arch jadecoin
+sp 100
 food 1
 x 14
 y 12
