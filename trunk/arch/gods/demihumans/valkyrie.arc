@@ -1,11 +1,12 @@
 # demihumans -- warrior goddess Valkyrie
 Object Valkyrie
-title Byd
+#title Byd
 type 50
 slaying unnatural,angel,demon,undead
 # FIXME
 face knight.111
 animation knight
+race human,troll
 monster 1
 alive 1
 # godpower, physical
