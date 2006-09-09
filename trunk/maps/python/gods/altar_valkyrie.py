@@ -14,35 +14,44 @@ if praying and praying.Title == 'Valkyrie':
     obj = altar.Above
     while obj:
         if obj.Type & 0xffff == t.FLESH:
-            factor = 0
+            level_factor = 0
+            part_factor = 1
+
             if obj.Level < praying.Level / 2:
                 pl.Write('Valkyrie scorns your pathetic sacrifice!')
             elif obj.Level < praying.Level:
                 accept('poor')
-                factor = 0.5
+                level_factor = 0.5
             elif obj.Level < praying.Level * 1.5:
                 accept('modest')
-                factor = 1
+                level_factor = 1
             elif obj.Level < praying.Level * 2:
                 accept('adequate')
-                factor = 1.5
+                level_factor = 1.5
             elif obj.Level < praying.Level * 5:
                 accept('devout')
-                factor = 2
+                level_factor = 2
             else:
                 accept('heroic')
-                factor = 2.5
+                level_factor = 2.5
 
             # heads and hearts are worth more.  Because.
             if obj.Name.endswith('head') or obj.Name.endswith('heart'):
-                factor *= 1.5
+                part_factor = 1.5
 
-            # flesh with lots of resists is worth more
-            res = 0
-            for at in range(26):  # XXX should be NROFATTACKS
-                res += obj.GetResist(at)
+            if obj.Exp:
+                # obj has stored exp, use it
+                value = obj.Exp / 5 * part_factor
 
-            value = max(res, 10) * factor
+            else:
+                # no stored exp, estimate
+                # flesh with lots of resists is worth more
+                res = 0
+                for at in range(26):  # XXX should be NROFATTACKS
+                    res += obj.GetResist(at)
+
+                value = max(res, 10) * level_factor * part_factor
+
             if obj.Quantity > 1:
                 obj.Quantity -= 1
             else:
