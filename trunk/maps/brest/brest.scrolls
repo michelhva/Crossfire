@@ -1,5 +1,6 @@
 arch map
 name brest.scrolls
+difficulty 50
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:-50;*:-100
 shopgreed 0.95
@@ -5177,6 +5178,9 @@ arch skill_praying
 end
 arch skill_meditation
 end
+arch gem
+nrof 750
+end
 end
 arch cyclops
 name Orville
@@ -5201,6 +5205,9 @@ resist_deplete 50
 resist_death 50
 resist_blind 50
 can_see_in_dark 1
+arch gem
+nrof 200
+end
 end
 arch cyclops
 name Wilbur
@@ -5225,4 +5232,7 @@ resist_deplete 50
 resist_death 50
 resist_blind 50
 can_see_in_dark 1
+arch gem
+nrof 200
+end
 end
