@@ -1,16 +1,18 @@
 arch map
-region lakecountry
 name clems_archery
+difficulty 35
+region lakecountry
 shopitems arrow:60;bow:65;*:-100
 shopmin 1
 shopmax 100000
 shoprace human
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 23 03:02:55 1995
 endmsg
-difficulty 25
 end
 arch shop_empty
 end
@@ -423,10 +425,10 @@ display box are some of the equipment
 I used..
 endmsg
 face warrior.131
-is_animated 0
 hp 500
 x 4
 y 7
+is_animated 0
 friendly 1
 unaggressive 0
 no_pretext 1
@@ -476,10 +478,6 @@ end
 arch shop_throw
 x 5
 y 1
-end
-arch wall_2_2_2
-x 5
-y 2
 end
 arch shop_empty
 x 5
