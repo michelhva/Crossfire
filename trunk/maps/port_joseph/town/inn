@@ -1,13 +1,13 @@
 arch map
-region portjoseph
 name Inn
+region portjoseph
+width 20
+height 13
 msg
 Creator: langley
 Email: llangley@fermat.dartmouth.edu
 Date: Wed May 11 21:43:34 1994
 endmsg
-x 20
-y 13
 end
 arch afloor_right
 end
@@ -791,6 +791,11 @@ name fountain
 x 9
 y 5
 end
+arch sea
+name fountain
+x 9
+y 6
+end
 arch statue
 x 9
 y 6
@@ -874,6 +879,11 @@ arch sea
 name fountain
 x 10
 y 5
+end
+arch sea
+name fountain
+x 10
+y 6
 end
 arch statue
 x 10
