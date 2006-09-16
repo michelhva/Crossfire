@@ -14,4 +14,5 @@ no_drop 1
 invisible 1
 duration 100
 duration_modifier 5
+dam_modifier 1
 end

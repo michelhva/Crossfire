@@ -4,10 +4,10 @@ race gold and jewels
 face nugget_sma.111
 color_fg orange
 nrof 1
-type 73
+type 60
 material 2
 materialname gold
-value 10
+value 40
 weight 20
 editable 2048
 name_pl small gold nuggets
