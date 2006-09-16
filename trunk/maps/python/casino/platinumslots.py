@@ -50,7 +50,7 @@ if (activator.PayAmount(cost*50)):#platinumcoin
             pay = 10
          elif item == "King":
             pay = 20
-	 elif item == "Jackpot":
+	 elif item == "JackPot":
             pay = 25
          else:
 	    break

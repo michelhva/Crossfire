@@ -53,7 +53,7 @@ if (object):
                 pay = 6
              elif item == "Emperor":
                 pay = 10
-             elif item == "Jackpot":
+             elif item == "JackPot":
                 pay = 20
              else:
                 break
