@@ -21,6 +21,11 @@ cost = 1 #Price of usage
 #Change the items on the slot spinner or the number of items.
 slotlist = ["Merchant", "Coin", "Diamond", "Imp", "Devil", "JackPot"]
 
+#Pay for minor and major wins.
+#Major as percent of pot. Minor as how many times cost.
+slotminor = [1, 2, 4, 5, 10, 20]
+slotmajor = [.10, .15, .20, .30, .5, 1]
+
 spinners = 4 #How many spinners on the slotmachine?
 
 
@@ -35,20 +40,10 @@ if (activator.PayAmount(cost)):#silvercoin
    for item in results:
       #match all but one - pays out by coin e.g 3 to 1 or 4 to 1
       if results.count(item) == spinners-1:
-	 if item == "Merchant":
-            pay = 1
-         elif item == "Coin":
-            pay = 2
-         elif item == "Diamond":
-            pay = 4
-         elif item == "Imp":
-            pay = 5
-         elif item == "Devil":
-            pay = 10
-         elif item == "JackPot":
-            pay = 20
+         if item in slotlist:
+            pay = slotminor[slotlist.index(item)]
          else:
-	    break
+            break
 	 activator.Write("%d %ss, a minor win!" %(spinners-1,item))
          payoff = cost*pay
          Slots.payoff(payoff)
@@ -62,18 +57,10 @@ if (activator.PayAmount(cost)):#silvercoin
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
          activator.Write('%d %ss, a Major win!' %(spinners,item))
-         if item == "Merchant":
-            pay = .10
-         elif item == "Coin":
-            pay = .15
-         elif item == "Diamond":
-            pay = .20
-         elif item == "Imp":
-            pay = .30
-         elif item == "Devil":
-            pay = .50
-         elif item == "JackPot":
-            pay = 1
+         if item in slotlist:
+            pay = slotmajor[slotlist.index(item)]
+         else:
+            break
          payoff = pot*pay
          Slots.payoff(payoff)
          id = activator.Map.CreateObject(cointype, x, y)
