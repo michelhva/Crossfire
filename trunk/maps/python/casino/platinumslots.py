@@ -22,6 +22,11 @@ cost = 1 #Price of usage
 #Change the items on the slot spinner or the number of items.
 slotlist = ["Jester", "Lord", "Lady", "Prince", "Princess", "King", "Queen", "JackPot"]
 
+#Pay for minor and major wins.
+#Major as percent of pot. Minor as how many times cost
+slotminor = [1, 2, 3, 4, 5, 10, 20, 25]
+slotmajor = [.1, .15, .25, .3, .4, .5, .6, 1]
+
 spinners = 4 #How many spinners on the slotmachine?
 
 
@@ -36,24 +41,10 @@ if (activator.PayAmount(cost*50)):#platinumcoin
    for item in results:
       #match all but one - pays out by coin e.g 3 to 1 or 4 to 1
       if results.count(item) == spinners-1:
-         if item == "Jester":
-            pay = 1
-         elif item == "Lord":
-            pay = 2
-         elif item == "Lady":
-            pay = 3
-         elif item == "Prince":
-            pay = 4
-         elif item == "Princess":
-            pay = 5
-         elif item == "Queen":
-            pay = 10
-         elif item == "King":
-            pay = 20
-	 elif item == "JackPot":
-            pay = 25
+         if item in slotlist:
+            pay = slotminor[slotlist.index(item)]
          else:
-	    break
+            break
 	 activator.Write("%d %ss, a minor win!" %(spinners-1,item))
          payoff = cost*pay
          Slots.payoff(payoff)
@@ -67,22 +58,10 @@ if (activator.PayAmount(cost*50)):#platinumcoin
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
          activator.Write('%d %ss, a Major win!' %(spinners,item))
-         if item == "Jester":
-            pay = .1
-         elif item == "Lord":
-            pay = .15
-         elif item == "Lady":
-            pay = .25
-         elif item == "Prince":
-            pay = .3
-         elif item == "Princess":
-            pay = .4
-         elif item == "Queen":
-            pay = .5
-         elif item == "King":
-            pay = .6
-	 elif item == "JackPot":
-            pay = 1
+         if item in slotlist:
+            pay = slotmajor[slotlist.index(item)]
+         else:
+            break
          payoff = pot*pay
          Slots.payoff(payoff)
          id = activator.Map.CreateObject(cointype, x, y)
