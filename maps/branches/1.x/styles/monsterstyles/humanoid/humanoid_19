@@ -1,0 +1,92 @@
+arch map
+width 6
+height 6
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Tue Dec 22 20:37:46 1998
+endmsg
+end
+arch cyclops
+end
+arch titan
+x 1
+y 4
+end
+arch big_wiz
+x 3
+end
+arch titan
+name Grand Titan
+Con 40
+Pow 35
+hp 8000
+maxhp 8000
+dam 25
+x 4
+y 4
+speed -0.4
+level 30
+carrying 150000
+randomitems zombie
+can_use_skill 1
+arch bonecrusher
+name Smasher
+Str 5
+dam 70
+attacktype 256
+material 256
+value 700000
+weight 70000
+magic 6
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+arch spell_large_lightning
+end
+arch spell_paralyze
+end
+arch abil_slow
+end
+arch skill_missile_weapon
+end
+arch plate_mail
+applied 1
+end
+arch b_full_helmet
+applied 1
+end
+arch gauntlets
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch compositebow
+end
+arch arrow
+nrof 300
+end
+arch corpse
+weight 750000
+end
+arch abil_fear
+end
+arch spell_sm_lightning
+end
+arch skill_sorcery
+end
+arch skill_pyromancy
+end
+arch skill_evocation
+end
+arch skill_summoning
+end
+arch skill_use_magic_item
+end
+arch skill_punching
+end
+end
