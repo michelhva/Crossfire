@@ -1430,14 +1430,14 @@ some people gave our city because for a
 long time no travellers came here. They just
 didn't pass the test and died.
 @match quest
-I know lots about quests. But i wont tell
-you what i know. The only hint I'll give is: in
+I know lots about quests. But I won't tell
+you what I know. The only hint I'll give is: in
 the southern part of my city you can find a
 large quest.
 @match *
 Did you notice the large number of guards?
-They do protect me, so do not even cosider
-to attack me. They surely will kill you.
+They do protect me, so do not even consider
+attacking me. They surely will kill you.
 endmsg
 reflect_missile 1
 can_cast_spell 0
@@ -1496,7 +1496,7 @@ arch magic_mouth
 msg
 One of the knights whispers to you:
 Never attack the Guards of the
-ancient mages. You wont live long...
+ancient mages. You won't live long...
 endmsg
 x 8
 y 5
@@ -1663,7 +1663,7 @@ arch magic_mouth
 msg
 One of the knights whispers to you:
 Never attack the Guards of the
-ancient mages. You wont live long...
+ancient mages. You won't live long...
 endmsg
 x 9
 y 5
