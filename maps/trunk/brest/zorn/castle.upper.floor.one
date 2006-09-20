@@ -3016,11 +3016,6 @@ arch brush
 x 9
 y 7
 end
-arch tree5
-name ornamental pine
-x 9
-y 7
-end
 arch cobblestones2
 x 9
 y 8
@@ -3091,6 +3086,25 @@ end
 arch skill_one_handed_weapon
 end
 end
+arch trap
+name fireball trap
+dam 1
+x 9
+y 10
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 9
+y 10
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 9
 y 10
@@ -3134,6 +3148,25 @@ end
 arch cobblestones2
 x 9
 y 20
+end
+arch trap
+name fireball trap
+dam 1
+x 9
+y 21
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 9
+y 21
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 9
@@ -3187,6 +3220,25 @@ arch cobblestones2
 x 9
 y 33
 end
+arch trap
+name fireball trap
+dam 1
+x 9
+y 34
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 9
+y 34
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 9
 y 34
@@ -3198,6 +3250,25 @@ end
 arch cobblestones2
 x 9
 y 36
+end
+arch trap
+name fireball trap
+dam 1
+x 9
+y 37
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 9
+y 37
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 9
@@ -3218,6 +3289,25 @@ end
 arch cobblestones2
 x 9
 y 41
+end
+arch trap
+name fireball trap
+dam 1
+x 9
+y 42
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 9
+y 42
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 9
@@ -3416,6 +3506,25 @@ end
 arch cwall_2_1_2
 x 10
 y 8
+end
+arch trap
+name fireball trap
+dam 1
+x 10
+y 9
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 10
+y 9
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 10
@@ -3925,6 +4034,17 @@ arch dwall_1_3
 x 11
 y 12
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 11
+y 13
+level 50
+connected 100
+lifesave 1
+end
 arch cobblestones
 x 11
 y 13
@@ -4205,6 +4325,25 @@ arch dwall_2_1_2
 x 11
 y 47
 end
+arch trap
+name fireball trap
+dam 1
+x 11
+y 48
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 11
+y 48
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 11
 y 48
@@ -4391,6 +4530,17 @@ arch dwall_2_1_2
 x 12
 y 10
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 12
+y 11
+level 50
+connected 100
+lifesave 1
+end
 arch trap
 x 12
 y 11
@@ -4399,6 +4549,17 @@ end
 arch stonefloor2
 x 12
 y 11
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 12
+y 12
+level 50
+connected 100
+lifesave 1
 end
 arch trap
 x 12
@@ -4415,6 +4576,17 @@ y 12
 blocksview 1
 cursed 1
 damned 1
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 12
+y 13
+level 50
+connected 100
+lifesave 1
 end
 arch cobblestones
 x 12
@@ -4795,6 +4967,17 @@ arch dwall_2_1_2
 x 13
 y 10
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 13
+y 11
+level 50
+connected 100
+lifesave 1
+end
 arch cobblestones
 x 13
 y 11
@@ -4815,6 +4998,17 @@ arch dwall_1_4
 x 13
 y 12
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 13
+y 13
+level 50
+connected 100
+lifesave 1
+end
 arch stonefloor2
 x 13
 y 13
@@ -4833,7 +5027,7 @@ y 16
 end
 arch bookshelf
 name Personal Bookshelf
-name_pl Zorn Library Shelves
+name_pl Personal Bookshelves
 x 13
 y 16
 no_pick 1
@@ -4941,6 +5135,25 @@ end
 arch cobblestones2
 x 13
 y 28
+end
+arch trap
+name fireball trap
+dam 1
+x 13
+y 29
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 13
+y 29
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 13
@@ -6212,6 +6425,25 @@ end
 arch dwall_3_1
 x 16
 y 27
+end
+arch trap
+name fireball trap
+dam 1
+x 16
+y 28
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 16
+y 28
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 16
@@ -11672,6 +11904,25 @@ arch dwall_2_2_4
 x 27
 y 27
 end
+arch trap
+name fireball trap
+dam 1
+x 27
+y 28
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 27
+y 28
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 27
 y 28
@@ -11795,6 +12046,25 @@ end
 arch cobblestones2
 x 27
 y 46
+end
+arch trap
+name fireball trap
+dam 1
+x 27
+y 47
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 27
+y 47
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 27
@@ -12026,6 +12296,25 @@ end
 arch brazier
 x 28
 y 9
+end
+arch trap
+name fireball trap
+dam 1
+x 28
+y 10
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 28
+y 10
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 28
@@ -13335,6 +13624,25 @@ arch altar_none
 x 29
 y 9
 end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 10
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 10
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 29
 y 10
@@ -13363,6 +13671,25 @@ arch cobblestones2
 x 29
 y 14
 end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 15
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 15
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 29
 y 15
@@ -13374,6 +13701,25 @@ end
 arch cobblestones2
 x 29
 y 17
+end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 18
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 18
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 29
@@ -13403,6 +13749,25 @@ arch cobblestones2
 x 29
 y 24
 end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 25
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 25
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 29
 y 25
@@ -13418,6 +13783,25 @@ end
 arch cobblestones2
 x 29
 y 28
+end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 29
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 29
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 29
@@ -13447,6 +13831,25 @@ arch cobblestones2
 x 29
 y 35
 end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 36
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 36
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 29
 y 36
@@ -13470,6 +13873,25 @@ end
 arch cobblestones2
 x 29
 y 41
+end
+arch trap
+name fireball trap
+dam 1
+x 29
+y 42
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 29
+y 42
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 29
@@ -13691,6 +14113,25 @@ arch brazier
 x 30
 y 9
 end
+arch trap
+name fireball trap
+dam 1
+x 30
+y 10
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 30
+y 10
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 30
 y 10
@@ -14786,6 +15227,25 @@ end
 arch cobblestones2
 x 30
 y 43
+end
+arch trap
+name fireball trap
+dam 1
+x 30
+y 44
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 30
+y 44
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 30
@@ -16756,6 +17216,25 @@ arch dwall_2_1_2
 x 34
 y 27
 end
+arch trap
+name fireball trap
+dam 1
+x 34
+y 28
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 34
+y 28
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 34
 y 28
@@ -17053,6 +17532,25 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
+end
+arch trap
+name fireball trap
+dam 1
+x 34
+y 48
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 34
+y 48
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 34
@@ -20506,6 +21004,25 @@ arch dwall_3_1
 x 42
 y 27
 end
+arch trap
+name fireball trap
+dam 1
+x 42
+y 28
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 42
+y 28
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 42
 y 28
@@ -22457,6 +22974,25 @@ end
 arch skill_one_handed_weapon
 end
 end
+arch trap
+name fireball trap
+dam 1
+x 47
+y 29
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 47
+y 29
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 47
 y 29
@@ -22754,6 +23290,25 @@ end
 arch cwall_2_1_2
 x 48
 y 8
+end
+arch trap
+name fireball trap
+dam 1
+x 48
+y 9
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 48
+y 9
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 48
@@ -23270,6 +23825,25 @@ end
 arch skill_one_handed_weapon
 end
 end
+arch trap
+name fireball trap
+dam 1
+x 49
+y 10
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 49
+y 10
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 49
 y 10
@@ -23298,6 +23872,25 @@ arch cobblestones2
 x 49
 y 16
 end
+arch trap
+name fireball trap
+dam 1
+x 49
+y 17
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 49
+y 17
+level 10
+connected 200
+lifesave 1
+end
 arch cobblestones2
 x 49
 y 17
@@ -23317,6 +23910,25 @@ end
 arch cobblestones2
 x 49
 y 21
+end
+arch trap
+name fireball trap
+dam 1
+x 49
+y 22
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 49
+y 22
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 49
@@ -23421,6 +24033,25 @@ end
 arch cobblestones2
 x 49
 y 47
+end
+arch trap
+name fireball trap
+dam 1
+x 49
+y 48
+level 50
+connected 200
+end
+arch creator
+name fireball creator
+slaying fireball
+other_arch fireball
+hp 0
+x 49
+y 48
+level 10
+connected 200
+lifesave 1
 end
 arch cobblestones2
 x 49
