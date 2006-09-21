@@ -353,7 +353,7 @@ name Scorn board
 end
 msg
 I am a talking board, please say something to me.
-If you don't know what to say, say help.
+If you don't know what to say, try help.
 endmsg
 x 4
 y 7
@@ -578,13 +578,13 @@ Imperial Post Services
 -----------------------
 Thank you for choosing the IPS to
 take care of your messages. Want to
-get more ? We have a wide range of
+get more? We have a wide range of
 products and services to offer to
-anyone. Pirate ? Try  our
-TalkParrots(tm) ! Beholder ? Enjoy
-our fabulous non-stereoscopical cards
-! And don't forget:
-The Empire Is Everywhere For You
+anyone. Pirate? Try our
+TalkParrots(tm)! Beholder? Enjoy
+our fabulous non-stereoscopical
+cards! And don't forget:
+The Empire Is Everywhere For You!
 endmsg
 x 7
 y 7
@@ -600,14 +600,14 @@ Sending Mail
 -----------------------
 Get a pencil and be sure that you are
 able to use the literacy skill. You can
-get both at the office, ask Colette for
+get both at the office; ask Colette for
 help.
-Get a preaddressed mailscroll, mark it
-and write on it with:
+Get a pre-addressed mailscroll, mark it
+and write on it with the command:
 use_skill inscription <text>
-You can write multiple lines, when done
-drop the scroll in the mailbox and it
-will be send.
+Multiple lines of text may be written.
+When done, drop the scroll in the
+mailbox and it will be sent.
 endmsg
 x 7
 y 7
