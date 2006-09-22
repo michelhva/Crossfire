@@ -560,14 +560,14 @@ Sending Mail
 -----------------------
 Get a pencil and be sure that you are
 able to use the literacy skill. You can
-get both at the office, ask Betty-Lou for
+get both at the office; ask Betty-Lou for
 help.
-Get a preaddressed mailscroll, mark it
-and write on it with:
+Get a pre-addressed mailscroll, mark it
+and write on it with the command:
 use_skill inscription <text>
-You can write multiple lines, when done
-drop the scroll in the mailbox and it
-will be send.
+Multiple lines of text may be written.
+When done, drop the scroll in the
+mailbox and it will be sent.
 endmsg
 x 8
 y 7
