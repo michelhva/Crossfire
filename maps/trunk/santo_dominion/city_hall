@@ -533,7 +533,7 @@ y 14
 end
 arch statue
 msg
-This guy was way  better than that other guy.
+This guy was way better than that other guy.
 endmsg
 x 3
 y 14
@@ -813,7 +813,7 @@ name Santo Dominion Board
 end
 msg
 I am a talking board, please say something to me.
-If you don't know what to say, say help.
+If you don't know what to say, try help.
 endmsg
 x 6
 y 13
@@ -1645,14 +1645,14 @@ Sending Mail
 -----------------------
 Get a pencil and be sure that you are
 able to use the literacy skill. You can
-get both at the office, ask Betina for
+get both at the office; ask Betina for
 help.
-Get a preaddressed mailscroll, mark it
-and write on it with:
+Get a pre-addressed mailscroll, mark it
+and write on it with the command:
 use_skill inscription <text>
-You can write multiple lines, when done
-drop the scroll in the mailbox and it
-will be send.
+Multiple lines of text may be written.
+When done, drop the scroll in the
+mailbox and it will be sent.
 endmsg
 x 14
 y 1
@@ -1741,7 +1741,7 @@ name Petitions board
 end
 msg
 I am a talking board, designed for leaving messages for the DMs.
-If you don't know what to say, say help.
+If you don't know what to say, try help.
 endmsg
 x 14
 y 13
