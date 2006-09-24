@@ -61,8 +61,8 @@ thanks_message = [ \
 
 if text[0] == 'help' or text[0] == 'yes':
 	message ='You can:\n-deposit,-withdraw,-balance,-exchange \
-		\nAll transactions are in imperial notes\n(1 : 1000 gold coins). \
-		\nA service charge of %d percent will be placed on all deposits.' \
+\nAll transactions are in imperial notes\n(1 : 1000 gold coins). \
+\nA service charge of %d percent will be placed on all deposits.' \
 		%(service_charge)
 
 
