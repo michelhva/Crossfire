@@ -238,9 +238,9 @@ name Trapdoors
 msg
 Objects falling in a trapdoor only
 appear somewhere nearby the requested
-spot. However the destination can be
+spot, however the destination can be
 constrained with walls, and could be
-hidden teleport (see below) for 
+a hidden teleport (see below) for 
 an exact 'port to the final location.
 ---
 WARNING: This is broken in v95.1
@@ -255,8 +255,8 @@ A teleport can move players to
 different maps like exits, but can also
 teleport objects and items to a
 specific spot. The speed of the
-teleport can also be set, allowing for
-a delay in the objects teleport!
+teleport can be set, allowing for
+a delay in the object's teleport!
 (See Teleport Cascade below!)
 endmsg
 x 4
@@ -309,19 +309,20 @@ arch sign
 name Teleport Cascade
 msg
 Teleports can also be used as a flip
-flops or cascades! The time in each
-location can be controled to a degree
-(watch carfully below when active -
-especially how the midle one can vary)
+flop or in a cascade! The time in each
+location may be controlled to a degree
+(watch carefully below when active -
+especially how the middle one can vary)
 and buttons underneath can generate
 secondary actions. Also the teleports
-themselves fences are NOT needed!
+may be used by themselves - fences are
+NOT needed!
 --
-However unless the last teleport in a
-sequence is to something else, the
-sequence can not be easilly stopped!
-Such as the handle connected spikes
-to the left. A button under initial
+Unless the last teleport in a sequence
+connects to something else, the process
+cannot be easily stopped! An example
+is the handle connected spikes to the
+left. The button under the initial
 teleport resets the spikes after it is
 started.
 --
@@ -439,7 +440,7 @@ arch sign_e
 name Inverted Trigger Gate!
 msg
 Inverted Trigger Gate...
-This uses a boudler to effectivally
+This uses a boulder to effectively
 invert a trigger gate.
 -
 The trigger handle triggers the
@@ -447,7 +448,7 @@ trigger gate inside the enclosure.
 The boulder then rolls automatically
 off the normally up spikes onto the
 trigger gate. The button under the gate
-lowers then lowers the spikes and rasies
+depresses then lowers the spikes and raises
 the `inverted trigger gate' to the left.
 When enclosed trigger gate resets, the
 boulder moves back and the whole thing
@@ -472,9 +473,9 @@ asymmetric behaviour.
 --
 Because trigger gates are normally
 up by default the flip flop also
-requires to be initialised. If you
+needs to be initialized. If you
 just want to have the flip flop run
-continuously then no initialisation
+continuously then no initialization
 should be required
 endmsg
 x 8
@@ -500,11 +501,11 @@ arch sign_e
 name A Faster, Slow Flip Flop
 msg
 A Faster, Slow Flip Flop...
-This is simular to the above flip flop
+This is similar to the above flip flop
 but simpler, a little faster, but
 asymmetic in positions. EG: one side
 has the boulder for a much longer
-peiod than the other
+period than the other.
 endmsg
 x 8
 y 9
