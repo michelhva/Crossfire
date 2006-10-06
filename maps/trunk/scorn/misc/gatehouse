@@ -1,6 +1,9 @@
 arch map
-region scorn
 name gatehouse
+region scorn
+width 28
+height 14
+enter_y 7
 msg
 Creator: ??
 Email: ??
@@ -9,9 +12,6 @@ Modified: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 28 17:02:35 1998
 endmsg
-width 28
-height 14
-enter_y 7
 outdoor 1
 end
 arch flagstone
@@ -32,18 +32,18 @@ arch exit
 slaying /world/world_105_115
 hp 19
 sp 37
+y 5
 invisible 1
+end
+arch cobblestones2
 y 5
 end
-arch cobblestones2
-y 5
-end
 arch exit
 slaying /world/world_105_115
 hp 19
 sp 37
-invisible 1
 y 6
+invisible 1
 end
 arch cobblestones2
 y 6
@@ -52,8 +52,8 @@ arch exit
 slaying /world/world_105_115
 hp 19
 sp 37
-invisible 1
 y 7
+invisible 1
 end
 arch cobblestones2
 y 7
@@ -62,8 +62,8 @@ arch exit
 slaying /world/world_105_115
 hp 19
 sp 37
-invisible 1
 y 8
+invisible 1
 end
 arch cobblestones2
 y 8
@@ -185,10 +185,10 @@ Do you want to be thrown in JAIL?
 Good to see a friend!
 Have you seen any monsters lately?
 endmsg
-friendly 1
-unaggressive 0
 x 2
 y 4
+friendly 1
+unaggressive 0
 end
 arch cobblestones2
 x 2
@@ -196,15 +196,15 @@ y 5
 end
 arch check_floor
 slaying gate_pass
-connected 13
 x 2
 y 5
+connected 13
 end
 arch check_floor
 slaying hero_of_scorn
-connected 14
 x 2
 y 5
+connected 14
 end
 arch cobblestones2
 x 2
@@ -212,15 +212,15 @@ y 6
 end
 arch check_floor
 slaying gate_pass
-connected 13
 x 2
 y 6
+connected 13
 end
 arch check_floor
 slaying hero_of_scorn
-connected 14
 x 2
 y 6
+connected 14
 end
 arch cobblestones2
 x 2
@@ -228,15 +228,15 @@ y 7
 end
 arch check_floor
 slaying gate_pass
-connected 13
 x 2
 y 7
+connected 13
 end
 arch check_floor
 slaying hero_of_scorn
-connected 14
 x 2
 y 7
+connected 14
 end
 arch cobblestones2
 x 2
@@ -244,15 +244,15 @@ y 8
 end
 arch check_floor
 slaying gate_pass
-connected 13
 x 2
 y 8
+connected 13
 end
 arch check_floor
 slaying hero_of_scorn
-connected 14
 x 2
 y 8
+connected 14
 end
 arch magic_ear
 msg
@@ -260,9 +260,9 @@ msg
 Well, you know the password,
 so you must be ok.   Pass Friend.
 endmsg
-connected 12
 x 2
 y 8
+connected 12
 end
 arch flagstone
 x 2
@@ -328,40 +328,40 @@ x 3
 y 5
 end
 arch grate_closed_2
-speed 0.500000
-connected 10
 x 3
 y 5
+speed 0.500000
+connected 10
 end
 arch cobblestones2
 x 3
 y 6
 end
 arch grate_closed_2
-speed 0.500000
-connected 10
 x 3
 y 6
+speed 0.500000
+connected 10
 end
 arch cobblestones2
 x 3
 y 7
 end
 arch grate_closed_2
-speed 0.500000
-connected 10
 x 3
 y 7
+speed 0.500000
+connected 10
 end
 arch cobblestones2
 x 3
 y 8
 end
 arch grate_closed_2
-speed 0.500000
-connected 10
 x 3
 y 8
+speed 0.500000
+connected 10
 end
 arch flagstone
 x 3
@@ -470,10 +470,10 @@ Do you want to be thrown in JAIL?
 Good to see a friend!
 Have you seen any monsters lately?
 endmsg
-friendly 1
-unaggressive 0
 x 4
 y 8
+friendly 1
+unaggressive 0
 end
 arch cobblestones
 x 4
@@ -559,9 +559,9 @@ x 5
 y 8
 end
 arch trigger
-connected 11
 x 5
 y 8
+connected 11
 end
 arch cobblestones
 x 5
@@ -752,12 +752,12 @@ arch dungeon_magic
 x 8
 end
 arch button_small
-connected 10
 x 8
+connected 10
 end
 arch gateTrg1
-connected 13
 x 8
+connected 13
 end
 arch dungeon_magic
 x 8
@@ -848,28 +848,28 @@ x 8
 y 13
 end
 arch button_small
-connected 10
 x 8
 y 13
+connected 10
 end
 arch gateTrg1
-connected 11
 x 8
 y 13
+connected 11
 end
 arch dungeon_magic
 x 9
 end
 arch button_small
 face button_sma.112
+x 9
 value 1
 connected 16
-x 9
 end
 arch spikes_open
+x 9
 speed 0.500000
 connected 16
-x 9
 end
 arch boulder
 x 9
@@ -971,16 +971,16 @@ y 13
 end
 arch button_small
 face button_sma.112
+x 9
+y 13
 value 1
 connected 15
-x 9
-y 13
 end
 arch spikes_open
-speed 0.500000
-connected 15
 x 9
 y 13
+speed 0.500000
+connected 15
 end
 arch boulder
 x 9
@@ -990,12 +990,12 @@ arch dungeon_magic
 x 10
 end
 arch button_small
-connected 10
 x 10
+connected 10
 end
 arch gateTrg1
-connected 14
 x 10
+connected 14
 end
 arch dungeon_magic
 x 10
@@ -1107,14 +1107,14 @@ x 10
 y 13
 end
 arch button_small
-connected 10
 x 10
 y 13
+connected 10
 end
 arch gateTrg1
-connected 12
 x 10
 y 13
+connected 12
 end
 arch dungeon_magic
 x 11
@@ -1220,8 +1220,8 @@ You hear from behind the northern wall,
 the sound of great wheels turning as
 the inner gates are set in motion.
 endmsg
-connected 10
 x 12
+connected 10
 end
 arch dungeon_magic
 x 12
@@ -1325,8 +1325,8 @@ On seeing you have a gate pass the guard
 turns the handle nearby and says...
 Arrhh, a merchant off on trade.. Pass..
 endmsg
-connected 13
 x 13
+connected 13
 end
 arch dungeon_magic
 x 13
@@ -1422,8 +1422,8 @@ A guard yells.. The Hero of Scorn!
 Open the gates, open, we can't keep
 the Hero waiting. Hurry Hurry.
 endmsg
-connected 14
 x 14
+connected 14
 end
 arch dungeon_magic
 x 14
@@ -1510,9 +1510,9 @@ Open the gates, prepare the way!
 You think you hear muffled laughing
 from somewhere...
 endmsg
-connected 24
 x 14
 y 13
+connected 24
 end
 arch dungeon_magic
 x 15
@@ -1618,9 +1618,9 @@ Halt! Who wishes to enter?
 You show your gate pass...
 Oh a merchant, Pass Friend.
 endmsg
-connected 23
 x 15
 y 13
+connected 23
 end
 arch dungeon_magic
 x 16
@@ -1725,9 +1725,9 @@ The rusted outer gate is set in motion
 with loud noise emanating from the
 southern wall.
 endmsg
-connected 20
 x 16
 y 13
+connected 20
 end
 arch dungeon_magic
 x 17
@@ -1772,9 +1772,9 @@ x 17
 y 5
 end
 arch trigger
-connected 21
 x 17
 y 5
+connected 21
 end
 arch cobblestones2
 x 17
@@ -1828,12 +1828,12 @@ arch dungeon_magic
 x 18
 end
 arch button_small
-connected 20
 x 18
+connected 20
 end
 arch gateTrg1
-connected 22
 x 18
+connected 22
 end
 arch dungeon_magic
 x 18
@@ -1895,10 +1895,10 @@ Do you want to be thrown in JAIL?
 Good to see a friend!
 Have you seen any monsters lately?
 endmsg
-friendly 1
-unaggressive 0
 x 18
 y 5
+friendly 1
+unaggressive 0
 end
 arch cobblestones2
 x 18
@@ -1949,28 +1949,28 @@ x 18
 y 13
 end
 arch button_small
-connected 20
 x 18
 y 13
+connected 20
 end
 arch gateTrg1
-connected 24
 x 18
 y 13
+connected 24
 end
 arch dungeon_magic
 x 19
 end
 arch button_small
 face button_sma.112
+x 19
 value 1
 connected 25
-x 19
 end
 arch spikes_open
+x 19
 speed 0.500000
 connected 25
-x 19
 end
 arch boulder
 x 19
@@ -2008,40 +2008,40 @@ x 19
 y 5
 end
 arch grate_closed_2
-speed 0.500000
-connected 20
 x 19
 y 5
+speed 0.500000
+connected 20
 end
 arch cobblestones2
 x 19
 y 6
 end
 arch grate_closed_2
-speed 0.500000
-connected 20
 x 19
 y 6
+speed 0.500000
+connected 20
 end
 arch cobblestones2
 x 19
 y 7
 end
 arch grate_closed_2
-speed 0.500000
-connected 20
 x 19
 y 7
+speed 0.500000
+connected 20
 end
 arch cobblestones2
 x 19
 y 8
 end
 arch grate_closed_2
-speed 0.500000
-connected 20
 x 19
 y 8
+speed 0.500000
+connected 20
 end
 arch cobblestones
 x 19
@@ -2085,16 +2085,16 @@ y 13
 end
 arch button_small
 face button_sma.112
+x 19
+y 13
 value 1
 connected 26
-x 19
-y 13
 end
 arch spikes_open
-speed 0.500000
-connected 26
 x 19
 y 13
+speed 0.500000
+connected 26
 end
 arch boulder
 x 19
@@ -2104,12 +2104,12 @@ arch dungeon_magic
 x 20
 end
 arch button_small
-connected 20
 x 20
+connected 20
 end
 arch gateTrg1
-connected 21
 x 20
+connected 21
 end
 arch dungeon_magic
 x 20
@@ -2145,15 +2145,15 @@ y 5
 end
 arch check_floor
 slaying gate_pass
-connected 23
 x 20
 y 5
+connected 23
 end
 arch check_floor
 slaying hero_of_scorn
-connected 24
 x 20
 y 5
+connected 24
 end
 arch magic_ear
 msg
@@ -2161,9 +2161,9 @@ msg
 Well, you know the password,
 so you must be ok.   Pass Friend.
 endmsg
-connected 21
 x 20
 y 5
+connected 21
 end
 arch cobblestones2
 x 20
@@ -2171,15 +2171,15 @@ y 6
 end
 arch check_floor
 slaying gate_pass
-connected 23
 x 20
 y 6
+connected 23
 end
 arch check_floor
 slaying hero_of_scorn
-connected 24
 x 20
 y 6
+connected 24
 end
 arch cobblestones2
 x 20
@@ -2187,15 +2187,15 @@ y 7
 end
 arch check_floor
 slaying gate_pass
-connected 23
 x 20
 y 7
+connected 23
 end
 arch check_floor
 slaying hero_of_scorn
-connected 24
 x 20
 y 7
+connected 24
 end
 arch cobblestones2
 x 20
@@ -2203,15 +2203,15 @@ y 8
 end
 arch check_floor
 slaying gate_pass
-connected 23
 x 20
 y 8
+connected 23
 end
 arch check_floor
 slaying hero_of_scorn
-connected 24
 x 20
 y 8
+connected 24
 end
 arch cobblestones
 x 20
@@ -2254,14 +2254,14 @@ x 20
 y 13
 end
 arch button_small
-connected 20
 x 20
 y 13
+connected 20
 end
 arch gateTrg1
-connected 23
 x 20
 y 13
+connected 23
 end
 arch dungeon_floor
 x 21
@@ -2465,11 +2465,11 @@ Do you want to be thrown in JAIL?
 Good to see a friend!
 Have you seen any monsters lately?
 endmsg
+x 22
+y 9
 speed_left -0.520000
 friendly 1
 unaggressive 0
-x 22
-y 9
 end
 arch flagstone
 x 22
@@ -2570,6 +2570,13 @@ arch brush
 x 24
 end
 arch grass
+x 24
+y 1
+end
+arch stair_3_down
+slaying wizhide
+hp 10
+sp 12
 x 24
 y 1
 end
@@ -2799,21 +2806,21 @@ arch exit
 slaying /world/world_105_115
 hp 22
 sp 37
+x 27
+y 5
 invisible 1
+end
+arch cobblestones
 x 27
 y 5
 end
-arch cobblestones
-x 27
-y 5
-end
 arch exit
 slaying /world/world_105_115
 hp 22
 sp 37
-invisible 1
 x 27
 y 6
+invisible 1
 end
 arch cobblestones
 x 27
@@ -2823,9 +2830,9 @@ arch exit
 slaying /world/world_105_115
 hp 22
 sp 37
-invisible 1
 x 27
 y 7
+invisible 1
 end
 arch cobblestones
 x 27
@@ -2835,9 +2842,9 @@ arch exit
 slaying /world/world_105_115
 hp 22
 sp 37
-invisible 1
 x 27
 y 8
+invisible 1
 end
 arch cobblestones
 x 27
@@ -2864,7 +2871,7 @@ x 27
 y 13
 end
 arch mine_secret_1_1
-no_pass 0
 x 13
 y 9
+no_pass 0
 end
