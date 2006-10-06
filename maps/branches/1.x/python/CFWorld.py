@@ -1,5 +1,5 @@
 #CFWorld.py
-#A small modle for checking where is bigworld an object is if it's in bigworld.
+#A small module for checking where is bigworld an object is if it's in bigworld.
 import string
 import Crossfire
 
