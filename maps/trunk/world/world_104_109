@@ -1,10 +1,10 @@
 arch map
 name world_104_109
+width 50
+height 50
 msg
 
 endmsg
-width 50
-height 50
 outdoor 1
 tile_path_1 world_104_108
 tile_path_2 world_105_109
@@ -7544,6 +7544,13 @@ y 41
 end
 arch steppe
 elevation 4665
+x 29
+y 42
+end
+arch chole_2
+slaying /santo_dominion/shaft/undeadshaft.1
+hp 1
+sp 1
 x 29
 y 42
 end
