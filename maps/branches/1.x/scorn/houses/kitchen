@@ -103,6 +103,7 @@ no_pick 1
 startequip 1
 x 1
 y 1
+map_layer item
 end
 arch woodfloor
 x 1
@@ -118,12 +119,14 @@ food 30
 startequip 1
 x 1
 y 2
+map_layer item
 end
 arch carrot
 no_pick 1
 startequip 1
 x 1
 y 2
+map_layer item
 end
 arch woodfloor
 x 1
@@ -282,6 +285,7 @@ arch pear
 no_pick 1
 x 2
 y 1
+map_layer item
 end
 arch woodfloor
 x 2
@@ -327,6 +331,7 @@ no_pick 1
 startequip 1
 x 2
 y 7
+map_layer item
 end
 arch dirtfloor
 no_magic 1
@@ -786,6 +791,7 @@ no_pick 1
 startequip 1
 x 6
 y 1
+map_layer item
 end
 arch woodfloor
 x 6
@@ -864,6 +870,7 @@ friendly 1
 stand_still 1
 x 6
 y 9
+map_layer item
 end
 arch dirtfloor
 no_magic 1
@@ -879,6 +886,7 @@ arch coffee
 no_pick 1
 x 6
 y 10
+map_layer item
 end
 arch woodfloor2
 x 6
@@ -908,6 +916,7 @@ name_pl Bags of Unbuttered Popcorn
 no_pick 1
 x 7
 y 1
+map_layer item
 end
 arch woodfloor
 x 7
@@ -925,12 +934,14 @@ food 0
 startequip 1
 x 7
 y 2
+map_layer item
 end
 arch orcchop
 no_pick 1
 startequip 1
 x 7
 y 2
+map_layer item
 end
 arch woodfloor
 x 7
@@ -1031,6 +1042,7 @@ end
 arch wine
 x 7
 y 10
+map_layer item
 end
 arch woodfloor2
 x 7
