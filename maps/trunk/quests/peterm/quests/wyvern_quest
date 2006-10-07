@@ -786,18 +786,33 @@ arch altar_devourers
 x 3
 y 30
 end
-arch medium_stones
-x 3
-y 31
-end
 arch blackmarble
 x 3
 y 31
 end
-arch generate_skeleton
-speed_left -0.106000
+arch vampire
+name Chapel Keeper
+carrying 10020
+unaggressive 1
 x 3
 y 31
+arch abil_fear
+end
+arch abil_fear
+end
+arch abil_fear
+end
+arch cloak
+end
+arch book
+name manual
+sp 4
+exp 700
+level 1
+value 700
+end
+arch ring
+end
 end
 arch medium_stones
 x 3
@@ -961,10 +976,6 @@ arch stwall_2_1_2
 x 4
 y 29
 end
-arch medium_stones
-x 4
-y 30
-end
 arch blackmarble
 x 4
 y 30
@@ -982,29 +993,11 @@ arch blackmarble
 x 4
 y 31
 end
-arch vampire
-name Chapel Keeper
-carrying 10020
-unaggressive 1
+arch button_small
+connected 1
+invisible 1
 x 4
 y 31
-arch abil_fear
-end
-arch abil_fear
-end
-arch abil_fear
-end
-arch cloak
-end
-arch book
-name manual
-sp 4
-exp 700
-level 1
-value 700
-end
-arch ring
-end
 end
 arch medium_stones
 x 4
@@ -1020,6 +1013,7 @@ x 4
 y 32
 end
 arch stwall_closed_1
+connected 1
 x 4
 y 32
 end
@@ -1028,17 +1022,10 @@ x 4
 y 33
 end
 arch button_small
+connected 1
 invisible 1
 x 4
 y 33
-end
-arch chest
-hp -1
-carrying 2000
-x 4
-y 33
-arch dagger
-end
 end
 arch medium_stones
 x 4
