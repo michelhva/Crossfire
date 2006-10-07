@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name Mwizard5
+region lakecountry
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 04:35:35 1995
 endmsg
-x 30
-y 30
+width 30
+height 30
 end
 arch flagstone
 end
@@ -454,11 +454,11 @@ sp 2
 x 2
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 2
 y 3
 end
-arch rune_antimagic
+arch flagstone
 x 2
 y 3
 end
@@ -479,14 +479,14 @@ x 2
 y 6
 end
 arch altar
-slaying Dragon Ball
 msg
 Behold the mighty Dragon Ball..
 endmsg
+slaying Dragon Ball
 food 1
+connected 59
 x 2
 y 6
-connected 59
 end
 arch flagstone
 x 2
@@ -606,11 +606,11 @@ arch wall_2_1_2
 x 3
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 2
 end
-arch rune_antimagic
+arch flagstone
 x 3
 y 2
 end
@@ -618,11 +618,11 @@ arch door_look_2
 x 3
 y 2
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 3
 end
-arch rune_antimagic
+arch flagstone
 x 3
 y 3
 end
@@ -1768,30 +1768,30 @@ x 10
 y 25
 end
 arch grate_closed_2
+speed 0.500000
+connected 59
 x 10
 y 25
-speed 0.500000
-connected 59
 end
 arch flagstone
 x 10
 y 26
 end
 arch grate_closed_2
-x 10
-y 26
 speed 0.500000
 connected 59
+x 10
+y 26
 end
 arch flagstone
 x 10
 y 27
 end
 arch grate_closed_2
-x 10
-y 27
 speed 0.500000
 connected 59
+x 10
+y 27
 end
 arch flagstone
 x 10
@@ -2258,11 +2258,11 @@ end
 arch lich
 name Vecna
 hp 5000
-x 13
-y 26
 speed 1.000000
 level 30
 carrying 275
+x 13
+y 26
 arch note
 name Dark Parchment
 msg
@@ -2272,14 +2272,14 @@ endmsg
 end
 arch key2
 name Eye of Vecna
-slaying eye
 face behold_eye.111
+slaying eye
 value 20000
 end
 arch key2
 name Hand of Vecna
-slaying hand
 face mystic_fist.111
+slaying hand
 value 20000
 end
 end
@@ -4850,13 +4850,13 @@ end
 arch dragonman
 name Dragon Lord
 hp 5000
-x 4
-y 6
 speed 1.000000
 speed_left -2.040000
 level 30
 immune 28
 carrying 25000
+x 4
+y 6
 arch spell_burning_hands
 end
 arch abil_burning_hands
@@ -4891,12 +4891,12 @@ y 22
 end
 arch dragonman
 name White Dragon Master
-x 7
-y 3
 speed 1.000000
 speed_left -0.790000
 level 29
 immune 28
+x 7
+y 3
 arch spell_icestorm
 end
 arch abil_icestorm
@@ -4904,12 +4904,12 @@ end
 end
 arch dragonman
 name Blue Dragon Master
-x 7
-y 10
 speed 1.000000
 speed_left -0.320000
 level 29
 immune 28
+x 7
+y 10
 arch spell_sm_lightning
 end
 end
@@ -4923,12 +4923,12 @@ y 17
 end
 arch dragonman
 name Red Dragon Master
-x 10
-y 6
 speed 1.000000
 speed_left -0.860000
 level 29
 immune 28
+x 10
+y 6
 arch spell_burning_hands
 end
 arch abil_burning_hands
