@@ -1,16 +1,16 @@
 arch map
-region scorn
 name jail
+reset_timeout 7200
+difficulty 6
+region scorn
+width 17
+height 15
+enter_y 7
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 17 08:37:57 2001
 endmsg
-width 17
-height 15
-enter_y 7
-reset_timeout 7200
-difficulty 6
 end
 arch dungeon_magic
 end
@@ -164,10 +164,10 @@ x 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 1
 y 1
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 1
@@ -183,10 +183,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 1
 y 2
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 1
@@ -198,10 +198,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 1
 y 3
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 1
@@ -213,10 +213,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 1
 y 4
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 1
@@ -276,10 +276,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 1
 y 10
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 1
@@ -291,10 +291,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 1
 y 11
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 1
@@ -306,10 +306,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 1
 y 12
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 1
@@ -321,10 +321,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 1
 y 13
+last_sp 0
+connected 15
 end
 arch flagstone
 x 1
@@ -357,10 +357,10 @@ x 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 2
 y 1
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 2
@@ -372,10 +372,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 2
 y 2
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 2
@@ -387,10 +387,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 2
 y 3
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 2
@@ -401,9 +401,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 2
+y 3
 connected 2
-x 2
-y 3
 end
 arch flagstone
 x 2
@@ -411,10 +411,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 2
 y 4
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 2
@@ -426,10 +426,10 @@ y 4
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 2
 y 5
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 2
@@ -440,15 +440,15 @@ x 2
 y 5
 end
 arch igateTrg1
-connected 16
 x 2
 y 5
+connected 16
 end
 arch check_inv
 slaying jailkey
-connected 16
 x 2
 y 6
+connected 16
 end
 arch dungeon_magic
 x 2
@@ -468,9 +468,9 @@ y 7
 end
 arch check_inv
 slaying jailkey
-connected 15
 x 2
 y 8
+connected 15
 end
 arch dungeon_magic
 x 2
@@ -482,10 +482,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 2
 y 9
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 2
@@ -496,16 +496,16 @@ x 2
 y 9
 end
 arch igateTrg1
-connected 15
 x 2
 y 9
+connected 15
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 2
 y 10
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 2
@@ -517,10 +517,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 2
 y 11
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 2
@@ -531,9 +531,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 2
+y 11
 connected 1
-x 2
-y 11
 end
 arch flagstone
 x 2
@@ -541,10 +541,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 2
 y 12
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 2
@@ -556,10 +556,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 2
 y 13
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 2
@@ -592,10 +592,10 @@ x 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 3
 y 1
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 3
@@ -607,17 +607,17 @@ y 1
 end
 arch creator
 other_arch loaf
-connected 2
-lifesave 1
 x 3
 y 1
+connected 2
+lifesave 1
 end
 arch creator
 other_arch water
-connected 2
-lifesave 1
 x 3
 y 1
+connected 2
+lifesave 1
 end
 arch table_4
 x 3
@@ -625,10 +625,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 3
 y 2
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 3
@@ -640,10 +640,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 3
 y 3
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 3
@@ -655,10 +655,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 3
 y 4
+last_sp 0
+connected 16
 end
 arch dungeon_magic
 x 3
@@ -725,10 +725,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 3
 y 10
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 3
@@ -740,16 +740,16 @@ y 10
 end
 arch corpse
 name Litterbug
+x 3
+y 10
 no_pick 1
-x 3
-y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 3
 y 11
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 3
@@ -761,10 +761,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 3
 y 12
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 3
@@ -776,10 +776,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 15
 x 3
 y 13
+last_sp 0
+connected 15
 end
 arch dungeon_magic
 x 3
@@ -791,17 +791,17 @@ y 13
 end
 arch creator
 other_arch loaf
-connected 1
-lifesave 1
 x 3
 y 13
+connected 1
+lifesave 1
 end
 arch creator
 other_arch water
-connected 1
-lifesave 1
 x 3
 y 13
+connected 1
+lifesave 1
 end
 arch table_4
 x 3
@@ -1011,10 +1011,10 @@ x 5
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 1
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 5
@@ -1030,10 +1030,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 2
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 5
@@ -1045,10 +1045,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 3
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 5
@@ -1060,10 +1060,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 4
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 5
@@ -1123,10 +1123,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 5
 y 10
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 5
@@ -1138,10 +1138,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 5
 y 11
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 5
@@ -1153,10 +1153,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 5
 y 12
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 5
@@ -1168,10 +1168,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 5
 y 13
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 5
@@ -1208,10 +1208,10 @@ x 6
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 1
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 6
@@ -1223,10 +1223,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 2
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 6
@@ -1238,10 +1238,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 3
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 6
@@ -1252,9 +1252,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 6
+y 3
 connected 4
-x 6
-y 3
 end
 arch flagstone
 x 6
@@ -1262,10 +1262,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 4
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 6
@@ -1277,10 +1277,10 @@ y 4
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 6
 y 5
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 6
@@ -1291,15 +1291,15 @@ x 6
 y 5
 end
 arch igateTrg1
-connected 14
 x 6
 y 5
+connected 14
 end
 arch check_inv
 slaying jailkey
-connected 14
 x 6
 y 6
+connected 14
 end
 arch dungeon_magic
 x 6
@@ -1319,9 +1319,9 @@ y 7
 end
 arch check_inv
 slaying jailkey
-connected 13
 x 6
 y 8
+connected 13
 end
 arch dungeon_magic
 x 6
@@ -1333,10 +1333,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 6
 y 9
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 6
@@ -1347,16 +1347,16 @@ x 6
 y 9
 end
 arch igateTrg1
-connected 13
 x 6
 y 9
+connected 13
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 6
 y 10
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 6
@@ -1368,10 +1368,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 6
 y 11
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 6
@@ -1382,9 +1382,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 6
+y 11
 connected 3
-x 6
-y 11
 end
 arch flagstone
 x 6
@@ -1392,10 +1392,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 6
 y 12
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 6
@@ -1407,10 +1407,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 6
 y 13
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 6
@@ -1443,10 +1443,10 @@ x 7
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 7
 y 1
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 7
@@ -1458,17 +1458,17 @@ y 1
 end
 arch creator
 other_arch loaf
-connected 4
-lifesave 1
 x 7
 y 1
+connected 4
+lifesave 1
 end
 arch creator
 other_arch water
-connected 4
-lifesave 1
 x 7
 y 1
+connected 4
+lifesave 1
 end
 arch table_4
 x 7
@@ -1476,10 +1476,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 7
 y 2
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 7
@@ -1491,10 +1491,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 7
 y 3
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 7
@@ -1506,10 +1506,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 7
 y 4
+last_sp 0
+connected 14
 end
 arch dungeon_magic
 x 7
@@ -1569,10 +1569,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 7
 y 10
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 7
@@ -1584,10 +1584,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 7
 y 11
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 7
@@ -1599,10 +1599,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 7
 y 12
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 7
@@ -1614,10 +1614,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 7
 y 13
+last_sp 0
+connected 13
 end
 arch dungeon_magic
 x 7
@@ -1629,17 +1629,17 @@ y 13
 end
 arch creator
 other_arch loaf
-connected 3
-lifesave 1
 x 7
 y 13
+connected 3
+lifesave 1
 end
 arch creator
 other_arch water
-connected 3
-lifesave 1
 x 7
 y 13
+connected 3
+lifesave 1
 end
 arch table_4
 x 7
@@ -1849,10 +1849,10 @@ x 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 1
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 9
@@ -1868,10 +1868,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 2
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 9
@@ -1883,10 +1883,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 3
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 9
@@ -1898,10 +1898,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 4
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 9
@@ -1961,10 +1961,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 9
 y 10
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 9
@@ -1976,10 +1976,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 9
 y 11
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 9
@@ -1991,10 +1991,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 9
 y 12
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 9
@@ -2006,10 +2006,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 9
 y 13
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 9
@@ -2046,10 +2046,10 @@ x 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 10
 y 1
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 10
@@ -2061,10 +2061,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 10
 y 2
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 10
@@ -2076,10 +2076,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 10
 y 3
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 10
@@ -2090,9 +2090,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 10
+y 3
 connected 6
-x 10
-y 3
 end
 arch flagstone
 x 10
@@ -2100,10 +2100,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 10
 y 4
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 10
@@ -2115,10 +2115,10 @@ y 4
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 10
 y 5
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 10
@@ -2129,15 +2129,15 @@ x 10
 y 5
 end
 arch igateTrg1
-connected 12
 x 10
 y 5
+connected 12
 end
 arch check_inv
 slaying jailkey
-connected 12
 x 10
 y 6
+connected 12
 end
 arch dungeon_magic
 x 10
@@ -2157,9 +2157,9 @@ y 7
 end
 arch check_inv
 slaying jailkey
-connected 11
 x 10
 y 8
+connected 11
 end
 arch dungeon_magic
 x 10
@@ -2171,10 +2171,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-no_pass 1
 x 10
 y 9
+last_sp 0
+no_pass 1
 end
 arch dungeon_magic
 x 10
@@ -2185,16 +2185,16 @@ x 10
 y 9
 end
 arch igateTrg1
-connected 11
 x 10
 y 9
+connected 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 10
 y 10
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 10
@@ -2206,10 +2206,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 10
 y 11
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 10
@@ -2220,9 +2220,9 @@ msg
 @match sorry
 Since you have repented, you may eat today.
 endmsg
+x 10
+y 11
 connected 5
-x 10
-y 11
 end
 arch flagstone
 x 10
@@ -2230,10 +2230,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 10
 y 12
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 10
@@ -2245,10 +2245,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 10
 y 13
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 10
@@ -2281,10 +2281,10 @@ x 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 11
 y 1
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 11
@@ -2296,17 +2296,17 @@ y 1
 end
 arch creator
 other_arch loaf
-connected 6
-lifesave 1
 x 11
 y 1
+connected 6
+lifesave 1
 end
 arch creator
 other_arch water
-connected 6
-lifesave 1
 x 11
 y 1
+connected 6
+lifesave 1
 end
 arch table_4
 x 11
@@ -2314,10 +2314,10 @@ y 1
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 11
 y 2
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 11
@@ -2329,10 +2329,10 @@ y 2
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 11
 y 3
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 11
@@ -2344,10 +2344,10 @@ y 3
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 11
 y 4
+last_sp 0
+connected 12
 end
 arch dungeon_magic
 x 11
@@ -2411,10 +2411,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 11
 y 10
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 11
@@ -2426,10 +2426,10 @@ y 10
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 11
 y 11
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 11
@@ -2441,10 +2441,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 11
 y 12
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 11
@@ -2456,10 +2456,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 11
 x 11
 y 13
+last_sp 0
+connected 11
 end
 arch dungeon_magic
 x 11
@@ -2471,17 +2471,17 @@ y 13
 end
 arch creator
 other_arch loaf
-connected 5
-lifesave 1
 x 11
 y 13
+connected 5
+lifesave 1
 end
 arch creator
 other_arch water
-connected 5
-lifesave 1
 x 11
 y 13
+connected 5
+lifesave 1
 end
 arch table_4
 x 11
@@ -2881,6 +2881,11 @@ arch flagstone
 x 14
 y 1
 end
+arch slevel_3_4
+x 14
+y 1
+no_pass 1
+end
 arch dungeon_magic
 x 14
 y 2
@@ -2907,6 +2912,11 @@ end
 arch flagstone
 x 14
 y 3
+end
+arch slevel_3_4
+x 14
+y 3
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -2935,6 +2945,11 @@ arch flagstone
 x 14
 y 5
 end
+arch slevel_3_4
+x 14
+y 5
+no_pass 1
+end
 arch dungeon_magic
 x 14
 y 6
@@ -2959,6 +2974,7 @@ arch sign
 name Instructions
 msg
 Step into a box and stand next to the teleporter. Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
+Alternatively one may use the 'arrest' command to give a player a 15 minute jail sentence without having to be in the jail yourself.
 Times are actual playing time, so a character has to be logged in in order for their time to expire.
 Saying 'sorry' in a cell will deliver bread and water to a character.
 Teleporters are damned, so the characters save bed will be changed to the center of their cell. They will not be able to suicide and get out early.
@@ -2994,6 +3010,11 @@ arch flagstone
 x 14
 y 9
 end
+arch slevel_3_4
+x 14
+y 9
+no_pass 1
+end
 arch dungeon_magic
 x 14
 y 10
@@ -3020,6 +3041,11 @@ end
 arch flagstone
 x 14
 y 11
+end
+arch slevel_3_4
+x 14
+y 11
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -3048,6 +3074,11 @@ end
 arch flagstone
 x 14
 y 13
+end
+arch slevel_3_4
+x 14
+y 13
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -3081,10 +3112,10 @@ end
 arch marker
 slaying prisoner
 food 90
-speed 10
-lifesave 1
 x 15
 y 1
+speed 10
+lifesave 1
 end
 arch dungeon_magic
 x 15
@@ -3096,12 +3127,12 @@ y 1
 end
 arch teleporter
 slaying jail
-damned 1
 hp 10
 sp 3
-speed .01
 x 15
 y 1
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
@@ -3126,10 +3157,10 @@ end
 arch marker
 slaying prisoner
 food 180
-speed 10
-lifesave 1
 x 15
 y 3
+speed 10
+lifesave 1
 end
 arch dungeon_magic
 x 15
@@ -3141,12 +3172,12 @@ y 3
 end
 arch teleporter
 slaying jail
-damned 1
 hp 6
 sp 3
-speed .01
 x 15
 y 3
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
@@ -3171,10 +3202,10 @@ end
 arch marker
 slaying prisoner
 food 360
-speed 10
-lifesave 1
 x 15
 y 5
+speed 10
+lifesave 1
 end
 arch dungeon_magic
 x 15
@@ -3186,12 +3217,12 @@ y 5
 end
 arch teleporter
 slaying jail
-damned 1
 hp 2
 sp 3
-speed .01
 x 15
 y 5
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
@@ -3242,10 +3273,10 @@ end
 arch marker
 slaying prisoner
 food 720
-lifesave 1
-speed 10
 x 15
 y 9
+speed 10
+lifesave 1
 end
 arch dungeon_magic
 x 15
@@ -3257,12 +3288,12 @@ y 9
 end
 arch teleporter
 slaying jail
-damned 1
 hp 10
 sp 11
-speed .01
 x 15
 y 9
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
@@ -3287,9 +3318,9 @@ end
 arch marker
 slaying prisoner
 food 1440
-speed 10
 x 15
 y 11
+speed 10
 end
 arch dungeon_magic
 x 15
@@ -3301,12 +3332,12 @@ y 11
 end
 arch teleporter
 slaying jail
-damned 1
 hp 6
 sp 11
-speed .01
 x 15
 y 11
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
@@ -3331,10 +3362,10 @@ end
 arch marker
 slaying prisoner
 food 0
-lifesave 1
-speed 10
 x 15
 y 13
+speed 10
+lifesave 1
 end
 arch dungeon_magic
 x 15
@@ -3346,12 +3377,12 @@ y 13
 end
 arch teleporter
 slaying jail
-damned 1
 hp 2
 sp 11
-speed .01
 x 15
 y 13
+speed .01
+damned 1
 end
 arch dungeon_magic
 x 15
