@@ -1,6 +1,6 @@
 arch map
-region lakecountry
 name gate_outer
+region lakecountry
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -283,7 +283,7 @@ msg
 @match Windwalk|windwalk
 Click.
 endmsg
-connected 2
+connected 22
 x 2
 y 3
 end
@@ -381,7 +381,7 @@ msg
 @match Windwalk|windwalk
 Click.
 endmsg
-connected 2
+connected 22
 x 2
 y 11
 end
@@ -414,7 +414,21 @@ arch mine13
 x 2
 y 14
 end
-arch blocked
+arch cobblestones
+x 2
+y 15
+end
+arch altar_trigger
+food 1
+connected 2
+exp 160
+x 2
+y 15
+end
+arch creator
+other_arch food
+connected 22
+lifesave 1
 x 2
 y 15
 end
@@ -537,11 +551,15 @@ arch mine14
 x 3
 y 13
 end
-arch mine13
+arch mine_4
 x 3
 y 14
 end
-arch blocked
+arch cobblestones
+x 3
+y 15
+end
+arch mine5
 x 3
 y 15
 end
@@ -637,7 +655,7 @@ arch mine2
 x 4
 y 14
 end
-arch blocked
+arch cobblestones
 x 4
 y 15
 end
@@ -741,7 +759,7 @@ arch mine2
 x 5
 y 14
 end
-arch blocked
+arch cobblestones
 x 5
 y 15
 end
@@ -997,6 +1015,11 @@ x 8
 y 5
 end
 arch flagstone
+x 8
+y 6
+end
+arch button_lever
+connected 22
 x 8
 y 6
 end
@@ -1571,7 +1594,7 @@ msg
 @match Windwalk|windwalk
 Click.
 endmsg
-connected 2
+connected 22
 x 13
 y 7
 end
