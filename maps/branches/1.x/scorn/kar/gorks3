@@ -910,17 +910,16 @@ y 13
 end
 arch troll
 msg
-@match hello|Hello
-Youse want gorks hords?  I crush you...
-@match Gork|gork|hord|Hord
-Gork not like you... I not as nice as friend
-mork.  Mork live in tower.
-@match Mork|mork
-Mork be Gork's friend
-@match friend|Friend
-Mork share gorks treasure
-@match treasure|Treasure
-Only gork can open treasure door.
+@match [Hh]ello
+Youse want Gork's hoards?  I crush you...
+@match [Gg]ork|[Hh]oard*
+Gork not like you...  I not as nice as Mork.
+@match [Mm]ork
+Mork be Gork's friend.  Mork live in tower.
+@match [Ff]riend
+Mork share Gork's treasure.
+@match [Tt]reasure
+Only Gork can open treasure door.
 endmsg
 x 9
 y 8
