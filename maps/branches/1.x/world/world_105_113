@@ -1,10 +1,8 @@
 arch map
 name world_105_113
-msg
-endmsg
+difficulty 1
 width 50
 height 50
-difficulty 1
 outdoor 1
 tile_path_1 world_105_112
 tile_path_2 world_106_113
@@ -1882,13 +1880,6 @@ x 7
 y 11
 elevation 722
 end
-arch store_magic
-slaying /euthville/magic.shop
-hp 1
-sp 1
-x 7
-y 11
-end
 arch pstone_1
 x 7
 y 12
@@ -1927,9 +1918,9 @@ arch hole
 name Abyss
 slaying /euthville/wiz1
 hp 3
-is_floor 0
 x 7
 y 17
+is_floor 0
 end
 arch desert
 x 7
@@ -1945,14 +1936,6 @@ arch desert
 x 7
 y 20
 elevation 725
-end
-arch church
-name jesus weeping
-slaying /euthville/devil.church1
-hp 9
-sp 14
-x 7
-y 20
 end
 arch pstone_2
 x 7
@@ -3031,6 +3014,7 @@ elevation 4520
 end
 arch phole_2
 name filthy pit
+slaying /!
 msg
 floorstyle stones2
 wallstyle earthen
@@ -3041,7 +3025,6 @@ monsterstyle demon
 dungeon_depth 6
 final_map /euthville/demon_quest
 endmsg
-slaying /!
 x 11
 y 22
 end
@@ -3828,14 +3811,6 @@ arch small_stones
 x 14
 y 23
 elevation 2364
-end
-arch barn
-name Hall of Bones
-slaying /euthville/hallofbones
-hp 3
-sp 33
-x 14
-y 23
 end
 arch desert
 x 14
@@ -12761,4 +12736,27 @@ arch hills
 x 49
 y 49
 elevation 3657
+end
+arch store_magic
+slaying /euthville/magic.shop
+hp 1
+sp 1
+x 7
+y 11
+end
+arch church
+name Valriel weeping
+slaying /euthville/devil.church1
+hp 9
+sp 14
+x 7
+y 20
+end
+arch barn
+name Hall of Bones
+slaying /euthville/hallofbones
+hp 3
+sp 33
+x 14
+y 23
 end
