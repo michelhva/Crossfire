@@ -1,15 +1,16 @@
 arch map
-region creation
 name HallOfSelection
+difficulty 1
+region creation
+width 20
+height 34
+enter_x 7
+enter_y 5
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Oct 12 20:22:20 2000
 endmsg
-width 15
-height 35
-enter_x 7
-enter_y 5
 end
 arch blocked
 end
@@ -228,69 +229,107 @@ end
 arch cwall_2_2_1
 y 33
 end
-arch permanent_lava
+arch teleporter
+hp 13
 x 1
+speed -0.2
+invisible 1
 end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 1
 x 1
 y 1
+speed -0.2
+invisible 1
 end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 2
 x 1
 y 2
+speed -0.2
+invisible 1
 end
-arch fire_permanent
-x 1
-y 2
-end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 3
 x 1
 y 3
+speed -0.2
+invisible 1
 end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 4
 x 1
 y 4
+speed -0.2
+invisible 1
 end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 5
 x 1
 y 5
+speed -0.2
+invisible 1
 end
-arch permanent_lava
+arch teleporter
+hp 13
+sp 6
 x 1
 y 6
+speed -0.2
+invisible 1
 end
-arch mountain
-blocksview 0
+arch teleporter
+hp 13
+sp 7
 x 1
 y 7
+speed -0.2
+invisible 1
 end
-arch mountain
-blocksview 0
+arch teleporter
+hp 13
+sp 8
 x 1
 y 8
+speed -0.2
+invisible 1
 end
-arch mountain
-blocksview 0
+arch teleporter
+hp 13
+sp 9
 x 1
 y 9
+speed -0.2
+invisible 1
 end
-arch mountain2
-blocksview 0
+arch teleporter
+hp 13
+sp 10
 x 1
 y 10
+speed -0.2
+invisible 1
 end
-arch mountain
-blocksview 0
+arch teleporter
+hp 13
+sp 11
 x 1
 y 11
+speed -0.2
+invisible 1
 end
-arch mountain2
+arch teleporter
+hp 13
+sp 12
 x 1
 y 12
-end
-arch brefjell
-x 1
-y 12
+speed -0.2
+invisible 1
 end
 arch blocked
 x 1
@@ -317,7 +356,6 @@ x 1
 y 16
 end
 arch warlock_class
-face mage.151
 msg
 Warlock
 You've divided your time between
@@ -332,6 +370,7 @@ both weaponry and magic because
 you've had to divide your time
 between them.
 endmsg
+face mage.151
 x 1
 y 16
 end
@@ -503,64 +542,54 @@ arch cwall_2_1_2
 x 1
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 2
 end
-arch permanent_lava
+arch mover_7
 x 2
 y 1
 end
-arch permanent_lava
+arch mover_7
 x 2
 y 2
 end
-arch permanent_lava
+arch mover_7
 x 2
 y 3
 end
-arch permanent_lava
+arch mover_7
 x 2
 y 4
 end
-arch permanent_lava
+arch mover_7
 x 2
 y 5
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 2
 y 6
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 2
 y 7
 end
-arch mountain2
+arch mover_7
 x 2
 y 8
 end
-arch brefjell
-x 2
-y 8
-end
-arch mountain
-blocksview 0
+arch mover_7
 x 2
 y 9
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 2
 y 10
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 2
 y 11
 end
-arch mountain2
-blocksview 0
+arch mover_7
 x 2
 y 12
 end
@@ -774,62 +803,54 @@ arch cwall_3_1
 x 2
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 3
 end
-arch permanent_lava
+arch mover_7
 x 3
 y 1
 end
-arch permanent_lava
+arch mover_7
 x 3
 y 2
 end
-arch permanent_lava
+arch mover_7
 x 3
 y 3
 end
-arch permanent_lava
+arch mover_7
 x 3
 y 4
 end
-arch fire_permanent
-x 3
-y 4
-end
-arch permanent_lava
+arch mover_7
 x 3
 y 5
 end
-arch permanent_lava
+arch mover_7
 x 3
 y 6
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 3
 y 7
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 3
 y 8
 end
-arch mountain2
+arch mover_7
 x 3
 y 9
 end
-arch mountain2
+arch mover_7
 x 3
 y 10
 end
-arch mountain2
-blocksview 0
+arch mover_7
 x 3
 y 11
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 3
 y 12
 end
@@ -936,9 +957,9 @@ arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
-carrying 70000
 x 3
 y 22
+carrying 70000
 arch wizard
 end
 end
@@ -1070,68 +1091,54 @@ arch cwall_2_1_2
 x 3
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 4
 end
-arch permanent_lava
-x 4
-y 1
-end
-arch fire_permanent
+arch mover_7
 x 4
 y 1
 end
-arch permanent_lava
+arch mover_7
 x 4
 y 2
 end
-arch permanent_lava
+arch mover_7
 x 4
 y 3
 end
-arch permanent_lava
+arch mover_7
 x 4
 y 4
 end
-arch permanent_lava
+arch mover_7
 x 4
 y 5
 end
-arch mountain2
-blocksview 0
+arch mover_7
 x 4
 y 6
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 4
 y 7
 end
-arch mountain2
-blocksview 0
+arch mover_7
 x 4
 y 8
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 4
 y 9
 end
-arch mountain2
+arch mover_7
 x 4
 y 10
 end
-arch brefjell
-x 4
-y 10
-end
-arch mountain
-blocksview 0
+arch mover_7
 x 4
 y 11
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 4
 y 12
 end
@@ -1395,29 +1402,29 @@ arch cwall_2_1_2
 x 4
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 5
 end
-arch permanent_lava
+arch mover_7
 x 5
 y 1
 end
-arch permanent_lava
+arch mover_7
 x 5
 y 2
 end
-arch permanent_lava
+arch mover_7
 x 5
 y 3
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 4
 end
 arch slevel_2_2_2
 x 5
@@ -1426,24 +1433,24 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 5
 no_pass 1
 no_magic 1
 damned 1
+end
+arch slevel_3_2
 x 5
 y 5
 end
-arch slevel_3_2
-x 5
-y 5
-end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 6
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 6
 end
 arch slevel_3_2
 x 5
@@ -1452,11 +1459,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 7
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 7
 end
 arch slevel_3_2
 x 5
@@ -1465,33 +1472,29 @@ end
 arch flagstone
 name floor
 face shop_empty.111
-no_pass 1
-no_magic 1
-damned 1
 x 5
 y 8
+no_pass 1
+no_magic 1
+damned 1
 end
 arch slevel_2_2_1
 x 5
 y 8
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 5
 y 9
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 5
 y 10
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 5
 y 11
 end
-arch mountain
-blocksview 0
+arch mover_7
 x 5
 y 12
 end
@@ -1864,29 +1867,29 @@ arch cwall_2_1_2
 x 5
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 6
 end
-arch permanent_lava
+arch mover_7
 x 6
 y 1
 end
-arch permanent_lava
+arch mover_7
 x 6
 y 2
 end
-arch permanent_lava
+arch mover_7
 x 6
 y 3
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 6
-y 4
 end
 arch slevel_3_3
 x 6
@@ -2182,29 +2185,29 @@ arch cwall_2_1_2
 x 6
 y 33
 end
-arch permanent_lava
+arch mover_7
 x 7
 end
-arch permanent_lava
+arch mover_7
 x 7
 y 1
 end
-arch earth
+arch mover_7
 x 7
 y 2
 end
-arch earth
+arch mover_7
 x 7
 y 3
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 7
-y 4
 end
 arch slevel_3_3
 x 7
@@ -2241,10 +2244,10 @@ x 7
 y 7
 end
 arch button_small
-resist_physical 30
-connected 1
 x 7
 y 8
+resist_physical 30
+connected 1
 end
 arch magic_mouth
 msg
@@ -2275,11 +2278,11 @@ y 8
 end
 arch creator
 other_arch food
+x 7
+y 9
 resist_physical 30
 connected 1
 lifesave 1
-x 7
-y 9
 end
 arch magic_mouth
 msg
@@ -2689,29 +2692,29 @@ arch cwall_2_1_2
 x 7
 y 33
 end
-arch earth
+arch mover_7
 x 8
 end
-arch earth
+arch mover_7
 x 8
 y 1
 end
-arch earth
+arch mover_7
 x 8
 y 2
 end
-arch earth
+arch mover_7
 x 8
 y 3
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 8
-y 4
 end
 arch slevel_3_3
 x 8
@@ -3007,33 +3010,29 @@ arch cwall_2_1_2
 x 8
 y 33
 end
-arch earth
+arch mover_7
 x 9
 end
-arch earth
-x 9
-y 1
-end
-arch tree5
+arch mover_7
 x 9
 y 1
 end
-arch earth
+arch mover_7
 x 9
 y 2
 end
-arch earth
+arch mover_7
 x 9
 y 3
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 4
 end
 arch slevel_2_2_3
 x 9
@@ -3042,24 +3041,24 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 5
 no_pass 1
 no_magic 1
 damned 1
+end
+arch slevel_3_4
 x 9
 y 5
 end
-arch slevel_3_4
-x 9
-y 5
-end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 6
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 6
 end
 arch slevel_3_4
 x 9
@@ -3068,11 +3067,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 7
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 7
 end
 arch slevel_3_4
 x 9
@@ -3081,31 +3080,47 @@ end
 arch flagstone
 name floor
 face shop_empty.111
-no_pass 1
-no_magic 1
-damned 1
 x 9
 y 8
+no_pass 1
+no_magic 1
+damned 1
 end
 arch slevel_2_2_4
 x 9
 y 8
 end
-arch sea
+arch teleporter
+hp 18
+sp 9
 x 9
 y 9
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 18
+sp 10
 x 9
 y 10
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 18
+sp 11
 x 9
 y 11
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 18
+sp 12
 x 9
 y 12
+speed 0.2
+invisible 1
 end
 arch blocked
 x 9
@@ -3470,54 +3485,74 @@ arch cwall_2_1_2
 x 9
 y 33
 end
-arch earth
+arch mover_7
 x 10
 end
-arch earth
+arch mover_7
 x 10
 y 1
 end
-arch earth
+arch mover_7
 x 10
 y 2
 end
-arch earth
+arch mover_7
 x 10
 y 3
 end
-arch earth
+arch teleporter
+hp 19
+sp 4
 x 10
 y 4
+speed 0.2
+invisible 1
 end
-arch earth
+arch teleporter
+hp 19
+sp 5
 x 10
 y 5
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 19
+sp 6
 x 10
 y 6
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 19
+sp 7
 x 10
 y 7
+speed 0.2
+invisible 1
 end
-arch sea
+arch teleporter
+hp 19
+sp 8
 x 10
 y 8
+speed -0.2
+invisible 1
 end
-arch sea
+arch mover_7
 x 10
 y 9
 end
-arch sea
+arch mover_7
 x 10
 y 10
 end
-arch sea
+arch mover_7
 x 10
 y 11
 end
-arch sea
+arch mover_7
 x 10
 y 12
 end
@@ -3781,58 +3816,54 @@ arch cwall_2_1_2
 x 10
 y 33
 end
-arch earth
+arch mover_7
 x 11
 end
-arch earth
+arch mover_7
 x 11
 y 1
 end
-arch earth
+arch mover_7
 x 11
 y 2
 end
-arch earth
+arch mover_7
 x 11
 y 3
 end
-arch earth
+arch mover_7
 x 11
 y 4
 end
-arch tree5
-x 11
-y 4
-end
-arch earth
+arch mover_7
 x 11
 y 5
 end
-arch sea
+arch mover_7
 x 11
 y 6
 end
-arch sea
+arch mover_7
 x 11
 y 7
 end
-arch sea
+arch mover_7
 x 11
 y 8
 end
-arch sea
+arch mover_7
 x 11
 y 9
 end
-arch sea
+arch mover_7
 x 11
 y 10
 end
-arch sea
+arch mover_7
 x 11
 y 11
 end
-arch sea
+arch mover_7
 x 11
 y 12
 end
@@ -4074,54 +4105,54 @@ arch cwall_2_1_2
 x 11
 y 33
 end
-arch earth
+arch mover_7
 x 12
 end
-arch earth
+arch mover_7
 x 12
 y 1
 end
-arch earth
+arch mover_7
 x 12
 y 2
 end
-arch earth
+arch mover_7
 x 12
 y 3
 end
-arch earth
+arch mover_7
 x 12
 y 4
 end
-arch earth
+arch mover_7
 x 12
 y 5
 end
-arch earth
+arch mover_7
 x 12
 y 6
 end
-arch sea
+arch mover_7
 x 12
 y 7
 end
-arch sea
+arch mover_7
 x 12
 y 8
 end
-arch sea
+arch mover_7
 x 12
 y 9
 end
-arch sea
+arch mover_7
 x 12
 y 10
 end
-arch sea
+arch mover_7
 x 12
 y 11
 end
-arch sea
+arch mover_7
 x 12
 y 12
 end
@@ -4331,58 +4362,110 @@ arch cwall_2_1_2
 x 12
 y 33
 end
-arch earth
+arch mover_7
 x 13
 end
-arch earth
+arch mover_7
 x 13
 y 1
 end
-arch earth
+arch mover_7
 x 13
 y 2
 end
-arch tree5
+arch pstone_2
 x 13
 y 2
+alive 1
+monster 1
+stand_still 1
 end
-arch earth
+arch mover_7
 x 13
 y 3
 end
-arch earth
+arch pstone_5
+x 13
+y 3
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 4
 end
-arch earth
+arch large_stones
+x 13
+y 4
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 5
 end
-arch earth
+arch medium_stones
+x 13
+y 5
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 6
 end
-arch sea
+arch small_stones
+x 13
+y 6
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 7
 end
-arch sea
+arch small_stones
+x 13
+y 7
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 8
 end
-arch sea
+arch dirtfloor
+x 13
+y 8
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 9
 end
-arch sea
+arch dirtfloor
+x 13
+y 9
+alive 1
+monster 1
+stand_still 1
+end
+arch mover_7
 x 13
 y 10
 end
-arch sea
+arch mover_7
 x 13
 y 11
 end
-arch sea
+arch mover_7
 x 13
 y 12
 end
@@ -4516,7 +4599,6 @@ x 13
 y 26
 end
 arch monk_class
-face monk.151
 msg
 In the Monastery, they believed in
 mental discipline and peace through
@@ -4530,6 +4612,7 @@ inner peacefulness grants you the
 ability to regenerate faster and to
 sense auras.
 endmsg
+face monk.151
 x 13
 y 26
 end
@@ -4882,8 +4965,192 @@ arch cwall_2_2_4
 x 14
 y 33
 end
+arch teleporter
+hp 4
+sp 4
+x 15
+y 4
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 4
+sp 5
+x 15
+y 5
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 4
+sp 6
+x 15
+y 6
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 4
+sp 7
+x 15
+y 7
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 4
+sp 8
+x 15
+y 8
+speed 0.2
+invisible 1
+end
+arch mover_7
+x 16
+y 4
+end
+arch mover_7
+x 16
+y 5
+end
+arch mover_7
+x 16
+y 6
+end
+arch mover_7
+x 16
+y 7
+end
+arch mover_7
+x 16
+y 8
+end
+arch teleporter
+hp 5
+sp 9
+x 16
+y 9
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 5
+sp 10
+x 16
+y 10
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 5
+sp 11
+x 16
+y 11
+speed 0.2
+invisible 1
+end
+arch teleporter
+hp 5
+sp 12
+x 16
+y 12
+speed 0.2
+invisible 1
+end
+arch mover_7
+x 17
+y 4
+end
+arch mover_7
+x 17
+y 5
+end
+arch mover_7
+x 17
+y 6
+end
+arch mover_7
+x 17
+y 7
+end
+arch mover_7
+x 17
+y 8
+end
+arch mover_7
+x 17
+y 9
+end
+arch mover_7
+x 17
+y 10
+end
+arch mover_7
+x 17
+y 11
+end
+arch mover_7
+x 17
+y 12
+end
+arch mover_7
+x 18
+y 4
+end
+arch mover_7
+x 18
+y 5
+end
+arch mover_7
+x 18
+y 6
+end
+arch mover_7
+x 18
+y 7
+end
+arch mover_7
+x 18
+y 8
+end
+arch mover_7
+x 18
+y 9
+end
+arch mover_7
+x 18
+y 10
+end
+arch mover_7
+x 18
+y 11
+end
+arch mover_7
+x 18
+y 12
+end
+arch mover_7
+x 19
+y 4
+end
+arch mover_7
+x 19
+y 5
+end
+arch mover_7
+x 19
+y 6
+end
+arch mover_7
+x 19
+y 7
+end
+arch mover_7
+x 19
+y 8
+end
 arch pentagram_111
-type 0
 x 6
 y 5
+type 0
 end
