@@ -1411,10 +1411,10 @@ end
 arch crone
 name Servant of Gaea
 msg
-@match Gaea|gaea|Mother|mother
-We are the children of Gaea.  Kneel
-down and pray your mother.  Feel Her
-force under your feet.
+@match force
+If you cannot feel it, worship!  Enjoy the life that wells within Her children, and the power she bestows them to oppose all that is unnatural!
+@match gaea|mother
+We are the children of Gaea.  Kneel down and pray to your Mother.  Feel Her force under your feet.
 @match *
 I am celebrating Gaea, our Mother.
 endmsg
