@@ -1070,8 +1070,7 @@ end
 arch sign_w
 name Dungeon No.1
 msg
-The raffle dungeon for beginners
-(~lvl 3-10).
+The raffle dungeon for beginners (~lvl 3-10).
 endmsg
 x 3
 y 16
@@ -1810,9 +1809,7 @@ end
 arch locked_door2
 slaying raffle_key_No1
 msg
-You need the raffle key No.1 to open
-this door. If you have it, you can
-draw the raffle a second time!
+You need the raffle key No. 1 to open this door.  If you have it, you can draw the raffle a second time!
 endmsg
 x 5
 y 23
@@ -2202,8 +2199,7 @@ arch locked_door2
 name barrier
 slaying raffle1_first_chance
 msg
-You need the raffle ticket No.1 to pull
-this lever.
+You need the raffle ticket No. 1 to pull this lever.
 endmsg
 face enchantment.111
 x 6
@@ -2747,12 +2743,9 @@ arch sign
 name instruction
 msg
 You can draw the raffle here!!
- 1. Go to Dungeon No.1 (downstairs)
-    and retreive the raffle ticket.
- 2. Go upstairs and pull lever 1
-    on the 2nd floor.
- 2. Come back here,  pull lever 2
-    right in front of you.
+ 1. Go to Dungeon No.1 (downstairs) and retrieve the raffle ticket.
+ 2. Go upstairs and pull lever 1 on the 2nd floor.
+ 2. Come back here, pull lever 2 right in front of you.
  3. Then pull lever 3.
  4. At last pull lever 2 again.
 endmsg
