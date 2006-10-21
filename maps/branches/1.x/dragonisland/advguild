@@ -1,13 +1,13 @@
 arch map
 name advguild
 region stoneville
+width 32
+height 32
 msg
 Creator: Viola Krings
 Email:
 Date: Thu Jul 10 12:10:32 1997
 endmsg
-width 32
-height 32
 end
 arch woodfloor
 end
@@ -206,29 +206,29 @@ arch wall_2_1_2
 x 1
 end
 arch woodfloor
-unique 1
 x 1
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 1
 y 2
+unique 1
 end
 arch check_inv
 slaying guildap1
-connected 101
 x 1
 y 2
+connected 101
 end
 arch woodfloor
 x 1
 y 3
 end
 arch igate_closed_1
-connected 101
 x 1
 y 3
+connected 101
 end
 arch woodfloor
 x 1
@@ -236,9 +236,9 @@ y 4
 end
 arch check_inv
 slaying guildap1
-connected 101
 x 1
 y 4
+connected 101
 end
 arch woodfloor
 x 1
@@ -309,78 +309,78 @@ x 1
 y 17
 end
 arch woodfloor
-unique 1
 x 1
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 1
 y 19
+unique 1
 end
 arch clock
 x 1
 y 19
 end
 arch woodfloor
-unique 1
 x 1
 y 20
+unique 1
 end
 arch woodfloor
-unique 1
 x 1
 y 21
+unique 1
 end
 arch chest_2
-no_pick 1
-unique 1
 x 1
 y 21
+no_pick 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 1
 y 22
+unique 1
 end
 arch chest_2
-no_pick 1
-unique 1
 x 1
 y 22
+no_pick 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 1
 y 23
+unique 1
 end
 arch chest_2
-no_pick 1
-unique 1
 x 1
 y 23
-end
-arch woodfloor
-unique 1
-x 1
-y 24
-end
-arch chest_2
 no_pick 1
 unique 1
-x 1
-y 24
 end
 arch woodfloor
-unique 1
 x 1
-y 25
+y 24
+unique 1
 end
 arch chest_2
+x 1
+y 24
 no_pick 1
 unique 1
+end
+arch woodfloor
 x 1
 y 25
+unique 1
+end
+arch chest_2
+x 1
+y 25
+no_pick 1
+unique 1
 end
 arch woodfloor
 x 1
@@ -421,18 +421,18 @@ arch wall_2_1_2
 x 2
 end
 arch woodfloor
-unique 1
 x 2
 y 1
+unique 1
 end
 arch bed_save
 x 2
 y 1
 end
 arch woodfloor
-unique 1
 x 2
 y 2
+unique 1
 end
 arch woodfloor
 x 2
@@ -515,44 +515,44 @@ x 2
 y 17
 end
 arch woodfloor
-unique 1
 x 2
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 19
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 20
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 21
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 22
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 25
+unique 1
 end
 arch woodfloor
 x 2
@@ -689,56 +689,56 @@ x 3
 y 17
 end
 arch woodfloor
-unique 1
 x 3
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 3
 y 19
+unique 1
 end
 arch woodfloor
+x 3
+y 20
 unique 1
+end
+arch chair_1.1
 x 3
 y 20
 end
-arch chair_1.1
-x 3
-y 20
-end
 arch woodfloor
-unique 1
 x 3
 y 21
+unique 1
 end
 arch chair_1.1
 x 3
 y 21
 end
 arch woodfloor
-unique 1
 x 3
 y 22
+unique 1
 end
 arch chair_1.1
 x 3
 y 22
 end
 arch woodfloor
-unique 1
 x 3
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 3
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 3
 y 25
+unique 1
 end
 arch woodfloor
 x 3
@@ -779,16 +779,16 @@ arch wall_2_1_2
 x 4
 end
 arch woodfloor
-unique 1
 x 4
 y 1
+unique 1
 end
 arch key2
 name Key to guild apartment 1
 slaying guildap1
-unique 1
 x 4
 y 1
+unique 1
 end
 arch woodfloor
 x 4
@@ -799,10 +799,10 @@ x 4
 y 3
 end
 arch igate_closed_1
-connected 201
-blocksview 0
 x 4
 y 3
+connected 201
+blocksview 0
 end
 arch woodfloor
 x 4
@@ -811,9 +811,9 @@ end
 arch altar
 name drop 500 food to get a key
 food 500
-connected 201
 x 4
 y 4
+connected 201
 end
 arch woodfloor
 x 4
@@ -884,56 +884,56 @@ x 4
 y 17
 end
 arch woodfloor
-unique 1
 x 4
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 4
 y 19
+unique 1
 end
 arch woodfloor
+x 4
+y 20
 unique 1
+end
+arch table_2
 x 4
 y 20
 end
-arch table_2
-x 4
-y 20
-end
 arch woodfloor
-unique 1
 x 4
 y 21
+unique 1
 end
 arch table_2
 x 4
 y 21
 end
 arch woodfloor
-unique 1
 x 4
 y 22
+unique 1
 end
 arch table_2
 x 4
 y 22
 end
 arch woodfloor
-unique 1
 x 4
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 4
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 4
 y 25
+unique 1
 end
 arch woodfloor
 x 4
@@ -1074,56 +1074,56 @@ x 5
 y 17
 end
 arch woodfloor
-unique 1
 x 5
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 5
 y 19
+unique 1
 end
 arch woodfloor
+x 5
+y 20
 unique 1
+end
+arch chair_1.2
 x 5
 y 20
 end
-arch chair_1.2
-x 5
-y 20
-end
 arch woodfloor
-unique 1
 x 5
 y 21
+unique 1
 end
 arch chair_1.2
 x 5
 y 21
 end
 arch woodfloor
-unique 1
 x 5
 y 22
+unique 1
 end
 arch chair_1.2
 x 5
 y 22
 end
 arch woodfloor
-unique 1
 x 5
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 5
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 5
 y 25
+unique 1
 end
 arch woodfloor
 x 5
@@ -1164,29 +1164,29 @@ arch wall_2_1_2
 x 6
 end
 arch woodfloor
-unique 1
 x 6
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 2
+unique 1
 end
 arch check_inv
 slaying guildap2
-connected 102
 x 6
 y 2
+connected 102
 end
 arch woodfloor
 x 6
 y 3
 end
 arch igate_closed_1
-connected 102
 x 6
 y 3
+connected 102
 end
 arch woodfloor
 x 6
@@ -1194,9 +1194,9 @@ y 4
 end
 arch check_inv
 slaying guildap2
-connected 102
 x 6
 y 4
+connected 102
 arch igate_closed_1
 end
 end
@@ -1269,44 +1269,44 @@ x 6
 y 17
 end
 arch woodfloor
-unique 1
 x 6
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 19
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 20
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 21
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 22
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 25
+unique 1
 end
 arch woodfloor
 x 6
@@ -1347,18 +1347,18 @@ arch wall_2_1_2
 x 7
 end
 arch woodfloor
-unique 1
 x 7
 y 1
+unique 1
 end
 arch bed_save
 x 7
 y 1
 end
 arch woodfloor
-unique 1
 x 7
 y 2
+unique 1
 end
 arch woodfloor
 x 7
@@ -1452,54 +1452,54 @@ x 7
 y 17
 end
 arch woodfloor
-unique 1
 x 7
 y 18
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 19
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 20
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 21
+unique 1
 end
 arch button_lever
-connected 4
 x 7
 y 21
+connected 4
 end
 arch woodfloor
-unique 1
 x 7
 y 22
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 23
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 24
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 25
+unique 1
 end
 arch depositbox
-unique 1
 x 7
 y 25
+unique 1
 end
 arch woodfloor
 x 7
@@ -1691,9 +1691,9 @@ x 8
 y 21
 end
 arch igate_closed_2
-connected 4
 x 8
 y 21
+connected 4
 end
 arch woodfloor
 x 8
@@ -1756,10 +1756,10 @@ x 8
 y 29
 end
 arch button_small
-connected 2
-no_magic 1
 x 8
 y 29
+connected 2
+no_magic 1
 end
 arch woodfloor
 x 8
@@ -1784,16 +1784,16 @@ arch wall_2_1_2
 x 9
 end
 arch woodfloor
-unique 1
 x 9
 y 1
+unique 1
 end
 arch key2
 name key to guild apaprtment 2
 slaying guildap2
-unique 1
 x 9
 y 1
+unique 1
 end
 arch woodfloor
 x 9
@@ -1804,10 +1804,10 @@ x 9
 y 3
 end
 arch igate_closed_1
-connected 202
-blocksview 0
 x 9
 y 3
+connected 202
+blocksview 0
 end
 arch woodfloor
 x 9
@@ -1817,9 +1817,9 @@ arch altar
 name drop 50 diamonds to get a key
 slaying diamond
 food 50
-connected 202
 x 9
 y 4
+connected 202
 end
 arch woodfloor
 x 9
@@ -1918,9 +1918,9 @@ x 9
 y 21
 end
 arch button_lever
-connected 4
 x 9
 y 21
+connected 4
 end
 arch woodfloor
 x 9
@@ -1980,10 +1980,10 @@ x 9
 y 29
 end
 arch igate_closed_2
-connected 2
-blocksview 0
 x 9
 y 29
+connected 2
+blocksview 0
 end
 arch woodfloor
 x 9
@@ -2152,9 +2152,9 @@ x 10
 y 29
 end
 arch button_small
-connected 2
 x 10
 y 29
+connected 2
 end
 arch woodfloor
 x 10
@@ -2179,29 +2179,29 @@ arch wall_2_1_2
 x 11
 end
 arch woodfloor
-unique 1
 x 11
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 11
 y 2
+unique 1
 end
 arch check_inv
 slaying guildap3
-connected 103
 x 11
 y 2
+connected 103
 end
 arch woodfloor
 x 11
 y 3
 end
 arch igate_closed_1
-connected 103
 x 11
 y 3
+connected 103
 end
 arch woodfloor
 x 11
@@ -2209,9 +2209,9 @@ y 4
 end
 arch check_inv
 slaying guildap3
-connected 103
 x 11
 y 4
+connected 103
 end
 arch woodfloor
 x 11
@@ -2263,9 +2263,9 @@ y 16
 end
 arch knight
 name Guild Guard
-friendly 1
 x 11
 y 16
+friendly 1
 end
 arch woodfloor
 x 11
@@ -2281,9 +2281,9 @@ y 18
 end
 arch knight
 name Guild Guard
-friendly 1
 x 11
 y 18
+friendly 1
 end
 arch woodfloor
 x 11
@@ -2356,18 +2356,18 @@ arch wall_2_1_2
 x 12
 end
 arch woodfloor
-unique 1
 x 12
 y 1
+unique 1
 end
 arch bed_save
 x 12
 y 1
 end
 arch woodfloor
-unique 1
 x 12
 y 2
+unique 1
 end
 arch woodfloor
 x 12
@@ -2406,10 +2406,10 @@ cauldron if that is what you desire.
 @match *
 Have a nice day!
 endmsg
-friendly 1
-random_movement 1
 x 12
 y 7
+friendly 1
+random_movement 1
 end
 arch woodfloor
 x 12
@@ -2452,9 +2452,9 @@ x 12
 y 17
 end
 arch door_look_1
-no_pass 0
 x 12
 y 17
+no_pass 0
 end
 arch woodfloor
 x 12
@@ -2513,9 +2513,9 @@ x 12
 y 29
 end
 arch igate_closed_2
-connected 3
 x 12
 y 29
+connected 3
 end
 arch woodfloor
 x 12
@@ -2675,9 +2675,9 @@ arch altar
 name drop 100 pp for admission to test
 slaying money
 food 5000
-connected 3
 x 13
 y 28
+connected 3
 end
 arch woodfloor
 x 13
@@ -2702,16 +2702,16 @@ arch wall_2_1_2
 x 14
 end
 arch woodfloor
-unique 1
 x 14
 y 1
+unique 1
 end
 arch key2
 name key to guild apartment 3
 slaying guildap3
-unique 1
 x 14
 y 1
+unique 1
 end
 arch woodfloor
 x 14
@@ -2722,10 +2722,10 @@ x 14
 y 3
 end
 arch igate_closed_1
-connected 203
-blocksview 0
 x 14
 y 3
+connected 203
+blocksview 0
 end
 arch woodfloor
 x 14
@@ -2735,9 +2735,9 @@ arch altar
 name drop 5 beholdereyes to get a key
 slaying beholdereye
 food 5
-connected 203
 x 14
 y 4
+connected 203
 end
 arch woodfloor
 x 14
@@ -2947,9 +2947,9 @@ y 16
 end
 arch button_lever
 name museum security lever
-connected 77
 x 15
 y 16
+connected 77
 end
 arch woodfloor
 x 15
@@ -3002,18 +3002,18 @@ y 26
 end
 arch check_inv
 slaying advguildkey
-connected 1
 x 15
 y 26
+connected 1
 end
 arch woodfloor
 x 15
 y 27
 end
 arch igate_closed_1
-connected 1
 x 15
 y 27
+connected 1
 end
 arch woodfloor
 x 15
@@ -3021,9 +3021,9 @@ y 28
 end
 arch check_inv
 slaying advguildkey
-connected 1
 x 15
 y 28
+connected 1
 end
 arch woodfloor
 x 15
@@ -3051,29 +3051,29 @@ arch wall_2_1_2
 x 16
 end
 arch woodfloor
-unique 1
 x 16
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 16
 y 2
+unique 1
 end
 arch check_inv
 slaying advap4
-connected 104
 x 16
 y 2
+connected 104
 end
 arch woodfloor
 x 16
 y 3
 end
 arch igate_closed_1
-connected 104
 x 16
 y 3
+connected 104
 end
 arch woodfloor
 x 16
@@ -3081,9 +3081,9 @@ y 4
 end
 arch check_inv
 slaying advap4
-connected 104
 x 16
 y 4
+connected 104
 end
 arch woodfloor
 x 16
@@ -3119,9 +3119,9 @@ y 12
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 16
 y 12
+connected 77
 end
 arch woodfloor
 x 16
@@ -3129,9 +3129,9 @@ y 13
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 16
 y 13
+connected 77
 end
 arch woodfloor
 x 16
@@ -3139,9 +3139,9 @@ y 14
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 16
 y 14
+connected 77
 end
 arch woodfloor
 x 16
@@ -3149,9 +3149,9 @@ y 15
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 16
 y 15
+connected 77
 end
 arch woodfloor
 x 16
@@ -3159,9 +3159,9 @@ y 16
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 16
 y 16
+connected 77
 end
 arch woodfloor
 x 16
@@ -3209,18 +3209,18 @@ y 26
 end
 arch check_inv
 slaying advguildkey
-connected 1
 x 16
 y 26
+connected 1
 end
 arch woodfloor
 x 16
 y 27
 end
 arch igate_closed_1
-connected 1
 x 16
 y 27
+connected 1
 end
 arch woodfloor
 x 16
@@ -3228,9 +3228,9 @@ y 28
 end
 arch check_inv
 slaying advguildkey
-connected 1
 x 16
 y 28
+connected 1
 end
 arch woodfloor
 x 16
@@ -3258,18 +3258,18 @@ arch wall_2_1_2
 x 17
 end
 arch woodfloor
-unique 1
 x 17
 y 1
+unique 1
 end
 arch bed_save
 x 17
 y 1
 end
 arch woodfloor
-unique 1
 x 17
 y 2
+unique 1
 end
 arch woodfloor
 x 17
@@ -3317,9 +3317,9 @@ y 12
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 17
 y 12
+connected 77
 end
 arch woodfloor
 x 17
@@ -3339,9 +3339,9 @@ y 16
 end
 arch button_lever
 name museum security lever
-connected 77
 x 17
 y 16
+connected 77
 end
 arch woodfloor
 x 17
@@ -3523,9 +3523,9 @@ y 12
 end
 arch spikes_open
 name museum security spikes
-connected 77
 x 18
 y 12
+connected 77
 end
 arch woodfloor
 x 18
@@ -3623,10 +3623,10 @@ Dread.
 Hi! Do you want do know something
 about admission to the guild?
 endmsg
-speed 0.000000
-stand_still 1
 x 18
 y 28
+speed 0.000000
+stand_still 1
 end
 arch woodfloor
 x 18
@@ -3651,16 +3651,16 @@ arch wall_2_1_2
 x 19
 end
 arch woodfloor
-unique 1
 x 19
 y 1
+unique 1
 end
 arch key2
 name key to guild apartment 4
 slaying advap4
-unique 1
 x 19
 y 1
+unique 1
 end
 arch woodfloor
 x 19
@@ -3671,10 +3671,10 @@ x 19
 y 3
 end
 arch igate_closed_1
-connected 204
-blocksview 0
 x 19
 y 3
+connected 204
+blocksview 0
 end
 arch woodfloor
 x 19
@@ -3684,9 +3684,9 @@ arch altar
 name drop 5 dragon scales to get a key
 slaying dragon scale
 food 5
-connected 204
 x 19
 y 4
+connected 204
 end
 arch woodfloor
 x 19
@@ -3718,9 +3718,9 @@ y 9
 end
 arch door_look_2
 name museum door
-no_pass 0
 x 19
 y 9
+no_pass 0
 end
 arch woodfloor
 x 19
@@ -3760,9 +3760,9 @@ y 14
 end
 arch door_look_2
 name museum door
-no_pass 0
 x 19
 y 14
+no_pass 0
 end
 arch woodfloor
 x 19
@@ -3793,9 +3793,9 @@ x 19
 y 18
 end
 arch button_small
-connected 7
 x 19
 y 19
+connected 7
 end
 arch woodfloor
 x 19
@@ -3807,16 +3807,16 @@ y 20
 end
 arch ggate_closed
 name yard gate
+x 19
+y 20
 speed 0.500000
 speed_left -7.100000
 connected 7
-x 19
-y 20
 end
 arch button_small
-connected 7
 x 19
 y 21
+connected 7
 end
 arch grass
 x 19
@@ -3827,9 +3827,9 @@ x 19
 y 22
 end
 arch fountain
-speed_left -7.600000
 x 19
 y 22
+speed_left -7.600000
 end
 arch grass
 x 19
@@ -3951,9 +3951,9 @@ y 8
 end
 arch elven_bow
 name longbow exhibit
-no_pick 1
 x 20
 y 8
+no_pick 1
 end
 arch woodfloor
 x 20
@@ -3972,10 +3972,10 @@ x 20
 y 11
 end
 arch skull
-friendly 1
-unaggressive 1
 x 20
 y 11
+friendly 1
+unaggressive 1
 end
 arch woodfloor
 x 20
@@ -4034,9 +4034,9 @@ x 20
 y 23
 end
 arch deathtree
-unaggressive 1
 x 20
 y 23
+unaggressive 1
 end
 arch grass
 x 20
@@ -4055,9 +4055,9 @@ x 20
 y 26
 end
 arch button_lever
-connected 5
 x 20
 y 26
+connected 5
 end
 arch woodfloor
 x 20
@@ -4072,29 +4072,29 @@ x 20
 y 28
 end
 arch button_lever
-connected 5
 x 20
 y 28
+connected 5
 end
 arch woodfloor
 x 20
 y 29
 end
 arch chest_2
-no_pick 1
-unique 1
 x 20
 y 29
+no_pick 1
+unique 1
 end
 arch woodfloor
 x 20
 y 30
 end
 arch chest_2
-no_pick 1
-unique 1
 x 20
 y 30
+no_pick 1
+unique 1
 end
 arch woodfloor
 x 20
@@ -4111,29 +4111,29 @@ arch wall_2_1_2
 x 21
 end
 arch woodfloor
-unique 1
 x 21
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 21
 y 2
+unique 1
 end
 arch check_inv
 slaying advap5
-connected 105
 x 21
 y 2
+connected 105
 end
 arch woodfloor
 x 21
 y 3
 end
 arch igate_closed_1
-connected 105
 x 21
 y 3
+connected 105
 end
 arch woodfloor
 x 21
@@ -4141,9 +4141,9 @@ y 4
 end
 arch check_inv
 slaying advap5
-connected 105
 x 21
 y 4
+connected 105
 end
 arch woodfloor
 x 21
@@ -4167,9 +4167,9 @@ y 8
 end
 arch firestar
 name Firestar Exhibit
-no_pick 1
 x 21
 y 8
+no_pick 1
 end
 arch woodfloor
 x 21
@@ -4276,9 +4276,9 @@ x 21
 y 27
 end
 arch gate_closed_1
-connected 5
 x 21
 y 27
+connected 5
 end
 arch woodfloor
 x 21
@@ -4307,18 +4307,18 @@ arch wall_2_1_2
 x 22
 end
 arch woodfloor
-unique 1
 x 22
 y 1
+unique 1
 end
 arch bed_save
 x 22
 y 1
 end
 arch woodfloor
-unique 1
 x 22
 y 2
+unique 1
 end
 arch woodfloor
 x 22
@@ -4354,9 +4354,9 @@ y 8
 end
 arch lamestar
 name Firestar Exhibit
-no_pick 1
 x 22
 y 8
+no_pick 1
 end
 arch woodfloor
 x 22
@@ -4391,9 +4391,9 @@ x 22
 y 15
 end
 arch nightmare
-unaggressive 1
 x 22
 y 15
+unaggressive 1
 end
 arch woodfloor
 x 22
@@ -4539,9 +4539,9 @@ y 8
 end
 arch holy_avenger
 name Holy Avenger Exhibit
-no_pick 1
 x 23
 y 8
+no_pick 1
 end
 arch woodfloor
 x 23
@@ -4658,9 +4658,9 @@ arch wall_2_1_2
 x 24
 end
 arch woodfloor
-unique 1
 x 24
 y 1
+unique 1
 end
 arch key2
 name key to guild apartment 5
@@ -4677,22 +4677,22 @@ x 24
 y 3
 end
 arch igate_closed_1
-connected 205
-blocksview 0
 x 24
 y 3
+connected 205
+blocksview 0
 end
 arch woodfloor
 x 24
 y 4
 end
 arch altar
-name drop 1 Dread's Eye to get a key
-slaying Dread's Eye
+name drop 1 Dread's eye to get a key
+slaying Dread's eye
 food 1
-connected 205
 x 24
 y 4
+connected 205
 end
 arch woodfloor
 x 24
@@ -4716,9 +4716,9 @@ y 8
 end
 arch demonbane
 name Demonbane Exhibit
-no_pick 1
 x 24
 y 8
+no_pick 1
 end
 arch woodfloor
 x 24
@@ -4789,9 +4789,9 @@ but do not take anything away. Take
 care not to anger the librarians, they
 are so nice!
 endmsg
-no_pick 1
 x 24
 y 21
+no_pick 1
 end
 arch woodfloor
 x 24
@@ -4901,9 +4901,9 @@ y 8
 end
 arch amulet_lifesave
 name amulet of lifesaving exhibit
-no_pick 1
 x 25
 y 8
+no_pick 1
 end
 arch woodfloor
 x 25
@@ -4987,9 +4987,9 @@ y 22
 end
 arch door_look_2
 name library door
-no_pass 0
 x 25
 y 22
+no_pass 0
 end
 arch woodfloor
 x 25
@@ -5040,9 +5040,9 @@ x 25
 y 29
 end
 arch cauldron
-no_pick 1
 x 25
 y 29
+no_pick 1
 end
 arch woodfloor
 x 25
@@ -5063,29 +5063,29 @@ arch wall_2_1_2
 x 26
 end
 arch woodfloor
-unique 1
 x 26
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 26
 y 2
+unique 1
 end
 arch check_inv
 slaying guildap6
-connected 106
 x 26
 y 2
+connected 106
 end
 arch woodfloor
 x 26
 y 3
 end
 arch igate_closed_1
-connected 106
 x 26
 y 3
+connected 106
 end
 arch woodfloor
 x 26
@@ -5093,9 +5093,9 @@ y 4
 end
 arch check_inv
 slaying guildap6
-connected 106
 x 26
 y 4
+connected 106
 end
 arch woodfloor
 x 26
@@ -5119,9 +5119,9 @@ y 8
 end
 arch power_crystal
 name Glowing Crystal Exhibit
-no_pick 1
 x 26
 y 8
+no_pick 1
 end
 arch woodfloor
 x 26
@@ -5186,9 +5186,9 @@ msg
 Don't talk in here, please!
 And take care not to damage anything!
 endmsg
-unaggressive 1
 x 26
 y 19
+unaggressive 1
 end
 arch woodfloor
 x 26
@@ -5216,11 +5216,11 @@ msg
 @match *
 Don't damage the books! *grunt*
 endmsg
+x 26
+y 24
 type 0
 monster 1
 unaggressive 1
-x 26
-y 24
 end
 arch woodfloor
 x 26
@@ -5265,18 +5265,18 @@ arch wall_2_1_2
 x 27
 end
 arch woodfloor
-unique 1
 x 27
 y 1
+unique 1
 end
 arch bed_save
 x 27
 y 1
 end
 arch woodfloor
-unique 1
 x 27
 y 2
+unique 1
 end
 arch woodfloor
 x 27
@@ -5312,9 +5312,9 @@ y 8
 end
 arch reflector
 name polished shield exhibit
-no_pick 1
 x 27
 y 8
+no_pick 1
 end
 arch woodfloor
 x 27
@@ -5353,9 +5353,9 @@ x 27
 y 16
 end
 arch rustmonster
-unaggressive 1
 x 27
 y 16
+unaggressive 1
 end
 arch woodfloor
 x 27
@@ -5448,14 +5448,14 @@ arch wall_2_1_2
 x 28
 end
 arch woodfloor
-unique 1
 x 28
 y 1
+unique 1
 end
 arch woodfloor
-unique 1
 x 28
 y 2
+unique 1
 end
 arch woodfloor
 x 28
@@ -5491,9 +5491,9 @@ y 8
 end
 arch holy_shield
 name holy shield exhibit
-no_pick 1
 x 28
 y 8
+no_pick 1
 end
 arch woodfloor
 x 28
@@ -5520,9 +5520,9 @@ x 28
 y 13
 end
 arch demilich
-friendly 1
 x 28
 y 13
+friendly 1
 end
 arch woodfloor
 x 28
@@ -5684,9 +5684,9 @@ y 8
 end
 arch eyeshield
 name eyeshield exhibit
-no_pick 1
 x 29
 y 8
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -5713,9 +5713,9 @@ x 29
 y 13
 end
 arch demilich
-friendly 1
 x 29
 y 13
+friendly 1
 end
 arch woodfloor
 x 29
@@ -5808,16 +5808,16 @@ arch wall_2_1_2
 x 30
 end
 arch woodfloor
-unique 1
 x 30
 y 1
+unique 1
 end
 arch key2
 name key to guild apartment 6
 slaying guildap6
-unique 1
 x 30
 y 1
+unique 1
 end
 arch woodfloor
 x 30
@@ -5828,10 +5828,10 @@ x 30
 y 3
 end
 arch igate_closed_1
-connected 206
-blocksview 0
 x 30
 y 3
+connected 206
+blocksview 0
 end
 arch woodfloor
 x 30
@@ -5841,9 +5841,9 @@ arch altar
 name drop 2000 gp to get a key
 slaying money
 food 2000
-connected 206
 x 30
 y 4
+connected 206
 end
 arch woodfloor
 x 30
@@ -5867,9 +5867,9 @@ y 8
 end
 arch Pdragon_mail
 name Power Dragon Mail Exhibit
-no_pick 1
 x 30
 y 8
+no_pick 1
 end
 arch woodfloor
 x 30
@@ -5896,9 +5896,9 @@ x 30
 y 13
 end
 arch demilich
-friendly 1
 x 30
 y 13
+friendly 1
 end
 arch woodfloor
 x 30
@@ -5930,82 +5930,82 @@ y 18
 end
 arch random_reading
 slaying library
-level 6
-no_pick 1
 x 30
 y 18
+level 6
+no_pick 1
 end
 arch woodfloor
 x 30
 y 19
 end
 arch random_reading
-no_pick 1
 x 30
 y 19
+no_pick 1
 end
 arch woodfloor
 x 30
 y 20
 end
 arch random_reading
-no_pick 1
 x 30
 y 20
+no_pick 1
 end
 arch woodfloor
 x 30
 y 21
 end
 arch random_reading
-no_pick 1
 x 30
 y 21
+no_pick 1
 end
 arch woodfloor
 x 30
 y 22
 end
 arch random_reading
-no_pick 1
 x 30
 y 22
+no_pick 1
 end
 arch woodfloor
 x 30
 y 23
 end
 arch random_reading
-no_pick 1
 x 30
 y 23
+no_pick 1
 end
 arch woodfloor
 x 30
 y 24
 end
 arch random_reading
-no_pick 1
 x 30
 y 24
+no_pick 1
 end
 arch woodfloor
 x 30
 y 25
 end
 arch random_reading
-no_pick 1
 x 30
 y 25
+no_pick 1
 end
 arch woodfloor
 x 30
 y 26
 end
 arch random_reading
-no_pick 1
 x 30
 y 26
+no_pick 1
 end
 arch woodfloor
 x 30
@@ -6020,20 +6020,20 @@ x 30
 y 28
 end
 arch chest_2
-no_pick 1
-unique 1
 x 30
 y 28
+no_pick 1
+unique 1
 end
 arch woodfloor
 x 30
 y 29
 end
 arch chest_2
-no_pick 1
-unique 1
 x 30
 y 29
+no_pick 1
+unique 1
 end
 arch woodfloor
 x 30
@@ -6307,28 +6307,28 @@ y 31
 end
 arch dread
 name KeyDread
-carrying 100
 x 3
 y 28
+carrying 100
 arch key2
 name Key to Adventurers Guild
 slaying advguildkey
 end
 end
 arch behemoth
-unaggressive 1
 x 20
 y 15
+unaggressive 1
 end
 arch big_wiz
-unaggressive 1
 x 25
 y 11
+unaggressive 1
 end
 arch chinese_dragon
-unaggressive 1
 x 25
 y 15
+unaggressive 1
 end
 arch sphinx
 name homesick sphinx
@@ -6343,12 +6343,12 @@ x 26
 y 26
 end
 arch big_dragon
-unaggressive 1
 x 28
 y 11
+unaggressive 1
 end
 arch titan
-unaggressive 1
 x 29
 y 15
+unaggressive 1
 end
