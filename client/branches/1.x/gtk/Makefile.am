@@ -37,7 +37,7 @@ gcfclient_SOURCES = \
 
 noinst_HEADERS = \
 	gtkproto.h \
-	gx11.h \
+	gx11.h
 
 EXTRA_DIST = \
 	crossfire-client.desktop

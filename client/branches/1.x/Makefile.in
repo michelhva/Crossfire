@@ -59,9 +59,9 @@ host_triplet = @host@
 target_triplet = @target@
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(top_srcdir)/configure AUTHORS COPYING \
-	ChangeLog INSTALL NEWS TODO config.guess config.sub \
-	utils//config.guess utils//config.sub utils//depcomp \
-	utils//install-sh utils//missing utils//mkinstalldirs
+	ChangeLog INSTALL NEWS TODO utils//config.guess \
+	utils//config.sub utils//depcomp utils//install-sh \
+	utils//missing utils//mkinstalldirs
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
@@ -124,6 +124,8 @@ ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
+GTK2_CFLAGS = @GTK2_CFLAGS@
+GTK2_LIBS = @GTK2_LIBS@
 GTK_CFLAGS = @GTK_CFLAGS@
 GTK_CONFIG = @GTK_CONFIG@
 GTK_LIBS = @GTK_LIBS@
@@ -149,7 +151,6 @@ OBJEXT = @OBJEXT@
 OPENGL_LIBS = @OPENGL_LIBS@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
-PACKAGE_CFLAGS = @PACKAGE_CFLAGS@
 PACKAGE_LIBS = @PACKAGE_LIBS@
 PACKAGE_NAME = @PACKAGE_NAME@
 PACKAGE_STRING = @PACKAGE_STRING@
@@ -168,9 +169,11 @@ SHELL = @SHELL@
 SND_LIBS = @SND_LIBS@
 SOUNDDIR = @SOUNDDIR@
 STRIP = @STRIP@
+SVNVERSION = @SVNVERSION@
 TAR = @TAR@
 TARGET = @TARGET@
 VERSION = @VERSION@
+WIN32_LIBS = @WIN32_LIBS@
 XPM = @XPM@
 X_CFLAGS = @X_CFLAGS@
 X_EXTRA_LIBS = @X_EXTRA_LIBS@
