@@ -31,7 +31,6 @@ cfclient_SOURCES = \
 
 noinst_HEADERS = \
 	clientbmap.h\
-	rcs-id.h \
 	x11.h \
 	x11proto.h
 
