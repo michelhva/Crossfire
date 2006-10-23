@@ -39,6 +39,10 @@ public class GUIPicture extends GUIElement
     {
         BufferedImage img =
             javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+        if (img == null)
+        {
+            throw new IllegalArgumentException("resource '"+picture+"' does not exist");
+        }
         x = nx;
         y = ny;
         w = nw;

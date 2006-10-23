@@ -132,6 +132,10 @@ public class Spell
     {
         myspellpic   =
             javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(filename));
+        if (myspellpic == null)
+        {
+            throw new IllegalArgumentException("resource '"+filename+"' does not exist");
+        }
         myname = spellname;
         myid = id;
     }
