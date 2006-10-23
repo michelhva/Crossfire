@@ -65,7 +65,6 @@ public class CfPlayer extends CfItem
             {
                 case Stats.CS_STAT_EXP:
                     long experi = dis.readUnsignedShort();
-                    System.out.println("Setting experience to:"+experi);
                     mystats.setExperience(experi);
                     pos+=2;
                     break;
