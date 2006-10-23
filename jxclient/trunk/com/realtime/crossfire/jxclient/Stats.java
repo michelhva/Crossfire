@@ -166,6 +166,9 @@ public class Stats
      * @since 1.0
      */
     public static final int CS_STAT_EXP64 = 28;
+    public static final int CS_STAT_SPELL_ATTUNE = 29;
+    public static final int CS_STAT_SPELL_REPEL = 30;
+    public static final int CS_STAT_SPELL_DENY = 31;
 
     /* Start & end of resistances, inclusive. */
     /**
