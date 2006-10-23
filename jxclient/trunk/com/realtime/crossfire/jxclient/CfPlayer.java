@@ -133,6 +133,12 @@ public class CfPlayer extends CfItem
                     mystats.setStat(stat, dis.readShort());
                     pos+=2;
                     break;
+                case Stats.CS_STAT_SPELL_ATTUNE:
+                case Stats.CS_STAT_SPELL_REPEL:
+                case Stats.CS_STAT_SPELL_DENY:
+                    dis.readInt(); // TODO: set spell paths
+                    pos+=4;
+                    break;
                 default:
                     if ((stat >=100) && (stat < (100+Stats.RESIST_TYPES)))
                     {
