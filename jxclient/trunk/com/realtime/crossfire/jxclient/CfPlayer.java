@@ -152,6 +152,10 @@ public class CfPlayer extends CfItem
                         sk.setExperience(dis.readLong());
                         pos+=9;
                     }
+                    else
+                    {
+                        throw new IOException("unknown stat value: "+stat);
+                    }
                     break;
             }
         }
