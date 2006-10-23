@@ -89,20 +89,20 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
             switch (myorientation)
             {
                 case ORIENTATION_WE:
-                    fw = (int)((float)myvalue*((float)w/(float)mymax));
+                    fw = (int)((float)Math.min(myvalue, mymax)*((float)w/(float)mymax));
                     fh = h;
                     break;
                 case ORIENTATION_EW:
-                    fw = (int)((float)myvalue*((float)w/(float)mymax));
+                    fw = (int)((float)Math.min(myvalue, mymax)*((float)w/(float)mymax));
                     fh = h;
                     fx = w - fw;
                     break;
                 case ORIENTATION_NS:
-                    fh = (int)((float)myvalue*((float)h/(float)mymax));
+                    fh = (int)((float)Math.min(myvalue, mymax)*((float)h/(float)mymax));
                     fw=w;
                     break;
                 case ORIENTATION_SN:
-                    fh = (int)((float)myvalue*((float)h/(float)mymax));
+                    fh = (int)((float)Math.min(myvalue, mymax)*((float)h/(float)mymax));
                     fy = h - fh;
                     fw=w;
                     break;
