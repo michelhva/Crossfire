@@ -1,9 +1,9 @@
 arch map
+name <unnamed>
 region scorn
-hp 0
-sp 19
-x 20
-y 20
+width 20
+height 20
+enter_y 19
 end
 arch brush
 end
@@ -73,8 +73,7 @@ end
 arch grass
 x 1
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 1
 end
 arch grass
@@ -173,8 +172,7 @@ arch grass
 x 2
 y 1
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 2
 y 1
 end
@@ -750,8 +748,7 @@ arch grass
 x 7
 y 1
 end
-arch biglake_se
-name sea
+arch sea_se
 x 7
 y 1
 end
@@ -1435,8 +1432,7 @@ end
 arch grass
 x 13
 end
-arch biglake_se
-name sea
+arch sea_se
 x 13
 end
 arch grass
