@@ -1,13 +1,13 @@
 arch map
-region scorn
 name jones
+region scorn
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb 23 15:28:18 1994
 endmsg
-width 20
-height 20
 end
 arch exit
 slaying /world/world_105_116
@@ -217,9 +217,9 @@ y 12
 end
 arch chest
 name "don't open"
-randomitems none
 x 1
 y 12
+randomitems none
 arch trap_needle
 end
 arch random_talisman
@@ -330,9 +330,9 @@ x 2
 y 5
 end
 arch door_look_1
-pass_thru 0
 x 2
 y 5
+pass_thru 0
 end
 arch woodfloor
 x 2
@@ -363,9 +363,9 @@ x 2
 y 11
 end
 arch door_look_1
-pass_thru 0
 x 2
 y 11
+pass_thru 0
 end
 arch woodfloor
 x 2
@@ -396,9 +396,9 @@ x 2
 y 15
 end
 arch door_look_2
-pass_thru 0
 x 2
 y 15
+pass_thru 0
 end
 arch woodfloor
 x 2
@@ -760,9 +760,9 @@ x 5
 y 8
 end
 arch door_look_2
-pass_thru 0
 x 5
 y 8
+pass_thru 0
 end
 arch woodfloor
 x 5
@@ -969,9 +969,9 @@ x 7
 y 4
 end
 arch door_look_1
-pass_thru 0
 x 7
 y 4
+pass_thru 0
 end
 arch woodfloor
 x 7
@@ -1104,9 +1104,9 @@ x 8
 y 6
 end
 arch door_look_1
-pass_thru 0
 x 8
 y 6
+pass_thru 0
 end
 arch woodfloor
 x 8
@@ -1279,9 +1279,9 @@ x 9
 y 13
 end
 arch door_look_1
-pass_thru 0
 x 9
 y 13
+pass_thru 0
 end
 arch woodfloor
 x 9
@@ -1575,10 +1575,6 @@ arch woodfloor
 x 11
 y 17
 end
-arch bed_save
-x 11
-y 17
-end
 arch wwall_2_1_2
 x 11
 y 17
@@ -1638,9 +1634,9 @@ x 12
 y 6
 end
 arch door_look_1
-pass_thru 0
 x 12
 y 6
+pass_thru 0
 end
 arch woodfloor
 x 12
@@ -1687,6 +1683,10 @@ x 12
 y 15
 end
 arch woodfloor
+x 12
+y 16
+end
+arch bed_save
 x 12
 y 16
 end
@@ -1793,9 +1793,9 @@ x 13
 y 13
 end
 arch door_look_1
-pass_thru 0
 x 13
 y 13
+pass_thru 0
 end
 arch woodfloor
 x 13
@@ -1892,9 +1892,9 @@ x 14
 y 8
 end
 arch door_look_2
-pass_thru 0
 x 14
 y 8
+pass_thru 0
 end
 arch woodfloor
 x 14
@@ -1995,9 +1995,9 @@ x 15
 y 5
 end
 arch door_look_1
-pass_thru 0
 x 15
 y 5
+pass_thru 0
 end
 arch grass
 x 15
@@ -2020,9 +2020,9 @@ x 15
 y 10
 end
 arch ant
-speed_left -0.130000
 x 15
 y 10
+speed_left -0.130000
 end
 arch grass
 x 15
@@ -2057,9 +2057,9 @@ x 15
 y 17
 end
 arch door_look_1
-pass_thru 0
 x 15
 y 17
+pass_thru 0
 end
 arch woodfloor
 x 15
@@ -2100,9 +2100,9 @@ x 16
 y 5
 end
 arch door_look_1
-pass_thru 0
 x 16
 y 5
+pass_thru 0
 end
 arch grass
 x 16
@@ -2113,9 +2113,9 @@ x 16
 y 7
 end
 arch ant
-speed_left -0.130000
 x 16
 y 7
+speed_left -0.130000
 end
 arch grass
 x 16
@@ -2146,9 +2146,9 @@ x 16
 y 13
 end
 arch door_look_1
-pass_thru 0
 x 16
 y 13
+pass_thru 0
 end
 arch woodfloor
 x 16
@@ -2175,9 +2175,9 @@ x 16
 y 18
 end
 arch door_look_2
-pass_thru 0
 x 16
 y 18
+pass_thru 0
 end
 arch woodfloor
 x 16
@@ -2258,9 +2258,9 @@ x 17
 y 12
 end
 arch ant
-speed_left -0.130000
 x 17
 y 12
+speed_left -0.130000
 end
 arch woodfloor
 x 17
@@ -2348,9 +2348,9 @@ x 18
 y 6
 end
 arch generate_bee
-speed_left -0.160000
 x 18
 y 6
+speed_left -0.160000
 end
 arch grass
 x 18
@@ -2381,9 +2381,9 @@ x 18
 y 10
 end
 arch generate_ant
-speed_left -0.190000
 x 18
 y 10
+speed_left -0.190000
 end
 arch grass
 x 18
@@ -2446,9 +2446,9 @@ y 18
 end
 arch chest
 name "don't open"
-randomitems none
 x 18
 y 18
+randomitems none
 arch rune_shock
 level 5
 end
