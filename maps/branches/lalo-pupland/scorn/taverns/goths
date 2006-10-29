@@ -1,0 +1,7359 @@
+arch map
+name goths
+region scorn
+msg
+Creator:
+Email:
+Date: Fri Oct 15 13:54:27 1993
+endmsg
+width 34
+height 33
+enter_x 17
+enter_y 32
+reset_timeout 1800
+end
+arch woodfloor
+end
+arch wall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch wall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wall_3_2
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch wall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch wall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch wall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch wall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch wall_2_1_1
+y 10
+end
+arch woodfloor
+y 11
+end
+arch wall_2_1_1
+y 11
+end
+arch woodfloor
+y 12
+end
+arch wall_2_1_1
+y 12
+end
+arch woodfloor
+y 13
+end
+arch wall_2_1_1
+y 13
+end
+arch woodfloor
+y 14
+end
+arch wall_2_1_1
+y 14
+end
+arch woodfloor
+y 15
+end
+arch wall_2_1_1
+y 15
+end
+arch woodfloor
+y 16
+end
+arch wall_2_1_1
+y 16
+end
+arch woodfloor
+y 17
+end
+arch wall_2_1_1
+y 17
+end
+arch woodfloor
+y 18
+end
+arch wall_2_1_1
+y 18
+end
+arch woodfloor
+y 19
+end
+arch wall_2_1_1
+y 19
+end
+arch woodfloor
+y 20
+end
+arch wall_3_2
+y 20
+end
+arch woodfloor
+y 21
+end
+arch wall_2_1_1
+y 21
+end
+arch woodfloor
+y 22
+end
+arch wall_2_1_1
+y 22
+end
+arch woodfloor
+y 23
+end
+arch wall_2_1_1
+y 23
+end
+arch woodfloor
+y 24
+end
+arch wall_2_1_1
+y 24
+end
+arch woodfloor
+y 25
+end
+arch wall_2_1_1
+y 25
+end
+arch woodfloor
+y 26
+end
+arch wall_2_1_1
+y 26
+end
+arch woodfloor
+y 27
+end
+arch wall_2_1_1
+y 27
+end
+arch woodfloor
+y 28
+end
+arch wall_2_1_1
+y 28
+end
+arch woodfloor
+y 29
+end
+arch wall_2_1_1
+y 29
+end
+arch woodfloor
+y 30
+end
+arch wall_2_1_1
+y 30
+end
+arch woodfloor
+y 31
+end
+arch wall_2_1_1
+y 31
+end
+arch woodfloor
+y 32
+end
+arch wall_2_2_1
+y 32
+end
+arch woodfloor
+x 1
+end
+arch wall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch button_small
+connected 1
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch wall_1_3
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch man
+name Drunk
+msg
+@match name|Name
+My name is Dilek.
+@match job|Job
+Oh...I just sit here and watch.
+@match watch|Watch
+yeah...i watch the *belch*......I dont feel well.
+@match hello|hi
+(hic) Hey buddy, buy me a round??? (hic)
+@match beer|round|booze|Beer|Booze
+Yeah, if you get me some, I can do you a favor.
+*Dilek looks at the empty bottle on his TABLE.*
+@match *
+Beer helps me on the job
+endmsg
+friendly 1
+unaggressive 0
+x 1
+y 6
+end
+arch altar
+msg
+Click! The gate has opened...
+endmsg
+slaying booze
+food 1
+invisible 1
+connected 1
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 7
+end
+arch table_4
+no_pick 1
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch chair_1.4
+x 1
+y 10
+end
+arch merchant
+name Bragh O'Leary
+msg
+@match Bragh|bragh|O'Leary|o'leary
+Aye, I be BRAGH O'LEARY former OWNER of the
+Scorn TRAININ' CENTER. You be some whelp
+here to gloat over me loss of me TRAININ' CENTER?
+Away wit' ye! Bartender! Another Booze! (hic)
+@match Train|train|Center|center
+You liked me TRAININ' CENTER did ye? Well good
+for ye! Some bleedin' CONSORTIUM bought it from
+the Bank afore I could raise the platinum to pay
+off the foreclosure. Buncha zombie lovers. (hic)
+@match Owner|owner
+Aye. I were the owner of the TRAININ' CENTER. I
+tol' the bloody Bank I'd gi' 'em their bloody
+money. Bleedin' slime foreclosed on me.
+@match Consortium|consortium
+The consortamum ... constortanum ... BLAST! I
+dinno who they be. I just hears they broke up
+and MOVED me TRAININ' CENTER to other parts
+o' the world. The slime! (hic) I also hears they
+ha' repr'sentatives tha' hang out in taverns to
+recruit people inta their centers.
+@match Move|move
+Well, young'un, I dinna know the details but I
+hears the high level TRAININ' CENTERs are in the
+wilderness near Santo Dominion, Darcap, Brest
+'n Navar. But th' term "near" is used a bit
+loosely here ye unnershtan'? (hic) I dinna know
+what the bloody fools did wit' me low level
+TRAININ' CENTERs. Anyway, ask around in the
+taverns in them towns. Some'n there will be
+able to answer ye questions.
+@match *
+(hic) Leave me be. Kin ye no see I be drinkin'!?
+endmsg
+friendly 1
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
+end
+arch magic_ear
+msg
+@match hard
+If you're 12th rank or better, you might
+want to seek the Temple of Darkness.
+You need a strong fighter along on the
+quest:  their god has granted their prayer
+to ban magic in his temple proper.  I
+battled one of their adepts for a time.
+He had such incredible reserves of power
+that I had to withdraw from the fight.
+I'm sure that he must have had a Power
+Crystal.  The Temple is in a Dark Forest
+just north of the Great East Road.
+endmsg
+x 1
+y 14
+end
+arch magic_ear
+msg
+@match middle
+Well, if you're past the 9th Tier in
+your guilds, and you have some strong
+friends, you might want to stop Yqreth
+from desolating more land than he
+already has.  Got his hands on a new
+spell, he does, and he's abusing it.
+Turned to evil for sure, he has.  I've
+heard what some of his former servants
+have said about him.  If his soul
+doesn't belong to the Dark already,
+it will soon.  He resides in the
+Tower of the Stars, which is south
+of Scorn.  It's hard going to get
+there.
+endmsg
+x 1
+y 14
+end
+arch magic_ear
+msg
+@match easy
+Okay, if you're not past the 5th rank,
+then you'll probably be very happy to
+do a bit of community service.  The
+pirates are getting uppity:  this used
+to be a respectable town, and they're
+getting out of hand.  Go look around
+in some of the buildings near the docks,
+there are unsavory sorts running amok
+up there who should be taught good
+behavior!  There's supposed to be a
+pirate treasure on some islands you
+can get to if you take passage on
+a pirate ship.
+endmsg
+x 1
+y 14
+end
+arch wizard
+face wizard.151
+msg
+@match hi|Hi|hello|Hello
+Yes?  Adventurers eh?
+Well what do you want?
+Information?
+@match yes|Yes|information|info
+Yeah, that is what everyone does.
+They walk in here, and just because
+I'm sitting all alone they think they
+can pump me for information.  Well,
+you're lucky, I'm actually in a talkative
+mood.  So what type of adventure are you
+looking for?  An easy adventure?  A hard
+adventure?  Or something in the middle?
+endmsg
+type 0
+Str 15
+Con 5
+Pow 20
+hp 500
+exp 2000
+dam 10
+wc 10
+ac -3
+level 10
+resist_magic 30
+monster 1
+friendly 1
+can_cast_spell 1
+x 1
+y 14
+end
+arch woodfloor
+x 1
+y 15
+end
+arch woodfloor
+x 1
+y 16
+end
+arch woodfloor
+x 1
+y 17
+end
+arch woodfloor
+x 1
+y 18
+end
+arch magic_ear
+msg
+@match mountain
+I'll never forget that mountain.
+I fought a battle atop it with
+a dark spirit.  His evil had
+begun to poison the land around
+his lair, so I challenged him
+to battle.
+When he issued forth from
+his cave to do battle with me,
+I rose up into the air above him,
+and blasted him with fire.  He
+somehow survived that first blast,
+so I threw yet a greater at him.
+He survived that one too, so I
+stretched myself.  The next blast
+of fire scorched the mountain black:
+it remains so to this day.  Yet
+still he stood against me.  I
+thought he must somehow be immune,
+so I blasted him with lightning,
+using my last strength.  He was
+destroyed, but I never looked
+into his Cave.
+endmsg
+connected 7
+x 1
+y 18
+end
+arch chair_1.4
+x 1
+y 18
+end
+arch woodfloor
+x 1
+y 19
+end
+arch magic_ear
+msg
+@match Sword|sword
+You've heard the rumors about
+the goings on in Navar, at
+the end of the Great East Road?
+Well, Morkov, the former Wizard
+there, has turned to darkness.
+He's out-and-out sold his soul.
+Kill him and take his Sword.  He
+got it when he betrayed Navar
+and opened a gate for Evil to
+come through.  The flood of undead
+has taken over his Tower already.
+The idiot city council there
+hasn't taken action yet.  Perhaps
+they're waiting for someone of
+the 13th or 14th Tier in their
+guilds to go kick Morkov out.
+endmsg
+connected 7
+x 1
+y 19
+end
+arch wizard
+name wizard with an aura of great power
+face wizard_blue.131
+msg
+@match hi|Hi|Hello|hello
+Yes?  What do you want?
+All you adventurers are all alike.
+Greedy as hell.  You probably want
+me to tell you how to get your
+hands on some powerful magic, aren't
+you?  Well, that can be hard
+and dangerous.
+Got a deathwish?  Eh?
+@match yes|Yes|yup|aye
+Well, maybe your greed will
+keep you alive, then.  I've known
+some people who have dragged their
+bones out of the grave for greed.
+Smelly, and grumpy, every one!
+Never underestimate the power of
+greed!  Well, I know of two places
+where you can get your hands on
+a powerful item.  One I know for
+sure:  a powerful magical Sword,
+the other I'm not sure of,
+it's inside a mountain, I bet.  Which
+do you want to hear about?
+endmsg
+type 0
+Str 20
+Con 10
+Pow 50
+hp 10000
+exp 500
+dam 50
+wc -5
+speed 1.500000
+level 49
+resist_physical 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_turn_undead 30
+resist_fear 30
+resist_cancellation 30
+resist_deplete 30
+resist_death 30
+monster 1
+friendly 1
+can_cast_spell 1
+can_use_armour 0
+can_use_weapon 0
+x 1
+y 19
+end
+arch woodfloor
+x 1
+y 20
+end
+arch wall_2_1_2
+x 1
+y 20
+end
+arch woodfloor
+x 1
+y 21
+end
+arch woodfloor
+x 1
+y 22
+end
+arch woodfloor
+x 1
+y 23
+end
+arch chair_1.1
+x 1
+y 23
+end
+arch woman
+friendly 1
+x 1
+y 23
+end
+arch woodfloor
+x 1
+y 24
+end
+arch woman
+friendly 1
+x 1
+y 24
+end
+arch woodfloor
+x 1
+y 25
+end
+arch chair_1.1
+x 1
+y 25
+end
+arch woman
+friendly 1
+x 1
+y 25
+end
+arch woodfloor
+x 1
+y 26
+end
+arch chair_1.1
+x 1
+y 26
+end
+arch woman
+friendly 1
+x 1
+y 26
+end
+arch woodfloor
+x 1
+y 27
+end
+arch woodfloor
+x 1
+y 28
+end
+arch woodfloor
+x 1
+y 29
+end
+arch chair_1.1
+x 1
+y 29
+end
+arch woodfloor
+x 1
+y 30
+end
+arch woodfloor
+x 1
+y 31
+end
+arch woodfloor
+x 1
+y 32
+end
+arch wall_2_1_2
+x 1
+y 32
+end
+arch woodfloor
+x 2
+end
+arch wall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch stair_down
+name Stairs to the Cellar
+slaying goths0
+hp 4
+sp 1
+x 2
+y 1
+end
+arch button_small
+connected 1
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 2
+end
+arch button_small
+connected 1
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 3
+end
+arch igate_closed_1
+speed 0.500000
+connected 1
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch chair_1.1
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch table_3
+x 2
+y 10
+end
+arch booze
+no_pick 1
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch chair_1.3
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
+arch woodfloor
+x 2
+y 14
+end
+arch table_3
+x 2
+y 14
+end
+arch woodfloor
+x 2
+y 15
+end
+arch woodfloor
+x 2
+y 16
+end
+arch woodfloor
+x 2
+y 17
+end
+arch woodfloor
+x 2
+y 18
+end
+arch magic_ear
+msg
+@match cave|Cave
+I never explored his cave.  If
+you can get past his pets to his
+Chamber, you'll probably find
+something intereresting.  After
+the battle, the mountain was far
+too hot to be near, and I've had
+better things to do since then.
+I don't think you'll be able to
+pass his vicious pets unless
+you're at least 15th Tier in
+your guild.  The mountain can
+be found north of the bend
+in the Great East Road.
+endmsg
+connected 7
+x 2
+y 18
+end
+arch table_3
+x 2
+y 18
+end
+arch woodfloor
+x 2
+y 19
+end
+arch magic_ear
+msg
+@match fubar
+baz
+endmsg
+connected 7
+x 2
+y 19
+end
+arch chair_1.3
+x 2
+y 19
+end
+arch woodfloor
+x 2
+y 20
+end
+arch wall_2_1_2
+x 2
+y 20
+end
+arch woodfloor
+x 2
+y 21
+end
+arch woodfloor
+x 2
+y 22
+end
+arch woodfloor
+x 2
+y 23
+end
+arch table_2
+x 2
+y 23
+end
+arch woodfloor
+x 2
+y 24
+end
+arch table_2
+x 2
+y 24
+end
+arch woodfloor
+x 2
+y 25
+end
+arch table_2
+x 2
+y 25
+end
+arch woodfloor
+x 2
+y 26
+end
+arch table_2
+x 2
+y 26
+end
+arch woodfloor
+x 2
+y 27
+end
+arch table_2
+x 2
+y 27
+end
+arch woodfloor
+x 2
+y 28
+end
+arch table_2
+x 2
+y 28
+end
+arch woodfloor
+x 2
+y 29
+end
+arch table_2
+x 2
+y 29
+end
+arch woodfloor
+x 2
+y 30
+end
+arch woodfloor
+x 2
+y 31
+end
+arch woodfloor
+x 2
+y 32
+end
+arch wall_2_1_2
+x 2
+y 32
+end
+arch woodfloor
+x 3
+end
+arch wall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch button_small
+connected 1
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch wall_1_4
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch chair_1.2
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch chair_1.2
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch woodfloor
+x 3
+y 16
+end
+arch woodfloor
+x 3
+y 17
+end
+arch woodfloor
+x 3
+y 18
+end
+arch woodfloor
+x 3
+y 19
+end
+arch woodfloor
+x 3
+y 20
+end
+arch wall_2_1_2
+x 3
+y 20
+end
+arch woodfloor
+x 3
+y 21
+end
+arch woodfloor
+x 3
+y 22
+end
+arch woodfloor
+x 3
+y 23
+end
+arch chair_1.2
+x 3
+y 23
+end
+arch man
+friendly 1
+x 3
+y 23
+end
+arch woodfloor
+x 3
+y 24
+end
+arch chair_1.2
+x 3
+y 24
+end
+arch man
+friendly 1
+x 3
+y 24
+end
+arch woodfloor
+x 3
+y 25
+end
+arch chair_1.2
+x 3
+y 25
+end
+arch man
+friendly 1
+x 3
+y 25
+end
+arch woodfloor
+x 3
+y 26
+end
+arch chair_1.2
+x 3
+y 26
+end
+arch man
+friendly 1
+x 3
+y 26
+end
+arch woodfloor
+x 3
+y 27
+end
+arch chair_1.2
+x 3
+y 27
+end
+arch man
+friendly 1
+x 3
+y 27
+end
+arch woodfloor
+x 3
+y 28
+end
+arch woodfloor
+x 3
+y 29
+end
+arch chair_1.2
+x 3
+y 29
+end
+arch woodfloor
+x 3
+y 30
+end
+arch woodfloor
+x 3
+y 31
+end
+arch woodfloor
+x 3
+y 32
+end
+arch wall_2_1_2
+x 3
+y 32
+end
+arch woodfloor
+x 4
+end
+arch wall_3_3
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wall_2_1_1
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch wall_2_1_1
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch wall_2_2_4
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 13
+end
+arch woodfloor
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 15
+end
+arch woodfloor
+x 4
+y 16
+end
+arch woodfloor
+x 4
+y 17
+end
+arch woodfloor
+x 4
+y 18
+end
+arch woodfloor
+x 4
+y 19
+end
+arch woodfloor
+x 4
+y 20
+end
+arch wall_2_1_2
+x 4
+y 20
+end
+arch woodfloor
+x 4
+y 21
+end
+arch woodfloor
+x 4
+y 22
+end
+arch woodfloor
+x 4
+y 23
+end
+arch chair_1.1
+x 4
+y 23
+end
+arch woman
+friendly 1
+x 4
+y 23
+end
+arch woodfloor
+x 4
+y 24
+end
+arch chair_1.1
+x 4
+y 24
+end
+arch woman
+friendly 1
+x 4
+y 24
+end
+arch woodfloor
+x 4
+y 25
+end
+arch woman
+friendly 1
+x 4
+y 25
+end
+arch woodfloor
+x 4
+y 26
+end
+arch chair_1.1
+x 4
+y 26
+end
+arch woman
+friendly 1
+x 4
+y 26
+end
+arch woodfloor
+x 4
+y 27
+end
+arch chair_1.1
+x 4
+y 27
+end
+arch woman
+friendly 1
+x 4
+y 27
+end
+arch woodfloor
+x 4
+y 28
+end
+arch woodfloor
+x 4
+y 29
+end
+arch woodfloor
+x 4
+y 30
+end
+arch woodfloor
+x 4
+y 31
+end
+arch woodfloor
+x 4
+y 32
+end
+arch wall_2_1_2
+x 4
+y 32
+end
+arch woodfloor
+x 5
+end
+arch wall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch slotmachine2
+name Gerty Gold
+slaying
+food 0
+x 5
+y 1
+arch event_apply
+title Python
+slaying /python/casino/goldslots.py
+end
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch woodfloor
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 15
+end
+arch woodfloor
+x 5
+y 16
+end
+arch woodfloor
+x 5
+y 17
+end
+arch woodfloor
+x 5
+y 18
+end
+arch woodfloor
+x 5
+y 19
+end
+arch woodfloor
+x 5
+y 20
+end
+arch wall_2_1_2
+x 5
+y 20
+end
+arch woodfloor
+x 5
+y 21
+end
+arch woodfloor
+x 5
+y 22
+end
+arch woodfloor
+x 5
+y 23
+end
+arch table_2
+x 5
+y 23
+end
+arch woodfloor
+x 5
+y 24
+end
+arch table_2
+x 5
+y 24
+end
+arch woodfloor
+x 5
+y 25
+end
+arch table_2
+x 5
+y 25
+end
+arch woodfloor
+x 5
+y 26
+end
+arch table_2
+x 5
+y 26
+end
+arch woodfloor
+x 5
+y 27
+end
+arch table_2
+x 5
+y 27
+end
+arch woodfloor
+x 5
+y 28
+end
+arch table_2
+x 5
+y 28
+end
+arch woodfloor
+x 5
+y 29
+end
+arch woodfloor
+x 5
+y 30
+end
+arch table_4
+x 5
+y 30
+end
+arch altar
+x 5
+y 30
+end
+arch woodfloor
+x 5
+y 31
+end
+arch woodfloor
+x 5
+y 32
+end
+arch wall_2_1_2
+x 5
+y 32
+end
+arch woodfloor
+x 6
+end
+arch wall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch sign
+msg
+Presenting the Lucky Lady Slots
+courtesy of Casino Infernal
+Pull the handle and try your luck.
+Please visit our Casino in Navar!
+endmsg
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 15
+end
+arch woodfloor
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 17
+end
+arch woodfloor
+x 6
+y 18
+end
+arch woodfloor
+x 6
+y 19
+end
+arch woodfloor
+x 6
+y 20
+end
+arch wall_1_3
+x 6
+y 20
+end
+arch woodfloor
+x 6
+y 21
+end
+arch woodfloor
+x 6
+y 22
+end
+arch woodfloor
+x 6
+y 23
+end
+arch chair_1.2
+x 6
+y 23
+end
+arch man
+friendly 1
+x 6
+y 23
+end
+arch woodfloor
+x 6
+y 24
+end
+arch man
+friendly 1
+x 6
+y 24
+end
+arch woodfloor
+x 6
+y 25
+end
+arch chair_1.2
+x 6
+y 25
+end
+arch man
+friendly 1
+x 6
+y 25
+end
+arch woodfloor
+x 6
+y 26
+end
+arch chair_1.2
+x 6
+y 26
+end
+arch man
+friendly 1
+x 6
+y 26
+end
+arch woodfloor
+x 6
+y 27
+end
+arch woodfloor
+x 6
+y 28
+end
+arch chair_1.2
+x 6
+y 28
+end
+arch woodfloor
+x 6
+y 29
+end
+arch woodfloor
+x 6
+y 30
+end
+arch woodfloor
+x 6
+y 31
+end
+arch c_man
+msg
+@match job|Job
+We're playing Bingo here! I am the Bingo
+Master!
+@match name|Name
+Jack, call me jack......A - 3
+@match bingo|Bingo
+Yes! a great contest today, I am going to be
+Rich, just look at this crowd! SUCKERS!..C - 3
+@match crowd
+Oh, WE HAVE A WINNER, next game in 10
+minutes.
+@match *
+B - 5...... B -
+endmsg
+friendly 1
+unaggressive 0
+x 6
+y 31
+end
+arch woodfloor
+x 6
+y 32
+end
+arch wall_2_1_2
+x 6
+y 32
+end
+arch woodfloor
+x 7
+end
+arch wall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch slotmachine3
+name Sally Silver
+slaying
+food 0
+x 7
+y 1
+arch event_apply
+title Python
+slaying /python/casino/silverslots.py
+end
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch cwall_0
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch woodfloor
+x 7
+y 14
+end
+arch cwall_0
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 15
+end
+arch woodfloor
+x 7
+y 16
+end
+arch woodfloor
+x 7
+y 17
+end
+arch woodfloor
+x 7
+y 18
+end
+arch woodfloor
+x 7
+y 19
+end
+arch woodfloor
+x 7
+y 20
+end
+arch woodfloor
+x 7
+y 21
+end
+arch woodfloor
+x 7
+y 22
+end
+arch woodfloor
+x 7
+y 23
+end
+arch chair_1.1
+x 7
+y 23
+end
+arch woman
+friendly 1
+x 7
+y 23
+end
+arch woodfloor
+x 7
+y 24
+end
+arch chair_1.1
+x 7
+y 24
+end
+arch woman
+friendly 1
+x 7
+y 24
+end
+arch woodfloor
+x 7
+y 25
+end
+arch woman
+friendly 1
+x 7
+y 25
+end
+arch woodfloor
+x 7
+y 26
+end
+arch chair_1.1
+x 7
+y 26
+end
+arch woman
+friendly 1
+x 7
+y 26
+end
+arch woodfloor
+x 7
+y 27
+end
+arch chair_1.1
+x 7
+y 27
+end
+arch woman
+friendly 1
+x 7
+y 27
+end
+arch woodfloor
+x 7
+y 28
+end
+arch woodfloor
+x 7
+y 29
+end
+arch woodfloor
+x 7
+y 30
+end
+arch chair_1.1
+x 7
+y 30
+end
+arch woodfloor
+x 7
+y 31
+end
+arch woodfloor
+x 7
+y 32
+end
+arch wall_2_1_2
+x 7
+y 32
+end
+arch woodfloor
+x 8
+end
+arch wall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch chair_1.4
+x 8
+y 10
+end
+arch dwarf
+name Lumberjack
+msg
+@match hello|job|Hello|job
+I chop down trees in the forest.
+@match trees|forest
+I chop them down in the great forest
+to the east.  I wandered across a
+great tower one time.
+@match tower|great
+The tower of Sokoban.  Apparantly, he
+was a puzzle creator.  For those that
+can solve the puzzles, there is
+rumored to be nice treasure.
+endmsg
+friendly 1
+unaggressive 0
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch chair_1.4
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch woodfloor
+x 8
+y 14
+end
+arch woodfloor
+x 8
+y 15
+end
+arch chair_1.4
+x 8
+y 15
+end
+arch woodfloor
+x 8
+y 16
+end
+arch woodfloor
+x 8
+y 17
+end
+arch woodfloor
+x 8
+y 18
+end
+arch woodfloor
+x 8
+y 19
+end
+arch woodfloor
+x 8
+y 20
+end
+arch woodfloor
+x 8
+y 21
+end
+arch woodfloor
+x 8
+y 22
+end
+arch woodfloor
+x 8
+y 23
+end
+arch table_2
+x 8
+y 23
+end
+arch woodfloor
+x 8
+y 24
+end
+arch table_2
+x 8
+y 24
+end
+arch woodfloor
+x 8
+y 25
+end
+arch table_2
+x 8
+y 25
+end
+arch woodfloor
+x 8
+y 26
+end
+arch table_2
+x 8
+y 26
+end
+arch woodfloor
+x 8
+y 27
+end
+arch table_2
+x 8
+y 27
+end
+arch woodfloor
+x 8
+y 28
+end
+arch table_2
+x 8
+y 28
+end
+arch woodfloor
+x 8
+y 29
+end
+arch table_2
+x 8
+y 29
+end
+arch woodfloor
+x 8
+y 30
+end
+arch woodfloor
+x 8
+y 31
+end
+arch woodfloor
+x 8
+y 32
+end
+arch wall_2_1_2
+x 8
+y 32
+end
+arch woodfloor
+x 9
+end
+arch wall_2_1_2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch chair_1.4
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch chair_1.1
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch table_3
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch table_3
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch woodfloor
+x 9
+y 14
+end
+arch woodfloor
+x 9
+y 15
+end
+arch table_3
+x 9
+y 15
+end
+arch woodfloor
+x 9
+y 16
+end
+arch chair_1.3
+x 9
+y 16
+end
+arch woodfloor
+x 9
+y 17
+end
+arch woodfloor
+x 9
+y 18
+end
+arch woodfloor
+x 9
+y 19
+end
+arch woodfloor
+x 9
+y 20
+end
+arch wall_1_4
+x 9
+y 20
+end
+arch woodfloor
+x 9
+y 21
+end
+arch woodfloor
+x 9
+y 22
+end
+arch woodfloor
+x 9
+y 23
+end
+arch chair_1.2
+x 9
+y 23
+end
+arch man
+friendly 1
+x 9
+y 23
+end
+arch woodfloor
+x 9
+y 24
+end
+arch chair_1.2
+x 9
+y 24
+end
+arch man
+friendly 1
+x 9
+y 24
+end
+arch woodfloor
+x 9
+y 25
+end
+arch chair_1.2
+x 9
+y 25
+end
+arch man
+friendly 1
+x 9
+y 25
+end
+arch woodfloor
+x 9
+y 26
+end
+arch man
+friendly 1
+x 9
+y 26
+end
+arch woodfloor
+x 9
+y 27
+end
+arch chair_1.2
+x 9
+y 27
+end
+arch man
+friendly 1
+x 9
+y 27
+end
+arch woodfloor
+x 9
+y 28
+end
+arch man
+msg
+@match mark|Mark
+Ya that's me, bugger off I'm on a roll here.
+O 47
+@match Amy|amy
+Ya my old lady, she's kind of
+mad at me right now...
+When I hit it big she'll sing
+a different tune though.
+@match goose|Goose|Esmeralda
+Ok, ok, don't hurt me.  I took her.
+Don't turn me in, if you did
+they'd take the goose for evidence
+and then you wouldn't get the reward.
+I hid the that bird at Amy's place.
+@match key|Key|door|door
+Ok, ok, the key's hidden at Swabbie's house
+Tell Chancy 'mumblypeg' and he'll fetch it.
+@match *
+go away I'm busy.
+N 15
+endmsg
+friendly 1
+x 9
+y 28
+end
+arch woodfloor
+x 9
+y 29
+end
+arch woodfloor
+x 9
+y 30
+end
+arch woodfloor
+x 9
+y 31
+end
+arch woodfloor
+x 9
+y 32
+end
+arch wall_2_1_2
+x 9
+y 32
+end
+arch woodfloor
+x 10
+end
+arch wall_2_1_2
+x 10
+end
+arch dungeon_magic
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 1
+end
+arch bench_1_1
+no_pass 1
+x 10
+y 1
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 2
+end
+arch bench_2_1_1
+no_pass 1
+x 10
+y 2
+end
+arch dungeon_magic
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 3
+end
+arch bench_2_2_1
+no_pass 1
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch chair_1.1
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch magic_ear
+x 10
+y 7
+end
+arch table_3
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch chair_1.3
+x 10
+y 12
+end
+arch woodfloor
+x 10
+y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch woodfloor
+x 10
+y 15
+end
+arch chair_1.2
+x 10
+y 15
+end
+arch woodfloor
+x 10
+y 16
+end
+arch courier
+name Joey the scribe
+msg
+@match Mark|mark
+Mark loves to gamble, owes me a bunch.
+Always first in line to the bingo.
+@match joke|yes|Joke|Yes
+I never wanted to be a scribe,
+I always wanted to do stand-up.
+Did you hear the one about the Zombie and
+the princess?
+She always had a headache
+because he kept eating her brains!
+...
+...
+Hey, that's quality material buddy!
+@match job|Job|scribe|Scribe
+Ya I just rowed in from Lake Country
+and boy are my arms tired...
+Badaboom....
+no?
+That one killed them in Pupland...
+Take my wight...please.
+@match *
+Want to hear a joke?
+endmsg
+monster 0
+friendly 1
+stand_still 1
+x 10
+y 16
+end
+arch woodfloor
+x 10
+y 17
+end
+arch woodfloor
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 19
+end
+arch woodfloor
+x 10
+y 20
+end
+arch wall_2_1_2
+x 10
+y 20
+end
+arch woodfloor
+x 10
+y 21
+end
+arch woodfloor
+x 10
+y 22
+end
+arch woodfloor
+x 10
+y 23
+end
+arch woodfloor
+x 10
+y 24
+end
+arch woodfloor
+x 10
+y 25
+end
+arch woodfloor
+x 10
+y 26
+end
+arch woodfloor
+x 10
+y 27
+end
+arch woodfloor
+x 10
+y 28
+end
+arch woodfloor
+x 10
+y 29
+end
+arch woodfloor
+x 10
+y 30
+end
+arch woodfloor
+x 10
+y 31
+end
+arch woodfloor
+x 10
+y 32
+end
+arch wall_2_1_2
+x 10
+y 32
+end
+arch woodfloor
+x 11
+end
+arch wall_2_1_2
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch rock
+x 11
+y 1
+end
+arch booze
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch dungeon_magic
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 11
+y 4
+end
+arch chair_1.1
+x 11
+y 4
+end
+arch elf_1
+name Silinar
+msg
+@match hi|Hi|hello|Hello
+Greetings.  Just having a drink after my
+visit to the valley of the sisters.
+@match valley|Valley|sisters|Sisters
+Yes - a very nasty place.  You should
+be at least 20th tier before you
+wander in, maybe a bit less if you
+have some friends.  Do you want to
+know where it is located?
+@match located|Located|location|Location
+It is in the mountain range south of Darcap.
+The mountains flatten out some to reveal
+a small lake.
+endmsg
+hp 300
+unaggressive 0
+friendly 1
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch magic_ear
+x 11
+y 7
+end
+arch chair_1.2
+x 11
+y 7
+end
+arch priest
+name Drachnak the Priest
+msg
+@match hi|Hi|hello|Hello
+You seem suprised to see a priest
+here drowning his sorrows in drink.
+Well, my friends, I'm near despair.
+Evil has taken my church from me,
+what was once holy is now perverted
+to evil.  Are you going to help me
+or are you here to just laugh at
+me?
+@match help
+Well, thank you.  I hope you have
+passed the Third Tier in your guilds:
+otherwise helping me will be the death
+of you.  My church is overrun by zombies.
+If you can get rid of them, you may take
+anything of value you find there as a
+reward.  Its on the south side of town.
+endmsg
+type 0
+Str 10
+Con 5
+Wis 25
+Pow 5
+Cha 20
+exp 300
+dam 10
+wc 15
+ac 3
+level 5
+resist_magic 100
+monster 1
+friendly 1
+can_cast_spell 1
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch woodfloor
+x 11
+y 15
+end
+arch woodfloor
+x 11
+y 16
+end
+arch woodfloor
+x 11
+y 17
+end
+arch woodfloor
+x 11
+y 18
+end
+arch woodfloor
+x 11
+y 19
+end
+arch woodfloor
+x 11
+y 20
+end
+arch wall_2_2_3
+x 11
+y 20
+end
+arch woodfloor
+x 11
+y 21
+end
+arch wall_2_1_1
+x 11
+y 21
+end
+arch woodfloor
+x 11
+y 22
+end
+arch wall_2_1_1
+x 11
+y 22
+end
+arch woodfloor
+x 11
+y 23
+end
+arch wall_2_1_1
+x 11
+y 23
+end
+arch woodfloor
+x 11
+y 24
+end
+arch wall_2_1_1
+x 11
+y 24
+end
+arch woodfloor
+x 11
+y 25
+end
+arch wall_2_1_1
+x 11
+y 25
+end
+arch woodfloor
+x 11
+y 26
+end
+arch wall_2_1_1
+x 11
+y 26
+end
+arch woodfloor
+x 11
+y 27
+end
+arch wall_2_1_1
+x 11
+y 27
+end
+arch woodfloor
+x 11
+y 28
+end
+arch wall_2_1_1
+x 11
+y 28
+end
+arch woodfloor
+x 11
+y 29
+end
+arch wall_2_1_1
+x 11
+y 29
+end
+arch woodfloor
+x 11
+y 30
+end
+arch wall_2_1_1
+x 11
+y 30
+end
+arch woodfloor
+x 11
+y 31
+end
+arch wall_2_1_1
+x 11
+y 31
+end
+arch woodfloor
+x 11
+y 32
+end
+arch wall_3_1
+x 11
+y 32
+end
+arch woodfloor
+x 12
+end
+arch wall_2_1_2
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch rock
+x 12
+y 1
+end
+arch booze
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 12
+y 4
+end
+arch chair_1.3
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 15
+end
+arch woodfloor
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 17
+end
+arch woodfloor
+x 12
+y 18
+end
+arch woodfloor
+x 12
+y 19
+end
+arch woodfloor
+x 12
+y 20
+end
+arch woodfloor
+x 12
+y 21
+end
+arch woodfloor
+x 12
+y 22
+end
+arch woodfloor
+x 12
+y 23
+end
+arch woodfloor
+x 12
+y 24
+end
+arch woodfloor
+x 12
+y 25
+end
+arch woodfloor
+x 12
+y 26
+end
+arch woodfloor
+x 12
+y 27
+end
+arch woodfloor
+x 12
+y 28
+end
+arch woodfloor
+x 12
+y 29
+end
+arch woodfloor
+x 12
+y 30
+end
+arch woodfloor
+x 12
+y 31
+end
+arch woodfloor
+x 12
+y 32
+end
+arch wall_2_1_2
+x 12
+y 32
+end
+arch woodfloor
+x 13
+end
+arch wall_2_1_2
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch rock
+x 13
+y 1
+end
+arch booze
+x 13
+y 1
+end
+arch woodfloor
+x 13
+y 2
+end
+arch dungeon_magic
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch table_3
+x 13
+y 11
+end
+arch woodfloor
+x 13
+y 12
+end
+arch chair_1.3
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
+end
+arch woodfloor
+x 13
+y 15
+end
+arch woodfloor
+x 13
+y 16
+end
+arch woodfloor
+x 13
+y 17
+end
+arch woodfloor
+x 13
+y 18
+end
+arch woodfloor
+x 13
+y 19
+end
+arch woodfloor
+x 13
+y 20
+end
+arch woodfloor
+x 13
+y 21
+end
+arch woodfloor
+x 13
+y 22
+end
+arch woodfloor
+x 13
+y 23
+end
+arch woodfloor
+x 13
+y 24
+end
+arch woodfloor
+x 13
+y 25
+end
+arch woodfloor
+x 13
+y 26
+end
+arch woodfloor
+x 13
+y 27
+end
+arch woodfloor
+x 13
+y 28
+end
+arch woodfloor
+x 13
+y 29
+end
+arch woodfloor
+x 13
+y 30
+end
+arch woodfloor
+x 13
+y 31
+end
+arch woodfloor
+x 13
+y 32
+end
+arch wall_2_1_2
+x 13
+y 32
+end
+arch woodfloor
+x 14
+end
+arch wall_2_1_2
+x 14
+end
+arch woodfloor
+x 14
+y 1
+end
+arch rock
+x 14
+y 1
+end
+arch booze
+x 14
+y 1
+end
+arch woodfloor
+x 14
+y 2
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch cwall_0
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
+arch woodfloor
+x 14
+y 10
+end
+arch woodfloor
+x 14
+y 11
+end
+arch chair_1.2
+x 14
+y 11
+end
+arch woodfloor
+x 14
+y 12
+end
+arch woodfloor
+x 14
+y 13
+end
+arch woodfloor
+x 14
+y 14
+end
+arch cwall_0
+x 14
+y 14
+end
+arch woodfloor
+x 14
+y 15
+end
+arch woodfloor
+x 14
+y 16
+end
+arch table_3
+x 14
+y 16
+end
+arch woodfloor
+x 14
+y 17
+end
+arch table_3
+x 14
+y 17
+end
+arch woodfloor
+x 14
+y 18
+end
+arch table_3
+x 14
+y 18
+end
+arch woodfloor
+x 14
+y 19
+end
+arch woodfloor
+x 14
+y 20
+end
+arch woodfloor
+x 14
+y 21
+end
+arch cwall_0
+x 14
+y 21
+end
+arch woodfloor
+x 14
+y 22
+end
+arch woodfloor
+x 14
+y 23
+end
+arch woodfloor
+x 14
+y 24
+end
+arch woodfloor
+x 14
+y 25
+end
+arch woodfloor
+x 14
+y 26
+end
+arch woodfloor
+x 14
+y 27
+end
+arch cwall_0
+x 14
+y 27
+end
+arch woodfloor
+x 14
+y 28
+end
+arch woodfloor
+x 14
+y 29
+end
+arch woodfloor
+x 14
+y 30
+end
+arch woodfloor
+x 14
+y 31
+end
+arch woodfloor
+x 14
+y 32
+end
+arch wall_2_1_2
+x 14
+y 32
+end
+arch woodfloor
+x 15
+end
+arch wall_2_1_2
+x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch rock
+x 15
+y 1
+end
+arch booze
+x 15
+y 1
+end
+arch woodfloor
+x 15
+y 2
+end
+arch dungeon_magic
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 15
+y 4
+end
+arch chair_1.3
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
+end
+arch woodfloor
+x 15
+y 10
+end
+arch woodfloor
+x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch woodfloor
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
+end
+arch woodfloor
+x 15
+y 16
+end
+arch chair_1.2
+x 15
+y 16
+end
+arch woodfloor
+x 15
+y 17
+end
+arch chair_1.2
+x 15
+y 17
+end
+arch woodfloor
+x 15
+y 18
+end
+arch chair_1.2
+x 15
+y 18
+end
+arch woodfloor
+x 15
+y 19
+end
+arch woodfloor
+x 15
+y 20
+end
+arch woodfloor
+x 15
+y 21
+end
+arch woodfloor
+x 15
+y 22
+end
+arch woodfloor
+x 15
+y 23
+end
+arch woodfloor
+x 15
+y 24
+end
+arch woodfloor
+x 15
+y 25
+end
+arch woodfloor
+x 15
+y 26
+end
+arch woodfloor
+x 15
+y 27
+end
+arch woodfloor
+x 15
+y 28
+end
+arch woodfloor
+x 15
+y 29
+end
+arch woodfloor
+x 15
+y 30
+end
+arch woodfloor
+x 15
+y 31
+end
+arch woodfloor
+x 15
+y 32
+end
+arch wall_2_1_2
+x 15
+y 32
+end
+arch woodfloor
+x 16
+end
+arch wall_2_1_2
+x 16
+end
+arch woodfloor
+x 16
+y 1
+end
+arch rock
+x 16
+y 1
+end
+arch booze
+x 16
+y 1
+end
+arch woodfloor
+x 16
+y 2
+end
+arch dungeon_magic
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 16
+y 4
+end
+arch chair_1.3
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch chair_1.4
+x 16
+y 6
+end
+arch woodfloor
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 10
+end
+arch woodfloor
+x 16
+y 11
+end
+arch woodfloor
+x 16
+y 12
+end
+arch chair_1.4
+x 16
+y 12
+end
+arch warrior_1
+name 1st Tier warrior
+msg
+@match hi|Hi|Hello|hello
+Ho, travellers.  Seek ye the
+blood of foul monsters?
+@match yes|Yes|blood|monsters
+Plenty of monsters here.
+Who'd have thought that the city
+government would put up with it?  But
+yet, this town has many havens for
+goblins and the like.
+The giant's tower to the east,
+the uncouthly named 'newbie' tower
+just southwest of the lake,
+the mad mage's tower to the south
+of the lake, and even some undead
+in the church and house near there.
+That should do for a start.  If you
+desire a harder challenge, try the
+wizards over there.  They might
+have information.  Don't talk to
+the one in the corner, however, unless
+you're 15th Tier or better in your
+guilds.  He'll get you killed, taking
+on things that could kill you by
+sneezing!!!!  HAr har har!!!
+endmsg
+friendly 1
+unaggressive 0
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch woodfloor
+x 16
+y 14
+end
+arch woodfloor
+x 16
+y 15
+end
+arch woodfloor
+x 16
+y 16
+end
+arch woodfloor
+x 16
+y 17
+end
+arch woodfloor
+x 16
+y 18
+end
+arch woodfloor
+x 16
+y 19
+end
+arch woodfloor
+x 16
+y 20
+end
+arch woodfloor
+x 16
+y 21
+end
+arch woodfloor
+x 16
+y 22
+end
+arch woodfloor
+x 16
+y 23
+end
+arch woodfloor
+x 16
+y 24
+end
+arch woodfloor
+x 16
+y 25
+end
+arch woodfloor
+x 16
+y 26
+end
+arch woodfloor
+x 16
+y 27
+end
+arch man
+msg
+@match *
+Howdy
+endmsg
+unaggressive 0
+friendly 1
+x 16
+y 27
+arch event_say
+title Python
+slaying /python/IPO/seen.py
+end
+end
+arch woodfloor
+x 16
+y 28
+end
+arch woodfloor
+x 16
+y 29
+end
+arch woodfloor
+x 16
+y 30
+end
+arch woodfloor
+x 16
+y 31
+end
+arch woodfloor
+x 16
+y 32
+end
+arch wall_1_3
+x 16
+y 32
+end
+arch woodfloor
+x 17
+end
+arch wall_2_1_2
+x 17
+end
+arch woodfloor
+x 17
+y 1
+end
+arch rock
+x 17
+y 1
+end
+arch booze
+x 17
+y 1
+end
+arch woodfloor
+x 17
+y 2
+end
+arch warrior_1
+name Bar Tender
+face warrior.151
+msg
+@match [dD]rink|[bB]ooze|[bB]eer
+If you want something to drink, it will
+be 3 gp.
+endmsg
+speed 0.400000
+friendly 1
+unaggressive 0
+x 17
+y 2
+end
+arch dungeon_magic
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 17
+y 4
+end
+arch woodfloor
+x 17
+y 5
+end
+arch chair_1.1
+x 17
+y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch table_3
+x 17
+y 6
+end
+arch woodfloor
+x 17
+y 7
+end
+arch woodfloor
+x 17
+y 8
+end
+arch woodfloor
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 10
+end
+arch woodfloor
+x 17
+y 11
+end
+arch woodfloor
+x 17
+y 12
+end
+arch table_3
+x 17
+y 12
+end
+arch woodfloor
+x 17
+y 13
+end
+arch chair_1.3
+x 17
+y 13
+end
+arch woodfloor
+x 17
+y 14
+end
+arch woodfloor
+x 17
+y 15
+end
+arch woodfloor
+x 17
+y 16
+end
+arch woodfloor
+x 17
+y 17
+end
+arch woodfloor
+x 17
+y 18
+end
+arch woodfloor
+x 17
+y 19
+end
+arch woodfloor
+x 17
+y 20
+end
+arch woodfloor
+x 17
+y 21
+end
+arch woodfloor
+x 17
+y 22
+end
+arch woodfloor
+x 17
+y 23
+end
+arch woodfloor
+x 17
+y 24
+end
+arch woodfloor
+x 17
+y 25
+end
+arch woodfloor
+x 17
+y 26
+end
+arch woodfloor
+x 17
+y 27
+end
+arch woodfloor
+x 17
+y 28
+end
+arch woodfloor
+x 17
+y 29
+end
+arch woodfloor
+x 17
+y 30
+end
+arch woodfloor
+x 17
+y 31
+end
+arch woodfloor
+x 17
+y 32
+end
+arch oakdoor
+slaying /world/world_105_115
+hp 19
+sp 35
+x 17
+y 32
+end
+arch woodfloor
+x 18
+end
+arch wall_2_1_2
+x 18
+end
+arch woodfloor
+x 18
+y 1
+end
+arch rock
+x 18
+y 1
+end
+arch booze
+x 18
+y 1
+end
+arch woodfloor
+x 18
+y 2
+end
+arch dungeon_magic
+x 18
+y 3
+end
+arch woodfloor
+x 18
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 18
+y 3
+end
+arch woodfloor
+x 18
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 18
+y 4
+end
+arch chair_1.1
+x 18
+y 4
+end
+arch woman
+name Bar Maid
+msg
+@match hello|hi|Hello|Hi
+I'll be with you in a sec.
+@match job|Job
+I'm real busy here......
+@match name|Name
+Samantha. (wink)
+@match *
+Have a seat anywhere
+endmsg
+speed 0.200000
+friendly 1
+unaggressive 0
+x 18
+y 4
+end
+arch woodfloor
+x 18
+y 5
+end
+arch woodfloor
+x 18
+y 6
+end
+arch woodfloor
+x 18
+y 7
+end
+arch woodfloor
+x 18
+y 8
+end
+arch woodfloor
+x 18
+y 9
+end
+arch chair_1.1
+x 18
+y 9
+end
+arch dwarf
+msg
+@match hi|Hi|Hello|hello
+Yes?  What do you want?
+Have you nothing better to do
+than molest an old dwarf who's
+been driven from his mines?
+@match no|No
+Well, may your beard grow patchy then!
+@match mines|mine
+Yes, well, I got kicked out from my
+mine.  I dug a little too deeply,
+and out they came.  I fled.  Now
+I am here, drinking to forget.
+Wish I could remember where my
+mines were.  Then I could tell some
+helpful fighters to go clean the
+place out for me
+endmsg
+friendly 1
+unaggressive 0
+x 18
+y 9
+end
+arch woodfloor
+x 18
+y 10
+end
+arch woodfloor
+x 18
+y 11
+end
+arch woodfloor
+x 18
+y 12
+end
+arch woodfloor
+x 18
+y 13
+end
+arch woodfloor
+x 18
+y 14
+end
+arch woodfloor
+x 18
+y 15
+end
+arch woodfloor
+x 18
+y 16
+end
+arch woodfloor
+x 18
+y 17
+end
+arch woodfloor
+x 18
+y 18
+end
+arch woodfloor
+x 18
+y 19
+end
+arch woodfloor
+x 18
+y 20
+end
+arch woodfloor
+x 18
+y 21
+end
+arch woodfloor
+x 18
+y 22
+end
+arch woodfloor
+x 18
+y 23
+end
+arch woodfloor
+x 18
+y 24
+end
+arch woodfloor
+x 18
+y 25
+end
+arch woodfloor
+x 18
+y 26
+end
+arch woodfloor
+x 18
+y 27
+end
+arch woodfloor
+x 18
+y 28
+end
+arch woodfloor
+x 18
+y 29
+end
+arch woodfloor
+x 18
+y 30
+end
+arch woodfloor
+x 18
+y 31
+end
+arch woodfloor
+x 18
+y 32
+end
+arch oakdoor
+slaying /world/world_105_115
+hp 19
+sp 35
+x 18
+y 32
+end
+arch woodfloor
+x 19
+end
+arch wall_2_1_2
+x 19
+end
+arch woodfloor
+x 19
+y 1
+end
+arch rock
+x 19
+y 1
+end
+arch booze
+x 19
+y 1
+end
+arch woodfloor
+x 19
+y 2
+end
+arch dungeon_magic
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 19
+y 4
+end
+arch chair_1.3
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
+end
+arch woodfloor
+x 19
+y 6
+end
+arch woodfloor
+x 19
+y 7
+end
+arch woodfloor
+x 19
+y 8
+end
+arch woodfloor
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 10
+end
+arch table_3
+x 19
+y 10
+end
+arch woodfloor
+x 19
+y 11
+end
+arch chair_1.3
+x 19
+y 11
+end
+arch woodfloor
+x 19
+y 12
+end
+arch woodfloor
+x 19
+y 13
+end
+arch woodfloor
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 15
+end
+arch woodfloor
+x 19
+y 16
+end
+arch woodfloor
+x 19
+y 17
+end
+arch woodfloor
+x 19
+y 18
+end
+arch woodfloor
+x 19
+y 19
+end
+arch woodfloor
+x 19
+y 20
+end
+arch woodfloor
+x 19
+y 21
+end
+arch woodfloor
+x 19
+y 22
+end
+arch woodfloor
+x 19
+y 23
+end
+arch woodfloor
+x 19
+y 24
+end
+arch woodfloor
+x 19
+y 25
+end
+arch woodfloor
+x 19
+y 26
+end
+arch woodfloor
+x 19
+y 27
+end
+arch woodfloor
+x 19
+y 28
+end
+arch woodfloor
+x 19
+y 29
+end
+arch woodfloor
+x 19
+y 30
+end
+arch woodfloor
+x 19
+y 31
+end
+arch woodfloor
+x 19
+y 32
+end
+arch wall_1_4
+x 19
+y 32
+end
+arch woodfloor
+x 20
+end
+arch wall_2_1_2
+x 20
+end
+arch woodfloor
+x 20
+y 1
+end
+arch rock
+x 20
+y 1
+end
+arch booze
+x 20
+y 1
+end
+arch woodfloor
+x 20
+y 2
+end
+arch dungeon_magic
+x 20
+y 3
+end
+arch woodfloor
+x 20
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 20
+y 3
+end
+arch woodfloor
+x 20
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 20
+y 4
+end
+arch woodfloor
+x 20
+y 5
+end
+arch woodfloor
+x 20
+y 6
+end
+arch woodfloor
+x 20
+y 7
+end
+arch woodfloor
+x 20
+y 8
+end
+arch woodfloor
+x 20
+y 9
+end
+arch woodfloor
+x 20
+y 10
+end
+arch chair_1.2
+x 20
+y 10
+end
+arch woodfloor
+x 20
+y 11
+end
+arch woodfloor
+x 20
+y 12
+end
+arch woodfloor
+x 20
+y 13
+end
+arch woodfloor
+x 20
+y 14
+end
+arch woodfloor
+x 20
+y 15
+end
+arch woodfloor
+x 20
+y 16
+end
+arch chair_1.4
+x 20
+y 16
+end
+arch woodfloor
+x 20
+y 17
+end
+arch woodfloor
+x 20
+y 18
+end
+arch chair_1.4
+x 20
+y 18
+end
+arch woodfloor
+x 20
+y 19
+end
+arch woodfloor
+x 20
+y 20
+end
+arch woodfloor
+x 20
+y 21
+end
+arch woodfloor
+x 20
+y 22
+end
+arch woodfloor
+x 20
+y 23
+end
+arch woodfloor
+x 20
+y 24
+end
+arch woodfloor
+x 20
+y 25
+end
+arch woodfloor
+x 20
+y 26
+end
+arch woodfloor
+x 20
+y 27
+end
+arch woodfloor
+x 20
+y 28
+end
+arch woodfloor
+x 20
+y 29
+end
+arch woodfloor
+x 20
+y 30
+end
+arch woodfloor
+x 20
+y 31
+end
+arch woodfloor
+x 20
+y 32
+end
+arch wall_2_1_2
+x 20
+y 32
+end
+arch woodfloor
+x 21
+end
+arch wall_2_1_2
+x 21
+end
+arch woodfloor
+x 21
+y 1
+end
+arch rock
+x 21
+y 1
+end
+arch booze
+x 21
+y 1
+end
+arch woodfloor
+x 21
+y 2
+end
+arch dungeon_magic
+x 21
+y 3
+end
+arch woodfloor
+x 21
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 21
+y 3
+end
+arch woodfloor
+x 21
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 21
+y 4
+end
+arch chair_1.3
+x 21
+y 4
+end
+arch woodfloor
+x 21
+y 5
+end
+arch woodfloor
+x 21
+y 6
+end
+arch woodfloor
+x 21
+y 7
+end
+arch cwall_0
+x 21
+y 7
+end
+arch woodfloor
+x 21
+y 8
+end
+arch woodfloor
+x 21
+y 9
+end
+arch woodfloor
+x 21
+y 10
+end
+arch woodfloor
+x 21
+y 11
+end
+arch woodfloor
+x 21
+y 12
+end
+arch woodfloor
+x 21
+y 13
+end
+arch woodfloor
+x 21
+y 14
+end
+arch cwall_0
+x 21
+y 14
+end
+arch woodfloor
+x 21
+y 15
+end
+arch chair_1.1
+x 21
+y 15
+end
+arch woodfloor
+x 21
+y 16
+end
+arch table_3
+x 21
+y 16
+end
+arch woodfloor
+x 21
+y 17
+end
+arch table_3
+x 21
+y 17
+end
+arch woodfloor
+x 21
+y 18
+end
+arch table_3
+x 21
+y 18
+end
+arch woodfloor
+x 21
+y 19
+end
+arch woodfloor
+x 21
+y 20
+end
+arch woodfloor
+x 21
+y 21
+end
+arch cwall_0
+x 21
+y 21
+end
+arch woodfloor
+x 21
+y 22
+end
+arch woodfloor
+x 21
+y 23
+end
+arch woodfloor
+x 21
+y 24
+end
+arch woodfloor
+x 21
+y 25
+end
+arch woodfloor
+x 21
+y 26
+end
+arch woodfloor
+x 21
+y 27
+end
+arch cwall_0
+x 21
+y 27
+end
+arch woodfloor
+x 21
+y 28
+end
+arch woodfloor
+x 21
+y 29
+end
+arch woodfloor
+x 21
+y 30
+end
+arch woodfloor
+x 21
+y 31
+end
+arch woodfloor
+x 21
+y 32
+end
+arch wall_2_1_2
+x 21
+y 32
+end
+arch woodfloor
+x 22
+end
+arch wall_2_1_2
+x 22
+end
+arch woodfloor
+x 22
+y 1
+end
+arch rock
+x 22
+y 1
+end
+arch booze
+x 22
+y 1
+end
+arch woodfloor
+x 22
+y 2
+end
+arch dungeon_magic
+x 22
+y 3
+end
+arch woodfloor
+x 22
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 22
+y 3
+end
+arch woodfloor
+x 22
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 22
+y 4
+end
+arch woodfloor
+x 22
+y 5
+end
+arch woodfloor
+x 22
+y 6
+end
+arch woodfloor
+x 22
+y 7
+end
+arch woodfloor
+x 22
+y 8
+end
+arch woodfloor
+x 22
+y 9
+end
+arch woodfloor
+x 22
+y 10
+end
+arch woodfloor
+x 22
+y 11
+end
+arch woodfloor
+x 22
+y 12
+end
+arch woodfloor
+x 22
+y 13
+end
+arch woodfloor
+x 22
+y 14
+end
+arch woodfloor
+x 22
+y 15
+end
+arch woodfloor
+x 22
+y 16
+end
+arch woodfloor
+x 22
+y 17
+end
+arch chair_1.2
+x 22
+y 17
+end
+arch fighter
+name Wounded fighter
+msg
+@match wound|Wound|pain
+I got injured trying to kill the
+monsters in Castle Aaaarg.
+@match castle|Castle|Aaaarg|aaaarg
+Its full of a lot of nasty monsters -
+wyverns, giants, beholders.  Do you
+want to go there?
+@match Yes|yes
+It's almost directly to the northeast of Scorn - about
+400 miles.  Easiest way to get there is to take the
+north road outside of Scorn.  Once you get past the
+lake, start heading east/northeast - you will need to
+climb over some mountains.  If you run across
+a river, just start going north - keep going north past
+the like it flows from - about 75 miles.  The castle
+is in a valley with some hills and woods.
+@match *
+Buzz off.  Can't you see I am in pain!
+endmsg
+level 12
+hp 130
+unaggressive 0
+friendly 1
+x 22
+y 17
+end
+arch woodfloor
+x 22
+y 18
+end
+arch chair_1.2
+x 22
+y 18
+end
+arch woodfloor
+x 22
+y 19
+end
+arch woodfloor
+x 22
+y 20
+end
+arch woodfloor
+x 22
+y 21
+end
+arch woodfloor
+x 22
+y 22
+end
+arch woodfloor
+x 22
+y 23
+end
+arch woodfloor
+x 22
+y 24
+end
+arch woodfloor
+x 22
+y 25
+end
+arch woodfloor
+x 22
+y 26
+end
+arch woodfloor
+x 22
+y 27
+end
+arch woodfloor
+x 22
+y 28
+end
+arch woodfloor
+x 22
+y 29
+end
+arch woodfloor
+x 22
+y 30
+end
+arch woodfloor
+x 22
+y 31
+end
+arch woodfloor
+x 22
+y 32
+end
+arch wall_2_1_2
+x 22
+y 32
+end
+arch woodfloor
+x 23
+end
+arch wall_2_1_2
+x 23
+end
+arch woodfloor
+x 23
+y 1
+end
+arch rock
+x 23
+y 1
+end
+arch booze
+x 23
+y 1
+end
+arch woodfloor
+x 23
+y 2
+end
+arch dungeon_magic
+x 23
+y 3
+end
+arch woodfloor
+x 23
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 23
+y 3
+end
+arch woodfloor
+x 23
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 23
+y 4
+end
+arch beholder
+msg
+@match who|Who|here|Here|what|What
+I am a beholder.  I came here because
+I was tired of being cooped up in
+Barad Dur with all the other beholders.
+@match Barad|barad|Dur|dur
+It is a fortress to the north of here,
+in the small range of mountains.
+Between alll the skulls, other
+beholders, and other nasty monsters, I
+just had to get out of there.
+endmsg
+friendly 1
+x 23
+y 4
+end
+arch woodfloor
+x 23
+y 5
+end
+arch woodfloor
+x 23
+y 6
+end
+arch woodfloor
+x 23
+y 7
+end
+arch woodfloor
+x 23
+y 8
+end
+arch woodfloor
+x 23
+y 9
+end
+arch woodfloor
+x 23
+y 10
+end
+arch woodfloor
+x 23
+y 11
+end
+arch woodfloor
+x 23
+y 12
+end
+arch woodfloor
+x 23
+y 13
+end
+arch woodfloor
+x 23
+y 14
+end
+arch woodfloor
+x 23
+y 15
+end
+arch woodfloor
+x 23
+y 16
+end
+arch woodfloor
+x 23
+y 17
+end
+arch woodfloor
+x 23
+y 18
+end
+arch woodfloor
+x 23
+y 19
+end
+arch woodfloor
+x 23
+y 20
+end
+arch woodfloor
+x 23
+y 21
+end
+arch magic_mouth
+msg
+You see some grafitti on the wall.
+It says : The Gate Password is "Chain"
+endmsg
+x 23
+y 22
+end
+arch woodfloor
+x 23
+y 22
+end
+arch woodfloor
+x 23
+y 23
+end
+arch woodfloor
+x 23
+y 24
+end
+arch woodfloor
+x 23
+y 25
+end
+arch woodfloor
+x 23
+y 26
+end
+arch woodfloor
+x 23
+y 27
+end
+arch woodfloor
+x 23
+y 28
+end
+arch woodfloor
+x 23
+y 29
+end
+arch woodfloor
+x 23
+y 30
+end
+arch woodfloor
+x 23
+y 31
+end
+arch woodfloor
+x 23
+y 32
+end
+arch wall_2_1_2
+x 23
+y 32
+end
+arch woodfloor
+x 24
+end
+arch wall_2_1_2
+x 24
+end
+arch woodfloor
+x 24
+y 1
+end
+arch rock
+x 24
+y 1
+end
+arch booze
+x 24
+y 1
+end
+arch woodfloor
+x 24
+y 2
+end
+arch dungeon_magic
+x 24
+y 3
+end
+arch woodfloor
+x 24
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 24
+y 3
+end
+arch woodfloor
+x 24
+y 4
+end
+arch magic_ear
+msg
+@match [dD]rink|[bB]ooze|[bB]eer
+If you want something to drink, it will
+be 3 gp.
+endmsg
+x 24
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 24
+y 4
+end
+arch chair_1.3
+x 24
+y 4
+end
+arch woodfloor
+x 24
+y 5
+end
+arch woodfloor
+x 24
+y 6
+end
+arch chair_1.1
+x 24
+y 6
+end
+arch woodfloor
+x 24
+y 7
+end
+arch woodfloor
+x 24
+y 8
+end
+arch woodfloor
+x 24
+y 9
+end
+arch woodfloor
+x 24
+y 10
+end
+arch chair_1.1
+x 24
+y 10
+end
+arch woodfloor
+x 24
+y 11
+end
+arch woodfloor
+x 24
+y 12
+end
+arch chair_1.1
+x 24
+y 12
+end
+arch woodfloor
+x 24
+y 13
+end
+arch woodfloor
+x 24
+y 14
+end
+arch woodfloor
+x 24
+y 15
+end
+arch woodfloor
+x 24
+y 16
+end
+arch chair_1.4
+x 24
+y 16
+end
+arch woodfloor
+x 24
+y 17
+end
+arch woodfloor
+x 24
+y 18
+end
+arch woodfloor
+x 24
+y 19
+end
+arch woodfloor
+x 24
+y 20
+end
+arch wall_2_2_2
+x 24
+y 20
+end
+arch woodfloor
+x 24
+y 21
+end
+arch wall_2_1_1
+x 24
+y 21
+end
+arch woodfloor
+x 24
+y 22
+end
+arch wall_2_1_1
+x 24
+y 22
+end
+arch woodfloor
+x 24
+y 23
+end
+arch wall_2_1_1
+x 24
+y 23
+end
+arch woodfloor
+x 24
+y 24
+end
+arch wall_2_1_1
+x 24
+y 24
+end
+arch woodfloor
+x 24
+y 25
+end
+arch wall_2_1_1
+x 24
+y 25
+end
+arch woodfloor
+x 24
+y 26
+end
+arch wall_2_1_1
+x 24
+y 26
+end
+arch woodfloor
+x 24
+y 27
+end
+arch wall_2_1_1
+x 24
+y 27
+end
+arch woodfloor
+x 24
+y 28
+end
+arch wall_2_1_1
+x 24
+y 28
+end
+arch woodfloor
+x 24
+y 29
+end
+arch wall_2_1_1
+x 24
+y 29
+end
+arch woodfloor
+x 24
+y 30
+end
+arch wall_2_1_1
+x 24
+y 30
+end
+arch woodfloor
+x 24
+y 31
+end
+arch wall_2_1_1
+x 24
+y 31
+end
+arch woodfloor
+x 24
+y 32
+end
+arch wall_3_1
+x 24
+y 32
+end
+arch woodfloor
+x 25
+end
+arch wall_2_1_2
+x 25
+end
+arch woodfloor
+x 25
+y 1
+end
+arch rock
+x 25
+y 1
+end
+arch booze
+x 25
+y 1
+end
+arch woodfloor
+x 25
+y 2
+end
+arch dungeon_magic
+x 25
+y 3
+end
+arch woodfloor
+x 25
+y 3
+end
+arch bench_2_1_2
+no_pass 1
+x 25
+y 3
+end
+arch woodfloor
+x 25
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 25
+y 4
+end
+arch woodfloor
+x 25
+y 5
+end
+arch woodfloor
+x 25
+y 6
+end
+arch table_3
+x 25
+y 6
+end
+arch woodfloor
+x 25
+y 7
+end
+arch woodfloor
+x 25
+y 8
+end
+arch woodfloor
+x 25
+y 9
+end
+arch woodfloor
+x 25
+y 10
+end
+arch woodfloor
+x 25
+y 11
+end
+arch table_3
+x 25
+y 11
+end
+arch woodfloor
+x 25
+y 12
+end
+arch woodfloor
+x 25
+y 13
+end
+arch woodfloor
+x 25
+y 14
+end
+arch woodfloor
+x 25
+y 15
+end
+arch chair_1.1
+x 25
+y 15
+end
+arch elf_1
+face elf.151
+msg
+@match yes|pupland
+There is a war going on in pupland.
+Rumors tell that the one who solves
+the mysteries of the lands is rewarded
+with unsurpassable power. I also heard
+that pupland's quests are a TOUGH
+challenge.
+But there are newbie areas too:
+The raffles, lone town and red
+town are good places to start with.
+Ask around there for furhter infos.
+@match no|where
+You can go there by using the dragon
+transport, west of Scorn port area.
+It really is worth a trip!
+@match *
+Have you ever been to pupland?
+endmsg
+is_animated 0
+friendly 1
+unaggressive 0
+x 25
+y 15
+end
+arch woodfloor
+x 25
+y 16
+end
+arch table_3
+x 25
+y 16
+end
+arch woodfloor
+x 25
+y 17
+end
+arch woodfloor
+x 25
+y 18
+end
+arch woodfloor
+x 25
+y 19
+end
+arch woodfloor
+x 25
+y 20
+end
+arch wall_2_1_2
+x 25
+y 20
+end
+arch woodfloor
+x 25
+y 21
+end
+arch woodfloor
+x 25
+y 22
+end
+arch woodfloor
+x 25
+y 23
+end
+arch woodfloor
+x 25
+y 24
+end
+arch woodfloor
+x 25
+y 25
+end
+arch woodfloor
+x 25
+y 26
+end
+arch woodfloor
+x 25
+y 27
+end
+arch c_woman
+x 25
+y 27
+end
+arch woodfloor
+x 25
+y 28
+end
+arch woodfloor
+x 25
+y 29
+end
+arch woodfloor
+x 25
+y 30
+end
+arch woodfloor
+x 25
+y 31
+end
+arch woodfloor
+x 25
+y 32
+end
+arch wall_2_1_2
+x 25
+y 32
+end
+arch woodfloor
+x 26
+end
+arch wall_2_1_2
+x 26
+end
+arch dungeon_magic
+x 26
+y 1
+end
+arch woodfloor
+x 26
+y 1
+end
+arch bench_1_1
+no_pass 1
+x 26
+y 1
+end
+arch dungeon_magic
+x 26
+y 2
+end
+arch woodfloor
+x 26
+y 2
+end
+arch bench_2_1_1
+x 26
+y 2
+end
+arch dungeon_magic
+x 26
+y 3
+end
+arch woodfloor
+x 26
+y 3
+end
+arch bench_2_2_4
+no_pass 1
+x 26
+y 3
+end
+arch woodfloor
+x 26
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 26
+y 4
+end
+arch woodfloor
+x 26
+y 5
+end
+arch woodfloor
+x 26
+y 6
+end
+arch guildmaster
+name Brum the Acient
+msg
+@match name|Name
+My name is Brum.
+@match job|Job
+I used to wander the lands.
+@match story|Story
+Very, well......many years ago I met a great
+wizard.
+@match wizard|Wizard|Skud|skud
+Yes, Skud the Great, he had a tower in the
+mountains.
+@match tower|Tower|mountains|Mountains
+The tower was high in the peaks of the
+Black Ice Mountains, hidden in a valley.
+@match valley|Valley
+Yes, I heard that somewhere in the depths of
+the castle dungeon rests a piece of the
+Tailsman!!! I never found it.
+@match *
+Would you like to hear a story
+endmsg
+friendly 1
+unaggressive 0
+x 26
+y 6
+end
+arch woodfloor
+x 26
+y 7
+end
+arch woodfloor
+x 26
+y 8
+end
+arch woodfloor
+x 26
+y 9
+end
+arch woodfloor
+x 26
+y 10
+end
+arch woodfloor
+x 26
+y 11
+end
+arch chair_1.2
+x 26
+y 11
+end
+arch pirate
+name sailor
+msg
+@match seen|things|voyages
+I've seen a tower at the south west
+edge of the continent, south of
+Navar City.  I've also seen an island
+nearby.
+@match tower
+Yes, Grukk's tower.  I wouldn't want
+to mess with him.
+@match Grukk|grukk|him
+It's said that he is a giant beholder.
+@match island
+There is an old hut on the island.
+I have no idea how you would to the
+island from shore - there are no boats
+nearby.
+@match *
+Arrrr.  I've seen many things on my
+voyages.
+endmsg
+friendly 1
+x 26
+y 11
+end
+arch woodfloor
+x 26
+y 12
+end
+arch woodfloor
+x 26
+y 13
+end
+arch woodfloor
+x 26
+y 14
+end
+arch woodfloor
+x 26
+y 15
+end
+arch woodfloor
+x 26
+y 16
+end
+arch chair_1.2
+x 26
+y 16
+end
+arch elf_1
+face elf.171
+is_animated 0
+friendly 1
+unaggressive 0
+x 26
+y 16
+end
+arch woodfloor
+x 26
+y 17
+end
+arch woodfloor
+x 26
+y 18
+end
+arch woodfloor
+x 26
+y 19
+end
+arch woodfloor
+x 26
+y 20
+end
+arch wall_2_1_2
+x 26
+y 20
+end
+arch woodfloor
+x 26
+y 21
+end
+arch woodfloor
+x 26
+y 22
+end
+arch chair_2.4
+x 26
+y 22
+end
+arch woodfloor
+x 26
+y 23
+end
+arch chair_2.4
+x 26
+y 23
+end
+arch warrior_1
+x 26
+y 23
+end
+arch woodfloor
+x 26
+y 24
+end
+arch chair_2.4
+x 26
+y 24
+end
+arch ninja_1
+x 26
+y 24
+end
+arch woodfloor
+x 26
+y 25
+end
+arch woodfloor
+x 26
+y 26
+end
+arch woodfloor
+x 26
+y 27
+end
+arch woodfloor
+x 26
+y 28
+end
+arch woodfloor
+x 26
+y 29
+end
+arch woodfloor
+x 26
+y 30
+end
+arch woodfloor
+x 26
+y 31
+end
+arch woodfloor
+x 26
+y 32
+end
+arch wall_2_1_2
+x 26
+y 32
+end
+arch woodfloor
+x 27
+end
+arch wall_2_1_2
+x 27
+end
+arch woodfloor
+x 27
+y 1
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 27
+y 1
+end
+arch woodfloor
+x 27
+y 2
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 27
+y 2
+end
+arch woodfloor
+x 27
+y 3
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 27
+y 3
+end
+arch woodfloor
+x 27
+y 4
+end
+arch table_3
+x 27
+y 4
+end
+arch booze_table
+slaying money
+food 30
+invisible 1
+x 27
+y 4
+end
+arch woodfloor
+x 27
+y 5
+end
+arch woodfloor
+x 27
+y 6
+end
+arch woodfloor
+x 27
+y 7
+end
+arch woodfloor
+x 27
+y 8
+end
+arch woodfloor
+x 27
+y 9
+end
+arch woodfloor
+x 27
+y 10
+end
+arch woodfloor
+x 27
+y 11
+end
+arch woodfloor
+x 27
+y 12
+end
+arch woodfloor
+x 27
+y 13
+end
+arch woodfloor
+x 27
+y 14
+end
+arch woodfloor
+x 27
+y 15
+end
+arch woodfloor
+x 27
+y 16
+end
+arch woodfloor
+x 27
+y 17
+end
+arch woodfloor
+x 27
+y 18
+end
+arch woodfloor
+x 27
+y 19
+end
+arch woodfloor
+x 27
+y 20
+end
+arch wall_2_1_2
+x 27
+y 20
+end
+arch woodfloor
+x 27
+y 21
+end
+arch woodfloor
+x 27
+y 22
+end
+arch chair_2.1
+x 27
+y 22
+end
+arch c_woman
+x 27
+y 22
+end
+arch woodfloor
+x 27
+y 23
+end
+arch table_4
+x 27
+y 23
+end
+arch woodfloor
+x 27
+y 24
+end
+arch chair_2.3
+x 27
+y 24
+end
+arch woodfloor
+x 27
+y 25
+end
+arch woodfloor
+x 27
+y 26
+end
+arch woodfloor
+x 27
+y 27
+end
+arch woodfloor
+x 27
+y 28
+end
+arch woodfloor
+x 27
+y 29
+end
+arch woodfloor
+x 27
+y 30
+end
+arch woodfloor
+x 27
+y 31
+end
+arch woodfloor
+x 27
+y 32
+end
+arch wall_2_1_2
+x 27
+y 32
+end
+arch woodfloor
+x 28
+end
+arch wall_2_1_2
+x 28
+end
+arch woodfloor
+x 28
+y 1
+end
+arch woodfloor
+x 28
+y 2
+end
+arch woodfloor
+x 28
+y 3
+end
+arch chair_1.1
+x 28
+y 3
+end
+arch woodfloor
+x 28
+y 4
+end
+arch woodfloor
+x 28
+y 5
+end
+arch woodfloor
+x 28
+y 6
+end
+arch woodfloor
+x 28
+y 7
+end
+arch cwall_0
+x 28
+y 7
+end
+arch woodfloor
+x 28
+y 8
+end
+arch woodfloor
+x 28
+y 9
+end
+arch woodfloor
+x 28
+y 10
+end
+arch woodfloor
+x 28
+y 11
+end
+arch woodfloor
+x 28
+y 12
+end
+arch woodfloor
+x 28
+y 13
+end
+arch woodfloor
+x 28
+y 14
+end
+arch cwall_0
+x 28
+y 14
+end
+arch woodfloor
+x 28
+y 15
+end
+arch woodfloor
+x 28
+y 16
+end
+arch woodfloor
+x 28
+y 17
+end
+arch woodfloor
+x 28
+y 18
+end
+arch woodfloor
+x 28
+y 19
+end
+arch woodfloor
+x 28
+y 20
+end
+arch wall_1_3
+x 28
+y 20
+end
+arch woodfloor
+x 28
+y 21
+end
+arch woodfloor
+x 28
+y 22
+end
+arch chair_2.2
+x 28
+y 22
+end
+arch ninja_1
+x 28
+y 22
+end
+arch woodfloor
+x 28
+y 23
+end
+arch chair_2.2
+x 28
+y 23
+end
+arch woodfloor
+x 28
+y 24
+end
+arch ninja_1
+x 28
+y 24
+end
+arch woodfloor
+x 28
+y 25
+end
+arch woodfloor
+x 28
+y 26
+end
+arch woodfloor
+x 28
+y 27
+end
+arch woodfloor
+x 28
+y 28
+end
+arch woodfloor
+x 28
+y 29
+end
+arch woodfloor
+x 28
+y 30
+end
+arch woodfloor
+x 28
+y 31
+end
+arch woodfloor
+x 28
+y 32
+end
+arch wall_2_1_2
+x 28
+y 32
+end
+arch woodfloor
+x 29
+end
+arch wall_2_1_2
+x 29
+end
+arch woodfloor
+x 29
+y 1
+end
+arch woodfloor
+x 29
+y 2
+end
+arch woodfloor
+x 29
+y 3
+end
+arch conjurer
+name slightly drunken apprentice conjurer
+msg
+@match hello|Hello|Hi|hi
+Hi!  I'm studying Summoning at the
+Tower of Demonology and Summoning
+up north.  Are you interested in
+studying Summoning also?
+@match yes|Yes
+Well, you'll need the entrance fees.
+They're pretty extortionate.  Ask
+about "admissions", the'll let you
+know how much it is these days.
+I can tell you some Stories...
+@match stories|Stories
+Well, it's rumored that each of the
+Summoning Masters has some powerful
+items which are the trappings of their
+office.  And the four of them together
+guard still greater treasures.  But
+the Summoning Masters are rather
+powerful.  It'd take someone at least
+15th rank in their guilds to kill
+a Summoning Master, I bet.  If you
+want to go try your luck, the Tower
+is North of Santo Dominion, by the
+Sea.
+endmsg
+hp 90
+friendly 1
+x 29
+y 3
+end
+arch woodfloor
+x 29
+y 4
+end
+arch woodfloor
+x 29
+y 5
+end
+arch woodfloor
+x 29
+y 6
+end
+arch woodfloor
+x 29
+y 7
+end
+arch woodfloor
+x 29
+y 8
+end
+arch woodfloor
+x 29
+y 9
+end
+arch woodfloor
+x 29
+y 10
+end
+arch chair_1.4
+x 29
+y 10
+end
+arch c_sage
+name Old man
+msg
+@match studying
+Yes, I'm looking over my notes about a
+ruined building in the middle of the
+desert.
+@match building
+Don't know much about it.  It is
+probably full of nasty monsters after
+all of this time.
+@match desert
+It is in the north eastern area of the
+continent.  Can't really miss it.
+@match *
+Can't you see I'm studying?
+endmsg
+friendly 1
+unaggressive 0
+x 29
+y 10
+end
+arch woodfloor
+x 29
+y 11
+end
+arch woodfloor
+x 29
+y 12
+end
+arch woodfloor
+x 29
+y 13
+end
+arch woodfloor
+x 29
+y 14
+end
+arch woodfloor
+x 29
+y 15
+end
+arch woodfloor
+x 29
+y 16
+end
+arch woodfloor
+x 29
+y 17
+end
+arch woodfloor
+x 29
+y 18
+end
+arch woodfloor
+x 29
+y 19
+end
+arch woodfloor
+x 29
+y 20
+end
+arch guard
+msg
+@match *
+Closed GAME, move on
+endmsg
+x 29
+y 20
+end
+arch woodfloor
+x 29
+y 21
+end
+arch woodfloor
+x 29
+y 22
+end
+arch woodfloor
+x 29
+y 23
+end
+arch woodfloor
+x 29
+y 24
+end
+arch woodfloor
+x 29
+y 25
+end
+arch woodfloor
+x 29
+y 26
+end
+arch woodfloor
+x 29
+y 27
+end
+arch chair_2.1
+x 29
+y 27
+end
+arch c_woman
+x 29
+y 27
+end
+arch woodfloor
+x 29
+y 28
+end
+arch chair_2.4
+x 29
+y 28
+end
+arch warrior_1
+x 29
+y 28
+end
+arch woodfloor
+x 29
+y 29
+end
+arch chair_2.4
+x 29
+y 29
+end
+arch warrior_1
+x 29
+y 29
+end
+arch woodfloor
+x 29
+y 30
+end
+arch woodfloor
+x 29
+y 31
+end
+arch woodfloor
+x 29
+y 32
+end
+arch wall_2_1_2
+x 29
+y 32
+end
+arch woodfloor
+x 30
+end
+arch wall_2_1_2
+x 30
+end
+arch woodfloor
+x 30
+y 1
+end
+arch woodfloor
+x 30
+y 2
+end
+arch woodfloor
+x 30
+y 3
+end
+arch table_3
+x 30
+y 3
+end
+arch woodfloor
+x 30
+y 4
+end
+arch chair_1.3
+x 30
+y 4
+end
+arch woodfloor
+x 30
+y 5
+end
+arch woodfloor
+x 30
+y 6
+end
+arch woodfloor
+x 30
+y 7
+end
+arch woodfloor
+x 30
+y 8
+end
+arch woodfloor
+x 30
+y 9
+end
+arch woodfloor
+x 30
+y 10
+end
+arch table_3
+x 30
+y 10
+end
+arch woodfloor
+x 30
+y 11
+end
+arch chair_1.3
+x 30
+y 11
+end
+arch woodfloor
+x 30
+y 12
+end
+arch woodfloor
+x 30
+y 13
+end
+arch woodfloor
+x 30
+y 14
+end
+arch woodfloor
+x 30
+y 15
+end
+arch woodfloor
+x 30
+y 16
+end
+arch chair_1.1
+x 30
+y 16
+end
+arch woodfloor
+x 30
+y 17
+end
+arch chair_1.4
+x 30
+y 17
+end
+arch woodfloor
+x 30
+y 18
+end
+arch woodfloor
+x 30
+y 19
+end
+arch woodfloor
+x 30
+y 20
+end
+arch guard
+x 30
+y 20
+end
+arch woodfloor
+x 30
+y 21
+end
+arch woodfloor
+x 30
+y 22
+end
+arch woodfloor
+x 30
+y 23
+end
+arch woodfloor
+x 30
+y 24
+end
+arch woodfloor
+x 30
+y 25
+end
+arch woodfloor
+x 30
+y 26
+end
+arch woodfloor
+x 30
+y 27
+end
+arch chair_2.1
+x 30
+y 27
+end
+arch c_woman
+x 30
+y 27
+end
+arch woodfloor
+x 30
+y 28
+end
+arch table_4
+x 30
+y 28
+end
+arch woodfloor
+x 30
+y 29
+end
+arch chair_2.3
+x 30
+y 29
+end
+arch woodfloor
+x 30
+y 30
+end
+arch woodfloor
+x 30
+y 31
+end
+arch woodfloor
+x 30
+y 32
+end
+arch wall_2_1_2
+x 30
+y 32
+end
+arch woodfloor
+x 31
+end
+arch wall_2_1_2
+x 31
+end
+arch woodfloor
+x 31
+y 1
+end
+arch woodfloor
+x 31
+y 2
+end
+arch woodfloor
+x 31
+y 3
+end
+arch woodfloor
+x 31
+y 4
+end
+arch woodfloor
+x 31
+y 5
+end
+arch woodfloor
+x 31
+y 6
+end
+arch woodfloor
+x 31
+y 7
+end
+arch woodfloor
+x 31
+y 8
+end
+arch woodfloor
+x 31
+y 9
+end
+arch woodfloor
+x 31
+y 10
+end
+arch chair_1.2
+x 31
+y 10
+end
+arch woodfloor
+x 31
+y 11
+end
+arch woodfloor
+x 31
+y 12
+end
+arch woodfloor
+x 31
+y 13
+end
+arch woodfloor
+x 31
+y 14
+end
+arch woodfloor
+x 31
+y 15
+end
+arch woodfloor
+x 31
+y 16
+end
+arch chair_1.1
+x 31
+y 16
+end
+arch magic_mouth
+msg
+The Dragonlords fear to keep the
+weapon too far from themselves, yet
+don't trust each other enough to keep
+it too close at hand, either.  They
+have hidden it in a mountain eyrie
+near their lair:  you must search the
+high mountains near their lair.
+endmsg
+x 31
+y 17
+end
+arch woodfloor
+x 31
+y 17
+end
+arch block_door_closed
+face table_3.111
+speed 0.500000
+connected 123
+x 31
+y 17
+end
+arch woodfloor
+x 31
+y 18
+end
+arch woodfloor
+x 31
+y 19
+end
+arch sign
+msg
+POKER ROOM --
+endmsg
+x 31
+y 19
+end
+arch woodfloor
+x 31
+y 20
+end
+arch wall_1_4
+x 31
+y 20
+end
+arch woodfloor
+x 31
+y 21
+end
+arch woodfloor
+x 31
+y 22
+end
+arch woodfloor
+x 31
+y 23
+end
+arch woodfloor
+x 31
+y 24
+end
+arch woodfloor
+x 31
+y 25
+end
+arch woodfloor
+x 31
+y 26
+end
+arch woodfloor
+x 31
+y 27
+end
+arch chair_2.1
+x 31
+y 27
+end
+arch woodfloor
+x 31
+y 28
+end
+arch chair_2.2
+x 31
+y 28
+end
+arch c_woman
+x 31
+y 28
+end
+arch woodfloor
+x 31
+y 29
+end
+arch chair_2.2
+x 31
+y 29
+end
+arch ninja_1
+x 31
+y 29
+end
+arch woodfloor
+x 31
+y 30
+end
+arch woodfloor
+x 31
+y 31
+end
+arch woodfloor
+x 31
+y 32
+end
+arch wall_2_1_2
+x 31
+y 32
+end
+arch woodfloor
+x 32
+end
+arch wall_2_1_2
+x 32
+end
+arch woodfloor
+x 32
+y 1
+end
+arch stair_3_up
+name Stairs going up
+slaying goths2
+hp 31
+sp 1
+x 32
+y 1
+end
+arch woodfloor
+x 32
+y 2
+end
+arch woodfloor
+x 32
+y 3
+end
+arch woodfloor
+x 32
+y 4
+end
+arch woodfloor
+x 32
+y 5
+end
+arch woodfloor
+x 32
+y 6
+end
+arch woodfloor
+x 32
+y 7
+end
+arch woodfloor
+x 32
+y 8
+end
+arch woodfloor
+x 32
+y 9
+end
+arch woodfloor
+x 32
+y 10
+end
+arch woodfloor
+x 32
+y 11
+end
+arch woodfloor
+x 32
+y 12
+end
+arch woodfloor
+x 32
+y 13
+end
+arch woodfloor
+x 32
+y 14
+end
+arch woodfloor
+x 32
+y 15
+end
+arch altar
+slaying emerald of great value
+food 7
+connected 123
+x 32
+y 16
+end
+arch woodfloor
+x 32
+y 16
+end
+arch woodfloor
+x 32
+y 17
+end
+arch faerie_dragon
+name Dragon Emissary
+msg
+@match Hi|hi|Hello|hello
+I am the Emissary of the Dragonlords
+to the City of Scorn.  I have come to
+present the Demands of my masters.
+However, your King is less than
+cooperative. I should
+tell my masters that the city is ripe
+for conquer.
+@match Demands|demands
+The Dragonlords demand in tribute:
+10 virgins per year,
+100 head of cattle,
+and 100000 pieces of gold,
+in return for their kindness in
+refraining from destroying your
+squalid little city.
+@match Dragonlords|Dragonlord|master
+My masters, the Dragonlords, are most
+puissant.  Few mortals may hope to
+overcome them in combat, for they wield
+such magics as would snuff the life of
+a mortal in seconds, and no mortal can
+deal blows, arcane or otherwise,
+quickly enough to destroy the Lords,
+before they themselves are destroyed.
+The only way a mortal could destroy
+one of the Dragonlords is by some
+clever device, for none may face one
+in straight combat to the death and
+live.  And even to challenge a
+Dragonlord to combat, you would have
+to pass all their draconic guards.
+The last of these are Ancient
+Dragons, whose teeth are spears,
+whose claws are swords, and whose
+breath is death!  Would you know
+where the dragonlords dwell, so that
+you might behold their magnificence?
+@match yes|Yes
+Their dwelling is on the western
+edge of the mountains southwest of
+Navar.
+@match weapon|Weapon
+What?  Where did you hear about that?
+Well, why would I tell you anything
+about this mythical 'weapon'?
+@match bribe|Bribe
+You're beginning to interest me.
+I have a weakness for emeralds of
+great value.  Bring me seven, and I
+shall tell you what you want to know.
+Drop them right above me and I shall
+reveal the location of the weapon's
+hiding place.
+endmsg
+hp 900
+maxhp 900
+friendly 1
+unaggressive 0
+x 32
+y 17
+end
+arch woodfloor
+x 32
+y 18
+end
+arch woodfloor
+x 32
+y 19
+end
+arch woodfloor
+x 32
+y 20
+end
+arch wall_2_1_2
+x 32
+y 20
+end
+arch woodfloor
+x 32
+y 21
+end
+arch woodfloor
+x 32
+y 22
+end
+arch woodfloor
+x 32
+y 23
+end
+arch woodfloor
+x 32
+y 24
+end
+arch woodfloor
+x 32
+y 25
+end
+arch woodfloor
+x 32
+y 26
+end
+arch woodfloor
+x 32
+y 27
+end
+arch woodfloor
+x 32
+y 28
+end
+arch woodfloor
+x 32
+y 29
+end
+arch woodfloor
+x 32
+y 30
+end
+arch woodfloor
+x 32
+y 31
+end
+arch woodfloor
+x 32
+y 32
+end
+arch wall_2_1_2
+x 32
+y 32
+end
+arch woodfloor
+x 33
+end
+arch wall_2_2_3
+x 33
+end
+arch woodfloor
+x 33
+y 1
+end
+arch wall_2_1_1
+x 33
+y 1
+end
+arch woodfloor
+x 33
+y 2
+end
+arch wall_2_1_1
+x 33
+y 2
+end
+arch woodfloor
+x 33
+y 3
+end
+arch wall_2_1_1
+x 33
+y 3
+end
+arch woodfloor
+x 33
+y 4
+end
+arch wall_2_1_1
+x 33
+y 4
+end
+arch woodfloor
+x 33
+y 5
+end
+arch wall_2_1_1
+x 33
+y 5
+end
+arch woodfloor
+x 33
+y 6
+end
+arch wall_2_1_1
+x 33
+y 6
+end
+arch woodfloor
+x 33
+y 7
+end
+arch wall_2_1_1
+x 33
+y 7
+end
+arch woodfloor
+x 33
+y 8
+end
+arch wall_2_1_1
+x 33
+y 8
+end
+arch woodfloor
+x 33
+y 9
+end
+arch wall_2_1_1
+x 33
+y 9
+end
+arch woodfloor
+x 33
+y 10
+end
+arch wall_2_1_1
+x 33
+y 10
+end
+arch woodfloor
+x 33
+y 11
+end
+arch wall_2_1_1
+x 33
+y 11
+end
+arch woodfloor
+x 33
+y 12
+end
+arch wall_2_1_1
+x 33
+y 12
+end
+arch woodfloor
+x 33
+y 13
+end
+arch wall_2_1_1
+x 33
+y 13
+end
+arch woodfloor
+x 33
+y 14
+end
+arch wall_2_1_1
+x 33
+y 14
+end
+arch woodfloor
+x 33
+y 15
+end
+arch wall_2_1_1
+x 33
+y 15
+end
+arch woodfloor
+x 33
+y 16
+end
+arch wall_2_1_1
+x 33
+y 16
+end
+arch woodfloor
+x 33
+y 17
+end
+arch wall_2_1_1
+x 33
+y 17
+end
+arch woodfloor
+x 33
+y 18
+end
+arch wall_2_1_1
+x 33
+y 18
+end
+arch woodfloor
+x 33
+y 19
+end
+arch wall_2_1_1
+x 33
+y 19
+end
+arch woodfloor
+x 33
+y 20
+end
+arch wall_3_4
+x 33
+y 20
+end
+arch woodfloor
+x 33
+y 21
+end
+arch wall_2_1_1
+x 33
+y 21
+end
+arch woodfloor
+x 33
+y 22
+end
+arch wall_2_1_1
+x 33
+y 22
+end
+arch woodfloor
+x 33
+y 23
+end
+arch wall_2_1_1
+x 33
+y 23
+end
+arch woodfloor
+x 33
+y 24
+end
+arch wall_2_1_1
+x 33
+y 24
+end
+arch woodfloor
+x 33
+y 25
+end
+arch wall_2_1_1
+x 33
+y 25
+end
+arch woodfloor
+x 33
+y 26
+end
+arch wall_2_1_1
+x 33
+y 26
+end
+arch woodfloor
+x 33
+y 27
+end
+arch wall_2_1_1
+x 33
+y 27
+end
+arch woodfloor
+x 33
+y 28
+end
+arch wall_2_1_1
+x 33
+y 28
+end
+arch woodfloor
+x 33
+y 29
+end
+arch wall_2_1_1
+x 33
+y 29
+end
+arch woodfloor
+x 33
+y 30
+end
+arch wall_2_1_1
+x 33
+y 30
+end
+arch woodfloor
+x 33
+y 31
+end
+arch wall_2_1_1
+x 33
+y 31
+end
+arch woodfloor
+x 33
+y 32
+end
+arch wall_2_2_4
+x 33
+y 32
+end
