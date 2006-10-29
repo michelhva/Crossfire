@@ -1,0 +1,1785 @@
+arch map
+region scorn
+name Mike Miller's cellar 2
+msg
+Creator: Huhanhi
+Created with :  CF Java Map Editor
+Date:    3/23/2005
+endmsg
+width 10
+height 20
+difficulty 1
+end
+arch cobblestones2
+end
+arch cobblestones2
+end
+arch stwall_2_2_2
+end
+arch cobblestones2
+y 1
+end
+arch stwall_2_1_1
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch stwall_2_1_1
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch stwall_2_1_1
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch river_w-e
+y 4
+end
+arch stwall_2_1_1
+y 4
+end
+arch cobblestones2
+y 5
+end
+arch stwall_2_1_1
+y 5
+end
+arch cobblestones2
+y 6
+end
+arch stwall_2_1_1
+y 6
+end
+arch cobblestones2
+y 7
+end
+arch stwall_2_1_1
+y 7
+end
+arch cobblestones2
+y 8
+end
+arch stwall_2_1_1
+y 8
+end
+arch cobblestones2
+y 9
+end
+arch stwall_3_2
+y 9
+end
+arch cobblestones2
+y 10
+end
+arch stwall_2_1_1
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch stwall_3_2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch stwall_2_1_1
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch stwall_2_1_1
+y 13
+end
+arch cobblestones2
+y 14
+end
+arch stwall_2_1_1
+y 14
+end
+arch cobblestones2
+y 15
+end
+arch stwall_2_1_1
+y 15
+end
+arch cobblestones2
+y 16
+end
+arch stwall_2_1_1
+y 16
+end
+arch cobblestones2
+y 17
+end
+arch stwall_2_1_1
+y 17
+end
+arch cobblestones2
+y 18
+end
+arch stwall_2_1_1
+y 18
+end
+arch cobblestones2
+y 19
+end
+arch stwall_2_2_1
+y 19
+end
+arch cobblestones2
+x 1
+end
+arch stwall_2_1_2
+x 1
+end
+arch flagstone
+x 1
+y 1
+end
+arch random_potion
+x 1
+y 1
+end
+arch flagstone
+x 1
+y 2
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 1
+y 2
+end
+arch flagstone
+x 1
+y 3
+end
+arch flagstone
+x 1
+y 4
+end
+arch river_se-w
+x 1
+y 4
+end
+arch dungeon_magic
+x 1
+y 4
+end
+arch flagstone
+x 1
+y 5
+end
+arch river_nw-se_l
+no_pass 0
+x 1
+y 5
+end
+arch dungeon_magic
+x 1
+y 5
+end
+arch sign
+msg
+To the North:
+Pixie Firebolt Wand Factory
+NO TRESPASSING
+Intruders will be atrouciously dealt with!
+endmsg
+x 1
+y 5
+end
+arch flagstone
+x 1
+y 6
+end
+arch generate_gnoll
+x 1
+y 6
+end
+arch magic_mouth
+msg
+You might need these potions very soon...
+endmsg
+food 1
+x 1
+y 7
+end
+arch flagstone
+x 1
+y 7
+end
+arch balm_generic
+title of moderate healing
+nrof 4
+value 200
+level 10
+sp 33
+x 1
+y 7
+end
+arch flagstone
+x 1
+y 8
+end
+arch generate_gnoll
+x 1
+y 8
+end
+arch flagstone
+x 1
+y 9
+end
+arch stwall_2_1_2
+x 1
+y 9
+end
+arch dungeon_floor
+x 1
+y 10
+end
+arch button_plate
+msg
+The button looks broken.
+You will need something *heavy* to activate it.
+endmsg
+weight 5000000
+connected 1
+x 1
+y 10
+end
+arch chest_2
+x 1
+y 10
+arch wine
+name bottle of Château Lapompe 1969
+name_pl bottles of Château Lapompe 1969
+nrof 6
+value 100
+end
+end
+arch dungeon_floor
+x 1
+y 11
+end
+arch stwall_closed_1
+name secret door
+connected 2
+x 1
+y 11
+end
+arch magic_mouth
+msg
+This wall looks strange!
+endmsg
+food 1
+x 1
+y 12
+end
+arch dungeon_floor
+x 1
+y 12
+end
+arch dungeon_floor
+x 1
+y 13
+end
+arch dungeon_floor
+x 1
+y 14
+end
+arch dungeon_floor
+x 1
+y 15
+end
+arch mover_1
+attacktype 1
+x 1
+y 15
+end
+arch dungeon_floor
+x 1
+y 16
+end
+arch mover_1
+attacktype 1
+x 1
+y 16
+end
+arch dungeon_floor
+x 1
+y 17
+end
+arch flagstone
+x 1
+y 18
+end
+arch cobblestones2
+x 1
+y 19
+end
+arch stwall_2_1_2
+x 1
+y 19
+end
+arch cobblestones2
+x 2
+end
+arch stwall_2_1_2
+x 2
+end
+arch flagstone
+x 2
+y 1
+end
+arch random_reading
+x 2
+y 1
+end
+arch flagstone
+x 2
+y 2
+end
+arch wand
+title of Unique Firebolt
+identified 1
+sp 82
+level 1
+food 1
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 2
+y 3
+end
+arch flagstone
+x 2
+y 4
+end
+arch river_nw-se_u
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
+end
+arch river_nw-e
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 5
+end
+arch flagstone
+x 2
+y 6
+end
+arch random_weapon
+x 2
+y 6
+end
+arch magic_mouth
+msg
+Pixie Firebolt Wand Factory
+NO TRESPASSING
+Intruders will be atrouciously dealt with!
+endmsg
+x 2
+y 7
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 3
+sp 4
+x 2
+y 7
+end
+arch flagstone
+x 2
+y 8
+end
+arch random_shield
+x 2
+y 8
+end
+arch flagstone
+x 2
+y 9
+end
+arch stwall_2_1_2
+x 2
+y 9
+end
+arch dungeon_floor
+x 2
+y 10
+end
+arch chest_2
+x 2
+y 10
+arch wine
+name bottle of Château Lapompe 1969
+name_pl bottles of Château Lapompe 1969
+nrof 6
+value 100
+end
+end
+arch flagstone
+x 2
+y 11
+end
+arch stwall_2_1_2
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch dungeon_floor
+x 2
+y 13
+end
+arch flagstone
+x 2
+y 14
+end
+arch orc_leader_arc
+x 2
+y 14
+end
+arch flagstone
+x 2
+y 15
+end
+arch river_sw-ne_u
+x 2
+y 15
+end
+arch flagstone
+x 2
+y 16
+end
+arch river_ne-s
+x 2
+y 16
+end
+arch dungeon_floor
+x 2
+y 17
+end
+arch bridge_we
+x 2
+y 17
+end
+arch flagstone
+x 2
+y 18
+end
+arch river_n-s
+x 2
+y 18
+end
+arch cobblestones2
+x 2
+y 19
+end
+arch river_n-s
+x 2
+y 19
+end
+arch stwall_2_1_2
+x 2
+y 19
+end
+arch cobblestones2
+x 3
+end
+arch stwall_2_1_2
+x 3
+end
+arch flagstone
+x 3
+y 1
+end
+arch chest_2
+x 3
+y 1
+arch random_spells
+end
+arch random_spells
+end
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 2
+sp 7
+x 3
+y 4
+end
+arch mover_3
+attacktype 1
+x 3
+y 4
+end
+arch flagstone
+x 3
+y 5
+end
+arch river_w-e
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch flagstone
+x 3
+y 6
+end
+arch generate_gnoll
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch flagstone
+x 3
+y 8
+end
+arch flagstone
+x 3
+y 9
+end
+arch stwall_2_1_2
+x 3
+y 9
+end
+arch dungeon_floor
+x 3
+y 10
+end
+arch chest_2
+x 3
+y 10
+arch wine
+name bottle of Château Lapompe 1969
+name_pl bottles of Château Lapompe 1969
+nrof 6
+value 100
+end
+end
+arch flagstone
+x 3
+y 11
+end
+arch stwall_2_1_2
+x 3
+y 11
+end
+arch flagstone
+x 3
+y 12
+end
+arch flagstone
+x 3
+y 13
+end
+arch dungeon_floor
+x 3
+y 13
+end
+arch dungeon_floor
+x 3
+y 13
+end
+arch flagstone
+x 3
+y 14
+end
+arch flagstone
+x 3
+y 15
+end
+arch river_sw-e
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch river_sw-ne_l
+no_pass 0
+x 3
+y 16
+end
+arch dungeon_floor
+x 3
+y 17
+end
+arch flagstone
+x 3
+y 18
+end
+arch cobblestones2
+x 3
+y 19
+end
+arch stwall_2_1_2
+x 3
+y 19
+end
+arch cobblestones2
+x 4
+end
+arch stwall_2_1_2
+x 4
+end
+arch flagstone
+x 4
+y 1
+end
+arch random_wealth
+exp 5
+x 4
+y 1
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch wand
+title of Unique Firebolt
+identified 1
+sp 82
+level 1
+food 1
+x 4
+y 2
+end
+arch flagstone
+x 4
+y 3
+end
+arch random_wealth
+exp 5
+x 4
+y 3
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 4
+y 3
+end
+arch flagstone
+x 4
+y 4
+end
+arch flagstone
+x 4
+y 5
+end
+arch river_w-e
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch flagstone
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch flagstone
+x 4
+y 8
+end
+arch flagstone
+x 4
+y 9
+end
+arch stwall_2_2_3
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch stwall_2_1_1
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch stwall_3_1
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch orc_leader_arc
+x 4
+y 12
+end
+arch dungeon_floor
+x 4
+y 13
+end
+arch flagstone
+x 4
+y 14
+end
+arch generate_orc
+x 4
+y 14
+end
+arch flagstone
+x 4
+y 15
+end
+arch river_w-e
+x 4
+y 15
+end
+arch flagstone
+x 4
+y 16
+end
+arch random_wealth
+exp 3
+x 4
+y 16
+end
+arch boulder
+x 4
+y 16
+end
+arch dungeon_floor
+x 4
+y 17
+end
+arch flagstone
+x 4
+y 18
+end
+arch boulder
+x 4
+y 18
+end
+arch cobblestones2
+x 4
+y 19
+end
+arch stwall_2_1_2
+x 4
+y 19
+end
+arch cobblestones2
+x 5
+end
+arch stwall_2_1_2
+x 5
+end
+arch flagstone
+x 5
+y 1
+end
+arch random_talisman
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 5
+y 2
+end
+arch flagstone
+x 5
+y 3
+end
+arch wand
+title of Unique Firebolt
+identified 1
+sp 82
+level 1
+food 1
+x 5
+y 3
+end
+arch flagstone
+x 5
+y 4
+end
+arch pixie
+name small pixie
+weight 7000
+level 1
+exp 6
+speed -0.3
+wc 6
+hp 6
+maxhp 6
+ac 7
+Wis 3
+run_away 30
+resist_fire -30
+x 5
+y 4
+end
+arch flagstone
+x 5
+y 5
+end
+arch river_w-e
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 7
+sp 6
+x 5
+y 6
+end
+arch mover_6
+attacktype 1
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 7
+end
+arch dungeon_floor
+x 5
+y 8
+end
+arch dungeon_floor
+x 5
+y 9
+arch wine
+name bottle of Château Lapompe 1969
+name_pl bottles of Château Lapompe 1969
+nrof 6
+value 100
+end
+end
+arch dungeon_floor
+x 5
+y 10
+end
+arch teleporter
+type 66
+slaying house3.bas1
+hp 5
+sp 4
+x 5
+y 10
+end
+arch flagstone
+x 5
+y 11
+end
+arch stwall_1_3
+x 5
+y 11
+end
+arch flagstone
+x 5
+y 12
+end
+arch random_shield
+x 5
+y 12
+end
+arch dungeon_floor
+x 5
+y 13
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 7
+sp 11
+x 5
+y 13
+end
+arch mover_7
+attacktype 1
+x 5
+y 13
+end
+arch orc_chief_arc
+x 5
+y 13
+end
+arch flagstone
+x 5
+y 14
+end
+arch river_sw-ne_u
+x 5
+y 14
+end
+arch flagstone
+x 5
+y 15
+end
+arch river_ne-w
+x 5
+y 15
+end
+arch flagstone
+x 5
+y 16
+end
+arch dungeon_floor
+x 5
+y 17
+end
+arch boulder
+x 5
+y 17
+end
+arch flagstone
+x 5
+y 18
+end
+arch cobblestones2
+x 5
+y 19
+end
+arch stwall_2_1_2
+x 5
+y 19
+end
+arch cobblestones2
+x 6
+end
+arch stwall_3_3
+x 6
+end
+arch cobblestones
+x 6
+y 1
+end
+arch stwall_1_2
+x 6
+y 1
+end
+arch cobblestones
+x 6
+y 2
+end
+arch gate_closed_2
+connected 1
+no_magic 1
+damned 1
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 3
+end
+arch stwall_1_1
+x 6
+y 3
+end
+arch cobblestones
+x 6
+y 4
+end
+arch stwall_2_2_1
+x 6
+y 4
+end
+arch flagstone
+x 6
+y 5
+end
+arch rjunct_we-s
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch flagstone
+x 6
+y 6
+end
+arch river_n-s
+x 6
+y 6
+end
+arch flagstone
+x 6
+y 7
+end
+arch river_n-s
+x 6
+y 7
+end
+arch flagstone
+x 6
+y 8
+end
+arch river_n-s
+x 6
+y 8
+end
+arch flagstone
+x 6
+y 9
+end
+arch river_n-s
+x 6
+y 9
+end
+arch flagstone
+x 6
+y 10
+end
+arch river_n-s
+x 6
+y 10
+end
+arch flagstone
+x 6
+y 11
+end
+arch river_n-s
+x 6
+y 11
+end
+arch flagstone
+x 6
+y 12
+end
+arch river_n-s
+x 6
+y 12
+end
+arch flagstone
+x 6
+y 13
+end
+arch river_n-s
+x 6
+y 13
+end
+arch flagstone
+x 6
+y 14
+end
+arch river_sw-n
+x 6
+y 14
+end
+arch flagstone
+x 6
+y 15
+end
+arch river_sw-ne_l
+x 6
+y 15
+end
+arch flagstone
+x 6
+y 16
+end
+arch boulder
+name heavy boulder
+weight 5000000
+x 6
+y 16
+end
+arch dungeon_floor
+x 6
+y 17
+end
+arch boulder
+x 6
+y 17
+end
+arch flagstone
+x 6
+y 18
+end
+arch boulder
+x 6
+y 18
+end
+arch cobblestones2
+x 6
+y 19
+end
+arch stwall_2_1_2
+x 6
+y 19
+end
+arch cobblestones2
+x 7
+end
+arch stwall_2_1_2
+x 7
+end
+arch cobblestones
+x 7
+y 1
+end
+arch random_wealth
+exp 5
+x 7
+y 1
+end
+arch pixie
+x 7
+y 1
+end
+arch cobblestones
+x 7
+y 2
+end
+arch random_treasure
+exp 6
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 3
+end
+arch random_wealth
+exp 6
+x 7
+y 3
+end
+arch pixie
+x 7
+y 3
+end
+arch cobblestones
+x 7
+y 4
+end
+arch stwall_2_1_2
+x 7
+y 4
+end
+arch flagstone
+x 7
+y 5
+end
+arch river_w-e
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 5
+sp 6
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch dungeon_floor
+x 7
+y 9
+end
+arch dungeon_floor
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 11
+end
+arch teleporter
+type 66
+slaying house3.bas2
+hp 5
+sp 13
+x 7
+y 11
+end
+arch mover_1
+x 7
+y 11
+end
+arch flagstone
+x 7
+y 12
+end
+arch tree6
+blocksview 1
+no_pass 1
+x 7
+y 12
+end
+arch flagstone
+x 7
+y 13
+end
+arch tree6
+blocksview 1
+no_pass 1
+x 7
+y 13
+end
+arch flagstone
+x 7
+y 14
+end
+arch button_small
+name waterproof button
+weight 10000
+connected 2
+x 7
+y 14
+end
+arch rain5
+x 7
+y 14
+end
+arch flagstone
+x 7
+y 15
+end
+arch kobold
+x 7
+y 15
+end
+arch flagstone
+x 7
+y 16
+end
+arch dungeon_floor
+x 7
+y 17
+end
+arch cobblestones2
+x 7
+y 18
+end
+arch random_weapon
+x 7
+y 18
+end
+arch cobblestones2
+x 7
+y 19
+end
+arch stwall_2_1_2
+x 7
+y 19
+end
+arch cobblestones2
+x 8
+end
+arch stwall_2_1_2
+x 8
+end
+arch cobblestones
+x 8
+y 1
+end
+arch random_treasure
+exp 6
+x 8
+y 1
+end
+arch cobblestones
+x 8
+y 2
+end
+arch pixie
+name angry pixie
+level 5
+exp 500
+other_arch pixie
+dam 4
+wc 15
+hp 60
+maxhp 60
+ac 8
+sp 10
+maxsp 10
+can_use_rod 1
+can_use_scroll 1
+resist_physical 20
+resist_fire 20
+resist_electricity 20
+resist_cold 20
+resist_confusion 20
+resist_acid 20
+resist_drain 20
+resist_weaponmagic 20
+resist_ghosthit 20
+resist_slow 20
+resist_paralyze 20
+resist_fear 20
+resist_deplete 20
+resist_chaos 20
+resist_blind 20
+resist_holyword 40
+x 8
+y 2
+arch wand
+title of Firebolt of Plenty
+value 5000
+sp 82
+level 1
+food 50
+end
+arch head
+name Angry Pixie's head
+name_pl Angry Pixie's heads
+weight 5
+value 300
+material 0
+identified 1
+level 3
+resist_magic 1
+resist_fire 1
+end
+end
+arch cobblestones
+x 8
+y 3
+end
+arch random_spells
+exp 5
+x 8
+y 3
+end
+arch cobblestones
+x 8
+y 4
+end
+arch stwall_2_1_2
+x 8
+y 4
+end
+arch flagstone
+x 8
+y 5
+end
+arch river_w-e
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch flagstone
+x 8
+y 6
+end
+arch flagstone
+x 8
+y 7
+end
+arch generate_goblin
+x 8
+y 7
+end
+arch flagstone
+x 8
+y 8
+end
+arch flagstone
+x 8
+y 9
+end
+arch flagstone
+x 8
+y 10
+end
+arch goblin_leader_arc
+x 8
+y 10
+end
+arch flagstone
+x 8
+y 11
+end
+arch stwall_1_4
+x 8
+y 11
+end
+arch flagstone
+x 8
+y 12
+end
+arch rain2
+x 8
+y 12
+end
+arch random_wealth
+x 8
+y 12
+end
+arch flagstone
+x 8
+y 13
+end
+arch tree6
+blocksview 1
+no_pass 1
+x 8
+y 13
+end
+arch flagstone
+x 8
+y 14
+end
+arch kobold
+x 8
+y 14
+end
+arch dungeon_floor
+x 8
+y 15
+end
+arch kobold
+x 8
+y 15
+end
+arch dungeon_floor
+x 8
+y 16
+end
+arch kobold
+x 8
+y 16
+end
+arch dungeon_floor
+x 8
+y 17
+end
+arch flagstone
+x 8
+y 18
+end
+arch ladder_up
+slaying house3.bas1
+hp 8
+sp 18
+x 8
+y 18
+end
+arch cobblestones2
+x 8
+y 19
+end
+arch stwall_2_1_2
+x 8
+y 19
+end
+arch cobblestones2
+x 9
+end
+arch stwall_2_2_3
+x 9
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch stwall_2_1_1
+x 9
+y 1
+end
+arch cobblestones2
+x 9
+y 2
+end
+arch stwall_2_1_1
+x 9
+y 2
+end
+arch torch_cyan
+no_pick 1
+identified 1
+x 9
+y 2
+end
+arch cobblestones2
+x 9
+y 3
+end
+arch stwall_2_1_1
+x 9
+y 3
+end
+arch cobblestones2
+x 9
+y 4
+end
+arch stwall_3_4
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch river_w-e
+x 9
+y 5
+end
+arch stwall_2_1_1
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch stwall_2_1_1
+x 9
+y 6
+end
+arch cobblestones2
+x 9
+y 7
+end
+arch stwall_2_1_1
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch stwall_2_1_1
+x 9
+y 8
+end
+arch cobblestones2
+x 9
+y 9
+end
+arch stwall_2_1_1
+x 9
+y 9
+end
+arch cobblestones2
+x 9
+y 10
+end
+arch stwall_2_1_1
+x 9
+y 10
+end
+arch cobblestones2
+x 9
+y 11
+end
+arch stwall_3_4
+x 9
+y 11
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch stwall_2_1_1
+x 9
+y 12
+end
+arch cobblestones2
+x 9
+y 13
+end
+arch stwall_2_1_1
+x 9
+y 13
+end
+arch cobblestones2
+x 9
+y 14
+end
+arch stwall_2_1_1
+x 9
+y 14
+end
+arch cobblestones2
+x 9
+y 15
+end
+arch stwall_2_1_1
+x 9
+y 15
+end
+arch cobblestones2
+x 9
+y 16
+end
+arch stwall_2_1_1
+x 9
+y 16
+end
+arch cobblestones2
+x 9
+y 17
+end
+arch stwall_2_1_1
+x 9
+y 17
+end
+arch cobblestones2
+x 9
+y 18
+end
+arch stwall_2_1_1
+x 9
+y 18
+end
+arch cobblestones2
+x 9
+y 19
+end
+arch stwall_2_2_4
+x 9
+y 19
+end
