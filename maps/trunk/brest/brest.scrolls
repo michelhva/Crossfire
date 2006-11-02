@@ -109,6 +109,20 @@ end
 arch swall_2_1_1
 y 14
 end
+arch magic_mouth
+msg
+You hear a voice in your mind:
+
+"Only those with something of Zorn's may pass!"
+
+An invisible force keeps you from passing the gate.
+endmsg
+food 1
+y 15
+connected 6
+walk_on 0
+fly_on 0
+end
 arch brush
 y 15
 end
@@ -338,6 +352,11 @@ arch brush
 x 1
 y 13
 end
+arch button_small
+x 1
+y 14
+connected 2
+end
 arch brush
 x 1
 y 14
@@ -351,6 +370,11 @@ x 1
 y 15
 no_magic 1
 damned 1
+end
+arch button_small
+x 1
+y 16
+connected 2
 end
 arch brush
 x 1
@@ -604,19 +628,50 @@ arch brush
 x 2
 y 13
 end
+arch button_small
+x 2
+y 14
+connected 2
+end
 arch brush
 x 2
 y 14
 end
+arch button_small
+x 2
+y 15
+connected 2
+end
+arch check_inv
+name no irritable_zorn_key block
+slaying irritable_zorn_key
+x 2
+y 15
+no_pass 1
+end
 arch brush
 x 2
 y 15
 end
-arch swall_2_1_2
+arch ggate_closed
 x 2
 y 15
+connected 2
 no_magic 1
 damned 1
+end
+arch check_inv
+name no irritable_zorn_key message
+slaying irritable_zorn_key
+x 2
+y 16
+last_sp 0
+connected 6
+end
+arch button_small
+x 2
+y 16
+connected 2
 end
 arch brush
 x 2
@@ -794,6 +849,11 @@ arch brush
 x 3
 y 13
 end
+arch button_small
+x 3
+y 14
+connected 2
+end
 arch brush
 x 3
 y 14
@@ -807,6 +867,11 @@ x 3
 y 15
 no_magic 1
 damned 1
+end
+arch button_small
+x 3
+y 16
+connected 2
 end
 arch brush
 x 3
