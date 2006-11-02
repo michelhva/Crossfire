@@ -7899,8 +7899,31 @@ x 19
 y 39
 end
 arch bookshelf
+name Personal Bookshelf
+name_pl Zorn Library Shelves
 x 19
 y 39
+no_pick 1
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
 end
 arch stonefloor2
 x 19
@@ -19897,8 +19920,31 @@ x 39
 y 39
 end
 arch bookshelf
+name Personal Bookshelf
+name_pl Personal Bookshelves
 x 39
 y 39
+no_pick 1
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
 end
 arch cobblestones
 x 39
