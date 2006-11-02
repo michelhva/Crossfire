@@ -2267,6 +2267,12 @@ x 10
 y 18
 type 77
 end
+arch check_inv
+slaying ltaprtmnt
+x 10
+y 19
+no_pass 1
+end
 arch dungeon_magic
 x 10
 y 19
