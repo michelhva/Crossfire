@@ -5804,7 +5804,7 @@ wc -50
 ac -50
 x 15
 y 13
-speed 0.1
+speed 0.95
 level 120
 attacktype 257
 resist_physical 90
@@ -6294,7 +6294,7 @@ wc -50
 ac -50
 x 16
 y 17
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -6858,7 +6858,7 @@ wc -50
 ac -50
 x 17
 y 17
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -9208,7 +9208,7 @@ wc -50
 ac -50
 x 22
 y 33
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -9333,7 +9333,7 @@ wc -50
 ac -50
 x 22
 y 34
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -9734,29 +9734,11 @@ arch stonefloor2
 x 23
 y 20
 end
-arch chair_2.2
-name sitting room chair
-name_pl sitting room chairs
-x 23
-y 20
-end
 arch cobblestones
 x 23
 y 21
 end
-arch chair_2.2
-name sitting room chair
-name_pl sitting room chairs
-x 23
-y 21
-end
 arch cobblestones
-x 23
-y 22
-end
-arch chair_2.2
-name sitting room chair
-name_pl sitting room chairs
 x 23
 y 22
 end
@@ -12002,25 +11984,6 @@ arch dwall_2_2_4
 x 27
 y 27
 end
-arch trap
-name fireball trap
-dam 1
-x 27
-y 28
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 27
-y 28
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 27
 y 28
@@ -12154,13 +12117,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 27
 y 47
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -12404,13 +12366,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 28
 y 10
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13731,13 +13692,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 10
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13778,13 +13738,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 15
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13809,13 +13768,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 18
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13856,13 +13814,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 25
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13891,13 +13848,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 29
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13938,13 +13894,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 36
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -13981,13 +13936,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 29
 y 42
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -14220,13 +14174,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 30
 y 10
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -15335,13 +15288,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 30
 y 44
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -16983,21 +16935,6 @@ name moat
 x 33
 y 52
 end
-arch magic_mouth
-msg
-As you pass over this area you feel
-as if the castle is watching you,
-judging you and looking to see if
-perhaps you have some item that
-allows you to enter.
-You recall tales that say Zorn is
-known to bring his pet in with him
-when he comes home.
-endmsg
-x 33
-y 53
-connected 2
-end
 arch sea
 name moat
 x 33
@@ -17323,13 +17260,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 34
 y 28
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -17640,13 +17576,12 @@ level 50
 connected 200
 end
 arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
+name firebullet creator
+other_arch firebullet
 hp 0
 x 34
 y 48
-level 10
+level 35
 connected 200
 lifesave 1
 end
@@ -17847,6 +17782,11 @@ arch cobblestones
 x 35
 y 19
 end
+arch table_2
+name sitting room endtable
+x 35
+y 19
+end
 arch cobblestones
 x 35
 y 20
@@ -17860,6 +17800,11 @@ x 35
 y 22
 end
 arch cobblestones
+x 35
+y 23
+end
+arch table_2
+name sitting room endtable
 x 35
 y 23
 end
@@ -18342,7 +18287,19 @@ arch stonefloor2
 x 36
 y 19
 end
+arch chair_2.1
+name sitting room chair
+name_pl sitting room chairs
+x 36
+y 19
+end
 arch stonefloor2
+x 36
+y 20
+end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
 x 36
 y 20
 end
@@ -18350,11 +18307,29 @@ arch cobblestones
 x 36
 y 21
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 36
+y 21
+end
 arch cobblestones
 x 36
 y 22
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 36
+y 22
+end
 arch stonefloor2
+x 36
+y 23
+end
+arch chair_2.3
+name sitting room chair
+name_pl sitting room chairs
 x 36
 y 23
 end
@@ -18428,7 +18403,7 @@ wc -50
 ac -50
 x 36
 y 33
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -18553,7 +18528,7 @@ wc -50
 ac -50
 x 36
 y 34
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -18935,7 +18910,19 @@ arch stonefloor2
 x 37
 y 19
 end
+arch chair_2.1
+name sitting room chair
+name_pl sitting room chairs
+x 37
+y 19
+end
 arch stonefloor2
+x 37
+y 20
+end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
 x 37
 y 20
 end
@@ -18943,11 +18930,29 @@ arch cobblestones
 x 37
 y 21
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 37
+y 21
+end
 arch cobblestones
 x 37
 y 22
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 37
+y 22
+end
 arch stonefloor2
+x 37
+y 23
+end
+arch chair_2.3
+name sitting room chair
+name_pl sitting room chairs
 x 37
 y 23
 end
@@ -19338,7 +19343,19 @@ arch cobblestones
 x 38
 y 19
 end
+arch chair_2.1
+name sitting room chair
+name_pl sitting room chairs
+x 38
+y 19
+end
 arch cobblestones
+x 38
+y 20
+end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
 x 38
 y 20
 end
@@ -19346,11 +19363,29 @@ arch stonefloor2
 x 38
 y 21
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 38
+y 21
+end
 arch stonefloor2
 x 38
 y 22
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 38
+y 22
+end
 arch cobblestones
+x 38
+y 23
+end
+arch chair_2.3
+name sitting room chair
+name_pl sitting room chairs
 x 38
 y 23
 end
@@ -19745,7 +19780,19 @@ arch cobblestones
 x 39
 y 19
 end
+arch chair_2.1
+name sitting room chair
+name_pl sitting room chairs
+x 39
+y 19
+end
 arch cobblestones
+x 39
+y 20
+end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
 x 39
 y 20
 end
@@ -19753,11 +19800,29 @@ arch stonefloor2
 x 39
 y 21
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 39
+y 21
+end
 arch stonefloor2
 x 39
 y 22
 end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 39
+y 22
+end
 arch cobblestones
+x 39
+y 23
+end
+arch chair_2.3
+name sitting room chair
+name_pl sitting room chairs
 x 39
 y 23
 end
@@ -20220,6 +20285,11 @@ arch stonefloor2
 x 40
 y 19
 end
+arch table_2
+name sitting room endtable
+x 40
+y 19
+end
 arch stonefloor2
 x 40
 y 20
@@ -20233,6 +20303,11 @@ x 40
 y 22
 end
 arch stonefloor2
+x 40
+y 23
+end
+arch table_2
+name sitting room endtable
 x 40
 y 23
 end
@@ -20559,7 +20634,7 @@ wc -50
 ac -50
 x 41
 y 17
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -21030,7 +21105,7 @@ wc -50
 ac -50
 x 42
 y 17
-speed 0.1
+speed 0.75
 level 120
 attacktype 1
 resist_physical 85
@@ -21980,7 +22055,7 @@ wc -50
 ac -50
 x 44
 y 13
-speed 0.1
+speed 0.95
 level 109
 attacktype 262145
 resist_physical 85
@@ -22093,6 +22168,7 @@ ac -5
 resist_physical 5
 resist_chaos 10
 material 0
+value 125
 applied 1
 end
 arch skill_evocation
@@ -22134,6 +22210,10 @@ arch stonefloor2
 x 44
 y 20
 end
+arch chair_1.4
+x 44
+y 20
+end
 arch cobblestones
 x 44
 y 21
@@ -22147,6 +22227,10 @@ x 44
 y 23
 end
 arch stonefloor2
+x 44
+y 24
+end
+arch chair_1.4
 x 44
 y 24
 end
@@ -22535,11 +22619,25 @@ arch stonefloor2
 x 45
 y 19
 end
+arch chair_1.1
+x 45
+y 19
+end
 arch stonefloor2
 x 45
 y 20
 end
+arch table
+name card table
+name_pl card tables
+x 45
+y 20
+end
 arch cobblestones
+x 45
+y 21
+end
+arch chair_1.3
 x 45
 y 21
 end
@@ -22551,11 +22649,25 @@ arch stonefloor2
 x 45
 y 23
 end
+arch chair_1.1
+x 45
+y 23
+end
 arch stonefloor2
 x 45
 y 24
 end
+arch table
+name card table
+name_pl card tables
+x 45
+y 24
+end
 arch cobblestones
+x 45
+y 25
+end
+arch chair_1.3
 x 45
 y 25
 end
@@ -22871,6 +22983,10 @@ arch cobblestones
 x 46
 y 20
 end
+arch chair_1.2
+x 46
+y 20
+end
 arch stonefloor2
 x 46
 y 21
@@ -22884,6 +23000,10 @@ x 46
 y 23
 end
 arch cobblestones
+x 46
+y 24
+end
+arch chair_1.2
 x 46
 y 24
 end
