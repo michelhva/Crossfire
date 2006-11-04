@@ -19294,6 +19294,10 @@ arch stonefloor2
 x 38
 y 42
 end
+arch chair_1.4
+x 38
+y 42
+end
 arch cobblestones
 x 38
 y 43
@@ -19762,11 +19766,25 @@ arch stonefloor2
 x 39
 y 41
 end
+arch chair_1.1
+x 39
+y 41
+end
 arch stonefloor2
 x 39
 y 42
 end
+arch table
+name card table
+name_pl card tables
+x 39
+y 42
+end
 arch cobblestones
+x 39
+y 43
+end
+arch chair_1.3
 x 39
 y 43
 end
@@ -20163,6 +20181,10 @@ x 40
 y 41
 end
 arch cobblestones
+x 40
+y 42
+end
+arch chair_1.2
 x 40
 y 42
 end
@@ -21133,6 +21155,10 @@ arch stonefloor2
 x 42
 y 42
 end
+arch chair_1.4
+x 42
+y 42
+end
 arch cobblestones
 x 42
 y 43
@@ -21556,7 +21582,17 @@ arch stonefloor2
 x 43
 y 41
 end
+arch chair_1.1
+x 43
+y 41
+end
 arch stonefloor2
+x 43
+y 42
+end
+arch table
+name card table
+name_pl card tables
 x 43
 y 42
 end
@@ -21564,9 +21600,144 @@ arch cobblestones
 x 43
 y 43
 end
+arch chair_1.3
+x 43
+y 43
+end
 arch cobblestones
 x 43
 y 44
+end
+arch woman2
+name Xandra Zorn
+title Middle Daughter
+msg
+@match *
+Are you stupid? What are you doing in the private area
+of our castle?
+endmsg
+Con 30
+Pow 50
+hp 1000
+maxhp 1000
+sp 900
+maxsp 900
+exp 800000
+dam 35
+wc -50
+ac -50
+x 43
+y 44
+speed 0.95
+level 109
+attacktype 16449
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 100
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 85
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 85
+resist_holyword 85
+resist_blind 85
+randomitems sorcery_book_high
+see_invisible 1
+arch skill_karate
+end
+arch skill_missile_weapon
+end
+arch skill_one_handed_weapon
+end
+arch skill_two_handed_weapon
+end
+arch skill_use_magic_item
+end
+arch skill_sorcery
+end
+arch spell_steambolt
+end
+arch spell_poison_cloud
+end
+arch spell_color_spray
+end
+arch spell_fear
+end
+arch spell_mass_confusion
+end
+arch sabre
+name Xandra
+name_pl Xandras
+slaying human
+msg
+Inscription: To our dear daughter Xandra
+on her 16th birthday.
+endmsg
+dam 11
+wc 3
+attacktype 81984
+material 0
+value 3800
+last_sp 3
+item_power 5
+applied 1
+reflect_spell 1
+end
+arch crown_dark
+name Acid crown
+name_pl Acid crowns
+ac 1
+resist_physical 0
+resist_magic -20
+resist_acid 45
+resist_fear 30
+resist_deplete 30
+material 0
+value 17000
+item_power 5
+applied 1
+damned 1
+end
+arch robe2
+name Acid robe
+name_pl Acid robes
+Con 2
+resist_fire -20
+resist_acid 35
+resist_fear 25
+resist_deplete 25
+material 0
+value 9000
+last_sp 0
+item_power 5
+damned 1
+end
+arch low_boots
+name Acid boots
+name_pl Acid boots
+hp 2
+exp 2
+resist_physical 0
+resist_confusion -15
+resist_acid 15
+resist_fear 15
+resist_deplete 15
+material 0
+value 2500
+item_power 2
+damned 1
+end
 end
 arch stonefloor2
 x 43
@@ -21795,7 +21966,7 @@ resist_turn_undead 85
 resist_fear -50
 resist_deplete 85
 resist_death 85
-resist_chaos 85
+resist_chaos 100
 resist_godpower 85
 resist_holyword 85
 resist_blind 85
@@ -22054,6 +22225,10 @@ x 44
 y 41
 end
 arch cobblestones
+x 44
+y 42
+end
+arch chair_1.2
 x 44
 y 42
 end
@@ -22551,15 +22726,50 @@ arch dwall_1_3
 x 45
 y 45
 end
+arch duplicator
+name power crystal
+other_arch power_crystal
+x 45
+y 46
+connected 103
+activate_on_release 0
+end
 arch rune_large_fireball
 Cha 200
 x 45
 y 46
 level 35
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 45
+y 46
+level 50
+connected 103
+lifesave 1
+end
+arch trap
+x 45
+y 46
+level 50
+connected 103
+end
 arch cobblestones
 x 45
 y 46
+end
+arch power_crystal
+name Xandra's Crystal
+name_pl Xandra's Crystals
+sp 500
+maxsp 1500
+x 45
+y 46
+value 10900000
+weight 1
 end
 arch cobblestones2
 x 45
@@ -23003,6 +23213,23 @@ y 45
 blocksview 1
 cursed 1
 damned 1
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 46
+y 46
+level 50
+connected 103
+lifesave 1
+end
+arch trap
+x 46
+y 46
+level 50
+connected 103
 end
 arch rune_large_fireball
 Cha 200
@@ -23489,15 +23716,52 @@ arch dwall_1_4
 x 47
 y 45
 end
+arch duplicator
+name rod heavy
+other_arch rod_heavy
+x 47
+y 46
+connected 103
+activate_on_release 0
+end
 arch rune_large_fireball
 Cha 200
 x 47
 y 46
 level 35
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 47
+y 46
+level 50
+connected 103
+lifesave 1
+end
+arch trap
+x 47
+y 46
+level 50
+connected 103
+end
 arch stonefloor2
 x 47
 y 46
+end
+arch rod_heavy
+name Missile Swarm
+name_pl Missile Swarms
+maxhp 100
+sp 203
+x 47
+y 46
+level 75
+value 70000
+weight 20000
+startequip 1
 end
 arch cobblestones2
 x 47
