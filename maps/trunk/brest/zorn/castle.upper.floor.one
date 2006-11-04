@@ -3086,24 +3086,11 @@ end
 arch skill_one_handed_weapon
 end
 end
-arch trap
-name fireball trap
-dam 1
+arch rune_large_fireball
+Cha 200
 x 9
 y 10
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 9
-y 10
-level 10
-connected 200
-lifesave 1
+level 35
 end
 arch cobblestones2
 x 9
@@ -3148,25 +3135,6 @@ end
 arch cobblestones2
 x 9
 y 20
-end
-arch trap
-name fireball trap
-dam 1
-x 9
-y 21
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 9
-y 21
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 9
@@ -3220,25 +3188,6 @@ arch cobblestones2
 x 9
 y 33
 end
-arch trap
-name fireball trap
-dam 1
-x 9
-y 34
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 9
-y 34
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 9
 y 34
@@ -3250,25 +3199,6 @@ end
 arch cobblestones2
 x 9
 y 36
-end
-arch trap
-name fireball trap
-dam 1
-x 9
-y 37
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 9
-y 37
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 9
@@ -3290,25 +3220,6 @@ arch cobblestones2
 x 9
 y 41
 end
-arch trap
-name fireball trap
-dam 1
-x 9
-y 42
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 9
-y 42
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 9
 y 42
@@ -3328,6 +3239,12 @@ end
 arch cobblestones2
 x 9
 y 46
+end
+arch rune_large_fireball
+Cha 200
+x 9
+y 47
+level 35
 end
 arch cobblestones2
 x 9
@@ -3507,24 +3424,11 @@ arch cwall_2_1_2
 x 10
 y 8
 end
-arch trap
-name fireball trap
-dam 1
+arch rune_large_fireball
+Cha 200
 x 10
 y 9
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 10
-y 9
-level 10
-connected 200
-lifesave 1
+level 35
 end
 arch cobblestones2
 x 10
@@ -3690,9 +3594,21 @@ arch dwall_2_2_1
 x 10
 y 27
 end
+arch rune_large_fireball
+Cha 200
+x 10
+y 28
+level 35
+end
 arch cobblestones2
 x 10
 y 28
+end
+arch rune_large_fireball
+Cha 200
+x 10
+y 29
+level 35
 end
 arch cobblestones2
 x 10
@@ -3858,9 +3774,21 @@ arch dwall_2_2_1
 x 10
 y 47
 end
+arch rune_large_fireball
+Cha 200
+x 10
+y 48
+level 35
+end
 arch cobblestones2
 x 10
 y 48
+end
+arch rune_large_fireball
+Cha 200
+x 10
+y 49
+level 35
 end
 arch cobblestones2
 x 10
@@ -4335,25 +4263,6 @@ end
 arch dwall_2_1_2
 x 11
 y 47
-end
-arch trap
-name fireball trap
-dam 1
-x 11
-y 48
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 11
-y 48
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 11
@@ -5146,25 +5055,6 @@ end
 arch cobblestones2
 x 13
 y 28
-end
-arch trap
-name fireball trap
-dam 1
-x 13
-y 29
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 13
-y 29
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 13
@@ -6452,25 +6342,6 @@ end
 arch dwall_3_1
 x 16
 y 27
-end
-arch trap
-name fireball trap
-dam 1
-x 16
-y 28
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 16
-y 28
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 16
@@ -9532,6 +9403,12 @@ arch cobblestones2
 x 22
 y 48
 end
+arch rune_large_fireball
+Cha 200
+x 22
+y 49
+level 35
+end
 arch cobblestones2
 x 22
 y 49
@@ -9648,6 +9525,12 @@ end
 arch cwall_2_1_2
 x 23
 y 8
+end
+arch rune_large_fireball
+Cha 200
+x 23
+y 9
+level 35
 end
 arch cobblestones2
 x 23
@@ -9980,6 +9863,12 @@ end
 arch dwall_2_2_4
 x 23
 y 47
+end
+arch rune_large_fireball
+Cha 200
+x 23
+y 48
+level 35
 end
 arch cobblestones2
 x 23
@@ -11984,9 +11873,21 @@ arch dwall_2_2_4
 x 27
 y 27
 end
+arch rune_large_fireball
+Cha 200
+x 27
+y 28
+level 35
+end
 arch cobblestones2
 x 27
 y 28
+end
+arch rune_large_fireball
+Cha 200
+x 27
+y 29
+level 35
 end
 arch cobblestones2
 x 27
@@ -12107,24 +12008,6 @@ end
 arch cobblestones2
 x 27
 y 46
-end
-arch trap
-name fireball trap
-dam 1
-x 27
-y 47
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 27
-y 47
-level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 27
@@ -12357,23 +12240,11 @@ arch brazier
 x 28
 y 9
 end
-arch trap
-name fireball trap
-dam 1
-x 28
-y 10
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
+arch rune_large_fireball
+Cha 200
 x 28
 y 10
 level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 28
@@ -13683,23 +13554,11 @@ arch altar_none
 x 29
 y 9
 end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 10
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
+arch rune_large_fireball
+Cha 200
 x 29
 y 10
 level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 29
@@ -13729,27 +13588,15 @@ arch cobblestones2
 x 29
 y 14
 end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 15
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 15
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 29
 y 15
+end
+arch rune_large_fireball
+Cha 200
+x 29
+y 16
+level 35
 end
 arch cobblestones2
 x 29
@@ -13758,24 +13605,6 @@ end
 arch cobblestones2
 x 29
 y 17
-end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 18
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 18
-level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 29
@@ -13805,24 +13634,6 @@ arch cobblestones2
 x 29
 y 24
 end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 25
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 25
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 29
 y 25
@@ -13830,6 +13641,12 @@ end
 arch cobblestones2
 x 29
 y 26
+end
+arch rune_large_fireball
+Cha 200
+x 29
+y 27
+level 35
 end
 arch cobblestones2
 x 29
@@ -13839,27 +13656,15 @@ arch cobblestones2
 x 29
 y 28
 end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 29
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 29
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 29
 y 29
+end
+arch rune_large_fireball
+Cha 200
+x 29
+y 30
+level 35
 end
 arch cobblestones2
 x 29
@@ -13885,24 +13690,6 @@ arch cobblestones2
 x 29
 y 35
 end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 36
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 36
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 29
 y 36
@@ -13923,27 +13710,15 @@ arch cobblestones2
 x 29
 y 40
 end
+arch rune_large_fireball
+Cha 200
+x 29
+y 41
+level 35
+end
 arch cobblestones2
 x 29
 y 41
-end
-arch trap
-name fireball trap
-dam 1
-x 29
-y 42
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 29
-y 42
-level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 29
@@ -14165,23 +13940,11 @@ arch brazier
 x 30
 y 9
 end
-arch trap
-name fireball trap
-dam 1
-x 30
-y 10
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
+arch rune_large_fireball
+Cha 200
 x 30
 y 10
 level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 30
@@ -15278,24 +15041,6 @@ end
 arch cobblestones2
 x 30
 y 43
-end
-arch trap
-name fireball trap
-dam 1
-x 30
-y 44
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 30
-y 44
-level 35
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 30
@@ -15687,9 +15432,21 @@ arch dwall_2_2_1
 x 31
 y 27
 end
+arch rune_large_fireball
+Cha 200
+x 31
+y 28
+level 35
+end
 arch cobblestones2
 x 31
 y 28
+end
+arch rune_large_fireball
+Cha 200
+x 31
+y 29
+level 35
 end
 arch cobblestones2
 x 31
@@ -17251,24 +17008,6 @@ arch dwall_2_1_2
 x 34
 y 27
 end
-arch trap
-name fireball trap
-dam 1
-x 34
-y 28
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 34
-y 28
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 34
 y 28
@@ -17567,24 +17306,6 @@ end
 arch skill_one_handed_weapon
 end
 end
-arch trap
-name fireball trap
-dam 1
-x 34
-y 48
-level 50
-connected 200
-end
-arch creator
-name firebullet creator
-other_arch firebullet
-hp 0
-x 34
-y 48
-level 35
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 34
 y 48
@@ -17705,6 +17426,12 @@ end
 arch cwall_2_1_2
 x 35
 y 8
+end
+arch rune_large_fireball
+Cha 200
+x 35
+y 9
+level 35
 end
 arch cobblestones2
 x 35
@@ -18037,6 +17764,12 @@ end
 arch dwall_2_2_1
 x 35
 y 47
+end
+arch rune_large_fireball
+Cha 200
+x 35
+y 48
+level 35
 end
 arch cobblestones2
 x 35
@@ -18726,6 +18459,12 @@ end
 arch cobblestones2
 x 36
 y 48
+end
+arch rune_large_fireball
+Cha 200
+x 36
+y 49
+level 35
 end
 arch cobblestones2
 x 36
@@ -21264,25 +21003,6 @@ arch dwall_3_1
 x 42
 y 27
 end
-arch trap
-name fireball trap
-dam 1
-x 42
-y 28
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 42
-y 28
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 42
 y 28
@@ -22115,11 +21835,9 @@ msg
 Inscription: To Zerina our Eldest Daughter on her
 21st birthday.
 endmsg
-dam 9
+dam 10
 wc 5
 attacktype 262161
-resist_cold 10
-resist_chaos 10
 material 0
 value 20000
 last_sp 2
@@ -22172,6 +21890,23 @@ value 125
 applied 1
 end
 arch skill_evocation
+end
+arch key_ring
+name Zerina's key ring
+name_pl Zerina's key rings
+Str 15
+material 2
+container 60000
+arch key2
+name Zerina's chest key
+name_pl Zerina's chest keys
+slaying zerina_chest_key
+end
+arch key2
+name Zerina's trunk key
+name_pl Zerina's trunk keys
+slaying zerina_trunk_key
+end
 end
 end
 arch cobblestones
@@ -22334,11 +22069,23 @@ arch cobblestones
 x 44
 y 45
 end
+arch dwall_2_2_2
+x 44
+y 45
+end
 arch cobblestones
 x 44
 y 46
 end
+arch dwall_2_1_1
+x 44
+y 46
+end
 arch cobblestones2
+x 44
+y 47
+end
+arch dwall_2_2_1
 x 44
 y 47
 end
@@ -22532,25 +22279,55 @@ arch dwall_2_1_2
 x 45
 y 10
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 45
+y 11
+level 50
+connected 101
+lifesave 1
+end
+arch trap
+msg
+You set off a trap!
+The luggage disappears ...
+endmsg
+hp 5
+x 45
+y 11
+level 50
+attacktype 256
+connected 101
+end
+arch duplicator
+other_arch chest_2
+x 45
+y 11
+connected 101
+activate_on_release 0
+end
 arch stonefloor2
 x 45
 y 11
 end
-arch luggage
-name Zerina's Sea Trunk
-name_pl Zerina's Sea Trunks
+arch chest_2
+name Zerina's Sea Chest
+name_pl Zerina's Sea Chests
+slaying zerina_chest_key
 msg
 Custom luggage given to Zerina Zorn
 on her 25th birthday for a sea voyage
 around the world.
 endmsg
-Str 60
+Str 75
 x 45
 y 11
 material 0
-value 500000
-weight 10000
-container 1500000
+weight 9000
+container 1000000
 end
 arch stonefloor2
 x 45
@@ -22559,6 +22336,17 @@ end
 arch dwall_1_3
 x 45
 y 12
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 45
+y 13
+level 50
+connected 101
+lifesave 1
 end
 arch cobblestones
 x 45
@@ -22759,6 +22547,16 @@ arch cobblestones
 x 45
 y 45
 end
+arch dwall_1_3
+x 45
+y 45
+end
+arch rune_large_fireball
+Cha 200
+x 45
+y 46
+level 35
+end
 arch cobblestones
 x 45
 y 46
@@ -22904,25 +22702,31 @@ arch dwall_2_1_2
 x 46
 y 10
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 46
+y 11
+level 50
+connected 101
+lifesave 1
+end
 arch cobblestones
 x 46
 y 11
 end
-arch luggage
-name Zerina's Sea Trunk
-name_pl Zerina's Sea Trunks
-msg
-Custom luggage given to Zerina Zorn
-on her 25th birthday for a sea voyage
-around the world.
-endmsg
-Str 60
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
 x 46
-y 11
-material 0
-value 500000
-weight 10000
-container 1500000
+y 12
+level 50
+connected 101
+lifesave 1
 end
 arch cobblestones
 x 46
@@ -22934,6 +22738,17 @@ y 12
 blocksview 1
 cursed 1
 damned 1
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 46
+y 13
+level 50
+connected 101
+lifesave 1
 end
 arch stonefloor2
 x 46
@@ -23161,15 +22976,41 @@ arch cobblestones
 x 46
 y 44
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 46
+y 45
+level 50
+connected 103
+lifesave 1
+end
+arch trap
+x 46
+y 45
+level 50
+connected 103
+end
 arch stonefloor2
 x 46
 y 45
 end
-arch stonefloor2
+arch door_look_1
+x 46
+y 45
+blocksview 1
+cursed 1
+damned 1
+end
+arch rune_large_fireball
+Cha 200
 x 46
 y 46
+level 35
 end
-arch brazier
+arch stonefloor2
 x 46
 y 46
 end
@@ -23314,6 +23155,36 @@ arch dwall_2_1_2
 x 47
 y 10
 end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 47
+y 11
+level 50
+connected 101
+lifesave 1
+end
+arch trap
+msg
+You set off a trap!
+The luggage disappears ...
+endmsg
+hp 5
+x 47
+y 11
+level 50
+attacktype 256
+connected 101
+end
+arch duplicator
+other_arch luggage
+x 47
+y 11
+connected 101
+activate_on_release 0
+end
 arch cobblestones
 x 47
 y 11
@@ -23321,12 +23192,13 @@ end
 arch luggage
 name Zerina's Sea Trunk
 name_pl Zerina's Sea Trunks
+slaying zerina_trunk_key
 msg
 Custom luggage given to Zerina Zorn
 on her 25th birthday for a sea voyage
 around the world.
 endmsg
-Str 60
+Str 75
 x 47
 y 11
 material 0
@@ -23341,6 +23213,17 @@ end
 arch dwall_1_4
 x 47
 y 12
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 47
+y 13
+level 50
+connected 101
+lifesave 1
 end
 arch stonefloor2
 x 47
@@ -23498,25 +23381,6 @@ end
 arch skill_one_handed_weapon
 end
 end
-arch trap
-name fireball trap
-dam 1
-x 47
-y 29
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 47
-y 29
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 47
 y 29
@@ -23621,15 +23485,17 @@ arch stonefloor2
 x 47
 y 45
 end
-arch brazier
+arch dwall_1_4
 x 47
 y 45
 end
-arch stonefloor2
+arch rune_large_fireball
+Cha 200
 x 47
 y 46
+level 35
 end
-arch brazier
+arch stonefloor2
 x 47
 y 46
 end
@@ -23815,24 +23681,11 @@ arch cwall_2_1_2
 x 48
 y 8
 end
-arch trap
-name fireball trap
-dam 1
+arch rune_large_fireball
+Cha 200
 x 48
 y 9
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 48
-y 9
-level 10
-connected 200
-lifesave 1
+level 35
 end
 arch cobblestones2
 x 48
@@ -23998,9 +23851,21 @@ arch dwall_2_2_4
 x 48
 y 27
 end
+arch rune_large_fireball
+Cha 200
+x 48
+y 28
+level 35
+end
 arch cobblestones2
 x 48
 y 28
+end
+arch rune_large_fireball
+Cha 200
+x 48
+y 29
+level 35
 end
 arch cobblestones2
 x 48
@@ -24146,7 +24011,7 @@ arch cobblestones2
 x 48
 y 45
 end
-arch dwall_2_1_1
+arch dwall_3_4
 x 48
 y 45
 end
@@ -24166,9 +24031,21 @@ arch dwall_2_2_4
 x 48
 y 47
 end
+arch rune_large_fireball
+Cha 200
+x 48
+y 48
+level 35
+end
 arch cobblestones2
 x 48
 y 48
+end
+arch rune_large_fireball
+Cha 200
+x 48
+y 49
+level 35
 end
 arch cobblestones2
 x 48
@@ -24349,24 +24226,11 @@ end
 arch skill_one_handed_weapon
 end
 end
-arch trap
-name fireball trap
-dam 1
+arch rune_large_fireball
+Cha 200
 x 49
 y 10
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 49
-y 10
-level 10
-connected 200
-lifesave 1
+level 35
 end
 arch cobblestones2
 x 49
@@ -24396,25 +24260,6 @@ arch cobblestones2
 x 49
 y 16
 end
-arch trap
-name fireball trap
-dam 1
-x 49
-y 17
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 49
-y 17
-level 10
-connected 200
-lifesave 1
-end
 arch cobblestones2
 x 49
 y 17
@@ -24434,25 +24279,6 @@ end
 arch cobblestones2
 x 49
 y 21
-end
-arch trap
-name fireball trap
-dam 1
-x 49
-y 22
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 49
-y 22
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 49
@@ -24554,28 +24380,15 @@ arch cobblestones2
 x 49
 y 46
 end
+arch rune_large_fireball
+Cha 200
+x 49
+y 47
+level 35
+end
 arch cobblestones2
 x 49
 y 47
-end
-arch trap
-name fireball trap
-dam 1
-x 49
-y 48
-level 50
-connected 200
-end
-arch creator
-name fireball creator
-slaying fireball
-other_arch fireball
-hp 0
-x 49
-y 48
-level 10
-connected 200
-lifesave 1
 end
 arch cobblestones2
 x 49
