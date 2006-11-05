@@ -3754,7 +3754,7 @@ arch cobblestones2
 x 10
 y 45
 end
-arch dwall_2_1_1
+arch dwall_3_2
 x 10
 y 45
 end
@@ -4250,15 +4250,11 @@ arch cobblestones
 x 11
 y 45
 end
-arch brazier
+arch dwall_1_3
 x 11
 y 45
 end
 arch cobblestones
-x 11
-y 46
-end
-arch brazier
 x 11
 y 46
 end
@@ -4749,15 +4745,38 @@ arch stonefloor2
 x 12
 y 44
 end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 12
+y 45
+level 50
+attacktype 256
+end
+arch trap
+x 12
+y 45
+level 50
+connected 104
+end
 arch cobblestones
 x 12
 y 45
 end
-arch cobblestones
+arch door_look_1
 x 12
-y 46
+y 45
+blocksview 1
+cursed 1
+damned 1
 end
-arch brazier
+arch cobblestones
 x 12
 y 46
 end
@@ -5149,6 +5168,10 @@ arch stonefloor2
 x 13
 y 45
 end
+arch dwall_1_4
+x 13
+y 45
+end
 arch stonefloor2
 x 13
 y 46
@@ -5478,11 +5501,23 @@ arch stonefloor2
 x 14
 y 45
 end
+arch dwall_2_2_3
+x 14
+y 45
+end
 arch stonefloor2
 x 14
 y 46
 end
+arch dwall_2_1_1
+x 14
+y 46
+end
 arch cobblestones2
+x 14
+y 47
+end
+arch dwall_2_2_4
 x 14
 y 47
 end
@@ -8723,6 +8758,40 @@ end
 arch stonefloor2
 x 21
 y 45
+end
+arch mastif
+name Vulf
+title Weinia's pet
+msg
+@match *
+*arf!*
+endmsg
+Int 15
+x 21
+y 45
+speed 0.2
+attacktype 1
+unaggressive 1
+sleep 0
+arch s_mastif
+name Vulf's shadow
+Pow 25
+Int 15
+sp 100
+maxsp 100
+exp 200000
+dam 33
+speed 0.4
+level 65
+can_cast_spell 1
+sleep 0
+arch abil_frostbolt
+end
+arch abil_fear
+end
+arch abil_large_icestorm
+end
+end
 end
 arch stonefloor2
 x 21
