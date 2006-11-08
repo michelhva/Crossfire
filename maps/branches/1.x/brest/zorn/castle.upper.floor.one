@@ -3060,6 +3060,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -3257,64 +3259,6 @@ end
 arch cobblestones2
 x 9
 y 49
-end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
-x 9
-y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 9
@@ -4088,65 +4032,11 @@ arch cobblestones2
 x 11
 y 28
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
-x 11
-y 28
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
-end
 arch cobblestones2
+x 11
+y 29
+end
+arch brazier
 x 11
 y 29
 end
@@ -4274,63 +4164,9 @@ arch cobblestones2
 x 11
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 11
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 11
@@ -4615,6 +4451,10 @@ arch cobblestones2
 x 12
 y 28
 end
+arch cobblestones2
+x 12
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -4628,7 +4468,7 @@ dam 20
 wc 9
 ac -9
 x 12
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -4647,6 +4487,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -4672,10 +4514,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 12
-y 29
 end
 arch cobblestones2
 x 12
@@ -4795,6 +4633,66 @@ end
 arch cobblestones2
 x 12
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 12
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 12
@@ -5100,6 +4998,66 @@ arch cobblestones2
 x 13
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 13
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 13
 y 30
@@ -5191,6 +5149,66 @@ end
 arch cobblestones2
 x 13
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 13
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 13
@@ -5425,6 +5443,66 @@ arch cobblestones2
 x 14
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 14
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 14
 y 30
@@ -5533,63 +5611,9 @@ arch cobblestones2
 x 14
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 14
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 14
@@ -5939,6 +5963,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -6407,63 +6433,9 @@ arch cobblestones2
 x 16
 y 29
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 16
 y 29
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 16
@@ -6561,63 +6533,9 @@ arch cobblestones2
 x 16
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 16
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 16
@@ -6952,6 +6870,66 @@ arch cobblestones2
 x 17
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 17
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 17
 y 30
@@ -7081,6 +7059,66 @@ end
 arch cobblestones2
 x 17
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 17
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 17
@@ -7317,6 +7355,66 @@ arch cobblestones2
 x 18
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 18
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 18
 y 30
@@ -7432,6 +7530,66 @@ end
 arch cobblestones2
 x 18
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 18
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 18
@@ -7699,6 +7857,10 @@ arch cobblestones2
 x 19
 y 28
 end
+arch cobblestones2
+x 19
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -7712,7 +7874,7 @@ dam 20
 wc 9
 ac -9
 x 19
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -7731,6 +7893,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -7756,10 +7920,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 19
-y 29
 end
 arch cobblestones2
 x 19
@@ -7900,63 +8060,9 @@ arch cobblestones2
 x 19
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 19
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 19
@@ -8233,6 +8339,10 @@ arch cobblestones2
 x 20
 y 28
 end
+arch cobblestones2
+x 20
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -8246,7 +8356,7 @@ dam 20
 wc 9
 ac -9
 x 20
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -8265,6 +8375,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -8290,10 +8402,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 20
-y 29
 end
 arch cobblestones2
 x 20
@@ -8665,6 +8773,10 @@ arch cobblestones2
 x 21
 y 29
 end
+arch brazier
+x 21
+y 29
+end
 arch cobblestones2
 x 21
 y 30
@@ -8817,63 +8929,9 @@ arch cobblestones2
 x 21
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 21
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 21
@@ -9126,6 +9184,66 @@ end
 arch cobblestones2
 x 22
 y 29
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 22
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 22
@@ -9503,6 +9621,66 @@ arch cobblestones2
 x 22
 y 49
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 22
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 22
 y 50
@@ -9784,6 +9962,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -9968,63 +10148,9 @@ arch cobblestones2
 x 23
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 23
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 23
@@ -10179,6 +10305,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -10273,6 +10401,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -10399,6 +10529,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -10537,6 +10669,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -10631,6 +10765,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -10862,6 +10998,7 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+stand_still 0
 can_use_skill 1
 can_use_rod 1
 arch shadow
@@ -10976,6 +11113,66 @@ arch cobblestones2
 x 25
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 25
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 25
 y 30
@@ -11078,6 +11275,7 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+stand_still 0
 can_use_skill 1
 can_use_rod 1
 arch shadow
@@ -11156,63 +11354,9 @@ arch cobblestones2
 x 25
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 25
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 25
@@ -11396,6 +11540,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -11506,6 +11652,10 @@ arch cobblestones2
 x 26
 y 29
 end
+arch brazier
+x 26
+y 29
+end
 arch cobblestones2
 x 26
 y 30
@@ -11602,6 +11752,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -11655,6 +11807,66 @@ end
 arch cobblestones2
 x 26
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 26
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 26
@@ -11809,6 +12021,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -11846,6 +12060,8 @@ end
 arch pillars
 x 27
 y 11
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 27
@@ -11862,6 +12078,8 @@ end
 arch pillars
 x 27
 y 14
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 27
@@ -12087,6 +12305,12 @@ arch cobblestones2
 x 27
 y 43
 end
+arch pillars
+x 27
+y 43
+no_pass 1
+blocksview 1
+end
 arch cobblestones2
 x 27
 y 44
@@ -12098,6 +12322,12 @@ end
 arch cobblestones2
 x 27
 y 46
+end
+arch pillars
+x 27
+y 46
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 27
@@ -12111,63 +12341,9 @@ arch cobblestones2
 x 27
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 27
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 27
@@ -12404,6 +12580,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12466,6 +12644,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12528,6 +12708,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12598,6 +12780,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12660,6 +12844,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12730,6 +12916,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12792,6 +12980,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12854,6 +13044,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -12940,6 +13132,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13002,6 +13196,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13064,6 +13260,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13134,6 +13332,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13196,6 +13396,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13266,6 +13468,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13328,6 +13532,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13390,6 +13596,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -13822,7 +14030,15 @@ arch cobblestones2
 x 29
 y 44
 end
+arch light1
+x 29
+y 44
+end
 arch cobblestones2
+x 29
+y 45
+end
+arch light1
 x 29
 y 45
 end
@@ -14104,6 +14320,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14166,6 +14384,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14228,6 +14448,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14298,6 +14520,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14360,6 +14584,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14430,6 +14656,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14492,6 +14720,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14554,6 +14784,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14640,6 +14872,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14702,6 +14936,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14764,6 +15000,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14834,6 +15072,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14896,6 +15136,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -14966,6 +15208,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -15028,6 +15272,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -15090,6 +15336,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -15368,6 +15616,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -15405,6 +15655,8 @@ end
 arch pillars
 x 31
 y 11
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 31
@@ -15421,6 +15673,8 @@ end
 arch pillars
 x 31
 y 14
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 31
@@ -15646,6 +15900,12 @@ arch cobblestones2
 x 31
 y 43
 end
+arch pillars
+x 31
+y 43
+no_pass 1
+blocksview 1
+end
 arch cobblestones2
 x 31
 y 44
@@ -15657,6 +15917,12 @@ end
 arch cobblestones2
 x 31
 y 46
+end
+arch pillars
+x 31
+y 46
+no_pass 1
+blocksview 1
 end
 arch cobblestones2
 x 31
@@ -15670,63 +15936,9 @@ arch cobblestones2
 x 31
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 31
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 31
@@ -15946,6 +16158,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -16056,6 +16270,10 @@ arch cobblestones2
 x 32
 y 29
 end
+arch brazier
+x 32
+y 29
+end
 arch cobblestones2
 x 32
 y 30
@@ -16152,6 +16370,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -16205,6 +16425,66 @@ end
 arch cobblestones2
 x 32
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 32
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 32
@@ -16408,6 +16688,7 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+stand_still 0
 can_use_skill 1
 can_use_rod 1
 arch shadow
@@ -16522,6 +16803,66 @@ arch cobblestones2
 x 33
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 33
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 33
 y 30
@@ -16624,6 +16965,7 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+stand_still 0
 can_use_skill 1
 can_use_rod 1
 arch shadow
@@ -16702,63 +17044,9 @@ arch cobblestones2
 x 33
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 33
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 33
@@ -16918,6 +17206,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17012,6 +17302,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17138,6 +17430,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17276,6 +17570,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17370,6 +17666,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17685,6 +17983,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -17869,63 +18169,9 @@ arch cobblestones2
 x 35
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 35
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 35
@@ -18183,6 +18429,66 @@ end
 arch cobblestones2
 x 36
 y 29
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 36
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 36
@@ -18559,6 +18865,66 @@ end
 arch cobblestones2
 x 36
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 36
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 36
@@ -18821,6 +19187,10 @@ arch cobblestones2
 x 37
 y 29
 end
+arch brazier
+x 37
+y 29
+end
 arch cobblestones2
 x 37
 y 30
@@ -18939,63 +19309,9 @@ arch cobblestones2
 x 37
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 37
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 37
@@ -19250,6 +19566,10 @@ arch cobblestones2
 x 38
 y 28
 end
+arch cobblestones2
+x 38
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -19263,7 +19583,7 @@ dam 20
 wc 9
 ac -9
 x 38
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -19282,6 +19602,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -19307,10 +19629,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 38
-y 29
 end
 arch cobblestones2
 x 38
@@ -19691,6 +20009,10 @@ arch cobblestones2
 x 39
 y 28
 end
+arch cobblestones2
+x 39
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -19704,7 +20026,7 @@ dam 20
 wc 9
 ac -9
 x 39
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -19723,6 +20045,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -19748,10 +20072,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 39
-y 29
 end
 arch cobblestones2
 x 39
@@ -19906,63 +20226,9 @@ arch cobblestones2
 x 39
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 39
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 39
@@ -20194,6 +20460,66 @@ arch cobblestones2
 x 40
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 40
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 40
 y 30
@@ -20313,6 +20639,66 @@ end
 arch cobblestones2
 x 40
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 40
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 40
@@ -20652,6 +21038,66 @@ arch cobblestones2
 x 41
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 41
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 41
 y 30
@@ -20781,6 +21227,66 @@ end
 arch cobblestones2
 x 41
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 41
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 41
@@ -21123,63 +21629,9 @@ arch cobblestones2
 x 42
 y 29
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 42
 y 29
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 42
@@ -21281,63 +21733,9 @@ arch cobblestones2
 x 42
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 42
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 42
@@ -21586,6 +21984,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -22256,6 +22656,66 @@ arch cobblestones2
 x 44
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 44
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 44
 y 30
@@ -22368,63 +22828,9 @@ arch cobblestones2
 x 44
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 44
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 44
@@ -22752,6 +23158,66 @@ arch cobblestones2
 x 45
 y 29
 end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 45
+y 29
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
 arch cobblestones2
 x 45
 y 30
@@ -22901,6 +23367,66 @@ end
 arch cobblestones2
 x 45
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 45
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 45
@@ -23180,6 +23706,10 @@ arch cobblestones2
 x 46
 y 28
 end
+arch cobblestones2
+x 46
+y 29
+end
 arch medium_guard
 name Room Attendant
 Con 25
@@ -23193,7 +23723,7 @@ dam 20
 wc 9
 ac -9
 x 46
-y 28
+y 29
 level 35
 resist_fire 30
 resist_electricity 30
@@ -23212,6 +23742,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -23237,10 +23769,6 @@ arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
 end
-end
-arch cobblestones2
-x 46
-y 29
 end
 arch cobblestones2
 x 46
@@ -23400,6 +23928,66 @@ end
 arch cobblestones2
 x 46
 y 49
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 46
+y 49
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+pick_up 24
+stand_still 0
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
 end
 arch cobblestones2
 x 46
@@ -23700,65 +24288,11 @@ arch cobblestones2
 x 47
 y 28
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
-x 47
-y 28
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
-end
 arch cobblestones2
+x 47
+y 29
+end
+arch brazier
 x 47
 y 29
 end
@@ -23946,63 +24480,9 @@ arch cobblestones2
 x 47
 y 49
 end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+arch brazier
 x 47
 y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 47
@@ -24631,6 +25111,8 @@ resist_death 30
 resist_chaos 30
 resist_blind 30
 path_attuned 4
+pick_up 24
+stand_still 0
 arch shadow
 name Attendant shadow
 sp 100
@@ -24828,64 +25310,6 @@ end
 arch cobblestones2
 x 49
 y 49
-end
-arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
-sp 200
-maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
-x 49
-y 49
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
-resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
-path_attuned 4
-arch shadow
-name Attendant shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch darkblade
-applied 1
-end
-arch mithril_chainmail
-applied 1
-end
-arch high_boots
-applied 1
-end
-arch reflector
-applied 1
-end
-arch skill_two_handed_weapon
-end
-arch skill_one_handed_weapon
-end
 end
 arch cobblestones2
 x 49
