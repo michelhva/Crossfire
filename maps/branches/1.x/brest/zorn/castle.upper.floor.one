@@ -4132,6 +4132,20 @@ arch stonefloor2
 x 11
 y 43
 end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 11
+y 44
+level 50
+attacktype 256
+end
 arch stonefloor2
 x 11
 y 44
@@ -4144,7 +4158,103 @@ arch dwall_1_3
 x 11
 y 45
 end
+arch duplicator
+name ring delete
+other_arch ring
+x 11
+y 46
+connected 104
+activate_on_release 0
+end
+arch trap
+name ring trap
+msg
+The ring of Resist Elements disappears!
+endmsg
+Cha 200
+dam 0
+x 11
+y 46
+level 75
+attacktype 0
+connected 104
+end
+arch rune_large_fireball
+Cha 200
+dam 0
+x 11
+y 46
+level 75
+attacktype 0
+end
+arch rune_ball_lightning
+Cha 200
+dam 0
+x 11
+y 46
+level 75
+attacktype 0
+end
+arch rune_create_bomb
+Cha 200
+dam 0
+x 11
+y 46
+level 75
+attacktype 0
+end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 11
+y 46
+level 50
+attacktype 256
+end
 arch cobblestones
+x 11
+y 46
+end
+arch ring
+name ring of Resist Elements
+name_pl rings of Resist Elements
+msg
+An ancient silver ring that glows
+with a protective shield
+endmsg
+face ring.117
+Con 2
+ac 3
+x 11
+y 46
+resist_physical 45
+resist_fire 45
+resist_electricity 45
+resist_cold 45
+resist_poison 45
+path_attuned 14
+value 500000
+item_power 25
+end
+arch random_treasure
+x 11
+y 46
+end
+arch random_treasure
+x 11
+y 46
+end
+arch random_treasure
+x 11
+y 46
+end
+arch random_treasure
 x 11
 y 46
 end
@@ -4579,9 +4689,47 @@ arch stonefloor2
 x 12
 y 43
 end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 12
+y 44
+level 50
+attacktype 256
+end
 arch stonefloor2
 x 12
 y 44
+end
+arch rune_large_fireball
+Cha 200
+dam 0
+x 12
+y 45
+level 75
+attacktype 0
+end
+arch rune_ball_lightning
+Cha 200
+dam 0
+x 12
+y 45
+level 75
+attacktype 0
+end
+arch rune_create_bomb
+Cha 200
+dam 0
+x 12
+y 45
+level 75
+attacktype 0
 end
 arch generic_rune
 name Zorn bomb trap
@@ -4597,12 +4745,6 @@ y 45
 level 50
 attacktype 256
 end
-arch trap
-x 12
-y 45
-level 50
-connected 104
-end
 arch cobblestones
 x 12
 y 45
@@ -4614,7 +4756,65 @@ blocksview 1
 cursed 1
 damned 1
 end
+arch rune_large_fireball
+Cha 200
+dam 0
+x 12
+y 46
+level 75
+attacktype 0
+end
+arch rune_ball_lightning
+Cha 200
+dam 0
+x 12
+y 46
+level 75
+attacktype 0
+end
+arch rune_create_bomb
+Cha 200
+dam 0
+x 12
+y 46
+level 75
+attacktype 0
+end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 12
+y 46
+level 50
+attacktype 256
+end
 arch cobblestones
+x 12
+y 46
+end
+arch random_talisman
+x 12
+y 46
+end
+arch random_talisman
+x 12
+y 46
+end
+arch random_talisman
+x 12
+y 46
+end
+arch random_talisman
+x 12
+y 46
+end
+arch random_talisman
 x 12
 y 46
 end
@@ -5114,9 +5314,27 @@ arch stonefloor2
 x 13
 y 42
 end
+arch chair_1.4
+x 13
+y 42
+end
 arch cobblestones
 x 13
 y 43
+end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 13
+y 44
+level 50
+attacktype 256
 end
 arch cobblestones
 x 13
@@ -5130,7 +5348,85 @@ arch dwall_1_4
 x 13
 y 45
 end
+arch rune_large_fireball
+Cha 200
+dam 0
+x 13
+y 46
+level 75
+attacktype 0
+end
+arch rune_ball_lightning
+Cha 200
+dam 0
+x 13
+y 46
+level 75
+attacktype 0
+end
+arch rune_create_bomb
+Cha 200
+dam 0
+x 13
+y 46
+level 75
+attacktype 0
+end
+arch generic_rune
+name Zorn bomb trap
+msg
+You set off a trap!
+endmsg
+Cha 200
+hp 5
+sp 8
+dam 50
+x 13
+y 46
+level 50
+attacktype 256
+end
 arch stonefloor2
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
+x 13
+y 46
+end
+arch random_wealth
 x 13
 y 46
 end
@@ -5563,11 +5859,25 @@ arch stonefloor2
 x 14
 y 41
 end
+arch chair_1.1
+x 14
+y 41
+end
 arch stonefloor2
 x 14
 y 42
 end
+arch table
+name card table
+name_pl card tables
+x 14
+y 42
+end
 arch cobblestones
+x 14
+y 43
+end
+arch chair_1.3
 x 14
 y 43
 end
@@ -6055,6 +6365,10 @@ arch cobblestones
 x 15
 y 42
 end
+arch chair_1.2
+x 15
+y 42
+end
 arch stonefloor2
 x 15
 y 43
@@ -6062,6 +6376,135 @@ end
 arch stonefloor2
 x 15
 y 44
+end
+arch pirate_lass
+name Weinia Zorn
+title Youngest Daughter
+msg
+@match *
+My name is Weinia Zorn.
+You killed my father.
+Prepare to die.
+endmsg
+Con 30
+Pow 50
+hp 2000
+maxhp 2000
+sp 900
+maxsp 900
+exp 800000
+dam 35
+wc -50
+ac -50
+x 15
+y 44
+speed 0.95
+level 109
+attacktype 1053
+resist_physical 85
+resist_magic 85
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 100
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 85
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 85
+resist_holyword 85
+resist_blind 85
+path_attuned 14
+randomitems summoner_book_high
+see_invisible 1
+unaggressive 1
+can_use_rod 1
+arch skill_karate
+end
+arch skill_missile_weapon
+end
+arch skill_one_handed_weapon
+end
+arch skill_pyromancy
+end
+arch skill_evocation
+end
+arch skill_praying
+end
+arch skill_sorcery
+end
+arch skill_two_handed_weapon
+end
+arch spell_negabolt
+end
+arch spell_firebolt
+end
+arch spell_color_spray
+end
+arch spell_magehound
+end
+arch spell_cause_many_wounds
+end
+arch dragonclaw
+name dragon claw dagger
+name_pl dragon claw daggers
+skill one handed weapons
+msg
+Ancient dagger made from a claw donated to the
+Zorn family by Xxvlorf the Legendary Dragon.
+endmsg
+dam 15
+wc 5
+type 15
+attacktype 1053
+material 0
+value 55000
+last_sp 2
+weapontype 5
+item_power 6
+applied 1
+end
+arch cloak
+name Cloak of the Elements
+name_pl Cloaks of the Elements
+msg
+An ancient cloak of unknown material and origin.
+endmsg
+Con 2
+hp 2
+resist_physical 45
+resist_fire 45
+resist_electricity 45
+resist_cold 45
+resist_confusion -10
+resist_poison 45
+resist_paralyze -10
+resist_fear -10
+material 0
+value 40000
+weight 2000
+applied 1
+reflect_spell 1
+end
+arch speedboots
+name enhanced speed boots
+name_pl enhanced speed boots
+Str 1
+exp 9
+resist_physical 5
+value 100000
+weight 3000
+item_power 9
+applied 1
+end
 end
 arch cobblestones
 x 15
@@ -6255,6 +6698,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -6692,6 +7136,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -7021,6 +7466,10 @@ x 17
 y 41
 end
 arch stonefloor2
+x 17
+y 42
+end
+arch chair_1.4
 x 17
 y 42
 end
@@ -7491,11 +7940,25 @@ arch stonefloor2
 x 18
 y 41
 end
+arch chair_1.1
+x 18
+y 41
+end
 arch stonefloor2
 x 18
 y 42
 end
+arch table
+name card table
+name_pl card tables
+x 18
+y 42
+end
 arch cobblestones
+x 18
+y 43
+end
+arch chair_1.3
 x 18
 y 43
 end
@@ -8025,6 +8488,10 @@ x 19
 y 41
 end
 arch cobblestones
+x 19
+y 42
+end
+arch chair_1.2
 x 19
 y 42
 end
@@ -9275,6 +9742,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -9400,6 +9868,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -18520,6 +18989,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -18645,6 +19115,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -20859,6 +21330,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -21450,6 +21922,7 @@ end
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
