@@ -18686,21 +18686,24 @@ end
 arch ArchAngel
 name Ascended Vicar of Valriel
 race Divine
-Wis 15
+Con 75
+Wis 25
+hp 26000
 sp 1000
 exp 5000000
-ac -20
+ac -40
 x 28
 y 28
-speed 0.75
+speed 0.65
 level 120
 attacktype 5263625
 resist_physical 100
-resist_fire 95
+resist_fire 85
 resist_cold 100
 resist_acid 75
 resist_weaponmagic 100
 resist_ghosthit 100
+resist_slow 50
 resist_turn_undead 100
 resist_deplete 100
 resist_death 100
@@ -18780,6 +18783,27 @@ endmsg
 hp 9
 sp 8
 glow_radius 8
+end
+arch girdle_strcon
+name girdle of Valriel
+name_pl girdles of Valriel
+title of the Crusade
+msg
+A glowing girdle that grants the wearer
+some benefits compliments of Valriel
+endmsg
+Str 3
+Dex 3
+Con 3
+Wis 5
+Cha 2
+grace 3
+ac 2
+material 0
+value 750000
+glow_radius 3
+applied 1
+damned 1
 end
 end
 arch destroying_angel
