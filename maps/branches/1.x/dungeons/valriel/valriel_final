@@ -18723,11 +18723,12 @@ Con 75
 Wis 25
 hp 26000
 sp 1000
+maxsp 500
 exp 5000000
 ac -40
 x 28
 y 25
-speed 0.6
+speed 0.7
 level 120
 attacktype 5263625
 resist_physical 100
@@ -18746,6 +18747,8 @@ resist_holyword 100
 path_attuned 8
 randomitems prayer_book_high
 run_away 20
+maxgr 500
+gr 1000
 arch skill_two_handed_weapon
 end
 arch skill_missile_weapon
@@ -18758,26 +18761,13 @@ arch skill_sorcery
 end
 arch spell_paralyze
 end
-arch cleric_book
-randomitems none
-startequip 1
-arch spell_sunspear
+arch spell_ball_lightning
 end
-end
-arch cleric_book
-randomitems none
-arch spell_major_healing
-end
-end
-arch evoker_book
-randomitems none
-arch spell_manabolt
-end
-end
-arch evoker_book
-randomitems none
 arch spell_mana_blast
 end
+arch spell_manabolt
+end
+arch spell_sunspear
 end
 arch holy_avenger
 name Glowing Holy Avenger
@@ -18849,6 +18839,15 @@ glow_radius 5
 applied 1
 damned 1
 end
+arch key2
+name Valriel's Treasure Key
+name_pl Valriel's Treasure Keys
+slaying valriels_treasure_key
+msg
+A glowing key given to the guardian of Valriel's Treasure
+endmsg
+glow_radius 5
+end
 arch ladder_down
 name ladder back to Scorn
 slaying /scorn/temples/valriel
@@ -18859,15 +18858,6 @@ endmsg
 hp 9
 sp 8
 glow_radius 8
-end
-arch key2
-name Valriel's Treasure Key
-name_pl Valriel's Treasure Keys
-slaying valriels_treasure_key
-msg
-A glowing key given to the guardian of Valriel's Treasure
-endmsg
-glow_radius 5
 end
 end
 arch destroying_angel
