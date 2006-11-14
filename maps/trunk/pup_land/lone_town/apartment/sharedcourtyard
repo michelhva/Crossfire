@@ -1,5 +1,6 @@
 arch map
 name shared_courtyard
+difficulty 1
 region lonetown
 width 40
 height 40
@@ -9,6 +10,7 @@ msg
 Creator: Gene Alexander
 Date:    Mon Nov  7 18:54:00 UTC 2005
 endmsg
+outdoor 1
 end
 arch cobblestones
 end
