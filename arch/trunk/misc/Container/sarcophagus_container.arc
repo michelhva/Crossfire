@@ -11,7 +11,6 @@ weight 800000
 editable 132
 no_pick 1
 identified 1
-randomitems sarcophagus
 magicmap khaki
 name_pl sarcophaguss
 client_type 51
