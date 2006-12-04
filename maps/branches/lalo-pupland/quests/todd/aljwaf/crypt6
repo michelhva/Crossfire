@@ -1,16 +1,16 @@
 arch map
 name crypt6
+difficulty 8
+darkness 3
+width 10
+height 20
+enter_x 1
+enter_y 1
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/20/2002
 endmsg
-width 10
-height 20
-enter_x 1
-enter_y 1
-difficulty 8
-darkness 3
 end
 arch dirtfloor
 end
@@ -171,9 +171,9 @@ x 1
 y 5
 end
 arch block_door_closed
-connected 1
 x 1
 y 5
+connected 1
 end
 arch dirtfloor
 x 1
@@ -188,16 +188,16 @@ x 1
 y 7
 end
 arch dancingsword
-level 10
 exp 5000
+x 1
+y 7
+level 10
 attacktype 1
 resist_physical 0
 resist_fire 0
 resist_electricity 0
 resist_cold 0
 resist_confusion 0
-x 1
-y 7
 end
 arch dirtfloor
 x 1
@@ -302,9 +302,9 @@ x 2
 y 5
 end
 arch block_door_closed
-connected 1
 x 2
 y 5
+connected 1
 end
 arch dirtfloor
 x 2
@@ -385,9 +385,9 @@ x 3
 y 3
 end
 arch pedestal
-connected 1
 x 3
 y 3
+connected 1
 end
 arch dirtfloor
 x 3
@@ -398,9 +398,9 @@ x 3
 y 5
 end
 arch block_door_closed
-connected 1
 x 3
 y 5
+connected 1
 end
 arch dirtfloor
 x 3
@@ -489,9 +489,9 @@ x 4
 y 5
 end
 arch block_door_closed
-connected 1
 x 4
 y 5
+connected 1
 end
 arch dirtfloor
 x 4
@@ -576,9 +576,9 @@ x 5
 y 3
 end
 arch pedestal
-connected 1
 x 5
 y 3
+connected 1
 end
 arch dirtfloor
 x 5
@@ -589,9 +589,9 @@ x 5
 y 5
 end
 arch block_door_closed
-connected 1
 x 5
 y 5
+connected 1
 end
 arch dirtfloor
 x 5
@@ -684,9 +684,9 @@ x 6
 y 5
 end
 arch block_door_closed
-connected 1
 x 6
 y 5
+connected 1
 end
 arch dirtfloor
 x 6
@@ -767,9 +767,9 @@ x 7
 y 3
 end
 arch pedestal
-connected 1
 x 7
 y 3
+connected 1
 end
 arch dirtfloor
 x 7
@@ -780,9 +780,9 @@ x 7
 y 5
 end
 arch block_door_closed
-connected 1
 x 7
 y 5
+connected 1
 end
 arch dirtfloor
 x 7
@@ -879,9 +879,9 @@ x 8
 y 5
 end
 arch block_door_closed
-connected 1
 x 8
 y 5
+connected 1
 end
 arch dirtfloor
 x 8
@@ -916,16 +916,16 @@ x 8
 y 11
 end
 arch dancingsword
-level 10
 exp 5000
+x 8
+y 11
+level 10
 attacktype 1
 resist_physical 0
 resist_fire 0
 resist_electricity 0
 resist_cold 0
 resist_confusion 0
-x 8
-y 11
 end
 arch dirtfloor
 x 8
@@ -968,16 +968,16 @@ x 8
 y 18
 end
 arch dancingsword
-level 10
 exp 5000
+x 8
+y 18
+level 10
 attacktype 1
 resist_physical 0
 resist_fire 0
 resist_electricity 0
 resist_cold 0
 resist_confusion 0
-x 8
-y 18
 end
 arch dirtfloor
 x 8
