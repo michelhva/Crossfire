@@ -645,6 +645,11 @@ arch dirtfloor
 x 5
 y 18
 end
+arch trigger
+x 5
+y 18
+connected 1
+end
 arch random_shield
 x 5
 y 18
