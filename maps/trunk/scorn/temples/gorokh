@@ -1,15 +1,15 @@
 arch map
 name gorokh
 region scorn
+width 16
+height 16
+enter_x 7
+enter_y 13
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Fri Jan 22 02:39:30 1999
 endmsg
-width 16
-height 16
-enter_x 7
-enter_y 13
 end
 arch grass
 end
@@ -476,9 +476,9 @@ x 5
 y 6
 end
 arch altar_gorokh
-level 120
 x 5
 y 6
+level 120
 end
 arch marble
 x 5
@@ -962,6 +962,7 @@ x 11
 y 3
 end
 arch phole_2
+slaying /!
 msg
 floorstyle lightdirt
 wallstyle dungeon2
@@ -969,6 +970,7 @@ exitstyle sstair
 doorstyle door_look
 decorstyle religious_gorokh
 monsterstyle demon
+final_map /dungeons/gorokh/gorokh_final
 xsize 30
 ysize 30
 symmetry 1
@@ -976,16 +978,15 @@ dungeon_depth 99
 orientation 1
 expand2x 1
 endmsg
-slaying /!
 x 11
 y 3
 end
 arch fireplace
-weight 1000000
-can_roll 1
-move_type 1
 x 11
 y 3
+weight 1000000
+move_type 1
+can_roll 1
 end
 arch marble
 x 11
