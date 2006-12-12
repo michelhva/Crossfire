@@ -5,7 +5,7 @@ region wilderness
 width 59
 height 59
 enter_x 51
-enter_y 7
+enter_y 6
 msg
 Creator: Gene Alexander
 e-mail: poof@eracc.com
@@ -2358,7 +2358,6 @@ exp 1800
 ac -50
 x 6
 y 46
-speed 0.05
 level 50
 use_content_on_gen 1
 arch gorokh_avatar
@@ -2370,7 +2369,6 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
-speed 0.35
 level 80
 attacktype 1064961
 resist_magic 50
@@ -2442,7 +2440,6 @@ exp 1800
 ac -50
 x 6
 y 52
-speed 0.05
 level 50
 use_content_on_gen 1
 arch gorokh_avatar
@@ -2454,7 +2451,6 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
-speed 0.35
 level 80
 attacktype 1064961
 resist_magic 50
@@ -3563,6 +3559,8 @@ end
 arch mountain_cave2
 name Gorokh's Treasure cave
 slaying /dungeons/gorokh/gorokh_treasure
+hp 9
+sp 49
 x 9
 y 49
 end
@@ -4675,7 +4673,6 @@ exp 1800
 ac -50
 x 12
 y 46
-speed 0.05
 level 50
 use_content_on_gen 1
 arch gorokh_avatar
@@ -4687,7 +4684,6 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
-speed 0.35
 level 80
 attacktype 1064961
 resist_magic 50
@@ -4759,7 +4755,6 @@ exp 1800
 ac -50
 x 12
 y 52
-speed 0.05
 level 50
 use_content_on_gen 1
 arch gorokh_avatar
@@ -4771,7 +4766,6 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
-speed 0.35
 level 80
 attacktype 1064961
 resist_magic 50
@@ -15958,6 +15952,15 @@ x 46
 y 5
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 46
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch permanent_lava
 name eternal lake of fire
 x 46
@@ -16295,11 +16298,29 @@ x 47
 y 5
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 47
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 47
 y 6
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 47
+y 6
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16632,23 +16653,50 @@ x 48
 y 4
 blocksview 0
 end
-arch permanent_lava
-name eternal lake of fire
+arch mountain
+name infernal rocks
 x 48
 y 5
 glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch rock
+name impassable rock column
+x 48
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch mountain
+name infernal rocks
 x 48
 y 6
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 48
+y 6
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
 x 48
 y 7
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 48
+y 7
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16969,11 +17017,20 @@ x 49
 y 4
 blocksview 0
 end
-arch permanent_lava
-name eternal lake of fire
+arch mountain
+name infernal rocks
 x 49
 y 5
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 49
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
@@ -16981,21 +17038,55 @@ x 49
 y 6
 glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch rock
+name impassable rock column
+x 49
+y 6
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch mountain
+name infernal rocks
 x 49
 y 7
 glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch rock
+name impassable rock column
+x 49
+y 7
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch large_stones
 x 49
 y 8
+end
+arch spike_closed
+name spike gate to death
+x 49
+y 8
+connected 2
 glow_radius 1
+no_magic 1
+damned 1
 end
 arch large_stones
 x 49
 y 9
+end
+arch spike_closed
+name spike gate to death
+x 49
+y 9
+connected 2
+glow_radius 1
+no_magic 1
+damned 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -17320,25 +17411,55 @@ x 50
 y 5
 glow_radius 1
 end
-arch mountain
-name infernal rocks
+arch rock
+name impassable rock column
+x 50
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch small_stones
 x 50
 y 6
-glow_radius 1
 end
-arch mountain
-name infernal rocks
+arch small_stones
 x 50
 y 7
-glow_radius 1
 end
-arch medium_stones
+arch magic_mouth
+msg
+You have a strong feeling you should pray to your
+cult gods before venturing beyond this gate.
+Perhaps that altar over there is here for a reason.
+endmsg
 x 50
 y 8
+end
+arch small_stones
+x 50
+y 8
+end
+arch button_lever
+name infernal lever
+x 50
+y 8
+connected 2
+glow_radius 1
 end
 arch large_stones
 x 50
 y 9
+end
+arch spike_closed
+name spike gate to death
+x 50
+y 9
+connected 2
+glow_radius 1
+no_magic 1
+damned 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -17664,6 +17785,15 @@ name infernal rocks
 x 51
 y 5
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 51
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch small_stones
 x 51
@@ -17673,21 +17803,39 @@ arch small_stones
 x 51
 y 7
 end
-arch large_stones
+arch small_stones
 x 51
 y 8
 end
-arch permanent_lava
-name eternal lake of fire
+arch mountain
+name infernal rocks
 x 51
 y 9
 glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch rock
+name impassable rock column
+x 51
+y 9
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch mountain
+name infernal rocks
 x 51
 y 10
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 51
+y 10
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -18009,6 +18157,15 @@ name infernal rocks
 x 52
 y 5
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 52
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch small_stones
 x 52
@@ -18017,13 +18174,21 @@ end
 arch altar_none
 x 52
 y 6
+glow_radius 1
 end
 arch small_stones
 x 52
 y 7
 end
-arch mountain
-name infernal rocks
+arch small_stones
+x 52
+y 8
+end
+arch perm_magic_portal
+name portal back to the temple
+slaying /scorn/temples/gorokh
+hp 6
+sp 6
 x 52
 y 8
 glow_radius 1
@@ -18034,17 +18199,44 @@ x 52
 y 9
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 52
+y 9
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 52
 y 10
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 52
+y 10
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 52
 y 11
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 52
+y 11
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
@@ -18363,11 +18555,29 @@ x 53
 y 5
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 53
+y 5
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 53
 y 6
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 53
+y 6
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
@@ -18375,17 +18585,44 @@ x 53
 y 7
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 53
+y 7
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 53
 y 8
 glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch rock
+name impassable rock column
+x 53
+y 8
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
+arch mountain
+name infernal rocks
 x 53
 y 9
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 53
+y 9
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
@@ -18393,17 +18630,44 @@ x 53
 y 10
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 53
+y 10
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 53
 y 11
 glow_radius 1
 end
+arch rock
+name impassable rock column
+x 53
+y 11
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
+end
 arch mountain
 name infernal rocks
 x 53
 y 12
 glow_radius 1
+end
+arch rock
+name impassable rock column
+x 53
+y 12
+can_roll 0
+blocksview 1
+no_magic 1
+damned 1
 end
 arch mountain
 name infernal rocks
@@ -20520,7 +20784,9 @@ arch spell_fear
 end
 arch spell_paralyze
 end
-arch spell_summon_devil
+arch spell_dancing_sword
+end
+arch spell_summon_pet_monster
 end
 arch darkblade
 title of Gorokh
@@ -20542,7 +20808,6 @@ path_attuned 131072
 value 1043000
 weight 10000
 last_sp 3
-applied 1
 xrays 1
 end
 arch DShieldms
@@ -20571,6 +20836,27 @@ msg
 You wonder what you should do with the body ...
 endmsg
 material 0
+end
+arch cloak
+name dark cloak
+name_pl dark cloaks
+title of Gorokh's Advocate
+msg
+A strange, dark cloak made of some
+sort of dark fire proof material.
+endmsg
+Cha -1
+hp 1
+sp 1
+ac 5
+resist_fire 45
+resist_cold 95
+material 0
+value 40000
+weight 2000
+item_power 5
+applied 1
+stealth 1
 end
 end
 arch active_volcano
