@@ -13282,6 +13282,12 @@ arch cobblestones2
 x 34
 y 34
 end
+arch button_lever
+name gate lever
+x 34
+y 34
+connected 2
+end
 arch cobblestones2
 x 34
 y 35
@@ -13301,6 +13307,12 @@ end
 arch cobblestones2
 x 34
 y 38
+end
+arch button_lever
+name gate lever
+x 34
+y 38
+connected 2
 end
 arch cobblestones2
 x 34
