@@ -18742,13 +18742,11 @@ resist_turn_undead 100
 resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_godpower 100
+resist_godpower 50
 resist_holyword 100
 path_attuned 8
 randomitems prayer_book_high
 run_away 20
-maxgr 500
-gr 1000
 arch skill_two_handed_weapon
 end
 arch skill_missile_weapon
