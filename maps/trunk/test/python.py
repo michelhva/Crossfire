@@ -115,7 +115,8 @@ def do_resist():
 def do_basics():
 	whoami.Say('Basic test')
 	who = Crossfire.WhoIsActivator()
-	whoami.Say('type = %d'%who.Type)
+	whoami.Say(' your type is %d'%who.Type)
+	whoami.Say(' your level is %d'%who.Level)
 
 def do_time():
 	cftime = Crossfire.GetTime()
@@ -151,6 +152,14 @@ def do_misc():
 		whoami.Say("Inv.Env = %s"%inv.Env.Name)
 	else:
 		whoami.Say("Empty inv??")
+
+def do_inventory():
+	whoami.Say('You have:');
+	who = Crossfire.WhoIsActivator()
+	inv = who.Inventory
+	while inv:
+		whoami.Say('%s (type = %d, subtype = %d)'%(inv.Name, inv.Type, inv.Subtype))
+		inv = inv.Below
 
 def do_exp():
 	who = Crossfire.WhoIsActivator()
@@ -232,5 +241,7 @@ elif topic[0] == 'const':
 	do_const()
 elif topic[0] == 'move':
 	do_move()
+elif topic[0] == 'inv':
+	do_inventory()
 else:
 	do_help()
