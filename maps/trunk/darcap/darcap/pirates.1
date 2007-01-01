@@ -1246,8 +1246,12 @@ y 11
 end
 arch violin
 name Pete's Violin
+hp 10
+maxhp 20
+sp 64
 x 5
 y 11
+level 5
 value 1
 weight 1701
 end
@@ -2896,7 +2900,6 @@ msg
 @match *
 No one steals my pet!
 endmsg
-con 2
 hp 25
 maxhp 30
 exp 45
@@ -2908,6 +2911,7 @@ level 6
 resist_poison 30
 resist_fear 50
 unaggressive 0
+con 2
 arch t_rock
 name Pet Rock
 name_pl Pet Rocks
@@ -6607,18 +6611,6 @@ y 13
 speed 0.0
 connected 1001
 end
-arch giantrat
-name Sick Giant Rat
-con 0
-hp 200
-exp 2000
-dam 25
-wc -8
-ac -1
-x 26
-y 13
-speed -0.34
-end
 arch afloor_left
 x 26
 y 14
@@ -6650,17 +6642,6 @@ x 26
 y 16
 speed 0.0
 connected 1000
-end
-arch giantrat
-name Wounded Giant Rat
-con 0
-hp 200
-exp 2000
-dam 20
-ac -1
-x 26
-y 16
-speed -0.34
 end
 arch afloor_left
 x 26
@@ -7217,7 +7198,6 @@ connected 1003
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7227,6 +7207,7 @@ x 28
 y 8
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 28
@@ -7265,8 +7246,8 @@ y 10
 level 12
 resist_confusion 100
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 arch wand
 sp 63
 food 5
@@ -7289,7 +7270,6 @@ connected 1002
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7299,6 +7279,7 @@ x 28
 y 11
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 28
@@ -7334,8 +7315,8 @@ dam 10
 x 28
 y 13
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 end
 arch afloor_left
 x 28
@@ -7351,7 +7332,6 @@ connected 1001
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7361,6 +7341,7 @@ x 28
 y 14
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 28
@@ -7409,7 +7390,6 @@ connected 1000
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7419,6 +7399,7 @@ x 28
 y 17
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 28
@@ -7627,8 +7608,8 @@ x 29
 y 7
 level 12
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 arch wand
 sp 63
 food 5
@@ -7653,7 +7634,6 @@ connected 1003
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7664,6 +7644,7 @@ x 29
 y 8
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 29
@@ -7699,8 +7680,8 @@ dam 10
 x 29
 y 10
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 end
 arch afloor_left
 x 29
@@ -7716,7 +7697,6 @@ connected 1002
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7727,6 +7707,7 @@ x 29
 y 11
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 29
@@ -7763,8 +7744,8 @@ dam 10
 x 29
 y 13
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 end
 arch afloor_left
 x 29
@@ -7780,7 +7761,6 @@ connected 1001
 end
 arch sailor
 name Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7791,6 +7771,7 @@ x 29
 y 14
 level 6
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 29
@@ -7827,8 +7808,8 @@ dam 10
 x 29
 y 16
 randomitems pirate
-pick_up 0
 unaggressive 0
+pick_up 0
 end
 arch afloor_left
 x 29
@@ -7844,7 +7825,6 @@ connected 1000
 end
 arch sailor
 name Elite Pirate Guard
-con 3
 hp 30
 maxhp 30
 exp 55
@@ -7861,6 +7841,7 @@ resist_poison 50
 resist_slow 30
 resist_fear 30
 unaggressive 0
+con 3
 end
 arch afloor_left
 x 29
@@ -8637,4 +8618,27 @@ end
 arch blocked
 x 31
 y 31
+end
+arch giantrat
+name Sick Giant Rat
+hp 200
+exp 2000
+dam 25
+wc -8
+ac -1
+x 26
+y 13
+speed -0.34
+con 0
+end
+arch giantrat
+name Wounded Giant Rat
+hp 200
+exp 2000
+dam 20
+ac -1
+x 26
+y 16
+speed -0.34
+con 0
 end
