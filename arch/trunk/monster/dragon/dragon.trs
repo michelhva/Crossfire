@@ -1,0 +1,71 @@
+treasure dragon
+  list big_dragon_parts
+    chance 80
+  more
+#  arch dragon_steak
+#  nrof 3
+#  chance 90
+#  more
+  arch ability_dragonbreath
+    nrof 5
+  more
+  arch abil_fear
+  more
+#  arch dragon_scale
+#  more
+  arch wand
+  more
+  arch wand
+  chance 50
+  more
+  arch staff
+  chance 50
+  more
+  arch rod_light
+  chance 20
+  more
+  arch rod_heavy
+  chance 5
+  more
+  arch ring
+  more
+  arch ring
+  chance 50
+  more
+  arch gem
+  chance 50
+  nrof 2
+  more
+  arch ruby
+  nrof 2
+  more
+  arch sapphire
+  nrof 3
+  more
+  arch emerald
+  nrof 4
+  more
+  arch pearl
+  nrof 10
+  more
+  arch platinacoin
+  nrof 5
+  more
+  arch goldcoin
+  nrof 100
+  more
+  arch silvercoin
+  nrof 1000
+  more
+  arch scroll_new
+  more
+  arch scroll_new
+  chance 50
+  more
+  arch sword_2
+  magic 5
+  chance 20
+  more
+  arch cloak
+  chance 30
+  end
