@@ -3459,7 +3459,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -3601,7 +3601,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -3803,7 +3803,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -3945,7 +3945,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -4967,7 +4967,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -5169,7 +5169,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -6843,7 +6843,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -7173,7 +7173,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -8074,7 +8074,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -8216,7 +8216,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -8345,11 +8345,19 @@ arch woodfloor
 x 21
 y 21
 end
-arch stair2_up
+arch cwall_1_4
 x 21
 y 21
 end
 arch woodfloor2
+x 21
+y 22
+end
+arch locked_door2
+slaying nw_sergeant
+msg
+You need the sergeant key to open this door.
+endmsg
 x 21
 y 22
 end
@@ -8358,6 +8366,10 @@ x 21
 y 23
 end
 arch cwall_2_1_2
+x 21
+y 23
+end
+arch cwall_0
 x 21
 y 23
 end
@@ -8413,7 +8425,19 @@ arch cwall_2_1_2
 x 21
 y 35
 end
+arch cwall_0
+x 21
+y 35
+end
 arch woodfloor2
+x 21
+y 36
+end
+arch locked_door2
+slaying sw_sergeant
+msg
+You need the sergeant key to open this door.
+endmsg
 x 21
 y 36
 end
@@ -8421,7 +8445,7 @@ arch woodfloor
 x 21
 y 37
 end
-arch stair2_up
+arch cwall_1_4
 x 21
 y 37
 end
@@ -8510,7 +8534,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -8652,7 +8676,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -8859,6 +8883,137 @@ arch woodfloor2
 x 22
 y 9
 end
+arch man2
+name Fearless personal guard sergeant
+Con 30
+Wis 10
+Pow 25
+hp 2000
+maxhp 2000
+sp 1000
+maxsp 1000
+exp 350000
+dam 30
+wc -55
+ac -55
+x 22
+y 9
+speed 0.75
+level 120
+attacktype 1
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 100
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 65
+resist_holyword 85
+resist_blind 85
+path_attuned 16
+randomitems none
+see_invisible 1
+sleep 1
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch skill_two_handed_weapon
+can_use_skill 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+arch skill_missile_weapon
+can_use_skill 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_throwing
+can_use_skill 1
+end
+arch crossbow
+name Custom crossbow
+name_pl Custom crossbows
+msg
+This custom crossbow was specially commissioned
+for Fearless personal guards in the Zorn Castle.
+endmsg
+Dex 5
+sp 50
+dam 15
+wc 0
+value 7500
+item_power 5
+applied 1
+end
+arch bolt
+name weaponmagic bolt
+name_pl weaponmagic bolts
+msg
+These custom made bolts do weaponmagic
+damage to one's opponent.
+endmsg
+food 1
+dam 10
+wc 0
+nrof 500
+attacktype 257
+value 20
+end
+arch helmet
+applied 1
+end
+arch ring_mail2
+applied 1
+end
+arch low_boots
+applied 1
+end
+arch katana_1
+name Custom katana
+name_pl Custom katanas
+msg
+The Custom katana was commissioned for Zorn
+Fearless personal guards in the Zorn castle.
+endmsg
+Str 2
+Dex 2
+dam 10
+attacktype 257
+material 0
+value 300
+last_sp 3
+applied 1
+end
+arch key2
+name sergeant key
+name_pl sergeant keys
+slaying nw_sergeant
+msg
+This key is to the tower door.
+Guard it with yout life.
+endmsg
+end
+end
 arch woodfloor2
 x 22
 y 10
@@ -8929,7 +9084,15 @@ arch woodfloor2
 x 22
 y 21
 end
+arch cwall_2_1_2
+x 22
+y 21
+end
 arch woodfloor2
+x 22
+y 22
+end
+arch stair2_up
 x 22
 y 22
 end
@@ -8997,7 +9160,15 @@ arch woodfloor2
 x 22
 y 36
 end
+arch stair2_up
+x 22
+y 36
+end
 arch woodfloor2
+x 22
+y 37
+end
+arch cwall_2_1_2
 x 22
 y 37
 end
@@ -9070,6 +9241,137 @@ end
 arch woodfloor2
 x 22
 y 49
+end
+arch man2
+name Fearless personal guard sergeant
+Con 30
+Wis 10
+Pow 25
+hp 2000
+maxhp 2000
+sp 1000
+maxsp 1000
+exp 350000
+dam 30
+wc -55
+ac -55
+x 22
+y 49
+speed 0.75
+level 120
+attacktype 1
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 100
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 65
+resist_holyword 85
+resist_blind 85
+path_attuned 16
+randomitems none
+see_invisible 1
+sleep 1
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch skill_two_handed_weapon
+can_use_skill 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+arch skill_missile_weapon
+can_use_skill 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_throwing
+can_use_skill 1
+end
+arch crossbow
+name Custom crossbow
+name_pl Custom crossbows
+msg
+This custom crossbow was specially commissioned
+for Fearless personal guards in the Zorn Castle.
+endmsg
+Dex 5
+sp 50
+dam 15
+wc 0
+value 7500
+item_power 5
+applied 1
+end
+arch bolt
+name weaponmagic bolt
+name_pl weaponmagic bolts
+msg
+These custom made bolts do weaponmagic
+damage to one's opponent.
+endmsg
+food 1
+dam 10
+wc 0
+nrof 500
+attacktype 257
+value 20
+end
+arch helmet
+applied 1
+end
+arch ring_mail2
+applied 1
+end
+arch low_boots
+applied 1
+end
+arch katana_1
+name Custom katana
+name_pl Custom katanas
+msg
+The Custom katana was commissioned for Zorn
+Fearless personal guards in the Zorn castle.
+endmsg
+Str 2
+Dex 2
+dam 10
+attacktype 257
+material 0
+value 300
+last_sp 3
+applied 1
+end
+arch key2
+name sergeant key
+name_pl sergeant keys
+slaying sw_sergeant
+msg
+This key is to the tower door.
+Guard it with yout life.
+endmsg
+end
 end
 arch cobblestones2
 x 22
@@ -9284,7 +9586,7 @@ arch cobblestones2
 x 23
 y 21
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 23
 y 21
 end
@@ -9368,7 +9670,7 @@ arch cobblestones2
 x 23
 y 37
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 23
 y 37
 end
@@ -10289,7 +10591,7 @@ end
 arch firepot
 x 26
 y 26
-glow_radius 4
+glow_radius 2
 no_magic 1
 damned 1
 end
@@ -10344,7 +10646,7 @@ end
 arch firepot
 x 26
 y 31
-glow_radius 4
+glow_radius 2
 no_magic 1
 damned 1
 end
@@ -12582,7 +12884,7 @@ end
 arch firepot
 x 32
 y 26
-glow_radius 4
+glow_radius 2
 no_magic 1
 damned 1
 end
@@ -12637,7 +12939,7 @@ end
 arch firepot
 x 32
 y 31
-glow_radius 4
+glow_radius 2
 no_magic 1
 damned 1
 end
@@ -13593,7 +13895,7 @@ arch cobblestones2
 x 35
 y 21
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 35
 y 21
 end
@@ -13677,7 +13979,7 @@ arch cobblestones2
 x 35
 y 37
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 35
 y 37
 end
@@ -13898,6 +14200,137 @@ arch woodfloor2
 x 36
 y 9
 end
+arch man2
+name Fearless personal guard sergeant
+Con 30
+Wis 10
+Pow 25
+hp 2000
+maxhp 2000
+sp 1000
+maxsp 1000
+exp 350000
+dam 30
+wc -55
+ac -55
+x 36
+y 9
+speed 0.75
+level 120
+attacktype 1
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 100
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 65
+resist_holyword 85
+resist_blind 85
+path_attuned 16
+randomitems none
+see_invisible 1
+sleep 1
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch skill_two_handed_weapon
+can_use_skill 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+arch skill_missile_weapon
+can_use_skill 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_throwing
+can_use_skill 1
+end
+arch crossbow
+name Custom crossbow
+name_pl Custom crossbows
+msg
+This custom crossbow was specially commissioned
+for Fearless personal guards in the Zorn Castle.
+endmsg
+Dex 5
+sp 50
+dam 15
+wc 0
+value 7500
+item_power 5
+applied 1
+end
+arch bolt
+name weaponmagic bolt
+name_pl weaponmagic bolts
+msg
+These custom made bolts do weaponmagic
+damage to one's opponent.
+endmsg
+food 1
+dam 10
+wc 0
+nrof 500
+attacktype 257
+value 20
+end
+arch helmet
+applied 1
+end
+arch ring_mail2
+applied 1
+end
+arch low_boots
+applied 1
+end
+arch katana_1
+name Custom katana
+name_pl Custom katanas
+msg
+The Custom katana was commissioned for Zorn
+Fearless personal guards in the Zorn castle.
+endmsg
+Str 2
+Dex 2
+dam 10
+attacktype 257
+material 0
+value 300
+last_sp 3
+applied 1
+end
+arch key2
+name sergeant key
+name_pl sergeant keys
+slaying ne_sergeant
+msg
+This key is to the tower door.
+Guard it with yout life.
+endmsg
+end
+end
 arch woodfloor2
 x 36
 y 10
@@ -13968,7 +14401,15 @@ arch woodfloor2
 x 36
 y 21
 end
+arch cwall_2_1_2
+x 36
+y 21
+end
 arch woodfloor2
+x 36
+y 22
+end
+arch stair2_up
 x 36
 y 22
 end
@@ -14036,7 +14477,15 @@ arch woodfloor2
 x 36
 y 36
 end
+arch stair2_up
+x 36
+y 36
+end
 arch woodfloor2
+x 36
+y 37
+end
+arch cwall_2_1_2
 x 36
 y 37
 end
@@ -14109,6 +14558,137 @@ end
 arch woodfloor2
 x 36
 y 49
+end
+arch man2
+name Fearless personal guard sergeant
+Con 30
+Wis 10
+Pow 25
+hp 2000
+maxhp 2000
+sp 1000
+maxsp 1000
+exp 350000
+dam 30
+wc -55
+ac -55
+x 36
+y 49
+speed 0.75
+level 120
+attacktype 1
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 100
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 65
+resist_holyword 85
+resist_blind 85
+path_attuned 16
+randomitems none
+see_invisible 1
+sleep 1
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch skill_two_handed_weapon
+can_use_skill 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+arch skill_missile_weapon
+can_use_skill 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_throwing
+can_use_skill 1
+end
+arch crossbow
+name Custom crossbow
+name_pl Custom crossbows
+msg
+This custom crossbow was specially commissioned
+for Fearless personal guards in the Zorn Castle.
+endmsg
+Dex 5
+sp 50
+dam 15
+wc 0
+value 7500
+item_power 5
+applied 1
+end
+arch bolt
+name weaponmagic bolt
+name_pl weaponmagic bolts
+msg
+These custom made bolts do weaponmagic
+damage to one's opponent.
+endmsg
+food 1
+dam 10
+wc 0
+nrof 500
+attacktype 257
+value 20
+end
+arch helmet
+applied 1
+end
+arch ring_mail2
+applied 1
+end
+arch low_boots
+applied 1
+end
+arch katana_1
+name Custom katana
+name_pl Custom katanas
+msg
+The Custom katana was commissioned for Zorn
+Fearless personal guards in the Zorn castle.
+endmsg
+Str 2
+Dex 2
+dam 10
+attacktype 257
+material 0
+value 300
+last_sp 3
+applied 1
+end
+arch key2
+name sergeant key
+name_pl sergeant keys
+slaying se_sergeant
+msg
+This key is to the tower door.
+Guard it with yout life.
+endmsg
+end
 end
 arch cobblestones2
 x 36
@@ -14273,7 +14853,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -14415,7 +14995,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -14544,11 +15124,19 @@ arch woodfloor
 x 37
 y 21
 end
-arch stair2_up
+arch cwall_1_3
 x 37
 y 21
 end
 arch woodfloor2
+x 37
+y 22
+end
+arch locked_door2
+slaying ne_sergeant
+msg
+You need the sergeant key to open this door.
+endmsg
 x 37
 y 22
 end
@@ -14557,6 +15145,10 @@ x 37
 y 23
 end
 arch cwall_2_1_2
+x 37
+y 23
+end
+arch cwall_0
 x 37
 y 23
 end
@@ -14612,7 +15204,19 @@ arch cwall_2_1_2
 x 37
 y 35
 end
+arch cwall_0
+x 37
+y 35
+end
 arch woodfloor2
+x 37
+y 36
+end
+arch locked_door2
+slaying se_sergeant
+msg
+You need the sergeant key to open this door.
+endmsg
 x 37
 y 36
 end
@@ -14620,7 +15224,7 @@ arch woodfloor
 x 37
 y 37
 end
-arch stair2_up
+arch cwall_1_3
 x 37
 y 37
 end
@@ -14709,7 +15313,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -14851,7 +15455,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -15748,7 +16352,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -16078,7 +16682,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -17752,7 +18356,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -17954,7 +18558,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -18976,7 +19580,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -19118,7 +19722,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -19320,7 +19924,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
@@ -19462,7 +20066,7 @@ resist_fear 100
 resist_deplete 85
 resist_death 85
 resist_chaos 85
-resist_godpower 85
+resist_godpower 45
 resist_holyword 85
 resist_blind 85
 path_attuned 16
