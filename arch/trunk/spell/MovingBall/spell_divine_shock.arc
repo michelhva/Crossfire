@@ -14,8 +14,8 @@ path_repelled 8
 other_arch divine_shock
 dam 1
 dam_modifier 3
-duration 10
-duration_modifier 4
+duration 30
+duration_modifier 2
 maxgrace 5
 attacktype 1048584
 no_drop 1
