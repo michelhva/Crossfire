@@ -39,6 +39,7 @@ Invisible books (with specific names):
 Can be accessed through determine_holy_arch() which will return the
 item's other_arch field.  For example, such book with name "avatar"
 determines the avatar archetype for the "summon avatar" prayer.
+Note that determine_holy_arch will return one random item if there are many.
 
 Invisible book with name "grace limit":
 
