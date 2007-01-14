@@ -23,6 +23,9 @@ Wraiths have a strong affinity to magic,
 especially cold spells, and are very strong
 spellcasters. However, they cannot use fire
 spells for fear of self-destruction.
+Wraith also do not heal naturally, or gain
+sustenance from food. Instead they have to
+feed off the living.
 endmsg
 color_fg black
 anim
