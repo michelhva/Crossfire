@@ -1,15 +1,15 @@
-Object gnome
+Object gnome2
 race gnome
-name cunning gnome
+name gnome
 randomitems gnome
 alive 1
 monster 1
 no_pick 1
 type 120
-face gnome.111
+face gnome2.111
 anim
-gnome.111
-gnome.112
+gnome2.111
+gnome2.112
 mina
 ac 1
 reflect_spell 1
