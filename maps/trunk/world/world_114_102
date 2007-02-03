@@ -1,10 +1,10 @@
 arch map
 name world_114_102
+width 50
+height 50
 msg
 
 endmsg
-width 50
-height 50
 outdoor 1
 tile_path_1 world_114_101
 tile_path_2 world_115_102
@@ -4453,9 +4453,9 @@ x 18
 y 1
 end
 arch beach
+elevation 50
 x 18
 y 2
-elevation 50
 end
 arch grass
 elevation 105
@@ -6614,18 +6614,18 @@ elevation 1065
 x 26
 y 35
 end
-arch grass
-elevation 462
+arch evergreens
+elevation 1065
 x 26
 y 36
 end
-arch brush
-elevation 462
+arch evergreens
+elevation 1065
 x 26
 y 37
 end
-arch brush
-elevation 796
+arch evergreens
+elevation 1065
 x 26
 y 38
 end
@@ -6868,23 +6868,27 @@ elevation 986
 x 27
 y 36
 end
-arch grass
-elevation 898
+arch tower_a
+slaying /darcap/temple_justice/temple_justice.1
+hp 16
+sp 31
+x 27
+y 36
+glow_radius 3
+end
+arch cobblestones2
 x 27
 y 37
 end
-arch grass
-elevation 758
+arch cobblestones2
 x 27
 y 38
 end
-arch brush
-elevation 278
+arch cobblestones2
 x 27
 y 39
 end
-arch grass
-elevation 35
+arch cobblestones2
 x 27
 y 40
 end
@@ -7107,23 +7111,23 @@ elevation 746
 x 28
 y 34
 end
-arch brush
-elevation 849
+arch evergreens
+elevation 1065
 x 28
 y 35
 end
-arch brush
-elevation 829
+arch evergreens
+elevation 1065
 x 28
 y 36
 end
-arch brush
-elevation 811
+arch evergreens
+elevation 1065
 x 28
 y 37
 end
-arch brush
-elevation 752
+arch evergreens
+elevation 1065
 x 28
 y 38
 end
@@ -8179,8 +8183,8 @@ x 32
 y 49
 end
 arch beach
-x 33
 elevation 164
+x 33
 end
 arch woods
 elevation 1320
@@ -8428,23 +8432,23 @@ x 33
 y 49
 end
 arch beach
-x 34
 elevation 19
+x 34
 end
 arch beach
+elevation 11
 x 34
 y 1
-elevation 11
 end
 arch beach
+elevation 429
 x 34
 y 2
-elevation 429
 end
 arch beach
+elevation 108
 x 34
 y 3
-elevation 108
 end
 arch woods
 elevation 1461
@@ -8691,24 +8695,24 @@ x 35
 y 2
 end
 arch beach
+elevation 18
 x 35
 y 3
-elevation 18
 end
 arch beach
+elevation 661
 x 35
 y 4
-elevation 661
 end
 arch beach
+elevation 591
 x 35
 y 5
-elevation 591
 end
 arch beach
+elevation 362
 x 35
 y 6
-elevation 362
 end
 arch woods
 elevation 1819
@@ -8945,29 +8949,29 @@ x 36
 y 3
 end
 arch beach
+elevation 89
 x 36
 y 4
-elevation 89
 end
 arch beach
+elevation 476
 x 36
 y 5
-elevation 476
 end
 arch beach
+elevation 670
 x 36
 y 6
-elevation 670
 end
 arch beach
+elevation 832
 x 36
 y 7
-elevation 832
 end
 arch beach
+elevation 601
 x 36
 y 8
-elevation 601
 end
 arch woods
 elevation 1453
@@ -9189,34 +9193,34 @@ x 37
 y 2
 end
 arch beach
+elevation 20
 x 37
 y 3
-elevation 20
 end
 arch beach
+elevation 228
 x 37
 y 4
-elevation 228
 end
 arch beach
+elevation 496
 x 37
 y 5
-elevation 496
 end
 arch beach
+elevation 515
 x 37
 y 6
-elevation 515
 end
 arch beach
+elevation 123
 x 37
 y 7
-elevation 123
 end
 arch beach
+elevation 364
 x 37
 y 8
-elevation 364
 end
 arch woods
 elevation 1255
@@ -9438,34 +9442,34 @@ x 38
 y 2
 end
 arch beach
+elevation 29
 x 38
 y 3
-elevation 29
 end
 arch beach
+elevation 538
 x 38
 y 4
-elevation 538
 end
 arch beach
+elevation 717
 x 38
 y 5
-elevation 717
 end
 arch beach
+elevation 285
 x 38
 y 6
-elevation 285
 end
 arch beach
+elevation 228
 x 38
 y 7
-elevation 228
 end
 arch beach
+elevation 610
 x 38
 y 8
-elevation 610
 end
 arch woods
 elevation 1387
@@ -9682,19 +9686,19 @@ x 39
 y 1
 end
 arch beach
+elevation 27
 x 39
 y 2
-elevation 27
 end
 arch beach
+elevation 557
 x 39
 y 3
-elevation 557
 end
 arch beach
+elevation 508
 x 39
 y 4
-elevation 508
 end
 arch woods
 elevation 1157
@@ -9707,9 +9711,9 @@ x 39
 y 6
 end
 arch beach
+elevation 733
 x 39
 y 7
-elevation 733
 end
 arch woods
 elevation 1428
@@ -9931,14 +9935,14 @@ x 40
 y 1
 end
 arch beach
+elevation 10
 x 40
 y 2
-elevation 10
 end
 arch beach
+elevation 921
 x 40
 y 3
-elevation 921
 end
 arch woods
 elevation 1326
@@ -10180,9 +10184,9 @@ x 41
 y 1
 end
 arch beach
+elevation 18
 x 41
 y 2
-elevation 18
 end
 arch woods
 elevation 1060
@@ -10429,9 +10433,9 @@ x 42
 y 1
 end
 arch beach
+elevation 22
 x 42
 y 2
-elevation 22
 end
 arch woods
 elevation 1211
@@ -10678,9 +10682,9 @@ x 43
 y 1
 end
 arch beach
+elevation 26
 x 43
 y 2
-elevation 26
 end
 arch woods
 elevation 1622
@@ -10927,9 +10931,9 @@ x 44
 y 1
 end
 arch beach
+elevation 113
 x 44
 y 2
-elevation 113
 end
 arch woods
 elevation 2130
@@ -11176,9 +11180,9 @@ x 45
 y 1
 end
 arch beach
+elevation 397
 x 45
 y 2
-elevation 397
 end
 arch woods
 elevation 2756
@@ -11420,9 +11424,9 @@ elevation -2
 x 46
 end
 arch beach
+elevation 100
 x 46
 y 1
-elevation 100
 end
 arch woods
 elevation 1577
@@ -11914,13 +11918,13 @@ x 47
 y 49
 end
 arch beach
-x 48
 elevation 293
+x 48
 end
 arch beach
+elevation 839
 x 48
 y 1
-elevation 839
 end
 arch woods_3
 elevation 1594
@@ -12163,8 +12167,8 @@ x 48
 y 49
 end
 arch beach
-x 49
 elevation 980
+x 49
 end
 arch grass
 elevation 948
@@ -12172,9 +12176,9 @@ x 49
 y 1
 end
 arch beach
+elevation 464
 x 49
 y 2
-elevation 464
 end
 arch woods
 elevation 1753
