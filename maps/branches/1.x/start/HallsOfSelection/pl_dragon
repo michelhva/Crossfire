@@ -724,13 +724,6 @@ arch pstone_2
 x 3
 y 32
 end
-arch exit
-slaying /start/Nexus
-hp 12
-sp 12
-x 3
-y 32
-end
 arch pstone_2
 x 3
 y 33
@@ -1002,15 +995,6 @@ x 4
 y 31
 end
 arch pstone_2
-x 4
-y 32
-end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
 x 4
 y 32
 end
@@ -1484,11 +1468,6 @@ end
 arch dungeon_magic
 x 6
 y 5
-end
-arch pentagram_111
-x 6
-y 5
-type 0
 end
 arch flagstone
 name floor
@@ -3940,4 +3919,9 @@ end
 arch cave22
 x 14
 y 20
+end
+arch pentagram_111
+x 6
+y 5
+type 0
 end
