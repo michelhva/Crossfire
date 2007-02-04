@@ -820,13 +820,6 @@ y 32
 speed_left 2.351
 generator 0
 end
-arch exit
-slaying /start/Nexus
-hp 12
-sp 12
-x 3
-y 32
-end
 arch lava_biglake_3_1
 x 3
 y 33
@@ -1138,15 +1131,6 @@ arch burningwall_2_1_2
 x 4
 y 31
 blocksview 0
-end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
-x 4
-y 32
 end
 arch dungeon_magic
 x 4
@@ -1605,15 +1589,6 @@ x 5
 y 31
 blocksview 0
 end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
-x 5
-y 32
-end
 arch dungeon_magic
 x 5
 y 32
@@ -1673,11 +1648,6 @@ end
 arch dungeon_magic
 x 6
 y 5
-end
-arch pentagram_111
-x 6
-y 5
-type 0
 end
 arch flagstone
 name floor
@@ -4375,4 +4345,9 @@ end
 arch lava_biglake_2_2_4
 x 14
 y 34
+end
+arch pentagram_111
+x 6
+y 5
+type 0
 end

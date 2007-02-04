@@ -899,13 +899,6 @@ face blocked.111
 x 3
 y 31
 end
-arch exit
-slaying /start/Nexus
-hp 12
-sp 12
-x 3
-y 31
-end
 arch rough_wall_1_4
 x 3
 y 32
@@ -1188,15 +1181,6 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
-x 4
-y 31
-end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
 x 4
 y 31
 end
@@ -1637,15 +1621,6 @@ face blocked.111
 x 5
 y 31
 end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
-x 5
-y 31
-end
 arch dungeon_magic
 x 5
 y 31
@@ -1707,11 +1682,6 @@ end
 arch dungeon_magic
 x 6
 y 5
-end
-arch pentagram_111
-x 6
-y 5
-type 0
 end
 arch flagstone
 name floor
@@ -1834,7 +1804,6 @@ Why would you want to go back to
 the material plane? It is such a
 dreadful place.
 endmsg
-wis 50
 ac -100
 x 6
 y 16
@@ -1846,6 +1815,7 @@ reflect_missile 1
 reflect_spell 1
 sleep 0
 stand_still 1
+wis 50
 end
 arch cobblestones2
 x 6
@@ -2696,7 +2666,6 @@ msg
 @match choice|choose|class
 I would definately take the Evoker.
 endmsg
-con 50
 hp -25536
 maxhp -25536
 ac -100
@@ -2707,6 +2676,7 @@ friendly 1
 unaggressive 1
 sleep 0
 stand_still 1
+con 50
 end
 arch fog
 x 8
@@ -4541,4 +4511,9 @@ name_pl nothingness
 face blocked.111
 x 14
 y 34
+end
+arch pentagram_111
+x 6
+y 5
+type 0
 end

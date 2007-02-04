@@ -1,15 +1,15 @@
 arch map
-region creation
 name HallOfSelection
+region creation
+width 15
+height 35
+enter_x 7
+enter_y 5
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Oct 12 20:22:20 2000
 endmsg
-width 15
-height 35
-enter_x 7
-enter_y 5
 end
 arch blocked
 end
@@ -260,29 +260,29 @@ x 1
 y 6
 end
 arch mountain
-blocksview 0
 x 1
 y 7
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 1
 y 8
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 1
 y 9
+blocksview 0
 end
 arch mountain2
-blocksview 0
 x 1
 y 10
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 1
 y 11
+blocksview 0
 end
 arch mountain2
 x 1
@@ -317,7 +317,6 @@ x 1
 y 16
 end
 arch warlock_class
-face mage.151
 msg
 Warlock
 You've divided your time between
@@ -332,6 +331,7 @@ both weaponry and magic because
 you've had to divide your time
 between them.
 endmsg
+face mage.151
 x 1
 y 16
 end
@@ -527,14 +527,14 @@ x 2
 y 5
 end
 arch mountain
-blocksview 0
 x 2
 y 6
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 2
 y 7
+blocksview 0
 end
 arch mountain2
 x 2
@@ -545,24 +545,24 @@ x 2
 y 8
 end
 arch mountain
-blocksview 0
 x 2
 y 9
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 2
 y 10
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 2
 y 11
+blocksview 0
 end
 arch mountain2
-blocksview 0
 x 2
 y 12
+blocksview 0
 end
 arch blocked
 x 2
@@ -806,14 +806,14 @@ x 3
 y 6
 end
 arch mountain
-blocksview 0
 x 3
 y 7
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 3
 y 8
+blocksview 0
 end
 arch mountain2
 x 3
@@ -824,14 +824,14 @@ x 3
 y 10
 end
 arch mountain2
-blocksview 0
 x 3
 y 11
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 3
 y 12
+blocksview 0
 end
 arch blocked
 x 3
@@ -936,9 +936,9 @@ arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
-carrying 70000
 x 3
 y 22
+carrying 70000
 arch wizard
 end
 end
@@ -1053,13 +1053,6 @@ face shop_empty.111
 x 3
 y 32
 end
-arch exit
-slaying /start/Nexus
-hp 12
-sp 12
-x 3
-y 32
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1098,24 +1091,24 @@ x 4
 y 5
 end
 arch mountain2
-blocksview 0
 x 4
 y 6
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 4
 y 7
+blocksview 0
 end
 arch mountain2
-blocksview 0
 x 4
 y 8
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 4
 y 9
+blocksview 0
 end
 arch mountain2
 x 4
@@ -1126,14 +1119,14 @@ x 4
 y 10
 end
 arch mountain
-blocksview 0
 x 4
 y 11
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 4
 y 12
+blocksview 0
 end
 arch blocked
 x 4
@@ -1366,15 +1359,6 @@ arch swall_2_1_2
 x 4
 y 31
 end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
-x 4
-y 32
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1413,11 +1397,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 4
 end
 arch slevel_2_2_2
 x 5
@@ -1426,24 +1410,24 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 5
 no_pass 1
 no_magic 1
 damned 1
+end
+arch slevel_3_2
 x 5
 y 5
 end
-arch slevel_3_2
-x 5
-y 5
-end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 6
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 6
 end
 arch slevel_3_2
 x 5
@@ -1452,11 +1436,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 5
+y 7
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 7
 end
 arch slevel_3_2
 x 5
@@ -1465,35 +1449,35 @@ end
 arch flagstone
 name floor
 face shop_empty.111
-no_pass 1
-no_magic 1
-damned 1
 x 5
 y 8
+no_pass 1
+no_magic 1
+damned 1
 end
 arch slevel_2_2_1
 x 5
 y 8
 end
 arch mountain
-blocksview 0
 x 5
 y 9
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 5
 y 10
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 5
 y 11
+blocksview 0
 end
 arch mountain
-blocksview 0
 x 5
 y 12
+blocksview 0
 end
 arch blocked
 x 5
@@ -1835,15 +1819,6 @@ arch swall_1_3
 x 5
 y 31
 end
-arch magic_mouth
-msg
-Step onto this exit only if you're
-here by mistake.  You will not be
-given a class.
-endmsg
-x 5
-y 32
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1882,11 +1857,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 6
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 6
-y 4
 end
 arch slevel_3_3
 x 6
@@ -2200,11 +2175,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 7
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 7
-y 4
 end
 arch slevel_3_3
 x 7
@@ -2241,10 +2216,10 @@ x 7
 y 7
 end
 arch button_small
-resist_physical 30
-connected 1
 x 7
 y 8
+resist_physical 30
+connected 1
 end
 arch magic_mouth
 msg
@@ -2275,11 +2250,11 @@ y 8
 end
 arch creator
 other_arch food
+x 7
+y 9
 resist_physical 30
 connected 1
 lifesave 1
-x 7
-y 9
 end
 arch magic_mouth
 msg
@@ -2349,8 +2324,8 @@ Magic
 Players with magic skills can cast
 magical spells. The magic skills are
 evocation, pyromancy, sorcery, and
-summoning. 
-Magical spells are used by typing, for 
+summoning.
+Magical spells are used by typing, for
 example:
 cast small lightning
 cast burning hands
@@ -2707,11 +2682,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 8
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 8
-y 4
 end
 arch slevel_3_3
 x 8
@@ -3029,11 +3004,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 4
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 4
 end
 arch slevel_2_2_3
 x 9
@@ -3042,24 +3017,24 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 5
 no_pass 1
 no_magic 1
 damned 1
+end
+arch slevel_3_4
 x 9
 y 5
 end
-arch slevel_3_4
-x 9
-y 5
-end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 6
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 6
 end
 arch slevel_3_4
 x 9
@@ -3068,11 +3043,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 9
+y 7
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 7
 end
 arch slevel_3_4
 x 9
@@ -3081,11 +3056,11 @@ end
 arch flagstone
 name floor
 face shop_empty.111
-no_pass 1
-no_magic 1
-damned 1
 x 9
 y 8
+no_pass 1
+no_magic 1
+damned 1
 end
 arch slevel_2_2_4
 x 9
@@ -4516,7 +4491,6 @@ x 13
 y 26
 end
 arch monk_class
-face monk.151
 msg
 In the Monastery, they believed in
 mental discipline and peace through
@@ -4530,6 +4504,7 @@ inner peacefulness grants you the
 ability to regenerate faster and to
 sense auras.
 endmsg
+face monk.151
 x 13
 y 26
 end
@@ -4883,7 +4858,7 @@ x 14
 y 33
 end
 arch pentagram_111
-type 0
 x 6
 y 5
+type 0
 end
