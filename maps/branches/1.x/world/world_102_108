@@ -1,17 +1,17 @@
 arch map
-region santodominion
 name world_102_108
+reset_timeout 7200
+difficulty 1
+region santodominion
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 19 17:43:59 2002
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 tile_path_1 world_102_107
 tile_path_2 world_103_108
@@ -654,12 +654,12 @@ y 20
 end
 arch ruins
 name mudman's place
+slaying /santo_dominion/mudman/mudman.1
 msg
 Urgh! The swamp is cold and soaking
 wet. Smells rotten... You feel an urge
 to leave this place.
 endmsg
-slaying /santo_dominion/mudman/mudman.1
 hp 28
 sp 11
 x 3
@@ -2398,7 +2398,7 @@ end
 arch hut
 slaying /santo_dominion/eeur/hut.1
 hp 7
-sp 19
+sp 20
 x 11
 y 18
 end
@@ -3267,9 +3267,9 @@ x 15
 y 8
 end
 arch sea
-no_pass 0
 x 15
 y 9
+no_pass 0
 end
 arch sea1
 x 15
@@ -3298,6 +3298,8 @@ end
 arch shrine
 name St. Dominion Sale
 slaying /santo_dominion/map.and.sale
+hp 5
+sp 1
 x 15
 y 14
 end
@@ -3539,8 +3541,8 @@ end
 arch house_1
 name Santo Dominion Toll St.
 slaying /santo_dominion/tollpost
-hp 11
-sp 20
+hp 10
+sp 21
 x 16
 y 14
 end
@@ -3983,9 +3985,9 @@ name Permanent Appartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
 sp 1
-unique 1
 x 18
 y 15
+unique 1
 end
 arch brush
 x 18
@@ -4203,9 +4205,9 @@ name Permanent Appartments
 slaying /santo_dominion/sdomino_appartment
 hp 5
 sp 1
-unique 1
 x 19
 y 15
+unique 1
 end
 arch woods
 x 19
@@ -10811,6 +10813,8 @@ end
 arch store_armour
 name Hanz und Franz Panzer
 slaying /santo_dominion/shops/armour
+hp 1
+sp 14
 x 18
 y 5
 end
@@ -10818,7 +10822,7 @@ arch city_tower
 name Tobias Tower
 slaying /santo_dominion/tobias
 hp 5
-sp 21
+sp 22
 x 18
 y 12
 end
@@ -10833,10 +10837,10 @@ end
 arch store_general
 name Eliks General Store
 slaying /santo_dominion/shops/eliks
-x 21
-y 12
 hp 1
 sp 1
+x 21
+y 12
 end
 arch t_house2
 name City Hall
@@ -10849,6 +10853,8 @@ end
 arch church
 name New Cthulhu Church
 slaying /santo_dominion/crossfire
+hp 1
+sp 17
 x 22
 y 8
 end
@@ -10863,30 +10869,38 @@ end
 arch guild
 name Guild of the Drunken Barbarian
 slaying /santo_dominion/guilds/drunken_barbarian/ground
-no_pass 0
+hp 12
+sp 23
 x 25
 y 12
 end
 arch store_weapons
 name Erash Sharp Blades
 slaying /santo_dominion/shops/erash
+hp 10
+sp 1
 x 25
 y 16
 end
 arch store_magic
 name Nosferatu - Specialist
 slaying /santo_dominion/shops/nosferatu
-no_pass 0
+hp 1
+sp 14
 x 25
 y 20
 end
 arch farmhouse
 slaying /santo_dominion/north_farm
+hp 16
+sp 14
 x 33
 y 15
 end
 arch barn
 slaying /santo_dominion/north_barn
+hp 1
+sp 1
 x 35
 y 13
 end
@@ -10896,6 +10910,8 @@ y 24
 end
 arch barn
 slaying /santo_dominion/south_barn
+hp 1
+sp 1
 x 38
 y 21
 end
