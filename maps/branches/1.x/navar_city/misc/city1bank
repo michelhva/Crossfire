@@ -694,19 +694,11 @@ arch cobblestones
 x 5
 y 9
 end
-arch cobblestones
-x 5
-y 10
-end
 arch dungeon_magic
 x 5
 y 10
 end
 arch cobblestones
-x 5
-y 10
-end
-arch guard
 x 5
 y 10
 end
@@ -829,6 +821,10 @@ x 6
 y 10
 end
 arch cobblestones
+x 6
+y 10
+end
+arch guard
 x 6
 y 10
 end
@@ -1441,6 +1437,10 @@ arch cobblestones
 x 10
 y 10
 end
+arch guard
+x 10
+y 10
+end
 arch dungeon_magic
 x 10
 y 11
@@ -1581,10 +1581,6 @@ arch cobblestones
 x 11
 y 9
 end
-arch cobblestones
-x 11
-y 10
-end
 arch dungeon_magic
 x 11
 y 10
@@ -1593,7 +1589,7 @@ arch cobblestones
 x 11
 y 10
 end
-arch guard
+arch platinum_converter2
 x 11
 y 10
 end
@@ -1735,6 +1731,15 @@ arch cobblestones
 x 12
 y 10
 end
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
+x 12
+y 10
+end
 arch cobblestones
 x 12
 y 11
@@ -1871,6 +1876,10 @@ arch cobblestones
 x 13
 y 10
 end
+arch jade_converter
+x 13
+y 10
+end
 arch cobblestones
 x 13
 y 11
@@ -2001,15 +2010,20 @@ arch silver_converter
 x 14
 y 9
 end
-arch cobblestones
-x 14
-y 10
-end
 arch dungeon_magic
 x 14
 y 10
 end
-arch silver_converter
+arch cobblestones
+x 14
+y 10
+end
+arch jade_converter
+name convert amberium into jade
+slaying ambercoin
+other_arch jadecoin
+sp 100
+food 1
 x 14
 y 10
 end
