@@ -52,13 +52,13 @@ end
 arch woodfloor
 y 7
 end
-arch wall_2_1_1
+arch wall_3_2
 y 7
 end
 arch woodfloor
 y 8
 end
-arch wall_3_2
+arch wall_2_1_1
 y 8
 end
 arch woodfloor
@@ -252,23 +252,30 @@ arch woodfloor
 x 1
 y 7
 end
-arch woodfloor
-x 1
-y 8
-end
 arch wall_2_1_2
 x 1
-y 8
+y 7
 end
 arch woodfloor
 x 1
-y 9
+y 8
 end
 arch diamond_converter
 x 1
+y 8
+end
+arch woodfloor
+x 1
 y 9
 end
 arch woodfloor
+x 1
+y 10
+end
+arch guard
+name elite bank guard
+dam 25
+wc -10
 x 1
 y 10
 end
@@ -458,23 +465,27 @@ arch woodfloor
 x 2
 y 7
 end
-arch woodfloor
-x 2
-y 8
-end
 arch wall_2_1_2
 x 2
-y 8
+y 7
 end
 arch woodfloor
 x 2
-y 9
+y 8
 end
 arch pearl_converter
 x 2
+y 8
+end
+arch woodfloor
+x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch platinum_converter2
 x 2
 y 10
 end
@@ -632,23 +643,32 @@ arch woodfloor
 x 3
 y 7
 end
-arch woodfloor
-x 3
-y 8
-end
 arch wall_2_1_2
 x 3
-y 8
+y 7
 end
 arch woodfloor
 x 3
-y 9
+y 8
 end
 arch ruby_converter
 x 3
+y 8
+end
+arch woodfloor
+x 3
 y 9
 end
 arch woodfloor
+x 3
+y 10
+end
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
 x 3
 y 10
 end
@@ -827,23 +847,27 @@ arch woodfloor
 x 4
 y 7
 end
-arch woodfloor
-x 4
-y 8
-end
 arch wall_2_1_2
 x 4
-y 8
+y 7
 end
 arch woodfloor
 x 4
-y 9
+y 8
 end
 arch silver_converter
 x 4
+y 8
+end
+arch woodfloor
+x 4
 y 9
 end
 arch woodfloor
+x 4
+y 10
+end
+arch jade_converter
 x 4
 y 10
 end
@@ -1017,23 +1041,32 @@ arch woodfloor
 x 5
 y 7
 end
-arch woodfloor
-x 5
-y 8
-end
 arch wall_2_1_2
 x 5
-y 8
+y 7
 end
 arch woodfloor
 x 5
-y 9
+y 8
 end
 arch gold_converter
 x 5
+y 8
+end
+arch woodfloor
+x 5
 y 9
 end
 arch woodfloor
+x 5
+y 10
+end
+arch jade_converter
+name convert amberium into jade
+slaying ambercoin
+other_arch jadecoin
+sp 100
+food 1
 x 5
 y 10
 end
@@ -1212,23 +1245,27 @@ arch woodfloor
 x 6
 y 7
 end
-arch woodfloor
-x 6
-y 8
-end
 arch wall_2_1_2
 x 6
-y 8
+y 7
 end
 arch woodfloor
 x 6
-y 9
+y 8
 end
 arch platinum_converter
 x 6
+y 8
+end
+arch woodfloor
+x 6
 y 9
 end
 arch woodfloor
+x 6
+y 10
+end
+arch gold_converter
 x 6
 y 10
 end
@@ -1384,26 +1421,30 @@ arch woodfloor
 x 7
 y 7
 end
-arch woodfloor
-x 7
-y 8
-end
 arch wall_2_1_2
 x 7
-y 8
+y 7
 end
 arch woodfloor
 x 7
-y 9
+y 8
 end
 arch guard
 name elite bank guard
 dam 25
 wc -10
 x 7
+y 8
+end
+arch woodfloor
+x 7
 y 9
 end
 arch woodfloor
+x 7
+y 10
+end
+arch platinum_converter
 x 7
 y 10
 end
@@ -1579,30 +1620,34 @@ arch woodfloor
 x 8
 y 7
 end
-arch woodfloor
-x 8
-y 8
-end
 arch wall_2_2_3
 x 8
-y 8
+y 7
 end
 arch woodfloor
 x 8
-y 9
+y 8
 end
 arch wall_1_2
 x 8
-y 9
+y 8
 end
 arch magic_mouth
 msg
 Local Guild Bank
 endmsg
 x 8
-y 10
+y 9
 end
 arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch wall_1_1
 x 8
 y 10
 end
@@ -1610,7 +1655,7 @@ arch woodfloor
 x 8
 y 11
 end
-arch wall_1_3
+arch wall_3_4
 x 8
 y 11
 end
@@ -1837,11 +1882,11 @@ arch woodfloor
 x 9
 y 8
 end
-arch woodfloor
-x 9
-y 9
-end
 arch identify_table
+x 9
+y 8
+end
+arch woodfloor
 x 9
 y 9
 end
