@@ -3404,6 +3404,12 @@ arch woodfloor
 x 10
 y 15
 end
+arch button_lever
+name open the gates
+x 10
+y 15
+connected 4
+end
 arch woodfloor2
 x 10
 y 16
@@ -4043,6 +4049,12 @@ end
 arch woodfloor
 x 10
 y 43
+end
+arch button_lever
+name open the gates
+x 10
+y 43
+connected 3
 end
 arch woodfloor2
 x 10
@@ -5789,6 +5801,12 @@ arch woodfloor
 x 15
 y 10
 end
+arch button_lever
+name open the gates
+x 15
+y 10
+connected 4
+end
 arch woodfloor
 x 15
 y 11
@@ -5996,6 +6014,12 @@ end
 arch woodfloor
 x 15
 y 48
+end
+arch button_lever
+name open the gates
+x 15
+y 48
+connected 3
 end
 arch woodfloor
 x 15
@@ -17571,6 +17595,12 @@ arch woodfloor
 x 43
 y 10
 end
+arch button_lever
+name open the gates
+x 43
+y 10
+connected 5
+end
 arch woodfloor
 x 43
 y 11
@@ -17778,6 +17808,12 @@ end
 arch woodfloor
 x 43
 y 48
+end
+arch button_lever
+name open the gates
+x 43
+y 48
+connected 6
 end
 arch woodfloor
 x 43
@@ -19525,6 +19561,12 @@ arch woodfloor
 x 48
 y 15
 end
+arch button_lever
+name open the gates
+x 48
+y 15
+connected 5
+end
 arch woodfloor2
 x 48
 y 16
@@ -20164,6 +20206,12 @@ end
 arch woodfloor
 x 48
 y 43
+end
+arch button_lever
+name open the gates
+x 48
+y 43
+connected 6
 end
 arch woodfloor2
 x 48
