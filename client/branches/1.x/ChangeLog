@@ -1,6 +1,9 @@
 "$Id$"
 Top of CVS tree:
 ------------------------------------------------------------------------------
+gtk-v2/gtk-v2.glade: Apply patch 1636013 - standardize on underscored
+   widget names.  Patch by Veli-Matti Valtonen - maligor.
+MSW 2007-02-06
 
 Fix for bug #1538948: Assertion failure for map2 command.
 Add checks for x,y and layer validity in the Map2Cmd.
