@@ -15822,9 +15822,12 @@ arch blackslate
 x 34
 y 16
 end
-arch random_artifact
+arch evoker_book
 x 34
 y 16
+randomitems none
+arch spell_asteroid
+end
 end
 arch fog
 name glowing essence of Valriel
