@@ -1,13 +1,13 @@
 arch map
-region pupland
 name roof
+region pupland
+width 13
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  8 03:34:35 1996
 endmsg
-x 13
-y 13
 end
 arch blocked
 end
@@ -56,10 +56,8 @@ end
 arch grass
 y 11
 end
-arch biglake_sw
-name sea
+arch sea_sw
 y 11
-no_pass 0
 end
 arch grass
 y 12
@@ -75,11 +73,9 @@ arch grass
 x 1
 y 2
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 1
 y 2
-no_pass 0
 end
 arch fog
 x 1
@@ -104,11 +100,9 @@ arch pstone_1
 x 1
 y 6
 end
-arch biglake_se
-name sea
+arch sea_se
 x 1
 y 6
-no_pass 0
 end
 arch pstone_1
 x 1
@@ -122,11 +116,9 @@ arch pstone_1
 x 1
 y 9
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 1
 y 9
-no_pass 0
 end
 arch sea
 x 1
@@ -164,11 +156,9 @@ arch pstone_1
 x 2
 y 4
 end
-arch biglake_se
-name sea
+arch sea_se
 x 2
 y 4
-no_pass 0
 end
 arch pstone_1
 x 2
@@ -202,11 +192,9 @@ arch pstone_1
 x 2
 y 11
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 2
 y 11
-no_pass 0
 end
 arch sea
 x 2
@@ -230,11 +218,9 @@ arch pstone_1
 x 3
 y 3
 end
-arch biglake_se
-name sea
+arch sea_se
 x 3
 y 3
-no_pass 0
 end
 arch jungle_2
 x 3
@@ -485,11 +471,9 @@ arch pstone_1
 x 6
 y 3
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 6
 y 3
-no_pass 0
 end
 arch jungle_1
 x 6
@@ -562,11 +546,9 @@ arch grass
 x 7
 y 2
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 7
 y 2
-no_pass 0
 end
 arch sea
 x 7
@@ -577,11 +559,9 @@ arch pstone_1
 x 7
 y 4
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 7
 y 4
-no_pass 0
 end
 arch jungle_1
 x 7
@@ -617,11 +597,9 @@ arch pstone_1
 x 7
 y 11
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 7
 y 11
-no_pass 0
 end
 arch sea
 x 7
@@ -651,11 +629,9 @@ arch grass
 x 8
 y 3
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 8
 y 3
-no_pass 0
 end
 arch sea
 x 8
@@ -666,11 +642,9 @@ arch pstone_1
 x 8
 y 5
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 8
 y 5
-no_pass 0
 end
 arch pstone_1
 x 8
@@ -697,11 +671,9 @@ arch pstone_1
 x 8
 y 10
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 8
 y 10
-no_pass 0
 end
 arch sea
 x 8
@@ -712,11 +684,9 @@ arch pstone_1
 x 8
 y 12
 end
-arch biglake_se
-name sea
+arch sea_se
 x 8
 y 12
-no_pass 0
 end
 arch fog
 x 8
@@ -764,11 +734,9 @@ arch pstone_1
 x 9
 y 7
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 9
 y 7
-no_pass 0
 end
 arch pstone_1
 x 9
@@ -778,11 +746,9 @@ arch pstone_1
 x 9
 y 9
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 9
 y 9
-no_pass 0
 end
 arch sea
 x 9
@@ -793,11 +759,9 @@ arch pstone_1
 x 9
 y 11
 end
-arch biglake_se
-name sea
+arch sea_se
 x 9
 y 11
-no_pass 0
 end
 arch pstone_1
 x 9
@@ -818,11 +782,9 @@ arch grass
 x 10
 y 3
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 10
 y 3
-no_pass 0
 end
 arch sea
 x 10
