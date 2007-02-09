@@ -41,7 +41,7 @@ storage_x = 2
 storage_y = 2
 
 # Post office sack name (one word without space)
-sackName = 'package'
+sackNames = [ 'IPO-bag', 'IPO-package', 'IPO-carton' ]
 
 import Crossfire
 import string
@@ -130,7 +130,7 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 			if text[0] == 'bag':
 				price = priceBag
 				max = 5000
-				item = 'r_sack'
+				item = 'bag'
 			elif text[0] == 'package':
 				price = pricePackage
 				max = 50000
@@ -138,11 +138,11 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 			else:
 				price = priceCarton
 				max = 100000
-				item = 'r_sack'
+				item = 'present_box_2'
 
 			if activator.PayAmount(price*priceFactor):
 				box = activator.CreateObject(item)
-				box.Name = sackName+' T: '+text[1]+' F: '+activatorname
+				box.Name = 'IPO-'+text[0]+' T: '+text[1]+' F: '+activatorname
 				box.WeightLimit = max
 				box.Str = 0
 				whoami.Say('Here is your %s'%text[0])
@@ -159,21 +159,22 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 elif text[0] == 'send':
 	if len(text) == 2:
 		count = 0
-		inv = activator.CheckInventory(sackName)
-		while inv:
-			next = inv.Below
-			text2 = string.split(inv.Name)
-			if len(text2) == 5 and text2[0] == sackName and text2[1] == 'T:' and text2[3] == 'F:' and text2[2] == text[1]:
-				map = Crossfire.ReadyMap(storage_map)
-				if map:
-					# rename container to prevent sending it multiple times
-					inv.Name = sackName+' F: '+text2[4]+' T: '+text2[2]
+		for sackName in sackNames:
+			inv = activator.CheckInventory(sackName)
+			while inv:
+				next = inv.Below
+				text2 = string.split(inv.Name)
+				if len(text2) == 5 and text2[0] == sackName and text2[1] == 'T:' and text2[3] == 'F:' and text2[2] == text[1]:
+					map = Crossfire.ReadyMap(storage_map)
+					if map:
+						# rename container to prevent sending it multiple times
+						inv.Name = sackName+' F: '+text2[4]+' T: '+text2[2]
 
-					inv.Teleport(map, storage_x, storage_y)
-					count = count+1
-				else:
-					whoami.Say('I\'m sorry but the post can\'t send your package now.')
-			inv = next
+						inv.Teleport(map, storage_x, storage_y)
+						count = count+1
+					else:
+						whoami.Say('I\'m sorry but the post can\'t send your package now.')
+				inv = next
 		if count <= 0:
 			whoami.Say('No package to send.')
 		elif count == 1:
@@ -188,14 +189,16 @@ elif text[0] == 'receive':
 	map = Crossfire.ReadyMap(storage_map)
 	if map:
 		count = 0
-		item = map.ObjectAt(storage_x, storage_y)
-		while item:
-			previous = item.Above
-			text2 = string.split(item.Name)
-			if len(text2) == 5 and text2[0] == sackName and text2[4] == activatorname:
-				item.InsertInto(activator)
-				count = count+1
-			item = previous
+		for sackName in sackNames:
+			item = map.ObjectAt(storage_x, storage_y)
+			while item:
+				previous = item.Above
+				text2 = string.split(item.Name)
+				if len(text2) == 5 and text2[0] == sackName and text2[4] == activatorname:
+					item.Name = item.Name+' (used)'
+					item.InsertInto(activator)
+					count = count+1
+				item = previous
 		if count <= 0:
 			whoami.Say('No package for you, sorry.')
 		else:
