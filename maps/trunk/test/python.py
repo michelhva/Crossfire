@@ -22,6 +22,7 @@ def do_help():
 	whoami.Say(' - exp')
 	whoami.Say(' - const: constants and such')
 	whoami.Say(' - move')
+	whoami.Say(' - bed')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -204,6 +205,17 @@ def do_move():
 	who = Crossfire.WhoIsActivator()
 	whoami.Say(dump_move("movetype", who.MoveType))
 
+def do_bed():
+	who = Crossfire.WhoIsActivator()
+	whoami.Say("bed = %s at (%d, %d)"%(who.BedMap, who.BedX, who.BedY))
+	whoami.Say("changing to +1 -1")
+	who.BedX = who.BedX + 1
+	who.BedY = who.BedY - 1
+	whoami.Say("bed = %s at (%d, %d)"%(who.BedMap, who.BedX, who.BedY))
+	whoami.Say("resetting.")
+	who.BedX = who.BedX - 1
+	who.BedY = who.BedY + 1
+
 whoami.Say( 'plugin test' )
 
 topic = Crossfire.WhatIsMessage().split()
@@ -243,5 +255,7 @@ elif topic[0] == 'move':
 	do_move()
 elif topic[0] == 'inv':
 	do_inventory()
+elif topic[0] == 'bed':
+	do_bed()
 else:
 	do_help()
