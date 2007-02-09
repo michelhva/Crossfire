@@ -138,7 +138,7 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 			else:
 				price = priceCarton
 				max = 100000
-				item = 'present_box_2'
+				item = 'carton_box_1'
 
 			if activator.PayAmount(price*priceFactor):
 				box = activator.CreateObject(item)
