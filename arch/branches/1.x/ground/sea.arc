@@ -96,3 +96,51 @@ is_water 1
 editable 8
 smoothlevel 20
 end
+Object sea_nes
+name sea
+face sea_7.111
+color_fg light_blue
+no_pass 1
+no_pick 1
+is_water 1
+visibility 100
+editable 8
+smoothlevel 255
+smoothface sea_7.111 empty_S.111
+end
+Object sea_new
+name sea
+face sea_B.111
+color_fg light_blue
+no_pass 1
+no_pick 1
+is_water 1
+visibility 100
+editable 8
+smoothlevel 255
+smoothface sea_B.111 empty_S.111
+end
+Object sea_nse
+name sea
+face sea_D.111
+color_fg light_blue
+no_pass 1
+no_pick 1
+is_water 1
+visibility 100
+editable 8
+smoothlevel 255
+smoothface sea_D.111 empty_S.111
+end
+Object sea_sew
+name sea
+face sea_E.111
+color_fg light_blue
+no_pass 1
+no_pick 1
+is_water 1
+visibility 100
+editable 8
+smoothlevel 255
+smoothface sea_E.111 empty_S.111
+end
