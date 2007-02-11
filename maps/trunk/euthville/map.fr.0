@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 3
 width 22
@@ -1766,6 +1767,8 @@ y 8
 end
 arch stair_down
 slaying map.fr.1
+hp 15
+sp 15
 x 13
 y 8
 end

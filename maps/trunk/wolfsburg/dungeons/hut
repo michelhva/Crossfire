@@ -1,12 +1,10 @@
 arch map
-region wolfsburg
 name hut
-msg
-
-endmsg
-hp 3
-sp 3
-x 15
+region wolfsburg
+width 15
+height 16
+enter_x 3
+enter_y 3
 end
 arch woodfloor
 y 1
@@ -106,12 +104,11 @@ y 2
 end
 arch exit
 slaying /world/world_128_108
-face woodfloor.111
+face oakdoor.111
 hp 19
 sp 30
 x 1
 y 2
-is_animated 0
 end
 arch woodfloor
 x 1

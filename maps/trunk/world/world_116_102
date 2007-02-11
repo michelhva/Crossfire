@@ -13221,6 +13221,8 @@ end
 arch store_weapons
 name Spike's Weapons
 slaying /darcap/darcap/shop_w
+hp 14
+sp 14
 x 19
 y 37
 end
@@ -13263,6 +13265,8 @@ end
 arch courthouse
 name Courthouse
 slaying /darcap/darcap/quest
+hp 17
+sp 7
 x 22
 y 40
 end
@@ -13348,6 +13352,8 @@ end
 arch guild_northwest
 name Guild of the Smoking Cauldron
 slaying /darcap/darcap/guilds/smoking_cauldron/ground
+hp 12
+sp 23
 x 31
 y 25
 end

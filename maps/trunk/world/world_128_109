@@ -7752,9 +7752,10 @@ y 11
 end
 arch oakdoor
 name slave pits
-name_pl slave pits
 slaying /wolfsburg/slave_pit1
 face gwall_0.111
+hp 1
+sp 1
 x 32
 y 11
 end
@@ -8003,7 +8004,6 @@ y 11
 end
 arch oakdoor
 name slave pits
-name_pl slave pits
 slaying /wolfsburg/slave_pit2
 face gwall_0.111
 hp 2
@@ -8256,9 +8256,10 @@ y 11
 end
 arch oakdoor
 name slave pits
-name_pl slave pits
 slaying /wolfsburg/slave_pit3
 face gwall_0.111
+hp 1
+sp 1
 x 34
 y 11
 end
@@ -11039,8 +11040,9 @@ y 41
 end
 arch fort_sym
 name temple
-name_pl temple
 slaying /wolfsburg/temple/enterance
+hp 11
+sp 23
 x 45
 y 41
 end
@@ -12130,8 +12132,9 @@ walk_on 1
 end
 arch barn
 name warehouse
-name_pl warehouse
 slaying /wolfsburg/ware1
+hp 1
+sp 1
 x 15
 y 1
 end
@@ -12214,8 +12217,9 @@ y 10
 end
 arch church
 name The Eternal Reward
-name_pl The Eternal Reward
 slaying /wolfsburg/etern_rew
+hp 7
+sp 23
 x 21
 y 13
 end
@@ -12286,11 +12290,11 @@ y 10
 end
 arch guild
 name Guild of the Damned Heretics
-name_pl Guild of the Damned Heretics
 slaying /wolfsburg/guilds/damned_heretics/ground
+hp 12
+sp 23
 x 27
 y 14
-no_pass 0
 end
 arch keep
 name east gatehouse
@@ -12333,8 +12337,9 @@ y 1
 end
 arch inn
 name The Red Light District
-name_pl The Red Light District
 slaying /wolfsburg/whorehouse
+hp 1
+sp 1
 x 36
 y 8
 end
@@ -12397,8 +12402,9 @@ y 24
 end
 arch city_tower
 name twin towers
-name_pl twin towers
 slaying /wolfsburg/tt/tta1
+hp 1
+sp 18
 x 43
 y 8
 end

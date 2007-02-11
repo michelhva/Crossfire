@@ -1,10 +1,11 @@
 arch map
+name <unnamed>
 region santodominion
-hp 25
-sp 58
-x 50
-y 60
 shopitems *:0
+width 50
+height 60
+enter_x 25
+enter_y 58
 end
 arch sea
 end
@@ -7254,6 +7255,8 @@ y 9
 end
 arch stair2_up
 slaying 1st_floor
+hp 20
+sp 5
 x 25
 y 9
 end
