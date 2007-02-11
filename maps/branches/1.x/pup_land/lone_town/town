@@ -1,15 +1,15 @@
 arch map
 name town
 region lonetown
+width 26
+height 20
+enter_x 5
+enter_y 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 25 18:13:36 1996
 endmsg
-width 26
-height 20
-enter_x 5
-enter_y 18
 end
 arch grass
 end
@@ -2604,18 +2604,18 @@ x 24
 y 14
 end
 arch river_nw-se_u
-no_pass 0
 x 24
 y 14
+no_pass 0
 end
 arch pstone_1
 x 24
 y 15
 end
 arch river_nw-e
-no_pass 0
 x 24
 y 15
+no_pass 0
 end
 arch a_bridge2
 x 24
@@ -2838,6 +2838,8 @@ end
 arch store_general
 name General Shop
 slaying gshop
+hp 7
+sp 14
 x 10
 y 9
 end
@@ -2846,9 +2848,9 @@ name Permanent apartments
 slaying /pup_land/lone_town/apartment/groundfloor
 hp 26
 sp 36
-unique 1
 x 11
 y 12
+unique 1
 end
 arch barrack_long
 name Magic Show !
@@ -2861,7 +2863,8 @@ end
 arch guild
 name Guild of the Purple Butterfly
 slaying /pup_land/guilds/purple_butterfly/ground
-no_pass 0
+hp 12
+sp 23
 x 12
 y 16
 end

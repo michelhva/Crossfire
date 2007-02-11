@@ -1,12 +1,10 @@
 arch map
+name <unnamed>
 region wolfsburg
-msg
-
-endmsg
-hp 12
-sp 22
-x 25
-y 25
+width 25
+height 25
+enter_x 12
+enter_y 22
 end
 arch marble
 end
@@ -1646,6 +1644,8 @@ end
 arch stair_down
 name stairs leading out
 slaying enterance
+hp 11
+sp 11
 x 12
 y 23
 end

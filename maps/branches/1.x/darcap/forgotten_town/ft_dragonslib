@@ -1,14 +1,14 @@
 arch map
 name Dragons Library
+width 42
+height 20
+enter_x 9
+enter_y 19
 msg
 Creator: K. Ahlers
 Date:    6/5/2006
 Mail: info@knutshome.de
 endmsg
-width 42
-height 20
-enter_x 9
-enter_y 19
 end
 arch magic_banned
 end
@@ -378,9 +378,9 @@ x 2
 y 1
 end
 arch bookshelf
-no_pick 1
 x 2
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -427,9 +427,9 @@ x 2
 y 4
 end
 arch bookshelf
-no_pick 1
 x 2
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -476,9 +476,9 @@ x 2
 y 7
 end
 arch bookshelf
-no_pick 1
 x 2
 y 7
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -525,9 +525,9 @@ x 2
 y 10
 end
 arch bookshelf
-no_pick 1
 x 2
 y 10
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -574,9 +574,9 @@ x 2
 y 13
 end
 arch bookshelf
-no_pick 1
 x 2
 y 13
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -607,9 +607,9 @@ x 2
 y 14
 end
 arch a_townsman3
+x 2
+y 14
 random_movement 1
-x 2
-y 14
 end
 arch magic_banned
 x 2
@@ -628,9 +628,9 @@ x 2
 y 16
 end
 arch bookshelf
-no_pick 1
 x 2
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -863,9 +863,9 @@ x 4
 y 1
 end
 arch bookshelf
-no_pick 1
 x 4
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -896,9 +896,9 @@ x 4
 y 2
 end
 arch a_townsman
+x 4
+y 2
 random_movement 1
-x 4
-y 2
 end
 arch magic_banned
 x 4
@@ -917,9 +917,9 @@ x 4
 y 4
 end
 arch bookshelf
-no_pick 1
 x 4
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -966,9 +966,9 @@ x 4
 y 7
 end
 arch bookshelf
-no_pick 1
 x 4
 y 7
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1015,9 +1015,9 @@ x 4
 y 10
 end
 arch bookshelf
-no_pick 1
 x 4
 y 10
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1064,9 +1064,9 @@ x 4
 y 13
 end
 arch bookshelf
-no_pick 1
 x 4
 y 13
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1113,9 +1113,9 @@ x 4
 y 16
 end
 arch bookshelf
-no_pick 1
 x 4
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1348,9 +1348,9 @@ x 6
 y 1
 end
 arch bookshelf
-no_pick 1
 x 6
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1397,9 +1397,9 @@ x 6
 y 4
 end
 arch bookshelf
-no_pick 1
 x 6
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1534,9 +1534,9 @@ x 6
 y 16
 end
 arch bookshelf
-no_pick 1
 x 6
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1785,9 +1785,9 @@ x 8
 y 1
 end
 arch bookshelf
-no_pick 1
 x 8
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1834,9 +1834,9 @@ x 8
 y 4
 end
 arch bookshelf
-no_pick 1
 x 8
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -1892,7 +1892,7 @@ y 8
 end
 arch stair3_ystone_do
 slaying ft_dragonslib
-hp 30
+hp 31
 sp 8
 x 8
 y 8
@@ -1922,9 +1922,9 @@ x 8
 y 11
 end
 arch stair3_ystone_do
+slaying ft_dragonslib
 hp 30
 sp 11
-slaying ft_dragonslib
 x 8
 y 11
 end
@@ -1969,9 +1969,9 @@ x 8
 y 16
 end
 arch bookshelf
-no_pick 1
 x 8
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2207,9 +2207,9 @@ x 10
 y 1
 end
 arch bookshelf
-no_pick 1
 x 10
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2256,9 +2256,9 @@ x 10
 y 4
 end
 arch bookshelf
-no_pick 1
 x 10
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2377,9 +2377,9 @@ x 10
 y 16
 end
 arch bookshelf
-no_pick 1
 x 10
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2503,9 +2503,9 @@ x 11
 y 8
 end
 arch stair3_ystone_do
+slaying ft_dragonslib
 hp 33
 sp 8
-slaying ft_dragonslib
 x 11
 y 8
 end
@@ -2534,9 +2534,9 @@ x 11
 y 11
 end
 arch stair3_ystone_do
+slaying ft_dragonslib
 hp 33
 sp 11
-slaying ft_dragonslib
 x 11
 y 11
 end
@@ -2626,9 +2626,9 @@ x 12
 y 1
 end
 arch bookshelf
-no_pick 1
 x 12
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2675,9 +2675,9 @@ x 12
 y 4
 end
 arch bookshelf
-no_pick 1
 x 12
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -2812,9 +2812,9 @@ x 12
 y 16
 end
 arch bookshelf
-no_pick 1
 x 12
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3063,9 +3063,9 @@ x 14
 y 1
 end
 arch bookshelf
-no_pick 1
 x 14
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3112,9 +3112,9 @@ x 14
 y 4
 end
 arch bookshelf
-no_pick 1
 x 14
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3233,9 +3233,9 @@ x 14
 y 16
 end
 arch bookshelf
-no_pick 1
 x 14
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3468,9 +3468,9 @@ x 16
 y 1
 end
 arch bookshelf
-no_pick 1
 x 16
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3517,9 +3517,9 @@ x 16
 y 4
 end
 arch bookshelf
-no_pick 1
 x 16
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3566,9 +3566,9 @@ x 16
 y 7
 end
 arch bookshelf
-no_pick 1
 x 16
 y 7
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3599,9 +3599,9 @@ x 16
 y 8
 end
 arch a_townsman2
+x 16
+y 8
 random_movement 1
-x 16
-y 8
 end
 arch magic_banned
 x 16
@@ -3620,9 +3620,9 @@ x 16
 y 10
 end
 arch bookshelf
-no_pick 1
 x 16
 y 10
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3669,9 +3669,9 @@ x 16
 y 13
 end
 arch bookshelf
-no_pick 1
 x 16
 y 13
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3718,9 +3718,9 @@ x 16
 y 16
 end
 arch bookshelf
-no_pick 1
 x 16
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -3953,9 +3953,9 @@ x 18
 y 1
 end
 arch bookshelf
-no_pick 1
 x 18
 y 1
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -4006,9 +4006,9 @@ x 18
 y 4
 end
 arch bookshelf
-no_pick 1
 x 18
 y 4
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -4055,9 +4055,9 @@ x 18
 y 7
 end
 arch bookshelf
-no_pick 1
 x 18
 y 7
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -4104,9 +4104,9 @@ x 18
 y 10
 end
 arch bookshelf
-no_pick 1
 x 18
 y 10
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -4153,9 +4153,9 @@ x 18
 y 13
 end
 arch bookshelf
-no_pick 1
 x 18
 y 13
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -4202,9 +4202,9 @@ x 18
 y 16
 end
 arch bookshelf
-no_pick 1
 x 18
 y 16
+no_pick 1
 arch random_reading
 no_pick 1
 identified 1
@@ -5540,9 +5540,9 @@ x 30
 y 8
 end
 arch stair3_ystone_up
+slaying ft_dragonslib
 hp 8
 sp 8
-slaying ft_dragonslib
 x 30
 y 8
 end
@@ -5571,9 +5571,9 @@ x 30
 y 11
 end
 arch stair3_ystone_up
+slaying ft_dragonslib
 hp 8
 sp 11
-slaying ft_dragonslib
 x 30
 y 11
 end
@@ -5908,9 +5908,9 @@ x 33
 y 8
 end
 arch stair3_ystone_up
+slaying ft_dragonslib
 hp 11
 sp 8
-slaying ft_dragonslib
 x 33
 y 8
 end
@@ -5939,9 +5939,9 @@ x 33
 y 11
 end
 arch stair3_ystone_up
+slaying ft_dragonslib
 hp 11
 sp 11
-slaying ft_dragonslib
 x 33
 y 11
 end
@@ -6819,14 +6819,14 @@ msg
 @match *
 SILENCE!
 endmsg
-randomitems none
-can_cast_spell 0
-can_see_in_dark 1
-monster 0
-unaggressive 1
-friendly 1
-sleep 0
-random_movement 1
 x 9
 y 9
+randomitems none
+monster 0
+friendly 1
+unaggressive 1
+can_cast_spell 0
+sleep 0
+can_see_in_dark 1
+random_movement 1
 end

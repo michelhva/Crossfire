@@ -1,13 +1,15 @@
 arch map
-region scorn
 name tower
+region scorn
+width 16
+height 16
+enter_x 7
+enter_y 12
 msg
 Creator: 
 Email: 
 Date: Fri Oct 15 13:59:25 1993
 endmsg
-hp 7
-sp 12
 end
 arch grass
 end
@@ -359,6 +361,8 @@ y 9
 end
 arch stair_up
 slaying tower.mad1
+hp 1
+sp 13
 x 3
 y 9
 end
@@ -466,6 +470,8 @@ y 9
 end
 arch stair_up
 slaying tower.mad1
+hp 1
+sp 14
 x 4
 y 9
 end
