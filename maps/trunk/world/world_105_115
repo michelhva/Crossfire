@@ -2940,8 +2940,9 @@ elevation 6575
 end
 arch fort_sym
 name Jail
-name_pl Jail
 slaying /scorn/misc/jail
+hp 1
+sp 7
 x 6
 y 43
 end
@@ -16478,8 +16479,9 @@ y 31
 end
 arch city_tower
 name Mad Mage's Tower
-name_pl Mad Mage's Tower
 slaying /scorn/towers/tower.mad
+hp 7
+sp 13
 x 9
 y 43
 end
@@ -16603,11 +16605,11 @@ y 22
 end
 arch guild
 name Guild of the Mailed Fist
-name_pl Guild of the Mailed Fist
 slaying /scorn/guilds/mailed_fist/ground
+hp 12
+sp 23
 x 16
 y 31
-no_pass 0
 end
 arch collesium
 name the ARENA
