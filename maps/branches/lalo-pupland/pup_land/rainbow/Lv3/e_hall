@@ -1,13 +1,13 @@
 arch map
-region pupland
 name e_hall
+region pupland
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 18 17:39:03 1996
 endmsg
-x 20
-y 20
 end
 arch permanent_lava
 end
@@ -128,8 +128,6 @@ arch permanent_lava
 y 19
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch permanent_lava
@@ -467,8 +465,6 @@ arch permanent_lava
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch permanent_lava
@@ -567,8 +563,6 @@ arch permanent_lava
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch permanent_lava
@@ -672,8 +666,6 @@ x 5
 y 19
 end
 arch blocked
-msg
-endmsg
 x 5
 y 19
 end
@@ -681,8 +673,6 @@ arch permanent_lava
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch permanent_lava
@@ -782,8 +772,6 @@ x 6
 y 19
 end
 arch blocked
-msg
-endmsg
 x 6
 y 19
 end
@@ -791,8 +779,6 @@ arch permanent_lava
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch permanent_lava
@@ -895,8 +881,6 @@ arch permanent_lava
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch permanent_lava
@@ -987,8 +971,6 @@ arch permanent_lava
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch permanent_lava
@@ -1090,8 +1072,6 @@ arch permanent_lava
 x 10
 end
 arch blocked
-msg
-endmsg
 x 10
 end
 arch permanent_lava
@@ -1190,8 +1170,6 @@ arch permanent_lava
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch permanent_lava
@@ -1294,8 +1272,6 @@ arch permanent_lava
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch permanent_lava
@@ -1390,8 +1366,6 @@ arch permanent_lava
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch permanent_lava
@@ -1490,8 +1464,6 @@ arch permanent_lava
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch permanent_lava
@@ -1594,8 +1566,6 @@ arch permanent_lava
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch permanent_lava
@@ -1698,8 +1668,6 @@ arch permanent_lava
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch permanent_lava
@@ -1814,8 +1782,6 @@ arch permanent_lava
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 end
 arch permanent_lava
@@ -1922,8 +1888,6 @@ arch permanent_lava
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch permanent_lava
@@ -1999,8 +1963,6 @@ x 18
 y 11
 end
 arch blocked
-msg
-endmsg
 x 18
 y 11
 end
@@ -2056,8 +2018,6 @@ arch permanent_lava
 x 19
 end
 arch blocked
-msg
-endmsg
 x 19
 end
 arch permanent_lava
@@ -2065,8 +2025,6 @@ x 19
 y 1
 end
 arch blocked
-msg
-endmsg
 x 19
 y 1
 end
@@ -2139,8 +2097,6 @@ x 19
 y 10
 end
 arch blocked
-msg
-endmsg
 x 19
 y 10
 end
@@ -2149,8 +2105,6 @@ x 19
 y 11
 end
 arch blocked
-msg
-endmsg
 x 19
 y 11
 end
@@ -2159,8 +2113,6 @@ x 19
 y 12
 end
 arch blocked
-msg
-endmsg
 x 19
 y 12
 end
@@ -2214,6 +2166,8 @@ y 18
 end
 arch invis_exit
 slaying e-path
+hp 1
+sp 1
 x 19
 y 19
 end
