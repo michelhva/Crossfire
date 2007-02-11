@@ -134,7 +134,7 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 			elif text[0] == 'package':
 				price = pricePackage
 				max = 50000
-				item = 'r_sack'
+				item = 'package'
 			else:
 				price = priceCarton
 				max = 100000
