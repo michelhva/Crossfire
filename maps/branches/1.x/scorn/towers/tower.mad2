@@ -1,13 +1,15 @@
 arch map
-region scorn
 name tower
+region scorn
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May 27 00:36:48 2000
 endmsg
-hp 1
-sp 1
 end
 arch woodfloor
 end
@@ -988,6 +990,8 @@ y 10
 end
 arch stair_up
 slaying tower.mad3
+hp 10
+sp 10
 x 9
 y 10
 end
@@ -1098,6 +1102,8 @@ y 10
 end
 arch stair_up
 slaying tower.mad3
+hp 10
+sp 11
 x 10
 y 10
 end
