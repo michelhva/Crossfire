@@ -547,6 +547,7 @@ end
 arch sea_ne
 x 7
 y 2
+no_pass 0
 end
 arch sea
 x 7
@@ -630,6 +631,7 @@ end
 arch sea_ne
 x 8
 y 3
+no_pass 0
 end
 arch sea
 x 8
@@ -692,6 +694,10 @@ y 12
 end
 arch mover_5
 x 9
+end
+arch blocked
+x 9
+no_pass 0
 end
 arch mover_5
 x 9
@@ -768,6 +774,10 @@ end
 arch mover_7
 x 10
 end
+arch blocked
+x 10
+no_pass 0
+end
 arch grass
 x 10
 y 1
@@ -834,6 +844,10 @@ y 12
 end
 arch mover_7
 x 11
+end
+arch blocked
+x 11
+no_pass 0
 end
 arch blocked
 x 11
