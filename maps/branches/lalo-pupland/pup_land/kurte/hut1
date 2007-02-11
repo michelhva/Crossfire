@@ -1,13 +1,13 @@
 arch map
-region pupland
 name hut1
+region pupland
+width 30
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Apr  1 18:32:12 1996
 endmsg
-x 30
-y 20
 end
 arch grass
 end
@@ -1744,8 +1744,7 @@ end
 arch pstone_1
 x 17
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 17
 end
 arch pstone_1
@@ -1787,7 +1786,7 @@ You deserve to meet Kurte.
 The entrance to Kurte's house will
 appear in jungle.
 @match kurte
-I'm a scolar of Kurte. You are not
+I'm a scholar of Kurte. You are not
 worthy to meet him yet...
 @match eureca
 I don't know where he is. Kurte is the
@@ -1851,8 +1850,7 @@ arch pstone_1
 x 17
 y 14
 end
-arch biglake_nse
-name sea
+arch sea_nse
 x 17
 y 14
 end
@@ -2026,8 +2024,7 @@ arch medium_stones
 x 19
 y 12
 end
-arch biglake_nse
-name sea
+arch sea_nse
 x 19
 y 12
 end
@@ -2043,8 +2040,7 @@ arch pstone_1
 x 19
 y 15
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 19
 y 15
 end
@@ -2143,8 +2139,7 @@ arch medium_stones
 x 20
 y 13
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 20
 y 13
 end
@@ -2168,8 +2163,7 @@ arch pstone_1
 x 20
 y 18
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 20
 y 18
 end
@@ -2263,8 +2257,7 @@ arch small_stones
 x 22
 y 1
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 22
 y 1
 end
@@ -2438,8 +2431,7 @@ arch medium_stones
 x 24
 y 4
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 24
 y 4
 end
@@ -2471,8 +2463,7 @@ arch medium_stones
 x 24
 y 11
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 24
 y 11
 end
@@ -2904,8 +2895,8 @@ hp 17
 sp 7
 x 29
 y 19
-protected 1
 connected 1
+protected 1
 end
 arch scroll
 name scroll - obsolete (?)
