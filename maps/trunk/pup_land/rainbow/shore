@@ -1,13 +1,13 @@
 arch map
-region pupland
 name shore
+region pupland
+width 16
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  8 05:36:54 1996
 endmsg
-width 16
-height 20
 end
 arch invis_exit
 slaying islands
@@ -65,8 +65,8 @@ arch dungeon_magic
 y 12
 end
 arch sea
-no_pass 0
 y 12
+no_pass 0
 end
 arch sea
 y 13
@@ -78,12 +78,12 @@ arch sea
 y 15
 end
 arch sea
-no_pass 0
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 y 17
+no_pass 0
 end
 arch sea
 y 18
@@ -157,9 +157,9 @@ x 1
 y 12
 end
 arch sea
-no_pass 0
 x 1
 y 12
+no_pass 0
 end
 arch sea
 x 1
@@ -173,23 +173,23 @@ x 1
 y 14
 end
 arch sea
-no_pass 0
 x 1
 y 14
+no_pass 0
 end
 arch sea
 x 1
 y 15
 end
 arch sea
-no_pass 0
 x 1
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 1
 y 17
+no_pass 0
 end
 arch sea
 x 1
@@ -252,7 +252,11 @@ arch swall_1_1
 x 2
 y 8
 end
-arch sea
+arch pstone_1
+x 2
+y 9
+end
+arch sea_nw
 x 2
 y 9
 end
@@ -281,39 +285,39 @@ x 2
 y 12
 end
 arch sea
-no_pass 0
 x 2
 y 12
+no_pass 0
 end
 arch sea
 x 2
 y 13
 end
 arch mover_7
+x 2
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 2
-y 14
 end
 arch sea
-no_pass 0
 x 2
 y 14
+no_pass 0
 end
 arch sea
 x 2
 y 15
 end
 arch sea
-no_pass 0
 x 2
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 2
 y 17
+no_pass 0
 end
 arch sea
 x 2
@@ -363,15 +367,18 @@ arch pstone_1
 x 3
 y 7
 end
-arch sea
-no_pass 0
+arch pstone_1
+x 3
+y 8
+end
+arch sea_nw
 x 3
 y 8
 end
 arch sea
-no_pass 0
 x 3
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 3
@@ -394,39 +401,39 @@ x 3
 y 12
 end
 arch sea
-no_pass 0
 x 3
 y 12
+no_pass 0
 end
 arch sea
 x 3
 y 13
 end
 arch mover_7
+x 3
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 3
-y 14
 end
 arch sea
-no_pass 0
 x 3
 y 14
+no_pass 0
 end
 arch sea
 x 3
 y 15
 end
 arch sea
-no_pass 0
 x 3
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 3
 y 17
+no_pass 0
 end
 arch sea
 x 3
@@ -469,15 +476,18 @@ arch pstone_1
 x 4
 y 6
 end
-arch sea
-no_pass 0
+arch pstone_1
+x 4
+y 7
+end
+arch sea_new
 x 4
 y 7
 end
 arch sea
-no_pass 0
 x 4
 y 8
+no_pass 0
 end
 arch conjurer
 name swimmer
@@ -486,14 +496,14 @@ msg
 It's cool.
 endmsg
 hp 400
+x 4
+y 8
 friendly 1
-x 4
-y 8
 end
 arch sea
-no_pass 0
 x 4
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 4
@@ -516,39 +526,39 @@ x 4
 y 12
 end
 arch sea
-no_pass 0
 x 4
 y 12
+no_pass 0
 end
 arch sea
 x 4
 y 13
 end
 arch mover_7
+x 4
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 4
-y 14
 end
 arch sea
-no_pass 0
 x 4
 y 14
+no_pass 0
 end
 arch sea
 x 4
 y 15
 end
 arch sea
-no_pass 0
 x 4
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 4
 y 17
+no_pass 0
 end
 arch sea
 x 4
@@ -596,14 +606,14 @@ x 5
 y 7
 end
 arch sea
-no_pass 0
 x 5
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 5
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 5
@@ -626,39 +636,39 @@ x 5
 y 12
 end
 arch sea
-no_pass 0
 x 5
 y 12
+no_pass 0
 end
 arch sea
 x 5
 y 13
 end
 arch mover_7
+x 5
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 5
-y 14
 end
 arch sea
-no_pass 0
 x 5
 y 14
+no_pass 0
 end
 arch sea
 x 5
 y 15
 end
 arch sea
-no_pass 0
 x 5
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 5
 y 17
+no_pass 0
 end
 arch sea
 x 5
@@ -706,14 +716,14 @@ x 6
 y 7
 end
 arch sea
-no_pass 0
 x 6
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 6
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 6
@@ -736,39 +746,39 @@ x 6
 y 12
 end
 arch sea
-no_pass 0
 x 6
 y 12
+no_pass 0
 end
 arch sea
 x 6
 y 13
 end
 arch mover_7
+x 6
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 6
-y 14
 end
 arch sea
-no_pass 0
 x 6
 y 14
+no_pass 0
 end
 arch sea
 x 6
 y 15
 end
 arch sea
-no_pass 0
 x 6
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 6
 y 17
+no_pass 0
 end
 arch sea
 x 6
@@ -833,19 +843,19 @@ msg
 I cannot swim.
 endmsg
 hp 500
-friendly 1
 x 7
 y 7
+friendly 1
 end
 arch sea
-no_pass 0
 x 7
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 7
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 7
@@ -868,39 +878,39 @@ x 7
 y 12
 end
 arch sea
-no_pass 0
 x 7
 y 12
+no_pass 0
 end
 arch sea
 x 7
 y 13
 end
 arch mover_7
+x 7
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 7
-y 14
 end
 arch sea
-no_pass 0
 x 7
 y 14
+no_pass 0
 end
 arch sea
 x 7
 y 15
 end
 arch sea
-no_pass 0
 x 7
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 7
 y 17
+no_pass 0
 end
 arch sea
 x 7
@@ -948,14 +958,14 @@ x 8
 y 7
 end
 arch sea
-no_pass 0
 x 8
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 8
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 8
@@ -978,39 +988,39 @@ x 8
 y 12
 end
 arch sea
-no_pass 0
 x 8
 y 12
+no_pass 0
 end
 arch sea
 x 8
 y 13
 end
 arch mover_7
+x 8
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 8
-y 14
 end
 arch sea
-no_pass 0
 x 8
 y 14
+no_pass 0
 end
 arch sea
 x 8
 y 15
 end
 arch sea
-no_pass 0
 x 8
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 8
 y 17
+no_pass 0
 end
 arch sea
 x 8
@@ -1058,9 +1068,9 @@ x 9
 y 7
 end
 arch sea
-no_pass 0
 x 9
 y 8
+no_pass 0
 end
 arch dwarf
 msg
@@ -1069,15 +1079,15 @@ I can't swim because of my heavy
 armour. Grmbl, that sucks!
 endmsg
 hp 700
-friendly 1
-unaggressive 0
 x 9
 y 8
+friendly 1
+unaggressive 0
 end
 arch sea
-no_pass 0
 x 9
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 9
@@ -1100,39 +1110,39 @@ x 9
 y 12
 end
 arch sea
-no_pass 0
 x 9
 y 12
+no_pass 0
 end
 arch sea
 x 9
 y 13
 end
 arch mover_7
+x 9
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 9
-y 14
 end
 arch sea
-no_pass 0
 x 9
 y 14
+no_pass 0
 end
 arch sea
 x 9
 y 15
 end
 arch sea
-no_pass 0
 x 9
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 9
 y 17
+no_pass 0
 end
 arch sea
 x 9
@@ -1181,10 +1191,10 @@ err... no, I mean... forget it!
 I'm doing bay-watch. Don't distract me.
 endmsg
 hp 500
-friendly 1
-unaggressive 0
 x 10
 y 5
+friendly 1
+unaggressive 0
 end
 arch pstone_1
 x 10
@@ -1195,14 +1205,14 @@ x 10
 y 7
 end
 arch sea
-no_pass 0
 x 10
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 10
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 10
@@ -1225,39 +1235,39 @@ x 10
 y 12
 end
 arch sea
-no_pass 0
 x 10
 y 12
+no_pass 0
 end
 arch sea
 x 10
 y 13
 end
 arch mover_7
+x 10
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 10
-y 14
 end
 arch sea
-no_pass 0
 x 10
 y 14
+no_pass 0
 end
 arch sea
 x 10
 y 15
 end
 arch sea
-no_pass 0
 x 10
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 10
 y 17
+no_pass 0
 end
 arch sea
 x 10
@@ -1311,20 +1321,23 @@ arch pstone_1
 x 11
 y 6
 end
-arch sea
-no_pass 0
+arch pstone_1
+x 11
+y 7
+end
+arch sea_new
 x 11
 y 7
 end
 arch sea
-no_pass 0
 x 11
 y 8
+no_pass 0
 end
 arch sea
-no_pass 0
 x 11
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 11
@@ -1347,44 +1360,44 @@ x 11
 y 12
 end
 arch sea
-no_pass 0
 x 11
 y 12
+no_pass 0
 end
 arch sea
 x 11
 y 13
 end
 arch mover_7
+x 11
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 11
-y 14
 end
 arch sea
-no_pass 0
 x 11
 y 14
+no_pass 0
 end
 arch sea
 x 11
 y 15
 end
 arch sea
-no_pass 0
 x 11
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 11
 y 17
+no_pass 0
 end
 arch sea
-no_pass 0
 x 11
 y 18
+no_pass 0
 end
 arch sea
 x 11
@@ -1431,15 +1444,18 @@ arch pstone_1
 x 12
 y 7
 end
-arch sea
-no_pass 0
+arch pstone_1
+x 12
+y 8
+end
+arch sea_ne
 x 12
 y 8
 end
 arch sea
-no_pass 0
 x 12
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 12
@@ -1462,44 +1478,44 @@ x 12
 y 12
 end
 arch sea
-no_pass 0
 x 12
 y 12
+no_pass 0
 end
 arch sea
 x 12
 y 13
 end
 arch mover_7
+x 12
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 12
-y 14
 end
 arch sea
-no_pass 0
 x 12
 y 14
+no_pass 0
 end
 arch sea
 x 12
 y 15
 end
 arch sea
-no_pass 0
 x 12
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 12
 y 17
+no_pass 0
 end
 arch sea
-no_pass 0
 x 12
 y 18
+no_pass 0
 end
 arch sea
 x 12
@@ -1554,24 +1570,27 @@ arch pstone_1
 x 13
 y 8
 end
-arch sea
-no_pass 0
+arch pstone_1
+x 13
+y 9
+end
+arch sea_ne
 x 13
 y 9
 end
 arch man
 name swimmer
-face man.131
 msg
 @match *
 Oh! What a fast stream.
 I can't move...
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 13
 y 9
+friendly 1
+unaggressive 0
 end
 arch dungeon_magic
 x 13
@@ -1594,44 +1613,44 @@ x 13
 y 12
 end
 arch sea
-no_pass 0
 x 13
 y 12
+no_pass 0
 end
 arch sea
 x 13
 y 13
 end
 arch mover_7
+x 13
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 13
-y 14
 end
 arch sea
-no_pass 0
 x 13
 y 14
+no_pass 0
 end
 arch sea
 x 13
 y 15
 end
 arch sea
-no_pass 0
 x 13
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 13
 y 17
+no_pass 0
 end
 arch sea
-no_pass 0
 x 13
 y 18
+no_pass 0
 end
 arch sea
 x 13
@@ -1698,7 +1717,11 @@ arch dungeon_magic
 x 14
 y 10
 end
-arch sea
+arch pstone_1
+x 14
+y 10
+end
+arch sea_ne
 x 14
 y 10
 end
@@ -1727,35 +1750,35 @@ x 14
 y 13
 end
 arch mover_7
+x 14
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 14
-y 14
 end
 arch sea
-no_pass 0
 x 14
 y 14
+no_pass 0
 end
 arch sea
 x 14
 y 15
 end
 arch sea
-no_pass 0
 x 14
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 14
 y 17
+no_pass 0
 end
 arch sea
-no_pass 0
 x 14
 y 18
+no_pass 0
 end
 arch sea
 x 14
@@ -1826,70 +1849,70 @@ x 15
 y 11
 end
 arch mover_5
+x 15
+y 11
 speed 1.000000
 speed_left -2.920000
 level 1
-x 15
-y 11
 end
 arch sea
-no_pass 0
 x 15
 y 11
+no_pass 0
 end
 arch dungeon_magic
 x 15
 y 12
 end
 arch mover_5
+x 15
+y 12
 speed 1.000000
 speed_left -2.920000
 level 1
-x 15
-y 12
 end
 arch sea
-no_pass 0
 x 15
 y 12
+no_pass 0
 end
 arch mover_5
+x 15
+y 13
 speed 1.000000
 speed_left -2.920000
 level 1
-x 15
-y 13
 end
 arch sea
-no_pass 0
 x 15
 y 13
+no_pass 0
 end
 arch mover_7
+x 15
+y 14
 speed 1.000000
 speed_left -1.870000
 level 1
-x 15
-y 14
 end
 arch sea
-no_pass 0
 x 15
 y 14
+no_pass 0
 end
 arch sea
 x 15
 y 15
 end
 arch sea
-no_pass 0
 x 15
 y 16
+no_pass 0
 end
 arch sea
-no_pass 0
 x 15
 y 17
+no_pass 0
 end
 arch sea
 x 15
