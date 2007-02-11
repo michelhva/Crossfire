@@ -1,15 +1,15 @@
 arch map
 name town
 region lonetown
+width 26
+height 20
+enter_x 5
+enter_y 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 25 18:13:36 1996
 endmsg
-width 26
-height 20
-enter_x 5
-enter_y 18
 end
 arch grass
 end
@@ -706,7 +706,7 @@ arch market1
 name Acme Building Supply
 slaying /pup_land/lone_town/shops/buildshop
 hp 19
-sp 20
+sp 21
 x 6
 y 15
 end
@@ -828,11 +828,11 @@ arch grass
 x 7
 y 15
 end
-arch market2
+arch market3
 name Acme Building Supply
 slaying /pup_land/lone_town/shops/buildshop
-hp 19
-sp 20
+hp 20
+sp 21
 x 7
 y 15
 end
@@ -930,14 +930,6 @@ arch grass
 x 8
 y 15
 end
-arch market3
-name Acme Building Supply
-slaying /pup_land/lone_town/shops/buildshop
-hp 20
-sp 20
-x 8
-y 15
-end
 arch cobblestones
 x 8
 y 16
@@ -1021,7 +1013,11 @@ arch grass
 x 9
 y 12
 end
-arch evergreens
+arch grass
+x 9
+y 13
+end
+arch evergreens2
 x 9
 y 13
 end
@@ -1317,10 +1313,6 @@ end
 arch grass
 x 12
 y 13
-end
-arch grass
-x 12
-y 14
 end
 arch footpath_3_4
 x 12
@@ -2157,7 +2149,7 @@ end
 arch dwall_2_1_2
 x 20
 end
-arch grass
+arch evergreen
 x 20
 y 1
 end
@@ -2165,39 +2157,39 @@ arch pstone_1
 x 20
 y 2
 end
-arch grass
+arch evergreen
 x 20
 y 3
 end
-arch grass
+arch evergreen
 x 20
 y 4
 end
-arch grass
+arch evergreen
 x 20
 y 5
 end
-arch grass
+arch evergreen
 x 20
 y 6
 end
-arch grass
+arch evergreen
 x 20
 y 7
 end
-arch grass
+arch evergreen
 x 20
 y 8
 end
-arch grass
+arch evergreen
 x 20
 y 9
 end
-arch grass
+arch evergreen
 x 20
 y 10
 end
-arch grass
+arch evergreen
 x 20
 y 11
 end
@@ -2213,7 +2205,7 @@ arch rcrook_we-sw
 x 20
 y 13
 end
-arch grass
+arch evergreen
 x 20
 y 14
 end
@@ -2221,7 +2213,7 @@ arch pstone_1
 x 20
 y 15
 end
-arch grass
+arch evergreen
 x 20
 y 16
 end
@@ -2251,7 +2243,7 @@ end
 arch dwall_2_1_2
 x 21
 end
-arch grass
+arch evergreen
 x 21
 y 1
 end
@@ -2259,23 +2251,23 @@ arch pstone_1
 x 21
 y 2
 end
-arch grass
+arch evergreen
 x 21
 y 3
 end
-arch grass
+arch evergreen
 x 21
 y 4
 end
-arch grass
+arch evergreen
 x 21
 y 5
 end
-arch grass
+arch evergreen
 x 21
 y 6
 end
-arch grass
+arch evergreen
 x 21
 y 7
 end
@@ -2283,11 +2275,11 @@ arch evergreen
 x 21
 y 8
 end
-arch grass
+arch evergreen
 x 21
 y 9
 end
-arch grass
+arch evergreen
 x 21
 y 10
 end
@@ -2319,7 +2311,7 @@ arch grass
 x 21
 y 16
 end
-arch brush
+arch evergreen
 x 21
 y 17
 end
@@ -2345,15 +2337,15 @@ end
 arch dwall_2_1_2
 x 22
 end
-arch grass
+arch evergreen
 x 22
 y 1
 end
-arch grass
+arch evergreen
 x 22
 y 2
 end
-arch grass
+arch pstone_1
 x 22
 y 3
 end
@@ -2361,7 +2353,7 @@ arch grass
 x 22
 y 4
 end
-arch grass
+arch pstone_1
 x 22
 y 5
 end
@@ -2395,7 +2387,7 @@ arch grass
 x 22
 y 9
 end
-arch grass
+arch pstone_1
 x 22
 y 10
 end
@@ -2453,43 +2445,43 @@ end
 arch dwall_2_1_2
 x 23
 end
-arch grass
+arch evergreen
 x 23
 y 1
 end
-arch grass
+arch evergreen
 x 23
 y 2
 end
-arch grass
+arch evergreen
 x 23
 y 3
 end
-arch grass
+arch evergreen
 x 23
 y 4
 end
-arch grass
+arch evergreen
 x 23
 y 5
 end
-arch grass
+arch evergreen
 x 23
 y 6
 end
-arch grass
+arch evergreen
 x 23
 y 7
 end
-arch grass
+arch evergreen
 x 23
 y 8
 end
-arch grass
+arch evergreen
 x 23
 y 9
 end
-arch grass
+arch evergreen
 x 23
 y 10
 end
@@ -2559,39 +2551,39 @@ arch dwall_2_2_1
 x 24
 y 1
 end
-arch grass
+arch evergreen
 x 24
 y 2
 end
-arch brush
+arch evergreen
 x 24
 y 3
 end
-arch grass
+arch evergreen
 x 24
 y 4
 end
-arch grass
+arch evergreen
 x 24
 y 5
 end
-arch grass
+arch evergreen
 x 24
 y 6
 end
-arch grass
+arch evergreen
 x 24
 y 7
 end
-arch brush
+arch evergreen
 x 24
 y 8
 end
-arch grass
+arch evergreen
 x 24
 y 9
 end
-arch grass
+arch evergreen
 x 24
 y 10
 end
@@ -2612,18 +2604,18 @@ x 24
 y 14
 end
 arch river_nw-se_u
-no_pass 0
 x 24
 y 14
+no_pass 0
 end
 arch pstone_1
 x 24
 y 15
 end
 arch river_nw-e
-no_pass 0
 x 24
 y 15
+no_pass 0
 end
 arch a_bridge2
 x 24
@@ -2637,7 +2629,7 @@ arch grass
 x 24
 y 17
 end
-arch grass
+arch evergreen
 x 24
 y 18
 end
@@ -2846,6 +2838,8 @@ end
 arch store_general
 name General Shop
 slaying gshop
+hp 7
+sp 14
 x 10
 y 9
 end
@@ -2854,9 +2848,9 @@ name Permanent apartments
 slaying /pup_land/lone_town/apartment/groundfloor
 hp 26
 sp 36
-unique 1
 x 11
 y 12
+unique 1
 end
 arch barrack_long
 name Magic Show !
@@ -2869,7 +2863,8 @@ end
 arch guild
 name Guild of the Purple Butterfly
 slaying /pup_land/guilds/purple_butterfly/ground
-no_pass 0
+hp 12
+sp 23
 x 12
 y 16
 end
