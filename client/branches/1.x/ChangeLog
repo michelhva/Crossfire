@@ -1,6 +1,13 @@
 "$Id$"
 Top of CVS tree:
 ------------------------------------------------------------------------------
+gtk-v2/src/info.c: For extended message handling, special case the
+    MSG_TYPE_SIGN - the 1.x server puts a number in front of the message to
+    denote it is auto apply - strip it off in the gtk2 client.  Not an
+    issue as far as 2.x goes, as the server doesn't prefix the message
+    anymore.
+MSW 2007-02-11
+
 gtk-v2/gtk-v2.glade: Apply patch 1636013 - standardize on underscored
    widget names.  Patch by Veli-Matti Valtonen - maligor.
 MSW 2007-02-06

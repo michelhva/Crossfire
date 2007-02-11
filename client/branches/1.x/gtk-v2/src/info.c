@@ -30,6 +30,7 @@ char *rcsid_gtk2_info_c =
 #endif
 
 #include <gtk/gtk.h>
+#include <ctype.h>
 
 #include "client.h"
 
@@ -192,6 +193,14 @@ static void message_callback(int orig_color, int type, int subtype, char *messag
 
     current = strdup(message);
     original = current;		/* Just so we know what to free */
+
+    /* The server prefixes the message with a flag which denotes
+     * if it is an auto message or not - we don't care for the gtk2
+     * client, but want to strip it out.
+     */
+    if (type == MSG_TYPE_SIGN && isdigit(message[0])) {
+	current+=2;	/* Skip the number and space */
+    }
 
     while ((marker = strchr(current,'['))!= NULL) {
 	*marker = 0;
