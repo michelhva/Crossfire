@@ -1,13 +1,13 @@
 arch map
-region wolfsburg
 name underworld
+region wolfsburg
+width 60
+height 40
+enter_x 7
+enter_y 6
 msg
-You have entered the Underworld. 
+You have entered the Underworld.
 endmsg
-hp 7
-sp 6
-x 60
-y 40
 end
 arch woodfloor
 end
@@ -785,9 +785,9 @@ y 5
 end
 arch exit
 slaying /world/world_128_108
+face woodfloor.111
 hp 13
 sp 44
-face woodfloor.111
 x 5
 y 5
 is_animated 0
@@ -924,9 +924,9 @@ y 5
 end
 arch exit
 slaying /world/world_128_108
+face woodfloor.111
 hp 13
 sp 44
-face woodfloor.111
 x 6
 y 5
 is_animated 0
@@ -1150,13 +1150,13 @@ x 7
 y 5
 end
 arch exit
+name ladder going up
 slaying /world/world_128_108
+face ladder2_up.111
 hp 13
 sp 44
-face woodfloor.111
 x 7
 y 5
-is_animated 0
 end
 arch woodfloor
 x 7
@@ -1420,8 +1420,8 @@ x 8
 y 5
 end
 arch exit
-face woodfloor.111
 slaying /world/world_128_108
+face woodfloor.111
 hp 13
 sp 44
 x 8
@@ -1707,9 +1707,9 @@ y 5
 end
 arch exit
 slaying /world/world_128_108
+face woodfloor.111
 hp 13
 sp 44
-face woodfloor.111
 x 9
 y 5
 is_animated 0
@@ -8123,7 +8123,7 @@ arch northman
 name Odin, The All-Father
 msg
 @match *
-Come back later, after the feasting 
+Come back later, after the feasting
 endmsg
 hp 500
 x 41
@@ -9247,7 +9247,7 @@ arch northman
 msg
 @match *
 Feasting and eternal war, could anything be
-more glorious 
+more glorious
 endmsg
 x 46
 y 2

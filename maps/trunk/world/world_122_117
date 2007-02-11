@@ -39,8 +39,8 @@ y 2
 end
 arch tavern
 name Kaisa's place
-name_pl Kaisa's place
 slaying /navar_city/magara/houses/kaisas_place
+hp 1
 sp 3
 y 2
 end
@@ -13776,8 +13776,9 @@ x 3
 end
 arch guild_west
 name Central Library
-name_pl Central Library
 slaying /navar_city/misc/library
+hp 9
+sp 15
 x 5
 y 4
 end
@@ -13896,8 +13897,8 @@ y 4
 end
 arch city_tower_west
 name Lighthouse
-name_pl Lighthouse
 slaying /navar_city/light/light1
+hp 1
 sp 11
 x 18
 y 1
