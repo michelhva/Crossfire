@@ -1,13 +1,13 @@
 arch map
-region pupland
 name w-tower
+region pupland
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun  3 16:18:52 1996
 endmsg
-x 20
-y 20
 end
 arch woodfloor
 end
@@ -967,8 +967,8 @@ arch pedestal
 name 11
 x 7
 y 18
-protected 11
 connected 11
+protected 11
 end
 arch woodfloor
 x 7
@@ -1237,9 +1237,9 @@ end
 arch statue
 x 9
 y 15
+move_type 1
 can_roll 1
 map_layer item
-move_type 1
 end
 arch woodfloor
 x 9
@@ -1810,8 +1810,8 @@ arch pedestal
 name 10
 x 14
 y 11
-protected 10
 connected 10
+protected 10
 end
 arch woodfloor
 x 14
@@ -1929,8 +1929,8 @@ end
 arch statue
 x 15
 y 9
-can_roll 1
 move_type 1
+can_roll 1
 end
 arch woodfloor
 x 15
@@ -2279,46 +2279,30 @@ sp 12
 x 19
 y 1
 speed 0.000000
-protected 10
 connected 10
+protected 10
 end
 arch sage
 name T.K.
 msg
 @match underground|ruin
-I don't know the entrance to the ruin.
-But it must be somewhere on this "Red
-Island". According to my research, the
-password for the entrance is "IN".
+I don't know the entrance to the ruin.  But it must be somewhere on this "Red Island". According to my research, the password for the entrance is "IN".
 @match legend|hero|four
-The legends say: 
-"In former times, the islands were
-ruled by an evil lord. Then four heroes
-appeared: EarthGate, Rain, BlueSonic
-and FireTail. They fought hard and
-finally defeated the evil lord."
-The buildings that now lie beneath the
-ground were meant to honour the heroes.
+The legends say:  "In former times, the islands were ruled by an evil lord. Then four heroes appeared: EarthGate, Rain, BlueSonic and FireTail. They fought hard and finally defeated the evil lord."
+The buildings that now lie beneath the ground were meant to honour the heroes.
 @match yes|adventurer
-Finally. You are the kind of guy I've
-waited for. I'll tell you a secret
-about these islands: In deep
-underground, there is a big RUIN. At
-the bottom of this ruin there is an
-incredible artifact called "God Finger".
-This quest is all about the LEGEND of
-four heroes...
+Finally. You are the kind of guy I've waited for.
+I'll tell you a secret about these islands: Deep underground there is a big RUIN. At the bottom of this ruin there is an incredible artifact called "God Finger".
+This quest is all about the LEGEND of four heroes...
 @match *
 Hello. Are you an adventurer?
 endmsg
-Str 1
 hp 100
 maxhp 100
 sp 0
 maxsp 0
 x 19
 y 1
-immune 8388607
 invisible 1
 randomitems none
 friendly 1
@@ -2337,24 +2321,24 @@ msg
 endmsg
 x 19
 y 3
-protected 12
 connected 12
+protected 12
 end
 arch button_small
 name 12
 x 19
 y 3
-protected 12
 weight 1000
 connected 12
+protected 12
 end
 arch creator
 name 11
 other_arch boulder
 x 19
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 19
