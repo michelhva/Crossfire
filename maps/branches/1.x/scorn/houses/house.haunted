@@ -363,10 +363,10 @@ x 3
 y 1
 end
 arch stair_3_down
-name Cobwep lined basement
+name Cobweb-lined basement 
 slaying /scorn/kar/creepy.house
 msg
-/kar/creepy.hous
+/scorn/kar/creepy.house
 endmsg
 hp 1
 sp 1
@@ -1659,7 +1659,7 @@ y 8
 end
 arch magic_mouth
 msg
-Upper level hard.  level  5 or more
+Upper level hard.  Level 5 or more.
 endmsg
 x 13
 y 9
@@ -2204,11 +2204,7 @@ arch sign
 name Harry's Place
 msg
 To any who visit..
-Don't! I and leaving this monster
-infested city. The house has been
-invaded by ghosts, zombies and other
-beasts. If you are a level 4 Adventurer
-I give it to you..    Harry Hoston.
+Don't!  I and leaving this monster-infested city.  The house has been invaded by ghosts, zombies and other beasts.  If you are a level 4 Adventurer, I give it to you.    Harry Hoston.
 endmsg
 x 17
 y 15
