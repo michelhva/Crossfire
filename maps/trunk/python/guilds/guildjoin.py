@@ -39,7 +39,7 @@ guildname=Crossfire.ScriptParameters() # 1 is 'apply' event
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     #find players by coords
-    ob=map.GetFirstObjectOnSquare(9,16)
+    ob=map.ObjectAt(9,16)
     player = find_player(ob)
     if player: # look for player
         charname=player.Name
