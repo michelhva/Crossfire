@@ -47,7 +47,7 @@ if (guildname):
 
             else:
                 if guildrecord['Status'] == 'probation':
-                    activator.Write('This guild is currently under probation.\nPlease see a DM for more information'
+                    activator.Write('This guild is currently under probation.\nPlease see a DM for more information')
 
                 record = guild.info(activatorname) #see if they are on the board
                 if record:
