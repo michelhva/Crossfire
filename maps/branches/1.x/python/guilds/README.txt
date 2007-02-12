@@ -20,6 +20,12 @@ QuestPoints(mapmakers): put a call to the appropriate guildquest script (current
 ########################
 Brief history of development
 
+Update 07-02-12
+
+Fixed typos, it's now possible to buy guilds.
+
+Ryo
+
 Update 05-12-04
 
 Uploaded guild package to CVS.

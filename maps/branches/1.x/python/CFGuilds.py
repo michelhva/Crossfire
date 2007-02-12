@@ -283,7 +283,8 @@ class CFGuild:
             currentrank = record['Rank']
             if currentrank != 'Initiate':
                 ranknum = self.ranks.index(currentrank)
-                newrank = ranknum+1
+                print "ranknum = %d"%ranknum
+                newrank = ranknum-1
                 record['Rank'] = self.ranks[newrank]
                 self.guildlist.put_record(record)
                 return 1
