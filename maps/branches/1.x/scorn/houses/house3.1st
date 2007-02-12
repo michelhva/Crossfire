@@ -219,44 +219,44 @@ end
 arch guildmaster
 name Mike Miller
 msg
-@match noise|hear|Noise|Hear
-Yes. You can hear grinding sounds right now. They are so loud I'm afraid of going to my cellar drink some wine! Or could it be coming from the neighbour house?
-@match neighbor|Neighbor|neighbour|Neighbour
+@match noise|hear
+Yes. You can hear grinding sounds right now. They are so loud I'm afraid of going to my cellar to drink some wine! Or could it be coming from the neighbour's house?
+@match neighbor|neighbour
 You thought the house south of there was abandoned? No, I don't think so!
-@match house|House|abandoned|Abandoned|south|South
-In fact people are certainly living in that house, since the treasure always change!
-@match treasure|Treasure
-Go look for yourself, It's the house just south of here! You can see the treasure from the windows!
-@match wine|Wine
+@match house|abandoned|south
+In fact, people are certainly living in that house, since the treasure always changes!
+@match treasure
+Go look for yourself. It's in the house just south of here! You can see the treasure through the windows!
+@match wine
 Do not touch my wine!
-@match chest|Chest
-Do not open my chest! Or you will regret it!!
-@match afraid|Afraid
+@match chest
+Do not open my chest! You will regret it!! Being afraid is not always a bad thing.
+@match afraid
 Hey nevertheless I'm not a wimp! Go look for yourself if you wish.
-@match wimp|Wimp
+@match wimp
 You say I'm a wimp?! Ok, right, try to attack me and you'll see!!!
 @match attack
-Press Ctrl + Arrow to my direction  to attack me. Beware though, I might kill you.
-@match grinding|Grinding|loud|Loud
-The noise seem to be coming from my cellar.
-@match cellar|cellar
-The cellar in the north-eastern corner of this room. But I shut the way with barrels.
-@match barrel|Barrel|barrels|Barrels|table|Tables|tables|Table
+To attack me, press Ctrl + Arrow in my direction. Beware though, I might kill you.
+@match grinding|loud
+The noise seems to be coming from my cellar.
+@match cellar
+The cellar in the north-eastern corner of this room, but I shut the way with barrels.
+@match barrel|table
 Yes. That way, those pixies are blocked and can't come to attack me! Smart, aren't I?
-@match smart|Smart
+@match smart
 Of course I'm smart!!!
-@match pixie|pixies|Pixie|Pixies
+@match pixie
 Yes, sorts of little fairies with wings. One of them tried to attack me in my cellar with a wand of firebolt!! I'd like to send out someone on a quest to clear my cellar but...
-@match firebolt|Firebolt|wand|Wand
+@match firebolt|wand
 Go look for yourself if you really wish. Maybe you can find that wand.
-@match quest|Quest|send|Send|someone|Someone
+@match quest|send|someone
 You? You agree to clear my cellar? You?? AH AH AH... Well okay, if you can bring back the proof you've cleared the source of this noise, I'll provide a nifty little reward.
-@match proof|Proof|source|Source
+@match proof|source
 Okay, bring me the head of an angry pixie. You'll get a nice reward.
-@match head|Head|angry|Angry
+@match head|angry
 Just deposit it in front of me when you have found it.
 @match reward|key
-Hey, first go hunt those pixies!
+Hey, first go hunt down those pixies!
 @match *
 Can you hear the noise?
 endmsg
