@@ -37,7 +37,9 @@ if (guildname):
     guildhouse = CFGuilds.CFGuildHouses()
     text = string.split(Crossfire.WhatIsMessage())
 
-    if text[0] == 'help' or text[0] == 'yes':
+    if guild.info(activatorname) == 0 and isDM == 0:
+	    message = 'You don\'t belong to this guild!'
+    elif text[0] == 'help' or text[0] == 'yes':
         if isDM:
             message = '\nList of commands:\n-list\n-add <name>\n-remove <member>\n-info <member>\n-promote <member>\n-demote <member>\n-status <member> <status>\n-guildstatus <status>'
         else:
