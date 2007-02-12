@@ -2367,17 +2367,19 @@ end
 arch woman
 name Amy
 msg
-@match rent|Rent|house|House
+@match rent|house
 Ya, it's available.  100 gold a week.
 Three weeks advance.
 I ain't fixin' nuthin so take it or leave it.
 Key's on the table if you want to check it out.
-@match Mark|mark
+@match mark
 That bum...
-If I catch him around here anymore I'll chop
-him a new smile.  Sick friend my foot...
+Sick friend, my foot...
+If I catch him around here anymore I'll chop him a new smile.
 @match door|locked
 Mark always keeps the key to that door with him.
+@match where
+Dunno... but if you find Joey, he'll be somewhere nearby...
 @match *
 Whatda want?
 endmsg
