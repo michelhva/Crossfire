@@ -283,25 +283,18 @@ name Fool
 msg
 @match I don't know
 At least you are an honest person.
-I decide to give you the token.
-But I can't stand your ugly face any
-more! GO AWAY!!
-@match token|Token
+I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
+@match token
 You do want the token don't you?
-So...
-If you can answer my query,
-I'll give you the token. - Ok?
-@match Yes|yes|YES|ok|OK|Ok
-My query for you is ..
-"Where is the Belzebub's sword?".
+So...  If you can answer my query, I'll give you the token.  Ok?
+@match yes|ok
+My query for you is .. "Where is the Belzebub's sword?".
 @match here|there
 Are you sure!?
-You think the Belzebub's sword would
-be here!? You are stupid and annoying.
-Go away!!
+You think the Belzebub's sword would be here!?
+You are stupid and annoying.  Go away!!
 @match *
-I hate your face!
-I won't sell you anything!!
+I hate your face!  I won't sell you anything!!
 endmsg
 hp 500
 maxhp 500
@@ -351,9 +344,7 @@ arch conjurer
 name Magician
 msg
 @match *
-The magic show is over.
-Please wait for your server to reset
-this map. 
+The magic show is over.  Please wait for your server to reset this map. 
 endmsg
 hp 400
 exp 1
@@ -1539,12 +1530,9 @@ end
 arch locked_door1
 slaying the_magic_show
 msg
-Ladies and Gentlemen,
-Welcome to our phantastic MAGIC SHOW.
-Enjoy our most famous illusion:
-The teleportation of the Belzebub's
-Sword! To see it, please buy a Token.
-Ask "Fool", the beholder sailsman.
+Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW.
+Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword!
+To see it, please buy a Token.  Ask "Fool", the beholder salesman.
 endmsg
 x 7
 y 7
@@ -2362,8 +2350,7 @@ end
 arch book_clasp
 name book of illusions
 msg
-To create a dust of Biren's mist,
-you need the following ingredients:
+To create a dust of Biren's mist, you need the following ingredients:
 - water of the wise
 - icecube
 - booze
@@ -2372,6 +2359,7 @@ x 11
 y 21
 level 20
 no_pick 1
+map_layer item
 end
 arch dungeon_floor
 x 11
@@ -2571,20 +2559,15 @@ end
 arch conjurer
 name Magician
 msg
-@match [Tt]oken|[Ff]ool
-I'm afraid that crazy beholder-Fool
-will provide you with a query instead
-of the token. His queries usually are
-quite difficult.
-So, if you cannot answer his query,
-just say honestly "I don't know".
-@match No|no
+@match token|fool
+I'm afraid that crazy beholder-Fool will provide you with a query instead of the token.
+His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know".
+@match no
 Then go ahead and buy a token.
-@match Yes|yes
+@match yes
 It's phantastic, isn't it?
 @match *
-Customer! Welcome to our famous magic
-show. Have you seen it yet?
+Customer! Welcome to our famous magic show. Have you seen it yet?
 endmsg
 hp 400
 x 12
