@@ -1,5 +1,17 @@
 Changes for CVS top of tree:
 
+Created additional shoreline tiles for the sea.arc tile set to
+fix some maps that use the blake.arc tile set to allow shorelines
+to have rounded edges instead of corners.  The blake.arc tile set
+is not the same color as the sea.arc tile set unless you are using
+the classic png's, so the seas sometimes are shown in different
+colors of blue.  The tiles added are "coves" that have transparency
+on three sides.  The naming convention used is consistent with the
+big lake tile set.  The naming.doc rules for walls is followed if
+you consider a shoreline to be a sort of wall.
+Kevin Bulgrien 2007-02-10
+
+
 Add new force archetype monk_no_use_weapon. It will be inserted into
 inventories of monk players to prevent them from using weapons.
 Andreas Kirschbaum 2005-11-01
