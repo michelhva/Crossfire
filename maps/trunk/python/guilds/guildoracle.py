@@ -26,7 +26,7 @@ import string
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
 whoami=Crossfire.WhoAmI()
-isDM=activator.IsDungeonMaster
+isDM=activator.DungeonMaster
 
 log=CFLog.CFLog()
 guildname=Crossfire.ScriptParameters() # 6 is say event

@@ -24,7 +24,7 @@ import string
 
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
-whoami=whoami.WhoAmI()
+whoami=Crossfire.WhoAmI()
 
 remarklist = ['Excellent','Thank You','Thank You','Thank You', 'Thank You', 'Great', 'OK', 'Wonderful', 'Swell', 'Dude', 'Big Spender']
 exclaimlist = ['Hey','Hey','Hey','Hey', 'Now just a minute', 'AHEM', 'OK...Wait a minute', 'Look chowderhead']

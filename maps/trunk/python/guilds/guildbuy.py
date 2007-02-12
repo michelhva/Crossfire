@@ -19,8 +19,8 @@ names = []
 
 if (guildname):
     #find players by coords
-    ob1=map.GetObjectAt(33,24)
-    ob2=map.GetObjectAt(33,26)
+    ob1=map.ObjectAt(33,24)
+    ob2=map.ObjectAt(33,26)
     objects = [ob1, ob2]
     for object in objects:
         temp = find_player(object)
@@ -38,13 +38,14 @@ if (guildname):
         #Masterize them
         for player, name in zip(players, names):
             CFGuilds.CFGuild(guildname).add_member(name, 'GuildMaster')
-            guildmarker = CFPython.CreateInvisibleObjectInside(player, guildname)
+            guildmarker = player.CreateObject("marker")
+	    guildmarker.Speed = 0
             guildmarker.Name=guildname
             guildmarker.Slaying='GuildMaster'
 
             #teleport them
             player.Teleport(map,int(11),int(16))
-            message = "You have purchased the %s guild.  Rule it wisely.  (I would type 'save' right about now...)"
+            message = "You have purchased the %s guild.  Rule it wisely.  (I would type 'save' right about now...)"%guildname
 
     else:
         message = 'To purchase a guild requires two additional persons to stand on the alcoves above.'
@@ -52,5 +53,5 @@ else:
     print 'Guild Purchase Error: %s, %s' %(guildname, activatorname)
     message = 'Guild Purchase Error, please notify a DM'
 
-whoami.Write(message)
+whoami.Say(message)
 
