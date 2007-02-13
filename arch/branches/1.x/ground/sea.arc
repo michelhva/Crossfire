@@ -144,3 +144,15 @@ editable 8
 smoothlevel 255
 smoothface sea_E.111 empty_S.111
 end
+Object sea_nsew
+name sea
+face sea_F.111
+color_fg light_blue
+no_pass 1
+no_pick 1
+is_water 1
+visibility 100
+editable 8
+smoothlevel 255
+smoothface sea_E.111 empty_S.111
+end

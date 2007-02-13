@@ -1,4 +1,12 @@
-Changes for CVS top of tree:
+Changes for SVN top of tree:
+
+Created addition shoreline tiles for the ground/sea.arc tile set to
+add sea_F.base.111.png and sea_F.clsc.111.png that form a round pool
+surrounded by transparency.  This tile might be used to fix indoor
+water pools by providing a replacement for blake_0 which has grass
+surrounding the water.  Also modified sea.arc accordingly.
+Kevin Bulgrien 2007-02-12
+
 
 Created additional shoreline tiles for the sea.arc tile set to
 fix some maps that use the blake.arc tile set to allow shorelines
