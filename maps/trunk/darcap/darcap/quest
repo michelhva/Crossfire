@@ -483,12 +483,19 @@ arch cobblestones2
 x 3
 y 15
 end
+arch flagstone
+x 4
+end
 arch dungeon_magic
 x 4
 end
 arch bwall_2_2_2
 x 4
 end
+arch flagstone
+x 4
+y 1
+end
 arch dungeon_magic
 x 4
 y 1
@@ -496,6 +503,10 @@ end
 arch bwall_2_1_1
 x 4
 y 1
+end
+arch flagstone
+x 4
+y 2
 end
 arch dungeon_magic
 x 4
@@ -505,6 +516,10 @@ arch bwall_2_1_1
 x 4
 y 2
 end
+arch flagstone
+x 4
+y 3
+end
 arch dungeon_magic
 x 4
 y 3
@@ -512,6 +527,10 @@ end
 arch bwall_2_1_1
 x 4
 y 3
+end
+arch flagstone
+x 4
+y 4
 end
 arch dungeon_magic
 x 4
@@ -623,6 +642,10 @@ y 10
 speed_left -2.900000
 invisible 1
 end
+arch flagstone
+x 4
+y 11
+end
 arch dungeon_magic
 x 4
 y 11
@@ -631,6 +654,10 @@ arch bwall_2_2_2
 x 4
 y 11
 end
+arch flagstone
+x 4
+y 12
+end
 arch dungeon_magic
 x 4
 y 12
@@ -638,6 +665,10 @@ end
 arch bwall_2_1_1
 x 4
 y 12
+end
+arch flagstone
+x 4
+y 13
 end
 arch dungeon_magic
 x 4
@@ -647,6 +678,10 @@ arch bwall_2_1_1
 x 4
 y 13
 end
+arch flagstone
+x 4
+y 14
+end
 arch dungeon_magic
 x 4
 y 14
@@ -654,6 +689,10 @@ end
 arch bwall_2_1_1
 x 4
 y 14
+end
+arch flagstone
+x 4
+y 15
 end
 arch dungeon_magic
 x 4
@@ -662,12 +701,23 @@ end
 arch bwall_2_2_1
 x 4
 y 15
+end
+arch flagstone
+x 5
 end
 arch dungeon_magic
 x 5
 end
 arch bwall_2_1_2
 x 5
+end
+arch flagstone
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 1
 end
 arch dirtfloor
 x 5
@@ -693,6 +743,10 @@ sp 26
 x 5
 y 1
 end
+arch flagstone
+x 5
+y 2
+end
 arch dirtfloor
 x 5
 y 2
@@ -700,6 +754,10 @@ end
 arch dungeon_magic
 x 5
 y 2
+end
+arch flagstone
+x 5
+y 3
 end
 arch dirtfloor
 x 5
@@ -709,13 +767,25 @@ arch dungeon_magic
 x 5
 y 3
 end
+arch flagstone
+x 5
+y 4
+end
 arch dungeon_magic
+x 5
+y 4
+end
+arch dirtfloor
 x 5
 y 4
 end
 arch bwall_2_2_3
 x 5
 y 4
+end
+arch flagstone
+x 5
+y 5
 end
 arch dungeon_magic
 x 5
@@ -757,6 +827,10 @@ arch dungeon_magic
 x 5
 y 9
 end
+arch flagstone
+x 5
+y 10
+end
 arch dungeon_magic
 x 5
 y 10
@@ -765,7 +839,15 @@ arch bwall_2_2_2
 x 5
 y 10
 end
+arch flagstone
+x 5
+y 11
+end
 arch dungeon_magic
+x 5
+y 11
+end
+arch dirtfloor
 x 5
 y 11
 end
@@ -773,6 +855,10 @@ arch bwall_2_2_4
 x 5
 y 11
 end
+arch flagstone
+x 5
+y 12
+end
 arch dirtfloor
 x 5
 y 12
@@ -781,6 +867,10 @@ arch dungeon_magic
 x 5
 y 12
 end
+arch flagstone
+x 5
+y 13
+end
 arch dirtfloor
 x 5
 y 13
@@ -788,6 +878,10 @@ end
 arch dungeon_magic
 x 5
 y 13
+end
+arch flagstone
+x 5
+y 14
 end
 arch dirtfloor
 x 5
@@ -805,6 +899,10 @@ sp 19
 x 5
 y 14
 end
+arch flagstone
+x 5
+y 15
+end
 arch dungeon_magic
 x 5
 y 15
@@ -813,11 +911,18 @@ arch bwall_2_1_2
 x 5
 y 15
 end
+arch flagstone
+x 6
+end
 arch dungeon_magic
 x 6
 end
 arch bwall_2_1_2
 x 6
+end
+arch flagstone
+x 6
+y 1
 end
 arch dirtfloor
 x 6
@@ -826,6 +931,14 @@ end
 arch dungeon_magic
 x 6
 y 1
+end
+arch flagstone
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 2
 end
 arch dirtfloor
 x 6
@@ -841,6 +954,10 @@ x 6
 y 2
 connected 2
 end
+arch flagstone
+x 6
+y 3
+end
 arch dirtfloor
 x 6
 y 3
@@ -871,6 +988,10 @@ hp 17
 sp 8
 x 6
 y 4
+end
+arch flagstone
+x 6
+y 5
 end
 arch dungeon_magic
 x 6
@@ -912,6 +1033,10 @@ arch dungeon_magic
 x 6
 y 9
 end
+arch flagstone
+x 6
+y 10
+end
 arch dungeon_magic
 x 6
 y 10
@@ -919,6 +1044,10 @@ end
 arch bwall_2_1_2
 x 6
 y 10
+end
+arch flagstone
+x 6
+y 11
 end
 arch dungeon_magic
 x 6
@@ -935,6 +1064,10 @@ sp 8
 x 6
 y 11
 end
+arch flagstone
+x 6
+y 12
+end
 arch dirtfloor
 x 6
 y 12
@@ -942,6 +1075,10 @@ end
 arch dungeon_magic
 x 6
 y 12
+end
+arch flagstone
+x 6
+y 13
 end
 arch dirtfloor
 x 6
@@ -957,6 +1094,10 @@ x 6
 y 13
 connected 3
 end
+arch flagstone
+x 6
+y 14
+end
 arch dirtfloor
 x 6
 y 14
@@ -964,6 +1105,10 @@ end
 arch dungeon_magic
 x 6
 y 14
+end
+arch flagstone
+x 6
+y 15
 end
 arch dungeon_magic
 x 6
@@ -973,12 +1118,19 @@ arch bwall_2_1_2
 x 6
 y 15
 end
+arch flagstone
+x 7
+end
 arch dungeon_magic
 x 7
 end
 arch bwall_2_1_2
 x 7
 end
+arch flagstone
+x 7
+y 1
+end
 arch dirtfloor
 x 7
 y 1
@@ -986,6 +1138,10 @@ end
 arch dungeon_magic
 x 7
 y 1
+end
+arch flagstone
+x 7
+y 2
 end
 arch dirtfloor
 x 7
@@ -995,6 +1151,10 @@ arch dungeon_magic
 x 7
 y 2
 end
+arch flagstone
+x 7
+y 3
+end
 arch dirtfloor
 x 7
 y 3
@@ -1003,7 +1163,15 @@ arch dungeon_magic
 x 7
 y 3
 end
+arch flagstone
+x 7
+y 4
+end
 arch dungeon_magic
+x 7
+y 4
+end
+arch dirtfloor
 x 7
 y 4
 end
@@ -1011,6 +1179,10 @@ arch bwall_2_2_2
 x 7
 y 4
 end
+arch flagstone
+x 7
+y 5
+end
 arch dungeon_magic
 x 7
 y 5
@@ -1051,6 +1223,10 @@ arch dungeon_magic
 x 7
 y 9
 end
+arch flagstone
+x 7
+y 10
+end
 arch dungeon_magic
 x 7
 y 10
@@ -1059,7 +1235,15 @@ arch bwall_2_2_3
 x 7
 y 10
 end
+arch flagstone
+x 7
+y 11
+end
 arch dungeon_magic
+x 7
+y 11
+end
+arch dirtfloor
 x 7
 y 11
 end
@@ -1067,6 +1251,10 @@ arch bwall_2_2_1
 x 7
 y 11
 end
+arch flagstone
+x 7
+y 12
+end
 arch dirtfloor
 x 7
 y 12
@@ -1074,6 +1262,10 @@ end
 arch dungeon_magic
 x 7
 y 12
+end
+arch flagstone
+x 7
+y 13
 end
 arch dirtfloor
 x 7
@@ -1083,6 +1275,10 @@ arch dungeon_magic
 x 7
 y 13
 end
+arch flagstone
+x 7
+y 14
+end
 arch dirtfloor
 x 7
 y 14
@@ -1090,6 +1286,10 @@ end
 arch dungeon_magic
 x 7
 y 14
+end
+arch flagstone
+x 7
+y 15
 end
 arch dungeon_magic
 x 7
@@ -1099,12 +1299,19 @@ arch bwall_2_1_2
 x 7
 y 15
 end
+arch flagstone
+x 8
+end
 arch dungeon_magic
 x 8
 end
 arch bwall_3_3
 x 8
 end
+arch flagstone
+x 8
+y 1
+end
 arch dungeon_magic
 x 8
 y 1
@@ -1112,6 +1319,10 @@ end
 arch bwall_2_1_1
 x 8
 y 1
+end
+arch flagstone
+x 8
+y 2
 end
 arch dungeon_magic
 x 8
@@ -1121,6 +1332,10 @@ arch bwall_2_1_1
 x 8
 y 2
 end
+arch flagstone
+x 8
+y 3
+end
 arch dungeon_magic
 x 8
 y 3
@@ -1128,6 +1343,10 @@ end
 arch bwall_2_1_1
 x 8
 y 3
+end
+arch flagstone
+x 8
+y 4
 end
 arch dungeon_magic
 x 8
@@ -1185,6 +1404,10 @@ arch dungeon_magic
 x 8
 y 10
 end
+arch flagstone
+x 8
+y 11
+end
 arch dungeon_magic
 x 8
 y 11
@@ -1193,6 +1416,10 @@ arch bwall_2_2_3
 x 8
 y 11
 end
+arch flagstone
+x 8
+y 12
+end
 arch dungeon_magic
 x 8
 y 12
@@ -1200,6 +1427,10 @@ end
 arch bwall_2_1_1
 x 8
 y 12
+end
+arch flagstone
+x 8
+y 13
 end
 arch dungeon_magic
 x 8
@@ -1209,6 +1440,10 @@ arch bwall_2_1_1
 x 8
 y 13
 end
+arch flagstone
+x 8
+y 14
+end
 arch dungeon_magic
 x 8
 y 14
@@ -1216,6 +1451,10 @@ end
 arch bwall_2_1_1
 x 8
 y 14
+end
+arch flagstone
+x 8
+y 15
 end
 arch dungeon_magic
 x 8
@@ -1361,6 +1600,10 @@ end
 arch dungeon_magic
 x 9
 y 14
+end
+arch flagstone
+x 9
+y 15
 end
 arch dungeon_magic
 x 9
@@ -1539,6 +1782,10 @@ arch dungeon_magic
 x 10
 y 14
 end
+arch flagstone
+x 10
+y 15
+end
 arch dungeon_magic
 x 10
 y 15
@@ -1708,6 +1955,10 @@ arch dungeon_magic
 x 11
 y 14
 end
+arch flagstone
+x 11
+y 15
+end
 arch dungeon_magic
 x 11
 y 15
@@ -1876,6 +2127,10 @@ end
 arch dungeon_magic
 x 12
 y 14
+end
+arch flagstone
+x 12
+y 15
 end
 arch dungeon_magic
 x 12
@@ -2055,6 +2310,10 @@ arch dungeon_magic
 x 13
 y 14
 end
+arch flagstone
+x 13
+y 15
+end
 arch dungeon_magic
 x 13
 y 15
@@ -2200,6 +2459,10 @@ arch dungeon_magic
 x 14
 y 14
 end
+arch flagstone
+x 14
+y 15
+end
 arch dungeon_magic
 x 14
 y 15
@@ -2208,12 +2471,19 @@ arch bwall_2_1_2
 x 14
 y 15
 end
+arch flagstone
+x 15
+end
 arch dungeon_magic
 x 15
 end
 arch bwall_3_3
 x 15
 end
+arch flagstone
+x 15
+y 1
+end
 arch dungeon_magic
 x 15
 y 1
@@ -2221,6 +2491,10 @@ end
 arch bwall_2_1_1
 x 15
 y 1
+end
+arch flagstone
+x 15
+y 2
 end
 arch dungeon_magic
 x 15
@@ -2230,6 +2504,10 @@ arch bwall_2_1_1
 x 15
 y 2
 end
+arch flagstone
+x 15
+y 3
+end
 arch dungeon_magic
 x 15
 y 3
@@ -2237,6 +2515,10 @@ end
 arch bwall_2_1_1
 x 15
 y 3
+end
+arch flagstone
+x 15
+y 4
 end
 arch dungeon_magic
 x 15
@@ -2294,6 +2576,10 @@ arch dungeon_magic
 x 15
 y 10
 end
+arch flagstone
+x 15
+y 11
+end
 arch dungeon_magic
 x 15
 y 11
@@ -2302,6 +2588,10 @@ arch bwall_2_2_2
 x 15
 y 11
 end
+arch flagstone
+x 15
+y 12
+end
 arch dungeon_magic
 x 15
 y 12
@@ -2309,6 +2599,10 @@ end
 arch bwall_2_1_1
 x 15
 y 12
+end
+arch flagstone
+x 15
+y 13
 end
 arch dungeon_magic
 x 15
@@ -2318,6 +2612,10 @@ arch bwall_2_1_1
 x 15
 y 13
 end
+arch flagstone
+x 15
+y 14
+end
 arch dungeon_magic
 x 15
 y 14
@@ -2325,6 +2623,10 @@ end
 arch bwall_2_1_1
 x 15
 y 14
+end
+arch flagstone
+x 15
+y 15
 end
 arch dungeon_magic
 x 15
@@ -2334,12 +2636,19 @@ arch bwall_3_1
 x 15
 y 15
 end
+arch flagstone
+x 16
+end
 arch dungeon_magic
 x 16
 end
 arch bwall_2_1_2
 x 16
 end
+arch flagstone
+x 16
+y 1
+end
 arch dirtfloor
 x 16
 y 1
@@ -2347,6 +2656,10 @@ end
 arch dungeon_magic
 x 16
 y 1
+end
+arch flagstone
+x 16
+y 2
 end
 arch dirtfloor
 x 16
@@ -2356,6 +2669,10 @@ arch dungeon_magic
 x 16
 y 2
 end
+arch flagstone
+x 16
+y 3
+end
 arch dirtfloor
 x 16
 y 3
@@ -2364,13 +2681,25 @@ arch dungeon_magic
 x 16
 y 3
 end
+arch flagstone
+x 16
+y 4
+end
 arch dungeon_magic
+x 16
+y 4
+end
+arch dirtfloor
 x 16
 y 4
 end
 arch bwall_2_2_3
 x 16
 y 4
+end
+arch flagstone
+x 16
+y 5
 end
 arch dungeon_magic
 x 16
@@ -2412,6 +2741,10 @@ arch dungeon_magic
 x 16
 y 9
 end
+arch flagstone
+x 16
+y 10
+end
 arch dungeon_magic
 x 16
 y 10
@@ -2420,7 +2753,15 @@ arch bwall_2_2_2
 x 16
 y 10
 end
+arch flagstone
+x 16
+y 11
+end
 arch dungeon_magic
+x 16
+y 11
+end
+arch dirtfloor
 x 16
 y 11
 end
@@ -2428,6 +2769,10 @@ arch bwall_2_2_4
 x 16
 y 11
 end
+arch flagstone
+x 16
+y 12
+end
 arch dirtfloor
 x 16
 y 12
@@ -2435,6 +2780,10 @@ end
 arch dungeon_magic
 x 16
 y 12
+end
+arch flagstone
+x 16
+y 13
 end
 arch dirtfloor
 x 16
@@ -2444,6 +2793,10 @@ arch dungeon_magic
 x 16
 y 13
 end
+arch flagstone
+x 16
+y 14
+end
 arch dirtfloor
 x 16
 y 14
@@ -2451,6 +2804,10 @@ end
 arch dungeon_magic
 x 16
 y 14
+end
+arch flagstone
+x 16
+y 15
 end
 arch dungeon_magic
 x 16
@@ -2460,11 +2817,18 @@ arch bwall_2_1_2
 x 16
 y 15
 end
+arch flagstone
+x 17
+end
 arch dungeon_magic
 x 17
 end
 arch bwall_2_1_2
 x 17
+end
+arch flagstone
+x 17
+y 1
 end
 arch dirtfloor
 x 17
@@ -2473,6 +2837,14 @@ end
 arch dungeon_magic
 x 17
 y 1
+end
+arch flagstone
+x 17
+y 2
+end
+arch dungeon_magic
+x 17
+y 2
 end
 arch dirtfloor
 x 17
@@ -2499,6 +2871,10 @@ x 17
 y 2
 connected 1
 end
+arch flagstone
+x 17
+y 3
+end
 arch dirtfloor
 x 17
 y 3
@@ -2506,6 +2882,14 @@ end
 arch dungeon_magic
 x 17
 y 3
+end
+arch flagstone
+x 17
+y 4
+end
+arch dungeon_magic
+x 17
+y 4
 end
 arch dirtfloor
 x 17
@@ -2521,6 +2905,10 @@ hp 17
 sp 8
 x 17
 y 4
+end
+arch flagstone
+x 17
+y 5
 end
 arch dungeon_magic
 x 17
@@ -2562,6 +2950,10 @@ arch dungeon_magic
 x 17
 y 9
 end
+arch flagstone
+x 17
+y 10
+end
 arch dungeon_magic
 x 17
 y 10
@@ -2569,6 +2961,14 @@ end
 arch bwall_2_1_2
 x 17
 y 10
+end
+arch flagstone
+x 17
+y 11
+end
+arch dungeon_magic
+x 17
+y 11
 end
 arch dirtfloor
 x 17
@@ -2585,6 +2985,10 @@ sp 8
 x 17
 y 11
 end
+arch flagstone
+x 17
+y 12
+end
 arch dirtfloor
 x 17
 y 12
@@ -2592,6 +2996,14 @@ end
 arch dungeon_magic
 x 17
 y 12
+end
+arch flagstone
+x 17
+y 13
+end
+arch dungeon_magic
+x 17
+y 13
 end
 arch dirtfloor
 x 17
@@ -2607,6 +3019,10 @@ x 17
 y 13
 connected 4
 end
+arch flagstone
+x 17
+y 14
+end
 arch dirtfloor
 x 17
 y 14
@@ -2615,6 +3031,10 @@ arch dungeon_magic
 x 17
 y 14
 end
+arch flagstone
+x 17
+y 15
+end
 arch dungeon_magic
 x 17
 y 15
@@ -2623,11 +3043,22 @@ arch bwall_2_1_2
 x 17
 y 15
 end
+arch flagstone
+x 18
+end
 arch dungeon_magic
 x 18
 end
 arch bwall_2_1_2
 x 18
+end
+arch flagstone
+x 18
+y 1
+end
+arch dungeon_magic
+x 18
+y 1
 end
 arch dirtfloor
 x 18
@@ -2645,6 +3076,10 @@ sp 1
 x 18
 y 1
 end
+arch flagstone
+x 18
+y 2
+end
 arch dirtfloor
 x 18
 y 2
@@ -2652,6 +3087,10 @@ end
 arch dungeon_magic
 x 18
 y 2
+end
+arch flagstone
+x 18
+y 3
 end
 arch dirtfloor
 x 18
@@ -2661,13 +3100,25 @@ arch dungeon_magic
 x 18
 y 3
 end
+arch flagstone
+x 18
+y 4
+end
 arch dungeon_magic
+x 18
+y 4
+end
+arch dirtfloor
 x 18
 y 4
 end
 arch bwall_2_2_2
 x 18
 y 4
+end
+arch flagstone
+x 18
+y 5
 end
 arch dungeon_magic
 x 18
@@ -2709,6 +3160,10 @@ arch dungeon_magic
 x 18
 y 9
 end
+arch flagstone
+x 18
+y 10
+end
 arch dungeon_magic
 x 18
 y 10
@@ -2717,7 +3172,15 @@ arch bwall_2_2_3
 x 18
 y 10
 end
+arch flagstone
+x 18
+y 11
+end
 arch dungeon_magic
+x 18
+y 11
+end
+arch dirtfloor
 x 18
 y 11
 end
@@ -2725,6 +3188,10 @@ arch bwall_2_2_1
 x 18
 y 11
 end
+arch flagstone
+x 18
+y 12
+end
 arch dirtfloor
 x 18
 y 12
@@ -2733,6 +3200,10 @@ arch dungeon_magic
 x 18
 y 12
 end
+arch flagstone
+x 18
+y 13
+end
 arch dirtfloor
 x 18
 y 13
@@ -2740,6 +3211,14 @@ end
 arch dungeon_magic
 x 18
 y 13
+end
+arch flagstone
+x 18
+y 14
+end
+arch dungeon_magic
+x 18
+y 14
 end
 arch dirtfloor
 x 18
@@ -2757,6 +3236,10 @@ sp 5
 x 18
 y 14
 end
+arch flagstone
+x 18
+y 15
+end
 arch dungeon_magic
 x 18
 y 15
@@ -2765,12 +3248,19 @@ arch bwall_2_1_2
 x 18
 y 15
 end
+arch flagstone
+x 19
+end
 arch dungeon_magic
 x 19
 end
 arch bwall_2_2_3
 x 19
 end
+arch flagstone
+x 19
+y 1
+end
 arch dungeon_magic
 x 19
 y 1
@@ -2778,6 +3268,10 @@ end
 arch bwall_2_1_1
 x 19
 y 1
+end
+arch flagstone
+x 19
+y 2
 end
 arch dungeon_magic
 x 19
@@ -2787,6 +3281,10 @@ arch bwall_2_1_1
 x 19
 y 2
 end
+arch flagstone
+x 19
+y 3
+end
 arch dungeon_magic
 x 19
 y 3
@@ -2794,6 +3292,10 @@ end
 arch bwall_2_1_1
 x 19
 y 3
+end
+arch flagstone
+x 19
+y 4
 end
 arch dungeon_magic
 x 19
@@ -2905,6 +3407,10 @@ y 10
 speed_left -3.000000
 invisible 1
 end
+arch flagstone
+x 19
+y 11
+end
 arch dungeon_magic
 x 19
 y 11
@@ -2913,6 +3419,10 @@ arch bwall_2_2_3
 x 19
 y 11
 end
+arch flagstone
+x 19
+y 12
+end
 arch dungeon_magic
 x 19
 y 12
@@ -2920,6 +3430,10 @@ end
 arch bwall_2_1_1
 x 19
 y 12
+end
+arch flagstone
+x 19
+y 13
 end
 arch dungeon_magic
 x 19
@@ -2929,6 +3443,10 @@ arch bwall_2_1_1
 x 19
 y 13
 end
+arch flagstone
+x 19
+y 14
+end
 arch dungeon_magic
 x 19
 y 14
@@ -2936,6 +3454,10 @@ end
 arch bwall_2_1_1
 x 19
 y 14
+end
+arch flagstone
+x 19
+y 15
 end
 arch dungeon_magic
 x 19
