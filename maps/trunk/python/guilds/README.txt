@@ -22,6 +22,89 @@ Brief history of development
 
 Update 07-02-12
 
+Also being documented at:
+http://wiki.metalforge.net/doku.php/dev_todo:python_guilds
+
+Merged in map updates and changes, which include:
+
+==== What Works ====
+
+  * secondfloor, drop 20 amulets of Lifesaving for a portal to the Mazes of Menace
+    * Two entrances appear for some reason though
+  * mainfloor, drop 1000 platinum for a silver to gold converter
+  * mainfloor, drop 1000 platinum for a gold to platinum converter
+  * mainfloor, drop 1000 platinum coins for a platinum to gold converter
+  * mainfloor, drop 5000 Platinum for a portal to Scorn
+  * mainfloor, drop 1000 diamonds for a portal to Brest
+  * mainfloor, drop 5000 pearls for a portal to Santo Dominion
+  * mainfloor, drop 2 dragon mail for a portal to Navar
+  * mainfloor, drop 5 tissue paper for a portal to the Pupland Terminal (works, but is asking for the wrong item/material)
+  * mainfloor, drop a shootingstar for a portal to Nurnberg
+  * mainlfoor, drop an Unholy Bow for a portal to Ancient Pupland
+  * mainfloor, Kennel token
+  * guild_HQ, 'sayGM Message board
+  * basement, drop 25 potions of fire resistance for an altar of Ixalovh
+  * basement, drop 25 potions of cold resistance for an altar of Gorokh
+  * basement, drop 50 pixie wings for an altar of Gnarg
+  * basement, drop 3 Bonecrushers for an altar of Mostrai
+  * basement, drop 15 healing potions for an altar of Gaea
+  * basement, drop 14 Elven Bows for an altar of Lythander
+  * basement, drop 6 mjoellnirs for an altar of Sorig
+  * basement, drop 5 Demonbanes for an altar to Valriel
+  * basement, drop 5 Firebrands for an altar of Ruggilli
+  * basement, drop 5 Frostbrands for an altar to Devourers
+  * basement, drop a Firestar named Fearless for the Big Chest
+  * Other areas have not been tested
+
+==== Incomplete ====
+
+"Broken Altars" - it appears that it has been undecided on what exactly should be used or dropped to gain access to the following:
+
+  * mainfloor, drop x for a mailbox
+    * This works, just need to determine what "x" is
+  * mainfloor, drop x for basement stairs
+    * This works, just need to determine what "x" is
+  * mainfloor, drop x for a forge
+    * Requires the "connection" to be re-matched between the altar <-> creator and then between the check inventory <-> gate, the keystring is already matched correctly
+    * Forge room works now, just need to determine what "x" is
+  * mainfloor, drop x for workbench
+    * Requires the "connection" to be re-matched between the altar <-> creator and then between the check inventory <-> gate, the keystring has to be updated as well between the creator <-> check inventory
+    * Workbench room works now, just need to determine what "x" is
+  * mainfloor, drop x for a message board
+  * mainfloor, drop x for stove
+    * Requires the "connection" to be re-matched between the altar <-> creator, inventory check between inventory <-> gate worked
+    * after purchasing the altar, a woodfloor tile drops in it's place and surrounded by grass; this is still a problem
+    * after dropping the token to gain access to the stove area, a woodfloor now appears which is intended (fixed)
+  * mainfloor, Toolshed Token (found in Guild_HQ)
+    * Note: the first gate opens for everyone, it's the second gate that requires the Toolshed token to be turned in for it to open
+    * mis-matched slaying field on the altar (slaying Toolshed_token) and the name of the Token (Toolshed Token)- now fixed
+      * Fixed the problem where othe rnearby pay altars would disappear when the toolshed was "purchased"
+  * mainfloor, Garden Token (found in Guild_HQ)
+    * mis-matched slaying field on the altar (slaying garden_token) and the name of the Token (Garden Token)
+  * mainfloor, drop 5 tissue paper for a portal to the Pupland Terminal - requires bolt_silk instead of tissue paper
+  * secondfloor, drop 20 amulets of Lifesaving for a portal to ?
+    * This drop spot disappears and is replaced with a second or additional portal to the Mazes of Menace (when 20 amulets of Lifesaving are dropped on it)
+  * secondfloor, (x 15 y 7) drop x for Alchemy room 
+    * Alchemy room works now, just need to determine what "x" is
+  * secondfloor, (x 11 y 1) drop x for Glowing Crystal Room
+    * This was updated to allow access to the Glowing Crystal room (was listed as Alchemy room)
+    * Also, one of the tokens from the Guild_HQ was updated and is required as a turn in to gain access to the Glowing Crystal Room
+    * Glowing Crystal Room works like many of the skill areas, pay a price for "day pass" to access the crystal; also have multiple gates in place to protect players and items from the mana explosion
+  * secondfloor, drop x for Jewelers room
+    * Jewelers room works now, just need to determine what "x" is
+  * secondfloor, drop x for Thaumaturgy room
+    * Thaumaturgy room works now, just need to determine what "x" is
+  * basement, drop 10 gold coins (for what?)
+  * basement, dropping the Firestar named fearless allows access to BigChest, but I suspect that the drop location of the chest is not as intended because the player is in the way
+  * bigchest, once you enter the chest the exit back to the basement is broken ("closed")
+  * Other areas untested
+
+In the far upper right of the map, things such as the altars, stairs, message board, et al. reside on teleporters which then "transport" items to the map as they are obtained (drop x gold, return with a spectre, etc.) - those map tiles are not unique.  So, when the map is reset (which is normal), already purchased items reappear in that area.  From my testing, this does not cause any problems at the moment.  But this should be corrected/fixed.
+
+Major chore: placing all the no_magic tiles under the regular floor tiles so they do not show up with the show invisible spell
+
+Update 07-02-12
+
 Fixed typos, it's now possible to buy guilds.
 
 Ryo
