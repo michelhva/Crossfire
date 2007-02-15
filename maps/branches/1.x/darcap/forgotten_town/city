@@ -7363,6 +7363,8 @@ end
 arch castle_a
 name Quest #1
 slaying quests/ft_quest_1
+hp 1
+sp 18
 x 3
 y 27
 end
@@ -7381,6 +7383,8 @@ end
 arch castle_a
 name Quest #2
 slaying quests/ft_quest_2
+hp 1
+sp 1
 x 5
 y 27
 end
