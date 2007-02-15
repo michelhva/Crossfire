@@ -1,5 +1,10 @@
 ChangeLog for SVN maps trunk directory:
 ---------------------------------------------------------------------------
+
+python/casino/*.py: fix broken scripts.
+test/python.py: key tests
+Ryo 2007-02-15
+
 Guild fixes, enabling to buy again, and manage status through the Oracle.
  python/guilds/README.txt guildbuy.py guild_entry.py guildoracle.py
  guild_dues.py guild_join.py
