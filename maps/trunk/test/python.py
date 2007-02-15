@@ -5,6 +5,7 @@ import random
 Crossfire.SetReturnValue( 1 )
 
 whoami=Crossfire.WhoAmI()
+who = Crossfire.WhoIsActivator()
 
 def do_help():
 	whoami.Say('Usage: say <test name>\nAvailable tests:')
@@ -23,6 +24,8 @@ def do_help():
 	whoami.Say(' - const: constants and such')
 	whoami.Say(' - move')
 	whoami.Say(' - bed')
+	whoami.Say(' - readkey')
+	whoami.Say(' - writekey')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -31,7 +34,7 @@ def do_arch():
 	arch = archs[which]
 	whoami.Say('random = %s'%arch.Name)
 
-	arch = Crossfire.WhoIsActivator().Archetype
+	arch = who.Archetype
 	whoami.Say('your archetype is %s'%arch.Name)
 
 def do_maps():
@@ -50,7 +53,7 @@ def do_party():
 		for player in players:
 			whoami.Say('   %s'%player.Name)
 	if len(parties) >= 2:
-		Crossfire.WhoIsActivator().Party = parties[1]
+		who.Party = parties[1]
 		whoami.Say('changed your party!')
 
 def do_region():
@@ -71,7 +74,6 @@ def do_region():
 		whoami.Say('Region without parent')
 
 def do_activator():
-	who = Crossfire.WhoIsActivator()
 	who2 = Crossfire.WhoIsOther()
 	who3 = Crossfire.WhoAmI()
 	who = 0
@@ -80,7 +82,6 @@ def do_activator():
 	whoami.Say('let\'s hope no reference crash!')
 
 def do_marker():
-	who = Crossfire.WhoIsActivator()
 	obj = who.MarkedItem
 	if obj:
 		whoami.Say(' your marked item is: %s'%obj.Name)
@@ -109,13 +110,11 @@ def do_memory():
 
 def do_resist():
 	whoami.Say('Resistance test')
-	who = Crossfire.WhoIsActivator()
 	for r in range(25):
 		whoami.Say(' %d -> %d'%(r,who.GetResist(r)))
 
 def do_basics():
 	whoami.Say('Basic test')
-	who = Crossfire.WhoIsActivator()
 	whoami.Say(' your type is %d'%who.Type)
 	whoami.Say(' your level is %d'%who.Level)
 
@@ -142,9 +141,8 @@ def do_timer_kill():
 		whoami.Say('Kill which timer?')
 	else:
 		timer = int(topic[1])
-		whoami.Say('DestroyTimer %d'%timer);
 		res = Crossfire.DestroyTimer(timer)
-		whoami.Say(' => %d'%res)
+		whoami.Say('Timer %d removed with code %d'%(timer,res))
 
 def do_misc():
 	inv = whoami.Inventory
@@ -156,14 +154,12 @@ def do_misc():
 
 def do_inventory():
 	whoami.Say('You have:');
-	who = Crossfire.WhoIsActivator()
 	inv = who.Inventory
 	while inv:
 		whoami.Say('%s (type = %d, subtype = %d)'%(inv.Name, inv.Type, inv.Subtype))
 		inv = inv.Below
 
 def do_exp():
-	who = Crossfire.WhoIsActivator()
 	if ( len(topic) < 2 ):
 		whoami.Say("Your exp is %d"%who.Exp)
 		whoami.Say("Syntax is: exp <value> [option] [skill]")
@@ -202,11 +198,9 @@ def dump_move(title, move):
 	return s
 
 def do_move():
-	who = Crossfire.WhoIsActivator()
 	whoami.Say(dump_move("movetype", who.MoveType))
 
 def do_bed():
-	who = Crossfire.WhoIsActivator()
 	whoami.Say("bed = %s at (%d, %d)"%(who.BedMap, who.BedX, who.BedY))
 	whoami.Say("changing to +1 -1")
 	who.BedX = who.BedX + 1
@@ -216,7 +210,22 @@ def do_bed():
 	who.BedX = who.BedX - 1
 	who.BedY = who.BedY + 1
 
-whoami.Say( 'plugin test' )
+def do_readkey():
+	if (len(topic) < 2):
+		whoami.Say('read what key?')
+		return;
+	whoami.Say('key %s = %s'%(topic[1], who.ReadKey(topic[1])))
+
+def do_writekey():
+	if (len(topic) < 3):
+		whoami.Say('syntax is writekey key add_update [value]')
+		return
+	val = ''
+	if (len(topic) > 3):
+		val = topic[3]
+	
+	whoami.Say('writekey returned %d'%who.WriteKey(topic[1], val, int(topic[2])))
+	
 
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
@@ -257,5 +266,9 @@ elif topic[0] == 'inv':
 	do_inventory()
 elif topic[0] == 'bed':
 	do_bed()
+elif topic[0] == 'readkey':
+	do_readkey()
+elif topic[0] == 'writekey':
+	do_writekey()
 else:
 	do_help()
