@@ -47,8 +47,9 @@ if (activator.PayAmount(cost)):#silvercoin
 	 activator.Write("%d %ss, a minor win!" %(spinners-1,item))
          payoff = cost*pay
          Slots.payoff(payoff)
-         id = activator.Map.CreateObject(cointype, x, y)
-         CFItemBroker.Item(id).add(payoff)
+         id = Crossfire.CreateObjectByName(cointype)
+         id.Quantity = payoff
+         id.InsertInto(activator)
          if payoff == 1:
             message = "you win %d %s!" %(payoff,cointype)
 	 else:
@@ -63,8 +64,9 @@ if (activator.PayAmount(cost)):#silvercoin
             break
          payoff = pot*pay
          Slots.payoff(payoff)
-         id = activator.Map.CreateObject(cointype, x, y)
-         CFItemBroker.Item(id).add(payoff)
+         id = Crossfire.CreateObjectByName(cointype)
+         id.Quantity = payoff
+         id.InsertInto(activator)
          if payoff == 1:
             message = "you win %d %s!" %(payoff,cointype)
 	 else:
