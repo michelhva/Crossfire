@@ -1,15 +1,15 @@
 arch map
 name castle.basement0
 region brest
-msg
-Creator: Gene Alexander
-Date:   10/04/2005
-endmsg
+darkness 5
 width 59
 height 59
 enter_x 30
 enter_y 5
-darkness 5
+msg
+Creator: Gene Alexander
+Date:   10/04/2005
+endmsg
 end
 arch blocked
 end
@@ -1906,9 +1906,9 @@ x 6
 y 7
 end
 arch torch_unlit
-nrof 5
 x 6
 y 7
+nrof 5
 end
 arch earth
 name dirt floor
@@ -3246,10 +3246,10 @@ x 9
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 9
+level 25
 end
 arch flagstone
 x 9
@@ -3320,30 +3320,30 @@ x 9
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 21
+level 25
 end
 arch flagstone
 x 9
 y 22
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 22
+level 25
 end
 arch flagstone
 x 9
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 23
+level 25
 end
 arch flagstone
 x 9
@@ -3358,30 +3358,30 @@ x 9
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 25
+level 25
 end
 arch flagstone
 x 9
 y 26
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 26
+level 25
 end
 arch flagstone
 x 9
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 9
 y 27
+level 25
 end
 arch flagstone
 x 9
@@ -3686,10 +3686,10 @@ x 10
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 10
 y 23
+level 25
 end
 arch flagstone
 x 10
@@ -3704,10 +3704,10 @@ x 10
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 10
 y 25
+level 25
 end
 arch flagstone
 x 10
@@ -3722,10 +3722,10 @@ x 10
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 10
 y 27
+level 25
 end
 arch flagstone
 x 10
@@ -4084,10 +4084,10 @@ x 11
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 23
+level 25
 end
 arch flagstone
 x 11
@@ -4102,10 +4102,10 @@ x 11
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 25
+level 25
 end
 arch flagstone
 x 11
@@ -4120,10 +4120,10 @@ x 11
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 27
+level 25
 end
 arch flagstone
 x 11
@@ -4174,10 +4174,10 @@ x 11
 y 36
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 36
+level 25
 end
 arch flagstone
 x 11
@@ -4212,40 +4212,40 @@ x 11
 y 42
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 42
+level 25
 end
 arch flagstone
 x 11
 y 43
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 43
+level 25
 end
 arch flagstone
 x 11
 y 44
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 44
+level 25
 end
 arch flagstone
 x 11
 y 45
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 11
 y 45
+level 25
 end
 arch flagstone
 x 11
@@ -4444,10 +4444,10 @@ x 12
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 12
 y 23
+level 25
 end
 arch flagstone
 x 12
@@ -4462,10 +4462,10 @@ x 12
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 12
 y 25
+level 25
 end
 arch flagstone
 x 12
@@ -4480,10 +4480,10 @@ x 12
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 12
 y 27
+level 25
 end
 arch flagstone
 x 12
@@ -4746,10 +4746,10 @@ x 13
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 13
 y 9
+level 25
 end
 arch flagstone
 x 13
@@ -4832,30 +4832,30 @@ x 13
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 13
 y 23
+level 25
 end
 arch flagstone
 x 13
 y 24
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 13
 y 24
+level 25
 end
 arch flagstone
 x 13
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 13
 y 25
+level 25
 end
 arch flagstone
 x 13
@@ -4870,10 +4870,10 @@ x 13
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 13
 y 27
+level 25
 end
 arch flagstone
 x 13
@@ -5548,10 +5548,10 @@ x 15
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 15
 y 21
+level 25
 end
 arch flagstone
 x 15
@@ -5642,20 +5642,20 @@ x 15
 y 40
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 15
 y 40
+level 25
 end
 arch flagstone
 x 15
 y 41
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 15
 y 41
+level 25
 end
 arch flagstone
 x 15
@@ -6202,10 +6202,10 @@ x 17
 y 11
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 17
 y 11
+level 25
 end
 arch flagstone
 x 17
@@ -6248,10 +6248,10 @@ x 17
 y 19
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 17
 y 19
+level 25
 end
 arch flagstone
 x 17
@@ -6266,10 +6266,10 @@ x 17
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 17
 y 21
+level 25
 end
 arch flagstone
 x 17
@@ -6576,10 +6576,10 @@ x 18
 y 19
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 18
 y 19
+level 25
 end
 arch flagstone
 x 18
@@ -6926,10 +6926,10 @@ x 19
 y 11
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 11
+level 25
 end
 arch flagstone
 x 19
@@ -6944,30 +6944,30 @@ x 19
 y 13
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 13
+level 25
 end
 arch flagstone
 x 19
 y 14
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 14
+level 25
 end
 arch flagstone
 x 19
 y 15
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 15
+level 25
 end
 arch flagstone
 x 19
@@ -6994,10 +6994,10 @@ x 19
 y 19
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 19
+level 25
 end
 arch flagstone
 x 19
@@ -7020,10 +7020,10 @@ x 19
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 23
+level 25
 end
 arch flagstone
 x 19
@@ -7070,10 +7070,10 @@ x 19
 y 31
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 31
+level 25
 end
 arch flagstone
 x 19
@@ -7112,10 +7112,10 @@ x 19
 y 37
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 37
+level 25
 end
 arch flagstone
 x 19
@@ -7126,10 +7126,10 @@ x 19
 y 39
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 39
+level 25
 end
 arch flagstone
 x 19
@@ -7176,10 +7176,10 @@ x 19
 y 47
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 19
 y 47
+level 25
 end
 arch flagstone
 x 19
@@ -8886,10 +8886,10 @@ x 24
 y 43
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 24
 y 43
+level 25
 end
 arch flagstone
 x 24
@@ -9040,10 +9040,10 @@ x 25
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 25
 y 9
+level 25
 end
 arch flagstone
 x 25
@@ -9162,10 +9162,10 @@ x 25
 y 33
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 25
 y 33
+level 25
 end
 arch flagstone
 x 25
@@ -9192,10 +9192,10 @@ x 25
 y 37
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 25
 y 37
+level 25
 end
 arch flagstone
 x 25
@@ -9242,10 +9242,10 @@ x 25
 y 45
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 25
 y 45
+level 25
 end
 arch flagstone
 x 25
@@ -9552,10 +9552,10 @@ x 26
 y 33
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 26
 y 33
+level 25
 end
 arch flagstone
 x 26
@@ -9782,10 +9782,10 @@ x 27
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 9
+level 25
 end
 arch flagstone
 x 27
@@ -9820,10 +9820,10 @@ x 27
 y 15
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 15
+level 25
 end
 arch flagstone
 x 27
@@ -9866,10 +9866,10 @@ x 27
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 23
+level 25
 end
 arch flagstone
 x 27
@@ -9916,10 +9916,10 @@ x 27
 y 31
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 31
+level 25
 end
 arch flagstone
 x 27
@@ -9966,10 +9966,10 @@ x 27
 y 39
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 39
+level 25
 end
 arch flagstone
 x 27
@@ -10016,10 +10016,10 @@ x 27
 y 47
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 27
 y 47
+level 25
 end
 arch flagstone
 x 27
@@ -10760,17 +10760,17 @@ y 5
 end
 arch card
 name DM card
+name_pl DM cards
 msg
 This is the DM entry spot when using 'goto to get
 to the map. The majority of the map is below this
 point. An exit ladder is through the cave wall to
 the left.
 endmsg
-name_pl DM cards
-no_pick 1
-identified 1
 x 30
 y 5
+no_pick 1
+identified 1
 end
 arch earth
 name dirt floor
@@ -11268,10 +11268,10 @@ x 31
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 31
 y 21
+level 25
 end
 arch flagstone
 x 31
@@ -11534,10 +11534,10 @@ x 32
 y 14
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 32
 y 14
+level 25
 end
 arch flagstone
 x 32
@@ -11896,10 +11896,10 @@ x 33
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 33
 y 9
+level 25
 end
 arch flagstone
 x 33
@@ -11966,10 +11966,10 @@ x 33
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 33
 y 21
+level 25
 end
 arch flagstone
 x 33
@@ -12612,10 +12612,10 @@ x 35
 y 9
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 9
+level 25
 end
 arch flagstone
 x 35
@@ -12650,10 +12650,10 @@ x 35
 y 15
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 15
+level 25
 end
 arch flagstone
 x 35
@@ -12696,20 +12696,20 @@ x 35
 y 22
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 22
+level 25
 end
 arch flagstone
 x 35
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 23
+level 25
 end
 arch flagstone
 x 35
@@ -12756,10 +12756,10 @@ x 35
 y 31
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 31
+level 25
 end
 arch flagstone
 x 35
@@ -12806,10 +12806,10 @@ x 35
 y 39
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 39
+level 25
 end
 arch flagstone
 x 35
@@ -12848,10 +12848,10 @@ x 35
 y 45
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 45
+level 25
 end
 arch flagstone
 x 35
@@ -12862,10 +12862,10 @@ x 35
 y 47
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 35
 y 47
+level 25
 end
 arch flagstone
 x 35
@@ -13040,10 +13040,10 @@ x 36
 y 18
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 36
 y 18
+level 25
 end
 arch flagstone
 x 36
@@ -13402,20 +13402,20 @@ x 37
 y 22
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 37
 y 22
+level 25
 end
 arch flagstone
 x 37
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 37
 y 23
+level 25
 end
 arch flagstone
 x 37
@@ -13438,10 +13438,10 @@ x 37
 y 27
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 37
 y 27
+level 25
 end
 arch flagstone
 x 37
@@ -13532,10 +13532,10 @@ x 37
 y 45
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 37
 y 45
+level 25
 end
 arch flagstone
 x 37
@@ -13554,10 +13554,10 @@ x 37
 y 49
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 37
 y 49
+level 25
 end
 arch earth
 name dirt floor
@@ -13672,11 +13672,11 @@ x 38
 y 10
 end
 arch locked_door2
-face ldoor_brown2.111
+slaying zorn_pet_pelt
 msg
 You need Zorn's pet pelt to open this door.
 endmsg
-slaying zorn_pet_pelt
+face ldoor_brown2.111
 x 38
 y 10
 end
@@ -13717,10 +13717,10 @@ x 38
 y 15
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 38
 y 15
+level 25
 end
 arch flagstone
 x 38
@@ -14179,10 +14179,10 @@ x 39
 y 19
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 19
+level 25
 end
 arch flagstone
 x 39
@@ -14209,20 +14209,20 @@ x 39
 y 24
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 24
+level 25
 end
 arch flagstone
 x 39
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 25
+level 25
 end
 arch flagstone
 x 39
@@ -14253,10 +14253,10 @@ x 39
 y 31
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 31
+level 25
 end
 arch flagstone
 x 39
@@ -14271,10 +14271,10 @@ x 39
 y 33
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 33
+level 25
 end
 arch flagstone
 x 39
@@ -14341,30 +14341,30 @@ x 39
 y 47
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 47
+level 25
 end
 arch flagstone
 x 39
 y 48
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 48
+level 25
 end
 arch flagstone
 x 39
 y 49
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 39
 y 49
+level 25
 end
 arch earth
 name dirt floor
@@ -14440,6 +14440,10 @@ y 4
 end
 arch earth
 name dirt floor
+x 40
+y 5
+end
+arch blocked
 x 40
 y 5
 end
@@ -14507,10 +14511,10 @@ x 40
 y 14
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 40
 y 14
+level 25
 end
 arch flagstone
 x 40
@@ -14841,12 +14845,16 @@ name dirt floor
 x 41
 y 5
 end
+arch blocked
+x 41
+y 5
+end
 arch earth
 name dirt floor
 x 41
 y 6
 end
-arch blocked
+arch dun10
 x 41
 y 6
 end
@@ -14855,7 +14863,7 @@ name dirt floor
 x 41
 y 7
 end
-arch dun2
+arch dun7
 x 41
 y 7
 end
@@ -15144,34 +15152,32 @@ name dirt floor
 x 42
 y 5
 end
-arch earth
-name dirt floor
-x 42
-y 6
-end
 arch blocked
 x 42
-y 6
+y 5
 end
 arch earth
 name dirt floor
+x 42
+y 6
+end
+arch dun2
+x 42
+y 6
+end
+arch flagstone
 x 42
 y 7
 end
-arch dun2
+arch perm_magic_portal
+name Emergency Exit
+slaying /brest/zorn/castle.mainfloor
+hp 29
+sp 51
 x 42
 y 7
 end
 arch flagstone
-x 42
-y 8
-end
-arch teleporter
-name Emergency Exit
-slaying castle.mainfloor
-hp 29
-sp 51
-speed 0.0
 x 42
 y 8
 end
@@ -15564,12 +15570,16 @@ name dirt floor
 x 43
 y 5
 end
+arch blocked
+x 43
+y 5
+end
 arch earth
 name dirt floor
 x 43
 y 6
 end
-arch blocked
+arch dun9
 x 43
 y 6
 end
@@ -15578,7 +15588,7 @@ name dirt floor
 x 43
 y 7
 end
-arch dun2
+arch dun4
 x 43
 y 7
 end
@@ -15619,10 +15629,10 @@ x 43
 y 13
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 13
+level 25
 end
 arch flagstone
 x 43
@@ -15633,10 +15643,10 @@ x 43
 y 15
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 15
+level 25
 end
 arch flagstone
 x 43
@@ -15675,10 +15685,10 @@ x 43
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 21
+level 25
 end
 arch flagstone
 x 43
@@ -15689,10 +15699,10 @@ x 43
 y 23
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 23
+level 25
 end
 arch flagstone
 x 43
@@ -15739,10 +15749,10 @@ x 43
 y 31
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 31
+level 25
 end
 arch flagstone
 x 43
@@ -15789,10 +15799,10 @@ x 43
 y 39
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 43
 y 39
+level 25
 end
 arch flagstone
 x 43
@@ -15920,6 +15930,10 @@ y 4
 end
 arch earth
 name dirt floor
+x 44
+y 5
+end
+arch blocked
 x 44
 y 5
 end
@@ -16011,10 +16025,10 @@ x 44
 y 18
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 44
 y 18
+level 25
 end
 arch flagstone
 x 44
@@ -16337,10 +16351,10 @@ x 45
 y 13
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 13
+level 25
 end
 arch flagstone
 x 45
@@ -16359,10 +16373,10 @@ x 45
 y 17
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 17
+level 25
 end
 arch flagstone
 x 45
@@ -16389,10 +16403,10 @@ x 45
 y 21
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 21
+level 25
 end
 arch flagstone
 x 45
@@ -16411,10 +16425,10 @@ x 45
 y 25
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 25
+level 25
 end
 arch flagstone
 x 45
@@ -16529,10 +16543,10 @@ x 45
 y 47
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 47
+level 25
 end
 arch flagstone
 x 45
@@ -16547,10 +16561,10 @@ x 45
 y 49
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 45
 y 49
+level 25
 end
 arch earth
 name dirt floor
@@ -17038,16 +17052,16 @@ end
 arch teleporter
 hp 47
 sp 7
-connected 1002
-speed 0.0
 x 47
 y 1
+speed 0.0
+connected 1002
 end
 arch rubble
-material 0
-no_pass 1
 x 47
 y 1
+material 0
+no_pass 1
 end
 arch blocked
 x 47
@@ -17087,10 +17101,10 @@ y 7
 end
 arch phole_2
 name hole in the ground
+slaying castle.basement0
 msg
 You enter a forgotten storage room.
 endmsg
-slaying castle.basement0
 hp 48
 sp 9
 x 47
@@ -17142,9 +17156,9 @@ x 47
 y 12
 end
 arch igate_closed_1
-connected 1001
 x 47
 y 12
+connected 1001
 end
 arch flagstone
 x 47
@@ -17343,20 +17357,20 @@ x 47
 y 48
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 47
 y 48
+level 25
 end
 arch flagstone
 x 47
 y 49
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 47
 y 49
+level 25
 end
 arch earth
 name dirt floor
@@ -17462,11 +17476,11 @@ msg
 You set off a falling rocks trap that causes rubble to
 block the hole you see ahead.
 endmsg
-level 25
 Cha 100
-connected 1002
 x 48
 y 7
+level 25
+connected 1002
 end
 arch earth
 name dirt floor
@@ -17484,30 +17498,30 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 48
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 48
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 48
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -17524,9 +17538,9 @@ x 48
 y 11
 end
 arch button_lever
-connected 1001
 x 48
 y 11
+connected 1001
 end
 arch barrel
 x 48
@@ -17545,9 +17559,9 @@ x 48
 y 13
 end
 arch button_lever
-connected 1001
 x 48
 y 13
+connected 1001
 end
 arch barrel
 x 48
@@ -17750,10 +17764,10 @@ x 48
 y 48
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 48
 y 48
+level 25
 end
 arch flagstone
 x 48
@@ -17867,11 +17881,11 @@ msg
 You set off a falling rocks trap that causes rubble to
 block the hole you see ahead.
 endmsg
-level 25
 Cha 100
-connected 1002
 x 49
 y 7
+level 25
+connected 1002
 end
 arch earth
 name dirt floor
@@ -17889,20 +17903,20 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 9
+material 0
+no_pick 1
 arch lantern_unlit
 name ancient lantern
 name_pl ancient lanterns
@@ -17911,20 +17925,20 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 9
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -17939,30 +17953,30 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 10
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 10
+material 0
+no_pick 1
 arch rubble
 end
 end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 10
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18005,10 +18019,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 15
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18019,10 +18033,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 16
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18033,10 +18047,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 17
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18047,10 +18061,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 18
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18073,10 +18087,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 22
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18087,10 +18101,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 23
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18101,10 +18115,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 24
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18115,10 +18129,10 @@ end
 arch chest_2
 name old dusty chest
 name_pl old dusty chests
-material 0
-no_pick 1
 x 49
 y 25
+material 0
+no_pick 1
 arch rubble
 end
 end
@@ -18245,20 +18259,20 @@ x 49
 y 48
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 49
 y 48
+level 25
 end
 arch flagstone
 x 49
 y 49
 end
 arch trap_spike_pit
-level 25
 Cha 100
 x 49
 y 49
+level 25
 end
 arch earth
 name dirt floor
@@ -18364,11 +18378,11 @@ msg
 You set off a falling rocks trap that causes rubble to
 block the hole you see ahead.
 endmsg
-level 25
 Cha 100
-connected 1002
 x 50
 y 7
+level 25
+connected 1002
 end
 arch earth
 name dirt floor
@@ -18872,11 +18886,11 @@ msg
 You set off a falling rocks trap that causes rubble to
 block the hole you see ahead.
 endmsg
-level 25
 Cha 100
-connected 1002
 x 51
 y 7
+level 25
+connected 1002
 end
 arch earth
 name dirt floor
