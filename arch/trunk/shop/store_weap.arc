@@ -1,6 +1,6 @@
 Object store_weapons
 name shop
-face store_weap.111
+face store_weap.x11
 color_fg dark_orange
 type 66
 no_pick 1
@@ -13,7 +13,7 @@ end
 More
 Object store_weapons_2
 name shop
-face store_weap.211
+face store_weap.x11
 color_fg dark_orange
 type 66
 x 1
@@ -25,7 +25,7 @@ end
 More
 Object store_weapons_3
 name shop
-face store_weap.311
+face store_weap.x11
 color_fg dark_orange
 type 66
 y 1
@@ -36,7 +36,7 @@ end
 More
 Object store_weapons_4
 name shop
-face store_weap.411
+face store_weap.x11
 color_fg dark_orange
 type 66
 x 1

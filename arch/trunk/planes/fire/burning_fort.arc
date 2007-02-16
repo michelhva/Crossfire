@@ -1,7 +1,7 @@
-object burning_fort
+Object object burning_fort
 name burning fortress
 type 66
-face burning_fort.111
+face burning_fort.x11
 no_pick 1
 editable 2
 visibility 100
@@ -12,7 +12,7 @@ More
 object burning_fort_2
 name burning fortress
 type 66
-face burning_fort.211
+face burning_fort.x11
 x 1
 no_pick 1
 visibility 100
@@ -22,7 +22,7 @@ More
 object burning_fort_3
 name burning fortress
 type 66
-face burning_fort.311
+face burning_fort.x11
 y 1
 no_pick 1
 visibility 100
@@ -32,7 +32,7 @@ More
 object burning_fort_4
 name burning fortress
 type 66
-face burning_fort.411
+face burning_fort.x11
 x 1
 y 1
 no_pick 1

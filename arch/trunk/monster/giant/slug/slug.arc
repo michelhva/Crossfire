@@ -1,16 +1,16 @@
 Object slug
 race insect
 name slug
-face slug.131
+face slug.x31
 monster 1
 sleep 1
 Wis 15
 anim
 facings 2
-slug.131
-slug.132
-slug.171
-slug.172
+slug.x31
+slug.x32
+slug.x71
+slug.x72
 mina
 level 8
 Con 10
@@ -37,13 +37,13 @@ end
 More
 Object slug_2
 name slug
-face slug.231
+face slug.x31
 anim
 facings 2
-slug.231
-slug.232
-slug.271
-slug.272
+slug.x31
+slug.x32
+slug.x71
+slug.x72
 mina
 monster 1
 alive 1

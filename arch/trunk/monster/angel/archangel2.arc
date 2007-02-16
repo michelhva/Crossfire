@@ -2,11 +2,11 @@ Object ArchAngel
 randomitems archangel
 name Arch Angel
 race angel
-face highangel.111
+face highangel.x11
 anim
-highangel.111
-highangel.112
-highangel.113
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 color_fg white
 monster 1
@@ -76,11 +76,11 @@ end
 More
 Object ArchAngel_2
 name Arch Angel
-face highangel.211
+face highangel.x11
 anim
-highangel.211
-highangel.212
-highangel.213
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 monster 1
 alive 1
@@ -91,11 +91,11 @@ end
 More
 Object ArchAngel_3
 name Arch Angel
-face highangel.311
+face highangel.x11
 anim
-highangel.311
-highangel.312
-highangel.313
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 monster 1
 alive 1
@@ -106,11 +106,11 @@ end
 More
 Object ArchAngel_4
 name Arch Angel
-face highangel.411
+face highangel.x11
 anim
-highangel.411
-highangel.412
-highangel.413
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 monster 1
 alive 1
@@ -122,11 +122,11 @@ end
 More
 Object ArchAngel_5
 name Arch Angel
-face highangel.511
+face highangel.x11
 anim
-highangel.511
-highangel.512
-highangel.513
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 monster 1
 alive 1
@@ -138,11 +138,11 @@ end
 More
 Object ArchAngel_6
 name Arch Angel
-face highangel.611
+face highangel.x11
 anim
-highangel.611
-highangel.612
-highangel.613
+highangel.x11
+highangel.x12
+highangel.x13
 mina
 monster 1
 alive 1

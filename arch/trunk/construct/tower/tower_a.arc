@@ -1,7 +1,7 @@
 Object tower_a
 name tower
 type 66
-face tower_a.111
+face tower_a.x11
 no_pick 1
 editable 2
 visibility 100
@@ -12,7 +12,7 @@ More
 Object tower_b
 name tower
 type 66
-face tower_a.211
+face tower_a.x11
 y 1
 no_pick 1
 visibility 100

@@ -5,14 +5,14 @@ randomitems acdc
 monster 1
 sleep 1
 Wis 20
-face elec_dr.111
+face elec_dr.x11
 anim
-elec_dr.111
-elec_dr.112
-elec_dr.111
-elec_dr.112
-elec_dr.111
-elec_dr.112
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 level 18
 Con 11
@@ -44,14 +44,14 @@ end
 More
 Object big_elec_2
 name electric dragon
-face elec_dr.211
+face elec_dr.x11
 anim
-elec_dr.211
-elec_dr.212
-elec_dr.211
-elec_dr.212
-elec_dr.211
-elec_dr.212
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 monster 1
 alive 1
@@ -62,14 +62,14 @@ end
 More
 Object big_elec_3
 name electric dragon
-face elec_dr.311
+face elec_dr.x11
 anim
-elec_dr.311
-elec_dr.312
-elec_dr.311
-elec_dr.312
-elec_dr.311
-elec_dr.312
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 monster 1
 alive 1
@@ -80,14 +80,14 @@ end
 More
 Object big_elec_4
 name electric dragon
-face elec_dr.411
+face elec_dr.x11
 anim
-elec_dr.411
-elec_dr.412
-elec_dr.411
-elec_dr.412
-elec_dr.411
-elec_dr.412
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 monster 1
 alive 1
@@ -99,14 +99,14 @@ end
 More
 Object big_elec_5
 name electric dragon
-face elec_dr.511
+face elec_dr.x11
 anim
-elec_dr.511
-elec_dr.512
-elec_dr.511
-elec_dr.512
-elec_dr.511
-elec_dr.512
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 monster 1
 alive 1
@@ -117,14 +117,14 @@ end
 More
 Object big_elec_6
 name electric dragon
-face elec_dr.611
+face elec_dr.x11
 anim
-elec_dr.611
-elec_dr.612
-elec_dr.611
-elec_dr.612
-elec_dr.611
-elec_dr.612
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
+elec_dr.x11
+elec_dr.x12
 mina
 monster 1
 alive 1

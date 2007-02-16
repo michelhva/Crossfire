@@ -1,6 +1,6 @@
 Object burning_stronghold
 type 66
-face burning_stronghold.111
+face burning_stronghold.x11
 no_pick 1
 no_pass 1
 editable 2
@@ -12,7 +12,7 @@ More
 Object burning_stronghold_2
 name burning stronghold
 type 66
-face burning_stronghold.211
+face burning_stronghold.x11
 x 1
 no_pick 1
 no_pass 1
@@ -23,7 +23,7 @@ More
 Object burning_stronghold_3
 name burning stronghold
 type 66
-face burning_stronghold.311
+face burning_stronghold.x11
 x 2
 no_pick 1
 no_pass 1
@@ -34,7 +34,7 @@ More
 Object burning_stronghold_4
 name burning stronghold
 type 66
-face burning_stronghold.411
+face burning_stronghold.x11
 y 1
 no_pick 1
 no_pass 1
@@ -45,7 +45,7 @@ More
 Object burning_stronghold_5
 name burning stronghold
 type 66
-face burning_stronghold.511
+face burning_stronghold.x11
 x 1
 y 1
 no_pick 1
@@ -57,7 +57,7 @@ More
 Object burning_stronghold_6
 name burning stronghold
 type 66
-face burning_stronghold.611
+face burning_stronghold.x11
 x 2
 y 1
 no_pick 1
@@ -69,7 +69,7 @@ More
 Object burning_stronghold_7
 name burning stronghold
 type 66
-face burning_stronghold.711
+face burning_stronghold.x11
 y 2
 no_pick 1
 no_pass 1
@@ -80,7 +80,7 @@ More
 Object burning_stronghold_8
 name burning stronghold
 type 66
-face burning_stronghold.811
+face burning_stronghold.x11
 x 1
 y 2
 no_pick 1
@@ -91,7 +91,7 @@ More
 Object burning_stronghold_9
 name burning stronghold
 type 66
-face burning_stronghold.911
+face burning_stronghold.x11
 x 2
 y 2
 no_pick 1

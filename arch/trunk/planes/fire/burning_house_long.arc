@@ -1,7 +1,7 @@
 Object burning_house_long
 name burning house
 type 66
-face burning_house_long.111
+face burning_house_long.x11
 color_fg brown
 no_pick 1
 editable 2
@@ -12,7 +12,7 @@ More
 Object burning_house_long_2
 name burning house
 type 66
-face burning_house_long.211
+face burning_house_long.x11
 color_fg brown
 x 1
 no_pick 1

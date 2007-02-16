@@ -2,7 +2,7 @@ Object fire_serpent
 race reptile
 name fire serpent
 randomitems fire_serpent
-face serpent.131
+face serpent.x31
 monster 1
 Wis 15
 animation serpent
@@ -32,7 +32,7 @@ end
 More
 Object fire_serpent_2
 name fire serpent
-face serpent.231
+face serpent.x31
 animation serpent_2
 monster 1
 alive 1

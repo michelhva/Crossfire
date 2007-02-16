@@ -1,12 +1,12 @@
 Object breeder_ant
-face breeder_ant.111
+face breeder_ant.x11
 name Queen Ant
 race insect
 other_arch ant_egg
 anim
-breeder_ant.111
-breeder_ant.111
-breeder_ant.112
+breeder_ant.x11
+breeder_ant.x11
+breeder_ant.x12
 mina
 color_fg dark_orange
 monster 1
@@ -36,12 +36,12 @@ editable 1
 end
 More
 Object breeder_ant_2
-face breeder_ant.211
+face breeder_ant.x11
 name Queen Ant
 anim
-breeder_ant.211
-breeder_ant.211
-breeder_ant.212
+breeder_ant.x11
+breeder_ant.x11
+breeder_ant.x12
 mina
 color_fg dark_orange
 monster 1

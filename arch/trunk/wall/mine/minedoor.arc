@@ -4,17 +4,17 @@ type 26
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-face minedoor_4.111
+face minedoor_4.x11
 anim
-minedoor_4.119
-minedoor_4.118
-minedoor_4.117
-minedoor_4.116
-minedoor_4.115
-minedoor_4.114
-minedoor_4.113
-minedoor_4.112
-minedoor_4.111
+minedoor_4.x19
+minedoor_4.x18
+minedoor_4.x17
+minedoor_4.x16
+minedoor_4.x15
+minedoor_4.x14
+minedoor_4.x13
+minedoor_4.x12
+minedoor_4.x11
 mina
 is_animated 0
 no_pass 1
@@ -38,17 +38,17 @@ type 26
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-face minedoor_4.211
+face minedoor_4.x11
 anim
-minedoor_4.219
-minedoor_4.218
-minedoor_4.217
-minedoor_4.216
-minedoor_4.215
-minedoor_4.214
-minedoor_4.213
-minedoor_4.212
-minedoor_4.211
+minedoor_4.x19
+minedoor_4.x18
+minedoor_4.x17
+minedoor_4.x16
+minedoor_4.x15
+minedoor_4.x14
+minedoor_4.x13
+minedoor_4.x12
+minedoor_4.x11
 mina
 is_animated 0
 no_pass 1
@@ -68,17 +68,17 @@ type 26
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-face minedoor_8.111
+face minedoor_8.x11
 anim
-minedoor_8.119
-minedoor_8.118
-minedoor_8.117
-minedoor_8.116
-minedoor_8.115
-minedoor_8.114
-minedoor_8.113
-minedoor_8.112
-minedoor_8.111
+minedoor_8.x19
+minedoor_8.x18
+minedoor_8.x17
+minedoor_8.x16
+minedoor_8.x15
+minedoor_8.x14
+minedoor_8.x13
+minedoor_8.x12
+minedoor_8.x11
 mina
 is_animated 0
 no_pass 1
@@ -102,17 +102,17 @@ type 26
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-face minedoor_8.211
+face minedoor_8.x11
 anim
-minedoor_8.219
-minedoor_8.218
-minedoor_8.217
-minedoor_8.216
-minedoor_8.215
-minedoor_8.214
-minedoor_8.213
-minedoor_8.212
-minedoor_8.211
+minedoor_8.x19
+minedoor_8.x18
+minedoor_8.x17
+minedoor_8.x16
+minedoor_8.x15
+minedoor_8.x14
+minedoor_8.x13
+minedoor_8.x12
+minedoor_8.x11
 mina
 is_animated 0
 no_pass 1

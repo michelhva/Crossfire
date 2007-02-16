@@ -2,16 +2,16 @@ Object djinn
 race faerie
 name Major djinn
 randomitems djinn
-face djinn.131
+face djinn.x31
 monster 1
 sleep 1
 Wis 25
 anim
 facings 2
-djinn.131
-djinn.132
-djinn.171
-djinn.172
+djinn.x31
+djinn.x32
+djinn.x71
+djinn.x72
 mina
 level 40
 Con 10
@@ -70,13 +70,13 @@ end
 More
 Object djinn_2
 name Major djinn
-face djinn.231
+face djinn.x31
 anim
 facings 2
-djinn.231
-djinn.232
-djinn.271
-djinn.272
+djinn.x31
+djinn.x32
+djinn.x71
+djinn.x72
 mina
 monster 1
 alive 1

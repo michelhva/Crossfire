@@ -1,7 +1,7 @@
 Object active_volcano
 name volcano
 other_arch spell_create_lava
-face volcano_lo.111
+face volcano_lo.x11
 type 62
 activate_on_push 1
 activate_on_release 1
@@ -17,7 +17,7 @@ More
 Object active_volcano_2
 name volcano
 other_arch spell_create_lava
-face volcano_lo.211
+face volcano_lo.x11
 type 62
 activate_on_push 1
 activate_on_release 1

@@ -5,17 +5,17 @@ randomitems dragon
 monster 1
 sleep 1
 Wis 20
-face dragon_ac.171
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.171
-dragon_ac.172
-dragon_ac.173
-dragon_ac.174
-dragon_ac.131
-dragon_ac.132
-dragon_ac.133
-dragon_ac.134
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 level 26
 Con 11
@@ -52,17 +52,17 @@ end
 More
 Object big_dragon_ancient2
 name dragon
-face dragon_ac.271
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.271
-dragon_ac.272
-dragon_ac.273
-dragon_ac.274
-dragon_ac.231
-dragon_ac.232
-dragon_ac.233
-dragon_ac.234
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 monster 1
 alive 1
@@ -73,17 +73,17 @@ end
 More
 Object big_dragon_ancient3
 name dragon
-face dragon_ac.371
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.371
-dragon_ac.372
-dragon_ac.373
-dragon_ac.374
-dragon_ac.331
-dragon_ac.332
-dragon_ac.333
-dragon_ac.334
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 monster 1
 alive 1
@@ -94,17 +94,17 @@ end
 More
 Object big_dragon_ancient4
 name dragon
-face dragon_ac.471
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.471
-dragon_ac.472
-dragon_ac.473
-dragon_ac.474
-dragon_ac.431
-dragon_ac.432
-dragon_ac.433
-dragon_ac.434
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 monster 1
 alive 1
@@ -115,17 +115,17 @@ end
 More
 Object big_dragon_ancient5
 name dragon
-face dragon_ac.571
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.571
-dragon_ac.572
-dragon_ac.573
-dragon_ac.574
-dragon_ac.531
-dragon_ac.532
-dragon_ac.533
-dragon_ac.534
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 monster 1
 alive 1
@@ -137,17 +137,17 @@ end
 More
 Object big_dragon_ancient6
 name dragon
-face dragon_ac.671
+face dragon_ac.x71
 anim
 facings 2
-dragon_ac.671
-dragon_ac.672
-dragon_ac.673
-dragon_ac.674
-dragon_ac.631
-dragon_ac.632
-dragon_ac.633
-dragon_ac.634
+dragon_ac.x71
+dragon_ac.x72
+dragon_ac.x73
+dragon_ac.x74
+dragon_ac.x31
+dragon_ac.x32
+dragon_ac.x33
+dragon_ac.x34
 mina
 monster 1
 alive 1

@@ -1,12 +1,12 @@
 Object cobra
 name giant cobra
-face cobra.112
+face cobra.x12
 race reptile
 anim
-cobra.111
-cobra.112
-cobra.113
-cobra.112
+cobra.x11
+cobra.x12
+cobra.x13
+cobra.x12
 mina
 color_fg green
 speed -0.1
@@ -30,12 +30,12 @@ end
 More
 Object cobra_2
 name giant cobra
-face cobra.212
+face cobra.x12
 anim
-cobra.211
-cobra.212
-cobra.213
-cobra.212
+cobra.x11
+cobra.x12
+cobra.x13
+cobra.x12
 mina
 color_fg green
 alive 1

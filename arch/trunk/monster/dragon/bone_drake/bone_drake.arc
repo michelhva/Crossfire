@@ -2,10 +2,10 @@ Object bone_drake
 name bone drake
 randomitems chinese
 race dragon
-face bone_drake.111
+face bone_drake.x11
 anim
-bone_drake.111
-bone_drake.112
+bone_drake.x11
+bone_drake.x12
 mina
 monster 1
 sleep 1
@@ -34,10 +34,10 @@ end
 More
 Object bone_drake_2
 name bone drake
-face bone_drake.211
+face bone_drake.x11
 anim
-bone_drake.211
-bone_drake.212
+bone_drake.x11
+bone_drake.x12
 mina
 alive 1
 x 1
@@ -46,10 +46,10 @@ end
 More
 Object bone_drake_3
 name bone drake
-face bone_drake.311
+face bone_drake.x11
 anim
-bone_drake.311
-bone_drake.312
+bone_drake.x11
+bone_drake.x12
 mina
 alive 1
 y 1
@@ -58,10 +58,10 @@ end
 More
 Object bone_drake_4
 name bone drake
-face bone_drake.411
+face bone_drake.x11
 anim
-bone_drake.411
-bone_drake.412
+bone_drake.x11
+bone_drake.x12
 mina
 alive 1
 x 1

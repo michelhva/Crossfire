@@ -5,17 +5,17 @@ randomitems big_wizard
 monster 1
 sleep 1
 Wis 15
-face big_wiz.111
+face big_wiz.x11
 anim
-big_wiz.111
-big_wiz.112
-big_wiz.113
-big_wiz.114
-big_wiz.115
-big_wiz.115
-big_wiz.114
-big_wiz.113
-big_wiz.112
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 level 18
 attacktype 128
@@ -69,17 +69,17 @@ end
 More
 Object big_wiz2
 name wizard
-face big_wiz.211
+face big_wiz.x11
 anim
-big_wiz.211
-big_wiz.212
-big_wiz.213
-big_wiz.214
-big_wiz.215
-big_wiz.215
-big_wiz.214
-big_wiz.213
-big_wiz.212
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -91,17 +91,17 @@ end
 More
 Object big_wiz3
 name wizard
-face big_wiz.311
+face big_wiz.x11
 anim
-big_wiz.311
-big_wiz.312
-big_wiz.313
-big_wiz.314
-big_wiz.315
-big_wiz.315
-big_wiz.314
-big_wiz.313
-big_wiz.312
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -113,17 +113,17 @@ end
 More
 Object big_wiz4
 name wizard
-face big_wiz.411
+face big_wiz.x11
 anim
-big_wiz.411
-big_wiz.412
-big_wiz.413
-big_wiz.414
-big_wiz.415
-big_wiz.415
-big_wiz.414
-big_wiz.413
-big_wiz.412
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -135,17 +135,17 @@ end
 More
 Object big_wiz5
 name wizard
-face big_wiz.511
+face big_wiz.x11
 anim
-big_wiz.511
-big_wiz.512
-big_wiz.513
-big_wiz.514
-big_wiz.515
-big_wiz.515
-big_wiz.514
-big_wiz.513
-big_wiz.512
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -157,17 +157,17 @@ end
 More
 Object big_wiz6
 name wizard
-face big_wiz.611
+face big_wiz.x11
 anim
-big_wiz.611
-big_wiz.612
-big_wiz.613
-big_wiz.614
-big_wiz.615
-big_wiz.615
-big_wiz.614
-big_wiz.613
-big_wiz.612
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -179,17 +179,17 @@ end
 More
 Object big_wiz7
 name wizard
-face big_wiz.711
+face big_wiz.x11
 anim
-big_wiz.711
-big_wiz.712
-big_wiz.713
-big_wiz.714
-big_wiz.715
-big_wiz.715
-big_wiz.714
-big_wiz.713
-big_wiz.712
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -201,17 +201,17 @@ end
 More
 Object big_wiz8
 name wizard
-face big_wiz.811
+face big_wiz.x11
 anim
-big_wiz.811
-big_wiz.812
-big_wiz.813
-big_wiz.814
-big_wiz.815
-big_wiz.815
-big_wiz.814
-big_wiz.813
-big_wiz.812
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1
@@ -223,17 +223,17 @@ end
 More
 Object big_wiz9
 name wizard
-face big_wiz.911
+face big_wiz.x11
 anim
-big_wiz.911
-big_wiz.912
-big_wiz.913
-big_wiz.914
-big_wiz.915
-big_wiz.915
-big_wiz.914
-big_wiz.913
-big_wiz.912
+big_wiz.x11
+big_wiz.x12
+big_wiz.x13
+big_wiz.x14
+big_wiz.x15
+big_wiz.x15
+big_wiz.x14
+big_wiz.x13
+big_wiz.x12
 mina
 monster 1
 alive 1

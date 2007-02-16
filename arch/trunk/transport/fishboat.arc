@@ -1,7 +1,7 @@
 Object fishboat
 name fishing boat
 type 66
-face fishboat.111
+face fishboat.x11
 color_fg brown
 no_pick 1
 move_allow walk
@@ -15,7 +15,7 @@ Object fishboat_2
 name fishing boat
 type 66
 color_fg brown
-face fishboat.211
+face fishboat.x11
 x 1
 no_pick 1
 move_allow walk

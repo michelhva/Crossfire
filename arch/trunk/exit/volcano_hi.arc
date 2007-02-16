@@ -1,7 +1,7 @@
 Object volcano_high
 name high volcano
 type 66
-face volcano_hi.111
+face volcano_hi.x11
 no_pick 1
 slow_move 20
 blocksview 1
@@ -13,7 +13,7 @@ end
 More
 Object volcano_high_2
 name high volcano
-face volcano_hi.211
+face volcano_hi.x11
 no_pick 1
 x 1
 slow_move 20
@@ -25,7 +25,7 @@ end
 More
 Object volcano_high_3
 name high volcano
-face volcano_hi.311
+face volcano_hi.x11
 no_pick 1
 y 1
 slow_move 20
@@ -37,7 +37,7 @@ end
 More
 Object volcano_high_4
 name high volcano
-face volcano_hi.411
+face volcano_hi.x11
 no_pick 1
 x 1
 y 1

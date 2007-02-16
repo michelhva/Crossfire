@@ -5,14 +5,14 @@ race dragon
 monster 1
 sleep 1
 Wis 20
-face wyvern.171
+face wyvern.x71
 color_fg green
 anim
 facings 2
-wyvern.171
-wyvern.172
-wyvern.131
-wyvern.132
+wyvern.x71
+wyvern.x72
+wyvern.x31
+wyvern.x32
 mina
 level 8
 Con 2
@@ -42,14 +42,14 @@ end
 More
 Object dragon_2
 name wyvern
-face wyvern.271
+face wyvern.x71
 color_fg green
 anim
 facings 2
-wyvern.271
-wyvern.272
-wyvern.231
-wyvern.232
+wyvern.x71
+wyvern.x72
+wyvern.x31
+wyvern.x32
 mina
 monster 1
 x 1

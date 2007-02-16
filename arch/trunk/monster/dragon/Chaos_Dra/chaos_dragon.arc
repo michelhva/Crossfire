@@ -5,17 +5,17 @@ randomitems chaosdragon
 monster 1
 sleep 1
 Wis 30
-face chaos_dragon.171
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.171
-chaos_dragon.172
-chaos_dragon.173
-chaos_dragon.174
-chaos_dragon.131
-chaos_dragon.132
-chaos_dragon.133
-chaos_dragon.134
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 level 68
 Con 68
@@ -48,17 +48,17 @@ end
 More
 Object big_chaos_dragon.2
 name dragon of chaos
-face chaos_dragon.271
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.271
-chaos_dragon.272
-chaos_dragon.273
-chaos_dragon.274
-chaos_dragon.231
-chaos_dragon.232
-chaos_dragon.233
-chaos_dragon.234
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 monster 1
 alive 1
@@ -69,17 +69,17 @@ end
 More
 Object big_chaos_dragon.3
 name dragon of chaos
-face chaos_dragon.371
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.371
-chaos_dragon.372
-chaos_dragon.373
-chaos_dragon.374
-chaos_dragon.331
-chaos_dragon.332
-chaos_dragon.333
-chaos_dragon.334
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 monster 1
 alive 1
@@ -90,17 +90,17 @@ end
 More
 Object big_chaos_dragon.4
 name dragon of chaos
-face chaos_dragon.471
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.471
-chaos_dragon.472
-chaos_dragon.473
-chaos_dragon.474
-chaos_dragon.431
-chaos_dragon.432
-chaos_dragon.433
-chaos_dragon.434
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 monster 1
 alive 1
@@ -111,17 +111,17 @@ end
 More
 Object big_chaos_dragon.5
 name dragon of chaos
-face chaos_dragon.571
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.571
-chaos_dragon.572
-chaos_dragon.573
-chaos_dragon.574
-chaos_dragon.531
-chaos_dragon.532
-chaos_dragon.533
-chaos_dragon.534
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 monster 1
 alive 1
@@ -133,17 +133,17 @@ end
 More
 Object big_chaos_dragon.6
 name dragon of chaos
-face chaos_dragon.671
+face chaos_dragon.x71
 anim
 facings 2
-chaos_dragon.671
-chaos_dragon.672
-chaos_dragon.673
-chaos_dragon.674
-chaos_dragon.631
-chaos_dragon.632
-chaos_dragon.633
-chaos_dragon.634
+chaos_dragon.x71
+chaos_dragon.x72
+chaos_dragon.x73
+chaos_dragon.x74
+chaos_dragon.x31
+chaos_dragon.x32
+chaos_dragon.x33
+chaos_dragon.x34
 mina
 monster 1
 alive 1

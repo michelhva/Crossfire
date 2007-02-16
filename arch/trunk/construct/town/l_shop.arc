@@ -1,6 +1,6 @@
 Object l_shop1
 name shop
-face l_shop1.111
+face l_shop1.x11
 magicmap black
 color_bg yellow
 type 66
@@ -12,7 +12,7 @@ end
 More
 Object l_shop1_2
 name shop
-face l_shop1.211
+face l_shop1.x11
 type 66
 no_pick 1
 no_pass 1
@@ -21,7 +21,7 @@ end
 More
 Object l_shop1_3
 name shop
-face l_shop1.311
+face l_shop1.x11
 type 66
 visibility 100
 no_pick 1
@@ -30,7 +30,7 @@ end
 More
 Object l_shop1_4
 name shop
-face l_shop1.411
+face l_shop1.x11
 type 66
 no_pick 1
 visibility 100

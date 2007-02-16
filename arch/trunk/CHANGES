@@ -1,5 +1,15 @@
 Changes for SVN top of tree:
 
+Converted all remaining multi-part base images into single images
+with the facename.base.x??.png format.  Deleted the old multi-part
+images and adjusted the archetypes accordingly.  This is a huge
+commit, but I thought it best to do it all in one commit so that if
+something is horribly wrong, it can be reverted with one command.
+Most of the conversion was automated, so if there's a problem I'm not
+seeing, it probably affects them all.
+Aaron Baugher 2007-02-16
+
+
 Created addition shoreline tiles for the ground/sea.arc tile set to
 add sea_F.base.111.png and sea_F.clsc.111.png that form a round pool
 surrounded by transparency.  This tile might be used to fix indoor
