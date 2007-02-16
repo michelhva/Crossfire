@@ -1,7 +1,7 @@
 Object destroying_angel
 name Retributioner
 race angel
-face retributioner.111
+face retributioner.x11
 randomitems angel
 monster 1
 level 27
@@ -57,7 +57,7 @@ end
 More
 Object destroying_angel_2
 name Retributioner
-face retributioner.211
+face retributioner.x11
 monster 1
 alive 1
 no_pick 1
@@ -67,7 +67,7 @@ end
 More
 Object destroying_angel_3
 name Retributioner
-face retributioner.311
+face retributioner.x11
 monster 1
 alive 1
 no_pick 1
@@ -77,7 +77,7 @@ end
 More
 Object destroying_angel_4
 name Retributioner
-face retributioner.411
+face retributioner.x11
 monster 1
 alive 1
 no_pick 1
@@ -88,7 +88,7 @@ end
 More
 Object destroying_angel_5
 name Retributioner
-face retributioner.511
+face retributioner.x11
 monster 1
 alive 1
 no_pick 1
@@ -99,7 +99,7 @@ end
 More
 Object destroying_angel_6
 name Retributioner
-face retributioner.611
+face retributioner.x11
 monster 1
 alive 1
 no_pick 1

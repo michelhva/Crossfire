@@ -1,6 +1,6 @@
 Object burning_guild
 name burning guild
-face burning_guild.111
+face burning_guild.x11
 type 66
 no_pick 1
 no_pass 1
@@ -12,7 +12,7 @@ end
 More
 Object burning_guild_2
 name burning guild
-face burning_guild.211
+face burning_guild.x11
 type 66
 no_pick 1
 no_pass 1
@@ -23,7 +23,7 @@ end
 More
 Object burning_guild_3
 name burning guild
-face burning_guild.311
+face burning_guild.x11
 type 66
 no_pick 1
 y 1
@@ -33,7 +33,7 @@ end
 More
 Object burning_guild_4
 name burning guild
-face burning_guild.411
+face burning_guild.x11
 type 66
 no_pick 1
 x 1

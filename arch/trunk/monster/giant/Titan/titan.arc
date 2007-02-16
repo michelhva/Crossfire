@@ -4,21 +4,21 @@ randomitems titan
 monster 1
 sleep 1
 Wis 20
-face titan.571
+face titan.x71
 anim
 facings 2
-titan.571
-titan.572
-titan.573
-titan.573
-titan.572
-titan.571
-titan.531
-titan.532
-titan.533
-titan.533
-titan.532
-titan.531
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 resist_electricity 100
 resist_fear 100
@@ -70,21 +70,21 @@ end
 More
 Object titan_2
 name titan
-face titan.471
+face titan.x71
 anim
 facings 2
-titan.471
-titan.472
-titan.473
-titan.473
-titan.472
-titan.471
-titan.431
-titan.432
-titan.433
-titan.433
-titan.432
-titan.431
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -94,21 +94,21 @@ end
 More
 Object titan_3
 name titan
-face titan.171
+face titan.x71
 anim
 facings 2
-titan.171
-titan.172
-titan.173
-titan.173
-titan.172
-titan.171
-titan.131
-titan.132
-titan.133
-titan.133
-titan.132
-titan.131
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -119,21 +119,21 @@ end
 More
 Object titan_4
 name titan
-face titan.271
+face titan.x71
 anim
 facings 2
-titan.271
-titan.272
-titan.273
-titan.273
-titan.272
-titan.271
-titan.231
-titan.232
-titan.233
-titan.233
-titan.232
-titan.231
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -143,21 +143,21 @@ end
 More
 Object titan_5
 name titan
-face titan.371
+face titan.x71
 anim
 facings 2
-titan.371
-titan.372
-titan.373
-titan.373
-titan.372
-titan.371
-titan.331
-titan.332
-titan.333
-titan.333
-titan.332
-titan.331
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -168,21 +168,21 @@ end
 More
 Object titan_6
 name titan
-face titan.671
+face titan.x71
 anim
 facings 2
-titan.671
-titan.672
-titan.673
-titan.673
-titan.672
-titan.671
-titan.631
-titan.632
-titan.633
-titan.633
-titan.632
-titan.631
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -192,21 +192,21 @@ end
 More
 Object titan_7
 name titan
-face titan.971
+face titan.x71
 anim
 facings 2
-titan.971
-titan.972
-titan.973
-titan.973
-titan.972
-titan.971
-titan.931
-titan.932
-titan.933
-titan.933
-titan.932
-titan.931
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -217,21 +217,21 @@ end
 More
 Object titan_8
 name titan
-face titan.871
+face titan.x71
 anim
 facings 2
-titan.871
-titan.872
-titan.873
-titan.873
-titan.872
-titan.871
-titan.831
-titan.832
-titan.833
-titan.833
-titan.832
-titan.831
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -241,21 +241,21 @@ end
 More
 Object titan_9
 name titan
-face titan.771
+face titan.x71
 anim
 facings 2
-titan.771
-titan.772
-titan.773
-titan.773
-titan.772
-titan.771
-titan.731
-titan.732
-titan.733
-titan.733
-titan.732
-titan.731
+titan.x71
+titan.x72
+titan.x73
+titan.x73
+titan.x72
+titan.x71
+titan.x31
+titan.x32
+titan.x33
+titan.x33
+titan.x32
+titan.x31
 mina
 no_pick 1
 alive 1
@@ -264,8 +264,3 @@ y 1
 invisible 1
 magicmap grey
 end 
-
-
-
-
-

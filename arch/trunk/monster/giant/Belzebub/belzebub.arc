@@ -5,14 +5,14 @@ randomitems belzebub
 monster 1
 sleep 1
 Wis 25
-face belzebub.111
+face belzebub.x11
 anim
-belzebub.111
-belzebub.111
-belzebub.112
-belzebub.112
-belzebub.111
-belzebub.111
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 resist_magic 100
 resist_electricity 30
@@ -66,14 +66,14 @@ end
 More
 Object belzebub_2
 name Belzebub
-face belzebub.211
+face belzebub.x11
 anim
-belzebub.211
-belzebub.211
-belzebub.212
-belzebub.212
-belzebub.211
-belzebub.211
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 no_pick 1
 alive 1
@@ -84,14 +84,14 @@ end
 More
 Object belzebub_3
 name Belzebub
-face belzebub.311
+face belzebub.x11
 anim
-belzebub.311
-belzebub.311
-belzebub.312
-belzebub.312
-belzebub.311
-belzebub.311
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 no_pick 1
 alive 1
@@ -102,14 +102,14 @@ end
 More
 Object belzebub_4
 name Belzebub
-face belzebub.411
+face belzebub.x11
 anim
-belzebub.411
-belzebub.411
-belzebub.412
-belzebub.412
-belzebub.411
-belzebub.411
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 no_pick 1
 alive 1
@@ -121,14 +121,14 @@ end
 More
 Object belzebub_5
 name Belzebub
-face belzebub.511
+face belzebub.x11
 anim
-belzebub.511
-belzebub.511
-belzebub.512
-belzebub.512
-belzebub.511
-belzebub.511
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 no_pick 1
 alive 1
@@ -139,14 +139,14 @@ end
 More
 Object belzebub_6
 name Belzebub
-face belzebub.611
+face belzebub.x11
 anim
-belzebub.611
-belzebub.611
-belzebub.612
-belzebub.612
-belzebub.611
-belzebub.611
+belzebub.x11
+belzebub.x11
+belzebub.x12
+belzebub.x12
+belzebub.x11
+belzebub.x11
 mina
 no_pick 1
 alive 1

@@ -2,7 +2,7 @@ Object minor_djinn
 race faerie
 name minor djinn
 randomitems minor_djinn
-face djinn.131
+face djinn.x31
 monster 1
 sleep 1
 Wis 15
@@ -67,7 +67,7 @@ end
 More
 Object minor_djinn_2
 name minor djinn
-face djinn.231
+face djinn.x31
 animation djinn_2
 monster 1
 alive 1

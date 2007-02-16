@@ -1,6 +1,6 @@
 Object burning_temple1
 name burning temple
-face burning_temple1.111
+face burning_temple1.x11
 type 66
 no_pick 1
 no_pass 1
@@ -10,7 +10,7 @@ end
 More
 Object burning_temple1_2
 name temple
-face burning_temple1.211
+face burning_temple1.x11
 type 66
 no_pick 1
 no_pass 1
@@ -19,7 +19,7 @@ end
 More
 Object burning_temple1_3
 name temple
-face burning_temple1.311
+face burning_temple1.x11
 type 66
 no_pick 1
 visibility 100
@@ -28,7 +28,7 @@ end
 More
 Object burning_temple1_4
 name temple
-face burning_temple1.411
+face burning_temple1.x11
 type 66
 visibility 100
 no_pick 1

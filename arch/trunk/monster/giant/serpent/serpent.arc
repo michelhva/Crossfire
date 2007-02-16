@@ -2,15 +2,15 @@ Object serpent
 name serpent
 race reptile
 randomitems serpent
-face serpent.131
+face serpent.x31
 monster 1
 Wis 15
 anim
 facings 2
-serpent.131
-serpent.132
-serpent.171
-serpent.172
+serpent.x31
+serpent.x32
+serpent.x71
+serpent.x72
 mina
 level 7
 Con 3.2
@@ -34,13 +34,13 @@ end
 More
 Object serpent_2
 name serpent
-face serpent.231
+face serpent.x31
 anim
 facings 2
-serpent.231
-serpent.232
-serpent.271
-serpent.272
+serpent.x31
+serpent.x32
+serpent.x71
+serpent.x72
 mina
 monster 1
 alive 1

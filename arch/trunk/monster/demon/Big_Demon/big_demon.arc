@@ -2,12 +2,12 @@ Object big_demon
 name big demon
 randomitems imp
 race demon
-face big_demon.171
+face big_demon.x71
 color_fg red
 anim
 facings 2
-big_demon.171
-big_demon.131
+big_demon.x71
+big_demon.x31
 mina
 resist_magic 50
 resist_godpower 50
@@ -51,12 +51,12 @@ end
 More
 Object big_demon_2
 name big demon
-face big_demon.271
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.271
-big_demon.231
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -66,12 +66,12 @@ end
 More
 Object big_demon_3
 name big demon
-face big_demon.371
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.371
-big_demon.331
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -81,12 +81,12 @@ end
 More
 Object big_demon_4
 name big demon
-face big_demon.471
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.471
-big_demon.431
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -96,12 +96,12 @@ end
 More
 Object big_demon_5
 name big demon
-face big_demon.571
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.571
-big_demon.531
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -112,12 +112,12 @@ end
 More
 Object big_demon_6
 name big demon
-face big_demon.671
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.671
-big_demon.631
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -128,12 +128,12 @@ end
 More
 Object big_demon_7
 name big demon
-face big_demon.771
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.771
-big_demon.731
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -143,12 +143,12 @@ end
 More
 Object big_demon_8
 name big demon
-face big_demon.871
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.871
-big_demon.831
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -159,12 +159,12 @@ end
 More
 Object big_demon_9
 name big demon
-face big_demon.971
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.971
-big_demon.931
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -175,12 +175,12 @@ end
 More
 Object big_demon_A
 name big demon
-face big_demon.A71
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.A71
-big_demon.A31
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -190,12 +190,12 @@ end
 More
 Object big_demon_B
 name big demon
-face big_demon.B71
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.B71
-big_demon.B31
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1
@@ -206,12 +206,12 @@ end
 More
 Object big_demon_C
 name big demon
-face big_demon.C71
+face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.C71
-big_demon.C31
+big_demon.x71
+big_demon.x31
 mina
 monster 1
 alive 1

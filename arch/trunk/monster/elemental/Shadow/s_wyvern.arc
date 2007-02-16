@@ -1,14 +1,14 @@
 Object s_wyvern
 name shadow wyvern
-face s_wyvern.171
+face s_wyvern.x71
 race shadow
 randomitems s_wyvern
 anim
 facings 2
-s_wyvern.131
-s_wyvern.132
-s_wyvern.171
-s_wyvern.172
+s_wyvern.x31
+s_wyvern.x32
+s_wyvern.x71
+s_wyvern.x72
 mina
 monster 1
 sleep 1
@@ -50,14 +50,14 @@ end
 More
 Object s_wyvern_2
 name shadow wyvern
-face s_wyvern.271
+face s_wyvern.x71
 color_fg black
 anim
 facings 2
-s_wyvern.231
-s_wyvern.232
-s_wyvern.271
-s_wyvern.272
+s_wyvern.x31
+s_wyvern.x32
+s_wyvern.x71
+s_wyvern.x72
 mina
 monster 1
 x 1

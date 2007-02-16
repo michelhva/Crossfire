@@ -2,17 +2,17 @@ Object DK
 race giant
 name Dread Knight
 randomitems DK
-face Bk.111
+face Bk.x11
 anim
 facings 2
-Bk.111
-Bk.112
-Bk.113
-Bk.114
-Bk.171
-Bk.172
-Bk.173
-Bk.174
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 exp 200000
 hp 4500
@@ -74,17 +74,17 @@ end
 More
 Object DK3
 name Dread Knight
-face Bk.311
+face Bk.x11
 anim
 facings 2
-Bk.311
-Bk.312
-Bk.313
-Bk.314
-Bk.371
-Bk.372
-Bk.373
-Bk.374
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 alive 1
 no_pick 1
@@ -94,17 +94,17 @@ end
 More
 Object DK5
 name Dread Knight
-face Bk.511
+face Bk.x11
 anim
 facings 2
-Bk.511
-Bk.512
-Bk.513
-Bk.514
-Bk.571
-Bk.572
-Bk.573
-Bk.574
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 alive 1
 no_pick 1
@@ -114,17 +114,17 @@ end
 More
 Object DK2
 name Dread Knight
-face Bk.211
+face Bk.x11
 anim
 facings 2
-Bk.211
-Bk.212
-Bk.213
-Bk.214
-Bk.271
-Bk.272
-Bk.273
-Bk.274
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 alive 1
 no_pick 1
@@ -134,17 +134,17 @@ end
 More
 Object DK4
 name Dread Knight
-face Bk.411
+face Bk.x11
 anim
 facings 2
-Bk.411
-Bk.412
-Bk.413
-Bk.414
-Bk.471
-Bk.472
-Bk.473
-Bk.474
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 alive 1
 no_pick 1
@@ -155,17 +155,17 @@ end
 More
 Object DK6
 name Dread Knight
-face Bk.611
+face Bk.x11
 anim
 facings 2
-Bk.611
-Bk.612
-Bk.613
-Bk.614
-Bk.671
-Bk.672
-Bk.673
-Bk.674
+Bk.x11
+Bk.x12
+Bk.x13
+Bk.x14
+Bk.x71
+Bk.x72
+Bk.x73
+Bk.x74
 mina
 alive 1
 no_pick 1

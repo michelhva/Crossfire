@@ -1,6 +1,6 @@
 Object rl_house1
 name appartments
-face rl_house1.111
+face rl_house1.x11
 type 66
 no_pick 1
 editable 2
@@ -9,7 +9,7 @@ end
 More
 Object rl_house1_2
 name appartments
-face rl_house1.211
+face rl_house1.x11
 type 66
 no_pick 1
 x 1
@@ -17,7 +17,7 @@ end
 More
 Object rl_house1_3
 name appartments
-face rl_house1.311
+face rl_house1.x11
 type 66
 visibility 100
 no_pick 1
@@ -26,7 +26,7 @@ end
 More
 Object rl_house1_4
 name appartments
-face rl_house1.411
+face rl_house1.x11
 type 66
 no_pick 1
 visibility 100

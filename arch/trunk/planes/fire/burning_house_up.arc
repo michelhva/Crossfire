@@ -1,7 +1,7 @@
 Object burning_house_up
 name burning house
 type 66
-face burning_house_up.111
+face burning_house_up.x11
 color_fg brown
 no_pick 1
 editable 2
@@ -12,7 +12,7 @@ More
 Object burning_house_up_2
 name burning house
 type 66
-face burning_house_up.211
+face burning_house_up.x11
 color_fg brown
 y 1
 no_pick 1

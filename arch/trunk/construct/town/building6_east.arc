@@ -1,5 +1,5 @@
 Object building6_east
-face building6_east.111
+face building6_east.x11
 name tatemono
 type 66
 no_pick 1
@@ -12,7 +12,7 @@ end
 More
 Object building6_2_east
 name tatemono
-face building6_east.111
+face building6_east.x11
 type 66
 no_pick 1
 no_pass 1
@@ -23,7 +23,7 @@ end
 More
 Object building6_3_east
 name tatemono
-face building6_east.111
+face building6_east.x11
 type 66
 no_pick 1
 y 1
@@ -33,7 +33,7 @@ end
 More
 Object building6_4_east
 name tatemono
-face building6_east.111
+face building6_east.x11
 type 66
 no_pick 1
 x 1

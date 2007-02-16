@@ -1,7 +1,7 @@
 Object angel_knight
 name Angel Knight
 race angel
-face angelknight.111
+face angelknight.x11
 monster 1
 level 8
 hp 100
@@ -54,7 +54,7 @@ end
 More
 Object angel_knight_2
 name Angel Knight
-face angelknight.211
+face angelknight.x11
 monster 1
 alive 1
 no_pick 1

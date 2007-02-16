@@ -2,12 +2,12 @@ Object Balrog
 name Balrog
 randomitems Balrog
 race demon
-face jessyb.111
+face jessyb.x11
 anim
-jessyb.111
-jessyb.112
-jessyb.113
-jessyb.112
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 attacktype 1029
 resist_magic 80
@@ -73,12 +73,12 @@ end
 More
 Object Balrog_2
 name Balrog
-face jessyb.211
+face jessyb.x11
 anim
-jessyb.211
-jessyb.212
-jessyb.213
-jessyb.212
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -89,12 +89,12 @@ end
 More
 Object Balrog_3
 name Balrog
-face jessyb.311
+face jessyb.x11
 anim
-jessyb.311
-jessyb.312
-jessyb.313
-jessyb.312
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -105,12 +105,12 @@ end
 More
 Object Balrog_4
 name Balrog
-face jessyb.411
+face jessyb.x11
 anim
-jessyb.411
-jessyb.412
+jessyb.x11
+jessyb.x12
 empty.111
-jessyb.412
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -121,12 +121,12 @@ end
 More
 Object Balrog_5
 name Balrog
-face jessyb.511
+face jessyb.x11
 anim
-jessyb.511
-jessyb.512
-jessyb.513
-jessyb.512
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -137,12 +137,12 @@ end
 More
 Object Balrog_6
 name Balrog
-face jessyb.611
+face jessyb.x11
 anim
-jessyb.611
-jessyb.612
-jessyb.613
-jessyb.612
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -154,12 +154,12 @@ end
 More
 Object Balrog_7
 name Balrog
-face jessyb.711
+face jessyb.x11
 anim
-jessyb.711
-jessyb.712
-jessyb.713
-jessyb.712
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -171,12 +171,12 @@ end
 More
 Object Balrog_8
 name Balrog
-face jessyb.811
+face jessyb.x11
 anim
-jessyb.811
-jessyb.812
-jessyb.813
-jessyb.812
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -188,12 +188,12 @@ end
 More
 Object Balrog_9
 name Balrog
-face jessyb.911
+face jessyb.x11
 anim
-jessyb.911
-jessyb.912
-jessyb.913
-jessyb.912
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -204,12 +204,12 @@ end
 More
 Object Balrog_10
 name Balrog
-face jessyb.A11
+face jessyb.x11
 anim
-jessyb.A11
-jessyb.A12
-jessyb.A13
-jessyb.A12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -221,12 +221,12 @@ end
 More
 Object Balrog_11
 name Balrog
-face jessyb.B11
+face jessyb.x11
 anim
-jessyb.B11
-jessyb.B12
-jessyb.B13
-jessyb.B12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -238,12 +238,12 @@ end
 More
 Object Balrog_12
 name Balrog
-face jessyb.C11
+face jessyb.x11
 anim
-jessyb.C11
-jessyb.C12
-jessyb.C13
-jessyb.C12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -255,12 +255,12 @@ end
 More
 Object Balrog_13
 name Balrog
-face jessyb.D11
+face jessyb.x11
 anim
-jessyb.D11
-jessyb.D12
-jessyb.D13
-jessyb.D12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -271,12 +271,12 @@ end
 More
 Object Balrog_14
 name Balrog
-face jessyb.E11
+face jessyb.x11
 anim
-jessyb.E11
-jessyb.E12
-jessyb.E13
-jessyb.E12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -288,12 +288,12 @@ end
 More
 Object Balrog_15
 name Balrog
-face jessyb.F11
+face jessyb.x11
 anim
-jessyb.F11
-jessyb.F12
-jessyb.F13
-jessyb.F12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1
@@ -305,12 +305,12 @@ end
 More
 Object Balrog_16
 name Balrog
-face jessyb.G11
+face jessyb.x11
 anim
-jessyb.G11
-jessyb.G12
-jessyb.G13
-jessyb.G12
+jessyb.x11
+jessyb.x12
+jessyb.x13
+jessyb.x12
 mina
 monster 1
 alive 1

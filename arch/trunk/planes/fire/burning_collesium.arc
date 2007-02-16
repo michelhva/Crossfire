@@ -1,6 +1,6 @@
 Object burning_collesium
 name burning collesium
-face burning_collesium.111
+face burning_collesium.x11
 type 66
 no_pick 1
 editable 2
@@ -9,7 +9,7 @@ end
 More
 Object burning_collesium_2
 name burning collesium
-face burning_collesium.211
+face burning_collesium.x11
 type 66
 no_pick 1
 x 1
@@ -17,7 +17,7 @@ end
 More
 Object burning_collesium_3
 name burning collesium
-face burning_collesium.311
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -26,7 +26,7 @@ end
 More
 Object burning_collesium_4
 name burning collesium
-face burning_collesium.411
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -35,7 +35,7 @@ end
 More
 Object burning_collesium_5
 name burning collesium
-face burning_collesium.511
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -44,7 +44,7 @@ end
 More
 Object burning_collesium_6
 name burning collesium
-face burning_collesium.611
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -53,7 +53,7 @@ end
 More
 Object burning_collesium_7
 name burning collesium
-face burning_collesium.711
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -63,7 +63,7 @@ end
 More
 Object burning_collesium_8
 name burning collesium
-face burning_collesium.811
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -73,7 +73,7 @@ end
 More
 Object burning_collesium_9
 name burning collesium
-face burning_collesium.911
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -83,7 +83,7 @@ end
 More
 Object burning_collesium_10
 name burning collesium
-face burning_collesium.A11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -93,7 +93,7 @@ end
 More
 Object burning_collesium_11
 name burning collesium
-face burning_collesium.B11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -102,7 +102,7 @@ end
 More
 Object burning_collesium_12
 name burning collesium
-face burning_collesium.C11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -112,7 +112,7 @@ end
 More
 Object burning_collesium_13
 name burning collesium
-face burning_collesium.D11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -122,7 +122,7 @@ end
 More
 Object burning_collesium_14
 name burning collesium
-face burning_collesium.E11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
@@ -132,7 +132,7 @@ end
 More
 Object burning_collesium_15
 name burning collesium
-face burning_collesium.F11
+face burning_collesium.x11
 type 66
 no_pick 1
 visibility 100
