@@ -1,15 +1,16 @@
 arch map
+name Wanderer Inn
+difficulty 1
 region scorn
-name inn
+width 16
+height 16
+enter_x 7
+enter_y 15
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:55:35 1993
 endmsg
-width 16
-height 16
-enter_x 7
-enter_y 15
 end
 arch sea
 end
@@ -145,27 +146,27 @@ x 1
 y 7
 end
 arch button_lever
-connected 1
 x 1
 y 7
+connected 1
 end
 arch woodfloor
 x 1
 y 8
 end
 arch igate_closed_1
-connected 1
 x 1
 y 8
+connected 1
 end
 arch woodfloor
 x 1
 y 9
 end
 arch button_lever
-connected 1
 x 1
 y 9
+connected 1
 end
 arch woodfloor
 x 1
@@ -259,27 +260,27 @@ x 2
 y 10
 end
 arch button_lever
-connected 96
 x 2
 y 10
+connected 96
 end
 arch woodfloor
 x 2
 y 11
 end
 arch igate_closed_1
-connected 96
 x 2
 y 11
+connected 96
 end
 arch woodfloor
 x 2
 y 12
 end
 arch button_lever
-connected 96
 x 2
 y 12
+connected 96
 end
 arch woodfloor
 x 2
@@ -455,27 +456,27 @@ x 4
 y 7
 end
 arch button_lever
-connected 2
 x 4
 y 7
+connected 2
 end
 arch woodfloor
 x 4
 y 8
 end
 arch igate_closed_1
-connected 2
 x 4
 y 8
+connected 2
 end
 arch woodfloor
 x 4
 y 9
 end
 arch button_lever
-connected 2
 x 4
 y 9
+connected 2
 end
 arch woodfloor
 x 4
@@ -775,27 +776,27 @@ x 7
 y 7
 end
 arch button_lever
-connected 3
 x 7
 y 7
+connected 3
 end
 arch woodfloor
 x 7
 y 8
 end
 arch igate_closed_1
-connected 3
 x 7
 y 8
+connected 3
 end
 arch woodfloor
 x 7
 y 9
 end
 arch button_lever
-connected 3
 x 7
 y 9
+connected 3
 end
 arch woodfloor
 x 7
@@ -856,9 +857,9 @@ x 7
 y 15
 end
 arch door_look_1
-no_pass 0
 x 7
 y 15
+no_pass 0
 end
 arch woods_2
 x 8
@@ -959,9 +960,9 @@ x 8
 y 15
 end
 arch door_look_1
-no_pass 0
 x 8
 y 15
+no_pass 0
 end
 arch woods_2
 x 9
@@ -1109,27 +1110,27 @@ x 10
 y 7
 end
 arch button_lever
-connected 4
 x 10
 y 7
+connected 4
 end
 arch woodfloor
 x 10
 y 8
 end
 arch igate_closed_1
-connected 4
 x 10
 y 8
+connected 4
 end
 arch woodfloor
 x 10
 y 9
 end
 arch button_lever
-connected 4
 x 10
 y 9
+connected 4
 end
 arch woodfloor
 x 10
@@ -1417,54 +1418,54 @@ x 13
 y 7
 end
 arch button_lever
-connected 5
 x 13
 y 7
+connected 5
 end
 arch woodfloor
 x 13
 y 8
 end
 arch igate_closed_1
-connected 5
 x 13
 y 8
-end
-arch woodfloor
-x 13
-y 9
-end
-arch button_lever
 connected 5
+end
+arch woodfloor
 x 13
 y 9
+end
+arch button_lever
+x 13
+y 9
+connected 5
 end
 arch woodfloor
 x 13
 y 10
 end
 arch button_lever
-connected 6
 x 13
 y 10
+connected 6
 end
 arch woodfloor
 x 13
 y 11
 end
 arch igate_closed_1
-connected 6
 x 13
 y 11
+connected 6
 end
 arch woodfloor
 x 13
 y 12
 end
 arch button_lever
-connected 6
 x 13
 y 12
+connected 6
 end
 arch woodfloor
 x 13

@@ -1,13 +1,14 @@
 arch map
+name Dragon Hangar
+difficulty 1
 region stoneville
-name hangar3
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Mar 17 17:21:11 2001
 endmsg
-x 32
-y 32
 end
 arch dirtfloor
 end
@@ -952,7 +953,7 @@ y 29
 end
 arch sign
 msg
-Out of order 
+Out of order
 endmsg
 x 5
 y 29
@@ -2943,7 +2944,7 @@ end
 arch sign_e
 name Room 2
 msg
-Room 2 
+Room 2
 endmsg
 x 18
 y 18
@@ -3951,9 +3952,9 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match fix teleporter|fix the teleporter
-Ah. You're the engineer. Wait, I'll open the door for you. 
+Ah. You're the engineer. Wait, I'll open the door for you.
 @match *
-Go back to where you came from.  
+Go back to where you came from.
 endmsg
 sp 0
 maxsp 0
@@ -3982,16 +3983,16 @@ resist_counterspell 100
 resist_godpower 100
 resist_holyword 100
 resist_blind 100
-pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
+pick_up 0
 can_cast_spell 0
 can_use_armour 0
 can_use_weapon 0
 stand_still 1
 can_use_skill 0
+can_apply 0
 end
 arch dirtfloor
 x 23
@@ -4684,7 +4685,7 @@ name Dragon Dompteur
 msg
 @match *
 This is the breeding area. Only
-Dompteurs are allowed beyond this door. 
+Dompteurs are allowed beyond this door.
 endmsg
 sp 0
 maxsp 0
@@ -4713,16 +4714,16 @@ resist_counterspell 100
 resist_godpower 100
 resist_holyword 100
 resist_blind 100
-pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
+pick_up 0
 can_cast_spell 0
 can_use_armour 0
 can_use_weapon 0
 stand_still 1
 can_use_skill 0
+can_apply 0
 end
 arch dirtfloor
 x 27

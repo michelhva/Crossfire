@@ -1,13 +1,14 @@
 arch map
+name Tower Level 3
+difficulty 1
 region darcap
-name tower3
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Dec 21 18:02:05 1998
 endmsg
-x 32
-y 32
 end
 arch bwall_2_2_2
 end

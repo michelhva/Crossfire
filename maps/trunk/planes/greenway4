@@ -1,13 +1,13 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
+width 50
+height 50
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
 tile_path_1 greenway7
 tile_path_2 greenway5
 tile_path_3 greenway1
@@ -4015,15 +4015,15 @@ x 20
 y 3
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 300
 maxhp 300
 sp 60
 maxsp 60
+exp 90
+dam 9
 x 20
 y 3
+level 12
 arch spell_invisible
 end
 arch spell_summon_pet_monster
@@ -10072,6 +10072,7 @@ y 8
 end
 arch ent
 msg
+
 endmsg
 x 38
 y 45

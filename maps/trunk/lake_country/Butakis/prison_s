@@ -1,13 +1,14 @@
 arch map
+name Heavily Guarded Chamber
+difficulty 1
 region lakecountry
-name <untitled>
+width 20
+height 20
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Wed Mar 29 06:27:25 1995
 endmsg
-width 20
-height 20
 end
 arch dun8
 end
@@ -123,9 +124,9 @@ msg
 @match hailstorm|Hailstorm
 Click.
 endmsg
-connected 2
 x 1
 y 9
+connected 2
 end
 arch marble
 x 1
@@ -143,9 +144,9 @@ arch altar
 name diamond studded altar
 slaying diamond
 food 100
-connected 20
 x 1
 y 10
+connected 20
 end
 arch marble
 x 1
@@ -208,9 +209,9 @@ msg
 @match Tasury|Court|wizard|court|Wizard
 Click.
 endmsg
-connected 1
 x 1
 y 18
+connected 1
 end
 arch marble
 x 1
@@ -437,10 +438,10 @@ x 3
 y 18
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 3
 y 18
+speed 0.500000
+connected 1
 end
 arch dun2
 x 3
@@ -532,9 +533,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 4
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -557,9 +558,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 4
 y 16
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -568,9 +569,9 @@ x 4
 y 17
 end
 arch button_small
-connected 1
 x 4
 y 18
+connected 1
 end
 arch marble
 x 4
@@ -588,7 +589,7 @@ x 5
 y 1
 end
 arch teleporter
-name kar
+name Euthville
 slaying /world/world_105_113
 hp 10
 sp 18
@@ -602,9 +603,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 5
 y 2
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -619,9 +620,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 5
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -680,9 +681,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 5
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -727,9 +728,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 5
 y 18
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -751,9 +752,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 6
 y 2
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -768,16 +769,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 6
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 3
 x 6
 y 5
+connected 3
 end
 arch marble
 x 6
@@ -826,16 +827,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 6
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 16
 x 6
 y 14
+connected 16
 end
 arch marble
 x 6
@@ -850,9 +851,9 @@ msg
 @match thunderbolt|Thunderbolt
 Click.
 endmsg
-connected 2
 x 6
 y 16
+connected 2
 end
 arch marble
 x 6
@@ -860,7 +861,6 @@ y 16
 end
 arch smith
 name High Court Wizard, Tasury
-face wizard.151
 msg
 @match thunderbolt|Thunderbolt
 You have the right word. Please go to
@@ -882,6 +882,7 @@ If you don't have the permission here,
 please leave; because I will not open
 the gate for you.
 endmsg
+face wizard.151
 x 6
 y 16
 end
@@ -896,9 +897,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 6
 y 18
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -943,10 +944,10 @@ y 5
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 3
 x 7
 y 5
+speed 0.500000
+connected 3
 end
 arch marble
 x 7
@@ -970,10 +971,10 @@ y 8
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 20
 x 7
 y 8
+speed 0.500000
+connected 20
 end
 arch marble
 x 7
@@ -981,10 +982,10 @@ y 9
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 20
 x 7
 y 9
+speed 0.500000
+connected 20
 end
 arch marble
 x 7
@@ -992,10 +993,10 @@ y 10
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 20
 x 7
 y 10
+speed 0.500000
+connected 20
 end
 arch marble
 x 7
@@ -1003,10 +1004,10 @@ y 11
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 20
 x 7
 y 11
+speed 0.500000
+connected 20
 end
 arch marble
 x 7
@@ -1030,10 +1031,10 @@ y 14
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 16
 x 7
 y 14
+speed 0.500000
+connected 16
 end
 arch marble
 x 7
@@ -1075,9 +1076,9 @@ x 8
 y 1
 end
 arch button_small
-connected 4
 x 8
 y 2
+connected 4
 end
 arch marble
 x 8
@@ -1089,24 +1090,24 @@ y 3
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 4
 x 8
 y 3
+speed 0.500000
+connected 4
 end
 arch button_small
-connected 4
 x 8
 y 4
+connected 4
 end
 arch marble
 x 8
 y 4
 end
 arch button_small
+x 8
+y 5
 connected 3
-x 8
-y 5
 end
 arch marble
 x 8
@@ -1119,9 +1120,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 8
 y 6
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1139,10 +1140,10 @@ y 8
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 2
 x 8
 y 8
+speed 0.500000
+connected 2
 end
 arch marble
 x 8
@@ -1150,10 +1151,10 @@ y 9
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 2
 x 8
 y 9
+speed 0.500000
+connected 2
 end
 arch marble
 x 8
@@ -1161,10 +1162,10 @@ y 10
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 2
 x 8
 y 10
+speed 0.500000
+connected 2
 end
 arch marble
 x 8
@@ -1172,10 +1173,10 @@ y 11
 end
 arch block_door_closed
 name mechanical gate
-speed 0.500000
-connected 2
 x 8
 y 11
+speed 0.500000
+connected 2
 end
 arch marble
 x 8
@@ -1192,25 +1193,25 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 8
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
+x 8
+y 14
 connected 16
-x 8
-y 14
 end
 arch marble
 x 8
 y 14
 end
 arch button_small
-connected 15
 x 8
 y 15
+connected 15
 end
 arch marble
 x 8
@@ -1222,15 +1223,15 @@ y 16
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 15
 x 8
 y 16
+speed 0.500000
+connected 15
 end
 arch button_small
-connected 15
 x 8
 y 17
+connected 15
 end
 arch marble
 x 8
@@ -1278,9 +1279,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1295,9 +1296,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 6
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1308,43 +1309,43 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 7
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
+x 9
+y 8
 connected 2
+end
+arch marble
 x 9
 y 8
 end
-arch marble
-x 9
-y 8
-end
 arch button_small
-connected 2
 x 9
 y 9
+connected 2
 end
 arch marble
 x 9
 y 9
 end
 arch button_small
-connected 2
 x 9
 y 10
+connected 2
 end
 arch marble
 x 9
 y 10
 end
 arch button_small
-connected 2
 x 9
 y 11
+connected 2
 end
 arch marble
 x 9
@@ -1357,9 +1358,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 12
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1370,9 +1371,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1387,9 +1388,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 9
 y 15
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1433,9 +1434,9 @@ x 10
 y 1
 end
 arch button_small
-connected 5
 x 10
 y 2
+connected 5
 end
 arch marble
 x 10
@@ -1447,15 +1448,15 @@ y 3
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 5
 x 10
 y 3
+speed 0.500000
+connected 5
 end
 arch button_small
-connected 5
 x 10
 y 4
+connected 5
 end
 arch marble
 x 10
@@ -1506,9 +1507,9 @@ x 10
 y 14
 end
 arch button_small
-connected 14
 x 10
 y 15
+connected 14
 end
 arch marble
 x 10
@@ -1520,15 +1521,15 @@ y 16
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 14
 x 10
 y 16
+speed 0.500000
+connected 14
 end
 arch button_small
-connected 14
 x 10
 y 17
+connected 14
 end
 arch marble
 x 10
@@ -1576,9 +1577,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 11
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1629,9 +1630,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 11
 y 15
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1675,9 +1676,9 @@ x 12
 y 1
 end
 arch button_small
-connected 6
 x 12
 y 2
+connected 6
 end
 arch marble
 x 12
@@ -1689,15 +1690,15 @@ y 3
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 6
 x 12
 y 3
+speed 0.500000
+connected 6
 end
 arch button_small
-connected 6
 x 12
 y 4
+connected 6
 end
 arch marble
 x 12
@@ -1776,9 +1777,9 @@ x 12
 y 14
 end
 arch button_small
-connected 13
 x 12
 y 15
+connected 13
 end
 arch marble
 x 12
@@ -1790,15 +1791,15 @@ y 16
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 13
 x 12
 y 16
+speed 0.500000
+connected 13
 end
 arch button_small
-connected 13
 x 12
 y 17
+connected 13
 end
 arch marble
 x 12
@@ -1846,9 +1847,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 13
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1899,9 +1900,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 13
 y 15
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1939,25 +1940,25 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 1
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 7
 x 14
 y 2
+connected 7
 end
 arch marble
 x 14
 y 2
 end
 arch button_small
-connected 7
 x 14
 y 3
+connected 7
 end
 arch marble
 x 14
@@ -1968,9 +1969,9 @@ x 14
 y 4
 end
 arch button_small
+x 14
+y 5
 connected 8
-x 14
-y 5
 end
 arch marble
 x 14
@@ -1983,9 +1984,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 6
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -1996,16 +1997,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 7
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
+x 14
+y 8
 connected 9
-x 14
-y 8
 end
 arch marble
 x 14
@@ -2018,9 +2019,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 9
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2031,16 +2032,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 10
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
+x 14
+y 11
 connected 10
-x 14
-y 11
 end
 arch marble
 x 14
@@ -2053,9 +2054,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 12
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2066,16 +2067,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 13
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 11
 x 14
 y 14
+connected 11
 end
 arch marble
 x 14
@@ -2086,18 +2087,18 @@ x 14
 y 15
 end
 arch button_small
-connected 12
 x 14
 y 16
+connected 12
 end
 arch marble
 x 14
 y 16
 end
 arch button_small
-connected 12
 x 14
 y 17
+connected 12
 end
 arch marble
 x 14
@@ -2110,9 +2111,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 14
 y 18
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2133,10 +2134,10 @@ y 2
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 7
 x 15
 y 2
+speed 0.500000
+connected 7
 end
 arch marble
 x 15
@@ -2160,10 +2161,10 @@ y 5
 end
 arch block_door_closed
 name mechanical door
+x 15
+y 5
 speed 0.500000
 connected 8
-x 15
-y 5
 end
 arch marble
 x 15
@@ -2187,10 +2188,10 @@ y 8
 end
 arch block_door_closed
 name mechanical door
+x 15
+y 8
 speed 0.500000
 connected 9
-x 15
-y 8
 end
 arch marble
 x 15
@@ -2214,10 +2215,10 @@ y 11
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 10
 x 15
 y 11
+speed 0.500000
+connected 10
 end
 arch marble
 x 15
@@ -2241,10 +2242,10 @@ y 14
 end
 arch block_door_closed
 name mechanical door
+x 15
+y 14
 speed 0.500000
 connected 11
-x 15
-y 14
 end
 arch marble
 x 15
@@ -2268,10 +2269,10 @@ y 17
 end
 arch block_door_closed
 name mechanical door
-speed 0.500000
-connected 12
 x 15
 y 17
+speed 0.500000
+connected 12
 end
 arch dun8
 x 15
@@ -2291,16 +2292,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 1
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 7
 x 16
 y 2
+connected 7
 end
 arch marble
 x 16
@@ -2317,16 +2318,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 8
 x 16
 y 5
+connected 8
 end
 arch marble
 x 16
@@ -2343,16 +2344,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 7
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 9
 x 16
 y 8
+connected 9
 end
 arch marble
 x 16
@@ -2369,16 +2370,16 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 10
+attack_movement 4
 arch spell_small_bullet
 end
 end
 arch button_small
-connected 10
 x 16
 y 11
+connected 10
 end
 arch marble
 x 16
@@ -2393,9 +2394,9 @@ x 16
 y 13
 end
 arch button_small
-connected 11
 x 16
 y 14
+connected 11
 end
 arch marble
 x 16
@@ -2408,9 +2409,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 15
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2419,9 +2420,9 @@ x 16
 y 16
 end
 arch button_small
-connected 12
 x 16
 y 17
+connected 12
 end
 arch marble
 x 16
@@ -2434,9 +2435,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 16
 y 18
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2490,9 +2491,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 17
 y 10
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2562,9 +2563,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 18
 y 4
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2591,9 +2592,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 18
 y 7
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2620,9 +2621,9 @@ end
 arch knight
 name High Royal Guard
 hp 1000
-attack_movement 4
 x 18
 y 10
+attack_movement 4
 arch spell_small_bullet
 end
 end
@@ -2639,14 +2640,6 @@ x 18
 y 11
 end
 arch marble
-x 18
-y 12
-end
-arch teleporter
-name Navar Gatehouse
-slaying /navar_city/city1enter
-hp 2
-sp 10
 x 18
 y 12
 end

@@ -1,13 +1,13 @@
 arch map
-region brest
 name LargeRoom
+region brest
+width 29
+height 58
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jul  2 01:41:47 1994
 endmsg
-x 29
-y 58
 end
 arch dirtfloor
 y 17
@@ -1604,9 +1604,6 @@ x 6
 y 33
 end
 arch sign_e
-msg
-
-endmsg
 x 6
 y 33
 end

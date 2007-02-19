@@ -1,16 +1,16 @@
 arch map
-name xyzzy-mines
+name Old Mineshaft
+reset_timeout 7200
+difficulty 7
+width 128
+height 77
+enter_x 11
+enter_y 9
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 15:48:41 1994
 endmsg
-width 128
-height 77
-enter_x 11
-enter_y 9
-reset_timeout 7200
-difficulty 7
 end
 arch medium_stones
 end
@@ -49051,9 +49051,9 @@ x 90
 y 18
 end
 arch booze
-value 10
 x 90
 y 18
+value 10
 end
 arch medium_stones
 x 90
@@ -49622,9 +49622,9 @@ x 91
 y 17
 end
 arch booze
-value 10
 x 91
 y 17
+value 10
 end
 arch medium_stones
 x 91
@@ -50201,18 +50201,18 @@ x 92
 y 17
 end
 arch booze
-value 10
 x 92
 y 17
+value 10
 end
 arch medium_stones
 x 92
 y 18
 end
 arch booze
-value 10
 x 92
 y 18
+value 10
 end
 arch medium_stones
 x 92
@@ -50741,9 +50741,9 @@ x 93
 y 10
 end
 arch block_door_closed
-connected 96
 x 93
 y 10
+connected 96
 end
 arch medium_stones
 x 93
@@ -50798,18 +50798,18 @@ x 93
 y 17
 end
 arch booze
-value 10
 x 93
 y 17
+value 10
 end
 arch medium_stones
 x 93
 y 18
 end
 arch booze
-value 10
 x 93
 y 18
+value 10
 end
 arch medium_stones
 x 93
@@ -52538,9 +52538,9 @@ x 96
 y 18
 end
 arch booze
-value 10
 x 96
 y 18
+value 10
 end
 arch medium_stones
 x 96
@@ -53101,9 +53101,9 @@ x 97
 y 18
 end
 arch booze
-value 10
 x 97
 y 18
+value 10
 end
 arch medium_stones
 x 97
@@ -54796,9 +54796,9 @@ x 100
 y 18
 end
 arch booze
-value 10
 x 100
 y 18
+value 10
 end
 arch medium_stones
 x 100
@@ -55355,9 +55355,9 @@ x 101
 y 18
 end
 arch booze
-value 10
 x 101
 y 18
+value 10
 end
 arch medium_stones
 x 101
@@ -56500,9 +56500,9 @@ x 103
 y 18
 end
 arch booze
-value 10
 x 103
 y 18
+value 10
 end
 arch medium_stones
 x 103
@@ -57019,9 +57019,9 @@ x 104
 y 8
 end
 arch block_door_closed
-connected 96
 x 104
 y 8
+connected 96
 end
 arch medium_stones
 x 104
@@ -57682,9 +57682,9 @@ x 105
 y 18
 end
 arch booze
-value 10
 x 105
 y 18
+value 10
 end
 arch medium_stones
 x 105
@@ -59947,9 +59947,9 @@ x 109
 y 18
 end
 arch booze
-value 10
 x 109
 y 18
+value 10
 end
 arch medium_stones
 x 109

@@ -1,15 +1,17 @@
 arch map
+name Throwing Gallery
+difficulty 1
 region darcapcircus
-name strength
+shopitems bow:100;arrow:100;*:-100
+shopgreed 1.4
+shopmax 4000
+width 20
+height 16
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Thu Jan 28 17:49:34 1999
 endmsg
-x 20
-shopitems bow:100;arrow:100;*:-100
-shopgreed 1.4
-shopmax 4000
 end
 arch pstone_1
 end

@@ -1,19 +1,19 @@
 arch map
+name Darcap Potionshop
+reset_timeout 7200
+difficulty 1
 region darcap
-name potionshop
+shopitems potion:90;inorganic:40;spellbook:30;gem:30;amulet:30;ring:40;scroll:30;book:30;*:-80
+shopmax 8000
+width 18
+height 16
+enter_x 14
+enter_y 14
 msg
 Creator: bt foom
 Email: thomas@astro.psu.edu
 Date: Thu May  2 01:57:58 1996
 endmsg
-width 18
-height 16
-enter_x 14
-enter_y 14
-reset_timeout 7200
-difficulty 1
-shopitems potion:90;inorganic:40;spellbook:30;gem:30;amulet:30;ring:40;scroll:30;book:30;*:-80
-shopmax 8000
 end
 arch woodfloor
 end
@@ -1121,9 +1121,9 @@ x 14
 y 10
 end
 arch cauldron
-no_pick 1
 x 14
 y 10
+no_pick 1
 end
 arch woodfloor
 x 14

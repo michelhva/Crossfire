@@ -1,13 +1,13 @@
 arch map
-region brest
 name castle
+region brest
+width 28
+height 33
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Aug 30 20:56:43 1994
 endmsg
-x 28
-y 33
 end
 arch blocked
 end

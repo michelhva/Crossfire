@@ -1,13 +1,14 @@
 arch map
+name Apartment Building
+difficulty 1
 region scorn
-name apartments
+width 32
+height 16
 msg
 Creator: Mark Wedel
 Email: mark@pyramid.com
 Date: Wed Nov 27 00:40:42 1996
 endmsg
-width 32
-height 16
 end
 arch cobblestones2
 end
@@ -145,29 +146,29 @@ x 1
 y 7
 end
 arch afloor_right
-unique 1
 x 1
 y 8
+unique 1
 end
 arch afloor_right
-unique 1
 x 1
 y 9
+unique 1
 end
 arch check_inv
 slaying apartment2
-connected 52
 x 1
 y 9
+connected 52
 end
 arch afloor_right
 x 1
 y 10
 end
 arch igate_closed_1
-connected 52
 x 1
 y 10
+connected 52
 end
 arch magic_mouth
 msg
@@ -182,9 +183,9 @@ y 11
 end
 arch check_inv
 slaying apartment2
-connected 52
 x 1
 y 11
+connected 52
 end
 arch afloor_right
 x 1
@@ -199,14 +200,14 @@ x 1
 y 12
 end
 arch afloor_right
-unique 1
 x 1
 y 13
+unique 1
 end
 arch afloor_right
-unique 1
 x 1
 y 14
+unique 1
 end
 arch bed_save
 x 1
@@ -264,18 +265,18 @@ x 2
 y 7
 end
 arch afloor_right
-unique 1
 x 2
 y 8
+unique 1
 end
 arch bed_save
 x 2
 y 8
 end
 arch afloor_right
-unique 1
 x 2
 y 9
+unique 1
 end
 arch afloor_right
 x 2
@@ -302,34 +303,34 @@ y 11
 end
 arch check_inv
 slaying apartment3
-connected 53
 x 2
 y 11
+connected 53
 end
 arch afloor_right
 x 2
 y 12
 end
 arch igate_closed_1
-connected 53
 x 2
 y 12
+connected 53
 end
 arch afloor_right
-unique 1
 x 2
 y 13
+unique 1
 end
 arch check_inv
 slaying apartment3
-connected 53
 x 2
 y 13
+connected 53
 end
 arch afloor_right
-unique 1
 x 2
 y 14
+unique 1
 end
 arch afloor_right
 x 2
@@ -516,9 +517,9 @@ end
 arch key2
 name Key for Apartment 2
 slaying apartment2
-unique 1
 x 4
 y 8
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -529,9 +530,9 @@ x 4
 y 9
 end
 arch grate_closed_1
-connected 2
 x 4
 y 9
+connected 2
 end
 arch afloor_right
 x 4
@@ -541,10 +542,10 @@ arch altar
 name 500 gp for access to your room.
 slaying money
 food 5000
-connected 2
-unique 1
 x 4
 y 10
+connected 2
+unique 1
 end
 arch afloor_right
 x 4
@@ -558,10 +559,10 @@ arch altar
 name 500 gp for access to your room.
 slaying money
 food 5000
-connected 3
-unique 1
 x 4
 y 12
+connected 3
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -572,9 +573,9 @@ x 4
 y 13
 end
 arch grate_closed_1
-connected 3
 x 4
 y 13
+connected 3
 end
 arch afloor_right
 x 4
@@ -583,9 +584,9 @@ end
 arch key2
 name Key for Apartment 3
 slaying apartment3
-unique 1
 x 4
 y 14
+unique 1
 end
 arch afloor_right
 x 4
@@ -766,29 +767,29 @@ x 6
 y 7
 end
 arch afloor_right
-unique 1
 x 6
 y 8
+unique 1
 end
 arch afloor_right
-unique 1
 x 6
 y 9
+unique 1
 end
 arch check_inv
 slaying apartment1
-connected 51
 x 6
 y 9
+connected 51
 end
 arch afloor_right
 x 6
 y 10
 end
 arch igate_closed_1
-connected 51
 x 6
 y 10
+connected 51
 end
 arch magic_mouth
 msg
@@ -803,9 +804,9 @@ y 11
 end
 arch check_inv
 slaying apartment1
-connected 51
 x 6
 y 11
+connected 51
 end
 arch afloor_right
 x 6
@@ -820,14 +821,14 @@ x 6
 y 12
 end
 arch afloor_right
-unique 1
 x 6
 y 13
+unique 1
 end
 arch afloor_right
-unique 1
 x 6
 y 14
+unique 1
 end
 arch bed_save
 x 6
@@ -885,18 +886,18 @@ x 7
 y 7
 end
 arch afloor_right
-unique 1
 x 7
 y 8
+unique 1
 end
 arch bed_save
 x 7
 y 8
 end
 arch afloor_right
-unique 1
 x 7
 y 9
+unique 1
 end
 arch afloor_right
 x 7
@@ -923,34 +924,34 @@ y 11
 end
 arch check_inv
 slaying apartment4
-connected 54
 x 7
 y 11
+connected 54
 end
 arch afloor_right
 x 7
 y 12
 end
 arch igate_closed_1
-connected 54
 x 7
 y 12
+connected 54
 end
 arch afloor_right
-unique 1
 x 7
 y 13
+unique 1
 end
 arch check_inv
 slaying apartment4
-connected 54
 x 7
 y 13
+connected 54
 end
 arch afloor_right
-unique 1
 x 7
 y 14
+unique 1
 end
 arch afloor_right
 x 7
@@ -1137,9 +1138,9 @@ end
 arch key2
 name Key for Apartment 1
 slaying apartment1
-unique 1
 x 9
 y 8
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -1150,9 +1151,9 @@ x 9
 y 9
 end
 arch grate_closed_1
-connected 1
 x 9
 y 9
+connected 1
 end
 arch afloor_right
 x 9
@@ -1162,10 +1163,10 @@ arch altar
 name 500 gp for access to your room.
 slaying money
 food 5000
-connected 1
-unique 1
 x 9
 y 10
+connected 1
+unique 1
 end
 arch afloor_right
 x 9
@@ -1179,10 +1180,10 @@ arch altar
 name 500 gp for access to your room.
 slaying money
 food 5000
-connected 4
-unique 1
 x 9
 y 12
+connected 4
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -1193,9 +1194,9 @@ x 9
 y 13
 end
 arch grate_closed_1
-connected 4
 x 9
 y 13
+connected 4
 end
 arch afloor_right
 x 9
@@ -1204,9 +1205,9 @@ end
 arch key2
 name Key for Apartment 4
 slaying apartment4
-unique 1
 x 9
 y 14
+unique 1
 end
 arch afloor_right
 x 9
@@ -1449,9 +1450,9 @@ x 12
 y 5
 end
 arch button_small
-connected 99
 x 12
 y 6
+connected 99
 end
 arch pstone_1
 x 12
@@ -1462,15 +1463,15 @@ x 12
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 99
 x 12
 y 7
+speed 0.500000
+connected 99
 end
 arch button_small
-connected 99
 x 12
 y 8
+connected 99
 end
 arch marble
 x 12
@@ -1556,9 +1557,9 @@ x 13
 y 5
 end
 arch button_small
-connected 99
 x 13
 y 6
+connected 99
 end
 arch pstone_1
 x 13
@@ -1569,15 +1570,15 @@ x 13
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 99
 x 13
 y 7
+speed 0.500000
+connected 99
 end
 arch button_small
-connected 99
 x 13
 y 8
+connected 99
 end
 arch marble
 x 13
@@ -1883,49 +1884,49 @@ x 16
 y 7
 end
 arch afloor_right
-unique 1
 x 16
 y 8
+unique 1
 end
 arch cauldron
-no_pick 1
 x 16
 y 8
+no_pick 1
 end
 arch afloor_right
-unique 1
 x 16
 y 9
+unique 1
 end
 arch afloor_right
-unique 1
 x 16
 y 10
+unique 1
 end
 arch afloor_right
-unique 1
 x 16
 y 11
+unique 1
 end
 arch afloor_right
-unique 1
 x 16
 y 12
+unique 1
 end
 arch check_inv
 slaying apartment10
-connected 60
 x 16
 y 12
+connected 60
 end
 arch afloor_right
 x 16
 y 13
 end
 arch igate_closed_1
-connected 60
 x 16
 y 13
+connected 60
 end
 arch magic_mouth
 msg
@@ -1940,9 +1941,9 @@ y 14
 end
 arch check_inv
 slaying apartment10
-connected 60
 x 16
 y 14
+connected 60
 end
 arch afloor_right
 x 16
@@ -1996,14 +1997,14 @@ x 17
 y 7
 end
 arch afloor_right
-unique 1
 x 17
 y 8
+unique 1
 end
 arch afloor_right
-unique 1
 x 17
 y 9
+unique 1
 end
 arch afloor_right
 x 17
@@ -2109,18 +2110,18 @@ x 18
 y 7
 end
 arch afloor_right
-unique 1
 x 18
 y 8
+unique 1
 end
 arch bed_save
 x 18
 y 8
 end
 arch afloor_right
-unique 1
 x 18
 y 9
+unique 1
 end
 arch chair_2.2
 x 18
@@ -2145,9 +2146,9 @@ end
 arch key2
 name Key for Apartment 10
 slaying apartment10
-unique 1
 x 18
 y 11
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -2158,9 +2159,9 @@ x 18
 y 12
 end
 arch grate_closed_1
-connected 10
 x 18
 y 12
+connected 10
 end
 arch afloor_right
 x 18
@@ -2170,10 +2171,10 @@ arch altar
 name 2500 gp for access to your room.
 slaying money
 food 25000
-connected 10
-unique 1
 x 18
 y 13
+connected 10
+unique 1
 end
 arch afloor_right
 x 18
@@ -2358,49 +2359,49 @@ x 20
 y 7
 end
 arch afloor_right
-unique 1
 x 20
 y 8
+unique 1
 end
 arch cauldron
-no_pick 1
 x 20
 y 8
+no_pick 1
 end
 arch afloor_right
-unique 1
 x 20
 y 9
+unique 1
 end
 arch afloor_right
-unique 1
 x 20
 y 10
+unique 1
 end
 arch afloor_right
-unique 1
 x 20
 y 11
+unique 1
 end
 arch afloor_right
-unique 1
 x 20
 y 12
+unique 1
 end
 arch check_inv
 slaying apartment11
-connected 61
 x 20
 y 12
+connected 61
 end
 arch afloor_right
 x 20
 y 13
 end
 arch igate_closed_1
-connected 61
 x 20
 y 13
+connected 61
 end
 arch magic_mouth
 msg
@@ -2415,9 +2416,9 @@ y 14
 end
 arch check_inv
 slaying apartment11
-connected 61
 x 20
 y 14
+connected 61
 end
 arch afloor_right
 x 20
@@ -2471,14 +2472,14 @@ x 21
 y 7
 end
 arch afloor_right
-unique 1
 x 21
 y 8
+unique 1
 end
 arch afloor_right
-unique 1
 x 21
 y 9
+unique 1
 end
 arch afloor_right
 x 21
@@ -2584,18 +2585,18 @@ x 22
 y 7
 end
 arch afloor_right
-unique 1
 x 22
 y 8
+unique 1
 end
 arch bed_save
 x 22
 y 8
 end
 arch afloor_right
-unique 1
 x 22
 y 9
+unique 1
 end
 arch chair_2.2
 x 22
@@ -2620,9 +2621,9 @@ end
 arch key2
 name Key for Apartment 11
 slaying apartment11
-unique 1
 x 22
 y 11
+unique 1
 end
 arch dungeon_magic
 x 22
@@ -2633,9 +2634,9 @@ x 22
 y 12
 end
 arch grate_closed_1
-connected 11
 x 22
 y 12
+connected 11
 end
 arch afloor_right
 x 22
@@ -2645,10 +2646,10 @@ arch altar
 name 2500 gp for access to your room.
 slaying money
 food 25000
-connected 11
-unique 1
 x 22
 y 13
+connected 11
+unique 1
 end
 arch afloor_right
 x 22
@@ -2829,52 +2830,52 @@ x 24
 y 7
 end
 arch afloor_right
-unique 1
 x 24
 y 8
+unique 1
 end
 arch bed_save
 x 24
 y 8
 end
 arch afloor_right
-unique 1
 x 24
 y 9
+unique 1
 end
 arch bed_save
 x 24
 y 9
 end
 arch afloor_right
-unique 1
 x 24
 y 10
+unique 1
 end
 arch afloor_right
-unique 1
 x 24
 y 11
+unique 1
 end
 arch afloor_right
-unique 1
 x 24
 y 12
+unique 1
 end
 arch check_inv
 slaying apartment12
-connected 62
 x 24
 y 12
+connected 62
 end
 arch afloor_right
 x 24
 y 13
 end
 arch igate_closed_1
-connected 62
 x 24
 y 13
+connected 62
 end
 arch magic_mouth
 msg
@@ -2889,9 +2890,9 @@ y 14
 end
 arch check_inv
 slaying apartment12
-connected 62
 x 24
 y 14
+connected 62
 end
 arch afloor_right
 x 24
@@ -2945,37 +2946,37 @@ x 25
 y 7
 end
 arch afloor_right
-unique 1
 x 25
 y 8
+unique 1
 end
 arch bed_save
 x 25
 y 8
 end
 arch afloor_right
-unique 1
 x 25
 y 9
+unique 1
 end
 arch afloor_right
-unique 1
 x 25
 y 10
+unique 1
 end
 arch afloor_right
-unique 1
 x 25
 y 11
+unique 1
 end
 arch table_4
 x 25
 y 11
 end
 arch afloor_right
-unique 1
 x 25
 y 12
+unique 1
 end
 arch table_4
 x 25
@@ -3049,37 +3050,37 @@ x 26
 y 7
 end
 arch afloor_right
-unique 1
 x 26
 y 8
+unique 1
 end
 arch bed_save
 x 26
 y 8
 end
 arch afloor_right
-unique 1
 x 26
 y 9
+unique 1
 end
 arch afloor_right
-unique 1
 x 26
 y 10
+unique 1
 end
 arch afloor_right
-unique 1
 x 26
 y 11
+unique 1
 end
 arch chair_3.2
 x 26
 y 11
 end
 arch afloor_right
-unique 1
 x 26
 y 12
+unique 1
 end
 arch chair_3.2
 x 26
@@ -3153,18 +3154,18 @@ x 27
 y 7
 end
 arch afloor_right
-unique 1
 x 27
 y 8
+unique 1
 end
 arch bed_save
 x 27
 y 8
 end
 arch afloor_right
-unique 1
 x 27
 y 9
+unique 1
 end
 arch afloor_right
 x 27
@@ -3270,24 +3271,24 @@ x 28
 y 7
 end
 arch afloor_right
-unique 1
 x 28
 y 8
+unique 1
 end
 arch cauldron
-no_pick 1
 x 28
 y 8
+no_pick 1
 end
 arch afloor_right
-unique 1
 x 28
 y 9
+unique 1
 end
 arch cauldron
-no_pick 1
 x 28
 y 9
+no_pick 1
 end
 arch afloor_right
 x 28
@@ -3304,9 +3305,9 @@ end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch afloor_right
 x 28
@@ -3315,37 +3316,37 @@ end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch key2
 name Key for Suite 1
 slaying apartment12
-unique 1
 x 28
 y 11
+unique 1
 end
 arch dungeon_magic
 x 28
@@ -3356,9 +3357,9 @@ x 28
 y 12
 end
 arch grate_closed_1
-connected 12
 x 28
 y 12
+connected 12
 end
 arch afloor_right
 x 28
@@ -3368,10 +3369,10 @@ arch altar
 name 3000 gp for group sharing room.
 slaying money
 food 30000
-connected 12
-unique 1
 x 28
 y 13
+connected 12
+unique 1
 end
 arch afloor_right
 x 28

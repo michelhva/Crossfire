@@ -1,16 +1,17 @@
 arch map
-name church
+name Undead Church
+difficulty 1
 region scorn
+darkness 4
+width 16
+height 16
+enter_x 10
+enter_y 15
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:46:59 1993
 endmsg
-width 16
-height 16
-enter_x 10
-enter_y 15
-darkness 4
 end
 arch grass
 end
@@ -403,6 +404,7 @@ x 3
 y 13
 end
 arch hole
+slaying /!
 msg
 layoutstyle onion
 floorstyle lightdirt
@@ -416,7 +418,6 @@ dungeon_depth 5
 orientation 1
 final_map /scorn/peterm/undead_quest
 endmsg
-slaying /!
 x 3
 y 14
 end
@@ -1459,10 +1460,10 @@ x 13
 y 3
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 13
 y 3
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 13
@@ -1575,10 +1576,10 @@ x 14
 y 3
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 14
 y 3
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 14

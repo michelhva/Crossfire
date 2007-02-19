@@ -2173,8 +2173,7 @@ y 8
 elevation 118
 end
 arch shrine
-name Ixalovh shrine
-name_pl Ixalovh shrine
+name Shrine of Ixalovh
 slaying /scorn/temples/ixalovh
 hp 6
 sp 13
@@ -7584,9 +7583,9 @@ elevation 8451
 end
 arch minihouse
 name Jacob's Lighting Emporium
-name_pl Jacob's Lighting Emporium
 slaying /scorn/shops/light_shop
-sp 13
+hp 1
+sp 12
 x 17
 y 39
 end
@@ -7599,7 +7598,7 @@ x 17
 y 40
 elevation 8762
 end
-arch swall_1_1
+arch swall_2_2_2
 x 17
 y 40
 end
@@ -8873,7 +8872,7 @@ x 20
 y 40
 elevation 7349
 end
-arch swall_1_4
+arch swall_2_1_2
 x 20
 y 40
 end
@@ -16563,8 +16562,7 @@ x 13
 y 20
 end
 arch store_magic
-name House of Mana
-name_pl House of Mana
+name House of Power
 slaying /scorn/misc/PowerHouse
 hp 10
 sp 33

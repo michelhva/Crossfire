@@ -1,5 +1,5 @@
 arch map
-name castle_aaaarg
+name Castle of Aaaarg
 reset_timeout 7200
 difficulty 9
 width 57
@@ -7614,19 +7614,11 @@ arch flagstone
 x 21
 y 27
 end
-arch giant
-x 21
-y 27
-end
 arch flagstone
 x 21
 y 28
 end
 arch flagstone
-x 21
-y 29
-end
-arch giant
 x 21
 y 29
 end
@@ -7638,19 +7630,11 @@ arch flagstone
 x 21
 y 31
 end
-arch giant
-x 21
-y 31
-end
 arch flagstone
 x 21
 y 32
 end
 arch flagstone
-x 21
-y 33
-end
-arch giant
 x 21
 y 33
 end
@@ -7662,19 +7646,11 @@ arch flagstone
 x 21
 y 35
 end
-arch giant
-x 21
-y 35
-end
 arch flagstone
 x 21
 y 36
 end
 arch flagstone
-x 21
-y 37
-end
-arch giant
 x 21
 y 37
 end
@@ -7686,19 +7662,11 @@ arch flagstone
 x 21
 y 39
 end
-arch giant
-x 21
-y 39
-end
 arch flagstone
 x 21
 y 40
 end
 arch flagstone
-x 21
-y 41
-end
-arch giant
 x 21
 y 41
 end
@@ -7957,19 +7925,11 @@ arch flagstone
 x 22
 y 28
 end
-arch giant
-x 22
-y 28
-end
 arch flagstone
 x 22
 y 29
 end
 arch flagstone
-x 22
-y 30
-end
-arch giant
 x 22
 y 30
 end
@@ -7981,10 +7941,6 @@ arch flagstone
 x 22
 y 32
 end
-arch giant
-x 22
-y 32
-end
 arch flagstone
 x 22
 y 33
@@ -7993,19 +7949,11 @@ arch flagstone
 x 22
 y 34
 end
-arch giant
-x 22
-y 34
-end
 arch flagstone
 x 22
 y 35
 end
 arch flagstone
-x 22
-y 36
-end
-arch giant
 x 22
 y 36
 end
@@ -8340,19 +8288,11 @@ arch flagstone
 x 23
 y 29
 end
-arch giant
-x 23
-y 29
-end
 arch flagstone
 x 23
 y 30
 end
 arch flagstone
-x 23
-y 31
-end
-arch giant
 x 23
 y 31
 end
@@ -8364,19 +8304,11 @@ arch flagstone
 x 23
 y 33
 end
-arch giant
-x 23
-y 33
-end
 arch flagstone
 x 23
 y 34
 end
 arch flagstone
-x 23
-y 35
-end
-arch giant
 x 23
 y 35
 end
@@ -8388,10 +8320,6 @@ arch flagstone
 x 23
 y 37
 end
-arch giant
-x 23
-y 37
-end
 arch flagstone
 x 23
 y 38
@@ -8400,19 +8328,11 @@ arch flagstone
 x 23
 y 39
 end
-arch giant
-x 23
-y 39
-end
 arch flagstone
 x 23
 y 40
 end
 arch flagstone
-x 23
-y 41
-end
-arch giant
 x 23
 y 41
 end
@@ -8611,10 +8531,6 @@ arch flagstone
 x 24
 y 23
 end
-arch dragon
-x 24
-y 23
-end
 arch flagstone
 x 24
 y 24
@@ -8660,10 +8576,6 @@ x 24
 y 29
 end
 arch flagstone
-x 24
-y 30
-end
-arch giant
 x 24
 y 30
 end
@@ -9027,10 +8939,6 @@ x 25
 y 21
 end
 arch flagstone
-x 25
-y 22
-end
-arch dragon
 x 25
 y 22
 end
@@ -9102,19 +9010,11 @@ arch flagstone
 x 25
 y 32
 end
-arch giant
-x 25
-y 32
-end
 arch flagstone
 x 25
 y 33
 end
 arch flagstone
-x 25
-y 34
-end
-arch giant
 x 25
 y 34
 end
@@ -9373,10 +9273,6 @@ arch flagstone
 x 26
 y 21
 end
-arch dragon
-x 26
-y 21
-end
 arch flagstone
 x 26
 y 22
@@ -9385,23 +9281,11 @@ arch flagstone
 x 26
 y 23
 end
-arch dragon
-x 26
-y 23
-end
 arch flagstone
 x 26
 y 24
 end
-arch dragon
-x 26
-y 24
-end
 arch flagstone
-x 26
-y 25
-end
-arch dragon
 x 26
 y 25
 end
@@ -9896,19 +9780,11 @@ arch flagstone
 x 27
 y 38
 end
-arch giant
-x 27
-y 38
-end
 arch flagstone
 x 27
 y 39
 end
 arch flagstone
-x 27
-y 40
-end
-arch giant
 x 27
 y 40
 end
@@ -10215,15 +10091,7 @@ arch flagstone
 x 28
 y 26
 end
-arch dragon
-x 28
-y 26
-end
 arch flagstone
-x 28
-y 27
-end
-arch dragon
 x 28
 y 27
 end
@@ -10312,10 +10180,6 @@ x 28
 y 39
 end
 arch flagstone
-x 28
-y 40
-end
-arch dragon
 x 28
 y 40
 end
@@ -10682,15 +10546,7 @@ arch flagstone
 x 29
 y 41
 end
-arch dragon
-x 29
-y 41
-end
 arch flagstone
-x 29
-y 42
-end
-arch dragon
 x 29
 y 42
 end
@@ -11464,15 +11320,7 @@ arch flagstone
 x 31
 y 43
 end
-arch dragon
-x 31
-y 43
-end
 arch flagstone
-x 31
-y 44
-end
-arch dragon
 x 31
 y 44
 end
@@ -11966,10 +11814,6 @@ arch flagstone
 x 33
 y 4
 end
-arch giant
-x 33
-y 4
-end
 arch flagstone
 x 33
 y 5
@@ -11979,10 +11823,6 @@ x 33
 y 6
 end
 arch flagstone
-x 33
-y 7
-end
-arch giant
 x 33
 y 7
 end
@@ -12234,15 +12074,7 @@ arch flagstone
 x 33
 y 45
 end
-arch dragon
-x 33
-y 45
-end
 arch flagstone
-x 33
-y 46
-end
-arch dragon
 x 33
 y 46
 end
@@ -12337,10 +12169,6 @@ arch flagstone
 x 34
 y 5
 end
-arch giant
-x 34
-y 5
-end
 arch flagstone
 x 34
 y 6
@@ -12354,10 +12182,6 @@ x 34
 y 8
 end
 arch flagstone
-x 34
-y 9
-end
-arch giant
 x 34
 y 9
 end
@@ -12973,10 +12797,6 @@ x 35
 y 47
 end
 arch flagstone
-x 35
-y 48
-end
-arch giant
 x 35
 y 48
 end
@@ -13376,10 +13196,6 @@ x 36
 y 47
 end
 arch flagstone
-x 36
-y 48
-end
-arch giant
 x 36
 y 48
 end
@@ -14508,10 +14324,6 @@ arch flagstone
 x 39
 y 51
 end
-arch giant
-x 39
-y 51
-end
 arch flagstone
 x 39
 y 52
@@ -14628,10 +14440,6 @@ x 40
 y 13
 end
 arch flagstone
-x 40
-y 14
-end
-arch dread
 x 40
 y 14
 end
@@ -16207,15 +16015,7 @@ arch flagstone
 x 44
 y 27
 end
-arch dragon
-x 44
-y 27
-end
 arch flagstone
-x 44
-y 28
-end
-arch dragon
 x 44
 y 28
 end
@@ -16898,10 +16698,6 @@ x 46
 y 26
 end
 arch flagstone
-x 46
-y 27
-end
-arch dragon
 x 46
 y 27
 end
@@ -17236,23 +17032,11 @@ arch flagstone
 x 47
 y 24
 end
-arch dragon
-x 47
-y 24
-end
 arch flagstone
 x 47
 y 25
 end
-arch dragon
-x 47
-y 25
-end
 arch flagstone
-x 47
-y 26
-end
-arch dragon
 x 47
 y 26
 end
@@ -17935,10 +17719,6 @@ x 49
 y 26
 end
 arch flagstone
-x 49
-y 27
-end
-arch dragon
 x 49
 y 27
 end
@@ -18257,10 +18037,6 @@ arch flagstone
 x 50
 y 22
 end
-arch dragon
-x 50
-y 22
-end
 arch flagstone
 x 50
 y 23
@@ -18273,15 +18049,7 @@ arch flagstone
 x 50
 y 25
 end
-arch dragon
-x 50
-y 25
-end
 arch flagstone
-x 50
-y 26
-end
-arch dragon
 x 50
 y 26
 end
@@ -18600,10 +18368,6 @@ arch flagstone
 x 51
 y 21
 end
-arch dragon
-x 51
-y 21
-end
 arch flagstone
 x 51
 y 22
@@ -18927,10 +18691,6 @@ arch flagstone
 x 52
 y 20
 end
-arch dragon
-x 52
-y 20
-end
 arch flagstone
 x 52
 y 21
@@ -18944,10 +18704,6 @@ x 52
 y 23
 end
 arch flagstone
-x 52
-y 24
-end
-arch dragon
 x 52
 y 24
 end
@@ -20624,4 +20380,248 @@ end
 arch bwall_2_2_4
 x 56
 y 56
+end
+arch giant
+x 21
+y 27
+end
+arch giant
+x 21
+y 29
+end
+arch giant
+x 21
+y 31
+end
+arch giant
+x 21
+y 33
+end
+arch giant
+x 21
+y 35
+end
+arch giant
+x 21
+y 37
+end
+arch giant
+x 21
+y 39
+end
+arch giant
+x 21
+y 41
+end
+arch giant
+x 22
+y 28
+end
+arch giant
+x 22
+y 30
+end
+arch giant
+x 22
+y 32
+end
+arch giant
+x 22
+y 34
+end
+arch giant
+x 22
+y 36
+end
+arch giant
+x 23
+y 29
+end
+arch giant
+x 23
+y 31
+end
+arch giant
+x 23
+y 33
+end
+arch giant
+x 23
+y 35
+end
+arch giant
+x 23
+y 37
+end
+arch giant
+x 23
+y 39
+end
+arch giant
+x 23
+y 41
+end
+arch dragon
+x 24
+y 23
+end
+arch giant
+x 24
+y 30
+end
+arch dragon
+x 25
+y 22
+end
+arch giant
+x 25
+y 32
+end
+arch giant
+x 25
+y 34
+end
+arch dragon
+x 26
+y 21
+end
+arch dragon
+x 26
+y 23
+end
+arch dragon
+x 26
+y 24
+end
+arch dragon
+x 26
+y 25
+end
+arch giant
+x 27
+y 38
+end
+arch giant
+x 27
+y 40
+end
+arch dragon
+x 28
+y 26
+end
+arch dragon
+x 28
+y 27
+end
+arch dragon
+x 28
+y 40
+end
+arch dragon
+x 29
+y 41
+end
+arch dragon
+x 29
+y 42
+end
+arch dragon
+x 31
+y 43
+end
+arch dragon
+x 31
+y 44
+end
+arch giant
+x 33
+y 4
+end
+arch giant
+x 33
+y 7
+end
+arch dragon
+x 33
+y 45
+end
+arch dragon
+x 33
+y 46
+end
+arch giant
+x 34
+y 5
+end
+arch giant
+x 34
+y 9
+end
+arch giant
+x 35
+y 48
+end
+arch giant
+x 36
+y 48
+end
+arch giant
+x 39
+y 51
+end
+arch dread
+x 40
+y 14
+end
+arch dragon
+x 44
+y 27
+end
+arch dragon
+x 44
+y 28
+end
+arch dragon
+x 46
+y 27
+end
+arch dragon
+x 47
+y 24
+end
+arch dragon
+x 47
+y 25
+end
+arch dragon
+x 47
+y 26
+end
+arch dragon
+x 49
+y 27
+end
+arch dragon
+x 50
+y 22
+end
+arch dragon
+x 50
+y 25
+end
+arch dragon
+x 50
+y 26
+end
+arch dragon
+x 51
+y 21
+end
+arch dragon
+x 52
+y 20
+end
+arch dragon
+x 52
+y 24
 end

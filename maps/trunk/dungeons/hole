@@ -1,5 +1,11 @@
 arch map
-name hole
+name Hole
+reset_timeout 7200
+difficulty 5
+width 36
+height 36
+enter_x 19
+enter_y 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -7,12 +13,6 @@ Date: Tue Feb 15 03:01:36 1994
 Updated by Mark Wedel
 (master@rahul.net)
 endmsg
-width 36
-height 36
-enter_x 19
-enter_y 17
-reset_timeout 7200
-difficulty 5
 end
 arch cobblestones
 end
@@ -6904,72 +6904,72 @@ x 28
 y 13
 end
 arch ant
-speed_left -0.180000
 x 28
 y 13
+speed_left -0.180000
 end
 arch grass
 x 28
 y 14
 end
 arch ant
-speed_left -0.180000
 x 28
 y 14
+speed_left -0.180000
 end
 arch grass
 x 28
 y 15
 end
 arch ant
-speed_left -0.180000
 x 28
 y 15
+speed_left -0.180000
 end
 arch grass
 x 28
 y 16
 end
 arch ant
-speed_left -0.180000
 x 28
 y 16
+speed_left -0.180000
 end
 arch grass
 x 28
 y 17
 end
 arch ant
-speed_left -0.180000
 x 28
 y 17
+speed_left -0.180000
 end
 arch grass
 x 28
 y 18
 end
 arch ant
-speed_left -0.180000
 x 28
 y 18
+speed_left -0.180000
 end
 arch grass
 x 28
 y 19
 end
 arch ant
-speed_left -0.180000
 x 28
 y 19
+speed_left -0.180000
 end
 arch grass
 x 28
 y 20
 end
 arch ant
-speed_left -0.180000
 x 28
 y 20
+speed_left -0.180000
 end
 arch grass
 x 28
@@ -7122,9 +7122,9 @@ x 29
 y 13
 end
 arch ant
-speed_left -0.180000
 x 29
 y 13
+speed_left -0.180000
 end
 arch grass
 x 29
@@ -7135,36 +7135,36 @@ x 29
 y 15
 end
 arch ant
-speed_left -0.180000
 x 29
 y 15
+speed_left -0.180000
 end
 arch grass
 x 29
 y 16
 end
 arch ant
-speed_left -0.180000
 x 29
 y 16
+speed_left -0.180000
 end
 arch grass
 x 29
 y 17
 end
 arch ant
-speed_left -0.180000
 x 29
 y 17
+speed_left -0.180000
 end
 arch grass
 x 29
 y 18
 end
 arch ant
-speed_left -0.180000
 x 29
 y 18
+speed_left -0.180000
 end
 arch grass
 x 29
@@ -7175,9 +7175,9 @@ x 29
 y 20
 end
 arch ant
-speed_left -0.180000
 x 29
 y 20
+speed_left -0.180000
 end
 arch grass
 x 29
@@ -7327,27 +7327,27 @@ x 30
 y 13
 end
 arch ant
-speed_left -0.180000
 x 30
 y 13
+speed_left -0.180000
 end
 arch grass
 x 30
 y 14
 end
 arch ant
-speed_left -0.180000
 x 30
 y 14
+speed_left -0.180000
 end
 arch grass
 x 30
 y 15
 end
 arch ant
-speed_left -0.180000
 x 30
 y 15
+speed_left -0.180000
 end
 arch grass
 x 30
@@ -7358,36 +7358,36 @@ x 30
 y 17
 end
 arch ant
-speed_left -0.180000
 x 30
 y 17
+speed_left -0.180000
 end
 arch grass
 x 30
 y 18
 end
 arch ant
-speed_left -0.180000
 x 30
 y 18
+speed_left -0.180000
 end
 arch grass
 x 30
 y 19
 end
 arch ant
-speed_left -0.180000
 x 30
 y 19
+speed_left -0.180000
 end
 arch grass
 x 30
 y 20
 end
 arch ant
-speed_left -0.180000
 x 30
 y 20
+speed_left -0.180000
 end
 arch grass
 x 30
@@ -7553,72 +7553,72 @@ x 31
 y 13
 end
 arch ant
-speed_left -0.180000
 x 31
 y 13
+speed_left -0.180000
 end
 arch grass
 x 31
 y 14
 end
 arch generate_ant
-speed_left -0.340000
 x 31
 y 14
+speed_left -0.340000
 end
 arch grass
 x 31
 y 15
 end
 arch ant
-speed_left -0.180000
 x 31
 y 15
+speed_left -0.180000
 end
 arch grass
 x 31
 y 16
 end
 arch ant
-speed_left -0.180000
 x 31
 y 16
+speed_left -0.180000
 end
 arch grass
 x 31
 y 17
 end
 arch ant
-speed_left -0.180000
 x 31
 y 17
+speed_left -0.180000
 end
 arch grass
 x 31
 y 18
 end
 arch ant
-speed_left -0.180000
 x 31
 y 18
+speed_left -0.180000
 end
 arch grass
 x 31
 y 19
 end
 arch generate_ant
-speed_left -0.340000
 x 31
 y 19
+speed_left -0.340000
 end
 arch grass
 x 31
 y 20
 end
 arch ant
-speed_left -0.180000
 x 31
 y 20
+speed_left -0.180000
 end
 arch grass
 x 31
@@ -7645,9 +7645,9 @@ x 31
 y 24
 end
 arch generate_bee
-speed_left -0.260000
 x 31
 y 24
+speed_left -0.260000
 end
 arch grass
 x 31
@@ -7765,9 +7765,9 @@ x 32
 y 9
 end
 arch generate_bee
-speed_left -0.260000
 x 32
 y 9
+speed_left -0.260000
 end
 arch grass
 x 32
@@ -7790,72 +7790,72 @@ x 32
 y 13
 end
 arch ant
-speed_left -0.180000
 x 32
 y 13
+speed_left -0.180000
 end
 arch grass
 x 32
 y 14
 end
 arch ant
-speed_left -0.180000
 x 32
 y 14
+speed_left -0.180000
 end
 arch grass
 x 32
 y 15
 end
 arch ant
-speed_left -0.180000
 x 32
 y 15
+speed_left -0.180000
 end
 arch grass
 x 32
 y 16
 end
 arch ant
-speed_left -0.180000
 x 32
 y 16
+speed_left -0.180000
 end
 arch grass
 x 32
 y 17
 end
 arch ant
-speed_left -0.180000
 x 32
 y 17
+speed_left -0.180000
 end
 arch grass
 x 32
 y 18
 end
 arch ant
-speed_left -0.180000
 x 32
 y 18
+speed_left -0.180000
 end
 arch grass
 x 32
 y 19
 end
 arch ant
-speed_left -0.180000
 x 32
 y 19
+speed_left -0.180000
 end
 arch grass
 x 32
 y 20
 end
 arch ant
-speed_left -0.180000
 x 32
 y 20
+speed_left -0.180000
 end
 arch grass
 x 32
@@ -8032,18 +8032,18 @@ x 33
 y 13
 end
 arch ant
-speed_left -0.180000
 x 33
 y 13
+speed_left -0.180000
 end
 arch grass
 x 33
 y 14
 end
 arch ant
-speed_left -0.180000
 x 33
 y 14
+speed_left -0.180000
 end
 arch grass
 x 33
@@ -8054,27 +8054,27 @@ x 33
 y 16
 end
 arch ant
-speed_left -0.180000
 x 33
 y 16
+speed_left -0.180000
 end
 arch grass
 x 33
 y 17
 end
 arch ant
-speed_left -0.180000
 x 33
 y 17
+speed_left -0.180000
 end
 arch grass
 x 33
 y 18
 end
 arch ant
-speed_left -0.180000
 x 33
 y 18
+speed_left -0.180000
 end
 arch grass
 x 33
@@ -8085,9 +8085,9 @@ x 33
 y 20
 end
 arch ant
-speed_left -0.180000
 x 33
 y 20
+speed_left -0.180000
 end
 arch grass
 x 33
@@ -8236,72 +8236,72 @@ x 34
 y 13
 end
 arch ant
-speed_left -0.180000
 x 34
 y 13
+speed_left -0.180000
 end
 arch grass
 x 34
 y 14
 end
 arch ant
-speed_left -0.180000
 x 34
 y 14
+speed_left -0.180000
 end
 arch grass
 x 34
 y 15
 end
 arch ant
-speed_left -0.180000
 x 34
 y 15
+speed_left -0.180000
 end
 arch grass
 x 34
 y 16
 end
 arch ant
-speed_left -0.180000
 x 34
 y 16
+speed_left -0.180000
 end
 arch grass
 x 34
 y 17
 end
 arch ant
-speed_left -0.180000
 x 34
 y 17
+speed_left -0.180000
 end
 arch grass
 x 34
 y 18
 end
 arch ant
-speed_left -0.180000
 x 34
 y 18
+speed_left -0.180000
 end
 arch grass
 x 34
 y 19
 end
 arch ant
-speed_left -0.180000
 x 34
 y 19
+speed_left -0.180000
 end
 arch grass
 x 34
 y 20
 end
 arch ant
-speed_left -0.180000
 x 34
 y 20
+speed_left -0.180000
 end
 arch grass
 x 34

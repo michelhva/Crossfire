@@ -1,13 +1,13 @@
 arch map
-region brest
 name palace1
+region brest
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Sep 20 12:04:51 1994
 endmsg
-x 17
-y 17
 end
 arch dungeon_magic
 end
@@ -281,11 +281,11 @@ arch wwall_2_1_2
 x 1
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 15
 end
@@ -1282,9 +1282,9 @@ arch magic_mouth
 msg
 
 A deep voice says: This is the story
-that should bring you closer to the 
+that should bring you closer to the
 treasure that hides above.
- ---
+---
 Right beside you is the key that leads
 into the first of the nine gates of
 hell. Pass through all nine and you
@@ -2498,11 +2498,11 @@ arch wwall_2_1_2
 x 15
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 15
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 15
 y 15
 end

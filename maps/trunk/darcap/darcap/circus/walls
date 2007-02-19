@@ -1,12 +1,14 @@
 arch map
+name Walls
+difficulty 1
 region darcapcircus
+width 7
+height 7
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 28 19:08:32 1999
 endmsg
-x 7
-y 7
 end
 arch woodwall_2_2_2
 end

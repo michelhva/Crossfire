@@ -1,12 +1,12 @@
 arch map
-region scorn
 name Oled's Cafe
+region scorn
+width 10
+height 10
 msg
 Creator: CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 10
-height 10
 end
 arch woodfloor
 end
@@ -79,9 +79,9 @@ end
 arch food_table
 name Coffee 5 silver
 slaying silvercoin
-food 5
 other_arch coffee
 sp 1
+food 5
 x 1
 y 1
 end
@@ -260,27 +260,27 @@ x 4
 y 1
 end
 arch longtable_1_1
-no_pass 1
 x 4
 y 1
+no_pass 1
 end
 arch woodfloor
 x 4
 y 2
 end
 arch longtable_2_1_1
-no_pass 1
 x 4
 y 2
+no_pass 1
 end
 arch woodfloor
 x 4
 y 3
 end
 arch longtable_2_2_1
-no_pass 1
 x 4
 y 3
+no_pass 1
 end
 arch woodfloor
 x 4
@@ -352,9 +352,9 @@ x 5
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 5
 y 3
+no_pass 1
 end
 arch woodfloor
 x 5
@@ -407,9 +407,9 @@ x 6
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 6
 y 3
+no_pass 1
 end
 arch woodfloor
 x 6
@@ -470,9 +470,9 @@ x 7
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 7
 y 3
+no_pass 1
 end
 arch woodfloor
 x 7
@@ -537,9 +537,9 @@ x 8
 y 3
 end
 arch longtable_1_3
-no_pass 1
 x 8
 y 3
+no_pass 1
 end
 arch woodfloor
 x 8

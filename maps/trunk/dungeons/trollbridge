@@ -1,14 +1,14 @@
 arch map
+name Trollbridge
+difficulty 8
 region scorn
-name trollbridge
+width 30
+height 15
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/14/2003
 endmsg
-width 30
-height 15
-difficulty 8
 outdoor 1
 end
 arch sea
@@ -165,18 +165,18 @@ end
 arch teleporter
 hp 3
 sp 3
-connected 1
-speed 0.0
 x 1
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 3
 sp 3
-connected 1
-speed 0.0
 x 1
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 1
@@ -240,18 +240,18 @@ end
 arch teleporter
 hp 3
 sp 3
-connected 1
-speed 0.0
 x 2
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 3
 sp 3
-connected 1
-speed 0.0
 x 2
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 2
@@ -382,18 +382,18 @@ end
 arch teleporter
 hp 25
 sp 7
-connected 1
-speed 0.0
 x 4
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 25
 sp 7
-connected 1
-speed 0.0
 x 4
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 4
@@ -457,18 +457,18 @@ end
 arch teleporter
 hp 25
 sp 7
-connected 1
-speed 0.0
 x 5
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 25
 sp 7
-connected 1
-speed 0.0
 x 5
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 5
@@ -486,60 +486,60 @@ x 6
 y 1
 end
 arch button_small
+x 6
+y 2
 invisible 1
 connected 1
+end
+arch woodfloor
 x 6
 y 2
 end
-arch woodfloor
-x 6
-y 2
-end
 arch button_small
-invisible 1
-connected 1
 x 6
 y 3
+invisible 1
+connected 1
 end
 arch woodfloor
 x 6
 y 3
 end
 arch button_small
+x 6
+y 4
 invisible 1
 connected 1
+end
+arch woodfloor
 x 6
 y 4
 end
-arch woodfloor
-x 6
-y 4
-end
 arch button_small
-invisible 1
-connected 1
 x 6
 y 5
+invisible 1
+connected 1
 end
 arch woodfloor
 x 6
 y 5
 end
 arch button_small
-invisible 1
-connected 1
 x 6
 y 6
+invisible 1
+connected 1
 end
 arch woodfloor
 x 6
 y 6
 end
 arch button_small
-invisible 1
-connected 1
 x 6
 y 7
+invisible 1
+connected 1
 end
 arch woodfloor
 x 6
@@ -635,18 +635,18 @@ end
 arch teleporter
 hp 25
 sp 3
-connected 1
-speed 0.0
 x 7
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 25
 sp 3
-connected 1
-speed 0.0
 x 7
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 7
@@ -710,18 +710,18 @@ end
 arch teleporter
 hp 25
 sp 3
-connected 1
-speed 0.0
 x 8
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 25
 sp 3
-connected 1
-speed 0.0
 x 8
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 8
@@ -852,18 +852,18 @@ end
 arch teleporter
 hp 2
 sp 7
-connected 1
-speed 0.0
 x 10
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 2
 sp 7
-connected 1
-speed 0.0
 x 10
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 10
@@ -927,18 +927,18 @@ end
 arch teleporter
 hp 2
 sp 7
-connected 1
-speed 0.0
 x 11
 y 11
+speed 0.0
+connected 1
 end
 arch teleporter
 hp 2
 sp 7
-connected 1
-speed 0.0
 x 11
 y 12
+speed 0.0
+connected 1
 end
 arch blocked
 x 11
@@ -1069,10 +1069,10 @@ end
 arch teleporter
 hp 13
 sp 7
-connected 5
-speed 0.0
 x 13
 y 11
+speed 0.0
+connected 5
 end
 arch chest
 hp 4
@@ -1083,15 +1083,15 @@ end
 arch teleporter
 hp 14
 sp 6
-connected 3
-speed 0.0
 x 13
 y 12
+speed 0.0
+connected 3
 end
 arch button_handle
-connected 5
 x 13
 y 12
+connected 5
 end
 arch sea
 x 14
@@ -1125,10 +1125,10 @@ x 14
 y 6
 end
 arch button_small
-invisible 1
-connected 3
 x 14
 y 7
+invisible 1
+connected 3
 end
 arch woodfloor
 x 14
@@ -1157,10 +1157,10 @@ end
 arch teleporter
 hp 15
 sp 7
-connected 5
-speed 0.0
 x 14
 y 11
+speed 0.0
+connected 5
 end
 arch chest
 hp 5
@@ -1226,10 +1226,10 @@ end
 arch teleporter
 hp 13
 sp 7
-connected 5
-speed 0.0
 x 15
 y 11
+speed 0.0
+connected 5
 end
 arch random_wealth
 x 15
@@ -1293,10 +1293,10 @@ end
 arch teleporter
 hp 15
 sp 7
-connected 5
-speed 0.0
 x 16
 y 11
+speed 0.0
+connected 5
 end
 arch random_wealth
 x 16
@@ -1593,60 +1593,60 @@ x 22
 y 1
 end
 arch button_small
+x 22
+y 2
 invisible 1
 connected 1
+end
+arch woodfloor
 x 22
 y 2
 end
-arch woodfloor
-x 22
-y 2
-end
 arch button_small
-invisible 1
-connected 1
 x 22
 y 3
+invisible 1
+connected 1
 end
 arch woodfloor
 x 22
 y 3
 end
 arch button_small
+x 22
+y 4
 invisible 1
 connected 1
+end
+arch woodfloor
 x 22
 y 4
 end
-arch woodfloor
-x 22
-y 4
-end
 arch button_small
-invisible 1
-connected 1
 x 22
 y 5
+invisible 1
+connected 1
 end
 arch woodfloor
 x 22
 y 5
 end
 arch button_small
-invisible 1
-connected 1
 x 22
 y 6
+invisible 1
+connected 1
 end
 arch woodfloor
 x 22
 y 6
 end
 arch button_small
-invisible 1
-connected 1
 x 22
 y 7
+invisible 1
+connected 1
 end
 arch woodfloor
 x 22

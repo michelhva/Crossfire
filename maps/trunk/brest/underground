@@ -1,8 +1,8 @@
 arch map
-region brest
-name underground
+name Underground, Level 1
 reset_timeout 7200
 difficulty 12
+region brest
 width 48
 height 66
 enter_x 1
@@ -799,9 +799,9 @@ connected 1
 end
 arch magic_mouth
 msg
-     Ah! Ah! Ah!
-   U've now entered
- ENSTB's underground!
+Ah! Ah! Ah!
+U've now entered
+ENSTB's underground!
 May the force be with U
 endmsg
 x 2
@@ -893,8 +893,8 @@ end
 arch sign
 msg
 You need to put 5 rabbits
-          on it
-   Black sabbath club
+on it
+Black sabbath club
 endmsg
 x 2
 y 18
@@ -1049,10 +1049,6 @@ arch pstone_2
 x 2
 y 35
 end
-arch chinese_dragon
-x 2
-y 35
-end
 arch pstone_2
 x 2
 y 36
@@ -1135,10 +1131,6 @@ arch dungeon_magic
 x 2
 y 44
 end
-arch big_wiz
-x 2
-y 44
-end
 arch small_stones
 x 2
 y 45
@@ -1168,10 +1160,6 @@ x 2
 y 48
 end
 arch dungeon_magic
-x 2
-y 48
-end
-arch big_wiz
 x 2
 y 48
 end
@@ -1232,10 +1220,6 @@ x 2
 y 55
 end
 arch small_stones
-x 2
-y 56
-end
-arch big_dragon
 x 2
 y 56
 end
@@ -1247,10 +1231,6 @@ arch small_stones
 x 2
 y 58
 end
-arch big_dragon
-x 2
-y 58
-end
 arch small_stones
 x 2
 y 59
@@ -1259,19 +1239,11 @@ arch small_stones
 x 2
 y 60
 end
-arch big_dragon
-x 2
-y 60
-end
 arch small_stones
 x 2
 y 61
 end
 arch small_stones
-x 2
-y 62
-end
-arch big_dragon
 x 2
 y 62
 end
@@ -2022,10 +1994,6 @@ arch pstone_2
 x 4
 y 35
 end
-arch chinese_dragon
-x 4
-y 35
-end
 arch pstone_2
 x 4
 y 36
@@ -2616,10 +2584,6 @@ arch dungeon_magic
 x 5
 y 50
 end
-arch big_wiz
-x 5
-y 50
-end
 arch small_stones
 x 5
 y 51
@@ -2939,10 +2903,6 @@ arch pstone_2
 x 6
 y 35
 end
-arch chinese_dragon
-x 6
-y 35
-end
 arch pstone_2
 x 6
 y 36
@@ -3111,19 +3071,11 @@ arch small_stones
 x 6
 y 56
 end
-arch big_dragon
-x 6
-y 56
-end
 arch small_stones
 x 6
 y 57
 end
 arch small_stones
-x 6
-y 58
-end
-arch big_dragon
 x 6
 y 58
 end
@@ -3135,19 +3087,11 @@ arch small_stones
 x 6
 y 60
 end
-arch big_dragon
-x 6
-y 60
-end
 arch small_stones
 x 6
 y 61
 end
 arch small_stones
-x 6
-y 62
-end
-arch big_dragon
 x 6
 y 62
 end
@@ -3293,8 +3237,8 @@ connected 2
 end
 arch magic_mouth
 msg
-        Par Belzebuth!
-         Par Lucifer !
+Par Belzebuth!
+Par Lucifer !
 I invoque Evil Forces!
 endmsg
 x 7
@@ -3477,10 +3421,6 @@ arch dungeon_magic
 x 7
 y 44
 end
-arch big_wiz
-x 7
-y 44
-end
 arch small_stones
 x 7
 y 45
@@ -3932,10 +3872,6 @@ x 8
 y 47
 end
 arch dungeon_magic
-x 8
-y 47
-end
-arch big_wiz
 x 8
 y 47
 end
@@ -4695,10 +4631,6 @@ x 10
 y 34
 end
 arch pstone_2
-x 10
-y 35
-end
-arch chinese_dragon
 x 10
 y 35
 end
@@ -5648,10 +5580,6 @@ arch pstone_2
 x 12
 y 35
 end
-arch chinese_dragon
-x 12
-y 35
-end
 arch pstone_2
 x 12
 y 36
@@ -6172,19 +6100,11 @@ arch pstone_2
 x 13
 y 38
 end
-arch chinese_dragon
-x 13
-y 38
-end
 arch pstone_2
 x 13
 y 39
 end
 arch pstone_2
-x 13
-y 40
-end
-arch chinese_dragon
 x 13
 y 40
 end
@@ -6197,10 +6117,6 @@ x 13
 y 42
 end
 arch gem
-x 13
-y 42
-end
-arch chinese_dragon
 x 13
 y 42
 end
@@ -6232,10 +6148,6 @@ arch random_food
 x 13
 y 46
 end
-arch chinese_dragon
-x 13
-y 46
-end
 arch pstone_2
 x 13
 y 47
@@ -6244,19 +6156,11 @@ arch pstone_2
 x 13
 y 48
 end
-arch chinese_dragon
-x 13
-y 48
-end
 arch pstone_2
 x 13
 y 49
 end
 arch pstone_2
-x 13
-y 50
-end
-arch chinese_dragon
 x 13
 y 50
 end
@@ -6276,10 +6180,6 @@ arch random_food
 x 13
 y 52
 end
-arch chinese_dragon
-x 13
-y 52
-end
 arch pstone_2
 x 13
 y 53
@@ -6293,10 +6193,6 @@ x 13
 y 53
 end
 arch pstone_2
-x 13
-y 54
-end
-arch chinese_dragon
 x 13
 y 54
 end
@@ -6312,10 +6208,6 @@ arch ruby
 x 13
 y 56
 end
-arch chinese_dragon
-x 13
-y 56
-end
 arch pstone_2
 x 13
 y 57
@@ -6325,10 +6217,6 @@ x 13
 y 58
 end
 arch random_food
-x 13
-y 58
-end
-arch chinese_dragon
 x 13
 y 58
 end
@@ -6951,19 +6839,11 @@ arch small_stones
 x 15
 y 18
 end
-arch dread
-x 15
-y 18
-end
 arch small_stones
 x 15
 y 19
 end
 arch small_stones
-x 15
-y 20
-end
-arch dread
 x 15
 y 20
 end
@@ -7011,19 +6891,11 @@ arch pstone_2
 x 15
 y 27
 end
-arch dread
-x 15
-y 27
-end
 arch pstone_2
 x 15
 y 28
 end
 arch pstone_2
-x 15
-y 29
-end
-arch dread
 x 15
 y 29
 end
@@ -7341,19 +7213,11 @@ arch small_stones
 x 16
 y 4
 end
-arch giant
-x 16
-y 4
-end
 arch small_stones
 x 16
 y 5
 end
 arch small_stones
-x 16
-y 6
-end
-arch giant
 x 16
 y 6
 end
@@ -7593,19 +7457,11 @@ arch small_stones
 x 16
 y 45
 end
-arch chinese_dragon
-x 16
-y 45
-end
 arch small_stones
 x 16
 y 46
 end
 arch small_stones
-x 16
-y 47
-end
-arch chinese_dragon
 x 16
 y 47
 end
@@ -7618,10 +7474,6 @@ x 16
 y 49
 end
 arch random_food
-x 16
-y 49
-end
-arch chinese_dragon
 x 16
 y 49
 end
@@ -7641,19 +7493,11 @@ arch small_stones
 x 16
 y 51
 end
-arch chinese_dragon
-x 16
-y 51
-end
 arch small_stones
 x 16
 y 52
 end
 arch small_stones
-x 16
-y 53
-end
-arch chinese_dragon
 x 16
 y 53
 end
@@ -7665,19 +7509,11 @@ arch small_stones
 x 16
 y 55
 end
-arch chinese_dragon
-x 16
-y 55
-end
 arch small_stones
 x 16
 y 56
 end
 arch small_stones
-x 16
-y 57
-end
-arch chinese_dragon
 x 16
 y 57
 end
@@ -7764,10 +7600,6 @@ x 17
 y 3
 end
 arch small_stones
-x 17
-y 4
-end
-arch giant
 x 17
 y 4
 end
@@ -7948,10 +7780,6 @@ x 17
 y 28
 end
 arch pstone_2
-x 17
-y 29
-end
-arch behemoth
 x 17
 y 29
 end
@@ -8210,10 +8038,6 @@ x 18
 y 5
 end
 arch small_stones
-x 18
-y 6
-end
-arch giant
 x 18
 y 6
 end
@@ -8425,19 +8249,11 @@ arch pstone_2
 x 18
 y 34
 end
-arch dread
-x 18
-y 34
-end
 arch pstone_2
 x 18
 y 35
 end
 arch pstone_2
-x 18
-y 36
-end
-arch dread
 x 18
 y 36
 end
@@ -8458,10 +8274,6 @@ x 18
 y 38
 end
 arch pstone_2
-x 18
-y 39
-end
-arch behemoth
 x 18
 y 39
 end
@@ -8691,15 +8503,7 @@ arch small_stones
 x 19
 y 3
 end
-arch dragon
-x 19
-y 3
-end
 arch small_stones
-x 19
-y 4
-end
-arch dragon
 x 19
 y 4
 end
@@ -8707,23 +8511,11 @@ arch small_stones
 x 19
 y 5
 end
-arch dragon
-x 19
-y 5
-end
 arch small_stones
 x 19
 y 6
 end
-arch dragon
-x 19
-y 6
-end
 arch small_stones
-x 19
-y 7
-end
-arch dragon
 x 19
 y 7
 end
@@ -8900,10 +8692,6 @@ x 19
 y 28
 end
 arch pstone_2
-x 19
-y 29
-end
-arch dread
 x 19
 y 29
 end
@@ -9494,10 +9282,6 @@ x 20
 y 38
 end
 arch pstone_2
-x 20
-y 39
-end
-arch dread
 x 20
 y 39
 end
@@ -9785,10 +9569,10 @@ y 11
 end
 arch sign
 msg
-   Quit or double...
-  put 20 goldcoins,
+Quit or double...
+put 20 goldcoins,
 kill your opponent,
-  and double your bet..
+and double your bet..
 endmsg
 x 21
 y 11
@@ -9938,10 +9722,6 @@ x 21
 y 28
 end
 arch pstone_2
-x 21
-y 29
-end
-arch behemoth
 x 21
 y 29
 end
@@ -10159,10 +9939,6 @@ arch small_stones
 x 22
 y 6
 end
-arch chinese_dragon
-x 22
-y 6
-end
 arch small_stones
 x 22
 y 7
@@ -10469,10 +10245,6 @@ arch small_stones
 x 23
 y 4
 end
-arch chinese_dragon
-x 23
-y 4
-end
 arch small_stones
 x 23
 y 5
@@ -10658,10 +10430,6 @@ x 23
 y 29
 end
 arch random_food
-x 23
-y 29
-end
-arch dread
 x 23
 y 29
 end
@@ -11118,10 +10886,6 @@ x 25
 y 6
 end
 arch small_stones
-x 25
-y 7
-end
-arch chinese_dragon
 x 25
 y 7
 end
@@ -11449,19 +11213,11 @@ arch small_stones
 x 26
 y 3
 end
-arch chinese_dragon
-x 26
-y 3
-end
 arch small_stones
 x 26
 y 4
 end
 arch small_stones
-x 26
-y 5
-end
-arch chinese_dragon
 x 26
 y 5
 end
@@ -11713,15 +11469,7 @@ arch pstone_2
 x 27
 y 10
 end
-arch dragon
-x 27
-y 10
-end
 arch pstone_2
-x 27
-y 11
-end
-arch dragon
 x 27
 y 11
 end
@@ -12379,10 +12127,6 @@ arch small_stones
 x 30
 y 4
 end
-arch chinese_dragon
-x 30
-y 4
-end
 arch small_stones
 x 30
 y 5
@@ -12392,10 +12136,6 @@ x 30
 y 6
 end
 arch small_stones
-x 30
-y 7
-end
-arch chinese_dragon
 x 30
 y 7
 end
@@ -12443,10 +12183,6 @@ arch pstone_2
 x 30
 y 13
 end
-arch giant
-x 30
-y 13
-end
 arch pstone_2
 x 30
 y 14
@@ -12473,10 +12209,6 @@ resist_fire 30
 connected 7
 end
 arch pstone_2
-x 30
-y 17
-end
-arch troll
 x 30
 y 17
 end
@@ -12798,10 +12530,6 @@ resist_fire 30
 connected 6
 end
 arch pstone_2
-x 31
-y 13
-end
-arch giant
 x 31
 y 13
 end
@@ -13323,10 +13051,6 @@ arch small_stones
 x 33
 y 3
 end
-arch chinese_dragon
-x 33
-y 3
-end
 arch small_stones
 x 33
 y 4
@@ -13336,10 +13060,6 @@ x 33
 y 5
 end
 arch small_stones
-x 33
-y 6
-end
-arch chinese_dragon
 x 33
 y 6
 end
@@ -13436,10 +13156,6 @@ x 33
 y 18
 end
 arch pstone_2
-x 33
-y 19
-end
-arch dread
 x 33
 y 19
 end
@@ -13698,10 +13414,6 @@ x 34
 y 14
 end
 arch pstone_2
-x 34
-y 15
-end
-arch chinese_dragon
 x 34
 y 15
 end
@@ -14456,10 +14168,6 @@ arch pstone_2
 x 36
 y 23
 end
-arch big_wiz
-x 36
-y 23
-end
 arch pstone_2
 x 36
 y 24
@@ -14991,10 +14699,6 @@ arch pstone_2
 x 38
 y 16
 end
-arch big_dragon
-x 38
-y 16
-end
 arch pstone_2
 x 38
 y 17
@@ -15206,10 +14910,6 @@ x 39
 y 10
 end
 arch pstone_2
-x 39
-y 11
-end
-arch titan
 x 39
 y 11
 end
@@ -15839,11 +15539,11 @@ y 26
 end
 arch sign
 msg
-You kill all the monster, 
+You kill all the monster,
 and lost your money...
 Don't forget that experience is
 the bigest treasure!
-          dixit El Barchio.
+dixit El Barchio.
 endmsg
 x 41
 y 26
@@ -17510,4 +17210,304 @@ end
 arch blocked
 x 47
 y 41
+end
+arch chinese_dragon
+x 2
+y 35
+end
+arch big_wiz
+x 2
+y 44
+end
+arch big_wiz
+x 2
+y 48
+end
+arch big_dragon
+x 2
+y 56
+end
+arch big_dragon
+x 2
+y 58
+end
+arch big_dragon
+x 2
+y 60
+end
+arch big_dragon
+x 2
+y 62
+end
+arch chinese_dragon
+x 4
+y 35
+end
+arch big_wiz
+x 5
+y 50
+end
+arch chinese_dragon
+x 6
+y 35
+end
+arch big_dragon
+x 6
+y 56
+end
+arch big_dragon
+x 6
+y 58
+end
+arch big_dragon
+x 6
+y 60
+end
+arch big_dragon
+x 6
+y 62
+end
+arch big_wiz
+x 7
+y 44
+end
+arch big_wiz
+x 8
+y 47
+end
+arch chinese_dragon
+x 10
+y 35
+end
+arch chinese_dragon
+x 12
+y 35
+end
+arch chinese_dragon
+x 13
+y 38
+end
+arch chinese_dragon
+x 13
+y 40
+end
+arch chinese_dragon
+x 13
+y 42
+end
+arch chinese_dragon
+x 13
+y 46
+end
+arch chinese_dragon
+x 13
+y 48
+end
+arch chinese_dragon
+x 13
+y 50
+end
+arch chinese_dragon
+x 13
+y 52
+end
+arch chinese_dragon
+x 13
+y 54
+end
+arch chinese_dragon
+x 13
+y 56
+end
+arch chinese_dragon
+x 13
+y 58
+end
+arch dread
+x 15
+y 18
+end
+arch dread
+x 15
+y 20
+end
+arch dread
+x 15
+y 27
+end
+arch dread
+x 15
+y 29
+end
+arch giant
+x 16
+y 4
+end
+arch giant
+x 16
+y 6
+end
+arch chinese_dragon
+x 16
+y 45
+end
+arch chinese_dragon
+x 16
+y 47
+end
+arch chinese_dragon
+x 16
+y 49
+end
+arch chinese_dragon
+x 16
+y 51
+end
+arch chinese_dragon
+x 16
+y 53
+end
+arch chinese_dragon
+x 16
+y 55
+end
+arch chinese_dragon
+x 16
+y 57
+end
+arch giant
+x 17
+y 4
+end
+arch behemoth
+x 17
+y 29
+end
+arch giant
+x 18
+y 6
+end
+arch dread
+x 18
+y 34
+end
+arch dread
+x 18
+y 36
+end
+arch behemoth
+x 18
+y 39
+end
+arch dragon
+x 19
+y 3
+end
+arch dragon
+x 19
+y 4
+end
+arch dragon
+x 19
+y 5
+end
+arch dragon
+x 19
+y 6
+end
+arch dragon
+x 19
+y 7
+end
+arch dread
+x 19
+y 29
+end
+arch dread
+x 20
+y 39
+end
+arch behemoth
+x 21
+y 29
+end
+arch chinese_dragon
+x 22
+y 6
+end
+arch chinese_dragon
+x 23
+y 4
+end
+arch dread
+x 23
+y 29
+end
+arch chinese_dragon
+x 25
+y 7
+end
+arch chinese_dragon
+x 26
+y 3
+end
+arch chinese_dragon
+x 26
+y 5
+end
+arch dragon
+x 27
+y 10
+end
+arch dragon
+x 27
+y 11
+end
+arch chinese_dragon
+x 30
+y 4
+end
+arch chinese_dragon
+x 30
+y 7
+end
+arch giant
+x 30
+y 13
+end
+arch troll
+x 30
+y 17
+end
+arch giant
+x 31
+y 13
+end
+arch chinese_dragon
+x 33
+y 3
+end
+arch chinese_dragon
+x 33
+y 6
+end
+arch dread
+x 33
+y 19
+end
+arch chinese_dragon
+x 34
+y 15
+end
+arch big_wiz
+x 36
+y 23
+end
+arch big_dragon
+x 38
+y 16
+end
+arch titan
+x 39
+y 11
 end

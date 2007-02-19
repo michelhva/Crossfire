@@ -1,12 +1,14 @@
 arch map
+name Darcap Chess
+difficulty 1
 region darcapcircus
-name chess
+width 20
+height 16
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Wed Mar 10 11:35:04 1999
 endmsg
-x 20
 end
 arch pstone_1
 end
@@ -416,16 +418,16 @@ end
 arch button_small
 name 2
 x 5
-protected 2
 weight 1000
 connected 2
+protected 2
 end
 arch creator
 name 1
 other_arch boulder
 x 5
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 5
@@ -633,8 +635,8 @@ name drop 20 goldcoins
 food 20
 x 6
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 6
@@ -649,8 +651,8 @@ name drop 20 goldcoins
 food 20
 x 6
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 6
@@ -665,8 +667,8 @@ name drop 20 goldcoins
 food 20
 x 6
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 6
@@ -681,8 +683,8 @@ name drop 20 goldcoins
 food 20
 x 6
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 6
@@ -836,8 +838,8 @@ end
 arch grate_closed_2
 x 7
 y 3
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 7
@@ -850,8 +852,8 @@ end
 arch grate_closed_2
 x 7
 y 4
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 7
@@ -864,8 +866,8 @@ end
 arch grate_closed_2
 x 7
 y 5
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 7
@@ -878,8 +880,8 @@ end
 arch grate_closed_2
 x 7
 y 6
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 7
@@ -1038,8 +1040,8 @@ end
 arch button_handle
 x 8
 y 7
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 8

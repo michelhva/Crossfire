@@ -1,9 +1,11 @@
 arch map
+name Little House of Horrors
+difficulty 1
 region santodominion
-hp 9
-sp 18
-x 15
-y 15
+width 15
+height 15
+enter_x 9
+enter_y 18
 end
 arch woodfloor
 end

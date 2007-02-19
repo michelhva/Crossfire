@@ -1,18 +1,19 @@
 arch map
+name Weapon Shop
+difficulty 1
 region lakecountry
-name <untitled>
 shopitems weapons:65;potion:0;scroll:0;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
+shopgreed 1.3
 shopmin 10
 shopmax 100000
 shoprace human
-shopgreed 1.3
+width 18
+height 20
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Mon Mar 27 13:37:48 1995
 endmsg
-width 18
-height 20
 end
 arch woodfloor
 end

@@ -1,14 +1,15 @@
 arch map
-name Entrance hall
+name Skud Tower Entrance Hall
+difficulty 1
+width 10
+height 20
+enter_x 4
+enter_y 17
 msg
 Creator: Skud the Great
 Email: tvangod@ecst.csuchico.edu
 Date: Wed Oct 20 13:10:24 1993
 endmsg
-width 10
-height 20
-enter_x 4
-enter_y 17
 end
 arch marble
 end
@@ -503,9 +504,9 @@ x 5
 y 1
 end
 arch gate_closed_1
-connected 1
 x 5
 y 1
+connected 1
 end
 arch marble
 x 5
@@ -690,9 +691,9 @@ x 7
 y 1
 end
 arch button_handle
-connected 1
 x 7
 y 1
+connected 1
 end
 arch lich
 name Guardian
@@ -720,10 +721,10 @@ endmsg
 maxhp 10000
 wc -20
 ac -15
-level 30
-unaggressive 1
 x 7
 y 1
+level 30
+unaggressive 1
 arch spell_hellfire
 end
 arch spell_hellfire

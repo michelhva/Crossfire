@@ -1,12 +1,14 @@
 arch map
+name Small House
+difficulty 1
 region stoneville
+width 10
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Sep 12 15:18:50 1997
 endmsg
-x 10
-y 10
 end
 arch afloor_left
 end
@@ -446,8 +448,8 @@ course suspected, here on dragon
 island. I will enter it today and slay
 the arrogant dragon there. See you
 soon!
-	Yours
-		Carthon
+Yours
+Carthon
 endmsg
 end
 end

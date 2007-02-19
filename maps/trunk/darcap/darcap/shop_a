@@ -1,15 +1,18 @@
 arch map
+name Smith's Armour
+fixed_resettime 1
+difficulty 1
 region darcap
-name shop_a
+shopitems armour:50;shield:50;helmet:40;cloak:40;boots:40;gloves:40;bracers:40;girdle:40;*:-60
+shopmax 8000
+width 16
+height 16
+enter_y 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Nov 19 00:13:33 1994
 endmsg
-sp 14
-stand_still 1
-shopitems armour:50;shield:50;helmet:40;cloak:40;boots:40;gloves:40;bracers:40;girdle:40;*:-60
-shopmax 8000
 end
 arch shop_empty
 end

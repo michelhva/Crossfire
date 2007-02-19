@@ -1,13 +1,14 @@
 arch map
+name Shipwreck
+difficulty 1
 region portjoseph
-name shipwreck
+width 24
+height 23
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Fri Jun 10 19:29:02 1994
 endmsg
-x 24
-y 23
 end
 arch pstone_2
 end
@@ -676,7 +677,7 @@ The cursed pearl, I wish I had never
 set sight on the thing  . . . I cannot
 rid myself of it . . . it is better
 that I lock it away in the hidden
- . . 
+. .
 endmsg
 x 4
 y 16
@@ -1269,7 +1270,7 @@ y 10
 end
 arch magic_mouth
 msg
-The deck of the ship . . 
+The deck of the ship . .
 endmsg
 x 9
 y 11

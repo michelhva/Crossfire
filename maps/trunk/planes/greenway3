@@ -1,16 +1,16 @@
 arch map
 name TheGreenWay
 region greenway
+darkness 1
+width 50
+height 50
+enter_x 18
+enter_y 37
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
-enter_x 18
-enter_y 37
-darkness 1
 tile_path_1 greenway6
 tile_path_2 greenway9
 tile_path_3 greenway7
@@ -2486,9 +2486,9 @@ x 12
 y 29
 end
 arch bird
-unaggressive 1
 x 12
 y 29
+unaggressive 1
 end
 arch evergreens
 x 12
@@ -4234,9 +4234,9 @@ x 21
 y 10
 end
 arch bird
-unaggressive 1
 x 21
 y 10
+unaggressive 1
 end
 arch evergreens
 x 21

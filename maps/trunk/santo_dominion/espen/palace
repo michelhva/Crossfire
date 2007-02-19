@@ -1,13 +1,14 @@
 arch map
+name Lord Ramsdre Mansion
+difficulty 1
 region santodominion
-name palace
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Nov 14 18:13:39 1994
 endmsg
-x 32
-y 32
 end
 arch bwall_2_2_2
 end
@@ -626,8 +627,8 @@ end
 arch grate_closed_2
 x 3
 y 8
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -636,8 +637,8 @@ end
 arch grate_closed_2
 x 3
 y 9
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -646,8 +647,8 @@ end
 arch grate_closed_2
 x 3
 y 10
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -656,8 +657,8 @@ end
 arch grate_closed_2
 x 3
 y 11
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 3
@@ -678,8 +679,8 @@ end
 arch button_small
 x 3
 y 15
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -691,7 +692,7 @@ y 16
 end
 arch sign
 msg
-	Welcome to my mansion......
+Welcome to my mansion......
 Inside this most fantastic mansion lies,
 unknown danger and treasure.......
 Many have entered but, only a few have
@@ -720,8 +721,8 @@ end
 arch grate_closed_2
 x 3
 y 19
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -730,8 +731,8 @@ end
 arch grate_closed_2
 x 3
 y 20
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -740,8 +741,8 @@ end
 arch grate_closed_2
 x 3
 y 21
-protected 3
 connected 3
+protected 3
 end
 arch woodfloor
 x 3
@@ -750,8 +751,8 @@ end
 arch grate_closed_2
 x 3
 y 22
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 3
@@ -959,8 +960,8 @@ arch grate_closed_2
 x 4
 y 15
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 4
@@ -1183,8 +1184,8 @@ end
 arch button_small
 x 5
 y 15
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1397,8 +1398,8 @@ end
 arch button_handle
 x 6
 y 15
-protected 3
 connected 3
+protected 3
 end
 arch random_treasure
 x 6
@@ -2384,8 +2385,8 @@ end
 arch block_door_closed
 x 10
 y 3
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 10
@@ -3218,8 +3219,8 @@ arch button_handle
 name Make my day...
 x 13
 y 2
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 13

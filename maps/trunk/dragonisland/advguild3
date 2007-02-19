@@ -1,13 +1,14 @@
 arch map
+name Adventurers Guild
+difficulty 1
 region stoneville
-name advguild3
+width 32
+height 32
 msg
 Creator: Viola Krings
 Email: 
 Date: Tue Jul 15 10:58:35 1997
 endmsg
-x 32
-y 32
 end
 arch dungeon_floor
 end
@@ -5906,9 +5907,8 @@ ac -40
 x 28
 y 14
 level 20
-protected 1
-vulnerable 0
 carrying 26900
+protected 0
 arch apple
 end
 arch potion_heal

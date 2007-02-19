@@ -1,15 +1,12 @@
 arch map
-region scorn
-name drywell
+name Dry Well
 reset_timeout 7200
 difficulty 6
+region scorn
 width 24
 height 22
 enter_x 1
 enter_y 1
-msg
-
-endmsg
 end
 arch dungeon_floor
 end
@@ -266,7 +263,7 @@ arch dungeon_floor
 x 1
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 1
 y 14
 end
@@ -564,7 +561,7 @@ arch dungeon_floor
 x 3
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 3
 y 14
 end
@@ -622,7 +619,7 @@ arch dungeon_floor
 x 4
 y 2
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 4
 y 2
 end
@@ -638,7 +635,7 @@ arch dungeon_floor
 x 4
 y 4
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 4
 y 4
 end
@@ -784,7 +781,7 @@ arch dungeon_floor
 x 5
 y 5
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 5
 y 5
 end
@@ -1069,7 +1066,7 @@ arch dungeon_floor
 x 7
 y 5
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 7
 y 5
 end
@@ -1653,7 +1650,7 @@ arch dungeon_floor
 x 11
 y 2
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 11
 y 2
 end
@@ -1669,7 +1666,7 @@ arch dungeon_floor
 x 11
 y 4
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 11
 y 4
 end
@@ -1773,7 +1770,7 @@ arch dungeon_floor
 x 11
 y 17
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 11
 y 17
 end
@@ -1789,7 +1786,7 @@ arch dungeon_floor
 x 11
 y 19
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 11
 y 19
 end
@@ -2033,7 +2030,7 @@ arch dungeon_floor
 x 13
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 13
 y 14
 end
@@ -2305,7 +2302,7 @@ arch dungeon_floor
 x 15
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 15
 y 14
 end
@@ -2979,7 +2976,7 @@ arch dungeon_floor
 x 20
 y 5
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 20
 y 5
 end
@@ -3293,7 +3290,7 @@ arch dungeon_floor
 x 22
 y 5
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 22
 y 5
 end

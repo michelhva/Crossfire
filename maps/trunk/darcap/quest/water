@@ -1,12 +1,11 @@
 arch map
+name Water Well
+difficulty 1
 region darcap
-name glue
-msg
-endmsg
-hp 29
-sp 29
-x 32
-y 32
+width 32
+height 32
+enter_x 29
+enter_y 29
 end
 arch sea
 exp 1000

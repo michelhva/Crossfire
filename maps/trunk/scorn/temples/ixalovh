@@ -1,15 +1,16 @@
 arch map
 name Shrine of Ixalovh
+difficulty 1
 region scorn
+width 13
+height 15
+enter_x 6
+enter_y 14
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    8/29/2004
 endmsg
-width 13
-height 15
-enter_x 6
-enter_y 14
 outdoor 1
 end
 arch shallow_sea
@@ -459,9 +460,9 @@ x 6
 y 9
 end
 arch altar_ixalovh
-level 120
 x 6
 y 9
+level 120
 end
 arch light4
 x 6

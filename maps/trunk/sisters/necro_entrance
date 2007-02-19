@@ -1,13 +1,14 @@
 arch map
-name necro_entrance
+name The Necropolis of Gax
+reset_timeout 120
+difficulty 1
+width 33
+height 32
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Wed Dec 28 20:39:39 1994
 endmsg
-width 33
-height 32
-reset_timeout 120
 end
 arch evergreen
 end
@@ -1258,11 +1259,10 @@ y 11
 end
 arch ghost
 name Ghost Defender of Gax
-immune 16385
-protected 17
-attacktype 17
 x 9
 y 11
+attacktype 17
+immune 17
 end
 arch pstone_1
 x 9
@@ -1441,11 +1441,10 @@ y 21
 end
 arch ghost
 name Ghost Defender of Gax
-immune 16385
-protected 17
-attacktype 17
 x 10
 y 21
+attacktype 17
+immune 17
 end
 arch small_stones
 x 10
@@ -1805,11 +1804,10 @@ y 8
 end
 arch ghost
 name Ghost Defender of Gax
-immune 16385
-protected 17
-attacktype 17
 x 13
 y 8
+attacktype 17
+immune 17
 end
 arch small_stones
 x 13
@@ -2138,9 +2136,9 @@ x 15
 y 16
 end
 arch large_stones
-blocksview 1
 x 15
 y 17
+blocksview 1
 end
 arch large_stones
 x 15
@@ -2384,11 +2382,10 @@ y 12
 end
 arch ghost
 name Ghost Defender of Gax
-immune 16385
-protected 17
-attacktype 17
 x 17
 y 12
+attacktype 17
+immune 17
 end
 arch large_stones
 x 17
@@ -2666,11 +2663,10 @@ y 16
 end
 arch ghost
 name Ghost Defender of Gax
-immune 16385
-protected 17
-attacktype 17
 x 19
 y 16
+attacktype 17
+immune 17
 end
 arch cobblestones2
 x 19

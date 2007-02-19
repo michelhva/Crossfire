@@ -1,11 +1,14 @@
 arch map
-name tower1
+name Three Sisters Tower
+difficulty 1
+darkness 4
+width 16
+height 16
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Sun Dec 18 11:45:45 1994
 endmsg
-invisible 4
 end
 arch sea
 end
@@ -131,9 +134,9 @@ exp 1000
 x 1
 y 6
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -167,9 +170,9 @@ exp 1000
 x 1
 y 9
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -575,9 +578,9 @@ exp 1000
 x 5
 y 14
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -609,9 +612,9 @@ exp 1000
 x 6
 y 1
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -870,8 +873,8 @@ end
 arch sign
 msg
 Tower of the Three Sisters -
- Beware!  those who enter this domain
-  invoke the ban of Chaos!
+Beware!  those who enter this domain
+invoke the ban of Chaos!
 
 endmsg
 x 8
@@ -935,9 +938,9 @@ exp 1000
 x 9
 y 1
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -1113,9 +1116,9 @@ exp 1000
 x 10
 y 14
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -1456,9 +1459,9 @@ exp 1000
 x 14
 y 6
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end
@@ -1492,9 +1495,9 @@ exp 1000
 x 14
 y 9
 speed 0.300000
-immune 4098
 see_invisible 1
 can_cast_spell 1
+immune 4098
 arch spell_paralyze
 end
 end

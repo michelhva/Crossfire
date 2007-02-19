@@ -1,13 +1,14 @@
 arch map
-name small_manor0
+name Small Manor
+difficulty 1
+darkness 5
+width 10
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Dec 29 15:59:55 1994
 endmsg
-width 10
-height 13
-darkness 5
 end
 arch blocked
 end

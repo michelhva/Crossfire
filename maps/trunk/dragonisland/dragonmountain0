@@ -1,13 +1,14 @@
 arch map
+name Dragon Mountain
+difficulty 1
 region stoneville
-name dragonmountain0
+width 40
+height 33
 msg
 Creator: Viola Krings
 Email: krings@informatik.tu-muenchen.de
 Date: Tue Sep  2 19:42:51 1997
 endmsg
-x 40
-y 33
 end
 arch small_stones
 end
@@ -246,10 +247,10 @@ x 1
 y 4
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 1
@@ -339,10 +340,10 @@ x 1
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 1
@@ -380,10 +381,10 @@ x 1
 y 23
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 1
@@ -563,10 +564,10 @@ x 2
 y 17
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 2
@@ -584,10 +585,10 @@ x 2
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 2
@@ -625,10 +626,10 @@ x 2
 y 22
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 2
@@ -712,10 +713,10 @@ x 3
 y 1
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 3
@@ -769,10 +770,10 @@ x 3
 y 8
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 3
@@ -850,10 +851,10 @@ x 3
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 3
@@ -981,10 +982,10 @@ x 4
 y 6
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 4
@@ -1010,10 +1011,10 @@ x 4
 y 8
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 4
@@ -1241,10 +1242,10 @@ x 5
 y 8
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 5
@@ -1565,10 +1566,10 @@ x 6
 y 21
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 6
@@ -1668,10 +1669,10 @@ x 7
 y 1
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 7
@@ -1833,10 +1834,10 @@ x 7
 y 21
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 7
@@ -1886,10 +1887,10 @@ x 7
 y 27
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 7
@@ -2061,10 +2062,10 @@ x 8
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 8
@@ -2098,10 +2099,10 @@ x 8
 y 21
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 8
@@ -2221,10 +2222,10 @@ x 9
 y 4
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 9
@@ -2274,10 +2275,10 @@ x 9
 y 10
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 9
@@ -2441,10 +2442,10 @@ x 10
 y 1
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 10
@@ -2648,10 +2649,10 @@ x 11
 y 2
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 11
@@ -2673,10 +2674,10 @@ x 11
 y 4
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 11
@@ -2876,10 +2877,10 @@ x 12
 y 3
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 12
@@ -2981,10 +2982,10 @@ x 12
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 12
@@ -3192,10 +3193,10 @@ x 13
 y 20
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 13
@@ -3455,10 +3456,10 @@ x 14
 y 28
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 14
@@ -3650,10 +3651,10 @@ x 15
 y 23
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 15
@@ -3765,10 +3766,10 @@ x 16
 y 7
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 16
@@ -4404,10 +4405,10 @@ x 19
 y 17
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 19
@@ -4441,10 +4442,10 @@ x 19
 y 21
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 19
@@ -4552,10 +4553,10 @@ x 20
 y 2
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 20
@@ -5667,10 +5668,10 @@ x 25
 y 19
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 25
@@ -5898,10 +5899,10 @@ x 26
 y 22
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 26
@@ -5935,10 +5936,10 @@ x 26
 y 26
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 26
@@ -6046,10 +6047,10 @@ x 27
 y 8
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 27
@@ -6423,10 +6424,10 @@ x 29
 y 2
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 29
@@ -6560,10 +6561,10 @@ x 29
 y 23
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 29
@@ -6989,10 +6990,10 @@ x 31
 y 18
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 31
@@ -7128,10 +7129,10 @@ x 32
 y 4
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 32
@@ -7185,10 +7186,10 @@ x 32
 y 12
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 32
@@ -7955,10 +7956,10 @@ x 36
 y 7
 level 3
 randomitems dark_elf
-pick_up 24
 will_apply 2
-can_apply 24
+pick_up 24
 can_use_bow 1
+can_apply 24
 end
 arch small_stones
 x 36

@@ -1103,7 +1103,7 @@ y 16
 elevation 1717
 end
 arch minihouse
-name Stone House
+name Boulder Inferno
 slaying /euthville/boulder_inferno
 hp 12
 sp 12
@@ -2730,7 +2730,7 @@ y 20
 elevation 3446
 end
 arch minihouse
-name grim house
+name Grim House
 slaying /euthville/map.fr.0
 hp 2
 sp 2
@@ -12738,6 +12738,7 @@ y 49
 elevation 3657
 end
 arch store_magic
+name Euthville Magic Shop
 slaying /euthville/magic.shop
 hp 1
 sp 1
@@ -12745,7 +12746,7 @@ x 7
 y 11
 end
 arch church
-name Valriel weeping
+name Valriel Weeping
 slaying /euthville/devil.church1
 hp 9
 sp 14

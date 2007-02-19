@@ -1,14 +1,17 @@
 arch map
+name The Adventurous Shop
+difficulty 1
 region stoneville
-name advshop3
+shopitems potion:40;rings:30;scroll:40;amulet:20;wand:40;skillscroll:20;rod:30;*:-60
+shopmin 1500
+shopmax 25000
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jul 22 14:05:19 1997
 endmsg
-shopitems potion:40;rings:30;scroll:40;amulet:20;wand:40;skillscroll:20;rod:30;*:-60
-shopmax 25000
-shopmin 1500
 end
 arch woodfloor
 end

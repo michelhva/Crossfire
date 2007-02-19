@@ -1,13 +1,14 @@
 arch map
+name House
+difficulty 1
 region stoneville
-name house9
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Sep 12 15:46:59 1997
 endmsg
-x 6
-y 6
 end
 arch marble
 end
@@ -175,7 +176,7 @@ msg
 @match [Hh][ae]llo|[Hh]i|[Gg]reet
 Hello! I'm waiting for my master.
 @match master
-Yes, he went adventuring and I await 
+Yes, he went adventuring and I await
 his return to see to his every need.
 endmsg
 x 4

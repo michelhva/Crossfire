@@ -1,13 +1,14 @@
 arch map
+name Administration, Level 1
+difficulty 1
 region brest
-name jes
+width 40
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:54:09 1994
 endmsg
-x 40
-y 30
 end
 arch grass
 end

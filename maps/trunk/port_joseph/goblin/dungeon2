@@ -1,13 +1,15 @@
 arch map
+name Goblin Fortress Dungeon
+difficulty 1
 region portjoseph
-name goblin fortress dungeon
+darkness 4
+width 32
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Sat Aug 27 17:02:24 1994
 endmsg
-x 32
-invisible 4
 end
 arch dungeon_floor
 end
@@ -1262,15 +1264,15 @@ arch dog
 name really big dog
 msg
 @match dog
-Growwlll . . . 
+Growwlll . . .
 endmsg
 hp 25
 maxhp 25
 dam 12
 x 11
 y 5
-run_away 0
 unaggressive 1
+run_away 0
 end
 arch dungeon_floor
 x 11
@@ -1503,15 +1505,13 @@ y 5
 end
 arch dog
 name really big dog
-msg
-endmsg
 hp 25
 maxhp 25
 dam 12
 x 13
 y 5
-run_away 0
 unaggressive 1
+run_away 0
 end
 arch dungeon_floor
 x 13
@@ -2665,8 +2665,6 @@ x 24
 y 4
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
@@ -3326,14 +3324,10 @@ x 30
 y 7
 end
 arch blocked
-msg
-endmsg
 x 30
 y 8
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
@@ -3389,8 +3383,6 @@ x 30
 y 15
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch medium_stones
@@ -3442,38 +3434,26 @@ x 31
 y 6
 end
 arch blocked
-msg
-endmsg
 x 31
 y 7
 end
 arch blocked
-msg
-endmsg
 x 31
 y 8
 end
 arch blocked
-msg
-endmsg
 x 31
 y 9
 end
 arch blocked
-msg
-endmsg
 x 31
 y 10
 end
 arch blocked
-msg
-endmsg
 x 31
 y 11
 end
 arch blocked
-msg
-endmsg
 x 31
 y 12
 end
@@ -3506,20 +3486,8 @@ x 1
 y 4
 no_pass 0
 end
-More
-arch mine_secret_1_2
-x 2
-y 4
-no_pass 0
-end
 arch mine_secret_1_1
 x 19
-y 4
-connected 27
-end
-More
-arch mine_secret_1_2
-x 20
 y 4
 connected 27
 end

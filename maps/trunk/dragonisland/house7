@@ -1,13 +1,14 @@
 arch map
+name Dreadful house
+difficulty 1
 region stoneville
-name house7
+width 35
+height 20
 msg
 Creator: Viola Krings
 Email:
 Date: Sat Jun 28 16:33:33 1997
 endmsg
-width 35
-height 20
 end
 arch flagstone
 end
@@ -1456,9 +1457,9 @@ y 14
 end
 arch demilich
 name Paruzzel the Darkest
-carrying 17400
 x 8
 y 14
+carrying 17400
 arch crown
 end
 arch potion_improve
@@ -3481,9 +3482,9 @@ x 20
 y 13
 end
 arch magic_ear
-connected 1
 x 20
 y 13
+connected 1
 end
 arch flagstone
 x 20
@@ -3494,9 +3495,9 @@ x 20
 y 14
 end
 arch igate_closed_1
-connected 1
 x 20
 y 14
+connected 1
 end
 arch flagstone
 x 20
@@ -3507,9 +3508,9 @@ x 20
 y 15
 end
 arch magic_ear
-connected 1
 x 20
 y 15
+connected 1
 end
 arch flagstone
 x 20

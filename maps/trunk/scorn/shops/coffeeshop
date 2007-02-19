@@ -1,13 +1,13 @@
 arch map
-region scorn
 name Eswald's Coffee Shop
+region scorn
+width 10
+height 10
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 10
-height 10
 end
 arch woodfloor2
 end
@@ -94,9 +94,9 @@ x 1
 y 3
 end
 arch longtable_1_4
-no_pass 1
 x 1
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 1
@@ -135,9 +135,9 @@ msg
 @match *
 Mmmmm, mountain grown.
 endmsg
-stand_still 1
 x 1
 y 7
+stand_still 1
 end
 arch woodfloor2
 x 1
@@ -182,9 +182,9 @@ x 2
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 2
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 2
@@ -245,18 +245,18 @@ x 3
 y 3
 end
 arch longtable_2_2_3
-no_pass 1
 x 3
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 3
 y 4
 end
 arch longtable_2_2_1
-no_pass 1
 x 3
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 3
@@ -265,9 +265,9 @@ end
 arch food_table
 name Fresh Coffee 4sp
 slaying silvercoin
-food 4
 other_arch coffee
 sp 1
+food 4
 x 3
 y 5
 end
@@ -322,9 +322,9 @@ x 4
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 4
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 4
@@ -351,10 +351,10 @@ x 4
 y 8
 end
 arch invis_exit
+slaying /world/world_105_116
 msg
 Ding!
 endmsg
-slaying /world/world_105_116
 hp 1
 sp 1
 x 4
@@ -403,18 +403,18 @@ Well Oled has always been jealous of my goose...
 @match *
 Finest brew east of Navar.
 endmsg
-stand_still 1
 x 5
 y 3
+stand_still 1
 end
 arch woodfloor2
 x 5
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 5
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 5
@@ -422,10 +422,10 @@ y 5
 end
 arch check_inv
 slaying EsmeraldaTheGoose
-connected 1
-last_heal 1
 x 5
 y 5
+last_heal 1
+connected 1
 end
 arch woodfloor2
 x 5
@@ -477,21 +477,21 @@ Esmeralda has the finest nose...er beak
 for coffee in the kingdom.
 Oled will be so jealous of my coffee.
 endmsg
-connected 1
-walk_on 0
-fly_on 0
 food 1
 x 6
 y 4
+connected 1
+walk_on 0
+fly_on 0
 end
 arch woodfloor2
 x 6
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 6
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 6
@@ -548,9 +548,9 @@ x 7
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 7
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 7
@@ -608,9 +608,9 @@ x 8
 y 4
 end
 arch longtable_1_3
-no_pass 1
 x 8
 y 4
+no_pass 1
 end
 arch woodfloor2
 x 8
@@ -651,13 +651,13 @@ end
 arch teleporter
 hp 6
 sp 5
-connected 1
-speed 0.0
 x 9
+speed 0.0
+connected 1
 end
 arch goldcoin
-nrof 500
 x 9
+nrof 500
 end
 arch blocked
 x 9

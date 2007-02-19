@@ -1,12 +1,14 @@
 arch map
+name Movers
+difficulty 1
 region darcapcircus
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 28 18:55:17 1999
 endmsg
-x 6
-y 6
 end
 arch mover_8
 end

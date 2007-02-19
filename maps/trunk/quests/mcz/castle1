@@ -1,12 +1,12 @@
 arch map
 name Castle of Ra-Gar
+width 20
+height 27
 msg
 Creator:
 Email:
 Date: Mon Oct 18 15:24:20 1993
 endmsg
-width 20
-height 27
 end
 arch dungeon_floor
 end
@@ -321,10 +321,10 @@ maxhp 50
 maxsp 12
 exp 80
 dam 8
-armour 28
-level 6
 x 2
 y 2
+level 6
+armour 28
 end
 arch dungeon_floor
 x 2
@@ -335,9 +335,9 @@ x 2
 y 3
 end
 arch button_handle
-connected 2
 x 2
 y 3
+connected 2
 end
 arch devil
 name Imp
@@ -346,10 +346,10 @@ maxhp 50
 maxsp 12
 exp 80
 dam 8
-armour 28
-level 6
 x 2
 y 3
+level 6
+armour 28
 end
 arch dungeon_floor
 x 2
@@ -372,9 +372,9 @@ x 2
 y 6
 end
 arch button_handle
-connected 2
 x 2
 y 6
+connected 2
 end
 arch earthwall
 x 2
@@ -537,10 +537,10 @@ maxhp 50
 maxsp 12
 exp 80
 dam 8
-armour 28
-level 6
 x 3
 y 2
+level 6
+armour 28
 end
 arch dungeon_floor
 x 3
@@ -557,10 +557,10 @@ maxhp 50
 maxsp 12
 exp 80
 dam 8
-armour 28
-level 6
 x 3
 y 3
+level 6
+armour 28
 end
 arch dungeon_floor
 x 3
@@ -865,18 +865,18 @@ x 5
 y 2
 end
 arch block_door_closed
-connected 2
 x 5
 y 2
+connected 2
 end
 arch dungeon_floor
 x 5
 y 3
 end
 arch block_door_closed
-connected 2
 x 5
 y 3
+connected 2
 end
 arch bwall_0
 x 5
@@ -1508,9 +1508,9 @@ x 9
 y 7
 end
 arch rock
-blocksview 1
 x 9
 y 7
+blocksview 1
 end
 arch dungeon_floor
 x 9
@@ -1573,9 +1573,9 @@ x 9
 y 22
 end
 arch grate_closed_1
-connected 1
 x 9
 y 22
+connected 1
 end
 arch dungeon_floor
 x 9
@@ -1586,9 +1586,9 @@ msg
 @match something|Something
 Click.
 endmsg
-connected 1
 x 9
 y 23
+connected 1
 end
 arch dungeon_floor
 x 9
@@ -1600,13 +1600,13 @@ y 25
 end
 arch exit
 name stones
-face dung_floor.111
 slaying /world/world_110_114
+face dung_floor.111
 hp 29
 sp 23
-is_animated 0
 x 9
 y 26
+is_animated 0
 end
 arch dungeon_floor
 x 10
@@ -1662,9 +1662,9 @@ x 10
 y 7
 end
 arch rock
-blocksview 1
 x 10
 y 7
+blocksview 1
 end
 arch dungeon_floor
 x 10
@@ -1727,9 +1727,9 @@ x 10
 y 22
 end
 arch grate_closed_1
-connected 1
 x 10
 y 22
+connected 1
 end
 arch dungeon_floor
 x 10
@@ -1745,13 +1745,13 @@ y 25
 end
 arch exit
 name stones
-face dung_floor.111
 slaying /world/world_110_114
+face dung_floor.111
 hp 29
 sp 23
-is_animated 0
 x 10
 y 26
+is_animated 0
 end
 arch dungeon_floor
 x 11
@@ -2103,11 +2103,11 @@ y 6
 end
 arch locked_door2
 name Earth Door
+slaying set_individual_value earth
 msg
 You need the Earth Key to open this
 door
 endmsg
-slaying set_individual_value earth
 x 13
 y 6
 end
@@ -2256,10 +2256,10 @@ y 6
 end
 arch locked_door2
 name Air Door
+slaying set_individual_value air
 msg
 You need the Air Key to open this door
 endmsg
-slaying set_individual_value air
 x 14
 y 6
 end
@@ -2416,10 +2416,10 @@ y 6
 end
 arch locked_door2
 name Fire Door
+slaying set_individual_value fire
 msg
 You need the Fire Key to open this doo
 endmsg
-slaying set_individual_value fire
 x 15
 y 6
 end
@@ -2596,11 +2596,11 @@ y 6
 end
 arch locked_door2
 name Water Door
+slaying set_individual_value water
 msg
 You need the Water Key to open this
 doo
 endmsg
-slaying set_individual_value water
 x 16
 y 6
 end

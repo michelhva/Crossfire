@@ -1,14 +1,15 @@
 arch map
+name Jacob's Lighting Emporium
+difficulty 1
 region scorn
-name Medieval Lighting Outlet
+shopitems lamp:95;*:-40
+shopmax 2000
+width 20
+height 15
 msg
 Creator: CF Java Map Editor
 Date:    12/28/2002
 endmsg
-width 20
-height 15
-shopitems lamp:95;*:-40
-shopmax 2000
 end
 arch shop_empty
 end
@@ -77,25 +78,25 @@ end
 arch flagstone
 y 11
 end
-arch dwall_2_1_1
+arch dwall_1_2
 y 11
 end
 arch flagstone
 y 12
+no_magic 1
+damned 1
 end
-arch dwall_2_1_1
+arch oakdoor
+slaying /world/world_105_115
+face odoor_1.111
+hp 17
+sp 39
 y 12
 end
 arch flagstone
-no_magic 1
-damned 1
 y 13
 end
-arch oakdoor
-face odoor_1.111
-slaying /world/world_105_115
-hp 17
-sp 39
+arch dwall_1_1
 y 13
 end
 arch flagstone
@@ -155,22 +156,22 @@ x 1
 y 10
 end
 arch flagstone
-no_magic 1
-damned 1
 x 1
 y 11
-end
-arch flagstone
 no_magic 1
 damned 1
+end
+arch flagstone
 x 1
 y 12
-end
-arch flagstone
 no_magic 1
 damned 1
+end
+arch flagstone
 x 1
 y 13
+no_magic 1
+damned 1
 end
 arch flagstone
 x 1
@@ -239,16 +240,16 @@ x 2
 y 11
 end
 arch flagstone
-no_magic 1
-damned 1
 x 2
 y 12
-end
-arch flagstone
 no_magic 1
 damned 1
+end
+arch flagstone
 x 2
 y 13
+no_magic 1
+damned 1
 end
 arch menu
 x 2
@@ -478,7 +479,7 @@ y 12
 end
 arch sign_e
 msg
-Keep the shop tidy... 
+Keep the shop tidy...
 Sell your items in Jacob's Pawn!
 endmsg
 x 5
@@ -490,7 +491,7 @@ y 13
 end
 arch sign_e
 msg
-Keep the shop tidy... 
+Keep the shop tidy...
 Sell your items in Jacob's Pawn!
 endmsg
 x 5
@@ -566,6 +567,10 @@ arch shop_empty
 x 6
 y 12
 end
+arch swall_1_2_half
+x 6
+y 12
+end
 arch shop_empty
 x 6
 y 13
@@ -629,10 +634,10 @@ x 7
 y 10
 end
 arch cobblestones
-no_magic 1
-damned 1
 x 7
 y 11
+no_magic 1
+damned 1
 end
 arch silver_converter
 food 11
@@ -706,10 +711,10 @@ x 8
 y 10
 end
 arch cobblestones
-no_magic 1
-damned 1
 x 8
 y 11
+no_magic 1
+damned 1
 end
 arch gold_converter
 food 6
@@ -1010,9 +1015,9 @@ y 11
 end
 arch serp_skin
 title Jacob
-value 1
 x 12
 y 11
+value 1
 end
 arch shop_empty
 x 12
@@ -1022,13 +1027,13 @@ arch fatman
 name Jacob
 msg
 @match *
-Feel free to look around my small shop... 
-All goods are little used.  Need cash?  
+Feel free to look around my small shop...
+All goods are little used.  Need cash?
 I buy almost anything.
 endmsg
-randomitems snake
 x 12
 y 12
+randomitems snake
 arch bonecrusher
 end
 arch pipe

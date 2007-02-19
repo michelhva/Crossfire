@@ -1,13 +1,14 @@
 arch map
+name Dragon Hangar
+difficulty 1
 region stoneville
-name hangar2
+width 32
+height 32
 msg
 Creator: Philipp Currlin
 Email: philipp.currlin@epost.de
 Date: Tue Mar  6 23:36:30 2001
 endmsg
-x 32
-y 32
 end
 arch dungeon_floor
 end
@@ -1330,7 +1331,7 @@ qualities.
 @match *
 A dragon will be delivered any minute
 now, can you help me to get him into the
-large room? 
+large room?
 endmsg
 sp 0
 maxsp 0
@@ -1359,16 +1360,16 @@ resist_counterspell 100
 resist_godpower 100
 resist_holyword 100
 resist_blind 100
-pick_up 0
 will_apply 0
-can_apply 0
 friendly 1
 unaggressive 0
+pick_up 0
 can_cast_spell 0
 can_use_armour 0
 can_use_weapon 0
 stand_still 1
 can_use_skill 0
+can_apply 0
 end
 arch dungeon_floor
 x 7

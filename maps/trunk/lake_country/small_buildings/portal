@@ -1,12 +1,14 @@
 arch map
+name Portal
+difficulty 1
 region lakecountry
+width 8
+height 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May  9 02:38:22 1995
 endmsg
-x 8
-y 8
 end
 arch woodfloor
 end

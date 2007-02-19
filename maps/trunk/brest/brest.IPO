@@ -94,6 +94,10 @@ arch woodfloor
 x 1
 y 2
 end
+arch dungeon_magic
+x 1
+y 3
+end
 arch woodfloor
 x 1
 y 3
@@ -106,28 +110,24 @@ arch swall_2_1_2
 x 1
 y 3
 end
-arch dungeon_magic
-x 1
-y 3
-end
 arch woodfloor
 x 1
 y 4
 end
 arch mailbox
-arch event_close
-slaying /python/IPO/send.py
-title Python
-end
-arch event_apply
-slaying /python/IPO/receive.py
-title Python
-end
 x 1
 y 4
 material 0
 weight 0
 no_pick 1
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 end
 arch woodfloor
 x 1
@@ -179,13 +179,17 @@ msg
 Seems the mail's down... sorry, come
 back once the required law is passed.
 endmsg
-arch event_say
-slaying /python/IPO/say.py
-title Python
-end
 x 2
 y 2
 level 115
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
+end
+arch dungeon_magic
+x 2
+y 3
 end
 arch woodfloor
 x 2
@@ -196,10 +200,6 @@ x 2
 y 3
 end
 arch swall_2_1_2
-x 2
-y 3
-end
-arch dungeon_magic
 x 2
 y 3
 end
@@ -245,6 +245,10 @@ arch woodfloor
 x 3
 y 2
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch woodfloor
 x 3
 y 3
@@ -254,10 +258,6 @@ x 3
 y 3
 end
 arch swall_2_1_2
-x 3
-y 3
-end
-arch dungeon_magic
 x 3
 y 3
 end
@@ -504,13 +504,13 @@ msg
 I am a talking board, please say something to me.
 If you don't know what to say, try help.
 endmsg
-arch event_say
-slaying /python/IPO/board.py
-title Python
-name Brest board
-end
 x 7
 y 4
+arch event_say
+name Brest board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch woodfloor
 x 7

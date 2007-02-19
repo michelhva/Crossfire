@@ -1,13 +1,14 @@
 arch map
-name goblin fortress
+name Goblin Fortress
+difficulty 1
 region portjoseph
+width 24
+height 24
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Fri Jul 22 20:28:18 1994
 endmsg
-width 24
-height 24
 end
 arch dungeon_floor
 end
@@ -173,9 +174,9 @@ x 1
 y 6
 end
 arch door_look_1
-blocksview 1
 x 1
 y 6
+blocksview 1
 end
 arch dungeon_floor
 x 1
@@ -1320,9 +1321,9 @@ end
 arch igate_closed_2
 name wall
 face dwall_5.111
-connected 2
 x 9
 y 4
+connected 2
 end
 arch dungeon_floor
 x 9
@@ -1467,14 +1468,14 @@ x 10
 y 3
 end
 arch altar
+slaying gold coin
 msg
 rumble . . . rumble . .
 endmsg
-slaying gold coin
 food 1
-connected 2
 x 10
 y 4
+connected 2
 end
 arch dungeon_floor
 x 10
@@ -1783,23 +1784,23 @@ end
 arch goblin
 name goblin guard
 hp 8
-unaggressive 1
 x 12
 y 12
+unaggressive 1
 end
 arch dungeon_floor
 x 12
 y 13
 end
 arch trigger
-connected 1
 x 12
 y 13
+connected 1
 end
 arch goblin
-unaggressive 1
 x 12
 y 13
+unaggressive 1
 end
 arch dungeon_floor
 x 12
@@ -1935,9 +1936,9 @@ x 13
 y 14
 end
 arch grate_closed_1
-connected 1
 x 13
 y 14
+connected 1
 end
 arch pstone_1
 x 13
@@ -1996,9 +1997,9 @@ end
 arch goblin
 name goblin guard
 hp 8
-unaggressive 1
 x 14
 y 1
+unaggressive 1
 end
 arch dungeon_floor
 x 14
@@ -2057,9 +2058,9 @@ x 14
 y 14
 end
 arch grate_closed_1
-connected 1
 x 14
 y 14
+connected 1
 end
 arch pstone_1
 x 14
@@ -2131,10 +2132,10 @@ dungeons.  Only I have the key!
 I am the king here!  Get out!
 endmsg
 hp 60
-carrying 100
-unaggressive 1
 x 15
 y 1
+carrying 100
+unaggressive 1
 arch key2
 name a rusty key
 slaying lrusty
@@ -2201,9 +2202,9 @@ x 15
 y 14
 end
 arch grate_closed_1
-connected 1
 x 15
 y 14
+connected 1
 end
 arch pstone_1
 x 15
@@ -2261,9 +2262,9 @@ end
 arch goblin
 name goblin guard
 hp 8
-unaggressive 1
 x 16
 y 1
+unaggressive 1
 end
 arch dungeon_floor
 x 16
@@ -2338,9 +2339,9 @@ x 16
 y 13
 end
 arch goblin
-unaggressive 1
 x 16
 y 13
+unaggressive 1
 end
 arch dungeon_floor
 x 16

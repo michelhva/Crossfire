@@ -1,13 +1,14 @@
 arch map
+name Burial Ground
+difficulty 1
 region lakecountry
-name burial_ground
+width 8
+height 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 20 08:27:08 1995
 endmsg
-width 8
-height 8
 end
 arch dungeon_floor
 end
@@ -107,35 +108,34 @@ name Ragnarok's gravestone
 msg
 I wish to see Morrigan once more
 endmsg
-material 2
 x 1
 y 1
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_ear
 msg
 @match Ragnarok
 You feel hopeful.
 endmsg
-connected 1
 x 1
 y 1
+connected 1
 end
 arch teleporter
 name An image of a ghost
-face ghost.111
+slaying /world/world_109_126
 msg
 @match *
 "Tell me my name .. Who am I?"
 endmsg
-slaying /world/world_109_126
+face ghost.111
 hp 18
 sp 22
-speed 0.000000
-connected 1
 x 1
 y 1
+speed 0.000000
+connected 1
 end
 arch dungeon_floor
 x 1
@@ -217,9 +217,9 @@ x 1
 y 3
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 1
 y 3
+speed_left -297.100006
 end
 arch gravestone
 name Sannantes's Gravestone
@@ -228,8 +228,8 @@ Sannantes Rests Here
 endmsg
 x 1
 y 3
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -304,8 +304,8 @@ Fourth Princess of Khundsdorf
 endmsg
 x 1
 y 4
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -373,9 +373,9 @@ x 1
 y 5
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 1
 y 5
+speed_left -297.100006
 end
 arch gravestone
 name Unmoving ghost
@@ -463,8 +463,8 @@ I wish to rest in peace
 endmsg
 x 1
 y 6
-no_pick 1
 material 0
+no_pick 1
 end
 arch dungeon_floor
 x 1
@@ -599,8 +599,8 @@ I will revenge
 endmsg
 x 2
 y 2
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -674,8 +674,8 @@ Volgenriss Sleeps forever Here.
 endmsg
 x 2
 y 3
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -749,8 +749,8 @@ H.j..uik .es. H.r.
 endmsg
 x 2
 y 4
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -800,12 +800,12 @@ exp 200000
 dam 30
 wc -20
 ac -20
-level 100
-immune 28
-attacktype 285
-carrying 7500
 x 2
 y 5
+level 100
+attacktype 285
+carrying 7500
+immune 28
 arch staff
 name Staff
 sp 35
@@ -815,8 +815,8 @@ identified 1
 end
 arch pyro_book
 value 1600
-identified 1
 randomitems none
+identified 1
 arch spell_comet
 end
 end
@@ -901,9 +901,9 @@ x 2
 y 6
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 2
 y 6
+speed_left -297.100006
 end
 arch gravestone
 name Arch Stenton's Gravestone
@@ -913,8 +913,8 @@ he lived, without any gold in his pockets.
 endmsg
 x 2
 y 6
-no_pick 1
 material 0
+no_pick 1
 end
 arch dungeon_floor
 x 2
@@ -996,9 +996,9 @@ x 3
 y 1
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 3
 y 1
+speed_left -297.100006
 end
 arch gravestone
 name Unnamed Gravestone
@@ -1007,8 +1007,8 @@ Whoever he may be, may He Find Fido(tm).
 endmsg
 x 3
 y 1
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1058,8 +1058,8 @@ In Memoriam, His Wife and 44 Children.
 endmsg
 x 3
 y 2
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1109,8 +1109,8 @@ I told them I was sick !
 endmsg
 x 3
 y 3
-no_pick 1
 material 0
+no_pick 1
 end
 arch corpse1
 name A newly killed adventurer's corpse
@@ -1201,8 +1201,8 @@ In the Celestial Caves of Oron.
 endmsg
 x 3
 y 4
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1273,8 +1273,8 @@ arch gravestone
 name Gurashdah the Old's Gravestone
 x 3
 y 5
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1345,8 +1345,8 @@ arch gravestone
 name Gurashdah the Young's Gravestone
 x 3
 y 6
-no_pick 1
 material 0
+no_pick 1
 end
 arch dungeon_floor
 x 3
@@ -1435,8 +1435,8 @@ short life of 947 years.
 endmsg
 x 4
 y 1
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1486,8 +1486,8 @@ Remember Us, the Driffens
 endmsg
 x 4
 y 2
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1539,8 +1539,8 @@ stepping inside.
 endmsg
 x 4
 y 3
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1614,8 +1614,8 @@ Jurudas Sleeps Forever Here.
 endmsg
 x 4
 y 4
-no_pick 1
 material 0
+no_pick 1
 end
 arch corpse
 name bob's decayed corpse
@@ -1694,14 +1694,14 @@ end
 arch gravestone
 name Morind's Gravestone
 msg
-   *** RIP ***
+*** RIP ***
 Morind Termaness
- 3474EK-3561EK
+3474EK-3561EK
 endmsg
 x 4
 y 5
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1769,16 +1769,16 @@ x 4
 y 6
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 4
 y 6
+speed_left -297.100006
 end
 arch gravestone
 name <erased name>
 x 4
 y 6
-no_pick 1
 material 0
+no_pick 1
 end
 arch dungeon_floor
 x 4
@@ -1860,9 +1860,9 @@ x 5
 y 1
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 5
 y 1
+speed_left -297.100006
 end
 arch gravestone
 name Ancient Gravestone
@@ -1871,8 +1871,8 @@ Simosianius Alidritus Rests Here
 endmsg
 x 5
 y 1
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -1922,18 +1922,18 @@ Death cannot trap me
 endmsg
 x 5
 y 2
-no_pick 1
 material 0
+no_pick 1
 end
 arch lich
 name Igor, the Lich
 hp 3000
 wc -12
+x 5
+y 2
 speed 2.000000
 level 30
 flying 1
-x 5
-y 2
 end
 arch magic_mouth
 name howling voice
@@ -1980,8 +1980,8 @@ arch gravestone
 name Hajij's Gravestone
 x 5
 y 3
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2055,8 +2055,8 @@ Jurudan the Blond rests here.
 endmsg
 x 5
 y 4
-no_pick 1
 material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2128,10 +2128,10 @@ name Elbereth's gravestone
 msg
 Peace! in life or in death!
 endmsg
-no_pick 1
-material 0
 x 5
 y 5
+material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2261,9 +2261,9 @@ msg
 @match Ragnarok
 You feel hopeful.
 endmsg
-connected 1
 x 6
 y 1
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -2299,10 +2299,10 @@ msg
 I wish someone bring Dragonbane back
 and rid the land of dragons
 endmsg
-no_pick 1
-material 0
 x 6
 y 1
+material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2370,19 +2370,19 @@ x 6
 y 2
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 6
 y 2
+speed_left -297.100006
 end
 arch gravestone
 name Ragnor's Gravestone
 msg
 Rumors of my death are greatly exaggerated.
 endmsg
-no_pick 1
-material 0
 x 6
 y 2
+material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2454,10 +2454,10 @@ name Memorial of 444719
 msg
 High Priestess of Fido, Marshall of the Crusaders.
 endmsg
-no_pick 1
-material 0
 x 6
 y 3
+material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2525,16 +2525,16 @@ x 6
 y 4
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 6
 y 4
+speed_left -297.100006
 end
 arch gravestone
 name Aldurian Noren Rests Here
-no_pick 1
-material 0
 x 6
 y 4
+material 0
+no_pick 1
 end
 arch magic_mouth
 name howling voice
@@ -2673,9 +2673,9 @@ x 6
 y 6
 end
 arch rune_ball_lightning
-speed_left -297.100006
 x 6
 y 6
+speed_left -297.100006
 end
 arch gravestone
 name Bear's gravestone

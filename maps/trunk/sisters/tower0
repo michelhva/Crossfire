@@ -1,11 +1,14 @@
 arch map
-name tower0
+name Three Sisters Tower
+difficulty 1
+darkness 5
+width 16
+height 16
 msg
 Creator: bt
 Email: thomas@astro.psu.edu
 Date: Sun Dec 18 12:06:52 1994
 endmsg
-invisible 5
 end
 arch blocked
 end
@@ -1843,52 +1846,10 @@ ac -5
 x 3
 y 7
 level 20
-vulnerable 0
 carrying 12
 see_invisible 1
+vulnerable 0
 arch heart
 name Gygax's heart
 end
-end
-More
-arch troll_2
-name Gygax the hideous troll
-Str 80
-hp 8000
-exp 100000
-dam 70
-wc -10
-ac -5
-x 4
-y 7
-level 20
-see_invisible 1
-end
-More
-arch troll_3
-name Gygax the hideous troll
-Str 80
-hp 8000
-exp 100000
-dam 70
-wc -10
-ac -5
-x 3
-y 8
-level 20
-see_invisible 1
-end
-More
-arch troll_4
-name Gygax the hideous troll
-Str 80
-hp 8000
-exp 100000
-dam 70
-wc -10
-ac -5
-x 4
-y 8
-level 20
-see_invisible 1
 end

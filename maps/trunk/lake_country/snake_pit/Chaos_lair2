@@ -1,8 +1,8 @@
 arch map
-region lakecountry
-name Chaos_lair2
+name Chaos Lair
 reset_timeout 7200
 difficulty 16
+region lakecountry
 darkness 5
 width 25
 height 41
@@ -14,66 +14,19 @@ Email: xkd@soda.berkeley.edu
 Date: Sun Jun  4 17:33:01 1995
 endmsg
 end
-arch pentagram_111
-hp 17
-sp 7
-connected 31
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-speed 0.700000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 35000
-flying 1
-arch abil_icestorm
-end
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch gem
-nrof 700
-end
-end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch large_stones
@@ -95,148 +48,90 @@ arch cave23
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch blocked
-msg
-endmsg
 y 27
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch blocked
-msg
-endmsg
 y 33
 end
 arch blocked
-msg
-endmsg
 y 34
 end
 arch blocked
-msg
-endmsg
 y 35
 end
 arch blocked
-msg
-endmsg
 y 36
 end
 arch blocked
-msg
-endmsg
 y 37
 end
 arch blocked
-msg
-endmsg
 y 38
 end
 arch blocked
-msg
-endmsg
 y 39
 end
 arch blocked
@@ -246,20 +141,14 @@ arch large_stones
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
@@ -308,110 +197,74 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 25
 end
 arch blocked
-msg
-endmsg
 x 1
 y 26
 end
 arch blocked
-msg
-endmsg
 x 1
 y 27
 end
 arch blocked
-msg
-endmsg
 x 1
 y 28
 end
 arch blocked
-msg
-endmsg
 x 1
 y 29
 end
@@ -422,24 +275,6 @@ x 1
 y 30
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 30
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 12
 sp 32
@@ -448,8 +283,6 @@ y 31
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 32
 end
@@ -460,24 +293,6 @@ x 1
 y 33
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 33
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 11
 sp 32
@@ -486,8 +301,6 @@ y 34
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 35
 end
@@ -498,24 +311,6 @@ x 1
 y 36
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 36
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 10
 sp 32
@@ -524,14 +319,10 @@ y 37
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 38
 end
 arch blocked
-msg
-endmsg
 x 1
 y 39
 end
@@ -540,20 +331,14 @@ x 1
 y 40
 end
 arch blocked
-msg
-endmsg
 x 2
 y 3
 end
 arch blocked
-msg
-endmsg
 x 2
 y 4
 end
 arch blocked
-msg
-endmsg
 x 2
 y 5
 end
@@ -639,152 +424,102 @@ x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
 arch blocked
-msg
-endmsg
 x 2
 y 16
 end
 arch blocked
-msg
-endmsg
 x 2
 y 17
 end
 arch blocked
-msg
-endmsg
 x 2
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 22
 end
 arch blocked
-msg
-endmsg
 x 2
 y 23
 end
 arch blocked
-msg
-endmsg
 x 2
 y 24
 end
 arch blocked
-msg
-endmsg
 x 2
 y 25
 end
 arch blocked
-msg
-endmsg
 x 2
 y 26
 end
 arch blocked
-msg
-endmsg
 x 2
 y 27
 end
 arch blocked
-msg
-endmsg
 x 2
 y 28
 end
 arch blocked
-msg
-endmsg
 x 2
 y 29
 end
 arch blocked
-msg
-endmsg
 x 2
 y 30
 end
 arch blocked
-msg
-endmsg
 x 2
 y 31
 end
 arch blocked
-msg
-endmsg
 x 2
 y 32
 end
 arch blocked
-msg
-endmsg
 x 2
 y 33
 end
 arch blocked
-msg
-endmsg
 x 2
 y 34
 end
 arch blocked
-msg
-endmsg
 x 2
 y 35
 end
 arch blocked
-msg
-endmsg
 x 2
 y 36
 end
 arch blocked
-msg
-endmsg
 x 2
 y 37
 end
 arch blocked
-msg
-endmsg
 x 2
 y 38
 end
 arch blocked
-msg
-endmsg
 x 2
 y 39
 end
@@ -793,31 +528,21 @@ x 2
 y 40
 end
 arch blocked
-msg
-endmsg
 x 3
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
 arch blocked
-msg
-endmsg
 x 3
 y 2
 end
 arch blocked
-msg
-endmsg
 x 3
 y 3
 end
 arch blocked
-msg
-endmsg
 x 3
 y 4
 end
@@ -871,45 +596,6 @@ arch large_stones
 x 3
 y 11
 end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 3
-y 11
-speed 0.400000
-speed_left -1.710000
-level 30
-resist_physical 100
-resist_magic 100
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_paralyze 100
-carrying 35000
-flying 1
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-no_pick 1
-randomitems none
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
 arch large_stones
 x 3
 y 12
@@ -927,152 +613,102 @@ x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 15
 end
 arch blocked
-msg
-endmsg
 x 3
 y 16
 end
 arch blocked
-msg
-endmsg
 x 3
 y 17
 end
 arch blocked
-msg
-endmsg
 x 3
 y 18
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 20
 end
 arch blocked
-msg
-endmsg
 x 3
 y 21
 end
 arch blocked
-msg
-endmsg
 x 3
 y 22
 end
 arch blocked
-msg
-endmsg
 x 3
 y 23
 end
 arch blocked
-msg
-endmsg
 x 3
 y 24
 end
 arch blocked
-msg
-endmsg
 x 3
 y 25
 end
 arch blocked
-msg
-endmsg
 x 3
 y 26
 end
 arch blocked
-msg
-endmsg
 x 3
 y 27
 end
 arch blocked
-msg
-endmsg
 x 3
 y 28
 end
 arch blocked
-msg
-endmsg
 x 3
 y 29
 end
 arch blocked
-msg
-endmsg
 x 3
 y 30
 end
 arch blocked
-msg
-endmsg
 x 3
 y 31
 end
 arch blocked
-msg
-endmsg
 x 3
 y 32
 end
 arch blocked
-msg
-endmsg
 x 3
 y 33
 end
 arch blocked
-msg
-endmsg
 x 3
 y 34
 end
 arch blocked
-msg
-endmsg
 x 3
 y 35
 end
 arch blocked
-msg
-endmsg
 x 3
 y 36
 end
 arch blocked
-msg
-endmsg
 x 3
 y 37
 end
 arch blocked
-msg
-endmsg
 x 3
 y 38
 end
 arch blocked
-msg
-endmsg
 x 3
 y 39
 end
@@ -1081,19 +717,13 @@ x 3
 y 40
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 2
 end
@@ -1158,158 +788,106 @@ x 4
 y 13
 end
 arch blocked
-msg
-endmsg
 x 4
 y 14
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
 arch blocked
-msg
-endmsg
 x 4
 y 16
 end
 arch blocked
-msg
-endmsg
 x 4
 y 17
 end
 arch blocked
-msg
-endmsg
 x 4
 y 18
 end
 arch blocked
-msg
-endmsg
 x 4
 y 19
 end
 arch blocked
-msg
-endmsg
 x 4
 y 20
 end
 arch blocked
-msg
-endmsg
 x 4
 y 21
 end
 arch blocked
-msg
-endmsg
 x 4
 y 22
 end
 arch blocked
-msg
-endmsg
 x 4
 y 23
 end
 arch blocked
-msg
-endmsg
 x 4
 y 24
 end
 arch blocked
-msg
-endmsg
 x 4
 y 25
 end
 arch blocked
-msg
-endmsg
 x 4
 y 26
 end
 arch blocked
-msg
-endmsg
 x 4
 y 27
 end
 arch blocked
-msg
-endmsg
 x 4
 y 28
 end
 arch blocked
-msg
-endmsg
 x 4
 y 29
 end
 arch blocked
-msg
-endmsg
 x 4
 y 30
 end
 arch blocked
-msg
-endmsg
 x 4
 y 31
 end
 arch blocked
-msg
-endmsg
 x 4
 y 32
 end
 arch blocked
-msg
-endmsg
 x 4
 y 33
 end
 arch blocked
-msg
-endmsg
 x 4
 y 34
 end
 arch blocked
-msg
-endmsg
 x 4
 y 35
 end
 arch blocked
-msg
-endmsg
 x 4
 y 36
 end
 arch blocked
-msg
-endmsg
 x 4
 y 37
 end
 arch blocked
-msg
-endmsg
 x 4
 y 38
 end
 arch blocked
-msg
-endmsg
 x 4
 y 39
 end
@@ -1318,19 +896,13 @@ x 4
 y 40
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 y 1
 end
 arch blocked
-msg
-endmsg
 x 5
 y 2
 end
@@ -1491,56 +1063,38 @@ x 5
 y 25
 end
 arch blocked
-msg
-endmsg
 x 5
 y 26
 end
 arch blocked
-msg
-endmsg
 x 5
 y 27
 end
 arch blocked
-msg
-endmsg
 x 5
 y 28
 end
 arch blocked
-msg
-endmsg
 x 5
 y 29
 end
 arch blocked
-msg
-endmsg
 x 5
 y 30
 end
 arch blocked
-msg
-endmsg
 x 5
 y 31
 end
 arch blocked
-msg
-endmsg
 x 5
 y 32
 end
 arch blocked
-msg
-endmsg
 x 5
 y 33
 end
 arch blocked
-msg
-endmsg
 x 5
 y 34
 end
@@ -1556,26 +1110,18 @@ y 35
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 5
 y 36
 end
 arch blocked
-msg
-endmsg
 x 5
 y 37
 end
 arch blocked
-msg
-endmsg
 x 5
 y 38
 end
 arch blocked
-msg
-endmsg
 x 5
 y 39
 end
@@ -1588,19 +1134,13 @@ x 5
 y 40
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 2
 end
@@ -1826,26 +1366,18 @@ x 6
 y 26
 end
 arch blocked
-msg
-endmsg
 x 6
 y 27
 end
 arch blocked
-msg
-endmsg
 x 6
 y 28
 end
 arch blocked
-msg
-endmsg
 x 6
 y 29
 end
 arch blocked
-msg
-endmsg
 x 6
 y 30
 end
@@ -1874,32 +1406,22 @@ x 6
 y 33
 end
 arch blocked
-msg
-endmsg
 x 6
 y 34
 end
 arch blocked
-msg
-endmsg
 x 6
 y 35
 end
 arch blocked
-msg
-endmsg
 x 6
 y 36
 end
 arch blocked
-msg
-endmsg
 x 6
 y 37
 end
 arch blocked
-msg
-endmsg
 x 6
 y 38
 end
@@ -1916,31 +1438,21 @@ x 6
 y 40
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 2
 end
 arch blocked
-msg
-endmsg
 x 7
 y 3
 end
 arch blocked
-msg
-endmsg
 x 7
 y 4
 end
@@ -2128,26 +1640,18 @@ x 7
 y 34
 end
 arch blocked
-msg
-endmsg
 x 7
 y 35
 end
 arch blocked
-msg
-endmsg
 x 7
 y 36
 end
 arch blocked
-msg
-endmsg
 x 7
 y 37
 end
 arch blocked
-msg
-endmsg
 x 7
 y 38
 end
@@ -2164,13 +1668,9 @@ x 7
 y 40
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -2393,8 +1893,6 @@ x 8
 y 37
 end
 arch blocked
-msg
-endmsg
 x 8
 y 38
 end
@@ -2692,7 +2190,7 @@ y 4
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 10
@@ -2863,7 +2361,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 10
 y 34
@@ -2951,7 +2449,7 @@ y 4
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 11
@@ -2970,7 +2468,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 11
@@ -3152,7 +2650,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 11
 y 34
@@ -3436,8 +2934,8 @@ connected 1
 end
 arch magic_mouth
 msg
-  You feel you need to do something to
-open the gate, a password or to identify 
+You feel you need to do something to
+open the gate, a password or to identify
 yourself
 endmsg
 x 12
@@ -3457,7 +2955,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 12
 y 34
@@ -3775,7 +3273,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 13
 y 34
@@ -4043,8 +3541,8 @@ connected 1
 end
 arch magic_mouth
 msg
-  You feel you need to do something to
-open the gate, a password or to identify 
+You feel you need to do something to
+open the gate, a password or to identify
 yourself
 endmsg
 x 14
@@ -4064,7 +3562,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 14
 y 34
@@ -4163,7 +3661,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 15
@@ -4175,7 +3673,7 @@ y 6
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 15
@@ -4331,7 +3829,7 @@ y 33
 end
 arch magic_mouth
 msg
- It's deathly quiet here.
+It's deathly quiet here.
 endmsg
 x 15
 y 34
@@ -4431,7 +3929,7 @@ y 5
 end
 arch magic_mouth
 msg
-  Blasts of hot air coming from inner
+Blasts of hot air coming from inner
 cavern. Hotter than any fire
 endmsg
 x 16
@@ -4639,13 +4137,9 @@ x 16
 y 40
 end
 arch blocked
-msg
-endmsg
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 y 1
 end
@@ -4707,8 +4201,8 @@ name stones
 face largestone.111
 x 17
 y 9
-no_pick 1
 randomitems none
+no_pick 1
 arch spell_color_spray
 end
 end
@@ -4883,8 +4377,6 @@ x 17
 y 37
 end
 arch blocked
-msg
-endmsg
 x 17
 y 38
 end
@@ -4901,31 +4393,21 @@ x 17
 y 40
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 y 1
 end
 arch blocked
-msg
-endmsg
 x 18
 y 2
 end
 arch blocked
-msg
-endmsg
 x 18
 y 3
 end
 arch blocked
-msg
-endmsg
 x 18
 y 4
 end
@@ -5103,20 +4585,14 @@ x 18
 y 36
 end
 arch blocked
-msg
-endmsg
 x 18
 y 37
 end
 arch blocked
-msg
-endmsg
 x 18
 y 38
 end
 arch blocked
-msg
-endmsg
 x 18
 y 39
 end
@@ -5169,8 +4645,6 @@ y 1
 connected 31
 end
 arch blocked
-msg
-endmsg
 x 19
 y 2
 end
@@ -5368,14 +4842,10 @@ x 19
 y 27
 end
 arch blocked
-msg
-endmsg
 x 19
 y 28
 end
 arch blocked
-msg
-endmsg
 x 19
 y 29
 end
@@ -5398,7 +4868,7 @@ end
 arch magic_ear
 msg
 @match *
-  You broke the silence and summoned the
+You broke the silence and summoned the
 guardians.
 endmsg
 x 19
@@ -5438,20 +4908,14 @@ x 19
 y 36
 end
 arch blocked
-msg
-endmsg
 x 19
 y 37
 end
 arch blocked
-msg
-endmsg
 x 19
 y 38
 end
 arch blocked
-msg
-endmsg
 x 19
 y 39
 end
@@ -5464,19 +4928,13 @@ x 19
 y 40
 end
 arch blocked
-msg
-endmsg
 x 20
 end
 arch blocked
-msg
-endmsg
 x 20
 y 1
 end
 arch blocked
-msg
-endmsg
 x 20
 y 2
 end
@@ -5645,26 +5103,18 @@ x 20
 y 26
 end
 arch blocked
-msg
-endmsg
 x 20
 y 27
 end
 arch blocked
-msg
-endmsg
 x 20
 y 28
 end
 arch blocked
-msg
-endmsg
 x 20
 y 29
 end
 arch blocked
-msg
-endmsg
 x 20
 y 30
 end
@@ -5701,32 +5151,22 @@ x 20
 y 34
 end
 arch blocked
-msg
-endmsg
 x 20
 y 35
 end
 arch blocked
-msg
-endmsg
 x 20
 y 36
 end
 arch blocked
-msg
-endmsg
 x 20
 y 37
 end
 arch blocked
-msg
-endmsg
 x 20
 y 38
 end
 arch blocked
-msg
-endmsg
 x 20
 y 39
 end
@@ -5739,19 +5179,13 @@ x 20
 y 40
 end
 arch blocked
-msg
-endmsg
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
 arch blocked
-msg
-endmsg
 x 21
 y 2
 end
@@ -5863,8 +5297,6 @@ x 21
 y 15
 end
 arch blocked
-msg
-endmsg
 x 21
 y 16
 end
@@ -5885,8 +5317,6 @@ x 21
 y 18
 end
 arch blocked
-msg
-endmsg
 x 21
 y 19
 end
@@ -5907,8 +5337,6 @@ x 21
 y 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 22
 end
@@ -5929,44 +5357,30 @@ x 21
 y 24
 end
 arch blocked
-msg
-endmsg
 x 21
 y 25
 end
 arch blocked
-msg
-endmsg
 x 21
 y 26
 end
 arch blocked
-msg
-endmsg
 x 21
 y 27
 end
 arch blocked
-msg
-endmsg
 x 21
 y 28
 end
 arch blocked
-msg
-endmsg
 x 21
 y 29
 end
 arch blocked
-msg
-endmsg
 x 21
 y 30
 end
 arch blocked
-msg
-endmsg
 x 21
 y 31
 end
@@ -5987,38 +5401,26 @@ x 21
 y 33
 end
 arch blocked
-msg
-endmsg
 x 21
 y 34
 end
 arch blocked
-msg
-endmsg
 x 21
 y 35
 end
 arch blocked
-msg
-endmsg
 x 21
 y 36
 end
 arch blocked
-msg
-endmsg
 x 21
 y 37
 end
 arch blocked
-msg
-endmsg
 x 21
 y 38
 end
 arch blocked
-msg
-endmsg
 x 21
 y 39
 end
@@ -6031,37 +5433,25 @@ x 21
 y 40
 end
 arch blocked
-msg
-endmsg
 x 22
 end
 arch blocked
-msg
-endmsg
 x 22
 y 1
 end
 arch blocked
-msg
-endmsg
 x 22
 y 2
 end
 arch blocked
-msg
-endmsg
 x 22
 y 3
 end
 arch blocked
-msg
-endmsg
 x 22
 y 4
 end
 arch blocked
-msg
-endmsg
 x 22
 y 5
 end
@@ -6130,170 +5520,114 @@ x 22
 y 12
 end
 arch blocked
-msg
-endmsg
 x 22
 y 13
 end
 arch blocked
-msg
-endmsg
 x 22
 y 14
 end
 arch blocked
-msg
-endmsg
 x 22
 y 15
 end
 arch blocked
-msg
-endmsg
 x 22
 y 16
 end
 arch blocked
-msg
-endmsg
 x 22
 y 17
 end
 arch blocked
-msg
-endmsg
 x 22
 y 18
 end
 arch blocked
-msg
-endmsg
 x 22
 y 19
 end
 arch blocked
-msg
-endmsg
 x 22
 y 20
 end
 arch blocked
-msg
-endmsg
 x 22
 y 21
 end
 arch blocked
-msg
-endmsg
 x 22
 y 22
 end
 arch blocked
-msg
-endmsg
 x 22
 y 23
 end
 arch blocked
-msg
-endmsg
 x 22
 y 24
 end
 arch blocked
-msg
-endmsg
 x 22
 y 25
 end
 arch blocked
-msg
-endmsg
 x 22
 y 26
 end
 arch blocked
-msg
-endmsg
 x 22
 y 27
 end
 arch blocked
-msg
-endmsg
 x 22
 y 28
 end
 arch blocked
-msg
-endmsg
 x 22
 y 29
 end
 arch blocked
-msg
-endmsg
 x 22
 y 30
 end
 arch blocked
-msg
-endmsg
 x 22
 y 31
 end
 arch blocked
-msg
-endmsg
 x 22
 y 32
 end
 arch blocked
-msg
-endmsg
 x 22
 y 33
 end
 arch blocked
-msg
-endmsg
 x 22
 y 34
 end
 arch blocked
-msg
-endmsg
 x 22
 y 35
 end
 arch blocked
-msg
-endmsg
 x 22
 y 36
 end
 arch blocked
-msg
-endmsg
 x 22
 y 37
 end
 arch blocked
-msg
-endmsg
 x 22
 y 38
 end
 arch blocked
-msg
-endmsg
 x 22
 y 39
 end
 arch blocked
-msg
-endmsg
 x 22
 y 40
 end
@@ -6329,26 +5663,18 @@ y 1
 connected 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 3
 end
 arch blocked
-msg
-endmsg
 x 23
 y 4
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
@@ -6405,104 +5731,70 @@ x 23
 y 12
 end
 arch blocked
-msg
-endmsg
 x 23
 y 13
 end
 arch blocked
-msg
-endmsg
 x 23
 y 14
 end
 arch blocked
-msg
-endmsg
 x 23
 y 15
 end
 arch blocked
-msg
-endmsg
 x 23
 y 16
 end
 arch blocked
-msg
-endmsg
 x 23
 y 17
 end
 arch blocked
-msg
-endmsg
 x 23
 y 18
 end
 arch blocked
-msg
-endmsg
 x 23
 y 19
 end
 arch blocked
-msg
-endmsg
 x 23
 y 20
 end
 arch blocked
-msg
-endmsg
 x 23
 y 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 22
 end
 arch blocked
-msg
-endmsg
 x 23
 y 23
 end
 arch blocked
-msg
-endmsg
 x 23
 y 24
 end
 arch blocked
-msg
-endmsg
 x 23
 y 25
 end
 arch blocked
-msg
-endmsg
 x 23
 y 26
 end
 arch blocked
-msg
-endmsg
 x 23
 y 27
 end
 arch blocked
-msg
-endmsg
 x 23
 y 28
 end
 arch blocked
-msg
-endmsg
 x 23
 y 29
 end
@@ -6513,24 +5805,6 @@ x 23
 y 30
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 30
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 15
 sp 32
@@ -6539,8 +5813,6 @@ y 31
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 32
 end
@@ -6551,24 +5823,6 @@ x 23
 y 33
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 33
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 14
 sp 32
@@ -6577,8 +5831,6 @@ y 34
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 35
 end
@@ -6589,24 +5841,6 @@ x 23
 y 36
 connected 2
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 36
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch pit_closed
 hp 13
 sp 32
@@ -6615,67 +5849,45 @@ y 37
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 38
 end
 arch blocked
-msg
-endmsg
 x 23
 y 39
 end
 arch blocked
-msg
-endmsg
 x 23
 y 40
 end
 arch blocked
-msg
-endmsg
 x 24
 end
 arch blocked
-msg
-endmsg
 x 24
 y 1
 end
 arch blocked
-msg
-endmsg
 x 24
 y 2
 end
 arch blocked
-msg
-endmsg
 x 24
 y 3
 end
 arch blocked
-msg
-endmsg
 x 24
 y 4
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
 arch blocked
-msg
-endmsg
 x 24
 y 6
 end
 arch blocked
-msg
-endmsg
 x 24
 y 7
 end
@@ -6704,182 +5916,306 @@ x 24
 y 10
 end
 arch blocked
-msg
-endmsg
 x 24
 y 11
 end
 arch blocked
-msg
-endmsg
 x 24
 y 12
 end
 arch blocked
-msg
-endmsg
 x 24
 y 13
 end
 arch blocked
-msg
-endmsg
 x 24
 y 14
 end
 arch blocked
-msg
-endmsg
 x 24
 y 15
 end
 arch blocked
-msg
-endmsg
 x 24
 y 16
 end
 arch blocked
-msg
-endmsg
 x 24
 y 17
 end
 arch blocked
-msg
-endmsg
 x 24
 y 18
 end
 arch blocked
-msg
-endmsg
 x 24
 y 19
 end
 arch blocked
-msg
-endmsg
 x 24
 y 20
 end
 arch blocked
-msg
-endmsg
 x 24
 y 21
 end
 arch blocked
-msg
-endmsg
 x 24
 y 22
 end
 arch blocked
-msg
-endmsg
 x 24
 y 23
 end
 arch blocked
-msg
-endmsg
 x 24
 y 24
 end
 arch blocked
-msg
-endmsg
 x 24
 y 25
 end
 arch blocked
-msg
-endmsg
 x 24
 y 26
 end
 arch blocked
-msg
-endmsg
 x 24
 y 27
 end
 arch blocked
-msg
-endmsg
 x 24
 y 28
 end
 arch blocked
-msg
-endmsg
 x 24
 y 29
 end
 arch blocked
-msg
-endmsg
 x 24
 y 30
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
 arch blocked
-msg
-endmsg
 x 24
 y 33
 end
 arch blocked
-msg
-endmsg
 x 24
 y 34
 end
 arch blocked
-msg
-endmsg
 x 24
 y 35
 end
 arch blocked
-msg
-endmsg
 x 24
 y 36
 end
 arch blocked
-msg
-endmsg
 x 24
 y 37
 end
 arch blocked
-msg
-endmsg
 x 24
 y 38
 end
 arch blocked
-msg
-endmsg
 x 24
 y 39
 end
 arch blocked
-msg
-endmsg
 x 24
 y 40
+end
+arch pentagram_111
+hp 17
+sp 7
+connected 31
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+speed 0.700000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 35000
+flying 1
+arch abil_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch gem
+nrof 700
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 30
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 33
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 36
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 3
+y 11
+speed 0.400000
+speed_left -1.710000
+level 30
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
+carrying 35000
+flying 1
+arch gem
+nrof 600
+end
+arch sorcerer_book
+name stones
+face largestone.111
+randomitems none
+no_pick 1
+arch spell_color_spray
+end
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 30
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 33
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 36
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end

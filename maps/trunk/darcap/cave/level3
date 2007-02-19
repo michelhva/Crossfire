@@ -1,9 +1,7 @@
 arch map
+name Hanshaugen Cave, Level 3
+difficulty 1
 region darcap
-name <untitled>
-msg
-
-endmsg
 width 60
 height 25
 end
@@ -4003,9 +4001,9 @@ y 3
 end
 arch gnome
 name Dwarf
-speed_left -1.300000
 x 32
 y 3
+speed_left -1.300000
 end
 arch medium_stones
 x 32
@@ -4917,10 +4915,10 @@ x 39
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 2
 x 39
 y 20
+speed 0.500000
+connected 2
 end
 arch bwall_0
 x 39
@@ -5030,9 +5028,9 @@ x 40
 y 20
 end
 arch button_small
-connected 2
 x 40
 y 20
+connected 2
 end
 arch small_stones
 x 40
@@ -5351,11 +5349,11 @@ x 43
 y 20
 end
 arch block_door_open
+x 43
+y 20
 speed 0.500000
 value 1
 connected 2
-x 43
-y 20
 end
 arch bwall_2_2_2
 x 43
@@ -5453,10 +5451,10 @@ x 44
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 44
 y 20
+speed 0.500000
+connected 1
 end
 arch bwall_2_2_3
 x 44
@@ -5558,9 +5556,9 @@ x 45
 y 19
 end
 arch button_small
-connected 1
 x 45
 y 20
+connected 1
 end
 arch small_stones
 x 45
@@ -6553,9 +6551,9 @@ x 55
 y 7
 end
 arch random_treasure
-nrof 6
 x 55
 y 7
+nrof 6
 end
 arch bwall_0
 x 55

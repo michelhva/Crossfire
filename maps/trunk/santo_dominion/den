@@ -1,8 +1,10 @@
 arch map
+name Seafarers Den
+difficulty 1
 region santodominion
-hp 12
-x 25
-y 25
+width 25
+height 25
+enter_x 12
 end
 arch dungeon_floor
 end

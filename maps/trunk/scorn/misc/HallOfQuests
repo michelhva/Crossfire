@@ -1,13 +1,14 @@
 arch map
+name Hall Of Quests
+difficulty 1
 region scorn
-name HallOfQuests
+width 32
+height 16
 msg
 Creator: Gnat the Gnu
 Email: peterm
 Date: Mon Jun  5 14:00:53 2000
 endmsg
-width 32
-height 16
 end
 arch woodfloor2
 end
@@ -269,6 +270,8 @@ end
 arch altar_trigger
 slaying Calamity
 food 1
+x 2
+y 5
 resist_physical 30
 resist_fire 30
 resist_electricity 30
@@ -277,8 +280,6 @@ resist_confusion 30
 invisible 1
 last_sp 1
 connected 61
-x 2
-y 5
 end
 arch pentagram
 x 2
@@ -288,6 +289,8 @@ arch teleporter
 slaying HallOfQuests
 hp 3
 sp 9
+x 2
+y 5
 speed 0.000000
 resist_physical 30
 resist_fire 30
@@ -296,8 +299,6 @@ resist_cold 30
 resist_confusion 30
 invisible 1
 connected 61
-x 2
-y 5
 end
 arch woodfloor2
 x 2
@@ -345,6 +346,8 @@ y 9
 end
 arch creator
 other_arch defender
+x 2
+y 9
 resist_physical 30
 resist_fire 30
 resist_electricity 30
@@ -352,8 +355,6 @@ resist_cold 30
 resist_confusion 30
 connected 61
 lifesave 1
-x 2
-y 9
 end
 arch woodfloor2
 x 2
@@ -458,9 +459,9 @@ The entrance to the warren in which
 the Lord Spectre resides may be found
 on the Pirate Island.
 endmsg
-no_pick 1
 x 3
 y 5
+no_pick 1
 end
 arch woodfloor2
 x 3
@@ -477,14 +478,14 @@ end
 arch detector
 slaying Noble Rank Archduke
 hp 1
+x 3
+y 7
 resist_fire 30
 resist_electricity 30
 resist_cold 30
 resist_confusion 30
 invisible 1
 connected 60
-x 3
-y 7
 end
 arch pentagram
 x 3
@@ -494,6 +495,8 @@ arch teleporter
 slaying HallOfQuests
 hp 3
 sp 5
+x 3
+y 7
 speed 0.000000
 resist_fire 30
 resist_electricity 30
@@ -501,8 +504,6 @@ resist_cold 30
 resist_confusion 30
 invisible 1
 connected 60
-x 3
-y 7
 end
 arch woodfloor2
 x 3
@@ -625,9 +626,9 @@ x 4
 y 7
 end
 arch door_look_2
-no_pass 0
 x 4
 y 7
+no_pass 0
 end
 arch woodfloor2
 x 4
@@ -1448,6 +1449,8 @@ end
 arch altar_trigger
 slaying Ruggilli's Whisker
 food 1
+x 12
+y 2
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -1456,8 +1459,6 @@ resist_cold 30
 invisible 1
 last_sp 1
 connected 31
-x 12
-y 2
 end
 arch pentagram
 x 12
@@ -1467,6 +1468,8 @@ arch teleporter
 slaying HallOfQuests
 hp 15
 sp 1
+x 12
+y 2
 speed 0.000000
 resist_physical 30
 resist_magic 30
@@ -1475,8 +1478,6 @@ resist_electricity 30
 resist_cold 30
 invisible 1
 connected 31
-x 12
-y 2
 end
 arch woodfloor2
 x 12
@@ -1506,9 +1507,9 @@ Dragonlords' Emissary.
 Return with the weapon and you will
 receive your Dukedom.
 endmsg
-no_pick 1
 x 12
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 12
@@ -1575,13 +1576,13 @@ y 12
 end
 arch creator
 other_arch holy_shield
+x 12
+y 12
 resist_physical 30
 resist_electricity 30
 resist_confusion 30
 connected 41
 lifesave 1
-x 12
-y 12
 end
 arch woodfloor2
 x 12
@@ -1752,14 +1753,14 @@ end
 arch detector
 slaying Noble Rank Count
 hp 1
+x 14
+y 3
 resist_magic 30
 resist_fire 30
 resist_electricity 30
 resist_cold 30
 invisible 1
 connected 30
-x 14
-y 3
 end
 arch pentagram
 x 14
@@ -1769,6 +1770,8 @@ arch teleporter
 slaying HallOfQuests
 hp 12
 sp 3
+x 14
+y 3
 speed 0.000000
 resist_magic 30
 resist_fire 30
@@ -1776,8 +1779,6 @@ resist_electricity 30
 resist_cold 30
 invisible 1
 connected 30
-x 14
-y 3
 end
 arch woodfloor2
 x 14
@@ -1822,12 +1823,12 @@ end
 arch detector
 slaying Noble Rank Duke
 hp 1
+x 14
+y 11
 resist_electricity 30
 resist_confusion 30
 invisible 1
 connected 40
-x 14
-y 11
 end
 arch pentagram
 x 14
@@ -1837,13 +1838,13 @@ arch teleporter
 slaying HallOfQuests
 hp 14
 sp 13
+x 14
+y 11
 speed 0.000000
 resist_electricity 30
 resist_confusion 30
 invisible 1
 connected 40
-x 14
-y 11
 end
 arch woodfloor2
 x 14
@@ -1891,9 +1892,9 @@ will grant you the rank of Archduke,
 and all the privileges which pertain
 to that rank.
 endmsg
-no_pick 1
 x 14
 y 13
+no_pick 1
 end
 arch woodfloor2
 x 14
@@ -1939,6 +1940,8 @@ y 1
 end
 arch creator
 other_arch dragonslayer
+x 15
+y 1
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -1946,8 +1949,6 @@ resist_electricity 30
 resist_cold 30
 connected 31
 lifesave 1
-x 15
-y 1
 end
 arch woodfloor2
 x 15
@@ -1976,10 +1977,10 @@ x 15
 y 4
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 15
 y 4
+alive 0
+no_pass 0
 end
 arch woodfloor2
 x 15
@@ -2009,10 +2010,10 @@ arch door_look_1
 msg
 no_pass
 endmsg
-alive 0
-no_pass 0
 x 15
 y 10
+alive 0
+no_pass 0
 end
 arch magic_mouth
 msg
@@ -2050,14 +2051,14 @@ end
 arch altar_trigger
 slaying Meganthropopulos' Crown
 food 1
+x 15
+y 13
 resist_physical 30
 resist_electricity 30
 resist_confusion 30
 invisible 1
 last_sp 1
 connected 41
-x 15
-y 13
 end
 arch pentagram
 x 15
@@ -2067,14 +2068,14 @@ arch teleporter
 slaying HallOfQuests
 hp 12
 sp 11
+x 15
+y 13
 speed 0.000000
 resist_physical 30
 resist_electricity 30
 resist_confusion 30
 invisible 1
 connected 41
-x 15
-y 13
 end
 arch woodfloor2
 x 15
@@ -2253,10 +2254,10 @@ x 17
 y 4
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 17
 y 4
+alive 0
+no_pass 0
 end
 arch woodfloor2
 x 17
@@ -2283,10 +2284,10 @@ x 17
 y 10
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 17
 y 10
+alive 0
+no_pass 0
 end
 arch magic_mouth
 msg
@@ -2326,9 +2327,9 @@ Go and investigate, and eliminate the
 threat if possible.  Return with a
 token of your victory.
 endmsg
-no_pick 1
 x 17
 y 13
+no_pick 1
 end
 arch woodfloor2
 x 17
@@ -2373,12 +2374,12 @@ y 1
 end
 arch creator
 other_arch dragon_shield
+x 18
+y 1
 resist_magic 30
 resist_electricity 30
 connected 10
 lifesave 1
-x 18
-y 1
 end
 arch woodfloor2
 x 18
@@ -2395,12 +2396,12 @@ end
 arch detector
 slaying Noble Rank Marquis
 hp 1
+x 18
+y 3
 resist_physical 30
 resist_electricity 30
 invisible 1
 connected 9
-x 18
-y 3
 end
 arch pentagram
 x 18
@@ -2410,13 +2411,13 @@ arch teleporter
 slaying HallOfQuests
 hp 20
 sp 3
+x 18
+y 3
 speed 0.000000
 resist_physical 30
 resist_electricity 30
 invisible 1
 connected 9
-x 18
-y 3
 end
 arch woodfloor2
 x 18
@@ -2461,12 +2462,12 @@ end
 arch detector
 slaying Noble Rank Earl
 hp 1
+x 18
+y 11
 resist_fire 30
 resist_cold 30
 invisible 1
 connected 20
-x 18
-y 11
 end
 arch pentagram
 x 18
@@ -2476,13 +2477,13 @@ arch teleporter
 slaying HallOfQuests
 hp 17
 sp 13
+x 18
+y 11
 speed 0.000000
 resist_fire 30
 resist_cold 30
 invisible 1
 connected 20
-x 18
-y 11
 end
 arch woodfloor2
 x 18
@@ -2506,14 +2507,14 @@ end
 arch altar_trigger
 slaying broken gateway
 food 1
+x 18
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 invisible 1
 last_sp 1
 connected 21
-x 18
-y 13
 end
 arch pentagram
 x 18
@@ -2523,14 +2524,14 @@ arch teleporter
 slaying HallOfQuests
 hp 20
 sp 11
+x 18
+y 13
 speed 0.000000
 resist_physical 30
 resist_fire 30
 resist_cold 30
 invisible 1
 connected 21
-x 18
-y 13
 end
 arch woodfloor2
 x 18
@@ -2696,13 +2697,13 @@ end
 arch altar_trigger
 slaying Slithselest's wing
 food 1
+x 20
+y 2
 resist_magic 30
 resist_electricity 30
 invisible 1
 last_sp 1
 connected 10
-x 20
-y 2
 end
 arch pentagram
 x 20
@@ -2712,13 +2713,13 @@ arch teleporter
 slaying HallOfQuests
 hp 18
 sp 1
+x 20
+y 2
 speed 0.000000
 resist_magic 30
 resist_electricity 30
 invisible 1
 connected 10
-x 20
-y 2
 end
 arch woodfloor2
 x 20
@@ -2737,9 +2738,9 @@ Slithselest has his eyrie (it is said)
 in the high mountains to the southeast of
 the Tower of the Stars.
 endmsg
-no_pick 1
 x 20
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 20
@@ -2806,13 +2807,13 @@ y 12
 end
 arch creator
 other_arch firebrand
+x 20
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 connected 21
 lifesave 1
-x 20
-y 12
 end
 arch woodfloor2
 x 20
@@ -2995,10 +2996,10 @@ x 22
 y 4
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 22
 y 4
+alive 0
+no_pass 0
 end
 arch woodfloor2
 x 22
@@ -3025,10 +3026,10 @@ x 22
 y 10
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 22
 y 10
+alive 0
+no_pass 0
 end
 arch magic_mouth
 msg
@@ -3069,9 +3070,9 @@ Return with one of these mushrooms and
 you will be awarded the title of
 Marquis.
 endmsg
-no_pick 1
 x 22
 y 13
+no_pick 1
 end
 arch woodfloor2
 x 22
@@ -3116,12 +3117,12 @@ y 1
 end
 arch creator
 other_arch elven_bow
+x 23
+y 1
 resist_physical 30
 resist_fire 30
 connected 5
 lifesave 1
-x 23
-y 1
 end
 arch woodfloor2
 x 23
@@ -3138,11 +3139,11 @@ end
 arch detector
 slaying Noble Rank Baronet
 hp 1
+x 23
+y 3
 resist_fire 30
 invisible 1
 connected 4
-x 23
-y 3
 end
 arch pentagram
 x 23
@@ -3152,12 +3153,12 @@ arch teleporter
 slaying HallOfQuests
 hp 25
 sp 3
+x 23
+y 3
 speed 0.000000
 resist_fire 30
 invisible 1
 connected 4
-x 23
-y 3
 end
 arch woodfloor2
 x 23
@@ -3202,12 +3203,12 @@ end
 arch detector
 slaying Noble Rank Baron
 hp 1
+x 23
+y 11
 resist_magic 30
 resist_fire 30
 invisible 1
 connected 6
-x 23
-y 11
 end
 arch pentagram
 x 23
@@ -3217,13 +3218,13 @@ arch teleporter
 slaying HallOfQuests
 hp 22
 sp 13
+x 23
+y 11
 speed 0.000000
 resist_magic 30
 resist_fire 30
 invisible 1
 connected 6
-x 23
-y 11
 end
 arch woodfloor2
 x 23
@@ -3247,14 +3248,14 @@ end
 arch altar_trigger
 slaying bunion
 food 1
+x 23
+y 13
 resist_physical 30
 resist_magic 30
 resist_fire 30
 invisible 1
 last_sp 1
 connected 7
-x 23
-y 13
 end
 arch pentagram
 x 23
@@ -3264,14 +3265,14 @@ arch teleporter
 slaying HallOfQuests
 hp 25
 sp 12
+x 23
+y 13
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_fire 30
 invisible 1
 connected 7
-x 23
-y 13
 end
 arch woodfloor2
 x 23
@@ -3439,13 +3440,13 @@ end
 arch altar_trigger
 slaying Animator's Ring
 food 1
+x 25
+y 2
 resist_physical 30
 resist_fire 30
 invisible 1
 last_sp 1
 connected 5
-x 25
-y 2
 end
 arch pentagram
 x 25
@@ -3455,13 +3456,13 @@ arch teleporter
 slaying HallOfQuests
 hp 23
 sp 1
+x 25
+y 2
 speed 0.000000
 resist_physical 30
 resist_fire 30
 invisible 1
 connected 5
-x 25
-y 2
 end
 arch woodfloor2
 x 25
@@ -3479,9 +3480,9 @@ He offers the title of Baron to
 whomever returns with a token proving
 that the Animator has been destroyed.
 endmsg
-no_pick 1
 x 25
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 25
@@ -3548,13 +3549,13 @@ y 12
 end
 arch creator
 other_arch potion_improve
+x 25
+y 12
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
 lifesave 1
-x 25
-y 12
 end
 arch woodfloor2
 x 25
@@ -3726,12 +3727,12 @@ end
 arch altar_trigger
 slaying Head of the Goblin Chief
 food 1
+x 27
+y 2
 resist_physical 30
 invisible 1
 last_sp 1
 connected 1
-x 27
-y 2
 end
 arch pentagram
 x 27
@@ -3741,12 +3742,12 @@ arch teleporter
 slaying HallOfQuests
 hp 29
 sp 1
+x 27
+y 2
 speed 0.000000
 resist_physical 30
 invisible 1
 connected 1
-x 27
-y 2
 end
 arch woodfloor2
 x 27
@@ -3763,9 +3764,9 @@ nuisance of themselves to the North
 East of Scorn.  Go and make them
 regret their disorderly conduct.
 endmsg
-no_pick 1
 x 27
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 27
@@ -3810,11 +3811,11 @@ end
 arch detector
 slaying Noble Rank Knight
 hp 1
+x 27
+y 11
 resist_magic 30
 invisible 1
 connected 2
-x 27
-y 11
 end
 arch pentagram
 x 27
@@ -3824,12 +3825,12 @@ arch teleporter
 slaying HallOfQuests
 hp 29
 sp 13
+x 27
+y 11
 speed 0.000000
 resist_magic 30
 invisible 1
 connected 2
-x 27
-y 11
 end
 arch woodfloor2
 x 27
@@ -3864,12 +3865,12 @@ y 13
 end
 arch creator
 other_arch girdle_dam
+x 27
+y 13
 resist_physical 30
 resist_magic 30
 connected 3
 lifesave 1
-x 27
-y 13
 end
 arch woodfloor2
 x 27
@@ -4060,9 +4061,9 @@ arch teleporter
 slaying HallOfQuests
 hp 27
 sp 3
-invisible 1
 x 29
 y 3
+invisible 1
 end
 arch woodfloor2
 x 29
@@ -4127,9 +4128,9 @@ the hills east of the city.
 Go and kill the Ogre Chief and return
 with his head.
 endmsg
-no_pick 1
 x 29
 y 13
+no_pick 1
 end
 arch woodfloor2
 x 29
@@ -4189,10 +4190,10 @@ x 30
 y 4
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 30
 y 4
+alive 0
+no_pass 0
 end
 arch woodfloor2
 x 30
@@ -4226,10 +4227,10 @@ x 30
 y 10
 end
 arch door_look_1
-alive 0
-no_pass 0
 x 30
 y 10
+alive 0
+no_pass 0
 end
 arch woodfloor2
 x 30
@@ -4259,13 +4260,13 @@ end
 arch altar_trigger
 slaying Head of the Ogre Chief
 food 1
+x 30
+y 13
 resist_physical 30
 resist_magic 30
 invisible 1
 last_sp 1
 connected 3
-x 30
-y 13
 end
 arch pentagram
 x 30
@@ -4275,13 +4276,13 @@ arch teleporter
 slaying HallOfQuests
 hp 27
 sp 13
+x 30
+y 13
 speed 0.000000
 resist_physical 30
 resist_magic 30
 invisible 1
 connected 3
-x 30
-y 13
 end
 arch woodfloor2
 x 30

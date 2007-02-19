@@ -1,13 +1,14 @@
 arch map
+name Scorn Castle
+difficulty 1
 region scorn
-name castle
+width 24
+height 24
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Apr 27 03:35:20 1997
 endmsg
-x 24
-y 24
 end
 arch grass
 end
@@ -1491,14 +1492,14 @@ y 13
 end
 arch magic_mouth
 msg
-The Guards kneel to the 
+The Guards kneel to the
 Prince of Scorn
 endmsg
-walk_on 0
-fly_on 0
 x 10
 y 14
 connected 25
+walk_on 0
+fly_on 0
 end
 arch cobblestones2
 x 10
@@ -1525,7 +1526,7 @@ y 15
 end
 arch magic_mouth
 msg
-The guards snap to attention for the 
+The guards snap to attention for the
 Knight of Scorn
 endmsg
 x 10
@@ -2064,9 +2065,9 @@ The guards bow to the Noble of Scorn
 endmsg
 x 13
 y 15
+connected 23
 walk_on 0
 fly_on 0
-connected 23
 end
 arch cobblestones2
 x 13
@@ -2078,7 +2079,7 @@ y 15
 end
 arch magic_mouth
 msg
-The guards salute the 
+The guards salute the
 Baronet of Scorn
 endmsg
 x 13

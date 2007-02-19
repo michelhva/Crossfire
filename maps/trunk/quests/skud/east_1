@@ -1,12 +1,14 @@
 arch map
+name East Skud Tower
+difficulty 1
+width 40
+height 30
+enter_y 5
 msg
 Creator: 
 Email: 
 Date: Thu Nov 18 10:07:14 1993
 endmsg
-sp 5
-x 40
-y 30
 end
 arch marble
 end
@@ -4159,8 +4161,8 @@ wc -3
 x 22
 y 3
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 22
@@ -4373,8 +4375,8 @@ wc -3
 x 23
 y 2
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 23
@@ -4390,8 +4392,8 @@ wc -3
 x 23
 y 3
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 23
@@ -4407,8 +4409,8 @@ wc -3
 x 23
 y 4
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 23
@@ -4591,8 +4593,8 @@ wc -3
 x 24
 y 1
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 24
@@ -4608,8 +4610,8 @@ wc -3
 x 24
 y 2
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 24
@@ -4625,8 +4627,8 @@ wc -3
 x 24
 y 3
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 24
@@ -4817,8 +4819,8 @@ wc -3
 x 25
 y 1
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 25
@@ -4838,8 +4840,8 @@ wc -3
 x 25
 y 2
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 25
@@ -5284,10 +5286,10 @@ y 9
 speed 0.300000
 attack_movement 0
 level 10
-immune 4
 attacktype 16385
 run_away 0
 can_cast_spell 1
+immune 4
 arch spell_paralyze
 end
 arch spell_hellfire

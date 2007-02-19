@@ -1,9 +1,7 @@
 arch map
+name Towers
+difficulty 1
 region darcap
-name <untitled>
-msg
-
-endmsg
 width 21
 height 21
 end
@@ -143,9 +141,9 @@ y 1
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 1
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -153,9 +151,9 @@ y 2
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 2
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -163,9 +161,9 @@ y 3
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 3
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -173,9 +171,9 @@ y 4
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 4
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -183,9 +181,9 @@ y 5
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 5
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -193,9 +191,9 @@ y 6
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 6
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -203,9 +201,9 @@ y 7
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 7
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -213,9 +211,9 @@ y 8
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 8
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -223,9 +221,9 @@ y 9
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 9
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -241,9 +239,9 @@ y 11
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 11
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -251,9 +249,9 @@ y 12
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 12
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -261,9 +259,9 @@ y 13
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 13
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -271,9 +269,9 @@ y 14
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 14
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -281,9 +279,9 @@ y 15
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 15
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -291,9 +289,9 @@ y 16
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 16
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -301,9 +299,9 @@ y 17
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 17
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -311,9 +309,9 @@ y 18
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 18
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -321,9 +319,9 @@ y 19
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 1
 y 19
+no_pick 1
 end
 arch woodfloor
 x 1
@@ -626,8 +624,8 @@ arch oakdoor
 slaying /world/world_116_104
 hp 13
 sp 25
-walk_on 1
 x 5
+walk_on 1
 end
 arch woodfloor
 x 5
@@ -725,9 +723,9 @@ arch oakdoor
 slaying /world/world_116_104
 hp 13
 sp 20
-walk_on 1
 x 5
 y 20
+walk_on 1
 end
 arch woodfloor
 x 6
@@ -787,11 +785,11 @@ Bob?   He owns Bob's Fish & Chips in town
 @match *
 I don't know any thing about that.
 endmsg
-weight 500000
-pick_up 0
-monster 0
 x 6
 y 8
+weight 500000
+monster 0
+pick_up 0
 end
 arch woodfloor
 x 6
@@ -832,11 +830,11 @@ I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
 endmsg
-weight 500000
-pick_up 0
-monster 0
 x 6
 y 12
+weight 500000
+monster 0
+pick_up 0
 end
 arch woodfloor
 x 6
@@ -1078,9 +1076,9 @@ y 1
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 1
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1088,9 +1086,9 @@ y 2
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 2
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1098,9 +1096,9 @@ y 3
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 3
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1108,9 +1106,9 @@ y 4
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 4
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1118,9 +1116,9 @@ y 5
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 5
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1128,9 +1126,9 @@ y 6
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 6
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1138,9 +1136,9 @@ y 7
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 7
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1148,9 +1146,9 @@ y 8
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 8
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1158,9 +1156,9 @@ y 9
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 9
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1176,9 +1174,9 @@ y 11
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 11
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1186,9 +1184,9 @@ y 12
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 12
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1196,9 +1194,9 @@ y 13
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 13
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1206,9 +1204,9 @@ y 14
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 14
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1216,9 +1214,9 @@ y 15
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 15
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1226,9 +1224,9 @@ y 16
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 16
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1236,9 +1234,9 @@ y 17
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 17
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1246,9 +1244,9 @@ y 18
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 18
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1256,9 +1254,9 @@ y 19
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 9
 y 19
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -1446,9 +1444,9 @@ y 1
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 1
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1456,9 +1454,9 @@ y 2
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 2
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1466,9 +1464,9 @@ y 3
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 3
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1476,9 +1474,9 @@ y 4
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 4
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1486,9 +1484,9 @@ y 5
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 5
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1496,9 +1494,9 @@ y 6
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 6
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1506,9 +1504,9 @@ y 7
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 7
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1516,9 +1514,9 @@ y 8
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 8
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1526,9 +1524,9 @@ y 9
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 9
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1544,9 +1542,9 @@ y 11
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 11
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1554,9 +1552,9 @@ y 12
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 12
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1564,9 +1562,9 @@ y 13
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 13
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1574,9 +1572,9 @@ y 14
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 14
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1584,9 +1582,9 @@ y 15
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 15
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1594,9 +1592,9 @@ y 16
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 16
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1604,9 +1602,9 @@ y 17
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 17
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1614,9 +1612,9 @@ y 18
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 18
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1624,9 +1622,9 @@ y 19
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 11
 y 19
+no_pick 1
 end
 arch woodfloor
 x 11
@@ -1929,8 +1927,8 @@ arch oakdoor
 slaying /world/world_116_104
 hp 18
 sp 25
-walk_on 1
 x 15
+walk_on 1
 end
 arch woodfloor
 x 15
@@ -2028,9 +2026,9 @@ arch oakdoor
 slaying /world/world_116_104
 hp 18
 sp 20
-walk_on 1
 x 15
 y 20
+walk_on 1
 end
 arch woodfloor
 x 16
@@ -2089,11 +2087,11 @@ I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
 endmsg
-weight 500000
-pick_up 0
-monster 0
 x 16
 y 8
+weight 500000
+monster 0
+pick_up 0
 end
 arch woodfloor
 x 16
@@ -2134,11 +2132,11 @@ I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
 endmsg
-weight 500000
-pick_up 0
-monster 0
 x 16
 y 12
+weight 500000
+monster 0
+pick_up 0
 end
 arch woodfloor
 x 16
@@ -2380,9 +2378,9 @@ y 1
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 1
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2390,9 +2388,9 @@ y 2
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 2
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2400,9 +2398,9 @@ y 3
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 3
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2410,9 +2408,9 @@ y 4
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 4
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2420,9 +2418,9 @@ y 5
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 5
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2430,9 +2428,9 @@ y 6
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 6
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2440,9 +2438,9 @@ y 7
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 7
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2450,9 +2448,9 @@ y 8
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 8
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2460,9 +2458,9 @@ y 9
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 9
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2478,9 +2476,9 @@ y 11
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 11
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2488,9 +2486,9 @@ y 12
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 12
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2498,9 +2496,9 @@ y 13
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 13
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2508,9 +2506,9 @@ y 14
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 14
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2518,9 +2516,9 @@ y 15
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 15
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2528,9 +2526,9 @@ y 16
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 16
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2538,9 +2536,9 @@ y 17
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 17
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2548,9 +2546,9 @@ y 18
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 18
+no_pick 1
 end
 arch woodfloor
 x 19
@@ -2558,9 +2556,9 @@ y 19
 end
 arch book_read
 name Spell Book
-no_pick 1
 x 19
 y 19
+no_pick 1
 end
 arch woodfloor
 x 19

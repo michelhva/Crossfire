@@ -1,9 +1,11 @@
 arch map
+name A Little Opara
+difficulty 1
 region santodominion
-hp 1
-sp 12
-x 33
-y 33
+width 33
+height 33
+enter_x 1
+enter_y 12
 end
 arch marble
 end
@@ -131,8 +133,8 @@ name 10
 hp 23
 sp 9
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 y 26
@@ -145,8 +147,8 @@ name 10
 hp 23
 sp 9
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 y 27
@@ -159,8 +161,8 @@ name 10
 hp 23
 sp 9
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 y 28
@@ -172,8 +174,8 @@ arch pit_closed
 hp 23
 sp 15
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 y 29
@@ -185,8 +187,8 @@ arch pit_closed
 hp 23
 sp 15
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 y 30
@@ -198,8 +200,8 @@ arch pit_closed
 hp 23
 sp 15
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 y 31
@@ -211,8 +213,8 @@ arch pit_closed
 hp 23
 sp 15
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 y 32
@@ -436,8 +438,8 @@ hp 23
 sp 9
 x 1
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 1
@@ -453,8 +455,8 @@ hp 23
 sp 9
 x 1
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 1
@@ -470,8 +472,8 @@ hp 23
 sp 9
 x 1
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 1
@@ -487,8 +489,8 @@ hp 23
 sp 9
 x 1
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 1
@@ -503,8 +505,8 @@ hp 23
 sp 15
 x 1
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 1
@@ -519,8 +521,8 @@ hp 23
 sp 15
 x 1
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 1
@@ -535,8 +537,8 @@ hp 23
 sp 15
 x 1
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 1
@@ -738,8 +740,8 @@ hp 23
 sp 9
 x 2
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 2
@@ -755,8 +757,8 @@ hp 23
 sp 9
 x 2
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 2
@@ -772,8 +774,8 @@ hp 23
 sp 9
 x 2
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 2
@@ -789,8 +791,8 @@ hp 23
 sp 9
 x 2
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 2
@@ -805,8 +807,8 @@ hp 23
 sp 15
 x 2
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 2
@@ -821,8 +823,8 @@ hp 23
 sp 15
 x 2
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 2
@@ -837,8 +839,8 @@ hp 23
 sp 15
 x 2
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 2
@@ -1015,8 +1017,8 @@ hp 26
 sp 8
 x 3
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 3
@@ -1031,8 +1033,8 @@ hp 26
 sp 8
 x 3
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 3
@@ -1047,8 +1049,8 @@ hp 26
 sp 8
 x 3
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 3
@@ -1063,8 +1065,8 @@ hp 26
 sp 8
 x 3
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 3
@@ -1079,8 +1081,8 @@ hp 26
 sp 16
 x 3
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 3
@@ -1095,8 +1097,8 @@ hp 26
 sp 16
 x 3
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 3
@@ -1111,8 +1113,8 @@ hp 26
 sp 16
 x 3
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 3
@@ -1176,8 +1178,8 @@ arch grate_closed_1
 x 4
 y 8
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 4
@@ -1215,8 +1217,8 @@ arch grate_closed_1
 x 4
 y 16
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 4
@@ -1287,8 +1289,8 @@ hp 26
 sp 8
 x 4
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 4
@@ -1303,8 +1305,8 @@ hp 26
 sp 8
 x 4
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 4
@@ -1319,8 +1321,8 @@ hp 26
 sp 8
 x 4
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 4
@@ -1335,8 +1337,8 @@ hp 26
 sp 16
 x 4
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 4
@@ -1351,8 +1353,8 @@ hp 26
 sp 16
 x 4
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 4
@@ -1367,8 +1369,8 @@ hp 26
 sp 16
 x 4
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 4
@@ -1383,8 +1385,8 @@ hp 26
 sp 16
 x 4
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 4
@@ -1448,8 +1450,8 @@ arch grate_closed_1
 x 5
 y 8
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 5
@@ -1487,8 +1489,8 @@ arch grate_closed_1
 x 5
 y 16
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 5
@@ -1559,8 +1561,8 @@ hp 26
 sp 8
 x 5
 y 26
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 5
@@ -1575,8 +1577,8 @@ hp 26
 sp 8
 x 5
 y 27
-protected 10
 connected 10
+protected 10
 end
 arch vampire
 x 5
@@ -1591,8 +1593,8 @@ hp 26
 sp 8
 x 5
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 5
@@ -1607,8 +1609,8 @@ hp 26
 sp 16
 x 5
 y 29
-protected 10
 connected 10
+protected 10
 end
 arch wraith
 x 5
@@ -1623,8 +1625,8 @@ hp 26
 sp 16
 x 5
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 5
@@ -1639,8 +1641,8 @@ hp 26
 sp 16
 x 5
 y 31
-protected 10
 connected 10
+protected 10
 end
 arch grimreaper
 x 5
@@ -1655,8 +1657,8 @@ hp 26
 sp 16
 x 5
 y 32
-protected 10
 connected 10
+protected 10
 end
 arch ghost
 x 5
@@ -2024,8 +2026,8 @@ hp 23
 sp 9
 x 7
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 7
@@ -2041,8 +2043,8 @@ hp 23
 sp 9
 x 7
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch skeleton
 x 7
@@ -2058,8 +2060,8 @@ hp 23
 sp 9
 x 7
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 7
@@ -2075,8 +2077,8 @@ hp 23
 sp 9
 x 7
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 7
@@ -2092,8 +2094,8 @@ hp 23
 sp 15
 x 7
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 7
@@ -2109,8 +2111,8 @@ hp 23
 sp 15
 x 7
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 7
@@ -2126,8 +2128,8 @@ hp 23
 sp 15
 x 7
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 7
@@ -2345,8 +2347,8 @@ hp 23
 sp 9
 x 8
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 8
@@ -2362,8 +2364,8 @@ hp 23
 sp 9
 x 8
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 8
@@ -2379,8 +2381,8 @@ hp 23
 sp 9
 x 8
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 8
@@ -2396,8 +2398,8 @@ hp 23
 sp 9
 x 8
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 8
@@ -2413,8 +2415,8 @@ hp 23
 sp 15
 x 8
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 8
@@ -2430,8 +2432,8 @@ hp 23
 sp 15
 x 8
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 8
@@ -2447,8 +2449,8 @@ hp 23
 sp 15
 x 8
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch skeleton
 x 8
@@ -2535,8 +2537,8 @@ end
 arch button_lever
 x 9
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 9
@@ -2624,8 +2626,8 @@ hp 23
 sp 9
 x 9
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 9
@@ -2641,8 +2643,8 @@ hp 23
 sp 9
 x 9
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 9
@@ -2658,8 +2660,8 @@ hp 23
 sp 9
 x 9
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 9
@@ -2675,8 +2677,8 @@ hp 23
 sp 15
 x 9
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch skeleton
 x 9
@@ -2692,8 +2694,8 @@ hp 23
 sp 15
 x 9
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 9
@@ -2709,8 +2711,8 @@ hp 23
 sp 15
 x 9
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 9
@@ -2726,8 +2728,8 @@ hp 23
 sp 15
 x 9
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 9
@@ -2807,8 +2809,8 @@ arch igate_closed_2
 x 10
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 10
@@ -2896,8 +2898,8 @@ hp 26
 sp 8
 x 10
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -2913,8 +2915,8 @@ hp 26
 sp 8
 x 10
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -2930,8 +2932,8 @@ hp 26
 sp 8
 x 10
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -2947,8 +2949,8 @@ hp 26
 sp 16
 x 10
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -2964,8 +2966,8 @@ hp 26
 sp 16
 x 10
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -2981,8 +2983,8 @@ hp 26
 sp 16
 x 10
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 10
@@ -2998,8 +3000,8 @@ hp 26
 sp 16
 x 10
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 10
@@ -3094,8 +3096,8 @@ end
 arch button_lever
 x 11
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 11
@@ -3199,8 +3201,8 @@ hp 26
 sp 8
 x 11
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch skeleton
 x 11
@@ -3216,8 +3218,8 @@ hp 26
 sp 8
 x 11
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 11
@@ -3233,8 +3235,8 @@ hp 26
 sp 8
 x 11
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 11
@@ -3250,8 +3252,8 @@ hp 26
 sp 16
 x 11
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 11
@@ -3267,8 +3269,8 @@ hp 26
 sp 16
 x 11
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 11
@@ -3284,8 +3286,8 @@ hp 26
 sp 16
 x 11
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 11
@@ -3301,8 +3303,8 @@ hp 26
 sp 16
 x 11
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch wight
 x 11
@@ -3532,8 +3534,8 @@ hp 26
 sp 8
 x 12
 y 26
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -3549,8 +3551,8 @@ hp 26
 sp 8
 x 12
 y 27
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -3566,8 +3568,8 @@ hp 26
 sp 8
 x 12
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -3583,8 +3585,8 @@ hp 26
 sp 8
 x 12
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -3600,8 +3602,8 @@ hp 26
 sp 16
 x 12
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch skeleton
 x 12
@@ -3617,8 +3619,8 @@ hp 26
 sp 16
 x 12
 y 31
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -3634,8 +3636,8 @@ hp 26
 sp 16
 x 12
 y 32
-protected 11
 connected 11
+protected 11
 end
 arch zombie
 x 12
@@ -4159,8 +4161,8 @@ hp 23
 sp 9
 x 14
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 14
@@ -4172,8 +4174,8 @@ hp 23
 sp 9
 x 14
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 14
@@ -4185,8 +4187,8 @@ hp 23
 sp 9
 x 14
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 14
@@ -4202,8 +4204,8 @@ hp 23
 sp 9
 x 14
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 14
@@ -4219,8 +4221,8 @@ hp 23
 sp 15
 x 14
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 14
@@ -4236,8 +4238,8 @@ hp 23
 sp 15
 x 14
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 14
@@ -4249,8 +4251,8 @@ hp 23
 sp 15
 x 14
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 15
@@ -4504,8 +4506,8 @@ hp 23
 sp 9
 x 15
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4521,8 +4523,8 @@ hp 23
 sp 9
 x 15
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4538,8 +4540,8 @@ hp 23
 sp 9
 x 15
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch serp_man
 x 15
@@ -4555,8 +4557,8 @@ hp 23
 sp 15
 x 15
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4572,8 +4574,8 @@ hp 23
 sp 15
 x 15
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4589,8 +4591,8 @@ hp 23
 sp 15
 x 15
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4606,8 +4608,8 @@ hp 23
 sp 15
 x 15
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 15
@@ -4861,8 +4863,8 @@ hp 23
 sp 9
 x 16
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -4878,8 +4880,8 @@ hp 23
 sp 9
 x 16
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -4895,8 +4897,8 @@ hp 23
 sp 9
 x 16
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -4912,8 +4914,8 @@ hp 23
 sp 15
 x 16
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -4929,8 +4931,8 @@ hp 23
 sp 15
 x 16
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -4946,8 +4948,8 @@ hp 23
 sp 15
 x 16
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch serp_man
 x 16
@@ -4963,8 +4965,8 @@ hp 23
 sp 15
 x 16
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 16
@@ -5222,8 +5224,8 @@ hp 26
 sp 8
 x 17
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5239,8 +5241,8 @@ hp 26
 sp 8
 x 17
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch serp_man
 x 17
@@ -5256,8 +5258,8 @@ hp 26
 sp 8
 x 17
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5273,8 +5275,8 @@ hp 26
 sp 16
 x 17
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5290,8 +5292,8 @@ hp 26
 sp 16
 x 17
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5307,8 +5309,8 @@ hp 26
 sp 16
 x 17
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5324,8 +5326,8 @@ hp 26
 sp 16
 x 17
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 17
@@ -5579,8 +5581,8 @@ hp 26
 sp 8
 x 18
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 18
@@ -5596,8 +5598,8 @@ hp 26
 sp 8
 x 18
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 18
@@ -5613,8 +5615,8 @@ hp 26
 sp 8
 x 18
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 18
@@ -5630,8 +5632,8 @@ hp 26
 sp 8
 x 18
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch serp_man
 x 18
@@ -5647,8 +5649,8 @@ hp 26
 sp 16
 x 18
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 18
@@ -5664,8 +5666,8 @@ hp 26
 sp 16
 x 18
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch serp_man
 x 18
@@ -5681,8 +5683,8 @@ hp 26
 sp 16
 x 18
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 18
@@ -5824,8 +5826,8 @@ hp 26
 sp 8
 x 19
 y 26
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 19
@@ -5837,8 +5839,8 @@ hp 26
 sp 8
 x 19
 y 27
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 19
@@ -5850,8 +5852,8 @@ hp 26
 sp 8
 x 19
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 19
@@ -5867,8 +5869,8 @@ hp 26
 sp 8
 x 19
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 19
@@ -5884,8 +5886,8 @@ hp 26
 sp 16
 x 19
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch snake
 x 19
@@ -5901,8 +5903,8 @@ hp 26
 sp 16
 x 19
 y 31
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 19
@@ -5914,8 +5916,8 @@ hp 26
 sp 16
 x 19
 y 32
-protected 12
 connected 12
+protected 12
 end
 arch marble
 x 20
@@ -6276,8 +6278,8 @@ hp 23
 sp 9
 x 21
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 21
@@ -6289,8 +6291,8 @@ hp 23
 sp 9
 x 21
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 21
@@ -6302,8 +6304,8 @@ hp 23
 sp 9
 x 21
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 21
@@ -6319,8 +6321,8 @@ hp 23
 sp 9
 x 21
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 21
@@ -6336,8 +6338,8 @@ hp 23
 sp 15
 x 21
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 21
@@ -6353,8 +6355,8 @@ hp 23
 sp 15
 x 21
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 21
@@ -6366,8 +6368,8 @@ hp 23
 sp 15
 x 21
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 22
@@ -6551,8 +6553,8 @@ hp 23
 sp 9
 x 22
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 22
@@ -6564,8 +6566,8 @@ hp 23
 sp 9
 x 22
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 22
@@ -6577,8 +6579,8 @@ hp 23
 sp 9
 x 22
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 22
@@ -6594,8 +6596,8 @@ hp 23
 sp 9
 x 22
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 22
@@ -6611,8 +6613,8 @@ hp 23
 sp 15
 x 22
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 22
@@ -6628,8 +6630,8 @@ hp 23
 sp 15
 x 22
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 22
@@ -6641,8 +6643,8 @@ hp 23
 sp 15
 x 22
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 23
@@ -6683,24 +6685,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 23
 y 5
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 23
 y 5
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 23
 y 5
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 23
@@ -6763,24 +6765,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 23
 y 19
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 23
 y 19
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 23
 y 19
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 23
@@ -6840,8 +6842,8 @@ hp 23
 sp 9
 x 23
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 23
@@ -6853,8 +6855,8 @@ hp 23
 sp 9
 x 23
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 23
@@ -6866,8 +6868,8 @@ hp 23
 sp 9
 x 23
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 23
@@ -6883,8 +6885,8 @@ hp 23
 sp 15
 x 23
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 23
@@ -6900,8 +6902,8 @@ hp 23
 sp 15
 x 23
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 23
@@ -6917,8 +6919,8 @@ hp 23
 sp 15
 x 23
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 23
@@ -6934,8 +6936,8 @@ hp 23
 sp 15
 x 23
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 23
@@ -6972,16 +6974,16 @@ name 11 - zombie
 other_arch generate_zombie
 x 24
 y 5
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_ogre
 x 24
 y 5
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 24
@@ -7044,16 +7046,16 @@ name 11 - zombie
 other_arch generate_zombie
 x 24
 y 19
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_ogre
 x 24
 y 19
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 24
@@ -7113,8 +7115,8 @@ hp 26
 sp 8
 x 24
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 24
@@ -7130,8 +7132,8 @@ hp 26
 sp 8
 x 24
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 24
@@ -7147,8 +7149,8 @@ hp 26
 sp 8
 x 24
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 24
@@ -7164,8 +7166,8 @@ hp 26
 sp 16
 x 24
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 24
@@ -7181,8 +7183,8 @@ hp 26
 sp 16
 x 24
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 24
@@ -7198,8 +7200,8 @@ hp 26
 sp 16
 x 24
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 24
@@ -7211,8 +7213,8 @@ hp 26
 sp 16
 x 24
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 25
@@ -7249,24 +7251,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 25
 y 5
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 25
 y 5
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 25
 y 5
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 25
@@ -7329,24 +7331,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 25
 y 19
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 25
 y 19
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 25
 y 19
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 25
@@ -7406,8 +7408,8 @@ hp 26
 sp 8
 x 25
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 25
@@ -7419,8 +7421,8 @@ hp 26
 sp 8
 x 25
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 25
@@ -7432,8 +7434,8 @@ hp 26
 sp 8
 x 25
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 25
@@ -7449,8 +7451,8 @@ hp 26
 sp 16
 x 25
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 25
@@ -7466,8 +7468,8 @@ hp 26
 sp 16
 x 25
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 25
@@ -7483,8 +7485,8 @@ hp 26
 sp 16
 x 25
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 25
@@ -7496,8 +7498,8 @@ hp 26
 sp 16
 x 25
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 26
@@ -7534,16 +7536,16 @@ name 11 - zombie
 other_arch generate_zombie
 x 26
 y 5
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_ogre
 x 26
 y 5
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 26
@@ -7606,16 +7608,16 @@ name 11 - zombie
 other_arch generate_zombie
 x 26
 y 19
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_ogre
 x 26
 y 19
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 26
@@ -7675,8 +7677,8 @@ hp 26
 sp 8
 x 26
 y 26
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 26
@@ -7688,8 +7690,8 @@ hp 26
 sp 8
 x 26
 y 27
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 26
@@ -7701,8 +7703,8 @@ hp 26
 sp 8
 x 26
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 26
@@ -7718,8 +7720,8 @@ hp 26
 sp 8
 x 26
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 26
@@ -7735,8 +7737,8 @@ hp 26
 sp 16
 x 26
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch ogre
 x 26
@@ -7752,8 +7754,8 @@ hp 26
 sp 16
 x 26
 y 31
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 26
@@ -7765,8 +7767,8 @@ hp 26
 sp 16
 x 26
 y 32
-protected 13
 connected 13
+protected 13
 end
 arch marble
 x 27
@@ -7807,24 +7809,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 27
 y 5
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 27
 y 5
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 27
 y 5
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 27
@@ -7833,8 +7835,8 @@ end
 arch button_handle
 x 27
 y 5
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 27
@@ -7893,24 +7895,24 @@ name 10 - vampire
 other_arch generate_vampire
 x 27
 y 19
-protected 10
 connected 10
+protected 10
 end
 arch creator
 name 11 - zombie
 other_arch generate_zombie
 x 27
 y 19
-protected 11
 connected 11
+protected 11
 end
 arch creator
 name 13 - giant
 other_arch generate_giant
 x 27
 y 19
-protected 13
 connected 13
+protected 13
 end
 arch woodfloor
 x 27
@@ -8018,8 +8020,8 @@ arch block_door_closed
 x 28
 y 5
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8029,8 +8031,8 @@ arch block_door_closed
 x 28
 y 6
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8040,8 +8042,8 @@ arch block_door_closed
 x 28
 y 7
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8051,8 +8053,8 @@ arch block_door_closed
 x 28
 y 8
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8062,8 +8064,8 @@ arch block_door_closed
 x 28
 y 9
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8073,8 +8075,8 @@ arch block_door_closed
 x 28
 y 10
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8084,8 +8086,8 @@ arch block_door_closed
 x 28
 y 11
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8095,8 +8097,8 @@ arch block_door_closed
 x 28
 y 12
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8106,8 +8108,8 @@ arch block_door_closed
 x 28
 y 13
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8117,8 +8119,8 @@ arch block_door_closed
 x 28
 y 14
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8128,8 +8130,8 @@ arch block_door_closed
 x 28
 y 15
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8139,8 +8141,8 @@ arch block_door_closed
 x 28
 y 16
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8150,8 +8152,8 @@ arch block_door_closed
 x 28
 y 17
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8161,8 +8163,8 @@ arch block_door_closed
 x 28
 y 18
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch woodfloor
 x 28
@@ -8172,8 +8174,8 @@ arch block_door_closed
 x 28
 y 19
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch marble
 x 28
@@ -8230,15 +8232,15 @@ arch button_small
 name 12 - snake
 x 28
 y 28
-protected 12
 connected 12
+protected 12
 end
 arch button_small
 name 12 - snake
 x 28
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch blocked
 x 28
@@ -8289,8 +8291,8 @@ end
 arch button_handle
 x 29
 y 5
-protected 2
 connected 2
+protected 2
 end
 arch marble
 x 29
@@ -8398,22 +8400,22 @@ arch button_small
 name 11 - zombie
 x 29
 y 28
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11 - zombie
 x 29
 y 29
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 10 - vamp
 x 29
 y 30
-protected 10
 connected 10
+protected 10
 end
 arch blocked
 x 29
@@ -8637,15 +8639,15 @@ arch button_small
 name 13 - giants
 x 30
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch button_small
 name 13 - giants
 x 30
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch blocked
 x 30
@@ -9034,8 +9036,8 @@ sp 12
 x 32
 y 26
 speed 0.000000
-protected 10
 connected 10
+protected 10
 end
 arch sign
 name info
@@ -9043,7 +9045,7 @@ msg
 Welcome to the opera!
 ---------------------
 Today performing:
-   -o0o- Vampire's Kiss -oOo-
+-o0o- Vampire's Kiss -oOo-
 endmsg
 x 32
 y 26
@@ -9055,8 +9057,8 @@ sp 12
 x 32
 y 27
 speed 0.000000
-protected 11
 connected 11
+protected 11
 end
 arch sign
 name info
@@ -9064,7 +9066,7 @@ msg
 Welcome to the opera!
 ---------------------
 Today performing:
-   -o0o- Zombies, Dawn of the Dead -oOo-
+-o0o- Zombies, Dawn of the Dead -oOo-
 endmsg
 x 32
 y 27
@@ -9076,8 +9078,8 @@ sp 12
 x 32
 y 28
 speed 0.000000
-protected 12
 connected 12
+protected 12
 end
 arch sign
 name info
@@ -9085,7 +9087,7 @@ msg
 Welcome to the opera!
 ---------------------
 Today performing:
-   -o0o- Escape from L.A. -oOo-
+-o0o- Escape from L.A. -oOo-
 endmsg
 x 32
 y 28
@@ -9097,8 +9099,8 @@ sp 12
 x 32
 y 29
 speed 0.000000
-protected 13
 connected 13
+protected 13
 end
 arch sign
 name info
@@ -9106,7 +9108,7 @@ msg
 Welcome to the opera!
 ---------------------
 Today performing:
-   -o0o- Jack on the Beanstalk -oOo-
+-o0o- Jack on the Beanstalk -oOo-
 endmsg
 x 32
 y 29

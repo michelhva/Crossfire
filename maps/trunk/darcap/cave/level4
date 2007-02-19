@@ -1,9 +1,7 @@
 arch map
+name Hanshaugen Cave, Level 4
+difficulty 1
 region darcap
-name <untitled>
-msg
-
-endmsg
 width 70
 height 50
 end
@@ -118,9 +116,9 @@ x 1
 y 6
 end
 arch random_treasure
-nrof 2
 x 1
 y 6
+nrof 2
 end
 arch dungeon_floor
 x 1
@@ -131,9 +129,9 @@ x 1
 y 7
 end
 arch random_treasure
-nrof 2
 x 1
 y 7
+nrof 2
 end
 arch dungeon_floor
 x 1
@@ -280,9 +278,9 @@ x 2
 y 6
 end
 arch random_treasure
-nrof 2
 x 2
 y 6
+nrof 2
 end
 arch dungeon_floor
 x 2

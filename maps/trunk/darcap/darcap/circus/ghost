@@ -1,14 +1,15 @@
 arch map
+name Ghost
+difficulty 1
 region darcapcircus
-name ghost
+darkness 2
+width 32
+height 16
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Thu Jan 28 18:37:06 1999
 endmsg
-width 32
-height 16
-darkness 2
 end
 arch dungeon_floor
 end
@@ -139,10 +140,10 @@ x 1
 y 4
 end
 arch wight
-unaggressive 1
-stand_still 1
 x 1
 y 4
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 1
@@ -157,10 +158,10 @@ x 1
 y 6
 end
 arch ghost
-unaggressive 1
-stand_still 1
 x 1
 y 6
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 1
@@ -176,9 +177,9 @@ y 8
 end
 arch mover_2
 maxhp 1
-level 1
 x 1
 y 8
+level 1
 end
 arch dirtfloor
 x 1
@@ -186,9 +187,9 @@ y 9
 end
 arch mover_1
 maxhp 1
-level 1
 x 1
 y 9
+level 1
 end
 arch dirtfloor
 x 1
@@ -196,9 +197,9 @@ y 10
 end
 arch mover_1
 maxhp 1
-level 1
 x 1
 y 10
+level 1
 end
 arch dirtfloor
 x 1
@@ -206,9 +207,9 @@ y 11
 end
 arch mover_1
 maxhp 1
-level 1
 x 1
 y 11
+level 1
 end
 arch dungeon_floor
 x 1
@@ -249,10 +250,10 @@ x 2
 y 1
 end
 arch ghast
-unaggressive 1
-stand_still 1
 x 2
 y 1
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 2
@@ -267,20 +268,20 @@ x 2
 y 3
 end
 arch wight
-unaggressive 1
-stand_still 1
 x 2
 y 3
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 2
 y 4
 end
 arch wight
-unaggressive 1
-stand_still 1
 x 2
 y 4
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 2
@@ -295,10 +296,10 @@ x 2
 y 6
 end
 arch ghost
-unaggressive 1
-stand_still 1
 x 2
 y 6
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 2
@@ -306,10 +307,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 2
 y 7
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 2
@@ -324,10 +325,10 @@ x 2
 y 9
 end
 arch ghost
-unaggressive 1
-stand_still 1
 x 2
 y 9
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 2
@@ -343,18 +344,18 @@ y 11
 end
 arch mover_7
 maxhp 1
-level 1
 x 2
 y 11
+level 1
 end
 arch dirtfloor
 x 2
 y 12
 end
 arch grate_closed_1
-connected 96
 x 2
 y 12
+connected 96
 end
 arch dirtfloor
 x 2
@@ -363,9 +364,9 @@ end
 arch goldfloor
 name drop 30 goldcoins
 food 30
-connected 96
 x 2
 y 13
+connected 96
 end
 arch dirtfloor
 x 2
@@ -394,9 +395,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 3
 y 1
+level 1
 end
 arch dirtfloor
 x 3
@@ -404,9 +405,9 @@ y 2
 end
 arch mover_1
 maxhp 1
-level 1
 x 3
 y 2
+level 1
 end
 arch dirtfloor
 x 3
@@ -414,9 +415,9 @@ y 3
 end
 arch mover_1
 maxhp 1
-level 1
 x 3
 y 3
+level 1
 end
 arch dirtfloor
 x 3
@@ -424,9 +425,9 @@ y 4
 end
 arch mover_1
 maxhp 1
-level 1
 x 3
 y 4
+level 1
 end
 arch dungeon_floor
 x 3
@@ -450,10 +451,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 3
 y 7
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 3
@@ -536,10 +537,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 4
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 4
@@ -563,9 +564,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 4
 y 4
+level 1
 end
 arch dungeon_floor
 x 4
@@ -580,10 +581,10 @@ x 4
 y 6
 end
 arch wraith
-unaggressive 1
-stand_still 1
 x 4
 y 6
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 4
@@ -591,10 +592,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 4
 y 7
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 4
@@ -605,10 +606,10 @@ x 4
 y 9
 end
 arch skeleton
-unaggressive 1
-stand_still 1
 x 4
 y 9
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 4
@@ -623,10 +624,10 @@ x 4
 y 11
 end
 arch skeleton
-unaggressive 1
-stand_still 1
 x 4
 y 11
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 4
@@ -672,10 +673,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 5
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 5
@@ -690,10 +691,10 @@ x 5
 y 3
 end
 arch ghast
-unaggressive 1
-stand_still 1
 x 5
 y 3
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 5
@@ -701,9 +702,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 5
 y 4
+level 1
 end
 arch dungeon_floor
 x 5
@@ -727,10 +728,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 5
 y 7
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 5
@@ -761,10 +762,10 @@ x 5
 y 11
 end
 arch skeleton
-unaggressive 1
-stand_still 1
 x 5
 y 11
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 5
@@ -780,10 +781,10 @@ y 13
 end
 arch mover_5
 maxhp 1
-speed -2.000000
-level 1
 x 5
 y 13
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 5
@@ -791,10 +792,10 @@ y 14
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 5
 y 14
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 5
@@ -816,10 +817,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 6
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 6
@@ -843,9 +844,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 6
 y 4
+level 1
 end
 arch dungeon_floor
 x 6
@@ -869,10 +870,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 6
 y 7
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 6
@@ -903,9 +904,9 @@ x 6
 y 11
 end
 arch igateTrg2
-connected 2
 x 6
 y 11
+connected 2
 end
 arch dungeon_floor
 x 6
@@ -921,10 +922,10 @@ y 13
 end
 arch mover_7
 maxhp 1
-speed -2.000000
-level 1
 x 6
 y 13
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 6
@@ -932,10 +933,10 @@ y 14
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 6
 y 14
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 6
@@ -957,20 +958,20 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 7
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 7
 y 2
 end
 arch ghast
+x 7
+y 2
 unaggressive 1
 stand_still 1
-x 7
-y 2
 end
 arch dungeon_floor
 x 7
@@ -986,9 +987,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 7
 y 4
+level 1
 end
 arch dungeon_floor
 x 7
@@ -1012,10 +1013,10 @@ y 7
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 7
 y 7
+speed -2.000000
+level 1
 end
 arch dirtfloor
 x 7
@@ -1023,9 +1024,9 @@ y 8
 end
 arch mover_5
 maxhp 1
-level 1
 x 7
 y 8
+level 1
 end
 arch dirtfloor
 x 7
@@ -1033,9 +1034,9 @@ y 9
 end
 arch mover_5
 maxhp 1
-level 1
 x 7
 y 9
+level 1
 end
 arch dirtfloor
 x 7
@@ -1043,15 +1044,15 @@ y 10
 end
 arch mover_5
 maxhp 1
-level 1
 x 7
 y 10
+level 1
 end
 arch button_small
+x 7
+y 11
 invisible 1
 connected 2
-x 7
-y 11
 end
 arch dirtfloor
 x 7
@@ -1059,9 +1060,9 @@ y 11
 end
 arch mover_5
 maxhp 1
-level 1
 x 7
 y 11
+level 1
 end
 arch dirtfloor
 x 7
@@ -1069,9 +1070,9 @@ y 12
 end
 arch mover_5
 maxhp 1
-level 1
 x 7
 y 12
+level 1
 end
 arch dirtfloor
 x 7
@@ -1079,45 +1080,45 @@ y 13
 end
 arch mover_7
 maxhp 1
-speed -2.000000
-level 1
 x 7
 y 13
-end
-arch dirtfloor
-x 7
-y 14
-end
-arch mover_3
-maxhp 1
-level 1
-x 7
-y 14
-end
-arch dungeon_floor
-x 7
-y 15
-end
-arch woodwall_2_1_2
-x 7
-y 15
-end
-arch dungeon_floor
-x 8
-end
-arch woodwall_2_1_2
-x 8
-end
-arch dirtfloor
-x 8
-y 1
-end
-arch mover_3
-maxhp 1
 speed -2.000000
 level 1
+end
+arch dirtfloor
+x 7
+y 14
+end
+arch mover_3
+maxhp 1
+x 7
+y 14
+level 1
+end
+arch dungeon_floor
+x 7
+y 15
+end
+arch woodwall_2_1_2
+x 7
+y 15
+end
+arch dungeon_floor
+x 8
+end
+arch woodwall_2_1_2
+x 8
+end
+arch dirtfloor
 x 8
 y 1
+end
+arch mover_3
+maxhp 1
+x 8
+y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 8
@@ -1141,9 +1142,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 8
 y 4
+level 1
 end
 arch dungeon_floor
 x 8
@@ -1158,10 +1159,10 @@ x 8
 y 6
 end
 arch grimreaper
-unaggressive 1
-stand_still 1
 x 8
 y 6
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 8
@@ -1169,9 +1170,9 @@ y 7
 end
 arch mover_6
 maxhp 1
-level 1
 x 8
 y 7
+level 1
 end
 arch dungeon_floor
 x 8
@@ -1186,10 +1187,10 @@ x 8
 y 9
 end
 arch zombie
-unaggressive 1
-stand_still 1
 x 8
 y 9
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 8
@@ -1204,10 +1205,10 @@ x 8
 y 11
 end
 arch vampire
-unaggressive 1
-stand_still 1
 x 8
 y 11
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 8
@@ -1222,10 +1223,10 @@ x 8
 y 13
 end
 arch gargolye
-unaggressive 1
-stand_still 1
 x 8
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 8
@@ -1233,9 +1234,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 8
 y 14
+level 1
 end
 arch dungeon_floor
 x 8
@@ -1257,10 +1258,10 @@ y 1
 end
 arch mover_3
 maxhp 1
+x 9
+y 1
 speed -2.000000
 level 1
-x 9
-y 1
 end
 arch dungeon_floor
 x 9
@@ -1275,10 +1276,10 @@ x 9
 y 3
 end
 arch wight
-unaggressive 1
-stand_still 1
 x 9
 y 3
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 9
@@ -1286,9 +1287,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 9
 y 4
+level 1
 end
 arch dungeon_floor
 x 9
@@ -1368,10 +1369,10 @@ y 14
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 9
 y 14
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 9
@@ -1393,10 +1394,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 10
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 10
@@ -1420,9 +1421,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 10
 y 4
+level 1
 end
 arch dungeon_floor
 x 10
@@ -1493,9 +1494,9 @@ x 10
 y 13
 end
 arch ghost
-stand_still 1
 x 10
 y 13
+stand_still 1
 end
 arch dirtfloor
 x 10
@@ -1503,9 +1504,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 10
 y 14
+level 1
 end
 arch dungeon_floor
 x 10
@@ -1527,20 +1528,20 @@ y 1
 end
 arch mover_3
 maxhp 1
+x 11
+y 1
 speed -2.000000
 level 1
-x 11
-y 1
 end
 arch dungeon_floor
 x 11
 y 2
 end
 arch grimreaper
-unaggressive 1
-stand_still 1
 x 11
 y 2
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 11
@@ -1556,10 +1557,10 @@ y 4
 end
 arch mover_7
 maxhp 1
-speed -2.000000
-level 1
 x 11
 y 4
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 11
@@ -1630,9 +1631,9 @@ x 11
 y 13
 end
 arch ghost
-stand_still 1
 x 11
 y 13
+stand_still 1
 end
 arch dirtfloor
 x 11
@@ -1640,9 +1641,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 11
 y 14
+level 1
 end
 arch dungeon_floor
 x 11
@@ -1664,10 +1665,10 @@ y 1
 end
 arch mover_3
 maxhp 1
+x 12
+y 1
 speed -2.000000
 level 1
-x 12
-y 1
 end
 arch dungeon_floor
 x 12
@@ -1691,9 +1692,9 @@ y 4
 end
 arch mover_7
 maxhp 1
-level 1
 x 12
 y 4
+level 1
 end
 arch dungeon_floor
 x 12
@@ -1708,18 +1709,18 @@ x 12
 y 6
 end
 arch skeleton
-stand_still 1
 x 12
 y 6
+stand_still 1
 end
 arch dungeon_floor
 x 12
 y 7
 end
 arch skeleton
-stand_still 1
 x 12
 y 7
+stand_still 1
 end
 arch dungeon_floor
 x 12
@@ -1734,18 +1735,18 @@ x 12
 y 9
 end
 arch zombie
-stand_still 1
 x 12
 y 9
+stand_still 1
 end
 arch dungeon_floor
 x 12
 y 10
 end
 arch zombie
-stand_still 1
 x 12
 y 10
+stand_still 1
 end
 arch dungeon_floor
 x 12
@@ -1777,9 +1778,9 @@ y 14
 end
 arch mover_2
 maxhp 1
-level 1
 x 12
 y 14
+level 1
 end
 arch dungeon_floor
 x 12
@@ -1801,10 +1802,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -2.000000
-level 1
 x 13
 y 1
+speed -2.000000
+level 1
 end
 arch dungeon_floor
 x 13
@@ -1836,9 +1837,9 @@ y 5
 end
 arch mover_8
 maxhp 1
-level 1
 x 13
 y 5
+level 1
 end
 arch dirtfloor
 x 13
@@ -1846,9 +1847,9 @@ y 6
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 6
+level 1
 end
 arch dirtfloor
 x 13
@@ -1856,9 +1857,9 @@ y 7
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 7
+level 1
 end
 arch dirtfloor
 x 13
@@ -1866,9 +1867,9 @@ y 8
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 8
+level 1
 end
 arch dirtfloor
 x 13
@@ -1876,9 +1877,9 @@ y 9
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 9
+level 1
 end
 arch dirtfloor
 x 13
@@ -1886,9 +1887,9 @@ y 10
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 10
+level 1
 end
 arch dirtfloor
 x 13
@@ -1896,9 +1897,9 @@ y 11
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 11
+level 1
 end
 arch dirtfloor
 x 13
@@ -1906,9 +1907,9 @@ y 12
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 12
+level 1
 end
 arch dirtfloor
 x 13
@@ -1916,9 +1917,9 @@ y 13
 end
 arch mover_1
 maxhp 1
-level 1
 x 13
 y 13
+level 1
 end
 arch dungeon_floor
 x 13
@@ -1948,18 +1949,18 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 14
 y 1
+level 1
 end
 arch dungeon_floor
 x 14
 y 2
 end
 arch ghost
-stand_still 1
 x 14
 y 2
+stand_still 1
 end
 arch dungeon_floor
 x 14
@@ -2078,18 +2079,18 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 15
 y 1
+level 1
 end
 arch dungeon_floor
 x 15
 y 2
 end
 arch ghost
-stand_still 1
 x 15
 y 2
+stand_still 1
 end
 arch dungeon_floor
 x 15
@@ -2112,28 +2113,28 @@ x 15
 y 5
 end
 arch wraith
-stand_still 1
 x 15
 y 5
+stand_still 1
 end
 arch dungeon_floor
 x 15
 y 6
 end
 arch wraith
+x 15
+y 6
 unaggressive 1
 stand_still 1
-x 15
-y 6
 end
 arch dungeon_floor
 x 15
 y 7
 end
 arch wraith
-stand_still 1
 x 15
 y 7
+stand_still 1
 end
 arch dungeon_floor
 x 15
@@ -2164,30 +2165,30 @@ x 15
 y 11
 end
 arch wraith
-unaggressive 1
-stand_still 1
 x 15
 y 11
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 15
 y 12
 end
 arch wraith
-unaggressive 1
-stand_still 1
 x 15
 y 12
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 15
 y 13
 end
 arch wraith
-unaggressive 1
-stand_still 1
 x 15
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 15
@@ -2217,27 +2218,27 @@ y 1
 end
 arch mover_4
 maxhp 1
-level 1
 x 16
 y 1
+level 1
 end
 arch dungeon_floor
 x 16
 y 2
 end
 arch ghost
-stand_still 1
 x 16
 y 2
+stand_still 1
 end
 arch dungeon_floor
 x 16
 y 3
 end
 arch ghost
-stand_still 1
 x 16
 y 3
+stand_still 1
 end
 arch dungeon_floor
 x 16
@@ -2351,9 +2352,9 @@ y 2
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 2
+level 1
 end
 arch dirtfloor
 x 17
@@ -2361,9 +2362,9 @@ y 3
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 3
+level 1
 end
 arch dirtfloor
 x 17
@@ -2371,10 +2372,10 @@ y 4
 end
 arch mover_5
 maxhp 1
+x 17
+y 4
 speed -2.000000
 level 1
-x 17
-y 4
 end
 arch dirtfloor
 x 17
@@ -2382,9 +2383,9 @@ y 5
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 5
+level 1
 end
 arch dirtfloor
 x 17
@@ -2392,9 +2393,9 @@ y 6
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 6
+level 1
 end
 arch dirtfloor
 x 17
@@ -2402,9 +2403,9 @@ y 7
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 7
+level 1
 end
 arch dirtfloor
 x 17
@@ -2412,9 +2413,9 @@ y 8
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 8
+level 1
 end
 arch dirtfloor
 x 17
@@ -2422,9 +2423,9 @@ y 9
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 9
+level 1
 end
 arch dirtfloor
 x 17
@@ -2432,9 +2433,9 @@ y 10
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 10
+level 1
 end
 arch dirtfloor
 x 17
@@ -2442,9 +2443,9 @@ y 11
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 11
+level 1
 end
 arch dirtfloor
 x 17
@@ -2452,9 +2453,9 @@ y 12
 end
 arch mover_5
 maxhp 1
-level 1
 x 17
 y 12
+level 1
 end
 arch dirtfloor
 x 17
@@ -2462,9 +2463,9 @@ y 13
 end
 arch mover_4
 maxhp 1
-level 1
 x 17
 y 13
+level 1
 end
 arch dungeon_floor
 x 17
@@ -2549,10 +2550,10 @@ x 18
 y 8
 end
 arch wight
-unaggressive 1
-stand_still 1
 x 18
 y 8
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 18
@@ -2567,10 +2568,10 @@ x 18
 y 10
 end
 arch ghast
-unaggressive 1
-stand_still 1
 x 18
 y 10
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 18
@@ -2602,9 +2603,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 18
 y 14
+level 1
 end
 arch dungeon_floor
 x 18
@@ -2634,9 +2635,9 @@ y 2
 end
 arch mover_2
 maxhp 1
-level 1
 x 19
 y 2
+level 1
 end
 arch dirtfloor
 x 19
@@ -2644,9 +2645,9 @@ y 3
 end
 arch mover_1
 maxhp 1
-level 1
 x 19
 y 3
+level 1
 end
 arch dirtfloor
 x 19
@@ -2654,9 +2655,9 @@ y 4
 end
 arch mover_1
 maxhp 1
-level 1
 x 19
 y 4
+level 1
 end
 arch dirtfloor
 x 19
@@ -2664,9 +2665,9 @@ y 5
 end
 arch mover_1
 maxhp 1
-level 1
 x 19
 y 5
+level 1
 end
 arch dirtfloor
 x 19
@@ -2674,9 +2675,9 @@ y 6
 end
 arch mover_1
 maxhp 1
-level 1
 x 19
 y 6
+level 1
 end
 arch dungeon_floor
 x 19
@@ -2731,10 +2732,10 @@ x 19
 y 13
 end
 arch nightmare
-unaggressive 1
-stand_still 1
 x 19
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 19
@@ -2742,9 +2743,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 19
 y 14
+level 1
 end
 arch dungeon_floor
 x 19
@@ -2766,9 +2767,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 20
 y 1
+level 1
 end
 arch dungeon_floor
 x 20
@@ -2808,9 +2809,9 @@ y 6
 end
 arch mover_7
 maxhp 1
-level 1
 x 20
 y 6
+level 1
 end
 arch dungeon_floor
 x 20
@@ -2865,10 +2866,10 @@ x 20
 y 13
 end
 arch nightmare
-unaggressive 1
-stand_still 1
 x 20
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 20
@@ -2876,9 +2877,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 20
 y 14
+level 1
 end
 arch dungeon_floor
 x 20
@@ -2900,9 +2901,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 21
 y 1
+level 1
 end
 arch dungeon_floor
 x 21
@@ -2918,9 +2919,9 @@ y 3
 end
 arch mover_5
 maxhp 1
-level 1
 x 21
 y 3
+level 1
 end
 arch dirtfloor
 x 21
@@ -2928,9 +2929,9 @@ y 4
 end
 arch mover_5
 maxhp 1
-level 1
 x 21
 y 4
+level 1
 end
 arch dirtfloor
 x 21
@@ -2938,9 +2939,9 @@ y 5
 end
 arch mover_5
 maxhp 1
-level 1
 x 21
 y 5
+level 1
 end
 arch dirtfloor
 x 21
@@ -2948,9 +2949,9 @@ y 6
 end
 arch mover_7
 maxhp 1
-level 1
 x 21
 y 6
+level 1
 end
 arch dirtfloor
 x 21
@@ -2958,9 +2959,9 @@ y 7
 end
 arch mover_1
 maxhp 1
-level 1
 x 21
 y 7
+level 1
 end
 arch dirtfloor
 x 21
@@ -2968,9 +2969,9 @@ y 8
 end
 arch mover_1
 maxhp 1
-level 1
 x 21
 y 8
+level 1
 end
 arch dirtfloor
 x 21
@@ -2978,9 +2979,9 @@ y 9
 end
 arch mover_1
 maxhp 1
-level 1
 x 21
 y 9
+level 1
 end
 arch dungeon_floor
 x 21
@@ -3020,9 +3021,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 21
 y 14
+level 1
 end
 arch dungeon_floor
 x 21
@@ -3044,10 +3045,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -0.050000
-level 1
 x 22
 y 1
+speed -0.050000
+level 1
 end
 arch dungeon_floor
 x 22
@@ -3063,31 +3064,31 @@ y 3
 end
 arch mover_7
 maxhp 1
-level 1
 x 22
 y 3
+level 1
 end
 arch dungeon_floor
 x 22
 y 4
 end
 arch spectre
+x 22
+y 4
 invisible 0
 unaggressive 1
 stand_still 1
-x 22
-y 4
 end
 arch dungeon_floor
 x 22
 y 5
 end
 arch spectre
+x 22
+y 5
 invisible 0
 unaggressive 1
 stand_still 1
-x 22
-y 5
 end
 arch dungeon_floor
 x 22
@@ -3119,9 +3120,9 @@ y 9
 end
 arch mover_7
 maxhp 1
-level 1
 x 22
 y 9
+level 1
 end
 arch dungeon_floor
 x 22
@@ -3152,10 +3153,10 @@ x 22
 y 13
 end
 arch vampire
-unaggressive 1
-stand_still 1
 x 22
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 22
@@ -3163,9 +3164,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 22
 y 14
+level 1
 end
 arch dungeon_floor
 x 22
@@ -3187,9 +3188,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 23
 y 1
+level 1
 end
 arch dungeon_floor
 x 23
@@ -3205,9 +3206,9 @@ y 3
 end
 arch mover_7
 maxhp 1
-level 1
 x 23
 y 3
+level 1
 end
 arch dirtfloor
 x 23
@@ -3215,9 +3216,9 @@ y 4
 end
 arch mover_1
 maxhp 1
-level 1
 x 23
 y 4
+level 1
 end
 arch dirtfloor
 x 23
@@ -3225,9 +3226,9 @@ y 5
 end
 arch mover_1
 maxhp 1
-level 1
 x 23
 y 5
+level 1
 end
 arch dungeon_floor
 x 23
@@ -3250,10 +3251,10 @@ x 23
 y 8
 end
 arch beholder
-unaggressive 1
-stand_still 1
 x 23
 y 8
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 23
@@ -3261,19 +3262,19 @@ y 9
 end
 arch mover_7
 maxhp 1
-level 1
 x 23
 y 9
+level 1
 end
 arch dungeon_floor
 x 23
 y 10
 end
 arch beholder
-unaggressive 1
-stand_still 1
 x 23
 y 10
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 23
@@ -3296,10 +3297,10 @@ x 23
 y 13
 end
 arch vampire
-unaggressive 1
-stand_still 1
 x 23
 y 13
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 23
@@ -3307,9 +3308,9 @@ y 14
 end
 arch mover_3
 maxhp 1
-level 1
 x 23
 y 14
+level 1
 end
 arch dungeon_floor
 x 23
@@ -3331,9 +3332,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 24
 y 1
+level 1
 end
 arch dungeon_floor
 x 24
@@ -3373,9 +3374,9 @@ y 6
 end
 arch mover_8
 maxhp 1
-level 1
 x 24
 y 6
+level 1
 end
 arch dungeon_floor
 x 24
@@ -3390,10 +3391,10 @@ x 24
 y 8
 end
 arch beholder
-unaggressive 1
-stand_still 1
 x 24
 y 8
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 24
@@ -3401,19 +3402,19 @@ y 9
 end
 arch mover_7
 maxhp 1
-level 1
 x 24
 y 9
+level 1
 end
 arch dungeon_floor
 x 24
 y 10
 end
 arch beholder
-unaggressive 1
-stand_still 1
 x 24
 y 10
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 24
@@ -3445,9 +3446,9 @@ y 14
 end
 arch mover_2
 maxhp 1
-level 1
 x 24
 y 14
+level 1
 end
 arch dungeon_floor
 x 24
@@ -3469,10 +3470,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -0.100000
-level 1
 x 25
 y 1
+speed -0.100000
+level 1
 end
 arch dungeon_floor
 x 25
@@ -3500,9 +3501,9 @@ y 6
 end
 arch mover_7
 maxhp 1
-level 1
 x 25
 y 6
+level 1
 end
 arch dirtfloor
 x 25
@@ -3510,9 +3511,9 @@ y 7
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 7
+level 1
 end
 arch dirtfloor
 x 25
@@ -3520,9 +3521,9 @@ y 8
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 8
+level 1
 end
 arch dirtfloor
 x 25
@@ -3530,9 +3531,9 @@ y 9
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 9
+level 1
 end
 arch dirtfloor
 x 25
@@ -3540,9 +3541,9 @@ y 10
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 10
+level 1
 end
 arch dirtfloor
 x 25
@@ -3550,9 +3551,9 @@ y 11
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 11
+level 1
 end
 arch dirtfloor
 x 25
@@ -3560,9 +3561,9 @@ y 12
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 12
+level 1
 end
 arch dirtfloor
 x 25
@@ -3570,9 +3571,9 @@ y 13
 end
 arch mover_1
 maxhp 1
-level 1
 x 25
 y 13
+level 1
 end
 arch dungeon_floor
 x 25
@@ -3602,10 +3603,10 @@ y 1
 end
 arch mover_3
 maxhp 1
-speed -0.100000
-level 1
 x 26
 y 1
+speed -0.100000
+level 1
 end
 arch dungeon_floor
 x 26
@@ -3719,9 +3720,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 27
 y 1
+level 1
 end
 arch dungeon_floor
 x 27
@@ -3760,10 +3761,10 @@ x 27
 y 6
 end
 arch skull
-unaggressive 1
-stand_still 1
 x 27
 y 6
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 27
@@ -3771,20 +3772,20 @@ y 7
 end
 arch mover_4
 maxhp 1
-speed -1.000000
-level 1
 x 27
 y 7
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 27
 y 8
 end
 arch skull
-unaggressive 1
-stand_still 1
 x 27
 y 8
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 27
@@ -3792,20 +3793,20 @@ y 9
 end
 arch mover_4
 maxhp 1
-speed -1.000000
-level 1
 x 27
 y 9
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 27
 y 10
 end
 arch skull
-unaggressive 1
-stand_still 1
 x 27
 y 10
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 27
@@ -3829,9 +3830,9 @@ y 13
 end
 arch mover_5
 maxhp 1
-level 1
 x 27
 y 13
+level 1
 end
 arch dirtfloor
 x 27
@@ -3839,9 +3840,9 @@ y 14
 end
 arch mover_5
 maxhp 1
-level 1
 x 27
 y 14
+level 1
 end
 arch dirtfloor
 x 27
@@ -3866,9 +3867,9 @@ y 1
 end
 arch mover_3
 maxhp 1
-level 1
 x 28
 y 1
+level 1
 end
 arch dungeon_floor
 x 28
@@ -3900,20 +3901,20 @@ y 6
 end
 arch mover_6
 maxhp 1
-speed -1.000000
-level 1
 x 28
 y 6
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 28
 y 7
 end
 arch skull
-unaggressive 1
-stand_still 1
 x 28
 y 7
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 28
@@ -3921,20 +3922,20 @@ y 8
 end
 arch mover_6
 maxhp 1
-speed -1.000000
-level 1
 x 28
 y 8
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 28
 y 9
 end
 arch skull
-unaggressive 1
-stand_still 1
 x 28
 y 9
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 28
@@ -3942,10 +3943,10 @@ y 10
 end
 arch mover_3
 maxhp 1
-speed -1.000000
-level 1
 x 28
 y 10
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 28
@@ -3961,10 +3962,10 @@ y 12
 end
 arch mover_6
 maxhp 1
-speed -1.000000
-level 1
 x 28
 y 12
+speed -1.000000
+level 1
 end
 arch dungeon_floor
 x 28
@@ -3994,9 +3995,9 @@ y 1
 end
 arch mover_4
 maxhp 1
-level 1
 x 29
 y 1
+level 1
 end
 arch dungeon_floor
 x 29
@@ -4028,9 +4029,9 @@ y 6
 end
 arch mover_7
 maxhp 1
-level 1
 x 29
 y 6
+level 1
 end
 arch dungeon_floor
 x 29
@@ -4062,9 +4063,9 @@ y 10
 end
 arch mover_3
 maxhp 1
-level 1
 x 29
 y 10
+level 1
 end
 arch dungeon_floor
 x 29
@@ -4080,9 +4081,9 @@ y 12
 end
 arch mover_7
 maxhp 1
-level 1
 x 29
 y 12
+level 1
 end
 arch dungeon_floor
 x 29
@@ -4120,9 +4121,9 @@ y 2
 end
 arch mover_5
 maxhp 1
-level 1
 x 30
 y 2
+level 1
 end
 arch dirtfloor
 x 30
@@ -4130,21 +4131,21 @@ y 3
 end
 arch mover_5
 maxhp 1
-speed -0.100000
-level 1
 x 30
 y 3
-end
-arch dirtfloor
-x 30
-y 4
-end
-arch mover_5
-maxhp 1
 speed -0.100000
 level 1
+end
+arch dirtfloor
 x 30
 y 4
+end
+arch mover_5
+maxhp 1
+x 30
+y 4
+speed -0.100000
+level 1
 end
 arch dirtfloor
 x 30
@@ -4152,9 +4153,9 @@ y 5
 end
 arch mover_5
 maxhp 1
-level 1
 x 30
 y 5
+level 1
 end
 arch dirtfloor
 x 30
@@ -4162,9 +4163,9 @@ y 6
 end
 arch mover_7
 maxhp 1
-level 1
 x 30
 y 6
+level 1
 end
 arch dungeon_floor
 x 30
@@ -4187,10 +4188,10 @@ x 30
 y 9
 end
 arch demilich
-stand_still 1
-random_movement 0
 x 30
 y 9
+stand_still 1
+random_movement 0
 end
 arch dirtfloor
 x 30
@@ -4198,9 +4199,9 @@ y 10
 end
 arch mover_5
 maxhp 1
-level 1
 x 30
 y 10
+level 1
 end
 arch dirtfloor
 x 30
@@ -4208,9 +4209,9 @@ y 11
 end
 arch mover_5
 maxhp 1
-level 1
 x 30
 y 11
+level 1
 end
 arch dirtfloor
 x 30
@@ -4218,9 +4219,9 @@ y 12
 end
 arch mover_7
 maxhp 1
-level 1
 x 30
 y 12
+level 1
 end
 arch dungeon_floor
 x 30
@@ -4365,20 +4366,20 @@ x 31
 y 15
 end
 arch golem_necro
-unaggressive 1
-stand_still 1
 x 25
 y 2
+unaggressive 1
+stand_still 1
 end
 arch dread
-unaggressive 1
-stand_still 1
 x 28
 y 3
-end
-arch big_dragon_worthless
 unaggressive 1
 stand_still 1
+end
+arch big_dragon_worthless
 x 28
 y 13
+unaggressive 1
+stand_still 1
 end

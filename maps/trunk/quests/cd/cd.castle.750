@@ -1,14 +1,15 @@
 arch map
-name cd
+name Fortress Ang
+difficulty 1
+width 50
+height 50
+enter_x 47
+enter_y 48
 msg
 Creator:
 Email:
 Date: Thu Nov 18 15:17:04 1993
 endmsg
-width 50
-height 50
-enter_x 47
-enter_y 48
 end
 arch grass
 end
@@ -4544,9 +4545,9 @@ x 18
 y 41
 end
 arch button_small
-connected 2
 x 18
 y 41
+connected 2
 end
 arch dungeon_floor
 x 18
@@ -4760,9 +4761,9 @@ x 19
 y 41
 end
 arch button_handle
-connected 1
 x 19
 y 41
+connected 1
 end
 arch dungeon_floor
 x 19
@@ -5202,46 +5203,46 @@ x 21
 y 39
 end
 arch spikes_closed
-connected 2
 x 21
 y 39
-end
-arch dungeon_floor
-x 21
-y 40
-end
-arch spikes_closed
-connected 3
-x 21
-y 40
-end
-arch dungeon_floor
-x 21
-y 41
-end
-arch spikes_closed
 connected 2
+end
+arch dungeon_floor
+x 21
+y 40
+end
+arch spikes_closed
+x 21
+y 40
+connected 3
+end
+arch dungeon_floor
 x 21
 y 41
+end
+arch spikes_closed
+x 21
+y 41
+connected 2
 end
 arch dungeon_floor
 x 21
 y 42
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 21
 y 42
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 21
 y 43
 end
 arch spikes_closed
-connected 3
 x 21
 y 43
+connected 3
 end
 arch cobblestones
 x 21
@@ -5451,46 +5452,46 @@ x 22
 y 39
 end
 arch spikes_closed
-connected 2
 x 22
 y 39
-end
-arch dungeon_floor
-x 22
-y 40
-end
-arch spikes_closed
-connected 3
-x 22
-y 40
-end
-arch dungeon_floor
-x 22
-y 41
-end
-arch spikes_closed
 connected 2
+end
+arch dungeon_floor
+x 22
+y 40
+end
+arch spikes_closed
+x 22
+y 40
+connected 3
+end
+arch dungeon_floor
 x 22
 y 41
+end
+arch spikes_closed
+x 22
+y 41
+connected 2
 end
 arch dungeon_floor
 x 22
 y 42
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 22
 y 42
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 22
 y 43
 end
 arch spikes_closed
-connected 3
 x 22
 y 43
+connected 3
 end
 arch cobblestones
 x 22
@@ -5680,46 +5681,46 @@ x 23
 y 39
 end
 arch spikes_closed
-connected 2
 x 23
 y 39
-end
-arch dungeon_floor
-x 23
-y 40
-end
-arch spikes_closed
-connected 3
-x 23
-y 40
-end
-arch dungeon_floor
-x 23
-y 41
-end
-arch spikes_closed
 connected 2
+end
+arch dungeon_floor
+x 23
+y 40
+end
+arch spikes_closed
+x 23
+y 40
+connected 3
+end
+arch dungeon_floor
 x 23
 y 41
+end
+arch spikes_closed
+x 23
+y 41
+connected 2
 end
 arch dungeon_floor
 x 23
 y 42
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 23
 y 42
+speed 0.500000
+connected 1
 end
 arch cobblestones
 x 23
 y 43
 end
 arch spikes_closed
-connected 3
 x 23
 y 43
+connected 3
 end
 arch cobblestones
 x 23
@@ -5965,9 +5966,9 @@ x 24
 y 44
 end
 arch button_handle
-connected 1
 x 24
 y 44
+connected 1
 end
 arch grass
 x 24
@@ -6180,9 +6181,9 @@ x 25
 y 41
 end
 arch button_handle
-connected 1
 x 25
 y 41
+connected 1
 end
 arch dungeon_floor
 x 25
@@ -6404,9 +6405,9 @@ x 26
 y 41
 end
 arch button_small
-connected 3
 x 26
 y 41
+connected 3
 end
 arch dungeon_floor
 x 26
@@ -10198,6 +10199,10 @@ arch grass
 x 42
 y 16
 end
+arch grass
+x 42
+y 17
+end
 arch hole
 slaying cd.tunnel.751
 hp 14
@@ -10210,9 +10215,9 @@ x 42
 y 18
 end
 arch generate_kobold
-speed_left -0.180000
 x 42
 y 18
+speed_left -0.180000
 end
 arch grass
 x 42
@@ -10235,9 +10240,9 @@ x 42
 y 22
 end
 arch generate_kobold
+x 42
+y 22
 speed_left -0.160000
-x 42
-y 22
 end
 arch grass
 x 42
@@ -10260,9 +10265,9 @@ x 42
 y 26
 end
 arch generate_kobold
-speed_left -0.180000
 x 42
 y 26
+speed_left -0.180000
 end
 arch grass
 x 42
@@ -10795,45 +10800,45 @@ x 44
 y 22
 end
 arch kobold
-speed_left -0.900000
 x 44
 y 22
+speed_left -0.900000
 end
 arch grass
 x 44
 y 23
 end
 arch kobold
-speed_left -0.900000
 x 44
 y 23
+speed_left -0.900000
 end
 arch grass
 x 44
 y 24
 end
 arch kobold
-speed_left -0.900000
 x 44
 y 24
+speed_left -0.900000
 end
 arch grass
 x 44
 y 25
 end
 arch kobold
-speed_left -0.900000
 x 44
 y 25
+speed_left -0.900000
 end
 arch grass
 x 44
 y 26
 end
 arch kobold
-speed_left -0.900000
 x 44
 y 26
+speed_left -0.900000
 end
 arch grass
 x 44
@@ -11059,45 +11064,45 @@ x 45
 y 22
 end
 arch kobold
-speed_left -0.900000
 x 45
 y 22
+speed_left -0.900000
 end
 arch grass
 x 45
 y 23
 end
 arch kobold
-speed_left -0.900000
 x 45
 y 23
+speed_left -0.900000
 end
 arch grass
 x 45
 y 24
 end
 arch kobold
-speed_left -0.900000
 x 45
 y 24
+speed_left -0.900000
 end
 arch grass
 x 45
 y 25
 end
 arch kobold
-speed_left -0.900000
 x 45
 y 25
+speed_left -0.900000
 end
 arch grass
 x 45
 y 26
 end
 arch kobold
-speed_left -0.900000
 x 45
 y 26
+speed_left -0.900000
 end
 arch grass
 x 45
@@ -11283,45 +11288,45 @@ x 46
 y 22
 end
 arch kobold
-speed_left -0.900000
 x 46
 y 22
+speed_left -0.900000
 end
 arch grass
 x 46
 y 23
 end
 arch kobold
-speed_left -0.900000
 x 46
 y 23
+speed_left -0.900000
 end
 arch grass
 x 46
 y 24
 end
 arch kobold
-speed_left -0.900000
 x 46
 y 24
+speed_left -0.900000
 end
 arch grass
 x 46
 y 25
 end
 arch kobold
-speed_left -0.900000
 x 46
 y 25
+speed_left -0.900000
 end
 arch grass
 x 46
 y 26
 end
 arch kobold
-speed_left -0.900000
 x 46
 y 26
+speed_left -0.900000
 end
 arch grass
 x 46
@@ -11507,45 +11512,45 @@ x 47
 y 22
 end
 arch kobold
-speed_left -0.900000
 x 47
 y 22
+speed_left -0.900000
 end
 arch grass
 x 47
 y 23
 end
 arch kobold
-speed_left -0.900000
 x 47
 y 23
+speed_left -0.900000
 end
 arch grass
 x 47
 y 24
 end
 arch kobold
-speed_left -0.900000
 x 47
 y 24
+speed_left -0.900000
 end
 arch grass
 x 47
 y 25
 end
 arch kobold
-speed_left -0.900000
 x 47
 y 25
+speed_left -0.900000
 end
 arch grass
 x 47
 y 26
 end
 arch kobold
-speed_left -0.900000
 x 47
 y 26
+speed_left -0.900000
 end
 arch grass
 x 47
@@ -11731,45 +11736,45 @@ x 48
 y 22
 end
 arch kobold
-speed_left -0.900000
 x 48
 y 22
+speed_left -0.900000
 end
 arch grass
 x 48
 y 23
 end
 arch kobold
-speed_left -0.900000
 x 48
 y 23
+speed_left -0.900000
 end
 arch grass
 x 48
 y 24
 end
 arch kobold
-speed_left -0.900000
 x 48
 y 24
+speed_left -0.900000
 end
 arch grass
 x 48
 y 25
 end
 arch kobold
-speed_left -0.900000
 x 48
 y 25
+speed_left -0.900000
 end
 arch grass
 x 48
 y 26
 end
 arch kobold
-speed_left -0.900000
 x 48
 y 26
+speed_left -0.900000
 end
 arch grass
 x 48

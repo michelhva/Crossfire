@@ -1,14 +1,15 @@
 arch map
+name Chaos Lair
+difficulty 1
 region lakecountry
-name Chaos_lair4
+darkness 4
+width 20
+height 26
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Tue Jun  6 17:24:03 1995
 endmsg
-x 20
-y 26
-invisible 4
 end
 arch button_handle
 connected 1
@@ -19,8 +20,6 @@ speed_left -1.340000
 randomitems none
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch large_stones
@@ -108,33 +107,21 @@ arch cave23
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
@@ -232,20 +219,14 @@ x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
@@ -365,8 +346,6 @@ x 2
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
@@ -482,20 +461,14 @@ x 3
 y 18
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 20
 end
 arch blocked
-msg
-endmsg
 x 3
 y 21
 end
@@ -504,20 +477,14 @@ x 3
 y 22
 end
 arch blocked
-msg
-endmsg
 x 3
 y 23
 end
 arch blocked
-msg
-endmsg
 x 3
 y 24
 end
 arch blocked
-msg
-endmsg
 x 3
 y 25
 end
@@ -556,8 +523,6 @@ x 4
 y 5
 end
 arch blocked
-msg
-endmsg
 x 4
 y 5
 end
@@ -658,14 +623,10 @@ x 4
 y 20
 end
 arch blocked
-msg
-endmsg
 x 4
 y 21
 end
 arch blocked
-msg
-endmsg
 x 4
 y 22
 end
@@ -799,8 +760,6 @@ y 24
 connected 3
 end
 arch blocked
-msg
-endmsg
 x 4
 y 25
 end
@@ -883,8 +842,6 @@ x 5
 y 12
 end
 arch blocked
-msg
-endmsg
 x 5
 y 12
 end
@@ -941,26 +898,18 @@ x 5
 y 20
 end
 arch blocked
-msg
-endmsg
 x 5
 y 21
 end
 arch blocked
-msg
-endmsg
 x 5
 y 22
 end
 arch blocked
-msg
-endmsg
 x 5
 y 23
 end
 arch blocked
-msg
-endmsg
 x 5
 y 24
 end
@@ -1084,14 +1033,10 @@ x 6
 y 19
 end
 arch blocked
-msg
-endmsg
 x 6
 y 20
 end
 arch blocked
-msg
-endmsg
 x 6
 y 21
 end
@@ -1344,8 +1289,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 8
 y 19
@@ -1416,7 +1361,7 @@ end
 arch altar
 slaying fragment-of-chaos
 msg
-  You hear sounds of rock moving.
+You hear sounds of rock moving.
 endmsg
 food 1
 x 9
@@ -1522,8 +1467,8 @@ speed_left -12.100000
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 9
 y 19
@@ -1679,8 +1624,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 10
 y 19
@@ -1733,8 +1678,6 @@ x 10
 y 25
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch large_stones
@@ -1837,8 +1780,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord. 
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 11
 y 19
@@ -1902,19 +1845,13 @@ x 11
 y 25
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
@@ -2059,8 +1996,6 @@ x 12
 y 25
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch large_stones
@@ -2220,8 +2155,6 @@ x 13
 y 25
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch large_stones
@@ -3244,8 +3177,6 @@ x 18
 y 25
 end
 arch blocked
-msg
-endmsg
 x 19
 end
 arch large_stones
@@ -3466,12 +3397,11 @@ y 20
 speed 1.000000
 speed_left -0.920000
 level 99
-immune 23573
-protected 104
 attacktype 351389
 carrying 545050
 flying 1
 can_cast_spell 1
+immune 104
 arch spell_create_bomb
 end
 arch Pdragon_mail
@@ -3479,18 +3409,16 @@ end
 arch dragonslayer
 name Dragonbane
 msg
-  Mopoon's Dragonbane. It was forged
+Mopoon's Dragonbane. It was forged
 long long ago. The first master of the
 the sword has been forgotten, together
 with the arcane magic that forged it.
-  The Dragonbane glows with hunger for
+The Dragonbane glows with hunger for
 dragon blood.
 endmsg
 Str 3
 exp 3
 dam 81
-x 1
-y 4
 weight 64000
 magic 9
 identified 1
@@ -3538,11 +3466,10 @@ y 8
 speed 0.700000
 speed_left -1.840000
 level 30
-immune 4117
-protected 8
 attacktype 29
 carrying 35000
 flying 1
+immune 8
 arch abil_icestorm
 end
 arch gem
@@ -3568,18 +3495,17 @@ y 14
 speed 0.400000
 speed_left -1.260000
 level 30
-immune 4099
-protected 28
 carrying 35000
 flying 1
+immune 28
 arch gem
 nrof 600
 end
 arch sorcerer_book
 name stones
 face largestone.111
-no_pick 1
 randomitems none
+no_pick 1
 arch spell_color_spray
 end
 end
@@ -3603,18 +3529,17 @@ y 5
 speed 0.400000
 speed_left -1.310000
 level 30
-immune 4099
-protected 28
 carrying 35000
 flying 1
+immune 28
 arch gem
 nrof 600
 end
 arch sorcerer_book
 name stones
 face largestone.111
-no_pick 1
 randomitems none
+no_pick 1
 arch spell_color_spray
 end
 end
@@ -3638,18 +3563,17 @@ y 4
 speed 0.400000
 speed_left -2.590000
 level 30
-immune 4099
-protected 28
 carrying 35000
 flying 1
+immune 28
 arch gem
 nrof 600
 end
 arch sorcerer_book
 name stones
 face largestone.111
-no_pick 1
 randomitems none
+no_pick 1
 arch spell_color_spray
 end
 end
@@ -3675,11 +3599,10 @@ y 15
 speed 0.700000
 speed_left -1.840000
 level 30
-immune 4117
-protected 8
 attacktype 29
 carrying 35000
 flying 1
+immune 8
 arch abil_icestorm
 end
 arch gem

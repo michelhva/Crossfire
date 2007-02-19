@@ -1,13 +1,13 @@
 arch map
-region portjoseph
 name The Drunken Shark
+region portjoseph
+width 18
+height 14
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Tue May 17 23:23:48 1994
 endmsg
-x 18
-y 14
 end
 arch brush
 end
@@ -364,7 +364,7 @@ Ah, a pretty lass in her day.  She
 has a house up near the church.  Ask
 her about Percy, not me.
 @match treasure
-Heh he everyones after a pirate's 
+Heh he everyones after a pirate's
 gold.  More like yer bones will
 litter the sandy deep.
 @match moogly|bill|Moogly|Bill
@@ -504,7 +504,7 @@ end
 arch pirate
 msg
 @match *
-Yo ho! Did ye see that punch!  
+Yo ho! Did ye see that punch!
 endmsg
 x 4
 y 11
@@ -590,7 +590,7 @@ msg
 Heh, he's me mate oer in the
 corner.
 @match *
-Arrr!  Get him ye landlubber! 
+Arrr!  Get him ye landlubber!
 endmsg
 x 5
 y 11
@@ -755,7 +755,7 @@ end
 arch man
 msg
 @match *
-Get him! Get him! 
+Get him! Get him!
 endmsg
 x 7
 y 8
@@ -1305,14 +1305,14 @@ talk to the likes o' us.
 @match hello|howdy|hi
 Arr.  Goodday to ye.
 @match bill|moogly|Moogly|Bill
-Ay, the dread pirate Moogly Bill.  
-Terror of the high seas.  
+Ay, the dread pirate Moogly Bill.
+Terror of the high seas.
 No one found his pirate loot, he
 took the secret of it to his grave.
 @match loot
 Enough for a king's ransom . . .
-but he was buried with the map.  
-Redeye knows more than we. 
+but he was buried with the map.
+Redeye knows more than we.
 endmsg
 x 12
 y 12
@@ -1379,7 +1379,7 @@ name serving girl
 msg
 @match drink
 Hold your horses, I'll get your
-drinks when I'm good and ready. 
+drinks when I'm good and ready.
 endmsg
 x 13
 y 7
@@ -1480,7 +1480,7 @@ end
 arch warrior_1
 msg
 @match *
->hiccup< 
+>hiccup<
 endmsg
 x 14
 y 8
@@ -1511,7 +1511,7 @@ msg
 @match treasure
 I don't know anything, ask them . . .
 @match *
-Pssst.  I overheard those two in the 
+Pssst.  I overheard those two in the
 next booth whispering about treasure.
 endmsg
 hp 30

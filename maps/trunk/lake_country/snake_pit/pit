@@ -1,27 +1,24 @@
 arch map
+name Pit
+difficulty 1
 region lakecountry
-name pit
+darkness 5
+width 6
+height 6
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Tue Jun  6 21:55:13 1995
 endmsg
-x 6
-y 6
-invisible 5
 end
 arch large_stones
 end
 arch blocked
-msg
-endmsg
 end
 arch large_stones
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch large_stones
@@ -46,16 +43,12 @@ arch large_stones
 y 5
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch large_stones
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch large_stones
@@ -122,7 +115,7 @@ y 2
 end
 arch magic_mouth
 msg
-  You climbed a long way down and there
+You climbed a long way down and there
 is still more to go. Do you want to go
 on
 endmsg
@@ -248,8 +241,6 @@ x 4
 y 5
 end
 arch blocked
-msg
-endmsg
 x 4
 y 5
 end
@@ -257,8 +248,6 @@ arch large_stones
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch large_stones
@@ -290,8 +279,6 @@ x 5
 y 4
 end
 arch blocked
-msg
-endmsg
 x 5
 y 4
 end
@@ -300,8 +287,6 @@ x 5
 y 5
 end
 arch blocked
-msg
-endmsg
 x 5
 y 5
 end
