@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name Butakis0
+region lakecountry
+width 24
+height 36
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 27 12:56:00 1995
 endmsg
-width 24
-height 36
 end
 arch grass
 end
@@ -695,7 +695,7 @@ x 2
 y 33
 end
 arch tavern
-name royal blacksmith
+name Royal Blacksmith
 slaying blacksmith
 hp 7
 sp 5
@@ -745,9 +745,9 @@ x 3
 y 4
 end
 arch guard
-speed_left -0.940000
 x 3
 y 4
+speed_left -0.940000
 end
 arch dungeon_floor
 x 3
@@ -758,9 +758,9 @@ x 3
 y 6
 end
 arch guard
-speed_left -0.940000
 x 3
 y 6
+speed_left -0.940000
 end
 arch grass
 x 3
@@ -933,9 +933,9 @@ x 4
 y 4
 end
 arch guard
-speed_left -0.940000
 x 4
 y 4
+speed_left -0.940000
 end
 arch dungeon_floor
 x 4
@@ -946,9 +946,9 @@ x 4
 y 6
 end
 arch guard
-speed_left -0.940000
 x 4
 y 6
+speed_left -0.940000
 end
 arch grass
 x 4
@@ -1011,6 +1011,7 @@ x 4
 y 16
 end
 arch house_small
+name Jacob's House
 slaying houses/Jacobs_house
 hp 11
 sp 15
@@ -1390,6 +1391,7 @@ x 6
 y 8
 end
 arch house_small
+name James' House
 slaying houses/James_house
 hp 11
 sp 15
@@ -1433,6 +1435,7 @@ x 6
 y 14
 end
 arch house_small
+name Sam's House
 slaying houses/Sams_house
 hp 11
 sp 15
@@ -1448,9 +1451,6 @@ x 6
 y 16
 end
 arch house_small
-slaying alchemist
-hp 7
-sp 5
 x 6
 y 16
 end
@@ -2105,7 +2105,7 @@ x 9
 y 14
 end
 arch tavern
-name gemstone alchemist
+name Gemstone Alchemist
 slaying alchemist
 hp 7
 sp 5
@@ -2287,9 +2287,9 @@ x 10
 y 6
 end
 arch light_guard
-speed_left -0.940000
 x 10
 y 6
+speed_left -0.940000
 end
 arch grass
 x 10
@@ -2328,6 +2328,7 @@ x 10
 y 11
 end
 arch house_1
+name Jack's House
 slaying houses/Jacks_house
 hp 11
 sp 15
@@ -3239,18 +3240,18 @@ x 14
 y 23
 end
 arch knight
-speed_left -1.500000
 x 14
 y 23
+speed_left -1.500000
 end
 arch grass
 x 14
 y 24
 end
 arch knight
-speed_left -1.500000
 x 14
 y 24
+speed_left -1.500000
 end
 arch grass
 x 14
@@ -3265,18 +3266,18 @@ x 14
 y 26
 end
 arch knight
-speed_left -1.500000
 x 14
 y 26
+speed_left -1.500000
 end
 arch grass
 x 14
 y 27
 end
 arch knight
-speed_left -1.500000
 x 14
 y 27
+speed_left -1.500000
 end
 arch grass
 x 14
@@ -3465,18 +3466,18 @@ x 15
 y 23
 end
 arch knight
-speed_left -1.500000
 x 15
 y 23
+speed_left -1.500000
 end
 arch grass
 x 15
 y 24
 end
 arch knight
-speed_left -1.500000
 x 15
 y 24
+speed_left -1.500000
 end
 arch grass
 x 15
@@ -3491,18 +3492,18 @@ x 15
 y 26
 end
 arch knight
-speed_left -1.500000
 x 15
 y 26
+speed_left -1.500000
 end
 arch grass
 x 15
 y 27
 end
 arch knight
-speed_left -1.500000
 x 15
 y 27
+speed_left -1.500000
 end
 arch grass
 x 15
@@ -3829,6 +3830,7 @@ x 17
 y 7
 end
 arch house_1
+name Bob's House
 slaying houses/Bobs_house
 hp 11
 sp 15
@@ -4512,6 +4514,7 @@ x 20
 y 10
 end
 arch house_1
+name Sean's House
 slaying houses/Seans_house
 hp 11
 sp 15
@@ -5463,6 +5466,7 @@ x 3
 y 9
 end
 arch store_general
+name General Shop
 slaying B_gshop
 hp 1
 sp 1
@@ -5514,7 +5518,7 @@ x 7
 y 8
 end
 arch city_tower
-name towers of luck
+name Towers of Luck
 slaying luck1
 hp 3
 sp 16
@@ -5522,7 +5526,7 @@ x 10
 y 30
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 3
 sp 5
@@ -5530,7 +5534,7 @@ x 11
 y 29
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 19
 sp 15
@@ -5538,7 +5542,7 @@ x 11
 y 31
 end
 arch city_tower
-name tower of luck
+name Towers of Luck
 slaying luck1
 hp 17
 sp 5
@@ -5546,6 +5550,7 @@ x 12
 y 30
 end
 arch store_weapons
+name Weapon Shop
 slaying B_wshop
 hp 1
 sp 8

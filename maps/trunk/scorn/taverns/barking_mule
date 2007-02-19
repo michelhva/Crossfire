@@ -1,13 +1,13 @@
 arch map
-region scorn
 name The Barking Mule
+region scorn
+width 24
+height 17
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 24
-height 17
 end
 arch grass
 end
@@ -184,18 +184,18 @@ x 1
 y 13
 end
 arch workbench
-is_cauldron 0
 x 1
 y 13
+is_cauldron 0
 arch horn2
 name Gramps' earhorn
+slaying Gramp's earhorn
 msg
 Property of Gramps Malone
 Git yer paws offa it!
 endmsg
 type 21
 value 1
-slaying Gramp's earhorn
 end
 end
 arch grass
@@ -238,9 +238,9 @@ x 2
 y 4
 end
 arch button_small
-connected 4
 x 2
 y 5
+connected 4
 end
 arch woodfloor
 x 2
@@ -251,14 +251,14 @@ x 2
 y 6
 end
 arch mdoor_closed_1
-connected 4
 x 2
 y 6
+connected 4
 end
 arch button_small
-connected 4
 x 2
 y 7
+connected 4
 end
 arch woodfloor
 x 2
@@ -320,19 +320,19 @@ arch grass
 x 3
 end
 arch ape
-sleep 0
-attack_movement 112
 x 3
+attack_movement 112
+sleep 0
 end
 arch grass
 x 3
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 3
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 3
@@ -347,9 +347,9 @@ x 3
 y 3
 end
 arch stove
-is_cauldron 0
 x 3
 y 3
+is_cauldron 0
 end
 arch woodfloor
 x 3
@@ -383,10 +383,10 @@ Ya I work part time at Oled's Cafe too.
 Hey kitchen is off limits!
 Keep it in your scabbard and take a seat there chum.
 endmsg
-randomitems jail
-stand_still 1
 x 3
 y 5
+randomitems jail
+stand_still 1
 end
 arch woodfloor
 x 3
@@ -460,19 +460,19 @@ arch grass
 x 4
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 4
+speed -0.5
+attacktype 1
 end
 arch grass
 x 4
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 4
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 4
@@ -483,18 +483,18 @@ x 4
 y 2
 end
 arch blocked
-blocksview 0
 x 4
 y 3
+blocksview 0
 end
 arch woodfloor
 x 4
 y 3
 end
 arch stove
-is_cauldron 0
 x 4
 y 3
+is_cauldron 0
 end
 arch woodfloor
 x 4
@@ -584,9 +584,9 @@ arch grass
 x 5
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 5
+speed -0.5
+attacktype 1
 end
 arch grass
 x 5
@@ -609,9 +609,9 @@ x 5
 y 4
 end
 arch longtable_1_4
-no_pass 1
 x 5
 y 4
+no_pass 1
 end
 arch woodfloor
 x 5
@@ -669,9 +669,9 @@ arch grass
 x 6
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 6
+speed -0.5
+attacktype 1
 end
 arch grass
 x 6
@@ -700,21 +700,21 @@ Drinks are 3 gold sweety pie.
 @match *
 Humm-dee-dumm... oh, pardon me you were saying?
 endmsg
-randomitems jail
-level 5
-speed -0.1
-stand_still 1
 x 6
 y 3
+speed -0.1
+level 5
+randomitems jail
+stand_still 1
 end
 arch woodfloor
 x 6
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 6
 y 4
+no_pass 1
 end
 arch woodfloor
 x 6
@@ -723,9 +723,9 @@ end
 arch booze_table
 slaying money
 food 30
-invisible 1
 x 6
 y 5
+invisible 1
 end
 arch chair_1.3
 x 6
@@ -795,10 +795,10 @@ x 7
 y 1
 end
 arch faerie_dragon
-sleep 0
-attack_movement 112
 x 7
 y 1
+attack_movement 112
+sleep 0
 end
 arch woodfloor
 x 7
@@ -821,9 +821,9 @@ x 7
 y 4
 end
 arch longtable_2_1_2
-no_pass 1
 x 7
 y 4
+no_pass 1
 end
 arch woodfloor
 x 7
@@ -832,9 +832,9 @@ end
 arch booze_table
 slaying money
 food 30
-invisible 1
 x 7
 y 5
+invisible 1
 end
 arch chair_1.3
 x 7
@@ -936,18 +936,18 @@ x 8
 y 3
 end
 arch longtable_1_1
-no_pass 1
 x 8
 y 3
+no_pass 1
 end
 arch woodfloor
 x 8
 y 4
 end
 arch longtable_2_2_4
-no_pass 1
 x 8
 y 4
+no_pass 1
 end
 arch woodfloor
 x 8
@@ -1053,9 +1053,9 @@ x 9
 y 10
 end
 arch button_small
-connected 1
 x 9
 y 11
+connected 1
 end
 arch woodfloor
 x 9
@@ -1070,9 +1070,9 @@ x 9
 y 12
 end
 arch button_small
-connected 1
 x 9
 y 13
+connected 1
 end
 arch flagstone
 x 9
@@ -1098,10 +1098,10 @@ x 10
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 10
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 10
@@ -1152,9 +1152,9 @@ x 10
 y 10
 end
 arch button_small
-connected 1
 x 10
 y 11
+connected 1
 end
 arch woodfloor
 x 10
@@ -1165,14 +1165,14 @@ x 10
 y 12
 end
 arch mdoor_closed_1
-connected 1
 x 10
 y 12
+connected 1
 end
 arch button_small
-connected 1
 x 10
 y 13
+connected 1
 end
 arch flagstone
 x 10
@@ -1194,19 +1194,19 @@ arch grass
 x 11
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 11
+speed -0.5
+attacktype 1
 end
 arch grass
 x 11
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 11
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 11
@@ -1265,9 +1265,9 @@ x 11
 y 10
 end
 arch button_small
-connected 1
 x 11
 y 11
+connected 1
 end
 arch woodfloor
 x 11
@@ -1282,9 +1282,9 @@ x 11
 y 12
 end
 arch button_small
-connected 1
 x 11
 y 13
+connected 1
 end
 arch flagstone
 x 11
@@ -1306,26 +1306,26 @@ arch grass
 x 12
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 12
+speed -0.5
+attacktype 1
 end
 arch grass
 x 12
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 12
 y 1
+speed -0.5
+attacktype 1
 end
 arch cherub
-flying 0
 Wis 5
-attack_movement 112
 x 12
 y 1
+attack_movement 112
+flying 0
 end
 arch woodfloor
 x 12
@@ -1421,19 +1421,19 @@ arch grass
 x 13
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 13
+speed -0.5
+attacktype 1
 end
 arch grass
 x 13
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 13
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 13
@@ -1519,19 +1519,19 @@ arch grass
 x 14
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 14
+speed -0.5
+attacktype 1
 end
 arch grass
 x 14
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 14
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 14
@@ -1626,19 +1626,19 @@ arch grass
 x 15
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 15
+speed -0.5
+attacktype 1
 end
 arch grass
 x 15
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 15
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 15
@@ -1748,19 +1748,19 @@ arch grass
 x 16
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 16
+speed -0.5
+attacktype 1
 end
 arch grass
 x 16
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 16
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 16
@@ -1838,19 +1838,19 @@ arch grass
 x 17
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 17
+speed -0.5
+attacktype 1
 end
 arch grass
 x 17
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 17
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 17
@@ -1932,19 +1932,19 @@ arch grass
 x 18
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 18
+speed -0.5
+attacktype 1
 end
 arch grass
 x 18
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 18
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 18
@@ -2034,19 +2034,19 @@ arch grass
 x 19
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 19
+speed -0.5
+attacktype 1
 end
 arch grass
 x 19
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 19
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 19
@@ -2076,13 +2076,13 @@ Sure I had a bit too much,
 but at least I'm not seeing things....
 Hey what was that?
 endmsg
-randomitems jail
-speed -0.08
-monster 0
-stand_still 1
-will_apply 0
 x 19
 y 4
+speed -0.08
+randomitems jail
+will_apply 0
+monster 0
+stand_still 1
 end
 arch woodfloor
 x 19
@@ -2144,19 +2144,19 @@ arch grass
 x 20
 end
 arch mover_3
-attacktype 1
-speed -0.5
 x 20
+speed -0.5
+attacktype 1
 end
 arch grass
 x 20
 y 1
 end
 arch mover_7
-attacktype 1
-speed -0.5
 x 20
 y 1
+speed -0.5
+attacktype 1
 end
 arch woodfloor
 x 20
@@ -2334,18 +2334,18 @@ x 22
 end
 arch elf_man
 name Celebrity lookalike
-face spock.111
 msg
 @match *
 Some guy named Avion paid
 me 30 gold to stand here
 and look busy...
 endmsg
-unaggressive 0
-Wis 5
-attack_movement 112
+face spock.111
 animation spock
+Wis 5
 x 22
+attack_movement 112
+unaggressive 0
 end
 arch grass
 x 22
@@ -2413,10 +2413,10 @@ caves in the mountains to the west of there.
 @match *
 Me, I like beer too much to go adventuring.
 endmsg
-randomitems jail
-stand_still 1
 x 22
 y 9
+randomitems jail
+stand_still 1
 end
 arch woodfloor
 x 22

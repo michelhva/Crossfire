@@ -1,6 +1,7 @@
 arch map
-name goths
+name Goth's Tavern
 reset_timeout 1800
+difficulty 1
 region scorn
 width 34
 height 33
@@ -469,7 +470,7 @@ You probably want me to tell you how to get your hands on some powerful magic, d
 Well, that can be hard and dangerous.  Got a deathwish?  Eh?
 @match yes|yup|aye
 Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!
- Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.
+Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.
 Which do you want to hear about?
 endmsg
 face wizard_blue.131
@@ -686,8 +687,8 @@ end
 arch booze
 x 2
 y 10
-no_pick 1
 map_layer item
+no_pick 1
 end
 arch woodfloor
 x 2

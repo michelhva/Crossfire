@@ -1,13 +1,16 @@
 arch map
+name Port Inn
+difficulty 1
 region scorn
+width 24
+height 16
+enter_x 4
+enter_y 3
 msg
 Creator: 
 Email: 
 Date: Fri Oct 15 13:56:36 1993
 endmsg
-hp 4
-sp 3
-x 24
 end
 arch exit
 slaying /world/world_105_115
@@ -347,7 +350,7 @@ end
 arch sign
 name For Help, press 'A'
 msg
-to save your character, go to a room and 
+to save your character, go to a room and
 'A' on a bed
 endmsg
 x 3

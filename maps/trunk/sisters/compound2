@@ -1,21 +1,18 @@
 arch map
-name compound2
+name Large Compound
+difficulty 5
+width 17
+height 16
 msg
 Creator: bt
 Email: thomas@Nomad.astro.psu.edu
 Date: Mon Dec 26 19:10:07 1994
 endmsg
-x 17
-level 5
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch woodfloor
@@ -55,30 +52,20 @@ arch wwall_2_2_1
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
@@ -153,37 +140,25 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 2
 end
 arch blocked
-msg
-endmsg
 x 2
 y 1
 end
@@ -1343,13 +1318,9 @@ x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
@@ -1450,20 +1421,14 @@ x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
 arch blocked
-msg
-endmsg
 x 14
 y 2
 end
 arch blocked
-msg
-endmsg
 x 14
 y 3
 end
@@ -1516,38 +1481,26 @@ x 14
 y 11
 end
 arch blocked
-msg
-endmsg
 x 14
 y 12
 end
 arch blocked
-msg
-endmsg
 x 14
 y 13
 end
 arch blocked
-msg
-endmsg
 x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
 arch blocked
-msg
-endmsg
 x 15
 y 4
 end
@@ -1602,20 +1555,14 @@ x 15
 y 10
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
@@ -1668,8 +1615,6 @@ x 16
 y 10
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
@@ -1685,14 +1630,6 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 4
-y 11
-end
 arch giant
 name hill giant guard
 exp 2000
@@ -1705,84 +1642,16 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 4
-y 13
-end
 arch cyclops
 name Regacia the cyclops
 Con 30
 hp 6000
 exp 100000
-armour 20
 x 5
 y 1
 speed -0.200000
 see_invisible 0
-end
-More
-arch cyclops_2
-name Regacia the cyclops
-Con 30
-hp 6000
-maxhp 8000
-exp 100000
 armour 20
-x 6
-y 1
-speed -0.200000
-end
-More
-arch cyclops_3
-name Regacia the cyclops
-Con 30
-hp 6000
-maxhp 8000
-exp 100000
-armour 20
-x 5
-y 2
-speed -0.200000
-end
-More
-arch cyclops_4
-name Regacia the cyclops
-Con 30
-hp 6000
-maxhp 8000
-exp 100000
-armour 20
-x 6
-y 2
-speed -0.200000
-end
-More
-arch cyclops_5
-name Regacia the cyclops
-Con 30
-hp 6000
-maxhp 8000
-exp 100000
-armour 20
-x 5
-y 3
-speed -0.200000
-end
-More
-arch cyclops_6
-name Regacia the cyclops
-Con 30
-hp 6000
-maxhp 8000
-exp 100000
-armour 20
-x 6
-y 3
-speed -0.200000
 end
 arch giant
 name hill giant guard
@@ -1796,14 +1665,6 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 5
-y 10
-end
 arch giant
 name hill giant guard
 exp 2000
@@ -1815,14 +1676,6 @@ end
 arch t_lboulder
 nrof 21
 end
-end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 5
-y 14
 end
 arch giant
 name hill giant guard
@@ -1836,14 +1689,6 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 6
-y 12
-end
 arch giant
 name hill giant guard
 exp 2000
@@ -1855,14 +1700,6 @@ end
 arch t_lboulder
 nrof 21
 end
-end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 7
-y 7
 end
 arch giant
 name hill giant guard
@@ -1876,14 +1713,6 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 8
-y 3
-end
 arch giant
 name hill giant guard
 exp 2000
@@ -1896,14 +1725,6 @@ arch t_lboulder
 nrof 21
 end
 end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 9
-y 3
-end
 arch giant
 name hill giant guard
 exp 2000
@@ -1915,105 +1736,23 @@ end
 arch t_lboulder
 nrof 21
 end
-end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 9
-y 7
 end
 arch titan
 name Yguern the guardian titan
 hp 6000
 maxhp 6000
-armour 50
 x 9
 y 13
 carrying 30000
+armour 50
 arch mjoellnir
 name Baba Mal the War Hammer
 Str 0
 dam 13
-immune 20480
-protected 256
 attacktype 256
-vulnerable 2
 magic 2
+immune 2
 end
-end
-More
-arch titan_2
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 8
-y 13
-end
-More
-arch titan_3
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 8
-y 12
-end
-More
-arch titan_4
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 9
-y 12
-end
-More
-arch titan_5
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 10
-y 12
-end
-More
-arch titan_6
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 10
-y 13
-end
-More
-arch titan_7
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 10
-y 14
-end
-More
-arch titan_8
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 9
-y 14
-end
-More
-arch titan_9
-name Yguern the guardian titan
-hp 6000
-maxhp 6000
-armour 50
-x 8
-y 14
 end
 arch giant
 name hill giant guard
@@ -2026,14 +1765,6 @@ end
 arch t_lboulder
 nrof 21
 end
-end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 10
-y 3
 end
 arch giant
 name hill giant guard
@@ -2046,14 +1777,6 @@ end
 arch t_lboulder
 nrof 21
 end
-end
-More
-arch giant_2
-name hill giant guard
-hp 250
-exp 2000
-x 11
-y 2
 end
 arch cyclops
 name Tagamart the cyclops
@@ -2070,51 +1793,10 @@ arch skullcleaver
 name Vardimar the Singing Axe
 slaying djinn
 dam 18
-protected 262144
 attacktype 262145
-vulnerable 32
 weight 28000
 magic 5
 last_sp 10
+protected 32
 end
-end
-More
-arch cyclops_2
-name Tagamart the cyclops
-Con 45
-hp 10000
-x 14
-y 7
-end
-More
-arch cyclops_3
-name Tagamart the cyclops
-Con 45
-hp 10000
-x 13
-y 8
-end
-More
-arch cyclops_4
-name Tagamart the cyclops
-Con 45
-hp 10000
-x 14
-y 8
-end
-More
-arch cyclops_5
-name Tagamart the cyclops
-Con 45
-hp 10000
-x 13
-y 9
-end
-More
-arch cyclops_6
-name Tagamart the cyclops
-Con 45
-hp 10000
-x 14
-y 9
 end

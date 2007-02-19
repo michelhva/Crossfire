@@ -1,14 +1,14 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
+darkness 1
+width 50
+height 50
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
-darkness 1
 tile_path_1 greenway4
 tile_path_2 greenway2
 tile_path_3 greenway8
@@ -1733,14 +1733,14 @@ y 38
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 8
 y 38
+level 10
 end
 arch grass
 x 8
@@ -1748,14 +1748,14 @@ y 39
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 8
 y 39
+level 10
 end
 arch brush
 x 8
@@ -1958,14 +1958,14 @@ y 39
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 9
 y 39
+level 10
 end
 arch grass
 x 9
@@ -1973,14 +1973,14 @@ y 40
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 9
 y 40
+level 10
 end
 arch evergreens
 x 9
@@ -4136,15 +4136,15 @@ x 20
 y 20
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 300
 maxhp 300
 sp 60
 maxsp 60
+exp 90
+dam 9
 x 20
 y 20
+level 12
 arch spell_invisible
 end
 arch spell_summon_pet_monster
@@ -4158,22 +4158,22 @@ y 21
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 20
 y 21
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4363,9 +4363,9 @@ x 21
 y 17
 end
 arch bird
-unaggressive 1
 x 21
 y 17
+unaggressive 1
 end
 arch tree
 x 21
@@ -4385,22 +4385,22 @@ y 21
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 21
 y 21
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog

@@ -1,11 +1,13 @@
 arch map
-name tower3
+name Three Sisters Tower
+difficulty 1
+width 22
+height 16
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Sun Dec 18 12:28:36 1994
 endmsg
-x 22
 end
 arch sea
 end
@@ -122,16 +124,15 @@ name Carrillium apron of great protection
 msg
 This apron surrounds the user with
 a protective force which unfortunately
-deadens the magical powers of the 
+deadens the magical powers of the
 wearer.
 endmsg
 sp -2
-armour 30
 x 1
 y 5
-protected 24575
 path_denied 32768
 value 30000
+armour 24575
 end
 arch flagstone
 x 1
@@ -225,8 +226,8 @@ name a linen bag of incredible holding
 Str 85
 x 2
 y 3
-immune 4
 value 10000
+immune 4
 end
 arch flagstone
 x 2
@@ -416,7 +417,7 @@ x 4
 y 2
 end
 arch wig
-name wig of comeliness 
+name wig of comeliness
 Cha 3
 x 4
 y 2
@@ -797,11 +798,9 @@ y 13
 speed 0.900000
 attack_movement 7
 level 40
-immune 524287
-protected 524288
 attacktype 1048576
-vulnerable 1048576
 see_invisible 1
+immune 1048576
 arch spell_hellfire
 end
 arch spell_summon_pet_monster
@@ -924,11 +923,9 @@ y 13
 speed 0.900000
 attack_movement 7
 level 50
-immune 524287
-protected 524288
 attacktype 1048576
-vulnerable 1048576
 see_invisible 1
+immune 1048576
 arch spell_sm_lightning
 end
 end
@@ -1057,11 +1054,9 @@ y 13
 speed 0.900000
 attack_movement 7
 level 70
-immune 524287
-protected 524288
 attacktype 1048576
-vulnerable 1048576
 see_invisible 1
+immune 1048576
 arch spell_paralyze
 end
 arch abil_fear
@@ -1655,103 +1650,69 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
 arch blocked
-msg
-endmsg
 x 16
 y 2
 end
 arch blocked
-msg
-endmsg
 x 16
 y 3
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
 arch blocked
-msg
-endmsg
 x 16
 y 6
 end
 arch blocked
-msg
-endmsg
 x 16
 y 7
 end
 arch blocked
-msg
-endmsg
 x 16
 y 8
 end
 arch blocked
-msg
-endmsg
 x 16
 y 9
 end
 arch blocked
-msg
-endmsg
 x 16
 y 10
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
 arch blocked
-msg
-endmsg
 x 16
 y 12
 end
 arch blocked
-msg
-endmsg
 x 16
 y 13
 end
 arch blocked
-msg
-endmsg
 x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 17
 y 6
 end
@@ -1762,14 +1723,10 @@ y 7
 connected 100
 end
 arch blocked
-msg
-endmsg
 x 17
 y 8
 end
 arch blocked
-msg
-endmsg
 x 18
 y 6
 end
@@ -1779,8 +1736,6 @@ y 7
 connected 3
 end
 arch blocked
-msg
-endmsg
 x 18
 y 8
 end
@@ -1804,10 +1759,10 @@ endmsg
 Dex -15
 x 19
 y 2
-vulnerable 2
 material 256
 stealth 1
 make_invisible 1
+vulnerable 2
 end
 arch cobblestones
 x 19
@@ -1825,8 +1780,6 @@ type 0
 connected 50
 end
 arch blocked
-msg
-endmsg
 x 19
 y 6
 end
@@ -1836,14 +1789,10 @@ y 7
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 19
 y 8
 end
 arch blocked
-msg
-endmsg
 x 20
 y 6
 end
@@ -1853,14 +1802,10 @@ y 7
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 20
 y 8
 end
 arch blocked
-msg
-endmsg
 x 21
 y 6
 end
@@ -1872,8 +1817,6 @@ speed 1.000000
 speed_left -1.000000
 end
 arch blocked
-msg
-endmsg
 x 21
 y 8
 end

@@ -1,18 +1,18 @@
 arch map
-name starting_house
+name Starting House
+reset_timeout 1
+fixed_resettime 1
+difficulty 1
 region creation
+width 19
+height 29
+enter_x 9
+enter_y 4
 msg
 Creator: Tchize
 CF Java Map Editor
 Date:    7/31/2003
 endmsg
-width 19
-height 29
-enter_x 9
-enter_y 4
-reset_timeout 1
-difficulty 1
-fixed_resettime 1
 end
 arch dungeon_magic
 end
@@ -97,8 +97,8 @@ arch grass_only
 y 13
 end
 arch silvercoin
-nrof 12
 y 13
+nrof 12
 end
 arch dungeon_magic
 y 14
@@ -131,9 +131,9 @@ arch grass_only
 y 17
 end
 arch mountain3
+y 17
 no_pass 1
 is_floor 1
-y 17
 end
 arch dungeon_magic
 y 18
@@ -540,17 +540,17 @@ arch dungeon_magic
 x 2
 end
 arch mountain
-no_pass 1
 x 2
+no_pass 1
 end
 arch dungeon_magic
 x 2
 y 1
 end
 arch mountain
-no_pass 1
 x 2
 y 1
+no_pass 1
 end
 arch dungeon_magic
 x 2
@@ -593,10 +593,10 @@ x 2
 y 5
 end
 arch button_small
-invisible 1
-connected 88
 x 2
 y 5
+invisible 1
+connected 88
 end
 arch dungeon_magic
 x 2
@@ -607,10 +607,10 @@ x 2
 y 6
 end
 arch mdoor_closed_1
-connected 88
 dam 2
 x 2
 y 6
+connected 88
 end
 arch dungeon_magic
 x 2
@@ -621,10 +621,10 @@ x 2
 y 7
 end
 arch button_small
+x 2
+y 7
 invisible 1
 connected 88
-x 2
-y 7
 end
 arch dungeon_magic
 x 2
@@ -635,9 +635,9 @@ x 2
 y 8
 end
 arch button_small
-connected 86
 x 2
 y 8
+connected 86
 end
 arch dungeon_magic
 x 2
@@ -648,10 +648,10 @@ x 2
 y 9
 end
 arch ggate_closed
-connected 86
 dam 1
 x 2
 y 9
+connected 86
 end
 arch dungeon_magic
 x 2
@@ -662,9 +662,9 @@ x 2
 y 10
 end
 arch button_small
-connected 86
 x 2
 y 10
+connected 86
 end
 arch dungeon_magic
 x 2
@@ -723,10 +723,10 @@ x 2
 y 15
 end
 arch generate_ant
-resist_physical 100
-resist_magic 100
 x 2
 y 15
+resist_physical 100
+resist_magic 100
 end
 arch dungeon_magic
 x 2
@@ -1250,10 +1250,10 @@ and by triggering a (sometimes hidden) button or switch.
 Be careful not to stand in the way when they swing
 close again...Ouch.
 endmsg
-walk_on 1
-fly_on 1
 x 4
 y 7
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 4
@@ -1439,18 +1439,18 @@ arch magic_mouth
 msg
 You would have been quite badly hurt by that trap...
 endmsg
+x 4
+y 25
 connected 87
 walk_on 0
 fly_on 0
 activate_on_release 0
-x 4
-y 25
 end
 arch trap
 dam 0
-connected 87
 x 4
 y 25
+connected 87
 end
 arch dungeon_magic
 x 4
@@ -1592,6 +1592,7 @@ y 12
 end
 arch guildmaster
 name Manu
+title crazy key binder
 msg
 @match *
 Hello,
@@ -1618,16 +1619,15 @@ your first keybinding! Now each
 time you push the key 'a' you
 will apply an item on the ground.
 endmsg
-title crazy key binder
+x 5
+y 12
+resist_physical 100
+resist_magic 100
 weight 5000000
 randomitems none
 monster 0
 friendly 1
 stand_still 1
-resist_physical 100
-resist_magic 100
-x 5
-y 12
 end
 arch dungeon_magic
 x 5
@@ -1954,11 +1954,10 @@ x 6
 y 15
 end
 arch check_inv
-slaying
 hp 1
-no_pass 1
 x 6
 y 15
+no_pass 1
 end
 arch dungeon_magic
 x 6
@@ -1969,11 +1968,10 @@ x 6
 y 16
 end
 arch check_inv
-slaying
 hp 1
-no_pass 1
 x 6
 y 16
+no_pass 1
 end
 arch dungeon_magic
 x 6
@@ -2201,10 +2199,10 @@ arch sign_w
 msg
 Beds to reality
 endmsg
-walk_on 1
-fly_on 1
 x 7
 y 10
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 7
@@ -2265,9 +2263,9 @@ To fight, nothing is more easy.
 Just run into the ants.
 -------------------
 endmsg
-walk_on 1
 x 7
 y 15
+walk_on 1
 end
 arch dungeon_magic
 x 7
@@ -2399,12 +2397,12 @@ And don't forget the most useful
 command:
 help
 endmsg
-weight 5000000
-no_pick 1
-resist_physical 100
-resist_magic 100
 x 7
 y 22
+resist_physical 100
+resist_magic 100
+weight 5000000
+no_pick 1
 end
 arch dungeon_magic
 x 7
@@ -2443,10 +2441,10 @@ x 7
 y 26
 end
 arch generate_ant
-resist_physical 100
-resist_magic 100
 x 7
 y 26
+resist_physical 100
+resist_magic 100
 end
 arch dungeon_magic
 x 7
@@ -2749,14 +2747,12 @@ x 9
 y 4
 end
 arch marker
-lore
-Go through the newbiehouse, and learn how to play the game.
-endlore
 slaying quest initial training start
-speed 1.0
 food 0
 x 9
 y 4
+speed 1.0
+Go through the newbiehouse, and learn how to play the game.
 end
 arch dungeon_magic
 x 9
@@ -2787,10 +2783,10 @@ like this one in the game.
 Never forget to read them.
 They give you useful information.
 endmsg
-walk_on 1
-fly_on 1
 x 9
 y 5
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 9
@@ -3220,9 +3216,9 @@ x 10
 y 24
 end
 arch trigger
-connected 31
 x 10
 y 24
+connected 31
 end
 arch dungeon_magic
 x 10
@@ -3379,13 +3375,13 @@ about beds to reality? That's one
 of the most important things in
 crossfire.
 endmsg
+x 11
+y 7
+resist_physical 100
+resist_magic 100
 weight 50000000
 friendly 1
 stand_still 1
-resist_physical 100
-resist_magic 100
-x 11
-y 7
 end
 arch dungeon_magic
 x 11
@@ -3423,10 +3419,10 @@ arch sign_e
 msg
 Doors and keys.
 endmsg
-walk_on 1
-fly_on 1
 x 11
 y 10
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 11
@@ -3474,9 +3470,9 @@ and talk with Manu, the crazy
 key binder.
 -------------------
 endmsg
-walk_on 1
 x 11
 y 12
+walk_on 1
 end
 arch dungeon_magic
 x 11
@@ -3620,12 +3616,12 @@ x 11
 y 22
 end
 arch creator
-other_arch food
-connected 11
-lifesave 1
 slaying Magical food
+other_arch food
 x 11
 y 22
+connected 11
+lifesave 1
 end
 arch dungeon_magic
 x 11
@@ -3648,9 +3644,9 @@ x 11
 y 24
 end
 arch grate_closed_2
-connected 31
 x 11
 y 24
+connected 31
 end
 arch dungeon_magic
 x 11
@@ -3673,9 +3669,9 @@ x 11
 y 26
 end
 arch gateTrg2
-connected 32
 x 11
 y 26
+connected 32
 end
 arch dungeon_magic
 x 11
@@ -3844,9 +3840,9 @@ x 12
 y 14
 end
 arch button_lever
-connected 1
 x 12
 y 14
+connected 1
 end
 arch dungeon_magic
 x 12
@@ -3869,9 +3865,9 @@ x 12
 y 16
 end
 arch igateTrg1
-connected 1
 x 12
 y 16
+connected 1
 end
 arch dungeon_magic
 x 12
@@ -3926,21 +3922,20 @@ msg
 @match food
 Food for you
 endmsg
-connected 11
 x 12
 y 21
+connected 11
 end
 arch dungeon_magic
 x 12
 y 22
 end
 arch woodfloor2
-no_pass 1
 x 12
 y 22
+no_pass 1
 end
 arch altar
-slaying
 food 0
 x 12
 y 22
@@ -3966,10 +3961,10 @@ x 12
 y 24
 end
 arch button_small
-invisible 1
-connected 31
 x 12
 y 24
+invisible 1
+connected 31
 end
 arch dungeon_magic
 x 12
@@ -3997,9 +3992,9 @@ msg
 Have a nice trip and don't die too
 quickly.
 endmsg
-connected 32
 x 12
 y 26
+connected 32
 end
 arch dungeon_magic
 x 12
@@ -4160,9 +4155,9 @@ x 13
 y 14
 end
 arch button_handle
-connected 2
 x 13
 y 14
+connected 2
 end
 arch dungeon_magic
 x 13
@@ -4185,9 +4180,9 @@ x 13
 y 16
 end
 arch igateTrg2
-connected 2
 x 13
 y 16
+connected 2
 end
 arch dungeon_magic
 x 13
@@ -4210,9 +4205,9 @@ x 13
 y 18
 end
 arch random_reading
-no_pick 1
 x 13
 y 18
+no_pick 1
 end
 arch dungeon_magic
 x 13
@@ -4223,9 +4218,9 @@ x 13
 y 19
 end
 arch random_reading
-no_pick 1
 x 13
 y 19
+no_pick 1
 end
 arch dungeon_magic
 x 13
@@ -4410,9 +4405,9 @@ x 14
 y 7
 end
 arch chest
-randomitems none
 x 14
 y 7
+randomitems none
 arch random_wealth
 end
 arch random_food
@@ -4495,9 +4490,9 @@ x 14
 y 14
 end
 arch button_small
-connected 3
 x 14
 y 14
+connected 3
 end
 arch dungeon_magic
 x 14
@@ -4520,9 +4515,9 @@ x 14
 y 16
 end
 arch igate_closed_1
-connected 3
 x 14
 y 16
+connected 3
 end
 arch dungeon_magic
 x 14
@@ -4545,9 +4540,9 @@ x 14
 y 18
 end
 arch random_reading
-no_pick 1
 x 14
 y 18
+no_pick 1
 end
 arch dungeon_magic
 x 14
@@ -4558,9 +4553,9 @@ x 14
 y 19
 end
 arch random_reading
-no_pick 1
 x 14
 y 19
+no_pick 1
 end
 arch dungeon_magic
 x 14
@@ -4631,11 +4626,10 @@ x 14
 y 26
 end
 arch check_inv
-slaying
 hp 1
-no_pass 1
 x 14
 y 26
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -4724,11 +4718,11 @@ y 5
 end
 arch key2
 name chest key
+name_pl chest keys
+slaying open_chest
 msg
 Use this key to open the locked door in the training house.
 endmsg
-name_pl chest keys
-slaying open_chest
 x 15
 y 5
 end
@@ -4795,10 +4789,10 @@ an arrow or a bolt.
 There are also locked doors which
 can only be opened with special keys...
 endmsg
-walk_on 1
-fly_on 1
 x 15
 y 9
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 15
@@ -4858,9 +4852,9 @@ arch magic_ear
 msg
 @match Shazam|shazam
 endmsg
-connected 4
 x 15
 y 14
+connected 4
 end
 arch dungeon_magic
 x 15
@@ -4883,9 +4877,9 @@ x 15
 y 16
 end
 arch igate_closed_2
-connected 4
 x 15
 y 16
+connected 4
 end
 arch dungeon_magic
 x 15
@@ -4908,9 +4902,9 @@ x 15
 y 18
 end
 arch random_reading
-no_pick 1
 x 15
 y 18
+no_pick 1
 end
 arch dungeon_magic
 x 15
@@ -4921,9 +4915,9 @@ x 15
 y 19
 end
 arch random_reading
-no_pick 1
 x 15
 y 19
+no_pick 1
 end
 arch dungeon_magic
 x 15
@@ -5022,17 +5016,17 @@ arch dungeon_magic
 x 16
 end
 arch mountain
-no_pass 1
 x 16
+no_pass 1
 end
 arch dungeon_magic
 x 16
 y 1
 end
 arch mountain
-no_pass 1
 x 16
 y 1
+no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -5055,15 +5049,15 @@ x 16
 y 3
 end
 arch chest_2
-no_pick 1
 slaying open_chest
 x 16
 y 3
+no_pick 1
 arch key2
+slaying open_door
 msg
 Use this key to open the locked door in the training house.
 endmsg
-slaying open_door
 end
 end
 arch dungeon_magic
@@ -5091,9 +5085,9 @@ x 16
 y 6
 end
 arch door_2
-randomitems none
 x 16
 y 6
+randomitems none
 end
 arch dungeon_magic
 x 16
@@ -5112,9 +5106,9 @@ x 16
 y 8
 end
 arch door_look_1
-randomitems none
 x 16
 y 8
+randomitems none
 end
 arch dungeon_magic
 x 16
@@ -5133,9 +5127,9 @@ x 16
 y 10
 end
 arch clock
-no_pick 1
 x 16
 y 10
+no_pick 1
 end
 arch dungeon_magic
 x 16
@@ -5218,9 +5212,9 @@ x 16
 y 18
 end
 arch random_reading
-no_pick 1
 x 16
 y 18
+no_pick 1
 end
 arch dungeon_magic
 x 16
@@ -5231,9 +5225,9 @@ x 16
 y 19
 end
 arch random_reading
-no_pick 1
 x 16
 y 19
+no_pick 1
 end
 arch dungeon_magic
 x 16
@@ -5836,10 +5830,10 @@ x 18
 y 23
 end
 arch mountain3
-no_pass 1
-is_floor 1
 x 18
 y 23
+no_pass 1
+is_floor 1
 end
 arch dungeon_magic
 x 18

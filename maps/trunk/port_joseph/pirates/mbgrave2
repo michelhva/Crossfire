@@ -1,14 +1,14 @@
 arch map
-region portjoseph
 name Moogly Bill's Grave
+region portjoseph
+darkness 4
+width 20
+height 32
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Thu Jun  2 23:28:33 1994
 endmsg
-width 20
-height 32
-darkness 4
 end
 arch blocked
 end
@@ -152,9 +152,9 @@ x 1
 y 3
 end
 arch gate_closed_1
-connected 1
 x 1
 y 3
+connected 1
 end
 arch pstone_2
 x 1
@@ -342,11 +342,11 @@ An evil looking blade, encrusted
 with gemstones.
 endmsg
 dam 9
+x 2
+y 2
 value 2400
 weight 7000
 magic 2
-x 2
-y 2
 end
 arch corpse1
 name A remarkably well preserved corpse.
@@ -358,9 +358,9 @@ x 2
 y 3
 end
 arch gate_closed_1
-connected 1
 x 2
 y 3
+connected 1
 end
 arch medium_stones
 x 2
@@ -563,9 +563,9 @@ x 3
 y 3
 end
 arch gate_closed_1
-connected 1
 x 3
 y 3
+connected 1
 end
 arch pstone_2
 x 3
@@ -736,13 +736,13 @@ name nautical map
 msg
 `Here be tortola island'
 \ /
- X
+X
 / \
-  N
-  |
+N
+|
 W-+-E
-  |
-  S
+|
+S
 endmsg
 x 3
 y 28
@@ -786,9 +786,9 @@ x 4
 y 3
 end
 arch gate_closed_1
-connected 1
 x 4
 y 3
+connected 1
 end
 arch small_stones
 x 4
@@ -919,9 +919,9 @@ x 4
 y 27
 end
 arch chest
-carrying 100
 x 4
 y 27
+carrying 100
 arch key
 end
 end
@@ -977,9 +977,9 @@ x 5
 y 5
 end
 arch button_plate
-connected 1
 x 5
 y 5
+connected 1
 end
 arch pstone_2
 x 5
@@ -2352,9 +2352,9 @@ end
 arch rune_medium_fireball
 hp 5
 dam 20
-glow_radius 1
 x 13
 y 11
+glow_radius 1
 end
 arch pstone_2
 x 13

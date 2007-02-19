@@ -1,12 +1,13 @@
 arch map
-region santodominion
-hp 10
-sp 1
-x 12
-y 20
-stand_still 1
+name Erash Sharp Blades
+fixed_resettime 1
 difficulty 10
+region santodominion
 shopitems weapon:95;bow:15;*:-90
+width 12
+height 20
+enter_x 10
+enter_y 1
 end
 arch flagstone
 end

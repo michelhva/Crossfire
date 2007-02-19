@@ -1,15 +1,16 @@
 arch map
-name tavern
+name Cameron's Tavern
+difficulty 1
 region darcap
+width 26
+height 19
+enter_x 19
+enter_y 13
 msg
 Creator: Cater/Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 15 12:02:40 1999
 endmsg
-width 26
-height 19
-enter_x 19
-enter_y 13
 end
 arch cobblestones2
 end
@@ -503,11 +504,11 @@ x 5
 y 10
 end
 arch man
-face man.131
 msg
 @match *
 What can I get you?
 endmsg
+face man.131
 x 5
 y 10
 end
@@ -631,9 +632,9 @@ x 6
 y 7
 end
 arch table_4
-no_pass 1
 x 6
 y 7
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -644,9 +645,9 @@ x 6
 y 8
 end
 arch table_4
-no_pass 1
 x 6
 y 8
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -657,9 +658,9 @@ x 6
 y 9
 end
 arch table_4
-no_pass 1
 x 6
 y 9
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -670,9 +671,9 @@ x 6
 y 10
 end
 arch table_4
-no_pass 1
 x 6
 y 10
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -683,9 +684,9 @@ x 6
 y 11
 end
 arch table_4
-no_pass 1
 x 6
 y 11
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -775,9 +776,9 @@ msg
 @match *
 Grr... Go away!
 endmsg
-friendly 1
 x 7
 y 5
+friendly 1
 end
 arch magic_banned
 x 7
@@ -812,15 +813,15 @@ x 7
 y 9
 end
 arch man
-face man.171
 msg
 @match *
 Buy me a drink
 endmsg
-friendly 1
-unaggressive 0
+face man.171
 x 7
 y 9
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 7
@@ -864,10 +865,10 @@ Visit the well !!
 @match *
 I'm too busy to answer your queries.
 endmsg
-friendly 1
-unaggressive 0
 x 7
 y 13
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 7
@@ -1056,10 +1057,10 @@ x 9
 y 6
 end
 arch woman
-friendly 1
-unaggressive 0
 x 9
 y 6
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 9
@@ -1206,11 +1207,11 @@ y 7
 end
 arch guildmaster
 name Old Man
+x 10
+y 7
 monster 0
 friendly 1
 unaggressive 0
-x 10
-y 7
 end
 arch magic_banned
 x 10
@@ -1401,9 +1402,8 @@ always looking for new people to tell about TCI.
 @match *
 Hi there young'un. Wanna join TCI?
 endmsg
-reflect_missile 1
-reflect_spell 1
-friendly 1
+x 11
+y 13
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1417,16 +1417,17 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-x 11
-y 13
+resist_holyword 100
+resist_blind 100
+friendly 1
+reflect_missile 1
+reflect_spell 1
 end
 arch woodfloor
 x 11
@@ -1500,10 +1501,10 @@ x 12
 y 7
 end
 arch woman
-friendly 1
-unaggressive 0
 x 12
 y 7
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 12
@@ -1691,11 +1692,11 @@ on the northeast edge of the continent.
 I've heard about incredible artifacts
 in there.
 endmsg
+x 13
+y 10
 is_animated 0
 friendly 1
 unaggressive 0
-x 13
-y 10
 end
 arch magic_banned
 x 13
@@ -1811,10 +1812,10 @@ poses the fire-part...
 I've devoted myself to the elemental
 quest.
 endmsg
-friendly 1
-unaggressive 0
 x 14
 y 7
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 14
@@ -2139,11 +2140,11 @@ continent, you should buy yourself a
 permanent apartment in Caterham
 first.
 endmsg
+x 16
+y 12
 monster 0
 friendly 1
 unaggressive 0
-x 16
-y 12
 end
 arch magic_banned
 x 16
@@ -2217,10 +2218,10 @@ They didn't let me go back.
 @match *
 Ive been exiled from my land.
 endmsg
-friendly 1
-unaggressive 0
 x 17
 y 5
+friendly 1
+unaggressive 0
 end
 arch magic_banned
 x 17
@@ -2603,7 +2604,6 @@ y 5
 end
 arch wizard
 name old wizard
-face wizard_yellow.151
 msg
 @match no|library|spell
 It's located in a mountain village,
@@ -2614,15 +2614,16 @@ charge for a small entrance fee.
 Did you know that there is a huge
 spellbook library on dtabb?
 endmsg
-type 0
+face wizard_yellow.151
 hp 100
 maxhp 100
+x 20
+y 5
 level 10
+type 0
 randomitems none
 monster 1
 friendly 1
-x 20
-y 5
 end
 arch magic_banned
 x 20
@@ -2653,11 +2654,11 @@ x 20
 y 8
 end
 arch sailor
+x 20
+y 8
 friendly 1
 unaggressive 0
 random_movement 0
-x 20
-y 8
 end
 arch magic_banned
 x 20
@@ -2684,11 +2685,11 @@ x 20
 y 10
 end
 arch sailor
+x 20
+y 10
 friendly 1
 unaggressive 0
 random_movement 0
-x 20
-y 10
 end
 arch magic_banned
 x 20

@@ -1,14 +1,15 @@
 arch map
+name Snake Pit
+difficulty 1
 region lakecountry
-name snakepit_3
+darkness 5
+width 40
+height 40
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Sun Jun  4 13:29:23 1995
 endmsg
-width 40
-height 40
-darkness 5
 end
 arch large_stones
 end
@@ -806,9 +807,9 @@ y 10
 end
 arch cave16
 name illusionary wall
-no_pass 0
 x 3
 y 10
+no_pass 0
 end
 arch large_stones
 x 3
@@ -816,9 +817,9 @@ y 11
 end
 arch cave14
 name illusionary wall
-no_pass 0
 x 3
 y 11
+no_pass 0
 end
 arch large_stones
 x 3
@@ -1012,9 +1013,9 @@ y 10
 end
 arch cave15
 name illusionary wall
-no_pass 0
 x 4
 y 10
+no_pass 0
 end
 arch large_stones
 x 4
@@ -1022,9 +1023,9 @@ y 11
 end
 arch cave13
 name illusionary wall
-no_pass 0
 x 4
 y 11
+no_pass 0
 end
 arch large_stones
 x 4
@@ -1194,9 +1195,9 @@ y 10
 end
 arch cave16
 name illusionary wall
-no_pass 0
 x 5
 y 10
+no_pass 0
 end
 arch large_stones
 x 5
@@ -1204,9 +1205,9 @@ y 11
 end
 arch cave14
 name illusionary wall
-no_pass 0
 x 5
 y 11
+no_pass 0
 end
 arch large_stones
 x 5
@@ -1380,9 +1381,9 @@ y 10
 end
 arch cave15
 name illusionary wall
-no_pass 0
 x 6
 y 10
+no_pass 0
 end
 arch large_stones
 x 6
@@ -1390,9 +1391,9 @@ y 11
 end
 arch cave13
 name illusionary wall
-no_pass 0
 x 6
 y 11
+no_pass 0
 end
 arch large_stones
 x 6
@@ -3803,9 +3804,9 @@ x 17
 y 2
 end
 arch large_stones
-no_pass 1
 x 17
 y 3
+no_pass 1
 end
 arch magic_banned
 x 17
@@ -3823,11 +3824,11 @@ x 17
 y 4
 end
 arch mover_5
+x 17
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 17
-y 5
 end
 arch large_stones
 x 17
@@ -4005,9 +4006,9 @@ x 18
 y 2
 end
 arch large_stones
-no_pass 1
 x 18
 y 3
+no_pass 1
 end
 arch magic_banned
 x 18
@@ -4025,11 +4026,11 @@ x 18
 y 4
 end
 arch mover_5
+x 18
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 18
-y 5
 end
 arch large_stones
 x 18
@@ -4220,9 +4221,9 @@ x 19
 y 2
 end
 arch large_stones
-no_pass 1
 x 19
 y 3
+no_pass 1
 end
 arch magic_banned
 x 19
@@ -4240,11 +4241,11 @@ x 19
 y 4
 end
 arch mover_5
+x 19
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 19
-y 5
 end
 arch large_stones
 x 19
@@ -4418,9 +4419,9 @@ x 20
 y 2
 end
 arch large_stones
-no_pass 1
 x 20
 y 3
+no_pass 1
 end
 arch magic_banned
 x 20
@@ -4438,11 +4439,11 @@ x 20
 y 4
 end
 arch mover_5
+x 20
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 20
-y 5
 end
 arch large_stones
 x 20
@@ -4620,9 +4621,9 @@ x 21
 y 2
 end
 arch large_stones
-no_pass 1
 x 21
 y 3
+no_pass 1
 end
 arch magic_banned
 x 21
@@ -4640,11 +4641,11 @@ x 21
 y 4
 end
 arch mover_5
+x 21
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 21
-y 5
 end
 arch large_stones
 x 21
@@ -4818,9 +4819,9 @@ x 22
 y 2
 end
 arch large_stones
-no_pass 1
 x 22
 y 3
+no_pass 1
 end
 arch magic_banned
 x 22
@@ -4838,11 +4839,11 @@ x 22
 y 4
 end
 arch mover_5
+x 22
+y 5
 speed 1.000000
 speed_left -1.780000
 attacktype 1
-x 22
-y 5
 end
 arch large_stones
 x 22
@@ -6264,9 +6265,9 @@ end
 arch depositbox
 name nicely make metal chest
 slaying badge_dragon
-carrying 25100
 x 28
 y 2
+carrying 25100
 arch potion_magic
 nrof 4
 end
@@ -7794,11 +7795,11 @@ x 35
 y 12
 end
 arch gate_closed_1
+x 35
+y 12
 speed 0.500000
 speed_left -11.100000
 connected 1
-x 35
-y 12
 end
 arch large_stones
 x 35
@@ -8015,11 +8016,11 @@ x 36
 y 12
 end
 arch gate_closed_1
+x 36
+y 12
 speed 0.500000
 speed_left -11.100000
 connected 1
-x 36
-y 12
 end
 arch large_stones
 x 36
@@ -8260,9 +8261,9 @@ x 37
 y 14
 end
 arch button_lever
-connected 1
 x 37
 y 14
+connected 1
 end
 arch large_stones
 x 37
@@ -8491,9 +8492,9 @@ x 38
 y 9
 end
 arch button_lever
-connected 1
 x 38
 y 9
+connected 1
 end
 arch large_stones
 x 38
@@ -9042,20 +9043,20 @@ x 39
 y 39
 end
 arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
 Con 30
 Int 12
 maxhp 300
-resist_fear 100
-resist_blind 50
-resist_cold -100
-resist_confusion -100
-ac 2
 wc 2
+ac 2
 x 2
 y 36
+speed 0.5
+resist_cold -100
+resist_confusion -100
+resist_fear 100
+resist_blind 50
+carrying 25000
+flying 1
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9072,14 +9073,13 @@ hp 9000
 sp 1000
 maxsp 1000
 exp 2000000
+x 6
+y 5
 speed 0.700000
 speed_left -17.569998
 level 70
-immune 4117
-protected 8
 attacktype 1167
-x 6
-y 5
+immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -9090,14 +9090,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 9
 y 27
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9110,14 +9109,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 9
 y 32
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9130,14 +9128,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 10
 y 27
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9150,14 +9147,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 10
 y 32
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9170,14 +9166,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 14
 y 25
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9190,14 +9185,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 15
 y 25
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9210,14 +9204,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 18
 y 34
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9230,14 +9223,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 19
 y 34
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9247,22 +9239,22 @@ end
 end
 arch Cwyvern
 name big wyvern of chaos
-exp 400000
-speed 0.7
-flying 1
-carrying 35000
-dam 40
-hp 6000
 Con 30
 Int 12
-resist_blind 50
-resist_cold -100
-resist_confusion -100
+hp 6000
 maxhp 300
-ac 2
+exp 400000
+dam 40
 wc 2
+ac 2
 x 21
 y 16
+speed 0.7
+resist_cold -100
+resist_confusion -100
+resist_blind 50
+carrying 35000
+flying 1
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9272,19 +9264,19 @@ nrof 700
 end
 end
 arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
 Con 30
 Int 12
-resist_blind 50
-resist_cold -100
-resist_confusion -100
-ac 2
-wc 2
 maxhp 300
+wc 2
+ac 2
 x 21
 y 24
+speed 0.5
+resist_cold -100
+resist_confusion -100
+resist_blind 50
+carrying 25000
+flying 1
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9298,14 +9290,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 23
 y 29
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9318,14 +9309,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 23
 y 34
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9338,14 +9328,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 24
 y 29
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9358,14 +9347,13 @@ name A lightning speed metallic serpent
 hp 1000
 exp 65000
 dam 30
-speed 1.000000
-speed_left -34.419998
-immune 1024
-protected 12
-attacktype 82945
-can_see_in_dark 1
 x 24
 y 34
+speed 1.000000
+speed_left -34.419998
+attacktype 82945
+can_see_in_dark 1
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -9379,11 +9367,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 30
+y 3
 speed 0.450000
 speed_left -10.249999
 level 20
-x 30
-y 3
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9397,11 +9385,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 31
+y 5
 speed 0.450000
 speed_left -9.410000
 level 20
-x 31
-y 5
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9415,12 +9403,12 @@ Wis 30
 hp 9500
 sp 1000
 dam 30
+x 33
+y 3
 speed 0.800000
 speed_left -13.200002
 level 20
 carrying 100
-x 33
-y 3
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9429,12 +9417,12 @@ arch spell_sm_lightning
 end
 arch key2
 name Dragonbadge
-face baby_drag.113
+slaying badge_dragon
 msg
 This flaming red badge is a symbol of
 status and importance.
 endmsg
-slaying badge_dragon
+face baby_drag.113
 value 10000
 end
 end
@@ -9444,11 +9432,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 34
+y 7
 speed 0.450000
 speed_left -10.059999
 level 20
-x 34
-y 7
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9462,11 +9450,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 36
+y 5
 speed 0.450000
 speed_left -8.999999
 level 20
-x 36
-y 5
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9480,11 +9468,11 @@ Wis 30
 hp 5500
 sp 1000
 dam 30
+x 36
+y 9
 speed 0.450000
 speed_left -10.129999
 level 20
-x 36
-y 9
 arch abil_fear
 end
 arch spell_mass_confusion
@@ -9493,19 +9481,19 @@ arch spell_sm_lightning
 end
 end
 arch Cwyvern
-speed 0.5
-flying 1
-carrying 25000
 Con 30
 Int 12
+maxhp 300
+wc 2
+ac 2
+x 36
+y 26
+speed 0.5
 resist_cold -100
 resist_confusion -100
 resist_blind 50
-maxhp 300
-ac 2
-wc 2
-x 36
-y 26
+carrying 25000
+flying 1
 arch spell_dragonbreath
 end
 arch spell_mass_confusion

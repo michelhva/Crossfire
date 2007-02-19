@@ -1,13 +1,14 @@
 arch map
-name shrine_entrance
+name Evil Shrine Entrance
+difficulty 1
+darkness 4
+width 20
+height 35
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Tue Jan  3 01:35:46 1995
 endmsg
-width 20
-height 35
-darkness 4
 end
 arch blocked
 x 1
@@ -254,9 +255,9 @@ face. I had given up hope of ever returning
 home! Let me help you if I can, for I know
 a few things about this shrine.
 endmsg
-immune 1
 x 3
 y 17
+immune 1
 end
 arch cobblestones2
 x 3
@@ -555,9 +556,9 @@ x 5
 y 16
 end
 arch door_look_1
-blocksview 1
 x 5
 y 16
+blocksview 1
 end
 arch flagstone
 x 5
@@ -1261,9 +1262,9 @@ x 9
 y 11
 end
 arch door_look_1
-blocksview 1
 x 9
 y 11
+blocksview 1
 end
 arch marble
 x 9
@@ -1274,9 +1275,9 @@ name Serpentman Captain
 hp 350
 exp 500
 wc -4
-level 10
 x 9
 y 12
+level 10
 end
 arch marble
 x 9
@@ -1449,9 +1450,9 @@ x 10
 y 11
 end
 arch door_look_1
-blocksview 1
 x 10
 y 11
+blocksview 1
 end
 arch marble
 x 10
@@ -2204,9 +2205,9 @@ x 14
 y 16
 end
 arch door_look_1
-blocksview 1
 x 14
 y 16
+blocksview 1
 end
 arch flagstone
 x 14
@@ -2326,9 +2327,9 @@ x 15
 y 16
 end
 arch door_look_1
-blocksview 1
 x 15
 y 16
+blocksview 1
 end
 arch flagstone
 x 15

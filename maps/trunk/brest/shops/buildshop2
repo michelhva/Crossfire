@@ -1,18 +1,18 @@
 arch map
 name Acme Inc.
 region brest
+shopitems building material:95;item builder:95;*:-100
+shopgreed 1.0
+shopmin 500
+shopmax 20000
+shoprace human
+width 29
+height 29
 msg
 Creator: Gene Alexander
 Date:    Sat Nov  5 18:42:33 UTC 2005
 Using ideas from Ryo_
 endmsg
-width 29
-height 29
-shopitems building material:95;item builder:95;*:-100
-shoprace human
-shopmin 500
-shopmax 20000
-shopgreed 1.0
 end
 arch flagstone
 end
@@ -3924,7 +3924,7 @@ x 28
 y 28
 end
 arch river_sw-ne_u
-elevation 1098
 x 28
 y 28
+elevation 1098
 end

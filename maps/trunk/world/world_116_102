@@ -8548,6 +8548,7 @@ y 6
 elevation 0
 end
 arch woodhouse
+name Tollhouse
 slaying /darcap/house1
 hp 13
 sp 19
@@ -13271,6 +13272,7 @@ x 22
 y 40
 end
 arch store_general
+name Darcap General Store
 slaying /darcap/darcap/gshop
 hp 15
 sp 6
@@ -13306,6 +13308,7 @@ x 26
 y 34
 end
 arch store_alchemy
+name Darcap Potionshop
 slaying /darcap/darcap/potionshop
 hp 14
 sp 14

@@ -1,14 +1,15 @@
 arch map
-name alclass
+name Alchemy Shop Classroom
+difficulty 1
 region scorn
-msg
-Creator: CF Java Map Editor
-Date:    8/10/2005
-endmsg
 width 17
 height 17
 enter_x 8
 enter_y 16
+msg
+Creator: CF Java Map Editor
+Date:    8/10/2005
+endmsg
 end
 arch flagstone
 end
@@ -121,18 +122,18 @@ x 1
 y 1
 end
 arch chair_1.4
-no_pick 1
 x 1
 y 1
+no_pick 1
 end
 arch flagstone
 x 1
 y 2
 end
 arch table
-no_pick 1
 x 1
 y 2
+no_pick 1
 end
 arch flagstone
 x 1
@@ -143,9 +144,9 @@ x 1
 y 3
 end
 arch flagstone
-no_magic 1
 x 1
 y 4
+no_magic 1
 end
 arch flagstone
 x 1
@@ -156,9 +157,9 @@ x 1
 y 5
 end
 arch flagstone
-no_magic 1
 x 1
 y 6
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy salt
@@ -169,9 +170,9 @@ x 1
 y 6
 end
 arch flagstone
-no_magic 1
 x 1
 y 7
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy sulphur
@@ -182,9 +183,9 @@ x 1
 y 7
 end
 arch flagstone
-no_magic 1
 x 1
 y 8
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy phosphorus
@@ -195,9 +196,9 @@ x 1
 y 8
 end
 arch flagstone
-no_magic 1
 x 1
 y 9
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy cinnabar
@@ -208,9 +209,9 @@ x 1
 y 9
 end
 arch flagstone
-no_magic 1
 x 1
 y 10
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy water
@@ -229,24 +230,24 @@ x 1
 y 11
 end
 arch flagstone
-no_magic 1
 x 1
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 1
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 1
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 1
 y 15
+no_magic 1
 end
 arch flagstone
 x 1
@@ -267,29 +268,29 @@ x 2
 y 1
 end
 arch cauldron
-no_pick 1
 x 2
 y 1
+no_pick 1
 end
 arch flagstone
 x 2
 y 2
 end
 arch flagstone
-no_magic 1
 x 2
 y 3
+no_magic 1
 end
 arch ggate_closed
-connected 3
-no_magic 1
 x 2
 y 3
+connected 3
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 2
 y 4
+no_magic 1
 end
 arch flagstone
 x 2
@@ -300,9 +301,9 @@ x 2
 y 5
 end
 arch flagstone
-no_magic 1
 x 2
 y 6
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy mineral oil
@@ -313,9 +314,9 @@ x 2
 y 6
 end
 arch flagstone
-no_magic 1
 x 2
 y 7
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy pyrite
@@ -326,9 +327,9 @@ x 2
 y 7
 end
 arch flagstone
-no_magic 1
 x 2
 y 8
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy lead
@@ -339,9 +340,9 @@ x 2
 y 8
 end
 arch flagstone
-no_magic 1
 x 2
 y 9
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy salt
@@ -351,9 +352,9 @@ x 2
 y 9
 end
 arch flagstone
-no_magic 1
 x 2
 y 10
+no_magic 1
 end
 arch diamond_converter
 name drop platinum to buy gypsum
@@ -372,24 +373,24 @@ x 2
 y 11
 end
 arch flagstone
-no_magic 1
 x 2
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 2
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 2
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 2
 y 15
+no_magic 1
 end
 arch flagstone
 x 2
@@ -430,9 +431,9 @@ x 3
 y 3
 end
 arch flagstone
-no_magic 1
 x 3
 y 4
+no_magic 1
 end
 arch flagstone
 x 3
@@ -463,10 +464,10 @@ x 3
 y 8
 end
 arch grate_closed_2
-connected 1
-no_magic 1
 x 3
 y 8
+connected 1
+no_magic 1
 end
 arch flagstone
 x 3
@@ -501,15 +502,15 @@ x 3
 y 12
 end
 arch flagstone
-no_magic 1
 x 3
 y 13
+no_magic 1
 end
 arch grate_closed_2
-connected 1
-no_magic 1
 x 3
 y 13
+connected 1
+no_magic 1
 end
 arch flagstone
 x 3
@@ -546,18 +547,18 @@ x 4
 y 1
 end
 arch chair_1.4
-no_pick 1
 x 4
 y 1
+no_pick 1
 end
 arch flagstone
 x 4
 y 2
 end
 arch table
-no_pick 1
 x 4
 y 2
+no_pick 1
 end
 arch flagstone
 x 4
@@ -568,64 +569,64 @@ x 4
 y 3
 end
 arch flagstone
-no_magic 1
 x 4
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 5
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 6
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 7
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 8
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 9
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 10
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 11
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 4
 y 15
+no_magic 1
 end
 arch flagstone
 x 4
@@ -646,94 +647,94 @@ x 5
 y 1
 end
 arch cauldron
-no_pick 1
 x 5
 y 1
+no_pick 1
 end
 arch flagstone
 x 5
 y 2
 end
 arch flagstone
-no_magic 1
 x 5
 y 3
+no_magic 1
 end
 arch ggate_closed
-connected 3
-no_magic 1
 x 5
 y 3
+connected 3
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 5
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 6
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 7
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 8
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 9
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 10
+no_magic 1
 end
 arch chair_1.4
-no_pick 1
 x 5
 y 10
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 11
+no_magic 1
 end
 arch chair_1.4
-no_pick 1
 x 5
 y 11
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 5
 y 15
+no_magic 1
 end
 arch flagstone
 x 5
@@ -774,14 +775,14 @@ x 6
 y 3
 end
 arch flagstone
-no_magic 1
 x 6
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 6
 y 5
+no_magic 1
 end
 arch flagstone
 x 6
@@ -832,29 +833,29 @@ x 6
 y 11
 end
 arch flagstone
-no_magic 1
 x 6
 y 12
+no_magic 1
 end
 arch chair_1.3
-no_pick 1
 x 6
 y 12
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 6
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 6
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 6
 y 15
+no_magic 1
 end
 arch flagstone
 x 6
@@ -875,9 +876,9 @@ x 7
 y 1
 end
 arch table
-no_pick 1
 x 7
 y 1
+no_pick 1
 end
 arch flagstone
 x 7
@@ -892,14 +893,14 @@ x 7
 y 3
 end
 arch flagstone
-no_magic 1
 x 7
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 7
 y 5
+no_magic 1
 end
 arch flagstone
 x 7
@@ -910,14 +911,14 @@ x 7
 y 6
 end
 arch flagstone
-no_magic 1
 x 7
 y 7
+no_magic 1
 end
 arch bookshelf
-no_pick 1
 x 7
 y 7
+no_pick 1
 end
 arch flagstone
 x 7
@@ -929,18 +930,18 @@ y 9
 end
 arch button_lever
 name ingredients rooms
-connected 1
 x 7
 y 9
+connected 1
 end
 arch flagstone
 x 7
 y 10
 end
 arch table_3
-no_pick 1
 x 7
 y 10
+no_pick 1
 end
 arch flagstone
 x 7
@@ -951,33 +952,33 @@ x 7
 y 11
 end
 arch flagstone
-no_magic 1
 x 7
 y 12
+no_magic 1
 end
 arch chair_1.3
-no_pick 1
 x 7
 y 12
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 7
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 7
 y 14
+no_magic 1
 end
 arch awall_1_1
 x 7
 y 14
 end
 arch flagstone
-no_magic 1
 x 7
 y 15
+no_magic 1
 end
 arch awall_2_1_1
 x 7
@@ -1002,61 +1003,61 @@ x 8
 y 1
 end
 arch cauldron
-no_pick 1
 x 8
 y 1
+no_pick 1
 end
 arch flagstone
 x 8
 y 2
 end
 arch chair_1.3
-no_pick 1
 x 8
 y 2
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 3
+no_magic 1
 end
 arch ggate_closed
-connected 3
-no_magic 1
 x 8
 y 3
+connected 3
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 5
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 6
+no_magic 1
 end
 arch grate_open_1
-connected 2
-no_magic 1
 x 8
 y 6
+connected 2
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 7
+no_magic 1
 end
 arch button_lever
 name teacher door
-connected 2
 x 8
 y 7
+connected 2
 end
 arch flagstone
 x 8
@@ -1064,27 +1065,27 @@ y 8
 end
 arch button_lever
 name student rooms
-connected 3
 x 8
 y 8
+connected 3
 end
 arch flagstone
 x 8
 y 9
 end
 arch chair_3.1
-no_pick 1
 x 8
 y 9
+no_pick 1
 end
 arch flagstone
 x 8
 y 10
 end
 arch cauldron
-no_pick 1
 x 8
 y 10
+no_pick 1
 end
 arch flagstone
 x 8
@@ -1095,44 +1096,44 @@ x 8
 y 11
 end
 arch flagstone
-no_magic 1
 x 8
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 14
+no_magic 1
 end
 arch grate_closed_1
-connected 4
-no_magic 1
 x 8
 y 14
+connected 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 8
 y 15
+no_magic 1
 end
 arch altar_trigger
 name drop 2000 platinum to access alchemy classroom
 slaying platinacoin
 food 2000
-connected 4
-last_sp 1
 x 8
 y 15
+last_sp 1
+connected 4
 end
 arch flagstone
-no_magic 1
 x 8
 y 16
+no_magic 1
 end
 arch stair3_gstone_up
 slaying potionshop
@@ -1152,9 +1153,9 @@ x 9
 y 1
 end
 arch table
-no_pick 1
 x 9
 y 1
+no_pick 1
 end
 arch flagstone
 x 9
@@ -1169,14 +1170,14 @@ x 9
 y 3
 end
 arch flagstone
-no_magic 1
 x 9
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 9
 y 5
+no_magic 1
 end
 arch flagstone
 x 9
@@ -1187,9 +1188,9 @@ x 9
 y 6
 end
 arch flagstone
-no_magic 1
 x 9
 y 7
+no_magic 1
 end
 arch clock
 x 9
@@ -1208,9 +1209,9 @@ x 9
 y 10
 end
 arch table_3
-no_pick 1
 x 9
 y 10
+no_pick 1
 end
 arch flagstone
 x 9
@@ -1221,33 +1222,33 @@ x 9
 y 11
 end
 arch flagstone
-no_magic 1
 x 9
 y 12
+no_magic 1
 end
 arch chair_1.3
-no_pick 1
 x 9
 y 12
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 9
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 9
 y 14
+no_magic 1
 end
 arch awall_1_1
 x 9
 y 14
 end
 arch flagstone
-no_magic 1
 x 9
 y 15
+no_magic 1
 end
 arch awall_2_1_1
 x 9
@@ -1292,14 +1293,14 @@ x 10
 y 3
 end
 arch flagstone
-no_magic 1
 x 10
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 10
 y 5
+no_magic 1
 end
 arch flagstone
 x 10
@@ -1350,29 +1351,29 @@ x 10
 y 11
 end
 arch flagstone
-no_magic 1
 x 10
 y 12
+no_magic 1
 end
 arch chair_1.3
-no_pick 1
 x 10
 y 12
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 10
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 10
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 10
 y 15
+no_magic 1
 end
 arch flagstone
 x 10
@@ -1393,94 +1394,94 @@ x 11
 y 1
 end
 arch cauldron
-no_pick 1
 x 11
 y 1
+no_pick 1
 end
 arch flagstone
 x 11
 y 2
 end
 arch flagstone
-no_magic 1
 x 11
 y 3
+no_magic 1
 end
 arch ggate_closed
-connected 3
-no_magic 1
 x 11
 y 3
+connected 3
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 5
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 6
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 7
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 8
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 9
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 10
+no_magic 1
 end
 arch chair_1.2
-no_pick 1
 x 11
 y 10
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 11
+no_magic 1
 end
 arch chair_1.2
-no_pick 1
 x 11
 y 11
+no_pick 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 11
 y 15
+no_magic 1
 end
 arch flagstone
 x 11
@@ -1501,18 +1502,18 @@ x 12
 y 1
 end
 arch chair_1.2
-no_pick 1
 x 12
 y 1
+no_pick 1
 end
 arch flagstone
 x 12
 y 2
 end
 arch table
-no_pick 1
 x 12
 y 2
+no_pick 1
 end
 arch flagstone
 x 12
@@ -1523,64 +1524,64 @@ x 12
 y 3
 end
 arch flagstone
-no_magic 1
 x 12
 y 4
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 5
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 6
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 7
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 8
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 9
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 10
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 11
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 12
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 13
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 14
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 12
 y 15
+no_magic 1
 end
 arch flagstone
 x 12
@@ -1621,9 +1622,9 @@ x 13
 y 3
 end
 arch flagstone
-no_magic 1
 x 13
 y 4
+no_magic 1
 end
 arch flagstone
 x 13
@@ -1642,15 +1643,15 @@ x 13
 y 6
 end
 arch flagstone
-no_magic 1
 x 13
 y 7
+no_magic 1
 end
 arch grate_closed_2
-connected 3
-no_magic 1
 x 13
 y 7
+connected 3
+no_magic 1
 end
 arch flagstone
 x 13
@@ -1677,15 +1678,15 @@ x 13
 y 10
 end
 arch flagstone
-no_magic 1
 x 13
 y 11
+no_magic 1
 end
 arch grate_closed_2
-connected 3
-no_magic 1
 x 13
 y 11
+connected 3
+no_magic 1
 end
 arch flagstone
 x 13
@@ -1712,15 +1713,15 @@ x 13
 y 14
 end
 arch flagstone
-no_magic 1
 x 13
 y 15
+no_magic 1
 end
 arch grate_closed_2
-connected 3
-no_magic 1
 x 13
 y 15
+connected 3
+no_magic 1
 end
 arch flagstone
 x 13
@@ -1741,29 +1742,29 @@ x 14
 y 1
 end
 arch cauldron
-no_pick 1
 x 14
 y 1
+no_pick 1
 end
 arch flagstone
 x 14
 y 2
 end
 arch flagstone
-no_magic 1
 x 14
 y 3
+no_magic 1
 end
 arch ggate_closed
-connected 3
-no_magic 1
 x 14
 y 3
+connected 3
+no_magic 1
 end
 arch flagstone
-no_magic 1
 x 14
 y 4
+no_magic 1
 end
 arch flagstone
 x 14
@@ -1782,9 +1783,9 @@ x 14
 y 7
 end
 arch chair_1.4
-no_pick 1
 x 14
 y 7
+no_pick 1
 end
 arch flagstone
 x 14
@@ -1807,9 +1808,9 @@ x 14
 y 11
 end
 arch chair_1.4
-no_pick 1
 x 14
 y 11
+no_pick 1
 end
 arch flagstone
 x 14
@@ -1828,9 +1829,9 @@ x 14
 y 14
 end
 arch table_2
-no_pick 1
 x 14
 y 14
+no_pick 1
 end
 arch flagstone
 x 14
@@ -1855,18 +1856,18 @@ x 15
 y 1
 end
 arch chair_1.2
-no_pick 1
 x 15
 y 1
+no_pick 1
 end
 arch flagstone
 x 15
 y 2
 end
 arch table
-no_pick 1
 x 15
 y 2
+no_pick 1
 end
 arch flagstone
 x 15
@@ -1877,9 +1878,9 @@ x 15
 y 3
 end
 arch flagstone
-no_magic 1
 x 15
 y 4
+no_magic 1
 end
 arch flagstone
 x 15
@@ -1894,27 +1895,27 @@ x 15
 y 6
 end
 arch table_2
-no_pick 1
 x 15
 y 6
+no_pick 1
 end
 arch flagstone
 x 15
 y 7
 end
 arch cauldron
-no_pick 1
 x 15
 y 7
+no_pick 1
 end
 arch flagstone
 x 15
 y 8
 end
 arch table_2
-no_pick 1
 x 15
 y 8
+no_pick 1
 end
 arch flagstone
 x 15
@@ -1929,27 +1930,27 @@ x 15
 y 10
 end
 arch table_2
-no_pick 1
 x 15
 y 10
+no_pick 1
 end
 arch flagstone
 x 15
 y 11
 end
 arch cauldron
-no_pick 1
 x 15
 y 11
+no_pick 1
 end
 arch flagstone
 x 15
 y 12
 end
 arch table_2
-no_pick 1
 x 15
 y 12
+no_pick 1
 end
 arch flagstone
 x 15
@@ -1964,18 +1965,18 @@ x 15
 y 14
 end
 arch chair_1.1
-no_pick 1
 x 15
 y 14
+no_pick 1
 end
 arch flagstone
 x 15
 y 15
 end
 arch cauldron
-no_pick 1
 x 15
 y 15
+no_pick 1
 end
 arch flagstone
 x 15

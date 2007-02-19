@@ -1,15 +1,17 @@
 arch map
+name Klondor's Wand Shop
+difficulty 25
 region lakecountry
-name klondors_wands
 shopitems gem:20;wand:100;rod:30;horn:20;*:-60
 shopmin 10
 shopmax 100000
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 23 01:53:30 1995
 endmsg
-difficulty 25
 end
 arch shop_empty
 end
@@ -452,7 +454,7 @@ msg
 Klondor says, "Take your time to check
 my fine collection of wands, the gems
 are bonus collection.
-  If you have anything to identify, I
+If you have anything to identify, I
 can help you. Just drop 20 gold coins
 for each item."
 endmsg
@@ -773,9 +775,9 @@ y 8
 end
 arch scroll
 msg
-  Hello my friend. Take the beers if
+Hello my friend. Take the beers if
 you'd like. It's my hospitality.
-  			-Klondo
+-Klondo
 endmsg
 x 8
 y 8

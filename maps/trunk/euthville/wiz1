@@ -1,4 +1,5 @@
 arch map
+name Abyss
 reset_timeout 7200
 difficulty 8
 width 20
@@ -504,10 +505,6 @@ arch dungeon_floor
 x 4
 y 6
 end
-arch dragon
-x 4
-y 6
-end
 arch dungeon_floor
 x 4
 y 7
@@ -798,10 +795,6 @@ arch dungeon_floor
 x 7
 y 13
 end
-arch dragon
-x 7
-y 13
-end
 arch dungeon_floor
 x 7
 y 14
@@ -861,11 +854,6 @@ x 8
 y 7
 end
 arch dungeon_floor
-x 8
-y 8
-end
-arch troll
-dam 40
 x 8
 y 8
 end
@@ -1247,21 +1235,11 @@ arch dungeon_floor
 x 13
 y 6
 end
-arch giant
-dam 50
-x 13
-y 6
-end
 arch dungeon_floor
 x 13
 y 7
 end
 arch dungeon_floor
-x 13
-y 8
-end
-arch giant
-dam 50
 x 13
 y 8
 end
@@ -1332,11 +1310,6 @@ x 14
 y 5
 end
 arch dungeon_floor
-x 14
-y 6
-end
-arch giant
-dam 50
 x 14
 y 6
 end
@@ -1439,11 +1412,6 @@ arch dungeon_floor
 x 15
 y 8
 end
-arch giant
-dam 50
-x 15
-y 8
-end
 arch dungeon_floor
 x 15
 y 9
@@ -1530,11 +1498,6 @@ arch dungeon_floor
 x 16
 y 8
 end
-arch giant
-dam 50
-x 16
-y 8
-end
 arch dungeon_floor
 x 16
 y 9
@@ -1622,11 +1585,6 @@ arch dungeon_floor
 x 17
 y 9
 end
-arch giant
-dam 50
-x 17
-y 9
-end
 arch dungeon_floor
 x 17
 y 10
@@ -1707,11 +1665,6 @@ x 18
 y 8
 end
 arch dungeon_floor
-x 18
-y 9
-end
-arch giant
-dam 50
 x 18
 y 9
 end
@@ -1868,4 +1821,52 @@ end
 arch awall_2_2_4
 x 19
 y 15
+end
+arch dragon
+x 4
+y 6
+end
+arch dragon
+x 7
+y 13
+end
+arch troll
+dam 40
+x 8
+y 8
+end
+arch giant
+dam 50
+x 13
+y 6
+end
+arch giant
+dam 50
+x 13
+y 8
+end
+arch giant
+dam 50
+x 14
+y 6
+end
+arch giant
+dam 50
+x 15
+y 8
+end
+arch giant
+dam 50
+x 16
+y 8
+end
+arch giant
+dam 50
+x 17
+y 9
+end
+arch giant
+dam 50
+x 18
+y 9
 end

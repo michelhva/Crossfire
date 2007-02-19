@@ -1,14 +1,15 @@
 arch map
-name court
+name Skud Tower Court
+difficulty 1
+width 40
+height 40
+enter_x 19
+enter_y 39
 msg
 Creator: 
 Email: 
 Date: Sat Nov 13 16:00:34 1993
 endmsg
-hp 19
-sp 39
-x 40
-y 40
 end
 arch marble
 end
@@ -1997,7 +1998,7 @@ msg
 Begone from here or I feed off your
 flesh. Have you ever Danced with Death?
 *The spirit holds out his hand to
-you.* 
+you.*
 endmsg
 hp 600
 maxhp 200

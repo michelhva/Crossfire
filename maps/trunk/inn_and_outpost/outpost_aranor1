@@ -1,14 +1,14 @@
 arch map
 name Ara Nor
+width 22
+height 20
+enter_x 10
+enter_y 16
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    7/3/2004
 endmsg
-width 22
-height 20
-enter_x 10
-enter_y 16
 outdoor 1
 end
 arch invis_exit
@@ -2377,7 +2377,7 @@ end
 arch merchant
 msg
 @match merchant|trade
-I mostly trade with the elves.  
+I mostly trade with the elves.
 Some say it's dangerous but you just have to be cautious.
 @match elves
 Yes there is a elven village to the west of here.
@@ -2386,9 +2386,9 @@ Well the elves aren't really dangerous but the Dark Forest is...
 @match *
 Hello, good to meet you.  I'm Zim, a merchant by trade.
 endmsg
-stand_still 1
 x 18
 y 11
+stand_still 1
 end
 arch cobblestones2
 x 18

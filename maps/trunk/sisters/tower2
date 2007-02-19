@@ -1,11 +1,14 @@
 arch map
-name tower2
+name Three Sisters Tower
+difficulty 1
+darkness 5
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec 18 12:27:13 1994
 endmsg
-invisible 5
 end
 arch sea
 end
@@ -129,18 +132,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 1
 y 5
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -184,18 +185,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 1
 y 10
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -267,9 +266,6 @@ x 2
 y 5
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 2
 y 6
 connected 1
@@ -295,9 +291,6 @@ x 2
 y 10
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 2
 y 11
 connected 1
@@ -346,9 +339,6 @@ x 3
 y 2
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 3
 y 3
 connected 1
@@ -385,18 +375,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 3
 y 6
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -436,18 +424,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 3
 y 10
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -521,18 +507,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 4
 y 4
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -541,9 +525,6 @@ arch rock
 end
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 4
 y 5
 connected 1
@@ -626,18 +607,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 5
 y 1
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -658,9 +637,6 @@ x 5
 y 4
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 5
 y 5
 connected 1
@@ -675,11 +651,11 @@ y 6
 end
 arch magic_mouth
 msg
-You sense something funny 
+You sense something funny
 about these statues. They seem
 to be watching you and waiting
 for you to make a mistake.
- 
+
 endmsg
 x 5
 y 7
@@ -693,9 +669,6 @@ x 5
 y 8
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 5
 y 9
 connected 1
@@ -709,9 +682,6 @@ x 5
 y 10
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 5
 y 11
 connected 1
@@ -725,9 +695,6 @@ x 5
 y 12
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 5
 y 13
 connected 1
@@ -756,18 +723,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 5
 y 14
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -790,9 +755,6 @@ arch awall_2_1_2
 x 6
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 6
 y 1
 connected 1
@@ -806,9 +768,6 @@ x 6
 y 2
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 6
 y 3
 connected 1
@@ -881,18 +840,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 6
 y 12
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1066,9 +1023,6 @@ x 8
 y 8
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 8
 y 9
 connected 1
@@ -1112,9 +1066,6 @@ arch awall_2_1_2
 x 9
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 9
 y 1
 connected 1
@@ -1128,9 +1079,6 @@ x 9
 y 2
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 9
 y 3
 connected 1
@@ -1203,18 +1151,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 9
 y 12
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1264,18 +1210,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 10
 y 1
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1296,9 +1240,6 @@ x 10
 y 4
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 10
 y 5
 connected 1
@@ -1320,9 +1261,6 @@ x 10
 y 8
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 10
 y 9
 connected 1
@@ -1336,9 +1274,6 @@ x 10
 y 10
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 10
 y 11
 connected 1
@@ -1352,9 +1287,6 @@ x 10
 y 12
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 10
 y 13
 connected 1
@@ -1383,18 +1315,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 10
 y 14
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1452,18 +1382,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 11
 y 4
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1566,18 +1494,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 12
 y 5
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1621,18 +1547,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 12
 y 10
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1688,9 +1612,6 @@ x 13
 y 3
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 13
 y 4
 connected 1
@@ -1724,9 +1645,6 @@ x 13
 y 10
 end
 arch pedestal_trigger
-msg
-
-endmsg
 x 13
 y 11
 connected 1
@@ -1810,18 +1728,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 14
 y 5
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock
@@ -1865,18 +1781,16 @@ exp 500
 dam 10
 wc 1
 ac -4
-armour 50
 x 14
 y 10
 speed 0.100000
 level 20
-immune 2
-vulnerable 16
 carrying 4500000
 alive 1
 monster 1
 see_invisible 1
 unaggressive 1
+armour 16
 arch rock
 end
 arch rock

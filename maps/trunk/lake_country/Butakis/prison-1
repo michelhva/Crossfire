@@ -1,13 +1,14 @@
 arch map
+name Prison
+difficulty 1
 region lakecountry
-name prison-1
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 28 22:47:14 1995
 endmsg
-width 16
-height 16
 end
 arch dungeon_floor
 end
@@ -114,9 +115,9 @@ x 1
 y 1
 end
 arch button_handle
-connected 1
 x 1
 y 1
+connected 1
 end
 arch guard
 x 1
@@ -131,10 +132,10 @@ x 1
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 1
 y 3
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 1
@@ -186,19 +187,19 @@ x 1
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 8
 x 1
 y 13
+speed 0.500000
+connected 8
 end
 arch dungeon_floor
 x 1
 y 14
 end
 arch button_handle
-connected 8
 x 1
 y 14
+connected 8
 end
 arch dungeon_floor
 x 1
@@ -407,9 +408,9 @@ x 4
 y 1
 end
 arch button_handle
-connected 2
 x 4
 y 1
+connected 2
 end
 arch guard
 x 4
@@ -424,10 +425,10 @@ x 4
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 4
 y 3
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 4
@@ -625,9 +626,9 @@ x 6
 y 1
 end
 arch button_handle
-connected 3
 x 6
 y 1
+connected 3
 end
 arch guard
 x 6
@@ -697,19 +698,19 @@ x 6
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 7
 x 6
 y 13
+speed 0.500000
+connected 7
 end
 arch dungeon_floor
 x 6
 y 14
 end
 arch button_handle
-connected 7
 x 6
 y 14
+connected 7
 end
 arch dungeon_floor
 x 6
@@ -752,10 +753,10 @@ x 7
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 3
 x 7
 y 3
+speed 0.500000
+connected 3
 end
 arch dungeon_floor
 x 7
@@ -971,9 +972,9 @@ x 9
 y 1
 end
 arch button_handle
-connected 4
 x 9
 y 1
+connected 4
 end
 arch guard
 x 9
@@ -995,10 +996,10 @@ x 9
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 4
 x 9
 y 3
+speed 0.500000
+connected 4
 end
 arch dungeon_floor
 x 9
@@ -1233,10 +1234,10 @@ x 11
 y 10
 end
 arch grate_closed_2
-speed 0.500000
-connected 5
 x 11
 y 10
+speed 0.500000
+connected 5
 end
 arch dungeon_floor
 x 11
@@ -1251,10 +1252,10 @@ x 11
 y 12
 end
 arch grate_closed_2
-speed 0.500000
-connected 6
 x 11
 y 12
+speed 0.500000
+connected 6
 end
 arch dungeon_floor
 x 11
@@ -1433,9 +1434,9 @@ x 13
 y 10
 end
 arch button_handle
-connected 5
 x 13
 y 10
+connected 5
 end
 arch guard
 x 13
@@ -1454,9 +1455,9 @@ x 13
 y 12
 end
 arch button_handle
-connected 6
 x 13
 y 12
+connected 6
 end
 arch guard
 x 13

@@ -1,14 +1,15 @@
 arch map
+name Tollhouse
+difficulty 1
 region darcap
-name tollhouse93
+width 20
+height 20
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 19 04:00:23 1994
 endmsg
-width 20
-height 20
-enter_y 1
 end
 arch woodfloor2
 end
@@ -622,7 +623,7 @@ arch woodfloor2
 x 5
 y 5
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 5
 end
@@ -646,7 +647,7 @@ arch woodfloor2
 x 5
 y 8
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 8
 end
@@ -1330,7 +1331,7 @@ arch woodfloor2
 x 11
 y 15
 end
-arch wall_2_1_1
+arch wall_1_2
 x 11
 y 15
 end
@@ -1346,7 +1347,7 @@ arch woodfloor2
 x 11
 y 17
 end
-arch wall_2_1_1
+arch wall_1_1
 x 11
 y 17
 end
@@ -1460,7 +1461,7 @@ arch woodfloor2
 x 12
 y 19
 end
-arch wall_2_1_2
+arch wall_1_3
 x 12
 y 19
 end
@@ -1652,7 +1653,7 @@ arch woodfloor2
 x 14
 y 15
 end
-arch wall_2_1_1
+arch wall_1_2
 x 14
 y 15
 end
@@ -1668,7 +1669,7 @@ arch woodfloor2
 x 14
 y 17
 end
-arch wall_2_1_1
+arch wall_1_1
 x 14
 y 17
 end

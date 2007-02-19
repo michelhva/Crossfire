@@ -1,12 +1,14 @@
 arch map
+name Arena Underground
+difficulty 1
 region scornarena
+width 29
+height 22
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Oct 27 18:10:31 2000
 endmsg
-x 29
-y 22
 end
 arch blocked
 end

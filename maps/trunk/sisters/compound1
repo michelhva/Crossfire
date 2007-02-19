@@ -1,13 +1,13 @@
 arch map
-name compound1
+name Large Compound
+difficulty 5
+width 32
+height 32
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Mon Dec 26 16:55:21 1994
 endmsg
-width 32
-height 32
-difficulty 5
 end
 arch grass
 end
@@ -299,9 +299,9 @@ x 2
 y 2
 end
 arch button_lever
-connected 2
 x 2
 y 2
+connected 2
 end
 arch generate_giant
 x 2
@@ -428,9 +428,9 @@ x 2
 y 26
 end
 arch button_lever
-connected 1
 x 2
 y 26
+connected 1
 end
 arch generate_giant
 x 2
@@ -1040,9 +1040,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 6
 y 11
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -1077,9 +1077,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 6
 y 17
+carrying 15000
 end
 arch pstone_1
 x 6
@@ -1098,10 +1098,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 6
 y 20
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 6
@@ -1380,10 +1380,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 8
 y 6
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 8
@@ -1426,10 +1426,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 8
 y 15
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 8
@@ -1449,9 +1449,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 8
 y 18
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -1545,9 +1545,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 9
 y 5
+carrying 15000
 end
 arch pstone_1
 x 9
@@ -1559,9 +1559,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 9
 y 6
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -1727,9 +1727,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 10
 y 5
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -1823,9 +1823,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 10
 y 16
+carrying 15000
 end
 arch pstone_1
 x 10
@@ -1857,9 +1857,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 10
 y 22
+carrying 15000
 end
 arch pstone_1
 x 10
@@ -1926,9 +1926,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 11
 y 3
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -2002,9 +2002,9 @@ x 11
 y 13
 end
 arch wwall_2_1_1
-no_pass 0
 x 11
 y 13
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -2226,18 +2226,18 @@ x 12
 y 17
 end
 arch button_lever
-connected 1
 x 12
 y 17
+connected 1
 end
 arch woodfloor
 x 12
 y 18
 end
 arch button_lever
-connected 2
 x 12
 y 18
+connected 2
 end
 arch woodfloor
 x 12
@@ -2411,9 +2411,9 @@ x 13
 y 18
 end
 arch button_lever
-connected 5
 x 13
 y 18
+connected 5
 end
 arch woodfloor
 x 13
@@ -2458,9 +2458,9 @@ x 13
 y 25
 end
 arch awall_2_1_2
-no_pass 0
 x 13
 y 25
+no_pass 0
 end
 arch cobblestones2
 x 13
@@ -2582,18 +2582,18 @@ x 14
 y 17
 end
 arch button_lever
-connected 3
 x 14
 y 17
+connected 3
 end
 arch woodfloor
 x 14
 y 18
 end
 arch button_lever
-connected 4
 x 14
 y 18
+connected 4
 end
 arch woodfloor
 x 14
@@ -2938,10 +2938,10 @@ y 15
 end
 arch igate_closed_1
 name oriculium gate
+x 16
+y 15
 speed 0.500000
 connected 4
-x 16
-y 15
 end
 arch dungeon_magic
 x 16
@@ -2953,10 +2953,10 @@ y 16
 end
 arch igate_closed_1
 name oriculium gate
+x 16
+y 16
 speed 0.500000
 connected 3
-x 16
-y 16
 end
 arch dungeon_magic
 x 16
@@ -2968,10 +2968,10 @@ y 17
 end
 arch igate_closed_1
 name oriculium gate
+x 16
+y 17
 speed 0.500000
 connected 2
-x 16
-y 17
 end
 arch dungeon_magic
 x 16
@@ -2983,10 +2983,10 @@ y 18
 end
 arch igate_closed_1
 name oriculium gate
-speed 0.500000
-connected 1
 x 16
 y 18
+speed 0.500000
+connected 1
 end
 arch dungeon_magic
 x 16
@@ -3152,10 +3152,10 @@ y 15
 end
 arch igate_closed_1
 name oriculium gate
+x 17
+y 15
 speed 0.500000
 connected 4
-x 17
-y 15
 end
 arch dungeon_magic
 x 17
@@ -3167,10 +3167,10 @@ y 16
 end
 arch igate_closed_1
 name oriculium gate
+x 17
+y 16
 speed 0.500000
 connected 3
-x 17
-y 16
 end
 arch dungeon_magic
 x 17
@@ -3182,10 +3182,10 @@ y 17
 end
 arch igate_closed_1
 name oriculium gate
+x 17
+y 17
 speed 0.500000
 connected 2
-x 17
-y 17
 end
 arch dungeon_magic
 x 17
@@ -3197,10 +3197,10 @@ y 18
 end
 arch igate_closed_1
 name oriculium gate
-speed 0.500000
-connected 1
 x 17
 y 18
+speed 0.500000
+connected 1
 end
 arch dungeon_magic
 x 17
@@ -3418,9 +3418,9 @@ x 18
 y 25
 end
 arch awall_2_1_2
-no_pass 0
 x 18
 y 25
+no_pass 0
 end
 arch cobblestones2
 x 18
@@ -3526,27 +3526,27 @@ x 19
 y 13
 end
 arch roast_bird
-nrof 5
 x 19
 y 13
+nrof 5
 end
 arch woodfloor
 x 19
 y 14
 end
 arch potato
-nrof 30
 x 19
 y 14
+nrof 30
 end
 arch woodfloor
 x 19
 y 15
 end
 arch potato
-nrof 30
 x 19
 y 15
+nrof 30
 end
 arch woodfloor
 x 19
@@ -3559,9 +3559,9 @@ end
 arch loaf
 name Giant loaf of bread
 food 500
-nrof 5
 x 19
 y 16
+nrof 5
 end
 arch woodfloor
 x 19
@@ -3574,9 +3574,9 @@ end
 arch loaf
 name Giant loaf of bread
 food 500
-nrof 5
 x 19
 y 17
+nrof 5
 end
 arch permanent_lava
 name cooking pit
@@ -3751,9 +3751,9 @@ x 20
 y 18
 end
 arch potato
-nrof 30
 x 20
 y 18
+nrof 30
 end
 arch woodfloor
 x 20
@@ -3937,9 +3937,9 @@ x 21
 y 13
 end
 arch dragon_steak
-nrof 3
 x 21
 y 13
+nrof 3
 end
 arch woodfloor
 x 21
@@ -3950,9 +3950,9 @@ x 21
 y 14
 end
 arch onion
-nrof 10
 x 21
 y 14
+nrof 10
 end
 arch woodfloor
 x 21
@@ -3965,18 +3965,18 @@ end
 arch loaf
 name Giant loaf of bread
 food 500
-nrof 5
 x 21
 y 15
+nrof 5
 end
 arch woodfloor
 x 21
 y 16
 end
 arch roast_bird
-nrof 5
 x 21
 y 16
+nrof 5
 end
 arch woodfloor
 x 21
@@ -3987,18 +3987,18 @@ x 21
 y 17
 end
 arch cabbage
-nrof 20
 x 21
 y 17
+nrof 20
 end
 arch woodfloor
 x 21
 y 18
 end
 arch orcchop
-nrof 20
 x 21
 y 18
+nrof 20
 end
 arch woodfloor
 x 21
@@ -4099,9 +4099,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 22
 y 4
+carrying 15000
 end
 arch pstone_1
 x 22
@@ -4145,10 +4145,10 @@ y 10
 end
 arch igate_closed_2
 name oriculium gate
-speed 0.500000
-connected 5
 x 22
 y 10
+speed 0.500000
+connected 5
 end
 arch dungeon_magic
 x 22
@@ -4160,10 +4160,10 @@ y 11
 end
 arch igate_closed_2
 name oriculium gate
-speed 0.500000
-connected 5
 x 22
 y 11
+speed 0.500000
+connected 5
 end
 arch dungeon_magic
 x 22
@@ -4428,9 +4428,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 23
 y 23
+carrying 15000
 end
 arch pstone_1
 x 23
@@ -4513,9 +4513,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 15000
 x 24
 y 7
+carrying 15000
 end
 arch pstone_1
 x 24
@@ -4584,10 +4584,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 24
 y 18
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 24
@@ -4906,10 +4906,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 26
 y 8
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 26
@@ -5104,9 +5104,9 @@ hp 30
 exp 50
 dam 5
 ac 7
-carrying 22500
 x 27
 y 13
+carrying 22500
 arch roast_bird
 name chicken carcass
 end
@@ -5132,10 +5132,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 27
 y 17
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 27
@@ -5150,10 +5150,10 @@ name giant dog
 hp 100
 exp 200
 dam 8
-speed 0.250000
-level 7
 x 27
 y 19
+speed 0.250000
+level 7
 end
 arch pstone_1
 x 27
@@ -5374,9 +5374,9 @@ x 29
 y 2
 end
 arch button_lever
-connected 3
 x 29
 y 2
+connected 3
 end
 arch generate_giant
 x 29
@@ -5563,9 +5563,9 @@ x 29
 y 26
 end
 arch button_lever
-connected 4
 x 29
 y 26
+connected 4
 end
 arch generate_giant
 x 29
@@ -5962,10 +5962,10 @@ end
 arch dread
 name Giant guardian dread
 hp 3500
-speed -0.200000
-attack_movement 0
 x 23
 y 10
+speed -0.200000
+attack_movement 0
 end
 arch giant
 x 26

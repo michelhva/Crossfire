@@ -1,13 +1,14 @@
 arch map
+name Ebony Tiger Thief Guild
+difficulty 1
 region lakecountry
-name masterlev
+width 25
+height 25
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Mon Apr 24 18:08:11 1995
 endmsg
-x 25
-y 25
 end
 arch woodfloor
 end
@@ -1316,9 +1317,9 @@ name potion of dragon firebreath
 name_pl potions of dragon firebreath
 msg
 =>>
-  After quaffing the liquid distilled
-from element of fire, you will 
-uncontrollably breathe forth like a 
+After quaffing the liquid distilled
+from element of fire, you will
+uncontrollably breathe forth like a
 fire dragon.
 endmsg
 face potiongen.111
@@ -1342,7 +1343,7 @@ name potion of courage
 name_pl potions of courage
 msg
 =>>
-  It hypnotizes you, gives you courage 
+It hypnotizes you, gives you courage
 and makes you fearless for a short
 period.
 endmsg
@@ -1472,7 +1473,7 @@ name potion of dragon icebreath
 name_pl potions of dragon icebreath
 msg
 =>>
-  After quaffing the liquid distilled
+After quaffing the liquid distilled
 from the element of ice, you will
 uncontrollably breathe forth like a ice
 dragon.
@@ -1498,7 +1499,7 @@ name potion of clear mind
 name_pl potions of clear mind
 msg
 =>>
-  It clears your thought and make you 
+It clears your thought and make you
 impossible to be confused for a short
 period.
 endmsg
@@ -1628,7 +1629,7 @@ name potion of awesome morningbreath
 name_pl potions of awesome morningbreath
 msg
 =>>
-  This stinking liquid grant you the
+This stinking liquid grant you the
 power to poison the air all around you
 with your bad breath.
 endmsg
@@ -1653,7 +1654,7 @@ name potion of static protection
 name_pl potions of static protection
 msg
 =>>
-  It temporarily enchances your body
+It temporarily enchances your body
 to protects your from electric attacks.
 endmsg
 face potiongen.111
@@ -1782,7 +1783,7 @@ name potion of haste self
 name_pl potions of haste self
 msg
 =>>
-   Distilled from body fluid of quicklings,
+Distilled from body fluid of quicklings,
 this concoction greatly improve your
 senses and let you move and react
 faster...
@@ -1949,19 +1950,19 @@ arch thief
 name thief guildmaster
 msg
 @match door|exit
-  Do you deserve to be a guild member
+Do you deserve to be a guild member
 if you can't even find the door by
 yourself!!??
 @match *
-  Hello stranger! So you want to be a
+Hello stranger! So you want to be a
 member of the guild!? Well, since you
 passed the test, I will let you in the
-guild. There are many things that the 
-guild provide you. 
-  Make your contributions on time, 
+guild. There are many things that the
+guild provide you.
+Make your contributions on time,
 remember! And be a good fellow.
-  Okay you may go now.
-  You have to search the rooms for the
+Okay you may go now.
+You have to search the rooms for the
 master keys of thievery, which you may
 have and use as symbol of this guild.
 @match symbol|thivery
@@ -2572,8 +2573,8 @@ name blackmarket master
 msg
 @match *
 You have to find out where to get the
-goodies for trading. 
-I have no other helpful information to 
+goodies for trading.
+I have no other helpful information to
 give you.
 endmsg
 x 14
@@ -2843,7 +2844,7 @@ arch locked_door1
 name repelling force field
 slaying Heart_Joey
 msg
-I will trade the Essence of Flame 
+I will trade the Essence of Flame
 for Heart of Joey.
 endmsg
 face enchantment.111
@@ -2854,8 +2855,8 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-   It's said to be from the spirit of an
-   efreet. It burns with red hot fury.
+It's said to be from the spirit of an
+efreet. It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
@@ -3237,7 +3238,7 @@ The keys are hidden under the table.
 @match thievery|Thievery
 THe master key of thievery is a symbol
 of the guild, besides being a key. It
-has many uses and open many doors that 
+has many uses and open many doors that
 open guildmembers are allowed.
 @match *
 Hello fellow guild members
@@ -3325,7 +3326,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -3484,9 +3485,9 @@ arch mithril_chainmail
 name mithril chainmail of Winter
 name_pl mithril chainmails of Winter
 msg
-  This special chainmail is covered
-  with patterns of snow flake. It was
-  created by ancient high elves.
+This special chainmail is covered
+with patterns of snow flake. It was
+created by ancient high elves.
 endmsg
 Cha 3
 x 20
@@ -3629,7 +3630,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -3845,7 +3846,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -4035,8 +4036,8 @@ arch ring_nodrain
 name Ring of Power
 name_pl Rings of Power
 msg
-  This is the legendary Ring of Power,
-  the hero ring
+This is the legendary Ring of Power,
+the hero ring
 endmsg
 Str 2
 Dex 2
@@ -4087,7 +4088,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111

@@ -1,6 +1,9 @@
 arch map
+name Royal Library
+difficulty 1
 region lakecountry
-name Rlib2
+width 16
+height 16
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
@@ -559,7 +562,7 @@ name white book
 msg
 There is a snake pit in the north-east
 mountains. The pit is hard to find,
-because the entrance is hidden in the 
+because the entrance is hidden in the
 high mountains. Strange snakes lives
 there.
 You might also find a way to Mad wizard's
@@ -713,11 +716,11 @@ end
 arch book_read
 name silver book
 msg
-The Dark Angel is a powerful angel that 
+The Dark Angel is a powerful angel that
 knows the summoning of celestial
 destruction power. He is as deadly as
 his name implies. It is rumored that
-nobody can hurt him from the front. 
+nobody can hurt him from the front.
 A strong aura of his will force anyone
 back.
 endmsg
@@ -794,12 +797,12 @@ wizard in the realm. Before he was
 imprisoned in the fortress he lived in
 his tower to the northeast and use the
 cave near the mountain to do research.
-  The tower is deserted and is occupied
+The tower is deserted and is occupied
 by some unknown hosts. Some powerful
 wizards went and never returned. The
 tower has such defense that it's almost
 impossible to access it.
-  As for the cave, it is believed that
+As for the cave, it is believed that
 there is still a teleporter to go to
 the tower. And it was from the cave
 that our lord went to seize the wizard
@@ -1413,7 +1416,7 @@ y 7
 end
 arch sign
 msg
-	Reserved section
+Reserved section
 If there is any questions, please
 direct them to the librarians.
 endmsg
@@ -1426,7 +1429,7 @@ y 8
 end
 arch sign
 msg
-	Reserved section
+Reserved section
 If there is any questions, please
 direct them to the librarians.
 endmsg
@@ -1670,7 +1673,7 @@ end
 arch knight
 msg
 @match *
-No, you can't enter here! 
+No, you can't enter here!
 endmsg
 x 13
 y 4
@@ -1742,9 +1745,9 @@ msg
 On third level of the Towers of luck
 there are 5 ancient electric dragons,
 Grunter the mighty, 2 big wizards,
-titans, 2 big wyvern of chaos, 
+titans, 2 big wyvern of chaos,
 2 giant worms and lots of artifacts
-and treasures. But you must have great 
+and treasures. But you must have great
 luck to be able to get there.
 endmsg
 x 13
@@ -1763,7 +1766,7 @@ arch book_read
 name shiny black book
 msg
 In the depth of the snake pit, there
-lives a Great Wyrm of Choas, who 
+lives a Great Wyrm of Choas, who
 knows the magic of death. However it
 is death himself.
 endmsg

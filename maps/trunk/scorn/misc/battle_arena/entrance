@@ -1,13 +1,14 @@
 arch map
+name Arena Entrance
+difficulty 1
 region scornarena
-name entrance
+width 23
+height 27
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed 8.11.2000
 endmsg
-width 23
-height 27
 end
 arch pstone_2
 end
@@ -92,53 +93,53 @@ arch teleporter
 name 5
 hp 5
 sp 14
+y 14
 speed 0.000000
 resist_physical 30
 resist_fire 30
 connected 5
-y 14
 end
 arch card
 name ARENA ticket
-type 21
 slaying battle_arena123
 y 14
+type 21
 end
 arch bag_popcorn
 y 14
 end
 arch card
 name ARENA ticket
-type 21
 slaying battle_arena123
 y 14
+type 21
 end
 arch bag_popcorn
 y 14
 end
 arch card
 name ARENA ticket
-type 21
 slaying battle_arena123
 y 14
+type 21
 end
 arch bag_popcorn
 y 14
 end
 arch card
 name ARENA ticket
-type 21
 slaying battle_arena123
 y 14
+type 21
 end
 arch bag_popcorn
 y 14
 end
 arch card
 name ARENA ticket
-type 21
 slaying battle_arena123
 y 14
+type 21
 end
 arch bag_popcorn
 y 14
@@ -148,11 +149,11 @@ y 15
 end
 arch block_door_open
 name 1
+y 16
 speed 0.500000
 resist_physical 30
 value 1
 connected 1
-y 16
 end
 arch boulder
 y 16
@@ -162,34 +163,34 @@ name 2
 msg
 The western gate is set in motion...
 endmsg
+y 17
 resist_magic 30
 connected 2
-y 17
 end
 arch button_small
 name 2
+y 17
 resist_magic 30
 weight 1000
 connected 2
-y 17
 end
 arch igateTrg1
 name 1
+y 17
 resist_physical 30
 connected 1
-y 17
 end
 arch blocked
 y 18
 end
 arch block_door_open
 name 3
+y 19
 speed 0.500000
 resist_physical 30
 resist_magic 30
 value 1
 connected 3
-y 19
 end
 arch boulder
 y 19
@@ -199,23 +200,23 @@ name 4
 msg
 The eastern gate is set in motion...
 endmsg
+y 20
 resist_fire 30
 connected 4
-y 20
 end
 arch button_small
 name 4
+y 20
 resist_fire 30
 weight 1000
 connected 4
-y 20
 end
 arch igateTrg1
 name 3
+y 20
 resist_physical 30
 resist_magic 30
 connected 3
-y 20
 end
 arch blocked
 y 21
@@ -229,17 +230,17 @@ face blocked.111
 y 23
 end
 arch mover_5
+y 23
 level 1
 attacktype 1
-y 23
 end
 arch button_small
 name 11
+y 24
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-y 24
 end
 arch flagstone
 name darkness
@@ -250,13 +251,13 @@ arch teleporter
 slaying first-aide
 hp 5
 sp 1
+y 24
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 invisible 1
 connected 11
-y 24
 end
 arch blocked
 y 25
@@ -288,10 +289,10 @@ y 4
 end
 arch pedestal
 name 1
-resist_physical 30
-connected 1
 x 1
 y 5
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 1
@@ -302,19 +303,19 @@ x 1
 y 6
 end
 arch grate_closed_1
+x 1
+y 6
 speed 0.500000
 resist_magic 30
 connected 2
-x 1
-y 6
 end
 arch check_inv
 name 1
 slaying battle_arena123
-resist_physical 30
-connected 1
 x 1
 y 7
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 1
@@ -339,10 +340,10 @@ msg
 I want to get in! Could you buy me
 a ticket please?
 endmsg
-friendly 1
-unaggressive 0
 x 1
 y 10
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 1
@@ -436,10 +437,10 @@ y 4
 end
 arch pedestal
 name 1
-resist_physical 30
-connected 1
 x 2
 y 5
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 2
@@ -450,19 +451,19 @@ x 2
 y 6
 end
 arch grate_closed_1
+x 2
+y 6
 speed 0.500000
 resist_magic 30
 connected 2
-x 2
-y 6
 end
 arch check_inv
 name 1
 slaying battle_arena123
-resist_physical 30
-connected 1
 x 2
 y 7
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 2
@@ -596,10 +597,10 @@ y 4
 end
 arch pedestal
 name 1
-resist_physical 30
-connected 1
 x 3
 y 5
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 3
@@ -610,19 +611,19 @@ x 3
 y 6
 end
 arch grate_closed_1
+x 3
+y 6
 speed 0.500000
 resist_magic 30
 connected 2
-x 3
-y 6
 end
 arch check_inv
 name 1
 slaying battle_arena123
-resist_physical 30
-connected 1
 x 3
 y 7
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 3
@@ -665,9 +666,9 @@ x 3
 y 14
 end
 arch bench_1_4
-no_pass 1
 x 3
 y 14
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -688,18 +689,18 @@ get one bag of popcorn for free.
 endmsg
 hp 180
 maxhp 180
-level 20
 x 3
 y 15
+level 20
 end
 arch pstone_2
 x 3
 y 16
 end
 arch bench_1_4
-no_pass 1
 x 3
 y 16
+no_pass 1
 end
 arch pstone_2
 x 3
@@ -723,25 +724,25 @@ y 19
 end
 arch button_small
 name 7
+x 3
+y 20
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 3
-y 20
 end
 arch gateTrg1
 name 10
+x 3
+y 21
 resist_magic 30
 resist_electricity 30
 connected 10
-x 3
-y 21
 end
 arch lightningwall_1
-speed 1.000000
 x 3
 y 22
+speed 1.000000
 end
 arch blocked
 x 3
@@ -750,35 +751,35 @@ end
 arch button_small
 name 12
 face button_sma.112
+x 3
+y 24
 resist_fire 30
 resist_electricity 30
 value 1
 connected 12
-x 3
-y 24
 end
 arch creator
 name 11
 other_arch scroll
 hp 10000
+x 3
+y 24
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-x 3
-y 24
 end
 arch teleporter
 name 6
 hp 3
 sp 20
+x 3
+y 24
 speed 0.000000
 resist_magic 30
 resist_fire 30
 connected 6
 is_floor 1
-x 3
-y 24
 end
 arch scroll
 x 3
@@ -912,27 +913,27 @@ x 4
 y 14
 end
 arch bench_2_2_3
-no_pass 1
 x 4
 y 14
+no_pass 1
 end
 arch pstone_2
 x 4
 y 15
 end
 arch bench_2_1_1
-no_pass 1
 x 4
 y 15
+no_pass 1
 end
 arch pstone_2
 x 4
 y 16
 end
 arch bench_2_2_4
-no_pass 1
 x 4
 y 16
+no_pass 1
 end
 arch pstone_2
 x 4
@@ -953,33 +954,33 @@ end
 arch detector
 name 10
 slaying lightning
+x 4
+y 20
 resist_magic 30
 resist_electricity 30
 connected 10
-x 4
-y 20
 end
 arch igate_closed_1
 name 9
+x 4
+y 21
 speed 0.500000
 resist_physical 30
 resist_electricity 30
 connected 9
-x 4
-y 21
 end
 arch igate_closed_1
 name 8
+x 4
+y 22
 speed 0.500000
 resist_electricity 30
 connected 8
-x 4
-y 22
 end
 arch lightningwall_1
-speed 1.000000
 x 4
 y 23
+speed 1.000000
 end
 arch blocked
 x 4
@@ -1059,10 +1060,10 @@ To enter the terraces of the arena,
 drop 50 platinum on the desk or buy
 a ticket.
 endmsg
-friendly 1
-unaggressive 0
 x 5
 y 7
+friendly 1
+unaggressive 0
 end
 arch dungeon_magic
 x 5
@@ -1080,10 +1081,10 @@ arch altar_trigger
 name 1
 slaying platinacoin
 food 20
-resist_physical 30
-connected 1
 x 5
 y 9
+resist_physical 30
+connected 1
 end
 arch pstone_2
 x 5
@@ -1091,10 +1092,10 @@ y 9
 end
 arch table
 name pay 20 platinum
-material 0
-no_pick 1
 x 5
 y 9
+material 0
+no_pick 1
 end
 arch pstone_2
 x 5
@@ -1128,13 +1129,13 @@ Here is your ARENA ticket. Now you
 can enter the terraces of the arena
 whenever you want.
 endmsg
+x 5
+y 15
 resist_physical 30
 resist_fire 30
 connected 5
 walk_on 0
 fly_on 0
-x 5
-y 15
 end
 arch pstone_2
 x 5
@@ -1144,11 +1145,11 @@ arch altar_trigger
 name ARENA ticket (100 diamonds)
 slaying diamond
 food 100
+x 5
+y 15
 resist_physical 30
 resist_fire 30
 connected 5
-x 5
-y 15
 end
 arch pstone_2
 x 5
@@ -1541,10 +1542,10 @@ y 4
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 8
 y 4
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 8
@@ -1560,10 +1561,10 @@ y 7
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 8
 y 7
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 8
@@ -1677,10 +1678,10 @@ y 1
 end
 arch pedestal
 name 8
-resist_electricity 30
-connected 8
 x 9
 y 2
+resist_electricity 30
+connected 8
 end
 arch pstone_2
 x 9
@@ -1691,12 +1692,12 @@ name player #1
 slaying arena
 hp 12
 sp 41
+x 9
+y 2
 speed 0.000000
 resist_magic 30
 resist_electricity 30
 connected 10
-x 9
-y 2
 end
 arch dungeon_magic
 x 9
@@ -1707,13 +1708,13 @@ x 9
 y 3
 end
 arch grate_closed_1
+x 9
+y 3
 speed 0.500000
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 9
-y 3
 end
 arch pstone_2
 x 9
@@ -2004,6 +2005,8 @@ sp 0
 maxsp 0
 wc 0
 ac -30
+x 11
+y 2
 attack_movement 0
 resist_physical 100
 resist_magic 100
@@ -2029,20 +2032,17 @@ resist_godpower 100
 resist_holyword 100
 resist_blind 100
 randomitems none
-pick_up 0
 will_apply 0
-can_apply 0
 monster 0
+pick_up 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-x 11
-y 2
+can_apply 0
 end
 arch dungeon_magic
 x 11
@@ -2052,11 +2052,11 @@ arch altar_trigger
 name 6
 slaying platinacoin
 food 100
+x 11
+y 3
 resist_magic 30
 resist_fire 30
 connected 6
-x 11
-y 3
 end
 arch pstone_2
 x 11
@@ -2064,10 +2064,10 @@ y 3
 end
 arch table_3
 name pay 100 platinum
-material 0
-no_pick 1
 x 11
 y 3
+material 0
+no_pick 1
 end
 arch pstone_2
 x 11
@@ -2084,7 +2084,7 @@ end
 arch sign
 msg
 All payments are final. No refunds.
- -=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-
 Items placed up for betting are
 forfeit if one or both players quit
 the arena before a final decision
@@ -2092,10 +2092,10 @@ the arena before a final decision
 to defray the cost of refunding
 the spectator fees.
 endmsg
-walk_on 1
-fly_on 1
 x 11
 y 6
+walk_on 1
+fly_on 1
 end
 arch pstone_2
 x 11
@@ -2106,13 +2106,13 @@ x 11
 y 8
 end
 arch spikes_closed
+x 11
+y 8
 speed 0.500000
 resist_fire 30
 resist_electricity 30
 value 1
 connected 12
-x 11
-y 8
 end
 arch pstone_2
 x 11
@@ -2374,11 +2374,11 @@ y 1
 end
 arch pedestal
 name 9
+x 13
+y 2
 resist_physical 30
 resist_electricity 30
 connected 9
-x 13
-y 2
 end
 arch pstone_2
 x 13
@@ -2389,12 +2389,12 @@ name player #2
 slaying arena
 hp 22
 sp 41
+x 13
+y 2
 speed 0.000000
 resist_magic 30
 resist_electricity 30
 connected 10
-x 13
-y 2
 end
 arch dungeon_magic
 x 13
@@ -2405,13 +2405,13 @@ x 13
 y 3
 end
 arch grate_closed_1
+x 13
+y 3
 speed 0.500000
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 13
-y 3
 end
 arch pstone_2
 x 13
@@ -2487,10 +2487,10 @@ Man those souvenirs are SO cool.
 If I had any money left I would buy
 that sword...
 endmsg
-friendly 1
-unaggressive 0
 x 13
 y 17
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 13
@@ -2580,10 +2580,10 @@ y 4
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 14
 y 4
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 14
@@ -2599,10 +2599,10 @@ y 7
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 14
 y 7
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 14
@@ -2962,10 +2962,10 @@ y 13
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 16
 y 13
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 16
@@ -2985,10 +2985,10 @@ y 17
 end
 arch knight
 name Arena Guard
-friendly 1
-unaggressive 0
 x 16
 y 17
+friendly 1
+unaggressive 0
 end
 arch pstone_2
 x 16
@@ -3013,10 +3013,10 @@ I'm doomed to stand here just because
 the map-maker thought that books can't
 exist without a sage gambling around.
 endmsg
-friendly 1
-unaggressive 0
 x 16
 y 19
+friendly 1
+unaggressive 0
 end
 arch dungeon_magic
 x 16
@@ -3124,10 +3124,10 @@ To enter the terraces of the arena,
 drop 50 platinum on the desk or buy
 a ticket.
 endmsg
-friendly 1
-unaggressive 0
 x 17
 y 7
+friendly 1
+unaggressive 0
 end
 arch dungeon_magic
 x 17
@@ -3145,11 +3145,11 @@ arch altar_trigger
 name 3
 slaying platinacoin
 food 20
+x 17
+y 9
 resist_physical 30
 resist_magic 30
 connected 3
-x 17
-y 9
 end
 arch pstone_2
 x 17
@@ -3157,10 +3157,10 @@ y 9
 end
 arch table
 name pay 20 platinum
-material 0
-no_pick 1
 x 17
 y 9
+material 0
+no_pick 1
 end
 arch pstone_2
 x 17
@@ -3190,12 +3190,12 @@ arch altar
 name 37
 slaying platinacoin
 food 150
+x 17
+y 15
 resist_physical 30
 resist_fire 30
 resist_confusion 30
 connected 37
-x 17
-y 15
 end
 arch pstone_2
 x 17
@@ -3203,14 +3203,14 @@ y 15
 end
 arch table_2
 name complete set - only 150 plat
-type 0
 dam 0
+x 17
+y 15
+type 0
 material 0
 value 0
 last_sp 0
 no_pick 1
-x 17
-y 15
 end
 arch pstone_2
 x 17
@@ -3244,10 +3244,10 @@ automatically be ignored. That means
 by running into your opponent you will
 hit instead of just pushing him.
 endmsg
-material 0
-no_pick 1
 x 17
 y 19
+material 0
+no_pick 1
 end
 arch dungeon_magic
 x 17
@@ -3446,10 +3446,10 @@ draining attacks don't take effect and
 acid doesn't harm equipment.
 So there is NOTHING to be afraid of ;-)
 endmsg
-material 0
-no_pick 1
 x 18
 y 19
+material 0
+no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -3471,10 +3471,10 @@ defeated foe - the trophy for his
 heroic victory.
 But he will definitely NOT gain his exp!
 endmsg
-material 0
-no_pick 1
 x 18
 y 20
+material 0
+no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -3493,10 +3493,10 @@ death penalties. Two players and
 1000 platinum are needed to enter.
 (go to the registration office north)
 endmsg
-material 0
-no_pick 1
 x 18
 y 21
+material 0
+no_pick 1
 end
 arch pstone_2
 x 18
@@ -3546,11 +3546,11 @@ y 4
 end
 arch pedestal
 name 3
+x 19
+y 5
 resist_physical 30
 resist_magic 30
 connected 3
-x 19
-y 5
 end
 arch pstone_2
 x 19
@@ -3561,20 +3561,20 @@ x 19
 y 6
 end
 arch grate_closed_1
+x 19
+y 6
 speed 0.500000
 resist_fire 30
 connected 4
-x 19
-y 6
 end
 arch check_inv
 name 3
 slaying battle_arena123
+x 19
+y 7
 resist_physical 30
 resist_magic 30
 connected 3
-x 19
-y 7
 end
 arch pstone_2
 x 19
@@ -3608,11 +3608,11 @@ arch altar
 name 34
 slaying platinacoin
 food 50
+x 19
+y 13
 resist_magic 30
 resist_confusion 30
 connected 34
-x 19
-y 13
 end
 arch pstone_2
 x 19
@@ -3620,14 +3620,14 @@ y 13
 end
 arch table_2
 name sword - 50 plat
-type 0
 dam 0
+x 19
+y 13
+type 0
 material 0
 value 0
 last_sp 0
 no_pick 1
-x 19
-y 13
 end
 arch pstone_2
 x 19
@@ -3637,12 +3637,12 @@ arch altar
 name 35
 slaying platinacoin
 food 100
+x 19
+y 15
 resist_physical 30
 resist_magic 30
 resist_confusion 30
 connected 35
-x 19
-y 15
 end
 arch pstone_2
 x 19
@@ -3650,14 +3650,14 @@ y 15
 end
 arch table_2
 name shirt - 100 plat
-type 0
 dam 0
+x 19
+y 15
+type 0
 material 0
 value 0
 last_sp 0
 no_pick 1
-x 19
-y 15
 end
 arch pstone_2
 x 19
@@ -3667,11 +3667,11 @@ arch altar
 name 36
 slaying platinacoin
 food 50
+x 19
+y 17
 resist_fire 30
 resist_confusion 30
 connected 36
-x 19
-y 17
 end
 arch pstone_2
 x 19
@@ -3679,14 +3679,14 @@ y 17
 end
 arch table_2
 name shield - 50 plat
-type 0
 dam 0
+x 19
+y 17
+type 0
 material 0
 value 0
 last_sp 0
 no_pick 1
-x 19
-y 17
 end
 arch pstone_2
 x 19
@@ -3768,11 +3768,11 @@ y 4
 end
 arch pedestal
 name 3
+x 20
+y 5
 resist_physical 30
 resist_magic 30
 connected 3
-x 20
-y 5
 end
 arch pstone_2
 x 20
@@ -3783,20 +3783,20 @@ x 20
 y 6
 end
 arch grate_closed_1
+x 20
+y 6
 speed 0.500000
 resist_fire 30
 connected 4
-x 20
-y 6
 end
 arch check_inv
 name 3
 slaying battle_arena123
+x 20
+y 7
 resist_physical 30
 resist_magic 30
 connected 3
-x 20
-y 7
 end
 arch pstone_2
 x 20
@@ -3835,6 +3835,8 @@ x 20
 y 13
 end
 arch grate_closed_2
+x 20
+y 13
 speed 0.500000
 resist_physical 30
 resist_magic 30
@@ -3842,8 +3844,6 @@ resist_fire 30
 resist_electricity 30
 resist_cold 30
 connected 31
-x 20
-y 13
 end
 arch dungeon_magic
 x 20
@@ -3866,11 +3866,11 @@ x 20
 y 15
 end
 arch grate_closed_2
+x 20
+y 15
 speed 0.500000
 resist_confusion 30
 connected 32
-x 20
-y 15
 end
 arch dungeon_magic
 x 20
@@ -3893,12 +3893,12 @@ x 20
 y 17
 end
 arch grate_closed_2
+x 20
+y 17
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
-x 20
-y 17
 end
 arch pstone_2
 x 20
@@ -3964,11 +3964,11 @@ y 4
 end
 arch pedestal
 name 3
+x 21
+y 5
 resist_physical 30
 resist_magic 30
 connected 3
-x 21
-y 5
 end
 arch pstone_2
 x 21
@@ -3979,20 +3979,20 @@ x 21
 y 6
 end
 arch grate_closed_1
+x 21
+y 6
 speed 0.500000
 resist_fire 30
 connected 4
-x 21
-y 6
 end
 arch check_inv
 name 3
 slaying battle_arena123
+x 21
+y 7
 resist_physical 30
 resist_magic 30
 connected 3
-x 21
-y 7
 end
 arch pstone_2
 x 21
@@ -4049,10 +4049,10 @@ y 15
 end
 arch tunic
 name shirt "I LOVE the ARENA"
-weight 100
-last_sp 10
 x 21
 y 15
+weight 100
+last_sp 10
 end
 arch dungeon_magic
 x 21
@@ -4089,6 +4089,8 @@ y 19
 end
 arch button_small
 name 31
+x 21
+y 20
 resist_physical 30
 resist_magic 30
 resist_fire 30
@@ -4096,83 +4098,81 @@ resist_electricity 30
 resist_cold 30
 weight 1000
 connected 31
-x 21
-y 20
 end
 arch creator
 name 34
 other_arch small_shield
+x 21
+y 20
 resist_magic 30
 resist_confusion 30
 connected 34
-x 21
-y 20
 end
 arch creator
 name 37
 other_arch small_shield
+x 21
+y 20
 resist_physical 30
 resist_fire 30
 resist_confusion 30
 connected 37
-x 21
-y 20
 end
 arch button_small
 name 32
+x 21
+y 21
 resist_confusion 30
 weight 1000
 connected 32
-x 21
-y 21
 end
 arch creator
 name 35
 other_arch small_shield
+x 21
+y 21
 resist_physical 30
 resist_magic 30
 resist_confusion 30
 connected 35
-x 21
-y 21
 end
 arch creator
 name 37
 other_arch small_shield
+x 21
+y 21
 resist_physical 30
 resist_fire 30
 resist_confusion 30
 connected 37
-x 21
-y 21
 end
 arch button_small
 name 33
+x 21
+y 22
 resist_physical 30
 resist_confusion 30
 weight 1000
 connected 33
-x 21
-y 22
 end
 arch creator
 name 36
 other_arch small_shield
+x 21
+y 22
 resist_fire 30
 resist_confusion 30
 connected 36
-x 21
-y 22
 end
 arch creator
 name 37
 other_arch small_shield
+x 21
+y 22
 resist_physical 30
 resist_fire 30
 resist_confusion 30
 connected 37
-x 21
-y 22
 end
 arch blocked
 x 21

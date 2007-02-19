@@ -1,16 +1,17 @@
 arch map
+name House of Healing
+difficulty 1
 region scorn
-name HouseofHealing
+shopitems potion:40;wand:40
+shopgreed 2.0
+shopmax 2000
+width 21
+height 36
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr  2 11:36:53 1999
 endmsg
-x 21
-y 36
-shopitems potion:40;wand:40
-shopmax 2000
-shopgreed 2
 end
 arch woodfloor
 end
@@ -1487,7 +1488,7 @@ arch woodfloor
 x 6
 y 9
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 9
 end
@@ -1519,7 +1520,7 @@ arch woodfloor
 x 6
 y 13
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 13
 end
@@ -1551,7 +1552,7 @@ arch woodfloor
 x 6
 y 17
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 17
 end
@@ -1689,7 +1690,7 @@ arch woodfloor
 x 7
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 7
 y 5
 end
@@ -1854,7 +1855,7 @@ arch woodfloor
 x 7
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 7
 y 21
 end
@@ -1969,7 +1970,7 @@ arch woodfloor
 x 8
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 8
 y 5
 end
@@ -2045,7 +2046,7 @@ arch woodfloor
 x 8
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 8
 y 21
 end
@@ -2405,7 +2406,7 @@ away.
 There are also claims of herbal,
 alchemical, animal, or other magical
 cures for disease, but these belong in
-another treatise. 
+another treatise.
 endmsg
 x 9
 y 25
@@ -2418,7 +2419,7 @@ arch tome
 name On the Healing of Wounds
 msg
 Many spells are effective for speeding
-the recovery of a wounded person. 
+the recovery of a wounded person.
 Some potions are also efficacious.  In
 increasing order of effectiveness:
 minor healing
@@ -3135,7 +3136,7 @@ arch woodfloor
 x 12
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 12
 y 5
 end
@@ -3219,7 +3220,7 @@ arch woodfloor
 x 12
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 12
 y 21
 end
@@ -3359,7 +3360,7 @@ arch woodfloor
 x 13
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 13
 y 5
 end
@@ -3536,7 +3537,7 @@ arch woodfloor
 x 13
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 13
 y 21
 end
@@ -3679,7 +3680,7 @@ arch woodfloor
 x 14
 y 9
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 9
 end
@@ -3711,7 +3712,7 @@ arch woodfloor
 x 14
 y 13
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 13
 end
@@ -3743,7 +3744,7 @@ arch woodfloor
 x 14
 y 17
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 17
 end

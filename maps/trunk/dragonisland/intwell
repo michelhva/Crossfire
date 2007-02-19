@@ -1,14 +1,15 @@
 arch map
+name Well of Intelligence
+difficulty 1
 region stoneville
-name intwell
+width 30
+height 30
+enter_y 21
 msg
 Creator: Viola Krings
 Email: 
 Date: Tue Jun 17 21:21:45 METDST 1997
 endmsg
-sp 21
-x 30
-y 30
 end
 arch dirtfloor
 end

@@ -1,12 +1,13 @@
 arch map
-region portjoseph
 name Portia's House
+region portjoseph
+width 32
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Thu May 26 19:22:10 1994
 endmsg
-x 32
 end
 arch exit
 slaying /world/world_101_114

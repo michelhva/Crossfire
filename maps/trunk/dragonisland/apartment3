@@ -1,5 +1,9 @@
 arch map
+name House by the Well
+difficulty 1
 region stoneville
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -715,7 +719,7 @@ x 6
 end
 arch oakdoor
 slaying /world/world_103_127
-hp 0
+hp 1
 sp 23
 x 6
 end
@@ -829,7 +833,7 @@ x 7
 end
 arch oakdoor
 slaying /world/world_103_127
-hp 0
+hp 1
 sp 23
 x 7
 end

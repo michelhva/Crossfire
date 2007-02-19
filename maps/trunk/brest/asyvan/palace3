@@ -1,13 +1,13 @@
 arch map
-region brest
 name palace3
+region brest
+width 13
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Sep 20 12:58:37 1994
 endmsg
-x 13
-y 13
 end
 arch dungeon_magic
 x 2
@@ -750,11 +750,11 @@ endmsg
 x 6
 y 5
 end
-arch afloor_left
+arch dungeon_magic
 x 6
 y 6
 end
-arch dungeon_magic
+arch afloor_left
 x 6
 y 6
 end

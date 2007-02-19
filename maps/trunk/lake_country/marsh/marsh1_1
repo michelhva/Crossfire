@@ -1,8 +1,8 @@
 arch map
-region lakecountry
-name marsh_maze1
+name Marsh Maze
 reset_timeout 7200
 difficulty 8
+region lakecountry
 width 20
 height 20
 enter_x 1
@@ -336,9 +336,9 @@ end
 arch note
 msg
 Be w.re of .t. bo. t.at swa..ows
-people! 
+people!
 <In some fresh hand writing:>
-On the other hand you brave	
+On the other hand you brave
 adventurers might want ask to be
 swallowed by the bogs.
 <In another set of fresh hand writing:>
@@ -894,9 +894,9 @@ y 17
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
+The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
@@ -1128,15 +1128,6 @@ end
 arch swamp
 x 9
 y 15
-end
-arch giant
-name lonely hill giant
-x 9
-y 15
-carrying 250
-arch gem
-nrof 5
-end
 end
 arch swamp
 x 9
@@ -1660,14 +1651,6 @@ end
 arch swamp
 x 14
 y 13
-end
-arch baslic
-x 14
-y 13
-carrying 750
-arch gem
-nrof 15
-end
 end
 arch swamp
 x 14
@@ -2029,9 +2012,9 @@ y 1
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
+The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
@@ -2219,4 +2202,21 @@ end
 arch biglake_se
 x 19
 y 19
+end
+arch giant
+name lonely hill giant
+x 9
+y 15
+carrying 250
+arch gem
+nrof 5
+end
+end
+arch baslic
+x 14
+y 13
+carrying 750
+arch gem
+nrof 15
+end
 end

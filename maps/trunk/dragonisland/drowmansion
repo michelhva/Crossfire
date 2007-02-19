@@ -1,13 +1,15 @@
 arch map
+name Dark Elf House
+difficulty 1
 region stoneville
-name drowmansion
+width 16
+height 16
+enter_y 8
 msg
 Creator: Viola Krings
 Email: gnu@foo.bar
 Date: Wed Jun 18 15:32:20 METDST 1997
 endmsg
-hp 0
-sp 8
 end
 arch dirtfloor
 end

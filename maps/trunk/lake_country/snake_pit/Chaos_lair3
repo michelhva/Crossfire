@@ -1,13 +1,15 @@
 arch map
+name Chaos Lair
+difficulty 1
 region lakecountry
-name Chaos_lair3
+darkness 5
+width 16
+height 41
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Tue Jun  6 14:45:11 1995
 endmsg
-y 41
-invisible 5
 end
 arch large_stones
 end
@@ -26,8 +28,6 @@ arch cave23
 y 2
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch small_stones
@@ -193,13 +193,9 @@ arch cave23
 y 31
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch blocked
-msg
-endmsg
 y 33
 end
 arch large_stones
@@ -248,8 +244,6 @@ x 1
 y 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
@@ -293,11 +287,10 @@ y 7
 speed 0.800000
 speed_left -4.700000
 level 60
-immune 4421
-protected 9
 material 64
 carrying 5100
 flying 1
+immune 9
 arch pyro_book
 value 1600
 randomitems none
@@ -597,18 +590,18 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-   It's said to be from the spirit of an
-   efreet. It burns with red hot fury.
+It's said to be from the spirit of an
+efreet. It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
 dam 5
 x 1
 y 17
-protected 4
 attacktype 5
 path_attuned 2
 path_denied 4
+protected 4
 end
 arch small_stones
 x 1
@@ -666,11 +659,10 @@ y 23
 speed 0.600000
 speed_left -11.099999
 level 40
-immune 4357
-protected 9
 material 64
 carrying 5000
 flying 1
+immune 9
 arch pyro_book
 value 1600
 randomitems none
@@ -719,14 +711,10 @@ x 1
 y 31
 end
 arch blocked
-msg
-endmsg
 x 1
 y 32
 end
 arch blocked
-msg
-endmsg
 x 1
 y 33
 end
@@ -1042,26 +1030,18 @@ x 2
 y 31
 end
 arch blocked
-msg
-endmsg
 x 2
 y 32
 end
 arch blocked
-msg
-endmsg
 x 2
 y 33
 end
 arch blocked
-msg
-endmsg
 x 2
 y 34
 end
 arch blocked
-msg
-endmsg
 x 2
 y 35
 end
@@ -1253,8 +1233,6 @@ x 3
 y 18
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
@@ -1312,20 +1290,14 @@ x 3
 y 29
 end
 arch blocked
-msg
-endmsg
 x 3
 y 30
 end
 arch blocked
-msg
-endmsg
 x 3
 y 31
 end
 arch blocked
-msg
-endmsg
 x 3
 y 32
 end
@@ -1401,14 +1373,10 @@ x 4
 y 3
 end
 arch blocked
-msg
-endmsg
 x 4
 y 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 5
 end
@@ -1449,8 +1417,6 @@ x 4
 y 10
 end
 arch blocked
-msg
-endmsg
 x 4
 y 11
 end
@@ -1857,7 +1823,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -1941,8 +1907,8 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
+You sense the Chaos Lord is very near.
+Passing last battle make you feel very
 lucky. But how long will your luck last?
 endmsg
 x 6
@@ -2116,7 +2082,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -2208,8 +2174,8 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
+You sense the Chaos Lord is very near.
+Passing last battle make you feel very
 lucky. But how long will your luck last?
 endmsg
 x 7
@@ -2418,7 +2384,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -2502,8 +2468,8 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
+You sense the Chaos Lord is very near.
+Passing last battle make you feel very
 lucky. But how long will your luck last?
 endmsg
 x 8
@@ -2677,7 +2643,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -2769,8 +2735,8 @@ attacktype 1
 end
 arch magic_mouth
 msg
-  You sense the Chaos Lord is very near.
-  Passing last battle make you feel very
+You sense the Chaos Lord is very near.
+Passing last battle make you feel very
 lucky. But how long will your luck last?
 endmsg
 x 9
@@ -2970,7 +2936,7 @@ y 35
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -3248,7 +3214,7 @@ y 34
 end
 arch magic_mouth
 msg
-  You feel the vibrating and burning
+You feel the vibrating and burning
 air. Though you have experience thousands
 of battles, this feeling makes you
 suffocate in your own adrenaline.
@@ -3324,20 +3290,14 @@ x 11
 y 3
 end
 arch blocked
-msg
-endmsg
 x 11
 y 4
 end
 arch blocked
-msg
-endmsg
 x 11
 y 5
 end
 arch blocked
-msg
-endmsg
 x 11
 y 6
 end
@@ -3390,38 +3350,26 @@ x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 y 13
 end
 arch blocked
-msg
-endmsg
 x 11
 y 14
 end
 arch blocked
-msg
-endmsg
 x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 11
 y 16
 end
 arch blocked
-msg
-endmsg
 x 11
 y 17
 end
 arch blocked
-msg
-endmsg
 x 11
 y 18
 end
@@ -3575,86 +3523,58 @@ x 12
 y 2
 end
 arch blocked
-msg
-endmsg
 x 12
 y 3
 end
 arch blocked
-msg
-endmsg
 x 12
 y 4
 end
 arch blocked
-msg
-endmsg
 x 12
 y 5
 end
 arch blocked
-msg
-endmsg
 x 12
 y 6
 end
 arch blocked
-msg
-endmsg
 x 12
 y 7
 end
 arch blocked
-msg
-endmsg
 x 12
 y 8
 end
 arch blocked
-msg
-endmsg
 x 12
 y 9
 end
 arch blocked
-msg
-endmsg
 x 12
 y 10
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
 arch blocked
-msg
-endmsg
 x 12
 y 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 13
 end
 arch blocked
-msg
-endmsg
 x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 y 16
 end
@@ -3702,11 +3622,10 @@ y 20
 speed 0.600000
 speed_left -11.099999
 level 40
-immune 4357
-protected 9
 material 64
 carrying 5000
 flying 1
+immune 9
 arch pyro_book
 value 1600
 randomitems none
@@ -3775,8 +3694,6 @@ x 12
 y 31
 end
 arch blocked
-msg
-endmsg
 x 12
 y 32
 end
@@ -3853,62 +3770,42 @@ x 13
 y 3
 end
 arch blocked
-msg
-endmsg
 x 13
 y 4
 end
 arch blocked
-msg
-endmsg
 x 13
 y 5
 end
 arch blocked
-msg
-endmsg
 x 13
 y 6
 end
 arch blocked
-msg
-endmsg
 x 13
 y 7
 end
 arch blocked
-msg
-endmsg
 x 13
 y 8
 end
 arch blocked
-msg
-endmsg
 x 13
 y 9
 end
 arch blocked
-msg
-endmsg
 x 13
 y 10
 end
 arch blocked
-msg
-endmsg
 x 13
 y 11
 end
 arch blocked
-msg
-endmsg
 x 13
 y 12
 end
 arch blocked
-msg
-endmsg
 x 13
 y 16
 end
@@ -4006,26 +3903,18 @@ x 13
 y 31
 end
 arch blocked
-msg
-endmsg
 x 13
 y 32
 end
 arch blocked
-msg
-endmsg
 x 13
 y 33
 end
 arch blocked
-msg
-endmsg
 x 13
 y 34
 end
 arch blocked
-msg
-endmsg
 x 13
 y 35
 end
@@ -4077,32 +3966,22 @@ x 14
 y 3
 end
 arch blocked
-msg
-endmsg
 x 14
 y 4
 end
 arch blocked
-msg
-endmsg
 x 14
 y 5
 end
 arch blocked
-msg
-endmsg
 x 14
 y 6
 end
 arch blocked
-msg
-endmsg
 x 14
 y 7
 end
 arch blocked
-msg
-endmsg
 x 14
 y 8
 end
@@ -4123,14 +4002,10 @@ y 10
 connected 2
 end
 arch blocked
-msg
-endmsg
 x 14
 y 11
 end
 arch blocked
-msg
-endmsg
 x 14
 y 12
 end
@@ -4146,20 +4021,14 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 14
 y 17
 end
 arch blocked
-msg
-endmsg
 x 14
 y 18
 end
@@ -4236,14 +4105,10 @@ x 14
 y 31
 end
 arch blocked
-msg
-endmsg
 x 14
 y 32
 end
 arch blocked
-msg
-endmsg
 x 14
 y 33
 end
@@ -4310,38 +4175,26 @@ x 15
 y 2
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
 arch blocked
-msg
-endmsg
 x 15
 y 4
 end
 arch blocked
-msg
-endmsg
 x 15
 y 5
 end
 arch blocked
-msg
-endmsg
 x 15
 y 6
 end
 arch blocked
-msg
-endmsg
 x 15
 y 7
 end
 arch blocked
-msg
-endmsg
 x 15
 y 8
 end
@@ -4353,32 +4206,22 @@ x 15
 y 10
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 y 17
 end
 arch blocked
-msg
-endmsg
 x 15
 y 18
 end
@@ -4479,14 +4322,10 @@ x 15
 y 31
 end
 arch blocked
-msg
-endmsg
 x 15
 y 32
 end
 arch blocked
-msg
-endmsg
 x 15
 y 33
 end

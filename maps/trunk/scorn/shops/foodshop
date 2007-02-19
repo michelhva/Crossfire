@@ -1,7 +1,10 @@
 arch map
-name foodshop
+name Food Shop Warehouse
 difficulty 2
 region scorn
+shopitems food:95;*:-100
+shopmax 2000
+shoprace dwarf
 width 16
 height 16
 enter_x 14
@@ -10,9 +13,6 @@ Creator: MikeeUSA
 Email: 
 Date: Fri Oct 15 13:50:25 1993
 endmsg
-shopitems food:95;*:-100
-shopmax 2000
-shoprace dwarf
 end
 arch shop_empty
 end

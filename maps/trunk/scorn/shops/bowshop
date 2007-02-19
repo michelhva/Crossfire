@@ -1,18 +1,21 @@
 arch map
+name Scorn's Best Bows
+fixed_resettime 1
+difficulty 1
 region scorn
-name Scorn's best bows
+shopitems bow:80;arrow:80;weapon:15;*:-80
+shopmax 2000
+shoprace faerie
+width 16
+height 16
+enter_x 14
+enter_y 14
 msg
 Creator: Tero Haatanen
 Email: Tero.Haatanen@tel.vtt.fi
 Date: Fri Oct 15 13:53:40 1993
 All comments are welcome!
 endmsg
-hp 14
-sp 14
-stand_still 1
-shopitems bow:80;arrow:80;weapon:15;*:-80
-shopmax 2000
-shoprace faerie
 end
 arch shop_empty
 end
@@ -1269,7 +1272,7 @@ someone offers free beer!
 @match yes
 OK! Remember what you promised!
 @match ^no$
-I guessed it, you try rob me! GUARDS! 
+I guessed it, you try rob me! GUARDS!
 Guard shouts:
 "Where is that thief?"
 @match promise|open
@@ -1291,7 +1294,7 @@ are selling to me.
 @match shop|help
 This shop is specialized to missile
 weapons such as bows and crossbows.
-I have two rooms of them. The first 
+I have two rooms of them. The first
 room contains miscellaneous items that
 other adventurers have sold to me.
 @match *

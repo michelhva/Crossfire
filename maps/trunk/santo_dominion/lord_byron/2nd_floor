@@ -1,9 +1,11 @@
 arch map
+name Lord Byron's Castle
+difficulty 1
 region santodominion
-hp 6
-sp 9
-x 20
-y 19
+width 20
+height 19
+enter_x 6
+enter_y 9
 end
 arch woodfloor
 end

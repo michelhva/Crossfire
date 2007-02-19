@@ -1,18 +1,18 @@
 arch map
+name Nosferatu - Specialist
+fixed_resettime 1
+difficulty 10
 region santodominion
-name nosferatu
+shopitems amulet:40;ring:40;potion:40;book:40;scroll:40;spellbook:40;skillscroll:30;wand:40;*:-50
+width 20
+height 21
+enter_x 1
+enter_y 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 12 22:40:17 1994
 endmsg
-hp 1
-sp 15
-difficulty 10
-x 20
-y 21
-stand_still 1
-shopitems amulet:40;ring:40;potion:40;book:40;scroll:40;spellbook:40;skillscroll:30;wand:40;*:-50
 end
 arch flagstone
 end

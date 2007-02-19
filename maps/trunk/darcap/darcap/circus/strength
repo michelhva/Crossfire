@@ -1,12 +1,14 @@
 arch map
+name Show of Strength
+difficulty 1
 region darcapcircus
-name strength
+width 20
+height 16
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Thu Jan 28 17:49:34 1999
 endmsg
-x 20
 end
 arch pstone_1
 end
@@ -466,9 +468,9 @@ face neko.111
 x 4
 y 3
 weight 150000
-pick_up 1
 no_pick 0
 no_pass 0
+pick_up 1
 end
 arch pstone_1
 x 4

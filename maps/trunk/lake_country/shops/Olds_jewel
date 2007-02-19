@@ -1,17 +1,17 @@
 arch map
+name Oldie Moldie's jewelery
+difficulty 25
 region lakecountry
-name Olds_jewel
 shopitems gem:100;*:-30
 shopmin 50
 shopmax 100000
+width 21
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 23 04:21:14 1995
 endmsg
-x 21
-y 21
-difficulty 25
 end
 arch shop_empty
 end
@@ -129,8 +129,6 @@ arch marble
 y 19
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch marble
@@ -276,9 +274,9 @@ end
 arch sign
 msg
 Crown of Magi(magic+2, Int+2)
-  Your quested items are ten potions
+Your quested items are ten potions
 of intelligence.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown..
 endmsg
 x 1
@@ -329,8 +327,6 @@ x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
@@ -479,9 +475,9 @@ end
 arch sign
 msg
 Crown of Lordliness(Cha+2, Int+1, Wis+2)
-  The quested items are sixteen beholder
+The quested items are sixteen beholder
 eyes.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown..
 endmsg
 x 2
@@ -533,8 +529,6 @@ x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
@@ -672,12 +666,12 @@ end
 arch sign
 msg
 Crown of Might(Con+1, Str+1, Dex+1)
-  Your quested items are three Glowing
+Your quested items are three Glowing
 Crystals from the GemTunnel.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown..
 ***Special***
-  Put one crystal on each of the three
+Put one crystal on each of the three
 altars up there. Oldie Moldie has bad
 memory, so bring all three together
 endmsg
@@ -730,8 +724,6 @@ x 3
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
@@ -846,8 +838,6 @@ x 4
 y 19
 end
 arch blocked
-msg
-endmsg
 x 4
 y 19
 end
@@ -956,8 +946,6 @@ x 5
 y 17
 end
 arch blocked
-msg
-endmsg
 x 5
 y 17
 end
@@ -966,8 +954,6 @@ x 5
 y 18
 end
 arch blocked
-msg
-endmsg
 x 5
 y 18
 end
@@ -976,8 +962,6 @@ x 5
 y 19
 end
 arch blocked
-msg
-endmsg
 x 5
 y 19
 end
@@ -1094,8 +1078,6 @@ x 6
 y 17
 end
 arch blocked
-msg
-endmsg
 x 6
 y 17
 end
@@ -1198,8 +1180,6 @@ x 7
 y 17
 end
 arch blocked
-msg
-endmsg
 x 7
 y 17
 end
@@ -1306,8 +1286,6 @@ x 8
 y 17
 end
 arch blocked
-msg
-endmsg
 x 8
 y 17
 end
@@ -1429,8 +1407,6 @@ x 9
 y 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 17
 end
@@ -1547,8 +1523,6 @@ x 10
 y 17
 end
 arch blocked
-msg
-endmsg
 x 10
 y 17
 end
@@ -1557,8 +1531,6 @@ x 10
 y 18
 end
 arch blocked
-msg
-endmsg
 x 10
 y 18
 end
@@ -1567,8 +1539,6 @@ x 10
 y 19
 end
 arch blocked
-msg
-endmsg
 x 10
 y 19
 end
@@ -1683,8 +1653,6 @@ x 11
 y 19
 end
 arch blocked
-msg
-endmsg
 x 11
 y 19
 end
@@ -1827,9 +1795,9 @@ msg
 Crown of Fire (Protected: fire,
 Attuned: fire, Repelled:
 cold)
-  Your quested items are three dragon
+Your quested items are three dragon
 scales.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown..
 endmsg
 x 12
@@ -1852,11 +1820,11 @@ arch crown
 name Crown of Fire
 x 12
 y 17
-protected 4
 path_attuned 2
 path_repelled 4
 value 20000
 identified 1
+protected 4
 end
 arch block_door_closed
 name trophy stand
@@ -1881,8 +1849,6 @@ x 12
 y 19
 end
 arch blocked
-msg
-endmsg
 x 12
 y 19
 end
@@ -2025,9 +1991,9 @@ msg
 Crown of Ice (Protected: cold,
 Attuned: cold, Repelled:
 fire)
-  Your quested item is the heart of
+Your quested item is the heart of
 Takuse, the fiery dragon.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown.
 endmsg
 x 13
@@ -2050,11 +2016,11 @@ arch crown
 name Crown of Ice
 x 13
 y 17
-protected 16
 path_attuned 4
 path_repelled 2
 value 24000
 identified 1
+protected 16
 end
 arch block_door_closed
 name trophy stand
@@ -2079,8 +2045,6 @@ x 13
 y 19
 end
 arch blocked
-msg
-endmsg
 x 13
 y 19
 end
@@ -2222,9 +2186,9 @@ arch sign
 msg
 Crown the Elements(Protected: fire,
 cold, electricity, Attuned: electricity)
-  Your quested item is the Winterblade
+Your quested item is the Winterblade
 owned by the Ice dragon highlord.
-  Drop your quested items and you may
+Drop your quested items and you may
 take the crown.
 endmsg
 x 14
@@ -2247,10 +2211,10 @@ arch crown
 name Crown of the Elements
 x 14
 y 17
-protected 28
 path_attuned 8
 value 50000
 identified 1
+protected 28
 end
 arch block_door_closed
 name trophy stand
@@ -2275,8 +2239,6 @@ x 14
 y 19
 end
 arch blocked
-msg
-endmsg
 x 14
 y 19
 end
@@ -2439,8 +2401,6 @@ x 15
 y 19
 end
 arch blocked
-msg
-endmsg
 x 15
 y 19
 end
@@ -2449,97 +2409,65 @@ x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
 arch blocked
-msg
-endmsg
 x 16
 y 2
 end
 arch blocked
-msg
-endmsg
 x 16
 y 3
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
 arch blocked
-msg
-endmsg
 x 16
 y 6
 end
 arch blocked
-msg
-endmsg
 x 16
 y 7
 end
 arch blocked
-msg
-endmsg
 x 16
 y 8
 end
 arch blocked
-msg
-endmsg
 x 16
 y 9
 end
 arch blocked
-msg
-endmsg
 x 16
 y 10
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
 arch blocked
-msg
-endmsg
 x 16
 y 12
 end
 arch blocked
-msg
-endmsg
 x 16
 y 13
 end
 arch blocked
-msg
-endmsg
 x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
@@ -2548,8 +2476,6 @@ x 16
 y 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 16
 end
@@ -2558,8 +2484,6 @@ x 16
 y 17
 end
 arch blocked
-msg
-endmsg
 x 16
 y 17
 end
@@ -2568,8 +2492,6 @@ x 16
 y 18
 end
 arch blocked
-msg
-endmsg
 x 16
 y 18
 end
@@ -2578,8 +2500,6 @@ x 16
 y 19
 end
 arch blocked
-msg
-endmsg
 x 16
 y 19
 end

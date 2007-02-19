@@ -1,13 +1,14 @@
 arch map
+name Butakis' Elite Training Tower
+difficulty 1
 region lakecountry
-name tower2
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Apr  3 17:39:07 1995
 endmsg
-x 25
-y 25
 end
 arch dungeon_floor
 end
@@ -4361,7 +4362,7 @@ Also there are places where walls
 seemingly solid can be passed. There is
 a treasure room within and you need
 three keys to access the treasure.
-  Say the word 'start' to reveal the
+Say the word 'start' to reveal the
 surprise. Say the word, 'open' or 'out'
 to come back out.
 Good Luck

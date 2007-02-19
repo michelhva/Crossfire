@@ -1,22 +1,18 @@
 arch map
-region lakecountry
 name snakepit_5
+region lakecountry
+darkness 4
+width 40
+height 20
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Wed Apr 26 07:31:30 1995
 endmsg
-x 40
-y 20
-invisible 4
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch medium_stones
@@ -25,8 +21,14 @@ end
 arch cave18
 y 2
 end
+arch large_stones
+y 3
+end
 arch cave3
 y 3
+end
+arch large_stones
+y 4
 end
 arch cave3
 y 4
@@ -35,63 +37,84 @@ arch cave23
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch cave24
 y 10
 end
+arch large_stones
+y 11
+end
 arch cave3
 y 11
+end
+arch large_stones
+y 12
 end
 arch cave3
 y 12
 end
+arch large_stones
+y 13
+end
 arch cave3
 y 13
+end
+arch large_stones
+y 14
 end
 arch cave3
 y 14
 end
+arch large_stones
+y 15
+end
 arch cave3
 y 15
+end
+arch large_stones
+y 16
 end
 arch cave3
 y 16
 end
-arch cave3
+arch large_stones
 y 17
 end
 arch cave3
+y 17
+end
+arch large_stones
 y 18
+end
+arch cave3
+y 18
+end
+arch large_stones
+y 19
 end
 arch cave17
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch cave18
 x 1
 y 1
+end
+arch large_stones
+x 1
+y 2
 end
 arch cave13
 x 1
@@ -118,14 +141,10 @@ x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -172,6 +191,10 @@ end
 arch large_stones
 x 1
 y 18
+end
+arch large_stones
+x 1
+y 19
 end
 arch cave2
 x 1
@@ -204,13 +227,15 @@ arch large_stones
 x 2
 y 5
 end
+arch large_stones
+x 2
+y 6
+end
 arch cave2
 x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
@@ -244,7 +269,7 @@ y 13
 end
 arch magic_mouth
 msg
- It's rather quiet down there
+It's rather quiet down there
 endmsg
 x 2
 y 14
@@ -262,7 +287,7 @@ y 14
 end
 arch magic_mouth
 msg
-  It's rather quiet down there
+It's rather quiet down there
 endmsg
 x 2
 y 15
@@ -280,7 +305,7 @@ y 15
 end
 arch magic_mouth
 msg
-  It's rather quiet down there
+It's rather quiet down there
 endmsg
 x 2
 y 16
@@ -304,9 +329,16 @@ arch large_stones
 x 2
 y 18
 end
+arch large_stones
+x 2
+y 19
+end
 arch cave2
 x 2
 y 19
+end
+arch large_stones
+x 3
 end
 arch cave4
 x 3
@@ -330,6 +362,10 @@ end
 arch large_stones
 x 3
 y 5
+end
+arch large_stones
+x 3
+y 6
 end
 arch cave2
 x 3
@@ -387,9 +423,16 @@ arch large_stones
 x 3
 y 18
 end
+arch large_stones
+x 3
+y 19
+end
 arch cave2
 x 3
 y 19
+end
+arch large_stones
+x 4
 end
 arch cave4
 x 4
@@ -414,9 +457,17 @@ arch large_stones
 x 4
 y 5
 end
+arch large_stones
+x 4
+y 6
+end
 arch cave2
 x 4
 y 6
+end
+arch large_stones
+x 4
+y 7
 end
 arch cave4
 x 4
@@ -470,10 +521,17 @@ arch large_stones
 x 4
 y 18
 end
+arch large_stones
+x 4
+y 19
+end
 arch cave2
 x 4
 y 19
 end
+arch large_stones
+x 5
+end
 arch cave4
 x 5
 end
@@ -497,9 +555,17 @@ arch large_stones
 x 5
 y 5
 end
+arch large_stones
+x 5
+y 6
+end
 arch cave2
 x 5
 y 6
+end
+arch large_stones
+x 5
+y 7
 end
 arch cave4
 x 5
@@ -549,10 +615,17 @@ arch large_stones
 x 5
 y 18
 end
+arch large_stones
+x 5
+y 19
+end
 arch cave2
 x 5
 y 19
 end
+arch large_stones
+x 6
+end
 arch cave4
 x 6
 end
@@ -576,9 +649,17 @@ arch large_stones
 x 6
 y 5
 end
+arch large_stones
+x 6
+y 6
+end
 arch cave2
 x 6
 y 6
+end
+arch large_stones
+x 6
+y 7
 end
 arch cave4
 x 6
@@ -628,9 +709,16 @@ arch large_stones
 x 6
 y 18
 end
+arch large_stones
+x 6
+y 19
+end
 arch cave2
 x 6
 y 19
+end
+arch large_stones
+x 7
 end
 arch cave4
 x 7
@@ -655,9 +743,17 @@ arch large_stones
 x 7
 y 5
 end
+arch large_stones
+x 7
+y 6
+end
 arch cave2
 x 7
 y 6
+end
+arch large_stones
+x 7
+y 7
 end
 arch cave4
 x 7
@@ -707,9 +803,16 @@ arch large_stones
 x 7
 y 18
 end
+arch large_stones
+x 7
+y 19
+end
 arch cave2
 x 7
 y 19
+end
+arch large_stones
+x 8
 end
 arch cave4
 x 8
@@ -738,9 +841,17 @@ arch large_stones
 x 8
 y 5
 end
+arch large_stones
+x 8
+y 6
+end
 arch cave2
 x 8
 y 6
+end
+arch large_stones
+x 8
+y 7
 end
 arch cave4
 x 8
@@ -790,9 +901,16 @@ arch large_stones
 x 8
 y 18
 end
+arch large_stones
+x 8
+y 19
+end
 arch cave2
 x 8
 y 19
+end
+arch large_stones
+x 9
 end
 arch cave4
 x 9
@@ -817,9 +935,17 @@ arch large_stones
 x 9
 y 5
 end
+arch large_stones
+x 9
+y 6
+end
 arch cave2
 x 9
 y 6
+end
+arch large_stones
+x 9
+y 7
 end
 arch cave4
 x 9
@@ -869,9 +995,16 @@ arch large_stones
 x 9
 y 18
 end
+arch large_stones
+x 9
+y 19
+end
 arch cave2
 x 9
 y 19
+end
+arch large_stones
+x 10
 end
 arch cave4
 x 10
@@ -904,6 +1037,10 @@ arch cave20
 x 10
 y 6
 end
+arch large_stones
+x 10
+y 7
+end
 arch cave4
 x 10
 y 7
@@ -952,9 +1089,16 @@ arch large_stones
 x 10
 y 18
 end
+arch large_stones
+x 10
+y 19
+end
 arch cave2
 x 10
 y 19
+end
+arch large_stones
+x 11
 end
 arch cave4
 x 11
@@ -974,6 +1118,10 @@ end
 arch cave11
 x 11
 y 3
+end
+arch large_stones
+x 11
+y 4
 end
 arch cave1
 x 11
@@ -1015,6 +1163,10 @@ arch light4
 x 11
 y 11
 end
+arch large_stones
+x 11
+y 12
+end
 arch cave21
 x 11
 y 12
@@ -1022,6 +1174,10 @@ end
 arch large_stones
 x 11
 y 13
+end
+arch large_stones
+x 11
+y 14
 end
 arch cave21
 x 11
@@ -1043,13 +1199,24 @@ arch large_stones
 x 11
 y 17
 end
+arch large_stones
+x 11
+y 18
+end
 arch cave21
 x 11
 y 18
 end
+arch large_stones
+x 11
+y 19
+end
 arch cave2
 x 11
 y 19
+end
+arch large_stones
+x 12
 end
 arch cave4
 x 12
@@ -1070,9 +1237,17 @@ arch cave12
 x 12
 y 3
 end
+arch large_stones
+x 12
+y 4
+end
 arch cave3
 x 12
 y 4
+end
+arch large_stones
+x 12
+y 5
 end
 arch cave3
 x 12
@@ -1134,10 +1309,17 @@ arch large_stones
 x 12
 y 18
 end
+arch large_stones
+x 12
+y 19
+end
 arch cave2
 x 12
 y 19
 end
+arch large_stones
+x 13
+end
 arch cave4
 x 13
 end
@@ -1213,10 +1395,17 @@ arch large_stones
 x 13
 y 18
 end
+arch large_stones
+x 13
+y 19
+end
 arch cave2
 x 13
 y 19
 end
+arch large_stones
+x 14
+end
 arch cave4
 x 14
 end
@@ -1292,9 +1481,16 @@ arch large_stones
 x 14
 y 18
 end
+arch large_stones
+x 14
+y 19
+end
 arch cave2
 x 14
 y 19
+end
+arch large_stones
+x 15
 end
 arch cave4
 x 15
@@ -1371,9 +1567,16 @@ arch large_stones
 x 15
 y 18
 end
+arch large_stones
+x 15
+y 19
+end
 arch cave2
 x 15
 y 19
+end
+arch large_stones
+x 16
 end
 arch cave4
 x 16
@@ -1426,6 +1629,10 @@ arch large_stones
 x 16
 y 11
 end
+arch large_stones
+x 16
+y 12
+end
 arch cave21
 x 16
 y 12
@@ -1454,9 +1661,16 @@ arch large_stones
 x 16
 y 18
 end
+arch large_stones
+x 16
+y 19
+end
 arch cave2
 x 16
 y 19
+end
+arch large_stones
+x 17
 end
 arch cave4
 x 17
@@ -1485,6 +1699,10 @@ arch large_stones
 x 17
 y 6
 end
+arch large_stones
+x 17
+y 7
+end
 arch cave21
 x 17
 y 7
@@ -1501,6 +1719,10 @@ arch large_stones
 x 17
 y 10
 end
+arch large_stones
+x 17
+y 11
+end
 arch cave21
 x 17
 y 11
@@ -1508,6 +1730,10 @@ end
 arch large_stones
 x 17
 y 12
+end
+arch large_stones
+x 17
+y 13
 end
 arch cave21
 x 17
@@ -1537,9 +1763,16 @@ arch large_stones
 x 17
 y 18
 end
+arch large_stones
+x 17
+y 19
+end
 arch cave2
 x 17
 y 19
+end
+arch large_stones
+x 18
 end
 arch cave4
 x 18
@@ -1587,6 +1820,10 @@ end
 arch large_stones
 x 18
 y 11
+end
+arch large_stones
+x 18
+y 12
 end
 arch cave21
 x 18
@@ -1616,10 +1853,17 @@ arch large_stones
 x 18
 y 18
 end
+arch large_stones
+x 18
+y 19
+end
 arch cave2
 x 18
 y 19
 end
+arch large_stones
+x 19
+end
 arch cave4
 x 19
 end
@@ -1695,10 +1939,17 @@ arch large_stones
 x 19
 y 18
 end
+arch large_stones
+x 19
+y 19
+end
 arch cave2
 x 19
 y 19
 end
+arch large_stones
+x 20
+end
 arch cave4
 x 20
 end
@@ -1774,9 +2025,16 @@ arch large_stones
 x 20
 y 18
 end
+arch large_stones
+x 20
+y 19
+end
 arch cave2
 x 20
 y 19
+end
+arch large_stones
+x 21
 end
 arch cave4
 x 21
@@ -1853,9 +2111,16 @@ arch large_stones
 x 21
 y 18
 end
+arch large_stones
+x 21
+y 19
+end
 arch cave2
 x 21
 y 19
+end
+arch large_stones
+x 22
 end
 arch cave4
 x 22
@@ -1936,9 +2201,16 @@ arch large_stones
 x 22
 y 18
 end
+arch large_stones
+x 22
+y 19
+end
 arch cave2
 x 22
 y 19
+end
+arch large_stones
+x 23
 end
 arch cave4
 x 23
@@ -1971,21 +2243,41 @@ arch cave11
 x 23
 y 6
 end
-arch cave1
+arch large_stones
 x 23
 y 7
 end
 arch cave1
 x 23
+y 7
+end
+arch large_stones
+x 23
 y 8
 end
 arch cave1
+x 23
+y 8
+end
+arch large_stones
 x 23
 y 9
 end
 arch cave1
 x 23
+y 9
+end
+arch large_stones
+x 23
 y 10
+end
+arch cave1
+x 23
+y 10
+end
+arch large_stones
+x 23
+y 11
 end
 arch cave1
 x 23
@@ -2023,9 +2315,16 @@ arch large_stones
 x 23
 y 18
 end
+arch large_stones
+x 23
+y 19
+end
 arch cave2
 x 23
 y 19
+end
+arch large_stones
+x 24
 end
 arch cave4
 x 24
@@ -2067,8 +2366,6 @@ x 24
 y 8
 end
 arch blocked
-msg
-endmsg
 x 24
 y 8
 end
@@ -2077,8 +2374,6 @@ x 24
 y 9
 end
 arch blocked
-msg
-endmsg
 x 24
 y 9
 end
@@ -2087,8 +2382,6 @@ x 24
 y 10
 end
 arch blocked
-msg
-endmsg
 x 24
 y 10
 end
@@ -2097,8 +2390,6 @@ x 24
 y 11
 end
 arch blocked
-msg
-endmsg
 x 24
 y 11
 end
@@ -2138,9 +2429,16 @@ arch large_stones
 x 24
 y 18
 end
+arch large_stones
+x 24
+y 19
+end
 arch cave2
 x 24
 y 19
+end
+arch large_stones
+x 25
 end
 arch cave4
 x 25
@@ -2182,8 +2480,6 @@ x 25
 y 8
 end
 arch blocked
-msg
-endmsg
 x 25
 y 8
 end
@@ -2192,8 +2488,6 @@ x 25
 y 9
 end
 arch blocked
-msg
-endmsg
 x 25
 y 9
 end
@@ -2202,8 +2496,6 @@ x 25
 y 10
 end
 arch blocked
-msg
-endmsg
 x 25
 y 10
 end
@@ -2212,8 +2504,6 @@ x 25
 y 11
 end
 arch blocked
-msg
-endmsg
 x 25
 y 11
 end
@@ -2222,8 +2512,6 @@ x 25
 y 12
 end
 arch blocked
-msg
-endmsg
 x 25
 y 12
 end
@@ -2255,9 +2543,16 @@ arch large_stones
 x 25
 y 18
 end
+arch large_stones
+x 25
+y 19
+end
 arch cave2
 x 25
 y 19
+end
+arch large_stones
+x 26
 end
 arch cave4
 x 26
@@ -2294,13 +2589,25 @@ arch cave12
 x 26
 y 6
 end
-arch cave3
+arch large_stones
 x 26
 y 7
 end
 arch cave3
 x 26
+y 7
+end
+arch large_stones
+x 26
 y 8
+end
+arch cave3
+x 26
+y 8
+end
+arch large_stones
+x 26
+y 9
 end
 arch cave3
 x 26
@@ -2315,8 +2622,6 @@ x 26
 y 11
 end
 arch blocked
-msg
-endmsg
 x 26
 y 11
 end
@@ -2325,8 +2630,6 @@ x 26
 y 12
 end
 arch blocked
-msg
-endmsg
 x 26
 y 12
 end
@@ -2335,10 +2638,12 @@ x 26
 y 13
 end
 arch blocked
-msg
-endmsg
 x 26
 y 13
+end
+arch large_stones
+x 26
+y 14
 end
 arch cave4
 x 26
@@ -2360,9 +2665,16 @@ arch large_stones
 x 26
 y 18
 end
+arch large_stones
+x 26
+y 19
+end
 arch cave2
 x 26
 y 19
+end
+arch large_stones
+x 27
 end
 arch cave4
 x 27
@@ -2420,8 +2732,6 @@ x 27
 y 12
 end
 arch blocked
-msg
-endmsg
 x 27
 y 12
 end
@@ -2430,10 +2740,12 @@ x 27
 y 13
 end
 arch blocked
-msg
-endmsg
 x 27
 y 13
+end
+arch large_stones
+x 27
+y 14
 end
 arch cave4
 x 27
@@ -2455,9 +2767,16 @@ arch large_stones
 x 27
 y 18
 end
+arch large_stones
+x 27
+y 19
+end
 arch cave2
 x 27
 y 19
+end
+arch large_stones
+x 28
 end
 arch cave4
 x 28
@@ -2519,10 +2838,12 @@ x 28
 y 13
 end
 arch blocked
-msg
-endmsg
 x 28
 y 13
+end
+arch large_stones
+x 28
+y 14
 end
 arch cave4
 x 28
@@ -2544,9 +2865,16 @@ arch large_stones
 x 28
 y 18
 end
+arch large_stones
+x 28
+y 19
+end
 arch cave2
 x 28
 y 19
+end
+arch large_stones
+x 29
 end
 arch cave4
 x 29
@@ -2602,6 +2930,10 @@ end
 arch cave12
 x 29
 y 12
+end
+arch large_stones
+x 29
+y 13
 end
 arch cave3
 x 29
@@ -2631,10 +2963,17 @@ arch large_stones
 x 29
 y 18
 end
+arch large_stones
+x 29
+y 19
+end
 arch cave2
 x 29
 y 19
 end
+arch large_stones
+x 30
+end
 arch cave4
 x 30
 end
@@ -2665,6 +3004,10 @@ end
 arch large_stones
 x 30
 y 7
+end
+arch large_stones
+x 30
+y 8
 end
 arch cave21
 x 30
@@ -2714,9 +3057,16 @@ arch large_stones
 x 30
 y 18
 end
+arch large_stones
+x 30
+y 19
+end
 arch cave2
 x 30
 y 19
+end
+arch large_stones
+x 31
 end
 arch cave4
 x 31
@@ -2797,10 +3147,17 @@ arch large_stones
 x 31
 y 18
 end
+arch large_stones
+x 31
+y 19
+end
 arch cave2
 x 31
 y 19
 end
+arch large_stones
+x 32
+end
 arch cave4
 x 32
 end
@@ -2819,6 +3176,10 @@ end
 arch large_stones
 x 32
 y 4
+end
+arch large_stones
+x 32
+y 5
 end
 arch cave21
 x 32
@@ -2876,10 +3237,17 @@ arch large_stones
 x 32
 y 18
 end
+arch large_stones
+x 32
+y 19
+end
 arch cave2
 x 32
 y 19
 end
+arch large_stones
+x 33
+end
 arch cave4
 x 33
 end
@@ -2955,9 +3323,16 @@ arch large_stones
 x 33
 y 18
 end
+arch large_stones
+x 33
+y 19
+end
 arch cave2
 x 33
 y 19
+end
+arch large_stones
+x 34
 end
 arch cave4
 x 34
@@ -2985,6 +3360,10 @@ end
 arch large_stones
 x 34
 y 6
+end
+arch large_stones
+x 34
+y 7
 end
 arch cave21
 x 34
@@ -3010,9 +3389,17 @@ arch large_stones
 x 34
 y 12
 end
+arch large_stones
+x 34
+y 13
+end
 arch cave21
 x 34
 y 13
+end
+arch large_stones
+x 34
+y 14
 end
 arch cave21
 x 34
@@ -3034,9 +3421,16 @@ arch large_stones
 x 34
 y 18
 end
+arch large_stones
+x 34
+y 19
+end
 arch cave2
 x 34
 y 19
+end
+arch large_stones
+x 35
 end
 arch cave4
 x 35
@@ -3113,9 +3507,16 @@ arch large_stones
 x 35
 y 18
 end
+arch large_stones
+x 35
+y 19
+end
 arch cave2
 x 35
 y 19
+end
+arch large_stones
+x 36
 end
 arch cave4
 x 36
@@ -3191,6 +3592,10 @@ end
 arch large_stones
 x 36
 y 18
+end
+arch large_stones
+x 36
+y 19
 end
 arch cave2
 x 36
@@ -3288,8 +3693,6 @@ x 37
 y 19
 end
 arch blocked
-msg
-endmsg
 x 38
 end
 arch cave25
@@ -3398,19 +3801,13 @@ x 38
 y 18
 end
 arch blocked
-msg
-endmsg
 x 38
 y 19
 end
 arch blocked
-msg
-endmsg
 x 39
 end
 arch blocked
-msg
-endmsg
 x 39
 y 1
 end
@@ -3418,57 +3815,113 @@ arch cave25
 x 39
 y 2
 end
-arch cave1
+arch large_stones
 x 39
 y 3
 end
 arch cave1
 x 39
+y 3
+end
+arch large_stones
+x 39
 y 4
 end
 arch cave1
+x 39
+y 4
+end
+arch large_stones
 x 39
 y 5
 end
 arch cave1
 x 39
+y 5
+end
+arch large_stones
+x 39
 y 6
 end
 arch cave1
+x 39
+y 6
+end
+arch large_stones
 x 39
 y 7
 end
 arch cave1
 x 39
+y 7
+end
+arch large_stones
+x 39
 y 8
 end
 arch cave1
+x 39
+y 8
+end
+arch large_stones
 x 39
 y 9
 end
 arch cave1
 x 39
+y 9
+end
+arch large_stones
+x 39
 y 10
 end
 arch cave1
+x 39
+y 10
+end
+arch large_stones
 x 39
 y 11
 end
 arch cave1
 x 39
+y 11
+end
+arch large_stones
+x 39
 y 12
 end
 arch cave1
+x 39
+y 12
+end
+arch large_stones
 x 39
 y 13
 end
 arch cave1
 x 39
+y 13
+end
+arch large_stones
+x 39
 y 14
 end
 arch cave1
 x 39
+y 14
+end
+arch large_stones
+x 39
 y 15
+end
+arch cave1
+x 39
+y 15
+end
+arch large_stones
+x 39
+y 16
 end
 arch cave1
 x 39
@@ -3479,14 +3932,10 @@ x 39
 y 17
 end
 arch blocked
-msg
-endmsg
 x 39
 y 18
 end
 arch blocked
-msg
-endmsg
 x 39
 y 19
 end
@@ -3505,11 +3954,10 @@ y 3
 speed 0.800000
 speed_left -1.840000
 level 30
-immune 4117
-protected 8
 attacktype 29
 carrying 25000
 flying 1
+immune 8
 arch abil_icestorm
 end
 arch spell_dragonbreath
@@ -3529,9 +3977,8 @@ exp 10000
 dam 30
 x 4
 y 4
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3542,9 +3989,8 @@ exp 10000
 dam 30
 x 4
 y 12
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3555,9 +4001,8 @@ exp 10000
 dam 30
 x 6
 y 4
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3570,9 +4015,8 @@ x 6
 y 9
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3585,9 +4029,8 @@ x 6
 y 12
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3600,9 +4043,8 @@ x 6
 y 15
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3613,9 +4055,8 @@ exp 10000
 dam 30
 x 7
 y 2
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3628,9 +4069,8 @@ x 7
 y 10
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3643,9 +4083,8 @@ x 7
 y 13
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3658,9 +4097,8 @@ x 7
 y 16
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3671,9 +4109,8 @@ exp 10000
 dam 30
 x 8
 y 1
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3684,9 +4121,8 @@ exp 10000
 dam 30
 x 8
 y 4
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3705,11 +4141,10 @@ y 13
 speed 0.500000
 speed_left -1.840000
 level 30
-immune 4117
-protected 8
 attacktype 29
 carrying 25000
 flying 1
+immune 8
 arch abil_icestorm
 end
 arch spell_dragonbreath
@@ -3731,9 +4166,8 @@ x 15
 y 3
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3746,9 +4180,8 @@ x 16
 y 4
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3761,9 +4194,8 @@ x 17
 y 15
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3778,9 +4210,8 @@ x 18
 y 15
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3793,9 +4224,8 @@ exp 10000
 dam 30
 x 19
 y 9
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3815,9 +4245,8 @@ exp 10000
 dam 30
 x 23
 y 2
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3830,9 +4259,8 @@ x 28
 y 1
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3845,9 +4273,8 @@ x 28
 y 4
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3860,9 +4287,8 @@ x 28
 y 8
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3875,9 +4301,8 @@ x 29
 y 2
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3890,9 +4315,8 @@ x 29
 y 5
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3905,9 +4329,8 @@ x 29
 y 9
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3920,9 +4343,8 @@ x 29
 y 17
 speed 1.000000
 speed_left -28.420000
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 arch spell_paralyze
@@ -3939,9 +4361,8 @@ x 30
 y 17
 speed 1.000000
 speed_left -28.420000
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 arch spell_paralyze
@@ -3956,9 +4377,8 @@ exp 10000
 dam 30
 x 32
 y 1
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3969,9 +4389,8 @@ exp 10000
 dam 30
 x 32
 y 9
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3984,9 +4403,8 @@ x 32
 y 14
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -3997,9 +4415,8 @@ exp 10000
 dam 30
 x 33
 y 4
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4012,9 +4429,8 @@ x 33
 y 15
 speed 0.700000
 speed_left -21.819998
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4025,9 +4441,8 @@ exp 10000
 dam 30
 x 34
 y 2
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4038,9 +4453,8 @@ exp 10000
 dam 30
 x 35
 y 4
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4051,9 +4465,8 @@ exp 10000
 dam 30
 x 35
 y 8
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4064,9 +4477,8 @@ exp 10000
 dam 30
 x 36
 y 6
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4077,9 +4489,8 @@ exp 10000
 dam 30
 x 37
 y 8
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4090,9 +4501,8 @@ exp 10000
 dam 30
 x 37
 y 10
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end
@@ -4103,9 +4513,8 @@ exp 10000
 dam 30
 x 38
 y 10
-immune 1024
-protected 12
 attacktype 82945
+immune 12
 arch abil_poison_cloud
 end
 end

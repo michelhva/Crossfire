@@ -1,14 +1,14 @@
 arch map
-name shrine0_east
+name Evil Shrine
+difficulty 5
+darkness 5
+width 33
+height 25
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Tue Jan  3 03:40:13 1995
 endmsg
-width 33
-height 25
-difficulty 5
-darkness 5
 end
 arch blocked
 y 9
@@ -159,14 +159,14 @@ x 3
 y 11
 end
 arch marble
-no_pass 1
 x 3
 y 12
+no_pass 1
 end
 arch marble
-no_pass 1
 x 3
 y 13
+no_pass 1
 end
 arch cobblestones2
 x 3
@@ -613,18 +613,18 @@ x 12
 y 12
 end
 arch door_look_2
-blocksview 1
 x 12
 y 12
+blocksview 1
 end
 arch marble
 x 12
 y 13
 end
 arch door_look_2
-blocksview 1
 x 12
 y 13
+blocksview 1
 end
 arch cobblestones2
 x 12
@@ -1006,12 +1006,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 15
 y 5
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 15
@@ -1023,12 +1021,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 15
 y 6
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 15
@@ -1109,12 +1105,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 15
 y 18
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 15
@@ -1126,12 +1120,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 15
 y 19
+speed -0.180000
+armour 0
 end
 arch magic_mouth
 msg
@@ -1210,12 +1202,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 16
 y 5
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 16
@@ -1227,12 +1217,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 16
 y 6
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 16
@@ -1312,12 +1300,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 16
 y 18
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 16
@@ -1329,12 +1315,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 16
 y 19
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 16
@@ -1588,12 +1572,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 18
 y 12
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 18
@@ -1605,12 +1587,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 18
 y 13
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 18
@@ -1761,12 +1741,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 19
 y 12
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 19
@@ -1778,12 +1756,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 19
 y 13
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 19
@@ -2141,12 +2117,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 21
 y 12
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 21
@@ -2158,12 +2132,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 21
 y 13
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 21
@@ -2318,12 +2290,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 22
 y 12
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 22
@@ -2335,12 +2305,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 22
 y 13
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 22
@@ -2574,12 +2542,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 24
 y 6
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 24
@@ -2591,12 +2557,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 24
 y 7
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 24
@@ -2668,12 +2632,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 24
 y 17
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 24
@@ -2685,12 +2647,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 24
 y 18
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 24
@@ -2765,12 +2725,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 25
 y 6
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 25
@@ -2782,12 +2740,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 25
 y 7
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 25
@@ -2859,12 +2815,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 25
 y 17
+speed -0.180000
+armour 0
 end
 arch flagstone
 x 25
@@ -2876,12 +2830,10 @@ Con 10
 hp 500
 exp 1200
 ac 0
-armour 30
-speed -0.180000
-immune 262208
-vulnerable 0
 x 25
 y 18
+speed -0.180000
+armour 0
 end
 arch magic_mouth
 msg
@@ -3202,10 +3154,10 @@ arch lich
 name Ygolonac the Arch Lich
 hp 4000
 exp 50000
-speed 0.350000
-level 21
 x 27
 y 18
+speed 0.350000
+level 21
 arch spell_summon_pet_monster
 end
 arch spell_create_pool_of_chaos
@@ -3648,10 +3600,10 @@ x 31
 y 18
 end
 arch chest_2
-carrying 200
-no_pick 1
 x 31
 y 18
+carrying 200
+no_pick 1
 arch key2
 slaying sdoor1
 end

@@ -1,14 +1,15 @@
 arch map
+name Treasure Cave
+difficulty 1
 region portjoseph
-name treasure cave
+darkness 5
+width 11
+height 9
 msg
 Creator: larry langley
 Email: langley@fermat.dartmouth.edu
 Date: Sat Jun 11 15:30:02 1994
 endmsg
-x 11
-y 9
-invisible 5
 end
 arch blocked
 end

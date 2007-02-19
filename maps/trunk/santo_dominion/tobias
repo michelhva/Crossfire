@@ -1,14 +1,15 @@
 arch map
+name Tobias Tower
+difficulty 1
 region santodominion
-name tobias
-msg
-Creator: Andreas Vogl
-Mail: red.blaze@gmx.net
-endmsg
 width 35
 height 23
 enter_x 5
 enter_y 21
+msg
+Creator: Andreas Vogl
+Mail: red.blaze@gmx.net
+endmsg
 end
 arch blocked
 end
@@ -137,10 +138,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 1
@@ -148,18 +149,18 @@ y 4
 end
 arch torch_1
 food 0
+x 1
+y 4
 material 0
 no_pick 1
 changing 0
-x 1
-y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 1
@@ -167,10 +168,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 1
@@ -178,11 +179,11 @@ y 6
 end
 arch torch_1
 food 0
+x 1
+y 6
 material 0
 no_pick 1
 changing 0
-x 1
-y 6
 end
 arch woodfloor
 x 1
@@ -246,10 +247,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 1
@@ -257,10 +258,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 1
@@ -268,10 +269,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 1
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 1
@@ -322,10 +323,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 2
@@ -339,21 +340,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 2
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 2
 y 3
 end
-arch woodfloor
-x 2
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 2
@@ -361,21 +362,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 2
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 2
 y 5
 end
-arch woodfloor
-x 2
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 2
@@ -383,10 +384,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 2
@@ -394,10 +395,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 2
@@ -443,10 +444,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 14
+connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -461,21 +462,21 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
+x 2
+y 15
 connected 1
+protected 1
+end
+arch flagstone
 x 2
 y 15
 end
-arch flagstone
-x 2
-y 15
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -483,21 +484,21 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
+x 2
+y 17
 connected 1
+protected 1
+end
+arch flagstone
 x 2
 y 17
 end
-arch flagstone
-x 2
-y 17
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -505,10 +506,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -516,10 +517,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 2
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -560,21 +561,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 3
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 3
 y 2
 end
-arch woodfloor
-x 3
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -582,21 +583,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 3
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 3
 y 4
 end
-arch woodfloor
-x 3
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -604,10 +605,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -615,10 +616,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -626,10 +627,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 3
@@ -673,21 +674,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 3
+y 14
 connected 1
+protected 1
+end
+arch flagstone
 x 3
 y 14
 end
-arch flagstone
-x 3
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 15
+connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -695,21 +696,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 3
+y 16
 connected 1
+protected 1
+end
+arch flagstone
 x 3
 y 16
 end
-arch flagstone
-x 3
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -717,10 +718,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -728,10 +729,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -739,10 +740,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 3
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -772,21 +773,21 @@ x 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 4
 y 1
 end
-arch woodfloor
-x 4
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -794,21 +795,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 4
 y 3
 end
-arch woodfloor
-x 4
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -816,21 +817,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 4
 y 5
 end
-arch woodfloor
-x 4
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -838,10 +839,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -849,10 +850,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -860,10 +861,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -895,21 +896,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 14
 connected 1
+protected 1
+end
+arch flagstone
 x 4
 y 14
 end
-arch flagstone
-x 4
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 15
+connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -917,21 +918,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 16
 connected 1
+protected 1
+end
+arch flagstone
 x 4
 y 16
 end
-arch flagstone
-x 4
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -939,21 +940,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 4
+y 18
 connected 1
+protected 1
+end
+arch flagstone
 x 4
 y 18
 end
-arch flagstone
-x 4
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -961,10 +962,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -972,10 +973,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 4
 y 21
+connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -1000,21 +1001,21 @@ x 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 5
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 5
 y 1
 end
-arch woodfloor
-x 5
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1022,10 +1023,10 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1033,10 +1034,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1051,10 +1052,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1069,21 +1070,21 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 5
+y 6
 connected 1
+protected 1
+end
+arch woodfloor
 x 5
 y 6
 end
-arch woodfloor
-x 5
-y 6
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1091,10 +1092,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1102,10 +1103,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -1160,37 +1161,37 @@ maxhp 200
 sp 0
 maxsp 0
 ac -10
+x 5
+y 13
 level 20
-immune 8388607
 randomitems standard
 monster 0
 unaggressive 0
-x 5
-y 13
+immune 8388607
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 14
+connected 1
+protected 1
 end
 arch flagstone
 x 5
 y 14
 end
 arch table
-material 0
-no_pick 1
 x 5
 y 14
+material 0
+no_pick 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 15
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1198,10 +1199,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1209,10 +1210,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1227,21 +1228,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 5
+y 18
 connected 1
+protected 1
+end
+arch flagstone
 x 5
 y 18
 end
-arch flagstone
-x 5
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1249,10 +1250,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1260,10 +1261,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 5
 y 21
+connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1288,21 +1289,21 @@ x 6
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 6
 y 1
 end
-arch woodfloor
-x 6
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1310,21 +1311,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 6
 y 3
 end
-arch woodfloor
-x 6
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1332,21 +1333,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 6
 y 5
 end
-arch woodfloor
-x 6
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1354,10 +1355,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1365,10 +1366,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1376,10 +1377,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -1411,21 +1412,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 14
 connected 1
+protected 1
+end
+arch flagstone
 x 6
 y 14
 end
-arch flagstone
-x 6
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 15
+connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1433,21 +1434,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 16
 connected 1
+protected 1
+end
+arch flagstone
 x 6
 y 16
 end
-arch flagstone
-x 6
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1455,21 +1456,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 6
+y 18
 connected 1
+protected 1
+end
+arch flagstone
 x 6
 y 18
 end
-arch flagstone
-x 6
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1477,10 +1478,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1488,10 +1489,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 6
 y 21
+connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1521,21 +1522,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 7
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 7
 y 2
 end
-arch woodfloor
-x 7
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1543,21 +1544,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 7
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 7
 y 4
 end
-arch woodfloor
-x 7
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1565,10 +1566,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1576,10 +1577,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1587,10 +1588,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 7
@@ -1634,21 +1635,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 7
+y 14
 connected 1
+protected 1
+end
+arch flagstone
 x 7
 y 14
 end
-arch flagstone
-x 7
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 15
+connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1656,21 +1657,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 7
+y 16
 connected 1
+protected 1
+end
+arch flagstone
 x 7
 y 16
 end
-arch flagstone
-x 7
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1678,10 +1679,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1689,10 +1690,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1700,10 +1701,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 7
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1742,10 +1743,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 8
@@ -1759,21 +1760,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 8
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 8
 y 3
 end
-arch woodfloor
-x 8
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 8
@@ -1781,21 +1782,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 8
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 8
 y 5
 end
-arch woodfloor
-x 8
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 8
@@ -1803,10 +1804,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 8
@@ -1814,10 +1815,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 8
@@ -1863,10 +1864,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 14
+connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1881,21 +1882,21 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
+x 8
+y 15
 connected 1
+protected 1
+end
+arch flagstone
 x 8
 y 15
 end
-arch flagstone
-x 8
-y 15
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1903,21 +1904,21 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
+x 8
+y 17
 connected 1
+protected 1
+end
+arch flagstone
 x 8
 y 17
 end
-arch flagstone
-x 8
-y 17
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1925,10 +1926,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 19
+connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1936,10 +1937,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 8
 y 20
+connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1993,10 +1994,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 9
@@ -2004,18 +2005,18 @@ y 4
 end
 arch torch_1
 food 0
+x 9
+y 4
 material 0
 no_pick 1
 changing 0
-x 9
-y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 9
@@ -2023,10 +2024,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 9
@@ -2034,11 +2035,11 @@ y 6
 end
 arch torch_1
 food 0
+x 9
+y 6
 material 0
 no_pick 1
 changing 0
-x 9
-y 6
 end
 arch woodfloor
 x 9
@@ -2102,10 +2103,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 9
@@ -2113,10 +2114,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 17
+connected 1
+protected 1
 end
 arch flagstone
 x 9
@@ -2124,10 +2125,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 9
 y 18
+connected 1
+protected 1
 end
 arch flagstone
 x 9
@@ -2226,20 +2227,20 @@ y 10
 end
 arch button_small
 name 3
-protected 3
-connected 3
 x 10
 y 11
+connected 3
+protected 3
 end
 arch teleporter
 name 3
 hp 5
 sp 14
-speed 0.000000
-protected 3
-connected 3
 x 10
 y 11
+speed 0.000000
+connected 3
+protected 3
 end
 arch blocked
 x 10
@@ -2462,10 +2463,10 @@ end
 arch pit_open
 hp 10
 sp 11
-protected 1
-connected 1
 x 12
 y 11
+connected 1
+protected 1
 end
 arch blocked
 x 12
@@ -2560,10 +2561,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2571,10 +2572,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2586,10 +2587,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2627,16 +2628,16 @@ arch teleporter
 name 2
 hp 12
 sp 11
-speed 0.000000
-protected 2
-connected 2
 x 13
 y 11
+speed 0.000000
+connected 2
+protected 2
 end
 arch potion_magic
-identified 1
 x 13
 y 11
+identified 1
 end
 arch blocked
 x 13
@@ -2668,10 +2669,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2683,10 +2684,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2694,10 +2695,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 13
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 13
@@ -2752,10 +2753,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2769,10 +2770,10 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2780,10 +2781,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2795,10 +2796,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2810,10 +2811,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2825,10 +2826,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2836,10 +2837,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2889,10 +2890,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2906,21 +2907,21 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
+x 14
+y 15
 connected 1
+protected 1
+end
+arch woodfloor
 x 14
 y 15
 end
-arch woodfloor
-x 14
-y 15
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2928,21 +2929,21 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
+x 14
+y 17
 connected 1
+protected 1
+end
+arch woodfloor
 x 14
 y 17
 end
-arch woodfloor
-x 14
-y 17
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2950,10 +2951,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -2961,10 +2962,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 14
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 14
@@ -3008,21 +3009,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 15
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 15
 y 2
 end
-arch woodfloor
-x 15
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3030,10 +3031,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3041,10 +3042,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3056,10 +3057,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3067,10 +3068,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3078,10 +3079,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3125,10 +3126,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3136,10 +3137,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3147,10 +3148,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3162,10 +3163,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3173,10 +3174,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3188,10 +3189,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3199,10 +3200,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 15
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 15
@@ -3232,21 +3233,21 @@ x 16
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 1
 end
-arch woodfloor
-x 16
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3254,21 +3255,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 3
 end
-arch woodfloor
-x 16
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3276,21 +3277,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 5
 end
-arch woodfloor
-x 16
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3298,10 +3299,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3309,10 +3310,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3320,10 +3321,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3351,10 +3352,10 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 13
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3366,21 +3367,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 14
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 14
 end
-arch woodfloor
-x 16
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3388,21 +3389,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 16
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 16
 end
-arch woodfloor
-x 16
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3410,21 +3411,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 16
+y 18
 connected 1
+protected 1
+end
+arch woodfloor
 x 16
 y 18
 end
-arch woodfloor
-x 16
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3432,10 +3433,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3443,10 +3444,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 16
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 16
@@ -3471,21 +3472,21 @@ x 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 17
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 17
 y 1
 end
-arch woodfloor
-x 17
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3493,10 +3494,10 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3504,10 +3505,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3522,10 +3523,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3540,21 +3541,21 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 17
+y 6
 connected 1
+protected 1
+end
+arch woodfloor
 x 17
 y 6
 end
-arch woodfloor
-x 17
-y 6
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3562,10 +3563,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3573,10 +3574,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3612,21 +3613,21 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
+x 17
+y 13
 connected 1
+protected 1
+end
+arch woodfloor
 x 17
 y 13
 end
-arch woodfloor
-x 17
-y 13
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3634,10 +3635,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3645,10 +3646,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3663,10 +3664,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3681,21 +3682,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 17
+y 18
 connected 1
+protected 1
+end
+arch woodfloor
 x 17
 y 18
 end
-arch woodfloor
-x 17
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3703,10 +3704,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3714,10 +3715,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 17
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 17
@@ -3743,21 +3744,21 @@ x 18
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 1
 end
-arch woodfloor
-x 18
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3765,21 +3766,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 3
 end
-arch woodfloor
-x 18
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3787,21 +3788,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 5
 end
-arch woodfloor
-x 18
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3809,10 +3810,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3820,10 +3821,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3831,10 +3832,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3862,10 +3863,10 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 13
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3877,21 +3878,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 14
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 14
 end
-arch woodfloor
-x 18
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3899,21 +3900,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 16
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 16
 end
-arch woodfloor
-x 18
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3921,21 +3922,21 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
+x 18
+y 18
 connected 1
+protected 1
+end
+arch woodfloor
 x 18
 y 18
 end
-arch woodfloor
-x 18
-y 18
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3943,10 +3944,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3954,10 +3955,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 18
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -3987,21 +3988,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 19
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 19
 y 2
 end
-arch woodfloor
-x 19
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4009,10 +4010,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4020,10 +4021,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4035,10 +4036,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4046,10 +4047,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4057,10 +4058,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4104,10 +4105,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4115,10 +4116,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4126,10 +4127,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4141,10 +4142,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4152,10 +4153,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4167,10 +4168,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4178,10 +4179,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 19
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4220,10 +4221,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4237,10 +4238,10 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4248,10 +4249,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4263,10 +4264,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4278,10 +4279,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4293,10 +4294,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4304,10 +4305,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4357,10 +4358,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4374,21 +4375,21 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
+x 20
+y 15
 connected 1
+protected 1
+end
+arch woodfloor
 x 20
 y 15
 end
-arch woodfloor
-x 20
-y 15
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4396,21 +4397,21 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
+x 20
+y 17
 connected 1
+protected 1
+end
+arch woodfloor
 x 20
 y 17
 end
-arch woodfloor
-x 20
-y 17
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4418,10 +4419,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4429,10 +4430,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 20
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4489,10 +4490,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4500,10 +4501,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4515,10 +4516,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4586,10 +4587,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4601,10 +4602,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4612,10 +4613,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 21
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 21
@@ -4719,10 +4720,10 @@ end
 arch altar
 name 2
 food 1
-protected 2
-connected 2
 x 22
 y 11
+connected 2
+protected 2
 end
 arch blocked
 x 22
@@ -4832,10 +4833,10 @@ x 23
 y 10
 end
 arch spikes_moving
-speed 0.500000
-speed_left -0.860000
 x 23
 y 11
+speed 0.500000
+speed_left -0.860000
 end
 arch food
 x 23
@@ -5057,10 +5058,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5072,10 +5073,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5087,10 +5088,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5135,26 +5136,26 @@ The Tobias says:
 Thank you very much for cleaning my
 tower! Here is your reward.
 endmsg
-protected 4
-connected 4
 x 25
 y 11
+connected 4
+protected 4
 end
 arch button_small
 name 4
-protected 4
-weight 1000
-connected 4
 x 25
 y 11
+weight 1000
+connected 4
+protected 4
 end
 arch creator
 name 3
 other_arch boulder
-protected 3
-connected 3
 x 25
 y 11
+connected 3
+protected 3
 end
 arch blocked
 x 25
@@ -5186,10 +5187,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5201,10 +5202,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5216,10 +5217,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 25
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 25
@@ -5274,10 +5275,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5291,21 +5292,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 26
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 26
 y 3
 end
-arch woodfloor
-x 26
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5313,21 +5314,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 26
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 26
 y 5
 end
-arch woodfloor
-x 26
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5335,10 +5336,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5346,10 +5347,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5399,10 +5400,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5416,10 +5417,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5427,10 +5428,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5438,10 +5439,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5453,10 +5454,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5464,10 +5465,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5475,10 +5476,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 26
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 26
@@ -5522,21 +5523,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 27
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 27
 y 2
 end
-arch woodfloor
-x 27
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5544,21 +5545,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 27
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 27
 y 4
 end
-arch woodfloor
-x 27
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5566,10 +5567,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5577,10 +5578,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5588,10 +5589,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5635,10 +5636,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5646,10 +5647,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5657,10 +5658,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5672,10 +5673,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5683,10 +5684,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5694,10 +5695,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5709,10 +5710,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 27
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 27
@@ -5742,10 +5743,10 @@ x 28
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 1
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5757,21 +5758,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 28
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 28
 y 2
 end
-arch woodfloor
-x 28
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5779,21 +5780,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 28
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 28
 y 4
 end
-arch woodfloor
-x 28
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5801,21 +5802,21 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 28
+y 6
 connected 1
+protected 1
+end
+arch woodfloor
 x 28
 y 6
 end
-arch woodfloor
-x 28
-y 6
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5823,10 +5824,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5834,10 +5835,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5865,10 +5866,10 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 13
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5880,21 +5881,21 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
+x 28
+y 14
 connected 1
+protected 1
+end
+arch woodfloor
 x 28
 y 14
 end
-arch woodfloor
-x 28
-y 14
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5902,21 +5903,21 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
+x 28
+y 16
 connected 1
+protected 1
+end
+arch woodfloor
 x 28
 y 16
 end
-arch woodfloor
-x 28
-y 16
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5924,10 +5925,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5935,10 +5936,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5950,10 +5951,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5965,10 +5966,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 28
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 28
@@ -5997,21 +5998,21 @@ x 29
 end
 arch pedestal
 slaying animal
-protected 1
+x 29
+y 1
 connected 1
+protected 1
+end
+arch woodfloor
 x 29
 y 1
 end
-arch woodfloor
-x 29
-y 1
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6019,10 +6020,10 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6030,10 +6031,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6048,10 +6049,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6066,21 +6067,21 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 29
+y 6
 connected 1
+protected 1
+end
+arch woodfloor
 x 29
 y 6
 end
-arch woodfloor
-x 29
-y 6
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6088,10 +6089,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6099,10 +6100,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6138,10 +6139,10 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 13
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6149,10 +6150,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6164,10 +6165,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6175,10 +6176,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6193,10 +6194,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6211,10 +6212,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6222,10 +6223,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6237,10 +6238,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6252,10 +6253,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 29
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 29
@@ -6285,10 +6286,10 @@ x 30
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 1
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6300,21 +6301,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 30
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 30
 y 2
 end
-arch woodfloor
-x 30
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6322,21 +6323,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 30
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 30
 y 4
 end
-arch woodfloor
-x 30
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6344,21 +6345,21 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
+x 30
+y 6
 connected 1
+protected 1
+end
+arch woodfloor
 x 30
 y 6
 end
-arch woodfloor
-x 30
-y 6
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6366,10 +6367,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6377,10 +6378,10 @@ y 8
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 9
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6408,10 +6409,10 @@ y 12
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 13
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6423,10 +6424,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6434,10 +6435,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6445,10 +6446,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6460,10 +6461,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6471,10 +6472,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6482,10 +6483,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6497,10 +6498,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6512,10 +6513,10 @@ y 20
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 30
 y 21
+connected 1
+protected 1
 end
 arch woodfloor
 x 30
@@ -6549,21 +6550,21 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
+x 31
+y 2
 connected 1
+protected 1
+end
+arch woodfloor
 x 31
 y 2
 end
-arch woodfloor
-x 31
-y 2
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 3
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6571,21 +6572,21 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
+x 31
+y 4
 connected 1
+protected 1
+end
+arch woodfloor
 x 31
 y 4
 end
-arch woodfloor
-x 31
-y 4
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6593,10 +6594,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6604,10 +6605,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6615,10 +6616,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6662,10 +6663,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6673,10 +6674,10 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 15
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6688,10 +6689,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6699,10 +6700,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6710,10 +6711,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6725,10 +6726,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6736,10 +6737,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 31
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 31
@@ -6778,10 +6779,10 @@ y 1
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 2
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6795,21 +6796,21 @@ y 2
 end
 arch pedestal
 slaying animal
-protected 1
+x 32
+y 3
 connected 1
+protected 1
+end
+arch woodfloor
 x 32
 y 3
 end
-arch woodfloor
-x 32
-y 3
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6817,21 +6818,21 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
+x 32
+y 5
 connected 1
+protected 1
+end
+arch woodfloor
 x 32
 y 5
 end
-arch woodfloor
-x 32
-y 5
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6839,10 +6840,10 @@ y 6
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 7
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6850,10 +6851,10 @@ y 7
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 8
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6903,10 +6904,10 @@ y 13
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 14
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6920,21 +6921,21 @@ y 14
 end
 arch pedestal
 slaying animal
-protected 1
+x 32
+y 15
 connected 1
+protected 1
+end
+arch woodfloor
 x 32
 y 15
 end
-arch woodfloor
-x 32
-y 15
-end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6942,10 +6943,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6953,10 +6954,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6968,10 +6969,10 @@ y 18
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 19
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -6979,10 +6980,10 @@ y 19
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 32
 y 20
+connected 1
+protected 1
 end
 arch woodfloor
 x 32
@@ -7039,10 +7040,10 @@ y 3
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 4
+connected 1
+protected 1
 end
 arch woodfloor
 x 33
@@ -7054,10 +7055,10 @@ y 4
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 5
+connected 1
+protected 1
 end
 arch woodfloor
 x 33
@@ -7069,10 +7070,10 @@ y 5
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 6
+connected 1
+protected 1
 end
 arch woodfloor
 x 33
@@ -7144,10 +7145,10 @@ y 15
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 16
+connected 1
+protected 1
 end
 arch woodfloor
 x 33
@@ -7159,10 +7160,10 @@ y 16
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 17
+connected 1
+protected 1
 end
 arch woodfloor
 x 33
@@ -7174,10 +7175,10 @@ y 17
 end
 arch pedestal
 slaying animal
-protected 1
-connected 1
 x 33
 y 18
+connected 1
+protected 1
 end
 arch woodfloor
 x 33

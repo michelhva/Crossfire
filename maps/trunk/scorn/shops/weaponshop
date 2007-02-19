@@ -1,14 +1,18 @@
 arch map
+name Weapon Shop
+fixed_resettime 1
+difficulty 1
 region scorn
+shopitems weapon:80;*:-50
+shopmax 3000
+width 16
+height 16
+enter_y 14
 msg
 Creator: 
 Email: 
 Date: Fri Oct 15 13:53:40 1993
 endmsg
-sp 14
-stand_still 1
-shopitems weapon:80;*:-50
-shopmax 3000   
 end
 arch shop_empty
 end

@@ -1,16 +1,17 @@
 arch map
+name Arena Snack Area
+difficulty 1
 region scornarena
-name snack
+shopitems food:10;*:-100
+shopgreed 1.4
+shopmax 2000
+width 11
+height 11
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Oct 28 16:32:06 2000
 endmsg
-x 11
-y 11
-shopitems food:10;*:-100
-shopgreed 1.4
-shopmax 2000
 end
 arch flagstone
 end

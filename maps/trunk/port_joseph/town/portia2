@@ -1,12 +1,13 @@
 arch map
-region portjoseph
 name Second Floor of Portia's House
+region portjoseph
+width 24
+height 16
 msg
 Creator: langley
 Email: 
 Date: Thu May 26 19:49:27 1994
 endmsg
-x 24
 end
 arch woodfloor
 end
@@ -2034,7 +2035,7 @@ msg
 Hello, stranger, you sure do know
 how to make an entrance!
 @match percival|percy|Percival|Percy
-Ah Percy!  Being stubborn is he? 
+Ah Percy!  Being stubborn is he?
 Well, he and I are old friends.
 Yes, just mention `violet'
 and he'll know who sent you.

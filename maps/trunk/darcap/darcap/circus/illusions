@@ -1,15 +1,16 @@
 arch map
+name Illusions
+difficulty 1
 region darcapcircus
-name <untitled>
+width 49
+height 49
+enter_x 18
+enter_y 11
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Thu Jan 28 17:49:34 1999
 endmsg
-width 49
-height 49
-enter_x 18
-enter_y 11
 end
 arch small_stones
 end
@@ -1085,10 +1086,10 @@ x 4
 y 11
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 4
 y 11
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 4
@@ -1106,10 +1107,10 @@ x 4
 y 12
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 4
 y 12
+no_pass 0
+blocksview 1
 end
 arch pstone_1
 x 4
@@ -2422,9 +2423,9 @@ x 9
 y 6
 end
 arch grate_closed_2
-connected 1
 x 9
 y 6
+connected 1
 end
 arch magic_banned
 x 9
@@ -2442,9 +2443,9 @@ x 9
 y 7
 end
 arch grate_closed_2
-connected 1
 x 9
 y 7
+connected 1
 end
 arch magic_banned
 x 9
@@ -2498,9 +2499,9 @@ x 9
 y 11
 end
 arch grate_closed_2
-connected 2
 x 9
 y 11
+connected 2
 end
 arch magic_banned
 x 9
@@ -2518,9 +2519,9 @@ x 9
 y 12
 end
 arch grate_closed_2
-connected 2
 x 9
 y 12
+connected 2
 end
 arch magic_banned
 x 9
@@ -2574,9 +2575,9 @@ x 9
 y 16
 end
 arch grate_closed_2
-connected 3
 x 9
 y 16
+connected 3
 end
 arch magic_banned
 x 9
@@ -2594,9 +2595,9 @@ x 9
 y 17
 end
 arch grate_closed_2
-connected 3
 x 9
 y 17
+connected 3
 end
 arch magic_banned
 x 9
@@ -2691,23 +2692,23 @@ x 9
 y 31
 end
 arch grate_closed_2
-connected 1
 x 9
 y 31
-end
-arch magic_banned
-x 9
-y 32
-end
-arch pstone_1
-x 9
-y 32
-end
-arch grate_closed_2
 connected 1
+end
+arch magic_banned
 x 9
 y 32
 end
+arch pstone_1
+x 9
+y 32
+end
+arch grate_closed_2
+x 9
+y 32
+connected 1
+end
 arch magic_banned
 x 9
 y 33
@@ -2753,9 +2754,9 @@ x 9
 y 36
 end
 arch grate_closed_2
-connected 2
 x 9
 y 36
+connected 2
 end
 arch magic_banned
 x 9
@@ -2766,9 +2767,9 @@ x 9
 y 37
 end
 arch grate_closed_2
-connected 2
 x 9
 y 37
+connected 2
 end
 arch magic_banned
 x 9
@@ -2815,9 +2816,9 @@ x 9
 y 41
 end
 arch grate_closed_2
-connected 3
 x 9
 y 41
+connected 3
 end
 arch magic_banned
 x 9
@@ -2828,9 +2829,9 @@ x 9
 y 42
 end
 arch grate_closed_2
-connected 3
 x 9
 y 42
+connected 3
 end
 arch magic_banned
 x 9
@@ -2936,9 +2937,9 @@ x 10
 y 8
 end
 arch button_handle
-connected 1
 x 10
 y 8
+connected 1
 end
 arch magic_banned
 x 10
@@ -2989,9 +2990,9 @@ x 10
 y 13
 end
 arch button_handle
+x 10
+y 13
 connected 2
-x 10
-y 13
 end
 arch magic_banned
 x 10
@@ -3042,9 +3043,9 @@ x 10
 y 18
 end
 arch button_handle
-connected 3
 x 10
 y 18
+connected 3
 end
 arch magic_banned
 x 10
@@ -3147,9 +3148,9 @@ x 10
 y 33
 end
 arch button_handle
-connected 1
 x 10
 y 33
+connected 1
 end
 arch magic_banned
 x 10
@@ -3200,9 +3201,9 @@ x 10
 y 38
 end
 arch button_handle
+x 10
+y 38
 connected 2
-x 10
-y 38
 end
 arch magic_banned
 x 10
@@ -3253,9 +3254,9 @@ x 10
 y 43
 end
 arch button_handle
-connected 3
 x 10
 y 43
+connected 3
 end
 arch magic_banned
 x 10
@@ -4795,9 +4796,9 @@ x 15
 y 10
 end
 arch grate_closed_2
-connected 96
 x 15
 y 10
+connected 96
 end
 arch magic_banned
 x 15
@@ -4808,9 +4809,9 @@ x 15
 y 11
 end
 arch grate_closed_2
-connected 96
 x 15
 y 11
+connected 96
 end
 arch magic_banned
 x 15
@@ -4821,9 +4822,9 @@ x 15
 y 12
 end
 arch grate_closed_2
-connected 96
 x 15
 y 12
+connected 96
 end
 arch magic_banned
 x 15
@@ -4834,9 +4835,9 @@ x 15
 y 13
 end
 arch grate_closed_2
-connected 96
 x 15
 y 13
+connected 96
 end
 arch magic_banned
 x 15
@@ -5216,9 +5217,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 10
+connected 96
 end
 arch magic_banned
 x 16
@@ -5231,9 +5232,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 11
+connected 96
 end
 arch magic_banned
 x 16
@@ -5246,9 +5247,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 12
+connected 96
 end
 arch magic_banned
 x 16
@@ -5261,9 +5262,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 13
+connected 96
 end
 arch magic_banned
 x 16
@@ -5432,9 +5433,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 35
+connected 96
 end
 arch magic_banned
 x 16
@@ -5447,9 +5448,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 36
+connected 96
 end
 arch magic_banned
 x 16
@@ -5462,9 +5463,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 37
+connected 96
 end
 arch magic_banned
 x 16
@@ -5477,9 +5478,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 16
 y 38
+connected 96
 end
 arch magic_banned
 x 16
@@ -6459,10 +6460,10 @@ x 19
 y 11
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 19
 y 11
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 19
@@ -6480,10 +6481,10 @@ x 19
 y 12
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 19
 y 12
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 19
@@ -6717,10 +6718,10 @@ x 19
 y 36
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 19
 y 36
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 19
@@ -6742,10 +6743,10 @@ x 19
 y 37
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 19
 y 37
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 19
@@ -10528,23 +10529,23 @@ x 34
 y 6
 end
 arch grate_closed_2
-connected 1
 x 34
 y 6
-end
-arch magic_banned
-x 34
-y 7
-end
-arch pstone_1
-x 34
-y 7
-end
-arch grate_closed_2
 connected 1
+end
+arch magic_banned
 x 34
 y 7
 end
+arch pstone_1
+x 34
+y 7
+end
+arch grate_closed_2
+x 34
+y 7
+connected 1
+end
 arch magic_banned
 x 34
 y 8
@@ -10590,9 +10591,9 @@ x 34
 y 11
 end
 arch grate_closed_2
-connected 2
 x 34
 y 11
+connected 2
 end
 arch magic_banned
 x 34
@@ -10603,9 +10604,9 @@ x 34
 y 12
 end
 arch grate_closed_2
-connected 2
 x 34
 y 12
+connected 2
 end
 arch magic_banned
 x 34
@@ -10652,9 +10653,9 @@ x 34
 y 16
 end
 arch grate_closed_2
-connected 3
 x 34
 y 16
+connected 3
 end
 arch magic_banned
 x 34
@@ -10665,9 +10666,9 @@ x 34
 y 17
 end
 arch grate_closed_2
-connected 3
 x 34
 y 17
+connected 3
 end
 arch magic_banned
 x 34
@@ -10762,23 +10763,23 @@ x 34
 y 31
 end
 arch grate_closed_2
-connected 1
 x 34
 y 31
-end
-arch magic_banned
-x 34
-y 32
-end
-arch pstone_1
-x 34
-y 32
-end
-arch grate_closed_2
 connected 1
+end
+arch magic_banned
 x 34
 y 32
 end
+arch pstone_1
+x 34
+y 32
+end
+arch grate_closed_2
+x 34
+y 32
+connected 1
+end
 arch magic_banned
 x 34
 y 33
@@ -10824,9 +10825,9 @@ x 34
 y 36
 end
 arch grate_closed_2
-connected 2
 x 34
 y 36
+connected 2
 end
 arch magic_banned
 x 34
@@ -10837,9 +10838,9 @@ x 34
 y 37
 end
 arch grate_closed_2
-connected 2
 x 34
 y 37
+connected 2
 end
 arch magic_banned
 x 34
@@ -10886,9 +10887,9 @@ x 34
 y 41
 end
 arch grate_closed_2
-connected 3
 x 34
 y 41
+connected 3
 end
 arch magic_banned
 x 34
@@ -10899,9 +10900,9 @@ x 34
 y 42
 end
 arch grate_closed_2
-connected 3
 x 34
 y 42
+connected 3
 end
 arch magic_banned
 x 34
@@ -11007,9 +11008,9 @@ x 35
 y 8
 end
 arch button_handle
-connected 1
 x 35
 y 8
+connected 1
 end
 arch magic_banned
 x 35
@@ -11060,9 +11061,9 @@ x 35
 y 13
 end
 arch button_handle
+x 35
+y 13
 connected 2
-x 35
-y 13
 end
 arch magic_banned
 x 35
@@ -11113,9 +11114,9 @@ x 35
 y 18
 end
 arch button_handle
-connected 3
 x 35
 y 18
+connected 3
 end
 arch magic_banned
 x 35
@@ -11218,9 +11219,9 @@ x 35
 y 33
 end
 arch button_handle
-connected 1
 x 35
 y 33
+connected 1
 end
 arch magic_banned
 x 35
@@ -11271,9 +11272,9 @@ x 35
 y 38
 end
 arch button_handle
+x 35
+y 38
 connected 2
-x 35
-y 38
 end
 arch magic_banned
 x 35
@@ -11324,9 +11325,9 @@ x 35
 y 43
 end
 arch button_handle
-connected 3
 x 35
 y 43
+connected 3
 end
 arch magic_banned
 x 35
@@ -13283,9 +13284,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 10
+connected 96
 end
 arch magic_banned
 x 41
@@ -13298,9 +13299,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 11
+connected 96
 end
 arch magic_banned
 x 41
@@ -13313,9 +13314,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 12
+connected 96
 end
 arch magic_banned
 x 41
@@ -13328,9 +13329,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 13
+connected 96
 end
 arch magic_banned
 x 41
@@ -13499,9 +13500,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 35
+connected 96
 end
 arch magic_banned
 x 41
@@ -13514,9 +13515,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 36
+connected 96
 end
 arch magic_banned
 x 41
@@ -13529,9 +13530,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 37
+connected 96
 end
 arch magic_banned
 x 41
@@ -13544,9 +13545,9 @@ end
 arch goldfloor
 name drop 20 goldcoins
 food 20
-connected 96
 x 41
 y 38
+connected 96
 end
 arch magic_banned
 x 41
@@ -14530,10 +14531,10 @@ x 44
 y 11
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 44
 y 11
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 44
@@ -14555,10 +14556,10 @@ x 44
 y 12
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 44
 y 12
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 44
@@ -14792,10 +14793,10 @@ x 44
 y 36
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 44
 y 36
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 44
@@ -14817,10 +14818,10 @@ x 44
 y 37
 end
 arch door_look_2
-no_pass 0
-blocksview 1
 x 44
 y 37
+no_pass 0
+blocksview 1
 end
 arch magic_banned
 x 44

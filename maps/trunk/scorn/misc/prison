@@ -1,43 +1,73 @@
 arch map
+name Prison
+difficulty 1
 region scorn
-name prison
+width 44
+height 55
+enter_x 14
+enter_y 53
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 14 23:42:44 1994
 endmsg
-hp 14
-sp 53
-x 44
-y 55
+end
+arch flagstone
 end
 arch bwall_2_2_2
+end
+arch flagstone
+y 1
 end
 arch bwall_2_1_1
 y 1
 end
+arch flagstone
+y 2
+end
 arch bwall_2_1_1
 y 2
+end
+arch flagstone
+y 3
 end
 arch bwall_2_1_1
 y 3
 end
+arch flagstone
+y 4
+end
 arch bwall_2_1_1
 y 4
+end
+arch flagstone
+y 5
 end
 arch bwall_2_1_1
 y 5
 end
+arch flagstone
+y 6
+end
 arch bwall_2_1_1
 y 6
+end
+arch flagstone
+y 7
 end
 arch bwall_2_1_1
 y 7
 end
-arch bwall_2_1_1
+arch flagstone
 y 8
 end
 arch bwall_2_1_1
+y 8
+end
+arch flagstone
+y 9
+end
+arch bwall_1_2
 y 9
 end
 arch flagstone
@@ -52,31 +82,58 @@ end
 arch swall_2_1_1
 y 11
 end
-arch bwall_2_1_1
+arch flagstone
 y 12
+end
+arch bwall_1_1
+y 12
+end
+arch flagstone
+y 13
 end
 arch bwall_2_1_1
 y 13
 end
+arch flagstone
+y 14
+end
 arch bwall_2_1_1
 y 14
+end
+arch flagstone
+y 15
 end
 arch bwall_2_1_1
 y 15
 end
+arch flagstone
+y 16
+end
 arch bwall_2_1_1
 y 16
+end
+arch flagstone
+y 17
 end
 arch bwall_2_1_1
 y 17
 end
+arch flagstone
+y 18
+end
 arch bwall_2_1_1
 y 18
+end
+arch flagstone
+y 19
 end
 arch bwall_2_1_1
 y 19
 end
-arch bwall_2_1_1
+arch flagstone
+y 20
+end
+arch bwall_1_2
 y 20
 end
 arch flagstone
@@ -91,37 +148,70 @@ end
 arch swall_2_1_1
 y 22
 end
-arch bwall_2_1_1
+arch flagstone
 y 23
+end
+arch bwall_1_1
+y 23
+end
+arch flagstone
+y 24
 end
 arch bwall_2_1_1
 y 24
 end
+arch flagstone
+y 25
+end
 arch bwall_2_1_1
 y 25
+end
+arch flagstone
+y 26
 end
 arch bwall_2_1_1
 y 26
 end
+arch flagstone
+y 27
+end
 arch bwall_2_1_1
 y 27
+end
+arch flagstone
+y 28
 end
 arch bwall_2_1_1
 y 28
 end
+arch flagstone
+y 29
+end
 arch bwall_2_1_1
 y 29
+end
+arch flagstone
+y 30
 end
 arch bwall_2_1_1
 y 30
 end
+arch flagstone
+y 31
+end
 arch bwall_2_1_1
 y 31
+end
+arch flagstone
+y 32
 end
 arch bwall_2_1_1
 y 32
 end
-arch bwall_2_1_1
+arch flagstone
+y 33
+end
+arch bwall_1_2
 y 33
 end
 arch flagstone
@@ -136,47 +226,92 @@ end
 arch swall_2_1_1
 y 35
 end
-arch bwall_2_1_1
+arch flagstone
 y 36
+end
+arch bwall_1_1
+y 36
+end
+arch flagstone
+y 37
 end
 arch bwall_2_1_1
 y 37
 end
+arch flagstone
+y 38
+end
 arch bwall_2_1_1
 y 38
+end
+arch flagstone
+y 39
 end
 arch bwall_2_1_1
 y 39
 end
+arch flagstone
+y 40
+end
 arch bwall_2_1_1
 y 40
+end
+arch flagstone
+y 41
 end
 arch bwall_2_1_1
 y 41
 end
+arch flagstone
+y 42
+end
 arch bwall_2_1_1
 y 42
+end
+arch flagstone
+y 43
 end
 arch bwall_2_1_1
 y 43
 end
+arch flagstone
+y 44
+end
 arch bwall_2_1_1
 y 44
+end
+arch flagstone
+y 45
 end
 arch bwall_2_1_1
 y 45
 end
+arch flagstone
+y 46
+end
 arch bwall_2_1_1
 y 46
+end
+arch flagstone
+y 47
 end
 arch bwall_2_1_1
 y 47
 end
+arch flagstone
+y 48
+end
 arch bwall_2_1_1
 y 48
 end
+arch flagstone
+y 49
+end
 arch bwall_3_2
 y 49
+end
+arch flagstone
+y 50
 end
 arch bwall_2_2_1
 y 50
@@ -211,11 +346,20 @@ speed 0.500000
 value 1
 connected 100
 end
+arch flagstone
+y 53
+end
 arch bwall_2_2_2
 y 53
 end
+arch flagstone
+y 54
+end
 arch bwall_2_2_1
 y 54
+end
+arch flagstone
+x 1
 end
 arch bwall_2_1_2
 x 1
@@ -412,9 +556,17 @@ arch cobblestones2
 x 1
 y 48
 end
+arch flagstone
+x 1
+y 49
+end
 arch bwall_2_2_3
 x 1
 y 49
+end
+arch flagstone
+x 1
+y 50
 end
 arch bwall_2_2_4
 x 1
@@ -442,13 +594,24 @@ speed 0.500000
 value 1
 connected 100
 end
+arch flagstone
+x 1
+y 53
+end
 arch bwall_2_2_3
 x 1
 y 53
 end
+arch flagstone
+x 1
+y 54
+end
 arch bwall_3_1
 x 1
 y 54
+end
+arch flagstone
+x 2
 end
 arch bwall_2_1_2
 x 2
@@ -680,9 +843,16 @@ x 2
 y 53
 connected 100
 end
+arch flagstone
+x 2
+y 54
+end
 arch bwall_2_1_2
 x 2
 y 54
+end
+arch flagstone
+x 3
 end
 arch bwall_2_1_2
 x 3
@@ -899,9 +1069,16 @@ arch cobblestones2
 x 3
 y 53
 end
+arch flagstone
+x 3
+y 54
+end
 arch bwall_2_1_2
 x 3
 y 54
+end
+arch flagstone
+x 4
 end
 arch bwall_2_1_2
 x 4
@@ -1302,9 +1479,16 @@ arch cobblestones2
 x 4
 y 53
 end
+arch flagstone
+x 4
+y 54
+end
 arch bwall_2_1_2
 x 4
 y 54
+end
+arch flagstone
+x 5
 end
 arch bwall_2_1_2
 x 5
@@ -1365,7 +1549,7 @@ arch cobblestones2
 x 5
 y 11
 end
-arch swall_2_1_2
+arch swall_1_3
 x 5
 y 11
 end
@@ -1593,9 +1777,16 @@ arch cobblestones2
 x 5
 y 53
 end
+arch flagstone
+x 5
+y 54
+end
 arch bwall_2_1_2
 x 5
 y 54
+end
+arch flagstone
+x 6
 end
 arch bwall_2_1_2
 x 6
@@ -1915,9 +2106,16 @@ arch cobblestones2
 x 6
 y 53
 end
+arch flagstone
+x 6
+y 54
+end
 arch bwall_2_1_2
 x 6
 y 54
+end
+arch flagstone
+x 7
 end
 arch bwall_2_1_2
 x 7
@@ -1990,7 +2188,7 @@ arch cobblestones2
 x 7
 y 11
 end
-arch swall_2_1_2
+arch swall_1_4
 x 7
 y 11
 end
@@ -2165,9 +2363,9 @@ end
 arch sign
 name Gate Room
 msg
-             Gate Room
-             No Entry
-          This means you!
+Gate Room
+No Entry
+This means you!
 endmsg
 x 7
 y 45
@@ -2224,9 +2422,16 @@ arch cobblestones2
 x 7
 y 53
 end
+arch flagstone
+x 7
+y 54
+end
 arch bwall_2_1_2
 x 7
 y 54
+end
+arch flagstone
+x 8
 end
 arch bwall_2_1_2
 x 8
@@ -2315,7 +2520,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch swall_2_1_1
+arch swall_1_2
 x 8
 y 13
 end
@@ -2341,7 +2546,7 @@ arch cobblestones2
 x 8
 y 16
 end
-arch swall_2_1_1
+arch swall_1_1
 x 8
 y 16
 end
@@ -2373,7 +2578,7 @@ arch cobblestones2
 x 8
 y 20
 end
-arch swall_2_1_1
+arch swall_1_2
 x 8
 y 20
 end
@@ -2399,7 +2604,7 @@ arch cobblestones2
 x 8
 y 23
 end
-arch swall_2_1_1
+arch swall_1_1
 x 8
 y 23
 end
@@ -2431,7 +2636,7 @@ arch cobblestones2
 x 8
 y 27
 end
-arch swall_2_1_1
+arch swall_1_2
 x 8
 y 27
 end
@@ -2457,7 +2662,7 @@ arch cobblestones2
 x 8
 y 30
 end
-arch swall_2_1_1
+arch swall_1_1
 x 8
 y 30
 end
@@ -2639,9 +2844,16 @@ arch cobblestones2
 x 8
 y 53
 end
+arch flagstone
+x 8
+y 54
+end
 arch bwall_2_1_2
 x 8
 y 54
+end
+arch flagstone
+x 9
 end
 arch bwall_2_1_2
 x 9
@@ -2966,9 +3178,16 @@ arch cobblestones2
 x 9
 y 53
 end
+arch flagstone
+x 9
+y 54
+end
 arch bwall_2_1_2
 x 9
 y 54
+end
+arch flagstone
+x 10
 end
 arch bwall_2_1_2
 x 10
@@ -3353,9 +3572,16 @@ arch cobblestones2
 x 10
 y 53
 end
+arch flagstone
+x 10
+y 54
+end
 arch bwall_2_1_2
 x 10
 y 54
+end
+arch flagstone
+x 11
 end
 arch bwall_2_1_2
 x 11
@@ -3664,9 +3890,16 @@ arch cobblestones2
 x 11
 y 53
 end
+arch flagstone
+x 11
+y 54
+end
 arch bwall_2_1_2
 x 11
 y 54
+end
+arch flagstone
+x 12
 end
 arch bwall_2_1_2
 x 12
@@ -4058,9 +4291,16 @@ arch cobblestones2
 x 12
 y 53
 end
+arch flagstone
+x 12
+y 54
+end
 arch bwall_2_1_2
 x 12
 y 54
+end
+arch flagstone
+x 13
 end
 arch bwall_2_1_2
 x 13
@@ -4413,9 +4653,16 @@ arch cobblestones2
 x 13
 y 53
 end
+arch flagstone
+x 13
+y 54
+end
 arch bwall_2_1_2
 x 13
 y 54
+end
+arch flagstone
+x 14
 end
 arch bwall_2_1_2
 x 14
@@ -4632,7 +4879,7 @@ arch cobblestones2
 x 14
 y 37
 end
-arch swall_2_1_2
+arch swall_1_3
 x 14
 y 37
 end
@@ -4752,9 +4999,16 @@ arch cobblestones2
 x 14
 y 53
 end
+arch flagstone
+x 14
+y 54
+end
 arch bwall_2_1_2
 x 14
 y 54
+end
+arch flagstone
+x 15
 end
 arch bwall_2_1_2
 x 15
@@ -5144,9 +5398,16 @@ arch cobblestones2
 x 15
 y 53
 end
+arch flagstone
+x 15
+y 54
+end
 arch bwall_2_1_2
 x 15
 y 54
+end
+arch flagstone
+x 16
 end
 arch bwall_2_1_2
 x 16
@@ -5455,9 +5716,16 @@ arch cobblestones2
 x 16
 y 53
 end
+arch flagstone
+x 16
+y 54
+end
 arch bwall_2_1_2
 x 16
 y 54
+end
+arch flagstone
+x 17
 end
 arch bwall_2_1_2
 x 17
@@ -5634,7 +5902,7 @@ arch cobblestones2
 x 17
 y 37
 end
-arch swall_2_1_2
+arch swall_1_4
 x 17
 y 37
 end
@@ -5754,9 +6022,16 @@ arch cobblestones2
 x 17
 y 53
 end
+arch flagstone
+x 17
+y 54
+end
 arch bwall_2_1_2
 x 17
 y 54
+end
+arch flagstone
+x 18
 end
 arch bwall_2_1_2
 x 18
@@ -6053,9 +6328,16 @@ arch cobblestones2
 x 18
 y 53
 end
+arch flagstone
+x 18
+y 54
+end
 arch bwall_2_1_2
 x 18
 y 54
+end
+arch flagstone
+x 19
 end
 arch bwall_2_1_2
 x 19
@@ -6372,9 +6654,16 @@ arch cobblestones2
 x 19
 y 53
 end
+arch flagstone
+x 19
+y 54
+end
 arch bwall_2_1_2
 x 19
 y 54
+end
+arch flagstone
+x 20
 end
 arch bwall_2_1_2
 x 20
@@ -6653,9 +6942,16 @@ arch cobblestones2
 x 20
 y 53
 end
+arch flagstone
+x 20
+y 54
+end
 arch bwall_2_1_2
 x 20
 y 54
+end
+arch flagstone
+x 21
 end
 arch bwall_2_1_2
 x 21
@@ -6962,9 +7258,16 @@ arch cobblestones2
 x 21
 y 53
 end
+arch flagstone
+x 21
+y 54
+end
 arch bwall_2_1_2
 x 21
 y 54
+end
+arch flagstone
+x 22
 end
 arch bwall_2_1_2
 x 22
@@ -7017,7 +7320,7 @@ arch grass
 x 22
 y 11
 end
-arch swall_2_1_2
+arch swall_1_3
 x 22
 y 11
 end
@@ -7247,9 +7550,16 @@ arch cobblestones2
 x 22
 y 53
 end
+arch flagstone
+x 22
+y 54
+end
 arch bwall_2_1_2
 x 22
 y 54
+end
+arch flagstone
+x 23
 end
 arch bwall_2_1_2
 x 23
@@ -7531,9 +7841,16 @@ arch cobblestones2
 x 23
 y 53
 end
+arch flagstone
+x 23
+y 54
+end
 arch bwall_2_1_2
 x 23
 y 54
+end
+arch flagstone
+x 24
 end
 arch bwall_2_1_2
 x 24
@@ -7807,9 +8124,16 @@ arch cobblestones2
 x 24
 y 53
 end
+arch flagstone
+x 24
+y 54
+end
 arch bwall_2_1_2
 x 24
 y 54
+end
+arch flagstone
+x 25
 end
 arch bwall_2_1_2
 x 25
@@ -7862,7 +8186,7 @@ arch grass
 x 25
 y 11
 end
-arch swall_2_1_2
+arch swall_1_4
 x 25
 y 11
 end
@@ -8086,9 +8410,16 @@ arch cobblestones2
 x 25
 y 53
 end
+arch flagstone
+x 25
+y 54
+end
 arch bwall_2_1_2
 x 25
 y 54
+end
+arch flagstone
+x 26
 end
 arch bwall_2_1_2
 x 26
@@ -8373,9 +8704,16 @@ arch cobblestones2
 x 26
 y 53
 end
+arch flagstone
+x 26
+y 54
+end
 arch bwall_2_1_2
 x 26
 y 54
+end
+arch flagstone
+x 27
 end
 arch bwall_2_1_2
 x 27
@@ -8752,9 +9090,16 @@ arch cobblestones2
 x 27
 y 53
 end
+arch flagstone
+x 27
+y 54
+end
 arch bwall_2_1_2
 x 27
 y 54
+end
+arch flagstone
+x 28
 end
 arch bwall_2_1_2
 x 28
@@ -9083,9 +9428,16 @@ arch cobblestones2
 x 28
 y 53
 end
+arch flagstone
+x 28
+y 54
+end
 arch bwall_2_1_2
 x 28
 y 54
+end
+arch flagstone
+x 29
 end
 arch bwall_2_1_2
 x 29
@@ -9398,9 +9750,16 @@ arch cobblestones2
 x 29
 y 53
 end
+arch flagstone
+x 29
+y 54
+end
 arch bwall_2_1_2
 x 29
 y 54
+end
+arch flagstone
+x 30
 end
 arch bwall_2_1_2
 x 30
@@ -9701,9 +10060,16 @@ arch cobblestones2
 x 30
 y 53
 end
+arch flagstone
+x 30
+y 54
+end
 arch bwall_2_1_2
 x 30
 y 54
+end
+arch flagstone
+x 31
 end
 arch bwall_2_1_2
 x 31
@@ -10032,9 +10398,16 @@ arch cobblestones2
 x 31
 y 53
 end
+arch flagstone
+x 31
+y 54
+end
 arch bwall_2_1_2
 x 31
 y 54
+end
+arch flagstone
+x 32
 end
 arch bwall_2_1_2
 x 32
@@ -10401,9 +10774,16 @@ arch cobblestones2
 x 32
 y 53
 end
+arch flagstone
+x 32
+y 54
+end
 arch bwall_2_1_2
 x 32
 y 54
+end
+arch flagstone
+x 33
 end
 arch bwall_2_1_2
 x 33
@@ -10744,9 +11124,16 @@ arch cobblestones2
 x 33
 y 53
 end
+arch flagstone
+x 33
+y 54
+end
 arch bwall_2_1_2
 x 33
 y 54
+end
+arch flagstone
+x 34
 end
 arch bwall_2_1_2
 x 34
@@ -11039,9 +11426,16 @@ arch cobblestones2
 x 34
 y 53
 end
+arch flagstone
+x 34
+y 54
+end
 arch bwall_2_1_2
 x 34
 y 54
+end
+arch flagstone
+x 35
 end
 arch bwall_2_1_2
 x 35
@@ -11110,7 +11504,7 @@ arch cobblestones2
 x 35
 y 13
 end
-arch swall_2_1_1
+arch swall_1_2
 x 35
 y 13
 end
@@ -11136,7 +11530,7 @@ arch cobblestones2
 x 35
 y 16
 end
-arch swall_2_1_1
+arch swall_1_1
 x 35
 y 16
 end
@@ -11168,7 +11562,7 @@ arch cobblestones2
 x 35
 y 20
 end
-arch swall_2_1_1
+arch swall_1_2
 x 35
 y 20
 end
@@ -11194,7 +11588,7 @@ arch cobblestones2
 x 35
 y 23
 end
-arch swall_2_1_1
+arch swall_1_1
 x 35
 y 23
 end
@@ -11234,7 +11628,7 @@ arch cobblestones2
 x 35
 y 28
 end
-arch swall_2_1_1
+arch swall_1_2
 x 35
 y 28
 end
@@ -11260,7 +11654,7 @@ arch cobblestones2
 x 35
 y 31
 end
-arch swall_2_1_1
+arch swall_1_1
 x 35
 y 31
 end
@@ -11416,9 +11810,16 @@ arch cobblestones2
 x 35
 y 53
 end
+arch flagstone
+x 35
+y 54
+end
 arch bwall_2_1_2
 x 35
 y 54
+end
+arch flagstone
+x 36
 end
 arch bwall_2_1_2
 x 36
@@ -11700,9 +12101,16 @@ arch cobblestones2
 x 36
 y 53
 end
+arch flagstone
+x 36
+y 54
+end
 arch bwall_2_1_2
 x 36
 y 54
+end
+arch flagstone
+x 37
 end
 arch bwall_2_1_2
 x 37
@@ -11984,9 +12392,16 @@ arch cobblestones2
 x 37
 y 53
 end
+arch flagstone
+x 37
+y 54
+end
 arch bwall_2_1_2
 x 37
 y 54
+end
+arch flagstone
+x 38
 end
 arch bwall_2_1_2
 x 38
@@ -12039,7 +12454,7 @@ arch cobblestones2
 x 38
 y 11
 end
-arch swall_2_1_2
+arch swall_1_4
 x 38
 y 11
 end
@@ -12267,9 +12682,16 @@ arch cobblestones2
 x 38
 y 53
 end
+arch flagstone
+x 38
+y 54
+end
 arch bwall_2_1_2
 x 38
 y 54
+end
+arch flagstone
+x 39
 end
 arch bwall_2_1_2
 x 39
@@ -12670,9 +13092,16 @@ arch cobblestones2
 x 39
 y 53
 end
+arch flagstone
+x 39
+y 54
+end
 arch bwall_2_1_2
 x 39
 y 54
+end
+arch flagstone
+x 40
 end
 arch bwall_2_1_2
 x 40
@@ -12889,9 +13318,16 @@ arch cobblestones2
 x 40
 y 53
 end
+arch flagstone
+x 40
+y 54
+end
 arch bwall_2_1_2
 x 40
 y 54
+end
+arch flagstone
+x 41
 end
 arch bwall_2_1_2
 x 41
@@ -13118,9 +13554,16 @@ arch cobblestones2
 x 41
 y 53
 end
+arch flagstone
+x 41
+y 54
+end
 arch bwall_2_1_2
 x 41
 y 54
+end
+arch flagstone
+x 42
 end
 arch bwall_2_1_2
 x 42
@@ -13337,224 +13780,447 @@ arch cobblestones2
 x 42
 y 53
 end
+arch flagstone
+x 42
+y 54
+end
 arch bwall_2_1_2
 x 42
 y 54
 end
+arch flagstone
+x 43
+end
 arch bwall_2_2_3
 x 43
 end
-arch bwall_2_1_1
+arch flagstone
 x 43
 y 1
 end
 arch bwall_2_1_1
 x 43
+y 1
+end
+arch flagstone
+x 43
 y 2
 end
 arch bwall_2_1_1
+x 43
+y 2
+end
+arch flagstone
 x 43
 y 3
 end
 arch bwall_2_1_1
 x 43
+y 3
+end
+arch flagstone
+x 43
 y 4
 end
 arch bwall_2_1_1
+x 43
+y 4
+end
+arch flagstone
 x 43
 y 5
 end
 arch bwall_2_1_1
 x 43
+y 5
+end
+arch flagstone
+x 43
 y 6
 end
 arch bwall_2_1_1
+x 43
+y 6
+end
+arch flagstone
 x 43
 y 7
 end
 arch bwall_2_1_1
 x 43
+y 7
+end
+arch flagstone
+x 43
 y 8
 end
 arch bwall_2_1_1
+x 43
+y 8
+end
+arch flagstone
 x 43
 y 9
 end
 arch bwall_2_1_1
 x 43
+y 9
+end
+arch flagstone
+x 43
 y 10
 end
 arch bwall_2_1_1
+x 43
+y 10
+end
+arch flagstone
 x 43
 y 11
 end
 arch bwall_2_1_1
 x 43
+y 11
+end
+arch flagstone
+x 43
 y 12
 end
 arch bwall_2_1_1
+x 43
+y 12
+end
+arch flagstone
 x 43
 y 13
 end
 arch bwall_2_1_1
 x 43
+y 13
+end
+arch flagstone
+x 43
 y 14
 end
 arch bwall_2_1_1
+x 43
+y 14
+end
+arch flagstone
 x 43
 y 15
 end
 arch bwall_2_1_1
 x 43
+y 15
+end
+arch flagstone
+x 43
 y 16
 end
 arch bwall_2_1_1
+x 43
+y 16
+end
+arch flagstone
 x 43
 y 17
 end
 arch bwall_2_1_1
 x 43
+y 17
+end
+arch flagstone
+x 43
 y 18
 end
 arch bwall_2_1_1
+x 43
+y 18
+end
+arch flagstone
 x 43
 y 19
 end
 arch bwall_2_1_1
 x 43
+y 19
+end
+arch flagstone
+x 43
 y 20
 end
 arch bwall_2_1_1
+x 43
+y 20
+end
+arch flagstone
 x 43
 y 21
 end
 arch bwall_2_1_1
 x 43
+y 21
+end
+arch flagstone
+x 43
 y 22
 end
 arch bwall_2_1_1
+x 43
+y 22
+end
+arch flagstone
 x 43
 y 23
 end
 arch bwall_2_1_1
 x 43
+y 23
+end
+arch flagstone
+x 43
 y 24
 end
 arch bwall_2_1_1
+x 43
+y 24
+end
+arch flagstone
 x 43
 y 25
 end
 arch bwall_2_1_1
 x 43
+y 25
+end
+arch flagstone
+x 43
 y 26
 end
 arch bwall_2_1_1
+x 43
+y 26
+end
+arch flagstone
 x 43
 y 27
 end
 arch bwall_2_1_1
 x 43
+y 27
+end
+arch flagstone
+x 43
 y 28
 end
 arch bwall_2_1_1
+x 43
+y 28
+end
+arch flagstone
 x 43
 y 29
 end
 arch bwall_2_1_1
 x 43
+y 29
+end
+arch flagstone
+x 43
 y 30
 end
 arch bwall_2_1_1
+x 43
+y 30
+end
+arch flagstone
 x 43
 y 31
 end
 arch bwall_2_1_1
 x 43
+y 31
+end
+arch flagstone
+x 43
 y 32
 end
 arch bwall_2_1_1
+x 43
+y 32
+end
+arch flagstone
 x 43
 y 33
 end
 arch bwall_2_1_1
 x 43
+y 33
+end
+arch flagstone
+x 43
 y 34
 end
 arch bwall_2_1_1
+x 43
+y 34
+end
+arch flagstone
 x 43
 y 35
 end
 arch bwall_2_1_1
 x 43
+y 35
+end
+arch flagstone
+x 43
 y 36
 end
 arch bwall_2_1_1
+x 43
+y 36
+end
+arch flagstone
 x 43
 y 37
 end
 arch bwall_2_1_1
 x 43
+y 37
+end
+arch flagstone
+x 43
 y 38
 end
 arch bwall_2_1_1
+x 43
+y 38
+end
+arch flagstone
 x 43
 y 39
 end
 arch bwall_2_1_1
 x 43
+y 39
+end
+arch flagstone
+x 43
 y 40
 end
 arch bwall_2_1_1
+x 43
+y 40
+end
+arch flagstone
 x 43
 y 41
 end
 arch bwall_2_1_1
 x 43
+y 41
+end
+arch flagstone
+x 43
 y 42
 end
 arch bwall_2_1_1
+x 43
+y 42
+end
+arch flagstone
 x 43
 y 43
 end
 arch bwall_2_1_1
 x 43
+y 43
+end
+arch flagstone
+x 43
 y 44
 end
 arch bwall_2_1_1
+x 43
+y 44
+end
+arch flagstone
 x 43
 y 45
 end
 arch bwall_2_1_1
 x 43
+y 45
+end
+arch flagstone
+x 43
 y 46
 end
 arch bwall_2_1_1
+x 43
+y 46
+end
+arch flagstone
 x 43
 y 47
 end
 arch bwall_2_1_1
 x 43
+y 47
+end
+arch flagstone
+x 43
 y 48
 end
 arch bwall_2_1_1
+x 43
+y 48
+end
+arch flagstone
 x 43
 y 49
 end
 arch bwall_2_1_1
 x 43
+y 49
+end
+arch flagstone
+x 43
 y 50
 end
 arch bwall_2_1_1
+x 43
+y 50
+end
+arch flagstone
 x 43
 y 51
 end
 arch bwall_2_1_1
 x 43
+y 51
+end
+arch flagstone
+x 43
 y 52
 end
 arch bwall_2_1_1
 x 43
+y 52
+end
+arch flagstone
+x 43
 y 53
+end
+arch bwall_2_1_1
+x 43
+y 53
+end
+arch flagstone
+x 43
+y 54
 end
 arch bwall_2_2_4
 x 43

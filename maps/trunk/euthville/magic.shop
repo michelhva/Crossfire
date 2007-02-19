@@ -1,19 +1,19 @@
 arch map
-name <untitled>
+name Euthville Magic Shop
+reset_timeout 7200
+fixed_resettime 1
+difficulty 1
+shopitems amulet:60;book:20;spellbook:20;potion:60;wand:60;skillscroll:10;ring:50;rod:20;*:-60
+shopmax 9000
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator:
 Email:
 Date: Tue Nov  9 18:19:32 1993
 endmsg
-width 16
-height 16
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
-fixed_resettime 1
-shopitems amulet:60;book:20;spellbook:20;potion:60;wand:60;skillscroll:10;ring:50;rod:20;*:-60
-shopmax 9000
 end
 arch flagstone
 name floor
@@ -362,10 +362,10 @@ uuuuggggghhhh, I haven't seen anyone
 alive in years.  If you eat me I'll
 give you a discount.
 endmsg
-type 29
-no_pick 1
 x 3
 y 2
+type 29
+no_pick 1
 end
 arch flagstone
 name floor

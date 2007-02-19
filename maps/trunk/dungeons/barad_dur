@@ -1,6 +1,8 @@
 arch map
-x 23
-y 60
+name Barad-Dur
+difficulty 1
+width 23
+height 60
 end
 arch woodfloor
 end
@@ -9356,11 +9358,6 @@ carrying 9000
 arch club
 end
 end
-More
-arch giant_2
-x 9
-y 27
-end
 arch troll
 x 11
 y 54
@@ -9368,81 +9365,31 @@ carrying 9000
 arch club
 end
 end
-More
-arch troll_2
-x 12
-y 54
-end
-More
-arch troll_3
-x 11
-y 55
-end
-More
-arch troll_4
-x 12
-y 55
-end
 arch dragon
 x 12
-y 25
-end
-More
-arch dragon_2
-x 13
 y 25
 end
 arch dragon
 x 15
 y 26
 end
-More
-arch dragon_2
-x 16
-y 26
-end
 arch dragon
 x 16
-y 28
-end
-More
-arch dragon_2
-x 17
 y 28
 end
 arch dragon
 x 18
 y 46
 end
-More
-arch dragon_2
-x 19
-y 46
-end
 arch dragon
 x 18
-y 50
-end
-More
-arch dragon_2
-x 19
 y 50
 end
 arch dragon
 x 18
 y 52
 end
-More
-arch dragon_2
-x 19
-y 52
-end
 arch dragon
 x 19
-y 48
-end
-More
-arch dragon_2
-x 20
 y 48
 end

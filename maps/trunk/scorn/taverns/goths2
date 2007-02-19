@@ -1,13 +1,15 @@
 arch map
+name Goth's Tavern
+difficulty 1
 region scorn
+width 33
+height 30
 msg
 The nightman down the hall spot you and
 shout "HALT! THIEF!!!" 
 It seems they have mistaken you with
 somebody else.
 endmsg
-x 33
-y 30
 end
 arch cobblestones2
 end
@@ -1900,8 +1902,6 @@ carrying 2
 arch card
 name Port Pass
 slaying port_pass
-value 2500
-identified 1
 msg
 This is a merchants pass allowing paid
 access between the City of Scorn and the
@@ -1910,6 +1910,8 @@ and commerce. Animal or plants entering
 the city of scorn must be quarantined in
 the Quarantine Warehouse in the port area
 endmsg
+value 2500
+identified 1
 end
 end
 arch cobblestones2
@@ -5746,7 +5748,7 @@ arch cobblestones2
 x 29
 y 13
 end
-arch wall_2_1_1
+arch wall_1_2
 x 29
 y 13
 end
@@ -5764,7 +5766,7 @@ arch cobblestones2
 x 29
 y 15
 end
-arch wall_2_1_1
+arch wall_1_1
 x 29
 y 15
 end

@@ -1,8 +1,8 @@
 arch map
-region lakecountry
-name Chaos_lair1
+name Chaos Lair
 reset_timeout 7200
 difficulty 15
+region lakecountry
 width 36
 height 36
 enter_x 1
@@ -14,12 +14,8 @@ Date: Sun Jun  4 19:34:16 1995
 endmsg
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch large_stones
@@ -65,28 +61,18 @@ arch cave23
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch large_stones
@@ -102,23 +88,15 @@ arch cave23
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch large_stones
@@ -137,73 +115,45 @@ arch blocked
 y 22
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch blocked
-msg
-endmsg
 y 27
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch blocked
-msg
-endmsg
 y 33
 end
 arch blocked
-msg
-endmsg
 y 34
 end
 arch blocked
-msg
-endmsg
 y 35
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch large_stones
@@ -225,24 +175,6 @@ end
 arch large_stones
 x 1
 y 3
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 3
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 1
@@ -277,14 +209,10 @@ x 1
 y 9
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
 arch blocked
-msg
-endmsg
 x 1
 y 11
 end
@@ -377,38 +305,26 @@ x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 25
 end
 arch blocked
-msg
-endmsg
 x 1
 y 26
 end
 arch blocked
-msg
-endmsg
 x 1
 y 27
 end
 arch blocked
-msg
-endmsg
 x 1
 y 28
 end
@@ -423,25 +339,6 @@ x 1
 y 29
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 1
 y 30
@@ -454,8 +351,6 @@ y 30
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 31
 end
@@ -470,25 +365,6 @@ x 1
 y 32
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 1
 y 33
@@ -501,14 +377,10 @@ y 33
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 34
 end
 arch blocked
-msg
-endmsg
 x 1
 y 35
 end
@@ -554,24 +426,6 @@ arch large_stones
 x 2
 y 6
 end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 2
-y 6
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 2
 y 7
@@ -597,8 +451,6 @@ x 2
 y 10
 end
 arch blocked
-msg
-endmsg
 x 2
 y 11
 end
@@ -667,74 +519,50 @@ x 2
 y 23
 end
 arch blocked
-msg
-endmsg
 x 2
 y 24
 end
 arch blocked
-msg
-endmsg
 x 2
 y 25
 end
 arch blocked
-msg
-endmsg
 x 2
 y 26
 end
 arch blocked
-msg
-endmsg
 x 2
 y 27
 end
 arch blocked
-msg
-endmsg
 x 2
 y 28
 end
 arch blocked
-msg
-endmsg
 x 2
 y 29
 end
 arch blocked
-msg
-endmsg
 x 2
 y 30
 end
 arch blocked
-msg
-endmsg
 x 2
 y 31
 end
 arch blocked
-msg
-endmsg
 x 2
 y 32
 end
 arch blocked
-msg
-endmsg
 x 2
 y 33
 end
 arch blocked
-msg
-endmsg
 x 2
 y 34
 end
 arch blocked
-msg
-endmsg
 x 2
 y 35
 end
@@ -877,62 +705,42 @@ x 3
 y 25
 end
 arch blocked
-msg
-endmsg
 x 3
 y 26
 end
 arch blocked
-msg
-endmsg
 x 3
 y 27
 end
 arch blocked
-msg
-endmsg
 x 3
 y 28
 end
 arch blocked
-msg
-endmsg
 x 3
 y 29
 end
 arch blocked
-msg
-endmsg
 x 3
 y 30
 end
 arch blocked
-msg
-endmsg
 x 3
 y 31
 end
 arch blocked
-msg
-endmsg
 x 3
 y 32
 end
 arch blocked
-msg
-endmsg
 x 3
 y 33
 end
 arch blocked
-msg
-endmsg
 x 3
 y 34
 end
 arch blocked
-msg
-endmsg
 x 3
 y 35
 end
@@ -945,24 +753,6 @@ end
 arch large_stones
 x 4
 y 1
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 1
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 4
@@ -1091,20 +881,14 @@ x 4
 y 25
 end
 arch blocked
-msg
-endmsg
 x 4
 y 26
 end
 arch blocked
-msg
-endmsg
 x 4
 y 27
 end
 arch blocked
-msg
-endmsg
 x 4
 y 28
 end
@@ -1119,25 +903,6 @@ x 4
 y 29
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 4
 y 30
@@ -1150,8 +915,6 @@ y 30
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 31
 end
@@ -1166,25 +929,6 @@ x 4
 y 32
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 4
 y 33
@@ -1197,14 +941,10 @@ y 33
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 34
 end
 arch blocked
-msg
-endmsg
 x 4
 y 35
 end
@@ -1247,24 +987,6 @@ end
 arch large_stones
 x 5
 y 7
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 5
-y 7
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 5
@@ -1365,56 +1087,38 @@ x 5
 y 26
 end
 arch blocked
-msg
-endmsg
 x 5
 y 27
 end
 arch blocked
-msg
-endmsg
 x 5
 y 28
 end
 arch blocked
-msg
-endmsg
 x 5
 y 29
 end
 arch blocked
-msg
-endmsg
 x 5
 y 30
 end
 arch blocked
-msg
-endmsg
 x 5
 y 31
 end
 arch blocked
-msg
-endmsg
 x 5
 y 32
 end
 arch blocked
-msg
-endmsg
 x 5
 y 33
 end
 arch blocked
-msg
-endmsg
 x 5
 y 34
 end
 arch blocked
-msg
-endmsg
 x 5
 y 35
 end
@@ -1563,56 +1267,38 @@ x 6
 y 26
 end
 arch blocked
-msg
-endmsg
 x 6
 y 27
 end
 arch blocked
-msg
-endmsg
 x 6
 y 28
 end
 arch blocked
-msg
-endmsg
 x 6
 y 29
 end
 arch blocked
-msg
-endmsg
 x 6
 y 30
 end
 arch blocked
-msg
-endmsg
 x 6
 y 31
 end
 arch blocked
-msg
-endmsg
 x 6
 y 32
 end
 arch blocked
-msg
-endmsg
 x 6
 y 33
 end
 arch blocked
-msg
-endmsg
 x 6
 y 34
 end
 arch blocked
-msg
-endmsg
 x 6
 y 35
 end
@@ -1625,24 +1311,6 @@ end
 arch large_stones
 x 7
 y 1
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 1
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 7
@@ -1671,24 +1339,6 @@ end
 arch large_stones
 x 7
 y 6
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 6
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 7
@@ -1791,8 +1441,6 @@ x 7
 y 26
 end
 arch blocked
-msg
-endmsg
 x 7
 y 27
 end
@@ -1801,8 +1449,6 @@ x 7
 y 28
 end
 arch blocked
-msg
-endmsg
 x 7
 y 28
 end
@@ -1817,25 +1463,6 @@ x 7
 y 29
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 7
 y 30
@@ -1848,8 +1475,6 @@ y 30
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 31
 end
@@ -1864,25 +1489,6 @@ x 7
 y 32
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 7
 y 33
@@ -1895,14 +1501,10 @@ y 33
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 34
 end
 arch blocked
-msg
-endmsg
 x 7
 y 35
 end
@@ -2081,56 +1683,38 @@ x 8
 y 26
 end
 arch blocked
-msg
-endmsg
 x 8
 y 27
 end
 arch blocked
-msg
-endmsg
 x 8
 y 28
 end
 arch blocked
-msg
-endmsg
 x 8
 y 29
 end
 arch blocked
-msg
-endmsg
 x 8
 y 30
 end
 arch blocked
-msg
-endmsg
 x 8
 y 31
 end
 arch blocked
-msg
-endmsg
 x 8
 y 32
 end
 arch blocked
-msg
-endmsg
 x 8
 y 33
 end
 arch blocked
-msg
-endmsg
 x 8
 y 34
 end
 arch blocked
-msg
-endmsg
 x 8
 y 35
 end
@@ -2293,56 +1877,38 @@ x 9
 y 26
 end
 arch blocked
-msg
-endmsg
 x 9
 y 27
 end
 arch blocked
-msg
-endmsg
 x 9
 y 28
 end
 arch blocked
-msg
-endmsg
 x 9
 y 29
 end
 arch blocked
-msg
-endmsg
 x 9
 y 30
 end
 arch blocked
-msg
-endmsg
 x 9
 y 31
 end
 arch blocked
-msg
-endmsg
 x 9
 y 32
 end
 arch blocked
-msg
-endmsg
 x 9
 y 33
 end
 arch blocked
-msg
-endmsg
 x 9
 y 34
 end
 arch blocked
-msg
-endmsg
 x 9
 y 35
 end
@@ -2477,20 +2043,14 @@ x 10
 y 26
 end
 arch blocked
-msg
-endmsg
 x 10
 y 27
 end
 arch blocked
-msg
-endmsg
 x 10
 y 28
 end
 arch blocked
-msg
-endmsg
 x 10
 y 29
 end
@@ -2528,20 +2088,14 @@ y 31
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 10
 y 32
 end
 arch blocked
-msg
-endmsg
 x 10
 y 33
 end
 arch blocked
-msg
-endmsg
 x 10
 y 34
 end
@@ -2593,8 +2147,6 @@ x 11
 y 6
 end
 arch blocked
-msg
-endmsg
 x 11
 y 7
 end
@@ -2739,8 +2291,6 @@ x 11
 y 26
 end
 arch blocked
-msg
-endmsg
 x 11
 y 27
 end
@@ -2773,8 +2323,6 @@ x 11
 y 34
 end
 arch blocked
-msg
-endmsg
 x 11
 y 34
 end
@@ -3481,7 +3029,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
+A parade of guards and guardians
 appeared to greet. You hope no one
 discovers you.
 endmsg
@@ -3492,7 +3040,7 @@ end
 arch magic_ear
 msg
 @match Kill|KILL|kill
-   A line of guards appeared behide you
+A line of guards appeared behide you
 grinning evilly.
 endmsg
 x 14
@@ -3510,40 +3058,6 @@ end
 arch large_stones
 x 14
 y 23
-end
-arch dragonman
-name dragonman guard
-msg
-@match Open|open|enter|gate|door
-   What's your name? What's your 
-business?
-@match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-   Great! We all need some excercises!
-@match sacrifice
-   Aha, the more fresh flesh the better.
-Put the sacrifice away!!
-@match *
-   You'd better leave before I throw
-you out or summon more guards
-endmsg
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 14
-y 23
-speed 0.450000
-speed_left -14.749998
-level 20
-unaggressive 1
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 14
@@ -4514,36 +4028,6 @@ arch large_stones
 x 18
 y 6
 end
-arch dragonman
-name patrolling dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 18
-y 6
-speed 0.800000
-speed_left -19.600002
-level 20
-carrying 100
-unaggressive 1
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-  This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 18
 y 7
@@ -4956,7 +4440,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
+A parade of guards and guardians
 appeared to greet. You hope no one
 discovers you.
 endmsg
@@ -4967,7 +4451,7 @@ end
 arch magic_ear
 msg
 @match Kill|KILL|kill
-   A line of guards appeared behide you
+A line of guards appeared behide you
 grinning evilly.
 endmsg
 x 19
@@ -4985,40 +4469,6 @@ end
 arch large_stones
 x 19
 y 23
-end
-arch dragonman
-name dragonman guard
-msg
-@match Open|open|enter|gate|door
-   What's your name? What's your 
-business?
-@match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-   Great! We all need some excercises!
-@match sacrifice
-   Aha, the more fresh flesh the better.
-Put the sacrifice away!!
-@match *
-   You'd better leave before I throw
-you out or summon more guards
-endmsg
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 19
-y 23
-speed 0.450000
-speed_left -14.749998
-level 20
-unaggressive 1
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
 end
 arch large_stones
 x 19
@@ -5141,8 +4591,6 @@ x 20
 y 6
 end
 arch blocked
-msg
-endmsg
 x 20
 y 7
 end
@@ -5385,20 +4833,14 @@ x 21
 y 5
 end
 arch blocked
-msg
-endmsg
 x 21
 y 6
 end
 arch blocked
-msg
-endmsg
 x 21
 y 7
 end
 arch blocked
-msg
-endmsg
 x 21
 y 8
 end
@@ -5641,14 +5083,10 @@ x 22
 y 5
 end
 arch blocked
-msg
-endmsg
 x 22
 y 6
 end
 arch blocked
-msg
-endmsg
 x 22
 y 7
 end
@@ -5855,26 +5293,18 @@ x 23
 y 3
 end
 arch blocked
-msg
-endmsg
 x 23
 y 4
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
 arch blocked
-msg
-endmsg
 x 23
 y 6
 end
 arch blocked
-msg
-endmsg
 x 23
 y 7
 end
@@ -6007,8 +5437,6 @@ x 23
 y 35
 end
 arch blocked
-msg
-endmsg
 x 24
 end
 arch large_stones
@@ -6028,38 +5456,26 @@ x 24
 y 2
 end
 arch blocked
-msg
-endmsg
 x 24
 y 3
 end
 arch blocked
-msg
-endmsg
 x 24
 y 4
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
 arch blocked
-msg
-endmsg
 x 24
 y 6
 end
 arch blocked
-msg
-endmsg
 x 24
 y 7
 end
 arch blocked
-msg
-endmsg
 x 24
 y 8
 end
@@ -6189,20 +5605,14 @@ y 30
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
 arch blocked
-msg
-endmsg
 x 24
 y 33
 end
@@ -6219,55 +5629,37 @@ x 24
 y 35
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 2
 end
 arch blocked
-msg
-endmsg
 x 25
 y 3
 end
 arch blocked
-msg
-endmsg
 x 25
 y 4
 end
 arch blocked
-msg
-endmsg
 x 25
 y 5
 end
 arch blocked
-msg
-endmsg
 x 25
 y 6
 end
 arch blocked
-msg
-endmsg
 x 25
 y 7
 end
 arch blocked
-msg
-endmsg
 x 25
 y 8
 end
@@ -6376,8 +5768,6 @@ x 25
 y 28
 end
 arch blocked
-msg
-endmsg
 x 25
 y 29
 end
@@ -6406,13 +5796,9 @@ x 25
 y 35
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch pit_closed
-msg
-endmsg
 hp 23
 sp 11
 x 26
@@ -6434,8 +5820,6 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 26
 y 4
 end
@@ -6450,36 +5834,6 @@ x 26
 y 5
 connected 1
 end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 26
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-  This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 26
 y 6
@@ -6492,14 +5846,10 @@ y 6
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 26
 y 7
 end
 arch blocked
-msg
-endmsg
 x 26
 y 8
 end
@@ -6628,8 +5978,6 @@ x 26
 y 35
 end
 arch blocked
-msg
-endmsg
 x 27
 end
 arch pit_closed
@@ -6646,17 +5994,6 @@ x 27
 y 2
 connected 11
 end
-arch titan
-name guardian
-hp 10000
-x 27
-y 2
-speed 0.800000
-speed_left -3.030000
-resist_physical 30
-resist_fire 90
-resist_weaponmagic 30
-end
 arch pit_closed
 hp 24
 sp 13
@@ -6665,26 +6002,18 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 27
 y 4
 end
 arch blocked
-msg
-endmsg
 x 27
 y 5
 end
 arch blocked
-msg
-endmsg
 x 27
 y 6
 end
 arch blocked
-msg
-endmsg
 x 27
 y 7
 end
@@ -6817,8 +6146,6 @@ x 27
 y 35
 end
 arch blocked
-msg
-endmsg
 x 28
 end
 arch pit_closed
@@ -6843,8 +6170,6 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 28
 y 4
 end
@@ -6859,36 +6184,6 @@ x 28
 y 5
 connected 1
 end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 28
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-  This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 28
 y 6
@@ -6901,8 +6196,6 @@ y 6
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 28
 y 7
 end
@@ -7035,55 +6328,37 @@ x 28
 y 35
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch blocked
-msg
-endmsg
 x 29
 y 1
 end
 arch blocked
-msg
-endmsg
 x 29
 y 2
 end
 arch blocked
-msg
-endmsg
 x 29
 y 3
 end
 arch blocked
-msg
-endmsg
 x 29
 y 4
 end
 arch blocked
-msg
-endmsg
 x 29
 y 5
 end
 arch blocked
-msg
-endmsg
 x 29
 y 6
 end
 arch blocked
-msg
-endmsg
 x 29
 y 7
 end
 arch blocked
-msg
-endmsg
 x 29
 y 8
 end
@@ -7198,25 +6473,6 @@ x 29
 y 30
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 29
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 29
 y 31
@@ -7243,25 +6499,6 @@ x 29
 y 33
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 29
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 29
 y 34
@@ -7278,31 +6515,21 @@ x 29
 y 35
 end
 arch blocked
-msg
-endmsg
 x 30
 end
 arch blocked
-msg
-endmsg
 x 30
 y 1
 end
 arch blocked
-msg
-endmsg
 x 30
 y 2
 end
 arch blocked
-msg
-endmsg
 x 30
 y 3
 end
 arch blocked
-msg
-endmsg
 x 30
 y 4
 end
@@ -7317,36 +6544,6 @@ x 30
 y 5
 connected 1
 end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 30
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-  This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 30
 y 6
@@ -7359,20 +6556,14 @@ y 6
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 30
 y 7
 end
 arch blocked
-msg
-endmsg
 x 30
 y 8
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
@@ -7461,20 +6652,14 @@ x 30
 y 25
 end
 arch blocked
-msg
-endmsg
 x 30
 y 26
 end
 arch blocked
-msg
-endmsg
 x 30
 y 27
 end
 arch blocked
-msg
-endmsg
 x 30
 y 28
 end
@@ -7507,8 +6692,6 @@ x 30
 y 35
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch pit_closed
@@ -7517,14 +6700,6 @@ sp 8
 x 31
 y 1
 connected 11
-end
-arch big_wiz
-name guardian
-hp 8500
-x 31
-y 1
-resist_physical 30
-resist_weaponmagic 30
 end
 arch pit_closed
 hp 14
@@ -7541,38 +6716,26 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 31
 y 4
 end
 arch blocked
-msg
-endmsg
 x 31
 y 5
 end
 arch blocked
-msg
-endmsg
 x 31
 y 6
 end
 arch blocked
-msg
-endmsg
 x 31
 y 7
 end
 arch blocked
-msg
-endmsg
 x 31
 y 8
 end
 arch blocked
-msg
-endmsg
 x 31
 y 9
 end
@@ -7653,26 +6816,18 @@ x 31
 y 24
 end
 arch blocked
-msg
-endmsg
 x 31
 y 25
 end
 arch blocked
-msg
-endmsg
 x 31
 y 26
 end
 arch blocked
-msg
-endmsg
 x 31
 y 27
 end
 arch blocked
-msg
-endmsg
 x 31
 y 28
 end
@@ -7690,25 +6845,6 @@ sp 18
 x 31
 y 30
 connected 1
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 31
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
 end
 arch large_stones
 x 31
@@ -7736,25 +6872,6 @@ x 31
 y 33
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 31
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 31
 y 34
@@ -7771,8 +6888,6 @@ x 31
 y 35
 end
 arch blocked
-msg
-endmsg
 x 32
 end
 arch pit_closed
@@ -7797,8 +6912,6 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 32
 y 4
 end
@@ -7813,36 +6926,6 @@ x 32
 y 5
 connected 1
 end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 32
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-  This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
 arch large_stones
 x 32
 y 6
@@ -7855,14 +6938,10 @@ y 6
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 32
 y 7
 end
 arch blocked
-msg
-endmsg
 x 32
 y 8
 end
@@ -7959,26 +7038,18 @@ x 32
 y 24
 end
 arch blocked
-msg
-endmsg
 x 32
 y 25
 end
 arch blocked
-msg
-endmsg
 x 32
 y 26
 end
 arch blocked
-msg
-endmsg
 x 32
 y 27
 end
 arch blocked
-msg
-endmsg
 x 32
 y 28
 end
@@ -8011,8 +7082,6 @@ x 32
 y 35
 end
 arch blocked
-msg
-endmsg
 x 33
 end
 arch pit_closed
@@ -8037,32 +7106,22 @@ y 3
 connected 11
 end
 arch blocked
-msg
-endmsg
 x 33
 y 4
 end
 arch blocked
-msg
-endmsg
 x 33
 y 5
 end
 arch blocked
-msg
-endmsg
 x 33
 y 6
 end
 arch blocked
-msg
-endmsg
 x 33
 y 7
 end
 arch blocked
-msg
-endmsg
 x 33
 y 8
 end
@@ -8171,44 +7230,30 @@ x 33
 y 21
 end
 arch blocked
-msg
-endmsg
 x 33
 y 22
 end
 arch blocked
-msg
-endmsg
 x 33
 y 23
 end
 arch blocked
-msg
-endmsg
 x 33
 y 24
 end
 arch blocked
-msg
-endmsg
 x 33
 y 25
 end
 arch blocked
-msg
-endmsg
 x 33
 y 26
 end
 arch blocked
-msg
-endmsg
 x 33
 y 27
 end
 arch blocked
-msg
-endmsg
 x 33
 y 28
 end
@@ -8226,25 +7271,6 @@ sp 16
 x 33
 y 30
 connected 1
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 33
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
 end
 arch large_stones
 x 33
@@ -8272,25 +7298,6 @@ x 33
 y 33
 connected 1
 end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 33
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
 arch large_stones
 x 33
 y 34
@@ -8307,61 +7314,41 @@ x 33
 y 35
 end
 arch blocked
-msg
-endmsg
 x 34
 end
 arch blocked
-msg
-endmsg
 x 34
 y 1
 end
 arch blocked
-msg
-endmsg
 x 34
 y 2
 end
 arch blocked
-msg
-endmsg
 x 34
 y 3
 end
 arch blocked
-msg
-endmsg
 x 34
 y 4
 end
 arch blocked
-msg
-endmsg
 x 34
 y 5
 end
 arch blocked
-msg
-endmsg
 x 34
 y 6
 end
 arch blocked
-msg
-endmsg
 x 34
 y 7
 end
 arch blocked
-msg
-endmsg
 x 34
 y 8
 end
 arch blocked
-msg
-endmsg
 x 34
 y 9
 end
@@ -8398,14 +7385,10 @@ x 34
 y 13
 end
 arch blocked
-msg
-endmsg
 x 34
 y 14
 end
 arch blocked
-msg
-endmsg
 x 34
 y 15
 end
@@ -8426,14 +7409,10 @@ x 34
 y 17
 end
 arch blocked
-msg
-endmsg
 x 34
 y 18
 end
 arch blocked
-msg
-endmsg
 x 34
 y 19
 end
@@ -8454,44 +7433,30 @@ x 34
 y 21
 end
 arch blocked
-msg
-endmsg
 x 34
 y 22
 end
 arch blocked
-msg
-endmsg
 x 34
 y 23
 end
 arch blocked
-msg
-endmsg
 x 34
 y 24
 end
 arch blocked
-msg
-endmsg
 x 34
 y 25
 end
 arch blocked
-msg
-endmsg
 x 34
 y 26
 end
 arch blocked
-msg
-endmsg
 x 34
 y 27
 end
 arch blocked
-msg
-endmsg
 x 34
 y 28
 end
@@ -8524,61 +7489,41 @@ x 34
 y 35
 end
 arch blocked
-msg
-endmsg
 x 35
 end
 arch blocked
-msg
-endmsg
 x 35
 y 1
 end
 arch blocked
-msg
-endmsg
 x 35
 y 2
 end
 arch blocked
-msg
-endmsg
 x 35
 y 3
 end
 arch blocked
-msg
-endmsg
 x 35
 y 4
 end
 arch blocked
-msg
-endmsg
 x 35
 y 5
 end
 arch blocked
-msg
-endmsg
 x 35
 y 6
 end
 arch blocked
-msg
-endmsg
 x 35
 y 7
 end
 arch blocked
-msg
-endmsg
 x 35
 y 8
 end
 arch blocked
-msg
-endmsg
 x 35
 y 9
 end
@@ -8643,8 +7588,6 @@ x 35
 y 16
 end
 arch blocked
-msg
-endmsg
 x 35
 y 17
 end
@@ -8683,44 +7626,30 @@ x 35
 y 21
 end
 arch blocked
-msg
-endmsg
 x 35
 y 22
 end
 arch blocked
-msg
-endmsg
 x 35
 y 23
 end
 arch blocked
-msg
-endmsg
 x 35
 y 24
 end
 arch blocked
-msg
-endmsg
 x 35
 y 25
 end
 arch blocked
-msg
-endmsg
 x 35
 y 26
 end
 arch blocked
-msg
-endmsg
 x 35
 y 27
 end
 arch blocked
-msg
-endmsg
 x 35
 y 28
 end
@@ -8751,4 +7680,577 @@ end
 arch blocked
 x 35
 y 35
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 3
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 2
+y 6
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 1
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 5
+y 7
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 1
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 6
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman guard
+msg
+@match Open|open|enter|gate|door
+What's your name? What's your
+business?
+@match Orcus|Balrog|Asmodeus|Jessy
+Gatekeeper! OPEN!!.
+@match Kill|KILL|kill
+Great! We all need some excercises!
+@match sacrifice
+Aha, the more fresh flesh the better.
+Put the sacrifice away!!
+@match *
+You'd better leave before I throw
+you out or summon more guards
+endmsg
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 14
+y 23
+speed 0.450000
+speed_left -14.749998
+level 20
+unaggressive 1
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name patrolling dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 18
+y 6
+speed 0.800000
+speed_left -19.600002
+level 20
+carrying 100
+unaggressive 1
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman guard
+msg
+@match Open|open|enter|gate|door
+What's your name? What's your
+business?
+@match Orcus|Balrog|Asmodeus|Jessy
+Gatekeeper! OPEN!!.
+@match Kill|KILL|kill
+Great! We all need some excercises!
+@match sacrifice
+Aha, the more fresh flesh the better.
+Put the sacrifice away!!
+@match *
+You'd better leave before I throw
+you out or summon more guards
+endmsg
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 19
+y 23
+speed 0.450000
+speed_left -14.749998
+level 20
+unaggressive 1
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 26
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch titan
+name guardian
+hp 10000
+x 27
+y 2
+speed 0.800000
+speed_left -3.030000
+resist_physical 30
+resist_fire 90
+resist_weaponmagic 30
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 28
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 29
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 29
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 30
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch big_wiz
+name guardian
+hp 8500
+x 31
+y 1
+resist_physical 30
+resist_weaponmagic 30
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 31
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 31
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 32
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 33
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 33
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end

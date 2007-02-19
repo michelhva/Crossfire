@@ -1,12 +1,13 @@
 arch map
-name navar to darcap tunnel
+name Navar to Darcap Tunnel
+difficulty 1
+darkness 4
+width 30
+height 60
 msg
 Creator: CF Java Map Editor
 Date:    9/15/2002
 endmsg
-width 30
-height 60
-darkness 4
 end
 arch pstone_1
 end
@@ -377,10 +378,10 @@ x 1
 y 1
 end
 arch mountain_cave
+slaying /world/world_120_108
 msg
 Ahh. Daylight.
 endmsg
-slaying /world/world_120_108
 hp 18
 sp 28
 x 1
@@ -9073,10 +9074,10 @@ x 24
 y 58
 end
 arch mountain_cave
+slaying /world/world_120_109
 msg
 Ahhh. Daylight.
 endmsg
-slaying /world/world_120_109
 hp 41
 sp 37
 x 24

@@ -1,13 +1,14 @@
 arch map
+name Zoo
+difficulty 1
 region scorn
-name zoo2
+width 50
+height 50
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 13 01:52:50 2001
 endmsg
-width 50
-height 50
 end
 arch dungeon_magic
 end
@@ -120,6 +121,9 @@ end
 arch pstone_1
 y 12
 end
+arch swall_1_4_half
+y 12
+end
 arch awall_2_1_1
 y 12
 end
@@ -201,6 +205,9 @@ end
 arch pstone_1
 y 21
 end
+arch swall_1_4_half
+y 21
+end
 arch awall_2_1_1
 y 21
 end
@@ -246,6 +253,9 @@ end
 arch pstone_1
 y 26
 end
+arch swall_1_4_half
+y 26
+end
 arch awall_2_1_1
 y 26
 end
@@ -291,6 +301,9 @@ end
 arch pstone_1
 y 31
 end
+arch swall_1_4_half
+y 31
+end
 arch awall_2_1_1
 y 31
 end
@@ -336,6 +349,9 @@ end
 arch pstone_1
 y 36
 end
+arch swall_1_4_half
+y 36
+end
 arch awall_2_1_1
 y 36
 end
@@ -361,6 +377,9 @@ arch dungeon_magic
 y 39
 end
 arch pstone_1
+y 39
+end
+arch swall_1_4_half
 y 39
 end
 arch awall_2_1_1
@@ -397,6 +416,9 @@ arch dungeon_magic
 y 43
 end
 arch pstone_1
+y 43
+end
+arch swall_1_4_half
 y 43
 end
 arch awall_2_1_1
@@ -565,7 +587,7 @@ arch pstone_1
 x 1
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 12
 end
@@ -641,7 +663,7 @@ arch pstone_1
 x 1
 y 21
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 21
 end
@@ -685,7 +707,7 @@ arch pstone_1
 x 1
 y 26
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 26
 end
@@ -729,7 +751,7 @@ arch pstone_1
 x 1
 y 31
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 31
 end
@@ -773,7 +795,7 @@ arch pstone_1
 x 1
 y 36
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 36
 end
@@ -801,7 +823,7 @@ arch pstone_1
 x 1
 y 39
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 39
 end
@@ -841,7 +863,7 @@ arch pstone_1
 x 1
 y 43
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 43
 end
@@ -1688,9 +1710,9 @@ x 3
 y 41
 end
 arch necromancer
-unaggressive 0
 x 3
 y 41
+unaggressive 0
 end
 arch dungeon_magic
 x 3
@@ -2698,7 +2720,7 @@ arch pstone_1
 x 5
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 5
 y 48
 end
@@ -2706,6 +2728,10 @@ arch pstone_1
 x 5
 y 49
 end
+arch swall_1_2_half
+x 5
+y 49
+end
 arch awall_2_1_2
 x 5
 y 49
@@ -2719,6 +2745,9 @@ end
 arch awall_2_1_2
 x 6
 end
+arch swall_1_1_half
+x 6
+end
 arch dungeon_magic
 x 6
 y 1
@@ -2727,7 +2756,7 @@ arch pstone_1
 x 6
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 6
 y 1
 end
@@ -4855,7 +4884,7 @@ arch pstone_1
 x 10
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 10
 y 48
 end
@@ -4863,6 +4892,10 @@ arch pstone_1
 x 10
 y 49
 end
+arch swall_1_2_half
+x 10
+y 49
+end
 arch awall_2_1_2
 x 10
 y 49
@@ -6532,6 +6565,9 @@ end
 arch awall_2_1_2
 x 15
 end
+arch swall_1_1_half
+x 15
+end
 arch dungeon_magic
 x 15
 y 1
@@ -6540,7 +6576,7 @@ arch pstone_1
 x 15
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 15
 y 1
 end
@@ -6964,11 +7000,15 @@ arch pstone_1
 x 15
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 15
 y 48
 end
 arch pstone_1
+x 15
+y 49
+end
+arch swall_1_2_half
 x 15
 y 49
 end
@@ -7703,10 +7743,10 @@ x 17
 y 32
 end
 arch firewall_3
-invisible 1
-connected 1
 x 17
 y 32
+invisible 1
+connected 1
 end
 arch dungeon_magic
 x 17
@@ -8030,9 +8070,9 @@ x 18
 y 20
 end
 arch button_small
-connected 1
 x 18
 y 20
+connected 1
 end
 arch pstone_1
 x 18
@@ -8473,14 +8513,14 @@ y 20
 end
 arch fireball
 name fire
-type 0
 hp 0
 dam 0
 wc 0
-attacktype 0
-flying 0
 x 19
 y 20
+type 0
+attacktype 0
+flying 0
 end
 arch dungeon_magic
 x 19
@@ -8511,9 +8551,9 @@ x 19
 y 24
 end
 arch button_small
-connected 2
 x 19
 y 24
+connected 2
 end
 arch pstone_1
 x 19
@@ -8913,9 +8953,9 @@ x 20
 y 20
 end
 arch button_small
-connected 1
 x 20
 y 20
+connected 1
 end
 arch pstone_1
 x 20
@@ -8950,10 +8990,10 @@ x 20
 y 23
 end
 arch creator
-connected 1
-lifesave 1
 x 20
 y 23
+connected 1
+lifesave 1
 end
 arch dungeon_magic
 x 20
@@ -9004,10 +9044,10 @@ x 20
 y 28
 end
 arch firewall_5
-invisible 1
-connected 2
 x 20
 y 28
+invisible 1
+connected 2
 end
 arch dungeon_magic
 x 20
@@ -9193,11 +9233,15 @@ arch pstone_1
 x 20
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 20
 y 48
 end
 arch pstone_1
+x 20
+y 49
+end
+arch swall_1_2_half
 x 20
 y 49
 end
@@ -9655,6 +9699,9 @@ end
 arch awall_2_1_2
 x 22
 end
+arch swall_1_1_half
+x 22
+end
 arch dungeon_magic
 x 22
 y 1
@@ -9663,7 +9710,7 @@ arch pstone_1
 x 22
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 22
 y 1
 end
@@ -9856,10 +9903,10 @@ x 22
 y 20
 end
 arch creator
-connected 2
-lifesave 1
 x 22
 y 20
+connected 2
+lifesave 1
 end
 arch dungeon_magic
 x 22
@@ -10328,14 +10375,14 @@ y 24
 end
 arch fireball
 name fire
-type 0
 hp 0
 dam 0
 wc 0
-attacktype 0
-flying 0
 x 23
 y 24
+type 0
+attacktype 0
+flying 0
 end
 arch dungeon_magic
 x 23
@@ -10442,10 +10489,10 @@ x 23
 y 34
 end
 arch firewall_1
-invisible 1
-connected 2
 x 23
 y 34
+invisible 1
+connected 2
 end
 arch dungeon_magic
 x 23
@@ -10745,9 +10792,9 @@ x 24
 y 20
 end
 arch button_small
-connected 2
 x 24
 y 20
+connected 2
 end
 arch pstone_1
 x 24
@@ -10771,23 +10818,23 @@ y 22
 end
 arch fireball
 name fire
-type 0
 hp 0
 dam 0
 wc 0
-attacktype 0
-flying 0
 x 24
 y 22
+type 0
+attacktype 0
+flying 0
 end
 arch dungeon_magic
 x 24
 y 23
 end
 arch button_small
-connected 1
 x 24
 y 23
+connected 1
 end
 arch pstone_1
 x 24
@@ -11029,11 +11076,15 @@ arch pstone_1
 x 24
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 24
 y 48
 end
 arch pstone_1
+x 24
+y 49
+end
+arch swall_1_2_half
 x 24
 y 49
 end
@@ -11311,10 +11362,10 @@ x 25
 y 28
 end
 arch firewall_6
-invisible 1
-connected 1
 x 25
 y 28
+invisible 1
+connected 1
 end
 arch dungeon_magic
 x 25
@@ -12853,10 +12904,16 @@ arch awall_2_1_2
 x 28
 y 49
 end
+arch dungeon_magic
+x 29
+end
 arch pstone_1
 x 29
 end
 arch awall_2_1_2
+x 29
+end
+arch swall_1_1_half
 x 29
 end
 arch dungeon_magic
@@ -12867,7 +12924,7 @@ arch pstone_1
 x 29
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 29
 y 1
 end
@@ -13327,15 +13384,15 @@ arch pstone_1
 x 29
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 29
 y 48
 end
-arch dungeon_magic
+arch pstone_1
 x 29
 y 49
 end
-arch pstone_1
+arch swall_1_2_half
 x 29
 y 49
 end
@@ -15151,10 +15208,16 @@ arch awall_2_1_2
 x 33
 y 49
 end
+arch dungeon_magic
+x 34
+end
 arch pstone_1
 x 34
 end
 arch awall_2_1_2
+x 34
+end
+arch swall_1_1_half
 x 34
 end
 arch dungeon_magic
@@ -15165,7 +15228,7 @@ arch pstone_1
 x 34
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 34
 y 1
 end
@@ -15577,15 +15640,15 @@ arch pstone_1
 x 34
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 34
 y 48
 end
-arch dungeon_magic
+arch pstone_1
 x 34
 y 49
 end
-arch pstone_1
+arch swall_1_2_half
 x 34
 y 49
 end
@@ -17357,10 +17420,16 @@ arch awall_2_1_2
 x 38
 y 49
 end
+arch dungeon_magic
+x 39
+end
 arch pstone_1
 x 39
 end
 arch awall_2_1_2
+x 39
+end
+arch swall_1_1_half
 x 39
 end
 arch dungeon_magic
@@ -17371,7 +17440,7 @@ arch pstone_1
 x 39
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 39
 y 1
 end
@@ -17799,15 +17868,15 @@ arch pstone_1
 x 39
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 39
 y 48
 end
-arch dungeon_magic
+arch pstone_1
 x 39
 y 49
 end
-arch pstone_1
+arch swall_1_2_half
 x 39
 y 49
 end
@@ -19579,10 +19648,16 @@ arch awall_2_1_2
 x 43
 y 49
 end
+arch dungeon_magic
+x 44
+end
 arch pstone_1
 x 44
 end
 arch awall_2_1_2
+x 44
+end
+arch swall_1_1_half
 x 44
 end
 arch dungeon_magic
@@ -19593,7 +19668,7 @@ arch pstone_1
 x 44
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 44
 y 1
 end
@@ -20109,15 +20184,15 @@ arch pstone_1
 x 44
 y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 44
 y 48
 end
-arch dungeon_magic
+arch pstone_1
 x 44
 y 49
 end
-arch pstone_1
+arch swall_1_2_half
 x 44
 y 49
 end
@@ -21617,7 +21692,7 @@ arch pstone_1
 x 48
 y 5
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 5
 end
@@ -21653,7 +21728,7 @@ arch pstone_1
 x 48
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 9
 end
@@ -21689,7 +21764,7 @@ arch pstone_1
 x 48
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 13
 end
@@ -21733,7 +21808,7 @@ arch pstone_1
 x 48
 y 18
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 18
 end
@@ -21785,7 +21860,7 @@ arch pstone_1
 x 48
 y 24
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 24
 end
@@ -21821,7 +21896,7 @@ arch pstone_1
 x 48
 y 28
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 28
 end
@@ -21865,7 +21940,7 @@ arch pstone_1
 x 48
 y 33
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 33
 end
@@ -21893,7 +21968,7 @@ arch pstone_1
 x 48
 y 36
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 36
 end
@@ -21921,7 +21996,7 @@ arch pstone_1
 x 48
 y 39
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 39
 end
@@ -21957,7 +22032,7 @@ arch pstone_1
 x 48
 y 43
 end
-arch swall_1_3
+arch swall_2_1_2
 x 48
 y 43
 end
@@ -22079,6 +22154,10 @@ arch awall_2_1_1
 x 49
 y 5
 end
+arch swall_1_3_half
+x 49
+y 5
+end
 arch dungeon_magic
 x 49
 y 6
@@ -22124,6 +22203,10 @@ x 49
 y 9
 end
 arch awall_2_1_1
+x 49
+y 9
+end
+arch swall_1_3_half
 x 49
 y 9
 end
@@ -22172,6 +22255,10 @@ x 49
 y 13
 end
 arch awall_2_1_1
+x 49
+y 13
+end
+arch swall_1_3_half
 x 49
 y 13
 end
@@ -22232,6 +22319,10 @@ x 49
 y 18
 end
 arch awall_2_1_1
+x 49
+y 18
+end
+arch swall_1_3_half
 x 49
 y 18
 end
@@ -22304,6 +22395,10 @@ x 49
 y 24
 end
 arch awall_2_1_1
+x 49
+y 24
+end
+arch swall_1_3_half
 x 49
 y 24
 end
@@ -22352,6 +22447,10 @@ x 49
 y 28
 end
 arch awall_2_1_1
+x 49
+y 28
+end
+arch swall_1_3_half
 x 49
 y 28
 end
@@ -22412,6 +22511,10 @@ x 49
 y 33
 end
 arch awall_2_1_1
+x 49
+y 33
+end
+arch swall_1_3_half
 x 49
 y 33
 end
@@ -22448,6 +22551,10 @@ x 49
 y 36
 end
 arch awall_2_1_1
+x 49
+y 36
+end
+arch swall_1_3_half
 x 49
 y 36
 end
@@ -22484,6 +22591,10 @@ x 49
 y 39
 end
 arch awall_2_1_1
+x 49
+y 39
+end
+arch swall_1_3_half
 x 49
 y 39
 end
@@ -22532,6 +22643,10 @@ x 49
 y 43
 end
 arch awall_2_1_1
+x 49
+y 43
+end
+arch swall_1_3_half
 x 49
 y 43
 end

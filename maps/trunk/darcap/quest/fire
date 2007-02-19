@@ -1,15 +1,16 @@
 arch map
+name High Volcano
+difficulty 1
 region darcap
-name fire
+width 36
+height 36
+enter_x 19
+enter_y 31
 msg
 Creator: dtabb
 Email: dtabb@ecst.csuchico.edu
 Date: Fri Oct 15 18:02:23 1993
 endmsg
-width 36
-height 36
-enter_x 19
-enter_y 31
 end
 arch dirtfloor
 end
@@ -404,9 +405,9 @@ x 1
 y 34
 end
 arch trigger
-connected 1
 x 1
 y 34
+connected 1
 end
 arch dirtfloor
 x 1
@@ -835,9 +836,9 @@ x 4
 y 4
 end
 arch trigger
-connected 3
 x 4
 y 4
+connected 3
 end
 arch generate_devil
 x 4
@@ -3571,9 +3572,9 @@ x 17
 y 3
 end
 arch gateTrg1
-connected 4
 x 17
 y 3
+connected 4
 end
 arch dirtfloor
 x 17
@@ -3581,9 +3582,9 @@ y 4
 end
 arch gateTrg1
 maxhp 200
-connected 3
 x 17
 y 4
+connected 3
 end
 arch dirtfloor
 x 17
@@ -3658,18 +3659,18 @@ x 17
 y 17
 end
 arch gateTrg1
-connected 2
 x 17
 y 17
+connected 2
 end
 arch dirtfloor
 x 17
 y 18
 end
 arch gateTrg1
-connected 1
 x 17
 y 18
+connected 1
 end
 arch dirtfloor
 x 17
@@ -3795,9 +3796,9 @@ x 18
 y 3
 end
 arch gateTrg1
-connected 4
 x 18
 y 3
+connected 4
 end
 arch dirtfloor
 x 18
@@ -3805,9 +3806,9 @@ y 4
 end
 arch gateTrg1
 maxhp 200
-connected 3
 x 18
 y 4
+connected 3
 end
 arch dirtfloor
 x 18
@@ -3886,18 +3887,18 @@ x 18
 y 17
 end
 arch gateTrg1
-connected 2
 x 18
 y 17
+connected 2
 end
 arch dirtfloor
 x 18
 y 18
 end
 arch gateTrg1
-connected 1
 x 18
 y 18
+connected 1
 end
 arch dirtfloor
 x 18
@@ -5527,9 +5528,9 @@ x 26
 y 4
 end
 arch trigger
-connected 4
 x 26
 y 4
+connected 4
 end
 arch generate_devil
 x 26
@@ -7356,9 +7357,9 @@ x 34
 y 34
 end
 arch trigger
-connected 2
 x 34
 y 34
+connected 2
 end
 arch fire_elemental
 x 34

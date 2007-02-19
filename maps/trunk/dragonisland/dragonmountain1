@@ -1,12 +1,14 @@
 arch map
+name Dragon Mountain
+difficulty 1
 region stoneville
+width 40
+height 33
 msg
 Creator: Viola Krings
 Email: krings@informatik
 Date: Tue Sep  2 20:21:09 1997
 endmsg
-x 40
-y 33
 end
 arch small_stones
 end
@@ -7660,11 +7662,9 @@ exp 200000
 dam 40
 wc -25
 ac -16
-armour 99
 x 18
 y 12
 speed -0.500000
 level 80
-protected 16383
-vulnerable 0
+armour 0
 end

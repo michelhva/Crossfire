@@ -1,13 +1,14 @@
 arch map
+name Maximum Security Cells
+difficulty 1
 region lakecountry
-name prison_n
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Mar 29 00:31:24 1995
 endmsg
-width 16
-height 16
 end
 arch dungeon_floor
 end
@@ -356,9 +357,9 @@ x 4
 y 4
 end
 arch mover_1
-attacktype 1
 x 4
 y 5
+attacktype 1
 end
 arch dungeon_floor
 x 4
@@ -435,9 +436,9 @@ x 5
 y 4
 end
 arch mover_1
-attacktype 1
 x 5
 y 5
+attacktype 1
 end
 arch dungeon_floor
 x 5
@@ -498,10 +499,10 @@ x 6
 y 1
 end
 arch igate_closed_2
-speed 0.500000
-connected 1
 x 6
 y 1
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -532,10 +533,10 @@ x 6
 y 5
 end
 arch igate_closed_2
-speed 0.500000
-connected 3
 x 6
 y 5
+speed 0.500000
+connected 3
 end
 arch dungeon_floor
 x 6
@@ -569,10 +570,10 @@ x 6
 y 9
 end
 arch igate_closed_2
+x 6
+y 9
 speed 0.500000
 connected 4
-x 6
-y 9
 end
 arch dungeon_floor
 x 6
@@ -606,10 +607,10 @@ x 6
 y 13
 end
 arch igate_closed_2
-speed 0.500000
-connected 5
 x 6
 y 13
+speed 0.500000
+connected 5
 end
 arch dungeon_floor
 x 6
@@ -638,9 +639,9 @@ x 7
 y 1
 end
 arch button_handle
-connected 1
 x 7
 y 1
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -651,9 +652,9 @@ x 7
 y 3
 end
 arch button_handle
-connected 2
 x 7
 y 3
+connected 2
 end
 arch dungeon_floor
 x 7
@@ -664,9 +665,9 @@ x 7
 y 5
 end
 arch button_handle
-connected 3
 x 7
 y 5
+connected 3
 end
 arch dungeon_floor
 x 7
@@ -689,9 +690,9 @@ x 7
 y 10
 end
 arch button_handle
-connected 4
 x 7
 y 10
+connected 4
 end
 arch dungeon_floor
 x 7
@@ -710,9 +711,9 @@ x 7
 y 14
 end
 arch button_handle
-connected 5
 x 7
 y 14
+connected 5
 end
 arch dungeon_floor
 x 7
@@ -752,10 +753,10 @@ x 8
 y 3
 end
 arch igate_closed_2
-speed 0.500000
-connected 2
 x 8
 y 3
+speed 0.500000
+connected 2
 end
 arch dungeon_floor
 x 8
@@ -1559,10 +1560,10 @@ end
 arch big_wiz
 name Fiery, Wist's fervent pupil
 hp 5500
-carrying 23700
-invisible 1
 x 1
 y 8
+carrying 23700
+invisible 1
 arch chalice
 name chalice of fire
 end
@@ -1585,9 +1586,9 @@ y 4
 end
 arch jessyb
 name Joey
-carrying 75
 x 11
 y 3
+carrying 75
 arch note
 msg
 My heart is held by Grunter. Help me

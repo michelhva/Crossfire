@@ -1,13 +1,13 @@
 arch map
-region brest
 name amphis
+region brest
+width 80
+height 50
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:23:34 1994
 endmsg
-x 80
-y 50
 end
 arch dungeon_floor
 end
@@ -4119,7 +4119,7 @@ end
 arch sign
 msg
 Private Ltd
- rehersal
+rehersal
 Do not disturb
 endmsg
 x 15

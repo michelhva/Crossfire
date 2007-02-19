@@ -1,7 +1,8 @@
 arch map
-region lakecountry
+name Marsh Maze
 reset_timeout 7200
 difficulty 9
+region lakecountry
 width 20
 height 20
 enter_x 1
@@ -127,9 +128,9 @@ y 5
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
+The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
@@ -746,10 +747,6 @@ arch swamp
 x 7
 y 8
 end
-arch ent
-x 7
-y 8
-end
 arch swamp
 x 7
 y 9
@@ -986,9 +983,9 @@ y 17
 end
 arch magic_mouth
 msg
-  The marsh comes to life at this
+The marsh comes to life at this
 section. Mud stirring and and turns.
-  A big mouth of mud forms. It seems to 
+A big mouth of mud forms. It seems to
 sense you. It rises and hesitates before
 you, as if regarding you
 for permission.
@@ -1059,10 +1056,6 @@ x 10
 y 8
 end
 arch swamp
-x 10
-y 9
-end
-arch ent
 x 10
 y 9
 end
@@ -2024,4 +2017,12 @@ end
 arch biglake_se
 x 19
 y 19
+end
+arch ent
+x 7
+y 8
+end
+arch ent
+x 10
+y 9
 end

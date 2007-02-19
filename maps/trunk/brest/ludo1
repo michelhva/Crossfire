@@ -1,13 +1,14 @@
 arch map
+name Tower of Ludo, Level 1
+difficulty 1
 region brest
-name ludo1
+width 42
+height 22
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 20:44:01 1994
 endmsg
-width 42
-height 22
 end
 arch woodfloor
 end
@@ -1901,10 +1902,6 @@ arch woodfloor
 x 11
 y 19
 end
-arch giant
-x 11
-y 19
-end
 arch woodfloor
 x 11
 y 20
@@ -2071,10 +2068,6 @@ arch woodfloor
 x 12
 y 19
 end
-arch giant
-x 12
-y 19
-end
 arch woodfloor
 x 12
 y 20
@@ -2222,10 +2215,6 @@ x 13
 y 18
 end
 arch woodfloor
-x 13
-y 19
-end
-arch giant
 x 13
 y 19
 end
@@ -2379,10 +2368,6 @@ arch woodfloor
 x 14
 y 19
 end
-arch giant
-x 14
-y 19
-end
 arch woodfloor
 x 14
 y 20
@@ -2533,10 +2518,6 @@ arch woodfloor
 x 15
 y 19
 end
-arch giant
-x 15
-y 19
-end
 arch woodfloor
 x 15
 y 20
@@ -2684,10 +2665,6 @@ x 16
 y 18
 end
 arch woodfloor
-x 16
-y 19
-end
-arch giant
 x 16
 y 19
 end
@@ -6776,6 +6753,14 @@ name Ludo the mighty
 x 9
 y 8
 end
+arch giant
+x 11
+y 19
+end
+arch giant
+x 12
+y 19
+end
 arch cobra
 x 13
 y 13
@@ -6784,6 +6769,10 @@ arch cobra
 x 13
 y 15
 end
+arch giant
+x 13
+y 19
+end
 arch cobra
 x 14
 y 13
@@ -6791,6 +6780,10 @@ end
 arch cobra
 x 14
 y 15
+end
+arch giant
+x 14
+y 19
 end
 arch dragon
 x 15
@@ -6807,6 +6800,14 @@ end
 arch dragon
 x 15
 y 16
+end
+arch giant
+x 15
+y 19
+end
+arch giant
+x 16
+y 19
 end
 arch dragon
 x 17

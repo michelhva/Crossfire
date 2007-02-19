@@ -1,14 +1,16 @@
 arch map
+name Permanent Appartments
+difficulty 1
 region santodominion
+width 11
+height 10
+enter_x 5
+enter_y 1
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed Nov 15 15:18:26 2000
 endmsg
-hp 5
-sp 1
-x 11
-y 10
 end
 arch blocked
 end
@@ -342,8 +344,8 @@ slaying platinacoin
 food 300
 x 5
 y 2
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -354,8 +356,8 @@ arch igate_closed_1
 x 5
 y 3
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 5

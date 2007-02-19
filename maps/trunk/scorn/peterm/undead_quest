@@ -1,15 +1,16 @@
 arch map
+name Undead Quest
+difficulty 1
 region scorn
-name undead_quest
+width 25
+height 21
+enter_x 23
+enter_y 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun  5 21:56:20 2000
 endmsg
-hp 23
-sp 19
-x 25
-y 21
 end
 arch pstone_1
 end
