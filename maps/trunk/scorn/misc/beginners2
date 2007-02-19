@@ -1,13 +1,14 @@
 arch map
+name Beginners2
+difficulty 1
 region scorn
-name beginners2
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jun 19 16:21:03 1997
 endmsg
-width 16
-height 16
 end
 arch woodfloor
 end
@@ -378,7 +379,7 @@ arch woodfloor
 x 3
 y 6
 end
-arch wwall_2_1_2
+arch wwall_win2
 x 3
 y 6
 end
@@ -504,7 +505,7 @@ arch woodfloor
 x 4
 y 10
 end
-arch wwall_2_1_2
+arch wwall_win2
 x 4
 y 10
 end
@@ -1070,7 +1071,7 @@ arch woodfloor
 x 10
 y 3
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 10
 y 3
 end
@@ -1102,7 +1103,7 @@ arch woodfloor
 x 10
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 10
 y 7
 end
@@ -1209,9 +1210,9 @@ x 11
 y 7
 end
 arch button_lever
-connected 1
 x 11
 y 7
+connected 1
 end
 arch woodfloor
 x 11
@@ -1226,9 +1227,9 @@ x 11
 y 9
 end
 arch button_lever
-connected 1
 x 11
 y 9
+connected 1
 end
 arch woodfloor
 x 11
@@ -1247,10 +1248,6 @@ x 11
 y 13
 end
 arch woodfloor
-x 11
-y 14
-end
-arch generate_skeleton
 x 11
 y 14
 end
@@ -1301,9 +1298,9 @@ x 12
 y 8
 end
 arch spikes_closed
-connected 1
 x 12
 y 8
+connected 1
 end
 arch woodfloor
 x 12
@@ -1328,6 +1325,14 @@ end
 arch woodfloor
 x 12
 y 14
+end
+arch generate_zombie
+other_arch skeleton
+hp 75
+maxhp 75
+x 12
+y 14
+speed 0.0060
 end
 arch woodfloor
 x 12
@@ -1376,9 +1381,9 @@ x 13
 y 8
 end
 arch spikes_closed
-connected 1
 x 13
 y 8
+connected 1
 end
 arch woodfloor
 x 13
