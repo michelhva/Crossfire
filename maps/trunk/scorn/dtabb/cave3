@@ -1,13 +1,14 @@
 arch map
+name Goblin Den
+difficulty 1
 region scorn
-name cave2
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 19 03:52:51 1994
 endmsg
-width 20
-height 20
 end
 arch dirtfloor
 end

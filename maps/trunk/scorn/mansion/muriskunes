@@ -1,9 +1,11 @@
 arch map
+name Scorn Mansion - Muriskunes
+difficulty 1
 region scorn
-hp 15
-sp 20
-x 32
-y 22
+width 32
+height 22
+enter_x 15
+enter_y 20
 end
 arch dirtfloor
 end

@@ -1,15 +1,16 @@
 arch map
+name Old City
+difficulty 1
 region scornoldcity
-name <untitled>
+width 20
+height 40
+enter_x 39
+enter_y 6
 msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Thu Oct  7 14:46:02 1993
 endmsg
-width 20
-height 40
-enter_x 39
-enter_y 6
 tile_path_4 oldcity15
 end
 arch sea
@@ -524,9 +525,9 @@ x 2
 y 21
 end
 arch ogre
-speed_left -0.580000
 x 2
 y 21
+speed_left -0.580000
 end
 arch medium_stones
 x 2
@@ -537,18 +538,18 @@ x 2
 y 22
 end
 arch ogre
-speed_left -0.580000
 x 2
 y 22
+speed_left -0.580000
 end
 arch medium_stones
 x 2
 y 23
 end
 arch ogre
-speed_left -0.580000
 x 2
 y 23
+speed_left -0.580000
 end
 arch medium_stones
 x 2
@@ -710,9 +711,9 @@ x 3
 y 7
 end
 arch northman
-speed_left -1.000000
 x 3
 y 7
+speed_left -1.000000
 end
 arch medium_stones
 x 3
@@ -743,9 +744,9 @@ x 3
 y 12
 end
 arch devil
-speed_left -0.760000
 x 3
 y 12
+speed_left -0.760000
 end
 arch medium_stones
 x 3
@@ -800,27 +801,27 @@ x 3
 y 21
 end
 arch ogre
-speed_left -0.580000
 x 3
 y 21
+speed_left -0.580000
 end
 arch medium_stones
 x 3
 y 22
 end
 arch ogre
-speed_left -0.580000
 x 3
 y 22
+speed_left -0.580000
 end
 arch medium_stones
 x 3
 y 23
 end
 arch ogre
-speed_left -0.580000
 x 3
 y 23
+speed_left -0.580000
 end
 arch medium_stones
 x 3
@@ -982,9 +983,9 @@ x 4
 y 7
 end
 arch northman
-speed_left -1.000000
 x 4
 y 7
+speed_left -1.000000
 end
 arch medium_stones
 x 4
@@ -1059,27 +1060,27 @@ x 4
 y 21
 end
 arch ogre
-speed_left -0.580000
 x 4
 y 21
+speed_left -0.580000
 end
 arch medium_stones
 x 4
 y 22
 end
 arch ogre
-speed_left -0.580000
 x 4
 y 22
+speed_left -0.580000
 end
 arch medium_stones
 x 4
 y 23
 end
 arch ogre
-speed_left -0.580000
 x 4
 y 23
+speed_left -0.580000
 end
 arch medium_stones
 x 4
@@ -1703,9 +1704,9 @@ x 7
 y 7
 end
 arch northman
-speed_left -1.000000
 x 7
 y 7
+speed_left -1.000000
 end
 arch medium_stones
 x 7
@@ -1728,9 +1729,9 @@ x 7
 y 11
 end
 arch generate_madman
-speed_left -0.160000
 x 7
 y 11
+speed_left -0.160000
 end
 arch medium_stones
 x 7
@@ -1964,9 +1965,9 @@ x 8
 y 7
 end
 arch northman
-speed_left -1.000000
 x 8
 y 7
+speed_left -1.000000
 end
 arch medium_stones
 x 8
@@ -2033,18 +2034,18 @@ x 8
 y 19
 end
 arch ogre
-speed_left -0.580000
 x 8
 y 19
+speed_left -0.580000
 end
 arch medium_stones
 x 8
 y 20
 end
 arch ogre
-speed_left -0.580000
 x 8
 y 20
+speed_left -0.580000
 end
 arch medium_stones
 x 8
@@ -2262,18 +2263,18 @@ x 9
 y 19
 end
 arch goblin
-speed_left -0.700000
 x 9
 y 19
+speed_left -0.700000
 end
 arch medium_stones
 x 9
 y 20
 end
 arch goblin
-speed_left -0.700000
 x 9
 y 20
+speed_left -0.700000
 end
 arch medium_stones
 x 9
@@ -2518,18 +2519,18 @@ x 10
 y 19
 end
 arch goblin
-speed_left -0.700000
 x 10
 y 19
+speed_left -0.700000
 end
 arch medium_stones
 x 10
 y 20
 end
 arch goblin
-speed_left -0.700000
 x 10
 y 20
+speed_left -0.700000
 end
 arch medium_stones
 x 10
@@ -2687,9 +2688,9 @@ x 11
 y 4
 end
 arch northman
-speed_left -1.000000
 x 11
 y 4
+speed_left -1.000000
 end
 arch medium_stones
 x 11
@@ -2772,18 +2773,18 @@ x 11
 y 19
 end
 arch goblin
-speed_left -0.700000
 x 11
 y 19
+speed_left -0.700000
 end
 arch medium_stones
 x 11
 y 20
 end
 arch goblin
-speed_left -0.700000
 x 11
 y 20
+speed_left -0.700000
 end
 arch medium_stones
 x 11
@@ -3347,9 +3348,9 @@ x 14
 y 5
 end
 arch northman
-speed_left -1.000000
 x 14
 y 5
+speed_left -1.000000
 end
 arch medium_stones
 x 14
@@ -3539,18 +3540,18 @@ x 15
 y 3
 end
 arch northman
-speed_left -1.000000
 x 15
 y 3
+speed_left -1.000000
 end
 arch medium_stones
 x 15
 y 4
 end
 arch northman
-speed_left -1.000000
 x 15
 y 4
+speed_left -1.000000
 end
 arch medium_stones
 x 15
@@ -3962,18 +3963,18 @@ x 17
 y 3
 end
 arch northman
-speed_left -1.000000
 x 17
 y 3
+speed_left -1.000000
 end
 arch medium_stones
 x 17
 y 4
 end
 arch northman
-speed_left -1.000000
 x 17
 y 4
+speed_left -1.000000
 end
 arch medium_stones
 x 17
@@ -4179,36 +4180,36 @@ x 18
 y 1
 end
 arch northman
-speed_left -1.000000
 x 18
 y 1
+speed_left -1.000000
 end
 arch medium_stones
 x 18
 y 2
 end
 arch northman
-speed_left -1.000000
 x 18
 y 2
+speed_left -1.000000
 end
 arch medium_stones
 x 18
 y 3
 end
 arch northman
-speed_left -1.000000
 x 18
 y 3
+speed_left -1.000000
 end
 arch medium_stones
 x 18
 y 4
 end
 arch northman
-speed_left -1.000000
 x 18
 y 4
+speed_left -1.000000
 end
 arch medium_stones
 x 18

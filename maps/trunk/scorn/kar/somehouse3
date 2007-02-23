@@ -1,13 +1,14 @@
 arch map
+name Friendly Giant's Tower
+difficulty 1
 region scorn
-name <untitled>
+width 15
+height 15
 msg
 Creator:
 Email:
 Date: Fri Oct 15 17:39:31 1993
 endmsg
-width 15
-height 15
 end
 arch dirtfloor
 end
@@ -118,10 +119,10 @@ x 1
 y 2
 end
 arch gate_closed_1
-speed 0.500000
-connected 9
 x 1
 y 2
+speed 0.500000
+connected 9
 end
 arch dirtfloor
 x 1
@@ -157,9 +158,9 @@ y 8
 end
 arch locked_door1
 slaying abc
-blocksview 1
 x 1
 y 8
+blocksview 1
 end
 arch dirtfloor
 x 1
@@ -533,16 +534,16 @@ arch timberwall_1_3
 x 5
 y 8
 end
-arch dirtfloor
-x 5
-y 9
-end
 arch magic_ear
 msg
 @match key|Key
 You hear a well-oiled door open.
 endmsg
+x 5
+y 9
 connected 9
+end
+arch dirtfloor
 x 5
 y 9
 end
@@ -778,9 +779,9 @@ x 7
 y 13
 end
 arch igate_closed_2
-connected 1
 x 7
 y 13
+connected 1
 end
 arch dirtfloor
 x 7
@@ -841,9 +842,9 @@ x 8
 y 7
 end
 arch door_look_1
-blocksview 1
 x 8
 y 7
+blocksview 1
 end
 arch magic_mouth
 msg
@@ -967,9 +968,9 @@ x 9
 y 12
 end
 arch door_look_2
-blocksview 1
 x 9
 y 12
+blocksview 1
 end
 arch dirtfloor
 x 9
@@ -1057,9 +1058,9 @@ x 10
 y 10
 end
 arch button_lever
-connected 1
 x 10
 y 10
+connected 1
 end
 arch dirtfloor
 x 10
@@ -1349,20 +1350,20 @@ x 13
 y 9
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 13
 y 9
+speed 0.500000
+connected 1
 end
 arch dirtfloor
 x 13
 y 10
 end
 arch gate_closed_1
-speed 0.500000
-connected 9
 x 13
 y 10
+speed 0.500000
+connected 9
 end
 arch dirtfloor
 x 13
@@ -1530,15 +1531,15 @@ Ok, I give you key.  Here, it in corner.
 @match *
 Leave me alone... <grumble>
 endmsg
-exp 1
-speed 1.0
-dam 50
-wc -20
 hp 1250
 maxhp 1250
+exp 1
+dam 50
+wc -20
 ac -20
-friendly 1
-stand_still 1
 x 5
 y 9
+speed 1.0
+friendly 1
+stand_still 1
 end

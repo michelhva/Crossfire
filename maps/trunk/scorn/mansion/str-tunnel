@@ -1,16 +1,17 @@
 arch map
+name Scorn Mansion - Strange Tunnel
+difficulty 1
 region scorn
-name str-tunnel
+darkness 1
+width 31
+height 11
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 00:59:37 1994
 endmsg
-width 31
-height 11
-enter_x 1
-enter_y 1
-darkness 1
 end
 arch medium_stones
 end
@@ -87,11 +88,11 @@ x 1
 y 1
 end
 arch stair_3_up
+slaying stronghold
 msg
 Ah! You have entered the
 small stronghold of Scorn.
 endmsg
-slaying stronghold
 hp 6
 sp 28
 x 1
@@ -180,9 +181,9 @@ x 2
 y 2
 end
 arch button_handle
-connected 96
 x 2
 y 2
+connected 96
 end
 arch medium_stones
 x 2
@@ -259,10 +260,10 @@ x 3
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 3
 y 1
+speed 0.500000
+connected 96
 end
 arch medium_stones
 x 3
@@ -347,10 +348,10 @@ x 4
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 4
 y 1
+speed 0.500000
+connected 96
 end
 arch medium_stones
 x 4
@@ -365,10 +366,10 @@ x 4
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 4
 y 3
+speed 0.500000
+connected 96
 end
 arch medium_stones
 x 4
@@ -429,38 +430,38 @@ x 5
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 5
 y 1
+speed 0.500000
+connected 96
 end
 arch medium_stones
 x 5
 y 2
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 5
 y 2
+speed 0.500000
+connected 96
 end
 arch medium_stones
 x 5
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 96
 x 5
 y 3
+speed 0.500000
+connected 96
 end
 arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 5
 y 4
+connected 1
 end
 arch medium_stones
 x 5
@@ -666,8 +667,8 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 8
+connected 1
 end
 arch medium_stones
 x 8
@@ -853,9 +854,9 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 10
 y 4
+connected 1
 end
 arch medium_stones
 x 10
@@ -898,9 +899,9 @@ x 10
 y 9
 end
 arch block_door_open
-connected 96
 x 10
 y 9
+connected 96
 end
 arch medium_stones
 x 10
@@ -981,9 +982,9 @@ x 11
 y 9
 end
 arch block_door_open
+x 11
+y 9
 connected 96
-x 11
-y 9
 end
 arch medium_stones
 x 11
@@ -1125,9 +1126,9 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 13
 y 8
+connected 1
 end
 arch medium_stones
 x 13
@@ -1253,9 +1254,9 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 15
 y 4
+connected 1
 end
 arch medium_stones
 x 15
@@ -1507,9 +1508,9 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 18
 y 8
+connected 1
 end
 arch medium_stones
 x 18
@@ -1611,9 +1612,9 @@ arch magic_ear
 msg
 @match filur
 endmsg
-connected 1
 x 20
 y 3
+connected 1
 end
 arch medium_stones
 x 20
@@ -1660,10 +1661,10 @@ x 20
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 2
 x 20
 y 8
+speed 0.500000
+connected 2
 end
 arch medium_stones
 x 20
@@ -1747,10 +1748,10 @@ x 21
 y 8
 end
 arch block_door_closed
-speed 0.500000
-connected 2
 x 21
 y 8
+speed 0.500000
+connected 2
 end
 arch medium_stones
 x 21
@@ -1873,9 +1874,9 @@ x 23
 y 4
 end
 arch block_door_closed
-connected 96
 x 23
 y 4
+connected 96
 end
 arch medium_stones
 x 23
@@ -1911,19 +1912,19 @@ msg
 @match *
 Grr... You disturb me sleep!
 endmsg
-attacktype 1
+Wis 20
 hp 200
 maxhp 200
-Wis 20
-randomitems none
 x 23
 y 8
+attacktype 1
+randomitems none
 arch morningstar
 name Filur's morningstar
-magic 1
-value 100
 dam 13
+value 100
 weight 16000
+magic 1
 end
 arch head
 name Filur's head
@@ -1979,9 +1980,9 @@ x 24
 y 4
 end
 arch block_door_closed
-connected 96
 x 24
 y 4
+connected 96
 end
 arch medium_stones
 x 24
@@ -2058,18 +2059,18 @@ x 25
 y 3
 end
 arch block_door_closed
-connected 96
 x 25
 y 3
+connected 96
 end
 arch medium_stones
 x 25
 y 4
 end
 arch block_door_closed
-connected 96
 x 25
 y 4
+connected 96
 end
 arch medium_stones
 x 25
@@ -2130,9 +2131,9 @@ x 26
 y 1
 end
 arch button_handle
-connected 96
 x 26
 y 1
+connected 96
 end
 arch medium_stones
 x 26
@@ -2143,9 +2144,9 @@ x 26
 y 3
 end
 arch block_door_closed
-connected 96
 x 26
 y 3
+connected 96
 end
 arch medium_stones
 x 26
@@ -2365,11 +2366,11 @@ A grumpy voice shouts:
 Whoever challenges Filur to fight,
 will end up in Filur's stew tonight!
 endmsg
+x 28
+y 9
 connected 2
 walk_on 0
 fly_on 0
-x 28
-y 9
 end
 arch medium_stones
 x 28
@@ -2377,17 +2378,17 @@ y 9
 end
 arch button_small
 name 2
-weight 1000
-connected 2
 x 28
 y 9
+weight 1000
+connected 2
 end
 arch creator
 name 1
 other_arch ten_kilo
-connected 1
 x 28
 y 9
+connected 1
 end
 arch medium_stones
 x 28

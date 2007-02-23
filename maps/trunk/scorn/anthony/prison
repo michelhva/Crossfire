@@ -1,19 +1,23 @@
 arch map
+name Prison
+difficulty 1
 region scorn
-name prison
+width 21
+height 25
+enter_x 9
+enter_y 23
 msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Sat Dec 26 15:22:45 1998
 endmsg
-hp 9
-sp 23
-x 21
-y 25
 end
 arch cobblestones2
 end
 arch cwall_2_1_2
+end
+arch cobblestones2
+y 1
 end
 arch bwall_2_2_2
 y 1
@@ -78,8 +82,14 @@ end
 arch grass
 y 21
 end
+arch cobblestones2
+y 22
+end
 arch bwall_2_2_2
 y 22
+end
+arch cobblestones2
+y 23
 end
 arch bwall_2_2_1
 y 23
@@ -93,9 +103,17 @@ end
 arch cwall_2_1_2
 x 1
 end
+arch cobblestones2
+x 1
+y 1
+end
 arch bwall_2_2_3
 x 1
 y 1
+end
+arch flagstone
+x 1
+y 2
 end
 arch bwall_4
 x 1
@@ -113,13 +131,25 @@ arch swall_2_1_1
 x 1
 y 4
 end
+arch flagstone
+x 1
+y 5
+end
 arch bwall_1_1
 x 1
 y 5
 end
+arch flagstone
+x 1
+y 6
+end
 arch bwall_3_2
 x 1
 y 6
+end
+arch flagstone
+x 1
+y 7
 end
 arch bwall_1_2
 x 1
@@ -133,13 +163,25 @@ arch swall_2_1_1
 x 1
 y 8
 end
+arch flagstone
+x 1
+y 9
+end
 arch bwall_1_1
 x 1
 y 9
 end
+arch flagstone
+x 1
+y 10
+end
 arch bwall_3_2
 x 1
 y 10
+end
+arch flagstone
+x 1
+y 11
 end
 arch bwall_1_2
 x 1
@@ -153,13 +195,25 @@ arch swall_2_1_1
 x 1
 y 12
 end
+arch flagstone
+x 1
+y 13
+end
 arch bwall_1_1
 x 1
 y 13
 end
+arch flagstone
+x 1
+y 14
+end
 arch bwall_3_2
 x 1
 y 14
+end
+arch flagstone
+x 1
+y 15
 end
 arch bwall_1_2
 x 1
@@ -173,13 +227,25 @@ arch swall_2_1_1
 x 1
 y 16
 end
+arch flagstone
+x 1
+y 17
+end
 arch bwall_1_1
 x 1
 y 17
 end
+arch flagstone
+x 1
+y 18
+end
 arch bwall_3_2
 x 1
 y 18
+end
+arch flagstone
+x 1
+y 19
 end
 arch bwall_1_2
 x 1
@@ -193,13 +259,25 @@ arch swall_2_1_1
 x 1
 y 20
 end
+arch flagstone
+x 1
+y 21
+end
 arch bwall_1_1
 x 1
 y 21
 end
+arch cobblestones2
+x 1
+y 22
+end
 arch bwall_4
 x 1
 y 22
+end
+arch cobblestones2
+x 1
+y 23
 end
 arch bwall_2_2_4
 x 1
@@ -218,6 +296,10 @@ end
 arch cobblestones2
 x 2
 y 1
+end
+arch flagstone
+x 2
+y 2
 end
 arch bwall_2_1_2
 x 2
@@ -244,6 +326,10 @@ arch table
 x 2
 y 5
 end
+arch flagstone
+x 2
+y 6
+end
 arch bwall_2_1_2
 x 2
 y 6
@@ -259,6 +345,10 @@ end
 arch flagstone
 x 2
 y 9
+end
+arch flagstone
+x 2
+y 10
 end
 arch bwall_2_1_2
 x 2
@@ -280,6 +370,10 @@ arch chair_1.4
 x 2
 y 13
 end
+arch flagstone
+x 2
+y 14
+end
 arch bwall_2_1_2
 x 2
 y 14
@@ -300,6 +394,10 @@ arch flagstone
 x 2
 y 17
 end
+arch flagstone
+x 2
+y 18
+end
 arch bwall_2_1_2
 x 2
 y 18
@@ -319,6 +417,10 @@ end
 arch table
 x 2
 y 21
+end
+arch cobblestones2
+x 2
+y 22
 end
 arch bwall_2_1_2
 x 2
@@ -347,6 +449,10 @@ name tunnel dirt
 x 3
 y 1
 end
+arch flagstone
+x 3
+y 2
+end
 arch bwall_2_1_2
 x 3
 y 2
@@ -372,6 +478,10 @@ arch flagstone
 x 3
 y 5
 end
+arch flagstone
+x 3
+y 6
+end
 arch bwall_2_1_2
 x 3
 y 6
@@ -391,6 +501,10 @@ end
 arch flagstone
 x 3
 y 9
+end
+arch flagstone
+x 3
+y 10
 end
 arch bwall_2_1_2
 x 3
@@ -412,6 +526,10 @@ arch flagstone
 x 3
 y 13
 end
+arch flagstone
+x 3
+y 14
+end
 arch bwall_2_1_2
 x 3
 y 14
@@ -432,6 +550,10 @@ arch chair_1.3
 x 3
 y 17
 end
+arch flagstone
+x 3
+y 18
+end
 arch bwall_2_1_2
 x 3
 y 18
@@ -451,6 +573,10 @@ end
 arch flagstone
 x 3
 y 21
+end
+arch cobblestones2
+x 3
+y 22
 end
 arch bwall_2_1_2
 x 3
@@ -482,6 +608,10 @@ sp 3
 x 4
 y 1
 end
+arch flagstone
+x 4
+y 2
+end
 arch bwall_2_1_2
 x 4
 y 2
@@ -510,6 +640,10 @@ arch flagstone
 x 4
 y 5
 end
+arch flagstone
+x 4
+y 6
+end
 arch bwall_2_1_2
 x 4
 y 6
@@ -525,6 +659,10 @@ end
 arch flagstone
 x 4
 y 9
+end
+arch flagstone
+x 4
+y 10
 end
 arch bwall_2_1_2
 x 4
@@ -555,6 +693,10 @@ arch flagstone
 x 4
 y 13
 end
+arch flagstone
+x 4
+y 14
+end
 arch bwall_2_1_2
 x 4
 y 14
@@ -574,6 +716,10 @@ end
 arch flagstone
 x 4
 y 17
+end
+arch flagstone
+x 4
+y 18
 end
 arch bwall_2_1_2
 x 4
@@ -612,6 +758,10 @@ arch flagstone
 x 4
 y 21
 end
+arch cobblestones2
+x 4
+y 22
+end
 arch bwall_2_1_2
 x 4
 y 22
@@ -639,6 +789,10 @@ name tunnel dirt
 x 5
 y 1
 end
+arch flagstone
+x 5
+y 2
+end
 arch bwall_2_1_2
 x 5
 y 2
@@ -654,6 +808,10 @@ end
 arch flagstone
 x 5
 y 5
+end
+arch flagstone
+x 5
+y 6
 end
 arch bwall_2_1_2
 x 5
@@ -696,6 +854,10 @@ arch chair_1.3
 x 5
 y 9
 end
+arch flagstone
+x 5
+y 10
+end
 arch bwall_2_1_2
 x 5
 y 10
@@ -712,6 +874,10 @@ arch flagstone
 x 5
 y 13
 end
+arch flagstone
+x 5
+y 14
+end
 arch bwall_2_1_2
 x 5
 y 14
@@ -727,6 +893,10 @@ end
 arch flagstone
 x 5
 y 17
+end
+arch flagstone
+x 5
+y 18
 end
 arch bwall_2_1_2
 x 5
@@ -747,6 +917,10 @@ end
 arch chair_1.3
 x 5
 y 21
+end
+arch cobblestones2
+x 5
+y 22
 end
 arch bwall_2_1_2
 x 5
@@ -769,6 +943,10 @@ end
 arch cobblestones2
 x 6
 y 1
+end
+arch flagstone
+x 6
+y 2
 end
 arch bwall_2_1_2
 x 6
@@ -800,6 +978,10 @@ arch swall_1_1
 x 6
 y 5
 end
+arch flagstone
+x 6
+y 6
+end
 arch bwall_1_3
 x 6
 y 6
@@ -827,6 +1009,10 @@ end
 arch swall_2_1_1
 x 6
 y 9
+end
+arch flagstone
+x 6
+y 10
 end
 arch bwall_1_3
 x 6
@@ -856,6 +1042,10 @@ arch swall_2_1_1
 x 6
 y 13
 end
+arch flagstone
+x 6
+y 14
+end
 arch bwall_1_3
 x 6
 y 14
@@ -864,7 +1054,7 @@ arch flagstone
 x 6
 y 15
 end
-arch swall_2_1_1
+arch swall_1_2
 x 6
 y 15
 end
@@ -882,9 +1072,13 @@ arch flagstone
 x 6
 y 17
 end
-arch swall_2_1_1
+arch swall_1_1
 x 6
 y 17
+end
+arch flagstone
+x 6
+y 18
 end
 arch bwall_1_3
 x 6
@@ -906,9 +1100,17 @@ arch swall_1_2
 x 6
 y 20
 end
+arch flagstone
+x 6
+y 21
+end
 arch bwall_2_2_2
 x 6
 y 21
+end
+arch cobblestones2
+x 6
+y 22
 end
 arch bwall_3_1
 x 6
@@ -945,6 +1147,10 @@ end
 arch cobblestones2
 x 7
 y 1
+end
+arch flagstone
+x 7
+y 2
 end
 arch bwall_2_1_2
 x 7
@@ -986,8 +1192,8 @@ arch guard
 name goggle eyed guard
 msg
 @match post|game|won
-This post has become the most sought 
-after post amongst the guards. It 
+This post has become the most sought
+after post amongst the guards. It
 has the best view in the prison!
 @match clothes
 Give her clothes, and spoil the view!
@@ -1044,9 +1250,17 @@ arch cobblestones
 x 7
 y 20
 end
+arch cobblestones
+x 7
+y 21
+end
 arch bwall_2_2_3
 x 7
 y 21
+end
+arch cobblestones
+x 7
+y 22
 end
 arch bwall_2_2_4
 x 7
@@ -1086,6 +1300,10 @@ arch cobblestones2
 x 8
 y 1
 end
+arch flagstone
+x 8
+y 2
+end
 arch bwall_2_1_2
 x 8
 y 2
@@ -1106,7 +1324,7 @@ I going to be boiled in oil for
 letting that goblin get away.
 @match *
 I only nodded of for a minute, and
-the goblin prisoner escaped! 
+the goblin prisoner escaped!
 endmsg
 x 8
 y 3
@@ -1242,6 +1460,10 @@ end
 arch cobblestones2
 x 9
 y 1
+end
+arch flagstone
+x 9
+y 2
 end
 arch bwall_2_1_2
 x 9
@@ -1385,6 +1607,10 @@ arch cobblestones2
 x 10
 y 1
 end
+arch flagstone
+x 10
+y 2
+end
 arch bwall_2_1_2
 x 10
 y 2
@@ -1508,6 +1734,10 @@ arch cobblestones2
 x 11
 y 1
 end
+arch flagstone
+x 11
+y 2
+end
 arch bwall_2_1_2
 x 11
 y 2
@@ -1630,6 +1860,10 @@ end
 arch cobblestones2
 x 12
 y 1
+end
+arch flagstone
+x 12
+y 2
 end
 arch bwall_2_1_2
 x 12
@@ -1703,13 +1937,13 @@ arch guard
 name prison guard
 msg
 @match poem|cleric|eric|Eric
-  A priestly young person called Eric,
-   Whilst practicing to be a cleric,
-    Misspelt his god's name,
-     'twas really a shame,
-      And thus ended Eric, the cleric.
+A priestly young person called Eric,
+Whilst practicing to be a cleric,
+Misspelt his god's name,
+'twas really a shame,
+And thus ended Eric, the cleric.
 @match job
-I torment the prisoners! 
+I torment the prisoners!
 Like Eric in the cell right here!
 @match courtyard
 Yes we have it full of captured
@@ -1731,9 +1965,17 @@ arch cobblestones
 x 12
 y 20
 end
+arch cobblestones
+x 12
+y 21
+end
 arch bwall_2_2_2
 x 12
 y 21
+end
+arch cobblestones2
+x 12
+y 22
 end
 arch bwall_2_2_1
 x 12
@@ -1772,6 +2014,10 @@ arch cobblestones2
 x 13
 y 1
 end
+arch flagstone
+x 13
+y 2
+end
 arch bwall_2_1_2
 x 13
 y 2
@@ -1802,6 +2048,10 @@ arch swall_1_1
 x 13
 y 5
 end
+arch flagstone
+x 13
+y 6
+end
 arch bwall_1_4
 x 13
 y 6
@@ -1829,6 +2079,10 @@ end
 arch swall_2_1_1
 x 13
 y 9
+end
+arch flagstone
+x 13
+y 10
 end
 arch bwall_1_4
 x 13
@@ -1858,6 +2112,10 @@ arch swall_2_1_1
 x 13
 y 13
 end
+arch flagstone
+x 13
+y 14
+end
 arch bwall_1_4
 x 13
 y 14
@@ -1886,6 +2144,10 @@ arch swall_2_1_1
 x 13
 y 17
 end
+arch flagstone
+x 13
+y 18
+end
 arch bwall_1_4
 x 13
 y 18
@@ -1898,9 +2160,17 @@ arch cobblestones
 x 13
 y 20
 end
+arch cobblestones
+x 13
+y 21
+end
 arch bwall_2_2_3
 x 13
 y 21
+end
+arch cobblestones2
+x 13
+y 22
 end
 arch bwall_3_1
 x 13
@@ -1938,6 +2208,10 @@ arch cobblestones2
 x 14
 y 1
 end
+arch flagstone
+x 14
+y 2
+end
 arch bwall_2_1_2
 x 14
 y 2
@@ -1953,6 +2227,10 @@ end
 arch flagstone
 x 14
 y 5
+end
+arch flagstone
+x 14
+y 6
 end
 arch bwall_2_1_2
 x 14
@@ -1992,6 +2270,10 @@ arch flagstone
 x 14
 y 9
 end
+arch flagstone
+x 14
+y 10
+end
 arch bwall_2_1_2
 x 14
 y 10
@@ -2007,6 +2289,10 @@ end
 arch flagstone
 x 14
 y 13
+end
+arch flagstone
+x 14
+y 14
 end
 arch bwall_2_1_2
 x 14
@@ -2030,7 +2316,7 @@ torments me with a poem, and my god
 stripped me of my powers. (looks sad)
 @match poem|stripped|powers
 Ask the guard about that, I am sure he'll
-repeat the poem about my demise again. 
+repeat the poem about my demise again.
 And again. And again...
 @match revenge
 Against my god for stripping me of my
@@ -2059,6 +2345,10 @@ arch flagstone
 x 14
 y 17
 end
+arch flagstone
+x 14
+y 18
+end
 arch bwall_2_1_2
 x 14
 y 18
@@ -2079,6 +2369,10 @@ arch button_handle
 x 14
 y 21
 connected 101
+end
+arch cobblestones2
+x 14
+y 22
 end
 arch bwall_2_1_2
 x 14
@@ -2108,6 +2402,10 @@ end
 arch cobblestones2
 x 15
 y 1
+end
+arch flagstone
+x 15
+y 2
 end
 arch bwall_2_1_2
 x 15
@@ -2157,6 +2455,10 @@ arch chair_1.3
 x 15
 y 5
 end
+arch flagstone
+x 15
+y 6
+end
 arch bwall_2_1_2
 x 15
 y 6
@@ -2192,6 +2494,10 @@ endmsg
 x 15
 y 9
 end
+arch flagstone
+x 15
+y 10
+end
 arch bwall_2_1_2
 x 15
 y 10
@@ -2211,6 +2517,10 @@ end
 arch flagstone
 x 15
 y 13
+end
+arch flagstone
+x 15
+y 14
 end
 arch bwall_2_1_2
 x 15
@@ -2232,6 +2542,10 @@ arch chair_1.3
 x 15
 y 17
 end
+arch flagstone
+x 15
+y 18
+end
 arch bwall_2_1_2
 x 15
 y 18
@@ -2247,6 +2561,10 @@ end
 arch cobblestones
 x 15
 y 21
+end
+arch cobblestones2
+x 15
+y 22
 end
 arch bwall_2_1_2
 x 15
@@ -2276,6 +2594,10 @@ arch cobblestones2
 x 16
 y 1
 end
+arch flagstone
+x 16
+y 2
+end
 arch bwall_2_1_2
 x 16
 y 2
@@ -2295,6 +2617,10 @@ end
 arch flagstone
 x 16
 y 5
+end
+arch flagstone
+x 16
+y 6
 end
 arch bwall_2_1_2
 x 16
@@ -2342,6 +2668,10 @@ endmsg
 x 16
 y 9
 end
+arch flagstone
+x 16
+y 10
+end
 arch bwall_2_1_2
 x 16
 y 10
@@ -2366,6 +2696,10 @@ arch chair_1.3
 x 16
 y 13
 end
+arch flagstone
+x 16
+y 14
+end
 arch bwall_2_1_2
 x 16
 y 14
@@ -2385,6 +2719,10 @@ end
 arch flagstone
 x 16
 y 17
+end
+arch flagstone
+x 16
+y 18
 end
 arch bwall_2_1_2
 x 16
@@ -2407,6 +2745,10 @@ arch cobblestones
 x 16
 y 21
 end
+arch cobblestones2
+x 16
+y 22
+end
 arch bwall_2_1_2
 x 16
 y 22
@@ -2425,9 +2767,17 @@ end
 arch cwall_2_1_2
 x 17
 end
+arch cobblestones2
+x 17
+y 1
+end
 arch bwall_2_2_2
 x 17
 y 1
+end
+arch flagstone
+x 17
+y 2
 end
 arch bwall_3_1
 x 17
@@ -2449,6 +2799,10 @@ arch flagstone
 x 17
 y 5
 end
+arch flagstone
+x 17
+y 6
+end
 arch bwall_2_1_2
 x 17
 y 6
@@ -2465,6 +2819,10 @@ arch flagstone
 x 17
 y 9
 end
+arch flagstone
+x 17
+y 10
+end
 arch bwall_2_1_2
 x 17
 y 10
@@ -2480,6 +2838,10 @@ end
 arch flagstone
 x 17
 y 13
+end
+arch flagstone
+x 17
+y 14
 end
 arch bwall_2_1_2
 x 17
@@ -2501,9 +2863,17 @@ arch flagstone
 x 17
 y 17
 end
+arch flagstone
+x 17
+y 18
+end
 arch bwall_3_3
 x 17
 y 18
+end
+arch flagstone
+x 17
+y 19
 end
 arch bwall_2_2_1
 x 17
@@ -2529,9 +2899,17 @@ y 21
 speed 0.500000
 connected 100
 end
+arch cobblestones2
+x 17
+y 22
+end
 arch bwall_3_3
 x 17
 y 22
+end
+arch cobblestones2
+x 17
+y 23
 end
 arch bwall_2_2_1
 x 17
@@ -2547,15 +2925,27 @@ end
 arch cwall_2_1_2
 x 18
 end
+arch cobblestones2
+x 18
+y 1
+end
 arch bwall_3_3
 x 18
 y 1
+end
+arch flagstone
+x 18
+y 2
 end
 arch bwall_3_4
 x 18
 y 2
 end
-arch bwall_2_1_1
+arch flagstone
+x 18
+y 3
+end
+arch bwall_1_2
 x 18
 y 3
 end
@@ -2567,15 +2957,27 @@ arch swall_2_1_1
 x 18
 y 4
 end
-arch bwall_2_1_1
+arch flagstone
 x 18
 y 5
+end
+arch bwall_1_1
+x 18
+y 5
+end
+arch flagstone
+x 18
+y 6
 end
 arch bwall_3_4
 x 18
 y 6
 end
-arch bwall_2_1_1
+arch flagstone
+x 18
+y 7
+end
+arch bwall_1_2
 x 18
 y 7
 end
@@ -2587,15 +2989,27 @@ arch swall_2_1_1
 x 18
 y 8
 end
-arch bwall_2_1_1
+arch flagstone
 x 18
 y 9
+end
+arch bwall_1_1
+x 18
+y 9
+end
+arch flagstone
+x 18
+y 10
 end
 arch bwall_3_4
 x 18
 y 10
 end
-arch bwall_2_1_1
+arch flagstone
+x 18
+y 11
+end
+arch bwall_1_2
 x 18
 y 11
 end
@@ -2607,15 +3021,27 @@ arch swall_2_1_1
 x 18
 y 12
 end
-arch bwall_2_1_1
+arch flagstone
 x 18
 y 13
+end
+arch bwall_1_1
+x 18
+y 13
+end
+arch flagstone
+x 18
+y 14
 end
 arch bwall_3_4
 x 18
 y 14
 end
-arch bwall_2_1_1
+arch flagstone
+x 18
+y 15
+end
+arch bwall_1_2
 x 18
 y 15
 end
@@ -2627,13 +3053,25 @@ arch swall_2_1_1
 x 18
 y 16
 end
-arch bwall_2_1_1
+arch flagstone
 x 18
 y 17
+end
+arch bwall_1_1
+x 18
+y 17
+end
+arch flagstone
+x 18
+y 18
 end
 arch bwall_3_4
 x 18
 y 18
+end
+arch flagstone
+x 18
+y 19
 end
 arch bwall_2_2_4
 x 18
@@ -2673,9 +3111,17 @@ y 21
 speed 0.500000
 connected 100
 end
+arch cobblestones2
+x 18
+y 22
+end
 arch bwall_2_2_3
 x 18
 y 22
+end
+arch cobblestones2
+x 18
+y 23
 end
 arch bwall_3_1
 x 18
@@ -2690,6 +3136,10 @@ x 19
 end
 arch cwall_2_1_2
 x 19
+end
+arch cobblestones2
+x 19
+y 1
 end
 arch bwall_2_1_2
 x 19
@@ -2788,6 +3238,10 @@ x 19
 y 22
 connected 100
 end
+arch cobblestones2
+x 19
+y 23
+end
 arch bwall_2_1_2
 x 19
 y 23
@@ -2801,6 +3255,10 @@ x 20
 end
 arch cwall_2_1_2
 x 20
+end
+arch cobblestones2
+x 20
+y 1
 end
 arch bwall_2_1_2
 x 20
@@ -2893,6 +3351,10 @@ end
 arch cobblestones2
 x 20
 y 22
+end
+arch cobblestones2
+x 20
+y 23
 end
 arch bwall_2_1_2
 x 20

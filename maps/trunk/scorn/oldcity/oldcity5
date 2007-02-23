@@ -1,12 +1,14 @@
 arch map
+name Old City
+difficulty 1
 region scornoldcity
+width 20
+height 40
 msg
 Creator: 
 Email: 
 Date: Tue Oct 19 23:58:16 1993
 endmsg
-x 20
-y 40
 end
 arch medium_stones
 end
@@ -897,7 +899,7 @@ Yes or no will do.
 Very well, White as a ghost, Faster than thee,
 Taller than a mountain, Louder than me,
 Bright as the brightest star, Silent as the best
-thief, what is it that thou doest see? 
+thief, what is it that thou doest see?
 @match no|No
 Very well, bother me no more....Or tomorrow
 you will be Painfully sore
@@ -910,10 +912,6 @@ y 5
 speed_left -1.300000
 unaggressive 1
 end
-arch large_stones
-x 3
-y 6
-end
 arch magic_ear
 msg
 @match Cloud|cloud
@@ -925,6 +923,10 @@ endmsg
 x 3
 y 6
 connected 1
+end
+arch large_stones
+x 3
+y 6
 end
 arch large_stones
 x 3
@@ -3123,7 +3125,7 @@ arch pstone_1
 x 11
 y 39
 end
-arch swall_2_1_2
+arch swall_1_3_half
 x 11
 y 39
 end
@@ -3531,7 +3533,7 @@ arch pstone_1
 x 13
 y 39
 end
-arch swall_2_1_2
+arch swall_1_4_half
 x 13
 y 39
 end

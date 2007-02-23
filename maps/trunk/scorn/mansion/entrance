@@ -1,14 +1,15 @@
 arch map
+name Scorn Mansion - Entrance
+difficulty 1
 region scorn
-name entrance
+width 30
+height 50
+enter_x 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 27 23:34:42 1994
 endmsg
-width 30
-height 50
-enter_x 14
 end
 arch woodfloor
 end
@@ -526,9 +527,9 @@ x 1
 y 37
 end
 arch orc
-speed_left -0.700000
 x 1
 y 37
+speed_left -0.700000
 end
 arch woods_2
 x 1
@@ -667,8 +668,8 @@ y 15
 end
 arch spider
 name small spider
-dam 20
 exp 50
+dam 20
 x 2
 y 15
 end
@@ -1370,9 +1371,9 @@ x 5
 y 9
 end
 arch button_handle
-connected 1
 x 5
 y 9
+connected 1
 end
 arch woodfloor
 x 5
@@ -1649,9 +1650,9 @@ x 6
 y 10
 end
 arch igateTrg2
-connected 1
 x 6
 y 10
+connected 1
 end
 arch woodfloor
 x 6
@@ -1904,9 +1905,9 @@ x 7
 y 9
 end
 arch button_handle
-connected 1
 x 7
 y 9
+connected 1
 end
 arch woodfloor
 x 7
@@ -3074,9 +3075,9 @@ x 11
 y 48
 end
 arch kobold
-speed_left -0.900000
 x 11
 y 48
+speed_left -0.900000
 end
 arch brush
 x 11
@@ -3420,9 +3421,9 @@ x 13
 y 19
 end
 arch grate_closed_1
-connected 96
 x 13
 y 19
+connected 96
 end
 arch grass
 x 13
@@ -3639,9 +3640,9 @@ x 14
 y 19
 end
 arch grate_closed_1
-connected 96
 x 14
 y 19
+connected 96
 end
 arch grass
 x 14
@@ -3859,9 +3860,9 @@ y 18
 end
 arch button_handle
 name Garden gate opener
-connected 96
 x 15
 y 18
+connected 96
 end
 arch woodfloor
 x 15
@@ -3877,9 +3878,9 @@ y 20
 end
 arch button_handle
 name Garden gate opener
-connected 96
 x 15
 y 20
+connected 96
 end
 arch grass
 x 15
@@ -6216,9 +6217,9 @@ x 24
 y 37
 end
 arch goblin
-speed_left -0.900000
 x 24
 y 37
+speed_left -0.900000
 end
 arch hills_rocky
 x 24
