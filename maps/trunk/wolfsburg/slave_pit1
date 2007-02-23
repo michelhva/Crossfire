@@ -1,11 +1,11 @@
 arch map
+name Slave Pits
+difficulty 1
 region wolfsburg
-msg
-endmsg
-hp 1
-sp 1
-x 40
-y 40
+width 40
+height 40
+enter_x 1
+enter_y 1
 end
 arch dirtfloor
 end

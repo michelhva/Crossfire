@@ -1,11 +1,11 @@
 arch map
+name Wolfsburg Prison
+difficulty 1
 region wolfsburg
-msg
-endmsg
-hp 14
-sp 1
-x 30
-y 25
+width 30
+height 25
+enter_x 14
+enter_y 1
 end
 arch dungeon_floor
 end

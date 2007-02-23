@@ -1,10 +1,9 @@
 arch map
+name Run-down Church
+difficulty 1
 region wolfsburg
-name piratechurch
-msg
-endmsg
-x 11
-y 17
+width 11
+height 17
 end
 arch woodfloor
 end
@@ -121,7 +120,7 @@ name highlander
 msg
 @match *
 This is Holy Ground.  You cannot defile
-it with combat! 
+it with combat!
 endmsg
 hp 100
 x 1
@@ -181,93 +180,93 @@ arch woodfloor
 x 1
 y 13
 end
+arch wwall_1_3
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
+end
+arch pirate
+x 1
+y 14
+end
+arch woodfloor
+x 1
+y 15
+end
+arch pirate
+x 1
+y 15
+end
+arch woodfloor
+x 1
+y 16
+end
+arch wwall_2_1_2
+x 1
+y 16
+end
+arch woodfloor
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
 arch door_look_1
-x 1
-y 13
-end
-arch woodfloor
-x 1
-y 14
-end
-arch pirate
-x 1
-y 14
-end
-arch woodfloor
-x 1
-y 15
-end
-arch pirate
-x 1
-y 15
-end
-arch woodfloor
-x 1
-y 16
-end
-arch wwall_2_1_2
-x 1
-y 16
-end
-arch woodfloor
-x 2
-end
-arch wwall_2_1_2
-x 2
-end
-arch woodfloor
-x 2
-y 1
-end
-arch woodfloor
-x 2
-y 2
-end
-arch woodfloor
-x 2
-y 3
-end
-arch woodfloor
-x 2
-y 4
-end
-arch woodfloor
-x 2
-y 5
-end
-arch woodfloor
-x 2
-y 6
-end
-arch woodfloor
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 8
-end
-arch woodfloor
-x 2
-y 9
-end
-arch woodfloor
-x 2
-y 10
-end
-arch woodfloor
-x 2
-y 11
-end
-arch woodfloor
-x 2
-y 12
-end
-arch woodfloor
-x 2
-y 13
-end
-arch wwall_2_1_2
 x 2
 y 13
 end
@@ -385,7 +384,7 @@ arch woodfloor
 x 3
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 3
 y 13
 end
@@ -798,7 +797,7 @@ arch woodfloor
 x 7
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 7
 y 13
 end
@@ -882,95 +881,95 @@ y 12
 end
 arch woodfloor
 x 8
-y 13
-end
-arch wwall_2_1_2
-x 8
-y 13
-end
-arch woodfloor
-x 8
-y 14
-end
-arch pirate
-x 8
-y 14
-end
-arch woodfloor
-x 8
-y 15
-end
-arch pirate
-x 8
-y 15
-end
-arch woodfloor
-x 8
-y 16
-end
-arch wwall_2_1_2
-x 8
-y 16
-end
-arch woodfloor
-x 9
-end
-arch wwall_2_1_2
-x 9
-end
-arch woodfloor
-x 9
-y 1
-end
-arch woodfloor
-x 9
-y 2
-end
-arch woodfloor
-x 9
-y 3
-end
-arch woodfloor
-x 9
-y 4
-end
-arch woodfloor
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
-end
-arch woodfloor
-x 9
-y 8
-end
-arch woodfloor
-x 9
-y 9
-end
-arch woodfloor
-x 9
-y 10
-end
-arch woodfloor
-x 9
-y 11
-end
-arch woodfloor
-x 9
-y 12
-end
-arch woodfloor
-x 9
 y 13
 end
 arch door_look_1
+x 8
+y 13
+end
+arch woodfloor
+x 8
+y 14
+end
+arch pirate
+x 8
+y 14
+end
+arch woodfloor
+x 8
+y 15
+end
+arch pirate
+x 8
+y 15
+end
+arch woodfloor
+x 8
+y 16
+end
+arch wwall_2_1_2
+x 8
+y 16
+end
+arch woodfloor
+x 9
+end
+arch wwall_2_1_2
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch wwall_1_4
 x 9
 y 13
 end

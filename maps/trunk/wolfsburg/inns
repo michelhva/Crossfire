@@ -1,8 +1,9 @@
 arch map
+name Wolfsburg Inn
+difficulty 1
 region wolfsburg
-msg
-endmsg
-x 30
+width 30
+height 16
 end
 arch woodfloor
 end
@@ -177,7 +178,7 @@ arch woodfloor
 x 1
 y 12
 end
-arch door_look_1
+arch wwall_1_3
 x 1
 y 12
 end
@@ -263,7 +264,7 @@ arch woodfloor
 x 2
 y 12
 end
-arch wwall_2_1_2
+arch door_look_1
 x 2
 y 12
 end
@@ -367,7 +368,7 @@ arch woodfloor
 x 3
 y 12
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 3
 y 12
 end
@@ -595,7 +596,7 @@ arch woodfloor
 x 6
 y 1
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 6
 y 1
 end
@@ -603,18 +604,18 @@ arch woodfloor
 x 6
 y 2
 end
-arch wwall_2_1_1
+arch door_look_2
 x 6
 y 2
+no_pass 0
 end
 arch woodfloor
 x 6
 y 3
 end
-arch door_look_2
+arch wwall_1_1
 x 6
 y 3
-no_pass 0
 end
 arch woodfloor
 x 6
@@ -628,7 +629,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 6
 y 5
 end
@@ -653,7 +654,7 @@ arch woodfloor
 x 6
 y 8
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 6
 y 8
 end
@@ -2125,7 +2126,7 @@ arch woodfloor
 x 21
 y 4
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 21
 y 4
 end
@@ -2142,7 +2143,7 @@ arch woodfloor
 x 21
 y 6
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 21
 y 6
 end
@@ -2158,7 +2159,7 @@ arch woodfloor
 x 21
 y 8
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 21
 y 8
 end
@@ -2175,7 +2176,7 @@ arch woodfloor
 x 21
 y 10
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 21
 y 10
 end
@@ -2191,24 +2192,24 @@ arch woodfloor
 x 21
 y 12
 end
-arch door_look_2
+arch wwall_1_2
 x 21
 y 12
-no_pass 0
 end
 arch woodfloor
 x 21
 y 13
 end
-arch wwall_2_1_1
+arch door_look_2
 x 21
 y 13
+no_pass 0
 end
 arch woodfloor
 x 21
 y 14
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 21
 y 14
 end
@@ -2336,7 +2337,7 @@ arch woodfloor
 x 23
 y 8
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 23
 y 8
 end
@@ -2353,7 +2354,7 @@ arch woodfloor
 x 23
 y 10
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 23
 y 10
 end
@@ -2369,24 +2370,24 @@ arch woodfloor
 x 23
 y 12
 end
-arch door_look_2
+arch wwall_1_2
 x 23
 y 12
-no_pass 0
 end
 arch woodfloor
 x 23
 y 13
 end
-arch wwall_2_1_1
+arch door_look_2
 x 23
 y 13
+no_pass 0
 end
 arch woodfloor
 x 23
 y 14
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 23
 y 14
 end
