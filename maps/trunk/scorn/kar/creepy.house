@@ -1,15 +1,16 @@
 arch map
+name Haunted House
+difficulty 1
 region scorn
-name creepy
+width 25
+height 25
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec  7 16:17:56 1993
 endmsg
-hp 1
-sp 1
-x 25
-y 25
 end
 arch dirtfloor
 end
@@ -321,7 +322,7 @@ end
 arch magic_mouth
 msg
 WHO DARES ENTER THE CREEPY CRYPT?
-YOU WILL PARISH! 
+YOU WILL PARISH!
 endmsg
 x 2
 y 1
@@ -748,7 +749,7 @@ end
 arch gravestone
 msg
 Here lies Ender,
-   What a troubled soul.
+What a troubled soul.
 endmsg
 x 5
 y 1
@@ -766,7 +767,7 @@ end
 arch gravestone
 msg
 Here lies LOCKJAW.
-  thank go
+thank go
 endmsg
 x 5
 y 2
@@ -1407,7 +1408,7 @@ end
 arch magic_mouth
 msg
 Heh, Heh Heh, you thought you beat my
-haunted house, but you have only yet to 
+haunted house, but you have only yet to
 begin!  You shall perish...
 endmsg
 x 9

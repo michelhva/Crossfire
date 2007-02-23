@@ -1,13 +1,14 @@
 arch map
+name Ogre Cave
+difficulty 1
 region scorn
-name cave2
+width 36
+height 36
+enter_x 22
+enter_y 18
 msg
 dtabb@ecst.csuchico.edu
 endmsg
-hp 22
-sp 18
-x 36
-y 36
 end
 arch dirtfloor
 y 9

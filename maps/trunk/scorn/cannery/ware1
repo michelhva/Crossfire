@@ -1,15 +1,16 @@
 arch map
+name Animal Quarantine
+difficulty 1
 region scorn
-name Cannery
+width 40
+height 40
+enter_x 19
+enter_y 39
 msg
 Creator: 
 Email: 
 Date: Fri Oct 15 12:43:59 1993
 endmsg
-hp 19
-sp 39
-x 40
-y 40
 end
 arch cobblestones2
 end
