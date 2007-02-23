@@ -1,11 +1,11 @@
 arch map
+name The Eternal Reward
+difficulty 1
 region wolfsburg
-name etern_rew
-msg
-endmsg
-hp 7
-sp 23
-y 24
+width 16
+height 24
+enter_x 7
+enter_y 23
 end
 arch woodfloor
 end
@@ -78,6 +78,9 @@ arch wwall_2_1_1
 y 11
 end
 arch woodfloor
+y 12
+end
+arch swall_1_4_half
 y 12
 end
 arch wwall_2_1_1
@@ -208,7 +211,7 @@ arch woodfloor
 x 1
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 12
 end
@@ -1023,11 +1026,15 @@ arch woodfloor
 x 6
 y 22
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 22
 end
 arch woodfloor
+x 6
+y 23
+end
+arch swall_1_2_half
 x 6
 y 23
 end
@@ -1853,7 +1860,7 @@ arch letter
 name Instructions for Magic Shovel
 msg
 Us the shovel to break through the
-mountains and then stand where you 
+mountains and then stand where you
 think the treasure is and push 'A'
 endmsg
 x 13
@@ -1871,9 +1878,9 @@ I search the seven seas looking for
 treasure
 @match treasure
 Long John and I hid some treasure on
-an island and we buried it.  He locked 
+an island and we buried it.  He locked
 the map in his den and I have the
-instructions to use the magic shovel. 
+instructions to use the magic shovel.
 @match shovel|magic|magic shovel
 We had a magic shovel.  But we lost it
 on a distant island.

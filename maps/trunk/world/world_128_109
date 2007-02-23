@@ -7751,7 +7751,7 @@ x 32
 y 11
 end
 arch oakdoor
-name slave pits
+name Slave Pits
 slaying /wolfsburg/slave_pit1
 face gwall_0.111
 hp 1
@@ -8003,7 +8003,7 @@ x 33
 y 11
 end
 arch oakdoor
-name slave pits
+name Slave Pits
 slaying /wolfsburg/slave_pit2
 face gwall_0.111
 hp 2
@@ -8255,7 +8255,7 @@ x 34
 y 11
 end
 arch oakdoor
-name slave pits
+name Slave Pits
 slaying /wolfsburg/slave_pit3
 face gwall_0.111
 hp 1
@@ -12379,8 +12379,7 @@ x 40
 y 1
 end
 arch church
-name run-down church
-name_pl run-down church
+name Run-down Church
 slaying /wolfsburg/piratechurch
 hp 5
 sp 14
