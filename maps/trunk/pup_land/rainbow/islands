@@ -1,13 +1,13 @@
 arch map
-region pupland
 name islands
+region pupland
+width 35
+height 35
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 30 05:05:08 1996
 endmsg
-width 35
-height 35
 end
 arch woods
 end
@@ -283,18 +283,18 @@ x 1
 y 11
 end
 arch sea
-speed_left -0.900000
 x 1
 y 11
+speed_left -0.900000
 end
 arch grass
 x 1
 y 12
 end
 arch sea
-speed_left -0.900000
 x 1
 y 12
+speed_left -0.900000
 end
 arch sea
 x 1
@@ -460,27 +460,27 @@ x 2
 y 6
 end
 arch sea
-speed_left -0.900000
 x 2
 y 6
+speed_left -0.900000
 end
 arch grass
 x 2
 y 7
 end
 arch sea
-speed_left -0.900000
 x 2
 y 7
+speed_left -0.900000
 end
 arch grass
 x 2
 y 8
 end
 arch sea
-speed_left -0.900000
 x 2
 y 8
+speed_left -0.900000
 end
 arch sea
 x 2
@@ -3089,14 +3089,14 @@ y 19
 end
 arch invis_exit
 name sand
-face pstone_1.111
 slaying shore
+face pstone_1.111
 hp 7
 sp 1
-invisible 0
-is_floor 1
 x 17
 y 20
+invisible 0
+is_floor 1
 end
 arch dungeon_magic
 x 17
@@ -3854,7 +3854,7 @@ x 21
 y 20
 end
 arch town_1
-name red town
+name Red Town
 slaying red_town/town
 hp 7
 sp 13
@@ -4310,9 +4310,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 27
 sp 36
-invisible 0
 x 24
 y 5
+invisible 0
 end
 arch grass
 x 24
@@ -4396,17 +4396,17 @@ y 15
 end
 arch mover_3
 maxhp 1
+x 24
+y 15
 speed 1.000000
 speed_left -1.290000
 level 1
 attacktype 1
+end
+arch sea
 x 24
 y 15
-end
-arch sea
 no_pass 0
-x 24
-y 15
 end
 arch dungeon_magic
 x 24
@@ -4414,15 +4414,15 @@ y 16
 end
 arch mover_1
 maxhp 1
+x 24
+y 16
 level 1
 attacktype 1
-x 24
-y 16
 end
 arch sea
-no_pass 0
 x 24
 y 16
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4430,15 +4430,15 @@ y 17
 end
 arch mover_1
 maxhp 1
+x 24
+y 17
 level 1
 attacktype 1
-x 24
-y 17
 end
 arch sea
-no_pass 0
 x 24
 y 17
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4446,15 +4446,15 @@ y 18
 end
 arch mover_1
 maxhp 1
+x 24
+y 18
 level 1
 attacktype 1
-x 24
-y 18
 end
 arch sea
-no_pass 0
 x 24
 y 18
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4574,9 +4574,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 28
 sp 36
-invisible 0
 x 25
 y 5
+invisible 0
 end
 arch grass
 x 25
@@ -4619,37 +4619,37 @@ x 25
 y 14
 end
 arch mover_5
-level 1
-attacktype 1
 x 25
 y 15
+level 1
+attacktype 1
 end
 arch sea
-no_pass 0
 x 25
 y 15
+no_pass 0
 end
 arch mover_5
+x 25
+y 16
 level 1
 attacktype 1
-x 25
-y 16
 end
 arch sea
-no_pass 0
 x 25
 y 16
+no_pass 0
 end
 arch mover_5
+x 25
+y 17
 level 1
 attacktype 1
-x 25
-y 17
 end
 arch sea
-no_pass 0
 x 25
 y 17
+no_pass 0
 end
 arch dungeon_magic
 x 25
@@ -4657,15 +4657,15 @@ y 18
 end
 arch mover_3
 maxhp 1
+x 25
+y 18
 level 1
 attacktype 1
-x 25
-y 18
 end
 arch sea
-no_pass 0
 x 25
 y 18
+no_pass 0
 end
 arch dungeon_magic
 x 25
@@ -4774,9 +4774,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 29
 sp 36
-invisible 0
 x 26
 y 5
+invisible 0
 end
 arch grass
 x 26
@@ -4842,9 +4842,9 @@ x 26
 y 18
 end
 arch sea
-no_pass 0
 x 26
 y 18
+no_pass 0
 end
 arch dungeon_magic
 x 26
@@ -4949,9 +4949,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 30
 sp 36
-invisible 0
 x 27
 y 5
+invisible 0
 end
 arch cobblestones
 x 27
@@ -5120,9 +5120,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 31
 sp 36
-invisible 0
 x 28
 y 5
+invisible 0
 end
 arch grass
 x 28
@@ -5282,9 +5282,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 32
 sp 36
-invisible 0
 x 29
 y 5
+invisible 0
 end
 arch grass
 x 29
@@ -5437,9 +5437,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 33
 sp 36
-invisible 0
 x 30
 y 5
+invisible 0
 end
 arch brush
 x 30
@@ -5592,9 +5592,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 34
 sp 36
-invisible 0
 x 31
 y 5
+invisible 0
 end
 arch woods
 x 31
@@ -5747,9 +5747,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 35
 sp 36
-invisible 0
 x 32
 y 5
+invisible 0
 end
 arch brush
 x 32
@@ -5906,9 +5906,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 36
 sp 36
-invisible 0
 x 33
 y 5
+invisible 0
 end
 arch brush
 x 33
@@ -6061,9 +6061,9 @@ arch invis_exit
 slaying /pup_land/world
 hp 37
 sp 36
-invisible 0
 x 34
 y 5
+invisible 0
 end
 arch brush
 x 34
