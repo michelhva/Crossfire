@@ -1,5 +1,6 @@
 arch map
-name underworld
+name Underworld
+difficulty 1
 region wolfsburg
 width 60
 height 40
@@ -1174,10 +1175,6 @@ endmsg
 x 7
 y 8
 end
-arch woodfloor
-x 7
-y 8
-end
 arch magic_ear
 msg
 @match Pwill|pwill
@@ -1186,6 +1183,10 @@ endmsg
 x 7
 y 8
 connected 2
+end
+arch woodfloor
+x 7
+y 8
 end
 arch woodfloor
 x 7
@@ -3341,10 +3342,6 @@ arch woodfloor
 x 15
 y 11
 end
-arch woodfloor
-x 15
-y 12
-end
 arch magic_ear
 msg
 @match lliwp|lliwP|Lliwp
@@ -3353,6 +3350,10 @@ endmsg
 x 15
 y 12
 connected 5
+end
+arch woodfloor
+x 15
+y 12
 end
 arch woodfloor
 x 15
@@ -4300,10 +4301,6 @@ endmsg
 x 19
 y 18
 end
-arch cobblestones2
-x 19
-y 18
-end
 arch magic_ear
 msg
 @match help
@@ -4312,6 +4309,10 @@ endmsg
 x 19
 y 18
 connected 3
+end
+arch cobblestones2
+x 19
+y 18
 end
 arch cobblestones2
 x 19
@@ -5072,6 +5073,10 @@ arch wall_2_1_2
 x 23
 y 2
 end
+arch woodfloor
+x 23
+y 4
+end
 arch wall_2_1_2
 x 23
 y 4
@@ -5107,6 +5112,10 @@ end
 arch cobblestones
 x 23
 y 12
+end
+arch woodfloor
+x 23
+y 13
 end
 arch wall_2_1_2
 x 23
@@ -5130,6 +5139,10 @@ arch wall_2_1_2
 x 24
 y 2
 end
+arch woodfloor
+x 24
+y 4
+end
 arch wall_2_1_2
 x 24
 y 4
@@ -5165,6 +5178,10 @@ end
 arch cobblestones2
 x 24
 y 12
+end
+arch woodfloor
+x 24
+y 13
 end
 arch wall_2_1_2
 x 24
@@ -5188,6 +5205,10 @@ arch wall_2_1_2
 x 25
 y 2
 end
+arch woodfloor
+x 25
+y 4
+end
 arch wall_2_1_2
 x 25
 y 4
@@ -5223,6 +5244,10 @@ end
 arch cobblestones
 x 25
 y 12
+end
+arch woodfloor
+x 25
+y 13
 end
 arch wall_2_1_2
 x 25
@@ -5246,6 +5271,10 @@ arch wall_2_1_2
 x 26
 y 2
 end
+arch woodfloor
+x 26
+y 4
+end
 arch wall_2_1_2
 x 26
 y 4
@@ -5281,6 +5310,10 @@ end
 arch cobblestones2
 x 26
 y 12
+end
+arch woodfloor
+x 26
+y 13
 end
 arch wall_2_1_2
 x 26
@@ -5304,6 +5337,10 @@ arch wall_2_1_2
 x 27
 y 2
 end
+arch woodfloor
+x 27
+y 4
+end
 arch wall_2_1_2
 x 27
 y 4
@@ -5339,6 +5376,10 @@ end
 arch cobblestones
 x 27
 y 12
+end
+arch woodfloor
+x 27
+y 13
 end
 arch wall_2_1_2
 x 27
@@ -5410,6 +5451,10 @@ arch wall_2_1_2
 x 28
 y 2
 end
+arch woodfloor
+x 28
+y 4
+end
 arch wall_2_1_2
 x 28
 y 4
@@ -5445,6 +5490,10 @@ end
 arch cobblestones2
 x 28
 y 12
+end
+arch woodfloor
+x 28
+y 13
 end
 arch wall_2_1_2
 x 28
@@ -5540,6 +5589,10 @@ arch wall_2_1_2
 x 29
 y 2
 end
+arch woodfloor
+x 29
+y 4
+end
 arch wall_2_1_2
 x 29
 y 4
@@ -5607,6 +5660,10 @@ end
 arch chess_pawn
 x 29
 y 12
+end
+arch woodfloor
+x 29
+y 13
 end
 arch wall_2_1_2
 x 29
@@ -5682,6 +5739,10 @@ arch wall_2_1_2
 x 30
 y 2
 end
+arch woodfloor
+x 30
+y 4
+end
 arch wall_2_1_2
 x 30
 y 4
@@ -5749,6 +5810,10 @@ end
 arch chess_rook
 x 30
 y 12
+end
+arch woodfloor
+x 30
+y 13
 end
 arch wall_2_1_2
 x 30
@@ -5947,41 +6012,81 @@ arch wall_2_1_2
 x 31
 y 2
 end
+arch woodfloor
+x 31
+y 4
+end
 arch wall_2_2_3
 x 31
 y 4
 end
-arch wall_2_1_1
+arch woodfloor
 x 31
 y 5
 end
 arch wall_2_1_1
 x 31
+y 5
+end
+arch woodfloor
+x 31
 y 6
 end
 arch wall_2_1_1
+x 31
+y 6
+end
+arch woodfloor
 x 31
 y 7
 end
 arch wall_2_1_1
 x 31
+y 7
+end
+arch woodfloor
+x 31
 y 8
 end
 arch wall_2_1_1
+x 31
+y 8
+end
+arch woodfloor
 x 31
 y 9
 end
 arch wall_2_1_1
 x 31
+y 9
+end
+arch woodfloor
+x 31
 y 10
 end
 arch wall_2_1_1
+x 31
+y 10
+end
+arch woodfloor
 x 31
 y 11
 end
 arch wall_2_1_1
 x 31
+y 11
+end
+arch woodfloor
+x 31
 y 12
+end
+arch wall_2_1_1
+x 31
+y 12
+end
+arch woodfloor
+x 31
+y 13
 end
 arch wall_2_2_4
 x 31

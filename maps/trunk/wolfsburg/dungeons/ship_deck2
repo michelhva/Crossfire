@@ -1,12 +1,14 @@
 arch map
+name Sails of the Silver Shark
+difficulty 1
 region wolfsburg
+width 25
+height 25
 msg
 Creator: 
 Email: 
 Date: Tue Oct 19 17:55:48 1993
 endmsg
-x 25
-y 25
 end
 arch sea
 end
@@ -2575,9 +2577,6 @@ x 19
 y 13
 end
 arch wwall_2_1_1
-msg
-
-endmsg
 x 19
 y 13
 no_pass 0
