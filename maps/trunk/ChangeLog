@@ -4,6 +4,86 @@
 	  remove grass from water perimeter inside house.  Gave name of
 	  Bath to the tile.  Other changes introduced by CFJavaEditor.
 
+2007-02-24 08:00  rjtanner
+
+	* wolfsburg/dungeons/church.2, wolfsburg/dungeons/church.3,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4c,
+	  wolfsburg/dungeons/hut, wolfsburg/dungeons/piratedung,
+	  wolfsburg/dungeons/pirateenter, wolfsburg/dungeons/ship,
+	  wolfsburg/dungeons/ship_deck2, wolfsburg/dungeons/stronghold,
+	  wolfsburg/dungeons/treas_room, wolfsburg/dungeons/underworld,
+	  wolfsburg/eeur/tower1.1, wolfsburg/eeur/tower1.2,
+	  wolfsburg/eeur/tower1.3, wolfsburg/eeur/tower1.4,
+	  world/world_127_109, world/world_128_109, world/world_129_109:
+	  Renamed maps (which were either unnamed, used the actual file
+	  name or tweaked their spelling and capitilization). Corrected
+	  wall sections there were 'incorrect' and obvious when next to
+	  doorways or similar openings - basically using the wrong wall
+	  sections. Minor cosmetic updates to maps as well. Added missing
+	  floor tiles beneath walls. Renamed maps with a generic name to
+	  something more specific. Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-23 03:48  rjtanner
+
+	* wolfsburg/etern_rew, wolfsburg/inns, wolfsburg/piratechurch,
+	  wolfsburg/prison, wolfsburg/slave_pit1, wolfsburg/slave_pit2,
+	  wolfsburg/slave_pit3, wolfsburg/snakepit, wolfsburg/ware1,
+	  wolfsburg/whorehouse, world/world_128_109: Renamed maps (which
+	  were either unnamed, used the actual file name or tweaked their
+	  spelling and capitilization). Corrected wall sections there were
+	  'incorrect' and obvious when next to doorways or similar
+	  openings - basically using the wrong wall sections. Minor
+	  cosmetic updates to maps as well. Other changes are from Map
+	  Editor reformatting.
+
+2007-02-23 03:21  rjtanner
+
+	* scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/anthony/prison, scorn/apartment/Apartments1,
+	  scorn/apartment/Apartments2, scorn/apartment/Apartments3,
+	  scorn/apartment/Apartments4, scorn/apartment/Apartments5,
+	  scorn/apartment/apartments, scorn/cannery/ware1,
+	  scorn/crow/train/train, scorn/dtabb/cave, scorn/dtabb/cave2,
+	  scorn/dtabb/cave3, scorn/guilds/guildhousesinc,
+	  scorn/kar/creepy.house, scorn/kar/creepy.house2,
+	  scorn/kar/drink, scorn/kar/gorks1, scorn/kar/gorks2,
+	  scorn/kar/gorks3, scorn/kar/somehouse, scorn/kar/somehouse2,
+	  scorn/kar/somehouse3, scorn/magara/porter_house,
+	  scorn/mansion/entrance, scorn/mansion/garden,
+	  scorn/mansion/muriskunes, scorn/mansion/str-tunnel,
+	  scorn/mansion/stronghold, scorn/oldcity/end,
+	  scorn/oldcity/oldcity1, scorn/oldcity/oldcity10,
+	  scorn/oldcity/oldcity11, scorn/oldcity/oldcity12,
+	  scorn/oldcity/oldcity13, scorn/oldcity/oldcity14,
+	  scorn/oldcity/oldcity15, scorn/oldcity/oldcity15e,
+	  scorn/oldcity/oldcity2, scorn/oldcity/oldcity3,
+	  scorn/oldcity/oldcity4, scorn/oldcity/oldcity5,
+	  scorn/oldcity/oldcity6, scorn/oldcity/oldcity7,
+	  scorn/oldcity/oldcity8, scorn/oldcity/oldcity9,
+	  world/world_104_115, world/world_105_115, world/world_105_116:
+	  Renamed maps (which were either unnamed, used the actual file
+	  name or tweaked their spelling and capitilization). Corrected
+	  wall sections there were 'incorrect' and obvious when next to
+	  doorways or similar openings - basically using the wrong wall
+	  sections. Minor cosmetic updates to maps as well. Renamed the
+	  cannery map to Animal Quarantine because that is how it's
+	  referred in the world map. Renamed the dtabb/cave outside of
+	  Scorn to Gnolls Grotto - since it's often confused as part of
+	  the goblin chief / royalty quest map. Renamed dtabb/cave3 to
+	  Goblin Den. Other changes are due to Map Editor reformatting.
+
+2007-02-22 22:03  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground: Remove stray
+	  text message.
+
+2007-02-22 04:17  rjtanner
+
+	* ChangeLog: Used svn2cl to regenerate the ChangeLog file for
+	  Trunk map changes to include a full and thorough history of the
+	  changes.
+
 2007-02-21 03:31  rjtanner
 
 	* brest/sport.jess: Cosmetic changes to the Sport Center - added
