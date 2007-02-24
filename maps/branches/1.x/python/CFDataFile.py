@@ -73,7 +73,7 @@ class CFDataFile:
     def putData(self, dic):
         '''Writes dictionary to formatted file - uses | character as a delimiter'''
         try:
-            file = open(self.filename,'w')
+            file = open(self.filename,'wb')
         except:
             raise 'Unable to open %s for writing' % self.datafile_name
         else:
