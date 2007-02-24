@@ -1,6 +1,8 @@
 arch map
-region pupland
 name station
+region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -447,8 +449,8 @@ end
 arch button_lever
 x 4
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 4
@@ -539,8 +541,8 @@ end
 arch grate_closed_2
 x 5
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 5
@@ -610,9 +612,7 @@ y 7
 end
 arch sign
 msg
-Red Island is the best place for
-tourists. Beautiful nature and friendly
-people will cure your stress.
+Red Island is the best place for tourists. Beautiful nature and friendly people will cure your stress.
 endmsg
 x 6
 y 7
@@ -641,8 +641,8 @@ arch altar
 slaying platinacoin
 x 6
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 6
@@ -926,8 +926,7 @@ arch smith
 name Fog
 msg
 @match *
-Visit red town, it's a nice place
-for newbies.
+Visit Red Town, it's a nice place for newbies.
 endmsg
 hp 100
 maxhp 100
@@ -1061,8 +1060,7 @@ arch priest
 name tourist
 msg
 @match hi|hello
-Hi! You also got away from the hectic
-city life?
+Hi! You also got away from the hectic city life?
 @match *
 This island is paradise.
 endmsg
