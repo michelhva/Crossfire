@@ -1,13 +1,13 @@
 arch map
-region pupland
 name bed_room
+region pupland
+width 10
+height 7
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  1 08:50:22 1996
 endmsg
-x 10
-y 7
 end
 arch dungeon_magic
 end
@@ -600,10 +600,8 @@ carrying 350
 arch scroll_2
 name adventurer's notes
 msg
-Don't get fooled by the cosy and
-peaceful impression of this island.
-It does hold some secrets for the
-more experienced adventures...
+Don't be fooled by the cosy and peaceful impression of this island.
+It does hold some secrets for the more experienced adventurer...
 endmsg
 end
 end
