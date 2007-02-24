@@ -1,13 +1,13 @@
 arch map
-region pupland
 name town
+region pupland
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 11 21:51:12 1997
 endmsg
-width 15
-height 15
 end
 arch woods
 end
@@ -223,9 +223,9 @@ x 2
 y 4
 end
 arch hedge_1_4
-blocksview 0
 x 2
 y 4
+blocksview 0
 end
 arch grass
 x 2
@@ -302,27 +302,27 @@ x 3
 y 4
 end
 arch hedge_2_2_3
-blocksview 0
 x 3
 y 4
+blocksview 0
 end
 arch grass
 x 3
 y 5
 end
 arch hedge_2_1_1
-blocksview 0
 x 3
 y 5
+blocksview 0
 end
 arch grass
 x 3
 y 6
 end
 arch hedge_1_2
-blocksview 0
 x 3
 y 6
+blocksview 0
 end
 arch cobblestones2
 x 3
@@ -1115,11 +1115,10 @@ arch pstone_1
 x 13
 y 12
 end
-arch biglake_new
-name sea
-no_pass 0
+arch sea_new
 x 13
 y 12
+no_pass 0
 end
 arch galleon
 slaying ../islands
