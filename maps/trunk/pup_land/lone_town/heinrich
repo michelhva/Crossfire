@@ -1,6 +1,8 @@
 arch map
-region lonetown
 name heinrich
+region lonetown
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -301,7 +303,8 @@ arch cobblestones2
 x 3
 y 2
 end
-arch lake
+arch sea_nsew
+name Bath
 x 3
 y 2
 end
@@ -417,9 +420,9 @@ y 2
 end
 arch high_boots
 ac 0
-armour 0
 x 4
 y 2
+armour 0
 end
 arch cobblestones2
 x 4
