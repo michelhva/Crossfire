@@ -1,12 +1,14 @@
 arch map
+name Well to Catabombs
+difficulty 1
 region wolfsburg
+width 29
+height 49
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Nov 15 01:40:01 1994
 endmsg
-x 29
-y 49
 end
 arch medium_stones
 end
@@ -2363,6 +2365,10 @@ arch small_stones
 x 8
 y 34
 end
+arch small_stones
+x 8
+y 35
+end
 arch cave_0
 x 8
 y 35
@@ -2613,6 +2619,10 @@ end
 arch small_stones
 x 9
 y 35
+end
+arch small_stones
+x 9
+y 36
 end
 arch cave_0
 x 9
@@ -3295,8 +3305,6 @@ x 12
 y 38
 end
 arch blocked
-msg
-endmsg
 x 12
 y 39
 end
@@ -3513,8 +3521,6 @@ x 14
 y 34
 end
 arch blocked
-msg
-endmsg
 x 15
 y 19
 end

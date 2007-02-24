@@ -1,14 +1,16 @@
 arch map
+name Captain Connor's Stronghold
+difficulty 1
 region wolfsburg
+width 35
+height 25
+enter_x 1
+enter_y 23
 msg
 Creator: 
 Email: 
 Date: Thu Oct 14 15:06:58 1993
 endmsg
-hp 1
-sp 23
-x 35
-y 25
 end
 arch dungeon_floor
 end
@@ -748,17 +750,17 @@ msg
 Buckaneer Bodingo
 Ships El Buracho
 "Drinking and Wenching,
- Drinking and Wenching,
- When do we attack?
+Drinking and Wenching,
+When do we attack?
 endmsg
 x 4
 y 18
 end
-arch dungeon_floor
+arch magic_ear
 x 4
 y 19
 end
-arch magic_ear
+arch dungeon_floor
 x 4
 y 19
 end
@@ -1222,7 +1224,7 @@ msg
 Julian the Apostate
 Harbringer of the Doomed Rat
 Ship's Navigator
-And a ruthless Bastard 
+And a ruthless Bastard
 endmsg
 x 7
 y 21
