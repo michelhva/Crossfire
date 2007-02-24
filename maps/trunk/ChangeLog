@@ -1,8 +1,34 @@
-2007-02-21 03:31  kbulgrien
+2007-02-24 3:00  kbulgrien
 
 	* pup_land/lonetown/heinrich: lake arch replaced by sea_nsew to
 	  remove grass from water perimeter inside house.  Gave name of
 	  Bath to the tile.  Other changes introduced by CFJavaEditor.
+
+	* pup_land/rainbow/red_town/town: biglake_new arch replaced with
+	  sea_new to make the color of water under galleon consistent with
+	  color of sea tiles.  Other changes introduced by CFJavaEditor.
+
+	* pup_land/rainbow/islands: red town -> Red Town and other changes
+	  introduced by CFJavaEditor.
+
+	* pup_land/rainbow/shore: Multi-line message linebreaks removed.
+
+	* pup_land/rainbow/bed_room: Multi-line message linebreaks removed
+	  and other changes introduced by CFJavaEditor.
+
+	* pup_land/rainbow/station: Multi-line message linebreaks removed;
+	  red town -> Red Town; and changes introduced by CFJavaEditor.
+
+	* pup_land/s_f/to-jyo: Multi-line message linebreaks removed;
+	  redundant match strings removed (only lowercase is required);
+	  minor npc msg text changes; and edits introduced by CFJavaEditor.
+
+	* pup_land/s_f/ki2: Add blocksview 0 on lightning walls in a few
+	  places to improve map appearance; and CFJavaEditor changes.
+
+	* pup_land/s_f/ki: Multi-line message linebreaks removed. a few
+	  places to improve map appearance; minor npc msg text changes; and
+	  changes introduced by CFJavaEditor.
 
 2007-02-24 08:00  rjtanner
 
