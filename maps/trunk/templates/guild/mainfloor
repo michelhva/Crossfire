@@ -1066,7 +1066,7 @@ friendly 1
 sleep 0
 stand_still 1
 arch event_say
-name testguild
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guild_dues.py
 end
@@ -4505,7 +4505,7 @@ name Guardian
 x 15
 y 25
 arch event_say
-name testguild
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guild_entry.py
 end
@@ -8895,7 +8895,7 @@ Pull to establish this guild.
 endmsg
 x 31
 arch event_apply
-name testguild
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guildbuy.py
 end
@@ -8998,7 +8998,7 @@ endmsg
 x 31
 y 7
 arch event_say
-name testguild
+name GUILD_TEMPLATE
 title Python
 slaying /python/IPO/board.py
 end
@@ -9289,7 +9289,7 @@ y 28
 connected 334
 activate_on_release 0
 arch event_apply
-name testguild
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guildbuy.py
 end
