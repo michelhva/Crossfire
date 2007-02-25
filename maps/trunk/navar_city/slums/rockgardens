@@ -1,15 +1,15 @@
 arch map
-region navar
 name Rock Gardens
+region navar
+width 50
+height 50
+enter_x 11
+enter_y 2
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/10/2003
 endmsg
-width 50
-height 50
-enter_x 11
-enter_y 2
 end
 arch invis_exit
 slaying /world/world_121_117
@@ -1206,9 +1206,9 @@ x 4
 y 41
 end
 arch rune_summon_devil
-level 8
 x 4
 y 41
+level 8
 end
 arch cobblestones2
 x 4
@@ -2115,9 +2115,9 @@ x 7
 y 46
 end
 arch rune_summon_devil
-level 8
 x 7
 y 46
+level 8
 end
 arch cobblestones2
 x 7
@@ -2806,9 +2806,9 @@ x 10
 y 14
 end
 arch stair_up_2
+slaying rockgardens
 hp 38
 sp 14
-slaying rockgardens
 x 10
 y 14
 end
@@ -2945,9 +2945,9 @@ x 10
 y 36
 end
 arch stair_up_2
+slaying rockgardens
 hp 38
 sp 36
-slaying rockgardens
 x 10
 y 36
 end
@@ -2964,9 +2964,9 @@ x 10
 y 38
 end
 arch stair_up_2
+slaying rockgardens
 hp 38
 sp 38
-slaying rockgardens
 x 10
 y 38
 end
@@ -3480,18 +3480,18 @@ x 12
 y 14
 end
 arch stair_up
+slaying rockgardens
 hp 40
 sp 14
-slaying rockgardens
 x 12
 y 14
 end
 arch trap
-level 7
 dam 0
-connected 11
 x 12
 y 14
+level 7
+connected 11
 end
 arch cobblestones2
 x 12
@@ -3614,9 +3614,9 @@ x 12
 y 36
 end
 arch stair_up
+slaying rockgardens
 hp 40
 sp 36
-slaying rockgardens
 x 12
 y 36
 end
@@ -3633,9 +3633,9 @@ x 12
 y 38
 end
 arch stair_up
+slaying rockgardens
 hp 40
 sp 38
-slaying rockgardens
 x 12
 y 38
 end
@@ -3698,10 +3698,10 @@ end
 arch key2
 name old key
 name_pl old keys
-value 10
 slaying room13
 x 12
 y 46
+value 10
 end
 arch longtable_2_2_1
 x 12
@@ -3890,10 +3890,10 @@ y 30
 end
 arch creator
 other_arch skull
-connected 22
-lifesave 1
 x 13
 y 30
+connected 22
+lifesave 1
 end
 arch cobblestones2
 x 13
@@ -3982,9 +3982,9 @@ Those boys sure have a healthy appetite.
 @match *
 Hello have you come to play with the boys?
 endmsg
-stand_still 1
 x 13
 y 44
+stand_still 1
 end
 arch cobblestones2
 x 13
@@ -4104,9 +4104,9 @@ x 14
 y 15
 end
 arch grate_closed_1
-connected 33
 x 14
 y 15
+connected 33
 end
 arch cobblestones2
 x 14
@@ -4193,11 +4193,11 @@ x 14
 y 33
 end
 arch trap
-level 5
 dam 0
-connected 22
 x 14
 y 33
+level 5
+connected 22
 end
 arch cobblestones2
 x 14
@@ -4778,11 +4778,11 @@ x 16
 y 30
 end
 arch trap
-level 5
 dam 0
-connected 22
 x 16
 y 30
+level 5
+connected 22
 end
 arch cobblestones2
 x 16
@@ -5255,10 +5255,10 @@ x 18
 y 14
 end
 arch spikes_hidden
-connected 11
-activate_on_release 0
 x 18
 y 14
+connected 11
+activate_on_release 0
 end
 arch cobblestones2
 x 18
@@ -5357,11 +5357,11 @@ x 18
 y 34
 end
 arch trap
-level 5
 dam 0
-connected 22
 x 18
 y 34
+level 5
+connected 22
 end
 arch cobblestones2
 x 18
@@ -5512,15 +5512,15 @@ arch cobblestones2
 x 19
 y 14
 end
-arch cobblestones2
-x 19
-y 15
-end
 arch magic_mouth
 msg
 Looks like this is a vacant apartment.
 endmsg
 food 1
+x 19
+y 15
+end
+arch cobblestones2
 x 19
 y 15
 end
@@ -7730,11 +7730,11 @@ x 31
 y 17
 end
 arch trapdoor_3
-weight 900
 hp 3
 sp 17
 x 31
 y 17
+weight 900
 end
 arch woodfloor2
 x 31
@@ -8170,9 +8170,9 @@ x 32
 y 45
 end
 arch rune_summon_devil
-level 8
 x 32
 y 45
+level 8
 end
 arch woodfloor2
 x 32
@@ -8296,11 +8296,11 @@ x 33
 y 19
 end
 arch trapdoor_3
-weight 900
 hp 5
 sp 19
 x 33
 y 19
+weight 900
 end
 arch woodfloor2
 x 33
@@ -9129,11 +9129,11 @@ x 36
 y 16
 end
 arch trapdoor_3
-weight 12000
 hp 8
 sp 16
 x 36
 y 16
+weight 12000
 end
 arch woodfloor2
 x 36
@@ -9372,9 +9372,9 @@ x 37
 y 9
 end
 arch blood
-no_pick 1
 x 37
 y 9
+no_pick 1
 end
 arch woodfloor2
 x 37
@@ -9425,11 +9425,11 @@ x 37
 y 19
 end
 arch trapdoor_3
-weight 500
 hp 9
 sp 19
 x 37
 y 19
+weight 500
 end
 arch woodfloor2
 x 37
@@ -9500,9 +9500,9 @@ x 37
 y 33
 end
 arch blood
-no_pick 1
 x 37
 y 33
+no_pick 1
 end
 arch woodfloor2
 x 37
@@ -9665,9 +9665,9 @@ x 38
 y 12
 end
 arch stair_down
+slaying rockgardens
 hp 10
 sp 12
-slaying rockgardens
 x 38
 y 12
 end
@@ -9684,9 +9684,9 @@ x 38
 y 14
 end
 arch stair_down
+slaying rockgardens
 hp 10
 sp 14
-slaying rockgardens
 x 38
 y 14
 end
@@ -9803,9 +9803,9 @@ x 38
 y 36
 end
 arch stair_down
+slaying rockgardens
 hp 10
 sp 36
-slaying rockgardens
 x 38
 y 36
 end
@@ -9822,9 +9822,9 @@ x 38
 y 38
 end
 arch stair_down
+slaying rockgardens
 hp 10
 sp 38
-slaying rockgardens
 x 38
 y 38
 end
@@ -10327,9 +10327,9 @@ x 40
 y 12
 end
 arch stair_down_4
+slaying rockgardens
 hp 12
 sp 12
-slaying rockgardens
 x 40
 y 12
 end
@@ -10346,9 +10346,9 @@ x 40
 y 14
 end
 arch stair_down_4
+slaying rockgardens
 hp 12
 sp 14
-slaying rockgardens
 x 40
 y 14
 end
@@ -10365,10 +10365,10 @@ x 40
 y 16
 end
 arch button_lever
-connected 33
-activate_on_release 0
 x 40
 y 16
+connected 33
+activate_on_release 0
 end
 arch woodfloor2
 x 40
@@ -10392,19 +10392,19 @@ y 19
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 40
 y 19
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 40
@@ -10499,9 +10499,9 @@ x 40
 y 36
 end
 arch stair_down_4
+slaying rockgardens
 hp 12
 sp 36
-slaying rockgardens
 x 40
 y 36
 end
@@ -10518,9 +10518,9 @@ x 40
 y 38
 end
 arch stair_down_4
+slaying rockgardens
 hp 12
 sp 38
-slaying rockgardens
 x 40
 y 38
 end
@@ -10945,19 +10945,19 @@ y 17
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 42
 y 17
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 42
@@ -11222,20 +11222,20 @@ y 14
 end
 arch mastif
 name Booger
+title the guarddog
 msg
 RRRRrrrr!
 endmsg
-title the guarddog
-exp 500
-wc 15
+Wis 8
 hp 200
 maxhp 200
+exp 500
+wc 15
 ac -3
-sleep 0
-Wis 8
-resist_physical 15
 x 43
 y 14
+resist_physical 15
+sleep 0
 end
 arch woodfloor2
 x 43
@@ -11557,19 +11557,19 @@ y 20
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 44
 y 20
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 44
@@ -12079,19 +12079,19 @@ y 14
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 46
 y 14
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 46
@@ -12099,19 +12099,19 @@ y 15
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 46
 y 15
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 46
@@ -12123,19 +12123,19 @@ y 17
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 46
 y 17
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch woodfloor2
 x 46
@@ -12279,12 +12279,12 @@ y 44
 end
 arch wolf
 name Puppy
-level 8
-exp 900
 hp 350
 maxhp 360
+exp 900
 x 46
 y 44
+level 8
 end
 arch woodfloor2
 x 46

@@ -1,12 +1,14 @@
 arch map
+name Warehouse #8
+difficulty 1
 region navar
+width 17
+height 27
 msg
 Creator: 
 Email: 
 Date: Mon Nov 15 12:51:55 1993
 endmsg
-x 17
-y 27
 end
 arch woodfloor
 end
@@ -2449,37 +2451,7 @@ arch troll
 x 1
 y 24
 end
-More
-arch troll_2
-x 2
-y 24
-end
-More
-arch troll_3
-x 1
-y 25
-end
-More
-arch troll_4
-x 2
-y 25
-end
 arch troll
 x 14
 y 24
-end
-More
-arch troll_2
-x 15
-y 24
-end
-More
-arch troll_3
-x 14
-y 25
-end
-More
-arch troll_4
-x 15
-y 25
 end

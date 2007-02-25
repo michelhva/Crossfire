@@ -1,17 +1,17 @@
 arch map
+name The Old Warehouse
+difficulty 8
 region navar
-name the old warehouse
+darkness 3
+width 17
+height 20
+enter_x 13
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/4/2003
 endmsg
-width 17
-height 20
-enter_x 13
-enter_y 1
-difficulty 8
-darkness 3
 end
 arch dirtfloor
 end
@@ -171,20 +171,20 @@ y 8
 end
 arch mastif
 name Boff
+title the guarddog
 msg
 RRRRrrrr!
 endmsg
-title the guarddog
-exp 500
-wc 15
+Wis 8
 hp 200
 maxhp 200
+exp 500
+wc 15
 ac -3
-sleep 0
-Wis 8
-resist_physical 15
 x 1
 y 8
+resist_physical 15
+sleep 0
 end
 arch dirtfloor
 x 1
@@ -225,34 +225,34 @@ end
 arch guildmaster
 name Master Nim
 title master smuggler
-randomitems serp_priest
-level 12
-exp 900
-speed 0.15
-dam 3
-wc 2
+Con 5
+Wis 15
+Pow 7
 hp 550
 maxhp 550
-ac -9
-Con 5
 sp 50
 maxsp 50
-Pow 7
-can_see_in_dark 1
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
-unaggressive 0
-pick_up 30
-Wis 15
-attack_movement 3
+exp 900
+dam 3
+wc 2
+ac -9
 x 1
 y 17
+speed 0.15
+attack_movement 3
+level 12
+randomitems serp_priest
+unaggressive 0
+pick_up 30
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
 end
 arch dirtfloor
 x 1
@@ -290,20 +290,20 @@ y 4
 end
 arch mastif
 name Biff
+title the guarddog
 msg
 RRRRrrrr!
 endmsg
-title the guarddog
-exp 500
-wc 15
+Wis 8
 hp 200
 maxhp 200
+exp 500
+wc 15
 ac -3
-sleep 0
-Wis 8
-resist_physical 15
 x 2
 y 4
+resist_physical 15
+sleep 0
 end
 arch dirtfloor
 x 2
@@ -315,17 +315,17 @@ y 6
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 2
 y 6
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 2
@@ -345,17 +345,17 @@ y 10
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 2
 y 10
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 2
@@ -481,17 +481,17 @@ y 17
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 3
 y 17
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 3
@@ -686,10 +686,10 @@ x 5
 y 15
 end
 arch button_handle
-connected 4
-activate_on_release 0
 x 5
 y 15
+connected 4
+activate_on_release 0
 end
 arch dirtfloor
 x 5
@@ -710,9 +710,9 @@ I trust your payment will be prompt.
 If not I can always send some more of my pets your way - this time without restraints...
 - Aza
 endmsg
-level 2
 x 5
 y 17
+level 2
 end
 arch light4
 x 5
@@ -728,17 +728,17 @@ y 18
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 5
 y 18
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 5
@@ -816,10 +816,10 @@ msg
 @match *
 Thank you for saving us.
 endmsg
-unaggressive 0
-friendly 1
 x 6
 y 13
+friendly 1
+unaggressive 0
 end
 arch dirtfloor
 x 6
@@ -843,17 +843,17 @@ y 16
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 6
 y 16
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 6
@@ -870,9 +870,9 @@ This be the  word of the Smugglers Guilde
 There be six Masters in the Guilde who shall
 be the whole of the law.
 endmsg
-level 4
 x 6
 y 17
+level 4
 end
 arch dirtfloor
 x 6
@@ -925,19 +925,19 @@ x 7
 y 8
 end
 arch grate_closed_1
-connected 4
 x 7
 y 8
+connected 4
 end
 arch dirtfloor
 x 7
 y 9
 end
 arch pedestal
-invisible 1
-connected 4
 x 7
 y 9
+invisible 1
+connected 4
 end
 arch dwarf_priest
 name Poe
@@ -949,10 +949,10 @@ they were giant rodents I believe.
 @match *
 Thank you for saving me.
 endmsg
-unaggressive 0
-friendly 1
 x 7
 y 9
+friendly 1
+unaggressive 0
 end
 arch dirtfloor
 x 7
@@ -969,10 +969,10 @@ msg
 You saved us!
 They were going to feed us to those monsters!
 endmsg
-unaggressive 0
-friendly 1
 x 7
 y 11
+friendly 1
+unaggressive 0
 end
 arch dirtfloor
 x 7
@@ -995,10 +995,10 @@ x 7
 y 15
 end
 arch button_handle
-connected 5
-activate_on_release 0
 x 7
 y 15
+connected 5
+activate_on_release 0
 end
 arch dirtfloor
 x 7
@@ -1014,17 +1014,17 @@ y 17
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 7
 y 17
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 7
@@ -1108,10 +1108,10 @@ Yes huge horrible monsters - they were going to feed us to them!
 @match *
 Thank you for saving us from the monsters
 endmsg
-unaggressive 0
-friendly 1
 x 8
 y 13
+friendly 1
+unaggressive 0
 end
 arch dirtfloor
 x 8
@@ -1185,17 +1185,17 @@ y 6
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 9
 y 6
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 9
@@ -1222,33 +1222,33 @@ x 9
 y 10
 end
 arch grate_closed_2
-connected 5
-no_magic 1
-damned 1
 x 9
 y 10
+connected 5
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 9
 y 11
 end
 arch grate_closed_2
+x 9
+y 11
 connected 5
 no_magic 1
 damned 1
-x 9
-y 11
 end
 arch dirtfloor
 x 9
 y 12
 end
 arch grate_closed_2
+x 9
+y 12
 connected 5
 no_magic 1
 damned 1
-x 9
-y 12
 end
 arch dirtfloor
 x 9
@@ -1276,20 +1276,20 @@ y 16
 end
 arch mastif
 name Greep
+title the guarddog
 msg
 RRRRrrrr!
 endmsg
-title the guarddog
-exp 500
-wc 15
+Wis 8
 hp 200
 maxhp 200
+exp 500
+wc 15
 ac -3
-sleep 0
-Wis 8
-resist_physical 15
 x 9
 y 16
+resist_physical 15
+sleep 0
 end
 arch dirtfloor
 x 9
@@ -1359,17 +1359,17 @@ y 7
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 10
 y 7
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 10
@@ -1392,10 +1392,10 @@ x 10
 y 11
 end
 arch pedestal
-invisible 1
-connected 5
 x 10
 y 11
+invisible 1
+connected 5
 end
 arch dirtfloor
 x 10
@@ -1580,17 +1580,17 @@ y 7
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
 x 12
 y 7
+speed -0.2
+level 7
+sleep 0
 end
 arch dirtfloor
 x 12

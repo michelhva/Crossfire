@@ -1,15 +1,14 @@
 arch map
+name A Large house
+difficulty 1
 region navar
-name large_house
+width 50
+height 50
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 23:12:18 1994
 endmsg
-hp 0
-sp 0
-x 50
-y 50
 end
 arch small_stones
 end
@@ -13091,201 +13090,71 @@ arch big_dragon
 x 1
 y 45
 end
-More
-arch big_dragon_2
-x 2
-y 45
-end
-More
-arch big_dragon_3
-x 3
-y 45
-end
-More
-arch big_dragon_4
-x 1
-y 46
-end
-More
-arch big_dragon_5
-x 2
-y 46
-end
-More
-arch big_dragon_6
-x 3
-y 46
-end
 arch dread
 x 5
 y 47
-end
-More
-arch dread_2
-x 6
-y 47
-end
-More
-arch dread_3
-x 5
-y 48
-end
-More
-arch dread_4
-x 6
-y 48
 end
 arch giant
 x 7
 y 32
 end
-More
-arch giant_2
-x 7
-y 33
-end
 arch dragon
 x 9
-y 16
-end
-More
-arch dragon_2
-x 10
 y 16
 end
 arch giant
 x 9
 y 35
 end
-More
-arch giant_2
-x 9
-y 36
-end
 arch dread
 x 9
 y 45
-end
-More
-arch dread_2
-x 10
-y 45
-end
-More
-arch dread_3
-x 9
-y 46
-end
-More
-arch dread_4
-x 10
-y 46
 end
 arch giant
 x 12
 y 36
 end
-More
-arch giant_2
-x 12
-y 37
-end
 arch dragon
 x 13
-y 13
-end
-More
-arch dragon_2
-x 14
 y 13
 end
 arch giant
 x 14
 y 38
 end
-More
-arch giant_2
-x 14
-y 39
-end
 arch dragon
 x 15
-y 3
-end
-More
-arch dragon_2
-x 16
 y 3
 end
 arch dragon
 x 18
 y 16
 end
-More
-arch dragon_2
-x 19
-y 16
-end
 arch cobra
 x 19
 y 1
 end
-More
-arch cobra_2
-x 19
-y 2
-end
 arch dragon
 x 33
-y 38
-end
-More
-arch dragon_2
-x 34
 y 38
 end
 arch dragon
 x 35
 y 24
 end
-More
-arch dragon_2
-x 36
-y 24
-end
 arch dragon
 x 37
 y 45
 end
-More
-arch dragon_2
-x 38
-y 45
-end
 arch dragon
 x 37
-y 46
-end
-More
-arch dragon_2
-x 38
 y 46
 end
 arch dragon
 x 42
 y 33
 end
-More
-arch dragon_2
-x 43
-y 33
-end
 arch dragon
 x 45
-y 30
-end
-More
-arch dragon_2
-x 46
 y 30
 end

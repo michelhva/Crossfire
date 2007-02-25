@@ -1,17 +1,17 @@
 arch map
+name Tim the Bowyer
+reset_timeout 7200
+difficulty 2
 region navar
-name bowyer
+width 12
+height 15
+enter_x 6
+enter_y 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 28 14:07:57 2002
 endmsg
-width 12
-height 15
-enter_x 6
-enter_y 14
-reset_timeout 7200
-difficulty 2
 end
 arch grass
 end
@@ -216,10 +216,10 @@ x 2
 y 9
 end
 arch pedestal
-invisible 1
-connected 99
 x 2
 y 9
+invisible 1
+connected 99
 end
 arch woodfloor2
 x 2
@@ -273,11 +273,11 @@ x 3
 y 2
 end
 arch bulletwall_5
-invisible 1
-connected 99
-speed 0.0
 x 3
 y 2
+speed 0.0
+invisible 1
+connected 99
 arch spell_missile_swarm
 end
 end
@@ -298,10 +298,10 @@ x 3
 y 6
 end
 arch pedestal
-invisible 1
-connected 99
 x 3
 y 6
+invisible 1
+connected 99
 end
 arch woodfloor2
 x 3
@@ -320,20 +320,20 @@ x 3
 y 10
 end
 arch pedestal
-invisible 1
-connected 99
 x 3
 y 10
+invisible 1
+connected 99
 end
 arch woodfloor2
 x 3
 y 11
 end
 arch pedestal
-invisible 1
-connected 99
 x 3
 y 11
+invisible 1
+connected 99
 end
 arch door_look_1
 x 3
@@ -379,10 +379,10 @@ x 4
 y 4
 end
 arch pedestal
-invisible 1
-connected 99
 x 4
 y 4
+invisible 1
+connected 99
 end
 arch woodfloor2
 x 4
@@ -401,10 +401,10 @@ x 4
 y 8
 end
 arch pedestal
-invisible 1
-connected 99
 x 4
 y 8
+invisible 1
+connected 99
 end
 arch woodfloor2
 x 4
@@ -835,29 +835,29 @@ x 8
 y 10
 end
 arch pedestal
-invisible 1
-connected 11
 x 8
 y 10
+invisible 1
+connected 11
 end
 arch woodfloor2
 x 8
 y 11
 end
 arch ggate_closed
-damned 1
-no_magic 1
-connected 11
 x 8
 y 11
-end
-arch woodfloor2
-x 8
-y 12
+connected 11
+no_magic 1
+damned 1
 end
 arch check_floor
 slaying bowyer_navar
+x 8
+y 12
 connected 11
+end
+arch woodfloor2
 x 8
 y 12
 end
@@ -866,23 +866,23 @@ x 8
 y 13
 end
 arch trigger_marker
+slaying bowyer_navar
 msg
 You have one day's use of these facilities.
 endmsg
-slaying bowyer_navar
-connected 10
-speed 1.0
 food 504
 x 8
 y 13
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 160 platinum to enter
 slaying platinacoin
 food 160
-connected 10
 x 8
 y 13
+connected 10
 end
 arch woodfloor2
 x 8
@@ -1003,10 +1003,10 @@ y 1
 end
 arch pixie
 name Tim
-stand_still 1
-sleep 0
 x 10
 y 1
+sleep 0
+stand_still 1
 end
 arch woodfloor2
 x 10

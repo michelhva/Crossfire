@@ -1,4 +1,5 @@
 arch map
+name Small House
 reset_timeout 7200
 difficulty 1
 region navar
@@ -65,6 +66,9 @@ arch bwall_2_1_1
 y 8
 end
 arch dungeon_floor
+y 9
+end
+arch swall_1_4
 y 9
 end
 arch bwall_2_1_1
@@ -203,7 +207,7 @@ arch dungeon_floor
 x 1
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 9
 end
@@ -1336,6 +1340,9 @@ end
 arch dungeon_floor
 x 9
 end
+arch swall_1_1_half
+x 9
+end
 arch bwall_2_1_2
 x 9
 end
@@ -1343,7 +1350,7 @@ arch dungeon_floor
 x 9
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 9
 y 1
 end
@@ -1683,6 +1690,9 @@ end
 arch dungeon_floor
 x 12
 end
+arch swall_1_1_half
+x 12
+end
 arch bwall_2_1_2
 x 12
 end
@@ -1690,7 +1700,7 @@ arch dungeon_floor
 x 12
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 1
 end
@@ -3045,7 +3055,7 @@ arch dungeon_floor
 x 20
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 9
 end
@@ -3177,6 +3187,10 @@ x 21
 y 8
 end
 arch dungeon_floor
+x 21
+y 9
+end
+arch swall_1_3
 x 21
 y 9
 end

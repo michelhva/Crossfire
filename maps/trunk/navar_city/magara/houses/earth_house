@@ -1,13 +1,14 @@
 arch map
+name Earth House
+difficulty 1
 region navar
-name earth_house
+width 25
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 22:28:52 1994
 endmsg
-width 25
-height 18
 end
 arch dirtfloor
 end

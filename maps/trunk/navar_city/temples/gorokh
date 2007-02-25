@@ -1,15 +1,16 @@
 arch map
-name Gorokh Temple
+name Temple of Gorokh
+difficulty 1
 region navar
+width 15
+height 17
+enter_x 7
+enter_y 13
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    2003/12/14
 endmsg
-width 15
-height 17
-enter_x 7
-enter_y 13
 end
 arch medium_stones
 end
@@ -225,11 +226,11 @@ end
 arch firechest
 name statue of a devil
 face devil.111
-speed -0.05
 sp 5
-alive 0
 x 2
 y 5
+speed -0.05
+alive 0
 arch spell_cause_medium_wounds
 end
 end
@@ -238,18 +239,18 @@ x 2
 y 6
 end
 arch ruby
-nrof 5
 x 2
 y 6
+nrof 5
 end
 arch marble
 x 2
 y 7
 end
 arch ruby
-nrof 10
 x 2
 y 7
+nrof 10
 end
 arch marble
 x 2
@@ -258,9 +259,9 @@ end
 arch teleporter
 hp 12
 sp 8
-speed 0.05
 x 2
 y 9
+speed 0.05
 end
 arch marble
 x 2
@@ -346,9 +347,9 @@ x 3
 y 5
 end
 arch ruby
-nrof 6
 x 3
 y 5
+nrof 6
 end
 arch marble
 x 3
@@ -670,10 +671,10 @@ end
 arch firechest
 name statue of a devil
 face devil.111
-speed -0.05
-alive 0
 x 6
 y 2
+speed -0.05
+alive 0
 arch spell_cause_medium_wounds
 end
 end
@@ -745,9 +746,9 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
 x 6
 y 16
+fly_on 0
 end
 arch flagstone
 x 6
@@ -792,9 +793,9 @@ x 7
 y 5
 end
 arch altar_gorokh
-level 120
 x 7
 y 5
+level 120
 end
 arch marble
 x 7
@@ -840,9 +841,9 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
 x 7
 y 16
+fly_on 0
 end
 arch flagstone
 x 7
@@ -866,10 +867,10 @@ end
 arch firechest
 name statue of a devil
 face devil.111
-speed -0.05
-alive 0
 x 8
 y 2
+speed -0.05
+alive 0
 arch spell_cause_medium_wounds
 end
 end
@@ -953,9 +954,9 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
 x 8
 y 16
+fly_on 0
 end
 arch flagstone
 x 8
@@ -1079,10 +1080,6 @@ end
 arch medium_stones
 x 10
 end
-arch medium_stones
-x 10
-y 1
-end
 arch magic_ear
 msg
 @match ask|Ask
@@ -1092,19 +1089,23 @@ endmsg
 x 10
 y 1
 end
-arch tree6
-no_pass 1
-x 10
-y 1
-end
 arch magic_ear
 msg
 @match wounding|Wounding
 You may pass.
 endmsg
-connected 1
 x 10
 y 1
+connected 1
+end
+arch medium_stones
+x 10
+y 1
+end
+arch tree6
+x 10
+y 1
+no_pass 1
 end
 arch marble
 x 10
@@ -1208,10 +1209,10 @@ end
 arch teleporter
 hp 10
 sp 3
-connected 1
-speed 0.0
 x 11
 y 1
+speed 0.0
+connected 1
 end
 arch medium_stones
 x 11
@@ -1248,9 +1249,9 @@ x 11
 y 5
 end
 arch ruby
-nrof 20
 x 11
 y 5
+nrof 20
 end
 arch marble
 x 11
@@ -1370,10 +1371,10 @@ end
 arch firechest
 name statue of a devil
 face devil.111
-speed -0.05
-alive 0
 x 12
 y 5
+speed -0.05
+alive 0
 arch spell_cause_medium_wounds
 end
 end
@@ -1382,18 +1383,18 @@ x 12
 y 6
 end
 arch ruby
-nrof 4
 x 12
 y 6
+nrof 4
 end
 arch marble
 x 12
 y 7
 end
 arch ruby
-nrof 8
 x 12
 y 7
+nrof 8
 end
 arch marble
 x 12
@@ -1402,9 +1403,9 @@ end
 arch teleporter
 hp 2
 sp 9
-speed 0.05
 x 12
 y 9
+speed 0.05
 end
 arch marble
 x 12

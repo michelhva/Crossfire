@@ -75,8 +75,7 @@ arch grass
 y 7
 end
 arch r_house1
-name Rosco's kitchen
-name_pl Rosco's kitchen
+name Rosco's Kitchen
 slaying /navar_city/misc/kitchen
 hp 4
 sp 10
@@ -95,6 +94,7 @@ arch grass
 y 9
 end
 arch market1
+name Navar Market
 slaying /navar_city/misc/market1
 hp 2
 sp 10
@@ -698,8 +698,7 @@ x 2
 y 7
 end
 arch s_shop2
-name small house
-name_pl small house
+name Small House
 slaying /navar_city/spyhouse
 hp 16
 sp 18
@@ -746,6 +745,7 @@ x 2
 y 11
 end
 arch market2
+name Condemmed Market
 slaying /navar_city/misc/market2
 hp 14
 sp 10
@@ -1040,8 +1040,7 @@ x 3
 y 7
 end
 arch small_temple2
-name temple of Lythander
-name_pl temple of Lythander
+name Temple of Lythander
 slaying /navar_city/temples/templelyth
 hp 7
 sp 13
@@ -2699,7 +2698,7 @@ x 8
 y 7
 end
 arch castle_west
-name Jail
+name Navar Jail
 slaying /navar_city/jail/jail
 hp 1
 sp 7
@@ -3049,7 +3048,6 @@ y 5
 end
 arch shrine
 name Gaea's shrine
-name_pl Gaea's shrine
 slaying /navar_city/temples/gaea
 hp 14
 sp 18
@@ -3154,7 +3152,6 @@ y 14
 end
 arch s_shop2
 name Jeweler
-name_pl Jeweler
 slaying /navar_city/misc/jeweler
 hp 7
 sp 12
@@ -13741,8 +13738,7 @@ y 49
 elevation 4739
 end
 arch church
-name church of Valriel
-name_pl church of Valriel
+name Church of Valriel
 slaying /navar_city/temples/valriel
 hp 9
 sp 27
@@ -13758,8 +13754,7 @@ x 1
 y 1
 end
 arch guild_west
-name dragon guild
-name_pl dragon guild
+name Navar Dragon Guild
 slaying /navar_city/misc/dragon_guild
 hp 7
 sp 14
@@ -13768,7 +13763,6 @@ y 14
 end
 arch a_civic
 name High Court Building
-name_pl High Court Building
 slaying /navar_city/city1court
 hp 10
 sp 15
@@ -13784,7 +13778,6 @@ y 4
 end
 arch l_shop1
 name Museum of Arms
-name_pl Museum of Arms
 slaying /navar_city/magara/houses/museum
 hp 4
 sp 18
@@ -13810,7 +13803,6 @@ y 7
 end
 arch inn
 name The Frolicing Mermaid
-name_pl The Frolicing Mermaid
 slaying /navar_city/misc/city1mermaid
 hp 11
 sp 12
@@ -13835,6 +13827,7 @@ x 12
 y 9
 end
 arch store_general_west
+name Eddie's Store by the Wall
 slaying /navar_city/misc/city1gen
 hp 1
 sp 1
@@ -13843,7 +13836,6 @@ y 11
 end
 arch farmhouse
 name A Large house
-name_pl A Large house
 slaying /navar_city/magara/houses/large_house
 hp 1
 sp 1
@@ -13851,8 +13843,7 @@ x 12
 y 14
 end
 arch barn2
-name old warehouse
-name_pl old warehouse
+name The Old Warehouse
 slaying /navar_city/smugglers_cove/sc_warehouse
 hp 7
 sp 18
@@ -13870,7 +13861,6 @@ y 1
 end
 arch store_weapons
 name Red's Weapons Bazzar
-name_pl Red's Weapons Bazzar
 slaying /navar_city/misc/city1weapon
 hp 1
 sp 1
@@ -13879,7 +13869,6 @@ y 7
 end
 arch store_magic_west
 name Wizzo's Magic Shop
-name_pl Wizzo's Magic Shop
 slaying /navar_city/misc/city1magic
 hp 1
 sp 1
@@ -13888,7 +13877,6 @@ y 10
 end
 arch house_larg_west
 name Ye ol' Home Depote
-name_pl Ye ol' Home Depote
 slaying /navar_city/misc/buildshop
 hp 6
 sp 10
@@ -13904,6 +13892,7 @@ x 18
 y 1
 end
 arch s_tower1
+name Spiral Tower
 slaying /navar_city/tower/magetower1
 sp 8
 x 18
@@ -13911,7 +13900,6 @@ y 14
 end
 arch big_galleon
 name Smugglers Boat
-name_pl Smugglers Boat
 x 22
 y 4
 end

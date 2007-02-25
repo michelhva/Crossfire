@@ -1,16 +1,17 @@
 arch map
-name ruggilli1
+name Church of Ixalovh
+reset_timeout 3000
+difficulty 1
 region navar
+width 15
+height 20
+enter_x 4
+enter_y 13
 msg
 Creator: Avion
 Date: Nov 2003
 Note: Altar to level 120 20050525
 endmsg
-width 15
-height 20
-enter_x 4
-enter_y 13
-reset_timeout 3000
 end
 arch grass
 end
@@ -714,9 +715,9 @@ x 7
 y 4
 end
 arch altar_ixalovh
-level 120
 x 7
 y 4
+level 120
 end
 arch tile_white_floor
 x 7

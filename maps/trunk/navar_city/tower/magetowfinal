@@ -1,13 +1,14 @@
 arch map
+name Spiral Tower
+difficulty 1
 region navar
-name magetowfinal
+width 27
+height 33
 msg
 Creator: 
 Email: 
 Date: Mon Nov  1 11:50:36 1993
 endmsg
-x 27
-y 33
 end
 arch cobblestones
 end
@@ -4211,8 +4212,8 @@ dam 20
 x 25
 y 4
 level 15
-protected 0
 carrying 20000
+protected 0
 arch darkblade
 end
 end
