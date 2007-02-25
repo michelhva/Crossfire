@@ -416,6 +416,7 @@ y 39
 elevation 165
 end
 arch house_2
+name Fisherman's Cabin
 slaying /whalingoutpost/houses/infestedhouse1
 hp 9
 sp 1
@@ -662,8 +663,7 @@ y 37
 elevation 233
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 16
 sp 22
@@ -689,13 +689,6 @@ arch steppe
 x 2
 y 41
 elevation 3441
-end
-arch house_long
-slaying /whalingoutpost/taverns/fishershall1
-hp 10
-sp 1
-x 2
-y 41
 end
 arch mountain
 x 2
@@ -937,8 +930,7 @@ y 39
 elevation 26
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 27
 sp 9
@@ -1180,8 +1172,7 @@ y 36
 elevation 1744
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 16
 sp 9
@@ -1199,6 +1190,7 @@ y 38
 elevation 453
 end
 arch well
+name Fisher's Well
 slaying /whalingoutpost/misc/fisherswell1
 hp 5
 sp 4
@@ -1465,8 +1457,7 @@ y 40
 elevation 3021
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 4
 sp 22
@@ -1713,8 +1704,7 @@ y 38
 elevation 2558
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 4
 sp 9
@@ -1958,13 +1948,6 @@ arch desert
 x 7
 y 36
 elevation 695
-end
-arch rowboat
-slaying world_123_123
-hp 12
-sp 42
-x 7
-y 36
 end
 arch woods
 x 7
@@ -2505,10 +2488,6 @@ x 9
 y 44
 elevation -495
 end
-arch fishboat
-x 9
-y 44
-end
 arch sea
 x 9
 y 45
@@ -2707,10 +2686,6 @@ arch sea
 x 10
 y 34
 elevation -1151
-end
-arch fishboat
-x 10
-y 34
 end
 arch sea
 x 10
@@ -3255,13 +3230,6 @@ y 42
 elevation -10
 no_pass 0
 end
-arch rowboat
-slaying world_123_123
-hp 8
-sp 36
-x 12
-y 42
-end
 arch desert
 x 12
 y 43
@@ -3291,10 +3259,6 @@ arch sea
 x 12
 y 48
 elevation -864
-end
-arch fishboat
-x 12
-y 48
 end
 arch sea
 x 12
@@ -3500,10 +3464,6 @@ arch sea
 x 13
 y 39
 elevation -2594
-end
-arch fishboat
-x 13
-y 39
 end
 arch sea
 x 13
@@ -4252,10 +4212,6 @@ x 16
 y 35
 elevation -4101
 end
-arch fishboat
-x 16
-y 35
-end
 arch sea
 x 16
 y 36
@@ -4600,8 +4556,7 @@ y 4
 elevation 6042
 end
 arch barrack_small
-name cave
-name_pl cave
+name Wretched Cave
 slaying /whalingoutpost/misc/trollcave1
 face moun_cave1.111
 hp 8
@@ -4824,21 +4779,6 @@ x 18
 y 47
 elevation -55
 no_pass 0
-end
-arch fishboat
-slaying world_124_124
-msg
-The fisherman captian has some
-illicit trade to take part in. As he
-sails his boat south the air becomes
-slightly colder and the seas
-choppier. He comes upon an island
-where a large ship has set anchor. 
-endmsg
-hp 6
-sp 6
-x 18
-y 47
 end
 arch shallow_sea
 x 18
@@ -5115,8 +5055,7 @@ y 2
 elevation 6584
 end
 arch barrack_small
-name cave
-name_pl cave
+name Foul Cave
 slaying /whalingoutpost/misc/trollcave1
 face moun_cave1.111
 hp 56
@@ -12571,4 +12510,61 @@ arch sea
 x 49
 y 49
 elevation -4113
+end
+arch house_long
+name Fisher's Hall
+slaying /whalingoutpost/taverns/fishershall1
+hp 10
+sp 1
+x 2
+y 41
+end
+arch rowboat
+slaying world_123_123
+hp 12
+sp 42
+x 7
+y 36
+end
+arch fishboat
+x 9
+y 44
+end
+arch fishboat
+x 10
+y 34
+end
+arch rowboat
+slaying world_123_123
+hp 8
+sp 36
+x 12
+y 42
+end
+arch fishboat
+x 12
+y 48
+end
+arch fishboat
+x 13
+y 39
+end
+arch fishboat
+x 16
+y 35
+end
+arch fishboat
+slaying world_124_124
+msg
+The fisherman captian has some
+illicit trade to take part in. As he
+sails his boat south the air becomes
+slightly colder and the seas
+choppier. He comes upon an island
+where a large ship has set anchor.
+endmsg
+hp 6
+sp 6
+x 18
+y 47
 end

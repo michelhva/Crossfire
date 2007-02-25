@@ -1,13 +1,14 @@
 arch map
+name Castle of Magara
+difficulty 1
 region wolfsburg
-name floor_1
+width 49
+height 40
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 12 03:36:56 1994
 endmsg
-x 49
-y 40
 end
 arch flagstone
 end
@@ -459,7 +460,7 @@ This is a new version of the Castle
 of Magara. The outlook has been
 improved and some valuable treasure
 has been put in to make it more
-attractive. =)  
+attractive. =)
 endmsg
 x 2
 y 1

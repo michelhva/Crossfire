@@ -1,4 +1,5 @@
 arch map
+name Underwater Dungeon
 reset_timeout 7200
 difficulty 4
 width 16
@@ -1143,7 +1144,7 @@ arch pstone_1
 x 9
 y 7
 end
-arch bwall_4
+arch bwall_3_4
 x 9
 y 7
 end
@@ -1151,7 +1152,7 @@ arch pstone_1
 x 9
 y 8
 end
-arch bwall_4
+arch bwall_3_4
 x 9
 y 8
 end
@@ -1159,7 +1160,7 @@ arch pstone_1
 x 9
 y 9
 end
-arch bwall_4
+arch bwall_3_4
 x 9
 y 9
 end
@@ -1167,7 +1168,7 @@ arch pstone_1
 x 9
 y 10
 end
-arch bwall_4
+arch bwall_3_4
 x 9
 y 10
 end
@@ -1175,7 +1176,7 @@ arch pstone_1
 x 9
 y 11
 end
-arch bwall_4
+arch bwall_3_4
 x 9
 y 11
 end
@@ -1261,7 +1262,7 @@ arch pstone_1
 x 10
 y 6
 end
-arch bwall_3_4
+arch bwall_2_2_4
 x 10
 y 6
 end
@@ -1289,7 +1290,7 @@ arch pstone_1
 x 10
 y 12
 end
-arch bwall_3_1
+arch bwall_2_1_2
 x 10
 y 12
 end
@@ -1387,18 +1388,18 @@ arch woodwall_1_4
 x 11
 y 8
 end
+arch magic_mouth
+msg
+Homeward express.
+endmsg
+x 11
+y 9
+end
 arch pstone_1
 x 11
 y 9
 end
 arch cobblestones
-x 11
-y 9
-end
-arch magic_mouth
-msg
-Homeward express.
-endmsg
 x 11
 y 9
 end

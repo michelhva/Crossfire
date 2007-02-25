@@ -1,13 +1,14 @@
 arch map
-name armour department
+name Armour Department
+fixed_resettime 1
+difficulty 1
 region wolfsburg
+width 16
+height 13
 msg
 Creator: CF Java Map Editor
 Date:    9/18/2005
 endmsg
-width 16
-height 13
-fixed_resettime 1
 tile_path_2 dept_store_weapon
 tile_path_3 dept_store_magic
 end

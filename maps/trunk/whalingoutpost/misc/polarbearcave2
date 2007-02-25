@@ -1,4 +1,5 @@
 arch map
+name Polar Bear Lair
 reset_timeout 7200
 difficulty 1
 width 64
@@ -13,38 +14,26 @@ endmsg
 outdoor 1
 end
 arch blocked
-msg
-endmsg
 x 9
 y 39
 end
 arch blocked
-msg
-endmsg
 x 9
 y 40
 end
 arch blocked
-msg
-endmsg
 x 9
 y 41
 end
 arch blocked
-msg
-endmsg
 x 9
 y 42
 end
 arch blocked
-msg
-endmsg
 x 10
 y 38
 end
 arch blocked
-msg
-endmsg
 x 10
 y 39
 end
@@ -77,20 +66,14 @@ x 10
 y 41
 end
 arch blocked
-msg
-endmsg
 x 10
 y 42
 end
 arch blocked
-msg
-endmsg
 x 10
 y 43
 end
 arch blocked
-msg
-endmsg
 x 11
 y 38
 end
@@ -151,26 +134,18 @@ x 11
 y 42
 end
 arch blocked
-msg
-endmsg
 x 11
 y 43
 end
 arch blocked
-msg
-endmsg
 x 11
 y 44
 end
 arch blocked
-msg
-endmsg
 x 12
 y 37
 end
 arch blocked
-msg
-endmsg
 x 12
 y 38
 end
@@ -237,32 +212,22 @@ x 12
 y 43
 end
 arch blocked
-msg
-endmsg
 x 12
 y 44
 end
 arch blocked
-msg
-endmsg
 x 12
 y 45
 end
 arch blocked
-msg
-endmsg
 x 12
 y 46
 end
 arch blocked
-msg
-endmsg
 x 13
 y 36
 end
 arch blocked
-msg
-endmsg
 x 13
 y 37
 end
@@ -361,26 +326,18 @@ x 13
 y 45
 end
 arch blocked
-msg
-endmsg
 x 13
 y 46
 end
 arch blocked
-msg
-endmsg
 x 13
 y 47
 end
 arch blocked
-msg
-endmsg
 x 13
 y 48
 end
 arch blocked
-msg
-endmsg
 x 14
 y 36
 end
@@ -497,20 +454,14 @@ x 14
 y 47
 end
 arch blocked
-msg
-endmsg
 x 14
 y 48
 end
 arch blocked
-msg
-endmsg
 x 14
 y 49
 end
 arch blocked
-msg
-endmsg
 x 15
 y 36
 end
@@ -623,38 +574,26 @@ x 15
 y 48
 end
 arch blocked
-msg
-endmsg
 x 15
 y 49
 end
 arch blocked
-msg
-endmsg
 x 15
 y 50
 end
 arch blocked
-msg
-endmsg
 x 15
 y 51
 end
 arch blocked
-msg
-endmsg
 x 15
 y 52
 end
 arch blocked
-msg
-endmsg
 x 16
 y 35
 end
 arch blocked
-msg
-endmsg
 x 16
 y 36
 end
@@ -787,38 +726,26 @@ x 16
 y 51
 end
 arch blocked
-msg
-endmsg
 x 16
 y 52
 end
 arch blocked
-msg
-endmsg
 x 16
 y 53
 end
 arch blocked
-msg
-endmsg
 x 16
 y 54
 end
 arch blocked
-msg
-endmsg
 x 16
 y 55
 end
 arch blocked
-msg
-endmsg
 x 16
 y 56
 end
 arch blocked
-msg
-endmsg
 x 17
 y 35
 end
@@ -973,20 +900,14 @@ x 17
 y 55
 end
 arch blocked
-msg
-endmsg
 x 17
 y 56
 end
 arch blocked
-msg
-endmsg
 x 17
 y 57
 end
 arch blocked
-msg
-endmsg
 x 18
 y 35
 end
@@ -1005,21 +926,6 @@ end
 arch istone
 x 18
 y 38
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 18
-y 38
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 18
@@ -1099,10 +1005,6 @@ arch istone
 x 18
 y 50
 end
-arch polarbear
-x 18
-y 50
-end
 arch istone
 x 18
 y 51
@@ -1136,26 +1038,18 @@ x 18
 y 56
 end
 arch blocked
-msg
-endmsg
 x 18
 y 57
 end
 arch blocked
-msg
-endmsg
 x 18
 y 58
 end
 arch blocked
-msg
-endmsg
 x 18
 y 59
 end
 arch blocked
-msg
-endmsg
 x 19
 y 35
 end
@@ -1242,10 +1136,6 @@ x 19
 y 47
 end
 arch istone
-x 19
-y 48
-end
-arch polarbear
 x 19
 y 48
 end
@@ -1318,32 +1208,22 @@ x 19
 y 58
 end
 arch blocked
-msg
-endmsg
 x 19
 y 59
 end
 arch blocked
-msg
-endmsg
 x 19
 y 60
 end
 arch blocked
-msg
-endmsg
 x 19
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 34
 end
 arch blocked
-msg
-endmsg
 x 20
 y 35
 end
@@ -1467,10 +1347,6 @@ arch istone
 x 20
 y 52
 end
-arch polarbear
-x 20
-y 52
-end
 arch istone
 x 20
 y 53
@@ -1488,10 +1364,6 @@ x 20
 y 55
 end
 arch snow5
-x 20
-y 55
-end
-arch polarbear
 x 20
 y 55
 end
@@ -1536,26 +1408,18 @@ x 20
 y 60
 end
 arch blocked
-msg
-endmsg
 x 20
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 62
 end
 arch blocked
-msg
-endmsg
 x 21
 y 33
 end
 arch blocked
-msg
-endmsg
 x 21
 y 34
 end
@@ -1663,10 +1527,6 @@ arch istone
 x 21
 y 49
 end
-arch polarbear
-x 21
-y 49
-end
 arch istone
 x 21
 y 50
@@ -1740,20 +1600,14 @@ x 21
 y 61
 end
 arch blocked
-msg
-endmsg
 x 21
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 32
 end
 arch blocked
-msg
-endmsg
 x 22
 y 33
 end
@@ -1784,21 +1638,6 @@ end
 arch istone
 x 22
 y 38
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 22
-y 38
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 22
@@ -1939,20 +1778,14 @@ x 22
 y 61
 end
 arch blocked
-msg
-endmsg
 x 22
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 32
 end
@@ -2060,10 +1893,6 @@ arch istone
 x 23
 y 50
 end
-arch polarbear
-x 23
-y 50
-end
 arch istone
 x 23
 y 51
@@ -2081,10 +1910,6 @@ x 23
 y 53
 end
 arch snow5
-x 23
-y 53
-end
-arch polarbear
 x 23
 y 53
 end
@@ -2157,14 +1982,10 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
@@ -2183,21 +2004,6 @@ end
 arch istone
 x 24
 y 35
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 24
-y 35
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 24
@@ -2222,21 +2028,6 @@ end
 arch istone
 x 24
 y 41
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 24
-y 41
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 24
@@ -2374,14 +2165,10 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 30
 end
 arch blocked
-msg
-endmsg
 x 25
 y 31
 end
@@ -2509,10 +2296,6 @@ arch istone
 x 25
 y 53
 end
-arch polarbear
-x 25
-y 53
-end
 arch istone
 x 25
 y 54
@@ -2573,8 +2356,6 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 30
 end
@@ -2606,21 +2387,6 @@ arch istone
 x 26
 y 34
 end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 26
-y 34
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
-end
 arch istone
 x 26
 y 35
@@ -2636,21 +2402,6 @@ end
 arch istone
 x 26
 y 38
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 26
-y 38
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 26
@@ -2806,14 +2557,10 @@ x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 27
 y 29
 end
 arch blocked
-msg
-endmsg
 x 27
 y 30
 end
@@ -2959,10 +2706,6 @@ arch istone
 x 27
 y 51
 end
-arch polarbear
-x 27
-y 51
-end
 arch istone
 x 27
 y 52
@@ -2980,10 +2723,6 @@ x 27
 y 55
 end
 arch snow5
-x 27
-y 55
-end
-arch polarbear
 x 27
 y 55
 end
@@ -3044,8 +2783,6 @@ x 27
 y 63
 end
 arch blocked
-msg
-endmsg
 x 28
 y 29
 end
@@ -3098,8 +2835,6 @@ x 28
 y 35
 end
 arch blocked
-msg
-endmsg
 x 28
 y 36
 end
@@ -3130,21 +2865,6 @@ end
 arch istone
 x 28
 y 41
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 28
-y 41
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 28
@@ -3277,8 +2997,6 @@ x 28
 y 61
 end
 arch blocked
-msg
-endmsg
 x 28
 y 61
 end
@@ -3287,20 +3005,14 @@ x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 63
 end
 arch blocked
-msg
-endmsg
 x 29
 y 29
 end
@@ -3353,14 +3065,10 @@ x 29
 y 35
 end
 arch blocked
-msg
-endmsg
 x 29
 y 36
 end
 arch blocked
-msg
-endmsg
 x 29
 y 37
 end
@@ -3395,21 +3103,6 @@ end
 arch istone
 x 29
 y 44
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 29
-y 44
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 29
@@ -3528,14 +3221,10 @@ x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 30
 y 29
 end
@@ -3588,14 +3277,10 @@ x 30
 y 35
 end
 arch blocked
-msg
-endmsg
 x 30
 y 36
 end
 arch blocked
-msg
-endmsg
 x 30
 y 37
 end
@@ -3702,10 +3387,6 @@ x 30
 y 53
 end
 arch istone
-x 30
-y 54
-end
-arch polarbear
 x 30
 y 54
 end
@@ -3758,20 +3439,14 @@ x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 61
 end
 arch blocked
-msg
-endmsg
 x 31
 y 29
 end
@@ -3832,14 +3507,10 @@ x 31
 y 36
 end
 arch blocked
-msg
-endmsg
 x 31
 y 37
 end
 arch blocked
-msg
-endmsg
 x 31
 y 38
 end
@@ -3968,8 +3639,6 @@ x 31
 y 58
 end
 arch blocked
-msg
-endmsg
 x 31
 y 58
 end
@@ -3978,20 +3647,14 @@ x 31
 y 59
 end
 arch blocked
-msg
-endmsg
 x 31
 y 59
 end
 arch blocked
-msg
-endmsg
 x 31
 y 60
 end
 arch blocked
-msg
-endmsg
 x 32
 y 29
 end
@@ -4060,14 +3723,10 @@ x 32
 y 37
 end
 arch blocked
-msg
-endmsg
 x 32
 y 38
 end
 arch blocked
-msg
-endmsg
 x 32
 y 39
 end
@@ -4103,21 +3762,6 @@ arch istone
 x 32
 y 44
 end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 32
-y 44
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
-end
 arch istone
 x 32
 y 45
@@ -4201,14 +3845,10 @@ x 32
 y 57
 end
 arch blocked
-msg
-endmsg
 x 32
 y 58
 end
 arch blocked
-msg
-endmsg
 x 33
 y 29
 end
@@ -4277,26 +3917,18 @@ x 33
 y 37
 end
 arch blocked
-msg
-endmsg
 x 33
 y 38
 end
 arch blocked
-msg
-endmsg
 x 33
 y 39
 end
 arch blocked
-msg
-endmsg
 x 33
 y 40
 end
 arch blocked
-msg
-endmsg
 x 33
 y 41
 end
@@ -4395,20 +4027,14 @@ x 33
 y 56
 end
 arch blocked
-msg
-endmsg
 x 33
 y 57
 end
 arch blocked
-msg
-endmsg
 x 33
 y 58
 end
 arch blocked
-msg
-endmsg
 x 34
 y 29
 end
@@ -4485,26 +4111,18 @@ x 34
 y 38
 end
 arch blocked
-msg
-endmsg
 x 34
 y 39
 end
 arch blocked
-msg
-endmsg
 x 34
 y 40
 end
 arch blocked
-msg
-endmsg
 x 34
 y 41
 end
 arch blocked
-msg
-endmsg
 x 34
 y 42
 end
@@ -4527,21 +4145,6 @@ end
 arch istone
 x 34
 y 46
-end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 34
-y 46
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
 end
 arch istone
 x 34
@@ -4616,26 +4219,18 @@ x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 57
 end
 arch blocked
-msg
-endmsg
 x 35
 y 29
 end
 arch blocked
-msg
-endmsg
 x 35
 y 30
 end
@@ -4712,14 +4307,10 @@ x 35
 y 39
 end
 arch blocked
-msg
-endmsg
 x 35
 y 40
 end
 arch blocked
-msg
-endmsg
 x 35
 y 41
 end
@@ -4822,20 +4413,14 @@ x 35
 y 55
 end
 arch blocked
-msg
-endmsg
 x 35
 y 55
 end
 arch blocked
-msg
-endmsg
 x 35
 y 56
 end
 arch blocked
-msg
-endmsg
 x 36
 y 30
 end
@@ -4943,21 +4528,6 @@ arch istone
 x 36
 y 44
 end
-arch polarbear
-name agressive polar bear
-name_pl agressive polar bear
-hp 1250
-maxhp 1600
-exp 5600
-
-dam 38
-x 36
-y 44
-speed -0.140000
-attack_movement 0
-level 18
-run_away 4
-end
 arch istone
 x 36
 y 45
@@ -5013,38 +4583,26 @@ x 36
 y 51
 end
 arch blocked
-msg
-endmsg
 x 36
 y 52
 end
 arch blocked
-msg
-endmsg
 x 36
 y 53
 end
 arch blocked
-msg
-endmsg
 x 36
 y 54
 end
 arch blocked
-msg
-endmsg
 x 36
 y 55
 end
 arch blocked
-msg
-endmsg
 x 37
 y 30
 end
 arch blocked
-msg
-endmsg
 x 37
 y 31
 end
@@ -5179,32 +4737,22 @@ x 37
 y 50
 end
 arch blocked
-msg
-endmsg
 x 37
 y 51
 end
 arch blocked
-msg
-endmsg
 x 37
 y 52
 end
 arch blocked
-msg
-endmsg
 x 38
 y 31
 end
 arch blocked
-msg
-endmsg
 x 38
 y 32
 end
 arch blocked
-msg
-endmsg
 x 38
 y 33
 end
@@ -5271,6 +4819,724 @@ end
 arch istone
 x 38
 y 42
+end
+arch istone
+x 38
+y 43
+end
+arch istone
+x 38
+y 44
+end
+arch istone
+x 38
+y 45
+end
+arch istone
+x 38
+y 46
+end
+arch cave15
+x 38
+y 46
+end
+arch istone
+x 38
+y 47
+end
+arch cave1
+x 38
+y 47
+end
+arch istone
+x 38
+y 48
+end
+arch cave20
+x 38
+y 48
+end
+arch istone
+x 38
+y 49
+end
+arch blocked
+x 38
+y 49
+end
+arch istone
+x 38
+y 50
+end
+arch blocked
+x 38
+y 50
+end
+arch blocked
+x 38
+y 51
+end
+arch blocked
+x 39
+y 33
+end
+arch blocked
+x 39
+y 34
+end
+arch istone
+x 39
+y 35
+end
+arch cave19
+x 39
+y 35
+end
+arch istone
+x 39
+y 36
+end
+arch cave1
+x 39
+y 36
+end
+arch istone
+x 39
+y 37
+end
+arch cave1
+x 39
+y 37
+end
+arch istone
+x 39
+y 38
+end
+arch cave14
+x 39
+y 38
+end
+arch istone
+x 39
+y 39
+end
+arch random_food
+x 39
+y 39
+end
+arch istone
+x 39
+y 40
+end
+arch istone
+x 39
+y 41
+end
+arch istone
+x 39
+y 42
+end
+arch istone
+x 39
+y 43
+end
+arch istone
+x 39
+y 44
+end
+arch istone
+x 39
+y 45
+end
+arch cave15
+x 39
+y 45
+end
+arch istone
+x 39
+y 46
+end
+arch cave20
+x 39
+y 46
+end
+arch blocked
+x 39
+y 47
+end
+arch blocked
+x 39
+y 48
+end
+arch blocked
+x 39
+y 49
+end
+arch blocked
+x 40
+y 34
+end
+arch blocked
+x 40
+y 35
+end
+arch blocked
+x 40
+y 36
+end
+arch blocked
+x 40
+y 37
+end
+arch istone
+x 40
+y 38
+end
+arch cave19
+x 40
+y 38
+end
+arch istone
+x 40
+y 39
+end
+arch cave1
+x 40
+y 39
+end
+arch istone
+x 40
+y 40
+end
+arch cave1
+x 40
+y 40
+end
+arch istone
+x 40
+y 41
+end
+arch cave14
+x 40
+y 41
+end
+arch istone
+x 40
+y 42
+end
+arch istone
+x 40
+y 43
+end
+arch istone
+x 40
+y 44
+end
+arch cave15
+x 40
+y 44
+end
+arch istone
+x 40
+y 45
+end
+arch cave20
+x 40
+y 45
+end
+arch blocked
+x 40
+y 46
+end
+arch blocked
+x 40
+y 47
+end
+arch blocked
+x 41
+y 37
+end
+arch blocked
+x 41
+y 38
+end
+arch blocked
+x 41
+y 39
+end
+arch blocked
+x 41
+y 40
+end
+arch istone
+x 41
+y 41
+end
+arch cave19
+x 41
+y 41
+end
+arch istone
+x 41
+y 42
+end
+arch cave1
+x 41
+y 42
+end
+arch istone
+x 41
+y 43
+end
+arch cave1
+x 41
+y 43
+end
+arch istone
+x 41
+y 44
+end
+arch cave20
+x 41
+y 44
+end
+arch blocked
+x 41
+y 45
+end
+arch blocked
+x 41
+y 46
+end
+arch blocked
+x 42
+y 40
+end
+arch blocked
+x 42
+y 41
+end
+arch blocked
+x 42
+y 42
+end
+arch blocked
+x 42
+y 43
+end
+arch blocked
+x 42
+y 44
+end
+arch blocked
+x 42
+y 45
+end
+arch flagstone
+x 54
+end
+arch flagstone
+x 54
+y 1
+end
+arch flagstone
+x 54
+y 10
+end
+arch flagstone
+x 54
+y 11
+end
+arch flagstone
+x 55
+end
+arch flagstone
+x 55
+y 1
+end
+arch flagstone
+x 55
+y 10
+end
+arch flagstone
+x 55
+y 11
+end
+arch flagstone
+x 56
+end
+arch flagstone
+x 56
+y 1
+end
+arch flagstone
+x 56
+y 2
+end
+arch flagstone
+x 56
+y 3
+end
+arch flagstone
+x 56
+y 4
+end
+arch flagstone
+x 56
+y 5
+end
+arch flagstone
+x 56
+y 6
+end
+arch flagstone
+x 56
+y 7
+end
+arch flagstone
+x 56
+y 8
+end
+arch flagstone
+x 56
+y 9
+end
+arch flagstone
+x 56
+y 10
+end
+arch flagstone
+x 56
+y 11
+end
+arch flagstone
+x 57
+end
+arch flagstone
+x 57
+y 1
+end
+arch flagstone
+x 57
+y 2
+end
+arch flagstone
+x 57
+y 3
+end
+arch flagstone
+x 57
+y 4
+end
+arch flagstone
+x 57
+y 5
+end
+arch flagstone
+x 57
+y 6
+end
+arch flagstone
+x 57
+y 7
+end
+arch flagstone
+x 57
+y 8
+end
+arch flagstone
+x 57
+y 9
+end
+arch flagstone
+x 57
+y 10
+end
+arch flagstone
+x 57
+y 11
+end
+arch flagstone
+x 58
+end
+arch flagstone
+x 58
+y 1
+end
+arch flagstone
+x 58
+y 2
+end
+arch flagstone
+x 58
+y 3
+end
+arch flagstone
+x 58
+y 4
+end
+arch flagstone
+x 58
+y 5
+end
+arch flagstone
+x 58
+y 6
+end
+arch flagstone
+x 58
+y 7
+end
+arch flagstone
+x 58
+y 8
+end
+arch flagstone
+x 58
+y 9
+end
+arch flagstone
+x 58
+y 10
+end
+arch flagstone
+x 58
+y 11
+end
+arch flagstone
+x 59
+end
+arch flagstone
+x 59
+y 1
+end
+arch flagstone
+x 59
+y 2
+end
+arch flagstone
+x 59
+y 3
+end
+arch flagstone
+x 59
+y 4
+end
+arch flagstone
+x 59
+y 5
+end
+arch flagstone
+x 59
+y 6
+end
+arch flagstone
+x 59
+y 7
+end
+arch flagstone
+x 59
+y 8
+end
+arch flagstone
+x 59
+y 9
+end
+arch flagstone
+x 59
+y 10
+end
+arch flagstone
+x 59
+y 11
+end
+arch flagstone
+x 60
+end
+arch flagstone
+x 60
+y 1
+end
+arch flagstone
+x 60
+y 2
+end
+arch flagstone
+x 60
+y 3
+end
+arch flagstone
+x 60
+y 4
+end
+arch flagstone
+x 60
+y 5
+end
+arch flagstone
+x 60
+y 6
+end
+arch flagstone
+x 60
+y 7
+end
+arch flagstone
+x 60
+y 8
+end
+arch flagstone
+x 60
+y 9
+end
+arch flagstone
+x 60
+y 10
+end
+arch flagstone
+x 60
+y 11
+end
+arch flagstone
+x 61
+end
+arch flagstone
+x 61
+y 1
+end
+arch flagstone
+x 61
+y 2
+end
+arch flagstone
+x 61
+y 3
+end
+arch flagstone
+x 61
+y 4
+end
+arch flagstone
+x 61
+y 5
+end
+arch flagstone
+x 61
+y 6
+end
+arch flagstone
+x 61
+y 7
+end
+arch flagstone
+x 61
+y 8
+end
+arch flagstone
+x 61
+y 9
+end
+arch flagstone
+x 61
+y 10
+end
+arch flagstone
+x 61
+y 11
+end
+arch flagstone
+x 62
+end
+arch flagstone
+x 62
+y 1
+end
+arch flagstone
+x 62
+y 2
+end
+arch flagstone
+x 62
+y 3
+end
+arch flagstone
+x 62
+y 4
+end
+arch flagstone
+x 62
+y 5
+end
+arch flagstone
+x 62
+y 6
+end
+arch flagstone
+x 62
+y 7
+end
+arch flagstone
+x 62
+y 8
+end
+arch flagstone
+x 62
+y 9
+end
+arch flagstone
+x 62
+y 10
+end
+arch flagstone
+x 62
+y 11
+end
+arch flagstone
+x 63
+end
+arch flagstone
+x 63
+y 1
+end
+arch flagstone
+x 63
+y 2
+end
+arch flagstone
+x 63
+y 3
+end
+arch flagstone
+x 63
+y 4
+end
+arch flagstone
+x 63
+y 5
+end
+arch flagstone
+x 63
+y 6
+end
+arch flagstone
+x 63
+y 7
+end
+arch flagstone
+x 63
+y 8
+end
+arch flagstone
+x 63
+y 9
+end
+arch flagstone
+x 63
+y 10
+end
+arch flagstone
+x 63
+y 11
 end
 arch polarbear
 name agressive polar bear
@@ -5278,7 +5544,204 @@ name_pl agressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
+dam 38
+x 18
+y 38
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+x 18
+y 50
+end
+arch polarbear
+x 19
+y 48
+end
+arch polarbear
+x 20
+y 52
+end
+arch polarbear
+x 20
+y 55
+end
+arch polarbear
+x 21
+y 49
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 22
+y 38
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+x 23
+y 50
+end
+arch polarbear
+x 23
+y 53
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 24
+y 35
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 24
+y 41
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+x 25
+y 53
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 26
+y 34
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 26
+y 38
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+x 27
+y 51
+end
+arch polarbear
+x 27
+y 55
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 28
+y 41
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 29
+y 44
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+x 30
+y 54
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 32
+y 44
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 34
+y 46
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
+dam 38
+x 36
+y 44
+speed -0.140000
+attack_movement 0
+level 18
+run_away 4
+end
+arch polarbear
+name agressive polar bear
+name_pl agressive polar bear
+hp 1250
+maxhp 1600
+exp 5600
 dam 38
 x 38
 y 42
@@ -5286,774 +5749,4 @@ speed -0.140000
 attack_movement 0
 level 18
 run_away 4
-end
-arch istone
-x 38
-y 43
-end
-arch istone
-x 38
-y 44
-end
-arch istone
-x 38
-y 45
-end
-arch istone
-x 38
-y 46
-end
-arch cave15
-x 38
-y 46
-end
-arch istone
-x 38
-y 47
-end
-arch cave1
-x 38
-y 47
-end
-arch istone
-x 38
-y 48
-end
-arch cave20
-x 38
-y 48
-end
-arch istone
-x 38
-y 49
-end
-arch blocked
-msg
-endmsg
-x 38
-y 49
-end
-arch istone
-x 38
-y 50
-end
-arch blocked
-msg
-endmsg
-x 38
-y 50
-end
-arch blocked
-msg
-endmsg
-x 38
-y 51
-end
-arch blocked
-msg
-endmsg
-x 39
-y 33
-end
-arch blocked
-msg
-endmsg
-x 39
-y 34
-end
-arch istone
-x 39
-y 35
-end
-arch cave19
-x 39
-y 35
-end
-arch istone
-x 39
-y 36
-end
-arch cave1
-x 39
-y 36
-end
-arch istone
-x 39
-y 37
-end
-arch cave1
-x 39
-y 37
-end
-arch istone
-x 39
-y 38
-end
-arch cave14
-x 39
-y 38
-end
-arch istone
-x 39
-y 39
-end
-arch random_food
-x 39
-y 39
-end
-arch istone
-x 39
-y 40
-end
-arch istone
-x 39
-y 41
-end
-arch istone
-x 39
-y 42
-end
-arch istone
-x 39
-y 43
-end
-arch istone
-x 39
-y 44
-end
-arch istone
-x 39
-y 45
-end
-arch cave15
-x 39
-y 45
-end
-arch istone
-x 39
-y 46
-end
-arch cave20
-x 39
-y 46
-end
-arch blocked
-msg
-endmsg
-x 39
-y 47
-end
-arch blocked
-msg
-endmsg
-x 39
-y 48
-end
-arch blocked
-msg
-endmsg
-x 39
-y 49
-end
-arch blocked
-msg
-endmsg
-x 40
-y 34
-end
-arch blocked
-msg
-endmsg
-x 40
-y 35
-end
-arch blocked
-msg
-endmsg
-x 40
-y 36
-end
-arch blocked
-msg
-endmsg
-x 40
-y 37
-end
-arch istone
-x 40
-y 38
-end
-arch cave19
-x 40
-y 38
-end
-arch istone
-x 40
-y 39
-end
-arch cave1
-x 40
-y 39
-end
-arch istone
-x 40
-y 40
-end
-arch cave1
-x 40
-y 40
-end
-arch istone
-x 40
-y 41
-end
-arch cave14
-x 40
-y 41
-end
-arch istone
-x 40
-y 42
-end
-arch istone
-x 40
-y 43
-end
-arch istone
-x 40
-y 44
-end
-arch cave15
-x 40
-y 44
-end
-arch istone
-x 40
-y 45
-end
-arch cave20
-x 40
-y 45
-end
-arch blocked
-msg
-endmsg
-x 40
-y 46
-end
-arch blocked
-msg
-endmsg
-x 40
-y 47
-end
-arch blocked
-msg
-endmsg
-x 41
-y 37
-end
-arch blocked
-msg
-endmsg
-x 41
-y 38
-end
-arch blocked
-msg
-endmsg
-x 41
-y 39
-end
-arch blocked
-msg
-endmsg
-x 41
-y 40
-end
-arch istone
-x 41
-y 41
-end
-arch cave19
-x 41
-y 41
-end
-arch istone
-x 41
-y 42
-end
-arch cave1
-x 41
-y 42
-end
-arch istone
-x 41
-y 43
-end
-arch cave1
-x 41
-y 43
-end
-arch istone
-x 41
-y 44
-end
-arch cave20
-x 41
-y 44
-end
-arch blocked
-msg
-endmsg
-x 41
-y 45
-end
-arch blocked
-msg
-endmsg
-x 41
-y 46
-end
-arch blocked
-msg
-endmsg
-x 42
-y 40
-end
-arch blocked
-msg
-endmsg
-x 42
-y 41
-end
-arch blocked
-msg
-endmsg
-x 42
-y 42
-end
-arch blocked
-msg
-endmsg
-x 42
-y 43
-end
-arch blocked
-msg
-endmsg
-x 42
-y 44
-end
-arch blocked
-msg
-endmsg
-x 42
-y 45
-end
-arch flagstone
-x 54
-end
-arch flagstone
-x 54
-y 1
-end
-arch flagstone
-x 54
-y 10
-end
-arch flagstone
-x 54
-y 11
-end
-arch flagstone
-x 55
-end
-arch flagstone
-x 55
-y 1
-end
-arch flagstone
-x 55
-y 10
-end
-arch flagstone
-x 55
-y 11
-end
-arch flagstone
-x 56
-end
-arch flagstone
-x 56
-y 1
-end
-arch flagstone
-x 56
-y 2
-end
-arch flagstone
-x 56
-y 3
-end
-arch flagstone
-x 56
-y 4
-end
-arch flagstone
-x 56
-y 5
-end
-arch flagstone
-x 56
-y 6
-end
-arch flagstone
-x 56
-y 7
-end
-arch flagstone
-x 56
-y 8
-end
-arch flagstone
-x 56
-y 9
-end
-arch flagstone
-x 56
-y 10
-end
-arch flagstone
-x 56
-y 11
-end
-arch flagstone
-x 57
-end
-arch flagstone
-x 57
-y 1
-end
-arch flagstone
-x 57
-y 2
-end
-arch flagstone
-x 57
-y 3
-end
-arch flagstone
-x 57
-y 4
-end
-arch flagstone
-x 57
-y 5
-end
-arch flagstone
-x 57
-y 6
-end
-arch flagstone
-x 57
-y 7
-end
-arch flagstone
-x 57
-y 8
-end
-arch flagstone
-x 57
-y 9
-end
-arch flagstone
-x 57
-y 10
-end
-arch flagstone
-x 57
-y 11
-end
-arch flagstone
-x 58
-end
-arch flagstone
-x 58
-y 1
-end
-arch flagstone
-x 58
-y 2
-end
-arch flagstone
-x 58
-y 3
-end
-arch flagstone
-x 58
-y 4
-end
-arch flagstone
-x 58
-y 5
-end
-arch flagstone
-x 58
-y 6
-end
-arch flagstone
-x 58
-y 7
-end
-arch flagstone
-x 58
-y 8
-end
-arch flagstone
-x 58
-y 9
-end
-arch flagstone
-x 58
-y 10
-end
-arch flagstone
-x 58
-y 11
-end
-arch flagstone
-x 59
-end
-arch flagstone
-x 59
-y 1
-end
-arch flagstone
-x 59
-y 2
-end
-arch flagstone
-x 59
-y 3
-end
-arch flagstone
-x 59
-y 4
-end
-arch flagstone
-x 59
-y 5
-end
-arch flagstone
-x 59
-y 6
-end
-arch flagstone
-x 59
-y 7
-end
-arch flagstone
-x 59
-y 8
-end
-arch flagstone
-x 59
-y 9
-end
-arch flagstone
-x 59
-y 10
-end
-arch flagstone
-x 59
-y 11
-end
-arch flagstone
-x 60
-end
-arch flagstone
-x 60
-y 1
-end
-arch flagstone
-x 60
-y 2
-end
-arch flagstone
-x 60
-y 3
-end
-arch flagstone
-x 60
-y 4
-end
-arch flagstone
-x 60
-y 5
-end
-arch flagstone
-x 60
-y 6
-end
-arch flagstone
-x 60
-y 7
-end
-arch flagstone
-x 60
-y 8
-end
-arch flagstone
-x 60
-y 9
-end
-arch flagstone
-x 60
-y 10
-end
-arch flagstone
-x 60
-y 11
-end
-arch flagstone
-x 61
-end
-arch flagstone
-x 61
-y 1
-end
-arch flagstone
-x 61
-y 2
-end
-arch flagstone
-x 61
-y 3
-end
-arch flagstone
-x 61
-y 4
-end
-arch flagstone
-x 61
-y 5
-end
-arch flagstone
-x 61
-y 6
-end
-arch flagstone
-x 61
-y 7
-end
-arch flagstone
-x 61
-y 8
-end
-arch flagstone
-x 61
-y 9
-end
-arch flagstone
-x 61
-y 10
-end
-arch flagstone
-x 61
-y 11
-end
-arch flagstone
-x 62
-end
-arch flagstone
-x 62
-y 1
-end
-arch flagstone
-x 62
-y 2
-end
-arch flagstone
-x 62
-y 3
-end
-arch flagstone
-x 62
-y 4
-end
-arch flagstone
-x 62
-y 5
-end
-arch flagstone
-x 62
-y 6
-end
-arch flagstone
-x 62
-y 7
-end
-arch flagstone
-x 62
-y 8
-end
-arch flagstone
-x 62
-y 9
-end
-arch flagstone
-x 62
-y 10
-end
-arch flagstone
-x 62
-y 11
-end
-arch flagstone
-x 63
-end
-arch flagstone
-x 63
-y 1
-end
-arch flagstone
-x 63
-y 2
-end
-arch flagstone
-x 63
-y 3
-end
-arch flagstone
-x 63
-y 4
-end
-arch flagstone
-x 63
-y 5
-end
-arch flagstone
-x 63
-y 6
-end
-arch flagstone
-x 63
-y 7
-end
-arch flagstone
-x 63
-y 8
-end
-arch flagstone
-x 63
-y 9
-end
-arch flagstone
-x 63
-y 10
-end
-arch flagstone
-x 63
-y 11
 end

@@ -1,4 +1,5 @@
 arch map
+name Polar Bear Cavern
 reset_timeout 7200
 difficulty 1
 width 64
@@ -13,56 +14,38 @@ endmsg
 outdoor 1
 end
 arch blocked
-msg
-endmsg
 x 19
 y 47
 end
 arch blocked
-msg
-endmsg
 x 19
 y 48
 end
 arch blocked
-msg
-endmsg
 x 19
 y 49
 end
 arch blocked
-msg
-endmsg
 x 19
 y 50
 end
 arch blocked
-msg
-endmsg
 x 19
 y 51
 end
 arch blocked
-msg
-endmsg
 x 19
 y 52
 end
 arch blocked
-msg
-endmsg
 x 19
 y 53
 end
 arch blocked
-msg
-endmsg
 x 20
 y 46
 end
 arch blocked
-msg
-endmsg
 x 20
 y 47
 end
@@ -107,38 +90,26 @@ x 20
 y 52
 end
 arch blocked
-msg
-endmsg
 x 20
 y 53
 end
 arch blocked
-msg
-endmsg
 x 20
 y 54
 end
 arch blocked
-msg
-endmsg
 x 20
 y 55
 end
 arch blocked
-msg
-endmsg
 x 20
 y 56
 end
 arch blocked
-msg
-endmsg
 x 20
 y 57
 end
 arch blocked
-msg
-endmsg
 x 20
 y 58
 end
@@ -147,8 +118,6 @@ x 21
 y 46
 end
 arch blocked
-msg
-endmsg
 x 21
 y 46
 end
@@ -241,50 +210,34 @@ x 21
 y 57
 end
 arch blocked
-msg
-endmsg
 x 21
 y 58
 end
 arch blocked
-msg
-endmsg
 x 21
 y 59
 end
 arch blocked
-msg
-endmsg
 x 21
 y 60
 end
 arch blocked
-msg
-endmsg
 x 21
 y 61
 end
 arch blocked
-msg
-endmsg
 x 21
 y 62
 end
 arch blocked
-msg
-endmsg
 x 21
 y 63
 end
 arch blocked
-msg
-endmsg
 x 22
 y 45
 end
 arch blocked
-msg
-endmsg
 x 22
 y 46
 end
@@ -304,10 +257,6 @@ arch istone
 x 22
 y 49
 end
-arch polarbear
-x 22
-y 49
-end
 arch istone
 x 22
 y 50
@@ -393,20 +342,14 @@ x 22
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 44
 end
 arch blocked
-msg
-endmsg
 x 23
 y 45
 end
@@ -450,10 +393,6 @@ arch istone
 x 23
 y 53
 end
-arch polarbear
-x 23
-y 53
-end
 arch istone
 x 23
 y 54
@@ -483,10 +422,6 @@ x 23
 y 57
 end
 arch snow4
-x 23
-y 57
-end
-arch polarbear
 x 23
 y 57
 end
@@ -531,8 +466,6 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 44
 end
@@ -564,19 +497,11 @@ arch istone
 x 24
 y 49
 end
-arch polarbear
-x 24
-y 49
-end
 arch istone
 x 24
 y 50
 end
 arch istone
-x 24
-y 51
-end
-arch polarbear
 x 24
 y 51
 end
@@ -656,20 +581,14 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 42
 end
 arch blocked
-msg
-endmsg
 x 25
 y 43
 end
 arch blocked
-msg
-endmsg
 x 25
 y 44
 end
@@ -685,19 +604,11 @@ arch istone
 x 25
 y 46
 end
-arch polarbear
-x 25
-y 46
-end
 arch istone
 x 25
 y 47
 end
 arch istone
-x 25
-y 48
-end
-arch polarbear
 x 25
 y 48
 end
@@ -717,10 +628,6 @@ arch istone
 x 25
 y 52
 end
-arch polarbear
-x 25
-y 52
-end
 arch istone
 x 25
 y 53
@@ -730,10 +637,6 @@ x 25
 y 54
 end
 arch istone
-x 25
-y 55
-end
-arch polarbear
 x 25
 y 55
 end
@@ -793,20 +696,14 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 40
 end
 arch blocked
-msg
-endmsg
 x 26
 y 41
 end
 arch blocked
-msg
-endmsg
 x 26
 y 42
 end
@@ -846,10 +743,6 @@ arch istone
 x 26
 y 48
 end
-arch polarbear
-x 26
-y 48
-end
 arch istone
 x 26
 y 49
@@ -867,10 +760,6 @@ x 26
 y 52
 end
 arch istone
-x 26
-y 53
-end
-arch polarbear
 x 26
 y 53
 end
@@ -910,10 +799,6 @@ arch snow4
 x 26
 y 59
 end
-arch polarbear
-x 26
-y 59
-end
 arch snow
 x 26
 y 60
@@ -942,8 +827,6 @@ x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 27
 y 40
 end
@@ -987,10 +870,6 @@ arch istone
 x 27
 y 47
 end
-arch polarbear
-x 27
-y 47
-end
 arch istone
 x 27
 y 48
@@ -1000,10 +879,6 @@ x 27
 y 49
 end
 arch istone
-x 27
-y 50
-end
-arch polarbear
 x 27
 y 50
 end
@@ -1092,14 +967,10 @@ x 27
 y 63
 end
 arch blocked
-msg
-endmsg
 x 28
 y 39
 end
 arch blocked
-msg
-endmsg
 x 28
 y 40
 end
@@ -1119,10 +990,6 @@ arch istone
 x 28
 y 43
 end
-arch polarbear
-x 28
-y 43
-end
 arch istone
 x 28
 y 44
@@ -1139,10 +1006,6 @@ arch istone
 x 28
 y 47
 end
-arch polarbear
-x 28
-y 47
-end
 arch istone
 x 28
 y 48
@@ -1152,10 +1015,6 @@ x 28
 y 49
 end
 arch istone
-x 28
-y 50
-end
-arch polarbear
 x 28
 y 50
 end
@@ -1180,10 +1039,6 @@ x 28
 y 55
 end
 arch snow5
-x 28
-y 55
-end
-arch polarbear
 x 28
 y 55
 end
@@ -1240,20 +1095,14 @@ x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 63
 end
 arch blocked
-msg
-endmsg
 x 29
 y 39
 end
@@ -1281,10 +1130,6 @@ arch istone
 x 29
 y 43
 end
-arch polarbear
-x 29
-y 43
-end
 arch istone
 x 29
 y 44
@@ -1386,8 +1231,6 @@ x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 29
 y 61
 end
@@ -1396,20 +1239,14 @@ x 29
 y 62
 end
 arch blocked
-msg
-endmsg
 x 29
 y 62
 end
 arch blocked
-msg
-endmsg
 x 29
 y 63
 end
 arch blocked
-msg
-endmsg
 x 30
 y 39
 end
@@ -1446,8 +1283,6 @@ x 30
 y 45
 end
 arch blocked
-msg
-endmsg
 x 30
 y 46
 end
@@ -1467,10 +1302,6 @@ arch istone
 x 30
 y 49
 end
-arch polarbear
-x 30
-y 49
-end
 arch istone
 x 30
 y 50
@@ -1480,10 +1311,6 @@ x 30
 y 51
 end
 arch istone
-x 30
-y 52
-end
-arch polarbear
 x 30
 y 52
 end
@@ -1532,8 +1359,6 @@ x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 60
 end
@@ -1542,8 +1367,6 @@ x 30
 y 61
 end
 arch blocked
-msg
-endmsg
 x 30
 y 61
 end
@@ -1552,14 +1375,10 @@ x 30
 y 62
 end
 arch blocked
-msg
-endmsg
 x 30
 y 62
 end
 arch blocked
-msg
-endmsg
 x 31
 y 39
 end
@@ -1576,10 +1395,6 @@ x 31
 y 41
 end
 arch istone
-x 31
-y 42
-end
-arch polarbear
 x 31
 y 42
 end
@@ -1600,8 +1415,6 @@ x 31
 y 45
 end
 arch blocked
-msg
-endmsg
 x 31
 y 46
 end
@@ -1649,10 +1462,6 @@ arch snow5
 x 31
 y 54
 end
-arch polarbear
-x 31
-y 54
-end
 arch istone
 x 31
 y 55
@@ -1686,26 +1495,18 @@ x 31
 y 60
 end
 arch blocked
-msg
-endmsg
 x 31
 y 60
 end
 arch blocked
-msg
-endmsg
 x 31
 y 61
 end
 arch blocked
-msg
-endmsg
 x 31
 y 62
 end
 arch blocked
-msg
-endmsg
 x 32
 y 39
 end
@@ -1718,10 +1519,6 @@ x 32
 y 40
 end
 arch istone
-x 32
-y 41
-end
-arch polarbear
 x 32
 y 41
 end
@@ -1746,14 +1543,10 @@ x 32
 y 45
 end
 arch blocked
-msg
-endmsg
 x 32
 y 46
 end
 arch blocked
-msg
-endmsg
 x 32
 y 47
 end
@@ -1818,20 +1611,14 @@ x 32
 y 58
 end
 arch blocked
-msg
-endmsg
 x 32
 y 59
 end
 arch blocked
-msg
-endmsg
 x 32
 y 60
 end
 arch blocked
-msg
-endmsg
 x 33
 y 39
 end
@@ -1856,10 +1643,6 @@ x 33
 y 42
 end
 arch istone
-x 33
-y 43
-end
-arch polarbear
 x 33
 y 43
 end
@@ -1884,8 +1667,6 @@ x 33
 y 46
 end
 arch blocked
-msg
-endmsg
 x 33
 y 47
 end
@@ -1914,10 +1695,6 @@ x 33
 y 50
 end
 arch istone
-x 33
-y 51
-end
-arch polarbear
 x 33
 y 51
 end
@@ -1954,32 +1731,22 @@ x 33
 y 57
 end
 arch blocked
-msg
-endmsg
 x 33
 y 57
 end
 arch blocked
-msg
-endmsg
 x 33
 y 58
 end
 arch blocked
-msg
-endmsg
 x 33
 y 59
 end
 arch blocked
-msg
-endmsg
 x 34
 y 39
 end
 arch blocked
-msg
-endmsg
 x 34
 y 40
 end
@@ -2016,10 +1783,6 @@ arch istone
 x 34
 y 43
 end
-arch polarbear
-x 34
-y 43
-end
 arch istone
 x 34
 y 44
@@ -2037,20 +1800,14 @@ x 34
 y 46
 end
 arch blocked
-msg
-endmsg
 x 34
 y 47
 end
 arch blocked
-msg
-endmsg
 x 34
 y 48
 end
 arch blocked
-msg
-endmsg
 x 34
 y 49
 end
@@ -2095,20 +1852,14 @@ x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 57
 end
 arch blocked
-msg
-endmsg
 x 35
 y 40
 end
@@ -2153,26 +1904,18 @@ x 35
 y 46
 end
 arch blocked
-msg
-endmsg
 x 35
 y 47
 end
 arch blocked
-msg
-endmsg
 x 35
 y 48
 end
 arch blocked
-msg
-endmsg
 x 35
 y 49
 end
 arch blocked
-msg
-endmsg
 x 35
 y 50
 end
@@ -2213,20 +1956,14 @@ x 35
 y 55
 end
 arch blocked
-msg
-endmsg
 x 35
 y 56
 end
 arch blocked
-msg
-endmsg
 x 35
 y 57
 end
 arch blocked
-msg
-endmsg
 x 36
 y 40
 end
@@ -2235,8 +1972,6 @@ x 36
 y 41
 end
 arch blocked
-msg
-endmsg
 x 36
 y 41
 end
@@ -2277,8 +2012,6 @@ x 36
 y 46
 end
 arch blocked
-msg
-endmsg
 x 36
 y 46
 end
@@ -2287,26 +2020,18 @@ x 36
 y 47
 end
 arch blocked
-msg
-endmsg
 x 36
 y 47
 end
 arch blocked
-msg
-endmsg
 x 36
 y 48
 end
 arch blocked
-msg
-endmsg
 x 36
 y 49
 end
 arch blocked
-msg
-endmsg
 x 36
 y 50
 end
@@ -2335,26 +2060,18 @@ x 36
 y 53
 end
 arch blocked
-msg
-endmsg
 x 36
 y 54
 end
 arch blocked
-msg
-endmsg
 x 36
 y 55
 end
 arch blocked
-msg
-endmsg
 x 36
 y 56
 end
 arch blocked
-msg
-endmsg
 x 37
 y 41
 end
@@ -2363,8 +2080,6 @@ x 37
 y 42
 end
 arch blocked
-msg
-endmsg
 x 37
 y 42
 end
@@ -2373,8 +2088,6 @@ x 37
 y 43
 end
 arch blocked
-msg
-endmsg
 x 37
 y 43
 end
@@ -2383,8 +2096,6 @@ x 37
 y 44
 end
 arch blocked
-msg
-endmsg
 x 37
 y 44
 end
@@ -2393,50 +2104,34 @@ x 37
 y 45
 end
 arch blocked
-msg
-endmsg
 x 37
 y 45
 end
 arch blocked
-msg
-endmsg
 x 37
 y 46
 end
 arch blocked
-msg
-endmsg
 x 37
 y 49
 end
 arch blocked
-msg
-endmsg
 x 37
 y 50
 end
 arch blocked
-msg
-endmsg
 x 37
 y 51
 end
 arch blocked
-msg
-endmsg
 x 37
 y 52
 end
 arch blocked
-msg
-endmsg
 x 37
 y 53
 end
 arch blocked
-msg
-endmsg
 x 37
 y 54
 end
@@ -2845,4 +2540,112 @@ end
 arch flagstone
 x 63
 y 11
+end
+arch polarbear
+x 22
+y 49
+end
+arch polarbear
+x 23
+y 53
+end
+arch polarbear
+x 23
+y 57
+end
+arch polarbear
+x 24
+y 49
+end
+arch polarbear
+x 24
+y 51
+end
+arch polarbear
+x 25
+y 46
+end
+arch polarbear
+x 25
+y 48
+end
+arch polarbear
+x 25
+y 52
+end
+arch polarbear
+x 25
+y 55
+end
+arch polarbear
+x 26
+y 48
+end
+arch polarbear
+x 26
+y 53
+end
+arch polarbear
+x 26
+y 59
+end
+arch polarbear
+x 27
+y 47
+end
+arch polarbear
+x 27
+y 50
+end
+arch polarbear
+x 28
+y 43
+end
+arch polarbear
+x 28
+y 47
+end
+arch polarbear
+x 28
+y 50
+end
+arch polarbear
+x 28
+y 55
+end
+arch polarbear
+x 29
+y 43
+end
+arch polarbear
+x 30
+y 49
+end
+arch polarbear
+x 30
+y 52
+end
+arch polarbear
+x 31
+y 42
+end
+arch polarbear
+x 31
+y 54
+end
+arch polarbear
+x 32
+y 41
+end
+arch polarbear
+x 33
+y 43
+end
+arch polarbear
+x 33
+y 51
+end
+arch polarbear
+x 34
+y 43
 end
