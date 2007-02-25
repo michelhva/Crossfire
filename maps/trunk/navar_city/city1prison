@@ -1,13 +1,13 @@
 arch map
-region navar
 name Prison
+region navar
+width 26
+height 23
 msg
 Creator: 
 Email: 
 Date: Wed Oct 27 11:54:07 1993
 endmsg
-x 26
-y 23
 end
 arch dungeon_floor
 end
@@ -736,10 +736,6 @@ endmsg
 x 5
 y 2
 end
-arch dungeon_floor
-x 5
-y 2
-end
 arch magic_ear
 msg
 @match *
@@ -750,6 +746,10 @@ endmsg
 x 5
 y 2
 connected 10
+end
+arch dungeon_floor
+x 5
+y 2
 end
 arch dungeon_floor
 x 5
@@ -3578,7 +3578,7 @@ the words out, but symbols of Death
 permiate the reading.  You get the
 feeling some evil has been losed upon
 the world.
-   Something catches your eye on the
+Something catches your eye on the
 scroll, it looks like something written
 in blood........you will pay for all
 that you have done Kurte

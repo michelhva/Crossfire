@@ -1,16 +1,16 @@
 arch map
-region navar
 name Casino Infernal
+difficulty 15
+region navar
+width 30
+height 30
+enter_x 15
+enter_y 28
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    6/8/2003
 endmsg
-width 30
-height 30
-enter_x 15
-enter_y 28
-difficulty 15
 end
 arch permanent_lava
 end
@@ -1211,11 +1211,10 @@ y 13
 end
 arch slotmachine1
 name WealthyJester
-slaying
 food 0
-last_sp 1
 x 7
 y 13
+last_sp 1
 end
 arch cobblestones
 x 7
@@ -1227,14 +1226,14 @@ y 15
 end
 arch slotmachine3
 name GoldFinger
+food 0
+x 7
+y 15
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-last_sp 1
-x 7
-y 15
 end
 arch cobblestones
 x 7
@@ -1286,17 +1285,17 @@ y 23
 end
 arch c_woman
 name Ruby
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
 msg
 @match *
 Sorry I'm on my break.
 endmsg
-stand_still 1
 x 7
 y 23
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch cobblestones2
 x 7
@@ -1553,10 +1552,10 @@ x 9
 y 5
 end
 arch lbulletwall_2
-invisible 1
-speed 0.0
 x 9
 y 5
+speed 0.0
+invisible 1
 arch spell_poison_cloud
 level 12
 end
@@ -1591,18 +1590,17 @@ y 12
 end
 arch slotmachine2
 name TheMagistrate
+msg
+Imperial banknotes only!
+endmsg
+food 0
+x 9
+y 12
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/imperialslots.py
 end
-msg
-Imperial banknotes only!
-endmsg
-slaying
-food 0
-last_sp 1
-x 9
-y 12
 end
 arch cobblestones
 x 9
@@ -1622,14 +1620,14 @@ y 16
 end
 arch slotmachine2
 name BigNugget
+food 0
+x 9
+y 16
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-last_sp 1
-x 9
-y 16
 end
 arch cobblestones
 x 9
@@ -1790,10 +1788,10 @@ Arrg Matey!
 <sniff>
 This song always brung a tear to me eye.
 endmsg
-unaggressive 1
-sleep 0
 x 10
 y 10
+unaggressive 1
+sleep 0
 end
 arch cobblestones2
 x 10
@@ -1943,9 +1941,9 @@ x 11
 y 5
 end
 arch blocked
-blocksview 0
 x 11
 y 6
+blocksview 0
 end
 arch woodfloor2
 x 11
@@ -1960,9 +1958,9 @@ x 11
 y 6
 end
 arch blocked
-blocksview 0
 x 11
 y 7
+blocksview 0
 end
 arch woodfloor2
 x 11
@@ -1977,9 +1975,9 @@ x 11
 y 7
 end
 arch blocked
-blocksview 0
 x 11
 y 8
+blocksview 0
 end
 arch woodfloor2
 x 11
@@ -1994,9 +1992,9 @@ x 11
 y 8
 end
 arch blocked
-blocksview 0
 x 11
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 11
@@ -2032,11 +2030,10 @@ y 13
 end
 arch slotmachine1
 name RoyalHouse
-slaying
 food 0
-last_sp 1
 x 11
 y 13
+last_sp 1
 end
 arch cobblestones
 x 11
@@ -2048,14 +2045,14 @@ y 15
 end
 arch slotmachine3
 name GoldBrick
+food 0
+x 11
+y 15
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-last_sp 1
-x 11
-y 15
 end
 arch cobblestones
 x 11
@@ -2131,24 +2128,24 @@ y 27
 end
 arch fiend
 name Ike
-face black_dragon2.151
 msg
 @match *
 The cover charge is 200 gold.
 endmsg
-unaggressive 1
+face black_dragon2.151
 animation black_dragon2
 x 11
 y 27
+unaggressive 1
 end
 arch cobblestones2
 x 11
 y 28
 end
 arch trigger
-connected 1
 x 11
 y 28
+connected 1
 end
 arch grass
 x 11
@@ -2206,11 +2203,11 @@ x 12
 y 6
 end
 arch banshee
-can_use_ring 1
-can_use_wand 1
-can_use_skill 1
 x 12
 y 6
+can_use_ring 1
+can_use_skill 1
+can_use_wand 1
 end
 arch woodfloor2
 x 12
@@ -2229,9 +2226,9 @@ x 12
 y 8
 end
 arch blocked
-blocksview 0
 x 12
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 12
@@ -2377,28 +2374,28 @@ y 21
 end
 arch fiend
 name Rudy
-face halfling2.151
+title the floorman
 msg
 @match *
 Welcome to the Casino Infernal!
 Please enjoy your visit.
 endmsg
-title the floorman
-unaggressive 1
-will_apply 0
-attack_movement 3
+face halfling2.151
 animation halfling2
 x 12
 y 21
+attack_movement 3
+will_apply 0
+unaggressive 1
 end
 arch cobblestones2
 x 12
 y 22
 end
 arch trigger
-connected 1
 x 12
 y 22
+connected 1
 end
 arch cobblestones2
 x 12
@@ -2431,14 +2428,14 @@ end
 arch slotmachine3
 name Silverado
 face slotmachine2.111
+food 0
+x 12
+y 25
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-food 0
-last_sp 1
-x 12
-y 25
 end
 arch cobblestones2
 x 12
@@ -2504,13 +2501,13 @@ x 13
 y 2
 end
 arch trap
-level 18
 Cha 40
 dam 0
-attacktype 0
-connected 88
 x 13
 y 2
+level 18
+attacktype 0
+connected 88
 end
 arch cobblestones2
 x 13
@@ -2545,9 +2542,9 @@ x 13
 y 6
 end
 arch button_handle
-connected 10
 x 13
 y 6
+connected 10
 end
 arch woodfloor2
 x 13
@@ -2566,9 +2563,9 @@ x 13
 y 8
 end
 arch blocked
-blocksview 0
 x 13
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 13
@@ -2679,12 +2676,12 @@ end
 arch slotmachine2
 name WolvesBane
 face slotmachine1.111
+x 13
+y 24
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-x 13
-y 24
 end
 arch cobblestones2
 x 13
@@ -2703,13 +2700,13 @@ x 13
 y 27
 end
 arch altar_trigger
-face table_2.111
 slaying goldcoin
-food 200
-connected 1
+face table_2.111
 exp 120
+food 200
 x 13
 y 27
+connected 1
 end
 arch grass
 x 13
@@ -2754,9 +2751,9 @@ x 14
 y 5
 end
 arch igate_closed_1
-connected 10
 x 14
 y 5
+connected 10
 end
 arch woodfloor2
 x 14
@@ -2783,9 +2780,9 @@ x 14
 y 8
 end
 arch blocked
-blocksview 0
 x 14
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 14
@@ -2860,9 +2857,9 @@ x 14
 y 22
 end
 arch grate_closed_1
-connected 1
 x 14
 y 22
+connected 1
 end
 arch dungeon_magic
 x 14
@@ -2935,9 +2932,9 @@ x 15
 y 5
 end
 arch igate_closed_1
-connected 10
 x 15
 y 5
+connected 10
 end
 arch woodfloor2
 x 15
@@ -2964,9 +2961,9 @@ x 15
 y 8
 end
 arch blocked
-blocksview 0
 x 15
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 15
@@ -3052,9 +3049,9 @@ x 15
 y 22
 end
 arch grate_closed_1
-connected 1
 x 15
 y 22
+connected 1
 end
 arch dungeon_magic
 x 15
@@ -3123,9 +3120,9 @@ x 16
 y 5
 end
 arch igate_closed_1
-connected 10
 x 16
 y 5
+connected 10
 end
 arch woodfloor2
 x 16
@@ -3152,9 +3149,9 @@ x 16
 y 8
 end
 arch blocked
-blocksview 0
 x 16
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 16
@@ -3237,9 +3234,9 @@ x 16
 y 22
 end
 arch grate_closed_1
-connected 1
 x 16
 y 22
+connected 1
 end
 arch dungeon_magic
 x 16
@@ -3348,9 +3345,9 @@ x 17
 y 8
 end
 arch blocked
-blocksview 0
 x 17
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 17
@@ -3458,12 +3455,12 @@ y 24
 end
 arch slotmachine1
 name Starlight
+x 17
+y 24
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-x 17
-y 24
 end
 arch cobblestones2
 x 17
@@ -3544,11 +3541,11 @@ x 18
 y 6
 end
 arch banshee
-can_use_ring 1
-can_use_wand 1
-can_use_skill 1
 x 18
 y 6
+can_use_ring 1
+can_use_skill 1
+can_use_wand 1
 end
 arch woodfloor2
 x 18
@@ -3567,16 +3564,16 @@ x 18
 y 8
 end
 arch banshee
-can_use_ring 1
-can_use_wand 1
-can_use_skill 1
 x 18
 y 8
+can_use_ring 1
+can_use_skill 1
+can_use_wand 1
 end
 arch blocked
-blocksview 0
 x 18
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 18
@@ -3758,14 +3755,14 @@ y 25
 end
 arch slotmachine3
 name WhiteLightning
+food 0
+x 18
+y 25
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-food 0
-last_sp 1
-x 18
-y 25
 end
 arch cobblestones2
 x 18
@@ -3859,9 +3856,9 @@ x 19
 y 5
 end
 arch blocked
-blocksview 0
 x 19
 y 6
+blocksview 0
 end
 arch woodfloor2
 x 19
@@ -3876,9 +3873,9 @@ x 19
 y 6
 end
 arch blocked
-blocksview 0
 x 19
 y 7
+blocksview 0
 end
 arch woodfloor2
 x 19
@@ -3893,9 +3890,9 @@ x 19
 y 7
 end
 arch blocked
-blocksview 0
 x 19
 y 8
+blocksview 0
 end
 arch woodfloor2
 x 19
@@ -3910,9 +3907,9 @@ x 19
 y 8
 end
 arch blocked
-blocksview 0
 x 19
 y 9
+blocksview 0
 end
 arch woodfloor2
 x 19
@@ -3948,14 +3945,14 @@ y 13
 end
 arch slotmachine2
 name DwarfHorde
+food 0
+x 19
+y 13
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/diamondslots.py
 end
-food 0
-last_sp 1
-x 19
-y 13
 end
 arch cobblestones
 x 19
@@ -3967,13 +3964,13 @@ y 15
 end
 arch slotmachine3
 name GoldenShower
+food 0
+x 19
+y 15
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-x 19
-y 15
 end
 arch cobblestones
 x 19
@@ -4001,16 +3998,16 @@ y 21
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 19
 y 21
+invisible 1
 end
 arch chair_1.4
-no_pick 1
 x 19
 y 21
+no_pick 1
 end
 arch cobblestones2
 x 19
@@ -4018,16 +4015,16 @@ y 22
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 19
 y 22
+invisible 1
 end
 arch chair_1.4
-no_pick 1
 x 19
 y 22
+no_pick 1
 end
 arch cobblestones2
 x 19
@@ -4035,16 +4032,16 @@ y 23
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 19
 y 23
+invisible 1
 end
 arch chair_1.4
-no_pick 1
 x 19
 y 23
+no_pick 1
 end
 arch cobblestones2
 x 19
@@ -4083,12 +4080,12 @@ x 19
 y 26
 end
 arch cobblestones2
+x 19
+y 27
 arch event_say
 title Python
 slaying casinodoor.py
 end
-x 19
-y 27
 end
 arch cobblestones2
 x 19
@@ -4211,25 +4208,25 @@ y 20
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 20
 y 20
+invisible 1
 end
 arch chair_1.1
-no_pick 1
 x 20
 y 20
+no_pick 1
 end
 arch cobblestones2
 x 20
 y 21
 end
 arch bench_2_2_2
-no_pass 1
 x 20
 y 21
+no_pass 1
 end
 arch dungeon_magic
 x 20
@@ -4240,9 +4237,9 @@ x 20
 y 22
 end
 arch bench_2_1_1
-no_pass 1
 x 20
 y 22
+no_pass 1
 end
 arch dungeon_magic
 x 20
@@ -4253,9 +4250,9 @@ x 20
 y 23
 end
 arch bench_1_2
-no_pass 1
 x 20
 y 23
+no_pass 1
 end
 arch dungeon_magic
 x 20
@@ -4374,14 +4371,14 @@ end
 arch slotmachine2
 name KingMaker
 face slotmachine1.111
+food 0
+x 21
+y 12
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/imperialslots.py
 end
-food 0
-last_sp 1
-x 21
-y 12
 end
 arch cobblestones
 x 21
@@ -4410,21 +4407,20 @@ y 16
 end
 arch slotmachine2
 name Moria
-face slotmachine1.111
-arch event_apply
-title Python
-slaying /python/misc/CFInsulter.py
-name shakespear
-end
 msg
 You hear angry muttering coming from inside this slotmachine.
 Perhaps it is broken.
 endmsg
-slaying
+face slotmachine1.111
 food 0
-last_sp 1
 x 21
 y 16
+last_sp 1
+arch event_apply
+name shakespear
+title Python
+slaying /python/misc/CFInsulter.py
+end
 end
 arch cobblestones
 x 21
@@ -4444,25 +4440,25 @@ y 20
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 21
 y 20
+invisible 1
 end
 arch chair_1.1
-no_pick 1
 x 21
 y 20
+no_pick 1
 end
 arch cobblestones2
 x 21
 y 21
 end
 arch bench_2_1_2
-no_pass 1
 x 21
 y 21
+no_pass 1
 end
 arch dungeon_magic
 x 21
@@ -4474,16 +4470,16 @@ y 22
 end
 arch fiend
 name Sadie
-face woman2.111
+title The Bartender
 msg
 @match *
 Wanna drink?  Five gold big spender.
 endmsg
-title The Bartender
-unaggressive 1
+face woman2.111
 animation woman2
 x 21
 y 22
+unaggressive 1
 end
 arch cobblestones2
 x 21
@@ -4593,9 +4589,9 @@ x 22
 y 7
 end
 arch igate_closed_2
-connected 15
 x 22
 y 7
+connected 15
 end
 arch dungeon_magic
 x 22
@@ -4679,25 +4675,25 @@ y 20
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 22
 y 20
+invisible 1
 end
 arch chair_1.1
-no_pick 1
 x 22
 y 20
+no_pick 1
 end
 arch cobblestones2
 x 22
 y 21
 end
 arch bench_2_1_2
-no_pass 1
 x 22
 y 21
+no_pass 1
 end
 arch dungeon_magic
 x 22
@@ -4847,14 +4843,14 @@ y 13
 end
 arch slotmachine2
 name MineShaft
+food 0
+x 23
+y 13
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/diamondslots.py
 end
-food 0
-last_sp 1
-x 23
-y 13
 end
 arch cobblestones
 x 23
@@ -4866,14 +4862,14 @@ y 15
 end
 arch slotmachine3
 name MidasTouch
+food 0
+x 23
+y 15
+last_sp 1
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-food 0
-last_sp 1
-x 23
-y 15
 end
 arch cobblestones
 x 23
@@ -4901,25 +4897,25 @@ y 20
 end
 arch booze_table
 name serving booze (5 g.c @)
-invisible 1
 slaying money
 food 50
 x 23
 y 20
+invisible 1
 end
 arch chair_1.1
-no_pick 1
 x 23
 y 20
+no_pick 1
 end
 arch cobblestones2
 x 23
 y 21
 end
 arch bench_1_3
-no_pass 1
 x 23
 y 21
+no_pass 1
 end
 arch dungeon_magic
 x 23
@@ -4934,9 +4930,9 @@ x 23
 y 23
 end
 arch trigger
-connected 5
 x 23
 y 23
+connected 5
 end
 arch cobblestones2
 x 23
@@ -5210,9 +5206,9 @@ x 24
 y 22
 end
 arch igate_closed_2
-connected 5
 x 24
 y 22
+connected 5
 end
 arch dungeon_magic
 x 24
@@ -5330,11 +5326,11 @@ x 25
 y 13
 end
 arch button_small
+x 25
+y 13
 invisible 1
 connected 10
 activate_on_release 0
-x 25
-y 13
 end
 arch cobblestones2
 x 25
@@ -5381,9 +5377,9 @@ x 25
 y 23
 end
 arch trigger
-connected 5
 x 25
 y 23
+connected 5
 end
 arch cobblestones2
 x 25

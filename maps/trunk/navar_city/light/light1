@@ -1,14 +1,15 @@
 arch map
+name Lighthouse
+difficulty 1
 region navar
-name light1
+darkness 5
+width 25
+height 25
 msg
 Creator: 
 Email: 
 Date: Fri Nov 12 11:08:02 1993
 endmsg
-x 25
-y 25
-invisible 5
 end
 arch cobblestones2
 end

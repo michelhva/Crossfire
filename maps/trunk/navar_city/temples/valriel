@@ -1,16 +1,17 @@
 arch map
-name templevalriel
+name Church of Valriel
+difficulty 1
 region navar
+width 20
+height 30
+enter_x 9
+enter_y 27
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Mon Jan 18 02:12:59 1999
 Note: Altar to level 120 20050525 #4
 endmsg
-width 20
-height 30
-enter_x 9
-enter_y 27
 end
 arch grass
 end
@@ -460,7 +461,7 @@ arch cobblestones2
 x 3
 y 3
 end
-arch cwall_2_2_2
+arch westcwall_2_2_2
 x 3
 y 3
 end
@@ -468,7 +469,7 @@ arch cobblestones2
 x 3
 y 4
 end
-arch weak_wall_3
+arch westweak_wall_3
 x 3
 y 4
 end
@@ -476,7 +477,7 @@ arch cobblestones2
 x 3
 y 5
 end
-arch weak_wall_3
+arch westweak_wall_3
 x 3
 y 5
 end
@@ -484,7 +485,7 @@ arch cobblestones2
 x 3
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 6
 end
@@ -492,7 +493,7 @@ arch cobblestones2
 x 3
 y 7
 end
-arch cwall_3_2
+arch westcwall_3_2
 x 3
 y 7
 end
@@ -500,7 +501,7 @@ arch cobblestones2
 x 3
 y 8
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 8
 end
@@ -508,7 +509,7 @@ arch cobblestones2
 x 3
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 9
 end
@@ -516,7 +517,7 @@ arch cobblestones2
 x 3
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 10
 end
@@ -524,7 +525,7 @@ arch cobblestones2
 x 3
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 11
 end
@@ -532,7 +533,7 @@ arch cobblestones2
 x 3
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 12
 end
@@ -540,7 +541,7 @@ arch cobblestones2
 x 3
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 13
 end
@@ -548,7 +549,7 @@ arch cobblestones2
 x 3
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 14
 end
@@ -556,7 +557,7 @@ arch cobblestones2
 x 3
 y 15
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 15
 end
@@ -564,7 +565,7 @@ arch cobblestones2
 x 3
 y 16
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 16
 end
@@ -572,7 +573,7 @@ arch cobblestones2
 x 3
 y 17
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 17
 end
@@ -580,7 +581,7 @@ arch cobblestones2
 x 3
 y 18
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 18
 end
@@ -588,7 +589,7 @@ arch cobblestones2
 x 3
 y 19
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 19
 end
@@ -596,7 +597,7 @@ arch cobblestones2
 x 3
 y 20
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 20
 end
@@ -604,7 +605,7 @@ arch cobblestones2
 x 3
 y 21
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 21
 end
@@ -612,7 +613,7 @@ arch cobblestones2
 x 3
 y 22
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 22
 end
@@ -620,7 +621,7 @@ arch cobblestones2
 x 3
 y 23
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 3
 y 23
 end
@@ -678,7 +679,7 @@ arch cobblestones2
 x 4
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 3
 end
@@ -706,7 +707,7 @@ arch swall_1_4_half
 x 4
 y 7
 end
-arch dwall_1_3
+arch westcwall_1_3
 x 4
 y 7
 end
@@ -795,7 +796,7 @@ arch cobblestones2
 x 4
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 23
 end
@@ -853,7 +854,7 @@ arch cobblestones2
 x 5
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 5
 y 3
 end
@@ -969,7 +970,7 @@ arch cobblestones2
 x 5
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 5
 y 23
 end
@@ -1027,7 +1028,7 @@ arch cobblestones2
 x 6
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 6
 y 3
 end
@@ -1055,7 +1056,7 @@ arch swall_1_3_half
 x 6
 y 7
 end
-arch dwall_1_4
+arch westcwall_1_4
 x 6
 y 7
 end
@@ -1151,7 +1152,7 @@ arch cobblestones2
 x 6
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 6
 y 23
 end
@@ -1209,7 +1210,7 @@ arch cobblestones2
 x 7
 y 3
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 7
 y 3
 end
@@ -1217,7 +1218,7 @@ arch cobblestones2
 x 7
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 7
 y 4
 end
@@ -1225,7 +1226,7 @@ arch cobblestones2
 x 7
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 7
 y 5
 end
@@ -1233,7 +1234,7 @@ arch cobblestones2
 x 7
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 7
 y 6
 end
@@ -1241,7 +1242,7 @@ arch cobblestones2
 x 7
 y 7
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 7
 y 7
 end
@@ -1265,7 +1266,7 @@ arch cobblestones2
 x 7
 y 11
 end
-arch cwall_0
+arch westcwall_0
 x 7
 y 11
 end
@@ -1285,7 +1286,7 @@ arch cobblestones2
 x 7
 y 14
 end
-arch cwall_0
+arch westcwall_0
 x 7
 y 14
 end
@@ -1305,7 +1306,7 @@ arch cobblestones2
 x 7
 y 17
 end
-arch cwall_0
+arch westcwall_0
 x 7
 y 17
 end
@@ -1325,7 +1326,7 @@ arch cobblestones2
 x 7
 y 20
 end
-arch cwall_0
+arch westcwall_0
 x 7
 y 20
 end
@@ -1345,7 +1346,7 @@ arch cobblestones2
 x 7
 y 23
 end
-arch cwall_1_3
+arch westcwall_1_3
 x 7
 y 23
 end
@@ -1411,7 +1412,7 @@ arch cobblestones2
 x 8
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 8
 y 3
 end
@@ -1429,9 +1430,9 @@ msg
 @match *
 Shhh...  Thou shalt pray in silence!
 endmsg
-unaggressive 1
 x 8
 y 5
+unaggressive 1
 end
 arch cobblestones2
 x 8
@@ -1586,7 +1587,7 @@ arch cobblestones2
 x 9
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 9
 y 3
 end
@@ -1612,9 +1613,9 @@ x 9
 y 7
 end
 arch altar_valriel
-level 120
 x 9
 y 7
+level 120
 end
 arch cobblestones2
 x 9
@@ -1729,7 +1730,7 @@ arch cobblestones2
 x 10
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 10
 y 3
 end
@@ -1894,7 +1895,7 @@ arch cobblestones2
 x 11
 y 3
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 11
 y 3
 end
@@ -1902,7 +1903,7 @@ arch cobblestones2
 x 11
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 11
 y 4
 end
@@ -1910,7 +1911,7 @@ arch cobblestones2
 x 11
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 11
 y 5
 end
@@ -1918,7 +1919,7 @@ arch cobblestones2
 x 11
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 11
 y 6
 end
@@ -1926,7 +1927,7 @@ arch cobblestones2
 x 11
 y 7
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 11
 y 7
 end
@@ -1950,7 +1951,7 @@ arch cobblestones2
 x 11
 y 11
 end
-arch cwall_0
+arch westcwall_0
 x 11
 y 11
 end
@@ -1970,7 +1971,7 @@ arch cobblestones2
 x 11
 y 14
 end
-arch cwall_0
+arch westcwall_0
 x 11
 y 14
 end
@@ -1990,7 +1991,7 @@ arch cobblestones2
 x 11
 y 17
 end
-arch cwall_0
+arch westcwall_0
 x 11
 y 17
 end
@@ -2010,7 +2011,7 @@ arch cobblestones2
 x 11
 y 20
 end
-arch cwall_0
+arch westcwall_0
 x 11
 y 20
 end
@@ -2030,7 +2031,7 @@ arch cobblestones2
 x 11
 y 23
 end
-arch cwall_1_4
+arch westcwall_1_4
 x 11
 y 23
 end
@@ -2096,7 +2097,7 @@ arch cobblestones2
 x 12
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 3
 end
@@ -2124,7 +2125,7 @@ arch swall_1_4_half
 x 12
 y 7
 end
-arch dwall_1_3
+arch westcwall_1_3
 x 12
 y 7
 end
@@ -2220,7 +2221,7 @@ arch cobblestones2
 x 12
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 23
 end
@@ -2278,7 +2279,7 @@ arch cobblestones2
 x 13
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 13
 y 3
 end
@@ -2390,7 +2391,7 @@ arch cobblestones2
 x 13
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 13
 y 23
 end
@@ -2448,7 +2449,7 @@ arch cobblestones2
 x 14
 y 3
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 14
 y 3
 end
@@ -2476,7 +2477,7 @@ arch swall_1_3_half
 x 14
 y 7
 end
-arch dwall_1_4
+arch westcwall_1_4
 x 14
 y 7
 end
@@ -2565,7 +2566,7 @@ arch cobblestones2
 x 14
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 14
 y 23
 end
@@ -2623,7 +2624,7 @@ arch cobblestones2
 x 15
 y 3
 end
-arch cwall_2_2_3
+arch westcwall_2_2_3
 x 15
 y 3
 end
@@ -2631,7 +2632,7 @@ arch cobblestones2
 x 15
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 4
 end
@@ -2639,7 +2640,7 @@ arch cobblestones2
 x 15
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 5
 end
@@ -2647,7 +2648,7 @@ arch cobblestones2
 x 15
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 6
 end
@@ -2655,7 +2656,7 @@ arch cobblestones2
 x 15
 y 7
 end
-arch cwall_3_4
+arch westcwall_3_4
 x 15
 y 7
 end
@@ -2663,7 +2664,7 @@ arch cobblestones2
 x 15
 y 8
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 8
 end
@@ -2671,7 +2672,7 @@ arch cobblestones2
 x 15
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 9
 end
@@ -2679,7 +2680,7 @@ arch cobblestones2
 x 15
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 10
 end
@@ -2687,7 +2688,7 @@ arch cobblestones2
 x 15
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 11
 end
@@ -2695,7 +2696,7 @@ arch cobblestones2
 x 15
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 12
 end
@@ -2703,7 +2704,7 @@ arch cobblestones2
 x 15
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 13
 end
@@ -2711,7 +2712,7 @@ arch cobblestones2
 x 15
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 14
 end
@@ -2719,7 +2720,7 @@ arch cobblestones2
 x 15
 y 15
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 15
 end
@@ -2727,7 +2728,7 @@ arch cobblestones2
 x 15
 y 16
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 16
 end
@@ -2735,7 +2736,7 @@ arch cobblestones2
 x 15
 y 17
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 17
 end
@@ -2743,7 +2744,7 @@ arch cobblestones2
 x 15
 y 18
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 18
 end
@@ -2751,7 +2752,7 @@ arch cobblestones2
 x 15
 y 19
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 19
 end
@@ -2759,7 +2760,7 @@ arch cobblestones2
 x 15
 y 20
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 20
 end
@@ -2767,7 +2768,7 @@ arch cobblestones2
 x 15
 y 21
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 21
 end
@@ -2775,7 +2776,7 @@ arch cobblestones2
 x 15
 y 22
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 15
 y 22
 end
@@ -2783,7 +2784,7 @@ arch cobblestones2
 x 15
 y 23
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 15
 y 23
 end

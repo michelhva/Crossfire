@@ -1,17 +1,17 @@
 arch map
+name Under The Old Warehouse
+difficulty 25
 region navar
-name under the old warehouse
+darkness 4
+width 40
+height 25
+enter_x 2
+enter_y 7
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/6/2003
 endmsg
-width 40
-height 25
-enter_x 2
-enter_y 7
-difficulty 25
-darkness 4
 end
 arch blocked
 end
@@ -369,9 +369,9 @@ x 2
 y 20
 end
 arch giant_bat
-can_see_in_dark 1
 x 2
 y 20
+can_see_in_dark 1
 end
 arch dirtfloor
 x 2
@@ -469,9 +469,9 @@ x 3
 y 13
 end
 arch giant_bat
-can_see_in_dark 1
 x 3
 y 13
+can_see_in_dark 1
 end
 arch dirtfloor
 x 3
@@ -1226,9 +1226,9 @@ x 9
 y 3
 end
 arch giant_bat
-can_see_in_dark 1
 x 9
 y 3
+can_see_in_dark 1
 end
 arch dirtfloor
 x 9
@@ -1981,9 +1981,9 @@ x 14
 y 23
 end
 arch giant_bat
-can_see_in_dark 1
 x 14
 y 23
+can_see_in_dark 1
 end
 arch dirtfloor
 x 14
@@ -2101,9 +2101,9 @@ x 15
 y 23
 end
 arch giant_bat
-can_see_in_dark 1
 x 15
 y 23
+can_see_in_dark 1
 end
 arch dirtfloor
 x 15
@@ -2145,9 +2145,9 @@ x 16
 y 6
 end
 arch giant_bat
-can_see_in_dark 1
 x 16
 y 6
+can_see_in_dark 1
 end
 arch dirtfloor
 x 16
@@ -2662,9 +2662,9 @@ x 20
 y 1
 end
 arch giant_bat
-can_see_in_dark 1
 x 20
 y 1
+can_see_in_dark 1
 end
 arch dirtfloor
 x 20
@@ -3826,9 +3826,9 @@ x 28
 y 13
 end
 arch giant_bat
-can_see_in_dark 1
 x 28
 y 13
+can_see_in_dark 1
 end
 arch dirtfloor
 x 28
@@ -4474,9 +4474,9 @@ x 33
 y 16
 end
 arch giant_bat
-can_see_in_dark 1
 x 33
 y 16
+can_see_in_dark 1
 end
 arch dirtfloor
 x 33
@@ -4697,9 +4697,9 @@ x 35
 y 11
 end
 arch giant_bat
-can_see_in_dark 1
 x 35
 y 11
+can_see_in_dark 1
 end
 arch dirtfloor
 x 35
@@ -5302,30 +5302,30 @@ x 39
 y 24
 end
 arch giantrat
-see_invisible 1
-can_see_in_dark 1
 Wis 15
 x 5
 y 20
-end
-arch giantrat
 see_invisible 1
 can_see_in_dark 1
+end
+arch giantrat
 Wis 15
 x 10
 y 15
-end
-arch giantrat
 see_invisible 1
 can_see_in_dark 1
+end
+arch giantrat
 Wis 15
 x 29
 y 10
-end
-arch giantrat
 see_invisible 1
 can_see_in_dark 1
+end
+arch giantrat
 Wis 15
 x 33
 y 5
+see_invisible 1
+can_see_in_dark 1
 end

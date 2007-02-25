@@ -1,146 +1,147 @@
 arch map
+name Collosium
+difficulty 1
 region navar
-name collosium
+width 36
+height 26
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 22 13:01:11 1999
 endmsg
-x 36
-y 26
 end
 arch grassmedium
 end
 arch grassmedium
 y 1
 end
-arch cwall_2_2_2
+arch westcwall_2_2_2
 y 1
 end
 arch grassmedium
 y 2
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 2
 end
 arch grassmedium
 y 3
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 3
 end
 arch grassmedium
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 4
 end
 arch grassmedium
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 5
 end
 arch grassmedium
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 6
 end
 arch grassmedium
 y 7
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 7
 end
 arch grassmedium
 y 8
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 8
 end
 arch grassmedium
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 9
 end
 arch grassmedium
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 10
 end
 arch grassmedium
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 11
 end
 arch grassmedium
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 12
 end
 arch grassmedium
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 13
 end
 arch grassmedium
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 14
 end
 arch grassmedium
 y 15
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 15
 end
 arch grassmedium
 y 16
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 16
 end
 arch grassmedium
 y 17
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 17
 end
 arch grassmedium
 y 18
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 18
 end
 arch grassmedium
 y 19
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 19
 end
 arch grassmedium
 y 20
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 20
 end
 arch grassmedium
 y 21
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 y 21
 end
 arch grassmedium
 y 22
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 y 22
 end
 arch grassmedium
@@ -155,14 +156,14 @@ end
 arch grassmedium
 x 1
 end
-arch cwall_2_2_2
+arch westcwall_2_2_2
 x 1
 end
 arch grassmedium
 x 1
 y 1
 end
-arch cwall_3_4
+arch westcwall_3_4
 x 1
 y 1
 end
@@ -170,7 +171,7 @@ arch grassmedium
 x 1
 y 2
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 1
 y 2
 end
@@ -263,7 +264,7 @@ arch grassmedium
 x 1
 y 22
 end
-arch cwall_2_2_3
+arch westcwall_2_2_3
 x 1
 y 22
 end
@@ -271,7 +272,7 @@ arch grassmedium
 x 1
 y 23
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 1
 y 23
 end
@@ -286,7 +287,7 @@ end
 arch grassmedium
 x 2
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 2
 end
 arch grassmedium
@@ -442,7 +443,7 @@ arch grassmedium
 x 2
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 2
 y 23
 end
@@ -457,14 +458,14 @@ end
 arch grassmedium
 x 3
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 3
 end
 arch grassmedium
 x 3
 y 1
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 3
 y 1
 end
@@ -472,7 +473,7 @@ arch grassmedium
 x 3
 y 2
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 3
 y 2
 end
@@ -607,7 +608,7 @@ arch grassmedium
 x 3
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 3
 y 23
 end
@@ -622,7 +623,7 @@ end
 arch grassmedium
 x 4
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 4
 end
 arch grassmedium
@@ -800,7 +801,7 @@ arch grassmedium
 x 4
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 23
 end
@@ -815,7 +816,7 @@ end
 arch grassmedium
 x 5
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 5
 end
 arch grassmedium
@@ -923,7 +924,7 @@ arch grassmedium
 x 5
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 5
 y 23
 end
@@ -938,7 +939,7 @@ end
 arch grassmedium
 x 6
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 6
 end
 arch grassmedium
@@ -965,7 +966,7 @@ arch swall_2_2_2
 x 6
 y 4
 end
-arch cwall_0
+arch westcwall_0
 x 6
 y 4
 end
@@ -1089,7 +1090,7 @@ arch swall_2_2_1
 x 6
 y 19
 end
-arch cwall_0
+arch westcwall_0
 x 6
 y 19
 end
@@ -1113,7 +1114,7 @@ arch grassmedium
 x 6
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 6
 y 23
 end
@@ -1132,7 +1133,7 @@ end
 arch grassmedium
 x 7
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 7
 end
 arch grassmedium
@@ -1256,7 +1257,7 @@ arch grassmedium
 x 7
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 7
 y 23
 end
@@ -1271,7 +1272,7 @@ end
 arch grassmedium
 x 8
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 8
 end
 arch grassmedium
@@ -1394,7 +1395,7 @@ arch grassmedium
 x 8
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 8
 y 23
 end
@@ -1409,7 +1410,7 @@ end
 arch grassmedium
 x 9
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 9
 end
 arch grassmedium
@@ -1533,7 +1534,7 @@ arch grassmedium
 x 9
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 9
 y 23
 end
@@ -1548,7 +1549,7 @@ end
 arch grassmedium
 x 10
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 10
 end
 arch grassmedium
@@ -1659,7 +1660,7 @@ arch grassmedium
 x 10
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 10
 y 23
 end
@@ -1674,7 +1675,7 @@ end
 arch grassmedium
 x 11
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 11
 end
 arch grassmedium
@@ -1785,7 +1786,7 @@ arch grassmedium
 x 11
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 11
 y 23
 end
@@ -1800,7 +1801,7 @@ end
 arch grassmedium
 x 12
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 12
 end
 arch grassmedium
@@ -1911,7 +1912,7 @@ arch grassmedium
 x 12
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 23
 end
@@ -1926,7 +1927,7 @@ end
 arch grassmedium
 x 13
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 13
 end
 arch grassmedium
@@ -2041,7 +2042,7 @@ arch grassmedium
 x 13
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 13
 y 23
 end
@@ -2056,7 +2057,7 @@ end
 arch grassmedium
 x 14
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 14
 end
 arch grassmedium
@@ -2163,7 +2164,7 @@ arch grassmedium
 x 14
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 14
 y 23
 end
@@ -2182,7 +2183,7 @@ end
 arch grassmedium
 x 15
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 15
 end
 arch grassmedium
@@ -2206,7 +2207,7 @@ arch dirtfloor
 x 15
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 15
 y 4
 end
@@ -2294,7 +2295,7 @@ arch grassmedium
 x 15
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 15
 y 23
 end
@@ -2309,14 +2310,14 @@ end
 arch grassmedium
 x 16
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 16
 end
 arch cobblestones2
 x 16
 y 1
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 16
 y 1
 end
@@ -2324,7 +2325,7 @@ arch cobblestones2
 x 16
 y 2
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 16
 y 2
 end
@@ -2332,16 +2333,19 @@ arch cobblestones2
 x 16
 y 3
 end
-arch cityport_b
+arch westcityport_b
 x 16
 y 3
-no_pass 1
 end
 arch dirtfloor
 x 16
 y 4
 end
-arch cwall_1_2
+arch swall_1_3_half
+x 16
+y 4
+end
+arch westcwall_1_2
 x 16
 y 4
 end
@@ -2405,11 +2409,11 @@ arch dirtfloor
 x 16
 y 19
 end
-arch swall_1_3
+arch swall_1_3_half
 x 16
 y 19
 end
-arch cwall_0
+arch westcwall_0
 x 16
 y 19
 end
@@ -2433,7 +2437,7 @@ arch grassmedium
 x 16
 y 22
 end
-arch cwall_1_1
+arch westcwall_1_1
 x 16
 y 22
 end
@@ -2441,7 +2445,7 @@ arch grassmedium
 x 16
 y 23
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 16
 y 23
 end
@@ -2460,7 +2464,7 @@ end
 arch cobblestones2
 x 17
 end
-arch dwall_2_1_2
+arch westcityport_a
 x 17
 end
 arch cobblestones2
@@ -2586,7 +2590,7 @@ end
 arch cobblestones2
 x 18
 end
-arch dwall_2_1_2
+arch westcityport_a
 x 18
 end
 arch cobblestones2
@@ -2712,14 +2716,14 @@ end
 arch grassmedium
 x 19
 end
-arch cwall_3_3
+arch westcwall_3_3
 x 19
 end
 arch cobblestones2
 x 19
 y 1
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 19
 y 1
 end
@@ -2727,7 +2731,7 @@ arch cobblestones2
 x 19
 y 2
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 19
 y 2
 end
@@ -2735,16 +2739,19 @@ arch cobblestones2
 x 19
 y 3
 end
-arch cityport_b
+arch westcityport_b
 x 19
 y 3
-no_pass 1
 end
 arch dirtfloor
 x 19
 y 4
 end
-arch cwall_1_2
+arch swall_1_4_half
+x 19
+y 4
+end
+arch westcwall_1_2
 x 19
 y 4
 end
@@ -2821,11 +2828,11 @@ arch dirtfloor
 x 19
 y 19
 end
-arch swall_1_4
+arch swall_1_4_half
 x 19
 y 19
 end
-arch cwall_0
+arch westcwall_0
 x 19
 y 19
 end
@@ -2849,7 +2856,7 @@ arch grassmedium
 x 19
 y 22
 end
-arch cwall_1_1
+arch westcwall_1_1
 x 19
 y 22
 end
@@ -2857,7 +2864,7 @@ arch grassmedium
 x 19
 y 23
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 19
 y 23
 end
@@ -2872,7 +2879,7 @@ end
 arch grassmedium
 x 20
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 20
 end
 arch grassmedium
@@ -2896,7 +2903,7 @@ arch dirtfloor
 x 20
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 20
 y 4
 end
@@ -2984,7 +2991,7 @@ arch grassmedium
 x 20
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 20
 y 23
 end
@@ -3003,7 +3010,7 @@ end
 arch grassmedium
 x 21
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 21
 end
 arch grassmedium
@@ -3110,7 +3117,7 @@ arch grassmedium
 x 21
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 21
 y 23
 end
@@ -3125,7 +3132,7 @@ end
 arch grassmedium
 x 22
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 22
 end
 arch grassmedium
@@ -3241,7 +3248,7 @@ arch grassmedium
 x 22
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 22
 y 23
 end
@@ -3256,7 +3263,7 @@ end
 arch grassmedium
 x 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 23
 end
 arch grassmedium
@@ -3371,7 +3378,7 @@ arch grassmedium
 x 23
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 23
 y 23
 end
@@ -3386,7 +3393,7 @@ end
 arch grassmedium
 x 24
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 24
 end
 arch grassmedium
@@ -3502,7 +3509,7 @@ arch grassmedium
 x 24
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 24
 y 23
 end
@@ -3517,7 +3524,7 @@ end
 arch grassmedium
 x 25
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 25
 end
 arch grassmedium
@@ -3628,7 +3635,7 @@ arch grassmedium
 x 25
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 25
 y 23
 end
@@ -3643,7 +3650,7 @@ end
 arch grassmedium
 x 26
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 26
 end
 arch grassmedium
@@ -3772,7 +3779,7 @@ arch grassmedium
 x 26
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 26
 y 23
 end
@@ -3787,7 +3794,7 @@ end
 arch grassmedium
 x 27
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 27
 end
 arch grassmedium
@@ -3906,7 +3913,7 @@ arch grassmedium
 x 27
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 27
 y 23
 end
@@ -3921,7 +3928,7 @@ end
 arch grassmedium
 x 28
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 28
 end
 arch grassmedium
@@ -4049,7 +4056,7 @@ arch grassmedium
 x 28
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 28
 y 23
 end
@@ -4068,7 +4075,7 @@ end
 arch grassmedium
 x 29
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 29
 end
 arch grassmedium
@@ -4100,7 +4107,7 @@ arch swall_2_2_3
 x 29
 y 4
 end
-arch cwall_0
+arch westcwall_0
 x 29
 y 4
 end
@@ -4224,7 +4231,7 @@ arch swall_2_2_4
 x 29
 y 19
 end
-arch cwall_0
+arch westcwall_0
 x 29
 y 19
 end
@@ -4248,7 +4255,7 @@ arch grassmedium
 x 29
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 29
 y 23
 end
@@ -4263,7 +4270,7 @@ end
 arch grassmedium
 x 30
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 30
 end
 arch grassmedium
@@ -4366,7 +4373,7 @@ arch grassmedium
 x 30
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 30
 y 23
 end
@@ -4385,7 +4392,7 @@ end
 arch grassmedium
 x 31
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 31
 end
 arch grassmedium
@@ -4512,7 +4519,7 @@ arch grassmedium
 x 31
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 31
 y 23
 end
@@ -4527,7 +4534,7 @@ end
 arch grassmedium
 x 32
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 32
 end
 arch grassmedium
@@ -4662,7 +4669,7 @@ arch grassmedium
 x 32
 y 15
 end
-arch cwall_1_4
+arch westcwall_1_4
 x 32
 y 15
 end
@@ -4694,7 +4701,7 @@ arch grassmedium
 x 32
 y 19
 end
-arch cwall_1_4
+arch westcwall_1_4
 x 32
 y 19
 end
@@ -4714,7 +4721,7 @@ arch grassmedium
 x 32
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 32
 y 23
 end
@@ -4729,7 +4736,7 @@ end
 arch grassmedium
 x 33
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 33
 end
 arch grassmedium
@@ -4805,7 +4812,7 @@ arch grassmedium
 x 33
 y 15
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 33
 y 15
 end
@@ -4837,7 +4844,7 @@ arch grassmedium
 x 33
 y 19
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 33
 y 19
 end
@@ -4861,7 +4868,7 @@ arch grassmedium
 x 33
 y 23
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 33
 y 23
 end
@@ -4876,14 +4883,14 @@ end
 arch grassmedium
 x 34
 end
-arch cwall_2_2_3
+arch westcwall_2_2_3
 x 34
 end
 arch grassmedium
 x 34
 y 1
 end
-arch cwall_2_2_1
+arch westcwall_2_2_1
 x 34
 y 1
 end
@@ -4996,7 +5003,7 @@ arch grassmedium
 x 34
 y 15
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 34
 y 15
 end
@@ -5031,7 +5038,7 @@ arch grassmedium
 x 34
 y 19
 end
-arch cwall_2_1_2
+arch westcwall_2_1_2
 x 34
 y 19
 end
@@ -5047,7 +5054,7 @@ arch grassmedium
 x 34
 y 22
 end
-arch cwall_2_2_2
+arch westcwall_2_2_2
 x 34
 y 22
 end
@@ -5055,7 +5062,7 @@ arch grassmedium
 x 34
 y 23
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 34
 y 23
 end
@@ -5074,7 +5081,7 @@ arch grassmedium
 x 35
 y 1
 end
-arch cwall_2_2_3
+arch westcwall_2_2_3
 x 35
 y 1
 end
@@ -5082,7 +5089,7 @@ arch grassmedium
 x 35
 y 2
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 2
 end
@@ -5090,7 +5097,7 @@ arch grassmedium
 x 35
 y 3
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 3
 end
@@ -5098,7 +5105,7 @@ arch grassmedium
 x 35
 y 4
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 4
 end
@@ -5106,7 +5113,7 @@ arch grassmedium
 x 35
 y 5
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 5
 end
@@ -5114,7 +5121,7 @@ arch grassmedium
 x 35
 y 6
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 6
 end
@@ -5122,7 +5129,7 @@ arch grassmedium
 x 35
 y 7
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 7
 end
@@ -5130,7 +5137,7 @@ arch grassmedium
 x 35
 y 8
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 8
 end
@@ -5138,7 +5145,7 @@ arch grassmedium
 x 35
 y 9
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 9
 end
@@ -5146,7 +5153,7 @@ arch grassmedium
 x 35
 y 10
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 10
 end
@@ -5154,7 +5161,7 @@ arch grassmedium
 x 35
 y 11
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 11
 end
@@ -5162,7 +5169,7 @@ arch grassmedium
 x 35
 y 12
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 12
 end
@@ -5170,7 +5177,7 @@ arch grassmedium
 x 35
 y 13
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 13
 end
@@ -5178,7 +5185,7 @@ arch grassmedium
 x 35
 y 14
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 14
 end
@@ -5186,7 +5193,7 @@ arch grassmedium
 x 35
 y 15
 end
-arch cwall_3_4
+arch westcwall_3_4
 x 35
 y 15
 end
@@ -5194,7 +5201,7 @@ arch grassmedium
 x 35
 y 16
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 16
 end
@@ -5202,7 +5209,7 @@ arch grassmedium
 x 35
 y 17
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 17
 end
@@ -5210,7 +5217,7 @@ arch grassmedium
 x 35
 y 18
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 18
 end
@@ -5218,7 +5225,7 @@ arch grassmedium
 x 35
 y 19
 end
-arch cwall_3_4
+arch westcwall_3_4
 x 35
 y 19
 end
@@ -5226,7 +5233,7 @@ arch grassmedium
 x 35
 y 20
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 20
 end
@@ -5234,7 +5241,7 @@ arch grassmedium
 x 35
 y 21
 end
-arch cwall_2_1_1
+arch westcwall_2_1_1
 x 35
 y 21
 end
@@ -5242,7 +5249,7 @@ arch grassmedium
 x 35
 y 22
 end
-arch cwall_2_2_4
+arch westcwall_2_2_4
 x 35
 y 22
 end
@@ -5266,62 +5273,6 @@ carrying 3000
 arch bracers_ac
 end
 end
-More
-arch titan_2
-name Titus
-hp 4000
-x 8
-y 9
-end
-More
-arch titan_3
-name Titus
-hp 4000
-x 8
-y 8
-end
-More
-arch titan_4
-name Titus
-hp 4000
-x 9
-y 8
-end
-More
-arch titan_5
-name Titus
-hp 4000
-x 10
-y 8
-end
-More
-arch titan_6
-name Titus
-hp 4000
-x 10
-y 9
-end
-More
-arch titan_7
-name Titus
-hp 4000
-x 10
-y 10
-end
-More
-arch titan_8
-name Titus
-hp 4000
-x 9
-y 10
-end
-More
-arch titan_9
-name Titus
-hp 4000
-x 8
-y 10
-end
 arch titan
 name Markus
 x 18
@@ -5329,60 +5280,4 @@ y 8
 carrying 23000
 arch trident
 end
-end
-More
-arch titan_2
-name Markus
-hp 4000
-x 17
-y 8
-end
-More
-arch titan_3
-name Markus
-hp 4000
-x 17
-y 7
-end
-More
-arch titan_4
-name Markus
-hp 4000
-x 18
-y 7
-end
-More
-arch titan_5
-name Markus
-hp 4000
-x 19
-y 7
-end
-More
-arch titan_6
-name Markus
-hp 4000
-x 19
-y 8
-end
-More
-arch titan_7
-name Markus
-hp 4000
-x 19
-y 9
-end
-More
-arch titan_8
-name Markus
-hp 4000
-x 18
-y 9
-end
-More
-arch titan_9
-name Markus
-hp 4000
-x 17
-y 9
 end

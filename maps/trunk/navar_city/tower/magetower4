@@ -1,12 +1,14 @@
 arch map
+name Spiral Tower
+difficulty 1
 region navar
+width 25
+height 25
 msg
 Creator: 
 Email: 
 Date: Mon Nov  1 13:33:56 1993
 endmsg
-x 25
-y 25
 end
 arch cobblestones
 end
@@ -951,10 +953,6 @@ endmsg
 x 6
 y 23
 end
-arch cobblestones
-x 6
-y 23
-end
 arch magic_ear
 msg
 @match e|E
@@ -963,6 +961,10 @@ endmsg
 x 6
 y 23
 connected 200
+end
+arch cobblestones
+x 6
+y 23
 end
 arch cobblestones
 x 6

@@ -1,16 +1,16 @@
 arch map
+name Smugglers Camp
+difficulty 7
 region navar
-name smugglers camp
+width 25
+height 25
+enter_x 1
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/10/2003
 endmsg
-width 25
-height 25
-enter_x 1
-enter_y 1
-difficulty 7
 outdoor 1
 end
 arch invis_exit
@@ -66,9 +66,9 @@ arch grass
 y 9
 end
 arch tree3
-blocksview 1
-no_pass 1
 y 9
+no_pass 1
+blocksview 1
 end
 arch grass
 y 10
@@ -90,18 +90,18 @@ y 15
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 y 15
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch grass
 y 16
@@ -168,10 +168,10 @@ x 1
 y 7
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 1
 y 7
+no_pass 1
+blocksview 1
 end
 arch grass
 x 1
@@ -279,30 +279,30 @@ x 2
 y 5
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 2
 y 5
+no_pass 1
+blocksview 1
 end
 arch hills
 x 2
 y 6
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 2
 y 6
+no_pass 1
+blocksview 1
 end
 arch grass
 x 2
 y 7
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 2
 y 7
+no_pass 1
+blocksview 1
 end
 arch grass
 x 2
@@ -317,10 +317,10 @@ x 2
 y 10
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 2
 y 10
+no_pass 1
+blocksview 1
 end
 arch treed_hills
 x 2
@@ -344,19 +344,19 @@ y 15
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 2
 y 15
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch grass
 x 2
@@ -420,10 +420,10 @@ x 3
 y 4
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 3
 y 4
+no_pass 1
+blocksview 1
 end
 arch beach
 x 3
@@ -454,10 +454,10 @@ x 3
 y 11
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 3
 y 11
+no_pass 1
+blocksview 1
 end
 arch grass
 x 3
@@ -531,10 +531,10 @@ x 4
 y 4
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 4
 y 4
+no_pass 1
+blocksview 1
 end
 arch beach
 x 4
@@ -565,10 +565,10 @@ x 4
 y 11
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 4
 y 11
+no_pass 1
+blocksview 1
 end
 arch grass
 x 4
@@ -634,10 +634,10 @@ x 5
 y 2
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 5
 y 2
+no_pass 1
+blocksview 1
 end
 arch hills
 x 5
@@ -735,20 +735,20 @@ x 6
 y 1
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 6
 y 1
+no_pass 1
+blocksview 1
 end
 arch grass
 x 6
 y 2
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 6
 y 2
+no_pass 1
+blocksview 1
 end
 arch hills
 x 6
@@ -759,10 +759,10 @@ x 6
 y 4
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 6
 y 4
+no_pass 1
+blocksview 1
 end
 arch beach
 x 6
@@ -781,10 +781,10 @@ x 6
 y 8
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 6
 y 8
+no_pass 1
+blocksview 1
 end
 arch beach
 x 6
@@ -816,19 +816,19 @@ y 15
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
+x 6
+y 15
+speed -0.2
 attack_movement 3
+level 7
 run_away 10
-x 6
-y 15
+sleep 0
 end
 arch beach
 x 6
@@ -874,10 +874,10 @@ x 7
 y 1
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 7
 y 1
+no_pass 1
+blocksview 1
 end
 arch grass
 x 7
@@ -888,20 +888,20 @@ x 7
 y 3
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 7
 y 3
+no_pass 1
+blocksview 1
 end
 arch grass
 x 7
 y 4
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 7
 y 4
+no_pass 1
+blocksview 1
 end
 arch beach
 x 7
@@ -920,10 +920,10 @@ x 7
 y 8
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 7
 y 8
+no_pass 1
+blocksview 1
 end
 arch beach
 x 7
@@ -934,10 +934,10 @@ x 7
 y 10
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 7
 y 10
+no_pass 1
+blocksview 1
 end
 arch grass
 x 7
@@ -999,9 +999,9 @@ arch grass
 x 8
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 8
+no_pass 1
+blocksview 1
 end
 arch grass
 x 8
@@ -1016,10 +1016,10 @@ x 8
 y 3
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 8
 y 3
+no_pass 1
+blocksview 1
 end
 arch beach
 x 8
@@ -1038,20 +1038,20 @@ x 8
 y 7
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 8
 y 7
+no_pass 1
+blocksview 1
 end
 arch grass
 x 8
 y 8
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 8
 y 8
+no_pass 1
+blocksview 1
 end
 arch beach
 x 8
@@ -1066,10 +1066,10 @@ x 8
 y 11
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 8
 y 11
+no_pass 1
+blocksview 1
 end
 arch beach
 x 8
@@ -1127,9 +1127,9 @@ arch grass
 x 9
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 9
+no_pass 1
+blocksview 1
 end
 arch grass
 x 9
@@ -1160,10 +1160,10 @@ x 9
 y 7
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 9
 y 7
+no_pass 1
+blocksview 1
 end
 arch grass
 x 9
@@ -1250,19 +1250,19 @@ y 3
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 10
 y 3
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 arch lantern2_1
 end
 end
@@ -1300,19 +1300,19 @@ y 11
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 10
 y 11
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 10
@@ -1323,19 +1323,19 @@ x 10
 y 13
 end
 arch sailor
-level 7
-exp 330
-speed -0.2
-dam 13
-wc 3
+Con 2
+Wis 8
 hp 118
 maxhp 118
-Con 2
-unaggressive 0
-pick_up 30
-Wis 8
+exp 330
+dam 13
+wc 3
 x 10
 y 13
+speed -0.2
+level 7
+unaggressive 0
+pick_up 30
 end
 arch grass
 x 10
@@ -1350,10 +1350,10 @@ x 10
 y 16
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 10
 y 16
+no_pass 1
+blocksview 1
 end
 arch grass
 x 10
@@ -1436,19 +1436,19 @@ y 11
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 11
 y 11
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 11
@@ -1459,10 +1459,10 @@ x 11
 y 13
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 11
 y 13
+no_pass 1
+blocksview 1
 end
 arch grass
 x 11
@@ -1478,19 +1478,19 @@ y 16
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 11
 y 16
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 11
@@ -1528,19 +1528,19 @@ arch grass
 x 12
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 12
+no_pass 1
+blocksview 1
 end
 arch grass
 x 12
 y 1
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 12
 y 1
+no_pass 1
+blocksview 1
 end
 arch grass
 x 12
@@ -1586,19 +1586,19 @@ Yes yes these horrible smugglers kidnapped me.
 @match *
 Oh please save me from these smugglers!
 endmsg
-stand_still 1
 x 12
 y 10
+stand_still 1
 end
 arch grass
 x 12
 y 11
 end
-arch campfire
+arch light4
 x 12
 y 11
 end
-arch light4
+arch campfire
 x 12
 y 11
 end
@@ -1611,10 +1611,10 @@ x 12
 y 13
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 12
 y 13
+no_pass 1
+blocksview 1
 end
 arch beach
 x 12
@@ -1665,18 +1665,18 @@ x 13
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 13
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 13
@@ -1691,10 +1691,10 @@ x 13
 y 3
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 13
 y 3
+no_pass 1
+blocksview 1
 end
 arch beach
 x 13
@@ -1726,19 +1726,19 @@ y 10
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 13
 y 10
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 13
@@ -1773,10 +1773,10 @@ x 13
 y 18
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 13
 y 18
+no_pass 1
+blocksview 1
 end
 arch beach
 x 13
@@ -1818,10 +1818,10 @@ x 14
 y 3
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 14
 y 3
+no_pass 1
+blocksview 1
 end
 arch beach
 x 14
@@ -1884,10 +1884,10 @@ x 14
 y 18
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 14
 y 18
+no_pass 1
+blocksview 1
 end
 arch beach
 x 14
@@ -1930,19 +1930,19 @@ y 3
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 15
 y 3
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 15
@@ -2001,20 +2001,20 @@ x 15
 y 17
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 15
 y 17
+no_pass 1
+blocksview 1
 end
 arch grass
 x 15
 y 18
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 15
 y 18
+no_pass 1
+blocksview 1
 end
 arch beach
 x 15
@@ -2112,10 +2112,10 @@ x 16
 y 17
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 16
 y 17
+no_pass 1
+blocksview 1
 end
 arch grass
 x 16
@@ -2123,19 +2123,19 @@ y 18
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 16
 y 18
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch beach
 x 16
@@ -2186,19 +2186,19 @@ y 5
 end
 arch pirate
 name smuggler
-level 7
-exp 545
-speed -0.2
-dam 26
-wc 2
 hp 220
 maxhp 220
+exp 545
+dam 26
+wc 2
 ac -1
-sleep 0
-attack_movement 3
-run_away 10
 x 17
 y 5
+speed -0.2
+attack_movement 3
+level 7
+run_away 10
+sleep 0
 end
 arch grass
 x 17
@@ -2241,10 +2241,10 @@ x 17
 y 15
 end
 arch tree3
-blocksview 1
-no_pass 1
 x 17
 y 15
+no_pass 1
+blocksview 1
 end
 arch grass
 x 17

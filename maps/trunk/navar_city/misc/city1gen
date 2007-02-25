@@ -1,9 +1,14 @@
 arch map
-region navar
 name Eddie's Store by the Wall
 reset_timeout 7200
 fixed_resettime 1
 difficulty 15
+region navar
+shopitems *:0
+shopgreed 1.00000
+shopmin 1
+shopmax 5000
+shoprace human
 width 14
 height 21
 enter_x 1
@@ -13,11 +18,6 @@ Creator:
 Email:
 Date: Fri Oct 29 14:53:55 1993
 endmsg
-shopitems *:0
-shopmin 1
-shopmax 5000
-shoprace human
-shopgreed 1.0
 end
 arch cobblestones2
 end
