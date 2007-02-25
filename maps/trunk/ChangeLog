@@ -1,3 +1,50 @@
+2007-02-25 01:49  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1,
+	  whalingoutpost/lighthouse1, whalingoutpost/lighthouse2,
+	  whalingoutpost/lighthouse3, whalingoutpost/lighthouse4,
+	  whalingoutpost/lighthouse5, whalingoutpost/lighthouse6,
+	  whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1,
+	  whalingoutpost/misc/holeinice1, whalingoutpost/misc/icecavern1,
+	  whalingoutpost/misc/icecavern2, whalingoutpost/misc/icehole1,
+	  whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3,
+	  wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_2,
+	  wolfsburg/magara/castle/floor_3, wolfsburg/temple/enterance,
+	  wolfsburg/temple/ixalovh, wolfsburg/temple/temp_dung1,
+	  wolfsburg/temple/temple, wolfsburg/tt/tta1, wolfsburg/tt/tta2,
+	  wolfsburg/tt/ttb1, wolfsburg/tt/ttb2, wolfsburg/volcano/volcano,
+	  wolfsburg/volcano/vvhuts, world/world_123_123,
+	  world/world_126_124, world/world_128_109, world/world_128_128,
+	  world/world_128_129: Renamed maps (which were either unnamed,
+	  used the actual file name or tweaked their spelling and
+	  capitilization). Renamed maps with a generic name to something
+	  more specific. Other changes are due to Map Editor reformatting.
+
+2007-02-24 11:08  ryo_saeba
+
+	* python/CFDataFile.py: Windows requires binary mode to work
+	  correctly (newline issues).
+
 2007-02-24 3:00  kbulgrien
 
 	* pup_land/lonetown/heinrich: lake arch replaced by sea_nsew to
