@@ -1,12 +1,14 @@
 arch map
+name Castle of Magara
+difficulty 1
 region wolfsburg
+width 34
+height 34
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 21 03:42:46 2000
 endmsg
-x 34
-y 34
 end
 arch sea1
 name water
@@ -874,7 +876,7 @@ end
 arch magic_mouth
 msg
 This is the roof of the castle. Huh,
-the wind picks up speed... 
+the wind picks up speed...
 endmsg
 x 3
 y 4
@@ -1049,7 +1051,7 @@ end
 arch magic_mouth
 msg
 This is the roof of the castle. Huh,
-the wind picks up speed... 
+the wind picks up speed...
 endmsg
 x 4
 y 3
@@ -1061,7 +1063,7 @@ end
 arch magic_mouth
 msg
 This is the roof of the castle. Huh,
-the wind picks up speed... 
+the wind picks up speed...
 endmsg
 x 4
 y 4

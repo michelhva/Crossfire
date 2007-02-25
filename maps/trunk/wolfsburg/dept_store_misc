@@ -1,13 +1,14 @@
 arch map
-name general department
+name General Department
+fixed_resettime 1
+difficulty 1
 region wolfsburg
+width 17
+height 13
 msg
 Creator: CF Java Map Editor
 Date:    9/18/2005
 endmsg
-width 17
-height 13
-fixed_resettime 1
 tile_path_1 dept_store_weapon
 tile_path_4 dept_store_magic
 end

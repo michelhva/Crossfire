@@ -1,11 +1,11 @@
 arch map
+name Twin Towers
+difficulty 1
 region wolfsburg
-msg
-endmsg
-hp 2
-sp 18
-x 53
-y 38
+width 53
+height 38
+enter_x 2
+enter_y 18
 end
 arch grass
 end

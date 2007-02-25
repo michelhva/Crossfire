@@ -1,13 +1,14 @@
 arch map
+name Castle of Magara
+difficulty 1
 region wolfsburg
-name cellar
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May 21 11:19:10 2000
 endmsg
-x 30
-y 30
 end
 arch small_stones
 end
@@ -3503,14 +3504,10 @@ x 17
 y 3
 end
 arch blocked
-msg
-endmsg
 x 17
 y 4
 end
 arch blocked
-msg
-endmsg
 x 17
 y 5
 end
@@ -3717,14 +3714,10 @@ x 18
 y 3
 end
 arch blocked
-msg
-endmsg
 x 18
 y 4
 end
 arch blocked
-msg
-endmsg
 x 18
 y 5
 end
@@ -3943,14 +3936,10 @@ x 19
 y 3
 end
 arch blocked
-msg
-endmsg
 x 19
 y 4
 end
 arch blocked
-msg
-endmsg
 x 19
 y 5
 end

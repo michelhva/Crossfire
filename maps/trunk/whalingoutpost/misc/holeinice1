@@ -1,4 +1,5 @@
 arch map
+name Snow Cave
 reset_timeout 7200
 difficulty 1
 darkness 3
@@ -80,296 +81,222 @@ arch istone
 y 11
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch istone
 y 12
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch istone
 y 13
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch istone
 y 14
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch istone
 y 15
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch istone
 y 16
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch istone
 y 17
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch istone
 y 18
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch istone
 y 19
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch istone
 y 20
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch istone
 y 21
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch istone
 y 22
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch istone
 y 23
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch istone
 y 24
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch istone
 y 25
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch istone
 y 26
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch istone
 y 27
 end
 arch blocked
-msg
-endmsg
 y 27
 end
 arch istone
 y 28
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch istone
 y 29
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch istone
 y 30
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch istone
 y 31
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch istone
 y 32
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch istone
 y 33
 end
 arch blocked
-msg
-endmsg
 y 33
 end
 arch istone
 y 34
 end
 arch blocked
-msg
-endmsg
 y 34
 end
 arch istone
 y 35
 end
 arch blocked
-msg
-endmsg
 y 35
 end
 arch istone
 y 36
 end
 arch blocked
-msg
-endmsg
 y 36
 end
 arch istone
 y 37
 end
 arch blocked
-msg
-endmsg
 y 37
 end
 arch istone
 y 38
 end
 arch blocked
-msg
-endmsg
 y 38
 end
 arch istone
 y 39
 end
 arch blocked
-msg
-endmsg
 y 39
 end
 arch istone
 y 40
 end
 arch blocked
-msg
-endmsg
 y 40
 end
 arch istone
 y 41
 end
 arch blocked
-msg
-endmsg
 y 41
 end
 arch istone
 y 42
 end
 arch blocked
-msg
-endmsg
 y 42
 end
 arch istone
 y 43
 end
 arch blocked
-msg
-endmsg
 y 43
 end
 arch istone
 y 44
 end
 arch blocked
-msg
-endmsg
 y 44
 end
 arch istone
 y 45
 end
 arch blocked
-msg
-endmsg
 y 45
 end
 arch istone
 y 46
 end
 arch blocked
-msg
-endmsg
 y 46
 end
 arch istone
 y 47
 end
 arch blocked
-msg
-endmsg
 y 47
 end
 arch istone
@@ -442,28 +369,18 @@ arch cave3
 y 58
 end
 arch blocked
-msg
-endmsg
 y 59
 end
 arch blocked
-msg
-endmsg
 y 60
 end
 arch blocked
-msg
-endmsg
 y 61
 end
 arch blocked
-msg
-endmsg
 y 62
 end
 arch blocked
-msg
-endmsg
 y 63
 end
 arch mover_5
@@ -653,8 +570,6 @@ x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
@@ -663,8 +578,6 @@ x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
@@ -673,8 +586,6 @@ x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
@@ -683,8 +594,6 @@ x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
@@ -693,8 +602,6 @@ x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
@@ -703,8 +610,6 @@ x 1
 y 25
 end
 arch blocked
-msg
-endmsg
 x 1
 y 25
 end
@@ -713,8 +618,6 @@ x 1
 y 26
 end
 arch blocked
-msg
-endmsg
 x 1
 y 26
 end
@@ -723,8 +626,6 @@ x 1
 y 27
 end
 arch blocked
-msg
-endmsg
 x 1
 y 27
 end
@@ -733,8 +634,6 @@ x 1
 y 28
 end
 arch blocked
-msg
-endmsg
 x 1
 y 28
 end
@@ -743,8 +642,6 @@ x 1
 y 29
 end
 arch blocked
-msg
-endmsg
 x 1
 y 29
 end
@@ -753,8 +650,6 @@ x 1
 y 30
 end
 arch blocked
-msg
-endmsg
 x 1
 y 30
 end
@@ -763,8 +658,6 @@ x 1
 y 31
 end
 arch blocked
-msg
-endmsg
 x 1
 y 31
 end
@@ -773,8 +666,6 @@ x 1
 y 32
 end
 arch blocked
-msg
-endmsg
 x 1
 y 32
 end
@@ -783,8 +674,6 @@ x 1
 y 33
 end
 arch blocked
-msg
-endmsg
 x 1
 y 33
 end
@@ -793,8 +682,6 @@ x 1
 y 34
 end
 arch blocked
-msg
-endmsg
 x 1
 y 34
 end
@@ -803,8 +690,6 @@ x 1
 y 35
 end
 arch blocked
-msg
-endmsg
 x 1
 y 35
 end
@@ -813,8 +698,6 @@ x 1
 y 36
 end
 arch blocked
-msg
-endmsg
 x 1
 y 36
 end
@@ -823,8 +706,6 @@ x 1
 y 37
 end
 arch blocked
-msg
-endmsg
 x 1
 y 37
 end
@@ -833,8 +714,6 @@ x 1
 y 38
 end
 arch blocked
-msg
-endmsg
 x 1
 y 38
 end
@@ -843,8 +722,6 @@ x 1
 y 39
 end
 arch blocked
-msg
-endmsg
 x 1
 y 39
 end
@@ -1133,14 +1010,10 @@ y 61
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 62
 end
 arch blocked
-msg
-endmsg
 x 1
 y 63
 end
@@ -1345,8 +1218,6 @@ x 2
 y 26
 end
 arch blocked
-msg
-endmsg
 x 2
 y 26
 end
@@ -1355,8 +1226,6 @@ x 2
 y 27
 end
 arch blocked
-msg
-endmsg
 x 2
 y 27
 end
@@ -1365,8 +1234,6 @@ x 2
 y 28
 end
 arch blocked
-msg
-endmsg
 x 2
 y 28
 end
@@ -1375,8 +1242,6 @@ x 2
 y 29
 end
 arch blocked
-msg
-endmsg
 x 2
 y 29
 end
@@ -1385,8 +1250,6 @@ x 2
 y 30
 end
 arch blocked
-msg
-endmsg
 x 2
 y 30
 end
@@ -1395,8 +1258,6 @@ x 2
 y 31
 end
 arch blocked
-msg
-endmsg
 x 2
 y 31
 end
@@ -1785,8 +1646,6 @@ y 62
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 2
 y 63
 end
@@ -1903,10 +1762,6 @@ x 3
 y 8
 end
 arch istone
-x 3
-y 9
-end
-arch polarbear
 x 3
 y 9
 end
@@ -2059,10 +1914,6 @@ x 3
 y 38
 end
 arch istone
-x 3
-y 39
-end
-arch polarbear
 x 3
 y 39
 end
@@ -2845,38 +2696,26 @@ x 4
 y 57
 end
 arch blocked
-msg
-endmsg
 x 4
 y 58
 end
 arch blocked
-msg
-endmsg
 x 4
 y 59
 end
 arch blocked
-msg
-endmsg
 x 4
 y 60
 end
 arch blocked
-msg
-endmsg
 x 4
 y 61
 end
 arch blocked
-msg
-endmsg
 x 4
 y 62
 end
 arch blocked
-msg
-endmsg
 x 4
 y 63
 end
@@ -2978,10 +2817,6 @@ arch istone
 x 5
 y 14
 end
-arch polarbear
-x 5
-y 14
-end
 arch istone
 x 5
 y 15
@@ -2999,10 +2834,6 @@ x 5
 y 18
 end
 arch istone
-x 5
-y 19
-end
-arch polarbear
 x 5
 y 19
 end
@@ -3055,10 +2886,6 @@ x 5
 y 31
 end
 arch istone
-x 5
-y 32
-end
-arch polarbear
 x 5
 y 32
 end
@@ -3255,8 +3082,6 @@ x 5
 y 52
 end
 arch blocked
-msg
-endmsg
 x 5
 y 52
 end
@@ -3265,8 +3090,6 @@ x 5
 y 53
 end
 arch blocked
-msg
-endmsg
 x 5
 y 53
 end
@@ -3275,8 +3098,6 @@ x 5
 y 54
 end
 arch blocked
-msg
-endmsg
 x 5
 y 54
 end
@@ -3285,8 +3106,6 @@ x 5
 y 55
 end
 arch blocked
-msg
-endmsg
 x 5
 y 55
 end
@@ -3295,8 +3114,6 @@ x 5
 y 56
 end
 arch blocked
-msg
-endmsg
 x 5
 y 56
 end
@@ -3305,8 +3122,6 @@ x 5
 y 57
 end
 arch blocked
-msg
-endmsg
 x 5
 y 57
 end
@@ -3315,8 +3130,6 @@ x 5
 y 58
 end
 arch blocked
-msg
-endmsg
 x 5
 y 58
 end
@@ -3325,8 +3138,6 @@ x 5
 y 59
 end
 arch blocked
-msg
-endmsg
 x 5
 y 59
 end
@@ -3335,8 +3146,6 @@ x 5
 y 60
 end
 arch blocked
-msg
-endmsg
 x 5
 y 60
 end
@@ -3345,8 +3154,6 @@ x 5
 y 61
 end
 arch blocked
-msg
-endmsg
 x 5
 y 61
 end
@@ -3355,8 +3162,6 @@ x 5
 y 62
 end
 arch blocked
-msg
-endmsg
 x 5
 y 62
 end
@@ -3365,8 +3170,6 @@ x 5
 y 63
 end
 arch blocked
-msg
-endmsg
 x 5
 y 63
 end
@@ -3514,10 +3317,6 @@ arch istone
 x 6
 y 23
 end
-arch polarbear
-x 6
-y 23
-end
 arch istone
 x 6
 y 24
@@ -3711,8 +3510,6 @@ x 6
 y 52
 end
 arch blocked
-msg
-endmsg
 x 6
 y 52
 end
@@ -3721,8 +3518,6 @@ x 6
 y 53
 end
 arch blocked
-msg
-endmsg
 x 6
 y 53
 end
@@ -3731,8 +3526,6 @@ x 6
 y 54
 end
 arch blocked
-msg
-endmsg
 x 6
 y 54
 end
@@ -3741,8 +3534,6 @@ x 6
 y 55
 end
 arch blocked
-msg
-endmsg
 x 6
 y 55
 end
@@ -3751,8 +3542,6 @@ x 6
 y 56
 end
 arch blocked
-msg
-endmsg
 x 6
 y 56
 end
@@ -3761,8 +3550,6 @@ x 6
 y 57
 end
 arch blocked
-msg
-endmsg
 x 6
 y 57
 end
@@ -3771,8 +3558,6 @@ x 6
 y 58
 end
 arch blocked
-msg
-endmsg
 x 6
 y 58
 end
@@ -3781,8 +3566,6 @@ x 6
 y 59
 end
 arch blocked
-msg
-endmsg
 x 6
 y 59
 end
@@ -3791,8 +3574,6 @@ x 6
 y 60
 end
 arch blocked
-msg
-endmsg
 x 6
 y 60
 end
@@ -3801,8 +3582,6 @@ x 6
 y 61
 end
 arch blocked
-msg
-endmsg
 x 6
 y 61
 end
@@ -3811,8 +3590,6 @@ x 6
 y 62
 end
 arch blocked
-msg
-endmsg
 x 6
 y 62
 end
@@ -3821,8 +3598,6 @@ x 6
 y 63
 end
 arch blocked
-msg
-endmsg
 x 6
 y 63
 end
@@ -4139,8 +3914,6 @@ x 7
 y 52
 end
 arch blocked
-msg
-endmsg
 x 7
 y 52
 end
@@ -4149,8 +3922,6 @@ x 7
 y 53
 end
 arch blocked
-msg
-endmsg
 x 7
 y 53
 end
@@ -4159,8 +3930,6 @@ x 7
 y 54
 end
 arch blocked
-msg
-endmsg
 x 7
 y 54
 end
@@ -4169,8 +3938,6 @@ x 7
 y 55
 end
 arch blocked
-msg
-endmsg
 x 7
 y 55
 end
@@ -4179,8 +3946,6 @@ x 7
 y 56
 end
 arch blocked
-msg
-endmsg
 x 7
 y 56
 end
@@ -4189,8 +3954,6 @@ x 7
 y 57
 end
 arch blocked
-msg
-endmsg
 x 7
 y 57
 end
@@ -4199,8 +3962,6 @@ x 7
 y 58
 end
 arch blocked
-msg
-endmsg
 x 7
 y 58
 end
@@ -4209,8 +3970,6 @@ x 7
 y 59
 end
 arch blocked
-msg
-endmsg
 x 7
 y 59
 end
@@ -4219,8 +3978,6 @@ x 7
 y 60
 end
 arch blocked
-msg
-endmsg
 x 7
 y 60
 end
@@ -4229,8 +3986,6 @@ x 7
 y 61
 end
 arch blocked
-msg
-endmsg
 x 7
 y 61
 end
@@ -4239,8 +3994,6 @@ x 7
 y 62
 end
 arch blocked
-msg
-endmsg
 x 7
 y 62
 end
@@ -4249,8 +4002,6 @@ x 7
 y 63
 end
 arch blocked
-msg
-endmsg
 x 7
 y 63
 end
@@ -4273,10 +4024,6 @@ x 8
 y 3
 end
 arch istone
-x 8
-y 4
-end
-arch polarbear
 x 8
 y 4
 end
@@ -4540,10 +4287,6 @@ arch istone
 x 8
 y 45
 end
-arch polarbear
-x 8
-y 45
-end
 arch istone
 x 8
 y 46
@@ -4577,8 +4320,6 @@ x 8
 y 52
 end
 arch blocked
-msg
-endmsg
 x 8
 y 52
 end
@@ -4587,8 +4328,6 @@ x 8
 y 53
 end
 arch blocked
-msg
-endmsg
 x 8
 y 53
 end
@@ -4597,8 +4336,6 @@ x 8
 y 54
 end
 arch blocked
-msg
-endmsg
 x 8
 y 54
 end
@@ -4607,8 +4344,6 @@ x 8
 y 55
 end
 arch blocked
-msg
-endmsg
 x 8
 y 55
 end
@@ -4617,8 +4352,6 @@ x 8
 y 56
 end
 arch blocked
-msg
-endmsg
 x 8
 y 56
 end
@@ -4627,8 +4360,6 @@ x 8
 y 57
 end
 arch blocked
-msg
-endmsg
 x 8
 y 57
 end
@@ -4637,8 +4368,6 @@ x 8
 y 58
 end
 arch blocked
-msg
-endmsg
 x 8
 y 58
 end
@@ -4647,8 +4376,6 @@ x 8
 y 59
 end
 arch blocked
-msg
-endmsg
 x 8
 y 59
 end
@@ -4657,8 +4384,6 @@ x 8
 y 60
 end
 arch blocked
-msg
-endmsg
 x 8
 y 60
 end
@@ -4667,8 +4392,6 @@ x 8
 y 61
 end
 arch blocked
-msg
-endmsg
 x 8
 y 61
 end
@@ -4677,8 +4400,6 @@ x 8
 y 62
 end
 arch blocked
-msg
-endmsg
 x 8
 y 62
 end
@@ -4687,8 +4408,6 @@ x 8
 y 63
 end
 arch blocked
-msg
-endmsg
 x 8
 y 63
 end
@@ -4842,10 +4561,6 @@ arch istone
 x 9
 y 18
 end
-arch polarbear
-x 9
-y 18
-end
 arch istone
 x 9
 y 19
@@ -4863,10 +4578,6 @@ x 9
 y 22
 end
 arch istone
-x 9
-y 23
-end
-arch polarbear
 x 9
 y 23
 end
@@ -5051,8 +4762,6 @@ x 9
 y 52
 end
 arch blocked
-msg
-endmsg
 x 9
 y 52
 end
@@ -5061,8 +4770,6 @@ x 9
 y 53
 end
 arch blocked
-msg
-endmsg
 x 9
 y 53
 end
@@ -5071,8 +4778,6 @@ x 9
 y 54
 end
 arch blocked
-msg
-endmsg
 x 9
 y 54
 end
@@ -5081,8 +4786,6 @@ x 9
 y 55
 end
 arch blocked
-msg
-endmsg
 x 9
 y 55
 end
@@ -5091,8 +4794,6 @@ x 9
 y 56
 end
 arch blocked
-msg
-endmsg
 x 9
 y 56
 end
@@ -5101,8 +4802,6 @@ x 9
 y 57
 end
 arch blocked
-msg
-endmsg
 x 9
 y 57
 end
@@ -5111,8 +4810,6 @@ x 9
 y 58
 end
 arch blocked
-msg
-endmsg
 x 9
 y 58
 end
@@ -5121,8 +4818,6 @@ x 9
 y 59
 end
 arch blocked
-msg
-endmsg
 x 9
 y 59
 end
@@ -5131,8 +4826,6 @@ x 9
 y 60
 end
 arch blocked
-msg
-endmsg
 x 9
 y 60
 end
@@ -5141,8 +4834,6 @@ x 9
 y 61
 end
 arch blocked
-msg
-endmsg
 x 9
 y 61
 end
@@ -5151,8 +4842,6 @@ x 9
 y 62
 end
 arch blocked
-msg
-endmsg
 x 9
 y 62
 end
@@ -5161,8 +4850,6 @@ x 9
 y 63
 end
 arch blocked
-msg
-endmsg
 x 9
 y 63
 end
@@ -5533,8 +5220,6 @@ x 10
 y 52
 end
 arch blocked
-msg
-endmsg
 x 10
 y 52
 end
@@ -5543,8 +5228,6 @@ x 10
 y 53
 end
 arch blocked
-msg
-endmsg
 x 10
 y 53
 end
@@ -5553,8 +5236,6 @@ x 10
 y 54
 end
 arch blocked
-msg
-endmsg
 x 10
 y 54
 end
@@ -5563,8 +5244,6 @@ x 10
 y 55
 end
 arch blocked
-msg
-endmsg
 x 10
 y 55
 end
@@ -5573,8 +5252,6 @@ x 10
 y 56
 end
 arch blocked
-msg
-endmsg
 x 10
 y 56
 end
@@ -5583,8 +5260,6 @@ x 10
 y 57
 end
 arch blocked
-msg
-endmsg
 x 10
 y 57
 end
@@ -5593,8 +5268,6 @@ x 10
 y 58
 end
 arch blocked
-msg
-endmsg
 x 10
 y 58
 end
@@ -5603,8 +5276,6 @@ x 10
 y 59
 end
 arch blocked
-msg
-endmsg
 x 10
 y 59
 end
@@ -5613,8 +5284,6 @@ x 10
 y 60
 end
 arch blocked
-msg
-endmsg
 x 10
 y 60
 end
@@ -5623,8 +5292,6 @@ x 10
 y 61
 end
 arch blocked
-msg
-endmsg
 x 10
 y 61
 end
@@ -5633,8 +5300,6 @@ x 10
 y 62
 end
 arch blocked
-msg
-endmsg
 x 10
 y 62
 end
@@ -5643,8 +5308,6 @@ x 10
 y 63
 end
 arch blocked
-msg
-endmsg
 x 10
 y 63
 end
@@ -6013,8 +5676,6 @@ x 11
 y 52
 end
 arch blocked
-msg
-endmsg
 x 11
 y 52
 end
@@ -6023,8 +5684,6 @@ x 11
 y 53
 end
 arch blocked
-msg
-endmsg
 x 11
 y 53
 end
@@ -6033,8 +5692,6 @@ x 11
 y 54
 end
 arch blocked
-msg
-endmsg
 x 11
 y 54
 end
@@ -6043,8 +5700,6 @@ x 11
 y 55
 end
 arch blocked
-msg
-endmsg
 x 11
 y 55
 end
@@ -6053,8 +5708,6 @@ x 11
 y 56
 end
 arch blocked
-msg
-endmsg
 x 11
 y 56
 end
@@ -6063,8 +5716,6 @@ x 11
 y 57
 end
 arch blocked
-msg
-endmsg
 x 11
 y 57
 end
@@ -6073,8 +5724,6 @@ x 11
 y 58
 end
 arch blocked
-msg
-endmsg
 x 11
 y 58
 end
@@ -6083,8 +5732,6 @@ x 11
 y 59
 end
 arch blocked
-msg
-endmsg
 x 11
 y 59
 end
@@ -6093,8 +5740,6 @@ x 11
 y 60
 end
 arch blocked
-msg
-endmsg
 x 11
 y 60
 end
@@ -6103,8 +5748,6 @@ x 11
 y 61
 end
 arch blocked
-msg
-endmsg
 x 11
 y 61
 end
@@ -6113,8 +5756,6 @@ x 11
 y 62
 end
 arch blocked
-msg
-endmsg
 x 11
 y 62
 end
@@ -6123,8 +5764,6 @@ x 11
 y 63
 end
 arch blocked
-msg
-endmsg
 x 11
 y 63
 end
@@ -6183,10 +5822,6 @@ x 12
 y 6
 end
 arch istone
-x 12
-y 7
-end
-arch polarbear
 x 12
 y 7
 end
@@ -6516,10 +6151,6 @@ arch istone
 x 12
 y 40
 end
-arch polarbear
-x 12
-y 40
-end
 arch istone
 x 12
 y 41
@@ -6573,8 +6204,6 @@ x 12
 y 52
 end
 arch blocked
-msg
-endmsg
 x 12
 y 52
 end
@@ -6583,8 +6212,6 @@ x 12
 y 53
 end
 arch blocked
-msg
-endmsg
 x 12
 y 53
 end
@@ -6593,8 +6220,6 @@ x 12
 y 54
 end
 arch blocked
-msg
-endmsg
 x 12
 y 54
 end
@@ -6603,8 +6228,6 @@ x 12
 y 55
 end
 arch blocked
-msg
-endmsg
 x 12
 y 55
 end
@@ -6613,8 +6236,6 @@ x 12
 y 56
 end
 arch blocked
-msg
-endmsg
 x 12
 y 56
 end
@@ -6623,8 +6244,6 @@ x 12
 y 57
 end
 arch blocked
-msg
-endmsg
 x 12
 y 57
 end
@@ -6633,8 +6252,6 @@ x 12
 y 58
 end
 arch blocked
-msg
-endmsg
 x 12
 y 58
 end
@@ -6643,8 +6260,6 @@ x 12
 y 59
 end
 arch blocked
-msg
-endmsg
 x 12
 y 59
 end
@@ -6653,8 +6268,6 @@ x 12
 y 60
 end
 arch blocked
-msg
-endmsg
 x 12
 y 60
 end
@@ -6663,8 +6276,6 @@ x 12
 y 61
 end
 arch blocked
-msg
-endmsg
 x 12
 y 61
 end
@@ -6673,8 +6284,6 @@ x 12
 y 62
 end
 arch blocked
-msg
-endmsg
 x 12
 y 62
 end
@@ -6683,8 +6292,6 @@ x 12
 y 63
 end
 arch blocked
-msg
-endmsg
 x 12
 y 63
 end
@@ -7119,8 +6726,6 @@ x 13
 y 52
 end
 arch blocked
-msg
-endmsg
 x 13
 y 52
 end
@@ -7129,8 +6734,6 @@ x 13
 y 53
 end
 arch blocked
-msg
-endmsg
 x 13
 y 53
 end
@@ -7139,8 +6742,6 @@ x 13
 y 54
 end
 arch blocked
-msg
-endmsg
 x 13
 y 54
 end
@@ -7149,8 +6750,6 @@ x 13
 y 55
 end
 arch blocked
-msg
-endmsg
 x 13
 y 55
 end
@@ -7159,8 +6758,6 @@ x 13
 y 56
 end
 arch blocked
-msg
-endmsg
 x 13
 y 56
 end
@@ -7169,8 +6766,6 @@ x 13
 y 57
 end
 arch blocked
-msg
-endmsg
 x 13
 y 57
 end
@@ -7179,8 +6774,6 @@ x 13
 y 58
 end
 arch blocked
-msg
-endmsg
 x 13
 y 58
 end
@@ -7189,8 +6782,6 @@ x 13
 y 59
 end
 arch blocked
-msg
-endmsg
 x 13
 y 59
 end
@@ -7199,8 +6790,6 @@ x 13
 y 60
 end
 arch blocked
-msg
-endmsg
 x 13
 y 60
 end
@@ -7209,8 +6798,6 @@ x 13
 y 61
 end
 arch blocked
-msg
-endmsg
 x 13
 y 61
 end
@@ -7219,8 +6806,6 @@ x 13
 y 62
 end
 arch blocked
-msg
-endmsg
 x 13
 y 62
 end
@@ -7229,8 +6814,6 @@ x 13
 y 63
 end
 arch blocked
-msg
-endmsg
 x 13
 y 63
 end
@@ -7580,10 +7163,6 @@ arch istone
 x 14
 y 34
 end
-arch polarbear
-x 14
-y 34
-end
 arch istone
 x 14
 y 35
@@ -7665,8 +7244,6 @@ x 14
 y 52
 end
 arch blocked
-msg
-endmsg
 x 14
 y 52
 end
@@ -7675,8 +7252,6 @@ x 14
 y 53
 end
 arch blocked
-msg
-endmsg
 x 14
 y 53
 end
@@ -7685,8 +7260,6 @@ x 14
 y 54
 end
 arch blocked
-msg
-endmsg
 x 14
 y 54
 end
@@ -7695,8 +7268,6 @@ x 14
 y 55
 end
 arch blocked
-msg
-endmsg
 x 14
 y 55
 end
@@ -7705,8 +7276,6 @@ x 14
 y 56
 end
 arch blocked
-msg
-endmsg
 x 14
 y 56
 end
@@ -7715,8 +7284,6 @@ x 14
 y 57
 end
 arch blocked
-msg
-endmsg
 x 14
 y 57
 end
@@ -7725,8 +7292,6 @@ x 14
 y 58
 end
 arch blocked
-msg
-endmsg
 x 14
 y 58
 end
@@ -7735,8 +7300,6 @@ x 14
 y 59
 end
 arch blocked
-msg
-endmsg
 x 14
 y 59
 end
@@ -7745,8 +7308,6 @@ x 14
 y 60
 end
 arch blocked
-msg
-endmsg
 x 14
 y 60
 end
@@ -7755,8 +7316,6 @@ x 14
 y 61
 end
 arch blocked
-msg
-endmsg
 x 14
 y 61
 end
@@ -7765,8 +7324,6 @@ x 14
 y 62
 end
 arch blocked
-msg
-endmsg
 x 14
 y 62
 end
@@ -7775,8 +7332,6 @@ x 14
 y 63
 end
 arch blocked
-msg
-endmsg
 x 14
 y 63
 end
@@ -8155,8 +7710,6 @@ x 15
 y 52
 end
 arch blocked
-msg
-endmsg
 x 15
 y 52
 end
@@ -8165,8 +7718,6 @@ x 15
 y 53
 end
 arch blocked
-msg
-endmsg
 x 15
 y 53
 end
@@ -8175,8 +7726,6 @@ x 15
 y 54
 end
 arch blocked
-msg
-endmsg
 x 15
 y 54
 end
@@ -8185,8 +7734,6 @@ x 15
 y 55
 end
 arch blocked
-msg
-endmsg
 x 15
 y 55
 end
@@ -8195,8 +7742,6 @@ x 15
 y 56
 end
 arch blocked
-msg
-endmsg
 x 15
 y 56
 end
@@ -8205,8 +7750,6 @@ x 15
 y 57
 end
 arch blocked
-msg
-endmsg
 x 15
 y 57
 end
@@ -8215,8 +7758,6 @@ x 15
 y 58
 end
 arch blocked
-msg
-endmsg
 x 15
 y 58
 end
@@ -8225,8 +7766,6 @@ x 15
 y 59
 end
 arch blocked
-msg
-endmsg
 x 15
 y 59
 end
@@ -8235,8 +7774,6 @@ x 15
 y 60
 end
 arch blocked
-msg
-endmsg
 x 15
 y 60
 end
@@ -8245,8 +7782,6 @@ x 15
 y 61
 end
 arch blocked
-msg
-endmsg
 x 15
 y 61
 end
@@ -8255,8 +7790,6 @@ x 15
 y 62
 end
 arch blocked
-msg
-endmsg
 x 15
 y 62
 end
@@ -8265,8 +7798,6 @@ x 15
 y 63
 end
 arch blocked
-msg
-endmsg
 x 15
 y 63
 end
@@ -8572,10 +8103,6 @@ arch istone
 x 16
 y 45
 end
-arch polarbear
-x 16
-y 45
-end
 arch istone
 x 16
 y 46
@@ -8605,8 +8132,6 @@ x 16
 y 51
 end
 arch blocked
-msg
-endmsg
 x 16
 y 51
 end
@@ -8615,8 +8140,6 @@ x 16
 y 52
 end
 arch blocked
-msg
-endmsg
 x 16
 y 52
 end
@@ -8625,8 +8148,6 @@ x 16
 y 53
 end
 arch blocked
-msg
-endmsg
 x 16
 y 53
 end
@@ -8635,8 +8156,6 @@ x 16
 y 54
 end
 arch blocked
-msg
-endmsg
 x 16
 y 54
 end
@@ -8645,8 +8164,6 @@ x 16
 y 55
 end
 arch blocked
-msg
-endmsg
 x 16
 y 55
 end
@@ -8655,8 +8172,6 @@ x 16
 y 56
 end
 arch blocked
-msg
-endmsg
 x 16
 y 56
 end
@@ -8665,8 +8180,6 @@ x 16
 y 57
 end
 arch blocked
-msg
-endmsg
 x 16
 y 57
 end
@@ -8675,8 +8188,6 @@ x 16
 y 58
 end
 arch blocked
-msg
-endmsg
 x 16
 y 58
 end
@@ -8685,8 +8196,6 @@ x 16
 y 59
 end
 arch blocked
-msg
-endmsg
 x 16
 y 59
 end
@@ -8695,8 +8204,6 @@ x 16
 y 60
 end
 arch blocked
-msg
-endmsg
 x 16
 y 60
 end
@@ -8705,8 +8212,6 @@ x 16
 y 61
 end
 arch blocked
-msg
-endmsg
 x 16
 y 61
 end
@@ -8715,8 +8220,6 @@ x 16
 y 62
 end
 arch blocked
-msg
-endmsg
 x 16
 y 62
 end
@@ -8725,8 +8228,6 @@ x 16
 y 63
 end
 arch blocked
-msg
-endmsg
 x 16
 y 63
 end
@@ -8803,10 +8304,6 @@ x 17
 y 12
 end
 arch istone
-x 17
-y 13
-end
-arch polarbear
 x 17
 y 13
 end
@@ -8944,10 +8441,6 @@ arch istone
 x 17
 y 27
 end
-arch polarbear
-x 17
-y 27
-end
 arch istone
 x 17
 y 28
@@ -8981,10 +8474,6 @@ x 17
 y 35
 end
 arch istone
-x 17
-y 36
-end
-arch polarbear
 x 17
 y 36
 end
@@ -9053,8 +8542,6 @@ x 17
 y 51
 end
 arch blocked
-msg
-endmsg
 x 17
 y 51
 end
@@ -9063,8 +8550,6 @@ x 17
 y 52
 end
 arch blocked
-msg
-endmsg
 x 17
 y 52
 end
@@ -9073,8 +8558,6 @@ x 17
 y 53
 end
 arch blocked
-msg
-endmsg
 x 17
 y 53
 end
@@ -9083,8 +8566,6 @@ x 17
 y 54
 end
 arch blocked
-msg
-endmsg
 x 17
 y 54
 end
@@ -9093,8 +8574,6 @@ x 17
 y 55
 end
 arch blocked
-msg
-endmsg
 x 17
 y 55
 end
@@ -9103,8 +8582,6 @@ x 17
 y 56
 end
 arch blocked
-msg
-endmsg
 x 17
 y 56
 end
@@ -9113,8 +8590,6 @@ x 17
 y 57
 end
 arch blocked
-msg
-endmsg
 x 17
 y 57
 end
@@ -9123,8 +8598,6 @@ x 17
 y 58
 end
 arch blocked
-msg
-endmsg
 x 17
 y 58
 end
@@ -9133,8 +8606,6 @@ x 17
 y 59
 end
 arch blocked
-msg
-endmsg
 x 17
 y 59
 end
@@ -9143,8 +8614,6 @@ x 17
 y 60
 end
 arch blocked
-msg
-endmsg
 x 17
 y 60
 end
@@ -9153,8 +8622,6 @@ x 17
 y 61
 end
 arch blocked
-msg
-endmsg
 x 17
 y 61
 end
@@ -9163,8 +8630,6 @@ x 17
 y 62
 end
 arch blocked
-msg
-endmsg
 x 17
 y 62
 end
@@ -9173,8 +8638,6 @@ x 17
 y 63
 end
 arch blocked
-msg
-endmsg
 x 17
 y 63
 end
@@ -9213,10 +8676,6 @@ x 18
 y 7
 end
 arch istone
-x 18
-y 8
-end
-arch polarbear
 x 18
 y 8
 end
@@ -9508,8 +8967,6 @@ x 18
 y 51
 end
 arch blocked
-msg
-endmsg
 x 18
 y 51
 end
@@ -9518,8 +8975,6 @@ x 18
 y 52
 end
 arch blocked
-msg
-endmsg
 x 18
 y 52
 end
@@ -9528,8 +8983,6 @@ x 18
 y 53
 end
 arch blocked
-msg
-endmsg
 x 18
 y 53
 end
@@ -9538,8 +8991,6 @@ x 18
 y 54
 end
 arch blocked
-msg
-endmsg
 x 18
 y 54
 end
@@ -9548,8 +8999,6 @@ x 18
 y 55
 end
 arch blocked
-msg
-endmsg
 x 18
 y 55
 end
@@ -9558,8 +9007,6 @@ x 18
 y 56
 end
 arch blocked
-msg
-endmsg
 x 18
 y 56
 end
@@ -9568,8 +9015,6 @@ x 18
 y 57
 end
 arch blocked
-msg
-endmsg
 x 18
 y 57
 end
@@ -9578,8 +9023,6 @@ x 18
 y 58
 end
 arch blocked
-msg
-endmsg
 x 18
 y 58
 end
@@ -9588,8 +9031,6 @@ x 18
 y 59
 end
 arch blocked
-msg
-endmsg
 x 18
 y 59
 end
@@ -9598,8 +9039,6 @@ x 18
 y 60
 end
 arch blocked
-msg
-endmsg
 x 18
 y 60
 end
@@ -9608,8 +9047,6 @@ x 18
 y 61
 end
 arch blocked
-msg
-endmsg
 x 18
 y 61
 end
@@ -9618,8 +9055,6 @@ x 18
 y 62
 end
 arch blocked
-msg
-endmsg
 x 18
 y 62
 end
@@ -9628,8 +9063,6 @@ x 18
 y 63
 end
 arch blocked
-msg
-endmsg
 x 18
 y 63
 end
@@ -10023,8 +9456,6 @@ x 19
 y 51
 end
 arch blocked
-msg
-endmsg
 x 19
 y 51
 end
@@ -10033,8 +9464,6 @@ x 19
 y 52
 end
 arch blocked
-msg
-endmsg
 x 19
 y 52
 end
@@ -10043,8 +9472,6 @@ x 19
 y 53
 end
 arch blocked
-msg
-endmsg
 x 19
 y 53
 end
@@ -10053,8 +9480,6 @@ x 19
 y 54
 end
 arch blocked
-msg
-endmsg
 x 19
 y 54
 end
@@ -10063,8 +9488,6 @@ x 19
 y 55
 end
 arch blocked
-msg
-endmsg
 x 19
 y 55
 end
@@ -10073,8 +9496,6 @@ x 19
 y 56
 end
 arch blocked
-msg
-endmsg
 x 19
 y 56
 end
@@ -10083,8 +9504,6 @@ x 19
 y 57
 end
 arch blocked
-msg
-endmsg
 x 19
 y 57
 end
@@ -10093,8 +9512,6 @@ x 19
 y 58
 end
 arch blocked
-msg
-endmsg
 x 19
 y 58
 end
@@ -10103,8 +9520,6 @@ x 19
 y 59
 end
 arch blocked
-msg
-endmsg
 x 19
 y 59
 end
@@ -10113,8 +9528,6 @@ x 19
 y 60
 end
 arch blocked
-msg
-endmsg
 x 19
 y 60
 end
@@ -10123,8 +9536,6 @@ x 19
 y 61
 end
 arch blocked
-msg
-endmsg
 x 19
 y 61
 end
@@ -10133,8 +9544,6 @@ x 19
 y 62
 end
 arch blocked
-msg
-endmsg
 x 19
 y 62
 end
@@ -10143,8 +9552,6 @@ x 19
 y 63
 end
 arch blocked
-msg
-endmsg
 x 19
 y 63
 end
@@ -10175,10 +9582,6 @@ x 20
 y 5
 end
 arch istone
-x 20
-y 6
-end
-arch polarbear
 x 20
 y 6
 end
@@ -10502,10 +9905,6 @@ arch istone
 x 20
 y 39
 end
-arch polarbear
-x 20
-y 39
-end
 arch istone
 x 20
 y 40
@@ -10559,8 +9958,6 @@ x 20
 y 51
 end
 arch blocked
-msg
-endmsg
 x 20
 y 51
 end
@@ -10569,8 +9966,6 @@ x 20
 y 52
 end
 arch blocked
-msg
-endmsg
 x 20
 y 52
 end
@@ -10579,8 +9974,6 @@ x 20
 y 53
 end
 arch blocked
-msg
-endmsg
 x 20
 y 53
 end
@@ -10589,8 +9982,6 @@ x 20
 y 54
 end
 arch blocked
-msg
-endmsg
 x 20
 y 54
 end
@@ -10599,8 +9990,6 @@ x 20
 y 55
 end
 arch blocked
-msg
-endmsg
 x 20
 y 55
 end
@@ -10609,8 +9998,6 @@ x 20
 y 56
 end
 arch blocked
-msg
-endmsg
 x 20
 y 56
 end
@@ -10619,8 +10006,6 @@ x 20
 y 57
 end
 arch blocked
-msg
-endmsg
 x 20
 y 57
 end
@@ -10629,8 +10014,6 @@ x 20
 y 58
 end
 arch blocked
-msg
-endmsg
 x 20
 y 58
 end
@@ -10639,8 +10022,6 @@ x 20
 y 59
 end
 arch blocked
-msg
-endmsg
 x 20
 y 59
 end
@@ -10649,8 +10030,6 @@ x 20
 y 60
 end
 arch blocked
-msg
-endmsg
 x 20
 y 60
 end
@@ -10659,8 +10038,6 @@ x 20
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 61
 end
@@ -10669,8 +10046,6 @@ x 20
 y 62
 end
 arch blocked
-msg
-endmsg
 x 20
 y 62
 end
@@ -10679,8 +10054,6 @@ x 20
 y 63
 end
 arch blocked
-msg
-endmsg
 x 20
 y 63
 end
@@ -11020,10 +10393,6 @@ arch istone
 x 21
 y 30
 end
-arch polarbear
-x 21
-y 30
-end
 arch istone
 x 21
 y 31
@@ -11117,8 +10486,6 @@ x 21
 y 51
 end
 arch blocked
-msg
-endmsg
 x 21
 y 51
 end
@@ -11127,8 +10494,6 @@ x 21
 y 52
 end
 arch blocked
-msg
-endmsg
 x 21
 y 52
 end
@@ -11137,8 +10502,6 @@ x 21
 y 53
 end
 arch blocked
-msg
-endmsg
 x 21
 y 53
 end
@@ -11147,8 +10510,6 @@ x 21
 y 54
 end
 arch blocked
-msg
-endmsg
 x 21
 y 54
 end
@@ -11157,8 +10518,6 @@ x 21
 y 55
 end
 arch blocked
-msg
-endmsg
 x 21
 y 55
 end
@@ -11167,8 +10526,6 @@ x 21
 y 56
 end
 arch blocked
-msg
-endmsg
 x 21
 y 56
 end
@@ -11177,8 +10534,6 @@ x 21
 y 57
 end
 arch blocked
-msg
-endmsg
 x 21
 y 57
 end
@@ -11187,8 +10542,6 @@ x 21
 y 58
 end
 arch blocked
-msg
-endmsg
 x 21
 y 58
 end
@@ -11197,8 +10550,6 @@ x 21
 y 59
 end
 arch blocked
-msg
-endmsg
 x 21
 y 59
 end
@@ -11207,8 +10558,6 @@ x 21
 y 60
 end
 arch blocked
-msg
-endmsg
 x 21
 y 60
 end
@@ -11217,8 +10566,6 @@ x 21
 y 61
 end
 arch blocked
-msg
-endmsg
 x 21
 y 61
 end
@@ -11227,8 +10574,6 @@ x 21
 y 62
 end
 arch blocked
-msg
-endmsg
 x 21
 y 62
 end
@@ -11237,8 +10582,6 @@ x 21
 y 63
 end
 arch blocked
-msg
-endmsg
 x 21
 y 63
 end
@@ -11586,10 +10929,6 @@ arch istone
 x 22
 y 34
 end
-arch polarbear
-x 22
-y 34
-end
 arch istone
 x 22
 y 35
@@ -11663,8 +11002,6 @@ x 22
 y 50
 end
 arch blocked
-msg
-endmsg
 x 22
 y 50
 end
@@ -11673,8 +11010,6 @@ x 22
 y 51
 end
 arch blocked
-msg
-endmsg
 x 22
 y 51
 end
@@ -11683,8 +11018,6 @@ x 22
 y 52
 end
 arch blocked
-msg
-endmsg
 x 22
 y 52
 end
@@ -11693,8 +11026,6 @@ x 22
 y 53
 end
 arch blocked
-msg
-endmsg
 x 22
 y 53
 end
@@ -11703,8 +11034,6 @@ x 22
 y 54
 end
 arch blocked
-msg
-endmsg
 x 22
 y 54
 end
@@ -11713,8 +11042,6 @@ x 22
 y 55
 end
 arch blocked
-msg
-endmsg
 x 22
 y 55
 end
@@ -11723,8 +11050,6 @@ x 22
 y 56
 end
 arch blocked
-msg
-endmsg
 x 22
 y 56
 end
@@ -11733,8 +11058,6 @@ x 22
 y 57
 end
 arch blocked
-msg
-endmsg
 x 22
 y 57
 end
@@ -11743,8 +11066,6 @@ x 22
 y 58
 end
 arch blocked
-msg
-endmsg
 x 22
 y 58
 end
@@ -11753,8 +11074,6 @@ x 22
 y 59
 end
 arch blocked
-msg
-endmsg
 x 22
 y 59
 end
@@ -11763,8 +11082,6 @@ x 22
 y 60
 end
 arch blocked
-msg
-endmsg
 x 22
 y 60
 end
@@ -11773,8 +11090,6 @@ x 22
 y 61
 end
 arch blocked
-msg
-endmsg
 x 22
 y 61
 end
@@ -11783,8 +11098,6 @@ x 22
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 62
 end
@@ -11793,8 +11106,6 @@ x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
@@ -12225,8 +11536,6 @@ x 23
 y 50
 end
 arch blocked
-msg
-endmsg
 x 23
 y 50
 end
@@ -12235,8 +11544,6 @@ x 23
 y 51
 end
 arch blocked
-msg
-endmsg
 x 23
 y 51
 end
@@ -12245,8 +11552,6 @@ x 23
 y 52
 end
 arch blocked
-msg
-endmsg
 x 23
 y 52
 end
@@ -12255,8 +11560,6 @@ x 23
 y 53
 end
 arch blocked
-msg
-endmsg
 x 23
 y 53
 end
@@ -12265,8 +11568,6 @@ x 23
 y 54
 end
 arch blocked
-msg
-endmsg
 x 23
 y 54
 end
@@ -12275,8 +11576,6 @@ x 23
 y 55
 end
 arch blocked
-msg
-endmsg
 x 23
 y 55
 end
@@ -12285,8 +11584,6 @@ x 23
 y 56
 end
 arch blocked
-msg
-endmsg
 x 23
 y 56
 end
@@ -12295,8 +11592,6 @@ x 23
 y 57
 end
 arch blocked
-msg
-endmsg
 x 23
 y 57
 end
@@ -12305,8 +11600,6 @@ x 23
 y 58
 end
 arch blocked
-msg
-endmsg
 x 23
 y 58
 end
@@ -12315,8 +11608,6 @@ x 23
 y 59
 end
 arch blocked
-msg
-endmsg
 x 23
 y 59
 end
@@ -12325,8 +11616,6 @@ x 23
 y 60
 end
 arch blocked
-msg
-endmsg
 x 23
 y 60
 end
@@ -12335,8 +11624,6 @@ x 23
 y 61
 end
 arch blocked
-msg
-endmsg
 x 23
 y 61
 end
@@ -12345,8 +11632,6 @@ x 23
 y 62
 end
 arch blocked
-msg
-endmsg
 x 23
 y 62
 end
@@ -12355,8 +11640,6 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 63
 end
@@ -12666,10 +11949,6 @@ arch istone
 x 24
 y 39
 end
-arch polarbear
-x 24
-y 39
-end
 arch istone
 x 24
 y 40
@@ -12723,8 +12002,6 @@ x 24
 y 50
 end
 arch blocked
-msg
-endmsg
 x 24
 y 50
 end
@@ -12733,8 +12010,6 @@ x 24
 y 51
 end
 arch blocked
-msg
-endmsg
 x 24
 y 51
 end
@@ -12743,8 +12018,6 @@ x 24
 y 52
 end
 arch blocked
-msg
-endmsg
 x 24
 y 52
 end
@@ -12753,8 +12026,6 @@ x 24
 y 53
 end
 arch blocked
-msg
-endmsg
 x 24
 y 53
 end
@@ -12763,8 +12034,6 @@ x 24
 y 54
 end
 arch blocked
-msg
-endmsg
 x 24
 y 54
 end
@@ -12773,8 +12042,6 @@ x 24
 y 55
 end
 arch blocked
-msg
-endmsg
 x 24
 y 55
 end
@@ -12783,8 +12050,6 @@ x 24
 y 56
 end
 arch blocked
-msg
-endmsg
 x 24
 y 56
 end
@@ -12793,8 +12058,6 @@ x 24
 y 57
 end
 arch blocked
-msg
-endmsg
 x 24
 y 57
 end
@@ -12803,8 +12066,6 @@ x 24
 y 58
 end
 arch blocked
-msg
-endmsg
 x 24
 y 58
 end
@@ -12813,8 +12074,6 @@ x 24
 y 59
 end
 arch blocked
-msg
-endmsg
 x 24
 y 59
 end
@@ -12823,8 +12082,6 @@ x 24
 y 60
 end
 arch blocked
-msg
-endmsg
 x 24
 y 60
 end
@@ -12833,8 +12090,6 @@ x 24
 y 61
 end
 arch blocked
-msg
-endmsg
 x 24
 y 61
 end
@@ -12843,8 +12098,6 @@ x 24
 y 62
 end
 arch blocked
-msg
-endmsg
 x 24
 y 62
 end
@@ -12853,8 +12106,6 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 63
 end
@@ -13128,10 +12379,6 @@ arch istone
 x 25
 y 44
 end
-arch polarbear
-x 25
-y 44
-end
 arch istone
 x 25
 y 45
@@ -13161,8 +12408,6 @@ x 25
 y 50
 end
 arch blocked
-msg
-endmsg
 x 25
 y 50
 end
@@ -13171,8 +12416,6 @@ x 25
 y 51
 end
 arch blocked
-msg
-endmsg
 x 25
 y 51
 end
@@ -13181,8 +12424,6 @@ x 25
 y 52
 end
 arch blocked
-msg
-endmsg
 x 25
 y 52
 end
@@ -13191,8 +12432,6 @@ x 25
 y 53
 end
 arch blocked
-msg
-endmsg
 x 25
 y 53
 end
@@ -13201,8 +12440,6 @@ x 25
 y 54
 end
 arch blocked
-msg
-endmsg
 x 25
 y 54
 end
@@ -13211,8 +12448,6 @@ x 25
 y 55
 end
 arch blocked
-msg
-endmsg
 x 25
 y 55
 end
@@ -13221,8 +12456,6 @@ x 25
 y 56
 end
 arch blocked
-msg
-endmsg
 x 25
 y 56
 end
@@ -13231,8 +12464,6 @@ x 25
 y 57
 end
 arch blocked
-msg
-endmsg
 x 25
 y 57
 end
@@ -13241,8 +12472,6 @@ x 25
 y 58
 end
 arch blocked
-msg
-endmsg
 x 25
 y 58
 end
@@ -13251,8 +12480,6 @@ x 25
 y 59
 end
 arch blocked
-msg
-endmsg
 x 25
 y 59
 end
@@ -13261,8 +12488,6 @@ x 25
 y 60
 end
 arch blocked
-msg
-endmsg
 x 25
 y 60
 end
@@ -13271,8 +12496,6 @@ x 25
 y 61
 end
 arch blocked
-msg
-endmsg
 x 25
 y 61
 end
@@ -13281,8 +12504,6 @@ x 25
 y 62
 end
 arch blocked
-msg
-endmsg
 x 25
 y 62
 end
@@ -13291,8 +12512,6 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 63
 end
@@ -13621,8 +12840,6 @@ x 26
 y 51
 end
 arch blocked
-msg
-endmsg
 x 26
 y 51
 end
@@ -13631,8 +12848,6 @@ x 26
 y 52
 end
 arch blocked
-msg
-endmsg
 x 26
 y 52
 end
@@ -13641,8 +12856,6 @@ x 26
 y 53
 end
 arch blocked
-msg
-endmsg
 x 26
 y 53
 end
@@ -13651,8 +12864,6 @@ x 26
 y 54
 end
 arch blocked
-msg
-endmsg
 x 26
 y 54
 end
@@ -13661,8 +12872,6 @@ x 26
 y 55
 end
 arch blocked
-msg
-endmsg
 x 26
 y 55
 end
@@ -13671,8 +12880,6 @@ x 26
 y 56
 end
 arch blocked
-msg
-endmsg
 x 26
 y 56
 end
@@ -13681,8 +12888,6 @@ x 26
 y 57
 end
 arch blocked
-msg
-endmsg
 x 26
 y 57
 end
@@ -13691,8 +12896,6 @@ x 26
 y 58
 end
 arch blocked
-msg
-endmsg
 x 26
 y 58
 end
@@ -13701,8 +12904,6 @@ x 26
 y 59
 end
 arch blocked
-msg
-endmsg
 x 26
 y 59
 end
@@ -13711,8 +12912,6 @@ x 26
 y 60
 end
 arch blocked
-msg
-endmsg
 x 26
 y 60
 end
@@ -13721,8 +12920,6 @@ x 26
 y 61
 end
 arch blocked
-msg
-endmsg
 x 26
 y 61
 end
@@ -13731,8 +12928,6 @@ x 26
 y 62
 end
 arch blocked
-msg
-endmsg
 x 26
 y 62
 end
@@ -13741,8 +12936,6 @@ x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 63
 end
@@ -14085,8 +13278,6 @@ x 27
 y 52
 end
 arch blocked
-msg
-endmsg
 x 27
 y 52
 end
@@ -14095,8 +13286,6 @@ x 27
 y 53
 end
 arch blocked
-msg
-endmsg
 x 27
 y 53
 end
@@ -14105,8 +13294,6 @@ x 27
 y 54
 end
 arch blocked
-msg
-endmsg
 x 27
 y 54
 end
@@ -14115,8 +13302,6 @@ x 27
 y 55
 end
 arch blocked
-msg
-endmsg
 x 27
 y 55
 end
@@ -14125,8 +13310,6 @@ x 27
 y 56
 end
 arch blocked
-msg
-endmsg
 x 27
 y 56
 end
@@ -14135,8 +13318,6 @@ x 27
 y 57
 end
 arch blocked
-msg
-endmsg
 x 27
 y 57
 end
@@ -14145,8 +13326,6 @@ x 27
 y 58
 end
 arch blocked
-msg
-endmsg
 x 27
 y 58
 end
@@ -14155,8 +13334,6 @@ x 27
 y 59
 end
 arch blocked
-msg
-endmsg
 x 27
 y 59
 end
@@ -14165,8 +13342,6 @@ x 27
 y 60
 end
 arch blocked
-msg
-endmsg
 x 27
 y 60
 end
@@ -14175,8 +13350,6 @@ x 27
 y 61
 end
 arch blocked
-msg
-endmsg
 x 27
 y 61
 end
@@ -14185,8 +13358,6 @@ x 27
 y 62
 end
 arch blocked
-msg
-endmsg
 x 27
 y 62
 end
@@ -14195,8 +13366,6 @@ x 27
 y 63
 end
 arch blocked
-msg
-endmsg
 x 27
 y 63
 end
@@ -14352,10 +13521,6 @@ arch istone
 x 28
 y 30
 end
-arch polarbear
-x 28
-y 30
-end
 arch istone
 x 28
 y 31
@@ -14545,8 +13710,6 @@ x 28
 y 52
 end
 arch blocked
-msg
-endmsg
 x 28
 y 52
 end
@@ -14555,8 +13718,6 @@ x 28
 y 53
 end
 arch blocked
-msg
-endmsg
 x 28
 y 53
 end
@@ -14565,8 +13726,6 @@ x 28
 y 54
 end
 arch blocked
-msg
-endmsg
 x 28
 y 54
 end
@@ -14575,8 +13734,6 @@ x 28
 y 55
 end
 arch blocked
-msg
-endmsg
 x 28
 y 55
 end
@@ -14585,8 +13742,6 @@ x 28
 y 56
 end
 arch blocked
-msg
-endmsg
 x 28
 y 56
 end
@@ -14595,8 +13750,6 @@ x 28
 y 57
 end
 arch blocked
-msg
-endmsg
 x 28
 y 57
 end
@@ -14605,8 +13758,6 @@ x 28
 y 58
 end
 arch blocked
-msg
-endmsg
 x 28
 y 58
 end
@@ -14615,8 +13766,6 @@ x 28
 y 59
 end
 arch blocked
-msg
-endmsg
 x 28
 y 59
 end
@@ -14625,8 +13774,6 @@ x 28
 y 60
 end
 arch blocked
-msg
-endmsg
 x 28
 y 60
 end
@@ -14635,8 +13782,6 @@ x 28
 y 61
 end
 arch blocked
-msg
-endmsg
 x 28
 y 61
 end
@@ -14645,8 +13790,6 @@ x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 62
 end
@@ -14655,8 +13798,6 @@ x 28
 y 63
 end
 arch blocked
-msg
-endmsg
 x 28
 y 63
 end
@@ -15031,8 +14172,6 @@ x 29
 y 52
 end
 arch blocked
-msg
-endmsg
 x 29
 y 52
 end
@@ -15041,8 +14180,6 @@ x 29
 y 53
 end
 arch blocked
-msg
-endmsg
 x 29
 y 53
 end
@@ -15051,8 +14188,6 @@ x 29
 y 54
 end
 arch blocked
-msg
-endmsg
 x 29
 y 54
 end
@@ -15061,8 +14196,6 @@ x 29
 y 55
 end
 arch blocked
-msg
-endmsg
 x 29
 y 55
 end
@@ -15071,8 +14204,6 @@ x 29
 y 56
 end
 arch blocked
-msg
-endmsg
 x 29
 y 56
 end
@@ -15081,8 +14212,6 @@ x 29
 y 57
 end
 arch blocked
-msg
-endmsg
 x 29
 y 57
 end
@@ -15091,8 +14220,6 @@ x 29
 y 58
 end
 arch blocked
-msg
-endmsg
 x 29
 y 58
 end
@@ -15101,8 +14228,6 @@ x 29
 y 59
 end
 arch blocked
-msg
-endmsg
 x 29
 y 59
 end
@@ -15111,8 +14236,6 @@ x 29
 y 60
 end
 arch blocked
-msg
-endmsg
 x 29
 y 60
 end
@@ -15121,8 +14244,6 @@ x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 29
 y 61
 end
@@ -15131,8 +14252,6 @@ x 29
 y 62
 end
 arch blocked
-msg
-endmsg
 x 29
 y 62
 end
@@ -15141,8 +14260,6 @@ x 29
 y 63
 end
 arch blocked
-msg
-endmsg
 x 29
 y 63
 end
@@ -15545,8 +14662,6 @@ x 30
 y 52
 end
 arch blocked
-msg
-endmsg
 x 30
 y 52
 end
@@ -15555,8 +14670,6 @@ x 30
 y 53
 end
 arch blocked
-msg
-endmsg
 x 30
 y 53
 end
@@ -15565,8 +14678,6 @@ x 30
 y 54
 end
 arch blocked
-msg
-endmsg
 x 30
 y 54
 end
@@ -15575,8 +14686,6 @@ x 30
 y 55
 end
 arch blocked
-msg
-endmsg
 x 30
 y 55
 end
@@ -15585,8 +14694,6 @@ x 30
 y 56
 end
 arch blocked
-msg
-endmsg
 x 30
 y 56
 end
@@ -15595,8 +14702,6 @@ x 30
 y 57
 end
 arch blocked
-msg
-endmsg
 x 30
 y 57
 end
@@ -15605,8 +14710,6 @@ x 30
 y 58
 end
 arch blocked
-msg
-endmsg
 x 30
 y 58
 end
@@ -15615,8 +14718,6 @@ x 30
 y 59
 end
 arch blocked
-msg
-endmsg
 x 30
 y 59
 end
@@ -15625,8 +14726,6 @@ x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 60
 end
@@ -15635,8 +14734,6 @@ x 30
 y 61
 end
 arch blocked
-msg
-endmsg
 x 30
 y 61
 end
@@ -15645,8 +14742,6 @@ x 30
 y 62
 end
 arch blocked
-msg
-endmsg
 x 30
 y 62
 end
@@ -15655,8 +14750,6 @@ x 30
 y 63
 end
 arch blocked
-msg
-endmsg
 x 30
 y 63
 end
@@ -16125,32 +15218,22 @@ x 31
 y 58
 end
 arch blocked
-msg
-endmsg
 x 31
 y 59
 end
 arch blocked
-msg
-endmsg
 x 31
 y 60
 end
 arch blocked
-msg
-endmsg
 x 31
 y 61
 end
 arch blocked
-msg
-endmsg
 x 31
 y 62
 end
 arch blocked
-msg
-endmsg
 x 31
 y 63
 end
@@ -16419,10 +15502,6 @@ x 32
 y 37
 end
 arch istone
-x 32
-y 38
-end
-arch polarbear
 x 32
 y 38
 end
@@ -16785,14 +15864,10 @@ y 61
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 32
 y 62
 end
 arch blocked
-msg
-endmsg
 x 32
 y 63
 end
@@ -17369,8 +16444,6 @@ y 62
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 33
 y 63
 end
@@ -17592,10 +16665,6 @@ arch istone
 x 34
 y 35
 end
-arch polarbear
-x 34
-y 35
-end
 arch istone
 x 34
 y 36
@@ -17613,10 +16682,6 @@ x 34
 y 39
 end
 arch istone
-x 34
-y 40
-end
-arch polarbear
 x 34
 y 40
 end
@@ -18221,38 +17286,26 @@ x 35
 y 57
 end
 arch blocked
-msg
-endmsg
 x 35
 y 58
 end
 arch blocked
-msg
-endmsg
 x 35
 y 59
 end
 arch blocked
-msg
-endmsg
 x 35
 y 60
 end
 arch blocked
-msg
-endmsg
 x 35
 y 61
 end
 arch blocked
-msg
-endmsg
 x 35
 y 62
 end
 arch blocked
-msg
-endmsg
 x 35
 y 63
 end
@@ -18516,10 +17569,6 @@ arch istone
 x 36
 y 43
 end
-arch polarbear
-x 36
-y 43
-end
 arch istone
 x 36
 y 44
@@ -18565,8 +17614,6 @@ x 36
 y 51
 end
 arch blocked
-msg
-endmsg
 x 36
 y 51
 end
@@ -18575,8 +17622,6 @@ x 36
 y 52
 end
 arch blocked
-msg
-endmsg
 x 36
 y 52
 end
@@ -18585,8 +17630,6 @@ x 36
 y 53
 end
 arch blocked
-msg
-endmsg
 x 36
 y 53
 end
@@ -18595,8 +17638,6 @@ x 36
 y 54
 end
 arch blocked
-msg
-endmsg
 x 36
 y 54
 end
@@ -18605,8 +17646,6 @@ x 36
 y 55
 end
 arch blocked
-msg
-endmsg
 x 36
 y 55
 end
@@ -18615,8 +17654,6 @@ x 36
 y 56
 end
 arch blocked
-msg
-endmsg
 x 36
 y 56
 end
@@ -18625,8 +17662,6 @@ x 36
 y 57
 end
 arch blocked
-msg
-endmsg
 x 36
 y 57
 end
@@ -18635,8 +17670,6 @@ x 36
 y 58
 end
 arch blocked
-msg
-endmsg
 x 36
 y 58
 end
@@ -18645,8 +17678,6 @@ x 36
 y 59
 end
 arch blocked
-msg
-endmsg
 x 36
 y 59
 end
@@ -18655,8 +17686,6 @@ x 36
 y 60
 end
 arch blocked
-msg
-endmsg
 x 36
 y 60
 end
@@ -18665,8 +17694,6 @@ x 36
 y 61
 end
 arch blocked
-msg
-endmsg
 x 36
 y 61
 end
@@ -18675,8 +17702,6 @@ x 36
 y 62
 end
 arch blocked
-msg
-endmsg
 x 36
 y 62
 end
@@ -18685,8 +17710,6 @@ x 36
 y 63
 end
 arch blocked
-msg
-endmsg
 x 36
 y 63
 end
@@ -18993,8 +18016,6 @@ x 37
 y 50
 end
 arch blocked
-msg
-endmsg
 x 37
 y 50
 end
@@ -19003,8 +18024,6 @@ x 37
 y 51
 end
 arch blocked
-msg
-endmsg
 x 37
 y 51
 end
@@ -19013,8 +18032,6 @@ x 37
 y 52
 end
 arch blocked
-msg
-endmsg
 x 37
 y 52
 end
@@ -19023,8 +18040,6 @@ x 37
 y 53
 end
 arch blocked
-msg
-endmsg
 x 37
 y 53
 end
@@ -19033,8 +18048,6 @@ x 37
 y 54
 end
 arch blocked
-msg
-endmsg
 x 37
 y 54
 end
@@ -19043,8 +18056,6 @@ x 37
 y 55
 end
 arch blocked
-msg
-endmsg
 x 37
 y 55
 end
@@ -19053,8 +18064,6 @@ x 37
 y 56
 end
 arch blocked
-msg
-endmsg
 x 37
 y 56
 end
@@ -19063,8 +18072,6 @@ x 37
 y 57
 end
 arch blocked
-msg
-endmsg
 x 37
 y 57
 end
@@ -19073,8 +18080,6 @@ x 37
 y 58
 end
 arch blocked
-msg
-endmsg
 x 37
 y 58
 end
@@ -19083,8 +18088,6 @@ x 37
 y 59
 end
 arch blocked
-msg
-endmsg
 x 37
 y 59
 end
@@ -19093,8 +18096,6 @@ x 37
 y 60
 end
 arch blocked
-msg
-endmsg
 x 37
 y 60
 end
@@ -19103,8 +18104,6 @@ x 37
 y 61
 end
 arch blocked
-msg
-endmsg
 x 37
 y 61
 end
@@ -19113,8 +18112,6 @@ x 37
 y 62
 end
 arch blocked
-msg
-endmsg
 x 37
 y 62
 end
@@ -19123,8 +18120,6 @@ x 37
 y 63
 end
 arch blocked
-msg
-endmsg
 x 37
 y 63
 end
@@ -19465,8 +18460,6 @@ x 38
 y 50
 end
 arch blocked
-msg
-endmsg
 x 38
 y 50
 end
@@ -19475,8 +18468,6 @@ x 38
 y 51
 end
 arch blocked
-msg
-endmsg
 x 38
 y 51
 end
@@ -19485,8 +18476,6 @@ x 38
 y 52
 end
 arch blocked
-msg
-endmsg
 x 38
 y 52
 end
@@ -19495,8 +18484,6 @@ x 38
 y 53
 end
 arch blocked
-msg
-endmsg
 x 38
 y 53
 end
@@ -19505,8 +18492,6 @@ x 38
 y 54
 end
 arch blocked
-msg
-endmsg
 x 38
 y 54
 end
@@ -19515,8 +18500,6 @@ x 38
 y 55
 end
 arch blocked
-msg
-endmsg
 x 38
 y 55
 end
@@ -19525,8 +18508,6 @@ x 38
 y 56
 end
 arch blocked
-msg
-endmsg
 x 38
 y 56
 end
@@ -19535,8 +18516,6 @@ x 38
 y 57
 end
 arch blocked
-msg
-endmsg
 x 38
 y 57
 end
@@ -19545,8 +18524,6 @@ x 38
 y 58
 end
 arch blocked
-msg
-endmsg
 x 38
 y 58
 end
@@ -19555,8 +18532,6 @@ x 38
 y 59
 end
 arch blocked
-msg
-endmsg
 x 38
 y 59
 end
@@ -19565,8 +18540,6 @@ x 38
 y 60
 end
 arch blocked
-msg
-endmsg
 x 38
 y 60
 end
@@ -19575,8 +18548,6 @@ x 38
 y 61
 end
 arch blocked
-msg
-endmsg
 x 38
 y 61
 end
@@ -19585,8 +18556,6 @@ x 38
 y 62
 end
 arch blocked
-msg
-endmsg
 x 38
 y 62
 end
@@ -19595,8 +18564,6 @@ x 38
 y 63
 end
 arch blocked
-msg
-endmsg
 x 38
 y 63
 end
@@ -19897,8 +18864,6 @@ x 39
 y 42
 end
 arch blocked
-msg
-endmsg
 x 39
 y 42
 end
@@ -19911,8 +18876,6 @@ x 39
 y 43
 end
 arch blocked
-msg
-endmsg
 x 39
 y 43
 end
@@ -19961,8 +18924,6 @@ x 39
 y 50
 end
 arch blocked
-msg
-endmsg
 x 39
 y 50
 end
@@ -19971,8 +18932,6 @@ x 39
 y 51
 end
 arch blocked
-msg
-endmsg
 x 39
 y 51
 end
@@ -19981,8 +18940,6 @@ x 39
 y 52
 end
 arch blocked
-msg
-endmsg
 x 39
 y 52
 end
@@ -19991,8 +18948,6 @@ x 39
 y 53
 end
 arch blocked
-msg
-endmsg
 x 39
 y 53
 end
@@ -20001,8 +18956,6 @@ x 39
 y 54
 end
 arch blocked
-msg
-endmsg
 x 39
 y 54
 end
@@ -20011,8 +18964,6 @@ x 39
 y 55
 end
 arch blocked
-msg
-endmsg
 x 39
 y 55
 end
@@ -20021,8 +18972,6 @@ x 39
 y 56
 end
 arch blocked
-msg
-endmsg
 x 39
 y 56
 end
@@ -20031,8 +18980,6 @@ x 39
 y 57
 end
 arch blocked
-msg
-endmsg
 x 39
 y 57
 end
@@ -20041,8 +18988,6 @@ x 39
 y 58
 end
 arch blocked
-msg
-endmsg
 x 39
 y 58
 end
@@ -20051,8 +18996,6 @@ x 39
 y 59
 end
 arch blocked
-msg
-endmsg
 x 39
 y 59
 end
@@ -20061,8 +19004,6 @@ x 39
 y 60
 end
 arch blocked
-msg
-endmsg
 x 39
 y 60
 end
@@ -20071,8 +19012,6 @@ x 39
 y 61
 end
 arch blocked
-msg
-endmsg
 x 39
 y 61
 end
@@ -20081,8 +19020,6 @@ x 39
 y 62
 end
 arch blocked
-msg
-endmsg
 x 39
 y 62
 end
@@ -20091,8 +19028,6 @@ x 39
 y 63
 end
 arch blocked
-msg
-endmsg
 x 39
 y 63
 end
@@ -20393,8 +19328,6 @@ x 40
 y 42
 end
 arch blocked
-msg
-endmsg
 x 40
 y 42
 end
@@ -20407,8 +19340,6 @@ x 40
 y 43
 end
 arch blocked
-msg
-endmsg
 x 40
 y 43
 end
@@ -20445,8 +19376,6 @@ x 40
 y 49
 end
 arch blocked
-msg
-endmsg
 x 40
 y 49
 end
@@ -20455,8 +19384,6 @@ x 40
 y 50
 end
 arch blocked
-msg
-endmsg
 x 40
 y 50
 end
@@ -20465,8 +19392,6 @@ x 40
 y 51
 end
 arch blocked
-msg
-endmsg
 x 40
 y 51
 end
@@ -20475,8 +19400,6 @@ x 40
 y 52
 end
 arch blocked
-msg
-endmsg
 x 40
 y 52
 end
@@ -20485,8 +19408,6 @@ x 40
 y 53
 end
 arch blocked
-msg
-endmsg
 x 40
 y 53
 end
@@ -20495,8 +19416,6 @@ x 40
 y 54
 end
 arch blocked
-msg
-endmsg
 x 40
 y 54
 end
@@ -20505,8 +19424,6 @@ x 40
 y 55
 end
 arch blocked
-msg
-endmsg
 x 40
 y 55
 end
@@ -20515,8 +19432,6 @@ x 40
 y 56
 end
 arch blocked
-msg
-endmsg
 x 40
 y 56
 end
@@ -20525,8 +19440,6 @@ x 40
 y 57
 end
 arch blocked
-msg
-endmsg
 x 40
 y 57
 end
@@ -20535,8 +19448,6 @@ x 40
 y 58
 end
 arch blocked
-msg
-endmsg
 x 40
 y 58
 end
@@ -20545,8 +19456,6 @@ x 40
 y 59
 end
 arch blocked
-msg
-endmsg
 x 40
 y 59
 end
@@ -20555,8 +19464,6 @@ x 40
 y 60
 end
 arch blocked
-msg
-endmsg
 x 40
 y 60
 end
@@ -20565,8 +19472,6 @@ x 40
 y 61
 end
 arch blocked
-msg
-endmsg
 x 40
 y 61
 end
@@ -20575,8 +19480,6 @@ x 40
 y 62
 end
 arch blocked
-msg
-endmsg
 x 40
 y 62
 end
@@ -20585,8 +19488,6 @@ x 40
 y 63
 end
 arch blocked
-msg
-endmsg
 x 40
 y 63
 end
@@ -20909,8 +19810,6 @@ x 41
 y 49
 end
 arch blocked
-msg
-endmsg
 x 41
 y 49
 end
@@ -20919,8 +19818,6 @@ x 41
 y 50
 end
 arch blocked
-msg
-endmsg
 x 41
 y 50
 end
@@ -20929,8 +19826,6 @@ x 41
 y 51
 end
 arch blocked
-msg
-endmsg
 x 41
 y 51
 end
@@ -20939,8 +19834,6 @@ x 41
 y 52
 end
 arch blocked
-msg
-endmsg
 x 41
 y 52
 end
@@ -20949,8 +19842,6 @@ x 41
 y 53
 end
 arch blocked
-msg
-endmsg
 x 41
 y 53
 end
@@ -20959,8 +19850,6 @@ x 41
 y 54
 end
 arch blocked
-msg
-endmsg
 x 41
 y 54
 end
@@ -20969,8 +19858,6 @@ x 41
 y 55
 end
 arch blocked
-msg
-endmsg
 x 41
 y 55
 end
@@ -20979,8 +19866,6 @@ x 41
 y 56
 end
 arch blocked
-msg
-endmsg
 x 41
 y 56
 end
@@ -20989,8 +19874,6 @@ x 41
 y 57
 end
 arch blocked
-msg
-endmsg
 x 41
 y 57
 end
@@ -20999,8 +19882,6 @@ x 41
 y 58
 end
 arch blocked
-msg
-endmsg
 x 41
 y 58
 end
@@ -21009,8 +19890,6 @@ x 41
 y 59
 end
 arch blocked
-msg
-endmsg
 x 41
 y 59
 end
@@ -21019,8 +19898,6 @@ x 41
 y 60
 end
 arch blocked
-msg
-endmsg
 x 41
 y 60
 end
@@ -21029,8 +19906,6 @@ x 41
 y 61
 end
 arch blocked
-msg
-endmsg
 x 41
 y 61
 end
@@ -21039,8 +19914,6 @@ x 41
 y 62
 end
 arch blocked
-msg
-endmsg
 x 41
 y 62
 end
@@ -21049,8 +19922,6 @@ x 41
 y 63
 end
 arch blocked
-msg
-endmsg
 x 41
 y 63
 end
@@ -21347,8 +20218,6 @@ x 42
 y 49
 end
 arch blocked
-msg
-endmsg
 x 42
 y 49
 end
@@ -21357,8 +20226,6 @@ x 42
 y 50
 end
 arch blocked
-msg
-endmsg
 x 42
 y 50
 end
@@ -21367,8 +20234,6 @@ x 42
 y 51
 end
 arch blocked
-msg
-endmsg
 x 42
 y 51
 end
@@ -21377,8 +20242,6 @@ x 42
 y 52
 end
 arch blocked
-msg
-endmsg
 x 42
 y 52
 end
@@ -21387,8 +20250,6 @@ x 42
 y 53
 end
 arch blocked
-msg
-endmsg
 x 42
 y 53
 end
@@ -21397,8 +20258,6 @@ x 42
 y 54
 end
 arch blocked
-msg
-endmsg
 x 42
 y 54
 end
@@ -21407,8 +20266,6 @@ x 42
 y 55
 end
 arch blocked
-msg
-endmsg
 x 42
 y 55
 end
@@ -21417,8 +20274,6 @@ x 42
 y 56
 end
 arch blocked
-msg
-endmsg
 x 42
 y 56
 end
@@ -21427,8 +20282,6 @@ x 42
 y 57
 end
 arch blocked
-msg
-endmsg
 x 42
 y 57
 end
@@ -21437,8 +20290,6 @@ x 42
 y 58
 end
 arch blocked
-msg
-endmsg
 x 42
 y 58
 end
@@ -21447,8 +20298,6 @@ x 42
 y 59
 end
 arch blocked
-msg
-endmsg
 x 42
 y 59
 end
@@ -21457,8 +20306,6 @@ x 42
 y 60
 end
 arch blocked
-msg
-endmsg
 x 42
 y 60
 end
@@ -21467,8 +20314,6 @@ x 42
 y 61
 end
 arch blocked
-msg
-endmsg
 x 42
 y 61
 end
@@ -21477,8 +20322,6 @@ x 42
 y 62
 end
 arch blocked
-msg
-endmsg
 x 42
 y 62
 end
@@ -21487,8 +20330,6 @@ x 42
 y 63
 end
 arch blocked
-msg
-endmsg
 x 42
 y 63
 end
@@ -21785,8 +20626,6 @@ x 43
 y 48
 end
 arch blocked
-msg
-endmsg
 x 43
 y 48
 end
@@ -21795,8 +20634,6 @@ x 43
 y 49
 end
 arch blocked
-msg
-endmsg
 x 43
 y 49
 end
@@ -21805,8 +20642,6 @@ x 43
 y 50
 end
 arch blocked
-msg
-endmsg
 x 43
 y 50
 end
@@ -21815,8 +20650,6 @@ x 43
 y 51
 end
 arch blocked
-msg
-endmsg
 x 43
 y 51
 end
@@ -21825,8 +20658,6 @@ x 43
 y 52
 end
 arch blocked
-msg
-endmsg
 x 43
 y 52
 end
@@ -21835,8 +20666,6 @@ x 43
 y 53
 end
 arch blocked
-msg
-endmsg
 x 43
 y 53
 end
@@ -21845,8 +20674,6 @@ x 43
 y 54
 end
 arch blocked
-msg
-endmsg
 x 43
 y 54
 end
@@ -21855,8 +20682,6 @@ x 43
 y 55
 end
 arch blocked
-msg
-endmsg
 x 43
 y 55
 end
@@ -21865,8 +20690,6 @@ x 43
 y 56
 end
 arch blocked
-msg
-endmsg
 x 43
 y 56
 end
@@ -21875,8 +20698,6 @@ x 43
 y 57
 end
 arch blocked
-msg
-endmsg
 x 43
 y 57
 end
@@ -21885,8 +20706,6 @@ x 43
 y 58
 end
 arch blocked
-msg
-endmsg
 x 43
 y 58
 end
@@ -21895,8 +20714,6 @@ x 43
 y 59
 end
 arch blocked
-msg
-endmsg
 x 43
 y 59
 end
@@ -21905,8 +20722,6 @@ x 43
 y 60
 end
 arch blocked
-msg
-endmsg
 x 43
 y 60
 end
@@ -21915,8 +20730,6 @@ x 43
 y 61
 end
 arch blocked
-msg
-endmsg
 x 43
 y 61
 end
@@ -21925,8 +20738,6 @@ x 43
 y 62
 end
 arch blocked
-msg
-endmsg
 x 43
 y 62
 end
@@ -21935,8 +20746,6 @@ x 43
 y 63
 end
 arch blocked
-msg
-endmsg
 x 43
 y 63
 end
@@ -22349,8 +21158,6 @@ x 44
 y 48
 end
 arch blocked
-msg
-endmsg
 x 44
 y 48
 end
@@ -22359,8 +21166,6 @@ x 44
 y 49
 end
 arch blocked
-msg
-endmsg
 x 44
 y 49
 end
@@ -22369,8 +21174,6 @@ x 44
 y 50
 end
 arch blocked
-msg
-endmsg
 x 44
 y 50
 end
@@ -22379,8 +21182,6 @@ x 44
 y 51
 end
 arch blocked
-msg
-endmsg
 x 44
 y 51
 end
@@ -22389,8 +21190,6 @@ x 44
 y 52
 end
 arch blocked
-msg
-endmsg
 x 44
 y 52
 end
@@ -22399,8 +21198,6 @@ x 44
 y 53
 end
 arch blocked
-msg
-endmsg
 x 44
 y 53
 end
@@ -22409,8 +21206,6 @@ x 44
 y 54
 end
 arch blocked
-msg
-endmsg
 x 44
 y 54
 end
@@ -22419,8 +21214,6 @@ x 44
 y 55
 end
 arch blocked
-msg
-endmsg
 x 44
 y 55
 end
@@ -22429,8 +21222,6 @@ x 44
 y 56
 end
 arch blocked
-msg
-endmsg
 x 44
 y 56
 end
@@ -22439,8 +21230,6 @@ x 44
 y 57
 end
 arch blocked
-msg
-endmsg
 x 44
 y 57
 end
@@ -22449,8 +21238,6 @@ x 44
 y 58
 end
 arch blocked
-msg
-endmsg
 x 44
 y 58
 end
@@ -22459,8 +21246,6 @@ x 44
 y 59
 end
 arch blocked
-msg
-endmsg
 x 44
 y 59
 end
@@ -22469,8 +21254,6 @@ x 44
 y 60
 end
 arch blocked
-msg
-endmsg
 x 44
 y 60
 end
@@ -22479,8 +21262,6 @@ x 44
 y 61
 end
 arch blocked
-msg
-endmsg
 x 44
 y 61
 end
@@ -22489,8 +21270,6 @@ x 44
 y 62
 end
 arch blocked
-msg
-endmsg
 x 44
 y 62
 end
@@ -22499,8 +21278,6 @@ x 44
 y 63
 end
 arch blocked
-msg
-endmsg
 x 44
 y 63
 end
@@ -22925,8 +21702,6 @@ x 45
 y 48
 end
 arch blocked
-msg
-endmsg
 x 45
 y 48
 end
@@ -22935,8 +21710,6 @@ x 45
 y 49
 end
 arch blocked
-msg
-endmsg
 x 45
 y 49
 end
@@ -22945,8 +21718,6 @@ x 45
 y 50
 end
 arch blocked
-msg
-endmsg
 x 45
 y 50
 end
@@ -22955,8 +21726,6 @@ x 45
 y 51
 end
 arch blocked
-msg
-endmsg
 x 45
 y 51
 end
@@ -22965,8 +21734,6 @@ x 45
 y 52
 end
 arch blocked
-msg
-endmsg
 x 45
 y 52
 end
@@ -22975,8 +21742,6 @@ x 45
 y 53
 end
 arch blocked
-msg
-endmsg
 x 45
 y 53
 end
@@ -22985,8 +21750,6 @@ x 45
 y 54
 end
 arch blocked
-msg
-endmsg
 x 45
 y 54
 end
@@ -22995,8 +21758,6 @@ x 45
 y 55
 end
 arch blocked
-msg
-endmsg
 x 45
 y 55
 end
@@ -23005,8 +21766,6 @@ x 45
 y 56
 end
 arch blocked
-msg
-endmsg
 x 45
 y 56
 end
@@ -23015,8 +21774,6 @@ x 45
 y 57
 end
 arch blocked
-msg
-endmsg
 x 45
 y 57
 end
@@ -23025,8 +21782,6 @@ x 45
 y 58
 end
 arch blocked
-msg
-endmsg
 x 45
 y 58
 end
@@ -23035,8 +21790,6 @@ x 45
 y 59
 end
 arch blocked
-msg
-endmsg
 x 45
 y 59
 end
@@ -23045,8 +21798,6 @@ x 45
 y 60
 end
 arch blocked
-msg
-endmsg
 x 45
 y 60
 end
@@ -23055,8 +21806,6 @@ x 45
 y 61
 end
 arch blocked
-msg
-endmsg
 x 45
 y 61
 end
@@ -23065,8 +21814,6 @@ x 45
 y 62
 end
 arch blocked
-msg
-endmsg
 x 45
 y 62
 end
@@ -23075,8 +21822,6 @@ x 45
 y 63
 end
 arch blocked
-msg
-endmsg
 x 45
 y 63
 end
@@ -23523,8 +22268,6 @@ x 46
 y 49
 end
 arch blocked
-msg
-endmsg
 x 46
 y 49
 end
@@ -23533,8 +22276,6 @@ x 46
 y 50
 end
 arch blocked
-msg
-endmsg
 x 46
 y 50
 end
@@ -23543,8 +22284,6 @@ x 46
 y 51
 end
 arch blocked
-msg
-endmsg
 x 46
 y 51
 end
@@ -23553,8 +22292,6 @@ x 46
 y 52
 end
 arch blocked
-msg
-endmsg
 x 46
 y 52
 end
@@ -23563,8 +22300,6 @@ x 46
 y 53
 end
 arch blocked
-msg
-endmsg
 x 46
 y 53
 end
@@ -23573,8 +22308,6 @@ x 46
 y 54
 end
 arch blocked
-msg
-endmsg
 x 46
 y 54
 end
@@ -23583,8 +22316,6 @@ x 46
 y 55
 end
 arch blocked
-msg
-endmsg
 x 46
 y 55
 end
@@ -23593,8 +22324,6 @@ x 46
 y 56
 end
 arch blocked
-msg
-endmsg
 x 46
 y 56
 end
@@ -23603,8 +22332,6 @@ x 46
 y 57
 end
 arch blocked
-msg
-endmsg
 x 46
 y 57
 end
@@ -23613,8 +22340,6 @@ x 46
 y 58
 end
 arch blocked
-msg
-endmsg
 x 46
 y 58
 end
@@ -23623,8 +22348,6 @@ x 46
 y 59
 end
 arch blocked
-msg
-endmsg
 x 46
 y 59
 end
@@ -23633,8 +22356,6 @@ x 46
 y 60
 end
 arch blocked
-msg
-endmsg
 x 46
 y 60
 end
@@ -23643,8 +22364,6 @@ x 46
 y 61
 end
 arch blocked
-msg
-endmsg
 x 46
 y 61
 end
@@ -23653,8 +22372,6 @@ x 46
 y 62
 end
 arch blocked
-msg
-endmsg
 x 46
 y 62
 end
@@ -23663,8 +22380,6 @@ x 46
 y 63
 end
 arch blocked
-msg
-endmsg
 x 46
 y 63
 end
@@ -24101,8 +22816,6 @@ x 47
 y 50
 end
 arch blocked
-msg
-endmsg
 x 47
 y 50
 end
@@ -24111,8 +22824,6 @@ x 47
 y 51
 end
 arch blocked
-msg
-endmsg
 x 47
 y 51
 end
@@ -24121,8 +22832,6 @@ x 47
 y 52
 end
 arch blocked
-msg
-endmsg
 x 47
 y 52
 end
@@ -24131,8 +22840,6 @@ x 47
 y 53
 end
 arch blocked
-msg
-endmsg
 x 47
 y 53
 end
@@ -24141,8 +22848,6 @@ x 47
 y 54
 end
 arch blocked
-msg
-endmsg
 x 47
 y 54
 end
@@ -24151,8 +22856,6 @@ x 47
 y 55
 end
 arch blocked
-msg
-endmsg
 x 47
 y 55
 end
@@ -24161,8 +22864,6 @@ x 47
 y 56
 end
 arch blocked
-msg
-endmsg
 x 47
 y 56
 end
@@ -24171,8 +22872,6 @@ x 47
 y 57
 end
 arch blocked
-msg
-endmsg
 x 47
 y 57
 end
@@ -24181,8 +22880,6 @@ x 47
 y 58
 end
 arch blocked
-msg
-endmsg
 x 47
 y 58
 end
@@ -24191,8 +22888,6 @@ x 47
 y 59
 end
 arch blocked
-msg
-endmsg
 x 47
 y 59
 end
@@ -24201,8 +22896,6 @@ x 47
 y 60
 end
 arch blocked
-msg
-endmsg
 x 47
 y 60
 end
@@ -24211,8 +22904,6 @@ x 47
 y 61
 end
 arch blocked
-msg
-endmsg
 x 47
 y 61
 end
@@ -24221,8 +22912,6 @@ x 47
 y 62
 end
 arch blocked
-msg
-endmsg
 x 47
 y 62
 end
@@ -24231,8 +22920,6 @@ x 47
 y 63
 end
 arch blocked
-msg
-endmsg
 x 47
 y 63
 end
@@ -24685,8 +23372,6 @@ x 48
 y 51
 end
 arch blocked
-msg
-endmsg
 x 48
 y 51
 end
@@ -24695,8 +23380,6 @@ x 48
 y 52
 end
 arch blocked
-msg
-endmsg
 x 48
 y 52
 end
@@ -24705,8 +23388,6 @@ x 48
 y 53
 end
 arch blocked
-msg
-endmsg
 x 48
 y 53
 end
@@ -24715,8 +23396,6 @@ x 48
 y 54
 end
 arch blocked
-msg
-endmsg
 x 48
 y 54
 end
@@ -24725,8 +23404,6 @@ x 48
 y 55
 end
 arch blocked
-msg
-endmsg
 x 48
 y 55
 end
@@ -24735,8 +23412,6 @@ x 48
 y 56
 end
 arch blocked
-msg
-endmsg
 x 48
 y 56
 end
@@ -24745,8 +23420,6 @@ x 48
 y 57
 end
 arch blocked
-msg
-endmsg
 x 48
 y 57
 end
@@ -24755,8 +23428,6 @@ x 48
 y 58
 end
 arch blocked
-msg
-endmsg
 x 48
 y 58
 end
@@ -24765,8 +23436,6 @@ x 48
 y 59
 end
 arch blocked
-msg
-endmsg
 x 48
 y 59
 end
@@ -24775,8 +23444,6 @@ x 48
 y 60
 end
 arch blocked
-msg
-endmsg
 x 48
 y 60
 end
@@ -24785,8 +23452,6 @@ x 48
 y 61
 end
 arch blocked
-msg
-endmsg
 x 48
 y 61
 end
@@ -24795,8 +23460,6 @@ x 48
 y 62
 end
 arch blocked
-msg
-endmsg
 x 48
 y 62
 end
@@ -24805,8 +23468,6 @@ x 48
 y 63
 end
 arch blocked
-msg
-endmsg
 x 48
 y 63
 end
@@ -25197,10 +23858,6 @@ x 49
 y 39
 end
 arch istone
-x 49
-y 40
-end
-arch chinese_dragon
 x 49
 y 40
 end
@@ -25345,38 +24002,26 @@ x 49
 y 57
 end
 arch blocked
-msg
-endmsg
 x 49
 y 58
 end
 arch blocked
-msg
-endmsg
 x 49
 y 59
 end
 arch blocked
-msg
-endmsg
 x 49
 y 60
 end
 arch blocked
-msg
-endmsg
 x 49
 y 61
 end
 arch blocked
-msg
-endmsg
 x 49
 y 62
 end
 arch blocked
-msg
-endmsg
 x 49
 y 63
 end
@@ -25622,10 +24267,6 @@ arch istone
 x 50
 y 35
 end
-arch chinese_dragon
-x 50
-y 35
-end
 arch istone
 x 50
 y 36
@@ -25659,10 +24300,6 @@ x 50
 y 43
 end
 arch istone
-x 50
-y 44
-end
-arch chinese_dragon
 x 50
 y 44
 end
@@ -25919,20 +24556,14 @@ y 60
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 50
 y 61
 end
 arch blocked
-msg
-endmsg
 x 50
 y 62
 end
 arch blocked
-msg
-endmsg
 x 50
 y 63
 end
@@ -26577,14 +25208,10 @@ y 61
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 51
 y 62
 end
 arch blocked
-msg
-endmsg
 x 51
 y 63
 end
@@ -26916,10 +25543,6 @@ arch istone
 x 52
 y 35
 end
-arch chinese_dragon
-x 52
-y 35
-end
 arch istone
 x 52
 y 36
@@ -26929,10 +25552,6 @@ x 52
 y 37
 end
 arch istone
-x 52
-y 38
-end
-arch chinese_dragon
 x 52
 y 38
 end
@@ -27163,8 +25782,6 @@ y 62
 attacktype 16
 end
 arch blocked
-msg
-endmsg
 x 52
 y 63
 end
@@ -27556,10 +26173,6 @@ arch istone
 x 53
 y 46
 end
-arch chinese_dragon
-x 53
-y 46
-end
 arch istone
 x 53
 y 47
@@ -27633,44 +26246,30 @@ x 53
 y 56
 end
 arch blocked
-msg
-endmsg
 x 53
 y 57
 end
 arch blocked
-msg
-endmsg
 x 53
 y 58
 end
 arch blocked
-msg
-endmsg
 x 53
 y 59
 end
 arch blocked
-msg
-endmsg
 x 53
 y 60
 end
 arch blocked
-msg
-endmsg
 x 53
 y 61
 end
 arch blocked
-msg
-endmsg
 x 53
 y 62
 end
 arch blocked
-msg
-endmsg
 x 53
 y 63
 end
@@ -27858,10 +26457,6 @@ arch istone
 x 54
 y 26
 end
-arch chinese_dragon
-x 54
-y 26
-end
 arch istone
 x 54
 y 27
@@ -27871,10 +26466,6 @@ x 54
 y 28
 end
 arch istone
-x 54
-y 29
-end
-arch chinese_dragon
 x 54
 y 29
 end
@@ -27987,8 +26578,6 @@ x 54
 y 51
 end
 arch blocked
-msg
-endmsg
 x 54
 y 51
 end
@@ -27997,8 +26586,6 @@ x 54
 y 52
 end
 arch blocked
-msg
-endmsg
 x 54
 y 52
 end
@@ -28007,8 +26594,6 @@ x 54
 y 53
 end
 arch blocked
-msg
-endmsg
 x 54
 y 53
 end
@@ -28017,8 +26602,6 @@ x 54
 y 54
 end
 arch blocked
-msg
-endmsg
 x 54
 y 54
 end
@@ -28027,8 +26610,6 @@ x 54
 y 55
 end
 arch blocked
-msg
-endmsg
 x 54
 y 55
 end
@@ -28037,50 +26618,34 @@ x 54
 y 56
 end
 arch blocked
-msg
-endmsg
 x 54
 y 56
 end
 arch blocked
-msg
-endmsg
 x 54
 y 57
 end
 arch blocked
-msg
-endmsg
 x 54
 y 58
 end
 arch blocked
-msg
-endmsg
 x 54
 y 59
 end
 arch blocked
-msg
-endmsg
 x 54
 y 60
 end
 arch blocked
-msg
-endmsg
 x 54
 y 61
 end
 arch blocked
-msg
-endmsg
 x 54
 y 62
 end
 arch blocked
-msg
-endmsg
 x 54
 y 63
 end
@@ -28286,10 +26851,6 @@ arch istone
 x 55
 y 19
 end
-arch chinese_dragon
-x 55
-y 19
-end
 arch istone
 x 55
 y 20
@@ -28431,8 +26992,6 @@ x 55
 y 51
 end
 arch blocked
-msg
-endmsg
 x 55
 y 51
 end
@@ -28441,8 +27000,6 @@ x 55
 y 52
 end
 arch blocked
-msg
-endmsg
 x 55
 y 52
 end
@@ -28451,8 +27008,6 @@ x 55
 y 53
 end
 arch blocked
-msg
-endmsg
 x 55
 y 53
 end
@@ -28461,8 +27016,6 @@ x 55
 y 54
 end
 arch blocked
-msg
-endmsg
 x 55
 y 54
 end
@@ -28471,8 +27024,6 @@ x 55
 y 55
 end
 arch blocked
-msg
-endmsg
 x 55
 y 55
 end
@@ -28481,50 +27032,34 @@ x 55
 y 56
 end
 arch blocked
-msg
-endmsg
 x 55
 y 56
 end
 arch blocked
-msg
-endmsg
 x 55
 y 57
 end
 arch blocked
-msg
-endmsg
 x 55
 y 58
 end
 arch blocked
-msg
-endmsg
 x 55
 y 59
 end
 arch blocked
-msg
-endmsg
 x 55
 y 60
 end
 arch blocked
-msg
-endmsg
 x 55
 y 61
 end
 arch blocked
-msg
-endmsg
 x 55
 y 62
 end
 arch blocked
-msg
-endmsg
 x 55
 y 63
 end
@@ -28732,10 +27267,6 @@ arch istone
 x 56
 y 23
 end
-arch chinese_dragon
-x 56
-y 23
-end
 arch istone
 x 56
 y 24
@@ -28769,10 +27300,6 @@ x 56
 y 31
 end
 arch istone
-x 56
-y 32
-end
-arch chinese_dragon
 x 56
 y 32
 end
@@ -28817,10 +27344,6 @@ x 56
 y 41
 end
 arch istone
-x 56
-y 42
-end
-arch chinese_dragon
 x 56
 y 42
 end
@@ -28877,8 +27400,6 @@ x 56
 y 52
 end
 arch blocked
-msg
-endmsg
 x 56
 y 52
 end
@@ -28887,8 +27408,6 @@ x 56
 y 53
 end
 arch blocked
-msg
-endmsg
 x 56
 y 53
 end
@@ -28897,8 +27416,6 @@ x 56
 y 54
 end
 arch blocked
-msg
-endmsg
 x 56
 y 54
 end
@@ -28907,8 +27424,6 @@ x 56
 y 55
 end
 arch blocked
-msg
-endmsg
 x 56
 y 55
 end
@@ -28917,50 +27432,34 @@ x 56
 y 56
 end
 arch blocked
-msg
-endmsg
 x 56
 y 56
 end
 arch blocked
-msg
-endmsg
 x 56
 y 57
 end
 arch blocked
-msg
-endmsg
 x 56
 y 58
 end
 arch blocked
-msg
-endmsg
 x 56
 y 59
 end
 arch blocked
-msg
-endmsg
 x 56
 y 60
 end
 arch blocked
-msg
-endmsg
 x 56
 y 61
 end
 arch blocked
-msg
-endmsg
 x 56
 y 62
 end
 arch blocked
-msg
-endmsg
 x 56
 y 63
 end
@@ -29178,10 +27677,6 @@ arch istone
 x 57
 y 26
 end
-arch chinese_dragon
-x 57
-y 26
-end
 arch istone
 x 57
 y 27
@@ -29242,10 +27737,6 @@ arch istone
 x 57
 y 40
 end
-arch chinese_dragon
-x 57
-y 40
-end
 arch istone
 x 57
 y 41
@@ -29267,10 +27758,6 @@ x 57
 y 45
 end
 arch istone
-x 57
-y 46
-end
-arch chinese_dragon
 x 57
 y 46
 end
@@ -29311,8 +27798,6 @@ x 57
 y 52
 end
 arch blocked
-msg
-endmsg
 x 57
 y 52
 end
@@ -29321,8 +27806,6 @@ x 57
 y 53
 end
 arch blocked
-msg
-endmsg
 x 57
 y 53
 end
@@ -29331,8 +27814,6 @@ x 57
 y 54
 end
 arch blocked
-msg
-endmsg
 x 57
 y 54
 end
@@ -29341,8 +27822,6 @@ x 57
 y 55
 end
 arch blocked
-msg
-endmsg
 x 57
 y 55
 end
@@ -29351,50 +27830,34 @@ x 57
 y 56
 end
 arch blocked
-msg
-endmsg
 x 57
 y 56
 end
 arch blocked
-msg
-endmsg
 x 57
 y 57
 end
 arch blocked
-msg
-endmsg
 x 57
 y 58
 end
 arch blocked
-msg
-endmsg
 x 57
 y 59
 end
 arch blocked
-msg
-endmsg
 x 57
 y 60
 end
 arch blocked
-msg
-endmsg
 x 57
 y 61
 end
 arch blocked
-msg
-endmsg
 x 57
 y 62
 end
 arch blocked
-msg
-endmsg
 x 57
 y 63
 end
@@ -29445,10 +27908,6 @@ x 58
 y 9
 end
 arch istone
-x 58
-y 10
-end
-arch chinese_dragon
 x 58
 y 10
 end
@@ -29484,10 +27943,6 @@ arch istone
 x 58
 y 16
 end
-arch chinese_dragon
-x 58
-y 16
-end
 arch istone
 x 58
 y 17
@@ -29521,10 +27976,6 @@ x 58
 y 22
 end
 arch istone
-x 58
-y 23
-end
-arch chinese_dragon
 x 58
 y 23
 end
@@ -29573,10 +28024,6 @@ x 58
 y 34
 end
 arch istone
-x 58
-y 35
-end
-arch chinese_dragon
 x 58
 y 35
 end
@@ -29665,8 +28112,6 @@ x 58
 y 52
 end
 arch blocked
-msg
-endmsg
 x 58
 y 52
 end
@@ -29675,8 +28120,6 @@ x 58
 y 53
 end
 arch blocked
-msg
-endmsg
 x 58
 y 53
 end
@@ -29685,8 +28128,6 @@ x 58
 y 54
 end
 arch blocked
-msg
-endmsg
 x 58
 y 54
 end
@@ -29695,8 +28136,6 @@ x 58
 y 55
 end
 arch blocked
-msg
-endmsg
 x 58
 y 55
 end
@@ -29705,50 +28144,34 @@ x 58
 y 56
 end
 arch blocked
-msg
-endmsg
 x 58
 y 56
 end
 arch blocked
-msg
-endmsg
 x 58
 y 57
 end
 arch blocked
-msg
-endmsg
 x 58
 y 58
 end
 arch blocked
-msg
-endmsg
 x 58
 y 59
 end
 arch blocked
-msg
-endmsg
 x 58
 y 60
 end
 arch blocked
-msg
-endmsg
 x 58
 y 61
 end
 arch blocked
-msg
-endmsg
 x 58
 y 62
 end
 arch blocked
-msg
-endmsg
 x 58
 y 63
 end
@@ -29894,10 +28317,6 @@ arch istone
 x 59
 y 28
 end
-arch chinese_dragon
-x 59
-y 28
-end
 arch istone
 x 59
 y 29
@@ -29907,10 +28326,6 @@ x 59
 y 30
 end
 arch istone
-x 59
-y 31
-end
-arch chinese_dragon
 x 59
 y 31
 end
@@ -30027,8 +28442,6 @@ x 59
 y 53
 end
 arch blocked
-msg
-endmsg
 x 59
 y 53
 end
@@ -30037,8 +28450,6 @@ x 59
 y 54
 end
 arch blocked
-msg
-endmsg
 x 59
 y 54
 end
@@ -30047,8 +28458,6 @@ x 59
 y 55
 end
 arch blocked
-msg
-endmsg
 x 59
 y 55
 end
@@ -30057,50 +28466,34 @@ x 59
 y 56
 end
 arch blocked
-msg
-endmsg
 x 59
 y 56
 end
 arch blocked
-msg
-endmsg
 x 59
 y 57
 end
 arch blocked
-msg
-endmsg
 x 59
 y 58
 end
 arch blocked
-msg
-endmsg
 x 59
 y 59
 end
 arch blocked
-msg
-endmsg
 x 59
 y 60
 end
 arch blocked
-msg
-endmsg
 x 59
 y 61
 end
 arch blocked
-msg
-endmsg
 x 59
 y 62
 end
 arch blocked
-msg
-endmsg
 x 59
 y 63
 end
@@ -30357,1838 +28750,1828 @@ end
 arch istone
 x 60
 y 42
+end
+arch istone
+x 60
+y 43
+end
+arch istone
+x 60
+y 44
+end
+arch istone
+x 60
+y 45
+end
+arch istone
+x 60
+y 46
+end
+arch istone
+x 60
+y 47
+end
+arch random_wealth
+x 60
+y 47
+end
+arch istone
+x 60
+y 48
+end
+arch random_wealth
+x 60
+y 48
+end
+arch istone
+x 60
+y 49
+end
+arch random_wealth
+x 60
+y 49
+end
+arch istone
+x 60
+y 50
+end
+arch random_wealth
+x 60
+y 50
+end
+arch istone
+x 60
+y 51
+end
+arch cave15
+x 60
+y 51
+end
+arch istone
+x 60
+y 52
+end
+arch cave20
+x 60
+y 52
+end
+arch istone
+x 60
+y 53
+end
+arch blocked
+x 60
+y 53
+end
+arch istone
+x 60
+y 54
+end
+arch blocked
+x 60
+y 54
+end
+arch istone
+x 60
+y 55
+end
+arch blocked
+x 60
+y 55
+end
+arch istone
+x 60
+y 56
+end
+arch blocked
+x 60
+y 56
+end
+arch blocked
+x 60
+y 57
+end
+arch blocked
+x 60
+y 58
+end
+arch blocked
+x 60
+y 59
+end
+arch blocked
+x 60
+y 60
+end
+arch blocked
+x 60
+y 61
+end
+arch blocked
+x 60
+y 62
+end
+arch blocked
+x 60
+y 63
+end
+arch mover_5
+x 61
+level 1
+attacktype 1
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+attacktype 16
+end
+arch cave4
+x 61
+end
+arch river_n-s
+x 61
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+y 1
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+y 2
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+y 3
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+y 4
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 61
+y 5
+attacktype 16
+end
+arch istone
+x 61
+y 6
+end
+arch cave15
+x 61
+y 6
+end
+arch istone
+x 61
+y 7
+end
+arch cave1
+x 61
+y 7
+end
+arch istone
+x 61
+y 8
+end
+arch cave1
+x 61
+y 8
+end
+arch istone
+x 61
+y 9
+end
+arch cave1
+x 61
+y 9
+end
+arch istone
+x 61
+y 10
+end
+arch cave1
+x 61
+y 10
+end
+arch istone
+x 61
+y 11
+end
+arch cave1
+x 61
+y 11
+end
+arch istone
+x 61
+y 12
+end
+arch cave1
+x 61
+y 12
+end
+arch istone
+x 61
+y 13
+end
+arch cave1
+x 61
+y 13
+end
+arch istone
+x 61
+y 14
+end
+arch cave1
+x 61
+y 14
+end
+arch istone
+x 61
+y 15
+end
+arch cave14
+x 61
+y 15
+end
+arch istone
+x 61
+y 16
+end
+arch random_wealth
+x 61
+y 16
+end
+arch istone
+x 61
+y 17
+end
+arch random_wealth
+x 61
+y 17
+end
+arch istone
+x 61
+y 18
+end
+arch random_wealth
+x 61
+y 18
+end
+arch istone
+x 61
+y 19
+end
+arch random_wealth
+x 61
+y 19
+end
+arch istone
+x 61
+y 20
+end
+arch random_wealth
+x 61
+y 20
+end
+arch istone
+x 61
+y 21
+end
+arch cave15
+x 61
+y 21
+end
+arch istone
+x 61
+y 22
+end
+arch cave1
+x 61
+y 22
+end
+arch istone
+x 61
+y 23
+end
+arch cave1
+x 61
+y 23
+end
+arch istone
+x 61
+y 24
+end
+arch cave1
+x 61
+y 24
+end
+arch istone
+x 61
+y 25
+end
+arch cave1
+x 61
+y 25
+end
+arch istone
+x 61
+y 26
+end
+arch cave1
+x 61
+y 26
+end
+arch istone
+x 61
+y 27
+end
+arch cave1
+x 61
+y 27
+end
+arch istone
+x 61
+y 28
+end
+arch cave1
+x 61
+y 28
+end
+arch istone
+x 61
+y 29
+end
+arch cave1
+x 61
+y 29
+end
+arch istone
+x 61
+y 30
+end
+arch cave1
+x 61
+y 30
+end
+arch istone
+x 61
+y 31
+end
+arch cave1
+x 61
+y 31
+end
+arch istone
+x 61
+y 32
+end
+arch cave1
+x 61
+y 32
+end
+arch istone
+x 61
+y 33
+end
+arch cave1
+x 61
+y 33
+end
+arch istone
+x 61
+y 34
+end
+arch cave14
+x 61
+y 34
+end
+arch istone
+x 61
+y 35
+end
+arch istone
+x 61
+y 36
+end
+arch random_wealth
+x 61
+y 36
+end
+arch istone
+x 61
+y 37
+end
+arch random_wealth
+x 61
+y 37
+end
+arch istone
+x 61
+y 38
+end
+arch random_wealth
+x 61
+y 38
+end
+arch istone
+x 61
+y 39
+end
+arch istone
+x 61
+y 40
+end
+arch istone
+x 61
+y 41
+end
+arch istone
+x 61
+y 42
+end
+arch istone
+x 61
+y 43
+end
+arch istone
+x 61
+y 44
+end
+arch istone
+x 61
+y 45
+end
+arch istone
+x 61
+y 46
+end
+arch random_wealth
+x 61
+y 46
+end
+arch istone
+x 61
+y 47
+end
+arch random_wealth
+x 61
+y 47
+end
+arch istone
+x 61
+y 48
+end
+arch random_wealth
+x 61
+y 48
+end
+arch istone
+x 61
+y 49
+end
+arch random_wealth
+x 61
+y 49
+end
+arch istone
+x 61
+y 50
+end
+arch cave15
+x 61
+y 50
+end
+arch istone
+x 61
+y 51
+end
+arch cave20
+x 61
+y 51
+end
+arch istone
+x 61
+y 52
+end
+arch blocked
+x 61
+y 52
+end
+arch istone
+x 61
+y 53
+end
+arch blocked
+x 61
+y 53
+end
+arch istone
+x 61
+y 54
+end
+arch blocked
+x 61
+y 54
+end
+arch istone
+x 61
+y 55
+end
+arch blocked
+x 61
+y 55
+end
+arch istone
+x 61
+y 56
+end
+arch blocked
+x 61
+y 56
+end
+arch blocked
+x 61
+y 57
+end
+arch blocked
+x 61
+y 58
+end
+arch blocked
+x 61
+y 59
+end
+arch blocked
+x 61
+y 60
+end
+arch blocked
+x 61
+y 61
+end
+arch blocked
+x 61
+y 62
+end
+arch blocked
+x 61
+y 63
+end
+arch mover_5
+x 62
+level 1
+attacktype 1
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+attacktype 16
+end
+arch cave4
+x 62
+end
+arch river_n-s
+x 62
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 1
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 2
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 3
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 4
+attacktype 16
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 5
+attacktype 16
+end
+arch cave15
+x 62
+y 5
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 6
+attacktype 16
+end
+arch cave20
+x 62
+y 6
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 62
+y 7
+attacktype 16
+end
+arch blocked
+x 62
+y 7
+end
+arch istone
+x 62
+y 8
+end
+arch blocked
+x 62
+y 8
+end
+arch istone
+x 62
+y 9
+end
+arch blocked
+x 62
+y 9
+end
+arch istone
+x 62
+y 10
+end
+arch blocked
+x 62
+y 10
+end
+arch istone
+x 62
+y 11
+end
+arch blocked
+x 62
+y 11
+end
+arch istone
+x 62
+y 12
+end
+arch blocked
+x 62
+y 12
+end
+arch istone
+x 62
+y 13
+end
+arch blocked
+x 62
+y 13
+end
+arch istone
+x 62
+y 14
+end
+arch blocked
+x 62
+y 14
+end
+arch istone
+x 62
+y 15
+end
+arch cave19
+x 62
+y 15
+end
+arch istone
+x 62
+y 16
+end
+arch cave1
+x 62
+y 16
+end
+arch istone
+x 62
+y 17
+end
+arch cave1
+x 62
+y 17
+end
+arch istone
+x 62
+y 18
+end
+arch cave1
+x 62
+y 18
+end
+arch istone
+x 62
+y 19
+end
+arch cave1
+x 62
+y 19
+end
+arch istone
+x 62
+y 20
+end
+arch cave1
+x 62
+y 20
+end
+arch istone
+x 62
+y 21
+end
+arch cave20
+x 62
+y 21
+end
+arch istone
+x 62
+y 22
+end
+arch blocked
+x 62
+y 22
+end
+arch istone
+x 62
+y 23
+end
+arch blocked
+x 62
+y 23
+end
+arch istone
+x 62
+y 24
+end
+arch blocked
+x 62
+y 24
+end
+arch istone
+x 62
+y 25
+end
+arch blocked
+x 62
+y 25
+end
+arch istone
+x 62
+y 26
+end
+arch blocked
+x 62
+y 26
+end
+arch istone
+x 62
+y 27
+end
+arch blocked
+x 62
+y 27
+end
+arch istone
+x 62
+y 28
+end
+arch blocked
+x 62
+y 28
+end
+arch istone
+x 62
+y 29
+end
+arch blocked
+x 62
+y 29
+end
+arch istone
+x 62
+y 30
+end
+arch blocked
+x 62
+y 30
+end
+arch istone
+x 62
+y 31
+end
+arch blocked
+x 62
+y 31
+end
+arch istone
+x 62
+y 32
+end
+arch blocked
+x 62
+y 32
+end
+arch istone
+x 62
+y 33
+end
+arch blocked
+x 62
+y 33
+end
+arch istone
+x 62
+y 34
+end
+arch cave19
+x 62
+y 34
+end
+arch istone
+x 62
+y 35
+end
+arch cave1
+x 62
+y 35
+end
+arch istone
+x 62
+y 36
+end
+arch cave1
+x 62
+y 36
+end
+arch istone
+x 62
+y 37
+end
+arch cave1
+x 62
+y 37
+end
+arch istone
+x 62
+y 38
+end
+arch cave1
+x 62
+y 38
+end
+arch istone
+x 62
+y 39
+end
+arch cave1
+x 62
+y 39
+end
+arch istone
+x 62
+y 40
+end
+arch cave1
+x 62
+y 40
+end
+arch istone
+x 62
+y 41
+end
+arch cave14
+x 62
+y 41
+end
+arch istone
+x 62
+y 42
+end
+arch istone
+x 62
+y 43
+end
+arch istone
+x 62
+y 44
+end
+arch istone
+x 62
+y 45
+end
+arch random_wealth
+x 62
+y 45
+end
+arch istone
+x 62
+y 46
+end
+arch random_wealth
+x 62
+y 46
+end
+arch istone
+x 62
+y 47
+end
+arch random_wealth
+x 62
+y 47
+end
+arch istone
+x 62
+y 48
+end
+arch random_wealth
+x 62
+y 48
+end
+arch istone
+x 62
+y 49
+end
+arch cave15
+x 62
+y 49
+end
+arch istone
+x 62
+y 50
+end
+arch cave20
+x 62
+y 50
+end
+arch istone
+x 62
+y 51
+end
+arch blocked
+x 62
+y 51
+end
+arch istone
+x 62
+y 52
+end
+arch blocked
+x 62
+y 52
+end
+arch istone
+x 62
+y 53
+end
+arch blocked
+x 62
+y 53
+end
+arch istone
+x 62
+y 54
+end
+arch blocked
+x 62
+y 54
+end
+arch istone
+x 62
+y 55
+end
+arch blocked
+x 62
+y 55
+end
+arch istone
+x 62
+y 56
+end
+arch blocked
+x 62
+y 56
+end
+arch blocked
+x 62
+y 57
+end
+arch blocked
+x 62
+y 58
+end
+arch blocked
+x 62
+y 59
+end
+arch blocked
+x 62
+y 60
+end
+arch blocked
+x 62
+y 61
+end
+arch blocked
+x 62
+y 62
+end
+arch blocked
+x 62
+y 63
+end
+arch istone
+x 63
+end
+arch cave19
+x 63
+end
+arch istone
+x 63
+y 1
+end
+arch cave1
+x 63
+y 1
+end
+arch istone
+x 63
+y 2
+end
+arch cave1
+x 63
+y 2
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 63
+y 3
+attacktype 16
+end
+arch cave1
+x 63
+y 3
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 63
+y 4
+attacktype 16
+end
+arch cave1
+x 63
+y 4
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 63
+y 5
+attacktype 16
+end
+arch cave20
+x 63
+y 5
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 63
+y 6
+attacktype 16
+end
+arch blocked
+x 63
+y 6
+end
+arch permanent_lava
+name freezing water
+name_pl freezing water
+face deep_sea.111
+animation deep_sea
+dam 5
+x 63
+y 7
+attacktype 16
+end
+arch blocked
+x 63
+y 7
+end
+arch istone
+x 63
+y 8
+end
+arch blocked
+x 63
+y 8
+end
+arch istone
+x 63
+y 9
+end
+arch blocked
+x 63
+y 9
+end
+arch istone
+x 63
+y 10
+end
+arch blocked
+x 63
+y 10
+end
+arch istone
+x 63
+y 11
+end
+arch blocked
+x 63
+y 11
+end
+arch istone
+x 63
+y 12
+end
+arch blocked
+x 63
+y 12
+end
+arch istone
+x 63
+y 13
+end
+arch blocked
+x 63
+y 13
+end
+arch istone
+x 63
+y 14
+end
+arch blocked
+x 63
+y 14
+end
+arch istone
+x 63
+y 15
+end
+arch blocked
+x 63
+y 15
+end
+arch istone
+x 63
+y 16
+end
+arch blocked
+x 63
+y 16
+end
+arch istone
+x 63
+y 17
+end
+arch blocked
+x 63
+y 17
+end
+arch istone
+x 63
+y 18
+end
+arch blocked
+x 63
+y 18
+end
+arch istone
+x 63
+y 19
+end
+arch blocked
+x 63
+y 19
+end
+arch istone
+x 63
+y 20
+end
+arch blocked
+x 63
+y 20
+end
+arch istone
+x 63
+y 21
+end
+arch blocked
+x 63
+y 21
+end
+arch istone
+x 63
+y 22
+end
+arch blocked
+x 63
+y 22
+end
+arch istone
+x 63
+y 23
+end
+arch blocked
+x 63
+y 23
+end
+arch istone
+x 63
+y 24
+end
+arch blocked
+x 63
+y 24
+end
+arch istone
+x 63
+y 25
+end
+arch blocked
+x 63
+y 25
+end
+arch istone
+x 63
+y 26
+end
+arch blocked
+x 63
+y 26
+end
+arch istone
+x 63
+y 27
+end
+arch blocked
+x 63
+y 27
+end
+arch istone
+x 63
+y 28
+end
+arch blocked
+x 63
+y 28
+end
+arch istone
+x 63
+y 29
+end
+arch blocked
+x 63
+y 29
+end
+arch istone
+x 63
+y 30
+end
+arch blocked
+x 63
+y 30
+end
+arch istone
+x 63
+y 31
+end
+arch blocked
+x 63
+y 31
+end
+arch istone
+x 63
+y 32
+end
+arch blocked
+x 63
+y 32
+end
+arch istone
+x 63
+y 33
+end
+arch blocked
+x 63
+y 33
+end
+arch istone
+x 63
+y 34
+end
+arch blocked
+x 63
+y 34
+end
+arch istone
+x 63
+y 35
+end
+arch blocked
+x 63
+y 35
+end
+arch istone
+x 63
+y 36
+end
+arch blocked
+x 63
+y 36
+end
+arch istone
+x 63
+y 37
+end
+arch blocked
+x 63
+y 37
+end
+arch istone
+x 63
+y 38
+end
+arch blocked
+x 63
+y 38
+end
+arch istone
+x 63
+y 39
+end
+arch blocked
+x 63
+y 39
+end
+arch istone
+x 63
+y 40
+end
+arch blocked
+x 63
+y 40
+end
+arch istone
+x 63
+y 41
+end
+arch cave19
+x 63
+y 41
+end
+arch istone
+x 63
+y 42
+end
+arch cave1
+x 63
+y 42
+end
+arch istone
+x 63
+y 43
+end
+arch cave1
+x 63
+y 43
+end
+arch istone
+x 63
+y 44
+end
+arch cave1
+x 63
+y 44
+end
+arch istone
+x 63
+y 45
+end
+arch cave1
+x 63
+y 45
+end
+arch istone
+x 63
+y 46
+end
+arch cave1
+x 63
+y 46
+end
+arch istone
+x 63
+y 47
+end
+arch cave1
+x 63
+y 47
+end
+arch istone
+x 63
+y 48
+end
+arch cave1
+x 63
+y 48
+end
+arch istone
+x 63
+y 49
+end
+arch cave20
+x 63
+y 49
+end
+arch istone
+x 63
+y 50
+end
+arch blocked
+x 63
+y 50
+end
+arch istone
+x 63
+y 51
+end
+arch blocked
+x 63
+y 51
+end
+arch istone
+x 63
+y 52
+end
+arch blocked
+x 63
+y 52
+end
+arch istone
+x 63
+y 53
+end
+arch blocked
+x 63
+y 53
+end
+arch istone
+x 63
+y 54
+end
+arch blocked
+x 63
+y 54
+end
+arch istone
+x 63
+y 55
+end
+arch blocked
+x 63
+y 55
+end
+arch istone
+x 63
+y 56
+end
+arch blocked
+x 63
+y 56
+end
+arch blocked
+x 63
+y 57
+end
+arch blocked
+x 63
+y 58
+end
+arch blocked
+x 63
+y 59
+end
+arch blocked
+x 63
+y 60
+end
+arch blocked
+x 63
+y 61
+end
+arch blocked
+x 63
+y 62
+end
+arch blocked
+x 63
+y 63
+end
+arch polarbear
+x 3
+y 9
+end
+arch polarbear
+x 3
+y 39
+end
+arch polarbear
+x 5
+y 14
+end
+arch polarbear
+x 5
+y 19
+end
+arch polarbear
+x 5
+y 32
+end
+arch polarbear
+x 6
+y 23
+end
+arch polarbear
+x 8
+y 4
+end
+arch polarbear
+x 8
+y 45
+end
+arch polarbear
+x 9
+y 18
+end
+arch polarbear
+x 9
+y 23
+end
+arch polarbear
+x 12
+y 7
+end
+arch polarbear
+x 12
+y 40
+end
+arch polarbear
+x 14
+y 34
+end
+arch polarbear
+x 16
+y 45
+end
+arch polarbear
+x 17
+y 13
+end
+arch polarbear
+x 17
+y 27
+end
+arch polarbear
+x 17
+y 36
+end
+arch polarbear
+x 18
+y 8
+end
+arch polarbear
+x 20
+y 6
+end
+arch polarbear
+x 20
+y 39
+end
+arch polarbear
+x 21
+y 30
+end
+arch polarbear
+x 22
+y 34
+end
+arch polarbear
+x 24
+y 39
+end
+arch polarbear
+x 25
+y 44
+end
+arch polarbear
+x 28
+y 30
+end
+arch polarbear
+x 32
+y 38
+end
+arch polarbear
+x 34
+y 35
+end
+arch polarbear
+x 34
+y 40
+end
+arch polarbear
+x 36
+y 43
+end
+arch chinese_dragon
+x 49
+y 40
+end
+arch chinese_dragon
+x 50
+y 35
+end
+arch chinese_dragon
+x 50
+y 44
+end
+arch chinese_dragon
+x 52
+y 35
+end
+arch chinese_dragon
+x 52
+y 38
+end
+arch chinese_dragon
+x 53
+y 46
+end
+arch chinese_dragon
+x 54
+y 26
+end
+arch chinese_dragon
+x 54
+y 29
+end
+arch chinese_dragon
+x 55
+y 19
+end
+arch chinese_dragon
+x 56
+y 23
+end
+arch chinese_dragon
+x 56
+y 32
+end
+arch chinese_dragon
+x 56
+y 42
+end
+arch chinese_dragon
+x 57
+y 26
+end
+arch chinese_dragon
+x 57
+y 40
+end
+arch chinese_dragon
+x 57
+y 46
+end
+arch chinese_dragon
+x 58
+y 10
+end
+arch chinese_dragon
+x 58
+y 16
+end
+arch chinese_dragon
+x 58
+y 23
+end
+arch chinese_dragon
+x 58
+y 35
+end
+arch chinese_dragon
+x 59
+y 28
+end
+arch chinese_dragon
+x 59
+y 31
 end
 arch chinese_dragon
 x 60
 y 42
-end
-arch istone
-x 60
-y 43
-end
-arch istone
-x 60
-y 44
-end
-arch istone
-x 60
-y 45
-end
-arch istone
-x 60
-y 46
-end
-arch istone
-x 60
-y 47
-end
-arch random_wealth
-x 60
-y 47
-end
-arch istone
-x 60
-y 48
-end
-arch random_wealth
-x 60
-y 48
-end
-arch istone
-x 60
-y 49
-end
-arch random_wealth
-x 60
-y 49
-end
-arch istone
-x 60
-y 50
-end
-arch random_wealth
-x 60
-y 50
-end
-arch istone
-x 60
-y 51
-end
-arch cave15
-x 60
-y 51
-end
-arch istone
-x 60
-y 52
-end
-arch cave20
-x 60
-y 52
-end
-arch istone
-x 60
-y 53
-end
-arch blocked
-msg
-endmsg
-x 60
-y 53
-end
-arch istone
-x 60
-y 54
-end
-arch blocked
-msg
-endmsg
-x 60
-y 54
-end
-arch istone
-x 60
-y 55
-end
-arch blocked
-msg
-endmsg
-x 60
-y 55
-end
-arch istone
-x 60
-y 56
-end
-arch blocked
-msg
-endmsg
-x 60
-y 56
-end
-arch blocked
-msg
-endmsg
-x 60
-y 57
-end
-arch blocked
-msg
-endmsg
-x 60
-y 58
-end
-arch blocked
-msg
-endmsg
-x 60
-y 59
-end
-arch blocked
-msg
-endmsg
-x 60
-y 60
-end
-arch blocked
-msg
-endmsg
-x 60
-y 61
-end
-arch blocked
-msg
-endmsg
-x 60
-y 62
-end
-arch blocked
-msg
-endmsg
-x 60
-y 63
-end
-arch mover_5
-x 61
-level 1
-attacktype 1
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-attacktype 16
-end
-arch cave4
-x 61
-end
-arch river_n-s
-x 61
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-y 1
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-y 2
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-y 3
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-y 4
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 61
-y 5
-attacktype 16
-end
-arch istone
-x 61
-y 6
-end
-arch cave15
-x 61
-y 6
-end
-arch istone
-x 61
-y 7
-end
-arch cave1
-x 61
-y 7
-end
-arch istone
-x 61
-y 8
-end
-arch cave1
-x 61
-y 8
-end
-arch istone
-x 61
-y 9
-end
-arch cave1
-x 61
-y 9
-end
-arch istone
-x 61
-y 10
-end
-arch cave1
-x 61
-y 10
-end
-arch istone
-x 61
-y 11
-end
-arch cave1
-x 61
-y 11
-end
-arch istone
-x 61
-y 12
-end
-arch cave1
-x 61
-y 12
-end
-arch istone
-x 61
-y 13
-end
-arch cave1
-x 61
-y 13
-end
-arch istone
-x 61
-y 14
-end
-arch cave1
-x 61
-y 14
-end
-arch istone
-x 61
-y 15
-end
-arch cave14
-x 61
-y 15
-end
-arch istone
-x 61
-y 16
-end
-arch random_wealth
-x 61
-y 16
-end
-arch istone
-x 61
-y 17
-end
-arch random_wealth
-x 61
-y 17
-end
-arch istone
-x 61
-y 18
-end
-arch random_wealth
-x 61
-y 18
-end
-arch istone
-x 61
-y 19
-end
-arch random_wealth
-x 61
-y 19
-end
-arch istone
-x 61
-y 20
-end
-arch random_wealth
-x 61
-y 20
-end
-arch istone
-x 61
-y 21
-end
-arch cave15
-x 61
-y 21
-end
-arch istone
-x 61
-y 22
-end
-arch cave1
-x 61
-y 22
-end
-arch istone
-x 61
-y 23
-end
-arch cave1
-x 61
-y 23
-end
-arch istone
-x 61
-y 24
-end
-arch cave1
-x 61
-y 24
-end
-arch istone
-x 61
-y 25
-end
-arch cave1
-x 61
-y 25
-end
-arch istone
-x 61
-y 26
-end
-arch cave1
-x 61
-y 26
-end
-arch istone
-x 61
-y 27
-end
-arch cave1
-x 61
-y 27
-end
-arch istone
-x 61
-y 28
-end
-arch cave1
-x 61
-y 28
-end
-arch istone
-x 61
-y 29
-end
-arch cave1
-x 61
-y 29
-end
-arch istone
-x 61
-y 30
-end
-arch cave1
-x 61
-y 30
-end
-arch istone
-x 61
-y 31
-end
-arch cave1
-x 61
-y 31
-end
-arch istone
-x 61
-y 32
-end
-arch cave1
-x 61
-y 32
-end
-arch istone
-x 61
-y 33
-end
-arch cave1
-x 61
-y 33
-end
-arch istone
-x 61
-y 34
-end
-arch cave14
-x 61
-y 34
-end
-arch istone
-x 61
-y 35
-end
-arch istone
-x 61
-y 36
-end
-arch random_wealth
-x 61
-y 36
-end
-arch istone
-x 61
-y 37
-end
-arch random_wealth
-x 61
-y 37
-end
-arch istone
-x 61
-y 38
-end
-arch random_wealth
-x 61
-y 38
-end
-arch istone
-x 61
-y 39
-end
-arch istone
-x 61
-y 40
-end
-arch istone
-x 61
-y 41
-end
-arch istone
-x 61
-y 42
-end
-arch istone
-x 61
-y 43
-end
-arch istone
-x 61
-y 44
-end
-arch istone
-x 61
-y 45
-end
-arch istone
-x 61
-y 46
-end
-arch random_wealth
-x 61
-y 46
-end
-arch istone
-x 61
-y 47
-end
-arch random_wealth
-x 61
-y 47
-end
-arch istone
-x 61
-y 48
-end
-arch random_wealth
-x 61
-y 48
-end
-arch istone
-x 61
-y 49
-end
-arch random_wealth
-x 61
-y 49
-end
-arch istone
-x 61
-y 50
-end
-arch cave15
-x 61
-y 50
-end
-arch istone
-x 61
-y 51
-end
-arch cave20
-x 61
-y 51
-end
-arch istone
-x 61
-y 52
-end
-arch blocked
-msg
-endmsg
-x 61
-y 52
-end
-arch istone
-x 61
-y 53
-end
-arch blocked
-msg
-endmsg
-x 61
-y 53
-end
-arch istone
-x 61
-y 54
-end
-arch blocked
-msg
-endmsg
-x 61
-y 54
-end
-arch istone
-x 61
-y 55
-end
-arch blocked
-msg
-endmsg
-x 61
-y 55
-end
-arch istone
-x 61
-y 56
-end
-arch blocked
-msg
-endmsg
-x 61
-y 56
-end
-arch blocked
-msg
-endmsg
-x 61
-y 57
-end
-arch blocked
-msg
-endmsg
-x 61
-y 58
-end
-arch blocked
-msg
-endmsg
-x 61
-y 59
-end
-arch blocked
-msg
-endmsg
-x 61
-y 60
-end
-arch blocked
-msg
-endmsg
-x 61
-y 61
-end
-arch blocked
-msg
-endmsg
-x 61
-y 62
-end
-arch blocked
-msg
-endmsg
-x 61
-y 63
-end
-arch mover_5
-x 62
-level 1
-attacktype 1
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-attacktype 16
-end
-arch cave4
-x 62
-end
-arch river_n-s
-x 62
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 1
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 2
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 3
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 4
-attacktype 16
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 5
-attacktype 16
-end
-arch cave15
-x 62
-y 5
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 6
-attacktype 16
-end
-arch cave20
-x 62
-y 6
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 62
-y 7
-attacktype 16
-end
-arch blocked
-msg
-endmsg
-x 62
-y 7
-end
-arch istone
-x 62
-y 8
-end
-arch blocked
-msg
-endmsg
-x 62
-y 8
-end
-arch istone
-x 62
-y 9
-end
-arch blocked
-msg
-endmsg
-x 62
-y 9
-end
-arch istone
-x 62
-y 10
-end
-arch blocked
-msg
-endmsg
-x 62
-y 10
-end
-arch istone
-x 62
-y 11
-end
-arch blocked
-msg
-endmsg
-x 62
-y 11
-end
-arch istone
-x 62
-y 12
-end
-arch blocked
-msg
-endmsg
-x 62
-y 12
-end
-arch istone
-x 62
-y 13
-end
-arch blocked
-msg
-endmsg
-x 62
-y 13
-end
-arch istone
-x 62
-y 14
-end
-arch blocked
-msg
-endmsg
-x 62
-y 14
-end
-arch istone
-x 62
-y 15
-end
-arch cave19
-x 62
-y 15
-end
-arch istone
-x 62
-y 16
-end
-arch cave1
-x 62
-y 16
-end
-arch istone
-x 62
-y 17
-end
-arch cave1
-x 62
-y 17
-end
-arch istone
-x 62
-y 18
-end
-arch cave1
-x 62
-y 18
-end
-arch istone
-x 62
-y 19
-end
-arch cave1
-x 62
-y 19
-end
-arch istone
-x 62
-y 20
-end
-arch cave1
-x 62
-y 20
-end
-arch istone
-x 62
-y 21
-end
-arch cave20
-x 62
-y 21
-end
-arch istone
-x 62
-y 22
-end
-arch blocked
-msg
-endmsg
-x 62
-y 22
-end
-arch istone
-x 62
-y 23
-end
-arch blocked
-msg
-endmsg
-x 62
-y 23
-end
-arch istone
-x 62
-y 24
-end
-arch blocked
-msg
-endmsg
-x 62
-y 24
-end
-arch istone
-x 62
-y 25
-end
-arch blocked
-msg
-endmsg
-x 62
-y 25
-end
-arch istone
-x 62
-y 26
-end
-arch blocked
-msg
-endmsg
-x 62
-y 26
-end
-arch istone
-x 62
-y 27
-end
-arch blocked
-msg
-endmsg
-x 62
-y 27
-end
-arch istone
-x 62
-y 28
-end
-arch blocked
-msg
-endmsg
-x 62
-y 28
-end
-arch istone
-x 62
-y 29
-end
-arch blocked
-msg
-endmsg
-x 62
-y 29
-end
-arch istone
-x 62
-y 30
-end
-arch blocked
-msg
-endmsg
-x 62
-y 30
-end
-arch istone
-x 62
-y 31
-end
-arch blocked
-msg
-endmsg
-x 62
-y 31
-end
-arch istone
-x 62
-y 32
-end
-arch blocked
-msg
-endmsg
-x 62
-y 32
-end
-arch istone
-x 62
-y 33
-end
-arch blocked
-msg
-endmsg
-x 62
-y 33
-end
-arch istone
-x 62
-y 34
-end
-arch cave19
-x 62
-y 34
-end
-arch istone
-x 62
-y 35
-end
-arch cave1
-x 62
-y 35
-end
-arch istone
-x 62
-y 36
-end
-arch cave1
-x 62
-y 36
-end
-arch istone
-x 62
-y 37
-end
-arch cave1
-x 62
-y 37
-end
-arch istone
-x 62
-y 38
-end
-arch cave1
-x 62
-y 38
-end
-arch istone
-x 62
-y 39
-end
-arch cave1
-x 62
-y 39
-end
-arch istone
-x 62
-y 40
-end
-arch cave1
-x 62
-y 40
-end
-arch istone
-x 62
-y 41
-end
-arch cave14
-x 62
-y 41
-end
-arch istone
-x 62
-y 42
-end
-arch istone
-x 62
-y 43
-end
-arch istone
-x 62
-y 44
-end
-arch istone
-x 62
-y 45
-end
-arch random_wealth
-x 62
-y 45
-end
-arch istone
-x 62
-y 46
-end
-arch random_wealth
-x 62
-y 46
-end
-arch istone
-x 62
-y 47
-end
-arch random_wealth
-x 62
-y 47
-end
-arch istone
-x 62
-y 48
-end
-arch random_wealth
-x 62
-y 48
-end
-arch istone
-x 62
-y 49
-end
-arch cave15
-x 62
-y 49
-end
-arch istone
-x 62
-y 50
-end
-arch cave20
-x 62
-y 50
-end
-arch istone
-x 62
-y 51
-end
-arch blocked
-msg
-endmsg
-x 62
-y 51
-end
-arch istone
-x 62
-y 52
-end
-arch blocked
-msg
-endmsg
-x 62
-y 52
-end
-arch istone
-x 62
-y 53
-end
-arch blocked
-msg
-endmsg
-x 62
-y 53
-end
-arch istone
-x 62
-y 54
-end
-arch blocked
-msg
-endmsg
-x 62
-y 54
-end
-arch istone
-x 62
-y 55
-end
-arch blocked
-msg
-endmsg
-x 62
-y 55
-end
-arch istone
-x 62
-y 56
-end
-arch blocked
-msg
-endmsg
-x 62
-y 56
-end
-arch blocked
-msg
-endmsg
-x 62
-y 57
-end
-arch blocked
-msg
-endmsg
-x 62
-y 58
-end
-arch blocked
-msg
-endmsg
-x 62
-y 59
-end
-arch blocked
-msg
-endmsg
-x 62
-y 60
-end
-arch blocked
-msg
-endmsg
-x 62
-y 61
-end
-arch blocked
-msg
-endmsg
-x 62
-y 62
-end
-arch blocked
-msg
-endmsg
-x 62
-y 63
-end
-arch istone
-x 63
-end
-arch cave19
-x 63
-end
-arch istone
-x 63
-y 1
-end
-arch cave1
-x 63
-y 1
-end
-arch istone
-x 63
-y 2
-end
-arch cave1
-x 63
-y 2
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 63
-y 3
-attacktype 16
-end
-arch cave1
-x 63
-y 3
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 63
-y 4
-attacktype 16
-end
-arch cave1
-x 63
-y 4
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 63
-y 5
-attacktype 16
-end
-arch cave20
-x 63
-y 5
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 63
-y 6
-attacktype 16
-end
-arch blocked
-msg
-endmsg
-x 63
-y 6
-end
-arch permanent_lava
-name freezing water
-name_pl freezing water
-face deep_sea.111
-animation deep_sea
-dam 5
-x 63
-y 7
-attacktype 16
-end
-arch blocked
-msg
-endmsg
-x 63
-y 7
-end
-arch istone
-x 63
-y 8
-end
-arch blocked
-msg
-endmsg
-x 63
-y 8
-end
-arch istone
-x 63
-y 9
-end
-arch blocked
-msg
-endmsg
-x 63
-y 9
-end
-arch istone
-x 63
-y 10
-end
-arch blocked
-msg
-endmsg
-x 63
-y 10
-end
-arch istone
-x 63
-y 11
-end
-arch blocked
-msg
-endmsg
-x 63
-y 11
-end
-arch istone
-x 63
-y 12
-end
-arch blocked
-msg
-endmsg
-x 63
-y 12
-end
-arch istone
-x 63
-y 13
-end
-arch blocked
-msg
-endmsg
-x 63
-y 13
-end
-arch istone
-x 63
-y 14
-end
-arch blocked
-msg
-endmsg
-x 63
-y 14
-end
-arch istone
-x 63
-y 15
-end
-arch blocked
-msg
-endmsg
-x 63
-y 15
-end
-arch istone
-x 63
-y 16
-end
-arch blocked
-msg
-endmsg
-x 63
-y 16
-end
-arch istone
-x 63
-y 17
-end
-arch blocked
-msg
-endmsg
-x 63
-y 17
-end
-arch istone
-x 63
-y 18
-end
-arch blocked
-msg
-endmsg
-x 63
-y 18
-end
-arch istone
-x 63
-y 19
-end
-arch blocked
-msg
-endmsg
-x 63
-y 19
-end
-arch istone
-x 63
-y 20
-end
-arch blocked
-msg
-endmsg
-x 63
-y 20
-end
-arch istone
-x 63
-y 21
-end
-arch blocked
-msg
-endmsg
-x 63
-y 21
-end
-arch istone
-x 63
-y 22
-end
-arch blocked
-msg
-endmsg
-x 63
-y 22
-end
-arch istone
-x 63
-y 23
-end
-arch blocked
-msg
-endmsg
-x 63
-y 23
-end
-arch istone
-x 63
-y 24
-end
-arch blocked
-msg
-endmsg
-x 63
-y 24
-end
-arch istone
-x 63
-y 25
-end
-arch blocked
-msg
-endmsg
-x 63
-y 25
-end
-arch istone
-x 63
-y 26
-end
-arch blocked
-msg
-endmsg
-x 63
-y 26
-end
-arch istone
-x 63
-y 27
-end
-arch blocked
-msg
-endmsg
-x 63
-y 27
-end
-arch istone
-x 63
-y 28
-end
-arch blocked
-msg
-endmsg
-x 63
-y 28
-end
-arch istone
-x 63
-y 29
-end
-arch blocked
-msg
-endmsg
-x 63
-y 29
-end
-arch istone
-x 63
-y 30
-end
-arch blocked
-msg
-endmsg
-x 63
-y 30
-end
-arch istone
-x 63
-y 31
-end
-arch blocked
-msg
-endmsg
-x 63
-y 31
-end
-arch istone
-x 63
-y 32
-end
-arch blocked
-msg
-endmsg
-x 63
-y 32
-end
-arch istone
-x 63
-y 33
-end
-arch blocked
-msg
-endmsg
-x 63
-y 33
-end
-arch istone
-x 63
-y 34
-end
-arch blocked
-msg
-endmsg
-x 63
-y 34
-end
-arch istone
-x 63
-y 35
-end
-arch blocked
-msg
-endmsg
-x 63
-y 35
-end
-arch istone
-x 63
-y 36
-end
-arch blocked
-msg
-endmsg
-x 63
-y 36
-end
-arch istone
-x 63
-y 37
-end
-arch blocked
-msg
-endmsg
-x 63
-y 37
-end
-arch istone
-x 63
-y 38
-end
-arch blocked
-msg
-endmsg
-x 63
-y 38
-end
-arch istone
-x 63
-y 39
-end
-arch blocked
-msg
-endmsg
-x 63
-y 39
-end
-arch istone
-x 63
-y 40
-end
-arch blocked
-msg
-endmsg
-x 63
-y 40
-end
-arch istone
-x 63
-y 41
-end
-arch cave19
-x 63
-y 41
-end
-arch istone
-x 63
-y 42
-end
-arch cave1
-x 63
-y 42
-end
-arch istone
-x 63
-y 43
-end
-arch cave1
-x 63
-y 43
-end
-arch istone
-x 63
-y 44
-end
-arch cave1
-x 63
-y 44
-end
-arch istone
-x 63
-y 45
-end
-arch cave1
-x 63
-y 45
-end
-arch istone
-x 63
-y 46
-end
-arch cave1
-x 63
-y 46
-end
-arch istone
-x 63
-y 47
-end
-arch cave1
-x 63
-y 47
-end
-arch istone
-x 63
-y 48
-end
-arch cave1
-x 63
-y 48
-end
-arch istone
-x 63
-y 49
-end
-arch cave20
-x 63
-y 49
-end
-arch istone
-x 63
-y 50
-end
-arch blocked
-msg
-endmsg
-x 63
-y 50
-end
-arch istone
-x 63
-y 51
-end
-arch blocked
-msg
-endmsg
-x 63
-y 51
-end
-arch istone
-x 63
-y 52
-end
-arch blocked
-msg
-endmsg
-x 63
-y 52
-end
-arch istone
-x 63
-y 53
-end
-arch blocked
-msg
-endmsg
-x 63
-y 53
-end
-arch istone
-x 63
-y 54
-end
-arch blocked
-msg
-endmsg
-x 63
-y 54
-end
-arch istone
-x 63
-y 55
-end
-arch blocked
-msg
-endmsg
-x 63
-y 55
-end
-arch istone
-x 63
-y 56
-end
-arch blocked
-msg
-endmsg
-x 63
-y 56
-end
-arch blocked
-msg
-endmsg
-x 63
-y 57
-end
-arch blocked
-msg
-endmsg
-x 63
-y 58
-end
-arch blocked
-msg
-endmsg
-x 63
-y 59
-end
-arch blocked
-msg
-endmsg
-x 63
-y 60
-end
-arch blocked
-msg
-endmsg
-x 63
-y 61
-end
-arch blocked
-msg
-endmsg
-x 63
-y 62
-end
-arch blocked
-msg
-endmsg
-x 63
-y 63
 end

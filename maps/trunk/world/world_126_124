@@ -10301,15 +10301,6 @@ x 41
 y 25
 elevation -664
 end
-arch big_galleon
-name rum runner
-name_pl rum runner
-slaying world_124_124
-hp 11
-sp 11
-x 41
-y 25
-end
 arch sea
 x 41
 y 26
@@ -11347,28 +11338,6 @@ x 45
 y 31
 elevation 1155
 end
-arch s_ship
-name whaler
-name_pl Sturdy Ship
-slaying world_127_125
-msg
-The whaling ship sets sail!
-With fresh barrels of booze and a 
-quick breeze the ship starts it's
-voyage as air is captured in the white
-fabric. The vessel travels southerly
-and the air becomes increasingly
-colder. The ship then takes anchor at
-a cold and desolate island in the
-south sea. The captian will go no
-further south for fear of ice. 
-
-endmsg
-hp 12
-sp 27
-x 45
-y 31
-end
 arch shallow_sea
 x 45
 y 32
@@ -11611,8 +11580,7 @@ y 29
 elevation 2430
 end
 arch tower_tob
-name storehouse
-name_pl storehouse
+name Storehouse
 slaying /whalingoutpost/taverns/storehouse1
 hp 7
 sp 11
@@ -12466,4 +12434,35 @@ arch sea
 x 49
 y 49
 elevation -3866
+end
+arch big_galleon
+name rum runner
+name_pl rum runner
+slaying world_124_124
+hp 11
+sp 11
+x 41
+y 25
+end
+arch s_ship
+name whaler
+name_pl Sturdy Ship
+slaying world_127_125
+msg
+The whaling ship sets sail!
+With fresh barrels of booze and a
+quick breeze the ship starts it's
+voyage as air is captured in the white
+fabric. The vessel travels southerly
+and the air becomes increasingly
+colder. The ship then takes anchor at
+a cold and desolate island in the
+south sea. The captian will go no
+further south for fear of ice.
+
+endmsg
+hp 12
+sp 27
+x 45
+y 31
 end

@@ -1,15 +1,16 @@
 arch map
-name ixalovh
+name Temple of Ixalovh
+difficulty 1
 region wolfsburg
+width 20
+height 20
+enter_x 2
+enter_y 6
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/3/2004
 endmsg
-width 20
-height 20
-enter_x 2
-enter_y 6
 outdoor 1
 end
 arch treed_hills
@@ -889,9 +890,9 @@ x 9
 y 8
 end
 arch altar_ixalovh
-level 120
 x 9
 y 8
+level 120
 end
 arch light4
 x 9

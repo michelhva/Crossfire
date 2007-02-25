@@ -2850,8 +2850,7 @@ y 5
 elevation 3812
 end
 arch small_temple
-name hole
-name_pl snow cave
+name Ice Cave
 slaying /whalingoutpost/misc/icehole1
 face ihole.111
 hp 36
@@ -9539,13 +9538,6 @@ x 35
 y 18
 elevation 7758
 end
-arch s_castle
-slaying /whalingoutpost/misc/castle1
-hp 31
-sp 57
-x 35
-y 18
-end
 arch s_mountain
 x 35
 y 19
@@ -13497,4 +13489,12 @@ arch deep_sea
 x 49
 y 49
 elevation -12781
+end
+arch s_castle
+name Glacier Keep
+slaying /whalingoutpost/misc/castle1
+hp 31
+sp 57
+x 35
+y 18
 end
