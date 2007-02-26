@@ -1,12 +1,13 @@
 arch map
-name <untitled>
+name Tower of the Stars
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
 Date: Fri Feb 11 16:07:21 1994
 endmsg
-width 16
-height 16
 end
 arch small_stones
 end
@@ -488,6 +489,14 @@ x 7
 y 4
 end
 arch cobblestones2
+x 7
+y 5
+end
+arch swall_1_1_half
+x 7
+y 5
+end
+arch swall_1_4_half
 x 7
 y 5
 end
@@ -512,6 +521,14 @@ x 7
 y 7
 end
 arch cobblestones2
+x 7
+y 8
+end
+arch swall_1_2_half
+x 7
+y 8
+end
+arch swall_1_4_half
 x 7
 y 8
 end
@@ -679,6 +696,14 @@ arch cobblestones2
 x 9
 y 5
 end
+arch swall_1_1_half
+x 9
+y 5
+end
+arch swall_1_3_half
+x 9
+y 5
+end
 arch dwall_0
 x 9
 y 5
@@ -700,6 +725,14 @@ x 9
 y 7
 end
 arch cobblestones2
+x 9
+y 8
+end
+arch swall_1_2_half
+x 9
+y 8
+end
+arch swall_1_3_half
 x 9
 y 8
 end

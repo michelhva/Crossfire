@@ -1,4 +1,8 @@
 arch map
+name Tower of the Stars, Officers
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
@@ -8,7 +12,7 @@ end
 arch woodfloor
 y 6
 end
-arch dwall3_3
+arch dwall_2_2_2
 y 6
 end
 arch woodfloor
@@ -26,7 +30,7 @@ end
 arch woodfloor
 y 9
 end
-arch dwall_3_1
+arch dwall_2_2_1
 y 9
 end
 arch woodfloor
@@ -819,7 +823,7 @@ y 6
 end
 arch magic_mouth
 msg
-Major's Quarters  
+Major's Quarters
 endmsg
 x 8
 y 7
@@ -830,7 +834,7 @@ y 7
 end
 arch magic_mouth
 msg
-Captains' Quarters   
+Captains' Quarters
 endmsg
 x 8
 y 8

@@ -1,4 +1,8 @@
 arch map
+name Tower of the Stars
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
@@ -206,9 +210,9 @@ x 8
 y 6
 end
 arch pyro_book
-value 1600
 x 8
 y 6
+value 1600
 randomitems none
 arch spell_comet
 end
