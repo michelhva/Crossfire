@@ -1,18 +1,28 @@
 arch map
-name GroundLevel
+name Tower of the Stars, Ground Level
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
 Date: Fri Feb 11 16:20:28 1994
 endmsg
-width 16
-height 16
+end
+arch marble
+y 3
 end
 arch dwall_2_2_2
 y 3
 end
+arch marble
+y 4
+end
 arch dwall_3_2
 y 4
+end
+arch marble
+y 5
 end
 arch dwall_3_2
 y 5
@@ -47,18 +57,35 @@ end
 arch dwall3_3
 y 9
 end
+arch marble
+y 10
+end
 arch dwall_3_2
 y 10
+end
+arch marble
+y 11
 end
 arch dwall_3_2
 y 11
 end
+arch marble
+y 12
+end
 arch dwall_2_2_1
 y 12
+end
+arch marble
+x 1
+y 2
 end
 arch dwall_2_2_2
 x 1
 y 2
+end
+arch marble
+x 1
+y 3
 end
 arch dwall_4
 x 1
@@ -142,13 +169,25 @@ arch dwall_4
 x 1
 y 12
 end
+arch marble
+x 1
+y 13
+end
 arch dwall_3_2
 x 1
 y 13
 end
+arch marble
+x 1
+y 14
+end
 arch dwall_2_2_1
 x 1
 y 14
+end
+arch marble
+x 2
+y 1
 end
 arch dwall_2_2_2
 x 2
@@ -241,11 +280,18 @@ end
 arch dwall_4
 x 2
 y 14
+end
+arch marble
+x 2
+y 15
 end
 arch dwall_2_2_1
 x 2
 y 15
 end
+arch marble
+x 3
+end
 arch dwall_2_2_2
 x 3
 end
@@ -328,6 +374,10 @@ end
 arch dwall_4
 x 3
 y 14
+end
+arch marble
+x 3
+y 15
 end
 arch dwall_3_1
 x 3
@@ -961,6 +1011,9 @@ arch dwall_3_1
 x 11
 y 15
 end
+arch marble
+x 12
+end
 arch dwall_2_2_3
 x 12
 end
@@ -1044,9 +1097,17 @@ arch dwall_4
 x 12
 y 14
 end
+arch marble
+x 12
+y 15
+end
 arch dwall_3_1
 x 12
 y 15
+end
+arch marble
+x 13
+y 1
 end
 arch dwall3_3
 x 13
@@ -1136,13 +1197,25 @@ arch dwall_4
 x 13
 y 14
 end
+arch marble
+x 13
+y 15
+end
 arch dwall_2_2_4
 x 13
 y 15
 end
+arch marble
+x 14
+y 1
+end
 arch dwall_2_2_3
 x 14
 y 1
+end
+arch marble
+x 14
+y 2
 end
 arch dwall_4
 x 14
@@ -1240,21 +1313,41 @@ arch dwall_4
 x 14
 y 13
 end
+arch marble
+x 14
+y 14
+end
 arch dwall_2_2_4
 x 14
 y 14
+end
+arch marble
+x 15
+y 2
 end
 arch dwall_2_2_3
 x 15
 y 2
 end
-arch dwall_3_4
+arch marble
 x 15
 y 3
 end
 arch dwall_3_4
 x 15
+y 3
+end
+arch marble
+x 15
 y 4
+end
+arch dwall_3_4
+x 15
+y 4
+end
+arch marble
+x 15
+y 5
 end
 arch dwall_3_4
 x 15
@@ -1292,17 +1385,33 @@ arch dwall_3_4
 x 15
 y 9
 end
-arch dwall_3_4
+arch marble
 x 15
 y 10
 end
 arch dwall_3_4
 x 15
+y 10
+end
+arch marble
+x 15
 y 11
 end
 arch dwall_3_4
 x 15
+y 11
+end
+arch marble
+x 15
 y 12
+end
+arch dwall_3_4
+x 15
+y 12
+end
+arch marble
+x 15
+y 13
 end
 arch dwall_2_2_4
 x 15

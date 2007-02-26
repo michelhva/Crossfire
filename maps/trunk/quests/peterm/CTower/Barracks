@@ -1,5 +1,8 @@
 arch map
-name Barracks
+name Tower of the Stars, Barracks
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
@@ -9,7 +12,7 @@ end
 arch woodfloor
 y 6
 end
-arch dwall3_3
+arch dwall_2_2_2
 y 6
 end
 arch dungeon_magic
@@ -393,7 +396,7 @@ y 6
 end
 arch magic_mouth
 msg
-Speak the password  
+Speak the password
 endmsg
 x 4
 y 7
@@ -404,7 +407,7 @@ y 7
 end
 arch magic_mouth
 msg
-Speak the password  
+Speak the password
 endmsg
 x 4
 y 8

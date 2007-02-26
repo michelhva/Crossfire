@@ -1,4 +1,8 @@
 arch map
+name Tower of the Stars, Dungeon
+difficulty 1
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
@@ -42,22 +46,19 @@ end
 arch dungeon_floor
 y 6
 end
-arch awall_2_2_1
+arch awall_3_2
 y 6
 end
 arch dungeon_floor
 y 7
 end
-arch stair_3_up
-name To the Servant level
-slaying Servants
-sp 7
+arch awall_2_1_1
 y 7
 end
 arch dungeon_floor
 y 8
 end
-arch awall_1_1
+arch awall_2_1_1
 y 8
 end
 arch dungeon_floor
@@ -144,7 +145,7 @@ master, but he's a monster.  There
 is worse than being a traitor
 @match traitor|Traitor|betray
 Yes, I betrayed my master.  Who wouldnt
-if they knew his evil scheme? 
+if they knew his evil scheme?
 @match scheme|Scheme
 He tries to make himself immortal,
 but he's lost his soul in his
@@ -178,6 +179,18 @@ x 1
 y 6
 end
 arch dungeon_floor
+x 1
+y 7
+end
+arch dungeon_floor
+x 1
+y 7
+end
+arch stair_3_up
+name To the Servant level
+slaying Servants
+hp 1
+sp 7
 x 1
 y 7
 end
