@@ -1,5 +1,5 @@
 arch map
-name Demonology EarthStudy
+name Tower of Demonolgy Earth Study
 reset_timeout 7200
 difficulty 7
 width 9
@@ -65,33 +65,21 @@ arch dwall_2_2_1
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch woodfloor
@@ -160,8 +148,6 @@ x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -244,21 +230,12 @@ x 2
 y 8
 end
 arch blocked
-msg
-endmsg
 x 2
 y 9
 end
 arch cave4
 x 2
 y 10
-end
-arch pentagram_111
-hp 6
-sp 6
-x 2
-y 11
-connected 2
 end
 arch cave2
 x 2
@@ -331,8 +308,6 @@ x 3
 y 8
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
@@ -429,8 +404,6 @@ x 4
 y 8
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
@@ -478,13 +451,6 @@ y 5
 connected 2
 lifesave 1
 end
-arch pentagram_111
-hp 3
-sp 12
-x 5
-y 5
-connected 1
-end
 arch woodfloor
 x 5
 y 6
@@ -522,8 +488,6 @@ x 5
 y 8
 end
 arch blocked
-msg
-endmsg
 x 5
 y 9
 end
@@ -637,38 +601,26 @@ x 6
 y 8
 end
 arch blocked
-msg
-endmsg
 x 6
 y 9
 end
 arch blocked
-msg
-endmsg
 x 6
 y 10
 end
 arch blocked
-msg
-endmsg
 x 6
 y 11
 end
 arch blocked
-msg
-endmsg
 x 6
 y 12
 end
 arch blocked
-msg
-endmsg
 x 6
 y 13
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
@@ -700,13 +652,13 @@ msg
 This is the Earth Master's book of
 names. You open the pages and flip
 through.
-Inside are the names of many 
+Inside are the names of many
 earth elementals.
 One page in particular is very
 dog-eared.  The Earth Master apparently
 had many uses for this particular
 elemental.
-The name is written as 
+The name is written as
 Griknaldamandarakar
 endmsg
 x 7
@@ -775,38 +727,26 @@ x 7
 y 8
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
 arch blocked
-msg
-endmsg
 x 7
 y 11
 end
 arch blocked
-msg
-endmsg
 x 7
 y 12
 end
 arch blocked
-msg
-endmsg
 x 7
 y 13
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
@@ -881,38 +821,40 @@ x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
 arch blocked
-msg
-endmsg
 x 8
 y 11
 end
 arch blocked
-msg
-endmsg
 x 8
 y 12
 end
 arch blocked
-msg
-endmsg
 x 8
 y 13
 end
 arch blocked
-msg
-endmsg
 x 8
 y 14
+end
+arch pentagram_111
+hp 6
+sp 6
+x 2
+y 11
+connected 2
+end
+arch pentagram_111
+hp 3
+sp 12
+x 5
+y 5
+connected 1
 end

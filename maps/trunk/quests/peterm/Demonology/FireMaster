@@ -1,12 +1,13 @@
 arch map
-name GroundLevel
+name Tower of Demonolgy Fire Study
+difficulty 1
+width 9
+height 9
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Sat Apr 30 20:50:08 1994
 endmsg
-width 9
-height 9
 end
 arch woodfloor
 end
@@ -260,7 +261,6 @@ y 4
 end
 arch wizard
 name Master Fire Summoner
-type 0
 Str 0
 Dex 0
 Con 6
@@ -273,15 +273,16 @@ maxsp 140
 exp 24000
 dam 20
 ac 0
+x 4
+y 4
 speed 0.400000
 attack_movement 7
 level 30
-immune 4
+type 0
 carrying 100
 monster 1
 can_cast_spell 1
-x 4
-y 4
+immune 4
 arch spell_summon_fire_elemental
 end
 arch key2
@@ -476,6 +477,10 @@ arch woodfloor
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 7
+end
 arch woodfloor
 x 7
 y 7
@@ -484,10 +489,6 @@ arch stair_down
 slaying FireTower2
 hp 7
 sp 7
-x 7
-y 7
-end
-arch dungeon_magic
 x 7
 y 7
 end

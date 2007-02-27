@@ -1,12 +1,13 @@
 arch map
-name GroundLevel
+name Tower of Demonolgy Fire Tower
+difficulty 1
+width 9
+height 9
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Sat Apr 30 20:50:08 1994
 endmsg
-x 9
-y 9
 end
 arch woodfloor
 end
@@ -21,8 +22,8 @@ dam 10
 ac -9
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 1
@@ -40,8 +41,8 @@ ac -9
 y 1
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 2
@@ -59,8 +60,8 @@ ac -9
 y 2
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 3
@@ -78,8 +79,8 @@ ac -9
 y 3
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 4
@@ -97,8 +98,8 @@ ac -9
 y 4
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 5
@@ -116,8 +117,8 @@ ac -9
 y 5
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 6
@@ -135,8 +136,8 @@ ac -9
 y 6
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 7
@@ -154,8 +155,8 @@ ac -9
 y 7
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 y 8
@@ -173,8 +174,8 @@ ac -9
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 1
@@ -192,8 +193,8 @@ ac -9
 x 1
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 1
@@ -249,8 +250,8 @@ x 1
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 2
@@ -268,8 +269,8 @@ ac -9
 x 2
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 2
@@ -318,8 +319,8 @@ x 2
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 3
@@ -337,8 +338,8 @@ ac -9
 x 3
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 3
@@ -413,8 +414,8 @@ x 3
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 4
@@ -432,8 +433,8 @@ ac -9
 x 4
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 4
@@ -482,8 +483,8 @@ x 4
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 5
@@ -501,8 +502,8 @@ ac -9
 x 5
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 5
@@ -582,8 +583,8 @@ x 5
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 6
@@ -601,8 +602,8 @@ ac -9
 x 6
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 6
@@ -661,8 +662,8 @@ x 6
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 7
@@ -680,8 +681,8 @@ ac -9
 x 7
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 7
@@ -715,7 +716,7 @@ end
 arch magic_mouth
 msg
 to the Fire Master's room.  You sense
-great danger above you. 
+great danger above you.
 endmsg
 x 7
 y 7
@@ -750,8 +751,8 @@ x 7
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -769,8 +770,8 @@ ac -9
 x 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -791,8 +792,8 @@ x 8
 y 1
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -813,8 +814,8 @@ x 8
 y 2
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -835,8 +836,8 @@ x 8
 y 3
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -857,8 +858,8 @@ x 8
 y 4
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -879,8 +880,8 @@ x 8
 y 5
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -901,8 +902,8 @@ x 8
 y 6
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -923,8 +924,8 @@ x 8
 y 7
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end
 arch woodfloor
 x 8
@@ -945,6 +946,6 @@ x 8
 y 8
 speed -0.050000
 level 25
-immune 2
 alive 1
+immune 2
 end

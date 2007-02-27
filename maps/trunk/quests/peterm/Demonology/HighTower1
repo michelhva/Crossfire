@@ -1,13 +1,13 @@
 arch map
-name HighTower1
+name Tower of Demonolgy High Tower
+difficulty 20
+width 9
+height 9
 msg
 Creator: PeterM
 Email: peterm@soda.berkeley.edu
 Date: Mon May 30 18:25:46 1994
 endmsg
-x 9
-y 9
-level 20
 end
 arch woodfloor
 end
@@ -329,7 +329,7 @@ arch magic_mouth
 msg
 Four elementals, one of each kind,
 examine you to see if you have
-visited the four towers of mastery. 
+visited the four towers of mastery.
 Only those who have stood at their
 tops in the small pentagrams may pass.
 endmsg
