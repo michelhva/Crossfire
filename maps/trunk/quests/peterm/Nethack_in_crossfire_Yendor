@@ -1,14 +1,15 @@
 arch map
-name Nethack_in_crossfire_Yendor
+name Nethack in Crossfire -- Yendor
+difficulty 1
+width 69
+height 69
+enter_x 32
+enter_y 3
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon May  7 01:26:51 2001
 endmsg
-width 69
-height 69
-enter_x 32
-enter_y 3
 end
 arch pstone_4
 end
@@ -10063,10 +10064,10 @@ x 31
 y 12
 end
 arch locked_door1
+slaying Acid_Key
 msg
 You need the Acid Key to open this door.
 endmsg
-slaying Acid_Key
 x 31
 y 12
 end
@@ -10103,11 +10104,11 @@ x 31
 y 18
 end
 arch locked_door1
+slaying Steel_Key
 msg
 You need the Steel Key to pass this
 door.
 endmsg
-slaying Steel_Key
 x 31
 y 18
 end
@@ -10136,10 +10137,10 @@ x 31
 y 24
 end
 arch locked_door1
+slaying The_Wiz
 msg
 You need the Wizard key to pass.
 endmsg
-slaying The_Wiz
 x 31
 y 24
 end
@@ -10414,10 +10415,10 @@ x 32
 y 12
 end
 arch locked_door1
+slaying Acid_Key
 msg
 You need the Acid Key to open this door.
 endmsg
-slaying Acid_Key
 x 32
 y 12
 end
@@ -10454,11 +10455,11 @@ x 32
 y 18
 end
 arch locked_door1
+slaying Steel_Key
 msg
 You need the Steel Key to pass this
 door.
 endmsg
-slaying Steel_Key
 x 32
 y 18
 end
@@ -10487,10 +10488,10 @@ x 32
 y 24
 end
 arch locked_door1
+slaying The_Wiz
 msg
 You need the Wizard key to pass.
 endmsg
-slaying The_Wiz
 x 32
 y 24
 end
@@ -10765,10 +10766,10 @@ x 33
 y 12
 end
 arch locked_door1
+slaying Acid_Key
 msg
 You need the Acid Key to open this door.
 endmsg
-slaying Acid_Key
 x 33
 y 12
 end
@@ -10805,11 +10806,11 @@ x 33
 y 18
 end
 arch locked_door1
+slaying Steel_Key
 msg
 You need the Steel Key to pass this
 door.
 endmsg
-slaying Steel_Key
 x 33
 y 18
 end
@@ -10838,10 +10839,10 @@ x 33
 y 24
 end
 arch locked_door1
+slaying The_Wiz
 msg
 You need the Wizard key to pass.
 endmsg
-slaying The_Wiz
 x 33
 y 24
 end
@@ -20396,9 +20397,9 @@ x 62
 y 61
 end
 arch bolt
-nrof 4
 x 62
 y 61
+nrof 4
 end
 arch pstone_4
 x 62
@@ -20731,11 +20732,11 @@ x 63
 y 62
 end
 arch axe_4
+x 63
+y 62
 weight 13000
 magic -3
 cursed 1
-x 63
-y 62
 end
 arch pstone_4
 x 63
@@ -21044,9 +21045,9 @@ x 64
 y 61
 end
 arch arrow
-nrof 15
 x 64
 y 61
+nrof 15
 end
 arch pstone_4
 x 64
@@ -21059,11 +21060,11 @@ end
 arch bolt
 title of inaccuracy
 wc -5
+x 64
+y 62
 nrof 7
 value 0
 cursed 1
-x 64
-y 62
 end
 arch pstone_4
 x 64
@@ -21372,9 +21373,9 @@ x 65
 y 61
 end
 arch bolt
-nrof 20
 x 65
 y 61
+nrof 20
 end
 arch pstone_4
 x 65
@@ -21385,9 +21386,9 @@ x 65
 y 62
 end
 arch bolt
-nrof 4
 x 65
 y 62
+nrof 4
 end
 arch pstone_4
 x 65
@@ -22023,9 +22024,9 @@ x 67
 y 67
 end
 arch teleporter
-speed_left -0.200000
 x 67
 y 67
+speed_left -0.200000
 end
 arch pstone_4
 x 67
@@ -22587,9 +22588,9 @@ y 68
 end
 arch g_worm
 name Purple Worm
-carrying 100
 x 14
 y 9
+carrying 100
 arch key2
 name Acid Key
 slaying Acid_Key
@@ -22599,10 +22600,10 @@ arch golem_necro
 name Steel Golem
 hp 30000
 exp 200000
-carrying 100
-randomitems none
 x 27
 y 14
+carrying 100
+randomitems none
 arch key2
 name Steel Key
 slaying Steel_Key
@@ -22612,10 +22613,10 @@ arch big_wiz
 name wizard of Yendor
 hp 7500
 exp 300000
-level 30
-carrying 600
 x 33
 y 30
+level 30
+carrying 600
 arch amulet_lifesave
 name Amulet of Yendor
 slaying Amulet of Yendor
@@ -22624,9 +22625,9 @@ lifesave 0
 end
 end
 arch demon_lord
-carrying 100
 x 44
 y 35
+carrying 100
 arch key2
 name Wizard Key
 slaying The_Wiz

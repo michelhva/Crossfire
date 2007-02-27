@@ -1,14 +1,15 @@
 arch map
-name ogre_chief
+name Ogre Chief
+difficulty 1
+width 31
+height 33
+enter_x 6
+enter_y 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun 17 19:08:40 2000
 endmsg
-width 31
-height 33
-enter_x 6
-enter_y 6
 end
 arch large_stones
 end
@@ -217,10 +218,10 @@ x 1
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 27500
 x 1
 y 1
+speed_left -0.340000
+carrying 27500
 arch skill_throwing
 end
 arch shield
@@ -241,10 +242,10 @@ x 1
 y 2
 end
 arch madman
-speed_left -0.340000
-carrying 19920
 x 1
 y 2
+speed_left -0.340000
+carrying 19920
 arch skill_throwing
 end
 arch club
@@ -374,10 +375,10 @@ x 1
 y 22
 end
 arch madman
-speed_left -0.340000
-carrying 20560
 x 1
 y 22
+speed_left -0.340000
+carrying 20560
 arch skill_throwing
 end
 arch bow
@@ -406,10 +407,10 @@ x 1
 y 24
 end
 arch madman
-speed_left -0.340000
-carrying 18100
 x 1
 y 24
+speed_left -0.340000
+carrying 18100
 arch key2
 slaying 1335937847
 end
@@ -447,10 +448,10 @@ x 1
 y 28
 end
 arch madman
-speed_left -0.340000
-carrying 30
 x 1
 y 28
+speed_left -0.340000
+carrying 30
 arch skill_throwing
 end
 arch goldcoin
@@ -478,10 +479,10 @@ x 1
 y 31
 end
 arch ogre
-speed_left -0.260000
-carrying 7000
 x 1
 y 31
+speed_left -0.260000
+carrying 7000
 arch foot
 name ogre's foot
 food 52
@@ -652,9 +653,9 @@ x 2
 y 22
 end
 arch generate_gnoll
-speed_left -0.108000
 x 2
 y 22
+speed_left -0.108000
 end
 arch large_stones
 x 2
@@ -669,9 +670,9 @@ x 2
 y 24
 end
 arch generate_gnoll
-speed_left -0.108000
 x 2
 y 24
+speed_left -0.108000
 end
 arch large_stones
 x 2
@@ -698,9 +699,9 @@ x 2
 y 28
 end
 arch gnoll
-speed_left -0.300000
 x 2
 y 28
+speed_left -0.300000
 end
 arch large_stones
 x 2
@@ -757,10 +758,10 @@ x 3
 y 4
 end
 arch madman
-speed_left -0.340000
-carrying 94000
 x 3
 y 4
+speed_left -0.340000
+carrying 94000
 arch skill_throwing
 end
 arch quarterstaff
@@ -792,9 +793,9 @@ x 3
 y 7
 end
 arch generate_madman
-speed_left -0.120000
 x 3
 y 7
+speed_left -0.120000
 end
 arch large_stones
 x 3
@@ -841,21 +842,21 @@ x 3
 y 13
 end
 arch brazier
-no_pass 0
 x 3
 y 13
+no_pass 0
 end
 arch scroll_2
 name notes
+title of June
 msg
 <undecipherable text>
 endmsg
-title of June
 exp 13
-level 8
-value 136
 x 3
 y 13
+level 8
+value 136
 end
 arch large_stones
 x 3
@@ -954,10 +955,10 @@ x 3
 y 29
 end
 arch madman
-speed_left -0.340000
-carrying 18525
 x 3
 y 29
+speed_left -0.340000
+carrying 18525
 arch skill_throwing
 end
 arch bow
@@ -1046,10 +1047,10 @@ x 4
 y 7
 end
 arch madman
-speed_left -0.340000
-carrying 82600
 x 4
 y 7
+speed_left -0.340000
+carrying 82600
 arch skill_throwing
 end
 arch dagger
@@ -1125,12 +1126,13 @@ x 4
 y 14
 end
 arch cauldron
-no_pick 1
 x 4
 y 14
+no_pick 1
 end
 arch tome
 name lab notes
+title of philosophical items
 msg
 Herein is described an alchemical procedure:
 The dust of piercing vision may be made using the
@@ -1138,12 +1140,11 @@ following ingredients:
 7 carrots
 water of sapphire
 endmsg
-title of philosophical items
 exp 104
-level 13
-value 1040
 x 4
 y 14
+level 13
+value 1040
 end
 arch large_stones
 x 4
@@ -1210,10 +1211,10 @@ x 4
 y 25
 end
 arch ogre
-speed_left -0.260000
-carrying 19000
 x 4
 y 25
+speed_left -0.260000
+carrying 19000
 arch skill_throwing
 end
 arch club
@@ -1312,9 +1313,9 @@ x 5
 y 6
 end
 arch generate_gnoll
-speed_left -0.108000
 x 5
 y 6
+speed_left -0.108000
 end
 arch large_stones
 x 5
@@ -1429,10 +1430,10 @@ x 5
 y 20
 end
 arch madman
-speed_left -0.340000
-carrying 96050
 x 5
 y 20
+speed_left -0.340000
+carrying 96050
 arch skill_throwing
 end
 arch bow
@@ -1487,10 +1488,10 @@ x 5
 y 26
 end
 arch madman
-speed_left -0.340000
-carrying 27200
 x 5
 y 26
+speed_left -0.340000
+carrying 27200
 arch skill_throwing
 end
 arch crossbow
@@ -1506,10 +1507,10 @@ x 5
 y 27
 end
 arch madman
-speed_left -0.340000
-carrying 20998
 x 5
 y 27
+speed_left -0.340000
+carrying 20998
 arch skill_throwing
 end
 arch club
@@ -1586,10 +1587,10 @@ x 6
 y 3
 end
 arch madman
-speed_left -0.340000
-carrying 12000
 x 6
 y 3
+speed_left -0.340000
+carrying 12000
 arch skill_throwing
 end
 arch dagger
@@ -1641,10 +1642,10 @@ x 6
 y 10
 end
 arch madman
-speed_left -0.340000
-carrying 2000
 x 6
 y 10
+speed_left -0.340000
+carrying 2000
 arch skill_throwing
 end
 arch dagger
@@ -1727,9 +1728,9 @@ x 6
 y 23
 end
 arch generate_madman
-speed_left -0.120000
 x 6
 y 23
+speed_left -0.120000
 end
 arch large_stones
 x 6
@@ -1752,9 +1753,9 @@ x 6
 y 26
 end
 arch generate_madman
-speed_left -0.120000
 x 6
 y 26
+speed_left -0.120000
 end
 arch large_stones
 x 6
@@ -1773,9 +1774,9 @@ x 6
 y 30
 end
 arch generate_madman
-speed_left -0.120000
 x 6
 y 30
+speed_left -0.120000
 end
 arch large_stones
 x 6
@@ -2042,10 +2043,10 @@ x 8
 y 2
 end
 arch gnoll
-speed_left -0.300000
-carrying 2250
 x 8
 y 2
+speed_left -0.300000
+carrying 2250
 arch foot
 name gnoll's foot
 value 20
@@ -2082,10 +2083,10 @@ x 8
 y 6
 end
 arch madman
-speed_left -0.340000
-carrying 14000
 x 8
 y 6
+speed_left -0.340000
+carrying 14000
 arch skill_throwing
 end
 arch club
@@ -2102,10 +2103,10 @@ x 8
 y 8
 end
 arch madman
-speed_left -0.340000
-carrying 225
 x 8
 y 8
+speed_left -0.340000
+carrying 225
 arch skill_throwing
 end
 arch goldcoin
@@ -2129,10 +2130,10 @@ x 8
 y 12
 end
 arch ogre
-speed_left -0.260000
-carrying 5599
 x 8
 y 12
+speed_left -0.260000
+carrying 5599
 arch liver
 name ogre's liver
 food 2
@@ -2153,10 +2154,10 @@ x 8
 y 14
 end
 arch madman
-speed_left -0.340000
-carrying 9000
 x 8
 y 14
+speed_left -0.340000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -2183,10 +2184,10 @@ x 8
 y 19
 end
 arch gnoll
-speed_left -0.300000
-carrying 15250
 x 8
 y 19
+speed_left -0.300000
+carrying 15250
 arch head
 name gnoll's head
 value 30
@@ -2201,9 +2202,9 @@ x 8
 y 20
 end
 arch brazier
-no_pass 0
 x 8
 y 20
+no_pass 0
 end
 arch large_stones
 x 8
@@ -2480,10 +2481,10 @@ x 9
 y 29
 end
 arch madman
-speed_left -0.340000
-carrying 11000
 x 9
 y 29
+speed_left -0.340000
+carrying 11000
 arch skill_throwing
 end
 arch small_shield
@@ -2567,10 +2568,10 @@ x 10
 y 8
 end
 arch madman
-speed_left -0.340000
-carrying 33548
 x 10
 y 8
+speed_left -0.340000
+carrying 33548
 arch skill_throwing
 end
 arch bow
@@ -2687,10 +2688,10 @@ x 10
 y 20
 end
 arch madman
-speed_left -0.340000
-carrying 8100
 x 10
 y 20
+speed_left -0.340000
+carrying 8100
 arch skill_throwing
 end
 arch club
@@ -2731,10 +2732,10 @@ x 10
 y 24
 end
 arch ogre
-speed_left -0.260000
-carrying 23000
 x 10
 y 24
+speed_left -0.260000
+carrying 23000
 arch head
 name ogre's head
 food 52
@@ -2785,10 +2786,10 @@ x 10
 y 29
 end
 arch gnoll
-speed_left -0.300000
-carrying 9000
 x 10
 y 29
+speed_left -0.300000
+carrying 9000
 arch club
 end
 end
@@ -2827,10 +2828,10 @@ x 11
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 19000
 x 11
 y 1
+speed_left -0.340000
+carrying 19000
 arch skill_throwing
 end
 arch club
@@ -2887,9 +2888,9 @@ x 11
 y 9
 end
 arch ogre
-speed_left -0.260000
 x 11
 y 9
+speed_left -0.260000
 arch skill_throwing
 end
 end
@@ -2898,10 +2899,10 @@ x 11
 y 10
 end
 arch madman
-speed_left -0.340000
-carrying 23100
 x 11
 y 10
+speed_left -0.340000
+carrying 23100
 arch skill_throwing
 end
 arch quarterstaff
@@ -3040,10 +3041,10 @@ x 11
 y 27
 end
 arch madman
-speed_left -0.340000
-carrying 31025
 x 11
 y 27
+speed_left -0.340000
+carrying 31025
 arch skill_throwing
 end
 arch bow
@@ -3138,10 +3139,10 @@ x 12
 y 7
 end
 arch madman
-speed_left -0.340000
-carrying 13275
 x 12
 y 7
+speed_left -0.340000
+carrying 13275
 arch skill_throwing
 end
 arch bow
@@ -3242,10 +3243,10 @@ x 12
 y 18
 end
 arch madman
-speed_left -0.340000
-carrying 9000
 x 12
 y 18
+speed_left -0.340000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -3370,10 +3371,10 @@ x 13
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 20000
 x 13
 y 1
+speed_left -0.340000
+carrying 20000
 arch skill_throwing
 end
 arch shortsword
@@ -3402,10 +3403,10 @@ x 13
 y 5
 end
 arch gnoll
-speed_left -0.300000
-carrying 17370
 x 13
 y 5
+speed_left -0.300000
+carrying 17370
 arch foot
 name gnoll's foot
 value 20
@@ -3423,9 +3424,9 @@ x 13
 y 6
 end
 arch generate_gnoll
-speed_left -0.108000
 x 13
 y 6
+speed_left -0.108000
 end
 arch large_stones
 x 13
@@ -3604,10 +3605,10 @@ x 13
 y 28
 end
 arch gnoll
-speed_left -0.300000
-carrying 6750
 x 13
 y 28
+speed_left -0.300000
+carrying 6750
 arch head
 name gnoll's head
 value 30
@@ -3704,10 +3705,10 @@ x 14
 y 8
 end
 arch gnoll
-speed_left -0.300000
-carrying 9000
 x 14
 y 8
+speed_left -0.300000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -3814,10 +3815,10 @@ x 14
 y 21
 end
 arch madman
-speed_left -0.340000
-carrying 9000
 x 14
 y 21
+speed_left -0.340000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -3844,9 +3845,9 @@ x 14
 y 24
 end
 arch generate_madman
-speed_left -0.120000
 x 14
 y 24
+speed_left -0.120000
 end
 arch large_stones
 x 14
@@ -3869,10 +3870,10 @@ x 14
 y 27
 end
 arch madman
-speed_left -0.340000
-carrying 45550
 x 14
 y 27
+speed_left -0.340000
+carrying 45550
 arch skill_throwing
 end
 arch crossbow
@@ -3908,9 +3909,9 @@ x 14
 y 30
 end
 arch madman
-speed_left -0.340000
 x 14
 y 30
+speed_left -0.340000
 arch skill_throwing
 end
 end
@@ -3965,10 +3966,10 @@ x 15
 y 5
 end
 arch gnoll
-speed_left -0.300000
-carrying 28775
 x 15
 y 5
+speed_left -0.300000
+carrying 28775
 arch head
 name gnoll's head
 value 30
@@ -3995,10 +3996,10 @@ x 15
 y 7
 end
 arch gnoll
-speed_left -0.300000
-carrying 9000
 x 15
 y 7
+speed_left -0.300000
+carrying 9000
 arch club
 end
 end
@@ -4031,10 +4032,10 @@ x 15
 y 11
 end
 arch gnoll
-speed_left -0.300000
-carrying 19000
 x 15
 y 11
+speed_left -0.300000
+carrying 19000
 arch club
 title of Gnarg
 dam 7
@@ -4058,11 +4059,11 @@ end
 arch ogre
 name Ogre Chief
 hp 150
+x 15
+y 13
 speed_left -0.260000
 carrying 49015
 randomitems none
-x 15
-y 13
 arch leather_armour
 magic 3
 end
@@ -4142,10 +4143,10 @@ x 15
 y 21
 end
 arch gnoll
-speed_left -0.300000
-carrying 43350
 x 15
 y 21
+speed_left -0.300000
+carrying 43350
 arch head
 name gnoll's head
 value 30
@@ -4199,9 +4200,9 @@ x 15
 y 27
 end
 arch brazier
-no_pass 0
 x 15
 y 27
+no_pass 0
 end
 arch large_stones
 x 15
@@ -4258,9 +4259,9 @@ x 16
 y 2
 end
 arch generate_gnoll
-speed_left -0.108000
 x 16
 y 2
+speed_left -0.108000
 end
 arch large_stones
 x 16
@@ -4311,10 +4312,10 @@ x 16
 y 9
 end
 arch gnoll
-speed_left -0.300000
-carrying 8500
 x 16
 y 9
+speed_left -0.300000
+carrying 8500
 arch stoneaxe
 end
 end
@@ -4379,10 +4380,10 @@ x 16
 y 17
 end
 arch madman
-speed_left -0.340000
-carrying 120650
 x 16
 y 17
+speed_left -0.340000
+carrying 120650
 arch skill_throwing
 end
 arch t_dagger
@@ -4432,10 +4433,10 @@ x 16
 y 21
 end
 arch madman
-speed_left -0.340000
-carrying 200
 x 16
 y 21
+speed_left -0.340000
+carrying 200
 arch skill_throwing
 end
 arch scroll_new
@@ -4462,18 +4463,18 @@ x 16
 y 23
 end
 arch barrel
-no_pass 0
 x 16
 y 23
+no_pass 0
 end
 arch large_stones
 x 16
 y 24
 end
 arch generate_ogre
-speed_left -0.104000
 x 16
 y 24
+speed_left -0.104000
 end
 arch large_stones
 x 16
@@ -4516,10 +4517,10 @@ x 16
 y 30
 end
 arch madman
-speed_left -0.340000
-carrying 10000
 x 16
 y 30
+speed_left -0.340000
+carrying 10000
 arch skill_throwing
 end
 arch small_shield
@@ -4576,9 +4577,9 @@ x 17
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 17
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 17
@@ -4609,9 +4610,9 @@ x 17
 y 9
 end
 arch brazier
-no_pass 0
 x 17
 y 9
+no_pass 0
 end
 arch large_stones
 x 17
@@ -4634,9 +4635,9 @@ x 17
 y 12
 end
 arch generate_madman
-speed_left -0.120000
 x 17
 y 12
+speed_left -0.120000
 end
 arch large_stones
 x 17
@@ -4707,9 +4708,9 @@ x 17
 y 21
 end
 arch gnoll
-speed_left -0.300000
 x 17
 y 21
+speed_left -0.300000
 end
 arch large_stones
 x 17
@@ -4748,9 +4749,9 @@ x 17
 y 26
 end
 arch madman
-speed_left -0.340000
 x 17
 y 26
+speed_left -0.340000
 arch skill_throwing
 end
 end
@@ -4767,10 +4768,10 @@ x 17
 y 28
 end
 arch ogre
-speed_left -0.260000
-carrying 20269
 x 17
 y 28
+speed_left -0.260000
+carrying 20269
 arch arm
 name ogre's arm
 food 152
@@ -4804,9 +4805,9 @@ x 17
 y 31
 end
 arch brazier
-no_pass 0
 x 17
 y 31
+no_pass 0
 end
 arch large_stones
 x 17
@@ -4859,10 +4860,10 @@ x 18
 y 6
 end
 arch madman
-speed_left -0.340000
-carrying 14500
 x 18
 y 6
+speed_left -0.340000
+carrying 14500
 arch skill_throwing
 end
 arch sword_2
@@ -4917,10 +4918,10 @@ x 18
 y 13
 end
 arch madman
-speed_left -0.340000
-carrying 105
 x 18
 y 13
+speed_left -0.340000
+carrying 105
 arch skill_throwing
 end
 arch goldcoin
@@ -4942,10 +4943,10 @@ end
 arch chest_2
 slaying 1335937847
 hp -1
-carrying 148365
-randomitems chest
 x 18
 y 15
+carrying 148365
+randomitems chest
 arch helmet
 end
 arch silvercoin
@@ -5002,10 +5003,10 @@ x 18
 y 16
 end
 arch ogre
-speed_left -0.260000
-carrying 11500
 x 18
 y 16
+speed_left -0.260000
+carrying 11500
 arch skill_throwing
 end
 arch t_dagger
@@ -5019,10 +5020,10 @@ x 18
 y 17
 end
 arch madman
-speed_left -0.340000
-carrying 10000
 x 18
 y 17
+speed_left -0.340000
+carrying 10000
 arch skill_throwing
 end
 arch shortsword
@@ -5033,10 +5034,10 @@ x 18
 y 18
 end
 arch madman
-speed_left -0.340000
-carrying 37150
 x 18
 y 18
+speed_left -0.340000
+carrying 37150
 arch skill_throwing
 end
 arch crossbow
@@ -5058,9 +5059,9 @@ x 18
 y 19
 end
 arch generate_madman
-speed_left -0.120000
 x 18
 y 19
+speed_left -0.120000
 end
 arch large_stones
 x 18
@@ -5083,10 +5084,10 @@ x 18
 y 22
 end
 arch ogre
+x 18
+y 22
 speed_left -0.260000
 carrying 9360
-x 18
-y 22
 arch skill_throwing
 end
 arch club
@@ -5124,10 +5125,10 @@ x 18
 y 27
 end
 arch madman
-speed_left -0.340000
-carrying 14100
 x 18
 y 27
+speed_left -0.340000
+carrying 14100
 arch skill_throwing
 end
 arch club
@@ -5184,9 +5185,9 @@ x 19
 y 1
 end
 arch gnoll
-speed_left -0.300000
 x 19
 y 1
+speed_left -0.300000
 end
 arch large_stones
 x 19
@@ -5451,9 +5452,9 @@ x 20
 y 6
 end
 arch ogre
-speed_left -0.260000
 x 20
 y 6
+speed_left -0.260000
 arch skill_throwing
 end
 end
@@ -5502,9 +5503,9 @@ x 20
 y 12
 end
 arch gnoll
-speed_left -0.300000
 x 20
 y 12
+speed_left -0.300000
 arch skill_throwing
 end
 end
@@ -5533,10 +5534,10 @@ x 20
 y 15
 end
 arch gnoll
-speed_left -0.300000
-carrying 2070
 x 20
 y 15
+speed_left -0.300000
+carrying 2070
 arch skill_throwing
 end
 arch dagger
@@ -5614,9 +5615,9 @@ x 20
 y 24
 end
 arch brazier
-no_pass 0
 x 20
 y 24
+no_pass 0
 end
 arch large_stones
 x 20
@@ -5689,10 +5690,10 @@ x 21
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 31200
 x 21
 y 1
+speed_left -0.340000
+carrying 31200
 arch skill_throwing
 end
 arch spear
@@ -5721,10 +5722,10 @@ x 21
 y 4
 end
 arch gnoll
-speed_left -0.300000
-carrying 22360
 x 21
 y 4
+speed_left -0.300000
+carrying 22360
 arch skill_throwing
 end
 arch bow
@@ -5795,9 +5796,9 @@ x 21
 y 12
 end
 arch generate_madman
-speed_left -0.120000
 x 21
 y 12
+speed_left -0.120000
 end
 arch large_stones
 x 21
@@ -5828,9 +5829,9 @@ x 21
 y 16
 end
 arch generate_madman
-speed_left -0.120000
 x 21
 y 16
+speed_left -0.120000
 end
 arch large_stones
 x 21
@@ -5929,10 +5930,10 @@ x 21
 y 30
 end
 arch ogre
-speed_left -0.260000
-carrying 140000
 x 21
 y 30
+speed_left -0.260000
+carrying 140000
 arch fl_corpse
 name ogre's corpse
 food 602
@@ -5967,10 +5968,10 @@ x 22
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 2000
 x 22
 y 1
+speed_left -0.340000
+carrying 2000
 arch skill_throwing
 end
 arch dagger
@@ -5981,10 +5982,10 @@ x 22
 y 2
 end
 arch gnoll
-speed_left -0.300000
-carrying 1600
 x 22
 y 2
+speed_left -0.300000
+carrying 1600
 arch dagger
 title of Madness
 attacktype 33
@@ -6005,10 +6006,10 @@ x 22
 y 4
 end
 arch madman
-speed_left -0.340000
-carrying 25200
 x 22
 y 4
+speed_left -0.340000
+carrying 25200
 arch skill_throwing
 end
 arch shortsword
@@ -6039,10 +6040,10 @@ x 22
 y 7
 end
 arch madman
-speed_left -0.340000
-carrying 9000
 x 22
 y 7
+speed_left -0.340000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -6061,10 +6062,10 @@ x 22
 y 10
 end
 arch madman
-speed_left -0.340000
-carrying 2000
 x 22
 y 10
+speed_left -0.340000
+carrying 2000
 arch skill_throwing
 end
 arch dagger
@@ -6119,19 +6120,19 @@ x 22
 y 21
 end
 arch generate_gnoll
-speed_left -0.108000
 x 22
 y 21
+speed_left -0.108000
 end
 arch large_stones
 x 22
 y 22
 end
 arch madman
-speed_left -0.340000
-carrying 37049
 x 22
 y 22
+speed_left -0.340000
+carrying 37049
 arch skill_throwing
 end
 arch bow
@@ -6180,10 +6181,10 @@ x 22
 y 28
 end
 arch madman
-speed_left -0.340000
-carrying 14255
 x 22
 y 28
+speed_left -0.340000
+carrying 14255
 arch skill_throwing
 end
 arch bow
@@ -6327,10 +6328,10 @@ x 23
 y 14
 end
 arch gnoll
-speed_left -0.300000
-carrying 10000
 x 23
 y 14
+speed_left -0.300000
+carrying 10000
 arch skill_throwing
 end
 arch shortsword
@@ -6369,10 +6370,10 @@ x 23
 y 19
 end
 arch ogre
-speed_left -0.260000
-carrying 21000
 x 23
 y 19
+speed_left -0.260000
+carrying 21000
 arch head
 name ogre's head
 food 52
@@ -6491,10 +6492,10 @@ x 24
 y 1
 end
 arch gnoll
-speed_left -0.300000
-carrying 12250
 x 24
 y 1
+speed_left -0.300000
+carrying 12250
 arch foot
 name gnoll's foot
 value 20
@@ -6509,9 +6510,9 @@ x 24
 y 2
 end
 arch generate_madman
-speed_left -0.120000
 x 24
 y 2
+speed_left -0.120000
 end
 arch large_stones
 x 24
@@ -6578,10 +6579,10 @@ x 24
 y 14
 end
 arch madman
-speed_left -0.340000
-carrying 9000
 x 24
 y 14
+speed_left -0.340000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -6628,10 +6629,10 @@ x 24
 y 21
 end
 arch madman
-speed_left -0.340000
-carrying 22000
 x 24
 y 21
+speed_left -0.340000
+carrying 22000
 arch skill_throwing
 end
 arch dagger
@@ -6659,10 +6660,10 @@ x 24
 y 23
 end
 arch madman
-speed_left -0.340000
-carrying 87025
 x 24
 y 23
+speed_left -0.340000
+carrying 87025
 arch skill_throwing
 end
 arch bow
@@ -6710,9 +6711,9 @@ x 24
 y 29
 end
 arch gnoll
-speed_left -0.300000
 x 24
 y 29
+speed_left -0.300000
 end
 arch large_stones
 x 24
@@ -6809,10 +6810,10 @@ x 25
 y 11
 end
 arch madman
-speed_left -0.340000
-carrying 18900
 x 25
 y 11
+speed_left -0.340000
+carrying 18900
 arch skill_throwing
 end
 arch club
@@ -6926,10 +6927,10 @@ x 25
 y 25
 end
 arch madman
-speed_left -0.340000
-carrying 114200
 x 25
 y 25
+speed_left -0.340000
+carrying 114200
 arch skill_throwing
 end
 arch crossbow
@@ -7025,10 +7026,10 @@ x 26
 y 3
 end
 arch gnoll
-speed_left -0.300000
-carrying 45000
 x 26
 y 3
+speed_left -0.300000
+carrying 45000
 arch fl_corpse
 name gnoll's corpse
 value 100
@@ -7071,10 +7072,10 @@ x 26
 y 8
 end
 arch ogre
-speed_left -0.260000
-carrying 26000
 x 26
 y 8
+speed_left -0.260000
+carrying 26000
 arch head
 name ogre's head
 food 52
@@ -7163,19 +7164,19 @@ x 26
 y 18
 end
 arch gnoll
-speed_left -0.300000
 x 26
 y 18
+speed_left -0.300000
 end
 arch large_stones
 x 26
 y 19
 end
 arch madman
-speed_left -0.340000
-carrying 61900
 x 26
 y 19
+speed_left -0.340000
+carrying 61900
 arch skill_throwing
 end
 arch crossbow
@@ -7221,10 +7222,10 @@ x 26
 y 23
 end
 arch gnoll
-speed_left -0.300000
-carrying 10000
 x 26
 y 23
+speed_left -0.300000
+carrying 10000
 arch skill_throwing
 end
 arch shortsword
@@ -7235,9 +7236,9 @@ x 26
 y 24
 end
 arch generate_madman
-speed_left -0.120000
 x 26
 y 24
+speed_left -0.120000
 end
 arch large_stones
 x 26
@@ -7330,19 +7331,19 @@ x 27
 y 4
 end
 arch generate_gnoll
-speed_left -0.108000
 x 27
 y 4
+speed_left -0.108000
 end
 arch large_stones
 x 27
 y 5
 end
 arch gnoll
-speed_left -0.300000
-carrying 9000
 x 27
 y 5
+speed_left -0.300000
+carrying 9000
 arch skill_throwing
 end
 arch club
@@ -7353,10 +7354,10 @@ x 27
 y 6
 end
 arch madman
-speed_left -0.340000
-carrying 31425
 x 27
 y 6
+speed_left -0.340000
+carrying 31425
 arch skill_throwing
 end
 arch bow
@@ -7392,10 +7393,10 @@ x 27
 y 10
 end
 arch madman
-speed_left -0.340000
-carrying 84000
 x 27
 y 10
+speed_left -0.340000
+carrying 84000
 arch skill_throwing
 end
 arch club
@@ -7493,10 +7494,10 @@ x 27
 y 24
 end
 arch madman
-speed_left -0.340000
-carrying 69550
 x 27
 y 24
+speed_left -0.340000
+carrying 69550
 arch skill_throwing
 end
 arch axe_2
@@ -7531,9 +7532,9 @@ x 27
 y 28
 end
 arch generate_gnoll
-speed_left -0.108000
 x 27
 y 28
+speed_left -0.108000
 end
 arch large_stones
 x 27
@@ -7626,10 +7627,10 @@ x 28
 y 10
 end
 arch ogre
-speed_left -0.260000
-carrying 6199
 x 28
 y 10
+speed_left -0.260000
+carrying 6199
 arch hand
 name ogre's hand
 food 4
@@ -7648,10 +7649,10 @@ x 28
 y 11
 end
 arch madman
-speed_left -0.340000
-carrying 114000
 x 28
 y 11
+speed_left -0.340000
+carrying 114000
 arch skill_throwing
 end
 arch quarterstaff
@@ -7701,10 +7702,10 @@ x 28
 y 16
 end
 arch madman
-speed_left -0.340000
-carrying 26475
 x 28
 y 16
+speed_left -0.340000
+carrying 26475
 arch skill_throwing
 end
 arch bow
@@ -7784,10 +7785,10 @@ x 28
 y 26
 end
 arch gnoll
-speed_left -0.300000
-carrying 10000
 x 28
 y 26
+speed_left -0.300000
+carrying 10000
 arch shortsword
 end
 end
@@ -7812,10 +7813,10 @@ x 28
 y 30
 end
 arch madman
-speed_left -0.340000
-carrying 14740
 x 28
 y 30
+speed_left -0.340000
+carrying 14740
 arch skill_throwing
 end
 arch sword_2
@@ -7847,10 +7848,10 @@ x 29
 y 1
 end
 arch madman
-speed_left -0.340000
-carrying 65250
 x 29
 y 1
+speed_left -0.340000
+carrying 65250
 arch skill_throwing
 end
 arch axe_2
@@ -7875,9 +7876,9 @@ x 29
 y 2
 end
 arch generate_madman
-speed_left -0.120000
 x 29
 y 2
+speed_left -0.120000
 end
 arch large_stones
 x 29
@@ -7916,9 +7917,9 @@ x 29
 y 8
 end
 arch gnoll
-speed_left -0.300000
 x 29
 y 8
+speed_left -0.300000
 end
 arch large_stones
 x 29
@@ -7933,10 +7934,10 @@ x 29
 y 10
 end
 arch madman
-speed_left -0.340000
-carrying 24050
 x 29
 y 10
+speed_left -0.340000
+carrying 24050
 arch skill_throwing
 end
 arch bow
@@ -8060,9 +8061,9 @@ x 29
 y 28
 end
 arch generate_madman
-speed_left -0.120000
 x 29
 y 28
+speed_left -0.120000
 end
 arch large_stones
 x 29

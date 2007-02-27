@@ -1,14 +1,14 @@
 arch map
 name DragonQuest
+width 41
+height 41
+enter_x 2
+enter_y 2
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 16:41:17 1994
 endmsg
-width 41
-height 41
-enter_x 2
-enter_y 2
 end
 arch blocked
 end
@@ -3331,6 +3331,7 @@ y 16
 end
 arch spear
 name Ruggilli's Whisker
+slaying dragon
 msg
 You see Ruggilli's whisker.
 It is said that to help his priests
@@ -3341,7 +3342,6 @@ weapon.
 Not many may use this weapon without
 being devoured by it.
 endmsg
-slaying dragon
 Str 8
 Dex 8
 Con 8
@@ -3355,6 +3355,8 @@ dam 100
 luck 5
 wc 8
 ac 8
+x 14
+y 16
 nrof 0
 level 127
 attacktype 1179904
@@ -3372,8 +3374,6 @@ reflect_missile 1
 reflect_spell 1
 xrays 1
 lifesave 1
-x 14
-y 16
 end
 arch pstone_2
 x 14
@@ -9475,9 +9475,9 @@ x 8
 y 28
 end
 arch big_elec
-carrying 100
 x 11
 y 32
+carrying 100
 arch key2
 slaying SecondDoor
 end
@@ -9495,18 +9495,18 @@ x 30
 y 9
 end
 arch bone_drake
-carrying 100
 x 31
 y 18
+carrying 100
 arch key2
 slaying LastDoor
 end
 end
 arch dragonman
 Pow 4
-carrying 100
 x 34
 y 35
+carrying 100
 arch key2
 slaying FourthDoor
 end
