@@ -1,3 +1,112 @@
+2007-02-27 04:04  rjtanner
+
+	* quests/peterm/Nethack_in_crossfire_Yendor,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  quests/peterm/quests/TitanGate,
+	  quests/peterm/quests/dragon_quest,
+	  quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/wyvern_quest: Renamed maps (which used the
+	  actual file name or tweaked their spelling and capitilization).
+	  Widened some of the doorways in the quests/wyvern_quest map.
+	  Other changes are due to Map Editor reformatting.
+
+2007-02-27 03:50  rjtanner
+
+	* quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/Fire1, quests/peterm/FireTemple/Fire2,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/FourthFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Added missing floor tiles. Reset the darkness
+	  to level 5 on some of the maps (editor claimed that the range
+	  had to be 0-5 and the map was using 6.) Other changes are due to
+	  Map Editor reformatting.
+
+2007-02-27 03:35  rjtanner
+
+	* quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-27 03:22  rjtanner
+
+	* quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/AirStudy,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/ApprenticeLevel,
+	  quests/peterm/Demonology/Demon1,
+	  quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/EarthStudy,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/FireStudy,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/HighTower2,
+	  quests/peterm/Demonology/HighTowerTop,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/Demonology/WaterStudy,
+	  quests/peterm/Demonology/WaterTower1,
+	  quests/peterm/Demonology/WaterTower2: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Replaced walls that were using the wrong
+	  sections next to doors. Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-26 05:47  rjtanner
+
+	* quests/peterm/CTower/Barracks, quests/peterm/CTower/Chamber,
+	  quests/peterm/CTower/Dungeon, quests/peterm/CTower/GroundLevel,
+	  quests/peterm/CTower/Laboratory, quests/peterm/CTower/Library,
+	  quests/peterm/CTower/Officers, quests/peterm/CTower/Servants,
+	  quests/peterm/CTower/Study, quests/peterm/CTower/TowerTop:
+	  Renamed maps (which were either unnamed or used the actual file
+	  name). Minor cosmetic updates to maps - wrong wall sections at
+	  corners or missing walls. Added missing floor tiles beneath
+	  walls. Other changes are due to Map Editor reformatting.
+
+2007-02-25 23:12  ryo_saeba
+
+	* templates/guild/GuildList: Shouldn't have committed that test
+	  guild :)
+
+2007-02-25 23:09  ryo_saeba
+
+	* templates/guild/GuildList, templates/guild/mainfloor: Guild's
+	  name should be GUILD_TEMPLATE to be conform to README.TXT in
+	  scripts directory.
+
 2007-02-25 01:49  rjtanner
 
 	* whalingoutpost/houses/fishershouse1,
