@@ -1,13 +1,13 @@
 arch map
 name DragonQuest--FireLord
+darkness 5
+width 16
+height 31
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 23:44:33 1994
 endmsg
-width 16
-height 31
-darkness 5
 end
 arch blocked
 end
@@ -903,9 +903,9 @@ x 5
 y 1
 end
 arch pyro_book
-value 2400
 x 5
 y 1
+value 2400
 randomitems none
 arch spell_dragonbreath
 end
@@ -2448,11 +2448,11 @@ exp 300000
 dam 50
 wc -30
 ac -17
+x 5
+y 8
 speed -0.600000
 level 30
 carrying 17100
-x 5
-y 8
 arch key2
 slaying FireLordKey
 end

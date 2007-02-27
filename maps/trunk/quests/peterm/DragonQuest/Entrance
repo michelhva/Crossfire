@@ -1,12 +1,13 @@
 arch map
-name DragonQuest Entrance
+name DragonQuest -- Entrance
+difficulty 1
+width 27
+height 16
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 16:41:17 1994
 endmsg
-width 27
-height 16
 end
 arch pstone_1
 end
@@ -1979,24 +1980,24 @@ arch cave4
 x 23
 end
 arch pstone_2
-no_pass 1
 x 23
 y 1
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 2
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 3
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 4
+no_pass 1
 end
 arch pstone_2
 x 23

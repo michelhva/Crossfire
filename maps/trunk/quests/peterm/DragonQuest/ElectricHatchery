@@ -1,16 +1,16 @@
 arch map
-name Electric Hatchery
+name DragonQuest -- Electric Hatchery
+difficulty 1
+darkness 5
+width 16
+height 30
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 23:44:33 1994
 endmsg
-y 30
-invisible 5
 end
 arch blocked
-msg
-endmsg
 end
 arch pstone_2
 y 1
@@ -43,53 +43,33 @@ arch cave23
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch pstone_2
@@ -105,18 +85,12 @@ arch cave23
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch pstone_2
@@ -141,8 +115,6 @@ arch cave23
 y 24
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch cave24
@@ -152,13 +124,9 @@ arch cave23
 y 27
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch pstone_2
@@ -212,14 +180,10 @@ x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -240,20 +204,14 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
@@ -366,8 +324,6 @@ x 1
 y 28
 end
 arch blocked
-msg
-endmsg
 x 1
 y 29
 end
@@ -499,11 +455,10 @@ y 21
 end
 arch generate_dragon
 other_arch elec_dragon
-vulnerable 4
-immune 8
 x 2
 y 21
 speed 0.004000
+vulnerable 8
 end
 arch pstone_2
 x 2
@@ -549,10 +504,9 @@ y 27
 end
 arch generate_dragon
 other_arch big_elec
-vulnerable 4
-immune 8
 x 2
 y 27
+vulnerable 8
 end
 arch pstone_2
 x 2
@@ -563,8 +517,6 @@ x 2
 y 28
 end
 arch blocked
-msg
-endmsg
 x 2
 y 29
 end
@@ -588,10 +540,9 @@ y 3
 end
 arch generate_dragon
 other_arch big_elec
-vulnerable 4
-immune 8
 x 3
 y 3
+vulnerable 8
 end
 arch pstone_2
 x 3
@@ -631,11 +582,10 @@ y 10
 end
 arch generate_dragon
 other_arch elec_dragon
-vulnerable 4
-immune 8
 x 3
 y 10
 speed 0.004000
+vulnerable 8
 end
 arch pstone_2
 x 3
@@ -1056,8 +1006,6 @@ x 5
 y 28
 end
 arch blocked
-msg
-endmsg
 x 5
 y 29
 end
@@ -1093,10 +1041,9 @@ y 6
 end
 arch generate_dragon
 other_arch big_elec
-vulnerable 4
-immune 8
 x 6
 y 6
+vulnerable 8
 end
 arch pstone_2
 x 6
@@ -1167,8 +1114,6 @@ x 6
 y 20
 end
 arch blocked
-msg
-endmsg
 x 6
 y 21
 end
@@ -1205,20 +1150,14 @@ x 6
 y 25
 end
 arch blocked
-msg
-endmsg
 x 6
 y 26
 end
 arch blocked
-msg
-endmsg
 x 6
 y 27
 end
 arch blocked
-msg
-endmsg
 x 6
 y 28
 end
@@ -1278,11 +1217,10 @@ y 8
 end
 arch generate_dragon
 other_arch elec_dragon
-vulnerable 4
-immune 8
 x 7
 y 8
 speed 0.004000
+vulnerable 8
 end
 arch pstone_2
 x 7
@@ -1345,8 +1283,6 @@ x 7
 y 19
 end
 arch blocked
-msg
-endmsg
 x 7
 y 20
 end
@@ -1657,11 +1593,10 @@ y 15
 end
 arch generate_dragon
 other_arch elec_dragon
-vulnerable 4
-immune 8
 x 9
 y 15
 speed 0.004000
+vulnerable 8
 end
 arch pstone_2
 x 9
@@ -1739,8 +1674,6 @@ x 9
 y 29
 end
 arch blocked
-msg
-endmsg
 x 10
 end
 arch pstone_2
@@ -1761,10 +1694,9 @@ y 3
 end
 arch generate_dragon
 other_arch big_elec
-vulnerable 4
-immune 8
 x 10
 y 3
+vulnerable 8
 end
 arch pstone_2
 x 10
@@ -1902,8 +1834,6 @@ x 10
 y 29
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch pstone_2
@@ -2059,8 +1989,6 @@ x 11
 y 29
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch pstone_2
@@ -2113,11 +2041,10 @@ y 9
 end
 arch generate_dragon
 other_arch elec_dragon
-vulnerable 4
-immune 8
 x 12
 y 9
 speed 0.004000
+vulnerable 8
 end
 arch pstone_2
 x 12
@@ -2248,8 +2175,6 @@ x 12
 y 29
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch pstone_2
@@ -2373,26 +2298,18 @@ x 13
 y 20
 end
 arch blocked
-msg
-endmsg
 x 13
 y 21
 end
 arch blocked
-msg
-endmsg
 x 13
 y 22
 end
 arch blocked
-msg
-endmsg
 x 13
 y 23
 end
 arch blocked
-msg
-endmsg
 x 13
 y 24
 end
@@ -2413,14 +2330,10 @@ x 13
 y 26
 end
 arch blocked
-msg
-endmsg
 x 13
 y 27
 end
 arch blocked
-msg
-endmsg
 x 13
 y 28
 end
@@ -2433,13 +2346,9 @@ x 13
 y 29
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -2556,80 +2465,54 @@ x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 14
 y 17
 end
 arch blocked
-msg
-endmsg
 x 14
 y 18
 end
 arch blocked
-msg
-endmsg
 x 14
 y 19
 end
 arch blocked
-msg
-endmsg
 x 14
 y 20
 end
 arch blocked
-msg
-endmsg
 x 14
 y 21
 end
 arch blocked
-msg
-endmsg
 x 14
 y 22
 end
 arch blocked
-msg
-endmsg
 x 14
 y 23
 end
 arch blocked
-msg
-endmsg
 x 14
 y 24
 end
 arch blocked
-msg
-endmsg
 x 14
 y 25
 end
 arch blocked
-msg
-endmsg
 x 14
 y 26
 end
 arch blocked
-msg
-endmsg
 x 14
 y 27
 end
 arch blocked
-msg
-endmsg
 x 14
 y 28
 end
@@ -2638,25 +2521,17 @@ x 14
 y 29
 end
 arch blocked
-msg
-endmsg
 x 14
 y 29
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 1
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
@@ -2693,32 +2568,22 @@ x 15
 y 6
 end
 arch blocked
-msg
-endmsg
 x 15
 y 7
 end
 arch blocked
-msg
-endmsg
 x 15
 y 8
 end
 arch blocked
-msg
-endmsg
 x 15
 y 9
 end
 arch blocked
-msg
-endmsg
 x 15
 y 10
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
@@ -2739,98 +2604,66 @@ x 15
 y 13
 end
 arch blocked
-msg
-endmsg
 x 15
 y 14
 end
 arch blocked
-msg
-endmsg
 x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 y 17
 end
 arch blocked
-msg
-endmsg
 x 15
 y 18
 end
 arch blocked
-msg
-endmsg
 x 15
 y 19
 end
 arch blocked
-msg
-endmsg
 x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 15
 y 21
 end
 arch blocked
-msg
-endmsg
 x 15
 y 22
 end
 arch blocked
-msg
-endmsg
 x 15
 y 23
 end
 arch blocked
-msg
-endmsg
 x 15
 y 24
 end
 arch blocked
-msg
-endmsg
 x 15
 y 25
 end
 arch blocked
-msg
-endmsg
 x 15
 y 26
 end
 arch blocked
-msg
-endmsg
 x 15
 y 27
 end
 arch blocked
-msg
-endmsg
 x 15
 y 28
 end
 arch blocked
-msg
-endmsg
 x 15
 y 29
 end
