@@ -1,15 +1,16 @@
 arch map
+name Goblin Chief
+difficulty 1
 region scorn
-name goblin_chief
+width 17
+height 24
+enter_x 14
+enter_y 9
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun  5 15:40:23 2000
 endmsg
-width 17
-height 24
-enter_x 14
-enter_y 9
 end
 arch pstone_4
 end
@@ -212,17 +213,17 @@ x 1
 y 7
 end
 arch fountain
-speed_left -0.600000
 x 1
 y 7
+speed_left -0.600000
 end
 arch potion_heroism
 name fountain
 face fountain.111
-material 256
-no_pick 1
 x 1
 y 7
+material 256
+no_pick 1
 end
 arch pstone_4
 x 1
@@ -337,9 +338,9 @@ x 1
 y 22
 end
 arch high_boots
-magic 2
 x 1
 y 22
+magic 2
 end
 arch pstone_4
 x 1
@@ -500,9 +501,9 @@ x 2
 y 22
 end
 arch sword_2
-magic 3
 x 2
 y 22
+magic 3
 end
 arch pstone_4
 x 2
@@ -631,9 +632,9 @@ x 3
 y 17
 end
 arch brazier
-no_pass 0
 x 3
 y 17
+no_pass 0
 end
 arch goblin
 x 3
@@ -798,9 +799,9 @@ x 4
 y 15
 end
 arch barrel
-no_pass 0
 x 4
 y 15
+no_pass 0
 end
 arch generate_goblin
 x 4
@@ -1572,12 +1573,12 @@ exp 500
 dam 7
 wc 3
 ac 4
+x 8
+y 22
 speed 0.200000
 level 6
 carrying 57825
 randomitems none
-x 8
-y 22
 arch gauntlets
 end
 arch round_shield
@@ -1757,9 +1758,9 @@ x 9
 y 22
 end
 arch brazier
-no_pass 0
 x 9
 y 22
+no_pass 0
 end
 arch pstone_4
 x 9
@@ -1804,9 +1805,9 @@ x 10
 y 6
 end
 arch brazier
-no_pass 0
 x 10
 y 6
+no_pass 0
 end
 arch pstone_4
 x 10
@@ -2003,9 +2004,9 @@ x 11
 y 7
 end
 arch brazier
-no_pass 0
 x 11
 y 7
+no_pass 0
 end
 arch pstone_4
 x 11
@@ -2056,9 +2057,9 @@ x 11
 y 15
 end
 arch barrel
-no_pass 0
 x 11
 y 15
+no_pass 0
 end
 arch pstone_4
 x 11
@@ -2089,9 +2090,9 @@ x 11
 y 19
 end
 arch brazier
-no_pass 0
 x 11
 y 19
+no_pass 0
 end
 arch goblin
 x 11
@@ -2276,9 +2277,9 @@ x 12
 y 19
 end
 arch generate_kobold
-speed_left -0.120000
 x 12
 y 19
+speed_left -0.120000
 end
 arch pstone_4
 x 12
@@ -2417,9 +2418,9 @@ x 13
 y 13
 end
 arch brazier
-no_pass 0
 x 13
 y 13
+no_pass 0
 end
 arch pstone_4
 x 13
@@ -2731,9 +2732,9 @@ x 15
 y 5
 end
 arch barrel
-no_pass 0
 x 15
 y 5
+no_pass 0
 end
 arch pstone_4
 x 15
@@ -2748,9 +2749,9 @@ x 15
 y 7
 end
 arch barrel
-no_pass 0
 x 15
 y 7
+no_pass 0
 end
 arch pstone_4
 x 15
