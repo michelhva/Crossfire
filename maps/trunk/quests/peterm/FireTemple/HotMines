@@ -1,13 +1,13 @@
 arch map
-name HotMines
+name Fire Temple -- Hot Mines
+difficulty 10
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr 15 22:39:46 1997
 endmsg
-x 30
-y 30
-level 10
 end
 arch permanent_lava
 end

@@ -1,12 +1,13 @@
 arch map
-name SecondFloor
+name Fire Temple -- Third Floor
+difficulty 1
+width 30
+height 31
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Apr 20 09:31:04 1997
 endmsg
-x 30
-y 31
 end
 arch cobblestones2
 end
@@ -2171,7 +2172,7 @@ this is another complex
 incomprehensible alchemical treatise,
 apparently related to the ones you've
 seen before.  He writes someting about
-his collegues also needing 
+his collegues also needing
 7 pile of sulphur
 in order to do the summoning
 endmsg
@@ -2209,7 +2210,7 @@ msg
 technical report on alchemical
 research.  About the only part you can
 understand is that the author thinks
-it likely that a 
+it likely that a
 fire para-elemental's residue
 would be one of the ingredients needed
 endmsg

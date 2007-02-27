@@ -1,13 +1,14 @@
 arch map
-name Fire1
+name Fire Temple
+difficulty 1
+darkness 5
+width 32
+height 32
 msg
 Creator: PeterM
 Email: peterm@soda.csua.berkeley.edu
 Date: Sat Jun  7 09:38:36 1997
 endmsg
-x 32
-y 32
-invisible 6
 end
 arch pstone_1
 end
@@ -453,7 +454,7 @@ arch locked_door1
 slaying firedoor2
 msg
 A mysterious force prevents you from
-proceeding. 
+proceeding.
 endmsg
 x 1
 y 24
@@ -747,9 +748,9 @@ name fire worshipper
 Wis 3
 x 3
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 3
@@ -934,9 +935,9 @@ name fire worshipper
 Wis 3
 x 4
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 4
@@ -1131,9 +1132,9 @@ name fire worshipper
 Wis 3
 x 5
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 5
@@ -1954,9 +1955,9 @@ name fire worshipper
 Wis 3
 x 9
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 9
@@ -2168,9 +2169,9 @@ name fire worshipper
 Wis 3
 x 10
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 10
@@ -2355,9 +2356,9 @@ name fire worshipper
 Wis 3
 x 11
 y 1
-immune 4
 randomitems imp
 sleep 1
+immune 4
 end
 arch pstone_1
 x 11
@@ -3572,7 +3573,7 @@ enemy elemental's residue.  Somehow
 you get the feeling that this will not
 be the last time the Fire God requires
 an appropriate sacrifice of an enemy
-in order to proceed.  
+in order to proceed.
 
 endmsg
 food 1
@@ -4882,12 +4883,11 @@ x 22
 y 22
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 end
 arch pstone_1
 x 22
@@ -4926,12 +4926,11 @@ x 22
 y 28
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 end
 arch pstone_1
 x 22
@@ -5082,12 +5081,11 @@ x 23
 y 20
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 end
 arch pstone_1
 x 23
@@ -5489,12 +5487,11 @@ x 25
 y 25
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 end
 arch pstone_1
 x 25
@@ -5656,12 +5653,11 @@ x 26
 y 20
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 end
 arch pstone_1
 x 26
@@ -5886,13 +5882,12 @@ x 27
 y 28
 speed -0.200000
 level 1
-immune 4
-protected 0
 attacktype 5
 carrying 100
 weight 70000
 randomitems imp
 see_invisible 0
+immune 0
 arch key2
 slaying firedoor3
 end
@@ -6548,7 +6543,7 @@ arch locked_door1
 slaying firedoor3
 msg
 A mysterious force prevents you from
-proceeding. 
+proceeding.
 
 endmsg
 x 30

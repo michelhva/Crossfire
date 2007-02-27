@@ -1,12 +1,13 @@
 arch map
-name Fire2
+name Fire Temple
+difficulty 1
+width 40
+height 32
 msg
 Creator: PeterM
 Email: peterm@soda.csua.berkeley.edu
 Date: Sat Jun  7 09:38:36 1997
 endmsg
-x 40
-y 32
 end
 arch pstone_1
 end
@@ -3289,7 +3290,7 @@ arch pstone_1
 x 23
 y 12
 end
-arch dun3
+arch dun5
 x 23
 y 12
 end
@@ -3324,7 +3325,7 @@ arch pstone_1
 x 23
 y 16
 end
-arch dun3
+arch dun_1_1
 x 23
 y 16
 end
@@ -5940,12 +5941,12 @@ resist_godpower 100
 resist_holyword 100
 resist_blind 100
 reflect_spell 1
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_rod 0
-body_shoulder 0
 body_torso 0
+body_shoulder 0
+can_use_wand 0
 end
