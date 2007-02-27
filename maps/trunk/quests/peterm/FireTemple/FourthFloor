@@ -1,12 +1,13 @@
 arch map
-name FourthFloor
+name Fire Temple -- Fourth Floor
+difficulty 1
+width 40
+height 40
 msg
 Creator: PeterM
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri May 23 11:23:47 1997
 endmsg
-x 40
-y 40
 end
 arch cobblestones
 end
@@ -494,10 +495,10 @@ project run by the demons which is
 intended to discover the physical
 means by which demons get their
 immunity to fire. From the text,
-you glean that 
+you glean that
 - fire para-elemental's residue
 - 7 water of ruby
-- dragon's steak  
+- dragon's steak
 - 3 balm of asbestos
 are the ingredients necessary to
 produce an alchemical preparation
@@ -8400,7 +8401,7 @@ arch sign
 msg
 Clean suits  and boots
 are required past this
-point. 
+point.
 endmsg
 x 29
 y 32
