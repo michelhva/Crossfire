@@ -1,17 +1,16 @@
 arch map
-name DragonQuest -- FireAnte
+name DragonQuest -- Electric Anteroom
+difficulty 1
+darkness 5
+width 22
+height 22
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Sun Aug 21 14:55:05 1994
 endmsg
-x 22
-y 22
-invisible 5
 end
 arch blocked
-msg
-endmsg
 end
 arch cave24
 y 1
@@ -26,33 +25,21 @@ arch cave17
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch pstone_2
@@ -110,18 +97,12 @@ arch cave23
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch cave24
@@ -156,26 +137,18 @@ x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -248,20 +221,14 @@ x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
@@ -314,8 +281,6 @@ x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 6
 end
@@ -388,14 +353,10 @@ x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
@@ -532,14 +493,10 @@ x 3
 y 20
 end
 arch blocked
-msg
-endmsg
 x 3
 y 21
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch pstone_2
@@ -635,19 +592,13 @@ x 4
 y 20
 end
 arch blocked
-msg
-endmsg
 x 4
 y 21
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 y 1
 end
@@ -756,25 +707,17 @@ x 5
 y 21
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 2
 end
 arch blocked
-msg
-endmsg
 x 6
 y 3
 end
@@ -867,31 +810,21 @@ x 6
 y 21
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 2
 end
 arch blocked
-msg
-endmsg
 x 7
 y 3
 end
 arch blocked
-msg
-endmsg
 x 7
 y 4
 end
@@ -972,37 +905,25 @@ x 7
 y 20
 end
 arch blocked
-msg
-endmsg
 x 7
 y 21
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 3
 end
 arch blocked
-msg
-endmsg
 x 8
 y 4
 end
@@ -1087,43 +1008,29 @@ x 8
 y 19
 end
 arch blocked
-msg
-endmsg
 x 8
 y 20
 end
 arch blocked
-msg
-endmsg
 x 8
 y 21
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
 arch blocked
-msg
-endmsg
 x 9
 y 2
 end
 arch blocked
-msg
-endmsg
 x 9
 y 3
 end
 arch blocked
-msg
-endmsg
 x 9
 y 4
 end
@@ -1204,31 +1111,21 @@ x 9
 y 18
 end
 arch blocked
-msg
-endmsg
 x 9
 y 19
 end
 arch blocked
-msg
-endmsg
 x 9
 y 20
 end
 arch blocked
-msg
-endmsg
 x 9
 y 21
 end
 arch blocked
-msg
-endmsg
 x 10
 end
 arch blocked
-msg
-endmsg
 x 10
 y 1
 end
@@ -1329,25 +1226,17 @@ x 10
 y 19
 end
 arch blocked
-msg
-endmsg
 x 10
 y 20
 end
 arch blocked
-msg
-endmsg
 x 10
 y 21
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 1
 end
@@ -1448,14 +1337,10 @@ x 11
 y 20
 end
 arch blocked
-msg
-endmsg
 x 11
 y 21
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch pstone_2
@@ -1751,8 +1636,6 @@ x 14
 y 20
 end
 arch blocked
-msg
-endmsg
 x 14
 y 21
 end
@@ -2071,8 +1954,6 @@ x 17
 y 20
 end
 arch blocked
-msg
-endmsg
 x 17
 y 21
 end
@@ -2181,14 +2062,10 @@ x 18
 y 19
 end
 arch blocked
-msg
-endmsg
 x 18
 y 20
 end
 arch blocked
-msg
-endmsg
 x 18
 y 21
 end
@@ -2313,14 +2190,10 @@ x 19
 y 20
 end
 arch blocked
-msg
-endmsg
 x 19
 y 21
 end
 arch blocked
-msg
-endmsg
 x 20
 end
 arch cave19
@@ -2468,25 +2341,17 @@ x 20
 y 20
 end
 arch blocked
-msg
-endmsg
 x 20
 y 21
 end
 arch blocked
-msg
-endmsg
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
 arch blocked
-msg
-endmsg
 x 21
 y 2
 end
@@ -2571,20 +2436,14 @@ x 21
 y 12
 end
 arch blocked
-msg
-endmsg
 x 21
 y 13
 end
 arch blocked
-msg
-endmsg
 x 21
 y 14
 end
 arch blocked
-msg
-endmsg
 x 21
 y 15
 end
@@ -2593,8 +2452,6 @@ x 21
 y 16
 end
 arch blocked
-msg
-endmsg
 x 21
 y 16
 end
@@ -2603,8 +2460,6 @@ x 21
 y 17
 end
 arch blocked
-msg
-endmsg
 x 21
 y 17
 end
@@ -2625,14 +2480,10 @@ x 21
 y 19
 end
 arch blocked
-msg
-endmsg
 x 21
 y 20
 end
 arch blocked
-msg
-endmsg
 x 21
 y 21
 end

@@ -1,16 +1,16 @@
 arch map
-name DragonQuest--IceAnte
+name DragonQuest--Ice Anteroom
+difficulty 1
+darkness 5
+width 30
+height 16
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Sat Aug 20 16:20:01 1994
 endmsg
-x 30
-invisible 5
 end
 arch blocked
-msg
-endmsg
 end
 arch pstone_2
 y 1
@@ -31,63 +31,39 @@ arch cave23
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch pstone_2
@@ -125,26 +101,18 @@ x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -189,14 +157,10 @@ x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
@@ -249,20 +213,14 @@ x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 8
 end
@@ -313,14 +271,10 @@ x 2
 y 13
 end
 arch blocked
-msg
-endmsg
 x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
@@ -373,20 +327,14 @@ x 3
 y 5
 end
 arch blocked
-msg
-endmsg
 x 3
 y 6
 end
 arch blocked
-msg
-endmsg
 x 3
 y 7
 end
 arch blocked
-msg
-endmsg
 x 3
 y 8
 end
@@ -445,8 +393,6 @@ x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 15
 end
@@ -489,14 +435,10 @@ x 4
 y 6
 end
 arch blocked
-msg
-endmsg
 x 4
 y 7
 end
 arch blocked
-msg
-endmsg
 x 4
 y 8
 end
@@ -537,8 +479,6 @@ x 4
 y 14
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
@@ -589,8 +529,6 @@ x 5
 y 7
 end
 arch blocked
-msg
-endmsg
 x 5
 y 8
 end
@@ -635,8 +573,6 @@ x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 5
 y 15
 end
@@ -687,8 +623,6 @@ x 6
 y 7
 end
 arch blocked
-msg
-endmsg
 x 6
 y 8
 end
@@ -729,8 +663,6 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 y 15
 end
@@ -777,8 +709,6 @@ x 7
 y 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 8
 end
@@ -861,8 +791,6 @@ x 8
 y 7
 end
 arch blocked
-msg
-endmsg
 x 8
 y 8
 end
@@ -1157,8 +1085,6 @@ x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch pstone_2
@@ -1234,19 +1160,13 @@ x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
@@ -1319,20 +1239,14 @@ x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch pstone_2
@@ -1416,8 +1330,6 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
@@ -1890,8 +1802,6 @@ x 20
 y 14
 end
 arch blocked
-msg
-endmsg
 x 20
 y 15
 end
@@ -1970,8 +1880,6 @@ x 21
 y 14
 end
 arch blocked
-msg
-endmsg
 x 21
 y 15
 end
@@ -2276,8 +2184,6 @@ x 25
 y 15
 end
 arch blocked
-msg
-endmsg
 x 25
 y 15
 end
@@ -2356,14 +2262,10 @@ x 26
 y 13
 end
 arch blocked
-msg
-endmsg
 x 26
 y 14
 end
 arch blocked
-msg
-endmsg
 x 26
 y 15
 end
@@ -2446,14 +2348,10 @@ x 27
 y 13
 end
 arch blocked
-msg
-endmsg
 x 27
 y 14
 end
 arch blocked
-msg
-endmsg
 x 27
 y 15
 end
@@ -2556,14 +2454,10 @@ x 28
 y 13
 end
 arch blocked
-msg
-endmsg
 x 28
 y 14
 end
 arch blocked
-msg
-endmsg
 x 28
 y 15
 end
@@ -2571,8 +2465,6 @@ arch pstone_2
 x 29
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch pstone_2
@@ -2604,8 +2496,6 @@ x 29
 y 4
 end
 arch blocked
-msg
-endmsg
 x 29
 y 4
 end
@@ -2614,8 +2504,6 @@ x 29
 y 5
 end
 arch blocked
-msg
-endmsg
 x 29
 y 5
 end
@@ -2648,8 +2536,6 @@ x 29
 y 9
 end
 arch blocked
-msg
-endmsg
 x 29
 y 9
 end
@@ -2658,8 +2544,6 @@ x 29
 y 10
 end
 arch blocked
-msg
-endmsg
 x 29
 y 10
 end
@@ -2680,20 +2564,14 @@ x 29
 y 12
 end
 arch blocked
-msg
-endmsg
 x 29
 y 13
 end
 arch blocked
-msg
-endmsg
 x 29
 y 14
 end
 arch blocked
-msg
-endmsg
 x 29
 y 15
 end
