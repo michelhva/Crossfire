@@ -1,5 +1,6 @@
 arch map
-name Demon1
+name Tower of Demonolgy
+difficulty 1
 width 15
 height 25
 msg
@@ -363,7 +364,7 @@ I'll tell you what you want to
 know, do you want to know my part
 of the Word?
 @match yes
-My part of the word is 'rumleden' 
+My part of the word is 'rumleden'
 endmsg
 x 2
 y 19
@@ -384,7 +385,7 @@ owwwwwwwwwwwwwwwwwww.........
 I only know part of the word.
 You're going to have to get the rest
 of it out of the other three Masters.
-My part is 'Hleafna'. 
+My part is 'Hleafna'.
 endmsg
 x 2
 y 23
@@ -858,7 +859,7 @@ arch magic_mouth
 msg
 You get the feeling that this
 teleporter requires you to say
-something in order to activate. 
+something in order to activate.
 endmsg
 x 6
 y 7
@@ -968,24 +969,24 @@ Guardians!
 yes, two visible, and two invisibile.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
-summoned by means of those portals. 
+summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
 @match word|Word|password|teleport
 The teleporters lead to the levels
-above.  Each of the Masters had a 
+above.  Each of the Masters had a
 syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
+speak the word in succession.
+Actually, they whispered it:  they
+didn't trust each other enough to
 share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
 @match Portal
-Yes, you can summon the dead 
+Yes, you can summon the dead
 with those portals if you know
-their names.  Getting them to 
+their names.  Getting them to
 cooperate is quite another matter.
 endmsg
 x 6
@@ -1147,7 +1148,7 @@ arch magic_mouth
 msg
 You get the feeling that this
 teleporter requires you to say
-something. 
+something.
 endmsg
 x 7
 y 8
@@ -1298,24 +1299,24 @@ Guardians!
 yes, two visible, and two invisibile.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
-summoned by means of those portals. 
+summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
 @match word|Word|password|teleport
 The teleporters lead to the levels
-above.  Each of the Masters had a 
+above.  Each of the Masters had a
 syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
+speak the word in succession.
+Actually, they whispered it:  they
+didn't trust each other enough to
 share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
 @match Portal
-Yes, you can summon the dead 
+Yes, you can summon the dead
 with those portals if you know
-their names.  Getting them to 
+their names.  Getting them to
 cooperate is quite another matter.
 endmsg
 x 8
