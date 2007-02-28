@@ -1,13 +1,14 @@
 arch map
-name temples
+name Temples
+swap_time 5300
+difficulty 1
+width 54
+height 25
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Sun Apr  9 23:46:05 2000
 endmsg
-x 54
-y 25
-value 5300
 end
 arch blocked
 end
@@ -2508,9 +2509,9 @@ end
 arch sign_w
 name Devourers
 msg
-Devourers the Soul eaters 
- Harbringers of Death 
- Nameless Lords of the Tomb
+Devourers the Soul eaters
+Harbringers of Death
+Nameless Lords of the Tomb
 endmsg
 x 13
 y 19
@@ -3561,7 +3562,7 @@ arch sign
 name Ruggilli
 msg
 Ruggilli the consuming worm
- Chaos god of slaughter and terror
+Chaos god of slaughter and terror
 endmsg
 x 19
 y 13
@@ -4038,7 +4039,7 @@ arch sign_e
 name Gorokh
 msg
 Gorokh the duke of hell
- Demon king, temptor and tormentor
+Demon king, temptor and tormentor
 endmsg
 x 21
 y 19
@@ -6115,7 +6116,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-INFIDEL! 
+INFIDEL!
 Gorokh will punish you for your blasfem
 endmsg
 Con 15

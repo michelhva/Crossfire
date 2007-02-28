@@ -1,5 +1,6 @@
 arch map
-name Elven Moon 1
+name Elven Moon
+difficulty 1
 width 32
 height 32
 msg
@@ -417,9 +418,7 @@ x 2
 y 8
 end
 arch altar
-name 
 slaying emerald
-face 
 food 1
 x 2
 y 9
@@ -1081,64 +1080,6 @@ end
 arch grassmedium
 x 5
 y 15
-end
-arch ent
-name Oakie the Ent
-title of Oakie
-msg
-@match elf|Elf|elves|Elves
-Elven Moon is a sacred place where
-the elves come to pray.
-@match Elven Moon|elven moon|Elvenmoon|Elven moon
-The door to Elven Moon is at the center of the lake.
-@match lake
-The lake is north east of here.  Did you need help?
-@match yes|help|Help|how*
-One must speak the magic words, the the 
-bridge will appear by the flowers.
-@match magic|magic words
-The elves change the words every now
-and then.  Seek the guardian of the
-maze.
-@match guardian|maze
-Somewere in the maze is the guardian
-who knows the magic words.
-@match clumsy|clumsy folks
-Orcs and Trolls.
-@match Orcs|orcs|Orc|orc
-Their axes kill many trees.
-@match tree|trees
-Ah yes... my brothers and sisters.
-@match trolls|Trolls|troll|Troll
-Trolls have no respect.  Not even for
-thier own kind.
-@match *
-Hey! Careful of my roots stranger.
-The Elves do not like clumsy folks.
-endmsg
-hp 3000
-maxhp 3000
-exp 32000
-wc -30
-ac -10
-x 5
-y 15
-level 24
-sleep 0
-stand_still 1
-can_use_skill 1
-arch skill_throwing
-end
-arch t_lboulder
-end
-arch t_lboulder
-end
-arch t_lboulder
-end
-arch t_lboulder
-end
-arch ability_stone_throw
-end
 end
 arch grassmedium
 x 5
@@ -6254,8 +6195,8 @@ endmsg
 x 28
 y 3
 level 12
-pick_up 0
 will_apply 0
+pick_up 0
 stand_still 1
 end
 arch altar
@@ -6317,8 +6258,8 @@ endmsg
 x 28
 y 9
 level 10
-pick_up 0
 will_apply 0
+pick_up 0
 stand_still 1
 end
 arch grass
@@ -7276,5 +7217,63 @@ end
 arch spell_paralyze
 end
 arch spell_magic_missile
+end
+end
+arch ent
+name Oakie the Ent
+title of Oakie
+msg
+@match elf|Elf|elves|Elves
+Elven Moon is a sacred place where
+the elves come to pray.
+@match Elven Moon|elven moon|Elvenmoon|Elven moon
+The door to Elven Moon is at the center of the lake.
+@match lake
+The lake is north east of here.  Did you need help?
+@match yes|help|Help|how*
+One must speak the magic words, the the
+bridge will appear by the flowers.
+@match magic|magic words
+The elves change the words every now
+and then.  Seek the guardian of the
+maze.
+@match guardian|maze
+Somewere in the maze is the guardian
+who knows the magic words.
+@match clumsy|clumsy folks
+Orcs and Trolls.
+@match Orcs|orcs|Orc|orc
+Their axes kill many trees.
+@match tree|trees
+Ah yes... my brothers and sisters.
+@match trolls|Trolls|troll|Troll
+Trolls have no respect.  Not even for
+thier own kind.
+@match *
+Hey! Careful of my roots stranger.
+The Elves do not like clumsy folks.
+endmsg
+hp 3000
+maxhp 3000
+exp 32000
+wc -30
+ac -10
+x 5
+y 15
+level 24
+sleep 0
+stand_still 1
+can_use_skill 1
+arch skill_throwing
+end
+arch t_lboulder
+end
+arch t_lboulder
+end
+arch t_lboulder
+end
+arch t_lboulder
+end
+arch ability_stone_throw
 end
 end

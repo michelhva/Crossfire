@@ -1,16 +1,16 @@
 arch map
-name tower3
+name Aljwaf Tower
+difficulty 7
+darkness 2
+width 13
+height 13
+enter_x 6
+enter_y 12
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/18/2002
 endmsg
-width 13
-height 13
-enter_x 6
-enter_y 12
-difficulty 7
-darkness 2
 outdoor 1
 end
 arch pstone_1
@@ -336,9 +336,9 @@ x 4
 y 1
 end
 arch bookshelf
-no_pick 1
 x 4
 y 1
+no_pick 1
 arch book_clasp
 name The way of the spider
 msg
@@ -492,12 +492,12 @@ y 6
 end
 arch firewall
 dam 0
-level 12
-speed -0.01
-alive 0
-no_pick 1
 x 6
 y 6
+speed -0.01
+level 12
+alive 0
+no_pick 1
 arch spell_spiderweb
 level 12
 end
@@ -614,9 +614,9 @@ x 8
 y 1
 end
 arch bookshelf
-no_pick 1
 x 8
 y 1
+no_pick 1
 end
 arch pstone_1
 x 8

@@ -1,13 +1,14 @@
 arch map
-name down2
+name Dungeon
+swap_time 5300
+difficulty 1
+width 32
+height 29
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Sun Apr  9 23:46:05 2000
 endmsg
-x 32
-y 29
-value 5300
 end
 arch dungeon_floor
 end
