@@ -1,13 +1,13 @@
 arch map
-name Guards
+name Troll Cave Guards
+difficulty 7
+width 14
+height 12
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Wed Apr 12 22:38:04 2000
 endmsg
-width 14
-height 12
-difficulty 7
 outdoor 1
 end
 arch mountain
@@ -210,9 +210,9 @@ y 7
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 5
 y 7
+unaggressive 1
 end
 arch small_stones
 x 5
@@ -258,18 +258,18 @@ y 6
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 6
 y 6
+unaggressive 1
 end
 arch small_stones
 x 6
 y 7
 end
 arch campfire
-glow_radius 4
 x 6
 y 7
+glow_radius 4
 end
 arch small_stones
 x 6
@@ -277,9 +277,9 @@ y 8
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 6
 y 8
+unaggressive 1
 end
 arch small_stones
 x 6
@@ -318,9 +318,9 @@ y 7
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 7
 y 7
+unaggressive 1
 end
 arch small_stones
 x 7

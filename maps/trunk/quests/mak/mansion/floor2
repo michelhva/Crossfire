@@ -1,12 +1,13 @@
 arch map
-name floor 2
+name Mansion - Second Floor
+difficulty 1
+width 36
+height 21
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Thu Apr 13 02:02:47 2000
 endmsg
-x 36
-y 21
 end
 arch afloor_right
 end
@@ -4040,8 +4041,6 @@ x 33
 y 13
 end
 arch button_lever
-msg
-endmsg
 x 33
 y 13
 connected 96

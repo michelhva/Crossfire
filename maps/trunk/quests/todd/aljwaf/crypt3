@@ -1,16 +1,16 @@
 arch map
-name crypt3
+name Aljwaf Crypt
+difficulty 5
+darkness 3
+width 15
+height 20
+enter_x 1
+enter_y 1
 msg
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/20/2002
 endmsg
-width 15
-height 20
-enter_x 1
-enter_y 1
-difficulty 5
-darkness 3
 end
 arch dirtfloor
 end
@@ -240,18 +240,19 @@ name One Big spider
 msg
 hissssss
 endmsg
-level 15
-exp 3760
-attacktype 1025
-wc -4
+Wis 12
+Pow 3
 hp 180
 maxhp 180
-ac -8
-can_cast_spell 1
 sp 30
 maxsp 30
-Pow 3
-Wis 12
+exp 3760
+wc -4
+ac -8
+x 1
+y 18
+level 15
+attacktype 1025
 resist_physical 25
 resist_magic 10
 resist_confusion -40
@@ -259,8 +260,7 @@ resist_poison 80
 resist_paralyze 50
 resist_fear 80
 resist_blind 80
-x 1
-y 18
+can_cast_spell 1
 arch abil_slow
 end
 arch abil_poison_cloud

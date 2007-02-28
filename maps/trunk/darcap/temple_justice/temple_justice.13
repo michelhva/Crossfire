@@ -1,5 +1,6 @@
 arch map
-name Temple Justice 13
+name Temple Justice
+difficulty 1
 width 13
 height 13
 end
@@ -392,7 +393,6 @@ match@ *
 You shall not pass!
 endmsg
 face guard_ligh.111
-con 1
 hp 10000
 maxhp 10000
 sp 100
@@ -410,9 +410,10 @@ resist_slow 60
 resist_paralyze 80
 resist_fear 100
 resist_holyword 100
+will_apply 0
 run_away 0
 pick_up 0
-will_apply 0
+con 1
 arch mjoellnir
 name Hammer
 name_pl Hammers

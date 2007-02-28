@@ -1,13 +1,14 @@
 arch map
-name up1
+name Tower
+swap_time 5300
+difficulty 1
+width 32
+height 30
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Sun Apr  9 23:46:05 2000
 endmsg
-x 32
-y 30
-value 5300
 end
 arch cobblestones
 end

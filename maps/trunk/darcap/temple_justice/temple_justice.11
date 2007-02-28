@@ -1,5 +1,6 @@
 arch map
-name Temple Justice 11
+name Temple Justice
+difficulty 1
 width 13
 height 13
 end
@@ -367,10 +368,6 @@ x 6
 y 4
 end
 arch flagstone
-x 6
-y 5
-end
-arch destroying_angel
 x 6
 y 5
 end
@@ -754,4 +751,8 @@ end
 arch dwall_2_2_4
 x 12
 y 8
+end
+arch destroying_angel
+x 6
+y 5
 end

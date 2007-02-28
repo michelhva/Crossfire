@@ -1,16 +1,16 @@
 arch map
-name tomb
+name Aljwaf Tomb
+difficulty 15
+darkness 4
+width 10
+height 10
+enter_x 5
+enter_y 4
 msg
 Todd Mitchell
 Creator: CF Java Map Editor
 Date:    6/29/2002
 endmsg
-width 10
-height 10
-enter_x 5
-enter_y 4
-difficulty 15
-darkness 4
 end
 arch marble
 end
@@ -170,10 +170,10 @@ y 2
 end
 arch magic_resist
 name Minor Cloak of Magic Resistance
-value 180000
-resist_magic 30
 x 2
 y 2
+resist_magic 30
+value 180000
 end
 arch marble
 x 2
@@ -271,10 +271,10 @@ y 5
 end
 arch arrow
 title of the Phantom
-nrof 60
-attacktype 513
 x 3
 y 5
+nrof 60
+attacktype 513
 end
 arch marble
 x 3
@@ -347,9 +347,9 @@ Here lies the bones of our Lord Aljwaf
 the terrible.
 May none disturb his eternal slumber.
 endmsg
-no_pass 1
 x 4
 y 4
+no_pass 1
 end
 arch light4
 x 4
@@ -640,21 +640,21 @@ x 8
 y 4
 end
 arch battle_axe
+title of the Phantom
+slaying undead
 msg
 This axe was crafted by the Durant mystics to
 aid the town guard in their defense against the
 swamp wraiths.
 endmsg
-title of the Phantom
-value 85000
-attacktype 517
-slaying undead
-last_sp 9
-magic 2
-resist_ghosthit 25
-resist_fear 10
 x 8
 y 4
+attacktype 517
+resist_ghosthit 25
+resist_fear 10
+value 85000
+magic 2
+last_sp 9
 end
 arch marble
 x 8

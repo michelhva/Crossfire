@@ -1,22 +1,22 @@
 arch map
-name hall1
+name Aljwaf Hall
+difficulty 9
+darkness 2
+width 25
+height 25
+enter_x 1
+enter_y 10
 msg
 Todd Mitchell
 Creator: CF Java Map Editor
 Date:    4/1/2002
 endmsg
-width 25
-height 25
-enter_x 1
-enter_y 10
-difficulty 9
-darkness 2
 end
 arch teleporter
 hp 16
 sp 22
-connected 2
 speed 0.0
+connected 2
 end
 arch ruby
 name glowing rubies
@@ -275,9 +275,9 @@ end
 arch teleporter
 hp 17
 sp 21
-connected 3
-speed 0.0
 x 2
+speed 0.0
+connected 3
 end
 arch beholder
 x 2
@@ -389,9 +389,9 @@ end
 arch teleporter
 hp 17
 sp 23
-connected 3
-speed 0.0
 x 3
+speed 0.0
+connected 3
 end
 arch beholder
 x 3
@@ -543,9 +543,9 @@ end
 arch teleporter
 hp 19
 sp 22
-connected 3
-speed 0.0
 x 4
+speed 0.0
+connected 3
 end
 arch beholder
 x 4
@@ -770,9 +770,9 @@ x 5
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 5
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 5
@@ -833,9 +833,9 @@ x 5
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 5
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 5
@@ -904,18 +904,18 @@ end
 arch teleporter
 hp 12
 sp 22
-connected 3
-speed 0.0
 x 6
+speed 0.0
+connected 3
 end
 arch button_handle
 name magichandle
 msg
 Pull if you would continue your quest.
 endmsg
-glow_radius 1
-connected 2
 x 6
+connected 2
+glow_radius 1
 end
 arch dun_2_1_2
 x 6
@@ -1068,17 +1068,17 @@ end
 arch teleporter
 hp 16
 sp 5
-connected 4
-speed 0.0
 x 7
+speed 0.0
+connected 4
 end
 arch emerald
 name glowing emeralds
 msg
 These emeralds glow with a unholy light.
 endmsg
-glow_radius 1
 x 7
+glow_radius 1
 end
 arch dun_2_1_2
 x 7
@@ -1125,9 +1125,9 @@ x 7
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 7
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 7
@@ -1178,9 +1178,9 @@ x 7
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 7
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 7
@@ -1235,11 +1235,11 @@ x 7
 y 22
 end
 arch gate_closed_2
+x 7
+y 22
 connected 1
 no_magic 1
 damned 1
-x 7
-y 22
 end
 arch stonefloor2
 x 7
@@ -1396,9 +1396,9 @@ arch button_handle
 msg
 Pull if you would continue your quest.
 endmsg
-connected 3
 x 8
 y 21
+connected 3
 end
 arch stonefloor2
 x 8
@@ -1412,9 +1412,9 @@ arch button_handle
 msg
 Pull if you would continue your quest.
 endmsg
-connected 1
 x 8
 y 23
+connected 1
 end
 arch stonefloor2
 x 8
@@ -1427,9 +1427,9 @@ end
 arch teleporter
 hp 14
 sp 4
-connected 5
-speed 0.0
 x 9
+speed 0.0
+connected 5
 end
 arch earth_elemental
 x 9
@@ -1483,9 +1483,9 @@ x 9
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 9
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 9
@@ -1536,9 +1536,9 @@ x 9
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 9
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 9
@@ -1607,9 +1607,9 @@ end
 arch teleporter
 hp 15
 sp 5
-connected 5
-speed 0.0
 x 10
+speed 0.0
+connected 5
 end
 arch earth_elemental
 x 10
@@ -1777,9 +1777,9 @@ end
 arch teleporter
 hp 14
 sp 6
-connected 5
-speed 0.0
 x 11
+speed 0.0
+connected 5
 end
 arch earth_elemental
 x 11
@@ -1829,9 +1829,9 @@ x 11
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 11
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 11
@@ -1882,9 +1882,9 @@ x 11
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 11
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 11
@@ -2142,9 +2142,9 @@ x 13
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 13
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 13
@@ -2199,9 +2199,9 @@ x 13
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 13
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 13
@@ -2300,9 +2300,9 @@ x 14
 y 5
 end
 arch button_handle
-connected 5
 x 14
 y 5
+connected 5
 end
 arch slevel_4
 x 14
@@ -2465,9 +2465,9 @@ x 15
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 15
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 15
@@ -2530,9 +2530,9 @@ x 15
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 15
 y 15
+can_use_bow 1
 end
 arch slevel_4
 x 15
@@ -2659,18 +2659,18 @@ x 16
 y 10
 end
 arch earth_elemental
-unaggressive 1
 x 16
 y 10
+unaggressive 1
 end
 arch stonefloor2
 x 16
 y 11
 end
 arch earth_elemental
-unaggressive 1
 x 16
 y 11
+unaggressive 1
 end
 arch stonefloor2
 x 16
@@ -2709,9 +2709,9 @@ x 16
 y 16
 end
 arch button_handle
-connected 4
 x 16
 y 16
+connected 4
 end
 arch slevel_4
 x 16
@@ -2810,9 +2810,9 @@ x 17
 y 6
 end
 arch skeleton
-can_use_bow 1
 x 17
 y 6
+can_use_bow 1
 end
 arch cobblestones
 x 17
@@ -2887,20 +2887,20 @@ x 17
 y 15
 end
 arch skeleton
-can_use_bow 1
 x 17
 y 15
+can_use_bow 1
 end
 arch magic_mouth
 msg
 Clink!
 endmsg
-connected 4
-walk_on 0
-fly_on 0
 food 1
 x 17
 y 16
+connected 4
+walk_on 0
+fly_on 0
 end
 arch cobblestones
 x 17
