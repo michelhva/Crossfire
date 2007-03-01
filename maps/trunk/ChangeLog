@@ -1,4 +1,143 @@
-<<<<<<< .mine
+2007-03-01 05:52  rjtanner
+
+	* ChangeLog, mlab/mlabscrntrd1, mlab/mlabscrntrd2,
+	  mlab/mlabscrntrdb1, mlab/mlabscrntrdb2, mlab/mlabscrntrdb3,
+	  navar_city/mlab/tavernb1, navar_city/mlab/tavernb2,
+	  navar_city/mlab/tavernb3, navar_city/mlab/tavernb4,
+	  navar_city/mlab/thehole, navar_city/mlab/ttower10,
+	  navar_city/mlab/ttower11, navar_city/mlab/ttower12,
+	  navar_city/mlab/ttower13, navar_city/mlab/ttower14,
+	  navar_city/mlab/ttower15, navar_city/mlab/ttower16,
+	  navar_city/mlab/ttower17, navar_city/mlab/ttower18,
+	  navar_city/mlab/ttower19, navar_city/mlab/ttower20,
+	  navar_city/mlab/ttower21, navar_city/mlab/ttower22,
+	  navar_city/mlab/ttower23, navar_city/mlab/ttower24,
+	  navar_city/mlab/ttower25, navar_city/mlab/ttower26,
+	  navar_city/mlab/ttower27, navar_city/mlab/ttower28,
+	  navar_city/mlab/ttower29, navar_city/mlab/ttower30,
+	  navar_city/mlab/ttower31, navar_city/mlab/ttower32,
+	  navar_city/mlab/ttower33, navar_city/mlab/ttower34,
+	  navar_city/mlab/ttower35, navar_city/mlab/ttower36,
+	  navar_city/mlab/ttower37, navar_city/mlab/ttower38,
+	  navar_city/mlab/ttower39, navar_city/mlab/ttower40,
+	  navar_city/mlab/ttower41, navar_city/mlab/ttower42,
+	  navar_city/mlab/ttower43, navar_city/mlab/ttower44,
+	  navar_city/mlab/ttower45, navar_city/mlab/ttower8,
+	  navar_city/mlab/ttower9, navar_city/mlab/ttowerchoswld1: Updated
+	  maps that were using 'unnamed' as their name. Cosmetic changes
+	  on how 'swall' sections merged with adjacent wall sections.
+	  Reset darkness levels that were greater then 5. Other changes
+	  are due to Map Editor reformatting.
+
+2007-03-01 03:59  kbulgrien
+
+	* maps/branches/1.x/pup_land/world,
+	  maps/branches/lalo-pupland/pup_land/world, pup_land/world:
+	  - Whole -> All of
+	  - Headquater -> Headquarters
+
+2007-03-01 03:49  kbulgrien
+
+	* maps/branches/1.x/pup_land/lone_town/town,
+	  maps/branches/lalo-pupland/pup_land/lone_town/town,
+	  pup_land/lone_town/town: - smiple -> simple
+	  - Minor msg text adjustments.
+	  - Some arch name fields added.
+	  - Arch name capitalization adjustments
+
+2007-03-01 03:13  kbulgrien
+
+	* maps/branches/1.x/world/world_104_115, world/world_104_115: -
+	  Controling -> Controlling
+	  - Linebreak removed from msg text.
+
+2007-03-01 02:50  rjtanner
+
+	* navar_city/mlab/dream, navar_city/mlab/tavern,
+	  navar_city/mlab/tavern2, navar_city/mlab/tavern3,
+	  navar_city/mlab/tavern4, navar_city/mlab/tavern5,
+	  navar_city/mlab/tavern6, navar_city/mlab/tavern7,
+	  navar_city/mlab/tavernb1: Updated maps that were using 'unnamed'
+	  as their name. Cosmetic changes on how 'swall' sections merged
+	  with adjacent wall sections. Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-28 03:04  rjtanner
+
+	* santo_dominion/basement, santo_dominion/city_hall,
+	  santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4: Renamed maps (which used the
+	  actual file name). Replaced walls that were using the wrong
+	  sections next an opening. Removed a unneeded floor tile. Other
+	  changes are due to Map Editor reformatting.
+
+2007-02-28 02:57  rjtanner
+
+	* brest/sow/sow, brest/sow/sow.1,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.2,
+	  lake_country/elven_moon/elvenmoon.3,
+	  lake_country/elven_moon/elvenmoon.4,
+	  lake_country/elven_moon/elvenmoon.5,
+	  lake_country/elven_moon/elvenmoon.6,
+	  lake_country/elven_moon/elvenmoon.7,
+	  lake_country/elven_moon/elvenmoon.8,
+	  lake_country/elven_moon/elvenmoon.9, quests/mak/MainFloor,
+	  quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/chaos/down4,
+	  quests/mak/chaos/down5, quests/mak/chaos/fallen,
+	  quests/mak/chaos/tritemples, quests/mak/chaos/up1,
+	  quests/mak/chaos/up2, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/chaos/up5,
+	  quests/mak/dragons/chaos, quests/mak/dragons/elec,
+	  quests/mak/dragons/fire, quests/mak/dragons/ice,
+	  quests/mak/giant/mainfloor, quests/mak/giant/secondfloor,
+	  quests/mak/giant/thirdfloor, quests/mak/mansion/basement,
+	  quests/mak/mansion/floor1, quests/mak/mansion/floor2,
+	  quests/mak/troll_cave/Guards, quests/mak/troll_cave/cave.1,
+	  quests/mak/troll_cave/cave.2, quests/mak/troll_cave/cave.3,
+	  quests/mak/undead/catacombs, quests/mak/undead/graveyard,
+	  quests/mak/undead/mausoleum, quests/mak/unnatural/unnat,
+	  quests/mcz/castle1, quests/mcz/castle_air,
+	  quests/mcz/castle_fire, quests/mcz/castle_water,
+	  quests/peterm/temple/AnteChamber,
+	  quests/peterm/temple/GemTunnel,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple, quests/peterm/temple/Temple,
+	  quests/todd/aljwaf/crypt, quests/todd/aljwaf/crypt2,
+	  quests/todd/aljwaf/crypt3, quests/todd/aljwaf/crypt4,
+	  quests/todd/aljwaf/crypt5, quests/todd/aljwaf/crypt6,
+	  quests/todd/aljwaf/hall1, quests/todd/aljwaf/hall2,
+	  quests/todd/aljwaf/ruins, quests/todd/aljwaf/tomb,
+	  quests/todd/aljwaf/tower1, quests/todd/aljwaf/tower2,
+	  quests/todd/aljwaf/tower3, quests/todd/aljwaf/tower4,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/temple_naive/templenaive.2, world/world_104_104:
+	  Renamed maps (which used the actual file name or tweaked their
+	  spelling and capitilization). Replaced walls that were using the
+	  wrong sections next doors. Added missing floor tiles beneath a
+	  wall section. Other changes are due to Map Editor reformatting.
+
+2007-02-27 06:40  rjtanner
+
+	* ChangeLog: ChangeLog update with latest changes
+
 2007-02-27 04:04  rjtanner
 
 	* quests/peterm/Nethack_in_crossfire_Yendor,
