@@ -1,18 +1,18 @@
 arch map
+name Western Navar Tavern
+reset_timeout 7200
+difficulty 1
 region navar
-name <untitled>
+darkness 5
+width 60
+height 40
+enter_x 1
+enter_y 1
 msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug 20 00:16:07 2002
 endmsg
-width 60
-height 40
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
-darkness 6
 temp 52
 end
 arch blocked
@@ -102,13 +102,13 @@ arch cave24
 y 21
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+y 21
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-y 21
 end
 arch permanent_lava
 y 22
@@ -1666,10 +1666,10 @@ x 7
 y 9
 end
 arch grate_closed_2
-speed 0.500000
-connected 2
 x 7
 y 9
+speed 0.500000
+connected 2
 end
 arch small_stones
 x 7
@@ -2217,14 +2217,14 @@ x 9
 y 23
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 9
+y 23
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 9
-y 23
 end
 arch small_stones
 x 9
@@ -3521,10 +3521,10 @@ x 15
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 15
 y 7
+speed 0.500000
+connected 1
 end
 arch small_stones
 x 15
@@ -3627,14 +3627,14 @@ x 15
 y 24
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 15
+y 24
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 15
-y 24
 end
 arch small_stones
 x 15
@@ -4270,10 +4270,10 @@ end
 arch brazier
 name heavy brazier
 name_pl heavy brazier
-glow_radius 6
-no_pass 0
 x 18
 y 9
+glow_radius 6
+no_pass 0
 end
 arch small_stones
 x 18
@@ -4463,14 +4463,14 @@ x 19
 y 4
 end
 arch human
-type 0
 hp 100
 maxhp 100
+x 19
+y 4
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-x 19
-y 4
 end
 arch small_stones
 x 19
@@ -4485,10 +4485,10 @@ x 19
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 19
 y 7
+speed 0.500000
+connected 1
 end
 arch small_stones
 x 19
@@ -4746,10 +4746,10 @@ y 13
 end
 arch sign_w
 name the hole
+name_pl the hole
 msg
 the hol
 endmsg
-name_pl the hole
 x 20
 y 13
 end
@@ -5308,9 +5308,9 @@ x 22
 y 16
 end
 arch chest
-carrying 45000
 x 22
 y 16
+carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -5506,10 +5506,10 @@ x 23
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 23
 y 7
+speed 0.500000
+connected 1
 end
 arch small_stones
 x 23
@@ -6592,10 +6592,10 @@ x 27
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 27
 y 7
+speed 0.500000
+connected 1
 end
 arch small_stones
 x 27
@@ -7017,14 +7017,14 @@ x 28
 y 32
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 28
+y 32
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 28
-y 32
 end
 arch small_stones
 x 28
@@ -7680,10 +7680,10 @@ x 31
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 31
 y 7
+speed 0.500000
+connected 1
 end
 arch small_stones
 x 31
@@ -7770,14 +7770,14 @@ x 31
 y 20
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 31
+y 20
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 31
-y 20
 end
 arch small_stones
 x 31
@@ -8777,9 +8777,9 @@ y 5
 end
 arch check_inv
 slaying keyevm40ad34
-connected 1763
 x 35
 y 6
+connected 1763
 end
 arch small_stones
 x 35
@@ -8790,10 +8790,10 @@ x 35
 y 7
 end
 arch grate_closed_1
-speed 0.500000
-connected 1763
 x 35
 y 7
+speed 0.500000
+connected 1763
 end
 arch dungeon_magic
 x 35
@@ -8801,9 +8801,9 @@ y 7
 end
 arch check_inv
 slaying keyevm40ad34
-connected 1763
 x 35
 y 8
+connected 1763
 end
 arch small_stones
 x 35
@@ -9022,9 +9022,9 @@ y 2
 end
 arch check_inv
 slaying keyevm40ad34
-connected 129
 x 36
 y 3
+connected 129
 end
 arch small_stones
 x 36
@@ -9326,10 +9326,10 @@ x 37
 y 3
 end
 arch igate_closed_2
-speed 0.500000
-connected 129
 x 37
 y 3
+speed 0.500000
+connected 129
 end
 arch small_stones
 x 37
@@ -9623,9 +9623,9 @@ x 38
 y 2
 end
 arch button_small
-connected 129
 x 38
 y 3
+connected 129
 end
 arch small_stones
 x 38
@@ -9864,9 +9864,9 @@ y 2
 end
 arch check_inv
 slaying keyevm40ad34
-connected 128
 x 39
 y 3
+connected 128
 end
 arch small_stones
 x 39
@@ -10118,10 +10118,10 @@ x 40
 y 3
 end
 arch igate_closed_2
-speed 0.500000
-connected 128
 x 40
 y 3
+speed 0.500000
+connected 128
 end
 arch flagstone
 x 40
@@ -10445,9 +10445,9 @@ y 2
 end
 arch check_inv
 slaying keyevm40ad34
-connected 128
 x 41
 y 3
+connected 128
 end
 arch flagstone
 x 41
@@ -10687,9 +10687,9 @@ x 42
 y 3
 end
 arch brazier
-glow_radius 6
 x 42
 y 3
+glow_radius 6
 end
 arch flagstone
 x 42
@@ -10724,9 +10724,9 @@ x 42
 y 7
 end
 arch brazier
-glow_radius 6
 x 42
 y 7
+glow_radius 6
 end
 arch flagstone
 x 42
@@ -10761,9 +10761,9 @@ x 42
 y 11
 end
 arch brazier
-glow_radius 6
 x 42
 y 11
+glow_radius 6
 end
 arch flagstone
 x 42
@@ -10959,9 +10959,9 @@ x 43
 y 2
 end
 arch brazier
-glow_radius 6
 x 43
 y 2
+glow_radius 6
 end
 arch dungeon_magic
 x 43
@@ -11098,9 +11098,9 @@ x 43
 y 12
 end
 arch brazier
-glow_radius 6
 x 43
 y 12
+glow_radius 6
 end
 arch flagstone
 x 43
@@ -11131,9 +11131,9 @@ x 43
 y 16
 end
 arch chest
-carrying 45000
 x 43
 y 16
+carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -11146,9 +11146,9 @@ x 43
 y 17
 end
 arch chest
-carrying 45000
 x 43
 y 17
+carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -11317,9 +11317,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 4
+unique 1
 end
 arch mine17
 x 44
@@ -11331,9 +11331,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 5
+unique 1
 end
 arch mine14
 x 44
@@ -11345,9 +11345,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 6
+unique 1
 end
 arch mine14
 x 44
@@ -11359,9 +11359,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 7
+unique 1
 end
 arch mine14
 x 44
@@ -11373,9 +11373,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 8
+unique 1
 end
 arch mine14
 x 44
@@ -11387,9 +11387,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 9
+unique 1
 end
 arch mine14
 x 44
@@ -11401,9 +11401,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 44
 y 10
+unique 1
 end
 arch mine17
 x 44
@@ -11624,9 +11624,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 4
+unique 1
 end
 arch mine13
 x 45
@@ -11638,9 +11638,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 5
+unique 1
 end
 arch dungeon_magic
 x 45
@@ -11648,9 +11648,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 6
+unique 1
 end
 arch dungeon_magic
 x 45
@@ -11658,9 +11658,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 7
+unique 1
 end
 arch dungeon_magic
 x 45
@@ -11668,9 +11668,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 8
+unique 1
 end
 arch dungeon_magic
 x 45
@@ -11678,9 +11678,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 9
+unique 1
 end
 arch dungeon_magic
 x 45
@@ -11688,9 +11688,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 45
 y 10
+unique 1
 end
 arch mine16
 x 45
@@ -11891,9 +11891,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 4
+unique 1
 end
 arch mine13
 x 46
@@ -11905,9 +11905,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 5
+unique 1
 end
 arch dungeon_magic
 x 46
@@ -11915,9 +11915,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 6
+unique 1
 end
 arch dungeon_magic
 x 46
@@ -11925,9 +11925,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 7
+unique 1
 end
 arch dungeon_magic
 x 46
@@ -11935,9 +11935,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 8
+unique 1
 end
 arch dungeon_magic
 x 46
@@ -11945,9 +11945,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 9
+unique 1
 end
 arch dungeon_magic
 x 46
@@ -11955,9 +11955,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 46
 y 10
+unique 1
 end
 arch mine16
 x 46
@@ -12182,9 +12182,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 4
+unique 1
 end
 arch mine13
 x 47
@@ -12196,9 +12196,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 5
+unique 1
 end
 arch dungeon_magic
 x 47
@@ -12206,9 +12206,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 6
+unique 1
 end
 arch dungeon_magic
 x 47
@@ -12216,9 +12216,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 7
+unique 1
 end
 arch dungeon_magic
 x 47
@@ -12226,9 +12226,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 8
+unique 1
 end
 arch dungeon_magic
 x 47
@@ -12236,9 +12236,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 9
+unique 1
 end
 arch dungeon_magic
 x 47
@@ -12246,9 +12246,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 47
 y 10
+unique 1
 end
 arch mine16
 x 47
@@ -12305,9 +12305,9 @@ x 47
 y 16
 end
 arch chest
-carrying 45000
 x 47
 y 16
+carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -12320,9 +12320,9 @@ x 47
 y 17
 end
 arch chest
-carrying 45000
 x 47
 y 17
+carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -12483,9 +12483,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 4
+unique 1
 end
 arch mine13
 x 48
@@ -12497,9 +12497,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 5
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -12507,9 +12507,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 6
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -12517,9 +12517,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 7
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -12527,9 +12527,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 8
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -12537,9 +12537,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 9
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -12547,9 +12547,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 48
 y 10
+unique 1
 end
 arch mine16
 x 48
@@ -12766,9 +12766,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 4
+unique 1
 end
 arch mine13
 x 49
@@ -12780,9 +12780,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 5
+unique 1
 end
 arch dungeon_magic
 x 49
@@ -12790,9 +12790,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 6
+unique 1
 end
 arch dungeon_magic
 x 49
@@ -12800,9 +12800,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 7
+unique 1
 end
 arch dungeon_magic
 x 49
@@ -12810,9 +12810,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 8
+unique 1
 end
 arch dungeon_magic
 x 49
@@ -12820,9 +12820,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 9
+unique 1
 end
 arch dungeon_magic
 x 49
@@ -12830,9 +12830,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 49
 y 10
+unique 1
 end
 arch mine16
 x 49
@@ -13045,9 +13045,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 4
+unique 1
 end
 arch mine13
 x 50
@@ -13059,9 +13059,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 5
+unique 1
 end
 arch dungeon_magic
 x 50
@@ -13069,9 +13069,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 6
+unique 1
 end
 arch dungeon_magic
 x 50
@@ -13079,9 +13079,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 7
+unique 1
 end
 arch dungeon_magic
 x 50
@@ -13089,9 +13089,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 8
+unique 1
 end
 arch dungeon_magic
 x 50
@@ -13099,9 +13099,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 9
+unique 1
 end
 arch dungeon_magic
 x 50
@@ -13109,9 +13109,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 50
 y 10
+unique 1
 end
 arch mine16
 x 50
@@ -13316,9 +13316,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 4
+unique 1
 end
 arch mine13
 x 51
@@ -13330,9 +13330,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 5
+unique 1
 end
 arch dungeon_magic
 x 51
@@ -13340,9 +13340,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 6
+unique 1
 end
 arch dungeon_magic
 x 51
@@ -13350,9 +13350,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 7
+unique 1
 end
 arch dungeon_magic
 x 51
@@ -13360,9 +13360,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 8
+unique 1
 end
 arch dungeon_magic
 x 51
@@ -13370,9 +13370,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 9
+unique 1
 end
 arch dungeon_magic
 x 51
@@ -13380,9 +13380,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 51
 y 10
+unique 1
 end
 arch mine16
 x 51
@@ -13587,9 +13587,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 4
+unique 1
 end
 arch mine13
 x 52
@@ -13601,9 +13601,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 5
+unique 1
 end
 arch dungeon_magic
 x 52
@@ -13611,9 +13611,9 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 6
+unique 1
 end
 arch dungeon_magic
 x 52
@@ -13621,9 +13621,9 @@ y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 7
+unique 1
 end
 arch dungeon_magic
 x 52
@@ -13631,9 +13631,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 8
+unique 1
 end
 arch dungeon_magic
 x 52
@@ -13641,9 +13641,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 9
+unique 1
 end
 arch dungeon_magic
 x 52
@@ -13651,9 +13651,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 52
 y 10
+unique 1
 end
 arch mine16
 x 52
@@ -13858,9 +13858,9 @@ y 4
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 4
+unique 1
 end
 arch mine13
 x 53
@@ -13872,9 +13872,9 @@ y 5
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 5
+unique 1
 end
 arch dungeon_magic
 x 53
@@ -13882,15 +13882,15 @@ y 6
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 6
+unique 1
 end
 arch button_lever
 name Raise Gate
-connected 242
 x 53
 y 6
+connected 242
 end
 arch dungeon_magic
 x 53
@@ -13898,15 +13898,15 @@ y 7
 end
 arch check_inv
 slaying sfetvrnb4etcmny
+x 53
+y 7
 connected 142
-x 53
-y 7
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 7
+unique 1
 end
 arch dungeon_magic
 x 53
@@ -13914,9 +13914,9 @@ y 8
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 8
+unique 1
 end
 arch dungeon_magic
 x 53
@@ -13924,9 +13924,9 @@ y 9
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 9
+unique 1
 end
 arch dungeon_magic
 x 53
@@ -13934,9 +13934,9 @@ y 10
 end
 arch cobblestones2
 name safe floor
-unique 1
 x 53
 y 10
+unique 1
 end
 arch mine16
 x 53
@@ -14186,18 +14186,18 @@ y 7
 end
 arch igate_closed_2
 name safe door
-speed 0.500000
-connected 142
 x 54
 y 7
+speed 0.500000
+connected 142
 end
 arch grate_open_2
 name day gate
+x 54
+y 7
 speed 0.500000
 value 1
 connected 242
-x 54
-y 7
 end
 arch dungeon_magic
 x 54
@@ -14270,11 +14270,11 @@ x 54
 y 14
 end
 arch key2
-face key_brown.111
 slaying sfetvrnb4etcmny
-unique 1
+face key_brown.111
 x 54
 y 14
+unique 1
 end
 arch flagstone
 x 54
@@ -14469,10 +14469,10 @@ x 55
 y 6
 end
 arch spikes_closed
-speed 0.500000
-connected 142
 x 55
 y 6
+speed 0.500000
+connected 142
 end
 arch dungeon_magic
 x 55
@@ -14480,9 +14480,9 @@ y 7
 end
 arch check_inv
 slaying sfetvrnb4etcmny
-connected 142
 x 55
 y 7
+connected 142
 end
 arch cobblestones2
 name floor
@@ -14490,10 +14490,10 @@ x 55
 y 7
 end
 arch spikes_closed
-speed 0.500000
-connected 142
 x 55
 y 7
+speed 0.500000
+connected 142
 end
 arch dungeon_magic
 x 55
@@ -14505,10 +14505,10 @@ x 55
 y 8
 end
 arch spikes_closed
-speed 0.500000
-connected 142
 x 55
 y 8
+speed 0.500000
+connected 142
 end
 arch dungeon_magic
 x 55
@@ -14718,9 +14718,9 @@ x 56
 y 2
 end
 arch brazier
-glow_radius 6
 x 56
 y 2
+glow_radius 6
 end
 arch dungeon_magic
 x 56
@@ -14790,10 +14790,10 @@ y 7
 end
 arch igate_closed_2
 name safe door
-speed 0.500000
-connected 142
 x 56
 y 7
+speed 0.500000
+connected 142
 end
 arch dungeon_magic
 x 56
@@ -14860,9 +14860,9 @@ x 56
 y 12
 end
 arch brazier
-glow_radius 6
 x 56
 y 12
+glow_radius 6
 end
 arch flagstone
 x 56
@@ -15030,9 +15030,9 @@ x 57
 y 3
 end
 arch brazier
-glow_radius 6
 x 57
 y 3
+glow_radius 6
 end
 arch flagstone
 x 57
@@ -15060,9 +15060,9 @@ y 6
 end
 arch check_inv
 slaying sfetvrnb4etcmny
-connected 142
 x 57
 y 7
+connected 142
 end
 arch flagstone
 x 57
@@ -15101,9 +15101,9 @@ x 57
 y 11
 end
 arch brazier
-glow_radius 6
 x 57
 y 11
+glow_radius 6
 end
 arch flagstone
 x 57

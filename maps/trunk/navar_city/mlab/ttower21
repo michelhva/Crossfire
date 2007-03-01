@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tower
 reset_timeout 7200
 difficulty 1
+region navar
 width 18
 height 18
 enter_x 1
@@ -1300,10 +1301,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 8
-y 2
-end
-arch skree
 x 8
 y 2
 end
@@ -2881,4 +2878,8 @@ x 17
 y 17
 no_pass 0
 blocksview 0
+end
+arch skree
+x 8
+y 2
 end

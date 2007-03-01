@@ -1,9 +1,9 @@
 arch map
-region navar
+name The Hole
 reset_timeout 7200
 difficulty 1
-darkness 7
-temp 28
+region navar
+darkness 5
 width 16
 height 16
 enter_x 1
@@ -662,8 +662,6 @@ x 5
 y 3
 end
 arch blocked
-msg
-endmsg
 x 5
 y 4
 end
