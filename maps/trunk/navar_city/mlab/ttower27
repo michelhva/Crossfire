@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tower
 reset_timeout 7200
 difficulty 1
+region navar
 width 26
 height 26
 enter_x 1
@@ -121,44 +122,30 @@ x 1
 y 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -228,44 +215,30 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
@@ -289,14 +262,10 @@ x 2
 y 1
 end
 arch blocked
-msg
-endmsg
 x 2
 y 2
 end
 arch blocked
-msg
-endmsg
 x 2
 y 3
 end
@@ -396,16 +365,6 @@ arch marble
 x 2
 y 11
 end
-arch big_dragon
-hp 4500
-x 2
-y 11
-carrying 100
-arch key2
-slaying tttower274
-face key_blue.111
-end
-end
 arch blackmarble
 x 2
 y 12
@@ -415,10 +374,6 @@ x 2
 y 12
 end
 arch marble
-x 2
-y 13
-end
-arch big_dragon
 x 2
 y 13
 end
@@ -503,14 +458,10 @@ x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 22
 end
 arch blocked
-msg
-endmsg
 x 2
 y 23
 end
@@ -526,14 +477,10 @@ arch blocked
 x 3
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
 arch blocked
-msg
-endmsg
 x 3
 y 2
 end
@@ -786,14 +733,10 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 3
 y 23
 end
 arch blocked
-msg
-endmsg
 x 3
 y 24
 end
@@ -805,8 +748,6 @@ arch blocked
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
@@ -983,15 +924,7 @@ arch marble
 x 4
 y 15
 end
-arch dragon
-x 4
-y 15
-end
 arch blackmarble
-x 4
-y 16
-end
-arch dragon
 x 4
 y 16
 end
@@ -1090,8 +1023,6 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 4
 y 24
 end
@@ -1103,8 +1034,6 @@ arch blocked
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 y 1
 end
@@ -1255,10 +1184,6 @@ arch blackmarble
 x 5
 y 11
 end
-arch big_dragon
-x 5
-y 11
-end
 arch dungeon_magic
 x 5
 y 11
@@ -1268,10 +1193,6 @@ x 5
 y 12
 end
 arch blackmarble
-x 5
-y 13
-end
-arch big_dragon
 x 5
 y 13
 end
@@ -1386,8 +1307,6 @@ x 5
 y 23
 end
 arch blocked
-msg
-endmsg
 x 5
 y 24
 end
@@ -1399,8 +1318,6 @@ arch blocked
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
@@ -1643,8 +1560,6 @@ x 6
 y 23
 end
 arch blocked
-msg
-endmsg
 x 6
 y 24
 end
@@ -1656,8 +1571,6 @@ arch blocked
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
@@ -1881,8 +1794,6 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 7
 y 24
 end
@@ -1894,8 +1805,6 @@ arch blocked
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -2204,8 +2113,6 @@ x 8
 y 23
 end
 arch blocked
-msg
-endmsg
 x 8
 y 24
 end
@@ -2217,8 +2124,6 @@ arch blocked
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
@@ -2431,8 +2336,6 @@ x 9
 y 23
 end
 arch blocked
-msg
-endmsg
 x 9
 y 24
 end
@@ -2467,10 +2370,6 @@ arch blackmarble
 x 10
 y 3
 end
-arch bone_drake
-x 10
-y 3
-end
 arch dungeon_magic
 x 10
 y 3
@@ -2480,10 +2379,6 @@ x 10
 y 4
 end
 arch blackmarble
-x 10
-y 5
-end
-arch Cwyvern
 x 10
 y 5
 end
@@ -2724,10 +2619,6 @@ arch blackmarble
 x 11
 y 6
 end
-arch bone_drake
-x 11
-y 6
-end
 arch dungeon_magic
 x 11
 y 6
@@ -2832,10 +2723,6 @@ arch blackmarble
 x 11
 y 18
 end
-arch big_elec
-x 11
-y 18
-end
 arch dungeon_magic
 x 11
 y 18
@@ -2855,16 +2742,6 @@ end
 arch marble
 x 11
 y 21
-end
-arch big_elec
-hp 4500
-x 11
-y 21
-carrying 100
-arch key2
-slaying tttower271
-face key_blue.111
-end
 end
 arch blackmarble
 x 11
@@ -2910,16 +2787,6 @@ arch blackmarble
 x 12
 y 1
 end
-arch bone_drake
-hp 9000
-x 12
-y 1
-carrying 100
-arch key2
-slaying tttower273
-face key_blue.111
-end
-end
 arch dungeon_magic
 x 12
 y 1
@@ -2929,10 +2796,6 @@ x 12
 y 2
 end
 arch blackmarble
-x 12
-y 3
-end
-arch Cwyvern
 x 12
 y 3
 end
@@ -3150,10 +3013,6 @@ arch blackmarble
 x 13
 y 4
 end
-arch bone_drake
-x 13
-y 4
-end
 arch dungeon_magic
 x 13
 y 4
@@ -3163,10 +3022,6 @@ x 13
 y 5
 end
 arch blackmarble
-x 13
-y 6
-end
-arch bone_drake
 x 13
 y 6
 end
@@ -3401,10 +3256,6 @@ arch blackmarble
 x 14
 y 3
 end
-arch Cwyvern
-x 14
-y 3
-end
 arch dungeon_magic
 x 14
 y 3
@@ -3549,10 +3400,6 @@ arch marble
 x 14
 y 20
 end
-arch big_elec
-x 14
-y 20
-end
 arch blackmarble
 x 14
 y 21
@@ -3625,10 +3472,6 @@ x 15
 y 3
 end
 arch blackmarble
-x 15
-y 4
-end
-arch bone_drake
 x 15
 y 4
 end
@@ -3813,8 +3656,6 @@ arch blocked
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -4019,8 +3860,6 @@ x 16
 y 23
 end
 arch blocked
-msg
-endmsg
 x 16
 y 24
 end
@@ -4032,8 +3871,6 @@ arch blocked
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 y 1
 end
@@ -4362,8 +4199,6 @@ x 17
 y 23
 end
 arch blocked
-msg
-endmsg
 x 17
 y 24
 end
@@ -4375,8 +4210,6 @@ arch blocked
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 y 1
 end
@@ -4488,11 +4321,6 @@ arch marble
 x 18
 y 11
 end
-arch chinese_dragon
-hp 2000
-x 18
-y 11
-end
 arch blackmarble
 x 18
 y 12
@@ -4502,11 +4330,6 @@ x 18
 y 12
 end
 arch marble
-x 18
-y 13
-end
-arch chinese_dragon
-hp 2000
 x 18
 y 13
 end
@@ -4647,8 +4470,6 @@ x 18
 y 23
 end
 arch blocked
-msg
-endmsg
 x 18
 y 24
 end
@@ -4660,8 +4481,6 @@ arch blocked
 x 19
 end
 arch blocked
-msg
-endmsg
 x 19
 y 1
 end
@@ -4897,8 +4716,6 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 19
 y 24
 end
@@ -4910,8 +4727,6 @@ arch blocked
 x 20
 end
 arch blocked
-msg
-endmsg
 x 20
 y 1
 end
@@ -5013,10 +4828,6 @@ arch marble
 x 20
 y 9
 end
-arch chinese_dragon
-x 20
-y 9
-end
 arch blackmarble
 x 20
 y 10
@@ -5026,11 +4837,6 @@ x 20
 y 10
 end
 arch marble
-x 20
-y 11
-end
-arch chinese_dragon
-hp 2000
 x 20
 y 11
 end
@@ -5066,11 +4872,6 @@ arch marble
 x 20
 y 15
 end
-arch chinese_dragon
-hp 2000
-x 20
-y 15
-end
 arch blackmarble
 x 20
 y 16
@@ -5182,8 +4983,6 @@ x 20
 y 23
 end
 arch blocked
-msg
-endmsg
 x 20
 y 24
 end
@@ -5195,8 +4994,6 @@ arch blocked
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
@@ -5314,11 +5111,6 @@ arch blackmarble
 x 21
 y 13
 end
-arch chinese_dragon
-hp 2000
-x 21
-y 13
-end
 arch dungeon_magic
 x 21
 y 13
@@ -5422,8 +5214,6 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 21
 y 24
 end
@@ -5435,14 +5225,10 @@ arch blocked
 x 22
 end
 arch blocked
-msg
-endmsg
 x 22
 y 1
 end
 arch blocked
-msg
-endmsg
 x 22
 y 2
 end
@@ -5541,16 +5327,6 @@ end
 arch marble
 x 22
 y 11
-end
-arch chinese_dragon
-hp 3000
-x 22
-y 11
-carrying 100
-arch key2
-slaying tttower272
-face key_blue.111
-end
 end
 arch blackmarble
 x 22
@@ -5657,14 +5433,10 @@ no_pass 0
 blocksview 0
 end
 arch blocked
-msg
-endmsg
 x 22
 y 23
 end
 arch blocked
-msg
-endmsg
 x 22
 y 24
 end
@@ -5680,14 +5452,10 @@ x 23
 y 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 3
 end
@@ -5876,14 +5644,10 @@ x 23
 y 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 22
 end
 arch blocked
-msg
-endmsg
 x 23
 y 23
 end
@@ -5907,44 +5671,30 @@ x 24
 y 2
 end
 arch blocked
-msg
-endmsg
 x 24
 y 3
 end
 arch blocked
-msg
-endmsg
 x 24
 y 4
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
 arch blocked
-msg
-endmsg
 x 24
 y 6
 end
 arch blocked
-msg
-endmsg
 x 24
 y 7
 end
 arch blocked
-msg
-endmsg
 x 24
 y 8
 end
 arch blocked
-msg
-endmsg
 x 24
 y 9
 end
@@ -6009,44 +5759,30 @@ x 24
 y 15
 end
 arch blocked
-msg
-endmsg
 x 24
 y 16
 end
 arch blocked
-msg
-endmsg
 x 24
 y 17
 end
 arch blocked
-msg
-endmsg
 x 24
 y 18
 end
 arch blocked
-msg
-endmsg
 x 24
 y 19
 end
 arch blocked
-msg
-endmsg
 x 24
 y 20
 end
 arch blocked
-msg
-endmsg
 x 24
 y 21
 end
 arch blocked
-msg
-endmsg
 x 24
 y 22
 end
@@ -6146,20 +5882,14 @@ x 25
 y 14
 end
 arch blocked
-msg
-endmsg
 x 25
 y 15
 end
 arch blocked
-msg
-endmsg
 x 25
 y 16
 end
 arch blocked
-msg
-endmsg
 x 25
 y 17
 end
@@ -6194,8 +5924,6 @@ y 19
 connected 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 20
 end
@@ -6240,4 +5968,133 @@ end
 arch blocked
 x 25
 y 25
+end
+arch big_dragon
+hp 4500
+x 2
+y 11
+carrying 100
+arch key2
+slaying tttower274
+face key_blue.111
+end
+end
+arch big_dragon
+x 2
+y 13
+end
+arch dragon
+x 4
+y 15
+end
+arch dragon
+x 4
+y 16
+end
+arch big_dragon
+x 5
+y 11
+end
+arch big_dragon
+x 5
+y 13
+end
+arch bone_drake
+x 10
+y 3
+end
+arch Cwyvern
+x 10
+y 5
+end
+arch bone_drake
+x 11
+y 6
+end
+arch big_elec
+x 11
+y 18
+end
+arch big_elec
+hp 4500
+x 11
+y 21
+carrying 100
+arch key2
+slaying tttower271
+face key_blue.111
+end
+end
+arch bone_drake
+hp 9000
+x 12
+y 1
+carrying 100
+arch key2
+slaying tttower273
+face key_blue.111
+end
+end
+arch Cwyvern
+x 12
+y 3
+end
+arch bone_drake
+x 13
+y 4
+end
+arch bone_drake
+x 13
+y 6
+end
+arch Cwyvern
+x 14
+y 3
+end
+arch big_elec
+x 14
+y 20
+end
+arch bone_drake
+x 15
+y 4
+end
+arch chinese_dragon
+hp 2000
+x 18
+y 11
+end
+arch chinese_dragon
+hp 2000
+x 18
+y 13
+end
+arch chinese_dragon
+x 20
+y 9
+end
+arch chinese_dragon
+hp 2000
+x 20
+y 11
+end
+arch chinese_dragon
+hp 2000
+x 20
+y 15
+end
+arch chinese_dragon
+hp 2000
+x 21
+y 13
+end
+arch chinese_dragon
+hp 3000
+x 22
+y 11
+carrying 100
+arch key2
+slaying tttower272
+face key_blue.111
+end
 end

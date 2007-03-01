@@ -1,3 +1,4 @@
+<<<<<<< .mine
 2007-02-27 04:04  rjtanner
 
 	* quests/peterm/Nethack_in_crossfire_Yendor,
@@ -107,6 +108,198 @@
 	  name should be GUILD_TEMPLATE to be conform to README.TXT in
 	  scripts directory.
 
+2007-02-25 07:48  rjtanner
+
+	* navar_city/casino_infernal/casino_infernal1,
+	  navar_city/casino_infernal/casino_infernal2,
+	  navar_city/city1church1, navar_city/city1court,
+	  navar_city/city1enter, navar_city/city1houses,
+	  navar_city/city1houses2, navar_city/city1houses3,
+	  navar_city/city1prison, navar_city/collosium,
+	  navar_city/dragon_hangar/hangar, navar_city/illusion/illexit,
+	  navar_city/illusion/illtow1, navar_city/illusion/illtow2,
+	  navar_city/illusion/illtow3, navar_city/illusion/illtow4,
+	  navar_city/illusion/illtow5, navar_city/illusion/illtow6,
+	  navar_city/illusion/illtow7, navar_city/jail/jail,
+	  navar_city/jail/jail2, navar_city/jail/jail3,
+	  navar_city/light/light0, navar_city/light/light1,
+	  navar_city/light/light2, navar_city/light/light3,
+	  navar_city/light/smugship, navar_city/light/smugship1,
+	  navar_city/magara/houses/earth_house,
+	  navar_city/magara/houses/family_house,
+	  navar_city/magara/houses/kaisas_place,
+	  navar_city/magara/houses/large_house,
+	  navar_city/magara/houses/museum, navar_city/misc/IPO_navar,
+	  navar_city/misc/aliscave, navar_city/misc/aliswell,
+	  navar_city/misc/bowyer, navar_city/misc/buildshop,
+	  navar_city/misc/city1armour, navar_city/misc/city1bank,
+	  navar_city/misc/city1gen, navar_city/misc/city1magic,
+	  navar_city/misc/city1mermaid, navar_city/misc/city1smith,
+	  navar_city/misc/city1weapon, navar_city/misc/dragon_guild,
+	  navar_city/misc/jeweler, navar_city/misc/kitchen,
+	  navar_city/misc/library, navar_city/misc/market1,
+	  navar_city/misc/market2, navar_city/misc/navarwiz,
+	  navar_city/misc/tannery, navar_city/misc/thamshop,
+	  navar_city/misc/theater, navar_city/misc/theater2,
+	  navar_city/misc/theater3, navar_city/misc/theater4,
+	  navar_city/misc/theaterb1, navar_city/misc/theaterb2,
+	  navar_city/misc/theaterb3, navar_city/misc/theaterb4,
+	  navar_city/slums/Iggys_house,
+	  navar_city/slums/Iggys_house_lower,
+	  navar_city/slums/Iggys_house_upper,
+	  navar_city/slums/rockgardens,
+	  navar_city/smugglers_cove/sc_warehouse,
+	  navar_city/smugglers_cove/sc_warehouse2,
+	  navar_city/smugglers_cove/sc_warehouse3,
+	  navar_city/smugglers_cove/smugglercamp, navar_city/spyhouse,
+	  navar_city/temples/gaea, navar_city/temples/gorokh,
+	  navar_city/temples/gorokh2, navar_city/temples/ixalovh,
+	  navar_city/temples/ixalovh2, navar_city/temples/ruggilli,
+	  navar_city/temples/ruggilli2, navar_city/temples/sorig,
+	  navar_city/temples/templelyth, navar_city/temples/valriel,
+	  navar_city/tower/magetower1, navar_city/tower/magetower2,
+	  navar_city/tower/magetower3, navar_city/tower/magetower4,
+	  navar_city/tower/magetower5, navar_city/tower/magetower_low,
+	  navar_city/tower/magetowfinal,
+	  navar_city/troll_canyon/troll_canyon.0,
+	  navar_city/troll_canyon/troll_canyon.1,
+	  navar_city/troll_canyon/troll_canyon.10,
+	  navar_city/troll_canyon/troll_canyon.11,
+	  navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.3,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.6,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  navar_city/troll_canyon/troll_canyon.8,
+	  navar_city/troll_canyon/troll_canyon.9, navar_city/warehouse1,
+	  navar_city/warehouse2, navar_city/warehouse3,
+	  navar_city/warehouse4, navar_city/warehouse5,
+	  navar_city/warehouse6, navar_city/warehouse7,
+	  navar_city/warehouse8, world/world_121_116, world/world_121_117,
+	  world/world_122_116, world/world_122_117: Cosmetic changes to
+	  many of the maps - gave them the 'navar look' (westcwall).
+	  Renamed maps (which were either unnamed, used the actual file
+	  name or tweaked their spelling and capitilization.) Renamed
+	  maps with a generic name to something more specific. Other
+	  changes are due to Map Editor reformatting.
+
+2007-02-25 01:56  rjtanner
+
+	* ChangeLog: ChangeLog updates for latest changes
+
+=======
+2007-02-27 04:04  rjtanner
+
+	* quests/peterm/Nethack_in_crossfire_Yendor,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  quests/peterm/quests/TitanGate,
+	  quests/peterm/quests/dragon_quest,
+	  quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/wyvern_quest: Renamed maps (which used the
+	  actual file name or tweaked their spelling and capitilization).
+	  Widened some of the doorways in the quests/wyvern_quest map.
+	  Other changes are due to Map Editor reformatting.
+
+2007-02-27 03:50  rjtanner
+
+	* quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/Fire1, quests/peterm/FireTemple/Fire2,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/FourthFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Added missing floor tiles. Reset the darkness
+	  to level 5 on some of the maps (editor claimed that the range
+	  had to be 0-5 and the map was using 6.) Other changes are due to
+	  Map Editor reformatting.
+
+2007-02-27 03:35  rjtanner
+
+	* quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-27 03:22  rjtanner
+
+	* quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/AirStudy,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/ApprenticeLevel,
+	  quests/peterm/Demonology/Demon1,
+	  quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/EarthStudy,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/FireStudy,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/HighTower2,
+	  quests/peterm/Demonology/HighTowerTop,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/Demonology/WaterStudy,
+	  quests/peterm/Demonology/WaterTower1,
+	  quests/peterm/Demonology/WaterTower2: Renamed maps (which used
+	  the actual file name or tweaked their spelling and
+	  capitilization). Replaced walls that were using the wrong
+	  sections next to doors. Other changes are due to Map Editor
+	  reformatting.
+
+2007-02-26 05:47  rjtanner
+
+	* quests/peterm/CTower/Barracks, quests/peterm/CTower/Chamber,
+	  quests/peterm/CTower/Dungeon, quests/peterm/CTower/GroundLevel,
+	  quests/peterm/CTower/Laboratory, quests/peterm/CTower/Library,
+	  quests/peterm/CTower/Officers, quests/peterm/CTower/Servants,
+	  quests/peterm/CTower/Study, quests/peterm/CTower/TowerTop:
+	  Renamed maps (which were either unnamed or used the actual file
+	  name). Minor cosmetic updates to maps - wrong wall sections at
+	  corners or missing walls. Added missing floor tiles beneath
+	  walls. Other changes are due to Map Editor reformatting.
+
+2007-02-25 23:12  ryo_saeba
+
+	* templates/guild/GuildList: Shouldn't have committed that test
+	  guild :)
+
+2007-02-25 23:09  ryo_saeba
+
+	* templates/guild/GuildList, templates/guild/mainfloor: Guild's
+	  name should be GUILD_TEMPLATE to be conform to README.TXT in
+	  scripts directory.
+
+>>>>>>> .r5633
 2007-02-25 01:49  rjtanner
 
 	* whalingoutpost/houses/fishershouse1,
@@ -154,37 +347,90 @@
 	* python/CFDataFile.py: Windows requires binary mode to work
 	  correctly (newline issues).
 
-2007-02-24 3:00  kbulgrien
+2007-02-24 09:10  kbulgrien
 
-	* pup_land/lonetown/heinrich: lake arch replaced by sea_nsew to
-	  remove grass from water perimeter inside house.  Gave name of
-	  Bath to the tile.  Other changes introduced by CFJavaEditor.
+	* ChangeLog: - Update ChangeLog to record edits in several recent
+	  commits.
 
-	* pup_land/rainbow/red_town/town: biglake_new arch replaced with
-	  sea_new to make the color of water under galleon consistent with
-	  color of sea tiles.  Other changes introduced by CFJavaEditor.
+2007-02-24 09:08  kbulgrien
 
-	* pup_land/rainbow/islands: red town -> Red Town and other changes
+	* maps/branches/1.x/pup_land/s_f/ki,
+	  maps/branches/lalo-pupland/pup_land/s_f/ki, pup_land/s_f/ki: -
+	  Multi-line message linebreaks removed. a few places to improve
+	  map
+	  appearance; minor npc msg text changes; and changes introduced
+	  by
+	  CFJavaEditor.
+
+2007-02-24 09:00  kbulgrien
+
+	* maps/branches/1.x/pup_land/s_f/ki2,
+	  maps/branches/lalo-pupland/pup_land/s_f/ki2, pup_land/s_f/ki2: -
+	  Add blocksview 0 on lightning walls in a few places to improve
+	  map
+	  appearance; and other CFJavaEditor changes.
+
+2007-02-24 08:58  kbulgrien
+
+	* maps/branches/1.x/pup_land/s_f/to-jyo,
+	  maps/branches/lalo-pupland/pup_land/s_f/to-jyo,
+	  pup_land/s_f/to-jyo: - Multi-line message linebreaks removed;
+	  redundant match strings removed (only
+	  lowercase is required); minor npc msg text changes; and edits
+	  introduced by
+	  CFJavaEditor.
+
+2007-02-24 08:57  kbulgrien
+
+	* maps/branches/1.x/pup_land/rainbow/station,
+	  maps/branches/lalo-pupland/pup_land/rainbow/station,
+	  pup_land/rainbow/station: - Multi-line message linebreaks
+	  removed; red town -> Red Town; and changes
 	  introduced by CFJavaEditor.
 
-	* pup_land/rainbow/shore: Multi-line message linebreaks removed.
+2007-02-24 08:56  kbulgrien
 
-	* pup_land/rainbow/bed_room: Multi-line message linebreaks removed
-	  and other changes introduced by CFJavaEditor.
+	* maps/branches/1.x/pup_land/rainbow/bed_room,
+	  maps/branches/lalo-pupland/pup_land/rainbow/bed_room,
+	  pup_land/rainbow/bed_room: - Multi-line message linebreaks
+	  removed and other changes introduced by
+	  CFJavaEditor.
 
-	* pup_land/rainbow/station: Multi-line message linebreaks removed;
-	  red town -> Red Town; and changes introduced by CFJavaEditor.
+2007-02-24 08:56  kbulgrien
 
-	* pup_land/s_f/to-jyo: Multi-line message linebreaks removed;
-	  redundant match strings removed (only lowercase is required);
-	  minor npc msg text changes; and edits introduced by CFJavaEditor.
+	* maps/branches/1.x/pup_land/rainbow/shore,
+	  maps/branches/lalo-pupland/pup_land/rainbow/shore,
+	  pup_land/rainbow/shore: - Multi-line message linebreaks removed.
 
-	* pup_land/s_f/ki2: Add blocksview 0 on lightning walls in a few
-	  places to improve map appearance; and CFJavaEditor changes.
+2007-02-24 08:53  kbulgrien
 
-	* pup_land/s_f/ki: Multi-line message linebreaks removed. a few
-	  places to improve map appearance; minor npc msg text changes; and
+	* maps/branches/1.x/pup_land/rainbow/islands,
+	  maps/branches/lalo-pupland/pup_land/rainbow/islands,
+	  pup_land/rainbow/islands: - red town -> Red Town and other
 	  changes introduced by CFJavaEditor.
+
+2007-02-24 08:50  kbulgrien
+
+	* maps/branches/1.x/pup_land/rainbow/red_town/town,
+	  maps/branches/lalo-pupland/pup_land/rainbow/red_town/town,
+	  pup_land/rainbow/red_town/town: - biglake_new arch replaced with
+	  sea_new to make the color of water under
+	  galleon consistent with color of sea tiles. Other changes
+	  introduced by
+	  CFJavaEditor.
+
+2007-02-24 08:43  rjtanner
+
+	* ChangeLog: Updating the ChangeLog with recent changes
+
+2007-02-24 08:10  kbulgrien
+
+	* maps/branches/1.x/pup_land/lone_town/heinrich,
+	  maps/branches/lalo-pupland/pup_land/lone_town/heinrich,
+	  ChangeLog, pup_land/lone_town/heinrich: - lake arch replaced by
+	  sea_nsew to remove grass from water perimeter inside
+	  house. Gave name of Bath to the tile. Other changes due to
+	  CFJavaEditor.
 
 2007-02-24 08:00  rjtanner
 

@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tower
 reset_timeout 7200
 difficulty 85
+region navar
 width 26
 height 26
 enter_x 1
@@ -829,21 +830,25 @@ arch dungeon_magic
 x 3
 y 6
 end
+arch dungeon_magic
+x 3
+y 7
+end
 arch woodfloor
 x 3
 y 7
 end
-arch swall_1_2
-x 3
-y 7
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 3
 y 7
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 3
+y 8
+end
+arch swall_1_2
 x 3
 y 8
 end
@@ -921,15 +926,19 @@ arch cwall_1_2
 x 3
 y 17
 end
+arch swall_1_1_half
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 18
+end
 arch woodfloor
 x 3
 y 18
 end
-arch swall_1_1
-x 3
-y 18
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 3
 y 18
 end
@@ -1289,21 +1298,25 @@ arch dungeon_magic
 x 5
 y 6
 end
+arch dungeon_magic
+x 5
+y 7
+end
 arch woodfloor
 x 5
 y 7
 end
-arch swall_1_2
-x 5
-y 7
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 5
 y 7
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 5
+y 8
+end
+arch swall_1_2
 x 5
 y 8
 end
@@ -1376,15 +1389,19 @@ arch cwall_1_4
 x 5
 y 17
 end
+arch swall_1_1_half
+x 5
+y 17
+end
+arch dungeon_magic
+x 5
+y 18
+end
 arch woodfloor
 x 5
 y 18
 end
-arch swall_1_1
-x 5
-y 18
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 5
 y 18
 end
@@ -1733,15 +1750,15 @@ arch fog
 x 7
 y 2
 end
+arch dungeon_magic
+x 7
+y 3
+end
 arch woodfloor
 x 7
 y 3
 end
-arch swall_1_3
-x 7
-y 3
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 7
 y 3
 end
@@ -1749,15 +1766,15 @@ arch woodfloor
 x 7
 y 4
 end
+arch dungeon_magic
+x 7
+y 5
+end
 arch woodfloor
 x 7
 y 5
 end
-arch swall_1_3
-x 7
-y 5
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 7
 y 5
 end
@@ -1881,15 +1898,15 @@ y 19
 no_pass 0
 blocksview 0
 end
+arch dungeon_magic
+x 7
+y 20
+end
 arch woodfloor
 x 7
 y 20
 end
-arch swall_1_3
-x 7
-y 20
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 7
 y 20
 end
@@ -1897,15 +1914,15 @@ arch woodfloor
 x 7
 y 21
 end
+arch dungeon_magic
+x 7
+y 22
+end
 arch woodfloor
 x 7
 y 22
 end
-arch swall_1_3
-x 7
-y 22
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 7
 y 22
 end
@@ -1972,6 +1989,10 @@ arch fog
 x 8
 y 2
 end
+arch dungeon_magic
+x 8
+y 3
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -1979,10 +2000,6 @@ x 8
 y 3
 end
 arch cwall_1_4
-x 8
-y 3
-end
-arch dungeon_magic
 x 8
 y 3
 end
@@ -2000,6 +2017,10 @@ arch dungeon_magic
 x 8
 y 4
 end
+arch dungeon_magic
+x 8
+y 5
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -2007,10 +2028,6 @@ x 8
 y 5
 end
 arch cwall_1_1
-x 8
-y 5
-end
-arch dungeon_magic
 x 8
 y 5
 end
@@ -2142,6 +2159,10 @@ name_pl stonefloor
 x 8
 y 20
 end
+arch swall_1_3_half
+x 8
+y 20
+end
 arch cwall_1_2
 x 8
 y 20
@@ -2153,6 +2174,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 8
+y 22
+end
+arch swall_1_3_half
 x 8
 y 22
 end
@@ -5239,9 +5264,17 @@ y 2
 no_pass 0
 blocksview 0
 end
+arch dungeon_magic
+x 17
+y 3
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 17
+y 3
+end
+arch swall_1_4_half
 x 17
 y 3
 end
@@ -5251,7 +5284,7 @@ y 3
 end
 arch dungeon_magic
 x 17
-y 3
+y 4
 end
 arch dungeon_floor
 x 17
@@ -5265,7 +5298,7 @@ connected 2
 end
 arch dungeon_magic
 x 17
-y 4
+y 5
 end
 arch stonefloor2
 name stonefloor
@@ -5273,11 +5306,11 @@ name_pl stonefloor
 x 17
 y 5
 end
-arch cwall_1_1
+arch swall_1_4_half
 x 17
 y 5
 end
-arch dungeon_magic
+arch cwall_1_1
 x 17
 y 5
 end
@@ -5413,6 +5446,10 @@ name_pl stonefloor
 x 17
 y 20
 end
+arch swall_1_4_half
+x 17
+y 20
+end
 arch cwall_1_2
 x 17
 y 20
@@ -5424,6 +5461,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 17
+y 22
+end
+arch swall_1_4_half
 x 17
 y 22
 end
@@ -5490,15 +5531,15 @@ y 2
 no_pass 0
 blocksview 0
 end
+arch dungeon_magic
+x 18
+y 3
+end
 arch woodfloor
 x 18
 y 3
 end
-arch swall_1_4
-x 18
-y 3
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 18
 y 3
 end
@@ -5506,15 +5547,15 @@ arch woodfloor
 x 18
 y 4
 end
+arch dungeon_magic
+x 18
+y 5
+end
 arch woodfloor
 x 18
 y 5
 end
-arch swall_1_4
-x 18
-y 5
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 18
 y 5
 end
@@ -5638,15 +5679,15 @@ arch fog
 x 18
 y 19
 end
+arch dungeon_magic
+x 18
+y 20
+end
 arch woodfloor
 x 18
 y 20
 end
-arch swall_1_4
-x 18
-y 20
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 18
 y 20
 end
@@ -5654,15 +5695,15 @@ arch woodfloor
 x 18
 y 21
 end
+arch dungeon_magic
+x 18
+y 22
+end
 arch woodfloor
 x 18
 y 22
 end
-arch swall_1_4
-x 18
-y 22
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 18
 y 22
 end
@@ -6010,21 +6051,25 @@ arch dungeon_magic
 x 20
 y 6
 end
+arch dungeon_magic
+x 20
+y 7
+end
 arch woodfloor
 x 20
 y 7
 end
-arch swall_1_2
-x 20
-y 7
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 20
 y 7
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 20
+y 8
+end
+arch swall_1_2
 x 20
 y 8
 end
@@ -6094,15 +6139,19 @@ arch cwall_1_3
 x 20
 y 17
 end
+arch swall_1_1_half
+x 20
+y 17
+end
+arch dungeon_magic
+x 20
+y 18
+end
 arch woodfloor
 x 20
 y 18
 end
-arch swall_1_1
-x 20
-y 18
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 20
 y 18
 end
@@ -6462,21 +6511,25 @@ arch dungeon_magic
 x 22
 y 6
 end
+arch dungeon_magic
+x 22
+y 7
+end
 arch woodfloor
 x 22
 y 7
 end
-arch swall_1_2
-x 22
-y 7
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 22
 y 7
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 22
+y 8
+end
+arch swall_1_2
 x 22
 y 8
 end
@@ -6554,15 +6607,19 @@ arch cwall_1_2
 x 22
 y 17
 end
+arch swall_1_1_half
+x 22
+y 17
+end
+arch dungeon_magic
+x 22
+y 18
+end
 arch woodfloor
 x 22
 y 18
 end
-arch swall_1_1
-x 22
-y 18
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 22
 y 18
 end

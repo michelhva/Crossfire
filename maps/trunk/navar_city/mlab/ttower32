@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tower
 reset_timeout 7200
 difficulty 85
+region navar
 width 26
 height 26
 enter_x 1
@@ -2154,26 +2155,6 @@ arch flagstone
 x 8
 y 11
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 8
-y 11
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch flagstone
 x 8
 y 12
@@ -2438,26 +2419,6 @@ end
 arch flagstone
 x 9
 y 14
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 9
-y 14
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch flagstone
 x 9
@@ -2890,79 +2851,6 @@ arch flagstone
 x 11
 y 8
 end
-arch big_wiz
-name The Second Wizard
-name_pl Great Nameless Wizard of Yore
-Wis 30
-Pow 60
-hp 30000
-maxhp 30000
-sp 3000
-maxsp 3000
-exp 700000
-
-dam 37
-x 11
-y 8
-level 100
-resist_physical 85
-resist_fire 90
-resist_electricity 90
-resist_cold 90
-resist_acid 80
-resist_weaponmagic 60
-resist_slow 90
-resist_deplete 90
-resist_counterspell 100
-resist_godpower 90
-resist_holyword 95
-resist_blind 100
-carrying 60500
-run_away 0
-reflect_spell 1
-no_steal 1
-arch amulet
-name shining amulet of repulshion
-name_pl shining amulet of repulshion
-slaying tttower32amushn
-msg
-endmsg
-resist_acid 10
-material 256
-value 10000
-magic 2
-glow_radius 3
-reflecting 1
-blocksview 1
-reflect_missile 1
-reflect_spell 1
-no_steal 1
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-end
 arch dungeon_magic
 x 11
 y 8
@@ -3038,26 +2926,6 @@ end
 arch flagstone
 x 11
 y 16
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 11
-y 16
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch flagstone
 x 11
@@ -3555,26 +3423,6 @@ arch flagstone
 x 13
 y 16
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 13
-y 16
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch flagstone
 x 13
 y 17
@@ -3791,26 +3639,6 @@ arch dungeon_magic
 x 14
 y 9
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 14
-y 9
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch marble
 x 14
 y 10
@@ -4085,26 +3913,6 @@ arch marble
 x 15
 y 14
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 15
-y 14
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch flagstone
 x 15
 y 15
@@ -4314,26 +4122,6 @@ end
 arch flagstone
 x 16
 y 11
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 16
-y 11
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch flagstone
 x 16
@@ -6754,4 +6542,214 @@ x 25
 y 25
 no_pass 0
 blocksview 0
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 8
+y 11
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 9
+y 14
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch big_wiz
+name The Second Wizard
+name_pl Great Nameless Wizard of Yore
+Wis 30
+Pow 60
+hp 30000
+maxhp 30000
+sp 3000
+maxsp 3000
+exp 700000
+dam 37
+x 11
+y 8
+level 100
+resist_physical 85
+resist_fire 90
+resist_electricity 90
+resist_cold 90
+resist_acid 80
+resist_weaponmagic 60
+resist_slow 90
+resist_deplete 90
+resist_counterspell 100
+resist_godpower 90
+resist_holyword 95
+resist_blind 100
+carrying 60500
+reflect_spell 1
+run_away 0
+no_steal 1
+arch amulet
+name shining amulet of repulshion
+name_pl shining amulet of repulshion
+slaying tttower32amushn
+resist_acid 10
+material 256
+value 10000
+magic 2
+glow_radius 3
+reflecting 1
+blocksview 1
+reflect_missile 1
+reflect_spell 1
+no_steal 1
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 11
+y 16
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 13
+y 16
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 14
+y 9
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 15
+y 14
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 16
+y 11
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
 end

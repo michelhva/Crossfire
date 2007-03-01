@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tower
 reset_timeout 7200
 difficulty 85
+region navar
 width 26
 height 26
 enter_x 1
@@ -2017,10 +2018,6 @@ sp 12
 x 8
 connected 1
 end
-arch skree
-hp 2500
-x 8
-end
 arch cobblestones2
 x 8
 y 1
@@ -2452,10 +2449,6 @@ hp 12
 sp 9
 x 10
 connected 1
-end
-arch skree
-hp 2000
-x 10
 end
 arch cobblestones2
 x 10
@@ -2848,10 +2841,6 @@ sp 12
 x 12
 connected 1
 end
-arch skree
-hp 2000
-x 12
-end
 arch cobblestones2
 x 12
 y 1
@@ -3243,9 +3232,6 @@ hp 11
 sp 16
 x 14
 connected 1
-end
-arch skree
-x 14
 end
 arch cobblestones2
 x 14
@@ -6127,4 +6113,19 @@ x 25
 y 25
 no_pass 0
 blocksview 0
+end
+arch skree
+hp 2500
+x 8
+end
+arch skree
+hp 2000
+x 10
+end
+arch skree
+hp 2000
+x 12
+end
+arch skree
+x 14
 end
