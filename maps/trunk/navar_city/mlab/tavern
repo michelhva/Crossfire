@@ -1,7 +1,8 @@
 arch map
-region navar
+name Western Navar Tavern
 reset_timeout 7200
 difficulty 1
+region navar
 width 95
 height 80
 enter_x 1
@@ -1215,11 +1216,15 @@ arch cwall_2_2_1
 x 2
 y 10
 end
+arch swall_1_1_half
+x 2
+y 10
+end
 arch grass
 x 2
 y 11
 end
-arch swall_1_1
+arch swall_2_1_1
 x 2
 y 11
 end
@@ -1352,13 +1357,17 @@ arch grass
 x 2
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 26
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 2
+y 27
+end
+arch swall_1_2
 x 2
 y 27
 end
@@ -1898,7 +1907,7 @@ arch grass
 x 3
 y 18
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 18
 end
@@ -2394,6 +2403,10 @@ x 4
 y 18
 end
 arch wwall_1_2
+x 4
+y 18
+end
+arch swall_1_3_half
 x 4
 y 18
 end
@@ -5395,6 +5408,10 @@ name_pl stonefloor
 x 10
 y 2
 end
+arch swall_1_4_half
+x 10
+y 2
+end
 arch cwall_2_2_3
 x 10
 y 2
@@ -5925,7 +5942,7 @@ arch grass
 x 11
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 11
 y 2
 end
@@ -7027,6 +7044,10 @@ name_pl stonefloor
 x 13
 y 6
 end
+arch swall_1_4_half
+x 13
+y 6
+end
 arch cwall_1_2
 x 13
 y 6
@@ -7042,6 +7063,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 13
+y 9
+end
+arch swall_1_4_half
 x 13
 y 9
 end
@@ -7519,7 +7544,7 @@ arch grass
 x 14
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 2
 end
@@ -7541,7 +7566,7 @@ name_pl stonefloor
 x 14
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 6
 end
@@ -7559,7 +7584,7 @@ name_pl stonefloor
 x 14
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 9
 end
@@ -7994,6 +8019,10 @@ name_pl stonefloor
 x 15
 y 2
 end
+arch swall_1_3_half
+x 15
+y 2
+end
 arch awall_2_2_2
 x 15
 y 2
@@ -8038,6 +8067,10 @@ arch awall_1_2
 x 15
 y 6
 end
+arch swall_1_3_half
+x 15
+y 6
+end
 arch cwall_1_1
 x 15
 y 6
@@ -8065,6 +8098,10 @@ x 15
 y 9
 end
 arch awall_1_1
+x 15
+y 9
+end
+arch swall_1_3_half
 x 15
 y 9
 end
@@ -8254,6 +8291,14 @@ name_pl stonefloor
 x 15
 y 29
 end
+arch swall_1_4
+x 15
+y 29
+end
+arch swall_1_1
+x 15
+y 29
+end
 arch awall_2_2_4
 x 15
 y 29
@@ -8264,7 +8309,7 @@ name_pl stonefloor
 x 15
 y 30
 end
-arch swall_1_1
+arch swall_2_1_1
 x 15
 y 30
 end
@@ -8305,13 +8350,17 @@ name_pl stonefloor
 x 15
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 15
 y 34
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 15
+y 35
+end
+arch swall_1_2
 x 15
 y 35
 end
@@ -8854,7 +8903,7 @@ name_pl stonefloor
 x 16
 y 29
 end
-arch swall_1_4
+arch swall_2_1_2
 x 16
 y 29
 end
@@ -10123,13 +10172,17 @@ name_pl stonefloor
 x 18
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 18
 y 34
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 18
+y 35
+end
+arch swall_1_2
 x 18
 y 35
 end
@@ -11102,8 +11155,8 @@ CHURCH OF VALRIEL TIES TO VIOLENCE:
 An undercover investigation into the
 'Holy Church of Valriel' has
 discovered monetary ties to a
-militant group opreating under the 
-'Traveling Ministry Of The Most 
+militant group opreating under the
+'Traveling Ministry Of The Most
 Holy Power'. When asked about this
 situation the High Priest of Valriel
 said "Ask God".
@@ -13481,11 +13534,15 @@ arch wwall_1_3
 x 24
 y 2
 end
+arch swall_1_1_half
+x 24
+y 2
+end
 arch woodfloor
 x 24
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 24
 y 3
 end
@@ -15719,11 +15776,15 @@ arch wwall_1_4
 x 28
 y 2
 end
+arch swall_1_1_half
+x 28
+y 2
+end
 arch woodfloor
 x 28
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 28
 y 3
 end
@@ -16368,6 +16429,10 @@ arch awall_1_1
 x 29
 y 10
 end
+arch swall_1_4
+x 29
+y 10
+end
 arch cwall_2_2_4
 x 29
 y 10
@@ -16585,6 +16650,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 29
+y 35
+end
+arch swall_1_4
 x 29
 y 35
 end
@@ -17021,7 +17090,7 @@ arch dungeon_floor
 x 30
 y 10
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 10
 end
@@ -17253,7 +17322,7 @@ name_pl floor
 x 30
 y 35
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 35
 end
@@ -17574,13 +17643,17 @@ arch dungeon_floor
 x 31
 y 12
 end
-arch swall_1_2
+arch swall_2_1_1
 x 31
 y 12
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 31
+y 13
+end
+arch swall_1_2
 x 31
 y 13
 end
@@ -23486,7 +23559,7 @@ name_pl floor
 x 42
 y 35
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 35
 end
@@ -24021,6 +24094,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 43
+y 35
+end
+arch swall_1_3
 x 43
 y 35
 end
@@ -24948,8 +25025,8 @@ CHURCH OF VALRIEL TIES TO VIOLENCE:
 An undercover investigation into the
 'Holy Church of Valriel' has
 discovered monetary ties to a
-militant group opreating under the 
-'Traveling Ministry Of The Most 
+militant group opreating under the
+'Traveling Ministry Of The Most
 Holy Power'. When asked about this
 situation the High Priest of Valriel
 said "Ask God".
@@ -34947,6 +35024,10 @@ arch brush
 x 65
 y 2
 end
+arch swall_1_4_half
+x 65
+y 2
+end
 arch hedge_1_1
 x 65
 y 2
@@ -35572,7 +35653,7 @@ arch brush
 x 66
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 66
 y 2
 end
@@ -36232,6 +36313,10 @@ arch mine13
 x 67
 y 48
 end
+arch dungeon_magic
+x 67
+y 49
+end
 arch dungeon_floor
 x 67
 y 49
@@ -36247,16 +36332,12 @@ unique 1
 end
 arch dungeon_magic
 x 67
-y 49
+y 50
 end
 arch dungeon_floor
 x 67
 y 50
 unique 1
-end
-arch dungeon_magic
-x 67
-y 50
 end
 arch grate_closed_1
 x 67
@@ -36755,6 +36836,10 @@ arch mine13
 x 68
 y 48
 end
+arch dungeon_magic
+x 68
+y 49
+end
 arch dungeon_floor
 x 68
 y 49
@@ -36762,16 +36847,12 @@ unique 1
 end
 arch dungeon_magic
 x 68
-y 49
+y 50
 end
 arch dungeon_floor
 x 68
 y 50
 unique 1
-end
-arch dungeon_magic
-x 68
-y 50
 end
 arch swall_1_4
 x 68
@@ -37069,10 +37150,6 @@ arch cobblestones2
 x 69
 y 20
 end
-arch dragon
-x 69
-y 20
-end
 arch cobblestones2
 x 69
 y 21
@@ -37157,23 +37234,11 @@ arch cobblestones2
 x 69
 y 31
 end
-arch dragon
-x 69
-y 31
-end
 arch cobblestones2
 x 69
 y 32
 end
-arch dragon
-x 69
-y 32
-end
 arch cobblestones2
-x 69
-y 33
-end
-arch dragon
 x 69
 y 33
 end
@@ -37253,18 +37318,26 @@ arch mine13
 x 69
 y 48
 end
+arch swall_1_1_half
+x 69
+y 48
+end
+arch dungeon_magic
+x 69
+y 49
+end
 arch dungeon_floor
 x 69
 y 49
 unique 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 69
 y 49
 end
 arch dungeon_magic
 x 69
-y 49
+y 50
 end
 arch dungeon_floor
 x 69
@@ -37272,10 +37345,6 @@ y 50
 unique 1
 end
 arch swall_2_2_4
-x 69
-y 50
-end
-arch dungeon_magic
 x 69
 y 50
 end
@@ -37585,10 +37654,6 @@ x 70
 y 21
 end
 arch cobblestones2
-x 70
-y 22
-end
-arch dragon
 x 70
 y 22
 end
@@ -39707,10 +39772,6 @@ arch cobblestones2
 x 74
 y 25
 end
-arch cobra
-x 74
-y 25
-end
 arch cobblestones2
 x 74
 y 26
@@ -40247,10 +40308,6 @@ x 75
 y 21
 end
 arch cobblestones2
-x 75
-y 22
-end
-arch serpent
 x 75
 y 22
 end
@@ -41493,10 +41550,6 @@ x 77
 y 21
 end
 arch cobblestones2
-x 77
-y 22
-end
-arch cobra
 x 77
 y 22
 end
@@ -47269,10 +47322,6 @@ end
 arch random_treasure
 end
 end
-arch dragon
-x 86
-y 28
-end
 arch cobblestones2
 x 86
 y 29
@@ -47286,10 +47335,6 @@ arch random_treasure
 end
 arch random_treasure
 end
-end
-arch dragon
-x 86
-y 29
 end
 arch cobblestones2
 x 86
@@ -50928,7 +50973,7 @@ arch brush
 x 93
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 93
 y 2
 end
@@ -51381,6 +51426,10 @@ x 94
 y 1
 end
 arch brush
+x 94
+y 2
+end
+arch swall_1_3_half
 x 94
 y 2
 end
@@ -51978,4 +52027,44 @@ end
 arch grass
 x 94
 y 79
+end
+arch dragon
+x 69
+y 20
+end
+arch dragon
+x 69
+y 31
+end
+arch dragon
+x 69
+y 32
+end
+arch dragon
+x 69
+y 33
+end
+arch dragon
+x 70
+y 22
+end
+arch cobra
+x 74
+y 25
+end
+arch serpent
+x 75
+y 22
+end
+arch cobra
+x 77
+y 22
+end
+arch dragon
+x 86
+y 28
+end
+arch dragon
+x 86
+y 29
 end
