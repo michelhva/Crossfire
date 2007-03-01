@@ -518,15 +518,15 @@ x 4
 y 17
 end
 arch sign
-name bulletin board
+name Bulletin Board
 msg
-----------------------------------
-Live in a smiple way. Don't live a
-life of luxury during war.
-Defeat the Regular Army & Mr.Bauer!
-- . - . - . - . - . - . - . - . -
+-------------------------------------
+Live in a simple way.  Don't live a
+life of luxury during the war.
+Defeat the Regular Army & Mr. Bauer!
+- . - . - . - . - . - . - . - . - . -
 Watch out for spies & thieves.
--------------------------------
+-------------------------------------
 endmsg
 x 4
 y 17
@@ -719,7 +719,7 @@ x 6
 y 17
 end
 arch sign
-name houses & dungeons
+name Houses & Dungeons
 msg
 -----------------------------------
 Inn
@@ -729,7 +729,7 @@ Magic Shop
 Bank of Lone
 Tavern
 Guilds
-house
+House
 -- . -- . -- . -- . -- . -- . -- .
 Dungeon:(More than (X) levels required)
 Magic Show (Level 1)
@@ -989,7 +989,7 @@ x 9
 y 8
 end
 arch tavern
-name thieve's den
+name Thieves' Den
 x 9
 y 8
 end
@@ -1080,6 +1080,7 @@ x 10
 y 6
 end
 arch well
+name Well
 slaying town_ud1
 hp 7
 sp 8
@@ -1641,7 +1642,7 @@ x 15
 y 14
 end
 arch house_small
-name house
+name House
 slaying heinrich
 hp 7
 sp 14
@@ -1849,7 +1850,7 @@ x 17
 y 14
 end
 arch house_1
-name house of Cordish
+name House of Cordish
 slaying cordish
 hp 7
 sp 15
@@ -2368,9 +2369,8 @@ Island  Name : Pup Land
 Country Name : Shining Kingdom
 City    Name : Lone Town
 Comment:
-To solve quests, information is
-very important. Go from tavern to
-tavern.
+To solve quests, information is very important.
+Go from tavern to tavern.
 endmsg
 x 22
 y 6
@@ -2797,7 +2797,7 @@ x 25
 y 19
 end
 arch city_tower
-name tower of Pupuly
+name Tower of Pupuly
 slaying pupuly
 hp 7
 sp 14
@@ -2813,6 +2813,7 @@ x 1
 y 9
 end
 arch church
+name Church
 slaying church
 hp 5
 sp 1
@@ -2844,7 +2845,7 @@ x 10
 y 9
 end
 arch rl_house2
-name Permanent apartments
+name Permanent Apartments
 slaying /pup_land/lone_town/apartment/groundfloor
 hp 26
 sp 36
@@ -2876,7 +2877,7 @@ x 13
 y 3
 end
 arch store_general
-name gem shop
+name Gem Shop
 slaying gemshop
 sp 8
 x 13
@@ -2899,7 +2900,7 @@ x 15
 y 9
 end
 arch house_long
-name inn
+name Inn
 slaying inn
 hp 9
 sp 8
