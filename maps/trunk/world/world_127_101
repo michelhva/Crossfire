@@ -4428,13 +4428,6 @@ x 15
 y 40
 elevation 3006
 end
-arch city_tower_east
-slaying /azumauindo/ranbounagisatoshi/towers/tou1
-hp 8
-sp 15
-x 15
-y 40
-end
 arch hills_rocky
 x 15
 y 41
@@ -4444,15 +4437,6 @@ arch hills_rocky
 x 15
 y 42
 elevation 4442
-end
-arch building7_east
-name ichidou dzuki Ruggilli
-name_pl ichidou dzuki Ruggilli
-slaying /azumauindo/ranbounagisatoshi/temples/rruggilli1
-hp 8
-sp 14
-x 15
-y 42
 end
 arch hills_rocky
 x 15
@@ -4694,10 +4678,6 @@ x 16
 y 29
 elevation 1640
 end
-arch castle_a_east
-x 16
-y 29
-end
 arch brush
 x 16
 y 30
@@ -4837,8 +4817,7 @@ y 46
 elevation 358
 end
 arch house2_east
-name itteifuhen apa-to
-name_pl itteifuhen apa-to
+name Itteifuhen Apa-to
 slaying /azumauindo/ranbounagisatoshi/apartments/sapartment
 hp 6
 sp 12
@@ -5568,15 +5547,6 @@ x 18
 y 43
 elevation 1663
 end
-arch building10_east
-name mise
-name_pl mise
-slaying /azumauindo/ranbounagisatoshi/shops/groupshop
-hp 17
-sp 28
-x 18
-y 43
-end
 arch brush
 x 18
 y 44
@@ -6274,8 +6244,7 @@ y 45
 elevation 46
 end
 arch house2_east
-name shouhou senta
-name_pl shouhou senta
+name Shouhou Senta
 slaying /azumauindo/ranbounagisatoshi/shops/tradecenter
 hp 7
 sp 15
@@ -6626,15 +6595,6 @@ arch grass
 x 21
 y 47
 elevation 44
-end
-arch building1_east
-name mise
-name_pl mise
-slaying /azumauindo/ranbounagisatoshi/shops/potionshop1
-hp 16
-sp 26
-x 21
-y 47
 end
 arch grass
 x 21
@@ -8409,10 +8369,6 @@ x 28
 y 16
 elevation -466
 end
-arch fishboat
-x 28
-y 16
-end
 arch sea
 x 28
 y 17
@@ -8467,10 +8423,6 @@ arch sea
 x 28
 y 27
 elevation -240
-end
-arch fishboat
-x 28
-y 27
 end
 arch sea
 x 28
@@ -8704,10 +8656,6 @@ x 29
 y 22
 elevation -365
 end
-arch fishboat
-x 29
-y 22
-end
 arch sea
 x 29
 y 23
@@ -8905,10 +8853,6 @@ arch sea
 x 30
 y 11
 elevation -285
-end
-arch fishboat
-x 30
-y 11
 end
 arch sea
 x 30
@@ -9213,10 +9157,6 @@ arch sea
 x 31
 y 19
 elevation -311
-end
-arch fishboat
-x 31
-y 19
 end
 arch sea
 x 31
@@ -9866,10 +9806,6 @@ x 33
 y 30
 elevation -78
 end
-arch fishboat
-x 33
-y 30
-end
 arch shallow_sea
 x 33
 y 31
@@ -10076,10 +10012,6 @@ x 34
 y 17
 elevation -100
 end
-arch fishboat
-x 34
-y 17
-end
 arch sea
 x 34
 y 18
@@ -10119,10 +10051,6 @@ arch sea
 x 34
 y 25
 elevation -119
-end
-arch fishboat
-x 34
-y 25
 end
 arch sea
 x 34
@@ -11153,10 +11081,6 @@ arch shallow_sea
 x 37
 y 18
 elevation -41
-end
-arch fishboat
-x 37
-y 18
 end
 arch shallow_sea
 x 37
@@ -13028,10 +12952,6 @@ arch flagstone
 x 42
 y 10
 end
-arch building8_east
-x 42
-y 10
-end
 arch light2
 x 42
 y 11
@@ -13065,15 +12985,6 @@ arch grass
 x 42
 y 14
 elevation 818
-end
-arch building2_east
-name Suno-yamatoshi Dojo
-name_pl Suno-yamatoshi Dojo
-slaying /azumauindo/suno-yamatoshi/buildings/dojoA1
-hp 38
-sp 57
-x 42
-y 14
 end
 arch brush
 x 42
@@ -13529,15 +13440,6 @@ x 43
 y 16
 elevation 493
 end
-arch building3_east
-name akuma tatemono
-name_pl akuma tatemono
-slaying /azumauindo/suno-yamatoshi/buildings/tatemonoA1
-hp 32
-sp 56
-x 43
-y 16
-end
 arch grass
 x 43
 y 17
@@ -13844,10 +13746,6 @@ x 44
 y 7
 end
 arch flagstone
-x 44
-y 7
-end
-arch capitalhold_east
 x 44
 y 7
 end
@@ -14268,8 +14166,7 @@ x 45
 y 14
 end
 arch guard_house_3
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 45
 y 14
 end
@@ -14613,13 +14510,6 @@ x 46
 y 14
 blocksview 0
 end
-arch city_tower_east
-slaying /azumauindo/suno-yamatoshi/towers/tou1
-hp 8
-sp 15
-x 46
-y 14
-end
 arch grass
 x 46
 y 15
@@ -14955,10 +14845,6 @@ arch flagstone
 x 47
 y 10
 end
-arch building5_east
-x 47
-y 10
-end
 arch light2
 x 47
 y 11
@@ -14989,15 +14875,6 @@ arch grass
 x 47
 y 14
 elevation 501
-end
-arch building9_east
-name Shougyoukumiai dzuki za Nenshou Youso
-name_pl Shougyoukumiai dzuki za Nenshou Youso
-slaying /azumauindo/suno-yamatoshi/nenshou_youso/ground
-hp 12
-sp 19
-x 47
-y 14
 end
 arch grass
 x 47
@@ -15041,18 +14918,6 @@ arch grass
 x 47
 y 20
 elevation 846
-end
-arch building1_east
-name ninja dojo
-name_pl ninja dojo
-slaying /azumauindo/suno-yamatoshi/buildings/ninjadojoA1
-msg
-Intruder!
-endmsg
-hp 53
-sp 61
-x 47
-y 20
 end
 arch grass
 x 47
@@ -15365,13 +15230,6 @@ arch brush
 x 48
 y 17
 elevation 358
-end
-arch store_weapons_east
-slaying /azumauindo/suno-yamatoshi/shops/weaponshop1
-hp 8
-sp 14
-x 48
-y 17
 end
 arch grass
 x 48
@@ -15942,4 +15800,141 @@ arch sea
 x 49
 y 49
 elevation -1028
+end
+arch city_tower_east
+name Tou
+slaying /azumauindo/ranbounagisatoshi/towers/tou1
+hp 8
+sp 15
+x 15
+y 40
+end
+arch building7_east
+name ichidou dzuki Ruggilli
+name_pl ichidou dzuki Ruggilli
+slaying /azumauindo/ranbounagisatoshi/temples/rruggilli1
+hp 8
+sp 14
+x 15
+y 42
+end
+arch castle_a_east
+x 16
+y 29
+end
+arch building10_east
+name Gurupushoppu
+slaying /azumauindo/ranbounagisatoshi/shops/groupshop
+hp 17
+sp 28
+x 18
+y 43
+end
+arch building1_east
+name Poshon Sutooe
+slaying /azumauindo/ranbounagisatoshi/shops/potionshop1
+hp 16
+sp 26
+x 21
+y 47
+end
+arch fishboat
+x 28
+y 16
+end
+arch fishboat
+x 28
+y 27
+end
+arch fishboat
+x 29
+y 22
+end
+arch fishboat
+x 30
+y 11
+end
+arch fishboat
+x 31
+y 19
+end
+arch fishboat
+x 33
+y 30
+end
+arch fishboat
+x 34
+y 17
+end
+arch fishboat
+x 34
+y 25
+end
+arch fishboat
+x 37
+y 18
+end
+arch building8_east
+x 42
+y 10
+end
+arch building2_east
+name Suno-yamatoshi Dojo
+name_pl Suno-yamatoshi Dojo
+slaying /azumauindo/suno-yamatoshi/buildings/dojoA1
+hp 38
+sp 57
+x 42
+y 14
+end
+arch building3_east
+name Akuma Tatemono
+slaying /azumauindo/suno-yamatoshi/buildings/tatemonoA1
+hp 32
+sp 56
+x 43
+y 16
+end
+arch capitalhold_east
+x 44
+y 7
+end
+arch city_tower_east
+name Tou
+slaying /azumauindo/suno-yamatoshi/towers/tou1
+hp 8
+sp 15
+x 46
+y 14
+end
+arch building5_east
+x 47
+y 10
+end
+arch building9_east
+name Shougyoukumiai dzuki za Nenshou Youso
+slaying /azumauindo/suno-yamatoshi/nenshou_youso/ground
+hp 12
+sp 19
+x 47
+y 14
+end
+arch building1_east
+name Ninja Dojo
+slaying /azumauindo/suno-yamatoshi/buildings/ninjadojoA1
+msg
+Intruder!
+endmsg
+hp 53
+sp 61
+x 47
+y 20
+end
+arch store_weapons_east
+name Emono Mise
+slaying /azumauindo/suno-yamatoshi/shops/weaponshop1
+hp 8
+sp 14
+x 48
+y 17
 end

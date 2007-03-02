@@ -1,7 +1,8 @@
 arch map
+name Ichidou Dzuki Ruggilli
 reset_timeout 7200
-region azumauindo
 difficulty 1
+region azumauindo
 width 16
 height 16
 enter_x 1
@@ -1239,7 +1240,7 @@ Ruggilli will lend the immolating
 fires to any who choose to follow!
 @match immolating|Immolating|fires|Fires
 Yes! A Flame which will consume your
-enemies! 
+enemies!
 @match *
 The eternal flame of Ruggilli will
 prevail

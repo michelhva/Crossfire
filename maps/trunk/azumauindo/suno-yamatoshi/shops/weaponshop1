@@ -1,12 +1,13 @@
 arch map
+name Emono Mise
 reset_timeout 7200
+difficulty 1
 region azumauindo
 shopitems weapon:20;weapon improver:10;bow:0;arrow:0;*:-98
+shopgreed 1.20000
 shopmin 100
 shopmax 100000
 shoprace human
-shopgreed 1.2
-difficulty 1
 width 16
 height 16
 enter_x 1
@@ -1235,6 +1236,10 @@ arch swall_2_2_4
 x 6
 y 15
 end
+arch swall_1_2_half
+x 6
+y 15
+end
 arch ewall_1_3
 x 6
 y 15
@@ -1767,6 +1772,10 @@ x 9
 y 15
 end
 arch swall_2_2_1
+x 9
+y 15
+end
+arch swall_1_2_half
 x 9
 y 15
 end

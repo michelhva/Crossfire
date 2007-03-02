@@ -1,7 +1,8 @@
 arch map
+name Tou
 reset_timeout 7200
-region azumauindo
 difficulty 1
+region azumauindo
 width 32
 height 32
 enter_x 1
@@ -754,10 +755,6 @@ arch chest
 x 6
 y 6
 end
-arch byakie
-x 6
-y 6
-end
 arch flagstone
 x 6
 y 7
@@ -779,10 +776,6 @@ x 6
 y 9
 end
 arch chest
-x 6
-y 9
-end
-arch byakie
 x 6
 y 9
 end
@@ -1020,10 +1013,6 @@ arch chest
 x 8
 y 6
 end
-arch byakie
-x 8
-y 6
-end
 arch flagstone
 x 8
 y 7
@@ -1037,10 +1026,6 @@ x 8
 y 8
 end
 arch chest
-x 8
-y 8
-end
-arch byakie
 x 8
 y 8
 end
@@ -2158,4 +2143,20 @@ end
 arch blocked
 x 17
 y 17
+end
+arch byakie
+x 6
+y 6
+end
+arch byakie
+x 6
+y 9
+end
+arch byakie
+x 8
+y 6
+end
+arch byakie
+x 8
+y 8
 end

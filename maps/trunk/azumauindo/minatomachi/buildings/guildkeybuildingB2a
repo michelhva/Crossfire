@@ -1,8 +1,8 @@
 arch map
-name guildhousesinc
-region azumauindo
+name Shougyoukumiai dzuki za Ketsueki Itsuryuu
 reset_timeout 7200
 difficulty 1
+region azumauindo
 width 30
 height 10
 enter_x 9
@@ -722,11 +722,9 @@ y 4
 end
 arch sign
 name Shougyoukumiai dzuki za Ketsueki Itsuryuu
-name_pl Guild of the Laughing Skull
 msg
 Shougyoukumiai dzuki za Ketsueki Itsuryuu
 30,000 Diamonds
-
 endmsg
 x 9
 y 4

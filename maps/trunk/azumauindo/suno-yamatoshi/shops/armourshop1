@@ -1,11 +1,13 @@
 arch map
+name Kabuto Mise
 reset_timeout 7200
+difficulty 1
 region azumauindo
 shopitems armour:10;helmet:11;shield:5;boots:0;cloak:0;gloves:0;bracers:0;girdle:2;armour improver:4;*:-98
+shopgreed 1.20000
 shopmin 200
 shopmax 100000
 shoprace human
-shopgreed 1.2
 width 16
 height 16
 enter_x 1
@@ -1171,6 +1173,10 @@ arch cwall_2_2_1
 x 6
 y 12
 end
+arch swall_1_1_half
+x 6
+y 12
+end
 arch dungeon_magic
 x 6
 y 13
@@ -1208,6 +1214,10 @@ x 6
 y 15
 end
 arch ewall_1_3
+x 6
+y 15
+end
+arch swall_1_2_half
 x 6
 y 15
 end
@@ -1738,6 +1748,10 @@ arch cwall_2_2_4
 x 9
 y 12
 end
+arch swall_1_1_half
+x 9
+y 12
+end
 arch dungeon_magic
 x 9
 y 13
@@ -1775,6 +1789,10 @@ x 9
 y 15
 end
 arch ewall_1_4
+x 9
+y 15
+end
+arch swall_1_2_half
 x 9
 y 15
 end

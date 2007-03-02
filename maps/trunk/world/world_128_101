@@ -43,6 +43,7 @@ y 3
 elevation 3812
 end
 arch s_mountain_cave
+name Akki Yama
 slaying /azumauindo/misc/cave1
 hp 5
 sp 17
@@ -191,12 +192,6 @@ arch grass
 y 18
 elevation 399
 end
-arch store_magic_east
-slaying /azumauindo/suno-yamatoshi/shops/magicshop1
-hp 8
-sp 13
-y 18
-end
 arch grass
 y 19
 elevation 516
@@ -207,14 +202,6 @@ end
 arch grass
 y 21
 elevation 358
-end
-arch building5_east
-name Nenshou Youso's Chozou Kutsurogi
-name_pl Nenshou Youso's Chozou Kutsurogi
-slaying /azumauindo/suno-yamatoshi/nenshou_youso/storage_room
-hp 1
-sp 10
-y 21
 end
 arch grass
 y 22
@@ -230,9 +217,6 @@ end
 arch desert
 y 24
 elevation 637
-end
-arch building1_east
-y 24
 end
 arch desert
 y 25
@@ -505,7 +489,7 @@ y 16
 elevation 105
 end
 arch market2_east
-name itteifuhen apa-to
+name Itteifuhen Apa-to
 name_pl itteifuhen apa-to
 slaying /azumauindo/suno-yamatoshi/apartments/lapartment1
 hp 17
@@ -756,13 +740,6 @@ x 2
 y 4
 elevation 3812
 end
-arch shrine_east_r
-slaying /azumauindo/misc/shrine1
-hp 9
-sp 15
-x 2
-y 4
-end
 arch flagstone
 face snow.111
 x 2
@@ -881,15 +858,6 @@ x 2
 y 14
 elevation 655
 end
-arch building7_east
-name ichidou dzuki Ruggilli
-name_pl ichidou dzuki Ruggilli
-slaying /azumauindo/suno-yamatoshi/temples/ruggilli1
-hp 8
-sp 14
-x 2
-y 14
-end
 arch grass
 x 2
 y 15
@@ -914,15 +882,6 @@ arch grass
 x 2
 y 17
 elevation 32
-end
-arch building2_east
-name chokinbako
-name_pl chokinbako
-slaying /azumauindo/suno-yamatoshi/shops/bank1
-hp 8
-sp 13
-x 2
-y 17
 end
 arch grass
 x 2
@@ -958,10 +917,6 @@ arch desert
 x 2
 y 24
 elevation 281
-end
-arch building2_east
-x 2
-y 24
 end
 arch desert
 x 2
@@ -1253,6 +1208,7 @@ y 9
 elevation 2693
 end
 arch house2_east
+name Sumai
 slaying /azumauindo/suno-yamatoshi/buildings/jadechesthouse1
 hp 11
 sp 17
@@ -1580,6 +1536,7 @@ x 4
 y 5
 end
 arch mountain_cave
+name Akki Yama
 slaying /azumauindo/misc/cave1
 hp 23
 sp 61
@@ -1672,13 +1629,6 @@ x 4
 y 17
 elevation 220
 end
-arch store_armour_east
-slaying /azumauindo/suno-yamatoshi/shops/armourshop1
-hp 8
-sp 14
-x 4
-y 17
-end
 arch grass
 x 4
 y 18
@@ -1767,8 +1717,7 @@ x 4
 y 27
 end
 arch guard_house_4
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 4
 y 27
 end
@@ -1792,8 +1741,7 @@ x 4
 y 28
 end
 arch guard_house_3
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 4
 y 28
 end
@@ -2034,10 +1982,6 @@ x 5
 y 13
 elevation 1300
 end
-arch pagoda_tower_east
-x 5
-y 13
-end
 arch jungle_1
 x 5
 y 14
@@ -2085,15 +2029,6 @@ arch desert
 x 5
 y 22
 elevation 637
-end
-arch building1_east
-name mise
-name_pl mise
-slaying /azumauindo/suno-yamatoshi/shops/pawn1
-hp 8
-sp 14
-x 5
-y 22
 end
 arch desert
 x 5
@@ -2886,10 +2821,6 @@ x 7
 y 25
 elevation 661
 end
-arch building2_east
-x 7
-y 25
-end
 arch desert
 x 7
 y 26
@@ -3629,16 +3560,6 @@ arch desert
 x 9
 y 35
 elevation 79
-end
-arch rowboat
-slaying world_128_101
-msg
-The boat goes south for a short time.
-endmsg
-hp 19
-sp 42
-x 9
-y 35
 end
 arch shallow_sea
 x 9
@@ -5435,16 +5356,6 @@ y 48
 elevation -422
 no_pass 0
 end
-arch fishboat
-slaying world_126_104
-msg
-The fishing boat sails west.
-endmsg
-hp 30
-sp 27
-x 15
-y 48
-end
 arch sea
 x 15
 y 49
@@ -6663,16 +6574,6 @@ y 42
 elevation -9
 no_pass 0
 end
-arch rowboat
-slaying world_128_101
-msg
-The boat goes north for a short time.
-endmsg
-hp 10
-sp 35
-x 19
-y 42
-end
 arch dungeon_magic
 x 19
 y 43
@@ -6690,6 +6591,7 @@ y 43
 elevation 676
 end
 arch guard_house_4
+name Minatomachi Goei Mezon
 x 19
 y 43
 end
@@ -6710,6 +6612,7 @@ y 44
 elevation 676
 end
 arch guard_house_3
+name Minatomachi Goei Mezon
 x 19
 y 44
 end
@@ -12121,13 +12024,6 @@ x 37
 y 29
 elevation 127
 end
-arch rowboat
-slaying world_128_101
-hp 39
-sp 25
-x 37
-y 29
-end
 arch brush
 x 37
 y 30
@@ -12494,10 +12390,6 @@ x 38
 y 33
 elevation 577
 end
-arch building1_east
-x 38
-y 33
-end
 arch grass
 x 38
 y 34
@@ -12523,10 +12415,6 @@ arch grass
 x 38
 y 39
 elevation 87
-end
-arch building1_east
-x 38
-y 39
 end
 arch desert
 x 38
@@ -12795,13 +12683,6 @@ y 25
 elevation -93
 no_pass 0
 end
-arch rowboat
-slaying world_128_101
-hp 38
-sp 29
-x 39
-y 25
-end
 arch shallow_sea
 x 39
 y 26
@@ -12892,15 +12773,6 @@ arch desert
 x 39
 y 37
 elevation 76
-end
-arch building1_east
-name mise
-name_pl mise
-slaying /azumauindo/minatomachi/stores/generalstore
-hp 7
-sp 14
-x 39
-y 37
 end
 arch desert
 x 39
@@ -13129,12 +13001,6 @@ x 40
 y 20
 end
 arch flagstone
-x 40
-y 20
-end
-arch building9_east
-name Shougyoukumiai dzuki za Zaseki Dzuki Ryoku
-name_pl Shougyoukumiai dzuki za Zaseki Dzuki Ryoku
 x 40
 y 20
 end
@@ -13663,10 +13529,6 @@ arch grass
 x 41
 y 33
 elevation 417
-end
-arch building2_east
-x 41
-y 33
 end
 arch grass
 x 41
@@ -14675,15 +14537,6 @@ x 44
 y 16
 elevation 455
 end
-arch building5_east
-name Zaseki Dzuki Ryoku's Chozou Kutsurogi
-name_pl Zaseki Dzuki Ryoku's Chozou Kutsurogi
-slaying /azumauindo/zaseki_dzuki_ryoku/storage_room
-hp 1
-sp 10
-x 44
-y 16
-end
 arch grass
 x 44
 y 17
@@ -15339,10 +15192,6 @@ x 45
 y 42
 elevation 950
 end
-arch building2_east
-x 45
-y 42
-end
 arch grass
 x 45
 y 43
@@ -15617,15 +15466,6 @@ arch grass
 x 46
 y 36
 elevation 566
-end
-arch building4_east
-name Shougyoukumiai Sumai Inc.
-name_pl Shougyoukumiai Sumai Inc.
-slaying /azumauindo/minatomachi/buildings/guildkeybuilding1
-hp 17
-sp 58
-x 46
-y 36
 end
 arch grass
 x 46
@@ -15994,10 +15834,6 @@ x 47
 y 43
 elevation 952
 end
-arch building1_east
-x 47
-y 43
-end
 arch grass
 x 47
 y 44
@@ -16225,10 +16061,6 @@ arch brush
 x 48
 y 34
 elevation 212
-end
-arch building1_east
-x 48
-y 34
 end
 arch grass
 x 48
@@ -16681,4 +16513,173 @@ arch sea
 x 49
 y 49
 elevation -1022
+end
+arch store_magic_east
+name Kijutsu Shijou
+slaying /azumauindo/suno-yamatoshi/shops/magicshop1
+hp 8
+sp 13
+y 18
+end
+arch building5_east
+name Nenshou Youso's Chozou Kutsurogi
+name_pl Nenshou Youso's Chozou Kutsurogi
+slaying /azumauindo/suno-yamatoshi/nenshou_youso/storage_room
+hp 1
+sp 10
+y 21
+end
+arch building1_east
+y 24
+end
+arch shrine_east_r
+name Ichidou
+slaying /azumauindo/misc/shrine1
+hp 9
+sp 15
+x 2
+y 4
+end
+arch building7_east
+name Ichidou Dzuki Ruggilli
+slaying /azumauindo/suno-yamatoshi/temples/ruggilli1
+hp 8
+sp 14
+x 2
+y 14
+end
+arch building2_east
+name Chokinbako
+slaying /azumauindo/suno-yamatoshi/shops/bank1
+hp 8
+sp 13
+x 2
+y 17
+end
+arch building2_east
+x 2
+y 24
+end
+arch store_armour_east
+name Kabuto Mise
+slaying /azumauindo/suno-yamatoshi/shops/armourshop1
+hp 8
+sp 14
+x 4
+y 17
+end
+arch pagoda_tower_east
+x 5
+y 13
+end
+arch building1_east
+name Ichi Roku Ginkou
+slaying /azumauindo/suno-yamatoshi/shops/pawn1
+hp 8
+sp 14
+x 5
+y 22
+end
+arch building2_east
+x 7
+y 25
+end
+arch rowboat
+slaying world_128_101
+msg
+The boat goes south for a short time.
+endmsg
+hp 19
+sp 42
+x 9
+y 35
+end
+arch fishboat
+slaying world_126_104
+msg
+The fishing boat sails west.
+endmsg
+hp 30
+sp 27
+x 15
+y 48
+end
+arch rowboat
+slaying world_128_101
+msg
+The boat goes north for a short time.
+endmsg
+hp 10
+sp 35
+x 19
+y 42
+end
+arch rowboat
+slaying world_128_101
+hp 39
+sp 25
+x 37
+y 29
+end
+arch building1_east
+x 38
+y 33
+end
+arch building1_east
+x 38
+y 39
+end
+arch rowboat
+slaying world_128_101
+hp 38
+sp 29
+x 39
+y 25
+end
+arch building1_east
+name Shijou Mise
+slaying /azumauindo/minatomachi/stores/generalstore
+hp 7
+sp 14
+x 39
+y 37
+end
+arch building9_east
+name Shougyoukumiai dzuki za Zaseki Dzuki Ryoku
+x 40
+y 20
+end
+arch building2_east
+x 41
+y 33
+end
+arch building5_east
+name Zaseki Dzuki Ryoku's Chozou Kutsurogi
+name_pl Zaseki Dzuki Ryoku's Chozou Kutsurogi
+slaying /azumauindo/zaseki_dzuki_ryoku/storage_room
+hp 1
+sp 10
+x 44
+y 16
+end
+arch building2_east
+x 45
+y 42
+end
+arch building4_east
+name Shougyoukumiai Sumai Inc.
+name_pl Shougyoukumiai Sumai Inc.
+slaying /azumauindo/minatomachi/buildings/guildkeybuilding1
+hp 17
+sp 58
+x 46
+y 36
+end
+arch building1_east
+x 47
+y 43
+end
+arch building1_east
+x 48
+y 34
 end

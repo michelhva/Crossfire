@@ -1,4 +1,5 @@
 arch map
+name Akki Yama
 reset_timeout 7200
 difficulty 1
 region azumauindo
@@ -14,33 +15,21 @@ Date: Tue Aug  3 23:32:57 2004
 endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch snow
@@ -104,18 +93,12 @@ arch cave17
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
@@ -228,14 +211,10 @@ x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 1
 end
@@ -332,8 +311,6 @@ x 2
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 18
 end
@@ -342,14 +319,10 @@ x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
@@ -462,8 +435,6 @@ x 3
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
@@ -471,8 +442,6 @@ arch blocked
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
@@ -599,8 +568,6 @@ x 4
 y 19
 end
 arch blocked
-msg
-endmsg
 x 4
 y 19
 end
@@ -746,8 +713,6 @@ x 5
 y 19
 end
 arch blocked
-msg
-endmsg
 x 5
 y 19
 end
@@ -885,8 +850,6 @@ x 6
 y 19
 end
 arch blocked
-msg
-endmsg
 x 6
 y 19
 end
@@ -1014,8 +977,6 @@ x 7
 y 19
 end
 arch blocked
-msg
-endmsg
 x 7
 y 19
 end
@@ -1135,8 +1096,6 @@ x 8
 y 18
 end
 arch blocked
-msg
-endmsg
 x 8
 y 18
 end
@@ -1145,8 +1104,6 @@ x 8
 y 19
 end
 arch blocked
-msg
-endmsg
 x 8
 y 19
 end
@@ -1270,8 +1227,6 @@ x 9
 y 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 18
 end
@@ -1411,14 +1366,10 @@ x 10
 y 16
 end
 arch blocked
-msg
-endmsg
 x 10
 y 17
 end
 arch blocked
-msg
-endmsg
 x 10
 y 18
 end
@@ -1426,8 +1377,6 @@ arch blocked
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 1
 end
@@ -1528,38 +1477,26 @@ x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 y 13
 end
 arch blocked
-msg
-endmsg
 x 11
 y 14
 end
 arch blocked
-msg
-endmsg
 x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 11
 y 16
 end
 arch blocked
-msg
-endmsg
 x 11
 y 17
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
@@ -1668,20 +1605,14 @@ x 12
 y 13
 end
 arch blocked
-msg
-endmsg
 x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
@@ -1802,20 +1733,14 @@ x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
 arch blocked
-msg
-endmsg
 x 14
 y 2
 end
@@ -1924,20 +1849,14 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
@@ -2046,56 +1965,38 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 y 50
 end
 arch blocked
-msg
-endmsg
 x 15
 y 51
 end
 arch blocked
-msg
-endmsg
 x 15
 y 52
 end
 arch blocked
-msg
-endmsg
 x 15
 y 53
 end
 arch blocked
-msg
-endmsg
 x 15
 y 54
 end
 arch blocked
-msg
-endmsg
 x 15
 y 55
 end
 arch blocked
-msg
-endmsg
 x 15
 y 56
 end
 arch blocked
-msg
-endmsg
 x 16
 y 2
 end
@@ -2183,10 +2084,6 @@ arch dirtfloor
 x 16
 y 13
 end
-arch medium_demon
-x 16
-y 13
-end
 arch dirtfloor
 x 16
 y 14
@@ -2204,20 +2101,14 @@ x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 y 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 49
 end
 arch blocked
-msg
-endmsg
 x 16
 y 50
 end
@@ -2262,38 +2153,26 @@ x 16
 y 55
 end
 arch blocked
-msg
-endmsg
 x 16
 y 56
 end
 arch blocked
-msg
-endmsg
 x 16
 y 57
 end
 arch blocked
-msg
-endmsg
 x 16
 y 58
 end
 arch blocked
-msg
-endmsg
 x 16
 y 59
 end
 arch blocked
-msg
-endmsg
 x 17
 y 2
 end
 arch blocked
-msg
-endmsg
 x 17
 y 3
 end
@@ -2390,14 +2269,10 @@ x 17
 y 15
 end
 arch blocked
-msg
-endmsg
 x 17
 y 16
 end
 arch blocked
-msg
-endmsg
 x 17
 y 49
 end
@@ -2462,20 +2337,14 @@ x 17
 y 58
 end
 arch blocked
-msg
-endmsg
 x 17
 y 59
 end
 arch blocked
-msg
-endmsg
 x 17
 y 60
 end
 arch blocked
-msg
-endmsg
 x 18
 y 3
 end
@@ -2539,10 +2408,6 @@ arch dirtfloor
 x 18
 y 11
 end
-arch medium_demon
-x 18
-y 11
-end
 arch dirtfloor
 x 18
 y 12
@@ -2568,26 +2433,18 @@ x 18
 y 15
 end
 arch blocked
-msg
-endmsg
 x 18
 y 16
 end
 arch blocked
-msg
-endmsg
 x 18
 y 47
 end
 arch blocked
-msg
-endmsg
 x 18
 y 48
 end
 arch blocked
-msg
-endmsg
 x 18
 y 49
 end
@@ -2644,26 +2501,18 @@ x 18
 y 59
 end
 arch blocked
-msg
-endmsg
 x 18
 y 60
 end
 arch blocked
-msg
-endmsg
 x 18
 y 61
 end
 arch blocked
-msg
-endmsg
 x 19
 y 3
 end
 arch blocked
-msg
-endmsg
 x 19
 y 4
 end
@@ -2756,20 +2605,14 @@ x 19
 y 15
 end
 arch blocked
-msg
-endmsg
 x 19
 y 16
 end
 arch blocked
-msg
-endmsg
 x 19
 y 46
 end
 arch blocked
-msg
-endmsg
 x 19
 y 47
 end
@@ -2850,20 +2693,14 @@ x 19
 y 60
 end
 arch blocked
-msg
-endmsg
 x 19
 y 61
 end
 arch blocked
-msg
-endmsg
 x 19
 y 62
 end
 arch blocked
-msg
-endmsg
 x 20
 y 4
 end
@@ -2907,10 +2744,6 @@ arch dirtfloor
 x 20
 y 11
 end
-arch Balrog
-x 20
-y 11
-end
 arch dirtfloor
 x 20
 y 12
@@ -2932,14 +2765,10 @@ x 20
 y 15
 end
 arch blocked
-msg
-endmsg
 x 20
 y 16
 end
 arch blocked
-msg
-endmsg
 x 20
 y 46
 end
@@ -3028,8 +2857,6 @@ x 20
 y 62
 end
 arch blocked
-msg
-endmsg
 x 20
 y 62
 end
@@ -3038,20 +2865,14 @@ x 20
 y 63
 end
 arch blocked
-msg
-endmsg
 x 20
 y 63
 end
 arch blocked
-msg
-endmsg
 x 21
 y 4
 end
 arch blocked
-msg
-endmsg
 x 21
 y 5
 end
@@ -3064,10 +2885,6 @@ x 21
 y 6
 end
 arch dirtfloor
-x 21
-y 7
-end
-arch medium_demon
 x 21
 y 7
 end
@@ -3112,20 +2929,14 @@ x 21
 y 15
 end
 arch blocked
-msg
-endmsg
 x 21
 y 16
 end
 arch blocked
-msg
-endmsg
 x 21
 y 17
 end
 arch blocked
-msg
-endmsg
 x 21
 y 46
 end
@@ -3218,14 +3029,10 @@ x 21
 y 63
 end
 arch blocked
-msg
-endmsg
 x 21
 y 63
 end
 arch blocked
-msg
-endmsg
 x 22
 y 5
 end
@@ -3290,14 +3097,10 @@ x 22
 y 16
 end
 arch blocked
-msg
-endmsg
 x 22
 y 17
 end
 arch blocked
-msg
-endmsg
 x 22
 y 46
 end
@@ -3401,14 +3204,10 @@ x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
@@ -3501,20 +3300,14 @@ x 23
 y 16
 end
 arch blocked
-msg
-endmsg
 x 23
 y 17
 end
 arch blocked
-msg
-endmsg
 x 23
 y 18
 end
 arch blocked
-msg
-endmsg
 x 23
 y 46
 end
@@ -3622,14 +3415,10 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
@@ -3698,20 +3487,14 @@ x 24
 y 17
 end
 arch blocked
-msg
-endmsg
 x 24
 y 18
 end
 arch blocked
-msg
-endmsg
 x 24
 y 45
 end
 arch blocked
-msg
-endmsg
 x 24
 y 46
 end
@@ -3815,14 +3598,10 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 5
 end
@@ -3846,10 +3625,6 @@ arch dirtfloor
 x 25
 y 9
 end
-arch Balrog
-x 25
-y 9
-end
 arch dirtfloor
 x 25
 y 10
@@ -3863,10 +3638,6 @@ x 25
 y 12
 end
 arch dirtfloor
-x 25
-y 13
-end
-arch Balrog
 x 25
 y 13
 end
@@ -3891,14 +3662,10 @@ x 25
 y 17
 end
 arch blocked
-msg
-endmsg
 x 25
 y 18
 end
 arch blocked
-msg
-endmsg
 x 25
 y 45
 end
@@ -3999,14 +3766,10 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 5
 end
@@ -4075,8 +3838,6 @@ x 26
 y 17
 end
 arch blocked
-msg
-endmsg
 x 26
 y 18
 end
@@ -4085,8 +3846,6 @@ x 26
 y 19
 end
 arch blocked
-msg
-endmsg
 x 26
 y 45
 end
@@ -4175,8 +3934,6 @@ x 26
 y 62
 end
 arch blocked
-msg
-endmsg
 x 26
 y 62
 end
@@ -4185,20 +3942,14 @@ x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 27
 y 5
 end
 arch blocked
-msg
-endmsg
 x 27
 y 6
 end
@@ -4271,8 +4022,6 @@ x 27
 y 19
 end
 arch blocked
-msg
-endmsg
 x 27
 y 45
 end
@@ -4353,8 +4102,6 @@ x 27
 y 60
 end
 arch blocked
-msg
-endmsg
 x 27
 y 61
 end
@@ -4363,20 +4110,14 @@ x 27
 y 62
 end
 arch blocked
-msg
-endmsg
 x 27
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 6
 end
 arch blocked
-msg
-endmsg
 x 28
 y 7
 end
@@ -4477,14 +4218,10 @@ x 28
 y 20
 end
 arch blocked
-msg
-endmsg
 x 28
 y 44
 end
 arch blocked
-msg
-endmsg
 x 28
 y 45
 end
@@ -4553,14 +4290,10 @@ x 28
 y 59
 end
 arch blocked
-msg
-endmsg
 x 28
 y 60
 end
 arch blocked
-msg
-endmsg
 x 28
 y 61
 end
@@ -4633,8 +4366,6 @@ x 29
 y 20
 end
 arch blocked
-msg
-endmsg
 x 29
 y 44
 end
@@ -4715,14 +4446,10 @@ x 29
 y 59
 end
 arch blocked
-msg
-endmsg
 x 29
 y 60
 end
 arch blocked
-msg
-endmsg
 x 29
 y 61
 end
@@ -4757,4896 +4484,4832 @@ end
 arch dirtfloor
 x 30
 y 12
+end
+arch dirtfloor
+x 30
+y 13
+end
+arch dirtfloor
+x 30
+y 14
+end
+arch dirtfloor
+x 30
+y 15
+end
+arch dirtfloor
+x 30
+y 16
+end
+arch dirtfloor
+x 30
+y 17
+end
+arch dirtfloor
+x 30
+y 18
+end
+arch dirtfloor
+x 30
+y 19
+end
+arch cave2
+x 30
+y 19
+end
+arch blocked
+x 30
+y 20
+end
+arch blocked
+x 30
+y 44
+end
+arch dirtfloor
+x 30
+y 45
+end
+arch cave4
+x 30
+y 45
+end
+arch dirtfloor
+x 30
+y 46
+end
+arch dirtfloor
+x 30
+y 47
+end
+arch dirtfloor
+x 30
+y 48
+end
+arch slevel_2_2_1
+x 30
+y 48
+end
+arch dirtfloor
+x 30
+y 49
+end
+arch dirtfloor
+x 30
+y 50
+end
+arch dirtfloor
+x 30
+y 51
+end
+arch dirtfloor
+x 30
+y 52
+end
+arch dirtfloor
+x 30
+y 53
+end
+arch raas
+x 30
+y 53
+end
+arch dirtfloor
+x 30
+y 54
+end
+arch dirtfloor
+x 30
+y 55
+end
+arch dirtfloor
+x 30
+y 56
+end
+arch dirtfloor
+x 30
+y 57
+end
+arch dirtfloor
+x 30
+y 58
+end
+arch dirtfloor
+x 30
+y 59
+end
+arch cave2
+x 30
+y 59
+end
+arch blocked
+x 30
+y 60
+end
+arch blocked
+x 31
+y 7
+end
+arch dirtfloor
+x 31
+y 8
+end
+arch cave4
+x 31
+y 8
+end
+arch dirtfloor
+x 31
+y 9
+end
+arch slevel_3_4
+x 31
+y 9
+end
+arch dirtfloor
+x 31
+y 10
+end
+arch slevel_3_4
+x 31
+y 10
+end
+arch dirtfloor
+x 31
+y 11
+end
+arch slevel_3_4
+x 31
+y 11
+end
+arch dirtfloor
+x 31
+y 12
+end
+arch slevel_3_4
+x 31
+y 12
+end
+arch dirtfloor
+x 31
+y 13
+end
+arch slevel_3_4
+x 31
+y 13
+end
+arch dirtfloor
+x 31
+y 14
+end
+arch slevel_3_4
+x 31
+y 14
+end
+arch dirtfloor
+x 31
+y 15
+end
+arch slevel_3_4
+x 31
+y 15
+end
+arch dirtfloor
+x 31
+y 16
+end
+arch slevel_3_4
+x 31
+y 16
+end
+arch dirtfloor
+x 31
+y 17
+end
+arch slevel_3_4
+x 31
+y 17
+end
+arch dirtfloor
+x 31
+y 18
+end
+arch slevel_3_4
+x 31
+y 18
+end
+arch dirtfloor
+x 31
+y 19
+end
+arch cave2
+x 31
+y 19
+end
+arch blocked
+x 31
+y 20
+end
+arch blocked
+x 31
+y 21
+end
+arch blocked
+x 31
+y 44
+end
+arch dirtfloor
+x 31
+y 45
+end
+arch cave4
+x 31
+y 45
+end
+arch dirtfloor
+x 31
+y 46
+end
+arch dirtfloor
+x 31
+y 47
+end
+arch dirtfloor
+x 31
+y 48
+end
+arch dirtfloor
+x 31
+y 49
+end
+arch slevel_2_2_1
+x 31
+y 49
+end
+arch dirtfloor
+x 31
+y 50
+end
+arch dirtfloor
+x 31
+y 51
+end
+arch dirtfloor
+x 31
+y 52
+end
+arch dirtfloor
+x 31
+y 53
+end
+arch dirtfloor
+x 31
+y 54
+end
+arch dirtfloor
+x 31
+y 55
+end
+arch dirtfloor
+x 31
+y 56
+end
+arch dirtfloor
+x 31
+y 57
+end
+arch dirtfloor
+x 31
+y 58
+end
+arch cave15
+x 31
+y 58
+end
+arch dirtfloor
+x 31
+y 59
+end
+arch cave20
+x 31
+y 59
+end
+arch blocked
+x 31
+y 60
+end
+arch blocked
+x 32
+y 7
+end
+arch dirtfloor
+x 32
+y 8
+end
+arch cave4
+x 32
+y 8
+end
+arch dirtfloor
+x 32
+y 9
+end
+arch dirtfloor
+x 32
+y 10
+end
+arch dirtfloor
+x 32
+y 11
+end
+arch dirtfloor
+x 32
+y 12
+end
+arch dirtfloor
+x 32
+y 13
+end
+arch dirtfloor
+x 32
+y 14
+end
+arch dirtfloor
+x 32
+y 15
+end
+arch dirtfloor
+x 32
+y 16
+end
+arch dirtfloor
+x 32
+y 17
+end
+arch dirtfloor
+x 32
+y 18
+end
+arch dirtfloor
+x 32
+y 19
+end
+arch cave16
+x 32
+y 19
+end
+arch dirtfloor
+x 32
+y 20
+end
+arch cave17
+x 32
+y 20
+end
+arch blocked
+x 32
+y 21
+end
+arch blocked
+x 32
+y 43
+end
+arch blocked
+x 32
+y 44
+end
+arch dirtfloor
+x 32
+y 45
+end
+arch cave4
+x 32
+y 45
+end
+arch dirtfloor
+x 32
+y 46
+end
+arch dirtfloor
+x 32
+y 47
+end
+arch dirtfloor
+x 32
+y 48
+end
+arch dirtfloor
+x 32
+y 49
+end
+arch dirtfloor
+x 32
+y 50
+end
+arch slevel_2_2_1
+x 32
+y 50
+end
+arch dirtfloor
+x 32
+y 51
+end
+arch dirtfloor
+x 32
+y 52
+end
+arch dirtfloor
+x 32
+y 53
+end
+arch dirtfloor
+x 32
+y 54
+end
+arch dirtfloor
+x 32
+y 55
+end
+arch dirtfloor
+x 32
+y 56
+end
+arch dirtfloor
+x 32
+y 57
+end
+arch dirtfloor
+x 32
+y 58
+end
+arch cave2
+x 32
+y 58
+end
+arch blocked
+x 32
+y 59
+end
+arch blocked
+x 32
+y 60
+end
+arch blocked
+x 33
+y 7
+end
+arch dirtfloor
+x 33
+y 8
+end
+arch cave19
+x 33
+y 8
+end
+arch dirtfloor
+x 33
+y 9
+end
+arch cave14
+x 33
+y 9
+end
+arch dirtfloor
+x 33
+y 10
+end
+arch dirtfloor
+x 33
+y 11
+end
+arch dirtfloor
+x 33
+y 12
+end
+arch dirtfloor
+x 33
+y 13
+end
+arch dirtfloor
+x 33
+y 14
+end
+arch dirtfloor
+x 33
+y 15
+end
+arch dirtfloor
+x 33
+y 16
+end
+arch dirtfloor
+x 33
+y 17
+end
+arch dirtfloor
+x 33
+y 18
+end
+arch dirtfloor
+x 33
+y 19
+end
+arch dirtfloor
+x 33
+y 20
+end
+arch cave2
+x 33
+y 20
+end
+arch blocked
+x 33
+y 21
+end
+arch blocked
+x 33
+y 42
+end
+arch blocked
+x 33
+y 43
+end
+arch dirtfloor
+x 33
+y 44
+end
+arch cave18
+x 33
+y 44
+end
+arch dirtfloor
+x 33
+y 45
+end
+arch cave13
+x 33
+y 45
+end
+arch dirtfloor
+x 33
+y 46
+end
+arch dirtfloor
+x 33
+y 47
+end
+arch dirtfloor
+x 33
+y 48
+end
+arch dirtfloor
+x 33
+y 49
+end
+arch dirtfloor
+x 33
+y 50
+end
+arch dirtfloor
+x 33
+y 51
+end
+arch slevel_2_2_1
+x 33
+y 51
+end
+arch dirtfloor
+x 33
+y 52
+end
+arch dirtfloor
+x 33
+y 53
+end
+arch raas
+x 33
+y 53
+end
+arch dirtfloor
+x 33
+y 54
+end
+arch dirtfloor
+x 33
+y 55
+end
+arch dirtfloor
+x 33
+y 56
+end
+arch dirtfloor
+x 33
+y 57
+end
+arch dirtfloor
+x 33
+y 58
+end
+arch cave2
+x 33
+y 58
+end
+arch blocked
+x 33
+y 59
+end
+arch blocked
+x 33
+y 60
+end
+arch blocked
+x 34
+y 7
+end
+arch blocked
+x 34
+y 8
+end
+arch dirtfloor
+x 34
+y 9
+end
+arch cave4
+x 34
+y 9
+end
+arch dirtfloor
+x 34
+y 10
+end
+arch slevel_3_4
+x 34
+y 10
+end
+arch raas
+x 34
+y 10
+end
+arch dirtfloor
+x 34
+y 11
+end
+arch slevel_3_4
+x 34
+y 11
+end
+arch dirtfloor
+x 34
+y 12
+end
+arch slevel_3_4
+x 34
+y 12
+end
+arch dirtfloor
+x 34
+y 13
+end
+arch slevel_3_4
+x 34
+y 13
+end
+arch dirtfloor
+x 34
+y 14
+end
+arch slevel_3_4
+x 34
+y 14
+end
+arch dirtfloor
+x 34
+y 15
+end
+arch slevel_3_4
+x 34
+y 15
+end
+arch dirtfloor
+x 34
+y 16
+end
+arch slevel_3_4
+x 34
+y 16
+end
+arch dirtfloor
+x 34
+y 17
+end
+arch slevel_3_4
+x 34
+y 17
+end
+arch dirtfloor
+x 34
+y 18
+end
+arch slevel_3_4
+x 34
+y 18
+end
+arch dirtfloor
+x 34
+y 19
+end
+arch slevel_3_4
+x 34
+y 19
+end
+arch dirtfloor
+x 34
+y 20
+end
+arch cave2
+x 34
+y 20
+end
+arch blocked
+x 34
+y 21
+end
+arch blocked
+x 34
+y 42
+end
+arch dirtfloor
+x 34
+y 43
+end
+arch cave18
+x 34
+y 43
+end
+arch dirtfloor
+x 34
+y 44
+end
+arch cave13
+x 34
+y 44
+end
+arch dirtfloor
+x 34
+y 45
+end
+arch slevel_2_2_1
+x 34
+y 45
+end
+arch dirtfloor
+x 34
+y 46
+end
+arch dirtfloor
+x 34
+y 47
+end
+arch dirtfloor
+x 34
+y 48
+end
+arch dirtfloor
+x 34
+y 49
+end
+arch dirtfloor
+x 34
+y 50
+end
+arch dirtfloor
+x 34
+y 51
+end
+arch dirtfloor
+x 34
+y 52
+end
+arch slevel_2_2_1
+x 34
+y 52
+end
+arch dirtfloor
+x 34
+y 53
+end
+arch dirtfloor
+x 34
+y 54
+end
+arch dirtfloor
+x 34
+y 55
+end
+arch dirtfloor
+x 34
+y 56
+end
+arch dirtfloor
+x 34
+y 57
+end
+arch dirtfloor
+x 34
+y 58
+end
+arch cave2
+x 34
+y 58
+end
+arch blocked
+x 34
+y 59
+end
+arch blocked
+x 35
+y 8
+end
+arch dirtfloor
+x 35
+y 9
+end
+arch cave4
+x 35
+y 9
+end
+arch dirtfloor
+x 35
+y 10
+end
+arch dirtfloor
+x 35
+y 11
+end
+arch dirtfloor
+x 35
+y 12
+end
+arch dirtfloor
+x 35
+y 13
+end
+arch dirtfloor
+x 35
+y 14
+end
+arch dirtfloor
+x 35
+y 15
+end
+arch dirtfloor
+x 35
+y 16
+end
+arch dirtfloor
+x 35
+y 17
+end
+arch dirtfloor
+x 35
+y 18
+end
+arch dirtfloor
+x 35
+y 19
+end
+arch dirtfloor
+x 35
+y 20
+end
+arch cave2
+x 35
+y 20
+end
+arch blocked
+x 35
+y 21
+end
+arch blocked
+x 35
+y 22
+end
+arch blocked
+x 35
+y 41
+end
+arch blocked
+x 35
+y 42
+end
+arch dirtfloor
+x 35
+y 43
+end
+arch cave4
+x 35
+y 43
+end
+arch dirtfloor
+x 35
+y 44
+end
+arch dirtfloor
+x 35
+y 45
+end
+arch dirtfloor
+x 35
+y 46
+end
+arch slevel_2_2_1
+x 35
+y 46
+end
+arch dirtfloor
+x 35
+y 47
+end
+arch dirtfloor
+x 35
+y 48
+end
+arch dirtfloor
+x 35
+y 49
+end
+arch dirtfloor
+x 35
+y 50
+end
+arch dirtfloor
+x 35
+y 51
+end
+arch dirtfloor
+x 35
+y 52
+end
+arch dirtfloor
+x 35
+y 53
+end
+arch slevel_2_2_1
+x 35
+y 53
+end
+arch dirtfloor
+x 35
+y 54
+end
+arch dirtfloor
+x 35
+y 55
+end
+arch dirtfloor
+x 35
+y 56
+end
+arch dirtfloor
+x 35
+y 57
+end
+arch dirtfloor
+x 35
+y 58
+end
+arch cave2
+x 35
+y 58
+end
+arch blocked
+x 35
+y 59
+end
+arch blocked
+x 36
+y 8
+end
+arch dirtfloor
+x 36
+y 9
+end
+arch cave4
+x 36
+y 9
+end
+arch dirtfloor
+x 36
+y 10
+end
+arch dirtfloor
+x 36
+y 11
+end
+arch dirtfloor
+x 36
+y 12
+end
+arch dirtfloor
+x 36
+y 13
+end
+arch dirtfloor
+x 36
+y 14
+end
+arch dirtfloor
+x 36
+y 15
+end
+arch dirtfloor
+x 36
+y 16
+end
+arch dirtfloor
+x 36
+y 17
+end
+arch dirtfloor
+x 36
+y 18
+end
+arch raas
+x 36
+y 18
+end
+arch dirtfloor
+x 36
+y 19
+end
+arch dirtfloor
+x 36
+y 20
+end
+arch cave16
+x 36
+y 20
+end
+arch dirtfloor
+x 36
+y 21
+end
+arch cave17
+x 36
+y 21
+end
+arch blocked
+x 36
+y 22
+end
+arch blocked
+x 36
+y 40
+end
+arch blocked
+x 36
+y 41
+end
+arch dirtfloor
+x 36
+y 42
+end
+arch cave18
+x 36
+y 42
+end
+arch dirtfloor
+x 36
+y 43
+end
+arch cave13
+x 36
+y 43
+end
+arch dirtfloor
+x 36
+y 44
+end
+arch dirtfloor
+x 36
+y 45
+end
+arch dirtfloor
+x 36
+y 46
+end
+arch dirtfloor
+x 36
+y 47
+end
+arch slevel_2_2_1
+x 36
+y 47
+end
+arch dirtfloor
+x 36
+y 48
+end
+arch dirtfloor
+x 36
+y 49
+end
+arch dirtfloor
+x 36
+y 50
+end
+arch raas
+x 36
+y 50
+end
+arch dirtfloor
+x 36
+y 51
+end
+arch dirtfloor
+x 36
+y 52
+end
+arch dirtfloor
+x 36
+y 53
+end
+arch dirtfloor
+x 36
+y 54
+end
+arch slevel_2_2_1
+x 36
+y 54
+end
+arch dirtfloor
+x 36
+y 55
+end
+arch cave15
+x 36
+y 55
+end
+arch dirtfloor
+x 36
+y 56
+end
+arch cave1
+x 36
+y 56
+end
+arch dirtfloor
+x 36
+y 57
+end
+arch cave1
+x 36
+y 57
+end
+arch dirtfloor
+x 36
+y 58
+end
+arch cave20
+x 36
+y 58
+end
+arch blocked
+x 36
+y 59
+end
+arch blocked
+x 37
+y 8
+end
+arch dirtfloor
+x 37
+y 9
+end
+arch cave4
+x 37
+y 9
+end
+arch dirtfloor
+x 37
+y 10
+end
+arch slevel_3_4
+x 37
+y 10
+end
+arch dirtfloor
+x 37
+y 11
+end
+arch slevel_3_4
+x 37
+y 11
+end
+arch dirtfloor
+x 37
+y 12
+end
+arch slevel_3_4
+x 37
+y 12
+end
+arch dirtfloor
+x 37
+y 13
+end
+arch slevel_3_4
+x 37
+y 13
+end
+arch dirtfloor
+x 37
+y 14
+end
+arch slevel_3_4
+x 37
+y 14
+end
+arch dirtfloor
+x 37
+y 15
+end
+arch slevel_3_4
+x 37
+y 15
+end
+arch dirtfloor
+x 37
+y 16
+end
+arch slevel_3_4
+x 37
+y 16
+end
+arch dirtfloor
+x 37
+y 17
+end
+arch slevel_3_4
+x 37
+y 17
+end
+arch dirtfloor
+x 37
+y 18
+end
+arch slevel_3_4
+x 37
+y 18
+end
+arch dirtfloor
+x 37
+y 19
+end
+arch slevel_3_4
+x 37
+y 19
+end
+arch dirtfloor
+x 37
+y 20
+end
+arch slevel_3_4
+x 37
+y 20
+end
+arch dirtfloor
+x 37
+y 21
+end
+arch cave2
+x 37
+y 21
+end
+arch blocked
+x 37
+y 22
+end
+arch blocked
+x 37
+y 40
+end
+arch dirtfloor
+x 37
+y 41
+end
+arch cave18
+x 37
+y 41
+end
+arch dirtfloor
+x 37
+y 42
+end
+arch cave13
+x 37
+y 42
+end
+arch dirtfloor
+x 37
+y 43
+end
+arch slevel_2_2_1
+x 37
+y 43
+end
+arch dirtfloor
+x 37
+y 44
+end
+arch dirtfloor
+x 37
+y 45
+end
+arch dirtfloor
+x 37
+y 46
+end
+arch dirtfloor
+x 37
+y 47
+end
+arch dirtfloor
+x 37
+y 48
+end
+arch slevel_2_2_1
+x 37
+y 48
+end
+arch dirtfloor
+x 37
+y 49
+end
+arch dirtfloor
+x 37
+y 50
+end
+arch dirtfloor
+x 37
+y 51
+end
+arch dirtfloor
+x 37
+y 52
+end
+arch dirtfloor
+x 37
+y 53
+end
+arch cave15
+x 37
+y 53
+end
+arch dirtfloor
+x 37
+y 54
+end
+arch cave1
+x 37
+y 54
+end
+arch dirtfloor
+x 37
+y 55
+end
+arch cave20
+x 37
+y 55
+end
+arch blocked
+x 37
+y 56
+end
+arch blocked
+x 37
+y 57
+end
+arch blocked
+x 37
+y 58
+end
+arch blocked
+x 37
+y 59
+end
+arch blocked
+x 38
+y 8
+end
+arch dirtfloor
+x 38
+y 9
+end
+arch cave4
+x 38
+y 9
+end
+arch dirtfloor
+x 38
+y 10
+end
+arch dirtfloor
+x 38
+y 11
+end
+arch dirtfloor
+x 38
+y 12
+end
+arch dirtfloor
+x 38
+y 13
+end
+arch dirtfloor
+x 38
+y 14
+end
+arch dirtfloor
+x 38
+y 15
+end
+arch dirtfloor
+x 38
+y 16
+end
+arch dirtfloor
+x 38
+y 17
+end
+arch dirtfloor
+x 38
+y 18
+end
+arch dirtfloor
+x 38
+y 19
+end
+arch dirtfloor
+x 38
+y 20
+end
+arch dirtfloor
+x 38
+y 21
+end
+arch cave2
+x 38
+y 21
+end
+arch blocked
+x 38
+y 22
+end
+arch blocked
+x 38
+y 23
+end
+arch blocked
+x 38
+y 39
+end
+arch blocked
+x 38
+y 40
+end
+arch dirtfloor
+x 38
+y 41
+end
+arch cave4
+x 38
+y 41
+end
+arch dirtfloor
+x 38
+y 42
+end
+arch dirtfloor
+x 38
+y 43
+end
+arch dirtfloor
+x 38
+y 44
+end
+arch slevel_2_2_1
+x 38
+y 44
+end
+arch dirtfloor
+x 38
+y 45
+end
+arch dirtfloor
+x 38
+y 46
+end
+arch dirtfloor
+x 38
+y 47
+end
+arch dirtfloor
+x 38
+y 48
+end
+arch dirtfloor
+x 38
+y 49
+end
+arch slevel_2_2_1
+x 38
+y 49
+end
+arch dirtfloor
+x 38
+y 50
+end
+arch dirtfloor
+x 38
+y 51
+end
+arch dirtfloor
+x 38
+y 52
+end
+arch dirtfloor
+x 38
+y 53
+end
+arch cave2
+x 38
+y 53
+end
+arch blocked
+x 38
+y 54
+end
+arch blocked
+x 38
+y 55
+end
+arch blocked
+x 38
+y 56
+end
+arch blocked
+x 39
+y 8
+end
+arch dirtfloor
+x 39
+y 9
+end
+arch cave19
+x 39
+y 9
+end
+arch dirtfloor
+x 39
+y 10
+end
+arch cave14
+x 39
+y 10
+end
+arch dirtfloor
+x 39
+y 11
+end
+arch dirtfloor
+x 39
+y 12
+end
+arch dirtfloor
+x 39
+y 13
+end
+arch dirtfloor
+x 39
+y 14
+end
+arch dirtfloor
+x 39
+y 15
+end
+arch dirtfloor
+x 39
+y 16
+end
+arch dirtfloor
+x 39
+y 17
+end
+arch dirtfloor
+x 39
+y 18
+end
+arch dirtfloor
+x 39
+y 19
+end
+arch dirtfloor
+x 39
+y 20
+end
+arch dirtfloor
+x 39
+y 21
+end
+arch cave16
+x 39
+y 21
+end
+arch dirtfloor
+x 39
+y 22
+end
+arch cave17
+x 39
+y 22
+end
+arch blocked
+x 39
+y 23
+end
+arch blocked
+x 39
+y 24
+end
+arch blocked
+x 39
+y 25
+end
+arch blocked
+x 39
+y 38
+end
+arch blocked
+x 39
+y 39
+end
+arch dirtfloor
+x 39
+y 40
+end
+arch cave18
+x 39
+y 40
+end
+arch dirtfloor
+x 39
+y 41
+end
+arch cave13
+x 39
+y 41
+end
+arch dirtfloor
+x 39
+y 42
+end
+arch dirtfloor
+x 39
+y 43
+end
+arch dirtfloor
+x 39
+y 44
+end
+arch raas
+x 39
+y 44
+end
+arch dirtfloor
+x 39
+y 45
+end
+arch slevel_2_2_1
+x 39
+y 45
+end
+arch dirtfloor
+x 39
+y 46
+end
+arch dirtfloor
+x 39
+y 47
+end
+arch dirtfloor
+x 39
+y 48
+end
+arch dirtfloor
+x 39
+y 49
+end
+arch dirtfloor
+x 39
+y 50
+end
+arch slevel_2_2_1
+x 39
+y 50
+end
+arch dirtfloor
+x 39
+y 51
+end
+arch dirtfloor
+x 39
+y 52
+end
+arch dirtfloor
+x 39
+y 53
+end
+arch cave2
+x 39
+y 53
+end
+arch blocked
+x 39
+y 54
+end
+arch blocked
+x 40
+y 8
+end
+arch blocked
+x 40
+y 9
+end
+arch dirtfloor
+x 40
+y 10
+end
+arch cave4
+x 40
+y 10
+end
+arch dirtfloor
+x 40
+y 11
+end
+arch dirtfloor
+x 40
+y 12
+end
+arch dirtfloor
+x 40
+y 13
+end
+arch dirtfloor
+x 40
+y 14
+end
+arch dirtfloor
+x 40
+y 15
+end
+arch dirtfloor
+x 40
+y 16
+end
+arch dirtfloor
+x 40
+y 17
+end
+arch dirtfloor
+x 40
+y 18
+end
+arch dirtfloor
+x 40
+y 19
+end
+arch dirtfloor
+x 40
+y 20
+end
+arch dirtfloor
+x 40
+y 21
+end
+arch dirtfloor
+x 40
+y 22
+end
+arch cave16
+x 40
+y 22
+end
+arch dirtfloor
+x 40
+y 23
+end
+arch cave3
+x 40
+y 23
+end
+arch dirtfloor
+x 40
+y 24
+end
+arch cave17
+x 40
+y 24
+end
+arch blocked
+x 40
+y 25
+end
+arch blocked
+x 40
+y 37
+end
+arch blocked
+x 40
+y 38
+end
+arch dirtfloor
+x 40
+y 39
+end
+arch cave18
+x 40
+y 39
+end
+arch dirtfloor
+x 40
+y 40
+end
+arch cave13
+x 40
+y 40
+end
+arch dirtfloor
+x 40
+y 41
+end
+arch dirtfloor
+x 40
+y 42
+end
+arch dirtfloor
+x 40
+y 43
+end
+arch dirtfloor
+x 40
+y 44
+end
+arch dirtfloor
+x 40
+y 45
+end
+arch dirtfloor
+x 40
+y 46
+end
+arch slevel_2_2_1
+x 40
+y 46
+end
+arch dirtfloor
+x 40
+y 47
+end
+arch dirtfloor
+x 40
+y 48
+end
+arch dirtfloor
+x 40
+y 49
+end
+arch dirtfloor
+x 40
+y 50
+end
+arch dirtfloor
+x 40
+y 51
+end
+arch slevel_2_2_1
+x 40
+y 51
+end
+arch cave15
+x 40
+y 51
+end
+arch dirtfloor
+x 40
+y 52
+end
+arch cave1
+x 40
+y 52
+end
+arch dirtfloor
+x 40
+y 53
+end
+arch cave20
+x 40
+y 53
+end
+arch blocked
+x 40
+y 54
+end
+arch blocked
+x 41
+y 9
+end
+arch dirtfloor
+x 41
+y 10
+end
+arch cave4
+x 41
+y 10
+end
+arch dirtfloor
+x 41
+y 11
+end
+arch dirtfloor
+x 41
+y 12
+end
+arch dirtfloor
+x 41
+y 13
+end
+arch dirtfloor
+x 41
+y 14
+end
+arch dirtfloor
+x 41
+y 15
+end
+arch dirtfloor
+x 41
+y 16
+end
+arch dirtfloor
+x 41
+y 17
+end
+arch dirtfloor
+x 41
+y 18
+end
+arch dirtfloor
+x 41
+y 19
+end
+arch dirtfloor
+x 41
+y 20
+end
+arch dirtfloor
+x 41
+y 21
+end
+arch raas
+x 41
+y 21
+end
+arch dirtfloor
+x 41
+y 22
+end
+arch slevel_2_2_4
+x 41
+y 22
+end
+arch dirtfloor
+x 41
+y 23
+end
+arch dirtfloor
+x 41
+y 24
+end
+arch cave2
+x 41
+y 24
+end
+arch blocked
+x 41
+y 25
+end
+arch blocked
+x 41
+y 26
+end
+arch blocked
+x 41
+y 36
+end
+arch blocked
+x 41
+y 37
+end
+arch dirtfloor
+x 41
+y 38
+end
+arch cave18
+x 41
+y 38
+end
+arch dirtfloor
+x 41
+y 39
+end
+arch cave13
+x 41
+y 39
+end
+arch dirtfloor
+x 41
+y 40
+end
+arch dirtfloor
+x 41
+y 41
+end
+arch dirtfloor
+x 41
+y 42
+end
+arch dirtfloor
+x 41
+y 43
+end
+arch dirtfloor
+x 41
+y 44
+end
+arch dirtfloor
+x 41
+y 45
+end
+arch dirtfloor
+x 41
+y 46
+end
+arch dirtfloor
+x 41
+y 47
+end
+arch slevel_2_2_1
+x 41
+y 47
+end
+arch dirtfloor
+x 41
+y 48
+end
+arch dirtfloor
+x 41
+y 49
+end
+arch dirtfloor
+x 41
+y 50
+end
+arch cave15
+x 41
+y 50
+end
+arch dirtfloor
+x 41
+y 51
+end
+arch cave20
+x 41
+y 51
+end
+arch blocked
+x 41
+y 52
+end
+arch blocked
+x 41
+y 53
+end
+arch blocked
+x 41
+y 54
+end
+arch blocked
+x 42
+y 9
+end
+arch dirtfloor
+x 42
+y 10
+end
+arch cave19
+x 42
+y 10
+end
+arch dirtfloor
+x 42
+y 11
+end
+arch cave14
+x 42
+y 11
+end
+arch dirtfloor
+x 42
+y 12
+end
+arch dirtfloor
+x 42
+y 13
+end
+arch dirtfloor
+x 42
+y 14
+end
+arch dirtfloor
+x 42
+y 15
+end
+arch dirtfloor
+x 42
+y 16
+end
+arch dirtfloor
+x 42
+y 17
+end
+arch dirtfloor
+x 42
+y 18
+end
+arch dirtfloor
+x 42
+y 19
+end
+arch dirtfloor
+x 42
+y 20
+end
+arch dirtfloor
+x 42
+y 21
+end
+arch slevel_2_2_4
+x 42
+y 21
+end
+arch dirtfloor
+x 42
+y 22
+end
+arch dirtfloor
+x 42
+y 23
+end
+arch dirtfloor
+x 42
+y 24
+end
+arch cave16
+x 42
+y 24
+end
+arch dirtfloor
+x 42
+y 25
+end
+arch cave17
+x 42
+y 25
+end
+arch blocked
+x 42
+y 26
+end
+arch blocked
+x 42
+y 27
+end
+arch blocked
+x 42
+y 28
+end
+arch blocked
+x 42
+y 35
+end
+arch blocked
+x 42
+y 36
+end
+arch dirtfloor
+x 42
+y 37
+end
+arch cave18
+x 42
+y 37
+end
+arch dirtfloor
+x 42
+y 38
+end
+arch cave13
+x 42
+y 38
+end
+arch dirtfloor
+x 42
+y 39
+end
+arch slevel_2_2_1
+x 42
+y 39
+end
+arch dirtfloor
+x 42
+y 40
+end
+arch dirtfloor
+x 42
+y 41
+end
+arch dirtfloor
+x 42
+y 42
+end
+arch dirtfloor
+x 42
+y 43
+end
+arch dirtfloor
+x 42
+y 44
+end
+arch dirtfloor
+x 42
+y 45
+end
+arch dirtfloor
+x 42
+y 46
+end
+arch dirtfloor
+x 42
+y 47
+end
+arch dirtfloor
+x 42
+y 48
+end
+arch slevel_2_2_1
+x 42
+y 48
+end
+arch dirtfloor
+x 42
+y 49
+end
+arch dirtfloor
+x 42
+y 50
+end
+arch cave2
+x 42
+y 50
+end
+arch blocked
+x 42
+y 51
+end
+arch blocked
+x 42
+y 52
+end
+arch blocked
+x 43
+y 9
+end
+arch blocked
+x 43
+y 10
+end
+arch dirtfloor
+x 43
+y 11
+end
+arch cave4
+x 43
+y 11
+end
+arch dirtfloor
+x 43
+y 12
+end
+arch dirtfloor
+x 43
+y 13
+end
+arch dirtfloor
+x 43
+y 14
+end
+arch raas
+x 43
+y 14
+end
+arch dirtfloor
+x 43
+y 15
+end
+arch dirtfloor
+x 43
+y 16
+end
+arch dirtfloor
+x 43
+y 17
+end
+arch dirtfloor
+x 43
+y 18
+end
+arch dirtfloor
+x 43
+y 19
+end
+arch dirtfloor
+x 43
+y 20
+end
+arch slevel_2_2_4
+x 43
+y 20
+end
+arch dirtfloor
+x 43
+y 21
+end
+arch dirtfloor
+x 43
+y 22
+end
+arch dirtfloor
+x 43
+y 23
+end
+arch dirtfloor
+x 43
+y 24
+end
+arch dirtfloor
+x 43
+y 25
+end
+arch cave16
+x 43
+y 25
+end
+arch dirtfloor
+x 43
+y 26
+end
+arch cave3
+x 43
+y 26
+end
+arch dirtfloor
+x 43
+y 27
+end
+arch cave17
+x 43
+y 27
+end
+arch blocked
+x 43
+y 28
+end
+arch blocked
+x 43
+y 29
+end
+arch blocked
+x 43
+y 32
+end
+arch blocked
+x 43
+y 33
+end
+arch blocked
+x 43
+y 34
+end
+arch blocked
+x 43
+y 35
+end
+arch dirtfloor
+x 43
+y 36
+end
+arch cave18
+x 43
+y 36
+end
+arch dirtfloor
+x 43
+y 37
+end
+arch cave13
+x 43
+y 37
+end
+arch dirtfloor
+x 43
+y 38
+end
+arch dirtfloor
+x 43
+y 39
+end
+arch dirtfloor
+x 43
+y 40
+end
+arch slevel_2_2_1
+x 43
+y 40
+end
+arch dirtfloor
+x 43
+y 41
+end
+arch dirtfloor
+x 43
+y 42
+end
+arch dirtfloor
+x 43
+y 43
+end
+arch dirtfloor
+x 43
+y 44
+end
+arch dirtfloor
+x 43
+y 45
+end
+arch dirtfloor
+x 43
+y 46
+end
+arch dirtfloor
+x 43
+y 47
+end
+arch dirtfloor
+x 43
+y 48
+end
+arch dirtfloor
+x 43
+y 49
+end
+arch slevel_2_2_1
+x 43
+y 49
+end
+arch cave15
+x 43
+y 49
+end
+arch dirtfloor
+x 43
+y 50
+end
+arch cave20
+x 43
+y 50
+end
+arch blocked
+x 43
+y 51
+end
+arch blocked
+x 44
+y 10
+end
+arch dirtfloor
+x 44
+y 11
+end
+arch cave19
+x 44
+y 11
+end
+arch dirtfloor
+x 44
+y 12
+end
+arch cave14
+x 44
+y 12
+end
+arch dirtfloor
+x 44
+y 13
+end
+arch dirtfloor
+x 44
+y 14
+end
+arch dirtfloor
+x 44
+y 15
+end
+arch dirtfloor
+x 44
+y 16
+end
+arch dirtfloor
+x 44
+y 17
+end
+arch dirtfloor
+x 44
+y 18
+end
+arch dirtfloor
+x 44
+y 19
+end
+arch slevel_2_2_4
+x 44
+y 19
+end
+arch dirtfloor
+x 44
+y 20
+end
+arch dirtfloor
+x 44
+y 21
+end
+arch dirtfloor
+x 44
+y 22
+end
+arch dirtfloor
+x 44
+y 23
+end
+arch dirtfloor
+x 44
+y 24
+end
+arch dirtfloor
+x 44
+y 25
+end
+arch dirtfloor
+x 44
+y 26
+end
+arch slevel_2_2_4
+x 44
+y 26
+end
+arch dirtfloor
+x 44
+y 27
+end
+arch cave16
+x 44
+y 27
+end
+arch dirtfloor
+x 44
+y 28
+end
+arch cave17
+x 44
+y 28
+end
+arch blocked
+x 44
+y 29
+end
+arch blocked
+x 44
+y 30
+end
+arch blocked
+x 44
+y 31
+end
+arch blocked
+x 44
+y 32
+end
+arch dirtfloor
+x 44
+y 33
+end
+arch cave18
+x 44
+y 33
+end
+arch dirtfloor
+x 44
+y 34
+end
+arch cave3
+x 44
+y 34
+end
+arch dirtfloor
+x 44
+y 35
+end
+arch cave3
+x 44
+y 35
+end
+arch dirtfloor
+x 44
+y 36
+end
+arch cave13
+x 44
+y 36
+end
+arch dirtfloor
+x 44
+y 37
+end
+arch slevel_2_2_1
+x 44
+y 37
+end
+arch dirtfloor
+x 44
+y 38
+end
+arch dirtfloor
+x 44
+y 39
+end
+arch dirtfloor
+x 44
+y 40
+end
+arch dirtfloor
+x 44
+y 41
+end
+arch slevel_2_2_1
+x 44
+y 41
+end
+arch dirtfloor
+x 44
+y 42
+end
+arch dirtfloor
+x 44
+y 43
+end
+arch dirtfloor
+x 44
+y 44
+end
+arch dirtfloor
+x 44
+y 45
+end
+arch dirtfloor
+x 44
+y 46
+end
+arch dirtfloor
+x 44
+y 47
+end
+arch dirtfloor
+x 44
+y 48
+end
+arch cave15
+x 44
+y 48
+end
+arch dirtfloor
+x 44
+y 49
+end
+arch cave20
+x 44
+y 49
+end
+arch blocked
+x 44
+y 50
+end
+arch blocked
+x 44
+y 51
+end
+arch blocked
+x 45
+y 10
+end
+arch blocked
+x 45
+y 11
+end
+arch dirtfloor
+x 45
+y 12
+end
+arch cave19
+x 45
+y 12
+end
+arch dirtfloor
+x 45
+y 13
+end
+arch cave14
+x 45
+y 13
+end
+arch dirtfloor
+x 45
+y 14
+end
+arch dirtfloor
+x 45
+y 15
+end
+arch dirtfloor
+x 45
+y 16
+end
+arch dirtfloor
+x 45
+y 17
+end
+arch dirtfloor
+x 45
+y 18
+end
+arch slevel_2_2_4
+x 45
+y 18
+end
+arch dirtfloor
+x 45
+y 19
+end
+arch dirtfloor
+x 45
+y 20
+end
+arch dirtfloor
+x 45
+y 21
+end
+arch dirtfloor
+x 45
+y 22
+end
+arch dirtfloor
+x 45
+y 23
+end
+arch dirtfloor
+x 45
+y 24
+end
+arch raas
+x 45
+y 24
+end
+arch dirtfloor
+x 45
+y 25
+end
+arch slevel_2_2_4
+x 45
+y 25
+end
+arch dirtfloor
+x 45
+y 26
+end
+arch dirtfloor
+x 45
+y 27
+end
+arch dirtfloor
+x 45
+y 28
+end
+arch slevel_3_1
+x 45
+y 28
+end
+arch cave16
+x 45
+y 28
+end
+arch dirtfloor
+x 45
+y 29
+end
+arch cave3
+x 45
+y 29
+end
+arch dirtfloor
+x 45
+y 30
+end
+arch cave3
+x 45
+y 30
+end
+arch dirtfloor
+x 45
+y 31
+end
+arch cave3
+x 45
+y 31
+end
+arch dirtfloor
+x 45
+y 32
+end
+arch cave3
+x 45
+y 32
+end
+arch dirtfloor
+x 45
+y 33
+end
+arch cave13
+x 45
+y 33
+end
+arch dirtfloor
+x 45
+y 34
+end
+arch slevel_2_2_1
+x 45
+y 34
+end
+arch dirtfloor
+x 45
+y 35
+end
+arch dirtfloor
+x 45
+y 36
+end
+arch dirtfloor
+x 45
+y 37
+end
+arch dirtfloor
+x 45
+y 38
+end
+arch slevel_2_2_1
+x 45
+y 38
+end
+arch dirtfloor
+x 45
+y 39
+end
+arch dirtfloor
+x 45
+y 40
+end
+arch dirtfloor
+x 45
+y 41
+end
+arch dirtfloor
+x 45
+y 42
+end
+arch slevel_2_2_1
+x 45
+y 42
+end
+arch dirtfloor
+x 45
+y 43
+end
+arch dirtfloor
+x 45
+y 44
+end
+arch raas
+x 45
+y 44
+end
+arch dirtfloor
+x 45
+y 45
+end
+arch dirtfloor
+x 45
+y 46
+end
+arch dirtfloor
+x 45
+y 47
+end
+arch cave15
+x 45
+y 47
+end
+arch dirtfloor
+x 45
+y 48
+end
+arch cave20
+x 45
+y 48
+end
+arch blocked
+x 45
+y 49
+end
+arch blocked
+x 45
+y 50
+end
+arch blocked
+x 46
+y 11
+end
+arch blocked
+x 46
+y 12
+end
+arch dirtfloor
+x 46
+y 13
+end
+arch cave4
+x 46
+y 13
+end
+arch dirtfloor
+x 46
+y 14
+end
+arch dirtfloor
+x 46
+y 15
+end
+arch dirtfloor
+x 46
+y 16
+end
+arch raas
+x 46
+y 16
+end
+arch dirtfloor
+x 46
+y 17
+end
+arch slevel_2_2_4
+x 46
+y 17
+end
+arch dirtfloor
+x 46
+y 18
+end
+arch dirtfloor
+x 46
+y 19
+end
+arch dirtfloor
+x 46
+y 20
+end
+arch dirtfloor
+x 46
+y 21
+end
+arch dirtfloor
+x 46
+y 22
+end
+arch dirtfloor
+x 46
+y 23
+end
+arch dirtfloor
+x 46
+y 24
+end
+arch slevel_2_2_4
+x 46
+y 24
+end
+arch dirtfloor
+x 46
+y 25
+end
+arch dirtfloor
+x 46
+y 26
+end
+arch dirtfloor
+x 46
+y 27
+end
+arch dirtfloor
+x 46
+y 28
+end
+arch slevel_3_1
+x 46
+y 28
+end
+arch dirtfloor
+x 46
+y 29
+end
+arch dirtfloor
+x 46
+y 30
+end
+arch dirtfloor
+x 46
+y 31
+end
+arch dirtfloor
+x 46
+y 32
+end
+arch slevel_3_1
+x 46
+y 32
+end
+arch dirtfloor
+x 46
+y 33
+end
+arch dirtfloor
+x 46
+y 34
+end
+arch dirtfloor
+x 46
+y 35
+end
+arch slevel_2_2_1
+x 46
+y 35
+end
+arch dirtfloor
+x 46
+y 36
+end
+arch dirtfloor
+x 46
+y 37
+end
+arch dirtfloor
+x 46
+y 38
+end
+arch dirtfloor
+x 46
+y 39
+end
+arch slevel_2_2_1
+x 46
+y 39
+end
+arch dirtfloor
+x 46
+y 40
+end
+arch dirtfloor
+x 46
+y 41
+end
+arch dirtfloor
+x 46
+y 42
+end
+arch dirtfloor
+x 46
+y 43
+end
+arch slevel_2_2_1
+x 46
+y 43
+end
+arch dirtfloor
+x 46
+y 44
+end
+arch dirtfloor
+x 46
+y 45
+end
+arch dirtfloor
+x 46
+y 46
+end
+arch cave15
+x 46
+y 46
+end
+arch dirtfloor
+x 46
+y 47
+end
+arch cave20
+x 46
+y 47
+end
+arch blocked
+x 46
+y 48
+end
+arch blocked
+x 46
+y 49
+end
+arch blocked
+x 47
+y 12
+end
+arch dirtfloor
+x 47
+y 13
+end
+arch cave19
+x 47
+y 13
+end
+arch dirtfloor
+x 47
+y 14
+end
+arch cave14
+x 47
+y 14
+end
+arch dirtfloor
+x 47
+y 15
+end
+arch dirtfloor
+x 47
+y 16
+end
+arch slevel_2_2_4
+x 47
+y 16
+end
+arch dirtfloor
+x 47
+y 17
+end
+arch dirtfloor
+x 47
+y 18
+end
+arch dirtfloor
+x 47
+y 19
+end
+arch dirtfloor
+x 47
+y 20
+end
+arch dirtfloor
+x 47
+y 21
+end
+arch dirtfloor
+x 47
+y 22
+end
+arch dirtfloor
+x 47
+y 23
+end
+arch slevel_2_2_4
+x 47
+y 23
+end
+arch dirtfloor
+x 47
+y 24
+end
+arch dirtfloor
+x 47
+y 25
+end
+arch dirtfloor
+x 47
+y 26
+end
+arch dirtfloor
+x 47
+y 27
+end
+arch dirtfloor
+x 47
+y 28
+end
+arch slevel_3_1
+x 47
+y 28
+end
+arch dirtfloor
+x 47
+y 29
+end
+arch raas
+x 47
+y 29
+end
+arch dirtfloor
+x 47
+y 30
+end
+arch dirtfloor
+x 47
+y 31
+end
+arch dirtfloor
+x 47
+y 32
+end
+arch slevel_3_1
+x 47
+y 32
+end
+arch dirtfloor
+x 47
+y 33
+end
+arch dirtfloor
+x 47
+y 34
+end
+arch dirtfloor
+x 47
+y 35
+end
+arch dirtfloor
+x 47
+y 36
+end
+arch slevel_2_2_1
+x 47
+y 36
+end
+arch dirtfloor
+x 47
+y 37
+end
+arch dirtfloor
+x 47
+y 38
+end
+arch dirtfloor
+x 47
+y 39
+end
+arch dirtfloor
+x 47
+y 40
+end
+arch slevel_2_2_1
+x 47
+y 40
+end
+arch dirtfloor
+x 47
+y 41
+end
+arch dirtfloor
+x 47
+y 42
+end
+arch dirtfloor
+x 47
+y 43
+end
+arch dirtfloor
+x 47
+y 44
+end
+arch slevel_2_2_1
+x 47
+y 44
+end
+arch dirtfloor
+x 47
+y 45
+end
+arch cave15
+x 47
+y 45
+end
+arch dirtfloor
+x 47
+y 46
+end
+arch cave20
+x 47
+y 46
+end
+arch blocked
+x 47
+y 47
+end
+arch blocked
+x 47
+y 48
+end
+arch blocked
+x 48
+y 12
+end
+arch blocked
+x 48
+y 13
+end
+arch dirtfloor
+x 48
+y 14
+end
+arch cave19
+x 48
+y 14
+end
+arch dirtfloor
+x 48
+y 15
+end
+arch slevel_2_2_4
+x 48
+y 15
+end
+arch cave14
+x 48
+y 15
+end
+arch dirtfloor
+x 48
+y 16
+end
+arch dirtfloor
+x 48
+y 17
+end
+arch dirtfloor
+x 48
+y 18
+end
+arch dirtfloor
+x 48
+y 19
+end
+arch dirtfloor
+x 48
+y 20
+end
+arch dirtfloor
+x 48
+y 21
+end
+arch dirtfloor
+x 48
+y 22
+end
+arch slevel_2_2_4
+x 48
+y 22
+end
+arch dirtfloor
+x 48
+y 23
+end
+arch dirtfloor
+x 48
+y 24
+end
+arch dirtfloor
+x 48
+y 25
+end
+arch dirtfloor
+x 48
+y 26
+end
+arch dirtfloor
+x 48
+y 27
+end
+arch dirtfloor
+x 48
+y 28
+end
+arch slevel_3_1
+x 48
+y 28
+end
+arch dirtfloor
+x 48
+y 29
+end
+arch dirtfloor
+x 48
+y 30
+end
+arch dirtfloor
+x 48
+y 31
+end
+arch dirtfloor
+x 48
+y 32
+end
+arch slevel_3_1
+x 48
+y 32
+end
+arch dirtfloor
+x 48
+y 33
+end
+arch dirtfloor
+x 48
+y 34
+end
+arch dirtfloor
+x 48
+y 35
+end
+arch dirtfloor
+x 48
+y 36
+end
+arch raas
+x 48
+y 36
+end
+arch dirtfloor
+x 48
+y 37
+end
+arch slevel_2_2_1
+x 48
+y 37
+end
+arch dirtfloor
+x 48
+y 38
+end
+arch dirtfloor
+x 48
+y 39
+end
+arch dirtfloor
+x 48
+y 40
+end
+arch dirtfloor
+x 48
+y 41
+end
+arch slevel_2_2_1
+x 48
+y 41
+end
+arch dirtfloor
+x 48
+y 42
+end
+arch dirtfloor
+x 48
+y 43
+end
+arch dirtfloor
+x 48
+y 44
+end
+arch dirtfloor
+x 48
+y 45
+end
+arch cave2
+x 48
+y 45
+end
+arch blocked
+x 48
+y 46
+end
+arch blocked
+x 48
+y 47
+end
+arch blocked
+x 49
+y 13
+end
+arch blocked
+x 49
+y 14
+end
+arch dirtfloor
+x 49
+y 15
+end
+arch cave19
+x 49
+y 15
+end
+arch dirtfloor
+x 49
+y 16
+end
+arch cave14
+x 49
+y 16
+end
+arch dirtfloor
+x 49
+y 17
+end
+arch dirtfloor
+x 49
+y 18
+end
+arch dirtfloor
+x 49
+y 19
+end
+arch dirtfloor
+x 49
+y 20
+end
+arch dirtfloor
+x 49
+y 21
+end
+arch slevel_2_2_4
+x 49
+y 21
+end
+arch dirtfloor
+x 49
+y 22
+end
+arch dirtfloor
+x 49
+y 23
+end
+arch dirtfloor
+x 49
+y 24
+end
+arch dirtfloor
+x 49
+y 25
+end
+arch dirtfloor
+x 49
+y 26
+end
+arch dirtfloor
+x 49
+y 27
+end
+arch dirtfloor
+x 49
+y 28
+end
+arch slevel_3_1
+x 49
+y 28
+end
+arch dirtfloor
+x 49
+y 29
+end
+arch dirtfloor
+x 49
+y 30
+end
+arch dirtfloor
+x 49
+y 31
+end
+arch dirtfloor
+x 49
+y 32
+end
+arch slevel_3_1
+x 49
+y 32
+end
+arch dirtfloor
+x 49
+y 33
+end
+arch dirtfloor
+x 49
+y 34
+end
+arch dirtfloor
+x 49
+y 35
+end
+arch dirtfloor
+x 49
+y 36
+end
+arch dirtfloor
+x 49
+y 37
+end
+arch dirtfloor
+x 49
+y 38
+end
+arch slevel_2_2_1
+x 49
+y 38
+end
+arch dirtfloor
+x 49
+y 39
+end
+arch dirtfloor
+x 49
+y 40
+end
+arch dirtfloor
+x 49
+y 41
+end
+arch dirtfloor
+x 49
+y 42
+end
+arch slevel_2_2_1
+x 49
+y 42
+end
+arch dirtfloor
+x 49
+y 43
+end
+arch dirtfloor
+x 49
+y 44
+end
+arch cave15
+x 49
+y 44
+end
+arch dirtfloor
+x 49
+y 45
+end
+arch cave20
+x 49
+y 45
+end
+arch blocked
+x 49
+y 46
+end
+arch blocked
+x 50
+y 14
+end
+arch blocked
+x 50
+y 15
+end
+arch dirtfloor
+x 50
+y 16
+end
+arch cave19
+x 50
+y 16
+end
+arch dirtfloor
+x 50
+y 17
+end
+arch cave14
+x 50
+y 17
+end
+arch dirtfloor
+x 50
+y 18
+end
+arch dirtfloor
+x 50
+y 19
+end
+arch dirtfloor
+x 50
+y 20
+end
+arch slevel_2_2_4
+x 50
+y 20
+end
+arch dirtfloor
+x 50
+y 21
+end
+arch dirtfloor
+x 50
+y 22
+end
+arch dirtfloor
+x 50
+y 23
+end
+arch dirtfloor
+x 50
+y 24
+end
+arch dirtfloor
+x 50
+y 25
+end
+arch dirtfloor
+x 50
+y 26
+end
+arch dirtfloor
+x 50
+y 27
+end
+arch dirtfloor
+x 50
+y 28
+end
+arch slevel_3_1
+x 50
+y 28
+end
+arch dirtfloor
+x 50
+y 29
+end
+arch dirtfloor
+x 50
+y 30
+end
+arch dirtfloor
+x 50
+y 31
+end
+arch dirtfloor
+x 50
+y 32
+end
+arch slevel_3_1
+x 50
+y 32
+end
+arch dirtfloor
+x 50
+y 33
+end
+arch dirtfloor
+x 50
+y 34
+end
+arch dirtfloor
+x 50
+y 35
+end
+arch dirtfloor
+x 50
+y 36
+end
+arch dirtfloor
+x 50
+y 37
+end
+arch dirtfloor
+x 50
+y 38
+end
+arch dirtfloor
+x 50
+y 39
+end
+arch slevel_2_2_1
+x 50
+y 39
+end
+arch dirtfloor
+x 50
+y 40
+end
+arch dirtfloor
+x 50
+y 41
+end
+arch dirtfloor
+x 50
+y 42
+end
+arch dirtfloor
+x 50
+y 43
+end
+arch slevel_2_2_1
+x 50
+y 43
+end
+arch cave15
+x 50
+y 43
+end
+arch dirtfloor
+x 50
+y 44
+end
+arch cave20
+x 50
+y 44
+end
+arch blocked
+x 50
+y 45
+end
+arch blocked
+x 50
+y 46
+end
+arch blocked
+x 51
+y 15
+end
+arch blocked
+x 51
+y 16
+end
+arch dirtfloor
+x 51
+y 17
+end
+arch cave19
+x 51
+y 17
+end
+arch dirtfloor
+x 51
+y 18
+end
+arch cave1
+x 51
+y 18
+end
+arch dirtfloor
+x 51
+y 19
+end
+arch slevel_2_2_4
+x 51
+y 19
+end
+arch cave14
+x 51
+y 19
+end
+arch dirtfloor
+x 51
+y 20
+end
+arch dirtfloor
+x 51
+y 21
+end
+arch dirtfloor
+x 51
+y 22
+end
+arch raas
+x 51
+y 22
+end
+arch dirtfloor
+x 51
+y 23
+end
+arch dirtfloor
+x 51
+y 24
+end
+arch dirtfloor
+x 51
+y 25
+end
+arch dirtfloor
+x 51
+y 26
+end
+arch dirtfloor
+x 51
+y 27
+end
+arch dirtfloor
+x 51
+y 28
+end
+arch slevel_3_1
+x 51
+y 28
+end
+arch dirtfloor
+x 51
+y 29
+end
+arch dirtfloor
+x 51
+y 30
+end
+arch dirtfloor
+x 51
+y 31
+end
+arch dirtfloor
+x 51
+y 32
+end
+arch slevel_3_1
+x 51
+y 32
+end
+arch dirtfloor
+x 51
+y 33
+end
+arch dirtfloor
+x 51
+y 34
+end
+arch dirtfloor
+x 51
+y 35
+end
+arch dirtfloor
+x 51
+y 36
+end
+arch dirtfloor
+x 51
+y 37
+end
+arch dirtfloor
+x 51
+y 38
+end
+arch dirtfloor
+x 51
+y 39
+end
+arch dirtfloor
+x 51
+y 40
+end
+arch slevel_2_2_1
+x 51
+y 40
+end
+arch dirtfloor
+x 51
+y 41
+end
+arch dirtfloor
+x 51
+y 42
+end
+arch cave15
+x 51
+y 42
+end
+arch dirtfloor
+x 51
+y 43
+end
+arch cave20
+x 51
+y 43
+end
+arch blocked
+x 51
+y 44
+end
+arch blocked
+x 51
+y 45
+end
+arch blocked
+x 52
+y 16
+end
+arch blocked
+x 52
+y 17
+end
+arch blocked
+x 52
+y 18
+end
+arch dirtfloor
+x 52
+y 19
+end
+arch cave19
+x 52
+y 19
+end
+arch dirtfloor
+x 52
+y 20
+end
+arch cave1
+x 52
+y 20
+end
+arch dirtfloor
+x 52
+y 21
+end
+arch cave14
+x 52
+y 21
+end
+arch dirtfloor
+x 52
+y 22
+end
+arch dirtfloor
+x 52
+y 23
+end
+arch dirtfloor
+x 52
+y 24
+end
+arch dirtfloor
+x 52
+y 25
+end
+arch dirtfloor
+x 52
+y 26
+end
+arch dirtfloor
+x 52
+y 27
+end
+arch dirtfloor
+x 52
+y 28
+end
+arch slevel_3_1
+x 52
+y 28
+end
+arch dirtfloor
+x 52
+y 29
+end
+arch dirtfloor
+x 52
+y 30
+end
+arch dirtfloor
+x 52
+y 31
+end
+arch dirtfloor
+x 52
+y 32
+end
+arch slevel_3_1
+x 52
+y 32
+end
+arch dirtfloor
+x 52
+y 33
+end
+arch dirtfloor
+x 52
+y 34
+end
+arch dirtfloor
+x 52
+y 35
+end
+arch dirtfloor
+x 52
+y 36
+end
+arch dirtfloor
+x 52
+y 37
+end
+arch dirtfloor
+x 52
+y 38
+end
+arch dirtfloor
+x 52
+y 39
+end
+arch dirtfloor
+x 52
+y 40
+end
+arch dirtfloor
+x 52
+y 41
+end
+arch slevel_2_2_1
+x 52
+y 41
+end
+arch cave15
+x 52
+y 41
+end
+arch dirtfloor
+x 52
+y 42
+end
+arch cave20
+x 52
+y 42
+end
+arch blocked
+x 52
+y 43
+end
+arch blocked
+x 52
+y 44
+end
+arch blocked
+x 53
+y 18
+end
+arch blocked
+x 53
+y 19
+end
+arch blocked
+x 53
+y 20
+end
+arch dirtfloor
+x 53
+y 21
+end
+arch cave19
+x 53
+y 21
+end
+arch dirtfloor
+x 53
+y 22
+end
+arch cave14
+x 53
+y 22
+end
+arch dirtfloor
+x 53
+y 23
+end
+arch dirtfloor
+x 53
+y 24
+end
+arch dirtfloor
+x 53
+y 25
+end
+arch dirtfloor
+x 53
+y 26
+end
+arch dirtfloor
+x 53
+y 27
+end
+arch dirtfloor
+x 53
+y 28
+end
+arch slevel_3_1
+x 53
+y 28
+end
+arch dirtfloor
+x 53
+y 29
+end
+arch dirtfloor
+x 53
+y 30
+end
+arch dirtfloor
+x 53
+y 31
+end
+arch dirtfloor
+x 53
+y 32
+end
+arch slevel_3_1
+x 53
+y 32
+end
+arch dirtfloor
+x 53
+y 33
+end
+arch dirtfloor
+x 53
+y 34
+end
+arch dirtfloor
+x 53
+y 35
+end
+arch dirtfloor
+x 53
+y 36
+end
+arch raas
+x 53
+y 36
+end
+arch dirtfloor
+x 53
+y 37
+end
+arch dirtfloor
+x 53
+y 38
+end
+arch dirtfloor
+x 53
+y 39
+end
+arch cave15
+x 53
+y 39
+end
+arch dirtfloor
+x 53
+y 40
+end
+arch cave1
+x 53
+y 40
+end
+arch dirtfloor
+x 53
+y 41
+end
+arch cave20
+x 53
+y 41
+end
+arch blocked
+x 53
+y 42
+end
+arch blocked
+x 53
+y 43
+end
+arch blocked
+x 54
+y 20
+end
+arch blocked
+x 54
+y 21
+end
+arch dirtfloor
+x 54
+y 22
+end
+arch cave19
+x 54
+y 22
+end
+arch dirtfloor
+x 54
+y 23
+end
+arch cave1
+x 54
+y 23
+end
+arch dirtfloor
+x 54
+y 24
+end
+arch cave14
+x 54
+y 24
+end
+arch dirtfloor
+x 54
+y 25
+end
+arch dirtfloor
+x 54
+y 26
+end
+arch dirtfloor
+x 54
+y 27
+end
+arch dirtfloor
+x 54
+y 28
+end
+arch slevel_3_1
+x 54
+y 28
+end
+arch dirtfloor
+x 54
+y 29
+end
+arch dirtfloor
+x 54
+y 30
+end
+arch dirtfloor
+x 54
+y 31
+end
+arch dirtfloor
+x 54
+y 32
+end
+arch slevel_3_1
+x 54
+y 32
+end
+arch dirtfloor
+x 54
+y 33
+end
+arch dirtfloor
+x 54
+y 34
+end
+arch dirtfloor
+x 54
+y 35
+end
+arch dirtfloor
+x 54
+y 36
+end
+arch cave15
+x 54
+y 36
+end
+arch dirtfloor
+x 54
+y 37
+end
+arch cave1
+x 54
+y 37
+end
+arch dirtfloor
+x 54
+y 38
+end
+arch cave1
+x 54
+y 38
+end
+arch dirtfloor
+x 54
+y 39
+end
+arch cave20
+x 54
+y 39
+end
+arch blocked
+x 54
+y 40
+end
+arch blocked
+x 54
+y 41
+end
+arch blocked
+x 54
+y 42
+end
+arch blocked
+x 55
+y 21
+end
+arch blocked
+x 55
+y 22
+end
+arch blocked
+x 55
+y 23
+end
+arch dirtfloor
+x 55
+y 24
+end
+arch cave19
+x 55
+y 24
+end
+arch dirtfloor
+x 55
+y 25
+end
+arch cave1
+x 55
+y 25
+end
+arch dirtfloor
+x 55
+y 26
+end
+arch cave1
+x 55
+y 26
+end
+arch dirtfloor
+x 55
+y 27
+end
+arch cave1
+x 55
+y 27
+end
+arch dirtfloor
+x 55
+y 28
+end
+arch cave1
+x 55
+y 28
+end
+arch dirtfloor
+x 55
+y 29
+end
+arch cave1
+x 55
+y 29
+end
+arch dirtfloor
+x 55
+y 30
+end
+arch cave1
+x 55
+y 30
+end
+arch dirtfloor
+x 55
+y 31
+end
+arch cave1
+x 55
+y 31
+end
+arch dirtfloor
+x 55
+y 32
+end
+arch slevel_3_1
+x 55
+y 32
+end
+arch cave14
+x 55
+y 32
+end
+arch dirtfloor
+x 55
+y 33
+end
+arch dirtfloor
+x 55
+y 34
+end
+arch cave15
+x 55
+y 34
+end
+arch dirtfloor
+x 55
+y 35
+end
+arch cave1
+x 55
+y 35
+end
+arch dirtfloor
+x 55
+y 36
+end
+arch cave20
+x 55
+y 36
+end
+arch blocked
+x 55
+y 37
+end
+arch blocked
+x 55
+y 38
+end
+arch blocked
+x 55
+y 39
+end
+arch blocked
+x 55
+y 40
+end
+arch blocked
+x 56
+y 23
+end
+arch blocked
+x 56
+y 24
+end
+arch blocked
+x 56
+y 25
+end
+arch blocked
+x 56
+y 26
+end
+arch blocked
+x 56
+y 27
+end
+arch blocked
+x 56
+y 28
+end
+arch blocked
+x 56
+y 29
+end
+arch blocked
+x 56
+y 30
+end
+arch blocked
+x 56
+y 31
+end
+arch dirtfloor
+x 56
+y 32
+end
+arch cave19
+x 56
+y 32
+end
+arch dirtfloor
+x 56
+y 33
+end
+arch cave1
+x 56
+y 33
+end
+arch dirtfloor
+x 56
+y 34
+end
+arch cave20
+x 56
+y 34
+end
+arch blocked
+x 56
+y 35
+end
+arch blocked
+x 56
+y 36
+end
+arch blocked
+x 56
+y 37
+end
+arch blocked
+x 57
+y 31
+end
+arch blocked
+x 57
+y 32
+end
+arch blocked
+x 57
+y 33
+end
+arch blocked
+x 57
+y 34
+end
+arch blocked
+x 57
+y 35
+end
+arch medium_demon
+x 16
+y 13
+end
+arch medium_demon
+x 18
+y 11
+end
+arch Balrog
+x 20
+y 11
+end
+arch medium_demon
+x 21
+y 7
+end
+arch Balrog
+x 25
+y 9
+end
+arch Balrog
+x 25
+y 13
 end
 arch Greater_Demon
 x 30
 y 12
 end
-arch dirtfloor
-x 30
-y 13
-end
-arch dirtfloor
-x 30
-y 14
-end
-arch dirtfloor
-x 30
-y 15
-end
-arch dirtfloor
-x 30
-y 16
-end
-arch dirtfloor
-x 30
-y 17
-end
-arch dirtfloor
-x 30
-y 18
-end
-arch dirtfloor
-x 30
-y 19
-end
-arch cave2
-x 30
-y 19
-end
-arch blocked
-x 30
-y 20
-end
-arch blocked
-msg
-endmsg
-x 30
-y 44
-end
-arch dirtfloor
-x 30
-y 45
-end
-arch cave4
-x 30
-y 45
-end
-arch dirtfloor
-x 30
-y 46
-end
-arch dirtfloor
-x 30
-y 47
-end
-arch dirtfloor
-x 30
-y 48
-end
-arch slevel_2_2_1
-x 30
-y 48
-end
-arch dirtfloor
+arch medium_demon
 x 30
 y 49
 end
 arch medium_demon
 x 30
-y 49
-end
-arch dirtfloor
-x 30
-y 50
-end
-arch dirtfloor
-x 30
-y 51
-end
-arch dirtfloor
-x 30
-y 52
-end
-arch dirtfloor
-x 30
-y 53
-end
-arch raas
-x 30
-y 53
-end
-arch dirtfloor
-x 30
-y 54
-end
-arch dirtfloor
-x 30
 y 55
 end
 arch medium_demon
-x 30
-y 55
-end
-arch dirtfloor
-x 30
-y 56
-end
-arch dirtfloor
-x 30
-y 57
-end
-arch dirtfloor
-x 30
-y 58
-end
-arch dirtfloor
-x 30
-y 59
-end
-arch cave2
-x 30
-y 59
-end
-arch blocked
-msg
-endmsg
-x 30
-y 60
-end
-arch blocked
-x 31
-y 7
-end
-arch dirtfloor
-x 31
-y 8
-end
-arch cave4
-x 31
-y 8
-end
-arch dirtfloor
-x 31
-y 9
-end
-arch slevel_3_4
-x 31
-y 9
-end
-arch dirtfloor
 x 31
 y 10
-end
-arch slevel_3_4
-x 31
-y 10
-end
-arch medium_demon
-x 31
-y 10
-end
-arch dirtfloor
-x 31
-y 11
-end
-arch slevel_3_4
-x 31
-y 11
-end
-arch dirtfloor
-x 31
-y 12
-end
-arch slevel_3_4
-x 31
-y 12
-end
-arch dirtfloor
-x 31
-y 13
-end
-arch slevel_3_4
-x 31
-y 13
-end
-arch dirtfloor
-x 31
-y 14
-end
-arch slevel_3_4
-x 31
-y 14
-end
-arch dirtfloor
-x 31
-y 15
-end
-arch slevel_3_4
-x 31
-y 15
-end
-arch dirtfloor
-x 31
-y 16
-end
-arch slevel_3_4
-x 31
-y 16
-end
-arch dirtfloor
-x 31
-y 17
-end
-arch slevel_3_4
-x 31
-y 17
-end
-arch dirtfloor
-x 31
-y 18
-end
-arch slevel_3_4
-x 31
-y 18
-end
-arch dirtfloor
-x 31
-y 19
-end
-arch cave2
-x 31
-y 19
-end
-arch blocked
-x 31
-y 20
-end
-arch blocked
-x 31
-y 21
-end
-arch blocked
-msg
-endmsg
-x 31
-y 44
-end
-arch dirtfloor
-x 31
-y 45
-end
-arch cave4
-x 31
-y 45
-end
-arch dirtfloor
-x 31
-y 46
-end
-arch dirtfloor
-x 31
-y 47
-end
-arch dirtfloor
-x 31
-y 48
-end
-arch dirtfloor
-x 31
-y 49
-end
-arch slevel_2_2_1
-x 31
-y 49
-end
-arch dirtfloor
-x 31
-y 50
-end
-arch dirtfloor
-x 31
-y 51
-end
-arch dirtfloor
-x 31
-y 52
-end
-arch dirtfloor
-x 31
-y 53
-end
-arch dirtfloor
-x 31
-y 54
-end
-arch dirtfloor
-x 31
-y 55
-end
-arch dirtfloor
-x 31
-y 56
-end
-arch dirtfloor
-x 31
-y 57
-end
-arch dirtfloor
-x 31
-y 58
-end
-arch cave15
-x 31
-y 58
-end
-arch dirtfloor
-x 31
-y 59
-end
-arch cave20
-x 31
-y 59
-end
-arch blocked
-msg
-endmsg
-x 31
-y 60
-end
-arch blocked
-x 32
-y 7
-end
-arch dirtfloor
-x 32
-y 8
-end
-arch cave4
-x 32
-y 8
-end
-arch dirtfloor
-x 32
-y 9
-end
-arch dirtfloor
-x 32
-y 10
-end
-arch dirtfloor
-x 32
-y 11
-end
-arch dirtfloor
-x 32
-y 12
-end
-arch dirtfloor
-x 32
-y 13
-end
-arch dirtfloor
-x 32
-y 14
-end
-arch dirtfloor
-x 32
-y 15
-end
-arch dirtfloor
-x 32
-y 16
-end
-arch dirtfloor
-x 32
-y 17
-end
-arch dirtfloor
-x 32
-y 18
-end
-arch dirtfloor
-x 32
-y 19
-end
-arch cave16
-x 32
-y 19
-end
-arch dirtfloor
-x 32
-y 20
-end
-arch cave17
-x 32
-y 20
-end
-arch blocked
-x 32
-y 21
-end
-arch blocked
-msg
-endmsg
-x 32
-y 43
-end
-arch blocked
-msg
-endmsg
-x 32
-y 44
-end
-arch dirtfloor
-x 32
-y 45
-end
-arch cave4
-x 32
-y 45
-end
-arch dirtfloor
-x 32
-y 46
 end
 arch Balrog
 x 32
 y 46
 end
-arch dirtfloor
-x 32
-y 47
-end
-arch dirtfloor
-x 32
-y 48
-end
-arch dirtfloor
-x 32
-y 49
-end
-arch dirtfloor
-x 32
-y 50
-end
-arch slevel_2_2_1
-x 32
-y 50
-end
-arch dirtfloor
-x 32
-y 51
-end
-arch dirtfloor
-x 32
-y 52
-end
-arch dirtfloor
-x 32
-y 53
-end
-arch dirtfloor
-x 32
-y 54
-end
-arch dirtfloor
-x 32
-y 55
-end
-arch dirtfloor
-x 32
-y 56
-end
-arch dirtfloor
-x 32
-y 57
-end
-arch dirtfloor
-x 32
-y 58
-end
-arch cave2
-x 32
-y 58
-end
-arch blocked
-msg
-endmsg
-x 32
-y 59
-end
-arch blocked
-msg
-endmsg
-x 32
-y 60
-end
-arch blocked
-x 33
-y 7
-end
-arch dirtfloor
-x 33
-y 8
-end
-arch cave19
-x 33
-y 8
-end
-arch dirtfloor
-x 33
-y 9
-end
-arch cave14
-x 33
-y 9
-end
-arch dirtfloor
-x 33
-y 10
-end
-arch dirtfloor
-x 33
-y 11
-end
-arch dirtfloor
-x 33
-y 12
-end
-arch dirtfloor
-x 33
-y 13
-end
-arch dirtfloor
-x 33
-y 14
-end
-arch dirtfloor
-x 33
-y 15
-end
-arch dirtfloor
-x 33
-y 16
-end
-arch dirtfloor
-x 33
-y 17
-end
-arch dirtfloor
-x 33
-y 18
-end
-arch dirtfloor
-x 33
-y 19
-end
-arch dirtfloor
-x 33
-y 20
-end
-arch cave2
-x 33
-y 20
-end
-arch blocked
-x 33
-y 21
-end
-arch blocked
-msg
-endmsg
-x 33
-y 42
-end
-arch blocked
-msg
-endmsg
-x 33
-y 43
-end
-arch dirtfloor
-x 33
-y 44
-end
-arch cave18
-x 33
-y 44
-end
-arch dirtfloor
-x 33
-y 45
-end
-arch cave13
-x 33
-y 45
-end
-arch dirtfloor
-x 33
-y 46
-end
-arch dirtfloor
-x 33
-y 47
-end
-arch dirtfloor
-x 33
-y 48
-end
-arch dirtfloor
-x 33
-y 49
-end
-arch dirtfloor
-x 33
-y 50
-end
-arch dirtfloor
-x 33
-y 51
-end
-arch slevel_2_2_1
-x 33
-y 51
-end
-arch dirtfloor
-x 33
-y 52
-end
-arch dirtfloor
-x 33
-y 53
-end
-arch raas
-x 33
-y 53
-end
-arch dirtfloor
-x 33
-y 54
-end
-arch dirtfloor
-x 33
-y 55
-end
-arch dirtfloor
-x 33
-y 56
-end
-arch dirtfloor
-x 33
-y 57
-end
-arch dirtfloor
-x 33
-y 58
-end
-arch cave2
-x 33
-y 58
-end
-arch blocked
-msg
-endmsg
-x 33
-y 59
-end
-arch blocked
-msg
-endmsg
-x 33
-y 60
-end
-arch blocked
-x 34
-y 7
-end
-arch blocked
-x 34
-y 8
-end
-arch dirtfloor
-x 34
-y 9
-end
-arch cave4
-x 34
-y 9
-end
-arch dirtfloor
-x 34
-y 10
-end
-arch slevel_3_4
-x 34
-y 10
-end
-arch raas
-x 34
-y 10
-end
-arch dirtfloor
-x 34
-y 11
-end
-arch slevel_3_4
-x 34
-y 11
-end
-arch dirtfloor
-x 34
-y 12
-end
-arch slevel_3_4
-x 34
-y 12
-end
-arch dirtfloor
-x 34
-y 13
-end
-arch slevel_3_4
-x 34
-y 13
-end
-arch dirtfloor
-x 34
-y 14
-end
-arch slevel_3_4
-x 34
-y 14
-end
-arch dirtfloor
-x 34
-y 15
-end
-arch slevel_3_4
-x 34
-y 15
-end
-arch dirtfloor
-x 34
-y 16
-end
-arch slevel_3_4
-x 34
-y 16
-end
-arch dirtfloor
-x 34
-y 17
-end
-arch slevel_3_4
-x 34
-y 17
-end
-arch dirtfloor
-x 34
-y 18
-end
-arch slevel_3_4
-x 34
-y 18
-end
-arch dirtfloor
-x 34
-y 19
-end
-arch slevel_3_4
-x 34
-y 19
-end
-arch dirtfloor
-x 34
-y 20
-end
-arch cave2
-x 34
-y 20
-end
-arch blocked
-x 34
-y 21
-end
-arch blocked
-msg
-endmsg
-x 34
-y 42
-end
-arch dirtfloor
-x 34
-y 43
-end
-arch cave18
-x 34
-y 43
-end
-arch dirtfloor
-x 34
-y 44
-end
-arch cave13
-x 34
-y 44
-end
-arch dirtfloor
-x 34
-y 45
-end
-arch slevel_2_2_1
-x 34
-y 45
-end
-arch dirtfloor
-x 34
-y 46
-end
-arch dirtfloor
-x 34
-y 47
-end
-arch dirtfloor
-x 34
-y 48
-end
-arch dirtfloor
-x 34
-y 49
-end
-arch dirtfloor
-x 34
-y 50
-end
-arch dirtfloor
-x 34
-y 51
-end
-arch dirtfloor
-x 34
-y 52
-end
-arch slevel_2_2_1
-x 34
-y 52
-end
-arch dirtfloor
-x 34
-y 53
-end
-arch dirtfloor
-x 34
-y 54
-end
-arch dirtfloor
-x 34
-y 55
-end
-arch dirtfloor
-x 34
-y 56
-end
-arch dirtfloor
-x 34
-y 57
-end
-arch dirtfloor
-x 34
-y 58
-end
-arch cave2
-x 34
-y 58
-end
-arch blocked
-x 34
-y 59
-end
-arch blocked
-x 35
-y 8
-end
-arch dirtfloor
-x 35
-y 9
-end
-arch cave4
-x 35
-y 9
-end
-arch dirtfloor
-x 35
-y 10
-end
-arch dirtfloor
-x 35
-y 11
-end
-arch dirtfloor
-x 35
-y 12
-end
-arch dirtfloor
-x 35
-y 13
-end
-arch dirtfloor
-x 35
-y 14
-end
-arch dirtfloor
-x 35
-y 15
-end
-arch dirtfloor
-x 35
-y 16
-end
-arch dirtfloor
-x 35
-y 17
-end
-arch dirtfloor
-x 35
-y 18
-end
-arch dirtfloor
-x 35
-y 19
-end
-arch dirtfloor
-x 35
-y 20
-end
-arch cave2
-x 35
-y 20
-end
-arch blocked
-x 35
-y 21
-end
-arch blocked
-x 35
-y 22
-end
-arch blocked
-msg
-endmsg
-x 35
-y 41
-end
-arch blocked
-msg
-endmsg
-x 35
-y 42
-end
-arch dirtfloor
-x 35
-y 43
-end
-arch cave4
-x 35
-y 43
-end
-arch dirtfloor
-x 35
-y 44
-end
-arch dirtfloor
-x 35
-y 45
-end
-arch dirtfloor
-x 35
-y 46
-end
-arch slevel_2_2_1
-x 35
-y 46
-end
-arch dirtfloor
-x 35
-y 47
-end
-arch dirtfloor
-x 35
-y 48
-end
-arch dirtfloor
-x 35
-y 49
-end
-arch dirtfloor
-x 35
-y 50
-end
-arch dirtfloor
-x 35
-y 51
-end
-arch dirtfloor
-x 35
-y 52
-end
-arch dirtfloor
-x 35
-y 53
-end
-arch slevel_2_2_1
-x 35
-y 53
-end
-arch dirtfloor
-x 35
-y 54
-end
-arch dirtfloor
-x 35
-y 55
-end
-arch dirtfloor
-x 35
-y 56
-end
-arch dirtfloor
-x 35
-y 57
-end
-arch dirtfloor
-x 35
-y 58
-end
-arch cave2
-x 35
-y 58
-end
-arch blocked
-x 35
-y 59
-end
-arch blocked
-x 36
-y 8
-end
-arch dirtfloor
-x 36
-y 9
-end
-arch cave4
-x 36
-y 9
-end
-arch dirtfloor
-x 36
-y 10
-end
-arch dirtfloor
-x 36
-y 11
-end
-arch dirtfloor
-x 36
-y 12
-end
-arch dirtfloor
-x 36
-y 13
-end
-arch dirtfloor
-x 36
-y 14
-end
-arch dirtfloor
-x 36
-y 15
-end
-arch dirtfloor
-x 36
-y 16
-end
-arch dirtfloor
-x 36
-y 17
-end
-arch dirtfloor
-x 36
-y 18
-end
-arch raas
-x 36
-y 18
-end
-arch dirtfloor
-x 36
-y 19
-end
-arch dirtfloor
-x 36
-y 20
-end
-arch cave16
-x 36
-y 20
-end
-arch dirtfloor
-x 36
-y 21
-end
-arch cave17
-x 36
-y 21
-end
-arch blocked
-x 36
-y 22
-end
-arch blocked
-msg
-endmsg
-x 36
-y 40
-end
-arch blocked
-msg
-endmsg
-x 36
-y 41
-end
-arch dirtfloor
-x 36
-y 42
-end
-arch cave18
-x 36
-y 42
-end
-arch dirtfloor
-x 36
-y 43
-end
-arch cave13
-x 36
-y 43
-end
-arch dirtfloor
-x 36
-y 44
-end
-arch dirtfloor
-x 36
-y 45
-end
-arch dirtfloor
-x 36
-y 46
-end
-arch dirtfloor
-x 36
-y 47
-end
-arch slevel_2_2_1
-x 36
-y 47
-end
-arch dirtfloor
-x 36
-y 48
-end
-arch dirtfloor
-x 36
-y 49
-end
-arch dirtfloor
-x 36
-y 50
-end
-arch raas
-x 36
-y 50
-end
-arch dirtfloor
-x 36
-y 51
-end
 arch medium_demon
 x 36
 y 51
 end
-arch dirtfloor
-x 36
-y 52
-end
-arch dirtfloor
-x 36
-y 53
-end
-arch dirtfloor
-x 36
-y 54
-end
-arch slevel_2_2_1
-x 36
-y 54
-end
-arch dirtfloor
-x 36
-y 55
-end
-arch cave15
-x 36
-y 55
-end
-arch dirtfloor
-x 36
-y 56
-end
-arch cave1
-x 36
-y 56
-end
-arch dirtfloor
-x 36
-y 57
-end
-arch cave1
-x 36
-y 57
-end
-arch dirtfloor
-x 36
-y 58
-end
-arch cave20
-x 36
-y 58
-end
-arch blocked
-x 36
-y 59
-end
-arch blocked
-x 37
-y 8
-end
-arch dirtfloor
-x 37
-y 9
-end
-arch cave4
-x 37
-y 9
-end
-arch dirtfloor
-x 37
-y 10
-end
-arch slevel_3_4
-x 37
-y 10
-end
 arch medium_demon
 x 37
 y 10
-end
-arch dirtfloor
-x 37
-y 11
-end
-arch slevel_3_4
-x 37
-y 11
-end
-arch dirtfloor
-x 37
-y 12
-end
-arch slevel_3_4
-x 37
-y 12
-end
-arch dirtfloor
-x 37
-y 13
-end
-arch slevel_3_4
-x 37
-y 13
 end
 arch Balrog
 x 37
 y 13
 end
-arch dirtfloor
-x 37
-y 14
-end
-arch slevel_3_4
-x 37
-y 14
-end
-arch dirtfloor
-x 37
-y 15
-end
-arch slevel_3_4
-x 37
-y 15
-end
-arch dirtfloor
-x 37
-y 16
-end
-arch slevel_3_4
-x 37
-y 16
-end
-arch dirtfloor
-x 37
-y 17
-end
-arch slevel_3_4
-x 37
-y 17
-end
-arch dirtfloor
-x 37
-y 18
-end
-arch slevel_3_4
-x 37
-y 18
-end
-arch dirtfloor
-x 37
-y 19
-end
-arch slevel_3_4
-x 37
-y 19
-end
-arch dirtfloor
-x 37
-y 20
-end
-arch slevel_3_4
-x 37
-y 20
-end
-arch dirtfloor
-x 37
-y 21
-end
-arch cave2
-x 37
-y 21
-end
-arch blocked
-x 37
-y 22
-end
-arch blocked
-msg
-endmsg
-x 37
-y 40
-end
-arch dirtfloor
-x 37
-y 41
-end
-arch cave18
-x 37
-y 41
-end
-arch dirtfloor
-x 37
-y 42
-end
-arch cave13
-x 37
-y 42
-end
-arch dirtfloor
-x 37
-y 43
-end
-arch slevel_2_2_1
-x 37
-y 43
-end
-arch dirtfloor
-x 37
-y 44
-end
-arch dirtfloor
-x 37
-y 45
-end
-arch dirtfloor
-x 37
-y 46
-end
 arch big_demon
 x 37
 y 46
 end
-arch dirtfloor
-x 37
-y 47
-end
-arch dirtfloor
-x 37
-y 48
-end
-arch slevel_2_2_1
-x 37
-y 48
-end
-arch dirtfloor
-x 37
-y 49
-end
-arch dirtfloor
-x 37
-y 50
-end
-arch dirtfloor
-x 37
-y 51
-end
-arch dirtfloor
-x 37
-y 52
-end
-arch dirtfloor
-x 37
-y 53
-end
-arch cave15
-x 37
-y 53
-end
-arch dirtfloor
-x 37
-y 54
-end
-arch cave1
-x 37
-y 54
-end
-arch dirtfloor
-x 37
-y 55
-end
-arch cave20
-x 37
-y 55
-end
-arch blocked
-x 37
-y 56
-end
-arch blocked
-x 37
-y 57
-end
-arch blocked
-x 37
-y 58
-end
-arch blocked
-x 37
-y 59
-end
-arch blocked
-x 38
-y 8
-end
-arch dirtfloor
-x 38
-y 9
-end
-arch cave4
-x 38
-y 9
-end
-arch dirtfloor
-x 38
-y 10
-end
-arch dirtfloor
-x 38
-y 11
-end
-arch dirtfloor
-x 38
-y 12
-end
-arch dirtfloor
-x 38
-y 13
-end
-arch dirtfloor
-x 38
-y 14
-end
-arch dirtfloor
-x 38
-y 15
-end
-arch dirtfloor
-x 38
-y 16
-end
-arch dirtfloor
-x 38
-y 17
-end
-arch dirtfloor
-x 38
-y 18
-end
-arch dirtfloor
-x 38
-y 19
-end
 arch medium_demon
 x 38
 y 19
-end
-arch dirtfloor
-x 38
-y 20
-end
-arch dirtfloor
-x 38
-y 21
-end
-arch cave2
-x 38
-y 21
-end
-arch blocked
-x 38
-y 22
-end
-arch blocked
-x 38
-y 23
-end
-arch blocked
-msg
-endmsg
-x 38
-y 39
-end
-arch blocked
-msg
-endmsg
-x 38
-y 40
-end
-arch dirtfloor
-x 38
-y 41
-end
-arch cave4
-x 38
-y 41
-end
-arch dirtfloor
-x 38
-y 42
-end
-arch dirtfloor
-x 38
-y 43
-end
-arch dirtfloor
-x 38
-y 44
-end
-arch slevel_2_2_1
-x 38
-y 44
-end
-arch dirtfloor
-x 38
-y 45
-end
-arch dirtfloor
-x 38
-y 46
-end
-arch dirtfloor
-x 38
-y 47
-end
-arch dirtfloor
-x 38
-y 48
-end
-arch dirtfloor
-x 38
-y 49
-end
-arch slevel_2_2_1
-x 38
-y 49
-end
-arch dirtfloor
-x 38
-y 50
-end
-arch dirtfloor
-x 38
-y 51
-end
-arch dirtfloor
-x 38
-y 52
-end
-arch dirtfloor
-x 38
-y 53
-end
-arch cave2
-x 38
-y 53
-end
-arch blocked
-x 38
-y 54
-end
-arch blocked
-x 38
-y 55
-end
-arch blocked
-x 38
-y 56
-end
-arch blocked
-x 39
-y 8
-end
-arch dirtfloor
-x 39
-y 9
-end
-arch cave19
-x 39
-y 9
-end
-arch dirtfloor
-x 39
-y 10
-end
-arch cave14
-x 39
-y 10
-end
-arch dirtfloor
-x 39
-y 11
-end
-arch dirtfloor
-x 39
-y 12
-end
-arch dirtfloor
-x 39
-y 13
-end
-arch dirtfloor
-x 39
-y 14
-end
-arch dirtfloor
-x 39
-y 15
-end
-arch dirtfloor
-x 39
-y 16
-end
-arch dirtfloor
-x 39
-y 17
-end
-arch dirtfloor
-x 39
-y 18
-end
-arch dirtfloor
-x 39
-y 19
-end
-arch dirtfloor
-x 39
-y 20
-end
-arch dirtfloor
-x 39
-y 21
-end
-arch cave16
-x 39
-y 21
-end
-arch dirtfloor
-x 39
-y 22
-end
-arch cave17
-x 39
-y 22
-end
-arch blocked
-x 39
-y 23
-end
-arch blocked
-x 39
-y 24
-end
-arch blocked
-x 39
-y 25
-end
-arch blocked
-msg
-endmsg
-x 39
-y 38
-end
-arch blocked
-msg
-endmsg
-x 39
-y 39
-end
-arch dirtfloor
-x 39
-y 40
-end
-arch cave18
-x 39
-y 40
-end
-arch dirtfloor
-x 39
-y 41
-end
-arch cave13
-x 39
-y 41
-end
-arch dirtfloor
-x 39
-y 42
-end
-arch dirtfloor
-x 39
-y 43
-end
-arch dirtfloor
-x 39
-y 44
-end
-arch raas
-x 39
-y 44
-end
-arch dirtfloor
-x 39
-y 45
-end
-arch slevel_2_2_1
-x 39
-y 45
-end
-arch dirtfloor
-x 39
-y 46
-end
-arch dirtfloor
-x 39
-y 47
-end
-arch dirtfloor
-x 39
-y 48
-end
-arch dirtfloor
-x 39
-y 49
-end
-arch dirtfloor
-x 39
-y 50
-end
-arch slevel_2_2_1
-x 39
-y 50
-end
-arch dirtfloor
-x 39
-y 51
-end
-arch dirtfloor
-x 39
-y 52
-end
-arch dirtfloor
-x 39
-y 53
-end
-arch cave2
-x 39
-y 53
-end
-arch blocked
-x 39
-y 54
-end
-arch blocked
-x 40
-y 8
-end
-arch blocked
-x 40
-y 9
-end
-arch dirtfloor
-x 40
-y 10
-end
-arch cave4
-x 40
-y 10
-end
-arch dirtfloor
-x 40
-y 11
-end
-arch dirtfloor
-x 40
-y 12
-end
-arch dirtfloor
-x 40
-y 13
-end
-arch dirtfloor
-x 40
-y 14
-end
-arch dirtfloor
-x 40
-y 15
-end
-arch dirtfloor
-x 40
-y 16
-end
-arch dirtfloor
-x 40
-y 17
-end
-arch dirtfloor
-x 40
-y 18
-end
-arch dirtfloor
-x 40
-y 19
-end
-arch dirtfloor
-x 40
-y 20
-end
-arch dirtfloor
-x 40
-y 21
-end
-arch dirtfloor
-x 40
-y 22
-end
-arch cave16
-x 40
-y 22
-end
-arch dirtfloor
-x 40
-y 23
-end
-arch cave3
-x 40
-y 23
-end
-arch dirtfloor
-x 40
-y 24
-end
-arch cave17
-x 40
-y 24
-end
-arch blocked
-msg
-endmsg
-x 40
-y 25
-end
-arch blocked
-msg
-endmsg
-x 40
-y 37
-end
-arch blocked
-msg
-endmsg
-x 40
-y 38
-end
-arch dirtfloor
-x 40
-y 39
-end
-arch cave18
-x 40
-y 39
-end
-arch dirtfloor
-x 40
-y 40
-end
-arch cave13
-x 40
-y 40
-end
-arch dirtfloor
-x 40
-y 41
-end
-arch dirtfloor
-x 40
-y 42
-end
-arch dirtfloor
-x 40
-y 43
-end
-arch dirtfloor
-x 40
-y 44
-end
-arch dirtfloor
-x 40
-y 45
-end
-arch dirtfloor
-x 40
-y 46
-end
-arch slevel_2_2_1
-x 40
-y 46
-end
-arch dirtfloor
-x 40
-y 47
-end
-arch dirtfloor
-x 40
-y 48
-end
-arch dirtfloor
-x 40
-y 49
-end
-arch dirtfloor
-x 40
-y 50
-end
-arch dirtfloor
-x 40
-y 51
-end
-arch slevel_2_2_1
-x 40
-y 51
-end
-arch cave15
-x 40
-y 51
-end
-arch dirtfloor
-x 40
-y 52
-end
-arch cave1
-x 40
-y 52
-end
-arch dirtfloor
-x 40
-y 53
-end
-arch cave20
-x 40
-y 53
-end
-arch blocked
-x 40
-y 54
-end
-arch blocked
-x 41
-y 9
-end
-arch dirtfloor
-x 41
-y 10
-end
-arch cave4
-x 41
-y 10
-end
-arch dirtfloor
-x 41
-y 11
-end
-arch dirtfloor
-x 41
-y 12
-end
-arch dirtfloor
-x 41
-y 13
-end
-arch dirtfloor
-x 41
-y 14
-end
-arch dirtfloor
-x 41
-y 15
-end
-arch dirtfloor
-x 41
-y 16
 end
 arch Balrog
 x 41
 y 16
 end
-arch dirtfloor
-x 41
-y 17
-end
-arch dirtfloor
-x 41
-y 18
-end
-arch dirtfloor
-x 41
-y 19
-end
-arch dirtfloor
-x 41
-y 20
-end
-arch dirtfloor
-x 41
-y 21
-end
-arch raas
-x 41
-y 21
-end
-arch dirtfloor
-x 41
-y 22
-end
-arch slevel_2_2_4
-x 41
-y 22
-end
-arch dirtfloor
-x 41
-y 23
-end
-arch dirtfloor
-x 41
-y 24
-end
-arch cave2
-x 41
-y 24
-end
-arch blocked
-msg
-endmsg
-x 41
-y 25
-end
-arch blocked
-msg
-endmsg
-x 41
-y 26
-end
-arch blocked
-msg
-endmsg
-x 41
-y 36
-end
-arch blocked
-msg
-endmsg
-x 41
-y 37
-end
-arch dirtfloor
-x 41
-y 38
-end
-arch cave18
-x 41
-y 38
-end
-arch dirtfloor
-x 41
-y 39
-end
-arch cave13
-x 41
-y 39
-end
-arch dirtfloor
-x 41
-y 40
-end
-arch dirtfloor
-x 41
-y 41
-end
-arch dirtfloor
-x 41
-y 42
-end
 arch big_demon
 x 41
 y 42
-end
-arch dirtfloor
-x 41
-y 43
-end
-arch dirtfloor
-x 41
-y 44
-end
-arch dirtfloor
-x 41
-y 45
-end
-arch dirtfloor
-x 41
-y 46
 end
 arch medium_demon
 x 41
 y 46
 end
-arch dirtfloor
-x 41
-y 47
-end
-arch slevel_2_2_1
-x 41
-y 47
-end
-arch dirtfloor
-x 41
-y 48
-end
-arch dirtfloor
-x 41
-y 49
-end
-arch dirtfloor
-x 41
-y 50
-end
-arch cave15
-x 41
-y 50
-end
-arch dirtfloor
-x 41
-y 51
-end
-arch cave20
-x 41
-y 51
-end
-arch blocked
-x 41
-y 52
-end
-arch blocked
-x 41
-y 53
-end
-arch blocked
-x 41
-y 54
-end
-arch blocked
-x 42
-y 9
-end
-arch dirtfloor
-x 42
-y 10
-end
-arch cave19
-x 42
-y 10
-end
-arch dirtfloor
-x 42
-y 11
-end
-arch cave14
-x 42
-y 11
-end
-arch dirtfloor
-x 42
-y 12
-end
-arch dirtfloor
-x 42
-y 13
-end
-arch dirtfloor
-x 42
-y 14
-end
-arch dirtfloor
-x 42
-y 15
-end
-arch dirtfloor
-x 42
-y 16
-end
-arch dirtfloor
-x 42
-y 17
-end
-arch dirtfloor
-x 42
-y 18
-end
-arch dirtfloor
-x 42
-y 19
-end
-arch dirtfloor
-x 42
-y 20
-end
-arch dirtfloor
-x 42
-y 21
-end
-arch slevel_2_2_4
-x 42
-y 21
-end
-arch dirtfloor
-x 42
-y 22
-end
-arch dirtfloor
-x 42
-y 23
-end
-arch dirtfloor
-x 42
-y 24
-end
-arch cave16
-x 42
-y 24
-end
-arch dirtfloor
-x 42
-y 25
-end
-arch cave17
-x 42
-y 25
-end
-arch blocked
-msg
-endmsg
-x 42
-y 26
-end
-arch blocked
-msg
-endmsg
-x 42
-y 27
-end
-arch blocked
-msg
-endmsg
-x 42
-y 28
-end
-arch blocked
-msg
-endmsg
-x 42
-y 35
-end
-arch blocked
-msg
-endmsg
-x 42
-y 36
-end
-arch dirtfloor
-x 42
-y 37
-end
-arch cave18
-x 42
-y 37
-end
-arch dirtfloor
-x 42
-y 38
-end
-arch cave13
-x 42
-y 38
-end
-arch dirtfloor
-x 42
-y 39
-end
-arch slevel_2_2_1
-x 42
-y 39
-end
-arch dirtfloor
-x 42
-y 40
-end
-arch dirtfloor
-x 42
-y 41
-end
-arch dirtfloor
-x 42
-y 42
-end
-arch dirtfloor
-x 42
-y 43
-end
-arch dirtfloor
-x 42
-y 44
-end
-arch dirtfloor
-x 42
-y 45
-end
-arch dirtfloor
-x 42
-y 46
-end
-arch dirtfloor
-x 42
-y 47
-end
-arch dirtfloor
-x 42
-y 48
-end
-arch slevel_2_2_1
-x 42
-y 48
-end
-arch dirtfloor
-x 42
-y 49
-end
-arch dirtfloor
-x 42
-y 50
-end
-arch cave2
-x 42
-y 50
-end
-arch blocked
-x 42
-y 51
-end
-arch blocked
-x 42
-y 52
-end
-arch blocked
-x 43
-y 9
-end
-arch blocked
-x 43
-y 10
-end
-arch dirtfloor
-x 43
-y 11
-end
-arch cave4
-x 43
-y 11
-end
-arch dirtfloor
-x 43
-y 12
-end
-arch dirtfloor
-x 43
-y 13
-end
-arch dirtfloor
-x 43
-y 14
-end
-arch raas
-x 43
-y 14
-end
-arch dirtfloor
-x 43
-y 15
-end
-arch dirtfloor
-x 43
-y 16
-end
-arch dirtfloor
-x 43
-y 17
-end
-arch dirtfloor
-x 43
-y 18
-end
-arch dirtfloor
-x 43
-y 19
-end
-arch dirtfloor
-x 43
-y 20
-end
-arch slevel_2_2_4
-x 43
-y 20
-end
-arch dirtfloor
-x 43
-y 21
-end
-arch dirtfloor
-x 43
-y 22
-end
-arch dirtfloor
-x 43
-y 23
-end
-arch dirtfloor
-x 43
-y 24
-end
-arch dirtfloor
-x 43
-y 25
-end
-arch cave16
-x 43
-y 25
-end
-arch dirtfloor
-x 43
-y 26
-end
-arch cave3
-x 43
-y 26
-end
-arch dirtfloor
-x 43
-y 27
-end
-arch cave17
-x 43
-y 27
-end
-arch blocked
-msg
-endmsg
-x 43
-y 28
-end
-arch blocked
-msg
-endmsg
-x 43
-y 29
-end
-arch blocked
-msg
-endmsg
-x 43
-y 32
-end
-arch blocked
-msg
-endmsg
-x 43
-y 33
-end
-arch blocked
-msg
-endmsg
-x 43
-y 34
-end
-arch blocked
-msg
-endmsg
-x 43
-y 35
-end
-arch dirtfloor
-x 43
-y 36
-end
-arch cave18
-x 43
-y 36
-end
-arch dirtfloor
-x 43
-y 37
-end
-arch cave13
-x 43
-y 37
-end
-arch dirtfloor
-x 43
-y 38
-end
-arch dirtfloor
-x 43
-y 39
-end
-arch dirtfloor
-x 43
-y 40
-end
-arch slevel_2_2_1
-x 43
-y 40
-end
-arch dirtfloor
-x 43
-y 41
-end
-arch dirtfloor
-x 43
-y 42
-end
-arch dirtfloor
-x 43
-y 43
-end
-arch dirtfloor
-x 43
-y 44
-end
-arch dirtfloor
-x 43
-y 45
-end
-arch dirtfloor
-x 43
-y 46
-end
-arch dirtfloor
-x 43
-y 47
-end
-arch dirtfloor
-x 43
-y 48
-end
-arch dirtfloor
-x 43
-y 49
-end
-arch slevel_2_2_1
-x 43
-y 49
-end
-arch cave15
-x 43
-y 49
-end
-arch dirtfloor
-x 43
-y 50
-end
-arch cave20
-x 43
-y 50
-end
-arch blocked
-x 43
-y 51
-end
-arch blocked
-x 44
-y 10
-end
-arch dirtfloor
-x 44
-y 11
-end
-arch cave19
-x 44
-y 11
-end
-arch dirtfloor
-x 44
-y 12
-end
-arch cave14
-x 44
-y 12
-end
-arch dirtfloor
-x 44
-y 13
-end
-arch dirtfloor
-x 44
-y 14
-end
-arch dirtfloor
-x 44
-y 15
-end
-arch dirtfloor
-x 44
-y 16
-end
-arch dirtfloor
-x 44
-y 17
-end
-arch dirtfloor
-x 44
-y 18
-end
-arch dirtfloor
-x 44
-y 19
-end
-arch slevel_2_2_4
-x 44
-y 19
-end
-arch dirtfloor
-x 44
-y 20
-end
-arch dirtfloor
-x 44
-y 21
-end
-arch dirtfloor
-x 44
-y 22
-end
 arch medium_demon
 x 44
 y 22
 end
-arch dirtfloor
-x 44
-y 23
-end
-arch dirtfloor
-x 44
-y 24
-end
-arch dirtfloor
-x 44
-y 25
-end
-arch dirtfloor
-x 44
-y 26
-end
-arch slevel_2_2_4
-x 44
-y 26
-end
-arch dirtfloor
-x 44
-y 27
-end
-arch cave16
-x 44
-y 27
-end
-arch dirtfloor
-x 44
-y 28
-end
-arch cave17
-x 44
-y 28
-end
-arch blocked
-msg
-endmsg
-x 44
-y 29
-end
-arch blocked
-msg
-endmsg
-x 44
-y 30
-end
-arch blocked
-msg
-endmsg
-x 44
-y 31
-end
-arch blocked
-msg
-endmsg
-x 44
-y 32
-end
-arch dirtfloor
-x 44
-y 33
-end
-arch cave18
-x 44
-y 33
-end
-arch dirtfloor
-x 44
-y 34
-end
-arch cave3
-x 44
-y 34
-end
-arch dirtfloor
-x 44
-y 35
-end
-arch cave3
-x 44
-y 35
-end
-arch dirtfloor
-x 44
-y 36
-end
-arch cave13
-x 44
-y 36
-end
-arch dirtfloor
-x 44
-y 37
-end
-arch slevel_2_2_1
-x 44
-y 37
-end
-arch dirtfloor
-x 44
-y 38
-end
-arch dirtfloor
-x 44
-y 39
-end
-arch dirtfloor
-x 44
-y 40
-end
-arch dirtfloor
-x 44
-y 41
-end
-arch slevel_2_2_1
-x 44
-y 41
-end
-arch dirtfloor
-x 44
-y 42
-end
-arch dirtfloor
-x 44
-y 43
-end
-arch dirtfloor
-x 44
-y 44
-end
-arch dirtfloor
-x 44
-y 45
-end
-arch dirtfloor
-x 44
-y 46
-end
-arch dirtfloor
-x 44
-y 47
-end
-arch dirtfloor
-x 44
-y 48
-end
-arch cave15
-x 44
-y 48
-end
-arch dirtfloor
-x 44
-y 49
-end
-arch cave20
-x 44
-y 49
-end
-arch blocked
-x 44
-y 50
-end
-arch blocked
-x 44
-y 51
-end
-arch blocked
-x 45
-y 10
-end
-arch blocked
-x 45
-y 11
-end
-arch dirtfloor
-x 45
-y 12
-end
-arch cave19
-x 45
-y 12
-end
-arch dirtfloor
-x 45
-y 13
-end
-arch cave14
-x 45
-y 13
-end
-arch dirtfloor
-x 45
-y 14
-end
-arch dirtfloor
-x 45
-y 15
-end
-arch dirtfloor
-x 45
-y 16
-end
-arch dirtfloor
-x 45
-y 17
-end
-arch dirtfloor
-x 45
-y 18
-end
-arch slevel_2_2_4
-x 45
-y 18
-end
-arch dirtfloor
-x 45
-y 19
-end
-arch dirtfloor
-x 45
-y 20
-end
-arch dirtfloor
-x 45
-y 21
-end
-arch dirtfloor
-x 45
-y 22
-end
-arch dirtfloor
-x 45
-y 23
-end
-arch dirtfloor
-x 45
-y 24
-end
-arch raas
-x 45
-y 24
-end
-arch dirtfloor
-x 45
-y 25
-end
-arch slevel_2_2_4
-x 45
-y 25
-end
-arch dirtfloor
-x 45
-y 26
-end
-arch dirtfloor
-x 45
-y 27
-end
-arch dirtfloor
-x 45
-y 28
-end
-arch slevel_3_1
-x 45
-y 28
-end
-arch cave16
-x 45
-y 28
-end
-arch dirtfloor
-x 45
-y 29
-end
-arch cave3
-x 45
-y 29
-end
-arch dirtfloor
-x 45
-y 30
-end
-arch cave3
-x 45
-y 30
-end
-arch dirtfloor
-x 45
-y 31
-end
-arch cave3
-x 45
-y 31
-end
-arch dirtfloor
-x 45
-y 32
-end
-arch cave3
-x 45
-y 32
-end
-arch dirtfloor
-x 45
-y 33
-end
-arch cave13
-x 45
-y 33
-end
-arch dirtfloor
-x 45
-y 34
-end
-arch slevel_2_2_1
-x 45
-y 34
-end
-arch dirtfloor
-x 45
-y 35
-end
-arch dirtfloor
-x 45
-y 36
-end
-arch dirtfloor
-x 45
-y 37
-end
 arch big_demon
 x 45
 y 37
-end
-arch dirtfloor
-x 45
-y 38
-end
-arch slevel_2_2_1
-x 45
-y 38
-end
-arch dirtfloor
-x 45
-y 39
-end
-arch dirtfloor
-x 45
-y 40
-end
-arch dirtfloor
-x 45
-y 41
-end
-arch dirtfloor
-x 45
-y 42
-end
-arch slevel_2_2_1
-x 45
-y 42
-end
-arch dirtfloor
-x 45
-y 43
-end
-arch dirtfloor
-x 45
-y 44
-end
-arch raas
-x 45
-y 44
-end
-arch dirtfloor
-x 45
-y 45
-end
-arch dirtfloor
-x 45
-y 46
-end
-arch dirtfloor
-x 45
-y 47
-end
-arch cave15
-x 45
-y 47
-end
-arch dirtfloor
-x 45
-y 48
-end
-arch cave20
-x 45
-y 48
-end
-arch blocked
-x 45
-y 49
-end
-arch blocked
-x 45
-y 50
-end
-arch blocked
-x 46
-y 11
-end
-arch blocked
-x 46
-y 12
-end
-arch dirtfloor
-x 46
-y 13
-end
-arch cave4
-x 46
-y 13
-end
-arch dirtfloor
-x 46
-y 14
-end
-arch dirtfloor
-x 46
-y 15
-end
-arch dirtfloor
-x 46
-y 16
-end
-arch raas
-x 46
-y 16
-end
-arch dirtfloor
-x 46
-y 17
-end
-arch slevel_2_2_4
-x 46
-y 17
-end
-arch dirtfloor
-x 46
-y 18
-end
-arch dirtfloor
-x 46
-y 19
-end
-arch dirtfloor
-x 46
-y 20
-end
-arch dirtfloor
-x 46
-y 21
-end
-arch dirtfloor
-x 46
-y 22
-end
-arch dirtfloor
-x 46
-y 23
-end
-arch dirtfloor
-x 46
-y 24
-end
-arch slevel_2_2_4
-x 46
-y 24
-end
-arch dirtfloor
-x 46
-y 25
-end
-arch dirtfloor
-x 46
-y 26
-end
-arch dirtfloor
-x 46
-y 27
-end
-arch dirtfloor
-x 46
-y 28
-end
-arch slevel_3_1
-x 46
-y 28
-end
-arch dirtfloor
-x 46
-y 29
-end
-arch dirtfloor
-x 46
-y 30
-end
-arch dirtfloor
-x 46
-y 31
-end
-arch dirtfloor
-x 46
-y 32
-end
-arch slevel_3_1
-x 46
-y 32
-end
-arch dirtfloor
-x 46
-y 33
-end
-arch dirtfloor
-x 46
-y 34
-end
-arch dirtfloor
-x 46
-y 35
-end
-arch slevel_2_2_1
-x 46
-y 35
-end
-arch dirtfloor
-x 46
-y 36
-end
-arch dirtfloor
-x 46
-y 37
-end
-arch dirtfloor
-x 46
-y 38
-end
-arch dirtfloor
-x 46
-y 39
-end
-arch slevel_2_2_1
-x 46
-y 39
-end
-arch dirtfloor
-x 46
-y 40
-end
-arch dirtfloor
-x 46
-y 41
-end
-arch dirtfloor
-x 46
-y 42
-end
-arch dirtfloor
-x 46
-y 43
-end
-arch slevel_2_2_1
-x 46
-y 43
-end
-arch dirtfloor
-x 46
-y 44
-end
-arch dirtfloor
-x 46
-y 45
-end
-arch dirtfloor
-x 46
-y 46
-end
-arch cave15
-x 46
-y 46
-end
-arch dirtfloor
-x 46
-y 47
-end
-arch cave20
-x 46
-y 47
-end
-arch blocked
-x 46
-y 48
-end
-arch blocked
-x 46
-y 49
-end
-arch blocked
-x 47
-y 12
-end
-arch dirtfloor
-x 47
-y 13
-end
-arch cave19
-x 47
-y 13
-end
-arch dirtfloor
-x 47
-y 14
-end
-arch cave14
-x 47
-y 14
-end
-arch dirtfloor
-x 47
-y 15
-end
-arch dirtfloor
-x 47
-y 16
-end
-arch slevel_2_2_4
-x 47
-y 16
-end
-arch dirtfloor
-x 47
-y 17
-end
-arch dirtfloor
-x 47
-y 18
 end
 arch Balrog
 x 47
 y 18
 end
-arch dirtfloor
-x 47
-y 19
-end
-arch dirtfloor
-x 47
-y 20
-end
-arch dirtfloor
-x 47
-y 21
-end
-arch dirtfloor
-x 47
-y 22
-end
-arch dirtfloor
-x 47
-y 23
-end
-arch slevel_2_2_4
-x 47
-y 23
-end
-arch dirtfloor
-x 47
-y 24
-end
-arch dirtfloor
-x 47
-y 25
-end
-arch dirtfloor
-x 47
-y 26
-end
-arch dirtfloor
-x 47
-y 27
-end
-arch dirtfloor
-x 47
-y 28
-end
-arch slevel_3_1
-x 47
-y 28
-end
-arch dirtfloor
-x 47
-y 29
-end
-arch raas
-x 47
-y 29
-end
-arch dirtfloor
-x 47
-y 30
-end
-arch dirtfloor
-x 47
-y 31
-end
-arch dirtfloor
-x 47
-y 32
-end
-arch slevel_3_1
-x 47
-y 32
-end
-arch dirtfloor
-x 47
-y 33
-end
-arch dirtfloor
-x 47
-y 34
-end
-arch dirtfloor
-x 47
-y 35
-end
-arch dirtfloor
-x 47
-y 36
-end
-arch slevel_2_2_1
-x 47
-y 36
-end
-arch dirtfloor
-x 47
-y 37
-end
-arch dirtfloor
-x 47
-y 38
-end
-arch dirtfloor
-x 47
-y 39
-end
-arch dirtfloor
-x 47
-y 40
-end
-arch slevel_2_2_1
-x 47
-y 40
-end
-arch dirtfloor
-x 47
-y 41
-end
-arch dirtfloor
-x 47
-y 42
-end
 arch medium_demon
 x 47
 y 42
-end
-arch dirtfloor
-x 47
-y 43
-end
-arch dirtfloor
-x 47
-y 44
-end
-arch slevel_2_2_1
-x 47
-y 44
-end
-arch dirtfloor
-x 47
-y 45
-end
-arch cave15
-x 47
-y 45
-end
-arch dirtfloor
-x 47
-y 46
-end
-arch cave20
-x 47
-y 46
-end
-arch blocked
-x 47
-y 47
-end
-arch blocked
-x 47
-y 48
-end
-arch blocked
-x 48
-y 12
-end
-arch blocked
-x 48
-y 13
-end
-arch dirtfloor
-x 48
-y 14
-end
-arch cave19
-x 48
-y 14
-end
-arch dirtfloor
-x 48
-y 15
-end
-arch slevel_2_2_4
-x 48
-y 15
-end
-arch cave14
-x 48
-y 15
-end
-arch dirtfloor
-x 48
-y 16
-end
-arch dirtfloor
-x 48
-y 17
-end
-arch dirtfloor
-x 48
-y 18
-end
-arch dirtfloor
-x 48
-y 19
-end
-arch dirtfloor
-x 48
-y 20
-end
-arch dirtfloor
-x 48
-y 21
-end
-arch dirtfloor
-x 48
-y 22
-end
-arch slevel_2_2_4
-x 48
-y 22
-end
-arch dirtfloor
-x 48
-y 23
-end
-arch dirtfloor
-x 48
-y 24
 end
 arch Balrog
 x 48
 y 24
 end
-arch dirtfloor
-x 48
-y 25
-end
-arch dirtfloor
-x 48
-y 26
-end
-arch dirtfloor
-x 48
-y 27
-end
-arch dirtfloor
-x 48
-y 28
-end
-arch slevel_3_1
-x 48
-y 28
-end
-arch dirtfloor
-x 48
-y 29
-end
-arch dirtfloor
-x 48
-y 30
-end
-arch dirtfloor
-x 48
-y 31
-end
-arch dirtfloor
-x 48
-y 32
-end
-arch slevel_3_1
-x 48
-y 32
-end
 arch big_demon
 x 48
 y 32
-end
-arch dirtfloor
-x 48
-y 33
-end
-arch dirtfloor
-x 48
-y 34
-end
-arch dirtfloor
-x 48
-y 35
-end
-arch dirtfloor
-x 48
-y 36
-end
-arch raas
-x 48
-y 36
-end
-arch dirtfloor
-x 48
-y 37
-end
-arch slevel_2_2_1
-x 48
-y 37
-end
-arch dirtfloor
-x 48
-y 38
-end
-arch dirtfloor
-x 48
-y 39
-end
-arch dirtfloor
-x 48
-y 40
-end
-arch dirtfloor
-x 48
-y 41
-end
-arch slevel_2_2_1
-x 48
-y 41
-end
-arch dirtfloor
-x 48
-y 42
-end
-arch dirtfloor
-x 48
-y 43
-end
-arch dirtfloor
-x 48
-y 44
-end
-arch dirtfloor
-x 48
-y 45
-end
-arch cave2
-x 48
-y 45
-end
-arch blocked
-x 48
-y 46
-end
-arch blocked
-x 48
-y 47
-end
-arch blocked
-x 49
-y 13
-end
-arch blocked
-x 49
-y 14
-end
-arch dirtfloor
-x 49
-y 15
-end
-arch cave19
-x 49
-y 15
-end
-arch dirtfloor
-x 49
-y 16
-end
-arch cave14
-x 49
-y 16
-end
-arch dirtfloor
-x 49
-y 17
-end
-arch dirtfloor
-x 49
-y 18
-end
-arch dirtfloor
-x 49
-y 19
-end
-arch dirtfloor
-x 49
-y 20
-end
-arch dirtfloor
-x 49
-y 21
-end
-arch slevel_2_2_4
-x 49
-y 21
-end
-arch dirtfloor
-x 49
-y 22
-end
-arch dirtfloor
-x 49
-y 23
-end
-arch dirtfloor
-x 49
-y 24
-end
-arch dirtfloor
-x 49
-y 25
-end
-arch dirtfloor
-x 49
-y 26
-end
-arch dirtfloor
-x 49
-y 27
-end
-arch dirtfloor
-x 49
-y 28
-end
-arch slevel_3_1
-x 49
-y 28
-end
-arch dirtfloor
-x 49
-y 29
 end
 arch medium_demon
 x 49
 y 29
 end
-arch dirtfloor
-x 49
-y 30
-end
-arch dirtfloor
-x 49
-y 31
-end
-arch dirtfloor
-x 49
-y 32
-end
-arch slevel_3_1
-x 49
-y 32
-end
-arch dirtfloor
-x 49
-y 33
-end
-arch dirtfloor
-x 49
-y 34
-end
-arch dirtfloor
-x 49
-y 35
-end
-arch dirtfloor
-x 49
-y 36
-end
-arch dirtfloor
-x 49
-y 37
-end
-arch dirtfloor
-x 49
-y 38
-end
-arch slevel_2_2_1
-x 49
-y 38
-end
 arch big_demon
 x 49
 y 38
-end
-arch dirtfloor
-x 49
-y 39
-end
-arch dirtfloor
-x 49
-y 40
-end
-arch dirtfloor
-x 49
-y 41
-end
-arch dirtfloor
-x 49
-y 42
-end
-arch slevel_2_2_1
-x 49
-y 42
-end
-arch dirtfloor
-x 49
-y 43
-end
-arch dirtfloor
-x 49
-y 44
-end
-arch cave15
-x 49
-y 44
-end
-arch dirtfloor
-x 49
-y 45
-end
-arch cave20
-x 49
-y 45
-end
-arch blocked
-x 49
-y 46
-end
-arch blocked
-x 50
-y 14
-end
-arch blocked
-x 50
-y 15
-end
-arch dirtfloor
-x 50
-y 16
-end
-arch cave19
-x 50
-y 16
-end
-arch dirtfloor
-x 50
-y 17
-end
-arch cave14
-x 50
-y 17
-end
-arch dirtfloor
-x 50
-y 18
-end
-arch dirtfloor
-x 50
-y 19
-end
-arch dirtfloor
-x 50
-y 20
-end
-arch slevel_2_2_4
-x 50
-y 20
-end
-arch dirtfloor
-x 50
-y 21
-end
-arch dirtfloor
-x 50
-y 22
-end
-arch dirtfloor
-x 50
-y 23
-end
-arch dirtfloor
-x 50
-y 24
-end
-arch dirtfloor
-x 50
-y 25
-end
-arch dirtfloor
-x 50
-y 26
-end
-arch dirtfloor
-x 50
-y 27
-end
-arch dirtfloor
-x 50
-y 28
-end
-arch slevel_3_1
-x 50
-y 28
-end
-arch dirtfloor
-x 50
-y 29
-end
-arch dirtfloor
-x 50
-y 30
-end
-arch dirtfloor
-x 50
-y 31
-end
-arch dirtfloor
-x 50
-y 32
-end
-arch slevel_3_1
-x 50
-y 32
-end
-arch dirtfloor
-x 50
-y 33
-end
-arch dirtfloor
-x 50
-y 34
-end
-arch dirtfloor
-x 50
-y 35
-end
-arch dirtfloor
-x 50
-y 36
-end
-arch dirtfloor
-x 50
-y 37
-end
-arch dirtfloor
-x 50
-y 38
-end
-arch dirtfloor
-x 50
-y 39
-end
-arch slevel_2_2_1
-x 50
-y 39
-end
-arch dirtfloor
-x 50
-y 40
-end
-arch dirtfloor
-x 50
-y 41
-end
-arch dirtfloor
-x 50
-y 42
-end
-arch dirtfloor
-x 50
-y 43
-end
-arch slevel_2_2_1
-x 50
-y 43
-end
-arch cave15
-x 50
-y 43
-end
-arch dirtfloor
-x 50
-y 44
-end
-arch cave20
-x 50
-y 44
-end
-arch blocked
-x 50
-y 45
-end
-arch blocked
-x 50
-y 46
-end
-arch blocked
-x 51
-y 15
-end
-arch blocked
-x 51
-y 16
-end
-arch dirtfloor
-x 51
-y 17
-end
-arch cave19
-x 51
-y 17
-end
-arch dirtfloor
-x 51
-y 18
-end
-arch cave1
-x 51
-y 18
-end
-arch dirtfloor
-x 51
-y 19
-end
-arch slevel_2_2_4
-x 51
-y 19
-end
-arch cave14
-x 51
-y 19
-end
-arch dirtfloor
-x 51
-y 20
-end
-arch dirtfloor
-x 51
-y 21
-end
-arch dirtfloor
-x 51
-y 22
-end
-arch raas
-x 51
-y 22
-end
-arch dirtfloor
-x 51
-y 23
-end
-arch dirtfloor
-x 51
-y 24
-end
-arch dirtfloor
-x 51
-y 25
-end
-arch dirtfloor
-x 51
-y 26
-end
-arch dirtfloor
-x 51
-y 27
-end
-arch dirtfloor
-x 51
-y 28
-end
-arch slevel_3_1
-x 51
-y 28
-end
-arch dirtfloor
-x 51
-y 29
-end
-arch dirtfloor
-x 51
-y 30
-end
-arch dirtfloor
-x 51
-y 31
-end
-arch dirtfloor
-x 51
-y 32
-end
-arch slevel_3_1
-x 51
-y 32
-end
-arch dirtfloor
-x 51
-y 33
-end
-arch dirtfloor
-x 51
-y 34
-end
-arch dirtfloor
-x 51
-y 35
-end
-arch dirtfloor
-x 51
-y 36
-end
-arch dirtfloor
-x 51
-y 37
-end
-arch dirtfloor
-x 51
-y 38
-end
-arch dirtfloor
-x 51
-y 39
-end
-arch dirtfloor
-x 51
-y 40
-end
-arch slevel_2_2_1
-x 51
-y 40
-end
-arch dirtfloor
-x 51
-y 41
-end
-arch dirtfloor
-x 51
-y 42
-end
-arch cave15
-x 51
-y 42
-end
-arch dirtfloor
-x 51
-y 43
-end
-arch cave20
-x 51
-y 43
-end
-arch blocked
-x 51
-y 44
-end
-arch blocked
-x 51
-y 45
-end
-arch blocked
-x 52
-y 16
-end
-arch blocked
-x 52
-y 17
-end
-arch blocked
-x 52
-y 18
-end
-arch dirtfloor
-x 52
-y 19
-end
-arch cave19
-x 52
-y 19
-end
-arch dirtfloor
-x 52
-y 20
-end
-arch cave1
-x 52
-y 20
-end
-arch dirtfloor
-x 52
-y 21
-end
-arch cave14
-x 52
-y 21
-end
-arch dirtfloor
-x 52
-y 22
-end
-arch dirtfloor
-x 52
-y 23
 end
 arch medium_demon
 x 52
 y 23
 end
-arch dirtfloor
-x 52
-y 24
-end
-arch dirtfloor
-x 52
-y 25
-end
-arch dirtfloor
-x 52
-y 26
-end
-arch dirtfloor
-x 52
-y 27
-end
-arch dirtfloor
-x 52
-y 28
-end
-arch slevel_3_1
-x 52
-y 28
-end
-arch dirtfloor
-x 52
-y 29
-end
 arch big_demon
 x 52
 y 29
 end
-arch dirtfloor
-x 52
-y 30
-end
-arch dirtfloor
-x 52
-y 31
-end
-arch dirtfloor
-x 52
-y 32
-end
-arch slevel_3_1
-x 52
-y 32
-end
-arch dirtfloor
-x 52
-y 33
-end
 arch medium_demon
 x 52
 y 33
-end
-arch dirtfloor
-x 52
-y 34
-end
-arch dirtfloor
-x 52
-y 35
-end
-arch dirtfloor
-x 52
-y 36
-end
-arch dirtfloor
-x 52
-y 37
-end
-arch dirtfloor
-x 52
-y 38
-end
-arch dirtfloor
-x 52
-y 39
-end
-arch dirtfloor
-x 52
-y 40
-end
-arch dirtfloor
-x 52
-y 41
-end
-arch slevel_2_2_1
-x 52
-y 41
-end
-arch cave15
-x 52
-y 41
-end
-arch dirtfloor
-x 52
-y 42
-end
-arch cave20
-x 52
-y 42
-end
-arch blocked
-x 52
-y 43
-end
-arch blocked
-x 52
-y 44
-end
-arch blocked
-x 53
-y 18
-end
-arch blocked
-x 53
-y 19
-end
-arch blocked
-x 53
-y 20
-end
-arch dirtfloor
-x 53
-y 21
-end
-arch cave19
-x 53
-y 21
-end
-arch dirtfloor
-x 53
-y 22
-end
-arch cave14
-x 53
-y 22
-end
-arch dirtfloor
-x 53
-y 23
-end
-arch dirtfloor
-x 53
-y 24
-end
-arch dirtfloor
-x 53
-y 25
-end
-arch dirtfloor
-x 53
-y 26
-end
-arch dirtfloor
-x 53
-y 27
-end
-arch dirtfloor
-x 53
-y 28
-end
-arch slevel_3_1
-x 53
-y 28
-end
-arch dirtfloor
-x 53
-y 29
-end
-arch dirtfloor
-x 53
-y 30
-end
-arch dirtfloor
-x 53
-y 31
-end
-arch dirtfloor
-x 53
-y 32
-end
-arch slevel_3_1
-x 53
-y 32
-end
-arch dirtfloor
-x 53
-y 33
-end
-arch dirtfloor
-x 53
-y 34
-end
-arch dirtfloor
-x 53
-y 35
-end
-arch dirtfloor
-x 53
-y 36
-end
-arch raas
-x 53
-y 36
-end
-arch dirtfloor
-x 53
-y 37
-end
-arch dirtfloor
-x 53
-y 38
-end
-arch dirtfloor
-x 53
-y 39
-end
-arch cave15
-x 53
-y 39
-end
-arch dirtfloor
-x 53
-y 40
-end
-arch cave1
-x 53
-y 40
-end
-arch dirtfloor
-x 53
-y 41
-end
-arch cave20
-x 53
-y 41
-end
-arch blocked
-x 53
-y 42
-end
-arch blocked
-x 53
-y 43
-end
-arch blocked
-x 54
-y 20
-end
-arch blocked
-x 54
-y 21
-end
-arch dirtfloor
-x 54
-y 22
-end
-arch cave19
-x 54
-y 22
-end
-arch dirtfloor
-x 54
-y 23
-end
-arch cave1
-x 54
-y 23
-end
-arch dirtfloor
-x 54
-y 24
-end
-arch cave14
-x 54
-y 24
-end
-arch dirtfloor
-x 54
-y 25
-end
-arch dirtfloor
-x 54
-y 26
-end
-arch dirtfloor
-x 54
-y 27
-end
-arch dirtfloor
-x 54
-y 28
-end
-arch slevel_3_1
-x 54
-y 28
-end
-arch dirtfloor
-x 54
-y 29
-end
-arch dirtfloor
-x 54
-y 30
-end
-arch dirtfloor
-x 54
-y 31
-end
-arch dirtfloor
-x 54
-y 32
-end
-arch slevel_3_1
-x 54
-y 32
-end
-arch dirtfloor
-x 54
-y 33
-end
-arch dirtfloor
-x 54
-y 34
-end
-arch dirtfloor
-x 54
-y 35
-end
-arch dirtfloor
-x 54
-y 36
-end
-arch cave15
-x 54
-y 36
-end
-arch dirtfloor
-x 54
-y 37
-end
-arch cave1
-x 54
-y 37
-end
-arch dirtfloor
-x 54
-y 38
-end
-arch cave1
-x 54
-y 38
-end
-arch dirtfloor
-x 54
-y 39
-end
-arch cave20
-x 54
-y 39
-end
-arch blocked
-x 54
-y 40
-end
-arch blocked
-x 54
-y 41
-end
-arch blocked
-x 54
-y 42
-end
-arch blocked
-x 55
-y 21
-end
-arch blocked
-x 55
-y 22
-end
-arch blocked
-x 55
-y 23
-end
-arch dirtfloor
-x 55
-y 24
-end
-arch cave19
-x 55
-y 24
-end
-arch dirtfloor
-x 55
-y 25
-end
-arch cave1
-x 55
-y 25
-end
-arch dirtfloor
-x 55
-y 26
-end
-arch cave1
-x 55
-y 26
-end
-arch dirtfloor
-x 55
-y 27
-end
-arch cave1
-x 55
-y 27
-end
-arch dirtfloor
-x 55
-y 28
-end
-arch cave1
-x 55
-y 28
-end
-arch dirtfloor
-x 55
-y 29
-end
-arch cave1
-x 55
-y 29
-end
-arch dirtfloor
-x 55
-y 30
-end
-arch cave1
-x 55
-y 30
-end
-arch dirtfloor
-x 55
-y 31
-end
-arch cave1
-x 55
-y 31
-end
-arch dirtfloor
-x 55
-y 32
-end
-arch slevel_3_1
-x 55
-y 32
-end
-arch cave14
-x 55
-y 32
-end
-arch dirtfloor
-x 55
-y 33
-end
-arch dirtfloor
-x 55
-y 34
-end
-arch cave15
-x 55
-y 34
-end
-arch dirtfloor
-x 55
-y 35
-end
-arch cave1
-x 55
-y 35
-end
-arch dirtfloor
-x 55
-y 36
-end
-arch cave20
-x 55
-y 36
-end
-arch blocked
-x 55
-y 37
-end
-arch blocked
-x 55
-y 38
-end
-arch blocked
-x 55
-y 39
-end
-arch blocked
-x 55
-y 40
-end
-arch blocked
-x 56
-y 23
-end
-arch blocked
-x 56
-y 24
-end
-arch blocked
-x 56
-y 25
-end
-arch blocked
-x 56
-y 26
-end
-arch blocked
-x 56
-y 27
-end
-arch blocked
-x 56
-y 28
-end
-arch blocked
-x 56
-y 29
-end
-arch blocked
-x 56
-y 30
-end
-arch blocked
-x 56
-y 31
-end
-arch dirtfloor
-x 56
-y 32
-end
-arch cave19
-x 56
-y 32
-end
-arch dirtfloor
-x 56
-y 33
-end
-arch cave1
-x 56
-y 33
-end
-arch dirtfloor
-x 56
-y 34
-end
-arch cave20
-x 56
-y 34
-end
-arch blocked
-x 56
-y 35
-end
-arch blocked
-x 56
-y 36
-end
-arch blocked
-x 56
-y 37
-end
-arch blocked
-x 57
-y 31
-end
-arch blocked
-x 57
-y 32
-end
-arch blocked
-x 57
-y 33
-end
-arch blocked
-x 57
-y 34
-end
-arch blocked
-x 57
-y 35
 end
