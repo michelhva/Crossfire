@@ -1,3 +1,71 @@
+2007-03-02 04:27  rjtanner
+
+	* lake_country/Butakis/houses/Sams_house: Cosmetic updates to
+	  Sam's House - updated wall sections so the appear nicer next to
+	  doorways. Replaced Sam's ability_coldspell with icestorm.
+	  Other changes are due to map editor reformatting.
+
+2007-03-02 04:16  rjtanner
+
+	* lake_country/Butakis/B_wshop, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck2, lake_country/Butakis/luck3: Changed
+	  the syntax of how these maps were named. Map Editor removed
+	  non-existant archetypes from monsters (ability_foo). Other
+	  changes are due to Map Editor reformatting.
+
+2007-03-02 04:08  rjtanner
+
+	* world/world_128_101: Map had a double entrance (or exit) on it,
+	  to a map that did not exist. Removed this reference as an
+	  invisible exit (or entrance) sends the player to the guard house
+	  map.
+
+2007-03-02 04:04  rjtanner
+
+	* santo_dominion/espen/espen2: Added missing floor tiles beneath a
+	  section of walls. Cosment change in regards to how 'swall' map
+	  sections merge with adjacent walls. Mapper shows a log error on
+	  this map, ''Couldn't find archetype none'' - I was unable to
+	  find this which monster had this missing archetype though.
+
+2007-03-02 03:49  rjtanner
+
+	* euthville/demon_quest: Updated the Demon Quest map name that is
+	  found in Euthville. Map editor also removed unknown archetype
+	  abilities (archetype ability_fire). Other changes are due to
+	  Map Editor reformatting.
+
+2007-03-02 03:46  rjtanner
+
+	* world/world_124_119: Missed this in the last commit. Removed a
+	  link in world map to missing map - Smugglers Ship outside of
+	  Navar.
+
+2007-03-02 03:45  rjtanner
+
+	* world/world_121_117, world/world_124_119, world/world_128_109:
+	  Update world map reference to Adobe House in Navar. Remove
+	  links in world maps to missing maps - Lonely Hut in Wolfsburg,
+	  Smugglers Lair and Smugglers Ship outside of Navar. Other
+	  changes are due to Map Editor reformatting.
+
+2007-03-02 03:36  rjtanner
+
+	* navar_city/mlab/tadobebuild2, navar_city/mlab/tadobebuild3,
+	  navar_city/mlab/zealothouse2, navar_city/mlab/zealothouseb1:
+	  Merge in missing maps, Zealot House and Adbobe Building, to the
+	  Navar Western Tavern.
+
+2007-03-02 02:59  rjtanner
+
+	* whalingoutpost/misc/castle1: Cosmetic change as to how 'swall'
+	  sections merged with adjacent wall sections
+
+2007-03-02 02:56  rjtanner
+
+	* wolfsburg/temple/temple: Map update to remove 0 destination
+	  coordinates warnings from server log files
+
 2007-03-02 01:01  rjtanner
 
 	* azumauindo/minatomachi/buildings/guildkeybuilding1,
