@@ -6483,13 +6483,6 @@ elevation 1408
 end
 arch hut
 name lonely hut
-name_pl lonely hut
-slaying /wolfsburg/hut/hut
-msg
-You see an angry motionless man at the back of the garden
-endmsg
-hp 2
-sp 17
 x 26
 y 37
 end
@@ -12163,7 +12156,6 @@ y 9
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 11
 end
