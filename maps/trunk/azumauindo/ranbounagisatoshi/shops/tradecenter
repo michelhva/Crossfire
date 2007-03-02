@@ -1,4 +1,5 @@
 arch map
+name Shouhou Senta
 reset_timeout 5
 difficulty 1
 region azumauindo
@@ -1523,7 +1524,7 @@ arch sign_w
 name Trader 1
 name_pl Trader 1
 msg
-Trader 
+Trader
 endmsg
 x 6
 y 13
@@ -2011,16 +2012,14 @@ x 8
 y 15
 end
 arch sign
-name shouhou senta
-name_pl Trader Joe's
+name Shouhou Senta
 msg
-Welcome to Ranbounagisatoshi's 
+Welcome to Ranbounagisatoshi's
 shouhou senta.
 Here 2 players may place their
 tradeable goods in the trade zones.
 Then both players can turn their
 levers to complete the trade.
-
 endmsg
 x 8
 y 15

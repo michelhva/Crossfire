@@ -1,12 +1,12 @@
 arch map
+name Poshon Shijou
 reset_timeout 7200
 difficulty 1
 region azumauindo
 shopitems potion:20;ring:15;amulet:10;gem:0;*:-100
+shopgreed 1.20000
 shopmin 400
 shopmax 2000000
-shoprace human
-shopgreed 1.2
 width 32
 height 32
 enter_x 1
@@ -3266,7 +3266,7 @@ arch woodfloor
 x 14
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 14
 y 26
 end
@@ -3275,6 +3275,10 @@ x 14
 y 27
 end
 arch woodfloor
+x 14
+y 27
+end
+arch swall_1_2_half
 x 14
 y 27
 end
@@ -3518,10 +3522,6 @@ end
 arch shop_mat
 x 15
 y 26
-end
-arch dungeon_magic
-x 15
-y 27
 end
 arch invis_exit
 slaying /world/world_127_101
@@ -3826,10 +3826,6 @@ arch woodfloor
 x 16
 y 26
 end
-arch dungeon_magic
-x 16
-y 27
-end
 arch invis_exit
 slaying /world/world_127_101
 hp 21
@@ -4088,7 +4084,7 @@ arch woodfloor
 x 17
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 17
 y 26
 end
@@ -4097,6 +4093,10 @@ x 17
 y 27
 end
 arch woodfloor
+x 17
+y 27
+end
+arch swall_1_2_half
 x 17
 y 27
 end

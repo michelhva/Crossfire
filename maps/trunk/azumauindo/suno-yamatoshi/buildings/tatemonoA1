@@ -1,7 +1,8 @@
 arch map
+name Akuma Tatemono
 reset_timeout 7200
-region azumauindo
 difficulty 1
+region azumauindo
 width 64
 height 64
 enter_x 1
@@ -1941,10 +1942,6 @@ name_pl woodfloor
 x 7
 y 36
 end
-arch byakie
-x 7
-y 36
-end
 arch light2
 x 7
 y 37
@@ -2022,10 +2019,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 7
-y 44
-end
-arch jessyb
 x 7
 y 44
 end
@@ -2395,10 +2388,6 @@ name_pl woodfloor
 x 8
 y 23
 end
-arch demon_lord
-x 8
-y 23
-end
 arch light2
 x 8
 y 24
@@ -2698,10 +2687,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 8
-y 50
-end
-arch Greater_Demon
 x 8
 y 50
 end
@@ -3170,10 +3155,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 9
-y 37
-end
-arch jessyb
 x 9
 y 37
 end
@@ -4087,10 +4068,6 @@ arch platter1_sil
 x 11
 y 10
 end
-arch medium_demon
-x 11
-y 10
-end
 arch light2
 x 11
 y 11
@@ -4224,10 +4201,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 11
-y 22
-end
-arch byakie
 x 11
 y 22
 end
@@ -4837,10 +4810,6 @@ name_pl woodfloor
 x 12
 y 19
 end
-arch dread
-x 12
-y 19
-end
 arch light2
 x 12
 y 20
@@ -4888,10 +4857,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 12
-y 24
-end
-arch dread
 x 12
 y 24
 end
@@ -6149,10 +6114,6 @@ name_pl woodfloor
 x 14
 y 23
 end
-arch dread
-x 14
-y 23
-end
 arch light2
 x 14
 y 24
@@ -6633,10 +6594,6 @@ arch platter1_sil
 x 15
 y 10
 end
-arch medium_demon
-x 15
-y 10
-end
 arch light2
 x 15
 y 11
@@ -6959,10 +6916,6 @@ name_pl woodfloor
 x 15
 y 37
 end
-arch byakie
-x 15
-y 37
-end
 arch light2
 x 15
 y 38
@@ -7034,10 +6987,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 15
-y 44
-end
-arch jessyb
 x 15
 y 44
 end
@@ -7627,10 +7576,6 @@ name_pl woodfloor
 x 16
 y 41
 end
-arch byakie
-x 16
-y 41
-end
 arch light2
 x 16
 y 42
@@ -7715,10 +7660,6 @@ name_pl woodfloor
 x 16
 y 49
 end
-arch byakie
-x 16
-y 49
-end
 arch light2
 x 16
 y 50
@@ -7776,10 +7717,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 16
-y 55
-end
-arch byakie
 x 16
 y 55
 end
@@ -8037,10 +7974,6 @@ name_pl woodfloor
 x 17
 y 23
 end
-arch demon_lord
-x 17
-y 23
-end
 arch light2
 x 17
 y 24
@@ -8212,10 +8145,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 17
-y 38
-end
-arch dread
 x 17
 y 38
 end
@@ -11449,10 +11378,6 @@ name_pl woodfloor
 x 22
 y 23
 end
-arch Greater_Demon
-x 22
-y 23
-end
 arch light2
 x 22
 y 24
@@ -11585,10 +11510,6 @@ arch ruby
 x 22
 y 34
 end
-arch dread
-x 22
-y 34
-end
 arch light2
 x 22
 y 35
@@ -11618,10 +11539,6 @@ x 22
 y 36
 end
 arch ruby
-x 22
-y 36
-end
-arch medium_demon
 x 22
 y 36
 end
@@ -11658,10 +11575,6 @@ x 22
 y 38
 end
 arch ruby
-x 22
-y 38
-end
-arch dread
 x 22
 y 38
 end
@@ -11698,10 +11611,6 @@ x 22
 y 40
 end
 arch ruby
-x 22
-y 40
-end
-arch medium_demon
 x 22
 y 40
 end
@@ -11738,10 +11647,6 @@ x 22
 y 42
 end
 arch ruby
-x 22
-y 42
-end
-arch dread
 x 22
 y 42
 end
@@ -11778,10 +11683,6 @@ x 22
 y 44
 end
 arch ruby
-x 22
-y 44
-end
-arch medium_demon
 x 22
 y 44
 end
@@ -11922,10 +11823,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 22
-y 55
-end
-arch dread
 x 22
 y 55
 end
@@ -12016,10 +11913,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 23
-y 8
-end
-arch medium_demon
 x 23
 y 8
 end
@@ -12591,10 +12484,6 @@ name_pl woodfloor
 x 23
 y 49
 end
-arch big_demon
-x 23
-y 49
-end
 arch light2
 x 23
 y 50
@@ -13034,10 +12923,6 @@ x 24
 y 33
 end
 arch ruby
-x 24
-y 33
-end
-arch medium_demon
 x 24
 y 33
 end
@@ -13231,10 +13116,6 @@ arch ruby
 x 24
 y 44
 end
-arch dread
-x 24
-y 44
-end
 arch light2
 x 24
 y 45
@@ -13352,10 +13233,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 24
-y 54
-end
-arch byakie
 x 24
 y 54
 end
@@ -13480,10 +13357,6 @@ x 25
 y 11
 end
 arch woodfloor
-x 25
-y 11
-end
-arch medium_demon
 x 25
 y 11
 end
@@ -14503,10 +14376,6 @@ arch ruby
 x 26
 y 33
 end
-arch dread
-x 26
-y 33
-end
 arch light2
 x 26
 y 34
@@ -14697,10 +14566,6 @@ arch ruby
 x 26
 y 44
 end
-arch medium_demon
-x 26
-y 44
-end
 arch light2
 x 26
 y 45
@@ -14806,10 +14671,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 26
-y 53
-end
-arch big_demon
 x 26
 y 53
 end
@@ -15507,10 +15368,6 @@ name_pl woodfloor
 x 27
 y 49
 end
-arch dread
-x 27
-y 49
-end
 arch light2
 x 27
 y 50
@@ -15981,10 +15838,6 @@ arch ruby
 x 28
 y 33
 end
-arch medium_demon
-x 28
-y 33
-end
 arch light2
 x 28
 y 34
@@ -16176,10 +16029,6 @@ x 28
 y 44
 end
 arch ruby
-x 28
-y 44
-end
-arch dread
 x 28
 y 44
 end
@@ -16544,10 +16393,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 29
-y 23
-end
-arch byakie
 x 29
 y 23
 end
@@ -17407,10 +17252,6 @@ arch ruby
 x 30
 y 33
 end
-arch dread
-x 30
-y 33
-end
 arch light2
 x 30
 y 34
@@ -17582,10 +17423,6 @@ x 30
 y 44
 end
 arch ruby
-x 30
-y 44
-end
-arch medium_demon
 x 30
 y 44
 end
@@ -17708,10 +17545,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 30
-y 53
-end
-arch byakie
 x 30
 y 53
 end
@@ -18021,10 +17854,6 @@ name_pl woodfloor
 x 31
 y 24
 end
-arch jessyb
-x 31
-y 24
-end
 arch light2
 x 31
 y 25
@@ -18201,26 +18030,6 @@ arch ruby
 x 31
 y 37
 end
-arch jessyb
-name Oni
-msg
-@match *
-Akki!
-endmsg
-hp 24000
-maxhp 24000
-maxsp 300
-exp 5000000
-
-dam 55
-x 31
-y 37
-level 60
-carrying 50
-arch ruby
-nrof 200
-end
-end
 arch light2
 x 31
 y 38
@@ -18397,10 +18206,6 @@ name_pl woodfloor
 x 31
 y 50
 end
-arch byakie
-x 31
-y 50
-end
 arch light2
 x 31
 y 51
@@ -18541,10 +18346,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 32
-y 8
-end
-arch medium_demon
 x 32
 y 8
 end
@@ -18856,10 +18657,6 @@ arch ruby
 x 32
 y 33
 end
-arch medium_demon
-x 32
-y 33
-end
 arch light2
 x 32
 y 34
@@ -19015,10 +18812,6 @@ x 32
 y 44
 end
 arch ruby
-x 32
-y 44
-end
-arch dread
 x 32
 y 44
 end
@@ -19264,10 +19057,6 @@ x 33
 y 10
 end
 arch chest
-x 33
-y 10
-end
-arch medium_demon
 x 33
 y 10
 end
@@ -20253,10 +20042,6 @@ arch ruby
 x 34
 y 33
 end
-arch dread
-x 34
-y 33
-end
 arch light2
 x 34
 y 34
@@ -20419,10 +20204,6 @@ arch ruby
 x 34
 y 44
 end
-arch medium_demon
-x 34
-y 44
-end
 arch light2
 x 34
 y 45
@@ -20491,10 +20272,6 @@ name_pl woodfloor
 x 34
 y 49
 end
-arch big_demon
-x 34
-y 49
-end
 arch light2
 x 34
 y 50
@@ -20535,10 +20312,6 @@ name_pl woodfloor
 x 34
 y 53
 end
-arch dread
-x 34
-y 53
-end
 arch light2
 x 34
 y 54
@@ -20556,10 +20329,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 34
-y 55
-end
-arch byakie
 x 34
 y 55
 end
@@ -20761,10 +20530,6 @@ name_pl woodfloor
 x 35
 y 16
 end
-arch medium_demon
-x 35
-y 16
-end
 arch light2
 x 35
 y 17
@@ -20847,10 +20612,6 @@ name_pl woodfloor
 x 35
 y 23
 end
-arch dread
-x 35
-y 23
-end
 arch light2
 x 35
 y 24
@@ -20871,10 +20632,6 @@ name_pl woodfloor
 x 35
 y 25
 end
-arch dread
-x 35
-y 25
-end
 arch light2
 x 35
 y 26
@@ -20892,10 +20649,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 35
-y 27
-end
-arch dread
 x 35
 y 27
 end
@@ -21681,10 +21434,6 @@ arch ruby
 x 36
 y 33
 end
-arch medium_demon
-x 36
-y 33
-end
 arch light2
 x 36
 y 34
@@ -21852,10 +21601,6 @@ x 36
 y 44
 end
 arch ruby
-x 36
-y 44
-end
-arch dread
 x 36
 y 44
 end
@@ -22785,10 +22530,6 @@ name_pl woodfloor
 x 37
 y 49
 end
-arch dread
-x 37
-y 49
-end
 arch light2
 x 37
 y 50
@@ -22816,10 +22557,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 37
-y 52
-end
-arch big_demon
 x 37
 y 52
 end
@@ -23019,10 +22756,6 @@ arch woodfloor
 x 38
 y 24
 end
-arch dread
-x 38
-y 24
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -23101,10 +22834,6 @@ arch ruby
 x 38
 y 33
 end
-arch dread
-x 38
-y 33
-end
 arch light2
 x 38
 y 34
@@ -23320,10 +23049,6 @@ x 38
 y 44
 end
 arch ruby
-x 38
-y 44
-end
-arch medium_demon
 x 38
 y 44
 end
@@ -23557,10 +23282,6 @@ name_pl woodfloor
 x 39
 y 13
 end
-arch Balrog
-x 39
-y 13
-end
 arch woodfloor
 x 39
 y 14
@@ -23592,10 +23313,6 @@ x 39
 y 19
 end
 arch woodfloor
-x 39
-y 20
-end
-arch Balrog
 x 39
 y 20
 end
@@ -23632,10 +23349,6 @@ x 39
 y 27
 end
 arch woodfloor
-x 39
-y 28
-end
-arch Balrog
 x 39
 y 28
 end
@@ -24227,10 +23940,6 @@ arch ruby
 x 40
 y 33
 end
-arch medium_demon
-x 40
-y 33
-end
 arch light2
 x 40
 y 34
@@ -24446,10 +24155,6 @@ x 40
 y 44
 end
 arch ruby
-x 40
-y 44
-end
-arch dread
 x 40
 y 44
 end
@@ -24657,10 +24362,6 @@ name_pl woodfloor
 x 41
 y 9
 end
-arch dread
-x 41
-y 9
-end
 arch woodfloor
 x 41
 y 10
@@ -24668,10 +24369,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 41
-y 11
-end
-arch byakie
 x 41
 y 11
 end
@@ -25053,10 +24750,6 @@ name_pl woodfloor
 x 41
 y 49
 end
-arch big_demon
-x 41
-y 49
-end
 arch light2
 x 41
 y 50
@@ -25275,10 +24968,6 @@ name_pl woodfloor
 x 42
 y 24
 end
-arch byakie
-x 42
-y 24
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -25288,10 +24977,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 42
-y 26
-end
-arch dread
 x 42
 y 26
 end
@@ -25357,10 +25042,6 @@ arch ruby
 x 42
 y 33
 end
-arch dread
-x 42
-y 33
-end
 arch light2
 x 42
 y 34
@@ -25386,10 +25067,6 @@ x 42
 y 35
 end
 arch ruby
-x 42
-y 35
-end
-arch medium_demon
 x 42
 y 35
 end
@@ -25426,10 +25103,6 @@ x 42
 y 37
 end
 arch ruby
-x 42
-y 37
-end
-arch dread
 x 42
 y 37
 end
@@ -25466,10 +25139,6 @@ x 42
 y 39
 end
 arch ruby
-x 42
-y 39
-end
-arch medium_demon
 x 42
 y 39
 end
@@ -25506,10 +25175,6 @@ x 42
 y 41
 end
 arch ruby
-x 42
-y 41
-end
-arch dread
 x 42
 y 41
 end
@@ -25546,10 +25211,6 @@ x 42
 y 43
 end
 arch ruby
-x 42
-y 43
-end
-arch medium_demon
 x 42
 y 43
 end
@@ -25777,10 +25438,6 @@ name_pl woodfloor
 x 43
 y 7
 end
-arch medium_demon
-x 43
-y 7
-end
 arch woodfloor
 x 43
 y 8
@@ -25832,10 +25489,6 @@ x 43
 y 17
 end
 arch woodfloor
-x 43
-y 18
-end
-arch dread
 x 43
 y 18
 end
@@ -26387,10 +26040,6 @@ name_pl woodfloor
 x 44
 y 22
 end
-arch medium_demon
-x 44
-y 22
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -26436,10 +26085,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 44
-y 30
-end
-arch dread
 x 44
 y 30
 end
@@ -26745,10 +26390,6 @@ name_pl woodfloor
 x 44
 y 49
 end
-arch byakie
-x 44
-y 49
-end
 arch light2
 x 44
 y 50
@@ -26890,10 +26531,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 45
-y 9
-end
-arch Greater_Demon
 x 45
 y 9
 end
@@ -27251,10 +26888,6 @@ name_pl woodfloor
 x 45
 y 52
 end
-arch big_demon
-x 45
-y 52
-end
 arch light2
 x 45
 y 53
@@ -27397,10 +27030,6 @@ name_pl woodfloor
 x 46
 y 17
 end
-arch Balrog
-x 46
-y 17
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -27440,10 +27069,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 46
-y 24
-end
-arch Greater_Demon
 x 46
 y 24
 end
@@ -28047,10 +27672,6 @@ name_pl woodfloor
 x 47
 y 33
 end
-arch medium_demon
-x 47
-y 33
-end
 arch light2
 x 47
 y 34
@@ -28130,10 +27751,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 47
-y 40
-end
-arch medium_demon
 x 47
 y 40
 end
@@ -28450,10 +28067,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 48
-y 21
-end
-arch dread
 x 48
 y 21
 end
@@ -29145,10 +28758,6 @@ name_pl woodfloor
 x 49
 y 43
 end
-arch dread
-x 49
-y 43
-end
 arch light2
 x 49
 y 44
@@ -29199,10 +28808,6 @@ name_pl woodfloor
 x 49
 y 48
 end
-arch big_demon
-x 49
-y 48
-end
 arch light2
 x 49
 y 49
@@ -29250,10 +28855,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 49
-y 53
-end
-arch dread
 x 49
 y 53
 end
@@ -29531,10 +29132,6 @@ name_pl woodfloor
 x 50
 y 34
 end
-arch jessyb
-x 50
-y 34
-end
 arch light2
 x 50
 y 35
@@ -29668,10 +29265,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 50
-y 46
-end
-arch byakie
 x 50
 y 46
 end
@@ -29843,10 +29436,6 @@ arch woodfloor
 x 51
 y 8
 end
-arch byakie
-x 51
-y 8
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -29883,10 +29472,6 @@ arch woodfloor
 x 51
 y 16
 end
-arch Greater_Demon
-x 51
-y 16
-end
 arch woodfloor
 x 51
 y 17
@@ -29912,10 +29497,6 @@ x 51
 y 22
 end
 arch woodfloor
-x 51
-y 23
-end
-arch byakie
 x 51
 y 23
 end
@@ -30050,10 +29631,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 51
-y 39
-end
-arch byakie
 x 51
 y 39
 end
@@ -30695,10 +30272,6 @@ name_pl woodfloor
 x 52
 y 52
 end
-arch big_demon
-x 52
-y 52
-end
 arch light2
 x 52
 y 53
@@ -30795,10 +30368,6 @@ name_pl woodfloor
 x 53
 y 7
 end
-arch Balrog
-x 53
-y 7
-end
 arch woodfloor
 x 53
 y 8
@@ -30818,10 +30387,6 @@ x 53
 y 11
 end
 arch woodfloor
-x 53
-y 12
-end
-arch dread
 x 53
 y 12
 end
@@ -30886,10 +30451,6 @@ x 53
 y 27
 end
 arch woodfloor
-x 53
-y 28
-end
-arch Balrog
 x 53
 y 28
 end
@@ -31139,10 +30700,6 @@ name_pl woodfloor
 x 53
 y 50
 end
-arch dread
-x 53
-y 50
-end
 arch light2
 x 53
 y 51
@@ -31295,10 +30852,6 @@ name_pl woodfloor
 x 54
 y 14
 end
-arch byakie
-x 54
-y 14
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -31356,10 +30909,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 54
-y 24
-end
-arch dread
 x 54
 y 24
 end
@@ -31550,10 +31099,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 54
-y 43
-end
-arch dread
 x 54
 y 43
 end
@@ -31982,10 +31527,6 @@ end
 arch afloor_right
 name floor
 name_pl floor
-x 55
-y 40
-end
-arch medium_demon
 x 55
 y 40
 end
@@ -32109,10 +31650,6 @@ name_pl woodfloor
 x 55
 y 50
 end
-arch byakie
-x 55
-y 50
-end
 arch light2
 x 55
 y 51
@@ -32168,10 +31705,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 55
-y 55
-end
-arch dread
 x 55
 y 55
 end
@@ -34102,4 +33635,471 @@ end
 arch blocked
 x 60
 y 60
+end
+arch byakie
+x 7
+y 36
+end
+arch jessyb
+x 7
+y 44
+end
+arch demon_lord
+x 8
+y 23
+end
+arch Greater_Demon
+x 8
+y 50
+end
+arch jessyb
+x 9
+y 37
+end
+arch medium_demon
+x 11
+y 10
+end
+arch byakie
+x 11
+y 22
+end
+arch dread
+x 12
+y 19
+end
+arch dread
+x 12
+y 24
+end
+arch dread
+x 14
+y 23
+end
+arch medium_demon
+x 15
+y 10
+end
+arch byakie
+x 15
+y 37
+end
+arch jessyb
+x 15
+y 44
+end
+arch byakie
+x 16
+y 41
+end
+arch byakie
+x 16
+y 49
+end
+arch byakie
+x 16
+y 55
+end
+arch demon_lord
+x 17
+y 23
+end
+arch dread
+x 17
+y 38
+end
+arch Greater_Demon
+x 22
+y 23
+end
+arch dread
+x 22
+y 34
+end
+arch medium_demon
+x 22
+y 36
+end
+arch dread
+x 22
+y 38
+end
+arch medium_demon
+x 22
+y 40
+end
+arch dread
+x 22
+y 42
+end
+arch medium_demon
+x 22
+y 44
+end
+arch dread
+x 22
+y 55
+end
+arch medium_demon
+x 23
+y 8
+end
+arch big_demon
+x 23
+y 49
+end
+arch medium_demon
+x 24
+y 33
+end
+arch dread
+x 24
+y 44
+end
+arch byakie
+x 24
+y 54
+end
+arch medium_demon
+x 25
+y 11
+end
+arch dread
+x 26
+y 33
+end
+arch medium_demon
+x 26
+y 44
+end
+arch big_demon
+x 26
+y 53
+end
+arch dread
+x 27
+y 49
+end
+arch medium_demon
+x 28
+y 33
+end
+arch dread
+x 28
+y 44
+end
+arch byakie
+x 29
+y 23
+end
+arch dread
+x 30
+y 33
+end
+arch medium_demon
+x 30
+y 44
+end
+arch byakie
+x 30
+y 53
+end
+arch jessyb
+x 31
+y 24
+end
+arch jessyb
+name Oni
+msg
+@match *
+Akki!
+endmsg
+hp 24000
+maxhp 24000
+maxsp 300
+exp 5000000
+dam 55
+x 31
+y 37
+level 60
+carrying 50
+arch ruby
+nrof 200
+end
+end
+arch byakie
+x 31
+y 50
+end
+arch medium_demon
+x 32
+y 8
+end
+arch medium_demon
+x 32
+y 33
+end
+arch dread
+x 32
+y 44
+end
+arch medium_demon
+x 33
+y 10
+end
+arch dread
+x 34
+y 33
+end
+arch medium_demon
+x 34
+y 44
+end
+arch big_demon
+x 34
+y 49
+end
+arch dread
+x 34
+y 53
+end
+arch byakie
+x 34
+y 55
+end
+arch medium_demon
+x 35
+y 16
+end
+arch dread
+x 35
+y 23
+end
+arch dread
+x 35
+y 25
+end
+arch dread
+x 35
+y 27
+end
+arch medium_demon
+x 36
+y 33
+end
+arch dread
+x 36
+y 44
+end
+arch dread
+x 37
+y 49
+end
+arch big_demon
+x 37
+y 52
+end
+arch dread
+x 38
+y 24
+end
+arch dread
+x 38
+y 33
+end
+arch medium_demon
+x 38
+y 44
+end
+arch Balrog
+x 39
+y 13
+end
+arch Balrog
+x 39
+y 20
+end
+arch Balrog
+x 39
+y 28
+end
+arch medium_demon
+x 40
+y 33
+end
+arch dread
+x 40
+y 44
+end
+arch dread
+x 41
+y 9
+end
+arch byakie
+x 41
+y 11
+end
+arch big_demon
+x 41
+y 49
+end
+arch byakie
+x 42
+y 24
+end
+arch dread
+x 42
+y 26
+end
+arch dread
+x 42
+y 33
+end
+arch medium_demon
+x 42
+y 35
+end
+arch dread
+x 42
+y 37
+end
+arch medium_demon
+x 42
+y 39
+end
+arch dread
+x 42
+y 41
+end
+arch medium_demon
+x 42
+y 43
+end
+arch medium_demon
+x 43
+y 7
+end
+arch dread
+x 43
+y 18
+end
+arch medium_demon
+x 44
+y 22
+end
+arch dread
+x 44
+y 30
+end
+arch byakie
+x 44
+y 49
+end
+arch Greater_Demon
+x 45
+y 9
+end
+arch big_demon
+x 45
+y 52
+end
+arch Balrog
+x 46
+y 17
+end
+arch Greater_Demon
+x 46
+y 24
+end
+arch medium_demon
+x 47
+y 33
+end
+arch medium_demon
+x 47
+y 40
+end
+arch dread
+x 48
+y 21
+end
+arch dread
+x 49
+y 43
+end
+arch big_demon
+x 49
+y 48
+end
+arch dread
+x 49
+y 53
+end
+arch jessyb
+x 50
+y 34
+end
+arch byakie
+x 50
+y 46
+end
+arch byakie
+x 51
+y 8
+end
+arch Greater_Demon
+x 51
+y 16
+end
+arch byakie
+x 51
+y 23
+end
+arch byakie
+x 51
+y 39
+end
+arch big_demon
+x 52
+y 52
+end
+arch Balrog
+x 53
+y 7
+end
+arch dread
+x 53
+y 12
+end
+arch Balrog
+x 53
+y 28
+end
+arch dread
+x 53
+y 50
+end
+arch byakie
+x 54
+y 14
+end
+arch dread
+x 54
+y 24
+end
+arch dread
+x 54
+y 43
+end
+arch medium_demon
+x 55
+y 40
+end
+arch byakie
+x 55
+y 50
+end
+arch dread
+x 55
+y 55
 end

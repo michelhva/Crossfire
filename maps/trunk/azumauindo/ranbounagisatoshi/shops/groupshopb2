@@ -1,12 +1,12 @@
 arch map
+name Gurupu Mise
 reset_timeout 2000
 difficulty 1
 region azumauindo
 shopitems key:1;special key:2;food:5;*:-100
+shopgreed 1.20000
 shopmin 1
 shopmax 2000000
-shoprace human
-shopgreed 1.2
 darkness 3
 width 32
 height 32
@@ -9146,6 +9146,10 @@ arch mine4
 x 26
 y 6
 end
+arch swall_1_1_half
+x 26
+y 6
+end
 arch dungeon_magic
 x 26
 y 7
@@ -9154,7 +9158,7 @@ arch woodfloor
 x 26
 y 7
 end
-arch swall_1_1
+arch swall_2_1_1
 x 26
 y 7
 end
@@ -9358,7 +9362,7 @@ arch woodfloor
 x 26
 y 24
 end
-arch swall_1_2
+arch swall_2_1_1
 x 26
 y 24
 end

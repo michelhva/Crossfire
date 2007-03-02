@@ -1,12 +1,13 @@
 arch map
+name Minatomachi Tatemono Shijou
 reset_timeout 7200
 difficulty 1
 region azumauindo
 shopitems building material:95;item builder:95;*:-100
+shopgreed 1.20000
 shopmin 100
 shopmax 100000
 shoprace human
-shopgreed 1.2
 width 32
 height 32
 enter_x 1
@@ -143,9 +144,6 @@ end
 arch ewall_1_2
 y 20
 end
-arch dungeon_magic
-y 21
-end
 arch invis_exit
 slaying /world/world_129_101
 hp 3
@@ -157,9 +155,6 @@ y 21
 end
 arch woodfloor
 y 21
-end
-arch dungeon_magic
-y 22
 end
 arch invis_exit
 slaying /world/world_129_101
@@ -1241,6 +1236,10 @@ arch woodfloor
 x 4
 y 20
 end
+arch swall_1_4_half
+x 4
+y 20
+end
 arch ewall_1_2
 x 4
 y 20
@@ -1266,6 +1265,10 @@ x 4
 y 23
 end
 arch woodfloor
+x 4
+y 23
+end
+arch swall_1_4_half
 x 4
 y 23
 end
@@ -1576,7 +1579,7 @@ arch woodfloor
 x 5
 y 20
 end
-arch swall_1_4
+arch swall_2_1_2
 x 5
 y 20
 end
@@ -1604,7 +1607,7 @@ arch woodfloor
 x 5
 y 23
 end
-arch swall_1_4
+arch swall_2_1_2
 x 5
 y 23
 end
@@ -4409,7 +4412,7 @@ arch woodfloor
 x 14
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 14
 y 26
 end
@@ -4418,6 +4421,10 @@ x 14
 y 27
 end
 arch woodfloor
+x 14
+y 27
+end
+arch swall_1_2_half
 x 14
 y 27
 end
@@ -4724,10 +4731,6 @@ arch woodfloor
 x 15
 y 26
 end
-arch dungeon_magic
-x 15
-y 27
-end
 arch invis_exit
 slaying /world/world_129_101
 hp 5
@@ -5042,10 +5045,6 @@ arch woodfloor
 x 16
 y 26
 end
-arch dungeon_magic
-x 16
-y 27
-end
 arch invis_exit
 slaying /world/world_129_101
 hp 5
@@ -5328,7 +5327,7 @@ arch woodfloor
 x 17
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 17
 y 26
 end
@@ -5337,6 +5336,10 @@ x 17
 y 27
 end
 arch woodfloor
+x 17
+y 27
+end
+arch swall_1_2_half
 x 17
 y 27
 end

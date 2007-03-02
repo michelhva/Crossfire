@@ -1,7 +1,8 @@
 arch map
+name Suno-yamatoshi Dojo
 reset_timeout 100
-region azumauindo
 difficulty 1
+region azumauindo
 width 64
 height 64
 enter_x 1
@@ -23662,6 +23663,10 @@ arch woodwall_0
 x 27
 y 39
 end
+arch swall_1_1_half
+x 27
+y 39
+end
 arch dungeon_magic
 x 27
 y 40
@@ -23687,7 +23692,7 @@ sp 2
 x 27
 y 40
 end
-arch swall_1_1
+arch swall_2_1_1
 x 27
 y 40
 end
@@ -23716,7 +23721,7 @@ sp 2
 x 27
 y 41
 end
-arch swall_1_2
+arch swall_2_1_1
 x 27
 y 41
 end
@@ -23746,6 +23751,10 @@ x 27
 y 42
 end
 arch ewall_1_1
+x 27
+y 42
+end
+arch swall_1_2_half
 x 27
 y 42
 end
@@ -23807,6 +23816,10 @@ sp 2
 x 27
 y 44
 end
+arch swall_1_4_half
+x 27
+y 44
+end
 arch ewall_2_1_1
 x 27
 y 44
@@ -23862,6 +23875,10 @@ arch battleground
 face woodfloor2.111
 hp 2
 sp 2
+x 27
+y 46
+end
+arch swall_1_4_half
 x 27
 y 46
 end
@@ -23931,6 +23948,10 @@ arch wall_0
 x 27
 y 48
 end
+arch swall_1_1_half
+x 27
+y 48
+end
 arch dungeon_magic
 x 27
 y 49
@@ -23956,7 +23977,7 @@ sp 2
 x 27
 y 49
 end
-arch swall_1_1
+arch swall_2_1_1
 x 27
 y 49
 end
@@ -23985,7 +24006,7 @@ sp 2
 x 27
 y 50
 end
-arch swall_1_2
+arch swall_2_1_1
 x 27
 y 50
 end
@@ -24011,6 +24032,10 @@ arch battleground
 face woodfloor2.111
 hp 2
 sp 2
+x 27
+y 51
+end
+arch swall_1_2_half
 x 27
 y 51
 end
@@ -24916,7 +24941,7 @@ sp 2
 x 28
 y 44
 end
-arch swall_1_4
+arch swall_2_1_2
 x 28
 y 44
 end
@@ -24970,7 +24995,7 @@ sp 2
 x 28
 y 46
 end
-arch swall_1_4
+arch swall_2_1_2
 x 28
 y 46
 end
@@ -32224,7 +32249,7 @@ sp 2
 x 35
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 35
 y 54
 end
@@ -32250,6 +32275,10 @@ arch battleground
 face woodfloor2.111
 hp 2
 sp 2
+x 35
+y 55
+end
+arch swall_1_2_half
 x 35
 y 55
 end
@@ -36137,10 +36166,10 @@ msg
 Welcome to the Suno-yamatoshi Dojo.
 *You may fight as if in an arena.
 *Spells are prohibited.
-*Dojo weapons and equipment stay 
+*Dojo weapons and equipment stay
 in the dojo.
 *Personal weapons and equipment
-stay out; 
+stay out;
 *To exit the dojo place the dojo
 weapons and equipment on the
 respawn mats.
@@ -37008,7 +37037,7 @@ sp 2
 x 40
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 40
 y 54
 end
@@ -37034,6 +37063,10 @@ arch battleground
 face woodfloor2.111
 hp 13
 sp 2
+x 40
+y 55
+end
+arch swall_1_2_half
 x 40
 y 55
 end
@@ -44109,7 +44142,7 @@ sp 2
 x 47
 y 44
 end
-arch swall_1_3
+arch swall_2_1_2
 x 47
 y 44
 end
@@ -44163,7 +44196,7 @@ sp 2
 x 47
 y 46
 end
-arch swall_1_3
+arch swall_2_1_2
 x 47
 y 46
 end
@@ -45057,6 +45090,10 @@ arch woodwall_0
 x 48
 y 39
 end
+arch swall_1_1_half
+x 48
+y 39
+end
 arch dungeon_magic
 x 48
 y 40
@@ -45082,7 +45119,7 @@ sp 2
 x 48
 y 40
 end
-arch swall_1_1
+arch swall_2_1_1
 x 48
 y 40
 end
@@ -45111,7 +45148,7 @@ sp 2
 x 48
 y 41
 end
-arch swall_1_2
+arch swall_2_1_1
 x 48
 y 41
 end
@@ -45141,6 +45178,10 @@ x 48
 y 42
 end
 arch ewall_1_1
+x 48
+y 42
+end
+arch swall_1_2_half
 x 48
 y 42
 end
@@ -45206,6 +45247,10 @@ arch ewall_2_1_1
 x 48
 y 44
 end
+arch swall_1_3_half
+x 48
+y 44
+end
 arch dungeon_magic
 x 48
 y 45
@@ -45261,6 +45306,10 @@ x 48
 y 46
 end
 arch ewall_2_1_1
+x 48
+y 46
+end
+arch swall_1_3_half
 x 48
 y 46
 end
@@ -45326,6 +45375,10 @@ arch wall_0
 x 48
 y 48
 end
+arch swall_1_1_half
+x 48
+y 48
+end
 arch dungeon_magic
 x 48
 y 49
@@ -45351,7 +45404,7 @@ sp 2
 x 48
 y 49
 end
-arch swall_1_1
+arch swall_2_1_1
 x 48
 y 49
 end
@@ -45380,7 +45433,7 @@ sp 2
 x 48
 y 50
 end
-arch swall_1_2
+arch swall_2_1_1
 x 48
 y 50
 end
@@ -45406,6 +45459,10 @@ arch battleground
 face woodfloor2.111
 hp 13
 sp 2
+x 48
+y 51
+end
+arch swall_1_2_half
 x 48
 y 51
 end
@@ -56902,7 +56959,7 @@ sp 2
 x 61
 y 54
 end
-arch swall_1_3
+arch swall_2_1_2
 x 61
 y 54
 end
@@ -57856,6 +57913,10 @@ arch battleground
 face dung_floor.111
 hp 2
 sp 2
+x 62
+y 54
+end
+arch swall_1_3_half
 x 62
 y 54
 end

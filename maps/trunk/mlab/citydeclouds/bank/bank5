@@ -1,11 +1,12 @@
 arch map
-name bank5
+name City de Clouds Bank
+difficulty 1
+width 20
+height 30
 msg
 Creator: CF Java Map Editor
 Date:    5/28/2005
 endmsg
-width 20
-height 30
 end
 arch dungeon_magic
 end
@@ -816,9 +817,9 @@ x 2
 y 16
 end
 arch goldcoin
-nrof 100000
 x 2
 y 16
+nrof 100000
 end
 arch dungeon_magic
 x 2
@@ -831,9 +832,9 @@ x 2
 y 17
 end
 arch goldcoin
-nrof 100000
 x 2
 y 17
+nrof 100000
 end
 arch dungeon_magic
 x 2
@@ -846,9 +847,9 @@ x 2
 y 18
 end
 arch goldcoin
-nrof 100000
 x 2
 y 18
+nrof 100000
 end
 arch dungeon_magic
 x 2
@@ -1188,9 +1189,9 @@ x 3
 y 16
 end
 arch goldcoin
-nrof 100000
 x 3
 y 16
+nrof 100000
 end
 arch dungeon_magic
 x 3
@@ -1203,9 +1204,9 @@ x 3
 y 17
 end
 arch goldcoin
-nrof 100000
 x 3
 y 17
+nrof 100000
 end
 arch dungeon_magic
 x 3
@@ -1218,9 +1219,9 @@ x 3
 y 18
 end
 arch goldcoin
-nrof 100000
 x 3
 y 18
+nrof 100000
 end
 arch dungeon_magic
 x 3
@@ -1795,9 +1796,9 @@ x 5
 y 11
 end
 arch silvercoin
-nrof 300000
 x 5
 y 11
+nrof 300000
 end
 arch dungeon_magic
 x 5
@@ -1810,9 +1811,9 @@ x 5
 y 12
 end
 arch silvercoin
-nrof 300000
 x 5
 y 12
+nrof 300000
 end
 arch dungeon_magic
 x 5
@@ -1825,9 +1826,9 @@ x 5
 y 13
 end
 arch silvercoin
-nrof 300000
 x 5
 y 13
+nrof 300000
 end
 arch dungeon_magic
 x 5
@@ -1868,9 +1869,9 @@ x 5
 y 16
 end
 arch goldcoin
-nrof 100000
 x 5
 y 16
+nrof 100000
 end
 arch dungeon_magic
 x 5
@@ -1883,9 +1884,9 @@ x 5
 y 17
 end
 arch goldcoin
-nrof 100000
 x 5
 y 17
+nrof 100000
 end
 arch dungeon_magic
 x 5
@@ -1898,9 +1899,9 @@ x 5
 y 18
 end
 arch goldcoin
-nrof 100000
 x 5
 y 18
+nrof 100000
 end
 arch dungeon_magic
 x 5
@@ -2429,9 +2430,9 @@ x 7
 y 2
 end
 arch platinacoin
-nrof 100000
 x 7
 y 2
+nrof 100000
 end
 arch dungeon_magic
 x 7
@@ -2444,9 +2445,9 @@ x 7
 y 3
 end
 arch platinacoin
-nrof 100000
 x 7
 y 3
+nrof 100000
 end
 arch dungeon_magic
 x 7
@@ -2743,9 +2744,9 @@ x 8
 y 2
 end
 arch platinacoin
-nrof 100000
 x 8
 y 2
+nrof 100000
 end
 arch dungeon_magic
 x 8
@@ -2758,9 +2759,9 @@ x 8
 y 3
 end
 arch platinacoin
-nrof 100000
 x 8
 y 3
+nrof 100000
 end
 arch dungeon_magic
 x 8
@@ -3047,9 +3048,9 @@ x 9
 y 2
 end
 arch platinacoin
-nrof 100000
 x 9
 y 2
+nrof 100000
 end
 arch dungeon_magic
 x 9
@@ -3062,9 +3063,9 @@ x 9
 y 3
 end
 arch platinacoin
-nrof 100000
 x 9
 y 3
+nrof 100000
 end
 arch dungeon_magic
 x 9
@@ -3116,6 +3117,7 @@ y 7
 end
 arch book_clasp
 name Bullion Exchange Rate Compendium
+name_pl Bullion Exchange Rate Compendiums
 msg
 *************************
 ----Printed For The------
@@ -3152,10 +3154,9 @@ Plat.Bar..:99.95___24k***
 Silver.Bar:99.99___24k***
 *************************
 endmsg
-name_pl Bullion Exchange Rate Compendiums
-value 80
 x 9
 y 7
+value 80
 end
 arch dungeon_magic
 x 9
@@ -3271,10 +3272,10 @@ y 20
 end
 arch silver_converter
 name convert platinum coins into platinum bar bullion
-slaying platinacoin
-food 1000
-other_arch platbar
 name_pl convert imperial notes into silver
+slaying platinacoin
+other_arch platbar
+food 1000
 x 9
 y 20
 end
@@ -3482,9 +3483,9 @@ end
 arch grate_closed_2
 name depository door
 name_pl depository door
-speed 0.500000
 x 10
 y 8
+speed 0.500000
 end
 arch dungeon_magic
 x 10
@@ -3888,9 +3889,9 @@ x 11
 y 11
 end
 arch imperial
-nrof 1000000
 x 11
 y 11
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -3907,9 +3908,9 @@ x 11
 y 12
 end
 arch imperial
-nrof 1000000
 x 11
 y 12
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -3926,9 +3927,9 @@ x 11
 y 13
 end
 arch imperial
-nrof 1000000
 x 11
 y 13
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -3973,9 +3974,9 @@ x 11
 y 16
 end
 arch imperial
-nrof 1000000
 x 11
 y 16
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -3992,9 +3993,9 @@ x 11
 y 17
 end
 arch imperial
-nrof 1000000
 x 11
 y 17
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -4011,9 +4012,9 @@ x 11
 y 18
 end
 arch imperial
-nrof 1000000
 x 11
 y 18
+nrof 1000000
 end
 arch dungeon_magic
 x 11
@@ -4161,20 +4162,20 @@ x 12
 y 2
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 2
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 12
 y 2
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 12
@@ -4187,20 +4188,20 @@ x 12
 y 3
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 3
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 12
 y 3
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 12
@@ -4213,20 +4214,20 @@ x 12
 y 4
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 4
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 12
+y 4
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 12
-y 4
 end
 arch dungeon_magic
 x 12
@@ -4239,20 +4240,20 @@ x 12
 y 5
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 5
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 12
+y 5
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 12
-y 5
 end
 arch dungeon_magic
 x 12
@@ -4265,20 +4266,20 @@ x 12
 y 6
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 6
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 12
+y 6
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 12
-y 6
 end
 arch dungeon_magic
 x 12
@@ -4546,20 +4547,20 @@ x 13
 y 2
 end
 arch emerald
-nrof 500
-no_pick 1
 x 13
 y 2
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 13
 y 2
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 13
@@ -4572,20 +4573,20 @@ x 13
 y 3
 end
 arch emerald
-nrof 500
-no_pick 1
 x 13
 y 3
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 13
 y 3
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 13
@@ -4598,20 +4599,20 @@ x 13
 y 4
 end
 arch emerald
-nrof 500
-no_pick 1
 x 13
 y 4
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 13
+y 4
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 13
-y 4
 end
 arch dungeon_magic
 x 13
@@ -4624,20 +4625,20 @@ x 13
 y 5
 end
 arch emerald
-nrof 500
-no_pick 1
 x 13
 y 5
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 13
+y 5
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 13
-y 5
 end
 arch dungeon_magic
 x 13
@@ -4650,20 +4651,20 @@ x 13
 y 6
 end
 arch emerald
-nrof 500
-no_pick 1
 x 13
 y 6
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 13
+y 6
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 13
-y 6
 end
 arch dungeon_magic
 x 13
@@ -4719,20 +4720,20 @@ y 10
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
-nrof 1000
-material 1
-value 1
-weight 2
+face card.111
 x 13
 y 10
+nrof 1000
+material 1
+value 1
+weight 2
 end
 arch dungeon_magic
 x 13
@@ -4745,9 +4746,9 @@ x 13
 y 11
 end
 arch gem
-nrof 200
 x 13
 y 11
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4760,9 +4761,9 @@ x 13
 y 12
 end
 arch gem
-nrof 200
 x 13
 y 12
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4775,9 +4776,9 @@ x 13
 y 13
 end
 arch gem
-nrof 200
 x 13
 y 13
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4795,20 +4796,20 @@ y 14
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
+face card.111
+x 13
+y 14
 nrof 1000
 material 1
 value 1
 weight 2
-x 13
-y 14
 end
 arch dungeon_magic
 x 13
@@ -4826,20 +4827,20 @@ y 15
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
+face card.111
+x 13
+y 15
 nrof 1000
 material 1
 value 1
 weight 2
-x 13
-y 15
 end
 arch dungeon_magic
 x 13
@@ -4852,9 +4853,9 @@ x 13
 y 16
 end
 arch gem
-nrof 200
 x 13
 y 16
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4867,9 +4868,9 @@ x 13
 y 17
 end
 arch gem
-nrof 200
 x 13
 y 17
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4882,9 +4883,9 @@ x 13
 y 18
 end
 arch gem
-nrof 200
 x 13
 y 18
+nrof 200
 end
 arch dungeon_magic
 x 13
@@ -4902,20 +4903,20 @@ y 19
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
+face card.111
+x 13
+y 19
 nrof 1000
 material 1
 value 1
 weight 2
-x 13
-y 19
 end
 arch dungeon_magic
 x 13
@@ -4933,20 +4934,20 @@ y 20
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
+face card.111
+x 13
+y 20
 nrof 1000
 material 1
 value 1
 weight 2
-x 13
-y 20
 end
 arch dungeon_magic
 x 13
@@ -5074,20 +5075,20 @@ x 14
 y 2
 end
 arch emerald
-nrof 500
-no_pick 1
 x 14
 y 2
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 14
 y 2
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 14
@@ -5100,20 +5101,20 @@ x 14
 y 3
 end
 arch emerald
-nrof 500
-no_pick 1
 x 14
 y 3
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
-nrof 30
-value 1600
-weight 55
-is_animated 0
+face pretty_emerald.111
 x 14
 y 3
+nrof 30
+value 1600
+weight 55
+is_animated 0
 end
 arch dungeon_magic
 x 14
@@ -5126,20 +5127,20 @@ x 14
 y 4
 end
 arch emerald
-nrof 500
-no_pick 1
 x 14
 y 4
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 14
+y 4
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 14
-y 4
 end
 arch dungeon_magic
 x 14
@@ -5152,20 +5153,20 @@ x 14
 y 5
 end
 arch emerald
-nrof 500
-no_pick 1
 x 14
 y 5
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 14
+y 5
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 14
-y 5
 end
 arch dungeon_magic
 x 14
@@ -5178,20 +5179,20 @@ x 14
 y 6
 end
 arch emerald
-nrof 500
-no_pick 1
 x 14
 y 6
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 14
+y 6
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 14
-y 6
 end
 arch dungeon_magic
 x 14
@@ -5260,9 +5261,9 @@ x 14
 y 11
 end
 arch gem
-nrof 200
 x 14
 y 11
+nrof 200
 end
 arch dungeon_magic
 x 14
@@ -5275,9 +5276,9 @@ x 14
 y 12
 end
 arch gem
-nrof 200
 x 14
 y 12
+nrof 200
 end
 arch dungeon_magic
 x 14
@@ -5290,9 +5291,9 @@ x 14
 y 13
 end
 arch gem
-nrof 200
 x 14
 y 13
+nrof 200
 end
 arch dungeon_magic
 x 14
@@ -5333,9 +5334,9 @@ x 14
 y 16
 end
 arch gem
-nrof 200
 x 14
 y 16
+nrof 200
 end
 arch dungeon_magic
 x 14
@@ -5348,9 +5349,9 @@ x 14
 y 17
 end
 arch gem
-nrof 200
 x 14
 y 17
+nrof 200
 end
 arch dungeon_magic
 x 14
@@ -5363,9 +5364,9 @@ x 14
 y 18
 end
 arch gem
-nrof 200
 x 14
 y 18
+nrof 200
 end
 arch dungeon_magic
 x 14
