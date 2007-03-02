@@ -1,5 +1,5 @@
 arch map
-name demon_quest
+name Demon Quest
 reset_timeout 7200
 difficulty 8
 width 35
@@ -1573,17 +1573,6 @@ arch medium_stones
 x 7
 y 1
 end
-arch big_demon
-x 7
-y 1
-speed_left -0.400000
-carrying 100
-arch key2
-slaying gateway
-end
-arch ability_fire
-end
-end
 arch medium_stones
 x 7
 y 2
@@ -1839,12 +1828,12 @@ arch bolt
 title of Blessedness
 slaying undead,demon
 msg
-  These missiles are invested 
-  with a great holiness so that
-  even a scratch might banish 
-  an undead creature or a demon
-  back to the hell from which it
-  came.
+These missiles are invested
+with a great holiness so that
+even a scratch might banish
+an undead creature or a demon
+back to the hell from which it
+came.
 endmsg
 food 80
 dam 20
@@ -3545,11 +3534,6 @@ x 16
 y 16
 end
 arch pstone_5
-x 16
-y 16
-end
-arch big_demon
-name The Summoner
 x 16
 y 16
 end
@@ -5750,17 +5734,6 @@ arch medium_stones
 x 26
 y 25
 end
-arch big_demon
-x 26
-y 25
-speed_left -0.400000
-carrying 100
-arch key2
-slaying inner_circle
-end
-arch ability_fire
-end
-end
 arch medium_stones
 x 26
 y 26
@@ -7532,4 +7505,31 @@ end
 arch bwall_2_2_4
 x 34
 y 34
+end
+arch big_demon
+x 7
+y 1
+speed_left -0.400000
+carrying 100
+arch key2
+slaying gateway
+end
+arch ability_fire
+end
+end
+arch big_demon
+name The Summoner
+x 16
+y 16
+end
+arch big_demon
+x 26
+y 25
+speed_left -0.400000
+carrying 100
+arch key2
+slaying inner_circle
+end
+arch ability_fire
+end
 end
