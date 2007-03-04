@@ -1,0 +1,5731 @@
+arch map
+name wyvern_quest
+width 21
+height 37
+enter_x 1
+enter_y 2
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Wed Jun  7 18:28:01 2000
+endmsg
+end
+arch medium_stones
+face mediumston.111
+end
+arch dun_2_2_2
+face dun_4.111
+end
+arch medium_stones
+face mediumston.111
+y 1
+end
+arch dun_2_1_1
+face dun_5.111
+y 1
+end
+arch medium_stones
+face mediumston.111
+y 2
+end
+arch dun_2_1_1
+face dun_5.111
+y 2
+end
+arch medium_stones
+face mediumston.111
+y 3
+end
+arch dun_2_1_1
+face dun_5.111
+y 3
+end
+arch medium_stones
+face mediumston.111
+y 4
+end
+arch dun_2_1_1
+face dun_5.111
+y 4
+end
+arch medium_stones
+face mediumston.111
+y 5
+end
+arch dun_2_1_1
+face dun_5.111
+y 5
+end
+arch medium_stones
+face mediumston.111
+y 6
+end
+arch dun_2_1_1
+face dun_5.111
+y 6
+end
+arch medium_stones
+face mediumston.111
+y 7
+end
+arch dun_2_1_1
+face dun_5.111
+y 7
+end
+arch medium_stones
+face mediumston.111
+y 8
+end
+arch dun_2_1_1
+face dun_5.111
+y 8
+end
+arch medium_stones
+face mediumston.111
+y 9
+end
+arch dun_2_1_1
+face dun_5.111
+y 9
+end
+arch medium_stones
+face mediumston.111
+y 10
+end
+arch dun_2_1_1
+face dun_5.111
+y 10
+end
+arch medium_stones
+face mediumston.111
+y 11
+end
+arch dun_2_1_1
+face dun_5.111
+y 11
+end
+arch medium_stones
+face mediumston.111
+y 12
+end
+arch dun_2_1_1
+face dun_5.111
+y 12
+end
+arch medium_stones
+face mediumston.111
+y 13
+end
+arch dun_2_1_1
+face dun_5.111
+y 13
+end
+arch medium_stones
+face mediumston.111
+y 14
+end
+arch dun_2_1_1
+face dun_5.111
+y 14
+end
+arch medium_stones
+face mediumston.111
+y 15
+end
+arch dun_2_1_1
+face dun_5.111
+y 15
+end
+arch medium_stones
+face mediumston.111
+y 16
+end
+arch dun_2_1_1
+face dun_5.111
+y 16
+end
+arch medium_stones
+face mediumston.111
+y 17
+end
+arch dun_2_1_1
+face dun_5.111
+y 17
+end
+arch medium_stones
+face mediumston.111
+y 18
+end
+arch dun_2_1_1
+face dun_5.111
+y 18
+end
+arch medium_stones
+face mediumston.111
+y 19
+end
+arch dun_2_1_1
+face dun_5.111
+y 19
+end
+arch medium_stones
+face mediumston.111
+y 20
+end
+arch dun_2_1_1
+face dun_5.111
+y 20
+end
+arch medium_stones
+face mediumston.111
+y 21
+end
+arch dun_2_1_1
+face dun_5.111
+y 21
+end
+arch medium_stones
+face mediumston.111
+y 22
+end
+arch dun_2_1_1
+face dun_5.111
+y 22
+end
+arch medium_stones
+face mediumston.111
+y 23
+end
+arch dun_2_1_1
+face dun_5.111
+y 23
+end
+arch medium_stones
+face mediumston.111
+y 24
+end
+arch dun_2_1_1
+face dun_5.111
+y 24
+end
+arch medium_stones
+face mediumston.111
+y 25
+end
+arch dun_2_1_1
+face dun_5.111
+y 25
+end
+arch medium_stones
+face mediumston.111
+y 26
+end
+arch dun_2_1_1
+face dun_5.111
+y 26
+end
+arch medium_stones
+face mediumston.111
+y 27
+end
+arch dun_2_1_1
+face dun_5.111
+y 27
+end
+arch medium_stones
+face mediumston.111
+y 28
+end
+arch dun_2_1_1
+face dun_5.111
+y 28
+end
+arch medium_stones
+face mediumston.111
+y 29
+end
+arch dun_2_1_1
+face dun_5.111
+y 29
+end
+arch medium_stones
+face mediumston.111
+y 30
+end
+arch dun_2_1_1
+face dun_5.111
+y 30
+end
+arch medium_stones
+face mediumston.111
+y 31
+end
+arch dun_2_1_1
+face dun_5.111
+y 31
+end
+arch medium_stones
+face mediumston.111
+y 32
+end
+arch dun_2_1_1
+face dun_5.111
+y 32
+end
+arch medium_stones
+face mediumston.111
+y 33
+end
+arch dun_2_1_1
+face dun_5.111
+y 33
+end
+arch medium_stones
+face mediumston.111
+y 34
+end
+arch dun_2_1_1
+face dun_5.111
+y 34
+end
+arch medium_stones
+face mediumston.111
+y 35
+end
+arch dun_2_1_1
+face dun_5.111
+y 35
+end
+arch medium_stones
+face mediumston.111
+y 36
+end
+arch dun_2_2_1
+face dun_3.111
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 1
+end
+arch dun_2_1_2
+face dun_A.111
+x 1
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 2
+end
+arch stair_down
+slaying /world/world_105_118
+face stair_down.111
+hp 28
+sp 3
+x 1
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 19
+end
+arch chest
+face chest_1.111
+hp -1
+x 1
+y 19
+carrying 100000
+arch plate_mail
+face plate_mail.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 31
+end
+arch chest
+face chest_1.111
+hp -1
+x 1
+y 31
+carrying 15000
+arch round_shield
+face round_shiel.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 34
+end
+arch chest
+face chest_1.111
+hp -1
+x 1
+y 34
+carrying 500
+arch pearl
+face pearl.111
+nrof 10
+end
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 1
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 1
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 2
+end
+arch dun_2_1_2
+face dun_A.111
+x 2
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 18
+end
+arch chest
+face chest_1.111
+hp -1
+x 2
+y 18
+carrying 9000
+arch axe_4
+face axe_4.111
+weight 9000
+magic 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 28
+end
+arch chest
+face chest_1.111
+hp -1
+x 2
+y 28
+carrying 5000
+arch cloak
+face cloak.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 29
+end
+arch blackmarble
+face blackmarble.111
+x 2
+y 29
+end
+arch stwall_2_2_2
+face stwall_6.111
+x 2
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 30
+end
+arch blackmarble
+face blackmarble.111
+x 2
+y 30
+end
+arch stwall_2_1_1
+face stwall_5.111
+x 2
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 31
+end
+arch blackmarble
+face blackmarble.111
+x 2
+y 31
+end
+arch stwall_2_1_1
+face stwall_5.111
+x 2
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 32
+end
+arch blackmarble
+face blackmarble.111
+x 2
+y 32
+end
+arch stwall_2_2_1
+face stwall_3.111
+x 2
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 33
+end
+arch chest
+face chest_1.111
+hp -1
+x 2
+y 33
+carrying 100
+arch pouch
+face pouch.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 34
+end
+arch chest
+face chest_1.111
+hp -1
+x 2
+y 34
+carrying 20000
+arch leather_armour
+face leather_ar.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 2
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 2
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 3
+end
+arch dun_2_1_2
+face dun_A.111
+x 3
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 12
+end
+arch chest
+face chest_1.111
+hp -1
+x 3
+y 12
+carrying 1500
+arch water
+face water.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 29
+end
+arch blackmarble
+face blackmarble.111
+x 3
+y 29
+end
+arch stwall_2_1_2
+face stwall_A.111
+x 3
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 30
+end
+arch blackmarble
+face blackmarble.111
+x 3
+y 30
+end
+arch altar_devourers
+face altardevo.111
+x 3
+y 30
+end
+arch blackmarble
+face blackmarble.111
+x 3
+y 31
+end
+arch vampire
+name Chapel Keeper
+face vampire.111
+x 3
+y 31
+carrying 10020
+unaggressive 1
+arch abil_fear
+end
+arch abil_fear
+end
+arch abil_fear
+end
+arch cloak
+face cloak.111
+end
+arch ring
+face ring.110
+end
+arch book_read
+name Manual
+name_pl Manuals
+end
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 32
+end
+arch blackmarble
+face blackmarble.111
+x 3
+y 32
+end
+arch stwall_2_1_2
+face stwall_A.111
+x 3
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 3
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 3
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 4
+end
+arch dun_2_1_2
+face dun_A.111
+x 4
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 29
+end
+arch blackmarble
+face blackmarble.111
+x 4
+y 29
+end
+arch stwall_2_1_2
+face stwall_A.111
+x 4
+y 29
+end
+arch blackmarble
+face blackmarble.111
+x 4
+y 30
+end
+arch generate_skeleton
+face gravestone.111
+x 4
+y 30
+speed_left -0.106000
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 31
+end
+arch button_small
+face button_sma.111
+x 4
+y 31
+invisible 1
+connected 1
+end
+arch blackmarble
+face blackmarble.111
+x 4
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 32
+end
+arch blackmarble
+face blackmarble.111
+x 4
+y 32
+end
+arch rune_drain_magic
+face drain_magic.111
+x 4
+y 32
+speed_left -1.100000
+end
+arch stwall_closed_1
+face stwallsec.118
+x 4
+y 32
+connected 1
+end
+arch button_small
+face button_sma.111
+x 4
+y 33
+invisible 1
+connected 1
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 4
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 4
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 5
+end
+arch dun_2_1_2
+face dun_A.111
+x 5
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 21
+end
+arch chest
+face chest_1.111
+hp -1
+x 5
+y 21
+carrying 60000
+arch chain_mail
+face chainmail.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 29
+end
+arch blackmarble
+face blackmarble.111
+x 5
+y 29
+end
+arch stwall_2_2_3
+face stwall_C.111
+x 5
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 30
+end
+arch blackmarble
+face blackmarble.111
+x 5
+y 30
+end
+arch stwall_2_1_1
+face stwall_5.111
+x 5
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 31
+end
+arch blackmarble
+face blackmarble.111
+x 5
+y 31
+end
+arch stwall_2_1_1
+face stwall_5.111
+x 5
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 32
+end
+arch blackmarble
+face blackmarble.111
+x 5
+y 32
+end
+arch stwall_2_2_4
+face stwall_9.111
+x 5
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 33
+end
+arch chest
+face chest_1.111
+hp -1
+x 5
+y 33
+carrying 6500
+arch poison
+face booze.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 5
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 5
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 6
+end
+arch dun_2_1_2
+face dun_A.111
+x 6
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 7
+end
+arch dun_2_2_2
+face dun_4.111
+x 6
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 8
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 9
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 10
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 11
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 12
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 13
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 14
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 15
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 16
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 17
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 18
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 19
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 20
+end
+arch dun_1_2
+face dun_1.111
+x 6
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 22
+end
+arch dun_1_1
+face dun_4.111
+x 6
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 23
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 24
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 25
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 26
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 27
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 34
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 35
+end
+arch dun_2_1_1
+face dun_5.111
+x 6
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 6
+y 36
+end
+arch dun_3_1
+face dun_A.111
+x 6
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 7
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 6
+end
+arch chest
+face chest_1.111
+hp -1
+x 7
+y 6
+carrying 90
+arch silvercoin
+face silvercoin.111
+nrof 9
+end
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 7
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 10
+end
+arch chest
+face chest_1.111
+hp -1
+x 7
+y 10
+carrying 20000
+arch leather_armour
+title of Clumsiness
+face leather_ar.111
+Dex -1
+value 600
+cursed 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 30
+end
+arch chest
+face chest_1.111
+hp -1
+x 7
+y 30
+carrying 22950
+arch rune_burning_hands
+face rune_fire.111
+end
+arch potioncon
+name potion
+face potiongen.111
+level 6
+end
+arch nunchacu_2
+face nunchacu_2.111
+end
+arch sword_3
+face sword_3.111
+weight 15950
+magic -1
+cursed 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 7
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 7
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 8
+end
+arch dun_2_1_2
+face dun_A.111
+x 8
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 4
+end
+arch chest
+face chest_1.111
+hp -1
+x 8
+y 4
+carrying 9000
+arch axe_4
+title of Gnarg
+face axe_4.111
+dam 8
+value 190
+weight 9000
+magic 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 8
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 19
+end
+arch chest
+face chest_1.111
+hp -1
+x 8
+y 19
+carrying 90000
+arch plate_mail
+face plate_mail.111
+resist_physical 42
+weight 90000
+magic 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 8
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 8
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 9
+end
+arch dun_2_1_2
+face dun_A.111
+x 9
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 9
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 23
+end
+arch chest
+face chest_1.111
+hp -1
+x 9
+y 23
+carrying 3100
+arch trap_blades
+face blades.111
+end
+arch carrot
+title of Poison
+face carrot.111
+hp 50
+food 30
+value 0
+identified 0
+cursed 1
+end
+arch cake
+face cake.111
+been_applied 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 9
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 9
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 10
+end
+arch dun_2_1_2
+face dun_A.111
+x 10
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 10
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 22
+end
+arch chest
+face chest_1.111
+hp -1
+x 10
+y 22
+carrying 28670
+arch rune_burning_hands
+face rune_fire.111
+end
+arch lspear
+face lspear.111
+end
+arch potion_restoration
+name potion
+face potion_heal2.111
+level 9
+cursed 1
+end
+arch silvercoin
+face silvercoin.111
+nrof 67
+end
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 25
+end
+arch chest
+face chest_1.111
+hp -1
+x 10
+y 25
+carrying 11600
+arch sword_3
+face sword_3.111
+weight 11600
+magic 2
+end
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 10
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 10
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 11
+end
+arch dun_2_1_2
+face dun_A.111
+x 11
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 11
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 12
+end
+arch chest
+face chest_1.111
+hp -1
+x 11
+y 12
+carrying 880
+arch silvercoin
+face silvercoin.111
+nrof 88
+end
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 15
+end
+arch chest
+face chest_1.111
+hp -1
+x 11
+y 15
+carrying 15000
+arch scimitar
+face scimitar.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 11
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 11
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 12
+end
+arch dun_2_1_2
+face dun_A.111
+x 12
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 12
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 14
+end
+arch dun_2_2_2
+face dun_4.111
+x 12
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 15
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 16
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 17
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 18
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 19
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 20
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 21
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 22
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 23
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 24
+end
+arch dun_1_2
+face dun_1.111
+x 12
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 26
+end
+arch dun_1_1
+face dun_4.111
+x 12
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 27
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 28
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 29
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 30
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 31
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 32
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 33
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 34
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 35
+end
+arch dun_2_1_1
+face dun_5.111
+x 12
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 12
+y 36
+end
+arch dun_3_1
+face dun_A.111
+x 12
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 13
+end
+arch dun_2_1_2
+face dun_A.111
+x 13
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 13
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 13
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 13
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 13
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 14
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 2
+end
+arch chest
+face chest_1.111
+hp -1
+x 14
+y 2
+carrying 23100
+arch rune_frost
+face rune_frost.111
+end
+arch potionint
+name potion
+face potiongen.111
+level 7
+end
+arch scale_mail
+face scale_mail.111
+resist_physical 22
+weight 16000
+magic 2
+last_sp 10
+end
+arch bolt
+face bolt.101
+nrof 7
+weight 800
+magic -2
+cursed 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 14
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 14
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 15
+end
+arch chest
+face chest_1.111
+hp -1
+x 14
+y 15
+carrying 5000
+arch cloak
+face cloak.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 14
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 14
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 15
+end
+arch dun_2_1_2
+face dun_A.111
+x 15
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 15
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 11
+end
+arch chest
+face chest_1.111
+hp -1
+x 15
+y 11
+carrying 20000
+arch high_shield
+face highshield.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 15
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 24
+end
+arch chest
+face chest_1.111
+hp -1
+x 15
+y 24
+carrying 18700
+arch rune_create_bomb
+face rune_bomb.111
+end
+arch bolt
+face bolt.101
+nrof 17
+weight 1100
+magic -1
+cursed 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 15
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 15
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 16
+end
+arch dun_2_1_2
+face dun_A.111
+x 16
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 3
+end
+arch chest
+face chest_1.111
+hp -1
+x 16
+y 3
+carrying 2000
+arch low_boots
+face low_boots.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 16
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 16
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 16
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 16
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 17
+end
+arch dun_2_1_2
+face dun_A.111
+x 17
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 6
+end
+arch chest
+face chest_1.111
+hp -1
+x 17
+y 6
+carrying 1500
+arch water
+face water.111
+end
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 17
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 17
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 17
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 17
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 18
+end
+arch dun_2_1_2
+face dun_A.111
+x 18
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 18
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 13
+end
+arch chest
+face chest_1.111
+hp -1
+x 18
+y 13
+carrying 13950
+arch hammer_2
+face hammer_2.121
+weight 13950
+magic 1
+end
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 18
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 18
+end
+arch dragon_shield
+face dragon_shi.111
+x 18
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 18
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 18
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 19
+end
+arch dun_2_1_2
+face dun_A.111
+x 19
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 7
+end
+arch dun_2_1_2
+face dun_A.111
+x 19
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 14
+end
+arch dun_2_1_2
+face dun_A.111
+x 19
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 19
+y 36
+end
+arch dun_2_1_2
+face dun_A.111
+x 19
+y 36
+end
+arch medium_stones
+face mediumston.111
+x 20
+end
+arch dun_2_2_3
+face dun_C.111
+x 20
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 1
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 1
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 2
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 2
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 3
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 3
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 4
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 4
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 5
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 5
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 6
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 6
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 7
+end
+arch dun_3_4
+face dun_C.111
+x 20
+y 7
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 8
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 8
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 9
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 9
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 10
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 10
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 11
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 11
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 12
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 12
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 13
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 13
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 14
+end
+arch dun_3_4
+face dun_C.111
+x 20
+y 14
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 15
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 15
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 16
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 16
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 17
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 17
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 18
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 18
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 19
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 19
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 20
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 20
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 21
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 21
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 22
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 22
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 23
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 23
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 24
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 24
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 25
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 25
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 26
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 26
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 27
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 27
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 28
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 28
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 29
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 29
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 30
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 30
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 31
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 31
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 32
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 32
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 33
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 33
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 34
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 34
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 35
+end
+arch dun_2_1_1
+face dun_5.111
+x 20
+y 35
+end
+arch medium_stones
+face mediumston.111
+x 20
+y 36
+end
+arch dun_2_2_4
+face dun_8.111
+x 20
+y 36
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 25
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 26
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 35
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+face wyvern.171
+x 2
+y 16
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+face dragon_wing.111
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 3
+y 11
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+face wyvern.171
+x 3
+y 22
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 7
+y 18
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+face wyvern.171
+x 7
+y 29
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+face dragon_wing.111
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+face wyvern.171
+x 8
+y 17
+carrying 7500
+arch dragon_steak
+name wyvern's steak
+face drag_steak.111
+food 405
+resist_cold -100
+resist_confusion -100
+value 40
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 8
+y 22
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 9
+y 32
+speed -0.035000
+level 4
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 13
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 16
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 24
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+face wyvern.171
+x 11
+y 25
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 12
+y 5
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 13
+y 3
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 13
+y 12
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 16
+y 22
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
+arch dragon
+name Slithselest
+face wyvern.171
+x 16
+y 29
+carrying 25
+arch dragon_wing
+name Slithselest's wing
+face dragon_wing.111
+material 0
+end
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 17
+y 16
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
