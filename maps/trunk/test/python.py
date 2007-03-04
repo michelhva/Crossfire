@@ -26,6 +26,7 @@ def do_help():
 	whoami.Say(' - bed')
 	whoami.Say(' - readkey')
 	whoami.Say(' - writekey')
+	whoami.Say(' - speed')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -226,6 +227,11 @@ def do_writekey():
 	
 	whoami.Say('writekey returned %d'%who.WriteKey(topic[1], val, int(topic[2])))
 	
+def do_speed():
+	whoami.Say('Your speed is %f and your speed_left %f'%(who.Speed, who.SpeedLeft))
+#	who.Speed = 0.2
+	who.SpeedLeft = -50
+	whoami.Say('Changed your speed, now %f and %f'%(who.Speed, who.SpeedLeft))
 
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
@@ -270,5 +276,7 @@ elif topic[0] == 'readkey':
 	do_readkey()
 elif topic[0] == 'writekey':
 	do_writekey()
+elif topic[0] == 'speed':
+	do_speed()
 else:
 	do_help()
