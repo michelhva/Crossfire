@@ -1,0 +1,1419 @@
+arch map
+name KI2
+region pupland
+width 10
+height 14
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Thu Feb  8 01:49:16 1996
+endmsg
+end
+arch woodfloor
+end
+arch wwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch wwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wwall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch wwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch wwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch wwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch wwall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch wwall_2_1_1
+y 10
+end
+arch woodfloor
+y 11
+end
+arch wwall_2_1_1
+y 11
+end
+arch woodfloor
+y 12
+end
+arch wwall_2_1_1
+y 12
+end
+arch woodfloor
+y 13
+end
+arch wwall_2_2_1
+y 13
+end
+arch woodfloor
+x 1
+end
+arch wwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch lightningwall_5
+x 1
+y 1
+blocksview 0
+end
+arch woodfloor
+x 1
+y 2
+end
+arch dungeon_magic
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch dungeon_magic
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch dungeon_magic
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch dungeon_magic
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch mover_1
+x 1
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch lightningwall_1
+x 1
+y 12
+blocksview 0
+end
+arch woodfloor
+x 1
+y 13
+end
+arch wwall_2_1_2
+x 1
+y 13
+end
+arch woodfloor
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch dungeon_magic
+x 2
+y 1
+end
+arch button_small
+x 2
+y 2
+invisible 1
+connected 51
+protected 51
+end
+arch woodfloor
+x 2
+y 2
+end
+arch dungeon_magic
+x 2
+y 2
+end
+arch button_small
+x 2
+y 3
+invisible 1
+connected 41
+protected 41
+end
+arch woodfloor
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch button_small
+x 2
+y 4
+invisible 1
+connected 31
+protected 31
+end
+arch woodfloor
+x 2
+y 4
+end
+arch dungeon_magic
+x 2
+y 4
+end
+arch button_small
+x 2
+y 5
+invisible 1
+connected 21
+protected 21
+end
+arch woodfloor
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch dungeon_magic
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch dungeon_magic
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch mover_1
+x 2
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 2
+y 8
+speed 0.500000
+value 1
+connected 51
+protected 51
+end
+arch woodfloor
+x 2
+y 9
+end
+arch grate_open_1
+x 2
+y 9
+speed 0.500000
+value 1
+connected 41
+protected 41
+end
+arch woodfloor
+x 2
+y 10
+end
+arch grate_open_1
+x 2
+y 10
+speed 0.500000
+value 1
+connected 31
+protected 31
+end
+arch woodfloor
+x 2
+y 11
+end
+arch grate_open_1
+x 2
+y 11
+speed 0.500000
+value 1
+connected 21
+protected 21
+end
+arch woodfloor
+x 2
+y 12
+end
+arch ytree
+x 2
+y 12
+no_pass 1
+end
+arch woodfloor
+x 2
+y 13
+end
+arch wwall_2_1_2
+x 2
+y 13
+end
+arch woodfloor
+x 3
+end
+arch wwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch dungeon_magic
+x 3
+y 1
+end
+arch button_small
+x 3
+y 2
+invisible 1
+connected 52
+protected 52
+end
+arch woodfloor
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch button_small
+x 3
+y 3
+invisible 1
+connected 42
+protected 42
+end
+arch woodfloor
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch button_small
+x 3
+y 4
+invisible 1
+connected 32
+protected 32
+end
+arch woodfloor
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch button_small
+x 3
+y 5
+invisible 1
+connected 22
+protected 22
+end
+arch woodfloor
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch mover_1
+x 3
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 3
+y 8
+speed 0.500000
+value 1
+connected 52
+protected 52
+end
+arch woodfloor
+x 3
+y 9
+end
+arch grate_open_1
+x 3
+y 9
+speed 0.500000
+value 1
+connected 42
+protected 42
+end
+arch woodfloor
+x 3
+y 10
+end
+arch grate_open_1
+x 3
+y 10
+speed 0.500000
+value 1
+connected 32
+protected 32
+end
+arch woodfloor
+x 3
+y 11
+end
+arch grate_open_1
+x 3
+y 11
+speed 0.500000
+value 1
+connected 22
+protected 22
+end
+arch woodfloor
+x 3
+y 12
+end
+arch statue
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch wwall_2_1_2
+x 3
+y 13
+end
+arch woodfloor
+x 4
+end
+arch wwall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch dungeon_magic
+x 4
+y 1
+end
+arch button_small
+x 4
+y 2
+invisible 1
+connected 53
+protected 53
+end
+arch woodfloor
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 2
+end
+arch button_small
+x 4
+y 3
+invisible 1
+connected 43
+protected 43
+end
+arch woodfloor
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch button_small
+x 4
+y 4
+invisible 1
+connected 33
+protected 33
+end
+arch woodfloor
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch button_small
+x 4
+y 5
+invisible 1
+connected 23
+protected 23
+end
+arch woodfloor
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch mover_1
+x 4
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 4
+y 8
+speed 0.500000
+value 1
+connected 53
+protected 53
+end
+arch woodfloor
+x 4
+y 9
+end
+arch grate_open_1
+x 4
+y 9
+speed 0.500000
+value 1
+connected 43
+protected 43
+end
+arch woodfloor
+x 4
+y 10
+end
+arch grate_open_1
+x 4
+y 10
+speed 0.500000
+value 1
+connected 33
+protected 33
+end
+arch woodfloor
+x 4
+y 11
+end
+arch grate_open_1
+x 4
+y 11
+speed 0.500000
+value 1
+connected 23
+protected 23
+end
+arch note
+msg
+---Note2---
+Password to meet To-jyo is "General"
+endmsg
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch ytree
+x 4
+y 12
+no_pass 1
+end
+arch woodfloor
+x 4
+y 13
+end
+arch wwall_2_1_2
+x 4
+y 13
+end
+arch woodfloor
+x 5
+end
+arch wwall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 1
+end
+arch button_small
+x 5
+y 2
+invisible 1
+connected 54
+protected 54
+end
+arch woodfloor
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 2
+end
+arch button_small
+x 5
+y 3
+invisible 1
+connected 44
+protected 44
+end
+arch woodfloor
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch button_small
+x 5
+y 4
+invisible 1
+connected 34
+protected 34
+end
+arch woodfloor
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch button_small
+x 5
+y 5
+invisible 1
+connected 24
+protected 24
+end
+arch woodfloor
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch mover_1
+x 5
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 5
+y 8
+speed 0.500000
+value 1
+connected 54
+protected 54
+end
+arch woodfloor
+x 5
+y 9
+end
+arch grate_open_1
+x 5
+y 9
+speed 0.500000
+value 1
+connected 44
+protected 44
+end
+arch woodfloor
+x 5
+y 10
+end
+arch grate_open_1
+x 5
+y 10
+speed 0.500000
+value 1
+connected 34
+protected 34
+end
+arch woodfloor
+x 5
+y 11
+end
+arch grate_open_1
+x 5
+y 11
+speed 0.500000
+value 1
+connected 24
+protected 24
+end
+arch note
+msg
+---Note1---
+Location of To-jyo's hat:
+East of Red Island.
+Ask To-jyo about "treasure".
+endmsg
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch ytree
+x 5
+y 12
+no_pass 1
+end
+arch woodfloor
+x 5
+y 13
+end
+arch wwall_2_1_2
+x 5
+y 13
+end
+arch woodfloor
+x 6
+end
+arch wwall_2_1_2
+x 6
+end
+arch magic_mouth
+msg
+Put something on the floor
+endmsg
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 1
+end
+arch button_small
+x 6
+y 2
+invisible 1
+connected 55
+protected 55
+end
+arch woodfloor
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch button_small
+x 6
+y 3
+invisible 1
+connected 45
+protected 45
+end
+arch woodfloor
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch button_small
+x 6
+y 4
+invisible 1
+connected 35
+protected 35
+end
+arch woodfloor
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch button_small
+x 6
+y 5
+invisible 1
+connected 25
+protected 25
+end
+arch woodfloor
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch mover_1
+x 6
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 6
+y 8
+speed 0.500000
+value 1
+connected 55
+protected 55
+end
+arch woodfloor
+x 6
+y 9
+end
+arch grate_open_1
+x 6
+y 9
+speed 0.500000
+value 1
+connected 45
+protected 45
+end
+arch woodfloor
+x 6
+y 10
+end
+arch grate_open_1
+x 6
+y 10
+speed 0.500000
+value 1
+connected 35
+protected 35
+end
+arch woodfloor
+x 6
+y 11
+end
+arch grate_open_1
+x 6
+y 11
+speed 0.500000
+value 1
+connected 25
+protected 25
+end
+arch woodfloor
+x 6
+y 12
+end
+arch statue
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch wwall_2_1_2
+x 6
+y 13
+end
+arch woodfloor
+x 7
+end
+arch wwall_2_1_2
+x 7
+end
+arch dungeon_magic
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 1
+end
+arch stair_down
+slaying ki
+hp 7
+sp 1
+x 7
+y 1
+end
+arch button_small
+x 7
+y 2
+invisible 1
+connected 56
+protected 56
+end
+arch woodfloor
+x 7
+y 2
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch button_small
+x 7
+y 3
+invisible 1
+connected 46
+protected 46
+end
+arch woodfloor
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch button_small
+x 7
+y 4
+invisible 1
+connected 36
+protected 36
+end
+arch woodfloor
+x 7
+y 4
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch button_small
+x 7
+y 5
+invisible 1
+connected 26
+protected 26
+end
+arch woodfloor
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch mover_1
+x 7
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch grate_open_1
+x 7
+y 8
+speed 0.500000
+value 1
+connected 56
+protected 56
+end
+arch woodfloor
+x 7
+y 9
+end
+arch grate_open_1
+x 7
+y 9
+speed 0.500000
+value 1
+connected 46
+protected 46
+end
+arch woodfloor
+x 7
+y 10
+end
+arch grate_open_1
+x 7
+y 10
+speed 0.500000
+value 1
+connected 36
+protected 36
+end
+arch woodfloor
+x 7
+y 11
+end
+arch grate_open_1
+x 7
+y 11
+speed 0.500000
+value 1
+connected 26
+protected 26
+end
+arch woodfloor
+x 7
+y 12
+end
+arch ytree
+x 7
+y 12
+no_pass 1
+end
+arch woodfloor
+x 7
+y 13
+end
+arch wwall_2_1_2
+x 7
+y 13
+end
+arch woodfloor
+x 8
+end
+arch wwall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch lightningwall_5
+x 8
+y 1
+blocksview 0
+end
+arch woodfloor
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch mover_1
+x 8
+y 8
+speed 1.000000
+speed_left -3.980000
+level 1
+attacktype 1
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch lightningwall_1
+x 8
+y 12
+blocksview 0
+end
+arch woodfloor
+x 8
+y 13
+end
+arch wwall_2_1_2
+x 8
+y 13
+end
+arch woodfloor
+x 9
+end
+arch wwall_2_2_3
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wwall_2_1_1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wwall_2_1_1
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch wwall_2_1_1
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch wwall_2_1_1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch wwall_2_1_1
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch wwall_2_1_1
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch wwall_2_1_1
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch wwall_2_1_1
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch wwall_2_1_1
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch wwall_2_1_1
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch wwall_2_1_1
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch wwall_2_1_1
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch wwall_2_2_4
+x 9
+y 13
+end
