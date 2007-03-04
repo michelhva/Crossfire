@@ -102,6 +102,14 @@ arch cobblestones2
 x 4
 y 2
 end
+arch apple
+x 4
+y 2
+arch event_pickup
+title Python
+slaying /test/python_pickup.py
+end
+end
 arch cobblestones2
 x 4
 y 3
