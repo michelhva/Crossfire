@@ -1,6 +1,9 @@
 "$Id$"
 Top of CVS tree:
 ------------------------------------------------------------------------------
+
+Changes for 1.10.0:
+------------------------------------------------------------------------------
 gtk-v2/src/info.c: For extended message handling, special case the
     MSG_TYPE_SIGN - the 1.x server puts a number in front of the message to
     denote it is auto apply - strip it off in the gtk2 client.  Not an
