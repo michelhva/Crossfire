@@ -1,4 +1,10 @@
-2007-03-05 02:24  kbulgrien
+2007-03-05 10:08  kbulgrien
+
+	* pup_land/rainbow/roof: Bug-fix for smoothing regression introduced
+	  in revision 5502 (biglake arch replacement): smoothlevel adjusted
+	  throughout the map.
+
+2007-03-05 08:24  kbulgrien
 
 	* pup_land/rainbow/shore: Bug-fix for regression introduced in
 	  revision 5502 (biglake arch replacement): no_pass 0 placed on sea

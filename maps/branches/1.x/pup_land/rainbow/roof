@@ -17,9 +17,11 @@ blocksview 0
 end
 arch grass
 y 2
+smoothlevel 1
 end
 arch sea
 y 3
+smoothlevel 1
 no_pass 0
 end
 arch sea
@@ -32,18 +34,22 @@ no_pass 0
 end
 arch sea
 y 6
+smoothlevel 0
 no_pass 0
 end
 arch sea
 y 7
+smoothlevel 1
 no_pass 0
 end
 arch sea
 y 8
+smoothlevel 1
 no_pass 0
 end
 arch sea
 y 9
+smoothlevel 0
 no_pass 0
 end
 arch fog
@@ -55,12 +61,14 @@ no_pass 0
 end
 arch grass
 y 11
+smoothlevel 1
 end
 arch sea_sw
 y 11
 end
 arch grass
 y 12
+smoothlevel 2
 end
 arch blocked
 x 1
@@ -68,10 +76,12 @@ end
 arch grass
 x 1
 y 1
+smoothlevel 1
 end
 arch grass
 x 1
 y 2
+smoothlevel 1
 end
 arch sea_nw
 x 1
@@ -89,16 +99,19 @@ end
 arch sea
 x 1
 y 4
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 1
 y 5
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 1
 y 6
+smoothlevel 1
 end
 arch sea_se
 x 1
@@ -107,14 +120,17 @@ end
 arch pstone_1
 x 1
 y 7
+smoothlevel 2
 end
 arch pstone_1
 x 1
 y 8
+smoothlevel 2
 end
 arch pstone_1
 x 1
 y 9
+smoothlevel 1
 end
 arch sea_ne
 x 1
@@ -123,16 +139,19 @@ end
 arch sea
 x 1
 y 10
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 1
 y 11
+smoothlevel 0
 no_pass 0
 end
 arch sea
 x 1
 y 12
+smoothlevel 1
 no_pass 0
 end
 arch blocked
@@ -141,20 +160,24 @@ end
 arch swamp
 x 2
 y 1
+smoothlevel 1
 end
 arch sea
 x 2
 y 2
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 2
 y 3
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 2
 y 4
+smoothlevel 1
 end
 arch sea_se
 x 2
@@ -163,10 +186,12 @@ end
 arch pstone_1
 x 2
 y 5
+smoothlevel 1
 end
 arch woods
 x 2
 y 6
+smoothlevel 1
 end
 arch fog
 x 2
@@ -183,14 +208,17 @@ end
 arch grass
 x 2
 y 9
+smoothlevel 1
 end
 arch pstone_1
 x 2
 y 10
+smoothlevel 1
 end
 arch pstone_1
 x 2
 y 11
+smoothlevel 1
 end
 arch sea_ne
 x 2
@@ -199,6 +227,7 @@ end
 arch sea
 x 2
 y 12
+smoothlevel 1
 no_pass 0
 end
 arch blocked
@@ -212,11 +241,13 @@ end
 arch sea
 x 3
 y 2
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 3
 y 3
+smoothlevel 1
 end
 arch sea_se
 x 3
@@ -225,6 +256,7 @@ end
 arch jungle_2
 x 3
 y 4
+smoothlevel 1
 blocksview 0
 end
 arch jungle_1
@@ -257,10 +289,12 @@ end
 arch pstone_1
 x 3
 y 11
+smoothlevel 1
 end
 arch sea
 x 3
 y 12
+smoothlevel 1
 no_pass 0
 end
 arch blocked
@@ -279,6 +313,7 @@ end
 arch pstone_1
 x 4
 y 3
+smoothlevel 1
 end
 arch jungle_1
 x 4
@@ -330,6 +365,7 @@ end
 arch pstone_1
 x 4
 y 11
+smoothlevel 1
 end
 arch fog
 x 4
@@ -338,6 +374,7 @@ end
 arch sea
 x 4
 y 12
+smoothlevel 1
 no_pass 0
 end
 arch blocked
@@ -351,6 +388,7 @@ end
 arch sea
 x 5
 y 2
+smoothlevel 1
 no_pass 0
 end
 arch mover_5
@@ -360,6 +398,7 @@ end
 arch jungle_1
 x 5
 y 3
+smoothlevel 1
 blocksview 0
 end
 arch teleporter
@@ -438,6 +477,7 @@ end
 arch pstone_1
 x 5
 y 11
+smoothlevel 0
 end
 arch sea_new
 x 5
@@ -446,6 +486,7 @@ end
 arch sea
 x 5
 y 12
+smoothlevel 0
 no_pass 0
 end
 arch blocked
@@ -454,6 +495,7 @@ end
 arch sea
 x 6
 y 1
+smoothlevel 1
 no_pass 0
 end
 arch mover_6
@@ -463,11 +505,13 @@ end
 arch sea
 x 6
 y 2
+smoothlevel 0
 no_pass 0
 end
 arch pstone_1
 x 6
 y 3
+smoothlevel 1
 end
 arch sea_sw
 x 6
@@ -476,11 +520,13 @@ end
 arch jungle_1
 x 6
 y 4
+smoothlevel 1
 blocksview 0
 end
 arch flagstone
 x 6
 y 5
+smoothlevel 1
 end
 arch cwall_0
 x 6
@@ -523,10 +569,12 @@ end
 arch pstone_1
 x 6
 y 11
+smoothlevel 2
 end
 arch sea
 x 6
 y 12
+smoothlevel 1
 no_pass 0
 end
 arch blocked
@@ -535,6 +583,7 @@ end
 arch grass
 x 7
 y 1
+smoothlevel 1
 end
 arch mover_7
 x 7
@@ -543,6 +592,7 @@ end
 arch grass
 x 7
 y 2
+smoothlevel 1
 end
 arch sea_ne
 x 7
@@ -552,11 +602,13 @@ end
 arch sea
 x 7
 y 3
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 7
 y 4
+smoothlevel 1
 end
 arch sea_sw
 x 7
@@ -565,6 +617,7 @@ end
 arch jungle_1
 x 7
 y 5
+smoothlevel 1
 blocksview 0
 end
 arch jungle_1
@@ -591,10 +644,12 @@ end
 arch grass
 x 7
 y 10
+smoothlevel 1
 end
 arch pstone_1
 x 7
 y 11
+smoothlevel 1
 end
 arch sea_nw
 x 7
@@ -603,6 +658,7 @@ end
 arch sea
 x 7
 y 12
+smoothlevel 0
 no_pass 0
 end
 arch blocked
@@ -615,6 +671,7 @@ end
 arch grass
 x 8
 y 2
+smoothlevel 1
 end
 arch fog
 x 8
@@ -627,6 +684,7 @@ end
 arch grass
 x 8
 y 3
+smoothlevel 1
 end
 arch sea_ne
 x 8
@@ -636,11 +694,13 @@ end
 arch sea
 x 8
 y 4
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 8
 y 5
+smoothlevel 1
 end
 arch sea_sw
 x 8
@@ -649,10 +709,12 @@ end
 arch pstone_1
 x 8
 y 6
+smoothlevel 1
 end
 arch woods
 x 8
 y 7
+smoothlevel 0
 end
 arch grass
 x 8
@@ -661,6 +723,7 @@ end
 arch grass
 x 8
 y 9
+smoothlevel 1
 end
 arch town_1
 name red town
@@ -670,6 +733,7 @@ end
 arch pstone_1
 x 8
 y 10
+smoothlevel 1
 end
 arch sea_nw
 x 8
@@ -678,11 +742,13 @@ end
 arch sea
 x 8
 y 11
+smoothlevel 0
 no_pass 0
 end
 arch pstone_1
 x 8
 y 12
+smoothlevel 1
 end
 arch sea_se
 x 8
@@ -718,25 +784,30 @@ end
 arch grass
 x 9
 y 3
+smoothlevel 1
 end
 arch sea
 x 9
 y 4
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 9
 y 5
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 9
 y 6
+smoothlevel 1
 no_pass 0
 end
 arch pstone_1
 x 9
 y 7
+smoothlevel 1
 end
 arch sea_sw
 x 9
@@ -745,10 +816,12 @@ end
 arch pstone_1
 x 9
 y 8
+smoothlevel 1
 end
 arch pstone_1
 x 9
 y 9
+smoothlevel 1
 end
 arch sea_nw
 x 9
@@ -757,11 +830,13 @@ end
 arch sea
 x 9
 y 10
+smoothlevel 0
 no_pass 0
 end
 arch pstone_1
 x 9
 y 11
+smoothlevel 1
 end
 arch sea_se
 x 9
@@ -770,6 +845,7 @@ end
 arch pstone_1
 x 9
 y 12
+smoothlevel 1
 end
 arch mover_7
 x 10
@@ -789,6 +865,7 @@ end
 arch grass
 x 10
 y 3
+smoothlevel 1
 end
 arch sea_nw
 x 10
@@ -797,6 +874,7 @@ end
 arch sea
 x 10
 y 4
+smoothlevel 1
 no_pass 0
 end
 arch sea
@@ -812,16 +890,19 @@ end
 arch sea
 x 10
 y 7
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 10
 y 8
+smoothlevel 1
 no_pass 0
 end
 arch sea
 x 10
 y 9
+smoothlevel 0
 no_pass 0
 end
 arch sea
@@ -832,6 +913,7 @@ end
 arch pstone_1
 x 10
 y 11
+smoothlevel 1
 end
 arch hut
 name To-jyo's hut
