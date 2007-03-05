@@ -6966,6 +6966,13 @@ name_pl woodfloor
 x 15
 y 4
 end
+arch stair_up_3
+slaying cdcapart1
+hp 21
+sp 18
+x 15
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11730,6 +11737,13 @@ x 24
 y 40
 end
 arch flagstone
+x 24
+y 41
+end
+arch stair_up_3
+slaying cdcapart1
+hp 30
+sp 55
 x 24
 y 41
 end
