@@ -1,0 +1,9 @@
+These are sounds for Crossfire sound server.
+These are original crossfire sounds converted to raw-linear unsigned format.
+Also their volume is normalized, for better effects.
+To use them - install cfsndserv somhere in your PATH, compile client
+with -DNEW_SOUND, change the "sounds" file, so it contains proper paths
+and install it to your ~/.crossfire
+
+Greets,
+      Jacek Konieczny <jajcus@zeus.polsl.gliwice.pl>
