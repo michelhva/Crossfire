@@ -1,3 +1,28 @@
+2007-03-06 05:50  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds,
+	  mlab/citydeclouds/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccourthsuplvl1,
+	  mlab/citydeclouds/cdcnrkpdevtmp1,
+	  mlab/citydeclouds/citydeclouds2I: Merged in missing maps and
+	  updated links where necessary. Removed links to unused maps.
+	  Other changes are due to map editor reformatting.
+
+2007-03-06 05:33  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2B: Map link update
+
+2007-03-06 03:45  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  maps/branches/1.x/pup_land/lone_town/town,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two, pup_land/lone_town/town: Fix
+	  the Lone Town town map where inconsiderate players cannot cast
+	  town portal on top of buildings. Add a new floor to Zorn Castle
+	  along with new custom monsters and treasure.
+
 2007-03-05 10:08  kbulgrien
 
 	* pup_land/rainbow/roof: Bug-fix for smoothing regression introduced
@@ -9,6 +34,67 @@
 	* pup_land/rainbow/shore: Bug-fix for regression introduced in
 	  revision 5502 (biglake arch replacement): no_pass 0 placed on sea
 	  arch tiles.
+
+2007-03-05 06:32  rjtanner
+
+	* mlab/citydeclouds/cdcapart1, mlab/citydeclouds/cdcapart2,
+	  mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/citydeclouds2H, mlab/citydeclouds/villa,
+	  mlab/citydeclouds/villa/citydecloudsvillaC1,
+	  mlab/citydeclouds/villa/citydecloudsvillaC2,
+	  mlab/citydeclouds/villa/citydecloudsvillaC3,
+	  mlab/citydeclouds/villa/citydecloudsvillab1,
+	  mlab/citydeclouds/villa/citydecloudsvillab2,
+	  mlab/citydeclouds/villa/citydecloudsvillab3: Import missing maps
+	  and updated map paths for exits and entrances. Cosmetic changes
+	  in regards to how 'swall' merged with adjacent walls. Removed
+	  missing or unused archetypes. Other changes are due to map
+	  editor reformatting.
+
+2007-03-05 06:30  rjtanner
+
+	* navar_city/mlab/ttower34: Map had to exits or entrances stacked
+	  on top of each other, removed the invisible exit/entrance and
+	  gave the magical portal the destinatin coordinates and map path
+	  instead.
+
+2007-03-04 10:49  ryo_saeba
+
+	* test/python, test/python.py, test/python_pickup.py: Pickup event
+	  test.
+
+2007-03-03 01:55  rjtanner
+
+	* world/world_120_109: Removed link to non-existant map, Morok Dun
+	  mines.
+
+2007-03-03 01:53  rjtanner
+
+	* world/world_127_102: Map had a double entrance (or exit) on it,
+	  to a map that did not exist. Removed this reference as an
+	  invisible exit (or entrance) sends the player to the guard house
+	  map. Added a missing terrain tile beneath one of the buildings,
+	  too.
+
+2007-03-03 01:47  rjtanner
+
+	* world/world_111_116: Removed link to non-existant map,
+	  downthewell. Other changes are due to Map Editor reformatting.
+
+2007-03-03 01:42  rjtanner
+
+	* world/world_105_116, world/world_121_117: Removed links to
+	  non-existant maps, Rolando's house and Yolanda's House in SE
+	  Scorn.
+
+2007-03-03 01:37  rjtanner
+
+	* santo_dominion/magara/well/treasure: Removed no longer used
+	  features on the torches.
+
+2007-03-02 04:33  rjtanner
+
+	* ChangeLog: ChangeLog update
 
 2007-03-02 04:27  rjtanner
 
