@@ -19396,7 +19396,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 2
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19455,7 +19454,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 64
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19514,7 +19512,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 2
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19564,7 +19561,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 64
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19588,19 +19584,21 @@ end
 arch big_chaos_dragon
 name Zorn dragon of chaos
 title Guardian of the Third Upper Floor
+Con 75
 Wis 13
 exp 4500000
-dam 40
-wc -30
-ac -22
+dam 50
+wc -95
+ac -95
 x 28
 y 13
 level 100
+attacktype 262429
 resist_magic 75
 resist_confusion 75
 resist_acid 75
 resist_drain 75
-resist_weaponmagic -25
+resist_weaponmagic 25
 resist_poison -25
 resist_slow 75
 resist_fear 75
@@ -19609,6 +19607,7 @@ resist_chaos 75
 resist_godpower 20
 resist_holyword 75
 path_attuned 14
+run_away 1
 end
 arch big_wiz
 name Evocation Scroll Writer
@@ -19639,7 +19638,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 4
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19698,7 +19696,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 16
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19757,7 +19754,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 4
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
@@ -19807,7 +19803,6 @@ resist_deplete 65
 resist_death 65
 resist_chaos 65
 path_attuned 16
-unaggressive 1
 arch rod_light
 hp 150
 maxhp 150
