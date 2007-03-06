@@ -137,7 +137,15 @@ name laurel
 x 1
 y 1
 end
+arch dungeon_magic
+x 1
+y 1
+end
 arch pstone_1
+x 1
+y 2
+end
+arch dungeon_magic
 x 1
 y 2
 end
@@ -184,7 +192,15 @@ arch grass
 x 1
 y 9
 end
+arch dungeon_magic
+x 1
+y 9
+end
 arch grass
+x 1
+y 10
+end
+arch dungeon_magic
 x 1
 y 10
 end
@@ -290,7 +306,15 @@ arch grass
 x 2
 y 9
 end
+arch dungeon_magic
+x 2
+y 9
+end
 arch grass
+x 2
+y 10
+end
+arch dungeon_magic
 x 2
 y 10
 end
@@ -585,7 +609,15 @@ arch grass
 x 5
 y 9
 end
+arch dungeon_magic
+x 5
+y 9
+end
 arch grass
+x 5
+y 10
+end
+arch dungeon_magic
 x 5
 y 10
 end
@@ -678,7 +710,15 @@ arch grass
 x 6
 y 9
 end
+arch dungeon_magic
+x 6
+y 9
+end
 arch grass
+x 6
+y 10
+end
+arch dungeon_magic
 x 6
 y 10
 end
@@ -690,7 +730,15 @@ arch grass
 x 6
 y 12
 end
+arch dungeon_magic
+x 6
+y 12
+end
 arch grass
+x 6
+y 13
+end
+arch dungeon_magic
 x 6
 y 13
 end
@@ -707,6 +755,10 @@ name Acme Building Supply
 slaying /pup_land/lone_town/shops/buildshop
 hp 19
 sp 21
+x 6
+y 15
+end
+arch dungeon_magic
 x 6
 y 15
 end
@@ -816,7 +868,15 @@ arch grass
 x 7
 y 12
 end
+arch dungeon_magic
+x 7
+y 12
+end
 arch grass
+x 7
+y 13
+end
+arch dungeon_magic
 x 7
 y 13
 end
@@ -833,6 +893,10 @@ name Acme Building Supply
 slaying /pup_land/lone_town/shops/buildshop
 hp 20
 sp 21
+x 7
+y 15
+end
+arch dungeon_magic
 x 7
 y 15
 end
@@ -993,6 +1057,10 @@ name Thieves' Den
 x 9
 y 8
 end
+arch dungeon_magic
+x 9
+y 8
+end
 arch grass
 x 9
 y 9
@@ -1067,7 +1135,15 @@ arch grass
 x 10
 y 3
 end
+arch dungeon_magic
+x 10
+y 3
+end
 arch grass
+x 10
+y 4
+end
+arch dungeon_magic
 x 10
 y 4
 end
@@ -1084,6 +1160,10 @@ name Well
 slaying town_ud1
 hp 7
 sp 8
+x 10
+y 6
+end
+arch dungeon_magic
 x 10
 y 6
 end
@@ -1107,11 +1187,23 @@ arch grass
 x 10
 y 9
 end
+arch dungeon_magic
+x 10
+y 9
+end
 arch grass
 x 10
 y 10
 end
+arch dungeon_magic
+x 10
+y 10
+end
 arch cobblestones
+x 10
+y 11
+end
+arch dungeon_magic
 x 10
 y 11
 end
@@ -1123,11 +1215,19 @@ arch evergreens2
 x 10
 y 12
 end
+arch dungeon_magic
+x 10
+y 12
+end
 arch grass
 x 10
 y 13
 end
 arch evergreens2
+x 10
+y 13
+end
+arch dungeon_magic
 x 10
 y 13
 end
@@ -1136,6 +1236,10 @@ x 10
 y 14
 end
 arch evergreens2
+x 10
+y 14
+end
+arch dungeon_magic
 x 10
 y 14
 end
@@ -1181,7 +1285,15 @@ arch grass
 x 11
 y 3
 end
+arch dungeon_magic
+x 11
+y 3
+end
 arch grass
+x 11
+y 4
+end
+arch dungeon_magic
 x 11
 y 4
 end
@@ -1213,7 +1325,15 @@ arch grass
 x 11
 y 9
 end
+arch dungeon_magic
+x 11
+y 9
+end
 arch grass
+x 11
+y 10
+end
+arch dungeon_magic
 x 11
 y 10
 end
@@ -1221,7 +1341,15 @@ arch cobblestones
 x 11
 y 11
 end
+arch dungeon_magic
+x 11
+y 11
+end
 arch grass
+x 11
+y 12
+end
+arch dungeon_magic
 x 11
 y 12
 end
@@ -1229,7 +1357,15 @@ arch grass
 x 11
 y 13
 end
+arch dungeon_magic
+x 11
+y 13
+end
 arch footpath_3_2
+x 11
+y 14
+end
+arch dungeon_magic
 x 11
 y 14
 end
@@ -1237,7 +1373,15 @@ arch cobblestones
 x 11
 y 15
 end
+arch dungeon_magic
+x 11
+y 15
+end
 arch cobblestones
+x 11
+y 16
+end
+arch dungeon_magic
 x 11
 y 16
 end
@@ -1245,7 +1389,15 @@ arch grass
 x 11
 y 17
 end
+arch dungeon_magic
+x 11
+y 17
+end
 arch grass
+x 11
+y 18
+end
+arch dungeon_magic
 x 11
 y 18
 end
@@ -1264,6 +1416,10 @@ arch dwall_2_1_2
 x 12
 end
 arch grass
+x 12
+y 1
+end
+arch dungeon_magic
 x 12
 y 1
 end
@@ -1307,7 +1463,15 @@ arch cobblestones
 x 12
 y 11
 end
+arch dungeon_magic
+x 12
+y 11
+end
 arch grass
+x 12
+y 12
+end
+arch dungeon_magic
 x 12
 y 12
 end
@@ -1315,7 +1479,15 @@ arch grass
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 13
+end
 arch footpath_3_4
+x 12
+y 14
+end
+arch dungeon_magic
 x 12
 y 14
 end
@@ -1323,11 +1495,23 @@ arch cobblestones
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch grass
 x 12
 y 16
 end
+arch dungeon_magic
+x 12
+y 16
+end
 arch grass
+x 12
+y 17
+end
+arch dungeon_magic
 x 12
 y 17
 end
@@ -1357,6 +1541,10 @@ arch grass
 x 13
 y 1
 end
+arch dungeon_magic
+x 13
+y 1
+end
 arch cobblestones
 x 13
 y 2
@@ -1365,7 +1553,15 @@ arch grass
 x 13
 y 3
 end
+arch dungeon_magic
+x 13
+y 3
+end
 arch grass
+x 13
+y 4
+end
+arch dungeon_magic
 x 13
 y 4
 end
@@ -1373,7 +1569,15 @@ arch grass
 x 13
 y 5
 end
+arch dungeon_magic
+x 13
+y 5
+end
 arch grass
+x 13
+y 6
+end
+arch dungeon_magic
 x 13
 y 6
 end
@@ -1389,11 +1593,23 @@ arch grass
 x 13
 y 9
 end
+arch dungeon_magic
+x 13
+y 9
+end
 arch grass
 x 13
 y 10
 end
+arch dungeon_magic
+x 13
+y 10
+end
 arch cobblestones
+x 13
+y 11
+end
+arch dungeon_magic
 x 13
 y 11
 end
@@ -1405,11 +1621,19 @@ arch evergreens2
 x 13
 y 12
 end
+arch dungeon_magic
+x 13
+y 12
+end
 arch grass
 x 13
 y 13
 end
 arch evergreens2
+x 13
+y 13
+end
+arch dungeon_magic
 x 13
 y 13
 end
@@ -1418,6 +1642,10 @@ x 13
 y 14
 end
 arch evergreens2
+x 13
+y 14
+end
+arch dungeon_magic
 x 13
 y 14
 end
@@ -1425,11 +1653,23 @@ arch cobblestones
 x 13
 y 15
 end
+arch dungeon_magic
+x 13
+y 15
+end
 arch grass
 x 13
 y 16
 end
+arch dungeon_magic
+x 13
+y 16
+end
 arch grass
+x 13
+y 17
+end
+arch dungeon_magic
 x 13
 y 17
 end
@@ -1467,6 +1707,10 @@ sp 7
 x 14
 y 1
 end
+arch dungeon_magic
+x 14
+y 1
+end
 arch cobblestones
 x 14
 y 2
@@ -1475,7 +1719,15 @@ arch grass
 x 14
 y 3
 end
+arch dungeon_magic
+x 14
+y 3
+end
 arch grass
+x 14
+y 4
+end
+arch dungeon_magic
 x 14
 y 4
 end
@@ -1483,7 +1735,15 @@ arch grass
 x 14
 y 5
 end
+arch dungeon_magic
+x 14
+y 5
+end
 arch grass
+x 14
+y 6
+end
+arch dungeon_magic
 x 14
 y 6
 end
@@ -1499,7 +1759,15 @@ arch grass
 x 14
 y 9
 end
+arch dungeon_magic
+x 14
+y 9
+end
 arch grass
+x 14
+y 10
+end
+arch dungeon_magic
 x 14
 y 10
 end
@@ -1539,6 +1807,10 @@ arch bridge_we
 x 14
 y 15
 end
+arch dungeon_magic
+x 14
+y 15
+end
 arch pstone_1
 x 14
 y 16
@@ -1613,7 +1885,15 @@ arch grass
 x 15
 y 9
 end
+arch dungeon_magic
+x 15
+y 9
+end
 arch grass
+x 15
+y 10
+end
+arch dungeon_magic
 x 15
 y 10
 end
@@ -1646,6 +1926,10 @@ name House
 slaying heinrich
 hp 7
 sp 14
+x 15
+y 14
+end
+arch dungeon_magic
 x 15
 y 14
 end
@@ -1723,7 +2007,15 @@ arch grass
 x 16
 y 9
 end
+arch dungeon_magic
+x 16
+y 9
+end
 arch grass
+x 16
+y 10
+end
+arch dungeon_magic
 x 16
 y 10
 end
@@ -1756,6 +2048,10 @@ x 16
 y 15
 end
 arch grass
+x 16
+y 16
+end
+arch dungeon_magic
 x 16
 y 16
 end
@@ -1857,11 +2153,19 @@ sp 15
 x 17
 y 14
 end
+arch dungeon_magic
+x 17
+y 14
+end
 arch pstone_1
 x 17
 y 15
 end
 arch grass
+x 17
+y 16
+end
+arch dungeon_magic
 x 17
 y 16
 end
@@ -1939,6 +2243,10 @@ arch house_small
 name Training Center
 slaying training
 hp 1
+x 18
+y 11
+end
+arch dungeon_magic
 x 18
 y 11
 end
@@ -2288,7 +2596,15 @@ arch pstone_1
 x 21
 y 11
 end
+arch dungeon_magic
+x 21
+y 11
+end
 arch pstone_1
+x 21
+y 12
+end
+arch dungeon_magic
 x 21
 y 12
 end
@@ -2395,7 +2711,15 @@ arch pstone_1
 x 22
 y 11
 end
+arch dungeon_magic
+x 22
+y 11
+end
 arch pstone_1
+x 22
+y 12
+end
+arch dungeon_magic
 x 22
 y 12
 end
@@ -2427,7 +2751,15 @@ arch grass
 x 22
 y 17
 end
+arch dungeon_magic
+x 22
+y 17
+end
 arch grass
+x 22
+y 18
+end
+arch dungeon_magic
 x 22
 y 18
 end
@@ -2489,7 +2821,15 @@ arch pstone_1
 x 23
 y 11
 end
+arch dungeon_magic
+x 23
+y 11
+end
 arch pstone_1
+x 23
+y 12
+end
+arch dungeon_magic
 x 23
 y 12
 end
@@ -2525,7 +2865,15 @@ arch grass
 x 23
 y 17
 end
+arch dungeon_magic
+x 23
+y 17
+end
 arch grass
+x 23
+y 18
+end
+arch dungeon_magic
 x 23
 y 18
 end

@@ -2734,7 +2734,7 @@ arch cobblestones2
 x 8
 y 29
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 29
 end
@@ -2745,36 +2745,36 @@ end
 arch cobblestones2
 x 8
 y 30
+end
+arch swall_1_2
+x 8
+y 30
+end
+arch dungeon_magic
+x 8
+y 30
+end
+arch cobblestones2
+x 8
+y 31
 end
 arch cwall_1_1
 x 8
-y 30
+y 31
 end
 arch cobblestones2
 x 8
-y 31
+y 32
 end
 arch cwall_2_1_1
 x 8
-y 31
+y 32
 end
 arch cobblestones2
 x 8
-y 32
+y 33
 end
 arch cwall_1_2
-x 8
-y 32
-end
-arch cobblestones2
-x 8
-y 33
-end
-arch swall_1_1
-x 8
-y 33
-end
-arch dungeon_magic
 x 8
 y 33
 end
@@ -2782,7 +2782,8 @@ arch cobblestones2
 x 8
 y 34
 end
-arch swall_1_2
+arch swall_0
+face swall_55.111
 x 8
 y 34
 end
@@ -3148,7 +3149,7 @@ arch stonefloor2
 x 9
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 9
 y 31
 end
@@ -3734,7 +3735,7 @@ arch stonefloor2
 x 10
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 10
 y 31
 end
@@ -4313,7 +4314,7 @@ arch stonefloor2
 x 11
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 11
 y 31
 end
@@ -4641,7 +4642,7 @@ arch stonefloor2
 x 12
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 12
 y 31
 end
@@ -5106,7 +5107,7 @@ arch stonefloor2
 x 13
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 13
 y 31
 end
@@ -5573,7 +5574,7 @@ arch stonefloor2
 x 14
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 14
 y 31
 end
@@ -5915,7 +5916,7 @@ arch stonefloor2
 x 15
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 15
 y 31
 end
@@ -6253,7 +6254,7 @@ arch stonefloor2
 x 16
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 16
 y 31
 end
@@ -6590,7 +6591,7 @@ arch stonefloor2
 x 17
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 17
 y 31
 end
@@ -7058,7 +7059,7 @@ arch stonefloor2
 x 18
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 18
 y 31
 end
@@ -7522,7 +7523,7 @@ arch stonefloor2
 x 19
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 19
 y 31
 end
@@ -7843,7 +7844,7 @@ arch stonefloor2
 x 20
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 20
 y 31
 end
@@ -8425,7 +8426,7 @@ arch stonefloor2
 x 21
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 21
 y 31
 end
@@ -9117,6 +9118,9 @@ x 22
 y 22
 end
 arch stair2_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 22
+sp 22
 x 22
 y 22
 end
@@ -9156,7 +9160,7 @@ arch stonefloor2
 x 22
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 22
 y 31
 end
@@ -9185,6 +9189,9 @@ x 22
 y 36
 end
 arch stair2_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 22
+sp 36
 x 22
 y 36
 end
@@ -9658,7 +9665,7 @@ arch stonefloor2
 x 23
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 23
 y 31
 end
@@ -9995,7 +10002,7 @@ arch stonefloor2
 x 24
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 24
 y 31
 end
@@ -10302,7 +10309,7 @@ arch stonefloor2
 x 25
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 25
 y 31
 end
@@ -10663,20 +10670,27 @@ connected 1
 no_magic 1
 damned 1
 end
-arch cobblestones2
+arch stonefloor2
 x 26
 y 31
 end
-arch firepot
+arch grate_closed_2
 x 26
 y 31
-glow_radius 2
+connected 1
 no_magic 1
 damned 1
 end
 arch cobblestones2
 x 26
 y 32
+end
+arch firepot
+x 26
+y 32
+glow_radius 2
+no_magic 1
+damned 1
 end
 arch cobblestones2
 x 26
@@ -10978,20 +10992,24 @@ arch stonefloor2
 x 27
 y 30
 end
+arch light1
+x 27
+y 30
+end
 arch stonefloor2
 x 27
 y 31
-end
-arch grate_closed_1
-x 27
-y 31
-connected 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 x 27
 y 32
+end
+arch grate_closed_1
+x 27
+y 32
+connected 1
+no_magic 1
+damned 1
 end
 arch stonefloor2
 x 27
@@ -11358,24 +11376,24 @@ arch stonefloor2
 x 28
 y 30
 end
-arch light1
-x 28
-y 30
-end
 arch stonefloor2
 x 28
 y 31
 end
-arch grate_closed_1
+arch light1
 x 28
 y 31
-connected 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 x 28
 y 32
+end
+arch grate_closed_1
+x 28
+y 32
+connected 1
+no_magic 1
+damned 1
 end
 arch stonefloor2
 x 28
@@ -11755,44 +11773,87 @@ arch light1
 x 29
 y 27
 end
+arch magic_mouth
+name chaos dragon warning
+msg
+You hear the peculiar roar of
+a large chaos dragon wafting
+down the stairs.
+endmsg
+x 29
+y 28
+end
 arch stonefloor2
 x 29
 y 28
 end
 arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 29
+sp 28
 x 29
 y 28
+end
+arch magic_mouth
+name chaos dragon warning
+msg
+You hear the peculiar roar of
+a large chaos dragon wafting
+down the stairs.
+endmsg
+x 29
+y 29
 end
 arch stonefloor2
 x 29
 y 29
 end
 arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 29
+sp 29
 x 29
 y 29
+end
+arch magic_mouth
+name chaos dragon warning
+msg
+You hear the peculiar roar of
+a large chaos dragon wafting
+down the stairs.
+endmsg
+x 29
+y 30
 end
 arch stonefloor2
 x 29
 y 30
+end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 29
+sp 30
+x 29
+y 30
+end
+arch stonefloor2
+x 29
+y 31
 end
 arch light1
 x 29
-y 30
-end
-arch stonefloor2
-x 29
 y 31
-end
-arch grate_closed_1
-x 29
-y 31
-connected 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 x 29
 y 32
+end
+arch grate_closed_1
+x 29
+y 32
+connected 1
+no_magic 1
+damned 1
 end
 arch stonefloor2
 x 29
@@ -12173,24 +12234,24 @@ arch stonefloor2
 x 30
 y 30
 end
-arch light1
-x 30
-y 30
-end
 arch stonefloor2
 x 30
 y 31
 end
-arch grate_closed_1
+arch light1
 x 30
 y 31
-connected 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 x 30
 y 32
+end
+arch grate_closed_1
+x 30
+y 32
+connected 1
+no_magic 1
+damned 1
 end
 arch stonefloor2
 x 30
@@ -12556,20 +12617,24 @@ arch stonefloor2
 x 31
 y 30
 end
+arch light1
+x 31
+y 30
+end
 arch stonefloor2
 x 31
 y 31
-end
-arch grate_closed_1
-x 31
-y 31
-connected 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
 x 31
 y 32
+end
+arch grate_closed_1
+x 31
+y 32
+connected 1
+no_magic 1
+damned 1
 end
 arch stonefloor2
 x 31
@@ -12956,20 +13021,27 @@ connected 1
 no_magic 1
 damned 1
 end
-arch cobblestones2
+arch stonefloor2
 x 32
 y 31
 end
-arch firepot
+arch grate_closed_2
 x 32
 y 31
-glow_radius 2
+connected 1
 no_magic 1
 damned 1
 end
 arch cobblestones2
 x 32
 y 32
+end
+arch firepot
+x 32
+y 32
+glow_radius 2
+no_magic 1
+damned 1
 end
 arch cobblestones2
 x 32
@@ -13270,7 +13342,7 @@ arch stonefloor2
 x 33
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 33
 y 31
 end
@@ -13592,7 +13664,7 @@ arch stonefloor2
 x 34
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 34
 y 31
 end
@@ -13967,7 +14039,7 @@ arch stonefloor2
 x 35
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 35
 y 31
 end
@@ -14434,6 +14506,9 @@ x 36
 y 22
 end
 arch stair2_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 36
+sp 22
 x 36
 y 22
 end
@@ -14473,7 +14548,7 @@ arch stonefloor2
 x 36
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 36
 y 31
 end
@@ -14502,6 +14577,9 @@ x 36
 y 36
 end
 arch stair2_up
+slaying /brest/zorn/castle.upper.floor.three
+hp 36
+sp 36
 x 36
 y 36
 end
@@ -15204,7 +15282,7 @@ arch stonefloor2
 x 37
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 37
 y 31
 end
@@ -15781,7 +15859,7 @@ arch stonefloor2
 x 38
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 38
 y 31
 end
@@ -16107,7 +16185,7 @@ arch stonefloor2
 x 39
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 39
 y 31
 end
@@ -16567,7 +16645,7 @@ arch stonefloor2
 x 40
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 40
 y 31
 end
@@ -17035,7 +17113,7 @@ arch stonefloor2
 x 41
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 41
 y 31
 end
@@ -17376,7 +17454,7 @@ arch stonefloor2
 x 42
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 42
 y 31
 end
@@ -17709,7 +17787,7 @@ arch stonefloor2
 x 43
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 43
 y 31
 end
@@ -18056,7 +18134,7 @@ arch stonefloor2
 x 44
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 44
 y 31
 end
@@ -18519,7 +18597,7 @@ arch stonefloor2
 x 45
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 45
 y 31
 end
@@ -18984,7 +19062,7 @@ arch stonefloor2
 x 46
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 46
 y 31
 end
@@ -19317,7 +19395,7 @@ arch stonefloor2
 x 47
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 47
 y 31
 end
@@ -19891,7 +19969,7 @@ arch stonefloor2
 x 48
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 48
 y 31
 end
@@ -20482,7 +20560,7 @@ arch stonefloor2
 x 49
 y 30
 end
-arch cobblestones2
+arch stonefloor2
 x 49
 y 31
 end
@@ -20886,7 +20964,7 @@ arch cobblestones2
 x 50
 y 29
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
 y 29
 end
@@ -20897,36 +20975,36 @@ end
 arch cobblestones2
 x 50
 y 30
+end
+arch swall_1_2
+x 50
+y 30
+end
+arch dungeon_magic
+x 50
+y 30
+end
+arch cobblestones2
+x 50
+y 31
 end
 arch cwall_1_1
 x 50
-y 30
+y 31
 end
 arch cobblestones2
 x 50
-y 31
+y 32
 end
 arch cwall_2_1_1
 x 50
-y 31
+y 32
 end
 arch cobblestones2
 x 50
-y 32
+y 33
 end
 arch cwall_1_2
-x 50
-y 32
-end
-arch cobblestones2
-x 50
-y 33
-end
-arch swall_1_1
-x 50
-y 33
-end
-arch dungeon_magic
 x 50
 y 33
 end
@@ -20934,7 +21012,8 @@ arch cobblestones2
 x 50
 y 34
 end
-arch swall_1_2
+arch swall_0
+face swall_55.111
 x 50
 y 34
 end
@@ -23733,7 +23812,7 @@ exp 3500000
 wc -50
 ac -40
 x 20
-y 31
+y 32
 level 109
 attacktype 384
 resist_physical 50
@@ -23852,7 +23931,7 @@ exp 3500000
 wc -50
 ac -40
 x 36
-y 31
+y 32
 level 109
 attacktype 384
 resist_physical 50
