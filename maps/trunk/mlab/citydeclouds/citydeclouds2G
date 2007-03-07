@@ -10228,8 +10228,7 @@ unique 1
 end
 arch ladder_bi_up
 name ladder to secure discussion room (2nd floor)
-name_pl ladder to secure discussion room
-slaying citydecloudsvilla/citydecloudsvillaC1
+slaying /mlab/citydeclouds/villa/citydecloudsvillaC1
 hp 6
 sp 6
 x 20
@@ -11403,8 +11402,7 @@ unique 1
 end
 arch stair_down_1
 name enchanted fountain
-name_pl enchanted fountain
-slaying tavernb3
+slaying /navar_city/mlab/tavernb3
 face fountain.111
 hp 41
 sp 7
@@ -15707,14 +15705,6 @@ arch flagstone
 x 29
 y 23
 unique 1
-end
-arch stair_up_1
-name stairs to 2nd floor
-slaying /mlab/citydeclouds/villa/citydecloudsvillaC1
-hp 22
-sp 7
-x 29
-y 23
 end
 arch light3
 x 29

@@ -134,22 +134,10 @@ end
 arch flagstone
 y 17
 end
-arch stair_down_4
-slaying cdcunderbigstre1
-hp 19
-sp 98
-y 17
-end
 arch dungeon_magic
 y 18
 end
 arch flagstone
-y 18
-end
-arch stair_up_4
-slaying cdccotgf1
-hp 19
-sp 60
 y 18
 end
 arch dungeon_magic
@@ -6808,13 +6796,6 @@ x 15
 y 37
 end
 arch dungeon_floor
-x 15
-y 38
-end
-arch stair_up_2
-slaying cdccotgf1
-hp 34
-sp 80
 x 15
 y 38
 end
@@ -21805,13 +21786,6 @@ arch marble
 x 44
 y 15
 end
-arch stair_3_up
-slaying cdccotgf1
-hp 63
-sp 57
-x 44
-y 15
-end
 arch flagstone
 name floor
 name_pl floor
@@ -23345,13 +23319,6 @@ x 47
 y 11
 end
 arch marble
-x 47
-y 12
-end
-arch stair_3_down
-slaying cdcunderbigstre1
-hp 66
-sp 93
 x 47
 y 12
 end
