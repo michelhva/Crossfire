@@ -972,13 +972,8 @@ name_pl stonefloor
 x 4
 y 16
 end
-arch perm_magic_portal
-x 4
-y 16
-end
 arch whirlwind_exit
-slaying citydeclouds2
-hp 99
+slaying /citydeclouds/citydeclouds2G
 sp 15
 x 4
 y 16
