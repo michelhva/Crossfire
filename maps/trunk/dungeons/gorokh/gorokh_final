@@ -2362,6 +2362,7 @@ level 50
 use_content_on_gen 1
 arch gorokh_avatar
 name avatar of Gorokh
+race Divine
 hp 3500
 maxhp 3500
 sp 500
@@ -2369,6 +2370,7 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
+speed 0.2
 level 80
 attacktype 1064961
 resist_magic 50
@@ -2444,6 +2446,7 @@ level 50
 use_content_on_gen 1
 arch gorokh_avatar
 name avatar of Gorokh
+race Divine
 hp 3500
 maxhp 3500
 sp 500
@@ -2451,6 +2454,7 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
+speed 0.2
 level 80
 attacktype 1064961
 resist_magic 50
@@ -4677,6 +4681,7 @@ level 50
 use_content_on_gen 1
 arch gorokh_avatar
 name avatar of Gorokh
+race Divine
 hp 3500
 maxhp 3500
 sp 500
@@ -4684,6 +4689,7 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
+speed 0.2
 level 80
 attacktype 1064961
 resist_magic 50
@@ -4759,6 +4765,7 @@ level 50
 use_content_on_gen 1
 arch gorokh_avatar
 name avatar of Gorokh
+race Divine
 hp 3500
 maxhp 3500
 sp 500
@@ -4766,6 +4773,7 @@ maxsp 500
 exp 125000
 wc -30
 ac -35
+speed 0.2
 level 80
 attacktype 1064961
 resist_magic 50
@@ -20827,7 +20835,6 @@ material 0
 value 3000000
 weight 15000
 applied 1
-damned 1
 end
 arch corpse
 name corpse of Advocate
