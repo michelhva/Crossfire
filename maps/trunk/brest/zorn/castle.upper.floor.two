@@ -10018,6 +10018,12 @@ arch cobblestones2
 x 24
 y 34
 end
+arch button_lever
+name gate lever
+x 24
+y 34
+connected 2
+end
 arch cobblestones2
 x 24
 y 35
@@ -10037,6 +10043,12 @@ end
 arch cobblestones2
 x 24
 y 38
+end
+arch button_lever
+name gate lever
+x 24
+y 38
+connected 2
 end
 arch cobblestones2
 x 24
@@ -11368,11 +11380,19 @@ arch stonefloor2
 x 28
 y 28
 end
+arch light2
+x 28
+y 28
+end
 arch stonefloor2
 x 28
 y 29
 end
 arch stonefloor2
+x 28
+y 30
+end
+arch light2
 x 28
 y 30
 end
@@ -11505,14 +11525,6 @@ arch cobblestones2
 x 28
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -11523,14 +11535,6 @@ arch cobblestones2
 x 28
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -11540,14 +11544,6 @@ arch cobblestones2
 x 28
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -11556,14 +11552,6 @@ end
 arch cobblestones2
 x 28
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 55
-invisible 1
 end
 arch brush
 x 28
@@ -11815,6 +11803,10 @@ sp 29
 x 29
 y 29
 end
+arch light3
+x 29
+y 29
+end
 arch magic_mouth
 name chaos dragon warning
 msg
@@ -11971,14 +11963,6 @@ arch cobblestones2
 x 29
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -11989,14 +11973,6 @@ arch cobblestones2
 x 29
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -12006,14 +11982,6 @@ arch cobblestones2
 x 29
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -12022,14 +11990,6 @@ end
 arch cobblestones2
 x 29
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 55
-invisible 1
 end
 arch brush
 x 29
@@ -12226,11 +12186,19 @@ arch stonefloor2
 x 30
 y 28
 end
+arch light2
+x 30
+y 28
+end
 arch stonefloor2
 x 30
 y 29
 end
 arch stonefloor2
+x 30
+y 30
+end
+arch light2
 x 30
 y 30
 end
@@ -12354,14 +12322,6 @@ arch cobblestones2
 x 30
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -12372,14 +12332,6 @@ arch cobblestones2
 x 30
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -12389,14 +12341,6 @@ arch cobblestones2
 x 30
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -12405,14 +12349,6 @@ end
 arch cobblestones2
 x 30
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 55
-invisible 1
 end
 arch brush
 x 30

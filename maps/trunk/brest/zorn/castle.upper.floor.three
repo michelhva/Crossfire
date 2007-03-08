@@ -9131,6 +9131,20 @@ arch redslate
 x 28
 y 9
 end
+arch longtable_1_4
+x 28
+y 9
+end
+arch power_crystal
+name Yolanda's Crystal
+name_pl Yolanda's Crystals
+sp 500
+maxsp 3000
+x 28
+y 9
+value 100000000
+weight 1
+end
 arch redslate
 x 28
 y 10
@@ -9311,14 +9325,6 @@ arch cobblestones2
 x 28
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -9329,14 +9335,6 @@ arch cobblestones2
 x 28
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -9346,14 +9344,6 @@ arch cobblestones2
 x 28
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -9362,14 +9352,6 @@ end
 arch cobblestones2
 x 28
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 55
-invisible 1
 end
 arch brush
 x 28
@@ -9479,7 +9461,7 @@ arch redslate
 x 29
 y 9
 end
-arch longtable_1_1
+arch longtable_3_3
 x 29
 y 9
 end
@@ -9778,14 +9760,6 @@ arch cobblestones2
 x 29
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -9796,14 +9770,6 @@ arch cobblestones2
 x 29
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -9813,14 +9779,6 @@ arch cobblestones2
 x 29
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -9829,14 +9787,6 @@ end
 arch cobblestones2
 x 29
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 55
-invisible 1
 end
 arch brush
 x 29
@@ -9945,6 +9895,20 @@ end
 arch redslate
 x 30
 y 9
+end
+arch longtable_1_3
+x 30
+y 9
+end
+arch power_crystal
+name Zacharus' Crystal
+name_pl Zacharus' Crystals
+sp 500
+maxsp 3000
+x 30
+y 9
+value 100000000
+weight 1
 end
 arch redslate
 x 30
@@ -10126,14 +10090,6 @@ arch cobblestones2
 x 30
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -10144,14 +10100,6 @@ arch cobblestones2
 x 30
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -10161,14 +10109,6 @@ arch cobblestones2
 x 30
 y 53
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 54
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -10177,14 +10117,6 @@ end
 arch cobblestones2
 x 30
 y 54
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 55
-invisible 1
 end
 arch brush
 x 30
@@ -19583,6 +19515,7 @@ sp 123
 level 110
 end
 arch summoner_book
+value 200
 randomitems none
 arch spell_magehound
 end
@@ -19608,8 +19541,8 @@ Con 50
 Wis 20
 Pow 50
 exp 2000000
-wc -95
-ac -95
+wc -75
+ac -75
 x 25
 y 12
 level 109
@@ -19666,8 +19599,8 @@ Con 50
 Wis 20
 Pow 50
 exp 2000000
-wc -95
-ac -95
+wc -75
+ac -75
 x 32
 y 12
 level 109
