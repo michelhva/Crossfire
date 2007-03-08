@@ -1,5 +1,7 @@
 arch map
 name Nexus
+reset_timeout 15
+fixed_resettime 1
 difficulty 1
 region creation
 darkness 3
@@ -564,18 +566,18 @@ arch swall_2_1_2
 x 3
 y 11
 end
-arch tile_white_floor
-x 3
-y 12
-no_magic 1
-damned 1
-end
 arch magic_mouth
 msg
 Step into the portal to go to Scorn.
 endmsg
 x 3
 y 12
+end
+arch tile_white_floor
+x 3
+y 12
+no_magic 1
+damned 1
 end
 arch tile_white_floor
 x 3
@@ -2672,6 +2674,10 @@ To Navar
 Navar is a good place for more experienced players to start.
 Adventurers starting in Navar might have to do a bit more exploring,
 but then it is more likely you will find things...
+
+-=> WARNING <=-
+Navar is not a "Newbie Friendly" place. True novices should start
+either in beginners house or Scorn. You have been warned.
 endmsg
 x 15
 y 12
@@ -3372,6 +3378,18 @@ x 19
 y 10
 blocksview 0
 end
+arch magic_ear
+name Navar
+msg
+@match Darcap
+*GONG*
+@match Wolfsburg
+*GONG*
+endmsg
+x 19
+y 11
+connected 666
+end
 arch tile_white_floor
 x 19
 y 11
@@ -3381,6 +3399,14 @@ end
 arch swall_2_1_2
 x 19
 y 11
+end
+arch magic_mouth
+name Let's Play Name That City
+msg
+Ships in the port area of Navar can take you to two cities - name one of the cities
+endmsg
+x 19
+y 12
 end
 arch tile_white_floor
 x 19
@@ -3546,6 +3572,13 @@ end
 arch tile_white_floor
 x 20
 y 12
+no_magic 1
+damned 1
+end
+arch gate_closed_2
+x 20
+y 12
+connected 666
 no_magic 1
 damned 1
 end
@@ -3711,18 +3744,18 @@ arch swall_2_1_2
 x 21
 y 11
 end
-arch tile_white_floor
-x 21
-y 12
-no_magic 1
-damned 1
-end
 arch magic_mouth
 msg
 Step into the portal to go to Navar.
 endmsg
 x 21
 y 12
+end
+arch tile_white_floor
+x 21
+y 12
+no_magic 1
+damned 1
 end
 arch tile_white_floor
 x 21
