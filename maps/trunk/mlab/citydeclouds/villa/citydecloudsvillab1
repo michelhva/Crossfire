@@ -12795,6 +12795,10 @@ arch flagstone
 x 11
 y 28
 end
+arch dungeon_magic
+x 11
+y 29
+end
 arch flagstone
 x 11
 y 29
@@ -12806,7 +12810,7 @@ connected 507
 end
 arch dungeon_magic
 x 11
-y 29
+y 30
 end
 arch button_small
 x 11
@@ -12819,7 +12823,7 @@ y 30
 end
 arch dungeon_magic
 x 11
-y 30
+y 31
 end
 arch flagstone
 x 11
@@ -12831,10 +12835,6 @@ food 1
 x 11
 y 31
 connected 4
-end
-arch dungeon_magic
-x 11
-y 31
 end
 arch flagstone
 x 11
@@ -37568,18 +37568,6 @@ arch table_3
 x 34
 y 9
 end
-arch oakdoor
-name Hell: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/gatesofhell1
-face penta.111
-hp 14
-sp 17
-x 34
-y 9
-weight 40
-no_pick 0
-end
 arch flagstone
 x 34
 y 10
@@ -37587,18 +37575,6 @@ end
 arch table_3
 x 34
 y 10
-end
-arch oakdoor
-name Tavern: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/tavern
-face penta.111
-hp 47
-sp 27
-x 34
-y 10
-weight 40
-no_pick 0
 end
 arch blocked
 x 34
@@ -38804,18 +38780,6 @@ arch table_3
 x 35
 y 9
 end
-arch oakdoor
-name Gates of Hell: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/gatesofhell1
-face penta.111
-hp 21
-sp 50
-x 35
-y 9
-weight 40
-no_pick 0
-end
 arch flagstone
 x 35
 y 10
@@ -38823,18 +38787,6 @@ end
 arch table_3
 x 35
 y 10
-end
-arch oakdoor
-name Villa: Portable Teleporter
-name_pl Villa: Portable Teleporter
-slaying /mlab/citydecloudsvillab1
-face penta.111
-hp 17
-sp 31
-x 35
-y 10
-weight 40
-no_pick 0
 end
 arch blocked
 x 35
@@ -40040,18 +39992,6 @@ arch table_3
 x 36
 y 9
 end
-arch oakdoor
-name Mazes of Menace: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/mazesofmenace
-face penta.111
-hp 34
-sp 47
-x 36
-y 9
-weight 40
-no_pick 0
-end
 arch flagstone
 x 36
 y 10
@@ -40059,18 +39999,6 @@ end
 arch table_3
 x 36
 y 10
-end
-arch oakdoor
-name University: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/university1
-face penta.111
-hp 54
-sp 116
-x 36
-y 10
-weight 40
-no_pick 0
 end
 arch blocked
 x 36
@@ -41201,18 +41129,6 @@ arch table_3
 x 37
 y 9
 end
-arch oakdoor
-name Goldmine B3: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/goldmineb3
-face penta.111
-hp 23
-sp 17
-x 37
-y 9
-weight 40
-no_pick 0
-end
 arch flagstone
 x 37
 y 10
@@ -41220,18 +41136,6 @@ end
 arch table_3
 x 37
 y 10
-end
-arch oakdoor
-name CityDeClouds: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/citydeclouds
-face penta.111
-hp 25
-sp 19
-x 37
-y 10
-weight 40
-no_pick 0
 end
 arch blocked
 x 37
@@ -42350,18 +42254,6 @@ end
 arch table_3
 x 38
 y 9
-end
-arch oakdoor
-name Spiral Tower: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/mlabspiraltower/stb1
-face penta.111
-hp 14
-sp 12
-x 38
-y 9
-weight 40
-no_pick 0
 end
 arch flagstone
 x 38
@@ -43497,18 +43389,6 @@ end
 arch table_3
 x 39
 y 9
-end
-arch oakdoor
-name Spiral Tower lvl 18: Portable Teleporter
-name_pl World: Portable Teleporter
-slaying /mlab/mlabspiraltower/sta18
-face penta.111
-hp 9
-sp 7
-x 39
-y 9
-weight 40
-no_pick 0
 end
 arch flagstone
 x 39

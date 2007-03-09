@@ -5993,7 +5993,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 13
@@ -6424,7 +6424,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 14
@@ -6852,7 +6852,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 15
@@ -7264,7 +7264,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 16
@@ -17400,13 +17400,6 @@ x 36
 y 24
 end
 arch marble
-x 36
-y 25
-end
-arch stair_up_2
-slaying cdccotgf1
-hp 55
-sp 67
 x 36
 y 25
 end
