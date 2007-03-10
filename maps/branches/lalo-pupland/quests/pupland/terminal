@@ -2053,7 +2053,7 @@ y 17
 end
 arch dragon_exit
 name To Lone Town
-slaying lone_town/town
+slaying /lone_town/town
 hp 21
 sp 11
 x 1
@@ -2076,14 +2076,14 @@ y 1
 end
 arch dragon_exit
 name To Red Island
-slaying rainbow/station
+slaying /rainbow_islands/station
 hp 7
 sp 3
 x 9
 y 15
 end
 arch dragon_exit
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 26
 sp 25
 x 17

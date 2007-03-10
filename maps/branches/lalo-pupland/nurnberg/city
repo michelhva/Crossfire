@@ -4124,7 +4124,7 @@ name Imperial Post
 msg
 Ding!
 endmsg
-slaying /pup_land/nurnberg/IPO_nurnberg
+slaying /nurnberg/IPO_nurnberg
 hp 1
 sp 5
 x 26
@@ -4671,7 +4671,7 @@ x 29
 y 14
 end
 arch invis_exit
-slaying ../world
+slaying /quests/pupland/world
 hp 29
 sp 17
 x 29
@@ -4682,7 +4682,7 @@ x 29
 y 15
 end
 arch invis_exit
-slaying ../world
+slaying /quests/pupland/world
 hp 29
 sp 17
 x 29
@@ -4750,7 +4750,7 @@ y 29
 end
 arch s_ship
 name To the Port
-slaying ../port_e
+slaying /quests/pupland/port_e
 hp 15
 sp 6
 y 26
@@ -4860,7 +4860,7 @@ end
 arch guild
 name Guild of the Laughing Skull
 no_pass 0
-slaying /pup_land/guilds/laughing_skull/ground
+slaying /quests/pupland/guilds/laughing_skull/ground
 x 16
 y 9
 end
@@ -4891,7 +4891,7 @@ y 24
 end
 arch guild
 name Laughing Skull's Storage Room
-slaying /pup_land/guilds/laughing_skull/storage_room
+slaying /quests/pupland/guilds/laughing_skull/storage_room
 hp 1
 sp 10
 x 21
@@ -4939,7 +4939,7 @@ y 8
 end
 arch barn
 name Dragon Hangar
-slaying /pup_land/nurnberg/dragonhangar/hangar
+slaying /nurnberg/dragonhangar/hangar
 hp 15
 sp 1
 x 26

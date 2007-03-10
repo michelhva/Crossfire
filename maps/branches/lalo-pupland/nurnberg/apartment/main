@@ -119,7 +119,7 @@ y 2
 unique 1
 end
 arch stair_up_2
-slaying /pup_land/nurnberg/apartment/upstairs
+slaying /nurnberg/apartment/upstairs
 hp 3
 sp 2
 x 1
@@ -632,7 +632,7 @@ y 1
 unique 1
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 10
 sp 21
 x 6
@@ -722,7 +722,7 @@ y 12
 end
 arch invis_exit
 name portal
-slaying /pup_land/nurnberg/apartment/to_past
+slaying /nurnberg/apartment/to_past
 msg
 You enter a magic portal...
 endmsg
@@ -1134,7 +1134,7 @@ y 2
 unique 1
 end
 arch stair_down_2
-slaying /pup_land/nurnberg/apartment/cave
+slaying /nurnberg/apartment/cave
 hp 10
 sp 1
 x 11

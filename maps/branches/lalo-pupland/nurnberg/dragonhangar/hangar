@@ -4583,7 +4583,7 @@ arch cobblestones2
 x 14
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 26
 sp 22
 x 14
@@ -4905,7 +4905,7 @@ arch cobblestones2
 x 15
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 26
 sp 22
 x 15
@@ -5252,7 +5252,7 @@ arch cobblestones2
 x 16
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 26
 sp 22
 x 16
@@ -5599,7 +5599,7 @@ arch cobblestones2
 x 17
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 26
 sp 22
 x 17
@@ -10766,7 +10766,7 @@ connected 93
 end
 arch invis_exit
 name nurnberg
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 msg
 The random ride is heading for
 Nurnberg today.
@@ -10941,7 +10941,7 @@ y 8
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/rainbow/station
+slaying /rainbow_islands/station
 msg
 Please hurry up or we will be moving
 without you.
@@ -11019,7 +11019,7 @@ y 26
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/lone_town/town
+slaying /lone_town/town
 msg
 Please hurry up or we will be moving
 without you.
@@ -11091,7 +11091,7 @@ y 14
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 msg
 Please hurry up or we will be moving
 without you.

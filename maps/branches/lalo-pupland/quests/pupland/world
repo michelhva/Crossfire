@@ -1755,7 +1755,7 @@ y 11
 end
 arch town_1
 name Lone Town
-slaying lone_town/town
+slaying /lone_town/town
 hp 5
 sp 18
 x 10
@@ -5453,7 +5453,7 @@ x 28
 y 37
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 25
 sp 6
 invisible 0
@@ -5652,7 +5652,7 @@ x 29
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 26
 sp 6
 invisible 0
@@ -5843,7 +5843,7 @@ x 30
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 27
 sp 6
 invisible 0
@@ -6030,7 +6030,7 @@ x 31
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 28
 sp 6
 invisible 0
@@ -6213,7 +6213,7 @@ x 32
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 29
 sp 6
 invisible 0
@@ -6407,7 +6407,7 @@ x 33
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 30
 sp 6
 invisible 0
@@ -6590,7 +6590,7 @@ x 34
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 31
 sp 6
 invisible 0
@@ -6781,7 +6781,7 @@ x 35
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 32
 sp 6
 invisible 0
@@ -6980,7 +6980,7 @@ x 36
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 33
 sp 6
 invisible 0
@@ -7163,7 +7163,7 @@ x 37
 y 36
 end
 arch invis_exit
-slaying rainbow/islands
+slaying /rainbow_islands/islands
 hp 34
 sp 6
 invisible 0
@@ -8429,7 +8429,7 @@ y 30
 end
 arch town_7
 name Nurnberg
-slaying nurnberg/city
+slaying /nurnberg/city
 hp 28
 sp 15
 x 27
