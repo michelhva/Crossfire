@@ -599,12 +599,12 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 11
 x 1
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
 damned 1
 end
@@ -621,14 +621,13 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 11
 x 1
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 1
@@ -676,6 +675,10 @@ arch dwall_2_2_1
 x 2
 y 3
 end
+arch swall_1_1_half
+x 2
+y 3
+end
 arch dungeon_magic
 x 2
 y 4
@@ -720,6 +723,10 @@ arch dwall_2_2_1
 x 2
 y 6
 end
+arch swall_1_1_half
+x 2
+y 6
+end
 arch dungeon_magic
 x 2
 y 7
@@ -761,6 +768,10 @@ x 2
 y 9
 end
 arch dwall_2_2_1
+x 2
+y 9
+end
+arch swall_1_1_half
 x 2
 y 9
 end
@@ -967,12 +978,12 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 11
 x 2
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
 damned 1
 end
@@ -989,14 +1000,13 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 11
 x 2
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 2
@@ -1477,12 +1487,12 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 9
 x 4
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
 damned 1
 end
@@ -1499,14 +1509,13 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 9
 x 4
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 4
@@ -1703,6 +1712,10 @@ arch dwall_2_2_1
 x 5
 y 12
 end
+arch swall_1_3_half
+x 5
+y 12
+end
 arch flagstone
 x 5
 y 13
@@ -1810,12 +1823,12 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 9
 x 5
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
 damned 1
 end
@@ -1832,14 +1845,13 @@ speed 10.000000
 lifesave 1
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 6
 sp 9
 x 5
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 5
@@ -2476,14 +2488,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 9
 x 7
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 7
@@ -2497,14 +2508,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 9
 x 7
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 7
@@ -2898,14 +2908,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 9
 x 8
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 8
@@ -2919,14 +2928,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 9
 x 8
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 8
@@ -3467,6 +3475,10 @@ arch dwall_2_2_1
 x 10
 y 12
 end
+arch swall_1_3_half
+x 10
+y 12
+end
 arch flagstone
 x 10
 y 13
@@ -3565,14 +3577,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 11
 x 10
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 10
@@ -3586,14 +3597,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 11
 x 10
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 10
@@ -3939,14 +3949,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 11
 x 11
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 11
@@ -3960,14 +3969,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 8
 sp 11
 x 11
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 11
@@ -4475,14 +4483,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 12
 sp 4
 x 13
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 13
@@ -4496,14 +4503,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 12
 sp 4
 x 13
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 13
@@ -4762,14 +4768,13 @@ y 29
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 12
 sp 4
 x 14
 y 29
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch dungeon_magic
 x 14
@@ -4783,14 +4788,13 @@ y 30
 speed 10.000000
 end
 arch teleporter
-slaying cdccastlekeepb1
+slaying cdccastlekeep/cdccastlekeepb1
 hp 12
 sp 4
 x 14
 y 30
-speed 0.010000
+speed 0.01
 invisible 1
-damned 1
 end
 arch blocked
 x 14
