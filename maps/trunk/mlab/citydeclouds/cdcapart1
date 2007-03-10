@@ -6162,10 +6162,6 @@ arch swall_2_1_1
 x 10
 y 39
 end
-arch wwall_0
-x 10
-y 39
-end
 arch dungeon_magic
 x 10
 y 40
@@ -6247,10 +6243,6 @@ x 10
 y 45
 end
 arch swall_2_2_1
-x 10
-y 45
-end
-arch wwall_0
 x 10
 y 45
 end
@@ -6809,13 +6801,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 11
-y 42
-end
-arch ladder_bi_up
-slaying cdcjjbuild2
-hp 23
-sp 13
 x 11
 y 42
 end
@@ -7707,10 +7692,6 @@ name_pl woodfloor
 x 12
 y 39
 end
-arch wwall_0
-x 12
-y 39
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -7723,10 +7704,6 @@ name_pl woodfloor
 x 12
 y 41
 end
-arch wwall_0
-x 12
-y 41
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -7736,10 +7713,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 12
-y 43
-end
-arch wwall_0
 x 12
 y 43
 end
@@ -7760,10 +7733,6 @@ x 12
 y 45
 end
 arch swall_2_1_2
-x 12
-y 45
-end
-arch wwall_0
 x 12
 y 45
 end

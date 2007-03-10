@@ -17616,6 +17616,14 @@ arch woodfloor
 x 41
 y 20
 end
+arch sign
+msg
+Property Rezoned
+Future home of a monster.
+endmsg
+x 41
+y 20
+end
 arch woodfloor
 x 41
 y 21
@@ -18017,15 +18025,6 @@ arch woodfloor
 x 42
 y 20
 end
-arch sign_e
-name J&J Building Supplies Upstairs
-name_pl J&J Building Supplies Upstairs
-msg
-J&J Building Supplies Upstairs
-endmsg
-x 42
-y 20
-end
 arch woodfloor
 x 42
 y 21
@@ -18410,13 +18409,6 @@ x 43
 y 19
 end
 arch woodfloor
-x 43
-y 20
-end
-arch stair_up_1
-slaying cdcjjbuild/cdcjjbuild1
-hp 11
-sp 5
 x 43
 y 20
 end
