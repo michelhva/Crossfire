@@ -1,0 +1,1503 @@
+arch map
+name Permanent Apartment
+difficulty 1
+region darcap
+width 13
+height 14
+enter_x 6
+enter_y 12
+msg
+Creator: Andreas Vogl
+Email: red.blaze@gmx.net
+Date: Sun Nov 19 18:16:58 2000
+endmsg
+end
+arch woodfloor2
+name woodfloor
+unique 1
+end
+arch woodwall_2_2_2
+end
+arch woodfloor2
+name woodfloor
+y 1
+unique 1
+end
+arch woodwall_2_1_1
+y 1
+end
+arch woodfloor2
+name woodfloor
+y 2
+unique 1
+end
+arch woodwall_2_1_1
+y 2
+end
+arch woodfloor2
+name woodfloor
+y 3
+unique 1
+end
+arch woodwall_2_1_1
+y 3
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_7.111
+y 3
+end
+arch woodfloor2
+name woodfloor
+y 4
+unique 1
+end
+arch woodwall_2_1_1
+y 4
+end
+arch woodfloor2
+name woodfloor
+y 5
+unique 1
+end
+arch woodwall_2_1_1
+y 5
+end
+arch woodfloor2
+name woodfloor
+y 6
+unique 1
+end
+arch woodwall_2_1_1
+y 6
+end
+arch woodfloor2
+name woodfloor
+y 7
+unique 1
+end
+arch woodwall_2_1_1
+y 7
+end
+arch woodfloor2
+name woodfloor
+y 8
+unique 1
+end
+arch woodwall_2_1_1
+y 8
+end
+arch woodfloor2
+name woodfloor
+y 9
+unique 1
+end
+arch woodwall_2_1_1
+y 9
+end
+arch woodfloor2
+name woodfloor
+y 10
+unique 1
+end
+arch woodwall_2_1_1
+y 10
+end
+arch woodfloor2
+name woodfloor
+y 11
+unique 1
+end
+arch woodwall_2_2_1
+y 11
+end
+arch blocked
+y 12
+end
+arch blocked
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 1
+unique 1
+end
+arch woodwall_2_1_2
+x 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 1
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 1
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 4
+unique 1
+end
+arch altar
+name pay 7000 diamonds
+slaying diamond
+msg
+Knock down the walls!
+endmsg
+food 7000
+x 1
+y 4
+connected 2
+protected 2
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 10
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 1
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 1
+y 11
+end
+arch blocked
+x 1
+y 12
+end
+arch blocked
+x 1
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 2
+unique 1
+end
+arch woodwall_2_2_3
+x 2
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 1
+unique 1
+end
+arch woodwall_2_2_1
+x 2
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 2
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 10
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 2
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 2
+y 11
+end
+arch blocked
+x 2
+y 12
+end
+arch blocked
+x 2
+y 13
+end
+arch blocked
+x 3
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 1
+unique 1
+end
+arch woodwall_2_1_2
+x 3
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 3
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 10
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 3
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 3
+y 11
+end
+arch blocked
+x 3
+y 12
+end
+arch blocked
+x 3
+y 13
+end
+arch blocked
+x 4
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 1
+unique 1
+end
+arch woodwall_2_1_2
+x 4
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 4
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 9
+unique 1
+end
+arch woodwall_2_2_2
+x 4
+y 9
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 10
+unique 1
+end
+arch woodwall_2_1_1
+x 4
+y 10
+end
+arch woodfloor2
+name woodfloor
+x 4
+y 11
+unique 1
+end
+arch woodwall_3_1
+x 4
+y 11
+end
+arch blocked
+x 4
+y 12
+end
+arch blocked
+x 4
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 5
+unique 1
+end
+arch woodwall_2_2_2
+x 5
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 1
+unique 1
+end
+arch woodwall_2_2_4
+x 5
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 5
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 9
+unique 1
+end
+arch woodwall_1_3
+x 5
+y 9
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 10
+unique 1
+end
+arch torch_1
+food 0
+x 5
+y 10
+material 0
+no_pick 1
+changing 0
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 11
+unique 1
+end
+arch woodwall_2_2_3
+x 5
+y 11
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 12
+unique 1
+end
+arch woodwall_2_1_1
+x 5
+y 12
+end
+arch woodfloor2
+name woodfloor
+x 5
+y 13
+unique 1
+end
+arch woodwall_2_2_1
+x 5
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 6
+unique 1
+end
+arch woodwall_2_1_2
+x 6
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 1
+unique 1
+end
+arch oakdoor
+name Navar City
+slaying /world/world_121_116
+face stalkergen.111
+hp 48
+sp 46
+x 6
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 6
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 9
+unique 1
+end
+arch igate_closed_1
+x 6
+y 9
+speed 0.500000
+connected 1
+protected 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 10
+unique 1
+end
+arch altar
+name apartment costs 200 pearls
+slaying pearl
+food 200
+x 6
+y 10
+connected 1
+protected 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 11
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 12
+unique 1
+end
+arch oakdoor
+slaying /world/world_116_102
+hp 26
+sp 26
+x 6
+y 12
+end
+arch woodfloor2
+name woodfloor
+x 6
+y 13
+unique 1
+end
+arch woodwall_2_1_2
+x 6
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 7
+unique 1
+end
+arch woodwall_2_2_3
+x 7
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 1
+unique 1
+end
+arch woodwall_2_2_1
+x 7
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 7
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 9
+unique 1
+end
+arch woodwall_1_4
+x 7
+y 9
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 10
+unique 1
+end
+arch torch_1
+food 0
+x 7
+y 10
+material 0
+no_pick 1
+changing 0
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 11
+unique 1
+end
+arch woodwall_2_2_2
+x 7
+y 11
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 12
+unique 1
+end
+arch woodwall_2_1_1
+x 7
+y 12
+end
+arch woodfloor2
+name woodfloor
+x 7
+y 13
+unique 1
+end
+arch woodwall_2_2_4
+x 7
+y 13
+end
+arch blocked
+x 8
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 1
+unique 1
+end
+arch woodwall_2_1_2
+x 8
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 8
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 9
+unique 1
+end
+arch woodwall_2_2_3
+x 8
+y 9
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 10
+unique 1
+end
+arch woodwall_2_1_1
+x 8
+y 10
+end
+arch woodfloor2
+name woodfloor
+x 8
+y 11
+unique 1
+end
+arch woodwall_3_1
+x 8
+y 11
+end
+arch blocked
+x 8
+y 12
+end
+arch blocked
+x 8
+y 13
+end
+arch blocked
+x 9
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 1
+unique 1
+end
+arch woodwall_2_1_2
+x 9
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 9
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 10
+unique 1
+end
+arch flowers_permanent
+x 9
+y 10
+end
+arch woodfloor2
+name woodfloor
+x 9
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 9
+y 11
+end
+arch blocked
+x 9
+y 12
+end
+arch blocked
+x 9
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 10
+unique 1
+end
+arch woodwall_2_2_2
+x 10
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 1
+unique 1
+end
+arch woodwall_2_2_4
+x 10
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 10
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 4
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 10
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 10
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 10
+y 11
+end
+arch blocked
+x 10
+y 12
+end
+arch blocked
+x 10
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 11
+unique 1
+end
+arch woodwall_2_1_2
+x 11
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 1
+unique 1
+end
+arch oakdoor
+name Mountain Village
+slaying /world/world_116_104
+face stalkergen.111
+hp 16
+sp 22
+x 11
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 2
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 3
+unique 1
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_A.111
+x 11
+y 3
+blocksview 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 4
+unique 1
+end
+arch clock
+x 11
+y 4
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 5
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 6
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 7
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 8
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 9
+unique 1
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 10
+unique 1
+end
+arch bed_save
+x 11
+y 10
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 11
+unique 1
+end
+arch woodwall_2_1_2
+x 11
+y 11
+end
+arch blocked
+x 11
+y 12
+end
+arch woodfloor2
+name woodfloor
+x 11
+y 13
+unique 1
+end
+arch teleporter
+name 2
+hp 2
+sp 4
+x 11
+y 13
+speed 0.000000
+connected 2
+protected 2
+end
+arch key2
+name Appartment Extender
+slaying cat_appartment_ext
+face axe_4.111
+x 11
+y 13
+end
+arch woodfloor2
+name woodfloor
+x 12
+unique 1
+end
+arch woodwall_2_2_3
+x 12
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 1
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 1
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 2
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 2
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 3
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 3
+end
+arch locked_door1
+name wall
+slaying cat_appartment_ext
+msg
+Buy an appartment extender to remove
+this wall.
+endmsg
+face woodwall_D.111
+x 12
+y 3
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 4
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 4
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 5
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 5
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 6
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 6
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 7
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 7
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 8
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 8
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 9
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 9
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 10
+unique 1
+end
+arch woodwall_2_1_1
+x 12
+y 10
+end
+arch woodfloor2
+name woodfloor
+x 12
+y 11
+unique 1
+end
+arch woodwall_2_2_4
+x 12
+y 11
+end
+arch blocked
+x 12
+y 12
+end
+arch blocked
+x 12
+y 13
+end
