@@ -10817,7 +10817,7 @@ connected 93
 end
 arch invis_exit
 name nurnberg
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 msg
 The random ride is heading for
 Nurnberg today.
@@ -10932,7 +10932,7 @@ y 8
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/rainbow/station
+slaying /rainbow_islands/station
 msg
 Please hurry up or we will be moving
 without you.
@@ -11013,7 +11013,7 @@ y 26
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/lone_town/town
+slaying /lone_town/town
 msg
 Please hurry up or we will be moving
 without you.
@@ -11085,7 +11085,7 @@ y 14
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 msg
 Please hurry up or we will be moving
 without you.

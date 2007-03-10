@@ -8374,7 +8374,7 @@ connected 26
 end
 arch perm_magic_portal
 name Pupland Terminal
-slaying /pup_land/terminal
+slaying /quests/pupland/terminal
 x 29
 y 5
 walk_on 0
@@ -8395,7 +8395,7 @@ connected 27
 end
 arch perm_magic_portal
 name Nurnberg
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 x 29
 y 6
 walk_on 0
@@ -8416,7 +8416,7 @@ connected 28
 end
 arch perm_magic_portal
 name Ancient Pupland
-slaying /pup_land/ancient/world
+slaying /quests/pupland/ancient/world
 hp 28
 sp 24
 x 29

@@ -2787,7 +2787,7 @@ x 12
 y 24
 end
 arch exit
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 hp 16
 sp 11
 x 12
@@ -5231,7 +5231,7 @@ y 6
 end
 arch perm_magic_portal
 name Pupland Terminal
-slaying /pup_land/terminal
+slaying /quests/pupland/terminal
 walk_on 0
 fly_on 0
 x 24
@@ -5252,7 +5252,7 @@ y 7
 end
 arch perm_magic_portal
 name Nurnberg
-slaying /pup_land/nurnberg/city
+slaying /nurnberg/city
 walk_on 0
 fly_on 0
 x 24
@@ -5273,7 +5273,7 @@ y 8
 end
 arch perm_magic_portal
 name Ancient Pupland
-slaying /pup_land/nurnberg/apartment/to_past
+slaying /nurnberg/apartment/to_past
 hp 4
 sp 4
 walk_on 0

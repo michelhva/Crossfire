@@ -654,7 +654,7 @@ x 5
 y 18
 end
 arch invis_exit
-slaying ../world
+slaying /quests/pupland/world
 hp 10
 sp 11
 x 5
@@ -752,7 +752,7 @@ y 15
 end
 arch market1
 name Acme Building Supply
-slaying /pup_land/lone_town/shops/buildshop
+slaying /lone_town/shops/buildshop
 hp 19
 sp 21
 x 6
@@ -890,7 +890,7 @@ y 15
 end
 arch market3
 name Acme Building Supply
-slaying /pup_land/lone_town/shops/buildshop
+slaying /lone_town/shops/buildshop
 hp 20
 sp 21
 x 7
@@ -3154,7 +3154,7 @@ y 1
 end
 arch guild
 name Purple Butterfly's Storage Room
-slaying /pup_land/guilds/purple_butterfly/storage_room
+slaying /quests/pupland/guilds/purple_butterfly/storage_room
 hp 1
 sp 10
 x 1
@@ -3194,7 +3194,7 @@ y 9
 end
 arch rl_house2
 name Permanent Apartments
-slaying /pup_land/lone_town/apartment/groundfloor
+slaying /lone_town/apartment/groundfloor
 hp 26
 sp 36
 x 11
@@ -3211,7 +3211,7 @@ y 1
 end
 arch guild
 name Guild of the Purple Butterfly
-slaying /pup_land/guilds/purple_butterfly/ground
+slaying /quests/pupland/guilds/purple_butterfly/ground
 hp 12
 sp 23
 x 12
@@ -3257,7 +3257,7 @@ y 16
 end
 arch dragon_exit
 name Pup Airline
-slaying ../terminal
+slaying /quests/pupland/terminal
 hp 2
 sp 9
 x 21
@@ -3265,7 +3265,7 @@ y 11
 end
 arch barn
 name Dragon Hangar
-slaying /pup_land/lone_town/dragonhangar/hangar
+slaying /lone_town/dragonhangar/hangar
 hp 16
 sp 1
 x 22
