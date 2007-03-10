@@ -1,0 +1,2757 @@
+arch map
+name Burial Ground
+difficulty 1
+region lakecountry
+width 8
+height 8
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Mon Mar 20 08:27:08 1995
+endmsg
+end
+arch dungeon_floor
+end
+arch flagstone_2_2_2
+end
+arch dungeon_floor
+y 1
+end
+arch flagstone_2_1_1
+y 1
+end
+arch dungeon_floor
+y 2
+end
+arch flagstone_2_1_1
+y 2
+end
+arch dungeon_floor
+y 3
+end
+arch flagstone_2_1_1
+y 3
+end
+arch dungeon_floor
+y 4
+end
+arch flagstone_2_1_1
+y 4
+end
+arch dungeon_floor
+y 5
+end
+arch flagstone_2_1_1
+y 5
+end
+arch dungeon_floor
+y 6
+end
+arch flagstone_2_1_1
+y 6
+end
+arch dungeon_floor
+y 7
+end
+arch flagstone_2_2_1
+y 7
+end
+arch dungeon_floor
+x 1
+end
+arch flagstone_2_1_2
+x 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 1
+y 1
+end
+arch dungeon_magic
+x 1
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 1
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 1
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 1
+y 1
+end
+arch dungeon_floor
+x 1
+y 1
+end
+arch gravestone
+name Ragnarok's gravestone
+msg
+I wish to see Morrigan once more
+endmsg
+x 1
+y 1
+material 0
+no_pick 1
+end
+arch magic_ear
+msg
+@match Ragnarok
+You feel hopeful.
+endmsg
+x 1
+y 1
+connected 1
+end
+arch teleporter
+name An image of a ghost
+slaying /world/world_109_126
+msg
+@match *
+"Tell me my name .. Who am I?"
+endmsg
+face ghost.111
+hp 18
+sp 22
+x 1
+y 1
+speed 0.000000
+connected 1
+end
+arch dungeon_floor
+x 1
+y 2
+end
+arch dungeon_magic
+x 1
+y 2
+end
+arch dungeon_floor
+name Angel of Death
+face angel.111
+x 1
+y 2
+end
+arch magic_mouth
+name howling voice
+msg
+"Tell me my name"
+endmsg
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 1
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 1
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 1
+y 3
+end
+arch dungeon_floor
+x 1
+y 3
+end
+arch glue
+x 1
+y 3
+end
+arch spider_web
+x 1
+y 3
+end
+arch glue
+x 1
+y 3
+end
+arch spider_web
+x 1
+y 3
+end
+arch glue
+x 1
+y 3
+end
+arch spider_web
+x 1
+y 3
+end
+arch rune_ball_lightning
+x 1
+y 3
+speed_left -297.100006
+end
+arch gravestone
+name Sannantes's Gravestone
+msg
+Sannantes Rests Here
+endmsg
+x 1
+y 3
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 1
+y 4
+end
+arch dungeon_magic
+x 1
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 1
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 1
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 1
+y 4
+end
+arch dungeon_floor
+x 1
+y 4
+end
+arch glue
+x 1
+y 4
+end
+arch spider_web
+x 1
+y 4
+end
+arch glue
+x 1
+y 4
+end
+arch spider_web
+x 1
+y 4
+end
+arch glue
+x 1
+y 4
+end
+arch spider_web
+x 1
+y 4
+end
+arch gravestone
+name X. Ofrendisa's Gravestone
+msg
+Here lies Xavines Ofrendisa,
+Fourth Princess of Khundsdorf
+endmsg
+x 1
+y 4
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 1
+y 5
+end
+arch dungeon_magic
+x 1
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 1
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 1
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 1
+y 5
+end
+arch dungeon_floor
+x 1
+y 5
+end
+arch glue
+x 1
+y 5
+end
+arch spider_web
+x 1
+y 5
+end
+arch glue
+x 1
+y 5
+end
+arch spider_web
+x 1
+y 5
+end
+arch glue
+x 1
+y 5
+end
+arch spider_web
+x 1
+y 5
+end
+arch rune_ball_lightning
+x 1
+y 5
+speed_left -297.100006
+end
+arch gravestone
+name Unmoving ghost
+face ghost.111
+x 1
+y 5
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 1
+y 6
+end
+arch dungeon_magic
+x 1
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 1
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 1
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 1
+y 6
+end
+arch dungeon_floor
+x 1
+y 6
+end
+arch glue
+x 1
+y 6
+end
+arch spider_web
+x 1
+y 6
+end
+arch glue
+x 1
+y 6
+end
+arch spider_web
+x 1
+y 6
+end
+arch glue
+x 1
+y 6
+end
+arch spider_web
+x 1
+y 6
+end
+arch random_artifact
+x 1
+y 6
+end
+arch random_artifact
+x 1
+y 6
+end
+arch gravestone
+name EagleEye's gravestone
+msg
+I wish to rest in peace
+endmsg
+x 1
+y 6
+material 0
+no_pick 1
+end
+arch dungeon_floor
+x 1
+y 7
+end
+arch flagstone_2_1_2
+x 1
+y 7
+end
+arch dungeon_floor
+x 2
+end
+arch flagstone_2_1_2
+x 2
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 1
+end
+arch dungeon_magic
+x 2
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 1
+end
+arch dungeon_floor
+x 2
+y 1
+end
+arch gravestone
+name A quiet devil ..
+face devil.111
+x 2
+y 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 2
+end
+arch dungeon_magic
+x 2
+y 2
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 2
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 2
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch glue
+x 2
+y 2
+end
+arch spider_web
+x 2
+y 2
+end
+arch glue
+x 2
+y 2
+end
+arch spider_web
+x 2
+y 2
+end
+arch glue
+x 2
+y 2
+end
+arch spider_web
+x 2
+y 2
+end
+arch gravestone
+name IronWolf's gravestone
+msg
+I will revenge
+endmsg
+x 2
+y 2
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch glue
+x 2
+y 3
+end
+arch spider_web
+x 2
+y 3
+end
+arch glue
+x 2
+y 3
+end
+arch spider_web
+x 2
+y 3
+end
+arch glue
+x 2
+y 3
+end
+arch spider_web
+x 2
+y 3
+end
+arch gravestone
+name Volgenriss's Gravestone
+msg
+Volgenriss Sleeps forever Here.
+endmsg
+x 2
+y 3
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 4
+end
+arch dungeon_magic
+x 2
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch glue
+x 2
+y 4
+end
+arch spider_web
+x 2
+y 4
+end
+arch glue
+x 2
+y 4
+end
+arch spider_web
+x 2
+y 4
+end
+arch glue
+x 2
+y 4
+end
+arch spider_web
+x 2
+y 4
+end
+arch gravestone
+name A nearly erased Gravestone
+msg
+H.j..uik .es. H.r.
+endmsg
+x 2
+y 4
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch angel
+name Angel of Death
+hp 8000
+exp 200000
+dam 30
+wc -20
+ac -20
+x 2
+y 5
+level 100
+attacktype 285
+carrying 7500
+immune 28
+arch staff
+name Staff
+sp 35
+food 20
+level 20
+identified 1
+end
+arch pyro_book
+value 1600
+randomitems none
+identified 1
+arch spell_comet
+end
+end
+arch spell_hellfire
+end
+arch spell_mass_confusion
+end
+arch abil_icestorm
+end
+arch spell_summon_pet_monster
+end
+arch abil_fear
+end
+arch spell_paralyze
+end
+arch spell_sm_lightning
+end
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 2
+y 6
+end
+arch dungeon_magic
+x 2
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 2
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 2
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 2
+y 6
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch glue
+x 2
+y 6
+end
+arch spider_web
+x 2
+y 6
+end
+arch glue
+x 2
+y 6
+end
+arch spider_web
+x 2
+y 6
+end
+arch glue
+x 2
+y 6
+end
+arch spider_web
+x 2
+y 6
+end
+arch rune_ball_lightning
+x 2
+y 6
+speed_left -297.100006
+end
+arch gravestone
+name Arch Stenton's Gravestone
+msg
+Arch Stenton Lies Here, and died as
+he lived, without any gold in his pockets.
+endmsg
+x 2
+y 6
+material 0
+no_pick 1
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch flagstone_2_1_2
+x 2
+y 7
+end
+arch dungeon_floor
+x 3
+end
+arch flagstone_2_1_2
+x 3
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 1
+end
+arch dungeon_magic
+x 3
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 1
+end
+arch glue
+x 3
+y 1
+end
+arch spider_web
+x 3
+y 1
+end
+arch glue
+x 3
+y 1
+end
+arch spider_web
+x 3
+y 1
+end
+arch glue
+x 3
+y 1
+end
+arch spider_web
+x 3
+y 1
+end
+arch rune_ball_lightning
+x 3
+y 1
+speed_left -297.100006
+end
+arch gravestone
+name Unnamed Gravestone
+msg
+Whoever he may be, may He Find Fido(tm).
+endmsg
+x 3
+y 1
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 2
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 2
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch gravestone
+name Gurunarri's Gravestone
+msg
+In Memoriam, His Wife and 44 Children.
+endmsg
+x 3
+y 2
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch gravestone
+name Ancient Gravestone
+msg
+I told them I was sick !
+endmsg
+x 3
+y 3
+material 0
+no_pick 1
+end
+arch corpse1
+name A newly killed adventurer's corpse
+msg
+It's cold and stiff
+endmsg
+x 3
+y 3
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch glue
+x 3
+y 4
+end
+arch spider_web
+x 3
+y 4
+end
+arch glue
+x 3
+y 4
+end
+arch spider_web
+x 3
+y 4
+end
+arch glue
+x 3
+y 4
+end
+arch spider_web
+x 3
+y 4
+end
+arch random_artifact
+x 3
+y 4
+end
+arch random_artifact
+x 3
+y 4
+end
+arch gravestone
+name Klurissa's Gravestone
+msg
+May She Eternally Hunt Dragons,
+In the Celestial Caves of Oron.
+endmsg
+x 3
+y 4
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch glue
+x 3
+y 5
+end
+arch spider_web
+x 3
+y 5
+end
+arch glue
+x 3
+y 5
+end
+arch spider_web
+x 3
+y 5
+end
+arch glue
+x 3
+y 5
+end
+arch spider_web
+x 3
+y 5
+end
+arch gravestone
+name Gurashdah the Old's Gravestone
+x 3
+y 5
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 3
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 3
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch glue
+x 3
+y 6
+end
+arch spider_web
+x 3
+y 6
+end
+arch glue
+x 3
+y 6
+end
+arch spider_web
+x 3
+y 6
+end
+arch glue
+x 3
+y 6
+end
+arch spider_web
+x 3
+y 6
+end
+arch gravestone
+name Gurashdah the Young's Gravestone
+x 3
+y 6
+material 0
+no_pick 1
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch flagstone_2_1_2
+x 3
+y 7
+end
+arch dungeon_floor
+x 4
+end
+arch flagstone_2_1_2
+x 4
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 1
+end
+arch dungeon_magic
+x 4
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 1
+end
+arch dungeon_floor
+x 4
+y 1
+end
+arch glue
+x 4
+y 1
+end
+arch spider_web
+x 4
+y 1
+end
+arch glue
+x 4
+y 1
+end
+arch spider_web
+x 4
+y 1
+end
+arch glue
+x 4
+y 1
+end
+arch spider_web
+x 4
+y 1
+end
+arch gravestone
+name Hrivenness's Gravestone
+msg
+Hrivernness Rests Here, after a
+short life of 947 years.
+endmsg
+x 4
+y 1
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 2
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 2
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 2
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch gravestone
+name Driffens Gravestone
+msg
+Remember Us, the Driffens
+endmsg
+x 4
+y 2
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch gravestone
+name Farkhenn's Gravestone
+msg
+Last House of Family Farkhenn.
+Please clean your feet before
+stepping inside.
+endmsg
+x 4
+y 3
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 4
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch glue
+x 4
+y 4
+end
+arch spider_web
+x 4
+y 4
+end
+arch glue
+x 4
+y 4
+end
+arch spider_web
+x 4
+y 4
+end
+arch glue
+x 4
+y 4
+end
+arch spider_web
+x 4
+y 4
+end
+arch gravestone
+name Jurudas's Gravestone
+msg
+Jurudas Sleeps Forever Here.
+endmsg
+x 4
+y 4
+material 0
+no_pick 1
+end
+arch corpse
+name bob's decayed corpse
+msg
+It smells... some larva worms fell off
+of corpse ...
+endmsg
+x 4
+y 4
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch glue
+x 4
+y 5
+end
+arch spider_web
+x 4
+y 5
+end
+arch glue
+x 4
+y 5
+end
+arch spider_web
+x 4
+y 5
+end
+arch glue
+x 4
+y 5
+end
+arch spider_web
+x 4
+y 5
+end
+arch gravestone
+name Morind's Gravestone
+msg
+*** RIP ***
+Morind Termaness
+3474EK-3561EK
+endmsg
+x 4
+y 5
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 4
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 4
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch glue
+x 4
+y 6
+end
+arch spider_web
+x 4
+y 6
+end
+arch glue
+x 4
+y 6
+end
+arch spider_web
+x 4
+y 6
+end
+arch glue
+x 4
+y 6
+end
+arch spider_web
+x 4
+y 6
+end
+arch rune_ball_lightning
+x 4
+y 6
+speed_left -297.100006
+end
+arch gravestone
+name <erased name>
+x 4
+y 6
+material 0
+no_pick 1
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch flagstone_2_1_2
+x 4
+y 7
+end
+arch dungeon_floor
+x 5
+end
+arch flagstone_2_1_2
+x 5
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 1
+end
+arch glue
+x 5
+y 1
+end
+arch spider_web
+x 5
+y 1
+end
+arch glue
+x 5
+y 1
+end
+arch spider_web
+x 5
+y 1
+end
+arch glue
+x 5
+y 1
+end
+arch spider_web
+x 5
+y 1
+end
+arch rune_ball_lightning
+x 5
+y 1
+speed_left -297.100006
+end
+arch gravestone
+name Ancient Gravestone
+msg
+Simosianius Alidritus Rests Here
+endmsg
+x 5
+y 1
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 2
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 2
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 2
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch gravestone
+name Igor's gravestone
+msg
+Death cannot trap me
+endmsg
+x 5
+y 2
+material 0
+no_pick 1
+end
+arch lich
+name Igor, the Lich
+hp 3000
+wc -12
+x 5
+y 2
+speed 2.000000
+level 30
+flying 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 3
+end
+arch dungeon_floor
+x 5
+y 3
+end
+arch gravestone
+name Hajij's Gravestone
+x 5
+y 3
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 4
+end
+arch dungeon_floor
+x 5
+y 4
+end
+arch glue
+x 5
+y 4
+end
+arch spider_web
+x 5
+y 4
+end
+arch glue
+x 5
+y 4
+end
+arch spider_web
+x 5
+y 4
+end
+arch glue
+x 5
+y 4
+end
+arch spider_web
+x 5
+y 4
+end
+arch gravestone
+name Jurudan's Gravestone
+msg
+Jurudan the Blond rests here.
+endmsg
+x 5
+y 4
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch glue
+x 5
+y 5
+end
+arch spider_web
+x 5
+y 5
+end
+arch glue
+x 5
+y 5
+end
+arch spider_web
+x 5
+y 5
+end
+arch glue
+x 5
+y 5
+end
+arch spider_web
+x 5
+y 5
+end
+arch gravestone
+name Elbereth's gravestone
+msg
+Peace! in life or in death!
+endmsg
+x 5
+y 5
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 5
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 5
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch glue
+x 5
+y 6
+end
+arch spider_web
+x 5
+y 6
+end
+arch glue
+x 5
+y 6
+end
+arch spider_web
+x 5
+y 6
+end
+arch glue
+x 5
+y 6
+end
+arch spider_web
+x 5
+y 6
+end
+arch gravestone
+name A ghost, must be
+face ghast.111
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 7
+end
+arch flagstone_2_1_2
+x 5
+y 7
+end
+arch dungeon_floor
+x 6
+end
+arch flagstone_2_1_2
+x 6
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 1
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 1
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 1
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 1
+end
+arch magic_ear
+name lastwish(1)
+msg
+@match Ragnarok
+You feel hopeful.
+endmsg
+x 6
+y 1
+connected 1
+end
+arch dungeon_floor
+x 6
+y 1
+end
+arch glue
+x 6
+y 1
+end
+arch spider_web
+x 6
+y 1
+end
+arch glue
+x 6
+y 1
+end
+arch spider_web
+x 6
+y 1
+end
+arch glue
+x 6
+y 1
+end
+arch spider_web
+x 6
+y 1
+end
+arch gravestone
+name Kashu's gravestone
+msg
+I wish someone bring Dragonbane back
+and rid the land of dragons
+endmsg
+x 6
+y 1
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 2
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 2
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch glue
+x 6
+y 2
+end
+arch spider_web
+x 6
+y 2
+end
+arch glue
+x 6
+y 2
+end
+arch spider_web
+x 6
+y 2
+end
+arch glue
+x 6
+y 2
+end
+arch spider_web
+x 6
+y 2
+end
+arch rune_ball_lightning
+x 6
+y 2
+speed_left -297.100006
+end
+arch gravestone
+name Ragnor's Gravestone
+msg
+Rumors of my death are greatly exaggerated.
+endmsg
+x 6
+y 2
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 3
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 3
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 3
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch glue
+x 6
+y 3
+end
+arch spider_web
+x 6
+y 3
+end
+arch glue
+x 6
+y 3
+end
+arch spider_web
+x 6
+y 3
+end
+arch glue
+x 6
+y 3
+end
+arch spider_web
+x 6
+y 3
+end
+arch gravestone
+name Memorial of 444719
+msg
+High Priestess of Fido, Marshall of the Crusaders.
+endmsg
+x 6
+y 3
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 4
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 4
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 4
+end
+arch dungeon_floor
+x 6
+y 4
+end
+arch glue
+x 6
+y 4
+end
+arch spider_web
+x 6
+y 4
+end
+arch glue
+x 6
+y 4
+end
+arch spider_web
+x 6
+y 4
+end
+arch glue
+x 6
+y 4
+end
+arch spider_web
+x 6
+y 4
+end
+arch rune_ball_lightning
+x 6
+y 4
+speed_left -297.100006
+end
+arch gravestone
+name Aldurian Noren Rests Here
+x 6
+y 4
+material 0
+no_pick 1
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 5
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 5
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch glue
+x 6
+y 5
+end
+arch spider_web
+x 6
+y 5
+end
+arch glue
+x 6
+y 5
+end
+arch spider_web
+x 6
+y 5
+end
+arch glue
+x 6
+y 5
+end
+arch spider_web
+x 6
+y 5
+end
+arch gravestone
+name Something looks like ...
+face ghost.111
+x 6
+y 5
+end
+arch magic_mouth
+name howling voice
+msg
+A voice howls in rage, "DIE!!
+endmsg
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch magic_mouth
+name eerie voice
+msg
+An eerie voice whispers, "Live ... Not
+...
+endmsg
+x 6
+y 6
+end
+arch magic_mouth
+name mad voice
+msg
+A mad voice shouts, "DIE!!!
+endmsg
+x 6
+y 6
+end
+arch magic_mouth
+name sad voice
+msg
+A sad voice weeps, "He died ...
+endmsg
+x 6
+y 6
+end
+arch dungeon_floor
+x 6
+y 6
+end
+arch glue
+x 6
+y 6
+end
+arch spider_web
+x 6
+y 6
+end
+arch glue
+x 6
+y 6
+end
+arch spider_web
+x 6
+y 6
+end
+arch glue
+x 6
+y 6
+end
+arch spider_web
+x 6
+y 6
+end
+arch rune_ball_lightning
+x 6
+y 6
+speed_left -297.100006
+end
+arch gravestone
+name Bear's gravestone
+msg
+I wish for a beer
+endmsg
+x 6
+y 6
+end
+arch dungeon_floor
+x 6
+y 7
+end
+arch flagstone_2_1_2
+x 6
+y 7
+end
+arch dungeon_floor
+x 7
+end
+arch flagstone_2_2_3
+x 7
+end
+arch dungeon_floor
+x 7
+y 1
+end
+arch flagstone_2_1_1
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch flagstone_2_1_1
+x 7
+y 2
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch flagstone_2_1_1
+x 7
+y 3
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch flagstone_2_1_1
+x 7
+y 4
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch flagstone_2_1_1
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch flagstone_2_1_1
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch flagstone_2_2_4
+x 7
+y 7
+end

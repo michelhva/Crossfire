@@ -1,0 +1,5177 @@
+arch map
+name Mopoon's Weapon Shop
+difficulty 25
+region lakecountry
+shopitems weapons:65;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
+shopmin 10
+shopmax 100000
+width 28
+height 28
+msg
+Creator: Kundi, Xue
+Email: xkd@soda.berkeley.edu
+Date: Sun Mar 19 06:18:46 1995
+endmsg
+end
+arch blocked
+end
+arch dungeon_floor
+y 1
+end
+arch cave24
+y 1
+end
+arch dungeon_floor
+y 2
+end
+arch cave3
+y 2
+end
+arch cave23
+y 3
+end
+arch cave24
+y 4
+end
+arch dungeon_floor
+y 5
+end
+arch cave3
+y 5
+end
+arch cave23
+y 6
+end
+arch blocked
+y 7
+end
+arch blocked
+y 8
+end
+arch blocked
+y 9
+end
+arch dungeon_floor
+y 10
+end
+arch cave24
+y 10
+end
+arch shop_empty
+y 11
+end
+arch cave3
+y 11
+end
+arch shop_empty
+y 12
+end
+arch cave3
+y 12
+end
+arch shop_empty
+y 13
+end
+arch cave3
+y 13
+end
+arch cave23
+y 14
+end
+arch blocked
+y 15
+end
+arch blocked
+y 16
+end
+arch blocked
+y 17
+end
+arch blocked
+y 18
+end
+arch blocked
+y 19
+end
+arch dungeon_floor
+y 20
+end
+arch cave24
+y 20
+end
+arch dungeon_floor
+y 21
+end
+arch cave3
+y 21
+end
+arch dungeon_floor
+y 22
+end
+arch cave3
+y 22
+end
+arch cave23
+y 23
+end
+arch blocked
+y 24
+end
+arch blocked
+y 25
+end
+arch blocked
+y 26
+end
+arch blocked
+y 27
+end
+arch blocked
+x 1
+end
+arch dungeon_floor
+x 1
+y 1
+end
+arch cave4
+x 1
+y 1
+end
+arch dungeon_floor
+x 1
+y 2
+end
+arch dungeon_floor
+x 1
+y 3
+end
+arch cave7
+x 1
+y 3
+end
+arch dungeon_floor
+x 1
+y 4
+end
+arch cave13
+x 1
+y 4
+end
+arch dungeon_floor
+x 1
+y 5
+end
+arch dungeon_floor
+x 1
+y 6
+end
+arch cave12
+x 1
+y 6
+end
+arch dungeon_floor
+x 1
+y 7
+end
+arch cave3
+x 1
+y 7
+end
+arch shop_empty
+x 1
+y 8
+end
+arch cave3
+x 1
+y 8
+end
+arch shop_empty
+x 1
+y 9
+end
+arch cave3
+x 1
+y 9
+end
+arch shop_empty
+x 1
+y 10
+end
+arch cave9
+x 1
+y 10
+end
+arch shop_special
+x 1
+y 11
+end
+arch shop_special
+x 1
+y 12
+end
+arch shop_special
+x 1
+y 13
+end
+arch cave12
+x 1
+y 14
+end
+arch shop_empty
+x 1
+y 15
+end
+arch cave3
+x 1
+y 15
+end
+arch shop_empty
+x 1
+y 16
+end
+arch cave3
+x 1
+y 16
+end
+arch cave23
+x 1
+y 17
+end
+arch blocked
+x 1
+y 18
+end
+arch dungeon_floor
+x 1
+y 19
+end
+arch cave24
+x 1
+y 19
+end
+arch dungeon_floor
+x 1
+y 20
+end
+arch cave9
+x 1
+y 20
+end
+arch dungeon_floor
+x 1
+y 21
+end
+arch dungeon_floor
+x 1
+y 22
+end
+arch dungeon_floor
+x 1
+y 23
+end
+arch cave12
+x 1
+y 23
+end
+arch dungeon_floor
+x 1
+y 24
+end
+arch cave3
+x 1
+y 24
+end
+arch cave23
+x 1
+y 25
+end
+arch blocked
+x 1
+y 26
+end
+arch blocked
+x 1
+y 27
+end
+arch blocked
+x 2
+end
+arch dungeon_floor
+x 2
+y 1
+end
+arch cave4
+x 2
+y 1
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch swall_2_1_2
+x 2
+y 7
+end
+arch shop_special
+x 2
+y 8
+end
+arch shop_special
+x 2
+y 9
+end
+arch shop_special
+x 2
+y 10
+end
+arch shop_special
+x 2
+y 11
+end
+arch shop_special
+x 2
+y 12
+end
+arch shop_special
+x 2
+y 13
+end
+arch shop_special
+x 2
+y 14
+end
+arch shop_special
+x 2
+y 15
+end
+arch shop_special
+x 2
+y 16
+end
+arch shop_empty
+x 2
+y 17
+end
+arch cave7
+x 2
+y 17
+end
+arch cave23
+x 2
+y 18
+end
+arch dungeon_floor
+x 2
+y 19
+end
+arch cave4
+x 2
+y 19
+end
+arch dungeon_floor
+x 2
+y 20
+end
+arch dungeon_floor
+x 2
+y 21
+end
+arch dungeon_floor
+x 2
+y 22
+end
+arch dungeon_floor
+x 2
+y 23
+end
+arch dungeon_floor
+x 2
+y 24
+end
+arch dungeon_floor
+x 2
+y 25
+end
+arch cave7
+x 2
+y 25
+end
+arch cave23
+x 2
+y 26
+end
+arch blocked
+x 2
+y 27
+end
+arch dungeon_floor
+x 3
+end
+arch cave24
+x 3
+end
+arch dungeon_floor
+x 3
+y 1
+end
+arch cave9
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch swall_2_1_2
+x 3
+y 7
+end
+arch shop_special
+x 3
+y 8
+end
+arch shop_empty
+x 3
+y 9
+end
+arch shop_empty
+x 3
+y 10
+end
+arch shop_empty
+x 3
+y 11
+end
+arch shop_empty
+x 3
+y 12
+end
+arch cave_0
+x 3
+y 12
+end
+arch shop_special
+x 3
+y 13
+end
+arch shop_special
+x 3
+y 14
+end
+arch shop_special
+x 3
+y 15
+end
+arch shop_special
+x 3
+y 16
+end
+arch shop_special
+x 3
+y 17
+end
+arch shop_empty
+x 3
+y 18
+end
+arch cave12
+x 3
+y 18
+end
+arch dungeon_floor
+x 3
+y 19
+end
+arch cave9
+x 3
+y 19
+end
+arch dungeon_floor
+x 3
+y 20
+end
+arch dungeon_floor
+x 3
+y 21
+end
+arch block_door_closed
+x 3
+y 21
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 3
+y 22
+end
+arch block_door_closed
+x 3
+y 22
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 3
+y 23
+end
+arch block_door_closed
+x 3
+y 23
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 3
+y 24
+end
+arch block_door_closed
+x 3
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 3
+y 25
+end
+arch dungeon_floor
+x 3
+y 26
+end
+arch cave12
+x 3
+y 26
+end
+arch dungeon_floor
+x 3
+y 27
+end
+arch cave23
+x 3
+y 27
+end
+arch dungeon_floor
+x 4
+end
+arch cave4
+x 4
+end
+arch dungeon_floor
+x 4
+y 1
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch swall_2_1_2
+x 4
+y 7
+end
+arch shop_empty
+x 4
+y 8
+end
+arch firewall_3
+name fire jet
+x 4
+y 8
+end
+arch shop_empty
+x 4
+y 9
+end
+arch firewall_2
+name fire jet
+x 4
+y 9
+end
+arch shop_empty
+x 4
+y 10
+end
+arch create_dragon_mail
+x 4
+y 10
+end
+arch shop_empty
+x 4
+y 11
+end
+arch create_dragon_shield
+x 4
+y 11
+end
+arch shop_empty
+x 4
+y 12
+end
+arch shop_special
+x 4
+y 13
+end
+arch shop_special
+x 4
+y 14
+end
+arch shop_special
+x 4
+y 15
+end
+arch shop_special
+x 4
+y 16
+end
+arch shop_special
+x 4
+y 17
+end
+arch shop_empty
+x 4
+y 18
+end
+arch swall_2_1_2
+x 4
+y 18
+end
+arch dungeon_floor
+x 4
+y 19
+end
+arch dungeon_floor
+x 4
+y 20
+end
+arch block_door_closed
+x 4
+y 20
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 4
+y 21
+end
+arch block_door_closed
+x 4
+y 21
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 4
+y 22
+end
+arch dungeon_floor
+x 4
+y 23
+end
+arch dungeon_floor
+x 4
+y 24
+end
+arch block_door_closed
+x 4
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 4
+y 25
+end
+arch dungeon_floor
+x 4
+y 26
+end
+arch dungeon_floor
+x 4
+y 27
+end
+arch cave2
+x 4
+y 27
+end
+arch dungeon_floor
+x 5
+end
+arch cave4
+x 5
+end
+arch dungeon_floor
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 3
+end
+arch dungeon_floor
+x 5
+y 4
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 7
+end
+arch swall_2_1_2
+x 5
+y 7
+end
+arch sea
+name Strange liquid bath
+x 5
+y 8
+no_pass 0
+end
+arch shop_empty
+x 5
+y 9
+end
+arch firewall_1
+name fire jet
+x 5
+y 9
+end
+arch shop_empty
+x 5
+y 10
+end
+arch woodfloor
+name anvil
+face ambolt.111
+x 5
+y 10
+end
+arch shop_empty
+x 5
+y 11
+end
+arch create_eyeshield
+x 5
+y 11
+end
+arch shop_empty
+x 5
+y 12
+end
+arch shop_special
+x 5
+y 13
+end
+arch shop_special
+x 5
+y 14
+end
+arch shop_special
+x 5
+y 15
+end
+arch shop_special
+x 5
+y 16
+end
+arch shop_special
+x 5
+y 17
+end
+arch shop_empty
+x 5
+y 18
+end
+arch swall_2_1_2
+x 5
+y 18
+end
+arch dungeon_floor
+x 5
+y 19
+end
+arch dungeon_floor
+x 5
+y 20
+end
+arch block_door_closed
+x 5
+y 20
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 5
+y 21
+end
+arch baby_dragon
+x 5
+y 21
+end
+arch dungeon_floor
+x 5
+y 22
+end
+arch dungeon_floor
+x 5
+y 23
+end
+arch dungeon_floor
+x 5
+y 24
+end
+arch block_door_closed
+x 5
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 5
+y 25
+end
+arch altar
+slaying diamond
+food 25
+x 5
+y 25
+connected 9
+end
+arch dungeon_floor
+x 5
+y 26
+end
+arch dungeon_floor
+x 5
+y 27
+end
+arch cave2
+x 5
+y 27
+end
+arch dungeon_floor
+x 6
+end
+arch cave25
+x 6
+end
+arch dungeon_floor
+x 6
+y 1
+end
+arch block_door_closed
+name wall
+face cave10.111
+x 6
+y 1
+connected 13
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch dungeon_floor
+x 6
+y 4
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 6
+end
+arch dungeon_floor
+x 6
+y 7
+end
+arch swall_2_2_3
+x 6
+y 7
+end
+arch dungeon_floor
+x 6
+y 8
+end
+arch swall_2_2_1
+x 6
+y 8
+end
+arch shop_empty
+x 6
+y 9
+end
+arch smith
+name Mopoon, the Dragonslayer
+msg
+@match Kashu
+Mopoon smiles and nods approvingly at
+you.
+@match Twak
+"Ah.. Now I remember that's the old
+druid's name!"
+@match Zykie
+"Don't say that name again. It brings
+back some sad memories. How I wish to
+see him again, my old Zykie."
+@match Thanks|thanks|thank|thanx|Thank
+"You are welcome. Give me some of
+your rare discoveries next time."
+@match spirit|forest|druid
+"Someone said the wind in the forest
+.. hmm, or was it the trees? ..anyway
+they say you can find the true name of
+the ancient druid if you stay in the
+forest long enough."
+@match lord|Lord|master|Master
+"Don't you think I am the Lord the
+land that I have slawn so many dragons
+and freed so many people of suffering."
+"But then again, I have retired the
+world for a long time. Ask the sages who
+live by the sea."
+@match Dragonslayer
+"That's me. Well, I was so famous,
+and my sword also, that they confused
+my name with the sword's. I was named
+Dragonslayer by my father who tried all
+his life to avenge for the deaths of
+his village."
+@match Dragonbane|dragonbane
+"What do you want of my Dragonbane?"
+@match Power|Mail|dragonmail|mail
+"What do you want of my Power Dragon
+Mail?"
+@match highlord|HighLord|highlords
+"Dragon Highlords? They are really
+powerful. You can find a few of them
+in the dragon caves in the forest
+not far away from west of Navar."
+@match Dragon|dragon|dragons
+"Ah, now you say the right word.
+There are three kinds of dragons, at
+least while I was out genociding them.
+Fire dragon is the biggest. Ice dragon
+is the smallest and weakest. But the
+electric dragons are the hardest to
+deal with."
+@match buy|Buy|give|borrow|lend|take
+"No. They are not for sale and I
+don't lend my Dragon mail or my
+ragonbane. Unless you can impress me
+and prove yourself worthy."
+@match dragonsteak|Dragonsteak
+"You can get dragonsteaks from
+wyverns and hatchlings!"
+@match firedragon|Fire|red|flame
+"I tell you this, fire dragons are
+vulnerable to cold."
+@match electric|Electric|lightning
+"Lightning dragons fear fire just as
+much as cold dragons. "
+@match ice|Ice|chinese|Chinese
+"Ice dragons are vulnerable to fire.
+This advice worth a lot. But we are
+friends, arn't we?"
+@match break|chat
+"Okay, I will take a break now and
+tell you something about the cave.
+The cave was originally Wist, the
+mad wizard's. But he seemed to have
+left long time ago. So I worked to
+enlarge it and made it magnificent
+as it is now. I know there is a secret
+path in this cave."
+@match secret|path
+"Yes, a secret path that was what's
+left of the wizard's days. I don't
+like that place. So I never went in.
+But I know the word to trigger a
+portal to open to there."
+@match word|pass|password
+"You bring me the Crown of Fire
+that Oldie Moldie has, and I will
+tell you. When you bring it, don't
+bring it into the shop."
+@match entrance
+"Entrance to what?"
+@match *
+"Choose some other topics, or I will
+go on make another dragon mail and you
+can enjoy the dragons. If you want a
+chat come when I am taking a break."
+endmsg
+x 6
+y 9
+end
+arch shop_empty
+x 6
+y 10
+end
+arch cave11
+x 6
+y 10
+end
+arch cave1
+x 6
+y 11
+end
+arch shop_empty
+x 6
+y 12
+end
+arch cave5
+x 6
+y 12
+end
+arch cave14
+x 6
+y 12
+end
+arch shop_empty
+x 6
+y 13
+end
+arch shop_special
+x 6
+y 14
+end
+arch shop_special
+x 6
+y 15
+end
+arch shop_special
+x 6
+y 16
+end
+arch shop_special
+x 6
+y 17
+end
+arch shop_empty
+x 6
+y 18
+end
+arch swall_2_1_2
+x 6
+y 18
+end
+arch dungeon_floor
+x 6
+y 19
+end
+arch dungeon_floor
+x 6
+y 20
+end
+arch block_door_closed
+x 6
+y 20
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 6
+y 21
+end
+arch baby_dragon
+x 6
+y 21
+end
+arch dungeon_floor
+x 6
+y 22
+end
+arch dungeon_floor
+x 6
+y 23
+end
+arch dungeon_floor
+x 6
+y 24
+end
+arch block_door_closed
+x 6
+y 24
+speed 0.500000
+connected 9
+end
+arch magic_mouth
+msg
+25 small diamonds for a practice.
+endmsg
+x 6
+y 25
+end
+arch dungeon_floor
+x 6
+y 25
+end
+arch dungeon_floor
+x 6
+y 26
+end
+arch dungeon_floor
+x 6
+y 27
+end
+arch cave2
+x 6
+y 27
+end
+arch blocked
+x 7
+end
+arch dungeon_floor
+x 7
+y 1
+end
+arch cave4
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch swall_1_3
+x 7
+y 8
+end
+arch altar
+slaying Crown of Fire
+msg
+Mopoon says, "The word of activation is
+the name of an old warrior king,
+Kashu.
+endmsg
+food 1
+x 7
+y 9
+invisible 1
+end
+arch magic_ear
+msg
+@match Kashu
+The whole dungeon starts to shake as
+you invokes some old mechanism of the
+place..
+endmsg
+x 7
+y 9
+connected 12
+end
+arch magic_mouth
+msg
+Mopoon says, "Don't litter on this
+square. The square has some power. I
+feel uncomfortable when I feel it.
+endmsg
+x 7
+y 9
+end
+arch teleporter
+name woodfloor
+slaying Mopoon_wshop
+face woodfloor.111
+hp 23
+sp 13
+x 7
+y 9
+speed 0.000000
+connected 12
+end
+arch woodfloor
+x 7
+y 10
+end
+arch cave12
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch cave8
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch cave16
+x 7
+y 12
+end
+arch shop_empty
+x 7
+y 13
+end
+arch cave5
+x 7
+y 13
+end
+arch shop_empty
+x 7
+y 14
+end
+arch shop_mat
+x 7
+y 14
+end
+arch shop_empty
+x 7
+y 15
+end
+arch shop_empty
+x 7
+y 16
+end
+arch cave_0
+x 7
+y 16
+end
+arch shop_floor
+x 7
+y 17
+end
+arch shop_empty
+x 7
+y 18
+end
+arch swall_2_1_2
+x 7
+y 18
+end
+arch dungeon_floor
+x 7
+y 19
+end
+arch dungeon_floor
+x 7
+y 20
+end
+arch block_door_closed
+x 7
+y 20
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 7
+y 21
+end
+arch block_door_closed
+x 7
+y 21
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 7
+y 22
+end
+arch baby_dragon
+x 7
+y 22
+end
+arch dungeon_floor
+x 7
+y 23
+end
+arch baby_dragon
+x 7
+y 23
+end
+arch dungeon_floor
+x 7
+y 24
+end
+arch block_door_closed
+x 7
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 7
+y 25
+end
+arch altar
+slaying diamond
+food 25
+x 7
+y 25
+connected 9
+end
+arch dungeon_floor
+x 7
+y 26
+end
+arch dungeon_floor
+x 7
+y 27
+end
+arch cave2
+x 7
+y 27
+end
+arch blocked
+x 8
+end
+arch dungeon_floor
+x 8
+y 1
+end
+arch cave4
+x 8
+y 1
+end
+arch dungeon_floor
+x 8
+y 2
+end
+arch swall_2_1_1
+x 8
+y 2
+end
+arch dungeon_floor
+x 8
+y 3
+end
+arch swall_1_2
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
+end
+arch cave_0
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch swall_1_1
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch swall_1_2
+x 8
+y 6
+end
+arch dungeon_floor
+x 8
+y 7
+end
+arch cave11
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch block_door_closed
+name wall
+face cave10.111
+x 8
+y 8
+connected 13
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch magic_banned
+x 8
+y 11
+end
+arch magic_mouth
+msg
+Thanks for visiting my shop!
+Wood and metal are not the only
+weapons you can buy here.
+endmsg
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 11
+end
+arch menu
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch shop_mat
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch cave2
+x 8
+y 13
+end
+arch shop_empty
+x 8
+y 14
+end
+arch cave10
+x 8
+y 14
+end
+arch shop_weapon
+x 8
+y 15
+end
+arch shop_weapon
+x 8
+y 16
+end
+arch shop_weapon
+x 8
+y 17
+end
+arch shop_empty
+x 8
+y 18
+end
+arch cave11
+x 8
+y 18
+end
+arch dungeon_floor
+x 8
+y 19
+end
+arch cave10
+x 8
+y 19
+end
+arch dungeon_floor
+x 8
+y 20
+end
+arch dungeon_floor
+x 8
+y 21
+end
+arch block_door_closed
+x 8
+y 21
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 8
+y 22
+end
+arch block_door_closed
+x 8
+y 22
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 8
+y 23
+end
+arch baby_dragon
+x 8
+y 23
+end
+arch dungeon_floor
+x 8
+y 24
+end
+arch block_door_closed
+x 8
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 8
+y 25
+end
+arch dungeon_floor
+x 8
+y 26
+end
+arch dungeon_floor
+x 8
+y 27
+end
+arch cave2
+x 8
+y 27
+end
+arch blocked
+x 9
+end
+arch shop_empty
+x 9
+y 1
+end
+arch cave4
+x 9
+y 1
+end
+arch shop_throw
+x 9
+y 2
+end
+arch shop_throw
+x 9
+y 3
+end
+arch shop_throw
+x 9
+y 4
+end
+arch shop_throw
+x 9
+y 5
+end
+arch shop_throw
+x 9
+y 6
+end
+arch cave2
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch cave4
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch oakdoor
+slaying /world/world_109_126
+hp 32
+sp 22
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch magic_banned
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch cave12
+x 9
+y 13
+end
+arch shop_empty
+x 9
+y 14
+end
+arch cave9
+x 9
+y 14
+end
+arch shop_empty
+x 9
+y 15
+end
+arch shop_weapon
+x 9
+y 16
+end
+arch shop_weapon
+x 9
+y 17
+end
+arch shop_empty
+x 9
+y 18
+end
+arch cave2
+x 9
+y 18
+end
+arch cave25
+x 9
+y 19
+end
+arch dungeon_floor
+x 9
+y 20
+end
+arch cave5
+x 9
+y 20
+end
+arch dungeon_floor
+x 9
+y 21
+end
+arch dungeon_floor
+x 9
+y 22
+end
+arch block_door_closed
+x 9
+y 22
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 9
+y 23
+end
+arch block_door_closed
+x 9
+y 23
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 9
+y 24
+end
+arch block_door_closed
+x 9
+y 24
+speed 0.500000
+connected 9
+end
+arch dungeon_floor
+x 9
+y 25
+end
+arch dungeon_floor
+x 9
+y 26
+end
+arch cave6
+x 9
+y 26
+end
+arch dungeon_floor
+x 9
+y 27
+end
+arch cave22
+x 9
+y 27
+end
+arch blocked
+x 10
+end
+arch shop_empty
+x 10
+y 1
+end
+arch cave4
+x 10
+y 1
+end
+arch shop_throw
+x 10
+y 2
+end
+arch shop_throw
+x 10
+y 3
+end
+arch shop_throw
+x 10
+y 4
+end
+arch shop_throw
+x 10
+y 5
+end
+arch shop_throw
+x 10
+y 6
+end
+arch cave2
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch cave4
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch sign_e
+msg
+To the money exchange ...
+endmsg
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch identify_table
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch cave11
+x 10
+y 12
+end
+arch shop_empty
+x 10
+y 13
+end
+arch cave10
+x 10
+y 13
+end
+arch shop_weapon
+x 10
+y 14
+end
+arch shop_weapon
+x 10
+y 15
+end
+arch shop_empty
+x 10
+y 16
+end
+arch cave_0
+x 10
+y 16
+end
+arch shop_weapon
+x 10
+y 17
+end
+arch shop_empty
+x 10
+y 18
+end
+arch cave2
+x 10
+y 18
+end
+arch blocked
+x 10
+y 19
+end
+arch cave25
+x 10
+y 20
+end
+arch dungeon_floor
+x 10
+y 21
+end
+arch cave5
+x 10
+y 21
+end
+arch dungeon_floor
+x 10
+y 22
+end
+arch dungeon_floor
+x 10
+y 23
+end
+arch dungeon_floor
+x 10
+y 24
+end
+arch dungeon_floor
+x 10
+y 25
+end
+arch dungeon_floor
+x 10
+y 26
+end
+arch cave2
+x 10
+y 26
+end
+arch blocked
+x 10
+y 27
+end
+arch shop_empty
+x 11
+end
+arch cave24
+x 11
+end
+arch shop_empty
+x 11
+y 1
+end
+arch cave9
+x 11
+y 1
+end
+arch shop_throw
+x 11
+y 2
+end
+arch shop_throw
+x 11
+y 3
+end
+arch shop_throw
+x 11
+y 4
+end
+arch shop_throw
+x 11
+y 5
+end
+arch shop_throw
+x 11
+y 6
+end
+arch shop_empty
+x 11
+y 7
+end
+arch cave12
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch cave4
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch teleporter
+name Portal to exchange chamber
+slaying Mopoon_wshop
+hp 21
+sp 6
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch cave15
+x 11
+y 11
+end
+arch shop_empty
+x 11
+y 12
+end
+arch cave3
+x 11
+y 12
+end
+arch shop_empty
+x 11
+y 13
+end
+arch cave9
+x 11
+y 13
+end
+arch shop_weapon
+x 11
+y 14
+end
+arch shop_empty
+x 11
+y 15
+end
+arch shop_weapon
+x 11
+y 16
+end
+arch shop_weapon
+x 11
+y 17
+end
+arch shop_empty
+x 11
+y 18
+end
+arch cave7
+x 11
+y 18
+end
+arch cave23
+x 11
+y 19
+end
+arch blocked
+x 11
+y 20
+end
+arch cave25
+x 11
+y 21
+end
+arch dungeon_floor
+x 11
+y 22
+end
+arch cave1
+x 11
+y 22
+end
+arch dungeon_floor
+x 11
+y 23
+end
+arch cave10
+x 11
+y 23
+end
+arch dungeon_floor
+x 11
+y 24
+end
+arch dungeon_floor
+x 11
+y 25
+end
+arch cave11
+x 11
+y 25
+end
+arch dungeon_floor
+x 11
+y 26
+end
+arch cave22
+x 11
+y 26
+end
+arch blocked
+x 11
+y 27
+end
+arch shop_empty
+x 12
+end
+arch cave4
+x 12
+end
+arch shop_throw
+x 12
+y 1
+end
+arch shop_throw
+x 12
+y 2
+end
+arch shop_throw
+x 12
+y 3
+end
+arch shop_throw
+x 12
+y 4
+end
+arch shop_throw
+x 12
+y 5
+end
+arch shop_empty
+x 12
+y 6
+end
+arch shop_weapon
+x 12
+y 7
+end
+arch shop_empty
+x 12
+y 8
+end
+arch cave16
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch cave5
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch cave6
+x 12
+y 10
+end
+arch shop_empty
+x 12
+y 11
+end
+arch cave13
+x 12
+y 11
+end
+arch shop_weapon
+x 12
+y 12
+end
+arch shop_weapon
+x 12
+y 13
+end
+arch shop_weapon
+x 12
+y 14
+end
+arch shop_weapon
+x 12
+y 15
+end
+arch shop_empty
+x 12
+y 16
+end
+arch shop_weapon
+x 12
+y 17
+end
+arch shop_weapon
+x 12
+y 18
+end
+arch shop_empty
+x 12
+y 19
+end
+arch cave7
+x 12
+y 19
+end
+arch cave23
+x 12
+y 20
+end
+arch blocked
+x 12
+y 21
+end
+arch cave24
+x 12
+y 22
+end
+arch woodfloor
+x 12
+y 23
+end
+arch cave9
+x 12
+y 23
+end
+arch magic_banned
+x 12
+y 24
+end
+arch woodfloor
+x 12
+y 24
+end
+arch woodfloor
+x 12
+y 25
+end
+arch cave12
+x 12
+y 25
+end
+arch cave23
+x 12
+y 26
+end
+arch blocked
+x 12
+y 27
+end
+arch shop_empty
+x 13
+end
+arch cave4
+x 13
+end
+arch shop_throw
+x 13
+y 1
+end
+arch shop_empty
+x 13
+y 2
+end
+arch cave_0
+x 13
+y 2
+end
+arch shop_throw
+x 13
+y 3
+end
+arch shop_throw
+x 13
+y 4
+end
+arch shop_empty
+x 13
+y 5
+end
+arch cave_0
+x 13
+y 5
+end
+arch shop_weapon
+x 13
+y 6
+end
+arch shop_weapon
+x 13
+y 7
+end
+arch shop_weapon
+x 13
+y 8
+end
+arch shop_empty
+x 13
+y 9
+end
+arch cave12
+x 13
+y 9
+end
+arch shop_empty
+x 13
+y 10
+end
+arch cave13
+x 13
+y 10
+end
+arch shop_weapon
+x 13
+y 11
+end
+arch shop_weapon
+x 13
+y 12
+end
+arch shop_weapon
+x 13
+y 13
+end
+arch shop_weapon
+x 13
+y 14
+end
+arch shop_empty
+x 13
+y 15
+end
+arch cave_0
+x 13
+y 15
+end
+arch shop_weapon
+x 13
+y 16
+end
+arch shop_empty
+x 13
+y 17
+end
+arch cave_7
+x 13
+y 17
+end
+arch shop_empty
+x 13
+y 18
+end
+arch cave_9
+x 13
+y 18
+end
+arch shop_weapon
+x 13
+y 19
+end
+arch shop_empty
+x 13
+y 20
+end
+arch cave2
+x 13
+y 20
+end
+arch cave24
+x 13
+y 21
+end
+arch woodfloor
+x 13
+y 22
+end
+arch cave8
+x 13
+y 22
+end
+arch woodfloor
+x 13
+y 23
+end
+arch magic_banned
+x 13
+y 24
+end
+arch woodfloor
+x 13
+y 24
+end
+arch magic_banned
+x 13
+y 25
+end
+arch woodfloor
+x 13
+y 25
+end
+arch magic_banned
+x 13
+y 26
+end
+arch woodfloor
+x 13
+y 26
+end
+arch woodfloor
+x 13
+y 26
+end
+arch cave7
+x 13
+y 26
+end
+arch cave17
+x 13
+y 27
+end
+arch shop_empty
+x 14
+end
+arch cave4
+x 14
+end
+arch shop_throw
+x 14
+y 1
+end
+arch shop_throw
+x 14
+y 2
+end
+arch shop_throw
+x 14
+y 3
+end
+arch shop_empty
+x 14
+y 4
+end
+arch shop_throw
+x 14
+y 5
+end
+arch shop_empty
+x 14
+y 6
+end
+arch shop_weapon
+x 14
+y 7
+end
+arch shop_empty
+x 14
+y 8
+end
+arch shop_weapon
+x 14
+y 9
+end
+arch shop_empty
+x 14
+y 10
+end
+arch shop_weapon
+x 14
+y 11
+end
+arch shop_empty
+x 14
+y 12
+end
+arch cave_0
+x 14
+y 12
+end
+arch shop_weapon
+x 14
+y 13
+end
+arch shop_empty
+x 14
+y 14
+end
+arch shop_weapon
+x 14
+y 15
+end
+arch shop_weapon
+x 14
+y 16
+end
+arch shop_empty
+x 14
+y 17
+end
+arch cave_8
+x 14
+y 17
+end
+arch shop_empty
+x 14
+y 18
+end
+arch cave_10
+x 14
+y 18
+end
+arch shop_weapon
+x 14
+y 19
+end
+arch shop_empty
+x 14
+y 20
+end
+arch cave2
+x 14
+y 20
+end
+arch cave25
+x 14
+y 21
+end
+arch woodfloor
+x 14
+y 22
+end
+arch cave5
+x 14
+y 22
+end
+arch woodfloor
+x 14
+y 23
+end
+arch oakdoor
+name Door to training ground
+slaying Mopoon_wshop
+hp 17
+sp 24
+x 14
+y 23
+end
+arch magic_banned
+x 14
+y 24
+end
+arch woodfloor
+x 14
+y 24
+end
+arch woodfloor
+x 14
+y 25
+end
+arch woodfloor
+x 14
+y 26
+end
+arch cave6
+x 14
+y 26
+end
+arch woodfloor
+x 14
+y 26
+end
+arch cave6
+x 14
+y 26
+end
+arch cave20
+x 14
+y 27
+end
+arch cave25
+x 15
+end
+arch shop_empty
+x 15
+y 1
+end
+arch block_door_closed
+name wall
+face cave10.111
+x 15
+y 1
+connected 13
+end
+arch shop_weapon
+x 15
+y 2
+end
+arch shop_empty
+x 15
+y 3
+end
+arch shop_weapon
+x 15
+y 4
+end
+arch shop_weapon
+x 15
+y 5
+end
+arch shop_weapon
+x 15
+y 6
+end
+arch shop_empty
+x 15
+y 7
+end
+arch cave_0
+x 15
+y 7
+end
+arch shop_weapon
+x 15
+y 8
+end
+arch shop_empty
+x 15
+y 9
+end
+arch shop_weapon
+x 15
+y 10
+end
+arch shop_empty
+x 15
+y 11
+end
+arch shop_weapon
+x 15
+y 12
+end
+arch shop_empty
+x 15
+y 13
+end
+arch shop_weapon
+x 15
+y 14
+end
+arch shop_weapon
+x 15
+y 15
+end
+arch shop_weapon
+x 15
+y 16
+end
+arch shop_weapon
+x 15
+y 17
+end
+arch shop_weapon
+x 15
+y 18
+end
+arch shop_weapon
+x 15
+y 19
+end
+arch shop_empty
+x 15
+y 20
+end
+arch cave2
+x 15
+y 20
+end
+arch blocked
+x 15
+y 21
+end
+arch cave25
+x 15
+y 22
+end
+arch woodfloor
+x 15
+y 23
+end
+arch cave1
+x 15
+y 23
+end
+arch woodfloor
+x 15
+y 24
+end
+arch cave1
+x 15
+y 24
+end
+arch woodfloor
+x 15
+y 25
+end
+arch cave1
+x 15
+y 25
+end
+arch cave22
+x 15
+y 26
+end
+arch blocked
+x 15
+y 27
+end
+arch blocked
+x 16
+end
+arch woodfloor
+x 16
+y 1
+end
+arch cave4
+x 16
+y 1
+end
+arch shop_weapon
+x 16
+y 2
+end
+arch shop_weapon
+x 16
+y 3
+end
+arch shop_weapon
+x 16
+y 4
+end
+arch shop_weapon
+x 16
+y 5
+end
+arch shop_weapon
+x 16
+y 6
+end
+arch shop_weapon
+x 16
+y 7
+end
+arch shop_empty
+x 16
+y 8
+end
+arch cave11
+x 16
+y 8
+end
+arch shop_empty
+x 16
+y 9
+end
+arch cave1
+x 16
+y 9
+end
+arch shop_empty
+x 16
+y 10
+end
+arch cave10
+x 16
+y 10
+end
+arch shop_weapon
+x 16
+y 11
+end
+arch shop_weapon
+x 16
+y 12
+end
+arch shop_weapon
+x 16
+y 13
+end
+arch shop_weapon
+x 16
+y 14
+end
+arch shop_weapon
+x 16
+y 15
+end
+arch shop_weapon
+x 16
+y 16
+end
+arch shop_weapon
+x 16
+y 17
+end
+arch shop_weapon
+x 16
+y 18
+end
+arch shop_weapon
+x 16
+y 19
+end
+arch shop_empty
+x 16
+y 20
+end
+arch cave2
+x 16
+y 20
+end
+arch blocked
+x 16
+y 21
+end
+arch cave24
+x 16
+y 22
+end
+arch woodfloor
+x 16
+y 23
+end
+arch cave3
+x 16
+y 23
+end
+arch woodfloor
+x 16
+y 24
+end
+arch cave3
+x 16
+y 24
+end
+arch cave23
+x 16
+y 25
+end
+arch blocked
+x 16
+y 26
+end
+arch blocked
+x 16
+y 27
+end
+arch blocked
+x 17
+end
+arch woodfloor
+x 17
+y 1
+end
+arch cave4
+x 17
+y 1
+end
+arch shop_weapon
+x 17
+y 2
+end
+arch shop_weapon
+x 17
+y 3
+end
+arch shop_weapon
+x 17
+y 4
+end
+arch shop_weapon
+x 17
+y 5
+end
+arch shop_weapon
+x 17
+y 6
+end
+arch shop_empty
+x 17
+y 7
+end
+arch cave6
+x 17
+y 7
+end
+arch cave22
+x 17
+y 8
+end
+arch dungeon_floor
+x 17
+y 9
+end
+arch firewall_3
+x 17
+y 9
+end
+arch cave25
+x 17
+y 10
+end
+arch shop_empty
+x 17
+y 11
+end
+arch cave5
+x 17
+y 11
+end
+arch shop_weapon
+x 17
+y 12
+end
+arch shop_weapon
+x 17
+y 13
+end
+arch shop_weapon
+x 17
+y 14
+end
+arch shop_weapon
+x 17
+y 15
+end
+arch shop_weapon
+x 17
+y 16
+end
+arch shop_weapon
+x 17
+y 17
+end
+arch shop_weapon
+x 17
+y 18
+end
+arch shop_empty
+x 17
+y 19
+end
+arch cave6
+x 17
+y 19
+end
+arch cave22
+x 17
+y 20
+end
+arch cave24
+x 17
+y 21
+end
+arch woodfloor
+x 17
+y 22
+end
+arch cave8
+x 17
+y 22
+end
+arch magic_mouth
+msg
+Want to practice your skills
+and weapons?
+endmsg
+x 17
+y 23
+end
+arch woodfloor
+x 17
+y 23
+end
+arch woodfloor
+x 17
+y 24
+end
+arch oakdoor
+name Door to practice chamber
+slaying Mopoon_wshop
+msg
+You smell a strong stench of dragons
+endmsg
+hp 14
+sp 23
+x 17
+y 24
+end
+arch woodfloor
+x 17
+y 25
+end
+arch cave7
+x 17
+y 25
+end
+arch cave17
+x 17
+y 26
+end
+arch blocked
+x 17
+y 27
+end
+arch blocked
+x 18
+end
+arch cave25
+x 18
+y 1
+end
+arch shop_empty
+x 18
+y 2
+end
+arch cave10
+x 18
+y 2
+end
+arch shop_empty
+x 18
+y 3
+end
+arch swall_2_1_1
+x 18
+y 3
+end
+arch shop_empty
+x 18
+y 4
+end
+arch swall_2_1_1
+x 18
+y 4
+end
+arch shop_empty
+x 18
+y 5
+end
+arch cave11
+x 18
+y 5
+end
+arch cave1
+x 18
+y 6
+end
+arch cave22
+x 18
+y 7
+end
+arch dungeon_floor
+x 18
+y 8
+end
+arch firewall_4
+x 18
+y 8
+end
+arch dungeon_floor
+x 18
+y 9
+end
+arch director_3
+x 18
+y 9
+end
+arch dungeon_floor
+x 18
+y 10
+end
+arch firewall_3
+x 18
+y 10
+end
+arch cave25
+x 18
+y 11
+end
+arch shop_empty
+x 18
+y 12
+end
+arch cave1
+x 18
+y 12
+end
+arch shop_empty
+x 18
+y 13
+end
+arch cave1
+x 18
+y 13
+end
+arch shop_empty
+x 18
+y 14
+end
+arch cave1
+x 18
+y 14
+end
+arch shop_empty
+x 18
+y 15
+end
+arch cave1
+x 18
+y 15
+end
+arch shop_empty
+x 18
+y 16
+end
+arch cave1
+x 18
+y 16
+end
+arch shop_empty
+x 18
+y 17
+end
+arch cave1
+x 18
+y 17
+end
+arch shop_empty
+x 18
+y 18
+end
+arch cave1
+x 18
+y 18
+end
+arch cave22
+x 18
+y 19
+end
+arch cave24
+x 18
+y 20
+end
+arch woodfloor
+x 18
+y 21
+end
+arch cave8
+x 18
+y 21
+end
+arch woodfloor
+x 18
+y 22
+end
+arch woodfloor
+x 18
+y 23
+end
+arch woodfloor
+x 18
+y 24
+end
+arch woodfloor
+x 18
+y 25
+end
+arch cave6
+x 18
+y 25
+end
+arch cave20
+x 18
+y 26
+end
+arch blocked
+x 18
+y 27
+end
+arch cave24
+x 19
+end
+arch woodfloor
+x 19
+y 1
+end
+arch cave3
+x 19
+y 1
+end
+arch woodfloor
+x 19
+y 2
+end
+arch cave9
+x 19
+y 2
+end
+arch magic_banned
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 3
+end
+arch silver_converter
+x 19
+y 3
+end
+arch magic_banned
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
+end
+arch cave12
+x 19
+y 5
+end
+arch woodfloor
+x 19
+y 6
+end
+arch cave3
+x 19
+y 6
+end
+arch cave23
+x 19
+y 7
+end
+arch dungeon_floor
+x 19
+y 8
+end
+arch firewall_5
+x 19
+y 8
+end
+arch dungeon_floor
+x 19
+y 9
+end
+arch director_4
+x 19
+y 9
+end
+arch dungeon_floor
+x 19
+y 10
+end
+arch dungeon_floor
+x 19
+y 11
+end
+arch cave2
+x 19
+y 11
+end
+arch cave24
+x 19
+y 12
+end
+arch woodfloor
+x 19
+y 13
+end
+arch cave3
+x 19
+y 13
+end
+arch woodfloor
+x 19
+y 14
+end
+arch cave3
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 15
+end
+arch cave3
+x 19
+y 15
+end
+arch woodfloor
+x 19
+y 16
+end
+arch cave3
+x 19
+y 16
+end
+arch woodfloor
+x 19
+y 17
+end
+arch cave3
+x 19
+y 17
+end
+arch woodfloor
+x 19
+y 18
+end
+arch cave3
+x 19
+y 18
+end
+arch woodfloor
+x 19
+y 19
+end
+arch cave3
+x 19
+y 19
+end
+arch woodfloor
+x 19
+y 20
+end
+arch cave9
+x 19
+y 20
+end
+arch woodfloor
+x 19
+y 21
+end
+arch woodfloor
+x 19
+y 22
+end
+arch cave21
+x 19
+y 22
+end
+arch woodfloor
+x 19
+y 23
+end
+arch woodfloor
+x 19
+y 24
+end
+arch cave21
+x 19
+y 24
+end
+arch woodfloor
+x 19
+y 25
+end
+arch cave12
+x 19
+y 25
+end
+arch cave23
+x 19
+y 26
+end
+arch blocked
+x 19
+y 27
+end
+arch woodfloor
+x 20
+end
+arch cave4
+x 20
+end
+arch magic_banned
+x 20
+y 1
+end
+arch woodfloor
+x 20
+y 1
+end
+arch magic_banned
+x 20
+y 2
+end
+arch woodfloor
+x 20
+y 2
+end
+arch platinum_converter
+x 20
+y 2
+end
+arch magic_banned
+x 20
+y 3
+end
+arch woodfloor
+x 20
+y 3
+end
+arch magic_banned
+x 20
+y 4
+end
+arch woodfloor
+x 20
+y 4
+end
+arch woodfloor
+x 20
+y 5
+end
+arch spikes_closed
+x 20
+y 5
+connected 8
+end
+arch woodfloor
+x 20
+y 6
+end
+arch teleporter
+name Portal to entrance
+slaying Mopoon_wshop
+hp 11
+sp 10
+x 20
+y 6
+end
+arch woodfloor
+x 20
+y 7
+end
+arch cave7
+x 20
+y 7
+end
+arch cave17
+x 20
+y 8
+end
+arch dungeon_floor
+x 20
+y 9
+end
+arch cave5
+x 20
+y 9
+end
+arch dungeon_floor
+x 20
+y 10
+end
+arch director_3
+x 20
+y 10
+end
+arch dungeon_floor
+x 20
+y 11
+end
+arch cave2
+x 20
+y 11
+end
+arch woodfloor
+x 20
+y 12
+end
+arch cave4
+x 20
+y 12
+end
+arch woodfloor
+x 20
+y 13
+end
+arch teleporter
+name Portal to exchange chamber
+slaying Mopoon_wshop
+hp 22
+sp 4
+x 20
+y 13
+end
+arch woodfloor
+x 20
+y 14
+end
+arch woodfloor
+x 20
+y 15
+end
+arch magic_mouth
+msg
+Drop 25 small diamonds at the altar
+to mock the nasty; and get an inspi-
+rition of how to deal with electric
+dragon.
+endmsg
+x 20
+y 16
+end
+arch woodfloor
+x 20
+y 16
+end
+arch magic_mouth
+name instruct
+msg
+"Run into the target and I will do the
+rest."
+endmsg
+x 20
+y 17
+end
+arch woodfloor
+x 20
+y 17
+end
+arch altar
+slaying diamond
+food 25
+x 20
+y 17
+connected 7
+end
+arch woodfloor
+x 20
+y 18
+end
+arch woodfloor
+x 20
+y 19
+end
+arch woodfloor
+x 20
+y 20
+end
+arch woodfloor
+x 20
+y 21
+end
+arch mover_5
+x 20
+y 22
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 20
+y 22
+end
+arch block_door_closed
+x 20
+y 22
+speed 0.500000
+connected 7
+end
+arch mover_3
+x 20
+y 23
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 20
+y 23
+end
+arch block_door_closed
+x 20
+y 23
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 20
+y 24
+end
+arch block_door_closed
+x 20
+y 24
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 20
+y 25
+end
+arch cave21
+x 20
+y 25
+end
+arch dungeon_floor
+x 20
+y 26
+end
+arch cave7
+x 20
+y 26
+end
+arch cave17
+x 20
+y 27
+end
+arch cave25
+x 21
+end
+arch woodfloor
+x 21
+y 1
+end
+arch cave1
+x 21
+y 1
+end
+arch woodfloor
+x 21
+y 2
+end
+arch cave5
+x 21
+y 2
+end
+arch magic_banned
+x 21
+y 3
+end
+arch woodfloor
+x 21
+y 3
+end
+arch gold_converter
+x 21
+y 3
+end
+arch magic_banned
+x 21
+y 4
+end
+arch woodfloor
+x 21
+y 4
+end
+arch woodfloor
+x 21
+y 5
+end
+arch spikes_closed
+x 21
+y 5
+connected 8
+end
+arch magic_banned
+x 21
+y 6
+end
+arch woodfloor
+x 21
+y 6
+end
+arch altar
+slaying diamond
+x 21
+y 6
+connected 8
+end
+arch sign
+msg
+10 small diamonds for tax to use the
+exchange
+endmsg
+x 21
+y 6
+end
+arch woodfloor
+x 21
+y 7
+end
+arch cave6
+x 21
+y 7
+end
+arch cave20
+x 21
+y 8
+end
+arch dungeon_floor
+x 21
+y 9
+end
+arch cave4
+x 21
+y 9
+end
+arch dungeon_floor
+x 21
+y 10
+end
+arch block_door_closed
+x 21
+y 10
+speed 0.500000
+connected 6
+end
+arch dungeon_floor
+x 21
+y 11
+end
+arch cave2
+x 21
+y 11
+end
+arch cave25
+x 21
+y 12
+end
+arch woodfloor
+x 21
+y 13
+end
+arch cave1
+x 21
+y 13
+end
+arch woodfloor
+x 21
+y 14
+end
+arch cave1
+x 21
+y 14
+end
+arch woodfloor
+x 21
+y 15
+end
+arch cave1
+x 21
+y 15
+end
+arch woodfloor
+x 21
+y 16
+end
+arch cave1
+x 21
+y 16
+end
+arch woodfloor
+x 21
+y 17
+end
+arch cave10
+x 21
+y 17
+end
+arch dungeon_floor
+x 21
+y 18
+end
+arch block_door_closed
+x 21
+y 18
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 21
+y 19
+end
+arch mover_6
+x 21
+y 19
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 21
+y 19
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 21
+y 20
+end
+arch cave21
+x 21
+y 20
+end
+arch mover_7
+x 21
+y 21
+end
+arch dungeon_floor
+x 21
+y 21
+end
+arch block_door_closed
+x 21
+y 21
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 21
+y 22
+end
+arch cave21
+x 21
+y 22
+end
+arch dungeon_floor
+x 21
+y 23
+end
+arch mover_4
+x 21
+y 23
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 21
+y 23
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 21
+y 24
+end
+arch dungeon_floor
+x 21
+y 25
+end
+arch dungeon_floor
+x 21
+y 26
+end
+arch dungeon_floor
+x 21
+y 27
+end
+arch cave2
+x 21
+y 27
+end
+arch blocked
+x 22
+end
+arch blocked
+x 22
+y 1
+end
+arch woodfloor
+x 22
+y 2
+end
+arch cave4
+x 22
+y 2
+end
+arch magic_banned
+x 22
+y 3
+end
+arch woodfloor
+x 22
+y 3
+end
+arch magic_banned
+x 22
+y 4
+end
+arch woodfloor
+x 22
+y 4
+end
+arch woodfloor
+x 22
+y 5
+end
+arch cave11
+x 22
+y 5
+end
+arch woodfloor
+x 22
+y 6
+end
+arch cave1
+x 22
+y 6
+end
+arch cave22
+x 22
+y 7
+end
+arch blocked
+x 22
+y 8
+end
+arch dungeon_floor
+x 22
+y 9
+end
+arch cave4
+x 22
+y 9
+end
+arch dungeon_floor
+x 22
+y 10
+end
+arch block_door_closed
+x 22
+y 10
+speed 0.500000
+connected 1
+end
+arch dungeon_floor
+x 22
+y 11
+end
+arch cave12
+x 22
+y 11
+end
+arch dungeon_floor
+x 22
+y 12
+end
+arch cave3
+x 22
+y 12
+end
+arch cave23
+x 22
+y 13
+end
+arch magic_ear
+msg
+@match Kashu|Wist|Twis
+You are enveloped in a shroud of purple
+flame..
+endmsg
+x 22
+y 14
+connected 11
+end
+arch teleporter
+name purple marble floor.
+slaying /lake_country/Mwizard/Mwizard2
+msg
+Your surrounding warps.
+endmsg
+face marble.111
+hp 16
+sp 9
+x 22
+y 14
+speed 0.000000
+connected 11
+end
+arch magic_mouth
+name trickery
+msg
+A voice says, "So you must be friend of
+my master. Now remember the name
+Jessy.
+endmsg
+x 22
+y 15
+end
+arch magic_ear
+msg
+@match Jessy
+You are surrounded by a shroud of black
+flame..
+endmsg
+x 22
+y 15
+connected 10
+end
+arch magic_mouth
+msg
+You feel magical energy around
+endmsg
+x 22
+y 15
+end
+arch woodfloor
+x 22
+y 15
+end
+arch teleporter
+name Old map of Lake Country
+slaying /brest/brittany/jessy.3
+msg
+It's a sketch of Lake Country,labeling
+Marsh Maze, Tenshin Palace and Sunset
+Lake to the southwest.
+At the bottom, a line catches your
+eyes:
+'Try any words, any places and you
+will find death waiting for you sooner
+than you expected; and, of course,
+infinite fun and rewards.'.
+endmsg
+face sign.111
+hp 8
+sp 25
+x 22
+y 15
+speed 0.000000
+connected 10
+end
+arch woodfloor
+x 22
+y 16
+end
+arch cave21
+x 22
+y 16
+end
+arch dungeon_floor
+x 22
+y 17
+end
+arch cave4
+x 22
+y 17
+end
+arch dungeon_floor
+x 22
+y 18
+end
+arch dungeon_floor
+x 22
+y 19
+end
+arch mover_7
+x 22
+y 19
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 22
+y 19
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 22
+y 20
+end
+arch dungeon_floor
+x 22
+y 21
+end
+arch dungeon_floor
+x 22
+y 22
+end
+arch dungeon_floor
+x 22
+y 23
+end
+arch cave21
+x 22
+y 23
+end
+arch mover_2
+x 22
+y 24
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 22
+y 24
+end
+arch dungeon_floor
+x 22
+y 25
+end
+arch cave21
+x 22
+y 25
+end
+arch dungeon_floor
+x 22
+y 26
+end
+arch cave11
+x 22
+y 26
+end
+arch cave20
+x 22
+y 27
+end
+arch woodfloor
+x 23
+end
+arch cave24
+x 23
+end
+arch woodfloor
+x 23
+y 1
+end
+arch cave3
+x 23
+y 1
+end
+arch woodfloor
+x 23
+y 2
+end
+arch cave8
+x 23
+y 2
+end
+arch magic_banned
+x 23
+y 3
+end
+arch woodfloor
+x 23
+y 3
+end
+arch magic_banned
+x 23
+y 4
+end
+arch woodfloor
+x 23
+y 4
+end
+arch woodfloor
+x 23
+y 5
+end
+arch cave12
+x 23
+y 5
+end
+arch woodfloor
+x 23
+y 6
+end
+arch cave3
+x 23
+y 6
+end
+arch woodfloor
+x 23
+y 7
+end
+arch cave3
+x 23
+y 7
+end
+arch woodfloor
+x 23
+y 8
+end
+arch cave3
+x 23
+y 8
+end
+arch dungeon_floor
+x 23
+y 9
+end
+arch cave8
+x 23
+y 9
+end
+arch dungeon_floor
+x 23
+y 10
+end
+arch dungeon_floor
+x 23
+y 11
+end
+arch dungeon_floor
+x 23
+y 12
+end
+arch dungeon_floor
+x 23
+y 13
+end
+arch cave7
+x 23
+y 13
+end
+arch cave23
+x 23
+y 14
+end
+arch rune_paralysis
+x 23
+y 15
+end
+arch rune_ball_lightning
+x 23
+y 15
+end
+arch rune_ball_lightning
+x 23
+y 15
+end
+arch rune_paralysis
+x 23
+y 15
+end
+arch rune_ball_lightning
+x 23
+y 15
+end
+arch rune_ball_lightning
+x 23
+y 15
+end
+arch woodfloor
+x 23
+y 15
+end
+arch spider_web
+x 23
+y 15
+end
+arch dungeon_magic
+x 23
+y 16
+end
+arch magic_mouth
+name warning2
+msg
+A voice says, "Last warning. Be gone or
+die!!
+endmsg
+x 23
+y 16
+end
+arch woodfloor
+x 23
+y 16
+end
+arch spider_web
+x 23
+y 16
+end
+arch dungeon_floor
+x 23
+y 17
+end
+arch cave4
+x 23
+y 17
+end
+arch magic_mouth
+msg
+That's how you deal with electric
+dragons. Run around and avoid the
+electricity whenever the shoot it.
+Now get out of here. I'd love to keep
+my pet alive for now."
+endmsg
+x 23
+y 18
+end
+arch dungeon_floor
+x 23
+y 18
+end
+arch dungeon_floor
+x 23
+y 19
+end
+arch cave21
+x 23
+y 19
+end
+arch dungeon_floor
+x 23
+y 20
+end
+arch dungeon_floor
+x 23
+y 21
+end
+arch dungeon_floor
+x 23
+y 22
+end
+arch mover_4
+x 23
+y 23
+end
+arch dungeon_floor
+x 23
+y 23
+end
+arch block_door_closed
+x 23
+y 23
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 23
+y 24
+end
+arch dungeon_floor
+x 23
+y 25
+end
+arch dungeon_floor
+x 23
+y 26
+end
+arch cave2
+x 23
+y 26
+end
+arch blocked
+x 23
+y 27
+end
+arch woodfloor
+x 24
+end
+arch cave4
+x 24
+end
+arch magic_banned
+x 24
+y 1
+end
+arch woodfloor
+x 24
+y 1
+end
+arch magic_banned
+x 24
+y 2
+end
+arch woodfloor
+x 24
+y 2
+end
+arch diamond_converter
+x 24
+y 2
+end
+arch magic_banned
+x 24
+y 3
+end
+arch woodfloor
+x 24
+y 3
+end
+arch magic_banned
+x 24
+y 4
+end
+arch woodfloor
+x 24
+y 4
+end
+arch magic_banned
+x 24
+y 5
+end
+arch woodfloor
+x 24
+y 5
+end
+arch magic_banned
+x 24
+y 6
+end
+arch woodfloor
+x 24
+y 6
+end
+arch woodfloor
+x 24
+y 7
+end
+arch woodfloor
+x 24
+y 8
+end
+arch swall_2_1_2
+x 24
+y 8
+end
+arch dungeon_floor
+x 24
+y 9
+end
+arch dungeon_floor
+x 24
+y 10
+end
+arch dungeon_floor
+x 24
+y 11
+end
+arch dungeon_floor
+x 24
+y 12
+end
+arch dungeon_floor
+x 24
+y 13
+end
+arch dungeon_floor
+x 24
+y 14
+end
+arch cave2
+x 24
+y 14
+end
+arch dungeon_magic
+x 24
+y 15
+end
+arch magic_mouth
+name warning1
+msg
+A voice says, "No intruder shall live!
+So be gone!
+endmsg
+x 24
+y 15
+end
+arch woodfloor
+x 24
+y 15
+end
+arch glue
+x 24
+y 15
+end
+arch spider_web
+x 24
+y 15
+end
+arch woodfloor
+x 24
+y 16
+end
+arch cave21
+x 24
+y 16
+end
+arch dungeon_floor
+x 24
+y 17
+end
+arch cave4
+x 24
+y 17
+end
+arch dungeon_floor
+x 24
+y 18
+end
+arch dungeon_floor
+x 24
+y 19
+end
+arch mover_turn
+x 24
+y 19
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 24
+y 19
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 24
+y 20
+end
+arch cave21
+x 24
+y 20
+end
+arch dungeon_floor
+x 24
+y 21
+end
+arch mover_2
+x 24
+y 21
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 24
+y 21
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 24
+y 22
+end
+arch cave21
+x 24
+y 22
+end
+arch dungeon_floor
+x 24
+y 23
+end
+arch mover_2
+x 24
+y 23
+level 1
+attacktype 1
+end
+arch block_door_closed
+x 24
+y 23
+speed 0.500000
+connected 7
+end
+arch dungeon_floor
+x 24
+y 24
+end
+arch dungeon_floor
+x 24
+y 25
+end
+arch cave6
+x 24
+y 25
+end
+arch dungeon_floor
+x 24
+y 26
+end
+arch cave22
+x 24
+y 26
+end
+arch blocked
+x 24
+y 27
+end
+arch cave25
+x 25
+end
+arch woodfloor
+x 25
+y 1
+end
+arch cave1
+x 25
+y 1
+end
+arch magic_banned
+x 25
+y 2
+end
+arch woodfloor
+x 25
+y 2
+end
+arch cave5
+x 25
+y 2
+end
+arch magic_banned
+x 25
+y 3
+end
+arch woodfloor
+x 25
+y 3
+end
+arch ruby_converter
+x 25
+y 3
+end
+arch magic_banned
+x 25
+y 4
+end
+arch woodfloor
+x 25
+y 4
+end
+arch pearl_converter
+x 25
+y 4
+end
+arch woodfloor
+x 25
+y 5
+end
+arch cave21
+x 25
+y 5
+end
+arch magic_mouth
+msg
+Thanks for visiting dragon slaying
+guild.
+endmsg
+x 25
+y 6
+end
+arch woodfloor
+x 25
+y 6
+end
+arch teleporter
+name Portal to training ground
+slaying Mopoon_wshop
+hp 20
+sp 14
+x 25
+y 6
+end
+arch magic_mouth
+msg
+25 small diamonds to learn the
+weakness of electric dragons!
+Say 'start' to start the carnage.
+endmsg
+x 25
+y 7
+end
+arch magic_ear
+msg
+@match start|pause
+'Gotcha'
+endmsg
+x 25
+y 7
+connected 1
+end
+arch woodfloor
+x 25
+y 7
+end
+arch altar
+slaying diamond
+msg
+Say 'pause' when you want to pause
+the process.
+start
+endmsg
+food 25
+x 25
+y 7
+connected 6
+end
+arch woodfloor
+x 25
+y 8
+end
+arch swall_2_1_2
+x 25
+y 8
+end
+arch dungeon_floor
+x 25
+y 9
+end
+arch dungeon_floor
+x 25
+y 10
+end
+arch dungeon_floor
+x 25
+y 11
+end
+arch dungeon_floor
+x 25
+y 12
+end
+arch dungeon_floor
+x 25
+y 13
+end
+arch dungeon_floor
+x 25
+y 14
+end
+arch cave2
+x 25
+y 14
+end
+arch magic_mouth
+msg
+Your toes feel itchy
+endmsg
+x 25
+y 15
+end
+arch woodfloor
+x 25
+y 15
+end
+arch woodfloor
+x 25
+y 16
+end
+arch teleporter
+slaying Mopoon_wshop
+hp 7
+sp 9
+x 25
+y 16
+end
+arch cave25
+x 25
+y 17
+end
+arch dungeon_floor
+x 25
+y 18
+end
+arch cave5
+x 25
+y 18
+end
+arch mover_7
+x 25
+y 19
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 25
+y 19
+end
+arch mover_1
+x 25
+y 20
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 25
+y 20
+end
+arch dungeon_floor
+x 25
+y 21
+end
+arch mover_8
+x 25
+y 22
+level 1
+attacktype 1
+end
+arch dungeon_floor
+x 25
+y 22
+end
+arch dungeon_floor
+x 25
+y 23
+end
+arch dungeon_floor
+x 25
+y 24
+end
+arch cave6
+x 25
+y 24
+end
+arch cave22
+x 25
+y 25
+end
+arch blocked
+x 25
+y 26
+end
+arch blocked
+x 25
+y 27
+end
+arch blocked
+x 26
+end
+arch blocked
+x 26
+y 1
+end
+arch cave25
+x 26
+y 2
+end
+arch woodfloor
+x 26
+y 3
+end
+arch cave10
+x 26
+y 3
+end
+arch magic_banned
+x 26
+y 4
+end
+arch woodfloor
+x 26
+y 4
+end
+arch magic_banned
+x 26
+y 5
+end
+arch woodfloor
+x 26
+y 5
+end
+arch magic_banned
+x 26
+y 6
+end
+arch woodfloor
+x 26
+y 6
+end
+arch woodfloor
+x 26
+y 7
+end
+arch cave15
+x 26
+y 7
+end
+arch dungeon_floor
+x 26
+y 8
+end
+arch cave1
+x 26
+y 8
+end
+arch dungeon_floor
+x 26
+y 9
+end
+arch cave1
+x 26
+y 9
+end
+arch dungeon_floor
+x 26
+y 10
+end
+arch cave14
+x 26
+y 10
+end
+arch dungeon_floor
+x 26
+y 11
+end
+arch dungeon_floor
+x 26
+y 12
+end
+arch dungeon_floor
+x 26
+y 13
+end
+arch dungeon_floor
+x 26
+y 14
+end
+arch cave2
+x 26
+y 14
+end
+arch woodfloor
+x 26
+y 15
+end
+arch cave21
+x 26
+y 15
+end
+arch woodfloor
+x 26
+y 16
+end
+arch cave21
+x 26
+y 16
+end
+arch woodfloor
+x 26
+y 17
+end
+arch cave21
+x 26
+y 17
+end
+arch cave25
+x 26
+y 18
+end
+arch dungeon_floor
+x 26
+y 19
+end
+arch cave1
+x 26
+y 19
+end
+arch dungeon_floor
+x 26
+y 20
+end
+arch cave1
+x 26
+y 20
+end
+arch dungeon_floor
+x 26
+y 21
+end
+arch cave1
+x 26
+y 21
+end
+arch dungeon_floor
+x 26
+y 22
+end
+arch cave1
+x 26
+y 22
+end
+arch cave1
+x 26
+y 23
+end
+arch cave22
+x 26
+y 24
+end
+arch blocked
+x 26
+y 25
+end
+arch blocked
+x 26
+y 26
+end
+arch blocked
+x 26
+y 27
+end
+arch blocked
+x 27
+end
+arch blocked
+x 27
+y 1
+end
+arch blocked
+x 27
+y 2
+end
+arch cave25
+x 27
+y 3
+end
+arch woodfloor
+x 27
+y 4
+end
+arch cave1
+x 27
+y 4
+end
+arch woodfloor
+x 27
+y 5
+end
+arch cave1
+x 27
+y 5
+end
+arch woodfloor
+x 27
+y 6
+end
+arch cave1
+x 27
+y 6
+end
+arch cave22
+x 27
+y 7
+end
+arch blocked
+x 27
+y 8
+end
+arch blocked
+x 27
+y 9
+end
+arch dungeon_floor
+x 27
+y 10
+end
+arch cave25
+x 27
+y 10
+end
+arch dungeon_floor
+x 27
+y 11
+end
+arch cave1
+x 27
+y 11
+end
+arch dungeon_floor
+x 27
+y 12
+end
+arch cave1
+x 27
+y 12
+end
+arch dungeon_floor
+x 27
+y 13
+end
+arch cave1
+x 27
+y 13
+end
+arch dungeon_floor
+x 27
+y 14
+end
+arch cave22
+x 27
+y 14
+end
+arch blocked
+x 27
+y 15
+end
+arch blocked
+x 27
+y 16
+end
+arch blocked
+x 27
+y 17
+end
+arch blocked
+x 27
+y 18
+end
+arch blocked
+x 27
+y 19
+end
+arch blocked
+x 27
+y 20
+end
+arch blocked
+x 27
+y 21
+end
+arch blocked
+x 27
+y 22
+end
+arch blocked
+x 27
+y 23
+end
+arch blocked
+x 27
+y 24
+end
+arch blocked
+x 27
+y 25
+end
+arch blocked
+x 27
+y 26
+end
+arch blocked
+x 27
+y 27
+end
+arch chinese_dragon
+x 2
+y 2
+end
+arch big_dragon
+x 2
+y 4
+end
+arch big_dragon
+x 4
+y 22
+end
+arch big_elec
+dam 0
+x 22
+y 20
+unaggressive 1
+end
+arch big_elec
+x 24
+y 10
+end
