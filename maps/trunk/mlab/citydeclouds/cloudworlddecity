@@ -25086,13 +25086,6 @@ y 18
 move_block 0
 blocksview 0
 end
-arch ladder_down
-slaying valleyofrock
-hp 130
-sp 132
-x 21
-y 18
-end
 arch blocked
 name nothing
 name_pl nothing
@@ -64381,7 +64374,7 @@ x 46
 y 75
 end
 arch invis_exit
-slaying citydeclouds2
+slaying citydeclouds2A
 hp 2
 sp 26
 x 46
@@ -93246,9 +93239,9 @@ move_block 0
 blocksview 0
 end
 arch invis_exit
-slaying citydeclouds2
-hp 64
-sp 146
+slaying citydeclouds2F
+hp 14
+sp 45
 x 62
 y 105
 end
@@ -132326,7 +132319,7 @@ face shop_empty.111
 x 81
 y 81
 end
-arch cwall_4
+arch cwall_3_4
 x 81
 y 81
 end
@@ -132352,7 +132345,7 @@ face shop_empty.111
 x 81
 y 82
 end
-arch cwall_4
+arch cwall_3_4
 x 81
 y 82
 end
@@ -132378,7 +132371,7 @@ face shop_empty.111
 x 81
 y 83
 end
-arch cwall_4
+arch cwall_3_4
 x 81
 y 83
 end
@@ -132404,7 +132397,7 @@ face shop_empty.111
 x 81
 y 84
 end
-arch cwall_4
+arch cwall_3_4
 x 81
 y 84
 end
@@ -134203,41 +134196,19 @@ arch grass
 x 82
 y 80
 end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch grass
 x 82
 y 81
 end
-arch cwall_3_3
-x 82
-y 81
-end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch grass
 x 82
 y 82
 end
-arch cwall_4
-x 82
-y 82
-end
-arch flagstone
+arch grass
 x 82
 y 83
 end
-arch cwall_4
-x 82
-y 83
-end
-arch flagstone
-x 82
-y 84
-end
-arch cwall_4
+arch grass
 x 82
 y 84
 end
@@ -134248,7 +134219,7 @@ face shop_empty.111
 x 82
 y 85
 end
-arch cwall_4
+arch cwall_3_3
 x 82
 y 85
 end
@@ -135897,64 +135868,41 @@ arch grass
 x 83
 y 80
 end
+arch grass
+x 83
+y 81
+end
+arch grass
+x 83
+y 82
+end
+arch grass
+x 83
+y 83
+end
+arch grass
+x 83
+y 84
+end
 arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
 x 83
-y 81
+y 85
 end
-arch guard_house_4
+arch cwall_3_3
 x 83
-y 81
+y 85
 end
 arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
-x 83
-y 82
-end
-arch cwall_4
-x 83
-y 82
-end
-arch flagstone
-x 83
-y 83
-end
-arch cwall_4
-x 83
-y 83
-end
-arch flagstone
-x 83
-y 84
-end
-arch cwall_4
-x 83
-y 84
-end
-arch blocked
-x 83
-y 85
-end
-arch flagstone
-x 83
-y 85
-end
-arch cwall_4
-x 83
-y 85
-end
-arch flagstone
 x 83
 y 86
 end
-arch guard_house_3
-slaying /mlabguilds/MikeesCourt/mainfloor
-hp 15
-sp 34
+arch cwall_3_1
 x 83
 y 86
 end
@@ -135966,7 +135914,10 @@ y 87
 move_block 0
 blocksview 0
 end
-arch flagstone
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 83
 y 87
 end
@@ -135978,7 +135929,10 @@ y 88
 move_block 0
 blocksview 0
 end
-arch flagstone
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 83
 y 88
 end
@@ -136093,9 +136047,9 @@ x 83
 y 96
 end
 arch invis_exit
-slaying citydeclouds2
-hp 146
-sp 112
+slaying citydeclouds2I
+hp 43
+sp 13
 x 83
 y 97
 end
@@ -137605,41 +137559,19 @@ arch grass
 x 84
 y 80
 end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch grass
 x 84
 y 81
 end
-arch cwall_3_3
-x 84
-y 81
-end
-arch flagstone
-name floor
-name_pl floor
-face shop_empty.111
+arch grass
 x 84
 y 82
 end
-arch cwall_4
-x 84
-y 82
-end
-arch flagstone
+arch grass
 x 84
 y 83
 end
-arch cwall_4
-x 84
-y 83
-end
-arch flagstone
-x 84
-y 84
-end
-arch cwall_4
+arch grass
 x 84
 y 84
 end
@@ -137650,7 +137582,7 @@ face shop_empty.111
 x 84
 y 85
 end
-arch cwall_4
+arch cwall_3_3
 x 84
 y 85
 end
@@ -137688,7 +137620,10 @@ y 88
 move_block 0
 blocksview 0
 end
-arch flagstone
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 84
 y 88
 end
@@ -137700,7 +137635,10 @@ y 89
 move_block 0
 blocksview 0
 end
-arch flagstone
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 84
 y 89
 end
@@ -139312,7 +139250,7 @@ face shop_empty.111
 x 85
 y 81
 end
-arch cwall_4
+arch cwall_3_2
 x 85
 y 81
 end
@@ -139323,7 +139261,7 @@ face shop_empty.111
 x 85
 y 82
 end
-arch cwall_4
+arch cwall_3_2
 x 85
 y 82
 end
@@ -139334,7 +139272,7 @@ face shop_empty.111
 x 85
 y 83
 end
-arch cwall_4
+arch cwall_3_2
 x 85
 y 83
 end
@@ -139345,9 +139283,24 @@ face shop_empty.111
 x 85
 y 84
 end
-arch cwall_4
+arch cwall_3_2
 x 85
 y 84
+end
+arch blocked
+name nothing
+name_pl nothing
+x 85
+y 85
+move_block 0
+blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
+x 85
+y 85
 end
 arch flagstone
 name floor
@@ -144578,11 +144531,7 @@ x 88
 y 98
 end
 arch barrack_small
-name Letune's sword shop
-name_pl Letune's sword shop
-slaying citydeclouds2
-hp 176
-sp 115
+name barrack
 x 88
 y 98
 end
@@ -146254,9 +146203,8 @@ x 89
 y 88
 end
 arch house_small
-name kitche
-name_pl kitche
-slaying cwdckitchen
+name City de Clouds Kitchten
+slaying shops/cwdckitchen
 hp 6
 sp 10
 x 89
@@ -168380,7 +168328,8 @@ x 103
 y 76
 end
 arch shrine
-slaying cshrine1
+name Shrine to Valriel
+slaying temples/valriel
 hp 13
 sp 7
 x 103
@@ -229976,8 +229925,7 @@ y 133
 end
 arch wizard_tower
 name top of very tall tower
-name_pl very tall tower
-slaying /mlab/tavern
+slaying /navar_city/mlab/tavern
 hp 1
 sp 20
 x 66
@@ -230111,8 +230059,6 @@ x 82
 y 91
 end
 arch barrack_long
-name rapier courts
-name_pl rapier courts
 x 84
 y 98
 end
@@ -230126,7 +230072,8 @@ x 85
 y 88
 end
 arch store_alchemy
-slaying cwdcpotionshop1
+name Potion Shop
+slaying shops/cwdcpotionshop1
 hp 14
 sp 18
 x 85
@@ -230142,19 +230089,14 @@ x 85
 y 94
 end
 arch barrack_long
-slaying rapier courts
 x 85
 y 99
 end
 arch barrack_long
-name rapier courts
-name_pl rapier courts
 x 85
 y 100
 end
 arch barrack_long
-name rapier courts
-name_pl rapier courts
 x 86
 y 98
 end
@@ -230168,7 +230110,8 @@ x 87
 y 99
 end
 arch store_general
-slaying cwdcgenshop1
+name General Shop
+slaying shops/cwdcgenshop1
 hp 14
 sp 18
 x 88
@@ -230186,8 +230129,7 @@ y 6
 end
 arch s_inn
 name Snow Cloud Cafe
-name_pl Snow Cloud Cafe
-slaying cdcwcafe1
+slaying shops/cdcwcafe1
 msg
 You enter a nice cafe upon a cold,
 almost frozen, cloud.
