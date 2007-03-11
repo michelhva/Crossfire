@@ -1,0 +1,524 @@
+arch map
+name Cloud World Castle
+difficulty 1
+region citydeclouds
+width 10
+height 11
+msg
+Creator: CF Java Map Editor
+Date:    3/11/2007
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch blocked
+y 2
+end
+arch blocked
+y 3
+end
+arch blocked
+y 4
+end
+arch blocked
+y 5
+end
+arch blocked
+y 6
+end
+arch blocked
+y 7
+end
+arch blocked
+y 8
+end
+arch blocked
+y 9
+end
+arch blocked
+y 10
+end
+arch blocked
+x 1
+end
+arch blocked
+x 1
+y 1
+end
+arch blocked
+x 1
+y 2
+end
+arch blocked
+x 1
+y 3
+end
+arch blocked
+x 1
+y 4
+end
+arch blocked
+x 1
+y 5
+end
+arch blocked
+x 1
+y 6
+end
+arch blocked
+x 1
+y 7
+end
+arch blocked
+x 1
+y 8
+end
+arch blocked
+x 1
+y 9
+end
+arch blocked
+x 1
+y 10
+end
+arch blocked
+x 2
+end
+arch blocked
+x 2
+y 1
+end
+arch blocked
+x 2
+y 2
+end
+arch blocked
+x 2
+y 3
+end
+arch blocked
+x 2
+y 4
+end
+arch blocked
+x 2
+y 5
+end
+arch blocked
+x 2
+y 6
+end
+arch blocked
+x 2
+y 7
+end
+arch blocked
+x 2
+y 8
+end
+arch blocked
+x 2
+y 9
+end
+arch blocked
+x 2
+y 10
+end
+arch blocked
+x 3
+end
+arch blocked
+x 3
+y 1
+end
+arch blocked
+x 3
+y 2
+end
+arch blocked
+x 3
+y 3
+end
+arch dirtfloor
+x 3
+y 4
+end
+arch cave18
+x 3
+y 4
+end
+arch dirtfloor
+x 3
+y 5
+end
+arch cave3
+x 3
+y 5
+end
+arch dirtfloor
+x 3
+y 6
+end
+arch cave3
+x 3
+y 6
+end
+arch dirtfloor
+x 3
+y 7
+end
+arch cave17
+x 3
+y 7
+end
+arch blocked
+x 3
+y 8
+end
+arch blocked
+x 3
+y 9
+end
+arch blocked
+x 3
+y 10
+end
+arch blocked
+x 4
+end
+arch blocked
+x 4
+y 1
+end
+arch blocked
+x 4
+y 2
+end
+arch dirtfloor
+x 4
+y 3
+end
+arch cave18
+x 4
+y 3
+end
+arch dirtfloor
+x 4
+y 4
+end
+arch cave13
+x 4
+y 4
+end
+arch dirtfloor
+x 4
+y 5
+end
+arch dirtfloor
+x 4
+y 6
+end
+arch dirtfloor
+x 4
+y 7
+end
+arch cave16
+x 4
+y 7
+end
+arch dirtfloor
+x 4
+y 8
+end
+arch cave17
+x 4
+y 8
+end
+arch blocked
+x 4
+y 9
+end
+arch blocked
+x 4
+y 10
+end
+arch blocked
+x 5
+end
+arch blocked
+x 5
+y 1
+end
+arch blocked
+x 5
+y 2
+end
+arch dirtfloor
+x 5
+y 3
+end
+arch cave4
+x 5
+y 3
+end
+arch dirtfloor
+x 5
+y 4
+end
+arch stair3_ystone_do
+slaying cwdccastleb16
+hp 58
+sp 55
+x 5
+y 4
+end
+arch dirtfloor
+x 5
+y 5
+end
+arch dirtfloor
+x 5
+y 6
+end
+arch dirtfloor
+x 5
+y 7
+end
+arch dirtfloor
+x 5
+y 8
+end
+arch cave2
+x 5
+y 8
+end
+arch blocked
+x 5
+y 9
+end
+arch blocked
+x 5
+y 10
+end
+arch blocked
+x 6
+end
+arch blocked
+x 6
+y 1
+end
+arch blocked
+x 6
+y 2
+end
+arch dirtfloor
+x 6
+y 3
+end
+arch cave4
+x 6
+y 3
+end
+arch dirtfloor
+x 6
+y 4
+end
+arch dirtfloor
+x 6
+y 5
+end
+arch dirtfloor
+x 6
+y 6
+end
+arch dirtfloor
+x 6
+y 7
+end
+arch stair3_ystone_up
+slaying cwdccastleb14
+hp 59
+sp 58
+x 6
+y 7
+end
+arch dirtfloor
+x 6
+y 8
+end
+arch cave2
+x 6
+y 8
+end
+arch blocked
+x 6
+y 9
+end
+arch blocked
+x 6
+y 10
+end
+arch blocked
+x 7
+end
+arch blocked
+x 7
+y 1
+end
+arch blocked
+x 7
+y 2
+end
+arch dirtfloor
+x 7
+y 3
+end
+arch cave19
+x 7
+y 3
+end
+arch dirtfloor
+x 7
+y 4
+end
+arch cave14
+x 7
+y 4
+end
+arch dirtfloor
+x 7
+y 5
+end
+arch dirtfloor
+x 7
+y 6
+end
+arch dirtfloor
+x 7
+y 7
+end
+arch cave15
+x 7
+y 7
+end
+arch dirtfloor
+x 7
+y 8
+end
+arch cave20
+x 7
+y 8
+end
+arch blocked
+x 7
+y 9
+end
+arch blocked
+x 7
+y 10
+end
+arch blocked
+x 8
+end
+arch blocked
+x 8
+y 1
+end
+arch blocked
+x 8
+y 2
+end
+arch blocked
+x 8
+y 3
+end
+arch dirtfloor
+x 8
+y 4
+end
+arch cave19
+x 8
+y 4
+end
+arch dirtfloor
+x 8
+y 5
+end
+arch cave1
+x 8
+y 5
+end
+arch dirtfloor
+x 8
+y 6
+end
+arch cave1
+x 8
+y 6
+end
+arch dirtfloor
+x 8
+y 7
+end
+arch cave20
+x 8
+y 7
+end
+arch blocked
+x 8
+y 8
+end
+arch blocked
+x 8
+y 9
+end
+arch blocked
+x 8
+y 10
+end
+arch blocked
+x 9
+end
+arch blocked
+x 9
+y 1
+end
+arch blocked
+x 9
+y 2
+end
+arch blocked
+x 9
+y 3
+end
+arch blocked
+x 9
+y 4
+end
+arch blocked
+x 9
+y 5
+end
+arch blocked
+x 9
+y 6
+end
+arch blocked
+x 9
+y 7
+end
+arch blocked
+x 9
+y 8
+end
+arch blocked
+x 9
+y 9
+end
+arch blocked
+x 9
+y 10
+end
