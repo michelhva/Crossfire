@@ -5447,7 +5447,9 @@ x 21
 y 29
 elevation 2581
 end
-arch house_1
+arch minihouse
+name A small shop
+slaying /brest/shops/a_small_shop
 x 21
 y 29
 end
@@ -7915,15 +7917,15 @@ arch flagstone_2_1_2
 x 30
 y 16
 end
-arch tree
+arch brush
 x 30
 y 17
-elevation 2828
+elevation 2532
 end
-arch evergreens
+arch brush
 x 30
 y 18
-elevation 2365
+elevation 2532
 end
 arch flagstone
 x 30
@@ -8172,14 +8174,15 @@ arch flagstone_2_1_2
 x 31
 y 16
 end
-arch evergreens
+arch brush
 x 31
 y 17
+elevation 2532
 end
-arch evergreens
+arch brush
 x 31
 y 18
-elevation 2585
+elevation 2532
 end
 arch flagstone
 x 31
@@ -13077,6 +13080,14 @@ sp 15
 x 29
 y 23
 end
+arch guild
+name Sport Center
+slaying /brest/sport.jess
+hp 38
+sp 34
+x 30
+y 17
+end
 arch store_armour_fant
 name Brest Armour
 slaying /brest/brest.armour
@@ -13094,6 +13105,7 @@ x 31
 y 29
 end
 arch tower_a
+name Tower of Zoon
 slaying /brest/info_first
 hp 38
 sp 66

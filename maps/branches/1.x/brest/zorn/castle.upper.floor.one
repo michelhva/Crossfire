@@ -11796,6 +11796,11 @@ y 44
 end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
+msg
+You get a STRONG sense of danger.
+Perhaps you should not hang around
+too long on this floor.
+endmsg
 hp 25
 sp 44
 x 25
@@ -11807,6 +11812,11 @@ y 45
 end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
+msg
+You get a STRONG sense of danger.
+Perhaps you should not hang around
+too long on this floor.
+endmsg
 hp 25
 sp 45
 x 25
@@ -14154,14 +14164,6 @@ arch cobblestones2
 x 28
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -14172,14 +14174,6 @@ arch cobblestones2
 x 28
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 28
@@ -14188,14 +14182,6 @@ end
 arch cobblestones2
 x 28
 y 53
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 54
-invisible 1
 end
 arch sea
 name moat
@@ -14206,14 +14192,6 @@ arch cobblestones2
 x 28
 y 54
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 55
-invisible 1
-end
 arch brush
 x 28
 y 55
@@ -14222,14 +14200,6 @@ arch cobblestones2
 x 28
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 56
-invisible 1
-end
 arch brush
 x 28
 y 56
@@ -14239,14 +14209,6 @@ name road
 x 28
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 57
-invisible 1
-end
 arch brush
 x 28
 y 57
@@ -14255,14 +14217,6 @@ arch earth
 name road
 x 28
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 58
-invisible 1
 end
 arch brush
 x 28
@@ -14548,14 +14502,6 @@ arch cobblestones2
 x 29
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -14566,14 +14512,6 @@ arch cobblestones2
 x 29
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 29
@@ -14582,14 +14520,6 @@ end
 arch cobblestones2
 x 29
 y 53
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 54
-invisible 1
 end
 arch sea
 name moat
@@ -14600,14 +14530,6 @@ arch cobblestones2
 x 29
 y 54
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 55
-invisible 1
-end
 arch brush
 x 29
 y 55
@@ -14616,14 +14538,6 @@ arch cobblestones2
 x 29
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 56
-invisible 1
-end
 arch brush
 x 29
 y 56
@@ -14633,14 +14547,6 @@ name road
 x 29
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 57
-invisible 1
-end
 arch brush
 x 29
 y 57
@@ -14649,14 +14555,6 @@ arch earth
 name road
 x 29
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 58
-invisible 1
 end
 arch brush
 x 29
@@ -15894,14 +15792,6 @@ arch cobblestones2
 x 30
 y 51
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 52
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -15912,14 +15802,6 @@ arch cobblestones2
 x 30
 y 52
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 53
-invisible 1
-end
 arch sea
 name moat
 x 30
@@ -15928,14 +15810,6 @@ end
 arch cobblestones2
 x 30
 y 53
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 54
-invisible 1
 end
 arch sea
 name moat
@@ -15946,14 +15820,6 @@ arch cobblestones2
 x 30
 y 54
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 55
-invisible 1
-end
 arch brush
 x 30
 y 55
@@ -15962,14 +15828,6 @@ arch cobblestones2
 x 30
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 56
-invisible 1
-end
 arch brush
 x 30
 y 56
@@ -15979,14 +15837,6 @@ name road
 x 30
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 57
-invisible 1
-end
 arch brush
 x 30
 y 57
@@ -15995,14 +15845,6 @@ arch earth
 name road
 x 30
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 58
-invisible 1
 end
 arch brush
 x 30
@@ -17492,6 +17334,11 @@ y 44
 end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
+msg
+You get a STRONG sense of danger.
+Perhaps you should not hang around
+too long on this floor.
+endmsg
 hp 33
 sp 44
 x 33
@@ -17503,6 +17350,11 @@ y 45
 end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
+msg
+You get a STRONG sense of danger.
+Perhaps you should not hang around
+too long on this floor.
+endmsg
 hp 33
 sp 45
 x 33
@@ -22969,6 +22821,7 @@ level 100
 end
 arch spell_shockwave
 msg
+
 endmsg
 level 100
 end

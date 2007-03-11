@@ -5447,7 +5447,9 @@ x 21
 y 29
 elevation 2581
 end
-arch house_1
+arch minihouse
+name A small shop
+slaying /brest/shops/a_small_shop
 x 21
 y 29
 end
