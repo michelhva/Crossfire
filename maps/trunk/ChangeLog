@@ -1,3 +1,212 @@
+2007-03-11 07:16  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity, mlab/citydeclouds/misc,
+	  mlab/citydeclouds/misc/cwdcchessarenaa1,
+	  mlab/citydeclouds/misc/cwdcchessarenaa2,
+	  mlab/citydeclouds/misc/cwdcchessarenab2: Merge in missing maps,
+	  Chess Collesium
+
+2007-03-11 06:42  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2I,
+	  mlab/citydeclouds/cloudworlddecity, mlab/citydeclouds/temples,
+	  mlab/citydeclouds/temples/valriel: Updates and corrections to
+	  map paths to fix broken exits (entrances)
+
+2007-03-11 06:41  rjtanner
+
+	* mlab/citydeclouds/shops, mlab/citydeclouds/shops/cdcwcafe1,
+	  mlab/citydeclouds/shops/cwdcgenshop1,
+	  mlab/citydeclouds/shops/cwdckitchen,
+	  mlab/citydeclouds/shops/cwdcpotionshop1: Merge in missing shop
+	  mops - kitchen, cafe, general store and potion store
+
+2007-03-11 06:36  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Still a bit too much
+	  experience gain. Removed some of the generators. Added a
+	  desk and chair for each sergeant.
+
+2007-03-11 05:35  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: It was discovered that the
+	  beds generating Fearless personal guards so fast
+	  could (and would) be abused by devourer players and red death.
+	  The generation
+	  was slowed down considerably with this commit.
+
+2007-03-10 03:36  rjtanner
+
+	* mlab/citydeclouds/cdcnwgateuprlv1: Merging in a missing map.
+
+2007-03-10 03:25  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2A: Map path correction for an
+	  exit (entrance).
+
+2007-03-10 03:21  rjtanner
+
+	* mlab/citydeclouds/cdccloudre1: Merged in real estate map which
+	  is necessary for purchasing town homes elsewhere in this region.
+
+2007-03-10 03:03  rjtanner
+
+	* mlab/citydeclouds/cdcmesshluper1: Merge in missing map with
+	  minor cosmetic updates (changes with swall_ merging) and Map
+	  Editor reformatting.
+
+2007-03-10 02:59  rjtanner
+
+	* mlab/citydeclouds/cdcapart1, mlab/citydeclouds/citydeclouds2E:
+	  Removed exits to unmerged (unused) maps.
+
+2007-03-10 02:58  rjtanner
+
+	* mlab/citydeclouds/cdcgatea2, mlab/citydeclouds/cdcscasino:
+	  Merged in missing maps, with some corrections and cosmetic
+	  udpates.
+
+2007-03-10 02:57  rjtanner
+
+	* mlab/citydeclouds/cdccourthsuplvl1: Corrected brokem map path in
+	  the teleporters, cosmetic updates on the where 'swall_' merges
+	  with adjacent walls.
+
+2007-03-09 03:56  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2E,
+	  mlab/citydeclouds/citydeclouds2H: Map exit (entrance)
+	  corrections.
+
+2007-03-09 03:49  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore3f,
+	  mlab/citydeclouds/cdccastlekeepb1: Removed duplicate copy of a
+	  map, map exit (entrance) correction.
+
+2007-03-09 03:44  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2G: Map name and destination
+	  coordinate correction.
+
+2007-03-09 02:39  rjtanner
+
+	* mlab/citydeclouds/cdcwgrotto1, mlab/citydeclouds/citydeclouds2F,
+	  mlab/citydeclouds/citydeclouds2H,
+	  mlab/citydeclouds/citydeclouds2I,
+	  mlab/citydeclouds/villa/citydecloudsvillab1: Corrected map paths
+	  for broken exits, merged in missing map.
+
+2007-03-08 23:13  eracc
+
+	* maps/branches/1.x/start/Nexus, start/Nexus: Update the Nexus to
+	  block access to Navar without knowing some information. To
+	  keep true novices on the safer paths. Also set the map to
+	  "fixed" reset" with
+	  a 15 second timeout.
+
+2007-03-08 21:50  eracc
+
+	* maps/branches/1.x/navar_city/mouse_house,
+	  navar_city/mouse_house: Goofed in the placement of the
+	  generators. Fixed.
+
+2007-03-08 21:34  eracc
+
+	* maps/branches/1.x/navar_city/mouse_house,
+	  maps/branches/1.x/world/world_121_117, navar_city/mouse_house,
+	  world/world_121_117: Create and add another low level house for
+	  beginners starting in Navar.
+
+2007-03-08 19:43  eracc
+
+	* maps/branches/1.x/dungeons/gorokh/gorokh_final,
+	  dungeons/gorokh/gorokh_final: The Demonspawn shield of Gorokh
+	  was damned and apparently this caused it to
+	  burn when it fell on the "eternal lake of fire". Removed the
+	  damnation from
+	  the shield.
+	  
+	  The Avatars (created by the generators) were a little too fast
+	  still. Slowed
+	  them some. They are also now "race Divine" instead of "race
+	  demon" to stop
+	  "rod of banishment" abuse.
+
+2007-03-08 02:30  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.three: Forgot to make the treasure
+	  doors block the view. Fixed.
+
+2007-03-08 01:55  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Minor tweaks to fix some
+	  things.
+	  New treasure on brest/zorn/castle.upper.floor.three added.
+
+2007-03-07 03:06  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeepb1,
+	  mlab/citydeclouds/citydeclouds2C,
+	  mlab/citydeclouds/citydeclouds2E,
+	  mlab/citydeclouds/citydeclouds2F,
+	  mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/cloudworlddecity, mlab/mlabscrntrd2,
+	  navar_city/mlab/tadobebuild3, navar_city/mlab/tavernb3,
+	  navar_city/mlab/ttowerchoswld1: Merged in missing maps, updated
+	  exits and map paths.
+
+2007-03-06 23:44  aaron_baugher
+
+	* start/tutorial1, unlinked/tutorial1: Moving new unlinked map to
+	  appropriate location
+
+2007-03-06 19:23  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.three: More monster tweaks based
+	  on player feedback.
+	  Added another surprise treasure. :-)
+
+2007-03-06 19:19  aaron_baugher
+
+	* start/tutorial1: New tutorial map available for newbie use
+
+2007-03-06 08:21  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Made some changes to the
+	  monsters based on player input.
+	  They should now be a little more challenging.
+
+2007-03-06 07:47  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.three: Apparently putting
+	  invisible items on a level 95 map makes it impossible to
+	  make the item appear even with level 110 show invisible. Removed
+	  the invisible
+	  attribute from the item.
+
+2007-03-06 07:11  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.three: As usual forgot to make
+	  some changes I meant to make before committing. Fixed the names
+	  of some of the creatures.
+
+2007-03-06 06:02  rjtanner
+
+	* ChangeLog: ChangeLog updates
+
 2007-03-06 05:50  rjtanner
 
 	* mlab/citydeclouds/IPO_citydeclouds,
