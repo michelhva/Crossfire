@@ -97656,8 +97656,7 @@ y 114
 end
 arch chess_club
 name Trader Joe's
-name_pl Trader Joe's
-slaying cwdctrademarket
+slaying shops/cwdctrademarket
 msg
 This seems like a safe and secure
 trading area.
@@ -168328,8 +168327,7 @@ x 103
 y 76
 end
 arch shrine
-name Shrine to Valriel
-slaying temples/valriel
+slaying cshrine1
 hp 13
 sp 7
 x 103
@@ -229813,8 +229811,7 @@ y 95
 end
 arch collesium
 name Chess Collesium
-name_pl Chess Collesium
-slaying cwdcchessarenaa2
+slaying misc/cwdcchessarenaa2
 hp 31
 sp 13
 x 55
