@@ -3565,136 +3565,6 @@ arch woodfloor
 x 10
 y 21
 end
-arch bed_1
-name guard generator
-x 10
-y 21
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 10
 y 22
@@ -3766,136 +3636,6 @@ end
 arch woodfloor
 x 10
 y 37
-end
-arch bed_1
-name guard generator
-x 10
-y 37
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
 end
 arch woodfloor2
 x 10
@@ -8056,136 +7796,6 @@ arch woodfloor
 x 21
 y 10
 end
-arch bed_1
-name guard generator
-x 21
-y 10
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 21
 y 11
@@ -8658,136 +8268,6 @@ arch woodfloor
 x 21
 y 48
 end
-arch bed_1
-name guard generator
-x 21
-y 48
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 21
 y 49
@@ -8905,6 +8385,11 @@ x 22
 y 8
 end
 arch woodfloor2
+x 22
+y 9
+end
+arch chair_2.1
+name sergeant's chair
 x 22
 y 9
 end
@@ -9040,6 +8525,11 @@ endmsg
 end
 end
 arch woodfloor2
+x 22
+y 10
+end
+arch dresser
+name sergeant's desk
 x 22
 y 10
 end
@@ -9269,7 +8759,17 @@ arch woodfloor2
 x 22
 y 48
 end
+arch desk
+name sergeant's desk
+x 22
+y 48
+end
 arch woodfloor2
+x 22
+y 49
+end
+arch chair_2.3
+name sergeant's chair
 x 22
 y 49
 end
@@ -14232,6 +13732,11 @@ arch woodfloor2
 x 36
 y 9
 end
+arch chair_2.1
+name sergeant's chair
+x 36
+y 9
+end
 arch man2
 name Fearless personal guard sergeant
 Con 30
@@ -14364,6 +13869,11 @@ endmsg
 end
 end
 arch woodfloor2
+x 36
+y 10
+end
+arch dresser
+name sergeant's desk
 x 36
 y 10
 end
@@ -14593,7 +14103,17 @@ arch woodfloor2
 x 36
 y 48
 end
+arch desk
+name sergeant's desk
+x 36
+y 48
+end
 arch woodfloor2
+x 36
+y 49
+end
+arch chair_2.3
+name sergeant's chair
 x 36
 y 49
 end
@@ -14847,136 +14367,6 @@ end
 arch woodfloor
 x 37
 y 10
-end
-arch bed_1
-name guard generator
-x 37
-y 10
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
 end
 arch woodfloor
 x 37
@@ -15449,136 +14839,6 @@ end
 arch woodfloor
 x 37
 y 48
-end
-arch bed_1
-name guard generator
-x 37
-y 48
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
 end
 arch woodfloor
 x 37
@@ -19735,136 +18995,6 @@ arch woodfloor
 x 48
 y 21
 end
-arch bed_1
-name guard generator
-x 48
-y 21
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 48
 y 22
@@ -19936,136 +19066,6 @@ end
 arch woodfloor
 x 48
 y 37
-end
-arch bed_1
-name guard generator
-x 48
-y 37
-speed 0.0050
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
 end
 arch woodfloor2
 x 48
