@@ -229786,10 +229786,6 @@ y 95
 end
 arch barn2
 name hangar
-name_pl hangar
-slaying cwdcprivhangar1
-hp 8
-sp 30
 x 48
 y 108
 end
@@ -229846,7 +229842,8 @@ x 59
 y 89
 end
 arch keep
-slaying cwdcrandkeep1
+name Cloud World Keep
+slaying keep/cwdcrandkeep1
 msg
 It is ... quiet here... the doors
 unlocked... but uninviting.
@@ -230047,8 +230044,7 @@ y 93
 end
 arch guild
 name Town Haus
-name_pl Town Haus
-slaying cwdctownhaus1lvl1
+slaying apartment/cwdctownhaus1lvl1
 hp 15
 sp 22
 x 82
@@ -230060,8 +230056,7 @@ y 98
 end
 arch guild
 name Town Haus
-name_pl Town Haus
-slaying cwdctownhaus3lvl1
+slaying apartment/cwdctownhaus3lvl1
 hp 15
 sp 22
 x 85
@@ -230098,8 +230093,7 @@ y 98
 end
 arch guild
 name Town Haus
-name_pl Town Haus
-slaying cwdctownhaus4lvl1
+slaying apartment/cwdctownhaus4lvl1
 hp 15
 sp 22
 x 87
