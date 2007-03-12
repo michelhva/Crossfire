@@ -209834,353 +209834,69 @@ face fog.111
 x 126
 y 122
 end
-arch swall_2_2_3
-x 126
-y 122
-end
 arch dungeon_magic
 x 126
 y 122
 end
+arch swall_2_1_2
+x 126
+y 122
+end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 123
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 123
-end
-arch swall_2_1_1
-x 126
-y 123
-end
-arch dungeon_magic
 x 126
 y 123
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 124
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 124
-end
-arch swall_2_1_1
-x 126
-y 124
-end
-arch dungeon_magic
 x 126
 y 124
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 125
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 125
-end
-arch swall_2_1_1
-x 126
-y 125
-end
-arch dungeon_magic
 x 126
 y 125
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 126
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 126
-end
-arch swall_2_1_1
-x 126
-y 126
-end
-arch dungeon_magic
 x 126
 y 126
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 127
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 127
-end
-arch swall_2_1_1
-x 126
-y 127
-end
-arch dungeon_magic
 x 126
 y 127
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 128
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 128
-end
-arch swall_2_1_1
-x 126
-y 128
-end
-arch dungeon_magic
 x 126
 y 128
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 129
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 129
-end
-arch swall_2_1_1
-x 126
-y 129
-end
-arch dungeon_magic
 x 126
 y 129
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 130
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 130
-end
-arch swall_2_1_1
-x 126
-y 130
-end
-arch dungeon_magic
 x 126
 y 130
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 131
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 131
-end
-arch swall_2_1_1
-x 126
-y 131
-end
-arch dungeon_magic
 x 126
 y 131
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 132
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 132
-end
-arch swall_2_1_1
-x 126
-y 132
-end
-arch dungeon_magic
 x 126
 y 132
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 133
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 133
-end
-arch swall_2_1_1
-x 126
-y 133
-end
-arch dungeon_magic
 x 126
 y 133
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 134
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 134
-end
-arch swall_2_1_1
-x 126
-y 134
-end
-arch dungeon_magic
 x 126
 y 134
 end
 arch blocked
-name nothing
-name_pl nothing
-x 126
-y 135
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 135
-end
-arch swall_2_1_1
-x 126
-y 135
-end
-arch dungeon_magic
 x 126
 y 135
 end
 arch blocked
-name nothing
-name_pl nothing
 x 126
 y 136
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 136
-end
-arch swall_2_1_1
-x 126
-y 136
-end
-arch dungeon_magic
-x 126
-y 136
-end
-arch blocked
-name nothing
-name_pl nothing
-x 126
-y 137
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 137
-end
-arch swall_2_1_1
-x 126
-y 137
-end
-arch dungeon_magic
-x 126
-y 137
-end
-arch blocked
-name nothing
-name_pl nothing
-x 126
-y 138
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 138
-end
-arch swall_2_1_1
-x 126
-y 138
-end
-arch dungeon_magic
-x 126
-y 138
-end
-arch blocked
-name nothing
-name_pl nothing
-x 126
-y 139
-move_block 0
-blocksview 0
-end
-arch istone
-x 126
-y 139
-end
-arch swall_1_2
-x 126
-y 139
-end
-arch dungeon_magic
-x 126
-y 139
 end
 arch blocked
 name nothing
@@ -211667,14 +211383,6 @@ face shop_empty.111
 x 127
 y 121
 end
-arch blocked
-name nothing
-name_pl nothing
-x 127
-y 122
-move_block 0
-blocksview 0
-end
 arch flagstone
 name floor
 name_pl floor
@@ -211686,18 +211394,15 @@ arch snow4
 x 127
 y 122
 end
-arch blocked
-name nothing
-name_pl nothing
+arch swall_2_1_2
 x 127
-y 123
-move_block 0
-blocksview 0
+y 122
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch dungeon_magic
+x 127
+y 122
+end
+arch blocked
 x 127
 y 123
 end
@@ -211709,27 +211414,17 @@ y 124
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 127
 y 124
 end
 arch blocked
-name nothing
-name_pl nothing
 x 127
 y 125
-move_block 0
-blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch blocked
 x 127
-y 125
+y 126
 end
 arch blocked
 name nothing
@@ -211739,207 +211434,49 @@ y 126
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 127
 y 126
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 127
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 127
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 128
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 128
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 129
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 129
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 130
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 130
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 131
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 131
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 132
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 132
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 133
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 133
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 134
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 134
 end
 arch blocked
-name nothing
-name_pl nothing
-x 127
-y 135
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 127
 y 135
 end
 arch blocked
-name nothing
-name_pl nothing
 x 127
 y 136
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 127
-y 136
-end
-arch blocked
-name nothing
-name_pl nothing
-x 127
-y 137
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 127
-y 137
-end
-arch blocked
-name nothing
-name_pl nothing
-x 127
-y 138
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 127
-y 138
-end
-arch blocked
-name nothing
-name_pl nothing
-x 127
-y 139
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 127
-y 139
 end
 arch blocked
 name nothing
@@ -213405,14 +212942,6 @@ arch snow4
 x 128
 y 121
 end
-arch blocked
-name nothing
-name_pl nothing
-x 128
-y 122
-move_block 0
-blocksview 0
-end
 arch flagstone
 name floor
 name_pl floor
@@ -213424,6 +212953,14 @@ arch snow4
 x 128
 y 122
 end
+arch swall_2_1_2
+x 128
+y 122
+end
+arch dungeon_magic
+x 128
+y 122
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -213432,252 +212969,61 @@ y 123
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 128
 y 123
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 124
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 124
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 125
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 125
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 126
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 126
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 127
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 127
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 128
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 128
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 129
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 129
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 130
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 130
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 131
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 131
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 132
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 132
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 133
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 133
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 134
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 134
 end
 arch blocked
-name nothing
-name_pl nothing
-x 128
-y 135
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 128
 y 135
 end
 arch blocked
-name nothing
-name_pl nothing
 x 128
 y 136
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 128
-y 136
-end
-arch blocked
-name nothing
-name_pl nothing
-x 128
-y 137
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 128
-y 137
-end
-arch blocked
-name nothing
-name_pl nothing
-x 128
-y 138
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 128
-y 138
-end
-arch blocked
-name nothing
-name_pl nothing
-x 128
-y 139
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 128
-y 139
 end
 arch blocked
 name nothing
@@ -215141,33 +214487,19 @@ face ice.111
 x 129
 y 122
 end
-arch blocked
-name nothing
-name_pl nothing
+arch swall_2_1_2
 x 129
-y 123
-move_block 0
-blocksview 0
+y 122
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch dungeon_magic
+x 129
+y 122
+end
+arch blocked
 x 129
 y 123
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 124
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 124
 end
@@ -215179,222 +214511,53 @@ y 125
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 129
 y 125
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 126
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 126
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 127
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 127
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 128
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 128
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 129
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 129
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 130
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 130
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 131
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 131
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 132
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 132
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 133
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 133
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 134
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 134
 end
 arch blocked
-name nothing
-name_pl nothing
-x 129
-y 135
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 129
 y 135
 end
 arch blocked
-name nothing
-name_pl nothing
 x 129
 y 136
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 129
-y 136
-end
-arch blocked
-name nothing
-name_pl nothing
-x 129
-y 137
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 129
-y 137
-end
-arch blocked
-name nothing
-name_pl nothing
-x 129
-y 138
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 129
-y 138
-end
-arch blocked
-name nothing
-name_pl nothing
-x 129
-y 139
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
-x 129
-y 139
 end
 arch blocked
 name nothing
@@ -217009,353 +216172,69 @@ arch istone
 x 130
 y 122
 end
-arch swall_2_1_1
-x 130
-y 122
-end
 arch dungeon_magic
 x 130
 y 122
 end
+arch swall_2_2_4
+x 130
+y 122
+end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 123
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 123
-end
-arch swall_2_1_1
-x 130
-y 123
-end
-arch dungeon_magic
 x 130
 y 123
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 124
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 124
-end
-arch swall_2_1_1
-x 130
-y 124
-end
-arch dungeon_magic
 x 130
 y 124
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 125
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 125
-end
-arch swall_2_1_1
-x 130
-y 125
-end
-arch dungeon_magic
 x 130
 y 125
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 126
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 126
-end
-arch swall_2_1_1
-x 130
-y 126
-end
-arch dungeon_magic
 x 130
 y 126
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 127
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 127
-end
-arch swall_2_1_1
-x 130
-y 127
-end
-arch dungeon_magic
 x 130
 y 127
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 128
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 128
-end
-arch swall_2_1_1
-x 130
-y 128
-end
-arch dungeon_magic
 x 130
 y 128
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 129
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 129
-end
-arch swall_2_1_1
-x 130
-y 129
-end
-arch dungeon_magic
 x 130
 y 129
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 130
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 130
-end
-arch swall_2_1_1
-x 130
-y 130
-end
-arch dungeon_magic
 x 130
 y 130
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 131
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 131
-end
-arch swall_2_1_1
-x 130
-y 131
-end
-arch dungeon_magic
 x 130
 y 131
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 132
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 132
-end
-arch swall_2_1_1
-x 130
-y 132
-end
-arch dungeon_magic
 x 130
 y 132
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 133
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 133
-end
-arch swall_2_1_1
-x 130
-y 133
-end
-arch dungeon_magic
 x 130
 y 133
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 134
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 134
-end
-arch swall_2_1_1
-x 130
-y 134
-end
-arch dungeon_magic
 x 130
 y 134
 end
 arch blocked
-name nothing
-name_pl nothing
-x 130
-y 135
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 135
-end
-arch swall_2_1_1
-x 130
-y 135
-end
-arch dungeon_magic
 x 130
 y 135
 end
 arch blocked
-name nothing
-name_pl nothing
 x 130
 y 136
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 136
-end
-arch swall_2_1_1
-x 130
-y 136
-end
-arch dungeon_magic
-x 130
-y 136
-end
-arch blocked
-name nothing
-name_pl nothing
-x 130
-y 137
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 137
-end
-arch swall_2_1_1
-x 130
-y 137
-end
-arch dungeon_magic
-x 130
-y 137
-end
-arch blocked
-name nothing
-name_pl nothing
-x 130
-y 138
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 138
-end
-arch swall_2_1_1
-x 130
-y 138
-end
-arch dungeon_magic
-x 130
-y 138
-end
-arch blocked
-name nothing
-name_pl nothing
-x 130
-y 139
-move_block 0
-blocksview 0
-end
-arch istone
-x 130
-y 139
-end
-arch swall_1_2
-x 130
-y 139
-end
-arch dungeon_magic
-x 130
-y 139
 end
 arch blocked
 name nothing
@@ -220051,14 +218930,14 @@ face fog.111
 x 132
 y 115
 end
-arch swall_2_2_1
-x 132
-y 115
-end
 arch dungeon_magic
 x 132
 y 115
 end
+arch swall_2_1_1
+x 132
+y 115
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -220078,6 +218957,14 @@ arch snow4
 x 132
 y 116
 end
+arch swall_2_1_1
+x 132
+y 116
+end
+arch dungeon_magic
+x 132
+y 116
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -220094,6 +218981,14 @@ x 132
 y 117
 end
 arch snow4
+x 132
+y 117
+end
+arch swall_2_1_1
+x 132
+y 117
+end
+arch dungeon_magic
 x 132
 y 117
 end
@@ -220113,6 +219008,14 @@ x 132
 y 118
 end
 arch snow4
+x 132
+y 118
+end
+arch swall_2_1_1
+x 132
+y 118
+end
+arch dungeon_magic
 x 132
 y 118
 end
@@ -220131,11 +219034,11 @@ face fog.111
 x 132
 y 119
 end
-arch swall_2_2_2
+arch dungeon_magic
 x 132
 y 119
 end
-arch dungeon_magic
+arch swall_2_1_1
 x 132
 y 119
 end
@@ -220213,6 +219116,18 @@ x 132
 y 126
 move_block 0
 blocksview 0
+end
+arch blocked
+name nothing
+name_pl nothing
+x 132
+y 126
+move_block 0
+blocksview 0
+end
+arch fog
+x 132
+y 126
 end
 arch blocked
 name nothing
@@ -221404,39 +220319,16 @@ x 133
 y 114
 end
 arch blocked
-name nothing
-name_pl nothing
-x 133
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 133
-y 115
-end
-arch swall_2_1_2
-x 133
-y 115
-end
-arch dungeon_magic
 x 133
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
 x 133
 y 116
-move_block 0
-blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch blocked
 x 133
-y 116
+y 117
 end
 arch blocked
 name nothing
@@ -221446,27 +220338,17 @@ y 117
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 133
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
 x 133
 y 118
-move_block 0
-blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch blocked
 x 133
-y 118
+y 119
 end
 arch blocked
 name nothing
@@ -221476,15 +220358,7 @@ y 119
 move_block 0
 blocksview 0
 end
-arch istone
-x 133
-y 119
-end
-arch swall_2_1_2
-x 133
-y 119
-end
-arch dungeon_magic
+arch fog
 x 133
 y 119
 end
@@ -222763,22 +221637,6 @@ move_block 0
 blocksview 0
 end
 arch blocked
-name nothing
-name_pl nothing
-x 134
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 134
-y 115
-end
-arch swall_2_1_2
-x 134
-y 115
-end
-arch dungeon_magic
 x 134
 y 115
 end
@@ -222786,64 +221644,27 @@ arch blocked
 name nothing
 name_pl nothing
 x 134
-y 116
+y 115
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
+x 134
+y 115
+end
+arch blocked
 x 134
 y 116
 end
 arch blocked
-name nothing
-name_pl nothing
-x 134
-y 117
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 134
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
-x 134
-y 118
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 134
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 134
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 134
-y 119
-end
-arch swall_2_1_2
-x 134
-y 119
-end
-arch dungeon_magic
 x 134
 y 119
 end
@@ -224118,37 +222939,10 @@ x 135
 y 114
 end
 arch blocked
-name nothing
-name_pl nothing
-x 135
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 135
-y 115
-end
-arch swall_2_1_2
-x 135
-y 115
-end
-arch dungeon_magic
 x 135
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
-x 135
-y 116
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 135
 y 116
 end
@@ -224160,45 +222954,15 @@ y 117
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 135
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
-x 135
-y 118
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 135
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 135
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 135
-y 119
-end
-arch swall_2_1_2
-x 135
-y 119
-end
-arch dungeon_magic
 x 135
 y 119
 end
@@ -225459,52 +224223,14 @@ move_block 0
 blocksview 0
 end
 arch blocked
-name nothing
-name_pl nothing
-x 136
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 136
-y 115
-end
-arch swall_2_1_2
-x 136
-y 115
-end
-arch dungeon_magic
 x 136
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
-x 136
-y 116
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 136
 y 116
 end
 arch blocked
-name nothing
-name_pl nothing
-x 136
-y 117
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 136
 y 117
 end
@@ -225516,30 +224242,11 @@ y 118
 move_block 0
 blocksview 0
 end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
+arch fog
 x 136
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 136
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 136
-y 119
-end
-arch swall_2_1_2
-x 136
-y 119
-end
-arch dungeon_magic
 x 136
 y 119
 end
@@ -226806,87 +225513,22 @@ move_block 0
 blocksview 0
 end
 arch blocked
-name nothing
-name_pl nothing
-x 137
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 137
-y 115
-end
-arch swall_2_1_2
-x 137
-y 115
-end
-arch dungeon_magic
 x 137
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
-x 137
-y 116
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 137
 y 116
 end
 arch blocked
-name nothing
-name_pl nothing
-x 137
-y 117
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 137
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
-x 137
-y 118
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 137
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 137
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 137
-y 119
-end
-arch swall_2_1_2
-x 137
-y 119
-end
-arch dungeon_magic
 x 137
 y 119
 end
@@ -228117,87 +226759,22 @@ move_block 0
 blocksview 0
 end
 arch blocked
-name nothing
-name_pl nothing
-x 138
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 138
-y 115
-end
-arch swall_2_1_2
-x 138
-y 115
-end
-arch dungeon_magic
 x 138
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
-x 138
-y 116
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 138
 y 116
 end
 arch blocked
-name nothing
-name_pl nothing
-x 138
-y 117
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 138
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
-x 138
-y 118
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 138
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 138
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 138
-y 119
-end
-arch swall_2_1_2
-x 138
-y 119
-end
-arch dungeon_magic
 x 138
 y 119
 end
@@ -229435,87 +228012,22 @@ move_block 0
 blocksview 0
 end
 arch blocked
-name nothing
-name_pl nothing
-x 139
-y 115
-move_block 0
-blocksview 0
-end
-arch istone
-x 139
-y 115
-end
-arch swall_1_3
-x 139
-y 115
-end
-arch dungeon_magic
 x 139
 y 115
 end
 arch blocked
-name nothing
-name_pl nothing
-x 139
-y 116
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 139
 y 116
 end
 arch blocked
-name nothing
-name_pl nothing
-x 139
-y 117
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 139
 y 117
 end
 arch blocked
-name nothing
-name_pl nothing
-x 139
-y 118
-move_block 0
-blocksview 0
-end
-arch flagstone
-name ice path
-name_pl floor
-face ice.111
 x 139
 y 118
 end
 arch blocked
-name nothing
-name_pl nothing
-x 139
-y 119
-move_block 0
-blocksview 0
-end
-arch istone
-x 139
-y 119
-end
-arch swall_1_3
-x 139
-y 119
-end
-arch dungeon_magic
 x 139
 y 119
 end
