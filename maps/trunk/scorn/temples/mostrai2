@@ -188,11 +188,6 @@ arch pstone_1
 x 2
 y 6
 end
-arch button_handle
-x 2
-y 6
-connected 1
-end
 arch pstone_2
 x 2
 y 7
@@ -296,12 +291,6 @@ arch pstone_1
 x 3
 y 8
 end
-arch spikes_closed
-x 3
-y 8
-speed 0.500000
-connected 1
-end
 arch pstone_2
 x 3
 y 9
@@ -368,7 +357,11 @@ arch cave13
 x 4
 y 3
 end
-arch pstone_1
+arch pstone_2
+x 4
+y 4
+end
+arch torch_1
 x 4
 y 4
 end
@@ -450,22 +443,31 @@ arch pstone_1
 x 5
 y 2
 end
-arch pstone_1
-x 5
-y 3
-end
-arch sign
+arch ladder_down
+slaying /!
 msg
-Nothing here yet..
+layoutstyle maze
+xsize 39
+ysize 29
+floorstyle lightdirt
+decorstyle minerals2
+wallstyle cave3
+exitstyle ladder
+monsterstyle dwarf
+dungeon_level 1
+dungeon_depth 50
+difficulty 0
+orientation 0
+symmetry 1
 endmsg
 x 5
-y 3
+y 2
 end
 arch pstone_1
 x 5
-y 4
+y 3
 end
-arch horned_helmet
+arch pstone_1
 x 5
 y 4
 end
@@ -561,6 +563,10 @@ x 6
 y 3
 end
 arch pstone_2
+x 6
+y 4
+end
+arch torch_1
 x 6
 y 4
 end
@@ -1048,6 +1054,10 @@ x 11
 y 2
 end
 arch pstone_2
+x 11
+y 3
+end
+arch torch_1
 x 11
 y 3
 end
