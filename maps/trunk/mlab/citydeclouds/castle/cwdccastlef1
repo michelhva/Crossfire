@@ -1,6 +1,8 @@
 arch map
+name Cloud World Castle
 reset_timeout 7200
 difficulty 1
+region citydeclouds
 width 120
 height 99
 enter_x 1
@@ -1550,10 +1552,6 @@ arch grass
 x 1
 y 35
 end
-arch dragon
-x 1
-y 35
-end
 arch dungeon_magic
 x 1
 y 36
@@ -1975,10 +1973,6 @@ x 1
 y 79
 end
 arch grass
-x 1
-y 79
-end
-arch dragon
 x 1
 y 79
 end
@@ -2234,10 +2228,6 @@ arch grass
 x 2
 y 4
 end
-arch dragon
-x 2
-y 4
-end
 arch dungeon_magic
 x 2
 y 5
@@ -2315,10 +2305,6 @@ x 2
 y 10
 end
 arch grass
-x 2
-y 10
-end
-arch dragon
 x 2
 y 10
 end
@@ -3386,10 +3372,6 @@ arch grass
 x 2
 y 97
 end
-arch dragon
-x 2
-y 97
-end
 arch dungeon_magic
 x 2
 y 98
@@ -3778,10 +3760,6 @@ arch grass
 x 3
 y 29
 end
-arch dragon
-x 3
-y 29
-end
 arch dungeon_magic
 x 3
 y 30
@@ -3922,10 +3900,6 @@ arch grass
 x 3
 y 41
 end
-arch dragon
-x 3
-y 41
-end
 arch dungeon_magic
 x 3
 y 42
@@ -4115,10 +4089,6 @@ x 3
 y 59
 end
 arch grass
-x 3
-y 59
-end
-arch dragon
 x 3
 y 59
 end
@@ -4306,10 +4276,6 @@ arch grass
 x 3
 y 71
 end
-arch dragon
-x 3
-y 71
-end
 arch dungeon_magic
 x 3
 y 72
@@ -4439,10 +4405,6 @@ x 3
 y 84
 end
 arch grass
-x 3
-y 84
-end
-arch dragon
 x 3
 y 84
 end
@@ -5906,10 +5868,6 @@ arch grass
 x 5
 y 17
 end
-arch dragon
-x 5
-y 17
-end
 arch dungeon_magic
 x 5
 y 18
@@ -9094,10 +9052,6 @@ arch grass
 x 7
 y 75
 end
-arch dragon
-x 7
-y 75
-end
 arch dungeon_magic
 x 7
 y 76
@@ -9322,10 +9276,6 @@ arch grass
 x 7
 y 91
 end
-arch dragon
-x 7
-y 91
-end
 arch dungeon_magic
 x 7
 y 92
@@ -9982,10 +9932,6 @@ arch grass
 x 8
 y 49
 end
-arch dragon
-x 8
-y 49
-end
 arch dungeon_magic
 x 8
 y 50
@@ -11174,10 +11120,6 @@ arch grass
 x 9
 y 57
 end
-arch dragon
-x 9
-y 57
-end
 arch dungeon_magic
 x 9
 y 58
@@ -11650,10 +11592,6 @@ arch grass
 x 9
 y 89
 end
-arch dragon
-x 9
-y 89
-end
 arch dungeon_magic
 x 9
 y 90
@@ -12170,10 +12108,6 @@ arch grass
 x 10
 y 27
 end
-arch dragon
-x 10
-y 27
-end
 arch dungeon_magic
 x 10
 y 28
@@ -12219,10 +12153,6 @@ x 10
 y 31
 end
 arch grass
-x 10
-y 31
-end
-arch dragon
 x 10
 y 31
 end
@@ -12586,10 +12516,6 @@ arch grass
 x 10
 y 63
 end
-arch dragon
-x 10
-y 63
-end
 arch dungeon_magic
 x 10
 y 64
@@ -12943,10 +12869,6 @@ x 11
 y 1
 end
 arch grass
-x 11
-y 1
-end
-arch dragon
 x 11
 y 1
 end
@@ -13767,10 +13689,6 @@ x 11
 y 71
 end
 arch grass
-x 11
-y 71
-end
-arch dragon
 x 11
 y 71
 end
@@ -15478,10 +15396,6 @@ arch grass
 x 13
 y 10
 end
-arch dragon
-x 13
-y 10
-end
 arch dungeon_magic
 x 13
 y 11
@@ -16631,10 +16545,6 @@ x 14
 y 6
 end
 arch grass
-x 14
-y 6
-end
-arch dragon
 x 14
 y 6
 end
@@ -17038,10 +16948,6 @@ arch grass
 x 14
 y 37
 end
-arch dragon
-x 14
-y 37
-end
 arch dungeon_magic
 x 14
 y 38
@@ -17127,10 +17033,6 @@ x 14
 y 44
 end
 arch grass
-x 14
-y 44
-end
-arch dragon
 x 14
 y 44
 end
@@ -17239,10 +17141,6 @@ x 14
 y 52
 end
 arch grass
-x 14
-y 52
-end
-arch dragon
 x 14
 y 52
 end
@@ -17711,10 +17609,6 @@ x 14
 y 95
 end
 arch grass
-x 14
-y 95
-end
-arch dragon
 x 14
 y 95
 end
@@ -18650,10 +18544,6 @@ arch grass
 x 15
 y 75
 end
-arch dragon
-x 15
-y 75
-end
 arch dungeon_magic
 x 15
 y 76
@@ -18795,10 +18685,6 @@ x 15
 y 85
 end
 arch grass
-x 15
-y 85
-end
-arch dragon
 x 15
 y 85
 end
@@ -20582,10 +20468,6 @@ arch grass
 x 17
 y 35
 end
-arch dragon
-x 17
-y 35
-end
 arch dungeon_magic
 x 17
 y 36
@@ -20914,10 +20796,6 @@ arch grass
 x 17
 y 68
 end
-arch dragon
-x 17
-y 68
-end
 arch dungeon_magic
 x 17
 y 69
@@ -21059,10 +20937,6 @@ x 17
 y 81
 end
 arch grass
-x 17
-y 81
-end
-arch dragon
 x 17
 y 81
 end
@@ -21486,10 +21360,6 @@ arch grass
 x 18
 y 16
 end
-arch dragon
-x 18
-y 16
-end
 arch dungeon_magic
 x 18
 y 17
@@ -21591,10 +21461,6 @@ x 18
 y 23
 end
 arch grass
-x 18
-y 23
-end
-arch dragon
 x 18
 y 23
 end
@@ -23626,10 +23492,6 @@ arch grass
 x 20
 y 1
 end
-arch dragon
-x 20
-y 1
-end
 arch dungeon_magic
 x 20
 y 2
@@ -24902,10 +24764,6 @@ arch grass
 x 20
 y 86
 end
-arch dragon
-x 20
-y 86
-end
 arch dungeon_magic
 x 20
 y 87
@@ -24975,10 +24833,6 @@ x 20
 y 93
 end
 arch grass
-x 20
-y 93
-end
-arch dragon
 x 20
 y 93
 end
@@ -25355,10 +25209,6 @@ x 21
 y 37
 end
 arch grass
-x 21
-y 38
-end
-arch big_dragon
 x 21
 y 38
 end
@@ -25494,10 +25344,6 @@ arch grass
 x 21
 y 66
 end
-arch big_dragon
-x 21
-y 66
-end
 arch grass
 x 21
 y 67
@@ -26146,10 +25992,6 @@ arch grass
 x 22
 y 28
 end
-arch big_dragon
-x 22
-y 28
-end
 arch grass
 x 22
 y 29
@@ -26243,10 +26085,6 @@ x 22
 y 49
 end
 arch grass
-x 22
-y 50
-end
-arch big_dragon
 x 22
 y 50
 end
@@ -26674,10 +26512,6 @@ arch grass
 x 23
 y 6
 end
-arch dragon
-x 23
-y 6
-end
 arch dungeon_magic
 x 23
 y 7
@@ -26951,10 +26785,6 @@ x 23
 y 44
 end
 arch grass
-x 23
-y 45
-end
-arch big_dragon_ancient
 x 23
 y 45
 end
@@ -27874,10 +27704,6 @@ arch grass
 x 24
 y 73
 end
-arch big_dragon
-x 24
-y 73
-end
 arch grass
 x 24
 y 74
@@ -28274,10 +28100,6 @@ arch grass
 x 25
 y 10
 end
-arch dragon
-x 25
-y 10
-end
 arch dungeon_magic
 x 25
 y 11
@@ -28527,10 +28349,6 @@ x 25
 y 55
 end
 arch grass
-x 25
-y 56
-end
-arch big_dragon
 x 25
 y 56
 end
@@ -29614,10 +29432,6 @@ arch grass
 x 26
 y 97
 end
-arch dragon
-x 26
-y 97
-end
 arch dungeon_magic
 x 26
 y 98
@@ -29843,10 +29657,6 @@ x 27
 y 21
 end
 arch grass
-x 27
-y 22
-end
-arch big_dragon
 x 27
 y 22
 end
@@ -30159,10 +29969,6 @@ x 27
 y 85
 end
 arch grass
-x 27
-y 85
-end
-arch dragon
 x 27
 y 85
 end
@@ -31371,10 +31177,6 @@ x 29
 y 15
 end
 arch grass
-x 29
-y 15
-end
-arch dragon
 x 29
 y 15
 end
@@ -32717,10 +32519,6 @@ x 30
 y 77
 end
 arch grass
-x 30
-y 78
-end
-arch big_dragon
 x 30
 y 78
 end
@@ -33755,10 +33553,6 @@ x 31
 y 93
 end
 arch grass
-x 31
-y 93
-end
-arch dragon
 x 31
 y 93
 end
@@ -34838,10 +34632,6 @@ x 33
 y 1
 end
 arch grass
-x 33
-y 1
-end
-arch dragon
 x 33
 y 1
 end
@@ -35544,21 +35334,6 @@ arch flagstone
 x 33
 y 65
 end
-arch big_dragon_ancient
-name impossibly ancient red dragon
-name_pl impossibly ancient red dragon
-hp 15000
-dam 55
-x 33
-y 65
-level 50
-carrying 100
-arch key2
-name upper keep key
-name_pl upper keep key
-slaying ccccccadn2opn
-end
-end
 arch light4
 x 33
 y 66
@@ -35836,10 +35611,6 @@ x 33
 y 97
 end
 arch grass
-x 33
-y 97
-end
-arch dragon
 x 33
 y 97
 end
@@ -36277,10 +36048,6 @@ x 34
 y 34
 end
 arch random_wealth
-x 34
-y 34
-end
-arch bone_drake
 x 34
 y 34
 end
@@ -37808,10 +37575,6 @@ arch grass
 x 35
 y 84
 end
-arch dragon
-x 35
-y 84
-end
 arch dungeon_magic
 x 35
 y 85
@@ -38093,10 +37856,6 @@ x 36
 y 9
 end
 arch grass
-x 36
-y 9
-end
-arch dragon
 x 36
 y 9
 end
@@ -39288,10 +39047,6 @@ arch grass
 x 37
 y 21
 end
-arch big_dragon
-x 37
-y 21
-end
 arch grass
 x 37
 y 22
@@ -40246,10 +40001,6 @@ arch grass
 x 38
 y 17
 end
-arch dragon
-x 38
-y 17
-end
 arch dungeon_magic
 x 38
 y 18
@@ -40926,10 +40677,6 @@ x 38
 y 86
 end
 arch grass
-x 38
-y 86
-end
-arch dragon
 x 38
 y 86
 end
@@ -41636,10 +41383,6 @@ arch flagstone
 x 39
 y 57
 end
-arch Cwyvern
-x 39
-y 57
-end
 arch light4
 x 39
 y 58
@@ -41933,10 +41676,6 @@ x 39
 y 92
 end
 arch grass
-x 39
-y 92
-end
-arch dragon
 x 39
 y 92
 end
@@ -44557,10 +44296,6 @@ arch flagstone
 x 42
 y 63
 end
-arch Cwyvern
-x 42
-y 63
-end
 arch light4
 x 42
 y 64
@@ -44642,10 +44377,6 @@ x 42
 y 76
 end
 arch grass
-x 42
-y 77
-end
-arch big_dragon_ancient
 x 42
 y 77
 end
@@ -45595,10 +45326,6 @@ arch grass
 x 43
 y 81
 end
-arch dragon
-x 43
-y 81
-end
 arch dungeon_magic
 x 43
 y 82
@@ -45869,10 +45596,6 @@ arch grass
 x 44
 y 4
 end
-arch dragon
-x 44
-y 4
-end
 arch dungeon_magic
 x 44
 y 5
@@ -46130,10 +45853,6 @@ x 44
 y 25
 end
 arch grass
-x 44
-y 26
-end
-arch big_dragon_ancient
 x 44
 y 26
 end
@@ -47953,10 +47672,6 @@ x 46
 y 16
 end
 arch grass
-x 46
-y 16
-end
-arch dragon
 x 46
 y 16
 end
@@ -51761,10 +51476,6 @@ arch grass
 x 49
 y 87
 end
-arch dragon
-x 49
-y 87
-end
 arch dungeon_magic
 x 49
 y 88
@@ -51995,10 +51706,6 @@ arch grass
 x 50
 y 10
 end
-arch dragon
-x 50
-y 10
-end
 arch dungeon_magic
 x 50
 y 11
@@ -52157,10 +51864,6 @@ y 21
 weight 2000000
 end
 arch grass
-x 50
-y 22
-end
-arch big_dragon_ancient
 x 50
 y 22
 end
@@ -52973,7 +52676,7 @@ x 50
 y 98
 end
 arch invis_exit
-slaying cloudworlddecity
+slaying ../cloudworlddecity
 hp 129
 sp 17
 x 50
@@ -55214,10 +54917,6 @@ arch grass
 x 53
 y 12
 end
-arch dragon
-x 53
-y 12
-end
 arch dungeon_magic
 x 53
 y 13
@@ -55371,10 +55070,6 @@ x 53
 y 26
 end
 arch grass
-x 53
-y 27
-end
-arch big_dragon_ancient
 x 53
 y 27
 end
@@ -56950,10 +56645,6 @@ arch grass
 x 54
 y 85
 end
-arch dragon
-x 54
-y 85
-end
 arch dungeon_magic
 x 54
 y 86
@@ -57141,10 +56832,6 @@ x 55
 y 2
 end
 arch grass
-x 55
-y 2
-end
-arch dragon
 x 55
 y 2
 end
@@ -58039,10 +57726,6 @@ arch grass
 x 55
 y 83
 end
-arch dragon
-x 55
-y 83
-end
 arch dungeon_magic
 x 55
 y 84
@@ -58394,10 +58077,6 @@ x 56
 y 16
 end
 arch grass
-x 56
-y 16
-end
-arch dragon
 x 56
 y 16
 end
@@ -59192,10 +58871,6 @@ arch grass
 x 56
 y 97
 end
-arch dragon
-x 56
-y 97
-end
 arch dungeon_magic
 x 56
 y 98
@@ -59528,10 +59203,6 @@ arch grass
 x 57
 y 24
 end
-arch big_dragon
-x 57
-y 24
-end
 arch grass
 x 57
 y 25
@@ -59584,8 +59255,8 @@ end
 arch shallow_sea
 x 57
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 57
@@ -60089,10 +59760,6 @@ x 57
 y 76
 end
 arch grass
-x 57
-y 77
-end
-arch big_dragon_ancient
 x 57
 y 77
 end
@@ -60607,8 +60274,8 @@ end
 arch shallow_sea
 x 58
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 58
@@ -60633,8 +60300,8 @@ end
 arch shallow_sea
 x 58
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 58
@@ -60659,8 +60326,8 @@ end
 arch shallow_sea
 x 58
 y 31
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 58
@@ -60685,8 +60352,8 @@ end
 arch shallow_sea
 x 58
 y 32
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 58
@@ -61289,10 +60956,6 @@ arch grass
 x 58
 y 89
 end
-arch dragon
-x 58
-y 89
-end
 arch dungeon_magic
 x 58
 y 90
@@ -61752,8 +61415,8 @@ end
 arch shallow_sea
 x 59
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 59
@@ -61778,8 +61441,8 @@ end
 arch shallow_sea
 x 59
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 59
@@ -61814,8 +61477,8 @@ end
 arch shallow_sea
 x 59
 y 31
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 59
@@ -61840,8 +61503,8 @@ end
 arch shallow_sea
 x 59
 y 32
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 59
@@ -61879,8 +61542,8 @@ end
 arch shallow_sea
 x 59
 y 33
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 59
@@ -62879,8 +62542,8 @@ end
 arch shallow_sea
 x 60
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 60
@@ -62905,8 +62568,8 @@ end
 arch shallow_sea
 x 60
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 60
@@ -62931,8 +62594,8 @@ end
 arch shallow_sea
 x 60
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 60
@@ -62957,8 +62620,8 @@ end
 arch shallow_sea
 x 60
 y 31
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 60
@@ -63598,10 +63261,6 @@ arch grass
 x 60
 y 87
 end
-arch dragon
-x 60
-y 87
-end
 arch dungeon_magic
 x 60
 y 88
@@ -63647,10 +63306,6 @@ x 60
 y 91
 end
 arch grass
-x 60
-y 91
-end
-arch dragon
 x 60
 y 91
 end
@@ -63735,10 +63390,6 @@ x 61
 y 1
 end
 arch grass
-x 61
-y 1
-end
-arch dragon
 x 61
 y 1
 end
@@ -64053,8 +63704,8 @@ end
 arch shallow_sea
 x 61
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 61
@@ -64079,8 +63730,8 @@ end
 arch shallow_sea
 x 61
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 61
@@ -64114,8 +63765,8 @@ end
 arch shallow_sea
 x 61
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 61
@@ -64140,8 +63791,8 @@ end
 arch shallow_sea
 x 61
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 61
@@ -65140,10 +64791,6 @@ arch grass
 x 62
 y 12
 end
-arch dragon
-x 62
-y 12
-end
 arch dungeon_magic
 x 62
 y 13
@@ -65263,8 +64910,8 @@ end
 arch shallow_sea
 x 62
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 62
@@ -65289,8 +64936,8 @@ end
 arch shallow_sea
 x 62
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 62
@@ -65315,8 +64962,8 @@ end
 arch shallow_sea
 x 62
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 62
@@ -65341,8 +64988,8 @@ end
 arch shallow_sea
 x 62
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 62
@@ -66451,8 +66098,8 @@ end
 arch shallow_sea
 x 63
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 63
@@ -66477,8 +66124,8 @@ end
 arch shallow_sea
 x 63
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 63
@@ -66503,8 +66150,8 @@ end
 arch shallow_sea
 x 63
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 63
@@ -66538,8 +66185,8 @@ end
 arch shallow_sea
 x 63
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 63
@@ -67291,10 +66938,6 @@ arch grass
 x 63
 y 93
 end
-arch dragon
-x 63
-y 93
-end
 arch dungeon_magic
 x 63
 y 94
@@ -67602,8 +67245,8 @@ end
 arch shallow_sea
 x 64
 y 24
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 64
@@ -67628,8 +67271,8 @@ end
 arch shallow_sea
 x 64
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 64
@@ -67654,8 +67297,8 @@ end
 arch shallow_sea
 x 64
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 64
@@ -67680,8 +67323,8 @@ end
 arch shallow_sea
 x 64
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 64
@@ -68287,10 +67930,6 @@ arch grass
 x 64
 y 83
 end
-arch dragon
-x 64
-y 83
-end
 arch dungeon_magic
 x 64
 y 84
@@ -68456,10 +68095,6 @@ x 64
 y 97
 end
 arch grass
-x 64
-y 97
-end
-arch dragon
 x 64
 y 97
 end
@@ -68806,8 +68441,8 @@ end
 arch shallow_sea
 x 65
 y 24
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 65
@@ -68841,8 +68476,8 @@ end
 arch shallow_sea
 x 65
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 65
@@ -68867,8 +68502,8 @@ end
 arch shallow_sea
 x 65
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 65
@@ -68903,8 +68538,8 @@ end
 arch shallow_sea
 x 65
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 65
@@ -69568,10 +69203,6 @@ arch grass
 x 65
 y 81
 end
-arch dragon
-x 65
-y 81
-end
 arch dungeon_magic
 x 65
 y 82
@@ -69980,10 +69611,6 @@ arch grass
 x 66
 y 21
 end
-arch big_dragon
-x 66
-y 21
-end
 arch grass
 x 66
 y 22
@@ -70015,8 +69642,8 @@ end
 arch shallow_sea
 x 66
 y 24
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 66
@@ -70041,8 +69668,8 @@ end
 arch shallow_sea
 x 66
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 66
@@ -70067,8 +69694,8 @@ end
 arch shallow_sea
 x 66
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 66
@@ -70093,8 +69720,8 @@ end
 arch shallow_sea
 x 66
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 66
@@ -71325,8 +70952,8 @@ end
 arch shallow_sea
 x 67
 y 24
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 67
@@ -71351,8 +70978,8 @@ end
 arch shallow_sea
 x 67
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 67
@@ -71377,8 +71004,8 @@ end
 arch shallow_sea
 x 67
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 67
@@ -71413,8 +71040,8 @@ end
 arch shallow_sea
 x 67
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 67
@@ -72358,10 +71985,6 @@ arch grass
 x 68
 y 15
 end
-arch dragon
-x 68
-y 15
-end
 arch dungeon_magic
 x 68
 y 16
@@ -72453,8 +72076,8 @@ end
 arch shallow_sea
 x 68
 y 24
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 68
@@ -72479,8 +72102,8 @@ end
 arch shallow_sea
 x 68
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 68
@@ -72505,8 +72128,8 @@ end
 arch shallow_sea
 x 68
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 68
@@ -72531,8 +72154,8 @@ end
 arch shallow_sea
 x 68
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 68
@@ -73176,10 +72799,6 @@ arch grass
 x 68
 y 90
 end
-arch dragon
-x 68
-y 90
-end
 arch dungeon_magic
 x 68
 y 91
@@ -73579,8 +73198,8 @@ end
 arch shallow_sea
 x 69
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 69
@@ -73609,8 +73228,8 @@ end
 arch shallow_sea
 x 69
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 69
@@ -73644,8 +73263,8 @@ end
 arch shallow_sea
 x 69
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 69
@@ -73812,8 +73431,8 @@ end
 arch shallow_sea
 x 69
 y 40
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 69
@@ -74119,10 +73738,6 @@ arch grass
 x 69
 y 81
 end
-arch dragon
-x 69
-y 81
-end
 arch dungeon_magic
 x 69
 y 82
@@ -74268,10 +73883,6 @@ x 69
 y 97
 end
 arch grass
-x 69
-y 97
-end
-arch dragon
 x 69
 y 97
 end
@@ -74559,10 +74170,6 @@ arch grass
 x 70
 y 19
 end
-arch dragon
-x 70
-y 19
-end
 arch dungeon_magic
 x 70
 y 20
@@ -74628,8 +74235,8 @@ end
 arch shallow_sea
 x 70
 y 25
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 70
@@ -74654,8 +74261,8 @@ end
 arch shallow_sea
 x 70
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 70
@@ -74680,8 +74287,8 @@ end
 arch shallow_sea
 x 70
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 70
@@ -74706,8 +74313,8 @@ end
 arch shallow_sea
 x 70
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 70
@@ -74884,8 +74491,8 @@ end
 arch shallow_sea
 x 70
 y 40
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 70
@@ -74910,8 +74517,8 @@ end
 arch shallow_sea
 x 70
 y 41
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 70
@@ -75728,8 +75335,8 @@ end
 arch shallow_sea
 x 71
 y 26
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -75754,8 +75361,8 @@ end
 arch shallow_sea
 x 71
 y 27
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -75780,8 +75387,8 @@ end
 arch shallow_sea
 x 71
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -75806,8 +75413,8 @@ end
 arch shallow_sea
 x 71
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch light4
 x 71
@@ -76000,8 +75607,8 @@ end
 arch shallow_sea
 x 71
 y 39
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -76026,8 +75633,8 @@ end
 arch shallow_sea
 x 71
 y 40
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -76052,8 +75659,8 @@ end
 arch shallow_sea
 x 71
 y 41
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 71
@@ -76078,8 +75685,8 @@ end
 arch shallow_sea
 x 71
 y 42
-is_floor 0
 flying 1
+is_floor 0
 end
 arch grass
 x 71
@@ -76625,10 +76232,6 @@ arch grass
 x 72
 y 8
 end
-arch dragon
-x 72
-y 8
-end
 arch dungeon_magic
 x 72
 y 9
@@ -76856,8 +76459,8 @@ end
 arch shallow_sea
 x 72
 y 28
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 72
@@ -76882,8 +76485,8 @@ end
 arch shallow_sea
 x 72
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 72
@@ -77045,8 +76648,8 @@ end
 arch shallow_sea
 x 72
 y 37
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 72
@@ -77071,8 +76674,8 @@ end
 arch shallow_sea
 x 72
 y 38
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 72
@@ -77097,8 +76700,8 @@ end
 arch shallow_sea
 x 72
 y 39
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 72
@@ -77123,8 +76726,8 @@ end
 arch shallow_sea
 x 72
 y 40
-is_floor 0
 flying 1
+is_floor 0
 end
 arch grass
 x 72
@@ -77159,10 +76762,6 @@ x 72
 y 47
 end
 arch grass
-x 72
-y 48
-end
-arch big_dragon
 x 72
 y 48
 end
@@ -77922,8 +77521,8 @@ end
 arch shallow_sea
 x 73
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 73
@@ -77948,8 +77547,8 @@ end
 arch shallow_sea
 x 73
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 73
@@ -77998,8 +77597,8 @@ end
 arch shallow_sea
 x 73
 y 37
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 73
@@ -78024,8 +77623,8 @@ end
 arch shallow_sea
 x 73
 y 38
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 73
@@ -78050,8 +77649,8 @@ end
 arch shallow_sea
 x 73
 y 39
-is_floor 0
 flying 1
+is_floor 0
 end
 arch grass
 x 73
@@ -78254,10 +77853,6 @@ x 73
 y 81
 end
 arch grass
-x 73
-y 81
-end
-arch dragon
 x 73
 y 81
 end
@@ -78490,10 +78085,6 @@ x 74
 y 1
 end
 arch grass
-x 74
-y 1
-end
-arch dragon
 x 74
 y 1
 end
@@ -78816,8 +78407,8 @@ end
 arch shallow_sea
 x 74
 y 29
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 74
@@ -78842,8 +78433,8 @@ end
 arch shallow_sea
 x 74
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 74
@@ -78868,8 +78459,8 @@ end
 arch shallow_sea
 x 74
 y 31
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 74
@@ -78910,8 +78501,8 @@ end
 arch shallow_sea
 x 74
 y 36
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 74
@@ -78936,8 +78527,8 @@ end
 arch shallow_sea
 x 74
 y 37
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 74
@@ -78962,8 +78553,8 @@ end
 arch shallow_sea
 x 74
 y 38
-is_floor 0
 flying 1
+is_floor 0
 end
 arch shallow_sea
 x 74
@@ -79609,10 +79200,6 @@ arch grass
 x 75
 y 25
 end
-arch big_dragon
-x 75
-y 25
-end
 arch grass
 x 75
 y 26
@@ -79656,8 +79243,8 @@ end
 arch shallow_sea
 x 75
 y 30
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79682,8 +79269,8 @@ end
 arch shallow_sea
 x 75
 y 31
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79708,8 +79295,8 @@ end
 arch shallow_sea
 x 75
 y 32
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79734,8 +79321,8 @@ end
 arch shallow_sea
 x 75
 y 33
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79760,8 +79347,8 @@ end
 arch shallow_sea
 x 75
 y 34
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79786,8 +79373,8 @@ end
 arch shallow_sea
 x 75
 y 35
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79812,8 +79399,8 @@ end
 arch shallow_sea
 x 75
 y 36
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79838,8 +79425,8 @@ end
 arch shallow_sea
 x 75
 y 37
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 75
@@ -79874,8 +79461,8 @@ end
 arch shallow_sea
 x 75
 y 38
-is_floor 0
 flying 1
+is_floor 0
 end
 arch grass
 x 75
@@ -79974,10 +79561,6 @@ x 75
 y 55
 end
 arch grass
-x 75
-y 56
-end
-arch big_dragon
 x 75
 y 56
 end
@@ -80569,10 +80152,6 @@ arch grass
 x 76
 y 19
 end
-arch dragon
-x 76
-y 19
-end
 arch dungeon_magic
 x 76
 y 20
@@ -80660,8 +80239,8 @@ end
 arch shallow_sea
 x 76
 y 33
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 76
@@ -80686,8 +80265,8 @@ end
 arch shallow_sea
 x 76
 y 34
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 76
@@ -80712,8 +80291,8 @@ end
 arch shallow_sea
 x 76
 y 35
-is_floor 0
 flying 1
+is_floor 0
 end
 arch small_stones
 x 76
@@ -80738,8 +80317,8 @@ end
 arch shallow_sea
 x 76
 y 36
-is_floor 0
 flying 1
+is_floor 0
 end
 arch grass
 x 76
@@ -80758,10 +80337,6 @@ x 76
 y 40
 end
 arch grass
-x 76
-y 41
-end
-arch big_dragon_ancient
 x 76
 y 41
 end
@@ -81122,10 +80697,6 @@ x 76
 y 92
 end
 arch grass
-x 76
-y 92
-end
-arch dragon
 x 76
 y 92
 end
@@ -81681,10 +81252,6 @@ arch grass
 x 77
 y 74
 end
-arch big_dragon
-x 77
-y 74
-end
 arch grass
 x 77
 y 75
@@ -81798,10 +81365,6 @@ x 77
 y 86
 end
 arch grass
-x 77
-y 86
-end
-arch dragon
 x 77
 y 86
 end
@@ -83541,10 +83104,6 @@ arch grass
 x 79
 y 97
 end
-arch dragon
-x 79
-y 97
-end
 arch dungeon_magic
 x 79
 y 98
@@ -84821,10 +84380,6 @@ arch grass
 x 80
 y 81
 end
-arch dragon
-x 80
-y 81
-end
 arch dungeon_magic
 x 80
 y 82
@@ -85681,10 +85236,6 @@ arch grass
 x 81
 y 65
 end
-arch dragon
-x 81
-y 65
-end
 arch dungeon_magic
 x 81
 y 66
@@ -86094,10 +85645,6 @@ x 82
 y 5
 end
 arch grass
-x 82
-y 5
-end
-arch dragon
 x 82
 y 5
 end
@@ -86866,10 +86413,6 @@ x 82
 y 61
 end
 arch grass
-x 82
-y 61
-end
-arch dragon
 x 82
 y 61
 end
@@ -87741,10 +87284,6 @@ arch grass
 x 83
 y 34
 end
-arch dragon
-x 83
-y 34
-end
 arch dungeon_magic
 x 83
 y 35
@@ -88190,10 +87729,6 @@ x 83
 y 73
 end
 arch grass
-x 83
-y 73
-end
-arch dragon
 x 83
 y 73
 end
@@ -88665,10 +88200,6 @@ arch grass
 x 84
 y 15
 end
-arch dragon
-x 84
-y 15
-end
 arch dungeon_magic
 x 84
 y 16
@@ -88850,10 +88381,6 @@ x 84
 y 28
 end
 arch grass
-x 84
-y 28
-end
-arch dragon
 x 84
 y 28
 end
@@ -89041,10 +88568,6 @@ arch grass
 x 84
 y 41
 end
-arch dragon
-x 84
-y 41
-end
 arch dungeon_magic
 x 84
 y 42
@@ -89162,10 +88685,6 @@ x 84
 y 53
 end
 arch grass
-x 84
-y 53
-end
-arch dragon
 x 84
 y 53
 end
@@ -89397,10 +88916,6 @@ arch grass
 x 84
 y 70
 end
-arch dragon
-x 84
-y 70
-end
 arch dungeon_magic
 x 84
 y 71
@@ -89486,10 +89001,6 @@ x 84
 y 77
 end
 arch grass
-x 84
-y 77
-end
-arch dragon
 x 84
 y 77
 end
@@ -89714,10 +89225,6 @@ x 84
 y 94
 end
 arch grass
-x 84
-y 94
-end
-arch dragon
 x 84
 y 94
 end
@@ -90685,10 +90192,6 @@ arch grass
 x 85
 y 85
 end
-arch dragon
-x 85
-y 85
-end
 arch dungeon_magic
 x 85
 y 86
@@ -90734,10 +90237,6 @@ x 85
 y 89
 end
 arch grass
-x 85
-y 89
-end
-arch dragon
 x 85
 y 89
 end
@@ -90870,10 +90369,6 @@ x 86
 y 1
 end
 arch grass
-x 86
-y 1
-end
-arch dragon
 x 86
 y 1
 end
@@ -91621,10 +91116,6 @@ arch grass
 x 86
 y 57
 end
-arch dragon
-x 86
-y 57
-end
 arch dungeon_magic
 x 86
 y 58
@@ -92346,10 +91837,6 @@ x 87
 y 20
 end
 arch grass
-x 87
-y 20
-end
-arch dragon
 x 87
 y 20
 end
@@ -93286,10 +92773,6 @@ x 87
 y 97
 end
 arch grass
-x 87
-y 97
-end
-arch dragon
 x 87
 y 97
 end
@@ -94890,10 +94373,6 @@ x 89
 y 34
 end
 arch grass
-x 89
-y 34
-end
-arch dragon
 x 89
 y 34
 end
@@ -95301,10 +94780,6 @@ arch grass
 x 89
 y 67
 end
-arch dragon
-x 89
-y 67
-end
 arch dungeon_magic
 x 89
 y 68
@@ -96697,10 +96172,6 @@ arch grass
 x 90
 y 77
 end
-arch dragon
-x 90
-y 77
-end
 arch dungeon_magic
 x 90
 y 78
@@ -96722,10 +96193,6 @@ x 90
 y 79
 end
 arch grass
-x 90
-y 79
-end
-arch dragon
 x 90
 y 79
 end
@@ -97493,10 +96960,6 @@ arch grass
 x 91
 y 51
 end
-arch dragon
-x 91
-y 51
-end
 arch dungeon_magic
 x 91
 y 52
@@ -98089,10 +97552,6 @@ arch grass
 x 91
 y 97
 end
-arch dragon
-x 91
-y 97
-end
 arch dungeon_magic
 x 91
 y 98
@@ -98294,10 +97753,6 @@ x 92
 y 12
 end
 arch grass
-x 92
-y 12
-end
-arch dragon
 x 92
 y 12
 end
@@ -99069,10 +98524,6 @@ arch grass
 x 92
 y 69
 end
-arch dragon
-x 92
-y 69
-end
 arch dungeon_magic
 x 92
 y 70
@@ -99890,10 +99341,6 @@ x 93
 y 49
 end
 arch grass
-x 93
-y 49
-end
-arch dragon
 x 93
 y 49
 end
@@ -100417,10 +99864,6 @@ arch grass
 x 93
 y 92
 end
-arch dragon
-x 93
-y 92
-end
 arch dungeon_magic
 x 93
 y 93
@@ -100545,10 +99988,6 @@ arch grass
 x 94
 y 2
 end
-arch dragon
-x 94
-y 2
-end
 arch dungeon_magic
 x 94
 y 3
@@ -100914,10 +100353,6 @@ x 94
 y 28
 end
 arch grass
-x 94
-y 28
-end
-arch dragon
 x 94
 y 28
 end
@@ -101094,10 +100529,6 @@ x 94
 y 41
 end
 arch grass
-x 94
-y 41
-end
-arch dragon
 x 94
 y 41
 end
@@ -101497,10 +100928,6 @@ arch grass
 x 94
 y 73
 end
-arch dragon
-x 94
-y 73
-end
 arch dungeon_magic
 x 94
 y 74
@@ -102023,10 +101450,6 @@ arch grass
 x 95
 y 21
 end
-arch dragon
-x 95
-y 21
-end
 arch dungeon_magic
 x 95
 y 22
@@ -102200,10 +101623,6 @@ x 95
 y 37
 end
 arch grass
-x 95
-y 37
-end
-arch dragon
 x 95
 y 37
 end
@@ -102427,10 +101846,6 @@ arch grass
 x 95
 y 57
 end
-arch dragon
-x 95
-y 57
-end
 arch dungeon_magic
 x 95
 y 58
@@ -102484,10 +101899,6 @@ x 95
 y 61
 end
 arch grass
-x 95
-y 61
-end
-arch dragon
 x 95
 y 61
 end
@@ -102756,10 +102167,6 @@ x 95
 y 86
 end
 arch grass
-x 95
-y 86
-end
-arch dragon
 x 95
 y 86
 end
@@ -107137,117 +106544,6 @@ sp 34
 x 100
 y 45
 connected 58
-end
-arch big_wiz
-name The Second Wizard
-name_pl Great Nameless Wizard of Yore
-Wis 30
-Pow 60
-hp 30000
-maxhp 30000
-sp 3000
-maxsp 3000
-exp 700000
-
-dam 40
-x 100
-y 45
-level 100
-resist_physical 85
-resist_fire 90
-resist_electricity 90
-resist_cold 90
-resist_acid 80
-resist_weaponmagic 60
-resist_slow 90
-resist_deplete 90
-resist_counterspell 100
-resist_godpower 90
-resist_holyword 95
-resist_blind 100
-carrying 65100
-run_away 0
-reflect_spell 1
-no_steal 1
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch giant_bat
-end
-arch key2
-name Mystical Key
-name_pl Mystical Key
-slaying bluekeymysticcdccastwin
-face key_blue.111
-end
-arch cloak
-name Cold Cloak of Invisibility
-name_pl Cold Cloak of Invisibility
-msg
-A chill surrounds you...
-endmsg
-face cloak_lblue.111
-Wis 2
-Int 1
-resist_magic 10
-resist_fire 40
-material 0
-value 100000
-make_invisible 1
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_potion
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_talisman
-end
 end
 arch pit_closed
 hp 68
@@ -107510,26 +106806,6 @@ x 101
 y 49
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 49
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 51
@@ -107540,26 +106816,6 @@ sp 36
 x 101
 y 52
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 52
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107572,26 +106828,6 @@ x 101
 y 55
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 55
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 57
@@ -107602,26 +106838,6 @@ sp 40
 x 101
 y 58
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 58
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107634,26 +106850,6 @@ x 101
 y 61
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 61
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 63
@@ -107664,26 +106860,6 @@ sp 43
 x 101
 y 64
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 64
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107696,26 +106872,6 @@ x 101
 y 67
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 67
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 69
@@ -107726,26 +106882,6 @@ sp 58
 x 101
 y 70
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 70
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107758,26 +106894,6 @@ x 101
 y 73
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 73
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 75
@@ -107788,26 +106904,6 @@ sp 41
 x 101
 y 76
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 76
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107820,26 +106916,6 @@ x 101
 y 79
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 79
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 81
@@ -107850,26 +106926,6 @@ sp 33
 x 101
 y 82
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 82
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107882,26 +106938,6 @@ x 101
 y 85
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 85
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 87
@@ -107912,26 +106948,6 @@ sp 63
 x 101
 y 88
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 88
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -107944,26 +106960,6 @@ x 101
 y 91
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 91
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 101
 y 93
@@ -107974,26 +106970,6 @@ sp 52
 x 101
 y 94
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 101
-y 94
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 101
@@ -108360,27 +107336,6 @@ x 104
 y 45
 connected 56
 end
-arch dread
-name Unseeing Dread
-name_pl Arch Dread
-hp 8000
-maxhp 8000
-x 104
-y 45
-level 60
-resist_blind 0
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 47
@@ -108391,27 +107346,6 @@ sp 37
 x 104
 y 48
 connected 56
-end
-arch dread
-name Unseeing Dread
-name_pl Arch Dread
-hp 8000
-maxhp 8000
-x 104
-y 48
-level 60
-resist_blind 0
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108428,26 +107362,6 @@ x 104
 y 52
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 52
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 54
@@ -108458,26 +107372,6 @@ sp 59
 x 104
 y 55
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 55
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108490,26 +107384,6 @@ x 104
 y 58
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 58
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 60
@@ -108520,26 +107394,6 @@ sp 47
 x 104
 y 61
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 61
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108552,26 +107406,6 @@ x 104
 y 64
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 64
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 66
@@ -108582,26 +107416,6 @@ sp 22
 x 104
 y 67
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 67
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108614,26 +107428,6 @@ x 104
 y 70
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 70
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 72
@@ -108644,26 +107438,6 @@ sp 21
 x 104
 y 73
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 73
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108676,26 +107450,6 @@ x 104
 y 76
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 76
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 78
@@ -108706,26 +107460,6 @@ sp 75
 x 104
 y 79
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 79
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108738,26 +107472,6 @@ x 104
 y 82
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 82
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 84
@@ -108768,26 +107482,6 @@ sp 75
 x 104
 y 85
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 85
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -108800,26 +107494,6 @@ x 104
 y 88
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 88
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 90
@@ -108831,26 +107505,6 @@ x 104
 y 91
 connected 56
 end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 91
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 104
 y 93
@@ -108861,26 +107515,6 @@ sp 44
 x 104
 y 94
 connected 56
-end
-arch dread
-name Arch Dread
-name_pl Arch Dread
-hp 5500
-maxhp 5500
-x 104
-y 94
-level 35
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 104
@@ -109312,27 +107946,6 @@ x 107
 y 45
 connected 56
 end
-arch dread
-name Unseeing Dread
-name_pl Arch Dread
-hp 8000
-maxhp 8000
-x 107
-y 45
-level 60
-resist_blind 0
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-end
 arch blocked
 x 107
 y 47
@@ -109343,27 +107956,6 @@ sp 29
 x 107
 y 48
 connected 56
-end
-arch dread
-name Unseeing Dread
-name_pl Arch Dread
-hp 8000
-maxhp 8000
-x 107
-y 48
-level 60
-resist_blind 0
-carrying 5000
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
-arch beholder
-end
 end
 arch blocked
 x 107
@@ -109451,8 +108043,8 @@ end
 arch shallow_sea
 x 109
 y 6
-is_floor 0
 flying 1
+is_floor 0
 end
 arch blocked
 x 109
@@ -109785,4 +108377,1413 @@ endmsg
 x 113
 y 3
 connected 58
+end
+arch dragon
+x 1
+y 35
+end
+arch dragon
+x 1
+y 79
+end
+arch dragon
+x 2
+y 4
+end
+arch dragon
+x 2
+y 10
+end
+arch dragon
+x 2
+y 97
+end
+arch dragon
+x 3
+y 29
+end
+arch dragon
+x 3
+y 41
+end
+arch dragon
+x 3
+y 59
+end
+arch dragon
+x 3
+y 71
+end
+arch dragon
+x 3
+y 84
+end
+arch dragon
+x 5
+y 17
+end
+arch dragon
+x 7
+y 75
+end
+arch dragon
+x 7
+y 91
+end
+arch dragon
+x 8
+y 49
+end
+arch dragon
+x 9
+y 57
+end
+arch dragon
+x 9
+y 89
+end
+arch dragon
+x 10
+y 27
+end
+arch dragon
+x 10
+y 31
+end
+arch dragon
+x 10
+y 63
+end
+arch dragon
+x 11
+y 1
+end
+arch dragon
+x 11
+y 71
+end
+arch dragon
+x 13
+y 10
+end
+arch dragon
+x 14
+y 6
+end
+arch dragon
+x 14
+y 37
+end
+arch dragon
+x 14
+y 44
+end
+arch dragon
+x 14
+y 52
+end
+arch dragon
+x 14
+y 95
+end
+arch dragon
+x 15
+y 75
+end
+arch dragon
+x 15
+y 85
+end
+arch dragon
+x 17
+y 35
+end
+arch dragon
+x 17
+y 68
+end
+arch dragon
+x 17
+y 81
+end
+arch dragon
+x 18
+y 16
+end
+arch dragon
+x 18
+y 23
+end
+arch dragon
+x 20
+y 1
+end
+arch dragon
+x 20
+y 86
+end
+arch dragon
+x 20
+y 93
+end
+arch big_dragon
+x 21
+y 38
+end
+arch big_dragon
+x 21
+y 66
+end
+arch big_dragon
+x 22
+y 28
+end
+arch big_dragon
+x 22
+y 50
+end
+arch dragon
+x 23
+y 6
+end
+arch big_dragon_ancient
+x 23
+y 45
+end
+arch big_dragon
+x 24
+y 73
+end
+arch dragon
+x 25
+y 10
+end
+arch big_dragon
+x 25
+y 56
+end
+arch dragon
+x 26
+y 97
+end
+arch big_dragon
+x 27
+y 22
+end
+arch dragon
+x 27
+y 85
+end
+arch dragon
+x 29
+y 15
+end
+arch big_dragon
+x 30
+y 78
+end
+arch dragon
+x 31
+y 93
+end
+arch dragon
+x 33
+y 1
+end
+arch big_dragon_ancient
+name impossibly ancient red dragon
+name_pl impossibly ancient red dragon
+hp 15000
+dam 55
+x 33
+y 65
+level 50
+carrying 100
+arch key2
+name upper keep key
+name_pl upper keep key
+slaying ccccccadn2opn
+end
+end
+arch dragon
+x 33
+y 97
+end
+arch bone_drake
+x 34
+y 34
+end
+arch dragon
+x 35
+y 84
+end
+arch dragon
+x 36
+y 9
+end
+arch big_dragon
+x 37
+y 21
+end
+arch dragon
+x 38
+y 17
+end
+arch dragon
+x 38
+y 86
+end
+arch Cwyvern
+x 39
+y 57
+end
+arch dragon
+x 39
+y 92
+end
+arch Cwyvern
+x 42
+y 63
+end
+arch big_dragon_ancient
+x 42
+y 77
+end
+arch dragon
+x 43
+y 81
+end
+arch dragon
+x 44
+y 4
+end
+arch big_dragon_ancient
+x 44
+y 26
+end
+arch dragon
+x 46
+y 16
+end
+arch dragon
+x 49
+y 87
+end
+arch dragon
+x 50
+y 10
+end
+arch big_dragon_ancient
+x 50
+y 22
+end
+arch dragon
+x 53
+y 12
+end
+arch big_dragon_ancient
+x 53
+y 27
+end
+arch dragon
+x 54
+y 85
+end
+arch dragon
+x 55
+y 2
+end
+arch dragon
+x 55
+y 83
+end
+arch dragon
+x 56
+y 16
+end
+arch dragon
+x 56
+y 97
+end
+arch big_dragon
+x 57
+y 24
+end
+arch big_dragon_ancient
+x 57
+y 77
+end
+arch dragon
+x 58
+y 89
+end
+arch dragon
+x 60
+y 87
+end
+arch dragon
+x 60
+y 91
+end
+arch dragon
+x 61
+y 1
+end
+arch dragon
+x 62
+y 12
+end
+arch dragon
+x 63
+y 93
+end
+arch dragon
+x 64
+y 83
+end
+arch dragon
+x 64
+y 97
+end
+arch dragon
+x 65
+y 81
+end
+arch big_dragon
+x 66
+y 21
+end
+arch dragon
+x 68
+y 15
+end
+arch dragon
+x 68
+y 90
+end
+arch dragon
+x 69
+y 81
+end
+arch dragon
+x 69
+y 97
+end
+arch dragon
+x 70
+y 19
+end
+arch dragon
+x 72
+y 8
+end
+arch big_dragon
+x 72
+y 48
+end
+arch dragon
+x 73
+y 81
+end
+arch dragon
+x 74
+y 1
+end
+arch big_dragon
+x 75
+y 25
+end
+arch big_dragon
+x 75
+y 56
+end
+arch dragon
+x 76
+y 19
+end
+arch big_dragon_ancient
+x 76
+y 41
+end
+arch dragon
+x 76
+y 92
+end
+arch big_dragon
+x 77
+y 74
+end
+arch dragon
+x 77
+y 86
+end
+arch dragon
+x 79
+y 97
+end
+arch dragon
+x 80
+y 81
+end
+arch dragon
+x 81
+y 65
+end
+arch dragon
+x 82
+y 5
+end
+arch dragon
+x 82
+y 61
+end
+arch dragon
+x 83
+y 34
+end
+arch dragon
+x 83
+y 73
+end
+arch dragon
+x 84
+y 15
+end
+arch dragon
+x 84
+y 28
+end
+arch dragon
+x 84
+y 41
+end
+arch dragon
+x 84
+y 53
+end
+arch dragon
+x 84
+y 70
+end
+arch dragon
+x 84
+y 77
+end
+arch dragon
+x 84
+y 94
+end
+arch dragon
+x 85
+y 85
+end
+arch dragon
+x 85
+y 89
+end
+arch dragon
+x 86
+y 1
+end
+arch dragon
+x 86
+y 57
+end
+arch dragon
+x 87
+y 20
+end
+arch dragon
+x 87
+y 97
+end
+arch dragon
+x 89
+y 34
+end
+arch dragon
+x 89
+y 67
+end
+arch dragon
+x 90
+y 77
+end
+arch dragon
+x 90
+y 79
+end
+arch dragon
+x 91
+y 51
+end
+arch dragon
+x 91
+y 97
+end
+arch dragon
+x 92
+y 12
+end
+arch dragon
+x 92
+y 69
+end
+arch dragon
+x 93
+y 49
+end
+arch dragon
+x 93
+y 92
+end
+arch dragon
+x 94
+y 2
+end
+arch dragon
+x 94
+y 28
+end
+arch dragon
+x 94
+y 41
+end
+arch dragon
+x 94
+y 73
+end
+arch dragon
+x 95
+y 21
+end
+arch dragon
+x 95
+y 37
+end
+arch dragon
+x 95
+y 57
+end
+arch dragon
+x 95
+y 61
+end
+arch dragon
+x 95
+y 86
+end
+arch big_wiz
+name The Second Wizard
+name_pl Great Nameless Wizard of Yore
+Wis 30
+Pow 60
+hp 30000
+maxhp 30000
+sp 3000
+maxsp 3000
+exp 700000
+dam 40
+x 100
+y 45
+level 100
+resist_physical 85
+resist_fire 90
+resist_electricity 90
+resist_cold 90
+resist_acid 80
+resist_weaponmagic 60
+resist_slow 90
+resist_deplete 90
+resist_counterspell 100
+resist_godpower 90
+resist_holyword 95
+resist_blind 100
+carrying 65100
+reflect_spell 1
+run_away 0
+no_steal 1
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch giant_bat
+end
+arch key2
+name Mystical Key
+name_pl Mystical Key
+slaying bluekeymysticcdccastwin
+face key_blue.111
+end
+arch cloak
+name Cold Cloak of Invisibility
+name_pl Cold Cloak of Invisibility
+msg
+A chill surrounds you...
+endmsg
+face cloak_lblue.111
+Wis 2
+Int 1
+resist_magic 10
+resist_fire 40
+material 0
+value 100000
+make_invisible 1
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_potion
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_talisman
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 49
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 52
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 55
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 58
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 61
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 64
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 67
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 70
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 73
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 76
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 79
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 82
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 85
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 88
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 91
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 101
+y 94
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Unseeing Dread
+name_pl Arch Dread
+hp 8000
+maxhp 8000
+x 104
+y 45
+level 60
+resist_blind 0
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Unseeing Dread
+name_pl Arch Dread
+hp 8000
+maxhp 8000
+x 104
+y 48
+level 60
+resist_blind 0
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 52
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 55
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 58
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 61
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 64
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 67
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 70
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 73
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 76
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 79
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 82
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 85
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 88
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 91
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Arch Dread
+name_pl Arch Dread
+hp 5500
+maxhp 5500
+x 104
+y 94
+level 35
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Unseeing Dread
+name_pl Arch Dread
+hp 8000
+maxhp 8000
+x 107
+y 45
+level 60
+resist_blind 0
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+end
+arch dread
+name Unseeing Dread
+name_pl Arch Dread
+hp 8000
+maxhp 8000
+x 107
+y 48
+level 60
+resist_blind 0
+carrying 5000
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
+arch beholder
+end
 end
