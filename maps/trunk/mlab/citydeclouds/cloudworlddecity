@@ -97655,7 +97655,7 @@ x 64
 y 114
 end
 arch chess_club
-name Trader Joe's
+name Trader Joe's Trademarket
 slaying shops/cwdctrademarket
 msg
 This seems like a safe and secure
@@ -168327,7 +168327,7 @@ x 103
 y 76
 end
 arch shrine
-slaying cshrine1
+slaying temples/valriel
 hp 13
 sp 7
 x 103
@@ -228584,8 +228584,7 @@ y 91
 end
 arch guild
 name Town Haus
-name_pl Town Haus
-slaying cwdctownhaus2lvl1
+slaying apartment/cwdctownhaus2lvl1
 hp 15
 sp 22
 x 85
