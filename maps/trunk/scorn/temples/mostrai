@@ -144,10 +144,12 @@ end
 arch tree
 x 1
 y 6
+blocksview 1
 end
-arch grass
+arch tree
 x 1
 y 7
+blocksview 1
 end
 arch woodfloor
 x 1
@@ -244,9 +246,10 @@ arch grass
 x 2
 y 5
 end
-arch grass
+arch tree
 x 2
 y 6
+blocksview 1
 end
 arch grass
 x 2
@@ -474,11 +477,16 @@ name priest guard
 msg
 @match Goblin|goblin
 I hate these beasts!
+@match mines
+Aye, the mines. The entrance is
+somewhere around this temple.
 @match *
 I am guarding our priest, because I
 have heard that some Goblins are
 sneaking into the city during the
 night and try to capture some of us.
+They are trying to learn how to get
+into our mines.
 endmsg
 x 4
 y 7
