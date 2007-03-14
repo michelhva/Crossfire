@@ -48,3 +48,13 @@ subtype 3
 face mbsign.111
 slaying sign
 end
+Object building_bed_save
+name Bed of reality material
+nrof 1
+weight 50000
+value 100000
+type 161
+subtype 3
+face mbbed_save.111
+slaying bed_save
+end
