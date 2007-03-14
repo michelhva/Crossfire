@@ -7413,6 +7413,10 @@ arch woodfloor2
 x 19
 y 20
 end
+arch woodfloor
+x 19
+y 21
+end
 arch gate_open_1
 name security gate
 x 19
@@ -7422,10 +7426,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 19
-y 21
 end
 arch woodfloor2
 x 19
@@ -7513,6 +7513,10 @@ glow_radius 4
 no_pass 0
 identified 1
 end
+arch woodfloor
+x 19
+y 37
+end
 arch gate_open_1
 name security gate
 x 19
@@ -7522,10 +7526,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 19
-y 37
 end
 arch woodfloor2
 x 19
@@ -7763,6 +7763,10 @@ arch woodfloor2
 x 20
 y 20
 end
+arch woodfloor
+x 20
+y 21
+end
 arch gate_open_1
 name security gate
 x 20
@@ -7772,10 +7776,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 20
-y 21
 end
 arch woodfloor2
 x 20
@@ -7845,6 +7845,10 @@ arch woodfloor2
 x 20
 y 36
 end
+arch woodfloor
+x 20
+y 37
+end
 arch gate_open_1
 name security gate
 x 20
@@ -7854,10 +7858,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 20
-y 37
 end
 arch woodfloor2
 x 20
@@ -10522,6 +10522,10 @@ arch cwall_1_3
 x 26
 y 41
 end
+arch cobblestones2
+x 26
+y 42
+end
 arch gate_open_1
 name security gate
 x 26
@@ -10531,10 +10535,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch cobblestones2
-x 26
-y 42
 end
 arch cobblestones2
 x 26
@@ -10873,6 +10873,11 @@ food 1
 x 27
 y 42
 end
+arch stonefloor2
+name stonefloor
+x 27
+y 42
+end
 arch gate_open_1
 name security gate
 x 27
@@ -10882,11 +10887,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch stonefloor2
-name stonefloor
-x 27
-y 42
 end
 arch stonefloor2
 name stonefloor
@@ -11267,6 +11267,11 @@ x 28
 y 41
 connected 2
 end
+arch stonefloor2
+name stonefloor
+x 28
+y 42
+end
 arch gate_open_1
 name security gate
 x 28
@@ -11276,11 +11281,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch stonefloor2
-name stonefloor
-x 28
-y 42
 end
 arch stonefloor2
 name stonefloor
@@ -11705,6 +11705,11 @@ food 1
 x 29
 y 42
 end
+arch stonefloor2
+name stonefloor
+x 29
+y 42
+end
 arch gate_open_1
 name security gate
 x 29
@@ -11714,11 +11719,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch stonefloor2
-name stonefloor
-x 29
-y 42
 end
 arch stonefloor2
 name stonefloor
@@ -12057,6 +12057,11 @@ x 30
 y 41
 connected 2
 end
+arch stonefloor2
+name stonefloor
+x 30
+y 42
+end
 arch gate_open_1
 name security gate
 x 30
@@ -12066,11 +12071,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch stonefloor2
-name stonefloor
-x 30
-y 42
 end
 arch stonefloor2
 name stonefloor
@@ -12414,6 +12414,11 @@ food 1
 x 31
 y 42
 end
+arch stonefloor2
+name stonefloor
+x 31
+y 42
+end
 arch gate_open_1
 name security gate
 x 31
@@ -12423,11 +12428,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch stonefloor2
-name stonefloor
-x 31
-y 42
 end
 arch magic_mouth
 name twitter
@@ -12830,6 +12830,10 @@ arch cwall_1_4
 x 32
 y 41
 end
+arch cobblestones2
+x 32
+y 42
+end
 arch gate_open_1
 name security gate
 x 32
@@ -12839,10 +12843,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch cobblestones2
-x 32
-y 42
 end
 arch cobblestones2
 x 32
@@ -15360,6 +15360,10 @@ arch woodfloor2
 x 38
 y 20
 end
+arch woodfloor
+x 38
+y 21
+end
 arch gate_open_1
 name security gate
 x 38
@@ -15369,10 +15373,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 38
-y 21
 end
 arch woodfloor2
 x 38
@@ -15442,6 +15442,10 @@ arch woodfloor2
 x 38
 y 36
 end
+arch woodfloor
+x 38
+y 37
+end
 arch gate_open_1
 name security gate
 x 38
@@ -15451,10 +15455,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 38
-y 37
 end
 arch woodfloor2
 x 38
@@ -15697,6 +15697,10 @@ arch woodfloor2
 x 39
 y 20
 end
+arch woodfloor
+x 39
+y 21
+end
 arch gate_open_1
 name security gate
 x 39
@@ -15706,10 +15710,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 39
-y 21
 end
 arch woodfloor2
 x 39
@@ -15797,6 +15797,10 @@ glow_radius 4
 no_pass 0
 identified 1
 end
+arch woodfloor
+x 39
+y 37
+end
 arch gate_open_1
 name security gate
 x 39
@@ -15806,10 +15810,6 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
-end
-arch woodfloor
-x 39
-y 37
 end
 arch woodfloor2
 x 39
