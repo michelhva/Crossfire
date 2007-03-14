@@ -23,7 +23,6 @@ arch spikes_moving
 invisible 1
 end
 arch food
-invisible 1
 end
 arch brush
 y 1
@@ -7414,10 +7413,6 @@ arch woodfloor2
 x 19
 y 20
 end
-arch woodfloor
-x 19
-y 21
-end
 arch gate_open_1
 name security gate
 x 19
@@ -7427,6 +7422,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 19
+y 21
 end
 arch woodfloor2
 x 19
@@ -7514,10 +7513,6 @@ glow_radius 4
 no_pass 0
 identified 1
 end
-arch woodfloor
-x 19
-y 37
-end
 arch gate_open_1
 name security gate
 x 19
@@ -7527,6 +7522,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 19
+y 37
 end
 arch woodfloor2
 x 19
@@ -7764,10 +7763,6 @@ arch woodfloor2
 x 20
 y 20
 end
-arch woodfloor
-x 20
-y 21
-end
 arch gate_open_1
 name security gate
 x 20
@@ -7777,6 +7772,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 20
+y 21
 end
 arch woodfloor2
 x 20
@@ -7846,10 +7845,6 @@ arch woodfloor2
 x 20
 y 36
 end
-arch woodfloor
-x 20
-y 37
-end
 arch gate_open_1
 name security gate
 x 20
@@ -7859,6 +7854,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 20
+y 37
 end
 arch woodfloor2
 x 20
@@ -9870,6 +9869,15 @@ arch cwall_2_1_2
 x 24
 y 48
 end
+arch magic_mouth
+name guards
+msg
+You hear the sounds of many guards in a guard room.
+endmsg
+food 1
+x 24
+y 49
+end
 arch cobblestones2
 x 24
 y 49
@@ -10514,6 +10522,16 @@ arch cwall_1_3
 x 26
 y 41
 end
+arch gate_open_1
+name security gate
+x 26
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch cobblestones2
 x 26
 y 42
@@ -10851,8 +10869,19 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 27
 y 42
+end
+arch gate_open_1
+name security gate
+x 27
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -10885,6 +10914,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 27
 y 47
 end
@@ -11237,6 +11267,16 @@ x 28
 y 41
 connected 2
 end
+arch gate_open_1
+name security gate
+x 28
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch stonefloor2
 name stonefloor
 x 28
@@ -11253,6 +11293,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 28
 y 44
 end
@@ -11660,8 +11701,19 @@ name open sesame
 msg
 You *SEE* no way to open these gates ...
 endmsg
+food 1
 x 29
 y 42
+end
+arch gate_open_1
+name security gate
+x 29
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -12005,6 +12057,16 @@ x 30
 y 41
 connected 2
 end
+arch gate_open_1
+name security gate
+x 30
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch stonefloor2
 name stonefloor
 x 30
@@ -12342,6 +12404,26 @@ x 31
 y 41
 connected 2
 end
+arch magic_mouth
+name twitter
+msg
+You hear the twitter of canaries ...
+LARGE canaries ...
+endmsg
+food 1
+x 31
+y 42
+end
+arch gate_open_1
+name security gate
+x 31
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch stonefloor2
 name stonefloor
 x 31
@@ -12353,6 +12435,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 31
 y 43
 end
@@ -12747,6 +12830,16 @@ arch cwall_1_4
 x 32
 y 41
 end
+arch gate_open_1
+name security gate
+x 32
+y 42
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch cobblestones2
 x 32
 y 42
@@ -12761,6 +12854,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 32
 y 44
 end
@@ -13441,6 +13535,15 @@ end
 arch cwall_2_1_2
 x 34
 y 48
+end
+arch magic_mouth
+name guards
+msg
+You hear the sounds of many guards in a guard room.
+endmsg
+food 1
+x 34
+y 49
 end
 arch cobblestones2
 x 34
@@ -15257,10 +15360,6 @@ arch woodfloor2
 x 38
 y 20
 end
-arch woodfloor
-x 38
-y 21
-end
 arch gate_open_1
 name security gate
 x 38
@@ -15270,6 +15369,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 38
+y 21
 end
 arch woodfloor2
 x 38
@@ -15339,10 +15442,6 @@ arch woodfloor2
 x 38
 y 36
 end
-arch woodfloor
-x 38
-y 37
-end
 arch gate_open_1
 name security gate
 x 38
@@ -15352,6 +15451,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 38
+y 37
 end
 arch woodfloor2
 x 38
@@ -15594,10 +15697,6 @@ arch woodfloor2
 x 39
 y 20
 end
-arch woodfloor
-x 39
-y 21
-end
 arch gate_open_1
 name security gate
 x 39
@@ -15607,6 +15706,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 39
+y 21
 end
 arch woodfloor2
 x 39
@@ -15694,10 +15797,6 @@ glow_radius 4
 no_pass 0
 identified 1
 end
-arch woodfloor
-x 39
-y 37
-end
 arch gate_open_1
 name security gate
 x 39
@@ -15707,6 +15806,10 @@ no_pass 1
 no_magic 1
 damned 1
 activate_on_release 0
+end
+arch woodfloor
+x 39
+y 37
 end
 arch woodfloor2
 x 39
