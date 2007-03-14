@@ -15,13 +15,37 @@ outdoor 1
 end
 arch brush
 end
+arch spikes_closed
+invisible 1
+connected 1987
+end
+arch spikes_moving
+invisible 1
+end
+arch food
+invisible 1
+end
 arch brush
 y 1
+end
+arch spikes_closed
+y 1
+connected 1987
 end
 arch brush
 y 2
 end
+arch altar_trigger
+name trigger the nasty events
+food 1
+y 2
+connected 12000
+end
 arch brush
+y 3
+end
+arch awall_1_4
+name alarm system
 y 3
 end
 arch brush
@@ -200,15 +224,44 @@ end
 arch brush
 x 1
 end
+arch awall_1_1
+name alarm system
+x 1
+end
 arch brush
 x 1
 y 1
+end
+arch awall_2_1_1
+name alarm system
+x 1
+y 1
+end
+arch magic_mouth
+name alarm goes off!
+msg
+YOU SUDDENLY HEAR A LOUD ALARM AND THE SOUNDS OF ACTIVITY!
+RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY!
+endmsg
+x 1
+y 2
+connected 12000
 end
 arch brush
 x 1
 y 2
 end
+arch awall_2_1_1
+name alarm system
+x 1
+y 2
+end
 arch brush
+x 1
+y 3
+end
+arch awall_3_1
+name alarm system
 x 1
 y 3
 end
@@ -445,7 +498,16 @@ end
 arch brush
 x 2
 end
+arch awall_1_1
+name alarm system
+x 2
+end
 arch brush
+x 2
+y 1
+end
+arch awall_2_1_1
+name alarm system
 x 2
 y 1
 end
@@ -453,7 +515,17 @@ arch brush
 x 2
 y 2
 end
+arch awall_2_1_1
+name alarm system
+x 2
+y 2
+end
 arch brush
+x 2
+y 3
+end
+arch awall_2_2_4
+name alarm system
 x 2
 y 3
 end
@@ -3419,6 +3491,13 @@ arch woodfloor
 x 10
 y 17
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 10
+y 18
+connected 12000
+end
 arch woodfloor2
 x 10
 y 18
@@ -3589,6 +3668,15 @@ arch cobblestones2
 x 10
 y 26
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 10
+y 27
+connected 12000
+lifesave 1
+end
 arch stonefloor2
 x 10
 y 27
@@ -3597,13 +3685,27 @@ arch stonefloor2
 x 10
 y 28
 end
-arch stonefloor2
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
 x 10
 y 29
+connected 12000
+lifesave 1
 end
 arch stonefloor2
 x 10
 y 30
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 10
+y 31
+connected 12000
+lifesave 1
 end
 arch stonefloor2
 x 10
@@ -3644,6 +3746,13 @@ end
 arch woodfloor
 x 10
 y 39
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 10
+y 40
+connected 12000
 end
 arch woodfloor2
 x 10
@@ -4673,6 +4782,13 @@ arch woodfloor2
 x 13
 y 20
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 13
+y 21
+connected 12000
+end
 arch woodfloor
 x 13
 y 21
@@ -4874,6 +4990,13 @@ end
 arch woodfloor2
 x 13
 y 36
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 13
+y 37
+connected 12000
 end
 arch woodfloor
 x 13
@@ -5230,6 +5353,15 @@ arch woodfloor2
 x 14
 y 13
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 14
+y 14
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 14
 y 14
@@ -5381,6 +5513,15 @@ end
 arch woodfloor
 x 14
 y 43
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 14
+y 44
+connected 12000
+lifesave 1
 end
 arch woodfloor2
 x 14
@@ -5918,6 +6059,15 @@ arch woodfloor2
 x 16
 y 15
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 16
+y 16
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 16
 y 16
@@ -6053,6 +6203,15 @@ end
 arch woodfloor
 x 16
 y 41
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 16
+y 42
+connected 12000
+lifesave 1
 end
 arch woodfloor2
 x 16
@@ -6561,6 +6720,13 @@ arch woodfloor2
 x 18
 y 9
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 18
+y 10
+connected 12000
+end
 arch woodfloor2
 x 18
 y 10
@@ -6735,6 +6901,15 @@ arch woodfloor2
 x 18
 y 17
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 18
+y 18
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 18
 y 18
@@ -6847,6 +7022,15 @@ arch woodfloor
 x 18
 y 39
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 18
+y 40
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 18
 y 40
@@ -6890,6 +7074,13 @@ end
 arch woodfloor2
 x 18
 y 47
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 18
+y 48
+connected 12000
 end
 arch woodfloor2
 x 18
@@ -7214,6 +7405,15 @@ arch woodfloor
 x 19
 y 21
 end
+arch gate_open_1
+name security gate
+x 19
+y 21
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+end
 arch woodfloor2
 x 19
 y 22
@@ -7303,6 +7503,15 @@ end
 arch woodfloor
 x 19
 y 37
+end
+arch gate_open_1
+name security gate
+x 19
+y 37
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
 end
 arch woodfloor2
 x 19
@@ -7544,6 +7753,15 @@ arch woodfloor
 x 20
 y 21
 end
+arch gate_open_1
+name security gate
+x 20
+y 21
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+end
 arch woodfloor2
 x 20
 y 22
@@ -7615,6 +7833,15 @@ end
 arch woodfloor
 x 20
 y 37
+end
+arch gate_open_1
+name security gate
+x 20
+y 37
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
 end
 arch woodfloor2
 x 20
@@ -7803,6 +8030,13 @@ end
 arch woodfloor
 x 21
 y 12
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 21
+y 13
+connected 12000
 end
 arch woodfloor
 x 21
@@ -8121,6 +8355,13 @@ end
 arch woodfloor
 x 21
 y 44
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 21
+y 45
+connected 12000
 end
 arch woodfloor
 x 21
@@ -10413,6 +10654,15 @@ arch stonefloor2
 x 27
 y 9
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 27
+y 10
+connected 12000
+lifesave 1
+end
 arch stonefloor2
 x 27
 y 10
@@ -11144,6 +11394,15 @@ end
 arch stonefloor2
 x 29
 y 9
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 29
+y 10
+connected 12000
+lifesave 1
 end
 arch stonefloor2
 x 29
@@ -11889,6 +12148,15 @@ end
 arch stonefloor2
 x 31
 y 9
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 31
+y 10
+connected 12000
+lifesave 1
 end
 arch stonefloor2
 x 31
@@ -14320,6 +14588,13 @@ arch woodfloor
 x 37
 y 12
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 37
+y 13
+connected 12000
+end
 arch woodfloor
 x 37
 y 13
@@ -14637,6 +14912,13 @@ end
 arch woodfloor
 x 37
 y 44
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 37
+y 45
+connected 12000
 end
 arch woodfloor
 x 37
@@ -14959,6 +15241,15 @@ arch woodfloor
 x 38
 y 21
 end
+arch gate_open_1
+name security gate
+x 38
+y 21
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+end
 arch woodfloor2
 x 38
 y 22
@@ -15030,6 +15321,15 @@ end
 arch woodfloor
 x 38
 y 37
+end
+arch gate_open_1
+name security gate
+x 38
+y 37
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
 end
 arch woodfloor2
 x 38
@@ -15276,6 +15576,15 @@ arch woodfloor
 x 39
 y 21
 end
+arch gate_open_1
+name security gate
+x 39
+y 21
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
+end
 arch woodfloor2
 x 39
 y 22
@@ -15365,6 +15674,15 @@ end
 arch woodfloor
 x 39
 y 37
+end
+arch gate_open_1
+name security gate
+x 39
+y 37
+connected 12000
+no_pass 1
+no_magic 1
+damned 1
 end
 arch woodfloor2
 x 39
@@ -15547,6 +15865,13 @@ arch woodfloor2
 x 40
 y 9
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 40
+y 10
+connected 12000
+end
 arch woodfloor2
 x 40
 y 10
@@ -15721,6 +16046,15 @@ arch woodfloor2
 x 40
 y 17
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 40
+y 18
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 40
 y 18
@@ -15833,6 +16167,15 @@ arch woodfloor
 x 40
 y 39
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 40
+y 40
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 40
 y 40
@@ -15876,6 +16219,13 @@ end
 arch woodfloor2
 x 40
 y 47
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 40
+y 48
+connected 12000
 end
 arch woodfloor2
 x 40
@@ -16518,6 +16868,15 @@ arch woodfloor2
 x 42
 y 15
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 42
+y 16
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 42
 y 16
@@ -16653,6 +17012,15 @@ end
 arch woodfloor
 x 42
 y 41
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 42
+y 42
+connected 12000
+lifesave 1
 end
 arch woodfloor2
 x 42
@@ -17190,6 +17558,15 @@ arch woodfloor2
 x 44
 y 13
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 44
+y 14
+connected 12000
+lifesave 1
+end
 arch woodfloor2
 x 44
 y 14
@@ -17341,6 +17718,15 @@ end
 arch woodfloor
 x 44
 y 43
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 44
+y 44
+connected 12000
+lifesave 1
 end
 arch woodfloor2
 x 44
@@ -17563,6 +17949,13 @@ arch woodfloor2
 x 45
 y 20
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 45
+y 21
+connected 12000
+end
 arch woodfloor
 x 45
 y 21
@@ -17764,6 +18157,13 @@ end
 arch woodfloor2
 x 45
 y 36
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 45
+y 37
+connected 12000
 end
 arch woodfloor
 x 45
@@ -18793,6 +19193,13 @@ arch woodfloor
 x 48
 y 17
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 48
+y 18
+connected 12000
+end
 arch woodfloor2
 x 48
 y 18
@@ -18963,6 +19370,15 @@ arch cobblestones2
 x 48
 y 26
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 27
+connected 12000
+lifesave 1
+end
 arch stonefloor2
 x 48
 y 27
@@ -18971,6 +19387,15 @@ arch stonefloor2
 x 48
 y 28
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 29
+connected 12000
+lifesave 1
+end
 arch stonefloor2
 x 48
 y 29
@@ -18978,6 +19403,15 @@ end
 arch stonefloor2
 x 48
 y 30
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 31
+connected 12000
+lifesave 1
 end
 arch stonefloor2
 x 48
@@ -19018,6 +19452,13 @@ end
 arch woodfloor
 x 48
 y 39
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 48
+y 40
+connected 12000
 end
 arch woodfloor2
 x 48
@@ -21909,11 +22350,25 @@ end
 arch brush
 x 56
 end
+arch awall_1_1
+name alarm system
+x 56
+end
 arch brush
 x 56
 y 1
 end
+arch awall_2_1_1
+name alarm system
+x 56
+y 1
+end
 arch brush
+x 56
+y 2
+end
+arch awall_2_2_1
+name alarm system
 x 56
 y 2
 end
@@ -22154,11 +22609,33 @@ end
 arch brush
 x 57
 end
+arch awall_1_1
+name alarm system
+x 57
+end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 57
+y 1
+connected 1987
+end
 arch brush
 x 57
 y 1
 end
+arch awall_2_1_1
+name alarm system
+x 57
+y 1
+end
 arch brush
+x 57
+y 2
+end
+arch awall_3_1
+name alarm system
 x 57
 y 2
 end
@@ -22399,11 +22876,30 @@ end
 arch brush
 x 58
 end
+arch spikes_moving
+x 58
+end
+arch food
+x 58
+end
 arch brush
 x 58
 y 1
 end
+arch altar_trigger
+name start timer
+exp 59900
+food 1
+x 58
+y 1
+connected 1987
+end
 arch brush
+x 58
+y 2
+end
+arch awall_1_3
+name alarm system
 x 58
 y 2
 end
