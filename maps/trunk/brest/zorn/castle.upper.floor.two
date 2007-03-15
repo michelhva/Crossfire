@@ -1,6 +1,6 @@
 arch map
 name Zorn Castle Upper Floor Two
-difficulty 75
+difficulty 95
 region brest
 width 59
 height 59
@@ -9760,6 +9760,13 @@ arch cobblestones2
 x 24
 y 33
 end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 24
+y 34
+connected 12000
+end
 arch cobblestones2
 x 24
 y 34
@@ -9785,6 +9792,13 @@ end
 arch cobblestones2
 x 24
 y 37
+end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 24
+y 38
+connected 12000
 end
 arch cobblestones2
 x 24
@@ -9827,17 +9841,43 @@ arch cobblestones2
 x 24
 y 43
 end
+arch gate_open_1
+name security gate
+x 24
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 24
 y 44
+end
+arch gate_open_2
+x 24
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 24
 y 45
 end
+arch gate_open_2
+x 24
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 24
 y 46
+end
+arch gate_open_1
+name security gate
+x 24
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 24
@@ -10143,6 +10183,13 @@ arch cobblestones2
 x 25
 y 43
 end
+arch gate_open_1
+name security gate
+x 25
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 25
 y 44
@@ -10157,6 +10204,16 @@ hp 25
 sp 44
 x 25
 y 44
+end
+arch teleporter
+hp 28
+sp 44
+x 25
+y 44
+speed 0.0
+level 200
+invisible 1
+connected 12000
 end
 arch cobblestones2
 x 25
@@ -10173,9 +10230,26 @@ sp 45
 x 25
 y 45
 end
+arch teleporter
+hp 28
+sp 45
+x 25
+y 45
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 25
 y 46
+end
+arch gate_open_1
+name security gate
+x 25
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 25
@@ -10515,28 +10589,47 @@ arch cobblestones2
 x 26
 y 42
 end
+arch cobblestones2
+x 26
+y 43
+end
 arch gate_open_1
 name security gate
 x 26
-y 42
+y 43
 connected 12000
 activate_on_release 0
 end
 arch cobblestones2
 x 26
-y 43
+y 44
 end
-arch cobblestones2
+arch gate_open_2
 x 26
 y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 26
 y 45
 end
+arch gate_open_2
+x 26
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 26
 y 46
+end
+arch gate_open_1
+name security gate
+x 26
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 26
@@ -10811,6 +10904,13 @@ arch stonefloor2
 x 27
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 27
+y 35
+connected 12000
+end
 arch stonefloor2
 x 27
 y 35
@@ -10828,6 +10928,16 @@ arch stonefloor2
 x 27
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 27
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 27
 y 38
@@ -10839,6 +10949,13 @@ end
 arch stonefloor2
 x 27
 y 40
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 27
+y 41
+connected 12000
 end
 arch stonefloor2
 x 27
@@ -10863,13 +10980,6 @@ arch stonefloor2
 name stonefloor
 x 27
 y 42
-end
-arch gate_open_1
-name security gate
-x 27
-y 42
-connected 12000
-activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -11212,6 +11322,13 @@ arch stonefloor2
 x 28
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 28
+y 35
+connected 12000
+end
 arch stonefloor2
 x 28
 y 35
@@ -11241,6 +11358,13 @@ arch stonefloor2
 x 28
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 28
+y 41
+connected 12000
+end
 arch stonefloor2
 x 28
 y 41
@@ -11254,13 +11378,6 @@ arch stonefloor2
 name stonefloor
 x 28
 y 42
-end
-arch gate_open_1
-name security gate
-x 28
-y 42
-connected 12000
-activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -11305,6 +11422,13 @@ end
 arch stonefloor2
 x 28
 y 49
+end
+arch firepot
+x 28
+y 49
+glow_radius 4
+no_magic 1
+damned 1
 end
 arch cobblestones2
 x 28
@@ -11638,6 +11762,13 @@ arch stonefloor2
 x 29
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 29
+y 35
+connected 12000
+end
 arch stonefloor2
 x 29
 y 35
@@ -11655,6 +11786,16 @@ arch stonefloor2
 x 29
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 29
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 29
 y 38
@@ -11667,6 +11808,13 @@ arch stonefloor2
 x 29
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 29
+y 41
+connected 12000
+end
 arch stonefloor2
 x 29
 y 41
@@ -11676,26 +11824,10 @@ x 29
 y 41
 connected 2
 end
-arch magic_mouth
-name open sesame
-msg
-You *SEE* no way to open these gates ...
-endmsg
-food 1
-x 29
-y 42
-end
 arch stonefloor2
 name stonefloor
 x 29
 y 42
-end
-arch gate_open_1
-name security gate
-x 29
-y 42
-connected 12000
-activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -11727,6 +11859,13 @@ name stonefloor
 x 29
 y 48
 end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 29
+y 49
+connected 12000
+end
 arch stonefloor2
 x 29
 y 49
@@ -11735,7 +11874,6 @@ arch button_lever
 name gate lever
 x 29
 y 49
-invisible 1
 connected 2
 end
 arch cobblestones2
@@ -11759,6 +11897,19 @@ name moat
 x 29
 y 52
 no_pass 0
+end
+arch bulletwall
+name earth wall remover
+sp 1
+dam 37
+x 29
+y 52
+speed 0.0
+level 300
+invisible 1
+connected 12000
+no_pass 0
+blocksview 0
 end
 arch cobblestones2
 x 29
@@ -11996,6 +12147,13 @@ arch stonefloor2
 x 30
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 30
+y 35
+connected 12000
+end
 arch stonefloor2
 x 30
 y 35
@@ -12025,6 +12183,13 @@ arch stonefloor2
 x 30
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 30
+y 41
+connected 12000
+end
 arch stonefloor2
 x 30
 y 41
@@ -12038,13 +12203,6 @@ arch stonefloor2
 name stonefloor
 x 30
 y 42
-end
-arch gate_open_1
-name security gate
-x 30
-y 42
-connected 12000
-activate_on_release 0
 end
 arch stonefloor2
 name stonefloor
@@ -12079,6 +12237,13 @@ end
 arch stonefloor2
 x 30
 y 49
+end
+arch firepot
+x 30
+y 49
+glow_radius 4
+no_magic 1
+damned 1
 end
 arch cobblestones2
 x 30
@@ -12340,6 +12505,13 @@ arch stonefloor2
 x 31
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 31
+y 35
+connected 12000
+end
 arch stonefloor2
 x 31
 y 35
@@ -12357,6 +12529,16 @@ arch stonefloor2
 x 31
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 31
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 31
 y 38
@@ -12368,6 +12550,13 @@ end
 arch stonefloor2
 x 31
 y 40
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 31
+y 41
+connected 12000
 end
 arch stonefloor2
 x 31
@@ -12392,13 +12581,6 @@ arch stonefloor2
 name stonefloor
 x 31
 y 42
-end
-arch gate_open_1
-name security gate
-x 31
-y 42
-connected 12000
-activate_on_release 0
 end
 arch magic_mouth
 name twitter
@@ -12805,16 +12987,16 @@ arch cobblestones2
 x 32
 y 42
 end
-arch gate_open_1
-name security gate
-x 32
-y 42
-connected 12000
-activate_on_release 0
-end
 arch cobblestones2
 x 32
 y 43
+end
+arch gate_open_1
+name security gate
+x 32
+y 43
+connected 12000
+activate_on_release 0
 end
 arch magic_mouth
 name twitter
@@ -12830,13 +13012,32 @@ arch cobblestones2
 x 32
 y 44
 end
+arch gate_open_2
+x 32
+y 44
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 32
 y 45
 end
+arch gate_open_2
+x 32
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 32
 y 46
+end
+arch gate_open_1
+name security gate
+x 32
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 32
@@ -13131,6 +13332,13 @@ arch cobblestones2
 x 33
 y 43
 end
+arch gate_open_1
+name security gate
+x 33
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 33
 y 44
@@ -13145,6 +13353,16 @@ hp 33
 sp 44
 x 33
 y 44
+end
+arch teleporter
+hp 33
+sp 44
+x 33
+y 44
+speed 0.0
+level 200
+invisible 1
+connected 12000
 end
 arch cobblestones2
 x 33
@@ -13161,9 +13379,26 @@ sp 45
 x 33
 y 45
 end
+arch teleporter
+hp 30
+sp 45
+x 33
+y 45
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 33
 y 46
+end
+arch gate_open_1
+name security gate
+x 33
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 33
@@ -13406,6 +13641,13 @@ arch cobblestones2
 x 34
 y 33
 end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 34
+y 34
+connected 12000
+end
 arch cobblestones2
 x 34
 y 34
@@ -13431,6 +13673,13 @@ end
 arch cobblestones2
 x 34
 y 37
+end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 34
+y 38
+connected 12000
 end
 arch cobblestones2
 x 34
@@ -13473,17 +13722,43 @@ arch cobblestones2
 x 34
 y 43
 end
+arch gate_open_1
+name security gate
+x 34
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 34
 y 44
+end
+arch gate_open_2
+x 34
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 34
 y 45
 end
+arch gate_open_2
+x 34
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 34
 y 46
+end
+arch gate_open_1
+name security gate
+x 34
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 34
