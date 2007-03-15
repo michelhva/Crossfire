@@ -11898,19 +11898,6 @@ x 29
 y 52
 no_pass 0
 end
-arch bulletwall
-name earth wall remover
-sp 1
-dam 37
-x 29
-y 52
-speed 0.0
-level 300
-invisible 1
-connected 12000
-no_pass 0
-blocksview 0
-end
 arch cobblestones2
 x 29
 y 52
@@ -13071,6 +13058,19 @@ arch brush
 x 32
 y 51
 end
+arch bulletwall
+name earth wall remover
+sp 1
+dam 37
+x 32
+y 51
+speed 0.0
+level 300
+invisible 1
+connected 12000
+no_pass 0
+blocksview 0
+end
 arch tree5
 name ornamental pine
 x 32
@@ -13355,7 +13355,7 @@ x 33
 y 44
 end
 arch teleporter
-hp 33
+hp 30
 sp 44
 x 33
 y 44
