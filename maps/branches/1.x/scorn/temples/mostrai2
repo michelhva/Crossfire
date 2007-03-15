@@ -448,14 +448,17 @@ x 5
 y 2
 end
 arch ladder_down
+name to the dwarven mines
 slaying /!
 msg
 layoutstyle maze
-xsize 39
-ysize 29
+xsize 19
+ysize 14
+expand2x 1
 floorstyle lightdirt
 decorstyle minerals2
-wallstyle cave3
+wallstyle cave2
+doorstyle none
 exitstyle ladder
 monsterstyle dwarf
 dungeon_level 1
@@ -565,6 +568,14 @@ x 6
 y 2
 end
 arch pstone_1
+x 6
+y 3
+end
+arch sign_w
+name All who enter read this
+msg
+The estimated level one should be is level 10 for this random dungeon. Perhaps higher.
+endmsg
 x 6
 y 3
 end
