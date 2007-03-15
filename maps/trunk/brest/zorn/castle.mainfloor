@@ -4223,32 +4223,36 @@ x 10
 y 33
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 10
 y 33
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -4264,6 +4268,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_white_floor
@@ -4271,32 +4292,36 @@ x 10
 y 34
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 10
 y 34
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -4312,6 +4337,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_floor
@@ -11425,32 +11467,36 @@ x 24
 y 12
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 24
 y 12
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -11466,6 +11512,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_floor
@@ -11473,32 +11536,36 @@ x 24
 y 13
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 24
 y 13
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -11514,6 +11581,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_floor
@@ -13153,6 +13237,7 @@ msg
 Move along.
 endmsg
 Con 20
+Int 25
 hp 700
 maxhp 700
 exp 20000
@@ -13161,7 +13246,7 @@ wc -5
 ac -10
 x 28
 y 11
-speed 0.1
+speed 0.25
 level 70
 attacktype 1
 resist_fire 30
@@ -13174,6 +13259,8 @@ resist_paralyze 30
 resist_fear 100
 resist_blind 30
 carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -13632,6 +13719,7 @@ msg
 Move along.
 endmsg
 Con 20
+Int 25
 hp 700
 maxhp 700
 exp 20000
@@ -13640,7 +13728,7 @@ wc -5
 ac -10
 x 29
 y 11
-speed 0.1
+speed 0.25
 level 70
 attacktype 1
 resist_fire 30
@@ -13653,6 +13741,8 @@ resist_paralyze 30
 resist_fear 100
 resist_blind 30
 carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -14112,6 +14202,7 @@ msg
 Move along.
 endmsg
 Con 20
+Int 25
 hp 700
 maxhp 700
 exp 20000
@@ -14120,7 +14211,7 @@ wc -5
 ac -10
 x 30
 y 11
-speed 0.1
+speed 0.25
 level 70
 attacktype 1
 resist_fire 30
@@ -14133,6 +14224,8 @@ resist_paralyze 30
 resist_fear 100
 resist_blind 30
 carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -15888,32 +15981,36 @@ x 34
 y 12
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 34
 y 12
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -15929,6 +16026,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_white_floor
@@ -15936,32 +16050,36 @@ x 34
 y 13
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 34
 y 13
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -15977,6 +16095,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_white_floor
@@ -23293,32 +23428,36 @@ x 48
 y 33
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 48
 y 33
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -23334,6 +23473,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_floor
@@ -23341,32 +23497,36 @@ x 48
 y 34
 end
 arch guard
-name fearless zorn guard
+name fearless zorn guard sergeant
 msg
 @match *
-...
+Move along.
 endmsg
-hp 500
-maxhp 500
-exp 12000
-dam 35
-wc 10
-ac -5
+Con 20
+Int 25
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
 x 48
 y 34
-speed 0.09
-level 50
+speed 0.25
+level 70
 attacktype 1
-resist_fire 25
-resist_electricity 25
-resist_cold 25
-resist_acid 25
-resist_weaponmagic 25
-resist_poison 25
-resist_paralyze 25
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
 resist_fear 100
-resist_blind 25
-randomitems guard_h
+resist_blind 30
+carrying 28000
+will_apply 4
+unaggressive 0
 run_away 5
 pick_up 24
 can_use_bow 1
@@ -23382,6 +23542,23 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
 end
 end
 arch tile_white_floor

@@ -10079,12 +10079,6 @@ arch cobblestones2
 x 22
 y 48
 end
-arch rune_large_fireball
-Cha 200
-x 22
-y 49
-level 35
-end
 arch cobblestones2
 x 22
 y 49
@@ -11443,6 +11437,7 @@ wc 10
 ac -10
 x 25
 y 15
+speed 0.25
 level 45
 resist_magic 50
 resist_fire 50
@@ -11463,6 +11458,7 @@ resist_death 50
 resist_chaos 50
 resist_blind 50
 path_attuned 4
+unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -11720,6 +11716,7 @@ wc 10
 ac -10
 x 25
 y 42
+speed 0.25
 level 45
 resist_magic 50
 resist_fire 50
@@ -11740,6 +11737,7 @@ resist_death 50
 resist_chaos 50
 resist_blind 50
 path_attuned 4
+unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -12474,39 +12472,48 @@ x 27
 y 9
 end
 arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
+name Senior Room Attendant
+Con 35
+Pow 20
+Int 10
+hp 2500
+maxhp 2500
 sp 200
 maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+exp 25000
+dam 25
+wc 10
+ac -10
 x 27
 y 9
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
+speed 0.25
+level 45
+resist_magic 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 100
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_poison 50
+resist_slow 100
+resist_paralyze 50
+resist_turn_undead 50
 resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
 path_attuned 4
-pick_up 24
+unaggressive 0
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
 stand_still 0
+can_use_skill 1
+can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -12516,7 +12523,7 @@ can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 end
-arch darkblade
+arch mournblade
 applied 1
 end
 arch mithril_chainmail
@@ -12525,12 +12532,18 @@ end
 arch high_boots
 applied 1
 end
-arch reflector
-applied 1
-end
 arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
+end
+arch helmet
+name helmet of reflect spells
+name_pl helmets of reflect spells
+ac 2
+resist_magic 30
+magic 1
+applied 1
+reflect_spell 1
 end
 end
 arch cobblestones2
@@ -15901,39 +15914,48 @@ x 31
 y 9
 end
 arch medium_guard
-name Room Attendant
-Con 25
-Int 5
-hp 2000
-maxhp 2000
+name Senior Room Attendant
+Con 35
+Pow 20
+Int 10
+hp 2500
+maxhp 2500
 sp 200
 maxsp 200
-exp 20000
-dam 20
-wc 9
-ac -9
+exp 25000
+dam 25
+wc 10
+ac -10
 x 31
 y 9
-level 35
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_confusion 30
-resist_acid 30
-resist_drain 30
-resist_weaponmagic 30
-resist_ghosthit 30
-resist_poison 30
-resist_slow 30
-resist_paralyze 30
+speed 0.25
+level 45
+resist_magic 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 100
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_poison 50
+resist_slow 100
+resist_paralyze 50
+resist_turn_undead 50
 resist_fear 100
-resist_deplete 30
-resist_death 30
-resist_chaos 30
-resist_blind 30
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
 path_attuned 4
-pick_up 24
+unaggressive 0
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
 stand_still 0
+can_use_skill 1
+can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -15943,7 +15965,7 @@ can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 end
-arch darkblade
+arch mournblade
 applied 1
 end
 arch mithril_chainmail
@@ -15952,12 +15974,18 @@ end
 arch high_boots
 applied 1
 end
-arch reflector
-applied 1
-end
 arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
+end
+arch helmet
+name helmet of reflect spells
+name_pl helmets of reflect spells
+ac 2
+resist_magic 30
+magic 1
+applied 1
+reflect_spell 1
 end
 end
 arch cobblestones2
@@ -16981,6 +17009,7 @@ wc 10
 ac -10
 x 33
 y 15
+speed 0.25
 level 45
 resist_magic 50
 resist_fire 50
@@ -17001,6 +17030,7 @@ resist_death 50
 resist_chaos 50
 resist_blind 50
 path_attuned 4
+unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -17258,6 +17288,7 @@ wc 10
 ac -10
 x 33
 y 42
+speed 0.25
 level 45
 resist_magic 50
 resist_fire 50
@@ -17278,6 +17309,7 @@ resist_death 50
 resist_chaos 50
 resist_blind 50
 path_attuned 4
+unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -19189,12 +19221,6 @@ end
 arch cobblestones2
 x 36
 y 48
-end
-arch rune_large_fireball
-Cha 200
-x 36
-y 49
-level 35
 end
 arch cobblestones2
 x 36
