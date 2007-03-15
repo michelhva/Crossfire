@@ -1,12 +1,13 @@
 arch map
+name Playershops
+difficulty 1
 region brest
-name pshops_main
+width 43
+height 9
 msg
 Creator: majorwoo josh@woosworld.net
 Date:    10/16/2004
 endmsg
-width 43
-height 9
 outdoor 1
 end
 arch evergreens
@@ -194,9 +195,9 @@ x 4
 y 4
 end
 arch lamppost
-glow_radius 8
 x 4
 y 4
+glow_radius 8
 end
 arch marble
 x 4
@@ -616,9 +617,9 @@ x 15
 y 4
 end
 arch lamppost
-glow_radius 8
 x 15
 y 4
+glow_radius 8
 end
 arch marble
 x 15
@@ -1077,9 +1078,9 @@ x 27
 y 4
 end
 arch lamppost
-glow_radius 8
 x 27
 y 4
+glow_radius 8
 end
 arch marble
 x 27
@@ -1464,9 +1465,9 @@ x 37
 y 4
 end
 arch lamppost
-glow_radius 8
 x 37
 y 4
+glow_radius 8
 end
 arch marble
 x 37
@@ -1709,9 +1710,9 @@ name Private Shop 14
 slaying pshop14/gfloor
 hp 12
 sp 21
-no_pass 0
 x 1
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 1
@@ -1726,9 +1727,9 @@ name Private Shop 15
 slaying pshop15/gfloor
 hp 12
 sp 21
-no_pass 0
 x 4
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 2
@@ -1743,9 +1744,9 @@ name Private Shop 16
 slaying pshop16/gfloor
 hp 12
 sp 21
-no_pass 0
 x 7
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 3
@@ -1760,9 +1761,9 @@ name Private Shop 17
 slaying pshop17/gfloor
 hp 12
 sp 21
-no_pass 0
 x 10
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 4
@@ -1777,9 +1778,9 @@ name Private Shop 18
 slaying pshop18/gfloor
 hp 12
 sp 21
-no_pass 0
 x 13
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 5
@@ -1794,9 +1795,9 @@ name Private Shop 19
 slaying pshop19/gfloor
 hp 12
 sp 21
-no_pass 0
 x 16
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 6
@@ -1811,9 +1812,9 @@ name Private Shop 20
 slaying pshop20/gfloor
 hp 12
 sp 21
-no_pass 0
 x 19
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 7
@@ -1828,9 +1829,9 @@ name Private Shop 21
 slaying pshop21/gfloor
 hp 12
 sp 21
-no_pass 0
 x 22
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 8
@@ -1845,9 +1846,9 @@ name Private Shop 22
 slaying pshop22/gfloor
 hp 12
 sp 21
-no_pass 0
 x 25
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 9
@@ -1862,9 +1863,9 @@ name Private Shop 23
 slaying pshop23/gfloor
 hp 12
 sp 21
-no_pass 0
 x 28
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 10
@@ -1879,9 +1880,9 @@ name Private Shop 24
 slaying pshop24/gfloor
 hp 12
 sp 21
-no_pass 0
 x 31
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 11
@@ -1896,9 +1897,9 @@ name Private Shop 25
 slaying pshop25/gfloor
 hp 12
 sp 21
-no_pass 0
 x 34
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 12
@@ -1913,9 +1914,9 @@ name Private Shop 26
 slaying pshop26/gfloor
 hp 12
 sp 21
-no_pass 0
 x 37
 y 6
+no_pass 0
 end
 arch guild
 name Private Shop 13
@@ -1930,7 +1931,7 @@ name Private Shop 27
 slaying pshop27/gfloor
 hp 12
 sp 21
-no_pass 0
 x 40
 y 6
+no_pass 0
 end

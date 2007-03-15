@@ -1,12 +1,13 @@
 arch map
+name Playershops Purchase
+difficulty 1
 region brest
-name pshops_buy
+width 36
+height 14
 msg
 Creator: majorwoo josh@woosworld.net
 Date:    10/17/2004
 endmsg
-width 36
-height 14
 end
 arch woodfloor
 end
@@ -123,9 +124,9 @@ arch dungeon_magic
 x 1
 end
 arch woodfloor
-unique 1
 x 1
 y 1
+unique 1
 end
 arch dungeon_magic
 x 1
@@ -138,33 +139,33 @@ x 1
 y 1
 end
 arch woodfloor
-unique 1
 x 1
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 1
 wc 0
 x 1
 y 2
+connected 1
 end
 arch dungeon_magic
 x 1
 y 2
 end
 arch woodfloor
-unique 1
 x 1
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 1
 slaying gem
 food 30000
-connected 1
-last_sp 1
 x 1
 y 3
+last_sp 1
+connected 1
 end
 arch dungeon_magic
 x 1
@@ -203,41 +204,41 @@ x 1
 y 6
 end
 arch woodfloor
-unique 1
 x 1
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 15
 slaying gem
 food 30000
-connected 15
-last_sp 1
 x 1
 y 7
+last_sp 1
+connected 15
 end
 arch dungeon_magic
 x 1
 y 7
 end
 arch woodfloor
-unique 1
 x 1
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 15
 x 1
 y 8
+connected 15
 end
 arch dungeon_magic
 x 1
 y 8
 end
 arch woodfloor
-unique 1
 x 1
 y 9
+unique 1
 end
 arch dungeon_magic
 x 1
@@ -295,9 +296,9 @@ x 2
 y 1
 end
 arch woodfloor
-unique 1
 x 2
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 2
@@ -308,9 +309,9 @@ x 2
 y 2
 end
 arch woodfloor
-unique 1
 x 2
 y 3
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -341,18 +342,18 @@ x 2
 y 6
 end
 arch woodfloor
-unique 1
 x 2
 y 7
+unique 1
 end
 arch dungeon_magic
 x 2
 y 7
 end
 arch woodfloor
-unique 1
 x 2
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 2
@@ -408,9 +409,9 @@ arch dungeon_magic
 x 3
 end
 arch woodfloor
-unique 1
 x 3
 y 1
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -423,32 +424,32 @@ x 3
 y 1
 end
 arch woodfloor
-unique 1
 x 3
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 2
 x 3
 y 2
+connected 2
 end
 arch dungeon_magic
 x 3
 y 2
 end
 arch woodfloor
-unique 1
 x 3
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 2
 slaying gem
 food 30000
-connected 2
+x 3
+y 3
 last_sp 1
-x 3
-y 3
+connected 2
 end
 arch dungeon_magic
 x 3
@@ -479,41 +480,41 @@ x 3
 y 6
 end
 arch woodfloor
-unique 1
 x 3
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 16
 slaying gem
 food 30000
-connected 16
-last_sp 1
 x 3
 y 7
+last_sp 1
+connected 16
 end
 arch dungeon_magic
 x 3
 y 7
 end
 arch woodfloor
-unique 1
 x 3
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 16
 x 3
 y 8
+connected 16
 end
 arch dungeon_magic
 x 3
 y 8
 end
 arch woodfloor
-unique 1
 x 3
 y 9
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -571,9 +572,9 @@ x 4
 y 1
 end
 arch woodfloor
-unique 1
 x 4
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 4
@@ -584,9 +585,9 @@ x 4
 y 2
 end
 arch woodfloor
-unique 1
 x 4
 y 3
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -617,18 +618,18 @@ x 4
 y 6
 end
 arch woodfloor
-unique 1
 x 4
 y 7
+unique 1
 end
 arch dungeon_magic
 x 4
 y 7
 end
 arch woodfloor
-unique 1
 x 4
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 4
@@ -684,9 +685,9 @@ arch dungeon_magic
 x 5
 end
 arch woodfloor
-unique 1
 x 5
 y 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -699,32 +700,32 @@ x 5
 y 1
 end
 arch woodfloor
-unique 1
 x 5
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 3
 x 5
 y 2
+connected 3
 end
 arch dungeon_magic
 x 5
 y 2
 end
 arch woodfloor
-unique 1
 x 5
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 3
 slaying gem
 food 30000
-connected 3
+x 5
+y 3
 last_sp 1
-x 5
-y 3
+connected 3
 end
 arch dungeon_magic
 x 5
@@ -755,41 +756,41 @@ x 5
 y 6
 end
 arch woodfloor
-unique 1
 x 5
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 17
 slaying gem
 food 30000
-connected 17
-last_sp 1
 x 5
 y 7
+last_sp 1
+connected 17
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch woodfloor
-unique 1
 x 5
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 17
 x 5
 y 8
+connected 17
 end
 arch dungeon_magic
 x 5
 y 8
 end
 arch woodfloor
-unique 1
 x 5
 y 9
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -847,9 +848,9 @@ x 6
 y 1
 end
 arch woodfloor
-unique 1
 x 6
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 6
@@ -860,9 +861,9 @@ x 6
 y 2
 end
 arch woodfloor
-unique 1
 x 6
 y 3
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -893,18 +894,18 @@ x 6
 y 6
 end
 arch woodfloor
-unique 1
 x 6
 y 7
+unique 1
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch woodfloor
-unique 1
 x 6
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 6
@@ -960,9 +961,9 @@ arch dungeon_magic
 x 7
 end
 arch woodfloor
-unique 1
 x 7
 y 1
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -975,32 +976,32 @@ x 7
 y 1
 end
 arch woodfloor
-unique 1
 x 7
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 4
 x 7
 y 2
+connected 4
 end
 arch dungeon_magic
 x 7
 y 2
 end
 arch woodfloor
-unique 1
 x 7
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 4
 slaying gem
 food 30000
-connected 4
+x 7
+y 3
 last_sp 1
-x 7
-y 3
+connected 4
 end
 arch dungeon_magic
 x 7
@@ -1031,41 +1032,41 @@ x 7
 y 6
 end
 arch woodfloor
-unique 1
 x 7
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 18
 slaying gem
 food 30000
-connected 18
-last_sp 1
 x 7
 y 7
+last_sp 1
+connected 18
 end
 arch dungeon_magic
 x 7
 y 7
 end
 arch woodfloor
-unique 1
 x 7
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 18
 x 7
 y 8
+connected 18
 end
 arch dungeon_magic
 x 7
 y 8
 end
 arch woodfloor
-unique 1
 x 7
 y 9
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1123,9 +1124,9 @@ x 8
 y 1
 end
 arch woodfloor
-unique 1
 x 8
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 8
@@ -1136,9 +1137,9 @@ x 8
 y 2
 end
 arch woodfloor
-unique 1
 x 8
 y 3
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1169,18 +1170,18 @@ x 8
 y 6
 end
 arch woodfloor
-unique 1
 x 8
 y 7
+unique 1
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch woodfloor
-unique 1
 x 8
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 8
@@ -1236,9 +1237,9 @@ arch dungeon_magic
 x 9
 end
 arch woodfloor
-unique 1
 x 9
 y 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -1251,32 +1252,32 @@ x 9
 y 1
 end
 arch woodfloor
-unique 1
 x 9
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 5
 x 9
 y 2
+connected 5
 end
 arch dungeon_magic
 x 9
 y 2
 end
 arch woodfloor
-unique 1
 x 9
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 5
 slaying gem
 food 30000
-connected 5
+x 9
+y 3
 last_sp 1
-x 9
-y 3
+connected 5
 end
 arch dungeon_magic
 x 9
@@ -1307,41 +1308,41 @@ x 9
 y 6
 end
 arch woodfloor
-unique 1
 x 9
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 19
 slaying gem
 food 30000
-connected 19
-last_sp 1
 x 9
 y 7
+last_sp 1
+connected 19
 end
 arch dungeon_magic
 x 9
 y 7
 end
 arch woodfloor
-unique 1
 x 9
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 19
 x 9
 y 8
+connected 19
 end
 arch dungeon_magic
 x 9
 y 8
 end
 arch woodfloor
-unique 1
 x 9
 y 9
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -1399,9 +1400,9 @@ x 10
 y 1
 end
 arch woodfloor
-unique 1
 x 10
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 10
@@ -1412,9 +1413,9 @@ x 10
 y 2
 end
 arch woodfloor
-unique 1
 x 10
 y 3
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -1445,18 +1446,18 @@ x 10
 y 6
 end
 arch woodfloor
-unique 1
 x 10
 y 7
+unique 1
 end
 arch dungeon_magic
 x 10
 y 7
 end
 arch woodfloor
-unique 1
 x 10
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 10
@@ -1512,9 +1513,9 @@ arch dungeon_magic
 x 11
 end
 arch woodfloor
-unique 1
 x 11
 y 1
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -1527,32 +1528,32 @@ x 11
 y 1
 end
 arch woodfloor
-unique 1
 x 11
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 6
 x 11
 y 2
+connected 6
 end
 arch dungeon_magic
 x 11
 y 2
 end
 arch woodfloor
-unique 1
 x 11
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 6
 slaying gem
 food 30000
-connected 6
+x 11
+y 3
 last_sp 1
-x 11
-y 3
+connected 6
 end
 arch dungeon_magic
 x 11
@@ -1583,41 +1584,41 @@ x 11
 y 6
 end
 arch woodfloor
-unique 1
 x 11
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 20
 slaying gem
 food 30000
-connected 20
-last_sp 1
 x 11
 y 7
+last_sp 1
+connected 20
 end
 arch dungeon_magic
 x 11
 y 7
 end
 arch woodfloor
-unique 1
 x 11
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 20
 x 11
 y 8
+connected 20
 end
 arch dungeon_magic
 x 11
 y 8
 end
 arch woodfloor
-unique 1
 x 11
 y 9
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -1675,9 +1676,9 @@ x 12
 y 1
 end
 arch woodfloor
-unique 1
 x 12
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 12
@@ -1688,9 +1689,9 @@ x 12
 y 2
 end
 arch woodfloor
-unique 1
 x 12
 y 3
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -1721,18 +1722,18 @@ x 12
 y 6
 end
 arch woodfloor
-unique 1
 x 12
 y 7
+unique 1
 end
 arch dungeon_magic
 x 12
 y 7
 end
 arch woodfloor
-unique 1
 x 12
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 12
@@ -1788,9 +1789,9 @@ arch dungeon_magic
 x 13
 end
 arch woodfloor
-unique 1
 x 13
 y 1
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -1803,32 +1804,32 @@ x 13
 y 1
 end
 arch woodfloor
-unique 1
 x 13
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 7
 x 13
 y 2
+connected 7
 end
 arch dungeon_magic
 x 13
 y 2
 end
 arch woodfloor
-unique 1
 x 13
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 7
 slaying gem
 food 30000
-connected 7
+x 13
+y 3
 last_sp 1
-x 13
-y 3
+connected 7
 end
 arch dungeon_magic
 x 13
@@ -1859,41 +1860,41 @@ x 13
 y 6
 end
 arch woodfloor
-unique 1
 x 13
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 21
 slaying gem
 food 30000
-connected 21
-last_sp 1
 x 13
 y 7
+last_sp 1
+connected 21
 end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor
-unique 1
 x 13
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 21
 x 13
 y 8
+connected 21
 end
 arch dungeon_magic
 x 13
 y 8
 end
 arch woodfloor
-unique 1
 x 13
 y 9
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -1951,9 +1952,9 @@ x 14
 y 1
 end
 arch woodfloor
-unique 1
 x 14
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 14
@@ -1964,9 +1965,9 @@ x 14
 y 2
 end
 arch woodfloor
-unique 1
 x 14
 y 3
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -2009,9 +2010,9 @@ x 14
 y 7
 end
 arch woodfloor
-unique 1
 x 14
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 14
@@ -2067,9 +2068,9 @@ arch dungeon_magic
 x 15
 end
 arch woodfloor
-unique 1
 x 15
 y 1
+unique 1
 end
 arch dungeon_magic
 x 15
@@ -2082,32 +2083,32 @@ x 15
 y 1
 end
 arch woodfloor
-unique 1
 x 15
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 8
 x 15
 y 2
+connected 8
 end
 arch dungeon_magic
 x 15
 y 2
 end
 arch woodfloor
-unique 1
 x 15
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 8
 slaying gem
 food 30000
-connected 8
-last_sp 1
 x 15
 y 3
+last_sp 1
+connected 8
 end
 arch dungeon_magic
 x 15
@@ -2179,6 +2180,7 @@ x 15
 y 10
 end
 arch oakdoor
+slaying pshops_main
 msg
 REMEMBER:
 If you do not login to your account for
@@ -2186,7 +2188,6 @@ If you do not login to your account for
 RESOLD and all items inside LOST.
 --management
 endmsg
-slaying pshops_main
 hp 2
 sp 2
 x 15
@@ -2230,9 +2231,9 @@ x 16
 y 1
 end
 arch woodfloor
-unique 1
 x 16
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 16
@@ -2243,9 +2244,9 @@ x 16
 y 2
 end
 arch woodfloor
-unique 1
 x 16
 y 3
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -2288,9 +2289,9 @@ x 16
 y 7
 end
 arch woodfloor
-unique 1
 x 16
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 16
@@ -2346,9 +2347,9 @@ arch dungeon_magic
 x 17
 end
 arch woodfloor
-unique 1
 x 17
 y 1
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -2361,32 +2362,32 @@ x 17
 y 1
 end
 arch woodfloor
-unique 1
 x 17
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 9
 x 17
 y 2
+connected 9
 end
 arch dungeon_magic
 x 17
 y 2
 end
 arch woodfloor
-unique 1
 x 17
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 9
 slaying gem
 food 30000
-connected 9
+x 17
+y 3
 last_sp 1
-x 17
-y 3
+connected 9
 end
 arch dungeon_magic
 x 17
@@ -2417,41 +2418,41 @@ x 17
 y 6
 end
 arch woodfloor
-unique 1
 x 17
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 22
 slaying gem
 food 30000
-connected 22
-last_sp 1
 x 17
 y 7
+last_sp 1
+connected 22
 end
 arch dungeon_magic
 x 17
 y 7
 end
 arch woodfloor
-unique 1
 x 17
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 22
 x 17
 y 8
+connected 22
 end
 arch dungeon_magic
 x 17
 y 8
 end
 arch woodfloor
-unique 1
 x 17
 y 9
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -2509,9 +2510,9 @@ x 18
 y 1
 end
 arch woodfloor
-unique 1
 x 18
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 18
@@ -2522,9 +2523,9 @@ x 18
 y 2
 end
 arch woodfloor
-unique 1
 x 18
 y 3
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -2555,18 +2556,18 @@ x 18
 y 6
 end
 arch woodfloor
-unique 1
 x 18
 y 7
+unique 1
 end
 arch dungeon_magic
 x 18
 y 7
 end
 arch woodfloor
-unique 1
 x 18
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 18
@@ -2622,9 +2623,9 @@ arch dungeon_magic
 x 19
 end
 arch woodfloor
-unique 1
 x 19
 y 1
+unique 1
 end
 arch dungeon_magic
 x 19
@@ -2637,32 +2638,32 @@ x 19
 y 1
 end
 arch woodfloor
-unique 1
 x 19
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 10
 x 19
 y 2
+connected 10
 end
 arch dungeon_magic
 x 19
 y 2
 end
 arch woodfloor
-unique 1
 x 19
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 10
 slaying gem
 food 30000
-connected 10
+x 19
+y 3
 last_sp 1
-x 19
-y 3
+connected 10
 end
 arch dungeon_magic
 x 19
@@ -2693,41 +2694,41 @@ x 19
 y 6
 end
 arch woodfloor
-unique 1
 x 19
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 23
 slaying gem
 food 30000
-connected 23
-last_sp 1
 x 19
 y 7
+last_sp 1
+connected 23
 end
 arch dungeon_magic
 x 19
 y 7
 end
 arch woodfloor
-unique 1
 x 19
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 23
 x 19
 y 8
+connected 23
 end
 arch dungeon_magic
 x 19
 y 8
 end
 arch woodfloor
-unique 1
 x 19
 y 9
+unique 1
 end
 arch dungeon_magic
 x 19
@@ -2785,9 +2786,9 @@ x 20
 y 1
 end
 arch woodfloor
-unique 1
 x 20
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 20
@@ -2798,9 +2799,9 @@ x 20
 y 2
 end
 arch woodfloor
-unique 1
 x 20
 y 3
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -2831,18 +2832,18 @@ x 20
 y 6
 end
 arch woodfloor
-unique 1
 x 20
 y 7
+unique 1
 end
 arch dungeon_magic
 x 20
 y 7
 end
 arch woodfloor
-unique 1
 x 20
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 20
@@ -2898,9 +2899,9 @@ arch dungeon_magic
 x 21
 end
 arch woodfloor
-unique 1
 x 21
 y 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -2913,32 +2914,32 @@ x 21
 y 1
 end
 arch woodfloor
-unique 1
 x 21
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 11
 x 21
 y 2
+connected 11
 end
 arch dungeon_magic
 x 21
 y 2
 end
 arch woodfloor
-unique 1
 x 21
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 11
 slaying gem
 food 30000
-connected 11
+x 21
+y 3
 last_sp 1
-x 21
-y 3
+connected 11
 end
 arch dungeon_magic
 x 21
@@ -2969,41 +2970,41 @@ x 21
 y 6
 end
 arch woodfloor
-unique 1
 x 21
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 24
 slaying gem
 food 30000
-connected 24
-last_sp 1
 x 21
 y 7
+last_sp 1
+connected 24
 end
 arch dungeon_magic
 x 21
 y 7
 end
 arch woodfloor
-unique 1
 x 21
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 24
 x 21
 y 8
+connected 24
 end
 arch dungeon_magic
 x 21
 y 8
 end
 arch woodfloor
-unique 1
 x 21
 y 9
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -3061,9 +3062,9 @@ x 22
 y 1
 end
 arch woodfloor
-unique 1
 x 22
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 22
@@ -3074,9 +3075,9 @@ x 22
 y 2
 end
 arch woodfloor
-unique 1
 x 22
 y 3
+unique 1
 end
 arch dungeon_magic
 x 22
@@ -3107,18 +3108,18 @@ x 22
 y 6
 end
 arch woodfloor
-unique 1
 x 22
 y 7
+unique 1
 end
 arch dungeon_magic
 x 22
 y 7
 end
 arch woodfloor
-unique 1
 x 22
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 22
@@ -3174,9 +3175,9 @@ arch dungeon_magic
 x 23
 end
 arch woodfloor
-unique 1
 x 23
 y 1
+unique 1
 end
 arch dungeon_magic
 x 23
@@ -3189,32 +3190,32 @@ x 23
 y 1
 end
 arch woodfloor
-unique 1
 x 23
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 12
 x 23
 y 2
+connected 12
 end
 arch dungeon_magic
 x 23
 y 2
 end
 arch woodfloor
-unique 1
 x 23
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 12
 slaying gem
 food 30000
-connected 12
+x 23
+y 3
 last_sp 1
-x 23
-y 3
+connected 12
 end
 arch dungeon_magic
 x 23
@@ -3245,41 +3246,41 @@ x 23
 y 6
 end
 arch woodfloor
-unique 1
 x 23
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 25
 slaying gem
 food 30000
-connected 25
-last_sp 1
 x 23
 y 7
+last_sp 1
+connected 25
 end
 arch dungeon_magic
 x 23
 y 7
 end
 arch woodfloor
-unique 1
 x 23
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 25
 x 23
 y 8
+connected 25
 end
 arch dungeon_magic
 x 23
 y 8
 end
 arch woodfloor
-unique 1
 x 23
 y 9
+unique 1
 end
 arch dungeon_magic
 x 23
@@ -3337,9 +3338,9 @@ x 24
 y 1
 end
 arch woodfloor
-unique 1
 x 24
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 24
@@ -3350,9 +3351,9 @@ x 24
 y 2
 end
 arch woodfloor
-unique 1
 x 24
 y 3
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -3383,18 +3384,18 @@ x 24
 y 6
 end
 arch woodfloor
-unique 1
 x 24
 y 7
+unique 1
 end
 arch dungeon_magic
 x 24
 y 7
 end
 arch woodfloor
-unique 1
 x 24
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 24
@@ -3450,9 +3451,9 @@ arch dungeon_magic
 x 25
 end
 arch woodfloor
-unique 1
 x 25
 y 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -3465,32 +3466,32 @@ x 25
 y 1
 end
 arch woodfloor
-unique 1
 x 25
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 13
 x 25
 y 2
+connected 13
 end
 arch dungeon_magic
 x 25
 y 2
 end
 arch woodfloor
-unique 1
 x 25
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 13
 slaying gem
 food 30000
-connected 13
+x 25
+y 3
 last_sp 1
-x 25
-y 3
+connected 13
 end
 arch dungeon_magic
 x 25
@@ -3521,41 +3522,41 @@ x 25
 y 6
 end
 arch woodfloor
-unique 1
 x 25
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 26
 slaying gem
 food 30000
-connected 26
-last_sp 1
 x 25
 y 7
+last_sp 1
+connected 26
 end
 arch dungeon_magic
 x 25
 y 7
 end
 arch woodfloor
-unique 1
 x 25
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 26
 x 25
 y 8
+connected 26
 end
 arch dungeon_magic
 x 25
 y 8
 end
 arch woodfloor
-unique 1
 x 25
 y 9
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -3613,9 +3614,9 @@ x 26
 y 1
 end
 arch woodfloor
-unique 1
 x 26
 y 2
+unique 1
 end
 arch flagstone_1_2
 x 26
@@ -3626,9 +3627,9 @@ x 26
 y 2
 end
 arch woodfloor
-unique 1
 x 26
 y 3
+unique 1
 end
 arch dungeon_magic
 x 26
@@ -3659,18 +3660,18 @@ x 26
 y 6
 end
 arch woodfloor
-unique 1
 x 26
 y 7
+unique 1
 end
 arch dungeon_magic
 x 26
 y 7
 end
 arch woodfloor
-unique 1
 x 26
 y 8
+unique 1
 end
 arch flagstone_1_1
 x 26
@@ -3726,9 +3727,9 @@ arch dungeon_magic
 x 27
 end
 arch woodfloor
-unique 1
 x 27
 y 1
+unique 1
 end
 arch dungeon_magic
 x 27
@@ -3741,32 +3742,32 @@ x 27
 y 1
 end
 arch woodfloor
-unique 1
 x 27
 y 2
+unique 1
 end
 arch grate_closed_1
-connected 14
 x 27
 y 2
+connected 14
 end
 arch dungeon_magic
 x 27
 y 2
 end
 arch woodfloor
-unique 1
 x 27
 y 3
+unique 1
 end
 arch altar_trigger
 name pshop 14
 slaying gem
 food 30000
-connected 14
+x 27
+y 3
 last_sp 1
-x 27
-y 3
+connected 14
 end
 arch dungeon_magic
 x 27
@@ -3797,41 +3798,41 @@ x 27
 y 6
 end
 arch woodfloor
-unique 1
 x 27
 y 7
+unique 1
 end
 arch altar_trigger
 name pshop 27
 slaying gem
 food 30000
-connected 27
-last_sp 1
 x 27
 y 7
+last_sp 1
+connected 27
 end
 arch dungeon_magic
 x 27
 y 7
 end
 arch woodfloor
-unique 1
 x 27
 y 8
+unique 1
 end
 arch grate_closed_1
-connected 27
 x 27
 y 8
+connected 27
 end
 arch dungeon_magic
 x 27
 y 8
 end
 arch woodfloor
-unique 1
 x 27
 y 9
+unique 1
 end
 arch dungeon_magic
 x 27
@@ -3932,9 +3933,9 @@ end
 arch dun0
 name Elite Dragon Guard
 face pl_dragon_bl.151
-blocksview 0
 x 28
 y 4
+blocksview 0
 end
 arch woodfloor
 x 28
@@ -3947,10 +3948,10 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 28
 y 5
+no_pass 0
+can_roll 0
 end
 arch woodfloor
 x 28
@@ -3963,9 +3964,9 @@ end
 arch dun0
 name Elite Dragon Guard
 face pl_dragon_bl.151
-blocksview 0
 x 28
 y 6
+blocksview 0
 end
 arch woodfloor
 x 28
@@ -4224,10 +4225,10 @@ end
 arch rock
 name carpet
 face hide_white.111
-no_pass 0
-can_roll 0
 x 30
 y 5
+no_pass 0
+can_roll 0
 end
 arch dungeon_magic
 x 30
@@ -4307,9 +4308,9 @@ x 31
 y 1
 end
 arch bookshelf
-no_pick 1
 x 31
 y 1
+no_pick 1
 end
 arch dungeon_magic
 x 31
@@ -4376,15 +4377,15 @@ x 31
 y 9
 end
 arch table
-no_pick 1
 x 31
 y 9
+no_pick 1
 end
 arch dragon_steak
-no_pick 1
 food 0
 x 31
 y 9
+no_pick 1
 end
 arch dungeon_magic
 x 31
@@ -4417,10 +4418,10 @@ end
 arch teleporter
 hp 31
 sp 6
-connected 100
-speed 0.0
 x 31
 y 13
+speed 0.0
+connected 100
 end
 arch rose_red
 name dozen red roses
@@ -4455,10 +4456,10 @@ end
 arch rock
 name carpet
 face hide_black.111
-no_pass 0
-can_roll 0
 x 32
 y 2
+no_pass 0
+can_roll 0
 end
 arch dungeon_magic
 x 32
@@ -4504,35 +4505,35 @@ Manager says:
 Thanks!
 Dragons collect treasure you know..
 endmsg
+x 32
+y 6
 connected 101
 walk_on 0
 fly_on 0
-x 32
-y 6
 end
 arch altar
 slaying Contract Pen
 food 1
-connected 101
 x 32
 y 6
+connected 101
 end
 arch woodfloor2
 x 32
 y 6
 end
 arch wizdesk
-no_pick 1
 x 32
 y 6
+no_pick 1
 end
 arch rock
 name Contract
 face scrollr.111
-no_pass 0
-can_roll 0
 x 32
 y 6
+no_pass 0
+can_roll 0
 end
 arch dungeon_magic
 x 32
@@ -4560,9 +4561,9 @@ arch magic_ear
 msg
 @match hi|Hi|Hello|hello
 endmsg
-connected 100
 x 32
 y 7
+connected 100
 end
 arch woodfloor2
 x 32
@@ -4579,9 +4580,9 @@ end
 arch dun0
 name Manager
 face pl_dragon_g.151
-blocksview 0
 x 32
 y 7
+blocksview 0
 end
 arch woodfloor2
 x 32
@@ -4596,14 +4597,14 @@ x 32
 y 9
 end
 arch table
-no_pick 1
 x 32
 y 9
+no_pick 1
 end
 arch booze
-no_pick 1
 x 32
 y 9
+no_pick 1
 end
 arch dungeon_magic
 x 32
@@ -4632,10 +4633,10 @@ end
 arch teleporter
 hp 31
 sp 8
-connected 101
-speed 0.0
 x 32
 y 12
+speed 0.0
+connected 101
 end
 arch random_potion
 x 32
@@ -4659,9 +4660,9 @@ x 33
 y 1
 end
 arch bookshelf
-no_pick 1
 x 33
 y 1
+no_pick 1
 end
 arch dungeon_magic
 x 33
@@ -4728,14 +4729,14 @@ x 33
 y 9
 end
 arch table
-no_pick 1
 x 33
 y 9
+no_pick 1
 end
 arch dragon_steak
-no_pick 1
 x 33
 y 9
+no_pick 1
 end
 arch dungeon_magic
 x 33
@@ -4764,10 +4765,10 @@ end
 arch teleporter
 hp 32
 sp 8
-connected 101
-speed 0.0
 x 33
 y 12
+speed 0.0
+connected 101
 end
 arch random_spells
 x 33
@@ -4791,9 +4792,9 @@ x 34
 y 1
 end
 arch bookshelf
-no_pick 1
 x 34
 y 1
+no_pick 1
 end
 arch dungeon_magic
 x 34
@@ -4836,9 +4837,9 @@ x 34
 y 5
 end
 arch clock
-no_pick 1
 x 34
 y 5
+no_pick 1
 end
 arch dungeon_magic
 x 34
@@ -4911,10 +4912,10 @@ end
 arch teleporter
 hp 33
 sp 8
-connected 101
-speed 0.0
 x 34
 y 12
+speed 0.0
+connected 101
 end
 arch random_gem
 x 34
