@@ -1,3 +1,375 @@
+2007-03-16 03:09  rjtanner
+
+	* templates/guild/guild_bbq, templates/guild/mainfloor: Cosmetic
+	  updates to the guild template main floor (swall surrounding the
+	  bbq area). Change in functionality with the guild bbq - now a
+	  stand alone map. This should improve the chances of the bbq map
+	  actually resetting to remove any broken or cursed stoves if they
+	  should appear during normal player use.
+
+2007-03-16 02:08  rjtanner
+
+	* brest/pshops/pshop21/basement, brest/pshops/pshop21/floor1,
+	  brest/pshops/pshop21/floor2, brest/pshops/pshop21/gfloor,
+	  brest/pshops/pshop22/basement, brest/pshops/pshop22/floor1,
+	  brest/pshops/pshop22/floor2, brest/pshops/pshop22/gfloor,
+	  brest/pshops/pshop23/basement, brest/pshops/pshop23/floor1,
+	  brest/pshops/pshop23/floor2, brest/pshops/pshop23/gfloor,
+	  brest/pshops/pshop24/basement, brest/pshops/pshop24/floor1,
+	  brest/pshops/pshop24/floor2, brest/pshops/pshop24/gfloor,
+	  brest/pshops/pshop25/basement, brest/pshops/pshop25/floor1,
+	  brest/pshops/pshop25/floor2, brest/pshops/pshop25/gfloor,
+	  brest/pshops/pshop26/basement, brest/pshops/pshop26/floor1,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop26/gfloor,
+	  brest/pshops/pshop27/basement, brest/pshops/pshop27/floor1,
+	  brest/pshops/pshop27/floor2, brest/pshops/pshop27/gfloor: Map
+	  Editor reformatting and stack order reorganization - moving
+	  magic mouth below floor tiles so it's not visible with the see
+	  invis spell
+
+2007-03-15 23:30  eracc
+
+	* maps/branches/1.x/world/world_107_123, world/world_107_123: Fix
+	  the spot where guild portals send one near brest. Now contains a
+	  "landing pad" there with a road.
+
+2007-03-15 19:42  eracc
+
+	* maps/branches/1.x/scorn/temples/mostrai2,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf01,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf02,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf03,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf04,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf05,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf06,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf07,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf08,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf09,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf10,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf11,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf12,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf13,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf14,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf15,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf16,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf17,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf18,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf19,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf20,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf21,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf22,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf23,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf24,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf25,
+	  scorn/temples/mostrai2, styles/monsterstyles/dwarf/dwarf01,
+	  styles/monsterstyles/dwarf/dwarf02,
+	  styles/monsterstyles/dwarf/dwarf03,
+	  styles/monsterstyles/dwarf/dwarf04,
+	  styles/monsterstyles/dwarf/dwarf05,
+	  styles/monsterstyles/dwarf/dwarf06,
+	  styles/monsterstyles/dwarf/dwarf07,
+	  styles/monsterstyles/dwarf/dwarf08,
+	  styles/monsterstyles/dwarf/dwarf09,
+	  styles/monsterstyles/dwarf/dwarf10,
+	  styles/monsterstyles/dwarf/dwarf11,
+	  styles/monsterstyles/dwarf/dwarf12,
+	  styles/monsterstyles/dwarf/dwarf13,
+	  styles/monsterstyles/dwarf/dwarf14,
+	  styles/monsterstyles/dwarf/dwarf15,
+	  styles/monsterstyles/dwarf/dwarf16,
+	  styles/monsterstyles/dwarf/dwarf17,
+	  styles/monsterstyles/dwarf/dwarf18,
+	  styles/monsterstyles/dwarf/dwarf19,
+	  styles/monsterstyles/dwarf/dwarf20,
+	  styles/monsterstyles/dwarf/dwarf21,
+	  styles/monsterstyles/dwarf/dwarf22,
+	  styles/monsterstyles/dwarf/dwarf23,
+	  styles/monsterstyles/dwarf/dwarf24,
+	  styles/monsterstyles/dwarf/dwarf25: Cosmetic and monster
+	  aggressiveness changes to Mostrai random.
+
+2007-03-15 17:44  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.mainfloor,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.one,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.mainfloor, brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.two: More tweaks to Zorn Castle.
+	  If the generator abuse on floor two does not stop
+	  with this fix I will (reluctantly) remove the generators.
+
+2007-03-15 05:21  rjtanner
+
+	* brest/pshops/pshop1/basement, brest/pshops/pshop1/floor1,
+	  brest/pshops/pshop1/floor2, brest/pshops/pshop1/gfloor,
+	  brest/pshops/pshop10/basement, brest/pshops/pshop10/floor1,
+	  brest/pshops/pshop10/floor2, brest/pshops/pshop10/gfloor,
+	  brest/pshops/pshop11/basement, brest/pshops/pshop11/floor1,
+	  brest/pshops/pshop11/floor2, brest/pshops/pshop11/gfloor,
+	  brest/pshops/pshop12/basement, brest/pshops/pshop12/floor1,
+	  brest/pshops/pshop12/floor2, brest/pshops/pshop12/gfloor,
+	  brest/pshops/pshop13/basement, brest/pshops/pshop13/floor1,
+	  brest/pshops/pshop13/floor2, brest/pshops/pshop13/gfloor,
+	  brest/pshops/pshop14/basement, brest/pshops/pshop14/floor1,
+	  brest/pshops/pshop14/floor2, brest/pshops/pshop14/gfloor,
+	  brest/pshops/pshop15/basement, brest/pshops/pshop15/floor1,
+	  brest/pshops/pshop15/floor2, brest/pshops/pshop15/gfloor,
+	  brest/pshops/pshop16/basement, brest/pshops/pshop16/floor1,
+	  brest/pshops/pshop16/floor2, brest/pshops/pshop16/gfloor,
+	  brest/pshops/pshop17/basement, brest/pshops/pshop17/floor1,
+	  brest/pshops/pshop17/floor2, brest/pshops/pshop17/gfloor,
+	  brest/pshops/pshop18/basement, brest/pshops/pshop18/floor1,
+	  brest/pshops/pshop18/floor2, brest/pshops/pshop18/gfloor,
+	  brest/pshops/pshop19/basement, brest/pshops/pshop19/floor1,
+	  brest/pshops/pshop19/floor2, brest/pshops/pshop19/gfloor,
+	  brest/pshops/pshop20/basement, brest/pshops/pshop20/floor1,
+	  brest/pshops/pshop20/floor2, brest/pshops/pshop20/gfloor,
+	  brest/pshops/pshops_main, brest/pshops/pshopsinc,
+	  brest/pshops/pshopsinc2, brest/pshops/ugriver1: Map Editor
+	  reformatting and map name updates. Cosmetic updates with how
+	  'swall' merges with adjacent walls on the second floor in the
+	  playershop purchase area. I still have the other half of the
+	  maps to finish up on.
+
+2007-03-15 02:06  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Fixing my errors, as usual.
+
+2007-03-15 01:57  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: More changes to the alarm
+	  system. More things disappear now, more things appear
+	  now.
+
+2007-03-14 14:22  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Fix the magic mouths that
+	  warn the players on certain events to only activate
+	  on push and not on release.
+
+2007-03-14 01:52  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Repairing more mistakes.
+
+2007-03-14 01:41  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Fixing a design error with
+	  the security gates.
+
+2007-03-14 01:35  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: A suggestion was made to
+	  protect unwary players that may wander onto the map
+	  after the alarm was triggered. This was done. Also cosmetic
+	  changes.
+
+2007-03-14 00:27  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Fixing an error that doubled
+	  the number of guards wanted. Also the gates did
+	  not wark as intended. Fixed.
+
+2007-03-14 00:14  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Some people just don't take
+	  hints about hanging around in Zorn Castle. So, the
+	  Zorn family has installed an alarm system and security guards
+	  for those that
+	  overstay their welcome.
+
+2007-03-13 01:11  eracc
+
+	* maps/branches/1.x/scorn/temples/mostrai, scorn/temples/mostrai:
+	  Added a message about the draven "mines" to one of the temple
+	  NPCs.
+
+2007-03-13 01:06  eracc
+
+	* maps/branches/1.x/scorn/temples/mostrai2,
+	  scorn/temples/mostrai2: Changes to the Mostrai random dungeon in
+	  Scorn. Attempt to fix the increase
+	  in difficulty.
+
+2007-03-13 00:46  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/cloudworlddecity,
+	  mlab/citydeclouds/shops/cwdctrademarket: Merge in, hopefully the
+	  last, of the missing maps for this region. Correct map paths
+	  for other maps.
+
+2007-03-12 23:02  eracc
+
+	* maps/branches/1.x/scorn/temples/mostrai2,
+	  maps/branches/1.x/styles/monsterstyles/dwarf,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf01,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf02,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf03,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf04,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf05,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf06,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf07,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf08,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf09,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf10,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf11,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf12,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf13,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf14,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf15,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf16,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf17,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf18,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf19,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf20,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf21,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf22,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf23,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf24,
+	  maps/branches/1.x/styles/monsterstyles/dwarf/dwarf25,
+	  scorn/temples/mostrai2, styles/monsterstyles/dwarf,
+	  styles/monsterstyles/dwarf/dwarf01,
+	  styles/monsterstyles/dwarf/dwarf02,
+	  styles/monsterstyles/dwarf/dwarf03,
+	  styles/monsterstyles/dwarf/dwarf04,
+	  styles/monsterstyles/dwarf/dwarf05,
+	  styles/monsterstyles/dwarf/dwarf06,
+	  styles/monsterstyles/dwarf/dwarf07,
+	  styles/monsterstyles/dwarf/dwarf08,
+	  styles/monsterstyles/dwarf/dwarf09,
+	  styles/monsterstyles/dwarf/dwarf10,
+	  styles/monsterstyles/dwarf/dwarf11,
+	  styles/monsterstyles/dwarf/dwarf12,
+	  styles/monsterstyles/dwarf/dwarf13,
+	  styles/monsterstyles/dwarf/dwarf14,
+	  styles/monsterstyles/dwarf/dwarf15,
+	  styles/monsterstyles/dwarf/dwarf16,
+	  styles/monsterstyles/dwarf/dwarf17,
+	  styles/monsterstyles/dwarf/dwarf18,
+	  styles/monsterstyles/dwarf/dwarf19,
+	  styles/monsterstyles/dwarf/dwarf20,
+	  styles/monsterstyles/dwarf/dwarf21,
+	  styles/monsterstyles/dwarf/dwarf22,
+	  styles/monsterstyles/dwarf/dwarf23,
+	  styles/monsterstyles/dwarf/dwarf24,
+	  styles/monsterstyles/dwarf/dwarf25: Add a new random dungeon to
+	  the Mostrai temple in Scorn.
+	  A place to harvest mithril crystals. :-)
+
+2007-03-12 04:52  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Removed road tiles that lead
+	  to 'nowhere' and placed fences to close off the area, which now
+	  looks like just another stop vs an unfinished map section
+
+2007-03-12 04:37  rjtanner
+
+	* mlab/citydeclouds/apartment,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2,
+	  mlab/citydeclouds/cloudworlddecity, mlab/citydeclouds/keep,
+	  mlab/citydeclouds/keep/cwdcrandkeep1: Merge in missing maps
+	  (personal apartments) and updating the map paths in the city map
+	  that contains them
+
+2007-03-12 02:57  eracc
+
+	* maps/branches/1.x/brest/shops/a_small_shop,
+	  brest/shops/a_small_shop: Bumped up the spell level to 300. High
+	  level players still not able to use the
+	  booth well.
+
+2007-03-12 02:49  eracc
+
+	* maps/branches/1.x/brest/shops/a_small_shop,
+	  brest/shops/a_small_shop: Bump up the level of the cancellation
+	  spell for high level players.
+
+2007-03-12 01:43  eracc
+
+	* maps/branches/1.x/brest/shops/a_small_shop,
+	  maps/branches/1.x/world/world_107_123, brest/shops/a_small_shop,
+	  world/world_107_123: Fixed the shop entrance coordinates and
+	  removed the wall blocking the spell
+	  casting walls.
+
+2007-03-11 23:01  eracc
+
+	* maps/branches/1.x/brest/shops/a_small_shop,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.one,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.three,
+	  maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  maps/branches/1.x/world/world_107_123, brest/shops/a_small_shop,
+	  brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two, world/world_107_123: More
+	  fixes to Zorn Castle.
+	  Add a new shop to Brest that has a "cancellation booth" and
+	  "mana crystal"
+	  booths (to recharge mana crystals.
+
+2007-03-11 09:19  rjtanner
+
+	* mlab/citydeclouds/cwdcguestofmarquis1: Merge in missing map,
+	  Guest House of the Marquis
+
+2007-03-11 09:13  rjtanner
+
+	* mlab/citydeclouds/castle, mlab/citydeclouds/castle/cwdccastleb1,
+	  mlab/citydeclouds/castle/cwdccastleb10,
+	  mlab/citydeclouds/castle/cwdccastleb11,
+	  mlab/citydeclouds/castle/cwdccastleb12,
+	  mlab/citydeclouds/castle/cwdccastleb13,
+	  mlab/citydeclouds/castle/cwdccastleb14,
+	  mlab/citydeclouds/castle/cwdccastleb15,
+	  mlab/citydeclouds/castle/cwdccastleb16,
+	  mlab/citydeclouds/castle/cwdccastleb17,
+	  mlab/citydeclouds/castle/cwdccastleb18,
+	  mlab/citydeclouds/castle/cwdccastleb19,
+	  mlab/citydeclouds/castle/cwdccastleb2,
+	  mlab/citydeclouds/castle/cwdccastleb20,
+	  mlab/citydeclouds/castle/cwdccastleb21,
+	  mlab/citydeclouds/castle/cwdccastleb3,
+	  mlab/citydeclouds/castle/cwdccastleb4,
+	  mlab/citydeclouds/castle/cwdccastleb5,
+	  mlab/citydeclouds/castle/cwdccastleb6,
+	  mlab/citydeclouds/castle/cwdccastleb7,
+	  mlab/citydeclouds/castle/cwdccastleb8,
+	  mlab/citydeclouds/castle/cwdccastleb9,
+	  mlab/citydeclouds/castle/cwdccastlechoswld1,
+	  mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/castle/cwdccastlef2,
+	  mlab/citydeclouds/castle/cwdccastlef3,
+	  mlab/citydeclouds/castle/cwdccastlef4,
+	  mlab/citydeclouds/castle/cwdccastlef5,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis1,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis2,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis3,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis4,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis5,
+	  mlab/citydeclouds/castle/cwdccastleofmarquisb1,
+	  mlab/citydeclouds/cloudworlddecity: Merge in missing maps,
+	  update exit (entrance) map paths, maps renamed for better
+	  consistency
+
+2007-03-11 07:27  rjtanner
+
+	* ChangeLog: ChangeLog updates
+
 2007-03-11 07:16  rjtanner
 
 	* mlab/citydeclouds/cloudworlddecity, mlab/citydeclouds/misc,
