@@ -1,0 +1,972 @@
+arch map
+name Guild Hall BBQ
+difficulty 1
+width 11
+height 11
+msg
+Creator: CF Java Map Editor
+Date:    3/15/2007
+endmsg
+outdoor 1
+end
+arch grass
+unique 1
+end
+arch ant
+end
+arch grass
+y 1
+end
+arch tree4
+y 1
+blocksview 1
+end
+arch grass
+y 2
+unique 1
+end
+arch grass
+y 3
+unique 1
+end
+arch tree4
+y 3
+blocksview 1
+end
+arch grass
+y 4
+unique 1
+end
+arch grass
+y 5
+unique 1
+end
+arch tree4
+y 5
+blocksview 1
+end
+arch grass
+y 6
+unique 1
+end
+arch war_ant
+y 6
+end
+arch grass
+y 7
+unique 1
+end
+arch tree4
+y 7
+blocksview 1
+end
+arch grass
+y 8
+unique 1
+end
+arch grass
+y 9
+unique 1
+end
+arch xan
+y 9
+end
+arch grass
+y 10
+unique 1
+end
+arch grass
+x 1
+unique 1
+end
+arch flagstone
+x 1
+y 1
+unique 1
+end
+arch swall_2_2_2
+x 1
+y 1
+end
+arch flagstone
+x 1
+y 2
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 2
+end
+arch flagstone
+x 1
+y 3
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 3
+end
+arch flagstone
+x 1
+y 4
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 4
+end
+arch flagstone
+x 1
+y 5
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 5
+end
+arch flagstone
+x 1
+y 6
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 6
+end
+arch flagstone
+x 1
+y 7
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 7
+end
+arch flagstone
+x 1
+y 8
+unique 1
+end
+arch swall_2_1_1
+x 1
+y 8
+end
+arch flagstone
+x 1
+y 9
+unique 1
+end
+arch swall_2_2_1
+x 1
+y 9
+end
+arch grass
+x 1
+y 10
+unique 1
+end
+arch grass
+x 2
+end
+arch ytree_2
+x 2
+no_pass 1
+end
+arch flagstone
+x 2
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 2
+y 1
+end
+arch dirtfloor
+x 2
+y 2
+unique 1
+end
+arch hedge
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+unique 1
+end
+arch flagstone
+x 2
+y 4
+unique 1
+end
+arch chair_cw_1.4
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
+unique 1
+end
+arch chair_cw_1.4
+x 2
+y 5
+end
+arch light4
+x 2
+y 5
+end
+arch flagstone
+x 2
+y 6
+unique 1
+end
+arch chair_cw_1.4
+x 2
+y 6
+end
+arch flagstone
+x 2
+y 7
+unique 1
+end
+arch dirtfloor
+x 2
+y 8
+unique 1
+end
+arch hedge
+x 2
+y 8
+end
+arch flagstone
+x 2
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 2
+y 9
+end
+arch grass
+x 2
+y 10
+unique 1
+end
+arch grass
+x 3
+unique 1
+end
+arch flagstone
+x 3
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 3
+y 1
+end
+arch flagstone
+x 3
+y 2
+unique 1
+end
+arch firepot
+x 3
+y 2
+end
+arch flagstone
+x 3
+y 3
+unique 1
+end
+arch chair_cw_1.1
+x 3
+y 3
+end
+arch flagstone
+x 3
+y 4
+unique 1
+end
+arch longtable_1_1
+x 3
+y 4
+end
+arch flagstone
+x 3
+y 5
+unique 1
+end
+arch longtable_2_1_1
+x 3
+y 5
+end
+arch flagstone
+x 3
+y 6
+unique 1
+end
+arch longtable_1_2
+x 3
+y 6
+end
+arch flagstone
+x 3
+y 7
+unique 1
+end
+arch chair_cw_1.3
+x 3
+y 7
+end
+arch flagstone
+x 3
+y 8
+unique 1
+end
+arch firepot
+x 3
+y 8
+end
+arch flagstone
+x 3
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 3
+y 9
+end
+arch grass
+x 3
+y 10
+unique 1
+end
+arch grass
+x 4
+unique 1
+end
+arch flagstone
+x 4
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 4
+y 1
+end
+arch flagstone
+x 4
+y 2
+unique 1
+end
+arch flagstone
+x 4
+y 3
+unique 1
+end
+arch flagstone
+x 4
+y 4
+unique 1
+end
+arch chair_cw_1.2
+x 4
+y 4
+end
+arch flagstone
+x 4
+y 5
+unique 1
+end
+arch chair_cw_1.2
+x 4
+y 5
+end
+arch flagstone
+x 4
+y 6
+unique 1
+end
+arch chair_cw_1.2
+x 4
+y 6
+end
+arch flagstone
+x 4
+y 7
+unique 1
+end
+arch flagstone
+x 4
+y 8
+unique 1
+end
+arch table
+x 4
+y 8
+end
+arch dragon_steak
+name aging steak
+food 0
+x 4
+y 8
+value 1
+map_layer item
+no_pick 1
+startequip 1
+end
+arch orcchop
+x 4
+y 8
+map_layer item
+no_pick 1
+startequip 1
+end
+arch flagstone
+x 4
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 4
+y 9
+end
+arch grass
+x 4
+y 10
+unique 1
+end
+arch dungeon_magic
+x 5
+end
+arch footpath_2_1_1
+x 5
+end
+arch dungeon_magic
+x 5
+y 1
+end
+arch flagstone
+x 5
+y 1
+unique 1
+end
+arch ggate_closed
+x 5
+y 1
+connected 112
+end
+arch invis_exit
+slaying mainfloor
+hp 23
+sp 23
+x 5
+y 1
+end
+arch flagstone
+x 5
+y 2
+unique 1
+end
+arch mat
+x 5
+y 2
+end
+arch pedestal
+x 5
+y 2
+invisible 1
+connected 112
+end
+arch flagstone
+x 5
+y 3
+unique 1
+end
+arch light4
+x 5
+y 3
+end
+arch flagstone
+x 5
+y 4
+unique 1
+end
+arch flagstone
+x 5
+y 5
+unique 1
+end
+arch flagstone
+x 5
+y 6
+unique 1
+end
+arch flagstone
+x 5
+y 7
+unique 1
+end
+arch flagstone
+x 5
+y 8
+unique 1
+end
+arch stove
+x 5
+y 8
+end
+arch flagstone
+x 5
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 5
+y 9
+end
+arch grass
+x 5
+y 10
+unique 1
+end
+arch light4
+x 5
+y 10
+end
+arch grass
+x 6
+unique 1
+end
+arch flagstone
+x 6
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 6
+y 1
+end
+arch flagstone
+x 6
+y 2
+unique 1
+end
+arch flagstone
+x 6
+y 3
+unique 1
+end
+arch flagstone
+x 6
+y 4
+unique 1
+end
+arch chair_cw_1.4
+x 6
+y 4
+end
+arch flagstone
+x 6
+y 5
+unique 1
+end
+arch chair_cw_1.4
+x 6
+y 5
+end
+arch flagstone
+x 6
+y 6
+unique 1
+end
+arch chair_cw_1.4
+x 6
+y 6
+end
+arch flagstone
+x 6
+y 7
+unique 1
+end
+arch flagstone
+x 6
+y 8
+unique 1
+end
+arch barrel
+x 6
+y 8
+end
+arch flagstone
+x 6
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 6
+y 9
+end
+arch grass
+x 6
+y 10
+unique 1
+end
+arch grass
+x 7
+unique 1
+end
+arch flagstone
+x 7
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 7
+y 1
+end
+arch flagstone
+x 7
+y 2
+unique 1
+end
+arch firepot
+x 7
+y 2
+end
+arch flagstone
+x 7
+y 3
+unique 1
+end
+arch chair_cw_1.1
+x 7
+y 3
+end
+arch flagstone
+x 7
+y 4
+unique 1
+end
+arch longtable_1_1
+x 7
+y 4
+end
+arch flagstone
+x 7
+y 5
+unique 1
+end
+arch longtable_2_1_1
+x 7
+y 5
+end
+arch flagstone
+x 7
+y 6
+unique 1
+end
+arch longtable_1_2
+x 7
+y 6
+end
+arch flagstone
+x 7
+y 7
+unique 1
+end
+arch chair_cw_1.3
+x 7
+y 7
+end
+arch flagstone
+x 7
+y 8
+unique 1
+end
+arch firepot
+x 7
+y 8
+end
+arch flagstone
+x 7
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 7
+y 9
+end
+arch grass
+x 7
+y 10
+unique 1
+end
+arch xan
+x 7
+y 10
+end
+arch grass
+x 8
+unique 1
+end
+arch ytree_2
+x 8
+no_pass 1
+end
+arch flagstone
+x 8
+y 1
+unique 1
+end
+arch swall_2_1_2
+x 8
+y 1
+end
+arch dirtfloor
+x 8
+y 2
+unique 1
+end
+arch hedge
+x 8
+y 2
+end
+arch flagstone
+x 8
+y 3
+unique 1
+end
+arch flagstone
+x 8
+y 4
+unique 1
+end
+arch chair_cw_1.2
+x 8
+y 4
+end
+arch flagstone
+x 8
+y 5
+unique 1
+end
+arch chair_cw_1.2
+x 8
+y 5
+end
+arch light4
+x 8
+y 5
+end
+arch flagstone
+x 8
+y 6
+unique 1
+end
+arch chair_cw_1.2
+x 8
+y 6
+end
+arch flagstone
+x 8
+y 7
+unique 1
+end
+arch dirtfloor
+x 8
+y 8
+unique 1
+end
+arch hedge
+x 8
+y 8
+end
+arch flagstone
+x 8
+y 9
+unique 1
+end
+arch swall_2_1_2
+x 8
+y 9
+end
+arch grass
+x 8
+y 10
+unique 1
+end
+arch grass
+x 9
+unique 1
+end
+arch flagstone
+x 9
+y 1
+unique 1
+end
+arch swall_2_2_3
+x 9
+y 1
+end
+arch flagstone
+x 9
+y 2
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 2
+end
+arch flagstone
+x 9
+y 3
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 3
+end
+arch flagstone
+x 9
+y 4
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 4
+end
+arch flagstone
+x 9
+y 5
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 5
+end
+arch flagstone
+x 9
+y 6
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 6
+end
+arch flagstone
+x 9
+y 7
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 7
+end
+arch flagstone
+x 9
+y 8
+unique 1
+end
+arch swall_2_1_1
+x 9
+y 8
+end
+arch flagstone
+x 9
+y 9
+unique 1
+end
+arch swall_2_2_4
+x 9
+y 9
+end
+arch grass
+x 9
+y 10
+unique 1
+end
+arch grass
+x 10
+unique 1
+end
+arch work_ant
+x 10
+end
+arch grass
+x 10
+y 1
+unique 1
+end
+arch tree4
+x 10
+y 1
+blocksview 1
+end
+arch grass
+x 10
+y 2
+unique 1
+end
+arch grass
+x 10
+y 3
+unique 1
+end
+arch tree4
+x 10
+y 3
+blocksview 1
+end
+arch grass
+x 10
+y 4
+unique 1
+end
+arch grass
+x 10
+y 5
+unique 1
+end
+arch tree4
+x 10
+y 5
+blocksview 1
+end
+arch grass
+x 10
+y 6
+unique 1
+end
+arch ant
+x 10
+y 6
+end
+arch grass
+x 10
+y 7
+unique 1
+end
+arch tree4
+x 10
+y 7
+blocksview 1
+end
+arch grass
+x 10
+y 8
+unique 1
+end
+arch grass
+x 10
+y 9
+unique 1
+end
+arch grass
+x 10
+y 10
+unique 1
+end
