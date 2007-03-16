@@ -6595,7 +6595,7 @@ x 22
 y 24
 unique 1
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 24
 end
@@ -6868,16 +6868,21 @@ x 23
 y 24
 connected 112
 end
+arch dungeon_magic
+x 23
+y 25
+end
 arch flagstone
 x 23
 y 25
 unique 1
 end
-arch pedestal
+arch invis_exit
+slaying guild_bbq
+hp 5
+sp 3
 x 23
 y 25
-invisible 1
-connected 112
 end
 arch flagstone
 x 23
@@ -7128,7 +7133,7 @@ x 24
 y 24
 unique 1
 end
-arch swall_1_4
+arch swall_2_1_2
 x 24
 y 24
 end
@@ -7390,6 +7395,7 @@ end
 arch grass
 x 25
 y 23
+unique 1
 end
 arch trigger_marker
 slaying guild_bbq111
