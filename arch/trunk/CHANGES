@@ -1,5 +1,8 @@
 Changes for SVN top of tree:
 
+Make event_xxx invisible, avoids many issues in the object handling
+routines.
+---
 Start splitting server/lib/treasures file in many files.
 Rename player class files/random items for coherence.
 Nicolas Weeger 2007-03-17
