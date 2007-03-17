@@ -1,7 +1,7 @@
 Object generate_zombie
 race undead
 other_arch zombie
-randomitems grave
+randomitems generate_zombie
 name generator
 generator 1
 alive 1
