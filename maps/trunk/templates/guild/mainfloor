@@ -2125,6 +2125,14 @@ arch light4
 x 7
 y 23
 end
+arch invis_exit
+slaying guild_toolshed
+hp 14
+sp 4
+x 7
+y 23
+blocksview 1
+end
 arch dungeon_magic
 x 7
 y 24
