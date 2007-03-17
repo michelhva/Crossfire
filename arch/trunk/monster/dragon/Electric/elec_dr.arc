@@ -1,7 +1,7 @@
 Object big_elec
 name electric dragon
 race dragon
-randomitems acdc
+randomitems big_elec
 monster 1
 sleep 1
 Wis 20

@@ -31,4 +31,10 @@ treasureone giant_parts
   arch brain
     chance 3
   end
-
+treasure giant_old
+  arch big_club
+  more
+  arch goldcoin
+  chance 6
+  nrof 80
+  end
