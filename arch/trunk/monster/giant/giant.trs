@@ -1,0 +1,34 @@
+treasure giant
+  list giant_old
+  more
+  arch skill_throwing
+  more
+  arch t_boulder
+  nrof 8
+  more
+  list giant_parts
+    chance 10
+  end
+treasureone giant_parts
+  arch fl_corpse
+    chance 15
+  more
+  arch head
+    chance 20
+  more
+  arch foot
+    chance 8
+  more
+  arch hand
+    chance 8
+  more
+  arch heart
+    chance 5
+  more
+  arch liver
+    chance 8
+  more
+  arch brain
+    chance 3
+  end
+

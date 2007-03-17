@@ -13,7 +13,7 @@ skill praying
 no_drop 1
 invisible 1
 exp 20
-randomitems reincarnation_failure
+#randomitems reincarnation_failure
 race reincarnation_races
 msg
 This spell brings back a dead character,

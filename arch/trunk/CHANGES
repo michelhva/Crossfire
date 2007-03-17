@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+Start splitting server/lib/treasures file in many files.
+Rename player class files/random items for coherence.
+Nicolas Weeger 2007-03-17
+
 Converted all remaining multi-part base images into single images
 with the facename.base.x??.png format.  Deleted the old multi-part
 images and adjusted the archetypes accordingly.  This is a huge

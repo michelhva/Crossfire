@@ -1,7 +1,7 @@
 Object dread
 name Dread
 race unnatural
-randomitems beholder_big
+randomitems dread
 face dread.x11
 color_fg blue
 anim
