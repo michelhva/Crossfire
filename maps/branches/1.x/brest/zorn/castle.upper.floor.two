@@ -13083,7 +13083,6 @@ end
 arch bulletwall
 name earth wall remover
 sp 1
-dam 37
 x 32
 y 51
 speed 0.0
@@ -13092,6 +13091,8 @@ invisible 1
 connected 12000
 no_pass 0
 blocksview 0
+arch spell_earth_to_dust
+end
 end
 arch tree5
 name ornamental pine
