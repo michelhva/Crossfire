@@ -20865,6 +20865,15 @@ item_power 5
 applied 1
 stealth 1
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch active_volcano
 x 27
