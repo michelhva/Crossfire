@@ -41,6 +41,14 @@ arch cobblestones2
 x 1
 y 4
 end
+arch exit
+x 1
+y 4
+arch event_apply
+title Python
+slaying /test/python_exit.py
+end
+end
 arch cobblestones2
 x 2
 end
@@ -71,6 +79,14 @@ end
 arch cobblestones2
 x 2
 y 4
+end
+arch oakdoor
+x 2
+y 4
+arch event_apply
+title Python
+slaying /test/python_exit.py
+end
 end
 arch cobblestones2
 x 3

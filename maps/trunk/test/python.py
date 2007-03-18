@@ -27,6 +27,9 @@ def do_help():
 	whoami.Say(' - readkey')
 	whoami.Say(' - writekey')
 	whoami.Say(' - speed')
+	whoami.Say(' - owner')
+	whoami.Say(' - friendlylist')
+	whoami.Say(' - create')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -233,6 +236,28 @@ def do_speed():
 	who.SpeedLeft = -50
 	whoami.Say('Changed your speed, now %f and %f'%(who.Speed, who.SpeedLeft))
 
+def do_owner():
+	whoami.Say('Not implemented.');
+
+def do_friendlylist():
+	friends = Crossfire.GetFriendlyList()
+	for ob in friends:
+		if (ob.Owner):
+			n = ob.Owner.Name
+		else:
+			n = ''
+		whoami.Say(' - %s (%s)'%(ob.Name, n))
+
+def do_create():
+	first = Crossfire.CreateObjectByName('gem')
+	if (first):
+		whoami.Say('created gem: %s'%first.Name)
+		first.Teleport(whoami.Map, 2, 2)
+	second = Crossfire.CreateObjectByName('diamond')
+	if (second):
+		whoami.Say('created diamond: %s'%second.Name)
+		second.Teleport(whoami.Map, 2, 2)
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -278,5 +303,11 @@ elif topic[0] == 'writekey':
 	do_writekey()
 elif topic[0] == 'speed':
 	do_speed()
+elif topic[0] == 'owner':
+	do_owner()
+elif topic[0] == 'friendlylist':
+	do_friendlylist()
+elif topic[0] == 'create':
+	do_create()
 else:
 	do_help()
