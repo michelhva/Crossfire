@@ -8771,6 +8771,15 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch woodfloor2
 x 22
@@ -9152,6 +9161,15 @@ msg
 This key is to the tower door.
 Guard it with yout life.
 endmsg
+end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
 end
 end
 arch cobblestones2
@@ -14451,6 +14469,15 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch woodfloor2
 x 36
@@ -14832,6 +14859,15 @@ msg
 This key is to the tower door.
 Guard it with yout life.
 endmsg
+end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
 end
 end
 arch cobblestones2

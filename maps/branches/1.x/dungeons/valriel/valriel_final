@@ -18765,8 +18765,6 @@ arch spell_mana_blast
 end
 arch spell_manabolt
 end
-arch spell_sunspear
-end
 arch holy_avenger
 name Glowing Holy Avenger
 name_pl Glowing Holy Avengers
@@ -18856,6 +18854,24 @@ endmsg
 hp 9
 sp 8
 glow_radius 8
+end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_sunspear
+end
+end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 110
+applied 1
+startequip 1
+arch spell_banishment
+end
 end
 end
 arch destroying_angel
