@@ -270,19 +270,6 @@ arch dungeon_magic
 x 2
 y 3
 end
-arch lbulletwall_4
-name Mana Crystal
-sp 3
-dam 121
-x 2
-y 3
-speed 0
-level 107
-invisible 1
-connected 2
-no_pass 0
-blocksview 0
-end
 arch woodfloor2
 x 2
 y 3
@@ -415,19 +402,6 @@ arch dungeon_magic
 x 3
 y 2
 end
-arch lbulletwall_4
-name Mana Crystal
-sp 5
-dam 121
-x 3
-y 2
-speed 0
-level 107
-invisible 1
-connected 2
-no_pass 0
-blocksview 0
-end
 arch woodfloor2
 x 3
 y 2
@@ -458,19 +432,6 @@ end
 arch dungeon_magic
 x 3
 y 4
-end
-arch lbulletwall_4
-name Mana Crystal
-sp 1
-dam 121
-x 3
-y 4
-speed 0
-level 107
-invisible 1
-connected 2
-no_pass 0
-blocksview 0
 end
 arch woodfloor2
 x 3
@@ -1590,19 +1551,6 @@ arch dungeon_magic
 x 11
 y 2
 end
-arch lbulletwall_4
-name Mana Crystal
-sp 5
-dam 121
-x 11
-y 2
-speed 0
-level 107
-invisible 1
-connected 3
-no_pass 0
-blocksview 0
-end
 arch woodfloor2
 x 11
 y 2
@@ -1633,19 +1581,6 @@ end
 arch dungeon_magic
 x 11
 y 4
-end
-arch lbulletwall_4
-name Mana Crystal
-sp 1
-dam 121
-x 11
-y 4
-speed 0
-level 107
-invisible 1
-connected 3
-no_pass 0
-blocksview 0
 end
 arch woodfloor2
 x 11
@@ -1804,19 +1739,6 @@ end
 arch dungeon_magic
 x 12
 y 3
-end
-arch lbulletwall_4
-name Mana Crystal
-sp 7
-dam 121
-x 12
-y 3
-speed 0
-level 107
-invisible 1
-connected 3
-no_pass 0
-blocksview 0
 end
 arch woodfloor2
 x 12
