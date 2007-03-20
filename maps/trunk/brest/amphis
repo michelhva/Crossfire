@@ -1,5 +1,6 @@
 arch map
 name amphis
+difficulty 25
 region brest
 width 80
 height 50
@@ -7,6 +8,10 @@ msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:23:34 1994
+Modified: Gene Alexander
+e-mail: poof@eracc.com
+Date: Tue Mar 20 20:51:50 UTC 2007
+What: Fix half-baked job of replacing the walls with "new" red walls some time back.
 endmsg
 end
 arch dungeon_floor
@@ -386,7 +391,7 @@ arch dungeon_floor
 x 3
 y 1
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 1
 end
@@ -394,7 +399,7 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch bwall_1_2
+arch redcwall_1_2
 x 3
 y 2
 end
@@ -426,11 +431,7 @@ arch dungeon_floor
 x 3
 y 6
 end
-arch magic_banned
-x 3
-y 6
-end
-arch bwall_1_1
+arch redcwall_1_1
 x 3
 y 6
 end
@@ -438,11 +439,7 @@ arch dungeon_floor
 x 3
 y 7
 end
-arch magic_banned
-x 3
-y 7
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 7
 end
@@ -450,11 +447,7 @@ arch dungeon_floor
 x 3
 y 8
 end
-arch magic_banned
-x 3
-y 8
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 8
 end
@@ -462,11 +455,7 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch magic_banned
-x 3
-y 9
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 9
 end
@@ -474,11 +463,7 @@ arch dungeon_floor
 x 3
 y 10
 end
-arch magic_banned
-x 3
-y 10
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 10
 end
@@ -486,11 +471,7 @@ arch dungeon_floor
 x 3
 y 11
 end
-arch magic_banned
-x 3
-y 11
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 3
 y 11
 end
@@ -498,11 +479,7 @@ arch dungeon_floor
 x 3
 y 12
 end
-arch magic_banned
-x 3
-y 12
-end
-arch bwall_2_2_1
+arch redcwall_2_2_1
 x 3
 y 12
 end
@@ -622,11 +599,7 @@ arch dungeon_floor
 x 4
 y 12
 end
-arch magic_banned
-x 4
-y 12
-end
-arch bwall_3_3
+arch redcwall_3_3
 x 4
 y 12
 end
@@ -634,7 +607,7 @@ arch dungeon_floor
 x 4
 y 13
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 4
 y 13
 end
@@ -642,7 +615,7 @@ arch dungeon_floor
 x 4
 y 14
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 4
 y 14
 end
@@ -650,7 +623,7 @@ arch dungeon_floor
 x 4
 y 15
 end
-arch bwall_2_2_1
+arch redcwall_2_2_1
 x 4
 y 15
 end
@@ -764,11 +737,7 @@ arch dungeon_floor
 x 5
 y 12
 end
-arch magic_banned
-x 5
-y 12
-end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 5
 y 12
 end
@@ -784,7 +753,7 @@ arch dungeon_floor
 x 5
 y 15
 end
-arch bwall_2_2_3
+arch redcwall_2_2_3
 x 5
 y 15
 end
@@ -792,7 +761,7 @@ arch dungeon_floor
 x 5
 y 16
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 5
 y 16
 end
@@ -800,7 +769,7 @@ arch dungeon_floor
 x 5
 y 17
 end
-arch bwall_2_2_1
+arch redcwall_2_2_1
 x 5
 y 17
 end
@@ -906,11 +875,7 @@ arch dungeon_floor
 x 6
 y 12
 end
-arch magic_banned
-x 6
-y 12
-end
-arch bwall_2_1_2
+arch redweak_wall_4
 x 6
 y 12
 end
@@ -934,7 +899,7 @@ arch dungeon_floor
 x 6
 y 17
 end
-arch bwall_2_2_3
+arch redcwall_2_2_3
 x 6
 y 17
 end
@@ -942,7 +907,7 @@ arch dungeon_floor
 x 6
 y 18
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 6
 y 18
 end
@@ -950,7 +915,7 @@ arch dungeon_floor
 x 6
 y 19
 end
-arch bwall_2_2_1
+arch redcwall_2_2_1
 x 6
 y 19
 end
@@ -1040,11 +1005,7 @@ arch dungeon_floor
 x 7
 y 12
 end
-arch magic_banned
-x 7
-y 12
-end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 7
 y 12
 end
@@ -1076,7 +1037,7 @@ arch dungeon_floor
 x 7
 y 19
 end
-arch bwall_3_3
+arch redcwall_3_3
 x 7
 y 19
 end
@@ -1084,7 +1045,7 @@ arch dungeon_floor
 x 7
 y 20
 end
-arch bwall_3_2
+arch redcwall_2_1_1
 x 7
 y 20
 end
@@ -1092,7 +1053,7 @@ arch dungeon_floor
 x 7
 y 21
 end
-arch bwall_2_2_1
+arch redcwall_2_2_1
 x 7
 y 21
 end
@@ -1322,7 +1283,7 @@ arch dungeon_floor
 x 8
 y 1
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 1
 end
@@ -1330,7 +1291,7 @@ arch dungeon_floor
 x 8
 y 2
 end
-arch bwall_1_2
+arch redcwall_1_2
 x 8
 y 2
 end
@@ -1362,11 +1323,7 @@ arch dungeon_floor
 x 8
 y 6
 end
-arch magic_banned
-x 8
-y 6
-end
-arch bwall_2_2_3
+arch redcwall_1_1
 x 8
 y 6
 end
@@ -1374,11 +1331,7 @@ arch dungeon_floor
 x 8
 y 7
 end
-arch magic_banned
-x 8
-y 7
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 7
 end
@@ -1386,11 +1339,7 @@ arch dungeon_floor
 x 8
 y 8
 end
-arch magic_banned
-x 8
-y 8
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 8
 end
@@ -1398,11 +1347,7 @@ arch dungeon_floor
 x 8
 y 9
 end
-arch magic_banned
-x 8
-y 9
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 9
 end
@@ -1410,11 +1355,7 @@ arch dungeon_floor
 x 8
 y 10
 end
-arch magic_banned
-x 8
-y 10
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 10
 end
@@ -1422,11 +1363,7 @@ arch dungeon_floor
 x 8
 y 11
 end
-arch magic_banned
-x 8
-y 11
-end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 11
 end
@@ -1434,11 +1371,7 @@ arch dungeon_floor
 x 8
 y 12
 end
-arch magic_banned
-x 8
-y 12
-end
-arch bwall_3_4
+arch redcwall_3_4
 x 8
 y 12
 end
@@ -1446,7 +1379,7 @@ arch dungeon_floor
 x 8
 y 13
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 13
 end
@@ -1454,7 +1387,7 @@ arch dungeon_floor
 x 8
 y 14
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 14
 end
@@ -1462,7 +1395,7 @@ arch dungeon_floor
 x 8
 y 15
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 15
 end
@@ -1470,7 +1403,7 @@ arch dungeon_floor
 x 8
 y 16
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 16
 end
@@ -1478,7 +1411,7 @@ arch dungeon_floor
 x 8
 y 17
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 17
 end
@@ -1486,7 +1419,7 @@ arch dungeon_floor
 x 8
 y 18
 end
-arch bwall_2_1_1
+arch redcwall_2_1_1
 x 8
 y 18
 end
@@ -1494,7 +1427,7 @@ arch dungeon_floor
 x 8
 y 19
 end
-arch bwall_3_4
+arch redcwall_3_4
 x 8
 y 19
 end
@@ -1502,7 +1435,7 @@ arch dungeon_floor
 x 8
 y 20
 end
-arch bwall_3_4
+arch redcwall_2_1_1
 x 8
 y 20
 end
@@ -1510,7 +1443,7 @@ arch dungeon_floor
 x 8
 y 21
 end
-arch bwall_3_1
+arch redcwall_3_1
 x 8
 y 21
 end
@@ -1526,7 +1459,7 @@ arch dungeon_floor
 x 8
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 8
 y 24
 end
@@ -1935,7 +1868,7 @@ arch dungeon_floor
 x 9
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 9
 y 21
 end
@@ -1951,7 +1884,7 @@ arch dungeon_floor
 x 9
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 9
 y 24
 end
@@ -2323,7 +2256,7 @@ arch dungeon_floor
 x 10
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 10
 y 21
 end
@@ -2339,7 +2272,7 @@ arch dungeon_floor
 x 10
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 10
 y 24
 end
@@ -2707,7 +2640,7 @@ arch dungeon_floor
 x 11
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 11
 y 21
 end
@@ -2723,7 +2656,7 @@ arch dungeon_floor
 x 11
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 11
 y 24
 end
@@ -3050,7 +2983,7 @@ arch dungeon_floor
 x 12
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 12
 y 21
 end
@@ -3066,7 +2999,7 @@ arch dungeon_floor
 x 12
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 12
 y 24
 end
@@ -3350,7 +3283,7 @@ arch dungeon_floor
 x 13
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 13
 y 21
 end
@@ -3366,7 +3299,7 @@ arch dungeon_floor
 x 13
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 13
 y 24
 end
@@ -3408,7 +3341,7 @@ x 13
 y 32
 end
 arch beholder
-name Paul  Albert
+name Paul Albert
 x 13
 y 32
 end
@@ -3716,7 +3649,7 @@ arch dungeon_floor
 x 14
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 14
 y 21
 end
@@ -3732,7 +3665,7 @@ arch dungeon_floor
 x 14
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 14
 y 24
 end
@@ -4104,7 +4037,7 @@ arch dungeon_floor
 x 15
 y 21
 end
-arch bwall_1_3
+arch redcwall_1_3
 x 15
 y 21
 end
@@ -4129,7 +4062,7 @@ arch dungeon_floor
 x 15
 y 24
 end
-arch bwall_1_3
+arch redcwall_1_3
 x 15
 y 24
 end
@@ -4606,7 +4539,7 @@ x 16
 y 33
 end
 arch giant_bat
-name El  Barchio
+name El Barchio
 x 16
 y 33
 end
@@ -6113,7 +6046,7 @@ arch dungeon_floor
 x 20
 y 21
 end
-arch bwall_1_4
+arch redcwall_1_4
 x 20
 y 21
 end
@@ -6129,7 +6062,7 @@ arch dungeon_floor
 x 20
 y 24
 end
-arch bwall_1_4
+arch redcwall_1_4
 x 20
 y 24
 end
@@ -6474,7 +6407,7 @@ arch dungeon_floor
 x 21
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 21
 y 21
 end
@@ -6490,7 +6423,7 @@ arch dungeon_floor
 x 21
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 21
 y 24
 end
@@ -6858,7 +6791,7 @@ arch dungeon_floor
 x 22
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 22
 y 21
 end
@@ -6874,7 +6807,7 @@ arch dungeon_floor
 x 22
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 22
 y 24
 end
@@ -7234,7 +7167,7 @@ arch dungeon_floor
 x 23
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 23
 y 21
 end
@@ -7250,7 +7183,7 @@ arch dungeon_floor
 x 23
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 23
 y 24
 end
@@ -7618,7 +7551,7 @@ arch dungeon_floor
 x 24
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 24
 y 21
 end
@@ -7634,7 +7567,7 @@ arch dungeon_floor
 x 24
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 24
 y 24
 end
@@ -8032,7 +7965,7 @@ arch dungeon_floor
 x 25
 y 21
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 25
 y 21
 end
@@ -8048,7 +7981,7 @@ arch dungeon_floor
 x 25
 y 24
 end
-arch bwall_2_1_2
+arch redcwall_2_1_2
 x 25
 y 24
 end
@@ -8402,7 +8335,7 @@ arch dungeon_floor
 x 26
 y 24
 end
-arch bwall_2_2_3
+arch redcwall_2_2_3
 x 26
 y 24
 end
@@ -8602,7 +8535,7 @@ arch dungeon_floor
 x 26
 y 49
 end
-arch redcwall_4
+arch redcwall_2_2_4
 x 26
 y 49
 end
@@ -9361,7 +9294,11 @@ arch woodfloor
 x 36
 y 13
 end
-arch redcwall_3_2
+arch redcwall_2_1_1
+x 36
+y 13
+end
+arch redcwall_0
 x 36
 y 13
 end
@@ -9696,7 +9633,7 @@ arch woodfloor
 x 37
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 37
 y 27
 end
@@ -9890,7 +9827,7 @@ arch woodfloor
 x 38
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 38
 y 27
 end
@@ -9942,7 +9879,7 @@ arch woodfloor
 x 39
 y 13
 end
-arch redcwall_2_1_2
+arch redcwall_1_4
 x 39
 y 13
 end
@@ -10002,7 +9939,7 @@ arch woodfloor
 x 39
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 39
 y 27
 end
@@ -10124,7 +10061,7 @@ arch woodfloor
 x 40
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 40
 y 27
 end
@@ -10273,7 +10210,7 @@ arch woodfloor
 x 41
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 41
 y 27
 end
@@ -10417,7 +10354,7 @@ arch woodfloor
 x 42
 y 27
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 42
 y 27
 end
@@ -10505,7 +10442,7 @@ arch woodfloor
 x 43
 y 17
 end
-arch weak_wall_3
+arch redweak_wall_3
 x 43
 y 17
 end
@@ -10513,7 +10450,7 @@ arch woodfloor
 x 43
 y 18
 end
-arch weak_wall_3
+arch redweak_wall_3
 x 43
 y 18
 end
@@ -10521,7 +10458,7 @@ arch woodfloor
 x 43
 y 19
 end
-arch weak_wall_3
+arch redweak_wall_3
 x 43
 y 19
 end
@@ -10529,7 +10466,7 @@ arch woodfloor
 x 43
 y 20
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 20
 end
@@ -10537,7 +10474,7 @@ arch woodfloor
 x 43
 y 21
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 21
 end
@@ -10545,7 +10482,7 @@ arch woodfloor
 x 43
 y 22
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 22
 end
@@ -10553,7 +10490,7 @@ arch woodfloor
 x 43
 y 23
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 23
 end
@@ -10561,7 +10498,7 @@ arch woodfloor
 x 43
 y 24
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 24
 end
@@ -10569,7 +10506,7 @@ arch woodfloor
 x 43
 y 25
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 25
 end
@@ -10577,7 +10514,7 @@ arch woodfloor
 x 43
 y 26
 end
-arch dwall_2_1_1
+arch redweak_wall_3
 x 43
 y 26
 end
@@ -10593,7 +10530,7 @@ arch woodfloor
 x 43
 y 28
 end
-arch weak_wall_3
+arch redweak_wall_3
 x 43
 y 28
 end
@@ -10601,7 +10538,7 @@ arch woodfloor
 x 43
 y 29
 end
-arch weak_wall_3
+arch redweak_wall_3
 x 43
 y 29
 end
@@ -10609,7 +10546,7 @@ arch woodfloor
 x 43
 y 30
 end
-arch redcwall_3_3
+arch redcwall_4
 x 43
 y 30
 end
@@ -10705,7 +10642,7 @@ arch woodfloor
 x 44
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 44
 y 13
 end
@@ -10729,7 +10666,7 @@ arch woodfloor
 x 44
 y 16
 end
-arch redcwall_2_1_2
+arch redcwall_1_3
 x 44
 y 16
 end
@@ -10881,7 +10818,7 @@ arch woodfloor
 x 45
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 45
 y 13
 end
@@ -11033,7 +10970,7 @@ arch woodfloor
 x 46
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 46
 y 13
 end
@@ -11225,7 +11162,7 @@ arch woodfloor
 x 47
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 47
 y 13
 end
@@ -11405,7 +11342,7 @@ arch woodfloor
 x 48
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 48
 y 13
 end
@@ -11573,7 +11510,7 @@ arch woodfloor
 x 49
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 49
 y 13
 end
@@ -11773,7 +11710,7 @@ arch woodfloor
 x 50
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 50
 y 13
 end
@@ -11965,7 +11902,7 @@ arch woodfloor
 x 51
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 51
 y 13
 end
@@ -12121,7 +12058,7 @@ arch woodfloor
 x 52
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 52
 y 13
 end
@@ -12137,7 +12074,7 @@ arch woodfloor
 x 52
 y 16
 end
-arch door_2
+arch redcwall_1_4
 x 52
 y 16
 end
@@ -12465,7 +12402,7 @@ arch woodfloor
 x 54
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 54
 y 13
 end
@@ -12481,7 +12418,7 @@ arch woodfloor
 x 54
 y 16
 end
-arch redcwall_2_1_2
+arch redcwall_1_3
 x 54
 y 16
 end
@@ -12601,7 +12538,7 @@ arch woodfloor
 x 55
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 55
 y 13
 end
@@ -12737,7 +12674,7 @@ arch woodfloor
 x 56
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 56
 y 13
 end
@@ -12753,7 +12690,7 @@ arch woodfloor
 x 56
 y 16
 end
-arch redcwall_2_1_2
+arch redcwall_1_4
 x 56
 y 16
 end
@@ -12873,7 +12810,7 @@ arch woodfloor
 x 57
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 57
 y 13
 end
@@ -13009,7 +12946,7 @@ arch woodfloor
 x 58
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 58
 y 13
 end
@@ -13145,7 +13082,7 @@ arch woodfloor
 x 59
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 59
 y 13
 end
@@ -13288,7 +13225,7 @@ arch woodfloor
 x 60
 y 13
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 60
 y 13
 end
@@ -15428,7 +15365,15 @@ arch woodfloor
 x 75
 y 12
 end
+arch redcwall_2_2_2
+x 75
+y 12
+end
 arch woodfloor
+x 75
+y 13
+end
+arch redweak_wall_3
 x 75
 y 13
 end
@@ -15436,7 +15381,15 @@ arch woodfloor
 x 75
 y 14
 end
+arch redweak_wall_3
+x 75
+y 14
+end
 arch woodfloor
+x 75
+y 15
+end
+arch redweak_wall_3
 x 75
 y 15
 end
@@ -15444,7 +15397,15 @@ arch woodfloor
 x 75
 y 16
 end
+arch redweak_wall_3
+x 75
+y 16
+end
 arch woodfloor
+x 75
+y 17
+end
+arch redweak_wall_3
 x 75
 y 17
 end
@@ -15452,7 +15413,15 @@ arch woodfloor
 x 75
 y 18
 end
+arch redweak_wall_3
+x 75
+y 18
+end
 arch woodfloor
+x 75
+y 19
+end
+arch redweak_wall_3
 x 75
 y 19
 end
@@ -15460,7 +15429,15 @@ arch woodfloor
 x 75
 y 20
 end
+arch redweak_wall_3
+x 75
+y 20
+end
 arch woodfloor
+x 75
+y 21
+end
+arch redweak_wall_3
 x 75
 y 21
 end
@@ -15468,7 +15445,15 @@ arch woodfloor
 x 75
 y 22
 end
+arch redweak_wall_3
+x 75
+y 22
+end
 arch woodfloor
+x 75
+y 23
+end
+arch redweak_wall_3
 x 75
 y 23
 end
@@ -15476,7 +15461,15 @@ arch woodfloor
 x 75
 y 24
 end
+arch redweak_wall_3
+x 75
+y 24
+end
 arch woodfloor
+x 75
+y 25
+end
+arch redweak_wall_3
 x 75
 y 25
 end
@@ -15484,7 +15477,15 @@ arch woodfloor
 x 75
 y 26
 end
+arch redweak_wall_3
+x 75
+y 26
+end
 arch woodfloor
+x 75
+y 27
+end
+arch redweak_wall_3
 x 75
 y 27
 end
@@ -15492,7 +15493,15 @@ arch woodfloor
 x 75
 y 28
 end
+arch redweak_wall_3
+x 75
+y 28
+end
 arch woodfloor
+x 75
+y 29
+end
+arch redweak_wall_3
 x 75
 y 29
 end
@@ -15500,7 +15509,15 @@ arch woodfloor
 x 75
 y 30
 end
+arch redweak_wall_3
+x 75
+y 30
+end
 arch woodfloor
+x 75
+y 31
+end
+arch redweak_wall_3
 x 75
 y 31
 end
@@ -15508,7 +15525,15 @@ arch woodfloor
 x 75
 y 32
 end
+arch redweak_wall_3
+x 75
+y 32
+end
 arch woodfloor
+x 75
+y 33
+end
+arch redweak_wall_3
 x 75
 y 33
 end
@@ -15516,7 +15541,15 @@ arch woodfloor
 x 75
 y 34
 end
+arch redweak_wall_3
+x 75
+y 34
+end
 arch woodfloor
+x 75
+y 35
+end
+arch redcwall_2_2_1
 x 75
 y 35
 end
@@ -15548,7 +15581,7 @@ arch woodfloor
 x 76
 y 11
 end
-arch weak_wall_1
+arch redcwall_2_1_1
 x 76
 y 11
 end
@@ -15556,7 +15589,7 @@ arch woodfloor
 x 76
 y 12
 end
-arch weak_wall_1
+arch redcwall_2_2_4
 x 76
 y 12
 end
@@ -15564,15 +15597,7 @@ arch woodfloor
 x 76
 y 13
 end
-arch weak_wall_1
-x 76
-y 13
-end
 arch woodfloor
-x 76
-y 14
-end
-arch weak_wall_1
 x 76
 y 14
 end
@@ -15580,15 +15605,7 @@ arch woodfloor
 x 76
 y 15
 end
-arch weak_wall_1
-x 76
-y 15
-end
 arch woodfloor
-x 76
-y 16
-end
-arch weak_wall_1
 x 76
 y 16
 end
@@ -15596,15 +15613,7 @@ arch woodfloor
 x 76
 y 17
 end
-arch weak_wall_1
-x 76
-y 17
-end
 arch woodfloor
-x 76
-y 18
-end
-arch weak_wall_1
 x 76
 y 18
 end
@@ -15612,15 +15621,7 @@ arch woodfloor
 x 76
 y 19
 end
-arch weak_wall_1
-x 76
-y 19
-end
 arch woodfloor
-x 76
-y 20
-end
-arch weak_wall_1
 x 76
 y 20
 end
@@ -15628,15 +15629,7 @@ arch woodfloor
 x 76
 y 21
 end
-arch weak_wall_1
-x 76
-y 21
-end
 arch woodfloor
-x 76
-y 22
-end
-arch weak_wall_1
 x 76
 y 22
 end
@@ -15644,15 +15637,7 @@ arch woodfloor
 x 76
 y 23
 end
-arch weak_wall_1
-x 76
-y 23
-end
 arch woodfloor
-x 76
-y 24
-end
-arch weak_wall_1
 x 76
 y 24
 end
@@ -15660,15 +15645,7 @@ arch woodfloor
 x 76
 y 25
 end
-arch weak_wall_1
-x 76
-y 25
-end
 arch woodfloor
-x 76
-y 26
-end
-arch weak_wall_1
 x 76
 y 26
 end
@@ -15676,15 +15653,7 @@ arch woodfloor
 x 76
 y 27
 end
-arch weak_wall_1
-x 76
-y 27
-end
 arch woodfloor
-x 76
-y 28
-end
-arch weak_wall_1
 x 76
 y 28
 end
@@ -15692,15 +15661,7 @@ arch woodfloor
 x 76
 y 29
 end
-arch weak_wall_1
-x 76
-y 29
-end
 arch woodfloor
-x 76
-y 30
-end
-arch weak_wall_1
 x 76
 y 30
 end
@@ -15708,15 +15669,7 @@ arch woodfloor
 x 76
 y 31
 end
-arch weak_wall_1
-x 76
-y 31
-end
 arch woodfloor
-x 76
-y 32
-end
-arch weak_wall_1
 x 76
 y 32
 end
@@ -15724,15 +15677,7 @@ arch woodfloor
 x 76
 y 33
 end
-arch weak_wall_1
-x 76
-y 33
-end
 arch woodfloor
-x 76
-y 34
-end
-arch weak_wall_1
 x 76
 y 34
 end
@@ -15740,7 +15685,7 @@ arch woodfloor
 x 76
 y 35
 end
-arch awall_2_2_1
+arch redweak_wall_4
 x 76
 y 35
 end
@@ -15875,7 +15820,7 @@ arch woodfloor
 x 77
 y 35
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 77
 y 35
 end
@@ -15904,10 +15849,6 @@ x 78
 y 10
 end
 arch woodfloor
-x 78
-y 11
-end
-arch generate_dragon
 x 78
 y 11
 end
@@ -16050,15 +15991,11 @@ arch woodfloor
 x 78
 y 34
 end
-arch generate_dragon
-x 78
-y 34
-end
 arch woodfloor
 x 78
 y 35
 end
-arch weak_wall_2
+arch redweak_wall_4
 x 78
 y 35
 end
@@ -16323,32 +16260,32 @@ x 5
 y 4
 end
 arch chinese_dragon
-name Olivier  Keyboard
+name Olivier Keyboard
 x 9
 y 41
 end
 arch big_elec
-name Michel  Bass
+name Michel Bass
 x 9
 y 44
 end
 arch big_dragon
-name Jose  Lyrics
+name Jose Lyrics
 x 12
 y 47
 end
 arch demon_lord
-name Fred  Lyrics
+name Fred Lyrics
 x 16
 y 41
 end
 arch titan
-name Helene  Drums
+name Helene Drums
 x 20
 y 47
 end
 arch big_wiz
-name Francois  Guitar
+name Francois Guitar
 x 22
 y 42
 end
