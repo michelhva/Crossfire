@@ -1,0 +1,517 @@
+arch map
+name Guild Jeweler
+difficulty 1
+width 7
+height 10
+enter_x 3
+enter_y 4
+msg
+Creator: Rick Tanner
+Editor: CrossfireEditor
+Date:    3/19/2007
+endmsg
+end
+arch woodfloor
+end
+arch dwall_2_1_1
+end
+arch woodfloor
+y 1
+end
+arch dwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch dwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch dwall_3_2
+y 3
+end
+arch woodfloor
+y 4
+end
+arch dwall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch dwall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch dwall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch dwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch dwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch dwall_2_2_1
+y 9
+end
+arch light3
+y 9
+end
+arch woodfloor
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch dwall_2_1_2
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch firepot
+x 1
+y 4
+end
+arch light3
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch table_4
+x 1
+y 5
+no_pick 1
+end
+arch amethyst
+x 1
+y 5
+no_pick 1
+end
+arch woodfloor
+x 1
+y 6
+end
+arch table_4
+x 1
+y 6
+no_pick 1
+end
+arch gem
+x 1
+y 6
+no_pick 1
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch jeweler_bench
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch dwall_2_1_2
+x 1
+y 9
+end
+arch woodfloor
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch dwall_0
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch dwall_1_3
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch dwall_0
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch chair_2.2
+x 2
+y 6
+no_pick 1
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch dwall_2_1_2
+x 2
+y 9
+end
+arch woodfloor
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 3
+end
+arch grate_closed_1
+x 3
+y 3
+connected 12
+blocksview 1
+no_magic 1
+damned 1
+end
+arch invis_exit
+slaying secondfloor
+hp 2
+sp 14
+x 3
+y 3
+end
+arch magic_mouth
+msg
+Be sure to pick up after yourself,
+otherwise the cleaning staff will.
+endmsg
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 4
+end
+arch pedestal
+x 3
+y 4
+invisible 1
+connected 12
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch charwoman
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch dwall_2_1_2
+x 3
+y 9
+end
+arch woodfloor
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch dwall_0
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch dwall_1_4
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch dwall_0
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch chair_2.1
+x 4
+y 7
+no_pick 1
+end
+arch woodfloor
+x 4
+y 8
+end
+arch table_3
+x 4
+y 8
+no_pick 1
+end
+arch ruby
+x 4
+y 8
+no_pick 1
+end
+arch woodfloor
+x 4
+y 9
+end
+arch dwall_2_1_2
+x 4
+y 9
+end
+arch woodfloor
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch dwall_2_1_2
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch firepot
+x 5
+y 4
+end
+arch light3
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch table_4
+x 5
+y 5
+no_pick 1
+end
+arch smallnugget
+x 5
+y 5
+no_pick 1
+end
+arch woodfloor
+x 5
+y 6
+end
+arch barrel
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch table_4
+x 5
+y 7
+no_pick 1
+end
+arch sapphire
+x 5
+y 7
+no_pick 1
+end
+arch woodfloor
+x 5
+y 8
+end
+arch firepot
+x 5
+y 8
+end
+arch light3
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch dwall_2_1_2
+x 5
+y 9
+end
+arch woodfloor
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch dwall_3_3
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch dwall_2_1_1
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch dwall_2_1_1
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch dwall_2_1_1
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch dwall_2_1_1
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch dwall_2_1_1
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch dwall_3_1
+x 6
+y 9
+end
