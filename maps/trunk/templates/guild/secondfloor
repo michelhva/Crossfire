@@ -657,6 +657,13 @@ connected 12
 no_magic 1
 damned 1
 end
+arch invis_exit
+slaying guild_jeweler
+hp 3
+sp 4
+x 2
+y 15
+end
 arch woodfloor
 x 2
 y 16
@@ -1954,8 +1961,16 @@ arch grate_closed_2
 x 8
 y 17
 connected 22
+blocksview 1
 no_magic 1
 damned 1
+end
+arch invis_exit
+slaying guild_thaum
+hp 6
+sp 3
+x 8
+y 17
 end
 arch dungeon_magic
 x 8
