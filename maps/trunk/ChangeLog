@@ -1,3 +1,89 @@
+2007-03-20 20:59  eracc
+
+	* maps/branches/1.x/brest/amphis, brest/amphis: Remove extra space
+	  in some monster names. Fix all walls to look consistent.
+
+2007-03-20 05:01  rjtanner
+
+	* templates/guild/guild_bbq, templates/guild/guild_jeweler,
+	  templates/guild/guild_thaum, templates/guild/guild_toolshed,
+	  templates/guild/secondfloor: Made the Jeweler and Thaumaturgy
+	  areas a stand alone map. This should improve the chances of the
+	  map actually resetting to remove any broken or cursed
+	  workbenches or desks if they should appear during normal player
+	  use. Also made the decoration items sitting on tables for each
+	  map no_pickup.
+
+2007-03-19 23:39  eracc
+
+	* maps/branches/1.x/pup_land/lone_town/bank,
+	  pup_land/lone_town/bank: Update the Lone Town bank with a
+	  slightly more bank-like look and new jade and
+	  amberium conversion tables.
+
+2007-03-19 17:15  eracc
+
+	* maps/branches/1.x/brest/shops/a_small_shop,
+	  brest/shops/a_small_shop: It appears the mana charging crystal
+	  would *always* cause one's head to explode
+	  in a fireball. This is not intended. Reduced the number of
+	  transferrence walls
+	  to try to control this effect.
+
+2007-03-18 21:58  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Trying to fix my "earth to
+	  dust" bullet wall that triggers when the alarm goes.
+
+2007-03-18 19:17  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  maps/branches/1.x/dungeons/gorokh/gorokh_final,
+	  maps/branches/1.x/dungeons/valriel/valriel_final,
+	  brest/zorn/castle.upper.floor.two, dungeons/gorokh/gorokh_final,
+	  dungeons/valriel/valriel_final: Reduced the level of banish to
+	  not instantly kill devourers.
+
+2007-03-18 18:51  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  maps/branches/1.x/dungeons/gorokh/gorokh_final,
+	  maps/branches/1.x/dungeons/valriel/valriel_final,
+	  brest/zorn/castle.upper.floor.two, dungeons/gorokh/gorokh_final,
+	  dungeons/valriel/valriel_final: Devourer players have it too
+	  easy with no monsters attacking them with banish.
+	  This update should make the devourer life more ... interesting
+	  on these maps.
+
+2007-03-18 00:08  ryo_saeba
+
+	* test/python, test/python.py, test/python_exit.py: More Python
+	  tests.
+
+2007-03-17 07:33  rjtanner
+
+	* templates/guild/guild_toolshed, templates/guild/mainfloor: Made
+	  the Guild Tool Shed a stand alone map. This should improve the
+	  chances of the map actually resetting to remove any broken or
+	  cursed forges or workbenches if they should appear during normal
+	  player use. Also had to update the Guild Main Floor map to link
+	  to the new Tool Shed map.
+
+2007-03-17 07:22  rjtanner
+
+	* euthville/magic.shop: Cosmetic update in how the fence (swall)
+	  merges with nearby walls - essentially the small gap is removed
+
+2007-03-17 07:18  rjtanner
+
+	* templates/guild/guild_bbq: Updating the map header to take
+	  credit (or blame) for this map
+
+2007-03-16 06:07  rjtanner
+
+	* ChangeLog: ChangeLog updates
+
 2007-03-16 03:09  rjtanner
 
 	* templates/guild/guild_bbq, templates/guild/mainfloor: Cosmetic
