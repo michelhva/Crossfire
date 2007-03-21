@@ -67,9 +67,6 @@ end
 arch locked_door1
 name woodfloor
 slaying ExtendedApartmentKey
-msg
-
-endmsg
 face woodfloor.111
 y 7
 blocksview 1
@@ -78,9 +75,6 @@ end
 arch locked_door1
 name wall
 slaying ExtendedApartmentKey
-msg
-
-endmsg
 face wall_7.111
 y 7
 end
@@ -90,9 +84,6 @@ unique 1
 end
 arch locked_door1
 slaying ExtendedApartmentKey
-msg
-
-endmsg
 y 8
 end
 arch woodfloor
@@ -1129,9 +1120,6 @@ end
 arch locked_door1
 name woodfloor
 slaying ExtendedApartmentKey
-msg
-
-endmsg
 face woodfloor.111
 x 13
 y 7
@@ -1141,9 +1129,6 @@ end
 arch locked_door1
 name wall
 slaying ExtendedApartmentKey
-msg
-
-endmsg
 face wall_C.111
 x 13
 y 7
