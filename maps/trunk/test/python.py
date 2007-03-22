@@ -37,11 +37,22 @@ def do_arch():
 	which = random.randint(0,len(archs))
 	arch = archs[which]
 	whoami.Say('random = %s'%arch.Name)
+	head = ''
+	more = ''
+	next = ''
+	if (arch.Head):
+		head = arch.Head.Name
+	if (arch.More):
+		more = arch.More.Name
+	if (arch.Next):
+		next = arch.Next.Name
+	whoami.Say(' head = %s, more = %s, clone = %s, next = %s'%(head, more, arch.Clone.Name, next))
 
 	arch = who.Archetype
 	whoami.Say('your archetype is %s'%arch.Name)
 
 def do_maps():
+	whoami.Say('Current map is %s'%who.Map.Name)
 	maps = Crossfire.GetMaps()
 	whoami.Say('%d maps loaded'%len(maps))
 	for map in maps:
@@ -121,6 +132,13 @@ def do_basics():
 	whoami.Say('Basic test')
 	whoami.Say(' your type is %d'%who.Type)
 	whoami.Say(' your level is %d'%who.Level)
+	whoami.Say(' your nrof is %d'%who.Quantity)
+	whoami.Say(' your weight is %d'%who.Weight)
+	whoami.Say(' your name is %s'%who.Name)
+	whoami.Say(' your archname is %s'%who.ArchName)
+	whoami.Say(' your title is %s'%who.Title)
+	whoami.Say(' your ip is %s'%who.IP)
+	whoami.Say(' my name is %s'%whoami.Name)
 
 def do_time():
 	cftime = Crossfire.GetTime()
@@ -165,7 +183,7 @@ def do_inventory():
 
 def do_exp():
 	if ( len(topic) < 2 ):
-		whoami.Say("Your exp is %d"%who.Exp)
+		whoami.Say("Your exp is %d, perm is %d, mult is %d"%(who.Exp, who.PermExp, who.ExpMult))
 		whoami.Say("Syntax is: exp <value> [option] [skill]")
 	else:
 		value = int(topic[1])
