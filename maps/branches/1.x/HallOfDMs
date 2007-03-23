@@ -2175,6 +2175,7 @@ x 11
 y 24
 end
 arch exit
+name Scorn
 slaying /world/world_105_116
 hp 4
 sp 4
@@ -2205,6 +2206,10 @@ x 11
 y 28
 end
 arch exit
+name Darcap
+slaying /world/world_116_102
+hp 27
+sp 24
 x 11
 y 28
 end
@@ -3012,6 +3017,7 @@ x 14
 y 24
 end
 arch exit
+name Navar
 slaying /world/world_122_117
 hp 3
 sp 10
@@ -3042,6 +3048,10 @@ x 14
 y 28
 end
 arch exit
+name Brest
+slaying /world/world_107_123
+hp 31
+sp 28
 x 14
 y 28
 end
@@ -4491,6 +4501,10 @@ x 22
 y 25
 end
 arch exit
+name Scorn Jail
+slaying /scorn/misc/jail
+hp 14
+sp 7
 x 22
 y 25
 end
@@ -4504,6 +4518,10 @@ x 22
 y 27
 end
 arch exit
+name Navar Jail
+slaying /navar_city/jail/jail
+hp 15
+sp 7
 x 22
 y 27
 end
