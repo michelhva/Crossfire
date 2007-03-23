@@ -9995,10 +9995,6 @@ arch cobblestones2
 x 25
 y 8
 end
-arch cobblestones2
-x 25
-y 8
-end
 arch cwall_2_1_2
 x 25
 y 8
@@ -10388,10 +10384,6 @@ arch cobblestones2
 x 26
 y 8
 end
-arch cobblestones2
-x 26
-y 8
-end
 arch cwall_2_1_2
 x 26
 y 8
@@ -10403,13 +10395,11 @@ end
 arch spikes_closed
 x 26
 y 9
-invisible 1
 connected 1987
 end
 arch spikes_moving
 x 26
 y 9
-invisible 1
 end
 arch food
 x 26
@@ -10792,10 +10782,6 @@ end
 arch brush
 x 27
 y 7
-end
-arch cobblestones2
-x 27
-y 8
 end
 arch cobblestones2
 x 27
@@ -11256,10 +11242,6 @@ arch cobblestones2
 x 28
 y 8
 end
-arch cobblestones2
-x 28
-y 8
-end
 arch cwall_2_1_2
 x 28
 y 8
@@ -11647,10 +11629,6 @@ arch cobblestones2
 x 29
 y 8
 end
-arch cobblestones2
-x 29
-y 8
-end
 arch cwall_2_1_2
 x 29
 y 8
@@ -11708,6 +11686,17 @@ arch awall_2_1_2
 name alarm system
 x 29
 y 13
+end
+arch magic_mouth
+name Plaque
+msg
+You look at the Plaque and see written:
+Alarm system installed by Acme Inc.
+Come to Acme Inc. for all your
+building supplies.
+endmsg
+x 29
+y 14
 end
 arch stonefloor2
 x 29
@@ -12139,10 +12128,6 @@ arch cobblestones2
 x 30
 y 8
 end
-arch cobblestones2
-x 30
-y 8
-end
 arch cwall_2_1_2
 x 30
 y 8
@@ -12524,10 +12509,6 @@ end
 arch brush
 x 31
 y 7
-end
-arch cobblestones2
-x 31
-y 8
 end
 arch cobblestones2
 x 31
@@ -12993,10 +12974,6 @@ arch tree5
 name ornamental pine
 x 32
 y 7
-end
-arch cobblestones2
-x 32
-y 8
 end
 arch cobblestones2
 x 32
