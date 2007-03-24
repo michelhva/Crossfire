@@ -33,7 +33,7 @@ can_use_weapon 1
 can_use_armour 1
 can_use_shield 1
 msg
-Dwarven deity of metal smithing and warcraft, 
+Dwarven deity of metal smithing and warcraft,
 Giant basher, Delver of secrets
 endmsg
 exp 1

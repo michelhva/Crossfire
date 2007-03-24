@@ -22,4 +22,4 @@ maxsp 15
 attacktype 10
 no_drop 1
 invisible 1
-end 
+end

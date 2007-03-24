@@ -26,7 +26,7 @@ nrof 1
 type 7
 material 36
 value 10
-weight 1000 
+weight 1000
 editable 2048
 identified 0
 name_pl bottles of wine
@@ -45,7 +45,7 @@ nrof 1
 type 7
 material 36
 value 2
-weight 1000 
+weight 1000
 editable 2048
 identified 0
 name_pl glasses of wine

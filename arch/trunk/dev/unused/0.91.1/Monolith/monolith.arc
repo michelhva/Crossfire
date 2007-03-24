@@ -8,7 +8,7 @@ editable 2
 end
 More
 Object monolith_cl_b
-name a strange black monolith 
+name a strange black monolith
 face monolith.211
 type 66
 no_pass 1
@@ -25,7 +25,7 @@ editable 2
 end
 More
 Object monolith_b
-name a strange black monolith 
+name a strange black monolith
 type 66
 face monolith.212
 anim

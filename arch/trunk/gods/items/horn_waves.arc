@@ -4,7 +4,7 @@ title of Ocean Waves
 face shellhorn2.111
 randomitems horn_waves
 msg
-  Putting this shell to your ear, you hear 
+  Putting this shell to your ear, you hear
   the crashing sound of ocean waves.
 endmsg
 type 35

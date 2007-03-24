@@ -1,4 +1,4 @@
-Object robe2 
+Object robe2
 name robe
 name_pl robes
 client_type 256

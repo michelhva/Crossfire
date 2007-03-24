@@ -25,7 +25,7 @@ hp 15
 sp 19
 type 66
 no_pick 1
-anim 
+anim
 magic_portal.111
 magic_portal.112
 mina

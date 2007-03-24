@@ -23,4 +23,4 @@ attacktype 18
 no_drop 1
 invisible 1
 skill evocation
-end 
+end

@@ -5,7 +5,7 @@ last_sp 5
 type 15
 face sai_1.111
 material 18
-dam 2 
+dam 2
 ac 1
 resist_physical 2
 weight 2000
@@ -26,7 +26,7 @@ last_sp 5
 type 15
 face sai_2.111
 material 18
-dam 2 
+dam 2
 ac 1
 resist_physical 2
 weight 2000

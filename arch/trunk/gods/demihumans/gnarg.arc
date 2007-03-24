@@ -32,7 +32,7 @@ can_use_weapon 1
 can_use_armour 1
 can_cast_spell 1
 msg
-Father of goblins, Lord Troll, Master of 
+Father of goblins, Lord Troll, Master of
 poisons, Patron of assassins
 endmsg
 exp 1

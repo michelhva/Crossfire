@@ -1,4 +1,4 @@
-Object spiked_shield 
+Object spiked_shield
 nrof 1
 name spiked shield
 name_pl spiked shields

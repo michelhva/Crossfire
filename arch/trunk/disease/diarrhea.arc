@@ -15,7 +15,7 @@ maxsp 0
 last_eat 0
 exp 100
 msg
-You can't control your sphincter.  You have 
+You can't control your sphincter.  You have
 a messy accident.  Yuck!
 endmsg
 race *

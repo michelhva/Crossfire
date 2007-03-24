@@ -1,5 +1,5 @@
 Object grand_piano_black
-name grand piano 
+name grand piano
 slaying goldcoin
 food 1
 type 31
@@ -12,7 +12,7 @@ visibility 50
 end
 More
 Object grand_piano_2_black
-name grand piano 
+name grand piano
 slaying goldcoin
 food 1
 type 31
@@ -26,7 +26,7 @@ visibility 50
 end
 More
 Object grand_piano_3_black
-name grand piano 
+name grand piano
 slaying goldcoin
 food 1
 type 31
@@ -40,7 +40,7 @@ visibility 50
 end
 More
 Object grand_piano_4_black
-name grand piano 
+name grand piano
 slaying goldcoin
 food 1
 type 31

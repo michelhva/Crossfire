@@ -18,7 +18,7 @@ invisible 1
 msg
 Dimension door allows for a short range
 teleportation: the character is transported
-in the direction the spell is cast.  Zones 
+in the direction the spell is cast.  Zones
 where magic is blocked cannot be passed
 through, and the character will not end up in
 the space space as a monster.

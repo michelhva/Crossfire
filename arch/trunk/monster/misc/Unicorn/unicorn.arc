@@ -18,7 +18,7 @@ unicorn.x73
 mina
 level 6
 Con 8
-Pow 15 
+Pow 15
 can_cast_spell 1
 maxsp 50
 sp 50

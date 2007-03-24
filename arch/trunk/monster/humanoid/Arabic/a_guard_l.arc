@@ -30,7 +30,7 @@ stand_still 1
 unaggressive 1
 Str 25
 can_cast_spell 1
-can_use_weapon 1 
+can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
 editable 1

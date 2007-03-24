@@ -14,7 +14,7 @@ mina
 weapontype 7
 speed 0.30
 type 15
-last_sp 9 
+last_sp 9
 face firestar.111
 material 2
 magic 6

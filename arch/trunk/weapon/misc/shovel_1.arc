@@ -6,7 +6,7 @@ last_sp 15
 type 15
 face shovel_1.111
 material 2
-dam 10 
+dam 10
 weight 30000
 value 5
 anim

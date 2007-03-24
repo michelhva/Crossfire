@@ -3,9 +3,9 @@ name Gloves of the Sun
 name_pl Gloves of the Sun
 client_type 300
 msg
-  This pair of gloves will aid any of Gaea's 
+  This pair of gloves will aid any of Gaea's
   most faithful in seeing her will protected.
-endmsg 
+endmsg
 nrof 1
 type 100
 face glovesofsun.111

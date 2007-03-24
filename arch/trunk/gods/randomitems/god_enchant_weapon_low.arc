@@ -5,4 +5,4 @@ invisible 1
 type 8
 level 10
 editable 0
-end 
+end

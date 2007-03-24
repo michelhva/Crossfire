@@ -13,7 +13,7 @@ sparkshower.112
 sparkshower.113
 mina
 anim_speed 1.0
-speed 0.075 
+speed 0.075
 wc -30
 dam 1
 flying 1

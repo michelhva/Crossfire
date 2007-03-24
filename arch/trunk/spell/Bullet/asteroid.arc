@@ -14,7 +14,7 @@ asteroid.161
 asteroid.171
 asteroid.181
 mina
-is_animated 0   
+is_animated 0
 is_turnable 1
 walk_on 1
 fly_on 1

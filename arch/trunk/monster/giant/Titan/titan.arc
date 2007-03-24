@@ -263,4 +263,4 @@ x -1
 y 1
 invisible 1
 magicmap grey
-end 
+end

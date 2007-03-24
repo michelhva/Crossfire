@@ -1,5 +1,5 @@
 Object harpsichord1
-name harpsichord 
+name harpsichord
 slaying goldcoin
 food 1
 type 31
@@ -12,7 +12,7 @@ visibility 50
 end
 More
 Object harpsichord1_2
-name harpsichord 
+name harpsichord
 slaying goldcoin
 food 1
 type 31
@@ -26,7 +26,7 @@ visibility 50
 end
 More
 Object harpsichord1_3
-name harpsichord 
+name harpsichord
 slaying goldcoin
 food 1
 type 31
@@ -40,7 +40,7 @@ visibility 50
 end
 More
 Object harpsichord1_4
-name harpsichord 
+name harpsichord
 slaying goldcoin
 food 1
 type 31

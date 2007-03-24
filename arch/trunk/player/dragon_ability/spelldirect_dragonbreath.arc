@@ -24,4 +24,4 @@ attacktype 4
 no_drop 1
 invisible 1
 skill pyromancy
-end 
+end
