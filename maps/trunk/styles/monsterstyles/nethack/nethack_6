@@ -158,6 +158,7 @@ speed 0.200000
 type 0
 attacktype 4192
 monster 1
+move_type walk
 unaggressive 1
 end
 arch generate_zombie
@@ -228,6 +229,7 @@ speed 0.200000
 type 0
 attacktype 4192
 monster 1
+move_type walk
 undead 1
 end
 arch imp

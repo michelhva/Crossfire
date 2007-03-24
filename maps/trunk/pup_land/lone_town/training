@@ -594,6 +594,7 @@ direction 1
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 stand_still 1
 end
@@ -617,6 +618,7 @@ y 5
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -639,6 +641,7 @@ y 7
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -956,6 +959,7 @@ direction 3
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -977,6 +981,7 @@ y 5
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1019,6 +1024,7 @@ y 9
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1369,6 +1375,7 @@ y 3
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1391,6 +1398,7 @@ y 5
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1432,6 +1440,7 @@ y 9
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1735,6 +1744,7 @@ direction 1
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1757,6 +1767,7 @@ y 5
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1779,6 +1790,7 @@ y 7
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -1801,6 +1813,7 @@ y 9
 type 0
 randomitems none
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2

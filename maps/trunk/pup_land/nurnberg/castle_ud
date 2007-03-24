@@ -134,6 +134,7 @@ x 1
 y 2
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch dungeon_floor
@@ -367,6 +368,7 @@ level 20
 type 0
 weight 10000
 monster 1
+move_type walk
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
@@ -804,6 +806,7 @@ type 0
 weight 10000
 randomitems none
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -935,6 +938,7 @@ type 0
 weight 10000
 randomitems none
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -975,6 +979,7 @@ type 0
 weight 10000
 randomitems none
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1023,6 +1028,7 @@ type 0
 weight 10000
 randomitems none
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end

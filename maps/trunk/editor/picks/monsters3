@@ -26,12 +26,14 @@ end
 arch swashbuckler
 type 0
 monster 1
+move_type walk
 unaggressive 1
 y 5
 end
 arch viking
 type 0
 monster 1
+move_type walk
 unaggressive 1
 y 6
 end
@@ -44,6 +46,7 @@ end
 arch barbarian
 type 0
 monster 1
+move_type walk
 unaggressive 1
 y 9
 end
@@ -84,6 +87,7 @@ end
 arch priest
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 1
 y 3
@@ -91,6 +95,7 @@ end
 arch cleric
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 1
 y 4
@@ -122,6 +127,7 @@ end
 arch thief
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 2
 y 1
@@ -141,6 +147,7 @@ end
 arch wizard
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 3
 y 1
@@ -316,6 +323,7 @@ end
 arch fireborn
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 7
 y 1
@@ -488,6 +496,7 @@ end
 arch elf
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 11
 y 1
@@ -528,6 +537,7 @@ end
 arch fireborn
 type 0
 monster 1
+move_type walk
 unaggressive 1
 x 11
 y 17

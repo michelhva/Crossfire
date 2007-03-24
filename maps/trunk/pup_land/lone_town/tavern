@@ -329,6 +329,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 1
 y 21
@@ -500,6 +501,7 @@ face wizard.111
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 2
 y 22
@@ -710,6 +712,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 4
 y 3
@@ -1285,6 +1288,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 8
 y 11
@@ -1355,6 +1359,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 8
 y 22
@@ -1485,6 +1490,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 9
 y 17
@@ -2185,6 +2191,7 @@ type 0
 hp 200
 randomitems none
 monster 1
+move_type walk
 friendly 1
 x 14
 y 10
@@ -2527,6 +2534,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 16
 y 19
@@ -3583,6 +3591,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 23
 y 17

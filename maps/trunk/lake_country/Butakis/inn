@@ -562,6 +562,7 @@ level 5
 type 0
 randomitems none
 monster 1
+move_type walk
 unaggressive 1
 armour 30
 end
@@ -698,6 +699,7 @@ y 6
 type 0
 randomitems none
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -721,6 +723,7 @@ y 7
 speed 0.600000
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -756,6 +759,7 @@ speed 0.600000
 level 10
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 protected 7
@@ -1060,6 +1064,7 @@ speed 0.400000
 level 6
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -1512,6 +1517,7 @@ speed 0.800000
 level 10
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_use_skill 1
 end

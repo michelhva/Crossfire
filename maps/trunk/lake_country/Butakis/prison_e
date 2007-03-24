@@ -994,6 +994,7 @@ level 10
 type 0
 carrying 2300
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1900,6 +1901,7 @@ level 50
 type 0
 carrying 5000
 monster 1
+move_type walk
 unaggressive 1
 unique 1
 can_cast_spell 1
@@ -1983,6 +1985,7 @@ speed 1.000000
 level 40
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 immune 3
 arch spell_mass_confusion
@@ -2174,6 +2177,7 @@ level 10
 type 0
 carrying 2300
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1

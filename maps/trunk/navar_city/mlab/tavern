@@ -7270,6 +7270,7 @@ x 13
 y 34
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch marble
@@ -8889,6 +8890,7 @@ level 2
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -10062,6 +10064,7 @@ y 23
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -10107,6 +10110,7 @@ y 27
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -12571,6 +12575,7 @@ y 27
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -13721,6 +13726,7 @@ x 24
 y 26
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -16608,6 +16614,7 @@ x 29
 y 28
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 end
@@ -17756,6 +17763,7 @@ y 24
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -17800,6 +17808,7 @@ y 29
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -18340,6 +18349,7 @@ x 32
 y 30
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -18662,6 +18672,7 @@ x 33
 y 5
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch stonefloor2
@@ -20282,6 +20293,7 @@ y 21
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 arch random_wealth
 end
@@ -21942,6 +21954,7 @@ y 30
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -23039,6 +23052,7 @@ x 41
 y 34
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -24563,6 +24577,7 @@ x 44
 y 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch stonefloor2
@@ -26218,6 +26233,7 @@ x 47
 y 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -28655,6 +28671,7 @@ y 5
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor2
@@ -30002,6 +30019,7 @@ y 17
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -30820,6 +30838,7 @@ y 34
 type 0
 randomitems standard
 monster 1
+move_type walk
 unaggressive 1
 end
 arch flagstone

@@ -371,6 +371,7 @@ x 4
 y 3
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -439,6 +440,7 @@ y 14
 type 0
 carrying 2
 monster 1
+move_type walk
 unaggressive 1
 arch card
 name shredded Passport
@@ -579,6 +581,7 @@ x 6
 y 2
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2
@@ -797,6 +800,7 @@ x 8
 y 8
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch cobblestones2

@@ -2716,6 +2716,7 @@ attack_movement 15
 level 40
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_ring 1
@@ -2756,6 +2757,7 @@ x 22
 y 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch cwall_2_1_2

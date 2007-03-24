@@ -383,6 +383,7 @@ y 7
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -434,6 +435,7 @@ y 16
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -547,6 +549,7 @@ y 7
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -594,6 +597,7 @@ y 16
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -707,6 +711,7 @@ y 7
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -754,6 +759,7 @@ y 16
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -1980,6 +1986,7 @@ level 80
 type 0
 carrying 100
 monster 1
+move_type walk
 unaggressive 1
 sleep 1
 arch key2
@@ -2013,6 +2020,7 @@ speed 1.000000
 level 50
 type 0
 monster 1
+move_type walk
 unaggressive 1
 sleep 1
 arch skill_stealing
@@ -2931,6 +2939,7 @@ y 8
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -3250,6 +3259,7 @@ y 8
 level 20
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right

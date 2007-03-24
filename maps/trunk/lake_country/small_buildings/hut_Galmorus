@@ -626,6 +626,7 @@ x 4
 y 14
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch woodfloor
@@ -2376,6 +2377,7 @@ y 9
 type 0
 carrying 2120
 monster 1
+move_type walk
 unaggressive 1
 arch eyeglasses
 end
