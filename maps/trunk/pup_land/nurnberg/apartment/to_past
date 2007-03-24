@@ -46,6 +46,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 y 3
 end
@@ -90,6 +91,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 y 5
 end
@@ -168,6 +170,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 1
 y 4
@@ -242,6 +245,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 2
 y 1
@@ -276,6 +280,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 2
 y 2
@@ -310,6 +315,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 2
 y 3
@@ -359,6 +365,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 2
 y 5
@@ -393,6 +400,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 2
 y 6
@@ -427,6 +435,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 2
 y 7
@@ -578,6 +587,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 4
 end
@@ -612,6 +622,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 4
 y 1
@@ -647,6 +658,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 4
 y 2
@@ -718,6 +730,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 4
 y 6
@@ -753,6 +766,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 4
 y 7
@@ -788,6 +802,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 4
 y 8
@@ -941,6 +956,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 6
 y 1
@@ -975,6 +991,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 6
 y 2
@@ -1009,6 +1026,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 6
 y 3
@@ -1058,6 +1076,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 6
 y 5
@@ -1092,6 +1111,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 6
 y 6
@@ -1126,6 +1146,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 6
 y 7
@@ -1200,6 +1221,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 7
 y 4
@@ -1281,6 +1303,7 @@ run_away 90
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 x 8
 y 3
@@ -1330,6 +1353,7 @@ glow_radius 0
 alive 1
 flying 0
 monster 1
+move_type walk
 is_used_up 0
 x 8
 y 5

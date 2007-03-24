@@ -936,6 +936,7 @@ x 10
 y 4
 alive 1
 monster 1
+move_type walk
 friendly 1
 end
 arch pstone_2
@@ -1070,6 +1071,7 @@ x 11
 y 12
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch woodfloor

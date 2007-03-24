@@ -899,6 +899,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -923,6 +924,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -951,6 +953,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -979,6 +982,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1007,6 +1011,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1035,6 +1040,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1063,6 +1069,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1091,6 +1098,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1283,6 +1291,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1307,6 +1316,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1335,6 +1345,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1363,6 +1374,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1391,6 +1403,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1419,6 +1432,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1447,6 +1461,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1475,6 +1490,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1672,6 +1688,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1696,6 +1713,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1724,6 +1742,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1752,6 +1771,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1978,6 +1998,7 @@ carrying 100
 weight 1500
 is_animated 1
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_scroll 1
@@ -2055,6 +2076,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2079,6 +2101,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2107,6 +2130,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2135,6 +2159,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2400,6 +2425,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2424,6 +2450,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2452,6 +2479,8 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2480,6 +2509,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2726,6 +2756,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2750,6 +2781,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2778,6 +2810,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2806,6 +2839,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2834,6 +2868,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2862,6 +2897,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2890,6 +2926,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2918,6 +2955,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -3122,6 +3160,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2
@@ -3146,6 +3185,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3174,6 +3214,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3202,6 +3243,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3230,6 +3272,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3258,6 +3301,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3286,6 +3330,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3314,6 +3359,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 end
 arch cobblestones2

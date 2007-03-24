@@ -53,6 +53,7 @@ dam 50
 y 4
 type 0
 monster 1
+move_type walk
 end
 arch afloor_right
 y 5
@@ -264,6 +265,7 @@ dam 50
 x 2
 type 0
 monster 1
+move_type walk
 end
 arch afloor_right
 x 2
@@ -382,6 +384,7 @@ x 2
 y 13
 type 0
 monster 1
+move_type walk
 end
 arch afloor_left
 x 2
@@ -596,6 +599,7 @@ x 4
 y 8
 type 0
 monster 1
+move_type walk
 end
 arch afloor_left
 x 4
@@ -904,6 +908,7 @@ x 7
 y 3
 type 0
 monster 1
+move_type walk
 end
 arch woodfloor2
 x 7
@@ -1609,6 +1614,7 @@ x 13
 y 5
 type 0
 monster 1
+move_type walk
 end
 arch afloor_right
 x 13
@@ -1663,6 +1669,7 @@ x 13
 y 10
 type 0
 monster 1
+move_type walk
 end
 arch afloor_right
 x 13

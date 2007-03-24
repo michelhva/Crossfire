@@ -108,6 +108,7 @@ x 1
 y 3
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -221,6 +222,7 @@ x 2
 y 7
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -308,6 +310,7 @@ x 3
 y 5
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -463,6 +466,7 @@ x 5
 y 3
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_right
@@ -776,6 +780,7 @@ x 8
 y 7
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_left
@@ -849,6 +854,7 @@ x 9
 y 5
 type 0
 monster 1
+move_type walk
 unaggressive 1
 end
 arch afloor_left

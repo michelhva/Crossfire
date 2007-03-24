@@ -349,6 +349,7 @@ x 2
 y 8
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch dungeon_magic
@@ -1045,6 +1046,7 @@ x 6
 y 11
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch dungeon_magic
@@ -1819,6 +1821,7 @@ x 11
 y 4
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch dungeon_magic

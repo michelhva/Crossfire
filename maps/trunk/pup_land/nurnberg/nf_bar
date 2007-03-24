@@ -307,6 +307,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 unaggressive 1
 x 2
 y 5
@@ -742,6 +743,7 @@ hp 100
 speed_left -7.600000
 randomitems none
 monster 1
+move_type walk
 friendly 1
 x 4
 y 10
@@ -788,6 +790,7 @@ type 0
 hp 100
 randomitems standard
 monster 1
+move_type walk
 friendly 1
 x 4
 y 14
@@ -3303,6 +3306,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 22
 y 17
@@ -3324,6 +3328,7 @@ endmsg
 type 0
 hp 100
 monster 1
+move_type walk
 friendly 1
 x 22
 y 18
@@ -3658,6 +3663,7 @@ type 0
 hp 100
 randomitems standard
 monster 1
+move_type walk
 friendly 1
 x 24
 y 17

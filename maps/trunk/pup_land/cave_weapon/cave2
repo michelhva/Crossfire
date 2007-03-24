@@ -711,6 +711,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -918,6 +919,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1133,6 +1135,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1177,6 +1180,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1347,6 +1351,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1383,6 +1388,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1423,6 +1429,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1459,6 +1466,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1535,6 +1543,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1571,6 +1580,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1689,6 +1699,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1733,6 +1744,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1821,6 +1833,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1928,6 +1941,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -2053,6 +2067,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2164,6 +2179,7 @@ attacktype 7
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -2284,6 +2300,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2332,6 +2349,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2561,6 +2579,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2605,6 +2624,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -2844,6 +2864,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -3089,6 +3110,7 @@ level 10
 type 0
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 end
@@ -3500,6 +3522,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -3531,6 +3554,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -3711,6 +3735,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -3742,6 +3767,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -4071,6 +4097,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -4102,6 +4129,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -4301,6 +4329,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -4332,6 +4361,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -4533,6 +4563,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0

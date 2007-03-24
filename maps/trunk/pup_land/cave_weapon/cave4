@@ -216,6 +216,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -270,6 +271,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -316,6 +318,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -641,6 +644,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -722,6 +726,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -756,6 +761,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -811,6 +817,7 @@ carrying 12000
 randomitems none
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1126,6 +1133,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1296,6 +1304,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1330,6 +1339,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1436,6 +1446,7 @@ attacktype 7
 carrying 6000
 run_away 15
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_scroll 1
 can_use_wand 1
@@ -1516,6 +1527,7 @@ level 12
 type 0
 carrying 9000
 monster 1
+move_type walk
 can_cast_spell 1
 can_use_wand 1
 can_use_armour 0
@@ -1579,6 +1591,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1855,6 +1868,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1893,6 +1907,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1957,6 +1972,7 @@ type 0
 carrying 5000
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 arch nunchacu_1
@@ -2002,6 +2018,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -2397,6 +2414,7 @@ attack_movement 7
 level 12
 type 0
 monster 1
+move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -2467,6 +2485,7 @@ type 0
 carrying 300000
 run_away 15
 monster 1
+move_type walk
 can_use_armour 0
 can_use_weapon 0
 arch hammer_2

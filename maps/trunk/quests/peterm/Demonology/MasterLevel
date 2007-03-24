@@ -163,6 +163,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -300,6 +301,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -327,6 +329,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -390,6 +393,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -421,6 +425,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -482,6 +487,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -607,6 +613,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -668,6 +675,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -761,6 +769,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -834,6 +843,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -947,6 +957,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -1020,6 +1031,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -1059,6 +1071,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -1122,6 +1135,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -1161,6 +1175,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -1218,6 +1233,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -1245,6 +1261,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -1276,6 +1293,7 @@ attack_movement 7
 level 24
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_earth_elemental
@@ -1347,6 +1365,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -1488,6 +1507,7 @@ attack_movement 7
 level 22
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_air_elemental
@@ -1834,6 +1854,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -1865,6 +1886,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2006,6 +2028,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2065,6 +2088,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2104,6 +2128,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2165,6 +2190,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2260,6 +2286,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2337,6 +2364,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2454,6 +2482,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2511,6 +2540,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2542,6 +2572,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2573,6 +2604,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2674,6 +2706,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2818,6 +2851,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -2910,6 +2944,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2937,6 +2972,7 @@ attack_movement 7
 level 26
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -3004,6 +3040,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental
@@ -3039,6 +3076,7 @@ attack_movement 7
 level 28
 type 0
 monster 1
+move_type walk
 see_invisible 1
 can_cast_spell 1
 arch spell_summon_fire_elemental

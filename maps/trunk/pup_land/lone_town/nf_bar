@@ -149,6 +149,7 @@ x 1
 y 5
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch woodfloor
@@ -1449,6 +1450,7 @@ x 13
 y 16
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch woodfloor
@@ -2310,6 +2312,7 @@ x 21
 y 17
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch woodfloor
@@ -2331,6 +2334,7 @@ x 21
 y 18
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch awall_2_1_2
@@ -2639,6 +2643,7 @@ x 23
 y 17
 type 0
 monster 1
+move_type walk
 friendly 1
 end
 arch woodfloor
