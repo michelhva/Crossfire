@@ -1530,7 +1530,7 @@ To join the Liberation Army, where did
 you go?
  1. Tower of Ordeal
  2. Power Plant
- 3. Tower of Pupuly 
+ 3. Tower of Pupuly
 Answer one,two or three.
 endmsg
 x 9
@@ -1863,7 +1863,7 @@ arch human
 name Reception of Liberation Army
 msg
 @match *
-Do you want to join us? 
+Do you want to join us?
 endmsg
 type 0
 hp 100
@@ -2110,7 +2110,7 @@ To join the Regular Army, where did
 you go?
  1. Tower of Ordeal
  2. Power Plant
- 3. Tower of Pupuly 
+ 3. Tower of Pupuly
 Answer one,two or three.
 endmsg
 x 12
@@ -3230,7 +3230,7 @@ arch guildmaster
 name pupuly
 msg
 @match *
-Thank you for saving me. 
+Thank you for saving me.
 endmsg
 hp 500
 friendly 1

@@ -22,7 +22,7 @@ sub updatemap {
     local ($m, $made_change=0);
     $last = "";
     $parent = "";
-    
+
     if (! open (IN, $file)) {
 	print "Can't open map file $file\n";
 	return;
@@ -66,7 +66,7 @@ sub maplist {
 	next if ($file eq "." || $file eq ".." || $file eq "CVS");
 
 	$file = "$dir/$file";
-	next if (-l $file);	# don't process symbolic links 
+	next if (-l $file);	# don't process symbolic links
 	push (@dirs, $file) if (-d $file);
 	push (@maps, $file) if (-f $file);
     }

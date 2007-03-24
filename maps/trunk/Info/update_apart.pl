@@ -44,14 +44,14 @@ push(@SRC, "/_city_");
 push(@DST, "_scorn_");
 
 
-# Written by Mark Wedel (mwedel@sonic.net) 
+# Written by Mark Wedel (mwedel@sonic.net)
 # This borrows some amount of code from the map_info script written
 # by Tero Haatanen <Tero.Haatanen@lut.fi>
 
 # Name of the old map that we update exits on
 # Note that this can be a regexp.
 
-# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the 
+# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the
 # updates.  For example, scorn/city was broken up on two of the
 # map tiles, so this gets used to correspond that properly.
 # you can use very large END values just to make sure the entire
@@ -65,7 +65,7 @@ push(@DST, "_scorn_");
 # OLD_MAP_NAME: This is the path it tries to match in the slaying field.
 # It can be a regexp.  When updating within a specific directory of
 # a town, including the relative entries is possible.
-# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y is the range of spaces 
+# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y is the range of spaces
 # that we process.  If the location is not in this range, it is unchanged.
 # Note that you can have multiple entries with the same OLD_MAP_NAME
 # value as long as they have different START and END coordinates.
@@ -220,7 +220,7 @@ $NEW_MAP_OFFY[14]=6;
 $VERBOSE=0;
 $error=0;
 for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
-  if ((($OLD_MAP_STARTX[$i] + $NEW_MAP_OFFX[$i]) < 0) || 
+  if ((($OLD_MAP_STARTX[$i] + $NEW_MAP_OFFX[$i]) < 0) ||
     (($OLD_MAP_STARTY[$i] + $NEW_MAP_OFFY[$i]) < 0 )) {
 	print "oldmap $OLD_MAP_NAME[$i] ($OLD_MAP_STARTX[$i], $OLD_MAP_STARTX[$i] will result in negative destination coordinates.\n";
 	$error=1;
@@ -237,11 +237,11 @@ while ($file = shift (@maps)) {
     for ($xyz=0; $xyz <= $#SRC; $xyz++) {
 	$newfile =~ s#$SRC[$xyz]#$DST[$xyz]#;
     }
-    # 
+    #
     if ($newfile ne $file) {
 	if (-f $newfile) {
 	    print STDERR "$newfile exists.  Overwrite? ";
-	    # update_map mucks with $/ value, so reset 
+	    # update_map mucks with $/ value, so reset
 	    $/ = "\n";
 	    $ans = <STDIN>;
 	    if ($ans =~ /^(y|Y)/) {
@@ -249,7 +249,7 @@ while ($file = shift (@maps)) {
 		print STDERR "renaming $file -> $newfile\n";
 		rename($file, $newfile)
 	    } else {
-		$file = $newfile;   # so it still gets updated 
+		$file = $newfile;   # so it still gets updated
 	    }
 	}
 	else {
@@ -268,7 +268,7 @@ sub updatemap {
     $last = "";
     $parent = "";
     $file = shift;
-    
+
     # Note that $/ is the input record seperator.  By changing
     # this to \nend\n, it means that when we read from the file,
     # we basically read an entire arch at the same time.  Note that
@@ -297,7 +297,7 @@ sub updatemap {
 	    print /^name (.+)$/ ? $1 : "No mapname";
 	    print ", size [", /^x (\d+)$/ ? $1 : 16;
 	    print ",", /^y (\d+)/ ? $1 : 16, "]";
-    
+
 	    if (! /^msg$/) {
 		print ", No message\n";
 	    } elsif (/(\w+@\S+)/) {
@@ -330,7 +330,7 @@ sub updatemap {
 	    # Objects with inventory should not contain exits, so
 	    # do not need to try and process them.  Likewise, the objects
 	    # in the inventory should not contain exits.
-	} else { 
+	} else {
 	    for ($i=0; $i<=$#OLD_MAP_NAME; $i++) {
 		if (m#\nslaying $OLD_MAP_NAME[$i]\n#) {
 		    $destx = /\nhp (\d+)\n/ ? $1 : 0;
@@ -376,7 +376,7 @@ sub maplist {
 	next if ($file eq "." || $file eq ".." || $file eq "CVS");
 
 	$file = "$dir/$file";
-	next if (-l $file);	# don't process symbolic links 
+	next if (-l $file);	# don't process symbolic links
 	push (@dirs, $file) if (-d $file);
 	push (@maps, $file) if (-f $file);
     }

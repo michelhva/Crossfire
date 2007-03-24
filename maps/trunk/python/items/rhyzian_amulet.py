@@ -21,7 +21,7 @@ def getdir(loc1, loc2):
     if (loc[0] > 0):
         return start+"east"
     elif(loc[0] < 0):
-        return start+"west"    
+        return start+"west"
     else:
         return start
 
@@ -30,7 +30,7 @@ def getdist(loc1, loc2):
     loc = getdiff(loc1, loc2)
     return int(math.sqrt((loc[0]*loc[0])+(loc[1]*loc[1])))
 
-#outputs in miles 
+#outputs in miles
 def getuserdist(dist):
     return (int(dist/8.0+0.5))
 

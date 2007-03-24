@@ -19,4 +19,3 @@ def loc_from_ob(ob):
     x = (int(strloc[0]) * bigmapxsize) + ob.X
     y = (int(strloc[1]) * bigmapysize) + ob.Y
     return (x, y)
-    

@@ -586,7 +586,7 @@
 	  burn when it fell on the "eternal lake of fire". Removed the
 	  damnation from
 	  the shield.
-	  
+
 	  The Avatars (created by the generators) were a little too fast
 	  still. Slowed
 	  them some. They are also now "race Divine" instead of "race
@@ -1952,12 +1952,12 @@
 	  brest/zorn/castle.basement0
 	  Fix "emergency exit".
 	  Move a wall.
-	  
+
 	  Make Irritable Zorn a bit more difficult
 	  brest/brest.scrolls.right
 	  Someone bragged that he was easy for a level 1 character.
 	  Maybe not now. :-)
-	  
+
 	  Fix a problem with an invalid archetype on
 	  quests/peterm/quests/wyvern_quest
 
@@ -2386,7 +2386,7 @@
 	* maps/branches/1.x/HallOfDMs, HallOfDMs: Add altars for all cults
 	  and two 'test' altars to HallOfDMs ... because DMs might need to
 	  pray too.
-	  
+
 	  Since HallOfDMs has unique tiles the unique file will need to be
 	  removed for this update to apply correctly. Be sure to move any
 	  stuff off the map that needs to be kept before removing the
@@ -2400,10 +2400,10 @@
 	  brest/zorn/castle.upper.floor.two: Fixup the NPCs a bit to make
 	  them not so difficult after some server code changes. Add doors
 	  to the next levels above floor two. Minor tweaks.
-	  
+
 	  Happy 19th wedding anniversary to my wife Annie (December 31st
 	  1987 was one of my best days, love).
-	  
+
 	  Happy New Year all crossfire fans.
 
 2006-12-26 22:49  ryo_saeba
@@ -2431,10 +2431,10 @@
 	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
 	  brest/zorn/castle.upper.floor.two: Dang you Rednaxela! Dang you
 	  to heck! :-)
-	  
+
 	  Let's try this commit again after having to update the entire
 	  map tree thanks to Rednaxela.
-	  
+
 	  Update to Zorn Castle floor two. New modified monsters and some
 	  generators added. Also mods to the floor plan. The exits to the
 	  towers and to the top floor do not yet work. This floor is
@@ -6290,13 +6290,13 @@
 2006-10-07 14:47  k_ahlers
 
 	* quests/peterm/quests/wyvern_quest: Fixed Bug #1552319
-	  
+
 	  Not the best solution but now the chapel is usable.
 
 2006-10-07 14:27  k_ahlers
 
 	* lake_country/Mwizard/Mwizard5: Solved Bug #1530018
-	  
+
 	  I removed the runes and added "dungeon-magic" to the tiles
 	  below the door. This should prevent players casting some-
 	  thing through the door.
@@ -6869,7 +6869,7 @@
 
 	* trunk/maps/darcap/forgotten_town/quests/ft_quest_40: Added the
 	  40th part of the FT-Quest
-	  
+
 	  ATTENTION: This questpart is not linked! Do NOT add a link!
 
 2006-08-02 11:16  k_ahlers
@@ -9501,7 +9501,7 @@
 	  trunk/maps/pup_land/lone_town/town: Add a dragon tranport hangar
 	  building to Lone Town. More temptation to get
 	  a new apartment away from Scorn in Lone Town. :-)
-	  
+
 	  To add this map from CVS one will need to reset
 	  /pup_land/lone_town/town
 	  then remove pup_land@lone_town@town.v00 from
@@ -10802,7 +10802,7 @@
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessSMLibE2,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessSMLibW2,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2N3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2N3E1:
 	  CVS: big-world: unlinked: added some more duengon to the
 	  prisondemadness and added more quest hints to the NPCs in city
@@ -10987,53 +10987,53 @@
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABEMINE/MLABEMINE_1,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_4,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_5,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_6,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABGMINE/MLABGMINE_7,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL1,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL1/MLABHELL1_1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL1/MLABHELL1_2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL1/MLABHELL1_3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL1/MLABHELL1_4,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_10,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_4,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_5,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_6,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_7,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_8,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_9,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_10,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_7,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_8,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_9:
 	  Fix more missing things in commit of mlab-devel in unlinked
 
@@ -12101,43 +12101,43 @@
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_12,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_13,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_14,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_15,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_16,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_17,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_18,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_19,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABHELL2/MLABHELL2_20,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE,
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_11,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_12,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_13,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_14,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_15,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_4,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_5,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/styles/monsterstyles/MLABICE/MLABICE_6:
 	  Fixed commit of untarred mlab in unlinked.
 
@@ -12147,7 +12147,7 @@
 	  trunk/maps/unlinked/mlab-devel/mlab,
 	  trunk/maps/unlinked/mlab-devel/mlab/Nethack_in_crossfire_Yendor,
 	  trunk/maps/unlinked/mlab-devel/mlab/pris0ndemadnesss11thronehall,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessHLi12bigchest1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessPalace1N1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessPalaceB1W,
@@ -12163,35 +12163,35 @@
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessduelhall3a,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessduelhall3b,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnesssHL00whitebroom,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnesssHL02whitebroom,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnesssSMLibHL12,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon1b1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2N1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2N2,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2N3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon2S1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeon3,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeonWA,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeonWAN1,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronedungeonWAS1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehall,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehallE1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehallN1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehallN1well,
-	  
+
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehallS1,
 	  trunk/maps/unlinked/mlab-devel/mlab/prisondemadnessthronehallW1,
 	  trunk/maps/unlinked/mlab-devel/mlab/weapons,
@@ -12854,7 +12854,7 @@
 2005-08-11 15:55  bbotbuilder
 
 	* trunk/maps/azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
-	  
+
 	  trunk/maps/azumauindo/suno-yamatoshi/nenshou_youso/storage_room:
 	  Fixed issue where players can get "locked out" of their guild's
 	  storage
@@ -13845,7 +13845,7 @@
 	  will mostly be used to get the mlab maps into some sort of sane
 	  layout.
 	  update README to note these files.
-	  
+
 	  MSW 2005-04-13
 
 2005-04-14 07:02  mwedel
@@ -15266,7 +15266,7 @@
 	  to
 	  Mitch Obrian).
 	  -move ship to Wolfsburg from Scorn to Navar
-	  
+
 	  -remember to update your arches...
 
 2005-02-22 12:12  salathar
@@ -16507,7 +16507,7 @@
 	  - Slightly reduced duration of ball lightnings.
 	  - Added an additional line to the warning sign to mention
 	  the high risk of death in a clear way.
-	  
+
 	  --AndreasV
 
 2004-06-07 03:29  temitchell
@@ -17393,7 +17393,7 @@
 	* trunk/maps/dungeons/monkey_temple/m_temple1,
 	  trunk/maps/dungeons/monkey_temple/m_temple2: fix monkey_temple
 	  WARNING SPOILER!
-	  
+
 	  - add some magic mouth for antioc appearing...
 	  - add the listener for the secret exit (local copy of map was not
 	  updated in initial commit :( )
@@ -17688,7 +17688,7 @@
 	  trunk/maps/styles/wallstyles/water: - add a couple things to the
 	  styles like special doors for sylvan maps
 	  and a wall file for making hedge mazes
-	  
+
 	  tweek some existing styles
 
 2003-09-14 10:50  temitchell
@@ -18125,11 +18125,11 @@
 	  There are two passages where the road leads over the mountains.
 	  Players need to fight and survive the mountain tops in order
 	  to enter Brittany.
-	  
+
 	  Additionally I added a direct road to Lake Country.
 	  I have also replaced all wastelands inside Brittany by
 	  snowy mountains.
-	  
+
 	  --AndreasV
 
 2003-05-18 04:56  mwedel
@@ -18414,7 +18414,7 @@
 	* trunk/maps/dragonisland/thievesden: Fix floor tiles in map - was
 	  using floor tiles before, which wasn't
 	  really the right thing to do.
-	  
+
 	  MSW 2003-01-27
 
 2003-01-27 07:14  mwedel
@@ -18793,7 +18793,7 @@
 	  missing "activate_on_push/release" flags. Same changes
 	  as to the standard map set, including a fix for
 	  reception tower map-bug.
-	  
+
 	  --AndreasV
 
 2002-10-27 04:09  temitchell
@@ -19854,11 +19854,11 @@
 	  trunk/maps/world/world_109_125, trunk/maps/world/world_109_126,
 	  trunk/maps/world/world_122_117: Add lake_county (kundi_area)
 	  maps to world southeast of brest.
-	  
+
 	  Update world maps road connects to this city. Also, fix up some
 	  typos/
 	  incorrect map path names.
-	  
+
 	  Add dreaming_sage guild to navar city.
 	  MSW 2002-07-22
 
@@ -19919,7 +19919,7 @@
 	  trunk/maps/scorn/misc/church, trunk/maps/scorn/oldcity/oldcity7,
 	  trunk/maps/scorn/peterm, trunk/maps/scorn/peterm/undead_quest:
 	  Fix a bunch of broken exits.
-	  
+
 	  Add some of the peterm maps that are linked to maps already
 	  added.
 	  MSW 2002-06-04
@@ -19982,9 +19982,9 @@
 	  trunk/maps/navar_city/warehouse6,
 	  trunk/maps/navar_city/warehouse7,
 	  trunk/maps/navar_city/warehouse8: Add navar_city maps.
-	  
+
 	  Update background picks to include shallow sea, deep sea.
-	  
+
 	  MSW 2002-06-02
 
 2002-06-03 07:24  mwedel
@@ -20002,9 +20002,9 @@
 	  trunk/maps/world/world_121_117, trunk/maps/world/world_122_116,
 	  trunk/maps/world/world_122_117: Add navar_city to maps, with
 	  road connecting to scorn.
-	  
+
 	  Fix some broken exits in brest.
-	  
+
 	  MSW 2002-06-02
 
 2002-06-01 08:13  mwedel
@@ -20067,13 +20067,13 @@
 	  trunk/maps/world/world_107_122, trunk/maps/world/world_107_123,
 	  trunk/maps/world/world_107_124, trunk/maps/world/world_108_123:
 	  Add brest/brittany maps.
-	  
+
 	  Update the scorn map so that there are some light sources, so
 	  even at night
 	  you can still find your way around.
-	  
+
 	  Other world maps updated to add roads that link brest and scorn.
-	  
+
 	  MSW 2002-05-30
 
 2002-05-31 07:00  mwedel
@@ -20103,9 +20103,9 @@
 	  trunk/maps/world/world_105_113: Fix some exits in santo_dominion
 	  which didn't lead back to the map
 	  properly.
-	  
+
 	  Add euthville (kar) maps.
-	  
+
 	  MSW 2002-05-30
 
 2002-05-29 07:03  mwedel
@@ -20533,7 +20533,7 @@
 	* trunk/maps/Info/README, trunk/maps/Info/update_exits.pl: README:
 	  Add notes to describe process of moving unique maps to
 	  maps-bigworld system.
-	  
+
 	  update_exits.pl: Modified to include any number of source and
 	  destination values, so the script can be used to update any
 	  number
@@ -20635,7 +20635,7 @@
 	  Update scorn maps with changes that have been made in the main
 	  map
 	  distribution.
-	  
+
 	  Add santo_dominion maps, as well as road connecting scorn and
 	  santo dominion.
 	  MSW 2002-05-19

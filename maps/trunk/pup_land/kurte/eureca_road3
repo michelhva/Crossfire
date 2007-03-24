@@ -1974,7 +1974,7 @@ To join the Liberation Army, where did
 you go?
  1. Tower of Ordeal
  2. Power Plant
- 3. Tower of Pupuly 
+ 3. Tower of Pupuly
 Answer one,two or three.
 endmsg
 x 9
@@ -2412,7 +2412,7 @@ arch human
 name Reception of Liberation Army
 msg
 @match hi|hello
-Do you want to join us? 
+Do you want to join us?
 endmsg
 type 0
 hp 100
@@ -2757,7 +2757,7 @@ To join the Regular Army, where did
 you go?
  1. Cave of Ordeal
  2. Tower of Ordeal
- 3. Tower of Pupuly 
+ 3. Tower of Pupuly
 Answer one,two or three.
 endmsg
 x 12
@@ -4235,7 +4235,7 @@ arch guildmaster
 name pupuly
 msg
 @match hi|hello
-Thank you for saving me. 
+Thank you for saving me.
 endmsg
 hp 500
 friendly 1
@@ -6288,7 +6288,7 @@ arch warrior_1
 name Alex, the general
 msg
 @match hi|hello
-We have to save Eureca!  
+We have to save Eureca!
 endmsg
 Con 100
 Wis 100
@@ -7935,7 +7935,7 @@ msg
 @match hi|hello
 I'm hungry mum..
 Lauretta says:
-Bernie, you must endure. 
+Bernie, you must endure.
 endmsg
 Con 100
 hp 18000
@@ -8170,7 +8170,7 @@ arch sage
 name Bauer
 msg
 @match hi|hello
-We have to save Eureca! 
+We have to save Eureca!
 endmsg
 hp 180
 carrying 100
@@ -9293,7 +9293,7 @@ arch scroll
 msg
 Pass on the five pentagrams quickly,
 then go to the center.
-Please burn me after reading! 
+Please burn me after reading!
 endmsg
 x 36
 y 31
