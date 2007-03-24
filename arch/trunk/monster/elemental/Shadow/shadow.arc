@@ -8,6 +8,7 @@ shadow.111
 shadow.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1

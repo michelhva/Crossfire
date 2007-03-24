@@ -3,6 +3,7 @@ randomitems cyclops
 face cyclops.x31
 race giant
 monster 1
+move_type walk
 sleep 1
 Wis 11
 anim
@@ -67,6 +68,7 @@ cyclops.x31
 cyclops.x32
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -84,6 +86,7 @@ cyclops.x31
 cyclops.x32
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -101,6 +104,7 @@ cyclops.x31
 cyclops.x32
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -119,6 +123,7 @@ cyclops.x31
 cyclops.x32
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2
@@ -136,6 +141,7 @@ cyclops.x31
 cyclops.x32
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1

@@ -9,6 +9,7 @@ imp.131
 mina
 race demon
 monster 1
+move_type walk
 can_see_in_dark 1
 can_cast_spell 1
 see_invisible 1

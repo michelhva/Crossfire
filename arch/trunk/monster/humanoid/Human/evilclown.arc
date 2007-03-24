@@ -4,6 +4,7 @@ name evil clown
 randomitems evilclown
 face evilclown.111
 monster 1
+move_type walk
 alive 1
 ac -80
 wc -50

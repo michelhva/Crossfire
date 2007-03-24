@@ -6,6 +6,7 @@ maxsp 40
 Int 2
 Pow 2
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 level 1

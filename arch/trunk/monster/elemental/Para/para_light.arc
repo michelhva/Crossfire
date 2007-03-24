@@ -10,6 +10,7 @@ para_light.112
 para_light.113
 mina
 monster 1
+move_type walk
 alive 1
 ac 3
 wc 9

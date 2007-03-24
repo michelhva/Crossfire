@@ -11,6 +11,7 @@ slimecrawler.112
 mina
 anim_speed 6
 monster 1
+move_type walk
 sleep 1
 alive 1
 see_invisible 1

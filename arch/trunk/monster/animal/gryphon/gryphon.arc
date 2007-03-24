@@ -3,6 +3,7 @@ race animal
 name Dark Gryphon
 randomitems gryphon
 monster 1
+move_type walk
 sleep 1
 Wis 15
 face gryphon.x31
@@ -91,6 +92,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 x 1
@@ -140,6 +142,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 y 1
@@ -165,6 +168,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 x 1
@@ -191,6 +195,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 x 2
@@ -217,6 +222,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 y 2
@@ -242,6 +248,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 x 1
@@ -268,6 +275,7 @@ gryphon.x73
 gryphon.x72
 mina
 monster 1
+move_type walk
 alive 1
 anim_speed 1.0
 x 2

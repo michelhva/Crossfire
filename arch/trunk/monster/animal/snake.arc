@@ -15,6 +15,7 @@ snake.113
 mina
 color_fg green
 monster 1
+move_type walk
 sleep 1
 Wis 8
 alive 1

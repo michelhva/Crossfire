@@ -13,6 +13,7 @@ dog.173
 dog.172
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1

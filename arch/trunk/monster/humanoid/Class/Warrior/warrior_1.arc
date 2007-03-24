@@ -12,6 +12,7 @@ Str 18
 Dex 13
 Cha 18
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 1

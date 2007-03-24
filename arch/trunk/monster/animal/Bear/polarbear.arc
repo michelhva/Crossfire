@@ -3,6 +3,7 @@ race animal
 name polar bear
 randomitems polarbear
 monster 1
+move_type walk
 sleep 1
 Wis 10
 face polarbear.x31
@@ -47,6 +48,7 @@ polarbear.x72
 facings 2
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

@@ -9,6 +9,7 @@ goblin_chief.111
 goblin_chief.111
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 10
 no_pick 1

@@ -12,6 +12,7 @@ Int 30
 Wis 30
 Pow 30
 monster 1
+move_type walk
 alive 1
 attacktype 8
 resist_electricity 100

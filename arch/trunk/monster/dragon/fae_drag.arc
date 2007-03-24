@@ -13,6 +13,7 @@ fae_drag.132
 mina
 level 8
 monster 1
+move_type walk
 sleep 1
 unaggressive 1
 Wis 15

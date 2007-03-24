@@ -3,6 +3,7 @@ name baby dragon
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face baby_drag.111

@@ -25,6 +25,7 @@ resist_blind 100
 attacktype 66048
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 15
 undead 1

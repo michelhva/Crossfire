@@ -15,6 +15,7 @@ centipede_r.112
 centipede_r.113
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 5
 can_see_in_dark 1

@@ -9,6 +9,7 @@ fiend.111
 fiend.112
 mina
 monster 1
+move_type walk
 Wis 15
 see_invisible 1
 no_pick 1

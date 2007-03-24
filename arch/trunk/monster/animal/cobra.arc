@@ -12,6 +12,7 @@ color_fg green
 speed -0.1
 anim_speed 3
 monster 1
+move_type walk
 sleep 1
 Wis 10
 alive 1

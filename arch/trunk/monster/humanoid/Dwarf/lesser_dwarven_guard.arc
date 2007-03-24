@@ -15,6 +15,7 @@ Str 25
 Dex 12
 Int 9
 monster 1
+move_type walk
 attack_movement 4
 alive 1
 ac -5

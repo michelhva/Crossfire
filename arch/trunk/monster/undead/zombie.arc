@@ -10,6 +10,7 @@ zombie.112
 mina
 color_fg grey
 monster 1
+move_type walk
 sleep 1
 Wis 10
 undead 1

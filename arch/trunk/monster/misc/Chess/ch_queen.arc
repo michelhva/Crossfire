@@ -7,6 +7,7 @@ sp 15
 maxsp 15
 Pow 15
 monster 1
+move_type walk
 alive 1
 ac 8
 wc 10

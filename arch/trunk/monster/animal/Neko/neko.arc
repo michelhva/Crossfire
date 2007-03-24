@@ -14,6 +14,7 @@ neko.117
 neko.118
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 8
 no_pick 1

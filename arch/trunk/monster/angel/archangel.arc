@@ -6,6 +6,7 @@ face archangel.118
 color_fg white
 animation archangle
 monster 1
+move_type walk
 sleep 1
 Wis 15
 see_invisible 1

@@ -15,6 +15,7 @@ pup.172
 pup.171
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 10
 alive 1

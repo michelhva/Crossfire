@@ -8,6 +8,7 @@ sheep.131
 sheep.171
 mina
 monster 1
+move_type walk
 Wis 5
 alive 1
 level 1

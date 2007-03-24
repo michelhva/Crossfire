@@ -10,6 +10,7 @@ work_ant.171
 work_ant.172
 mina
 monster 1
+move_type walk
 no_pick 1
 Con 10
 alive 1

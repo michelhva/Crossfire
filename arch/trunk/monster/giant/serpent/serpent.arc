@@ -4,6 +4,7 @@ race reptile
 randomitems serpent
 face serpent.x31
 monster 1
+move_type walk
 Wis 15
 anim
 facings 2
@@ -43,6 +44,7 @@ serpent.x71
 serpent.x72
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1

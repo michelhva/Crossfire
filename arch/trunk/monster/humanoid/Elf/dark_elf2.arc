@@ -11,6 +11,7 @@ dark_elf2.171
 dark_elf2.172
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 25
 no_pick 1

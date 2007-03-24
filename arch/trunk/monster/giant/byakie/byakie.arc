@@ -3,6 +3,7 @@ randomitems byakie
 face byakie.x11
 race chaos
 monster 1
+move_type walk
 sleep 1
 Wis 21
 anim
@@ -56,6 +57,7 @@ byakie.x11
 byakie.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -70,6 +72,7 @@ byakie.x11
 byakie.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -84,6 +87,7 @@ byakie.x11
 byakie.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1

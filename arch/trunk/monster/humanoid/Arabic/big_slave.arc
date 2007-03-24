@@ -6,6 +6,7 @@ face big_slave.111
 alive 1
 level 1
 monster 1
+move_type walk
 hp 30
 maxhp 30
 Str 20

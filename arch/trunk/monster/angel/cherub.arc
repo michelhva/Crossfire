@@ -3,6 +3,7 @@ race angel
 name cherub
 face cupid.111
 monster 1
+move_type walk
 see_invisible 1
 can_see_in_dark 1
 no_pick 1

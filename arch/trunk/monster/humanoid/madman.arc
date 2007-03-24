@@ -7,6 +7,7 @@ madman.111
 madman.112
 mina
 monster 1
+move_type walk
 sleep 1
 Str 15
 Int 3

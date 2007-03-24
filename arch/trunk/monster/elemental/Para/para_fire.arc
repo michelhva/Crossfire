@@ -9,6 +9,7 @@ para_fire.111
 para_fire.112
 mina
 monster 1
+move_type walk
 alive 1
 resist_fire 100
 

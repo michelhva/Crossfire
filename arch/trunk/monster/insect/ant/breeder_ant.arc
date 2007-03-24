@@ -10,6 +10,7 @@ breeder_ant.x12
 mina
 color_fg dark_orange
 monster 1
+move_type walk
 no_pick 1
 alive 1
 Con 20
@@ -45,6 +46,7 @@ breeder_ant.x12
 mina
 color_fg dark_orange
 monster 1
+move_type walk
 no_pass 1
 no_pick 1
 alive 1

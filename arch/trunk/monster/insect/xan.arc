@@ -8,6 +8,7 @@ xan.111
 xan.112
 mina
 monster 1
+move_type walk
 sleep 1
 can_see_in_dark 1
 Wis 6

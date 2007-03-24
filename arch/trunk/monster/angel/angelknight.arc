@@ -3,6 +3,7 @@ name Angel Knight
 race angel
 face angelknight.x11
 monster 1
+move_type walk
 level 8
 hp 100
 maxhp 100
@@ -56,6 +57,7 @@ Object angel_knight_2
 name Angel Knight
 face angelknight.x11
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

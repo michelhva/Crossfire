@@ -6,6 +6,7 @@ color_fg grey
 speed 0.06
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 10
 see_invisible 1

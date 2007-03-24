@@ -10,6 +10,7 @@ thief.151
 thief.171
 mina
 monster 1
+move_type walk
 alive 1
 Str 10
 Dex 25

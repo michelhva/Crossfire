@@ -3,6 +3,7 @@ race angel
 face holyghost.111
 name holy ghost
 monster 1
+move_type walk
 sleep 1
 see_invisible 1
 can_see_in_dark 1

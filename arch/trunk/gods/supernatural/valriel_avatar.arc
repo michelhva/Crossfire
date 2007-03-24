@@ -11,6 +11,7 @@ Wis 30
 Pow 30
 is_animated 1
 monster 1
+move_type walk
 alive 1
 attacktype 4194305
 path_attuned 1025

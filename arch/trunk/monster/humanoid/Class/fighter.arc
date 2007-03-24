@@ -17,6 +17,7 @@ Dex 15
 Int 10
 Pow 1
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 1

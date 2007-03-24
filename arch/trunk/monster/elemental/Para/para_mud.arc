@@ -15,6 +15,7 @@ para_mud.113
 para_mud.112
 mina
 monster 1
+move_type walk
 alive 1
 ac 8
 wc 9

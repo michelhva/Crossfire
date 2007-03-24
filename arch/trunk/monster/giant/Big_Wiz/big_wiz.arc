@@ -3,6 +3,7 @@ race giant
 name wizard
 randomitems big_wizard
 monster 1
+move_type walk
 sleep 1
 Wis 15
 face big_wiz.x11
@@ -82,6 +83,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 0
@@ -104,6 +106,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 0
@@ -126,6 +129,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 x 0
@@ -148,6 +152,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -170,6 +175,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 1
@@ -192,6 +198,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 2
 x 0
@@ -214,6 +221,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 2
@@ -236,6 +244,7 @@ big_wiz.x13
 big_wiz.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 2

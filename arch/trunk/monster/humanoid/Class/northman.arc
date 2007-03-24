@@ -17,6 +17,7 @@ Int 10
 Str 18
 Dex 14
 monster 1
+move_type walk
 alive 1
 ac 1
 wc 9

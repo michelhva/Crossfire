@@ -10,6 +10,7 @@ para_water.112
 para_water.113
 mina
 monster 1
+move_type walk
 alive 1
 ac 6
 wc 9

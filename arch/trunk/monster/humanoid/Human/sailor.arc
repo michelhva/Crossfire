@@ -4,6 +4,7 @@ name sailor
 randomitems pirate
 face sailor.111
 monster 1
+move_type walk
 unaggressive 1
 random_movement 1
 alive 1

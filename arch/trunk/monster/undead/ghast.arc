@@ -9,6 +9,7 @@ ghast.112
 ghast.113
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 14
 undead 1

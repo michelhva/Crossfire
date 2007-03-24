@@ -11,6 +11,7 @@ s_wyvern.x71
 s_wyvern.x72
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1
@@ -60,6 +61,7 @@ s_wyvern.x71
 s_wyvern.x72
 mina
 monster 1
+move_type walk
 x 1
 alive 1
 no_pick 1

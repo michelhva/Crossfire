@@ -4,6 +4,7 @@ race insect
 other_arch ant_larvae
 color_fg dark_orange
 monster 1
+move_type walk
 no_pick 1
 alive 1
 exp 1

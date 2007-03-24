@@ -5,6 +5,7 @@ randomitems npc_ninja
 face ninja.171
 animation ninja
 monster 1
+move_type walk
 maxsp 7
 sp 7
 Pow 1

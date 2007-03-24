@@ -9,6 +9,7 @@ serp_priest.131
 serp_priest.171
 mina
 monster 1
+move_type walk
 no_pick 1
 alive 1
 exp 700

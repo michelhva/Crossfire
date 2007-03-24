@@ -16,6 +16,7 @@ Pow 9
 sp 40
 maxsp 40
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 10

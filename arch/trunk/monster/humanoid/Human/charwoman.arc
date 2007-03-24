@@ -10,6 +10,7 @@ charwoman.171
 charwoman.172
 mina
 monster 1
+move_type walk
 unaggressive 1
 random_movement 1
 alive 1

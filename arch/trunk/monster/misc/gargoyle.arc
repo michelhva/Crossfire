@@ -10,6 +10,7 @@ gargoyle.112
 gargoyle.111
 mina
 monster 1
+move_type walk
 Str 30
 Wis 15
 Con 10

@@ -26,6 +26,7 @@ randomitems sage
 run_away 100
 alive 1
 monster 1
+move_type walk
 see_invisible 1
 scared 1
 unaggressive 1

@@ -4,6 +4,7 @@ name wild pyromaniac
 randomitems pyromaniac
 alive 1
 monster 1
+move_type walk
 no_pick 1
 type 139
 face pyromaniac.111

@@ -8,6 +8,7 @@ broo.113
 broo.112
 mina
 monster 1
+move_type walk
 no_pick 1
 alive 1
 exp 400

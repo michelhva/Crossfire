@@ -13,6 +13,7 @@ elec_drag.132
 mina
 level 8
 monster 1
+move_type walk
 sleep 1
 Wis 15
 see_invisible 1

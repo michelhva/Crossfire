@@ -10,6 +10,7 @@ lokanth.171
 lokanth.172
 mina
 monster 1
+move_type walk
 Wis 10
 Int 12
 Con 5

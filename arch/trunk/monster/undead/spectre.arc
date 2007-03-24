@@ -4,6 +4,7 @@ name Spectre
 randomitems spectre
 face spectre.111
 monster 1
+move_type walk
 sleep 1
 alive 1
 Wis 17

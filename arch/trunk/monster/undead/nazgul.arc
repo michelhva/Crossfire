@@ -28,6 +28,7 @@ attacktype 160
 carrying 100
 alive 1
 monster 1
+move_type walk
 reflect_spell 1
 sleep 1
 Wis 15

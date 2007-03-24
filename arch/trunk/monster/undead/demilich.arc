@@ -15,6 +15,7 @@ speed 0.25
 anim_speed 5
 alive 1
 monster 1
+move_type walk
 unaggressive 1
 random_movement 1
 can_cast_spell 1

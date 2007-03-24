@@ -10,6 +10,7 @@ postman.171
 postman.172
 mina
 monster 1
+move_type walk
 alive 1
 ac 6
 wc 12

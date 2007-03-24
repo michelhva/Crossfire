@@ -22,6 +22,7 @@ resist_fire -100
 weight 30000
 alive 1
 monster 1
+move_type walk
 hitback 1
 sleep 1
 editable 1

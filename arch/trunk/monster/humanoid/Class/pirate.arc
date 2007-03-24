@@ -7,6 +7,7 @@ pirate.111
 pirate.112
 mina
 monster 1
+move_type walk
 sleep 1
 Int 13
 Dex 20

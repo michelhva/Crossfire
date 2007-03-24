@@ -34,6 +34,7 @@ can_apply 25
 alive 1
 no_pick 1
 monster 1
+move_type walk
 see_invisible 1
 undead 1
 can_cast_spell 1

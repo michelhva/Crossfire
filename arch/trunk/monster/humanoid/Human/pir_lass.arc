@@ -15,6 +15,7 @@ Str 13
 Dex 15
 Pow 9
 monster 1
+move_type walk
 alive 1
 ac 1
 wc 3

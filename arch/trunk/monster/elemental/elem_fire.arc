@@ -8,6 +8,7 @@ elem_fire.111
 elem_fire.112
 mina
 monster 1
+move_type walk
 alive 1
 resist_fire 100
 attacktype 4

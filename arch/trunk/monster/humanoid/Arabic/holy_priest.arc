@@ -10,6 +10,7 @@ mina
 speed 0.16
 alive 1
 monster 1
+move_type walk
 Wis 25
 see_invisible 1
 no_pick 1

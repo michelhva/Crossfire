@@ -43,5 +43,6 @@ resist_cold 100
 resist_confusion -100
 resist_drain -100
 monster 1
+move_type walk
 editable 1
 end

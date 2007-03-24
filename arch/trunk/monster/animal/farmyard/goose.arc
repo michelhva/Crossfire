@@ -10,6 +10,7 @@ goose.131
 goose.132
 mina
 monster 1
+move_type walk
 Wis 1
 alive 1
 level 2

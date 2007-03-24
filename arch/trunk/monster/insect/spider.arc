@@ -37,6 +37,7 @@ spider.184
 facings 8
 mina
 monster 1
+move_type walk
 sleep 1
 can_see_in_dark 1
 Wis 8

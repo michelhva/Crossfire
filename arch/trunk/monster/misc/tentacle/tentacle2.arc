@@ -15,6 +15,7 @@ mina
 anim_speed 5
 randomitems tentacle
 monster 1
+move_type walk
 sleep 1
 alive 1
 see_invisible 1

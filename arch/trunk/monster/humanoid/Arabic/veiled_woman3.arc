@@ -5,6 +5,7 @@ face veiled_woman3.111
 alive 1
 color_fg green
 monster 1
+move_type walk
 no_pick 1
 hp 15
 maxhp 15

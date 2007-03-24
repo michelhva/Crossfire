@@ -10,6 +10,7 @@ chicken.171
 chicken.172
 mina
 monster 1
+move_type walk
 Wis 1
 alive 1
 level 1

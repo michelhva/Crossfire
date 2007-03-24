@@ -8,6 +8,7 @@ ant_larvae.112
 mina
 color_fg green
 monster 1
+move_type walk
 no_pick 1
 alive 1
 exp 5

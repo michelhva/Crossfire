@@ -4,6 +4,7 @@ face sphinx.x31
 randomitems sphinx
 race unnatural
 monster 1
+move_type walk
 sleep 1
 Wis 20
 anim
@@ -49,6 +50,7 @@ sphinx.x31
 sphinx.x71
 mina
 monster 1
+move_type walk
 x 1
 alive 1
 no_pick 1

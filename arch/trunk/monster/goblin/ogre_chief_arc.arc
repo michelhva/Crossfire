@@ -8,6 +8,7 @@ ogre_chief.111
 ogre_chief.111
 mina
 monster 1
+move_type walk
 sleep 1
 no_pick 1
 alive 1

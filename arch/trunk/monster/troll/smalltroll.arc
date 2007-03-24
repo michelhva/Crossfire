@@ -9,6 +9,7 @@ smalltroll.112
 mina
 color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5

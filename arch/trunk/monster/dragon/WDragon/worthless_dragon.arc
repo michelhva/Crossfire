@@ -3,6 +3,7 @@ name worthless dragon
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face worthless_dragon.x71
@@ -64,6 +65,7 @@ worthless_dragon.x32
 mina
 color_fg blue
 monster 1
+move_type walk
 alive 1
 x 1
 weight 4000000
@@ -86,6 +88,7 @@ worthless_dragon.x32
 mina
 color_fg blue
 monster 1
+move_type walk
 alive 1
 x 2
 weight 4000000
@@ -108,6 +111,7 @@ worthless_dragon.x32
 mina
 color_fg blue
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000
@@ -130,6 +134,7 @@ worthless_dragon.x32
 mina
 color_fg blue
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -153,6 +158,7 @@ worthless_dragon.x32
 mina
 color_fg blue
 monster 1
+move_type walk
 alive 1
 x 2
 y 1
