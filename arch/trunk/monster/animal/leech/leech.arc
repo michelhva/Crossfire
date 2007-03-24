@@ -16,6 +16,7 @@ mina
 anim_speed 4
 randomitems leech
 monster 1
+move_type walk
 sleep 1
 no_pick 1
 alive 1

@@ -9,6 +9,7 @@ witch_fire.111
 witch_fire.112
 mina
 monster 1
+move_type walk
 alive 1
 resist_magic 25
 resist_poison 100

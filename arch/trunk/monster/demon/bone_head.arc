@@ -10,6 +10,7 @@ bone_head.113
 bone_head.112
 mina
 monster 1
+move_type walk
 sleep 1
 friendly 1
 Wis 20

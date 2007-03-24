@@ -11,6 +11,7 @@ skeletalmage.113
 skeletalmage.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 14
 Pow 5

@@ -35,6 +35,7 @@ blank.111
 mina
 exp 100000
 monster 1
+move_type walk
 alive 1
 no_pick 1
 flying 1

@@ -4,6 +4,7 @@ name djinn
 randomitems djinn_magenta
 face djinn_magenta.x11
 monster 1
+move_type walk
 sleep 1
 Wis 25
 anim
@@ -79,6 +80,7 @@ djinn_magenta.x21
 djinn_magenta.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

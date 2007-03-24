@@ -16,6 +16,7 @@ Dex 10
 sp 40
 maxsp 40
 monster 1
+move_type walk
 alive 1
 ac 1
 wc 15

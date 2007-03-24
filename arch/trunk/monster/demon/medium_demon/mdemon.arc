@@ -37,6 +37,7 @@ alive 1
 speed 0.3
 weight 300000
 monster 1
+move_type walk
 Wis 13
 alive 1
 run_away 3
@@ -59,6 +60,7 @@ mdemon.x11
 mdemon.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 300000
@@ -74,6 +76,7 @@ mdemon.x11
 mdemon.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 300000
@@ -89,6 +92,7 @@ mdemon.x11
 mdemon.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 x 1

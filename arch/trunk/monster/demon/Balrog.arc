@@ -21,6 +21,7 @@ resist_paralyze 100
 resist_poison 100
 resist_blind 100
 monster 1
+move_type walk
 sleep 1
 Wis 20
 Con 40
@@ -81,6 +82,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -97,6 +99,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -113,6 +116,7 @@ empty.111
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 3
@@ -129,6 +133,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -145,6 +150,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -162,6 +168,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -179,6 +186,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 3
@@ -196,6 +204,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2
@@ -212,6 +221,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -229,6 +239,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -246,6 +257,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 3
@@ -263,6 +275,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 3
@@ -279,6 +292,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -296,6 +310,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -313,6 +328,7 @@ jessyb.x13
 jessyb.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 3

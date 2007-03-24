@@ -4,6 +4,7 @@ name Veiled woman
 face veiled_woman2.111
 alive 1
 monster 1
+move_type walk
 no_pick 1
 hp 15
 maxhp 15

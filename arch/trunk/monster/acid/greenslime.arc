@@ -8,6 +8,7 @@ greenslime.111
 greenslime.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 5
 alive 1

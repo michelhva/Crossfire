@@ -10,6 +10,7 @@ c_priest.171
 c_priest.172
 mina
 monster 1
+move_type walk
 Wis 10
 Str 10
 Int 20
@@ -70,6 +71,7 @@ c_priest.171
 c_priest.172
 mina
 monster 1
+move_type walk
 Wis 10
 Int 23
 Pow 25

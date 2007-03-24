@@ -5,6 +5,7 @@ race goblin,giant,troll
 animation small_troll
 is_animated 1
 monster 1
+move_type walk
 alive 1
 Str 20
 Con 30

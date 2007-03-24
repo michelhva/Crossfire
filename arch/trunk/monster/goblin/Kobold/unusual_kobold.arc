@@ -7,6 +7,7 @@ unusual_kobold.111
 unusual_kobold.112
 mina
 monster 1
+move_type walk
 sleep 1
 Str 30
 Dex 30

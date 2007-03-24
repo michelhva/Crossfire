@@ -28,6 +28,7 @@ Pow 81
 Int 20
 Wis 30
 monster 1
+move_type walk
 sleep 1
 alive 1
 no_pick 1

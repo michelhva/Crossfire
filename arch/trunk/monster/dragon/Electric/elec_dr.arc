@@ -3,6 +3,7 @@ name electric dragon
 race dragon
 randomitems big_elec
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face elec_dr.x11
@@ -54,6 +55,7 @@ elec_dr.x11
 elec_dr.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 4000000
@@ -72,6 +74,7 @@ elec_dr.x11
 elec_dr.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000
@@ -90,6 +93,7 @@ elec_dr.x11
 elec_dr.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -109,6 +113,7 @@ elec_dr.x11
 elec_dr.x12
 mina
 monster 1
+move_type walk
 alive 1
 y 2
 weight 4000000
@@ -127,6 +132,7 @@ elec_dr.x11
 elec_dr.x12
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 2

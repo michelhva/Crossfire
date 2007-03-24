@@ -15,6 +15,7 @@ hellhound.173
 hellhound.172
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1
@@ -89,6 +90,7 @@ level 40
 speed -0.2
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 20
 see_invisible 1

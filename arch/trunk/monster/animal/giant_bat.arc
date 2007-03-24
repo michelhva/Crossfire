@@ -9,6 +9,7 @@ giant_bat.112
 giant_bat.113
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 15
 no_pick 1

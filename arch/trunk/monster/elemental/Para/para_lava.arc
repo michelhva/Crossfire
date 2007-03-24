@@ -11,6 +11,7 @@ para_lava.113
 para_lava.112
 mina
 monster 1
+move_type walk
 alive 1
 resist_fire 100
 

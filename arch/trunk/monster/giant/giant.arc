@@ -3,6 +3,7 @@ race giant
 name hill giant
 randomitems giant
 monster 1
+move_type walk
 sleep 1
 Wis 10
 face giant.x11
@@ -45,6 +46,7 @@ giant.x11
 giant.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

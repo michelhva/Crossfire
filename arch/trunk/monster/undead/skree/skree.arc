@@ -5,6 +5,7 @@ randomitems skree
 animation skree_1
 attacktype 1025
 monster 1
+move_type walk
 sleep 1
 Wis 20
 resist_fear 100

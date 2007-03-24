@@ -4,6 +4,7 @@ race human
 randomitems c_thief
 face child.111
 monster 1
+move_type walk
 alive 1
 ac 7
 wc 18

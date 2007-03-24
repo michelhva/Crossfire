@@ -3,6 +3,7 @@ name ancient red dragon
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face dragon_ac.x71
@@ -65,6 +66,7 @@ dragon_ac.x33
 dragon_ac.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 4000000
@@ -86,6 +88,7 @@ dragon_ac.x33
 dragon_ac.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 weight 4000000
@@ -107,6 +110,7 @@ dragon_ac.x33
 dragon_ac.x34
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000
@@ -128,6 +132,7 @@ dragon_ac.x33
 dragon_ac.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -150,6 +155,7 @@ dragon_ac.x33
 dragon_ac.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 1

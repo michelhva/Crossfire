@@ -8,6 +8,7 @@ elem_earth.111
 elem_earth.112
 mina
 monster 1
+move_type walk
 alive 1
 ac 5
 wc 8

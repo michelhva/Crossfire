@@ -46,6 +46,7 @@ alive 1
 no_pick 1
 is_animated 1
 monster 1
+move_type walk
 undead 1
 see_invisible 1
 unaggressive 1

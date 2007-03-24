@@ -6,6 +6,7 @@ ant.111
 ant.112
 mina
 monster 1
+move_type walk
 no_pick 1
 alive 1
 can_see_in_dark 1

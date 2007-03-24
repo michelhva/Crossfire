@@ -11,6 +11,7 @@ killerbee.112
 mina
 color_fg orange
 monster 1
+move_type walk
 sleep 1
 can_see_in_dark 1
 Wis 10

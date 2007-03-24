@@ -3,6 +3,7 @@ race demon
 name Belzebub
 randomitems belzebub
 monster 1
+move_type walk
 sleep 1
 Wis 25
 face belzebub.x11

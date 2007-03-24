@@ -19,6 +19,7 @@ mina
 speed -0.4
 attack_movement 3
 monster 1
+move_type walk
 sleep 1
 Wis 10
 resist_fear 100

@@ -8,6 +8,7 @@ mudman.111
 mudman.112
 mina
 monster 1
+move_type walk
 Str 12
 Dex 15
 Con 20

@@ -3,6 +3,7 @@ name wyvern
 randomitems wyvern
 race dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face wyvern.x71
@@ -52,6 +53,7 @@ wyvern.x31
 wyvern.x32
 mina
 monster 1
+move_type walk
 x 1
 alive 1
 no_pick 1

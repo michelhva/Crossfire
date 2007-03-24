@@ -8,6 +8,7 @@ banshee.111
 banshee.112
 mina
 monster 1
+move_type walk
 sleep 1
 alive 1
 Wis 17

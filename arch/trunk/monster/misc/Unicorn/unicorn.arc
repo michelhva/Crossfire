@@ -3,6 +3,7 @@ name unicorn
 randomitems unicorn
 race faerie
 monster 1
+move_type walk
 sleep 1
 Wis 18
 face unicorn.x31
@@ -58,6 +59,7 @@ unicorn.x72
 unicorn.x73
 mina
 monster 1
+move_type walk
 x 1
 alive 1
 no_pick 1

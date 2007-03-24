@@ -17,6 +17,7 @@ fungus.115
 mina
 color_fg light_blue
 monster 1
+move_type walk
 sleep 1
 Wis 5
 alive 1

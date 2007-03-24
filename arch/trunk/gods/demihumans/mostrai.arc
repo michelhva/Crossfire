@@ -8,6 +8,7 @@ slaying goblin,giant
 animation dwarf
 is_animated 1
 monster 1
+move_type walk
 alive 1
 attacktype 256
 Str 30

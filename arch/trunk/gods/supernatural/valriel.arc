@@ -14,6 +14,7 @@ Pow 30
 is_animated 1
 type 50
 monster 1
+move_type walk
 alive 1
 attacktype 4194304
 path_attuned 1025

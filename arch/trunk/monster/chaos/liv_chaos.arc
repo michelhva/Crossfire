@@ -47,5 +47,6 @@ resist_drain -100
 resist_weaponmagic -100
 
 monster 1
+move_type walk
 editable 1
 end

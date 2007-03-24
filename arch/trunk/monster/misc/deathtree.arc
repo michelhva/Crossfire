@@ -13,6 +13,7 @@ mina
 speed -0.2
 alive 1
 monster 1
+move_type walk
 no_pick 1
 resist_magic 100
 

@@ -3,6 +3,7 @@ name dragonman
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face dragonman.x31
@@ -66,6 +67,7 @@ dragonman.x73
 dragonman.x72
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000

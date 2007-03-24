@@ -38,6 +38,7 @@ will_apply 2
 can_apply 25
 alive 1
 monster 1
+move_type walk
 undead 1
 can_use_scroll 1
 can_use_wand 1

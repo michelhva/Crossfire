@@ -11,6 +11,7 @@ g_worm.x72
 mina
 attacktype 1025
 monster 1
+move_type walk
 sleep 1
 Str 40
 Pow 30

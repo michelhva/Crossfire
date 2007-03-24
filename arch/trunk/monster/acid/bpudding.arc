@@ -10,6 +10,7 @@ mina
 splitting 1
 food 1
 monster 1
+move_type walk
 sleep 1
 Wis 15
 alive 1
@@ -49,6 +50,7 @@ mina
 changing 1
 food 1
 monster 1
+move_type walk
 alive 1
 ac 8
 wc 2
@@ -80,6 +82,7 @@ mina
 changing 1
 food 2
 monster 1
+move_type walk
 alive 1
 ac 8
 wc 2

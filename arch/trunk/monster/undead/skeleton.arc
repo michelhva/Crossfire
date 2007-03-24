@@ -8,6 +8,7 @@ skeleton.111
 skeleton.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 14
 undead 1

@@ -4,6 +4,7 @@ name djinn
 randomitems djinn_magenta
 face djinn_magenta_big.x11
 monster 1
+move_type walk
 sleep 1
 Wis 50
 anim
@@ -77,6 +78,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -94,6 +96,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2
@@ -111,6 +114,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 3
@@ -128,6 +132,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 4
@@ -145,6 +150,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 5
@@ -162,6 +168,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -179,6 +186,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -197,6 +205,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -215,6 +224,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -233,6 +243,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -251,6 +262,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -269,6 +281,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -286,6 +299,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -304,6 +318,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -322,6 +337,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -340,6 +356,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2
@@ -358,6 +375,7 @@ djinn_magenta_big.x21
 djinn_magenta_big.x22
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 2

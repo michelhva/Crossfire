@@ -9,6 +9,7 @@ elf_lad.111
 elf_lad.112
 mina
 monster 1
+move_type walk
 alive 1
 Pow 4
 Str 17

@@ -3,6 +3,7 @@ name dragon
 race dragon
 randomitems dragon
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face dragon.x71
@@ -60,6 +61,7 @@ dragon.x33
 dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 4000000
@@ -81,6 +83,7 @@ dragon.x33
 dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 weight 4000000
@@ -102,6 +105,7 @@ dragon.x33
 dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000
@@ -123,6 +127,7 @@ dragon.x33
 dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -145,6 +150,7 @@ dragon.x33
 dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 1

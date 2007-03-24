@@ -9,6 +9,7 @@ gnoll_leader.111
 gnoll_leader.111
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 8
 Int 8

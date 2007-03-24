@@ -4,6 +4,7 @@ name minor djinn
 randomitems minor_djinn
 face djinn.x31
 monster 1
+move_type walk
 sleep 1
 Wis 15
 animation djinn
@@ -70,6 +71,7 @@ name minor djinn
 face djinn.x31
 animation djinn_2
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

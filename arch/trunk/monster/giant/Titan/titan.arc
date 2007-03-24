@@ -2,6 +2,7 @@ Object titan
 race giant
 randomitems titan
 monster 1
+move_type walk
 sleep 1
 Wis 20
 face titan.x71

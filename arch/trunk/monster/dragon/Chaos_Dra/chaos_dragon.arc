@@ -3,6 +3,7 @@ name dragon of chaos
 race dragon
 randomitems chaosdragon
 monster 1
+move_type walk
 sleep 1
 Wis 30
 face chaos_dragon.x71
@@ -61,6 +62,7 @@ chaos_dragon.x33
 chaos_dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 4000000
@@ -82,6 +84,7 @@ chaos_dragon.x33
 chaos_dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 weight 4000000
@@ -103,6 +106,7 @@ chaos_dragon.x33
 chaos_dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 4000000
@@ -124,6 +128,7 @@ chaos_dragon.x33
 chaos_dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -146,6 +151,7 @@ chaos_dragon.x33
 chaos_dragon.x34
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 1

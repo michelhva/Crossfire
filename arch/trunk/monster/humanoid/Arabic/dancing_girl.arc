@@ -9,6 +9,7 @@ dancing_girl.113
 mina
 alive 1
 monster 1
+move_type walk
 no_pick 1
 hp 10
 maxhp 10

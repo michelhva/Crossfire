@@ -9,6 +9,7 @@ dancingsword.111
 dancingsword.113
 mina
 monster 1
+move_type walk
 Str 15
 Dex 20
 Con 1

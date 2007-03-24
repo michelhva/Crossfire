@@ -6,6 +6,7 @@ color_fg brown
 speed 0.06
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 5
 see_invisible 1

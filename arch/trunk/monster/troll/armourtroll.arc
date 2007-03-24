@@ -9,6 +9,7 @@ armourtroll2.112
 mina
 color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5
@@ -48,6 +49,7 @@ name small armoured troll
 face armourtroll3.111
 color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5
@@ -87,6 +89,7 @@ name small armoured troll
 face armourtroll4.111
 color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 10
 Int 5

@@ -8,6 +8,7 @@ elem_water.111
 elem_water.112
 mina
 monster 1
+move_type walk
 alive 1
 ac 4
 wc 8

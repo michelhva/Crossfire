@@ -11,6 +11,7 @@ pl_dragon_r.171
 pl_dragon_r.172
 mina
 monster 1
+move_type walk
 unaggressive 1
 level 1
 ac 5

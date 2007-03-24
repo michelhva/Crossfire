@@ -26,6 +26,7 @@ weight 30000
 alive 1
 no_pick 1
 monster 1
+move_type walk
 sleep 1
 editable 1
 end

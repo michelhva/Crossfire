@@ -8,6 +8,7 @@ bone_drake.x11
 bone_drake.x12
 mina
 monster 1
+move_type walk
 sleep 1
 level 14
 Con 6

@@ -15,6 +15,7 @@ Pow 43
 Str 30
 Dex 14
 monster 1
+move_type walk
 attack_movement 4
 alive 1
 ac -10

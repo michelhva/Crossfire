@@ -16,6 +16,7 @@ panther.173
 blank.111
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1

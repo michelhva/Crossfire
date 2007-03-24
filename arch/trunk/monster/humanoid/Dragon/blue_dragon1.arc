@@ -11,6 +11,7 @@ pl_dragon.172
 facings 2
 mina
 monster 1
+move_type walk
 unaggressive 1
 level 1
 ac 5

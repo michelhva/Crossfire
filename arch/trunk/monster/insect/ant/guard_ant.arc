@@ -7,6 +7,7 @@ sleep 1
 Wis 5
 Con 10
 monster 1
+move_type walk
 sleep 1
 alive 1
 no_pick 1

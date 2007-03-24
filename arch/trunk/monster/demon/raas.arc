@@ -13,6 +13,7 @@ raas.131
 mina
 race demon
 monster 1
+move_type walk
 Wis 10
 no_pick 1
 alive 1

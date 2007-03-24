@@ -10,6 +10,7 @@ deathshead.113
 deathshead.114
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 40
 Pow 100

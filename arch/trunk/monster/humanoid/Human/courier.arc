@@ -4,6 +4,7 @@ name courier
 randomitems courier
 face courier.111
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 3

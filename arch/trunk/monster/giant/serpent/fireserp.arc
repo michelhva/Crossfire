@@ -4,6 +4,7 @@ name fire serpent
 randomitems fire_serpent
 face serpent.x31
 monster 1
+move_type walk
 Wis 15
 animation serpent
 level 9
@@ -35,6 +36,7 @@ name fire serpent
 face serpent.x31
 animation serpent_2
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1

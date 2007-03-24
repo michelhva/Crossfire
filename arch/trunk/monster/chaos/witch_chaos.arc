@@ -6,6 +6,7 @@ animation witch_chaos
 color_fg blue
 randomitems witch_chaos
 monster 1
+move_type walk
 alive 1
 resist_ghosthit 100
 resist_poison 100

@@ -8,6 +8,7 @@ bee.111
 bee.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 10
 no_pick 1

@@ -14,6 +14,7 @@ dread.x16
 mina
 exp 50000
 monster 1
+move_type walk
 sleep 1
 Wis 20
 alive 1

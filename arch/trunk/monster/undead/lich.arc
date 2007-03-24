@@ -9,6 +9,7 @@ lich.112
 lich.113
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 17
 Pow 43

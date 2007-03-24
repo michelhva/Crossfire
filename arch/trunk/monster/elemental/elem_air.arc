@@ -8,6 +8,7 @@ elem_air.111
 elem_air.112
 mina
 monster 1
+move_type walk
 alive 1
 resist_electricity 100
 resist_blind 100

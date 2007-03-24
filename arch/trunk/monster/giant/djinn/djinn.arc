@@ -4,6 +4,7 @@ name Major djinn
 randomitems djinn
 face djinn.x31
 monster 1
+move_type walk
 sleep 1
 Wis 25
 anim
@@ -79,6 +80,7 @@ djinn.x71
 djinn.x72
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

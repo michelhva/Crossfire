@@ -3,6 +3,7 @@ randomitems lamia
 face lamia.x31
 race faerie
 monster 1
+move_type walk
 sleep 1
 anim
 facings 2
@@ -76,6 +77,7 @@ lamia.x72
 mina
 color_fg green
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1

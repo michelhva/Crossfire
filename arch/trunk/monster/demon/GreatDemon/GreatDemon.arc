@@ -42,6 +42,7 @@ level 40
 speed 0.3
 alive 1
 monster 1
+move_type walk
 sleep 1
 Wis 20
 see_invisible 1

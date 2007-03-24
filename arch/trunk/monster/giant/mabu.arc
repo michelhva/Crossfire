@@ -3,6 +3,7 @@ race giant
 name mabu suke
 randomitems giant
 monster 1
+move_type walk
 sleep 1
 Wis 10
 face mabu.x11
@@ -48,6 +49,7 @@ mabu.x13
 mabu.x12
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1

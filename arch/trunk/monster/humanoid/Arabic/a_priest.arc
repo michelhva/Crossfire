@@ -5,6 +5,7 @@ randomitems a_priest
 face a_priest.111
 Wis 5
 monster 1
+move_type walk
 unaggressive 1
 sp 10
 maxsp 10

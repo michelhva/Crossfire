@@ -8,6 +8,7 @@ orc_leader.111
 orc_leader.112
 mina
 monster 1
+move_type walk
 sleep 1
 Wis 8
 no_pick 1

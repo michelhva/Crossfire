@@ -34,6 +34,7 @@ alive 1
 no_pick 1
 is_animated 1
 monster 1
+move_type walk
 unaggressive 1
 magicmap grey
 editable 1

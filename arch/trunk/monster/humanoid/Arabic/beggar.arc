@@ -6,6 +6,7 @@ randomitems beggar
 sp 4
 maxsp 4
 monster 1
+move_type walk
 unaggressive 1
 random_movement 1
 alive 1

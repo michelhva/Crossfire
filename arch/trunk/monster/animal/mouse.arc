@@ -8,6 +8,7 @@ mouse.111
 mouse.112
 mina
 monster 1
+move_type walk
 no_pick 1
 generator 1
 maxsp 15

@@ -72,6 +72,7 @@ para_ice.187
 para_ice.188
 mina
 monster 1
+move_type walk
 alive 1
 ac 8
 wc 9

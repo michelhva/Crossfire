@@ -8,6 +8,7 @@ face knight.111
 animation knight
 race human,troll
 monster 1
+move_type walk
 alive 1
 # godpower, physical
 attacktype 1048577

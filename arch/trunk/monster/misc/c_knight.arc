@@ -7,6 +7,7 @@ c_knight.111
 c_knight.112
 mina
 monster 1
+move_type walk
 Wis 10
 no_pick 1
 alive 1

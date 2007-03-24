@@ -11,6 +11,7 @@ prisoner.112
 mina
 Pow 1
 monster 1
+move_type walk
 unaggressive 1
 alive 1
 ac 8

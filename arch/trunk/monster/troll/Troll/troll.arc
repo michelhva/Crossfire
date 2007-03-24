@@ -22,6 +22,7 @@ alive 1
 speed -0.2
 weight 500000
 monster 1
+move_type walk
 sleep 1
 Wis 13
 alive 1
@@ -39,6 +40,7 @@ face troll.x11
 color_fg green
 animation troll_2
 monster 1
+move_type walk
 alive 1
 x 1
 end
@@ -49,6 +51,7 @@ face troll.x11
 color_fg green
 animation troll_3
 monster 1
+move_type walk
 alive 1
 y 1
 end
@@ -59,6 +62,7 @@ face troll.x11
 color_fg green
 animation troll_4
 monster 1
+move_type walk
 alive 1
 x 1
 y 1

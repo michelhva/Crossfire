@@ -10,6 +10,7 @@ wight.114
 mina
 color_fg green
 monster 1
+move_type walk
 sleep 1
 Wis 10
 undead 1

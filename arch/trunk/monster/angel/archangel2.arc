@@ -10,6 +10,7 @@ highangel.x13
 mina
 color_fg white
 monster 1
+move_type walk
 sleep 1
 see_invisible 1
 no_pick 1
@@ -83,6 +84,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 x 1
@@ -98,6 +100,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -113,6 +116,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 1
@@ -129,6 +133,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2
@@ -145,6 +150,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
+move_type walk
 alive 1
 no_pick 1
 y 2

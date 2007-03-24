@@ -11,6 +11,7 @@ rustmonste.172
 mina
 color_fg brown
 monster 1
+move_type walk
 sleep 1
 Wis 15
 alive 1

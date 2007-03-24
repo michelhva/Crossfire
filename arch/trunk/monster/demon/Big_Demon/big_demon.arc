@@ -37,6 +37,7 @@ alive 1
 speed 0.3
 weight 300000
 monster 1
+move_type walk
 Wis 13
 alive 1
 run_away 3
@@ -59,6 +60,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 weight 300000
@@ -74,6 +76,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 weight 300000
@@ -89,6 +92,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 y 1
 weight 300000
@@ -104,6 +108,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 1
@@ -120,6 +125,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 1
@@ -136,6 +142,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 y 2
 weight 300000
@@ -151,6 +158,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 2
@@ -167,6 +175,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 2
@@ -183,6 +192,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 y 3
 weight 300000
@@ -198,6 +208,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 1
 y 3
@@ -214,6 +225,7 @@ big_demon.x71
 big_demon.x31
 mina
 monster 1
+move_type walk
 alive 1
 x 2
 y 3
