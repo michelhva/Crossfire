@@ -16,7 +16,7 @@ maxsp 0
 last_eat 0
 exp 100
 msg
-You spit out a tooth.  Better increase that 
+You spit out a tooth.  Better increase that
 dietary vitamin C!
 endmsg
 race *

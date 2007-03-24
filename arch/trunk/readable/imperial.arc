@@ -10,7 +10,7 @@ weight 5
 editable 128
 name_pl imperials
 msg
-One Imperial note 
+One Imperial note
 	"Nunc Est Dispendum"
 		eton lairepmI enO
 endmsg

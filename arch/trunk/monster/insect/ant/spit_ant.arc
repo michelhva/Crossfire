@@ -1,7 +1,7 @@
 Object spit_ant
 randomitems spit_ant
 face spit_ant.131
-race insect 
+race insect
 name Spitting Ant
 anim
 facings 2

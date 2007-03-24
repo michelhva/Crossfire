@@ -21,7 +21,7 @@ o You can change cults anytime, but beware:
   punish you! You might lose wisdom levels.
 o Return to the temple of your cult regularly.
   Step onto the altar and pray. This will
-  please your deity... And rest assured, the 
+  please your deity... And rest assured, the
   gods do know how to reward a worthy disciple!
 o Never lose your faith! Rumors tell about
   divine spells of incredible power, and of

@@ -12,7 +12,7 @@ DShield.111
 DShield.112
 DShield.111
 DShield.113
-mina 
+mina
 speed 0.25
 Cha -5
 msg

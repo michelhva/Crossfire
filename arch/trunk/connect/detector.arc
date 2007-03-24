@@ -1,7 +1,7 @@
 Object detector
 name detector
 slaying player
-type 51 
+type 51
 face pedestal.112
 anim
 pedestal.112

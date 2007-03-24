@@ -20,7 +20,7 @@ Object peacemaker
 name peacemaker
 face fireball.111
 invisible 1
-type 59 
+type 59
 speed 1
 flying 1
 no_pick 1

@@ -28,4 +28,4 @@ y 1
 no_pick 1
 visibility 100
 magicmap grey
-end 
+end

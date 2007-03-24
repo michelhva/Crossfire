@@ -1,4 +1,4 @@
-Object farmland 
+Object farmland
 face farmland.111
 type 67
 walk_on 1

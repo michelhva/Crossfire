@@ -3,7 +3,7 @@ other_arch fireball
 face meteor.111
 type 102
 subtype 5
-is_animated 0   
+is_animated 0
 walk_on 1
 fly_on 1
 flying 1

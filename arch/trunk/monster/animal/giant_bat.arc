@@ -16,7 +16,7 @@ alive 1
 ac 2
 level 4
 hp 30
-maxhp 30 
+maxhp 30
 see_invisible 1
 wc 10
 dam 13

@@ -1,5 +1,5 @@
-Object fatman 
-name Large man 
+Object fatman
+name Large man
 face fatman.111
 sp 10
 maxsp 10

@@ -5,9 +5,9 @@ o To practice the art of alchemy, you will
   first need to learn some recipes.
   These can be found in some of the old
   books that are sold in magic shops.
-o To earn a little money, you should kill 
-  some orcs/goblins and cast the spell 
-  "alchemy" over the loot, turning it 
+o To earn a little money, you should kill
+  some orcs/goblins and cast the spell
+  "alchemy" over the loot, turning it
   into small gold nuggets.
 o When you know some recipes, you must
   try to collect the listed ingredients.

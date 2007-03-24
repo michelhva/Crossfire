@@ -36,7 +36,7 @@ can_use_weapon 1
 can_use_armour 1
 can_use_shield 1
 msg
-Elven god of luck, Huntsman of Goblins, 
+Elven god of luck, Huntsman of Goblins,
 Trollslayer, the Trickster
 endmsg
 exp 1

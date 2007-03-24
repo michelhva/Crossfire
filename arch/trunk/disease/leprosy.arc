@@ -23,8 +23,8 @@ exp 1000
 hp 1
 sp 1
 msg
-Splotches are spreading around your body.  
-You feel disgusted with yourself.  A piece 
+Splotches are spreading around your body.
+You feel disgusted with yourself.  A piece
 of skin flakes off and falls to the ground.
 endmsg
 race *

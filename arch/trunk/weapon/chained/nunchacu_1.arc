@@ -6,7 +6,7 @@ type 15
 face nunchacu_1.111
 weapontype 8
 material 18
-dam 1 
+dam 1
 weight 5000
 value 20
 editable 1024

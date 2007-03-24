@@ -21,7 +21,7 @@ exp 1000
 hp 1
 sp 1
 msg
-You feel feverish.  Your muscles spasm 
+You feel feverish.  Your muscles spasm
 oddly....  Breathing is difficult.
 endmsg
 race animal

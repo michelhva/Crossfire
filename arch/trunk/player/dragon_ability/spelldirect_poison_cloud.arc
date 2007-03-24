@@ -23,4 +23,4 @@ no_drop 1
 invisible 1
 skill sorcery
 food 5
-end 
+end

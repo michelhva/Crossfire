@@ -7,7 +7,7 @@ color_bg blue
 color_fg green
 no_pick 1
 is_water 1
-slow_move 15 
+slow_move 15
 is_wooded 1
 smoothlevel 9
 editable 8

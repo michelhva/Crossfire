@@ -10,7 +10,7 @@ face DShield.111
 anim
 DShield.111
 DShield.112
-mina 
+mina
 speed 0.2
 msg
   There is a evil spirit in the shield.

@@ -1,5 +1,5 @@
 # This is actually set up as a cone effect.  IT basically persists
-# and does a little amount of damage. 
+# and does a little amount of damage.
 Object chaos
 type 102
 subtype 7

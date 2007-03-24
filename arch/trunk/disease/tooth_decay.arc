@@ -16,9 +16,9 @@ ac 0
 last_eat 0
 exp 100
 msg
-A tooth wiggles loose and falls to the 
-ground.  You should brush more.  Have I 
-mentioned that your breath is disgusting, 
+A tooth wiggles loose and falls to the
+ground.  You should brush more.  Have I
+mentioned that your breath is disgusting,
 too?
 endmsg
 race *
