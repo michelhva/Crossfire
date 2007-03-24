@@ -84,7 +84,7 @@ Merged in map updates and changes, which include:
   * mainfloor, drop 5 tissue paper for a portal to the Pupland Terminal - requires bolt_silk instead of tissue paper
   * secondfloor, drop 20 amulets of Lifesaving for a portal to ?
     * This drop spot disappears and is replaced with a second or additional portal to the Mazes of Menace (when 20 amulets of Lifesaving are dropped on it)
-  * secondfloor, (x 15 y 7) drop x for Alchemy room 
+  * secondfloor, (x 15 y 7) drop x for Alchemy room
     * Alchemy room works now, just need to determine what "x" is
   * secondfloor, (x 11 y 1) drop x for Glowing Crystal Room
     * This was updated to allow access to the Glowing Crystal room (was listed as Alchemy room)
@@ -137,7 +137,7 @@ So before this is committed I wouldn't mind a few comments - just don't suggest 
 
 Update 04-11-29
 
-Fixed nasty bug where find_player on square functions crashed server.  Fixed up the hall of joining so it works nice (pull Lock to secure member, pull Load to join em up.)  The maps still need some work and there are probably more little functions here and there (especially DM toys) but the *basic* code stuff is all done IMHO. You can add guilds, buy guilds, add new members, pay dues administrate... also the plain text format allows for ease of editing. 
+Fixed nasty bug where find_player on square functions crashed server.  Fixed up the hall of joining so it works nice (pull Lock to secure member, pull Load to join em up.)  The maps still need some work and there are probably more little functions here and there (especially DM toys) but the *basic* code stuff is all done IMHO. You can add guilds, buy guilds, add new members, pay dues administrate... also the plain text format allows for ease of editing.
 I'm thinking about adding a CFFindPlayerOnSquare() and CFGetDate(), CFGetTime() functions to the python plugin.  Useful for  mail system, Guild foundings and other python scripts.
 
 Update 04-11-28

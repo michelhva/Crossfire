@@ -739,7 +739,7 @@ arch thief
 msg
 @match Boss|boss
 To meet our boss, you have to say
-the password: 
+the password:
  "racoon's head".
 @match Fox|fox|Tails|tails
 We steal money and gems.
@@ -749,7 +749,7 @@ I want you to see our Boss.
 @match *
 Thank you for saving me.
 I'm a member of Fox Tails, the gang of
-bandits. 
+bandits.
 endmsg
 face thief.111
 Con 100

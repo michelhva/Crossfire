@@ -189,18 +189,18 @@ x 2
 y 22
 end
 arch sign_e
-name Trigger n Up 
+name Trigger n Up
 msg
 This cascade is a bit faster still, and
 uses only 4 buttons in stead of 8 or 16.
--- 
+--
 It relies on the fact that trigger gate
 timer is reset (re-triggered) when the
 boulder rolls off the connected button.
 as such each button will setup a
 `surge' of boulder movement over 2
 squares.
--- 
+--
 In fact if the trigger gate time period
 can be set to an exact time period, it
 would be posible to run a whole cascade
@@ -209,7 +209,7 @@ And have total control of the time the
 boulder sits in each location as well.
 The ideal solution. As it is we have
 only boulder surges. which is not a
-great deal of use. 
+great deal of use.
 endmsg
 x 2
 y 24

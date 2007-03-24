@@ -51,7 +51,7 @@ for ($x=0; $x<$NUM_X; $x++) {
 	# These time values are the reverse in how you'd normally think about them - they
 	# are the time (in days) since the fiel was last modified.  Thus, a file that hasn't
 	# been modified in a long time has a high value, a file modified recently has
-	# a low level.  
+	# a low level.
 	$time1 = -M "images\/world_$dx\_$dy.png";
 	$time2 = -M "world\/world_$dx\_$dy";
 	if ($time1 > $time2) {

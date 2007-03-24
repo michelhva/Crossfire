@@ -86,7 +86,7 @@ char *Terrain_Names[][2] = {
     {"mountain2",   "191 196 185 "},
     {"wasteland",   "255 255 255 "},
 };
- 
+
 
 
 void write_crossfire_maps(int mapy, int mapx)
@@ -355,7 +355,7 @@ main(int argc, char *argv)
 	    altitude[max_x - x][y] =  (x - 20) * 100;
 	}
     }
-  
+
     /* This basically produces areas of high varience (eg, islands, peaks, valleys, etc) */
 
     for (l=0; l<npasses; l++) {

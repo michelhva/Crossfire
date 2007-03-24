@@ -44,7 +44,7 @@ I do hope the author treats this as a
 complement as that is how I feel.
 This is what I call a ``boulder cascade''
 which rolls a boulder in sequence until
-it falls onto a random prize button. 
+it falls onto a random prize button.
 The prizes above are in order of how
 commonly they would be picked by this
 generator (supposally).
@@ -115,7 +115,7 @@ weight of the button itself!
 That is if you stick two plain buttons
 (trigger weight 1) on top of each other,
 the top button will be off (no weight
-on it), but the second one underneath 
+on it), but the second one underneath
 will be activated by the weight of the
 first button (weight 1)!
 As such to make this work the buttons
@@ -123,7 +123,7 @@ trigger value must be equal to the
 trigger weight of ALL the buttons above
 it, plus one more. EG: first button: 1,
 second: 1+1 -> 2, third: 1+2+1 -> 4.
-Actually the sequence is 
+Actually the sequence is
   trigger weight = button depth ** 2
 EG: 1, 2, 4, 8, 16, 32, 64,... etc
 to however many small buttons you need
@@ -179,7 +179,7 @@ to be added...
    inside the boulder cascade, to kill
    such wandering pets.
 --
-Thanks to : Hisanobu Okuda 
+Thanks to : Hisanobu Okuda
 <Hisanobu_Okuda@mbj.mercedes-benz.com>
 for the explaination on the last two
 `fluff' items
@@ -191,7 +191,7 @@ arch sign
 name WARNING..
 msg
 Warning, in server 95.1 the item
-retrival code does NOT work. 
+retrival code does NOT work.
 The trapdoor under the items will open,
 but nothing will fall through.
 Arrrggghhh..
@@ -244,7 +244,7 @@ sequence of events.
 The smallest such cascade loop is 4
 long, but only works fitfully as the
 gates don't get a chance to fully reset
-before the boulder rolls around again. 
+before the boulder rolls around again.
 The next longest is 6 unit loop, which
 works estreamly well.
 Also see other gadget test maps in this

@@ -5,14 +5,14 @@
 # script.  It will search all directories in and below your current
 # working directory, so run from the directory you want to update.
 
-# Written by Mark Wedel (mwedel@sonic.net) 
+# Written by Mark Wedel (mwedel@sonic.net)
 # This borrows some amount of code from the map_info script written
 # by Tero Haatanen <Tero.Haatanen@lut.fi>
 
 # Name of the old map that we update exits on
 # Note that this can be a regexp.
 
-# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the 
+# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y determine the range for the
 # updates.  For example, scorn/city was broken up on two of the
 # map tiles, so this gets used to correspond that properly.
 # you can use very large END values just to make sure the entire
@@ -26,7 +26,7 @@
 # OLD_MAP_NAME: This is the path it tries to match in the slaying field.
 # It can be a regexp.  When updating within a specific directory of
 # a town, including the relative entries is possible.
-# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y is the range of spaces 
+# OLD_MAP_STARTX/Y and OLD_MAP_ENDX/Y is the range of spaces
 # that we process.  If the location is not in this range, it is unchanged.
 # Note that you can have multiple entries with the same OLD_MAP_NAME
 # value as long as they have different START and END coordinates.
@@ -49,7 +49,7 @@ sub updatemap {
     local ($m, $made_change=0);
     $last = "";
     $parent = "";
-    
+
     # Note that $/ is the input record seperator.  By changing
     # this to \nend\n, it means that when we read from the file,
     # we basically read an entire arch at the same time.  Note that
@@ -78,7 +78,7 @@ sub updatemap {
 	    print /^name (.+)$/ ? $1 : "No mapname";
 	    print ", size [", /^x (\d+)$/ ? $1 : 16;
 	    print ",", /^y (\d+)/ ? $1 : 16, "]";
-    
+
 	    if (! /^msg$/) {
 		print ", No message\n";
 	    } elsif (/(\w+@\S+)/) {

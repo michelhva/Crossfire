@@ -7,9 +7,9 @@
 # This script should be placed outside of the map directory,
 # but you should be inside it when you run it.  Ideally
 # in the top-level maps directory.
-# 
+#
 # Dupes are noted, and not adjusted.
-# 
+#
 
 use File::Basename qw( basename );
 use vars qw( $MAPBASE );
