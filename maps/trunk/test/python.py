@@ -30,6 +30,7 @@ def do_help():
 	whoami.Say(' - owner')
 	whoami.Say(' - friendlylist')
 	whoami.Say(' - create')
+	whoami.Say(' - directory')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -63,7 +64,7 @@ def do_party():
 	parties = Crossfire.GetParties()
 	whoami.Say('%d parties'%len(parties))
 	for party in parties:
-		whoami.Say('%s'%(party.Name))
+		whoami.Say('%s (%s)'%(party.Name, party.Password))
 		players = party.GetPlayers()
 		for player in players:
 			whoami.Say('   %s'%player.Name)
@@ -74,7 +75,7 @@ def do_party():
 def do_region():
 	whoami.Say('Known regions, region for current map is signaled by ***')
 	cur = whoami.Map.Region
-	whoami.Say('This map\'s region is %s'%(cur.Name))
+	whoami.Say('This map\'s region is %s [msg: %s]'%(cur.Name, cur.Message))
 	regions = Crossfire.GetRegions()
 	whoami.Say('%d regions'%len(regions))
 	for region in regions:
@@ -276,6 +277,15 @@ def do_create():
 		whoami.Say('created diamond: %s'%second.Name)
 		second.Teleport(whoami.Map, 2, 2)
 
+def do_directory():
+	whoami.Say('map = %s'%Crossfire.MapDirectory());
+	whoami.Say('unique = %s'%Crossfire.UniqueDirectory());
+	whoami.Say('temp = %s'%Crossfire.TempDirectory());
+	whoami.Say('config = %s'%Crossfire.ConfigDirectory());
+	whoami.Say('local = %s'%Crossfire.LocalDirectory());
+	whoami.Say('player = %s'%Crossfire.PlayerDirectory());
+	whoami.Say('data = %s'%Crossfire.DataDirectory());
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -327,5 +337,7 @@ elif topic[0] == 'friendlylist':
 	do_friendlylist()
 elif topic[0] == 'create':
 	do_create()
+elif topic[0] == 'directory':
+	do_directory()
 else:
 	do_help()
