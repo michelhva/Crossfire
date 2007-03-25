@@ -3956,7 +3956,7 @@ speed_left -1.840000
 level 30
 attacktype 29
 carrying 25000
-flying 1
+move_type walk fly_low
 immune 8
 arch abil_icestorm
 end
@@ -4143,7 +4143,7 @@ speed_left -1.840000
 level 30
 attacktype 29
 carrying 25000
-flying 1
+move_type walk fly_low
 immune 8
 arch abil_icestorm
 end

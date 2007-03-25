@@ -9056,7 +9056,7 @@ resist_confusion -100
 resist_fear 100
 resist_blind 50
 carrying 25000
-flying 1
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9254,7 +9254,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 35000
-flying 1
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9276,7 +9276,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 25000
-flying 1
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -9493,7 +9493,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 25000
-flying 1
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion

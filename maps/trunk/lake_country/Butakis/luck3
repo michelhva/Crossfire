@@ -6234,7 +6234,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 100000
-flying 1
+move_type walk fly_low
 arch ability_dragon
 end
 arch ability_mass_confusion
@@ -6268,7 +6268,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 100000
-flying 1
+move_type walk fly_low
 arch ability_dragon
 end
 arch ability_mass_confusion
