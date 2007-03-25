@@ -17,7 +17,7 @@ duration 40
 duration_modifier 1
 range 2
 range_modifier 10
-no_pass 1
+move_block all
 msg
 Create earth wall will create a line of earth
 walls.  Unlike other magic wall spells, the
