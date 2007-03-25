@@ -35,10 +35,9 @@ blank.111
 mina
 exp 100000
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
-flying 1
 see_invisible 1
 Con 30
 maxhp 2000

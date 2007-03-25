@@ -10,7 +10,7 @@ para_light.112
 para_light.113
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 ac 3
 wc 9
@@ -21,7 +21,6 @@ speed -0.3
 exp 200
 weight 200
 level 6
-flying 1
 editable 1
 resist_fire 100
 resist_electricity 100

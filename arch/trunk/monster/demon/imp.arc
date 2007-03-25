@@ -9,7 +9,7 @@ imp.131
 mina
 race demon
 monster 1
-move_type walk
+move_type walk fly_low
 can_see_in_dark 1
 can_cast_spell 1
 see_invisible 1
@@ -40,5 +40,4 @@ run_away 15
 attacktype 5
 attack_movement 5
 editable 1
-flying 1
 end

@@ -6,7 +6,7 @@ face archangel.118
 color_fg white
 animation archangle
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 see_invisible 1
@@ -42,7 +42,6 @@ resist_blind 80
 attacktype 20745
 speed 0.400000
 weight 150000
-flying 1
 run_away 18
 will_apply 2
 pick_up 24

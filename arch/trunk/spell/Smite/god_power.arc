@@ -17,7 +17,7 @@ mina
 speed 1
 range 4
 duration 4
-flying 1
+move_type fly_low
 wc -30
 no_pick 1
 attacktype 1048576

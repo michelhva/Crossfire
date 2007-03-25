@@ -8,7 +8,7 @@ face spider_web.111
 walk_on 1
 fly_on 1
 wc -90
-flying 1
+move_type fly_low
 type 102
 subtype 7
 no_pick 1

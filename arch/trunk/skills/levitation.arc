@@ -4,7 +4,7 @@ skill levitation
 type 43
 invisible 1
 last_sp 2
-flying 1
+move_type fly_low
 no_drop 1
 subtype 32
 editable 0

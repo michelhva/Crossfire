@@ -11,7 +11,7 @@ liteangel.113
 liteangel.114
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 see_invisible 1
@@ -36,7 +36,6 @@ resist_cold 30
 attacktype 5
 speed -0.50
 weight 150000
-flying 1
 run_away 18
 will_apply 2
 pick_up 24

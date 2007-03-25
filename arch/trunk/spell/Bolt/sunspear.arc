@@ -11,7 +11,7 @@ mina
 speed 1
 glow_radius 2
 reflecting 1
-flying 1
+move_type fly_low
 no_pick 1
 editable 0
 magicmap yellow

@@ -11,7 +11,7 @@ archon.333
 archon.444
 mina
 is_animated 1
-flying 1
+move_type walk fly_low
 level 30
 hp 1500
 maxhp 1500
@@ -43,6 +43,5 @@ resist_cold 100
 resist_confusion -100
 resist_drain -100
 monster 1
-move_type walk
 editable 1
 end

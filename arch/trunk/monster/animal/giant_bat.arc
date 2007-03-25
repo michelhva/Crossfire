@@ -9,7 +9,7 @@ giant_bat.112
 giant_bat.113
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 no_pick 1
@@ -23,7 +23,6 @@ wc 10
 dam 13
 speed 0.3
 exp 100
-flying 1
 weight 5000
 attack_movement 3
 editable 1

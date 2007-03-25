@@ -16,7 +16,7 @@ speed 1
 attacktype 32768
 wc 0
 dam 0
-flying 1
+move_type fly_low
 editable 0
 magicmap red
 end

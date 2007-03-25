@@ -10,7 +10,7 @@ highangel.x13
 mina
 color_fg white
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 see_invisible 1
 no_pick 1
@@ -46,7 +46,6 @@ resist_blind 100
 resist_holyword 30
 resist_godpower 80
 weight 150000
-flying 1
 run_away 18
 will_apply 2
 pick_up 24
@@ -84,7 +83,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 x 1
@@ -100,7 +99,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 1
@@ -116,7 +115,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 1
@@ -133,7 +132,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 2
@@ -150,7 +149,7 @@ highangel.x12
 highangel.x13
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 2

@@ -20,7 +20,7 @@ is_animated 0
 is_turnable 1
 walk_on 1
 fly_on 1
-flying 1
+move_type fly_low
 no_pick 1
 speed 1
 wc 2

@@ -33,5 +33,5 @@ dam 0
 speed -1.0
 anim_speed 1
 no_pick 1
-flying 1
+move_type fly_low
 end

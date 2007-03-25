@@ -1,5 +1,4 @@
 Object bee
-flying 1
 race insect
 face bee.111
 color_fg dark_orange
@@ -8,7 +7,7 @@ bee.111
 bee.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 10
 no_pick 1
