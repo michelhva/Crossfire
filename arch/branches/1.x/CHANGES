@@ -1,6 +1,12 @@
 Changes for SVN top of tree:
 
-Make event_xxx invisible to avoid weirdness in the code.
+Fix bug #1687729: Spell "create repulsion wall" is broken. Missing
+ move_block field. Also replace obsolete no_pass with move_block all.
+ spell/MagicWall/spell_create_earth_wall.arc spell_repelwall.arc
+Nicolas Weeger 2007-03-25
+
+Make event_xxx invisible, avoids many issues in the object handling
+routines.
 Nicolas Weeger 2007-03-17
 
 ------------------------------------------------------------------------------
