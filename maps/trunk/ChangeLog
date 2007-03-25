@@ -1,3 +1,327 @@
+2007-03-25 00:43  rjtanner
+
+	* euthville/boulder_inferno, euthville/demon_quest,
+	  euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church3, euthville/devil.church4,
+	  euthville/devil.church5, euthville/hallofbones,
+	  euthville/map.fr.0, euthville/map.fr.1, euthville/map.fr.2,
+	  euthville/map.fr.3, euthville/wiz1, euthville/wiz2,
+	  euthville/wiz3, euthville/wiz4, euthville/wiz5, euthville/wiz6,
+	  euthville/wiz7, regions: Implemented a new region for an
+	  existing area, Ruins of Euthville
+
+2007-03-24 14:31  akirschbaum
+
+	* azumauindo/ranbounagisatoshi/shops/tradecenter,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/bank2, darcap/darcap/tavern,
+	  dragonisland/advguild, dragonisland/advguild2,
+	  editor/picks/monsters2, editor/picks/monsters3,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/church0,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck3, lake_country/Butakis/prison_e,
+	  lake_country/Mwizard/Mwizard0, lake_country/Mwizard/Mwizard2,
+	  lake_country/RETower/tower4, lake_country/ebony/entrance1,
+	  lake_country/ebony/entrance2, lake_country/ebony/masterlev,
+	  lake_country/small_buildings/hut_Galmorus, marksel/keep,
+	  mlab/citydeclouds/citydecloudsC,
+	  mlab/citydeclouds/shops/cwdcpotionshop1,
+	  mlab/citydeclouds/temples/valriel, navar_city/mlab/tavern,
+	  navar_city/mlab/tavernb1, navar_city/mlab/tavernb4,
+	  navar_city/spyhouse, pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/kurte/house, pup_land/ancient/ruin/underground,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1, pup_land/barrier,
+	  pup_land/castle_eureca/castle_eureca1,
+	  pup_land/castle_eureca/castle_eurecaB1,
+	  pup_land/castle_eureca/castle_eurecaB2,
+	  pup_land/cave_weapon/cave1, pup_land/cave_weapon/cave2,
+	  pup_land/cave_weapon/cave3, pup_land/cave_weapon/cave4,
+	  pup_land/hq, pup_land/hq_ud, pup_land/kurte/eureca_road3,
+	  pup_land/kurte/eureca_road31, pup_land/kurte/kurte,
+	  pup_land/lone_town/church_ud, pup_land/lone_town/dress1,
+	  pup_land/lone_town/dress2, pup_land/lone_town/dress3,
+	  pup_land/lone_town/guild_freedom, pup_land/lone_town/guild_law,
+	  pup_land/lone_town/nf_bar, pup_land/lone_town/tavern,
+	  pup_land/lone_town/thief_market, pup_land/lone_town/training,
+	  pup_land/nurnberg/agito, pup_land/nurnberg/alshop,
+	  pup_land/nurnberg/apartment/to_past, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/castle_bauer/castle2,
+	  pup_land/nurnberg/castle_ud, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/guild, pup_land/nurnberg/guild_ud,
+	  pup_land/nurnberg/hq_training, pup_land/nurnberg/nf_bar,
+	  pup_land/nurnberg/pshop, pup_land/port_e,
+	  pup_land/raffle/raffle2_u3, pup_land/raffle/raffle3_u1,
+	  pup_land/rainbow/Keira, pup_land/rainbow/Lv4/alter,
+	  pup_land/rainbow/Lv4/e-hall, pup_land/rainbow/Lv4/key,
+	  pup_land/rainbow/Lv4/path7, pup_land/rainbow/station,
+	  pup_land/ruin_barbarian/hole1, pup_land/s_f/st2,
+	  quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster, santo_dominion/tavern,
+	  scorn/misc/battle_arena/arena, scorn/misc/castle2,
+	  scorn/shops/bowshop, scorn/taverns/goths, sisters/tower2,
+	  styles/monsterstyles/nethack/nethack_4,
+	  styles/monsterstyles/nethack/nethack_5,
+	  styles/monsterstyles/nethack/nethack_6,
+	  styles/monsterstyles/nethack/nethack_7,
+	  styles/specialmaps/minichapel_gaea, unlinked/Greyshield/Castle,
+	  unlinked/kandora/cave/cave2, unlinked/kandora/dd_alchemy,
+	  unlinked/kandora/dd_alchemy3, unlinked/kandora/dd_court,
+	  unlinked/kandora/dm_keep, unlinked/kandora/signal,
+	  unlinked/kandora/signal2, unlinked/kandora/signal3: Add explicit
+	  'move_type walk' to all monsters.
+
+2007-03-24 13:15  akirschbaum
+
+	* ChangeLog, Info/combine.pl, Info/land.c, Info/map_sed.pl,
+	  Info/mapguide, Info/mlab-tilemapinfo.txt, Info/rewrite_exits.pl,
+	  Info/rewrite_styles.pl, Info/update_apart.pl,
+	  Info/update_exits.pl, brest/brittany/hole,
+	  brest/brittany/jessy.2, brest/brittany/khazad.5,
+	  brest/pshops/README, brest/pshops/pshop_copier,
+	  darcap/forgotten_town/quests/ft_quest_40,
+	  darcap/forgotten_town/shops/general2, dragonisland/advguild2,
+	  dragonisland/advguild3, dragonisland/house5,
+	  dragonisland/house6, dragonisland/intwell,
+	  editor/picks/outdoors, euthville/devil.church1,
+	  euthville/devil.church2, euthville/devil.church3,
+	  euthville/hallofbones, euthville/wiz1, euthville/wiz2,
+	  euthville/wiz3, euthville/wiz4, euthville/wiz5, euthville/wiz6,
+	  euthville/wiz7, inn_and_outpost/sweets_inn2,
+	  inn_and_outpost/treehouse_df2, inn_and_outpost/treehouse_df5,
+	  inn_and_outpost/treehouse_df6, navar_city/city1prison,
+	  navar_city/illusion/illtow1, navar_city/illusion/illtow2,
+	  navar_city/illusion/illtow3, navar_city/illusion/illtow4,
+	  navar_city/illusion/illtow5, navar_city/illusion/illtow6,
+	  navar_city/illusion/illtow7, navar_city/light/light1,
+	  navar_city/light/light3, navar_city/misc/city1armour,
+	  navar_city/misc/city1magic, navar_city/misc/city1weapon,
+	  navar_city/tower/magetower1, navar_city/tower/magetower2,
+	  navar_city/tower/magetower3, navar_city/tower/magetower4,
+	  navar_city/tower/magetower5, navar_city/tower/magetower_low,
+	  navar_city/tower/magetowfinal, navar_city/warehouse1,
+	  navar_city/warehouse2, navar_city/warehouse3,
+	  navar_city/warehouse4, navar_city/warehouse5,
+	  navar_city/warehouse6, navar_city/warehouse7,
+	  navar_city/warehouse8, port_joseph/README,
+	  port_joseph/town/generalstore, port_joseph/town/portia2,
+	  pup_land/ancient/castle/castle.1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/company,
+	  pup_land/ancient/kurte/house, pup_land/ancient/mountain/atelir2,
+	  pup_land/ancient/mountain/tower.3, pup_land/ancient/ruin/house2,
+	  pup_land/ancient/ruin/path, pup_land/ancient/ruin/underground,
+	  pup_land/ancient/ruin/village, pup_land/ancient/village/hut1,
+	  pup_land/ancient/village/hut4, pup_land/ancient/village/inn,
+	  pup_land/ancient/village/library, pup_land/ancient/village/shop,
+	  pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/volcano/volcano.3, pup_land/barrier,
+	  pup_land/castle_eureca/castle_eureca2,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/castle_eureca/cave_pass, pup_land/cave_weapon/cave3,
+	  pup_land/cave_weapon/cave4, pup_land/hall_of_fame, pup_land/hq,
+	  pup_land/hq_ud, pup_land/kurte/eureca_road1,
+	  pup_land/kurte/eureca_road3, pup_land/kurte/eureca_road31,
+	  pup_land/kurte/kurte, pup_land/lone_town/church_ud,
+	  pup_land/lone_town/cordish, pup_land/lone_town/cordish2,
+	  pup_land/lone_town/gemshop, pup_land/lone_town/magic,
+	  pup_land/lone_town/pupuly, pup_land/lone_town/tavern,
+	  pup_land/lone_town/training, pup_land/nurnberg/agito,
+	  pup_land/nurnberg/alshop, pup_land/nurnberg/ashop,
+	  pup_land/nurnberg/castle, pup_land/nurnberg/castle_ud,
+	  pup_land/nurnberg/dick/bomb, pup_land/nurnberg/dick/bomb1,
+	  pup_land/nurnberg/dick/click, pup_land/nurnberg/dick/heaven,
+	  pup_land/nurnberg/dick/hell, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/dick/showinv, pup_land/nurnberg/fshop,
+	  pup_land/nurnberg/pshop,
+	  pup_land/nurnberg/reception/electricity4,
+	  pup_land/nurnberg/reception/electricity6,
+	  pup_land/nurnberg/reception/fire4,
+	  pup_land/nurnberg/reception/water3,
+	  pup_land/nurnberg/reception/water4,
+	  pup_land/nurnberg/reception/water7,
+	  pup_land/nurnberg/reception/wind4, pup_land/rainbow/Lv1/e_hall,
+	  pup_land/rainbow/Lv1/hut1, pup_land/rainbow/Lv1/hut4,
+	  pup_land/rainbow/Lv1/t_room, pup_land/rainbow/Lv2/Kum,
+	  pup_land/rainbow/Lv2/b_inner, pup_land/rainbow/Lv2/b_m,
+	  pup_land/rainbow/Lv2/maze, pup_land/rainbow/Lv3/Rufto,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv4/path9,
+	  pup_land/s_f/cave1, python/CFWorld.py, python/README,
+	  python/guilds/README.txt, python/items/rhyzian_amulet.py,
+	  quests/hendel/acid_room, quests/mak/chaos/monsters.pick,
+	  quests/mcz/castle_air, quests/mcz/castle_earth,
+	  quests/mcz/castle_low1, quests/mcz/castle_low2,
+	  quests/mcz/castle_water, quests/skud/court, quests/skud/east_1,
+	  quests/skud/north_1, regions, scorn/cannery/ware1,
+	  scorn/houses/house.haunted, scorn/houses/map.fr.ruin,
+	  scorn/houses/messhall, scorn/houses/wizz.lev1,
+	  scorn/misc/port_arena, scorn/oldcity/oldcity5,
+	  scorn/shops/armourshop, scorn/shops/foodshop,
+	  scorn/shops/gemshop, scorn/shops/weaponshop,
+	  scorn/taverns/goths2, scorn/taverns/inn2,
+	  scorn/towers/tower.mad, sisters/README, templates/README,
+	  test/anthony/cascades, test/anthony/connected_objects,
+	  test/anthony/raffles_cascade, test/anthony/roller_cades,
+	  test/anthony/special_objects, test/connected_bug,
+	  under_world/README, unlinked/Greyshield/Castle,
+	  unlinked/Greyshield/Doors, unlinked/Greyshield/Fortress,
+	  unlinked/Greyshield/GreyMaster, unlinked/Greyshield/Greysword,
+	  unlinked/Greyshield/Sphinx, unlinked/academy.crap/Fighter.3,
+	  unlinked/academy.crap/MainFloor,
+	  unlinked/casino/casino_infernal, unlinked/kandora/circus/mp_s,
+	  unlinked/kandora/circus/mp_start,
+	  unlinked/kandora/circus/mp_tavern,
+	  unlinked/kandora/circus/mp_world, unlinked/kandora/dd_tavern,
+	  unlinked/kandora/dm_tavern, unlinked/kandora/dun_marksel,
+	  unlinked/kandora/ship_home, unlinked/tutorial1,
+	  wolfsburg/dungeons/ship_deck2, wolfsburg/dungeons/stronghold,
+	  wolfsburg/snakepit, wolfsburg/temple/enterance: Remove trailing
+	  whitespace.
+
+2007-03-23 18:51  eracc
+
+	* maps/branches/1.x/HallOfDMs, HallOfDMs: Update some of the exits
+	  to go to more places from HallOfDMs. Brest, Darcap,
+	  Scorn Jail and Navar Jail.
+
+2007-03-23 18:16  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.one: Add yet another warning on
+	  castle.upper.floor.one about the danger on
+	  castle.upper.floor.two of the Zorn Castle. If this is not enough
+	  warning I do
+	  not know what would be enough.
+
+2007-03-23 17:57  akirschbaum
+
+	* lake_country/shops/Mopoon_wshop: Fix teleporter destination
+	  coordinates.
+
+2007-03-23 17:49  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Forgot to add a magic mouth
+	  under the Plaque. Cosmetic cleanup.
+
+2007-03-23 17:37  eracc
+
+	* maps/branches/1.x/brest/zorn/castle.upper.floor.two,
+	  brest/zorn/castle.upper.floor.two: Move the "alarm system"
+	  inside the castle. Pseudo-randomize when the alarm will
+	  go off.
+
+2007-03-22 00:02  ryo_saeba
+
+	* test/python.py: A few tests.
+
+2007-03-21 10:43  akirschbaum
+
+	* brest/zorn/castle.upper.floor.one, navar_city/misc/city1magic,
+	  planes/greenway4, planes/greenway5, planes/greenway6,
+	  planes/greenway8, quests/peterm/Demonology/JourneymanLevel,
+	  scorn/apartment/apartments, scorn/houses/wizz.lev1,
+	  styles/monsterstyles/nethack/nethack_12, test/diagonal,
+	  unlinked/Greyshield/Castle, wolfsburg/volcano/vvmansion,
+	  world/world_100_104, world/world_100_116, world/world_101_107,
+	  world/world_101_108, world/world_102_104, world/world_102_109,
+	  world/world_102_114, world/world_102_115, world/world_102_127,
+	  world/world_103_109, world/world_103_114, world/world_103_115,
+	  world/world_104_109, world/world_104_114, world/world_104_116,
+	  world/world_104_117, world/world_105_106, world/world_105_109,
+	  world/world_105_114, world/world_105_117, world/world_105_118,
+	  world/world_105_122, world/world_105_123, world/world_105_124,
+	  world/world_106_109, world/world_106_116, world/world_106_117,
+	  world/world_106_118, world/world_106_119, world/world_106_120,
+	  world/world_106_121, world/world_106_122, world/world_106_123,
+	  world/world_106_124, world/world_106_125, world/world_107_115,
+	  world/world_107_118, world/world_107_119, world/world_107_120,
+	  world/world_107_122, world/world_107_124, world/world_107_125,
+	  world/world_107_128, world/world_108_115, world/world_108_117,
+	  world/world_108_118, world/world_108_119, world/world_108_120,
+	  world/world_108_121, world/world_108_122, world/world_108_123,
+	  world/world_108_124, world/world_108_125, world/world_108_126,
+	  world/world_108_127, world/world_108_128, world/world_109_108,
+	  world/world_109_109, world/world_109_110, world/world_109_111,
+	  world/world_109_112, world/world_109_113, world/world_109_114,
+	  world/world_109_115, world/world_109_116, world/world_109_117,
+	  world/world_109_118, world/world_109_119, world/world_109_120,
+	  world/world_109_121, world/world_109_122, world/world_109_123,
+	  world/world_109_124, world/world_109_125, world/world_110_108,
+	  world/world_110_109, world/world_110_113, world/world_110_115,
+	  world/world_110_116, world/world_110_117, world/world_110_118,
+	  world/world_110_119, world/world_110_120, world/world_110_121,
+	  world/world_110_122, world/world_110_123, world/world_110_124,
+	  world/world_110_125, world/world_110_128, world/world_111_113,
+	  world/world_111_114, world/world_111_115, world/world_111_117,
+	  world/world_111_118, world/world_111_119, world/world_111_120,
+	  world/world_111_121, world/world_111_122, world/world_112_116,
+	  world/world_112_117, world/world_112_118, world/world_112_119,
+	  world/world_112_120, world/world_112_121, world/world_113_116,
+	  world/world_114_101, world/world_114_102, world/world_114_116,
+	  world/world_115_101, world/world_115_102, world/world_115_115,
+	  world/world_115_116, world/world_116_101, world/world_116_116,
+	  world/world_116_117, world/world_117_101, world/world_117_117,
+	  world/world_118_101, world/world_118_103, world/world_118_104,
+	  world/world_118_117, world/world_119_101, world/world_119_102,
+	  world/world_119_103, world/world_119_104, world/world_119_105,
+	  world/world_119_106, world/world_119_115, world/world_119_116,
+	  world/world_119_117, world/world_119_118, world/world_120_101,
+	  world/world_120_102, world/world_120_106, world/world_120_107,
+	  world/world_120_108, world/world_120_110, world/world_121_110,
+	  world/world_121_111, world/world_121_112, world/world_121_113,
+	  world/world_121_114, world/world_121_115, world/world_122_111,
+	  world/world_122_114, world/world_122_125, world/world_123_113,
+	  world/world_123_114, world/world_123_120, world/world_124_113,
+	  world/world_125_124, world/world_126_116, world/world_127_108,
+	  world/world_127_114, world/world_128_107, world/world_129_107:
+	  Remove empty msg..endmsg values.
+
+2007-03-21 10:18  akirschbaum
+
+	* darcap/forgotten_town/shops/general2, pup_land/hq,
+	  pup_land/ordeal/tower_ordeal1, pup_land/pplant/pplant_ud2,
+	  pup_land/pplant/pplant_ud3, pup_land/raffle/raffle2_u1,
+	  scorn/houses/wizz.entry, test/anthony/roller_cades,
+	  world/world_102_110, world/world_103_110, world/world_104_110,
+	  world/world_104_111, world/world_104_112, world/world_104_113,
+	  world/world_105_112: Remove redundant empty msg..endmsg values.
+
+2007-03-21 10:08  akirschbaum
+
+	* editor/picks/other, editor/walls/caves2,
+	  lake_country/Mwizard/MwizardD,
+	  mlab/citydeclouds/castle/cwdccastleb1, pup_land/begin/adv,
+	  pup_land/jk/heads, pup_land/raffle/raffle2_u3a,
+	  pup_land/raffle/raffle3_u1, pup_land/raffle/raffle3_u2,
+	  pup_land/rainbow/Lv3/Garan, pup_land/rainbow/Lv3/Goraon,
+	  pup_land/rainbow/Lv3/Ring, pup_land/rainbow/Lv3/Rufto,
+	  pup_land/rainbow/Lv3/e-path, pup_land/rainbow/Lv3/n-gate,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv3/sec-p,
+	  pup_land/rainbow/Lv3/w-path, pup_land/s_f/cave1,
+	  pup_land/s_f/cave2, pup_land/s_f/secret, pup_land/s_f/st3,
+	  pup_land/s_f/st5, pup_land/s_f/st6, pup_land/s_f/st7,
+	  unlinked/Greyshield/Cave, unlinked/Greyshield/Cavern,
+	  unlinked/Greyshield/Cavern2, unlinked/kandora/cave/entrance,
+	  unlinked/kandora/circus/mp_cave: Remove empty msg..endmsg values
+	  from 'blocked' objects.
+
+2007-03-21 04:51  rjtanner
+
+	* ChangeLog: ChangeLog updates
+
 2007-03-20 20:59  eracc
 
 	* maps/branches/1.x/brest/amphis, brest/amphis: Remove extra space
