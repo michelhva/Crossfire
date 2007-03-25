@@ -34,6 +34,7 @@ invisible 0
 color_fg blue
 speed 0.2
 type 40
+move_type walk
 no_pick 1
 maxsp 1
 walk_on 1
@@ -56,6 +57,7 @@ color_fg blue
 speed -0.4
 invisible 0
 type 40
+move_type walk
 no_pick 1
 sp 1
 walk_on 1
@@ -80,6 +82,7 @@ color_fg blue
 invisible 0
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 2
 walk_on 1
@@ -102,6 +105,7 @@ invisible 0
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 3
 walk_on 1
@@ -126,6 +130,7 @@ mina
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 4
 walk_on 1
@@ -148,6 +153,7 @@ mina
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 5
 walk_on 1
@@ -172,6 +178,7 @@ mina
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 6
 walk_on 1
@@ -194,6 +201,7 @@ mina
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 7
 walk_on 1
@@ -218,6 +226,7 @@ mina
 color_fg blue
 speed -0.4
 type 40
+move_type walk
 no_pick 1
 sp 8
 walk_on 1
