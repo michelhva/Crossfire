@@ -15,7 +15,7 @@ blank.111
 blank.111
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 see_invisible 1
@@ -30,7 +30,6 @@ maxhp 75
 wc 10
 dam 5
 speed -0.4
-flying 1
 resist_electricity 50
 
 run_away 25

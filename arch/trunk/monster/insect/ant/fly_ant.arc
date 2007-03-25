@@ -9,10 +9,9 @@ fly_ant.171
 fly_ant.172
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 6
-flying 1
 alive 1
 no_pick 1
 ac 10

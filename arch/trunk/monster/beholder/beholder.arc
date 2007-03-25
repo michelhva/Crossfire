@@ -10,7 +10,7 @@ beholder.113
 beholder.114
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 see_invisible 1
@@ -33,7 +33,6 @@ resist_paralyze 100
 resist_fear 100
 resist_blind -75
 speed -0.07
-flying 1
 weight 1000
 run_away 15
 attack_movement 1

@@ -10,7 +10,7 @@ deathshead.113
 deathshead.114
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 40
 Pow 100
@@ -18,7 +18,6 @@ Con 100
 no_pick 1
 alive 1
 undead 1
-flying 1
 exp 400000
 level 130
 attacktype 17

@@ -13,7 +13,7 @@ alive 1
 no_pick 1
 speed -0.002
 maxsp 1
-flying 1
+move_type fly_low
 level 5
 editable 1
 end

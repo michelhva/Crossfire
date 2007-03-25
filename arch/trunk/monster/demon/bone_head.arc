@@ -10,7 +10,7 @@ bone_head.113
 bone_head.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 friendly 1
 Wis 20
@@ -18,7 +18,6 @@ no_pick 1
 alive 1
 sleep 1
 undead 1
-flying 1
 exp 3500
 level 15
 attacktype 17

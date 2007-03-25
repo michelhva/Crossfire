@@ -17,7 +17,7 @@ color_fg red
 color_bg khaki
 is_animated 0
 is_turnable 1
-flying 1
+move_type fly_low
 speed 1
 glow_radius 1
 no_pick 1

@@ -17,7 +17,7 @@ drake.212
 mina
 level 9
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 see_invisible 1
@@ -36,7 +36,6 @@ resist_magic 85
 resist_blind 30
 attacktype 1025
 speed 0.42
-flying 1
 weight 70000
 editable 1
 end

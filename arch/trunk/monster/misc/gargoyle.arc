@@ -10,13 +10,12 @@ gargoyle.112
 gargoyle.111
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 Str 30
 Wis 15
 Con 10
 see_invisible 1
 no_pick 1
-flying 1
 weight 100000
 alive 1
 exp 1000

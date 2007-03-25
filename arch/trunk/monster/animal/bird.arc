@@ -14,7 +14,7 @@ bird.171
 bird.172
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 8
 no_pick 1
@@ -28,7 +28,6 @@ wc 15
 dam 1
 speed -0.3
 exp 20
-flying 1
 weight 1500
 attack_movement 3
 editable 1

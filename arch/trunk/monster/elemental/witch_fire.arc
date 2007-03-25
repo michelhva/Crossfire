@@ -9,7 +9,7 @@ witch_fire.111
 witch_fire.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 resist_magic 25
 resist_poison 100
@@ -28,7 +28,6 @@ level 14
 speed -0.4
 exp 5000
 weight 20
-flying 1
 can_cast_spell 1
 can_use_skill 1
 sp 50

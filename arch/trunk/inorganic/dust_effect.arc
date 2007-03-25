@@ -14,7 +14,7 @@ speed 1
 attacktype 4194304
 wc -3
 dam 1
-flying 1
+move_type fly_low
 no_pick 1
 editable 32
 name_pl clouds of dust

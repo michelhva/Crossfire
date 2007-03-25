@@ -4,7 +4,7 @@ race angel
 face retributioner.x11
 randomitems angel
 monster 1
-move_type walk
+move_type walk fly_low
 level 27
 hp 4000
 maxhp 4000
@@ -26,7 +26,6 @@ resist_magic 80
 resist_holyword 80
 resist_blind 100
 weight 75000
-flying 1
 run_away 18
 will_apply 2
 pick_up 24
@@ -60,7 +59,7 @@ Object destroying_angel_2
 name Retributioner
 face retributioner.x11
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 x 1
@@ -71,7 +70,7 @@ Object destroying_angel_3
 name Retributioner
 face retributioner.x11
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 1
@@ -82,7 +81,7 @@ Object destroying_angel_4
 name Retributioner
 face retributioner.x11
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 1
@@ -94,7 +93,7 @@ Object destroying_angel_5
 name Retributioner
 face retributioner.x11
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 2
@@ -106,7 +105,7 @@ Object destroying_angel_6
 name Retributioner
 face retributioner.x11
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 no_pick 1
 y 2

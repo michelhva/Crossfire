@@ -28,14 +28,13 @@ attacktype 160
 carrying 100
 alive 1
 monster 1
-move_type walk
+move_type walk fly_low
 reflect_spell 1
 sleep 1
 Wis 15
 undead 1
 weight 50000
 no_pick 1
-flying 1
 can_see_in_dark 1
 editable 1
 end

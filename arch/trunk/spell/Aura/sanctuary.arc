@@ -19,7 +19,7 @@ name sanctuary
 face counterspell.111
 type 98
 speed 1
-flying 1
+move_type fly_low
 no_pick 1
 food 2
 is_used_up 1

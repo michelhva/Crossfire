@@ -11,7 +11,7 @@ killerbee.112
 mina
 color_fg orange
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 can_see_in_dark 1
 Wis 10
@@ -25,6 +25,5 @@ Con 1
 maxhp 15
 run_away 75
 level 4
-flying 1
 editable 1
 end

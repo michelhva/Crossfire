@@ -28,7 +28,7 @@ random_movement 1
 speed 1
 no_pick 1
 attacktype 262144
-flying 1
+move_type fly_low
 no_pick 1
 dam 5
 visibility 100

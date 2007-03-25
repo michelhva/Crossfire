@@ -9,7 +9,7 @@ manabolt.113
 manabolt.114
 mina
 magicmap light_blue
-flying 1
+move_type fly_low
 speed 1
 no_pick 1
 editable 0

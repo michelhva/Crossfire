@@ -7,13 +7,12 @@ skull.111
 skull.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 20
 no_pick 1
 alive 1
 undead 1
-flying 1
 exp 5000
 level 15
 attacktype 17

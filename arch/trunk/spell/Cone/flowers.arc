@@ -7,7 +7,7 @@ subtype 7
 face flowers.111
 material 32
 speed 0.5
-flying 1
+move_type fly_low
 weight 20
 nrof 1
 editable 0

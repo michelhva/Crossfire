@@ -9,7 +9,7 @@ para_fire.111
 para_fire.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 resist_fire 100
 
@@ -25,6 +25,5 @@ level 6
 speed -0.25
 exp 200
 weight 200
-flying 1
 editable 1
 end

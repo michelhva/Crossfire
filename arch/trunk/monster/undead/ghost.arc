@@ -8,7 +8,7 @@ ghost.111
 ghost.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 10
 no_pick 1
@@ -22,7 +22,6 @@ wc 2
 dam 14
 speed 0.14
 attacktype 528
-flying 1
 weight 500
 resist_cold 50
 resist_fear 100

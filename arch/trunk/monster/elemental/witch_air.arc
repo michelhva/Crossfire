@@ -9,7 +9,7 @@ witch_air.111
 witch_air.112
 mina
 monster 1
-move_type walk
+move_type walk fly_low
 alive 1
 resist_magic 25
 resist_poison 100
@@ -27,7 +27,6 @@ level 15
 speed -0.6
 exp 6000
 weight 50
-flying 1
 can_cast_spell 1
 can_use_skill 1
 sp 50

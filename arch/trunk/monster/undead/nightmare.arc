@@ -25,13 +25,12 @@ resist_blind 100
 attacktype 66048
 alive 1
 monster 1
-move_type walk
+move_type walk fly_low
 sleep 1
 Wis 15
 undead 1
 weight 5000
 no_pick 1
-flying 1
 run_away 15
 can_see_in_dark 1
 editable 1
