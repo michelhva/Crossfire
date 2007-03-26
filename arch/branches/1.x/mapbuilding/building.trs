@@ -93,13 +93,30 @@ treasureone shop_building_east
   list building_material_stonewall_east
     chance 20  
 end
+treasureone shop_building_pupland
+  arch building_builder
+    chance 2
+  more
+  arch building_destroyer
+    chance 2
+  more
+  list building_material
+    chance 78
+  more
+  list building_material_floor_pupland
+    chance 20  
+end
 ##For areas like scorn area, sells DWall
 treasureone building_material_stonewall_norm
   arch building_wall2
 end
 ##For brest area, sells Red Cwall rather then DWall
+# Added dark wood floor here too rather than create a whole new list for
+# dark floors in Brest (Gene Alexander)
 treasureone building_material_stonewall_fant
   arch building_wall4
+  more
+  arch building_woodfloor2
 end
 ##For navar area, sells West Cwall rather then DWall
 treasureone building_material_stonewall_west
@@ -113,4 +130,8 @@ treasureone building_material_stonewall_east
   arch building_wall5
     chance 50
 end
-
+## Dark wood floor is more likely in pupland (Gene Alexander)
+treasureone building_material_floor_pupland
+  arch building_woodfloor2
+    chance 50
+end

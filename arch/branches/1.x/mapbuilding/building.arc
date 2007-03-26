@@ -60,6 +60,17 @@ auto_apply 1
 randomitems shop_building_east
 editable 64
 end
+Object shop_building_pupland
+name tiles
+is_floor 1
+face shop_building.111
+no_pick 1
+no_magic 1
+type 68
+auto_apply 1
+randomitems shop_building_pupland
+editable 64
+end
 Object building_woodfloor
 name Wood floor material
 nrof 1
