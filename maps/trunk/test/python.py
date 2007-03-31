@@ -59,6 +59,16 @@ def do_maps():
 	for map in maps:
 		whoami.Say('%s   -> %d players'%(map.Name,map.Players))
 #activator=Crossfire.WhoIsActivator()
+	whoami.Say('this map is %s, size %d, %d'%(whoami.Map.Name, whoami.Map.Width, whoami.Map.Height))
+	if (len(topic) > 1):
+		flag = 0
+		if len(topic) > 2:
+			flag = int(topic[2]);
+		ready = Crossfire.ReadyMap(topic[1], flag)
+		if (ready):
+			whoami.Say('ok, loaded %d map %s'%(flag,ready.Name))
+		else:
+			whoami.Say('can\'t load %d map %s'%(flag,topic[1]))
 
 def do_party():
 	parties = Crossfire.GetParties()
@@ -174,6 +184,13 @@ def do_misc():
 		whoami.Say("Inv.Env = %s"%inv.Env.Name)
 	else:
 		whoami.Say("Empty inv??")
+	
+	if len(topic) > 1:
+		map = Crossfire.MapHasBeenLoaded(topic[1])
+		if map:
+			whoami.Say('map %s is loaded, size = %d, %d'%(map.Name, map.Width, map.Height))
+		else:
+			whoami.Say('map %s is not loaded'%topic[1])
 
 def do_inventory():
 	whoami.Say('You have:');
@@ -285,6 +302,8 @@ def do_directory():
 	whoami.Say('local = %s'%Crossfire.LocalDirectory());
 	whoami.Say('player = %s'%Crossfire.PlayerDirectory());
 	whoami.Say('data = %s'%Crossfire.DataDirectory());
+	whoami.Say('scriptname = %s'%Crossfire.ScriptName());
+
 
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
