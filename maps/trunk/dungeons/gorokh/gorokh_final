@@ -2391,8 +2391,8 @@ resist_chaos 50
 resist_godpower 50
 resist_holyword 50
 resist_blind 50
-see_invisible 1
 pick_up 24
+see_invisible 1
 can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
@@ -2475,8 +2475,8 @@ resist_chaos 50
 resist_godpower 50
 resist_holyword 50
 resist_blind 50
-see_invisible 1
 pick_up 24
+see_invisible 1
 can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
@@ -2603,6 +2603,14 @@ name eternal lake of fire
 x 7
 y 13
 glow_radius 1
+end
+arch Greater_Demon
+title of Gorokh
+ac -30
+x 7
+y 13
+speed 0.5
+level 120
 end
 arch permanent_lava
 name eternal lake of fire
@@ -4710,8 +4718,8 @@ resist_chaos 50
 resist_godpower 50
 resist_holyword 50
 resist_blind 50
-see_invisible 1
 pick_up 24
+see_invisible 1
 can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
@@ -4794,8 +4802,8 @@ resist_chaos 50
 resist_godpower 50
 resist_holyword 50
 resist_blind 50
-see_invisible 1
 pick_up 24
+see_invisible 1
 can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
@@ -7476,6 +7484,14 @@ x 20
 y 40
 glow_radius 1
 end
+arch Greater_Demon
+title of Gorokh
+ac -30
+x 20
+y 40
+speed 0.5
+level 120
+end
 arch permanent_lava
 name eternal lake of fire
 x 20
@@ -8454,6 +8470,152 @@ end
 arch large_stones
 x 23
 y 31
+end
+arch Balrog
+name Advocate of Gorokh
+race Divine
+Con 50
+Pow 50
+hp 14000
+maxhp 14000
+sp 900
+maxsp 900
+exp 5000000
+wc -40
+ac -40
+x 23
+y 31
+speed 0.7
+level 125
+attacktype 1049605
+resist_physical 90
+resist_magic 90
+resist_electricity 90
+resist_cold 90
+resist_acid 90
+resist_drain 90
+resist_weaponmagic 90
+resist_ghosthit 90
+resist_slow 90
+resist_deplete 90
+resist_death 90
+resist_chaos 90
+resist_godpower 50
+resist_holyword 100
+path_attuned 131074
+carrying 25000
+randomitems none
+arch skill_evocation
+end
+arch skill_pyromancy
+end
+arch skill_sorcery
+end
+arch skill_praying
+end
+arch skill_summoning
+end
+arch skill_one_handed_weapon
+end
+arch skill_two_handed_weapon
+end
+arch skill_missile_weapon
+end
+arch spell_hellfire
+end
+arch spell_asteroid
+end
+arch spell_fear
+end
+arch spell_paralyze
+end
+arch spell_dancing_sword
+end
+arch spell_summon_pet_monster
+end
+arch darkblade
+title of Gorokh
+slaying angel
+msg
+A dark, one handed sword with a bone chilling
+evil force radiating from within.
+endmsg
+Str 1
+Dex 1
+Wis -3
+Cha -5
+sp -1
+grace -1
+dam 15
+resist_poison 45
+resist_paralyze 50
+path_attuned 131072
+value 1043000
+weight 10000
+last_sp 3
+xrays 1
+end
+arch DShieldms
+title of Gorokh
+msg
+There is an incredibly powerful evil spirit
+in the shield controlling your mind. You
+find it nearly impossible to regain control
+of yourself.
+endmsg
+Wis -5
+Pow -5
+ac 10
+resist_physical 25
+resist_fire 40
+material 0
+value 3000000
+weight 15000
+applied 1
+end
+arch corpse
+name corpse of Advocate
+name_pl corpses of Advocate
+msg
+You wonder what you should do with the body ...
+endmsg
+material 0
+end
+arch cloak
+name dark cloak
+name_pl dark cloaks
+title of Gorokh's Advocate
+msg
+A strange, dark cloak made of some
+sort of dark fire proof material.
+endmsg
+Cha -1
+hp 1
+sp 1
+ac 5
+resist_fire 45
+resist_cold 95
+material 0
+value 40000
+weight 2000
+item_power 5
+applied 1
+stealth 1
+end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 55
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
+arch event_death
+name The %m screams a curse and dies
+title Python
+slaying /python/misc/death_message.py
+end
 end
 arch permanent_lava
 name eternal lake of fire
@@ -9775,6 +9937,11 @@ arch small_stones
 x 27
 y 29
 end
+arch active_volcano
+x 27
+y 29
+glow_radius 4
+end
 arch large_stones
 x 27
 y 30
@@ -10417,6 +10584,11 @@ end
 arch large_stones
 x 29
 y 27
+end
+arch active_volcano
+x 29
+y 27
+glow_radius 4
 end
 arch large_stones
 x 29
@@ -10433,6 +10605,11 @@ end
 arch small_stones
 x 29
 y 31
+end
+arch active_volcano
+x 29
+y 31
+glow_radius 4
 end
 arch large_stones
 x 29
@@ -11084,6 +11261,11 @@ arch large_stones
 x 31
 y 29
 end
+arch active_volcano
+x 31
+y 29
+glow_radius 4
+end
 arch large_stones
 x 31
 y 30
@@ -14434,6 +14616,14 @@ end
 arch large_stones
 x 41
 y 36
+end
+arch Greater_Demon
+title of Gorokh
+ac -30
+x 41
+y 36
+speed 0.5
+level 120
 end
 arch large_stones
 x 41
@@ -20717,189 +20907,4 @@ name Eternal Darkness
 x 58
 y 58
 blocksview 0
-end
-arch Greater_Demon
-title of Gorokh
-ac -30
-x 7
-y 13
-speed 0.5
-level 120
-end
-arch Greater_Demon
-title of Gorokh
-ac -30
-x 20
-y 40
-speed 0.5
-level 120
-end
-arch Balrog
-name Advocate of Gorokh
-race Divine
-Con 50
-Pow 50
-hp 14000
-maxhp 14000
-sp 900
-maxsp 900
-exp 5000000
-wc -40
-ac -40
-x 23
-y 31
-speed 0.7
-level 125
-attacktype 1049605
-resist_physical 90
-resist_magic 90
-resist_electricity 90
-resist_cold 90
-resist_acid 90
-resist_drain 90
-resist_weaponmagic 90
-resist_ghosthit 90
-resist_slow 90
-resist_deplete 90
-resist_death 90
-resist_chaos 90
-resist_godpower 50
-resist_holyword 100
-path_attuned 131074
-carrying 25000
-randomitems none
-arch skill_evocation
-end
-arch skill_pyromancy
-end
-arch skill_sorcery
-end
-arch skill_praying
-end
-arch skill_summoning
-end
-arch skill_one_handed_weapon
-end
-arch skill_two_handed_weapon
-end
-arch skill_missile_weapon
-end
-arch spell_hellfire
-end
-arch spell_asteroid
-end
-arch spell_fear
-end
-arch spell_paralyze
-end
-arch spell_dancing_sword
-end
-arch spell_summon_pet_monster
-end
-arch darkblade
-title of Gorokh
-slaying angel
-msg
-A dark, one handed sword with a bone chilling
-evil force radiating from within.
-endmsg
-Str 1
-Dex 1
-Wis -3
-Cha -5
-sp -1
-grace -1
-dam 15
-resist_poison 45
-resist_paralyze 50
-path_attuned 131072
-value 1043000
-weight 10000
-last_sp 3
-xrays 1
-end
-arch DShieldms
-title of Gorokh
-msg
-There is an incredibly powerful evil spirit
-in the shield controlling your mind. You
-find it nearly impossible to regain control
-of yourself.
-endmsg
-Wis -5
-Pow -5
-ac 10
-resist_physical 25
-resist_fire 40
-material 0
-value 3000000
-weight 15000
-applied 1
-end
-arch corpse
-name corpse of Advocate
-name_pl corpses of Advocate
-msg
-You wonder what you should do with the body ...
-endmsg
-material 0
-end
-arch cloak
-name dark cloak
-name_pl dark cloaks
-title of Gorokh's Advocate
-msg
-A strange, dark cloak made of some
-sort of dark fire proof material.
-endmsg
-Cha -1
-hp 1
-sp 1
-ac 5
-resist_fire 45
-resist_cold 95
-material 0
-value 40000
-weight 2000
-item_power 5
-applied 1
-stealth 1
-end
-arch rod_heavy
-hp 1000
-maxhp 1000
-level 55
-applied 1
-startequip 1
-arch spell_banishment
-end
-end
-end
-arch active_volcano
-x 27
-y 29
-glow_radius 4
-end
-arch active_volcano
-x 29
-y 27
-glow_radius 4
-end
-arch active_volcano
-x 29
-y 31
-glow_radius 4
-end
-arch active_volcano
-x 31
-y 29
-glow_radius 4
-end
-arch Greater_Demon
-title of Gorokh
-ac -30
-x 41
-y 36
-speed 0.5
-level 120
 end
