@@ -47,7 +47,6 @@ wc 7
 maxsp 0
 dam 5
 ac 1
-pass_thru 1
 editable 16
 visibility 50
 magicmap black
@@ -101,7 +100,6 @@ wc 7
 ac 1
 dam 5
 maxsp 0
-pass_thru 1
 editable 16
 visibility 50
 magicmap black

@@ -85,7 +85,6 @@ wc 8
 maxsp 0
 dam 256
 ac 1
-pass_thru 1
 editable 16
 visibility 50
 magicmap black
