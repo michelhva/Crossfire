@@ -17,7 +17,6 @@ mina
 is_animated 0
 is_turnable 1
 nrof 1
-need_an 1
 weight 25
 value 1
 material 16

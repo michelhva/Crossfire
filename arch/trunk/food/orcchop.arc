@@ -1,7 +1,6 @@
 Object orcchop
 name orc chop
 face orcchop.111
-need_an 1
 food 10
 nrof 1
 type 6

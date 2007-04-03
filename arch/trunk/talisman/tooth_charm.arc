@@ -8,7 +8,6 @@ resist_confusion 15
 resist_paralyze 50
 resist_slow 30
 resist_fear 50
-need_an 1
 startequip 1
 editable 2048
 nrof 1

@@ -8,7 +8,6 @@ type 123
 material 1
 value 9500
 weight 200
-need_an 1
 sp 1
 editable 2048
 identified 1

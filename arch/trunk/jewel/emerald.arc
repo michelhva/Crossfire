@@ -10,7 +10,6 @@ color_fg green
 nrof 1
 speed -0.1
 value 160
-need_an 1
 weight 50
 editable 2048
 identified 1
