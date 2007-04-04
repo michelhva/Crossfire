@@ -1,5 +1,6 @@
 Object steambolt
-type 12
+type 102
+subtype 4
 other_arch temp_fog
 face steam.111
 anim
