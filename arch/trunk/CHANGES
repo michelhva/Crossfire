@@ -1,5 +1,8 @@
 Changes for SVN top of tree:
 
+spell/Bolt/steambolt.arc: Remove old LIGHTNING(12) type.
+Alex Schultz 2007-04-03
+
 Fix bug #1687729: Spell "create repulsion wall" is broken. Missing
  move_block field. Also replace obsolete no_pass with move_block all.
  spell/MagicWall/spell_create_earth_wall.arc spell_repelwall.arc
