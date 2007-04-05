@@ -1309,7 +1309,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 5
 y 13
 end
@@ -1582,7 +1582,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 6
 y 13
 end
@@ -1874,7 +1874,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 7
 y 13
 end
@@ -6656,7 +6656,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 26
 y 28
 end
@@ -6668,7 +6668,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 26
 y 29
 end
@@ -11626,7 +11626,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 46
 y 23
 end
@@ -11884,7 +11884,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 47
 y 23
 end

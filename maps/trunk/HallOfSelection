@@ -1399,7 +1399,7 @@ name floor
 face shop_empty.111
 x 5
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1412,7 +1412,7 @@ name floor
 face shop_empty.111
 x 5
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1425,7 +1425,7 @@ name floor
 face shop_empty.111
 x 5
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1438,7 +1438,7 @@ name floor
 face shop_empty.111
 x 5
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1451,7 +1451,7 @@ name floor
 face shop_empty.111
 x 5
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1859,7 +1859,7 @@ name floor
 face shop_empty.111
 x 6
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2177,7 +2177,7 @@ name floor
 face shop_empty.111
 x 7
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2684,7 +2684,7 @@ name floor
 face shop_empty.111
 x 8
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3006,7 +3006,7 @@ name floor
 face shop_empty.111
 x 9
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3019,7 +3019,7 @@ name floor
 face shop_empty.111
 x 9
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3032,7 +3032,7 @@ name floor
 face shop_empty.111
 x 9
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3045,7 +3045,7 @@ name floor
 face shop_empty.111
 x 9
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3058,7 +3058,7 @@ name floor
 face shop_empty.111
 x 9
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

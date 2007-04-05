@@ -677,7 +677,7 @@ end
 arch bwall_2_1_2
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 6
@@ -768,7 +768,7 @@ end
 arch bwall_2_1_2
 x 7
 y 4
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 7

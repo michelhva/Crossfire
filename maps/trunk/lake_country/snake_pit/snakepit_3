@@ -809,7 +809,7 @@ arch cave16
 name illusionary wall
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 3
@@ -819,7 +819,7 @@ arch cave14
 name illusionary wall
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 3
@@ -1015,7 +1015,7 @@ arch cave15
 name illusionary wall
 x 4
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 4
@@ -1025,7 +1025,7 @@ arch cave13
 name illusionary wall
 x 4
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 4
@@ -1197,7 +1197,7 @@ arch cave16
 name illusionary wall
 x 5
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 5
@@ -1207,7 +1207,7 @@ arch cave14
 name illusionary wall
 x 5
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 5
@@ -1383,7 +1383,7 @@ arch cave15
 name illusionary wall
 x 6
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 6
@@ -1393,7 +1393,7 @@ arch cave13
 name illusionary wall
 x 6
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 6
@@ -3806,7 +3806,7 @@ end
 arch large_stones
 x 17
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 17
@@ -4008,7 +4008,7 @@ end
 arch large_stones
 x 18
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 18
@@ -4223,7 +4223,7 @@ end
 arch large_stones
 x 19
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 19
@@ -4421,7 +4421,7 @@ end
 arch large_stones
 x 20
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 20
@@ -4623,7 +4623,7 @@ end
 arch large_stones
 x 21
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 21
@@ -4821,7 +4821,7 @@ end
 arch large_stones
 x 22
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 22

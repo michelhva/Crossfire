@@ -2345,7 +2345,7 @@ arch firewall_5
 x 12
 y 11
 no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_small_fireball
 end
@@ -2516,7 +2516,7 @@ arch firewall_1
 x 13
 y 12
 no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_small_fireball
 end
@@ -2688,7 +2688,7 @@ arch firewall_5
 x 14
 y 11
 no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_small_fireball
 end

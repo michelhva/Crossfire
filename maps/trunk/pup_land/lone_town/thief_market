@@ -543,7 +543,7 @@ end
 arch dun2
 x 5
 y 3
-no_pass 0
+move_block 0
 end
 arch exit
 slaying town_ud1
@@ -665,7 +665,7 @@ end
 arch dun3
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 6
@@ -1040,7 +1040,7 @@ arch door_look_1
 x 8
 y 19
 alive 0
-no_pass 0
+move_block 0
 end
 arch shop_gems
 x 8
@@ -1138,7 +1138,7 @@ arch door_look_1
 x 9
 y 19
 alive 0
-no_pass 0
+move_block 0
 end
 arch shop_gems
 x 9
@@ -1236,7 +1236,7 @@ arch door_look_1
 x 10
 y 19
 alive 0
-no_pass 0
+move_block 0
 end
 arch shop_gems
 x 10

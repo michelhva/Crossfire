@@ -1250,7 +1250,7 @@ arch stonefloor2
 name wall
 x 3
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1262,7 +1262,7 @@ arch stonefloor2
 name wall
 x 3
 y 17
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1274,7 +1274,7 @@ arch stonefloor2
 name wall
 x 3
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1694,7 +1694,7 @@ arch stonefloor2
 name wall
 x 4
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1706,7 +1706,7 @@ arch stonefloor2
 name wall
 x 4
 y 17
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1714,7 +1714,7 @@ arch stonefloor2
 name wall
 x 4
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2154,7 +2154,7 @@ arch stonefloor2
 name wall
 x 5
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2182,7 +2182,7 @@ arch stonefloor2
 name wall
 x 5
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2489,7 +2489,7 @@ arch stonefloor2
 name wall
 x 6
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2501,7 +2501,7 @@ arch stonefloor2
 name wall
 x 6
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2513,7 +2513,7 @@ arch stonefloor2
 name wall
 x 6
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2525,7 +2525,7 @@ arch stonefloor2
 name wall
 x 6
 y 9
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2537,7 +2537,7 @@ arch stonefloor2
 name wall
 x 6
 y 10
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2549,7 +2549,7 @@ arch stonefloor2
 name wall
 x 6
 y 11
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2561,7 +2561,7 @@ arch stonefloor2
 name wall
 x 6
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2573,7 +2573,7 @@ arch stonefloor2
 name wall
 x 6
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2585,7 +2585,7 @@ arch stonefloor2
 name wall
 x 6
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2608,7 +2608,7 @@ arch stonefloor2
 name wall
 x 6
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2639,7 +2639,7 @@ arch stonefloor2
 name wall
 x 6
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2666,7 +2666,7 @@ arch stonefloor2
 name wall
 x 6
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2674,7 +2674,7 @@ arch stonefloor2
 name wall
 x 6
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2686,7 +2686,7 @@ arch stonefloor2
 name wall
 x 6
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2698,7 +2698,7 @@ arch stonefloor2
 name wall
 x 6
 y 23
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2710,7 +2710,7 @@ arch stonefloor2
 name wall
 x 6
 y 24
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2722,7 +2722,7 @@ arch stonefloor2
 name wall
 x 6
 y 25
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2734,7 +2734,7 @@ arch stonefloor2
 name wall
 x 6
 y 26
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2746,7 +2746,7 @@ arch stonefloor2
 name wall
 x 6
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2758,7 +2758,7 @@ arch stonefloor2
 name wall
 x 6
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2932,7 +2932,7 @@ arch stonefloor2
 name wall
 x 7
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2986,7 +2986,7 @@ arch stonefloor2
 name wall
 x 7
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2998,7 +2998,7 @@ arch stonefloor2
 name wall
 x 7
 y 15
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3010,7 +3010,7 @@ arch stonefloor2
 name wall
 x 7
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3045,7 +3045,7 @@ arch stonefloor2
 name wall
 x 7
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3057,7 +3057,7 @@ arch stonefloor2
 name wall
 x 7
 y 19
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3069,7 +3069,7 @@ arch stonefloor2
 name wall
 x 7
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3123,7 +3123,7 @@ arch stonefloor2
 name wall
 x 7
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3318,7 +3318,7 @@ arch stonefloor2
 name wall
 x 8
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3456,7 +3456,7 @@ arch stonefloor2
 name wall
 x 8
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3692,7 +3692,7 @@ arch stonefloor2
 name wall
 x 9
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3830,7 +3830,7 @@ arch stonefloor2
 name wall
 x 9
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4067,7 +4067,7 @@ arch stonefloor2
 name wall
 x 10
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4205,7 +4205,7 @@ arch stonefloor2
 name wall
 x 10
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4375,7 +4375,7 @@ arch stonefloor2
 name wall
 x 11
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4513,7 +4513,7 @@ arch stonefloor2
 name wall
 x 11
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4705,7 +4705,7 @@ arch stonefloor2
 name wall
 x 12
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4713,7 +4713,7 @@ arch stonefloor2
 name wall
 x 12
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4749,7 +4749,7 @@ arch stonefloor2
 name wall
 x 12
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4761,7 +4761,7 @@ arch stonefloor2
 name wall
 x 12
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4773,7 +4773,7 @@ arch stonefloor2
 name wall
 x 12
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4815,7 +4815,7 @@ arch stonefloor2
 name wall
 x 12
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4827,7 +4827,7 @@ arch stonefloor2
 name wall
 x 12
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4839,7 +4839,7 @@ arch stonefloor2
 name wall
 x 12
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4875,7 +4875,7 @@ arch stonefloor2
 name wall
 x 12
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4887,7 +4887,7 @@ arch stonefloor2
 name wall
 x 12
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5080,7 +5080,7 @@ arch stonefloor2
 name wall
 x 13
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5116,7 +5116,7 @@ arch stonefloor2
 name wall
 x 13
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5144,7 +5144,7 @@ arch stonefloor2
 name wall
 x 13
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5186,7 +5186,7 @@ arch stonefloor2
 name wall
 x 13
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5214,7 +5214,7 @@ arch stonefloor2
 name wall
 x 13
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5250,7 +5250,7 @@ arch stonefloor2
 name wall
 x 13
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5427,7 +5427,7 @@ arch stonefloor2
 name wall
 x 14
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5435,7 +5435,7 @@ arch stonefloor2
 name wall
 x 14
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5471,7 +5471,7 @@ arch stonefloor2
 name wall
 x 14
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5483,7 +5483,7 @@ arch stonefloor2
 name wall
 x 14
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5499,7 +5499,7 @@ arch stonefloor2
 name wall
 x 14
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5541,7 +5541,7 @@ arch stonefloor2
 name wall
 x 14
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5553,7 +5553,7 @@ arch stonefloor2
 name wall
 x 14
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5565,7 +5565,7 @@ arch stonefloor2
 name wall
 x 14
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5601,7 +5601,7 @@ arch stonefloor2
 name wall
 x 14
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5613,7 +5613,7 @@ arch stonefloor2
 name wall
 x 14
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5783,7 +5783,7 @@ arch stonefloor2
 name wall
 x 15
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5791,7 +5791,7 @@ arch stonefloor2
 name wall
 x 15
 y 3
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5803,7 +5803,7 @@ arch stonefloor2
 name wall
 x 15
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5815,7 +5815,7 @@ arch stonefloor2
 name wall
 x 15
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5827,7 +5827,7 @@ arch stonefloor2
 name wall
 x 15
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -5965,7 +5965,7 @@ arch stonefloor2
 name wall
 x 15
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6171,7 +6171,7 @@ arch stonefloor2
 name wall
 x 16
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6216,7 +6216,7 @@ arch stonefloor2
 name wall
 x 16
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6354,7 +6354,7 @@ arch stonefloor2
 name wall
 x 16
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6366,7 +6366,7 @@ arch stonefloor2
 name wall
 x 16
 y 29
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6382,7 +6382,7 @@ arch stonefloor2
 name wall
 x 16
 y 30
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6412,7 +6412,7 @@ arch stonefloor2
 name wall
 x 16
 y 32
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6592,7 +6592,7 @@ arch stonefloor2
 name wall
 x 17
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6831,7 +6831,7 @@ arch stonefloor2
 name wall
 x 17
 y 30
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -6856,7 +6856,7 @@ arch stonefloor2
 name wall
 x 17
 y 32
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7006,7 +7006,7 @@ arch stonefloor2
 name wall
 x 18
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7051,7 +7051,7 @@ arch stonefloor2
 name wall
 x 18
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7189,7 +7189,7 @@ arch stonefloor2
 name wall
 x 18
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7201,7 +7201,7 @@ arch stonefloor2
 name wall
 x 18
 y 29
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7217,7 +7217,7 @@ arch stonefloor2
 name wall
 x 18
 y 30
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7247,7 +7247,7 @@ arch stonefloor2
 name wall
 x 18
 y 32
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7427,7 +7427,7 @@ arch stonefloor2
 name wall
 x 19
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7435,7 +7435,7 @@ arch stonefloor2
 name wall
 x 19
 y 3
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7447,7 +7447,7 @@ arch stonefloor2
 name wall
 x 19
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7459,7 +7459,7 @@ arch stonefloor2
 name wall
 x 19
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7471,7 +7471,7 @@ arch stonefloor2
 name wall
 x 19
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7609,7 +7609,7 @@ arch stonefloor2
 name wall
 x 19
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7847,7 +7847,7 @@ arch stonefloor2
 name wall
 x 20
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7855,7 +7855,7 @@ arch stonefloor2
 name wall
 x 20
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7891,7 +7891,7 @@ arch stonefloor2
 name wall
 x 20
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7903,7 +7903,7 @@ arch stonefloor2
 name wall
 x 20
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7915,7 +7915,7 @@ arch stonefloor2
 name wall
 x 20
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7957,7 +7957,7 @@ arch stonefloor2
 name wall
 x 20
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7969,7 +7969,7 @@ arch stonefloor2
 name wall
 x 20
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -7981,7 +7981,7 @@ arch stonefloor2
 name wall
 x 20
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8017,7 +8017,7 @@ arch stonefloor2
 name wall
 x 20
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8029,7 +8029,7 @@ arch stonefloor2
 name wall
 x 20
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8262,7 +8262,7 @@ arch stonefloor2
 name wall
 x 21
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8298,7 +8298,7 @@ arch stonefloor2
 name wall
 x 21
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8326,7 +8326,7 @@ arch stonefloor2
 name wall
 x 21
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8368,7 +8368,7 @@ arch stonefloor2
 name wall
 x 21
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8396,7 +8396,7 @@ arch stonefloor2
 name wall
 x 21
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8432,7 +8432,7 @@ arch stonefloor2
 name wall
 x 21
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8621,7 +8621,7 @@ arch stonefloor2
 name wall
 x 22
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8633,7 +8633,7 @@ arch stonefloor2
 name wall
 x 22
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8669,7 +8669,7 @@ arch stonefloor2
 name wall
 x 22
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8681,7 +8681,7 @@ arch stonefloor2
 name wall
 x 22
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8693,7 +8693,7 @@ arch stonefloor2
 name wall
 x 22
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8735,7 +8735,7 @@ arch stonefloor2
 name wall
 x 22
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8747,7 +8747,7 @@ arch stonefloor2
 name wall
 x 22
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8759,7 +8759,7 @@ arch stonefloor2
 name wall
 x 22
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8795,7 +8795,7 @@ arch stonefloor2
 name wall
 x 22
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -8807,7 +8807,7 @@ arch stonefloor2
 name wall
 x 22
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9002,7 +9002,7 @@ arch stonefloor2
 name wall
 x 23
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9140,7 +9140,7 @@ arch stonefloor2
 name wall
 x 23
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9314,7 +9314,7 @@ arch stonefloor2
 name wall
 x 24
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9452,7 +9452,7 @@ arch stonefloor2
 name wall
 x 24
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9675,7 +9675,7 @@ arch stonefloor2
 name wall
 x 25
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -9813,7 +9813,7 @@ arch stonefloor2
 name wall
 x 25
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10000,7 +10000,7 @@ arch stonefloor2
 name wall
 x 26
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10138,7 +10138,7 @@ arch stonefloor2
 name wall
 x 26
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10350,7 +10350,7 @@ arch stonefloor2
 name wall
 x 27
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10404,7 +10404,7 @@ arch stonefloor2
 name wall
 x 27
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10416,7 +10416,7 @@ arch stonefloor2
 name wall
 x 27
 y 15
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10428,7 +10428,7 @@ arch stonefloor2
 name wall
 x 27
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10463,7 +10463,7 @@ arch stonefloor2
 name wall
 x 27
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10475,7 +10475,7 @@ arch stonefloor2
 name wall
 x 27
 y 19
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10487,7 +10487,7 @@ arch stonefloor2
 name wall
 x 27
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10541,7 +10541,7 @@ arch stonefloor2
 name wall
 x 27
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10757,7 +10757,7 @@ arch stonefloor2
 name wall
 x 28
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10765,7 +10765,7 @@ arch stonefloor2
 name wall
 x 28
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10777,7 +10777,7 @@ arch stonefloor2
 name wall
 x 28
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10789,7 +10789,7 @@ arch stonefloor2
 name wall
 x 28
 y 9
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10801,7 +10801,7 @@ arch stonefloor2
 name wall
 x 28
 y 10
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10813,7 +10813,7 @@ arch stonefloor2
 name wall
 x 28
 y 11
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10825,7 +10825,7 @@ arch stonefloor2
 name wall
 x 28
 y 12
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10837,7 +10837,7 @@ arch stonefloor2
 name wall
 x 28
 y 13
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10849,7 +10849,7 @@ arch stonefloor2
 name wall
 x 28
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10872,7 +10872,7 @@ arch stonefloor2
 name wall
 x 28
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10903,7 +10903,7 @@ arch stonefloor2
 name wall
 x 28
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10930,7 +10930,7 @@ arch stonefloor2
 name wall
 x 28
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10938,7 +10938,7 @@ arch stonefloor2
 name wall
 x 28
 y 21
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10950,7 +10950,7 @@ arch stonefloor2
 name wall
 x 28
 y 22
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10962,7 +10962,7 @@ arch stonefloor2
 name wall
 x 28
 y 23
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10974,7 +10974,7 @@ arch stonefloor2
 name wall
 x 28
 y 24
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10986,7 +10986,7 @@ arch stonefloor2
 name wall
 x 28
 y 25
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -10998,7 +10998,7 @@ arch stonefloor2
 name wall
 x 28
 y 26
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11010,7 +11010,7 @@ arch stonefloor2
 name wall
 x 28
 y 27
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11022,7 +11022,7 @@ arch stonefloor2
 name wall
 x 28
 y 28
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11334,7 +11334,7 @@ arch stonefloor2
 name wall
 x 29
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11362,7 +11362,7 @@ arch stonefloor2
 name wall
 x 29
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11771,7 +11771,7 @@ arch stonefloor2
 name wall
 x 30
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11783,7 +11783,7 @@ arch stonefloor2
 name wall
 x 30
 y 17
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -11791,7 +11791,7 @@ arch stonefloor2
 name wall
 x 30
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -12207,7 +12207,7 @@ arch stonefloor2
 name wall
 x 31
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -12219,7 +12219,7 @@ arch stonefloor2
 name wall
 x 31
 y 17
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -12231,7 +12231,7 @@ arch stonefloor2
 name wall
 x 31
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

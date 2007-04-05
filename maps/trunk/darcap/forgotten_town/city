@@ -3642,7 +3642,7 @@ end
 arch grass
 x 13
 y 39
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4098,7 +4098,7 @@ end
 arch grass
 x 15
 y 39
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

@@ -2035,7 +2035,7 @@ x 12
 y 13
 end
 arch mountain2
-no_pass 1
+move_block all
 blocksview 0
 x 12
 y 14
@@ -2211,13 +2211,13 @@ x 13
 y 13
 end
 arch mountain2
-no_pass 1
+move_block all
 blocksview 0
 x 13
 y 14
 end
 arch mountain2
-no_pass 1
+move_block all
 blocksview 0
 x 13
 y 15
@@ -2378,7 +2378,7 @@ x 14
 y 13
 end
 arch mountain2
-no_pass 1
+move_block all
 blocksview 0
 x 14
 y 14
@@ -2902,7 +2902,7 @@ end
 arch pillars
 name flooded tower
 face s_tower2.111
-no_pass 1
+move_block all
 x 17
 y 18
 end

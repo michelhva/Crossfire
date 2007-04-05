@@ -2862,7 +2862,7 @@ arch blocked
 name path of night
 x 15
 y 32
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch exit
@@ -2876,7 +2876,7 @@ arch blocked
 name path of night
 x 15
 y 33
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked

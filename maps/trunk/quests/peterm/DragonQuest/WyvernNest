@@ -163,12 +163,12 @@ end
 arch pstone_2
 x 3
 y 20
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 3
 y 21
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 3
@@ -1549,7 +1549,7 @@ end
 arch pstone_2
 x 17
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying ElectricHatchery
@@ -1763,7 +1763,7 @@ end
 arch pstone_2
 x 18
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying ElectricHatchery
@@ -2012,7 +2012,7 @@ end
 arch pstone_2
 x 19
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying ElectricHatchery
@@ -2248,7 +2248,7 @@ end
 arch pstone_2
 x 20
 y 3
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 20
@@ -2442,7 +2442,7 @@ end
 arch pstone_2
 x 20
 y 36
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 20
@@ -2683,7 +2683,7 @@ end
 arch pstone_2
 x 21
 y 36
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 21
@@ -2918,7 +2918,7 @@ end
 arch pstone_2
 x 22
 y 36
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 22
@@ -4393,17 +4393,17 @@ end
 arch pstone_2
 x 36
 y 21
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 36
 y 22
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 36
 y 23
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 36

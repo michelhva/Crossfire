@@ -202,7 +202,7 @@ end
 arch door_look_1
 x 1
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -456,7 +456,7 @@ end
 arch door_look_1
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -489,7 +489,7 @@ end
 arch door_look_1
 x 4
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -665,7 +665,7 @@ end
 arch door_look_1
 x 6
 y 8
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -796,7 +796,7 @@ end
 arch door_look_1
 x 7
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -972,7 +972,7 @@ end
 arch door_look_1
 x 9
 y 8
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1103,7 +1103,7 @@ end
 arch door_look_1
 x 10
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1279,7 +1279,7 @@ end
 arch door_look_1
 x 12
 y 8
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1406,7 +1406,7 @@ end
 arch door_look_1
 x 13
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1687,7 +1687,7 @@ end
 arch door_look_1
 x 16
 y 8
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1709,7 +1709,7 @@ end
 arch door_look_1
 x 16
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1893,7 +1893,7 @@ end
 arch door_look_2
 x 18
 y 9
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1911,7 +1911,7 @@ end
 arch door_look_2
 x 18
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor

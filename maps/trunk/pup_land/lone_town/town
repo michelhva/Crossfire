@@ -2954,7 +2954,7 @@ end
 arch river_nw-se_u
 x 24
 y 14
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 24
@@ -2963,7 +2963,7 @@ end
 arch river_nw-e
 x 24
 y 15
-no_pass 0
+move_block 0
 end
 arch a_bridge2
 x 24

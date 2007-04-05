@@ -9,7 +9,7 @@ endmsg
 x 32
 end
 arch sea
-no_pass 0
+move_block 0
 end
 arch sea
 y 1
@@ -129,12 +129,12 @@ end
 arch sea
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
@@ -143,12 +143,12 @@ end
 arch sea
 x 2
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -196,12 +196,12 @@ end
 arch sea
 x 3
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
@@ -210,12 +210,12 @@ end
 arch sea
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -267,7 +267,7 @@ end
 arch sea
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 4
@@ -276,7 +276,7 @@ end
 arch sea
 x 4
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 4
@@ -285,7 +285,7 @@ end
 arch sea
 x 4
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 4
@@ -294,7 +294,7 @@ end
 arch sea
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 4
@@ -303,7 +303,7 @@ end
 arch sea
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 4
@@ -426,7 +426,7 @@ end
 arch sea
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
@@ -435,7 +435,7 @@ end
 arch sea
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
@@ -444,7 +444,7 @@ end
 arch sea
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 6
@@ -492,7 +492,7 @@ end
 arch sea
 x 7
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
@@ -501,7 +501,7 @@ end
 arch sea
 x 7
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
@@ -510,7 +510,7 @@ end
 arch sea
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 7
@@ -566,7 +566,7 @@ end
 arch sea
 x 8
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 8
@@ -575,7 +575,7 @@ end
 arch sea
 x 8
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 8
@@ -584,7 +584,7 @@ end
 arch sea
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 8
@@ -593,7 +593,7 @@ end
 arch sea
 x 8
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 8
@@ -602,7 +602,7 @@ end
 arch sea
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 8
@@ -725,27 +725,27 @@ end
 arch sea
 x 10
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -793,27 +793,27 @@ end
 arch sea
 x 11
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 11
@@ -865,7 +865,7 @@ end
 arch sea
 x 12
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 12
@@ -874,7 +874,7 @@ end
 arch sea
 x 12
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 12
@@ -883,7 +883,7 @@ end
 arch sea
 x 12
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 12
@@ -892,7 +892,7 @@ end
 arch sea
 x 12
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 12
@@ -901,7 +901,7 @@ end
 arch sea
 x 12
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 12
@@ -1028,12 +1028,12 @@ end
 arch sea
 x 14
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
@@ -1042,12 +1042,12 @@ end
 arch sea
 x 14
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 14
@@ -1102,12 +1102,12 @@ end
 arch sea
 x 15
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
@@ -1116,12 +1116,12 @@ end
 arch sea
 x 15
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 15
@@ -1180,7 +1180,7 @@ end
 arch sea
 x 16
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 16
@@ -1189,7 +1189,7 @@ end
 arch sea
 x 16
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 16
@@ -1198,7 +1198,7 @@ end
 arch sea
 x 16
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 16
@@ -1207,7 +1207,7 @@ end
 arch sea
 x 16
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 16
@@ -1216,7 +1216,7 @@ end
 arch sea
 x 16
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 16
@@ -1343,12 +1343,12 @@ end
 arch sea
 x 18
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
@@ -1357,12 +1357,12 @@ end
 arch sea
 x 18
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 18
@@ -1410,12 +1410,12 @@ end
 arch sea
 x 19
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 19
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 19
@@ -1424,12 +1424,12 @@ end
 arch sea
 x 19
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 19
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -1485,7 +1485,7 @@ end
 arch sea
 x 20
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 20
@@ -1494,7 +1494,7 @@ end
 arch sea
 x 20
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 20
@@ -1503,7 +1503,7 @@ end
 arch sea
 x 20
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 20
@@ -1512,7 +1512,7 @@ end
 arch sea
 x 20
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 20
@@ -1521,7 +1521,7 @@ end
 arch sea
 x 20
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 20
@@ -1648,22 +1648,22 @@ end
 arch sea
 x 22
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 22
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 22
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 22
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 22
@@ -1715,22 +1715,22 @@ end
 arch sea
 x 23
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 23
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 x 23
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 23
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 23
@@ -1782,7 +1782,7 @@ end
 arch sea
 x 24
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 24
@@ -1791,7 +1791,7 @@ end
 arch sea
 x 24
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 24
@@ -1800,7 +1800,7 @@ end
 arch sea
 x 24
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 24
@@ -1809,7 +1809,7 @@ end
 arch sea
 x 24
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 24
@@ -1818,7 +1818,7 @@ end
 arch sea
 x 24
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 24
@@ -2004,7 +2004,7 @@ end
 arch sea
 x 27
 y 2
-no_pass 0
+move_block 0
 end
 arch galleon
 x 27
@@ -2017,7 +2017,7 @@ end
 arch sea
 x 27
 y 4
-no_pass 0
+move_block 0
 end
 arch galleon
 x 27
@@ -2030,7 +2030,7 @@ end
 arch sea
 x 27
 y 6
-no_pass 0
+move_block 0
 end
 arch galleon
 x 27
@@ -2094,7 +2094,7 @@ end
 arch sea
 x 28
 y 2
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 28
@@ -2103,7 +2103,7 @@ end
 arch sea
 x 28
 y 3
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 28
@@ -2112,7 +2112,7 @@ end
 arch sea
 x 28
 y 4
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 28
@@ -2121,7 +2121,7 @@ end
 arch sea
 x 28
 y 5
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 28
@@ -2130,7 +2130,7 @@ end
 arch sea
 x 28
 y 6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 28
@@ -2190,7 +2190,7 @@ end
 arch sea
 x 29
 y 2
-no_pass 0
+move_block 0
 end
 arch galleon
 x 29
@@ -2203,7 +2203,7 @@ end
 arch sea
 x 29
 y 4
-no_pass 0
+move_block 0
 end
 arch galleon
 x 29
@@ -2216,7 +2216,7 @@ end
 arch sea
 x 29
 y 6
-no_pass 0
+move_block 0
 end
 arch galleon
 x 29

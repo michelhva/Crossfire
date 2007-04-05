@@ -359,7 +359,7 @@ arch biglake_ew
 name water
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 3
@@ -369,7 +369,7 @@ arch biglake_sw
 name water
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 3
@@ -491,7 +491,7 @@ arch biglake_ew
 name water
 x 4
 y 10
-no_pass 0
+move_block 0
 end
 arch pit_closed
 face blake_A.111
@@ -509,7 +509,7 @@ arch biglake_ew
 name water
 x 4
 y 11
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 4
@@ -1697,7 +1697,7 @@ end
 arch blocked
 name darkness
 x 15
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch exit

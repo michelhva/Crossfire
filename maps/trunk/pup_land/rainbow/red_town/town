@@ -1118,7 +1118,7 @@ end
 arch sea_new
 x 13
 y 12
-no_pass 0
+move_block 0
 end
 arch galleon
 slaying ../islands

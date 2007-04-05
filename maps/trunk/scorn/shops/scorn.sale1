@@ -247,7 +247,7 @@ name House Plant
 x 2
 y 2
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 2
@@ -306,7 +306,7 @@ name House Plant
 x 2
 y 15
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 2
@@ -353,7 +353,7 @@ name House Plant
 x 3
 y 1
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -475,7 +475,7 @@ name House Plant
 x 3
 y 16
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 3
@@ -880,7 +880,7 @@ name House Plant
 x 7
 y 4
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 7
@@ -994,7 +994,7 @@ arch bench_1_4
 name Service Counter
 x 8
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -1013,7 +1013,7 @@ name House Plant
 x 8
 y 7
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -1135,7 +1135,7 @@ arch bench_2_1_2
 name Service Counter
 x 9
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 9
@@ -1300,7 +1300,7 @@ arch bench_2_1_2
 name Service Counter
 x 10
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 10
@@ -1450,7 +1450,7 @@ arch bench_2_1_2
 name Service Counter
 x 11
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 11
@@ -1597,7 +1597,7 @@ arch bench_1_3
 name Service Counter
 x 12
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1616,7 +1616,7 @@ name House Plant
 x 12
 y 7
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1750,7 +1750,7 @@ name House Plant
 x 13
 y 4
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
@@ -2205,7 +2205,7 @@ name House Plant
 x 17
 y 1
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -2327,7 +2327,7 @@ name House Plant
 x 17
 y 16
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 17
@@ -2369,7 +2369,7 @@ name House Plant
 x 18
 y 2
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 18
@@ -2428,7 +2428,7 @@ name House Plant
 x 18
 y 15
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 18

@@ -2617,7 +2617,7 @@ face hide_white.111
 x 11
 y 18
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2633,7 +2633,7 @@ face hide_white.111
 x 11
 y 19
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2649,7 +2649,7 @@ face hide_white.111
 x 11
 y 20
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2723,7 +2723,7 @@ arch check_floor
 slaying pshop1
 x 12
 y 4
-no_pass 1
+move_block all
 walk_off 1
 end
 arch woodfloor
@@ -2860,7 +2860,7 @@ arch check_floor
 slaying pshop1
 x 12
 y 13
-no_pass 1
+move_block all
 walk_off 1
 end
 arch woodfloor
@@ -2934,7 +2934,7 @@ face hide_black.111
 x 12
 y 18
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -2950,7 +2950,7 @@ face hide_black.111
 x 12
 y 19
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -2966,7 +2966,7 @@ face hide_black.111
 x 12
 y 20
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -3186,7 +3186,7 @@ face hide_white.111
 x 13
 y 18
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13
@@ -3202,7 +3202,7 @@ face hide_white.111
 x 13
 y 19
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13
@@ -3218,7 +3218,7 @@ face hide_white.111
 x 13
 y 20
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13

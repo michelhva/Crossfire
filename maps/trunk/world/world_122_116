@@ -934,7 +934,7 @@ end
 arch grass
 x 2
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -943,7 +943,7 @@ end
 arch grass
 x 2
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -952,7 +952,7 @@ end
 arch grass
 x 2
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -961,7 +961,7 @@ end
 arch grass
 x 2
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1253,7 +1253,7 @@ end
 arch grass
 x 3
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -1262,7 +1262,7 @@ end
 arch grass
 x 3
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -1271,7 +1271,7 @@ end
 arch grass
 x 3
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -1571,7 +1571,7 @@ end
 arch grass
 x 4
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1580,7 +1580,7 @@ end
 arch grass
 x 4
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1589,7 +1589,7 @@ end
 arch grass
 x 4
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1931,7 +1931,7 @@ end
 arch grass
 x 5
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -1940,7 +1940,7 @@ end
 arch grass
 x 5
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -1949,7 +1949,7 @@ end
 arch grass
 x 5
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -2249,7 +2249,7 @@ end
 arch grass
 x 6
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2258,7 +2258,7 @@ end
 arch grass
 x 6
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2267,7 +2267,7 @@ end
 arch grass
 x 6
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2276,7 +2276,7 @@ end
 arch grass
 x 6
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -7600,7 +7600,7 @@ end
 arch sea1
 x 21
 y 42
-no_pass 1
+move_block all
 end
 arch sea1
 x 21
@@ -7621,7 +7621,7 @@ end
 arch sea1
 x 21
 y 45
-no_pass 1
+move_block all
 end
 arch sea1
 x 21
@@ -7642,7 +7642,7 @@ end
 arch sea1
 x 21
 y 48
-no_pass 1
+move_block all
 end
 arch sea1
 x 21
@@ -7990,7 +7990,7 @@ end
 arch sea1
 x 22
 y 42
-no_pass 1
+move_block all
 end
 arch sea1
 x 22
@@ -8011,7 +8011,7 @@ end
 arch sea1
 x 22
 y 45
-no_pass 1
+move_block all
 end
 arch sea1
 x 22
@@ -8032,7 +8032,7 @@ end
 arch sea1
 x 22
 y 48
-no_pass 1
+move_block all
 end
 arch sea1
 x 22

@@ -259,7 +259,7 @@ end
 arch table_4
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -276,7 +276,7 @@ end
 arch table_4
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -293,7 +293,7 @@ end
 arch table_4
 x 2
 y 5
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -302,7 +302,7 @@ end
 arch table_4
 x 2
 y 6
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -311,7 +311,7 @@ end
 arch table_4
 x 2
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -320,7 +320,7 @@ end
 arch table_4
 x 2
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -337,7 +337,7 @@ end
 arch table_4
 x 2
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -436,7 +436,7 @@ end
 arch table_4
 x 3
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -545,7 +545,7 @@ end
 arch table_4
 x 4
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 4
@@ -644,7 +644,7 @@ end
 arch table_4
 x 5
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 5
@@ -775,7 +775,7 @@ end
 arch table_4
 x 6
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 6
@@ -1184,7 +1184,7 @@ end
 arch door_look_1
 x 10
 y 4
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -1202,7 +1202,7 @@ end
 arch door_look_1
 x 10
 y 7
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -1653,7 +1653,7 @@ end
 arch table_4
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 14
@@ -1771,7 +1771,7 @@ end
 arch table_4
 x 15
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 15
@@ -1876,7 +1876,7 @@ end
 arch table_4
 x 16
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 16
@@ -1975,7 +1975,7 @@ end
 arch table_4
 x 17
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2040,7 +2040,7 @@ end
 arch table_4
 x 18
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2057,7 +2057,7 @@ end
 arch table_4
 x 18
 y 3
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2074,7 +2074,7 @@ end
 arch table_4
 x 18
 y 5
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2083,7 +2083,7 @@ end
 arch table_4
 x 18
 y 6
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2092,7 +2092,7 @@ end
 arch table_4
 x 18
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2101,7 +2101,7 @@ end
 arch table_4
 x 18
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2118,7 +2118,7 @@ end
 arch table_4
 x 18
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18

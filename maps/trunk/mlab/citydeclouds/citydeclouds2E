@@ -5793,7 +5793,7 @@ end
 arch door_2
 x 12
 y 46
-no_pass 0
+move_block 0
 end
 arch flagstone
 name floor
@@ -9459,7 +9459,7 @@ end
 arch door_2
 x 20
 y 49
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -14095,7 +14095,7 @@ end
 arch dwall_3_4
 x 31
 y 10
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 31
@@ -14108,7 +14108,7 @@ end
 arch dwall_3_4
 x 31
 y 11
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 31
@@ -14121,7 +14121,7 @@ end
 arch dwall_3_4
 x 31
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 31
@@ -17659,7 +17659,7 @@ end
 arch door_look_1
 x 41
 y 26
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 41
@@ -18782,7 +18782,7 @@ end
 arch door_look_2
 x 44
 y 20
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 44
@@ -18791,7 +18791,7 @@ end
 arch door_look_2
 x 44
 y 21
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 44

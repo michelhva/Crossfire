@@ -191,7 +191,7 @@ end
 arch pillars
 x 1
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 1
@@ -237,7 +237,7 @@ end
 arch pillars
 x 1
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 1
@@ -516,7 +516,7 @@ end
 arch pillars
 x 3
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -585,7 +585,7 @@ end
 arch pillars
 x 3
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 3
@@ -898,7 +898,7 @@ end
 arch pillars
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -967,7 +967,7 @@ end
 arch pillars
 x 5
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 5
@@ -1282,7 +1282,7 @@ end
 arch pillars
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1351,7 +1351,7 @@ end
 arch pillars
 x 7
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 7
@@ -1668,7 +1668,7 @@ end
 arch pillars
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 9
@@ -1737,7 +1737,7 @@ end
 arch pillars
 x 9
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 9
@@ -2283,7 +2283,7 @@ end
 arch pillars
 x 13
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2338,7 +2338,7 @@ end
 arch pillars
 x 13
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2393,7 +2393,7 @@ end
 arch pillars
 x 13
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2448,7 +2448,7 @@ end
 arch pillars
 x 13
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2711,7 +2711,7 @@ end
 arch pillars
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2828,7 +2828,7 @@ end
 arch pillars
 x 15
 y 15
-no_pass 1
+move_block all
 end
 arch marble
 x 15
@@ -2849,7 +2849,7 @@ end
 arch pillars
 x 15
 y 19
-no_pass 1
+move_block all
 end
 arch marble
 x 15
@@ -3452,7 +3452,7 @@ end
 arch pillars
 x 19
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3578,7 +3578,7 @@ end
 arch pillars
 x 19
 y 15
-no_pass 1
+move_block all
 end
 arch marble
 x 19
@@ -3599,7 +3599,7 @@ end
 arch pillars
 x 19
 y 19
-no_pass 1
+move_block all
 end
 arch marble
 x 19
@@ -3812,7 +3812,7 @@ end
 arch pillars
 x 21
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3867,7 +3867,7 @@ end
 arch pillars
 x 21
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3922,7 +3922,7 @@ end
 arch pillars
 x 21
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3977,7 +3977,7 @@ end
 arch pillars
 x 21
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4629,7 +4629,7 @@ end
 arch pillars
 x 25
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4698,7 +4698,7 @@ end
 arch pillars
 x 25
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 25
@@ -5015,7 +5015,7 @@ end
 arch pillars
 x 27
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5084,7 +5084,7 @@ end
 arch pillars
 x 27
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 27
@@ -5401,7 +5401,7 @@ end
 arch pillars
 x 29
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 29
@@ -5470,7 +5470,7 @@ end
 arch pillars
 x 29
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 29
@@ -5787,7 +5787,7 @@ end
 arch pillars
 x 31
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5856,7 +5856,7 @@ end
 arch pillars
 x 31
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 31
@@ -6286,7 +6286,7 @@ end
 arch pillars
 x 34
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 34
@@ -6332,7 +6332,7 @@ end
 arch pillars
 x 34
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 34
@@ -7348,7 +7348,7 @@ end
 arch pillars
 x 43
 y 5
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
@@ -7421,7 +7421,7 @@ end
 arch pillars
 x 43
 y 8
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
@@ -7494,7 +7494,7 @@ end
 arch pillars
 x 43
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
@@ -7567,7 +7567,7 @@ end
 arch pillars
 x 43
 y 14
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
@@ -7631,7 +7631,7 @@ end
 arch pillars
 x 44
 y 2
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 44
@@ -8765,7 +8765,7 @@ end
 arch pillars
 x 50
 y 2
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 50
@@ -8889,7 +8889,7 @@ end
 arch pillars
 x 51
 y 5
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
@@ -8962,7 +8962,7 @@ end
 arch pillars
 x 51
 y 8
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
@@ -9035,7 +9035,7 @@ end
 arch pillars
 x 51
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
@@ -9108,7 +9108,7 @@ end
 arch pillars
 x 51
 y 14
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51

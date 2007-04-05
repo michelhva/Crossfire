@@ -926,7 +926,7 @@ end
 arch dun3
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 1000
@@ -1828,7 +1828,7 @@ end
 arch dun3
 x 12
 y 2
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 2000
@@ -1911,7 +1911,7 @@ end
 arch dun3
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch door_look_2
 hp 4000
@@ -1947,7 +1947,7 @@ end
 arch dun3
 x 12
 y 14
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12

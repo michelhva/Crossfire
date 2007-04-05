@@ -132,7 +132,7 @@ endmsg
 x 1
 y 1
 type 20
-no_pass 1
+move_block all
 end
 arch elvenboots
 x 1
@@ -153,7 +153,7 @@ endmsg
 x 1
 y 2
 type 20
-no_pass 1
+move_block all
 end
 arch elven_bow
 x 1
@@ -399,7 +399,7 @@ x 3
 y 6
 type 0
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch shop_empty
@@ -847,7 +847,7 @@ end
 arch cobblestones2
 x 7
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -924,7 +924,7 @@ end
 arch cobblestones2
 x 8
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1007,7 +1007,7 @@ end
 arch cobblestones2
 x 9
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1085,7 +1085,7 @@ end
 arch cobblestones2
 x 10
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1190,7 +1190,7 @@ end
 arch cobblestones2
 x 11
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1327,7 +1327,7 @@ end
 arch cobblestones2
 x 12
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1397,7 +1397,7 @@ end
 arch table_4
 x 13
 y 11
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 13
@@ -1406,7 +1406,7 @@ end
 arch table_4
 x 13
 y 12
-no_pass 1
+move_block all
 end
 arch magic_ear
 msg
@@ -1423,7 +1423,7 @@ end
 arch table_4
 x 13
 y 13
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 13
@@ -1436,7 +1436,7 @@ end
 arch cobblestones2
 x 13
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1542,7 +1542,7 @@ end
 arch cobblestones2
 x 14
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end
@@ -1671,7 +1671,7 @@ end
 arch cobblestones2
 x 15
 y 15
-no_pass 1
+move_block all
 no_magic 1
 pass_thru 1
 end

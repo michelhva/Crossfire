@@ -4295,7 +4295,7 @@ end
 arch door_look_2
 x 13
 y 2
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 13
@@ -5947,7 +5947,7 @@ end
 arch door_look_2
 x 18
 y 2
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 18
@@ -10858,7 +10858,7 @@ arch blocked
 name darkness
 x 34
 y 6
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -10869,7 +10869,7 @@ arch blocked
 name darkness
 x 34
 y 8
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch teleporter

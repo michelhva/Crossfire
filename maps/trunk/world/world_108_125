@@ -12408,7 +12408,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 49
 y 18
 end
@@ -12420,7 +12420,7 @@ arch mountain3
 name large rocks
 type 0
 blocksview 0
-no_pass 1
+move_block all
 x 49
 y 19
 end

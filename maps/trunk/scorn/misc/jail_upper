@@ -2100,7 +2100,7 @@ end
 arch flagstone
 x 14
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2123,7 +2123,7 @@ end
 arch flagstone
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2146,7 +2146,7 @@ end
 arch flagstone
 x 14
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2163,7 +2163,7 @@ end
 arch flagstone
 x 14
 y 7
-no_pass 1
+move_block all
 end
 arch sign
 name Instructions
@@ -2179,7 +2179,7 @@ end
 arch flagstone
 x 14
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2210,7 +2210,7 @@ end
 arch flagstone
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2233,7 +2233,7 @@ end
 arch flagstone
 x 14
 y 12
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2302,7 +2302,7 @@ end
 arch flagstone
 x 15
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2332,7 +2332,7 @@ end
 arch flagstone
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2362,7 +2362,7 @@ end
 arch flagstone
 x 15
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2379,7 +2379,7 @@ end
 arch flagstone
 x 15
 y 7
-no_pass 1
+move_block all
 end
 arch key2
 name Warden's Key
@@ -2390,7 +2390,7 @@ end
 arch flagstone
 x 15
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2428,7 +2428,7 @@ end
 arch flagstone
 x 15
 y 10
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2458,7 +2458,7 @@ end
 arch flagstone
 x 15
 y 12
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15

@@ -9554,7 +9554,7 @@ face westguard_ho_8.111
 x 36
 y 46
 type 0
-no_pass 1
+move_block all
 is_floor 1
 end
 arch guard_house_2
@@ -9875,7 +9875,7 @@ end
 arch grass
 x 37
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -9884,7 +9884,7 @@ end
 arch grass
 x 37
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -9893,7 +9893,7 @@ end
 arch grass
 x 37
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -10232,7 +10232,7 @@ end
 arch grass
 x 38
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38
@@ -10249,7 +10249,7 @@ end
 arch grass
 x 38
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38
@@ -10597,7 +10597,7 @@ end
 arch grass
 x 39
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 39
@@ -10951,7 +10951,7 @@ end
 arch grass
 x 40
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 40
@@ -10968,7 +10968,7 @@ end
 arch grass
 x 40
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 40
@@ -11332,7 +11332,7 @@ end
 arch grass
 x 41
 y 39
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 41
@@ -11341,7 +11341,7 @@ end
 arch grass
 x 41
 y 40
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 41
@@ -11350,7 +11350,7 @@ end
 arch grass
 x 41
 y 41
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 41

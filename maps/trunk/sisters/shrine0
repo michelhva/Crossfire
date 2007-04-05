@@ -168,12 +168,12 @@ end
 arch marble
 x 3
 y 23
-no_pass 1
+move_block all
 end
 arch marble
 x 3
 y 24
-no_pass 1
+move_block all
 end
 arch marble
 x 3
@@ -2190,35 +2190,35 @@ arch blocked
 name path of night
 x 17
 y 1
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 3
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 4
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 5
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch cobblestones2
@@ -2229,7 +2229,7 @@ arch awall_2_1_2
 name rune marked wall
 x 17
 y 6
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -2515,7 +2515,7 @@ end
 arch marble
 x 17
 y 35
-no_pass 1
+move_block all
 end
 arch marble
 x 17
@@ -2929,7 +2929,7 @@ end
 arch marble
 x 18
 y 35
-no_pass 1
+move_block all
 end
 arch marble
 x 18
@@ -5101,12 +5101,12 @@ end
 arch marble
 x 32
 y 23
-no_pass 1
+move_block all
 end
 arch marble
 x 32
 y 24
-no_pass 1
+move_block all
 end
 arch marble
 x 32

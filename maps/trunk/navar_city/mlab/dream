@@ -31,35 +31,35 @@ arch blocked
 name nothing
 name_pl nothing
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
 name_pl nothing
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
 name_pl nothing
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
 name_pl nothing
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
 name_pl nothing
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -77,7 +77,7 @@ name nothing
 name_pl nothing
 x 1
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -103,7 +103,7 @@ name nothing
 name_pl nothing
 x 1
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -129,7 +129,7 @@ name nothing
 name_pl nothing
 x 1
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -152,7 +152,7 @@ name nothing
 name_pl nothing
 x 1
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -160,7 +160,7 @@ name nothing
 name_pl nothing
 x 1
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -178,7 +178,7 @@ name nothing
 name_pl nothing
 x 2
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -204,7 +204,7 @@ name nothing
 name_pl nothing
 x 2
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -230,7 +230,7 @@ name nothing
 name_pl nothing
 x 2
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -246,7 +246,7 @@ name nothing
 name_pl nothing
 x 2
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -254,7 +254,7 @@ name nothing
 name_pl nothing
 x 2
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -272,7 +272,7 @@ name nothing
 name_pl nothing
 x 3
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -298,7 +298,7 @@ name nothing
 name_pl nothing
 x 3
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -324,7 +324,7 @@ name nothing
 name_pl nothing
 x 3
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -347,7 +347,7 @@ name nothing
 name_pl nothing
 x 3
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -355,7 +355,7 @@ name nothing
 name_pl nothing
 x 3
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -382,7 +382,7 @@ name nothing
 name_pl nothing
 x 4
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -390,7 +390,7 @@ name nothing
 name_pl nothing
 x 4
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -398,7 +398,7 @@ name nothing
 name_pl nothing
 x 4
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -406,7 +406,7 @@ name nothing
 name_pl nothing
 x 4
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -414,7 +414,7 @@ name nothing
 name_pl nothing
 x 4
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -458,7 +458,7 @@ name nothing
 name_pl nothing
 x 7
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -484,7 +484,7 @@ name nothing
 name_pl nothing
 x 7
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -510,7 +510,7 @@ name nothing
 name_pl nothing
 x 7
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -543,7 +543,7 @@ name nothing
 name_pl nothing
 x 8
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -562,7 +562,7 @@ name nothing
 name_pl nothing
 x 8
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -588,7 +588,7 @@ name nothing
 name_pl nothing
 x 8
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -621,7 +621,7 @@ name nothing
 name_pl nothing
 x 9
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -647,7 +647,7 @@ name nothing
 name_pl nothing
 x 9
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -673,7 +673,7 @@ name nothing
 name_pl nothing
 x 9
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic

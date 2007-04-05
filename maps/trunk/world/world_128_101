@@ -3914,7 +3914,7 @@ arch shallow_sea
 x 10
 y 35
 elevation -4
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 10
@@ -5351,7 +5351,7 @@ arch sea
 x 15
 y 48
 elevation -422
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
@@ -5670,7 +5670,7 @@ arch shallow_sea
 x 16
 y 48
 elevation -71
-no_pass 0
+move_block 0
 end
 arch sea
 x 16
@@ -6569,7 +6569,7 @@ arch shallow_sea
 x 19
 y 42
 elevation -9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 19
@@ -12357,7 +12357,7 @@ arch shallow_sea
 x 38
 y 29
 elevation -3
-no_pass 0
+move_block 0
 end
 arch grass
 x 38
@@ -12678,7 +12678,7 @@ arch shallow_sea
 x 39
 y 25
 elevation -93
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 39
@@ -13053,7 +13053,7 @@ arch shallow_sea
 x 40
 y 24
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_4
 x 40
@@ -13063,7 +13063,7 @@ arch shallow_sea
 x 40
 y 25
 elevation -99
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 40
@@ -13460,7 +13460,7 @@ arch shallow_sea
 x 41
 y 24
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_2
 x 41
@@ -13826,7 +13826,7 @@ arch shallow_sea
 x 42
 y 24
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_2
 x 42
@@ -14181,7 +14181,7 @@ arch shallow_sea
 x 43
 y 19
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 43
@@ -14191,7 +14191,7 @@ arch shallow_sea
 x 43
 y 20
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 43
@@ -14201,7 +14201,7 @@ arch shallow_sea
 x 43
 y 21
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 43
@@ -14211,7 +14211,7 @@ arch shallow_sea
 x 43
 y 22
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 43
@@ -14221,7 +14221,7 @@ arch shallow_sea
 x 43
 y 23
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 43
@@ -14231,7 +14231,7 @@ arch shallow_sea
 x 43
 y 24
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_2_4
 x 43

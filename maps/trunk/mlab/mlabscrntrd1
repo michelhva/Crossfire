@@ -119,7 +119,7 @@ y 10
 end
 arch door_1
 y 10
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 y 11
@@ -135,7 +135,7 @@ y 11
 end
 arch door_1
 y 11
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 y 12
@@ -903,7 +903,7 @@ end
 arch door_2
 x 3
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 3
@@ -1168,7 +1168,7 @@ end
 arch door_2
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4

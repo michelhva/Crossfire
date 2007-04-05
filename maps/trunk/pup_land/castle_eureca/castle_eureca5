@@ -575,7 +575,7 @@ y 35
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 1
 y 35
 end
@@ -1277,7 +1277,7 @@ y 26
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 3
 y 26
 end
@@ -2642,7 +2642,7 @@ y 39
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 6
 y 39
 end
@@ -4297,7 +4297,7 @@ y 28
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 10
 y 28
 end
@@ -5683,7 +5683,7 @@ y 35
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 13
 y 35
 end
@@ -6720,7 +6720,7 @@ y 25
 end
 arch mountain3
 name rocks
-no_pass 1
+move_block all
 x 16
 y 25
 end

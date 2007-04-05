@@ -581,7 +581,7 @@ arch lake
 name fountain
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch button_plate
 x 6
@@ -693,7 +693,7 @@ face statue.111
 x 7
 y 7
 weight 2000000
-no_pass 1
+move_block all
 can_roll 1
 move_type 1
 end

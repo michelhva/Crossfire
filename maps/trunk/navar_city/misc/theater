@@ -3171,7 +3171,7 @@ end
 arch door_1
 x 11
 y 11
-no_pass 0
+move_block 0
 end
 arch light2
 x 11
@@ -6043,7 +6043,7 @@ end
 arch door_look_2
 x 20
 y 8
-no_pass 0
+move_block 0
 end
 arch light2
 x 20

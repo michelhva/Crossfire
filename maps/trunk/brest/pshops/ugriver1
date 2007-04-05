@@ -12,7 +12,7 @@ Date:    10/22/2004
 endmsg
 end
 arch earth
-no_pass 1
+move_block all
 end
 arch cave4
 end
@@ -21,7 +21,7 @@ y 1
 end
 arch river_w-e
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 y 1
@@ -29,7 +29,7 @@ level 1
 end
 arch earth
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 y 2
@@ -84,7 +84,7 @@ y 13
 end
 arch earth
 x 1
-no_pass 1
+move_block all
 end
 arch cave4
 x 1
@@ -96,7 +96,7 @@ end
 arch river_w-e
 x 1
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 1
@@ -107,7 +107,7 @@ end
 arch earth
 x 1
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 1
@@ -183,7 +183,7 @@ y 13
 end
 arch earth
 x 2
-no_pass 1
+move_block all
 end
 arch cave4
 x 2
@@ -203,7 +203,7 @@ end
 arch river_w-e
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 2
@@ -213,7 +213,7 @@ end
 arch earth
 x 2
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 2
@@ -281,7 +281,7 @@ y 13
 end
 arch earth
 x 3
-no_pass 1
+move_block all
 end
 arch cave4
 x 3
@@ -293,7 +293,7 @@ end
 arch river_w-e
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 3
@@ -303,7 +303,7 @@ end
 arch earth
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 3
@@ -370,7 +370,7 @@ y 13
 end
 arch earth
 x 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 4
@@ -382,7 +382,7 @@ end
 arch river_w-e
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 4
@@ -392,7 +392,7 @@ end
 arch earth
 x 4
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 4
@@ -492,7 +492,7 @@ y 13
 end
 arch earth
 x 5
-no_pass 1
+move_block all
 end
 arch cave4
 x 5
@@ -504,7 +504,7 @@ end
 arch river_w-e
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 5
@@ -514,7 +514,7 @@ end
 arch earth
 x 5
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 5
@@ -571,7 +571,7 @@ end
 arch river_ne-s
 x 5
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 5
@@ -608,7 +608,7 @@ end
 arch river_n-s
 x 5
 y 12
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 5
@@ -632,7 +632,7 @@ y 13
 end
 arch earth
 x 6
-no_pass 1
+move_block all
 end
 arch cave4
 x 6
@@ -644,7 +644,7 @@ end
 arch river_w-e
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 6
@@ -654,7 +654,7 @@ end
 arch earth
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 6
@@ -691,7 +691,7 @@ end
 arch river_ne-s
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 6
@@ -705,7 +705,7 @@ end
 arch river_n-s
 x 6
 y 7
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 6
@@ -719,12 +719,12 @@ end
 arch rjunct_ns-se
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch river_sw-n
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 6
@@ -738,7 +738,7 @@ end
 arch river_nw-se_l
 x 6
 y 9
-no_pass 0
+move_block 0
 end
 arch river_sw-ne_l
 x 6
@@ -778,7 +778,7 @@ y 13
 end
 arch earth
 x 7
-no_pass 1
+move_block all
 end
 arch cave4
 x 7
@@ -790,7 +790,7 @@ end
 arch river_w-e
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 7
@@ -800,7 +800,7 @@ end
 arch earth
 x 7
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 7
@@ -825,7 +825,7 @@ end
 arch river_sw-e
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 7
@@ -871,7 +871,7 @@ end
 arch river_nw-e
 x 7
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_8
 x 7
@@ -904,7 +904,7 @@ y 13
 end
 arch earth
 x 8
-no_pass 1
+move_block all
 end
 arch cave4
 x 8
@@ -916,7 +916,7 @@ end
 arch river_w-e
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 8
@@ -926,7 +926,7 @@ end
 arch earth
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 8
@@ -951,7 +951,7 @@ end
 arch river_w-e
 x 8
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 8
@@ -985,7 +985,7 @@ end
 arch river_se-w
 x 8
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_7
 x 8
@@ -999,7 +999,7 @@ end
 arch river_nw-se_l
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch earth
 x 8
@@ -1019,7 +1019,7 @@ y 13
 end
 arch earth
 x 9
-no_pass 1
+move_block all
 end
 arch cave4
 x 9
@@ -1031,7 +1031,7 @@ end
 arch river_w-e
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 9
@@ -1041,7 +1041,7 @@ end
 arch earth
 x 9
 y 2
-no_pass 1
+move_block all
 end
 arch cave2
 x 9
@@ -1066,7 +1066,7 @@ end
 arch river_w-e
 x 9
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 9
@@ -1100,7 +1100,7 @@ end
 arch river_nw-se_u
 x 9
 y 9
-no_pass 0
+move_block 0
 end
 arch earth
 x 9
@@ -1109,7 +1109,7 @@ end
 arch river_nw-se
 x 9
 y 10
-no_pass 0
+move_block 0
 end
 arch mover_turn
 x 9
@@ -1123,12 +1123,12 @@ end
 arch river_nw-se_l
 x 9
 y 11
-no_pass 0
+move_block 0
 end
 arch earth
 x 9
 y 12
-no_pass 1
+move_block all
 end
 arch cave6
 x 9
@@ -1137,7 +1137,7 @@ end
 arch earth
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch cave13
 x 9
@@ -1156,7 +1156,7 @@ end
 arch river_se-w
 x 10
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_4
 x 10
@@ -1205,7 +1205,7 @@ end
 arch river_w-e
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 10
@@ -1244,7 +1244,7 @@ end
 arch river_nw-se_u
 x 10
 y 10
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -1263,7 +1263,7 @@ end
 arch river_nw-se
 x 10
 y 11
-no_pass 0
+move_block 0
 end
 arch cave6
 race wall
@@ -1294,12 +1294,12 @@ end
 arch earth
 x 10
 y 13
-no_pass 0
+move_block 0
 end
 arch river_ne-s
 x 10
 y 13
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 10
@@ -1331,7 +1331,7 @@ end
 arch river_nw-s
 x 11
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 11
@@ -1345,7 +1345,7 @@ end
 arch river_n-s
 x 11
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 11
@@ -1359,7 +1359,7 @@ end
 arch river_se-n
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_4
 x 11
@@ -1373,12 +1373,12 @@ end
 arch river_w-e
 x 11
 y 5
-no_pass 0
+move_block 0
 end
 arch river_nw-se_l
 x 11
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 11
@@ -1407,7 +1407,7 @@ end
 arch earth
 x 11
 y 9
-no_pass 1
+move_block all
 end
 arch cave15
 x 11
@@ -1422,7 +1422,7 @@ end
 arch earth
 x 11
 y 10
-no_pass 1
+move_block all
 end
 arch cave15
 x 11
@@ -1437,7 +1437,7 @@ end
 arch earth
 x 11
 y 11
-no_pass 1
+move_block all
 end
 arch river_sw-ne_u
 x 11
@@ -1465,17 +1465,17 @@ end
 arch river_sw-ne
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch river_nw-se
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch earth
 x 11
 y 13
-no_pass 1
+move_block all
 end
 arch river_nw-se_l
 x 11
@@ -1535,12 +1535,12 @@ end
 arch river_w-e
 x 12
 y 5
-no_pass 0
+move_block 0
 end
 arch river_nw-e
 x 12
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 12
@@ -1572,7 +1572,7 @@ end
 arch earth
 x 12
 y 9
-no_pass 1
+move_block all
 end
 arch river_sw-ne_u
 x 12
@@ -1587,12 +1587,12 @@ end
 arch earth
 x 12
 y 10
-no_pass 0
+move_block 0
 end
 arch river_ne-s
 x 12
 y 10
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 12
@@ -1602,12 +1602,12 @@ end
 arch earth
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch river_sw-n
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 12
@@ -1617,7 +1617,7 @@ end
 arch earth
 x 12
 y 12
-no_pass 1
+move_block all
 end
 arch river_sw-ne_l
 x 12
@@ -1641,7 +1641,7 @@ end
 arch earth
 x 12
 y 13
-no_pass 1
+move_block all
 end
 arch river_nw-se
 x 12
@@ -1670,7 +1670,7 @@ end
 arch earth
 x 13
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 13
@@ -1692,7 +1692,7 @@ arch biglake_center
 name river
 x 13
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 13
@@ -1702,7 +1702,7 @@ end
 arch earth
 x 13
 y 6
-no_pass 1
+move_block all
 end
 arch biglake_center
 name river
@@ -1722,7 +1722,7 @@ end
 arch earth
 x 13
 y 7
-no_pass 1
+move_block all
 end
 arch cave3
 x 13
@@ -1733,7 +1733,7 @@ end
 arch earth
 x 13
 y 8
-no_pass 1
+move_block all
 end
 arch river_sw-ne_u
 x 13
@@ -1748,12 +1748,12 @@ end
 arch earth
 x 13
 y 9
-no_pass 0
+move_block 0
 end
 arch river_sw-ne
 x 13
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 13
@@ -1763,7 +1763,7 @@ end
 arch earth
 x 13
 y 10
-no_pass 1
+move_block all
 end
 arch river_sw-ne_l
 x 13
@@ -1776,7 +1776,7 @@ end
 arch earth
 x 13
 y 11
-no_pass 1
+move_block all
 end
 arch cave1
 x 13
@@ -1785,7 +1785,7 @@ end
 arch earth
 x 13
 y 12
-no_pass 1
+move_block all
 end
 arch cave1
 x 13
@@ -1794,7 +1794,7 @@ end
 arch earth
 x 13
 y 13
-no_pass 1
+move_block all
 end
 arch cave5
 x 13
@@ -1811,7 +1811,7 @@ end
 arch earth
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 14
@@ -1825,7 +1825,7 @@ arch biglake_center
 name river
 x 14
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 14
@@ -1835,23 +1835,23 @@ end
 arch earth
 x 14
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 name river
 x 14
 y 6
-no_pass 0
+move_block 0
 end
 arch earth
 x 14
 y 7
-no_pass 0
+move_block 0
 end
 arch river_n-s
 x 14
 y 7
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 14
@@ -1861,12 +1861,12 @@ end
 arch earth
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch river_sw-n
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 14
@@ -1876,7 +1876,7 @@ end
 arch earth
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch river_sw-ne_l
 x 14
@@ -1889,7 +1889,7 @@ end
 arch earth
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch cave22
 x 14
@@ -1914,7 +1914,7 @@ end
 arch earth
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 15
@@ -1928,7 +1928,7 @@ arch biglake_center
 name river
 x 15
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 15
@@ -1938,7 +1938,7 @@ end
 arch earth
 x 15
 y 6
-no_pass 1
+move_block all
 end
 arch biglake_center
 x 15
@@ -1955,7 +1955,7 @@ end
 arch earth
 x 15
 y 7
-no_pass 1
+move_block all
 end
 arch cave1
 x 15
@@ -1964,7 +1964,7 @@ end
 arch earth
 x 15
 y 8
-no_pass 1
+move_block all
 end
 arch cave1
 x 15
@@ -1973,7 +1973,7 @@ end
 arch earth
 x 15
 y 9
-no_pass 1
+move_block all
 end
 arch cave20
 x 15
@@ -1994,7 +1994,7 @@ end
 arch earth
 x 16
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 16
@@ -2007,7 +2007,7 @@ end
 arch river_w-e
 x 16
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 16
@@ -2017,7 +2017,7 @@ end
 arch earth
 x 16
 y 6
-no_pass 1
+move_block all
 end
 arch cave2
 x 16
@@ -2046,7 +2046,7 @@ end
 arch earth
 x 17
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 17
@@ -2059,7 +2059,7 @@ end
 arch river_w-e
 x 17
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 17
@@ -2069,7 +2069,7 @@ end
 arch earth
 x 17
 y 6
-no_pass 1
+move_block all
 end
 arch cave2
 x 17
@@ -2098,7 +2098,7 @@ end
 arch earth
 x 18
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 18
@@ -2122,7 +2122,7 @@ end
 arch river_w-e
 x 18
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 18
@@ -2132,7 +2132,7 @@ end
 arch earth
 x 18
 y 6
-no_pass 1
+move_block all
 end
 arch cave2
 x 18
@@ -2178,7 +2178,7 @@ end
 arch earth
 x 19
 y 4
-no_pass 1
+move_block all
 end
 arch cave4
 x 19
@@ -2191,7 +2191,7 @@ end
 arch river_w-e
 x 19
 y 5
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -2204,7 +2204,7 @@ end
 arch earth
 x 19
 y 6
-no_pass 1
+move_block all
 end
 arch cave2
 x 19

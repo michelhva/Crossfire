@@ -514,7 +514,7 @@ end
 arch pillars
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 5
@@ -635,7 +635,7 @@ end
 arch pillars
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 6
@@ -777,7 +777,7 @@ end
 arch pillars
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 7
@@ -1063,7 +1063,7 @@ end
 arch pillars
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1187,7 +1187,7 @@ end
 arch pillars
 x 10
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 10
@@ -1287,7 +1287,7 @@ end
 arch pillars
 x 11
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11

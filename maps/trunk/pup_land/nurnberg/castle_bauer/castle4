@@ -114,7 +114,7 @@ name sword
 x 1
 y 4
 no_pick 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1
@@ -125,7 +125,7 @@ name sword
 x 1
 y 5
 no_pick 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1
@@ -136,7 +136,7 @@ name sword
 x 1
 y 6
 no_pick 1
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -167,7 +167,7 @@ name shield
 x 1
 y 8
 no_pick 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1
@@ -178,7 +178,7 @@ name shield
 x 1
 y 9
 no_pick 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1
@@ -189,7 +189,7 @@ name shield
 x 1
 y 10
 no_pick 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1

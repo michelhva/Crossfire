@@ -859,7 +859,7 @@ end
 arch door_look_1
 x 7
 y 15
-no_pass 0
+move_block 0
 end
 arch woods_2
 x 8
@@ -962,7 +962,7 @@ end
 arch door_look_1
 x 8
 y 15
-no_pass 0
+move_block 0
 end
 arch woods_2
 x 9

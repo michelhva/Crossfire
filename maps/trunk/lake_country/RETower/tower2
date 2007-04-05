@@ -2302,7 +2302,7 @@ end
 arch swall_2_1_1
 x 12
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -3656,7 +3656,7 @@ end
 arch bwall_2_1_2
 x 19
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 19
@@ -4251,7 +4251,7 @@ end
 arch bwall_1_2
 x 22
 y 23
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 22

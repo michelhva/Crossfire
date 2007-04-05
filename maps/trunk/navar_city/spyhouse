@@ -856,7 +856,7 @@ end
 arch door_look_2
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 5
@@ -873,7 +873,7 @@ end
 arch door_look_2
 x 5
 y 17
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 5
@@ -1655,7 +1655,7 @@ end
 arch door_look_1
 x 11
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1805,7 +1805,7 @@ end
 arch door_look_2
 x 12
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 12
@@ -1830,7 +1830,7 @@ end
 arch door_1
 x 12
 y 18
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 12
@@ -2502,7 +2502,7 @@ end
 arch door_2
 x 16
 y 19
-no_pass 0
+move_block 0
 end
 arch blocked
 x 16
@@ -2953,7 +2953,7 @@ end
 arch door_2
 x 19
 y 16
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19
@@ -3084,7 +3084,7 @@ end
 arch door_look_1
 x 20
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 20

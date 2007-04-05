@@ -832,7 +832,7 @@ end
 arch mine2
 x 5
 y 20
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 5
@@ -3569,7 +3569,7 @@ end
 arch gwall_2_1_1
 x 26
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch bridge_1
@@ -3797,7 +3797,7 @@ end
 arch mine3
 x 27
 y 20
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 27

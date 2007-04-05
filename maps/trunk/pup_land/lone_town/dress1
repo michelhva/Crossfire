@@ -357,7 +357,7 @@ end
 arch wwall_2_1_1
 x 2
 y 14
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -1789,7 +1789,7 @@ x 14
 y 6
 speed 0.000001
 no_pick 1
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -1804,7 +1804,7 @@ x 14
 y 8
 speed 0.000001
 no_pick 1
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14

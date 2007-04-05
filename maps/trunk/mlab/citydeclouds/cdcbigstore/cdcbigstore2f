@@ -21948,7 +21948,7 @@ name_pl stove
 face altarrugg.111
 x 48
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 48
@@ -21968,7 +21968,7 @@ name_pl stove
 face altarrugg.111
 x 48
 y 17
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 48
@@ -21987,7 +21987,7 @@ name grill
 name_pl grill
 x 48
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 48
@@ -22006,7 +22006,7 @@ name grill
 name_pl grill
 x 48
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 48
@@ -22025,7 +22025,7 @@ name grill
 name_pl grill
 x 48
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 48

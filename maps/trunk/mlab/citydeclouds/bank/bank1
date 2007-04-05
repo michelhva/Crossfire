@@ -270,7 +270,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -286,7 +286,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -635,7 +635,7 @@ name nothing
 name_pl nothing
 x 1
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -654,7 +654,7 @@ name nothing
 name_pl nothing
 x 1
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1081,7 +1081,7 @@ name nothing
 name_pl nothing
 x 2
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -1100,7 +1100,7 @@ name nothing
 name_pl nothing
 x 2
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1505,7 +1505,7 @@ name nothing
 name_pl nothing
 x 3
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -1524,7 +1524,7 @@ name nothing
 name_pl nothing
 x 3
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1853,7 +1853,7 @@ name nothing
 name_pl nothing
 x 4
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -1872,7 +1872,7 @@ name nothing
 name_pl nothing
 x 4
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2194,7 +2194,7 @@ name nothing
 name_pl nothing
 x 5
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -2213,7 +2213,7 @@ name nothing
 name_pl nothing
 x 5
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2535,7 +2535,7 @@ name nothing
 name_pl nothing
 x 6
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -2554,7 +2554,7 @@ name nothing
 name_pl nothing
 x 6
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2827,7 +2827,7 @@ name nothing
 name_pl nothing
 x 7
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -2846,7 +2846,7 @@ name nothing
 name_pl nothing
 x 7
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3166,7 +3166,7 @@ name nothing
 name_pl nothing
 x 8
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -3185,7 +3185,7 @@ name nothing
 name_pl nothing
 x 8
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3468,7 +3468,7 @@ name nothing
 name_pl nothing
 x 9
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -3487,7 +3487,7 @@ name nothing
 name_pl nothing
 x 9
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3809,7 +3809,7 @@ name nothing
 name_pl nothing
 x 10
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -3828,7 +3828,7 @@ name nothing
 name_pl nothing
 x 10
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4151,7 +4151,7 @@ name nothing
 name_pl nothing
 x 11
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -4170,7 +4170,7 @@ name nothing
 name_pl nothing
 x 11
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4499,7 +4499,7 @@ name nothing
 name_pl nothing
 x 12
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -4518,7 +4518,7 @@ name nothing
 name_pl nothing
 x 12
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4923,7 +4923,7 @@ name nothing
 name_pl nothing
 x 13
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -4942,7 +4942,7 @@ name nothing
 name_pl nothing
 x 13
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -5369,7 +5369,7 @@ name nothing
 name_pl nothing
 x 14
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -5388,7 +5388,7 @@ name nothing
 name_pl nothing
 x 14
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -5737,7 +5737,7 @@ name nothing
 name_pl nothing
 x 15
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -5756,7 +5756,7 @@ name nothing
 name_pl nothing
 x 15
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -6109,7 +6109,7 @@ name nothing
 name_pl nothing
 x 16
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6128,7 +6128,7 @@ name nothing
 name_pl nothing
 x 16
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -6138,7 +6138,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6156,7 +6156,7 @@ name nothing
 name_pl nothing
 x 17
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6175,7 +6175,7 @@ name nothing
 name_pl nothing
 x 17
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6194,7 +6194,7 @@ name nothing
 name_pl nothing
 x 17
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6213,7 +6213,7 @@ name nothing
 name_pl nothing
 x 17
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6232,7 +6232,7 @@ name nothing
 name_pl nothing
 x 17
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6251,7 +6251,7 @@ name nothing
 name_pl nothing
 x 17
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6270,7 +6270,7 @@ name nothing
 name_pl nothing
 x 17
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6289,7 +6289,7 @@ name nothing
 name_pl nothing
 x 17
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6308,7 +6308,7 @@ name nothing
 name_pl nothing
 x 17
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6327,7 +6327,7 @@ name nothing
 name_pl nothing
 x 17
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6346,7 +6346,7 @@ name nothing
 name_pl nothing
 x 17
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6365,7 +6365,7 @@ name nothing
 name_pl nothing
 x 17
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6384,7 +6384,7 @@ name nothing
 name_pl nothing
 x 17
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6403,7 +6403,7 @@ name nothing
 name_pl nothing
 x 17
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6422,7 +6422,7 @@ name nothing
 name_pl nothing
 x 17
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6441,7 +6441,7 @@ name nothing
 name_pl nothing
 x 17
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6460,7 +6460,7 @@ name nothing
 name_pl nothing
 x 17
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6479,7 +6479,7 @@ name nothing
 name_pl nothing
 x 17
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6498,7 +6498,7 @@ name nothing
 name_pl nothing
 x 17
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6517,7 +6517,7 @@ name nothing
 name_pl nothing
 x 17
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6536,7 +6536,7 @@ name nothing
 name_pl nothing
 x 17
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6555,7 +6555,7 @@ name nothing
 name_pl nothing
 x 17
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6574,7 +6574,7 @@ name nothing
 name_pl nothing
 x 17
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6593,7 +6593,7 @@ name nothing
 name_pl nothing
 x 17
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6612,7 +6612,7 @@ name nothing
 name_pl nothing
 x 17
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6631,7 +6631,7 @@ name nothing
 name_pl nothing
 x 17
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6650,7 +6650,7 @@ name nothing
 name_pl nothing
 x 17
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6669,7 +6669,7 @@ name nothing
 name_pl nothing
 x 17
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6688,7 +6688,7 @@ name nothing
 name_pl nothing
 x 17
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -6698,7 +6698,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6716,7 +6716,7 @@ name nothing
 name_pl nothing
 x 18
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6735,7 +6735,7 @@ name nothing
 name_pl nothing
 x 18
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6754,7 +6754,7 @@ name nothing
 name_pl nothing
 x 18
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6773,7 +6773,7 @@ name nothing
 name_pl nothing
 x 18
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6792,7 +6792,7 @@ name nothing
 name_pl nothing
 x 18
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6811,7 +6811,7 @@ name nothing
 name_pl nothing
 x 18
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6830,7 +6830,7 @@ name nothing
 name_pl nothing
 x 18
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6849,7 +6849,7 @@ name nothing
 name_pl nothing
 x 18
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6868,7 +6868,7 @@ name nothing
 name_pl nothing
 x 18
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6887,7 +6887,7 @@ name nothing
 name_pl nothing
 x 18
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6906,7 +6906,7 @@ name nothing
 name_pl nothing
 x 18
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6925,7 +6925,7 @@ name nothing
 name_pl nothing
 x 18
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6944,7 +6944,7 @@ name nothing
 name_pl nothing
 x 18
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6963,7 +6963,7 @@ name nothing
 name_pl nothing
 x 18
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -6982,7 +6982,7 @@ name nothing
 name_pl nothing
 x 18
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7001,7 +7001,7 @@ name nothing
 name_pl nothing
 x 18
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7020,7 +7020,7 @@ name nothing
 name_pl nothing
 x 18
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7039,7 +7039,7 @@ name nothing
 name_pl nothing
 x 18
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7058,7 +7058,7 @@ name nothing
 name_pl nothing
 x 18
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7077,7 +7077,7 @@ name nothing
 name_pl nothing
 x 18
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7096,7 +7096,7 @@ name nothing
 name_pl nothing
 x 18
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7115,7 +7115,7 @@ name nothing
 name_pl nothing
 x 18
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7134,7 +7134,7 @@ name nothing
 name_pl nothing
 x 18
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7153,7 +7153,7 @@ name nothing
 name_pl nothing
 x 18
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7172,7 +7172,7 @@ name nothing
 name_pl nothing
 x 18
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7191,7 +7191,7 @@ name nothing
 name_pl nothing
 x 18
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7210,7 +7210,7 @@ name nothing
 name_pl nothing
 x 18
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7229,7 +7229,7 @@ name nothing
 name_pl nothing
 x 18
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7248,7 +7248,7 @@ name nothing
 name_pl nothing
 x 18
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -7258,7 +7258,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7276,7 +7276,7 @@ name nothing
 name_pl nothing
 x 19
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7295,7 +7295,7 @@ name nothing
 name_pl nothing
 x 19
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7314,7 +7314,7 @@ name nothing
 name_pl nothing
 x 19
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7333,7 +7333,7 @@ name nothing
 name_pl nothing
 x 19
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7352,7 +7352,7 @@ name nothing
 name_pl nothing
 x 19
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7371,7 +7371,7 @@ name nothing
 name_pl nothing
 x 19
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7390,7 +7390,7 @@ name nothing
 name_pl nothing
 x 19
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7409,7 +7409,7 @@ name nothing
 name_pl nothing
 x 19
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7428,7 +7428,7 @@ name nothing
 name_pl nothing
 x 19
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7447,7 +7447,7 @@ name nothing
 name_pl nothing
 x 19
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7466,7 +7466,7 @@ name nothing
 name_pl nothing
 x 19
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7485,7 +7485,7 @@ name nothing
 name_pl nothing
 x 19
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7504,7 +7504,7 @@ name nothing
 name_pl nothing
 x 19
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7523,7 +7523,7 @@ name nothing
 name_pl nothing
 x 19
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7542,7 +7542,7 @@ name nothing
 name_pl nothing
 x 19
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7561,7 +7561,7 @@ name nothing
 name_pl nothing
 x 19
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7580,7 +7580,7 @@ name nothing
 name_pl nothing
 x 19
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7599,7 +7599,7 @@ name nothing
 name_pl nothing
 x 19
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7618,7 +7618,7 @@ name nothing
 name_pl nothing
 x 19
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7637,7 +7637,7 @@ name nothing
 name_pl nothing
 x 19
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7656,7 +7656,7 @@ name nothing
 name_pl nothing
 x 19
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7675,7 +7675,7 @@ name nothing
 name_pl nothing
 x 19
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7694,7 +7694,7 @@ name nothing
 name_pl nothing
 x 19
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7713,7 +7713,7 @@ name nothing
 name_pl nothing
 x 19
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7732,7 +7732,7 @@ name nothing
 name_pl nothing
 x 19
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7751,7 +7751,7 @@ name nothing
 name_pl nothing
 x 19
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7770,7 +7770,7 @@ name nothing
 name_pl nothing
 x 19
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7789,7 +7789,7 @@ name nothing
 name_pl nothing
 x 19
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch evergreens
@@ -7808,6 +7808,6 @@ name nothing
 name_pl nothing
 x 19
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end

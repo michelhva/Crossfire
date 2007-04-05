@@ -104,7 +104,7 @@ end
 arch biglake_2_2_3
 name Flooded Basement
 y 15
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -116,7 +116,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 16
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -128,7 +128,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -140,7 +140,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -154,7 +154,7 @@ y 19
 end
 arch blocked
 y 20
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying ../ugriver1
@@ -254,7 +254,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 1
 y 16
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -269,7 +269,7 @@ arch biglake_center
 name Flooded Basement
 x 1
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -283,7 +283,7 @@ arch biglake_center
 name Flooded Basement
 x 1
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -400,7 +400,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 2
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -415,7 +415,7 @@ arch biglake_center
 name Flooded Basement
 x 2
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -533,7 +533,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 3
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -1162,7 +1162,7 @@ arch check_floor
 slaying pshop25
 x 7
 y 13
-no_pass 1
+move_block all
 walk_off 1
 end
 arch dirtfloor
@@ -2777,7 +2777,7 @@ arch check_floor
 slaying pshop25
 x 18
 y 4
-no_pass 1
+move_block all
 walk_off 1
 end
 arch dirtfloor

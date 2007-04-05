@@ -7568,7 +7568,7 @@ arch shallow_sea
 x 30
 y 27
 elevation -11
-no_pass 0
+move_block 0
 end
 arch fishboat
 slaying world_128_101
@@ -7829,7 +7829,7 @@ arch shallow_sea
 x 31
 y 27
 elevation -54
-no_pass 0
+move_block 0
 end
 arch sea
 x 31

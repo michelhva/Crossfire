@@ -4327,7 +4327,7 @@ arch shallow_sea
 x 17
 y 40
 elevation -33
-no_pass 0
+move_block 0
 end
 arch sea
 x 17
@@ -4550,7 +4550,7 @@ arch shallow_sea
 x 18
 y 40
 elevation -8
-no_pass 0
+move_block 0
 end
 arch sea
 x 18

@@ -739,7 +739,7 @@ name Security light
 x 3
 y 7
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -12573,7 +12573,7 @@ end
 arch pillars
 x 27
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -12591,7 +12591,7 @@ end
 arch pillars
 x 27
 y 14
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -12821,7 +12821,7 @@ end
 arch pillars
 x 27
 y 43
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -12839,7 +12839,7 @@ end
 arch pillars
 x 27
 y 46
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -12874,7 +12874,7 @@ arch bench_1_1
 name railing
 x 27
 y 51
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -12889,7 +12889,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 52
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -12904,7 +12904,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 53
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -12919,7 +12919,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 54
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -12933,7 +12933,7 @@ arch bench_1_2
 name railing
 x 27
 y 55
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -14197,7 +14197,7 @@ arch sea
 name moat
 x 28
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 28
@@ -14535,7 +14535,7 @@ arch sea
 name moat
 x 29
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 29
@@ -15825,7 +15825,7 @@ arch sea
 name moat
 x 30
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 30
@@ -16015,7 +16015,7 @@ end
 arch pillars
 x 31
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -16033,7 +16033,7 @@ end
 arch pillars
 x 31
 y 14
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -16263,7 +16263,7 @@ end
 arch pillars
 x 31
 y 43
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -16281,7 +16281,7 @@ end
 arch pillars
 x 31
 y 46
-no_pass 1
+move_block all
 blocksview 1
 end
 arch cobblestones2
@@ -16316,7 +16316,7 @@ arch bench_1_1
 name railing
 x 31
 y 51
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -16331,7 +16331,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 52
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -16346,7 +16346,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 53
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -16361,7 +16361,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 54
-no_pass 1
+move_block all
 end
 arch brush
 x 31
@@ -16375,7 +16375,7 @@ arch bench_1_2
 name railing
 x 31
 y 55
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -27644,7 +27644,7 @@ name Security light
 x 55
 y 7
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 55

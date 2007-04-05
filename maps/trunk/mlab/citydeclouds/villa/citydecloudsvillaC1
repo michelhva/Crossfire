@@ -752,7 +752,7 @@ x 8
 y 8
 material 0
 no_pick 1
-no_pass 1
+move_block all
 end
 arch woodfloor2
 name woodfloor

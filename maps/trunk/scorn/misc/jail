@@ -429,7 +429,7 @@ slaying prisoner
 x 2
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -485,7 +485,7 @@ slaying prisoner
 x 2
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1280,7 +1280,7 @@ slaying prisoner
 x 6
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1336,7 +1336,7 @@ slaying prisoner
 x 6
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2118,7 +2118,7 @@ slaying prisoner
 x 10
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2174,7 +2174,7 @@ slaying prisoner
 x 10
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2884,7 +2884,7 @@ end
 arch slevel_3_4
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2916,7 +2916,7 @@ end
 arch slevel_3_4
 x 14
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2948,7 +2948,7 @@ end
 arch slevel_3_4
 x 14
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3013,7 +3013,7 @@ end
 arch slevel_3_4
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3045,7 +3045,7 @@ end
 arch slevel_3_4
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3078,7 +3078,7 @@ end
 arch slevel_3_4
 x 14
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14

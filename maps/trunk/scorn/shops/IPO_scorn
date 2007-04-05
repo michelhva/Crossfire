@@ -211,7 +211,7 @@ arch table
 name II
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch marble
 x 2
@@ -541,7 +541,7 @@ arch table
 name I
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch marble
 x 7

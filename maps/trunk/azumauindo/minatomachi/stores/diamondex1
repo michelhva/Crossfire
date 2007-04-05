@@ -2467,7 +2467,7 @@ end
 arch door_2
 x 7
 y 16
-no_pass 0
+move_block 0
 end
 arch blocked
 x 7

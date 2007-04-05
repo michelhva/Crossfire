@@ -2111,7 +2111,7 @@ arch shallow_sea
 x 8
 y 19
 elevation -67
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 8
@@ -2196,7 +2196,7 @@ end
 arch shallow_sea
 x 8
 y 36
-no_pass 0
+move_block 0
 end
 arch woods_3
 x 8
@@ -2361,7 +2361,7 @@ arch shallow_sea
 x 9
 y 19
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
@@ -2610,7 +2610,7 @@ arch shallow_sea
 x 10
 y 19
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
@@ -2860,19 +2860,19 @@ arch shallow_sea
 x 11
 y 19
 elevation -67
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 11
 y 20
 elevation -67
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 11
 y 21
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -3122,7 +3122,7 @@ arch shallow_sea
 x 12
 y 21
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
@@ -3228,7 +3228,7 @@ arch shallow_sea
 x 12
 y 42
 elevation -10
-no_pass 0
+move_block 0
 end
 arch desert
 x 12
@@ -3373,7 +3373,7 @@ arch shallow_sea
 x 13
 y 21
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
@@ -3618,7 +3618,7 @@ arch shallow_sea
 x 14
 y 20
 elevation -67
-no_pass 0
+move_block 0
 end
 arch stair3_ystone_do
 slaying /whalingoutpost/underwaterdungeon/level1
@@ -3635,14 +3635,14 @@ arch shallow_sea
 x 14
 y 20
 elevation -67
-no_pass 0
+move_block 0
 is_floor 0
 end
 arch shallow_sea
 x 14
 y 21
 elevation -67
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
@@ -4778,7 +4778,7 @@ arch shallow_sea
 x 18
 y 47
 elevation -55
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 18
@@ -5028,7 +5028,7 @@ arch shallow_sea
 x 19
 y 47
 elevation -5
-no_pass 0
+move_block 0
 end
 arch sea
 x 19

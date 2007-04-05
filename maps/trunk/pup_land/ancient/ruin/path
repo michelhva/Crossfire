@@ -838,7 +838,7 @@ arch mountain
 name rocks
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 5
@@ -1045,7 +1045,7 @@ arch mountain
 name rocks
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch mountain_cave
 name hole
@@ -1247,13 +1247,13 @@ arch mountain
 name rocks
 x 7
 y 12
-no_pass 1
+move_block all
 end
 arch mountain
 name rocks
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 7

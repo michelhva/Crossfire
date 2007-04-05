@@ -1328,7 +1328,7 @@ end
 arch dun2
 x 6
 y 28
-no_pass 0
+move_block 0
 pass_thru 1
 end
 arch dirtfloor
@@ -1518,7 +1518,7 @@ end
 arch dun2
 x 7
 y 28
-no_pass 0
+move_block 0
 pass_thru 1
 end
 arch dirtfloor
@@ -1718,7 +1718,7 @@ end
 arch dun2
 x 8
 y 28
-no_pass 0
+move_block 0
 pass_thru 1
 end
 arch dirtfloor

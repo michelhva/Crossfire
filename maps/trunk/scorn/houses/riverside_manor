@@ -254,13 +254,13 @@ y 10
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 1
 y 11
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 1
 y 12
 end
@@ -1593,7 +1593,7 @@ y 11
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 9
 y 12
 end
@@ -1602,7 +1602,7 @@ x 9
 y 13
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 9
 y 13
 end
@@ -1682,7 +1682,7 @@ y 1
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 10
 y 2
 end
@@ -3347,13 +3347,13 @@ y 16
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 20
 y 17
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 20
 y 18
 end
@@ -3529,13 +3529,13 @@ y 18
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 21
 y 19
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 21
 y 20
 end
@@ -3549,13 +3549,13 @@ y 22
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 21
 y 22
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 21
 y 23
 end
@@ -3655,7 +3655,7 @@ y 10
 end
 arch tree
 blocksview 1
-no_pass 1
+move_block all
 x 22
 y 11
 end

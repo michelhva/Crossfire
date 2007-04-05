@@ -5076,7 +5076,7 @@ name mountain top
 name_pl mountain top
 x 17
 y 35
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch footbridge_0
@@ -5091,7 +5091,7 @@ arch shallow_sea
 x 17
 y 36
 elevation -3
-no_pass 0
+move_block 0
 end
 arch footbridge_4
 x 17
@@ -5105,7 +5105,7 @@ arch shallow_sea
 x 17
 y 37
 elevation -3
-no_pass 0
+move_block 0
 end
 arch footbridge_2_1_1
 x 17
@@ -5119,7 +5119,7 @@ arch shallow_sea
 x 17
 y 38
 elevation -3
-no_pass 0
+move_block 0
 end
 arch footbridge_1_2
 x 17
@@ -5135,7 +5135,7 @@ name mountain top
 name_pl mountain top
 x 17
 y 39
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch footbridge_0
@@ -12624,7 +12624,7 @@ arch shallow_sea
 x 41
 y 22
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_2_2_2
 x 41
@@ -12634,7 +12634,7 @@ arch shallow_sea
 x 41
 y 23
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_2
 x 41
@@ -12654,7 +12654,7 @@ arch shallow_sea
 x 41
 y 26
 elevation -6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_2
 x 41
@@ -13055,7 +13055,7 @@ arch shallow_sea
 x 42
 y 22
 elevation -6
-no_pass 0
+move_block 0
 end
 arch pier_2_1_2
 x 42
@@ -13080,7 +13080,7 @@ arch shallow_sea
 x 42
 y 26
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_3
 x 42
@@ -14238,7 +14238,7 @@ arch shallow_sea
 x 45
 y 27
 elevation -9
-no_pass 0
+move_block 0
 end
 arch pier_1_4
 x 45

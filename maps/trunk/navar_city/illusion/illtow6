@@ -747,7 +747,7 @@ end
 arch gwall_2_1_1
 x 5
 y 3
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 5
@@ -1236,7 +1236,7 @@ end
 arch gwall_2_1_1
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -2611,7 +2611,7 @@ end
 arch rough_wall_2_1_2
 x 15
 y 15
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 15

@@ -25,7 +25,7 @@ attacktype 1
 end
 arch sea
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_3
 y 3
@@ -34,7 +34,7 @@ attacktype 1
 end
 arch sea
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_3
 y 4
@@ -43,7 +43,7 @@ attacktype 1
 end
 arch sea
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 y 5

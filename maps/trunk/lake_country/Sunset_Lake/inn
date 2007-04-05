@@ -268,7 +268,7 @@ end
 arch door_look_1
 x 2
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 2
@@ -814,7 +814,7 @@ end
 arch door_look_1
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 8
@@ -861,7 +861,7 @@ end
 arch door_look_2
 x 9
 y 2
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -870,7 +870,7 @@ end
 arch door_look_2
 x 9
 y 3
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -895,7 +895,7 @@ end
 arch door_look_2
 x 9
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -1284,7 +1284,7 @@ end
 arch door_look_1
 x 13
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -2203,7 +2203,7 @@ end
 arch door_look_1
 x 23
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 23
@@ -2659,7 +2659,7 @@ end
 arch door_look_1
 x 28
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 28

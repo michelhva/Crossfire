@@ -6201,7 +6201,7 @@ name blood
 name_pl blood
 x 24
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6222,7 +6222,7 @@ name blood
 name_pl blood
 x 24
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6243,7 +6243,7 @@ name blood
 name_pl blood
 x 24
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6264,7 +6264,7 @@ name blood
 name_pl blood
 x 24
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6285,7 +6285,7 @@ name blood
 name_pl blood
 x 24
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6306,7 +6306,7 @@ name blood
 name_pl blood
 x 24
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6707,7 +6707,7 @@ name blood
 name_pl blood
 x 25
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6728,7 +6728,7 @@ name blood
 name_pl blood
 x 25
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6749,7 +6749,7 @@ name blood
 name_pl blood
 x 25
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6770,7 +6770,7 @@ name blood
 name_pl blood
 x 25
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6791,7 +6791,7 @@ name blood
 name_pl blood
 x 25
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6812,7 +6812,7 @@ name blood
 name_pl blood
 x 25
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6833,7 +6833,7 @@ name blood
 name_pl blood
 x 25
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6854,7 +6854,7 @@ name blood
 name_pl blood
 x 25
 y 40
-no_pass 0
+move_block 0
 end
 arch cave21
 x 25
@@ -6873,7 +6873,7 @@ name blood
 name_pl blood
 x 25
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6894,7 +6894,7 @@ name blood
 name_pl blood
 x 25
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -6915,7 +6915,7 @@ name blood
 name_pl blood
 x 25
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7310,7 +7310,7 @@ name blood
 name_pl blood
 x 26
 y 32
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7331,7 +7331,7 @@ name blood
 name_pl blood
 x 26
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7352,7 +7352,7 @@ name blood
 name_pl blood
 x 26
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7373,7 +7373,7 @@ name blood
 name_pl blood
 x 26
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7394,7 +7394,7 @@ name blood
 name_pl blood
 x 26
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7415,7 +7415,7 @@ name blood
 name_pl blood
 x 26
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7436,7 +7436,7 @@ name blood
 name_pl blood
 x 26
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7457,7 +7457,7 @@ name blood
 name_pl blood
 x 26
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7478,7 +7478,7 @@ name blood
 name_pl blood
 x 26
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7499,7 +7499,7 @@ name blood
 name_pl blood
 x 26
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7520,7 +7520,7 @@ name blood
 name_pl blood
 x 26
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7541,7 +7541,7 @@ name blood
 name_pl blood
 x 26
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7562,7 +7562,7 @@ name blood
 name_pl blood
 x 26
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7583,7 +7583,7 @@ name blood
 name_pl blood
 x 26
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7604,7 +7604,7 @@ name blood
 name_pl blood
 x 26
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -7686,7 +7686,7 @@ name ledge
 name_pl mountain top
 x 26
 y 50
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch footbridge_3_1
@@ -8026,7 +8026,7 @@ name blood
 name_pl blood
 x 27
 y 32
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8047,7 +8047,7 @@ name blood
 name_pl blood
 x 27
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8068,7 +8068,7 @@ name blood
 name_pl blood
 x 27
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8089,7 +8089,7 @@ name blood
 name_pl blood
 x 27
 y 35
-no_pass 0
+move_block 0
 end
 arch cave11
 x 27
@@ -8108,7 +8108,7 @@ name blood
 name_pl blood
 x 27
 y 36
-no_pass 0
+move_block 0
 end
 arch cave10
 x 27
@@ -8127,7 +8127,7 @@ name blood
 name_pl blood
 x 27
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8148,7 +8148,7 @@ name blood
 name_pl blood
 x 27
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8169,7 +8169,7 @@ name blood
 name_pl blood
 x 27
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8190,7 +8190,7 @@ name blood
 name_pl blood
 x 27
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8211,7 +8211,7 @@ name blood
 name_pl blood
 x 27
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8232,7 +8232,7 @@ name blood
 name_pl blood
 x 27
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8253,7 +8253,7 @@ name blood
 name_pl blood
 x 27
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8274,7 +8274,7 @@ name blood
 name_pl blood
 x 27
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8295,7 +8295,7 @@ name blood
 name_pl blood
 x 27
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8316,7 +8316,7 @@ name blood
 name_pl blood
 x 27
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8337,7 +8337,7 @@ name blood
 name_pl blood
 x 27
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8358,7 +8358,7 @@ name blood
 name_pl blood
 x 27
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8379,7 +8379,7 @@ name blood
 name_pl blood
 x 27
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8421,7 +8421,7 @@ name blood
 name_pl blood
 x 27
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8442,7 +8442,7 @@ name blood
 name_pl blood
 x 27
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8463,7 +8463,7 @@ name blood
 name_pl blood
 x 27
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8484,7 +8484,7 @@ name blood
 name_pl blood
 x 27
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8505,7 +8505,7 @@ name blood
 name_pl blood
 x 27
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8752,7 +8752,7 @@ name blood
 name_pl blood
 x 28
 y 32
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8773,7 +8773,7 @@ name blood
 name_pl blood
 x 28
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8794,7 +8794,7 @@ name blood
 name_pl blood
 x 28
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8815,7 +8815,7 @@ name blood
 name_pl blood
 x 28
 y 35
-no_pass 0
+move_block 0
 end
 arch cave12
 x 28
@@ -8834,7 +8834,7 @@ name blood
 name_pl blood
 x 28
 y 36
-no_pass 0
+move_block 0
 end
 arch cave9
 x 28
@@ -8853,7 +8853,7 @@ name blood
 name_pl blood
 x 28
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8874,7 +8874,7 @@ name blood
 name_pl blood
 x 28
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8895,7 +8895,7 @@ name blood
 name_pl blood
 x 28
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8916,7 +8916,7 @@ name blood
 name_pl blood
 x 28
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8937,7 +8937,7 @@ name blood
 name_pl blood
 x 28
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8958,7 +8958,7 @@ name blood
 name_pl blood
 x 28
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -8979,7 +8979,7 @@ name blood
 name_pl blood
 x 28
 y 43
-no_pass 0
+move_block 0
 end
 arch cave21
 x 28
@@ -8998,7 +8998,7 @@ name blood
 name_pl blood
 x 28
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9019,7 +9019,7 @@ name blood
 name_pl blood
 x 28
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9040,7 +9040,7 @@ name blood
 name_pl blood
 x 28
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9061,7 +9061,7 @@ name blood
 name_pl blood
 x 28
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9082,7 +9082,7 @@ name blood
 name_pl blood
 x 28
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9103,7 +9103,7 @@ name blood
 name_pl blood
 x 28
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9145,7 +9145,7 @@ name blood
 name_pl blood
 x 28
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9166,7 +9166,7 @@ name blood
 name_pl blood
 x 28
 y 52
-no_pass 0
+move_block 0
 end
 arch cave21
 x 28
@@ -9185,7 +9185,7 @@ name blood
 name_pl blood
 x 28
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9206,7 +9206,7 @@ name blood
 name_pl blood
 x 28
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9227,7 +9227,7 @@ name blood
 name_pl blood
 x 28
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9474,7 +9474,7 @@ name blood
 name_pl blood
 x 29
 y 32
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9495,7 +9495,7 @@ name blood
 name_pl blood
 x 29
 y 33
-no_pass 0
+move_block 0
 end
 arch cave21
 x 29
@@ -9514,7 +9514,7 @@ name blood
 name_pl blood
 x 29
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9535,7 +9535,7 @@ name blood
 name_pl blood
 x 29
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9556,7 +9556,7 @@ name blood
 name_pl blood
 x 29
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9577,7 +9577,7 @@ name blood
 name_pl blood
 x 29
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9598,7 +9598,7 @@ name blood
 name_pl blood
 x 29
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9619,7 +9619,7 @@ name blood
 name_pl blood
 x 29
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9640,7 +9640,7 @@ name blood
 name_pl blood
 x 29
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9661,7 +9661,7 @@ name blood
 name_pl blood
 x 29
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9682,7 +9682,7 @@ name blood
 name_pl blood
 x 29
 y 42
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9703,7 +9703,7 @@ name blood
 name_pl blood
 x 29
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9724,7 +9724,7 @@ name blood
 name_pl blood
 x 29
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9745,7 +9745,7 @@ name blood
 name_pl blood
 x 29
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9766,7 +9766,7 @@ name blood
 name_pl blood
 x 29
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9787,7 +9787,7 @@ name blood
 name_pl blood
 x 29
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9808,7 +9808,7 @@ name blood
 name_pl blood
 x 29
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9829,7 +9829,7 @@ name blood
 name_pl blood
 x 29
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9871,7 +9871,7 @@ name blood
 name_pl blood
 x 29
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9892,7 +9892,7 @@ name blood
 name_pl blood
 x 29
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9913,7 +9913,7 @@ name blood
 name_pl blood
 x 29
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9934,7 +9934,7 @@ name blood
 name_pl blood
 x 29
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -9955,7 +9955,7 @@ name blood
 name_pl blood
 x 29
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10202,7 +10202,7 @@ name blood
 name_pl blood
 x 30
 y 32
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10223,7 +10223,7 @@ name blood
 name_pl blood
 x 30
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10244,7 +10244,7 @@ name blood
 name_pl blood
 x 30
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10265,7 +10265,7 @@ name blood
 name_pl blood
 x 30
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10286,7 +10286,7 @@ name blood
 name_pl blood
 x 30
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10307,7 +10307,7 @@ name blood
 name_pl blood
 x 30
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10328,7 +10328,7 @@ name blood
 name_pl blood
 x 30
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10349,7 +10349,7 @@ name blood
 name_pl blood
 x 30
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10370,7 +10370,7 @@ name blood
 name_pl blood
 x 30
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10391,7 +10391,7 @@ name blood
 name_pl blood
 x 30
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10492,7 +10492,7 @@ name blood
 name_pl blood
 x 30
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10513,7 +10513,7 @@ name blood
 name_pl blood
 x 30
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10534,7 +10534,7 @@ name blood
 name_pl blood
 x 30
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10555,7 +10555,7 @@ name blood
 name_pl blood
 x 30
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10597,7 +10597,7 @@ name blood
 name_pl blood
 x 30
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10618,7 +10618,7 @@ name blood
 name_pl blood
 x 30
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10639,7 +10639,7 @@ name blood
 name_pl blood
 x 30
 y 53
-no_pass 0
+move_block 0
 end
 arch cave21
 x 30
@@ -10658,7 +10658,7 @@ name blood
 name_pl blood
 x 30
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10679,7 +10679,7 @@ name blood
 name_pl blood
 x 30
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10700,7 +10700,7 @@ name blood
 name_pl blood
 x 30
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10947,7 +10947,7 @@ name blood
 name_pl blood
 x 31
 y 33
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10968,7 +10968,7 @@ name blood
 name_pl blood
 x 31
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -10989,7 +10989,7 @@ name blood
 name_pl blood
 x 31
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11010,7 +11010,7 @@ name blood
 name_pl blood
 x 31
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11031,7 +11031,7 @@ name blood
 name_pl blood
 x 31
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11052,7 +11052,7 @@ name blood
 name_pl blood
 x 31
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11073,7 +11073,7 @@ name blood
 name_pl blood
 x 31
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11324,7 +11324,7 @@ name blood
 name_pl blood
 x 31
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11345,7 +11345,7 @@ name blood
 name_pl blood
 x 31
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11366,7 +11366,7 @@ name blood
 name_pl blood
 x 31
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11387,7 +11387,7 @@ name blood
 name_pl blood
 x 31
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11652,7 +11652,7 @@ name blood
 name_pl blood
 x 32
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11673,7 +11673,7 @@ name blood
 name_pl blood
 x 32
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11694,7 +11694,7 @@ name blood
 name_pl blood
 x 32
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11715,7 +11715,7 @@ name blood
 name_pl blood
 x 32
 y 37
-no_pass 0
+move_block 0
 end
 arch cave21
 x 32
@@ -11734,7 +11734,7 @@ name blood
 name_pl blood
 x 32
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11943,7 +11943,7 @@ name blood
 name_pl blood
 x 32
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11964,7 +11964,7 @@ name blood
 name_pl blood
 x 32
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -11985,7 +11985,7 @@ name blood
 name_pl blood
 x 32
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12250,7 +12250,7 @@ name blood
 name_pl blood
 x 33
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12271,7 +12271,7 @@ name blood
 name_pl blood
 x 33
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12292,7 +12292,7 @@ name blood
 name_pl blood
 x 33
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12313,7 +12313,7 @@ name blood
 name_pl blood
 x 33
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12334,7 +12334,7 @@ name blood
 name_pl blood
 x 33
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12535,7 +12535,7 @@ name blood
 name_pl blood
 x 33
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12556,7 +12556,7 @@ name blood
 name_pl blood
 x 33
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12577,7 +12577,7 @@ name blood
 name_pl blood
 x 33
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12598,7 +12598,7 @@ name blood
 name_pl blood
 x 33
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12845,7 +12845,7 @@ name blood
 name_pl blood
 x 34
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12866,7 +12866,7 @@ name blood
 name_pl blood
 x 34
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12887,7 +12887,7 @@ name blood
 name_pl blood
 x 34
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12908,7 +12908,7 @@ name blood
 name_pl blood
 x 34
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -12929,7 +12929,7 @@ name blood
 name_pl blood
 x 34
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13132,7 +13132,7 @@ name blood
 name_pl blood
 x 34
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13153,7 +13153,7 @@ name blood
 name_pl blood
 x 34
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13174,7 +13174,7 @@ name blood
 name_pl blood
 x 34
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13438,7 +13438,7 @@ name blood
 name_pl blood
 x 35
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13459,7 +13459,7 @@ name blood
 name_pl blood
 x 35
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13480,7 +13480,7 @@ name blood
 name_pl blood
 x 35
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13501,7 +13501,7 @@ name blood
 name_pl blood
 x 35
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13722,7 +13722,7 @@ name blood
 name_pl blood
 x 35
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13743,7 +13743,7 @@ name blood
 name_pl blood
 x 35
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -13764,7 +13764,7 @@ name blood
 name_pl blood
 x 35
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14028,7 +14028,7 @@ name blood
 name_pl blood
 x 36
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14049,7 +14049,7 @@ name blood
 name_pl blood
 x 36
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14070,7 +14070,7 @@ name blood
 name_pl blood
 x 36
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14091,7 +14091,7 @@ name blood
 name_pl blood
 x 36
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14308,7 +14308,7 @@ name blood
 name_pl blood
 x 36
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14329,7 +14329,7 @@ name blood
 name_pl blood
 x 36
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14350,7 +14350,7 @@ name blood
 name_pl blood
 x 36
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14371,7 +14371,7 @@ name blood
 name_pl blood
 x 36
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14566,7 +14566,7 @@ name blood
 name_pl blood
 x 37
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14587,7 +14587,7 @@ name blood
 name_pl blood
 x 37
 y 35
-no_pass 0
+move_block 0
 end
 arch cave21
 x 37
@@ -14606,7 +14606,7 @@ name blood
 name_pl blood
 x 37
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14627,7 +14627,7 @@ name blood
 name_pl blood
 x 37
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14844,7 +14844,7 @@ name blood
 name_pl blood
 x 37
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14865,7 +14865,7 @@ name blood
 name_pl blood
 x 37
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14886,7 +14886,7 @@ name blood
 name_pl blood
 x 37
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -14907,7 +14907,7 @@ name blood
 name_pl blood
 x 37
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15102,7 +15102,7 @@ name blood
 name_pl blood
 x 38
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15123,7 +15123,7 @@ name blood
 name_pl blood
 x 38
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15144,7 +15144,7 @@ name blood
 name_pl blood
 x 38
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15165,7 +15165,7 @@ name blood
 name_pl blood
 x 38
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15386,7 +15386,7 @@ name blood
 name_pl blood
 x 38
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15407,7 +15407,7 @@ name blood
 name_pl blood
 x 38
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15428,7 +15428,7 @@ name blood
 name_pl blood
 x 38
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15449,7 +15449,7 @@ name blood
 name_pl blood
 x 38
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15644,7 +15644,7 @@ name blood
 name_pl blood
 x 39
 y 34
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15665,7 +15665,7 @@ name blood
 name_pl blood
 x 39
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15686,7 +15686,7 @@ name blood
 name_pl blood
 x 39
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15707,7 +15707,7 @@ name blood
 name_pl blood
 x 39
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15916,7 +15916,7 @@ name blood
 name_pl blood
 x 39
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15937,7 +15937,7 @@ name blood
 name_pl blood
 x 39
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -15958,7 +15958,7 @@ name blood
 name_pl blood
 x 39
 y 57
-no_pass 0
+move_block 0
 end
 arch cave21
 x 39
@@ -15977,7 +15977,7 @@ name blood
 name_pl blood
 x 39
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16190,7 +16190,7 @@ name blood
 name_pl blood
 x 40
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16211,7 +16211,7 @@ name blood
 name_pl blood
 x 40
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16232,7 +16232,7 @@ name blood
 name_pl blood
 x 40
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16253,7 +16253,7 @@ name blood
 name_pl blood
 x 40
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16460,7 +16460,7 @@ name blood
 name_pl blood
 x 40
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16481,7 +16481,7 @@ name blood
 name_pl blood
 x 40
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16502,7 +16502,7 @@ name blood
 name_pl blood
 x 40
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16523,7 +16523,7 @@ name blood
 name_pl blood
 x 40
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16787,7 +16787,7 @@ name blood
 name_pl blood
 x 41
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16808,7 +16808,7 @@ name blood
 name_pl blood
 x 41
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16829,7 +16829,7 @@ name blood
 name_pl blood
 x 41
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -16850,7 +16850,7 @@ name blood
 name_pl blood
 x 41
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17061,7 +17061,7 @@ name blood
 name_pl blood
 x 41
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17082,7 +17082,7 @@ name blood
 name_pl blood
 x 41
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17103,7 +17103,7 @@ name blood
 name_pl blood
 x 41
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17124,7 +17124,7 @@ name blood
 name_pl blood
 x 41
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17380,7 +17380,7 @@ name blood
 name_pl blood
 x 42
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17401,7 +17401,7 @@ name blood
 name_pl blood
 x 42
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17422,7 +17422,7 @@ name blood
 name_pl blood
 x 42
 y 37
-no_pass 0
+move_block 0
 end
 arch cave21
 x 42
@@ -17441,7 +17441,7 @@ name blood
 name_pl blood
 x 42
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17644,7 +17644,7 @@ name blood
 name_pl blood
 x 42
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17665,7 +17665,7 @@ name blood
 name_pl blood
 x 42
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -17686,7 +17686,7 @@ name blood
 name_pl blood
 x 42
 y 57
-no_pass 0
+move_block 0
 end
 arch cave21
 x 42
@@ -17705,7 +17705,7 @@ name blood
 name_pl blood
 x 42
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18016,7 +18016,7 @@ name blood
 name_pl blood
 x 43
 y 35
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18037,7 +18037,7 @@ name blood
 name_pl blood
 x 43
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18058,7 +18058,7 @@ name blood
 name_pl blood
 x 43
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18079,7 +18079,7 @@ name blood
 name_pl blood
 x 43
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18276,7 +18276,7 @@ name blood
 name_pl blood
 x 43
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18297,7 +18297,7 @@ name blood
 name_pl blood
 x 43
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18318,7 +18318,7 @@ name blood
 name_pl blood
 x 43
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18339,7 +18339,7 @@ name blood
 name_pl blood
 x 43
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18360,7 +18360,7 @@ name blood
 name_pl blood
 x 43
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18689,7 +18689,7 @@ name blood
 name_pl blood
 x 44
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18710,7 +18710,7 @@ name blood
 name_pl blood
 x 44
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18731,7 +18731,7 @@ name blood
 name_pl blood
 x 44
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18942,7 +18942,7 @@ name blood
 name_pl blood
 x 44
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18963,7 +18963,7 @@ name blood
 name_pl blood
 x 44
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -18984,7 +18984,7 @@ name blood
 name_pl blood
 x 44
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19005,7 +19005,7 @@ name blood
 name_pl blood
 x 44
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19026,7 +19026,7 @@ name blood
 name_pl blood
 x 44
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19047,7 +19047,7 @@ name blood
 name_pl blood
 x 44
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19376,7 +19376,7 @@ name blood
 name_pl blood
 x 45
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19397,7 +19397,7 @@ name blood
 name_pl blood
 x 45
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19418,7 +19418,7 @@ name blood
 name_pl blood
 x 45
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19439,7 +19439,7 @@ name blood
 name_pl blood
 x 45
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19460,7 +19460,7 @@ name blood
 name_pl blood
 x 45
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19633,7 +19633,7 @@ name blood
 name_pl blood
 x 45
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19654,7 +19654,7 @@ name blood
 name_pl blood
 x 45
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19675,7 +19675,7 @@ name blood
 name_pl blood
 x 45
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19696,7 +19696,7 @@ name blood
 name_pl blood
 x 45
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19717,7 +19717,7 @@ name blood
 name_pl blood
 x 45
 y 55
-no_pass 0
+move_block 0
 end
 arch cave11
 x 45
@@ -19736,7 +19736,7 @@ name blood
 name_pl blood
 x 45
 y 56
-no_pass 0
+move_block 0
 end
 arch cave10
 x 45
@@ -19755,7 +19755,7 @@ name blood
 name_pl blood
 x 45
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -19776,7 +19776,7 @@ name blood
 name_pl blood
 x 45
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20105,7 +20105,7 @@ name blood
 name_pl blood
 x 46
 y 36
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20126,7 +20126,7 @@ name blood
 name_pl blood
 x 46
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20147,7 +20147,7 @@ name blood
 name_pl blood
 x 46
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20168,7 +20168,7 @@ name blood
 name_pl blood
 x 46
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20189,7 +20189,7 @@ name blood
 name_pl blood
 x 46
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20210,7 +20210,7 @@ name blood
 name_pl blood
 x 46
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20252,7 +20252,7 @@ name blood
 name_pl blood
 x 46
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20273,7 +20273,7 @@ name blood
 name_pl blood
 x 46
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20414,7 +20414,7 @@ name blood
 name_pl blood
 x 46
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20435,7 +20435,7 @@ name blood
 name_pl blood
 x 46
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20456,7 +20456,7 @@ name blood
 name_pl blood
 x 46
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20477,7 +20477,7 @@ name blood
 name_pl blood
 x 46
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20498,7 +20498,7 @@ name blood
 name_pl blood
 x 46
 y 55
-no_pass 0
+move_block 0
 end
 arch cave12
 x 46
@@ -20517,7 +20517,7 @@ name blood
 name_pl blood
 x 46
 y 56
-no_pass 0
+move_block 0
 end
 arch cave9
 x 46
@@ -20536,7 +20536,7 @@ name blood
 name_pl blood
 x 46
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20557,7 +20557,7 @@ name blood
 name_pl blood
 x 46
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20904,7 +20904,7 @@ name blood
 name_pl blood
 x 47
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20925,7 +20925,7 @@ name blood
 name_pl blood
 x 47
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20946,7 +20946,7 @@ name blood
 name_pl blood
 x 47
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20967,7 +20967,7 @@ name blood
 name_pl blood
 x 47
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -20988,7 +20988,7 @@ name blood
 name_pl blood
 x 47
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21030,7 +21030,7 @@ name blood
 name_pl blood
 x 47
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21051,7 +21051,7 @@ name blood
 name_pl blood
 x 47
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21072,7 +21072,7 @@ name blood
 name_pl blood
 x 47
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21093,7 +21093,7 @@ name blood
 name_pl blood
 x 47
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21114,7 +21114,7 @@ name blood
 name_pl blood
 x 47
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21135,7 +21135,7 @@ name blood
 name_pl blood
 x 47
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21156,7 +21156,7 @@ name blood
 name_pl blood
 x 47
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21177,7 +21177,7 @@ name blood
 name_pl blood
 x 47
 y 50
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21198,7 +21198,7 @@ name blood
 name_pl blood
 x 47
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21219,7 +21219,7 @@ name blood
 name_pl blood
 x 47
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21240,7 +21240,7 @@ name blood
 name_pl blood
 x 47
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21261,7 +21261,7 @@ name blood
 name_pl blood
 x 47
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21282,7 +21282,7 @@ name blood
 name_pl blood
 x 47
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21303,7 +21303,7 @@ name blood
 name_pl blood
 x 47
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21324,7 +21324,7 @@ name blood
 name_pl blood
 x 47
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21345,7 +21345,7 @@ name blood
 name_pl blood
 x 47
 y 58
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21692,7 +21692,7 @@ name blood
 name_pl blood
 x 48
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21713,7 +21713,7 @@ name blood
 name_pl blood
 x 48
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21734,7 +21734,7 @@ name blood
 name_pl blood
 x 48
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21755,7 +21755,7 @@ name blood
 name_pl blood
 x 48
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21776,7 +21776,7 @@ name blood
 name_pl blood
 x 48
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21818,7 +21818,7 @@ name blood
 name_pl blood
 x 48
 y 43
-no_pass 0
+move_block 0
 end
 arch cave21
 x 48
@@ -21837,7 +21837,7 @@ name blood
 name_pl blood
 x 48
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21858,7 +21858,7 @@ name blood
 name_pl blood
 x 48
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21879,7 +21879,7 @@ name blood
 name_pl blood
 x 48
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21900,7 +21900,7 @@ name blood
 name_pl blood
 x 48
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21921,7 +21921,7 @@ name blood
 name_pl blood
 x 48
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21942,7 +21942,7 @@ name blood
 name_pl blood
 x 48
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21963,7 +21963,7 @@ name blood
 name_pl blood
 x 48
 y 50
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -21984,7 +21984,7 @@ name blood
 name_pl blood
 x 48
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22005,7 +22005,7 @@ name blood
 name_pl blood
 x 48
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22026,7 +22026,7 @@ name blood
 name_pl blood
 x 48
 y 53
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22047,7 +22047,7 @@ name blood
 name_pl blood
 x 48
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22068,7 +22068,7 @@ name blood
 name_pl blood
 x 48
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22089,7 +22089,7 @@ name blood
 name_pl blood
 x 48
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22110,7 +22110,7 @@ name blood
 name_pl blood
 x 48
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22507,7 +22507,7 @@ name blood
 name_pl blood
 x 49
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22528,7 +22528,7 @@ name blood
 name_pl blood
 x 49
 y 38
-no_pass 0
+move_block 0
 end
 arch cave11
 x 49
@@ -22547,7 +22547,7 @@ name blood
 name_pl blood
 x 49
 y 39
-no_pass 0
+move_block 0
 end
 arch cave10
 x 49
@@ -22566,7 +22566,7 @@ name blood
 name_pl blood
 x 49
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22587,7 +22587,7 @@ name blood
 name_pl blood
 x 49
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22629,7 +22629,7 @@ name blood
 name_pl blood
 x 49
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22650,7 +22650,7 @@ name blood
 name_pl blood
 x 49
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22671,7 +22671,7 @@ name blood
 name_pl blood
 x 49
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22692,7 +22692,7 @@ name blood
 name_pl blood
 x 49
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22713,7 +22713,7 @@ name blood
 name_pl blood
 x 49
 y 47
-no_pass 0
+move_block 0
 end
 arch cave21
 x 49
@@ -22732,7 +22732,7 @@ name blood
 name_pl blood
 x 49
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22753,7 +22753,7 @@ name blood
 name_pl blood
 x 49
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22774,7 +22774,7 @@ name blood
 name_pl blood
 x 49
 y 50
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22795,7 +22795,7 @@ name blood
 name_pl blood
 x 49
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22816,7 +22816,7 @@ name blood
 name_pl blood
 x 49
 y 52
-no_pass 0
+move_block 0
 end
 arch cave11
 x 49
@@ -22835,7 +22835,7 @@ name blood
 name_pl blood
 x 49
 y 53
-no_pass 0
+move_block 0
 end
 arch cave10
 x 49
@@ -22854,7 +22854,7 @@ name blood
 name_pl blood
 x 49
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22875,7 +22875,7 @@ name blood
 name_pl blood
 x 49
 y 55
-no_pass 0
+move_block 0
 end
 arch cave21
 x 49
@@ -22894,7 +22894,7 @@ name blood
 name_pl blood
 x 49
 y 56
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -22915,7 +22915,7 @@ name blood
 name_pl blood
 x 49
 y 57
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23300,7 +23300,7 @@ name blood
 name_pl blood
 x 50
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23321,7 +23321,7 @@ name blood
 name_pl blood
 x 50
 y 38
-no_pass 0
+move_block 0
 end
 arch cave12
 x 50
@@ -23340,7 +23340,7 @@ name blood
 name_pl blood
 x 50
 y 39
-no_pass 0
+move_block 0
 end
 arch cave9
 x 50
@@ -23359,7 +23359,7 @@ name blood
 name_pl blood
 x 50
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23380,7 +23380,7 @@ name blood
 name_pl blood
 x 50
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23422,7 +23422,7 @@ name blood
 name_pl blood
 x 50
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23443,7 +23443,7 @@ name blood
 name_pl blood
 x 50
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23464,7 +23464,7 @@ name blood
 name_pl blood
 x 50
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23485,7 +23485,7 @@ name blood
 name_pl blood
 x 50
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23506,7 +23506,7 @@ name blood
 name_pl blood
 x 50
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23527,7 +23527,7 @@ name blood
 name_pl blood
 x 50
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23548,7 +23548,7 @@ name blood
 name_pl blood
 x 50
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23569,7 +23569,7 @@ name blood
 name_pl blood
 x 50
 y 50
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23590,7 +23590,7 @@ name blood
 name_pl blood
 x 50
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23611,7 +23611,7 @@ name blood
 name_pl blood
 x 50
 y 52
-no_pass 0
+move_block 0
 end
 arch cave12
 x 50
@@ -23630,7 +23630,7 @@ name blood
 name_pl blood
 x 50
 y 53
-no_pass 0
+move_block 0
 end
 arch cave9
 x 50
@@ -23649,7 +23649,7 @@ name blood
 name_pl blood
 x 50
 y 54
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23670,7 +23670,7 @@ name blood
 name_pl blood
 x 50
 y 55
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -23691,7 +23691,7 @@ name blood
 name_pl blood
 x 50
 y 56
-no_pass 0
+move_block 0
 end
 arch cave15
 name mountain top
@@ -23713,7 +23713,7 @@ name blood
 name_pl blood
 x 50
 y 57
-no_pass 0
+move_block 0
 end
 arch cave1
 name mountain top
@@ -23738,7 +23738,7 @@ name rock
 name_pl mountain top
 x 50
 y 58
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cave2
@@ -24098,7 +24098,7 @@ name blood
 name_pl blood
 x 51
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24119,7 +24119,7 @@ name blood
 name_pl blood
 x 51
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24140,7 +24140,7 @@ name blood
 name_pl blood
 x 51
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24161,7 +24161,7 @@ name blood
 name_pl blood
 x 51
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24182,7 +24182,7 @@ name blood
 name_pl blood
 x 51
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24224,7 +24224,7 @@ name blood
 name_pl blood
 x 51
 y 43
-no_pass 0
+move_block 0
 end
 arch cave21
 x 51
@@ -24243,7 +24243,7 @@ name blood
 name_pl blood
 x 51
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24264,7 +24264,7 @@ name blood
 name_pl blood
 x 51
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24285,7 +24285,7 @@ name blood
 name_pl blood
 x 51
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24306,7 +24306,7 @@ name blood
 name_pl blood
 x 51
 y 47
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24327,7 +24327,7 @@ name blood
 name_pl blood
 x 51
 y 48
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24348,7 +24348,7 @@ name blood
 name_pl blood
 x 51
 y 49
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24369,7 +24369,7 @@ name blood
 name_pl blood
 x 51
 y 50
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24390,7 +24390,7 @@ name blood
 name_pl blood
 x 51
 y 51
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24411,7 +24411,7 @@ name blood
 name_pl blood
 x 51
 y 52
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24432,7 +24432,7 @@ name blood
 name_pl blood
 x 51
 y 53
-no_pass 0
+move_block 0
 end
 arch cave15
 name mountain top
@@ -24454,7 +24454,7 @@ name blood
 name_pl blood
 x 51
 y 54
-no_pass 0
+move_block 0
 end
 arch cave1
 name mountain top
@@ -24476,7 +24476,7 @@ name blood
 name_pl blood
 x 51
 y 55
-no_pass 0
+move_block 0
 end
 arch cave1
 name mountain top
@@ -24498,14 +24498,14 @@ name blood
 name_pl blood
 x 51
 y 56
-no_pass 0
+move_block 0
 end
 arch cave20
 name rock
 name_pl mountain top
 x 51
 y 56
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch magic_banned
@@ -24881,7 +24881,7 @@ name blood
 name_pl blood
 x 52
 y 37
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24902,7 +24902,7 @@ name blood
 name_pl blood
 x 52
 y 38
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24923,7 +24923,7 @@ name blood
 name_pl blood
 x 52
 y 39
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24944,7 +24944,7 @@ name blood
 name_pl blood
 x 52
 y 40
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -24965,7 +24965,7 @@ name blood
 name_pl blood
 x 52
 y 41
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -25007,7 +25007,7 @@ name blood
 name_pl blood
 x 52
 y 43
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -25028,7 +25028,7 @@ name blood
 name_pl blood
 x 52
 y 44
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -25049,7 +25049,7 @@ name blood
 name_pl blood
 x 52
 y 45
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -25070,7 +25070,7 @@ name blood
 name_pl blood
 x 52
 y 46
-no_pass 0
+move_block 0
 end
 arch spikes_moving
 dam 250
@@ -25202,7 +25202,7 @@ name rock
 name_pl mountain top
 x 52
 y 53
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cave10
@@ -25714,7 +25714,7 @@ name ledge
 name_pl mountain top
 x 53
 y 42
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch footbridge_1_4

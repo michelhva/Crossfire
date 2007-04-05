@@ -509,7 +509,7 @@ end
 arch rock
 x 5
 y 1
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch book_clasp
@@ -731,7 +731,7 @@ end
 arch door_2
 x 6
 y 11
-no_pass 0
+move_block 0
 end
 arch blocked
 x 6
@@ -754,7 +754,7 @@ end
 arch rock
 x 7
 y 1
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch book_clasp

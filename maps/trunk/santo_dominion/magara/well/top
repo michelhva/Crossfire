@@ -2838,7 +2838,7 @@ end
 arch river_ne-w
 x 20
 y 11
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -2942,7 +2942,7 @@ end
 arch river_sw-ne_u
 x 21
 y 8
-no_pass 0
+move_block 0
 end
 arch light4
 x 21
@@ -2962,7 +2962,7 @@ end
 arch river_ne-s
 x 21
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 21
@@ -2978,7 +2978,7 @@ end
 arch river_sw-n
 x 21
 y 10
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 21
@@ -2987,7 +2987,7 @@ end
 arch river_sw-ne_l
 x 21
 y 11
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 21

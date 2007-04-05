@@ -20,7 +20,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 y 3
@@ -52,7 +52,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 y 4
@@ -64,7 +64,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 y 5
@@ -113,7 +113,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 1
@@ -127,7 +127,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 1
@@ -141,7 +141,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 1
@@ -177,7 +177,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 1
@@ -191,7 +191,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 1
@@ -216,7 +216,7 @@ x 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -252,7 +252,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -287,7 +287,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -322,7 +322,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -336,7 +336,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -372,7 +372,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -407,7 +407,7 @@ y 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 2
@@ -446,7 +446,7 @@ y 8
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -458,7 +458,7 @@ x 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -472,7 +472,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -519,7 +519,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -533,7 +533,7 @@ y 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -547,7 +547,7 @@ y 7
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 3
@@ -561,7 +561,7 @@ y 8
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -593,7 +593,7 @@ x 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -629,7 +629,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -683,7 +683,7 @@ sp 24
 activate_on_push 1
 activate_on_release 1
 connected 1
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -702,7 +702,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -737,7 +737,7 @@ y 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -773,7 +773,7 @@ y 7
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 4
@@ -809,7 +809,7 @@ y 8
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -821,7 +821,7 @@ x 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -835,7 +835,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -882,7 +882,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -896,7 +896,7 @@ y 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -910,7 +910,7 @@ y 7
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 5
@@ -927,7 +927,7 @@ x 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -963,7 +963,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -998,7 +998,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -1033,7 +1033,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -1047,7 +1047,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -1083,7 +1083,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -1118,7 +1118,7 @@ y 6
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 6
@@ -1164,7 +1164,7 @@ y 1
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 7
@@ -1178,7 +1178,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 7
@@ -1192,7 +1192,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 7
@@ -1228,7 +1228,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 7
@@ -1242,7 +1242,7 @@ y 5
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 7
@@ -1275,7 +1275,7 @@ y 2
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 8
@@ -1310,7 +1310,7 @@ y 3
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 8
@@ -1324,7 +1324,7 @@ y 4
 end
 arch blocked
 name darkness
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 x 8

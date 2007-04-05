@@ -5093,7 +5093,7 @@ y 19
 end
 arch sea
 elevation -549
-no_pass 0
+move_block 0
 x 20
 y 20
 end
@@ -5407,7 +5407,7 @@ y 19
 end
 arch sea
 elevation -339
-no_pass 0
+move_block 0
 x 21
 y 20
 end
@@ -7298,7 +7298,7 @@ y 4
 end
 arch shallow_sea
 elevation -49
-no_pass 0
+move_block 0
 x 28
 y 5
 end
@@ -7576,7 +7576,7 @@ y 4
 end
 arch shallow_sea
 elevation -9
-no_pass 0
+move_block 0
 x 29
 y 5
 end

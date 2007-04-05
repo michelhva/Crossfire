@@ -3141,7 +3141,7 @@ arch door_look_2
 name temple door
 x 15
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15

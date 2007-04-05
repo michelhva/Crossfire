@@ -364,7 +364,7 @@ end
 arch door_look_2
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -373,7 +373,7 @@ end
 arch door_look_2
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3

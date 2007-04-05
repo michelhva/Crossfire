@@ -2504,7 +2504,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 11
 y 9
 end
@@ -2520,7 +2520,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 11
 y 10
 end
@@ -2536,7 +2536,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 11
 y 11
 end
@@ -2763,7 +2763,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 12
 y 9
 end
@@ -2779,7 +2779,7 @@ arch rock
 name carpet
 face hide_black.111
 weight 150000000
-no_pass 0
+move_block 0
 x 12
 y 10
 end
@@ -2795,7 +2795,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 12
 y 11
 end
@@ -2829,7 +2829,7 @@ y 14
 end
 arch check_floor
 slaying pshop9
-no_pass 1
+move_block all
 walk_off 1
 x 12
 y 14
@@ -2903,7 +2903,7 @@ y 18
 end
 arch check_floor
 slaying pshop9
-no_pass 1
+move_block all
 walk_off 1
 x 12
 y 18
@@ -3061,7 +3061,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 13
 y 9
 end
@@ -3077,7 +3077,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 13
 y 10
 end
@@ -3093,7 +3093,7 @@ arch rock
 name carpet
 face hide_white.111
 weight 150000000
-no_pass 0
+move_block 0
 x 13
 y 11
 end

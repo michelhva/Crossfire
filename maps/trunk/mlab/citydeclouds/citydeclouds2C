@@ -13989,7 +13989,7 @@ name desk
 name_pl desk
 x 35
 y 27
-no_pass 1
+move_block all
 end
 arch light2
 x 35
@@ -14004,7 +14004,7 @@ name desk
 name_pl desk
 x 35
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 35
@@ -17681,7 +17681,7 @@ end
 arch door_look_2
 x 46
 y 11
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -17692,7 +17692,7 @@ end
 arch door_look_2
 x 46
 y 12
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor

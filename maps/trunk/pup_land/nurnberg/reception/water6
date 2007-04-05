@@ -453,12 +453,12 @@ end
 arch biglake_center
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -567,12 +567,12 @@ end
 arch biglake_center
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 5
@@ -701,12 +701,12 @@ end
 arch biglake_center
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 6
@@ -831,17 +831,17 @@ end
 arch biglake_center
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -952,37 +952,37 @@ end
 arch biglake_center
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 8
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 8
@@ -1045,12 +1045,12 @@ end
 arch biglake_center
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 9
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -1183,7 +1183,7 @@ end
 arch biglake_center
 x 10
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10

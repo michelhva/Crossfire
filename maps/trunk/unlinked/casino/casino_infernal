@@ -1048,7 +1048,7 @@ x 6
 y 1
 end
 arch slevel_2_2_2
-no_pass 1
+move_block all
 x 6
 y 1
 end
@@ -1061,7 +1061,7 @@ x 6
 y 2
 end
 arch slevel_3_2
-no_pass 1
+move_block all
 x 6
 y 2
 end
@@ -1074,7 +1074,7 @@ x 6
 y 3
 end
 arch slevel_2_2_1
-no_pass 1
+move_block all
 x 6
 y 3
 end
@@ -1232,7 +1232,7 @@ x 7
 y 3
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 7
 y 3
 end
@@ -1393,7 +1393,7 @@ x 8
 y 3
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 8
 y 3
 end
@@ -1547,7 +1547,7 @@ x 9
 y 3
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 9
 y 3
 end
@@ -1705,7 +1705,7 @@ x 10
 y 3
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 10
 y 3
 end
@@ -1835,7 +1835,7 @@ x 11
 y 1
 end
 arch slevel_2_2_3
-no_pass 1
+move_block all
 x 11
 y 1
 end
@@ -1848,7 +1848,7 @@ x 11
 y 2
 end
 arch slevel_3_4
-no_pass 1
+move_block all
 x 11
 y 2
 end
@@ -1861,7 +1861,7 @@ x 11
 y 3
 end
 arch slevel_2_2_4
-no_pass 1
+move_block all
 x 11
 y 3
 end

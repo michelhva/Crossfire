@@ -2119,7 +2119,7 @@ x 18
 y 4
 end
 arch bench_2_1_1
-no_pass 1
+move_block all
 x 18
 y 4
 end
@@ -2132,7 +2132,7 @@ x 18
 y 5
 end
 arch bench_2_1_1
-no_pass 1
+move_block all
 x 18
 y 5
 end
@@ -2145,7 +2145,7 @@ x 18
 y 6
 end
 arch bench_2_1_1
-no_pass 1
+move_block all
 x 18
 y 6
 end
@@ -2597,7 +2597,7 @@ x 22
 y 7
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 22
 y 7
 end
@@ -2606,7 +2606,7 @@ x 22
 y 8
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 22
 y 8
 end

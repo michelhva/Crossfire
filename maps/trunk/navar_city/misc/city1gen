@@ -1183,7 +1183,7 @@ end
 arch door_look_1
 x 11
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch shop_empty

@@ -1059,7 +1059,7 @@ arch grass
 x 7
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 7
 end
 arch grass
@@ -1259,7 +1259,7 @@ x 7
 y 29
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 7
 y 29
 end
@@ -4048,7 +4048,7 @@ arch grass
 x 24
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 24
 end
 arch grass
@@ -4262,7 +4262,7 @@ arch grass
 x 25
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 25
 end
 arch grass
@@ -4466,7 +4466,7 @@ arch grass
 x 26
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 26
 end
 arch grass
@@ -4685,7 +4685,7 @@ arch grass
 x 27
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 27
 end
 arch grass
@@ -4831,7 +4831,7 @@ arch grass
 x 28
 end
 arch hedge_2_1_2
-no_pass 1
+move_block all
 x 28
 end
 arch hole
@@ -4983,7 +4983,7 @@ arch brush
 x 29
 end
 arch hedge_2_2_3
-no_pass 1
+move_block all
 x 29
 end
 arch grass
@@ -4991,7 +4991,7 @@ x 29
 y 1
 end
 arch hedge_2_1_1
-no_pass 1
+move_block all
 x 29
 y 1
 end
@@ -5000,7 +5000,7 @@ x 29
 y 2
 end
 arch hedge_2_1_1
-no_pass 1
+move_block all
 x 29
 y 2
 end
@@ -5009,7 +5009,7 @@ x 29
 y 3
 end
 arch hedge_2_1_1
-no_pass 1
+move_block all
 x 29
 y 3
 end
@@ -5018,7 +5018,7 @@ x 29
 y 4
 end
 arch hedge_2_1_1
-no_pass 1
+move_block all
 x 29
 y 4
 end
@@ -5139,7 +5139,7 @@ x 29
 y 19
 end
 arch hedge_2_1_1
-no_pass 1
+move_block all
 x 29
 y 19
 end

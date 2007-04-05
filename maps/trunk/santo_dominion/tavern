@@ -1149,7 +1149,7 @@ x 8
 y 2
 material 0
 no_pick 1
-no_pass 1
+move_block all
 is_cauldron 0
 end
 arch woodfloor
@@ -1195,7 +1195,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch woodfloor
@@ -1755,7 +1755,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch woodfloor
@@ -2129,7 +2129,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -2253,7 +2253,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch woodfloor

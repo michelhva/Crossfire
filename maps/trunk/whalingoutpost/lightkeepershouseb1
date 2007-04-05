@@ -24064,13 +24064,13 @@ end
 arch cave4
 x 29
 y 117
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 29
 y 117
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 37
@@ -24093,7 +24093,7 @@ dam 5
 x 29
 y 118
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -25568,13 +25568,13 @@ end
 arch cave4
 x 30
 y 117
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 30
 y 117
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 38
@@ -25597,7 +25597,7 @@ dam 5
 x 30
 y 118
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -27046,13 +27046,13 @@ end
 arch cave4
 x 31
 y 117
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 31
 y 117
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 39
@@ -27075,7 +27075,7 @@ dam 5
 x 31
 y 118
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -55542,13 +55542,13 @@ end
 arch cave4
 x 60
 y 113
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 60
 y 113
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 54
@@ -55571,7 +55571,7 @@ dam 5
 x 60
 y 114
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -57026,13 +57026,13 @@ end
 arch cave4
 x 61
 y 113
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 61
 y 113
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 55
@@ -57055,7 +57055,7 @@ dam 5
 x 61
 y 114
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -58450,13 +58450,13 @@ end
 arch cave4
 x 62
 y 113
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 62
 y 113
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 56
@@ -58479,7 +58479,7 @@ dam 5
 x 62
 y 114
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -90282,13 +90282,13 @@ end
 arch cave4
 x 90
 y 116
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 90
 y 116
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 83
@@ -90311,7 +90311,7 @@ dam 5
 x 90
 y 117
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -91262,13 +91262,13 @@ end
 arch cave4
 x 91
 y 116
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 91
 y 116
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 84
@@ -91291,7 +91291,7 @@ dam 5
 x 91
 y 117
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
@@ -92280,13 +92280,13 @@ end
 arch cave4
 x 92
 y 116
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch river_n-s
 x 92
 y 116
-no_pass 0
+move_block 0
 end
 arch teleporter
 hp 85
@@ -92309,7 +92309,7 @@ dam 5
 x 92
 y 117
 attacktype 16
-no_pass 1
+move_block all
 end
 arch permanent_lava
 name freezing water
