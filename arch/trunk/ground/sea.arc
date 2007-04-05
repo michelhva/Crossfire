@@ -54,7 +54,7 @@ face sea_nw.111
 color_fg light_blue
 color_bg blue
 speed 0.2
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 editable 8
@@ -66,7 +66,7 @@ face sea_ne.111
 color_fg light_blue
 color_bg blue
 speed 0.2
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 editable 8
@@ -78,7 +78,7 @@ face sea_sw.111
 color_fg light_blue
 color_bg blue
 speed 0.2
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 editable 8
@@ -91,7 +91,7 @@ color_fg light_blue
 color_bg blue
 speed 0.2
 no_pick 1
-no_pass 1
+move_block all
 is_water 1
 editable 8
 smoothlevel 20
@@ -100,7 +100,7 @@ Object sea_nes
 name sea
 face sea_7.111
 color_fg light_blue
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 visibility 100
@@ -112,7 +112,7 @@ Object sea_new
 name sea
 face sea_B.111
 color_fg light_blue
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 visibility 100
@@ -124,7 +124,7 @@ Object sea_nse
 name sea
 face sea_D.111
 color_fg light_blue
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 visibility 100
@@ -136,7 +136,7 @@ Object sea_sew
 name sea
 face sea_E.111
 color_fg light_blue
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 visibility 100
@@ -148,7 +148,7 @@ Object sea_nsew
 name sea
 face sea_F.111
 color_fg light_blue
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 visibility 100

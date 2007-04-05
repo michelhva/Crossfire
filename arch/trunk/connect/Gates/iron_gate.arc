@@ -16,7 +16,7 @@ iron_gate1.117
 iron_gate1.118
 mina
 is_animated 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 blocksview 1
@@ -43,7 +43,7 @@ iron_gate2.115
 iron_gate2.116
 mina
 is_animated 0
-no_pass 1
+move_block all
 damned 1
 no_magic 1
 blocksview 1

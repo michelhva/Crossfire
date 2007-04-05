@@ -3,7 +3,7 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 2
 client_type 25012
 end
@@ -13,7 +13,7 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
 end
 More

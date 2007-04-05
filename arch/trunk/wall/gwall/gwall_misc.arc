@@ -1,10 +1,11 @@
+
 Object gwall_a
 name wall
 face gwall_xa.111
 color_bg dark_orange
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap dark_orange
@@ -15,7 +16,7 @@ face gwall_xb.111
 color_bg dark_orange
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap dark_orange
@@ -26,7 +27,7 @@ face gwall_xc.111
 color_bg dark_orange
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap dark_orange
@@ -37,7 +38,7 @@ face gwall_xd.111
 color_bg dark_orange
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap dark_orange

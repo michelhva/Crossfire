@@ -42,7 +42,7 @@ grate_1.117
 grate_1.118
 mina
 is_animated 0
-no_pass 1
+move_block all
 wc 7
 maxsp 0
 dam 5
@@ -95,7 +95,7 @@ grate_2.117
 grate_2.118
 mina
 is_animated 0
-no_pass 1
+move_block all
 wc 7
 ac 1
 dam 5

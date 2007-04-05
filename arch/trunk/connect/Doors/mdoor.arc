@@ -12,7 +12,7 @@ wdoor.113
 wdoor.114
 mina
 is_animated 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 blocksview 1
@@ -37,7 +37,7 @@ sdoor.113
 sdoor.114
 mina
 is_animated 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 blocksview 1

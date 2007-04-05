@@ -28,5 +28,5 @@ direction the spell is cast.  The wall can be
 torn down by creatures, and will eventually
 expire of its own accord.
 endmsg
-no_pass 1
+move_block all
 end

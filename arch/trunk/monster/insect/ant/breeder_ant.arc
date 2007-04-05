@@ -47,7 +47,7 @@ mina
 color_fg dark_orange
 monster 1
 move_type walk
-no_pass 1
+move_block all
 no_pick 1
 alive 1
 x 1

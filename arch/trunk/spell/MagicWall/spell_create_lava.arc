@@ -19,5 +19,5 @@ duration 100
 duration_modifier 1
 maxsp 20
 range 0
-no_pass 1
+move_block all
 end

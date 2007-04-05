@@ -15,7 +15,7 @@ gate_1.116
 gate_1.117
 mina
 is_animated 0
-no_pass 1
+move_block all
 blocksview 1
 wc 6
 maxsp 0

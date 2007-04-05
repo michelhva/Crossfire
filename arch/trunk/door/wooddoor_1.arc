@@ -1,7 +1,7 @@
 Object door_look_1
 name door
 randomitems door
-no_pass 1
+move_block all
 face wooddoor_1.111
 magicmap brown
 hp 400

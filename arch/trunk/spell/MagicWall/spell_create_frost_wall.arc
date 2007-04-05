@@ -21,5 +21,5 @@ maxsp 8
 attacktype 18
 range 2
 range_modifier 12
-no_pass 1
+move_block all
 end

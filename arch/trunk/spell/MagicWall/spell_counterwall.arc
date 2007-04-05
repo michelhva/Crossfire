@@ -27,5 +27,5 @@ affected area.  Counterwalls can be useful to
 constantly neutralize spell effects.  The
 counterwall itself has a finite duration.
 endmsg
-no_pass 1
+move_block all
 end

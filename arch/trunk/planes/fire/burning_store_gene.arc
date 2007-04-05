@@ -3,7 +3,7 @@ name burning shop
 face burning_store_gene.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 64
 visibility 100
 magicmap grey
@@ -16,7 +16,7 @@ face burning_store_gene.x11
 type 66
 x 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end

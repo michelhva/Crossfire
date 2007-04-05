@@ -1,7 +1,7 @@
 Object lava_river_sw-ne
 face lava_river_26.111
 name lava river
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8
@@ -11,7 +11,7 @@ end
 Object lava_river_sw-ne_l
 face lava_river_26.211
 name lava river
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8
@@ -21,7 +21,7 @@ end
 Object lava_river_sw-ne_u
 face lava_river_26.311
 name lava river
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

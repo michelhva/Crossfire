@@ -2,7 +2,7 @@ Object thewheel_short_static
 face thewheel_short.111
 name the wheel
 no_pick 1
-no_pass 1
+move_block all
 editable 128
 color_fg brown
 end
@@ -11,7 +11,7 @@ Object thewheel_tall_static
 face thewheel_tall.x11
 name the wheel
 no_pick 1
-no_pass 1
+move_block all
 editable 128
 color_fg brown
 end
@@ -30,7 +30,7 @@ face thewheel_short.111
 name the wheel
 is_animated 1
 no_pick 1
-no_pass 1
+move_block all
 speed -0.1
 anim
 thewheel_short.111
@@ -62,7 +62,7 @@ face thewheel_tall.x11
 name the wheel
 is_animated 1
 no_pick 1
-no_pass 1
+move_block all
 speed -0.1
 anim
 thewheel_tall.x11

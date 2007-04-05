@@ -17,7 +17,7 @@ minedoor_4.x12
 minedoor_4.x11
 mina
 is_animated 0
-no_pass 1
+move_block all
 blocksview 1
 wc 8
 maxsp 0
@@ -51,7 +51,7 @@ minedoor_4.x12
 minedoor_4.x11
 mina
 is_animated 0
-no_pass 1
+move_block all
 blocksview 1
 wc 8
 value 1
@@ -81,7 +81,7 @@ minedoor_8.x12
 minedoor_8.x11
 mina
 is_animated 0
-no_pass 1
+move_block all
 blocksview 1
 wc 8
 maxsp 0
@@ -115,7 +115,7 @@ minedoor_8.x12
 minedoor_8.x11
 mina
 is_animated 0
-no_pass 1
+move_block all
 blocksview 1
 wc 8
 value 1

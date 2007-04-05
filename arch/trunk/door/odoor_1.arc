@@ -1,7 +1,7 @@
 Object door_1
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_1.111
 magicmap orange

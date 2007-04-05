@@ -1,7 +1,7 @@
 Object rcrook_ns-nw
 face branch_158.111
 name river junction
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8
@@ -11,7 +11,7 @@ end
 Object rjunct_ns-nw
 face branch_158.211
 name river junction
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

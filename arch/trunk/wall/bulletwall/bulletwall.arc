@@ -9,7 +9,7 @@ face bul_wall_0.111
 color_bg yellow
 speed -0.4
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -27,7 +27,7 @@ color_bg yellow
 sp 1
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -45,7 +45,7 @@ color_bg yellow
 sp 2
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -63,7 +63,7 @@ color_bg yellow
 sp 3
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -81,7 +81,7 @@ color_bg yellow
 sp 4
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -99,7 +99,7 @@ color_bg yellow
 sp 5
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -117,7 +117,7 @@ color_bg yellow
 sp 6
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -135,7 +135,7 @@ color_bg yellow
 sp 7
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -153,7 +153,7 @@ color_bg yellow
 sp 8
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100

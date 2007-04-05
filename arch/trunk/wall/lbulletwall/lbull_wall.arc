@@ -20,7 +20,7 @@ is_animated 0
 color_bg yellow
 speed -0.16
 no_pick 1
-no_pass 1
+move_block all
 dam 29
 blocksview 1
 editable 32
@@ -40,7 +40,7 @@ sp 1
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -59,7 +59,7 @@ sp 2
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -78,7 +78,7 @@ sp 3
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -97,7 +97,7 @@ sp 4
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -116,7 +116,7 @@ sp 5
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -135,7 +135,7 @@ sp 6
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -154,7 +154,7 @@ sp 7
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -173,7 +173,7 @@ sp 8
 dam 29
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100

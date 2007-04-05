@@ -33,7 +33,7 @@ sp 1
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -52,7 +52,7 @@ sp 2
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -71,7 +71,7 @@ sp 3
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -90,7 +90,7 @@ sp 4
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -109,7 +109,7 @@ sp 5
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -128,7 +128,7 @@ sp 6
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -147,7 +147,7 @@ sp 7
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -166,7 +166,7 @@ sp 8
 dam 1
 speed -0.02
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100

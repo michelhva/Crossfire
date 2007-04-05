@@ -42,6 +42,6 @@ editable 16
 visibility 100
 ac 1
 wc 3
-no_pass 1
+move_block all
 magicmap black
 end
