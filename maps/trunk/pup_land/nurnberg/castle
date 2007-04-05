@@ -15,14 +15,14 @@ arch mover_4
 level 1
 end
 arch river_nw-se
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 y 1
 end
 arch river_nw-se_l
 y 1
-no_pass 0
+move_block 0
 end
 arch blocked
 y 2
@@ -77,7 +77,7 @@ x 1
 end
 arch river_nw-se_u
 x 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -91,7 +91,7 @@ end
 arch river_nw-e
 x 1
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -212,7 +212,7 @@ end
 arch rjunct_we-s
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -226,7 +226,7 @@ end
 arch river_n-s
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch cityport_a
 x 2
@@ -244,7 +244,7 @@ end
 arch river_se-n
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -253,7 +253,7 @@ end
 arch river_nw-se_l
 x 2
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -348,7 +348,7 @@ end
 arch river_w-e
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -365,7 +365,7 @@ end
 arch river_nw-se_u
 x 3
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -379,7 +379,7 @@ end
 arch river_nw-s
 x 3
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -393,7 +393,7 @@ end
 arch river_n-s
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -407,7 +407,7 @@ end
 arch river_n-s
 x 3
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -421,7 +421,7 @@ end
 arch river_n-s
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -443,7 +443,7 @@ end
 arch river_n-s
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -457,7 +457,7 @@ end
 arch river_n-s
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -475,7 +475,7 @@ end
 arch river_n-s
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -493,7 +493,7 @@ end
 arch river_n-s
 x 3
 y 12
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -511,7 +511,7 @@ end
 arch river_n-s
 x 3
 y 13
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -529,7 +529,7 @@ end
 arch river_n-s
 x 3
 y 14
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying city
@@ -544,7 +544,7 @@ end
 arch river_n-s
 x 3
 y 15
-no_pass 0
+move_block 0
 end
 arch blocked
 x 3
@@ -568,7 +568,7 @@ end
 arch river_w-e
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 4
@@ -672,7 +672,7 @@ end
 arch river_w-e
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 5
@@ -811,7 +811,7 @@ end
 arch river_w-e
 x 6
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 6
@@ -907,7 +907,7 @@ end
 arch river_w-e
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 7
@@ -999,7 +999,7 @@ end
 arch river_w-e
 x 8
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8
@@ -1107,7 +1107,7 @@ end
 arch river_w-e
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 9
@@ -1283,7 +1283,7 @@ end
 arch river_w-e
 x 10
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1383,7 +1383,7 @@ end
 arch river_w-e
 x 11
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 11
@@ -1520,7 +1520,7 @@ end
 arch river_w-e
 x 12
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 12
@@ -1664,7 +1664,7 @@ end
 arch river_w-e
 x 13
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 13
@@ -1764,7 +1764,7 @@ end
 arch river_w-e
 x 14
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 14
@@ -1942,7 +1942,7 @@ end
 arch river_w-e
 x 15
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 15
@@ -2050,7 +2050,7 @@ end
 arch river_w-e
 x 16
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 16
@@ -2142,7 +2142,7 @@ end
 arch river_w-e
 x 17
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 17
@@ -2238,7 +2238,7 @@ end
 arch river_se-w
 x 18
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 18
@@ -2247,7 +2247,7 @@ end
 arch river_nw-se_l
 x 18
 y 2
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 18
@@ -2373,7 +2373,7 @@ end
 arch river_nw-se_u
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -2387,7 +2387,7 @@ end
 arch river_nw-s
 x 19
 y 2
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -2401,7 +2401,7 @@ end
 arch river_n-s
 x 19
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -2415,7 +2415,7 @@ end
 arch river_se-n
 x 19
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -2424,7 +2424,7 @@ end
 arch river_nw-se_l
 x 19
 y 5
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 19
@@ -2523,7 +2523,7 @@ end
 arch river_nw-se_u
 x 20
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2537,7 +2537,7 @@ end
 arch river_nw-s
 x 20
 y 5
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2551,7 +2551,7 @@ end
 arch river_n-s
 x 20
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2565,7 +2565,7 @@ end
 arch river_n-s
 x 20
 y 7
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2587,7 +2587,7 @@ end
 arch river_n-s
 x 20
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2601,7 +2601,7 @@ end
 arch river_n-s
 x 20
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2619,7 +2619,7 @@ end
 arch river_n-s
 x 20
 y 11
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2637,7 +2637,7 @@ end
 arch river_n-s
 x 20
 y 12
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2655,7 +2655,7 @@ end
 arch river_n-s
 x 20
 y 13
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 20
@@ -2673,7 +2673,7 @@ end
 arch river_n-s
 x 20
 y 14
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying city
@@ -2688,7 +2688,7 @@ end
 arch river_n-s
 x 20
 y 15
-no_pass 0
+move_block 0
 end
 arch blocked
 x 20

@@ -2054,7 +2054,7 @@ x 13
 y 18
 end
 arch dun_3_3
-no_pass 0
+move_block 0
 x 13
 y 18
 end
@@ -2064,7 +2064,7 @@ x 13
 y 19
 end
 arch dun_3_1
-no_pass 0
+move_block 0
 x 13
 y 19
 end
@@ -2533,7 +2533,7 @@ x 16
 y 18
 end
 arch dun_3_3
-no_pass 0
+move_block 0
 x 16
 y 18
 end
@@ -2543,7 +2543,7 @@ x 16
 y 19
 end
 arch dun_3_1
-no_pass 0
+move_block 0
 x 16
 y 19
 end

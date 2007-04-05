@@ -141,18 +141,18 @@ arch sea
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 y 26
 end
 arch sea
-no_pass 0
+move_block 0
 y 27
 end
 arch sea
 y 28
 end
 arch sea
-no_pass 0
+move_block 0
 y 29
 end
 arch grass
@@ -279,12 +279,12 @@ x 1
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 x 1
 y 26
 end
 arch sea
-no_pass 0
+move_block 0
 x 1
 y 27
 end
@@ -435,7 +435,7 @@ x 2
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 x 2
 y 26
 end
@@ -444,7 +444,7 @@ x 2
 y 26
 end
 arch sea
-no_pass 0
+move_block 0
 x 2
 y 27
 end
@@ -575,7 +575,7 @@ x 3
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 x 3
 y 26
 end
@@ -756,7 +756,7 @@ x 4
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 x 4
 y 26
 end
@@ -765,7 +765,7 @@ x 4
 y 26
 end
 arch sea
-no_pass 0
+move_block 0
 x 4
 y 27
 end
@@ -920,7 +920,7 @@ x 5
 y 25
 end
 arch sea
-no_pass 0
+move_block 0
 x 5
 y 26
 end
@@ -948,7 +948,7 @@ level 1
 x 6
 end
 arch river_n-s
-no_pass 0
+move_block 0
 x 6
 end
 arch cityport_a
@@ -964,7 +964,7 @@ x 6
 y 1
 end
 arch river_se-n
-no_pass 0
+move_block 0
 x 6
 y 1
 end
@@ -973,7 +973,7 @@ x 6
 y 2
 end
 arch river_nw-se_l
-no_pass 0
+move_block 0
 x 6
 y 2
 end
@@ -1136,7 +1136,7 @@ x 7
 y 1
 end
 arch river_nw-se_u
-no_pass 0
+move_block 0
 x 7
 y 1
 end
@@ -1150,7 +1150,7 @@ x 7
 y 2
 end
 arch river_nw-se
-no_pass 0
+move_block 0
 x 7
 y 2
 end
@@ -1159,7 +1159,7 @@ x 7
 y 3
 end
 arch river_nw-se_l
-no_pass 0
+move_block 0
 x 7
 y 3
 end
@@ -1326,7 +1326,7 @@ x 8
 y 2
 end
 arch river_nw-se_u
-no_pass 0
+move_block 0
 x 8
 y 2
 end
@@ -1340,7 +1340,7 @@ x 8
 y 3
 end
 arch river_nw-e
-no_pass 0
+move_block 0
 x 8
 y 3
 end
@@ -1493,7 +1493,7 @@ x 9
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 9
 y 3
 end
@@ -1651,7 +1651,7 @@ x 10
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 10
 y 3
 end
@@ -1812,7 +1812,7 @@ x 11
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 11
 y 3
 end
@@ -1957,7 +1957,7 @@ x 12
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 12
 y 3
 end
@@ -2100,7 +2100,7 @@ x 13
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 13
 y 3
 end
@@ -2546,7 +2546,7 @@ x 16
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 16
 y 3
 end
@@ -2691,7 +2691,7 @@ x 17
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 17
 y 3
 end
@@ -2839,7 +2839,7 @@ x 18
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 18
 y 3
 end
@@ -2996,7 +2996,7 @@ x 19
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 19
 y 3
 end
@@ -3141,7 +3141,7 @@ x 20
 y 3
 end
 arch river_w-e
-no_pass 0
+move_block 0
 x 20
 y 3
 end
@@ -3280,7 +3280,7 @@ x 21
 y 2
 end
 arch river_sw-ne_u
-no_pass 0
+move_block 0
 x 21
 y 2
 end
@@ -3294,7 +3294,7 @@ x 21
 y 3
 end
 arch river_ne-w
-no_pass 0
+move_block 0
 x 21
 y 3
 end
@@ -3429,7 +3429,7 @@ x 22
 y 1
 end
 arch river_sw-ne_u
-no_pass 0
+move_block 0
 x 22
 y 1
 end
@@ -3443,7 +3443,7 @@ x 22
 y 2
 end
 arch river_sw-ne
-no_pass 0
+move_block 0
 x 22
 y 2
 end
@@ -3452,7 +3452,7 @@ x 22
 y 3
 end
 arch river_sw-ne_l
-no_pass 0
+move_block 0
 x 22
 y 3
 end
@@ -3592,7 +3592,7 @@ level 1
 x 23
 end
 arch river_n-s
-no_pass 0
+move_block 0
 x 23
 end
 arch cityport_a
@@ -3608,7 +3608,7 @@ x 23
 y 1
 end
 arch river_sw-n
-no_pass 0
+move_block 0
 x 23
 y 1
 end
@@ -3617,7 +3617,7 @@ x 23
 y 2
 end
 arch river_sw-ne_l
-no_pass 0
+move_block 0
 x 23
 y 2
 end
@@ -4837,7 +4837,7 @@ arch store_magic
 slaying alshop
 hp 25
 sp 3
-no_pass 0
+move_block 0
 x 12
 y 24
 end
@@ -4859,7 +4859,7 @@ y 24
 end
 arch guild
 name Guild of the Laughing Skull
-no_pass 0
+move_block 0
 slaying /pup_land/guilds/laughing_skull/ground
 x 16
 y 9
@@ -4877,7 +4877,7 @@ name Sunspear
 slaying bshop
 hp 8
 sp 1
-no_pass 0
+move_block 0
 x 18
 y 17
 end

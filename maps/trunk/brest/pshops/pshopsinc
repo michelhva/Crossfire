@@ -3950,7 +3950,7 @@ name carpet
 face hide_white.111
 x 28
 y 5
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch woodfloor
@@ -4227,7 +4227,7 @@ name carpet
 face hide_white.111
 x 30
 y 5
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch dungeon_magic
@@ -4458,7 +4458,7 @@ name carpet
 face hide_black.111
 x 32
 y 2
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch dungeon_magic
@@ -4532,7 +4532,7 @@ name Contract
 face scrollr.111
 x 32
 y 6
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch dungeon_magic

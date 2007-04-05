@@ -424,7 +424,7 @@ arch bench_1_1
 name desk
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -434,7 +434,7 @@ arch bench_2_2_1
 name desk
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -464,7 +464,7 @@ arch bench_2_2_2
 name desk
 x 6
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -474,7 +474,7 @@ arch bench_1_2
 name desk
 x 6
 y 9
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -502,7 +502,7 @@ arch bench_2_1_2
 name desk
 x 7
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 7
@@ -545,7 +545,7 @@ arch bench_2_1_2
 name desk
 x 7
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 7
@@ -587,7 +587,7 @@ arch bench_2_2_3
 name desk
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -597,7 +597,7 @@ arch bench_2_1_1
 name desk
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -607,7 +607,7 @@ arch bench_2_2_1
 name desk
 x 8
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -621,7 +621,7 @@ arch bench_2_2_2
 name desk
 x 8
 y 6
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -631,7 +631,7 @@ arch bench_2_1_1
 name desk
 x 8
 y 7
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -641,7 +641,7 @@ arch bench_2_2_4
 name desk
 x 8
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -695,7 +695,7 @@ arch bench_1_3
 name desk
 x 9
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 9
@@ -709,7 +709,7 @@ arch bench_1_3
 name desk
 x 9
 y 6
-no_pass 1
+move_block all
 end
 arch flagstone
 x 9

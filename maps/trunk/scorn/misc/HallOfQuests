@@ -628,7 +628,7 @@ end
 arch door_look_2
 x 4
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 4
@@ -1980,7 +1980,7 @@ arch door_look_1
 x 15
 y 4
 alive 0
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 15
@@ -2013,7 +2013,7 @@ endmsg
 x 15
 y 10
 alive 0
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -2257,7 +2257,7 @@ arch door_look_1
 x 17
 y 4
 alive 0
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 17
@@ -2287,7 +2287,7 @@ arch door_look_1
 x 17
 y 10
 alive 0
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -2999,7 +2999,7 @@ arch door_look_1
 x 22
 y 4
 alive 0
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 22
@@ -3029,7 +3029,7 @@ arch door_look_1
 x 22
 y 10
 alive 0
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -4193,7 +4193,7 @@ arch door_look_1
 x 30
 y 4
 alive 0
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 30
@@ -4230,7 +4230,7 @@ arch door_look_1
 x 30
 y 10
 alive 0
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 30

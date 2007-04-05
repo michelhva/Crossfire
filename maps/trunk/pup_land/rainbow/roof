@@ -22,42 +22,42 @@ end
 arch sea
 y 3
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 y 4
-no_pass 0
+move_block 0
 end
 arch sea
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 y 6
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch sea
 y 7
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 y 8
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 y 9
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch fog
 y 9
 end
 arch sea
 y 10
-no_pass 0
+move_block 0
 end
 arch grass
 y 11
@@ -94,19 +94,19 @@ end
 arch sea
 x 1
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
 y 4
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
 y 5
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 1
@@ -140,19 +140,19 @@ arch sea
 x 1
 y 10
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
 y 11
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
 y 12
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch blocked
 x 2
@@ -166,13 +166,13 @@ arch sea
 x 2
 y 2
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
 y 3
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 2
@@ -228,7 +228,7 @@ arch sea
 x 2
 y 12
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch blocked
 x 3
@@ -236,13 +236,13 @@ end
 arch sea
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
 y 2
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 3
@@ -295,7 +295,7 @@ arch sea
 x 3
 y 12
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch blocked
 x 4
@@ -303,12 +303,12 @@ end
 arch sea
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 4
@@ -375,7 +375,7 @@ arch sea
 x 4
 y 12
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch blocked
 x 5
@@ -383,13 +383,13 @@ end
 arch sea
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
 y 2
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 5
@@ -487,7 +487,7 @@ arch sea
 x 5
 y 12
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch blocked
 x 6
@@ -496,7 +496,7 @@ arch sea
 x 6
 y 1
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch mover_6
 x 6
@@ -506,7 +506,7 @@ arch sea
 x 6
 y 2
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 6
@@ -575,7 +575,7 @@ arch sea
 x 6
 y 12
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch blocked
 x 7
@@ -597,13 +597,13 @@ end
 arch sea_ne
 x 7
 y 2
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
 y 3
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 7
@@ -659,7 +659,7 @@ arch sea
 x 7
 y 12
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch blocked
 x 8
@@ -689,13 +689,13 @@ end
 arch sea_ne
 x 8
 y 3
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
 y 4
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -743,7 +743,7 @@ arch sea
 x 8
 y 11
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -763,7 +763,7 @@ x 9
 end
 arch blocked
 x 9
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 9
@@ -790,19 +790,19 @@ arch sea
 x 9
 y 4
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
 y 5
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
 y 6
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 9
@@ -831,7 +831,7 @@ arch sea
 x 9
 y 10
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 9
@@ -852,7 +852,7 @@ x 10
 end
 arch blocked
 x 10
-no_pass 0
+move_block 0
 end
 arch grass
 x 10
@@ -875,40 +875,40 @@ arch sea
 x 10
 y 4
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 6
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 7
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 8
 smoothlevel 1
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 9
 smoothlevel 0
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 10
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 10
@@ -929,7 +929,7 @@ x 11
 end
 arch blocked
 x 11
-no_pass 0
+move_block 0
 end
 arch blocked
 x 11

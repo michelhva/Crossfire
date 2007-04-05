@@ -538,7 +538,7 @@ end
 arch flagstone
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -711,7 +711,7 @@ y 13
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -866,7 +866,7 @@ end
 arch flagstone
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -1282,7 +1282,7 @@ end
 arch flagstone
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -1616,7 +1616,7 @@ end
 arch flagstone
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -1945,7 +1945,7 @@ end
 arch flagstone
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -2331,7 +2331,7 @@ end
 arch flagstone
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -2689,7 +2689,7 @@ end
 arch flagstone
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -3062,7 +3062,7 @@ end
 arch flagstone
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -3417,7 +3417,7 @@ end
 arch flagstone
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -3774,7 +3774,7 @@ end
 arch flagstone
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4123,7 +4123,7 @@ end
 arch flagstone
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4481,7 +4481,7 @@ end
 arch flagstone
 x 13
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -4862,7 +4862,7 @@ end
 arch flagstone
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19
@@ -5236,7 +5236,7 @@ end
 arch flagstone
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 19

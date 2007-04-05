@@ -7701,7 +7701,7 @@ end
 arch door_1
 x 28
 y 31
-no_pass 0
+move_block 0
 end
 arch flagstone
 name floor

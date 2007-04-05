@@ -710,7 +710,7 @@ x 6
 y 6
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 6
 y 6
 end
@@ -755,7 +755,7 @@ x 6
 y 10
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 6
 y 10
 end
@@ -998,7 +998,7 @@ x 8
 y 6
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 8
 y 6
 end
@@ -1150,7 +1150,7 @@ x 9
 y 7
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 9
 y 7
 end
@@ -1566,7 +1566,7 @@ x 12
 y 8
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 12
 y 8
 end

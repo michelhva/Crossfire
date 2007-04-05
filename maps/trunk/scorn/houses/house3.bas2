@@ -188,7 +188,7 @@ x 1
 y 5
 end
 arch river_nw-se_l
-no_pass 0
+move_block 0
 x 1
 y 5
 end
@@ -683,7 +683,7 @@ x 3
 y 16
 end
 arch river_sw-ne_l
-no_pass 0
+move_block 0
 x 3
 y 16
 end
@@ -1350,7 +1350,7 @@ y 12
 end
 arch tree6
 blocksview 1
-no_pass 1
+move_block all
 x 7
 y 12
 end
@@ -1360,7 +1360,7 @@ y 13
 end
 arch tree6
 blocksview 1
-no_pass 1
+move_block all
 x 7
 y 13
 end
@@ -1564,7 +1564,7 @@ y 13
 end
 arch tree6
 blocksview 1
-no_pass 1
+move_block all
 x 8
 y 13
 end

@@ -103,7 +103,7 @@ y 15
 end
 arch biglake_2_2_3
 name Flooded Basement
-no_pass 0
+move_block 0
 y 15
 end
 arch teleporter
@@ -115,7 +115,7 @@ y 15
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 y 16
 end
 arch teleporter
@@ -127,7 +127,7 @@ y 16
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 y 17
 end
 arch teleporter
@@ -139,7 +139,7 @@ y 17
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 y 18
 end
 arch teleporter
@@ -153,7 +153,7 @@ arch blocked
 y 19
 end
 arch blocked
-no_pass 0
+move_block 0
 y 20
 end
 arch invis_exit
@@ -252,7 +252,7 @@ y 16
 end
 arch biglake_2_2_3
 name Flooded Basement
-no_pass 0
+move_block 0
 x 1
 y 16
 end
@@ -267,7 +267,7 @@ y 16
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 x 1
 y 17
 end
@@ -281,7 +281,7 @@ y 17
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 x 1
 y 18
 end
@@ -398,7 +398,7 @@ y 17
 end
 arch biglake_2_2_3
 name Flooded Basement
-no_pass 0
+move_block 0
 x 2
 y 17
 end
@@ -413,7 +413,7 @@ y 17
 end
 arch biglake_center
 name Flooded Basement
-no_pass 0
+move_block 0
 x 2
 y 18
 end
@@ -531,7 +531,7 @@ y 18
 end
 arch biglake_2_2_3
 name Flooded Basement
-no_pass 0
+move_block 0
 x 3
 y 18
 end
@@ -1160,7 +1160,7 @@ y 13
 end
 arch check_floor
 slaying pshop7
-no_pass 1
+move_block all
 walk_off 1
 x 7
 y 13
@@ -2775,7 +2775,7 @@ y 4
 end
 arch check_floor
 slaying pshop7
-no_pass 1
+move_block all
 walk_off 1
 x 18
 y 4

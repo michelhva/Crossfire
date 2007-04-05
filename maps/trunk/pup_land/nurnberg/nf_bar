@@ -330,7 +330,7 @@ y 8
 end
 arch bench_1_4
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 2
@@ -518,7 +518,7 @@ y 8
 end
 arch bench_2_2_3
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -530,7 +530,7 @@ y 9
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -542,7 +542,7 @@ y 10
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -554,7 +554,7 @@ y 11
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -566,7 +566,7 @@ y 12
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -578,7 +578,7 @@ y 13
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -590,7 +590,7 @@ y 14
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -602,7 +602,7 @@ y 15
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -614,7 +614,7 @@ y 16
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -626,7 +626,7 @@ y 17
 end
 arch bench_2_1_1
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -638,7 +638,7 @@ y 18
 end
 arch bench_1_2
 name bar
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 3
@@ -1079,7 +1079,7 @@ ac 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 no_magic 1
 pass_thru 0
 damned 1
@@ -1478,7 +1478,7 @@ x 10
 y 6
 end
 arch slevel_2_2_2
-no_pass 1
+move_block all
 x 10
 y 6
 end
@@ -1492,7 +1492,7 @@ x 10
 y 7
 end
 arch slevel_3_2
-no_pass 1
+move_block all
 x 10
 y 7
 end
@@ -1510,7 +1510,7 @@ x 10
 y 8
 end
 arch slevel_3_2
-no_pass 1
+move_block all
 x 10
 y 8
 end
@@ -1528,7 +1528,7 @@ x 10
 y 9
 end
 arch slevel_2_2_1
-no_pass 1
+move_block all
 x 10
 y 9
 end
@@ -1642,7 +1642,7 @@ x 11
 y 6
 end
 arch slevel_3_3
-no_pass 1
+move_block all
 x 11
 y 6
 end
@@ -1682,7 +1682,7 @@ x 11
 y 9
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 11
 y 9
 end
@@ -1795,7 +1795,7 @@ x 12
 y 6
 end
 arch slevel_3_3
-no_pass 1
+move_block all
 x 12
 y 6
 end
@@ -1827,7 +1827,7 @@ x 12
 y 9
 end
 arch slevel_3_1
-no_pass 1
+move_block all
 x 12
 y 9
 end
@@ -1951,7 +1951,7 @@ x 13
 y 6
 end
 arch slevel_2_2_3
-no_pass 1
+move_block all
 x 13
 y 6
 end
@@ -1965,7 +1965,7 @@ x 13
 y 7
 end
 arch slevel_3_4
-no_pass 1
+move_block all
 x 13
 y 7
 end
@@ -1979,7 +1979,7 @@ x 13
 y 8
 end
 arch slevel_3_4
-no_pass 1
+move_block all
 x 13
 y 8
 end
@@ -1993,7 +1993,7 @@ x 13
 y 9
 end
 arch slevel_2_2_4
-no_pass 1
+move_block all
 x 13
 y 9
 end
@@ -2544,7 +2544,7 @@ ac 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 no_magic 1
 pass_thru 0
 damned 1

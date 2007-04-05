@@ -269,7 +269,7 @@ end
 arch door_look_2
 x 2
 y 6
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1926,7 +1926,7 @@ end
 arch door_look_1
 x 15
 y 14
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones
@@ -2047,7 +2047,7 @@ end
 arch door_look_1
 x 16
 y 14
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones

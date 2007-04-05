@@ -5621,7 +5621,7 @@ end
 arch wwall_2_1_1
 x 19
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_7
 x 19
@@ -6814,7 +6814,7 @@ end
 arch wwall_2_1_1
 x 23
 y 16
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 23
@@ -6917,7 +6917,7 @@ end
 arch wwall_3_2
 x 23
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 23
@@ -7127,7 +7127,7 @@ end
 arch wwall_3_4
 x 24
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24

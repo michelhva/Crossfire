@@ -593,7 +593,7 @@ end
 arch door_look_1
 x 7
 y 12
-no_pass 0
+move_block 0
 end
 arch blocked
 x 7

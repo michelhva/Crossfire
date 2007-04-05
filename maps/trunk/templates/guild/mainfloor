@@ -1083,7 +1083,7 @@ end
 arch bench_1_4
 x 4
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1350,7 +1350,7 @@ end
 arch bench_1_1
 x 5
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -1364,7 +1364,7 @@ end
 arch bench_2_2_4
 x 5
 y 8
-no_pass 1
+move_block all
 end
 arch light4
 x 5
@@ -1609,7 +1609,7 @@ slaying GuildMaster
 x 6
 y 4
 connected 79
-no_pass 1
+move_block all
 end
 arch grate_closed_2
 x 6
@@ -6592,7 +6592,7 @@ end
 arch ytree_2
 x 22
 y 23
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -7130,7 +7130,7 @@ end
 arch ytree_2
 x 24
 y 23
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -8484,7 +8484,7 @@ arch check_inv
 slaying scolar of kurte
 x 29
 y 12
-no_pass 1
+move_block all
 end
 arch blocked
 x 29

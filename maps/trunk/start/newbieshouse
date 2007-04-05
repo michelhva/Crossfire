@@ -132,7 +132,7 @@ y 17
 end
 arch mountain3
 y 17
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic
@@ -541,7 +541,7 @@ x 2
 end
 arch mountain
 x 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -550,7 +550,7 @@ end
 arch mountain
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1957,7 +1957,7 @@ arch check_inv
 hp 1
 x 6
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1971,7 +1971,7 @@ arch check_inv
 hp 1
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -3933,7 +3933,7 @@ end
 arch woodfloor2
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch altar
 food 0
@@ -4629,7 +4629,7 @@ arch check_inv
 hp 1
 x 14
 y 26
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -5017,7 +5017,7 @@ x 16
 end
 arch mountain
 x 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5026,7 +5026,7 @@ end
 arch mountain
 x 16
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5832,7 +5832,7 @@ end
 arch mountain3
 x 18
 y 23
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic

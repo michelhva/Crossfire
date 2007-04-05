@@ -54436,7 +54436,7 @@ end
 arch cwall_2_2_1
 x 52
 y 66
-no_pass 0
+move_block 0
 end
 arch light4
 x 52
@@ -54445,7 +54445,7 @@ end
 arch woodfloor
 x 52
 y 67
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 52
@@ -63942,7 +63942,7 @@ name_pl stove
 face altarrugg.111
 x 61
 y 39
-no_pass 1
+move_block all
 end
 arch light4
 x 61
@@ -65135,7 +65135,7 @@ name_pl stove
 face altarrugg.111
 x 62
 y 40
-no_pass 1
+move_block all
 end
 arch light4
 x 62
@@ -66324,7 +66324,7 @@ name_pl stove
 face altarrugg.111
 x 63
 y 40
-no_pass 1
+move_block all
 end
 arch light4
 x 63
@@ -68740,7 +68740,7 @@ name grill
 name_pl grill
 x 65
 y 42
-no_pass 1
+move_block all
 end
 arch demon_head
 x 65
@@ -68761,7 +68761,7 @@ name grill
 name_pl grill
 x 65
 y 43
-no_pass 1
+move_block all
 end
 arch food
 x 65
@@ -68822,7 +68822,7 @@ name grill
 name_pl grill
 x 65
 y 47
-no_pass 1
+move_block all
 end
 arch dragon_steak
 x 65
@@ -70294,7 +70294,7 @@ end
 arch flagstone
 x 66
 y 70
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 66
@@ -70311,7 +70311,7 @@ end
 arch flagstone
 x 66
 y 71
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 66
@@ -74678,7 +74678,7 @@ end
 arch flagstone
 x 70
 y 66
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 70
@@ -75834,7 +75834,7 @@ end
 arch flagstone
 x 71
 y 66
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 71

@@ -1136,7 +1136,7 @@ end
 arch door_look_1
 x 13
 y 9
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch dungeon_floor

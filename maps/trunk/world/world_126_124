@@ -10305,7 +10305,7 @@ arch sea
 x 41
 y 26
 elevation -254
-no_pass 0
+move_block 0
 end
 arch brush
 x 41
@@ -10554,7 +10554,7 @@ end
 arch shallow_sea
 x 42
 y 26
-no_pass 0
+move_block 0
 end
 arch brush
 x 42
@@ -11083,7 +11083,7 @@ arch shallow_sea
 x 44
 y 32
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 44
@@ -11093,7 +11093,7 @@ arch shallow_sea
 x 44
 y 33
 elevation -10
-no_pass 0
+move_block 0
 end
 arch pier_1_2
 x 44
@@ -11342,13 +11342,13 @@ arch shallow_sea
 x 45
 y 32
 elevation -10
-no_pass 0
+move_block 0
 end
 arch shallow_sea
 x 45
 y 33
 elevation -10
-no_pass 0
+move_block 0
 end
 arch sea
 x 45
@@ -11601,7 +11601,7 @@ arch shallow_sea
 x 46
 y 32
 elevation -10
-no_pass 0
+move_block 0
 end
 arch sea
 x 46

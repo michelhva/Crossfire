@@ -3767,7 +3767,7 @@ arch swall_1_3
 name fake-wall
 x 20
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch dungeon_floor

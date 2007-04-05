@@ -1994,7 +1994,7 @@ end
 arch shallow_sea
 x 9
 y 8
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_1
 x 9
@@ -10205,7 +10205,7 @@ end
 arch shallow_sea
 x 45
 y 29
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_1
 x 45

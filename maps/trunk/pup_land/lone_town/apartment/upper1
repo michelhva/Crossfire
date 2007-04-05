@@ -1829,21 +1829,21 @@ x 9
 y 17
 end
 arch small_stones
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 9
 y 18
 end
 arch cobblestones2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 9
 y 19
 end
 arch grass
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 x 9

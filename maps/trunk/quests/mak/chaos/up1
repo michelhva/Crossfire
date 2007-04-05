@@ -3036,7 +3036,7 @@ end
 arch pillars
 x 13
 y 15
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 13
@@ -3061,7 +3061,7 @@ end
 arch pillars
 x 13
 y 20
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 13
@@ -4091,7 +4091,7 @@ end
 arch pillars
 x 18
 y 15
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 18
@@ -4116,7 +4116,7 @@ end
 arch pillars
 x 18
 y 20
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 18

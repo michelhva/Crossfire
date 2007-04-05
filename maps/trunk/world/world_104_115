@@ -12947,7 +12947,7 @@ end
 arch cityport_a
 x 46
 y 29
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 46

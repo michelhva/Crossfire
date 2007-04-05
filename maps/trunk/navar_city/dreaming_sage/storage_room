@@ -362,7 +362,7 @@ end
 arch check_inv
 slaying dreaming_sage
 connected 2
-no_pass 1
+move_block all
 x 3
 y 10
 end

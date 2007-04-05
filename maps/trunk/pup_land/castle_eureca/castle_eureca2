@@ -2231,7 +2231,7 @@ arch cwall_2_1_1
 face cwall_w_0.119
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor

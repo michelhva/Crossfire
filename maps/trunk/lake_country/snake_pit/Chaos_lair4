@@ -1328,7 +1328,7 @@ end
 arch large_stones
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 8
@@ -1506,7 +1506,7 @@ end
 arch large_stones
 x 9
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -1663,7 +1663,7 @@ end
 arch large_stones
 x 10
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 10

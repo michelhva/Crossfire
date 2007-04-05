@@ -1392,7 +1392,7 @@ arch check_floor
 hp 1
 x 18
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 18
@@ -2754,7 +2754,7 @@ arch check_floor
 hp 1
 x 37
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 37

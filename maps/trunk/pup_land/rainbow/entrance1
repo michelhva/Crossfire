@@ -191,7 +191,7 @@ end
 arch sea
 x 1
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -317,7 +317,7 @@ end
 arch sea
 x 2
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 2
@@ -435,7 +435,7 @@ end
 arch sea
 x 3
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 3

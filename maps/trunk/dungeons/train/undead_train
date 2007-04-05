@@ -1821,7 +1821,7 @@ arch cwall_0
 name lich dust
 face pix_dust.111
 blocksview 0
-no_pass 0
+move_block 0
 x 9
 y 12
 end
@@ -2063,7 +2063,7 @@ arch cwall_0
 name Spectre's ectoplasm
 face ectoplasm.111
 blocksview 0
-no_pass 0
+move_block 0
 x 10
 y 12
 end
@@ -2297,7 +2297,7 @@ arch cwall_0
 name Skull's tooth
 face tooth.111
 blocksview 0
-no_pass 0
+move_block 0
 x 11
 y 12
 end

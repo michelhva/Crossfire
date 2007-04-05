@@ -626,7 +626,7 @@ end
 arch dungeon_magic
 x 2
 y 36
-no_pass 1
+move_block all
 end
 arch grass
 x 2
@@ -821,7 +821,7 @@ end
 arch dungeon_magic
 x 3
 y 36
-no_pass 1
+move_block all
 end
 arch footpath_2_1_1
 name dirtpath
@@ -1024,7 +1024,7 @@ end
 arch dungeon_magic
 x 4
 y 36
-no_pass 1
+move_block all
 end
 arch footpath_2_1_1
 name dirtpath
@@ -1269,7 +1269,7 @@ end
 arch dungeon_magic
 x 5
 y 36
-no_pass 1
+move_block all
 end
 arch grass
 x 5
@@ -2289,7 +2289,7 @@ arch check_inv
 slaying ltaprtmnt
 x 10
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2608,7 +2608,7 @@ end
 arch woodfloor
 x 11
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2619,7 +2619,7 @@ end
 arch woodfloor2
 x 11
 y 19
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2630,7 +2630,7 @@ end
 arch woodfloor
 x 11
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

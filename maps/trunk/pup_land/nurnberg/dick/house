@@ -446,7 +446,7 @@ end
 arch door_look_1
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4

@@ -2797,7 +2797,7 @@ end
 arch pillars
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch permanent_lava
 x 14
@@ -3148,7 +3148,7 @@ end
 arch pillars
 x 16
 y 9
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 16

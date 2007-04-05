@@ -2165,7 +2165,7 @@ y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
+move_block 0
 blocksview 0
 x 17
 y 4
@@ -2303,7 +2303,7 @@ y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
+move_block 0
 blocksview 0
 x 18
 y 4
@@ -2433,7 +2433,7 @@ y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
+move_block 0
 blocksview 0
 x 19
 y 4

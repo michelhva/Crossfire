@@ -22,7 +22,7 @@ connected 3
 end
 arch check_inv
 slaying OWNER_MARKER
-no_pass 1
+move_block all
 end
 arch teleporter
 hp 4
@@ -504,7 +504,7 @@ y 12
 end
 arch check_inv
 slaying OWNER_MARKER
-no_pass 1
+move_block all
 x 3
 y 12
 end
@@ -1362,7 +1362,7 @@ y 17
 end
 arch grate_open_2
 connected 31
-no_pass 1
+move_block all
 x 10
 end
 arch t_lboulder

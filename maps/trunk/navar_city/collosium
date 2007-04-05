@@ -5010,7 +5010,7 @@ end
 arch grassmedium
 x 34
 y 16
-no_pass 1
+move_block all
 end
 arch food
 x 34
@@ -5023,7 +5023,7 @@ end
 arch food
 x 34
 y 17
-no_pass 1
+move_block all
 end
 arch grassmedium
 x 34
@@ -5032,7 +5032,7 @@ end
 arch booze
 x 34
 y 18
-no_pass 1
+move_block all
 end
 arch grassmedium
 x 34

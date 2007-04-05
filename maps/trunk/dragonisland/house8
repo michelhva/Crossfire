@@ -264,7 +264,7 @@ end
 arch door_look_1
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 3
@@ -299,7 +299,7 @@ end
 arch door_look_2
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 4
@@ -472,7 +472,7 @@ end
 arch door_look_1
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 6

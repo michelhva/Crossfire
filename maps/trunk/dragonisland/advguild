@@ -2500,7 +2500,7 @@ end
 arch door_look_1
 x 12
 y 17
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 12
@@ -3766,7 +3766,7 @@ arch door_look_2
 name museum door
 x 19
 y 9
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19
@@ -3808,7 +3808,7 @@ arch door_look_2
 name museum door
 x 19
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19
@@ -5035,7 +5035,7 @@ arch door_look_2
 name library door
 x 25
 y 22
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 25

@@ -746,7 +746,7 @@ end
 arch pstone_2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest
@@ -911,7 +911,7 @@ end
 arch pstone_2
 x 5
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest
@@ -1082,7 +1082,7 @@ end
 arch pstone_2
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying WyvernNest

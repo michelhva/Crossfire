@@ -654,7 +654,7 @@ end
 arch permanent_lava
 x 3
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -664,7 +664,7 @@ end
 arch permanent_lava
 x 3
 y 6
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -674,7 +674,7 @@ end
 arch permanent_lava
 x 3
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -684,7 +684,7 @@ end
 arch permanent_lava
 x 3
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -694,7 +694,7 @@ end
 arch permanent_lava
 x 3
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -704,7 +704,7 @@ end
 arch permanent_lava
 x 3
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -714,7 +714,7 @@ end
 arch permanent_lava
 x 3
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -724,7 +724,7 @@ end
 arch permanent_lava
 x 3
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -734,7 +734,7 @@ end
 arch permanent_lava
 x 3
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -744,7 +744,7 @@ end
 arch permanent_lava
 x 3
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -754,7 +754,7 @@ end
 arch permanent_lava
 x 3
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -764,7 +764,7 @@ end
 arch permanent_lava
 x 3
 y 16
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -774,7 +774,7 @@ end
 arch permanent_lava
 x 3
 y 17
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -784,7 +784,7 @@ end
 arch permanent_lava
 x 3
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -879,7 +879,7 @@ end
 arch permanent_lava
 x 4
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1075,7 +1075,7 @@ end
 arch permanent_lava
 x 4
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1170,7 +1170,7 @@ end
 arch permanent_lava
 x 5
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1295,7 +1295,7 @@ end
 arch permanent_lava
 x 5
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1305,7 +1305,7 @@ end
 arch permanent_lava
 x 5
 y 16
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1315,7 +1315,7 @@ end
 arch permanent_lava
 x 5
 y 17
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1325,13 +1325,13 @@ end
 arch permanent_lava
 x 5
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch permanent_lava
 x 5
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1402,7 +1402,7 @@ end
 arch permanent_lava
 x 6
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1412,7 +1412,7 @@ end
 arch permanent_lava
 x 6
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1422,7 +1422,7 @@ end
 arch permanent_lava
 x 6
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1436,7 +1436,7 @@ end
 arch permanent_lava
 x 6
 y 6
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1446,7 +1446,7 @@ end
 arch permanent_lava
 x 6
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -1554,7 +1554,7 @@ end
 arch permanent_lava
 x 6
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -1591,7 +1591,7 @@ end
 arch permanent_lava
 x 6
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1662,7 +1662,7 @@ end
 arch permanent_lava
 x 7
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1703,7 +1703,7 @@ end
 arch permanent_lava
 x 7
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1713,7 +1713,7 @@ end
 arch permanent_lava
 x 7
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -1833,7 +1833,7 @@ end
 arch permanent_lava
 x 7
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1843,7 +1843,7 @@ end
 arch permanent_lava
 x 7
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -1876,7 +1876,7 @@ end
 arch permanent_lava
 x 7
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1947,7 +1947,7 @@ end
 arch permanent_lava
 x 8
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1997,7 +1997,7 @@ end
 arch permanent_lava
 x 8
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2007,7 +2007,7 @@ end
 arch permanent_lava
 x 8
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2017,7 +2017,7 @@ end
 arch permanent_lava
 x 8
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2027,7 +2027,7 @@ end
 arch permanent_lava
 x 8
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2037,7 +2037,7 @@ end
 arch permanent_lava
 x 8
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2047,7 +2047,7 @@ end
 arch permanent_lava
 x 8
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2057,7 +2057,7 @@ end
 arch permanent_lava
 x 8
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -2099,7 +2099,7 @@ end
 arch permanent_lava
 x 8
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2170,7 +2170,7 @@ end
 arch permanent_lava
 x 9
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2315,7 +2315,7 @@ end
 arch permanent_lava
 x 9
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2386,7 +2386,7 @@ end
 arch permanent_lava
 x 10
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2511,7 +2511,7 @@ end
 arch permanent_lava
 x 10
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2594,7 +2594,7 @@ end
 arch permanent_lava
 x 11
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2729,7 +2729,7 @@ end
 arch permanent_lava
 x 11
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2808,7 +2808,7 @@ end
 arch permanent_lava
 x 12
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2953,7 +2953,7 @@ end
 arch permanent_lava
 x 12
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2963,7 +2963,7 @@ end
 arch permanent_lava
 x 12
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3034,7 +3034,7 @@ end
 arch permanent_lava
 x 13
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3188,7 +3188,7 @@ end
 arch permanent_lava
 x 13
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3198,7 +3198,7 @@ end
 arch permanent_lava
 x 13
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3273,7 +3273,7 @@ end
 arch permanent_lava
 x 14
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3436,7 +3436,7 @@ end
 arch permanent_lava
 x 14
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3507,7 +3507,7 @@ end
 arch permanent_lava
 x 15
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3670,7 +3670,7 @@ end
 arch permanent_lava
 x 15
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3741,7 +3741,7 @@ end
 arch permanent_lava
 x 16
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3751,7 +3751,7 @@ end
 arch permanent_lava
 x 16
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3896,7 +3896,7 @@ end
 arch permanent_lava
 x 16
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3906,7 +3906,7 @@ end
 arch permanent_lava
 x 16
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -3985,7 +3985,7 @@ end
 arch permanent_lava
 x 17
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4031,7 +4031,7 @@ end
 arch permanent_lava
 x 17
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4041,7 +4041,7 @@ end
 arch permanent_lava
 x 17
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4051,7 +4051,7 @@ end
 arch permanent_lava
 x 17
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4061,7 +4061,7 @@ end
 arch permanent_lava
 x 17
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4071,7 +4071,7 @@ end
 arch permanent_lava
 x 17
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4126,7 +4126,7 @@ end
 arch permanent_lava
 x 17
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4136,7 +4136,7 @@ end
 arch permanent_lava
 x 17
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4146,7 +4146,7 @@ end
 arch permanent_lava
 x 17
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4232,7 +4232,7 @@ end
 arch permanent_lava
 x 18
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4278,7 +4278,7 @@ end
 arch permanent_lava
 x 18
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4327,7 +4327,7 @@ end
 arch permanent_lava
 x 18
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4378,7 +4378,7 @@ end
 arch permanent_lava
 x 18
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4388,7 +4388,7 @@ end
 arch permanent_lava
 x 18
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4398,7 +4398,7 @@ end
 arch permanent_lava
 x 18
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4408,7 +4408,7 @@ end
 arch permanent_lava
 x 18
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4418,7 +4418,7 @@ end
 arch permanent_lava
 x 18
 y 22
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4499,7 +4499,7 @@ arch check_floor
 slaying tw_spectator
 x 19
 y 3
-no_pass 1
+move_block all
 end
 arch teleporter
 hp 19
@@ -4510,7 +4510,7 @@ end
 arch permanent_lava
 x 19
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4556,7 +4556,7 @@ end
 arch permanent_lava
 x 19
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4606,7 +4606,7 @@ end
 arch permanent_lava
 x 19
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4763,7 +4763,7 @@ end
 arch permanent_lava
 x 19
 y 22
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4854,7 +4854,7 @@ end
 arch permanent_lava
 x 20
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4900,7 +4900,7 @@ end
 arch permanent_lava
 x 20
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -4949,7 +4949,7 @@ end
 arch permanent_lava
 x 20
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5000,7 +5000,7 @@ end
 arch permanent_lava
 x 20
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5010,7 +5010,7 @@ end
 arch permanent_lava
 x 20
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5020,7 +5020,7 @@ end
 arch permanent_lava
 x 20
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5030,7 +5030,7 @@ end
 arch permanent_lava
 x 20
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5040,7 +5040,7 @@ end
 arch permanent_lava
 x 20
 y 22
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5111,7 +5111,7 @@ end
 arch permanent_lava
 x 21
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5157,7 +5157,7 @@ end
 arch permanent_lava
 x 21
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5167,7 +5167,7 @@ end
 arch permanent_lava
 x 21
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5177,7 +5177,7 @@ end
 arch permanent_lava
 x 21
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5187,7 +5187,7 @@ end
 arch permanent_lava
 x 21
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5197,7 +5197,7 @@ end
 arch permanent_lava
 x 21
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5252,7 +5252,7 @@ end
 arch permanent_lava
 x 21
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5262,7 +5262,7 @@ end
 arch permanent_lava
 x 21
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5272,7 +5272,7 @@ end
 arch permanent_lava
 x 21
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5343,7 +5343,7 @@ end
 arch permanent_lava
 x 22
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5353,7 +5353,7 @@ end
 arch permanent_lava
 x 22
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5498,7 +5498,7 @@ end
 arch permanent_lava
 x 22
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5508,7 +5508,7 @@ end
 arch permanent_lava
 x 22
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5579,7 +5579,7 @@ end
 arch permanent_lava
 x 23
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5742,7 +5742,7 @@ end
 arch permanent_lava
 x 23
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5813,7 +5813,7 @@ end
 arch permanent_lava
 x 24
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -5976,7 +5976,7 @@ end
 arch permanent_lava
 x 24
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6047,7 +6047,7 @@ end
 arch permanent_lava
 x 25
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6201,7 +6201,7 @@ end
 arch permanent_lava
 x 25
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6211,7 +6211,7 @@ end
 arch permanent_lava
 x 25
 y 21
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6286,7 +6286,7 @@ end
 arch permanent_lava
 x 26
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6431,7 +6431,7 @@ end
 arch permanent_lava
 x 26
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6441,7 +6441,7 @@ end
 arch permanent_lava
 x 26
 y 20
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6512,7 +6512,7 @@ end
 arch permanent_lava
 x 27
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6647,7 +6647,7 @@ end
 arch permanent_lava
 x 27
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6726,7 +6726,7 @@ end
 arch permanent_lava
 x 28
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6851,7 +6851,7 @@ end
 arch permanent_lava
 x 28
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -6930,7 +6930,7 @@ end
 arch permanent_lava
 x 29
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7075,7 +7075,7 @@ end
 arch permanent_lava
 x 29
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7158,7 +7158,7 @@ end
 arch permanent_lava
 x 30
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7208,7 +7208,7 @@ end
 arch permanent_lava
 x 30
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7218,7 +7218,7 @@ end
 arch permanent_lava
 x 30
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7228,7 +7228,7 @@ end
 arch permanent_lava
 x 30
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7238,7 +7238,7 @@ end
 arch permanent_lava
 x 30
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7248,7 +7248,7 @@ end
 arch permanent_lava
 x 30
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7258,7 +7258,7 @@ end
 arch permanent_lava
 x 30
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7268,7 +7268,7 @@ end
 arch permanent_lava
 x 30
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -7310,7 +7310,7 @@ end
 arch permanent_lava
 x 30
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7381,7 +7381,7 @@ end
 arch permanent_lava
 x 31
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7422,7 +7422,7 @@ end
 arch permanent_lava
 x 31
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7432,7 +7432,7 @@ end
 arch permanent_lava
 x 31
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -7553,7 +7553,7 @@ end
 arch permanent_lava
 x 31
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7563,7 +7563,7 @@ end
 arch permanent_lava
 x 31
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -7596,7 +7596,7 @@ end
 arch permanent_lava
 x 31
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7667,7 +7667,7 @@ end
 arch permanent_lava
 x 32
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7677,7 +7677,7 @@ end
 arch permanent_lava
 x 32
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7687,7 +7687,7 @@ end
 arch permanent_lava
 x 32
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7701,7 +7701,7 @@ end
 arch permanent_lava
 x 32
 y 6
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7711,7 +7711,7 @@ end
 arch permanent_lava
 x 32
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -7819,7 +7819,7 @@ end
 arch permanent_lava
 x 32
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -7856,7 +7856,7 @@ end
 arch permanent_lava
 x 32
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -7943,7 +7943,7 @@ end
 arch permanent_lava
 x 33
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8068,7 +8068,7 @@ end
 arch permanent_lava
 x 33
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch battleground
@@ -8087,7 +8087,7 @@ end
 arch permanent_lava
 x 33
 y 16
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8097,7 +8097,7 @@ end
 arch permanent_lava
 x 33
 y 17
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8107,13 +8107,13 @@ end
 arch permanent_lava
 x 33
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch permanent_lava
 x 33
 y 19
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8200,7 +8200,7 @@ end
 arch permanent_lava
 x 34
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8396,7 +8396,7 @@ end
 arch permanent_lava
 x 34
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8491,7 +8491,7 @@ end
 arch permanent_lava
 x 35
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8501,7 +8501,7 @@ end
 arch permanent_lava
 x 35
 y 6
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8511,7 +8511,7 @@ end
 arch permanent_lava
 x 35
 y 7
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8521,7 +8521,7 @@ end
 arch permanent_lava
 x 35
 y 8
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8531,7 +8531,7 @@ end
 arch permanent_lava
 x 35
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8541,7 +8541,7 @@ end
 arch permanent_lava
 x 35
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8551,7 +8551,7 @@ end
 arch permanent_lava
 x 35
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8561,7 +8561,7 @@ end
 arch permanent_lava
 x 35
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8571,7 +8571,7 @@ end
 arch permanent_lava
 x 35
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8581,7 +8581,7 @@ end
 arch permanent_lava
 x 35
 y 14
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8591,7 +8591,7 @@ end
 arch permanent_lava
 x 35
 y 15
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8601,7 +8601,7 @@ end
 arch permanent_lava
 x 35
 y 16
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8611,7 +8611,7 @@ end
 arch permanent_lava
 x 35
 y 17
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -8621,7 +8621,7 @@ end
 arch permanent_lava
 x 35
 y 18
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic

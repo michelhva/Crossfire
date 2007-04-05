@@ -1526,7 +1526,7 @@ x 8
 y 9
 end
 arch roughwall_2_1_1
-no_pass 0
+move_block 0
 x 8
 y 9
 end
@@ -3096,7 +3096,7 @@ x 16
 y 15
 end
 arch grass
-no_pass 1
+move_block all
 x 16
 y 16
 end
@@ -3928,7 +3928,7 @@ x 20
 y 21
 end
 arch rough_wall_2_1_1
-no_pass 0
+move_block 0
 x 20
 y 21
 end

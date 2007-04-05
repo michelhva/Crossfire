@@ -625,7 +625,7 @@ end
 arch rock
 x 8
 y 1
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch flagstone
@@ -815,7 +815,7 @@ end
 arch rock
 x 10
 y 1
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch flagstone

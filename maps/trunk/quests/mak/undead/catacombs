@@ -222,7 +222,7 @@ end
 arch gravestone
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 1
@@ -1025,7 +1025,7 @@ arch gravestone
 x 5
 y 4
 no_pick 1
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 5
@@ -1232,7 +1232,7 @@ end
 arch gravestone
 x 6
 y 4
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -1875,7 +1875,7 @@ end
 arch pillars
 x 9
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1888,7 +1888,7 @@ end
 arch pillars
 x 9
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1905,7 +1905,7 @@ end
 arch pillars
 x 9
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -2263,7 +2263,7 @@ end
 arch pillars
 x 11
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2276,7 +2276,7 @@ end
 arch pillars
 x 11
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2289,7 +2289,7 @@ end
 arch pillars
 x 11
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11
@@ -2750,7 +2750,7 @@ end
 arch gravestone2
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -2959,7 +2959,7 @@ end
 arch gravestone
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 15
@@ -3380,7 +3380,7 @@ end
 arch gravestone
 x 17
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 17
@@ -3771,7 +3771,7 @@ end
 arch gravestone
 x 19
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 19

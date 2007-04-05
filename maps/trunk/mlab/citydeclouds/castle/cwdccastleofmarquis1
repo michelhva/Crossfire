@@ -13757,7 +13757,7 @@ end
 arch door_2
 x 32
 y 58
-no_pass 0
+move_block 0
 end
 arch blocked
 x 32
@@ -14186,7 +14186,7 @@ end
 arch door_2
 x 33
 y 58
-no_pass 0
+move_block 0
 end
 arch blocked
 x 33
@@ -18322,7 +18322,7 @@ end
 arch dungeon_magic
 x 43
 y 7
-no_pass 1
+move_block all
 end
 arch woodfloor2
 name woodfloor
@@ -18333,7 +18333,7 @@ end
 arch dungeon_magic
 x 43
 y 8
-no_pass 1
+move_block all
 end
 arch woodfloor2
 name woodfloor
@@ -18344,7 +18344,7 @@ end
 arch dungeon_magic
 x 43
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor2
 name woodfloor
@@ -20669,7 +20669,7 @@ end
 arch awall_3_1
 x 48
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -21097,7 +21097,7 @@ end
 arch awall_3_1
 x 49
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -21510,7 +21510,7 @@ end
 arch awall_3_1
 x 50
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -21871,7 +21871,7 @@ end
 arch awall_3_1
 x 51
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -22242,7 +22242,7 @@ end
 arch awall_3_1
 x 52
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -22647,7 +22647,7 @@ end
 arch awall_3_1
 x 53
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -23045,7 +23045,7 @@ end
 arch awall_3_1
 x 54
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -23417,7 +23417,7 @@ end
 arch awall_3_1
 x 55
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf
@@ -23807,7 +23807,7 @@ end
 arch awall_3_1
 x 56
 y 6
-no_pass 0
+move_block 0
 end
 arch bookshelf
 name wall shelf

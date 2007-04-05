@@ -601,7 +601,7 @@ end
 arch dungeon_magic
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch chair_1.2
 name ballroom chair
@@ -617,7 +617,7 @@ x 6
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch bookshelf

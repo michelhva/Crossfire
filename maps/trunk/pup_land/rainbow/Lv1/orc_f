@@ -530,7 +530,7 @@ end
 arch mine3
 x 4
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -922,7 +922,7 @@ end
 arch mine2
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1179,7 +1179,7 @@ end
 arch mine2
 x 11
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11

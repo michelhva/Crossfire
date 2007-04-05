@@ -1494,7 +1494,7 @@ arch sea
 x 6
 y 6
 elevation -905
-no_pass 0
+move_block 0
 end
 arch fishboat
 slaying world_123_123
@@ -1759,7 +1759,7 @@ arch sea
 x 7
 y 6
 elevation -355
-no_pass 0
+move_block 0
 end
 arch desert
 x 7
@@ -2802,7 +2802,7 @@ arch shallow_sea
 x 11
 y 11
 elevation -28
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -3052,7 +3052,7 @@ arch sea
 x 12
 y 11
 elevation -434
-no_pass 0
+move_block 0
 end
 arch sea
 x 12

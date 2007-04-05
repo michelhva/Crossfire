@@ -1677,7 +1677,7 @@ x 12
 end
 arch door_2
 x 12
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12
@@ -1777,7 +1777,7 @@ end
 arch door_2
 x 12
 y 22
-no_pass 0
+move_block 0
 end
 arch blocked
 x 12
@@ -1794,7 +1794,7 @@ x 13
 end
 arch door_2
 x 13
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -1894,7 +1894,7 @@ end
 arch door_2
 x 13
 y 22
-no_pass 0
+move_block 0
 end
 arch blocked
 x 13

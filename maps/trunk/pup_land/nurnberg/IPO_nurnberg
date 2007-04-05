@@ -104,7 +104,7 @@ x 1
 y 3
 end
 arch longtable_1_4
-no_pass 1
+move_block all
 x 1
 y 3
 end
@@ -174,7 +174,7 @@ x 2
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
+move_block all
 x 2
 y 3
 end
@@ -249,7 +249,7 @@ x 3
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
+move_block all
 x 3
 y 3
 end
@@ -299,7 +299,7 @@ x 4
 y 1
 end
 arch longtable_1_1
-no_pass 1
+move_block all
 x 4
 y 1
 end
@@ -312,7 +312,7 @@ x 4
 y 2
 end
 arch longtable_2_1_1
-no_pass 1
+move_block all
 x 4
 y 2
 end
@@ -325,7 +325,7 @@ x 4
 y 3
 end
 arch longtable_2_2_4
-no_pass 1
+move_block all
 x 4
 y 3
 end

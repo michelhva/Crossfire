@@ -638,7 +638,7 @@ x 8
 end
 arch sea
 x 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -997,12 +997,12 @@ end
 arch sea
 x 11
 y 11
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -1082,12 +1082,12 @@ end
 arch sea
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 12

@@ -3235,7 +3235,7 @@ end
 arch door_1
 x 15
 y 51
-no_pass 0
+move_block 0
 end
 arch istone
 x 15
@@ -4724,7 +4724,7 @@ end
 arch door_2
 x 28
 y 38
-no_pass 0
+move_block 0
 end
 arch istone
 x 28
@@ -5189,7 +5189,7 @@ slaying prisoner
 x 31
 y 32
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5886,7 +5886,7 @@ slaying prisoner
 x 35
 y 32
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 35

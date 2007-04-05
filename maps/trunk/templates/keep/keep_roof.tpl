@@ -339,7 +339,7 @@ x 3
 y 2
 end
 arch biglake_2_2_2
-no_pass 0
+move_block 0
 x 3
 y 2
 end
@@ -348,7 +348,7 @@ x 3
 y 3
 end
 arch biglake_2_2_1
-no_pass 0
+move_block 0
 x 3
 y 3
 end
@@ -431,17 +431,17 @@ x 4
 y 1
 end
 arch biglake_2_2_2
-no_pass 0
+move_block 0
 x 4
 y 1
 end
 arch biglake_4
-no_pass 0
+move_block 0
 x 4
 y 2
 end
 arch biglake_3_1
-no_pass 0
+move_block 0
 x 4
 y 3
 end
@@ -560,12 +560,12 @@ x 5
 y 1
 end
 arch biglake_3_3
-no_pass 0
+move_block 0
 x 5
 y 1
 end
 arch biglake_4
-no_pass 0
+move_block 0
 x 5
 y 2
 end
@@ -694,12 +694,12 @@ x 6
 y 1
 end
 arch biglake_4
-no_pass 0
+move_block 0
 x 6
 y 2
 end
 arch biglake_3_1
-no_pass 0
+move_block 0
 x 6
 y 3
 end
@@ -808,12 +808,12 @@ x 7
 y 1
 end
 arch biglake_2_2_3
-no_pass 0
+move_block 0
 x 7
 y 1
 end
 arch biglake_4
-no_pass 0
+move_block 0
 x 7
 y 2
 end
@@ -1439,7 +1439,7 @@ y 6
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 12
 y 6
 end
@@ -1473,7 +1473,7 @@ y 12
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 12
 y 12
 end
@@ -1537,7 +1537,7 @@ y 6
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 13
 y 6
 end
@@ -1579,7 +1579,7 @@ y 12
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 13
 y 12
 end
@@ -1647,7 +1647,7 @@ y 6
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 14
 y 6
 end
@@ -1693,7 +1693,7 @@ y 12
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 14
 y 12
 end
@@ -1761,7 +1761,7 @@ y 6
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 15
 y 6
 end
@@ -1807,7 +1807,7 @@ y 12
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 15
 y 12
 end
@@ -1875,7 +1875,7 @@ y 6
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 16
 y 6
 end
@@ -1925,7 +1925,7 @@ y 12
 end
 arch hedge_2_1_2
 blocksview 0
-no_pass 1
+move_block all
 x 16
 y 12
 end
@@ -1989,7 +1989,7 @@ y 6
 end
 arch hedge_2_2_3
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 6
 end
@@ -1999,7 +1999,7 @@ y 7
 end
 arch hedge_2_1_1
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 7
 end
@@ -2009,7 +2009,7 @@ y 8
 end
 arch hedge_2_1_1
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 8
 end
@@ -2019,7 +2019,7 @@ y 9
 end
 arch hedge_2_1_1
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 9
 end
@@ -2029,7 +2029,7 @@ y 10
 end
 arch hedge_2_1_1
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 10
 end
@@ -2039,7 +2039,7 @@ y 11
 end
 arch hedge_2_1_1
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 11
 end
@@ -2049,7 +2049,7 @@ y 12
 end
 arch hedge_2_2_4
 blocksview 0
-no_pass 1
+move_block all
 x 17
 y 12
 end

@@ -561,7 +561,7 @@ arch blocked
 name darkness
 x 2
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch invis_exit
@@ -951,7 +951,7 @@ endmsg
 x 2
 y 38
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -1026,7 +1026,7 @@ endmsg
 x 2
 y 43
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -1434,7 +1434,7 @@ dam 0
 x 3
 y 36
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 random_movement 0
@@ -1952,7 +1952,7 @@ endmsg
 x 4
 y 39
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -2469,7 +2469,7 @@ ac 0
 x 5
 y 46
 alive 0
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -2727,7 +2727,7 @@ endmsg
 x 6
 y 18
 alive 0
-no_pass 1
+move_block all
 monster 0
 friendly 1
 stand_still 1
@@ -2982,7 +2982,7 @@ endmsg
 x 6
 y 43
 alive 0
-no_pass 1
+move_block all
 is_animated 0
 monster 0
 friendly 1
@@ -3314,7 +3314,7 @@ endmsg
 x 7
 y 27
 alive 0
-no_pass 1
+move_block all
 monster 0
 friendly 1
 stand_still 1
@@ -3648,7 +3648,7 @@ endmsg
 x 8
 y 9
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -3943,7 +3943,7 @@ endmsg
 x 8
 y 38
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -4689,7 +4689,7 @@ ac 0
 x 10
 y 12
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 10
@@ -4802,7 +4802,7 @@ ac 0
 x 10
 y 21
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 10
@@ -4915,7 +4915,7 @@ ac 0
 x 10
 y 30
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 10
@@ -5040,7 +5040,7 @@ ac 0
 x 10
 y 40
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 10
@@ -5271,7 +5271,7 @@ endmsg
 x 11
 y 9
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5354,7 +5354,7 @@ endmsg
 x 11
 y 17
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5446,7 +5446,7 @@ endmsg
 x 11
 y 26
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5553,7 +5553,7 @@ endmsg
 x 11
 y 37
 alive 0
-no_pass 1
+move_block all
 end
 arch marble
 x 11
@@ -5627,7 +5627,7 @@ endmsg
 x 11
 y 43
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5647,7 +5647,7 @@ endmsg
 x 11
 y 44
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5667,7 +5667,7 @@ endmsg
 x 11
 y 45
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5687,7 +5687,7 @@ endmsg
 x 11
 y 46
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -5707,7 +5707,7 @@ endmsg
 x 11
 y 47
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -6595,7 +6595,7 @@ endmsg
 x 13
 y 39
 alive 0
-no_pass 1
+move_block all
 monster 0
 end
 arch dungeon_magic
@@ -6625,7 +6625,7 @@ end
 arch pillars
 x 13
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -6662,7 +6662,7 @@ end
 arch pillars
 x 13
 y 46
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -7287,7 +7287,7 @@ ac 0
 x 15
 y 8
 alive 0
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 15
@@ -7561,7 +7561,7 @@ hp 5000
 x 15
 y 39
 alive 0
-no_pass 1
+move_block all
 friendly 1
 unaggressive 0
 stand_still 1
@@ -8519,7 +8519,7 @@ endmsg
 x 17
 y 39
 alive 0
-no_pass 1
+move_block all
 monster 0
 end
 arch dungeon_magic
@@ -8549,7 +8549,7 @@ end
 arch pillars
 x 17
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8586,7 +8586,7 @@ end
 arch pillars
 x 17
 y 46
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8749,7 +8749,7 @@ endmsg
 x 18
 y 7
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -9210,7 +9210,7 @@ endmsg
 x 19
 y 9
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9334,7 +9334,7 @@ endmsg
 x 19
 y 21
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9499,7 +9499,7 @@ endmsg
 x 19
 y 37
 alive 0
-no_pass 1
+move_block all
 end
 arch marble
 x 19
@@ -9573,7 +9573,7 @@ endmsg
 x 19
 y 43
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9593,7 +9593,7 @@ endmsg
 x 19
 y 44
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9613,7 +9613,7 @@ endmsg
 x 19
 y 45
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9633,7 +9633,7 @@ endmsg
 x 19
 y 46
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9653,7 +9653,7 @@ endmsg
 x 19
 y 47
 alive 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -9800,7 +9800,7 @@ ac 0
 x 20
 y 11
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 20
@@ -9889,7 +9889,7 @@ ac 0
 x 20
 y 18
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 20
@@ -10002,7 +10002,7 @@ ac 0
 x 20
 y 27
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 20
@@ -10164,7 +10164,7 @@ ac 0
 x 20
 y 40
 alive 0
-no_pass 0
+move_block 0
 end
 arch marble
 x 20
@@ -11119,7 +11119,7 @@ endmsg
 x 23
 y 13
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -11154,7 +11154,7 @@ endmsg
 x 23
 y 15
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -11248,7 +11248,7 @@ endmsg
 x 23
 y 24
 alive 0
-no_pass 1
+move_block all
 friendly 1
 stand_still 1
 end
@@ -13611,7 +13611,7 @@ end
 arch table_2
 x 28
 y 40
-no_pass 1
+move_block all
 end
 arch marble
 x 28

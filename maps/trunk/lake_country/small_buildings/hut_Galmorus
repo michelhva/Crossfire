@@ -255,7 +255,7 @@ arch wwall_2_1_1
 name strange wall
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 2
@@ -447,7 +447,7 @@ end
 arch door_look_1
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 3
@@ -1122,7 +1122,7 @@ end
 arch door_look_2
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -1451,7 +1451,7 @@ end
 arch door_look_2
 x 10
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1460,7 +1460,7 @@ end
 arch door_look_2
 x 10
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1591,7 +1591,7 @@ end
 arch door_look_2
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1792,7 +1792,7 @@ arch wwall_2_1_2
 name illusionary wall
 x 12
 y 15
-no_pass 0
+move_block 0
 end
 arch woods
 x 12
@@ -1863,7 +1863,7 @@ end
 arch door_look_2
 x 13
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 13
@@ -1920,7 +1920,7 @@ end
 arch door_look_2
 x 13
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 13
@@ -2288,7 +2288,7 @@ end
 arch door_look_1
 x 16
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 16
@@ -2648,31 +2648,31 @@ y 23
 end
 arch woods
 x 18
-no_pass 1
+move_block all
 no_magic 1
 end
 arch woods
 x 18
 y 1
-no_pass 1
+move_block all
 no_magic 1
 end
 arch woods
 x 18
 y 2
-no_pass 1
+move_block all
 no_magic 1
 end
 arch woods
 x 18
 y 3
-no_pass 1
+move_block all
 no_magic 1
 end
 arch woods
 x 18
 y 4
-no_pass 1
+move_block all
 no_magic 1
 end
 arch woods

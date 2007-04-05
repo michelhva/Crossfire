@@ -10,20 +10,20 @@ height 6
 end
 arch tree4
 blocksview 1
-no_pass 1
+move_block all
 end
 arch tree3
 blocksview 1
-no_pass 1
+move_block all
 x 1
 end
 arch tree5
 blocksview 1
-no_pass 1
+move_block all
 x 2
 end
 arch fernsdense
 blocksview 1
-no_pass 1
+move_block all
 x 4
 end

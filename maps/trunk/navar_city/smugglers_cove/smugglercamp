@@ -67,7 +67,7 @@ y 9
 end
 arch tree3
 y 9
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -170,7 +170,7 @@ end
 arch tree3
 x 1
 y 7
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -281,7 +281,7 @@ end
 arch tree3
 x 2
 y 5
-no_pass 1
+move_block all
 blocksview 1
 end
 arch hills
@@ -291,7 +291,7 @@ end
 arch tree3
 x 2
 y 6
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -301,7 +301,7 @@ end
 arch tree3
 x 2
 y 7
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -319,7 +319,7 @@ end
 arch tree3
 x 2
 y 10
-no_pass 1
+move_block all
 blocksview 1
 end
 arch treed_hills
@@ -422,7 +422,7 @@ end
 arch tree3
 x 3
 y 4
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -456,7 +456,7 @@ end
 arch tree3
 x 3
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -533,7 +533,7 @@ end
 arch tree3
 x 4
 y 4
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -567,7 +567,7 @@ end
 arch tree3
 x 4
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -636,7 +636,7 @@ end
 arch tree3
 x 5
 y 2
-no_pass 1
+move_block all
 blocksview 1
 end
 arch hills
@@ -737,7 +737,7 @@ end
 arch tree3
 x 6
 y 1
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -747,7 +747,7 @@ end
 arch tree3
 x 6
 y 2
-no_pass 1
+move_block all
 blocksview 1
 end
 arch hills
@@ -761,7 +761,7 @@ end
 arch tree3
 x 6
 y 4
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -783,7 +783,7 @@ end
 arch tree3
 x 6
 y 8
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -876,7 +876,7 @@ end
 arch tree3
 x 7
 y 1
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -890,7 +890,7 @@ end
 arch tree3
 x 7
 y 3
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -900,7 +900,7 @@ end
 arch tree3
 x 7
 y 4
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -922,7 +922,7 @@ end
 arch tree3
 x 7
 y 8
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -936,7 +936,7 @@ end
 arch tree3
 x 7
 y 10
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1000,7 +1000,7 @@ x 8
 end
 arch tree3
 x 8
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1018,7 +1018,7 @@ end
 arch tree3
 x 8
 y 3
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1040,7 +1040,7 @@ end
 arch tree3
 x 8
 y 7
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1050,7 +1050,7 @@ end
 arch tree3
 x 8
 y 8
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1068,7 +1068,7 @@ end
 arch tree3
 x 8
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1128,7 +1128,7 @@ x 9
 end
 arch tree3
 x 9
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1162,7 +1162,7 @@ end
 arch tree3
 x 9
 y 7
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1352,7 +1352,7 @@ end
 arch tree3
 x 10
 y 16
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1461,7 +1461,7 @@ end
 arch tree3
 x 11
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1529,7 +1529,7 @@ x 12
 end
 arch tree3
 x 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1539,7 +1539,7 @@ end
 arch tree3
 x 12
 y 1
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -1613,7 +1613,7 @@ end
 arch tree3
 x 12
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1693,7 +1693,7 @@ end
 arch tree3
 x 13
 y 3
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1775,7 +1775,7 @@ end
 arch tree3
 x 13
 y 18
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1820,7 +1820,7 @@ end
 arch tree3
 x 14
 y 3
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -1886,7 +1886,7 @@ end
 arch tree3
 x 14
 y 18
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -2003,7 +2003,7 @@ end
 arch tree3
 x 15
 y 17
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -2013,7 +2013,7 @@ end
 arch tree3
 x 15
 y 18
-no_pass 1
+move_block all
 blocksview 1
 end
 arch beach
@@ -2114,7 +2114,7 @@ end
 arch tree3
 x 16
 y 17
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -2243,7 +2243,7 @@ end
 arch tree3
 x 17
 y 15
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass

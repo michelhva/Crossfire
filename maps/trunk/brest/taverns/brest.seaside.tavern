@@ -476,7 +476,7 @@ x 4
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -557,7 +557,7 @@ x 4
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -950,7 +950,7 @@ x 7
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -983,7 +983,7 @@ x 7
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -1154,7 +1154,7 @@ x 9
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -1201,7 +1201,7 @@ x 9
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -1506,7 +1506,7 @@ x 12
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -1539,7 +1539,7 @@ x 12
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -1730,7 +1730,7 @@ x 14
 y 7
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -1755,7 +1755,7 @@ x 14
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -2118,7 +2118,7 @@ x 17
 y 7
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -2139,7 +2139,7 @@ x 17
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -2569,7 +2569,7 @@ x 21
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -2602,7 +2602,7 @@ x 21
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -2954,7 +2954,7 @@ x 24
 y 4
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dirtfloor
@@ -3000,7 +3000,7 @@ x 24
 y 10
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch dungeon_magic
@@ -3064,7 +3064,7 @@ arch longtable_1_1
 name prep area
 x 25
 y 4
-no_pass 1
+move_block all
 end
 arch booze
 x 25
@@ -3086,7 +3086,7 @@ arch longtable_2_1_1
 name prep area
 x 25
 y 5
-no_pass 1
+move_block all
 end
 arch coffee
 x 25
@@ -3108,7 +3108,7 @@ arch longtable_1_2
 name prep area
 x 25
 y 6
-no_pass 1
+move_block all
 end
 arch wine
 x 25
@@ -3139,7 +3139,7 @@ arch longtable_1_1
 name prep area
 x 25
 y 8
-no_pass 1
+move_block all
 end
 arch loaf
 x 25
@@ -3157,7 +3157,7 @@ arch longtable_2_1_1
 name prep area
 x 25
 y 9
-no_pass 1
+move_block all
 end
 arch haggis
 x 25
@@ -3175,7 +3175,7 @@ arch longtable_1_2
 name prep area
 x 25
 y 10
-no_pass 1
+move_block all
 end
 arch onion
 x 25

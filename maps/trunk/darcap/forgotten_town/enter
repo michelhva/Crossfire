@@ -593,7 +593,7 @@ end
 arch check_inv
 slaying ftap
 connected 159
-no_pass 1
+move_block all
 x 4
 end
 arch magic_mouth

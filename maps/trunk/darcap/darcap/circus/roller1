@@ -35,7 +35,7 @@ end
 arch door_look_2
 hp 0
 y 2
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying circus
@@ -52,7 +52,7 @@ end
 arch door_look_2
 hp 0
 y 3
-no_pass 0
+move_block 0
 end
 arch pstone_1
 y 4
@@ -121,7 +121,7 @@ end
 arch wagon
 x 1
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 1
@@ -194,7 +194,7 @@ end
 arch wagon
 x 2
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 2
@@ -241,7 +241,7 @@ end
 arch wagon
 x 3
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 3
@@ -332,7 +332,7 @@ end
 arch wagon
 x 4
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 4
@@ -435,7 +435,7 @@ end
 arch wagon
 x 5
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 5
@@ -727,7 +727,7 @@ end
 arch wagon
 x 11
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 11
@@ -774,7 +774,7 @@ end
 arch wagon
 x 12
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 12
@@ -821,7 +821,7 @@ end
 arch wagon
 x 13
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 13
@@ -868,7 +868,7 @@ end
 arch wagon
 x 14
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -931,7 +931,7 @@ end
 arch wagon
 x 15
 y 6
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 15

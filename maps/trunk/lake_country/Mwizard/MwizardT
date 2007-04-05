@@ -122,7 +122,7 @@ y 17
 end
 arch cwall_2_1_1
 name fake wall
-no_pass 0
+move_block 0
 y 17
 end
 arch flagstone
@@ -130,7 +130,7 @@ y 18
 end
 arch cwall_2_1_1
 name fake wall
-no_pass 0
+move_block 0
 y 18
 end
 arch flagstone
@@ -301,7 +301,7 @@ y 19
 end
 arch wall_2_2_1
 name fake wall
-no_pass 0
+move_block 0
 x 1
 y 19
 end
@@ -3389,7 +3389,7 @@ arch flagstone
 x 20
 end
 arch cwall_2_2_3
-no_pass 0
+move_block 0
 x 20
 end
 arch perm_magic_portal

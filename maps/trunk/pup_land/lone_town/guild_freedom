@@ -676,7 +676,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 x 6
 y 7
@@ -693,7 +693,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 x 6
 y 8
@@ -1121,7 +1121,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 x 11
 y 7
@@ -1138,7 +1138,7 @@ level 0
 material 0
 randomitems none
 alive 0
-no_pass 0
+move_block 0
 pass_thru 0
 x 11
 y 8
@@ -1252,7 +1252,7 @@ arch table_4
 material 0
 value 0
 no_pick 1
-no_pass 1
+move_block all
 x 12
 y 11
 end
@@ -1273,7 +1273,7 @@ arch table_4
 material 0
 value 0
 no_pick 1
-no_pass 1
+move_block all
 x 12
 y 12
 end
@@ -1285,7 +1285,7 @@ arch table_4
 material 0
 value 0
 no_pick 1
-no_pass 1
+move_block all
 x 12
 y 13
 end

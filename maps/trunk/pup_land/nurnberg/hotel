@@ -1238,7 +1238,7 @@ x 11
 y 8
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 11
 y 8
 end
@@ -1381,7 +1381,7 @@ y 6
 end
 arch biglake_nw
 name pool
-no_pass 0
+move_block 0
 x 12
 y 6
 end
@@ -1391,7 +1391,7 @@ y 7
 end
 arch biglake_sw
 name pool
-no_pass 0
+move_block 0
 x 12
 y 7
 end
@@ -1568,7 +1568,7 @@ y 6
 end
 arch biglake_ne
 name pool
-no_pass 0
+move_block 0
 x 13
 y 6
 end
@@ -1591,7 +1591,7 @@ y 7
 end
 arch biglake_center
 name pool
-no_pass 0
+move_block 0
 x 13
 y 7
 end
@@ -1601,7 +1601,7 @@ y 8
 end
 arch biglake_sw
 name pool
-no_pass 0
+move_block 0
 x 13
 y 8
 end
@@ -1760,7 +1760,7 @@ y 7
 end
 arch biglake_ne
 name pool
-no_pass 0
+move_block 0
 x 14
 y 7
 end
@@ -1770,7 +1770,7 @@ y 8
 end
 arch biglake_se
 name pool
-no_pass 0
+move_block 0
 x 14
 y 8
 end
@@ -1803,7 +1803,7 @@ x 14
 y 12
 end
 arch bench_1_1
-no_pass 1
+move_block all
 x 14
 y 12
 end
@@ -1812,7 +1812,7 @@ x 14
 y 13
 end
 arch bench_2_2_1
-no_pass 1
+move_block all
 x 14
 y 13
 end
@@ -1939,7 +1939,7 @@ x 15
 y 13
 end
 arch bench_2_1_2
-no_pass 1
+move_block all
 x 15
 y 13
 end
@@ -2073,7 +2073,7 @@ x 16
 y 13
 end
 arch bench_2_1_2
-no_pass 1
+move_block all
 x 16
 y 13
 end
@@ -2103,7 +2103,7 @@ x 16
 y 17
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 16
 y 17
 end
@@ -2190,7 +2190,7 @@ x 17
 y 13
 end
 arch bench_2_1_2
-no_pass 1
+move_block all
 x 17
 y 13
 end
@@ -2220,7 +2220,7 @@ x 17
 y 17
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 17
 y 17
 end
@@ -2319,7 +2319,7 @@ x 18
 y 12
 end
 arch bench_1_1
-no_pass 1
+move_block all
 x 18
 y 12
 end
@@ -2328,7 +2328,7 @@ x 18
 y 13
 end
 arch bench_2_2_4
-no_pass 1
+move_block all
 x 18
 y 13
 end
@@ -3055,7 +3055,7 @@ x 24
 y 15
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 24
 y 15
 end
@@ -3280,13 +3280,13 @@ y 12
 end
 arch biglake_nw
 name pool
-no_pass 0
+move_block 0
 x 26
 y 12
 end
 arch biglake_center
 name pool
-no_pass 0
+move_block 0
 x 26
 y 13
 end
@@ -3296,7 +3296,7 @@ y 14
 end
 arch biglake_sw
 name pool
-no_pass 0
+move_block 0
 x 26
 y 14
 end
@@ -3400,13 +3400,13 @@ y 11
 end
 arch biglake_center
 name pool
-no_pass 0
+move_block 0
 x 27
 y 12
 end
 arch biglake_center
 name pool
-no_pass 0
+move_block 0
 x 27
 y 13
 end
@@ -3569,13 +3569,13 @@ y 12
 end
 arch biglake_ne
 name pool
-no_pass 0
+move_block 0
 x 28
 y 12
 end
 arch biglake_center
 name pool
-no_pass 0
+move_block 0
 x 28
 y 13
 end
@@ -3585,7 +3585,7 @@ y 14
 end
 arch biglake_se
 name pool
-no_pass 0
+move_block 0
 x 28
 y 14
 end

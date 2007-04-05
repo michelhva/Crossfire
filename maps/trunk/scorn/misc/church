@@ -1462,7 +1462,7 @@ end
 arch door_look_1
 x 13
 y 3
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1578,7 +1578,7 @@ end
 arch door_look_1
 x 14
 y 3
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor

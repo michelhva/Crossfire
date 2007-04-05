@@ -937,7 +937,7 @@ end
 arch door_look_1
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 3
@@ -2572,7 +2572,7 @@ end
 arch door_look_1
 x 9
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 9
@@ -3315,7 +3315,7 @@ end
 arch door_look_2
 x 12
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -3391,7 +3391,7 @@ end
 arch door_look_2
 x 12
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -4161,7 +4161,7 @@ end
 arch door_2
 x 14
 y 19
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5502,7 +5502,7 @@ end
 arch door_look_1
 x 19
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 19

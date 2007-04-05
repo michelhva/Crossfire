@@ -12411,7 +12411,7 @@ end
 arch stronghold
 slaying /quests/peterm/quests/TitanGate
 hp 6
-no_pass 0
+move_block 0
 x 4
 y 42
 end

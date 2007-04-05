@@ -1011,7 +1011,7 @@ x 10
 end
 arch door_2
 x 10
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 10
@@ -1084,7 +1084,7 @@ x 11
 end
 arch door_2
 x 11
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 11

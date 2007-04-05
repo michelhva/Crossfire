@@ -164,7 +164,7 @@ end
 arch gwall_2_1_2
 x 1
 y 7
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 1
@@ -259,7 +259,7 @@ end
 arch gwall_2_1_2
 x 1
 y 16
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 1
@@ -292,7 +292,7 @@ end
 arch gwall_2_1_2
 x 1
 y 19
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 1
@@ -487,7 +487,7 @@ end
 arch gwall_2_1_1
 x 2
 y 17
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 2
@@ -756,7 +756,7 @@ end
 arch gwall_2_1_1
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 4
@@ -893,7 +893,7 @@ end
 arch gwall_2_1_2
 x 4
 y 13
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 4
@@ -1192,7 +1192,7 @@ end
 arch gwall_2_1_1
 x 5
 y 23
-no_pass 0
+move_block 0
 end
 arch gwall_3_1
 x 5
@@ -1332,7 +1332,7 @@ end
 arch gwall_2_1_2
 x 6
 y 15
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 6
@@ -1468,7 +1468,7 @@ end
 arch gwall_2_1_2
 x 7
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 7
@@ -1799,7 +1799,7 @@ end
 arch gwall_2_1_2
 x 9
 y 2
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -1824,7 +1824,7 @@ end
 arch gwall_2_1_2
 x 9
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -1857,7 +1857,7 @@ end
 arch gwall_2_1_2
 x 9
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -1938,7 +1938,7 @@ end
 arch gwall_2_1_2
 x 9
 y 18
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -2066,7 +2066,7 @@ end
 arch gwall_2_1_1
 x 10
 y 9
-no_pass 0
+move_block 0
 end
 arch gwall_3_2
 x 10
@@ -2143,7 +2143,7 @@ end
 arch gwall_2_1_1
 x 10
 y 19
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 10
@@ -2388,7 +2388,7 @@ end
 arch gwall_2_1_2
 x 11
 y 22
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 11
@@ -2460,7 +2460,7 @@ end
 arch gwall_2_1_1
 x 12
 y 6
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 12
@@ -2744,7 +2744,7 @@ endmsg
 face panther.131
 x 13
 y 15
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 13
@@ -3144,7 +3144,7 @@ end
 arch gwall_2_1_2
 x 15
 y 19
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 15
@@ -3240,7 +3240,7 @@ end
 arch gwall_2_1_1
 x 16
 y 6
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 16
@@ -3273,7 +3273,7 @@ end
 arch gwall_2_1_2
 x 16
 y 9
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 16
@@ -3338,7 +3338,7 @@ end
 arch gwall_2_1_1
 x 16
 y 16
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 16
@@ -3477,7 +3477,7 @@ end
 arch gwall_2_1_1
 x 17
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 17
@@ -3740,7 +3740,7 @@ end
 arch gwall_2_1_2
 x 18
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 18
@@ -3916,7 +3916,7 @@ end
 arch gwall_2_1_1
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 19
@@ -3981,7 +3981,7 @@ end
 arch gwall_2_1_1
 x 19
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 19
@@ -4062,7 +4062,7 @@ end
 arch gwall_2_1_1
 x 19
 y 17
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 19
@@ -4381,7 +4381,7 @@ end
 arch gwall_3_2
 x 21
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 21
@@ -4590,7 +4590,7 @@ end
 arch gwall_3_4
 x 22
 y 8
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 22
@@ -4782,7 +4782,7 @@ end
 arch gwall_2_1_2
 x 23
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 23
@@ -4864,7 +4864,7 @@ end
 arch gwall_2_1_2
 x 23
 y 15
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 23
@@ -4921,7 +4921,7 @@ end
 arch gwall_2_1_2
 x 23
 y 21
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 23

@@ -52,7 +52,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_2_1_1
@@ -68,7 +68,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_2
@@ -84,7 +84,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -97,7 +97,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -110,7 +110,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -123,7 +123,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -136,7 +136,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -149,7 +149,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -162,7 +162,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -175,7 +175,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -188,7 +188,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -201,7 +201,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -214,7 +214,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -227,7 +227,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -240,7 +240,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -253,7 +253,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -266,7 +266,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -279,7 +279,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -292,7 +292,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -305,7 +305,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -318,7 +318,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -331,7 +331,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -344,7 +344,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 30
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -357,7 +357,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 31
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -370,7 +370,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 32
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -437,7 +437,7 @@ name nothing
 name_pl nothing
 x 1
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -452,7 +452,7 @@ name nothing
 name_pl nothing
 x 1
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -467,7 +467,7 @@ name nothing
 name_pl nothing
 x 1
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -482,7 +482,7 @@ name nothing
 name_pl nothing
 x 1
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -497,7 +497,7 @@ name nothing
 name_pl nothing
 x 1
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -512,7 +512,7 @@ name nothing
 name_pl nothing
 x 1
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -527,7 +527,7 @@ name nothing
 name_pl nothing
 x 1
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -542,7 +542,7 @@ name nothing
 name_pl nothing
 x 1
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -561,7 +561,7 @@ name nothing
 name_pl nothing
 x 1
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -576,7 +576,7 @@ name nothing
 name_pl nothing
 x 1
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -591,7 +591,7 @@ name nothing
 name_pl nothing
 x 1
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -606,7 +606,7 @@ name nothing
 name_pl nothing
 x 1
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -621,7 +621,7 @@ name nothing
 name_pl nothing
 x 1
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -636,7 +636,7 @@ name nothing
 name_pl nothing
 x 1
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -651,7 +651,7 @@ name nothing
 name_pl nothing
 x 1
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -666,7 +666,7 @@ name nothing
 name_pl nothing
 x 1
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -685,7 +685,7 @@ name nothing
 name_pl nothing
 x 1
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -700,7 +700,7 @@ name nothing
 name_pl nothing
 x 1
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -715,7 +715,7 @@ name nothing
 name_pl nothing
 x 1
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -730,7 +730,7 @@ name nothing
 name_pl nothing
 x 1
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -745,7 +745,7 @@ name nothing
 name_pl nothing
 x 1
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -760,7 +760,7 @@ name nothing
 name_pl nothing
 x 1
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -775,7 +775,7 @@ name nothing
 name_pl nothing
 x 1
 y 30
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -790,7 +790,7 @@ name nothing
 name_pl nothing
 x 1
 y 31
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -805,7 +805,7 @@ name nothing
 name_pl nothing
 x 1
 y 32
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -935,7 +935,7 @@ name nothing
 name_pl nothing
 x 2
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -950,7 +950,7 @@ name nothing
 name_pl nothing
 x 2
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_1
@@ -969,7 +969,7 @@ name nothing
 name_pl nothing
 x 2
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_2_2_1
@@ -988,7 +988,7 @@ name nothing
 name_pl nothing
 x 2
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1003,7 +1003,7 @@ name nothing
 name_pl nothing
 x 2
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1018,7 +1018,7 @@ name nothing
 name_pl nothing
 x 2
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1033,7 +1033,7 @@ name nothing
 name_pl nothing
 x 2
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1048,7 +1048,7 @@ name nothing
 name_pl nothing
 x 2
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1063,7 +1063,7 @@ name nothing
 name_pl nothing
 x 2
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1078,7 +1078,7 @@ name nothing
 name_pl nothing
 x 2
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1093,7 +1093,7 @@ name nothing
 name_pl nothing
 x 2
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1108,7 +1108,7 @@ name nothing
 name_pl nothing
 x 2
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1123,7 +1123,7 @@ name nothing
 name_pl nothing
 x 2
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1138,7 +1138,7 @@ name nothing
 name_pl nothing
 x 2
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1153,7 +1153,7 @@ name nothing
 name_pl nothing
 x 2
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1168,7 +1168,7 @@ name nothing
 name_pl nothing
 x 2
 y 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -1386,7 +1386,7 @@ name nothing
 name_pl nothing
 x 3
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1401,7 +1401,7 @@ name nothing
 name_pl nothing
 x 3
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1416,7 +1416,7 @@ name nothing
 name_pl nothing
 x 3
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_3
@@ -1435,7 +1435,7 @@ name nothing
 name_pl nothing
 x 3
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1450,7 +1450,7 @@ name nothing
 name_pl nothing
 x 3
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1465,7 +1465,7 @@ name nothing
 name_pl nothing
 x 3
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1480,7 +1480,7 @@ name nothing
 name_pl nothing
 x 3
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1495,7 +1495,7 @@ name nothing
 name_pl nothing
 x 3
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1510,7 +1510,7 @@ name nothing
 name_pl nothing
 x 3
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1525,7 +1525,7 @@ name nothing
 name_pl nothing
 x 3
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1540,7 +1540,7 @@ name nothing
 name_pl nothing
 x 3
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1555,7 +1555,7 @@ name nothing
 name_pl nothing
 x 3
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1570,7 +1570,7 @@ name nothing
 name_pl nothing
 x 3
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1585,7 +1585,7 @@ name nothing
 name_pl nothing
 x 3
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1600,7 +1600,7 @@ name nothing
 name_pl nothing
 x 3
 y 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -1780,7 +1780,7 @@ name nothing
 name_pl nothing
 x 4
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1795,7 +1795,7 @@ name nothing
 name_pl nothing
 x 4
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -1810,7 +1810,7 @@ name nothing
 name_pl nothing
 x 4
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -2140,7 +2140,7 @@ name nothing
 name_pl nothing
 x 5
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -2663,7 +2663,7 @@ end
 arch door_2
 x 7
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -2921,7 +2921,7 @@ end
 arch door_2
 x 8
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -3107,7 +3107,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_3
@@ -3125,7 +3125,7 @@ name nothing
 name_pl nothing
 x 9
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -3414,7 +3414,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3429,7 +3429,7 @@ name nothing
 name_pl nothing
 x 10
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -3564,7 +3564,7 @@ name nothing
 name_pl nothing
 x 10
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -3733,7 +3733,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3748,7 +3748,7 @@ name nothing
 name_pl nothing
 x 11
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3763,7 +3763,7 @@ name nothing
 name_pl nothing
 x 11
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3778,7 +3778,7 @@ name nothing
 name_pl nothing
 x 11
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -3857,7 +3857,7 @@ name nothing
 name_pl nothing
 x 11
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3872,7 +3872,7 @@ name nothing
 name_pl nothing
 x 11
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -3887,7 +3887,7 @@ name nothing
 name_pl nothing
 x 11
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -4056,7 +4056,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -4074,7 +4074,7 @@ name nothing
 name_pl nothing
 x 12
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4089,7 +4089,7 @@ name nothing
 name_pl nothing
 x 12
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_4
@@ -4108,7 +4108,7 @@ name nothing
 name_pl nothing
 x 12
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4123,7 +4123,7 @@ name nothing
 name_pl nothing
 x 12
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -4194,7 +4194,7 @@ name nothing
 name_pl nothing
 x 12
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4209,7 +4209,7 @@ name nothing
 name_pl nothing
 x 12
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4224,7 +4224,7 @@ name nothing
 name_pl nothing
 x 12
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_4
@@ -4243,7 +4243,7 @@ name nothing
 name_pl nothing
 x 12
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -4412,7 +4412,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4427,7 +4427,7 @@ name nothing
 name_pl nothing
 x 13
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4442,7 +4442,7 @@ name nothing
 name_pl nothing
 x 13
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_2_2_3
@@ -4461,7 +4461,7 @@ name nothing
 name_pl nothing
 x 13
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_2
@@ -4480,7 +4480,7 @@ name nothing
 name_pl nothing
 x 13
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -4555,7 +4555,7 @@ name nothing
 name_pl nothing
 x 13
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4570,7 +4570,7 @@ name nothing
 name_pl nothing
 x 13
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_1_1
@@ -4589,7 +4589,7 @@ name nothing
 name_pl nothing
 x 13
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cwall_2_2_4
@@ -4608,7 +4608,7 @@ name nothing
 name_pl nothing
 x 13
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -4777,7 +4777,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4792,7 +4792,7 @@ name nothing
 name_pl nothing
 x 14
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4807,7 +4807,7 @@ name nothing
 name_pl nothing
 x 14
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4822,7 +4822,7 @@ name nothing
 name_pl nothing
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4837,7 +4837,7 @@ name nothing
 name_pl nothing
 x 14
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4852,7 +4852,7 @@ name nothing
 name_pl nothing
 x 14
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4867,7 +4867,7 @@ name nothing
 name_pl nothing
 x 14
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4882,7 +4882,7 @@ name nothing
 name_pl nothing
 x 14
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4897,7 +4897,7 @@ name nothing
 name_pl nothing
 x 14
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4912,7 +4912,7 @@ name nothing
 name_pl nothing
 x 14
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4927,7 +4927,7 @@ name nothing
 name_pl nothing
 x 14
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4942,7 +4942,7 @@ name nothing
 name_pl nothing
 x 14
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4957,7 +4957,7 @@ name nothing
 name_pl nothing
 x 14
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4972,7 +4972,7 @@ name nothing
 name_pl nothing
 x 14
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -4987,7 +4987,7 @@ name nothing
 name_pl nothing
 x 14
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -5002,7 +5002,7 @@ name nothing
 name_pl nothing
 x 14
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -5171,7 +5171,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -5186,7 +5186,7 @@ name nothing
 name_pl nothing
 x 15
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -5447,7 +5447,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -5462,7 +5462,7 @@ name nothing
 name_pl nothing
 x 16
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -5673,7 +5673,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -5688,7 +5688,7 @@ name nothing
 name_pl nothing
 x 17
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -5889,7 +5889,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -5904,7 +5904,7 @@ name nothing
 name_pl nothing
 x 18
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -6105,7 +6105,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -6120,7 +6120,7 @@ name nothing
 name_pl nothing
 x 19
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -6325,7 +6325,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -6340,7 +6340,7 @@ name nothing
 name_pl nothing
 x 20
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -6577,7 +6577,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -6592,7 +6592,7 @@ name nothing
 name_pl nothing
 x 21
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch flagstone
@@ -6825,7 +6825,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -6840,7 +6840,7 @@ name nothing
 name_pl nothing
 x 22
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -7063,7 +7063,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -7078,7 +7078,7 @@ name nothing
 name_pl nothing
 x 23
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -7301,7 +7301,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -7316,7 +7316,7 @@ name nothing
 name_pl nothing
 x 24
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -7653,7 +7653,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 25
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -7668,7 +7668,7 @@ name nothing
 name_pl nothing
 x 25
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -8019,7 +8019,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 26
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -8034,7 +8034,7 @@ name nothing
 name_pl nothing
 x 26
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -8307,7 +8307,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 27
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -8322,7 +8322,7 @@ name nothing
 name_pl nothing
 x 27
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -8667,7 +8667,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -8682,7 +8682,7 @@ name nothing
 name_pl nothing
 x 28
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -9051,7 +9051,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -9066,7 +9066,7 @@ name nothing
 name_pl nothing
 x 29
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -9423,7 +9423,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 30
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -9438,7 +9438,7 @@ name nothing
 name_pl nothing
 x 30
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -9739,7 +9739,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 31
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -9754,7 +9754,7 @@ name nothing
 name_pl nothing
 x 31
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -10021,7 +10021,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 32
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -10036,7 +10036,7 @@ name nothing
 name_pl nothing
 x 32
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -10295,7 +10295,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 33
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -10310,7 +10310,7 @@ name nothing
 name_pl nothing
 x 33
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -10577,7 +10577,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 34
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -10592,7 +10592,7 @@ name nothing
 name_pl nothing
 x 34
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -10861,7 +10861,7 @@ arch blocked
 name nothing
 name_pl nothing
 x 35
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -10876,7 +10876,7 @@ name nothing
 name_pl nothing
 x 35
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -11575,7 +11575,7 @@ name nothing
 name_pl nothing
 x 37
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2
@@ -11859,7 +11859,7 @@ name nothing
 name_pl nothing
 x 38
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch stonefloor2

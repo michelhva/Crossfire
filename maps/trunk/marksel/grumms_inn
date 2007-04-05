@@ -243,7 +243,7 @@ end
 arch longtable_1_4
 x 2
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 2
@@ -344,7 +344,7 @@ end
 arch longtable_2_1_2
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 3
@@ -448,7 +448,7 @@ end
 arch longtable_2_1_2
 x 4
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 4
@@ -564,7 +564,7 @@ end
 arch longtable_2_1_2
 x 5
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 5
@@ -685,7 +685,7 @@ end
 arch longtable_1_3
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 6
@@ -870,7 +870,7 @@ end
 arch longtable_1_1
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 8
@@ -879,7 +879,7 @@ end
 arch longtable_2_2_1
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 8
@@ -965,7 +965,7 @@ end
 arch longtable_2_1_2
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -1059,7 +1059,7 @@ end
 arch longtable_2_1_2
 x 10
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1177,7 +1177,7 @@ end
 arch longtable_2_1_2
 x 11
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 11
@@ -1268,7 +1268,7 @@ end
 arch longtable_2_1_2
 x 12
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 12
@@ -1374,7 +1374,7 @@ end
 arch longtable_1_1
 x 13
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 13
@@ -1383,7 +1383,7 @@ end
 arch longtable_2_2_4
 x 13
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 13
@@ -1567,7 +1567,7 @@ end
 arch longtable_1_4
 x 15
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 15
@@ -1671,7 +1671,7 @@ end
 arch longtable_2_1_2
 x 16
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 16
@@ -1775,7 +1775,7 @@ end
 arch longtable_2_1_2
 x 17
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 17
@@ -1868,7 +1868,7 @@ arch longtable_1_3
 face longtable_A.111
 x 18
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 18
@@ -1973,7 +1973,7 @@ end
 arch longtable_1_3
 x 19
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 19
@@ -2081,7 +2081,7 @@ arch check_floor
 slaying grumms_inn_pass
 x 20
 y 3
-no_pass 1
+move_block all
 end
 arch stair_up_2
 slaying grumms_inn2

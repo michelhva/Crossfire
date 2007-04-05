@@ -174,7 +174,7 @@ end
 arch longtable_1_4
 x 1
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 1
@@ -191,7 +191,7 @@ end
 arch longtable_1_4
 x 1
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 1
@@ -303,7 +303,7 @@ end
 arch longtable_2_1_2
 x 2
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 2
@@ -320,7 +320,7 @@ end
 arch longtable_2_1_2
 x 2
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 2
@@ -416,7 +416,7 @@ end
 arch longtable_3_3
 x 3
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 3
@@ -425,7 +425,7 @@ end
 arch longtable_2_1_1
 x 3
 y 10
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 3
@@ -434,7 +434,7 @@ end
 arch longtable_3_1
 x 3
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 3
@@ -530,7 +530,7 @@ end
 arch longtable_1_3
 x 4
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 4
@@ -548,7 +548,7 @@ end
 arch longtable_1_3
 x 4
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 4
@@ -606,7 +606,7 @@ endmsg
 x 5
 y 2
 alive 0
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 5
@@ -1261,7 +1261,7 @@ end
 arch door_look_2
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1278,7 +1278,7 @@ end
 arch door_look_2
 x 11
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1327,7 +1327,7 @@ end
 arch door_look_2
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11

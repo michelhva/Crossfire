@@ -1514,7 +1514,7 @@ speed 0.0
 level 4
 invisible 1
 connected 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cobblestones
@@ -2130,7 +2130,7 @@ speed 0.0
 level 4
 invisible 1
 connected 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch cobblestones
@@ -2372,7 +2372,7 @@ speed 0.0
 level 4
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch desert

@@ -478,13 +478,13 @@ arch sea
 name blue waves
 x 3
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 3
 y 20
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -500,13 +500,13 @@ name fire wall
 face fireball.111
 x 3
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 3
 y 21
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -522,13 +522,13 @@ name fire wall
 face fireball.111
 x 3
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 3
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -540,7 +540,7 @@ arch sea
 name blue waves
 x 3
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -552,7 +552,7 @@ arch sea
 name blue waves
 x 3
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -564,7 +564,7 @@ arch sea
 name blue waves
 x 3
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -576,7 +576,7 @@ arch sea
 name blue waves
 x 3
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -588,7 +588,7 @@ arch sea
 name blue waves
 x 3
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 3
@@ -691,13 +691,13 @@ arch sea
 name blue waves
 x 4
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 4
 y 20
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -713,13 +713,13 @@ name fire wall
 face fireball.111
 x 4
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 4
 y 21
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -735,13 +735,13 @@ name fire wall
 face fireball.111
 x 4
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 4
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -753,7 +753,7 @@ arch sea
 name blue waves
 x 4
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -765,7 +765,7 @@ arch sea
 name blue waves
 x 4
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -777,7 +777,7 @@ arch sea
 name blue waves
 x 4
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -789,7 +789,7 @@ arch sea
 name blue waves
 x 4
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -801,7 +801,7 @@ arch sea
 name blue waves
 x 4
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 4
@@ -912,25 +912,25 @@ arch sea
 name blue waves
 x 5
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 5
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 5
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 5
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -942,7 +942,7 @@ arch sea
 name blue waves
 x 5
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -954,7 +954,7 @@ arch sea
 name blue waves
 x 5
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -966,7 +966,7 @@ arch sea
 name blue waves
 x 5
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -978,7 +978,7 @@ arch sea
 name blue waves
 x 5
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -990,7 +990,7 @@ arch sea
 name blue waves
 x 5
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 5
@@ -1110,25 +1110,25 @@ arch sea
 name blue waves
 x 6
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 6
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 6
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 6
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1140,7 +1140,7 @@ arch sea
 name blue waves
 x 6
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1152,7 +1152,7 @@ arch sea
 name blue waves
 x 6
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1164,7 +1164,7 @@ arch sea
 name blue waves
 x 6
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1176,7 +1176,7 @@ arch sea
 name blue waves
 x 6
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1188,7 +1188,7 @@ arch sea
 name blue waves
 x 6
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 6
@@ -1312,13 +1312,13 @@ arch sea
 name blue waves
 x 7
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 7
 y 20
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1334,13 +1334,13 @@ name fire wall
 face fireball.111
 x 7
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 7
 y 21
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1356,13 +1356,13 @@ name fire wall
 face fireball.111
 x 7
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 7
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1374,7 +1374,7 @@ arch sea
 name blue waves
 x 7
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1386,7 +1386,7 @@ arch sea
 name blue waves
 x 7
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1398,7 +1398,7 @@ arch sea
 name blue waves
 x 7
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1410,7 +1410,7 @@ arch sea
 name blue waves
 x 7
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1422,7 +1422,7 @@ arch sea
 name blue waves
 x 7
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 7
@@ -1552,13 +1552,13 @@ arch sea
 name blue waves
 x 8
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 8
 y 20
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1574,13 +1574,13 @@ name fire wall
 face fireball.111
 x 8
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 8
 y 21
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1596,13 +1596,13 @@ name fire wall
 face fireball.111
 x 8
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 8
 y 22
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1614,7 +1614,7 @@ arch sea
 name blue waves
 x 8
 y 23
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1626,7 +1626,7 @@ arch sea
 name blue waves
 x 8
 y 24
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1638,7 +1638,7 @@ arch sea
 name blue waves
 x 8
 y 25
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1650,7 +1650,7 @@ arch sea
 name blue waves
 x 8
 y 26
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1662,7 +1662,7 @@ arch sea
 name blue waves
 x 8
 y 27
-no_pass 0
+move_block 0
 end
 arch power_crystal
 x 8
@@ -1765,25 +1765,25 @@ arch sea
 name blue waves
 x 9
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 22
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1799,13 +1799,13 @@ name fire wall
 face fireball.111
 x 9
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 23
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1821,25 +1821,25 @@ name fire wall
 face fireball.111
 x 9
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 26
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1855,13 +1855,13 @@ name fire wall
 face fireball.111
 x 9
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 9
 y 27
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -1877,7 +1877,7 @@ name fire wall
 face fireball.111
 x 9
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 9
@@ -1970,25 +1970,25 @@ arch sea
 name blue waves
 x 10
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 22
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -2004,13 +2004,13 @@ name fire wall
 face fireball.111
 x 10
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 23
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -2026,25 +2026,25 @@ name fire wall
 face fireball.111
 x 10
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 26
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -2060,13 +2060,13 @@ name fire wall
 face fireball.111
 x 10
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 10
 y 27
-no_pass 0
+move_block 0
 end
 arch locked_door2
 slaying none
@@ -2082,7 +2082,7 @@ name fire wall
 face fireball.111
 x 10
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 10
@@ -2213,49 +2213,49 @@ arch sea
 name blue waves
 x 11
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 11
 y 26
-no_pass 0
+move_block 0
 end
 arch table
 x 11
@@ -2305,7 +2305,7 @@ arch sea
 name blue waves
 x 11
 y 27
-no_pass 0
+move_block 0
 end
 arch table
 x 11
@@ -2455,55 +2455,55 @@ arch sea
 name blue waves
 x 12
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 12
 y 27
-no_pass 0
+move_block 0
 end
 arch table
 x 12
@@ -2641,55 +2641,55 @@ arch sea
 name blue waves
 x 13
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 13
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 13
@@ -2824,55 +2824,55 @@ arch sea
 name blue waves
 x 14
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 14
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 14
@@ -3008,55 +3008,55 @@ arch sea
 name blue waves
 x 15
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 15
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 15
@@ -3158,55 +3158,55 @@ arch sea
 name blue waves
 x 16
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 24
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 16
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 16
@@ -3320,37 +3320,37 @@ arch sea
 name blue waves
 x 17
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 23
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 24
-no_pass 0
+move_block 0
 end
 arch teleporter
 name teleporter to portal chamber
@@ -3364,19 +3364,19 @@ arch sea
 name blue waves
 x 17
 y 25
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 17
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 17
@@ -3497,31 +3497,31 @@ arch sea
 name blue waves
 x 18
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 18
 y 20
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 18
 y 21
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 18
 y 22
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 18
 y 23
-no_pass 0
+move_block 0
 end
 arch biglake_nw
 x 18
@@ -3535,7 +3535,7 @@ arch sea
 name blue waves
 x 18
 y 25
-no_pass 0
+move_block 0
 end
 arch biglake_sw
 x 18
@@ -3545,13 +3545,13 @@ arch sea
 name blue waves
 x 18
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 name blue waves
 x 18
 y 27
-no_pass 0
+move_block 0
 end
 arch biglake_sn
 x 18

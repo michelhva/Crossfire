@@ -964,7 +964,7 @@ end
 arch door_look_1
 x 9
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 9
@@ -1063,7 +1063,7 @@ end
 arch door_look_1
 x 10
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 10
@@ -1162,7 +1162,7 @@ end
 arch door_look_1
 x 11
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 11

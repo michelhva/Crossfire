@@ -348,7 +348,7 @@ end
 arch ytree
 x 2
 y 12
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 2
@@ -681,7 +681,7 @@ end
 arch ytree
 x 4
 y 12
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 4
@@ -854,7 +854,7 @@ end
 arch ytree
 x 5
 y 12
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 5
@@ -1193,7 +1193,7 @@ end
 arch ytree
 x 7
 y 12
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 7

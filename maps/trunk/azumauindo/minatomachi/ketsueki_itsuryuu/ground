@@ -2704,7 +2704,7 @@ arch check_inv
 slaying ketsueki_itsuryuu
 x 12
 y 18
-no_pass 1
+move_block all
 end
 arch igate_closed_1
 x 12
@@ -5469,7 +5469,7 @@ arch check_inv
 slaying scolar of kurte
 x 24
 y 12
-no_pass 1
+move_block all
 end
 arch grass
 x 24

@@ -1666,7 +1666,7 @@ end
 arch door_look_1
 x 9
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -1864,7 +1864,7 @@ end
 arch door_look_1
 x 10
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -2028,7 +2028,7 @@ end
 arch door_look_2
 x 11
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -2464,7 +2464,7 @@ end
 arch door_look_1
 x 14
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14

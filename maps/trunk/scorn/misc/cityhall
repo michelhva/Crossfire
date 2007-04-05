@@ -5467,7 +5467,7 @@ end
 arch hedge_2_2_2
 x 25
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 25
@@ -5487,7 +5487,7 @@ end
 arch hedge_2_2_1
 x 25
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 25
@@ -5680,7 +5680,7 @@ end
 arch hedge_2_1_2
 x 26
 y 20
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -5704,7 +5704,7 @@ end
 arch hedge_2_1_2
 x 26
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 26
@@ -5904,7 +5904,7 @@ end
 arch hedge_2_2_3
 x 27
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5913,7 +5913,7 @@ end
 arch hedge_2_1_1
 x 27
 y 21
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5922,7 +5922,7 @@ end
 arch hedge_2_2_4
 x 27
 y 22
-no_pass 1
+move_block all
 end
 arch swall_1_1_half
 x 27

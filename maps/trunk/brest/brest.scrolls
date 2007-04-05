@@ -35,7 +35,7 @@ arch lamppost
 name Lighted fence post
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 y 3
@@ -135,7 +135,7 @@ arch lamppost
 name Lighted fence post
 y 15
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 y 16
@@ -261,7 +261,7 @@ arch lamppost
 name Lighted fence post
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 y 36
@@ -647,7 +647,7 @@ name no irritable_zorn_key block
 slaying irritable_zorn_key
 x 2
 y 15
-no_pass 1
+move_block all
 end
 arch brush
 x 2
@@ -1283,7 +1283,7 @@ name Lighted fence post
 x 4
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 5
@@ -1363,7 +1363,7 @@ name Lighted fence post
 x 5
 y 15
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch stonefloor2
 x 5
@@ -1531,7 +1531,7 @@ name Lighted fence post
 x 6
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch swall_2_2_2
 x 6
@@ -1588,7 +1588,7 @@ name Lighted fence post
 x 6
 y 7
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch swall_2_2_1
 x 6
@@ -4410,7 +4410,7 @@ name Lighted fence post
 x 17
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 17
@@ -4461,7 +4461,7 @@ name Lighted fence post
 x 17
 y 7
 glow_radius 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4747,7 +4747,7 @@ name Lighted fence post
 x 18
 y 15
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch stonefloor2
 x 18

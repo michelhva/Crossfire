@@ -234,7 +234,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -255,7 +255,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -277,7 +277,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -483,7 +483,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -529,7 +529,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -727,7 +727,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -749,7 +749,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -771,7 +771,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor
@@ -1551,7 +1551,7 @@ end
 arch pillars
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1586,7 +1586,7 @@ end
 arch pillars
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1768,7 +1768,7 @@ end
 arch pillars
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -1797,7 +1797,7 @@ end
 arch pillars
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8

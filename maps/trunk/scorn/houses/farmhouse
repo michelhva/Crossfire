@@ -1062,7 +1062,7 @@ x 10
 y 7
 end
 arch door_look_2
-no_pass 0
+move_block 0
 x 10
 y 7
 end
@@ -1155,7 +1155,7 @@ x 11
 y 10
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 11
 y 10
 end
@@ -1242,7 +1242,7 @@ x 12
 y 10
 end
 arch door_look_1
-no_pass 0
+move_block 0
 x 12
 y 10
 end
@@ -1870,7 +1870,7 @@ y 10
 end
 arch igate_open_1
 connected 91
-no_pass 0
+move_block 0
 x 19
 y 10
 end
@@ -1975,7 +1975,7 @@ y 10
 end
 arch igate_open_1
 connected 91
-no_pass 0
+move_block 0
 x 20
 y 10
 end
@@ -2094,7 +2094,7 @@ y 10
 end
 arch igate_open_1
 connected 91
-no_pass 0
+move_block 0
 x 21
 y 10
 end

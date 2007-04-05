@@ -1774,7 +1774,7 @@ x 19
 y 8
 end
 arch mine_3_2
-no_pass 0
+move_block 0
 x 19
 y 8
 end
@@ -1856,7 +1856,7 @@ x 20
 y 8
 end
 arch blocked
-no_pass 0
+move_block 0
 x 20
 y 8
 end

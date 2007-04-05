@@ -929,7 +929,7 @@ y 17
 end
 arch check_inv
 slaying OWNER_MARKER
-no_pass 1
+move_block all
 x 4
 y 17
 end
@@ -2144,7 +2144,7 @@ y 17
 end
 arch door_look_2
 blocksview 1
-no_pass 0
+move_block 0
 x 10
 y 17
 end
@@ -2252,7 +2252,7 @@ x 11
 y 9
 end
 arch door_1
-no_pass 0
+move_block 0
 x 11
 y 9
 end
@@ -3054,7 +3054,7 @@ y 16
 end
 arch tree5
 blocksview 1
-no_pass 1
+move_block all
 x 17
 y 16
 end
@@ -3161,7 +3161,7 @@ y 16
 end
 arch tree5
 blocksview 1
-no_pass 1
+move_block all
 x 18
 y 16
 end

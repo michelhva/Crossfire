@@ -525,7 +525,7 @@ arch stonefloor2
 name wall
 x 2
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_2_2_2
 x 2
@@ -535,7 +535,7 @@ arch stonefloor2
 name wall
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -545,7 +545,7 @@ arch stonefloor2
 name wall
 x 2
 y 4
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -555,7 +555,7 @@ arch stonefloor2
 name wall
 x 2
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -565,7 +565,7 @@ arch stonefloor2
 name wall
 x 2
 y 6
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -575,7 +575,7 @@ arch stonefloor2
 name wall
 x 2
 y 7
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -585,7 +585,7 @@ arch stonefloor2
 name wall
 x 2
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -595,7 +595,7 @@ arch stonefloor2
 name wall
 x 2
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -605,7 +605,7 @@ arch stonefloor2
 name wall
 x 2
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -615,7 +615,7 @@ arch stonefloor2
 name wall
 x 2
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -625,7 +625,7 @@ arch stonefloor2
 name wall
 x 2
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -635,7 +635,7 @@ arch stonefloor2
 name wall
 x 2
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -645,7 +645,7 @@ arch stonefloor2
 name wall
 x 2
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -655,7 +655,7 @@ arch stonefloor2
 name wall
 x 2
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -665,7 +665,7 @@ arch stonefloor2
 name wall
 x 2
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -675,7 +675,7 @@ arch stonefloor2
 name wall
 x 2
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -685,7 +685,7 @@ arch stonefloor2
 name wall
 x 2
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -695,7 +695,7 @@ arch stonefloor2
 name wall
 x 2
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -705,7 +705,7 @@ arch stonefloor2
 name wall
 x 2
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -715,7 +715,7 @@ arch stonefloor2
 name wall
 x 2
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -725,7 +725,7 @@ arch stonefloor2
 name wall
 x 2
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -735,7 +735,7 @@ arch stonefloor2
 name wall
 x 2
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -745,7 +745,7 @@ arch stonefloor2
 name wall
 x 2
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -755,7 +755,7 @@ arch stonefloor2
 name wall
 x 2
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -765,7 +765,7 @@ arch stonefloor2
 name wall
 x 2
 y 26
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -775,7 +775,7 @@ arch stonefloor2
 name wall
 x 2
 y 27
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -785,7 +785,7 @@ arch stonefloor2
 name wall
 x 2
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -795,7 +795,7 @@ arch stonefloor2
 name wall
 x 2
 y 29
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -805,7 +805,7 @@ arch stonefloor2
 name wall
 x 2
 y 30
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 2
@@ -815,7 +815,7 @@ arch stonefloor2
 name wall
 x 2
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_2_2_1
 x 2
@@ -856,7 +856,7 @@ arch stonefloor2
 name wall
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 3
@@ -1001,7 +1001,7 @@ arch stonefloor2
 name wall
 x 3
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 3
@@ -1042,7 +1042,7 @@ arch stonefloor2
 name wall
 x 4
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 4
@@ -1220,7 +1220,7 @@ arch stonefloor2
 name wall
 x 4
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 4
@@ -1264,7 +1264,7 @@ arch stonefloor2
 name wall
 x 5
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 5
@@ -1282,7 +1282,7 @@ arch stonefloor2
 name wall
 x 5
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_2_2_2
 x 5
@@ -1292,7 +1292,7 @@ arch stonefloor2
 name wall
 x 5
 y 6
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1302,7 +1302,7 @@ arch stonefloor2
 name wall
 x 5
 y 7
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1312,7 +1312,7 @@ arch stonefloor2
 name wall
 x 5
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1322,7 +1322,7 @@ arch stonefloor2
 name wall
 x 5
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1332,7 +1332,7 @@ arch stonefloor2
 name wall
 x 5
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1342,7 +1342,7 @@ arch stonefloor2
 name wall
 x 5
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1352,7 +1352,7 @@ arch stonefloor2
 name wall
 x 5
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1362,7 +1362,7 @@ arch stonefloor2
 name wall
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1372,7 +1372,7 @@ arch stonefloor2
 name wall
 x 5
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1382,7 +1382,7 @@ arch stonefloor2
 name wall
 x 5
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1392,7 +1392,7 @@ arch stonefloor2
 name wall
 x 5
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1402,7 +1402,7 @@ arch stonefloor2
 name wall
 x 5
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1412,7 +1412,7 @@ arch stonefloor2
 name wall
 x 5
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1422,7 +1422,7 @@ arch stonefloor2
 name wall
 x 5
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1432,7 +1432,7 @@ arch stonefloor2
 name wall
 x 5
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1442,7 +1442,7 @@ arch stonefloor2
 name wall
 x 5
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1452,7 +1452,7 @@ arch stonefloor2
 name wall
 x 5
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1462,7 +1462,7 @@ arch stonefloor2
 name wall
 x 5
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1472,7 +1472,7 @@ arch stonefloor2
 name wall
 x 5
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1482,7 +1482,7 @@ arch stonefloor2
 name wall
 x 5
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1492,7 +1492,7 @@ arch stonefloor2
 name wall
 x 5
 y 26
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1502,7 +1502,7 @@ arch stonefloor2
 name wall
 x 5
 y 27
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 5
@@ -1512,7 +1512,7 @@ arch stonefloor2
 name wall
 x 5
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_2_2_1
 x 5
@@ -1530,7 +1530,7 @@ arch stonefloor2
 name wall
 x 5
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 5
@@ -1567,7 +1567,7 @@ arch stonefloor2
 name wall
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 6
@@ -1589,7 +1589,7 @@ arch stonefloor2
 name wall
 x 6
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 6
@@ -1691,7 +1691,7 @@ arch stonefloor2
 name wall
 x 6
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 6
@@ -1709,7 +1709,7 @@ arch stonefloor2
 name wall
 x 6
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 6
@@ -1750,7 +1750,7 @@ arch stonefloor2
 name wall
 x 7
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 7
@@ -1768,7 +1768,7 @@ arch stonefloor2
 name wall
 x 7
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 7
@@ -1874,7 +1874,7 @@ arch stonefloor2
 name wall
 x 7
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 7
@@ -1892,7 +1892,7 @@ arch stonefloor2
 name wall
 x 7
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 7
@@ -1936,7 +1936,7 @@ arch stonefloor2
 name wall
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 8
@@ -1954,7 +1954,7 @@ arch stonefloor2
 name wall
 x 8
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 8
@@ -1976,7 +1976,7 @@ arch stonefloor2
 name wall
 x 8
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_2_2_2
 x 8
@@ -1986,7 +1986,7 @@ arch stonefloor2
 name wall
 x 8
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -1996,7 +1996,7 @@ arch stonefloor2
 name wall
 x 8
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2006,7 +2006,7 @@ arch stonefloor2
 name wall
 x 8
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2016,7 +2016,7 @@ arch stonefloor2
 name wall
 x 8
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2026,7 +2026,7 @@ arch stonefloor2
 name wall
 x 8
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2036,7 +2036,7 @@ arch stonefloor2
 name wall
 x 8
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2046,7 +2046,7 @@ arch stonefloor2
 name wall
 x 8
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2056,7 +2056,7 @@ arch stonefloor2
 name wall
 x 8
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2066,7 +2066,7 @@ arch stonefloor2
 name wall
 x 8
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2076,7 +2076,7 @@ arch stonefloor2
 name wall
 x 8
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2086,7 +2086,7 @@ arch stonefloor2
 name wall
 x 8
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2096,7 +2096,7 @@ arch stonefloor2
 name wall
 x 8
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2106,7 +2106,7 @@ arch stonefloor2
 name wall
 x 8
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2116,7 +2116,7 @@ arch stonefloor2
 name wall
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2126,7 +2126,7 @@ arch stonefloor2
 name wall
 x 8
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2136,7 +2136,7 @@ arch stonefloor2
 name wall
 x 8
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 8
@@ -2146,7 +2146,7 @@ arch stonefloor2
 name wall
 x 8
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_2_2_1
 x 8
@@ -2168,7 +2168,7 @@ arch stonefloor2
 name wall
 x 8
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 8
@@ -2186,7 +2186,7 @@ arch stonefloor2
 name wall
 x 8
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 8
@@ -2227,7 +2227,7 @@ arch stonefloor2
 name wall
 x 9
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 9
@@ -2245,7 +2245,7 @@ arch stonefloor2
 name wall
 x 9
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 9
@@ -2263,7 +2263,7 @@ arch stonefloor2
 name wall
 x 9
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 9
@@ -2341,7 +2341,7 @@ arch stonefloor2
 name wall
 x 9
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 9
@@ -2359,7 +2359,7 @@ arch stonefloor2
 name wall
 x 9
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 9
@@ -2377,7 +2377,7 @@ arch stonefloor2
 name wall
 x 9
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 9
@@ -2418,7 +2418,7 @@ arch stonefloor2
 name wall
 x 10
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 10
@@ -2436,7 +2436,7 @@ arch stonefloor2
 name wall
 x 10
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 10
@@ -2536,7 +2536,7 @@ arch stonefloor2
 name wall
 x 10
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 10
@@ -2554,7 +2554,7 @@ arch stonefloor2
 name wall
 x 10
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 10
@@ -2572,7 +2572,7 @@ arch stonefloor2
 name wall
 x 10
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 10
@@ -2613,7 +2613,7 @@ arch stonefloor2
 name wall
 x 11
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 11
@@ -2631,7 +2631,7 @@ arch stonefloor2
 name wall
 x 11
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 11
@@ -2649,7 +2649,7 @@ arch stonefloor2
 name wall
 x 11
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 11
@@ -2667,7 +2667,7 @@ arch stonefloor2
 name wall
 x 11
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_2_2_2
 x 11
@@ -2677,7 +2677,7 @@ arch stonefloor2
 name wall
 x 11
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2687,7 +2687,7 @@ arch stonefloor2
 name wall
 x 11
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2697,7 +2697,7 @@ arch stonefloor2
 name wall
 x 11
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2707,7 +2707,7 @@ arch stonefloor2
 name wall
 x 11
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2717,7 +2717,7 @@ arch stonefloor2
 name wall
 x 11
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2727,7 +2727,7 @@ arch stonefloor2
 name wall
 x 11
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2737,7 +2737,7 @@ arch stonefloor2
 name wall
 x 11
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2747,7 +2747,7 @@ arch stonefloor2
 name wall
 x 11
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2757,7 +2757,7 @@ arch stonefloor2
 name wall
 x 11
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2767,7 +2767,7 @@ arch stonefloor2
 name wall
 x 11
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 11
@@ -2777,7 +2777,7 @@ arch stonefloor2
 name wall
 x 11
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_2_2_1
 x 11
@@ -2795,7 +2795,7 @@ arch stonefloor2
 name wall
 x 11
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 11
@@ -2813,7 +2813,7 @@ arch stonefloor2
 name wall
 x 11
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 11
@@ -2831,7 +2831,7 @@ arch stonefloor2
 name wall
 x 11
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 11
@@ -2872,7 +2872,7 @@ arch stonefloor2
 name wall
 x 12
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 12
@@ -2898,7 +2898,7 @@ arch stonefloor2
 name wall
 x 12
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 12
@@ -2916,7 +2916,7 @@ arch stonefloor2
 name wall
 x 12
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 12
@@ -2934,7 +2934,7 @@ arch stonefloor2
 name wall
 x 12
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 12
@@ -2996,7 +2996,7 @@ arch stonefloor2
 name wall
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 12
@@ -3014,7 +3014,7 @@ arch stonefloor2
 name wall
 x 12
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 12
@@ -3032,7 +3032,7 @@ arch stonefloor2
 name wall
 x 12
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 12
@@ -3058,7 +3058,7 @@ arch stonefloor2
 name wall
 x 12
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 12
@@ -3099,7 +3099,7 @@ arch stonefloor2
 name wall
 x 13
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 13
@@ -3125,7 +3125,7 @@ arch stonefloor2
 name wall
 x 13
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 13
@@ -3143,7 +3143,7 @@ arch stonefloor2
 name wall
 x 13
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 13
@@ -3161,7 +3161,7 @@ arch stonefloor2
 name wall
 x 13
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 13
@@ -3215,7 +3215,7 @@ arch stonefloor2
 name wall
 x 13
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 13
@@ -3233,7 +3233,7 @@ arch stonefloor2
 name wall
 x 13
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 13
@@ -3251,7 +3251,7 @@ arch stonefloor2
 name wall
 x 13
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 13
@@ -3277,7 +3277,7 @@ arch stonefloor2
 name wall
 x 13
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 13
@@ -3317,7 +3317,7 @@ arch stonefloor2
 name wall
 x 14
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 14
@@ -3343,7 +3343,7 @@ arch stonefloor2
 name wall
 x 14
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 14
@@ -3361,7 +3361,7 @@ arch stonefloor2
 name wall
 x 14
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 14
@@ -3379,7 +3379,7 @@ arch stonefloor2
 name wall
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 14
@@ -3397,7 +3397,7 @@ arch stonefloor2
 name wall
 x 14
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_2_2_2
 x 14
@@ -3407,7 +3407,7 @@ arch stonefloor2
 name wall
 x 14
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 14
@@ -3417,7 +3417,7 @@ arch stonefloor2
 name wall
 x 14
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 14
@@ -3427,7 +3427,7 @@ arch stonefloor2
 name wall
 x 14
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 14
@@ -3437,7 +3437,7 @@ arch stonefloor2
 name wall
 x 14
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_2
 x 14
@@ -3447,7 +3447,7 @@ arch stonefloor2
 name wall
 x 14
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_2_2_1
 x 14
@@ -3465,7 +3465,7 @@ arch stonefloor2
 name wall
 x 14
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 14
@@ -3483,7 +3483,7 @@ arch stonefloor2
 name wall
 x 14
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 14
@@ -3501,7 +3501,7 @@ arch stonefloor2
 name wall
 x 14
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 14
@@ -3527,7 +3527,7 @@ arch stonefloor2
 name wall
 x 14
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 14
@@ -3568,7 +3568,7 @@ arch stonefloor2
 name wall
 x 15
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 15
@@ -3594,7 +3594,7 @@ arch stonefloor2
 name wall
 x 15
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 15
@@ -3612,7 +3612,7 @@ arch stonefloor2
 name wall
 x 15
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 15
@@ -3630,7 +3630,7 @@ arch stonefloor2
 name wall
 x 15
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 15
@@ -3648,7 +3648,7 @@ arch stonefloor2
 name wall
 x 15
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 15
@@ -3690,7 +3690,7 @@ arch stonefloor2
 name wall
 x 15
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 15
@@ -3708,7 +3708,7 @@ arch stonefloor2
 name wall
 x 15
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 15
@@ -3726,7 +3726,7 @@ arch stonefloor2
 name wall
 x 15
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 15
@@ -3744,7 +3744,7 @@ arch stonefloor2
 name wall
 x 15
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 15
@@ -3770,7 +3770,7 @@ arch stonefloor2
 name wall
 x 15
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 15
@@ -3811,7 +3811,7 @@ arch stonefloor2
 name wall
 x 16
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 16
@@ -3837,7 +3837,7 @@ arch stonefloor2
 name wall
 x 16
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 16
@@ -3855,7 +3855,7 @@ arch stonefloor2
 name wall
 x 16
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 16
@@ -3873,7 +3873,7 @@ arch stonefloor2
 name wall
 x 16
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 16
@@ -3938,7 +3938,7 @@ arch stonefloor2
 name wall
 x 16
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 16
@@ -3956,7 +3956,7 @@ arch stonefloor2
 name wall
 x 16
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 16
@@ -3974,7 +3974,7 @@ arch stonefloor2
 name wall
 x 16
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 16
@@ -3992,7 +3992,7 @@ arch stonefloor2
 name wall
 x 16
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 16
@@ -4018,7 +4018,7 @@ arch stonefloor2
 name wall
 x 16
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 16
@@ -4058,7 +4058,7 @@ arch stonefloor2
 name wall
 x 17
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 17
@@ -4084,7 +4084,7 @@ arch stonefloor2
 name wall
 x 17
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 17
@@ -4102,7 +4102,7 @@ arch stonefloor2
 name wall
 x 17
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 17
@@ -4120,7 +4120,7 @@ arch stonefloor2
 name wall
 x 17
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 17
@@ -4138,7 +4138,7 @@ arch stonefloor2
 name wall
 x 17
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 17
@@ -4180,7 +4180,7 @@ arch stonefloor2
 name wall
 x 17
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 17
@@ -4198,7 +4198,7 @@ arch stonefloor2
 name wall
 x 17
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 17
@@ -4216,7 +4216,7 @@ arch stonefloor2
 name wall
 x 17
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 17
@@ -4234,7 +4234,7 @@ arch stonefloor2
 name wall
 x 17
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 17
@@ -4260,7 +4260,7 @@ arch stonefloor2
 name wall
 x 17
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 17
@@ -4301,7 +4301,7 @@ arch stonefloor2
 name wall
 x 18
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 18
@@ -4327,7 +4327,7 @@ arch stonefloor2
 name wall
 x 18
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 18
@@ -4349,7 +4349,7 @@ arch stonefloor2
 name wall
 x 18
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 18
@@ -4367,7 +4367,7 @@ arch stonefloor2
 name wall
 x 18
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 18
@@ -4385,7 +4385,7 @@ arch stonefloor2
 name wall
 x 18
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 18
@@ -4427,7 +4427,7 @@ arch stonefloor2
 name wall
 x 18
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 18
@@ -4445,7 +4445,7 @@ arch stonefloor2
 name wall
 x 18
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 18
@@ -4463,7 +4463,7 @@ arch stonefloor2
 name wall
 x 18
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 18
@@ -4481,7 +4481,7 @@ arch stonefloor2
 name wall
 x 18
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 18
@@ -4507,7 +4507,7 @@ arch stonefloor2
 name wall
 x 18
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 18
@@ -4552,7 +4552,7 @@ arch stonefloor2
 name wall
 x 19
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 19
@@ -4578,7 +4578,7 @@ arch stonefloor2
 name wall
 x 19
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 19
@@ -4596,7 +4596,7 @@ arch stonefloor2
 name wall
 x 19
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 19
@@ -4614,7 +4614,7 @@ arch stonefloor2
 name wall
 x 19
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 19
@@ -4632,7 +4632,7 @@ arch stonefloor2
 name wall
 x 19
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_2_2_3
 x 19
@@ -4642,7 +4642,7 @@ arch stonefloor2
 name wall
 x 19
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 19
@@ -4652,7 +4652,7 @@ arch stonefloor2
 name wall
 x 19
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 19
@@ -4662,7 +4662,7 @@ arch stonefloor2
 name wall
 x 19
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 19
@@ -4672,7 +4672,7 @@ arch stonefloor2
 name wall
 x 19
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 19
@@ -4682,7 +4682,7 @@ arch stonefloor2
 name wall
 x 19
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_2_2_4
 x 19
@@ -4700,7 +4700,7 @@ arch stonefloor2
 name wall
 x 19
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 19
@@ -4718,7 +4718,7 @@ arch stonefloor2
 name wall
 x 19
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 19
@@ -4736,7 +4736,7 @@ arch stonefloor2
 name wall
 x 19
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 19
@@ -4762,7 +4762,7 @@ arch stonefloor2
 name wall
 x 19
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 19
@@ -4799,7 +4799,7 @@ arch stonefloor2
 name wall
 x 20
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 20
@@ -4825,7 +4825,7 @@ arch stonefloor2
 name wall
 x 20
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 20
@@ -4843,7 +4843,7 @@ arch stonefloor2
 name wall
 x 20
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 20
@@ -4861,7 +4861,7 @@ arch stonefloor2
 name wall
 x 20
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 20
@@ -4937,7 +4937,7 @@ arch stonefloor2
 name wall
 x 20
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 20
@@ -4955,7 +4955,7 @@ arch stonefloor2
 name wall
 x 20
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 20
@@ -4981,7 +4981,7 @@ arch stonefloor2
 name wall
 x 20
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 20
@@ -5025,7 +5025,7 @@ arch stonefloor2
 name wall
 x 21
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 21
@@ -5051,7 +5051,7 @@ arch stonefloor2
 name wall
 x 21
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 21
@@ -5069,7 +5069,7 @@ arch stonefloor2
 name wall
 x 21
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 21
@@ -5087,7 +5087,7 @@ arch stonefloor2
 name wall
 x 21
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 21
@@ -5149,7 +5149,7 @@ arch stonefloor2
 name wall
 x 21
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 21
@@ -5167,7 +5167,7 @@ arch stonefloor2
 name wall
 x 21
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 21
@@ -5185,7 +5185,7 @@ arch stonefloor2
 name wall
 x 21
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 21
@@ -5211,7 +5211,7 @@ arch stonefloor2
 name wall
 x 21
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 21
@@ -5248,7 +5248,7 @@ arch stonefloor2
 name wall
 x 22
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 22
@@ -5266,7 +5266,7 @@ arch stonefloor2
 name wall
 x 22
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 22
@@ -5284,7 +5284,7 @@ arch stonefloor2
 name wall
 x 22
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 22
@@ -5302,7 +5302,7 @@ arch stonefloor2
 name wall
 x 22
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_2_2_3
 x 22
@@ -5312,7 +5312,7 @@ arch stonefloor2
 name wall
 x 22
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5322,7 +5322,7 @@ arch stonefloor2
 name wall
 x 22
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5332,7 +5332,7 @@ arch stonefloor2
 name wall
 x 22
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5342,7 +5342,7 @@ arch stonefloor2
 name wall
 x 22
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5352,7 +5352,7 @@ arch stonefloor2
 name wall
 x 22
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5362,7 +5362,7 @@ arch stonefloor2
 name wall
 x 22
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5372,7 +5372,7 @@ arch stonefloor2
 name wall
 x 22
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5382,7 +5382,7 @@ arch stonefloor2
 name wall
 x 22
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5392,7 +5392,7 @@ arch stonefloor2
 name wall
 x 22
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5402,7 +5402,7 @@ arch stonefloor2
 name wall
 x 22
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 22
@@ -5412,7 +5412,7 @@ arch stonefloor2
 name wall
 x 22
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_2_2_4
 x 22
@@ -5430,7 +5430,7 @@ arch stonefloor2
 name wall
 x 22
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 22
@@ -5448,7 +5448,7 @@ arch stonefloor2
 name wall
 x 22
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 22
@@ -5466,7 +5466,7 @@ arch stonefloor2
 name wall
 x 22
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 22
@@ -5511,7 +5511,7 @@ arch stonefloor2
 name wall
 x 23
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 23
@@ -5529,7 +5529,7 @@ arch stonefloor2
 name wall
 x 23
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 23
@@ -5547,7 +5547,7 @@ arch stonefloor2
 name wall
 x 23
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 23
@@ -5629,7 +5629,7 @@ arch stonefloor2
 name wall
 x 23
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 23
@@ -5647,7 +5647,7 @@ arch stonefloor2
 name wall
 x 23
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 23
@@ -5665,7 +5665,7 @@ arch stonefloor2
 name wall
 x 23
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 23
@@ -5706,7 +5706,7 @@ arch stonefloor2
 name wall
 x 24
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 24
@@ -5728,7 +5728,7 @@ arch stonefloor2
 name wall
 x 24
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 24
@@ -5746,7 +5746,7 @@ arch stonefloor2
 name wall
 x 24
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 24
@@ -5820,7 +5820,7 @@ arch stonefloor2
 name wall
 x 24
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 24
@@ -5838,7 +5838,7 @@ arch stonefloor2
 name wall
 x 24
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 24
@@ -5860,7 +5860,7 @@ arch stonefloor2
 name wall
 x 24
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 24
@@ -5905,7 +5905,7 @@ arch stonefloor2
 name wall
 x 25
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 25
@@ -5923,7 +5923,7 @@ arch stonefloor2
 name wall
 x 25
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 25
@@ -5945,7 +5945,7 @@ arch stonefloor2
 name wall
 x 25
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_2_2_3
 x 25
@@ -5955,7 +5955,7 @@ arch stonefloor2
 name wall
 x 25
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -5965,7 +5965,7 @@ arch stonefloor2
 name wall
 x 25
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -5975,7 +5975,7 @@ arch stonefloor2
 name wall
 x 25
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -5985,7 +5985,7 @@ arch stonefloor2
 name wall
 x 25
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -5995,7 +5995,7 @@ arch stonefloor2
 name wall
 x 25
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6005,7 +6005,7 @@ arch stonefloor2
 name wall
 x 25
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6015,7 +6015,7 @@ arch stonefloor2
 name wall
 x 25
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6025,7 +6025,7 @@ arch stonefloor2
 name wall
 x 25
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6035,7 +6035,7 @@ arch stonefloor2
 name wall
 x 25
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6045,7 +6045,7 @@ arch stonefloor2
 name wall
 x 25
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6055,7 +6055,7 @@ arch stonefloor2
 name wall
 x 25
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6065,7 +6065,7 @@ arch stonefloor2
 name wall
 x 25
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6075,7 +6075,7 @@ arch stonefloor2
 name wall
 x 25
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6085,7 +6085,7 @@ arch stonefloor2
 name wall
 x 25
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6095,7 +6095,7 @@ arch stonefloor2
 name wall
 x 25
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6105,7 +6105,7 @@ arch stonefloor2
 name wall
 x 25
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 25
@@ -6115,7 +6115,7 @@ arch stonefloor2
 name wall
 x 25
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_2_2_4
 x 25
@@ -6137,7 +6137,7 @@ arch stonefloor2
 name wall
 x 25
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 25
@@ -6155,7 +6155,7 @@ arch stonefloor2
 name wall
 x 25
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 25
@@ -6195,7 +6195,7 @@ arch stonefloor2
 name wall
 x 26
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 26
@@ -6213,7 +6213,7 @@ arch stonefloor2
 name wall
 x 26
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 26
@@ -6341,7 +6341,7 @@ arch stonefloor2
 name wall
 x 26
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 26
@@ -6382,7 +6382,7 @@ arch stonefloor2
 name wall
 x 27
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 27
@@ -6400,7 +6400,7 @@ arch stonefloor2
 name wall
 x 27
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 27
@@ -6506,7 +6506,7 @@ arch stonefloor2
 name wall
 x 27
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 27
@@ -6524,7 +6524,7 @@ arch stonefloor2
 name wall
 x 27
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 27
@@ -6561,7 +6561,7 @@ arch stonefloor2
 name wall
 x 28
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 28
@@ -6579,7 +6579,7 @@ arch stonefloor2
 name wall
 x 28
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_2_2_3
 x 28
@@ -6589,7 +6589,7 @@ arch stonefloor2
 name wall
 x 28
 y 6
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6599,7 +6599,7 @@ arch stonefloor2
 name wall
 x 28
 y 7
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6609,7 +6609,7 @@ arch stonefloor2
 name wall
 x 28
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6619,7 +6619,7 @@ arch stonefloor2
 name wall
 x 28
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6629,7 +6629,7 @@ arch stonefloor2
 name wall
 x 28
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6639,7 +6639,7 @@ arch stonefloor2
 name wall
 x 28
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6649,7 +6649,7 @@ arch stonefloor2
 name wall
 x 28
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6659,7 +6659,7 @@ arch stonefloor2
 name wall
 x 28
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6669,7 +6669,7 @@ arch stonefloor2
 name wall
 x 28
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6679,7 +6679,7 @@ arch stonefloor2
 name wall
 x 28
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6689,7 +6689,7 @@ arch stonefloor2
 name wall
 x 28
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6699,7 +6699,7 @@ arch stonefloor2
 name wall
 x 28
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6709,7 +6709,7 @@ arch stonefloor2
 name wall
 x 28
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6719,7 +6719,7 @@ arch stonefloor2
 name wall
 x 28
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6729,7 +6729,7 @@ arch stonefloor2
 name wall
 x 28
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6739,7 +6739,7 @@ arch stonefloor2
 name wall
 x 28
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6749,7 +6749,7 @@ arch stonefloor2
 name wall
 x 28
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6759,7 +6759,7 @@ arch stonefloor2
 name wall
 x 28
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6769,7 +6769,7 @@ arch stonefloor2
 name wall
 x 28
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6779,7 +6779,7 @@ arch stonefloor2
 name wall
 x 28
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6789,7 +6789,7 @@ arch stonefloor2
 name wall
 x 28
 y 26
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6799,7 +6799,7 @@ arch stonefloor2
 name wall
 x 28
 y 27
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 28
@@ -6809,7 +6809,7 @@ arch stonefloor2
 name wall
 x 28
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_2_2_4
 x 28
@@ -6827,7 +6827,7 @@ arch stonefloor2
 name wall
 x 28
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 28
@@ -6868,7 +6868,7 @@ arch stonefloor2
 name wall
 x 29
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 29
@@ -7034,7 +7034,7 @@ arch stonefloor2
 name wall
 x 29
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 29
@@ -7075,7 +7075,7 @@ arch stonefloor2
 name wall
 x 30
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_3_3
 x 30
@@ -7205,7 +7205,7 @@ arch stonefloor2
 name wall
 x 30
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_3_1
 x 30
@@ -7245,7 +7245,7 @@ arch stonefloor2
 name wall
 x 31
 y 2
-no_pass 1
+move_block all
 end
 arch slevel_2_2_3
 x 31
@@ -7255,7 +7255,7 @@ arch stonefloor2
 name wall
 x 31
 y 3
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7265,7 +7265,7 @@ arch stonefloor2
 name wall
 x 31
 y 4
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7275,7 +7275,7 @@ arch stonefloor2
 name wall
 x 31
 y 5
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7285,7 +7285,7 @@ arch stonefloor2
 name wall
 x 31
 y 6
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7295,7 +7295,7 @@ arch stonefloor2
 name wall
 x 31
 y 7
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7305,7 +7305,7 @@ arch stonefloor2
 name wall
 x 31
 y 8
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7315,7 +7315,7 @@ arch stonefloor2
 name wall
 x 31
 y 9
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7325,7 +7325,7 @@ arch stonefloor2
 name wall
 x 31
 y 10
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7335,7 +7335,7 @@ arch stonefloor2
 name wall
 x 31
 y 11
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7345,7 +7345,7 @@ arch stonefloor2
 name wall
 x 31
 y 12
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7355,7 +7355,7 @@ arch stonefloor2
 name wall
 x 31
 y 13
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7365,7 +7365,7 @@ arch stonefloor2
 name wall
 x 31
 y 14
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7375,7 +7375,7 @@ arch stonefloor2
 name wall
 x 31
 y 15
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7385,7 +7385,7 @@ arch stonefloor2
 name wall
 x 31
 y 16
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7395,7 +7395,7 @@ arch stonefloor2
 name wall
 x 31
 y 17
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7405,7 +7405,7 @@ arch stonefloor2
 name wall
 x 31
 y 18
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7415,7 +7415,7 @@ arch stonefloor2
 name wall
 x 31
 y 19
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7425,7 +7425,7 @@ arch stonefloor2
 name wall
 x 31
 y 20
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7435,7 +7435,7 @@ arch stonefloor2
 name wall
 x 31
 y 21
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7445,7 +7445,7 @@ arch stonefloor2
 name wall
 x 31
 y 22
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7455,7 +7455,7 @@ arch stonefloor2
 name wall
 x 31
 y 23
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7465,7 +7465,7 @@ arch stonefloor2
 name wall
 x 31
 y 24
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7475,7 +7475,7 @@ arch stonefloor2
 name wall
 x 31
 y 25
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7485,7 +7485,7 @@ arch stonefloor2
 name wall
 x 31
 y 26
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7495,7 +7495,7 @@ arch stonefloor2
 name wall
 x 31
 y 27
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7505,7 +7505,7 @@ arch stonefloor2
 name wall
 x 31
 y 28
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7515,7 +7515,7 @@ arch stonefloor2
 name wall
 x 31
 y 29
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7525,7 +7525,7 @@ arch stonefloor2
 name wall
 x 31
 y 30
-no_pass 1
+move_block all
 end
 arch slevel_3_4
 x 31
@@ -7535,7 +7535,7 @@ arch stonefloor2
 name wall
 x 31
 y 31
-no_pass 1
+move_block all
 end
 arch slevel_2_2_4
 x 31

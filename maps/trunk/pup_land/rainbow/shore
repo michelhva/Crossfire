@@ -66,7 +66,7 @@ y 12
 end
 arch sea
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 y 13
@@ -79,11 +79,11 @@ y 15
 end
 arch sea
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 y 18
@@ -159,7 +159,7 @@ end
 arch sea
 x 1
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
@@ -175,7 +175,7 @@ end
 arch sea
 x 1
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
@@ -184,12 +184,12 @@ end
 arch sea
 x 1
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 1
@@ -259,7 +259,7 @@ end
 arch sea_nw
 x 2
 y 9
-no_pass 0
+move_block 0
 end
 arch swall_2_1_1
 x 2
@@ -288,7 +288,7 @@ end
 arch sea
 x 2
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
@@ -304,7 +304,7 @@ end
 arch sea
 x 2
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
@@ -313,12 +313,12 @@ end
 arch sea
 x 2
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 2
@@ -375,12 +375,12 @@ end
 arch sea_nw
 x 3
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 3
@@ -405,7 +405,7 @@ end
 arch sea
 x 3
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
@@ -421,7 +421,7 @@ end
 arch sea
 x 3
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
@@ -430,12 +430,12 @@ end
 arch sea
 x 3
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 3
@@ -485,12 +485,12 @@ end
 arch sea_new
 x 4
 y 7
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
 y 8
-no_pass 0
+move_block 0
 end
 arch conjurer
 name swimmer
@@ -506,7 +506,7 @@ end
 arch sea
 x 4
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -531,7 +531,7 @@ end
 arch sea
 x 4
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
@@ -547,7 +547,7 @@ end
 arch sea
 x 4
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
@@ -556,12 +556,12 @@ end
 arch sea
 x 4
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 4
@@ -611,12 +611,12 @@ end
 arch sea
 x 5
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 5
@@ -641,7 +641,7 @@ end
 arch sea
 x 5
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
@@ -657,7 +657,7 @@ end
 arch sea
 x 5
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
@@ -666,12 +666,12 @@ end
 arch sea
 x 5
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 5
@@ -721,12 +721,12 @@ end
 arch sea
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 6
@@ -751,7 +751,7 @@ end
 arch sea
 x 6
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
@@ -767,7 +767,7 @@ end
 arch sea
 x 6
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
@@ -776,12 +776,12 @@ end
 arch sea
 x 6
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 6
@@ -853,12 +853,12 @@ end
 arch sea
 x 7
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -883,7 +883,7 @@ end
 arch sea
 x 7
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
@@ -899,7 +899,7 @@ end
 arch sea
 x 7
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
@@ -908,12 +908,12 @@ end
 arch sea
 x 7
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 7
@@ -963,12 +963,12 @@ end
 arch sea
 x 8
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -993,7 +993,7 @@ end
 arch sea
 x 8
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -1009,7 +1009,7 @@ end
 arch sea
 x 8
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -1018,12 +1018,12 @@ end
 arch sea
 x 8
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -1073,7 +1073,7 @@ end
 arch sea
 x 9
 y 8
-no_pass 0
+move_block 0
 end
 arch dwarf
 msg
@@ -1089,7 +1089,7 @@ end
 arch sea
 x 9
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 9
@@ -1114,7 +1114,7 @@ end
 arch sea
 x 9
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
@@ -1130,7 +1130,7 @@ end
 arch sea
 x 9
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
@@ -1139,12 +1139,12 @@ end
 arch sea
 x 9
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 9
@@ -1209,12 +1209,12 @@ end
 arch sea
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 10
@@ -1239,7 +1239,7 @@ end
 arch sea
 x 10
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
@@ -1255,7 +1255,7 @@ end
 arch sea
 x 10
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
@@ -1264,12 +1264,12 @@ end
 arch sea
 x 10
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 10
@@ -1330,17 +1330,17 @@ end
 arch sea_new
 x 11
 y 7
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -1365,7 +1365,7 @@ end
 arch sea
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -1381,7 +1381,7 @@ end
 arch sea
 x 11
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -1390,17 +1390,17 @@ end
 arch sea
 x 11
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
 y 18
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -1454,12 +1454,12 @@ end
 arch sea_ne
 x 12
 y 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -1484,7 +1484,7 @@ end
 arch sea
 x 12
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
@@ -1500,7 +1500,7 @@ end
 arch sea
 x 12
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
@@ -1509,17 +1509,17 @@ end
 arch sea
 x 12
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
 y 18
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
@@ -1581,7 +1581,7 @@ end
 arch sea_ne
 x 13
 y 9
-no_pass 0
+move_block 0
 end
 arch man
 name swimmer
@@ -1620,7 +1620,7 @@ end
 arch sea
 x 13
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
@@ -1636,7 +1636,7 @@ end
 arch sea
 x 13
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
@@ -1645,17 +1645,17 @@ end
 arch sea
 x 13
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
 y 18
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
@@ -1729,7 +1729,7 @@ end
 arch sea_ne
 x 14
 y 10
-no_pass 0
+move_block 0
 end
 arch swall_2_2_4
 x 14
@@ -1765,7 +1765,7 @@ end
 arch sea
 x 14
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
@@ -1774,17 +1774,17 @@ end
 arch sea
 x 14
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
 y 18
-no_pass 0
+move_block 0
 end
 arch sea
 x 14
@@ -1864,7 +1864,7 @@ end
 arch sea
 x 15
 y 11
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 15
@@ -1880,7 +1880,7 @@ end
 arch sea
 x 15
 y 12
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 15
@@ -1892,7 +1892,7 @@ end
 arch sea
 x 15
 y 13
-no_pass 0
+move_block 0
 end
 arch mover_7
 x 15
@@ -1904,7 +1904,7 @@ end
 arch sea
 x 15
 y 14
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
@@ -1913,12 +1913,12 @@ end
 arch sea
 x 15
 y 16
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
 y 17
-no_pass 0
+move_block 0
 end
 arch sea
 x 15
