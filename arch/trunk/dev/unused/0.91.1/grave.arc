@@ -13,7 +13,7 @@ You need the shovel to dig the grave.
 endmsg
 face grave_clos.111
 type 20
-no_pass 1
+move_block all
 no_pick 1
 color_fg green
 editable 8

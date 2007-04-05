@@ -27,5 +27,5 @@ magic bullets, as per the magic bullet spell.
 The bullet wall itself can be torn down, and
 will eventually expire on its own.
 endmsg
-no_pass 1
+move_block all
 end

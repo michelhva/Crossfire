@@ -23,7 +23,7 @@ resist_confusion 100
 resist_acid 100
 resist_drain 100
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 alive 1
 level 1

@@ -3,7 +3,7 @@ name cathedral
 type 66
 face cathedral.x11
 no_pick 1
-no_pass 1
+move_block all
 editable 2
 visibility 100
 magicmap grey
@@ -16,7 +16,7 @@ type 66
 face cathedral.x11
 x 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -27,7 +27,7 @@ type 66
 face cathedral.x11
 x 2
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -38,7 +38,7 @@ type 66
 face cathedral.x11
 y 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -50,7 +50,7 @@ face cathedral.x11
 x 1
 y 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -62,7 +62,7 @@ face cathedral.x11
 x 2
 y 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -73,7 +73,7 @@ type 66
 face cathedral.x11
 y 2
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -85,7 +85,7 @@ face cathedral.x11
 x 1
 y 2
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -97,7 +97,7 @@ face cathedral.x11
 x 2
 y 2
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -108,7 +108,7 @@ type 66
 face cathedral.x11
 y 3
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end
@@ -120,7 +120,6 @@ face cathedral.x11
 x 1
 y 3
 no_pick 1
-no_pass 0
 visibility 100
 magicmap grey
 end
@@ -132,7 +131,7 @@ face cathedral.x11
 x 2
 y 3
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap grey
 end

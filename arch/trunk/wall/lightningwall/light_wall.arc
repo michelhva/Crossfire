@@ -10,7 +10,7 @@ face light_wall.101
 color_bg yellow
 speed -0.1
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -41,7 +41,7 @@ dam 5
 is_animated 0
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -60,7 +60,7 @@ sp 1
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -78,7 +78,7 @@ color_bg yellow
 sp 2
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 dam 5
 blocksview 1
 editable 32
@@ -98,7 +98,7 @@ sp 3
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -117,7 +117,7 @@ sp 4
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -136,7 +136,7 @@ sp 5
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -155,7 +155,7 @@ sp 6
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -174,7 +174,7 @@ sp 7
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100
@@ -193,7 +193,7 @@ sp 8
 dam 5
 speed -0.04
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100

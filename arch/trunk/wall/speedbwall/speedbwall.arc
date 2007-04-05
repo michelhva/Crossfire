@@ -14,7 +14,7 @@ mina
 dam 56
 speed -0.03
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 32
 visibility 100

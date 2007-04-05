@@ -21,5 +21,5 @@ maxgrace 50
 attacktype 1
 range 2
 range_modifier 14
-no_pass 1
+move_block all
 end

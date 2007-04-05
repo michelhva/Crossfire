@@ -12,7 +12,7 @@ odoorm2bg.112
 odoorm2bg.111
 mina
 is_animated 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 blocksview 1

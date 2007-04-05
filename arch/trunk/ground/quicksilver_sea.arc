@@ -17,7 +17,7 @@ smoothface quicksilver_sea.112 quicksilver_sea_S.112
 smoothface quicksilver_sea.113 quicksilver_sea_S.113
 smoothface quicksilver_sea.114 quicksilver_sea_S.114
 speed 0.35
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 editable 8

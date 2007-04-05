@@ -3,7 +3,7 @@ name wall
 face redcwall_0.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -13,7 +13,7 @@ name wall
 face redcwall_1.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -23,7 +23,7 @@ name wall
 face redcwall_2.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -33,7 +33,7 @@ name wall
 face redcwall_3.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -43,7 +43,7 @@ name wall
 face redcwall_4.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -53,7 +53,7 @@ name wall
 face redcwall_5.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -63,7 +63,7 @@ name wall
 face redcwall_6.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -73,7 +73,7 @@ name wall
 face redcwall_7.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -83,7 +83,7 @@ name wall
 face redcwall_8.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -93,7 +93,7 @@ name wall
 face redcwall_9.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -103,7 +103,7 @@ name wall
 face redcwall_A.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -113,7 +113,7 @@ name wall
 face redcwall_B.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -123,7 +123,7 @@ name wall
 face redcwall_C.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -133,7 +133,7 @@ name wall
 face redcwall_D.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -143,7 +143,7 @@ name wall
 face redcwall_E.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey
@@ -153,7 +153,7 @@ name wall
 face redcwall_F.111
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 magicmap grey

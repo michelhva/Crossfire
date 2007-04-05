@@ -4,7 +4,7 @@ name locked door
 msg
 You need the special key to open this door.
 endmsg
-no_pass 1
+move_block all
 face ldoor1.111
 magicmap dark_orange
 type 20

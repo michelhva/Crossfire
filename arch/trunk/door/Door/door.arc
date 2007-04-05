@@ -1,7 +1,7 @@
 Object door_0
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_0.111
 magicmap dark_orange
@@ -18,7 +18,7 @@ end
 Object door_1_1
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_1.111
 magicmap dark_orange
@@ -35,7 +35,7 @@ end
 Object door_1_3
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_2.111
 magicmap dark_orange
@@ -52,7 +52,7 @@ end
 Object door_2_2_1
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_3.111
 magicmap dark_orange
@@ -69,7 +69,7 @@ end
 Object door_1_2
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_4.111
 magicmap dark_orange
@@ -86,7 +86,7 @@ end
 Object door_2_1_1
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_5.111
 magicmap dark_orange
@@ -103,7 +103,7 @@ end
 Object door_2_2_2
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_6.111
 magicmap dark_orange
@@ -120,7 +120,7 @@ end
 Object door_3_2
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_7.111
 magicmap dark_orange
@@ -137,7 +137,7 @@ end
 Object door_1_4
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_8.111
 magicmap dark_orange
@@ -154,7 +154,7 @@ end
 Object door_2_2_4
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face door_9.111
 magicmap dark_orange
@@ -171,7 +171,7 @@ end
 Object door_2_1_2
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_A.111
 magicmap dark_orange
@@ -188,7 +188,7 @@ end
 Object door_3_1
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_B.111
 magicmap dark_orange
@@ -205,7 +205,7 @@ end
 Object door_2_2_3
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_C.111
 magicmap dark_orange
@@ -222,7 +222,7 @@ end
 Object door_3_4
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_D.111
 magicmap dark_orange
@@ -239,7 +239,7 @@ end
 Object door_3_3
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_E.111
 magicmap dark_orange
@@ -256,7 +256,7 @@ end
 Object door_4
 randomitems door
 name door
-no_pass 1
+move_block all
 blocksview 1
 face door_F.111
 magicmap dark_orange

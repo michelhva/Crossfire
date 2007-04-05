@@ -18,7 +18,7 @@ spikes.112
 spikes.111
 mina
 is_animated 0
-no_pass 1
+move_block all
 wc 6
 maxsp 0
 dam 8
@@ -73,7 +73,7 @@ spikes.112
 spikes.111
 mina
 is_animated 0
-no_pass 1
+move_block all
 wc 8
 maxsp 0
 dam 8

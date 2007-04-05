@@ -3,7 +3,7 @@ name wall
 face gwall_0.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -14,7 +14,7 @@ name wall
 face gwall_1.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -25,7 +25,7 @@ name wall
 face gwall_2.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -36,7 +36,7 @@ name wall
 face gwall_3.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -47,7 +47,7 @@ name wall
 face gwall_4.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -58,7 +58,7 @@ name wall
 face gwall_5.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -69,7 +69,7 @@ name wall
 face gwall_6.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -80,7 +80,7 @@ name wall
 face gwall_7.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -91,7 +91,7 @@ name wall
 face gwall_8.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -102,7 +102,7 @@ name wall
 face gwall_9.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -113,7 +113,7 @@ name wall
 face gwall_A.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -124,7 +124,7 @@ name wall
 face gwall_B.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -135,7 +135,7 @@ name wall
 face gwall_C.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -146,7 +146,7 @@ name wall
 face gwall_D.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -157,7 +157,7 @@ name wall
 face gwall_E.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100
@@ -168,7 +168,7 @@ name wall
 face gwall_F.111
 color_bg dark_orange
 no_pick 1
-no_pass 1
+move_block all
 blocksview 1
 editable 512
 visibility 100

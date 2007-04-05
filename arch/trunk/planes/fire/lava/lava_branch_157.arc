@@ -1,7 +1,7 @@
 Object lava_rjunct_ns-w
 face lava_branch_157.111
 name lava river junction
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

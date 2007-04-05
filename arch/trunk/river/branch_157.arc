@@ -1,7 +1,7 @@
 Object rjunct_ns-w
 face branch_157.111
 name river junction
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

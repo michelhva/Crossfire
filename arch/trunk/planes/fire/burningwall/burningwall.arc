@@ -8,7 +8,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -24,7 +24,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -40,7 +40,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -56,7 +56,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -72,7 +72,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -88,7 +88,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -104,7 +104,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -120,7 +120,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -136,7 +136,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -152,7 +152,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -168,7 +168,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -184,7 +184,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -200,7 +200,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -216,7 +216,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -232,7 +232,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512
@@ -248,7 +248,7 @@ mina
 is_animated 1
 speed 0.2
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 blocksview 1
 editable 512

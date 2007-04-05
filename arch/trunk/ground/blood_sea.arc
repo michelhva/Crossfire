@@ -17,7 +17,7 @@ smoothface blood_sea.112 blood_sea_S.112
 smoothface blood_sea.113 blood_sea_S.113
 smoothface blood_sea.114 blood_sea_S.114
 speed 0.2
-no_pass 1
+move_block all
 no_pick 1
 is_water 1
 editable 8

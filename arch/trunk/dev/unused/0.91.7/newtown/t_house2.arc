@@ -3,7 +3,7 @@ name town house
 face t_house2.111
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 2
 end
 More
@@ -12,7 +12,7 @@ name town house
 face t_house2.211
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
 end
 More

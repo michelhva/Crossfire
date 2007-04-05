@@ -2,7 +2,7 @@ Object redcwall_win1
 name window
 face redcwindow_0.111
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 editable 768
 visibility 100
@@ -11,7 +11,7 @@ Object redcwall_win2
 name window
 face redcwindow_1.111
 color_fg brown
-no_pass 1
+move_block all
 no_pick 1
 editable 768
 visibility 100

@@ -4,7 +4,7 @@ face wall_0.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -14,7 +14,7 @@ face wall_1.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -24,7 +24,7 @@ face wall_2.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -34,7 +34,7 @@ face wall_3.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -44,7 +44,7 @@ face wall_4.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -54,7 +54,7 @@ face wall_5.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -64,7 +64,7 @@ face wall_6.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -74,7 +74,7 @@ face wall_7.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -84,7 +84,7 @@ face wall_8.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -94,7 +94,7 @@ face wall_9.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -104,7 +104,7 @@ face wall_A.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -114,7 +114,7 @@ face wall_B.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -124,7 +124,7 @@ face wall_C.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -134,7 +134,7 @@ face wall_D.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -144,7 +144,7 @@ face wall_E.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -154,7 +154,7 @@ face wall_F.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -164,7 +164,7 @@ face wall_1_ruin.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -174,7 +174,7 @@ face wall_2_ruin.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -184,7 +184,7 @@ face wall_4_ruin.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -194,7 +194,7 @@ face wall_8_ruin.111
 color_fg brown
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end

@@ -1,7 +1,7 @@
 Object river_sw-n
 face river_16.111
 name river
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

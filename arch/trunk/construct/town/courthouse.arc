@@ -2,7 +2,7 @@ Object courthouse
 face courthouse.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 2
 visibility 100
 magicmap white
@@ -14,7 +14,7 @@ name courthouse
 face courthouse.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
 visibility 100
 magicmap white

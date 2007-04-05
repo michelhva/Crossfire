@@ -1,7 +1,7 @@
 Object odoor_2_fant_blue-green
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_2_fant_blue-green.111
 magicmap orange
@@ -19,7 +19,7 @@ end
 Object odoor_2_fant_blue-yellow
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_2_fant_blue-yellow.111
 magicmap orange
@@ -37,7 +37,7 @@ end
 Object odoor_2_fant_brown
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_2_fant_brown.111
 magicmap orange
@@ -55,7 +55,7 @@ end
 Object odoor_2_fant_red-white
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_2_fant_red-white.111
 magicmap orange
@@ -73,7 +73,7 @@ end
 Object odoor_2_fant_red-yellow
 name door
 randomitems door
-no_pass 1
+move_block all
 blocksview 1
 face odoor_2_fant_red-yellow.111
 magicmap orange

@@ -1,7 +1,7 @@
 Object lava_river_n-s
 face lava_river_15.111
 name lava river
-no_pass 1
+move_block all
 no_pick 1
 color_fg blue
 editable 8

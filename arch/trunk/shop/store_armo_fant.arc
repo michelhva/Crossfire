@@ -4,7 +4,7 @@ face store_armo_fant.x11
 color_fg brown
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 64
 visibility 100
 client_type 25012
@@ -17,7 +17,7 @@ color_fg brown
 type 66
 x 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 end
 More

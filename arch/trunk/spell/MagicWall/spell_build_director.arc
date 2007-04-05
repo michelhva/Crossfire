@@ -28,5 +28,5 @@ most notably bullets and bolts.  Thus, it can
 be used to be able to fire a spell around a
 corner, or direct a spell back at the caster.
 endmsg
-no_pass 1
+move_block all
 end

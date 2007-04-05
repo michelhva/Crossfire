@@ -4,7 +4,7 @@ face flagstone_0.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -14,7 +14,7 @@ face flagstone_1.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -24,7 +24,7 @@ face flagstone_2.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -34,7 +34,7 @@ face flagstone_3.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -44,7 +44,7 @@ face flagstone_4.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -54,7 +54,7 @@ face flagstone_5.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -64,7 +64,7 @@ face flagstone_6.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -74,7 +74,7 @@ face flagstone_7.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -84,7 +84,7 @@ face flagstone_8.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -94,7 +94,7 @@ face flagstone_9.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -104,7 +104,7 @@ face flagstone_A.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -114,7 +114,7 @@ face flagstone_B.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -124,7 +124,7 @@ face flagstone_C.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -134,7 +134,7 @@ face flagstone_D.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -144,7 +144,7 @@ face flagstone_E.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end
@@ -154,7 +154,7 @@ face flagstone_F.111
 color_fg grey
 blocksview 1
 no_pick 1
-no_pass 1
+move_block all
 editable 512
 visibility 100
 end

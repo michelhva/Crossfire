@@ -4,7 +4,7 @@ face store_weap_fant.x11
 color_fg dark_orange
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 64
 visibility 100
 magicmap yellow
@@ -18,7 +18,7 @@ color_fg dark_orange
 type 66
 x 1
 no_pick 1
-no_pass 1
+move_block all
 visibility 100
 magicmap yellow
 end

@@ -2,7 +2,7 @@ Object guild_fant
 face guild_fant.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 editable 2
 visibility 100
 magicmap brown
@@ -14,7 +14,7 @@ name guild
 face guild_fant.x11
 type 66
 no_pick 1
-no_pass 1
+move_block all
 x 1
 visibility 100
 magicmap brown

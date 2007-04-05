@@ -13,7 +13,6 @@ ac 3
 exp 50
 resist_cold 100
 blocksview 0
-no_pass 0
 invisible 1
 editable 32
 visibility 100
