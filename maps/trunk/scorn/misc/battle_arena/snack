@@ -1,9 +1,10 @@
 arch map
 name Arena Snack Area
+reset_timeout 1800
 difficulty 1
 region scornarena
 shopitems food:10;*:-100
-shopgreed 1.4
+shopgreed 1.40000
 shopmax 2000
 width 11
 height 11

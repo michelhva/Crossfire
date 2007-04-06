@@ -1,5 +1,6 @@
 arch map
 name Arena
+reset_timeout 1800
 difficulty 1
 region scornarena
 width 35
@@ -4037,10 +4038,10 @@ Gni hi hi... Mostrai rules!
 endmsg
 x 10
 y 3
+pick_up 0
 will_apply 0
 friendly 1
 run_away 0
-pick_up 0
 random_movement 0
 end
 arch dungeon_magic
@@ -4555,8 +4556,8 @@ y 30
 level 10
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_magic
