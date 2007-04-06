@@ -7713,6 +7713,47 @@ arch cobblestones2
 x 20
 y 24
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the NW Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 20
+y 24
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name NW Tower
+slaying castle.upper.floor.two
+hp 9
+sp 9
+end
+end
 arch cobblestones2
 x 20
 y 25
@@ -7744,6 +7785,47 @@ end
 arch cobblestones2
 x 20
 y 32
+end
+arch gryphon
+name Zorn Canary
+title Guardian of the SW Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 20
+y 32
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name SW Tower
+slaying castle.upper.floor.two
+hp 9
+sp 49
+end
 end
 arch cobblestones2
 x 20
@@ -10392,31 +10474,41 @@ arch cobblestones2
 x 26
 y 9
 end
-arch spikes_closed
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 26
 y 9
 connected 1987
-end
-arch spikes_moving
-x 26
-y 9
-end
-arch food
-x 26
-y 9
+activate_on_release 0
 end
 arch cobblestones2
 x 26
 y 10
 end
-arch spikes_closed
+arch magic_mouth
+msg
+You hear a click and a.subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 26
 y 10
-connected 1987
+connected 1990
+activate_on_release 0
 end
 arch cobblestones2
 x 26
 y 11
+end
+arch magic_mouth
+name alarm goes off!
+msg
+YOU SUDDENLY HEAR A LOUD ALARM AND THE SOUNDS OF ACTIVITY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY!
+endmsg
+x 26
+y 11
+connected 12000
+activate_on_release 0
 end
 arch altar_trigger
 name trigger the nasty events
@@ -10424,6 +10516,62 @@ food 1
 x 26
 y 11
 connected 12000
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1987
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1988
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1989
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1990
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1991
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1992
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1993
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1994
+activate_on_push 0
 end
 arch cobblestones2
 x 26
@@ -10795,44 +10943,46 @@ arch stonefloor2
 x 27
 y 9
 end
-arch awall_1_1
-name alarm system
+arch magic_mouth
+msg
+You hear.a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 27
 y 9
+connected 1988
+activate_on_release 0
 end
 arch stonefloor2
 x 27
 y 10
 end
-arch awall_2_1_1
-name alarm system
-x 27
-y 10
-end
 arch magic_mouth
-name alarm goes off!
 msg
-YOU SUDDENLY HEAR A LOUD ALARM AND THE SOUNDS OF ACTIVITY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY!
+You hear a click and a subtle ticking.sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 27
-y 11
-connected 12000
+y 10
+connected 1991
 activate_on_release 0
 end
 arch stonefloor2
 x 27
 y 11
 end
-arch awall_2_1_1
-name alarm system
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a.timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 27
 y 11
+connected 1993
+activate_on_release 0
 end
 arch stonefloor2
 x 27
 y 12
 end
-arch awall_2_2_4
+arch awall_2_1_2
 name alarm system
 x 27
 y 12
@@ -11250,34 +11400,46 @@ arch stonefloor2
 x 28
 y 9
 end
-arch awall_1_1
-name alarm system
+arch magic_mouth
+msg
+You hear a click.and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 28
 y 9
+connected 1989
+activate_on_release 0
 end
 arch stonefloor2
 x 28
 y 10
 end
-arch awall_2_1_1
-name alarm system
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as.if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 28
 y 10
+connected 1992
+activate_on_release 0
 end
 arch stonefloor2
 x 28
 y 11
 end
-arch awall_2_1_1
-name alarm system
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a timer has.started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
 x 28
 y 11
+connected 1994
+activate_on_release 0
 end
 arch stonefloor2
 x 28
 y 12
 end
-arch awall_2_1_1
+arch awall_2_1_2
 name alarm system
 x 28
 y 12
@@ -11286,7 +11448,7 @@ arch stonefloor2
 x 28
 y 13
 end
-arch awall_3_1
+arch awall_2_1_2
 name alarm system
 x 28
 y 13
@@ -11331,6 +11493,46 @@ arch stonefloor2
 x 28
 y 23
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the Top Floor
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 28
+y 23
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch dragonclaw
+name canary claw
+name_pl canary claws
+material 0
+end
+end
 arch stonefloor2
 x 28
 y 24
@@ -11354,6 +11556,13 @@ arch stonefloor2
 x 28
 y 27
 end
+arch gate_open_1
+name security gate
+x 28
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 28
 y 27
@@ -11361,6 +11570,12 @@ end
 arch stonefloor2
 x 28
 y 28
+end
+arch gate_open_2
+x 28
+y 28
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 28
@@ -11370,9 +11585,25 @@ arch stonefloor2
 x 28
 y 29
 end
+arch gate_open_2
+x 28
+y 29
+connected 12000
+activate_on_release 0
+end
+arch light2
+x 28
+y 29
+end
 arch stonefloor2
 x 28
 y 30
+end
+arch gate_open_2
+x 28
+y 30
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 28
@@ -11381,6 +11612,13 @@ end
 arch stonefloor2
 x 28
 y 31
+end
+arch gate_open_1
+name security gate
+x 28
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 28
@@ -11642,15 +11880,6 @@ name alarm system
 x 29
 y 9
 end
-arch magic_mouth
-msg
-You hear a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
-endmsg
-x 29
-y 10
-connected 1987
-activate_on_release 0
-end
 arch stonefloor2
 x 29
 y 10
@@ -11673,7 +11902,7 @@ arch stonefloor2
 x 29
 y 12
 end
-arch awall_2_2_1
+arch awall_3_1
 name alarm system
 x 29
 y 12
@@ -11800,6 +12029,13 @@ arch stonefloor2
 x 29
 y 27
 end
+arch gate_open_1
+name security gate
+x 29
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 29
 y 27
@@ -11811,6 +12047,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 28
 end
@@ -11825,6 +12062,16 @@ sp 28
 x 29
 y 28
 end
+arch teleporter
+hp 29
+sp 15
+x 29
+y 28
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch magic_mouth
 name chaos dragon warning
 msg
@@ -11832,6 +12079,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 29
 end
@@ -11846,9 +12094,15 @@ sp 29
 x 29
 y 29
 end
-arch light3
+arch teleporter
+hp 28
+sp 15
 x 29
 y 29
+speed 0.0
+level 200
+invisible 1
+connected 12000
 end
 arch magic_mouth
 name chaos dragon warning
@@ -11857,6 +12111,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 30
 end
@@ -11871,9 +12126,26 @@ sp 30
 x 29
 y 30
 end
+arch teleporter
+hp 30
+sp 15
+x 29
+y 30
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch stonefloor2
 x 29
 y 31
+end
+arch gate_open_1
+name security gate
+x 29
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 29
@@ -12142,7 +12414,7 @@ exp 59900
 food 1
 x 30
 y 9
-connected 1987
+connected 1994
 end
 arch stonefloor2
 x 30
@@ -12150,7 +12422,7 @@ y 10
 end
 arch altar_trigger
 name start timer
-exp 9
+exp 90
 food 1
 x 30
 y 10
@@ -12166,7 +12438,7 @@ exp 900
 food 1
 x 30
 y 11
-connected 1987
+connected 1988
 end
 arch stonefloor2
 x 30
@@ -12249,6 +12521,13 @@ arch stonefloor2
 x 30
 y 27
 end
+arch gate_open_1
+name security gate
+x 30
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 30
 y 27
@@ -12256,6 +12535,12 @@ end
 arch stonefloor2
 x 30
 y 28
+end
+arch gate_open_2
+x 30
+y 28
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 30
@@ -12265,9 +12550,25 @@ arch stonefloor2
 x 30
 y 29
 end
+arch gate_open_2
+x 30
+y 29
+connected 12000
+activate_on_release 0
+end
+arch light2
+x 30
+y 29
+end
 arch stonefloor2
 x 30
 y 30
+end
+arch gate_open_2
+x 30
+y 30
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 30
@@ -12276,6 +12577,13 @@ end
 arch stonefloor2
 x 30
 y 31
+end
+arch gate_open_1
+name security gate
+x 30
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 30
@@ -12528,7 +12836,7 @@ exp 49900
 food 1
 x 31
 y 9
-connected 1987
+connected 1993
 end
 arch stonefloor2
 x 31
@@ -12539,7 +12847,7 @@ name alarm system randomizer
 msg
 There are 8 chances here. From near two hours
 down to the alarm goes off immediately. This
-should make thing *really* fun. :)
+should make things *really* fun. :)
 endmsg
 x 31
 y 10
@@ -12558,7 +12866,7 @@ exp 9900
 food 1
 x 31
 y 11
-connected 1987
+connected 1989
 end
 arch stonefloor2
 x 31
@@ -12993,7 +13301,7 @@ exp 39900
 food 1
 x 32
 y 9
-connected 1987
+connected 1992
 end
 arch cobblestones2
 x 32
@@ -13005,7 +13313,7 @@ exp 29900
 food 1
 x 32
 y 10
-connected 1987
+connected 1991
 end
 arch cobblestones2
 x 32
@@ -13017,7 +13325,7 @@ exp 19900
 food 1
 x 32
 y 11
-connected 1987
+connected 1990
 end
 arch cobblestones2
 x 32
@@ -14846,6 +15154,47 @@ arch cobblestones2
 x 36
 y 24
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the NE Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 36
+y 24
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name NE Tower
+slaying castle.upper.floor.two
+hp 49
+sp 9
+end
+end
 arch cobblestones2
 x 36
 y 25
@@ -14877,6 +15226,47 @@ end
 arch cobblestones2
 x 36
 y 32
+end
+arch gryphon
+name Zorn Canary
+title Guardian of the SE Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 36
+y 32
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name SE Tower
+slaying castle.upper.floor.two
+hp 49
+sp 49
+end
 end
 arch cobblestones2
 x 36
@@ -23757,208 +24147,4 @@ end
 arch brush
 x 58
 y 58
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the NW Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 20
-y 24
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name NW Tower
-slaying castle.upper.floor.two
-hp 9
-sp 9
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the SW Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 20
-y 32
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name SW Tower
-slaying castle.upper.floor.two
-hp 9
-sp 49
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the Top Floor
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 28
-y 23
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch dragonclaw
-name canary claw
-name_pl canary claws
-material 0
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the NE Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 36
-y 24
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name NE Tower
-slaying castle.upper.floor.two
-hp 49
-sp 9
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the SE Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 36
-y 32
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name SE Tower
-slaying castle.upper.floor.two
-hp 49
-sp 49
-end
 end
