@@ -32,16 +32,21 @@ whoami = Crossfire.WhoAmI()
 msg = Crossfire.ScriptParameters()
 
 def do_enemy():
-	old = whoami.ReadKey('greet_enemy')
-	msg = Crossfire.ScriptParameters()
-	if (old == str(whoami.Enemy.Count)):
+	said = whoami.ReadKey('greet_enemy')
+	if said == '':
+		said = ';'
+	e = ';' + str(whoami.Enemy.Count) + ';'
+	if said.find(e) != -1:
 		return;
+	msg = Crossfire.ScriptParameters()
 
 	msg = msg.replace('%m', whoami.Name)
 	msg = msg.replace('%e', whoami.Enemy.Name)
 	whoami.Say(msg)
-	whoami.WriteKey('greet_enemy', str(whoami.Enemy.Count), 1)
+	said = said + str(whoami.Enemy.Count) + ';'
+	print 'said = ' + said
+	whoami.WriteKey('greet_enemy', said, 1)
 
 
-if whoami.Enemy != None and msg != '':
+if whoami.Enemy != None and whoami.Enemy.Type == Crossfire.Type.PLAYER:
 	do_enemy()
