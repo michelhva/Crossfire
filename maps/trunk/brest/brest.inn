@@ -2344,8 +2344,8 @@ end
 arch firewall_5
 x 12
 y 11
-no_pick 1
 move_block 0
+no_pick 1
 blocksview 0
 arch spell_small_fireball
 end
@@ -2515,8 +2515,8 @@ end
 arch firewall_1
 x 13
 y 12
-no_pick 1
 move_block 0
+no_pick 1
 blocksview 0
 arch spell_small_fireball
 end
@@ -2687,8 +2687,8 @@ end
 arch firewall_5
 x 14
 y 11
-no_pick 1
 move_block 0
+no_pick 1
 blocksview 0
 arch spell_small_fireball
 end
@@ -4429,6 +4429,21 @@ y 7
 end
 arch sage
 msg
+@match irritable|zorn
+Ah, yes. I do not know much about
+the Zorn family. They are quite a
+SECRETIVE bunch.
+@match secretive
+Yes, secretive and DANGEROUS. I do
+not want to be the subject of the
+Zorn family wrath.
+@match dangerous
+I mean dangerous as in those that
+bother or upset the Zorns end up
+dead. Haemon, the owner of the
+Brest Seaside Tavern, used to work
+for the Zorns. Go ask him your
+questions.
 @match *
 You must be strong to survive in the
 dungeons of Brest. Look at me, I

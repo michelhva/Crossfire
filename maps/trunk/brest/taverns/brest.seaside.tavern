@@ -449,6 +449,10 @@ sp 45
 x 4
 y 2
 end
+arch dungeon_magic
+x 4
+y 2
+end
 arch small_stones
 x 4
 y 2
@@ -600,6 +604,10 @@ arch invis_exit
 slaying /world/world_107_123
 hp 46
 sp 45
+x 5
+y 2
+end
+arch dungeon_magic
 x 5
 y 2
 end
@@ -795,6 +803,10 @@ sp 45
 x 6
 y 2
 end
+arch dungeon_magic
+x 6
+y 2
+end
 arch small_stones
 x 6
 y 2
@@ -920,6 +932,10 @@ arch invis_exit
 slaying /world/world_107_123
 hp 46
 sp 45
+x 7
+y 2
+end
+arch dungeon_magic
 x 7
 y 2
 end
