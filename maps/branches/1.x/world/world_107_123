@@ -3938,6 +3938,15 @@ arch flagstone
 x 16
 y 20
 end
+arch lamppost
+name Street Lamp
+name_pl Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+x 16
+y 20
+end
 arch mountain
 x 16
 y 21
@@ -5449,6 +5458,14 @@ x 21
 y 31
 elevation 1566
 end
+arch l_shop1
+name Acme Inc.
+slaying /brest/shops/buildshop
+hp 6
+sp 24
+x 21
+y 31
+end
 arch brush
 x 21
 y 32
@@ -5777,6 +5794,15 @@ arch grass
 x 22
 y 39
 elevation 2813
+end
+arch city_tower_fant
+name Tower of  Tanguy
+name_pl Tower of  Tanguy
+slaying /brest/ludo1
+hp 22
+sp 8
+x 22
+y 39
 end
 arch flagstone
 x 22
@@ -6727,6 +6753,15 @@ arch brush
 x 25
 y 35
 end
+arch t_house2_fant
+name Brest town house
+slaying /brest/apartments/brest_town_house
+hp 8
+sp 32
+x 25
+y 35
+unique 1
+end
 arch brush
 x 25
 y 36
@@ -6746,6 +6781,13 @@ y 39
 elevation 2322
 end
 arch grass
+x 25
+y 40
+end
+arch castle_a
+slaying /brest/Castle/castle
+hp 9
+sp 16
 x 25
 y 40
 end
@@ -7204,6 +7246,15 @@ x 27
 y 28
 elevation 2182
 end
+arch guild_fant
+name Black Shield's storage room
+name_pl Black Shield's storage room
+slaying /brest/black_shield/storage_room
+hp 1
+sp 10
+x 27
+y 28
+end
 arch grass
 x 27
 y 29
@@ -7475,6 +7526,13 @@ arch grass
 x 28
 y 33
 end
+arch church_fant
+slaying /brest/elec.jes
+hp 1
+sp 46
+x 28
+y 33
+end
 arch grass
 x 28
 y 34
@@ -7493,6 +7551,14 @@ arch grass
 x 28
 y 37
 elevation 2688
+end
+arch store_general_fant
+name Brest Food
+slaying /brest/brest.food
+hp 9
+sp 18
+x 28
+y 37
 end
 arch grass
 x 28
@@ -7666,6 +7732,15 @@ arch grass
 x 29
 y 23
 elevation 2171
+end
+arch palace
+name Kingdom Palace
+name_pl Kingdom Palace
+slaying /brest/asyvan/palace1
+hp 8
+sp 15
+x 29
+y 23
 end
 arch grass
 x 29
@@ -7909,6 +7984,14 @@ x 30
 y 17
 elevation 2532
 end
+arch guild
+name Sport Center
+slaying /brest/sport.jess
+hp 38
+sp 34
+x 30
+y 17
+end
 arch brush
 x 30
 y 18
@@ -8021,6 +8104,14 @@ arch grass
 x 30
 y 40
 elevation 1036
+end
+arch store_armour_fant
+name Brest Armour
+slaying /brest/brest.armour
+hp 9
+sp 18
+x 30
+y 40
 end
 arch pstone_1
 x 30
@@ -8222,6 +8313,14 @@ x 31
 y 29
 elevation 2520
 end
+arch inn_fant
+name Brest inn
+slaying /brest/brest.inn
+hp 14
+sp 23
+x 31
+y 29
+end
 arch flagstone
 x 31
 y 30
@@ -8234,6 +8333,14 @@ arch evergreen
 x 31
 y 32
 elevation 1076
+end
+arch tower_a
+name Tower of Zoon
+slaying /brest/info_first
+hp 38
+sp 66
+x 31
+y 32
 end
 arch grass
 x 31
@@ -8253,6 +8360,14 @@ arch grass
 x 31
 y 36
 elevation 1276
+end
+arch store_weapons_fant
+name Brest Weapon
+slaying /brest/brest.weapon
+hp 9
+sp 18
+x 31
+y 36
 end
 arch grass
 x 31
@@ -8676,6 +8791,15 @@ x 33
 y 17
 elevation 2081
 end
+arch fort
+name Nasty Hallway
+name_pl Nasty Hallway
+slaying /brest/pantheon
+hp 1
+sp 17
+x 33
+y 17
+end
 arch brush
 x 33
 y 18
@@ -8798,6 +8922,14 @@ x 33
 y 38
 end
 arch grass
+x 33
+y 39
+end
+arch store_magic_fant
+name Brest Magic
+slaying /brest/brest.magic
+hp 6
+sp 11
 x 33
 y 39
 end
@@ -9042,6 +9174,15 @@ arch grass
 x 34
 y 35
 elevation 2097
+end
+arch courthouse
+name Administration
+name_pl Administration
+slaying /brest/jes.admini
+hp 21
+sp 1
+x 34
+y 35
 end
 arch grass
 x 34
@@ -9611,6 +9752,14 @@ arch grass
 x 36
 y 38
 elevation 100
+end
+arch guild_fant
+name Brest CVT
+slaying /brest/brest.cvt
+hp 9
+sp 18
+x 36
+y 38
 end
 arch grass
 x 36
@@ -10246,6 +10395,16 @@ x 39
 y 17
 elevation 1166
 end
+arch store_magic_fant
+name Scrolls Galore
+name_pl Scrolls Galore
+slaying /brest/brest.scrolls
+hp 3
+sp 37
+x 39
+y 17
+elevation 319
+end
 arch brush
 x 39
 y 18
@@ -10386,6 +10545,15 @@ x 39
 y 35
 elevation 652
 end
+arch prison_fant
+name Amphis...
+name_pl Amphis...
+slaying /brest/amphis
+hp 1
+sp 23
+x 39
+y 35
+end
 arch brush
 x 39
 y 36
@@ -10419,6 +10587,14 @@ arch pstone_1
 x 39
 y 40
 elevation 485
+end
+arch guild_fant
+name Guild of the Black Shield
+slaying /brest/black_shield/ground
+hp 12
+sp 23
+x 39
+y 40
 end
 arch pstone_1
 x 39
@@ -12255,6 +12431,17 @@ x 46
 y 46
 elevation 25
 end
+arch barrack_long
+name Brest Seaside Tavern
+slaying /brest/taverns/brest.seaside.tavern
+msg
+You enter the tavern. The air is smoky and the guests are raucous.
+endmsg
+hp 6
+sp 4
+x 46
+y 46
+end
 arch small_stones
 x 46
 y 47
@@ -13000,182 +13187,4 @@ arch evergreens
 x 49
 y 49
 elevation 2216
-end
-arch l_shop1
-name Acme Inc.
-slaying /brest/shops/buildshop
-hp 6
-sp 24
-x 21
-y 31
-end
-arch city_tower_fant
-name Tower of  Tanguy
-name_pl Tower of  Tanguy
-slaying /brest/ludo1
-hp 22
-sp 8
-x 22
-y 39
-end
-arch t_house2_fant
-name Brest town house
-slaying /brest/apartments/brest_town_house
-hp 8
-sp 32
-x 25
-y 35
-unique 1
-end
-arch castle_a
-slaying /brest/Castle/castle
-hp 9
-sp 16
-x 25
-y 40
-end
-arch guild_fant
-name Black Shield's storage room
-name_pl Black Shield's storage room
-slaying /brest/black_shield/storage_room
-hp 1
-sp 10
-x 27
-y 28
-end
-arch church_fant
-slaying /brest/elec.jes
-hp 1
-sp 46
-x 28
-y 33
-end
-arch store_general_fant
-name Brest Food
-slaying /brest/brest.food
-hp 9
-sp 18
-x 28
-y 37
-end
-arch palace
-name Kingdom Palace
-name_pl Kingdom Palace
-slaying /brest/asyvan/palace1
-hp 8
-sp 15
-x 29
-y 23
-end
-arch guild
-name Sport Center
-slaying /brest/sport.jess
-hp 38
-sp 34
-x 30
-y 17
-end
-arch store_armour_fant
-name Brest Armour
-slaying /brest/brest.armour
-hp 9
-sp 18
-x 30
-y 40
-end
-arch inn_fant
-name Brest inn
-slaying /brest/brest.inn
-hp 14
-sp 23
-x 31
-y 29
-end
-arch tower_a
-name Tower of Zoon
-slaying /brest/info_first
-hp 38
-sp 66
-x 31
-y 32
-end
-arch store_weapons_fant
-name Brest Weapon
-slaying /brest/brest.weapon
-hp 9
-sp 18
-x 31
-y 36
-end
-arch fort
-name Nasty Hallway
-name_pl Nasty Hallway
-slaying /brest/pantheon
-hp 1
-sp 17
-x 33
-y 17
-end
-arch store_magic_fant
-name Brest Magic
-slaying /brest/brest.magic
-hp 6
-sp 11
-x 33
-y 39
-end
-arch courthouse
-name Administration
-name_pl Administration
-slaying /brest/jes.admini
-hp 21
-sp 1
-x 34
-y 35
-end
-arch guild_fant
-name Brest CVT
-slaying /brest/brest.cvt
-hp 9
-sp 18
-x 36
-y 38
-end
-arch store_magic_fant
-name Scrolls Galore
-name_pl Scrolls Galore
-slaying /brest/brest.scrolls
-hp 3
-sp 37
-x 39
-y 17
-elevation 319
-end
-arch prison_fant
-name Amphis...
-name_pl Amphis...
-slaying /brest/amphis
-hp 1
-sp 23
-x 39
-y 35
-end
-arch guild_fant
-name Guild of the Black Shield
-slaying /brest/black_shield/ground
-hp 12
-sp 23
-x 39
-y 40
-end
-arch barrack_long
-name Brest Seaside Tavern
-slaying /brest/taverns/brest.seaside.tavern
-msg
-You enter the tavern. The air is smoky and the guests are raucous.
-endmsg
-hp 6
-sp 4
-x 46
-y 46
 end
