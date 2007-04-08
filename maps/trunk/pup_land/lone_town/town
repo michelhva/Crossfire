@@ -141,6 +141,14 @@ arch dungeon_magic
 x 1
 y 1
 end
+arch city_tower
+name Tower of Pupuly
+slaying pupuly
+hp 7
+sp 14
+x 1
+y 1
+end
 arch pstone_1
 x 1
 y 2
@@ -196,6 +204,14 @@ arch dungeon_magic
 x 1
 y 9
 end
+arch guild
+name Purple Butterfly's Storage Room
+slaying /pup_land/guilds/purple_butterfly/storage_room
+hp 1
+sp 10
+x 1
+y 9
+end
 arch grass
 x 1
 y 10
@@ -221,6 +237,14 @@ x 1
 y 14
 end
 arch grass
+x 1
+y 15
+end
+arch s_shop2
+name Ye Olde Shoppe of Transport
+slaying /pup_land/lone_town/shops/transport.shoppe
+hp 17
+sp 22
 x 1
 y 15
 end
@@ -613,6 +637,14 @@ arch dungeon_magic
 x 5
 y 9
 end
+arch church
+name Church
+slaying church
+hp 5
+sp 1
+x 5
+y 9
+end
 arch grass
 x 5
 y 10
@@ -731,6 +763,14 @@ x 6
 y 12
 end
 arch dungeon_magic
+x 6
+y 12
+end
+arch guild
+name Bank of Lone
+slaying bank
+hp 9
+sp 19
 x 6
 y 12
 end
@@ -1139,6 +1179,14 @@ arch dungeon_magic
 x 10
 y 3
 end
+arch l_shop1
+name Tavern
+slaying tavern
+hp 12
+sp 24
+x 10
+y 3
+end
 arch grass
 x 10
 y 4
@@ -1188,6 +1236,14 @@ x 10
 y 9
 end
 arch dungeon_magic
+x 10
+y 9
+end
+arch store_general
+name General Shop
+slaying gshop
+hp 7
+sp 14
 x 10
 y 9
 end
@@ -1353,6 +1409,15 @@ arch dungeon_magic
 x 11
 y 12
 end
+arch rl_house2
+name Permanent Apartments
+slaying /pup_land/lone_town/apartment/groundfloor
+hp 26
+sp 36
+x 11
+y 12
+unique 1
+end
 arch grass
 x 11
 y 13
@@ -1420,6 +1485,14 @@ x 12
 y 1
 end
 arch dungeon_magic
+x 12
+y 1
+end
+arch barrack_long
+name Magic Show !
+slaying magic
+hp 7
+sp 11
 x 12
 y 1
 end
@@ -1507,6 +1580,14 @@ arch dungeon_magic
 x 12
 y 16
 end
+arch guild
+name Guild of the Purple Butterfly
+slaying /pup_land/guilds/purple_butterfly/ground
+hp 12
+sp 23
+x 12
+y 16
+end
 arch grass
 x 12
 y 17
@@ -1557,6 +1638,13 @@ arch dungeon_magic
 x 13
 y 3
 end
+arch store_magic
+name Magic Shop
+slaying mshop
+hp 4
+x 13
+y 3
+end
 arch grass
 x 13
 y 4
@@ -1570,6 +1658,13 @@ x 13
 y 5
 end
 arch dungeon_magic
+x 13
+y 5
+end
+arch store_general
+name Gem Shop
+slaying gemshop
+sp 8
 x 13
 y 5
 end
@@ -1594,6 +1689,14 @@ x 13
 y 9
 end
 arch dungeon_magic
+x 13
+y 9
+end
+arch guild
+name Guild of Freedom
+slaying guild_freedom
+hp 1
+sp 7
 x 13
 y 9
 end
@@ -1889,6 +1992,14 @@ arch dungeon_magic
 x 15
 y 9
 end
+arch guild
+name Guild of Law
+slaying guild_law
+hp 16
+sp 7
+x 15
+y 9
+end
 arch grass
 x 15
 y 10
@@ -2052,6 +2163,14 @@ x 16
 y 16
 end
 arch dungeon_magic
+x 16
+y 16
+end
+arch house_long
+name Inn
+slaying inn
+hp 9
+sp 8
 x 16
 y 16
 end
@@ -2600,6 +2719,14 @@ arch dungeon_magic
 x 21
 y 11
 end
+arch dragon_exit
+name Pup Airline
+slaying ../terminal
+hp 2
+sp 9
+x 21
+y 11
+end
 arch pstone_1
 x 21
 y 12
@@ -2752,6 +2879,14 @@ x 22
 y 17
 end
 arch dungeon_magic
+x 22
+y 17
+end
+arch barn
+name Dragon Hangar
+slaying /pup_land/lone_town/dragonhangar/hangar
+hp 16
+sp 1
 x 22
 y 17
 end
@@ -3143,131 +3278,4 @@ end
 arch dwall_2_2_4
 x 25
 y 19
-end
-arch city_tower
-name Tower of Pupuly
-slaying pupuly
-hp 7
-sp 14
-x 1
-y 1
-end
-arch guild
-name Purple Butterfly's Storage Room
-slaying /pup_land/guilds/purple_butterfly/storage_room
-hp 1
-sp 10
-x 1
-y 9
-end
-arch church
-name Church
-slaying church
-hp 5
-sp 1
-x 5
-y 9
-end
-arch guild
-name Bank of Lone
-slaying bank
-hp 9
-sp 19
-x 6
-y 12
-end
-arch l_shop1
-name Tavern
-slaying tavern
-hp 12
-sp 24
-x 10
-y 3
-end
-arch store_general
-name General Shop
-slaying gshop
-hp 7
-sp 14
-x 10
-y 9
-end
-arch rl_house2
-name Permanent Apartments
-slaying /pup_land/lone_town/apartment/groundfloor
-hp 26
-sp 36
-x 11
-y 12
-unique 1
-end
-arch barrack_long
-name Magic Show !
-slaying magic
-hp 7
-sp 11
-x 12
-y 1
-end
-arch guild
-name Guild of the Purple Butterfly
-slaying /pup_land/guilds/purple_butterfly/ground
-hp 12
-sp 23
-x 12
-y 16
-end
-arch store_magic
-name Magic Shop
-slaying mshop
-hp 4
-x 13
-y 3
-end
-arch store_general
-name Gem Shop
-slaying gemshop
-sp 8
-x 13
-y 5
-end
-arch guild
-name Guild of Freedom
-slaying guild_freedom
-hp 1
-sp 7
-x 13
-y 9
-end
-arch guild
-name Guild of Law
-slaying guild_law
-hp 16
-sp 7
-x 15
-y 9
-end
-arch house_long
-name Inn
-slaying inn
-hp 9
-sp 8
-x 16
-y 16
-end
-arch dragon_exit
-name Pup Airline
-slaying ../terminal
-hp 2
-sp 9
-x 21
-y 11
-end
-arch barn
-name Dragon Hangar
-slaying /pup_land/lone_town/dragonhangar/hangar
-hp 16
-sp 1
-x 22
-y 17
 end
