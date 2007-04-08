@@ -1,9 +1,10 @@
 arch map
 name brest.scrolls.right
+reset_timeout 3600
 difficulty 50
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
-shopgreed 1.0
+shopgreed 1.00000
 shopmin 5
 shopmax 150000
 shoprace human
@@ -94,7 +95,7 @@ arch lamppost
 name Lighted fence post
 y 15
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch footpath_2_2_3
 y 16
@@ -975,7 +976,7 @@ name Security light
 x 4
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 4
@@ -997,7 +998,7 @@ arch biglake_n
 name fish pond
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch footbridge_0
 name dock
@@ -1008,7 +1009,18 @@ arch biglake_center
 name fish pond
 x 4
 y 6
-no_pass 0
+move_block 0
+end
+arch fishboat
+name Zorn's fishing boat
+slaying /world/world_107_123
+msg
+The spirit of Zorn expels you ...
+endmsg
+hp 38
+sp 17
+x 4
+y 6
 end
 arch biglake_center
 name fish pond
@@ -1176,7 +1188,7 @@ name Lighted fence post
 x 4
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1237,7 +1249,7 @@ name Lighted fence post
 x 4
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 5
@@ -1251,6 +1263,14 @@ x 5
 y 1
 end
 arch brush
+x 5
+y 2
+end
+arch castle_a
+name Zorn's castle
+slaying /brest/zorn/castle.mainfloor
+hp 29
+sp 51
 x 5
 y 2
 end
@@ -1275,7 +1295,7 @@ arch biglake_center
 name fish pond
 x 5
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 name fish pond
@@ -1433,7 +1453,7 @@ name Lighted fence post
 x 5
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -1494,7 +1514,7 @@ name Lighted fence post
 x 5
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 6
@@ -1806,7 +1826,7 @@ name Security light
 x 7
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 7
@@ -2884,7 +2904,7 @@ slaying irritable_zorn_key
 x 11
 y 4
 connected 6
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -3860,7 +3880,7 @@ name Lighted fence post
 x 14
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3921,7 +3941,7 @@ name Lighted fence post
 x 14
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 15
@@ -4175,7 +4195,7 @@ name Lighted fence post
 x 15
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -4236,7 +4256,7 @@ name Lighted fence post
 x 15
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 16
@@ -4806,12 +4826,12 @@ resist_blind 75
 path_attuned 607
 carrying 53700
 randomitems human_parts
+pick_up 1
 see_invisible 1
 hitback 1
 reflect_missile 1
 reflect_spell 1
 run_away 5
-pick_up 1
 sleep 1
 can_see_in_dark 1
 arch spell_large_icestorm
@@ -7424,7 +7444,7 @@ name Lighted fence post
 x 27
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 28
@@ -7899,23 +7919,4 @@ end
 arch brush
 x 29
 y 39
-end
-arch fishboat
-name Zorn's fishing boat
-slaying /world/world_107_123
-msg
-The spirit of Zorn expels you ...
-endmsg
-hp 38
-sp 17
-x 4
-y 6
-end
-arch castle_a
-name Zorn's castle
-slaying /brest/zorn/castle.mainfloor
-hp 29
-sp 51
-x 5
-y 2
 end

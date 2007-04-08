@@ -1,9 +1,10 @@
 arch map
 name brest.scrolls.right
+reset_timeout 3600
 difficulty 50
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
-shopgreed 1.0
+shopgreed 1.00000
 shopmin 5
 shopmax 150000
 shoprace human
@@ -1010,6 +1011,17 @@ x 4
 y 6
 move_block 0
 end
+arch fishboat
+name Zorn's fishing boat
+slaying /world/world_107_123
+msg
+The spirit of Zorn expels you ...
+endmsg
+hp 38
+sp 17
+x 4
+y 6
+end
 arch biglake_center
 name fish pond
 x 4
@@ -1251,6 +1263,14 @@ x 5
 y 1
 end
 arch brush
+x 5
+y 2
+end
+arch castle_a
+name Zorn's castle
+slaying /brest/zorn/castle.mainfloor
+hp 29
+sp 51
 x 5
 y 2
 end
@@ -4806,12 +4826,12 @@ resist_blind 75
 path_attuned 607
 carrying 53700
 randomitems human_parts
+pick_up 1
 see_invisible 1
 hitback 1
 reflect_missile 1
 reflect_spell 1
 run_away 5
-pick_up 1
 sleep 1
 can_see_in_dark 1
 arch spell_large_icestorm
@@ -7899,23 +7919,4 @@ end
 arch brush
 x 29
 y 39
-end
-arch fishboat
-name Zorn's fishing boat
-slaying /world/world_107_123
-msg
-The spirit of Zorn expels you ...
-endmsg
-hp 38
-sp 17
-x 4
-y 6
-end
-arch castle_a
-name Zorn's castle
-slaying /brest/zorn/castle.mainfloor
-hp 29
-sp 51
-x 5
-y 2
 end
