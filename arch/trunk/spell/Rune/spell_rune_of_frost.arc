@@ -11,6 +11,6 @@ value 40
 sp 10
 casting_time 10
 skill evocation
-path_attuned 2
+path_attuned 4
 other_arch rune_frost
 end
