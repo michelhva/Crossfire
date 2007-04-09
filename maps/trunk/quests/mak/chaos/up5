@@ -1243,10 +1243,8 @@ name floor
 x 10
 y 13
 end
-arch teleporter
-name pentagram
+arch pentagram_111
 slaying fallen
-face pentagram.111
 hp 29
 sp 31
 x 10
@@ -1260,34 +1258,10 @@ name floor
 x 10
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.121
-hp 29
-sp 31
-x 10
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 10
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.131
-hp 29
-sp 31
-x 10
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
@@ -1467,18 +1441,6 @@ name floor
 x 11
 y 13
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.112
-hp 29
-sp 31
-x 11
-y 13
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch magic_mouth
 msg
 This pentagram seems to hunger for
@@ -1500,34 +1462,10 @@ name floor
 x 11
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.122
-hp 29
-sp 31
-x 11
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 11
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.132
-hp 29
-sp 31
-x 11
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
@@ -1651,51 +1589,15 @@ name floor
 x 12
 y 13
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.113
-hp 29
-sp 31
-x 12
-y 13
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 12
 y 14
 end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.123
-hp 29
-sp 31
-x 12
-y 14
-speed 0.000000
-connected 1
-is_animated 0
-end
 arch afloor_right
 name floor
 x 12
 y 15
-end
-arch teleporter
-name pentagram
-slaying fallen
-face pentagram.133
-hp 29
-sp 31
-x 12
-y 15
-speed 0.000000
-connected 1
-is_animated 0
 end
 arch afloor_right
 name floor
