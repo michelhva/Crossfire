@@ -1,13 +1,14 @@
 arch map
+name Earth House
+difficulty 1
 region navar
-name earth_house
+width 25
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 22:28:52 1994
 endmsg
-width 25
-height 18
 end
 arch dirtfloor
 end
@@ -2025,6 +2026,7 @@ x 13
 y 8
 end
 arch generate_dragon
+other_arch drake
 x 13
 y 8
 end
@@ -2037,6 +2039,7 @@ x 13
 y 9
 end
 arch generate_dragon
+other_arch drake
 x 13
 y 9
 end
@@ -3228,6 +3231,10 @@ arch chest
 x 21
 y 3
 end
+arch giant
+x 21
+y 3
+end
 arch dirtfloor
 x 21
 y 4
@@ -3257,6 +3264,10 @@ x 21
 y 7
 end
 arch dirtfloor
+x 21
+y 8
+end
+arch giant
 x 21
 y 8
 end
@@ -3773,12 +3784,4 @@ end
 arch bwall_2_2_4
 x 24
 y 17
-end
-arch giant
-x 21
-y 3
-end
-arch giant
-x 21
-y 8
 end
