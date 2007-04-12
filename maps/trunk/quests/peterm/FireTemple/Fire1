@@ -748,9 +748,9 @@ name fire worshipper
 Wis 3
 x 3
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 3
@@ -904,6 +904,15 @@ arch pstone_1
 x 3
 y 29
 end
+arch dragon
+Wis 1
+x 3
+y 29
+carrying 100
+arch key2
+slaying firedoor2
+end
+end
 arch pstone_1
 x 3
 y 30
@@ -935,9 +944,9 @@ name fire worshipper
 Wis 3
 x 4
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 4
@@ -1132,9 +1141,9 @@ name fire worshipper
 Wis 3
 x 5
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 5
@@ -1955,9 +1964,9 @@ name fire worshipper
 Wis 3
 x 9
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 9
@@ -2169,9 +2178,9 @@ name fire worshipper
 Wis 3
 x 10
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 10
@@ -2356,9 +2365,9 @@ name fire worshipper
 Wis 3
 x 11
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 11
@@ -3322,6 +3331,10 @@ x 15
 y 12
 end
 arch pstone_1
+x 15
+y 13
+end
+arch pentagram_111
 x 15
 y 13
 end
@@ -4881,13 +4894,12 @@ wc 0
 ac 0
 x 22
 y 22
-speed -0.200000
+speed -0.2
 level 1
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 22
@@ -4930,7 +4942,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 22
@@ -5085,7 +5096,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 23
@@ -5491,7 +5501,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 25
@@ -5651,13 +5660,12 @@ wc 0
 ac 0
 x 26
 y 20
-speed -0.200000
+speed -0.2
 level 1
 attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 26
@@ -5880,14 +5888,13 @@ wc 0
 ac 0
 x 27
 y 28
-speed -0.200000
+speed -0.2
 level 1
 attacktype 5
 carrying 100
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 arch key2
 slaying firedoor3
 end
@@ -6886,17 +6893,4 @@ end
 arch dun7
 x 31
 y 31
-end
-arch dragon
-Wis 1
-x 3
-y 29
-carrying 100
-arch key2
-slaying firedoor2
-end
-end
-arch pentagram_111
-x 15
-y 13
 end
