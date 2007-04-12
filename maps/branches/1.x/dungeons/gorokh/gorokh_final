@@ -20874,6 +20874,16 @@ startequip 1
 arch spell_banishment
 end
 end
+arch event_time
+name Ah, another puny adventurer. Welcome to your death.
+title Python
+slaying /python/misc/greet_message.py
+end
+arch event_death
+name The %m screams a curse and dies
+title Python
+slaying /python/misc/death_message.py
+end
 end
 arch active_volcano
 x 27

@@ -18855,6 +18855,11 @@ hp 9
 sp 8
 glow_radius 8
 end
+arch event_death
+name The %m succumbs to its wounds and expires
+title Python
+slaying /python/misc/death_message.py
+end
 arch rod_heavy
 hp 1000
 maxhp 1000
