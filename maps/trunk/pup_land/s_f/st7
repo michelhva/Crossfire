@@ -1,13 +1,13 @@
 arch map
-region pupland
 name st7
+region pupland
+width 17
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 18:16:09 1996
 endmsg
-x 17
-y 13
 end
 arch blocked
 end
@@ -430,8 +430,8 @@ face statue.111
 x 5
 y 5
 weight 1000000
-can_roll 1
 move_type 1
+can_roll 1
 end
 arch button_plate
 x 5
@@ -504,9 +504,9 @@ end
 arch axe_3
 name golden axe
 face axe_3_golden.111
-materialname gold
 x 6
 y 1
+materialname gold
 value 10000000
 end
 arch flagstone
@@ -552,18 +552,6 @@ x 6
 y 6
 connected 11
 end
-arch altar
-slaying golden axe
-msg
-Which axe did you drop, gold or
-iron?
-endmsg
-food 1
-x 6
-y 6
-invisible 1
-connected 10
-end
 arch magic_ear
 msg
 @match iron|Iron
@@ -582,6 +570,18 @@ name fountain
 x 6
 y 6
 move_block 0
+end
+arch altar
+slaying golden axe
+msg
+Which axe did you drop, gold or
+iron?
+endmsg
+food 1
+x 6
+y 6
+invisible 1
+connected 10
 end
 arch button_plate
 x 6
@@ -693,9 +693,9 @@ face statue.111
 x 7
 y 7
 weight 2000000
+move_type 1
 move_block all
 can_roll 1
-move_type 1
 end
 arch flagstone
 x 7
@@ -991,12 +991,11 @@ end
 arch leather_armour
 name Yoroi of Banzai
 ac 4
-armour 10
 x 11
 y 6
-immune 131072
 value 100000
 weight 5000
+armour 131072
 end
 arch flagstone
 x 11
