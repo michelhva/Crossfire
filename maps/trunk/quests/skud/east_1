@@ -2644,6 +2644,12 @@ arch marble
 x 13
 y 13
 end
+arch cobra
+hp 400
+maxhp 400
+x 13
+y 13
+end
 arch marble
 x 13
 y 14
@@ -2800,6 +2806,12 @@ arch marble
 x 14
 y 13
 end
+arch cobra
+hp 400
+maxhp 400
+x 14
+y 13
+end
 arch marble
 x 14
 y 14
@@ -2935,6 +2947,12 @@ x 15
 y 12
 end
 arch marble
+x 15
+y 13
+end
+arch cobra
+hp 400
+maxhp 400
 x 15
 y 13
 end
@@ -4160,9 +4178,9 @@ dam 12
 wc -3
 x 22
 y 3
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 22
@@ -4374,9 +4392,9 @@ dam 12
 wc -3
 x 23
 y 2
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4391,9 +4409,9 @@ dam 12
 wc -3
 x 23
 y 3
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4408,9 +4426,9 @@ dam 12
 wc -3
 x 23
 y 4
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4421,6 +4439,10 @@ x 23
 y 5
 end
 arch marble
+x 23
+y 6
+end
+arch dragon
 x 23
 y 6
 end
@@ -4592,9 +4614,9 @@ dam 12
 wc -3
 x 24
 y 1
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4609,9 +4631,9 @@ dam 12
 wc -3
 x 24
 y 2
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4626,9 +4648,9 @@ dam 12
 wc -3
 x 24
 y 3
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4654,7 +4676,15 @@ arch marble
 x 24
 y 7
 end
+arch dragon
+x 24
+y 7
+end
 arch marble
+x 24
+y 8
+end
+arch dragon
 x 24
 y 8
 end
@@ -4818,9 +4848,9 @@ dam 12
 wc -3
 x 25
 y 1
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 25
@@ -4839,9 +4869,9 @@ dam 12
 wc -3
 x 25
 y 2
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 25
@@ -5283,13 +5313,13 @@ dam 20
 wc -8
 x 27
 y 9
-speed 0.300000
+speed 0.3
 attack_movement 0
 level 10
 attacktype 16385
+resist_fire 100
 run_away 0
 can_cast_spell 1
-immune 4
 arch spell_paralyze
 end
 arch spell_hellfire
@@ -7688,34 +7718,4 @@ end
 arch mountain2
 x 39
 y 29
-end
-arch cobra
-hp 400
-maxhp 400
-x 13
-y 13
-end
-arch cobra
-hp 400
-maxhp 400
-x 14
-y 13
-end
-arch cobra
-hp 400
-maxhp 400
-x 15
-y 13
-end
-arch dragon
-x 23
-y 6
-end
-arch dragon
-x 24
-y 7
-end
-arch dragon
-x 24
-y 8
 end
