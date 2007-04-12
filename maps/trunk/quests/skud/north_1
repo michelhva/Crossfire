@@ -1130,9 +1130,9 @@ dam 12
 wc -3
 x 4
 y 22
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1147,9 +1147,9 @@ dam 12
 wc -3
 x 4
 y 23
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1164,9 +1164,9 @@ dam 12
 wc -3
 x 4
 y 24
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1181,9 +1181,9 @@ dam 12
 wc -3
 x 4
 y 25
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1198,9 +1198,9 @@ dam 12
 wc -3
 x 4
 y 26
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1434,9 +1434,9 @@ dam 12
 wc -3
 x 5
 y 22
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1451,9 +1451,9 @@ dam 12
 wc -3
 x 5
 y 23
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1468,9 +1468,9 @@ dam 12
 wc -3
 x 5
 y 24
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1485,9 +1485,9 @@ dam 12
 wc -3
 x 5
 y 25
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1738,9 +1738,9 @@ dam 12
 wc -3
 x 6
 y 23
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -1755,9 +1755,9 @@ dam 12
 wc -3
 x 6
 y 24
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -1772,9 +1772,9 @@ dam 12
 wc -3
 x 6
 y 25
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -2014,9 +2014,9 @@ dam 12
 wc -3
 x 7
 y 22
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 7
@@ -2031,9 +2031,9 @@ dam 12
 wc -3
 x 7
 y 23
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 7
@@ -2289,9 +2289,9 @@ dam 12
 wc -3
 x 8
 y 22
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 8
@@ -2306,9 +2306,9 @@ dam 12
 wc -3
 x 8
 y 23
-speed 0.300000
+speed 0.3
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 8
@@ -2375,10 +2375,11 @@ dam 18
 wc -14
 x 8
 y 27
-speed 0.600000
+speed 0.6
+resist_physical 100
+resist_electricity 100
 carrying 100
 unaggressive 1
-immune 29
 arch key2
 name Very hot key
 slaying hell
@@ -5639,6 +5640,10 @@ arch marble
 x 19
 y 6
 end
+arch behemoth
+x 19
+y 6
+end
 arch marble
 x 19
 y 7
@@ -8602,8 +8607,4 @@ name ice
 face icestorm.111
 x 29
 y 39
-end
-arch behemoth
-x 19
-y 6
 end
