@@ -1,13 +1,13 @@
 arch map
 name tavern
 region lonetown
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 22 16:33:26 1997
 endmsg
-width 25
-height 25
 end
 arch afloor_left
 end
@@ -177,11 +177,11 @@ y 2
 end
 arch bench_1_4
 name bar
+x 1
+y 2
 move_block all
 no_magic 1
 damned 1
-x 1
-y 2
 end
 arch afloor_left
 x 1
@@ -222,29 +222,21 @@ end
 arch dwarf
 msg
 @match Fox|fox|Tail|tail
-Fox Tails live in the forest, somewhere
-in the center of lone town.
-But we don't know how to get there.
+Fox Tails live in the forest, somewhere in the center of lone town. But we don't know how to get there.
 @match Nazgul|nazgul
-Nazgul's crew lives in the power plant,
-to the west of lone town.
+Nazgul's crew lives in the power plant, to the west of lone town.
 @match Gang|gang|Bandit|bandit
-One is Nazgul and his devils,
-the other one is "Fox Tails".
-The former are very cruel, Nazgul
-kills anyone on sight.
-The latter don't murder people.
+One is Nazgul and his devils, the other one is "Fox Tails". The former are very cruel, Nazgul kills anyone on sight. The latter don't murder people.
 @match Rob|rob
-There are two Gangs of Bandits in this
-town.
+There are two Gangs of Bandits in this town.
 @match *
 Don't Rob anything!
 endmsg
 hp 700
-friendly 1
-unaggressive 0
 x 1
 y 9
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 1
@@ -304,35 +296,29 @@ y 21
 end
 arch wizard
 name Trainee
-face wizard.131
 msg
 @match no|No
 You should see it.
 @match yes|Yes
 So where did the "paper-sword" go?
 @match underground
-You are very bright! I'll tell you
-a secret:
-There is an invisible stairway to the
-south, under the Dressing room.
+You are very bright! I'll tell you a secret:
+There is an invisible stairway to the south, under the Dressing room.
 @match stair|Stair
-Be careful!
-The Magician Leader is very strong.
+Be careful! The Magician Leader is very strong.
 @match fool|Fool
-He is just stupid.
-However, his queries can be difficult.
-So, if you can't think of any correct
-answer, say honestly "I don't know".
+He is just stupid. However, his queries can be difficult. So, if you can't think of any correct answer, say honestly "I don't know".
 @match *
 Have you ever seen the Magic Show?
 endmsg
-type 0
+face wizard.131
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 1
 y 21
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 1
@@ -370,11 +356,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 2
+y 2
 move_block all
 no_magic 1
 damned 1
-x 2
-y 2
 end
 arch afloor_left
 x 2
@@ -410,10 +396,10 @@ y 8
 end
 arch dwarf
 hp 700
-friendly 1
-unaggressive 0
 x 2
 y 8
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 2
@@ -498,13 +484,13 @@ end
 arch wizard
 name Trainee
 face wizard.111
-type 0
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 2
 y 22
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 2
@@ -546,11 +532,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 3
+y 2
 move_block all
 no_magic 1
 damned 1
-x 3
-y 2
 end
 arch afloor_left
 x 3
@@ -680,11 +666,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 4
+y 2
 move_block all
 no_magic 1
 damned 1
-x 4
-y 2
 end
 arch afloor_left
 x 4
@@ -695,27 +681,22 @@ x 4
 y 3
 end
 arch thief
-face thief.111
 msg
 @match No|no|Castle|castle
-There are two ways into the castle.
-Eureca was very smart. Don't you know
-the cave to the north of castle?
-A secret passage from that cave leads
-into the castle.
+There are two ways into the castle. Eureca was very smart. Don't you know the cave to the north of castle? A secret passage from that cave leads into the castle.
 @match Yes|yes
 ...
 @match *
-Have you ever been to the Castle of
-Eureca?
+Have you ever been to the Castle of Eureca?
 endmsg
-type 0
+face thief.111
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 4
 y 3
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 4
@@ -825,11 +806,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 5
+y 2
 move_block all
 no_magic 1
 damned 1
-x 5
-y 2
 end
 arch afloor_left
 x 5
@@ -947,11 +928,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 6
+y 2
 move_block all
 no_magic 1
 damned 1
-x 6
-y 2
 end
 arch afloor_left
 x 6
@@ -1077,11 +1058,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 7
+y 2
 move_block all
 no_magic 1
 damned 1
-x 7
-y 2
 end
 arch afloor_left
 x 7
@@ -1215,11 +1196,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 8
+y 2
 move_block all
 no_magic 1
 damned 1
-x 8
-y 2
 end
 arch afloor_left
 x 8
@@ -1269,8 +1250,7 @@ arch mage
 name Learned man
 msg
 @match Cordish|cordish
-He lives in the south-eastern part
-of the town.
+He lives in the south-eastern part of the town.
 @match son|Son|wife|Wife
 Ask Cordish about them.
 @match daughter|Daughter
@@ -1278,20 +1258,17 @@ Ask Cordish about them.
 @match family|Family
 Eureca has a Wife and a Son.
 @match Eureca|eureca|No|no
-He used to be the lord of this country.
-But he disappeared two years ago.
-His Family is still waiting for him to
-return...
+He used to be the lord of this country. But he disappeared two years ago. His Family is still waiting for him to return...
 @match *
 Do you know the Castle of Eureca?
 endmsg
-type 0
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 8
 y 11
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 8
@@ -1344,25 +1321,21 @@ end
 arch viking
 msg
 @match Item|item
-Shopkeepers say,
-"Transports are stopped by the war".
-But they hide many items under their shop,
-and wait for a rise in prices!
+Shopkeepers say, "Transports are stopped by the war". But they hide many items under their shop, and wait for a rise in prices!
 @match yes|Yes
 There are a few Items in it.
 @match No|no
 You had not better going there.
 @match *
-Have you ever been to shops
-in Lone Town?
+Have you ever been to shops in Lone Town?
 endmsg
-type 0
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 8
 y 22
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 8
@@ -1404,11 +1377,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 9
+y 2
 move_block all
 no_magic 1
 damned 1
-x 9
-y 2
 end
 arch afloor_left
 x 9
@@ -1477,23 +1450,19 @@ end
 arch swashbuckler
 msg
 @match Tower|tower|No|no
-It's to the east of the Lone Town.
-I've heard there should be a powerful
-artifact, a cloak, inside that tower...
-If I only knew how to enter!!!
+It's to the east of the Lone Town. I've heard there should be a powerful artifact, a cloak, inside that tower... If I only knew how to enter!!!
 @match yes|Yes
-I have been there too, but I couldn't
-enter... :-(
+I have been there too, but I couldn't enter... :-(
 @match *
 Do you know Tower of Ordeal yet?
 endmsg
-type 0
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 9
 y 17
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 9
@@ -1571,11 +1540,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 10
+y 2
 move_block all
 no_magic 1
 damned 1
-x 10
-y 2
 end
 arch afloor_left
 x 10
@@ -1693,11 +1662,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 11
+y 2
 move_block all
 no_magic 1
 damned 1
-x 11
-y 2
 end
 arch afloor_left
 x 11
@@ -1822,11 +1791,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 12
+y 2
 move_block all
 no_magic 1
 damned 1
-x 12
-y 2
 end
 arch afloor_left
 x 12
@@ -1947,11 +1916,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 13
+y 2
 move_block all
 no_magic 1
 damned 1
-x 13
-y 2
 end
 arch afloor_left
 x 13
@@ -1973,9 +1942,9 @@ He lives in his Tower.
 Pupuly is in his second childhood.
 endmsg
 hp 500
-friendly 1
 x 13
 y 3
+friendly 1
 end
 arch afloor_left
 x 13
@@ -2037,9 +2006,9 @@ Poppy knows something new. Bow wow!
 endmsg
 Con 50
 hp 1000
-friendly 1
 x 13
 y 15
+friendly 1
 end
 arch afloor_left
 x 13
@@ -2071,16 +2040,16 @@ y 22
 end
 arch man
 name waiter
-face man.171
 msg
 @match *
 Welcome
 endmsg
+face man.171
 hp 180
-friendly 1
-unaggressive 0
 x 13
 y 22
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 13
@@ -2114,11 +2083,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 14
+y 2
 move_block all
 no_magic 1
 damned 1
-x 14
-y 2
 end
 arch afloor_left
 x 14
@@ -2170,31 +2139,23 @@ y 10
 end
 arch viking
 name Frederick
-face viking.111
 msg
 @match heinrich|Heinrich
-We live in sourth-eastern part of
-lone town.
+We live in sourth-eastern part of lone town.
 @match yes|Yes
-So you have traveled to many places
-yet, I guess?
-Have you ever seen the pre-historical
-site? My brother, Heinrich has searched
-for that pre-historical sites for many
-years now.
-If you know anything about it, please
-go and talk to Heinrich.
+So you have traveled to many places yet, I guess? Have you ever seen the pre-historical site? My brother, Heinrich has searched for that pre-historical sites for many years now. If you know anything about it, please go and talk to Heinrich.
 @match *
 Are you an adventurer?
 endmsg
-type 0
+face viking.111
 hp 200
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 14
 y 10
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 14
@@ -2284,11 +2245,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 15
+y 2
 move_block all
 no_magic 1
 damned 1
-x 15
-y 2
 end
 arch afloor_left
 x 15
@@ -2434,11 +2395,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 16
+y 2
 move_block all
 no_magic 1
 damned 1
-x 16
-y 2
 end
 arch afloor_left
 x 16
@@ -2518,26 +2479,24 @@ y 19
 end
 arch swashbuckler
 name Canvasser
-face swashbuckl.131
 msg
 @match yes|Yes
-Great, go to the guild of freedom,
-our guild.
+Great, go to the guild of freedom, our guild.
 @match [Ll]iberation|[Aa]rmy
 Do you wanna join us? :-)
 @match no|No
-You are a member of Regular Army,
-aren't you? - I'LL KILL YOU!!
+You are a member of Regular Army, aren't you? - I'LL KILL YOU!!
 @match *
 I'm a member of Liberation army.
 endmsg
-type 0
+face swashbuckl.131
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 16
 y 19
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 16
@@ -2591,11 +2550,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 17
+y 2
 move_block all
 no_magic 1
 damned 1
-x 17
-y 2
 end
 arch afloor_left
 x 17
@@ -2725,11 +2684,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 18
+y 2
 move_block all
 no_magic 1
 damned 1
-x 18
-y 2
 end
 arch afloor_left
 x 18
@@ -2851,11 +2810,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 19
+y 2
 move_block all
 no_magic 1
 damned 1
-x 19
-y 2
 end
 arch afloor_left
 x 19
@@ -2977,11 +2936,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 20
+y 2
 move_block all
 no_magic 1
 damned 1
-x 20
-y 2
 end
 arch afloor_left
 x 20
@@ -3038,13 +2997,9 @@ Hello stranger! Do you buy a booze for me?
 @match no|No|nope
 Then go away!
 @match yes|Yes
-Thank you. Did you ever heared of Maveric
-the founder of the Forgotten Town? Until he
-died there was everything better in the Town.
-As he died only adventurers discovered the
-entrance to the town hidden under the earth.
+Thank you. Did you ever heared of Maveric the founder of the Forgotten Town? Until he died there was everything better in the Town. As he died only adventurers discovered the entrance to the town hidden under the earth.
 @match where
-When you wants to see it travel to Darcap.
+When you want to see it travel to Darcap.
 endmsg
 x 20
 y 12
@@ -3137,11 +3092,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 21
+y 2
 move_block all
 no_magic 1
 damned 1
-x 21
-y 2
 end
 arch afloor_left
 x 21
@@ -3275,11 +3230,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 22
+y 2
 move_block all
 no_magic 1
 damned 1
-x 22
-y 2
 end
 arch afloor_left
 x 22
@@ -3308,32 +3263,23 @@ end
 arch dwarf_priest
 msg
 @match [Ee]lectric|[Pp]ower|[Pp]lant
-It's located to the west of Lone Town.
-Would you retrieve the report for me?
+It's located to the west of Lone Town. Would you retrieve the report for me?
 @match Thieves|thieves
-Their aggitating point (agito) is the
-Electric Power Plant.
+Their aggitating point (agito) is the Electric Power Plant.
 @match Nazgul|nazgul
 He is the boss of those Thieves.
 @match Note|note
-It is the Nazgul Report. We must know
-him - to defeat him. Now he stole it!
+It is the Nazgul Report. We must know him - to defeat him. Now he stole it!
 @match yes|Yes
-Thanks. If you get the Report,
-please put it on this table.
-I'll give you my special tool. But be
-careful! Nazgul is an odd creature.
-And his bodyguard, Ologhi is very
-strong.
+Thanks. If you get the Report, please put it on this table. I'll give you my special tool. But be careful! Nazgul is an odd creature. And his bodyguard, Ologhi is very strong.
 @match *
-My research Notes were stolen by
-Thieves!
+My research Notes were stolen by thieves!
 endmsg
 hp 280
-friendly 1
-unaggressive 0
 x 22
 y 6
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 22
@@ -3341,13 +3287,13 @@ y 7
 end
 arch create_dragon_mail
 name table
-face table_4.111
+slaying naz_report
 msg
 Thank you very much.
 I'll give you my paraphernalia
 endmsg
-slaying naz_report
 other_arch magnifier
+face table_4.111
 sp 1
 food 1
 x 22
@@ -3417,39 +3363,29 @@ arch guildmaster
 name Bob
 msg
 @match Nurnberg|nurnberg
-Nurnberg is located far east from
-this here.
+Nurnberg is located far east from this here.
 @match Lickmond
-He works for Bauer. He is the general
-of Regular Army.
+He works for Bauer. He is the general of Regular Army.
 @match Bauer
-He is the mayor of the Nurnberg.
-Shortly after Eureca was gone,
-he said:
-"The people of Lone Town kidnapped
-Eureca. We must not permit their
-reckless attempt."
-In fact, THEY have kidnapped Eureca,
-probably Bauer himself did it.
+He is the mayor of the Nurnberg. Shortly after Eureca was gone, he said:
+"The people of Lone Town kidnapped Eureca. We must not permit their reckless attempt."
+In fact, THEY have kidnapped Eureca, probably Bauer himself did it.
 @match Regular|regular
-Bauer and Lickmond are the leaders of
-Regular Army.
+Bauer and Lickmond are the leaders of Regular Army.
 @match Eureca|eureca
 He is the lord of this country.
 @match no|No
-They kidnapped the lord of the land,
-Eureca. Those dirty bastards!
+They kidnapped the lord of the land, Eureca. Those dirty bastards!
 @match yes|Yes
 ...
 @match *
-Do you know why we fight agaist
-the Regular Army?
+Do you know why we fight agaist the Regular Army?
 endmsg
 hp 500
-friendly 1
-unaggressive 0
 x 22
 y 21
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 22
@@ -3495,11 +3431,11 @@ y 2
 end
 arch bench_1_3
 name bar
+x 23
+y 2
 move_block all
 no_magic 1
 damned 1
-x 23
-y 2
 end
 arch afloor_left
 x 23
@@ -3575,26 +3511,21 @@ msg
 @match No|no
 You will regret your decision...
 @match spy|Spy
-Oops!
-Sure... I'm a spy of Regular Army.
-Please, don't tell anybody.
+Oops! Sure... I'm a spy of Regular Army. Please, don't tell anybody.
 @match Regular|regular
 Would you like to join us? :-)
 @match yes|Yes
-So, go to the guild of law, our guild.
-The password of the guild is
-"blackbird".
-Don't forget that...
+So, go to the guild of law, our guild. The password of the guild is "blackbird". Don't forget that...
 @match *
 Be quiet!
 endmsg
-type 0
 hp 100
-monster 1
-move_type walk
-friendly 1
 x 23
 y 17
+type 0
+move_type walk
+monster 1
+friendly 1
 end
 arch afloor_left
 x 23
@@ -3625,10 +3556,10 @@ x 23
 y 22
 end
 arch medium_guard
-friendly 1
-unaggressive 0
 x 23
 y 22
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 23

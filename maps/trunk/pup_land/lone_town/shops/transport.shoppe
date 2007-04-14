@@ -3903,6 +3903,20 @@ arch woodfloor2
 x 20
 y 16
 end
+arch chinese_dragon
+name Consuela
+msg
+@match *
+Welcome traveler. Teleports are in the rear. Traveling spells and gear are in the shop.
+endmsg
+x 20
+y 16
+level 140
+monster 0
+friendly 1
+unaggressive 1
+sleep 0
+end
 arch woodfloor2
 x 20
 y 17
@@ -4530,21 +4544,4 @@ end
 arch tree
 x 24
 y 24
-end
-arch chinese_dragon
-name Consuela
-msg
-@match *
-Welcome traveler. Teleports
-are in the rear. Traveling
-spells and gear are in the
-shop.
-endmsg
-x 20
-y 16
-level 140
-monster 0
-friendly 1
-unaggressive 1
-sleep 0
 end
