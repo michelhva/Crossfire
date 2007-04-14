@@ -31,6 +31,8 @@ def do_help():
 	whoami.Say(' - friendlylist')
 	whoami.Say(' - create')
 	whoami.Say(' - directory')
+	whoami.Say(' - event')
+	whoami.Say(' - light')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -222,6 +224,8 @@ def do_const():
 	whoami.Say("%s => %d"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH))
 	whoami.Say("Player type => %d"%Crossfire.Type.PLAYER)
 	whoami.Say("Move Fly High => %d"%Crossfire.Move.FLY_HIGH)
+	whoami.Say("MessageFlag NDI_BLUE => %d"%Crossfire.MessageFlag.NDI_BLUE)
+	whoami.Say("CostFlag F_NO_BARGAIN => %d"%Crossfire.CostFlag.NOBARGAIN)
 
 def dump_move(title, move):
 	moves = [
@@ -304,6 +308,17 @@ def do_directory():
 	whoami.Say('data = %s'%Crossfire.DataDirectory());
 	whoami.Say('scriptname = %s'%Crossfire.ScriptName());
 
+def do_event():
+	whoami.Say('event title = %s' %Crossfire.WhatIsEvent().Title)
+	whoami.Say('event slaying = %s' %Crossfire.WhatIsEvent().Slaying)
+	whoami.Say('event msg = %s' %Crossfire.WhatIsEvent().Message)
+
+def do_light():
+	whoami.Say('current light: %d'%whoami.Map.Light)
+	if (len(topic) > 1):
+		chg = int(topic[1])
+		whoami.Map.ChangeLight(chg)
+		whoami.Say('new light: %d'%whoami.Map.Light)
 
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
@@ -358,5 +373,9 @@ elif topic[0] == 'create':
 	do_create()
 elif topic[0] == 'directory':
 	do_directory()
+elif topic[0] == 'event':
+	do_event()
+elif topic[0] == 'light':
+	do_light()
 else:
 	do_help()

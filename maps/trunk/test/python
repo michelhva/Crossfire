@@ -66,6 +66,9 @@ y 2
 arch event_say
 title Python
 slaying /test/python.py
+msg
+Message de test
+endmsg
 end
 arch event_timer
 title Python
