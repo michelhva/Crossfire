@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name guild_freedom
+region lonetown
+width 20
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 18 17:43:33 1996
 endmsg
-width 20
-height 16
 end
 arch woodfloor
 end
@@ -223,17 +223,17 @@ It will be difficult.
 Hello. Don't disturb me, I'm doing
 ninja-training.
 endmsg
-type 0
 Dex -19
 hp 100
-speed 0.001000
-weight 700000
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 1
 y 14
+speed 0.001000
+type 0
+weight 700000
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 1
@@ -262,24 +262,20 @@ We are members of Liberation Army.
 @match Regular|regular
 We fight against Regular Army.
 @match No|no|Sumson|sumson
-Sumson is the spy of Liberation Army.
-He entered the city of Nurnberg,
-to collected information about
-our enemies, Regular Army.
+Sumson is the spy of Liberation Army. He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
 @match Yes|yes
-Really!?
-So, Where is he?
+Really!? So, Where is he?
 @match *
 Do you know Sumson?
 endmsg
-type 0
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 2
 y 1
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 2
@@ -590,25 +586,22 @@ end
 arch sage
 msg
 @match Barrier|barrier
-There is the barrior station to
-the south-east from Lone Town.
+There is the barrior station to the south-east from Lone Town.
 @match Regular|regular
 We fight against Regular Army.
 @match Bauer|bauer
-He is the leader of Regular Army.
-And he is the mayer of Nurnberg.
+He is the leader of Regular Army and he is the mayer of Nurnberg.
 @match Lone|lone|town|Town
 Welcome to lone town!
 @match *
-Mr.Bauer and his Regular Army built
-the Barrier station.
+Mr.Bauer and his Regular Army built the Barrier station.
 endmsg
 hp 180
+x 5
+y 13
 randomitems none
 friendly 1
 unaggressive 0
-x 5
-y 13
 end
 arch woodfloor
 x 5
@@ -672,14 +665,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
+x 6
+y 7
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
-x 6
-y 7
 end
 arch woodfloor
 x 6
@@ -689,14 +682,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
+x 6
+y 8
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
-x 6
-y 8
 end
 arch woodfloor
 x 6
@@ -776,11 +769,11 @@ arch light_guard
 name guard
 sp 0
 maxsp 0
+x 7
+y 6
 monster 0
 friendly 1
 can_cast_spell 0
-x 7
-y 6
 end
 arch woodfloor
 x 7
@@ -798,11 +791,11 @@ arch light_guard
 name guard
 sp 0
 maxsp 0
+x 7
+y 9
 monster 0
 friendly 1
 can_cast_spell 0
-x 7
-y 9
 end
 arch woodfloor
 x 7
@@ -930,10 +923,10 @@ y 5
 end
 arch charwoman
 hp 800
-friendly 1
-unaggressive 0
 x 9
 y 5
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 9
@@ -1076,14 +1069,14 @@ There's no doubt about that.
 @match *
 This is the guild of Liberation Army.
 endmsg
-type 0
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 11
 y 2
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 11
@@ -1117,14 +1110,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
+x 11
+y 7
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
-x 11
-y 7
 end
 arch woodfloor
 x 11
@@ -1134,14 +1127,14 @@ arch door_look_2
 hp 0
 exp 0
 ac 0
+x 11
+y 8
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
-x 11
-y 8
 end
 arch woodfloor
 x 11
@@ -1219,10 +1212,10 @@ y 6
 end
 arch man
 hp 180
-friendly 1
-unaggressive 0
 x 12
 y 6
+friendly 1
+unaggressive 0
 end
 arch woodfloor
 x 12
@@ -1249,45 +1242,45 @@ x 12
 y 11
 end
 arch table_4
-material 0
-value 0
-no_pick 1
-move_block all
 x 12
 y 11
+material 0
+value 0
+move_block all
+no_pick 1
 end
 arch magic_ear
 name 2
 msg
 @match protect nature
 endmsg
+x 12
+y 12
 connected 2
-x 12
-y 12
 end
 arch woodfloor
 x 12
 y 12
 end
 arch table_4
-material 0
-value 0
-no_pick 1
-move_block all
 x 12
 y 12
+material 0
+value 0
+move_block all
+no_pick 1
 end
 arch woodfloor
 x 12
 y 13
 end
 arch table_4
-material 0
-value 0
-no_pick 1
-move_block all
 x 12
 y 13
+material 0
+value 0
+move_block all
+no_pick 1
 end
 arch woodfloor
 x 12
@@ -1368,9 +1361,9 @@ name 1
 msg
 @match key
 endmsg
-connected 1
 x 13
 y 12
+connected 1
 end
 arch woodfloor
 x 13
@@ -1380,34 +1373,26 @@ arch human
 name Reception of Liberation Army
 msg
 @match protect nature
-Good, you passed the test!
-Talk to the guildmaster now. He will
-provide you with further instructions.
+Good, you passed the test! Talk to the guildmaster now. He will provide you with further instructions.
 @match Tower|tower
-The Tower of Ordeal lies to the east
-of lone town. I'll give you the key
-when you are ready.
+The Tower of Ordeal lies to the east of lone town. I'll give you the key when you are ready.
 @match key|Key
-Here it is. The key for the Tower of
-Ordeal.
+Here it is. The key for the Tower of Ordeal.
 @match scroll
 You must find the scroll by yourself.
 @match yes
-Fine, but I must test your combat
-ability first. Go to the Tower of
-Ordeal, and search for a scroll there.
+Fine, but I must test your combat ability first. Go to the Tower of Ordeal, and search for a scroll there.
 @match *
-I am a member of Liberation Army.
-Do you want to join us?
+I am a member of Liberation Army. Do you want to join us?
 endmsg
-type 0
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 13
 y 12
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch woodfloor
 x 13
@@ -1579,22 +1564,20 @@ x 15
 y 6
 end
 arch woodfloor
-type 41
 hp 19
 sp 5
-activate_on_push 1
-activate_on_release 1
-connected 3
 x 15
 y 7
+type 41
+connected 3
+activate_on_push 1
+activate_on_release 1
 end
 arch guildmaster
 name Dean, the guildmaster
 msg
 @match money
-Yes, money is an important issue
-during war. And that's why the
-Liberation Army cannot be defeated :-)
+Yes, money is an important issue during war. And that's why the Liberation Army cannot be defeated :-)
 @match *
 We're fighting for freedom.
 endmsg
@@ -1603,6 +1586,8 @@ maxhp 5000
 sp 0
 maxsp 0
 wc 30
+x 15
+y 7
 level 20
 resist_physical 100
 resist_magic 100
@@ -1632,8 +1617,6 @@ pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-x 15
-y 7
 end
 arch woodfloor
 x 15
@@ -1929,11 +1912,11 @@ arch teleporter
 name 4
 hp 15
 sp 7
+x 19
+y 1
 speed 0.000000
 resist_fire 30
 connected 4
-x 19
-y 1
 end
 arch guildmaster
 name Dean, the guildmaster
@@ -1959,6 +1942,8 @@ hp 5000
 maxhp 5000
 sp 0
 maxsp 0
+x 19
+y 1
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1987,8 +1972,6 @@ pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-x 19
-y 1
 end
 arch blocked
 x 19
@@ -1998,11 +1981,11 @@ arch teleporter
 name 1
 hp 11
 sp 12
+x 19
+y 3
 speed 0.000000
 resist_physical 30
 connected 1
-x 19
-y 3
 end
 arch key2
 name Ordeal key
@@ -2016,10 +1999,10 @@ y 4
 end
 arch button_small
 name 4
-weight 1000
-connected 4
 x 19
 y 5
+weight 1000
+connected 4
 end
 arch blocked
 x 19
@@ -2027,18 +2010,18 @@ y 6
 end
 arch button_small
 name 3
-weight 1000
-connected 3
 x 19
 y 7
+weight 1000
+connected 3
 end
 arch creator
 name 2
 other_arch small_shield
-resist_magic 30
-connected 2
 x 19
 y 7
+resist_magic 30
+connected 2
 end
 arch blocked
 x 19

@@ -1,14 +1,14 @@
 arch map
-region lonetown
 name dress3
+difficulty 16
+region lonetown
+width 15
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 27 04:38:51 1996
 endmsg
-x 15
-y 32
-level 16
 end
 arch blocked
 end
@@ -898,8 +898,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -923,8 +923,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -952,8 +952,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -981,8 +981,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1010,8 +1010,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1039,8 +1039,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1068,8 +1068,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1097,8 +1097,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1290,8 +1290,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1315,8 +1315,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1344,8 +1344,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1373,8 +1373,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1402,8 +1402,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1431,8 +1431,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1460,8 +1460,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1489,8 +1489,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1687,8 +1687,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -1712,8 +1712,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1741,8 +1741,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1770,8 +1770,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -1786,8 +1786,8 @@ arch igate_closed_2
 x 6
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 6
@@ -1801,8 +1801,8 @@ arch igate_closed_2
 x 6
 y 28
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 6
@@ -1969,8 +1969,7 @@ arch wizard
 name Magician Leader
 msg
 @match *
-You came here to fight with my?
-Haha, you wouldn't dare!
+You came here to fight with me? Haha, you wouldn't dare!
 endmsg
 face wizard_blue.171
 animation wizard_blue
@@ -1996,9 +1995,9 @@ type 0
 attacktype 11
 carrying 100
 weight 1500
+move_type walk
 is_animated 1
 monster 1
-move_type walk
 unaggressive 1
 can_cast_spell 1
 can_use_scroll 1
@@ -2075,8 +2074,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2100,8 +2099,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2129,8 +2128,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2158,8 +2157,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2174,8 +2173,8 @@ arch igate_closed_1
 x 7
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2196,8 +2195,8 @@ end
 arch button_lever
 x 7
 y 28
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2211,9 +2210,9 @@ arch igate_open_1
 x 7
 y 29
 speed 0.500000
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2424,8 +2423,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2449,8 +2448,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2478,9 +2477,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
-move_type walk
-move_type walk
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2508,8 +2506,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2524,8 +2522,8 @@ arch igate_closed_2
 x 8
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 8
@@ -2539,8 +2537,8 @@ arch igate_closed_2
 x 8
 y 28
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 8
@@ -2755,8 +2753,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -2780,8 +2778,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2809,8 +2807,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2838,8 +2836,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2867,8 +2865,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2896,8 +2894,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2925,8 +2923,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -2954,8 +2952,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -3159,8 +3157,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2
@@ -3184,8 +3182,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3213,8 +3211,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3242,8 +3240,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3271,8 +3269,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3300,8 +3298,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3329,8 +3327,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch unholy_ground
@@ -3358,8 +3356,8 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 end
 arch cobblestones2

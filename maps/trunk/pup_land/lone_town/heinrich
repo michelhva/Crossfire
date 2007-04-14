@@ -377,12 +377,7 @@ name diary of Heinrich
 msg
 .....
 Sat Jan 25 23:18:01 JST 1997
-   Today I had a good search all over
-   the northern jungle, but I couldn't
-   find anything pointing to the
-   prehistorical site.
-   I guess I'll go and search in the
-   eastern jungle..
+Today I had a good search all over the northern jungle, but I couldn't find anything pointing to the prehistorical site. I guess I'll go and search in the eastern jungle..
 endmsg
 x 3
 y 12
@@ -491,8 +486,8 @@ exp 0
 ac 0
 x 4
 y 10
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch afloor_right
@@ -546,8 +541,8 @@ exp 0
 ac 0
 x 5
 y 1
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch cobblestones2
@@ -568,8 +563,8 @@ exp 0
 ac 0
 x 5
 y 4
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch woodfloor
@@ -687,8 +682,8 @@ exp 0
 ac 0
 x 6
 y 7
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch woodfloor
@@ -808,8 +803,8 @@ exp 0
 ac 0
 x 7
 y 11
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch cobblestones2
@@ -1090,8 +1085,8 @@ exp 0
 ac 0
 x 10
 y 10
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch afloor_right

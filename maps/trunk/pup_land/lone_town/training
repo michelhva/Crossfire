@@ -1,16 +1,15 @@
 arch map
-region lonetown
 name training
+difficulty 1
+region lonetown
+width 25
+height 25
+enter_x 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 20:01:18 1996
 endmsg
-hp 1
-sp 0
-x 25
-y 25
-level 1
 end
 arch cobblestones2
 end
@@ -593,8 +592,8 @@ y 3
 direction 1
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 stand_still 1
 end
@@ -617,8 +616,8 @@ x 4
 y 5
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -640,8 +639,8 @@ x 4
 y 7
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -849,8 +848,8 @@ end
 arch trigger
 x 5
 y 16
-protected 11
 connected 11
+protected 11
 end
 arch kobold
 x 5
@@ -958,8 +957,8 @@ y 3
 direction 3
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -980,8 +979,8 @@ x 6
 y 5
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1023,8 +1022,8 @@ x 6
 y 9
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1068,8 +1067,8 @@ end
 arch gateTrg1
 x 6
 y 15
-protected 11
 connected 11
+protected 11
 end
 arch pstone_1
 x 6
@@ -1165,15 +1164,9 @@ arch fighter
 name Instructor
 msg
 @match [Cc]ordish
-Cordish was my worst pupil ever.
-I couldn't teach him how to fight
-because he always ran away.
-Unbelievable that Eureca accepted such
-a person as royal servant.
+Cordish was my worst pupil ever. I couldn't teach him how to fight because he always ran away. Unbelievable that Eureca accepted such a person as royal servant.
 @match *
-Here is the Training Center of
-Liberation Army.
-Do you want to be my pupil?
+Here is the Training Center of Liberation Army. Do you want to be my pupil?
 endmsg
 Con 30
 hp 5000
@@ -1250,8 +1243,8 @@ end
 arch trigger
 x 7
 y 14
-protected 11
 connected 11
+protected 11
 end
 arch cobblestones2
 x 7
@@ -1374,8 +1367,8 @@ x 8
 y 3
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1397,8 +1390,8 @@ x 8
 y 5
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1439,8 +1432,8 @@ x 8
 y 9
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1743,8 +1736,8 @@ y 3
 direction 1
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1766,8 +1759,8 @@ x 10
 y 5
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1789,8 +1782,8 @@ x 10
 y 7
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1812,8 +1805,8 @@ x 10
 y 9
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -2199,8 +2192,8 @@ end
 arch trigger
 x 12
 y 14
-protected 2
 connected 2
+protected 2
 end
 arch cobblestones2
 x 12
@@ -2305,8 +2298,8 @@ end
 arch trigger
 x 13
 y 2
-protected 3
 connected 3
+protected 3
 end
 arch cobblestones2
 x 13
@@ -2363,7 +2356,7 @@ Level:          middle
 Contents:       orcs
 Comments:       We test your guts
 Note:           Please try this room
-                AFTER the Room 1.
+AFTER the Room 1.
 endmsg
 x 13
 y 14
@@ -2375,8 +2368,8 @@ Click.
 endmsg
 x 13
 y 15
-protected 2
 connected 2
+protected 2
 end
 arch cobblestones2
 x 13
@@ -2386,8 +2379,8 @@ arch gateTrg1
 sp 1
 x 13
 y 15
-protected 2
 connected 2
+protected 2
 end
 arch small_stones
 x 13
@@ -2484,8 +2477,8 @@ end
 arch gateTrg2
 x 14
 y 1
-protected 3
 connected 3
+protected 3
 end
 arch cobblestones2
 x 14
@@ -2623,9 +2616,9 @@ arch button_small
 face button_sma.112
 x 14
 y 18
-protected 200
 value 1
 connected 200
+protected 200
 end
 arch kobold
 x 14
@@ -2706,8 +2699,8 @@ end
 arch trigger
 x 15
 y 2
-protected 3
 connected 3
+protected 3
 end
 arch cobblestones2
 x 15
@@ -2844,8 +2837,8 @@ end
 arch gate_open_2
 x 15
 y 18
-protected 200
 connected 200
+protected 200
 end
 arch kobold
 x 15
@@ -3085,8 +3078,8 @@ end
 arch grate_closed_2
 x 16
 y 18
-protected 100
 connected 100
+protected 100
 end
 arch pstone_1
 x 16
@@ -3289,8 +3282,8 @@ end
 arch button_small
 x 17
 y 18
-protected 100
 connected 100
+protected 100
 end
 arch pstone_1
 x 17
@@ -4062,7 +4055,7 @@ msg
 If you are locked into the room,
 shout, or tell someone "SOS",
 or cast word of recall at some spot.
-                          ^^^^
+^^^^
 endmsg
 x 21
 y 13
