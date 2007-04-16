@@ -107,12 +107,12 @@ CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFGTK = @CFGTK@
 CFLAGS = @CFLAGS@
+CF_DATADIR = @CF_DATADIR@
 CF_SUBDIRS = @CF_SUBDIRS@
 CP = @CP@
 CPP = @CPP@
 CPPFLAGS = @CPPFLAGS@
 CYGPATH_W = @CYGPATH_W@
-DATADIR = @DATADIR@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
 DEPEND = @DEPEND@
@@ -122,6 +122,7 @@ ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
+GREP = @GREP@
 GTK2_CFLAGS = @GTK2_CFLAGS@
 GTK2_LIBS = @GTK2_LIBS@
 GTK_CFLAGS = @GTK_CFLAGS@
@@ -172,15 +173,13 @@ TAR = @TAR@
 TARGET = @TARGET@
 VERSION = @VERSION@
 WIN32_LIBS = @WIN32_LIBS@
+XMKMF = @XMKMF@
 XPM = @XPM@
 X_CFLAGS = @X_CFLAGS@
 X_EXTRA_LIBS = @X_EXTRA_LIBS@
 X_LIBS = @X_LIBS@
 X_PRE_LIBS = @X_PRE_LIBS@
 ac_ct_CC = @ac_ct_CC@
-ac_ct_RANLIB = @ac_ct_RANLIB@
-ac_ct_STRIP = @ac_ct_STRIP@
-ac_pt_PKG_CONFIG = @ac_pt_PKG_CONFIG@
 am__fastdepCC_FALSE = @am__fastdepCC_FALSE@
 am__fastdepCC_TRUE = @am__fastdepCC_TRUE@
 am__include = @am__include@
@@ -195,23 +194,30 @@ build_cpu = @build_cpu@
 build_os = @build_os@
 build_vendor = @build_vendor@
 datadir = @datadir@
+datarootdir = @datarootdir@
+docdir = @docdir@
+dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 host = @host@
 host_alias = @host_alias@
 host_cpu = @host_cpu@
 host_os = @host_os@
 host_vendor = @host_vendor@
+htmldir = @htmldir@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
+localedir = @localedir@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
+pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
+psdir = @psdir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
@@ -534,12 +540,14 @@ def-keys.h: def-keys
 
 svnversion.h: FORCE
 	OUTPUT_DATA='/* Auto-generated at build time. */'; \
-	if (test -n "$(SVNVERSION)" && test -d .svn); then \
+	if test -n "$(SVNVERSION)" -a -d .svn; then \
 		OUTPUT_DATA=`echo "$$OUTPUT_DATA"; echo -n '#define SVN_REV "'; $(SVNVERSION) -n`'"'; \
 	fi; \
-	if (test "$$OUTPUT_DATA" != "`cat svnversion.h`"); then \
+	if test ! -e svnversion.h; then \
 		echo "$$OUTPUT_DATA" > svnversion.h; \
-	fi; \
+	elif test "$$OUTPUT_DATA" != "`cat svnversion.h`"; then \
+		echo "$$OUTPUT_DATA" > svnversion.h; \
+	fi
 
 FORCE:        
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
