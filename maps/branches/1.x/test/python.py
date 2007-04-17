@@ -34,6 +34,7 @@ def do_help():
 	whoami.Say(' - event')
 	whoami.Say(' - light')
 	whoami.Say(' - attacktype')
+	whoami.Say(' - players')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -328,6 +329,12 @@ def do_attacktype():
 		if ( at & Crossfire.WhoIsActivator().AttackType == at):
 			whoami.Say(Crossfire.AttackTypeName[ at ])
 
+def do_players():
+	players = Crossfire.GetPlayers()
+	whoami.Say('Players logged in:')
+	for pl in players:
+		whoami.Say(' - %s'%pl.Name)
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -387,5 +394,7 @@ elif topic[0] == 'light':
 	do_light()
 elif topic[0] == 'attacktype':
 	do_attacktype()
+elif topic[0] == 'players':
+	do_players()
 else:
 	do_help()
