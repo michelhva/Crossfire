@@ -31,11 +31,11 @@ import java.io.*;
  */
 public class Spell
 {
-    private BufferedImage myspellpic;
+    private final BufferedImage myspellpic;
     private String myspellname;
-    private String myid;
+    private final String myid;
 
-    private int     mytag;
+    private final int     mytag;
     private int     mylevel;
     private int     mycastingtime;
     private int     mymana;
@@ -43,9 +43,9 @@ public class Spell
     private int     mydamage;
     private int     myskill;
     private int     mypath;
-    private Face    myface;
-    private String  myname;
-    private String  mymessage;
+    private final Face    myface;
+    private final String  myname;
+    private final String  mymessage;
 
     public int getTag()
     {
