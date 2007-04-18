@@ -31,7 +31,7 @@ import java.io.*;
  */
 public class Spell
 {
-    private BufferedImage myspellpic = null;
+    private BufferedImage myspellpic;
     private String myspellname;
     private String myid;
 
@@ -122,10 +122,12 @@ public class Spell
 
     public Spell(Face f, int tag, String spellname, String spellmessage)
     {
+        myspellpic = null;
         myface = f;
         mytag = tag;
         myname = spellname;
         mymessage = spellmessage;
+        myid = null;
     }
 
     public Spell(String filename, String spellname, String id) throws IOException
@@ -136,7 +138,10 @@ public class Spell
         {
             throw new IllegalArgumentException("resource '"+filename+"' does not exist");
         }
+        myface = null;
+        mytag = 0;
         myname = spellname;
+        mymessage = "";
         myid = id;
     }
     public String getInternalName()
