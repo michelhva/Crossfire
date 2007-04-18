@@ -28,25 +28,25 @@ import  com.realtime.crossfire.jxclient.*;
  */
 public class CfItem
 {
-    int mytag;
-    int myflags;
-    int myweight;
-    Face myface;
-    String myname;
-    String mynamepl;
-    int mynrof;
-    int mylocation;
-    int mytype = -1;
+    private int mytag;
+    private int myflags;
+    private int myweight;
+    private Face myface;
+    private String myname;
+    private String mynamepl;
+    private int mynrof;
+    private int mylocation;
+    private int mytype = -1;
 
-    boolean applied = false;
-    boolean location = false;
-    boolean unpaid = false;
-    boolean magic = false;
-    boolean cursed = false;
-    boolean damned = false;
-    boolean open = false;
-    boolean nopick = false;
-    boolean locked = false;
+    private boolean applied = false;
+    private boolean location = false;
+    private boolean unpaid = false;
+    private boolean magic = false;
+    private boolean cursed = false;
+    private boolean damned = false;
+    private boolean open = false;
+    private boolean nopick = false;
+    private boolean locked = false;
 
     public static final int F_APPLIED      = 0x000F;
     public static final int F_LOCATION     = 0x00F0;
