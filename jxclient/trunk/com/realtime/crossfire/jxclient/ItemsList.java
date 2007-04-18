@@ -226,8 +226,9 @@ public class ItemsList
             pos+=17;
             byte buf[] = new byte[namelength];
             dis.readFully(buf);
-            String name = new String(buf);
-            String[] names = name.split("\0",2);
+            String[] names = new String(buf).split("\0", 2);
+            String name = names[0];
+            String namePl = names[names.length >= 2 ? 1 : 0];
             pos+=namelength;
             int anim = dis.readUnsignedShort();
             int animspeed = dis.readUnsignedByte();
@@ -236,7 +237,7 @@ public class ItemsList
             pos+=9;
             Faces.ensureFaceExists(faceid);
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
-                                     names[0],names[1], nrof, type);
+                                     name, namePl, nrof, type);
             if (myitems.containsKey(String.valueOf(tag)))
             {
                 items.remove(myitems.get(String.valueOf(tag)));
@@ -268,8 +269,9 @@ public class ItemsList
             pos+=17;
             byte buf[] = new byte[namelength];
             dis.readFully(buf);
-            String name = new String(buf);
-            String[] names = name.split("\0",2);
+            String[] names = new String(buf).split("\0", 2);
+            String name = names[0];
+            String namePl = names[names.length >= 2 ? 1 : 0];
             pos+=namelength;
             int anim = dis.readUnsignedShort();
             int animspeed = dis.readUnsignedByte();
@@ -277,7 +279,7 @@ public class ItemsList
             pos+=7;
             Faces.ensureFaceExists(faceid);
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
-                                     names[0],names[1], nrof);
+                                     name, namePl, nrof);
             if (myitems.containsKey(String.valueOf(tag)))
             {
                 items.remove(myitems.get(String.valueOf(tag)));
@@ -345,9 +347,10 @@ public class ItemsList
             int namelength = dis.readUnsignedByte();
             byte buf[] = new byte[namelength];
             dis.readFully(buf);
-            String name = new String(buf);
-            String[] names = name.split("\0",2);
-            item.setName(names[0],names[1]);
+            String[] names = new String(buf).split("\0",2);
+            String name = names[0];
+            String namePl = names[names.length >= 2 ? 1 : 0];
+            item.setName(name, namePl);
             pos += namelength;
         }
         if ((flags & CfItem.UPD_ANIM)!=0)
