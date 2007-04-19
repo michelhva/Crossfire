@@ -64,4 +64,23 @@ public abstract class GUIItemItem extends GUIItem
             g.drawString(String.valueOf(item.getNrOf()), 1, 1+myfont.getSize());
         }
     }
+
+    protected void button2Clicked(JXCWindow jxcw)
+    {
+        final CfItem item = getItem();
+        if (item == null)
+        {
+            return;
+        }
+
+        try
+        {
+            jxcw.getServerConnection().writePacket("apply "+item.getTag());
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+            System.exit(0);
+        }
+    }
 }

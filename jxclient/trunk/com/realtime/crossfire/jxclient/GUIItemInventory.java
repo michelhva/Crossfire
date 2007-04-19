@@ -93,25 +93,6 @@ public class GUIItemInventory extends GUIItemItem
         }
     }
 
-    protected void button2Clicked(JXCWindow jxcw)
-    {
-        final CfItem item = getItem();
-        if (item == null)
-        {
-            return;
-        }
-
-        try
-        {
-            jxcw.getServerConnection().writePacket("apply "+item.getTag());
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-            System.exit(0);
-        }
-    }
-
     protected void button3Clicked(JXCWindow jxcw)
     {
         final CfItem item = getItem();
