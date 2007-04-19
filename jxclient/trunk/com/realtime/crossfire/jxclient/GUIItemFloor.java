@@ -68,10 +68,6 @@ public class GUIItemFloor extends GUIItemItem
         }
     }
 
-    protected void button2Clicked(JXCWindow jxcw)
-    {
-    }
-
     protected void button3Clicked(JXCWindow jxcw)
     {
         final CfItem item = getItem();
