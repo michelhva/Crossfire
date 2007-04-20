@@ -80,35 +80,35 @@ public class ItemsList
             System.exit(0);
         }
     }
-    public static java.util.List getCrossfireDelitemListeners()
+    public static java.util.List<CrossfireDelitemListener> getCrossfireDelitemListeners()
     {
         return mylisteners_delitem;
     }
-    public static java.util.List getCrossfireItem1Listeners()
+    public static java.util.List<CrossfireItem1Listener> getCrossfireItem1Listeners()
     {
         return mylisteners_item1;
     }
-    public static java.util.List getCrossfireItem2Listeners()
+    public static java.util.List<CrossfireItem2Listener> getCrossfireItem2Listeners()
     {
         return mylisteners_item2;
     }
-    public static java.util.List getCrossfireUpditemListeners()
+    public static java.util.List<CrossfireUpditemListener> getCrossfireUpditemListeners()
     {
         return mylisteners_upditem;
     }
-    public static java.util.List getCrossfireDelinvListeners()
+    public static java.util.List<CrossfireDelinvListener> getCrossfireDelinvListeners()
     {
         return mylisteners_delinv;
     }
-    public static java.util.List getCrossfireSpellAddedListeners()
+    public static java.util.List<CrossfireSpellAddedListener> getCrossfireSpellAddedListeners()
     {
         return mylisteners_addspell;
     }
-    public static java.util.List getCrossfireSpellUpdatedListeners()
+    public static java.util.List<CrossfireSpellUpdatedListener> getCrossfireSpellUpdatedListeners()
     {
         return mylisteners_updspell;
     }
-    public static java.util.List getCrossfireSpellRemovedListeners()
+    public static java.util.List<CrossfireSpellRemovedListener> getCrossfireSpellRemovedListeners()
     {
         return mylisteners_delspell;
     }
@@ -137,13 +137,13 @@ public class ItemsList
     {
         return myspellmode;
     }
-    public static java.util.List getItems(int location)
+    public static java.util.List<CfItem> getItems(int location)
     {
         java.util.List<CfItem> l = new ArrayList<CfItem>();
-        Iterator it = items.iterator();
+        Iterator<CfItem> it = items.iterator();
         while (it.hasNext())
         {
-            CfItem item = (CfItem)it.next();
+            CfItem item = it.next();
             if (item.getLocation() == location)
                 l.add(item);
         }
@@ -168,10 +168,10 @@ public class ItemsList
             int tokill   = dis.readInt();
             pos+=4;
             myitems.remove(String.valueOf(tokill));
-            Iterator it = items.iterator();
+            Iterator<CfItem> it = items.iterator();
             while (it.hasNext())
             {
-                CfItem item = (CfItem)it.next();
+                CfItem item = it.next();
                 if (item.getTag() == tokill)
                 {
                     kickme = item;
@@ -192,13 +192,13 @@ public class ItemsList
 
         dis.readFully(buf);
         int tokill = Integer.parseInt(new String(buf));
-        java.util.List killed = new ArrayList();
+        java.util.List<CfItem> killed = new ArrayList<CfItem>();
 
         CfItem item;
-        Iterator it = items.iterator();
+        Iterator<CfItem> it = items.iterator();
         while (it.hasNext())
         {
-            item = (CfItem)it.next();
+            item = it.next();
             if (item.getLocation() == tokill)
                 killed.add(item);
         }
@@ -246,10 +246,10 @@ public class ItemsList
             myitems.put(String.valueOf(tag), item);
             items.add(item);
             CrossfireCommandItem2Event evt = new CrossfireCommandItem2Event(new Object(),item);
-            Iterator it = mylisteners_item2.iterator();
+            Iterator<CrossfireItem2Listener> it = mylisteners_item2.iterator();
             while (it.hasNext())
             {
-                ((CrossfireItem2Listener)it.next()).CommandItem2Received(evt);
+                it.next().CommandItem2Received(evt);
             }
         }
     }
@@ -288,10 +288,10 @@ public class ItemsList
             myitems.put(String.valueOf(tag), item);
             items.add(item);
             CrossfireCommandItem1Event evt = new CrossfireCommandItem1Event(new Object(),item);
-            Iterator it = mylisteners_item1.iterator();
+            Iterator<CrossfireItem1Listener> it = mylisteners_item1.iterator();
             while (it.hasNext())
             {
-                ((CrossfireItem1Listener)it.next()).CommandItem1Received(evt);
+                it.next().CommandItem1Received(evt);
             }
         }
     }
@@ -372,10 +372,10 @@ public class ItemsList
             pos+=4;
         }
         CrossfireCommandUpditemEvent evt = new CrossfireCommandUpditemEvent(new Object(),item);
-        Iterator it = mylisteners_upditem.iterator();
+        Iterator<CrossfireUpditemListener> it = mylisteners_upditem.iterator();
         while (it.hasNext())
         {
-            CrossfireUpditemListener guielt = (CrossfireUpditemListener)it.next();
+            CrossfireUpditemListener guielt = it.next();
             guielt.CommandUpditemReceived(evt);
         }
     }
@@ -851,10 +851,10 @@ public class ItemsList
 
             CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(
                 new Object(),sp);
-            Iterator it = mylisteners_addspell.iterator();
+            Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
             while (it.hasNext())
             {
-                ((CrossfireSpellAddedListener)it.next()).CommandAddSpellReceived(evt);
+                it.next().CommandAddSpellReceived(evt);
             }
 
         }

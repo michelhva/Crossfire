@@ -47,19 +47,19 @@ public class Map
     private static MapSquare[][] map = new MapSquare[ServerConnection.MAP_WIDTH+20]
             [ServerConnection.MAP_HEIGHT+20];
 
-    public static java.util.List getCrossfireMap1Listeners()
+    public static java.util.List<CrossfireMap1Listener> getCrossfireMap1Listeners()
     {
         return mylisteners_map1;
     }
-    public static java.util.List getCrossfireNewmapListeners()
+    public static java.util.List<CrossfireNewmapListener> getCrossfireNewmapListeners()
     {
         return mylisteners_newmap;
     }
-    public static java.util.List getCrossfireMapscrollListeners()
+    public static java.util.List<CrossfireMapscrollListener> getCrossfireMapscrollListeners()
     {
         return mylisteners_mapscroll;
     }
-    public static java.util.List getCrossfireMagicmapListeners()
+    public static java.util.List<CrossfireMagicmapListener> getCrossfireMagicmapListeners()
     {
         return mylisteners_magicmap;
     }
@@ -91,10 +91,10 @@ public class Map
                                               Integer.parseInt(packs[2]),
                                               Integer.parseInt(packs[3]),
                                               packs[4].getBytes());
-        Iterator it = mylisteners_magicmap.iterator();
+        Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
         while (it.hasNext())
         {
-            ((CrossfireMagicmapListener)it.next()).CommandMagicmapReceived(evt);
+            it.next().CommandMagicmapReceived(evt);
         }
     }
     public static void newMap(DataInputStream dis) throws IOException
@@ -110,10 +110,10 @@ public class Map
         }
         ServerConnection.writePacket("mapredraw");
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        Iterator it = mylisteners_newmap.iterator();
+        Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
-            ((CrossfireNewmapListener)it.next()).CommandNewmapReceived(evt);
+            it.next().CommandNewmapReceived(evt);
         }
 //        long etime = System.nanoTime();
 //        System.out.println("Free Memory before Newmap GC:"+
@@ -266,10 +266,10 @@ public class Map
         CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(
                 new Object(), dx, dy);
 
-        Iterator it = mylisteners_mapscroll.iterator();
+        Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
         while (it.hasNext())
         {
-            ((CrossfireMapscrollListener)it.next()).CommandMapscrollReceived(evt);
+            it.next().CommandMapscrollReceived(evt);
         }
     }
     public static void changeSquare(int x, int y, int z, int darkness, Face face)
@@ -338,10 +338,10 @@ public class Map
                 l.add(map[x][y]);
             }
             CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(),l);
-            Iterator it = mylisteners_map1.iterator();
+            Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
             while (it.hasNext())
             {
-                ((CrossfireMap1Listener)it.next()).CommandMap1Received(evt);
+                it.next().CommandMap1Received(evt);
             }
         }
     }
@@ -359,10 +359,10 @@ public class Map
             }
         }
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        Iterator it = mylisteners_newmap.iterator();
+        Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
-            ((CrossfireNewmapListener)it.next()).CommandNewmapReceived(evt);
+            it.next().CommandNewmapReceived(evt);
         }
     }
     public static void updateFace(int pixnum)
@@ -386,10 +386,10 @@ public class Map
             }
         }
         CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(),l);
-        Iterator it = mylisteners_map1.iterator();
+        Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
         while (it.hasNext())
         {
-            ((CrossfireMap1Listener)it.next()).CommandMap1Received(evt);
+            it.next().CommandMap1Received(evt);
         }
     }
 

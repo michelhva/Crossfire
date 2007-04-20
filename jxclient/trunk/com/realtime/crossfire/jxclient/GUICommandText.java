@@ -69,7 +69,7 @@ public class GUICommandText extends GUIText implements KeyListener
                             String[] cmds = cmdl.split(";");
                             java.util.List list_parms;
                             GUICommand guicmd;
-                            java.util.List <GUICommand> list_commands =
+                            java.util.List<GUICommand> list_commands =
                                     new ArrayList<GUICommand>();
 
                             for(int i=0; i<cmds.length;i++)
