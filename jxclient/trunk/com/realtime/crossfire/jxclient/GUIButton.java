@@ -93,10 +93,10 @@ public class GUIButton extends GUIElement
         switch(b)
         {
             case MouseEvent.BUTTON1:
-                Iterator it = mylist.iterator();
+                Iterator<GUICommand> it = mylist.iterator();
                 while (it.hasNext())
                 {
-                    ((GUICommand)it.next()).execute();
+                    it.next().execute();
                 }
                 active = false;
                 JXCWindow jxc = (JXCWindow)(e.getSource());

@@ -207,10 +207,10 @@ public class ServerConnection extends Thread
     {
         synchronized(bout)
         {
-            Iterator it = scripts_monitor.iterator();
+            Iterator<CrossfireScriptMonitorListener> it = scripts_monitor.iterator();
             while (it.hasNext())
             {
-                ((CrossfireScriptMonitorListener)it.next()).commandSent(str);
+                it.next().commandSent(str);
             }
 
             bout.writeShort((short)str.length());
@@ -950,10 +950,10 @@ public class ServerConnection extends Thread
 
         CrossfireCommandDrawinfoEvent evt = new
                 CrossfireCommandDrawinfoEvent(this,datas[1], Integer.parseInt(datas[0]));
-        Iterator it = mylisteners_drawinfo.iterator();
+        Iterator<CrossfireDrawinfoListener> it = mylisteners_drawinfo.iterator();
         while (it.hasNext())
         {
-            ((CrossfireDrawinfoListener)it.next()).CommandDrawinfoReceived(evt);
+            it.next().CommandDrawinfoReceived(evt);
         }
     }
 
@@ -1077,11 +1077,11 @@ public class ServerConnection extends Thread
 
         CrossfireCommandQueryEvent evt = new
                 CrossfireCommandQueryEvent(this,datas[1], Integer.parseInt(datas[0]));
-        Iterator it = mylisteners_query.iterator();
+        Iterator<CrossfireQueryListener> it = mylisteners_query.iterator();
         setStatus(STATUS_QUERY);
         while (it.hasNext())
         {
-            ((CrossfireQueryListener)it.next()).CommandQueryReceived(evt);
+            it.next().CommandQueryReceived(evt);
         }
     }
 
@@ -1131,10 +1131,10 @@ public class ServerConnection extends Thread
                 CrossfireCommandDrawextinfoEvent(this,
                     Integer.parseInt(datas[0]), Integer.parseInt(datas[1]),
                     Integer.parseInt(datas[2]), datas[3]);
-        Iterator it = mylisteners_drawextinfo.iterator();
+        Iterator<CrossfireDrawextinfoListener> it = mylisteners_drawextinfo.iterator();
         while (it.hasNext())
         {
-            ((CrossfireDrawextinfoListener)it.next()).CommandDrawextinfoReceived(evt);
+            it.next().CommandDrawextinfoReceived(evt);
         }
     }
 
@@ -1168,7 +1168,7 @@ public class ServerConnection extends Thread
      * @return Known items, as a List object.
      * @since 1.0
      */
-    public java.util.List getItems(int location)
+    public java.util.List<CfItem> getItems(int location)
     {
         return ItemsList.getItems(location);
     }
@@ -1194,10 +1194,10 @@ public class ServerConnection extends Thread
     {
         CrossfireCommandDrawinfoEvent evt = new
                 CrossfireCommandDrawinfoEvent(this,msg,col);
-        Iterator it = mylisteners_drawinfo.iterator();
+        Iterator<CrossfireDrawinfoListener> it = mylisteners_drawinfo.iterator();
         while (it.hasNext())
         {
-            ((CrossfireDrawinfoListener)it.next()).CommandDrawinfoReceived(evt);
+            it.next().CommandDrawinfoReceived(evt);
         }
     }
 }

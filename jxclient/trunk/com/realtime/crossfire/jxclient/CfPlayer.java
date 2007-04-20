@@ -45,11 +45,11 @@ public class CfPlayer extends CfItem
     {
         return mystats;
     }
-    public static java.util.List getCrossfirePlayerListeners()
+    public static java.util.List<CrossfirePlayerListener> getCrossfirePlayerListeners()
     {
         return mylisteners_player;
     }
-    public static java.util.List getCrossfireStatsListeners()
+    public static java.util.List<CrossfireStatsListener> getCrossfireStatsListeners()
     {
         return mylisteners_stats;
     }
@@ -159,10 +159,10 @@ public class CfPlayer extends CfItem
             }
         }
         CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(),mystats);
-        Iterator it = mylisteners_stats.iterator();
+        Iterator<CrossfireStatsListener> it = mylisteners_stats.iterator();
         while (it.hasNext())
         {
-            ((CrossfireStatsListener)it.next()).CommandStatsReceived(evt);
+            it.next().CommandStatsReceived(evt);
         }
     }
 }

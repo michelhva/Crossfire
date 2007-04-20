@@ -131,11 +131,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void setCurrentSpell(Spell s)
     {
         mycurrentspell = s;
-        Iterator it = myspelllisteners.iterator();
+        Iterator<SpellListener> it = myspelllisteners.iterator();
         SpellChangedEvent evt = new SpellChangedEvent(this, s);
         while (it.hasNext())
         {
-            SpellListener sl = (SpellListener)it.next();
+            SpellListener sl = it.next();
             sl.SpellChanged(evt);
         }
     }
@@ -147,11 +147,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
         KeyBinding ok;
-        Iterator it = mykeybindings.iterator();
+        Iterator<KeyBinding> it = mykeybindings.iterator();
         KeyBinding elected = null;
         while(it.hasNext())
         {
-            ok = (KeyBinding)it.next();
+            ok = it.next();
             if (ok.equals(kb))
             {
                 elected = ok;
@@ -174,10 +174,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void deleteKeyBinding(int keycode, int keymod)
     {
-        Iterator it = mykeybindings.iterator();
+        Iterator<KeyBinding> it = mykeybindings.iterator();
         while(it.hasNext())
         {
-            KeyBinding kb = (KeyBinding)it.next();
+            KeyBinding kb = it.next();
             if ((kb.getKeyCode()==keycode)&&(kb.getKeyModifiers()==keymod))
             {
                 mykeybindings.remove(kb);
@@ -277,17 +277,17 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             FileOutputStream fos = new FileOutputStream(filename);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeInt(mykeybindings.size());
-            Iterator it = mykeybindings.iterator();
+            Iterator<KeyBinding> it = mykeybindings.iterator();
             while(it.hasNext())
             {
-                KeyBinding kb = (KeyBinding)it.next();
+                KeyBinding kb = it.next();
                 oos.writeInt(kb.getKeyCode());
                 oos.writeInt(kb.getKeyModifiers());
                 oos.writeInt(kb.getCommands().size());
-                Iterator ic = kb.getCommands().iterator();
+                Iterator<GUICommand> ic = kb.getCommands().iterator();
                 while (ic.hasNext())
                 {
-                    GUICommand guic = (GUICommand)ic.next();
+                    GUICommand guic = ic.next();
                     java.util.List guil = (java.util.List)guic.getParams();
                     oos.writeObject((String)guil.get(1));
                 }
@@ -359,10 +359,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void activateFirstTextArea(java.util.List<GUIElement> list)
     {
-        Iterator it = list.iterator();
+        Iterator<GUIElement> it = list.iterator();
         while (it.hasNext())
         {
-            GUIElement e = (GUIElement)it.next();
+            GUIElement e = it.next();
             if (e instanceof com.realtime.crossfire.jxclient.GUIText)
             {
                 if (e.isVisible())
@@ -455,10 +455,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             g.setColor(Color.BLACK);
             g.fillRect(0,0,getWidth(),getHeight());
         }
-        Iterator it = mygui.iterator();
+        Iterator<GUIElement> it = mygui.iterator();
         while (it.hasNext())
         {
-            GUIElement element = (GUIElement)it.next();
+            GUIElement element = it.next();
             if (element.isVisible())
             {
                 if (element instanceof GUIMap)
@@ -486,13 +486,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void redrawGUIDialog(Graphics g)
     {
-        Iterator it;
+        Iterator<GUIElement> it;
         if (getDialogStatus()!=DLG_NONE)
         {
             it = mydialog_current.iterator();
             while (it.hasNext())
             {
-                GUIElement element = (GUIElement)it.next();
+                GUIElement element = it.next();
 
                 if (element.isVisible())
                 {
@@ -586,16 +586,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
             return;
-        Iterator it = mykeybindings.iterator();
+        Iterator<KeyBinding> it = mykeybindings.iterator();
         while(it.hasNext())
         {
-            KeyBinding kb = (KeyBinding)it.next();
+            KeyBinding kb = it.next();
             if ((kb.getKeyCode()==e.getKeyCode())&&(kb.getKeyModifiers()==e.getModifiers()))
             {
-                Iterator cit = kb.getCommands().iterator();
+                Iterator<GUICommand> cit = kb.getCommands().iterator();
                 while (cit.hasNext())
                 {
-                    GUICommand cmd = (GUICommand)cit.next();
+                    GUICommand cmd = cit.next();
                     cmd.execute();
                 }
                 return;
@@ -933,10 +933,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch(b)
         {
             case MouseEvent.BUTTON1:
-                Iterator it = guilist.iterator();
+                Iterator<GUIElement> it = guilist.iterator();
                 while (it.hasNext())
                 {
-                    GUIElement element = (GUIElement)it.next();
+                    GUIElement element = it.next();
                     if (element.isVisible())
                         if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
                             if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
