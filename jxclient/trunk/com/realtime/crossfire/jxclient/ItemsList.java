@@ -44,8 +44,8 @@ public class ItemsList
 
     private static int                            myspellmode = SPELLMODE_LOCAL;
 
-    private static java.util.List<CfItem>         items    = new ArrayList<CfItem>();
-    private static Hashtable<String,CfItem>       myitems  = new Hashtable<String,CfItem>();
+    private static final ItemsManager itemsManager = new ItemsManager();
+
     private static CfPlayer                       myplayer = null;
     private static java.util.List<Spell>          myspells = new ArrayList<Spell>();
     private static int                            mycurrentfloor = 0;
@@ -139,15 +139,7 @@ public class ItemsList
     }
     public static java.util.List<CfItem> getItems(int location)
     {
-        java.util.List<CfItem> l = new ArrayList<CfItem>();
-        Iterator<CfItem> it = items.iterator();
-        while (it.hasNext())
-        {
-            CfItem item = it.next();
-            if (item.getLocation() == location)
-                l.add(item);
-        }
-        return l;
+        return itemsManager.getItems(location);
     }
     public static CfPlayer getPlayer()
     {
@@ -167,22 +159,7 @@ public class ItemsList
         {
             int tokill   = dis.readInt();
             pos+=4;
-            myitems.remove(String.valueOf(tokill));
-            Iterator<CfItem> it = items.iterator();
-            while (it.hasNext())
-            {
-                CfItem item = it.next();
-                if (item.getTag() == tokill)
-                {
-                    kickme = item;
-                    break;
-                }
-            }
-            if (kickme != null)
-            {
-                myitems.remove(kickme);
-                items.remove(kickme);
-            }
+            itemsManager.removeItem(tokill);
         }
     }
     public static void cleanInventory(DataInputStream dis) throws IOException
@@ -192,22 +169,9 @@ public class ItemsList
 
         dis.readFully(buf);
         int tokill = Integer.parseInt(new String(buf));
-        java.util.List<CfItem> killed = new ArrayList<CfItem>();
-
-        CfItem item;
-        Iterator<CfItem> it = items.iterator();
-        while (it.hasNext())
+        for (final CfItem item : itemsManager.getItems(tokill))
         {
-            item = it.next();
-            if (item.getLocation() == tokill)
-                killed.add(item);
-        }
-        it = killed.iterator();
-        while (it.hasNext())
-        {
-            Object o = it.next();
-            myitems.remove(o);
-            items.remove(o);
+            itemsManager.removeItem(item);
         }
     }
     public static void addItems2(DataInputStream dis) throws IOException
@@ -238,13 +202,7 @@ public class ItemsList
             Faces.ensureFaceExists(faceid);
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
                                      name, namePl, nrof, type);
-            if (myitems.containsKey(String.valueOf(tag)))
-            {
-                items.remove(myitems.get(String.valueOf(tag)));
-                myitems.remove(String.valueOf(tag));
-            }
-            myitems.put(String.valueOf(tag), item);
-            items.add(item);
+            itemsManager.addItem(item);
             CrossfireCommandItem2Event evt = new CrossfireCommandItem2Event(new Object(),item);
             Iterator<CrossfireItem2Listener> it = mylisteners_item2.iterator();
             while (it.hasNext())
@@ -280,13 +238,7 @@ public class ItemsList
             Faces.ensureFaceExists(faceid);
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
                                      name, namePl, nrof);
-            if (myitems.containsKey(String.valueOf(tag)))
-            {
-                items.remove(myitems.get(String.valueOf(tag)));
-                myitems.remove(String.valueOf(tag));
-            }
-            myitems.put(String.valueOf(tag), item);
-            items.add(item);
+            itemsManager.addItem(item);
             CrossfireCommandItem1Event evt = new CrossfireCommandItem1Event(new Object(),item);
             Iterator<CrossfireItem1Listener> it = mylisteners_item1.iterator();
             while (it.hasNext())
@@ -305,10 +257,18 @@ public class ItemsList
         int pos = 0;
         int flags = dis.readUnsignedByte();
         int tag = dis.readInt();
-        CfItem item = myitems.get(String.valueOf(tag));
+        final CfItem item;
         if ((myplayer != null)&&(myplayer.getTag()==tag))
             item = myplayer;
-
+        else
+        {
+            item = itemsManager.getItem(tag);
+            if (item == null)
+            {
+                System.err.println("updateItem: undefined item "+tag);
+                return;
+            }
+        }
 
         if ((flags & CfItem.UPD_FLAGS)!=0)
         {
