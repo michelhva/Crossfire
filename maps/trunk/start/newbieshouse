@@ -2748,11 +2748,13 @@ y 4
 end
 arch marker
 slaying quest initial training start
+msg
+Go through the newbiehouse, and learn how to play the game.
+endmsg
 food 0
 x 9
 y 4
 speed 1.0
-Go through the newbiehouse, and learn how to play the game.
 end
 arch dungeon_magic
 x 9
