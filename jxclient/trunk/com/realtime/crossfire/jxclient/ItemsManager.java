@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,9 +34,9 @@ import java.util.Map;
 public class ItemsManager
 {
     /**
-     * List of all known items.
+     * Maps location to list of items.
      */
-    private static List<CfItem> items = new ArrayList<CfItem>();
+    private static Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
 
     /**
      * Maps item tags to items.
@@ -43,7 +44,7 @@ public class ItemsManager
     private static Map<Integer, CfItem> myitems  = new HashMap<Integer, CfItem>();
 
     /**
-     * Return a list of items in a given location. The returned list may be
+     * Return a list of items in a given location. The returned list may not be
      * modified by the caller.
      *
      * @param location the location
@@ -52,15 +53,13 @@ public class ItemsManager
      */
     public List<CfItem> getItems(final int location)
     {
-        final List<CfItem> result = new ArrayList<CfItem>();
-        for (final CfItem item : items)
+        final List<CfItem> result = items.get(location);
+        if (result == null)
         {
-            if (item.getLocation() == location)
-            {
-                result.add(item);
-            }
+            return Collections.<CfItem>emptyList();
         }
-        return result;
+
+        return new ArrayList<CfItem>(result);
     }
 
     /**
@@ -88,9 +87,7 @@ public class ItemsManager
             return;
         }
 
-        if (!items.remove(item)) {
-            throw new AssertionError("cannot find item "+tag);
-        }
+        removeItemFromLocation(item);
     }
 
     /**
@@ -108,9 +105,7 @@ public class ItemsManager
             throw new AssertionError("deleted wrong item "+item.getTag());
         }
 
-        if (!items.remove(item)) {
-            throw new AssertionError("cannot find item "+item.getTag());
-        }
+        removeItemFromLocation(item);
     }
 
     /**
@@ -130,6 +125,56 @@ public class ItemsManager
         if (myitems.put(item.getTag(), item) != null) {
             throw new AssertionError("duplicate item "+item.getTag());
         }
-        items.add(item);
+
+        addItemToLocation(item);
+    }
+
+    /**
+     * Remove an item from {@link #items}. The item must exist.
+     *
+     * @param item the item to remove
+     */
+    private void removeItemFromLocation(final CfItem item)
+    {
+        final List<CfItem> list = items.get(item.getLocation());
+        if (list == null)
+        {
+            throw new AssertionError("cannot find item "+item.getTag());
+        }
+
+        if (!list.remove(item))
+        {
+            throw new AssertionError("cannot find item "+item.getTag());
+        }
+
+        if (list.isEmpty())
+        {
+            if (items.remove(item.getLocation()) != list)
+            {
+                throw new AssertionError();
+            }
+        }
+    }
+
+    /**
+     * Add an item to {@link #items}.
+     *
+     * @param item the item to add
+     */
+    private void addItemToLocation(final CfItem item)
+    {
+        final List<CfItem> list = items.get(item.getLocation());
+        if (list != null)
+        {
+            list.add(item);
+            return;
+        }
+
+        final ArrayList<CfItem> newList = new ArrayList<CfItem>();
+        if (items.put(item.getLocation(), newList) != null)
+        {
+            throw new AssertionError();
+        }
+        newList.add(item);
     }
 }
