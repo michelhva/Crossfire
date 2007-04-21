@@ -51,7 +51,7 @@ public class ItemsManager
      *
      * @return the list of items
      */
-    public List<CfItem> getItems(final int location)
+    public synchronized List<CfItem> getItems(final int location)
     {
         final List<CfItem> result = items.get(location);
         if (result == null)
@@ -69,7 +69,7 @@ public class ItemsManager
      *
      * @return the item or <code>null</code> if no such items exists
      */
-    public CfItem getItem(final int tag)
+    public synchronized CfItem getItem(final int tag)
     {
         return myitems.get(tag);
     }
@@ -79,7 +79,7 @@ public class ItemsManager
      *
      * @param tag the tag of the item to delete
      */
-    public void removeItem(final int tag)
+    public synchronized void removeItem(final int tag)
     {
         final CfItem item = myitems.remove(tag);
         if (item == null) {
@@ -95,7 +95,7 @@ public class ItemsManager
      *
      * @param item the item to delete
      */
-    public void removeItem(final CfItem item)
+    public synchronized void removeItem(final CfItem item)
     {
         final CfItem deletedItem = myitems.remove(item.getTag());
         if (deletedItem == null) {
@@ -113,7 +113,7 @@ public class ItemsManager
      *
      * @param item the item to add
      */
-    public void addItem(final CfItem item)
+    public synchronized void addItem(final CfItem item)
     {
         final CfItem oldItem = myitems.get(item.getTag());
         if (oldItem != null)
