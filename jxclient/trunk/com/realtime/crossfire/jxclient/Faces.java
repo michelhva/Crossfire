@@ -68,6 +68,12 @@ public class Faces
                     Transparency.TRANSLUCENT));
     }
 
+    /**
+     * Face numbers for which "askface" commands have been sent without having
+     * received a response from the server.
+     */
+    private static Set<Integer> pendingAskfaces = new HashSet<Integer>();
+
     public static Face getFace(int index)
     {
         if (faces[index]==null)
@@ -94,6 +100,12 @@ public class Faces
     {
         int pixnum   = dis.readInt();
         int pixlen   = dis.readInt();
+
+        if (!pendingAskfaces.remove(pixnum))
+        {
+            System.err.println("received unexpected image for "+pixnum);
+        }
+
         try
         {
             BufferedImage img = new PngImage().read(dis, true);
@@ -143,7 +155,7 @@ public class Faces
         }
         catch (IOException e)
         {
-            ServerConnection.writePacket("askface "+pixnum);
+            askface(pixnum);
             Face f = new Face(pixnum, pixname,null);
             myfaces.put(pixname, f);
             faces[pixnum] = f;
@@ -161,6 +173,21 @@ public class Faces
                     ServerConnection.SQUARE_SIZE,
             ServerConnection.SQUARE_SIZE,
             Transparency.TRANSLUCENT));
+        }
+    }
+
+    /**
+     * Ask the server to send image info.
+     *
+     * @param face the face to query
+     */
+    public static void askface(final int face) throws IOException
+    {
+        assert face > 0;
+
+        if (pendingAskfaces.add(face))
+        {
+            ServerConnection.writePacket("askface "+face);
         }
     }
 }

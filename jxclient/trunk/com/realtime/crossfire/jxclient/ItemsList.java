@@ -744,7 +744,7 @@ public class ItemsList
             Faces.getFace(face).setName("spell_"+tag);
             try
             {
-                ServerConnection.writePacket("askface "+face);
+                Faces.askface(face);
             }
             catch (Exception e)
             {
