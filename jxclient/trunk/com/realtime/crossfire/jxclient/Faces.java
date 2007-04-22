@@ -39,6 +39,11 @@ import com.sixlegs.png.*;
  */
 public class Faces
 {
+    /**
+     * The maximum number of concurrently sent "askface" commands.
+     */
+    public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
+
     private static Hashtable<String,Face>  myfaces = new Hashtable<String,Face>();
     public final static int NRFACES = 6000;
     private static Face[]                  faces = new Face[NRFACES];
@@ -74,6 +79,12 @@ public class Faces
      */
     private static Set<Integer> pendingAskfaces = new HashSet<Integer>();
 
+    /**
+     * Face numbers for which an "askface" command should be sent. It includes
+     * all elements of {@link #pendingAskfaces}.
+     */
+    private static Set<Integer> pendingFaces = new HashSet<Integer>();
+
     public static Face getFace(int index)
     {
         if (faces[index]==null)
@@ -105,6 +116,10 @@ public class Faces
         {
             System.err.println("received unexpected image for "+pixnum);
         }
+        if (!pendingFaces.remove(pixnum))
+        {
+            assert false;
+        }
 
         try
         {
@@ -129,6 +144,7 @@ public class Faces
         {
             System.out.println("Unable to get face:"+pixnum);
         }
+        sendAskface();
         return pixnum;
     }
     public static void setFace1(DataInputStream dis) throws IOException
@@ -180,14 +196,37 @@ public class Faces
      * Ask the server to send image info.
      *
      * @param face the face to query
+     *
+     * @throws IOException if the command cannot be sent
      */
     public static void askface(final int face) throws IOException
     {
         assert face > 0;
 
-        if (pendingAskfaces.add(face))
+        if (!pendingFaces.add(face))
         {
-            ServerConnection.writePacket("askface "+face);
+            return;
+        }
+
+        sendAskface();
+    }
+
+    /**
+     * Send some pending "askface" commands.
+     *
+     * @throws IOException if the command cannot be sent
+     */
+    private static void sendAskface() throws IOException
+    {
+        final Iterator<Integer> it = pendingFaces.iterator();
+        while (it.hasNext() && pendingAskfaces.size() < CONCURRENT_ASKFACE_COMMANDS)
+        {
+            final int face = it.next();
+            if (!pendingAskfaces.contains(face))
+            {
+                ServerConnection.writePacket("askface "+face);
+                pendingAskfaces.add(face);
+            }
         }
     }
 }
