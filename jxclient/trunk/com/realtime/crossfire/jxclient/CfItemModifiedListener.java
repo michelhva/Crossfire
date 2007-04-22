@@ -17,16 +17,22 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
+
 package com.realtime.crossfire.jxclient;
-import  com.realtime.crossfire.jxclient.*;
+
+import java.util.EventListener;
 
 /**
+ * Interface for listeners for attribute changes of {@link CfItem}s.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
-public interface CrossfireDelitemListener
+public interface CfItemModifiedListener extends EventListener
 {
-    public void CommandDelitemReceived(CrossfireCommandDelitemEvent evt);
+    /**
+     * Will be called when any attribute has been changed.
+     *
+     * @param item the item that was modified
+     */
+    void itemModified(CfItem item);
 }

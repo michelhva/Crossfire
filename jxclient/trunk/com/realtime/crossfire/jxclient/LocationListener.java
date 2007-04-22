@@ -17,16 +17,25 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
+
 package com.realtime.crossfire.jxclient;
-import  com.realtime.crossfire.jxclient.*;
+
+import java.util.EventListener;
 
 /**
+ * Interface for listeners for changes of item locations.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
-public interface CrossfireDelinvListener
+public interface LocationListener extends EventListener
 {
-    public void CommandDelinvReceived(CrossfireCommandDelinvEvent evt);
+    /**
+     * Will be called when the attribute of a location has changed.
+     *
+     * @param index the location that has changed
+     *
+     * @param item the new item in the location; will be <code>null</code> if
+     * the location is empty
+     */
+    void locationModified(int index, CfItem item);
 }

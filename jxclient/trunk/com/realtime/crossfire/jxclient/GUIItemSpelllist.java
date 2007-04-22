@@ -97,18 +97,6 @@ public class GUIItemSpelllist extends GUIItem
         }
     }
 
-    public void CommandUpditemReceived(CrossfireCommandUpditemEvent evt)
-    {
-    }
-
-    public void CommandItem1Received(CrossfireCommandItem1Event evt)
-    {
-    }
-
-    public void CommandItem2Received(CrossfireCommandItem2Event evt)
-    {
-    }
-
     private void setSpell(final Spell spell)
     {
         if (myspell == spell)
@@ -117,7 +105,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         myspell = spell;
-        setModified();
+        render();
     }
 
     private void setIndex(final int index)

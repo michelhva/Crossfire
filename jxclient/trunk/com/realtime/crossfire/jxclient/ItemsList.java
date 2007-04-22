@@ -46,20 +46,7 @@ public class ItemsList
 
     private static final ItemsManager itemsManager = new ItemsManager();
 
-    private static CfPlayer                       myplayer = null;
     private static java.util.List<Spell>          myspells = new ArrayList<Spell>();
-    private static int                            mycurrentfloor = 0;
-
-    private static java.util.List<CrossfireDelitemListener> mylisteners_delitem =
-            new ArrayList<CrossfireDelitemListener>();
-    private static java.util.List<CrossfireItem1Listener> mylisteners_item1 =
-            new ArrayList<CrossfireItem1Listener>();
-    private static java.util.List<CrossfireItem2Listener> mylisteners_item2 =
-            new ArrayList<CrossfireItem2Listener>();
-    private static java.util.List<CrossfireUpditemListener> mylisteners_upditem =
-            new ArrayList<CrossfireUpditemListener>();
-    private static java.util.List<CrossfireDelinvListener> mylisteners_delinv =
-            new ArrayList<CrossfireDelinvListener>();
 
     private static java.util.List<CrossfireSpellAddedListener> mylisteners_addspell =
             new ArrayList<CrossfireSpellAddedListener>();
@@ -79,26 +66,6 @@ public class ItemsList
             e.printStackTrace();
             System.exit(0);
         }
-    }
-    public static java.util.List<CrossfireDelitemListener> getCrossfireDelitemListeners()
-    {
-        return mylisteners_delitem;
-    }
-    public static java.util.List<CrossfireItem1Listener> getCrossfireItem1Listeners()
-    {
-        return mylisteners_item1;
-    }
-    public static java.util.List<CrossfireItem2Listener> getCrossfireItem2Listeners()
-    {
-        return mylisteners_item2;
-    }
-    public static java.util.List<CrossfireUpditemListener> getCrossfireUpditemListeners()
-    {
-        return mylisteners_upditem;
-    }
-    public static java.util.List<CrossfireDelinvListener> getCrossfireDelinvListeners()
-    {
-        return mylisteners_delinv;
     }
     public static java.util.List<CrossfireSpellAddedListener> getCrossfireSpellAddedListeners()
     {
@@ -143,11 +110,11 @@ public class ItemsList
     }
     public static CfPlayer getPlayer()
     {
-        return myplayer;
+        return itemsManager.getPlayer();
     }
-    public static void setPlayer(CfPlayer pl)
+    public static int getCurrentFloor()
     {
-        myplayer = pl;
+        return itemsManager.getCurrentFloor();
     }
     public static void removeItem(DataInputStream dis) throws IOException
     {
@@ -161,6 +128,7 @@ public class ItemsList
             pos+=4;
             itemsManager.removeItem(tokill);
         }
+        itemsManager.fireEvents();
     }
     public static void cleanInventory(DataInputStream dis) throws IOException
     {
@@ -173,6 +141,7 @@ public class ItemsList
         {
             itemsManager.removeItem(item);
         }
+        itemsManager.fireEvents();
     }
     public static void addItems2(DataInputStream dis) throws IOException
     {
@@ -203,13 +172,8 @@ public class ItemsList
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
                                      name, namePl, nrof, type);
             itemsManager.addItem(item);
-            CrossfireCommandItem2Event evt = new CrossfireCommandItem2Event(new Object(),item);
-            Iterator<CrossfireItem2Listener> it = mylisteners_item2.iterator();
-            while (it.hasNext())
-            {
-                it.next().CommandItem2Received(evt);
-            }
         }
+        itemsManager.fireEvents();
     }
     public static void addItems(DataInputStream dis) throws IOException
     {
@@ -239,17 +203,8 @@ public class ItemsList
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
                                      name, namePl, nrof);
             itemsManager.addItem(item);
-            CrossfireCommandItem1Event evt = new CrossfireCommandItem1Event(new Object(),item);
-            Iterator<CrossfireItem1Listener> it = mylisteners_item1.iterator();
-            while (it.hasNext())
-            {
-                it.next().CommandItem1Received(evt);
-            }
         }
-    }
-    public static int getCurrentFloor()
-    {
-        return mycurrentfloor;
+        itemsManager.fireEvents();
     }
     public static void updateItem(DataInputStream dis) throws IOException
     {
@@ -258,8 +213,11 @@ public class ItemsList
         int flags = dis.readUnsignedByte();
         int tag = dis.readInt();
         final CfItem item;
-        if ((myplayer != null)&&(myplayer.getTag()==tag))
-            item = myplayer;
+        final CfPlayer player = itemsManager.getPlayer();
+        if (player != null && player.getTag() == tag)
+        {
+            item = player;
+        }
         else
         {
             item = itemsManager.getItem(tag);
@@ -273,9 +231,8 @@ public class ItemsList
         if ((flags & CfItem.UPD_FLAGS)!=0)
         {
             boolean wasopen = false;
-            if (mycurrentfloor == item.getTag())
+            if (itemsManager.getCurrentFloor() == item.getTag())
             {
-                System.out.println("Item "+item.getName()+" was open");
                 wasopen = item.isOpen();
             }
             int obfl = dis.readInt();
@@ -283,11 +240,11 @@ public class ItemsList
             pos+=4;
             if (item.isOpen())
             {
-                mycurrentfloor = item.getTag();
+                itemsManager.setCurrentFloor(item.getTag());
             }
-            else if (wasopen==true)
+            else if (wasopen)
             {
-                mycurrentfloor = 0;
+                itemsManager.setCurrentFloor(0);
             }
         }
         if ((flags & CfItem.UPD_WEIGHT)!=0)
@@ -331,13 +288,7 @@ public class ItemsList
             item.setNrOf(nrof);
             pos+=4;
         }
-        CrossfireCommandUpditemEvent evt = new CrossfireCommandUpditemEvent(new Object(),item);
-        Iterator<CrossfireUpditemListener> it = mylisteners_upditem.iterator();
-        while (it.hasNext())
-        {
-            CrossfireUpditemListener guielt = it.next();
-            guielt.CommandUpditemReceived(evt);
-        }
+        item.fireModified();
     }
     public static void createPlayer(DataInputStream dis) throws IOException
     {
@@ -354,7 +305,7 @@ public class ItemsList
         String name = new String(buf);
         pos+=namelength;
         Faces.ensureFaceExists(faceid);
-        myplayer = new CfPlayer(tag, weight, Faces.getFace(faceid),name);
+        itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(faceid), name));
     }
     public static java.util.List<Spell> getSpellList()
     {
@@ -828,5 +779,79 @@ public class ItemsList
         int len = dis.available();
         int spelltag = dis.readInt();
         System.out.println("Deleting spell:"+spelltag);
+    }
+
+    /**
+     * Add a {@link LocationListener}s to be notified about changes in a floor
+     * tile.
+     *
+     * @param index the floor tile
+     *
+     * @param listener the listener
+     */
+    public static void addFloorLocationListener(final int index, final LocationListener listener)
+    {
+        itemsManager.addFloorLocationListener(index, listener);
+    }
+
+    /**
+     * Remove a {@link LocationListener}s to be notified about changes in a
+     * floor tile.
+     *
+     * @param index the floor tile
+     *
+     * @param listener the listener
+     */
+    public static void removeFloorLocationListener(final int index, final LocationListener listener)
+    {
+        itemsManager.removeFloorLocationListener(index, listener);
+    }
+
+    /**
+     * Add a {@link LocationListener}s to be notified about changes in an
+     * inventory slot.
+     *
+     * @param index the inventory slot
+     *
+     * @param listener the listener
+     */
+    public static void addInventoryLocationListener(final int index, final LocationListener listener)
+    {
+        itemsManager.addInventoryLocationListener(index, listener);
+    }
+
+    /**
+     * Remove a {@link LocationListener}s to be notified about changes in an
+     * inventory slot.
+     *
+     * @param index the inventory slot
+     *
+     * @param listener the listener
+     */
+    public static void removeInventoryLocationListener(final int index, final LocationListener listener)
+    {
+        itemsManager.removeInventoryLocationListener(index, listener);
+    }
+
+    /**
+     * Add a {@link CurrentFloorListener} to be notified about current floor
+     * changes.
+     *
+     * @param listener the listener to add
+     */
+    public static void addCurrentFloorListener(final CurrentFloorListener listener)
+    {
+        itemsManager.addCurrentFloorListener(listener);
+    }
+
+    /**
+     * Remove a {@link CurrentFloorListener} to be notified about current floor
+     * changes.
+     *
+     * @param listener the listener to add
+     */
+    public static void removeCurrentFloorListener(final CurrentFloorListener listener)
+    {
+        itemsManager.removeCurrentFloorListener(listener);
     }
 }

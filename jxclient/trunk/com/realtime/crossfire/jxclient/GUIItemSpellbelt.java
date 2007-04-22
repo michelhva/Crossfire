@@ -47,13 +47,11 @@ public class GUIItemSpellbelt extends GUIItem
     public void scrollUp()
     {
         setIndex(myindex-1);
-        render();
     }
 
     public void scrollDown()
     {
         setIndex(myindex+1);
-        render();
     }
 
     protected void button1Clicked(JXCWindow jxcw)
@@ -98,7 +96,6 @@ public class GUIItemSpellbelt extends GUIItem
         {
             myspellbelt.setStatus(SpellBeltItem.STATUS_CAST);
         }
-        setModified();
         render();
     }
 
@@ -117,7 +114,6 @@ public class GUIItemSpellbelt extends GUIItem
         else
         {
             myspellbelt.setSpell(myspell);
-            setModified();
         }
         render();
     }
@@ -136,18 +132,6 @@ public class GUIItemSpellbelt extends GUIItem
         g.drawImage(myspellbelt.getStatus() == SpellBeltItem.STATUS_CAST ? mypiccursed : mypicapplied, 0, 0, null);
     }
 
-    public void CommandUpditemReceived(CrossfireCommandUpditemEvent evt)
-    {
-    }
-
-    public void CommandItem1Received(CrossfireCommandItem1Event evt)
-    {
-    }
-
-    public void CommandItem2Received(CrossfireCommandItem2Event evt)
-    {
-    }
-
     private void setSpellbelt(final SpellBeltItem spellBeltItem)
     {
         if (myspellbelt == spellBeltItem)
@@ -156,7 +140,7 @@ public class GUIItemSpellbelt extends GUIItem
         }
 
         myspellbelt = spellBeltItem;
-        setModified();
+        render();
     }
 
     private void setIndex(final int index)

@@ -30,28 +30,37 @@ import java.io.*;
  *
  * @version 1.0
  * @author Lauwenmark
+ * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireItem1Listener,
-                                        CrossfireUpditemListener, CrossfireDelitemListener,
-                                        CrossfireItem2Listener, CrossfireSpellAddedListener,
+public abstract class GUIItem extends GUIElement implements GUIScrollable,
+                                        CrossfireSpellAddedListener,
                                         CrossfireSpellRemovedListener,
                                         CrossfireSpellUpdatedListener
 {
-    protected BufferedImage mypiccursed;
-    protected BufferedImage mypicapplied;
-    protected BufferedImage mypicselector;
-    protected BufferedImage mypicbackground;
-    protected BufferedImage mypiclocked;
+    protected final BufferedImage mypiccursed;
+    protected final BufferedImage mypicapplied;
+    protected final BufferedImage mypicselector;
+    private final BufferedImage mypicbackground;
+    protected final BufferedImage mypiclocked;
 
     private CfItem myitem = null;
 
-    protected Font myfont;
+    protected final Font myfont;
 
     /**
-     * If set, some attibutes have been modified since last call to {@link #render()}.
+     * The {@link CfItemModifiedListener} used to detect attribute changes of
+     * the displayed item.
      */
-    private boolean modified = true;
+    private final CfItemModifiedListener itemModifiedListener = new CfItemModifiedListener()
+    {
+        /** {@inheritDoc} */
+        public void itemModified(final CfItem item)
+        {
+            assert myitem == item;
+            render();
+        }
+    };
 
     public GUIItem
             (String nn, int nx, int ny, int nw, int nh, String picture,
@@ -91,7 +100,6 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
             case MouseEvent.BUTTON1:
                 setActive(true);
                 button1Clicked(jxcw);
-                render();
                 break;
             case MouseEvent.BUTTON2:
                 button2Clicked(jxcw);
@@ -109,22 +117,11 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         if (active != act)
         {
             active = act;
-            setModified();
             render();
         }
     }
-    protected void setModified()
-    {
-        modified = true;
-    }
     protected void render()
     {
-        if (!modified)
-        {
-            return;
-        }
-        modified = false;
-
         Graphics2D g = mybuffer.createGraphics();
         g.drawImage(mypicbackground, 0, 0, null);
 
@@ -134,18 +131,6 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         g.dispose();
     }
     protected abstract void render(final Graphics g);
-    public abstract void CommandUpditemReceived(final CrossfireCommandUpditemEvent evt);
-    public abstract void CommandItem1Received(final CrossfireCommandItem1Event evt);
-    public abstract void CommandItem2Received(final CrossfireCommandItem2Event evt);
-    public void CommandDelitemReceived(final CrossfireCommandDelitemEvent evt)
-    {
-        final CfItem item = evt.getItem();
-        if (myitem == item)
-        {
-            setItem(null);
-        }
-        render();
-    }
     public void CommandAddSpellReceived(final CrossfireCommandAddSpellEvent evt)
     {
     }
@@ -168,10 +153,21 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
 
     protected void setItem(final CfItem item)
     {
-        if (myitem != item)
+        if (myitem == item)
         {
-            myitem = item;
-            setModified();
+            return;
         }
+
+        if (myitem != null)
+        {
+            myitem.removeCfItemModifiedListener(itemModifiedListener);
+        }
+        myitem = item;
+        if (myitem != null)
+        {
+            myitem.addCfItemModifiedListener(itemModifiedListener);
+        }
+
+        render();
     }
 }
