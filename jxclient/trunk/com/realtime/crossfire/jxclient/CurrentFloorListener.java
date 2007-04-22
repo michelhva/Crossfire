@@ -17,16 +17,22 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
+
 package com.realtime.crossfire.jxclient;
-import  com.realtime.crossfire.jxclient.*;
+
+import java.util.EventListener;
 
 /**
+ * Interface for listeners for changes of current floor.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
-public interface CrossfireItem2Listener
+public interface CurrentFloorListener extends EventListener
 {
-    public void CommandItem2Received(CrossfireCommandItem2Event evt);
+    /**
+     * Will be called when the current floor has changed.
+     *
+     * @param currentFloor the new current floor
+     */
+    void currentFloorChanged(int currentFloor);
 }

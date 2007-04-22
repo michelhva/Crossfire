@@ -310,72 +310,6 @@ public class ServerConnection extends Thread
 
     /**
      * Adds a new listener monitoring the
-     * delitem S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireDelitemListener(CrossfireDelitemListener listener)
-    {
-        ItemsList.getCrossfireDelitemListeners().add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * delitem S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireDelitemListener(CrossfireDelitemListener listener)
-    {
-        ItemsList.getCrossfireDelitemListeners().remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * item1 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireItem1Listener(CrossfireItem1Listener listener)
-    {
-        ItemsList.getCrossfireItem1Listeners().add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * item1 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireItem1Listener(CrossfireItem1Listener listener)
-    {
-        ItemsList.getCrossfireItem1Listeners().remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * item2 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireItem2Listener(CrossfireItem2Listener listener)
-    {
-        ItemsList.getCrossfireItem2Listeners().add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * item2 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireItem2Listener(CrossfireItem2Listener listener)
-    {
-        ItemsList.getCrossfireItem2Listeners().remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
      * map1 S->C messages.
      * @param listener The listener to remove.
      * @since 1.0
@@ -464,28 +398,6 @@ public class ServerConnection extends Thread
 
     /**
      * Adds a new listener monitoring the
-     * upditem S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireUpditemListener(CrossfireUpditemListener listener)
-    {
-        ItemsList.getCrossfireUpditemListeners().add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * upditem S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireUpditemListener(CrossfireUpditemListener listener)
-    {
-        ItemsList.getCrossfireUpditemListeners().remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
      * mapscroll S->C messages.
      * @param listener The listener to remove.
      * @since 1.0
@@ -504,28 +416,6 @@ public class ServerConnection extends Thread
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
         com.realtime.crossfire.jxclient.Map.getCrossfireMapscrollListeners().remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * delinv S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireDelinvListener(CrossfireDelinvListener listener)
-    {
-        ItemsList.getCrossfireDelinvListeners().add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * delinv S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireDelinvListener(CrossfireDelinvListener listener)
-    {
-        ItemsList.getCrossfireDelinvListeners().remove(listener);
     }
 
     /**

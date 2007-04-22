@@ -26,12 +26,40 @@ import java.util.List;
 
 public class GUIItemFloor extends GUIItemItem
 {
-    private int myindex;
+    private int myindex = -1;
+
+    /**
+     * The {@link LocationListener} used to detect items added to or removed
+     * from this floor tile.
+     */
+    private final LocationListener floorLocationListener = new LocationListener()
+    {
+        /** {@inheritDoc} */
+        public void locationModified(final int index, final CfItem item)
+        {
+            assert index == myindex;
+            setItem(item);
+        }
+    };
+
+    /**
+     * The {@link CurrentFloorListener} used to be informed when the current
+     * floor location changes.
+     */
+    private final CurrentFloorListener currentFloorListener = new CurrentFloorListener()
+    {
+       /** {@inheritDoc} */
+       public void currentFloorChanged(final int currentFloor)
+       {
+           setIndex(myindex, true);
+       }
+    };
 
     public GUIItemFloor(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
     {
         super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
-        setIndex(index);
+        ItemsList.addCurrentFloorListener(currentFloorListener);
+        setIndex(index, false);
         render();
     }
 
@@ -42,12 +70,12 @@ public class GUIItemFloor extends GUIItemItem
 
     public void scrollUp()
     {
-        setIndex(myindex-1);
+        setIndex(myindex-1, false);
     }
 
     public void scrollDown()
     {
-        setIndex(myindex+1);
+        setIndex(myindex+1, false);
     }
 
     protected void button1Clicked(JXCWindow jxcw)
@@ -89,50 +117,30 @@ public class GUIItemFloor extends GUIItemItem
         }
     }
 
-    public void CommandUpditemReceived(CrossfireCommandUpditemEvent evt)
+    /**
+     * Set the floor tile to display.
+     *
+     * @param index the floor tile
+     *
+     * @param forced if unset, do nothing if the <code>index</code> is
+     * unchanged; if set, always render the item
+     */
+    private void setIndex(final int index, final boolean forced)
     {
-        final CfItem updItem = evt.getItem();
-        final CfItem item = getItem();
-        if (item == updItem)
+        if (!forced && myindex == index)
         {
-            if (item.getLocation() != ItemsList.getCurrentFloor())
-            {
-                setItem(null);
-            }
+            return;
         }
-        else if (item != null)
-        {
-            if (item.getLocation() != ItemsList.getCurrentFloor())
-            {
-                setIndex(myindex);
-            }
-        }
-        render();
-    }
 
-    public void CommandItem1Received(CrossfireCommandItem1Event evt)
-    {
-        final CfItem item = evt.getItem();
-        if (item.getLocation() == ItemsList.getCurrentFloor())
+        if (myindex >= 0)
         {
-            setIndex(myindex);
+            ItemsList.removeFloorLocationListener(myindex, floorLocationListener);
         }
-        render();
-    }
-
-    public void CommandItem2Received(CrossfireCommandItem2Event evt)
-    {
-        final CfItem item = evt.getItem();
-        if (item.getLocation() == ItemsList.getCurrentFloor())
-        {
-            setIndex(myindex);
-        }
-        render();
-    }
-
-    private void setIndex(final int index)
-    {
         myindex = index;
+        if (myindex >= 0)
+        {
+            ItemsList.addFloorLocationListener(myindex, floorLocationListener);
+        }
 
         final List<CfItem> list = ItemsList.getItems(ItemsList.getCurrentFloor());
         setItem(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);

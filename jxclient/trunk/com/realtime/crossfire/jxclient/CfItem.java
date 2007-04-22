@@ -18,25 +18,27 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient;
-import  com.realtime.crossfire.jxclient.*;
+
+import javax.swing.event.EventListenerList;
 
 /**
  * The representation of a Crossfire Item, client-side.
  * @version 1.0
  * @author Lauwenmark
+ * @author Andreas Kirschbaum
  * @since 1.0
  */
 public class CfItem
 {
-    private int mytag;
+    private final int mytag;
     private int myflags;
     private int myweight;
     private Face myface;
     private String myname;
     private String mynamepl;
     private int mynrof;
-    private int mylocation;
-    private int mytype = -1;
+    private final int mylocation;
+    private final int mytype;
 
     private boolean applied = false;
     private boolean location = false;
@@ -47,6 +49,12 @@ public class CfItem
     private boolean open = false;
     private boolean nopick = false;
     private boolean locked = false;
+
+    /**
+     * Set if any attribute has changed since the last time listeners were
+     * notified.
+     */
+    private boolean modified = true;
 
     public static final int F_APPLIED      = 0x000F;
     public static final int F_LOCATION     = 0x00F0;
@@ -67,31 +75,52 @@ public class CfItem
     public static final int UPD_ANIMSPEED  = 0x40;
     public static final int UPD_NROF       = 0x80;
 
-    public void setLocation(int nl)
-    {
-        mylocation = nl;
-    }
+    /**
+     * The listeners to be notified.
+     */
+    private final EventListenerList listeners = new EventListenerList();
+
     public void setFlags(int nv)
     {
-        myflags = nv;
-        computeFlags();
+        if (myflags != nv)
+        {
+            myflags = nv;
+            computeFlags();
+            modified = true;
+        }
     }
     public void setWeight(int nv)
     {
-        myweight = nv;
+        if (myweight != nv)
+        {
+            myweight = nv;
+            modified = true;
+        }
     }
     public void setFace(Face f)
     {
-        myface = f;
+        if (myface != f)
+        {
+            myface = f;
+            modified = true;
+        }
     }
     public void setName(String n, String npl)
     {
-        myname = n;
-        mynamepl = npl;
+        if (!myname.equals(n) || !npl.equals(npl))
+        {
+            myname = n;
+            mynamepl = npl;
+            modified = true;
+        }
     }
     public void setNrOf(int nv)
     {
-        mynrof = nv;
+        if (mynrof != nv)
+        {
+            mynrof = nv;
+            modified = true;
+        }
     }
 
     public int getTag()
@@ -189,50 +218,59 @@ public class CfItem
         myname = name;
         mynrof = nrof;
         mynamepl = namepl;
-    }    protected void computeFlags()
-    {        if ((myflags & CfItem.F_APPLIED)!=0)
-        applied = true;
-        else
-            applied = false;
+        mytype = -1;
+    }
 
-        if ((myflags & CfItem.F_LOCATION)!=0)
-            location = true;
-        else
-            location = false;
+    /**
+     * Notify all listener
+     */
+    public void fireModified()
+    {
+        if (!modified)
+        {
+            return;
+        }
+        modified = false;
 
-        if ((myflags & CfItem.F_UNPAID)!=0)
-            unpaid = true;
-        else
-            unpaid = false;
+        for (final CfItemModifiedListener listener : listeners.getListeners(CfItemModifiedListener.class)) {
+            listener.itemModified(this);
+        }
+    }
 
-        if ((myflags & CfItem.F_MAGIC)!=0)
-            magic = true;
-        else
-            magic = false;
+    /**
+     * Add a <code>CfItemModifiedListener</code>. The listener will be notified
+     * about attribute changes of this item.
+     *
+     * @param listener the listener to remove
+     */
+    public void addCfItemModifiedListener(final CfItemModifiedListener listener)
+    {
+        listeners.add(CfItemModifiedListener.class, listener);
+    }
 
-        if ((myflags & CfItem.F_CURSED)!=0)
-            cursed = true;
-        else
-            cursed = false;
+    /**
+     * Remove a <code>CfItemModifiedListener</code>.
+     *
+     * @param listener the listener to remove
+     */
+    public void removeCfItemModifiedListener(final CfItemModifiedListener listener)
+    {
+        listeners.remove(CfItemModifiedListener.class, listener);
+    }
 
-        if ((myflags & CfItem.F_DAMNED)!=0)
-            damned = true;
-        else
-            damned = false;
-
-        if ((myflags & CfItem.F_OPEN)!=0)
-            open = true;
-        else
-            open = false;
-
-        if ((myflags & CfItem.F_NOPICK)!=0)
-            nopick = true;
-        else
-            nopick = false;
-
-        if ((myflags & CfItem.F_LOCKED)!=0)
-            locked = true;
-        else
-            locked = false;
+    /**
+     * Expand the flags bitmask {@link #myflags} into separate boolean values.
+     */
+    private void computeFlags()
+    {
+        applied = (myflags & CfItem.F_APPLIED) != 0;
+        location = (myflags & CfItem.F_LOCATION) != 0;
+        unpaid = (myflags & CfItem.F_UNPAID) != 0;
+        magic = (myflags & CfItem.F_MAGIC) != 0;
+        cursed = (myflags & CfItem.F_CURSED) != 0;
+        damned = (myflags & CfItem.F_DAMNED) != 0;
+        open = (myflags & CfItem.F_OPEN) != 0;
+        nopick = (myflags & CfItem.F_NOPICK) != 0;
+        locked = (myflags & CfItem.F_LOCKED) != 0;
     }
 }

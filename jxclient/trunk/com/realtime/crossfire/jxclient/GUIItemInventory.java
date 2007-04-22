@@ -30,6 +30,20 @@ public class GUIItemInventory extends GUIItemItem
 {
     private int myindex = -1;
 
+    /**
+     * The {@link LocationListener} used to detect items added to or removed
+     * from this inventory slot.
+     */
+    private final LocationListener inventoryLocationListener = new LocationListener()
+    {
+        /** {@inheritDoc} */
+        public void locationModified(final int index, final CfItem item)
+        {
+            assert index == myindex;
+            setItem(item);
+        }
+    };
+
     public GUIItemInventory(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
     {
         super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
@@ -103,7 +117,7 @@ public class GUIItemInventory extends GUIItemItem
 
         try
         {
-            jxcw.getServerConnection().writePacket("move 0 "+item.getTag()+" 0");
+            jxcw.getServerConnection().writePacket("move "+ItemsList.getCurrentFloor()+" "+item.getTag()+" 0");
         }
         catch (Exception ex)
         {
@@ -112,43 +126,44 @@ public class GUIItemInventory extends GUIItemItem
         }
     }
 
-    public void CommandUpditemReceived(CrossfireCommandUpditemEvent evt)
-    {
-        final CfItem updItem = evt.getItem();
-        final CfItem item = getItem();
-        if (item == updItem)
-        {
-            if (ItemsList.getPlayer() != null && item.getLocation() != ItemsList.getPlayer().getTag())
-            {
-                setItem(null);
-            }
-        }
-        render();
-    }
-
-    public void CommandItem1Received(CrossfireCommandItem1Event evt)
-    {
-        setIndex(myindex);
-        render();
-    }
-
-    public void CommandItem2Received(CrossfireCommandItem2Event evt)
-    {
-        setIndex(myindex);
-        render();
-    }
-
+    /**
+     * Set the inventory slot to display.
+     *
+     * @param index the inventory slot
+     */
     private void setIndex(final int index)
     {
-        myindex = index;
-
-        final CfPlayer player = ItemsList.getPlayer();
-        if (player == null)
+        if (myindex == index)
         {
             return;
         }
 
-        final List<CfItem> list = ItemsList.getItems(player.getTag());
-        setItem(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
+        if (myindex >= 0)
+        {
+            ItemsList.removeInventoryLocationListener(myindex, inventoryLocationListener);
+        }
+        myindex = index;
+        if (myindex >= 0)
+        {
+            ItemsList.addInventoryLocationListener(myindex, inventoryLocationListener);
+        }
+
+        final CfPlayer player = ItemsList.getPlayer();
+        if (player != null)
+        {
+            final List<CfItem> list = ItemsList.getItems(player.getTag());
+            if (0 <= myindex && myindex < list.size())
+            {
+                setItem(list.get(myindex));
+            }
+            else
+            {
+                setItem(null);
+            }
+        }
+        else
+        {
+            setItem(null);
+        }
     }
 }
