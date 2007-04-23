@@ -27,6 +27,7 @@ char *rcsid_gtk2_stats_c =
 #  include <config.h>
 #endif
 
+#include <assert.h>
 #include <gtk/gtk.h>
 
 #include "client.h"
@@ -51,7 +52,7 @@ GdkColor ncolor = { 0, 0, 0, 0xffff };
  * generated?
  */
 #define SKILL_BOXES_X	6
-#define SKILL_BOXES_Y	6
+#define SKILL_BOXES_Y	17
 
 #define PROTECTION_BOXES_X	6
 #define PROTECTION_BOXES_Y	6
@@ -425,6 +426,7 @@ void draw_stats(int redraw) {
     }
 
     on_skill=0;
+    assert(sizeof(statwindow.skill_exp)/sizeof(*statwindow.skill_exp) >= 2*MAX_SKILL);
     for (i=0; i<MAX_SKILL; i++) {
 	/* Drawing a particular skill entry is tricky - only draw if
 	 * different, and only draw if we have a name for the skill
