@@ -368,6 +368,11 @@ void SetupCmd(char *buf, int len) {
                     manager = manager->next;
                 }
             }
+        } else if (!strcmp(cmd, "inscribe")) {
+            if (strcmp(param, "FALSE"))
+                command_inscribe = atoi(param);
+            else
+                command_inscribe = 0;
         } else {
             LOG(LOG_INFO, "common::SetupCmd", "Got setup for a command we don't understand: %s %s",
                 cmd, param);
