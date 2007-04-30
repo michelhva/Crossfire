@@ -7,7 +7,7 @@ enter_x 8
 enter_y 7
 msg
 Creator: Chris Jeske
-Email: 
+Email:
 Date: Thu Nov 14 09:05:40 1996
 endmsg
 end
@@ -70,7 +70,7 @@ name void
 face blocked.111
 x 1
 y 2
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -81,7 +81,7 @@ name void
 face blocked.111
 x 1
 y 3
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -92,7 +92,7 @@ name void
 face blocked.111
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -103,7 +103,7 @@ name void
 face blocked.111
 x 1
 y 5
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -114,7 +114,7 @@ name void
 face blocked.111
 x 1
 y 6
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -125,7 +125,7 @@ name void
 face blocked.111
 x 1
 y 7
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -136,7 +136,7 @@ name void
 face blocked.111
 x 1
 y 8
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -147,7 +147,7 @@ name void
 face blocked.111
 x 1
 y 9
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -158,7 +158,7 @@ name void
 face blocked.111
 x 1
 y 10
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -169,7 +169,7 @@ name void
 face blocked.111
 x 1
 y 11
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -180,7 +180,7 @@ name void
 face blocked.111
 x 1
 y 12
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -191,7 +191,7 @@ name void
 face blocked.111
 x 1
 y 13
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 1
@@ -213,7 +213,7 @@ name void
 face blocked.111
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 2
@@ -396,7 +396,7 @@ name void
 face blocked.111
 x 2
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 2
@@ -414,7 +414,7 @@ name void
 face blocked.111
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 3
@@ -553,7 +553,7 @@ name void
 face blocked.111
 x 3
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 3
@@ -571,7 +571,7 @@ name void
 face blocked.111
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 4
@@ -710,7 +710,7 @@ name void
 face blocked.111
 x 4
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 4
@@ -728,7 +728,7 @@ name void
 face blocked.111
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 5
@@ -867,7 +867,7 @@ name void
 face blocked.111
 x 5
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 5
@@ -885,7 +885,7 @@ name void
 face blocked.111
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 6
@@ -1026,7 +1026,7 @@ name void
 face blocked.111
 x 6
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 6
@@ -1044,7 +1044,7 @@ name void
 face blocked.111
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 7
@@ -1203,7 +1203,7 @@ name void
 face blocked.111
 x 7
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 7
@@ -1221,7 +1221,7 @@ name void
 face blocked.111
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 8
@@ -1369,7 +1369,7 @@ name void
 face blocked.111
 x 8
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 8
@@ -1387,7 +1387,7 @@ name void
 face blocked.111
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 9
@@ -1528,7 +1528,7 @@ name void
 face blocked.111
 x 9
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 9
@@ -1546,7 +1546,7 @@ name void
 face blocked.111
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 10
@@ -1685,7 +1685,7 @@ name void
 face blocked.111
 x 10
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 10
@@ -1703,7 +1703,7 @@ name void
 face blocked.111
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 11
@@ -1842,7 +1842,7 @@ name void
 face blocked.111
 x 11
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 11
@@ -1860,7 +1860,7 @@ name void
 face blocked.111
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 12
@@ -1999,7 +1999,7 @@ name void
 face blocked.111
 x 12
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 12
@@ -2017,7 +2017,7 @@ name void
 face blocked.111
 x 13
 y 1
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 13
@@ -2200,7 +2200,7 @@ name void
 face blocked.111
 x 13
 y 14
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 13
@@ -2222,7 +2222,7 @@ name void
 face blocked.111
 x 14
 y 2
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2233,7 +2233,7 @@ name void
 face blocked.111
 x 14
 y 3
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2244,7 +2244,7 @@ name void
 face blocked.111
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2255,7 +2255,7 @@ name void
 face blocked.111
 x 14
 y 5
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2266,7 +2266,7 @@ name void
 face blocked.111
 x 14
 y 6
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2277,7 +2277,7 @@ name void
 face blocked.111
 x 14
 y 7
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2288,7 +2288,7 @@ name void
 face blocked.111
 x 14
 y 8
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2299,7 +2299,7 @@ name void
 face blocked.111
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2310,7 +2310,7 @@ name void
 face blocked.111
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2321,7 +2321,7 @@ name void
 face blocked.111
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2332,7 +2332,7 @@ name void
 face blocked.111
 x 14
 y 12
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
@@ -2343,7 +2343,7 @@ name void
 face blocked.111
 x 14
 y 13
-no_pass 1
+move_block all
 end
 arch random_artifact
 x 14
