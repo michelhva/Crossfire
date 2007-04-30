@@ -1,13 +1,13 @@
 arch map
 name Dungeon
+width 32
+height 32
+enter_x 16
 msg
 Creator: Chris Jeske
 Email:
 Date: Thu Sep 19 16:12:08 1996
 endmsg
-hp 16
-x 32
-y 32
 end
 arch mine10
 end
@@ -163,6 +163,10 @@ arch cobblestones2
 x 1
 y 14
 end
+arch baslic
+x 1
+y 14
+end
 arch cobblestones2
 x 1
 y 15
@@ -209,6 +213,7 @@ y 22
 end
 arch spider
 hp 150
+maxhp 150
 x 1
 y 22
 end
@@ -247,6 +252,10 @@ end
 arch bed_save
 x 1
 y 28
+end
+arch cobblestones2
+x 1
+y 29
 end
 arch mine2
 x 1
@@ -330,6 +339,10 @@ arch cobblestones2
 x 2
 y 15
 end
+arch cobblestones2
+x 2
+y 16
+end
 arch mine6
 x 2
 y 16
@@ -337,6 +350,10 @@ end
 arch cobblestones2
 x 2
 y 17
+end
+arch cobblestones2
+x 2
+y 18
 end
 arch mine6
 x 2
@@ -349,6 +366,10 @@ end
 arch cobblestones2
 x 2
 y 20
+end
+arch cobblestones2
+x 2
+y 21
 end
 arch mine2
 x 2
@@ -389,6 +410,10 @@ end
 arch cobblestones2
 x 2
 y 28
+end
+arch cobblestones2
+x 2
+y 29
 end
 arch mine2
 x 2
@@ -437,13 +462,25 @@ arch guard
 x 3
 y 7
 end
+arch cobblestones2
+x 3
+y 8
+end
 arch mine8
 x 3
 y 8
 end
+arch cobblestones2
+x 3
+y 9
+end
 arch mine3
 x 3
 y 9
+end
+arch cobblestones2
+x 3
+y 10
 end
 arch mine4
 x 3
@@ -481,6 +518,10 @@ arch cobblestones2
 x 3
 y 17
 end
+arch cobblestones2
+x 3
+y 18
+end
 arch mine2
 x 3
 y 18
@@ -492,6 +533,10 @@ end
 arch cobblestones2
 x 3
 y 20
+end
+arch cobblestones2
+x 3
+y 21
 end
 arch mine2
 x 3
@@ -525,6 +570,10 @@ arch cobblestones2
 x 3
 y 28
 end
+arch cobblestones2
+x 3
+y 29
+end
 arch mine2
 x 3
 y 29
@@ -545,6 +594,10 @@ x 4
 y 1
 end
 arch cobblestones2
+x 4
+y 2
+end
+arch titan
 x 4
 y 2
 end
@@ -616,6 +669,10 @@ arch cobblestones2
 x 4
 y 17
 end
+arch cobblestones2
+x 4
+y 18
+end
 arch mine2
 x 4
 y 18
@@ -631,6 +688,10 @@ end
 arch prisoner
 x 4
 y 20
+end
+arch cobblestones2
+x 4
+y 21
 end
 arch mine2
 x 4
@@ -663,6 +724,10 @@ end
 arch cobblestones2
 x 4
 y 28
+end
+arch cobblestones2
+x 4
+y 29
 end
 arch mine7
 x 4
@@ -699,13 +764,25 @@ arch cobblestones2
 x 5
 y 5
 end
+arch cobblestones2
+x 5
+y 6
+end
 arch mine9
 x 5
 y 6
 end
+arch cobblestones2
+x 5
+y 7
+end
 arch mine3
 x 5
 y 7
+end
+arch cobblestones2
+x 5
+y 8
 end
 arch mine5
 x 5
@@ -751,17 +828,33 @@ arch cobblestones2
 x 5
 y 17
 end
+arch cobblestones2
+x 5
+y 18
+end
 arch mine16
 x 5
 y 18
 end
-arch mine3
+arch cobblestones2
 x 5
 y 19
 end
 arch mine3
 x 5
+y 19
+end
+arch cobblestones2
+x 5
 y 20
+end
+arch mine3
+x 5
+y 20
+end
+arch cobblestones2
+x 5
+y 21
 end
 arch mine13
 x 5
@@ -774,6 +867,10 @@ end
 arch door_1
 x 5
 y 22
+end
+arch cobblestones2
+x 5
+y 23
 end
 arch mine8
 x 5
@@ -886,6 +983,10 @@ arch cobblestones2
 x 6
 y 15
 end
+arch cobblestones2
+x 6
+y 16
+end
 arch mine7
 x 6
 y 16
@@ -893,6 +994,10 @@ end
 arch cobblestones2
 x 6
 y 17
+end
+arch cobblestones2
+x 6
+y 18
 end
 arch mine7
 x 6
@@ -905,6 +1010,10 @@ end
 arch cobblestones2
 x 6
 y 20
+end
+arch cobblestones2
+x 6
+y 21
 end
 arch mine2
 x 6
@@ -942,6 +1051,10 @@ arch cobblestones2
 x 6
 y 28
 end
+arch cobblestones2
+x 6
+y 29
+end
 arch mine6
 x 6
 y 29
@@ -961,37 +1074,73 @@ arch cobblestones2
 x 7
 y 1
 end
+arch cobblestones2
+x 7
+y 2
+end
 arch mine8
 x 7
 y 2
 end
-arch mine3
+arch cobblestones2
 x 7
 y 3
 end
 arch mine3
 x 7
+y 3
+end
+arch cobblestones2
+x 7
 y 4
 end
 arch mine3
+x 7
+y 4
+end
+arch cobblestones2
 x 7
 y 5
 end
 arch mine3
 x 7
+y 5
+end
+arch cobblestones2
+x 7
 y 6
 end
 arch mine3
+x 7
+y 6
+end
+arch cobblestones2
 x 7
 y 7
 end
 arch mine3
 x 7
+y 7
+end
+arch cobblestones2
+x 7
 y 8
 end
 arch mine3
 x 7
+y 8
+end
+arch cobblestones2
+x 7
 y 9
+end
+arch mine3
+x 7
+y 9
+end
+arch cobblestones2
+x 7
+y 10
 end
 arch mine13
 x 7
@@ -1049,6 +1198,10 @@ arch cobblestones2
 x 7
 y 20
 end
+arch cobblestones2
+x 7
+y 21
+end
 arch mine2
 x 7
 y 21
@@ -1160,6 +1313,10 @@ arch cobblestones2
 x 8
 y 15
 end
+arch cobblestones2
+x 8
+y 16
+end
 arch mine6
 x 8
 y 16
@@ -1167,6 +1324,10 @@ end
 arch cobblestones2
 x 8
 y 17
+end
+arch cobblestones2
+x 8
+y 18
 end
 arch mine6
 x 8
@@ -1179,6 +1340,10 @@ end
 arch cobblestones2
 x 8
 y 20
+end
+arch cobblestones2
+x 8
+y 21
 end
 arch mine2
 x 8
@@ -1327,6 +1492,10 @@ arch cobblestones2
 x 9
 y 20
 end
+arch cobblestones2
+x 9
+y 21
+end
 arch mine2
 x 9
 y 21
@@ -1402,6 +1571,10 @@ arch cobblestones2
 x 10
 y 3
 end
+arch titan
+x 10
+y 3
+end
 arch cobblestones2
 x 10
 y 4
@@ -1413,6 +1586,10 @@ end
 arch cobblestones2
 x 10
 y 6
+end
+arch cobblestones2
+x 10
+y 7
 end
 arch mine6
 x 10
@@ -1459,6 +1636,10 @@ arch mine3
 x 10
 y 15
 end
+arch cobblestones2
+x 10
+y 16
+end
 arch mine12
 x 10
 y 16
@@ -1490,6 +1671,10 @@ end
 arch mine3
 x 10
 y 22
+end
+arch cobblestones2
+x 10
+y 23
 end
 arch mine5
 x 10
@@ -1828,6 +2013,10 @@ arch mine3
 x 13
 y 6
 end
+arch cobblestones2
+x 13
+y 7
+end
 arch mine12
 x 13
 y 7
@@ -1855,6 +2044,10 @@ end
 arch cobblestones2
 x 13
 y 12
+end
+arch cobblestones2
+x 13
+y 13
 end
 arch mine10
 x 13
@@ -1908,6 +2101,10 @@ arch mine9
 x 13
 y 25
 end
+arch cobblestones2
+x 13
+y 26
+end
 arch mine5
 x 13
 y 26
@@ -1920,9 +2117,17 @@ arch door_1
 x 13
 y 27
 end
+arch cobblestones2
+x 13
+y 28
+end
 arch mine8
 x 13
 y 28
+end
+arch cobblestones2
+x 13
+y 29
 end
 arch mine12
 x 13
@@ -2059,6 +2264,10 @@ arch random_food
 x 14
 y 21
 end
+arch cobblestones2
+x 14
+y 22
+end
 arch mine7
 x 14
 y 22
@@ -2124,6 +2333,8 @@ y 1
 end
 arch stair_down
 slaying Cavern
+hp 14
+sp 17
 x 15
 y 1
 end
@@ -2133,6 +2344,8 @@ y 2
 end
 arch stair_down
 slaying Cavern
+hp 14
+sp 18
 x 15
 y 2
 end
@@ -2141,6 +2354,11 @@ x 15
 y 3
 end
 arch cobblestones2
+x 15
+y 4
+end
+arch big_wiz
+name sentry
 x 15
 y 4
 end
@@ -2291,6 +2509,8 @@ y 1
 end
 arch stair_down
 slaying Cavern
+hp 15
+sp 17
 x 16
 y 1
 end
@@ -2300,6 +2520,8 @@ y 2
 end
 arch stair_down
 slaying Cavern
+hp 15
+sp 18
 x 16
 y 2
 end
@@ -2410,6 +2632,7 @@ end
 arch knight
 name Royal Sentry
 hp 500
+maxhp 500
 x 16
 y 25
 attack_movement 101
@@ -2605,32 +2828,63 @@ arch mine2
 x 17
 y 31
 end
+arch cobblestones2
+x 18
+end
 arch mine16
 x 18
 end
-arch mine3
+arch cobblestones2
 x 18
 y 1
 end
 arch mine3
 x 18
+y 1
+end
+arch cobblestones2
+x 18
 y 2
 end
 arch mine3
+x 18
+y 2
+end
+arch cobblestones2
 x 18
 y 3
 end
 arch mine3
 x 18
+y 3
+end
+arch cobblestones2
+x 18
 y 4
 end
 arch mine3
+x 18
+y 4
+end
+arch cobblestones2
 x 18
 y 5
 end
 arch mine3
 x 18
+y 5
+end
+arch cobblestones2
+x 18
 y 6
+end
+arch mine3
+x 18
+y 6
+end
+arch cobblestones2
+x 18
+y 7
 end
 arch mine4
 x 18
@@ -2696,6 +2950,10 @@ arch mine3
 x 18
 y 21
 end
+arch cobblestones2
+x 18
+y 22
+end
 arch mine12
 x 18
 y 22
@@ -2708,9 +2966,17 @@ arch cobblestones2
 x 18
 y 24
 end
+arch cobblestones2
+x 18
+y 25
+end
 arch mine10
 x 18
 y 25
+end
+arch cobblestones2
+x 18
+y 26
 end
 arch mine5
 x 18
@@ -2723,6 +2989,10 @@ end
 arch door_1
 x 18
 y 27
+end
+arch cobblestones2
+x 18
+y 28
 end
 arch mine8
 x 18
@@ -2766,6 +3036,10 @@ end
 arch cobblestones2
 x 19
 y 6
+end
+arch cobblestones2
+x 19
+y 7
 end
 arch mine2
 x 19
@@ -2898,6 +3172,10 @@ arch cobblestones2
 x 20
 y 6
 end
+arch cobblestones2
+x 20
+y 7
+end
 arch mine2
 x 20
 y 7
@@ -3017,6 +3295,10 @@ arch cobblestones2
 x 21
 y 3
 end
+arch titan
+x 21
+y 3
+end
 arch cobblestones2
 x 21
 y 4
@@ -3028,6 +3310,10 @@ end
 arch cobblestones2
 x 21
 y 6
+end
+arch cobblestones2
+x 21
+y 7
 end
 arch mine7
 x 21
@@ -3086,6 +3372,10 @@ arch guard
 x 21
 y 17
 end
+arch cobblestones2
+x 21
+y 18
+end
 arch mine10
 x 21
 y 18
@@ -3105,6 +3395,10 @@ end
 arch mine3
 x 21
 y 22
+end
+arch cobblestones2
+x 21
+y 23
 end
 arch mine5
 x 21
@@ -3360,6 +3654,10 @@ arch cobblestones2
 x 23
 y 15
 end
+arch cobblestones2
+x 23
+y 16
+end
 arch mine7
 x 23
 y 16
@@ -3367,6 +3665,10 @@ end
 arch cobblestones2
 x 23
 y 17
+end
+arch cobblestones2
+x 23
+y 18
 end
 arch mine7
 x 23
@@ -3447,37 +3749,73 @@ arch cobblestones2
 x 24
 y 1
 end
+arch cobblestones2
+x 24
+y 2
+end
 arch mine8
 x 24
 y 2
 end
-arch mine3
+arch cobblestones2
 x 24
 y 3
 end
 arch mine3
 x 24
+y 3
+end
+arch cobblestones2
+x 24
 y 4
 end
 arch mine3
+x 24
+y 4
+end
+arch cobblestones2
 x 24
 y 5
 end
 arch mine3
 x 24
+y 5
+end
+arch cobblestones2
+x 24
 y 6
 end
 arch mine3
+x 24
+y 6
+end
+arch cobblestones2
 x 24
 y 7
 end
 arch mine3
 x 24
+y 7
+end
+arch cobblestones2
+x 24
 y 8
 end
 arch mine3
 x 24
+y 8
+end
+arch cobblestones2
+x 24
 y 9
+end
+arch mine3
+x 24
+y 9
+end
+arch cobblestones2
+x 24
+y 10
 end
 arch mine13
 x 24
@@ -3532,6 +3870,10 @@ x 24
 y 18
 end
 arch cobblestones2
+x 24
+y 19
+end
+arch dragon
 x 24
 y 19
 end
@@ -3654,6 +3996,10 @@ arch dog
 x 25
 y 15
 end
+arch cobblestones2
+x 25
+y 16
+end
 arch mine6
 x 25
 y 16
@@ -3661,6 +4007,10 @@ end
 arch cobblestones2
 x 25
 y 17
+end
+arch cobblestones2
+x 25
+y 18
 end
 arch mine6
 x 25
@@ -3718,6 +4068,10 @@ arch cobblestones2
 x 25
 y 28
 end
+arch cobblestones2
+x 25
+y 29
+end
 arch mine7
 x 25
 y 29
@@ -3753,13 +4107,25 @@ arch cobblestones2
 x 26
 y 5
 end
+arch cobblestones2
+x 26
+y 6
+end
 arch mine10
 x 26
 y 6
 end
+arch cobblestones2
+x 26
+y 7
+end
 arch mine3
 x 26
 y 7
+end
+arch cobblestones2
+x 26
+y 8
 end
 arch mine5
 x 26
@@ -4005,6 +4371,10 @@ arch cobblestones2
 x 27
 y 28
 end
+arch cobblestones2
+x 27
+y 29
+end
 arch mine6
 x 27
 y 29
@@ -4032,6 +4402,10 @@ arch cobblestones2
 x 28
 y 3
 end
+arch titan
+x 28
+y 3
+end
 arch cobblestones2
 x 28
 y 4
@@ -4052,13 +4426,25 @@ arch guard
 x 28
 y 7
 end
+arch cobblestones2
+x 28
+y 8
+end
 arch mine8
 x 28
 y 8
 end
+arch cobblestones2
+x 28
+y 9
+end
 arch mine3
 x 28
 y 9
+end
+arch cobblestones2
+x 28
+y 10
 end
 arch mine12
 x 28
@@ -4223,6 +4609,10 @@ arch cobblestones2
 x 29
 y 15
 end
+arch cobblestones2
+x 29
+y 16
+end
 arch mine7
 x 29
 y 16
@@ -4230,6 +4620,10 @@ end
 arch cobblestones2
 x 29
 y 17
+end
+arch cobblestones2
+x 29
+y 18
 end
 arch mine7
 x 29
@@ -4265,6 +4659,7 @@ msg
 My hero!!
 endmsg
 hp 50
+maxhp 50
 x 29
 y 23
 level 5
@@ -4602,33 +4997,4 @@ end
 arch mine12
 x 31
 y 31
-end
-arch baslic
-x 1
-y 14
-end
-arch titan
-x 4
-y 2
-end
-arch titan
-x 10
-y 3
-end
-arch big_wiz
-name sentry
-x 15
-y 4
-end
-arch titan
-x 21
-y 3
-end
-arch dragon
-x 24
-y 19
-end
-arch titan
-x 28
-y 3
 end

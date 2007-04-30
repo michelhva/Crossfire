@@ -1,14 +1,15 @@
 arch map
 name Finish
+darkness 4
+width 24
+height 16
+enter_x 7
+enter_y 7
 msg
 Creator: Chris Jeske
 Email:
 Date: Sat Oct 26 16:06:45 1996
 endmsg
-hp 7
-sp 7
-x 24
-invisible 4
 end
 arch flagstone_2_2_2
 end
@@ -60,6 +61,10 @@ end
 arch flagstone_2_1_2
 x 1
 end
+arch marble
+x 1
+y 1
+end
 arch magic_banned
 x 1
 y 1
@@ -72,6 +77,10 @@ sp 11
 x 1
 y 1
 end
+arch marble
+x 1
+y 2
+end
 arch magic_banned
 x 1
 y 2
@@ -99,6 +108,10 @@ end
 arch marble
 x 1
 y 5
+end
+arch marble
+x 1
+y 6
 end
 arch magic_banned
 x 1
@@ -130,6 +143,10 @@ x 1
 y 7
 connected 1
 end
+arch marble
+x 1
+y 8
+end
 arch magic_banned
 x 1
 y 8
@@ -164,9 +181,17 @@ arch marble
 x 1
 y 11
 end
+arch marble
+x 1
+y 12
+end
 arch magic_banned
 x 1
 y 12
+end
+arch marble
+x 1
+y 13
 end
 arch magic_banned
 x 1
@@ -191,9 +216,17 @@ end
 arch flagstone_2_1_2
 x 2
 end
+arch marble
+x 2
+y 1
+end
 arch magic_banned
 x 2
 y 1
+end
+arch marble
+x 2
+y 2
 end
 arch magic_banned
 x 2
@@ -204,6 +237,10 @@ name creator_fire
 x 2
 y 2
 connected 1
+end
+arch marble
+x 2
+y 3
 end
 arch magic_banned
 x 2
@@ -224,6 +261,10 @@ end
 arch marble
 x 2
 y 5
+end
+arch marble
+x 2
+y 6
 end
 arch magic_banned
 x 2
@@ -250,6 +291,10 @@ x 2
 y 7
 connected 1
 end
+arch marble
+x 2
+y 8
+end
 arch magic_banned
 x 2
 y 8
@@ -276,12 +321,20 @@ arch marble
 x 2
 y 10
 end
-arch magic_banned
+arch marble
 x 2
 y 11
 end
 arch magic_banned
 x 2
+y 11
+end
+arch marble
+x 2
+y 12
+end
+arch magic_banned
+x 2
 y 12
 end
 arch creator
@@ -289,6 +342,10 @@ name creator_fire
 x 2
 y 12
 connected 1
+end
+arch marble
+x 2
+y 13
 end
 arch magic_banned
 x 2
@@ -313,9 +370,17 @@ arch marble
 x 3
 y 1
 end
+arch marble
+x 3
+y 2
+end
 arch magic_banned
 x 3
 y 2
+end
+arch marble
+x 3
+y 3
 end
 arch magic_banned
 x 3
@@ -326,6 +391,10 @@ name creator_fire
 x 3
 y 3
 connected 1
+end
+arch marble
+x 3
+y 4
 end
 arch magic_banned
 x 3
@@ -338,6 +407,10 @@ end
 arch marble
 x 3
 y 5
+end
+arch marble
+x 3
+y 6
 end
 arch magic_banned
 x 3
@@ -364,6 +437,10 @@ x 3
 y 7
 connected 1
 end
+arch marble
+x 3
+y 8
+end
 arch magic_banned
 x 3
 y 8
@@ -382,9 +459,17 @@ arch marble
 x 3
 y 9
 end
+arch marble
+x 3
+y 10
+end
 arch magic_banned
 x 3
 y 10
+end
+arch marble
+x 3
+y 11
 end
 arch magic_banned
 x 3
@@ -395,6 +480,10 @@ name creator_fire
 x 3
 y 11
 connected 1
+end
+arch marble
+x 3
+y 12
 end
 arch magic_banned
 x 3
@@ -435,9 +524,17 @@ arch marble
 x 4
 y 2
 end
+arch marble
+x 4
+y 3
+end
 arch magic_banned
 x 4
 y 3
+end
+arch marble
+x 4
+y 4
 end
 arch magic_banned
 x 4
@@ -456,6 +553,10 @@ end
 arch marble
 x 4
 y 5
+end
+arch marble
+x 4
+y 6
 end
 arch magic_banned
 x 4
@@ -482,6 +583,10 @@ x 4
 y 7
 connected 1
 end
+arch marble
+x 4
+y 8
+end
 arch magic_banned
 x 4
 y 8
@@ -500,6 +605,10 @@ arch marble
 x 4
 y 9
 end
+arch marble
+x 4
+y 10
+end
 arch magic_banned
 x 4
 y 10
@@ -509,6 +618,10 @@ name creator_fire
 x 4
 y 10
 connected 1
+end
+arch marble
+x 4
+y 11
 end
 arch magic_banned
 x 4
@@ -581,6 +694,10 @@ arch marble
 x 5
 y 5
 end
+arch marble
+x 5
+y 6
+end
 arch magic_banned
 x 5
 y 6
@@ -605,6 +722,10 @@ other_arch light2
 x 5
 y 7
 connected 1
+end
+arch marble
+x 5
+y 8
 end
 arch magic_banned
 x 5
@@ -667,6 +788,10 @@ end
 arch flagstone_2_1_2
 x 6
 end
+arch marble
+x 6
+y 1
+end
 arch magic_banned
 x 6
 y 1
@@ -676,6 +801,10 @@ name creator_fire
 x 6
 y 1
 connected 1
+end
+arch marble
+x 6
+y 2
 end
 arch magic_banned
 x 6
@@ -687,6 +816,10 @@ x 6
 y 2
 connected 1
 end
+arch marble
+x 6
+y 3
+end
 arch magic_banned
 x 6
 y 3
@@ -696,6 +829,10 @@ name creator_fire
 x 6
 y 3
 connected 1
+end
+arch marble
+x 6
+y 4
 end
 arch magic_banned
 x 6
@@ -707,6 +844,10 @@ x 6
 y 4
 connected 1
 end
+arch marble
+x 6
+y 5
+end
 arch magic_banned
 x 6
 y 5
@@ -716,6 +857,10 @@ name creator_fire
 x 6
 y 5
 connected 1
+end
+arch marble
+x 6
+y 6
 end
 arch magic_banned
 x 6
@@ -742,6 +887,10 @@ x 6
 y 7
 connected 1
 end
+arch marble
+x 6
+y 8
+end
 arch magic_banned
 x 6
 y 8
@@ -751,6 +900,10 @@ name creator_fire
 x 6
 y 8
 connected 1
+end
+arch marble
+x 6
+y 9
 end
 arch magic_banned
 x 6
@@ -762,6 +915,10 @@ x 6
 y 9
 connected 1
 end
+arch marble
+x 6
+y 10
+end
 arch magic_banned
 x 6
 y 10
@@ -771,6 +928,10 @@ name creator_fire
 x 6
 y 10
 connected 1
+end
+arch marble
+x 6
+y 11
 end
 arch magic_banned
 x 6
@@ -782,6 +943,10 @@ x 6
 y 11
 connected 1
 end
+arch marble
+x 6
+y 12
+end
 arch magic_banned
 x 6
 y 12
@@ -791,6 +956,10 @@ name creator_fire
 x 6
 y 12
 connected 1
+end
+arch marble
+x 6
+y 13
 end
 arch magic_banned
 x 6
@@ -908,6 +1077,10 @@ x 7
 y 6
 connected 1
 end
+arch marble
+x 7
+y 7
+end
 arch magic_banned
 x 7
 y 7
@@ -1018,6 +1191,10 @@ end
 arch flagstone_2_1_2
 x 8
 end
+arch marble
+x 8
+y 1
+end
 arch magic_banned
 x 8
 y 1
@@ -1027,6 +1204,10 @@ name creator_fire
 x 8
 y 1
 connected 1
+end
+arch marble
+x 8
+y 2
 end
 arch magic_banned
 x 8
@@ -1038,6 +1219,10 @@ x 8
 y 2
 connected 1
 end
+arch marble
+x 8
+y 3
+end
 arch magic_banned
 x 8
 y 3
@@ -1047,6 +1232,10 @@ name creator_fire
 x 8
 y 3
 connected 1
+end
+arch marble
+x 8
+y 4
 end
 arch magic_banned
 x 8
@@ -1058,6 +1247,10 @@ x 8
 y 4
 connected 1
 end
+arch marble
+x 8
+y 5
+end
 arch magic_banned
 x 8
 y 5
@@ -1067,6 +1260,10 @@ name creator_fire
 x 8
 y 5
 connected 1
+end
+arch marble
+x 8
+y 6
 end
 arch magic_banned
 x 8
@@ -1093,6 +1290,10 @@ x 8
 y 7
 connected 1
 end
+arch marble
+x 8
+y 8
+end
 arch magic_banned
 x 8
 y 8
@@ -1102,6 +1303,10 @@ name creator_fire
 x 8
 y 8
 connected 1
+end
+arch marble
+x 8
+y 9
 end
 arch magic_banned
 x 8
@@ -1113,6 +1318,10 @@ x 8
 y 9
 connected 1
 end
+arch marble
+x 8
+y 10
+end
 arch magic_banned
 x 8
 y 10
@@ -1122,6 +1331,10 @@ name creator_fire
 x 8
 y 10
 connected 1
+end
+arch marble
+x 8
+y 11
 end
 arch magic_banned
 x 8
@@ -1133,6 +1346,10 @@ x 8
 y 11
 connected 1
 end
+arch marble
+x 8
+y 12
+end
 arch magic_banned
 x 8
 y 12
@@ -1142,6 +1359,10 @@ name creator_fire
 x 8
 y 12
 connected 1
+end
+arch marble
+x 8
+y 13
 end
 arch magic_banned
 x 8
@@ -1204,6 +1425,10 @@ arch marble
 x 9
 y 5
 end
+arch marble
+x 9
+y 6
+end
 arch magic_banned
 x 9
 y 6
@@ -1228,6 +1453,10 @@ other_arch light2
 x 9
 y 7
 connected 1
+end
+arch marble
+x 9
+y 8
 end
 arch magic_banned
 x 9
@@ -1306,9 +1535,17 @@ arch marble
 x 10
 y 2
 end
+arch marble
+x 10
+y 3
+end
 arch magic_banned
 x 10
 y 3
+end
+arch marble
+x 10
+y 4
 end
 arch magic_banned
 x 10
@@ -1327,6 +1564,10 @@ end
 arch marble
 x 10
 y 5
+end
+arch marble
+x 10
+y 6
 end
 arch magic_banned
 x 10
@@ -1353,6 +1594,10 @@ x 10
 y 7
 connected 1
 end
+arch marble
+x 10
+y 8
+end
 arch magic_banned
 x 10
 y 8
@@ -1371,6 +1616,10 @@ arch marble
 x 10
 y 9
 end
+arch marble
+x 10
+y 10
+end
 arch magic_banned
 x 10
 y 10
@@ -1380,6 +1629,10 @@ name creator_fire
 x 10
 y 10
 connected 1
+end
+arch marble
+x 10
+y 11
 end
 arch magic_banned
 x 10
@@ -1420,9 +1673,17 @@ arch marble
 x 11
 y 1
 end
+arch marble
+x 11
+y 2
+end
 arch magic_banned
 x 11
 y 2
+end
+arch marble
+x 11
+y 3
 end
 arch magic_banned
 x 11
@@ -1433,6 +1694,10 @@ name creator_fire
 x 11
 y 3
 connected 1
+end
+arch marble
+x 11
+y 4
 end
 arch magic_banned
 x 11
@@ -1445,6 +1710,10 @@ end
 arch marble
 x 11
 y 5
+end
+arch marble
+x 11
+y 6
 end
 arch magic_banned
 x 11
@@ -1471,6 +1740,10 @@ x 11
 y 7
 connected 1
 end
+arch marble
+x 11
+y 8
+end
 arch magic_banned
 x 11
 y 8
@@ -1489,9 +1762,17 @@ arch marble
 x 11
 y 9
 end
+arch marble
+x 11
+y 10
+end
 arch magic_banned
 x 11
 y 10
+end
+arch marble
+x 11
+y 11
 end
 arch magic_banned
 x 11
@@ -1502,6 +1783,10 @@ name creator_fire
 x 11
 y 11
 connected 1
+end
+arch marble
+x 11
+y 12
 end
 arch magic_banned
 x 11
@@ -1526,9 +1811,17 @@ end
 arch flagstone_2_1_2
 x 12
 end
+arch marble
+x 12
+y 1
+end
 arch magic_banned
 x 12
 y 1
+end
+arch marble
+x 12
+y 2
 end
 arch magic_banned
 x 12
@@ -1539,6 +1832,10 @@ name creator_fire
 x 12
 y 2
 connected 1
+end
+arch marble
+x 12
+y 3
 end
 arch magic_banned
 x 12
@@ -1559,6 +1856,10 @@ end
 arch marble
 x 12
 y 5
+end
+arch marble
+x 12
+y 6
 end
 arch magic_banned
 x 12
@@ -1585,6 +1886,10 @@ x 12
 y 7
 connected 1
 end
+arch marble
+x 12
+y 8
+end
 arch magic_banned
 x 12
 y 8
@@ -1611,12 +1916,20 @@ arch marble
 x 12
 y 10
 end
-arch magic_banned
+arch marble
 x 12
 y 11
 end
 arch magic_banned
 x 12
+y 11
+end
+arch marble
+x 12
+y 12
+end
+arch magic_banned
+x 12
 y 12
 end
 arch creator
@@ -1624,6 +1937,10 @@ name creator_fire
 x 12
 y 12
 connected 1
+end
+arch marble
+x 12
+y 13
 end
 arch magic_banned
 x 12
@@ -1639,6 +1956,10 @@ y 15
 end
 arch flagstone_2_1_2
 x 13
+end
+arch marble
+x 13
+y 1
 end
 arch magic_banned
 x 13
@@ -1652,6 +1973,10 @@ sp 11
 x 13
 y 1
 end
+arch marble
+x 13
+y 2
+end
 arch magic_banned
 x 13
 y 2
@@ -1679,6 +2004,10 @@ end
 arch marble
 x 13
 y 5
+end
+arch marble
+x 13
+y 6
 end
 arch magic_banned
 x 13
@@ -1710,6 +2039,10 @@ x 13
 y 7
 connected 1
 end
+arch marble
+x 13
+y 8
+end
 arch magic_banned
 x 13
 y 8
@@ -1744,9 +2077,17 @@ arch marble
 x 13
 y 11
 end
+arch marble
+x 13
+y 12
+end
 arch magic_banned
 x 13
 y 12
+end
+arch marble
+x 13
+y 13
 end
 arch magic_banned
 x 13
@@ -2031,10 +2372,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 19
 y 11
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2048,10 +2389,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 20
 y 10
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2071,10 +2412,10 @@ been lost. The Grey Master's works are but
 a distant shadow of the might contained in
 the shield!!!
 
-     As you look away from the shield, its
+As you look away from the shield, its
 image still seems to burn before you, as
 if you had been looking at a bright light.
-     But looking back at the shield, you
+But looking back at the shield, you
 decide that it certainly doesn't emit any
 light. As a matter of fact, it looks as if
 it would absorb light, were that possible...
@@ -2087,8 +2428,6 @@ Cha -3
 ac 8
 x 20
 y 11
-immune 5216
-protected 31
 material 256
 value 1000
 weight 5000
@@ -2097,6 +2436,7 @@ glow_radius 5
 identified 1
 reflect_missile 1
 reflect_spell 1
+immune 31
 end
 arch teleporter
 hp 7
@@ -2109,10 +2449,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 20
 y 12
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2126,9 +2466,9 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 21
 y 11
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
