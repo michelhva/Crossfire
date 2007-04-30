@@ -1,12 +1,14 @@
 arch map
 name Island
+width 16
+height 16
+enter_x 3
+enter_y 6
 msg
 Creator: Chris Jeske
 Email:
 Date: Mon Sep 16 16:03:30 1996
 endmsg
-hp 3
-sp 6
 end
 arch sea
 end
@@ -149,6 +151,14 @@ arch sea
 x 2
 y 4
 end
+arch s_ship
+name grey galleon
+slaying Island1
+hp 11
+sp 12
+x 2
+y 4
+end
 arch sea1
 x 2
 y 5
@@ -195,6 +205,8 @@ y 14
 end
 arch ruins
 slaying Ruins
+hp 7
+sp 1
 x 2
 y 14
 end
@@ -563,6 +575,18 @@ end
 arch woods
 x 8
 y 8
+end
+arch stronghold
+name Grey Castle
+slaying Castle
+hp 15
+sp 30
+x 8
+y 8
+end
+arch jungle_2
+x 8
+y 9
 end
 arch brush
 x 8
@@ -1039,20 +1063,4 @@ end
 arch sea
 x 15
 y 15
-end
-arch s_ship
-name grey galleon
-slaying /Greyshield/Island1
-hp 11
-sp 12
-x 2
-y 4
-end
-arch stronghold
-name Grey Castle
-slaying Castle
-hp 15
-sp 30
-x 8
-y 8
 end

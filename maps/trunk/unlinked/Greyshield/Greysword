@@ -1,14 +1,15 @@
 arch map
 name Greysword
+darkness 1
+width 18
+height 16
+enter_x 8
+enter_y 7
 msg
 Creator: Chris Jeske
 Email:
 Date: Thu Nov 14 09:05:40 1996
 endmsg
-hp 8
-sp 7
-x 18
-invisible 1
 end
 arch cave_7
 end
@@ -226,8 +227,9 @@ arch mover_5
 x 2
 y 2
 speed -1.000000
-level 1
+level 100
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 2
@@ -243,6 +245,7 @@ y 3
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 2
@@ -254,6 +257,7 @@ y 4
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 2
@@ -265,6 +269,7 @@ y 5
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 2
@@ -276,6 +281,7 @@ y 6
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 2
@@ -287,6 +293,7 @@ y 7
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 2
@@ -298,6 +305,7 @@ y 8
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 2
@@ -313,8 +321,9 @@ y 9
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 2
 y 9
 end
@@ -328,8 +337,9 @@ y 10
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 2
 y 10
 end
@@ -343,8 +353,9 @@ y 11
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 2
 y 11
 end
@@ -358,8 +369,9 @@ y 12
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 2
 y 12
 end
@@ -373,6 +385,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 2
@@ -417,8 +430,9 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 3
 y 2
 end
@@ -532,6 +546,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch woodfloor
 name void
@@ -572,8 +587,9 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 4
 y 2
 end
@@ -687,6 +703,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch woodfloor
 name void
@@ -727,8 +744,9 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 5
 y 2
 end
@@ -842,6 +860,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch woodfloor
 name void
@@ -882,8 +901,9 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 6
 y 2
 end
@@ -917,9 +937,17 @@ face blocked.111
 x 6
 y 5
 end
+arch marble
+x 6
+y 6
+end
 arch dungeon_magic
 x 6
 y 6
+end
+arch marble
+x 6
+y 7
 end
 arch dungeon_magic
 x 6
@@ -930,6 +958,10 @@ x 6
 y 7
 connected 1
 end
+arch marble
+x 6
+y 8
+end
 arch dungeon_magic
 x 6
 y 8
@@ -938,6 +970,10 @@ arch creator
 x 6
 y 8
 connected 1
+end
+arch marble
+x 6
+y 9
 end
 arch dungeon_magic
 x 6
@@ -983,6 +1019,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch woodfloor
 name void
@@ -1023,6 +1060,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 7
@@ -1058,6 +1096,10 @@ face blocked.111
 x 7
 y 5
 end
+arch marble
+x 7
+y 6
+end
 arch dungeon_magic
 x 7
 y 6
@@ -1066,6 +1108,10 @@ arch creator
 x 7
 y 6
 connected 1
+end
+arch marble
+x 7
+y 7
 end
 arch dungeon_magic
 x 7
@@ -1077,6 +1123,10 @@ hp 22
 sp 14
 x 7
 y 7
+end
+arch marble
+x 7
+y 8
 end
 arch dungeon_magic
 x 7
@@ -1085,16 +1135,17 @@ end
 arch sign
 msg
 Ah... fools! All of them!
-Lured by their greed, I have changed
-their appearance and locked them
-into this imortal dance...
 
-Beware, lest the same fate befall you!
-For those who have only one purpose
-shall be succesful...
+Lured by their greed, I have changed their appearance and locked them into this immortal dance...
+
+Beware, lest the same fate befall you! For those who have only one purpose shall be succesful...
 endmsg
 x 7
 y 8
+end
+arch marble
+x 7
+y 9
 end
 arch dungeon_magic
 x 7
@@ -1145,6 +1196,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch woodfloor
 name void
@@ -1185,6 +1237,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 8
@@ -1215,6 +1268,10 @@ name void
 face blocked.111
 x 8
 y 5
+end
+arch marble
+x 8
+y 6
 end
 arch dungeon_magic
 x 8
@@ -1225,9 +1282,17 @@ x 8
 y 6
 connected 1
 end
+arch marble
+x 8
+y 7
+end
 arch dungeon_magic
 x 8
 y 7
+end
+arch marble
+x 8
+y 8
 end
 arch dungeon_magic
 x 8
@@ -1240,6 +1305,10 @@ sp 14
 x 8
 y 8
 end
+arch marble
+x 8
+y 9
+end
 arch dungeon_magic
 x 8
 y 9
@@ -1289,6 +1358,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 8
@@ -1333,6 +1403,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 9
@@ -1363,10 +1434,18 @@ name void
 face blocked.111
 x 9
 y 5
+end
+arch marble
+x 9
+y 6
 end
 arch dungeon_magic
 x 9
 y 6
+end
+arch marble
+x 9
+y 7
 end
 arch dungeon_magic
 x 9
@@ -1377,6 +1456,10 @@ x 9
 y 7
 connected 1
 end
+arch marble
+x 9
+y 8
+end
 arch dungeon_magic
 x 9
 y 8
@@ -1386,6 +1469,10 @@ x 9
 y 8
 connected 1
 end
+arch marble
+x 9
+y 9
+end
 arch dungeon_magic
 x 9
 y 9
@@ -1430,8 +1517,9 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 9
 y 13
 end
@@ -1474,6 +1562,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 10
@@ -1585,8 +1674,9 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 10
 y 13
 end
@@ -1629,6 +1719,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 11
@@ -1740,8 +1831,9 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 11
 y 13
 end
@@ -1784,6 +1876,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 12
@@ -1895,8 +1988,9 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 12
 y 13
 end
@@ -1939,6 +2033,7 @@ y 2
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 13
@@ -1954,8 +2049,9 @@ y 3
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 13
 y 3
 end
@@ -1969,8 +2065,9 @@ y 4
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 13
 y 4
 end
@@ -1984,8 +2081,9 @@ y 5
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 13
 y 5
 end
@@ -1999,8 +2097,9 @@ y 6
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
-arch Arch Angel
+arch HighAngel
 x 13
 y 6
 end
@@ -2011,9 +2110,10 @@ end
 arch mover_1
 x 13
 y 7
-speed -1.000000
+speed -1.0
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 13
@@ -2029,6 +2129,7 @@ y 8
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 13
@@ -2040,6 +2141,7 @@ y 9
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 13
@@ -2051,6 +2153,7 @@ y 10
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 13
@@ -2062,6 +2165,7 @@ y 11
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 13
@@ -2073,6 +2177,7 @@ y 12
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch dungeon_magic
 x 13
@@ -2084,6 +2189,7 @@ y 13
 speed -1.000000
 level 1
 attacktype 1
+move_type walk fly_low fly_high
 end
 arch angel
 x 13
@@ -2438,10 +2544,10 @@ Wis 1
 Cha -2
 x 17
 y 8
-protected 2
 attacktype 257
 material 256
 magic 5
+protected 2
 end
 arch teleporter
 name teleporter1

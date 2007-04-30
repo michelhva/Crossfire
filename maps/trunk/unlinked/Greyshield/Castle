@@ -1,14 +1,14 @@
 arch map
 name Castle
+width 32
+height 32
+enter_x 15
+enter_y 30
 msg
 Creator: Chris Jeske
 Email:
 Date: Mon Sep 16 16:26:20 1996
 endmsg
-hp 15
-sp 30
-x 32
-y 32
 end
 arch woods_3
 end
@@ -34,6 +34,9 @@ arch woods
 y 7
 end
 arch grass
+y 8
+end
+arch baslic
 y 8
 end
 arch grass
@@ -78,6 +81,9 @@ end
 arch grass
 y 22
 end
+arch gaelotroll
+y 22
+end
 arch grass
 y 23
 end
@@ -108,6 +114,9 @@ end
 arch brush
 x 1
 end
+arch baslic
+x 1
+end
 arch woods_3
 x 1
 y 1
@@ -121,6 +130,10 @@ x 1
 y 3
 end
 arch grass
+x 1
+y 4
+end
+arch troll
 x 1
 y 4
 end
@@ -652,17 +665,33 @@ arch biglake_se
 x 5
 y 3
 end
+arch marble
+x 5
+y 4
+end
 arch cwall_2_2_2
 x 5
 y 4
 end
-arch cwall_2_1_1
+arch marble
 x 5
 y 5
 end
 arch cwall_2_1_1
 x 5
+y 5
+end
+arch marble
+x 5
 y 6
+end
+arch cwall_2_1_1
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
 end
 arch cwall_2_2_1
 x 5
@@ -716,17 +745,33 @@ arch grass
 x 5
 y 19
 end
+arch marble
+x 5
+y 20
+end
 arch cwall_2_2_2
 x 5
 y 20
 end
-arch cwall_2_1_1
+arch marble
 x 5
 y 21
 end
 arch cwall_2_1_1
 x 5
+y 21
+end
+arch marble
+x 5
 y 22
+end
+arch cwall_2_1_1
+x 5
+y 22
+end
+arch marble
+x 5
+y 23
 end
 arch cwall_2_2_1
 x 5
@@ -783,33 +828,73 @@ arch biglake_s
 x 6
 y 2
 end
+arch marble
+x 6
+y 3
+end
 arch cwall_2_2_2
 x 6
 y 3
+end
+arch marble
+x 6
+y 4
 end
 arch cwall_2_2_4
 x 6
 y 4
 end
+arch marble
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch marble
+x 6
+y 7
+end
 arch cwall_2_2_3
 x 6
 y 7
 end
-arch cwall_2_1_1
+arch marble
 x 6
 y 8
 end
 arch cwall_2_1_1
 x 6
+y 8
+end
+arch marble
+x 6
 y 9
+end
+arch cwall_2_1_1
+x 6
+y 9
+end
+arch marble
+x 6
+y 10
 end
 arch cwall_2_1_1
 x 6
 y 10
 end
+arch marble
+x 6
+y 11
+end
 arch cwall_1_2
 x 6
 y 11
+end
+arch marble
+x 6
+y 12
 end
 arch swall_1_1
 x 6
@@ -819,6 +904,10 @@ arch dungeon_magic
 x 6
 y 12
 end
+arch marble
+x 6
+y 13
+end
 arch swall_2_1_1
 x 6
 y 13
@@ -827,6 +916,10 @@ arch dungeon_magic
 x 6
 y 13
 end
+arch marble
+x 6
+y 14
+end
 arch swall_2_1_1
 x 6
 y 14
@@ -834,6 +927,10 @@ end
 arch dungeon_magic
 x 6
 y 14
+end
+arch marble
+x 6
+y 15
 end
 arch swall_1_2
 x 6
@@ -843,29 +940,65 @@ arch dungeon_magic
 x 6
 y 15
 end
+arch marble
+x 6
+y 16
+end
 arch cwall_1_1
 x 6
 y 16
 end
-arch cwall_2_1_1
+arch marble
 x 6
 y 17
 end
 arch cwall_2_1_1
 x 6
+y 17
+end
+arch marble
+x 6
 y 18
+end
+arch cwall_2_1_1
+x 6
+y 18
+end
+arch marble
+x 6
+y 19
 end
 arch cwall_2_1_1
 x 6
 y 19
 end
+arch marble
+x 6
+y 20
+end
 arch cwall_2_2_4
 x 6
 y 20
 end
+arch marble
+x 6
+y 21
+end
+arch marble
+x 6
+y 22
+end
+arch marble
+x 6
+y 23
+end
 arch cwall_2_2_3
 x 6
 y 23
+end
+arch marble
+x 6
+y 24
 end
 arch cwall_2_2_1
 x 6
@@ -910,9 +1043,21 @@ arch biglake_s
 x 7
 y 2
 end
+arch marble
+x 7
+y 3
+end
 arch cwall_2_1_2
 x 7
 y 3
+end
+arch marble
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
 end
 arch stair_down
 slaying Dungeon
@@ -921,12 +1066,88 @@ sp 30
 x 7
 y 5
 end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch marble
+x 7
+y 10
+end
+arch marble
+x 7
+y 11
+end
+arch marble
+x 7
+y 12
+end
+arch marble
+x 7
+y 13
+end
+arch marble
+x 7
+y 14
+end
+arch marble
+x 7
+y 15
+end
+arch marble
+x 7
+y 16
+end
+arch marble
+x 7
+y 17
+end
+arch marble
+x 7
+y 18
+end
+arch marble
+x 7
+y 19
+end
+arch marble
+x 7
+y 20
+end
+arch marble
+x 7
+y 21
+end
+arch marble
+x 7
+y 22
+end
 arch stair_up
 slaying Elements
 hp 7
 sp 30
 x 7
 y 22
+end
+arch marble
+x 7
+y 23
+end
+arch marble
+x 7
+y 24
 end
 arch cwall_2_1_2
 x 7
@@ -971,29 +1192,65 @@ arch biglake_s
 x 8
 y 2
 end
+arch marble
+x 8
+y 3
+end
 arch cwall_2_1_2
 x 8
 y 3
+end
+arch marble
+x 8
+y 4
+end
+arch marble
+x 8
+y 5
+end
+arch marble
+x 8
+y 6
 end
 arch cwall_2_2_2
 x 8
 y 6
 end
-arch cwall_2_1_1
+arch marble
 x 8
 y 7
 end
 arch cwall_2_1_1
 x 8
+y 7
+end
+arch marble
+x 8
 y 8
+end
+arch cwall_2_1_1
+x 8
+y 8
+end
+arch marble
+x 8
+y 9
 end
 arch cwall_2_1_1
 x 8
 y 9
 end
+arch marble
+x 8
+y 10
+end
 arch cwall_1_2
 x 8
 y 10
+end
+arch marble
+x 8
+y 11
 end
 arch swall_1_1
 x 8
@@ -1003,6 +1260,10 @@ arch dungeon_magic
 x 8
 y 11
 end
+arch marble
+x 8
+y 12
+end
 arch swall_1_2
 x 8
 y 12
@@ -1010,22 +1271,42 @@ end
 arch dungeon_magic
 x 8
 y 12
+end
+arch marble
+x 8
+y 13
 end
 arch cwall_1_1
 x 8
 y 13
 end
+arch marble
+x 8
+y 14
+end
 arch cwall_2_1_1
 x 8
 y 14
+end
+arch marble
+x 8
+y 15
 end
 arch cwall_3_2
 x 8
 y 15
 end
+arch marble
+x 8
+y 16
+end
 arch cwall_1_2
 x 8
 y 16
+end
+arch marble
+x 8
+y 17
 end
 arch swall_1_1
 x 8
@@ -1035,6 +1316,10 @@ arch dungeon_magic
 x 8
 y 17
 end
+arch marble
+x 8
+y 18
+end
 arch swall_1_2
 x 8
 y 18
@@ -1043,17 +1328,41 @@ arch dungeon_magic
 x 8
 y 18
 end
+arch marble
+x 8
+y 19
+end
 arch cwall_1_1
 x 8
 y 19
+end
+arch marble
+x 8
+y 20
 end
 arch cwall_2_1_1
 x 8
 y 20
 end
+arch marble
+x 8
+y 21
+end
 arch cwall_2_2_1
 x 8
 y 21
+end
+arch marble
+x 8
+y 22
+end
+arch marble
+x 8
+y 23
+end
+arch marble
+x 8
+y 24
 end
 arch cwall_2_1_2
 x 8
@@ -1098,17 +1407,37 @@ arch biglake_s
 x 9
 y 2
 end
+arch marble
+x 9
+y 3
+end
 arch cwall_2_2_3
 x 9
 y 3
+end
+arch marble
+x 9
+y 4
 end
 arch cwall_2_2_1
 x 9
 y 4
 end
+arch marble
+x 9
+y 5
+end
+arch marble
+x 9
+y 6
+end
 arch cwall_2_1_2
 x 9
 y 6
+end
+arch marble
+x 9
+y 7
 end
 arch bed_save
 x 9
@@ -1117,6 +1446,10 @@ end
 arch man
 x 9
 y 7
+end
+arch marble
+x 9
+y 8
 end
 arch woman
 msg
@@ -1127,25 +1460,73 @@ endmsg
 x 9
 y 8
 end
-arch chest
+arch marble
+x 9
+y 9
+end
+arch marble
+x 9
+y 10
+end
+arch marble
+x 9
+y 11
+end
+arch marble
+x 9
+y 12
+end
+arch marble
 x 9
 y 13
 end
 arch chest
 x 9
+y 13
+end
+arch marble
+x 9
 y 14
+end
+arch chest
+x 9
+y 14
+end
+arch marble
+x 9
+y 15
 end
 arch cwall_2_1_2
 x 9
 y 15
 end
-arch chest
+arch marble
+x 9
+y 16
+end
+arch marble
+x 9
+y 17
+end
+arch marble
 x 9
 y 18
 end
 arch chest
 x 9
+y 18
+end
+arch marble
+x 9
 y 19
+end
+arch chest
+x 9
+y 19
+end
+arch marble
+x 9
+y 20
 end
 arch bed_save
 x 9
@@ -1157,28 +1538,39 @@ msg
 Hi there.
 @match King|king|rey|hief|advisor|staff
 That advisor is good for nothing.
-If you want to see the Grey King,
-you must get the ring with his
-seal on it, and tell him the
-Chief of Staff sent you...
+If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
 @match seal|ring|see|sent
-The Ring of Seal is kept in the
-chamber behind the throne room. You
-need the iron chalice from the
-factory to open the door.
+The Ring of Seal is kept in the chamber behind the throne room. You
+need the iron chalice from the factory to open the door.
 @match *
 I'm too busy to answer your queries.
 endmsg
 x 9
 y 20
 end
+arch marble
+x 9
+y 21
+end
 arch cwall_2_1_2
 x 9
 y 21
 end
+arch marble
+x 9
+y 22
+end
+arch marble
+x 9
+y 23
+end
 arch cwall_2_2_2
 x 9
 y 23
+end
+arch marble
+x 9
+y 24
 end
 arch cwall_2_2_4
 x 9
@@ -1227,25 +1619,53 @@ arch grass
 x 10
 y 3
 end
+arch marble
+x 10
+y 4
+end
 arch cwall_2_1_2
 x 10
 y 4
+end
+arch marble
+x 10
+y 5
+end
+arch marble
+x 10
+y 6
 end
 arch cwall_3_3
 x 10
 y 6
 end
-arch cwall_2_1_1
+arch marble
 x 10
 y 7
 end
 arch cwall_2_1_1
 x 10
+y 7
+end
+arch marble
+x 10
 y 8
 end
 arch cwall_2_1_1
 x 10
+y 8
+end
+arch marble
+x 10
 y 9
+end
+arch cwall_2_1_1
+x 10
+y 9
+end
+arch marble
+x 10
+y 10
 end
 arch cwall_1_2
 x 10
@@ -1259,17 +1679,33 @@ arch door_look_2
 x 10
 y 11
 end
+arch marble
+x 10
+y 12
+end
 arch cwall_1_1
 x 10
 y 12
 end
-arch cwall_2_1_1
+arch marble
 x 10
 y 13
 end
 arch cwall_2_1_1
 x 10
+y 13
+end
+arch marble
+x 10
 y 14
+end
+arch cwall_2_1_1
+x 10
+y 14
+end
+arch marble
+x 10
+y 15
 end
 arch cwall_2_2_4
 x 10
@@ -1283,26 +1719,54 @@ arch door_look_2
 x 10
 y 16
 end
+arch marble
+x 10
+y 17
+end
 arch cwall_1_1
 x 10
 y 17
 end
-arch cwall_2_1_1
+arch marble
 x 10
 y 18
 end
 arch cwall_2_1_1
 x 10
+y 18
+end
+arch marble
+x 10
 y 19
+end
+arch cwall_2_1_1
+x 10
+y 19
+end
+arch marble
+x 10
+y 20
 end
 arch cwall_2_1_1
 x 10
 y 20
 end
+arch marble
+x 10
+y 21
+end
 arch cwall_3_1
 x 10
 y 21
 end
+arch marble
+x 10
+y 22
+end
+arch marble
+x 10
+y 23
+end
 arch cwall_2_1_2
 x 10
 y 23
@@ -1354,20 +1818,100 @@ arch grass
 x 11
 y 3
 end
-arch cwall_2_1_2
+arch marble
 x 11
 y 4
 end
 arch cwall_2_1_2
 x 11
+y 4
+end
+arch marble
+x 11
+y 5
+end
+arch marble
+x 11
 y 6
 end
 arch cwall_2_1_2
+x 11
+y 6
+end
+arch marble
+x 11
+y 7
+end
+arch marble
+x 11
+y 8
+end
+arch marble
+x 11
+y 9
+end
+arch marble
+x 11
+y 10
+end
+arch marble
+x 11
+y 11
+end
+arch marble
+x 11
+y 12
+end
+arch marble
+x 11
+y 13
+end
+arch marble
+x 11
+y 14
+end
+arch marble
+x 11
+y 15
+end
+arch marble
+x 11
+y 16
+end
+arch marble
+x 11
+y 17
+end
+arch marble
+x 11
+y 18
+end
+arch marble
+x 11
+y 19
+end
+arch marble
+x 11
+y 20
+end
+arch marble
 x 11
 y 21
 end
 arch cwall_2_1_2
 x 11
+y 21
+end
+arch marble
+x 11
+y 22
+end
+arch marble
+x 11
+y 23
+end
+arch cwall_2_1_2
+x 11
 y 23
 end
 arch grass
@@ -1417,26 +1961,54 @@ arch grass
 x 12
 y 3
 end
-arch cwall_2_1_2
+arch marble
 x 12
 y 4
 end
 arch cwall_2_1_2
 x 12
+y 4
+end
+arch marble
+x 12
+y 5
+end
+arch marble
+x 12
 y 6
+end
+arch cwall_2_1_2
+x 12
+y 6
+end
+arch marble
+x 12
+y 7
 end
 arch locked_door2
 slaying chalice
 x 12
 y 7
 end
-arch cwall_0
+arch marble
 x 12
 y 8
 end
 arch cwall_0
 x 12
+y 8
+end
+arch marble
+x 12
 y 9
+end
+arch cwall_0
+x 12
+y 9
+end
+arch marble
+x 12
+y 10
 end
 arch swall_1_1
 x 12
@@ -1446,6 +2018,10 @@ arch dungeon_magic
 x 12
 y 10
 end
+arch marble
+x 12
+y 11
+end
 arch swall_1_2
 x 12
 y 11
@@ -1453,11 +2029,19 @@ end
 arch dungeon_magic
 x 12
 y 11
+end
+arch marble
+x 12
+y 12
 end
 arch cwall_0
 x 12
 y 12
 end
+arch marble
+x 12
+y 13
+end
 arch swall_1_1
 x 12
 y 13
@@ -1466,6 +2050,10 @@ arch dungeon_magic
 x 12
 y 13
 end
+arch marble
+x 12
+y 14
+end
 arch swall_1_2
 x 12
 y 14
@@ -1473,11 +2061,19 @@ end
 arch dungeon_magic
 x 12
 y 14
+end
+arch marble
+x 12
+y 15
 end
 arch cwall_0
 x 12
 y 15
 end
+arch marble
+x 12
+y 16
+end
 arch swall_1_1
 x 12
 y 16
@@ -1485,6 +2081,10 @@ end
 arch dungeon_magic
 x 12
 y 16
+end
+arch marble
+x 12
+y 17
 end
 arch swall_1_2
 x 12
@@ -1494,13 +2094,37 @@ arch dungeon_magic
 x 12
 y 17
 end
+arch marble
+x 12
+y 18
+end
 arch cwall_0
 x 12
 y 18
 end
+arch marble
+x 12
+y 19
+end
+arch marble
+x 12
+y 20
+end
+arch marble
+x 12
+y 21
+end
 arch cwall_1_3
 x 12
 y 21
+end
+arch marble
+x 12
+y 22
+end
+arch marble
+x 12
+y 23
 end
 arch cwall_2_1_2
 x 12
@@ -1553,17 +2177,37 @@ arch grass
 x 13
 y 3
 end
+arch marble
+x 13
+y 4
+end
 arch cwall_1_3
 x 13
 y 4
+end
+arch marble
+x 13
+y 5
+end
+arch marble
+x 13
+y 6
 end
 arch cwall_2_1_2
 x 13
 y 6
 end
+arch marble
+x 13
+y 7
+end
 arch random_wealth
 x 13
 y 7
+end
+arch marble
+x 13
+y 8
 end
 arch dungeon_magic
 x 13
@@ -1573,13 +2217,73 @@ arch swall_1_4
 x 13
 y 8
 end
+arch marble
+x 13
+y 9
+end
 arch knight
 x 13
 y 9
 end
+arch marble
+x 13
+y 10
+end
+arch marble
+x 13
+y 11
+end
+arch marble
+x 13
+y 12
+end
+arch marble
+x 13
+y 13
+end
+arch marble
+x 13
+y 14
+end
+arch marble
+x 13
+y 15
+end
+arch marble
+x 13
+y 16
+end
+arch marble
+x 13
+y 17
+end
+arch marble
+x 13
+y 18
+end
 arch door_look_1
 x 13
 y 18
+end
+arch marble
+x 13
+y 19
+end
+arch marble
+x 13
+y 20
+end
+arch marble
+x 13
+y 21
+end
+arch marble
+x 13
+y 22
+end
+arch marble
+x 13
+y 23
 end
 arch cwall_2_1_2
 x 13
@@ -1632,6 +2336,10 @@ arch grass
 x 14
 y 3
 end
+arch marble
+x 14
+y 4
+end
 arch swall_1_4
 x 14
 y 4
@@ -1640,9 +2348,21 @@ arch dungeon_magic
 x 14
 y 4
 end
+arch marble
+x 14
+y 5
+end
+arch marble
+x 14
+y 6
+end
 arch cwall_2_1_2
 x 14
 y 6
+end
+arch marble
+x 14
+y 7
 end
 arch random_wealth
 x 14
@@ -1652,9 +2372,17 @@ arch dungeon_magic
 x 14
 y 8
 end
+arch marble
+x 14
+y 8
+end
 arch swall_2_1_2
 x 14
 y 8
+end
+arch marble
+x 14
+y 9
 end
 arch knight
 x 14
@@ -1696,25 +2424,53 @@ arch marble
 x 14
 y 16
 end
+arch marble
+x 14
+y 17
+end
+arch marble
+x 14
+y 18
+end
 arch cwall_1_1
 x 14
 y 18
 end
-arch cwall_2_1_1
+arch marble
 x 14
 y 19
 end
 arch cwall_2_1_1
 x 14
+y 19
+end
+arch marble
+x 14
 y 20
 end
 arch cwall_2_1_1
+x 14
+y 20
+end
+arch marble
 x 14
 y 21
 end
 arch cwall_2_1_1
 x 14
+y 21
+end
+arch marble
+x 14
 y 22
+end
+arch cwall_2_1_1
+x 14
+y 22
+end
+arch marble
+x 14
+y 23
 end
 arch cwall_2_2_4
 x 14
@@ -1805,6 +2561,10 @@ arch grass
 x 15
 y 3
 end
+arch marble
+x 15
+y 4
+end
 arch swall_2_1_2
 x 15
 y 4
@@ -1813,9 +2573,21 @@ arch dungeon_magic
 x 15
 y 4
 end
+arch marble
+x 15
+y 5
+end
+arch marble
+x 15
+y 6
+end
 arch cwall_2_1_2
 x 15
 y 6
+end
+arch marble
+x 15
+y 7
 end
 arch key2
 name Ring of Seals
@@ -1831,9 +2603,17 @@ arch dungeon_magic
 x 15
 y 8
 end
+arch marble
+x 15
+y 8
+end
 arch swall_2_1_2
 x 15
 y 8
+end
+arch marble
+x 15
+y 9
 end
 arch knight
 x 15
@@ -1870,6 +2650,34 @@ end
 arch marble
 x 15
 y 16
+end
+arch marble
+x 15
+y 17
+end
+arch marble
+x 15
+y 18
+end
+arch marble
+x 15
+y 19
+end
+arch marble
+x 15
+y 20
+end
+arch marble
+x 15
+y 21
+end
+arch marble
+x 15
+y 22
+end
+arch marble
+x 15
+y 23
 end
 arch grate_closed_1
 x 15
@@ -1949,6 +2757,10 @@ arch grass
 x 16
 y 3
 end
+arch marble
+x 16
+y 4
+end
 arch swall_2_1_2
 x 16
 y 4
@@ -1957,9 +2769,21 @@ arch dungeon_magic
 x 16
 y 4
 end
+arch marble
+x 16
+y 5
+end
+arch marble
+x 16
+y 6
+end
 arch cwall_2_1_2
 x 16
 y 6
+end
+arch marble
+x 16
+y 7
 end
 arch random_food
 x 16
@@ -1969,9 +2793,17 @@ arch dungeon_magic
 x 16
 y 8
 end
+arch marble
+x 16
+y 8
+end
 arch swall_2_1_2
 x 16
 y 8
+end
+arch marble
+x 16
+y 9
 end
 arch knight
 x 16
@@ -1990,11 +2822,9 @@ name Chief of Staff
 msg
 @match King|king|Grey|grey
 The king does not see visitors.
-Give me your request, and I
-will relay it to him.
+Give me your request, and I will relay it to him.
 @match treasure|shield|secret
-I don't know what you are talking
-about.
+I don't know what you are talking about.
 @match *
 <grumble> What would you like?
 endmsg
@@ -2024,6 +2854,34 @@ end
 arch marble
 x 16
 y 16
+end
+arch marble
+x 16
+y 17
+end
+arch marble
+x 16
+y 18
+end
+arch marble
+x 16
+y 19
+end
+arch marble
+x 16
+y 20
+end
+arch marble
+x 16
+y 21
+end
+arch marble
+x 16
+y 22
+end
+arch marble
+x 16
+y 23
 end
 arch grate_closed_1
 x 16
@@ -2093,6 +2951,10 @@ arch grass
 x 17
 y 3
 end
+arch marble
+x 17
+y 4
+end
 arch swall_1_3
 x 17
 y 4
@@ -2101,9 +2963,21 @@ arch dungeon_magic
 x 17
 y 4
 end
+arch marble
+x 17
+y 5
+end
+arch marble
+x 17
+y 6
+end
 arch cwall_2_1_2
 x 17
 y 6
+end
+arch marble
+x 17
+y 7
 end
 arch random_wealth
 x 17
@@ -2113,9 +2987,17 @@ arch dungeon_magic
 x 17
 y 8
 end
+arch marble
+x 17
+y 8
+end
 arch swall_2_1_2
 x 17
 y 8
+end
+arch marble
+x 17
+y 9
 end
 arch knight
 x 17
@@ -2153,25 +3035,53 @@ arch marble
 x 17
 y 16
 end
+arch marble
+x 17
+y 17
+end
+arch marble
+x 17
+y 18
+end
 arch cwall_1_1
 x 17
 y 18
 end
-arch cwall_2_1_1
+arch marble
 x 17
 y 19
 end
 arch cwall_2_1_1
 x 17
+y 19
+end
+arch marble
+x 17
 y 20
 end
 arch cwall_2_1_1
+x 17
+y 20
+end
+arch marble
 x 17
 y 21
 end
 arch cwall_2_1_1
 x 17
+y 21
+end
+arch marble
+x 17
 y 22
+end
+arch cwall_2_1_1
+x 17
+y 22
+end
+arch marble
+x 17
+y 23
 end
 arch cwall_2_2_1
 x 17
@@ -2253,13 +3163,29 @@ arch grass
 x 18
 y 3
 end
+arch marble
+x 18
+y 4
+end
 arch cwall_1_4
 x 18
 y 4
 end
+arch marble
+x 18
+y 5
+end
+arch marble
+x 18
+y 6
+end
 arch cwall_2_1_2
 x 18
 y 6
+end
+arch marble
+x 18
+y 7
 end
 arch random_wealth
 x 18
@@ -2269,15 +3195,43 @@ arch dungeon_magic
 x 18
 y 8
 end
+arch marble
+x 18
+y 8
+end
 arch swall_1_3
 x 18
 y 8
+end
+arch marble
+x 18
+y 9
 end
 arch knight
 x 18
 y 9
 end
-arch magic_ear
+arch marble
+x 18
+y 10
+end
+arch marble
+x 18
+y 11
+end
+arch marble
+x 18
+y 12
+end
+arch marble
+x 18
+y 13
+end
+arch marble
+x 18
+y 14
+end
+arch princess
 msg
 @match *
 The princess only smiles at you.
@@ -2285,13 +3239,45 @@ endmsg
 x 18
 y 14
 end
-arch princess
+arch marble
 x 18
-y 14
+y 15
+end
+arch marble
+x 18
+y 16
+end
+arch marble
+x 18
+y 17
+end
+arch marble
+x 18
+y 18
 end
 arch door_look_1
 x 18
 y 18
+end
+arch marble
+x 18
+y 19
+end
+arch marble
+x 18
+y 20
+end
+arch marble
+x 18
+y 21
+end
+arch marble
+x 18
+y 22
+end
+arch marble
+x 18
+y 23
 end
 arch cwall_2_1_2
 x 18
@@ -2344,26 +3330,58 @@ arch grass
 x 19
 y 3
 end
-arch cwall_2_1_2
+arch marble
 x 19
 y 4
 end
 arch cwall_2_1_2
 x 19
+y 4
+end
+arch marble
+x 19
+y 5
+end
+arch marble
+x 19
 y 6
+end
+arch cwall_2_1_2
+x 19
+y 6
+end
+arch marble
+x 19
+y 7
 end
 arch locked_door2
 slaying chalice
 x 19
 y 7
 end
-arch cwall_0
+arch marble
 x 19
 y 8
 end
 arch cwall_0
 x 19
+y 8
+end
+arch marble
+x 19
 y 9
+end
+arch cwall_0
+x 19
+y 9
+end
+arch dungeon_magic
+x 19
+y 10
+end
+arch marble
+x 19
+y 10
 end
 arch swall_1_1
 x 19
@@ -2371,40 +3389,60 @@ y 10
 end
 arch dungeon_magic
 x 19
-y 10
+y 11
+end
+arch marble
+x 19
+y 11
 end
 arch swall_1_2
 x 19
 y 11
 end
-arch dungeon_magic
+arch marble
 x 19
-y 11
+y 12
 end
 arch cwall_0
 x 19
 y 12
 end
+arch dungeon_magic
+x 19
+y 13
+end
+arch marble
+x 19
+y 13
+end
 arch swall_1_1
 x 19
 y 13
 end
 arch dungeon_magic
 x 19
-y 13
+y 14
+end
+arch marble
+x 19
+y 14
 end
 arch swall_1_2
 x 19
 y 14
 end
-arch dungeon_magic
+arch marble
 x 19
-y 14
+y 15
 end
 arch cwall_0
 x 19
 y 15
 end
+arch marble
+x 19
+y 16
+end
 arch swall_1_1
 x 19
 y 16
@@ -2413,7 +3451,7 @@ arch dungeon_magic
 x 19
 y 16
 end
-arch swall_1_2
+arch marble
 x 19
 y 17
 end
@@ -2421,13 +3459,41 @@ arch dungeon_magic
 x 19
 y 17
 end
+arch swall_1_2
+x 19
+y 17
+end
+arch marble
+x 19
+y 18
+end
 arch cwall_0
 x 19
 y 18
 end
+arch marble
+x 19
+y 19
+end
+arch marble
+x 19
+y 20
+end
+arch marble
+x 19
+y 21
+end
 arch cwall_1_4
 x 19
 y 21
+end
+arch marble
+x 19
+y 22
+end
+arch marble
+x 19
+y 23
 end
 arch cwall_2_1_2
 x 19
@@ -2480,17 +3546,97 @@ arch grass
 x 20
 y 3
 end
-arch cwall_2_1_2
+arch marble
 x 20
 y 4
 end
 arch cwall_2_1_2
 x 20
+y 4
+end
+arch marble
+x 20
+y 5
+end
+arch marble
+x 20
 y 6
 end
 arch cwall_2_1_2
 x 20
+y 6
+end
+arch marble
+x 20
+y 7
+end
+arch marble
+x 20
+y 8
+end
+arch marble
+x 20
+y 9
+end
+arch marble
+x 20
+y 10
+end
+arch marble
+x 20
+y 11
+end
+arch marble
+x 20
+y 12
+end
+arch marble
+x 20
+y 13
+end
+arch marble
+x 20
+y 14
+end
+arch marble
+x 20
+y 15
+end
+arch marble
+x 20
+y 16
+end
+arch marble
+x 20
+y 17
+end
+arch marble
+x 20
+y 18
+end
+arch marble
+x 20
+y 19
+end
+arch marble
+x 20
+y 20
+end
+arch marble
+x 20
 y 21
+end
+arch cwall_2_1_2
+x 20
+y 21
+end
+arch marble
+x 20
+y 22
+end
+arch marble
+x 20
+y 23
 end
 arch cwall_2_1_2
 x 20
@@ -2543,25 +3689,53 @@ arch grass
 x 21
 y 3
 end
+arch marble
+x 21
+y 4
+end
 arch cwall_2_1_2
 x 21
 y 4
+end
+arch marble
+x 21
+y 5
+end
+arch marble
+x 21
+y 6
 end
 arch cwall_3_3
 x 21
 y 6
 end
-arch cwall_2_1_1
+arch marble
 x 21
 y 7
 end
 arch cwall_2_1_1
 x 21
+y 7
+end
+arch marble
+x 21
 y 8
 end
 arch cwall_2_1_1
 x 21
+y 8
+end
+arch marble
+x 21
 y 9
+end
+arch cwall_2_1_1
+x 21
+y 9
+end
+arch marble
+x 21
+y 10
 end
 arch cwall_1_2
 x 21
@@ -2575,17 +3749,33 @@ arch door_look_2
 x 21
 y 11
 end
+arch marble
+x 21
+y 12
+end
 arch cwall_1_1
 x 21
 y 12
 end
-arch cwall_2_1_1
+arch marble
 x 21
 y 13
 end
 arch cwall_2_1_1
 x 21
+y 13
+end
+arch marble
+x 21
 y 14
+end
+arch cwall_2_1_1
+x 21
+y 14
+end
+arch marble
+x 21
+y 15
 end
 arch cwall_2_2_1
 x 21
@@ -2599,25 +3789,53 @@ arch door_look_2
 x 21
 y 16
 end
+arch marble
+x 21
+y 17
+end
 arch cwall_1_1
 x 21
 y 17
 end
-arch cwall_2_1_1
+arch marble
 x 21
 y 18
 end
 arch cwall_2_1_1
 x 21
+y 18
+end
+arch marble
+x 21
 y 19
+end
+arch cwall_2_1_1
+x 21
+y 19
+end
+arch marble
+x 21
+y 20
 end
 arch cwall_2_1_1
 x 21
 y 20
 end
+arch marble
+x 21
+y 21
+end
 arch cwall_3_1
 x 21
 y 21
+end
+arch marble
+x 21
+y 22
+end
+arch marble
+x 21
+y 23
 end
 arch cwall_2_1_2
 x 21
@@ -2666,17 +3884,37 @@ arch biglake_s
 x 22
 y 2
 end
+arch marble
+x 22
+y 3
+end
 arch cwall_2_2_2
 x 22
 y 3
+end
+arch marble
+x 22
+y 4
 end
 arch cwall_2_2_4
 x 22
 y 4
 end
+arch marble
+x 22
+y 5
+end
+arch marble
+x 22
+y 6
+end
 arch cwall_2_1_2
 x 22
 y 6
+end
+arch marble
+x 22
+y 7
 end
 arch bed_save
 x 22
@@ -2692,17 +3930,11 @@ That's good.
 @match bad|awful|tty|crappy|lousy
 Too bad. Tomorrow will be better...
 @match quest|shield|grey|Grey
-Ahh... I have heard the Grey King
-keeps his treasure in a secret
-underground fortress.
+Ahh... I have heard the Grey King keeps his treasure in a secret underground fortress.
 @match underground|fortress|dungeon
-There is a passage from the
-dungeon to the underground caverns.
+There is a passage from the dungeon to the underground caverns.
 @match caverns|secret|passage
-There is also passage into the
-fortress created by the
-wizard Lothar of Rice, who was
-also searching for the Greyshield.
+There is also passage into the fortress created by the wizard Lothar of Rice, who was also searching for the Greyshield.
 @match *
 Pardon me?
 endmsg
@@ -2715,33 +3947,85 @@ y 7
 attack_movement 15
 level 40
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_ring 1
-arch ability_firespell
+arch abil_burning_hands
 end
 end
-arch chest
+arch marble
+x 22
+y 8
+end
+arch marble
+x 22
+y 9
+end
+arch marble
+x 22
+y 10
+end
+arch marble
+x 22
+y 11
+end
+arch marble
+x 22
+y 12
+end
+arch marble
 x 22
 y 13
 end
 arch chest
 x 22
+y 13
+end
+arch marble
+x 22
 y 14
+end
+arch chest
+x 22
+y 14
+end
+arch marble
+x 22
+y 15
 end
 arch cwall_2_1_2
 x 22
 y 15
 end
-arch chest
+arch marble
+x 22
+y 16
+end
+arch marble
+x 22
+y 17
+end
+arch marble
 x 22
 y 18
 end
 arch chest
 x 22
+y 18
+end
+arch marble
+x 22
 y 19
+end
+arch chest
+x 22
+y 19
+end
+arch marble
+x 22
+y 20
 end
 arch bed_save
 x 22
@@ -2756,17 +4040,33 @@ endmsg
 x 22
 y 20
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
+end
+arch marble
+x 22
+y 21
 end
 arch cwall_2_1_2
 x 22
 y 21
 end
+arch marble
+x 22
+y 22
+end
+arch marble
+x 22
+y 23
+end
 arch cwall_2_2_3
 x 22
 y 23
+end
+arch marble
+x 22
+y 24
 end
 arch cwall_2_2_1
 x 22
@@ -2811,29 +4111,69 @@ arch biglake_s
 x 23
 y 2
 end
+arch marble
+x 23
+y 3
+end
 arch cwall_2_1_2
 x 23
 y 3
+end
+arch marble
+x 23
+y 4
+end
+arch marble
+x 23
+y 5
+end
+arch marble
+x 23
+y 6
 end
 arch cwall_2_2_3
 x 23
 y 6
 end
-arch cwall_2_1_1
+arch marble
 x 23
 y 7
 end
 arch cwall_2_1_1
 x 23
+y 7
+end
+arch marble
+x 23
 y 8
+end
+arch cwall_2_1_1
+x 23
+y 8
+end
+arch marble
+x 23
+y 9
 end
 arch cwall_2_1_1
 x 23
 y 9
 end
+arch marble
+x 23
+y 10
+end
 arch cwall_1_2
 x 23
 y 10
+end
+arch dungeon_magic
+x 23
+y 11
+end
+arch marble
+x 23
+y 11
 end
 arch swall_1_1
 x 23
@@ -2841,31 +4181,55 @@ y 11
 end
 arch dungeon_magic
 x 23
-y 11
+y 12
+end
+arch marble
+x 23
+y 12
 end
 arch swall_1_2
 x 23
 y 12
 end
-arch dungeon_magic
+arch marble
 x 23
-y 12
+y 13
 end
 arch cwall_1_1
 x 23
 y 13
 end
+arch marble
+x 23
+y 14
+end
 arch cwall_2_1_1
 x 23
 y 14
+end
+arch marble
+x 23
+y 15
 end
 arch cwall_3_4
 x 23
 y 15
 end
+arch marble
+x 23
+y 16
+end
 arch cwall_1_2
 x 23
 y 16
+end
+arch dungeon_magic
+x 23
+y 17
+end
+arch marble
+x 23
+y 17
 end
 arch swall_1_1
 x 23
@@ -2873,27 +4237,51 @@ y 17
 end
 arch dungeon_magic
 x 23
-y 17
+y 18
+end
+arch marble
+x 23
+y 18
 end
 arch swall_1_2
 x 23
 y 18
 end
-arch dungeon_magic
+arch marble
 x 23
-y 18
+y 19
 end
 arch cwall_1_1
 x 23
 y 19
 end
+arch marble
+x 23
+y 20
+end
 arch cwall_2_1_1
 x 23
 y 20
 end
+arch marble
+x 23
+y 21
+end
 arch cwall_2_2_4
 x 23
 y 21
+end
+arch marble
+x 23
+y 22
+end
+arch marble
+x 23
+y 23
+end
+arch marble
+x 23
+y 24
 end
 arch cwall_2_1_2
 x 23
@@ -2938,9 +4326,21 @@ arch biglake_s
 x 24
 y 2
 end
+arch marble
+x 24
+y 3
+end
 arch cwall_2_1_2
 x 24
 y 3
+end
+arch marble
+x 24
+y 4
+end
+arch marble
+x 24
+y 5
 end
 arch stair_down
 slaying Dungeon
@@ -2949,12 +4349,88 @@ sp 30
 x 24
 y 5
 end
+arch marble
+x 24
+y 6
+end
+arch marble
+x 24
+y 7
+end
+arch marble
+x 24
+y 8
+end
+arch marble
+x 24
+y 9
+end
+arch marble
+x 24
+y 10
+end
+arch marble
+x 24
+y 11
+end
+arch marble
+x 24
+y 12
+end
+arch marble
+x 24
+y 13
+end
+arch marble
+x 24
+y 14
+end
+arch marble
+x 24
+y 15
+end
+arch marble
+x 24
+y 16
+end
+arch marble
+x 24
+y 17
+end
+arch marble
+x 24
+y 18
+end
+arch marble
+x 24
+y 19
+end
+arch marble
+x 24
+y 20
+end
+arch marble
+x 24
+y 21
+end
+arch marble
+x 24
+y 22
+end
 arch stair_up
 slaying Elements
 hp 24
 sp 30
 x 24
 y 22
+end
+arch marble
+x 24
+y 23
+end
+arch marble
+x 24
+y 24
 end
 arch cwall_2_1_2
 x 24
@@ -2999,33 +4475,73 @@ arch biglake_s
 x 25
 y 2
 end
+arch marble
+x 25
+y 3
+end
 arch cwall_2_2_3
 x 25
 y 3
+end
+arch marble
+x 25
+y 4
 end
 arch cwall_2_2_1
 x 25
 y 4
 end
+arch marble
+x 25
+y 5
+end
+arch marble
+x 25
+y 6
+end
+arch marble
+x 25
+y 7
+end
 arch cwall_2_2_2
 x 25
 y 7
 end
-arch cwall_2_1_1
+arch marble
 x 25
 y 8
 end
 arch cwall_2_1_1
 x 25
+y 8
+end
+arch marble
+x 25
 y 9
+end
+arch cwall_2_1_1
+x 25
+y 9
+end
+arch marble
+x 25
+y 10
 end
 arch cwall_2_1_1
 x 25
 y 10
 end
+arch marble
+x 25
+y 11
+end
 arch cwall_1_2
 x 25
 y 11
+end
+arch marble
+x 25
+y 12
 end
 arch swall_1_1
 x 25
@@ -3035,6 +4551,10 @@ arch dungeon_magic
 x 25
 y 12
 end
+arch marble
+x 25
+y 13
+end
 arch swall_2_1_1
 x 25
 y 13
@@ -3043,6 +4563,10 @@ arch dungeon_magic
 x 25
 y 13
 end
+arch marble
+x 25
+y 14
+end
 arch swall_2_1_1
 x 25
 y 14
@@ -3050,6 +4574,10 @@ end
 arch dungeon_magic
 x 25
 y 14
+end
+arch marble
+x 25
+y 15
 end
 arch swall_1_2
 x 25
@@ -3059,29 +4587,65 @@ arch dungeon_magic
 x 25
 y 15
 end
+arch marble
+x 25
+y 16
+end
 arch cwall_1_1
 x 25
 y 16
 end
-arch cwall_2_1_1
+arch marble
 x 25
 y 17
 end
 arch cwall_2_1_1
 x 25
+y 17
+end
+arch marble
+x 25
 y 18
+end
+arch cwall_2_1_1
+x 25
+y 18
+end
+arch marble
+x 25
+y 19
 end
 arch cwall_2_1_1
 x 25
 y 19
 end
+arch marble
+x 25
+y 20
+end
 arch cwall_2_2_1
 x 25
 y 20
 end
+arch marble
+x 25
+y 21
+end
+arch marble
+x 25
+y 22
+end
+arch marble
+x 25
+y 23
+end
 arch cwall_2_2_2
 x 25
 y 23
+end
+arch marble
+x 25
+y 24
 end
 arch cwall_2_2_4
 x 25
@@ -3138,17 +4702,33 @@ arch biglake_sw
 x 26
 y 3
 end
+arch marble
+x 26
+y 4
+end
 arch cwall_2_2_3
 x 26
 y 4
 end
-arch cwall_2_1_1
+arch marble
 x 26
 y 5
 end
 arch cwall_2_1_1
 x 26
+y 5
+end
+arch marble
+x 26
 y 6
+end
+arch cwall_2_1_1
+x 26
+y 6
+end
+arch marble
+x 26
+y 7
 end
 arch cwall_2_2_4
 x 26
@@ -3202,17 +4782,33 @@ arch grass
 x 26
 y 19
 end
+arch marble
+x 26
+y 20
+end
 arch cwall_2_2_3
 x 26
 y 20
 end
-arch cwall_2_1_1
+arch marble
 x 26
 y 21
 end
 arch cwall_2_1_1
 x 26
+y 21
+end
+arch marble
+x 26
 y 22
+end
+arch cwall_2_1_1
+x 26
+y 22
+end
+arch marble
+x 26
+y 23
 end
 arch cwall_2_2_4
 x 26
@@ -3261,6 +4857,9 @@ end
 arch grass
 x 27
 end
+arch baslic
+x 27
+end
 arch grass
 x 27
 y 1
@@ -3563,6 +5162,10 @@ arch grass
 x 29
 y 8
 end
+arch baslic
+x 29
+y 8
+end
 arch grass
 x 29
 y 9
@@ -3674,6 +5277,10 @@ arch grass
 x 30
 y 4
 end
+arch troll
+x 30
+y 4
+end
 arch grass
 x 30
 y 5
@@ -3723,6 +5330,10 @@ x 30
 y 16
 end
 arch grass
+x 30
+y 17
+end
+arch gaelotroll
 x 30
 y 17
 end
@@ -3908,32 +5519,4 @@ end
 arch brush
 x 31
 y 31
-end
-arch baslic
-y 8
-end
-arch gaelotroll
-y 22
-end
-arch baslic
-x 1
-end
-arch troll
-x 1
-y 4
-end
-arch baslic
-x 27
-end
-arch baslic
-x 29
-y 8
-end
-arch troll
-x 30
-y 4
-end
-arch gaelotroll
-x 30
-y 17
 end

@@ -1,120 +1,287 @@
 arch map
 name Cave
+width 16
+height 16
+enter_y 13
 msg
 Creator: Chris Jeske
 Email:
 Date: Mon Sep 16 15:38:19 1996
 endmsg
-sp 13
+end
+arch blackrock
 end
 arch blocked
+end
+arch blackrock
+y 1
 end
 arch blocked
 y 1
 end
+arch blackrock
+y 2
+end
 arch blocked
 y 2
+end
+arch blackrock
+y 3
 end
 arch blocked
 y 3
 end
+arch blackrock
+y 4
+end
 arch cave18
 y 4
+end
+arch blackrock
+y 5
 end
 arch cave3
 y 5
 end
+arch blackrock
+y 6
+end
 arch cave3
 y 6
+end
+arch blackrock
+y 7
 end
 arch cave3
 y 7
 end
+arch blackrock
+y 8
+end
 arch cave17
 y 8
+end
+arch blackrock
+y 9
 end
 arch blocked
 y 9
 end
+arch blackrock
+y 10
+end
 arch blocked
 y 10
+end
+arch blackrock
+y 11
 end
 arch cave18
 y 11
 end
+arch blackrock
+y 12
+end
 arch cave3
 y 12
+end
+arch blackrock
+y 13
 end
 arch cave3
 y 13
 end
+arch blackrock
+y 14
+end
 arch cave17
 y 14
+end
+arch blackrock
+y 15
 end
 arch blocked
 y 15
 end
-arch blocked
+arch blackrock
 x 1
 end
 arch blocked
+x 1
+end
+arch blackrock
 x 1
 y 1
 end
 arch blocked
 x 1
+y 1
+end
+arch blackrock
+x 1
 y 2
+end
+arch blocked
+x 1
+y 2
+end
+arch blackrock
+x 1
+y 3
 end
 arch cave18
 x 1
 y 3
 end
+arch blackrock
+x 1
+y 4
+end
 arch cave8
 x 1
 y 4
+end
+arch blackrock
+x 1
+y 5
+end
+arch blackrock
+x 1
+y 6
 end
 arch boulder
 x 1
 y 6
 end
+arch blackrock
+x 1
+y 7
+end
+arch blackrock
+x 1
+y 8
+end
 arch cave7
 x 1
 y 8
 end
-arch cave3
+arch blackrock
 x 1
 y 9
 end
 arch cave3
 x 1
+y 9
+end
+arch blackrock
+x 1
 y 10
+end
+arch cave3
+x 1
+y 10
+end
+arch blackrock
+x 1
+y 11
 end
 arch cave8
 x 1
 y 11
 end
+arch blackrock
+x 1
+y 12
+end
+arch blackrock
+x 1
+y 13
+end
+arch blackrock
+x 1
+y 14
+end
 arch cave7
 x 1
 y 14
+end
+arch blackrock
+x 1
+y 15
 end
 arch cave17
 x 1
 y 15
 end
-arch blocked
+arch blackrock
 x 2
 end
 arch blocked
+x 2
+end
+arch blackrock
 x 2
 y 1
 end
 arch blocked
 x 2
+y 1
+end
+arch blackrock
+x 2
 y 2
+end
+arch blocked
+x 2
+y 2
+end
+arch blackrock
+x 2
+y 3
 end
 arch cave4
 x 2
 y 3
+end
+arch blackrock
+x 2
+y 4
+end
+arch blackrock
+x 2
+y 5
+end
+arch blackrock
+x 2
+y 6
+end
+arch blackrock
+x 2
+y 7
+end
+arch blackrock
+x 2
+y 8
+end
+arch blackrock
+x 2
+y 9
+end
+arch blackrock
+x 2
+y 10
+end
+arch blackrock
+x 2
+y 11
+end
+arch blackrock
+x 2
+y 12
+end
+arch blackrock
+x 2
+y 13
 end
 arch stair_up
 slaying Island
@@ -123,314 +290,987 @@ sp 6
 x 2
 y 13
 end
+arch blackrock
+x 2
+y 14
+end
+arch blackrock
+x 2
+y 15
+end
 arch cave2
 x 2
 y 15
 end
+arch blackrock
+x 3
+end
 arch cave24
 x 3
+end
+arch blackrock
+x 3
+y 1
 end
 arch cave3
 x 3
 y 1
 end
+arch blackrock
+x 3
+y 2
+end
 arch cave23
 x 3
 y 2
+end
+arch blackrock
+x 3
+y 3
 end
 arch cave4
 x 3
 y 3
 end
+arch blackrock
+x 3
+y 4
+end
+arch blackrock
+x 3
+y 5
+end
+arch blackrock
+x 3
+y 6
+end
 arch cave11
 x 3
 y 6
+end
+arch blackrock
+x 3
+y 7
 end
 arch cave10
 x 3
 y 7
 end
+arch blackrock
+x 3
+y 8
+end
+arch blackrock
+x 3
+y 9
+end
+arch blackrock
+x 3
+y 10
+end
 arch cave21
 x 3
 y 10
+end
+arch blackrock
+x 3
+y 11
+end
+arch blackrock
+x 3
+y 12
 end
 arch boulder
 x 3
 y 12
 end
+arch blackrock
+x 3
+y 13
+end
+arch blackrock
+x 3
+y 14
+end
+arch blackrock
+x 3
+y 15
+end
 arch cave2
 x 3
 y 15
 end
+arch blackrock
+x 4
+end
 arch cave4
 x 4
+end
+arch blackrock
+x 4
+y 1
 end
 arch demilich
 x 4
 y 1
 end
+arch blackrock
+x 4
+y 2
+end
 arch cave2
 x 4
 y 2
+end
+arch blackrock
+x 4
+y 3
 end
 arch cave19
 x 4
 y 3
 end
+arch blackrock
+x 4
+y 4
+end
 arch cave5
 x 4
 y 4
+end
+arch blackrock
+x 4
+y 5
+end
+arch blackrock
+x 4
+y 6
 end
 arch cave12
 x 4
 y 6
 end
+arch blackrock
+x 4
+y 7
+end
 arch cave8
 x 4
 y 7
+end
+arch blackrock
+x 4
+y 8
+end
+arch blackrock
+x 4
+y 9
+end
+arch blackrock
+x 4
+y 10
+end
+arch blackrock
+x 4
+y 11
+end
+arch blackrock
+x 4
+y 12
+end
+arch blackrock
+x 4
+y 13
+end
+arch blackrock
+x 4
+y 14
+end
+arch blackrock
+x 4
+y 15
 end
 arch cave2
 x 4
 y 15
 end
+arch blackrock
+x 5
+end
 arch cave4
 x 5
+end
+arch blackrock
+x 5
+y 1
+end
+arch blackrock
+x 5
+y 2
 end
 arch cave2
 x 5
 y 2
+end
+arch blackrock
+x 5
+y 3
 end
 arch cave18
 x 5
 y 3
 end
+arch blackrock
+x 5
+y 4
+end
 arch cave8
 x 5
 y 4
 end
-arch boulder
+arch blackrock
 x 5
 y 5
 end
 arch boulder
 x 5
+y 5
+end
+arch blackrock
+x 5
+y 6
+end
+arch blackrock
+x 5
+y 7
+end
+arch blackrock
+x 5
+y 8
+end
+arch blackrock
+x 5
 y 9
 end
 arch boulder
 x 5
+y 9
+end
+arch blackrock
+x 5
+y 10
+end
+arch blackrock
+x 5
 y 11
+end
+arch boulder
+x 5
+y 11
+end
+arch blackrock
+x 5
+y 12
+end
+arch blackrock
+x 5
+y 13
+end
+arch blackrock
+x 5
+y 14
 end
 arch cave6
 x 5
 y 14
 end
+arch blackrock
+x 5
+y 15
+end
 arch cave20
 x 5
 y 15
 end
+arch blackrock
+x 6
+end
 arch cave4
 x 6
+end
+arch blackrock
+x 6
+y 1
+end
+arch blackrock
+x 6
+y 2
 end
 arch cave12
 x 6
 y 2
+end
+arch blackrock
+x 6
+y 3
 end
 arch cave9
 x 6
 y 3
 end
+arch blackrock
+x 6
+y 4
+end
+arch blackrock
+x 6
+y 5
+end
+arch blackrock
+x 6
+y 6
+end
+arch blackrock
+x 6
+y 7
+end
+arch blackrock
+x 6
+y 8
+end
+arch blackrock
+x 6
+y 9
+end
+arch blackrock
+x 6
+y 10
+end
+arch blackrock
+x 6
+y 11
+end
 arch cave11
 x 6
 y 11
 end
-arch cave1
+arch blackrock
 x 6
 y 12
 end
 arch cave1
 x 6
+y 12
+end
+arch blackrock
+x 6
 y 13
+end
+arch cave1
+x 6
+y 13
+end
+arch blackrock
+x 6
+y 14
 end
 arch cave20
 x 6
 y 14
 end
+arch blackrock
+x 6
+y 15
+end
 arch blocked
 x 6
 y 15
 end
+arch blackrock
+x 7
+end
 arch cave4
 x 7
+end
+arch blackrock
+x 7
+y 1
 end
 arch cave21
 x 7
 y 1
 end
+arch blackrock
+x 7
+y 2
+end
+arch blackrock
+x 7
+y 3
+end
+arch blackrock
+x 7
+y 4
+end
+arch blackrock
+x 7
+y 5
+end
+arch blackrock
+x 7
+y 6
+end
+arch blackrock
+x 7
+y 7
+end
 arch boulder
 x 7
 y 7
+end
+arch blackrock
+x 7
+y 8
+end
+arch blackrock
+x 7
+y 9
+end
+arch blackrock
+x 7
+y 10
+end
+arch blackrock
+x 7
+y 11
 end
 arch cave7
 x 7
 y 11
 end
-arch cave3
+arch blackrock
 x 7
 y 12
 end
 arch cave3
 x 7
+y 12
+end
+arch blackrock
+x 7
 y 13
 end
 arch cave3
 x 7
+y 13
+end
+arch blackrock
+x 7
 y 14
+end
+arch cave3
+x 7
+y 14
+end
+arch blackrock
+x 7
+y 15
 end
 arch cave23
 x 7
 y 15
 end
+arch blackrock
+x 8
+end
 arch cave4
 x 8
+end
+arch blackrock
+x 8
+y 1
+end
+arch blackrock
+x 8
+y 2
+end
+arch blackrock
+x 8
+y 3
+end
+arch blackrock
+x 8
+y 4
 end
 arch cave11
 x 8
 y 4
+end
+arch blackrock
+x 8
+y 5
 end
 arch cave10
 x 8
 y 5
 end
-arch cave21
+arch blackrock
+x 8
+y 6
+end
+arch blackrock
+x 8
+y 7
+end
+arch blackrock
+x 8
+y 8
+end
+arch blackrock
+x 8
+y 9
+end
+arch blackrock
 x 8
 y 10
 end
 arch cave21
 x 8
+y 10
+end
+arch blackrock
+x 8
+y 11
+end
+arch blackrock
+x 8
+y 12
+end
+arch blackrock
+x 8
+y 13
+end
+arch blackrock
+x 8
 y 14
+end
+arch cave21
+x 8
+y 14
+end
+arch blackrock
+x 8
+y 15
 end
 arch cave2
 x 8
 y 15
 end
+arch blackrock
+x 9
+end
 arch cave4
 x 9
+end
+arch blackrock
+x 9
+y 1
+end
+arch blackrock
+x 9
+y 2
 end
 arch boulder
 x 9
 y 2
 end
+arch blackrock
+x 9
+y 3
+end
 arch cave11
 x 9
 y 3
+end
+arch blackrock
+x 9
+y 4
 end
 arch cave22
 x 9
 y 4
 end
+arch blackrock
+x 9
+y 5
+end
 arch cave4
 x 9
 y 5
 end
+arch blackrock
+x 9
+y 6
+end
+arch blackrock
+x 9
+y 7
+end
+arch blackrock
+x 9
+y 8
+end
+arch blackrock
+x 9
+y 9
+end
 arch boulder
 x 9
 y 9
+end
+arch blackrock
+x 9
+y 10
+end
+arch blackrock
+x 9
+y 11
+end
+arch blackrock
+x 9
+y 12
+end
+arch blackrock
+x 9
+y 13
+end
+arch blackrock
+x 9
+y 14
 end
 arch boulder
 x 9
 y 14
 end
+arch blackrock
+x 9
+y 15
+end
 arch cave2
 x 9
 y 15
 end
+arch blackrock
+x 10
+end
 arch cave4
 x 10
+end
+arch blackrock
+x 10
+y 1
+end
+arch blackrock
+x 10
+y 2
+end
+arch blackrock
+x 10
+y 3
 end
 arch cave12
 x 10
 y 3
 end
+arch blackrock
+x 10
+y 4
+end
 arch cave3
 x 10
 y 4
+end
+arch blackrock
+x 10
+y 5
 end
 arch cave8
 x 10
 y 5
 end
-arch boulder
+arch blackrock
+x 10
+y 6
+end
+arch blackrock
 x 10
 y 7
 end
 arch boulder
 x 10
+y 7
+end
+arch blackrock
+x 10
 y 8
+end
+arch boulder
+x 10
+y 8
+end
+arch blackrock
+x 10
+y 9
+end
+arch blackrock
+x 10
+y 10
+end
+arch blackrock
+x 10
+y 11
+end
+arch blackrock
+x 10
+y 12
+end
+arch blackrock
+x 10
+y 13
 end
 arch boulder
 x 10
 y 13
 end
+arch blackrock
+x 10
+y 14
+end
+arch blackrock
+x 10
+y 15
+end
 arch cave2
 x 10
 y 15
 end
+arch blackrock
+x 11
+end
 arch cave4
 x 11
+end
+arch blackrock
+x 11
+y 1
+end
+arch blackrock
+x 11
+y 2
+end
+arch blackrock
+x 11
+y 3
+end
+arch blackrock
+x 11
+y 4
 end
 arch boulder
 x 11
 y 4
 end
+arch blackrock
+x 11
+y 5
+end
+arch blackrock
+x 11
+y 6
+end
+arch blackrock
+x 11
+y 7
+end
 arch cave11
 x 11
 y 7
+end
+arch blackrock
+x 11
+y 8
 end
 arch cave1
 x 11
 y 8
 end
+arch blackrock
+x 11
+y 9
+end
 arch cave5
 x 11
 y 9
+end
+arch blackrock
+x 11
+y 10
 end
 arch cave21
 x 11
 y 10
 end
+arch blackrock
+x 11
+y 11
+end
+arch blackrock
+x 11
+y 12
+end
+arch blackrock
+x 11
+y 13
+end
+arch blackrock
+x 11
+y 14
+end
+arch blackrock
+x 11
+y 15
+end
 arch cave2
 x 11
 y 15
 end
+arch blackrock
+x 12
+end
 arch cave4
 x 12
+end
+arch blackrock
+x 12
+y 1
+end
+arch blackrock
+x 12
+y 2
+end
+arch blackrock
+x 12
+y 3
 end
 arch boulder
 x 12
 y 3
 end
+arch blackrock
+x 12
+y 4
+end
+arch blackrock
+x 12
+y 5
+end
+arch blackrock
+x 12
+y 6
+end
+arch blackrock
+x 12
+y 7
+end
 arch cave7
 x 12
 y 7
+end
+arch blackrock
+x 12
+y 8
 end
 arch cave3
 x 12
 y 8
 end
+arch blackrock
+x 12
+y 9
+end
 arch cave8
 x 12
 y 9
+end
+arch blackrock
+x 12
+y 10
+end
+arch blackrock
+x 12
+y 11
+end
+arch blackrock
+x 12
+y 12
+end
+arch blackrock
+x 12
+y 13
+end
+arch blackrock
+x 12
+y 14
+end
+arch blackrock
+x 12
+y 15
 end
 arch cave2
 x 12
 y 15
 end
+arch blackrock
+x 13
+end
 arch cave4
 x 13
+end
+arch blackrock
+x 13
+y 1
+end
+arch blackrock
+x 13
+y 2
+end
+arch blackrock
+x 13
+y 3
+end
+arch blackrock
+x 13
+y 4
+end
+arch blackrock
+x 13
+y 5
 end
 arch boulder
 x 13
 y 5
+end
+arch blackrock
+x 13
+y 6
+end
+arch blackrock
+x 13
+y 7
+end
+arch blackrock
+x 13
+y 8
 end
 arch chole_1
 slaying Cavern
@@ -443,127 +1283,288 @@ arch boulder
 x 13
 y 8
 end
+arch blackrock
+x 13
+y 9
+end
+arch blackrock
+x 13
+y 10
+end
+arch blackrock
+x 13
+y 11
+end
 arch cave11
 x 13
 y 11
+end
+arch blackrock
+x 13
+y 12
 end
 arch cave10
 x 13
 y 12
 end
+arch blackrock
+x 13
+y 13
+end
 arch boulder
 x 13
 y 13
+end
+arch blackrock
+x 13
+y 14
 end
 arch cave6
 x 13
 y 14
 end
+arch blackrock
+x 13
+y 15
+end
 arch cave20
 x 13
 y 15
 end
+arch blackrock
+x 14
+end
 arch cave19
 x 14
+end
+arch blackrock
+x 14
+y 1
 end
 arch cave5
 x 14
 y 1
 end
+arch blackrock
+x 14
+y 2
+end
+arch blackrock
+x 14
+y 3
+end
+arch blackrock
+x 14
+y 4
+end
 arch cave6
 x 14
 y 4
 end
+arch blackrock
+x 14
+y 5
+end
 arch cave5
 x 14
 y 5
+end
+arch blackrock
+x 14
+y 6
+end
+arch magic_mouth
+msg
+You feel some wind...
+endmsg
+x 14
+y 7
+end
+arch blackrock
+x 14
+y 7
 end
 arch book_read
 x 14
 y 7
 end
+arch blackrock
+x 14
+y 8
+end
+arch blackrock
+x 14
+y 9
+end
+arch blackrock
+x 14
+y 10
+end
 arch cave6
 x 14
 y 10
 end
+arch blackrock
+x 14
+y 11
+end
 arch cave20
 x 14
 y 11
+end
+arch blackrock
+x 14
+y 12
 end
 arch cave25
 x 14
 y 12
 end
+arch blackrock
+x 14
+y 13
+end
 arch cave1
 x 14
 y 13
+end
+arch blackrock
+x 14
+y 14
 end
 arch cave22
 x 14
 y 14
 end
-arch blocked
+arch blackrock
 x 14
 y 15
 end
 arch blocked
+x 14
+y 15
+end
+arch blackrock
 x 15
+end
+arch blocked
+x 15
+end
+arch blackrock
+x 15
+y 1
 end
 arch cave19
 x 15
 y 1
 end
-arch cave1
+arch blackrock
 x 15
 y 2
 end
 arch cave1
 x 15
+y 2
+end
+arch blackrock
+x 15
 y 3
+end
+arch cave1
+x 15
+y 3
+end
+arch blackrock
+x 15
+y 4
 end
 arch cave20
 x 15
 y 4
 end
+arch blackrock
+x 15
+y 5
+end
 arch cave19
 x 15
 y 5
 end
-arch cave1
+arch blackrock
 x 15
 y 6
 end
 arch cave1
 x 15
+y 6
+end
+arch blackrock
+x 15
 y 7
 end
 arch cave1
+x 15
+y 7
+end
+arch blackrock
 x 15
 y 8
 end
 arch cave1
 x 15
+y 8
+end
+arch blackrock
+x 15
 y 9
+end
+arch cave1
+x 15
+y 9
+end
+arch blackrock
+x 15
+y 10
 end
 arch cave20
 x 15
 y 10
 end
-arch blocked
+arch blackrock
 x 15
 y 11
 end
 arch blocked
 x 15
+y 11
+end
+arch blackrock
+x 15
 y 12
 end
 arch blocked
+x 15
+y 12
+end
+arch blackrock
 x 15
 y 13
 end
 arch blocked
 x 15
+y 13
+end
+arch blackrock
+x 15
 y 14
+end
+arch blocked
+x 15
+y 14
+end
+arch blackrock
+x 15
+y 15
 end
 arch blocked
 x 15
