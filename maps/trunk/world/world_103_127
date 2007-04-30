@@ -637,6 +637,17 @@ x 2
 y 32
 elevation -322
 end
+arch big_galleon
+name sailing big galleon
+x 2
+y 32
+speed 0.5
+type 2
+container 10000000
+move_type boat
+move_allow walk
+passenger_limit 4
+end
 arch sea
 x 2
 y 33
@@ -764,6 +775,13 @@ x 3
 y 8
 end
 arch cobblestones2
+x 3
+y 9
+end
+arch barn
+name dragon hangar
+slaying /dragonisland/hangar
+hp 15
 x 3
 y 9
 end
@@ -2071,6 +2089,14 @@ x 8
 y 14
 end
 arch grass
+x 8
+y 15
+end
+arch guild
+name Adventurers Guild
+slaying /dragonisland/advguild
+hp 15
+sp 31
 x 8
 y 15
 end
@@ -3514,6 +3540,11 @@ x 14
 y 10
 end
 arch grass
+x 14
+y 10
+end
+arch tower_a
+name Tall Tower
 x 14
 y 10
 end
@@ -12080,24 +12111,4 @@ arch deep_sea
 x 49
 y 49
 elevation -10744
-end
-arch barn
-name dragon hangar
-slaying /dragonisland/hangar
-hp 15
-x 3
-y 9
-end
-arch guild
-name Adventurers Guild
-slaying /dragonisland/advguild
-hp 15
-sp 31
-x 8
-y 15
-end
-arch tower_a
-name Tall Tower
-x 14
-y 10
 end
