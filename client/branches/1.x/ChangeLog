@@ -2,6 +2,9 @@
 Top of CVS tree:
 ------------------------------------------------------------------------------
 
+gtk/text.c: fix callback that was eating a word.
+Nicolas Weeger 2007-05-03
+
 Implement feature request #1560389: improve inscription logic.
  gtk/gx11.c inventory.c
  common/client.c client.h commands.c item.c item.h proto.h
