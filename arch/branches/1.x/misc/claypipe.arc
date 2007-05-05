@@ -10,3 +10,13 @@ editable 2048
 skill one handed weapons
 body_arm -1
 end
+Object smoking_pipe
+nrof 1
+face claypipe.111
+name smoking pipe
+name_pl smoking pipes
+arch event_apply
+title Python
+slaying /python/items/smoking_pipe.py
+end
+end
