@@ -3470,7 +3470,7 @@ immune 23573
 protected 104
 attacktype 351389
 carrying 545050
-flying 1
+move_type fly_low
 can_cast_spell 1
 arch spell_create_bomb
 end
@@ -3542,7 +3542,7 @@ immune 4117
 protected 8
 attacktype 29
 carrying 35000
-flying 1
+move_type fly_low
 arch abil_icestorm
 end
 arch gem
@@ -3571,7 +3571,7 @@ level 30
 immune 4099
 protected 28
 carrying 35000
-flying 1
+move_type fly_low
 arch gem
 nrof 600
 end
@@ -3606,7 +3606,7 @@ level 30
 immune 4099
 protected 28
 carrying 35000
-flying 1
+move_type fly_low
 arch gem
 nrof 600
 end
@@ -3641,7 +3641,7 @@ level 30
 immune 4099
 protected 28
 carrying 35000
-flying 1
+move_type fly_low
 arch gem
 nrof 600
 end
@@ -3679,7 +3679,7 @@ immune 4117
 protected 8
 attacktype 29
 carrying 35000
-flying 1
+move_type fly_low
 arch abil_icestorm
 end
 arch gem

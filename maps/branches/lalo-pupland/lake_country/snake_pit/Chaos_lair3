@@ -289,7 +289,7 @@ speed_left -4.700000
 level 60
 material 64
 carrying 5100
-flying 1
+move_type fly_low
 immune 9
 arch pyro_book
 value 1600
@@ -661,7 +661,7 @@ speed_left -11.099999
 level 40
 material 64
 carrying 5000
-flying 1
+move_type fly_low
 immune 9
 arch pyro_book
 value 1600
@@ -3624,7 +3624,7 @@ speed_left -11.099999
 level 40
 material 64
 carrying 5000
-flying 1
+move_type fly_low
 immune 9
 arch pyro_book
 value 1600

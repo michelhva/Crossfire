@@ -2416,7 +2416,7 @@ x 11
 y 5
 type 0
 attacktype 0
-flying 0
+move_type walk
 end
 arch dungeon_floor
 x 11
@@ -2754,7 +2754,7 @@ x 12
 y 15
 type 0
 attacktype 0
-flying 0
+move_type walk
 end
 arch dungeon_floor
 x 12
@@ -3331,7 +3331,7 @@ x 14
 y 28
 type 0
 attacktype 0
-flying 0
+move_type walk
 end
 arch dungeon_floor
 x 14

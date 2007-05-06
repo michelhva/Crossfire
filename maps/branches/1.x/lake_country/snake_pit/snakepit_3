@@ -9043,7 +9043,7 @@ y 39
 end
 arch Cwyvern
 speed 0.5
-flying 1
+move_type fly_low
 carrying 25000
 Con 30
 Int 12
@@ -9249,7 +9249,7 @@ arch Cwyvern
 name big wyvern of chaos
 exp 400000
 speed 0.7
-flying 1
+move_type fly_low
 carrying 35000
 dam 40
 hp 6000
@@ -9273,7 +9273,7 @@ end
 end
 arch Cwyvern
 speed 0.5
-flying 1
+move_type fly_low
 carrying 25000
 Con 30
 Int 12
@@ -9494,7 +9494,7 @@ end
 end
 arch Cwyvern
 speed 0.5
-flying 1
+move_type fly_low
 carrying 25000
 Con 30
 Int 12

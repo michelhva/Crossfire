@@ -3509,7 +3509,7 @@ immune 4117
 protected 8
 attacktype 29
 carrying 25000
-flying 1
+move_type fly_low
 arch abil_icestorm
 end
 arch spell_dragonbreath
@@ -3709,7 +3709,7 @@ immune 4117
 protected 8
 attacktype 29
 carrying 25000
-flying 1
+move_type fly_low
 arch abil_icestorm
 end
 arch spell_dragonbreath
