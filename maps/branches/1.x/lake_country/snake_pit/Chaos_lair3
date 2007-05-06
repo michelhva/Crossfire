@@ -297,7 +297,7 @@ immune 4421
 protected 9
 material 64
 carrying 5100
-flying 1
+move_type fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -670,7 +670,7 @@ immune 4357
 protected 9
 material 64
 carrying 5000
-flying 1
+move_type fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -3706,7 +3706,7 @@ immune 4357
 protected 9
 material 64
 carrying 5000
-flying 1
+move_type fly_low
 arch pyro_book
 value 1600
 randomitems none

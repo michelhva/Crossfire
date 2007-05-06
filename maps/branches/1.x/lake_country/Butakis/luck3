@@ -6232,7 +6232,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 100000
-flying 1
+move_type fly_low
 arch ability_dragon
 end
 arch ability_mass_confusion
@@ -6266,7 +6266,7 @@ resist_fire 100
 resist_electricity 30
 resist_cold 100
 resist_paralyze 100
-flying 1
+move_type fly_low
 can_cast_spell 1
 end
 arch dragon
@@ -6290,7 +6290,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 100000
-flying 1
+move_type fly_low
 arch ability_dragon
 end
 arch ability_mass_confusion
@@ -6324,7 +6324,7 @@ resist_fire 100
 resist_electricity 30
 resist_cold 100
 resist_paralyze 100
-flying 1
+move_type fly_low
 can_cast_spell 1
 end
 arch titan

@@ -3399,7 +3399,7 @@ speed_left -0.920000
 level 99
 attacktype 351389
 carrying 545050
-flying 1
+move_type fly_low
 can_cast_spell 1
 immune 104
 arch spell_create_bomb
@@ -3468,7 +3468,7 @@ speed_left -1.840000
 level 30
 attacktype 29
 carrying 35000
-flying 1
+move_type fly_low
 immune 8
 arch abil_icestorm
 end
@@ -3496,7 +3496,7 @@ speed 0.400000
 speed_left -1.260000
 level 30
 carrying 35000
-flying 1
+move_type fly_low
 immune 28
 arch gem
 nrof 600
@@ -3530,7 +3530,7 @@ speed 0.400000
 speed_left -1.310000
 level 30
 carrying 35000
-flying 1
+move_type fly_low
 immune 28
 arch gem
 nrof 600
@@ -3564,7 +3564,7 @@ speed 0.400000
 speed_left -2.590000
 level 30
 carrying 35000
-flying 1
+move_type fly_low
 immune 28
 arch gem
 nrof 600
@@ -3601,7 +3601,7 @@ speed_left -1.840000
 level 30
 attacktype 29
 carrying 35000
-flying 1
+move_type fly_low
 immune 8
 arch abil_icestorm
 end

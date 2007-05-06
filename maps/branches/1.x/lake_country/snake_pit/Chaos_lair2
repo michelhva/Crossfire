@@ -38,7 +38,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 35000
-flying 1
+move_type fly_low
 arch abil_icestorm
 end
 arch spell_dragonbreath
@@ -891,7 +891,7 @@ resist_electricity 30
 resist_cold 30
 resist_paralyze 100
 carrying 35000
-flying 1
+move_type fly_low
 arch gem
 nrof 600
 end
