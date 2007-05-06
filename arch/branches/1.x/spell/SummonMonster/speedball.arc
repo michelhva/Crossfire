@@ -17,7 +17,7 @@ speed 1
 monster 1
 see_invisible 1
 no_pick 1
-flying 1
+move_type fly_low
 weight 1000
 only_attack 1
 editable 0

@@ -30,7 +30,7 @@ Wis 15
 undead 1
 weight 5000
 no_pick 1
-flying 1
+move_type fly_low
 run_away 15
 can_see_in_dark 1
 editable 1

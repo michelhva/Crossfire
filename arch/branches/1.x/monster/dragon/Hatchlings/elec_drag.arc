@@ -33,7 +33,7 @@ resist_electricity 100
 resist_blind 50
 resist_magic 30
 speed -0.07
-flying 1
+move_type fly_low
 weight 70000
 run_away 20
 attack_movement 1

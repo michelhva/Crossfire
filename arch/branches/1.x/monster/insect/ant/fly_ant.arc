@@ -11,7 +11,7 @@ mina
 monster 1
 sleep 1
 Wis 6
-flying 1
+move_type fly_low
 alive 1
 no_pick 1
 ac 10

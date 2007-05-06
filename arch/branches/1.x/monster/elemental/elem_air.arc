@@ -22,6 +22,6 @@ speed -0.3
 exp 250
 weight 200
 level 8
-flying 1
+move_type fly_low
 editable 1
 end

@@ -11,7 +11,7 @@ slow.113
 mina
 wc -30
 speed 1
-flying 1
+move_type fly_low
 no_pick 1
 editable 0
 magicmap white

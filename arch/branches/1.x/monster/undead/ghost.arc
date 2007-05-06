@@ -21,7 +21,7 @@ wc 2
 dam 14
 speed 0.14
 attacktype 528
-flying 1
+move_type fly_low
 weight 500
 resist_cold 50
 resist_fear 100

@@ -11,7 +11,7 @@ archon.333
 archon.444
 mina
 is_animated 1
-flying 1
+move_type fly_low
 level 30 
 hp 1500 
 maxhp 1500 

@@ -17,7 +17,7 @@ no_pick 1
 alive 1
 sleep 1
 undead 1
-flying 1
+move_type fly_low
 exp 3500
 level 15
 attacktype 17

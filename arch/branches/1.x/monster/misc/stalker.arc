@@ -29,7 +29,7 @@ maxhp 75
 wc 10
 dam 5
 speed -0.4
-flying 1
+move_type fly_low
 resist_electricity 50
 
 run_away 25

@@ -35,7 +35,7 @@ resist_fear 100
 resist_physical 40
 resist_blind -60
 speed -0.07
-flying 1
+move_type fly_low
 weight 1000
 run_away 15
 attack_movement 1

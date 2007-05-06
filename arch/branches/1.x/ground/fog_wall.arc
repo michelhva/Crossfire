@@ -10,7 +10,7 @@ fog.111
 mina
 type 102
 subtype 7
-flying 1
+move_type fly_low
 no_pick 1
 color_fg white
 color_bg khaki

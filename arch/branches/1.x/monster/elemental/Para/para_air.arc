@@ -24,6 +24,6 @@ speed -0.3
 exp 200
 weight 200
 level 6
-flying 1
+move_type fly_low
 editable 1
 end

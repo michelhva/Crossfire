@@ -20,7 +20,7 @@ resist_magic 50
 resist_holyword 40
 resist_blind 90
 weight 75000
-flying 1
+move_type fly_low
 run_away 18
 will_apply 2
 pick_up 24

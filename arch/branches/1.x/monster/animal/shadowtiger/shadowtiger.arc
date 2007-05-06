@@ -37,7 +37,7 @@ exp 100000
 monster 1
 alive 1
 no_pick 1
-flying 1
+move_type fly_low
 see_invisible 1
 Con 30
 maxhp 2000

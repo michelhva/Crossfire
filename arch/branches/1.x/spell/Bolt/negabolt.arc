@@ -17,7 +17,7 @@ negabolt.181
 mina
 is_animated 0
 is_turnable 1
-flying 1
+move_type fly_low
 speed 1
 glow_radius 2
 no_pick 1

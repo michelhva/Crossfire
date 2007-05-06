@@ -11,7 +11,7 @@ liv_chaos.222
 liv_chaos.333
 mina
 is_animated 1
-flying 1
+move_type fly_low
 level 13
 hp 250
 maxhp 250
