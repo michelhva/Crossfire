@@ -27,7 +27,7 @@ wc 15
 dam 1
 speed -0.3
 exp 20
-flying 1
+move_type fly_low
 weight 1500
 attack_movement 3
 editable 1

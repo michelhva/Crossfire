@@ -30,7 +30,7 @@ resist_magic 100
 resist_blind 80
 speed 0.2
 weight 75000
-flying 1
+move_type fly_low
 run_away 18
 will_apply 2
 pick_up 24

@@ -21,7 +21,7 @@ fly_on 1
 no_pick 1
 speed 1
 wc -10
-flying 1
+move_type fly_low
 editable 0
 magicmap blue
 end

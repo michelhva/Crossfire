@@ -41,7 +41,7 @@ resist_blind 80
 attacktype 20745
 speed 0.400000
 weight 150000
-flying 1
+move_type fly_low
 run_away 18
 will_apply 2
 pick_up 24

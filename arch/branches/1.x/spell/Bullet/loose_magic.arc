@@ -16,7 +16,7 @@ color_bg khaki
 speed 1
 range 3
 duration 3
-flying 1
+move_type fly_low
 wc -30
 no_pick 1
 attacktype 2

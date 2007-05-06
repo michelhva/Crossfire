@@ -14,5 +14,5 @@ no_drop 1
 invisible 1
 duration_modifier 4
 duration 500
-flying 1
+move_type fly_low
 end

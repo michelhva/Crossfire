@@ -17,7 +17,7 @@ sleep 1
 Wis 15
 see_invisible 1
 no_pick 1
-flying 1
+move_type fly_low
 weight 10000
 alive 1
 exp 10

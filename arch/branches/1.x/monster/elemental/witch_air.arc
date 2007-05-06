@@ -26,7 +26,7 @@ level 15
 speed -0.6
 exp 6000
 weight 50
-flying 1
+move_type fly_low
 can_cast_spell 1
 can_use_skill 1
 sp 50

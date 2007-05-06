@@ -15,7 +15,7 @@ Wis 15
 Con 10
 see_invisible 1
 no_pick 1
-flying 1
+move_type fly_low
 weight 100000
 alive 1
 exp 1000

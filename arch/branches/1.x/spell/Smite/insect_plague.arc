@@ -10,7 +10,7 @@ ant.111
 ant.112
 mina
 speed 0.12
-flying 1
+move_type fly_low
 wc -30
 no_pick 1
 editable 0

@@ -11,7 +11,7 @@ monster 1
 sleep 1
 can_see_in_dark 1
 Wis 6
-flying 1
+move_type fly_low
 alive 1
 is_turnable 1
 no_pick 1

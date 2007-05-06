@@ -39,5 +39,5 @@ run_away 15
 attacktype 5
 attack_movement 5
 editable 1
-flying 1
+move_type fly_low
 end

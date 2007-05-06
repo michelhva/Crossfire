@@ -35,7 +35,7 @@ resist_magic 85
 resist_blind 30
 attacktype 1025
 speed 0.42
-flying 1
+move_type fly_low
 weight 70000
 editable 1
 end

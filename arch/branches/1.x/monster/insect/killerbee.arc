@@ -24,6 +24,6 @@ Con 1
 maxhp 15
 run_away 75
 level 4
-flying 1
+move_type fly_low
 editable 1
 end

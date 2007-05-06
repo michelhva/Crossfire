@@ -1,5 +1,5 @@
 Object bee
-flying 1
+move_type fly_low
 race insect
 face bee.111
 color_fg dark_orange

@@ -18,7 +18,7 @@ level 1
 resist_magic 100
 speed 0.2
 weight 75000
-flying 1
+move_type fly_low
 run_away 18
 attacktype 1
 editable 1

@@ -20,7 +20,7 @@ speed 10
 attacktype 32770
 wc -30
 dam 50
-flying 1
+move_type fly_low
 reflecting 0
 editable 0
 end

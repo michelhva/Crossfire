@@ -27,7 +27,7 @@ level 14
 speed -0.4
 exp 5000
 weight 20
-flying 1
+move_type fly_low
 can_cast_spell 1
 can_use_skill 1
 sp 50

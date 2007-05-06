@@ -18,7 +18,7 @@ Pow 0
 Cha 0
 see_invisible 1
 no_pick 1
-flying 1
+move_type fly_low
 weight 15000
 alive 1
 exp 10000

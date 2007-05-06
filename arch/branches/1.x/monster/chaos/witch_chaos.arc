@@ -38,6 +38,6 @@ maxsp 100
 Pow 10
 Wis 10
 Con 10
-flying 1
+move_type fly_low
 editable 1
 end

@@ -12,7 +12,7 @@ sunspear.113
 mina
 wc -30
 speed 1.0
-flying 1
+move_type fly_low
 no_pick 1
 glow_radius 2
 editable 0

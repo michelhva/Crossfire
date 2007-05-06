@@ -10,6 +10,6 @@ walk_on 1
 fly_on 1
 wc 8
 dam 3
-flying 1
+move_type fly_low
 editable 0
 end

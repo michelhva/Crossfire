@@ -13,7 +13,7 @@ color_fg green
 is_used_up 1
 is_animated 1
 walk_on 1
-flying 1
+move_type fly_low
 no_pick 1
 speed 0.2
 wc -30
@@ -30,7 +30,7 @@ poisoncloud.113
 mina
 type 98
 speed 1
-flying 1
+move_type fly_low
 no_pick 1
 food 30
 blocksview 1

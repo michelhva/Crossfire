@@ -21,7 +21,7 @@ wc 12
 dam 3
 ac 4
 level 2
-flying 1
+move_type fly_low
 weight 20
 resist_physical 30
 editable 1

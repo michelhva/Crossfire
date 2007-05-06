@@ -35,7 +35,7 @@ resist_cold 30
 attacktype 5
 speed -0.50
 weight 150000
-flying 1
+move_type fly_low
 run_away 18
 will_apply 2
 pick_up 24
