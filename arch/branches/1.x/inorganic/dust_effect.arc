@@ -1,6 +1,6 @@
 Object dust_effect
 name cloud of dust
-type 88
+type 79
 level 1
 face dust_effect.111
 color_fg brown
