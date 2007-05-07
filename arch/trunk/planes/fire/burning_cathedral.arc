@@ -1,4 +1,4 @@
-Object object burning_cathedral
+Object burning_cathedral
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -10,7 +10,7 @@ magicmap grey
 client_type 25012
 end
 More
-object burning_cathedral_2
+Object burning_cathedral_2
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -21,7 +21,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_3
+Object burning_cathedral_3
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -32,7 +32,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_4
+Object burning_cathedral_4
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -43,7 +43,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_5
+Object burning_cathedral_5
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -55,7 +55,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_6
+Object burning_cathedral_6
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -67,7 +67,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_7
+Object burning_cathedral_7
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -78,7 +78,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_8
+Object burning_cathedral_8
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -90,7 +90,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_9
+Object burning_cathedral_9
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -102,7 +102,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_10
+Object burning_cathedral_10
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -113,7 +113,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_11
+Object burning_cathedral_11
 name burning cathedral
 type 66
 face burning_cathedral.x11
@@ -125,7 +125,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_cathedral_12
+Object burning_cathedral_12
 name burning cathedral
 type 66
 face burning_cathedral.x11
