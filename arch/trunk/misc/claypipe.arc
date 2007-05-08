@@ -15,6 +15,8 @@ nrof 1
 face claypipe.111
 name smoking pipe
 name_pl smoking pipes
+weight 50
+value 500
 arch event_apply
 title Python
 slaying /python/items/smoking_pipe.py
