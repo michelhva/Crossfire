@@ -1164,13 +1164,9 @@ arch woodfloor
 x 7
 y 20
 end
-arch table_3
+arch table_2x1
 x 7
 y 20
-arch event_pickup
-title Python
-slaying /python/maps/navar-midane_pickup.py
-end
 end
 arch woodfloor
 x 7
@@ -1316,14 +1312,6 @@ end
 arch woodfloor
 x 8
 y 20
-end
-arch table_3
-x 8
-y 20
-arch event_pickup
-title Python
-slaying /python/maps/navar-midane_pickup.py
-end
 end
 arch woodfloor
 x 8
