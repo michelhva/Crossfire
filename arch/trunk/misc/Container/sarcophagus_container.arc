@@ -12,7 +12,7 @@ editable 132
 no_pick 1
 identified 1
 magicmap khaki
-name_pl sarcophaguss
+name_pl sarcophaguses
 client_type 51
 end
 
@@ -29,7 +29,7 @@ weight 800000
 editable 128
 no_pick 1
 identified 1
-name_pl sarcophaguss
+name_pl sarcophaguses
 client_type 51
 end
 Object close_sarcophagus_container

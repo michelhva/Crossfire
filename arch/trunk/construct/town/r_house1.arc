@@ -1,5 +1,5 @@
 Object r_house1
-name appartments
+name apartments
 face r_house1.111
 type 66
 no_pick 1

@@ -1,5 +1,5 @@
 Object fogexit
-name mysterous fog
+name mysterious fog
 face fog.111
 speed 0.2
 type 66

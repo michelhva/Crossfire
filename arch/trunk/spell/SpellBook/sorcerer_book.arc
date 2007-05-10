@@ -14,7 +14,7 @@ client_type 1001
 randomitems sorcery_book
 end
 #
-# Starting spellbooks for sorcers.
+# Starting spellbooks for sorcerers.
 #
 Object sorcerer_book_l1
 name grimoire
