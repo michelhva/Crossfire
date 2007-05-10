@@ -9,7 +9,7 @@ nrof 1
 weight 1500
 color_fg light_blue
 editable 2048
-name_pl potions of life
+name_pl supreme potions of life
 on_use_yield potion_empty
 client_type 651
 end
@@ -54,7 +54,7 @@ nrof 1
 weight 1500
 color_fg light_blue
 editable 2048
-name_pl minor potions of life
+name_pl major potions of life
 on_use_yield potion_empty
 client_type 651
 end
