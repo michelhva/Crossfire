@@ -1,4 +1,4 @@
-# this is only used for a spell failur, so more values are
+# this is only used for a spell failure, so more values are
 # needed in this object.
 Object loose_magic
 name uncontrolled mana

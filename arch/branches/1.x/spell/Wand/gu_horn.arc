@@ -21,7 +21,7 @@ material 2
 weight 5000
 msg
 A beautiful unicorn horn shining with golden
-light. You feel a sence of peace when you
+light. You feel a sense of peace when you
 hold it.
 
 This is one of the most powerful healing

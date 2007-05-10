@@ -1,5 +1,5 @@
 Object goldfloor
-name drop 10 goldcoins
+name drop 10 gold coins
 slaying goldcoin
 msg
 Click!
