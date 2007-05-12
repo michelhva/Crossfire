@@ -587,7 +587,6 @@ name 1 - if player on wrong side
 x 8
 y 1
 connected 1
-protected 1
 end
 arch woodfloor
 x 8
@@ -804,14 +803,12 @@ name 2
 x 11
 weight 10000
 connected 2
-protected 2
 end
 arch creator
 name 1
 other_arch boulder
 x 11
 connected 1
-protected 1
 end
 arch blocked
 x 11
