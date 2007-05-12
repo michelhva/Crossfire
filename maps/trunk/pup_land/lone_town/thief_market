@@ -1,12 +1,13 @@
 arch map
-region lonetown
 name thief_market
+region lonetown
+width 16
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 14 02:50:38 1996
 endmsg
-y 25
 end
 arch blocked
 y 3
@@ -746,7 +747,6 @@ Click.
 endmsg
 x 6
 y 12
-protected 1
 connected 1
 end
 arch woodfloor
@@ -761,7 +761,6 @@ arch gate_closed_1
 x 6
 y 13
 speed 0.500000
-protected 1
 connected 1
 end
 arch woodfloor
@@ -879,8 +878,8 @@ hp 100
 x 7
 y 12
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
@@ -1039,8 +1038,8 @@ end
 arch door_look_1
 x 8
 y 19
-alive 0
 move_block 0
+alive 0
 end
 arch shop_gems
 x 8
@@ -1137,8 +1136,8 @@ end
 arch door_look_1
 x 9
 y 19
-alive 0
 move_block 0
+alive 0
 end
 arch shop_gems
 x 9
@@ -1235,8 +1234,8 @@ end
 arch door_look_1
 x 10
 y 19
-alive 0
 move_block 0
+alive 0
 end
 arch shop_gems
 x 10
