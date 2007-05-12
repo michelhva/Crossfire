@@ -450,7 +450,6 @@ arch button_lever
 x 4
 y 10
 connected 1
-protected 1
 end
 arch woodfloor
 x 4
@@ -542,7 +541,6 @@ arch grate_closed_2
 x 5
 y 10
 connected 1
-protected 1
 end
 arch woodfloor
 x 5
@@ -583,6 +581,14 @@ x 6
 y 1
 end
 arch pstone_2
+x 6
+y 2
+end
+arch dragon_exit
+name To terminal
+slaying /pup_land/terminal
+hp 10
+sp 16
 x 6
 y 2
 end
@@ -642,7 +648,6 @@ slaying platinacoin
 x 6
 y 10
 connected 1
-protected 1
 end
 arch woodfloor
 x 6
@@ -934,9 +939,9 @@ dam 1
 ac -10
 x 10
 y 4
+move_type walk
 alive 1
 monster 1
-move_type walk
 friendly 1
 end
 arch pstone_2
@@ -1070,8 +1075,8 @@ hp 100
 x 11
 y 12
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
@@ -1476,12 +1481,4 @@ end
 arch wwall_2_2_4
 x 15
 y 15
-end
-arch dragon_exit
-name To terminal
-slaying /pup_land/terminal
-hp 10
-sp 16
-x 6
-y 2
 end

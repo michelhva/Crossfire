@@ -1,13 +1,13 @@
 arch map
-region pupland
 name cage
+region pupland
+width 13
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun 10 16:32:42 1996
 endmsg
-x 13
-y 14
 end
 arch dungeon_floor
 end
@@ -535,7 +535,6 @@ arch button_small
 name 2
 x 5
 y 13
-protected 2
 weight 1000
 connected 2
 end
@@ -544,7 +543,6 @@ name 1
 other_arch boulder
 x 5
 y 13
-protected 1
 connected 1
 end
 arch dungeon_floor
@@ -681,7 +679,6 @@ msg
 endmsg
 x 7
 y 6
-protected 1
 connected 1
 end
 arch dungeon_floor
@@ -695,7 +692,6 @@ hp 12
 sp 13
 x 7
 y 6
-protected 2
 connected 2
 end
 arch dungeon_magic

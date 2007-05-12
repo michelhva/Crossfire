@@ -1,12 +1,13 @@
 arch map
-region pupland
 name f_a
+region pupland
+width 15
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 11 18:59:09 1996
 endmsg
-x 15
 end
 arch blocked
 end
@@ -863,7 +864,6 @@ arch spikes_closed
 x 6
 y 2
 speed 0.500000
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -929,7 +929,6 @@ end
 arch button_small
 x 6
 y 7
-protected 1
 connected 1
 end
 arch arrow
@@ -1964,7 +1963,6 @@ arch button_small
 name 3
 x 14
 y 1
-protected 3
 weight 1000
 connected 3
 end
@@ -1977,7 +1975,6 @@ name 3
 x 14
 y 3
 speed 0.500000
-protected 3
 connected 3
 end
 arch barrel
@@ -1989,7 +1986,6 @@ name 1
 x 14
 y 4
 speed 0.500000
-protected 1
 value 1
 connected 1
 end
@@ -1997,7 +1993,6 @@ arch button_small
 name 2 - open gate
 x 14
 y 5
-protected 2
 weight 1000
 connected 2
 end
