@@ -323,7 +323,6 @@ arch grate_closed_1
 x 1
 y 4
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -671,7 +670,6 @@ arch grate_closed_1
 x 2
 y 4
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1023,7 +1021,6 @@ arch button_handle
 x 3
 y 3
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1034,7 +1031,6 @@ arch grate_closed_1
 x 3
 y 4
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1367,7 +1363,6 @@ arch grate_closed_2
 x 4
 y 1
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1378,7 +1373,6 @@ arch grate_closed_2
 x 4
 y 2
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -1389,7 +1383,6 @@ arch grate_closed_2
 x 4
 y 3
 connected 1
-protected 1
 end
 arch woodfloor2
 name woodfloor
@@ -3100,6 +3093,11 @@ arch random_treasure
 x 8
 y 36
 end
+arch troll
+name lizard
+x 8
+y 36
+end
 arch woodfloor2
 name woodfloor
 x 8
@@ -3427,6 +3425,10 @@ arch random_treasure
 x 9
 y 33
 end
+arch behemoth
+x 9
+y 33
+end
 arch woodfloor2
 name woodfloor
 x 9
@@ -3530,6 +3532,10 @@ x 10
 y 5
 end
 arch food
+x 10
+y 5
+end
+arch big_dragon
 x 10
 y 5
 end
@@ -3701,6 +3707,10 @@ x 10
 y 24
 end
 arch random_treasure
+x 10
+y 24
+end
+arch titan
 x 10
 y 24
 end
@@ -4709,7 +4719,6 @@ y 17
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -4722,7 +4731,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -4735,7 +4743,6 @@ y 19
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5070,7 +5077,6 @@ x 14
 y 17
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5083,7 +5089,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5095,7 +5100,6 @@ x 14
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5418,7 +5422,6 @@ x 15
 y 17
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5431,7 +5434,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5443,7 +5445,6 @@ x 15
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5635,6 +5636,10 @@ name woodfloor
 x 15
 y 37
 end
+arch behemoth
+x 15
+y 37
+end
 arch woodfloor2
 name woodfloor
 x 15
@@ -5775,7 +5780,6 @@ x 16
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5787,7 +5791,6 @@ x 16
 y 15
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5799,7 +5802,6 @@ x 16
 y 16
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5811,7 +5813,6 @@ x 16
 y 17
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5824,7 +5825,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -5836,10 +5836,13 @@ x 16
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
+x 16
+y 20
+end
+arch behemoth
 x 16
 y 20
 end
@@ -6128,7 +6131,6 @@ x 17
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6141,7 +6143,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6154,7 +6155,6 @@ y 16
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6167,7 +6167,6 @@ y 17
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6180,7 +6179,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6192,7 +6190,6 @@ x 17
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6209,6 +6206,10 @@ name woodfloor
 x 17
 y 22
 end
+arch dragon
+x 17
+y 22
+end
 arch woodfloor2
 name woodfloor
 x 17
@@ -6216,6 +6217,10 @@ y 23
 end
 arch woodfloor2
 name woodfloor
+x 17
+y 24
+end
+arch dread
 x 17
 y 24
 end
@@ -6308,6 +6313,10 @@ y 35
 end
 arch woodfloor2
 name woodfloor
+x 17
+y 36
+end
+arch dragon
 x 17
 y 36
 end
@@ -6410,6 +6419,10 @@ name woodfloor
 x 18
 y 9
 end
+arch titan
+x 18
+y 9
+end
 arch woodfloor2
 name woodfloor
 x 18
@@ -6452,7 +6465,6 @@ x 18
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6465,7 +6477,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6488,7 +6499,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6500,7 +6510,6 @@ x 18
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6752,7 +6761,6 @@ x 19
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6765,7 +6773,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6788,7 +6795,6 @@ y 18
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -6827,7 +6833,6 @@ x 19
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7034,6 +7039,11 @@ name woodfloor
 x 20
 y 9
 end
+arch troll
+name lizard
+x 20
+y 9
+end
 arch woodfloor2
 name woodfloor
 x 20
@@ -7053,6 +7063,10 @@ name woodfloor
 x 20
 y 12
 end
+arch behemoth
+x 20
+y 12
+end
 arch woodfloor2
 name woodfloor
 x 20
@@ -7068,7 +7082,6 @@ x 20
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7081,7 +7094,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7135,7 +7147,6 @@ x 20
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7168,6 +7179,10 @@ y 27
 end
 arch woodfloor2
 name woodfloor
+x 20
+y 28
+end
+arch chinese_dragon
 x 20
 y 28
 end
@@ -7356,7 +7371,6 @@ x 21
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7369,7 +7383,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7423,7 +7436,6 @@ x 21
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7479,6 +7491,10 @@ y 30
 end
 arch woodfloor2
 name woodfloor
+x 21
+y 31
+end
+arch giant
 x 21
 y 31
 end
@@ -7585,6 +7601,10 @@ arch food
 x 22
 y 4
 end
+arch dragon
+x 22
+y 4
+end
 arch woodfloor2
 name woodfloor
 x 22
@@ -7622,6 +7642,10 @@ name woodfloor
 x 22
 y 9
 end
+arch chinese_dragon
+x 22
+y 9
+end
 arch woodfloor2
 name woodfloor
 x 22
@@ -7656,7 +7680,6 @@ x 22
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7669,7 +7692,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7723,7 +7745,6 @@ x 22
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7920,7 +7941,6 @@ x 23
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7932,7 +7952,6 @@ x 23
 y 12
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7944,7 +7963,6 @@ x 23
 y 13
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7956,7 +7974,6 @@ x 23
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -7969,7 +7986,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8023,7 +8039,6 @@ x 23
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8188,6 +8203,10 @@ arch food
 x 24
 y 3
 end
+arch giant
+x 24
+y 3
+end
 arch woodfloor2
 name woodfloor
 x 24
@@ -8249,7 +8268,6 @@ x 24
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8347,7 +8365,6 @@ x 24
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8444,6 +8461,10 @@ y 36
 end
 arch woodfloor2
 name woodfloor
+x 24
+y 37
+end
+arch big_dragon
 x 24
 y 37
 end
@@ -8551,7 +8572,6 @@ x 25
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8645,10 +8665,13 @@ x 25
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
+x 25
+y 23
+end
+arch dragon
 x 25
 y 23
 end
@@ -8690,6 +8713,11 @@ y 29
 end
 arch woodfloor2
 name woodfloor
+x 25
+y 30
+end
+arch troll
+name lizard
 x 25
 y 30
 end
@@ -8848,7 +8876,6 @@ x 26
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -8942,7 +8969,6 @@ x 26
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9081,6 +9107,10 @@ name woodfloor
 x 27
 y 3
 end
+arch dragon
+x 27
+y 3
+end
 arch woodfloor2
 name woodfloor
 x 27
@@ -9146,7 +9176,6 @@ x 27
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9193,7 +9222,6 @@ arch button_handle
 x 27
 y 16
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9246,7 +9274,6 @@ x 27
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9320,6 +9347,10 @@ y 32
 end
 arch woodfloor2
 name woodfloor
+x 27
+y 33
+end
+arch behemoth
 x 27
 y 33
 end
@@ -9406,6 +9437,10 @@ name woodfloor
 x 28
 y 6
 end
+arch giant
+x 28
+y 6
+end
 arch woodfloor2
 name woodfloor
 x 28
@@ -9440,7 +9475,6 @@ x 28
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9538,7 +9572,6 @@ x 28
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9556,6 +9589,10 @@ y 24
 end
 arch woodfloor2
 name woodfloor
+x 28
+y 25
+end
+arch giant
 x 28
 y 25
 end
@@ -9584,6 +9621,10 @@ y 28
 end
 arch woodfloor2
 name woodfloor
+x 28
+y 29
+end
+arch dragon
 x 28
 y 29
 end
@@ -9670,6 +9711,10 @@ name woodfloor
 x 29
 y 3
 end
+arch behemoth
+x 29
+y 3
+end
 arch woodfloor2
 name woodfloor
 x 29
@@ -9677,6 +9722,10 @@ y 4
 end
 arch woodfloor2
 name woodfloor
+x 29
+y 5
+end
+arch behemoth
 x 29
 y 5
 end
@@ -9719,7 +9768,6 @@ x 29
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9797,7 +9845,6 @@ x 29
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -9982,7 +10029,6 @@ x 30
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10060,7 +10106,6 @@ x 30
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10073,6 +10118,10 @@ y 23
 end
 arch woodfloor2
 name woodfloor
+x 30
+y 24
+end
+arch behemoth
 x 30
 y 24
 end
@@ -10259,7 +10308,6 @@ x 31
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10333,7 +10381,6 @@ x 31
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10470,6 +10517,10 @@ name woodfloor
 x 32
 y 4
 end
+arch dread
+x 32
+y 4
+end
 arch woodfloor2
 name woodfloor
 x 32
@@ -10499,6 +10550,11 @@ name woodfloor
 x 32
 y 9
 end
+arch troll
+name lizard
+x 32
+y 9
+end
 arch woodfloor2
 name woodfloor
 x 32
@@ -10514,7 +10570,6 @@ x 32
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10563,7 +10618,6 @@ arch button_handle
 x 32
 y 18
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10594,7 +10648,6 @@ x 32
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10648,6 +10701,10 @@ name woodfloor
 x 32
 y 30
 end
+arch giant
+x 32
+y 30
+end
 arch woodfloor2
 name woodfloor
 x 32
@@ -10688,6 +10745,10 @@ y 36
 end
 arch woodfloor2
 name woodfloor
+x 32
+y 37
+end
+arch dragon
 x 32
 y 37
 end
@@ -10787,7 +10848,6 @@ x 33
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10800,7 +10860,6 @@ y 12
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10873,7 +10932,6 @@ x 33
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -10891,6 +10949,10 @@ y 24
 end
 arch woodfloor2
 name woodfloor
+x 33
+y 25
+end
+arch behemoth
 x 33
 y 25
 end
@@ -10949,6 +11011,10 @@ y 34
 end
 arch woodfloor2
 name woodfloor
+x 33
+y 35
+end
+arch behemoth
 x 33
 y 35
 end
@@ -11058,7 +11124,6 @@ x 34
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11071,7 +11136,6 @@ y 12
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11118,7 +11182,6 @@ y 19
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11140,7 +11203,6 @@ x 34
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11289,6 +11351,10 @@ name woodfloor
 x 35
 y 8
 end
+arch giant
+x 35
+y 8
+end
 arch woodfloor2
 name woodfloor
 x 35
@@ -11313,7 +11379,6 @@ x 35
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11326,7 +11391,6 @@ y 12
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11369,7 +11433,6 @@ y 19
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11391,7 +11454,6 @@ x 35
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11400,6 +11462,10 @@ y 23
 end
 arch woodfloor2
 name woodfloor
+x 35
+y 24
+end
+arch dread
 x 35
 y 24
 end
@@ -11438,6 +11504,10 @@ y 29
 end
 arch woodfloor2
 name woodfloor
+x 35
+y 30
+end
+arch chinese_dragon
 x 35
 y 30
 end
@@ -11480,6 +11550,11 @@ name woodfloor
 x 35
 y 37
 end
+arch troll
+name lizard
+x 35
+y 37
+end
 arch woodfloor2
 name woodfloor
 x 35
@@ -11517,6 +11592,10 @@ name woodfloor
 x 36
 y 3
 end
+arch dragon
+x 36
+y 3
+end
 arch woodfloor2
 name woodfloor
 x 36
@@ -11533,6 +11612,11 @@ y 5
 end
 arch woodfloor2
 name woodfloor
+x 36
+y 6
+end
+arch troll
+name lizard
 x 36
 y 6
 end
@@ -11570,7 +11654,6 @@ x 36
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11583,7 +11666,6 @@ y 12
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11596,7 +11678,6 @@ y 13
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11609,7 +11690,6 @@ y 14
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11622,7 +11702,6 @@ y 15
 speed 0.500000
 value 1
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11644,7 +11723,6 @@ x 36
 y 18
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11656,7 +11734,6 @@ x 36
 y 19
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11668,7 +11745,6 @@ x 36
 y 20
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11680,7 +11756,6 @@ x 36
 y 21
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11692,7 +11767,6 @@ x 36
 y 22
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11873,7 +11947,6 @@ x 37
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -11919,10 +11992,13 @@ x 37
 y 18
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
+x 37
+y 19
+end
+arch behemoth
 x 37
 y 19
 end
@@ -11933,6 +12009,10 @@ y 20
 end
 arch woodfloor2
 name woodfloor
+x 37
+y 21
+end
+arch chinese_dragon
 x 37
 y 21
 end
@@ -12075,6 +12155,10 @@ name woodfloor
 x 38
 y 4
 end
+arch chinese_dragon
+x 38
+y 4
+end
 arch woodfloor2
 name woodfloor
 x 38
@@ -12119,7 +12203,6 @@ x 38
 y 11
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12161,7 +12244,6 @@ x 38
 y 18
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12222,6 +12304,10 @@ y 27
 end
 arch woodfloor2
 name woodfloor
+x 38
+y 28
+end
+arch dragon
 x 38
 y 28
 end
@@ -12420,7 +12506,6 @@ x 39
 y 12
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12432,7 +12517,6 @@ x 39
 y 13
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12444,7 +12528,6 @@ x 39
 y 14
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12456,7 +12539,6 @@ x 39
 y 15
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12468,7 +12550,6 @@ x 39
 y 16
 speed 0.500000
 connected 96
-protected 96
 end
 arch woodfloor2
 name woodfloor
@@ -12721,6 +12802,10 @@ y 12
 end
 arch woodfloor2
 name woodfloor
+x 40
+y 13
+end
+arch giant
 x 40
 y 13
 end
@@ -12916,6 +13001,10 @@ name woodfloor
 x 41
 y 4
 end
+arch dragon
+x 41
+y 4
+end
 arch woodfloor2
 name woodfloor
 x 41
@@ -12928,6 +13017,10 @@ y 6
 end
 arch woodfloor2
 name woodfloor
+x 41
+y 7
+end
+arch chinese_dragon
 x 41
 y 7
 end
@@ -13047,6 +13140,10 @@ name woodfloor
 x 41
 y 23
 end
+arch giant
+x 41
+y 23
+end
 arch woodfloor2
 name woodfloor
 x 41
@@ -13059,6 +13156,11 @@ y 25
 end
 arch woodfloor2
 name woodfloor
+x 41
+y 26
+end
+arch troll
+name lizard
 x 41
 y 26
 end
@@ -13114,6 +13216,10 @@ y 32
 end
 arch woodfloor2
 name woodfloor
+x 41
+y 33
+end
+arch chinese_dragon
 x 41
 y 33
 end
@@ -13255,8 +13361,16 @@ name woodfloor
 x 42
 y 13
 end
+arch dragon
+x 42
+y 13
+end
 arch woodfloor2
 name woodfloor
+x 42
+y 14
+end
+arch behemoth
 x 42
 y 14
 end
@@ -13305,6 +13419,10 @@ y 21
 end
 arch woodfloor2
 name woodfloor
+x 42
+y 22
+end
+arch dragon
 x 42
 y 22
 end
@@ -13998,223 +14116,4 @@ end
 arch blocked
 x 44
 y 39
-end
-arch troll
-name lizard
-x 8
-y 36
-end
-arch behemoth
-x 9
-y 33
-end
-arch big_dragon
-x 10
-y 5
-end
-arch titan
-x 10
-y 24
-end
-arch behemoth
-x 15
-y 37
-end
-arch behemoth
-x 16
-y 20
-end
-arch dragon
-x 17
-y 22
-end
-arch dread
-x 17
-y 24
-end
-arch dragon
-x 17
-y 36
-end
-arch titan
-x 18
-y 9
-end
-arch troll
-name lizard
-x 20
-y 9
-end
-arch behemoth
-x 20
-y 12
-end
-arch chinese_dragon
-x 20
-y 28
-end
-arch giant
-x 21
-y 31
-end
-arch dragon
-x 22
-y 4
-end
-arch chinese_dragon
-x 22
-y 9
-end
-arch giant
-x 24
-y 3
-end
-arch big_dragon
-x 24
-y 37
-end
-arch dragon
-x 25
-y 23
-end
-arch troll
-name lizard
-x 25
-y 30
-end
-arch dragon
-x 27
-y 3
-end
-arch behemoth
-x 27
-y 33
-end
-arch giant
-x 28
-y 6
-end
-arch giant
-x 28
-y 25
-end
-arch dragon
-x 28
-y 29
-end
-arch behemoth
-x 29
-y 3
-end
-arch behemoth
-x 29
-y 5
-end
-arch behemoth
-x 30
-y 24
-end
-arch dread
-x 32
-y 4
-end
-arch troll
-name lizard
-x 32
-y 9
-end
-arch giant
-x 32
-y 30
-end
-arch dragon
-x 32
-y 37
-end
-arch behemoth
-x 33
-y 25
-end
-arch behemoth
-x 33
-y 35
-end
-arch giant
-x 35
-y 8
-end
-arch dread
-x 35
-y 24
-end
-arch chinese_dragon
-x 35
-y 30
-end
-arch troll
-name lizard
-x 35
-y 37
-end
-arch dragon
-x 36
-y 3
-end
-arch troll
-name lizard
-x 36
-y 6
-end
-arch behemoth
-x 37
-y 19
-end
-arch chinese_dragon
-x 37
-y 21
-end
-arch chinese_dragon
-x 38
-y 4
-end
-arch dragon
-x 38
-y 28
-end
-arch giant
-x 40
-y 13
-end
-arch dragon
-x 41
-y 4
-end
-arch chinese_dragon
-x 41
-y 7
-end
-arch giant
-x 41
-y 23
-end
-arch troll
-name lizard
-x 41
-y 26
-end
-arch chinese_dragon
-x 41
-y 33
-end
-arch dragon
-x 42
-y 13
-end
-arch behemoth
-x 42
-y 14
-end
-arch dragon
-x 42
-y 22
 end

@@ -1,15 +1,15 @@
 arch map
-region santodominion
 name tavern
+region santodominion
+width 32
+height 32
+enter_x 25
+enter_y 24
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Nov 17 00:06:36 2000
 endmsg
-hp 25
-sp 24
-x 32
-y 32
 end
 arch pstone_1
 end
@@ -836,7 +836,6 @@ end
 arch button_handle
 x 4
 y 24
-protected 4
 connected 4
 end
 arch pstone_1
@@ -1106,7 +1105,6 @@ end
 arch button_plate
 x 6
 y 4
-protected 5
 connected 5
 end
 arch pstone_1
@@ -1228,7 +1226,6 @@ end
 arch grate_closed_1
 x 6
 y 23
-protected 96
 connected 96
 end
 arch pstone_1
@@ -1270,7 +1267,6 @@ end
 arch button_handle
 x 6
 y 28
-protected 3
 connected 3
 end
 arch pstone_1
@@ -1446,7 +1442,6 @@ end
 arch grate_closed_1
 x 7
 y 23
-protected 96
 connected 96
 end
 arch pstone_1
@@ -1554,7 +1549,6 @@ end
 arch gate_closed_1
 x 8
 y 7
-protected 96
 connected 96
 end
 arch pstone_1
@@ -1644,7 +1638,6 @@ end
 arch grate_closed_1
 x 8
 y 23
-protected 96
 connected 96
 end
 arch pstone_1
@@ -1752,7 +1745,6 @@ end
 arch gate_closed_1
 x 9
 y 7
-protected 96
 connected 96
 end
 arch pstone_1
@@ -1838,7 +1830,6 @@ end
 arch grate_closed_1
 x 9
 y 23
-protected 96
 connected 96
 end
 arch pstone_1
@@ -2321,7 +2312,6 @@ arch igate_closed_2
 x 11
 y 29
 speed 0.500000
-protected 2
 connected 2
 end
 arch pstone_1
@@ -2385,7 +2375,6 @@ end
 arch button_plate
 x 12
 y 6
-protected 2
 connected 2
 end
 arch pstone_1
@@ -2419,7 +2408,6 @@ end
 arch grate_closed_2
 x 12
 y 12
-protected 3
 connected 3
 end
 arch pstone_1
@@ -2429,7 +2417,6 @@ end
 arch grate_closed_2
 x 12
 y 13
-protected 3
 connected 3
 end
 arch pstone_1
@@ -2585,7 +2572,6 @@ end
 arch button_small
 x 13
 y 6
-protected 1
 value 1
 connected 1
 end
@@ -3772,7 +3758,6 @@ end
 arch spikes_closed
 x 19
 y 25
-protected 4
 connected 4
 end
 arch pstone_1
@@ -4572,7 +4557,6 @@ arch spikes_open
 x 24
 y 3
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -5629,7 +5613,6 @@ arch spikes_open
 x 29
 y 26
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -5670,7 +5653,6 @@ arch button_handle
 name The Cellars
 x 30
 y 1
-protected 96
 connected 96
 end
 arch generate_scorpion

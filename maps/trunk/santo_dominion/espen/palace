@@ -174,11 +174,19 @@ arch woodfloor
 x 1
 y 2
 end
+arch dragon
+x 1
+y 2
+end
 arch dungeon_magic
 x 1
 y 3
 end
 arch woodfloor
+x 1
+y 3
+end
+arch dragon
 x 1
 y 3
 end
@@ -187,6 +195,10 @@ x 1
 y 4
 end
 arch woodfloor
+x 1
+y 4
+end
+arch dragon
 x 1
 y 4
 end
@@ -195,6 +207,10 @@ x 1
 y 5
 end
 arch woodfloor
+x 1
+y 5
+end
+arch dragon
 x 1
 y 5
 end
@@ -203,6 +219,10 @@ x 1
 y 6
 end
 arch woodfloor
+x 1
+y 6
+end
+arch dragon
 x 1
 y 6
 end
@@ -223,6 +243,10 @@ x 1
 y 8
 end
 arch woodfloor
+x 1
+y 9
+end
+arch giant
 x 1
 y 9
 end
@@ -282,6 +306,10 @@ arch woodfloor
 x 1
 y 20
 end
+arch behemoth
+x 1
+y 20
+end
 arch woodfloor
 x 1
 y 21
@@ -306,6 +334,10 @@ arch woodfloor
 x 1
 y 24
 end
+arch dread
+x 1
+y 24
+end
 arch dungeon_magic
 x 1
 y 25
@@ -327,6 +359,10 @@ x 1
 y 27
 end
 arch woodfloor
+x 1
+y 27
+end
+arch behemoth
 x 1
 y 27
 end
@@ -429,11 +465,19 @@ arch woodfloor
 x 2
 y 8
 end
+arch giant
+x 2
+y 8
+end
 arch woodfloor
 x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch giant
 x 2
 y 10
 end
@@ -580,11 +624,23 @@ arch woodfloor
 x 3
 y 2
 end
+arch dragon
+x 3
+y 2
+end
 arch woodfloor
 x 3
 y 3
 end
+arch dragon
+x 3
+y 3
+end
 arch woodfloor
+x 3
+y 4
+end
+arch dragon
 x 3
 y 4
 end
@@ -628,7 +684,6 @@ arch grate_closed_2
 x 3
 y 8
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -638,7 +693,6 @@ arch grate_closed_2
 x 3
 y 9
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -648,7 +702,6 @@ arch grate_closed_2
 x 3
 y 10
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -658,7 +711,6 @@ arch grate_closed_2
 x 3
 y 11
 connected 3
-protected 3
 end
 arch dungeon_magic
 x 3
@@ -680,7 +732,6 @@ arch button_small
 x 3
 y 15
 connected 1
-protected 1
 end
 arch woodfloor
 x 3
@@ -722,7 +773,6 @@ arch grate_closed_2
 x 3
 y 19
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -732,7 +782,6 @@ arch grate_closed_2
 x 3
 y 20
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -742,7 +791,6 @@ arch grate_closed_2
 x 3
 y 21
 connected 3
-protected 3
 end
 arch woodfloor
 x 3
@@ -752,7 +800,6 @@ arch grate_closed_2
 x 3
 y 22
 connected 3
-protected 3
 end
 arch dungeon_magic
 x 3
@@ -961,7 +1008,6 @@ x 4
 y 15
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 4
@@ -1101,6 +1147,10 @@ arch woodfloor
 x 5
 y 2
 end
+arch dragon
+x 5
+y 2
+end
 arch dungeon_magic
 x 5
 y 3
@@ -1185,7 +1235,6 @@ arch button_small
 x 5
 y 15
 connected 1
-protected 1
 end
 arch woodfloor
 x 5
@@ -1399,7 +1448,6 @@ arch button_handle
 x 6
 y 15
 connected 3
-protected 3
 end
 arch random_treasure
 x 6
@@ -2386,7 +2434,6 @@ arch block_door_closed
 x 10
 y 3
 connected 2
-protected 2
 end
 arch woodfloor
 x 10
@@ -3220,7 +3267,6 @@ name Make my day...
 x 13
 y 2
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 13
@@ -8481,64 +8527,4 @@ end
 arch bwall_2_2_4
 x 31
 y 31
-end
-arch dragon
-x 1
-y 2
-end
-arch dragon
-x 1
-y 3
-end
-arch dragon
-x 1
-y 4
-end
-arch dragon
-x 1
-y 5
-end
-arch dragon
-x 1
-y 6
-end
-arch giant
-x 1
-y 9
-end
-arch behemoth
-x 1
-y 20
-end
-arch dread
-x 1
-y 24
-end
-arch behemoth
-x 1
-y 27
-end
-arch giant
-x 2
-y 8
-end
-arch giant
-x 2
-y 10
-end
-arch dragon
-x 3
-y 2
-end
-arch dragon
-x 3
-y 3
-end
-arch dragon
-x 3
-y 4
-end
-arch dragon
-x 5
-y 2
 end
