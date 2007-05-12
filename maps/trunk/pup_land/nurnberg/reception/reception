@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name reception
+region nurnberg
+width 40
+height 36
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 17 23:59:28 1996
 endmsg
-width 40
-height 36
 end
 arch evergreens
 end
@@ -404,9 +404,9 @@ y 2
 end
 arch xan
 name mosquito
-speed 0.200000
 x 2
 y 2
+speed 0.200000
 end
 arch dungeon_floor
 x 2
@@ -422,9 +422,9 @@ y 5
 end
 arch xan
 name mosquito
-speed 0.200000
 x 2
 y 5
+speed 0.200000
 end
 arch dungeon_floor
 x 2
@@ -444,11 +444,11 @@ y 9
 end
 arch firewall_3
 dam 139
+x 2
+y 9
 speed 0.050000
 speed_left -0.480000
 level 30
-x 2
-y 9
 end
 arch dungeon_floor
 x 2
@@ -460,9 +460,9 @@ y 11
 end
 arch xan
 name mosquito
-speed 0.200000
 x 2
 y 11
+speed 0.200000
 end
 arch dungeon_floor
 x 2
@@ -513,117 +513,117 @@ x 2
 y 20
 end
 arch firewall_3
-level 4
 x 2
 y 20
+level 4
 end
 arch woodfloor
 x 2
 y 21
 end
 arch firewall_3
-level 4
 x 2
 y 21
+level 4
 end
 arch woodfloor
 x 2
 y 22
 end
 arch firewall_3
-level 4
 x 2
 y 22
+level 4
 end
 arch woodfloor
 x 2
 y 23
 end
 arch firewall_3
-level 4
 x 2
 y 23
+level 4
 end
 arch woodfloor
 x 2
 y 24
 end
 arch firewall_3
-level 4
 x 2
 y 24
+level 4
 end
 arch woodfloor
 x 2
 y 25
 end
 arch firewall_3
-level 4
 x 2
 y 25
+level 4
 end
 arch woodfloor
 x 2
 y 26
 end
 arch firewall_3
-level 4
 x 2
 y 26
+level 4
 end
 arch woodfloor
 x 2
 y 27
 end
 arch firewall_3
-level 4
 x 2
 y 27
+level 4
 end
 arch woodfloor
 x 2
 y 28
 end
 arch firewall_3
-level 4
 x 2
 y 28
+level 4
 end
 arch woodfloor
 x 2
 y 29
 end
 arch firewall_3
-level 4
 x 2
 y 29
+level 4
 end
 arch woodfloor
 x 2
 y 30
 end
 arch firewall_3
-level 4
 x 2
 y 30
+level 4
 end
 arch woodfloor
 x 2
 y 31
 end
 arch firewall_3
-level 4
 x 2
 y 31
+level 4
 end
 arch woodfloor
 x 2
 y 32
 end
 arch firewall_2
-level 4
 x 2
 y 32
+level 4
 end
 arch woodfloor
 x 2
@@ -817,9 +817,9 @@ x 3
 y 32
 end
 arch firewall_1
-level 7
 x 3
 y 32
+level 7
 end
 arch woodfloor
 x 3
@@ -869,14 +869,14 @@ x 4
 y 4
 end
 arch biglake_center
-move_block 0
 x 4
 y 5
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 4
 y 6
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -904,9 +904,9 @@ y 10
 end
 arch xan
 name mosquito
-speed 0.200000
 x 4
 y 10
+speed 0.200000
 end
 arch dungeon_floor
 x 4
@@ -930,11 +930,11 @@ y 13
 end
 arch firewall_3
 dam 139
+x 4
+y 13
 speed 0.050000
 speed_left -0.480000
 level 30
-x 4
-y 13
 end
 arch dungeon_floor
 x 4
@@ -1073,9 +1073,9 @@ x 4
 y 32
 end
 arch firewall_1
-level 7
 x 4
 y 32
+level 7
 end
 arch woodfloor
 x 4
@@ -1117,15 +1117,14 @@ x 5
 y 3
 end
 arch biglake_center
-move_block 0
 x 5
 y 4
+move_block 0
 end
 arch button_lever
-protected 41
-connected 41
 x 5
 y 4
+connected 41
 end
 arch xan
 name Maraial Mosquito
@@ -1136,26 +1135,26 @@ exp 200
 dam 20
 wc -5
 ac 5
+x 5
+y 4
 speed 0.250000
 level 10
 unaggressive 1
-x 5
-y 4
 end
 arch biglake_center
-move_block 0
 x 5
 y 5
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 5
 y 6
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 5
 y 7
+move_block 0
 end
 arch dungeon_floor
 x 5
@@ -1267,10 +1266,10 @@ y 28
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 5
 y 28
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 5
@@ -1293,9 +1292,9 @@ x 5
 y 32
 end
 arch firewall_1
-level 7
 x 5
 y 32
+level 7
 end
 arch woodfloor
 x 5
@@ -1337,32 +1336,32 @@ x 6
 y 3
 end
 arch biglake_center
-move_block 0
 x 6
 y 4
+move_block 0
 end
 arch firewall_5
 dam 139
+x 6
+y 4
 speed 0.050000
 speed_left -1.790000
 level 30
-x 6
-y 4
 end
 arch biglake_center
-move_block 0
 x 6
 y 5
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 6
 y 6
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 6
 y 7
+move_block 0
 end
 arch dungeon_floor
 x 6
@@ -1378,9 +1377,9 @@ y 10
 end
 arch xan
 name mosquito
-speed 0.200000
 x 6
 y 10
+speed 0.200000
 end
 arch dungeon_floor
 x 6
@@ -1464,10 +1463,10 @@ y 22
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 6
 y 22
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 6
@@ -1479,10 +1478,10 @@ y 24
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 6
 y 24
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 6
@@ -1494,10 +1493,10 @@ y 26
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 6
 y 26
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 6
@@ -1528,9 +1527,9 @@ x 6
 y 32
 end
 arch firewall_1
-level 7
 x 6
 y 32
+level 7
 end
 arch woodfloor
 x 6
@@ -1580,14 +1579,14 @@ x 7
 y 4
 end
 arch biglake_center
-move_block 0
 x 7
 y 5
+move_block 0
 end
 arch biglake_center
-move_block 0
 x 7
 y 6
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -1703,10 +1702,10 @@ y 25
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 7
 y 25
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 7
@@ -1722,10 +1721,10 @@ y 28
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 7
 y 28
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 7
@@ -1748,9 +1747,9 @@ x 7
 y 32
 end
 arch firewall_1
-level 7
 x 7
 y 32
+level 7
 end
 arch woodfloor
 x 7
@@ -1853,11 +1852,11 @@ y 15
 end
 arch firewall_1
 dam 139
+x 8
+y 15
 speed 0.050000
 speed_left -1.370000
 level 30
-x 8
-y 15
 end
 arch dungeon_floor
 x 8
@@ -1913,10 +1912,10 @@ y 24
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 8
 y 24
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 8
@@ -1928,10 +1927,10 @@ y 26
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 8
 y 26
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 8
@@ -1947,10 +1946,10 @@ y 29
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 8
 y 29
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 8
@@ -1969,9 +1968,9 @@ x 8
 y 32
 end
 arch firewall_1
-level 7
 x 8
 y 32
+level 7
 end
 arch woodfloor
 x 8
@@ -2006,9 +2005,9 @@ y 2
 end
 arch xan
 name mosquito
-speed 0.200000
 x 9
 y 2
+speed 0.200000
 end
 arch dungeon_floor
 x 9
@@ -2080,9 +2079,9 @@ y 15
 end
 arch xan
 name mosquito
-speed 0.200000
 x 9
 y 15
+speed 0.200000
 end
 arch dungeon_floor
 x 9
@@ -2146,10 +2145,10 @@ y 26
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 9
 y 26
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 9
@@ -2180,9 +2179,9 @@ x 9
 y 32
 end
 arch firewall_1
-level 7
 x 9
 y 32
+level 7
 end
 arch woodfloor
 x 9
@@ -2217,11 +2216,11 @@ y 2
 end
 arch firewall_5
 dam 139
+x 10
+y 2
 speed 0.050000
 speed_left -1.790000
 level 30
-x 10
-y 2
 end
 arch dungeon_floor
 x 10
@@ -2265,11 +2264,11 @@ y 11
 end
 arch firewall_3
 dam 139
+x 10
+y 11
 speed 0.050000
 speed_left -0.480000
 level 30
-x 10
-y 11
 end
 arch dungeon_floor
 x 10
@@ -2328,10 +2327,9 @@ x 10
 y 21
 end
 arch ggate_closed
-protected 10
-connected 10
 x 10
 y 21
+connected 10
 end
 arch woodfloor
 x 10
@@ -2347,10 +2345,10 @@ y 24
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 10
 y 24
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 10
@@ -2362,10 +2360,10 @@ y 26
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 10
 y 26
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 10
@@ -2396,9 +2394,9 @@ x 10
 y 32
 end
 arch firewall_1
-level 7
 x 10
 y 32
+level 7
 end
 arch woodfloor
 x 10
@@ -2485,9 +2483,9 @@ y 9
 end
 arch xan
 name mosquito
-speed 0.200000
 x 11
 y 9
+speed 0.200000
 end
 arch dungeon_floor
 x 11
@@ -2595,10 +2593,10 @@ y 29
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 11
 y 29
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 11
@@ -2617,9 +2615,9 @@ x 11
 y 32
 end
 arch firewall_1
-level 7
 x 11
 y 32
+level 7
 end
 arch woodfloor
 x 11
@@ -2669,11 +2667,10 @@ x 12
 y 5
 end
 arch grate_closed_1
-speed 0.500000
-protected 41
-connected 41
 x 12
 y 5
+speed 0.500000
+connected 41
 end
 arch dungeon_floor
 x 12
@@ -2792,10 +2789,10 @@ y 24
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 12
 y 24
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 12
@@ -2811,10 +2808,10 @@ y 27
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 12
 y 27
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 12
@@ -2822,20 +2819,19 @@ y 28
 end
 arch ant
 dam 5
-speed 0.250000
-attacktype 5
 x 12
 y 28
+speed 0.250000
+attacktype 5
 end
 arch woodfloor
 x 12
 y 29
 end
 arch button_lever
-protected 10
-connected 10
 x 12
 y 29
+connected 10
 end
 arch guard_ant
 name fire ant
@@ -2846,15 +2842,12 @@ exp 100
 dam 20
 wc 5
 ac 5
-speed 0.500000
-immune 0
-protected 0
-attacktype 5
-vulnerable 0
-stand_still 0
-can_see_in_dark 1
 x 12
 y 29
+speed 0.500000
+attacktype 5
+stand_still 0
+can_see_in_dark 1
 end
 arch woodfloor
 x 12
@@ -2873,9 +2866,9 @@ x 12
 y 32
 end
 arch firewall_1
-level 7
 x 12
 y 32
+level 7
 end
 arch woodfloor
 x 12
@@ -2986,9 +2979,9 @@ y 15
 end
 arch xan
 name mosquito
-speed 0.200000
 x 13
 y 15
+speed 0.200000
 end
 arch dungeon_floor
 x 13
@@ -3011,10 +3004,9 @@ x 13
 y 18
 end
 arch button_small
-protected 4
-connected 4
 x 13
 y 19
+connected 4
 end
 arch woodfloor
 x 13
@@ -3117,9 +3109,9 @@ x 13
 y 32
 end
 arch firewall_1
-level 7
 x 13
 y 32
+level 7
 end
 arch woodfloor
 x 13
@@ -3178,9 +3170,9 @@ y 8
 end
 arch xan
 name mosquito
-speed 0.200000
 x 14
 y 8
+speed 0.200000
 end
 arch dungeon_floor
 x 14
@@ -3251,11 +3243,10 @@ x 14
 y 19
 end
 arch igate_closed_2
-speed 0.500000
-protected 4
-connected 4
 x 14
 y 19
+speed 0.500000
+connected 4
 end
 arch woodfloor
 x 14
@@ -3283,12 +3274,12 @@ end
 arch firewall_1
 name anti-magic force
 dam 128
+x 14
+y 23
 speed -0.050000
 level 100
 move_block 0
 blocksview 0
-x 14
-y 23
 end
 arch woodfloor
 x 14
@@ -3331,9 +3322,9 @@ x 14
 y 32
 end
 arch firewall_1
-level 7
 x 14
 y 32
+level 7
 end
 arch woodfloor
 x 14
@@ -3372,9 +3363,9 @@ y 3
 end
 arch xan
 name mosquito
-speed 0.200000
 x 15
 y 3
+speed 0.200000
 end
 arch dungeon_floor
 x 15
@@ -3386,9 +3377,9 @@ y 5
 end
 arch xan
 name mosquito
-speed 0.200000
 x 15
 y 5
+speed 0.200000
 end
 arch dungeon_floor
 x 15
@@ -3419,10 +3410,9 @@ x 15
 y 12
 end
 arch button_small
-protected 1
-connected 1
 x 15
 y 13
+connected 1
 end
 arch dungeon_floor
 x 15
@@ -3433,11 +3423,10 @@ x 15
 y 14
 end
 arch igate_closed_1
-speed 0.500000
-protected 1
-connected 1
 x 15
 y 14
+speed 0.500000
+connected 1
 end
 arch magic_mouth
 msg
@@ -3447,10 +3436,9 @@ x 15
 y 15
 end
 arch button_small
-protected 1
-connected 1
 x 15
 y 15
+connected 1
 end
 arch dungeon_floor
 x 15
@@ -3461,11 +3449,10 @@ x 15
 y 16
 end
 arch gate_closed_1
-speed 0.500000
-protected 6
-connected 6
 x 15
 y 16
+speed 0.500000
+connected 6
 end
 arch cobblestones2
 x 15
@@ -3476,11 +3463,10 @@ x 15
 y 18
 end
 arch gate_closed_1
-speed 0.500000
-protected 8
-connected 8
 x 15
 y 18
+speed 0.500000
+connected 8
 end
 arch magic_mouth
 msg
@@ -3490,10 +3476,9 @@ x 15
 y 19
 end
 arch button_small
-protected 4
-connected 4
 x 15
 y 19
+connected 4
 end
 arch woodfloor
 x 15
@@ -3528,90 +3513,90 @@ x 15
 y 23
 end
 arch firewall_7
-level 10
 x 15
 y 23
+level 10
 end
 arch woodfloor
 x 15
 y 24
 end
 arch firewall_7
-level 10
 x 15
 y 24
+level 10
 end
 arch woodfloor
 x 15
 y 25
 end
 arch firewall_7
-level 10
 x 15
 y 25
+level 10
 end
 arch woodfloor
 x 15
 y 26
 end
 arch firewall_7
-level 10
 x 15
 y 26
+level 10
 end
 arch woodfloor
 x 15
 y 27
 end
 arch firewall_7
-level 10
 x 15
 y 27
+level 10
 end
 arch woodfloor
 x 15
 y 28
 end
 arch firewall_7
-level 10
 x 15
 y 28
+level 10
 end
 arch woodfloor
 x 15
 y 29
 end
 arch firewall_7
-level 10
 x 15
 y 29
+level 10
 end
 arch woodfloor
 x 15
 y 30
 end
 arch firewall_7
-level 10
 x 15
 y 30
+level 10
 end
 arch woodfloor
 x 15
 y 31
 end
 arch firewall_7
-level 10
 x 15
 y 31
+level 10
 end
 arch woodfloor
 x 15
 y 32
 end
 arch firewall_8
-level 7
 x 15
 y 32
+level 7
 end
 arch woodfloor
 x 15
@@ -4003,13 +3988,13 @@ x 17
 y 20
 end
 arch cobblestones2
-type 41
 hp 37
 sp 23
-activate_on_push 1
-connected 5
 x 17
 y 21
+type 41
+connected 5
+activate_on_push 1
 end
 arch woman
 msg
@@ -4021,30 +4006,30 @@ Hello! Would you like to join the
 Regular Army?
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 17
 y 21
+friendly 1
+unaggressive 0
 end
 arch magic_ear
 msg
 @match yes
 Click.
 endmsg
-connected 1998
 x 17
 y 22
+connected 1998
 end
 arch cobblestones2
-type 41
 slaying reception
 hp 17
 sp 17
-activate_on_push 1
-activate_on_release 1
-connected 5
 x 17
 y 22
+type 41
+connected 5
+activate_on_push 1
+activate_on_release 1
 end
 arch cobblestones2
 x 17
@@ -4440,10 +4425,9 @@ x 19
 y 12
 end
 arch button_small
-protected 2
-connected 2
 x 19
 y 13
+connected 2
 end
 arch flagstone
 x 19
@@ -4454,11 +4438,10 @@ x 19
 y 14
 end
 arch igate_closed_1
-speed 0.500000
-protected 2
-connected 2
 x 19
 y 14
+speed 0.500000
+connected 2
 end
 arch magic_mouth
 msg
@@ -4468,10 +4451,9 @@ x 19
 y 15
 end
 arch button_small
-protected 2
-connected 2
 x 19
 y 15
+connected 2
 end
 arch flagstone
 x 19
@@ -4482,11 +4464,10 @@ x 19
 y 16
 end
 arch gate_closed_1
-speed 0.500000
-protected 7
-connected 7
 x 19
 y 16
+speed 0.500000
+connected 7
 end
 arch cobblestones2
 x 19
@@ -4497,11 +4478,10 @@ x 19
 y 18
 end
 arch gate_closed_1
-speed 0.500000
-protected 9
-connected 9
 x 19
 y 18
+speed 0.500000
+connected 9
 end
 arch magic_mouth
 msg
@@ -4511,10 +4491,9 @@ x 19
 y 19
 end
 arch button_small
-protected 3
-connected 3
 x 19
 y 19
+connected 3
 end
 arch marble
 x 19
@@ -4559,9 +4538,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 19
 y 27
+attacktype 8
 end
 arch marble
 x 19
@@ -4582,9 +4561,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 19
 y 31
+attacktype 8
 end
 arch marble
 x 19
@@ -4730,11 +4709,10 @@ x 20
 y 19
 end
 arch igate_closed_2
-speed 0.500000
-protected 3
-connected 3
 x 20
 y 19
+speed 0.500000
+connected 3
 end
 arch marble
 x 20
@@ -4763,9 +4741,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 20
 y 24
+attacktype 8
 end
 arch marble
 x 20
@@ -4824,11 +4802,10 @@ x 20
 y 32
 end
 arch grate_closed_2
-speed 0.500000
-protected 20
-connected 20
 x 20
 y 32
+speed 0.500000
+connected 20
 end
 arch marble
 x 20
@@ -4962,10 +4939,9 @@ x 21
 y 18
 end
 arch button_small
-protected 3
-connected 3
 x 21
 y 19
+connected 3
 end
 arch marble
 x 21
@@ -5014,9 +4990,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 21
 y 27
+attacktype 8
 end
 arch marble
 x 21
@@ -5188,9 +5164,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 22
 y 22
+attacktype 8
 end
 arch marble
 x 22
@@ -5207,9 +5183,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 22
 y 25
+attacktype 8
 end
 arch marble
 x 22
@@ -5242,9 +5218,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 22
 y 31
+attacktype 8
 end
 arch marble
 x 22
@@ -5424,9 +5400,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 23
 y 28
+attacktype 8
 end
 arch marble
 x 23
@@ -5586,9 +5562,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 24
 y 19
+attacktype 8
 end
 arch marble
 x 24
@@ -5664,11 +5640,10 @@ y 29
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 24
 y 29
+speed 0.500000
+connected 20
 end
 arch marble
 x 24
@@ -5676,11 +5651,10 @@ y 30
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 24
 y 30
+speed 0.500000
+connected 20
 end
 arch marble
 x 24
@@ -5688,22 +5662,20 @@ y 31
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 24
 y 31
+speed 0.500000
+connected 20
 end
 arch marble
 x 24
 y 32
 end
 arch grate_closed_2
-speed 0.500000
-protected 20
-connected 20
 x 24
 y 32
+speed 0.500000
+connected 20
 end
 arch marble
 x 24
@@ -5827,9 +5799,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 25
 y 21
+attacktype 8
 end
 arch marble
 x 25
@@ -5844,10 +5816,9 @@ x 25
 y 23
 end
 arch button_lever
-protected 20
-connected 20
 x 25
 y 23
+connected 20
 end
 arch snake
 name Electric eel
@@ -5858,14 +5829,14 @@ exp 100
 dam 20
 wc 5
 ac 0
+x 25
+y 23
 speed 0.500000
 speed_left -2.500000
 level 8
-immune 8
 attacktype 8
+resist_electricity 100
 unaggressive 1
-x 25
-y 23
 end
 arch marble
 x 25
@@ -6489,11 +6460,10 @@ y 29
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 28
 y 29
+speed 0.500000
+connected 20
 end
 arch marble
 x 28
@@ -6501,11 +6471,10 @@ y 30
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 28
 y 30
+speed 0.500000
+connected 20
 end
 arch marble
 x 28
@@ -6513,22 +6482,20 @@ y 31
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-protected 20
-connected 20
 x 28
 y 31
+speed 0.500000
+connected 20
 end
 arch marble
 x 28
 y 32
 end
 arch grate_closed_2
-speed 0.500000
-protected 20
-connected 20
 x 28
 y 32
+speed 0.500000
+connected 20
 end
 arch marble
 x 28
@@ -6569,9 +6536,9 @@ x 29
 y 2
 end
 arch mover_7
-level 1
 x 29
 y 2
+level 1
 end
 arch flagstone
 x 29
@@ -6614,10 +6581,9 @@ x 29
 y 9
 end
 arch button_lever
-protected 50
-connected 50
 x 29
 y 9
+connected 50
 end
 arch stalker
 name Sylph
@@ -6628,11 +6594,11 @@ exp 2500
 dam 10
 wc 5
 ac -5
+x 29
+y 9
 speed 0.250000
 speed_left -2.140000
 unaggressive 1
-x 29
-y 9
 end
 arch flagstone
 x 29
@@ -6697,9 +6663,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 29
 y 20
+attacktype 8
 end
 arch marble
 x 29
@@ -6732,9 +6698,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 29
 y 25
+attacktype 8
 end
 arch marble
 x 29
@@ -6797,9 +6763,9 @@ y 2
 end
 arch mover_7
 maxhp 1
-level 1
 x 30
 y 2
+level 1
 end
 arch flagstone
 x 30
@@ -6990,10 +6956,10 @@ y 2
 end
 arch mover_7
 maxhp 1
-level 1
-attacktype 1
 x 31
 y 2
+level 1
+attacktype 1
 end
 arch flagstone
 x 31
@@ -7122,9 +7088,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 31
 y 25
+attacktype 8
 end
 arch marble
 x 31
@@ -7145,9 +7111,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 31
 y 29
+attacktype 8
 end
 arch marble
 x 31
@@ -7168,9 +7134,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 31
 y 32
+attacktype 8
 end
 arch marble
 x 31
@@ -7215,10 +7181,9 @@ x 32
 y 3
 end
 arch ggate_closed
-protected 50
-connected 50
 x 32
 y 3
+connected 50
 end
 arch flagstone
 x 32
@@ -7295,9 +7260,9 @@ end
 arch snake
 name eel
 hp 10
-attacktype 8
 x 32
 y 19
+attacktype 8
 end
 arch marble
 x 32
@@ -8139,9 +8104,9 @@ y 23
 end
 arch button_small
 name 321
-connected 321
 x 37
 y 23
+connected 321
 end
 arch blocked
 x 37
@@ -8154,16 +8119,16 @@ end
 arch altar
 slaying ten_kilo
 food 1
-connected 5
 x 37
 y 25
+connected 5
 end
 arch creator
 name 1998
 other_arch ten_kilo
-connected 1998
 x 37
 y 25
+connected 1998
 end
 arch blocked
 x 37
@@ -8177,11 +8142,10 @@ arch teleporter
 name 321
 hp 17
 sp 21
-speed 0.000000
-protected 321
-connected 321
 x 37
 y 27
+speed 0.000000
+connected 321
 end
 arch woman
 msg
@@ -8191,10 +8155,10 @@ the tower. Please come again when this
 map is reset by the server.
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 37
 y 27
+friendly 1
+unaggressive 0
 end
 arch blocked
 x 37
@@ -8210,9 +8174,9 @@ y 30
 end
 arch button_small
 name 8 - fire
-connected 8
 x 37
 y 30
+connected 8
 end
 arch blocked
 x 37
@@ -8325,9 +8289,9 @@ y 29
 end
 arch button_small
 name 6 - water
-connected 6
 x 38
 y 29
+connected 6
 end
 arch flagstone
 x 38
@@ -8335,11 +8299,11 @@ y 30
 end
 arch block_door_open
 name 5
-connected 5
-move_block all
-speed 0.500000
 x 38
 y 30
+speed 0.500000
+connected 5
+move_block all
 end
 arch scroll
 x 38
@@ -8351,9 +8315,9 @@ y 31
 end
 arch button_small
 name 9 - elec
-connected 9
 x 38
 y 31
+connected 9
 end
 arch blocked
 x 38
@@ -8471,9 +8435,9 @@ y 30
 end
 arch button_small
 name 7 - wind
-connected 7
 x 39
 y 30
+connected 7
 end
 arch blocked
 x 39

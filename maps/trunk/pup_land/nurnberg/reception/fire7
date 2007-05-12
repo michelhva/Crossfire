@@ -1,6 +1,8 @@
 arch map
-region nurnberg
 name fire7
+region nurnberg
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -111,6 +113,10 @@ arch woodfloor
 x 1
 y 1
 end
+arch big_dragon
+x 1
+y 1
+end
 arch woodfloor
 x 1
 y 2
@@ -127,6 +133,10 @@ arch woodfloor
 x 1
 y 5
 end
+arch big_dragon
+x 1
+y 5
+end
 arch woodfloor
 x 1
 y 6
@@ -140,6 +150,10 @@ x 1
 y 8
 end
 arch woodfloor
+x 1
+y 9
+end
+arch big_dragon
 x 1
 y 9
 end
@@ -401,6 +415,10 @@ arch woodfloor
 x 4
 y 10
 end
+arch big_dragon
+x 4
+y 10
+end
 arch woodfloor
 x 4
 y 11
@@ -486,7 +504,6 @@ arch grate_closed_2
 x 5
 y 6
 speed 0.500000
-protected 10
 connected 10
 end
 arch woodfloor
@@ -657,7 +674,6 @@ arch grate_closed_2
 x 7
 y 2
 speed 0.500000
-protected 1
 connected 1
 end
 arch woodfloor
@@ -784,7 +800,6 @@ end
 arch button_lever
 x 8
 y 6
-protected 10
 connected 10
 end
 arch woodfloor
@@ -856,7 +871,6 @@ end
 arch button_lever
 x 9
 y 2
-protected 1
 connected 1
 end
 arch woodfloor
@@ -900,6 +914,10 @@ x 9
 y 9
 end
 arch woodfloor
+x 9
+y 10
+end
+arch big_dragon
 x 9
 y 10
 end
@@ -1116,6 +1134,10 @@ x 11
 y 5
 end
 arch woodfloor
+x 11
+y 6
+end
+arch big_dragon
 x 11
 y 6
 end
@@ -1553,28 +1575,4 @@ end
 arch cwall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 1
-y 1
-end
-arch big_dragon
-x 1
-y 5
-end
-arch big_dragon
-x 1
-y 9
-end
-arch big_dragon
-x 4
-y 10
-end
-arch big_dragon
-x 9
-y 10
-end
-arch big_dragon
-x 11
-y 6
 end
