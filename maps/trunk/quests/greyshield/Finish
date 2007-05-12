@@ -2406,7 +2406,6 @@ end
 arch holy_shield
 name Greyshield
 msg
-
 The arts that crafted this shield have long
 been lost. The Grey Master's works are but
 a distant shadow of the might contained in
@@ -2419,7 +2418,6 @@ But looking back at the shield, you
 decide that it certainly doesn't emit any
 light. As a matter of fact, it looks as if
 it would absorb light, were that possible...
-
 endmsg
 Dex 3
 Con 3
@@ -2428,6 +2426,11 @@ Cha -3
 ac 8
 x 20
 y 11
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 material 256
 value 1000
 weight 5000
@@ -2436,7 +2439,6 @@ glow_radius 5
 identified 1
 reflect_missile 1
 reflect_spell 1
-immune 31
 end
 arch teleporter
 hp 7
