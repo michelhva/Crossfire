@@ -1262,7 +1262,8 @@ name Ghost Defender of Gax
 x 9
 y 11
 attacktype 17
-immune 17
+resist_physical 100
+resist_cold 100
 end
 arch pstone_1
 x 9
@@ -1444,7 +1445,8 @@ name Ghost Defender of Gax
 x 10
 y 21
 attacktype 17
-immune 17
+resist_physical 100
+resist_cold 100
 end
 arch small_stones
 x 10
@@ -1807,7 +1809,8 @@ name Ghost Defender of Gax
 x 13
 y 8
 attacktype 17
-immune 17
+resist_physical 100
+resist_cold 100
 end
 arch small_stones
 x 13
@@ -2385,7 +2388,8 @@ name Ghost Defender of Gax
 x 17
 y 12
 attacktype 17
-immune 17
+resist_physical 100
+resist_cold 100
 end
 arch large_stones
 x 17
@@ -2666,7 +2670,8 @@ name Ghost Defender of Gax
 x 19
 y 16
 attacktype 17
-immune 17
+resist_physical 100
+resist_cold 100
 end
 arch cobblestones2
 x 19
