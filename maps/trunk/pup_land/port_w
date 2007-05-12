@@ -1,13 +1,13 @@
 arch map
-region pupland
 name port_w
+region pupland
+width 32
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:14:36 1996
 endmsg
-width 32
-height 20
 end
 arch sea
 end
@@ -1468,10 +1468,9 @@ msg
 @match siegfried
 Click.
 endmsg
-protected 1
-connected 1
 x 10
 y 9
+connected 1
 end
 arch pstone_1
 x 10
@@ -1495,12 +1494,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
+x 10
+y 10
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
-x 10
-y 10
 end
 arch dungeon_magic
 x 10
@@ -1657,10 +1656,9 @@ x 11
 y 9
 end
 arch igateTrg2
-protected 1
-connected 1
 x 11
 y 9
+connected 1
 end
 arch grass
 x 11
@@ -1835,12 +1833,12 @@ Go away!
 endmsg
 hp 180
 maxhp 180
+x 12
+y 8
 speed_left -1.750000
 pick_up 0
 friendly 1
 unaggressive 0
-x 12
-y 8
 end
 arch dungeon_magic
 x 12
@@ -1851,10 +1849,9 @@ msg
 @match siegfried
 Click.
 endmsg
-protected 1
+x 12
+y 9
 connected 1
-x 12
-y 9
 end
 arch pstone_1
 x 12
@@ -3210,7 +3207,14 @@ x 23
 y 12
 end
 arch sea
+x 23
+y 13
 move_block 0
+end
+arch longship
+slaying port_e_house
+hp 6
+sp 6
 x 23
 y 13
 end
@@ -3302,9 +3306,9 @@ x 24
 y 12
 end
 arch sea
-move_block 0
 x 24
 y 13
+move_block 0
 end
 arch sea
 x 24
@@ -3914,11 +3918,4 @@ end
 arch sea
 x 31
 y 19
-end
-arch longship
-slaying port_e_house
-hp 6
-sp 6
-x 23
-y 13
 end

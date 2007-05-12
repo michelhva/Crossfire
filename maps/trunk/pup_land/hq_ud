@@ -1,12 +1,13 @@
 arch map
-region pupland
 name hq_ud
+region pupland
+width 16
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb 15 01:00:24 1996
 endmsg
-y 25
 end
 arch marble
 end
@@ -152,9 +153,15 @@ maxhp 100
 ac 0
 x 1
 y 2
-immune 254
-alive 1
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
 move_block 0
+alive 1
 tear_down 1
 pass_thru 0
 end
@@ -813,9 +820,15 @@ maxhp 100
 ac 0
 x 5
 y 2
-immune 254
-alive 1
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
 move_block 0
+alive 1
 tear_down 1
 pass_thru 0
 end
@@ -1027,8 +1040,8 @@ hp 100
 x 6
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch marble
@@ -1483,9 +1496,15 @@ maxhp 100
 ac 0
 x 9
 y 2
-immune 254
-alive 1
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
 move_block 0
+alive 1
 tear_down 1
 pass_thru 0
 end
