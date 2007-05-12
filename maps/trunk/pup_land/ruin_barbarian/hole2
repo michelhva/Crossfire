@@ -1,15 +1,15 @@
 arch map
-region pupland
 name hole2
+swap_time 10
+difficulty 8
+region pupland
+width 32
+height 42
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 27 20:40:37 1997
 endmsg
-x 32
-y 42
-level 8
-value 10
 end
 arch dun8
 end
@@ -270,8 +270,8 @@ hp 0
 exp 0
 ac 0
 x 1
-alive 0
 move_block 0
+alive 0
 blocksview 1
 pass_thru 0
 end
@@ -289,8 +289,8 @@ exp 0
 ac 0
 x 1
 y 2
-alive 0
 move_block 0
+alive 0
 blocksview 1
 pass_thru 0
 end
@@ -10704,8 +10704,8 @@ end
 arch magic_mouth
 msg
 Statue says:
-  "One who robs the cristal will
-   be cursed."
+"One who robs the cristal will
+be cursed."
 endmsg
 x 25
 y 2
@@ -11154,7 +11154,6 @@ end
 arch button_small
 x 26
 y 1
-protected 10
 weight 3158
 invisible 1
 connected 10
@@ -13138,7 +13137,6 @@ arch igate_closed_1
 x 31
 y 11
 speed 0.500000
-protected 10
 connected 10
 end
 arch boulder
@@ -13148,6 +13146,5 @@ end
 arch button_plate
 x 31
 y 12
-protected 11
 connected 11
 end
