@@ -226,8 +226,8 @@ name a linen bag of incredible holding
 Str 85
 x 2
 y 3
+resist_fire 100
 value 10000
-immune 4
 end
 arch flagstone
 x 2
@@ -546,7 +546,7 @@ arch high_boots
 name jack boots of surefootedness
 x 5
 y 5
-immune 32
+resist_confusion 100
 end
 arch flagstone
 x 5
@@ -799,8 +799,8 @@ speed 0.900000
 attack_movement 7
 level 40
 attacktype 1048576
+resist_godpower 100
 see_invisible 1
-immune 1048576
 arch spell_hellfire
 end
 arch spell_summon_pet_monster
@@ -924,8 +924,8 @@ speed 0.900000
 attack_movement 7
 level 50
 attacktype 1048576
+resist_godpower 100
 see_invisible 1
-immune 1048576
 arch spell_sm_lightning
 end
 end
@@ -1055,8 +1055,8 @@ speed 0.900000
 attack_movement 7
 level 70
 attacktype 1048576
+resist_godpower 100
 see_invisible 1
-immune 1048576
 arch spell_paralyze
 end
 arch abil_fear
@@ -1759,10 +1759,10 @@ endmsg
 Dex -15
 x 19
 y 2
+resist_magic -100
 material 256
 stealth 1
 make_invisible 1
-vulnerable 2
 end
 arch cobblestones
 x 19

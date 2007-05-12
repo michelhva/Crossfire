@@ -1,12 +1,12 @@
 arch map
 name necro_ruin1
+width 25
+height 30
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Mon Jan  2 00:59:54 1995
 endmsg
-x 25
-y 30
 end
 arch dungeon_floor
 end
@@ -1195,6 +1195,14 @@ arch grass_only
 x 8
 y 13
 end
+arch baslic
+name The black basilisk
+x 8
+y 13
+can_cast_spell 1
+arch spell_paralyze
+end
+end
 arch grass_only
 x 8
 y 14
@@ -1359,8 +1367,8 @@ arch statue
 name statue of regal man
 x 9
 y 9
-can_roll 1
 move_type 1
+can_roll 1
 end
 arch cobblestones2
 x 9
@@ -3621,53 +3629,4 @@ end
 arch blocked
 x 24
 y 25
-end
-arch baslic
-name The black basilisk
-x 8
-y 13
-vulnerable 0
-can_cast_spell 1
-arch spell_paralyze
-end
-end
-More
-arch baslic_2
-name The black basilisk
-hp 1200
-x 9
-y 13
-can_cast_spell 1
-end
-More
-arch baslic_3
-name The black basilisk
-hp 1200
-x 10
-y 13
-can_cast_spell 1
-end
-More
-arch baslic_4
-name The black basilisk
-hp 1200
-x 8
-y 14
-can_cast_spell 1
-end
-More
-arch baslic_5
-name The black basilisk
-hp 1200
-x 9
-y 14
-can_cast_spell 1
-end
-More
-arch baslic_6
-name The black basilisk
-hp 1200
-x 10
-y 14
-can_cast_spell 1
 end

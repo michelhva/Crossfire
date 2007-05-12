@@ -1331,10 +1331,9 @@ y 3
 speed -0.300000
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -1437,13 +1436,12 @@ exp 50000
 dam 50
 x 8
 y 16
-speed -0.300000
+speed -0.3
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -2737,6 +2735,20 @@ end
 arch flagstone
 x 15
 y 9
+end
+arch lamia
+name Tarthia the black lamia
+msg
+@match *
+I'll eat your soul!
+endmsg
+x 15
+y 9
+carrying 100
+arch key2
+name a key
+slaying eye_door
+end
 end
 arch flagstone
 x 15
@@ -4100,10 +4112,9 @@ y 2
 speed -0.300000
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -4193,10 +4204,9 @@ y 17
 speed -0.300000
 level 20
 attacktype 16
+resist_fire 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -5085,6 +5095,26 @@ arch dungeon_floor
 x 28
 y 8
 end
+arch cobra
+name giant pit viper
+hp 3000
+exp 5000
+ac -5
+x 28
+y 8
+speed -0.300000
+level 15
+can_use_bow 1
+can_use_weapon 1
+has_ready_bow 1
+can_see_in_dark 1
+arch ability_spit_acid
+applied 1
+end
+arch acid_spit
+nrof 100
+end
+end
 arch dungeon_floor
 x 28
 y 9
@@ -5612,38 +5642,4 @@ dam 90
 x 31
 y 27
 speed -0.050000
-end
-arch lamia
-name Tarthia the black lamia
-msg
-@match *
-I'll eat your soul!
-endmsg
-x 15
-y 9
-carrying 100
-arch key2
-name a key
-slaying eye_door
-end
-end
-arch cobra
-name giant pit viper
-hp 3000
-exp 5000
-ac -5
-x 28
-y 8
-speed -0.300000
-level 15
-can_use_bow 1
-can_use_weapon 1
-has_ready_bow 1
-can_see_in_dark 1
-arch ability_spit_acid
-applied 1
-end
-arch acid_spit
-nrof 100
-end
 end
