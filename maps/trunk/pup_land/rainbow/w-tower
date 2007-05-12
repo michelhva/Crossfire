@@ -968,7 +968,6 @@ name 11
 x 7
 y 18
 connected 11
-protected 11
 end
 arch woodfloor
 x 7
@@ -1229,7 +1228,7 @@ msg
 You have the talent to be a good
 treasure hunter. Find me. Then I'll
 tell you a secret.
-                            T.K.
+T.K.
 endmsg
 x 9
 y 15
@@ -1237,9 +1236,9 @@ end
 arch statue
 x 9
 y 15
+map_layer item
 move_type 1
 can_roll 1
-map_layer item
 end
 arch woodfloor
 x 9
@@ -1811,7 +1810,6 @@ name 10
 x 14
 y 11
 connected 10
-protected 10
 end
 arch woodfloor
 x 14
@@ -2280,7 +2278,6 @@ x 19
 y 1
 speed 0.000000
 connected 10
-protected 10
 end
 arch sage
 name T.K.
@@ -2322,7 +2319,6 @@ endmsg
 x 19
 y 3
 connected 12
-protected 12
 end
 arch button_small
 name 12
@@ -2330,7 +2326,6 @@ x 19
 y 3
 weight 1000
 connected 12
-protected 12
 end
 arch creator
 name 11
@@ -2338,7 +2333,6 @@ other_arch boulder
 x 19
 y 3
 connected 11
-protected 11
 end
 arch blocked
 x 19
