@@ -839,7 +839,6 @@ arch button_lever
 x 6
 y 13
 connected 3
-protected 3
 end
 arch dirtfloor
 x 6
@@ -963,7 +962,6 @@ arch grate_closed_2
 x 7
 y 10
 connected 3
-protected 3
 end
 arch dirtfloor
 x 7
@@ -973,7 +971,6 @@ arch grate_closed_2
 x 7
 y 11
 connected 3
-protected 3
 end
 arch dirtfloor
 x 7
@@ -1097,7 +1094,6 @@ arch button_lever
 x 8
 y 6
 connected 2
-protected 2
 end
 arch dirtfloor
 x 8
@@ -1115,7 +1111,6 @@ arch button_lever
 x 8
 y 8
 connected 2
-protected 2
 end
 arch generate_ogre
 x 8
@@ -1161,7 +1156,6 @@ arch button_lever
 x 8
 y 13
 connected 3
-protected 3
 end
 arch ogre
 x 8
@@ -1399,7 +1393,6 @@ arch grate_closed_1
 x 10
 y 7
 connected 2
-protected 2
 end
 arch dirtfloor
 x 10
@@ -1457,7 +1450,6 @@ arch grate_closed_1
 x 10
 y 14
 connected 96
-protected 96
 end
 arch dirtfloor
 x 10
@@ -1536,7 +1528,6 @@ arch grate_closed_1
 x 11
 y 7
 connected 2
-protected 2
 end
 arch dirtfloor
 x 11
@@ -1602,7 +1593,6 @@ arch grate_closed_1
 x 11
 y 14
 connected 96
-protected 96
 end
 arch dirtfloor
 x 11
@@ -1839,7 +1829,6 @@ arch button_lever
 x 13
 y 8
 connected 1
-protected 1
 end
 arch generate_ogre
 x 13
@@ -1885,7 +1874,6 @@ arch button_lever
 x 13
 y 13
 connected 96
-protected 96
 end
 arch ogre
 x 13
@@ -1907,7 +1895,6 @@ arch button_lever
 x 13
 y 15
 connected 96
-protected 96
 end
 arch dirtfloor
 x 13
@@ -2011,7 +1998,6 @@ arch grate_closed_2
 x 14
 y 10
 connected 1
-protected 1
 end
 arch dirtfloor
 x 14
@@ -2021,7 +2007,6 @@ arch grate_closed_2
 x 14
 y 11
 connected 1
-protected 1
 end
 arch dirtfloor
 x 14
@@ -2153,7 +2138,6 @@ arch button_lever
 x 15
 y 8
 connected 1
-protected 1
 end
 arch dirtfloor
 x 15
@@ -3144,7 +3128,6 @@ name 20 - luck
 x 23
 y 3
 connected 20
-protected 20
 end
 arch blocked
 x 23
@@ -3157,7 +3140,6 @@ sp 8
 x 23
 y 5
 connected 20
-protected 20
 end
 arch ogre
 name ogre with heaps of gold
@@ -3182,7 +3164,6 @@ sp 3
 x 23
 y 7
 connected 20
-protected 20
 end
 arch pit_closed
 name 20
@@ -3191,7 +3172,6 @@ sp 13
 x 23
 y 8
 connected 20
-protected 20
 end
 arch pit_closed
 name 20
@@ -3200,7 +3180,6 @@ sp 17
 x 23
 y 9
 connected 20
-protected 20
 end
 arch blocked
 x 23

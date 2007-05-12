@@ -1148,8 +1148,8 @@ arch cauldron
 x 8
 y 2
 material 0
-no_pick 1
 move_block all
+no_pick 1
 is_cauldron 0
 end
 arch woodfloor
@@ -1194,8 +1194,8 @@ y 7
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch woodfloor
@@ -1754,8 +1754,8 @@ y 4
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch woodfloor
@@ -2128,8 +2128,8 @@ y 19
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -2252,8 +2252,8 @@ y 14
 level 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch woodfloor
@@ -2864,8 +2864,8 @@ x 19
 y 8
 level 15
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch altar
@@ -2875,7 +2875,6 @@ food 1
 x 19
 y 9
 connected 1
-protected 1
 end
 arch magic_mouth
 name 1
@@ -2889,7 +2888,6 @@ y 9
 connected 1
 walk_on 0
 fly_on 0
-protected 1
 end
 arch woodfloor
 x 19
@@ -3061,7 +3059,6 @@ x 20
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 20
@@ -3211,7 +3208,6 @@ x 21
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 21
