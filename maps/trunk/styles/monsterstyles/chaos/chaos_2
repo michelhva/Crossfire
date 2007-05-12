@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 20:52:22 1998
 endmsg
-x 6
-y 6
 end
 arch living_chaos
 name lesser living chaos
@@ -18,11 +19,14 @@ exp 3500
 dam 10
 wc 0
 ac 0
-speed 0.200000
+speed 0.2
 speed_left -3.340000
 level 6
-immune 0
-protected 411136
+resist_ghosthit 30
+resist_poison 30
+resist_fear 30
+resist_death 30
+resist_chaos 30
 end
 arch living_chaos
 name lesser living chaos
@@ -36,11 +40,14 @@ dam 10
 wc 0
 ac 0
 y 1
-speed 0.200000
+speed 0.2
 speed_left -3.340000
 level 6
-immune 0
-protected 411136
+resist_ghosthit 30
+resist_poison 30
+resist_fear 30
+resist_death 30
+resist_chaos 30
 end
 arch living_chaos
 name lesser living chaos
@@ -54,11 +61,14 @@ dam 10
 wc 0
 ac 0
 y 2
-speed 0.200000
+speed 0.2
 speed_left -3.340000
 level 6
-immune 0
-protected 411136
+resist_ghosthit 30
+resist_poison 30
+resist_fear 30
+resist_death 30
+resist_chaos 30
 end
 arch lokanth
 name lesser lokanth
