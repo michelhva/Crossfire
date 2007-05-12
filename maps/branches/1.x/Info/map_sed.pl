@@ -50,7 +50,7 @@ sub updatemap {
     $last = "";
     $parent = "";
     
-    # Note that $/ is the input record seperator.  By changing
+    # Note that $/ is the input record separator.  By changing
     # this to \nend\n, it means that when we read from the file,
     # we basically read an entire arch at the same time.  Note that
     # given this, $ in regexps matches this value below, and not

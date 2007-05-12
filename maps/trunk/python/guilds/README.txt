@@ -78,7 +78,7 @@ Merged in map updates and changes, which include:
   * mainfloor, Toolshed Token (found in Guild_HQ)
     * Note: the first gate opens for everyone, it's the second gate that requires the Toolshed token to be turned in for it to open
     * mis-matched slaying field on the altar (slaying Toolshed_token) and the name of the Token (Toolshed Token)- now fixed
-      * Fixed the problem where othe rnearby pay altars would disappear when the toolshed was "purchased"
+      * Fixed the problem where other nearby pay altars would disappear when the toolshed was "purchased"
   * mainfloor, Garden Token (found in Guild_HQ)
     * mis-matched slaying field on the altar (slaying garden_token) and the name of the Token (Garden Token)
   * mainfloor, drop 5 tissue paper for a portal to the Pupland Terminal - requires bolt_silk instead of tissue paper
@@ -113,7 +113,7 @@ Update 05-12-04
 
 Uploaded guild package to CVS.
 Changes - the cauldrons and the charging room I spent a while agonizing over. They were natural guild enhancements but much too much value for any reasonable expense to buy them. Then I thought that they should be pay access but at a greatly reduced rate. SO when you buy a forge or whatever for your guild it is available on a perplayer daily rate of 50pl (compared to 200pl for access in Scorn). This is I think a good comprimise. The charging room should work the same way but be more expensive (?). Changing this in the maps took me some time so I didn't get a chance to test all the connects yet however. I still wanted to get the maps and scripts in to CVS so they could be versioned.
-The other change was to the storage house. I basically removed the seperate storage house and added member 'lounges' for all the different guild member ranks above the first (Initiate) - Ryo's building system will get more use this way and players will have another reward for advancement. - a custom lounge. There are no links to the lounges from the main guild maps yet.
+The other change was to the storage house. I basically removed the separate storage house and added member 'lounges' for all the different guild member ranks above the first (Initiate) - Ryo's building system will get more use this way and players will have another reward for advancement. - a custom lounge. There are no links to the lounges from the main guild maps yet.
 
 Update 04-11-30
 

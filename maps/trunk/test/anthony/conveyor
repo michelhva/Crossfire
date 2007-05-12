@@ -21,7 +21,7 @@ side of the item, for `prettyness'.
 The conveyor can be used to deliver one
 item at a time to the requestor, or to
 allow the user to pick an item to be
-retrieved when a seperate trigger is
+retrieved when a separate trigger is
 sent.
 endmsg
 x 1
@@ -502,7 +502,7 @@ name Direct Linkage to Cascade
 msg
 This tries to link the conveyor directly
 to the gates in the cascade.
-Unfortunately this is imposible UNLESS
+Unfortunately this is impossible UNLESS
 you allow the `exit' gate to be
 initially down, or you use a 5 unit
 cascade.
@@ -545,7 +545,7 @@ name State Controler
 msg
 In this method, the gates in the
 conveyor is linked to cascade using
-completely seperate set buttons to those
+completely separate set buttons to those
 used to make the cascade work.  That is
 the cascade only provides a `state'
 control for the conveyor belt.
@@ -606,7 +606,7 @@ end
 arch sign
 name Raffles Cascade Conveyor
 msg
-This conveyor is controled by a `down'
+This conveyor is controlled by a `down'
 or raffles cascade.  It creates a
 `slower' conveyor using a longer cascade
 loop. However the longer loop can be set
@@ -616,7 +616,7 @@ EG: To create niffty item displays!
 This cascade type however is faster, and
 as such you must provide at least 2
 states for each and every roll transfer
-the controled gadget, to ensure item is
+the controlled gadget, to ensure item is
 actually `rolled'.
 --
   State  Gates:  36  37  38

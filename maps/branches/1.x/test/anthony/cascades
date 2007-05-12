@@ -25,7 +25,7 @@ name Teleport Cascades
 msg
 Teleport cascades 'port the boulder
 from one position to another. In fact
-other than to initialise the cascade
+other than to initialize the cascade
 fences are NOT required, and the
 teleports to not have to be in any
 order or even near each other.
@@ -51,7 +51,7 @@ See the example in `special_objects' map
 for the other direction.
 --
 A couple of solutions to this `update
-wave' is availble none of them very nice.
+wave' is available none of them very nice.
 The solution I am using is to set the
 initial ``speed_left'' to .5 for every
 second teleport in the cascade, to
@@ -203,7 +203,7 @@ squares.
 -- 
 In fact if the trigger gate time period
 can be set to an exact time period, it
-would be posible to run a whole cascade
+would be possible to run a whole cascade
 with just the initial `trigger' signal!
 And have total control of the time the
 boulder sits in each location as well.

@@ -5949,7 +5949,7 @@ arch magic_mouth
 msg
 To find Eureca,
 the spy of regular army ... to the
-underground of headquater of
+underground of headquarter of
 liberation army
 endmsg
 x 23
@@ -8885,9 +8885,9 @@ end
 arch marker
 msg
 Congratulations, you passed the test!
-You are now a scolar of Kurte.
+You are now a scholar of Kurte.
 endmsg
-slaying scolar of kurte
+slaying scholar of kurte
 hp 1
 food 0
 speed 1.000000
@@ -9278,9 +9278,9 @@ end
 arch marker
 msg
 Congratulations, you passed the test!
-You are now a scolar of Kurte.
+You are now a scholar of Kurte.
 endmsg
-slaying scolar of kurte
+slaying scholar of kurte
 hp 1
 food 0
 speed 1.000000
@@ -9481,12 +9481,12 @@ Kurte is the beginning and the end.
 He is part of the land, and the
 land is *him*. The real question is:
 Who are you?
-@match scolar
-Yes, you are a now scolar of kurte.
+@match scholar
+Yes, you are a now scholar of kurte.
 <clap>, <clap>, <clap>...
 @match *
 For being so honest <chuckle>.. you
-are a scolar of Kurte. You should
+are a scholar of Kurte. You should
 buy an apartment and live in Nurnberg
 now!
 endmsg
@@ -9501,7 +9501,7 @@ x 37
 y 30
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 resist_physical 30
 resist_electricity 30
 resist_acid 30
