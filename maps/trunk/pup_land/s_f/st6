@@ -1,13 +1,13 @@
 arch map
-region pupland
 name st6
+region pupland
+width 21
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 17:23:03 1996
 endmsg
-x 21
-y 17
 end
 arch blocked
 end
@@ -136,6 +136,16 @@ end
 arch flagstone
 x 1
 y 6
+end
+arch jessyb
+name A
+x 1
+y 6
+carrying 100
+arch key2
+name Key of A
+slaying 9A
+end
 end
 arch flagstone
 x 1
@@ -629,7 +639,6 @@ end
 arch grate_closed_2
 x 5
 y 6
-protected 3
 connected 3
 end
 arch flagstone
@@ -639,7 +648,6 @@ end
 arch grate_closed_2
 x 5
 y 7
-protected 3
 connected 3
 end
 arch flagstone
@@ -649,7 +657,6 @@ end
 arch grate_closed_2
 x 5
 y 8
-protected 3
 connected 3
 end
 arch flagstone
@@ -659,7 +666,6 @@ end
 arch grate_closed_2
 x 5
 y 9
-protected 3
 connected 3
 end
 arch flagstone
@@ -791,7 +797,6 @@ end
 arch grate_closed_1
 x 6
 y 10
-protected 2
 connected 2
 end
 arch flagstone
@@ -915,7 +920,6 @@ end
 arch grate_closed_1
 x 7
 y 10
-protected 2
 connected 2
 end
 arch flagstone
@@ -1041,7 +1045,6 @@ end
 arch button_handle
 x 8
 y 7
-protected 1
 connected 1
 end
 arch flagstone
@@ -1069,7 +1072,6 @@ end
 arch grate_closed_1
 x 8
 y 10
-protected 2
 connected 2
 end
 arch flagstone
@@ -1194,7 +1196,6 @@ end
 arch grate_closed_1
 x 9
 y 10
-protected 2
 connected 2
 end
 arch flagstone
@@ -1318,7 +1319,6 @@ end
 arch grate_closed_1
 x 10
 y 10
-protected 2
 connected 2
 end
 arch flagstone
@@ -1430,7 +1430,6 @@ end
 arch grate_closed_2
 x 11
 y 6
-protected 4
 connected 4
 end
 arch flagstone
@@ -1440,7 +1439,6 @@ end
 arch grate_closed_2
 x 11
 y 7
-protected 4
 connected 4
 end
 arch flagstone
@@ -1450,7 +1448,6 @@ end
 arch grate_closed_2
 x 11
 y 8
-protected 4
 connected 4
 end
 arch flagstone
@@ -1460,7 +1457,6 @@ end
 arch grate_closed_2
 x 11
 y 9
-protected 4
 connected 4
 end
 arch flagstone
@@ -1576,6 +1572,16 @@ end
 arch flagstone
 x 12
 y 6
+end
+arch jessyb
+name UM
+x 12
+y 6
+carrying 100
+arch key2
+name Key of UM
+slaying 9UM
+end
 end
 arch flagstone
 x 12
@@ -2261,7 +2267,6 @@ end
 arch button_small
 x 18
 y 9
-protected 3
 connected 3
 end
 arch blocked
@@ -2312,7 +2317,6 @@ hp 19
 sp 9
 x 19
 y 4
-protected 1
 connected 1
 end
 arch key2
@@ -2334,19 +2338,16 @@ end
 arch button_small
 x 19
 y 8
-protected 2
 connected 2
 end
 arch button_small
 x 19
 y 9
-protected 5
 connected 5
 end
 arch button_small
 x 19
 y 10
-protected 4
 connected 4
 end
 arch blocked
@@ -2366,7 +2367,6 @@ hp 8
 sp 3
 x 19
 y 14
-protected 5
 connected 5
 end
 arch note
@@ -2451,24 +2451,4 @@ end
 arch blocked
 x 20
 y 16
-end
-arch jessyb
-name A
-x 1
-y 6
-carrying 100
-arch key2
-name Key of A
-slaying 9A
-end
-end
-arch jessyb
-name UM
-x 12
-y 6
-carrying 100
-arch key2
-name Key of UM
-slaying 9UM
-end
 end
