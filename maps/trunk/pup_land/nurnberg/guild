@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name guild
+region nurnberg
+width 24
+height 22
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb 15 23:24:11 1996
 endmsg
-width 24
-height 22
 end
 arch grass
 end
@@ -307,10 +307,10 @@ y 6
 end
 arch bookshelf
 name famous books
-carrying 4000
-no_pick 1
 x 2
 y 6
+carrying 4000
+no_pick 1
 arch book_clasp
 name the Siegfried-Saga
 msg
@@ -486,7 +486,6 @@ y 13
 end
 arch elf
 name Regular Army
-face elf.131
 msg
 @match bobbie
 Bobbie, that is the guy over there.
@@ -498,14 +497,15 @@ I've heard there is an agitating
 point (Agito) of Resistance in this
 city. What a shame!
 endmsg
-type 0
+face elf.131
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 3
 y 13
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch flagstone
 x 3
@@ -699,11 +699,10 @@ x 5
 y 2
 end
 arch gate_closed_2
-speed 0.500000
-protected 4
-connected 4
 x 5
 y 2
+speed 0.500000
+connected 4
 end
 arch flagstone
 x 5
@@ -734,18 +733,18 @@ x 5
 y 6
 end
 arch door_look_2
-type 0
 hp 0
 exp 0
 ac 0
-level 0
-material 0
-randomitems none
-alive 0
-move_block 0
-pass_thru 0
 x 5
 y 6
+level 0
+type 0
+material 0
+randomitems none
+move_block 0
+alive 0
+pass_thru 0
 end
 arch flagstone
 x 5
@@ -799,14 +798,14 @@ Bobbie, that is the guy over there.
 @match *
 I'm too busy to answer your queries.
 endmsg
-type 0
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 5
 y 13
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch flagstone
 x 5
@@ -972,16 +971,16 @@ y 1
 end
 arch man
 name servant
-face man.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.131
 hp 180
-friendly 1
-unaggressive 0
 x 7
 y 1
+friendly 1
+unaggressive 0
 end
 arch flagstone
 x 7
@@ -1133,9 +1132,9 @@ x 8
 y 10
 end
 arch bench_1_1
-move_block all
 x 8
 y 10
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -1146,9 +1145,9 @@ x 8
 y 11
 end
 arch bench_2_2_1
-move_block all
 x 8
 y 11
+move_block all
 end
 arch flagstone
 x 8
@@ -1287,9 +1286,9 @@ x 9
 y 11
 end
 arch bench_2_1_2
-move_block all
 x 9
 y 11
+move_block all
 end
 arch flagstone
 x 9
@@ -1324,18 +1323,18 @@ x 9
 y 18
 end
 arch door_look_1
-type 0
 hp 0
 exp 0
 ac 0
-level 0
-material 0
-randomitems none
-alive 0
-move_block 0
-pass_thru 0
 x 9
 y 18
+level 0
+type 0
+material 0
+randomitems none
+move_block 0
+alive 0
+pass_thru 0
 end
 arch cobblestones
 x 9
@@ -1363,14 +1362,14 @@ arch wwall_2_1_2
 x 10
 end
 arch flagstone
-type 41
 hp 23
 sp 6
-activate_on_push 1
-activate_on_release 1
-connected 4
 x 10
 y 1
+type 41
+connected 4
+activate_on_push 1
+activate_on_release 1
 end
 arch guildmaster
 name Hartwig, the guildmaster
@@ -1392,14 +1391,34 @@ hp 5000
 maxhp 5000
 sp 0
 maxsp 0
-immune 8388607
+x 10
+y 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-x 10
-y 1
 end
 arch flagstone
 x 10
@@ -1467,7 +1486,6 @@ y 10
 end
 arch elf
 name Regular Army
-face elf.151
 msg
 @match reception|office
 Didn't you notice the four towers in
@@ -1483,14 +1501,15 @@ You are too weak anyways.
 We are fighting for peace and order.
 Do you want to join us?
 endmsg
-type 0
+face elf.151
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 10
 y 10
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch dungeon_magic
 x 10
@@ -1501,36 +1520,33 @@ x 10
 y 11
 end
 arch bench_2_1_2
-move_block all
 x 10
 y 11
+move_block all
 end
 arch altar
 name 3 - elec
 slaying horn of high voltage
 food 1
-protected 3
-connected 3
 x 10
 y 12
+connected 3
 end
 arch altar
 name 2 - water
 slaying sapphire of cold
 food 1
-protected 2
-connected 2
 x 10
 y 12
+connected 2
 end
 arch altar
 name 1 - fire
 slaying ruby of fire
 food 1
-protected 1
-connected 1
 x 10
 y 12
+connected 1
 end
 arch flagstone
 x 10
@@ -1538,10 +1554,10 @@ y 12
 end
 arch table_3
 name desk
-material 0
-no_pick 1
 x 10
 y 12
+material 0
+no_pick 1
 end
 arch flagstone
 x 10
@@ -1572,18 +1588,18 @@ x 10
 y 18
 end
 arch door_look_1
-type 0
 hp 0
 exp 0
 ac 0
-level 0
-material 0
-randomitems none
-alive 0
-move_block 0
-pass_thru 0
 x 10
 y 18
+level 0
+type 0
+material 0
+randomitems none
+move_block 0
+alive 0
+pass_thru 0
 end
 arch cobblestones
 x 10
@@ -1683,9 +1699,9 @@ x 11
 y 11
 end
 arch bench_2_1_2
-move_block all
 x 11
 y 11
+move_block all
 end
 arch flagstone
 x 11
@@ -1720,18 +1736,18 @@ x 11
 y 18
 end
 arch door_look_1
-type 0
 hp 0
 exp 0
 ac 0
-level 0
-material 0
-randomitems none
-alive 0
-move_block 0
-pass_thru 0
 x 11
 y 18
+level 0
+type 0
+material 0
+randomitems none
+move_block 0
+alive 0
+pass_thru 0
 end
 arch cobblestones
 x 11
@@ -1807,9 +1823,9 @@ x 12
 y 10
 end
 arch bench_1_1
-move_block all
 x 12
 y 10
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -1820,9 +1836,9 @@ x 12
 y 11
 end
 arch bench_2_2_4
-move_block all
 x 12
 y 11
+move_block all
 end
 arch flagstone
 x 12
@@ -2132,9 +2148,9 @@ x 15
 y 2
 end
 arch gate_closed_2
-speed 0.500000
 x 15
 y 2
+speed 0.500000
 end
 arch flagstone
 x 15
@@ -2169,18 +2185,18 @@ x 15
 y 6
 end
 arch door_look_2
-type 0
 hp 0
 exp 0
 ac 0
-level 0
-material 0
-randomitems none
-alive 0
-move_block 0
-pass_thru 0
 x 15
 y 6
+level 0
+type 0
+material 0
+randomitems none
+move_block 0
+alive 0
+pass_thru 0
 end
 arch flagstone
 x 15
@@ -2392,7 +2408,6 @@ y 16
 end
 arch elf
 name Regular Army
-face elf.111
 msg
 @match head
 The HQ of Resistance is located north-
@@ -2410,14 +2425,15 @@ pretending to be a soldier.
 @match *
 Do you know Calvin?
 endmsg
-type 0
+face elf.111
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 16
 y 16
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch flagstone
 x 16
@@ -2538,14 +2554,14 @@ saving innocent lives.
 Our army has entered the western wing
 of Eureca's castle.
 endmsg
-type 0
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 17
 y 11
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch flagstone
 x 17
@@ -2808,7 +2824,6 @@ y 7
 end
 arch elf
 name Regular Army
-face elf.151
 msg
 @match yes
 But I don't know how to open the
@@ -2823,14 +2838,15 @@ Can you see it?
 @match *
 Go away!
 endmsg
-type 0
+face elf.151
 hp 100
-randomitems none
-monster 1
-move_type walk
-friendly 1
 x 19
 y 7
+type 0
+randomitems none
+move_type walk
+monster 1
+friendly 1
 end
 arch flagstone
 x 19
@@ -3253,34 +3269,30 @@ arch altar
 name 4
 slaying small_shield
 food 1
-protected 4
-connected 4
 x 23
 y 1
+connected 4
 end
 arch creator
 name 3
 other_arch small_shield
-protected 3
-connected 3
 x 23
 y 1
+connected 3
 end
 arch creator
 name 2
 other_arch small_shield
-protected 2
-connected 2
 x 23
 y 1
+connected 2
 end
 arch creator
 name 1
 other_arch small_shield
-protected 1
-connected 1
 x 23
 y 1
+connected 1
 end
 arch magic_mouth
 name 3 - elec
@@ -3290,10 +3302,9 @@ Well done, you made it through the
 tower of electricity! Speak to the
 guildmaster now.
 endmsg
-protected 3
-connected 3
 x 23
 y 2
+connected 3
 end
 arch magic_mouth
 name 2 - water
@@ -3303,10 +3314,9 @@ Well done, you made it through the
 tower of water! Speak to the guildmaster
 now.
 endmsg
-protected 2
-connected 2
 x 23
 y 2
+connected 2
 end
 arch magic_mouth
 name 1 - fire
@@ -3316,10 +3326,9 @@ Well done, you made it through the
 tower of fire! Speak to the guildmaster
 now.
 endmsg
-protected 1
-connected 1
 x 23
 y 2
+connected 1
 end
 arch blocked
 x 23
@@ -3329,11 +3338,10 @@ arch teleporter
 name 5
 hp 10
 sp 1
-speed 0.000000
-protected 5
-connected 5
 x 23
 y 4
+speed 0.000000
+connected 5
 end
 arch guildmaster
 name Hartwig, the guildmaster
@@ -3349,14 +3357,34 @@ barrier station.
 endmsg
 sp 0
 maxsp 0
-immune 8388607
+x 23
+y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-x 23
-y 4
 end
 arch blocked
 x 23
@@ -3364,11 +3392,10 @@ y 5
 end
 arch button_small
 name 5
-protected 5
-weight 1000
-connected 5
 x 23
 y 6
+weight 1000
+connected 5
 end
 arch blocked
 x 23
@@ -3378,23 +3405,22 @@ arch teleporter
 name 4
 hp 10
 sp 3
-speed 0.000000
-protected 4
-connected 4
 x 23
 y 8
+speed 0.000000
+connected 4
 end
 arch card
 name Passport
+slaying regular_army
 msg
 This passport identifies you as
 member of the Regular Army.
 endmsg
-type 21
-slaying regular_army
-value 1000
 x 23
 y 8
+type 21
+value 1000
 end
 arch blocked
 x 23

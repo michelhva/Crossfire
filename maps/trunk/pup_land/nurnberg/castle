@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name castle
+region nurnberg
+width 24
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Mar  2 03:13:53 1996
 endmsg
-x 24
-y 17
 end
 arch cobblestones2
 end
@@ -1158,8 +1158,8 @@ y 5
 direction 3
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1193,8 +1193,8 @@ x 9
 y 7
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1225,8 +1225,8 @@ x 9
 y 9
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1428,7 +1428,6 @@ end
 arch pedestal_trigger
 x 11
 y 10
-protected 1
 connected 1
 end
 arch afloor_right
@@ -1442,13 +1441,11 @@ end
 arch igateTrg1
 x 11
 y 11
-protected 1
 connected 1
 end
 arch pedestal_trigger
 x 11
 y 12
-protected 1
 connected 1
 end
 arch cobblestones2
@@ -1493,22 +1490,22 @@ msg
 You hear voices from the other side
 of the wall:
 "voice A: Have you found the path to
-          Eureca's treasure rooms yet?
- voice B: Not yet.. I'm sorry.
-          There must be a well-hidden
-          passage somewhere. But sooner
-          or later we'll find it.
- voice A: Tell your team of loosers and
-          itiots they shall HURRY UP!!
-          I need Eureca's treasure, so
-          that I can conquer the whole
-          of pupland!
- voice C: ...And what about Eureca?
- voice A: Do I look like Eureca's
-          babysitter?! He is gone, so
-          this country needs a new
-          king... pupland needs ME!
-          Bua hua ha ha!
+Eureca's treasure rooms yet?
+voice B: Not yet.. I'm sorry.
+There must be a well-hidden
+passage somewhere. But sooner
+or later we'll find it.
+voice A: Tell your team of loosers and
+itiots they shall HURRY UP!!
+I need Eureca's treasure, so
+that I can conquer the whole
+of pupland!
+voice C: ...And what about Eureca?
+voice A: Do I look like Eureca's
+babysitter?! He is gone, so
+this country needs a new
+king... pupland needs ME!
+Bua hua ha ha!
 endmsg
 x 12
 y 1
@@ -1592,7 +1589,6 @@ end
 arch pedestal_trigger
 x 12
 y 10
-protected 1
 connected 1
 end
 arch afloor_right
@@ -1606,13 +1602,11 @@ end
 arch igateTrg1
 x 12
 y 11
-protected 1
 connected 1
 end
 arch pedestal_trigger
 x 12
 y 12
-protected 1
 connected 1
 end
 arch cobblestones2
@@ -1815,8 +1809,8 @@ x 14
 y 5
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1853,8 +1847,8 @@ x 14
 y 7
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
@@ -1884,8 +1878,8 @@ x 14
 y 9
 type 0
 randomitems none
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch cobblestones2
