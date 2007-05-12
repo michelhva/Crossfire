@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name <untitled>
+swap_time 10
+region nurnberg
+width 13
+height 9
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Sun Nov 19 23:36:33 2000
 endmsg
-width 13
-height 9
-swap_time 10
 end
 arch blocked
 end
@@ -20,59 +20,59 @@ y 2
 end
 arch blocked
 name darkness
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-y 3
 end
 arch mover_5
+y 3
 level 1
 attacktype 1
-y 3
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+y 3
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-y 3
 end
 arch blocked
 name darkness
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-y 4
 end
 arch mover_5
+y 4
 level 1
 attacktype 1
-y 4
 end
 arch blocked
 name darkness
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-y 5
 end
 arch mover_4
+y 5
 level 1
 attacktype 1
-y 5
 end
 arch light
 Str 30
@@ -83,17 +83,16 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+y 5
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-y 5
 end
 arch blocked
 y 6
@@ -113,45 +112,45 @@ y 1
 end
 arch blocked
 name darkness
+x 1
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 1
-y 2
 end
 arch mover_6
-level 1
-attacktype 1
 x 1
 y 2
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 1
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-x 1
-y 3
 end
 arch mover_2
-level 1
-attacktype 1
 x 1
 y 3
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 1
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-x 1
-y 4
 end
 arch mover_1
-level 1
-attacktype 1
 x 1
 y 4
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -162,46 +161,45 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 1
+y 4
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 1
-y 4
 end
 arch blocked
 name darkness
+x 1
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-x 1
-y 5
 end
 arch mover_1
-level 1
-attacktype 1
 x 1
 y 5
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 1
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 1
-y 6
 end
 arch mover_4
-level 1
-attacktype 1
 x 1
 y 6
+level 1
+attacktype 1
 end
 arch blocked
 x 1
@@ -216,17 +214,17 @@ x 2
 end
 arch blocked
 name darkness
+x 2
+y 1
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 1
 end
 arch mover_6
-level 1
-attacktype 1
 x 2
 y 1
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -237,116 +235,115 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 2
+y 1
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 2
-y 1
 end
 arch blocked
 name darkness
+x 2
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 2
 end
 arch mover_2
-level 1
-attacktype 1
 x 2
 y 2
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 2
+y 2
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 2
-y 2
 end
 arch blocked
 name darkness
+x 2
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 3
 end
 arch mover_5
-level 1
-attacktype 1
 x 2
 y 3
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 2
+y 3
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 2
-y 3
 end
 arch blocked
 name darkness
+x 2
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 4
 end
 arch mover_5
-level 1
-attacktype 1
 x 2
 y 4
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 2
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 5
 end
 arch mover_4
-level 1
-attacktype 1
 x 2
 y 5
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -357,88 +354,87 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 2
+y 5
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 2
-y 5
 end
 arch blocked
 name darkness
+x 2
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 6
 end
 arch mover_8
-level 1
-attacktype 1
 x 2
 y 6
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 2
+y 6
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 2
-y 6
 end
 arch blocked
 name darkness
+x 2
+y 7
 move_block 0
 blocksview 0
 is_floor 1
-x 2
-y 7
 end
 arch mover_4
-level 1
-attacktype 1
 x 2
 y 7
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 2
+y 7
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 2
-y 7
 end
 arch blocked
 x 2
@@ -446,43 +442,43 @@ y 8
 end
 arch blocked
 name darkness
+x 3
 move_block 0
 blocksview 0
 is_floor 1
-x 3
 end
 arch mover_6
+x 3
 level 1
 attacktype 1
-x 3
 end
 arch blocked
 name darkness
+x 3
+y 1
 move_block 0
 blocksview 0
 is_floor 1
-x 3
-y 1
 end
 arch mover_3
-level 1
-attacktype 1
 x 3
 y 1
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 3
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 3
-y 2
 end
 arch mover_6
-level 1
-attacktype 1
 x 3
 y 2
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 3
@@ -490,10 +486,10 @@ y 3
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 3
 y 3
+blocksview 0
+is_floor 1
 end
 arch dungeon_magic
 x 3
@@ -501,10 +497,10 @@ y 4
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 3
 y 4
+blocksview 0
+is_floor 1
 end
 arch dungeon_magic
 x 3
@@ -512,98 +508,98 @@ y 5
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 3
 y 5
+blocksview 0
+is_floor 1
 end
 arch blocked
 name darkness
+x 3
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 3
-y 6
 end
 arch mover_3
-level 1
-attacktype 1
 x 3
 y 6
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
-move_block 0
-blocksview 0
-is_floor 1
 x 3
 y 7
+move_block 0
+blocksview 0
+is_floor 1
 end
 arch mover_8
-level 1
-attacktype 1
 x 3
 y 7
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 3
+y 8
 move_block 0
 blocksview 0
 is_floor 1
-x 3
-y 8
 end
 arch mover_3
-level 1
-attacktype 1
 x 3
 y 8
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 4
 move_block 0
 blocksview 0
 is_floor 1
-x 4
 end
 arch mover_7
+x 4
 level 1
 attacktype 1
-x 4
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 4
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 4
 end
 arch blocked
 name darkness
+x 4
+y 1
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 1
 end
 arch mover_3
-level 1
-attacktype 1
 x 4
 y 1
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -614,32 +610,31 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 4
+y 1
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 4
-y 1
 end
 arch blocked
 name darkness
+x 4
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 2
 end
 arch mover_7
-level 1
-attacktype 1
 x 4
 y 2
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -650,18 +645,17 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 4
+y 2
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 4
-y 2
 end
 arch dungeon_magic
 x 4
@@ -669,25 +663,25 @@ y 3
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 4
 y 3
+blocksview 0
+is_floor 1
 end
 arch blocked
 name darkness
-type 41
 slaying /pup_land/ancient/world
 hp 28
 sp 24
-activate_on_push 1
-activate_on_release 1
+x 4
+y 4
+type 41
 connected 1
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 4
+activate_on_push 1
+activate_on_release 1
 end
 arch dungeon_magic
 x 4
@@ -695,59 +689,59 @@ y 5
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 4
 y 5
+blocksview 0
+is_floor 1
 end
 arch blocked
 name darkness
+x 4
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 6
 end
 arch mover_3
-level 1
-attacktype 1
 x 4
 y 6
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 4
+y 6
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 4
-y 6
 end
 arch blocked
 name darkness
+x 4
+y 7
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 7
 end
 arch mover_7
-level 1
-attacktype 1
 x 4
 y 7
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -758,32 +752,31 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 4
+y 7
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 4
-y 7
 end
 arch blocked
 name darkness
+x 4
+y 8
 move_block 0
 blocksview 0
 is_floor 1
-x 4
-y 8
 end
 arch mover_3
-level 1
-attacktype 1
 x 4
 y 8
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -794,58 +787,57 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 4
+y 8
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 4
-y 8
 end
 arch blocked
 name darkness
+x 5
 move_block 0
 blocksview 0
 is_floor 1
-x 5
 end
 arch mover_7
+x 5
 level 1
 attacktype 1
-x 5
 end
 arch blocked
 name darkness
+x 5
+y 1
 move_block 0
 blocksview 0
 is_floor 1
-x 5
-y 1
 end
 arch mover_4
-level 1
-attacktype 1
 x 5
 y 1
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 5
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 5
-y 2
 end
 arch mover_7
-level 1
-attacktype 1
 x 5
 y 2
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 5
@@ -853,10 +845,10 @@ y 3
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 5
 y 3
+blocksview 0
+is_floor 1
 end
 arch dungeon_magic
 x 5
@@ -864,10 +856,10 @@ y 4
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 5
 y 4
+blocksview 0
+is_floor 1
 end
 arch dungeon_magic
 x 5
@@ -875,69 +867,69 @@ y 5
 end
 arch blocked
 name darkness
-blocksview 0
-is_floor 1
 x 5
 y 5
+blocksview 0
+is_floor 1
 end
 arch blocked
 name darkness
+x 5
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 5
-y 6
 end
 arch mover_2
-level 1
-attacktype 1
 x 5
 y 6
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 5
+y 7
 move_block 0
 blocksview 0
 is_floor 1
-x 5
-y 7
 end
 arch mover_7
-level 1
-attacktype 1
 x 5
 y 7
-end
-arch blocked
-name darkness
-move_block 0
-blocksview 0
-is_floor 1
-x 5
-y 8
-end
-arch mover_2
 level 1
 attacktype 1
+end
+arch blocked
+name darkness
 x 5
 y 8
+move_block 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 5
+y 8
+level 1
+attacktype 1
 end
 arch blocked
 x 6
 end
 arch blocked
 name darkness
+x 6
+y 1
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 1
 end
 arch mover_8
-level 1
-attacktype 1
 x 6
 y 1
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -948,116 +940,115 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 6
+y 1
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 6
-y 1
 end
 arch blocked
 name darkness
+x 6
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 2
 end
 arch mover_4
-level 1
-attacktype 1
 x 6
 y 2
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 6
+y 2
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 6
-y 2
 end
 arch blocked
 name darkness
+x 6
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 3
 end
 arch mover_8
-level 1
-attacktype 1
 x 6
 y 3
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 6
+y 3
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 6
-y 3
 end
 arch blocked
 name darkness
+x 6
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 4
 end
 arch mover_1
-level 1
-attacktype 1
 x 6
 y 4
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 6
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 5
 end
 arch mover_1
-level 1
-attacktype 1
 x 6
 y 5
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -1068,88 +1059,87 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 6
+y 5
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 6
-y 5
 end
 arch blocked
 name darkness
+x 6
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 6
 end
 arch mover_6
-level 1
-attacktype 1
 x 6
 y 6
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 6
+y 6
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 6
-y 6
 end
 arch blocked
 name darkness
+x 6
+y 7
 move_block 0
 blocksview 0
 is_floor 1
-x 6
-y 7
 end
 arch mover_2
-level 1
-attacktype 1
 x 6
 y 7
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 6
+y 7
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 6
-y 7
 end
 arch blocked
 x 6
@@ -1164,45 +1154,45 @@ y 1
 end
 arch blocked
 name darkness
+x 7
+y 2
 move_block 0
 blocksview 0
 is_floor 1
-x 7
-y 2
 end
 arch mover_8
-level 1
-attacktype 1
 x 7
 y 2
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 7
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-x 7
-y 3
 end
 arch mover_5
-level 1
-attacktype 1
 x 7
 y 3
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 7
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-x 7
-y 4
 end
 arch mover_5
-level 1
-attacktype 1
 x 7
 y 4
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -1213,46 +1203,45 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 7
+y 4
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 7
-y 4
 end
 arch blocked
 name darkness
+x 7
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-x 7
-y 5
 end
 arch mover_6
-level 1
-attacktype 1
 x 7
 y 5
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 7
+y 6
 move_block 0
 blocksview 0
 is_floor 1
-x 7
-y 6
 end
 arch mover_2
-level 1
-attacktype 1
 x 7
 y 6
+level 1
+attacktype 1
 end
 arch blocked
 x 7
@@ -1275,66 +1264,66 @@ y 2
 end
 arch blocked
 name darkness
+x 8
+y 3
 move_block 0
 blocksview 0
 is_floor 1
-x 8
-y 3
 end
 arch mover_8
-level 1
-attacktype 1
 x 8
 y 3
+level 1
+attacktype 1
 end
 arch clock
-type 0
 Con 30
 hp 500
 maxhp 500
 exp 5
 dam 5
 ac -50
+x 8
+y 3
 nrof 0
 level 100
-immune 1
+type 0
+resist_physical 100
 value 0
-run_away 90
+move_type walk
 alive 1
 no_pick 1
 monster 1
-move_type walk
+run_away 90
 sleep 1
-x 8
-y 3
 end
 arch blocked
 name darkness
+x 8
+y 4
 move_block 0
 blocksview 0
 is_floor 1
-x 8
-y 4
 end
 arch mover_1
-level 1
-attacktype 1
 x 8
 y 4
+level 1
+attacktype 1
 end
 arch blocked
 name darkness
+x 8
+y 5
 move_block 0
 blocksview 0
 is_floor 1
-x 8
-y 5
 end
 arch mover_1
-level 1
-attacktype 1
 x 8
 y 5
+level 1
+attacktype 1
 end
 arch light
 Str 30
@@ -1345,18 +1334,17 @@ maxhp 500
 exp 5
 dam 5
 ac -20
+x 8
+y 5
 level 100
-immune 1
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
-alive 1
-move_type 0
-monster 1
 move_type walk
+alive 1
+monster 1
 is_used_up 0
-x 8
-y 5
 end
 arch blocked
 x 8
@@ -1406,117 +1394,116 @@ x 9
 y 8
 end
 arch mover_5
+x 10
 level 1
 attacktype 1
-x 10
 end
 arch mover_5
-level 1
-attacktype 1
 x 10
 y 1
-end
-arch mover_5
 level 1
 attacktype 1
+end
+arch mover_5
 x 10
 y 2
-end
-arch mover_5
 level 1
 attacktype 1
+end
+arch mover_5
 x 10
 y 3
-end
-arch mover_5
 level 1
 attacktype 1
+end
+arch mover_5
 x 10
 y 4
-end
-arch mover_5
 level 1
 attacktype 1
+end
+arch mover_5
 x 10
 y 5
-end
-arch mover_5
 level 1
 attacktype 1
+end
+arch mover_5
 x 10
 y 6
+level 1
+attacktype 1
 end
 arch mover_3
-level 1
-attacktype 1
 x 10
 y 7
+level 1
+attacktype 1
 end
 arch blocked
 x 10
 y 8
 end
 arch mover_7
+x 11
 level 1
 attacktype 1
-x 11
 end
 arch mover_1
-level 1
-attacktype 1
 x 11
 y 1
-end
-arch mover_1
 level 1
 attacktype 1
+end
+arch mover_1
 x 11
 y 2
+level 1
+attacktype 1
 end
 arch kobold
 hp 200
 maxhp 200
-level 40
-immune 1
 x 11
 y 2
+level 40
+resist_physical 100
 end
 arch mover_1
-level 1
-attacktype 1
 x 11
 y 3
+level 1
+attacktype 1
 end
 arch button_small
 name 1
-protected 1
-connected 1
 x 11
 y 3
+connected 1
 end
 arch mover_1
-level 1
-attacktype 1
 x 11
 y 4
-end
-arch mover_3
 level 1
 attacktype 1
+end
+arch mover_3
 x 11
 y 5
+level 1
+attacktype 1
 end
 arch mover_1
-level 1
-attacktype 1
 x 11
 y 6
-end
-arch mover_3
 level 1
 attacktype 1
+end
+arch mover_3
 x 11
 y 7
+level 1
+attacktype 1
 end
 arch blocked
 x 11
@@ -1538,28 +1525,28 @@ x 12
 y 3
 end
 arch mover_7
-level 1
-attacktype 1
 x 12
 y 4
-end
-arch mover_1
 level 1
 attacktype 1
+end
+arch mover_1
 x 12
 y 5
+level 1
+attacktype 1
 end
 arch mover_7
-level 1
-attacktype 1
 x 12
 y 6
-end
-arch mover_1
 level 1
 attacktype 1
+end
+arch mover_1
 x 12
 y 7
+level 1
+attacktype 1
 end
 arch blocked
 x 12

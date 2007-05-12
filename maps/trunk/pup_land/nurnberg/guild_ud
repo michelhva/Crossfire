@@ -1,12 +1,14 @@
 arch map
-region nurnberg
 name guild_ud
+fixed_resettime 1
+region nurnberg
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar  4 03:47:37 1996
 endmsg
-stand_still 1
 end
 arch blocked
 end
@@ -326,8 +328,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -442,8 +444,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -498,7 +500,6 @@ face blake_A.111
 hp 15
 x 4
 y 10
-protected 2
 connected 2
 end
 arch pstone_1
@@ -519,7 +520,6 @@ arch button_lever
 name outlet
 x 4
 y 12
-protected 2
 connected 2
 end
 arch table_4
@@ -630,8 +630,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -965,8 +965,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -994,7 +994,6 @@ arch grate_closed_2
 x 8
 y 13
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -1167,7 +1166,6 @@ arch grate_closed_1
 x 10
 y 11
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -1409,7 +1407,6 @@ arch grate_closed_2
 x 12
 y 13
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -1482,8 +1479,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1519,8 +1516,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1576,8 +1573,8 @@ level 10
 type 0
 weight 10000
 randomitems none
-monster 1
 move_type walk
+monster 1
 can_use_armour 0
 can_use_weapon 0
 end
@@ -1663,7 +1660,6 @@ end
 arch button_handle
 x 14
 y 9
-protected 1
 connected 1
 end
 arch pstone_1
