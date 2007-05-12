@@ -3,7 +3,7 @@
 # into one large image.  This should be run from the directory
 # where all the images are.
 # Note that this takes a while to run.  Probably pretty proportional
-# to the the size of the target image.
+# to the size of the target image.
 # This is somewhat hacked for my usage - it presumes you run this
 # from the top level of the maps directory (eg, contains world, scorn,
 # etc directories).  This is smart enough to regen the image files

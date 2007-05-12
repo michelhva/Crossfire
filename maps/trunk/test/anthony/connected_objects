@@ -31,8 +31,8 @@ Gates...
 * Comes in a huge variety
 * Has a definate on and off state
 * Objects on top of a closing gate will
-  roll off if a free space is availble.
-  Boudlers is one of the few objects
+  roll off if a free space is available.
+  Boulders is one of the few objects
   which can NOT coexist with itself.
 * Needs quite a long period to change
   state, and takes even longer if more
@@ -62,7 +62,7 @@ name Magic Mouths
 msg
 Magic Mouths...
 These handle/trigger/button are each
-connected to a seperate magic mouth to
+connected to a separate magic mouth to
 check how `connected mouths' work.
 Particularly to try and avoid having
 the mouth repeat itself.
@@ -632,7 +632,7 @@ y 6
 connected 1
 end
 arch goldfloor
-name drop 1 gold peice (not working)
+name drop 1 gold piece (not working)
 food 1
 x 10
 y 7

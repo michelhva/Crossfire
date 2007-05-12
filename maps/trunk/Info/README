@@ -20,7 +20,7 @@ make out the towns, roads, etc.
 Important landmarks
 
 The list of translation values below have been used in the update_maps
-script.  The values are recoreded here in that they might be useful for
+script.  The values are recorded here in that they might be useful for
 updating other maps that are contributed later.
 
 The format is:
@@ -58,7 +58,7 @@ The file land.c just gets compiled - if your system has a math
 library (-lm) you probably need to link that in.
 
 Given the same seed and other parameters, it will generate the same
-results if on the same platform.  Eg, two different intel systems running
+results if on the same platform.  E.g., two different intel systems running
 redhat 7.2 should generate the same results, but a redhat compared to
 solaris system, or linux intel vs linux power pc may very well generate
 different results.

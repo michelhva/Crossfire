@@ -141,7 +141,7 @@ class CFGuild:
         self.ranks=['Initiate', 'Novice', 'Guildman', 'Journeyman', 'Master', 'GuildMaster']
         self.status=['suspended', 'probation', 'good']
         self.duescap = 1000000 #arbitrary limit on dues (if you change it remember it currently is an int)
-        self.demeritcap = 100 #arbirtary limit on demerits
+        self.demeritcap = 100 #arbitrary limit on demerits
         self.qpcap = 100
         guild_name = '%s_log' %self.guildname
         self.guildlist = CFData(guild_name, guildheader)

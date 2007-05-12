@@ -1684,8 +1684,8 @@ x 5
 y 21
 end
 arch goldfloor
-name drop 25 goldcoins
-name_pl drop 25 goldcoins
+name drop 25 gold coins
+name_pl drop 25 gold coins
 food 25
 connected 6
 x 5
@@ -1704,8 +1704,8 @@ x 5
 y 23
 end
 arch goldfloor
-name drop 25 goldcoins
-name_pl drop 25 goldcoins
+name drop 25 gold coins
+name_pl drop 25 gold coins
 food 25
 connected 7
 x 5
@@ -1724,8 +1724,8 @@ x 5
 y 25
 end
 arch goldfloor
-name drop 30 goldcoins
-name_pl drop 30 goldcoins
+name drop 30 gold coins
+name_pl drop 30 gold coins
 food 30
 connected 8
 x 5
@@ -1750,7 +1750,7 @@ Accomidations for three including
 ample food and storage. Luxurious
 setting and a overlooking view of
 western Scorn to make your stay
-the best it can be. Complementry
+the best it can be. Complementary
 Newspaper included.
 endmsg
 name_pl Room 103 Master Suiet
@@ -1762,8 +1762,8 @@ x 5
 y 28
 end
 arch goldfloor
-name drop 50 goldcoins
-name_pl drop 50 goldcoins
+name drop 50 gold coins
+name_pl drop 50 gold coins
 food 50
 connected 9
 x 5
@@ -3980,7 +3980,7 @@ WAR IMMINENT?
 Talk of war against the dragons is
 circulating around Scorn. Since the
 Dragon Emmisary started demanding
-tribute tentions have worsened. The
+tribute tensions have worsened. The
 question now seems to be how big an
 army must be raised?
 endmsg
@@ -8922,11 +8922,11 @@ x 25
 y 7
 end
 arch guard
-name Elite Mikhovian Gaurd
+name Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Guard
 hp 350
 carrying 119500
 can_use_scroll 1
@@ -11809,11 +11809,11 @@ x 33
 y 15
 end
 arch guard
-name Elite Mikhovian Gaurd
+name Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Guard
 hp 350
 carrying 119500
 can_use_scroll 1
@@ -13436,11 +13436,11 @@ x 37
 y 11
 end
 arch guard
-name Elite Mikhovian Gaurd
+name Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Guard
 hp 350
 carrying 119500
 can_use_scroll 1
@@ -15813,11 +15813,11 @@ x 43
 y 15
 end
 arch guard
-name Elite Mikhovian Gaurd
+name Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Guard
 hp 350
 carrying 119500
 can_use_scroll 1
@@ -18570,11 +18570,11 @@ x 51
 y 10
 end
 arch guard
-name Elite Mikhovian Gaurd
+name Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Gaurd
+name_pl Elite Mikhovian Guard
 hp 350
 carrying 119500
 can_use_scroll 1

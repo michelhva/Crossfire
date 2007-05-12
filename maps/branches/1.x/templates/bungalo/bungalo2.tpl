@@ -1085,7 +1085,7 @@ x 6
 y 7
 end
 arch goldfloor
-name drop x for thamaturgist desk
+name drop x for thaumaturgist desk
 x 6
 y 7
 end

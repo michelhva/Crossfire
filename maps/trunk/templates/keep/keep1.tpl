@@ -18,7 +18,7 @@ connected 5
 speed 0.0
 end
 arch stair_down_4
-name basement staris
+name basement stairs
 slaying /Lots/Lot1/keep_b
 hp 1
 sp 5

@@ -196,7 +196,7 @@ of instantly getting toasted the second they enter the map.
 10) The structure of the map should make sense.  That is to say,
 if you enter a house, the house should then not have a tower inside.  Or
 a door to a shop.  In other words, if a map has an exit to another map,
-that exit should make sense (ie, another level, tunnels, dungeons
+that exit should make sense (i.e., another level, tunnels, dungeons
 all make sense.  However, another building the size of the original
 does not make sense.
 
@@ -372,7 +372,7 @@ to enter, you will need to change the face of exit for this to work.  If
 you do this, you should also accompany it with a magic mouth.)
 
 5) Make sure you set the difficulty field in the map attributes to
-somethign meaningful.  Crossfire will calculate a default dificulty,
+something meaningful.  Crossfire will calculate a default difficulty,
 but its formula is hardly ideal.  The difficulty of a map determines how
 magical the treasure will be (and some treasure types won't show up
 unless the map has a certain difficulty level.)

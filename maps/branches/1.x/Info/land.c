@@ -114,7 +114,7 @@ void write_crossfire_maps(int mapy, int mapx)
 	}
     }
     /* Basically, take a random bit and populate the area with terrain.
-     * We do this so it won't be totally monolythic (have several forest types
+     * We do this so it won't be totally monolithic (have several forest types
      * for example), yet patches will be the same thing, eg, a stretch of
      * desert, which wouldn't work very well if we just chose randomly
      * for each space.
@@ -410,7 +410,7 @@ main(int argc, char *argv)
     /* Make lakes and ocean trenches.
      * General note - it works better to have more passes, but each
      * pass doing less working - this results in more consistent lakes
-     * and ocen trenching.
+     * and ocean trenching.
      */
     for (l=0; l<wpasses; l++) {
 	/* for a small portion, we lower the area we make */
