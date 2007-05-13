@@ -37,7 +37,6 @@ move_type walk
 see_invisible 1
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_shield 1
 can_use_armour 1

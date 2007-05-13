@@ -28,15 +28,12 @@ attacktype 7169
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
-
 resist_cold 50
 resist_acid 50
-
 level 18
 speed 0.1
 weight 100000
 run_away 10
-can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1

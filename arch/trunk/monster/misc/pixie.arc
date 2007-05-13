@@ -32,7 +32,6 @@ wc 7
 dam 1
 speed -0.2
 run_away 15
-can_use_wand 1
 can_cast_spell 1
 pick_up 1
 attack_movement 3

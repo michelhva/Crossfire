@@ -26,14 +26,11 @@ resist_physical 30
 speed 0.15
 attacktype 1025
 resist_magic 50
-
 resist_fear 100
 resist_chaos 100
-
 weight 75000
 can_use_skill 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
