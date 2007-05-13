@@ -29,7 +29,6 @@ randomitems titan
 run_away 1
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 no_pick 1
 monster 1

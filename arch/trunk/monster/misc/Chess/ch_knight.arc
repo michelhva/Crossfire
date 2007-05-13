@@ -21,7 +21,6 @@ level 4
 editable 1
 will_apply 2
 pick_up 24
-can_apply 25
 can_cast_spell 1
 can_use_bow 1
 can_use_ring 1
