@@ -38,7 +38,6 @@ resist_acid 100
 resist_poison 100
 resist_chaos 100
 weight 75000
-can_apply 20
 can_cast_spell 1
 can_use_skill 1
 can_use_bow 1
