@@ -49,7 +49,6 @@ editable 1
 can_use_weapon 1
 can_use_bow 1
 can_use_rod 1
-can_use_wand 1
 can_use_skill 1
 magicmap khaki
 body_skill 1
