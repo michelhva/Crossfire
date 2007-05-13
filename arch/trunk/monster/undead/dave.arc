@@ -30,7 +30,6 @@ attacktype 4225
 randomitems lich
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 no_pick 1
 monster 1
