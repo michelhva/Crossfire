@@ -27,7 +27,6 @@ weight 50000
 run_away 10
 will_apply 2
 pick_up 24
-can_apply 25
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
