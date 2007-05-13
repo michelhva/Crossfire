@@ -29,7 +29,6 @@ weight 50000
 level 15
 will_apply 2
 pick_up 24
-can_apply 25
 can_use_scroll 1
 can_use_skill 1
 can_cast_spell 1

@@ -35,7 +35,6 @@ carrying 90000
 weight 50000
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 monster 1
 move_type walk
