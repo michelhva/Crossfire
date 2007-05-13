@@ -13360,6 +13360,14 @@ arch dungeon_floor
 x 43
 y 8
 end
+arch big_elec
+hp 8000
+maxhp 8000
+exp 150000
+x 43
+y 8
+level 20
+end
 arch dungeon_floor
 x 43
 y 9
@@ -18270,13 +18278,4 @@ end
 arch bwall_0
 x 59
 y 47
-end
-arch big_elec
-hp 8000
-maxhp 8000
-exp 150000
-x 43
-y 8
-level 20
-vulnerable 0
 end
