@@ -17,7 +17,6 @@ Con 10
 no_pick 1
 exp 500
 resist_magic 30
-
 speed 0.16
 ac 5
 wc 9
@@ -26,7 +25,6 @@ alive 1
 level 7
 weight 100000
 attack_movement 7
-can_use_wand 1
 can_use_scroll 1
 can_use_rod 1
 can_cast_spell 1

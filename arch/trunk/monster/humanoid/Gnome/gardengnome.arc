@@ -34,14 +34,12 @@ resist_fire 100
 resist_cold 100
 resist_confusion 100
 resist_turn_undead 100
-
 weight 50000
 speed 0.4
 random_movement 1
 pick_up 3
 can_use_scroll 1
 can_use_skill 1
-can_use_wand 1
 can_use_rod 1
 can_use_bow 1
 can_use_shield 1

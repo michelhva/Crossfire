@@ -31,7 +31,6 @@ monster 1
 move_type walk
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_shield 1
 can_use_armour 1

@@ -22,7 +22,6 @@ speed 0.15
 weight 50000
 level 4
 can_use_skill 1
-can_use_wand 1
 can_use_rod 1
 can_use_bow 1
 can_use_shield 1

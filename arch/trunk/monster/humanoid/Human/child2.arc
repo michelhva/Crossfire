@@ -22,7 +22,6 @@ speed 0.3
 weight 50000
 level 1
 can_use_skill 1
-can_use_wand 1
 can_use_rod 1
 can_use_ring 1
 editable 1
