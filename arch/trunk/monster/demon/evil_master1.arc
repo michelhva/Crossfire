@@ -37,7 +37,6 @@ level 117
 attacktype 66332
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 no_pick 1
 monster 1
