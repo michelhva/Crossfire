@@ -39,7 +39,6 @@ see_invisible 1
 undead 1
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_ring 1
 sleep 1
 magicmap red

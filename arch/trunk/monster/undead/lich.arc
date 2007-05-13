@@ -32,7 +32,6 @@ will_apply 2
 pick_up 24
 can_apply 25
 can_use_scroll 1
-can_use_wand 1
 can_cast_spell 1
 can_use_shield 1
 can_use_armour 1
