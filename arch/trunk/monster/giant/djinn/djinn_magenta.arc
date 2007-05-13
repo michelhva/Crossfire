@@ -23,7 +23,6 @@ maxsp 2200
 sp 2200
 resist_drain 50
 resist_chaos 50
-
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -33,7 +32,6 @@ resist_acid 100
 resist_ghosthit 100
 resist_poison 100
 resist_fear 100
-
 attack_movement 7
 attacktype 15
 see_invisible 1
@@ -55,7 +53,6 @@ can_use_armour 1
 can_use_rod 1
 can_use_horn 1
 can_use_ring 1
-can_use_wand 1
 can_use_scroll 1
 body_torso 1
 body_head 1

@@ -44,7 +44,6 @@ will_apply 2
 unaggressive 1
 can_use_scroll 1
 can_use_skill 1
-can_use_wand 1
 can_cast_spell 1
 can_use_ring 1
 can_use_shield 1

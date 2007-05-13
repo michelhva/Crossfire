@@ -20,17 +20,14 @@ resist_acid 100
 resist_ghosthit 100
 resist_poison 100
 resist_fear 100
-
 resist_drain -100
 resist_weaponmagic -100
 resist_chaos -100
-
 resist_physical 50
 resist_magic 50
 resist_fire 50
 resist_electricity 50
 resist_cold 50
-
 attack_movement 7
 see_invisible 1
 exp 70000
@@ -52,7 +49,6 @@ can_use_armour 1
 can_use_rod 1
 can_use_horn 1
 can_use_ring 1
-can_use_wand 1
 can_use_scroll 1
 body_torso 1
 body_head 1
