@@ -416,7 +416,6 @@ end
 arch button_small
 name 2
 x 5
-protected 2
 weight 1000
 connected 2
 end
@@ -424,7 +423,6 @@ arch creator
 name 1
 other_arch boulder
 x 5
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -633,7 +631,6 @@ name drop 20 gold coins
 food 20
 x 6
 y 3
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -649,7 +646,6 @@ name drop 20 gold coins
 food 20
 x 6
 y 4
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -665,7 +661,6 @@ name drop 20 gold coins
 food 20
 x 6
 y 5
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -681,7 +676,6 @@ name drop 20 gold coins
 food 20
 x 6
 y 6
-protected 1
 connected 1
 end
 arch dungeon_magic
@@ -836,7 +830,6 @@ end
 arch grate_closed_2
 x 7
 y 3
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -850,7 +843,6 @@ end
 arch grate_closed_2
 x 7
 y 4
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -864,7 +856,6 @@ end
 arch grate_closed_2
 x 7
 y 5
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -878,7 +869,6 @@ end
 arch grate_closed_2
 x 7
 y 6
-protected 2
 connected 2
 end
 arch dungeon_magic
@@ -1038,7 +1028,6 @@ end
 arch button_handle
 x 8
 y 7
-protected 2
 connected 2
 end
 arch dungeon_magic

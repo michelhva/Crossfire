@@ -172,7 +172,6 @@ Knock down the walls!
 endmsg
 slaying diamond
 food 7000
-protected 2
 connected 2
 x 1
 y 4
@@ -746,7 +745,6 @@ y 9
 end
 arch igate_closed_1
 speed 0.500000
-protected 1
 connected 1
 x 6
 y 9
@@ -761,7 +759,6 @@ arch altar
 name apartment costs 200 pearls
 slaying pearl
 food 200
-protected 1
 connected 1
 x 6
 y 10
@@ -1351,7 +1348,6 @@ name 2
 hp 2
 sp 4
 speed 0.000000
-protected 2
 connected 2
 x 11
 y 13
