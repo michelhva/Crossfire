@@ -27,13 +27,10 @@ attacktype 1025
 resist_poison 100
 resist_fear 100
 resist_chaos 100
-
 resist_confusion -100
-
 weight 75000
 can_use_skill 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1

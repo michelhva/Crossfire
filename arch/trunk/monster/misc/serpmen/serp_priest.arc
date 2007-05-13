@@ -32,19 +32,15 @@ attacktype 1025
 resist_physical 30
 resist_magic 30
 resist_fire 30
-
 resist_cold -100
-
 resist_electricity 100
 resist_acid 100
 resist_poison 100
 resist_chaos 100
-
 weight 75000
 can_apply 20
 can_cast_spell 1
 can_use_skill 1
-can_use_wand 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
