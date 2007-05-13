@@ -30,7 +30,6 @@ resist_electricity 30
 resist_physical 30
 weight 140000
 run_away 15
-can_apply 24
 run_away 30
 can_use_scroll 1
 can_use_skill 1
