@@ -1,14 +1,14 @@
 arch map
-region pupland
 name cave3
+difficulty 12
+region pupland
+width 19
+height 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 05:22:23 1996
 endmsg
-x 19
-y 19
-level 12
 end
 arch flagstone
 end
@@ -205,19 +205,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 10
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_magic
 x 1
@@ -260,19 +259,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 14
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_magic
 x 1
@@ -626,19 +624,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 7
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 4
@@ -712,19 +709,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 17
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 4
@@ -883,19 +879,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 6
 y 5
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dun2
 x 6
@@ -1141,13 +1136,13 @@ Con 25
 hp 1650
 maxhp 1650
 ac -40
-armour 90
 x 8
 y 2
 level 19
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
+armour 90
 end
 arch flagstone
 x 8
@@ -1190,19 +1185,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 7
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 8
@@ -1265,19 +1259,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 17
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 8
@@ -1477,7 +1470,7 @@ wc -10
 ac -5
 x 10
 y 10
-vulnerable 2
+resist_magic -100
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
@@ -1569,19 +1562,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 11
 y 5
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dun2
 x 11
@@ -1766,19 +1758,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 12
 y 17
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 12
@@ -1847,19 +1838,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 13
 y 7
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 13
@@ -2185,19 +2175,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 15
 y 17
 attack_movement 7
 level 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 15

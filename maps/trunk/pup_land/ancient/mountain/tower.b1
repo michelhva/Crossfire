@@ -276,7 +276,6 @@ y 8
 end
 arch button_small
 x 5
-protected 3
 weight 10
 connected 3
 end
@@ -340,7 +339,6 @@ arch button_small
 name 2
 x 5
 y 8
-protected 2
 weight 1000
 connected 2
 end
@@ -349,7 +347,6 @@ name 1
 other_arch boulder
 x 5
 y 8
-protected 1
 connected 1
 end
 arch blocked
@@ -387,7 +384,6 @@ arch pedestal
 name 1
 x 6
 y 4
-protected 1
 connected 1
 end
 arch large_stones
@@ -474,7 +470,6 @@ name invisible force
 x 7
 y 4
 speed 0.500000
-protected 3
 invisible 1
 connected 3
 no_magic 1
@@ -521,7 +516,6 @@ name 2
 x 7
 y 8
 speed 0.500000
-protected 2
 value 1
 connected 2
 end
@@ -566,7 +560,6 @@ arch pit_open
 hp 5
 x 8
 y 4
-protected 3
 invisible 1
 connected 3
 end
@@ -598,7 +591,6 @@ arch button_small
 name 4
 x 8
 y 8
-protected 4
 weight 2000
 connected 4
 end
@@ -630,7 +622,6 @@ name move_necro
 other_arch mover_7
 x 9
 y 4
-protected 2
 connected 2
 end
 arch pstone_2
@@ -713,7 +704,6 @@ arch trigger
 name handle
 x 10
 y 4
-protected 4
 connected 4
 end
 arch pstone_2
@@ -939,7 +929,6 @@ x 13
 y 3
 speed 0.500000
 speed_left -9.100000
-protected 4
 connected 4
 end
 arch large_stones
@@ -955,7 +944,6 @@ x 13
 y 4
 speed 0.500000
 speed_left -9.100000
-protected 4
 connected 4
 end
 arch large_stones
@@ -971,7 +959,6 @@ x 13
 y 5
 speed 0.500000
 speed_left -9.100000
-protected 4
 connected 4
 end
 arch large_stones
@@ -1036,7 +1023,6 @@ arch pedestal
 name 1
 x 14
 y 3
-protected 1
 connected 1
 end
 arch large_stones
@@ -1059,7 +1045,6 @@ his corpse in one piece.
 endmsg
 x 14
 y 4
-protected 2
 connected 2
 walk_on 0
 fly_on 0
@@ -1068,7 +1053,6 @@ arch pedestal
 name 1
 x 14
 y 4
-protected 1
 connected 1
 end
 arch large_stones
@@ -1083,7 +1067,6 @@ arch pedestal
 name 1
 x 14
 y 5
-protected 1
 connected 1
 end
 arch large_stones
