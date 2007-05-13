@@ -701,7 +701,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 4
 y 7
 speed 0.300000
@@ -909,7 +909,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 5
 y 6
 speed 0.300000
@@ -1125,7 +1125,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 6
 y 5
 speed 0.300000
@@ -1170,7 +1170,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 6
 y 8
 speed 0.300000
@@ -1341,7 +1341,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 3
 speed 0.300000
@@ -1378,7 +1378,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 4
 speed 0.300000
@@ -1419,7 +1419,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 6
 speed 0.300000
@@ -1456,7 +1456,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 7
 speed 0.300000
@@ -1535,7 +1535,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 18
 speed 0.200000
@@ -1572,7 +1572,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 7
 y 20
 speed 0.200000
@@ -1689,7 +1689,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 8
 y 5
 speed 0.300000
@@ -1734,7 +1734,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 8
 y 8
 speed 0.300000
@@ -1825,7 +1825,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 8
 y 22
 speed 0.200000
@@ -1931,7 +1931,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 9
 y 6
 speed 0.300000
@@ -2059,7 +2059,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 9
 y 24
 speed 0.200000
@@ -2169,7 +2169,7 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
+resist_physical 25
 x 10
 y 7
 speed 0.300000
@@ -2292,7 +2292,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 10
 y 20
 speed 0.200000
@@ -2341,7 +2341,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 10
 y 25
 speed 0.200000
@@ -2569,7 +2569,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 11
 y 22
 speed 0.200000
@@ -2614,7 +2614,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 11
 y 26
 speed 0.200000
@@ -2852,7 +2852,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 12
 y 24
 speed 0.200000
@@ -3097,7 +3097,7 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
+resist_physical 25
 x 13
 y 25
 speed 0.200000
@@ -3506,7 +3506,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 15
 y 17
 attack_movement 7
@@ -3538,7 +3538,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 15
 y 19
 attack_movement 7
@@ -3719,7 +3719,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 16
 y 16
 attack_movement 7
@@ -3751,7 +3751,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 16
 y 18
 attack_movement 7
@@ -4077,7 +4077,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 17
 y 17
 attack_movement 7
@@ -4109,7 +4109,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 17
 y 19
 attack_movement 7
@@ -4308,7 +4308,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 18
 y 16
 attack_movement 7
@@ -4340,7 +4340,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 18
 y 18
 attack_movement 7
@@ -4538,7 +4538,7 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
+resist_physical 28
 x 19
 y 17
 attack_movement 7
