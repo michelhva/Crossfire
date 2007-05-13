@@ -118,6 +118,84 @@ end
 arch blocked
 y 19
 end
+arch pentagram_111
+hp 9
+sp 18
+y 20
+connected 3
+end
+arch baslic
+name Great Wyrm of Chaos, Lord of Chaos
+Con 16
+Wis 30
+Int 20
+hp 9999
+maxhp 11111
+sp 1000
+maxsp 1000
+exp 8000000
+dam 63
+ac -25
+y 20
+speed 1.0
+speed_left -0.920000
+level 99
+attacktype 351389
+resist_electricity 100
+resist_confusion 100
+resist_acid 100
+carrying 545050
+move_type walk fly_low
+can_cast_spell 1
+arch spell_create_bomb
+end
+arch Pdragon_mail
+end
+arch dragonslayer
+name Dragonbane
+msg
+Mopoon's Dragonbane. It was forged
+long long ago. The first master of the
+the sword has been forgotten, together
+with the arcane magic that forged it.
+The Dragonbane glows with hunger for
+dragon blood.
+endmsg
+Str 3
+exp 3
+dam 81
+weight 64000
+magic 9
+identified 1
+end
+arch spell_mass_confusion
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch abil_poison_cloud
+end
+arch spell_sm_lightning
+end
+arch cleric_book
+value 4400
+randomitems none
+arch spell_face_of_death
+end
+end
+arch key2
+name fragment-of-chaos
+slaying Chaos
+face destruction.111
+value 100000
+end
+arch gem
+nrof 9999
+end
+end
 arch blocked
 x 1
 end
@@ -545,6 +623,37 @@ end
 arch large_stones
 x 4
 y 8
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+x 4
+y 8
+speed 0.700000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_electricity 8
+carrying 35000
+move_type walk fly_low
+arch abil_icestorm
+end
+arch gem
+nrof 700
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 4
@@ -1139,6 +1248,41 @@ arch large_stones
 x 7
 y 14
 end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 7
+y 14
+speed 0.400000
+speed_left -1.260000
+level 30
+resist_electricity 100
+resist_cold 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch sorcerer_book
+name stones
+face largestone.111
+randomitems none
+no_pick 1
+arch spell_color_spray
+end
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 7
 y 15
@@ -1234,6 +1378,41 @@ end
 arch large_stones
 x 8
 y 5
+end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 8
+y 5
+speed 0.4
+speed_left -1.310000
+level 30
+resist_electricity 100
+resist_cold 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch sorcerer_book
+name stones
+face largestone.111
+randomitems none
+no_pick 1
+arch spell_color_spray
+end
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
 end
 arch large_stones
 x 8
@@ -2181,6 +2360,41 @@ arch large_stones
 x 14
 y 4
 end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 14
+y 4
+speed 0.400000
+speed_left -2.590000
+level 30
+resist_electricity 100
+resist_cold 100
+carrying 35000
+move_type walk fly_low
+arch gem
+nrof 600
+end
+arch sorcerer_book
+name stones
+face largestone.111
+randomitems none
+no_pick 1
+arch spell_color_spray
+end
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 14
 y 5
@@ -2240,6 +2454,37 @@ end
 arch large_stones
 x 14
 y 15
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+x 14
+y 15
+speed 0.700000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_electricity 8
+carrying 35000
+move_type walk fly_low
+arch abil_icestorm
+end
+arch gem
+nrof 700
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 14
@@ -3374,244 +3619,4 @@ end
 arch cave22
 x 19
 y 25
-end
-arch pentagram_111
-hp 9
-sp 18
-y 20
-connected 3
-end
-arch baslic
-name Great Wyrm of Chaos, Lord of Chaos
-Con 16
-Wis 30
-Int 20
-hp 9999
-maxhp 11111
-sp 1000
-maxsp 1000
-exp 8000000
-dam 63
-ac -25
-y 20
-speed 1.000000
-speed_left -0.920000
-level 99
-attacktype 351389
-carrying 545050
-move_type walk fly_low
-can_cast_spell 1
-immune 104
-arch spell_create_bomb
-end
-arch Pdragon_mail
-end
-arch dragonslayer
-name Dragonbane
-msg
-Mopoon's Dragonbane. It was forged
-long long ago. The first master of the
-the sword has been forgotten, together
-with the arcane magic that forged it.
-The Dragonbane glows with hunger for
-dragon blood.
-endmsg
-Str 3
-exp 3
-dam 81
-weight 64000
-magic 9
-identified 1
-end
-arch spell_mass_confusion
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch abil_poison_cloud
-end
-arch spell_sm_lightning
-end
-arch cleric_book
-value 4400
-randomitems none
-arch spell_face_of_death
-end
-end
-arch key2
-name fragment-of-chaos
-slaying Chaos
-face destruction.111
-value 100000
-end
-arch gem
-nrof 9999
-end
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-x 4
-y 8
-speed 0.700000
-speed_left -1.840000
-level 30
-attacktype 29
-carrying 35000
-move_type walk fly_low
-immune 8
-arch abil_icestorm
-end
-arch gem
-nrof 700
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 7
-y 14
-speed 0.400000
-speed_left -1.260000
-level 30
-carrying 35000
-move_type walk fly_low
-immune 28
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 8
-y 5
-speed 0.400000
-speed_left -1.310000
-level 30
-carrying 35000
-move_type walk fly_low
-immune 28
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 14
-y 4
-speed 0.400000
-speed_left -2.590000
-level 30
-carrying 35000
-move_type walk fly_low
-immune 28
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-x 14
-y 15
-speed 0.700000
-speed_left -1.840000
-level 30
-attacktype 29
-carrying 35000
-move_type walk fly_low
-immune 8
-arch abil_icestorm
-end
-arch gem
-nrof 700
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch spell_dragonbreath
-end
 end
