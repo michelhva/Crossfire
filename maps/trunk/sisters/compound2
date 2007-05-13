@@ -525,7 +525,7 @@ x 5
 y 1
 speed -0.200000
 see_invisible 0
-armour 20
+resist_physical 20
 end
 arch woodfloor
 x 5
@@ -1122,7 +1122,7 @@ maxhp 6000
 x 9
 y 13
 carrying 30000
-armour 50
+resist_physical 50
 arch mjoellnir
 name Baba Mal the War Hammer
 Str 0
