@@ -679,6 +679,17 @@ arch cobblestones2
 x 3
 y 5
 end
+arch giant
+x 3
+y 5
+carrying 126645
+arch goldcoin
+nrof 43
+end
+arch club
+nrof 14
+end
+end
 arch cobblestones2
 x 3
 y 6
@@ -2383,7 +2394,6 @@ y 13
 resist_paralyze 30
 carrying 486865
 has_ready_bow 1
-has_ready_wand 1
 arch arrow
 nrof 248
 end
@@ -2642,7 +2652,6 @@ y 13
 resist_poison 30
 carrying 442000
 has_ready_bow 1
-has_ready_wand 1
 arch arrow
 nrof 164
 end
@@ -5273,6 +5282,17 @@ arch cobblestones2
 x 31
 y 36
 end
+arch titan
+x 31
+y 36
+resist_magic 30
+resist_fire 30
+carrying 100
+arch key2
+name MASSIVE key
+slaying titan.door
+end
+end
 arch cobblestones2
 x 31
 y 37
@@ -7118,26 +7138,4 @@ end
 arch cwall_2_2_4
 x 39
 y 39
-end
-arch giant
-x 3
-y 5
-carrying 126645
-arch goldcoin
-nrof 43
-end
-arch club
-nrof 14
-end
-end
-arch titan
-x 31
-y 36
-resist_magic 30
-resist_fire 30
-carrying 100
-arch key2
-name MASSIVE key
-slaying titan.door
-end
 end
