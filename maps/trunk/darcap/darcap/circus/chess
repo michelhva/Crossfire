@@ -420,14 +420,12 @@ name 2
 x 5
 weight 1000
 connected 2
-protected 2
 end
 arch creator
 name 1
 other_arch boulder
 x 5
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 5
@@ -636,7 +634,6 @@ food 20
 x 6
 y 3
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -652,7 +649,6 @@ food 20
 x 6
 y 4
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -668,7 +664,6 @@ food 20
 x 6
 y 5
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -684,7 +679,6 @@ food 20
 x 6
 y 6
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -839,7 +833,6 @@ arch grate_closed_2
 x 7
 y 3
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -853,7 +846,6 @@ arch grate_closed_2
 x 7
 y 4
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -867,7 +859,6 @@ arch grate_closed_2
 x 7
 y 5
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -881,7 +872,6 @@ arch grate_closed_2
 x 7
 y 6
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -1041,7 +1031,6 @@ arch button_handle
 x 8
 y 7
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 8
