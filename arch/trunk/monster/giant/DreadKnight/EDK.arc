@@ -60,7 +60,6 @@ run_away 1
 see_invisible 1
 pick_up 11
 weight 300000
-can_apply 25
 can_use_scroll 1
 can_use_skill 1
 can_use_rod 1
