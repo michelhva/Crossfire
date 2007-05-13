@@ -21,7 +21,7 @@ resist_drain 100
 resist_deplete 100
 resist_death 100
 resist_fear -100
-armour 50
+resist_physical 50
 ac -5
 wc -1
 dam 40

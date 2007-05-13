@@ -17,7 +17,7 @@ Pow 30
 path_attuned 18432
 path_repelled 64
 resist_fire 60
-armour 75
+resist_physical 75
 ac -10
 wc -6
 dam 50

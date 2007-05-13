@@ -19,7 +19,7 @@ Wis 20
 Dex 15
 Con 30
 Int 10
-armour 85
+resist_physical 85
 resist_magic 30
 resist_acid 100
 resist_fire 30
