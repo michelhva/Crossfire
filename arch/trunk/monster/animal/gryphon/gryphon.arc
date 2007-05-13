@@ -49,7 +49,6 @@ no_pick 1
 speed 0.5
 anim_speed 0.4
 weight 400000
-can_apply 25
 can_use_scroll 1
 can_use_rod 1
 can_cast_spell 1

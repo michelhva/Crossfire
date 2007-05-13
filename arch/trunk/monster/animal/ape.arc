@@ -32,7 +32,6 @@ resist_electricity 30
 resist_physical 20
 weight 90000
 run_away 35
-can_apply 24
 editable 1
 magicmap brown
 end
