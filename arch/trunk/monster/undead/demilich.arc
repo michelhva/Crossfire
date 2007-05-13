@@ -19,7 +19,6 @@ move_type walk
 unaggressive 1
 random_movement 1
 can_cast_spell 1
-can_apply 25
 Str 10
 Wis 20
 Pow 80

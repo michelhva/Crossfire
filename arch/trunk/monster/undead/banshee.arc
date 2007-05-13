@@ -30,7 +30,6 @@ maxsp 60
 editable 1
 will_apply 2
 pick_up 24
-can_apply 25
 can_cast_spell 1
 color_fg black
 speed 0.12

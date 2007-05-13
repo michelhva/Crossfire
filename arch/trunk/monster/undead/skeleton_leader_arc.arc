@@ -33,7 +33,6 @@ resist_physical 20
 will_apply 2
 pick_up 24
 can_see_in_dark 1
-can_apply 25
 can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
