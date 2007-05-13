@@ -14,7 +14,6 @@ name 5
 hp 4
 sp 5
 speed 0.000000
-protected 5
 connected 5
 end
 arch firewall_5
@@ -34,7 +33,6 @@ name 5
 hp 1
 sp 8
 speed 0.000000
-protected 5
 connected 5
 y 1
 end
@@ -57,7 +55,6 @@ name 5
 hp 1
 sp 12
 speed 0.000000
-protected 5
 connected 5
 y 2
 end
@@ -80,7 +77,6 @@ name 5
 hp 4
 sp 15
 speed 0.000000
-protected 5
 connected 5
 y 3
 end
@@ -340,7 +336,6 @@ name 5
 hp 8
 sp 5
 speed 0.000000
-protected 5
 connected 5
 x 1
 end
@@ -362,7 +357,6 @@ name 5
 hp 11
 sp 8
 speed 0.000000
-protected 5
 connected 5
 x 1
 y 1
@@ -387,7 +381,6 @@ name 5
 hp 11
 sp 12
 speed 0.000000
-protected 5
 connected 5
 x 1
 y 2
@@ -412,7 +405,6 @@ name 5
 hp 8
 sp 15
 speed 0.000000
-protected 5
 connected 5
 x 1
 y 3
@@ -1524,7 +1516,6 @@ x 4
 y 8
 end
 arch button_small
-protected 1
 weight 1000
 connected 1
 x 4
@@ -1569,7 +1560,6 @@ x 4
 y 12
 end
 arch button_small
-protected 4
 weight 1000
 connected 4
 x 4
@@ -1675,7 +1665,6 @@ x 4
 y 21
 end
 arch button_small
-protected 31
 weight 1000
 connected 31
 x 4
@@ -1720,7 +1709,6 @@ x 4
 y 25
 end
 arch button_small
-protected 34
 weight 1000
 connected 34
 x 4
@@ -2263,7 +2251,6 @@ y 5
 end
 arch button_small
 name 50
-protected 50
 connected 50
 x 6
 y 5
@@ -2313,7 +2300,6 @@ name 6
 msg
 You hear the sound of moving rock.
 endmsg
-protected 6
 connected 6
 walk_on 0
 fly_on 0
@@ -2328,7 +2314,6 @@ Suddenly they rise their mechanical
 arms... to unleash an inferno of snow
 and ice!
 endmsg
-protected 5
 connected 5
 walk_on 0
 fly_on 0
@@ -2461,7 +2446,6 @@ name 36
 msg
 You hear the sound of moving rock.
 endmsg
-protected 36
 connected 36
 walk_on 0
 fly_on 0
@@ -2475,7 +2459,6 @@ White statues emerge from another
 dimension! They look extremely
 dangerous...
 endmsg
-protected 35
 connected 35
 walk_on 0
 fly_on 0
@@ -2534,7 +2517,6 @@ arch block_door_closed
 name wall
 face cave2.111
 speed 0.500000
-protected 36
 connected 36
 x 6
 y 28
@@ -2551,7 +2533,6 @@ arch block_door_closed
 name wall
 face cave4.111
 speed 0.500000
-protected 36
 connected 36
 x 6
 y 29
@@ -3084,7 +3065,6 @@ x 8
 y 8
 end
 arch button_small
-protected 2
 weight 1000
 connected 2
 x 8
@@ -3129,7 +3109,6 @@ x 8
 y 12
 end
 arch button_small
-protected 3
 weight 1000
 connected 3
 x 8
@@ -3239,7 +3218,6 @@ x 8
 y 21
 end
 arch button_small
-protected 32
 weight 1000
 connected 32
 x 8
@@ -3284,7 +3262,6 @@ x 8
 y 25
 end
 arch button_small
-protected 33
 weight 1000
 connected 33
 x 8
@@ -3732,7 +3709,6 @@ name 15
 hp 14
 sp 8
 speed 0.000000
-protected 15
 connected 15
 x 10
 end
@@ -3755,7 +3731,6 @@ name 15
 hp 14
 sp 12
 speed 0.000000
-protected 15
 connected 15
 x 10
 y 1
@@ -4109,7 +4084,6 @@ name 15
 hp 17
 sp 5
 speed 0.000000
-protected 15
 connected 15
 x 11
 end
@@ -4131,7 +4105,6 @@ name 15
 hp 17
 sp 15
 speed 0.000000
-protected 15
 connected 15
 x 11
 y 1
@@ -4161,14 +4134,12 @@ msg
 You feel uncomfortable... The statues
 seem to be watching you...
 endmsg
-protected 51
 connected 51
 x 11
 y 3
 end
 arch button_small
 name 51
-protected 51
 weight 1000
 connected 51
 x 11
@@ -4177,7 +4148,6 @@ end
 arch creator
 name 50
 other_arch small_shield
-protected 50
 connected 50
 x 11
 y 3
@@ -4267,7 +4237,6 @@ arch block_door_closed
 name wall
 face cave1.111
 speed 0.500000
-protected 6
 connected 6
 x 11
 y 10
@@ -4421,7 +4390,6 @@ arch block_door_closed
 name wall
 face cave1.111
 speed 0.500000
-protected 26
 connected 26
 x 11
 y 23
@@ -4571,7 +4539,6 @@ name 15
 hp 21
 sp 5
 speed 0.000000
-protected 15
 connected 15
 x 12
 end
@@ -4593,7 +4560,6 @@ name 15
 hp 21
 sp 15
 speed 0.000000
-protected 15
 connected 15
 x 12
 y 1
@@ -4704,7 +4670,6 @@ y 10
 end
 arch block_door_closed
 speed 0.500000
-protected 6
 connected 6
 x 12
 y 10
@@ -4769,14 +4734,12 @@ arch altar
 name 5
 slaying small_shield
 food 1
-protected 5
 connected 5
 x 12
 y 16
 end
 arch button_plate
 name 6
-protected 6
 weight 25000
 connected 6
 x 12
@@ -4785,7 +4748,6 @@ end
 arch creator
 name 4
 other_arch small_shield
-protected 4
 connected 4
 x 12
 y 16
@@ -4793,7 +4755,6 @@ end
 arch creator
 name 3
 other_arch small_shield
-protected 3
 connected 3
 x 12
 y 16
@@ -4801,7 +4762,6 @@ end
 arch creator
 name 2
 other_arch small_shield
-protected 2
 connected 2
 x 12
 y 16
@@ -4809,7 +4769,6 @@ end
 arch creator
 name 1
 other_arch small_shield
-protected 1
 connected 1
 x 12
 y 16
@@ -4822,14 +4781,12 @@ arch altar
 name 35
 slaying small_shield
 food 1
-protected 35
 connected 35
 x 12
 y 17
 end
 arch button_plate
 name 36
-protected 36
 weight 25000
 connected 36
 x 12
@@ -4838,7 +4795,6 @@ end
 arch creator
 name 34
 other_arch small_shield
-protected 34
 connected 34
 x 12
 y 17
@@ -4846,7 +4802,6 @@ end
 arch creator
 name 33
 other_arch small_shield
-protected 33
 connected 33
 x 12
 y 17
@@ -4854,7 +4809,6 @@ end
 arch creator
 name 32
 other_arch small_shield
-protected 32
 connected 32
 x 12
 y 17
@@ -4862,7 +4816,6 @@ end
 arch creator
 name 31
 other_arch small_shield
-protected 31
 connected 31
 x 12
 y 17
@@ -4942,7 +4895,6 @@ y 23
 end
 arch block_door_closed
 speed 0.500000
-protected 26
 connected 26
 x 12
 y 23
@@ -5076,7 +5028,6 @@ name 15
 hp 24
 sp 8
 speed 0.000000
-protected 15
 connected 15
 x 13
 end
@@ -5099,7 +5050,6 @@ name 15
 hp 24
 sp 12
 speed 0.000000
-protected 15
 connected 15
 x 13
 y 1
@@ -5210,7 +5160,6 @@ y 10
 end
 arch block_door_closed
 speed 0.500000
-protected 6
 connected 6
 x 13
 y 10
@@ -5275,14 +5224,12 @@ arch altar
 name 15
 slaying small_shield
 food 1
-protected 15
 connected 15
 x 13
 y 16
 end
 arch button_plate
 name 16
-protected 16
 weight 25000
 connected 16
 x 13
@@ -5291,7 +5238,6 @@ end
 arch creator
 name 14
 other_arch small_shield
-protected 14
 connected 14
 x 13
 y 16
@@ -5299,7 +5245,6 @@ end
 arch creator
 name 13
 other_arch small_shield
-protected 13
 connected 13
 x 13
 y 16
@@ -5307,7 +5252,6 @@ end
 arch creator
 name 12
 other_arch small_shield
-protected 12
 connected 12
 x 13
 y 16
@@ -5315,7 +5259,6 @@ end
 arch creator
 name 11
 other_arch small_shield
-protected 11
 connected 11
 x 13
 y 16
@@ -5328,14 +5271,12 @@ arch altar
 name 25
 slaying small_shield
 food 1
-protected 25
 connected 25
 x 13
 y 17
 end
 arch button_plate
 name 26
-protected 26
 weight 25000
 connected 26
 x 13
@@ -5344,7 +5285,6 @@ end
 arch creator
 name 24
 other_arch small_shield
-protected 24
 connected 24
 x 13
 y 17
@@ -5352,7 +5292,6 @@ end
 arch creator
 name 23
 other_arch small_shield
-protected 23
 connected 23
 x 13
 y 17
@@ -5360,7 +5299,6 @@ end
 arch creator
 name 22
 other_arch small_shield
-protected 22
 connected 22
 x 13
 y 17
@@ -5368,7 +5306,6 @@ end
 arch creator
 name 21
 other_arch small_shield
-protected 21
 connected 21
 x 13
 y 17
@@ -5448,7 +5385,6 @@ y 23
 end
 arch block_door_closed
 speed 0.500000
-protected 26
 connected 26
 x 13
 y 23
@@ -5677,7 +5613,6 @@ arch block_door_closed
 name wall
 face cave3.111
 speed 0.500000
-protected 6
 connected 6
 x 14
 y 10
@@ -5840,7 +5775,6 @@ arch block_door_closed
 name wall
 face cave3.111
 speed 0.500000
-protected 26
 connected 26
 x 14
 y 23
@@ -5987,7 +5921,6 @@ name 25
 hp 14
 sp 21
 speed 0.000000
-protected 25
 connected 25
 x 15
 end
@@ -6011,7 +5944,6 @@ name 25
 hp 14
 sp 25
 speed 0.000000
-protected 25
 connected 25
 x 15
 y 1
@@ -6362,7 +6294,6 @@ name 25
 hp 17
 sp 18
 speed 0.000000
-protected 25
 connected 25
 x 16
 end
@@ -6385,7 +6316,6 @@ name 25
 hp 17
 sp 28
 speed 0.000000
-protected 25
 connected 25
 x 16
 y 1
@@ -6747,7 +6677,6 @@ name 25
 hp 21
 sp 18
 speed 0.000000
-protected 25
 connected 25
 x 17
 end
@@ -6770,7 +6699,6 @@ name 25
 hp 21
 sp 28
 speed 0.000000
-protected 25
 connected 25
 x 17
 y 1
@@ -6853,7 +6781,6 @@ x 17
 y 8
 end
 arch button_small
-protected 11
 weight 1000
 connected 11
 x 17
@@ -6898,7 +6825,6 @@ x 17
 y 12
 end
 arch button_small
-protected 14
 weight 1000
 connected 14
 x 17
@@ -7017,7 +6943,6 @@ x 17
 y 21
 end
 arch button_small
-protected 21
 weight 1000
 connected 21
 x 17
@@ -7062,7 +6987,6 @@ x 17
 y 25
 end
 arch button_small
-protected 24
 weight 1000
 connected 24
 x 17
@@ -7227,7 +7151,6 @@ name 25
 hp 24
 sp 21
 speed 0.000000
-protected 25
 connected 25
 x 18
 end
@@ -7251,7 +7174,6 @@ name 25
 hp 24
 sp 25
 speed 0.000000
-protected 25
 connected 25
 x 18
 y 1
@@ -7689,7 +7611,6 @@ name 16
 msg
 You hear the sound of moving rock.
 endmsg
-protected 16
 connected 16
 walk_on 0
 fly_on 0
@@ -7703,7 +7624,6 @@ Oh my god - the statues are moving!
 Suddenly they rise their mechanical
 arms... to unleash a fiery inferno!
 endmsg
-protected 15
 connected 15
 walk_on 0
 fly_on 0
@@ -7758,7 +7678,6 @@ arch block_door_closed
 name wall
 face cave2.111
 speed 0.500000
-protected 16
 connected 16
 x 19
 y 15
@@ -7787,7 +7706,6 @@ end
 arch block_door_closed
 name wall
 speed 0.500000
-protected 16
 connected 16
 x 19
 y 16
@@ -7816,7 +7734,6 @@ end
 arch block_door_closed
 name wall
 speed 0.500000
-protected 16
 connected 16
 x 19
 y 17
@@ -7833,7 +7750,6 @@ arch block_door_closed
 name wall
 face cave4.111
 speed 0.500000
-protected 16
 connected 16
 x 19
 y 18
@@ -7879,7 +7795,6 @@ name 26
 msg
 You hear the sound of moving rock.
 endmsg
-protected 26
 connected 26
 walk_on 0
 fly_on 0
@@ -7893,7 +7808,6 @@ Oh my god - the statues are moving!
 Suddenly they rise their mechanical
 arms... to unleash a sparkling inferno!
 endmsg
-protected 25
 connected 25
 walk_on 0
 fly_on 0
@@ -8034,7 +7948,6 @@ name 35
 hp 1
 sp 21
 speed 0.000000
-protected 35
 connected 35
 x 20
 end
@@ -8054,7 +7967,6 @@ name 35
 hp 1
 sp 25
 speed 0.000000
-protected 35
 connected 35
 x 20
 y 1
@@ -8388,7 +8300,6 @@ name 35
 hp 4
 sp 18
 speed 0.000000
-protected 35
 connected 35
 x 21
 end
@@ -8408,7 +8319,6 @@ name 35
 hp 4
 sp 28
 speed 0.000000
-protected 35
 connected 35
 x 21
 y 1
@@ -8487,7 +8397,6 @@ x 21
 y 8
 end
 arch button_small
-protected 12
 weight 1000
 connected 12
 x 21
@@ -8532,7 +8441,6 @@ x 21
 y 12
 end
 arch button_small
-protected 13
 weight 1000
 connected 13
 x 21
@@ -8651,7 +8559,6 @@ x 21
 y 21
 end
 arch button_small
-protected 22
 weight 1000
 connected 22
 x 21
@@ -8696,7 +8603,6 @@ x 21
 y 25
 end
 arch button_small
-protected 23
 weight 1000
 connected 23
 x 21
@@ -8830,7 +8736,6 @@ name 35
 hp 8
 sp 18
 speed 0.000000
-protected 35
 connected 35
 x 22
 end
@@ -8850,7 +8755,6 @@ name 35
 hp 8
 sp 28
 speed 0.000000
-protected 35
 connected 35
 x 22
 y 1
@@ -9184,7 +9088,6 @@ name 35
 hp 11
 sp 21
 speed 0.000000
-protected 35
 connected 35
 x 23
 end
@@ -9204,7 +9107,6 @@ name 35
 hp 11
 sp 25
 speed 0.000000
-protected 35
 connected 35
 x 23
 y 1

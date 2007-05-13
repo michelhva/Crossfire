@@ -542,7 +542,6 @@ arch igate_closed_1
 x 6
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -658,7 +657,6 @@ arch igate_closed_1
 x 7
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -755,7 +753,6 @@ arch igate_closed_1
 x 8
 y 12
 speed 0.500000
-protected 1
 connected 1
 end
 arch pstone_1
@@ -859,7 +856,6 @@ end
 arch button_lever
 x 9
 y 13
-protected 1
 connected 1
 end
 arch grass
@@ -932,7 +928,6 @@ end
 arch button_lever
 x 10
 y 9
-protected 1
 connected 1
 end
 arch afloor_right
@@ -1396,21 +1391,18 @@ arch button_small
 name 12 - special
 x 17
 y 1
-protected 12
 connected 12
 end
 arch button_small
 name 11
 x 17
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 17
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1421,21 +1413,18 @@ arch button_small
 name 21
 x 17
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 17
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 17
 y 7
-protected 21
 connected 21
 end
 arch blocked
@@ -1457,7 +1446,6 @@ sp 5
 x 17
 y 11
 speed 0.000000
-protected 11
 connected 11
 end
 arch diamond_converter
@@ -1480,7 +1468,6 @@ arch button_small
 name 31 - put sign
 x 17
 y 14
-protected 31
 weight 20000
 connected 31
 end
@@ -1489,7 +1476,6 @@ name 21
 other_arch small_shield
 x 17
 y 14
-protected 21
 connected 21
 end
 arch creator
@@ -1497,7 +1483,6 @@ name 11
 other_arch small_shield
 x 17
 y 14
-protected 11
 connected 11
 end
 arch blocked
@@ -1511,21 +1496,18 @@ arch button_small
 name 11
 x 18
 y 1
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 18
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 18
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1536,21 +1518,18 @@ arch button_small
 name 21
 x 18
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 18
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 22 - special
 x 18
 y 7
-protected 22
 connected 22
 end
 arch blocked
@@ -1572,7 +1551,6 @@ sp 5
 x 18
 y 11
 speed 0.000000
-protected 12
 connected 12
 end
 arch diamond_converter
@@ -1606,21 +1584,18 @@ arch button_small
 name 11
 x 19
 y 1
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 19
 y 2
-protected 11
 connected 11
 end
 arch button_small
 name 11
 x 19
 y 3
-protected 11
 connected 11
 end
 arch blocked
@@ -1631,21 +1606,18 @@ arch button_small
 name 21
 x 19
 y 5
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 19
 y 6
-protected 21
 connected 21
 end
 arch button_small
 name 21
 x 19
 y 7
-protected 21
 connected 21
 end
 arch blocked
@@ -1667,7 +1639,6 @@ sp 5
 x 19
 y 11
 speed 0.000000
-protected 21
 connected 21
 end
 arch diamond_converter
@@ -1690,7 +1661,6 @@ arch button_small
 name 32 - put altar
 x 19
 y 14
-protected 32
 weight 20000
 connected 32
 end
@@ -1699,7 +1669,6 @@ name 22
 other_arch small_shield
 x 19
 y 14
-protected 22
 connected 22
 end
 arch creator
@@ -1707,7 +1676,6 @@ name 12
 other_arch small_shield
 x 19
 y 14
-protected 12
 connected 12
 end
 arch blocked
@@ -1764,7 +1732,6 @@ sp 5
 x 20
 y 11
 speed 0.000000
-protected 22
 connected 22
 end
 arch diamond_converter
@@ -1795,7 +1762,6 @@ arch pit_closed
 hp 7
 sp 8
 x 21
-protected 71
 connected 71
 end
 arch potionstr
@@ -1811,7 +1777,6 @@ hp 7
 sp 8
 x 21
 y 2
-protected 72
 connected 72
 end
 arch rod_heavy
@@ -1881,7 +1846,6 @@ sp 8
 x 21
 y 13
 speed 0.000000
-protected 31
 connected 31
 end
 arch sign
@@ -1898,7 +1862,6 @@ sp 8
 x 21
 y 14
 speed 0.000000
-protected 32
 connected 32
 end
 arch altar
@@ -1907,7 +1870,6 @@ slaying largenugget
 food 10000
 x 21
 y 14
-protected 100
 connected 100
 end
 arch blocked
@@ -1932,19 +1894,16 @@ end
 arch button_small
 x 22
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 22
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 22
 y 6
-protected 73
 connected 73
 end
 arch blocked
@@ -1995,7 +1954,6 @@ hp 7
 sp 8
 x 23
 y 2
-protected 73
 connected 73
 end
 arch random_artifact
@@ -2009,19 +1967,16 @@ end
 arch button_small
 x 23
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 23
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 23
 y 6
-protected 73
 connected 73
 end
 arch blocked
@@ -2065,7 +2020,6 @@ hp 23
 sp 5
 x 23
 y 14
-protected 100
 connected 100
 end
 arch scroll
@@ -2094,19 +2048,16 @@ end
 arch button_small
 x 24
 y 4
-protected 71
 connected 71
 end
 arch button_small
 x 24
 y 5
-protected 72
 connected 72
 end
 arch button_small
 x 24
 y 6
-protected 73
 connected 73
 end
 arch blocked

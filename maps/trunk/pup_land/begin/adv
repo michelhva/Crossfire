@@ -566,7 +566,6 @@ end
 arch button_handle
 x 5
 y 9
-protected 1
 connected 1
 end
 arch marble
@@ -837,19 +836,16 @@ end
 arch button_small
 x 9
 y 2
-protected 11
 connected 11
 end
 arch button_small
 x 9
 y 3
-protected 14
 connected 14
 end
 arch button_small
 x 9
 y 4
-protected 17
 connected 17
 end
 arch blocked
@@ -871,7 +867,6 @@ sp 3
 x 9
 y 8
 speed 0.000000
-protected 11
 connected 11
 end
 arch note
@@ -894,7 +889,6 @@ sp 3
 x 9
 y 9
 speed 0.000000
-protected 14
 connected 14
 end
 arch note
@@ -921,7 +915,6 @@ sp 3
 x 9
 y 10
 speed 0.000000
-protected 17
 connected 17
 end
 arch note
@@ -959,7 +952,6 @@ hp 10
 sp 3
 x 10
 speed 0.500000
-protected 1
 connected 1
 end
 arch orcchop
@@ -972,19 +964,16 @@ end
 arch button_small
 x 10
 y 2
-protected 12
 connected 12
 end
 arch button_small
 x 10
 y 3
-protected 15
 connected 15
 end
 arch button_small
 x 10
 y 4
-protected 18
 connected 18
 end
 arch blocked
@@ -1006,7 +995,6 @@ sp 3
 x 10
 y 8
 speed 0.000000
-protected 12
 connected 12
 end
 arch note
@@ -1032,7 +1020,6 @@ sp 3
 x 10
 y 9
 speed 0.000000
-protected 15
 connected 15
 end
 arch note
@@ -1056,7 +1043,6 @@ sp 3
 x 10
 y 10
 speed 0.000000
-protected 18
 connected 18
 end
 arch note
@@ -1097,19 +1083,16 @@ end
 arch button_small
 x 11
 y 2
-protected 13
 connected 13
 end
 arch button_small
 x 11
 y 3
-protected 16
 connected 16
 end
 arch button_small
 x 11
 y 4
-protected 19
 connected 19
 end
 arch blocked
@@ -1131,7 +1114,6 @@ sp 3
 x 11
 y 8
 speed 0.000000
-protected 13
 connected 13
 end
 arch note
@@ -1156,7 +1138,6 @@ sp 3
 x 11
 y 9
 speed 0.000000
-protected 16
 connected 16
 end
 arch note
@@ -1176,7 +1157,6 @@ sp 3
 x 11
 y 10
 speed 0.000000
-protected 19
 connected 19
 end
 arch note

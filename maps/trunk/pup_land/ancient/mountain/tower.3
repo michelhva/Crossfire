@@ -1,13 +1,13 @@
 arch map
-region ancientpupland
 name Tower
+region ancientpupland
+width 19
+height 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  1 05:31:00 1996
 endmsg
-x 19
-y 19
 end
 arch generate_zombie
 end
@@ -73,7 +73,6 @@ hp 4
 sp 12
 x 1
 y 1
-protected 2
 connected 2
 end
 arch pit_closed
@@ -81,7 +80,6 @@ hp 4
 sp 12
 x 1
 y 2
-protected 2
 connected 2
 end
 arch generate_zombie
@@ -176,7 +174,6 @@ hp 4
 sp 12
 x 2
 y 1
-protected 2
 connected 2
 end
 arch pit_closed
@@ -184,7 +181,6 @@ hp 4
 sp 12
 x 2
 y 2
-protected 2
 connected 2
 end
 arch generate_zombie
@@ -321,7 +317,6 @@ hp 4
 sp 12
 x 3
 y 1
-protected 2
 connected 2
 end
 arch pit_closed
@@ -329,7 +324,6 @@ hp 4
 sp 12
 x 3
 y 2
-protected 2
 connected 2
 end
 arch generate_zombie
@@ -463,7 +457,6 @@ hp 4
 sp 12
 x 4
 y 1
-protected 2
 connected 2
 end
 arch pit_closed
@@ -471,7 +464,6 @@ hp 4
 sp 12
 x 4
 y 2
-protected 2
 connected 2
 end
 arch generate_zombie
@@ -567,14 +559,12 @@ Click.
 endmsg
 x 4
 y 12
-protected 3
 connected 3
 end
 arch pedestal
 name 10
 x 4
 y 12
-protected 10
 connected 10
 end
 arch magic_mouth
@@ -586,7 +576,6 @@ Necromancy, right? Forget it!
 endmsg
 x 4
 y 12
-protected 11
 connected 11
 walk_on 0
 fly_on 0
@@ -669,7 +658,6 @@ hp 4
 sp 12
 x 5
 y 1
-protected 2
 connected 2
 end
 arch pit_closed
@@ -677,7 +665,6 @@ hp 4
 sp 12
 x 5
 y 2
-protected 2
 connected 2
 end
 arch generate_zombie
@@ -921,7 +908,6 @@ arch pedestal
 name 4
 x 6
 y 11
-protected 4
 connected 4
 end
 arch flagstone
@@ -936,7 +922,6 @@ arch pedestal
 name 4
 x 6
 y 12
-protected 4
 connected 4
 end
 arch magic_mouth
@@ -946,7 +931,6 @@ words...
 endmsg
 x 6
 y 12
-protected 14
 connected 14
 walk_on 0
 fly_on 0
@@ -963,7 +947,6 @@ arch pedestal
 name 4
 x 6
 y 13
-protected 4
 connected 4
 end
 arch flagstone
@@ -1101,7 +1084,6 @@ end
 arch pedestal
 x 7
 y 11
-protected 15
 connected 15
 end
 arch flagstone
@@ -1310,8 +1292,11 @@ ac -35
 x 8
 y 12
 level 50
-immune 1180673
 attacktype 1
+resist_physical 100
+resist_poison 100
+resist_death 100
+resist_godpower 100
 carrying 75100
 randomitems none
 arch corpse
@@ -1469,7 +1454,6 @@ Click.
 endmsg
 x 9
 y 12
-protected 3
 connected 3
 end
 arch flagstone
@@ -1528,7 +1512,6 @@ arch grate_open_2
 name 4
 x 10
 speed 0.500000
-protected 4
 value 1
 connected 4
 end
@@ -1540,7 +1523,6 @@ name 3
 x 10
 y 1
 speed 0.500000
-protected 3
 connected 3
 end
 arch blocked
@@ -1670,7 +1652,6 @@ end
 arch button_small
 name 2 - summon_zombies
 x 11
-protected 2
 connected 2
 end
 arch blocked
@@ -1947,7 +1928,6 @@ arch button_small
 name 11
 x 13
 y 1
-protected 11
 weight 1000
 connected 11
 end
@@ -1956,14 +1936,12 @@ name 10
 other_arch boulder
 x 13
 y 1
-protected 10
 connected 10
 end
 arch button_small
 name 14
 x 13
 y 2
-protected 14
 weight 1000
 connected 14
 end
@@ -1972,7 +1950,6 @@ name 4
 other_arch boulder
 x 13
 y 2
-protected 4
 connected 4
 end
 arch magic_mouth
@@ -1985,14 +1962,12 @@ my true strenght!
 endmsg
 x 13
 y 3
-protected 16
 connected 16
 end
 arch button_small
 name 16
 x 13
 y 3
-protected 16
 weight 1000
 connected 16
 end
@@ -2001,7 +1976,6 @@ name 15
 other_arch boulder
 x 13
 y 3
-protected 15
 connected 15
 end
 arch blocked
@@ -2187,7 +2161,6 @@ arch grate_closed_2
 x 14
 y 8
 speed 0.500000
-protected 2
 connected 2
 end
 arch flagstone
@@ -2262,7 +2235,6 @@ arch grate_closed_2
 x 14
 y 16
 speed 0.500000
-protected 2
 connected 2
 end
 arch flagstone

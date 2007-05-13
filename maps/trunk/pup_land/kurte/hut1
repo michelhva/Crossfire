@@ -930,6 +930,10 @@ arch cobblestones2
 x 9
 y 7
 end
+arch pentagram_111
+x 9
+y 7
+end
 arch cobblestones2
 x 9
 y 8
@@ -2896,7 +2900,6 @@ sp 7
 x 29
 y 19
 connected 1
-protected 1
 end
 arch scroll
 name scroll - obsolete (?)
@@ -2914,8 +2917,4 @@ o:others
 endmsg
 x 29
 y 19
-end
-arch pentagram_111
-x 9
-y 7
 end
