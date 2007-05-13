@@ -1630,6 +1630,16 @@ arch random_wealth
 x 8
 y 10
 end
+arch big_dragon
+name red hideous dragon
+exp 10000
+x 8
+y 10
+carrying 30000
+can_cast_spell 0
+arch kobold
+end
+end
 arch small_stones
 x 8
 y 11
@@ -2722,6 +2732,10 @@ arch small_stones
 x 14
 y 3
 end
+arch dread
+x 14
+y 3
+end
 arch small_stones
 x 14
 y 4
@@ -3481,6 +3495,22 @@ end
 arch small_stones
 x 18
 y 12
+end
+arch big_dragon
+name Infyrana
+Int 5
+hp 20000
+maxhp 20000
+maxsp 80
+exp 200000
+dam 40
+wc -25
+ac -16
+x 18
+y 12
+speed -0.500000
+level 80
+resist_physical 0
 end
 arch small_stones
 x 18
@@ -7637,34 +7667,4 @@ end
 arch mine12
 x 39
 y 32
-end
-arch big_dragon
-name red hideous dragon
-exp 10000
-x 8
-y 10
-carrying 30000
-can_cast_spell 0
-arch kobold
-end
-end
-arch dread
-x 14
-y 3
-end
-arch big_dragon
-name Infyrana
-Int 5
-hp 20000
-maxhp 20000
-maxsp 80
-exp 200000
-dam 40
-wc -25
-ac -16
-x 18
-y 12
-speed -0.500000
-level 80
-armour 0
 end
