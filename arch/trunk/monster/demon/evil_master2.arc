@@ -32,7 +32,6 @@ weight 75000
 run_away 3
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 no_pick 1
 is_animated 1
@@ -40,7 +39,6 @@ monster 1
 move_type walk fly_low
 see_invisible 1
 unaggressive 1
-can_apply 1
 will_apply 1
 can_cast_spell 1
 can_use_scroll 1

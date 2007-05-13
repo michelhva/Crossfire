@@ -47,7 +47,6 @@ weight 500000
 editable 1
 pick_up 24
 will_apply 2
-can_apply 24
 run_away 10
 can_use_scroll 1
 can_use_skill 1
