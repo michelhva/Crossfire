@@ -1,15 +1,15 @@
 arch map
 name raffle
+swap_time 5
+reset_timeout 3600
+fixed_resettime 1
+width 18
+height 18
 msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Tue Dec 22 21:07:40 1998
 endmsg
-x 18
-y 18
-value 5
-weight 3600
-stand_still 1
 end
 arch dwall_2_2_2
 y 1
@@ -853,12 +853,12 @@ end
 arch leather_armour
 name Yoroi of Banzai
 ac 4
-armour 10
 x 12
 y 1
-immune 131072
+resist_death 100
 value 100000
 weight 5000
+armour 10
 end
 arch swall_2_1_2
 x 12
