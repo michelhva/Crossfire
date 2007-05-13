@@ -17,7 +17,7 @@ attacktype 33
 resist_confusion 100
 path_attuned 65536
 path_repelled 131088
-armour 50
+resist_physical 50
 ac -7
 wc -1
 dam 40
