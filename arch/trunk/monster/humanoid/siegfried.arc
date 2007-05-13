@@ -25,7 +25,6 @@ weight 50000
 randomitems warrior_1
 pick_up 24
 will_apply 2
-can_apply 25
 alive 1
 monster 1
 move_type walk

@@ -30,7 +30,6 @@ speed 0.5
 weight 50000
 pick_up 24
 will_apply 2
-can_apply 24
 run_away 30
 can_use_scroll 1
 can_use_skill 1
