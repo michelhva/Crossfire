@@ -22,7 +22,6 @@ weight 50000
 resist_physical 20
 level 5
 can_use_skill 1
-can_use_wand 1
 can_use_rod 1
 can_use_bow 1
 can_use_ring 1
