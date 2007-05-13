@@ -134,7 +134,7 @@ hp 2000
 exp 100000
 x 1
 y 1
-immune 16
+resist_cold 100
 arch skill_evocation
 end
 arch skill_summoning
@@ -188,7 +188,7 @@ hp 1000
 exp 50000
 x 1
 y 7
-immune 4
+resist_fire 100
 arch skill_summoning
 end
 arch spell_summon_earth_elemental
@@ -993,8 +993,8 @@ attack_movement 7
 level 10
 type 0
 carrying 2300
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1
@@ -1139,8 +1139,10 @@ hp 4000
 exp 200000
 x 8
 y 1
-speed 1.000000
-immune 21
+speed 1.0
+resist_physical 100
+resist_fire 100
+resist_cold 100
 arch spell_paralyze
 end
 arch spell_large_lightning
@@ -1899,14 +1901,15 @@ speed 1.000000
 attack_movement 7
 level 50
 type 0
+resist_physical 100
+resist_magic 100
 carrying 5000
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-immune 3
 arch spell_fear
 end
 arch spell_large_icestorm
@@ -1984,10 +1987,11 @@ y 1
 speed 1.000000
 level 40
 type 0
-monster 1
+resist_physical 100
+resist_magic 100
 move_type walk
+monster 1
 can_cast_spell 1
-immune 3
 arch spell_mass_confusion
 end
 arch spell_fear
@@ -2176,8 +2180,8 @@ attack_movement 7
 level 10
 type 0
 carrying 2300
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_wand 1

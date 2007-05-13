@@ -1,13 +1,13 @@
 arch map
 name Mwizard5
 region lakecountry
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 04:35:35 1995
 endmsg
-width 30
-height 30
 end
 arch flagstone
 end
@@ -479,14 +479,14 @@ x 2
 y 6
 end
 arch altar
+slaying Dragon Ball
 msg
 Behold the mighty Dragon Ball..
 endmsg
-slaying Dragon Ball
 food 1
-connected 59
 x 2
 y 6
+connected 59
 end
 arch flagstone
 x 2
@@ -521,6 +521,10 @@ x 2
 y 13
 end
 arch flagstone
+x 2
+y 14
+end
+arch chinese_dragon
 x 2
 y 14
 end
@@ -698,6 +702,10 @@ arch flagstone
 x 3
 y 19
 end
+arch chinese_dragon
+x 3
+y 19
+end
 arch flagstone
 x 3
 y 20
@@ -780,6 +788,36 @@ arch flagstone
 x 4
 y 6
 end
+arch dragonman
+name Dragon Lord
+hp 5000
+x 4
+y 6
+speed 1.0
+speed_left -2.040000
+level 30
+resist_cold 100
+carrying 25000
+arch spell_burning_hands
+end
+arch abil_burning_hands
+end
+arch spell_small_speedball
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch spell_icestorm
+end
+arch dragon_scale
+name Dragon Ball
+face shell.111
+value 10000
+end
+arch spell_sm_lightning
+end
+end
 arch flagstone
 x 4
 y 7
@@ -825,6 +863,10 @@ x 4
 y 15
 end
 arch flagstone
+x 4
+y 16
+end
+arch chinese_dragon
 x 4
 y 16
 end
@@ -1100,6 +1142,10 @@ arch flagstone
 x 6
 y 14
 end
+arch chinese_dragon
+x 6
+y 14
+end
 arch flagstone
 x 6
 y 15
@@ -1129,6 +1175,10 @@ x 6
 y 21
 end
 arch flagstone
+x 6
+y 22
+end
+arch chinese_dragon
 x 6
 y 22
 end
@@ -1202,6 +1252,19 @@ arch flagstone
 x 7
 y 3
 end
+arch dragonman
+name White Dragon Master
+x 7
+y 3
+speed 1.000000
+speed_left -0.790000
+level 29
+resist_cold 100
+arch spell_icestorm
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 7
 y 4
@@ -1246,6 +1309,17 @@ arch stol_king_2
 x 7
 y 10
 end
+arch dragonman
+name Blue Dragon Master
+x 7
+y 10
+speed 1.000000
+speed_left -0.320000
+level 29
+resist_cold 100
+arch spell_sm_lightning
+end
+end
 arch flagstone
 x 7
 y 11
@@ -1283,6 +1357,10 @@ x 7
 y 18
 end
 arch flagstone
+x 7
+y 19
+end
+arch chinese_dragon
 x 7
 y 19
 end
@@ -1585,6 +1663,10 @@ arch flagstone
 x 9
 y 17
 end
+arch chinese_dragon
+x 9
+y 17
+end
 arch flagstone
 x 9
 y 18
@@ -1678,6 +1760,19 @@ end
 arch flagstone
 x 10
 y 6
+end
+arch dragonman
+name Red Dragon Master
+x 10
+y 6
+speed 1.000000
+speed_left -0.860000
+level 29
+resist_cold 100
+arch spell_burning_hands
+end
+arch abil_burning_hands
+end
 end
 arch flagstone
 x 10
@@ -1739,6 +1834,10 @@ arch flagstone
 x 10
 y 19
 end
+arch chinese_dragon
+x 10
+y 19
+end
 arch flagstone
 x 10
 y 20
@@ -1748,6 +1847,10 @@ x 10
 y 21
 end
 arch flagstone
+x 10
+y 22
+end
+arch chinese_dragon
 x 10
 y 22
 end
@@ -1768,30 +1871,30 @@ x 10
 y 25
 end
 arch grate_closed_2
-speed 0.500000
-connected 59
 x 10
 y 25
+speed 0.500000
+connected 59
 end
 arch flagstone
 x 10
 y 26
 end
 arch grate_closed_2
-speed 0.500000
-connected 59
 x 10
 y 26
+speed 0.500000
+connected 59
 end
 arch flagstone
 x 10
 y 27
 end
 arch grate_closed_2
-speed 0.500000
-connected 59
 x 10
 y 27
+speed 0.500000
+connected 59
 end
 arch flagstone
 x 10
@@ -1880,6 +1983,10 @@ x 11
 y 14
 end
 arch flagstone
+x 11
+y 15
+end
+arch chinese_dragon
 x 11
 y 15
 end
@@ -2258,11 +2365,11 @@ end
 arch lich
 name Vecna
 hp 5000
+x 13
+y 26
 speed 1.000000
 level 30
 carrying 275
-x 13
-y 26
 arch note
 name Dark Parchment
 msg
@@ -2272,14 +2379,14 @@ endmsg
 end
 arch key2
 name Eye of Vecna
-face behold_eye.111
 slaying eye
+face behold_eye.111
 value 20000
 end
 arch key2
 name Hand of Vecna
-face mystic_fist.111
 slaying hand
+face mystic_fist.111
 value 20000
 end
 end
@@ -2563,6 +2670,10 @@ arch flagstone
 x 15
 y 2
 end
+arch big_elec
+x 15
+y 2
+end
 arch flagstone
 x 15
 y 3
@@ -2741,6 +2852,10 @@ arch flagstone
 x 16
 y 9
 end
+arch big_elec
+x 16
+y 9
+end
 arch flagstone
 x 16
 y 10
@@ -2778,6 +2893,10 @@ x 16
 y 17
 end
 arch flagstone
+x 16
+y 18
+end
+arch big_dragon
 x 16
 y 18
 end
@@ -2867,6 +2986,10 @@ arch flagstone
 x 17
 y 6
 end
+arch big_elec
+x 17
+y 6
+end
 arch flagstone
 x 17
 y 7
@@ -2911,6 +3034,10 @@ arch flagstone
 x 17
 y 16
 end
+arch big_dragon
+x 17
+y 16
+end
 arch flagstone
 x 17
 y 17
@@ -2944,6 +3071,10 @@ x 17
 y 24
 end
 arch flagstone
+x 17
+y 25
+end
+arch big_dragon
 x 17
 y 25
 end
@@ -2990,6 +3121,10 @@ x 18
 y 2
 end
 arch flagstone
+x 18
+y 3
+end
+arch big_elec
 x 18
 y 3
 end
@@ -3069,6 +3204,10 @@ arch flagstone
 x 18
 y 21
 end
+arch big_dragon
+x 18
+y 21
+end
 arch flagstone
 x 18
 y 22
@@ -3152,6 +3291,10 @@ x 19
 y 8
 end
 arch flagstone
+x 19
+y 9
+end
+arch big_elec
 x 19
 y 9
 end
@@ -3317,6 +3460,10 @@ arch flagstone
 x 20
 y 14
 end
+arch big_dragon
+x 20
+y 14
+end
 arch flagstone
 x 20
 y 15
@@ -3354,6 +3501,10 @@ x 20
 y 23
 end
 arch flagstone
+x 20
+y 24
+end
+arch big_dragon
 x 20
 y 24
 end
@@ -3404,6 +3555,10 @@ x 21
 y 2
 end
 arch flagstone
+x 21
+y 3
+end
+arch big_elec
 x 21
 y 3
 end
@@ -3471,6 +3626,10 @@ arch flagstone
 x 21
 y 18
 end
+arch big_dragon
+x 21
+y 18
+end
 arch flagstone
 x 21
 y 19
@@ -3558,6 +3717,10 @@ x 22
 y 6
 end
 arch flagstone
+x 22
+y 7
+end
+arch big_elec
 x 22
 y 7
 end
@@ -3747,6 +3910,10 @@ arch flagstone
 x 23
 y 16
 end
+arch big_dragon
+x 23
+y 16
+end
 arch flagstone
 x 23
 y 17
@@ -3767,6 +3934,10 @@ arch flagstone
 x 23
 y 21
 end
+arch big_dragon
+x 23
+y 21
+end
 arch flagstone
 x 23
 y 22
@@ -3776,6 +3947,10 @@ x 23
 y 23
 end
 arch flagstone
+x 23
+y 24
+end
+arch big_dragon
 x 23
 y 24
 end
@@ -3826,6 +4001,10 @@ x 24
 y 2
 end
 arch flagstone
+x 24
+y 3
+end
+arch big_elec
 x 24
 y 3
 end
@@ -3983,6 +4162,10 @@ arch flagstone
 x 25
 y 6
 end
+arch big_elec
+x 25
+y 6
+end
 arch flagstone
 x 25
 y 7
@@ -3992,6 +4175,10 @@ x 25
 y 8
 end
 arch flagstone
+x 25
+y 9
+end
+arch big_elec
 x 25
 y 9
 end
@@ -4838,191 +5025,4 @@ end
 arch cwall_2_2_4
 x 29
 y 29
-end
-arch chinese_dragon
-x 2
-y 14
-end
-arch chinese_dragon
-x 3
-y 19
-end
-arch dragonman
-name Dragon Lord
-hp 5000
-speed 1.000000
-speed_left -2.040000
-level 30
-immune 28
-carrying 25000
-x 4
-y 6
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch spell_small_speedball
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch dragon_scale
-name Dragon Ball
-face shell.111
-value 10000
-end
-arch spell_sm_lightning
-end
-end
-arch chinese_dragon
-x 4
-y 16
-end
-arch chinese_dragon
-x 6
-y 14
-end
-arch chinese_dragon
-x 6
-y 22
-end
-arch dragonman
-name White Dragon Master
-speed 1.000000
-speed_left -0.790000
-level 29
-immune 28
-x 7
-y 3
-arch spell_icestorm
-end
-arch abil_icestorm
-end
-end
-arch dragonman
-name Blue Dragon Master
-speed 1.000000
-speed_left -0.320000
-level 29
-immune 28
-x 7
-y 10
-arch spell_sm_lightning
-end
-end
-arch chinese_dragon
-x 7
-y 19
-end
-arch chinese_dragon
-x 9
-y 17
-end
-arch dragonman
-name Red Dragon Master
-speed 1.000000
-speed_left -0.860000
-level 29
-immune 28
-x 10
-y 6
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-end
-arch chinese_dragon
-x 10
-y 19
-end
-arch chinese_dragon
-x 10
-y 22
-end
-arch chinese_dragon
-x 11
-y 15
-end
-arch big_elec
-x 15
-y 2
-end
-arch big_elec
-x 16
-y 9
-end
-arch big_dragon
-x 16
-y 18
-end
-arch big_elec
-x 17
-y 6
-end
-arch big_dragon
-x 17
-y 16
-end
-arch big_dragon
-x 17
-y 25
-end
-arch big_elec
-x 18
-y 3
-end
-arch big_dragon
-x 18
-y 21
-end
-arch big_elec
-x 19
-y 9
-end
-arch big_dragon
-x 20
-y 14
-end
-arch big_dragon
-x 20
-y 24
-end
-arch big_elec
-x 21
-y 3
-end
-arch big_dragon
-x 21
-y 18
-end
-arch big_elec
-x 22
-y 7
-end
-arch big_dragon
-x 23
-y 16
-end
-arch big_dragon
-x 23
-y 21
-end
-arch big_dragon
-x 23
-y 24
-end
-arch big_elec
-x 24
-y 3
-end
-arch big_elec
-x 25
-y 6
-end
-arch big_elec
-x 25
-y 9
 end
