@@ -35,6 +35,7 @@ def do_help():
 	whoami.Say(' - light')
 	whoami.Say(' - attacktype')
 	whoami.Say(' - players')
+	whoami.Say(' - checkinv')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -61,7 +62,7 @@ def do_maps():
 	maps = Crossfire.GetMaps()
 	whoami.Say('%d maps loaded'%len(maps))
 	for map in maps:
-		whoami.Say('%s   -> %d players'%(map.Name,map.Players))
+		whoami.Say('%s [%d]   -> %d players'%(map.Name, map.Unique, map.Players))
 #activator=Crossfire.WhoIsActivator()
 	whoami.Say('this map is %s, size %d, %d'%(whoami.Map.Name, whoami.Map.Width, whoami.Map.Height))
 	if (len(topic) > 1):
@@ -146,6 +147,7 @@ def do_resist():
 def do_basics():
 	whoami.Say('Basic test')
 	whoami.Say(' your type is %d'%who.Type)
+	whoami.Say(' your race is %s'%who.Race)
 	whoami.Say(' your level is %d'%who.Level)
 	whoami.Say(' your nrof is %d'%who.Quantity)
 	whoami.Say(' your weight is %d'%who.Weight)
@@ -335,6 +337,17 @@ def do_players():
 	for pl in players:
 		whoami.Say(' - %s'%pl.Name)
 
+def do_checkinv():
+	if len(topic) > 1:
+		what = topic[1]
+	else:
+		what = 'force'
+	find = who.CheckInventory(what)
+	if find:
+		whoami.Say('Found %s in your inventory.'%find.Name)
+	else:
+		whoami.Say('Can\'t find %s in your inventory.'%what)
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -396,5 +409,7 @@ elif topic[0] == 'attacktype':
 	do_attacktype()
 elif topic[0] == 'players':
 	do_players()
+elif topic[0] == 'checkinv':
+	do_checkinv()
 else:
 	do_help()

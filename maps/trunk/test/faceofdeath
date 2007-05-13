@@ -1,4 +1,7 @@
 arch map
+name <unnamed>
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -14,5 +17,5 @@ arch goblin
 name magic immune goblin
 x 8
 y 4
-immune 2
+resist_magic 100
 end
