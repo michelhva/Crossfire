@@ -11,5 +11,5 @@ weight 1500
 editable 2048
 name_pl waters
 client_type 611
-slaying vial_poison:water_poison
+on_use_with_vial_poison remove $1 remove $2 add water_poison
 end
