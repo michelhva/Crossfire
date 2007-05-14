@@ -67,4 +67,5 @@ alive 1
 level 1
 editable 768
 visibility 100
+map_layer living
 end
