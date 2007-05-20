@@ -18,8 +18,7 @@ snowball.181
 mina
 is_animated 0
 is_turnable 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 glow_radius 2
 speed 1
 move_type fly_low
