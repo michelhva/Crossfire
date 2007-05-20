@@ -5,8 +5,7 @@ Object spiderweb_cone
 name spider web
 other_arch spider_web2
 face spider_web.111
-walk_on 1
-fly_on 1
+move_on walk fly_low
 wc -90
 move_type fly_low
 type 102

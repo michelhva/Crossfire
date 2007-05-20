@@ -2,8 +2,7 @@ Object counterspell
 name counterspell
 type 102
 subtype 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 face counterspell.111
 color_fg light_blue
 wc -30

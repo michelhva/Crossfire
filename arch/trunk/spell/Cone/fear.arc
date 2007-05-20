@@ -1,8 +1,7 @@
 Object fear
 type 102
 subtype 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 face fear.111
 anim
 fear.111
