@@ -1,0 +1,655 @@
+arch map
+name Lursendis's house
+width 10
+height 10
+enter_x 8
+enter_y 4
+msg
+Creator: ryo
+Date:    2007-05-23
+endmsg
+end
+arch bluemarblemedium
+end
+arch wwall_2_2_2
+end
+arch bluemarblemedium
+y 1
+end
+arch wwall_2_1_1
+y 1
+end
+arch bluemarblemedium
+y 2
+end
+arch wwall_2_1_1
+y 2
+end
+arch bluemarblemedium
+y 3
+end
+arch wwall_2_1_1
+y 3
+end
+arch bluemarblemedium
+y 4
+end
+arch wwall_2_1_1
+y 4
+end
+arch bluemarblemedium
+y 5
+end
+arch wwall_2_1_1
+y 5
+end
+arch bluemarblemedium
+y 6
+end
+arch wwall_2_1_1
+y 6
+end
+arch bluemarblemedium
+y 7
+end
+arch wwall_2_1_1
+y 7
+end
+arch bluemarblemedium
+y 8
+end
+arch wwall_2_1_1
+y 8
+end
+arch bluemarblemedium
+y 9
+end
+arch wwall_2_2_1
+y 9
+end
+arch bluemarblemedium
+x 1
+end
+arch wwall_2_1_2
+x 1
+end
+arch bluemarblemedium
+x 1
+y 1
+end
+arch harpsichord2
+x 1
+y 1
+end
+arch bluemarblemedium
+x 1
+y 2
+end
+arch bluemarblemedium
+x 1
+y 3
+end
+arch bluemarblemedium
+x 1
+y 4
+end
+arch bluemarblemedium
+x 1
+y 5
+end
+arch bluemarblemedium
+x 1
+y 6
+end
+arch chair_1.4
+x 1
+y 6
+end
+arch bluemarblemedium
+x 1
+y 7
+end
+arch chair_1.4
+x 1
+y 7
+end
+arch bluemarblemedium
+x 1
+y 8
+end
+arch bluemarblemedium
+x 1
+y 9
+end
+arch wwall_2_1_2
+x 1
+y 9
+end
+arch bluemarblemedium
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch bluemarblemedium
+x 2
+y 1
+end
+arch bluemarblemedium
+x 2
+y 2
+end
+arch bluemarblemedium
+x 2
+y 3
+end
+arch bluemarblemedium
+x 2
+y 4
+end
+arch fatman
+name Lursendis
+msg
+@match farnass
+Ha yes, Farnass 'The Recipe Spellcrafter'.
+
+One of the best cook chiefs of the whole world. Brother of the Mad Mage of Scorn, he shared with him passion for wizardry; yet his center of interest was much more focused on making tasty things and brewing nice beers. He disappeared after a magical experiment 15 years ago. So I can't eat his omelet anymore!
+
+I think he lived in Scorn, or some island around.
+
+@match omelet
+Yes, but I would only eat an omelet made by my friend Farnass.
+@match hungry|food|cook
+Yes, I'm always hungry. And I eat all the time!
+
+Right now, I'd like to eat an omelet.
+@match *
+Leave me alone, I need to cook something.
+endmsg
+x 2
+y 4
+end
+arch bluemarblemedium
+x 2
+y 5
+end
+arch chair_1.1
+x 2
+y 5
+end
+arch bluemarblemedium
+x 2
+y 6
+end
+arch table_2x2
+x 2
+y 6
+end
+arch bluemarblemedium
+x 2
+y 7
+end
+arch bluemarblemedium
+x 2
+y 8
+end
+arch chair_1.3
+x 2
+y 8
+end
+arch bluemarblemedium
+x 2
+y 9
+end
+arch wwall_2_1_2
+x 2
+y 9
+end
+arch bluemarblemedium
+x 3
+end
+arch wwall_2_1_2
+x 3
+end
+arch bluemarblemedium
+x 3
+y 1
+end
+arch bluemarblemedium
+x 3
+y 2
+end
+arch bluemarblemedium
+x 3
+y 3
+end
+arch bluemarblemedium
+x 3
+y 4
+end
+arch bluemarblemedium
+x 3
+y 5
+end
+arch chair_1.1
+x 3
+y 5
+end
+arch bluemarblemedium
+x 3
+y 6
+end
+arch bluemarblemedium
+x 3
+y 7
+end
+arch bluemarblemedium
+x 3
+y 8
+end
+arch chair_1.3
+x 3
+y 8
+end
+arch bluemarblemedium
+x 3
+y 9
+end
+arch wwall_2_1_2
+x 3
+y 9
+end
+arch bluemarblemedium
+x 4
+end
+arch wwall_2_1_2
+x 4
+end
+arch bluemarblemedium
+x 4
+y 1
+end
+arch bluemarblemedium
+x 4
+y 2
+end
+arch bluemarblemedium
+x 4
+y 3
+end
+arch bluemarblemedium
+x 4
+y 4
+end
+arch bluemarblemedium
+x 4
+y 5
+end
+arch bluemarblemedium
+x 4
+y 6
+end
+arch chair_1.2
+x 4
+y 6
+end
+arch bluemarblemedium
+x 4
+y 7
+end
+arch chair_1.2
+x 4
+y 7
+end
+arch bluemarblemedium
+x 4
+y 8
+end
+arch bluemarblemedium
+x 4
+y 9
+end
+arch wwall_2_1_2
+x 4
+y 9
+end
+arch bluemarblemedium
+x 5
+end
+arch wwall_3_3
+x 5
+end
+arch bluemarblemedium
+x 5
+y 1
+end
+arch wwall_2_1_1
+x 5
+y 1
+end
+arch bluemarblemedium
+x 5
+y 2
+end
+arch wwall_2_1_1
+x 5
+y 2
+end
+arch bluemarblemedium
+x 5
+y 3
+end
+arch wwall_1_2
+x 5
+y 3
+end
+arch bluemarblemedium
+x 5
+y 4
+end
+arch bluemarblemedium
+x 5
+y 5
+end
+arch bluemarblemedium
+x 5
+y 6
+end
+arch wwall_1_1
+x 5
+y 6
+end
+arch bluemarblemedium
+x 5
+y 7
+end
+arch wwall_2_1_1
+x 5
+y 7
+end
+arch bluemarblemedium
+x 5
+y 8
+end
+arch wwall_2_1_1
+x 5
+y 8
+end
+arch bluemarblemedium
+x 5
+y 9
+end
+arch wwall_3_1
+x 5
+y 9
+end
+arch bluemarblemedium
+x 6
+end
+arch wwall_2_1_2
+x 6
+end
+arch bluemarblemedium
+x 6
+y 1
+end
+arch bluemarblemedium
+x 6
+y 2
+end
+arch bluemarblemedium
+x 6
+y 3
+end
+arch door_2
+x 6
+y 3
+move_block 0
+end
+arch bluemarblemedium
+x 6
+y 4
+end
+arch bluemarblemedium
+x 6
+y 5
+end
+arch bluemarblemedium
+x 6
+y 6
+end
+arch door_2
+x 6
+y 6
+move_block 0
+end
+arch bluemarblemedium
+x 6
+y 7
+end
+arch bluemarblemedium
+x 6
+y 8
+end
+arch bluemarblemedium
+x 6
+y 9
+end
+arch wwall_2_1_2
+x 6
+y 9
+end
+arch bluemarblemedium
+x 7
+end
+arch wwall_2_1_2
+x 7
+end
+arch bluemarblemedium
+x 7
+y 1
+end
+arch bluemarblemedium
+x 7
+y 2
+end
+arch bluemarblemedium
+x 7
+y 3
+end
+arch wwall_1_4
+x 7
+y 3
+end
+arch bluemarblemedium
+x 7
+y 4
+end
+arch bluemarblemedium
+x 7
+y 5
+end
+arch bluemarblemedium
+x 7
+y 6
+end
+arch wwall_1_4
+x 7
+y 6
+end
+arch bluemarblemedium
+x 7
+y 7
+end
+arch bluemarblemedium
+x 7
+y 8
+end
+arch bluemarblemedium
+x 7
+y 9
+end
+arch wwall_2_1_2
+x 7
+y 9
+end
+arch bluemarblemedium
+x 8
+end
+arch wwall_2_1_2
+x 8
+end
+arch bluemarblemedium
+x 8
+y 1
+end
+arch bed_1
+x 8
+y 1
+end
+arch bluemarblemedium
+x 8
+y 2
+end
+arch bluemarblemedium
+x 8
+y 3
+end
+arch wwall_2_1_2
+x 8
+y 3
+end
+arch bluemarblemedium
+x 8
+y 4
+end
+arch mat
+x 8
+y 4
+end
+arch bluemarblemedium
+x 8
+y 5
+end
+arch mat
+x 8
+y 5
+end
+arch bluemarblemedium
+x 8
+y 6
+end
+arch wwall_2_1_2
+x 8
+y 6
+end
+arch bluemarblemedium
+x 8
+y 7
+end
+arch bluemarblemedium
+x 8
+y 8
+end
+arch bluemarblemedium
+x 8
+y 9
+end
+arch wwall_2_1_2
+x 8
+y 9
+end
+arch bluemarblemedium
+x 9
+end
+arch wwall_2_2_3
+x 9
+end
+arch bluemarblemedium
+x 9
+y 1
+end
+arch wwall_2_1_1
+x 9
+y 1
+end
+arch bluemarblemedium
+x 9
+y 2
+end
+arch wwall_2_1_1
+x 9
+y 2
+end
+arch bluemarblemedium
+x 9
+y 3
+end
+arch wwall_2_2_4
+x 9
+y 3
+end
+arch exit
+slaying /world/world_128_109
+hp 24
+sp 4
+x 9
+y 4
+end
+arch bluemarblemedium
+x 9
+y 4
+end
+arch door_1
+x 9
+y 4
+move_block 0
+end
+arch exit
+slaying /world/world_128_109
+hp 24
+sp 4
+x 9
+y 5
+end
+arch bluemarblemedium
+x 9
+y 5
+end
+arch door_1
+x 9
+y 5
+move_block 0
+end
+arch bluemarblemedium
+x 9
+y 6
+end
+arch wwall_2_2_3
+x 9
+y 6
+end
+arch bluemarblemedium
+x 9
+y 7
+end
+arch wwall_2_1_1
+x 9
+y 7
+end
+arch bluemarblemedium
+x 9
+y 8
+end
+arch wwall_2_1_1
+x 9
+y 8
+end
+arch bluemarblemedium
+x 9
+y 9
+end
+arch wwall_2_2_4
+x 9
+y 9
+end
