@@ -2439,6 +2439,10 @@ x 10
 y 32
 end
 arch house_2
+name Half-destroyed house
+slaying /port_joseph/town/ruined_home
+hp 8
+sp 4
 x 10
 y 32
 end
@@ -2690,6 +2694,10 @@ arch brush
 x 11
 y 38
 end
+arch barn
+x 11
+y 38
+end
 arch brush
 x 11
 y 39
@@ -2935,6 +2943,10 @@ arch brush
 x 12
 y 41
 end
+arch house_up
+x 12
+y 41
+end
 arch pstone_1
 x 12
 y 42
@@ -3143,11 +3155,22 @@ arch grass
 x 13
 y 33
 end
+arch house_long
+x 13
+y 33
+end
 arch cobblestones2
 x 13
 y 34
 end
 arch grass
+x 13
+y 35
+end
+arch inn
+name Portia's house
+slaying /port_joseph/town/portia
+hp 2
 x 13
 y 35
 end
@@ -3160,6 +3183,13 @@ x 13
 y 37
 end
 arch grass
+x 13
+y 38
+end
+arch store_general
+name General Store
+slaying /port_joseph/town/generalstore
+hp 10
 x 13
 y 38
 end
@@ -3361,6 +3391,14 @@ arch grass
 x 14
 y 31
 end
+arch church
+name Church of Gabriel
+slaying /port_joseph/town/church
+hp 3
+sp 15
+x 14
+y 31
+end
 arch grass
 x 14
 y 32
@@ -3378,6 +3416,10 @@ x 14
 y 35
 end
 arch grass
+x 14
+y 36
+end
+arch house_up
 x 14
 y 36
 end
@@ -3679,6 +3721,17 @@ endmsg
 x 15
 y 46
 unaggressive 1
+end
+arch rowboat
+slaying /port_joseph/pirates/fortvsship
+hp 4
+sp 27
+x 15
+y 46
+type 41
+connected 2
+activate_on_push 1
+activate_on_release 1
 end
 arch sea
 x 15
@@ -4123,11 +4176,24 @@ arch brush
 x 17
 y 30
 end
+arch inn
+name Wayfarers' rest
+slaying /port_joseph/town/inn
+hp 9
+sp 12
+x 17
+y 30
+end
 arch cobblestones2
 x 17
 y 31
 end
 arch brush
+x 17
+y 32
+end
+arch farmhouse
+name house
 x 17
 y 32
 end
@@ -4144,6 +4210,11 @@ x 17
 y 35
 end
 arch brush
+x 17
+y 36
+end
+arch guild
+name town hall
 x 17
 y 36
 end
@@ -4167,6 +4238,11 @@ arch brush
 x 17
 y 39
 end
+arch barrack_long
+name stables
+x 17
+y 39
+end
 arch cobblestones2
 x 17
 y 40
@@ -4180,6 +4256,14 @@ x 17
 y 41
 end
 arch sea
+x 17
+y 42
+end
+arch big_galleon
+name Galleon to Scorn
+slaying /world/world_105_115
+hp 18
+sp 27
 x 17
 y 42
 end
@@ -4860,6 +4944,10 @@ x 20
 y 31
 end
 arch pstone_1
+x 20
+y 32
+end
+arch rowboat
 x 20
 y 32
 end
@@ -12009,88 +12097,4 @@ arch sea
 x 49
 y 49
 elevation -4132
-end
-arch barn
-x 11
-y 38
-end
-arch house_up
-x 12
-y 41
-end
-arch house_long
-x 13
-y 33
-end
-arch inn
-name Portia's house
-slaying /port_joseph/town/portia
-hp 2
-x 13
-y 35
-end
-arch store_general
-name General Store
-slaying /port_joseph/town/generalstore
-hp 10
-x 13
-y 38
-end
-arch church
-name Church of Gabriel
-slaying /port_joseph/town/church
-hp 3
-sp 15
-x 14
-y 31
-end
-arch house_up
-x 14
-y 36
-end
-arch rowboat
-slaying /port_joseph/pirates/fortvsship
-hp 4
-sp 27
-x 15
-y 46
-type 41
-connected 2
-activate_on_push 1
-activate_on_release 1
-end
-arch inn
-name Wayfarers' rest
-slaying /port_joseph/town/inn
-hp 9
-sp 12
-x 17
-y 30
-end
-arch farmhouse
-name house
-x 17
-y 32
-end
-arch guild
-name town hall
-x 17
-y 36
-end
-arch barrack_long
-name stables
-x 17
-y 39
-end
-arch big_galleon
-name Galleon to Scorn
-slaying /world/world_105_115
-hp 18
-sp 27
-x 17
-y 42
-end
-arch rowboat
-x 20
-y 32
 end
