@@ -57,4 +57,5 @@ body_foot 2
 body_hand 2
 body_wrist 2
 body_waist 1
+body_leg 2
 end

@@ -70,4 +70,5 @@ body_skill 1
 body_wrist 4
 body_finger 3
 body_waist 1
+body_leg 2
 end
