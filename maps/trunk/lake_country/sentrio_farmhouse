@@ -1464,6 +1464,14 @@ end
 arch woman
 name Sentrio's farmer
 msg
+@match food
+Err...
+
+That is...
+
+I forgot exactly what they eat...
+@match egg|eggs
+Of course they lay eggs. But they require special food, mind you, since they are special chicken!
 @match chicken|chickens
 Yes, those are special chicken, trained for combat. Trust me, you don't want to bother them!
 @match *
@@ -1981,6 +1989,26 @@ end
 arch woodfloor
 x 18
 y 6
+end
+arch desk
+x 18
+y 6
+no_pick 1
+arch scroll
+name invoice
+name_pl invoice
+msg
+In conformance with your order, we <unreadable text>.
+
+Please pay in the delays we agreed on.
+
+
+Cordially.
+
+
+Scorn's Trappers, Scorn port
+endmsg
+end
 end
 arch woodfloor
 x 18
