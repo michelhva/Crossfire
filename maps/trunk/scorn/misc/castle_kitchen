@@ -1,0 +1,777 @@
+arch map
+name Castle kitchen
+region scorn
+width 10
+height 10
+msg
+Creator: Nicolas Weeger
+Date:    2007-05-26
+endmsg
+end
+arch cobblestones2
+end
+arch stwall_2_2_2
+end
+arch cobblestones2
+y 1
+end
+arch stwall_2_1_1
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch stwall_2_1_1
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch stwall_2_1_1
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch stwall_2_1_1
+y 4
+end
+arch cobblestones2
+y 5
+end
+arch stwall_2_1_1
+y 5
+end
+arch cobblestones2
+y 6
+end
+arch stwall_2_1_1
+y 6
+end
+arch cobblestones2
+y 7
+end
+arch stwall_2_1_1
+y 7
+end
+arch cobblestones2
+y 8
+end
+arch stwall_2_1_1
+y 8
+end
+arch cobblestones2
+y 9
+end
+arch stwall_2_2_1
+y 9
+end
+arch cobblestones2
+x 1
+end
+arch stwall_2_1_2
+x 1
+end
+arch marble
+x 1
+y 1
+end
+arch table_1x2
+x 1
+y 1
+end
+arch apple
+x 1
+y 1
+no_pick 1
+end
+arch marble
+x 1
+y 2
+end
+arch blackroot
+x 1
+y 2
+no_pick 1
+end
+arch marble
+x 1
+y 3
+end
+arch table_1x2
+x 1
+y 3
+end
+arch cabbage
+x 1
+y 3
+no_pick 1
+end
+arch marble
+x 1
+y 4
+end
+arch mandrake_root
+x 1
+y 4
+no_pick 1
+end
+arch marble
+x 1
+y 5
+end
+arch table_1x2
+x 1
+y 5
+end
+arch tomato
+x 1
+y 5
+no_pick 1
+end
+arch marble
+x 1
+y 6
+end
+arch potato
+x 1
+y 6
+no_pick 1
+end
+arch marble
+x 1
+y 7
+end
+arch table_1x2
+x 1
+y 7
+end
+arch onion
+x 1
+y 7
+no_pick 1
+end
+arch marble
+x 1
+y 8
+end
+arch orange
+x 1
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 1
+y 9
+end
+arch stwall_2_1_2
+x 1
+y 9
+end
+arch cobblestones2
+x 2
+end
+arch stwall_2_1_2
+x 2
+end
+arch marble
+x 2
+y 1
+end
+arch marble
+x 2
+y 2
+end
+arch light4
+x 2
+y 2
+end
+arch marble
+x 2
+y 3
+end
+arch marble
+x 2
+y 4
+end
+arch marble
+x 2
+y 5
+end
+arch marble
+x 2
+y 6
+end
+arch marble
+x 2
+y 7
+end
+arch light4
+x 2
+y 7
+end
+arch marble
+x 2
+y 8
+end
+arch table_2x1
+x 2
+y 8
+end
+arch clover
+x 2
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 2
+y 9
+end
+arch stwall_2_1_2
+x 2
+y 9
+end
+arch cobblestones2
+x 3
+end
+arch stwall_2_2_3
+x 3
+end
+arch cobblestones2
+x 3
+y 1
+end
+arch stwall_2_1_1
+x 3
+y 1
+end
+arch cobblestones2
+x 3
+y 2
+end
+arch stwall_2_1_1
+x 3
+y 2
+end
+arch magic_ear
+msg
+@match clickety
+Click.
+endmsg
+x 3
+y 3
+connected 1
+end
+arch cobblestones2
+x 3
+y 3
+end
+arch stwall_1_2
+x 3
+y 3
+end
+arch marble
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
+end
+arch marble
+x 3
+y 8
+end
+arch chocolate
+x 3
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 3
+y 9
+end
+arch stwall_2_1_2
+x 3
+y 9
+end
+arch exit
+slaying /world/world_104_115
+hp 43
+sp 48
+x 4
+end
+arch cobblestones2
+x 4
+end
+arch light4
+x 4
+end
+arch cobblestones2
+x 4
+y 1
+end
+arch magic_mouth
+msg
+Castle kitchen - authorized personnel only.
+endmsg
+x 4
+y 2
+end
+arch cobblestones2
+x 4
+y 2
+end
+arch cobblestones2
+x 4
+y 3
+end
+arch mdoor_closed_1
+x 4
+y 3
+connected 1
+end
+arch marble
+x 4
+y 4
+end
+arch marble
+x 4
+y 5
+end
+arch fatwoman
+name Farnass
+msg
+@match sentrio|egg|eggs
+My friend Sentrio lives somewhere in Lake Country, but I don't remember where exactly, sorry...
+
+I do know eggs from his chicken are the only ones worth my cooking skill!
+
+@match mushroom
+Yes, it's a blue one, I think it grows in a marsh in the west. I've heard it can be used for medicine, too.
+@match ingredients
+You need the following:
+- 4 eggs from my friend Sentrio's chicken
+- a special mushroom
+@match omelet
+So you want an omelet, he?
+
+Then you'll have to bring me the ingredients.
+@match lursendis
+Ha, this old friend of me. I haven't seen him in years, I wonder how he's doing...
+@match *
+Please don't disturb me, I'm trying a really hard recipe.
+endmsg
+x 4
+y 5
+end
+arch marble
+x 4
+y 6
+end
+arch marble
+x 4
+y 7
+end
+arch marble
+x 4
+y 8
+end
+arch stove
+name Royal stove
+x 4
+y 8
+is_cauldron 0
+end
+arch cobblestones2
+x 4
+y 9
+end
+arch stwall_2_1_2
+x 4
+y 9
+end
+arch exit
+slaying /world/world_104_115
+hp 43
+sp 48
+x 5
+end
+arch cobblestones2
+x 5
+end
+arch light4
+x 5
+end
+arch cobblestones2
+x 5
+y 1
+end
+arch magic_mouth
+msg
+Castle kitchen - authorized personnel only.
+endmsg
+x 5
+y 2
+end
+arch cobblestones2
+x 5
+y 2
+end
+arch cobblestones2
+x 5
+y 3
+end
+arch mdoor_closed_1
+x 5
+y 3
+connected 1
+end
+arch marble
+x 5
+y 4
+end
+arch marble
+x 5
+y 5
+end
+arch marble
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch stove
+name Royal stove
+x 5
+y 8
+is_cauldron 0
+end
+arch cobblestones2
+x 5
+y 9
+end
+arch stwall_2_1_2
+x 5
+y 9
+end
+arch cobblestones2
+x 6
+end
+arch stwall_2_2_2
+x 6
+end
+arch cobblestones2
+x 6
+y 1
+end
+arch stwall_2_1_1
+x 6
+y 1
+end
+arch cobblestones2
+x 6
+y 2
+end
+arch stwall_2_1_1
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 3
+end
+arch stwall_1_2
+x 6
+y 3
+end
+arch marble
+x 6
+y 4
+end
+arch marble
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch marble
+x 6
+y 7
+end
+arch marble
+x 6
+y 8
+end
+arch table_2x1
+x 6
+y 8
+end
+arch mint
+x 6
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 6
+y 9
+end
+arch stwall_2_1_2
+x 6
+y 9
+end
+arch cobblestones2
+x 7
+end
+arch stwall_2_1_2
+x 7
+end
+arch marble
+x 7
+y 1
+end
+arch marble
+x 7
+y 2
+end
+arch light4
+x 7
+y 2
+end
+arch marble
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch light4
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch pear
+x 7
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 7
+y 9
+end
+arch stwall_2_1_2
+x 7
+y 9
+end
+arch cobblestones2
+x 8
+end
+arch stwall_2_1_2
+x 8
+end
+arch marble
+x 8
+y 1
+end
+arch table_1x2
+x 8
+y 1
+end
+arch cheeseburger
+x 8
+y 1
+no_pick 1
+end
+arch marble
+x 8
+y 2
+end
+arch leg_mutton
+x 8
+y 2
+no_pick 1
+end
+arch marble
+x 8
+y 3
+end
+arch table_1x2
+x 8
+y 3
+end
+arch mushroom_1
+x 8
+y 3
+no_pick 1
+end
+arch marble
+x 8
+y 4
+end
+arch mushroom_2
+x 8
+y 4
+no_pick 1
+end
+arch marble
+x 8
+y 5
+end
+arch table_1x2
+x 8
+y 5
+end
+arch mushroom_3
+x 8
+y 5
+no_pick 1
+end
+arch marble
+x 8
+y 6
+end
+arch pipeweed
+x 8
+y 6
+no_pick 1
+end
+arch marble
+x 8
+y 7
+end
+arch table_1x2
+x 8
+y 7
+end
+arch roast_bird
+x 8
+y 7
+no_pick 1
+end
+arch marble
+x 8
+y 8
+end
+arch s_weasel
+x 8
+y 8
+no_pick 1
+end
+arch cobblestones2
+x 8
+y 9
+end
+arch stwall_2_1_2
+x 8
+y 9
+end
+arch cobblestones2
+x 9
+end
+arch stwall_2_2_3
+x 9
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch stwall_2_1_1
+x 9
+y 1
+end
+arch cobblestones2
+x 9
+y 2
+end
+arch stwall_2_1_1
+x 9
+y 2
+end
+arch cobblestones2
+x 9
+y 3
+end
+arch stwall_2_1_1
+x 9
+y 3
+end
+arch cobblestones2
+x 9
+y 4
+end
+arch stwall_2_1_1
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch stwall_2_1_1
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch stwall_2_1_1
+x 9
+y 6
+end
+arch cobblestones2
+x 9
+y 7
+end
+arch stwall_2_1_1
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch stwall_2_1_1
+x 9
+y 8
+end
+arch cobblestones2
+x 9
+y 9
+end
+arch stwall_2_2_4
+x 9
+y 9
+end
