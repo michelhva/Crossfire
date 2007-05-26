@@ -2911,7 +2911,10 @@ arch grass
 x 12
 y 35
 end
-arch house_1
+arch house_1_green
+slaying /port_joseph/town/house
+hp 7
+sp 8
 x 12
 y 35
 end
