@@ -1624,6 +1624,14 @@ y 5
 end
 arch guildmaster
 name Magistrate
+msg
+@match farnass
+Ha, the cook? You can find him in the kitchen, near the castle.
+
+The kitchen password is 'clickety'.
+@match *
+I'm too busy to help you.
+endmsg
 x 11
 y 5
 end
