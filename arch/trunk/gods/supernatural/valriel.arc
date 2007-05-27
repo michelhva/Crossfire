@@ -4,7 +4,7 @@ title Gorokh
 face archangel.115
 slaying demon
 race angel
-animation archangle
+animation archangel
 Str 30
 Con 30
 Dex 30
