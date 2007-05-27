@@ -4,7 +4,7 @@ name High Angel
 race angel
 face archangel.118
 color_fg white
-animation archangle
+animation archangel
 monster 1
 move_type walk fly_low
 sleep 1
