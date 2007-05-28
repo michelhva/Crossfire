@@ -102,8 +102,8 @@ def move_chicken():
 			# drop an egg?
 			if random.randint(1, 100) <= ( got * 2 ):
 				egg = chicken.Map.CreateObject('chicken_egg', chicken.X, chicken.Y)
-				egg.Name = 'Chicken Combat egg'
-				egg.NamePl = 'Chicken Combat eggs'
+				egg.Name = 'Combat Chicken egg'
+				egg.NamePl = 'Combat Chicken eggs'
 				egg.Quantity = 1
 				chicken.Map.Print('The %s lays an egg!'%chicken.Name)
 				got = 0
