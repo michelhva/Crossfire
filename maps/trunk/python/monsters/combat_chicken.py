@@ -7,6 +7,7 @@
 
 import Crossfire
 import random
+import CFMove
 
 key_target = 'chicken_target'		# where the chicken is trying to go
 key_food = 'chicken_food'		# currently eaten food
@@ -14,38 +15,6 @@ key_attacked = 'chicken_attacked'	# if set, chicken has normal monster behaviour
 stay_on_floor = 'small_stones'		# what ground it'll stay on
 # what the chicken will eat, and food increase
 eat = { 'orc\'s livers' : 5, 'orc\'s hearts' : 6, 'goblin\'s livers' : 1, 'goblin\'s hearts' : 2 }
-
-# those should be in some common library
-dir_x = [  0, 0, 1, 1, 1, 0, -1, -1, -1 ]
-dir_y = [ 0, -1, -1, 0, 1, 1, 1, 0, -1 ]
-
-# this should be in some common library
-def coordinates_to_dir(x, y):
-	q = 0
-	if(y == 0):
-		q = -300 * x;
-	else:
-		q = int(x * 100 / y);
-	if(y>0):
-		if(q < -242):
-			return 3
-		if (q < -41):
-			return 2
-		if (q < 41):
-			return 1
-		if (q < 242):
-			return 8 ;
-		return 7
-	
-	if (q < -242):
-		return 7
-	if (q < -41):
-		return 6
-	if (q < 41):
-		return 5
-	if (q < 242):
-		return 4
-	return 3
 
 # returns floor with specific name
 def has_floor(x, y, name):
@@ -85,8 +54,7 @@ def move_chicken():
 	if target != '':
 		x = int(target.split('|')[0])
 		y = int(target.split('|')[1])
-		if chicken.X != x or chicken.Y != y:
-			chicken.Move(coordinates_to_dir(chicken.X - x, chicken.Y - y))
+		if CFMove.get_object_to(chicken, x, y) != 0:
 			return
 		# target found, let's try to eat it
 		food = find_food(chicken, x, y)
@@ -129,7 +97,7 @@ def move_chicken():
 	# nothing found, random walk
 	for test in [1, 10]:
 		dir = random.randint(1, 8)
-		if (has_floor(chicken.X + dir_x[dir], chicken.Y + dir_y[dir], stay_on_floor)):
+		if (has_floor(chicken.X + CFMove.dir_x[dir], chicken.Y + CFMove.dir_y[dir], stay_on_floor)):
 			chicken.Move(dir)
 			Crossfire.SetReturnValue(1)
 			return
