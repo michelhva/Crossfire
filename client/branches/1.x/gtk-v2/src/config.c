@@ -511,8 +511,6 @@ static void read_config_window()
 	    /* This is done to make the 'lightmap' in the proper format */
 	    init_SDL( NULL, 1);
 #endif
-	if (csocket.fd)
-	    cs_print_string(csocket.fd, "mapredraw");
     }
 }
 
