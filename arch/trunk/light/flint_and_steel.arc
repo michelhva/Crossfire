@@ -11,4 +11,5 @@ editable 128
 magicmap grey
 name_pl flints and steels
 client_type 1101
+nrof 1
 end
