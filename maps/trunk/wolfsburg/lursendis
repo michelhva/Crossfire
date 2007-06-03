@@ -155,17 +155,21 @@ Ha yes, Farnass 'The Recipe Spellcrafter'. Good friend, haven't seen him in 15 y
 
 I think he lived in Scorn, or some island around.
 
-@match omelet
-Yes, but I would only eat an omelet made by my friend Farnass.
+@match caramel
+Yes, but I would only eat a caramel made by my friend Farnass.
 @match hungry|food|cook
 Yes, I'm always hungry. And I eat all the time!
 
-Right now, I'd like to eat an omelet.
+Right now, I'd like to eat a caramel.
 @match *
 Leave me alone, I need to cook something.
 endmsg
 x 2
 y 4
+arch event_time
+title Python
+slaying /python/monsters/lursendis.py
+end
 end
 arch bluemarblemedium
 x 2
@@ -182,6 +186,11 @@ end
 arch table_2x2
 x 2
 y 6
+end
+arch platter1_bro
+x 2
+y 6
+no_pick 1
 end
 arch bluemarblemedium
 x 2

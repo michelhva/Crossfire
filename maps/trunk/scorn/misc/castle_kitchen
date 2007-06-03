@@ -72,11 +72,7 @@ end
 arch stwall_2_1_2
 x 1
 end
-arch marble
-x 1
-y 1
-end
-arch table_1x2
+arch beigemarble
 x 1
 y 1
 end
@@ -85,7 +81,11 @@ x 1
 y 1
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 1
+y 1
+end
+arch beigemarble
 x 1
 y 2
 end
@@ -94,11 +94,7 @@ x 1
 y 2
 no_pick 1
 end
-arch marble
-x 1
-y 3
-end
-arch table_1x2
+arch beigemarble
 x 1
 y 3
 end
@@ -107,7 +103,11 @@ x 1
 y 3
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 1
+y 3
+end
+arch beigemarble
 x 1
 y 4
 end
@@ -116,11 +116,7 @@ x 1
 y 4
 no_pick 1
 end
-arch marble
-x 1
-y 5
-end
-arch table_1x2
+arch beigemarble
 x 1
 y 5
 end
@@ -129,7 +125,11 @@ x 1
 y 5
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 1
+y 5
+end
+arch beigemarble
 x 1
 y 6
 end
@@ -138,11 +138,7 @@ x 1
 y 6
 no_pick 1
 end
-arch marble
-x 1
-y 7
-end
-arch table_1x2
+arch beigemarble
 x 1
 y 7
 end
@@ -151,7 +147,11 @@ x 1
 y 7
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 1
+y 7
+end
+arch beigemarble
 x 1
 y 8
 end
@@ -174,11 +174,11 @@ end
 arch stwall_2_1_2
 x 2
 end
-arch marble
+arch beigemarble
 x 2
 y 1
 end
-arch marble
+arch beigemarble
 x 2
 y 2
 end
@@ -186,23 +186,23 @@ arch light4
 x 2
 y 2
 end
-arch marble
+arch beigemarble
 x 2
 y 3
 end
-arch marble
+arch beigemarble
 x 2
 y 4
 end
-arch marble
+arch beigemarble
 x 2
 y 5
 end
-arch marble
+arch beigemarble
 x 2
 y 6
 end
-arch marble
+arch beigemarble
 x 2
 y 7
 end
@@ -210,11 +210,7 @@ arch light4
 x 2
 y 7
 end
-arch marble
-x 2
-y 8
-end
-arch table_2x1
+arch beigemarble
 x 2
 y 8
 end
@@ -222,6 +218,10 @@ arch clover
 x 2
 y 8
 no_pick 1
+end
+arch table_2x1
+x 2
+y 8
 end
 arch cobblestones2
 x 2
@@ -270,30 +270,34 @@ arch stwall_1_2
 x 3
 y 3
 end
-arch marble
+arch beigemarble
 x 3
 y 4
 end
-arch marble
+arch beigemarble
 x 3
 y 5
 end
-arch marble
+arch beigemarble
 x 3
 y 6
 end
-arch marble
+arch beigemarble
 x 3
 y 7
 end
-arch marble
+arch beigemarble
 x 3
 y 8
 end
-arch chocolate
+arch frypan_closed
 x 3
 y 8
 no_pick 1
+arch event_close
+title Python
+slaying /python/monsters/farnass.py
+end
 end
 arch cobblestones2
 x 3
@@ -339,15 +343,15 @@ x 4
 y 3
 connected 1
 end
-arch marble
+arch beigemarble
 x 4
 y 4
 end
-arch marble
+arch beigemarble
 x 4
 y 5
 end
-arch fatwoman
+arch armless_cook
 name Farnass
 msg
 @match sentrio|egg|eggs
@@ -361,10 +365,14 @@ Yes, it's a blue one, I think it grows in a marsh in the west. I've heard it can
 You need the following:
 - 4 eggs from my friend Sentrio's chicken
 - a special mushroom
-@match omelet
-So you want an omelet, he?
+@match caramel
+So you want a caramel, he?
 
 Then you'll have to bring me the ingredients.
+
+As you can see, I've lost my both arms during the last war against the Gnolls, so would you be kind enough to put whatever you found during your travel to make the recipe in the frypan, please?
+
+You wonder how I cook without arms? Heh, rookie, that's what makes the difference between a cooker and me, Farnass! I told you already: I'm simply wonderful.
 @match lursendis
 Ha, this old friend of me. I haven't seen him in years, I wonder how he's doing...
 @match *
@@ -372,16 +380,26 @@ Please don't disturb me, I'm trying a really hard recipe.
 endmsg
 x 4
 y 5
+speed 0.25
+random_movement 1
+arch event_say
+title Python
+slaying /python/monsters/farnass.py
 end
-arch marble
+arch event_time
+title Python
+slaying /python/monsters/farnass.py
+end
+end
+arch beigemarble
 x 4
 y 6
 end
-arch marble
+arch beigemarble
 x 4
 y 7
 end
-arch marble
+arch beigemarble
 x 4
 y 8
 end
@@ -435,23 +453,23 @@ x 5
 y 3
 connected 1
 end
-arch marble
+arch beigemarble
 x 5
 y 4
 end
-arch marble
+arch beigemarble
 x 5
 y 5
 end
-arch marble
+arch beigemarble
 x 5
 y 6
 end
-arch marble
+arch beigemarble
 x 5
 y 7
 end
-arch marble
+arch beigemarble
 x 5
 y 8
 end
@@ -499,27 +517,23 @@ arch stwall_1_2
 x 6
 y 3
 end
-arch marble
+arch beigemarble
 x 6
 y 4
 end
-arch marble
+arch beigemarble
 x 6
 y 5
 end
-arch marble
+arch beigemarble
 x 6
 y 6
 end
-arch marble
+arch beigemarble
 x 6
 y 7
 end
-arch marble
-x 6
-y 8
-end
-arch table_2x1
+arch beigemarble
 x 6
 y 8
 end
@@ -528,6 +542,10 @@ x 6
 y 8
 no_pick 1
 end
+arch table_2x1
+x 6
+y 8
+end
 arch cobblestones2
 x 6
 y 9
@@ -542,11 +560,11 @@ end
 arch stwall_2_1_2
 x 7
 end
-arch marble
+arch beigemarble
 x 7
 y 1
 end
-arch marble
+arch beigemarble
 x 7
 y 2
 end
@@ -554,23 +572,23 @@ arch light4
 x 7
 y 2
 end
-arch marble
+arch beigemarble
 x 7
 y 3
 end
-arch marble
+arch beigemarble
 x 7
 y 4
 end
-arch marble
+arch beigemarble
 x 7
 y 5
 end
-arch marble
+arch beigemarble
 x 7
 y 6
 end
-arch marble
+arch beigemarble
 x 7
 y 7
 end
@@ -578,7 +596,7 @@ arch light4
 x 7
 y 7
 end
-arch marble
+arch beigemarble
 x 7
 y 8
 end
@@ -601,11 +619,7 @@ end
 arch stwall_2_1_2
 x 8
 end
-arch marble
-x 8
-y 1
-end
-arch table_1x2
+arch beigemarble
 x 8
 y 1
 end
@@ -614,7 +628,11 @@ x 8
 y 1
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 8
+y 1
+end
+arch beigemarble
 x 8
 y 2
 end
@@ -623,11 +641,7 @@ x 8
 y 2
 no_pick 1
 end
-arch marble
-x 8
-y 3
-end
-arch table_1x2
+arch beigemarble
 x 8
 y 3
 end
@@ -636,7 +650,11 @@ x 8
 y 3
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 8
+y 3
+end
+arch beigemarble
 x 8
 y 4
 end
@@ -645,11 +663,7 @@ x 8
 y 4
 no_pick 1
 end
-arch marble
-x 8
-y 5
-end
-arch table_1x2
+arch beigemarble
 x 8
 y 5
 end
@@ -658,7 +672,11 @@ x 8
 y 5
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 8
+y 5
+end
+arch beigemarble
 x 8
 y 6
 end
@@ -667,11 +685,7 @@ x 8
 y 6
 no_pick 1
 end
-arch marble
-x 8
-y 7
-end
-arch table_1x2
+arch beigemarble
 x 8
 y 7
 end
@@ -680,7 +694,11 @@ x 8
 y 7
 no_pick 1
 end
-arch marble
+arch table_1x2
+x 8
+y 7
+end
+arch beigemarble
 x 8
 y 8
 end
