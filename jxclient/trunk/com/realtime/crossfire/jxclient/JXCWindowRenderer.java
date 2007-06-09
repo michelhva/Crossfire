@@ -132,7 +132,7 @@ public class JXCWindowRenderer
 
     private void redrawGUIDialog(final Graphics g)
     {
-        if (jxcWindow.getDialogStatus() != JXCWindow.DLG_NONE)
+        if (currentDialog != null)
         {
             for (final GUIElement element : currentDialog)
             {
