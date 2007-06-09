@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandMapscrollEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     int mydx, mydy;
     public CrossfireCommandMapscrollEvent(Object src, int dx, int dy)
     {

@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandDrawinfoEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     private String mytext;
     private int mytype;
 

@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandDrawextinfoEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     private int mycolor;
     private int mytype;
     private int mysubtype;

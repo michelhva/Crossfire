@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandAddmeFailedEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     public CrossfireCommandAddmeFailedEvent(Object src)
     {
         super(src);

@@ -30,6 +30,9 @@ package com.realtime.crossfire.jxclient;
  */
 public class UnknownCommandException extends Exception
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     /**
      * Creates a new exception with the given text message as a parameter.
      * @param str The message to assign to this exception.
