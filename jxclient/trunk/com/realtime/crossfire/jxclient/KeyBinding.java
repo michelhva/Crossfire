@@ -29,34 +29,34 @@ import java.util.List;
  */
 public class KeyBinding
 {
-    int                         mycode;
-    int                         mymodifiers;
-    List<GUICommand>  mycommands;
+    int keyCode;
+    int modifiers;
+    List<GUICommand> commands;
 
     public int getKeyCode()
     {
-        return mycode;
+        return keyCode;
     }
     public int getKeyModifiers()
     {
-        return mymodifiers;
+        return modifiers;
     }
     public List<GUICommand> getCommands()
     {
-        return mycommands;
+        return commands;
     }
-    public KeyBinding(int c, int m, List<GUICommand> l)
+    public KeyBinding(int keyCode, int modifiers, List<GUICommand> commands)
     {
-        mycode = c;
-        mymodifiers = m;
-        mycommands = l;
+        this.keyCode = keyCode;
+        this.modifiers = modifiers;
+        this.commands = commands;
     }
     public boolean equals(Object op)
     {
         if (op instanceof KeyBinding)
         {
-            KeyBinding kb = (KeyBinding)op;
-            if ((kb.getKeyCode()==mycode)&&(kb.getKeyModifiers()==mymodifiers))
+            KeyBinding keyBinding = (KeyBinding)op;
+            if ((keyBinding.getKeyCode()==keyCode)&&(keyBinding.getKeyModifiers()==modifiers))
                 return true;
             else
                 return false;
