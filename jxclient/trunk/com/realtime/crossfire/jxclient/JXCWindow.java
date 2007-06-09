@@ -19,15 +19,10 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.awt.Color;
-import java.awt.DisplayMode;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import java.awt.image.BufferStrategy;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -66,10 +61,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public final static int DLG_SCRIPTED_DIALOG = 8;
     public final static int DLG_MOTD       = 9;
 
-    private DisplayMode     oldDisplayMode=null;
     private long            framecount = 0;
     private long            starttime = 0;
-    private BufferStrategy  mybufferstrategy;
     private int             mycurrentgui = GUI_START;
     private int             mydialogstatus = DLG_NONE;
     private ServerConnection myserver = null;
@@ -77,10 +70,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private List<GUIElement> mygui = new ArrayList<GUIElement>();
     private final String    semaphore_drawing = "semaphore_drawing";
     private final String    mydialogstatus_sem = "mydialogstatus_sem";
-    private DisplayMode     mymode = null;
     private Spell           mycurrentspell = null;
     private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
-    private boolean isfullscreen = false;
 
     private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
     private List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
@@ -91,8 +82,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private List<GUIElement> mydialog_monument= new ArrayList<GUIElement>();
     private List<GUIElement> mydialog_scripted_dialog = new ArrayList<GUIElement>();
     private List<GUIElement> mydialog_motd    = new ArrayList<GUIElement>();
-
-    private List<GUIElement> mydialog_current = null;
 
     private JXCSkin myskin = null;
 
@@ -108,6 +97,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public final static int KEY_SHIFT_ALTGR = 3;
     private boolean is_run_active = false;
     private boolean is_fire_active = false;
+
+    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this);
 
     public boolean checkRun()
     {
@@ -262,40 +253,40 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             switch (nv)
             {
                 case DLG_NONE:
-                    mydialog_current = null;
+                    jxcWindowRenderer.setCurrentDialog(null);
                     com.realtime.crossfire.jxclient.Map.invalidate();
                     break;
                 case DLG_BOOK:
-                    mydialog_current = mydialog_book;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_book);
                     break;
                 case DLG_QUERY:
-                    mydialog_current = mydialog_query;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_query);
                     break;
                 case DLG_KEYBIND:
-                    mydialog_current = mydialog_keybind;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
                     break;
                 case DLG_CARD:
-                    mydialog_current = mydialog_card;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_card);
                     break;
                 case DLG_PAPER:
-                    mydialog_current = mydialog_paper;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_paper);
                     break;
                 case DLG_SIGN:
-                    mydialog_current = mydialog_sign;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_sign);
                     break;
                 case DLG_MONUMENT:
-                    mydialog_current = mydialog_monument;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_monument);
                     break;
                 case DLG_SCRIPTED_DIALOG:
-                    mydialog_current = mydialog_scripted_dialog;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_scripted_dialog);
                     break;
                 case DLG_MOTD:
-                    mydialog_current = mydialog_motd;
+                    jxcWindowRenderer.setCurrentDialog(mydialog_motd);
                     break;
             }
             if (nv != DLG_NONE)
             {
-                activateFirstTextArea(mydialog_current);
+                activateFirstTextArea(jxcWindowRenderer.getCurrentDialog());
             }
         }
     }
@@ -316,34 +307,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void initRendering()
     {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        isfullscreen = gd.isFullScreenSupported();
-        if(gd.isFullScreenSupported()==false)
-        {
-            System.out.println("Warning ! True full-screen support is not available.");
-            setUndecorated(true);
-            setIgnoreRepaint(true);
-            oldDisplayMode = gd.getDisplayMode();
-
-            this.setSize(mymode.getWidth(),mymode.getHeight());
-            this.setVisible(true);
-        }
-        else
-        {
-            setUndecorated(true);
-            setIgnoreRepaint(true);
-            oldDisplayMode = gd.getDisplayMode();
-
-            final DisplayMode ndm = mymode;
-            gd.setFullScreenWindow(this);
-            gd.setDisplayMode(ndm);
-            System.out.println("Graphic Device:"+gd.getIDstring());
-            System.out.println("Accelerated memory available:"+gd.getAvailableAcceleratedMemory());
-        }
-        createBufferStrategy(2);
-        mybufferstrategy = getBufferStrategy();
-
+        jxcWindowRenderer.initRendering();
         framecount = 0;
         keyBindings.loadKeyBindings("keybindings.data");
         loadSpellBelt("spellbelt.data");
@@ -355,13 +319,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         final long totaltime = endtime - starttime;
         System.out.println(framecount+" frames in "+totaltime/1000000 +
                 " ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if(gd.isFullScreenSupported()==true)
-        {
-            gd.setDisplayMode(oldDisplayMode);
-            gd.setFullScreenWindow(null);
-        }
+        jxcWindowRenderer.endRendering();
         keyBindings.saveKeyBindings("keybindings.data");
         saveSpellBelt("spellbelt.data");
         System.exit(0);
@@ -385,68 +343,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         initGUI(id);
     }
-    private void redrawGUI()
-    {
-        final Graphics g = mybufferstrategy.getDrawGraphics();
-        if (mybufferstrategy.contentsRestored())
-        {
-            // Surface was recreated and reset, may require redrawing.
-            g.setColor(Color.BLACK);
-            g.fillRect(0,0,getWidth(),getHeight());
-        }
-        for (final GUIElement element : mygui)
-        {
-            if (element.isVisible())
-            {
-                if (element instanceof GUIMap)
-                {
-                    final GUIMap mel = (GUIMap)element;
-                    mel.redraw(g);
-                }
-                else
-                {
-                    g.drawImage(
-                        element.getBuffer(), element.getX(), element.getY(), this);
-                }
-            }
-        }
-        redrawGUIDialog(g);
-        g.dispose();
-        mybufferstrategy.show();
-        if (mybufferstrategy.contentsLost())
-        {
-        // The surface was lost since last call to getDrawGraphics, you
-        // may need to redraw.
-            g.setColor(Color.BLACK);
-            g.fillRect(0,0,getWidth(),getHeight());
-        }
-    }
-    private void redrawGUIDialog(final Graphics g)
-    {
-        if (getDialogStatus()!=DLG_NONE)
-        {
-            for (final GUIElement element : mydialog_current)
-            {
-                if (element.isVisible())
-                {
-                    if (element instanceof GUIMap)
-                    {
-                        final GUIMap mel = (GUIMap)element;
-                        final Graphics gg = element.getBuffer().createGraphics();
-                        mel.redraw(gg);
-                        gg.dispose();
-                    }
-                    g.drawImage(element.getBuffer(), element.getX(), element.getY(), this);
-                }
-            }
-        }
-    }
     public void init(final int w, final int h, final int b, final int f, final String skinclass)
     {
         addKeyListener(this);
         addMouseListener(this);
         addMouseMotionListener(this);
-        mymode = new DisplayMode(w,h,b,f);
+        jxcWindowRenderer.init(w, h, b, f);
         try
         {
             myskin = (JXCSkin)(Class.forName(skinclass).newInstance());
@@ -465,7 +367,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
                 synchronized(semaphore_drawing)
                 {
-                    redrawGUI();
+                    jxcWindowRenderer.redrawGUI();
                 }
                 framecount++;
                 Thread.sleep(1);
@@ -815,7 +717,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             if (getDialogStatus()!=DLG_NONE)
             {
-                myother = manageMouseEvents(mydialog_current, e);
+                myother = manageMouseEvents(jxcWindowRenderer.getCurrentDialog(), e);
                 if (myother != null)
                     elected = myother;
             }
@@ -837,7 +739,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             if (getDialogStatus() != DLG_NONE)
             {
-                myother = manageMouseEvents(mydialog_current, e);
+                myother = manageMouseEvents(jxcWindowRenderer.getCurrentDialog(), e);
                 if (myother != null)
                     elected = myother;
             }
@@ -956,19 +858,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void clearGUI()
     {
         mygui.clear();
-        for(int ig=0;ig<3;ig++)
-        {
-            final Graphics gd = mybufferstrategy.getDrawGraphics();
-            gd.setColor(Color.BLACK);
-            gd.fillRect(0,0,getWidth(),getHeight());
-            gd.dispose();
-            mybufferstrategy.show();
-        }
+        jxcWindowRenderer.clearGUI();
     }
     private void showGUIStart()
     {
         clearGUI();
-        mybufferstrategy.show();
+        jxcWindowRenderer.showGUIStart();
         mygui = null;
         try
         {
@@ -1014,5 +909,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             endRendering();
         }
+    }
+
+    public List<GUIElement> getGui()
+    {
+        return mygui;
     }
 }
