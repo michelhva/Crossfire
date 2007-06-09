@@ -67,7 +67,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private int             mydialogstatus = DLG_NONE;
     private ServerConnection myserver = null;
     private GUIElement      myactive_element = null;
-    private List<GUIElement> mygui = new ArrayList<GUIElement>();
     private final String    semaphore_drawing = "semaphore_drawing";
     private final String    mydialogstatus_sem = "mydialogstatus_sem";
     private Spell           mycurrentspell = null;
@@ -586,10 +585,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 send("command 0 who");
                 break;
             case KeyEvent.VK_QUOTE:
-                activateFirstTextArea(mygui);
+                activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
                 break;
             case KeyEvent.VK_QUOTEDBL:
-                activateFirstTextArea(mygui);
+                activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
                 if (myactive_element != null)
                 {
                     ((GUIText)myactive_element).setText("say ");
@@ -706,8 +705,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(semaphore_drawing)
         {
-            GUIElement elected = manageMouseEvents(mygui, e);
-            if (elected == null) elected = mygui.get(0);
+            GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
+            if (elected == null) elected = jxcWindowRenderer.getCurrentGui().get(0);
 
             GUIElement myother = null;
 
@@ -729,8 +728,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(semaphore_drawing)
         {
-            GUIElement elected = manageMouseEvents(mygui, e);
-            if (elected == null) elected = mygui.get(0);
+            GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
+            if (elected == null) elected = jxcWindowRenderer.getCurrentGui().get(0);
 
             GUIElement myother = null;
 
@@ -855,42 +854,45 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void clearGUI()
     {
-        mygui.clear();
         jxcWindowRenderer.clearGUI();
     }
     private void showGUIStart()
     {
         clearGUI();
-        mygui = null;
+        List<GUIElement> newGui;
         try
         {
-            mygui = myskin.getStartInterface(myserver,this);
+            newGui = myskin.getStartInterface(myserver,this);
         }
         catch (final JXCSkinException e)
         {
             endRendering();
+            newGui = null;
         }
+        jxcWindowRenderer.setCurrentGui(newGui);
     }
     private void showGUIMeta()
     {
         clearGUI();
-        mygui = null;
+        List<GUIElement> newGui;
         try
         {
-            mygui = myskin.getMetaInterface(myserver,this);
+            newGui = myskin.getMetaInterface(myserver,this);
         }
         catch (final JXCSkinException e)
         {
             endRendering();
+            newGui = null;
         }
+        jxcWindowRenderer.setCurrentGui(newGui);
     }
     private void showGUIMain()
     {
         clearGUI();
-        mygui = null;
+        List<GUIElement> newGui;
         try
         {
-            mygui = myskin.getMainInterface(myserver,this);
+            newGui = myskin.getMainInterface(myserver,this);
             mydialog_query   = myskin.getDialogQuery(myserver,this);
             mydialog_book    = myskin.getDialogBook(myserver, this, 1);
             mydialog_card    = myskin.getDialogBook(myserver, this, 2);
@@ -905,11 +907,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         catch (final JXCSkinException e)
         {
             endRendering();
+            newGui = null;
         }
-    }
-
-    public List<GUIElement> getGui()
-    {
-        return mygui;
+        jxcWindowRenderer.setCurrentGui(newGui);
     }
 }
