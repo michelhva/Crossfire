@@ -35,6 +35,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import javax.swing.event.MouseInputListener;
 import javax.swing.JFrame;
 
@@ -74,7 +75,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private int             mydialogstatus = DLG_NONE;
     private ServerConnection myserver = null;
     private GUIElement      myactive_element = null;
-    private java.util.List<GUIElement> mygui = new ArrayList<GUIElement>();
+    private List<GUIElement> mygui = new ArrayList<GUIElement>();
     private String          semaphore_drawing = new String("semaphore_drawing");;
     private String          mydialogstatus_sem = new String("mydialogstatus_sem");
     private DisplayMode     mymode = null;
@@ -82,25 +83,25 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private static SpellBeltItem[]         myspellbelt = new SpellBeltItem[12];
     private boolean isfullscreen = false;
 
-    private java.util.List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_card    = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_paper   = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_sign    = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_monument= new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_scripted_dialog = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_motd    = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_card    = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_paper   = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_sign    = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_monument= new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_scripted_dialog = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_motd    = new ArrayList<GUIElement>();
 
-    private java.util.List<GUIElement> mydialog_current = null;
+    private List<GUIElement> mydialog_current = null;
 
     private JXCSkin myskin = null;
 
-    private java.util.List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
+    private List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
     private boolean[] key_shift = new boolean[]{false, false, false, false};
-    private java.util.List<GUICommand> mycurrentkeybinding = null;
+    private List<GUICommand> mycurrentkeybinding = null;
 
-    private java.util.List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
+    private List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
     public final static int KEY_SHIFT_SHIFT = 0;
     public final static int KEY_SHIFT_CTRL  = 1;
@@ -157,7 +158,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return mycurrentspell;
     }
-    public void addKeyBinding(int keycode, int keymod, java.util.List<GUICommand> cmdlist)
+    public void addKeyBinding(int keycode, int keymod, List<GUICommand> cmdlist)
     {
         KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
         KeyBinding ok;
@@ -176,7 +177,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mykeybindings.remove(elected);
         mykeybindings.add(kb);
     }
-    public void createKeyBinding(java.util.List<GUICommand> cmdlist)
+    public void createKeyBinding(List<GUICommand> cmdlist)
     {
         mycurrentkeybinding = cmdlist;
         setDialogStatus(DLG_KEYBIND);
@@ -264,10 +265,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 int kc = ois.readInt();
                 int km = ois.readInt();
                 int lsz= ois.readInt();
-                java.util.List<GUICommand> guil = new java.util.ArrayList<GUICommand>();
+                List<GUICommand> guil = new ArrayList<GUICommand>();
                 for(int j=0; j<lsz; j++)
                 {
-                    java.util.List list_parms = new ArrayList();
+                    List list_parms = new ArrayList();
                     list_parms.add(this);
                     list_parms.add((String)ois.readObject());
                     GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
@@ -302,7 +303,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 while (ic.hasNext())
                 {
                     GUICommand guic = ic.next();
-                    java.util.List guil = (java.util.List)guic.getParams();
+                    List guil = (List)guic.getParams();
                     oos.writeObject((String)guil.get(1));
                 }
             }
@@ -371,7 +372,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    private void activateFirstTextArea(java.util.List<GUIElement> list)
+    private void activateFirstTextArea(List<GUIElement> list)
     {
         Iterator<GUIElement> it = list.iterator();
         while (it.hasNext())
@@ -589,7 +590,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void launchSpellFromBelt(int idx)
     {
-        java.util.List lp = new java.util.ArrayList();
+        List lp = new ArrayList();
         lp.add(this);
         lp.add(myspellbelt[idx]);
         GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
@@ -937,7 +938,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             elected.mouseReleased(e);
         }
     }
-    public GUIElement manageMouseEvents(java.util.List<GUIElement> guilist, MouseEvent e)
+    public GUIElement manageMouseEvents(List<GUIElement> guilist, MouseEvent e)
     {
         int x = e.getX();
         int y = e.getY();
