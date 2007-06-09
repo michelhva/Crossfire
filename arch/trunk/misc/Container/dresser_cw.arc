@@ -4,7 +4,6 @@ other_arch close_dresser_cw
 face dresser_cw.111
 type 122
 material 18
-materialname cherry
 value 2400
 container 150000
 weight 160000
@@ -29,7 +28,6 @@ other_arch close_dresser2_cw
 face dresser2_cw.111
 type 122
 material 18
-materialname cherry
 value 2400
 container 150000
 weight 160000

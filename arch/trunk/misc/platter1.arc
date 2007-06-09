@@ -4,7 +4,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname gold
 value 80000
 editable 128
 magicmap yellow
@@ -18,7 +17,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname silver
 value 8000
 editable 128
 magicmap yellow
@@ -32,7 +30,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname platinum
 value 400000
 editable 128
 magicmap yellow
@@ -46,7 +43,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname bronze
 value 5400
 editable 128
 magicmap yellow
@@ -60,7 +56,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname copper
 value 4000
 editable 128
 magicmap yellow
@@ -74,7 +69,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname iron
 value 800
 editable 128
 magicmap yellow
@@ -88,7 +82,6 @@ type 60
 nrof 1
 weight 40000
 material 2
-materialname tin
 value 400
 editable 128
 magicmap yellow
