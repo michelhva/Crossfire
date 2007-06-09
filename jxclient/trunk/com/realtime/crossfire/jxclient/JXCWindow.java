@@ -170,17 +170,29 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         try
         {
             final FileInputStream fis = new FileInputStream(filename);
-            final ObjectInputStream ois = new ObjectInputStream(fis);
-
-            for(int i=0;i<12;i++)
+            try
             {
-                myspellbelt[i] = null;
-                int sp = ois.readInt();
-                int st = ois.readInt();
-                if (sp > -1)
-                    myspellbelt[i] = new SpellBeltItem(sp, st);
+                final ObjectInputStream ois = new ObjectInputStream(fis);
+                try
+                {
+                    for(int i=0;i<12;i++)
+                    {
+                        myspellbelt[i] = null;
+                        int sp = ois.readInt();
+                        int st = ois.readInt();
+                        if (sp > -1)
+                            myspellbelt[i] = new SpellBeltItem(sp, st);
+                    }
+                }
+                finally
+                {
+                    ois.close();
+                }
             }
-            ois.close();
+            finally
+            {
+                fis.close();
+            }
         }
         catch (final Exception e)
         {
@@ -192,21 +204,34 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         try
         {
             final FileOutputStream fos = new FileOutputStream(filename);
-            final ObjectOutputStream oos = new ObjectOutputStream(fos);
-            for(int i=0; i<12;i++)
+            try
             {
-                if (myspellbelt[i]==null)
+                final ObjectOutputStream oos = new ObjectOutputStream(fos);
+                try
                 {
-                    oos.writeInt(-1);
-                    oos.writeInt(-1);
+                    for(int i=0; i<12;i++)
+                    {
+                        if (myspellbelt[i]==null)
+                        {
+                            oos.writeInt(-1);
+                            oos.writeInt(-1);
+                        }
+                        else
+                        {
+                            oos.writeInt(myspellbelt[i].getSpellIndex());
+                            oos.writeInt(myspellbelt[i].getStatus());
+                        }
+                    }
                 }
-                else
+                finally
                 {
-                    oos.writeInt(myspellbelt[i].getSpellIndex());
-                    oos.writeInt(myspellbelt[i].getStatus());
+                    oos.close();
                 }
             }
-            oos.close();
+            finally
+            {
+                fos.close();
+            }
         }
         catch (final Exception e)
         {
