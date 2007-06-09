@@ -10,6 +10,7 @@ resist_blind 2
 nrof 1
 value 6000
 material 8
+materialname white leather
 weight 100
 editable 1024
 magicmap white
@@ -28,6 +29,7 @@ title of light
 nrof 1
 value 42000
 material 2
+materialname white steel
 weight 200
 editable 1024
 magicmap white

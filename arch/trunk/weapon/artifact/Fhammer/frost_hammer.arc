@@ -13,6 +13,7 @@ frost_hammer.114
 mina
 speed .4
 material 256
+materialname glacium
 dam 10
 value 90000
 weight 30000

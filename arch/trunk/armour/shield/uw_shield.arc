@@ -4,6 +4,7 @@ name_pl Belzebub's shields
 client_type 260
 nrof 1
 material 256
+materialname abyssium
 face uw_shield.111
 type 33
 weight 25000

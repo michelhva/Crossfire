@@ -5,6 +5,7 @@ name_pl mithril chainmails
 client_type 250
 type 16
 material 2
+materialname mithril
 face mithril_ar.111
 anim
 mithril_ar.111

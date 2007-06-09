@@ -5,6 +5,7 @@ name_pl mithril chainmails of lightning
 client_type 250
 type 16
 material 2
+materialname mithril
 face mithril_ar_ele.111
 anim
 mithril_ar_ele.111

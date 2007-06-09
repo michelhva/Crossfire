@@ -5,6 +5,7 @@ client_type 260
 nrof 1
 type 33
 material 256
+materialname abyssium
 face DShield.111
 anim
 DShield.111
