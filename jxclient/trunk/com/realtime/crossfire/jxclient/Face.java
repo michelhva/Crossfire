@@ -25,6 +25,7 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.awt.image.*;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 /**
  *
  * @version 1.0
@@ -33,38 +34,50 @@ import javax.imageio.ImageIO;
  */
 public class Face
 {
-    private BufferedImage mypicture;
-    private BufferedImage myorigpicture;
+    /**
+     * The image scaled to be used in map view. May be <code>null</code> if the
+     * face is not known or invalid.
+     */
+    private ImageIcon imageIcon;
+
+    /**
+     * The original (unscaled) image. May be <code>null</code> if the face if
+     * not known or invalid.
+     */
+    private ImageIcon originalImageIcon;
+
     private int myid;
     private String myname;
 
-    public Face(int id, String name, BufferedImage pic)
+    public Face(int id, String name, ImageIcon imageIcon)
     {
         super();
         myid = id;
         myname = name;
-        mypicture = pic;
-        myorigpicture = pic;
+        this.imageIcon = imageIcon;
+        originalImageIcon = imageIcon;
     }
-    public Face(int id, String name, BufferedImage pic, BufferedImage opic)
+
+    public Face(int id, String name, ImageIcon imageIcon, ImageIcon originalImageIcon)
     {
         super();
         myid = id;
         myname = name;
-        mypicture = pic;
-        myorigpicture = opic;
+        this.imageIcon = imageIcon;
+        this.originalImageIcon = originalImageIcon;
     }
+
     public void setID(int id)
     {
         myid = id;
     }
-    public void setPicture(BufferedImage pic)
+    public void setImageIcon(ImageIcon pic)
     {
-        mypicture = pic;
+        imageIcon = pic;
     }
-    public void setOriginalPicture(BufferedImage pic)
+    public void setOriginalImageIcon(ImageIcon pic)
     {
-        myorigpicture = pic;
+        originalImageIcon = pic;
     }
     public void setName(String n)
     {
@@ -74,23 +87,55 @@ public class Face
     {
         return myid;
     }
-    public BufferedImage getPicture()
+
+    /**
+     * Return the image scaled to be used in map view.
+     *
+     * @return the scaled image; returns {@link Faces#unknownImageIcon} if the
+     * face is unknown or invalid.
+     */
+    public ImageIcon getImageIcon()
     {
-        return mypicture;
+        return imageIcon != null ? imageIcon : Faces.getUnknownImageIcon();
     }
-    public BufferedImage getOriginalPicture()
+
+    /**
+     * Return the original (unscaled) image.
+     *
+     * @return the unscaled image; returns {@link Faces#unknownImageIcon} if
+     * the face is unknown or invalid.
+     */
+    public ImageIcon getOriginalImageIcon()
     {
-        return myorigpicture;
+        return originalImageIcon != null ? originalImageIcon : Faces.getOriginalUnknownImageIcon();
     }
+
     public String getName()
     {
         return myname;
     }
     public void storeInCache(String basedir) throws IllegalArgumentException, IOException
     {
-        ImageIO.write(mypicture, "png", new File("cache/"+myname+".x2.png"));
-        ImageIO.write(myorigpicture, "png", new File("cache/"+myname+".x1.png"));
+        saveImageIcon(imageIcon, new File("cache/"+myname+".x2.png"));
+        saveImageIcon(originalImageIcon, new File("cache/"+myname+".x1.png"));
     }
+
+    /**
+     * Save an image to a file.
+     *
+     * @param imageIcon the image to save
+     *
+     * @param outputFile the file to save to
+     *
+     * @throws IOException if the image cannot be saved
+     */
+    public static void saveImageIcon(final ImageIcon imageIcon, final File outputFile) throws IOException
+    {
+        final BufferedImage bufferedImage = new BufferedImage(imageIcon.getIconWidth(), imageIcon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
+        imageIcon.paintIcon(null, bufferedImage.getGraphics(), 0, 0);
+        ImageIO.write(bufferedImage, "png", outputFile);
+    }
+
     public String toString()
     {
         return myname;

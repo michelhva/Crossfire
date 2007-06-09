@@ -29,7 +29,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.image.*;
-import com.sixlegs.png.*;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -47,6 +47,19 @@ public class Faces
     private static Hashtable<String,Face>  myfaces = new Hashtable<String,Face>();
     public final static int NRFACES = 6000;
     private static Face[]                  faces = new Face[NRFACES];
+
+    /**
+     * The image icon to display for unknown or invalid faces. It is never
+     * <code>null</code>.
+     */
+    private static final ImageIcon originalUnknownImageIcon;
+
+    /**
+     * The scaled version of {@link #unknownImageIcon}. It is never
+     * <code>null</code>.
+     */
+    private static final ImageIcon unknownImageIcon;
+
     static
     {
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -63,14 +76,22 @@ public class Faces
                     ServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT));
         }*/
-            faces[0] = new Face(0, "empty",gconf.createCompatibleImage(
+            faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
                     ServerConnection.SQUARE_SIZE,
                     ServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT),
-                    gconf.createCompatibleImage(
+                    Transparency.TRANSLUCENT)),
+                    new ImageIcon(gconf.createCompatibleImage(
                             ServerConnection.SQUARE_SIZE,
                     ServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT));
+                    Transparency.TRANSLUCENT)));
+            originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
+            if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
+            {
+                System.err.println("cannot find unknown.png");
+                System.exit(0);
+                throw new AssertionError();
+            }
+            unknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
     }
 
     /**
@@ -92,14 +113,14 @@ public class Faces
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             GraphicsDevice      gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[index] = new Face(0, "empty",gconf.createCompatibleImage(
+            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
                     ServerConnection.SQUARE_SIZE,
                     ServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT),
-                    gconf.createCompatibleImage(
+                    Transparency.TRANSLUCENT)),
+                    new ImageIcon(gconf.createCompatibleImage(
                             ServerConnection.SQUARE_SIZE,
                     ServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT));
+                    Transparency.TRANSLUCENT)));
         }
         return faces[index];
     }
@@ -116,29 +137,30 @@ public class Faces
         {
             System.err.println("received unexpected image for "+pixnum);
         }
-        if (!pendingFaces.remove(pixnum))
+        else if (!pendingFaces.remove(pixnum))
         {
             assert false;
         }
 
         try
         {
-            BufferedImage img = new PngImage().read(dis, true);
-            BufferedImage imx2 = null;
-            try
+            final byte[] data = new byte[pixlen];
+            dis.read(data);
+            ImageIcon img = new ImageIcon(data);
+            if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
             {
-                ImageScale2x scaler = new ImageScale2x(img);
-                imx2 = scaler.getScaledImage();
+                System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
+                Face f = faces[pixnum];
+                f.setImageIcon(unknownImageIcon);
+                f.setOriginalImageIcon(originalUnknownImageIcon);
             }
-            catch (Exception e)
+            else
             {
-                e.printStackTrace();
-                System.exit(0);
+                Face f = faces[pixnum];
+                f.setImageIcon(getScaledImageIcon(img));
+                f.setOriginalImageIcon(img);
+                f.storeInCache("cache/");
             }
-            Face f = faces[pixnum];
-            f.setPicture(imx2);
-            f.setOriginalPicture(img);
-            f.storeInCache("cache/");
         }
         catch(java.lang.IllegalArgumentException e)
         {
@@ -147,6 +169,31 @@ public class Faces
         sendAskface();
         return pixnum;
     }
+
+    /**
+     * Create a copy of a given image with double width and height.
+     *
+     * @param img the image icon to process
+     *
+     * @return the scaled image icon
+     */
+    private static ImageIcon getScaledImageIcon(final ImageIcon img)
+    {
+        final ImageIcon imx2;
+        try
+        {
+            final ImageScale2x scaler = new ImageScale2x(img);
+            imx2 = scaler.getScaledImage();
+        }
+        catch (final Exception e)
+        {
+            e.printStackTrace();
+            System.exit(0);
+            throw new AssertionError();
+        }
+        return imx2;
+    }
+
     public static void setFace1(DataInputStream dis) throws IOException
     {
         int len      = dis.available();
@@ -156,23 +203,18 @@ public class Faces
         byte[] buf   = new byte[plen];
         dis.readFully(buf);
         String pixname = new String(buf);
-        //System.out.println("len:"+len+" plen:"+plen);
-        try
-        {
-            //BufferedImage im = ImageIO.read(new File("cache/"+pixname+".x2.png"));
-            //BufferedImage oim = ImageIO.read(new File("cache/"+pixname+".x1.png"));
-            BufferedImage im = new PngImage().read(new File("cache/"+pixname+".x2.png"));
-            BufferedImage oim = new PngImage().read(new File("cache/"+pixname+".x1.png"));
-
-            //BufferedImage im = ImageIO.read(new File("cache/"+pixname+".png"));
-            Face f = new Face(pixnum, pixname,im, oim);
-            myfaces.put(pixname, f);
-            faces[pixnum] = f;
-        }
-        catch (IOException e)
+        ImageIcon im = new ImageIcon("cache/"+pixname+".x2.png");
+        ImageIcon oim = new ImageIcon("cache/"+pixname+".x1.png");
+        if (im.getIconWidth() <= 0 || im.getIconHeight() <= 0 || oim.getIconWidth() <= 0 || oim.getIconHeight() <= 0)
         {
             askface(pixnum);
             Face f = new Face(pixnum, pixname,null);
+            myfaces.put(pixname, f);
+            faces[pixnum] = f;
+        }
+        else
+        {
+            Face f = new Face(pixnum, pixname, im, oim);
             myfaces.put(pixname, f);
             faces[pixnum] = f;
         }
@@ -180,16 +222,36 @@ public class Faces
     public static void ensureFaceExists(int val)
     {
         getFace(val);
-        if (faces[val].getPicture()==null)
+        if (faces[val].getImageIcon()==null)
         {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             GraphicsDevice      gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[val].setPicture(gconf.createCompatibleImage(
+            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(
                     ServerConnection.SQUARE_SIZE,
             ServerConnection.SQUARE_SIZE,
-            Transparency.TRANSLUCENT));
+            Transparency.TRANSLUCENT)));
         }
+    }
+
+    /**
+     * Return the image to use for unknown or invalid faces.
+     *
+     * @return the image to use for unknown or invalid faces
+     */
+    public static ImageIcon getUnknownImageIcon()
+    {
+        return unknownImageIcon;
+    }
+
+    /**
+     * Return the image to use for unknown or invalid faces.
+     *
+     * @return the image to use for unknown or invalid faces
+     */
+    public static ImageIcon getOriginalUnknownImageIcon()
+    {
+        return originalUnknownImageIcon;
     }
 
     /**

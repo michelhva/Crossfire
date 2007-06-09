@@ -155,22 +155,21 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             Face f = square.getFace(nz);
             if (f != null)
             {
-                BufferedImage img = null;
-
+                final ImageIcon img;
                 if (use_big_images==true)
                 {
-                    img = f.getPicture();
+                    img = f.getImageIcon();
                 }
                 else
                 {
-                    img = f.getOriginalPicture();
+                    img = f.getOriginalImageIcon();
                 }
 
                 int px = (square.getXPos()-10)*mysquaresize;
                 int py = (square.getYPos()-10)*mysquaresize;
-                int psx = px - (img.getWidth()-mysquaresize);
-                int psy = py - (img.getHeight()-mysquaresize);
-                g.drawImage(img, psx, psy, img.getWidth(), img.getHeight(), null);
+                int psx = px - (img.getIconWidth()-mysquaresize);
+                int psy = py - (img.getIconHeight()-mysquaresize);
+                g.drawImage(img.getImage(), psx, psy, img.getIconWidth(), img.getIconHeight(), null);
             }
         }
         if (nz == ServerConnection.NUM_LAYERS-1)

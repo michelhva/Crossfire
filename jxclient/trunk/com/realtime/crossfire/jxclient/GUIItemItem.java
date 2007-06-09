@@ -40,7 +40,7 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
-        g.drawImage(item.getFace().getOriginalPicture(), 0, 0, null);
+        g.drawImage(item.getFace().getOriginalImageIcon().getImage(), 0, 0, null);
         if (item.isApplied())
         {
             g.drawImage(mypicapplied, 0, 0, null);

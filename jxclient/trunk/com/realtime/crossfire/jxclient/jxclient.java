@@ -56,15 +56,6 @@ public class jxclient
     {
         try
         {
-            Object p = Class.forName("com.sixlegs.png.PngImage");
-        }
-        catch (Exception e)
-        {
-            System.out.println("Sixlegs PNG Library not correctly installed, aborting");
-            System.exit(0);
-        }
-        try
-        {
             Preferences prefs = Preferences.userRoot();
             String str_width  = prefs.get("width", "1024");
             String str_height = prefs.get("height", "768");

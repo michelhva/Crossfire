@@ -19,10 +19,12 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 import com.realtime.crossfire.jxclient.*;
 
@@ -45,13 +47,15 @@ public class ImageScale2x
      *
      * @param srcImage The image to be scaled
      */
-    public ImageScale2x(BufferedImage srcImage)
+    public ImageScale2x(ImageIcon srcImageIcon)
     {
-        width = srcImage.getWidth();
-        height = srcImage.getHeight();
+        width = srcImageIcon.getIconWidth();
+        height = srcImageIcon.getIconHeight();
 
         srcData = new int[width*height];
-        srcImage.getRGB(0,0,width,height,srcData,0,width);
+        final BufferedImage srcBufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        srcImageIcon.paintIcon(null, srcBufferedImage.getGraphics(), 0, 0);
+        srcBufferedImage.getRGB(0, 0, width, height, srcData, 0, width);
     }
 
     /**
@@ -60,14 +64,14 @@ public class ImageScale2x
      *
      * @return The newly scaled image
      */
-    public BufferedImage getScaledImage()
+    public ImageIcon getScaledImage()
     {
         RawScale2x scaler = new RawScale2x(srcData,width,height);
 
         BufferedImage image = new BufferedImage(width*2,height*2,BufferedImage.TYPE_INT_ARGB);
         image.setRGB(0,0,width*2,height*2,scaler.getScaledData(),0,width*2);
 
-        return image;
+        return new ImageIcon(image);
     }
 
     /**
@@ -81,15 +85,15 @@ public class ImageScale2x
         try
         {
             System.out.println("Reading: "+srcFile);
-            BufferedImage src = ImageIO.read(new File(srcFile));
+            ImageIcon src = new ImageIcon(srcFile);
             ImageScale2x scaler = new ImageScale2x(src);
-            BufferedImage out = scaler.getScaledImage();
+            ImageIcon out = scaler.getScaledImage();
 
             String outFile = srcFile.substring(0,srcFile.length()-4);
             outFile += "2x";
             outFile += ".png";
             System.out.println("Writing: "+outFile);
-            ImageIO.write(out,"PNG",new File(outFile));
+            Face.saveImageIcon(out, new File(outFile));
         }
         catch (Exception e)
         {

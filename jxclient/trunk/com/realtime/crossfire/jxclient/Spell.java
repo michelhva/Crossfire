@@ -22,6 +22,7 @@ import com.realtime.crossfire.jxclient.*;
 import java.util.*;
 import java.awt.image.*;
 import java.io.*;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -31,7 +32,7 @@ import java.io.*;
  */
 public class Spell
 {
-    private final BufferedImage myspellpic;
+    private final ImageIcon myspellpic;
     private String myspellname;
     private final String myid;
 
@@ -132,8 +133,7 @@ public class Spell
 
     public Spell(String filename, String spellname, String id) throws IOException
     {
-        myspellpic   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(filename));
+        myspellpic = new ImageIcon(getClass().getClassLoader().getResource(filename));
         if (myspellpic == null)
         {
             throw new IllegalArgumentException("resource '"+filename+"' does not exist");
@@ -148,13 +148,13 @@ public class Spell
     {
         return myid;
     }
-    public BufferedImage getPicture()
+    public ImageIcon getImageIcon()
     {
         if (myspellpic != null)
             return myspellpic;
         else
         {
-            return myface.getOriginalPicture();
+            return myface.getOriginalImageIcon();
         }
     }
     public String toString()

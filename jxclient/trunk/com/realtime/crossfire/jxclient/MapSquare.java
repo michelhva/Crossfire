@@ -71,8 +71,8 @@ public class MapSquare
 
         if (myface[layer]!=null)
         {
-            sw = myface[layer].getPicture().getWidth() / ServerConnection.SQUARE_SIZE;
-            sh = myface[layer].getPicture().getHeight() / ServerConnection.SQUARE_SIZE;
+            sw = myface[layer].getImageIcon().getIconWidth() / ServerConnection.SQUARE_SIZE;
+            sh = myface[layer].getImageIcon().getIconHeight() / ServerConnection.SQUARE_SIZE;
 
             psx = x - (sw-1);
             psy = y - (sh-1);
@@ -91,8 +91,8 @@ public class MapSquare
         myface[layer] = f;
         if (myface[layer]!=null)
         {
-            sw = myface[layer].getPicture().getWidth() / ServerConnection.SQUARE_SIZE;
-            sh = myface[layer].getPicture().getHeight() / ServerConnection.SQUARE_SIZE;
+            sw = myface[layer].getImageIcon().getIconWidth() / ServerConnection.SQUARE_SIZE;
+            sh = myface[layer].getImageIcon().getIconHeight() / ServerConnection.SQUARE_SIZE;
 
             psx = x - (sw-1);
             psy = y - (sh-1);
@@ -125,8 +125,8 @@ public class MapSquare
             if ((myhead[layer] == this)&&(myface[layer]!=null))
             {
                 MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
-                int sw = myface[layer].getPicture().getWidth() / ServerConnection.SQUARE_SIZE;
-                int sh = myface[layer].getPicture().getHeight() / ServerConnection.SQUARE_SIZE;
+                int sw = myface[layer].getImageIcon().getIconWidth() / ServerConnection.SQUARE_SIZE;
+                int sh = myface[layer].getImageIcon().getIconHeight() / ServerConnection.SQUARE_SIZE;
 
                 int psx = x - (sw-1);
                 int psy = y - (sh-1);

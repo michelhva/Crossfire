@@ -42,8 +42,8 @@ public class MapObject
     {
         z = pz;
         myface = f;
-        w = myface.getPicture().getWidth();
-        h = myface.getPicture().getHeight();
+        w = myface.getImageIcon().getIconWidth();
+        h = myface.getImageIcon().getIconHeight();
 
         //px and py are the lower-right square coordinate - let's convert
         //that to top-left ones.
