@@ -42,7 +42,7 @@ public class JXCWindowRenderer
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice      gd = ge.getDefaultScreenDevice();
         isfullscreen = gd.isFullScreenSupported();
-        if (gd.isFullScreenSupported() == false)
+        if (!gd.isFullScreenSupported())
         {
             System.out.println("Warning ! True full-screen support is not available.");
             jxcWindow.setUndecorated(true);
@@ -72,7 +72,7 @@ public class JXCWindowRenderer
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (gd.isFullScreenSupported() == true)
+        if (gd.isFullScreenSupported())
         {
             gd.setDisplayMode(oldDisplayMode);
             gd.setFullScreenWindow(null);
