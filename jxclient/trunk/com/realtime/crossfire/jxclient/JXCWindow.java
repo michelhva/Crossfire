@@ -388,7 +388,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
-            DisplayMode ndm = mymode;
             this.setSize(mymode.getWidth(),mymode.getHeight());
             this.setVisible(true);
         }

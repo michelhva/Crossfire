@@ -111,7 +111,6 @@ public class ItemsList
     {
         int len = dis.available();
         int pos = 0;
-        CfItem kickme = null;
 
         while (pos<len)
         {

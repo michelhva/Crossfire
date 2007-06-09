@@ -162,7 +162,6 @@ public class ServerConnection extends Thread
     public synchronized void readPacket() throws IOException, UnknownCommandException
     {
         int len = 0;
-        int off = 0;
         int i = 0;
 
         len = in.readUnsignedShort();
@@ -980,7 +979,7 @@ public class ServerConnection extends Thread
 
         dis.readFully(buf);
 
-        String str = new String(buf);
+//        String str = new String(buf);
     }
 
     /**

@@ -111,20 +111,14 @@ public class JXCSkinPrelude implements JXCSkin
         mydialog_query.clear();
 
         Font font_default_small  = null;
-        Font font_default_medium = null;
-        Font font_default_large  = null;
+        Font font_default_medium;
+        Font font_default_large;
         Font font_log            = null;
-        Font font_menu           = null;
-        Font font_stats          = null;
-        Font font_types          = null;
+        Font font_menu;
+        Font font_stats;
+        Font font_types;
         Font font_cmdline        = null;
-        java.util.List<GUICommand> command_log_upper_up = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_log_upper_down = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rinv_down = new ArrayList<GUICommand>();
         java.util.List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_magicmap_display = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_magicmap_undisplay = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_menu_display = new ArrayList<GUICommand>();
         InputStream ttf=null;
         try
         {
