@@ -20,7 +20,6 @@
 
 package com.realtime.crossfire.jxclient;
 
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.io.IOException;
