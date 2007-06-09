@@ -125,7 +125,7 @@ public class GUIItemSpellbelt extends GUIItem
             return;
         }
 
-        g.drawImage(myspellbelt.getSpell().getPicture(), 0, 0, null);
+        g.drawImage(myspellbelt.getSpell().getImageIcon().getImage(), 0, 0, null);
         g.setFont(myfont);
         g.setColor(Color.YELLOW);
         g.drawString("F"+(myindex+1), 1, 1+myfont.getSize());

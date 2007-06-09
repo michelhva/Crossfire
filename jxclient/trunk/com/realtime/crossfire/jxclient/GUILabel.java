@@ -25,6 +25,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.image.*;
 import java.io.*;
+import javax.swing.ImageIcon;
 import javax.swing.text.*;
 import javax.swing.text.html.*;
 import javax.swing.text.html.parser.*;
@@ -40,7 +41,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                                                     CrossfireDrawextinfoListener,
                                                     SpellListener
 {
-    private BufferedImage mybackground = null;
+    private ImageIcon mybackground = null;
     private Font myfont;
     private String mycaption=new String("");
     private int mystat=0;
@@ -57,8 +58,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             throws IOException
     {
         if (picture != null)
-            mybackground =
-                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+            mybackground = new ImageIcon(getClass().getClassLoader().getResource(picture));
         else
             mybackground = null;
         x = nx;
@@ -72,7 +72,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
-            g.drawImage(mybackground, x, y, null);
+            g.drawImage(mybackground.getImage(), x, y, null);
         g.dispose();
     }
 
@@ -139,7 +139,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             g.clearRect(0,0,w,h);
             if (mybackground != null)
             {
-                g.drawImage(mybackground, x, y, null);
+                g.drawImage(mybackground.getImage(), x, y, null);
             }
             g.setFont(myfont);
             g.setColor(mycolor);
@@ -309,14 +309,14 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                         break;
                     case LABEL_SPELL_ICON:
                         mycaption="";
-                        mybackground = sp.getPicture();
+                        mybackground = sp.getImageIcon();
                         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
                         GraphicsDevice      gd = ge.getDefaultScreenDevice();
                         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
                         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
                         Graphics2D g = mybuffer.createGraphics();
                         if (mybackground != null)
-                            g.drawImage(mybackground, x, y, null);
+                            g.drawImage(mybackground.getImage(), x, y, null);
                         g.dispose();
                         break;
                     case LABEL_SPELL_COST:

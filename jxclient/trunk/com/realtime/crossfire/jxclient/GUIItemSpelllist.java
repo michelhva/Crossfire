@@ -90,7 +90,7 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
-        g.drawImage(myspell.getPicture(), 0, 0, null);
+        g.drawImage(myspell.getImageIcon().getImage(), 0, 0, null);
         if (active)
         {
             g.drawImage(mypicselector, 0, 0, null);
