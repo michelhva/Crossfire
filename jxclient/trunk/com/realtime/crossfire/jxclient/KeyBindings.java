@@ -84,27 +84,40 @@ public final class KeyBindings implements Iterable<KeyBinding>
         try
         {
             final FileInputStream fis = new FileInputStream(filename);
-            final ObjectInputStream ois = new ObjectInputStream(fis);
-            keybindings.clear();
-            final int sz = ois.readInt();
-            for(int i=0;i<sz;i++)
+            try
             {
-                final int kc = ois.readInt();
-                final int km = ois.readInt();
-                final int lsz= ois.readInt();
-                final List<GUICommand> guil = new ArrayList<GUICommand>();
-                for(int j=0; j<lsz; j++)
+                final ObjectInputStream ois = new ObjectInputStream(fis);
+                try
                 {
-                    final List list_parms = new ArrayList();
-                    list_parms.add(this);
-                    list_parms.add((String)ois.readObject());
-                    final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
-                                        list_parms);
-                    guil.add(guic);
+                    keybindings.clear();
+                    final int sz = ois.readInt();
+                    for(int i=0;i<sz;i++)
+                    {
+                        final int kc = ois.readInt();
+                        final int km = ois.readInt();
+                        final int lsz= ois.readInt();
+                        final List<GUICommand> guil = new ArrayList<GUICommand>();
+                        for(int j=0; j<lsz; j++)
+                        {
+                            final List list_parms = new ArrayList();
+                            list_parms.add(this);
+                            list_parms.add((String)ois.readObject());
+                        final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
+                            list_parms);
+                        guil.add(guic);
+                        }
+                        keybindings.add(new KeyBinding(kc, km, guil));
+                    }
                 }
-                keybindings.add(new KeyBinding(kc, km, guil));
+                finally
+                {
+                    ois.close();
+                }
             }
-            ois.close();
+            finally
+            {
+                fis.close();
+            }
         }
         catch (final Exception e)
         {
@@ -117,20 +130,33 @@ public final class KeyBindings implements Iterable<KeyBinding>
         try
         {
             final FileOutputStream fos = new FileOutputStream(filename);
-            final ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeInt(keybindings.size());
-            for (final KeyBinding kb : keybindings)
+            try
             {
-                oos.writeInt(kb.getKeyCode());
-                oos.writeInt(kb.getKeyModifiers());
-                oos.writeInt(kb.getCommands().size());
-                for (final GUICommand guic : kb.getCommands())
+                final ObjectOutputStream oos = new ObjectOutputStream(fos);
+                try
                 {
-                    final List guil = (List)guic.getParams();
-                    oos.writeObject((String)guil.get(1));
+                    oos.writeInt(keybindings.size());
+                    for (final KeyBinding kb : keybindings)
+                    {
+                        oos.writeInt(kb.getKeyCode());
+                        oos.writeInt(kb.getKeyModifiers());
+                        oos.writeInt(kb.getCommands().size());
+                        for (final GUICommand guic : kb.getCommands())
+                        {
+                            final List guil = (List)guic.getParams();
+                            oos.writeObject((String)guil.get(1));
+                        }
+                    }
+                }
+                finally
+                {
+                    oos.close();
                 }
             }
-            oos.close();
+            finally
+            {
+                fos.close();
+            }
         }
         catch (final Exception e)
         {
