@@ -76,11 +76,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private ServerConnection myserver = null;
     private GUIElement      myactive_element = null;
     private List<GUIElement> mygui = new ArrayList<GUIElement>();
-    private String          semaphore_drawing = new String("semaphore_drawing");;
-    private String          mydialogstatus_sem = new String("mydialogstatus_sem");
+    private final String    semaphore_drawing = new String("semaphore_drawing");;
+    private final String    mydialogstatus_sem = new String("mydialogstatus_sem");
     private DisplayMode     mymode = null;
     private Spell           mycurrentspell = null;
-    private static SpellBeltItem[]         myspellbelt = new SpellBeltItem[12];
+    private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
     private boolean isfullscreen = false;
 
     private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
@@ -97,11 +97,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private JXCSkin myskin = null;
 
-    private List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
-    private boolean[] key_shift = new boolean[]{false, false, false, false};
+    private final List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
+    private final boolean[] key_shift = new boolean[]{false, false, false, false};
     private List<GUICommand> mycurrentkeybinding = null;
 
-    private List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
+    private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
     public final static int KEY_SHIFT_SHIFT = 0;
     public final static int KEY_SHIFT_CTRL  = 1;
@@ -118,39 +118,39 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return is_fire_active;
     }
-    public void terminateScript(ScriptProcess sp)
+    public void terminateScript(final ScriptProcess sp)
     {
         System.out.println("Script "+sp+" terminated");
         myserver.removeScriptMonitor((CrossfireScriptMonitorListener)sp);
     }
-    public void runScript(String cmdline)
+    public void runScript(final String cmdline)
     {
         System.out.println("Script to run: "+cmdline);
         try
         {
-            ScriptProcess sp = new ScriptProcess(cmdline, this);
+            final ScriptProcess sp = new ScriptProcess(cmdline, this);
         }
-        catch (IOException e)
+        catch (final IOException e)
         {
             System.out.println("Unable to run script: "+cmdline);
         }
     }
-    public void addSpellListener(SpellListener s)
+    public void addSpellListener(final SpellListener s)
     {
         myspelllisteners.add(s);
     }
-    public void removeSpellListener(SpellListener s)
+    public void removeSpellListener(final SpellListener s)
     {
         myspelllisteners.remove(s);
     }
-    public void setCurrentSpell(Spell s)
+    public void setCurrentSpell(final Spell s)
     {
         mycurrentspell = s;
-        Iterator<SpellListener> it = myspelllisteners.iterator();
-        SpellChangedEvent evt = new SpellChangedEvent(this, s);
+        final Iterator<SpellListener> it = myspelllisteners.iterator();
+        final SpellChangedEvent evt = new SpellChangedEvent(this, s);
         while (it.hasNext())
         {
-            SpellListener sl = it.next();
+            final SpellListener sl = it.next();
             sl.SpellChanged(evt);
         }
     }
@@ -158,11 +158,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return mycurrentspell;
     }
-    public void addKeyBinding(int keycode, int keymod, List<GUICommand> cmdlist)
+    public void addKeyBinding(final int keycode, final int keymod, final List<GUICommand> cmdlist)
     {
-        KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
+        final KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
         KeyBinding ok;
-        Iterator<KeyBinding> it = mykeybindings.iterator();
+        final Iterator<KeyBinding> it = mykeybindings.iterator();
         KeyBinding elected = null;
         while(it.hasNext())
         {
@@ -177,7 +177,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mykeybindings.remove(elected);
         mykeybindings.add(kb);
     }
-    public void createKeyBinding(List<GUICommand> cmdlist)
+    public void createKeyBinding(final List<GUICommand> cmdlist)
     {
         mycurrentkeybinding = cmdlist;
         setDialogStatus(DLG_KEYBIND);
@@ -187,12 +187,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         mycurrentkeybinding = null;
         setDialogStatus(DLG_KEYBIND);
     }
-    private void deleteKeyBinding(int keycode, int keymod)
+    private void deleteKeyBinding(final int keycode, final int keymod)
     {
-        Iterator<KeyBinding> it = mykeybindings.iterator();
+        final Iterator<KeyBinding> it = mykeybindings.iterator();
         while(it.hasNext())
         {
-            KeyBinding kb = it.next();
+            final KeyBinding kb = it.next();
             if ((kb.getKeyCode()==keycode)&&(kb.getKeyModifiers()==keymod))
             {
                 mykeybindings.remove(kb);
@@ -200,12 +200,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    private void loadSpellBelt(String filename)
+    private void loadSpellBelt(final String filename)
     {
         try
         {
-            FileInputStream fis = new FileInputStream(filename);
-            ObjectInputStream ois = new ObjectInputStream(fis);
+            final FileInputStream fis = new FileInputStream(filename);
+            final ObjectInputStream ois = new ObjectInputStream(fis);
 
             for(int i=0;i<12;i++)
             {
@@ -217,7 +217,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             ois.close();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -226,8 +226,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         try
         {
-            FileOutputStream fos = new FileOutputStream(filename);
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            final FileOutputStream fos = new FileOutputStream(filename);
+            final ObjectOutputStream oos = new ObjectOutputStream(fos);
             for(int i=0; i<12;i++)
             {
                 if (myspellbelt[i]==null)
@@ -243,7 +243,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             oos.close();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -252,74 +252,74 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return myspellbelt;
     }
-    private void loadKeyBindings(String filename)
+    private void loadKeyBindings(final String filename)
     {
         try
         {
-            FileInputStream fis = new FileInputStream(filename);
-            ObjectInputStream ois = new ObjectInputStream(fis);
+            final FileInputStream fis = new FileInputStream(filename);
+            final ObjectInputStream ois = new ObjectInputStream(fis);
             mykeybindings.clear();
-            int sz = ois.readInt();
+            final int sz = ois.readInt();
             for(int i=0;i<sz;i++)
             {
-                int kc = ois.readInt();
-                int km = ois.readInt();
-                int lsz= ois.readInt();
-                List<GUICommand> guil = new ArrayList<GUICommand>();
+                final int kc = ois.readInt();
+                final int km = ois.readInt();
+                final int lsz= ois.readInt();
+                final List<GUICommand> guil = new ArrayList<GUICommand>();
                 for(int j=0; j<lsz; j++)
                 {
-                    List list_parms = new ArrayList();
+                    final List list_parms = new ArrayList();
                     list_parms.add(this);
                     list_parms.add((String)ois.readObject());
-                    GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
+                    final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
                                         list_parms);
                     guil.add(guic);
                 }
-                KeyBinding kb = new KeyBinding(kc, km, guil);
+                final KeyBinding kb = new KeyBinding(kc, km, guil);
                 mykeybindings.add(kb);
             }
             ois.close();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
     }
-    private void saveKeyBindings(String filename)
+    private void saveKeyBindings(final String filename)
     {
         try
         {
-            FileOutputStream fos = new FileOutputStream(filename);
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            final FileOutputStream fos = new FileOutputStream(filename);
+            final ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeInt(mykeybindings.size());
-            Iterator<KeyBinding> it = mykeybindings.iterator();
+            final Iterator<KeyBinding> it = mykeybindings.iterator();
             while(it.hasNext())
             {
-                KeyBinding kb = it.next();
+                final KeyBinding kb = it.next();
                 oos.writeInt(kb.getKeyCode());
                 oos.writeInt(kb.getKeyModifiers());
                 oos.writeInt(kb.getCommands().size());
-                Iterator<GUICommand> ic = kb.getCommands().iterator();
+                final Iterator<GUICommand> ic = kb.getCommands().iterator();
                 while (ic.hasNext())
                 {
-                    GUICommand guic = ic.next();
-                    List guil = (List)guic.getParams();
+                    final GUICommand guic = ic.next();
+                    final List guil = (List)guic.getParams();
                     oos.writeObject((String)guil.get(1));
                 }
             }
             oos.close();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             System.err.println("Warning: the key bindings file does not exist or is unavailable.");
             System.err.println("It should be created when you leave the client.");
         }
     }
-    public boolean getKeyShift(int keyid)
+    public boolean getKeyShift(final int keyid)
     {
         return key_shift[keyid];
     }
-    public void setKeyShift(int keyid, boolean state)
+    public void setKeyShift(final int keyid, final boolean state)
     {
         key_shift[keyid] = state;
     }
@@ -327,7 +327,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return mydialogstatus;
     }
-    public void setDialogStatus(int nv)
+    public void setDialogStatus(final int nv)
     {
         synchronized(mydialogstatus_sem)
         {
@@ -372,12 +372,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    private void activateFirstTextArea(List<GUIElement> list)
+    private void activateFirstTextArea(final List<GUIElement> list)
     {
-        Iterator<GUIElement> it = list.iterator();
+        final Iterator<GUIElement> it = list.iterator();
         while (it.hasNext())
         {
-            GUIElement e = it.next();
+            final GUIElement e = it.next();
             if (e instanceof com.realtime.crossfire.jxclient.GUIText)
             {
                 if (e.isVisible())
@@ -391,8 +391,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void initRendering()
     {
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice      gd = ge.getDefaultScreenDevice();
         isfullscreen = gd.isFullScreenSupported();
         if(gd.isFullScreenSupported()==false)
         {
@@ -410,7 +410,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
-            DisplayMode ndm = mymode;
+            final DisplayMode ndm = mymode;
             gd.setFullScreenWindow(this);
             gd.setDisplayMode(ndm);
             System.out.println("Graphic Device:"+gd.getIDstring());
@@ -426,12 +426,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     public void endRendering()
     {
-        long endtime = System.nanoTime();
-        long totaltime = endtime - starttime;
+        final long endtime = System.nanoTime();
+        final long totaltime = endtime - starttime;
         System.out.println(framecount+" frames in "+totaltime/1000000 +
                 " ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
         if(gd.isFullScreenSupported()==true)
         {
             gd.setDisplayMode(oldDisplayMode);
@@ -441,7 +441,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         saveSpellBelt("spellbelt.data");
         System.exit(0);
     }
-    private void initGUI(int id)
+    private void initGUI(final int id)
     {
         switch (id)
         {
@@ -456,28 +456,28 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void changeGUI(int id)
+    public void changeGUI(final int id)
     {
         initGUI(id);
     }
     private void redrawGUI()
     {
-        Graphics g = mybufferstrategy.getDrawGraphics();
+        final Graphics g = mybufferstrategy.getDrawGraphics();
         if (mybufferstrategy.contentsRestored())
         {
             // Surface was recreated and reset, may require redrawing.
             g.setColor(Color.BLACK);
             g.fillRect(0,0,getWidth(),getHeight());
         }
-        Iterator<GUIElement> it = mygui.iterator();
+        final Iterator<GUIElement> it = mygui.iterator();
         while (it.hasNext())
         {
-            GUIElement element = it.next();
+            final GUIElement element = it.next();
             if (element.isVisible())
             {
                 if (element instanceof GUIMap)
                 {
-                    GUIMap mel = (GUIMap)element;
+                    final GUIMap mel = (GUIMap)element;
                     mel.redraw(g);
                 }
                 else
@@ -498,22 +498,22 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             g.fillRect(0,0,getWidth(),getHeight());
         }
     }
-    private void redrawGUIDialog(Graphics g)
+    private void redrawGUIDialog(final Graphics g)
     {
-        Iterator<GUIElement> it;
+        final Iterator<GUIElement> it;
         if (getDialogStatus()!=DLG_NONE)
         {
             it = mydialog_current.iterator();
             while (it.hasNext())
             {
-                GUIElement element = it.next();
+                final GUIElement element = it.next();
 
                 if (element.isVisible())
                 {
                     if (element instanceof GUIMap)
                     {
-                        GUIMap mel = (GUIMap)element;
-                        Graphics gg = element.getBuffer().createGraphics();
+                        final GUIMap mel = (GUIMap)element;
+                        final Graphics gg = element.getBuffer().createGraphics();
                         mel.redraw(gg);
                         gg.dispose();
                         g.drawImage(
@@ -528,7 +528,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    public void init(int w, int h, int b, int f, String skinclass)
+    public void init(final int w, final int h, final int b, final int f, final String skinclass)
     {
         addKeyListener(this);
         addMouseListener(this);
@@ -538,7 +538,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             myskin = (JXCSkin)(Class.forName(skinclass).newInstance());
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(1);
@@ -558,13 +558,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 Thread.sleep(1);
             }
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(1);
         }
     }
-    public void connect(String hostname, int port)
+    public void connect(final String hostname, final int port)
     {
         myserver = new ServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
@@ -572,13 +572,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         initGUI(GUI_MAIN);
         myserver.connect();
     }
-    public void send(String packet)
+    public void send(final String packet)
     {
         try
         {
             myserver.writePacket(packet);
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             endRendering();
@@ -588,28 +588,28 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return myserver;
     }
-    private void launchSpellFromBelt(int idx)
+    private void launchSpellFromBelt(final int idx)
     {
-        List lp = new ArrayList();
+        final List lp = new ArrayList();
         lp.add(this);
         lp.add(myspellbelt[idx]);
-        GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
+        final GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
         fcmd.execute();
     }
-    public void handleKeyPress(KeyEvent e)
+    public void handleKeyPress(final KeyEvent e)
     {
         if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
             return;
-        Iterator<KeyBinding> it = mykeybindings.iterator();
+        final Iterator<KeyBinding> it = mykeybindings.iterator();
         while(it.hasNext())
         {
-            KeyBinding kb = it.next();
+            final KeyBinding kb = it.next();
             if ((kb.getKeyCode()==e.getKeyCode())&&(kb.getKeyModifiers()==e.getModifiers()))
             {
-                Iterator<GUICommand> cit = kb.getCommands().iterator();
+                final Iterator<GUICommand> cit = kb.getCommands().iterator();
                 while (cit.hasNext())
                 {
-                    GUICommand cmd = cit.next();
+                    final GUICommand cmd = cit.next();
                     cmd.execute();
                 }
                 return;
@@ -792,7 +792,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void keyPressed(KeyEvent e)
+    public void keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -852,7 +852,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void keyReleased(KeyEvent e)
+    public void keyReleased(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -880,22 +880,22 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void keyTyped(KeyEvent e)
+    public void keyTyped(final KeyEvent e)
     {
         /*if (myactive_element != null)
             if (myactive_element instanceof KeyListener)
         ((KeyListener)myactive_element).keyTyped(e);*/
     }
-    public void mouseClicked(MouseEvent e)
+    public void mouseClicked(final MouseEvent e)
     {
     }
-    public void mouseEntered(MouseEvent e)
+    public void mouseEntered(final MouseEvent e)
     {
     }
-    public void mouseExited(MouseEvent e)
+    public void mouseExited(final MouseEvent e)
     {
     }
-    public void mousePressed(MouseEvent e)
+    public void mousePressed(final MouseEvent e)
     {
         synchronized(semaphore_drawing)
         {
@@ -917,7 +917,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 myactive_element = elected;
         }
     }
-    public void mouseReleased(MouseEvent e)
+    public void mouseReleased(final MouseEvent e)
     {
         synchronized(semaphore_drawing)
         {
@@ -938,11 +938,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             elected.mouseReleased(e);
         }
     }
-    public GUIElement manageMouseEvents(List<GUIElement> guilist, MouseEvent e)
+    public GUIElement manageMouseEvents(final List<GUIElement> guilist, final MouseEvent e)
     {
-        int x = e.getX();
-        int y = e.getY();
-        int b = e.getButton();
+        final int x = e.getX();
+        final int y = e.getY();
+        final int b = e.getButton();
         GUIElement elected = null;
         switch(b)
         {
@@ -950,7 +950,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 Iterator<GUIElement> it = guilist.iterator();
                 while (it.hasNext())
                 {
-                    GUIElement element = it.next();
+                    final GUIElement element = it.next();
                     if (element.isVisible())
                         if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
                             if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
@@ -961,7 +961,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 it = guilist.iterator();
                 while (it.hasNext())
                 {
-                    GUIElement element = (GUIElement)it.next();
+                    final GUIElement element = (GUIElement)it.next();
                     if (element.isVisible())
                         if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
                             if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
@@ -972,7 +972,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 it = guilist.iterator();
                 while (it.hasNext())
                 {
-                    GUIElement element = (GUIElement)it.next();
+                    final GUIElement element = (GUIElement)it.next();
                     if (element.isVisible())
                         if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
                             if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
@@ -989,14 +989,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             myactive_element.setActive(false);
         myactive_element = null;
     }
-    public void mouseDragged(MouseEvent e)
+    public void mouseDragged(final MouseEvent e)
     {
     }
-    public void mouseMoved(MouseEvent e)
+    public void mouseMoved(final MouseEvent e)
     {
     }
 
-    public void CommandDrawextinfoReceived(CrossfireCommandDrawextinfoEvent evt)
+    public void CommandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
     {
         switch (evt.getType())
         {
@@ -1046,17 +1046,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void CommandQueryReceived(CrossfireCommandQueryEvent evt)
+    public void CommandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         setDialogStatus(DLG_QUERY);
     }
     private void clearGUI()
     {
         mygui.clear();
-        Graphics gd;
         for(int ig=0;ig<3;ig++)
         {
-            gd = mybufferstrategy.getDrawGraphics();
+            final Graphics gd = mybufferstrategy.getDrawGraphics();
             gd.setColor(Color.BLACK);
             gd.fillRect(0,0,getWidth(),getHeight());
             gd.dispose();
@@ -1072,7 +1071,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             mygui = myskin.getStartInterface(myserver,this);
         }
-        catch (JXCSkinException e)
+        catch (final JXCSkinException e)
         {
             endRendering();
         }
@@ -1085,7 +1084,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             mygui = myskin.getMetaInterface(myserver,this);
         }
-        catch (JXCSkinException e)
+        catch (final JXCSkinException e)
         {
             endRendering();
         }
@@ -1108,7 +1107,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             mydialog_keybind = myskin.getDialogKeyBind(myserver, this);
         }
-        catch (JXCSkinException e)
+        catch (final JXCSkinException e)
         {
             endRendering();
         }
