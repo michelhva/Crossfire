@@ -10,7 +10,6 @@ resist_physical 1
 weight 6000
 value 3
 material 18
-materialname bronze
 editable 1024
 magicmap grey
 body_head -1

@@ -8,7 +8,6 @@ face b_plate_mail.111
 magicmap blue
 last_sp 7
 material 2
-materialname bronze
 ac 5
 resist_physical 20
 weight 100000

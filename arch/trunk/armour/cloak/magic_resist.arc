@@ -11,7 +11,6 @@ value 220000
 startequip 1
 no_steal 1
 material 128
-materialname astolare
 resist_magic 95
 editable 5120
 magicmap black

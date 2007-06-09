@@ -10,7 +10,6 @@ magicmap green
 resist_poison 30
 value 900
 material 8
-materialname snakeskin
 editable 5120
 nrof 1
 body_shoulder -1
