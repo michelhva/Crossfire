@@ -81,22 +81,23 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
-        final Graphics g = mybufferstrategy.getDrawGraphics();
-        if (mybufferstrategy.contentsRestored())
+        do
         {
-            // Surface was recreated and reset, may require redrawing.
-            redrawBlack(g);
+            do
+            {
+                final Graphics g = mybufferstrategy.getDrawGraphics();
+                if (mybufferstrategy.contentsRestored())
+                {
+                    redrawBlack(g);
+                }
+                redrawGUIBasic(g);
+                redrawGUIDialog(g);
+                g.dispose();
+            }
+            while (mybufferstrategy.contentsLost());
+            mybufferstrategy.show();
         }
-        redrawGUIBasic(g);
-        redrawGUIDialog(g);
-        g.dispose();
-        mybufferstrategy.show();
-        if (mybufferstrategy.contentsLost())
-        {
-        // The surface was lost since last call to getDrawGraphics, you
-        // may need to redraw.
-            redrawBlack(g);
-        }
+        while (mybufferstrategy.contentsLost());
     }
 
     public void clearGUI()
