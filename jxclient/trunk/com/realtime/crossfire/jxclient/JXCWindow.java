@@ -863,7 +863,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void showGUIStart()
     {
         clearGUI();
-        jxcWindowRenderer.showGUIStart();
         mygui = null;
         try
         {
