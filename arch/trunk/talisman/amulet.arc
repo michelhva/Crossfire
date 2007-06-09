@@ -17,7 +17,6 @@ face amulet_white.111
 color_fg grey
 type 39
 material 12
-materialname platinum and glass
 weight 500
 value 1250
 editable 2048
@@ -33,7 +32,6 @@ face amulet_gray.111
 color_fg grey
 type 39
 material 12
-materialname silver and glass
 weight 500
 value 25
 editable 2048
