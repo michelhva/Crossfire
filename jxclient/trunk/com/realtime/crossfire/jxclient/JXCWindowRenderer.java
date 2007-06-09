@@ -79,11 +79,6 @@ public class JXCWindowRenderer
         }
     }
 
-    public void showGUIStart()
-    {
-        mybufferstrategy.show();
-    }
-
     public void redrawGUI()
     {
         final Graphics g = mybufferstrategy.getDrawGraphics();
