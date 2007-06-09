@@ -90,9 +90,33 @@ public class JXCWindowRenderer
         if (mybufferstrategy.contentsRestored())
         {
             // Surface was recreated and reset, may require redrawing.
-            g.setColor(Color.BLACK);
-            g.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
+            redrawBlack(g);
         }
+        redrawGUIBasic(g);
+        redrawGUIDialog(g);
+        g.dispose();
+        mybufferstrategy.show();
+        if (mybufferstrategy.contentsLost())
+        {
+        // The surface was lost since last call to getDrawGraphics, you
+        // may need to redraw.
+            redrawBlack(g);
+        }
+    }
+
+    public void clearGUI()
+    {
+        for(int ig=0;ig<3;ig++)
+        {
+            final Graphics gd = mybufferstrategy.getDrawGraphics();
+            redrawBlack(gd);
+            gd.dispose();
+            mybufferstrategy.show();
+        }
+    }
+
+    private void redrawGUIBasic(final Graphics g)
+    {
         for (final GUIElement element : jxcWindow.getGui())
         {
             if (element.isVisible())
@@ -107,28 +131,6 @@ public class JXCWindowRenderer
                     g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
                 }
             }
-        }
-        redrawGUIDialog(g);
-        g.dispose();
-        mybufferstrategy.show();
-        if (mybufferstrategy.contentsLost())
-        {
-        // The surface was lost since last call to getDrawGraphics, you
-        // may need to redraw.
-            g.setColor(Color.BLACK);
-            g.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
-        }
-    }
-
-    public void clearGUI()
-    {
-        for(int ig=0;ig<3;ig++)
-        {
-            final Graphics gd = mybufferstrategy.getDrawGraphics();
-            gd.setColor(Color.BLACK);
-            gd.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
-            gd.dispose();
-            mybufferstrategy.show();
         }
     }
 
@@ -151,6 +153,12 @@ public class JXCWindowRenderer
                 }
             }
         }
+    }
+
+    private void redrawBlack(final Graphics g)
+    {
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
     }
 
     public void setCurrentDialog(final List<GUIElement> dialog)
