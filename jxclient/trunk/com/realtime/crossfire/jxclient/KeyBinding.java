@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.List;
+
 /**
  *
  * @version 1.0
@@ -29,7 +31,7 @@ public class KeyBinding
 {
     int                         mycode;
     int                         mymodifiers;
-    java.util.List<GUICommand>  mycommands;
+    List<GUICommand>  mycommands;
 
     public int getKeyCode()
     {
@@ -39,11 +41,11 @@ public class KeyBinding
     {
         return mymodifiers;
     }
-    public java.util.List<GUICommand> getCommands()
+    public List<GUICommand> getCommands()
     {
         return mycommands;
     }
-    public KeyBinding(int c, int m, java.util.List<GUICommand> l)
+    public KeyBinding(int c, int m, List<GUICommand> l)
     {
         mycode = c;
         mymodifiers = m;
