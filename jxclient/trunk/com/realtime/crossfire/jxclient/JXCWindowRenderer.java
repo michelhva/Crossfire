@@ -42,7 +42,7 @@ public class JXCWindowRenderer
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice      gd = ge.getDefaultScreenDevice();
         isfullscreen = gd.isFullScreenSupported();
-        if(gd.isFullScreenSupported()==false)
+        if (gd.isFullScreenSupported() == false)
         {
             System.out.println("Warning ! True full-screen support is not available.");
             jxcWindow.setUndecorated(true);
@@ -72,7 +72,7 @@ public class JXCWindowRenderer
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if(gd.isFullScreenSupported()==true)
+        if (gd.isFullScreenSupported() == true)
         {
             gd.setDisplayMode(oldDisplayMode);
             gd.setFullScreenWindow(null);
@@ -102,7 +102,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        for(int ig=0;ig<3;ig++)
+        for(int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();
             redrawBlack(g);
@@ -132,7 +132,7 @@ public class JXCWindowRenderer
 
     private void redrawGUIDialog(final Graphics g)
     {
-        if (jxcWindow.getDialogStatus()!=JXCWindow.DLG_NONE)
+        if (jxcWindow.getDialogStatus() != JXCWindow.DLG_NONE)
         {
             for (final GUIElement element : currentDialog)
             {
