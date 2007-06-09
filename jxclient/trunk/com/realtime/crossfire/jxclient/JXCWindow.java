@@ -241,10 +241,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         key_shift[keyid] = state;
     }
-    public int getDialogStatus()
-    {
-        return mydialogstatus;
-    }
     public void setDialogStatus(final int nv)
     {
         synchronized(mydialogstatus_sem)
@@ -620,7 +616,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 setKeyShift(KEY_SHIFT_CTRL, true);
                 break;
             default:
-                if (getDialogStatus()==DLG_KEYBIND)
+                if (mydialogstatus == DLG_KEYBIND)
                 {
                     if (mycurrentkeybinding!=null)
                     {
@@ -715,9 +711,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             GUIElement myother = null;
 
-            if (getDialogStatus()!=DLG_NONE)
+            final List<GUIElement> currentDialog = jxcWindowRenderer.getCurrentDialog();
+            if (currentDialog != null)
             {
-                myother = manageMouseEvents(jxcWindowRenderer.getCurrentDialog(), e);
+                myother = manageMouseEvents(currentDialog, e);
                 if (myother != null)
                     elected = myother;
             }
@@ -737,9 +734,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             GUIElement myother = null;
 
-            if (getDialogStatus() != DLG_NONE)
+            final List<GUIElement> currentDialog = jxcWindowRenderer.getCurrentDialog();
+            if (currentDialog != null)
             {
-                myother = manageMouseEvents(jxcWindowRenderer.getCurrentDialog(), e);
+                myother = manageMouseEvents(currentDialog, e);
                 if (myother != null)
                     elected = myother;
             }
