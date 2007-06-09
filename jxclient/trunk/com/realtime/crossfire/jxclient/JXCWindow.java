@@ -509,7 +509,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         final GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
         fcmd.execute();
     }
-    public void handleKeyPress(final KeyEvent e)
+    private void handleKeyPress(final KeyEvent e)
     {
         if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
             return;
@@ -847,7 +847,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             elected.mouseReleased(e);
         }
     }
-    public GUIElement manageMouseEvents(final List<GUIElement> guilist, final MouseEvent e)
+    private GUIElement manageMouseEvents(final List<GUIElement> guilist, final MouseEvent e)
     {
         final int x = e.getX();
         final int y = e.getY();
