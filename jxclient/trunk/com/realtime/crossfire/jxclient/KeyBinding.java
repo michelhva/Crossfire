@@ -27,11 +27,11 @@ import java.util.List;
  * @author Lauwenmark
  * @since 1.0
  */
-public class KeyBinding
+public final class KeyBinding
 {
-    int keyCode;
-    int modifiers;
-    List<GUICommand> commands;
+    final int keyCode;
+    final int modifiers;
+    final List<GUICommand> commands;
 
     public int getKeyCode()
     {
@@ -45,17 +45,17 @@ public class KeyBinding
     {
         return commands;
     }
-    public KeyBinding(int keyCode, int modifiers, List<GUICommand> commands)
+    public KeyBinding(final int keyCode, final int modifiers, final List<GUICommand> commands)
     {
         this.keyCode = keyCode;
         this.modifiers = modifiers;
         this.commands = commands;
     }
-    public boolean equals(Object op)
+    public boolean equals(final Object op)
     {
         if (op instanceof KeyBinding)
         {
-            KeyBinding keyBinding = (KeyBinding)op;
+            final KeyBinding keyBinding = (KeyBinding)op;
             if ((keyBinding.getKeyCode()==keyCode)&&(keyBinding.getKeyModifiers()==modifiers))
                 return true;
             else
