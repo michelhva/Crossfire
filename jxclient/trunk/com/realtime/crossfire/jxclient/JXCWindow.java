@@ -96,7 +96,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private JXCSkin myskin = null;
 
-    private final List<KeyBinding> mykeybindings = new ArrayList<KeyBinding>();
+    private final KeyBindings keyBindings = new KeyBindings();
     private final boolean[] key_shift = new boolean[]{false, false, false, false};
     private List<GUICommand> mycurrentkeybinding = null;
 
@@ -155,22 +155,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return mycurrentspell;
     }
-    public void addKeyBinding(final int keycode, final int keymod, final List<GUICommand> cmdlist)
-    {
-        final KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
-        KeyBinding elected = null;
-        for (final KeyBinding ok : mykeybindings)
-        {
-            if (ok.equals(kb))
-            {
-                elected = ok;
-                continue;
-            }
-        }
-        if (elected != null)
-            mykeybindings.remove(elected);
-        mykeybindings.add(kb);
-    }
     public void createKeyBinding(final List<GUICommand> cmdlist)
     {
         mycurrentkeybinding = cmdlist;
@@ -180,17 +164,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         mycurrentkeybinding = null;
         setDialogStatus(DLG_KEYBIND);
-    }
-    private void deleteKeyBinding(final int keycode, final int keymod)
-    {
-        for (final KeyBinding kb : mykeybindings)
-        {
-            if ((kb.getKeyCode()==keycode)&&(kb.getKeyModifiers()==keymod))
-            {
-                mykeybindings.remove(kb);
-                return;
-            }
-        }
     }
     private void loadSpellBelt(final String filename)
     {
@@ -243,65 +216,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static SpellBeltItem[] getSpellBelt()
     {
         return myspellbelt;
-    }
-    private void loadKeyBindings(final String filename)
-    {
-        try
-        {
-            final FileInputStream fis = new FileInputStream(filename);
-            final ObjectInputStream ois = new ObjectInputStream(fis);
-            mykeybindings.clear();
-            final int sz = ois.readInt();
-            for(int i=0;i<sz;i++)
-            {
-                final int kc = ois.readInt();
-                final int km = ois.readInt();
-                final int lsz= ois.readInt();
-                final List<GUICommand> guil = new ArrayList<GUICommand>();
-                for(int j=0; j<lsz; j++)
-                {
-                    final List list_parms = new ArrayList();
-                    list_parms.add(this);
-                    list_parms.add((String)ois.readObject());
-                    final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
-                                        list_parms);
-                    guil.add(guic);
-                }
-                final KeyBinding kb = new KeyBinding(kc, km, guil);
-                mykeybindings.add(kb);
-            }
-            ois.close();
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-    private void saveKeyBindings(final String filename)
-    {
-        try
-        {
-            final FileOutputStream fos = new FileOutputStream(filename);
-            final ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeInt(mykeybindings.size());
-            for (final KeyBinding kb : mykeybindings)
-            {
-                oos.writeInt(kb.getKeyCode());
-                oos.writeInt(kb.getKeyModifiers());
-                oos.writeInt(kb.getCommands().size());
-                for (final GUICommand guic : kb.getCommands())
-                {
-                    final List guil = (List)guic.getParams();
-                    oos.writeObject((String)guil.get(1));
-                }
-            }
-            oos.close();
-        }
-        catch (final Exception e)
-        {
-            System.err.println("Warning: the key bindings file does not exist or is unavailable.");
-            System.err.println("It should be created when you leave the client.");
-        }
     }
     public boolean getKeyShift(final int keyid)
     {
@@ -406,7 +320,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         mybufferstrategy = getBufferStrategy();
 
         framecount = 0;
-        loadKeyBindings("keybindings.data");
+        keyBindings.loadKeyBindings("keybindings.data");
         loadSpellBelt("spellbelt.data");
         starttime = System.nanoTime();
     }
@@ -423,7 +337,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             gd.setDisplayMode(oldDisplayMode);
             gd.setFullScreenWindow(null);
         }
-        saveKeyBindings("keybindings.data");
+        keyBindings.saveKeyBindings("keybindings.data");
         saveSpellBelt("spellbelt.data");
         System.exit(0);
     }
@@ -574,7 +488,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
             return;
-        for (final KeyBinding kb : mykeybindings)
+        for (final KeyBinding kb : keyBindings)
         {
             if ((kb.getKeyCode()==e.getKeyCode())&&(kb.getKeyModifiers()==e.getModifiers()))
             {
@@ -783,12 +697,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 {
                     if (mycurrentkeybinding!=null)
                     {
-                        addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
+                        keyBindings.addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
                     }
                     else
                     {
-                        deleteKeyBinding(e.getKeyCode(), e.getModifiers());
-                        addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
+                        keyBindings.deleteKeyBinding(e.getKeyCode(), e.getModifiers());
+                        keyBindings.addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
                     }
                     mycurrentkeybinding = null;
                     setDialogStatus(DLG_NONE);
