@@ -40,7 +40,7 @@ public final class KeyBindings implements Iterable<KeyBinding>
 
     public int size()
     {
-	return keybindings.size();
+        return keybindings.size();
     }
 
     public void addKeyBinding(final int keycode, final int keymod, final List<GUICommand> cmdlist)
@@ -76,7 +76,7 @@ public final class KeyBindings implements Iterable<KeyBinding>
 
     public Iterator<KeyBinding> iterator()
     {
-	return Collections.unmodifiableList(keybindings).iterator();
+        return Collections.unmodifiableList(keybindings).iterator();
     }
 
     public void loadKeyBindings(final String filename)
