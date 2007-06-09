@@ -25,7 +25,6 @@ race arrows
 type 14
 nrof 1
 material 16
-materialname ivory
 face reflexbow_bone.111
 color_fg brown
 dam 23
@@ -48,8 +47,7 @@ name reflex bow
 race arrows
 type 14
 nrof 1
-material 0
-materialname bone
+material 2048
 face reflexbow_bone.111
 color_fg brown
 dam 32

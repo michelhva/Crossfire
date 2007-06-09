@@ -5,7 +5,6 @@ last_sp 8
 type 15
 face b_bsword_2.111
 material 2
-materialname bronze
 dam 4
 weight 21500
 value 11

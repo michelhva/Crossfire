@@ -6,7 +6,6 @@ last_sp 10
 type 15
 face b_axe1.111
 material 18
-materialname bronze
 dam 3
 weight 6000
 value 5
