@@ -20,7 +20,8 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.IOException;
+import java.io.File;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 /**

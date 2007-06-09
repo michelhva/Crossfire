@@ -19,9 +19,16 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.util.*;
-import java.io.*;
-import java.awt.*;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Transparency;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Set;
 import javax.swing.ImageIcon;
 
 /**
