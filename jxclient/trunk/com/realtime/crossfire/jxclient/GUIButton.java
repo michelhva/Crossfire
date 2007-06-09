@@ -85,8 +85,6 @@ public class GUIButton extends GUIElement
     }
     public void mouseReleased(MouseEvent e)
     {
-        int x = e.getX();
-        int y = e.getY();
         int b = e.getButton();
         switch(b)
         {

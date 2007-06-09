@@ -128,7 +128,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     {
         try
         {
-            String myfinalcaption="";
             Graphics2D g = mybuffer.createGraphics();
             g.setBackground(new Color(0,0,0,0.0f));
             g.clearRect(0,0,w,h);

@@ -94,7 +94,7 @@ public class Map
     }
     public static void newMap(DataInputStream dis) throws IOException
     {
-        long stime = System.nanoTime();
+//        long stime = System.nanoTime();
 
         for (int x=0;x<ServerConnection.MAP_WIDTH+20;x++)
         {
@@ -278,7 +278,6 @@ public class Map
         int len = dis.available();
         int pos = 0;
         java.util.List<MapSquare> l = new LinkedList<MapSquare>();
-        boolean bottom = true;
         int[] faces = new int[ServerConnection.NUM_LAYERS];
         while (pos<len)
         {
