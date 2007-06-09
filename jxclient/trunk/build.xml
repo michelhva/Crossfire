@@ -6,7 +6,9 @@
         <mkdir dir="${build}"/>
     </target>
     <target name="compile" depends="init">
-        <javac srcdir="${src}" destdir="${build}" target="1.5"/>
+        <javac srcdir="${src}" destdir="${build}" target="1.5" debug="yes">
+            <compilerarg value="-Xlint:unchecked"/>
+        </javac>
     </target>
     <target name="jar" depends="compile">
         <copy file="cache/black.png" todir="${build}"/>
