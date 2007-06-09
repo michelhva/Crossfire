@@ -4,7 +4,6 @@ last_sp 5
 type 15
 face b_dagger.111
 material 2
-materialname bronze
 dam 1
 weight 2000
 value 10
