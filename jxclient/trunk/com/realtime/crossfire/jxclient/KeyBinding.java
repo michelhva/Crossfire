@@ -56,10 +56,7 @@ public final class KeyBinding
         if (op instanceof KeyBinding)
         {
             final KeyBinding keyBinding = (KeyBinding)op;
-            if ((keyBinding.getKeyCode()==keyCode)&&(keyBinding.getKeyModifiers()==modifiers))
-                return true;
-            else
-                return false;
+            return keyBinding.getKeyCode() == keyCode && keyBinding.getKeyModifiers() == modifiers;
         }
         else
             return false;
