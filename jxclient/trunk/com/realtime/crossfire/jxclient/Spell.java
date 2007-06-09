@@ -156,7 +156,7 @@ public class Spell
     }
     public String toString()
     {
-        String str = new String("Name:"+myname+" ID:"+mytag+" Level:"+mylevel);
+        String str = "Name:"+myname+" ID:"+mytag+" Level:"+mylevel;
         str = str+" Time:"+mycastingtime+" Mana:"+mymana+" Grace:"+mygrace;
         str = str+" Damage:"+mydamage+" Skill:"+myskill+" Path:"+mypath;
         return str;

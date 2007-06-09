@@ -75,8 +75,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private ServerConnection myserver = null;
     private GUIElement      myactive_element = null;
     private List<GUIElement> mygui = new ArrayList<GUIElement>();
-    private final String    semaphore_drawing = new String("semaphore_drawing");;
-    private final String    mydialogstatus_sem = new String("mydialogstatus_sem");
+    private final String    semaphore_drawing = "semaphore_drawing";
+    private final String    mydialogstatus_sem = "mydialogstatus_sem";
     private DisplayMode     mymode = null;
     private Spell           mycurrentspell = null;
     private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];

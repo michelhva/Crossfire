@@ -38,7 +38,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
 {
     private ImageIcon mybackground = null;
     private Font myfont;
-    private String mycaption=new String("");
+    private String mycaption = "";
     private int mystat=0;
     private boolean stat_based = false;
     private boolean spell_based = false;

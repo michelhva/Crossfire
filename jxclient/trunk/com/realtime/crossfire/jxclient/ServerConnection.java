@@ -58,7 +58,7 @@ public class ServerConnection extends Thread
     private static java.util.List<CrossfireScriptMonitorListener> scripts_monitor =
             new ArrayList<CrossfireScriptMonitorListener>();
 
-    private static String                  myhost = new String("localhost");
+    private static String                  myhost = "localhost";
     private static int                     myport = 13327;
 
     /**
@@ -118,7 +118,7 @@ public class ServerConnection extends Thread
     public static final int MSG_TYPE_BOOK_SPELL_SUMMONER = 12;
 
     private static int                     mystatus = STATUS_UNCONNECTED;
-    private static String mystatus_sem = new String("mystatus_sem");
+    private static String mystatus_sem = "mystatus_sem";
 
     /**
      * The Thread Main loop. ServerConnection contains its own Thread, so it
@@ -886,7 +886,7 @@ public class ServerConnection extends Thread
         }
         else if (replytype.equals("skill_info"))
         {
-            String r = new String("");
+            String r = "";
             while(r!=null)
             {
                 r = d.readLine();
