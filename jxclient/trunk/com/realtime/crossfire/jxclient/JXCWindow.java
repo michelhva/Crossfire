@@ -496,14 +496,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                         final Graphics gg = element.getBuffer().createGraphics();
                         mel.redraw(gg);
                         gg.dispose();
-                        g.drawImage(
-                                element.getBuffer(), element.getX(), element.getY(), this);
                     }
-                    else
-                    {
-                        g.drawImage(
-                                element.getBuffer(), element.getX(), element.getY(), this);
-                    }
+                    g.drawImage(element.getBuffer(), element.getX(), element.getY(), this);
                 }
             }
         }
