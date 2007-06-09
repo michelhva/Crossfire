@@ -4,6 +4,7 @@ nrof 1
 last_sp 6
 face b_ssword_2.111
 material 2
+materialname bronze
 dam 2
 weight 8000
 value 8

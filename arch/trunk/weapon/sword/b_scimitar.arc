@@ -5,6 +5,7 @@ type 15
 face b_scimitar.111
 color_fg grey
 material 2
+materialname bronze
 dam 4
 weight 15000
 value 10

@@ -8,6 +8,7 @@ resist_physical 1
 nrof 1
 value 64
 material 8
+materialname black leather
 weight 100
 editable 1024
 magicmap black

@@ -4,6 +4,7 @@ type 15
 body_arm -1
 face b_slicingknife.111
 material 2
+materialname bronze
 skill one handed weapon
 weight 1000
 value 7

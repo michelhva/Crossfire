@@ -4,6 +4,7 @@ name_pl shields
 client_type 261
 nrof 1
 material 2
+materialname bronze
 type 33
 face b_shield.111
 ac 1

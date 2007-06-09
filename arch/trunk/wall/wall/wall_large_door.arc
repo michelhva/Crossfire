@@ -1,6 +1,5 @@
 Object wall_large_door1
 name large door
-randomitems door
 move_block 0
 face wall_large_door.111
 magicmap brown
@@ -12,7 +11,6 @@ end
 More
 Object wall_large_door2
 name large door
-randomitems door
 move_block 0
 face wall_large_door.111
 magicmap brown

@@ -5,6 +5,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname silver
 value 1200
 speed 0.2
 anim
@@ -28,6 +29,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname copper
 value 500
 speed 0.2
 anim
@@ -51,6 +53,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname bronze
 value 700
 speed 0.2
 anim
@@ -74,6 +77,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname iron
 value 200
 speed 0.2
 anim
@@ -97,6 +101,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname tin
 value 50
 speed 0.2
 anim
@@ -120,6 +125,7 @@ nrof 1
 weight 23700
 is_animated 1
 material 2
+materialname platinum
 value 5000
 speed 0.2
 anim

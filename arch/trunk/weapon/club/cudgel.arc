@@ -6,6 +6,7 @@ type 15
 face cudgel.111
 color_fg blue
 material 2
+materialname bronze
 weapontype 8
 dam 40
 weight 85000

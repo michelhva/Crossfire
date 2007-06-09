@@ -4,7 +4,8 @@ face sarcophagus.111
 nrof 0
 type 4
 hp 1
-material 64
+material 0
+materialname stone
 value 50
 weight 800000
 editable 132
@@ -20,7 +21,8 @@ name sarcophagus
 other_arch close_sarcophagus_container
 face sarcophagus.111
 type 122
-material 64
+material 0
+materialname stone
 value 50
 container 150000
 weight 800000

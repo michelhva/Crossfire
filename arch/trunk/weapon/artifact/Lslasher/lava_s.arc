@@ -16,6 +16,7 @@ resist_cold 75
 attacktype 5
 weapontype 1
 material 256
+materialname magmasium
 value 220000
 weight 25000
 magic 3

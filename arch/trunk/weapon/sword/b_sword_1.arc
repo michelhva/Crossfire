@@ -6,6 +6,7 @@ type 15
 face b_sword_1.111
 color_fg blue
 material 2
+materialname bronze
 dam 4
 weight 15000
 value 11

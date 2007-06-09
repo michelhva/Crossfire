@@ -7,6 +7,7 @@ slaying angel
 Con 2
 Int 1
 material 256
+materialname abyssium
 sp 1
 type 15
 face uw_sword.111
