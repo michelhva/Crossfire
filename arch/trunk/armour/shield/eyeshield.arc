@@ -4,7 +4,6 @@ name_pl eyeshields
 client_type 260
 nrof 1
 material 32
-materialname organics
 type 33
 face eyeshield.111
 ac 3

@@ -10,7 +10,6 @@ ac 1
 resist_physical 3
 value 4
 material 2
-materialname bronze
 editable 1024
 magicmap black
 body_head -1

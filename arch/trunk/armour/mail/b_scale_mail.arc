@@ -7,7 +7,6 @@ type 16
 face b_scale_mail.111
 last_sp 9
 material 8
-materialname bronze
 ac 3
 resist_physical 10
 weight 20000
