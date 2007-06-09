@@ -48,11 +48,11 @@ public class GUIItemFloor extends GUIItemItem
      */
     private final CurrentFloorListener currentFloorListener = new CurrentFloorListener()
     {
-       /** {@inheritDoc} */
-       public void currentFloorChanged(final int currentFloor)
-       {
-           setIndex(myindex, true);
-       }
+        /** {@inheritDoc} */
+        public void currentFloorChanged(final int currentFloor)
+        {
+            setIndex(myindex, true);
+        }
     };
 
     public GUIItemFloor(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
