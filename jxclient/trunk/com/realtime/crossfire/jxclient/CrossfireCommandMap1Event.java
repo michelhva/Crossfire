@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandMap1Event extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     private List<MapSquare> mylist = null;
 
     public CrossfireCommandMap1Event(Object src, List<MapSquare> l)

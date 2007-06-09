@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandQueryEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     private String myquery;
     private int myquerytype;
     public CrossfireCommandQueryEvent(Object src, String msg, int type)

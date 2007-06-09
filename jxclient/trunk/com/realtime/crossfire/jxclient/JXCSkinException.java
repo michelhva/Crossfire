@@ -27,6 +27,9 @@ package com.realtime.crossfire.jxclient;
  */
 public class JXCSkinException extends Exception
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     public JXCSkinException(String s)
     {
         super(s);

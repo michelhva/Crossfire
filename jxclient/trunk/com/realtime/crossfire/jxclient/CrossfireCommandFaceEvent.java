@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandFaceEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     public CrossfireCommandFaceEvent(Object src)
     {
         super(src);

@@ -28,6 +28,9 @@ import java.util.*;
  */
 public class CrossfireCommandDelSpellEvent extends EventObject
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     private Spell myspell;
     public CrossfireCommandDelSpellEvent(Object src, Spell sp)
     {

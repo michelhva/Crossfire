@@ -36,6 +36,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                                                  CrossfireDrawextinfoListener,
                                                  CrossfireQueryListener
 {
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
     public final static int GUI_START      = 0;
     public final static int GUI_METASERVER = 1;
     public final static int GUI_MAIN       = 2;
