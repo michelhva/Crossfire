@@ -17,15 +17,15 @@ public class JXCWindowRenderer
 {
     private final JXCWindow jxcWindow;
 
-    private BufferStrategy mybufferstrategy;
+    private BufferStrategy bufferStrategy;
 
     private boolean isfullscreen = false;
 
     private DisplayMode oldDisplayMode=null;
 
-    private DisplayMode mymode = null;
+    private DisplayMode displayMode = null;
 
-    private List<GUIElement> mydialog_current = null;
+    private List<GUIElement> currentDialog = null;
 
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
@@ -34,7 +34,7 @@ public class JXCWindowRenderer
 
     public void init(final int w, final int h, final int b, final int f)
     {
-        mymode = new DisplayMode(w, h, b, f);
+        displayMode = new DisplayMode(w, h, b, f);
     }
 
     public void initRendering()
@@ -49,7 +49,7 @@ public class JXCWindowRenderer
             jxcWindow.setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
-            jxcWindow.setSize(mymode.getWidth(),mymode.getHeight());
+            jxcWindow.setSize(displayMode.getWidth(), displayMode.getHeight());
             jxcWindow.setVisible(true);
         }
         else
@@ -58,14 +58,14 @@ public class JXCWindowRenderer
             jxcWindow.setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
-            final DisplayMode ndm = mymode;
+            final DisplayMode ndm = displayMode;
             gd.setFullScreenWindow(jxcWindow);
             gd.setDisplayMode(ndm);
             System.out.println("Graphic Device:"+gd.getIDstring());
             System.out.println("Accelerated memory available:"+gd.getAvailableAcceleratedMemory());
         }
         jxcWindow.createBufferStrategy(2);
-        mybufferstrategy = jxcWindow.getBufferStrategy();
+        bufferStrategy = jxcWindow.getBufferStrategy();
     }
 
     public void endRendering()
@@ -85,8 +85,8 @@ public class JXCWindowRenderer
         {
             do
             {
-                final Graphics g = mybufferstrategy.getDrawGraphics();
-                if (mybufferstrategy.contentsRestored())
+                final Graphics g = bufferStrategy.getDrawGraphics();
+                if (bufferStrategy.contentsRestored())
                 {
                     redrawBlack(g);
                 }
@@ -94,20 +94,20 @@ public class JXCWindowRenderer
                 redrawGUIDialog(g);
                 g.dispose();
             }
-            while (mybufferstrategy.contentsLost());
-            mybufferstrategy.show();
+            while (bufferStrategy.contentsLost());
+            bufferStrategy.show();
         }
-        while (mybufferstrategy.contentsLost());
+        while (bufferStrategy.contentsLost());
     }
 
     public void clearGUI()
     {
         for(int ig=0;ig<3;ig++)
         {
-            final Graphics gd = mybufferstrategy.getDrawGraphics();
-            redrawBlack(gd);
-            gd.dispose();
-            mybufferstrategy.show();
+            final Graphics g = bufferStrategy.getDrawGraphics();
+            redrawBlack(g);
+            g.dispose();
+            bufferStrategy.show();
         }
     }
 
@@ -134,7 +134,7 @@ public class JXCWindowRenderer
     {
         if (jxcWindow.getDialogStatus()!=JXCWindow.DLG_NONE)
         {
-            for (final GUIElement element : mydialog_current)
+            for (final GUIElement element : currentDialog)
             {
                 if (element.isVisible())
                 {
@@ -159,11 +159,11 @@ public class JXCWindowRenderer
 
     public void setCurrentDialog(final List<GUIElement> dialog)
     {
-        mydialog_current = dialog;
+        currentDialog = dialog;
     }
 
     public List<GUIElement> getCurrentDialog()
     {
-        return mydialog_current;
+        return currentDialog;
     }
 }
