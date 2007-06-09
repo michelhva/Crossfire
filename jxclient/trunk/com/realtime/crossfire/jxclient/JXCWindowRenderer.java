@@ -8,6 +8,7 @@ import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferStrategy;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,6 +27,8 @@ public class JXCWindowRenderer
     private DisplayMode displayMode = null;
 
     private List<GUIElement> currentDialog = null;
+
+    private List<GUIElement> currentGui = new ArrayList<GUIElement>();
 
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
@@ -102,6 +105,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
+        currentGui.clear();
         for(int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();
@@ -113,7 +117,7 @@ public class JXCWindowRenderer
 
     private void redrawGUIBasic(final Graphics g)
     {
-        for (final GUIElement element : jxcWindow.getGui())
+        for (final GUIElement element : currentGui)
         {
             if (element.isVisible())
             {
@@ -165,5 +169,15 @@ public class JXCWindowRenderer
     public List<GUIElement> getCurrentDialog()
     {
         return currentDialog;
+    }
+
+    public void setCurrentGui(final List<GUIElement> gui)
+    {
+        currentGui = gui;
+    }
+
+    public List<GUIElement> getCurrentGui()
+    {
+        return currentGui;
     }
 }
