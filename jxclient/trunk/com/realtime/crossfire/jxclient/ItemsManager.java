@@ -466,7 +466,7 @@ public class ItemsManager
      */
     public void addCurrentFloorListener(final CurrentFloorListener listener)
     {
-       currentFloorListeners.add(CurrentFloorListener.class, listener);
+        currentFloorListeners.add(CurrentFloorListener.class, listener);
     }
 
     /**
@@ -477,6 +477,6 @@ public class ItemsManager
      */
     public void removeCurrentFloorListener(final CurrentFloorListener listener)
     {
-       currentFloorListeners.remove(CurrentFloorListener.class, listener);
+        currentFloorListeners.remove(CurrentFloorListener.class, listener);
     }
 }
