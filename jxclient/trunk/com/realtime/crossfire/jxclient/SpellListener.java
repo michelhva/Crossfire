@@ -18,7 +18,6 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient;
-import  com.realtime.crossfire.jxclient.*;
 
 /**
  * A SpellListener is warned each time the currently selected spell has changed.

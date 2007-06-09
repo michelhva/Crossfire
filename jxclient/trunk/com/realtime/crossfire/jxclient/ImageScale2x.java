@@ -19,14 +19,10 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-
-import com.realtime.crossfire.jxclient.*;
 
 /**
  * A utility to perform the scale2x algorithm on a Java Image

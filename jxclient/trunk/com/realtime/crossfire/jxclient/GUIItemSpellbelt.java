@@ -24,7 +24,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.io.IOException;
-import java.util.List;
 
 public class GUIItemSpellbelt extends GUIItem
 {
