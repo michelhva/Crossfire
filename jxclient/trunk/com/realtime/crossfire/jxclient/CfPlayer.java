@@ -18,8 +18,11 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient;
-import java.util.*;
-import java.io.*;
+
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
