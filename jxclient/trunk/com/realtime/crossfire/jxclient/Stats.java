@@ -372,8 +372,8 @@ public class Stats
 
     private int[] mystats = new int[512];
     private long myexp = 0;
-    private String myrange = new String("");
-    private String mytitle = new String("");
+    private String myrange = "";
+    private String mytitle = "";
 
     private static final int[] skill_level = new int[CS_NUM_SKILLS];
     private static final long[] skill_exp = new long[CS_NUM_SKILLS];

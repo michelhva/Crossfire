@@ -46,8 +46,8 @@ public class MetaserverEntry
     }
     public String toString()
     {
-        String str = new String("IP:"+myip+" Host:"+myhost+" Version:"+myversion+
-                " Players:"+mynrplayers+" Ping:"+myping+" Comment:"+mycomment);
+        String str = "IP:"+myip+" Host:"+myhost+" Version:"+myversion+
+                " Players:"+mynrplayers+" Ping:"+myping+" Comment:"+mycomment;
         return str;
     }
     public String getIP()

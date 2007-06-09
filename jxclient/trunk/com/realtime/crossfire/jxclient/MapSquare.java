@@ -183,7 +183,7 @@ public class MapSquare
     }
     public String toString()
     {
-        String str = new String("("+x+";"+y+"):");
+        String str = "("+x+";"+y+"):";
         for (int i=0; i<ServerConnection.NUM_LAYERS; i++)
         {
             if (myface[i] != null)

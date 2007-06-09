@@ -146,7 +146,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (parms.equals("stat resists"))
         {
-            String str = new String("");
+            String str = "";
             for(int i= Stats.CS_STAT_RESIST_START; i<=Stats.CS_STAT_RESIST_END;i++)
             {
                 str = str+st.getStat(i);

@@ -25,7 +25,7 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public class SpellBeltItem 
+public class SpellBeltItem
 {
     public static final int STATUS_CAST = 0;
     public static final int STATUS_INVOKE = 1;
@@ -65,7 +65,7 @@ public class SpellBeltItem
     }
     public String toString()
     {
-        String sp = new String("none");
+        String sp = "none";
         if (myspell != null)
             sp = myspell.getName();
         String ssp = "Spellbelt - Spell is "+sp+" Status:"+mystatus;
