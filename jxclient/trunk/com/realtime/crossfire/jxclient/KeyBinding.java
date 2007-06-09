@@ -29,9 +29,9 @@ import java.util.List;
  */
 public final class KeyBinding
 {
-    final int keyCode;
-    final int modifiers;
-    final List<GUICommand> commands;
+    private final int keyCode;
+    private final int modifiers;
+    private final List<GUICommand> commands;
 
     public int getKeyCode()
     {
