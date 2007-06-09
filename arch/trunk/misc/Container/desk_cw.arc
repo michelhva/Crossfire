@@ -4,7 +4,6 @@ other_arch close_desk_cw
 face desk_cw.111
 type 122
 material 18
-materialname cherry
 weight 120000
 container 80000
 Str 10
