@@ -40,6 +40,11 @@ public class JXCWindowRenderer
 
     private List<GUIElement> currentGui = new ArrayList<GUIElement>();
 
+    /**
+     * If set, force a full repaint.
+     */
+    private boolean forcePaint = false;
+
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
         this.jxcWindow = jxcWindow;
@@ -48,6 +53,14 @@ public class JXCWindowRenderer
     public void init(final int w, final int h, final int b, final int f)
     {
         displayMode = new DisplayMode(w, h, b, f);
+    }
+
+    /**
+     * Repaint the window.
+     */
+    public void repaint()
+    {
+        forcePaint = true;
     }
 
     public void initRendering()
@@ -94,7 +107,11 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
-        if (!needRedraw()) {
+        if (forcePaint)
+        {
+            forcePaint = false;
+        }
+        else if (!needRedraw()) {
             return;
         }
 

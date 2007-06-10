@@ -912,4 +912,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         jxcWindowRenderer.setCurrentGui(newGui);
     }
+
+    /** {@inheritDoc} */
+    public void paint(final Graphics g)
+    {
+        jxcWindowRenderer.repaint();
+    }
 }
+
