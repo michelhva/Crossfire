@@ -22,9 +22,9 @@ import java.util.prefs.*;
 import java.io.*;
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
- * by itself - most of the work in done in JXCWindow or ServerConnection.
+ * by itself - most of the work in done in JXCWindow or CrossfireServerConnection.
  * @see com.realtime.crossfire.jxclient.JXCWindow
- * @see com.realtime.crossfire.jxclient.ServerConnection
+ * @see com.realtime.crossfire.jxclient.CrossfireServerConnection
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0

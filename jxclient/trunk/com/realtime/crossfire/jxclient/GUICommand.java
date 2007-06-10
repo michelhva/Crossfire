@@ -115,10 +115,10 @@ public class GUICommand
                     try
                     {
                         if (status==SpellBeltItem.STATUS_CAST)
-                            jxcw.getServerConnection().writePacket("command 0 cast "+
+                            jxcw.getCrossfireServerConnection().writePacket("command 0 cast "+
                                     myspellbelt.getSpell().getInternalName());
                         else
-                            jxcw.getServerConnection().writePacket("command 0 invoke "+
+                            jxcw.getCrossfireServerConnection().writePacket("command 0 invoke "+
                                     myspellbelt.getSpell().getInternalName());
                     }
                     catch (Exception ex)

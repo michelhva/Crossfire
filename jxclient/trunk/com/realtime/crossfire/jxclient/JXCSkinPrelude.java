@@ -35,7 +35,7 @@ public class JXCSkinPrelude implements JXCSkin
     private java.util.List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
     private java.util.List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
 
-    public java.util.List<GUIElement> getDialogKeyBind(ServerConnection myserver, JXCWindow p)
+    public java.util.List<GUIElement> getDialogKeyBind(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mydialog_keybind.clear();
@@ -105,7 +105,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_keybind;
     }
-    public java.util.List<GUIElement> getDialogQuery(ServerConnection myserver, JXCWindow p)
+    public java.util.List<GUIElement> getDialogQuery(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mydialog_query.clear();
@@ -236,7 +236,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_query;
     }
-    public java.util.List<GUIElement> getMainInterface(ServerConnection myserver, JXCWindow p)
+    public java.util.List<GUIElement> getMainInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
@@ -1695,7 +1695,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getMetaInterface(ServerConnection myserver, JXCWindow p)
+    public java.util.List<GUIElement> getMetaInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
@@ -1867,7 +1867,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getStartInterface(ServerConnection myserver, JXCWindow p)
+    public java.util.List<GUIElement> getStartInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
@@ -1949,7 +1949,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getDialogBook(ServerConnection myserver, JXCWindow p,
+    public java.util.List<GUIElement> getDialogBook(CrossfireServerConnection myserver, JXCWindow p,
                                                        int booknr)
             throws JXCSkinException
     {
@@ -1983,17 +1983,17 @@ public class JXCSkinPrelude implements JXCSkin
 
             switch(booknr)
             {
-                case ServerConnection.MSG_TYPE_BOOK_CLASP_1:
-                case ServerConnection.MSG_TYPE_BOOK_CLASP_2:
-                case ServerConnection.MSG_TYPE_BOOK_ELEGANT_1:
-                case ServerConnection.MSG_TYPE_BOOK_ELEGANT_2:
-                case ServerConnection.MSG_TYPE_BOOK_QUARTO_1:
-                case ServerConnection.MSG_TYPE_BOOK_QUARTO_2:
-                case ServerConnection.MSG_TYPE_BOOK_SPELL_EVOKER:
-                case ServerConnection.MSG_TYPE_BOOK_SPELL_PRAYER:
-                case ServerConnection.MSG_TYPE_BOOK_SPELL_PYRO:
-                case ServerConnection.MSG_TYPE_BOOK_SPELL_SORCERER:
-                case ServerConnection.MSG_TYPE_BOOK_SPELL_SUMMONER:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_CLASP_1:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_CLASP_2:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_ELEGANT_1:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_ELEGANT_2:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_QUARTO_1:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_QUARTO_2:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_EVOKER:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_PRAYER:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_PYRO:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_SORCERER:
+                case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_SUMMONER:
                 default:
                     GUIPicture gui_background = new GUIPicture("book_background",
                             50, 50, 900, 600,

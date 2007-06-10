@@ -31,7 +31,7 @@ public class GUIItemSpellbelt extends GUIItem
 
     private int myindex = -1;
 
-    public GUIItemSpellbelt(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
+    public GUIItemSpellbelt(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
@@ -65,11 +65,11 @@ public class GUIItemSpellbelt extends GUIItem
         {
             if (status == SpellBeltItem.STATUS_CAST)
             {
-                jxcw.getServerConnection().writePacket("command 0 cast "+myspellbelt.getSpell().getInternalName());
+                jxcw.getCrossfireServerConnection().writePacket("command 0 cast "+myspellbelt.getSpell().getInternalName());
             }
             else
             {
-                jxcw.getServerConnection().writePacket("command 0 invoke "+myspellbelt.getSpell().getInternalName());
+                jxcw.getCrossfireServerConnection().writePacket("command 0 invoke "+myspellbelt.getSpell().getInternalName());
             }
         }
         catch (Exception ex)

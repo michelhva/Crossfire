@@ -30,7 +30,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * One of the two most important classes, ServerConnection performs most of the
+ * One of the two most important classes, CrossfireServerConnection performs most of the
  * network-related work. It either decodes commands sent by the server itself,
  * or delegates their processing to other classes, like Map or Faces.
  *
@@ -38,7 +38,7 @@ import java.util.List;
  * @author Lauwenmark
  * @since 1.0
  */
-public class ServerConnection extends Thread
+public class CrossfireServerConnection extends Thread
 {
 
     private Socket                  mysocket;
@@ -124,7 +124,7 @@ public class ServerConnection extends Thread
     private String mystatus_sem = "mystatus_sem";
 
     /**
-     * The Thread Main loop. ServerConnection contains its own Thread, so it
+     * The Thread Main loop. CrossfireServerConnection contains its own Thread, so it
      * can monitor the socket content in parallel with the GUI handling loop.
      * @since 1.0
      */
@@ -219,7 +219,7 @@ public class ServerConnection extends Thread
     }
 
     /**
-     * Creates a new ServerConnection that will be used to communicate with the
+     * Creates a new CrossfireServerConnection that will be used to communicate with the
      * server located at the given hostname:port address.
      * Note that the connection is not performed by the constructor - you need
      * to call the connect() method.
@@ -227,7 +227,7 @@ public class ServerConnection extends Thread
      * @param port The TCP port on which the server is listening.
      * @since 1.0
      */
-    public ServerConnection(String hostname, int port)
+    public CrossfireServerConnection(String hostname, int port)
     {
         buf = new byte[2];
         myhost = hostname;

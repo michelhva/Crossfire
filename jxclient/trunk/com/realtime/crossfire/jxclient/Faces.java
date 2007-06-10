@@ -68,21 +68,21 @@ public class Faces
         /*for(int i=0; i<NRFACES; i++)
         {
             faces[i] = new Face(0, "empty",gconf.createCompatibleImage(
-                    ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT),
                     gconf.createCompatibleImage(
-                            ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                            CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT));
         }*/
             faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
-                    ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT)),
                     new ImageIcon(gconf.createCompatibleImage(
-                            ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                            CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT)));
             originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
             if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
@@ -109,16 +109,16 @@ public class Faces
     /**
      * The server connection to send "askface" commands to.
      */
-    private static ServerConnection serverConnection;
+    private static CrossfireServerConnection crossfireServerConnection;
 
     /**
      * Set the server connection to send "askface" commands to.
      *
-     * @param serverConnection the server connection
+     * @param crossfireServerConnection the server connection
      */
-    public static void setServerConnection(final ServerConnection serverConnection)
+    public static void setCrossfireServerConnection(final CrossfireServerConnection crossfireServerConnection)
     {
-        Faces.serverConnection = serverConnection;
+        Faces.crossfireServerConnection = crossfireServerConnection;
     }
 
     public static Face getFace(int index)
@@ -129,12 +129,12 @@ public class Faces
             GraphicsDevice      gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
-                    ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT)),
                     new ImageIcon(gconf.createCompatibleImage(
-                            ServerConnection.SQUARE_SIZE,
-                    ServerConnection.SQUARE_SIZE,
+                            CrossfireServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
                     Transparency.TRANSLUCENT)));
         }
         return faces[index];
@@ -243,8 +243,8 @@ public class Faces
             GraphicsDevice      gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(
-                    ServerConnection.SQUARE_SIZE,
-            ServerConnection.SQUARE_SIZE,
+                    CrossfireServerConnection.SQUARE_SIZE,
+            CrossfireServerConnection.SQUARE_SIZE,
             Transparency.TRANSLUCENT)));
         }
     }
@@ -301,7 +301,7 @@ public class Faces
             final int face = it.next();
             if (!pendingAskfaces.contains(face))
             {
-                serverConnection.writePacket("askface "+face);
+                crossfireServerConnection.writePacket("askface "+face);
                 pendingAskfaces.add(face);
             }
         }

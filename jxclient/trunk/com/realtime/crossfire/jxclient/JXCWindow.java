@@ -65,7 +65,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private long            starttime = 0;
     private int             mycurrentgui = GUI_START;
     private int             mydialogstatus = DLG_NONE;
-    private ServerConnection myserver = null;
+    private CrossfireServerConnection myserver = null;
     private GUIElement      myactive_element = null;
     private final String    semaphore_drawing = "semaphore_drawing";
     private final String    mydialogstatus_sem = "mydialogstatus_sem";
@@ -376,12 +376,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     public void connect(final String hostname, final int port)
     {
-        myserver = new ServerConnection(hostname, port);
+        myserver = new CrossfireServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
         myserver.addCrossfireQueryListener(this);
         initGUI(GUI_MAIN);
         myserver.connect();
-        Faces.setServerConnection(myserver);
+        Faces.setCrossfireServerConnection(myserver);
     }
     public void send(final String packet)
     {
@@ -395,7 +395,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             endRendering();
         }
     }
-    public ServerConnection getServerConnection()
+    public CrossfireServerConnection getCrossfireServerConnection()
     {
         return myserver;
     }
@@ -409,7 +409,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void handleKeyPress(final KeyEvent e)
     {
-        if((myserver == null)||(myserver.getStatus() != ServerConnection.STATUS_PLAYING))
+        if((myserver == null)||(myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING))
             return;
         for (final KeyBinding kb : keyBindings)
         {

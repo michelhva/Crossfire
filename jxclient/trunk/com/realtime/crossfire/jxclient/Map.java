@@ -39,8 +39,8 @@ public class Map
     private static java.util.List<CrossfireMagicmapListener> mylisteners_magicmap =
             new ArrayList<CrossfireMagicmapListener>();
 
-    private static MapSquare[][] map = new MapSquare[ServerConnection.MAP_WIDTH+20]
-            [ServerConnection.MAP_HEIGHT+20];
+    private static MapSquare[][] map = new MapSquare[CrossfireServerConnection.MAP_WIDTH+20]
+            [CrossfireServerConnection.MAP_HEIGHT+20];
 
     public static java.util.List<CrossfireMap1Listener> getCrossfireMap1Listeners()
     {
@@ -61,9 +61,9 @@ public class Map
 
     static
     {
-        for (int x=0;x<ServerConnection.MAP_WIDTH+20;x++)
+        for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
         {
-            for (int y=0;y<ServerConnection.MAP_HEIGHT+20;y++)
+            for (int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
             {
                 map[x][y] = new MapSquare(x,y);
             }
@@ -92,18 +92,18 @@ public class Map
             it.next().CommandMagicmapReceived(evt);
         }
     }
-    public static void newMap(DataInputStream dis, ServerConnection serverConnection) throws IOException
+    public static void newMap(DataInputStream dis, CrossfireServerConnection crossfireServerConnection) throws IOException
     {
 //        long stime = System.nanoTime();
 
-        for (int x=0;x<ServerConnection.MAP_WIDTH+20;x++)
+        for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
         {
-            for (int y=0;y<ServerConnection.MAP_HEIGHT+20;y++)
+            for (int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
             {
                 map[x][y].clear();
             }
         }
-        serverConnection.writePacket("mapredraw");
+        crossfireServerConnection.writePacket("mapredraw");
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
@@ -130,8 +130,8 @@ public class Map
         int dx = Integer.parseInt(datas[0]);
         int dy = Integer.parseInt(datas[1]);
         //System.out.println("--------------------------------------------------");
-        int mx = ServerConnection.MAP_WIDTH+20;
-        int my = ServerConnection.MAP_HEIGHT+20;
+        int mx = CrossfireServerConnection.MAP_WIDTH+20;
+        int my = CrossfireServerConnection.MAP_HEIGHT+20;
 
         if (dx >= 0)
         {
@@ -278,7 +278,7 @@ public class Map
         int len = dis.available();
         int pos = 0;
         java.util.List<MapSquare> l = new LinkedList<MapSquare>();
-        int[] faces = new int[ServerConnection.NUM_LAYERS];
+        int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
         while (pos<len)
         {
             int coord    = dis.readUnsignedShort();
@@ -303,24 +303,24 @@ public class Map
                 //System.out.println("Darkness:"+darkness+ "("+x+";"+y+")");
                 pos++;
             }
-            for (int layer=ServerConnection.NUM_LAYERS-1; layer>=0; layer--)
+            for (int layer=CrossfireServerConnection.NUM_LAYERS-1; layer>=0; layer--)
             {
                 if ((mask & (1<<layer))!=0)
                 {
-                    faces[(ServerConnection.NUM_LAYERS-1)-layer] = dis.readUnsignedShort();
-                    Faces.ensureFaceExists(faces[(ServerConnection.NUM_LAYERS-1)-layer]);
-                    Face ff = Faces.getFace(faces[(ServerConnection.NUM_LAYERS-1)-layer]);
+                    faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer] = dis.readUnsignedShort();
+                    Faces.ensureFaceExists(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
+                    Face ff = Faces.getFace(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
                     /*if (ff != null)
                     System.out.println("Layer face :"+ff.getName());*/
                     pos+=2;
                 }
                 else
                 {
-                    faces[(ServerConnection.NUM_LAYERS-1)-layer] = -1;
+                    faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer] = -1;
                     //System.out.println("Empty face on the square");
                 }
             }
-            for (int layer=0; layer<ServerConnection.NUM_LAYERS; layer++)
+            for (int layer=0; layer<CrossfireServerConnection.NUM_LAYERS; layer++)
             {
                 if(faces[layer]<0)
                 {
@@ -345,9 +345,9 @@ public class Map
     }
     public static void invalidate()
     {
-        for(int y=0;y<ServerConnection.MAP_HEIGHT+20;y++)
+        for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
         {
-            for (int x=0;x<ServerConnection.MAP_WIDTH+20;x++)
+            for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
             {
                 map[x][y].dirty();
             }
@@ -364,11 +364,11 @@ public class Map
         java.util.List<MapSquare> l = new LinkedList<MapSquare>();
 
         //System.out.println("Face update: "+pixnum);
-        for(int y=0;y<ServerConnection.MAP_HEIGHT+20;y++)
+        for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
         {
-            for (int x=0;x<ServerConnection.MAP_WIDTH+20;x++)
+            for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
             {
-                for (int z=0;z<ServerConnection.NUM_LAYERS;z++)
+                for (int z=0;z<CrossfireServerConnection.NUM_LAYERS;z++)
                 {
                     if (map[x][y].getFace(z)!=null)
                     if (map[x][y].getFace(z).getID()==pixnum)
