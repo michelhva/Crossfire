@@ -762,7 +762,7 @@ public class ItemsList
     }
     public static void updateSpell(DataInputStream dis) throws IOException
     {
-        System.out.println("Update spell");
+        // XXX: updateSpell() not yet implemented
     }
     public static void deleteSpell(DataInputStream dis) throws IOException
     {

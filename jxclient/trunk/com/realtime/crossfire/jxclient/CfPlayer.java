@@ -107,7 +107,6 @@ public class CfPlayer extends CfItem
                     break;
                 case Stats.CS_STAT_EXP64:
                     experi = dis.readLong();
-                    System.out.println("Setting long experience to:"+experi);
                     mystats.setExperience(experi);
                     pos+=8;
                     break;
