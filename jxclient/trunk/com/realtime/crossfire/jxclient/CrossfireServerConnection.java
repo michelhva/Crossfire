@@ -621,7 +621,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_goodbye(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "goodbye" command not yet implemented
     }
 
     /**
@@ -632,7 +632,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_addme_success(String cmd, DataInputStream dis) throws IOException
     {
-        //System.out.println("Command: "+cmd);
+        // XXX: "addme_success" command not yet implemented
     }
 
     /**
@@ -643,7 +643,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_item(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "item" command not yet implemented
     }
 
     /**
@@ -654,7 +654,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_sound(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "sound" command not yet implemented
     }
 
     /**
@@ -688,7 +688,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_anim(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "anim" command not yet implemented
     }
 
     /**
@@ -734,7 +734,6 @@ public class CrossfireServerConnection extends ServerConnection
         if (replytype.equals("image_info"))
         {
             int nrpics = Integer.parseInt(d.readLine());
-            System.out.println("Number of pics:"+nrpics);
             sendAddme();
         }
         else if (replytype.equals("skill_info"))
@@ -768,7 +767,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_addme_failed(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "addme_failed" command not yet implemented
     }
 
     /**
@@ -792,14 +791,12 @@ public class CrossfireServerConnection extends ServerConnection
             {
                 if (datas[i+1].equals("1"))
                 {
-                    //System.out.println("New Spell Mode activated.");
                     ItemsList.setSpellMode(ItemsList.SPELLMODE_SENT);
                 }
                 else
                     ItemsList.setSpellMode(ItemsList.SPELLMODE_LOCAL);
             }
         }
-        //System.out.println("Received setup command:"+str);
     }
 
     /**
@@ -851,7 +848,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_ExtendedInfoSet(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "extendedinfoset" command not yet implemented
     }
 
     /**
@@ -888,7 +885,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_smooth(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "smooth" command not yet implemented
     }
 
     /**
@@ -899,7 +896,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_mapextended(String cmd, DataInputStream dis) throws IOException
     {
-        System.out.println("Command: "+cmd);
+        // XXX: "MapExtended" command not yet implemented
     }
 
     /**
@@ -909,7 +906,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_comc(String cmd, DataInputStream dis) throws IOException
     {
-        // XXX: not yet implemented
+        // XXX: "comc" command not yet implemented
     }
 
     /**
