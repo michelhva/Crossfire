@@ -92,7 +92,7 @@ public class Map
             it.next().CommandMagicmapReceived(evt);
         }
     }
-    public static void newMap(DataInputStream dis) throws IOException
+    public static void newMap(DataInputStream dis, ServerConnection serverConnection) throws IOException
     {
 //        long stime = System.nanoTime();
 
@@ -103,7 +103,7 @@ public class Map
                 map[x][y].clear();
             }
         }
-        ServerConnection.writePacket("mapredraw");
+        serverConnection.writePacket("mapredraw");
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())

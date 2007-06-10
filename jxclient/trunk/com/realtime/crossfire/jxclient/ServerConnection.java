@@ -35,28 +35,28 @@ import java.io.*;
 public class ServerConnection extends Thread
 {
 
-    private static Socket                  mysocket;
-    private static DataInputStream         in;
-    private static byte[]                  buf = null;
+    private Socket                  mysocket;
+    private DataInputStream         in;
+    private byte[]                  buf = null;
 
-    private static java.util.List<CrossfireGoodbyeListener> mylisteners_goodbye =
+    private java.util.List<CrossfireGoodbyeListener> mylisteners_goodbye =
             new ArrayList<CrossfireGoodbyeListener>();
-    private static java.util.List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
+    private java.util.List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
             new ArrayList<CrossfireAddmeSuccessListener>();
-    private static java.util.List<CrossfireDrawinfoListener> mylisteners_drawinfo =
+    private java.util.List<CrossfireDrawinfoListener> mylisteners_drawinfo =
             new ArrayList<CrossfireDrawinfoListener>();
-    private static java.util.List<CrossfireDrawextinfoListener> mylisteners_drawextinfo =
+    private java.util.List<CrossfireDrawextinfoListener> mylisteners_drawextinfo =
             new ArrayList<CrossfireDrawextinfoListener>();
-    private static java.util.List<CrossfireAddmeFailedListener> mylisteners_addme_failed =
+    private java.util.List<CrossfireAddmeFailedListener> mylisteners_addme_failed =
             new ArrayList<CrossfireAddmeFailedListener>();
-    private static java.util.List<CrossfireQueryListener> mylisteners_query =
+    private java.util.List<CrossfireQueryListener> mylisteners_query =
             new ArrayList<CrossfireQueryListener>();
 
-    private static java.util.List<CrossfireScriptMonitorListener> scripts_monitor =
+    private java.util.List<CrossfireScriptMonitorListener> scripts_monitor =
             new ArrayList<CrossfireScriptMonitorListener>();
 
-    private static String                  myhost = "localhost";
-    private static int                     myport = 13327;
+    private String                  myhost = "localhost";
+    private int                     myport = 13327;
 
     /**
      * Represents the unconnected status of the client, which is the first to
@@ -114,8 +114,8 @@ public class ServerConnection extends Thread
     public static final int MSG_TYPE_BOOK_SPELL_SORCERER = 11;
     public static final int MSG_TYPE_BOOK_SPELL_SUMMONER = 12;
 
-    private static int                     mystatus = STATUS_UNCONNECTED;
-    private static String mystatus_sem = "mystatus_sem";
+    private int                     mystatus = STATUS_UNCONNECTED;
+    private String mystatus_sem = "mystatus_sem";
 
     /**
      * The Thread Main loop. ServerConnection contains its own Thread, so it
@@ -186,7 +186,7 @@ public class ServerConnection extends Thread
         command(cmdstr, dis);
     }
 
-    public static void writePacket(String str) throws IOException
+    public void writePacket(String str) throws IOException
     {
         writePacket(str.getBytes("ISO-8859-1"));
     }
@@ -197,7 +197,7 @@ public class ServerConnection extends Thread
      * bytes but only actual payload data
      * @since 1.0
      */
-    private static void writePacket(final byte[] packet) throws IOException
+    private void writePacket(final byte[] packet) throws IOException
     {
         synchronized(mysocket)
         {
@@ -636,7 +636,7 @@ public class ServerConnection extends Thread
         else if (cmd.startsWith("map1"))
             com.realtime.crossfire.jxclient.Map.map1(dis);
         else if (cmd.startsWith("newmap"))
-            com.realtime.crossfire.jxclient.Map.newMap(dis);
+            com.realtime.crossfire.jxclient.Map.newMap(dis, this);
         else if (cmd.startsWith("player"))
             ItemsList.createPlayer(dis);
         else if (cmd.startsWith("stats"))
