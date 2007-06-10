@@ -169,27 +169,31 @@ public abstract class ServerConnection extends Thread
 
     public void writePacket(String str) throws IOException
     {
-        writePacket(str.getBytes("ISO-8859-1"));
+        final byte[] data = str.getBytes("ISO-8859-1");
+        writePacket(data, data.length);
     }
 
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
      * @param packet the packet to be sent; it does not include the length
      * bytes but only actual payload data
+     * @param length the length of <code>packet</code>; if the array is larger,
+     * excess data is ignored
      * @since 1.0
      */
-    private void writePacket(final byte[] packet) throws IOException
+    protected void writePacket(final byte[] packet, final int length) throws IOException
     {
+        assert length > 0;
         synchronized(mysocket)
         {
             for (final CrossfireScriptMonitorListener listener : scripts_monitor)
             {
-                listener.commandSent(packet);
+                listener.commandSent(packet, length);
             }
 
-            mysocket.getOutputStream().write(packet.length/256);
-            mysocket.getOutputStream().write(packet.length);
-            mysocket.getOutputStream().write(packet);
+            mysocket.getOutputStream().write(length/256);
+            mysocket.getOutputStream().write(length);
+            mysocket.getOutputStream().write(packet, 0, length);
         }
     }
 

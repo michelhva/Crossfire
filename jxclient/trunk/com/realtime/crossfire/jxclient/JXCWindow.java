@@ -395,6 +395,30 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             endRendering();
         }
     }
+
+    /**
+     * Send a "ncom" command to the server.
+     *
+     * @param repeat the repeat count
+     *
+     * @param command the command
+     *
+     * @return the packet id
+     */
+    public int sendNcom(final int repeat, final String command)
+    {
+        try
+        {
+            return myserver.sendNcom(repeat, command);
+        }
+        catch (final Exception e)
+        {
+            e.printStackTrace();
+            endRendering();
+            return 0;
+        }
+    }
+
     public CrossfireServerConnection getCrossfireServerConnection()
     {
         return myserver;
@@ -464,126 +488,126 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             case KeyEvent.VK_NUMPAD8:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 1");
+                    sendNcom(0, "run 1");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 1");
+                    sendNcom(0, "fire 1");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 north");
+                    sendNcom(0, "north");
                 break;
             case KeyEvent.VK_NUMPAD9:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 2");
+                    sendNcom(0, "run 2");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 2");
+                    sendNcom(0, "fire 2");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 northeast");
+                    sendNcom(0, "northeast");
                 break;
             case KeyEvent.VK_RIGHT:
             case KeyEvent.VK_NUMPAD6:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 3");
+                    sendNcom(0, "run 3");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 3");
+                    sendNcom(0, "fire 3");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 east");
+                    sendNcom(0, "east");
                 break;
             case KeyEvent.VK_NUMPAD3:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 4");
+                    sendNcom(0, "run 4");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 4");
+                    sendNcom(0, "fire 4");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 southeast");
+                    sendNcom(0, "southeast");
                 break;
             case KeyEvent.VK_DOWN:
             case KeyEvent.VK_NUMPAD2:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 5");
+                    sendNcom(0, "run 5");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 5");
+                    sendNcom(0, "fire 5");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 south");
+                    sendNcom(0, "south");
                 break;
             case KeyEvent.VK_NUMPAD1:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 6");
+                    sendNcom(0, "run 6");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 6");
+                    sendNcom(0, "fire 6");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 southwest");
+                    sendNcom(0, "southwest");
                 break;
             case KeyEvent.VK_LEFT:
             case KeyEvent.VK_NUMPAD4:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 7");
+                    sendNcom(0, "run 7");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 7");
+                    sendNcom(0, "fire 7");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 west");
+                    sendNcom(0, "west");
                 break;
             case KeyEvent.VK_NUMPAD7:
                 if (getKeyShift(KEY_SHIFT_CTRL)==true)
                 {
-                    send("command 0 run 8");
+                    sendNcom(0, "run 8");
                     is_run_active = true;
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
                 {
-                    send("command 0 fire 8");
+                    sendNcom(0, "fire 8");
                     is_fire_active = true;
                 }
                 else
-                    send("command 0 northwest");
+                    sendNcom(0, "northwest");
                 break;
             case KeyEvent.VK_A:
-                send("command 0 apply");
+                sendNcom(0, "apply");
                 break;
             case KeyEvent.VK_S:
-                send("command 0 save");
+                sendNcom(0, "save");
                 break;
             case KeyEvent.VK_W:
-                send("command 0 who");
+                sendNcom(0, "who");
                 break;
             case KeyEvent.VK_QUOTE:
                 activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
@@ -673,7 +697,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 setKeyShift(KEY_SHIFT_SHIFT, false);
                 if (is_fire_active == true)
                 {
-                    send("command 0 fire_stop");
+                    sendNcom(0, "fire_stop");
                     is_fire_active = false;
                 }
                 break;
@@ -681,7 +705,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 setKeyShift(KEY_SHIFT_CTRL, false);
                 if (is_run_active == true)
                 {
-                    send("command 0 run_stop");
+                    sendNcom(0, "run_stop");
                     is_run_active = false;
                 }
                 break;

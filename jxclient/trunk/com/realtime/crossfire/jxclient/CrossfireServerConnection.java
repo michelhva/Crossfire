@@ -23,6 +23,8 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -60,9 +62,29 @@ public class CrossfireServerConnection extends ServerConnection
     public static final int MSG_TYPE_BOOK_SPELL_SORCERER = 11;
     public static final int MSG_TYPE_BOOK_SPELL_SUMMONER = 12;
 
+    /**
+     * Buffer to build commands to send. It is shared between all sendXxx()
+     * functions. It is used to synchronize these functions.
+     */
+    private final byte[] writeBuffer = new byte[65536];
+
+    /**
+     * A byte buffer using {@link #writeBuffer} to store the data.
+     */
+    private final ByteBuffer byteBuffer = ByteBuffer.wrap(writeBuffer);
+
+    /**
+     * The packet id for the next "ncom" command to send.
+     */
+    private int packet = 1;
+
+    /** The command prefix for the "ncom" command. */
+    private static final byte[] ncomData = { 'n', 'c', 'o', 'm', ' ', };
+
     public CrossfireServerConnection(String hostname, int port)
     {
-	super(hostname, port);
+        super(hostname, port);
+        byteBuffer.order(ByteOrder.BIG_ENDIAN);
     }
 
     /**
@@ -497,6 +519,10 @@ public class CrossfireServerConnection extends ServerConnection
         {
             cmd_delspell(cmd, dis);
         }
+        else if (cmd.startsWith("comc"))
+        {
+            cmd_comc(cmd, dis);
+        }
         else
         {
             throw new UnknownCommandException("Unknown command: "+cmd);
@@ -819,6 +845,16 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
+     * Handles the comc command.
+     * @param cmd The S->C command, in this case "comc".
+     * @param dis The DataInputStream holding the content of the message.
+     */
+    void cmd_comc(String cmd, DataInputStream dis) throws IOException
+    {
+        // XXX: not yet implemented
+    }
+
+    /**
      * Returns the list of all items at the given location.
      * Usually, this is either an inventory content, or the list of objects on
      * the floor.
@@ -849,5 +885,30 @@ public class CrossfireServerConnection extends ServerConnection
         {
             it.next().CommandDrawinfoReceived(evt);
         }
+    }
+
+    /**
+     * Send a "ncom" command to the server.
+     *
+     * @param repeat the repeat count
+     *
+     * @param command the command
+     *
+     * @return the packet id
+     */
+    public int sendNcom(final int repeat, final String command) throws IOException
+    {
+        final int thisPacket;
+        synchronized(writeBuffer)
+        {
+            thisPacket = packet++&0x00FF;
+            byteBuffer.clear();
+            byteBuffer.put(ncomData);
+            byteBuffer.putShort((short)thisPacket);
+            byteBuffer.putInt(repeat);
+            byteBuffer.put(command.getBytes("UTF-8"));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+        return thisPacket;
     }
 }
