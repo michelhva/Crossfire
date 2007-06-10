@@ -61,12 +61,12 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     {
         return out;
     }
-    public void commandSent(final byte[] packet)
+    public void commandSent(final byte[] packet, final int length)
     {
         final String cmd;
         try
         {
-            cmd = new String(packet, "ISO-8859-1");
+            cmd = new String(packet, 0, length, "ISO-8859-1");
         }
         catch(final UnsupportedEncodingException ex)
         {
@@ -244,7 +244,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
             String parms = cmdline.substring(6);
             String[] pps = parms.split(" ",3);
             for (int i=0; i<Integer.parseInt(pps[0]); i++)
-                mywindow.send("command 0 "+pps[2]);
+                mywindow.sendNcom(0, pps[2]);
         }
         else if (cmdline.startsWith("draw "))
         {

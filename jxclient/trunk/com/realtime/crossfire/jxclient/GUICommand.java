@@ -100,7 +100,7 @@ public class GUICommand
                 java.util.List lp = (java.util.List)myparams;
                 JXCWindow jxcw = (JXCWindow)lp.get(0);
                 String cmd = (String)lp.get(1);
-                jxcw.send("command 0 "+cmd);
+                jxcw.sendNcom(0, cmd);
             }
                 break;
             case CMD_GUI_SPELLBELT:
@@ -115,10 +115,10 @@ public class GUICommand
                     try
                     {
                         if (status==SpellBeltItem.STATUS_CAST)
-                            jxcw.getCrossfireServerConnection().writePacket("command 0 cast "+
+                            jxcw.getCrossfireServerConnection().sendNcom(0, "cast "+
                                     myspellbelt.getSpell().getInternalName());
                         else
-                            jxcw.getCrossfireServerConnection().writePacket("command 0 invoke "+
+                            jxcw.getCrossfireServerConnection().sendNcom(0, "invoke "+
                                     myspellbelt.getSpell().getInternalName());
                     }
                     catch (Exception ex)

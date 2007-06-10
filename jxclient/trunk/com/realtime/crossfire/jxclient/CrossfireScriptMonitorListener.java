@@ -26,5 +26,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireScriptMonitorListener
 {
-    public void commandSent(byte[] packet);
+    public void commandSent(byte[] packet, int length);
 }
