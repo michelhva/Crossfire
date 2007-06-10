@@ -746,7 +746,15 @@ public class CrossfireServerConnection extends ServerConnection
                 if (r!=null)
                 {
                     String[] sk = r.split(":");
-                    Stats.addSkill(Integer.parseInt(sk[0])-Stats.CS_STAT_SKILLINFO,sk[1]);
+                    final int skillId = Integer.parseInt(sk[0]);
+                    if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+                    {
+                        System.err.println("ignoring skill definition for invalid skill id "+skillId);
+                    }
+                    else
+                    {
+                        Stats.addSkill(skillId, sk[1]);
+                    }
                 }
             }
         }

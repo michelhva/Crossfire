@@ -141,7 +141,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         else if (parms.equals("stat xp"))
         {
             String str = st.getStat(Stats.CS_STAT_LEVEL)+","+st.getExperience();
-            for (int i=0; i<200; i++)
+            for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++)
             {
                 try
                 {

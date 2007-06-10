@@ -146,11 +146,18 @@ public class CfPlayer extends CfItem
                         mystats.setStat(stat, dis.readShort());
                         pos+=2;
                     }
-                    else if ((stat>=Stats.CS_STAT_SKILLINFO)&&(stat<250))
+                    else if ((stat>=Stats.CS_STAT_SKILLINFO)&&(stat<Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS))
                     {
-                        Skill sk = Stats.getSkill(stat-Stats.CS_STAT_SKILLINFO);
-                        sk.setLevel(dis.readUnsignedByte());
-                        sk.setExperience(dis.readLong());
+                        final Skill sk = Stats.getSkill(stat);
+                        if (sk == null)
+                        {
+                            System.err.println("ignoring skill value for unknown skill "+stat);
+                        }
+                        else
+                        {
+                            sk.setLevel(dis.readUnsignedByte());
+                            sk.setExperience(dis.readLong());
+                        }
                         pos+=9;
                     }
                     else
