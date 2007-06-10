@@ -111,7 +111,8 @@ public class JXCWindowRenderer
         {
             forcePaint = false;
         }
-        else if (!needRedraw()) {
+        else if (!needRedraw())
+        {
             return;
         }
 
