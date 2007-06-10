@@ -43,7 +43,6 @@ public class Metaserver
             return metalist;
         }
         metalist = new ArrayList<MetaserverEntry>();
-if(true) return metalist;
         try
         {
             Socket mysocket = new Socket(metaserver_name, metaserver_port);
