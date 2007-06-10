@@ -61,6 +61,19 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     {
         return out;
     }
+    public void commandSent(final byte[] packet)
+    {
+        final String cmd;
+        try
+        {
+            cmd = new String(packet, "ISO-8859-1");
+        }
+        catch(final UnsupportedEncodingException ex)
+        {
+            throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
+        }
+        commandSent(cmd);
+    }
     public void commandSent(String cmd)
     {
         try
