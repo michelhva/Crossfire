@@ -21,8 +21,6 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.Font;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -80,24 +78,15 @@ public class GUIItemInventory extends GUIItemItem
         {
             if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
             {
-                final ByteArrayOutputStream bout = new ByteArrayOutputStream();
-                final DataOutputStream out = new DataOutputStream(bout);
-                out.writeBytes("mark ");
-                out.writeInt(item.getTag());
-                jxcw.getCrossfireServerConnection().writePacket(bout.toString());
+                jxcw.getCrossfireServerConnection().sendMark(item.getTag());
             }
             else if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_CTRL))
             {
-                final ByteArrayOutputStream bout = new ByteArrayOutputStream();
-                final DataOutputStream out = new DataOutputStream(bout);
-                out.writeBytes("lock ");
-                out.writeByte(item.isLocked() ? 0 : 1);
-                out.writeInt(item.getTag());
-                jxcw.getCrossfireServerConnection().writePacket(bout.toString());
+                jxcw.getCrossfireServerConnection().sendLock(item.isLocked(), item.getTag());
             }
             else
             {
-                jxcw.getCrossfireServerConnection().writePacket("examine "+item.getTag());
+                jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
             }
         }
         catch (Exception ex)
@@ -117,7 +106,7 @@ public class GUIItemInventory extends GUIItemItem
 
         try
         {
-            jxcw.getCrossfireServerConnection().writePacket("move "+ItemsList.getCurrentFloor()+" "+item.getTag()+" 0");
+            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getCurrentFloor(), item.getTag(), 0);
         }
         catch (Exception ex)
         {

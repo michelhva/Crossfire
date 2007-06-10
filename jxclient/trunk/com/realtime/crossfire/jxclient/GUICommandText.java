@@ -98,7 +98,14 @@ public class GUICommandText extends GUIText implements KeyListener
                     case CrossfireServerConnection.STATUS_QUERY:
                         ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(
                                 CrossfireServerConnection.STATUS_PLAYING);
-                        ((JXCWindow)e.getSource()).send("reply "+mytext);
+                        try
+                        {
+                            ((JXCWindow)e.getSource()).getCrossfireServerConnection().sendReply(mytext);
+                        }
+                        catch (final Exception ex)
+                        {
+                            ex.printStackTrace();
+                        }
                         ((JXCWindow)e.getSource()).setDialogStatus(JXCWindow.DLG_NONE);
                         mytext="";
                         setActive(false);
