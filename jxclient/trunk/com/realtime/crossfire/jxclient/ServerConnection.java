@@ -39,20 +39,20 @@ public class ServerConnection extends Thread
     private DataInputStream         in;
     private byte[]                  buf = null;
 
-    private java.util.List<CrossfireGoodbyeListener> mylisteners_goodbye =
+    private List<CrossfireGoodbyeListener> mylisteners_goodbye =
             new ArrayList<CrossfireGoodbyeListener>();
-    private java.util.List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
+    private List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
             new ArrayList<CrossfireAddmeSuccessListener>();
-    private java.util.List<CrossfireDrawinfoListener> mylisteners_drawinfo =
+    private List<CrossfireDrawinfoListener> mylisteners_drawinfo =
             new ArrayList<CrossfireDrawinfoListener>();
-    private java.util.List<CrossfireDrawextinfoListener> mylisteners_drawextinfo =
+    private List<CrossfireDrawextinfoListener> mylisteners_drawextinfo =
             new ArrayList<CrossfireDrawextinfoListener>();
-    private java.util.List<CrossfireAddmeFailedListener> mylisteners_addme_failed =
+    private List<CrossfireAddmeFailedListener> mylisteners_addme_failed =
             new ArrayList<CrossfireAddmeFailedListener>();
-    private java.util.List<CrossfireQueryListener> mylisteners_query =
+    private List<CrossfireQueryListener> mylisteners_query =
             new ArrayList<CrossfireQueryListener>();
 
-    private java.util.List<CrossfireScriptMonitorListener> scripts_monitor =
+    private List<CrossfireScriptMonitorListener> scripts_monitor =
             new ArrayList<CrossfireScriptMonitorListener>();
 
     private String                  myhost = "localhost";
@@ -1043,7 +1043,7 @@ public class ServerConnection extends Thread
      * @return Known items, as a List object.
      * @since 1.0
      */
-    public java.util.List<CfItem> getItems(int location)
+    public List<CfItem> getItems(int location)
     {
         return ItemsList.getItems(location);
     }
