@@ -69,6 +69,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         if (mybackground != null)
             g.drawImage(mybackground.getImage(), x, y, null);
         g.dispose();
+        setChanged();
     }
 
     public GUILabel
@@ -155,6 +156,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         {
             e.printStackTrace();
         }
+        setChanged();
     }
     public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
     {
@@ -312,6 +314,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                         if (mybackground != null)
                             g.drawImage(mybackground.getImage(), x, y, null);
                         g.dispose();
+                        setChanged();
                         break;
                     case LABEL_SPELL_COST:
                         mycaption="M:"+sp.getMana()+" G:"+sp.getGrace();

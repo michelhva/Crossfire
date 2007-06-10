@@ -54,6 +54,6 @@ public class GUIPicture extends GUIElement
         //g.drawImage(img, 0, 0, nw, nh, 0, 0, nw, nh, null);
         g.drawImage(img, 0,0,img.getWidth(),img.getHeight(),null);
         g.dispose();
-
+        setChanged();
     }
 }

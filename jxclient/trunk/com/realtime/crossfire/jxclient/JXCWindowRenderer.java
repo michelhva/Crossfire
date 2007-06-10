@@ -26,7 +26,17 @@ public class JXCWindowRenderer
 
     private DisplayMode displayMode = null;
 
+    /**
+     * If set, {@link #currentDialog} has changed.
+     */
+    private boolean currentDialogChanged = false;
+
     private List<GUIElement> currentDialog = null;
+
+    /**
+     * If set, {@link #currentGui} has changed.
+     */
+    private boolean currentGuiChanged = false;
 
     private List<GUIElement> currentGui = new ArrayList<GUIElement>();
 
@@ -84,6 +94,10 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
+        if (!needRedraw()) {
+            return;
+        }
+
         do
         {
             do
@@ -106,6 +120,7 @@ public class JXCWindowRenderer
     public void clearGUI()
     {
         currentGui.clear();
+        currentGuiChanged = true;
         for(int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();
@@ -117,6 +132,7 @@ public class JXCWindowRenderer
 
     private void redrawGUIBasic(final Graphics g)
     {
+        currentGuiChanged = false;
         for (final GUIElement element : currentGui)
         {
             if (element.isVisible())
@@ -130,12 +146,14 @@ public class JXCWindowRenderer
                 {
                     g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
                 }
+                element.resetChanged();
             }
         }
     }
 
     private void redrawGUIDialog(final Graphics g)
     {
+        currentDialogChanged = false;
         if (currentDialog != null)
         {
             for (final GUIElement element : currentDialog)
@@ -150,6 +168,7 @@ public class JXCWindowRenderer
                         gg.dispose();
                     }
                     g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
+                    element.resetChanged();
                 }
             }
         }
@@ -164,6 +183,7 @@ public class JXCWindowRenderer
     public void setCurrentDialog(final List<GUIElement> dialog)
     {
         currentDialog = dialog;
+        currentDialogChanged = true;
     }
 
     public List<GUIElement> getCurrentDialog()
@@ -174,10 +194,50 @@ public class JXCWindowRenderer
     public void setCurrentGui(final List<GUIElement> gui)
     {
         currentGui = gui;
+        currentGuiChanged = true;
     }
 
     public List<GUIElement> getCurrentGui()
     {
         return currentGui;
+    }
+
+    /**
+     * Check whether any gui element has changed and needs a redraw.
+     *
+     * @return whether any gui element has changed
+     */
+    private boolean needRedraw()
+    {
+        if (currentDialogChanged)
+        {
+            return true;
+        }
+
+        if (currentGuiChanged)
+        {
+            return true;
+        }
+
+        for (final GUIElement element : currentGui)
+        {
+            if (element.isVisible() && element.hasChanged())
+            {
+                return true;
+            }
+        }
+
+        if (currentDialog != null)
+        {
+            for (final GUIElement element : currentDialog)
+            {
+                if (element.isVisible() && element.hasChanged())
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

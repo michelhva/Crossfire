@@ -365,7 +365,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     jxcWindowRenderer.redrawGUI();
                 }
                 framecount++;
-                Thread.sleep(1);
+                Thread.sleep(10);
             }
         }
         catch (final Exception e)

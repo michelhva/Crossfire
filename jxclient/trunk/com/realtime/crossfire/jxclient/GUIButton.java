@@ -124,5 +124,6 @@ public class GUIButton extends GUIElement
             g.drawString(mytext, mytx, myty);
         }
         g.dispose();
+        setChanged();
     }
 }

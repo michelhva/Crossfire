@@ -89,6 +89,7 @@ public class GUIText extends GUIElement implements KeyListener
             g.drawString(mytext, 4, myfont.getSize()+2);
             g.dispose();
         }
+        setChanged();
     }
     public void mouseClicked(MouseEvent e)
     {

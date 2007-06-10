@@ -61,6 +61,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
         mysquaresize = ServerConnection.SQUARE_SIZE;
         g.dispose();
+        setChanged();
     }
     public GUIMap
             (String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
@@ -94,6 +95,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         g.setColor(Color.BLACK);
         g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
         g.dispose();
+        setChanged();
     }
     public void redraw(Graphics g)
     {
@@ -194,6 +196,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             need_update = true;
             need_update_cnt = 2;
         }
+        setChanged();
     }
     public void CommandNewmapReceived(CrossfireCommandNewmapEvent evt)
     {
@@ -207,6 +210,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             need_update_cnt = 2;
             new_map_happened = true;
         }
+        setChanged();
     }
     public void CommandMap1Received(CrossfireCommandMap1Event evt)
     {
@@ -215,6 +219,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             need_update = true;
             need_update_cnt = 2;
         }
+        setChanged();
     }
     public void refresh()
     {
@@ -224,5 +229,6 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             need_update_cnt = 2;
             new_map_happened = true;
         }
+        setChanged();
     }
 }
