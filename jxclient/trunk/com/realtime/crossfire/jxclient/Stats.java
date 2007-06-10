@@ -348,7 +348,7 @@ public class Stats
      * be used here.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLINFO          = 141;
+    public static final int CS_STAT_SKILLINFO          = 140;
 
     /**
      * CS_NUM_SKILLS does not match how many skills there really
@@ -395,18 +395,18 @@ public class Stats
     public static void addSkill(int id, String n)
     {
         Skill sk = new Skill(id, n);
-        myskills[id]=sk;
+        myskills[id-Stats.CS_STAT_SKILLINFO]=sk;
     }
 
     /**
      * Returns the given skill as a Skill object.
-     * @param skill The numerical skill identifier.
+     * @param id The numerical skill identifier.
      * @return The Skill object matching the given identifier.
      * @since 1.0
      */
     public static Skill getSkill(int id)
     {
-        return myskills[id];
+        return myskills[id-CS_STAT_SKILLINFO];
     }
 
     /**
