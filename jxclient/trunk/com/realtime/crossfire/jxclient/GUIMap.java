@@ -59,7 +59,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         Graphics2D g = mybuffer.createGraphics();
         g.setColor(Color.BLACK);
         g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
-        mysquaresize = ServerConnection.SQUARE_SIZE;
+        mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
         g.dispose();
         setChanged();
     }
@@ -78,7 +78,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         {
             myblacktile =
                 javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
-            mysquaresize = ServerConnection.SQUARE_SIZE;
+            mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
         }
         else
         {
@@ -113,11 +113,11 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
                 if (need_update_cnt <= 0)
                     need_update = false;
                 MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
-                for (int nz=0; nz<ServerConnection.NUM_LAYERS; nz++)
+                for (int nz=0; nz<CrossfireServerConnection.NUM_LAYERS; nz++)
                 {
-                    for (int ny=10; ny<ServerConnection.MAP_HEIGHT+10; ny++)
+                    for (int ny=10; ny<CrossfireServerConnection.MAP_HEIGHT+10; ny++)
                     {
-                        for (int nx=10; nx<ServerConnection.MAP_WIDTH+10; nx++)
+                        for (int nx=10; nx<CrossfireServerConnection.MAP_WIDTH+10; nx++)
                         {
                             redrawSquare(g, map[nx][ny], nz);
                         }
@@ -171,15 +171,15 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
                 g.drawImage(img.getImage(), psx, psy, img.getIconWidth(), img.getIconHeight(), null);
             }
         }
-        if (nz == ServerConnection.NUM_LAYERS-1)
+        if (nz == CrossfireServerConnection.NUM_LAYERS-1)
         {
             /*if (square.getDarkness() >= 0)
             {
                 g.setColor(new Color(0,0,0,square.getDarkness()));
-                g.fillRect(((square.getXPos()-10)*ServerConnection.SQUARE_SIZE),
-                             ((square.getYPos()-10)*ServerConnection.SQUARE_SIZE),
-                             ServerConnection.SQUARE_SIZE,
-                             ServerConnection.SQUARE_SIZE);
+                g.fillRect(((square.getXPos()-10)*CrossfireServerConnection.SQUARE_SIZE),
+                             ((square.getYPos()-10)*CrossfireServerConnection.SQUARE_SIZE),
+                             CrossfireServerConnection.SQUARE_SIZE,
+                             CrossfireServerConnection.SQUARE_SIZE);
                 System.out.println("Darkness:"+square+" D:" +square.getDarkness());
             }
             else

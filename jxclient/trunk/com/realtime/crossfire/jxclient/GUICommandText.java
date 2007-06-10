@@ -56,9 +56,9 @@ public class GUICommandText extends GUIText implements KeyListener
                 }
                 break;
             case KeyEvent.VK_ENTER:
-                switch(((JXCWindow)e.getSource()).getServerConnection().getStatus())
+                switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
                 {
-                    case ServerConnection.STATUS_PLAYING:
+                    case CrossfireServerConnection.STATUS_PLAYING:
                         System.out.println("Command:"+mytext);
                         if (mytext.startsWith("bind "))
                         {
@@ -95,9 +95,9 @@ public class GUICommandText extends GUIText implements KeyListener
                         mytext="";
                         setActive(false);
                         break;
-                    case ServerConnection.STATUS_QUERY:
-                        ((JXCWindow)e.getSource()).getServerConnection().setStatus(
-                                ServerConnection.STATUS_PLAYING);
+                    case CrossfireServerConnection.STATUS_QUERY:
+                        ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(
+                                CrossfireServerConnection.STATUS_PLAYING);
                         ((JXCWindow)e.getSource()).send("reply "+mytext);
                         ((JXCWindow)e.getSource()).setDialogStatus(JXCWindow.DLG_NONE);
                         mytext="";

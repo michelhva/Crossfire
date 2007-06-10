@@ -62,7 +62,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
     public GUIItem
             (String nn, int nx, int ny, int nw, int nh, String picture,
              String pic_cursed, String pic_applied, String pic_selector,
-             String pic_locked, ServerConnection msc, Font mft)
+             String pic_locked, CrossfireServerConnection msc, Font mft)
             throws IOException
     {
         mypicbackground =

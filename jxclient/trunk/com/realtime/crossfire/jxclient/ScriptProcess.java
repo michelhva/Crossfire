@@ -104,7 +104,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     {
         String parms = cmdline.substring(8);
         System.out.println(" - Request :"+parms);
-        Stats st = mywindow.getServerConnection().getPlayer().getStats();
+        Stats st = mywindow.getCrossfireServerConnection().getPlayer().getStats();
 
         if (parms.equals("range"))
         {
@@ -250,15 +250,15 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
             String parms = cmdline.substring(5);
             String[] pps = parms.split(" ");
-            mywindow.getServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
+            mywindow.getCrossfireServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
         }
         else if (cmdline.startsWith("monitor"))
         {
-            mywindow.getServerConnection().addScriptMonitor(this);
+            mywindow.getCrossfireServerConnection().addScriptMonitor(this);
         }
         else if (cmdline.startsWith("unmonitor"))
         {
-            mywindow.getServerConnection().removeScriptMonitor(this);
+            mywindow.getCrossfireServerConnection().removeScriptMonitor(this);
         }
     }
 }

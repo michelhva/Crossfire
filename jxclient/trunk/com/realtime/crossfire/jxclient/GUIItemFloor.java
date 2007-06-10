@@ -55,7 +55,7 @@ public class GUIItemFloor extends GUIItemItem
         }
     };
 
-    public GUIItemFloor(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
+    public GUIItemFloor(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         ItemsList.addCurrentFloorListener(currentFloorListener);
@@ -87,7 +87,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         try
         {
-            jxcw.getServerConnection().writePacket("examine "+item.getTag());
+            jxcw.getCrossfireServerConnection().writePacket("examine "+item.getTag());
         }
         catch (Exception ex)
         {
@@ -107,7 +107,7 @@ public class GUIItemFloor extends GUIItemItem
         {
             if (ItemsList.getPlayer() != null)
             {
-                jxcw.getServerConnection().writePacket("move "+ItemsList.getPlayer().getTag()+" "+item.getTag()+" 0");
+                jxcw.getCrossfireServerConnection().writePacket("move "+ItemsList.getPlayer().getTag()+" "+item.getTag()+" 0");
             }
         }
         catch (Exception ex)

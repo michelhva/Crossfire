@@ -44,7 +44,7 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, ServerConnection msc, Font mft) throws IOException
+    public GUIItemInventory(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
@@ -84,7 +84,7 @@ public class GUIItemInventory extends GUIItemItem
                 final DataOutputStream out = new DataOutputStream(bout);
                 out.writeBytes("mark ");
                 out.writeInt(item.getTag());
-                jxcw.getServerConnection().writePacket(bout.toString());
+                jxcw.getCrossfireServerConnection().writePacket(bout.toString());
             }
             else if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_CTRL))
             {
@@ -93,11 +93,11 @@ public class GUIItemInventory extends GUIItemItem
                 out.writeBytes("lock ");
                 out.writeByte(item.isLocked() ? 0 : 1);
                 out.writeInt(item.getTag());
-                jxcw.getServerConnection().writePacket(bout.toString());
+                jxcw.getCrossfireServerConnection().writePacket(bout.toString());
             }
             else
             {
-                jxcw.getServerConnection().writePacket("examine "+item.getTag());
+                jxcw.getCrossfireServerConnection().writePacket("examine "+item.getTag());
             }
         }
         catch (Exception ex)
@@ -117,7 +117,7 @@ public class GUIItemInventory extends GUIItemItem
 
         try
         {
-            jxcw.getServerConnection().writePacket("move "+ItemsList.getCurrentFloor()+" "+item.getTag()+" 0");
+            jxcw.getCrossfireServerConnection().writePacket("move "+ItemsList.getCurrentFloor()+" "+item.getTag()+" 0");
         }
         catch (Exception ex)
         {
