@@ -37,9 +37,6 @@ public class ServerConnection extends Thread
 
     private static Socket                  mysocket;
     private static DataInputStream         in;
-    private static DataOutputStream        out;
-    private static DataOutputStream        bout;
-    private static ByteArrayOutputStream   bos;
     private static byte[]                  buf = null;
 
     private static java.util.List<CrossfireGoodbyeListener> mylisteners_goodbye =
@@ -189,29 +186,29 @@ public class ServerConnection extends Thread
         command(cmdstr, dis);
     }
 
-    /**
-     * Writes a Crossfire Message on the socket, so it is sent to the server.
-     * @param str The message to sent.
-     * @since 1.0
-     */
     public static void writePacket(String str) throws IOException
     {
-        synchronized(bout)
+        writePacket(str.getBytes("ISO-8859-1"));
+    }
+
+    /**
+     * Writes a Crossfire Message on the socket, so it is sent to the server.
+     * @param packet the packet to be sent; it does not include the length
+     * bytes but only actual payload data
+     * @since 1.0
+     */
+    private static void writePacket(final byte[] packet) throws IOException
+    {
+        synchronized(mysocket)
         {
-            Iterator<CrossfireScriptMonitorListener> it = scripts_monitor.iterator();
-            while (it.hasNext())
+            for (final CrossfireScriptMonitorListener listener : scripts_monitor)
             {
-                it.next().commandSent(str);
+                listener.commandSent(packet);
             }
 
-            bout.writeShort((short)str.length());
-            bout.writeBytes(str);
-            synchronized(out)
-            {
-                bos.writeTo(out);
-                out.flush();
-                bos.reset();
-            }
+            mysocket.getOutputStream().write(packet.length/256);
+            mysocket.getOutputStream().write(packet.length);
+            mysocket.getOutputStream().write(packet);
         }
     }
 
@@ -242,9 +239,6 @@ public class ServerConnection extends Thread
         {
             mysocket = new Socket(myhost, myport);
             in = new DataInputStream(mysocket.getInputStream());
-            out = new DataOutputStream(mysocket.getOutputStream());
-            bos = new ByteArrayOutputStream(0);
-            bout = new DataOutputStream(bos);
             start();
         }
         catch (Exception e)
