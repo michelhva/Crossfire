@@ -69,6 +69,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         myname = nn;
         myorientation = orientation;
+        render();
     }
     public void render()
     {
@@ -138,6 +139,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
             g.drawImage(mypicture_negative,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
             g.dispose();
         }
+        setChanged();
     }
     public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
     {

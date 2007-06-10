@@ -48,6 +48,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        setChanged();
     }
     public void CommandMagicmapReceived(CrossfireCommandMagicmapEvent evt)
     {
@@ -81,6 +82,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         }
         g.dispose();
         mybuffer = buf;
+        setChanged();
     }
     public void CommandNewmapReceived(CrossfireCommandNewmapEvent evt)
     {
@@ -88,5 +90,6 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         g.setBackground(new Color(0,0,0,0.0f));
         g.clearRect(0,0,w,h);
         g.dispose();
+        setChanged();
     }
 }

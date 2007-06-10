@@ -86,6 +86,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
         final GraphicsDevice      gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        render();
     }
     public abstract void scrollUp();
     public abstract void scrollDown();
@@ -126,6 +127,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
         g.clearRect(0,0,w,h);
         render(g);
         g.dispose();
+        setChanged();
     }
     protected abstract void render(final Graphics g);
     public void CommandAddSpellReceived(final CrossfireCommandAddSpellEvent evt)

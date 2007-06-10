@@ -96,6 +96,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         {
             e.printStackTrace();
         }
+        setChanged();
     }
     public void mouseClicked(MouseEvent e)
     {

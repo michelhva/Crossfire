@@ -68,6 +68,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
             g.drawImage(mybackground, x, y, null);
         g.dispose();
         myname = nn;
+        setChanged();
     }
     public GUILog
           (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nnw, int nt)
@@ -97,6 +98,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
             g.drawImage(mybackground, x, y, null);
         g.dispose();
         myname = nn;
+        setChanged();
     }
     protected void render()
     {
@@ -130,6 +132,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         {
             e.printStackTrace();
         }
+        setChanged();
     }
 
     public void CommandQueryReceived(CrossfireCommandQueryEvent evt)

@@ -36,6 +36,11 @@ public class GUIElement implements MouseListener
     protected boolean active = false;
     protected boolean visiblechanged = false;
 
+    /**
+     * Whether {@link #mybuffer} has changed.
+     */
+    private boolean changed;
+
     public String toString()
     {
         return myname;
@@ -79,6 +84,7 @@ public class GUIElement implements MouseListener
     {
         visible = v;
         visiblechanged = true;
+        setChanged();
     }
     public String getName()
     {
@@ -115,5 +121,31 @@ public class GUIElement implements MouseListener
     public void mouseReleased(MouseEvent e)
     {
         mouseClicked(e);
+    }
+
+    /**
+     * Return whether {@link #mybuffer} has changed.
+     *
+     * @return whether <code>mybuffer</code> has changed
+     */
+    public boolean hasChanged()
+    {
+        return changed;
+    }
+
+    /**
+     * Record that {@link #mybuffer} has changed.
+     */
+    protected void setChanged()
+    {
+        changed = true;
+    }
+
+    /**
+     * Clear the flag that {@link #mybuffer} has changed.
+     */
+    public void resetChanged()
+    {
+        changed = false;
     }
 }
