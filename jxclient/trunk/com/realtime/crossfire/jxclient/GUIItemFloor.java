@@ -87,7 +87,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         try
         {
-            jxcw.getCrossfireServerConnection().writePacket("examine "+item.getTag());
+            jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
         }
         catch (Exception ex)
         {
@@ -107,7 +107,7 @@ public class GUIItemFloor extends GUIItemItem
         {
             if (ItemsList.getPlayer() != null)
             {
-                jxcw.getCrossfireServerConnection().writePacket("move "+ItemsList.getPlayer().getTag()+" "+item.getTag()+" 0");
+                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getPlayer().getTag(), item.getTag(), 0);
             }
         }
         catch (Exception ex)

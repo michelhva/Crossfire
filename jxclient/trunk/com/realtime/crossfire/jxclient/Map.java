@@ -103,7 +103,7 @@ public class Map
                 map[x][y].clear();
             }
         }
-        crossfireServerConnection.writePacket("mapredraw");
+        crossfireServerConnection.sendMapredraw();
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())

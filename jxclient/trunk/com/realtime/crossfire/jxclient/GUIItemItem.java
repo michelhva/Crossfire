@@ -75,7 +75,7 @@ public abstract class GUIItemItem extends GUIItem
 
         try
         {
-            jxcw.getCrossfireServerConnection().writePacket("apply "+item.getTag());
+            jxcw.getCrossfireServerConnection().sendApply(item.getTag());
         }
         catch (Exception ex)
         {

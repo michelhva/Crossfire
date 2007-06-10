@@ -78,8 +78,47 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private int packet = 1;
 
+    /** The command prefix for the "addme" command. */
+    private static final byte[] addmePrefix = { 'a', 'd', 'd', 'm', 'e', ' ', };
+
+    /** The command prefix for the "apply" command. */
+    private static final byte[] applyPrefix = { 'a', 'p', 'p', 'l', 'y', ' ', };
+
+    /** The command prefix for the "askface" command. */
+    private static final byte[] askfacePrefix = { 'a', 's', 'k', 'f', 'a', 'c', 'e', ' ', };
+
+    /** The command prefix for the "examine" command. */
+    private static final byte[] examinePrefix = { 'e', 'x', 'a', 'm', 'i', 'n', 'e', ' ', };
+
+    /** The command prefix for the "lock" command. */
+    private static final byte[] lockPrefix = { 'l', 'o', 'c', 'k', ' ', };
+
+    /** The command prefix for the "mapredraw" command. */
+    private static final byte[] mapredrawPrefix = { 'm', 'a', 'p', 'r', 'e', 'd', 'r', 'a', 'w', ' ', };
+
+    /** The command prefix for the "mark" command. */
+    private static final byte[] markPrefix = { 'm', 'a', 'r', 'k', ' ', };
+
+    /** The command prefix for the "move" command. */
+    private static final byte[] movePrefix = { 'm', 'o', 'v', 'e', ' ', };
+
     /** The command prefix for the "ncom" command. */
-    private static final byte[] ncomData = { 'n', 'c', 'o', 'm', ' ', };
+    private static final byte[] ncomPrefix = { 'n', 'c', 'o', 'm', ' ', };
+
+    /** The command prefix for the "reply" command. */
+    private static final byte[] replyPrefix = { 'r', 'e', 'p', 'l', 'y', ' ', };
+
+    /** The command prefix for the "requestinfo" command. */
+    private static final byte[] requestinfoPrefix = { 'r', 'e', 'q', 'u', 'e', 's', 't', 'i', 'n', 'f', 'o', ' ', };
+
+    /** The command prefix for the "setup" command. */
+    private static final byte[] setupPrefix = { 's', 'e', 't', 'u', 'p', }; // note that this command does not have a trailing space
+
+    /** The command prefix for the "toggleextendedtext" command. */
+    private static final byte[] toggleextendedtextPrefix = { 't', 'o', 'g', 'g', 'l', 'e', 'e', 'x', 't', 'e', 'n', 'd', 'e', 'd', 't', 'e', 'x', 't', }; // note that this command does not have a trailing space
+
+    /** The command prefix for the "version" command. */
+    private static final byte[] versionPrefix = { 'v', 'e', 'r', 's', 'i', 'o', 'n', ' ', };
 
     public CrossfireServerConnection(String hostname, int port)
     {
@@ -660,12 +699,23 @@ public class CrossfireServerConnection extends ServerConnection
      */
     void cmd_version(String cmd, DataInputStream dis) throws IOException
     {
-        writePacket("version 1023 1027 JXClient Java Client Pegasus 0.1");
-        writePacket("toggleextendedtext 1 2 3 4 5 6 7");
-        writePacket("setup sound 0 exp64 1 map1cmd 1 darkness 1 newmapcmd 1 facecache 1 extendedMapInfos 1 extendedTextInfos 1 itemcmd 2 spellmon 1 mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
-        writePacket("requestinfo image_info");
-        writePacket("requestinfo skill_info");
-        writePacket("toggleextendedtext 1");
+        sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
+        sendToggleextendedtext(1, 2, 3, 4, 5, 6, 7);
+        sendSetup(
+            "sound 0",
+            "exp64 1",
+            "map1cmd 1",
+            "darkness 1",
+            "newmapcmd 1",
+            "facecache 1",
+            "extendedMapInfos 1",
+            "extendedTextInfos 1",
+            "itemcmd 2",
+            "spellmon 1",
+            "mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
+        sendRequestinfo("image_info");
+        sendRequestinfo("skill_info");
+        sendToggleextendedtext(1);
     }
 
     /**
@@ -685,7 +735,7 @@ public class CrossfireServerConnection extends ServerConnection
         {
             int nrpics = Integer.parseInt(d.readLine());
             System.out.println("Number of pics:"+nrpics);
-            writePacket("addme");
+            sendAddme();
         }
         else if (replytype.equals("skill_info"))
         {
@@ -888,6 +938,129 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
+     * Send an "addme" command to the server.
+     */
+    public void sendAddme() throws IOException
+    {
+        writePacket(addmePrefix, addmePrefix.length);
+    }
+
+    /**
+     * Send an "apply" command to the server.
+     *
+     * @param tag the item to apply
+     */
+    public void sendApply(final int tag) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(applyPrefix);
+            putDecimal(tag);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send an "askface" command to the server.
+     *
+     * @param num the face to query
+     */
+    public void sendAskface(final int num) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(askfacePrefix);
+            putDecimal(num);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send an "examine" command to the server.
+     *
+     * @param tag the item to examine
+     */
+    public void sendExamine(final int tag) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(examinePrefix);
+            putDecimal(tag);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "lock" command to the server.
+     *
+     * @param val whether to lock the item
+     *
+     * @param tag the item to lock
+     */
+    public void sendLock(final boolean val, final int tag) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(lockPrefix);
+            byteBuffer.put((byte)(val ? 1 : 0));
+            byteBuffer.putInt(tag);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "mapredraw" command to the server.
+     */
+    public void sendMapredraw() throws IOException
+    {
+        writePacket(mapredrawPrefix, mapredrawPrefix.length);
+    }
+
+    /**
+     * Send a "mark" command to the server.
+     *
+     * @param tag the item to mark
+     */
+    public void sendMark(final int tag) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(markPrefix);
+            byteBuffer.putInt(tag);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "move" command to the server.
+     *
+     * @param to the destination location
+     *
+     * @param tag the item to move
+     *
+     * @param nrof the number of items to move
+     */
+    public void sendMove(final int to, final int tag, final int nrof) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(movePrefix);
+            putDecimal(to);
+            byteBuffer.put((byte)' ');
+            putDecimal(tag);
+            byteBuffer.put((byte)' ');
+            putDecimal(nrof);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
      * Send a "ncom" command to the server.
      *
      * @param repeat the repeat count
@@ -903,12 +1076,141 @@ public class CrossfireServerConnection extends ServerConnection
         {
             thisPacket = packet++&0x00FF;
             byteBuffer.clear();
-            byteBuffer.put(ncomData);
+            byteBuffer.put(ncomPrefix);
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
             byteBuffer.put(command.getBytes("UTF-8"));
             writePacket(writeBuffer, byteBuffer.position());
         }
         return thisPacket;
+    }
+
+    /**
+     * Send a "reply" command to the server.
+     *
+     * @param text the text to reply
+     */
+    public void sendReply(final String text) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(replyPrefix);
+            byteBuffer.put(text.getBytes("UTF-8"));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "requestinfo" command to the server.
+     *
+     * @param infoType the info type to request
+     */
+    public void sendRequestinfo(final String infoType) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(requestinfoPrefix);
+            byteBuffer.put(infoType.getBytes("UTF-8"));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "setup" command to the server.
+     *
+     * @param options... the option/value pairs to send
+     */
+    public void sendSetup(final String... options) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(setupPrefix);
+            if (options.length <= 0)
+            {
+                byteBuffer.put((byte)' ');
+            }
+            else
+            {
+                for (final String option : options)
+                {
+                    byteBuffer.put((byte)' ');
+                    byteBuffer.put(option.getBytes("UTF-8"));
+                }
+            }
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "toggleextendedtext" command to the server.
+     *
+     * @param types... the types to request
+     */
+    public void sendToggleextendedtext(final int... types) throws IOException
+    {
+        if (types.length <= 0)
+        {
+            return;
+        }
+
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(toggleextendedtextPrefix);
+            for (final int type : types)
+            {
+                byteBuffer.put((byte)' ');
+                putDecimal(type);
+            }
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "version" command to the server.
+     *
+     * @param csval the client version number
+     *
+     * @param scval the server version number
+     *
+     * @param vinfo the client identification string
+     */
+    public void sendVersion(final int csval, final int scval, final String vinfo) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(versionPrefix);
+            putDecimal(csval);
+            byteBuffer.put((byte)' ');
+            putDecimal(scval);
+            byteBuffer.put((byte)' ');
+            byteBuffer.put(vinfo.getBytes("UTF-8"));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Append an integer in decimal ASCII representation to {@link
+     * #byteBuffer}.
+     *
+     * @param value the value to append
+     *
+     * @throws IOException will never be thrown
+     */
+    private void putDecimal(final int value) throws IOException
+    {
+        if (value == 0)
+        {
+            byteBuffer.put((byte)'0');
+        }
+        else
+        {
+            final String str = Integer.toString(value);
+            byteBuffer.put(str.getBytes("ISO-8859-1"));
+        }
     }
 }

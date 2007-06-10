@@ -301,7 +301,7 @@ public class Faces
             final int face = it.next();
             if (!pendingAskfaces.contains(face))
             {
-                crossfireServerConnection.writePacket("askface "+face);
+                crossfireServerConnection.sendAskface(face);
                 pendingAskfaces.add(face);
             }
         }

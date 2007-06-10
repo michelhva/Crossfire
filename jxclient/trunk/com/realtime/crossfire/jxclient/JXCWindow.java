@@ -383,18 +383,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver.connect();
         Faces.setCrossfireServerConnection(myserver);
     }
-    public void send(final String packet)
-    {
-        try
-        {
-            myserver.writePacket(packet);
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            endRendering();
-        }
-    }
 
     /**
      * Send a "ncom" command to the server.

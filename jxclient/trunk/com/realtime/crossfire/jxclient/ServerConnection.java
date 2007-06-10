@@ -167,12 +167,6 @@ public abstract class ServerConnection extends Thread
         command(cmdstr, dis);
     }
 
-    public void writePacket(String str) throws IOException
-    {
-        final byte[] data = str.getBytes("ISO-8859-1");
-        writePacket(data, data.length);
-    }
-
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
      * @param packet the packet to be sent; it does not include the length
