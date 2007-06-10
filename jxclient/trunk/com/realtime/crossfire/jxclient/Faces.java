@@ -106,6 +106,21 @@ public class Faces
      */
     private static Set<Integer> pendingFaces = new HashSet<Integer>();
 
+    /**
+     * The server connection to send "askface" commands to.
+     */
+    private static ServerConnection serverConnection;
+
+    /**
+     * Set the server connection to send "askface" commands to.
+     *
+     * @param serverConnection the server connection
+     */
+    public static void setServerConnection(final ServerConnection serverConnection)
+    {
+        Faces.serverConnection = serverConnection;
+    }
+
     public static Face getFace(int index)
     {
         if (faces[index]==null)
@@ -286,7 +301,7 @@ public class Faces
             final int face = it.next();
             if (!pendingAskfaces.contains(face))
             {
-                ServerConnection.writePacket("askface "+face);
+                serverConnection.writePacket("askface "+face);
                 pendingAskfaces.add(face);
             }
         }

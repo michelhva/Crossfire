@@ -381,6 +381,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver.addCrossfireQueryListener(this);
         initGUI(GUI_MAIN);
         myserver.connect();
+        Faces.setServerConnection(myserver);
     }
     public void send(final String packet)
     {
