@@ -19,9 +19,15 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.net.*;
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * One of the two most important classes, ServerConnection performs most of the
