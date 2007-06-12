@@ -72,7 +72,6 @@ public class JXCWindowRenderer
         {
             System.out.println("Warning ! True full-screen support is not available.");
             jxcWindow.setUndecorated(true);
-            jxcWindow.setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
             jxcWindow.setSize(displayMode.getWidth(), displayMode.getHeight());
@@ -81,7 +80,6 @@ public class JXCWindowRenderer
         else
         {
             jxcWindow.setUndecorated(true);
-            jxcWindow.setIgnoreRepaint(true);
             oldDisplayMode = gd.getDisplayMode();
 
             final DisplayMode ndm = displayMode;
