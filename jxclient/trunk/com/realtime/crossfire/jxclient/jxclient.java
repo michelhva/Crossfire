@@ -18,8 +18,10 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient;
-import java.util.prefs.*;
-import java.io.*;
+
+import java.io.File;
+import java.util.prefs.Preferences;
+
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
  * by itself - most of the work in done in JXCWindow or CrossfireServerConnection.
