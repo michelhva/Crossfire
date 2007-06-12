@@ -1765,9 +1765,7 @@ public class JXCSkinPrelude implements JXCSkin
                     "metaselect5", 300, 370, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
-                    font_metaurl,
-                    gui_metaurl,
-                    gui_metacomment, 4);
+                    font_metaurl, gui_metaurl, gui_metacomment, 4);
             GUIMetaElement gui_metaselect6 = new GUIMetaElement(
                     "metaselect6", 300, 400, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
