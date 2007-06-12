@@ -18,12 +18,23 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient;
-import java.awt.*;
-import java.io.*;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Transparency;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
 import javax.swing.ImageIcon;
-import javax.swing.text.*;
-import javax.swing.text.html.*;
-import javax.swing.text.html.parser.*;
+import javax.swing.text.html.HTML;
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.parser.ParserDelegator;
+import javax.swing.text.MutableAttributeSet;
 
 /**
  *
