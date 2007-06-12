@@ -97,10 +97,8 @@ public class GUICommand
                 break;
             case CMD_GUI_SEND_COMMAND:
             {
-                java.util.List lp = (java.util.List)myparams;
-                JXCWindow jxcw = (JXCWindow)lp.get(0);
-                String cmd = (String)lp.get(1);
-                jxcw.sendNcom(0, cmd);
+                final SendCommandParameter param = (SendCommandParameter)myparams;
+                param.window.sendNcom(0, param.command);
             }
                 break;
             case CMD_GUI_SPELLBELT:
@@ -134,5 +132,30 @@ public class GUICommand
     public Object getParams()
     {
         return myparams;
+    }
+
+    /**
+     * A parameter object for the {@link #CMD_GUI_SEND_COMMAND} command.
+     */
+    public static class SendCommandParameter
+    {
+        /** The window to operate on. */
+        private final JXCWindow window;
+
+        /** The command to execute. */
+        private final String command;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window to operate on.
+         *
+         * @param command The command to execute.
+         */
+        public SendCommandParameter(final JXCWindow window, final String command)
+        {
+            this.window = window;
+            this.command = command;
+        }
     }
 }
