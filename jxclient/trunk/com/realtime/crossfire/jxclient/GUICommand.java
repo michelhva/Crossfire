@@ -103,9 +103,9 @@ public class GUICommand
                 break;
             case CMD_GUI_SPELLBELT:
             {
-                java.util.List lp = (java.util.List)myparams;
-                JXCWindow jxcw = (JXCWindow)lp.get(0);
-                SpellBeltItem myspellbelt = (SpellBeltItem)lp.get(1);
+                final SpellBeltParameter param = (SpellBeltParameter)myparams;
+                final JXCWindow jxcw = param.window;
+                final SpellBeltItem myspellbelt = param.spellBeltItem;
 
                 if ((myspellbelt != null)&&(myspellbelt.getSpell()!=null))
                 {
@@ -156,6 +156,31 @@ public class GUICommand
         {
             this.window = window;
             this.command = command;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link #CMD_GUI_SPELLBELT} command.
+     */
+    public static class SpellBeltParameter
+    {
+        /** The window to operate on. */
+        private final JXCWindow window;
+
+	/** The spell belt item to deliver. */
+        private final SpellBeltItem spellBeltItem;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window to operate on.
+         *
+         * @param spellBeltItem The spell belt item to deliver.
+         */
+        public SpellBeltParameter(final JXCWindow window, final SpellBeltItem spellBeltItem)
+        {
+            this.window = window;
+            this.spellBeltItem = spellBeltItem;
         }
     }
 }

@@ -423,10 +423,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     private void launchSpellFromBelt(final int idx)
     {
-        final List lp = new ArrayList();
-        lp.add(this);
-        lp.add(myspellbelt[idx]);
-        final GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, lp);
+        final GUICommand fcmd = new GUICommand(null, GUICommand.CMD_GUI_SPELLBELT, new GUICommand.SpellBeltParameter(this, myspellbelt[idx]));
         fcmd.execute();
     }
     private void handleKeyPress(final KeyEvent e)
