@@ -27,7 +27,7 @@ import java.io.*;
  * @author Lauwenmark
  * @since 1.0
  */
-public class Map
+public class CfMap
 {
     private static Faces myfaces;
     private static java.util.List<CrossfireMap1Listener> mylisteners_map1 =
@@ -39,7 +39,7 @@ public class Map
     private static java.util.List<CrossfireMagicmapListener> mylisteners_magicmap =
             new ArrayList<CrossfireMagicmapListener>();
 
-    private static MapSquare[][] map = new MapSquare[CrossfireServerConnection.MAP_WIDTH+20]
+    private static CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20]
             [CrossfireServerConnection.MAP_HEIGHT+20];
 
     public static java.util.List<CrossfireMap1Listener> getCrossfireMap1Listeners()
@@ -65,7 +65,7 @@ public class Map
         {
             for (int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
             {
-                map[x][y] = new MapSquare(x,y);
+                map[x][y] = new CfMapSquare(x,y);
             }
         }
     }
@@ -159,7 +159,7 @@ public class Map
                     for (int j=0; j<my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new MapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i,j);
                         map[i][j].dirty();
                     }
                 }
@@ -188,7 +188,7 @@ public class Map
                     for (int j=0; j<my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new MapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i,j);
                         map[i][j].dirty();
                     }
                 }
@@ -221,7 +221,7 @@ public class Map
                     for (int j=0; j<my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new MapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i,j);
                         map[i][j].dirty();
                     }
                 }
@@ -251,7 +251,7 @@ public class Map
                     for (int j=0; j<my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new MapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i,j);
                         map[i][j].dirty();
                     }
                 }
@@ -277,7 +277,7 @@ public class Map
     {
         int len = dis.available();
         int pos = 0;
-        java.util.List<MapSquare> l = new LinkedList<MapSquare>();
+        java.util.List<CfMapSquare> l = new LinkedList<CfMapSquare>();
         int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
         while (pos<len)
         {
@@ -339,7 +339,7 @@ public class Map
             }
         }
     }
-    public static MapSquare[][] getMap()
+    public static CfMapSquare[][] getMap()
     {
         return map;
     }
@@ -361,7 +361,7 @@ public class Map
     }
     public static void updateFace(int pixnum)
     {
-        java.util.List<MapSquare> l = new LinkedList<MapSquare>();
+        java.util.List<CfMapSquare> l = new LinkedList<CfMapSquare>();
 
         //System.out.println("Face update: "+pixnum);
         for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
@@ -374,7 +374,7 @@ public class Map
                     if (map[x][y].getFace(z).getID()==pixnum)
                     {
                         map[x][y].dirty();
-                        //l.add(new MapSquare(x,y,z,0,myfaces.getFace(pixnum)));
+                        //l.add(new CfMapSquare(x,y,z,0,myfaces.getFace(pixnum)));
                     }
                 }
             }

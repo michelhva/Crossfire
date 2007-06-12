@@ -178,7 +178,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMap1Listeners().add(listener);
+        CfMap.getCrossfireMap1Listeners().add(listener);
     }
 
     /**
@@ -189,7 +189,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMap1Listeners().remove(listener);
+        CfMap.getCrossfireMap1Listeners().remove(listener);
     }
 
     /**
@@ -200,7 +200,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireNewmapListeners().add(listener);
+        CfMap.getCrossfireNewmapListeners().add(listener);
     }
 
     /**
@@ -211,7 +211,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireNewmapListeners().remove(listener);
+        CfMap.getCrossfireNewmapListeners().remove(listener);
     }
 
     /**
@@ -266,7 +266,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMapscrollListeners().add(listener);
+        CfMap.getCrossfireMapscrollListeners().add(listener);
     }
 
     /**
@@ -277,7 +277,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMapscrollListeners().remove(listener);
+        CfMap.getCrossfireMapscrollListeners().remove(listener);
     }
 
     /**
@@ -332,7 +332,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMagicmapListeners().add(listener);
+        CfMap.getCrossfireMagicmapListeners().add(listener);
     }
 
     /**
@@ -343,7 +343,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        com.realtime.crossfire.jxclient.Map.getCrossfireMagicmapListeners().remove(listener);
+        CfMap.getCrossfireMagicmapListeners().remove(listener);
     }
 
     /**
@@ -478,9 +478,9 @@ public class CrossfireServerConnection extends ServerConnection
         else if (cmd.startsWith("item"))
             cmd_item(cmd, dis);
         else if (cmd.startsWith("map1"))
-            com.realtime.crossfire.jxclient.Map.map1(dis);
+            CfMap.map1(dis);
         else if (cmd.startsWith("newmap"))
-            com.realtime.crossfire.jxclient.Map.newMap(dis, this);
+            CfMap.newMap(dis, this);
         else if (cmd.startsWith("player"))
             ItemsList.createPlayer(dis);
         else if (cmd.startsWith("stats"))
@@ -491,7 +491,7 @@ public class CrossfireServerConnection extends ServerConnection
         else if (cmd.startsWith("upditem"))
             ItemsList.updateItem(dis);
         else if (cmd.startsWith("map_scroll"))
-            com.realtime.crossfire.jxclient.Map.scroll(dis);
+            CfMap.scroll(dis);
         else if (cmd.startsWith("drawinfo"))
         {
             cmd_drawinfo(cmd, dis);
@@ -505,7 +505,7 @@ public class CrossfireServerConnection extends ServerConnection
             cmd_version(cmd, dis);
         }
         else if (cmd.startsWith("magicmap"))
-            com.realtime.crossfire.jxclient.Map.magicmap(dis);
+            CfMap.magicmap(dis);
         else if (cmd.startsWith("addme_failed"))
         {
             cmd_addme_failed(cmd, dis);
@@ -610,7 +610,7 @@ public class CrossfireServerConnection extends ServerConnection
     void cmd_image(String cmd, DataInputStream dis) throws IOException
     {
         int pixmap = Faces.setImage(dis);
-        com.realtime.crossfire.jxclient.Map.updateFace(pixmap);
+        CfMap.updateFace(pixmap);
     }
 
     /**

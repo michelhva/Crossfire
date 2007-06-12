@@ -25,13 +25,13 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public class MapObject
+public class CfMapObject
 {
     private Face myface;
 
     private int x,y,z,w,h;
 
-    public MapObject(Face f, int px, int py, int pz)
+    public CfMapObject(Face f, int px, int py, int pz)
     {
         z = pz;
         myface = f;

@@ -25,16 +25,16 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public class MapSquare
+public class CfMapSquare
 {
     private int x=0, y=0;
-    private MapSquare[] myhead=new MapSquare[CrossfireServerConnection.NUM_LAYERS];
+    private CfMapSquare[] myhead=new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
     private Face[] myface=new Face[CrossfireServerConnection.NUM_LAYERS];
     private boolean isdirty = false;
     private int mydarkness = 0;
     private int dirtycounter = 0;
 
-    public MapSquare(int nx, int ny)
+    public CfMapSquare(int nx, int ny)
     {
         x = nx;
         y = ny;
@@ -63,7 +63,7 @@ public class MapSquare
     }
     public void setFace(Face f, int layer)
     {
-        MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
+        CfMapSquare[][] map = CfMap.getMap();
 
         int sw, sh, psx, psy;
 
@@ -107,7 +107,7 @@ public class MapSquare
             }
         }
     }
-    protected void setFaceHead(Face f, int layer, MapSquare m)
+    protected void setFaceHead(Face f, int layer, CfMapSquare m)
     {
         //System.out.println("- setFaceHead: ("+x+";"+y+";"+layer+"):"+m);
         myface[layer] = f;
@@ -122,7 +122,7 @@ public class MapSquare
         {
             if ((myhead[layer] == this)&&(myface[layer]!=null))
             {
-                MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
+                CfMapSquare[][] map = CfMap.getMap();
                 int sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
                 int sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
 
@@ -158,11 +158,11 @@ public class MapSquare
         if (dirtycounter <= 0)
             isdirty = false;
     }
-    public MapSquare getHead(int layer)
+    public CfMapSquare getHead(int layer)
     {
         return myhead[layer];
     }
-    public void setHead(MapSquare m, int layer)
+    public void setHead(CfMapSquare m, int layer)
     {
         myhead[layer] = m;
     }
@@ -191,7 +191,7 @@ public class MapSquare
         }
         return str;
     }
-    public void copy(MapSquare square)
+    public void copy(CfMapSquare square)
     {
         System.out.println(this+"->"+square);
         for (int i=0; i<CrossfireServerConnection.NUM_LAYERS; i++)

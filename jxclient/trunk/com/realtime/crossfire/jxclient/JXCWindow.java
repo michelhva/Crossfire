@@ -252,7 +252,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
                 case DLG_NONE:
                     jxcWindowRenderer.setCurrentDialog(null);
-                    com.realtime.crossfire.jxclient.Map.invalidate();
+                    CfMap.invalidate();
                     break;
                 case DLG_BOOK:
                     jxcWindowRenderer.setCurrentDialog(mydialog_book);
