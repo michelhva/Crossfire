@@ -36,5 +36,4 @@ public class CrossfireCommandVersionEvent extends EventObject
     {
         super(src);
     }
-
 }

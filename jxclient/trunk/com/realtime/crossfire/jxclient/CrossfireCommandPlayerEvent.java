@@ -36,5 +36,4 @@ public class CrossfireCommandPlayerEvent extends EventObject
     {
         super(src);
     }
-
 }

@@ -36,5 +36,4 @@ public class CrossfireCommandNewmapEvent extends EventObject
     {
         super(src);
     }
-
 }
