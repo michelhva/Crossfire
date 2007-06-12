@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.List;
+
 /**
  *
  * @version 1.0
@@ -27,16 +29,16 @@ package com.realtime.crossfire.jxclient;
  */
 public interface JXCSkin
 {
-    public java.util.List<GUIElement> getDialogKeyBind(CrossfireServerConnection s, JXCWindow p)
+    public List<GUIElement> getDialogKeyBind(CrossfireServerConnection s, JXCWindow p)
             throws JXCSkinException;
-    public java.util.List<GUIElement> getDialogQuery(CrossfireServerConnection s, JXCWindow p)
+    public List<GUIElement> getDialogQuery(CrossfireServerConnection s, JXCWindow p)
             throws JXCSkinException;
-    public java.util.List<GUIElement> getDialogBook(CrossfireServerConnection s, JXCWindow p, int booknr)
+    public List<GUIElement> getDialogBook(CrossfireServerConnection s, JXCWindow p, int booknr)
             throws JXCSkinException;
-    public java.util.List<GUIElement> getMainInterface(CrossfireServerConnection s, JXCWindow p)
+    public List<GUIElement> getMainInterface(CrossfireServerConnection s, JXCWindow p)
             throws JXCSkinException;
-    public java.util.List<GUIElement> getMetaInterface(CrossfireServerConnection s, JXCWindow p)
+    public List<GUIElement> getMetaInterface(CrossfireServerConnection s, JXCWindow p)
             throws JXCSkinException;
-    public java.util.List<GUIElement> getStartInterface(CrossfireServerConnection s, JXCWindow p)
+    public List<GUIElement> getStartInterface(CrossfireServerConnection s, JXCWindow p)
             throws JXCSkinException;
 }

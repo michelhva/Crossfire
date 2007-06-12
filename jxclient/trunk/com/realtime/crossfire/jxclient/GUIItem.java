@@ -30,6 +30,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -74,15 +75,15 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
             throws IOException
     {
         mypicbackground =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         mypiccursed   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_cursed));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_cursed));
         mypicapplied  =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_applied));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_applied));
         mypicselector =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_selector));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_selector));
         mypiclocked   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
         x = nx;
         y = ny;
         w = nw;

@@ -31,6 +31,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -49,9 +50,9 @@ public class GUIText extends GUIElement implements KeyListener
                    String picinactive, Font nf, String txt)  throws IOException
     {
         mybackground_active =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
         mybackground_inactive =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
         x = nx;
         y = ny;
         w = nw;

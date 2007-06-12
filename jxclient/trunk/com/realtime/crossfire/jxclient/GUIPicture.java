@@ -26,6 +26,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -39,7 +40,7 @@ public class GUIPicture extends GUIElement
             (String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
     {
         BufferedImage img =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         if (img == null)
         {
             throw new IllegalArgumentException("resource '"+picture+"' does not exist");

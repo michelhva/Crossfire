@@ -177,7 +177,7 @@ public class Faces
                 f.storeInCache("cache/");
             }
         }
-        catch(java.lang.IllegalArgumentException e)
+        catch(IllegalArgumentException e)
         {
             System.out.println("Unable to get face:"+pixnum);
         }

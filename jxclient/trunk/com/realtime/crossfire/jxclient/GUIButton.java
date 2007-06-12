@@ -26,6 +26,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -37,7 +39,7 @@ public class GUIButton extends GUIElement
 {
     private BufferedImage mypicture_up;
     private BufferedImage mypicture_down;
-    private java.util.List<GUICommand> mylist;
+    private List<GUICommand> mylist;
     private String mytext = null;
     private Font myfont = null;
     private int mytx = 0;
@@ -46,38 +48,38 @@ public class GUIButton extends GUIElement
 
     public GUIButton
             (String nn, int nx, int ny, int nw, int nh, String picup,
-                     String picdown, java.util.List<GUICommand> cmd) throws IOException
+                     String picdown, List<GUICommand> cmd) throws IOException
     {
         mypicture_up   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
         x = nx;
         y = ny;
         w = nw;
         h = nh;
         mylist = cmd;
         mybuffer   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         render();
         myname = nn;
     }
     public GUIButton
             (String nn, int nx, int ny, int nw, int nh, String picup,
              String picdown, String txt, Font f, Color mfc,
-             int tx, int ty, java.util.List<GUICommand> cmd) throws IOException
+             int tx, int ty, List<GUICommand> cmd) throws IOException
     {
         mypicture_up   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
         x = nx;
         y = ny;
         w = nw;
         h = nh;
         mylist = cmd;
         mybuffer   =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         myname = nn;
         mytext = txt;
         myfont = f;
