@@ -109,13 +109,13 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
     {
         synchronized(mybuffer)
         {
-            if (new_map_happened == true)
+            if (new_map_happened)
             {
                 g.setColor(Color.BLACK);
                 g.fillRect(x,y,w,h);
                 new_map_happened = false;
             }
-            if (need_update == true)
+            if (need_update)
             {
                 need_update_cnt--;
                 if (need_update_cnt <= 0)
@@ -151,7 +151,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             System.err.println("Warning ! Null square detected");
             return;
         }
-        if (square.isDirty()==false)
+        if (!square.isDirty())
             return;
         if (nz == 0)
         {
@@ -163,7 +163,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             if (f != null)
             {
                 final ImageIcon img;
-                if (use_big_images==true)
+                if (use_big_images)
                 {
                     img = f.getImageIcon();
                 }

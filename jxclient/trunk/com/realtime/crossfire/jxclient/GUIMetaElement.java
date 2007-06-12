@@ -126,7 +126,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     }
     public void setActive(boolean act)
     {
-        if (active && (act==false))
+        if (active && (!act))
             if (mylabel != null)
                 mylabel.setText("");
         active = act;

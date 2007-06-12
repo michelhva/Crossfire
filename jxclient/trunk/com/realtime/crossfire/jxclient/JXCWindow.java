@@ -481,12 +481,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_UP:
             case KeyEvent.VK_NUMPAD8:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 1");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 1");
                     is_fire_active = true;
@@ -495,12 +495,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     sendNcom(0, "north");
                 break;
             case KeyEvent.VK_NUMPAD9:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 2");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 2");
                     is_fire_active = true;
@@ -510,12 +510,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_RIGHT:
             case KeyEvent.VK_NUMPAD6:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 3");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 3");
                     is_fire_active = true;
@@ -524,12 +524,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     sendNcom(0, "east");
                 break;
             case KeyEvent.VK_NUMPAD3:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 4");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 4");
                     is_fire_active = true;
@@ -539,12 +539,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_DOWN:
             case KeyEvent.VK_NUMPAD2:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 5");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 5");
                     is_fire_active = true;
@@ -553,12 +553,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     sendNcom(0, "south");
                 break;
             case KeyEvent.VK_NUMPAD1:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 6");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 6");
                     is_fire_active = true;
@@ -568,12 +568,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_LEFT:
             case KeyEvent.VK_NUMPAD4:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 7");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 7");
                     is_fire_active = true;
@@ -582,12 +582,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     sendNcom(0, "west");
                 break;
             case KeyEvent.VK_NUMPAD7:
-                if (getKeyShift(KEY_SHIFT_CTRL)==true)
+                if (getKeyShift(KEY_SHIFT_CTRL))
                 {
                     sendNcom(0, "run 8");
                     is_run_active = true;
                 }
-                else if (getKeyShift(KEY_SHIFT_SHIFT)==true)
+                else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
                     sendNcom(0, "fire 8");
                     is_fire_active = true;
@@ -659,7 +659,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     else if (myactive_element instanceof KeyListener)
                     {
                         ((KeyListener)myactive_element).keyPressed(e);
-                        if (myactive_element.isActive()==false)
+                        if (!myactive_element.isActive())
                             myactive_element = null;
                     }
                     else
@@ -690,7 +690,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_SHIFT:
                 setKeyShift(KEY_SHIFT_SHIFT, false);
-                if (is_fire_active == true)
+                if (is_fire_active)
                 {
                     sendNcom(0, "fire_stop");
                     is_fire_active = false;
@@ -698,7 +698,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_CONTROL:
                 setKeyShift(KEY_SHIFT_CTRL, false);
-                if (is_run_active == true)
+                if (is_run_active)
                 {
                     sendNcom(0, "run_stop");
                     is_run_active = false;

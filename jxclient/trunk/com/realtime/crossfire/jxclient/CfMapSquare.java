@@ -136,12 +136,12 @@ public class CfMapSquare
                 {
                     for (int lx=psx; lx<=x; lx++)
                     {
-                        if (map[lx][ly].isDirty()==false)
+                        if (!map[lx][ly].isDirty())
                             map[lx][ly].dirty();
                     }
                 }
             }
-            else if ((myhead[layer] != null)&&(myhead[layer].isDirty()==false))
+            else if ((myhead[layer] != null)&&(!myhead[layer].isDirty()))
             {
                 myhead[layer].dirty();
             }
