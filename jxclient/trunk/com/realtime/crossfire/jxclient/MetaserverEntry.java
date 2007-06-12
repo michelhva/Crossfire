@@ -25,7 +25,7 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public class MetaserverEntry
+public class MetaserverEntry implements Comparable<MetaserverEntry>
 {
     private String myip;
     private String myhost;
@@ -73,5 +73,11 @@ public class MetaserverEntry
     public int getPing()
     {
         return myping;
+    }
+
+    /** {@inheritDoc} */
+    public int compareTo(final MetaserverEntry o)
+    {
+        return myhost.compareTo(o.myhost);
     }
 }

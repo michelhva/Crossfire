@@ -79,6 +79,7 @@ public class Metaserver
             e.printStackTrace();
             System.exit(0);
         }
+        Collections.sort(metalist);
         return metalist;
     }
 }
