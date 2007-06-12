@@ -99,7 +99,7 @@ public final class KeyBindings implements Iterable<KeyBinding>
                         final List<GUICommand> guil = new ArrayList<GUICommand>();
                         for(int j=0; j<lsz; j++)
                         {
-/*XXX: type mismatch
+                            ois.readObject();/*XXX: type mismatch
                         final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
                             new GUICommand.SendCommandParameter(this, (String)ois.readObject()));
                         guil.add(guic);
