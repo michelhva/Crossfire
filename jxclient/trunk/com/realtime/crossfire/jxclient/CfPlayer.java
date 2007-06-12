@@ -23,6 +23,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  *
@@ -32,9 +33,9 @@ import java.util.Iterator;
  */
 public class CfPlayer extends CfItem
 {
-    private static java.util.List<CrossfireStatsListener> mylisteners_stats =
+    private static List<CrossfireStatsListener> mylisteners_stats =
             new ArrayList<CrossfireStatsListener>();
-    private static java.util.List<CrossfirePlayerListener> mylisteners_player =
+    private static List<CrossfirePlayerListener> mylisteners_player =
             new ArrayList<CrossfirePlayerListener>();
 
     private static Stats mystats = new Stats();
@@ -47,11 +48,11 @@ public class CfPlayer extends CfItem
     {
         return mystats;
     }
-    public static java.util.List<CrossfirePlayerListener> getCrossfirePlayerListeners()
+    public static List<CrossfirePlayerListener> getCrossfirePlayerListeners()
     {
         return mylisteners_player;
     }
-    public static java.util.List<CrossfireStatsListener> getCrossfireStatsListeners()
+    public static List<CrossfireStatsListener> getCrossfireStatsListeners()
     {
         return mylisteners_stats;
     }

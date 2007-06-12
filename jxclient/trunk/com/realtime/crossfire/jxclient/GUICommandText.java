@@ -24,6 +24,7 @@ import java.awt.event.KeyListener;
 import java.awt.Font;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -66,9 +67,9 @@ public class GUICommandText extends GUIText implements KeyListener
                         {
                             String cmdl = mytext.substring(5);
                             String[] cmds = cmdl.split(";");
-                            java.util.List list_parms;
+                            List list_parms;
                             GUICommand guicmd;
-                            java.util.List<GUICommand> list_commands =
+                            List<GUICommand> list_commands =
                                     new ArrayList<GUICommand>();
 
                             for(int i=0; i<cmds.length;i++)

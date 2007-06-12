@@ -29,6 +29,8 @@ import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.List;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -41,8 +43,8 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
 {
     private BufferedImage mybackground = null;
     private Font myfont;
-    private java.util.List<String> mytext=new LinkedList<String>();
-    private java.util.List<Color>  mytextcolor=new LinkedList<Color>();
+    private List<String> mytext=new LinkedList<String>();
+    private List<Color>  mytextcolor=new LinkedList<Color>();
     private int mynrlines;
     private int mylogtype;
     private int myindex;
@@ -54,7 +56,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
     {
         if (picture != null)
             mybackground =
-                javax.imageio.ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
+                ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
         x = nx;
@@ -83,7 +85,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
     {
         if (picture != null)
             mybackground =
-                    javax.imageio.ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
+                    ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
         x = nx;

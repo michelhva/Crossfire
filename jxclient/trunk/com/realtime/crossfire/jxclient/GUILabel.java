@@ -30,6 +30,7 @@ import java.awt.Transparency;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.util.Stack;
 import javax.swing.ImageIcon;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLEditorKit;
@@ -210,8 +211,8 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     }
     class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     {
-        private java.util.Stack<Font> myfonts = new java.util.Stack<Font>();
-        private java.util.Stack<Color> mycolors = new java.util.Stack<Color>();
+        private Stack<Font> myfonts = new Stack<Font>();
+        private Stack<Color> mycolors = new Stack<Color>();
 
         private Graphics2D mygc;
         private int myx = 0;

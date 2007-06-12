@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -34,31 +35,31 @@ import java.util.LinkedList;
 public class CfMap
 {
     private static Faces myfaces;
-    private static java.util.List<CrossfireMap1Listener> mylisteners_map1 =
+    private static List<CrossfireMap1Listener> mylisteners_map1 =
             new ArrayList<CrossfireMap1Listener>();
-    private static java.util.List<CrossfireNewmapListener> mylisteners_newmap =
+    private static List<CrossfireNewmapListener> mylisteners_newmap =
             new ArrayList<CrossfireNewmapListener>();
-    private static java.util.List<CrossfireMapscrollListener> mylisteners_mapscroll =
+    private static List<CrossfireMapscrollListener> mylisteners_mapscroll =
             new ArrayList<CrossfireMapscrollListener>();
-    private static java.util.List<CrossfireMagicmapListener> mylisteners_magicmap =
+    private static List<CrossfireMagicmapListener> mylisteners_magicmap =
             new ArrayList<CrossfireMagicmapListener>();
 
     private static CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20]
             [CrossfireServerConnection.MAP_HEIGHT+20];
 
-    public static java.util.List<CrossfireMap1Listener> getCrossfireMap1Listeners()
+    public static List<CrossfireMap1Listener> getCrossfireMap1Listeners()
     {
         return mylisteners_map1;
     }
-    public static java.util.List<CrossfireNewmapListener> getCrossfireNewmapListeners()
+    public static List<CrossfireNewmapListener> getCrossfireNewmapListeners()
     {
         return mylisteners_newmap;
     }
-    public static java.util.List<CrossfireMapscrollListener> getCrossfireMapscrollListeners()
+    public static List<CrossfireMapscrollListener> getCrossfireMapscrollListeners()
     {
         return mylisteners_mapscroll;
     }
-    public static java.util.List<CrossfireMagicmapListener> getCrossfireMagicmapListeners()
+    public static List<CrossfireMagicmapListener> getCrossfireMagicmapListeners()
     {
         return mylisteners_magicmap;
     }
@@ -281,7 +282,7 @@ public class CfMap
     {
         int len = dis.available();
         int pos = 0;
-        java.util.List<CfMapSquare> l = new LinkedList<CfMapSquare>();
+        List<CfMapSquare> l = new LinkedList<CfMapSquare>();
         int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
         while (pos<len)
         {
@@ -365,7 +366,7 @@ public class CfMap
     }
     public static void updateFace(int pixnum)
     {
-        java.util.List<CfMapSquare> l = new LinkedList<CfMapSquare>();
+        List<CfMapSquare> l = new LinkedList<CfMapSquare>();
 
         //System.out.println("Face update: "+pixnum);
         for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)

@@ -23,6 +23,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  *
@@ -39,13 +40,13 @@ public class ItemsList
 
     private static final ItemsManager itemsManager = new ItemsManager();
 
-    private static java.util.List<Spell>          myspells = new ArrayList<Spell>();
+    private static List<Spell>          myspells = new ArrayList<Spell>();
 
-    private static java.util.List<CrossfireSpellAddedListener> mylisteners_addspell =
+    private static List<CrossfireSpellAddedListener> mylisteners_addspell =
             new ArrayList<CrossfireSpellAddedListener>();
-    private static java.util.List<CrossfireSpellUpdatedListener> mylisteners_updspell =
+    private static List<CrossfireSpellUpdatedListener> mylisteners_updspell =
             new ArrayList<CrossfireSpellUpdatedListener>();
-    private static java.util.List<CrossfireSpellRemovedListener> mylisteners_delspell =
+    private static List<CrossfireSpellRemovedListener> mylisteners_delspell =
             new ArrayList<CrossfireSpellRemovedListener>();
 
     static
@@ -60,15 +61,15 @@ public class ItemsList
             System.exit(0);
         }
     }
-    public static java.util.List<CrossfireSpellAddedListener> getCrossfireSpellAddedListeners()
+    public static List<CrossfireSpellAddedListener> getCrossfireSpellAddedListeners()
     {
         return mylisteners_addspell;
     }
-    public static java.util.List<CrossfireSpellUpdatedListener> getCrossfireSpellUpdatedListeners()
+    public static List<CrossfireSpellUpdatedListener> getCrossfireSpellUpdatedListeners()
     {
         return mylisteners_updspell;
     }
-    public static java.util.List<CrossfireSpellRemovedListener> getCrossfireSpellRemovedListeners()
+    public static List<CrossfireSpellRemovedListener> getCrossfireSpellRemovedListeners()
     {
         return mylisteners_delspell;
     }
@@ -97,7 +98,7 @@ public class ItemsList
     {
         return myspellmode;
     }
-    public static java.util.List<CfItem> getItems(int location)
+    public static List<CfItem> getItems(int location)
     {
         return itemsManager.getItems(location);
     }
@@ -299,7 +300,7 @@ public class ItemsList
         Faces.ensureFaceExists(faceid);
         itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(faceid), name));
     }
-    public static java.util.List<Spell> getSpellList()
+    public static List<Spell> getSpellList()
     {
         return myspells;
     }

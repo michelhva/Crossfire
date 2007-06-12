@@ -29,6 +29,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
+import java.util.List;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -51,9 +53,9 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
                           int meta_id) throws IOException
     {
         mypicture_tcp =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
         mypicture_udp =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource(pic_udp));
+            ImageIO.read(this.getClass().getClassLoader().getResource(pic_udp));
         x = nx;
         y = ny;
         w = nw;
@@ -71,7 +73,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     }
     protected void render()
     {
-        java.util.List<MetaserverEntry> l = Metaserver.query();
+        List<MetaserverEntry> l = Metaserver.query();
         try
         {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();

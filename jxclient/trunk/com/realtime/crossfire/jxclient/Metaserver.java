@@ -23,6 +23,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -72,7 +73,7 @@ public class Metaserver
             in.close();
             mysocket.close();
         }
-        catch (java.net.UnknownHostException e)
+        catch (UnknownHostException e)
         {
             MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost",
                     "unknown", 0,0);

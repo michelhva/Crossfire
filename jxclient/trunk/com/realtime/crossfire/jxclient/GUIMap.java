@@ -28,6 +28,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 /**
@@ -57,7 +58,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         myname = nn;
 
         myblacktile =
-            javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
+            ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
 
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
@@ -84,13 +85,13 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         if (big)
         {
             myblacktile =
-                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
+                ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
             mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
         }
         else
         {
             myblacktile =
-                javax.imageio.ImageIO.read(this.getClass().getClassLoader().getResource("black.png"));
+                ImageIO.read(this.getClass().getClassLoader().getResource("black.png"));
             mysquaresize = 32;
         }
 

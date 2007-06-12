@@ -23,6 +23,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -32,12 +33,12 @@ import java.util.ArrayList;
  */
 public class JXCSkinPrelude implements JXCSkin
 {
-    private java.util.List<GUIElement> mygui            = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
-    private java.util.List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
+    private List<GUIElement> mygui            = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
+    private List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
 
-    public java.util.List<GUIElement> getDialogKeyBind(CrossfireServerConnection myserver, JXCWindow p)
+    public List<GUIElement> getDialogKeyBind(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mydialog_keybind.clear();
@@ -107,7 +108,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_keybind;
     }
-    public java.util.List<GUIElement> getDialogQuery(CrossfireServerConnection myserver, JXCWindow p)
+    public List<GUIElement> getDialogQuery(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mydialog_query.clear();
@@ -120,7 +121,7 @@ public class JXCSkinPrelude implements JXCSkin
         Font font_stats;
         Font font_types;
         Font font_cmdline        = null;
-        java.util.List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
+        List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
         InputStream ttf=null;
         try
         {
@@ -238,7 +239,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_query;
     }
-    public java.util.List<GUIElement> getMainInterface(CrossfireServerConnection myserver, JXCWindow p)
+    public List<GUIElement> getMainInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
@@ -257,17 +258,17 @@ public class JXCSkinPrelude implements JXCSkin
         Font font_stats          = null;
         Font font_types          = null;
         Font font_cmdline        = null;
-        java.util.List<GUICommand> command_log_upper_up = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_log_upper_down = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rinv_down = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rsp_down = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rsp_up = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rsp_display = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_rsp_undisplay = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_magicmap_display = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_magicmap_undisplay = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_menu_display = new ArrayList<GUICommand>();
+        List<GUICommand> command_log_upper_up = new ArrayList<GUICommand>();
+        List<GUICommand> command_log_upper_down = new ArrayList<GUICommand>();
+        List<GUICommand> command_rinv_down = new ArrayList<GUICommand>();
+        List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
+        List<GUICommand> command_rsp_down = new ArrayList<GUICommand>();
+        List<GUICommand> command_rsp_up = new ArrayList<GUICommand>();
+        List<GUICommand> command_rsp_display = new ArrayList<GUICommand>();
+        List<GUICommand> command_rsp_undisplay = new ArrayList<GUICommand>();
+        List<GUICommand> command_magicmap_display = new ArrayList<GUICommand>();
+        List<GUICommand> command_magicmap_undisplay = new ArrayList<GUICommand>();
+        List<GUICommand> command_menu_display = new ArrayList<GUICommand>();
         InputStream ttf=null;
         try
         {
@@ -1697,14 +1698,14 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getMetaInterface(CrossfireServerConnection myserver, JXCWindow p)
+    public List<GUIElement> getMetaInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
-        java.util.List<GUICommand> command_metaconnect = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_metacancel  = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_metaup      = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_metadown    = new ArrayList<GUICommand>();
+        List<GUICommand> command_metaconnect = new ArrayList<GUICommand>();
+        List<GUICommand> command_metacancel  = new ArrayList<GUICommand>();
+        List<GUICommand> command_metaup      = new ArrayList<GUICommand>();
+        List<GUICommand> command_metadown    = new ArrayList<GUICommand>();
 
         Font font_metaurl=null;
         Font font_description=null;
@@ -1867,12 +1868,12 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getStartInterface(CrossfireServerConnection myserver, JXCWindow p)
+    public List<GUIElement> getStartInterface(CrossfireServerConnection myserver, JXCWindow p)
             throws JXCSkinException
     {
         mygui.clear();
-        java.util.List<GUICommand> command_startmenu_meta = new ArrayList<GUICommand>();
-        java.util.List<GUICommand> command_startmenu_quit = new ArrayList<GUICommand>();
+        List<GUICommand> command_startmenu_meta = new ArrayList<GUICommand>();
+        List<GUICommand> command_startmenu_quit = new ArrayList<GUICommand>();
 
         Font font_metaurl=null;
         InputStream ttf=null;
@@ -1949,12 +1950,12 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public java.util.List<GUIElement> getDialogBook(CrossfireServerConnection myserver, JXCWindow p,
+    public List<GUIElement> getDialogBook(CrossfireServerConnection myserver, JXCWindow p,
                                                        int booknr)
             throws JXCSkinException
     {
         mydialog_book.clear();
-        java.util.List<GUICommand> command_book_close = new ArrayList<GUICommand>();
+        List<GUICommand> command_book_close = new ArrayList<GUICommand>();
 
         Font font_metaurl=null;
         InputStream ttf=null;
