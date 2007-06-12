@@ -1,4 +1,4 @@
-object burning_fort
+Object burning_fort
 name burning fortress
 type 66
 face burning_fort.111
@@ -9,7 +9,7 @@ magicmap grey
 client_type 25012
 end
 More
-object burning_fort_2
+Object burning_fort_2
 name burning fortress
 type 66
 face burning_fort.211
@@ -19,7 +19,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_fort_3
+Object burning_fort_3
 name burning fortress
 type 66
 face burning_fort.311
@@ -29,7 +29,7 @@ visibility 100
 magicmap grey
 end
 More
-object burning_fort_4
+Object burning_fort_4
 name burning fortress
 type 66
 face burning_fort.411

@@ -1,4 +1,4 @@
-object attache
+Object attache
 name attache case
 other_arch close_attache
 race scrolls
@@ -12,7 +12,7 @@ Str 10
 identified 1
 editable 128
 end
-object close_attache
+Object close_attache
 name close the attache case
 face close_attache.111
 type 121
