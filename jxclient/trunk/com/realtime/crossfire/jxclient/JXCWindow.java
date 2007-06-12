@@ -941,4 +941,3 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         jxcWindowRenderer.repaint();
     }
 }
-
