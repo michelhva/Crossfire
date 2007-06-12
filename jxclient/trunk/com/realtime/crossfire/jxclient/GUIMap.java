@@ -112,7 +112,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
                 need_update_cnt--;
                 if (need_update_cnt <= 0)
                     need_update = false;
-                MapSquare[][] map = com.realtime.crossfire.jxclient.Map.getMap();
+                CfMapSquare[][] map = CfMap.getMap();
                 for (int nz=0; nz<CrossfireServerConnection.NUM_LAYERS; nz++)
                 {
                     for (int ny=10; ny<CrossfireServerConnection.MAP_HEIGHT+10; ny++)
@@ -126,14 +126,14 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             }
         }
     }
-    protected void cleanSquare(Graphics g, MapSquare square)
+    protected void cleanSquare(Graphics g, CfMapSquare square)
     {
         g.setColor(Color.BLACK);
         g.fillRect(((square.getXPos()-10)*mysquaresize),
                    ((square.getYPos()-10)*mysquaresize),
                    mysquaresize, mysquaresize);
     }
-    protected void redrawSquare(Graphics g, MapSquare square, int nz)
+    protected void redrawSquare(Graphics g, CfMapSquare square, int nz)
     {
         if (square == null) //Sometimes happen. Not sure of the origin, but I think
                             //it is related to a scrolling faster than a non-cached
