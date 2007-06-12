@@ -46,6 +46,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
+    /** TODO: Remove when more options are implemented in the start screen gui. */
+    private static final boolean DISABLE_START_GUI = true;
+
     public final static int GUI_START      = 0;
     public final static int GUI_METASERVER = 1;
     public final static int GUI_MAIN       = 2;
@@ -324,7 +327,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch (id)
         {
             case GUI_START:
-                showGUIStart();
+                if (DISABLE_START_GUI)
+                {
+                    endRendering();
+                }
+                else
+                {
+                    showGUIStart();
+                }
                 break;
             case GUI_METASERVER:
                 showGUIMeta();
@@ -357,7 +367,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         try
         {
             initRendering();
-            initGUI(GUI_START);
+            initGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
             for(;;)
             {
                 synchronized(semaphore_drawing)
