@@ -71,11 +71,8 @@ public class GUICommandText extends GUIText implements KeyListener
 
                             for(int i=0; i<cmds.length;i++)
                             {
-                                list_parms = new ArrayList();
-                                list_parms.add(e.getSource());
-                                list_parms.add(cmds[i]);
                                 guicmd = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
-                                        list_parms);
+                                        new GUICommand.SendCommandParameter((JXCWindow)e.getSource(), cmds[i]));
                                 list_commands.add(guicmd);
                             }
                             ((JXCWindow)e.getSource()).createKeyBinding(list_commands);
