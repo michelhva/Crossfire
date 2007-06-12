@@ -648,7 +648,7 @@ main (int argc, char *argv[])
     keys_init(window_root);
     stats_init(window_root);
     config_init(window_root);
-
+    pickup_init(window_root);
 
     load_window_positions(window_root);
 
