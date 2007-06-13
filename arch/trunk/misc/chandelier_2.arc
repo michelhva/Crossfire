@@ -10,7 +10,6 @@ mina
 speed -0.30
 glow_radius 4
 no_pick 1
-editable 128
 color_fg yellow
 end
 
@@ -26,6 +25,5 @@ mina
 speed -0.30
 glow_radius 4
 no_pick 1
-editable 128
 color_fg yellow
 end

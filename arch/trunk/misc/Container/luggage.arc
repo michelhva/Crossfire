@@ -18,7 +18,6 @@ value 100000
 weight 20000
 container 500000
 Str 50
-editable 128
 identified 1
 magicmap brown
 name_pl The Luggages

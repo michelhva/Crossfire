@@ -7,7 +7,6 @@ material 18
 value 50
 container 1500
 weight 4000
-editable 128
 identified 1
 end
 Object close_mail

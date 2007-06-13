@@ -3,7 +3,6 @@ face thewheel_short.111
 name the wheel
 no_pick 1
 move_block all
-editable 128
 color_fg brown
 end
 
@@ -12,7 +11,6 @@ face thewheel_tall.x11
 name the wheel
 no_pick 1
 move_block all
-editable 128
 color_fg brown
 end
 More
@@ -21,7 +19,6 @@ y 1
 face thewheel_tall.x11
 name the wheel
 no_pick 1
-editable 128
 color_fg brown
 end
 
@@ -52,7 +49,6 @@ thewheel_short.111
 thewheel_short.111
 thewheel_short.111
 mina
-editable 128
 color_fg brown
 end
 
@@ -84,7 +80,6 @@ thewheel_tall.x11
 thewheel_tall.x11
 thewheel_tall.x11
 mina
-editable 128
 color_fg brown
 end
 More
@@ -115,6 +110,5 @@ thewheel_tall.x11
 thewheel_tall.x11
 thewheel_tall.x11
 mina
-editable 128
 color_fg brown
 end

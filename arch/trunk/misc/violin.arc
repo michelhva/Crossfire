@@ -22,7 +22,6 @@ type 35
 level 1
 value 20000
 weight 1800
-editable 2048
 client_type 721
 body_range -1
 skill use magic item

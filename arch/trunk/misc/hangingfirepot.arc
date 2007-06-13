@@ -10,7 +10,6 @@ mina
 speed -0.30
 glow_radius 3
 no_pick 1
-editable 128
 color_fg red
 end
 

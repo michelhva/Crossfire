@@ -17,7 +17,6 @@ attacktype 4
 speed -0.2
 glow_radius 2
 no_pick 1
-editable 128
 color_fg yellow
 end
 Object campfire_talking
@@ -33,7 +32,6 @@ campfire.114
 mina
 glow_radius 2
 no_pick 1
-editable 128
 color_fg yellow
 speed -0.3
 is_animated 1
