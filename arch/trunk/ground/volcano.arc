@@ -10,7 +10,6 @@ no_pick 1
 slow_move 15
 is_hilly 1
 speed -0.02
-editable 40
 move_block boat swim
 end
 More

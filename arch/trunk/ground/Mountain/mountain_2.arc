@@ -5,7 +5,6 @@ no_pick 1
 slow_move 20
 is_hilly 1
 blocksview 1
-editable 8
 is_floor 1
 magicmap grey
 end

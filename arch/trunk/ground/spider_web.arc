@@ -9,6 +9,5 @@ mina
 no_pick 1
 slow_move 7
 material 128
-editable 8
 visibility 50
 end

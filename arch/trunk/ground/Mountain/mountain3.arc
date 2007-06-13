@@ -9,6 +9,5 @@ no_pick 1
 blocksview 1
 is_hilly 1
 slow_move 5
-editable 8
 visibility 100
 end

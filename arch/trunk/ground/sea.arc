@@ -18,7 +18,6 @@ speed 0.2
 move_block all -boat
 no_pick 1
 is_water 1
-editable 8
 is_floor 1
 smoothlevel 20
 client_anim_sync 1
@@ -43,7 +42,6 @@ color_bg blue
 speed 0.2
 no_pick 1
 is_water 1
-editable 8
 is_floor 1
 smoothlevel 20
 client_anim_sync 1
@@ -57,7 +55,6 @@ speed 0.2
 move_block all
 no_pick 1
 is_water 1
-editable 8
 smoothlevel 20
 end
 Object sea_ne
@@ -69,7 +66,6 @@ speed 0.2
 move_block all
 no_pick 1
 is_water 1
-editable 8
 smoothlevel 20
 end
 Object sea_sw
@@ -81,7 +77,6 @@ speed 0.2
 move_block all
 no_pick 1
 is_water 1
-editable 8
 smoothlevel 20
 end
 Object sea_se
@@ -93,7 +88,6 @@ speed 0.2
 no_pick 1
 move_block all
 is_water 1
-editable 8
 smoothlevel 20
 end
 Object sea_nes
@@ -104,7 +98,6 @@ move_block all
 no_pick 1
 is_water 1
 visibility 100
-editable 8
 smoothlevel 255
 smoothface sea_7.111 empty_S.111
 end
@@ -116,7 +109,6 @@ move_block all
 no_pick 1
 is_water 1
 visibility 100
-editable 8
 smoothlevel 255
 smoothface sea_B.111 empty_S.111
 end
@@ -128,7 +120,6 @@ move_block all
 no_pick 1
 is_water 1
 visibility 100
-editable 8
 smoothlevel 255
 smoothface sea_D.111 empty_S.111
 end
@@ -140,7 +131,6 @@ move_block all
 no_pick 1
 is_water 1
 visibility 100
-editable 8
 smoothlevel 255
 smoothface sea_E.111 empty_S.111
 end
@@ -152,7 +142,6 @@ move_block all
 no_pick 1
 is_water 1
 visibility 100
-editable 8
 smoothlevel 255
 smoothface sea_E.111 empty_S.111
 end

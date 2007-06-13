@@ -39,5 +39,4 @@ changing 1
 visibility 100
 speed 0.001
 blocksview 1
-editable 8
 end

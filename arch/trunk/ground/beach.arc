@@ -9,7 +9,6 @@ slow_move 1
 is_wooded 0
 is_floor 1
 smoothlevel 10
-editable 8
 smoothface beach.111 beach_S.111
 move_block boat swim
 end
