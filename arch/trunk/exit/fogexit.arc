@@ -16,7 +16,6 @@ blank.111
 blank.111
 mina
 move_on walk fly_low
-editable 2
 visibility 100
 client_type 25012
 end

@@ -11,7 +11,6 @@ anim
 magic_portal.111
 magic_portal.112
 mina
-editable 2
 client_type 25011
 end
 Object magic_portal
@@ -87,6 +86,5 @@ mina
 is_used_up 1
 food 59
 changing 1
-editable 2
 client_type 25011
 end

@@ -7,7 +7,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 visibility 50
 end
 More
@@ -20,7 +19,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 x 1
 visibility 50
 end
@@ -34,7 +32,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 x 2
 visibility 50
 end
@@ -48,7 +45,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 y 1
 visibility 50
 end
@@ -62,7 +58,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 y 1
 x 1
 visibility 50
@@ -77,7 +72,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 y 1
 x 2
 visibility 50
@@ -92,7 +86,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 y 2
 visibility 50
 end
@@ -107,7 +100,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 y 2
 visibility 50
 end
@@ -121,7 +113,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-editable 50
 x 2
 y 2
 visibility 50
