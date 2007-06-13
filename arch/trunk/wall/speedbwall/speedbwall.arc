@@ -16,7 +16,6 @@ speed -0.03
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end

@@ -4,7 +4,6 @@ face cwall_0.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -14,7 +13,6 @@ face cwall_1.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -24,7 +22,6 @@ face cwall_2.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -34,7 +31,6 @@ face cwall_3.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -44,7 +40,6 @@ face cwall_4.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -54,7 +49,6 @@ face cwall_5.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -64,7 +58,6 @@ face cwall_6.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -74,7 +67,6 @@ face cwall_7.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -84,7 +76,6 @@ face cwall_8.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -94,7 +85,6 @@ face cwall_9.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -104,7 +94,6 @@ face cwall_A.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -114,7 +103,6 @@ face cwall_B.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -124,7 +112,6 @@ face cwall_C.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -134,7 +121,6 @@ face cwall_D.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -144,7 +130,6 @@ face cwall_E.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end
@@ -154,7 +139,6 @@ face cwall_F.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap grey
 end

@@ -30,7 +30,6 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 end
 Object weak_wall_6
@@ -65,7 +64,6 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 map_layer living
 end

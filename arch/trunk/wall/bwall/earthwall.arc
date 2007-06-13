@@ -28,5 +28,4 @@ blocksview 1
 alive 1
 level 1
 map_layer living
-editable 768
 end

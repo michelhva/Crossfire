@@ -31,7 +31,6 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 magicmap grey
 end
@@ -67,7 +66,6 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
-editable 768
 visibility 100
 magicmap grey
 end

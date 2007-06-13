@@ -5,7 +5,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -16,7 +15,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -27,7 +25,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -38,7 +35,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -49,7 +45,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -60,7 +55,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -71,7 +65,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -82,7 +75,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -93,7 +85,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -104,7 +95,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -115,7 +105,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -126,7 +115,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -137,7 +125,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -148,7 +135,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -159,7 +145,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -170,7 +155,6 @@ color_bg dark_orange
 no_pick 1
 move_block all
 blocksview 1
-editable 512
 visibility 100
 magicmap dark_orange
 end

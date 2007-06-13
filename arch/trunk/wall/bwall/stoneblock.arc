@@ -21,7 +21,6 @@ blocksview 1
 wc 5
 maxsp 0
 dam 5
-editable 768
 visibility 100
 end
 Object block_door_open
@@ -44,6 +43,5 @@ is_animated 0
 wc 0
 dam 5
 maxsp 1
-editable 768
 visibility 100
 end

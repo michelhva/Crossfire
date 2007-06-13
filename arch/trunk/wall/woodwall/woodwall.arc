@@ -5,7 +5,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_1_2
@@ -15,7 +14,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_1_4
@@ -25,7 +23,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_2_1
@@ -35,7 +32,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_1_1
@@ -45,7 +41,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_1_1
@@ -55,7 +50,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_2_2
@@ -65,7 +59,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_3_2
@@ -75,7 +68,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_1_3
@@ -85,7 +77,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_2_4
@@ -95,7 +86,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_1_2
@@ -105,7 +95,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_3_1
@@ -115,7 +104,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_2_2_3
@@ -125,7 +113,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_3_4
@@ -135,7 +122,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_3_3
@@ -145,7 +131,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object woodwall_4
@@ -155,6 +140,5 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end

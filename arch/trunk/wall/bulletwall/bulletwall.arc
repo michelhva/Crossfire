@@ -11,7 +11,6 @@ speed -0.4
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -29,7 +28,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -47,7 +45,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -65,7 +62,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -83,7 +79,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -101,7 +96,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -119,7 +113,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -137,7 +130,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -155,7 +147,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end

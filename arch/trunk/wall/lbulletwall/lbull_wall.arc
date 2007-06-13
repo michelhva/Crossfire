@@ -23,7 +23,6 @@ no_pick 1
 move_block all
 dam 29
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -42,7 +41,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -61,7 +59,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -80,7 +77,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -99,7 +95,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -118,7 +113,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -137,7 +131,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -156,7 +149,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
@@ -175,7 +167,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 magicmap yellow
 end
