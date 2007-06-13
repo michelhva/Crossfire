@@ -3,7 +3,6 @@ name burning collesium
 face burning_collesium.x11
 type 66
 no_pick 1
-editable 2
 client_type 25012
 end
 More

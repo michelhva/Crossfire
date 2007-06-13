@@ -30,7 +30,6 @@ color_fg black
 no_pick 1
 attacktype 4
 dam 75
-editable 8
 wc -30
 lifesave 1
 type 102

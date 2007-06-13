@@ -19,7 +19,6 @@ mina
 is_animated 1
 speed 0.5
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

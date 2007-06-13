@@ -11,7 +11,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_1_2
@@ -27,7 +26,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_1_4
@@ -43,7 +41,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_2_1
@@ -59,7 +56,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_1_1
@@ -75,7 +71,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_1_1
@@ -91,7 +86,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_2_2
@@ -107,7 +101,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_3_2
@@ -123,7 +116,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_1_3
@@ -139,7 +131,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_2_4
@@ -155,7 +146,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_1_2
@@ -171,7 +161,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_3_1
@@ -187,7 +176,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_2_2_3
@@ -203,7 +191,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_3_4
@@ -219,7 +206,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_3_3
@@ -235,7 +221,6 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end
 Object burningwall_4
@@ -251,6 +236,5 @@ color_fg brown
 move_block all
 no_pick 1
 blocksview 1
-editable 512
 visibility 100
 end

@@ -13,7 +13,6 @@ speed 0.2
 move_block all
 no_pick 1
 is_water 1
-editable 8
 is_floor 1
 end
 Object lava_sea1
@@ -30,6 +29,5 @@ color_bg blue
 speed 0.2
 no_pick 1
 is_water 1
-editable 8
 is_floor 1
 end
