@@ -6,7 +6,6 @@ last_sp 9
 face u_horn.111
 weight 10000
 value 500
-editable 1024
 magic 3
 anim
 u_horn.111
