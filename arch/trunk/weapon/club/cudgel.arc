@@ -11,7 +11,6 @@ weapontype 8
 dam 40
 weight 85000
 value 654
-editable 1024
 attacktype 1
 name_pl cudgels
 client_type 121

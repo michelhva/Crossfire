@@ -10,7 +10,6 @@ materialname bronze
 dam 4
 weight 15000
 value 11
-editable 1024
 attacktype 1
 weapontype 1
 name_pl long swords

@@ -23,7 +23,6 @@ material 80
 dam 6
 weight 15500
 value 23
-editable 1024
 attacktype 1
 magicmap grey
 name_pl throwing hammers

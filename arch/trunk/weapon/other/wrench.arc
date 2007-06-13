@@ -12,7 +12,6 @@ weight 3500
 value 10
 can_parry 1
 can_knockback 1
-editable 1024
 attacktype 1
 name_pl wrenches
 client_type 145

@@ -23,7 +23,6 @@ resist_ghosthit 100
 resist_deplete 30
 weight 9000
 value 220000
-editable 5120
 attacktype 257
 weapontype 4
 material 2

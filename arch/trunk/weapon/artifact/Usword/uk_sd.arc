@@ -20,7 +20,6 @@ Dex 2
 dam 40
 weight 111000
 value 1000000
-editable 1024
 attacktype 1
 weapontype 1
 magicmap grey

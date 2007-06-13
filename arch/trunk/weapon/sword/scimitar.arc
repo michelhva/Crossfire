@@ -8,7 +8,6 @@ material 2
 dam 8
 weight 15000
 value 42
-editable 1024
 can_impale 1
 can_cut 1
 can_parry 1

@@ -16,7 +16,6 @@ shovel_1.113
 shovel_1.114
 shovel_1.115
 mina
-editable 1024
 attacktype 1
 magicmap black
 name_pl shovels

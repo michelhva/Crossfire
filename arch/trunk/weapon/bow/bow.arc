@@ -10,7 +10,6 @@ weight 12000
 value 50
 sp 50
 no_strength 0
-editable 1024
 attacktype 1
 name_pl bows
 client_type 151

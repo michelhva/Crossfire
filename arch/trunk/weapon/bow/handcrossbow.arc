@@ -12,7 +12,6 @@ sp 30
 wc 1
 value 52800
 no_strength 1
-editable 1024
 attacktype 1
 name_pl crossbow pistols
 client_type 161
@@ -34,7 +33,6 @@ sp 30
 wc 1
 value 130050
 no_strength 1
-editable 1024
 attacktype 1
 name_pl crossbow pistols
 client_type 161

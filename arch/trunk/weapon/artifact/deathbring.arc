@@ -9,7 +9,6 @@ dam 15
 weight 30000
 value 55000
 magic 3
-editable 5120
 attacktype 65537
 magicmap black
 weapontype 1

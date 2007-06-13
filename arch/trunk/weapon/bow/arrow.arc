@@ -23,7 +23,6 @@ material 16
 food 20
 dam 2
 wc 1
-editable 1024
 attacktype 1
 name_pl arrows
 client_type 159

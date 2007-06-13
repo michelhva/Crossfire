@@ -19,7 +19,6 @@ sp 80
 wc 3
 value 1700000
 no_strength 0
-editable 5120
 attacktype 1
 magicmap black
 name_pl Energy Bows

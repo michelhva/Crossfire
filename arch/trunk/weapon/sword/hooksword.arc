@@ -9,7 +9,6 @@ dam 6
 ac 2
 weight 13000
 value 50
-editable 1024
 attacktype 1
 weapontype 4
 magicmap grey

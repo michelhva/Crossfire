@@ -22,7 +22,6 @@ material 2
 food 10
 dam 3
 wc 2
-editable 1024
 attacktype 1
 magicmap brown
 name_pl bolts

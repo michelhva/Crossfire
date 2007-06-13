@@ -22,7 +22,6 @@ weapontype 1
 resist_ghosthit 30
 resist_fear 30
 luck 1
-editable 5120
 magicmap black
 name_pl Grams
 client_type 100

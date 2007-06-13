@@ -11,7 +11,6 @@ weight 6000
 value 25000
 sp 47
 no_strength 0
-editable 1024
 attacktype 1
 name_pl reflex bows
 client_type 151
@@ -33,7 +32,6 @@ weight 6000
 value 65000
 sp 47
 no_strength 0
-editable 1024
 attacktype 1
 name_pl reflex bows
 client_type 151
@@ -57,7 +55,6 @@ weight 8000
 value 10000
 sp 42
 no_strength 0
-editable 1024
 attacktype 1
 name_pl reflex bows
 client_type 151
