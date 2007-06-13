@@ -11,6 +11,5 @@ materialname gold
 value 1000
 weight 1000
 identified 1
-editable 2048
 client_type 2005
 end

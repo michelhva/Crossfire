@@ -12,7 +12,6 @@ speed -0.1
 value 50
 weight 50
 material 64
-editable 2048
 identified 1
 name_pl pearls
 client_type 2011

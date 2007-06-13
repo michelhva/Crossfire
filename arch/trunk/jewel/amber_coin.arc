@@ -9,7 +9,6 @@ material 2
 materialname amberium
 value 500000
 weight 23
-editable 2048
 name_pl amberium coins
 client_type 2001
 end

@@ -12,6 +12,5 @@ materialname rock
 value 2000
 weight 20000
 identified 0
-editable 2048
 client_type 2005
 end
