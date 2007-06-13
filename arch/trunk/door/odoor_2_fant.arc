@@ -13,7 +13,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 
 Object odoor_2_fant_blue-yellow
@@ -31,7 +30,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 
 Object odoor_2_fant_brown
@@ -49,7 +47,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 
 Object odoor_2_fant_red-white
@@ -67,7 +64,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 
 Object odoor_2_fant_red-yellow
@@ -85,6 +81,5 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 
