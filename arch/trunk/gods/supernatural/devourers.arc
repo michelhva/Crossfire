@@ -49,5 +49,4 @@ endmsg
 exp 1
 weight 1
 randomitems Devourers
-editable 0
 end

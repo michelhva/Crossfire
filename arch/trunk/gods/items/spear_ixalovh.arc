@@ -22,7 +22,6 @@ resist_magic 10
 resist_fire 15
 attacktype 17
 startequip 1
-editable 5120
 magicmap red
 name_pl Ixalovh's spears
 client_type 136

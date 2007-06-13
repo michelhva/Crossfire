@@ -40,5 +40,4 @@ endmsg
 exp 1
 weight 100000
 randomitems Mostrai
-editable 0
 end

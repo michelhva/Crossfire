@@ -40,5 +40,4 @@ undead 1
 can_see_in_dark 1
 exp 1
 weight 1
-editable 0
 end

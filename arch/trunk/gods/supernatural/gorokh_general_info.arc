@@ -6,5 +6,4 @@ msg
 You are filled with a desire to slay all
 angels.
 endmsg
-editable 0
 end

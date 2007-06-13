@@ -31,5 +31,4 @@ can_use_armour 1
 can_use_shield 1
 exp 1
 weight 1
-editable 0
 end
