@@ -10,6 +10,5 @@ mina
 walk_on	1
 speed 0.50
 color_fg grey
-editable 2
 no_pick 1
 end
