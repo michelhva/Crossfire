@@ -6,6 +6,5 @@ magicmap black
 color_bg yellow
 visibility 100
 no_pick 1
-editable 2
 client_type 25012
 end

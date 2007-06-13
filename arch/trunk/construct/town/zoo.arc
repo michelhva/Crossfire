@@ -3,7 +3,6 @@ name zoo
 type 66
 face zoo.x11
 no_pick 1
-editable 2
 client_type 25012
 end
 More
