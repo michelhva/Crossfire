@@ -36,7 +36,6 @@ no_pick 1
 sp 8
 maxsp 1
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_1
@@ -55,7 +54,6 @@ activate_on_release 1
 no_pick 1
 sp 1
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_2
@@ -76,7 +74,6 @@ activate_on_release 1
 no_pick 1
 sp 2
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_3
@@ -95,7 +92,6 @@ activate_on_release 1
 no_pick 1
 sp 3
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_4
@@ -116,7 +112,6 @@ activate_on_release 1
 no_pick 1
 sp 4
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_5
@@ -135,7 +130,6 @@ activate_on_release 1
 no_pick 1
 sp 5
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_6
@@ -156,7 +150,6 @@ activate_on_release 1
 no_pick 1
 sp 6
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_7
@@ -175,7 +168,6 @@ activate_on_release 1
 no_pick 1
 sp 7
 move_on walk fly_low
-editable 32
 visibility 50
 end
 Object director_8
@@ -196,6 +188,5 @@ activate_on_release 1
 no_pick 1
 sp 8
 move_on walk fly_low
-editable 32
 visibility 50
 end

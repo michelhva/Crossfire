@@ -15,7 +15,6 @@ spinner.119
 spinner.11B
 spinner.11D
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -42,7 +41,6 @@ spinner.11B
 spinner.11C
 spinner.11D
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -69,7 +67,6 @@ spinner.11B
 spinner.11C
 spinner.11D
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -96,7 +93,6 @@ spinner.113
 spinner.112
 spinner.111
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -123,7 +119,6 @@ spinner.113
 spinner.112
 spinner.111
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -144,7 +139,6 @@ spinner.115
 spinner.113
 spinner.111
 mina
-editable 32
 visibility 50
 magicmap black
 end
@@ -163,7 +157,6 @@ spinner.117
 spinner.11A
 spinner.11D
 mina
-editable 32
 visibility 50
 magicmap black
 end

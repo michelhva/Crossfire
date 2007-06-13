@@ -23,7 +23,6 @@ blocksview 1
 wc 7
 maxsp 0
 dam 6
-editable 16
 visibility 50
 magicmap black
 end
@@ -50,7 +49,6 @@ is_animated 0
 wc 0
 dam 6
 maxsp 1
-editable 16
 visibility 50
 magicmap black
 end

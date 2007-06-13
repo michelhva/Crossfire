@@ -20,7 +20,6 @@ wc 0
 dam 5
 maxsp 1
 ac 1
-editable 16
 visibility 50
 magicmap black
 end
@@ -47,7 +46,6 @@ wc 7
 maxsp 0
 dam 5
 ac 1
-editable 16
 visibility 50
 magicmap black
 end
@@ -73,7 +71,6 @@ hp 0
 dam 5
 maxsp 1
 ac 1
-editable 16
 visibility 50
 magicmap black
 end
@@ -100,7 +97,6 @@ wc 7
 ac 1
 dam 5
 maxsp 0
-editable 16
 visibility 50
 magicmap black
 end
