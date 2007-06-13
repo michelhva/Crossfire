@@ -6,5 +6,4 @@ color_fg blue
 weight 5000
 value 3000
 material 128
-editable 2048
 end

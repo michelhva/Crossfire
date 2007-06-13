@@ -7,7 +7,6 @@ material 1
 value 70
 container 50000
 weight 1000
-editable 128
 identified 1
 name_pl boxes
 client_type 51
@@ -19,6 +18,5 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end

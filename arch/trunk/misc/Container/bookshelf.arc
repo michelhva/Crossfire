@@ -7,7 +7,6 @@ material 18
 value 50
 container 150000
 weight 80000
-editable 128
 identified 1
 name_pl bookshelves
 client_type 51
@@ -19,7 +18,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end
 Object bookshelf_left
@@ -31,7 +29,6 @@ material 18
 value 50
 container 150000
 weight 80000
-editable 128
 identified 1
 name_pl bookshelves
 client_type 51
@@ -43,7 +40,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end
 Object bookshelf_bottom
@@ -55,7 +51,6 @@ material 18
 value 50
 container 150000
 weight 80000
-editable 128
 identified 1
 name_pl bookshelves
 client_type 51
@@ -67,7 +62,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end
 Object bookshelf_right
@@ -79,7 +73,6 @@ material 18
 value 50
 container 150000
 weight 80000
-editable 128
 identified 1
 name_pl bookshelves
 client_type 51
@@ -91,6 +84,5 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end

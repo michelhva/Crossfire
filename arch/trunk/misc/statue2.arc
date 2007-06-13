@@ -4,6 +4,5 @@ type 98
 subtype 46
 no_pick 1
 move_block all
-editable 128
 color_fg black
 end

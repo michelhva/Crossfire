@@ -18,7 +18,6 @@ bagpipe.119
 bagpipe.11A
 mina
 speed -0.3
-editable 128
 weight 3000
 value 1000
 magicmap orange

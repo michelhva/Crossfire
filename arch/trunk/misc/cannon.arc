@@ -10,7 +10,6 @@ color_fg brown
 speed -0.4
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_1
@@ -26,7 +25,6 @@ sp 1
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_2
@@ -42,7 +40,6 @@ sp 2
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_3
@@ -58,7 +55,6 @@ sp 3
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_4
@@ -74,7 +70,6 @@ sp 4
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_5
@@ -90,7 +85,6 @@ sp 5
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_6
@@ -106,7 +100,6 @@ sp 6
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_7
@@ -122,7 +115,6 @@ sp 7
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end
 #
 Object cannon_8
@@ -138,5 +130,4 @@ sp 8
 speed -0.1
 move_block all
 blocksview 1
-editable 32
 end

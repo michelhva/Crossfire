@@ -11,6 +11,5 @@ no_pick 1
 move_block all
 glow_radius 3
 material 2
-editable 128
 color_fg red
 end

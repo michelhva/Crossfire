@@ -8,7 +8,6 @@ value 50
 weight 100
 container 150000
 Str 10
-editable 128
 identified 1
 magicmap brown
 name_pl sacks
@@ -21,6 +20,5 @@ type 121
 no_drop 1
 no_pick 1
 identified 1
-editable 0
 magicmap brown
 end

@@ -17,7 +17,6 @@ acidspit.181
 mina
 is_animated 0
 is_turnable 1
-editable 1024
 no_drop 1
 attacktype 65
 wc -10

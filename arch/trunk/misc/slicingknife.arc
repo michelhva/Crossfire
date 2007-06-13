@@ -8,7 +8,6 @@ materialname bronze
 skill one handed weapon
 weight 1000
 value 7
-editable 1024
 magicmap white
 name slicing knife
 name_pl slicing knives
@@ -29,7 +28,6 @@ material 2
 skill one handed weapon
 weight 1000
 value 14
-editable 1024
 magicmap white
 name slicing knife
 name_pl slicing knives

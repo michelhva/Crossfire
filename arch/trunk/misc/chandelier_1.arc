@@ -3,7 +3,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 end
 More
@@ -12,7 +11,6 @@ name grand chandelier
 face chandelier_1.x11
 
 no_pick 1
-editable 128
 color_fg yellow
 x 1
 end
@@ -22,7 +20,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 2
 end
@@ -32,7 +29,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 3
 end
@@ -42,7 +38,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 y 1
 end
@@ -52,7 +47,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 1
 y 1
@@ -63,7 +57,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 2
 y 1
@@ -74,7 +67,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 3
 y 1
@@ -85,7 +77,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 y 2
 end
@@ -95,7 +86,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 1
 y 2
@@ -106,7 +96,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 2
 y 2
@@ -117,7 +106,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 3
 y 2
@@ -128,7 +116,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 y 3
 end
@@ -138,7 +125,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 1
 y 3
@@ -149,7 +135,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 2
 y 3
@@ -160,7 +145,6 @@ name grand chandelier
 face chandelier_1.x11
 glow_radius 5
 no_pick 1
-editable 128
 color_fg yellow
 x 3
 y 3

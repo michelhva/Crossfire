@@ -16,7 +16,6 @@ chalice_sil.112
 chalice_sil.113
 chalice_sil.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
@@ -40,7 +39,6 @@ chalice_cop.112
 chalice_cop.113
 chalice_cop.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
@@ -64,7 +62,6 @@ chalice_bro.112
 chalice_bro.113
 chalice_bro.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
@@ -88,7 +85,6 @@ chalice_iro.112
 chalice_iro.113
 chalice_iro.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
@@ -112,7 +108,6 @@ chalice_tin.112
 chalice_tin.113
 chalice_tin.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
@@ -136,7 +131,6 @@ chalice_plat.112
 chalice_plat.113
 chalice_plat.114
 mina
-editable 128
 magicmap yellow
 name chalice
 name_pl chalices
