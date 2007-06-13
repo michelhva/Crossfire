@@ -6,5 +6,4 @@ color_bg red
 no_pick 1
 damned 1
 invisible 1
-editable 136
 end
