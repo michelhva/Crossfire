@@ -25,6 +25,5 @@ attacktype 1025
 speed 0.5
 exp 20
 weight 7
-editable 1
 magicmap brown
 end

@@ -60,7 +60,6 @@ speed -0.3
 weight 2000000
 run_away 2
 attack_movement 3
-editable 1
 color_fg black
 end
 More

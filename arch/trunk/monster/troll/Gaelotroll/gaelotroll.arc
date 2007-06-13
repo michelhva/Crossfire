@@ -45,7 +45,6 @@ move_type walk
 sleep 1
 Wis 13
 alive 1
-editable 1
 run_away 3
 can_use_weapon 1
 can_use_skill 1

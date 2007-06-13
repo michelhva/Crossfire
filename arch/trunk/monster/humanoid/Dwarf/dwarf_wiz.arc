@@ -29,6 +29,5 @@ speed 0.06
 weight 50000
 level 15
 can_cast_spell 1
-editable 1
 magicmap red
 end

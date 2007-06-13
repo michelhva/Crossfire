@@ -36,5 +36,4 @@ undead 1
 weight 50000
 no_pick 1
 can_see_in_dark 1
-editable 1
 end

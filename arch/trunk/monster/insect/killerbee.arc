@@ -25,5 +25,4 @@ Con 1
 maxhp 15
 run_away 75
 level 4
-editable 1
 end

@@ -17,6 +17,5 @@ alive 1
 level 1
 sp 130
 maxsp 1
-editable 1
 color_fg black
 end

@@ -25,5 +25,4 @@ exp 1
 weight 60000
 resist_cold 10
 attack_movement 2
-editable 1
 end

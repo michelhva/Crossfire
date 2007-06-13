@@ -21,7 +21,6 @@ exp 10000
 dam 200
 wc -100
 ac -100
-editable 1
 speed 0.150000
 level 50
 resist_physical 50

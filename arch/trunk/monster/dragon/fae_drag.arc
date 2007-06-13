@@ -40,5 +40,4 @@ speed -0.07
 weight 70000
 run_away 20
 attack_movement 1
-editable 1
 end

@@ -34,7 +34,6 @@ speed -0.12
 attack_movement 5
 run_away 20
 weight 300000
-editable 1
 pick_up 64
 resist_cold 40
 resist_poison 100

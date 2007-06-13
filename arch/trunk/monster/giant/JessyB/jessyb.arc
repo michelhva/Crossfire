@@ -48,7 +48,6 @@ maxhp 8000
 level 30
 speed 0.9
 weight 500000
-editable 1
 pick_up 24
 will_apply 2
 run_away 10

@@ -27,6 +27,5 @@ speed -0.1
 weight 45000
 run_away 30
 can_use_skill 1
-editable 1
 body_skill 1
 end

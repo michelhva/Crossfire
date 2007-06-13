@@ -27,7 +27,6 @@ Str -4
 Dex 3
 Con 4
 Wis -3
-editable 0
 magicmap blue
 body_range 1
 body_arm 2

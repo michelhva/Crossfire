@@ -89,5 +89,4 @@ resist_confusion 100
 attacktype 16
 resist_fire -100
 
-editable 1
 end

@@ -16,7 +16,6 @@ weight -1
 sp 127
 maxsp 1
 weight 2000000
-editable 1
 undead 1
 magicmap brown
 end

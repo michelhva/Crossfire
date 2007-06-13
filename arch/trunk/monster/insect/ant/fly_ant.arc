@@ -23,5 +23,4 @@ dam 5
 speed -0.3
 exp 20
 weight 7
-editable 1
 end

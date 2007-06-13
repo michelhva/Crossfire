@@ -28,5 +28,4 @@ weight 750000
 monster 1
 move_type walk
 no_pick 1
-editable 1
 end

@@ -23,7 +23,6 @@ no_pick 1
 invisible 1
 see_invisible 1
 maxsp 60
-editable 1
 will_apply 2
 pick_up 24
 can_use_scroll 1

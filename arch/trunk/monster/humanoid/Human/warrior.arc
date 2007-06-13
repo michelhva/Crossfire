@@ -31,7 +31,6 @@ Wis 0
 Cha -1
 Int -3
 Pow 0
-editable 0
 magicmap grey
 body_range 1
 body_arm 2

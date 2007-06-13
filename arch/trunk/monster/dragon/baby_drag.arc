@@ -35,5 +35,4 @@ no_pick 1
 speed -0.3
 weight 225000
 run_away 3
-editable 1
 end

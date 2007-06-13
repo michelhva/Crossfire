@@ -40,7 +40,6 @@ maxhp 1
 speed 0.01
 anim_speed 1
 exp 100
-editable 1
 magicmap green
 one_hit 1
 end

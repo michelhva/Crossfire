@@ -28,6 +28,5 @@ level 4
 weight 60000
 run_away 15
 attack_movement 3
-editable 1
 color_fg black
 end

@@ -15,5 +15,4 @@ level 1
 sp 1
 maxsp 1
 weight 90000
-editable 1
 end

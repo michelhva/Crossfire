@@ -21,7 +21,6 @@ speed -0.3
 exp 200
 weight 200
 level 6
-editable 1
 resist_fire 100
 resist_electricity 100
 

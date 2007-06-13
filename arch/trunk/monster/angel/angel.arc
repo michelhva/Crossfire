@@ -45,7 +45,6 @@ can_use_weapon 1
 can_use_ring 1
 attack_movement 4
 attacktype 1048577
-editable 1
 color_fg black
 body_skill 1
 body_torso 1

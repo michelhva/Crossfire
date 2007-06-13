@@ -28,6 +28,5 @@ resist_cold -100
 carrying 6000
 weight 30000
 is_animated 1
-editable 1
 magicmap brown
 end

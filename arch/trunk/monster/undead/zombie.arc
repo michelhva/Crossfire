@@ -29,5 +29,4 @@ attacktype 1
 resist_cold 50
 resist_fear 100
 can_see_in_dark 1
-editable 1
 end

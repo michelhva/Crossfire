@@ -28,7 +28,6 @@ no_pick 1
 speed -0.10
 can_cast_spell 1
 weight 90000
-editable 1
 end
 More
 Object fire_serpent_2

@@ -30,5 +30,4 @@ speed -0.3
 exp 20
 weight 1500
 attack_movement 3
-editable 1
 end

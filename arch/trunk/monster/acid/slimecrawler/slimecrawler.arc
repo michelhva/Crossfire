@@ -30,7 +30,6 @@ speed -0.08
 attack_movement 5
 hitback 1
 weight 150000
-editable 1
 pick_up 6
 resist_cold 50
 resist_physical 40

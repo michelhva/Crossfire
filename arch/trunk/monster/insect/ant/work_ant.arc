@@ -29,5 +29,4 @@ wc 12
 dam 3
 speed 0.1
 weight 5000
-editable 1
 end

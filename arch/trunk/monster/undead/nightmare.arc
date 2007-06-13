@@ -33,7 +33,6 @@ weight 5000
 no_pick 1
 run_away 15
 can_see_in_dark 1
-editable 1
 color_fg black
 one_hit 1
 end

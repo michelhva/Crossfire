@@ -14,7 +14,6 @@ no_pick 1
 speed 0.0002
 maxsp 1
 weight 2000
-editable 1
 undead 1
 magicmap white
 end

@@ -35,6 +35,5 @@ run_away 15
 can_cast_spell 1
 pick_up 1
 attack_movement 3
-editable 1
 body_range 1
 end

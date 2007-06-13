@@ -36,7 +36,6 @@ sp 30
 maxsp 30
 Pow 5
 weight 80000
-editable 1
 run_away 7
 attack_movement 3
 color_fg grey

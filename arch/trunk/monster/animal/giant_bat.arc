@@ -25,6 +25,5 @@ speed 0.3
 exp 100
 weight 5000
 attack_movement 3
-editable 1
 color_fg black
 end

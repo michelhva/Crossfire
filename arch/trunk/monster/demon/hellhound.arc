@@ -39,7 +39,6 @@ resist_fire 100
 resist_cold -10
 resist_magic 20
 weight 40000
-editable 1
 run_away 5
 attack_movement 5
 color_fg brown
@@ -95,7 +94,6 @@ sleep 1
 Wis 20
 see_invisible 1
 run_away 2
-editable 1
 magicmap red
 end
 

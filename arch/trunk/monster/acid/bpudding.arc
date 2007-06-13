@@ -29,7 +29,6 @@ attacktype 64
 resist_fire -100
 resist_blind 100
 hitback 1
-editable 1
 color_fg black
 end
 Object black_pudding_grow
@@ -66,7 +65,6 @@ attacktype 64
 resist_fire -100
 
 hitback 1
-editable 1
 color_fg black
 end
 Object black_pudding_split
@@ -98,6 +96,5 @@ attacktype 64
 resist_fire -100
 
 hitback 1
-editable 1
 color_fg black
 end

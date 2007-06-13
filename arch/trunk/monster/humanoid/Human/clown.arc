@@ -41,7 +41,6 @@ can_use_scroll 1
 can_cast_spell 1
 can_use_skill 1
 can_use_horn 1
-editable 1
 body_skill 1
 body_finger 2
 body_torso 1

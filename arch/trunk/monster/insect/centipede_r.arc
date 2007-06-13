@@ -29,6 +29,5 @@ maxhp 50
 Con 1
 level 4
 weight 5000
-editable 1
 magicmap red
 end

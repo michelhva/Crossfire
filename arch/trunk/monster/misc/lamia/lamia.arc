@@ -42,7 +42,6 @@ no_pick 1
 speed -0.30
 weight 100000
 run_away 5
-editable 1
 can_use_skill 1
 can_use_weapon 1
 can_use_shield 1

@@ -34,5 +34,4 @@ maxsp 50
 Pow 5
 Wis 10
 Con 2
-editable 1
 end

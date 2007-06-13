@@ -19,5 +19,4 @@ exp 50
 ac 12
 hp 30
 maxhp 30
-editable 1
 end

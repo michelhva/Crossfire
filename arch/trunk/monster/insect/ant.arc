@@ -19,6 +19,5 @@ wc 18
 dam 1
 speed 0.01
 weight 1000
-editable 1
 magicmap brown
 end

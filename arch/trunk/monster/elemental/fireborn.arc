@@ -35,7 +35,6 @@ resist_poison 100
 resist_cold -100
 resist_drain -100
 resist_ghosthit -100
-editable 0
 body_range 1
 body_neck 1
 body_skill 1

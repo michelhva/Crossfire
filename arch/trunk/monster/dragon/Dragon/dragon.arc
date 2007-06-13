@@ -42,7 +42,6 @@ no_pick 1
 speed -0.4
 weight 400000
 run_away 3
-editable 1
 magicmap red
 end
 More

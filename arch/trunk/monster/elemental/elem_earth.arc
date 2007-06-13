@@ -24,5 +24,4 @@ resist_cold 50
 resist_blind 100
 attacktype 1
 resist_fire -60
-editable 1
 end

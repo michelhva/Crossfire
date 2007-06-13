@@ -12,6 +12,5 @@ speed 0.015
 hp 100
 resist_physical 30
 
-editable 1
 magicmap black
 end

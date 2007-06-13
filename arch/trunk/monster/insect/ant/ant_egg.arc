@@ -21,5 +21,4 @@ speed 0.001
 generator 1
 is_used_up 1
 weight 5000
-editable 1
 end

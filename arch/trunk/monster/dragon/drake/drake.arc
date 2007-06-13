@@ -37,5 +37,4 @@ resist_blind 30
 attacktype 1025
 speed 0.42
 weight 70000
-editable 1
 end

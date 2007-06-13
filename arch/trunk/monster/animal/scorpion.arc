@@ -27,6 +27,5 @@ resist_confusion -100
 speed 0.1
 exp 70
 weight 500
-editable 1
 color_fg black
 end

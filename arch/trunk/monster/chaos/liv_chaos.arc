@@ -47,5 +47,4 @@ resist_drain -100
 resist_weaponmagic -100
 
 monster 1
-editable 1
 end

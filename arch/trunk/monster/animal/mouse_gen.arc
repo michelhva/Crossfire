@@ -13,5 +13,4 @@ maxhp 30
 ac 3
 exp 50
 maxsp 1
-editable 1
 end

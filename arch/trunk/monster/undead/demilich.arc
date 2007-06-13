@@ -47,7 +47,6 @@ exp 90000
 dam 20
 level 31
 weight 150000
-editable 1
 undead 1
 color_fg black
 end

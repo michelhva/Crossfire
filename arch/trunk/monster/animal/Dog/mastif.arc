@@ -29,7 +29,6 @@ wc 1
 level 8
 can_see_in_dark 1
 weight 60000
-editable 1
 run_away 5
 attack_movement 3
 color_fg brown

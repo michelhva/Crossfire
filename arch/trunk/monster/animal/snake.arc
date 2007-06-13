@@ -27,5 +27,4 @@ hp 5
 maxhp 5
 level 4
 weight 1000
-editable 1
 end

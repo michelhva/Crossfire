@@ -24,5 +24,4 @@ speed -0.2
 exp 1
 weight 1500
 attack_movement 2
-editable 1
 end

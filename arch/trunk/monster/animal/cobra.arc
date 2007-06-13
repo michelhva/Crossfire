@@ -26,7 +26,6 @@ hp 30
 maxhp 30
 level 5
 weight 20000
-editable 1
 end
 More
 Object cobra_2

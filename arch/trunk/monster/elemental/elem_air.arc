@@ -23,5 +23,4 @@ speed -0.3
 exp 250
 weight 200
 level 8
-editable 1
 end

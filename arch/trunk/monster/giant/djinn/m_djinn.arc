@@ -41,7 +41,6 @@ no_pick 1
 speed -0.35
 weight 300000
 run_away 5
-editable 1
 attacktype 3
 can_use_weapon 1
 can_use_shield 1

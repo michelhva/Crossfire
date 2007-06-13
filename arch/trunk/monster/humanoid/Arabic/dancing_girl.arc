@@ -27,7 +27,6 @@ unaggressive 1
 can_use_rod 1
 can_use_weapon 1
 can_use_bow 1
-editable 1
 body_arm 2
 body_range 1
 randomitems dancing_girl

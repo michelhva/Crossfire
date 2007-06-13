@@ -33,6 +33,5 @@ carrying 20000
 weight 140000
 randomitems throw_stnd
 is_animated 1
-editable 1
 magicmap brown
 end
