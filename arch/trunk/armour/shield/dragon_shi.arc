@@ -14,7 +14,6 @@ magic 2
 resist_fire 30
 weight 5000
 value 28000
-editable 5120
 identified 1
 body_arm -1
 item_power 2

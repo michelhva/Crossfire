@@ -29,7 +29,6 @@ ac 7
 resist_physical 15
 weight 25000
 value 300000
-editable 5120
 magicmap black
 body_arm -1
 item_power 10

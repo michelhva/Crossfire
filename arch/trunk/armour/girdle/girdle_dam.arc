@@ -15,7 +15,6 @@ dam 10
 weight 2500
 value 70000
 material 8
-editable 5120
 magicmap black
 body_waist -1
 item_power 1

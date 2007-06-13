@@ -12,6 +12,5 @@ Cha 1
 weight 5000
 value 3000
 material 128
-editable 1024
 body_torso -1
 end

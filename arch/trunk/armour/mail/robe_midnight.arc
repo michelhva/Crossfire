@@ -29,7 +29,6 @@ magic 5
 weight 5000
 value 100000
 material 128
-editable 5120
 body_torso -1
 item_power 25
 end

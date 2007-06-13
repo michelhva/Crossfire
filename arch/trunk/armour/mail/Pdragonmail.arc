@@ -20,7 +20,6 @@ exp 1
 resist_fire 50
 resist_electricity 30
 magic 4
-editable 5120
 identified 1
 magicmap black
 body_torso -1

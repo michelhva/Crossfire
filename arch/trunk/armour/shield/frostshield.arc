@@ -13,6 +13,5 @@ resist_cold 15
 weight 2000
 value 100
 material 18
-editable 1024
 magicmap blue
 end

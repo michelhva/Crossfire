@@ -18,7 +18,6 @@ resist_physical 35
 last_sp 18
 weight 15000
 value 8000
-editable 5120
 magicmap grey
 body_torso -1
 gen_sp_armour 5

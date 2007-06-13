@@ -17,7 +17,6 @@ weight 5000
 type 99
 material 8
 resist_physical 3
-editable 5120
 magicmap brown
 body_foot -2
 item_power 6

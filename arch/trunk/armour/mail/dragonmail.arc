@@ -14,7 +14,6 @@ weight 60000
 value 50000
 resist_fire 40
 magic 3
-editable 5120
 identified 1
 magicmap black
 body_torso -1
@@ -37,7 +36,6 @@ weight 60000
 value 50000
 resist_electricity 40
 magic 3
-editable 5120
 identified 1
 magicmap black
 body_torso -1
@@ -60,7 +58,6 @@ weight 60000
 value 50000
 resist_cold 40
 magic 3
-editable 5120
 identified 1
 magicmap black
 body_torso -1
