@@ -8,8 +8,6 @@ import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferStrategy;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author Andreas Kirschbaum
@@ -31,14 +29,14 @@ public class JXCWindowRenderer
      */
     private boolean currentDialogChanged = false;
 
-    private List<GUIElement> currentDialog = null;
+    private Gui currentDialog = null;
 
     /**
      * If set, {@link #currentGui} has changed.
      */
     private boolean currentGuiChanged = false;
 
-    private List<GUIElement> currentGui = new ArrayList<GUIElement>();
+    private Gui currentGui = new Gui();
 
     /**
      * If set, force a full repaint.
@@ -149,22 +147,7 @@ public class JXCWindowRenderer
     private void redrawGUIBasic(final Graphics g)
     {
         currentGuiChanged = false;
-        for (final GUIElement element : currentGui)
-        {
-            if (element.isVisible())
-            {
-                if (element instanceof GUIMap)
-                {
-                    final GUIMap mel = (GUIMap)element;
-                    mel.redraw(g);
-                }
-                else
-                {
-                    g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
-                }
-                element.resetChanged();
-            }
-        }
+        currentGui.redraw(g, jxcWindow);
     }
 
     private void redrawGUIDialog(final Graphics g)
@@ -172,21 +155,7 @@ public class JXCWindowRenderer
         currentDialogChanged = false;
         if (currentDialog != null)
         {
-            for (final GUIElement element : currentDialog)
-            {
-                if (element.isVisible())
-                {
-                    if (element instanceof GUIMap)
-                    {
-                        final GUIMap mel = (GUIMap)element;
-                        final Graphics gg = element.getBuffer().createGraphics();
-                        mel.redraw(gg);
-                        gg.dispose();
-                    }
-                    g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
-                    element.resetChanged();
-                }
-            }
+            currentDialog.redrawElements(g, jxcWindow);
         }
     }
 
@@ -196,24 +165,24 @@ public class JXCWindowRenderer
         g.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
     }
 
-    public void setCurrentDialog(final List<GUIElement> dialog)
+    public void setCurrentDialog(final Gui dialog)
     {
         currentDialog = dialog;
         currentDialogChanged = true;
     }
 
-    public List<GUIElement> getCurrentDialog()
+    public Gui getCurrentDialog()
     {
         return currentDialog;
     }
 
-    public void setCurrentGui(final List<GUIElement> gui)
+    public void setCurrentGui(final Gui gui)
     {
         currentGui = gui;
         currentGuiChanged = true;
     }
 
-    public List<GUIElement> getCurrentGui()
+    public Gui getCurrentGui()
     {
         return currentGui;
     }
@@ -235,23 +204,14 @@ public class JXCWindowRenderer
             return true;
         }
 
-        for (final GUIElement element : currentGui)
+        if (currentGui.needRedraw())
         {
-            if (element.isVisible() && element.hasChanged())
-            {
                 return true;
-            }
         }
 
-        if (currentDialog != null)
+        if (currentDialog != null && currentDialog.needRedraw())
         {
-            for (final GUIElement element : currentDialog)
-            {
-                if (element.isVisible() && element.hasChanged())
-                {
-                    return true;
-                }
-            }
+            return true;
         }
 
         return false;

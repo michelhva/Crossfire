@@ -29,16 +29,10 @@ import java.util.List;
  */
 public interface JXCSkin
 {
-    public List<GUIElement> getDialogKeyBind(CrossfireServerConnection s, JXCWindow p)
-            throws JXCSkinException;
-    public List<GUIElement> getDialogQuery(CrossfireServerConnection s, JXCWindow p)
-            throws JXCSkinException;
-    public List<GUIElement> getDialogBook(CrossfireServerConnection s, JXCWindow p, int booknr)
-            throws JXCSkinException;
-    public List<GUIElement> getMainInterface(CrossfireServerConnection s, JXCWindow p)
-            throws JXCSkinException;
-    public List<GUIElement> getMetaInterface(CrossfireServerConnection s, JXCWindow p)
-            throws JXCSkinException;
-    public List<GUIElement> getStartInterface(CrossfireServerConnection s, JXCWindow p)
-            throws JXCSkinException;
+    public Gui getDialogKeyBind(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    public Gui getDialogQuery(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    public Gui getDialogBook(CrossfireServerConnection s, JXCWindow p, int booknr) throws JXCSkinException;
+    public Gui getMainInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    public Gui getMetaInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    public Gui getStartInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
 }

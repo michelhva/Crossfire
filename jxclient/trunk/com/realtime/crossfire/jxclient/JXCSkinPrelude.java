@@ -33,13 +33,12 @@ import java.util.List;
  */
 public class JXCSkinPrelude implements JXCSkin
 {
-    private List<GUIElement> mygui            = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
+    private final Gui mygui            = new Gui();
+    private final Gui mydialog_query   = new Gui();
+    private final Gui mydialog_book    = new Gui();
+    private final Gui mydialog_keybind = new Gui();
 
-    public List<GUIElement> getDialogKeyBind(CrossfireServerConnection myserver, JXCWindow p)
-            throws JXCSkinException
+    public Gui getDialogKeyBind(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mydialog_keybind.clear();
 
@@ -108,8 +107,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_keybind;
     }
-    public List<GUIElement> getDialogQuery(CrossfireServerConnection myserver, JXCWindow p)
-            throws JXCSkinException
+    public Gui getDialogQuery(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mydialog_query.clear();
 
@@ -239,8 +237,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         return mydialog_query;
     }
-    public List<GUIElement> getMainInterface(CrossfireServerConnection myserver, JXCWindow p)
-            throws JXCSkinException
+    public Gui getMainInterface(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mygui.clear();
 
@@ -1698,8 +1695,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public List<GUIElement> getMetaInterface(CrossfireServerConnection myserver, JXCWindow p)
-            throws JXCSkinException
+    public Gui getMetaInterface(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mygui.clear();
         List<GUICommand> command_metaconnect = new ArrayList<GUICommand>();
@@ -1868,8 +1864,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public List<GUIElement> getStartInterface(CrossfireServerConnection myserver, JXCWindow p)
-            throws JXCSkinException
+    public Gui getStartInterface(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mygui.clear();
         List<GUICommand> command_startmenu_meta = new ArrayList<GUICommand>();
@@ -1950,9 +1945,7 @@ public class JXCSkinPrelude implements JXCSkin
         return mygui;
     }
 
-    public List<GUIElement> getDialogBook(CrossfireServerConnection myserver, JXCWindow p,
-                                                       int booknr)
-            throws JXCSkinException
+    public Gui getDialogBook(CrossfireServerConnection myserver, JXCWindow p, int booknr) throws JXCSkinException
     {
         mydialog_book.clear();
         List<GUICommand> command_book_close = new ArrayList<GUICommand>();
