@@ -3,7 +3,6 @@ name village
 type 66
 face jcity_0.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -13,7 +12,6 @@ name small town
 type 66
 face jcity_2.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -33,7 +31,6 @@ name small town
 type 66
 face jcity_4.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -53,7 +50,6 @@ name medium town
 type 66
 face jcity_6.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -94,7 +90,6 @@ name city
 type 66
 face jcity_6.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -156,7 +151,6 @@ name city
 type 66
 face jcity_6.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -218,7 +212,6 @@ name large city
 type 66
 face jcity_6.111
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

@@ -5,7 +5,6 @@ face volcano_hi.x11
 no_pick 1
 slow_move 20
 blocksview 1
-editable 2
 visibility 100
 magicmap brown
 client_type 25012
