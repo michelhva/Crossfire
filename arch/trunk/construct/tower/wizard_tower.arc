@@ -9,7 +9,6 @@ wizard_tower.x13
 mina
 speed -0.3000
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

@@ -5,7 +5,6 @@ type 67
 walk_on 1
 no_pick 1
 magicmap grey
-editable 2
 end
 Object s_bridge2a
 name bridge
@@ -14,7 +13,6 @@ type 67
 walk_on 1
 no_pick 1
 magicmap grey
-editable 2
 end
 Object s_bridge2b
 name bridge
@@ -23,5 +21,4 @@ type 67
 walk_on 1
 no_pick 1
 magicmap grey
-editable 2
 end

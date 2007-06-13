@@ -4,7 +4,6 @@ face stronghold_east.x11
 name honrui
 no_pick 1
 move_block all
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
