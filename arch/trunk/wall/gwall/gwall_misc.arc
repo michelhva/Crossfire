@@ -6,7 +6,6 @@ color_bg dark_orange
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -17,7 +16,6 @@ color_bg dark_orange
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -28,7 +26,6 @@ color_bg dark_orange
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap dark_orange
 end
@@ -39,7 +36,6 @@ color_bg dark_orange
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap dark_orange
 end

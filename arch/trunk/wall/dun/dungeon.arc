@@ -3,7 +3,6 @@ face dun_0.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -12,7 +11,6 @@ face dun_1.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -21,7 +19,6 @@ face dun_2.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -30,7 +27,6 @@ face dun_3.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -39,7 +35,6 @@ face dun_4.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -48,7 +43,6 @@ face dun_5.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -57,7 +51,6 @@ face dun_4.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -66,7 +59,6 @@ face dun_5.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -75,7 +67,6 @@ face dun_8.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -84,7 +75,6 @@ face dun_8.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -93,7 +83,6 @@ face dun_A.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -102,7 +91,6 @@ face dun_A.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -111,7 +99,6 @@ face dun_C.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -120,7 +107,6 @@ face dun_C.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -129,7 +115,6 @@ face dun_C.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end
@@ -138,7 +123,6 @@ face dun_C.111
 blocksview 1
 no_pick 1
 move_block all
-editable 512
 visibility 100
 magicmap black
 end

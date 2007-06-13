@@ -5,7 +5,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 end
 Object redguard_house_2
@@ -15,7 +14,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 end
 Object redguard_house_3
@@ -25,7 +23,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 end
 Object redguard_house_1
@@ -35,6 +32,5 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 end

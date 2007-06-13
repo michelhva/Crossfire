@@ -16,7 +16,6 @@ ac 3
 exp 50
 resist_fire 100
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_1
@@ -35,7 +34,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_2
@@ -54,7 +52,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_3
@@ -73,7 +70,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_4
@@ -92,7 +88,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_5
@@ -111,7 +106,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_6
@@ -130,7 +124,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_7
@@ -149,7 +142,6 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end
 Object firewall_8
@@ -168,6 +160,5 @@ speed -0.02
 no_pick 1
 move_block all
 blocksview 1
-editable 32
 visibility 100
 end

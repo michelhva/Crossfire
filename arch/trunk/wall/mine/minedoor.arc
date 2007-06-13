@@ -26,7 +26,6 @@ dam 10
 value 1
 maxhp 50
 hp 50
-editable 256
 visibility 100
 magicmap grey
 end
@@ -90,7 +89,6 @@ dam 10
 value 1
 maxhp 50
 hp 50
-editable 256
 visibility 100
 magicmap grey
 end

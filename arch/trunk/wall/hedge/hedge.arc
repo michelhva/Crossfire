@@ -4,7 +4,6 @@ face hedge_0.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -14,7 +13,6 @@ face hedge_1.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -24,7 +22,6 @@ face hedge_2.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -34,7 +31,6 @@ face hedge_3.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -44,7 +40,6 @@ face hedge_4.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -54,7 +49,6 @@ face hedge_5.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -64,7 +58,6 @@ face hedge_6.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -74,7 +67,6 @@ face hedge_7.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -84,7 +76,6 @@ face hedge_8.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -94,7 +85,6 @@ face hedge_9.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -104,7 +94,6 @@ face hedge_A.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -114,7 +103,6 @@ face hedge_B.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -124,7 +112,6 @@ face hedge_C.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -134,7 +121,6 @@ face hedge_D.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -144,7 +130,6 @@ face hedge_E.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end
@@ -154,7 +139,6 @@ face hedge_F.111
 blocksview 1
 no_pick 1
 is_wooded 1
-editable 512
 visibility 100
 magicmap black
 end

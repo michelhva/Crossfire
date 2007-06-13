@@ -4,7 +4,6 @@ face westcwindow_0.111
 color_fg brown
 move_block all
 no_pick 1
-editable 768
 visibility 100
 end
 Object westcwall_win2
@@ -13,6 +12,5 @@ face westcwindow_1.111
 color_fg brown
 move_block all
 no_pick 1
-editable 768
 visibility 100
 end

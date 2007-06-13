@@ -5,7 +5,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 client_type 25012
 end
@@ -16,7 +15,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 client_type 25012
 end
@@ -27,7 +25,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 client_type 25012
 end
@@ -38,7 +35,6 @@ no_pick 1
 move_on walk fly_low
 type 66
 blocksview 1
-editable 770
 magicmap grey
 client_type 25012
 end
