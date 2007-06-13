@@ -13,7 +13,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_1_1
 name door
@@ -30,7 +29,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_1_3
 name door
@@ -47,7 +45,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_2_1
 name door
@@ -64,7 +61,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_1_2
 name door
@@ -81,7 +77,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_1_1
 name door
@@ -98,7 +93,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_2_2
 name door
@@ -115,7 +109,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_3_2
 name door
@@ -132,7 +125,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_1_4
 name door
@@ -149,7 +141,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_2_4
 name door
@@ -166,7 +157,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_1_2
 randomitems door
@@ -183,7 +173,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_3_1
 randomitems door
@@ -200,7 +189,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_2_2_3
 randomitems door
@@ -217,7 +205,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_3_4
 randomitems door
@@ -234,7 +221,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_3_3
 randomitems door
@@ -251,7 +237,6 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
 Object door_4
 randomitems door
@@ -268,5 +253,4 @@ material 16
 no_pick 1
 alive 1
 level 1
-editable 16
 end
