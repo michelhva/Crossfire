@@ -9,7 +9,6 @@ resist_paralyze 50
 resist_slow 30
 resist_fear 50
 startequip 1
-editable 2048
 nrof 1
 msg
   This wonderful charm will absorb many
