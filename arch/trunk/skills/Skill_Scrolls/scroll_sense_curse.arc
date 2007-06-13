@@ -9,7 +9,6 @@ type 130
 material 1
 value 6500
 weight 200
-editable 2048
 sp 14
 identified 1
 name_pl scrolls of sense curse

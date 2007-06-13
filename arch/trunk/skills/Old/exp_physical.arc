@@ -7,5 +7,4 @@ level 1
 exp 0
 Con 1
 Str 1
-editable 0
 end
