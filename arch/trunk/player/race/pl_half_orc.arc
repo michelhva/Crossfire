@@ -40,7 +40,6 @@ can_use_armour 1
 can_use_weapon 1
 can_see_in_dark 1
 path_repelled 65536
-editable 0
 Str 2
 Dex 1
 Con 2

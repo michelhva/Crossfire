@@ -22,7 +22,6 @@ Con -3
 Int 3
 Wis -2
 Pow 3
-editable 0
 end
 Object sorcerer_hat
 name Sorcerer's hat

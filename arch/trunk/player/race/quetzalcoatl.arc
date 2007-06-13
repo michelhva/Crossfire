@@ -63,7 +63,6 @@ Con 6
 Wis -8
 Int -8
 Pow 6
-editable 0
 body_range 1
 body_arm 2
 body_neck 1

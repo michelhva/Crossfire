@@ -52,7 +52,6 @@ Con 6
 Wis -8
 Int -3
 Pow 5
-editable 0
 # can't use bows anymore with this, so let him use cloaks,
 # bracers, and girdles.
 body_range 1

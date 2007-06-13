@@ -46,7 +46,6 @@ Str -4
 Dex 3
 Con 4
 Wis -3
-editable 0
 magicmap blue
 # Arguably, halfings should have a body_small_torso or something.
 body_range 1

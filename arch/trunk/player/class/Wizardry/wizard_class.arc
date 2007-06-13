@@ -20,5 +20,4 @@ Wis 0
 Int 3
 Pow 3
 Cha 0
-editable 0
 end

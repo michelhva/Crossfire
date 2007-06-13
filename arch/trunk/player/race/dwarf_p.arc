@@ -57,7 +57,6 @@ Int -2
 Wis -1
 Pow -2
 Cha -1
-editable 0
 magicmap grey
 body_range 1
 body_arm 2
