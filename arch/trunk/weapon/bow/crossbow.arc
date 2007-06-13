@@ -11,7 +11,6 @@ sp 40
 wc 1
 value 75
 no_strength 1
-editable 1024
 attacktype 1
 name_pl crossbows
 client_type 161

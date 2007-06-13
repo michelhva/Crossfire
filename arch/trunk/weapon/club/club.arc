@@ -8,7 +8,6 @@ dam 6
 weapontype 8
 weight 9000
 value 10
-editable 1024
 attacktype 1
 magicmap khaki
 name_pl clubs

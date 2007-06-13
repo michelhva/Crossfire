@@ -24,7 +24,6 @@ weight 32000
 value 90000
 slaying demon
 resist_fire 30
-editable 5120
 attacktype 1
 weapontype 1
 magicmap black

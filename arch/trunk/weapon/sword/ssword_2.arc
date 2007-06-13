@@ -8,7 +8,6 @@ dam 4
 weight 8000
 value 35
 type 15
-editable 1024
 attacktype 1
 weapontype 5
 magicmap white

@@ -17,7 +17,6 @@ magic 3
 dam 20
 material 18
 value 80000
-editable 5120
 attacktype 1
 weapontype 3
 magicmap black

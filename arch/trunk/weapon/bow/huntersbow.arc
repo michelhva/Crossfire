@@ -11,7 +11,6 @@ weight 2000
 value 50
 sp 20
 no_strength 0
-editable 1024
 attacktype 1
 name_pl hunter's bows
 client_type 150

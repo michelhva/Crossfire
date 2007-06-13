@@ -9,7 +9,6 @@ material 18
 dam 2
 weight 5500
 value 25
-editable 1024
 attacktype 1
 magicmap brown
 name_pl nunchacus

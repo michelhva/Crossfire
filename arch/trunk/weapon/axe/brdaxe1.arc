@@ -19,7 +19,6 @@ material 18
 dam 6
 weight 4000
 value 25
-editable 1024
 attacktype 1
 weapontype 3
 is_animated 0

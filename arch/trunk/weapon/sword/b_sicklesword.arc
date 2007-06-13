@@ -8,7 +8,6 @@ materialname bronze
 dam 4
 weight 8600
 value 330
-editable 1024
 attacktype 1
 weapontype 1
 magicmap white

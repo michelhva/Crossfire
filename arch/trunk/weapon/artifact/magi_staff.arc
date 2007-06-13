@@ -22,7 +22,6 @@ wc 5
 magic 5
 weight 4500
 value 500000
-editable 5120
 magicmap black
 name_pl Staves of the Magi
 client_type 100

@@ -21,7 +21,6 @@ magic 3
 resist_cold 30
 attacktype 18
 Pow 3
-editable 5120
 magicmap khaki
 name_pl Frost Hammers
 client_type 100

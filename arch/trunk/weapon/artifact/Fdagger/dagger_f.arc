@@ -21,7 +21,6 @@ materialname glacium
 value 50000
 weight 2000
 last_sp 5
-editable 5120
 magicmap grey
 client_type 100
 body_arm -1

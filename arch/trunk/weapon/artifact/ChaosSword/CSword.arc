@@ -22,7 +22,6 @@ mina
 speed 0.3
 material 2
 weight 20000
-editable 5120
 Str 1
 Con 1
 Dex 1

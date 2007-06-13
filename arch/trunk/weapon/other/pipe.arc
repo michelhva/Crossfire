@@ -10,7 +10,6 @@ weapontype 8
 dam 5
 weight 6500
 value 10
-editable 1024
 can_knockback 1
 can_parry 1
 attacktype 1

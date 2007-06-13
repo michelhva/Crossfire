@@ -22,7 +22,6 @@ dam 11
 weight 23000
 value 68
 color_fg green
-editable 1024
 attacktype 1
 weapontype 5
 name_pl tridents

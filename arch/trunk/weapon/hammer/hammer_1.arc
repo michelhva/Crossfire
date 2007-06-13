@@ -8,7 +8,6 @@ dam 7
 weapontype 7
 weight 17500
 value 25
-editable 1024
 attacktype 1
 magicmap brown
 name_pl hammers

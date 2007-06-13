@@ -10,7 +10,6 @@ ac 1
 resist_physical 2
 weight 2000
 value 80
-editable 1024
 attacktype 1
 weapontype 5
 magicmap black
@@ -31,7 +30,6 @@ ac 1
 resist_physical 2
 weight 2000
 value 80
-editable 1024
 attacktype 1
 weapontype 5
 magicmap black

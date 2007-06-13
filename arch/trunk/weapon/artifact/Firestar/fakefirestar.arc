@@ -21,7 +21,6 @@ dam 23
 attacktype 5
 value 400000
 weight 40000
-editable 5120
 name_pl Firestars
 client_type 100
 body_arm -2

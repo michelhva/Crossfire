@@ -9,7 +9,6 @@ material 2
 dam 8
 weight 15000
 value 45
-editable 1024
 attacktype 1
 weapontype 1
 name_pl long swords
