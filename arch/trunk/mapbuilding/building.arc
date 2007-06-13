@@ -25,7 +25,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_building
-editable 64
 end
 Object shop_building_fant
 name tiles
@@ -36,7 +35,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_building_fant
-editable 64
 end
 Object shop_building_west
 name tiles
@@ -47,7 +45,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_building_west
-editable 64
 end
 Object shop_building_east
 name tiles
@@ -58,7 +55,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_building_east
-editable 64
 end
 Object shop_building_pupland
 name tiles
@@ -69,7 +65,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shop_building_pupland
-editable 64
 end
 Object building_woodfloor
 name Wood floor material
