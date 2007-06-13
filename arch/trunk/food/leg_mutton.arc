@@ -7,7 +7,6 @@ type 6
 material 32
 value 50
 weight 1500
-editable 2048
 identified 1
 name_pl legs of mutton
 name_pl leg of mutton

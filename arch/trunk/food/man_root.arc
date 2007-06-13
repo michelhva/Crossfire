@@ -8,7 +8,6 @@ type 6
 material 32
 value 300
 weight 300
-editable 2048
 identified 1
 name_pl mandrake roots
 client_type 601

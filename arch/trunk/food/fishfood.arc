@@ -8,7 +8,6 @@ type 6
 material 32
 value 4
 weight 3500
-editable 2048
 identified 1
 name_pl fishes
 client_type 601

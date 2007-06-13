@@ -7,7 +7,6 @@ type 6
 material 32
 value 1
 weight 650
-editable 2048
 identified 1
 magicmap red
 name_pl orc chops

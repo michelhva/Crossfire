@@ -7,7 +7,6 @@ nrof 1
 type 7
 material 32
 weight 6500
-editable 2048
 identified 0
 name_pl boozes
 client_type 611
@@ -27,7 +26,6 @@ type 7
 material 36
 value 10
 weight 1000
-editable 2048
 identified 0
 name_pl bottles of wine
 client_type 611
@@ -46,7 +44,6 @@ type 7
 material 36
 value 2
 weight 1000
-editable 2048
 identified 0
 name_pl glasses of wine
 client_type 611
@@ -65,7 +62,6 @@ type 7
 material 32
 value 5
 weight 1500
-editable 2048
 name water
 name_pl waters
 client_type 611
