@@ -38,5 +38,4 @@ endmsg
 exp 1
 weight 100000
 randomitems Valkyrie
-editable 0
 end

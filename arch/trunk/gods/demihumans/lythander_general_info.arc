@@ -6,5 +6,4 @@ msg
 You are filled with a desire to slay all
 goblins and trolls.
 endmsg
-editable 0
 end

@@ -6,5 +6,4 @@ msg
 You feel a bond with all things which are
 made of fire.
 endmsg
-editable 0
 end

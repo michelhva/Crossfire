@@ -43,5 +43,4 @@ endmsg
 exp 1
 weight 500000
 randomitems Lythander
-editable 0
 end

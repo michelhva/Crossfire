@@ -39,5 +39,4 @@ endmsg
 exp 1
 weight 100000
 randomitems Valriel
-editable 0
 end

@@ -42,5 +42,4 @@ endmsg
 exp 1
 weight 400000
 randomitems Gorokh
-editable 0
 end
