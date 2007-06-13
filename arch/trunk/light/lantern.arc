@@ -10,7 +10,6 @@ type 82
 nrof 1
 glow_radius 0
 is_lightable 1
-editable 128
 magicmap brown
 name_pl lanterns
 client_type 1102
@@ -28,7 +27,6 @@ weight 1500
 speed 0.01
 glow_radius 5
 is_lightable 1
-editable 128
 magicmap orange
 name_pl lanterns
 client_type 1102
