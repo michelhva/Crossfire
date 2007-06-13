@@ -6,5 +6,4 @@ color_bg khaki
 type 58
 no_pick 1
 is_floor 1
-editable 8
 end

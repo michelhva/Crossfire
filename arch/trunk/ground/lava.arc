@@ -29,7 +29,6 @@ attacktype 4
 duration 60
 dam 3
 is_floor 1
-editable 8
 move_block boat swim
 end
 #
@@ -62,7 +61,6 @@ smoothface lava.115 lava_S.115
 attacktype 4
 hp 1
 dam 3
-editable 8
 is_floor 1
 move_block boat swim
 end

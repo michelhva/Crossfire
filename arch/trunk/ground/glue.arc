@@ -8,7 +8,6 @@ mina
 no_pick 1
 slow_move 4
 material 32
-editable 8
 visibility 50
 magicmap khaki
 end

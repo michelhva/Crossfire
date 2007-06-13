@@ -11,7 +11,6 @@ slow_move 5
 smoothlevel 129
 smoothface jungle_1.111 jungle_S.111
 is_wooded 1
-editable 8
 is_floor 1
 move_block boat swim
 end

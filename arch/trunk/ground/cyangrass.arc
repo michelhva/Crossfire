@@ -8,7 +8,6 @@ color_fg green
 no_pick 1
 slow_move 1
 is_wooded 1
-editable 8
 smoothlevel 45
 smoothface cyangrass.111 cyangrass_S.111
 end
@@ -22,7 +21,6 @@ color_fg green
 no_pick 1
 slow_move 1
 is_wooded 1
-editable 8
 smoothlevel 45
 smoothface cyangrass.111 cyangrass_S.111
 end

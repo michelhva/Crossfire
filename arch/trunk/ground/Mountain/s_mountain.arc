@@ -9,6 +9,5 @@ no_pick 1
 blocksview 1
 is_hilly 1
 slow_move 8
-editable 8
 is_floor 1
 end

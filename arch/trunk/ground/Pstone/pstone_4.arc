@@ -6,5 +6,4 @@ is_floor 1
 color_fg brown
 slow_move 1
 is_hilly 1
-editable 8
 end

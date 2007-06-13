@@ -40,5 +40,4 @@ visibility 100
 generator 1
 speed 0.001
 blocksview 1
-editable 8
 end
