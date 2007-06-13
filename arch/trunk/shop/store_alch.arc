@@ -5,7 +5,6 @@ color_fg red
 type 66
 no_pick 1
 move_block all
-editable 64
 visibility 100
 client_type 25012
 end

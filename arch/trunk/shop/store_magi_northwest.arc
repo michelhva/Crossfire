@@ -5,7 +5,6 @@ color_fg blue
 type 66
 no_pick 1
 move_block all
-editable 64
 visibility 100
 end
 More
