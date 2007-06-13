@@ -4,7 +4,6 @@ type 114
 face blank.111
 invisible 1
 no_drop 1
-editable 0
 hp 0
 slaying Town portal destination
 end
@@ -14,7 +13,6 @@ type 114
 face blank.111
 invisible 1
 no_drop 1
-editable 0
 hp 0
 slaying Existing town portal
 end
@@ -29,7 +27,6 @@ anim
 magic_portal.111
 magic_portal.112
 mina
-editable 2
 exp 1
 client_type 25011
 end

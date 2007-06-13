@@ -21,5 +21,4 @@ resist_magic 100
 
 exp 50
 weight 200000
-editable 1
 end

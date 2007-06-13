@@ -15,5 +15,4 @@ mina
 speed 1
 color_fg red
 no_pick 1
-editable 0
 end

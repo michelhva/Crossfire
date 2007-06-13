@@ -17,7 +17,6 @@ is_animated 0
 invisible 1
 no_pick 1
 walk_on 1
-editable 32
 attacktype 18
 dam 35
 Cha 20
@@ -42,7 +41,6 @@ is_animated 0
 invisible 1
 no_pick 1
 walk_on 1
-editable 32
 Cha 20
 end
 Object rune_large_icestorm
@@ -65,6 +63,5 @@ is_animated 0
 invisible 1
 no_pick 1
 walk_on 1
-editable 32
 Cha 20
 end

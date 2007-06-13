@@ -21,5 +21,4 @@ move_type fly_low
 wc -30
 no_pick 1
 attacktype 1048576
-editable 0
 end

@@ -10,5 +10,4 @@ move_on walk fly_low
 wc 8
 dam 3
 move_type fly_low
-editable 0
 end

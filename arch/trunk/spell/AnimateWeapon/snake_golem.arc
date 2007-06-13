@@ -21,5 +21,4 @@ resist_poison 100
 attacktype 1025
 exp 50
 weight 200000
-editable 33
 end

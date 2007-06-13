@@ -10,7 +10,6 @@ value 10000
 weight 200
 sp 6
 slaying potiondex
-editable 2048
 identified 1
 name_pl Improve Dexterity Bonus
 client_type 1016

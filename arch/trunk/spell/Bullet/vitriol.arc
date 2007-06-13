@@ -13,7 +13,6 @@ speed 1
 move_type fly_low
 no_pick 1
 attacktype 64
-editable 0
 end
 #
 # vitriol splash is the cone form the bullet turns into
@@ -35,7 +34,6 @@ speed 1
 wc -30
 move_type fly_low
 no_pick 1
-editable 0
 end
 #
 # vitriol pool is what the splash above drops.
@@ -58,5 +56,4 @@ no_pick 1
 attacktype 64
 duration 30
 dam 15
-editable 8
 end

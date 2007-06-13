@@ -18,5 +18,4 @@ is_animated 0
 invisible 1
 no_pick 1
 walk_on 1
-editable 32
 end

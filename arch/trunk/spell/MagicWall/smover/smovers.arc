@@ -38,7 +38,6 @@ move_type walk
 no_pick 1
 maxsp 1
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_1
@@ -60,7 +59,6 @@ move_type walk
 no_pick 1
 sp 1
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_2
@@ -84,7 +82,6 @@ move_type walk
 no_pick 1
 sp 2
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_3
@@ -106,7 +103,6 @@ move_type walk
 no_pick 1
 sp 3
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_4
@@ -130,7 +126,6 @@ move_type walk
 no_pick 1
 sp 4
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_5
@@ -152,7 +147,6 @@ move_type walk
 no_pick 1
 sp 5
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_6
@@ -176,7 +170,6 @@ move_type walk
 no_pick 1
 sp 6
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_7
@@ -198,7 +191,6 @@ move_type walk
 no_pick 1
 sp 7
 move_on walk -fly_low
-editable 32
 visibility 50
 end
 Object smover_8
@@ -222,6 +214,5 @@ move_type walk
 no_pick 1
 sp 8
 move_on walk -fly_low
-editable 32
 visibility 50
 end

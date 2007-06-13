@@ -16,6 +16,5 @@ bomb.114
 mina
 speed 0.2
 weight 4000
-editable 32
 color_fg black
 end
