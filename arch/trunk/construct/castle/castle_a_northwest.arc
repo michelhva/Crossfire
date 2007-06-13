@@ -8,7 +8,6 @@ castle_a_northwest.x11
 castle_a_northwest.x12
 mina
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

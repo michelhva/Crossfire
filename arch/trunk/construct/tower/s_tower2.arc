@@ -4,7 +4,6 @@ face s_tower2.x11
 type 66
 no_pick 1
 move_block all
-editable 2
 client_type 25012
 end
 More
@@ -22,6 +21,5 @@ face s_tower2_top.x11
 type 66
 no_pick 1
 move_block all
-editable 2
 client_type 25012
 end

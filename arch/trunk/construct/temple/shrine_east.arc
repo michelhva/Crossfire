@@ -3,7 +3,6 @@ name ichidou
 type 66
 face shrine_east.x11
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012
@@ -24,7 +23,6 @@ name ichidou
 type 66
 face shrine_east_r.x11
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

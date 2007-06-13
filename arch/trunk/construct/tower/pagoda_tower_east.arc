@@ -3,7 +3,6 @@ face pagoda_tower_east.x11
 name tou
 type 66
 no_pick 1
-editable 2
 visibility 100
 magicmap brown
 client_type 25012

@@ -3,7 +3,6 @@ name outpost tower
 type 66
 face out_tower.x11
 no_pick 1
-editable 2
 visibility 100
 magicmap grey
 client_type 25012

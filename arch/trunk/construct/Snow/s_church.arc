@@ -2,7 +2,6 @@ Object s_church
 type 66
 face s_church.x11
 no_pick 1
-editable 2
 visibility 100
 magicmap white
 end
