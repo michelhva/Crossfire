@@ -15,7 +15,6 @@ material 8
 value 220000
 weight 10000
 last_sp 50
-editable 5120
 magicmap brown
 body_torso -1
 item_power 4

@@ -26,7 +26,6 @@ magic 3
 last_sp 27
 weight 15000
 value 4000
-editable 5120
 body_torso -1
 gen_sp_armour 2
 item_power 9

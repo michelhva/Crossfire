@@ -29,7 +29,6 @@ ac 4
 resist_physical 10
 weight 25000
 value 100000
-editable 5120
 magicmap black
 body_arm -1
 item_power 7

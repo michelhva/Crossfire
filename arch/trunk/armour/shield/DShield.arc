@@ -23,7 +23,6 @@ ac 3
 resist_physical 10
 weight 25000
 value 50000
-editable 5120
 color_fg black
 body_arm -1
 item_power 5

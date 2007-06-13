@@ -11,7 +11,6 @@ ac 1
 resist_physical 1
 type 99
 material 8
-editable 1024
 body_foot -2
 gen_sp_armour 1
 end
