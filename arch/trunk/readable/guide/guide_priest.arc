@@ -35,7 +35,6 @@ subtype 2
 skill literacy
 material 1
 weight 4000
-editable 128
 magicmap green
 end
 
