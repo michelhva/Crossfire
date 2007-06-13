@@ -75,15 +75,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private Spell           mycurrentspell = null;
     private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
 
-    private List<GUIElement> mydialog_query   = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_book    = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_keybind = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_card    = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_paper   = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_sign    = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_monument= new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_scripted_dialog = new ArrayList<GUIElement>();
-    private List<GUIElement> mydialog_motd    = new ArrayList<GUIElement>();
+    private Gui mydialog_query   = new Gui();
+    private Gui mydialog_book    = new Gui();
+    private Gui mydialog_keybind = new Gui();
+    private Gui mydialog_card    = new Gui();
+    private Gui mydialog_paper   = new Gui();
+    private Gui mydialog_sign    = new Gui();
+    private Gui mydialog_monument= new Gui();
+    private Gui mydialog_scripted_dialog = new Gui();
+    private Gui mydialog_motd    = new Gui();
 
     private JXCSkin myskin = null;
 
@@ -288,19 +288,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
         }
     }
-    private void activateFirstTextArea(final List<GUIElement> list)
+    private void activateFirstTextArea(final Gui gui)
     {
-        for (final GUIElement e : list)
+        final GUIElement textArea = gui.getFirstTextArea();
+        if (textArea != null)
         {
-            if (e instanceof com.realtime.crossfire.jxclient.GUIText)
-            {
-                if (e.isVisible())
-                {
-                    deactivateCurrentElement();
-                    e.setActive(true);
-                    myactive_element = e;
-                }
-            }
+            deactivateCurrentElement();
+            textArea.setActive(true);
+            myactive_element = textArea;
         }
     }
     private void initRendering()
@@ -730,7 +725,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             GUIElement myother = null;
 
-            final List<GUIElement> currentDialog = jxcWindowRenderer.getCurrentDialog();
+            final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
             if (currentDialog != null)
             {
                 myother = manageMouseEvents(currentDialog, e);
@@ -753,7 +748,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             GUIElement myother = null;
 
-            final List<GUIElement> currentDialog = jxcWindowRenderer.getCurrentDialog();
+            final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
             if (currentDialog != null)
             {
                 myother = manageMouseEvents(currentDialog, e);
@@ -766,41 +761,23 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             elected.mouseReleased(e);
         }
     }
-    private GUIElement manageMouseEvents(final List<GUIElement> guilist, final MouseEvent e)
+    private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e)
     {
         final int x = e.getX();
         final int y = e.getY();
         final int b = e.getButton();
-        GUIElement elected = null;
+        final GUIElement elected;
         switch(b)
         {
-            case MouseEvent.BUTTON1:
-                for (final GUIElement element : guilist)
-                {
-                    if (element.isVisible())
-                        if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
-                            if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
-                                elected = element;
-                 }
-                 break;
-            case MouseEvent.BUTTON2:
-                for (final GUIElement element : guilist)
-                {
-                    if (element.isVisible())
-                        if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
-                            if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
-                                elected = element;
-                }
-                break;
-            case MouseEvent.BUTTON3:
-                for (final GUIElement element : guilist)
-                {
-                    if (element.isVisible())
-                        if ((x>=element.getX())&&(x<=element.getX()+element.getWidth()))
-                            if ((y>=element.getY())&&(y<=element.getY()+element.getHeight()))
-                                elected = element;
-                }
-                break;
+        case MouseEvent.BUTTON1:
+        case MouseEvent.BUTTON2:
+        case MouseEvent.BUTTON3:
+            elected = gui.getElementFromPoint(x, y);
+            break;
+
+        default:
+            elected = null;
+            break;
         }
         return elected;
     }
@@ -879,7 +856,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void showGUIStart()
     {
         clearGUI();
-        List<GUIElement> newGui;
+        Gui newGui;
         try
         {
             newGui = myskin.getStartInterface(myserver,this);
@@ -894,7 +871,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void showGUIMeta()
     {
         clearGUI();
-        List<GUIElement> newGui;
+        Gui newGui;
         try
         {
             newGui = myskin.getMetaInterface(myserver,this);
@@ -909,7 +886,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void showGUIMain()
     {
         clearGUI();
-        List<GUIElement> newGui;
+        Gui newGui;
         try
         {
             newGui = myskin.getMainInterface(myserver,this);
