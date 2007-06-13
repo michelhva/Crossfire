@@ -5,5 +5,4 @@ type 67
 walk_on 1
 no_pick 1
 magicmap grey
-editable 2
 end
