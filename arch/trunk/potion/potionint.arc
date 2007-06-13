@@ -9,7 +9,6 @@ material 4
 weight 1500
 value 13000
 Int 1
-editable 2048
 name_pl potions of intelligence
 on_use_yield potion_empty
 client_type 651
