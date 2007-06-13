@@ -7,5 +7,4 @@ last_sp 1
 type 64
 move_on walk fly_low
 invisible 1
-editable 32
 end
