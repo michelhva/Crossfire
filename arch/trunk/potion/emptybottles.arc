@@ -9,7 +9,6 @@ material 4
 dam 1
 weight 50
 value 1
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -29,7 +28,6 @@ material 4
 dam 1
 weight 500
 value 1
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -49,7 +47,6 @@ material 4
 dam 1
 weight 1000
 value 3
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -69,7 +66,6 @@ material 4
 dam 1
 weight 600
 value 3
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -89,7 +85,6 @@ material 4
 dam 1
 weight 700
 value 3
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -109,7 +104,6 @@ material 4
 dam 1
 weight 700
 value 3
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown
@@ -129,7 +123,6 @@ material 4
 dam 1
 weight 70
 value 3
-editable 1024
 attacktype 1
 weapontype 8
 magicmap brown

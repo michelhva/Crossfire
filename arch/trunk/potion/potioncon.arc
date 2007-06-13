@@ -9,7 +9,6 @@ material 4
 weight 1500
 value 14500
 Con 1
-editable 2048
 name_pl potions of constitution
 on_use_yield potion_empty
 client_type 651
