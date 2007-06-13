@@ -40,7 +40,6 @@ speed -0.30
 weight 30000
 run_away 2
 attack_movement 1
-editable 1
 end
 More
 Object dread_2

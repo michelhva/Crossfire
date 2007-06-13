@@ -17,5 +17,4 @@ alive 1
 level 1
 maxsp 1
 weight 300000
-editable 1
 end

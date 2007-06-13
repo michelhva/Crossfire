@@ -33,7 +33,6 @@ Wis 3
 speed -0.17
 attack_movement 5
 weight 300000
-editable 1
 pick_up 64
 resist_fire 20
 resist_cold 5

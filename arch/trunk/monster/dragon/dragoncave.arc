@@ -17,5 +17,4 @@ no_pick 1
 alive 1
 maxsp 1
 weight 1000000
-editable 1
 end

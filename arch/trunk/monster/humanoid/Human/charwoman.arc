@@ -27,6 +27,5 @@ speed 0.15
 weight 50000
 level 1
 run_away 90
-editable 1
 color_fg black
 end

@@ -25,6 +25,5 @@ weight 50000
 level 10
 can_cast_spell 1
 pick_up 1
-editable 1
 magicmap brown
 end

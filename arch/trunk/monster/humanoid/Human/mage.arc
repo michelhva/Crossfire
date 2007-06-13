@@ -32,7 +32,6 @@ Wis 0
 Cha -3
 Int 1
 Pow 2
-editable 0
 body_range 1
 body_arm 2
 body_torso 1

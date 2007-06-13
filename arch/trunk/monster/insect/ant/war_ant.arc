@@ -35,5 +35,4 @@ wc -5
 dam 15
 speed -0.2
 weight 15000
-editable 1
 end

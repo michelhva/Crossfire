@@ -32,7 +32,6 @@ no_pick 1
 speed -0.085
 weight 300000
 run_away 6
-editable 1
 end
 More
 Object bear_2

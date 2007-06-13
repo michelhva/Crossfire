@@ -32,7 +32,6 @@ level 12
 alive 1
 speed -0.5
 weight 1800000
-editable 1
 color_fg black
 end
 More

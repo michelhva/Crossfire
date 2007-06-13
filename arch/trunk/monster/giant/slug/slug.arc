@@ -33,7 +33,6 @@ no_pick 1
 speed -0.08
 weight 300000
 run_away 5
-editable 1
 end
 More
 Object slug_2

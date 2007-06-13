@@ -25,5 +25,4 @@ level 6
 resist_cold 100
 
 attacktype 16
-editable 1
 end

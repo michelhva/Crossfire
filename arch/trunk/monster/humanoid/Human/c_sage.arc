@@ -34,7 +34,6 @@ exp 0
 speed 0.06
 weight 50000
 level 15
-editable 1
 can_cast_spell 1
 can_use_skill 1
 body_skill 1

@@ -32,5 +32,4 @@ stand_still 1
 unaggressive 1
 Str 25
 can_cast_spell 1
-editable 1
 end

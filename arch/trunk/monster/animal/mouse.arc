@@ -23,5 +23,4 @@ level 1
 speed -0.11
 weight 80
 attack_movement 2
-editable 1
 end

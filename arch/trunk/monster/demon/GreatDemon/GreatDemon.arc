@@ -46,7 +46,6 @@ sleep 1
 Wis 20
 see_invisible 1
 run_away 2
-editable 1
 magicmap red
 body_skill 1
 body_finger 2

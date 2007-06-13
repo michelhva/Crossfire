@@ -32,7 +32,6 @@ alive 1
 can_cast_spell 1
 speed -0.5
 weight 1000000
-editable 1
 color_fg black
 undead 1
 end

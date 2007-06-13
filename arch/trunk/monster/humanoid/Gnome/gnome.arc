@@ -49,7 +49,6 @@ can_use_weapon 1
 can_use_ring 1
 run_away 99
 exp 1000
-editable 1
 magicmap green
 body_skill 1
 body_torso 1

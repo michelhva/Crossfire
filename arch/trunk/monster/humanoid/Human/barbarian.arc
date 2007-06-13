@@ -30,7 +30,6 @@ Con 4
 Wis -1
 Cha -2
 Int -6
-editable 0
 magicmap grey
 body_range 1
 body_arm 2

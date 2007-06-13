@@ -29,7 +29,6 @@ alive 1
 no_pick 1
 speed -0.08
 weight 90000
-editable 1
 magicmap green
 end
 More

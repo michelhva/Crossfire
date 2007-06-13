@@ -30,5 +30,4 @@ can_see_in_dark 1
 resist_electricity 50
 resist_cold 100
 resist_fear 100
-editable 1
 end

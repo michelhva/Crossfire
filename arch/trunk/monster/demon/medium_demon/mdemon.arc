@@ -45,7 +45,6 @@ attack_movement 5
 can_use_weapon 1
 can_use_skill 1
 can_cast_spell 1
-editable 1
 body_skill 1
 body_arm 2
 end

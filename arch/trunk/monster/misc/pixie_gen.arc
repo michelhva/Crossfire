@@ -15,5 +15,4 @@ no_pick 1
 speed -0.003
 maxsp 1
 weight 1000
-editable 1
 end

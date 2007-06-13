@@ -14,5 +14,4 @@ ac 3
 exp 50
 maxsp 1
 weight 10000
-editable 1
 end

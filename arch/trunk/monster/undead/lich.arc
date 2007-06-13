@@ -27,7 +27,6 @@ ac -3
 no_pick 1
 alive 1
 maxsp 40
-editable 1
 will_apply 2
 pick_up 24
 can_use_scroll 1

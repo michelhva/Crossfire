@@ -26,5 +26,4 @@ resist_confusion 100
 attacktype 1
 resist_cold -100
 
-editable 1
 end

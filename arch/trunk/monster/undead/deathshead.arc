@@ -55,7 +55,6 @@ weight 1500
 can_cast_spell 1
 can_see_in_dark 1
 attack_movement 1
-editable 1
 glow_radius -5
 magicmap grey
 end

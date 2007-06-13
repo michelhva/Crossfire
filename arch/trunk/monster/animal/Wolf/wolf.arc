@@ -28,7 +28,6 @@ dam 25
 wc 1
 level 5
 weight 55000
-editable 1
 run_away 15
 attack_movement 3
 color_fg grey

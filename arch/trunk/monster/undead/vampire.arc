@@ -44,7 +44,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_scroll 1
 can_cast_spell 1
-editable 1
 undead 1
 magicmap blue
 body_finger 2

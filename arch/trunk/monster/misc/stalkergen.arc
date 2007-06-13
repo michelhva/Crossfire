@@ -15,5 +15,4 @@ speed -0.002
 maxsp 1
 move_type fly_low
 level 5
-editable 1
 end

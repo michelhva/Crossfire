@@ -37,7 +37,6 @@ can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
 can_use_ring 1
-editable 1
 body_torso 1
 body_head 1
 body_shoulder 1

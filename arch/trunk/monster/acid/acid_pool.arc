@@ -20,6 +20,5 @@ resist_blind 100
 speed 0.01
 anim_speed 10
 weight 750000
-editable 1
 magicmap green
 end

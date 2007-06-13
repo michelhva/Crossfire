@@ -34,5 +34,4 @@ resist_electricity 50
 
 run_away 25
 attack_movement 3
-editable 1
 end

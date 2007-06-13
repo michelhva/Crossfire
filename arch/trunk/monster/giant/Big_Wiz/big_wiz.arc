@@ -52,7 +52,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 attack_movement 1
-editable 1
 magicmap brown
 body_torso 1
 body_head 1

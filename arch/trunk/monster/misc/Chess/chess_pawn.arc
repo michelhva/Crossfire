@@ -18,7 +18,6 @@ exp 20
 speed 0.25
 weight 50000
 level 2
-editable 1
 will_apply 2
 pick_up 24
 can_cast_spell 1

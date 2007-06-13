@@ -37,5 +37,4 @@ monster 1
 move_type walk
 unaggressive 1
 magicmap grey
-editable 1
 end

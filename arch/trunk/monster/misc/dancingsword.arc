@@ -44,5 +44,4 @@ resist_blind 100
 
 resist_fire 30
 
-editable 1
 end

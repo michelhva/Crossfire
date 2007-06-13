@@ -14,6 +14,5 @@ alive 1
 level 1
 sp 130
 maxsp 1
-editable 1
 magicmap yellow
 end

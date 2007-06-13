@@ -39,5 +39,4 @@ weight 200000
 run_away 15
 attacktype 5
 attack_movement 5
-editable 1
 end

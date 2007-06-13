@@ -46,7 +46,6 @@ speed -0.35
 can_cast_spell 1
 weight 30000000
 run_away 2
-editable 1
 end
 More
 Object byakie_2

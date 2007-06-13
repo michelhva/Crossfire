@@ -28,5 +28,4 @@ no_pick 1
 monster 1
 move_type walk
 sleep 1
-editable 1
 end

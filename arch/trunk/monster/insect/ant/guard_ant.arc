@@ -29,5 +29,4 @@ speed -0.2
 stand_still 1
 unaggressive 1
 weight 15000
-editable 1
 end

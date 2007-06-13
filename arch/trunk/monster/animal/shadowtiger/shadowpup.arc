@@ -32,5 +32,4 @@ level 4
 weight 200000
 run_away 15
 attack_movement 3
-editable 1
 end

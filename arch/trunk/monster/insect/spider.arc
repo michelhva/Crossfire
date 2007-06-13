@@ -51,6 +51,5 @@ hp 5
 maxhp 5
 level 3
 speed 0.4
-editable 1
 color_fg black
 end

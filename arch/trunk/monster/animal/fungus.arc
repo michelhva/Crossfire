@@ -30,5 +30,4 @@ hp 5
 maxhp 5
 level 3
 weight 10000
-editable 1
 end

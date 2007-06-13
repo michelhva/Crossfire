@@ -21,5 +21,4 @@ speed 0.2
 weight 75000
 run_away 18
 attacktype 1
-editable 1
 end

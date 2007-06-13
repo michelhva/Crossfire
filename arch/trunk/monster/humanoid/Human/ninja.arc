@@ -31,7 +31,6 @@ Wis -1
 Cha -1
 Int -2
 Pow 0
-editable 0
 color_fg black
 body_range 1
 body_arm 2

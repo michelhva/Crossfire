@@ -30,5 +30,4 @@ resist_cold 100
 attacktype 16
 resist_fire -100
 
-editable 1
 end

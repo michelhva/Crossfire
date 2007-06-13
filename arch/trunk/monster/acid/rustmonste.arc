@@ -29,5 +29,4 @@ attacktype 64
 resist_fire -100
 
 hitback 1
-editable 1
 end

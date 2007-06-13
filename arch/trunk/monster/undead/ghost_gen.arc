@@ -14,6 +14,5 @@ ac 5
 maxsp 1
 weight 25000
 resist_cold 50
-editable 1
 undead 1
 end

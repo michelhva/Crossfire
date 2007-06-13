@@ -38,5 +38,4 @@ level 10
 weight 150000
 Str 25
 can_cast_spell 1
-editable 1
 end

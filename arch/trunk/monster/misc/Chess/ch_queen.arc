@@ -18,7 +18,6 @@ exp 90
 speed 0.45
 weight 50000
 level 5
-editable 1
 will_apply 2
 pick_up 24
 can_cast_spell 1

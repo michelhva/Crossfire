@@ -33,7 +33,6 @@ attack_movement 7
 generator 1
 speed -0.1
 weight 300000
-editable 1
 end
 More
 Object breeder_ant_2

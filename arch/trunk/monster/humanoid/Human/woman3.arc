@@ -39,7 +39,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-editable 1
 magicmap khaki
 body_skill 1
 body_finger 2

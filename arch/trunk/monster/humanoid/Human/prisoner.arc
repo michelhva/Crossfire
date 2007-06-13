@@ -21,6 +21,5 @@ hp 10
 maxhp 10
 exp 1
 level 3
-editable 1
 magicmap khaki
 end

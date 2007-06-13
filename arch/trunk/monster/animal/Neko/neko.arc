@@ -29,6 +29,5 @@ level 1
 speed 0.3
 weight 30000
 run_away 90
-editable 1
 magicmap brown
 end

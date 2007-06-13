@@ -25,6 +25,5 @@ wc -1
 dam 3
 level 13
 weight 1000000
-editable 1
 color_fg black
 end

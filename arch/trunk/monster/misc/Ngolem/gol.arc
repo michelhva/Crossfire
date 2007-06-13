@@ -43,7 +43,6 @@ can_use_weapon 1
 can_use_ring 1
 sleep 1
 can_use_rod 1
-editable 1
 magicmap grey
 body_torso 1
 body_head 1

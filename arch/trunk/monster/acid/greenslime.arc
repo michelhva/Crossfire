@@ -25,5 +25,4 @@ attacktype 64
 hitback 1
 hp 20
 maxhp 20
-editable 1
 end

@@ -42,6 +42,5 @@ weight 85000
 attacktype 1025
 can_cast_spell 1
 can_use_skill 1
-editable 1
 body_skill 1
 end

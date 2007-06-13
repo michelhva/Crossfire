@@ -43,7 +43,6 @@ can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-editable 1
 magicmap grey
 body_finger 2
 body_skill 1

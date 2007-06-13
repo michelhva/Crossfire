@@ -38,7 +38,6 @@ alive 1
 no_pick 1
 speed -0.4
 weight 200000
-editable 1
 run_away 3
 magicmap blue
 end

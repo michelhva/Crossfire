@@ -35,7 +35,6 @@ weight 50000
 level 15
 can_cast_spell 1
 can_use_skill 1
-editable 1
 magicmap grey
 body_skill 1
 end

@@ -24,6 +24,5 @@ ac 4
 level 2
 weight 20
 resist_physical 30
-editable 1
 color_fg black
 end

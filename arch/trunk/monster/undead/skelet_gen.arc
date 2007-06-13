@@ -15,7 +15,6 @@ maxsp 1
 speed 0.006
 weight 750000
 resist_cold 50
-editable 1
 undead 1
 map_layer living
 end

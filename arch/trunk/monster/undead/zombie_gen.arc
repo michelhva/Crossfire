@@ -17,7 +17,6 @@ speed 0.01
 weight 750000
 resist_cold 30
 
-editable 1
 undead 1
 magicmap brown
 end

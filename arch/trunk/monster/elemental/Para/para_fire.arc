@@ -25,5 +25,4 @@ level 6
 speed -0.25
 exp 200
 weight 200
-editable 1
 end

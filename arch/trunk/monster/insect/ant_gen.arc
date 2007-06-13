@@ -14,6 +14,5 @@ no_pick 1
 speed 0.03
 maxsp 1
 weight 100000
-editable 1
 magicmap brown
 end

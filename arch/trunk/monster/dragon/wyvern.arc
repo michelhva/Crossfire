@@ -38,7 +38,6 @@ no_pick 1
 speed -0.07
 weight 150000
 run_away 6
-editable 1
 end
 More
 Object dragon_2

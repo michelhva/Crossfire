@@ -40,7 +40,6 @@ can_use_skill 1
 sp 20
 maxsp 30
 Pow 5
-editable 1
 run_away 5
 attack_movement 3
 color_fg black

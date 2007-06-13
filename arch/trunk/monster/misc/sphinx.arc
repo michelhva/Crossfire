@@ -37,7 +37,6 @@ no_pick 1
 speed -0.07
 weight 8000000
 run_away 6
-editable 1
 color_fg black
 end
 More
