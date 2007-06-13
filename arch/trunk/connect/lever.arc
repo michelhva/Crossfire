@@ -9,7 +9,6 @@ anim
 lever.111
 lever.112
 mina
-editable 48
 visibility 50
 magicmap black
 client_type 25042

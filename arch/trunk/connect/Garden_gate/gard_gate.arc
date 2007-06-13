@@ -15,7 +15,6 @@ is_animated 0
 hp 0
 dam 0
 maxsp 1
-editable 16
 visibility 100
 ac 1
 wc 0
@@ -38,7 +37,6 @@ is_animated 0
 hp 0
 dam 0
 maxsp 0
-editable 16
 visibility 100
 ac 1
 wc 3

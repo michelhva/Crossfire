@@ -23,7 +23,6 @@ blocksview 1
 wc 7
 maxsp 0
 dam 6
-editable 16
 visibility 50
 maxhp 20
 hp 20
