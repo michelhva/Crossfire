@@ -10,7 +10,6 @@ subtype 7
 no_pick 1
 speed 1
 no_pick 1
-editable 0
 end
 #
 # the peace cone above drops these peacemakers,

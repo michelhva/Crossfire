@@ -10,7 +10,6 @@ value 10000
 weight 200
 sp 9
 slaying potioncha
-editable 2048
 identified 1
 name_pl Improve Charisma Bonus
 client_type 1016

@@ -16,7 +16,6 @@ no_pick 1
 see_anywhere 1
 visibility 255
 food 5
-editable 0
 type 102
 subtype 21
 end

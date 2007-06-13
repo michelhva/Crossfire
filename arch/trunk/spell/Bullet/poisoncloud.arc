@@ -16,5 +16,4 @@ dam 1
 attacktype 1026
 move_type fly_low
 no_pick 1
-editable 0
 end

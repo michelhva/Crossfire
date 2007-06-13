@@ -23,6 +23,5 @@ attacktype 2
 wc -10
 dam 25
 move_type fly_low
-editable 0
 color_fg black
 end

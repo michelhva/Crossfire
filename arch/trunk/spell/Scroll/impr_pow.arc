@@ -10,7 +10,6 @@ value 12000
 weight 200
 sp 11
 slaying potionpow
-editable 2048
 identified 1
 name_pl Improve Power Bonus
 client_type 1016

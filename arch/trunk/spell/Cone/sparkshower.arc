@@ -19,5 +19,4 @@ move_type fly_low
 glow_radius 4
 no_pick 1
 attacktype 14
-editable 0
 end

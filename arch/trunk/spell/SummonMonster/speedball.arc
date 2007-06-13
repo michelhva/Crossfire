@@ -20,6 +20,5 @@ no_pick 1
 move_type fly_low
 weight 1000
 only_attack 1
-editable 0
 one_hit 1
 end

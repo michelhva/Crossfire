@@ -20,5 +20,4 @@ level 9
 speed 0.5
 exp 200
 weight 20
-editable 33
 end

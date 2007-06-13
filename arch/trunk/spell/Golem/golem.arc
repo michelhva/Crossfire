@@ -18,5 +18,4 @@ level 5
 speed 0.1
 exp 50
 weight 200000
-editable 33
 end

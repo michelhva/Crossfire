@@ -19,7 +19,6 @@ is_turnable 1
 move_on walk fly_low
 move_type fly_low
 speed 1
-editable 0
 magicmap grey
 no_pick 1
 end
