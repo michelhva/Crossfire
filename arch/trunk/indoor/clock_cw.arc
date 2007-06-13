@@ -10,7 +10,6 @@ mina
 speed -0.05
 weight 80000
 value 1400
-editable 128
 material 20
 materialname cherry
 magicmap brown

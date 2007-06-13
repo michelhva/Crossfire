@@ -7,7 +7,6 @@ exp 30
 face harpsichord3.x11
 no_pick 1
 walk_on 1
-editable 48
 visibility 50
 end
 More
@@ -21,7 +20,6 @@ exp 30
 face harpsichord3.x11
 no_pick 1
 walk_on 1
-editable 48
 visibility 50
 end
 More
@@ -35,7 +33,6 @@ exp 30
 face harpsichord3.x11
 no_pick 1
 walk_on 1
-editable 48
 visibility 50
 end
 More
@@ -50,7 +47,6 @@ exp 30
 face harpsichord3.x11
 no_pick 1
 walk_on 1
-editable 48
 visibility 50
 end
 
