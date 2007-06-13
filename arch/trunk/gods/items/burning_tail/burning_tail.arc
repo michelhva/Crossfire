@@ -20,7 +20,6 @@ resist_cold 25
 resist_fire 15
 attacktype 4101
 startequip 1
-editable 5120
 magicmap red
 name_pl Burning Tails of many lashings of Ruggilli
 client_type 100
