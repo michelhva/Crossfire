@@ -8,7 +8,6 @@ weight 200000
 value 35
 material 16
 nrof 1
-editable 128
 magicmap brown
 name_pl beds
 client_type 8002

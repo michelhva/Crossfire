@@ -9,7 +9,6 @@ weight 300000
 value 100
 material 16
 nrof 1
-editable 128
 magicmap brown
 name_pl tables
 client_type 8002
@@ -28,7 +27,6 @@ weight 300000
 value 100
 material 16
 nrof 1
-editable 128
 magicmap brown
 name_pl tables
 client_type 8002
@@ -48,7 +46,6 @@ weight 300000
 value 100
 material 16
 nrof 1
-editable 128
 magicmap brown
 name_pl tables
 client_type 8002
@@ -68,7 +65,6 @@ weight 300000
 value 100
 material 16
 nrof 1
-editable 128
 magicmap brown
 name_pl tables
 client_type 8002

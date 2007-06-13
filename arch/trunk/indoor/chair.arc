@@ -7,7 +7,6 @@ type 15
 material 16
 dam 4
 nrof 1
-editable 128
 color_fg black
 name_pl chairs
 client_type 8002
