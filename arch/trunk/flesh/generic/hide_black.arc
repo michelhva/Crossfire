@@ -6,6 +6,5 @@ material 32
 color_fg black
 type 72
 weight 20
-editable 2048
 value 300
 end
