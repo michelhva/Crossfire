@@ -5,6 +5,5 @@ type 4
 hp 1
 randomitems chest_items
 auto_apply 1
-editable 4
 magicmap orange
 end

@@ -5,6 +5,5 @@ type 4
 hp 1
 randomitems random_scroll
 auto_apply 1
-editable 4
 magicmap orange
 end
