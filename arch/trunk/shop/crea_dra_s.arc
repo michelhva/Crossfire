@@ -7,6 +7,5 @@ slaying dragon_scale
 food 1
 no_pick 1
 walk_on 1
-editable 64
 visibility 100
 end

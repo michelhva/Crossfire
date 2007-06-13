@@ -7,7 +7,6 @@ type 103
 no_pick 1
 face table_2.111
 walk_on 1
-editable 64
 end
 Object dragon_steak_table
 name serving dragon steak (15 g.c. @)
@@ -18,7 +17,6 @@ type 103
 no_pick 1
 face table_2.111
 walk_on 1
-editable 64
 end
 Object waybread_table
 name serving waybread (25 g.c. @)
@@ -29,7 +27,6 @@ type 103
 no_pick 1
 face table_2.111
 walk_on 1
-editable 64
 end
 Object booze_table
 name serving booze (3 g.c @)
@@ -40,5 +37,4 @@ type 103
 no_pick 1
 face table_2.111
 walk_on 1
-editable 64
 end

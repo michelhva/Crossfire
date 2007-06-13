@@ -4,7 +4,6 @@ face store_gene_west.x11
 type 66
 no_pick 1
 move_block all
-editable 64
 visibility 100
 magicmap grey
 client_type 25012

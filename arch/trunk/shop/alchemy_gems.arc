@@ -21,7 +21,6 @@ gem.111
 mina
 speed 0.4
 walk_on 1
-editable 64
 visibility 100
 end
 Object alchemy_ruby_converter
@@ -47,7 +46,6 @@ ruby.111
 mina
 speed 0.4
 walk_on 1
-editable 64
 visibility 100
 end
 Object alchemy_pearl_converter
@@ -73,6 +71,5 @@ pearl.111
 mina
 speed 0.4
 walk_on 1
-editable 64
 visibility 100
 end

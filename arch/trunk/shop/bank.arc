@@ -3,7 +3,6 @@ face bank.x11
 type 66
 no_pick 1
 move_block all
-editable 2
 visibility 100
 magicmap white
 end
