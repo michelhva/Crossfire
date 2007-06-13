@@ -7,7 +7,6 @@ weight 1000
 value 300
 nrof 1
 material 12
-editable 2048
 name_pl talismans
 client_type 451
 body_neck -1
@@ -24,7 +23,6 @@ value 3000
 nrof 1
 material 12
 skill sorcery
-editable 2048
 name_pl talismans
 client_type 451
 body_skill -1
@@ -41,7 +39,6 @@ value 3000
 nrof 1
 material 12
 skill summoning
-editable 2048
 name_pl talismans
 client_type 451
 body_skill -1
@@ -58,7 +55,6 @@ value 3000
 nrof 1
 material 12
 skill evocation
-editable 2048
 name_pl talismans
 client_type 451
 body_skill -1
@@ -75,7 +71,6 @@ value 3000
 nrof 1
 material 12
 skill pyromancy
-editable 2048
 name_pl talismans
 client_type 451
 body_skill -1

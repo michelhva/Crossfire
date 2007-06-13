@@ -10,7 +10,6 @@ type 130
 material 1
 value 2500
 weight 200
-editable 2048
 sp 30
 identified 1
 client_type 1021

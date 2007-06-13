@@ -6,5 +6,4 @@ no_drop 1
 level 1
 exp 0
 Wis 1
-editable 0
 end
