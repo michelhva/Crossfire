@@ -36,6 +36,5 @@ Wis 2
 Cha 1
 Int -2
 Pow 1
-editable 0
 magicmap blue
 end

@@ -11,7 +11,6 @@ Con -1
 Int 1
 Wis 0
 Pow 1
-editable 0
 end
 Object talisman_summoner
 name Summoner's talisman
@@ -21,7 +20,6 @@ weight 1000
 value 3000
 nrof 1
 material 12
-editable 2048
 path_attuned 64
 path_repelled 65536
 client_type 451

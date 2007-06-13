@@ -59,7 +59,6 @@ Con 4
 Wis -2
 Int -2
 Cha -4
-editable 0
 body_range 1
 body_arm 2
 body_torso 1

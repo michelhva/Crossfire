@@ -22,7 +22,6 @@ Con -1
 Int 0
 Wis 0
 Pow 3
-editable 0
 end
 Object talisman_evoker
 name Evoker's talisman
@@ -32,7 +31,6 @@ weight 1000
 value 3000
 nrof 1
 material 12
-editable 2048
 path_attuned 14
 path_repelled 50240
 client_type 451

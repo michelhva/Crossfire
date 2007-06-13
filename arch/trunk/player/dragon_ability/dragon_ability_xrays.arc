@@ -8,6 +8,5 @@ type 114
 invisible 1
 xrays 1
 no_drop 1
-editable 0
 end
 
