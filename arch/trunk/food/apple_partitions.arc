@@ -9,7 +9,6 @@ type 6
 material 32
 value 1
 weight 50
-editable 2048
 identified 1
 client_type 601
 on_use_with_b_slicingknife remove $2 add 2 apple_fourth
@@ -27,7 +26,6 @@ type 6
 material 32
 value 1
 weight 25
-editable 2048
 identified 1
 client_type 601
 on_use_with_b_slicingknife remove $2 add 2 apple_eighth
@@ -45,7 +43,6 @@ type 6
 material 32
 value 1
 weight 12
-editable 2048
 identified 1
 client_type 601
 end

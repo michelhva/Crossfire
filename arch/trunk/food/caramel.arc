@@ -7,7 +7,6 @@ material 32
 value 2
 weight 30
 identified 1
-editable 2048
 magicmap yellow
 name_pl cakes
 client_type 601

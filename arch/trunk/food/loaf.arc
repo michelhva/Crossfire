@@ -8,7 +8,6 @@ type 6
 material 32
 value 5
 weight 3000
-editable 2048
 identified 1
 name_pl breads
 client_type 601
