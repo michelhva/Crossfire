@@ -10,7 +10,6 @@ materialname uranium
 value 50
 weight 10000
 identified 1
-editable 2048
 name_pl uranium bars
 client_type 2005
 end
@@ -36,7 +35,6 @@ value 400000
 # adeb0
 weight 10000
 identified 1
-editable 2048
 name_pl enriched uranium bars
 client_type 2005
 end
@@ -55,7 +53,6 @@ materialname depleted uranium
 value 20
 weight 10000
 identified 1
-editable 2048
 name_pl depleted uranium bars
 client_type 2005
 end

@@ -10,7 +10,6 @@ materialname gold
 value 1000000
 weight 1000000
 identified 1
-editable 2048
 name_pl gold blocks
 client_type 2005
 end

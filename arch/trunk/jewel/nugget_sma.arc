@@ -9,7 +9,6 @@ material 2
 materialname gold
 value 40
 weight 20
-editable 2048
 name_pl small gold nuggets
 client_type 2005
 end

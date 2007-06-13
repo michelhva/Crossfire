@@ -11,6 +11,5 @@ materialname platinum
 value 5000000
 weight 1000000
 identified 1
-editable 2048
 client_type 2005
 end

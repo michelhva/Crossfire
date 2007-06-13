@@ -10,7 +10,6 @@ materialname copper
 value 500
 weight 10000
 identified 1
-editable 2048
 name_pl copper bars
 client_type 2005
 end

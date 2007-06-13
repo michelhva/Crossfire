@@ -10,7 +10,6 @@ materialname zinc
 value 50
 weight 10000
 identified 1
-editable 2048
 name_pl zinc bars
 client_type 2005
 end

@@ -15,7 +15,6 @@ value 800
 weight 50
 material 2
 materialname mithril
-editable 2048
 identified 1
 magicmap grey
 name_pl mithril crystals
