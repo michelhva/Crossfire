@@ -43,7 +43,7 @@ public final class KeyBindings implements Iterable<KeyBinding>
         return keybindings.size();
     }
 
-    public void addKeyBinding(final int keycode, final int keymod, final List<GUICommand> cmdlist)
+    public void addKeyBinding(final int keycode, final int keymod, final GUICommandList cmdlist)
     {
         final KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
         KeyBinding elected = null;
@@ -81,6 +81,7 @@ public final class KeyBindings implements Iterable<KeyBinding>
 
     public void loadKeyBindings(final String filename)
     {
+/*
         try
         {
             final FileInputStream fis = new FileInputStream(filename);
@@ -99,11 +100,10 @@ public final class KeyBindings implements Iterable<KeyBinding>
                         final List<GUICommand> guil = new ArrayList<GUICommand>();
                         for(int j=0; j<lsz; j++)
                         {
-                            ois.readObject();/*XXX: type mismatch
+                            ois.readObject();
                         final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
                             new GUICommand.SendCommandParameter(this, (String)ois.readObject()));
                         guil.add(guic);
-*/
                         }
                         keybindings.add(new KeyBinding(kc, km, guil));
                     }
@@ -122,10 +122,12 @@ public final class KeyBindings implements Iterable<KeyBinding>
         {
             e.printStackTrace();
         }
+*/
     }
 
     public void saveKeyBindings(final String filename)
     {
+/*
         try
         {
             final FileOutputStream fos = new FileOutputStream(filename);
@@ -162,5 +164,6 @@ public final class KeyBindings implements Iterable<KeyBinding>
             System.err.println("Warning: the key bindings file does not exist or is unavailable.");
             System.err.println("It should be created when you leave the client.");
         }
+*/
     }
 }

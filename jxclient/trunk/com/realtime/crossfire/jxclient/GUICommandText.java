@@ -66,19 +66,8 @@ public class GUICommandText extends GUIText implements KeyListener
                         if (mytext.startsWith("bind "))
                         {
                             String cmdl = mytext.substring(5);
-                            String[] cmds = cmdl.split(";");
-                            List list_parms;
-                            GUICommand guicmd;
-                            List<GUICommand> list_commands =
-                                    new ArrayList<GUICommand>();
-
-                            for(int i=0; i<cmds.length;i++)
-                            {
-                                guicmd = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
-                                        new GUICommand.SendCommandParameter((JXCWindow)e.getSource(), cmds[i]));
-                                list_commands.add(guicmd);
-                            }
-                            ((JXCWindow)e.getSource()).createKeyBinding(list_commands);
+                            final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
+                            ((JXCWindow)e.getSource()).createKeyBinding(commands);
                         }
                         else if (mytext.startsWith("unbind"))
                         {

@@ -26,7 +26,6 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Iterator;
-import java.util.List;
 import javax.imageio.ImageIO;
 
 /**
@@ -39,7 +38,7 @@ public class GUIButton extends GUIElement
 {
     private BufferedImage mypicture_up;
     private BufferedImage mypicture_down;
-    private List<GUICommand> mylist;
+    private GUICommandList mylist;
     private String mytext = null;
     private Font myfont = null;
     private int mytx = 0;
@@ -48,7 +47,7 @@ public class GUIButton extends GUIElement
 
     public GUIButton
             (String nn, int nx, int ny, int nw, int nh, String picup,
-                     String picdown, List<GUICommand> cmd) throws IOException
+                     String picdown, GUICommandList cmd) throws IOException
     {
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
@@ -67,7 +66,7 @@ public class GUIButton extends GUIElement
     public GUIButton
             (String nn, int nx, int ny, int nw, int nh, String picup,
              String picdown, String txt, Font f, Color mfc,
-             int tx, int ty, List<GUICommand> cmd) throws IOException
+             int tx, int ty, GUICommandList cmd) throws IOException
     {
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
@@ -94,11 +93,7 @@ public class GUIButton extends GUIElement
         switch(b)
         {
             case MouseEvent.BUTTON1:
-                Iterator<GUICommand> it = mylist.iterator();
-                while (it.hasNext())
-                {
-                    it.next().execute();
-                }
+                mylist.execute();
                 active = false;
                 JXCWindow jxc = (JXCWindow)(e.getSource());
                 jxc.deactivateCurrentElement();

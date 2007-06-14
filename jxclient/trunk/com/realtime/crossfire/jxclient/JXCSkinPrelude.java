@@ -22,8 +22,6 @@ package com.realtime.crossfire.jxclient;
 import java.awt.Color;
 import java.awt.Font;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -119,7 +117,7 @@ public class JXCSkinPrelude implements JXCSkin
         Font font_stats;
         Font font_types;
         Font font_cmdline        = null;
-        List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
+        GUICommandList command_rinv_up = new GUICommandList();
         InputStream ttf=null;
         try
         {
@@ -255,17 +253,17 @@ public class JXCSkinPrelude implements JXCSkin
         Font font_stats          = null;
         Font font_types          = null;
         Font font_cmdline        = null;
-        List<GUICommand> command_log_upper_up = new ArrayList<GUICommand>();
-        List<GUICommand> command_log_upper_down = new ArrayList<GUICommand>();
-        List<GUICommand> command_rinv_down = new ArrayList<GUICommand>();
-        List<GUICommand> command_rinv_up = new ArrayList<GUICommand>();
-        List<GUICommand> command_rsp_down = new ArrayList<GUICommand>();
-        List<GUICommand> command_rsp_up = new ArrayList<GUICommand>();
-        List<GUICommand> command_rsp_display = new ArrayList<GUICommand>();
-        List<GUICommand> command_rsp_undisplay = new ArrayList<GUICommand>();
-        List<GUICommand> command_magicmap_display = new ArrayList<GUICommand>();
-        List<GUICommand> command_magicmap_undisplay = new ArrayList<GUICommand>();
-        List<GUICommand> command_menu_display = new ArrayList<GUICommand>();
+        GUICommandList command_log_upper_up = new GUICommandList();
+        GUICommandList command_log_upper_down = new GUICommandList();
+        GUICommandList command_rinv_down = new GUICommandList();
+        GUICommandList command_rinv_up = new GUICommandList();
+        GUICommandList command_rsp_down = new GUICommandList();
+        GUICommandList command_rsp_up = new GUICommandList();
+        GUICommandList command_rsp_display = new GUICommandList();
+        GUICommandList command_rsp_undisplay = new GUICommandList();
+        GUICommandList command_magicmap_display = new GUICommandList();
+        GUICommandList command_magicmap_undisplay = new GUICommandList();
+        GUICommandList command_menu_display = new GUICommandList();
         InputStream ttf=null;
         try
         {
@@ -1698,10 +1696,10 @@ public class JXCSkinPrelude implements JXCSkin
     public Gui getMetaInterface(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mygui.clear();
-        List<GUICommand> command_metaconnect = new ArrayList<GUICommand>();
-        List<GUICommand> command_metacancel  = new ArrayList<GUICommand>();
-        List<GUICommand> command_metaup      = new ArrayList<GUICommand>();
-        List<GUICommand> command_metadown    = new ArrayList<GUICommand>();
+        GUICommandList command_metaconnect = new GUICommandList();
+        GUICommandList command_metacancel  = new GUICommandList();
+        GUICommandList command_metaup      = new GUICommandList();
+        GUICommandList command_metadown    = new GUICommandList();
 
         Font font_metaurl=null;
         Font font_description=null;
@@ -1867,8 +1865,8 @@ public class JXCSkinPrelude implements JXCSkin
     public Gui getStartInterface(CrossfireServerConnection myserver, JXCWindow p) throws JXCSkinException
     {
         mygui.clear();
-        List<GUICommand> command_startmenu_meta = new ArrayList<GUICommand>();
-        List<GUICommand> command_startmenu_quit = new ArrayList<GUICommand>();
+        GUICommandList command_startmenu_meta = new GUICommandList();
+        GUICommandList command_startmenu_quit = new GUICommandList();
 
         Font font_metaurl=null;
         InputStream ttf=null;
@@ -1948,7 +1946,7 @@ public class JXCSkinPrelude implements JXCSkin
     public Gui getDialogBook(CrossfireServerConnection myserver, JXCWindow p, int booknr) throws JXCSkinException
     {
         mydialog_book.clear();
-        List<GUICommand> command_book_close = new ArrayList<GUICommand>();
+        GUICommandList command_book_close = new GUICommandList();
 
         Font font_metaurl=null;
         InputStream ttf=null;
