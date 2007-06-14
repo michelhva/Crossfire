@@ -89,7 +89,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final KeyBindings keyBindings = new KeyBindings();
     private final boolean[] key_shift = new boolean[]{false, false, false, false};
-    private List<GUICommand> mycurrentkeybinding = null;
+    private GUICommandList mycurrentkeybinding = null;
 
     private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
@@ -148,7 +148,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return mycurrentspell;
     }
-    public void createKeyBinding(final List<GUICommand> cmdlist)
+    public void createKeyBinding(final GUICommandList cmdlist)
     {
         mycurrentkeybinding = cmdlist;
         setDialogStatus(DLG_KEYBIND);
@@ -429,10 +429,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             if ((kb.getKeyCode()==e.getKeyCode())&&(kb.getKeyModifiers()==e.getModifiers()))
             {
-                for (final GUICommand cmd : kb.getCommands())
-                {
-                    cmd.execute();
-                }
+                kb.getCommands().execute();
                 return;
             }
         }
