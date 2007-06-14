@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.awt.AWTKeyStroke;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -37,6 +38,7 @@ import javax.swing.JFrame;
  *
  * @version 1.0
  * @author Lauwenmark
+ * @author Andreas Kirschbaum
  * @since 1.0
  */
 public class JXCWindow extends JFrame implements KeyListener, MouseInputListener,
@@ -302,7 +304,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         jxcWindowRenderer.initRendering();
         framecount = 0;
-        keyBindings.loadKeyBindings("keybindings.data");
+        keyBindings.loadKeyBindings("keybindings.txt", this);
         loadSpellBelt("spellbelt.data");
         starttime = System.nanoTime();
     }
@@ -313,7 +315,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         System.out.println(framecount+" frames in "+totaltime/1000000 +
                 " ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
         jxcWindowRenderer.endRendering();
-        keyBindings.saveKeyBindings("keybindings.data");
+        keyBindings.saveKeyBindings("keybindings.txt");
         saveSpellBelt("spellbelt.data");
         System.exit(0);
     }
@@ -425,13 +427,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         if((myserver == null)||(myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING))
             return;
-        for (final KeyBinding kb : keyBindings)
+        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
+        if (keyBinding != null)
         {
-            if ((kb.getKeyCode()==e.getKeyCode())&&(kb.getKeyModifiers()==e.getModifiers()))
-            {
-                kb.getCommands().execute();
-                return;
-            }
+            keyBinding.getCommands().execute();
+            return;
         }
         switch(e.getKeyCode())
         {
@@ -587,27 +587,48 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 else
                     sendNcom(0, "northwest");
                 break;
-            case KeyEvent.VK_A:
-                sendNcom(0, "apply");
-                break;
-            case KeyEvent.VK_S:
-                sendNcom(0, "save");
-                break;
-            case KeyEvent.VK_W:
-                sendNcom(0, "who");
-                break;
-            case KeyEvent.VK_QUOTE:
-                activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-                break;
-            case KeyEvent.VK_QUOTEDBL:
-                activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-                if (myactive_element != null)
-                {
-                    ((GUIText)myactive_element).setText("say ");
-                }
-                break;
             default:
                 break;
+        }
+    }
+    private void handleKeyType(final KeyEvent e)
+    {
+        if((myserver == null)||(myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING))
+            return;
+        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
+        if (keyBinding != null)
+        {
+            keyBinding.getCommands().execute();
+            return;
+        }
+        switch(e.getKeyChar())
+        {
+        case 'a':
+            sendNcom(0, "apply");
+            break;
+
+        case 's':
+            sendNcom(0, "save");
+            break;
+
+        case 'w':
+            sendNcom(0, "who");
+            break;
+
+        case '\'':
+            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+            break;
+
+        case '"':
+            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+            if (myactive_element != null)
+            {
+                ((GUIText)myactive_element).setText("say ");
+            }
+            break;
+
+        default:
+            break;
         }
     }
     public void keyPressed(final KeyEvent e)
@@ -631,12 +652,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 {
                     if (mycurrentkeybinding!=null)
                     {
-                        keyBindings.addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
+                        keyBindings.addKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
                     }
                     else
                     {
-                        keyBindings.deleteKeyBinding(e.getKeyCode(), e.getModifiers());
-                        keyBindings.addKeyBinding(e.getKeyCode(), e.getModifiers(), mycurrentkeybinding);
+                        keyBindings.deleteKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
                     }
                     mycurrentkeybinding = null;
                     setDialogStatus(DLG_NONE);
@@ -700,9 +720,38 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     public void keyTyped(final KeyEvent e)
     {
-        /*if (myactive_element != null)
+        if (mydialogstatus == DLG_KEYBIND)
+        {
+            if (mycurrentkeybinding!=null)
+            {
+                keyBindings.addKeyBindingAsKeyChar(e.getKeyChar(), mycurrentkeybinding);
+            }
+            else
+            {
+                keyBindings.deleteKeyBindingAsKeyChar(e.getKeyChar());
+            }
+            mycurrentkeybinding = null;
+            setDialogStatus(DLG_NONE);
+        }
+        else if (myactive_element != null)
+        {
             if (myactive_element instanceof KeyListener)
-        ((KeyListener)myactive_element).keyTyped(e);*/
+            {
+                ((KeyListener)myactive_element).keyTyped(e);
+                if (!myactive_element.isActive())
+                {
+                    myactive_element = null;
+                }
+            }
+            else
+            {
+                handleKeyType(e);
+            }
+        }
+        else
+        {
+            handleKeyType(e);
+        }
     }
     public void mouseClicked(final MouseEvent e)
     {

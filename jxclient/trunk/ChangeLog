@@ -1,3 +1,10 @@
+2007-06-14  Andreas Kirschbaum
+
+	* Make default key bindings work on any keyboard layout.
+
+	* Key bindings file format changed to text format; the filename
+	is now "keybindings.txt".
+
 2007-06-12  Andreas Kirschbaum
 
 	* Sort entries in metaserver list by hostname.
