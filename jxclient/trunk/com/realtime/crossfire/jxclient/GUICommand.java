@@ -167,7 +167,7 @@ public class GUICommand
         /** The window to operate on. */
         private final JXCWindow window;
 
-	/** The spell belt item to deliver. */
+        /** The spell belt item to deliver. */
         private final SpellBeltItem spellBeltItem;
 
         /**
