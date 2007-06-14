@@ -51,6 +51,12 @@ public class GUICommand
         myorder = order;
         myparams = params;
     }
+
+    public int getOrder()
+    {
+        return myorder;
+    }
+
     public void execute()
     {
         //System.out.println("Executing command "+myorder+ " on "+mytarget.getName());
@@ -156,6 +162,16 @@ public class GUICommand
         {
             this.window = window;
             this.command = command;
+        }
+
+        /**
+         * Return the command to execute.
+         *
+         * @return The command to execute.
+         */
+        public String getCommand()
+        {
+            return command;
         }
     }
 

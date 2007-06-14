@@ -25,38 +25,50 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public final class KeyBinding
+public abstract class KeyBinding
 {
-    private final int keyCode;
-    private final int modifiers;
     private final GUICommandList commands;
 
-    public int getKeyCode()
-    {
-        return keyCode;
-    }
-    public int getKeyModifiers()
-    {
-        return modifiers;
-    }
     public GUICommandList getCommands()
     {
         return commands;
     }
-    public KeyBinding(final int keyCode, final int modifiers, final GUICommandList commands)
+
+    protected KeyBinding(final GUICommandList commands)
     {
-        this.keyCode = keyCode;
-        this.modifiers = modifiers;
         this.commands = commands;
     }
-    public boolean equals(final Object op)
+
+    /** {@inheritDoc} */
+    public abstract boolean equals(final Object op);
+
+    /**
+     * Check whether this key binding matches a key code/modifiers pair.
+     *
+     * @param keyCode The key code to check.
+     *
+     * @param modifiers The modifiers to check.
+     *
+     * @return Whether the key binding matches the parameters.
+     */
+    public abstract boolean matchesKeyCode(final int keyCode, final int modifiers);
+
+    /**
+     * Check whether this key binding matches a key character.
+     *
+     * @param keyChar The key character to check.
+     *
+     * @return Whether the key binding matches the parameters.
+     */
+    public abstract boolean matchesKeyChar(final char keyChar);
+
+    /**
+     * Return the commands as a string.
+     *
+     * @return The commands as a string.
+     */
+    public String getCommandString()
     {
-        if (op instanceof KeyBinding)
-        {
-            final KeyBinding keyBinding = (KeyBinding)op;
-            return keyBinding.getKeyCode() == keyCode && keyBinding.getKeyModifiers() == modifiers;
-        }
-        else
-            return false;
+        return commands.getCommandString();
     }
 }

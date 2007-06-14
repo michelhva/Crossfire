@@ -20,10 +20,14 @@
 
 package com.realtime.crossfire.jxclient;
 
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.io.LineNumberReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -34,7 +38,7 @@ import java.util.List;
  *
  * @author Andreas Kirschbaum
  */
-public final class KeyBindings implements Iterable<KeyBinding>
+public final class KeyBindings
 {
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
@@ -43,13 +47,22 @@ public final class KeyBindings implements Iterable<KeyBinding>
         return keybindings.size();
     }
 
-    public void addKeyBinding(final int keycode, final int keymod, final GUICommandList cmdlist)
+    /**
+     * Add a key binding for a key code/modifiers pair.
+     *
+     * @param keyCode The key code for the key binding.
+     *
+     * @param modifiers The modifiers for the key binding.
+     *
+     * @param cmdlist The commands to associate to the key binding.
+     */
+    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist)
     {
-        final KeyBinding kb = new KeyBinding(keycode, keymod, cmdlist);
+        final KeyBinding keyBinding = new KeyCodeKeyBinding(keyCode, modifiers, cmdlist);
         KeyBinding elected = null;
         for (final KeyBinding ok : keybindings)
         {
-            if (ok.equals(kb))
+            if (ok.equals(keyBinding))
             {
                 elected = ok;
                 continue;
@@ -59,58 +72,152 @@ public final class KeyBindings implements Iterable<KeyBinding>
         {
             keybindings.remove(elected);
         }
-        keybindings.add(kb);
+        keybindings.add(keyBinding);
     }
 
-    public void deleteKeyBinding(final int keycode, final int keymod)
+    /**
+     * Add a key binding for a key character.
+     *
+     * @param keyCode The key character for the key binding.
+     *
+     * @param cmdlist The commands to associate to the key binding.
+     */
+    public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist)
     {
-        for (final KeyBinding kb : keybindings)
+        final KeyBinding keyBinding = new KeyCharKeyBinding(keyChar, cmdlist);
+        KeyBinding elected = null;
+        for (final KeyBinding ok : keybindings)
         {
-            if (kb.getKeyCode() == keycode && kb.getKeyModifiers() == keymod)
+            if (ok.equals(keyBinding))
             {
-                keybindings.remove(kb);
-                return;
+                elected = ok;
+                continue;
             }
+        }
+        if (elected != null)
+        {
+            keybindings.remove(elected);
+        }
+        keybindings.add(keyBinding);
+    }
+
+    /**
+     * Remove a key binding for a key code/modifiers pair.
+     *
+     * @param keyCode The key code of the key binding.
+     *
+     * @param modifiers The modifiers of the key binding.
+     */
+    public void deleteKeyBindingAsKeyCode(final int keyCode, final int modifiers)
+    {
+        final KeyBinding keyBinding = getKeyBindingAsKeyCode(keyCode, modifiers);
+        if (keyBinding != null)
+        {
+            keybindings.remove(keyBinding);
         }
     }
 
-    public Iterator<KeyBinding> iterator()
+    /**
+     * Remove a key binding for a key character.
+     *
+     * @param keyChar The key character of the key binding.
+     */
+    public void deleteKeyBindingAsKeyChar(final char keyChar)
     {
-        return Collections.unmodifiableList(keybindings).iterator();
+        final KeyBinding keyBinding = getKeyBindingAsKeyChar(keyChar);
+        if (keyBinding != null)
+        {
+            keybindings.remove(keyBinding);
+        }
     }
 
-    public void loadKeyBindings(final String filename)
+    /**
+     * Load the key bindings from the given file.
+     *
+     * @param filename The file name to save to.
+     *
+     * @param jxcWindow The window to execute the commands in.
+     */
+    public void loadKeyBindings(final String filename, final JXCWindow jxcWindow)
     {
-/*
+        keybindings.clear();
         try
         {
             final FileInputStream fis = new FileInputStream(filename);
             try
             {
-                final ObjectInputStream ois = new ObjectInputStream(fis);
+                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
                 try
                 {
-                    keybindings.clear();
-                    final int sz = ois.readInt();
-                    for(int i=0;i<sz;i++)
+                    final LineNumberReader lnr = new LineNumberReader(isr);
+                    try
                     {
-                        final int kc = ois.readInt();
-                        final int km = ois.readInt();
-                        final int lsz= ois.readInt();
-                        final List<GUICommand> guil = new ArrayList<GUICommand>();
-                        for(int j=0; j<lsz; j++)
+                        for (;;)
                         {
-                            ois.readObject();
-                        final GUICommand guic = new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND,
-                            new GUICommand.SendCommandParameter(this, (String)ois.readObject()));
-                        guil.add(guic);
+                            final String line = lnr.readLine();
+                            if (line == null)
+                            {
+                                break;
+                            }
+
+                            if (line.startsWith("char "))
+                            {
+                                final String[] tmp = line.substring(5).split(" ", 2);
+                                if (tmp.length != 2)
+                                {
+                                    System.err.println(filename+": ignoring invalid binding: "+line);
+                                }
+                                else
+                                {
+                                    try
+                                    {
+                                        final char keyChar = (char)Integer.parseInt(tmp[0]);
+                                        final GUICommandList commands = new GUICommandList(tmp[1], jxcWindow);
+                                        addKeyBindingAsKeyChar(keyChar, commands);
+                                    }
+                                    catch (final NumberFormatException ex)
+                                    {
+ex.printStackTrace();
+                                        System.err.println(filename+": ignoring invalid binding: "+line);
+                                    }
+                                }
+                            }
+                            else if(line.startsWith("code "))
+                            {
+                                final String[] tmp = line.substring(5).split(" ", 3);
+                                if (tmp.length != 3)
+                                {
+                                    System.err.println(filename+": ignoring invalid binding: "+line);
+                                }
+                                else
+                                {
+                                    try
+                                    {
+                                        final int keyCode = Integer.parseInt(tmp[0]);
+                                        final int modifiers = Integer.parseInt(tmp[1]);
+                                        final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
+                                        addKeyBindingAsKeyCode(keyCode, modifiers, commands);
+                                    }
+                                    catch (final NumberFormatException ex)
+                                    {
+                                        System.err.println(filename+": ignoring invalid binding: "+line);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                System.err.println(filename+": ignoring invalid binding: "+line);
+                            }
                         }
-                        keybindings.add(new KeyBinding(kc, km, guil));
+                    }
+                    finally
+                    {
+                        lnr.close();
                     }
                 }
                 finally
                 {
-                    ois.close();
+                    isr.close();
                 }
             }
             finally
@@ -118,40 +225,72 @@ public final class KeyBindings implements Iterable<KeyBinding>
                 fis.close();
             }
         }
-        catch (final Exception e)
+        catch (final FileNotFoundException ex)
         {
-            e.printStackTrace();
+            // no error message
+            keybindings.clear();
         }
-*/
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot load key bindings file "+filename+": "+ex.getMessage());
+            keybindings.clear();
+        }
     }
 
+    /**
+     * Save the key bindings to the given file.
+     *
+     * @param filename The file name to save to.
+     */
     public void saveKeyBindings(final String filename)
     {
-/*
         try
         {
             final FileOutputStream fos = new FileOutputStream(filename);
             try
             {
-                final ObjectOutputStream oos = new ObjectOutputStream(fos);
+                final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
                 try
                 {
-                    oos.writeInt(keybindings.size());
-                    for (final KeyBinding kb : keybindings)
+                    final BufferedWriter bw = new BufferedWriter(osw);
+                    try
                     {
-                        oos.writeInt(kb.getKeyCode());
-                        oos.writeInt(kb.getKeyModifiers());
-                        oos.writeInt(kb.getCommands().size());
-                        for (final GUICommand guic : kb.getCommands())
+                        for (final KeyBinding keyBinding : keybindings)
                         {
-                            final List guil = (List)guic.getParams();
-                            oos.writeObject((String)guil.get(1));
+                            if (keyBinding instanceof KeyCodeKeyBinding)
+                            {
+                                final KeyCodeKeyBinding keyCodeKeyBinding = (KeyCodeKeyBinding)keyBinding;
+                                bw.write("code ");
+                                bw.write(Integer.toString(keyCodeKeyBinding.getKeyCode()));
+                                bw.write(' ');
+                                bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
+                                bw.write(' ');
+                                bw.write(keyCodeKeyBinding.getCommandString());
+                                bw.newLine();
+                            }
+                            else if(keyBinding instanceof KeyCharKeyBinding )
+                            {
+                                final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding )keyBinding;
+                                bw.write("char ");
+                                bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
+                                bw.write(' ');
+                                bw.write(keyCharKeyBinding.getCommandString());
+                                bw.newLine();
+                            }
+                            else
+                            {
+                                throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
+                            }
                         }
+                    }
+                    finally
+                    {
+                        bw.close();
                     }
                 }
                 finally
                 {
-                    oos.close();
+                    osw.close();
                 }
             }
             finally
@@ -159,11 +298,53 @@ public final class KeyBindings implements Iterable<KeyBinding>
                 fos.close();
             }
         }
-        catch (final Exception e)
+        catch (final IOException e)
         {
-            System.err.println("Warning: the key bindings file does not exist or is unavailable.");
-            System.err.println("It should be created when you leave the client.");
+            System.err.println("Cannot write keybindings file "+filename+": "+e.getMessage());
         }
-*/
+    }
+
+    /**
+     * Find a key binding associated to a key code/modifiers pair.
+     *
+     * @param keyCode The key code to look up.
+     *
+     * @param modifiers The modifiers to look up.
+     *
+     * @return The key binding, or <code>null</code> if no key binding is
+     * associated.
+     */
+    public KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers)
+    {
+        for (final KeyBinding keyBinding : keybindings)
+        {
+            if (keyBinding.matchesKeyCode(keyCode, modifiers))
+            {
+                return keyBinding;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Find a key binding associated to a key character.
+     *
+     * @param keyChar The key character to look up.
+     *
+     * @return The key binding, or <code>null</code> if no key binding is
+     * associated.
+     */
+    public KeyBinding getKeyBindingAsKeyChar(final char keyChar)
+    {
+        for (final KeyBinding keyBinding : keybindings)
+        {
+            if (keyBinding.matchesKeyChar(keyChar))
+            {
+                return keyBinding;
+            }
+        }
+
+        return null;
     }
 }

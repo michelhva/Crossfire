@@ -63,4 +63,34 @@ public class GUICommandList
             command.execute();
         }
     }
+
+    /**
+     * Return the commands as a string.
+     *
+     * @return The commands as a string.
+     */
+    public String getCommandString()
+    {
+        final StringBuilder sb = new StringBuilder();
+        boolean firstCommand = true;
+        for (final GUICommand guiCommand : commands)
+        {
+            if (guiCommand.getOrder() != GUICommand.CMD_GUI_SEND_COMMAND)
+            {
+                throw new AssertionError("Cannot encode command of type "+guiCommand.getOrder());
+            }
+
+            if (firstCommand)
+            {
+                firstCommand = false;
+            }
+            else
+            {
+                sb.append(';');
+            }
+            final GUICommand.SendCommandParameter parameter = (GUICommand.SendCommandParameter)guiCommand.getParams();
+            sb.append(parameter.getCommand());
+        }
+        return sb.toString();
+    }
 }
