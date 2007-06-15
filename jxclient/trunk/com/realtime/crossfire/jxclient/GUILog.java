@@ -65,7 +65,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     /**
      * Pattern to match line breaks.
      */
-    private static final Pattern endOfLinePattern = Pattern.compile(" +\n");
+    private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
 
     public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
     {
@@ -75,12 +75,12 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         else
             mybackground = null;
         myfont = nf;
-        mynrchars = 40;
+        mynrchars = nw/5;
         myindex = 0;
         mylogtype = nt;
 
         lineHeight = myfont.getSize()+1;
-        mynrlines = nw/lineHeight;
+        mynrlines = nh/lineHeight;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -106,7 +106,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         mylogtype = nt;
 
         lineHeight = myfont.getSize()+1;
-        mynrlines = nw/lineHeight;
+        mynrlines = nh/lineHeight;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -223,12 +223,15 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
             mytextcolor.add(Color.WHITE);
             break;
         }
-        scrollDownWithoutRedraw();
+        if (myindex == mytext.size()-1-mynrlines)
+        {
+            myindex++;
+        }
     }
 
     public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
-        final String[] txtlines = endOfLinePattern.split(evt.getText(), 0);
+        final String[] txtlines = endOfLinePattern.split(evt.getText(), -1);
         for (final String txtline : txtlines)
         {
             if (txtline.length() > mynrchars)
@@ -252,26 +255,20 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
     public void scrollUp()
     {
-        myindex--;
-        if (myindex < 0)
-            myindex = 0;
-        render();
+        if (myindex > 0)
+        {
+            myindex--;
+            render();
+        }
     }
 
     public void scrollDown()
     {
-        scrollDownWithoutRedraw();
-        render();
-    }
-
-    /**
-     * Scroll down one line but do not redraw the window.
-     */
-    private void scrollDownWithoutRedraw()
-    {
-        myindex++;
-        if ((myindex+mynrlines) >= mytext.size())
-            myindex = mytext.size()-mynrlines;
+        if (myindex < mytext.size()-mynrlines)
+        {
+            myindex++;
+            render();
+        }
     }
 
     public int getIndex()

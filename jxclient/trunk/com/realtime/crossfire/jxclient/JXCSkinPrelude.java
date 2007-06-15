@@ -1237,7 +1237,7 @@ public class JXCSkinPrelude implements JXCSkin
                                             Stats.CS_STAT_RES_BLIND, GUIGauge.ORIENTATION_WE);
 
             //LowerBar (72,732)
-            GUIPicture gui_lower_back = new GUIPicture("lower_back", 0+72, 0+732,
+            GUIPicture gui_lower_back = new GUIPicture("lower_bar", 0+72, 0+732,
                     880, 36, "default.theme/pictures/lower_bar.png");
             GUICommandText gui_command = new GUICommandText("command", 127+72, 17+732,
                     512, 32, "default.theme/pictures/empty.png",
@@ -1387,7 +1387,7 @@ public class JXCSkinPrelude implements JXCSkin
             //TextPaneUp (679,100)
             GUIPicture gui_log_upper_back = new GUIPicture("lower_back", 0+679, 0+100,
                     301, 204, "default.theme/pictures/log1_expanded_inactive.png");
-            GUILog gui_log_upper = new GUILog("log_upper", 10+679,10+100,200,180,
+            GUILog gui_log_upper = new GUILog("log_upper", 10+679, 3+100, 250, 198,
                                               "default.theme/pictures/empty.png",
                                               font_log, 511);
             command_log_upper_up.add(new GUICommand(gui_log_upper,
