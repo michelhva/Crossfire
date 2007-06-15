@@ -37,14 +37,14 @@ import javax.imageio.ImageIO;
  */
 public class GUIGauge extends GUIElement implements CrossfireStatsListener
 {
-    private final int mystat;
-    private int myvalue = 0;
-    private int mymax = 0;
-    private int mymin = 0;
-    private BufferedImage mypicture_full;
-    private BufferedImage mypicture_negative;
-    private BufferedImage mypicture_empty;
-    private final int myorientation;
+    private final int stat;
+    private int curValue = 0;
+    private int maxValue = 0;
+    private int minValue = 0;
+    private BufferedImage pictureFull;
+    private BufferedImage pictureNegative;
+    private BufferedImage pictureEmpty;
+    private final int orientation;
 
     public static final int ORIENTATION_WE = 0;
     public static final int ORIENTATION_EW = 1;
@@ -56,31 +56,31 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
              String picture_negative, String picture_empty, int stat, int orientation)
             throws IOException
     {
-        mypicture_full     =
+        pictureFull     =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
         if (picture_negative != null)
-            mypicture_negative =
+            pictureNegative =
                 ImageIO.read(this.getClass().getClassLoader().getResource(picture_negative));
         else
-            mypicture_negative = null;
-        mypicture_empty    =
+            pictureNegative = null;
+        pictureEmpty    =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
         x = nx;
         y = ny;
         w = nw;
         h = nh;
-        mystat = stat;
+        this.stat = stat;
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         myname = nn;
-        myorientation = orientation;
+        this.orientation = orientation;
         render();
     }
     public void render()
     {
-        if (mymax  <= 0) return;
+        if (maxValue  <= 0) return;
 
         int fw = 0;
         int fh = 0;
@@ -88,62 +88,62 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         int fy = 0;
         Graphics2D g = mybuffer.createGraphics();
 
-        if (myvalue >= 0)
+        if (curValue >= 0)
         {
-            switch (myorientation)
+            switch (orientation)
             {
                 case ORIENTATION_WE:
-                    fw = (int)((float)Math.min(myvalue, mymax)*((float)w/(float)mymax));
+                    fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
                     fh = h;
                     break;
                 case ORIENTATION_EW:
-                    fw = (int)((float)Math.min(myvalue, mymax)*((float)w/(float)mymax));
+                    fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
                     fh = h;
                     fx = w - fw;
                     break;
                 case ORIENTATION_NS:
-                    fh = (int)((float)Math.min(myvalue, mymax)*((float)h/(float)mymax));
+                    fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
                     fw=w;
                     break;
                 case ORIENTATION_SN:
-                    fh = (int)((float)Math.min(myvalue, mymax)*((float)h/(float)mymax));
+                    fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
                     fy = h - fh;
                     fw=w;
                     break;
             }
             g.setBackground(new Color(0,0,0,0.0f));
             g.clearRect(0,0,w,h);
-            g.drawImage(mypicture_empty, 0,0,null);
-            g.drawImage(mypicture_full,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
+            g.drawImage(pictureEmpty, 0,0,null);
+            g.drawImage(pictureFull,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
             g.dispose();
         }
-        else if (mypicture_negative != null)
+        else if (pictureNegative != null)
         {
-            switch (myorientation)
+            switch (orientation)
             {
                 case ORIENTATION_WE:
-                    fw = (int)((float)(-myvalue)*((float)w/(float)(-mymin)));
+                    fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
                     fh = h;
                     fx = w - fw;
                     break;
                 case ORIENTATION_EW:
-                    fw = (int)((float)(-myvalue)*((float)w/(float)(-mymin)));
+                    fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
                     fh = h;
                     break;
                 case ORIENTATION_NS:
-                    fh = (int)((float)(-myvalue)*((float)h/(float)(-mymin)));
+                    fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
                     fw = w;
                     fy = h - fh;
                     break;
                 case ORIENTATION_SN:
-                    fh = (int)((float)(-myvalue)*((float)h/(float)(-mymin)));
+                    fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
                     fw = w;
                     break;
             }
             g.setBackground(new Color(0,0,0,0.0f));
             g.clearRect(0,0,w,h);
-            g.drawImage(mypicture_empty, 0,0,null);
-            g.drawImage(mypicture_negative,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
+            g.drawImage(pictureEmpty, 0,0,null);
+            g.drawImage(pictureNegative,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
             g.dispose();
         }
         setChanged();
@@ -151,24 +151,24 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
     public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
     {
         Stats s = evt.getStats();
-        switch (mystat)
+        switch (stat)
         {
             case Stats.CS_STAT_HP:
-                setValues(s.getStat(mystat), 0, s.getStat(Stats.CS_STAT_MAXHP));
+                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
                 break;
             case Stats.CS_STAT_SP:
-                setValues(s.getStat(mystat), 0, s.getStat(Stats.CS_STAT_MAXSP));
+                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
                 break;
             case Stats.CS_STAT_FOOD:
-                setValues(s.getStat(mystat), 0, 999);
+                setValues(s.getStat(stat), 0, 999);
                 break;
             case Stats.CS_STAT_GRACE:
-                setValues(s.getStat(mystat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
+                setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
                 break;
             default:
-                if (Stats.CS_STAT_RESIST_START <= mystat && mystat <= Stats.CS_STAT_RESIST_END)
+                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
                 {
-                    setValues(s.getStat(mystat), -100, 100);
+                    setValues(s.getStat(stat), -100, 100);
                 }
                 break;
         }
@@ -186,8 +186,8 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
      */
     private void setValues(final int curValue, final int minValue, final int maxValue)
     {
-        myvalue = curValue;
-        mymin = minValue;
-        mymax = maxValue;
+        this.curValue = curValue;
+        this.minValue = minValue;
+        this.maxValue = maxValue;
     }
 }
