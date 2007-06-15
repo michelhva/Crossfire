@@ -41,9 +41,9 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
     private int curValue = 0;
     private int maxValue = 0;
     private int minValue = 0;
-    private BufferedImage pictureFull;
-    private BufferedImage pictureNegative;
-    private BufferedImage pictureEmpty;
+    private final BufferedImage pictureFull;
+    private final BufferedImage pictureNegative;
+    private final BufferedImage pictureEmpty;
     private final int orientation;
 
     public static final int ORIENTATION_WE = 0;
