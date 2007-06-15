@@ -234,15 +234,26 @@ public class ItemsManager
                 throw new AssertionError();
             }
         }
-        list.add(item);
 
         if (where == currentFloor)
         {
+            list.add(item);
             modifiedFloors.add(list.size()-1);
         }
         else if(player != null && where == player.getTag())
         {
-            modifiedInventories.add(list.size()-1);
+            // inventory order differs from server order, so insert at correct
+            // position
+            final int index = getInsertionIndex(list, item);
+            list.add(index, item);
+            for (int i = index; i < list.size(); i++)
+            {
+                modifiedInventories.add(i);
+            }
+        }
+        else
+        {
+            list.add(item);
         }
     }
 
@@ -478,5 +489,48 @@ public class ItemsManager
     public void removeCurrentFloorListener(final CurrentFloorListener listener)
     {
         currentFloorListeners.remove(CurrentFloorListener.class, listener);
+    }
+
+    /**
+     * Find the correct insertion position for an inventory object.
+     *
+     * @param list The inventory objects.
+     *
+     * @param item The item to add.
+     *
+     * @return The insertion index.
+     */
+    private int getInsertionIndex(final List<CfItem> list, final CfItem item)
+    {
+        for (int i = 0; i < list.size(); i++)
+        {
+            if (compareItem(list.get(i), item) >= 0)
+            {
+                return i;
+            }
+        }
+        return list.size();
+    }
+
+    /**
+     * Compare two items by inventory order.
+     *
+     * @param item1 The first item to compare.
+     *
+     * @param item2 The second item to compare.
+     *
+     * @return The comparision result: -1=<code>item1</code> before
+     * </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
+     * +1=<code>item1</code> after </code>item2</code>.
+     */
+    private int compareItem(final CfItem item1, final CfItem item2)
+    {
+        if (item1.getType() < item2.getType()) return -1;
+        if (item1.getType() > item2.getType()) return +1;
+        final int cmp1 = item1.getName().compareTo(item2.getName());
+        if (cmp1 != 0) return cmp1;
+        if (item1.getTag() < item2.getTag()) return -1;
+        if (item1.getTag() > item2.getTag()) return +1;
+        return 0;
     }
 }
