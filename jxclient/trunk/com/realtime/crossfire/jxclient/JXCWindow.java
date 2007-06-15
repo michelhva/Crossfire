@@ -762,7 +762,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         synchronized(semaphore_drawing)
         {
             GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
-            if (elected == null) elected = jxcWindowRenderer.getCurrentGui().get(0);
+            if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0) elected = jxcWindowRenderer.getCurrentGui().get(0);
 
             GUIElement myother = null;
 
