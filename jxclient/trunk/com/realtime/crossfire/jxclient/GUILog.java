@@ -217,7 +217,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
             mytextcolor.add(Color.WHITE);
             break;
         }
-        scrollDown();
+        scrollDownWithoutRedraw();
     }
 
     public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
@@ -254,10 +254,18 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
     public void scrollDown()
     {
+        scrollDownWithoutRedraw();
+        render();
+    }
+
+    /**
+     * Scroll down one line but do not redraw the window.
+     */
+    private void scrollDownWithoutRedraw()
+    {
         myindex++;
         if ((myindex+mynrlines) >= mytext.size())
             myindex = mytext.size()-mynrlines;
-        render();
     }
 
     public int getIndex()
