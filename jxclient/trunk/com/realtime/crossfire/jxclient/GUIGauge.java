@@ -51,7 +51,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
     public static final int ORIENTATION_NS = 2;
     public static final int ORIENTATION_SN = 3;
 
-    public GUIGauge(String nn, int nx, int ny, int nw, int nh, String picture_full, String picture_negative, String picture_empty, int stat, int orientation) throws IOException
+    public GUIGauge(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final int orientation) throws IOException
     {
         pictureFull = ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
         if (picture_negative != null)
@@ -64,9 +64,9 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         w = nw;
         h = nh;
         this.stat = stat;
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         myname = nn;
         this.orientation = orientation;
@@ -80,7 +80,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         int fh = 0;
         int fx = 0;
         int fy = 0;
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
 
         if (curValue >= 0)
         {
@@ -148,9 +148,9 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         }
         setChanged();
     }
-    public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
+    public void CommandStatsReceived(final CrossfireCommandStatsEvent evt)
     {
-        Stats s = evt.getStats();
+        final Stats s = evt.getStats();
         switch (stat)
         {
         case Stats.CS_STAT_HP:
