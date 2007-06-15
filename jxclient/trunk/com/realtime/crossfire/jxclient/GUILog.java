@@ -30,6 +30,7 @@ import java.awt.Transparency;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 
 /**
@@ -60,6 +61,11 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
      * The height of one line of text in pixel.
      */
     private final int lineHeight;
+
+    /**
+     * Pattern to match line breaks.
+     */
+    private static final Pattern endOfLinePattern = Pattern.compile(" +\n");
 
     public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
     {
@@ -222,7 +228,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
     public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
-        final String[] txtlines = evt.getText().split("\n");
+        final String[] txtlines = endOfLinePattern.split(evt.getText(), 0);
         for (final String txtline : txtlines)
         {
             if (txtline.length() > mynrchars)
