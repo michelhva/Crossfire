@@ -100,7 +100,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public final static int KEY_SHIFT_ALT   = 2;
     public final static int KEY_SHIFT_ALTGR = 3;
     private boolean is_run_active = false;
-    private boolean is_fire_active = false;
 
     private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this);
 
@@ -110,7 +109,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     public boolean checkFire()
     {
-        return is_fire_active;
+        return false;
     }
     public void terminateScript(final ScriptProcess sp)
     {
@@ -480,8 +479,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 1");
-                    is_fire_active = true;
+                    sendNcom(0, "north f");
                 }
                 else
                     sendNcom(0, "north");
@@ -494,8 +492,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 2");
-                    is_fire_active = true;
+                    sendNcom(0, "northeast f");
                 }
                 else
                     sendNcom(0, "northeast");
@@ -509,8 +506,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 3");
-                    is_fire_active = true;
+                    sendNcom(0, "east f");
                 }
                 else
                     sendNcom(0, "east");
@@ -523,8 +519,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 4");
-                    is_fire_active = true;
+                    sendNcom(0, "southeast f");
                 }
                 else
                     sendNcom(0, "southeast");
@@ -538,8 +533,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 5");
-                    is_fire_active = true;
+                    sendNcom(0, "south f");
                 }
                 else
                     sendNcom(0, "south");
@@ -552,8 +546,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 6");
-                    is_fire_active = true;
+                    sendNcom(0, "southwest f");
                 }
                 else
                     sendNcom(0, "southwest");
@@ -567,8 +560,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 7");
-                    is_fire_active = true;
+                    sendNcom(0, "west f");
                 }
                 else
                     sendNcom(0, "west");
@@ -581,8 +573,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 }
                 else if (getKeyShift(KEY_SHIFT_SHIFT))
                 {
-                    sendNcom(0, "fire 8");
-                    is_fire_active = true;
+                    sendNcom(0, "northwest f");
                 }
                 else
                     sendNcom(0, "northwest");
@@ -694,11 +685,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
             case KeyEvent.VK_SHIFT:
                 setKeyShift(KEY_SHIFT_SHIFT, false);
-                if (is_fire_active)
-                {
-                    sendNcom(0, "fire_stop");
-                    is_fire_active = false;
-                }
                 break;
             case KeyEvent.VK_CONTROL:
                 setKeyShift(KEY_SHIFT_CTRL, false);
