@@ -38,26 +38,29 @@ import javax.imageio.ImageIO;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILog extends GUIElement implements CrossfireQueryListener,
-    GUIScrollable, CrossfireDrawinfoListener
+public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScrollable, CrossfireDrawinfoListener
 {
     private BufferedImage mybackground = null;
+
     private Font myfont;
-    private List<String> mytext=new LinkedList<String>();
-    private List<Color>  mytextcolor=new LinkedList<Color>();
+
+    private List<String> mytext = new LinkedList<String>();
+
+    private List<Color> mytextcolor = new LinkedList<Color>();
+
     private int mynrlines;
+
     private int mylogtype;
+
     private int myindex;
+
     private int mynrchars = 40;
 
-    public GUILog
-            (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nt)
-            throws IOException
+    public GUILog(String nn, int nx, int ny, int nw, int nh, String picture, Font nf, int nnr, int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
-            mybackground =
-                ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
+            mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
         myfont = nf;
@@ -66,7 +69,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         mylogtype = nt;
 
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsDevice gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         Graphics2D g = mybuffer.createGraphics();
@@ -75,14 +78,12 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         g.dispose();
         setChanged();
     }
-    public GUILog
-          (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nnw, int nt)
-            throws IOException
+
+    public GUILog(String nn, int nx, int ny, int nw, int nh, String picture, Font nf, int nnr, int nnw, int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
-            mybackground =
-                    ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
+            mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
         myfont = nf;
@@ -92,7 +93,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         mylogtype = nt;
 
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsDevice gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         Graphics2D g = mybuffer.createGraphics();
@@ -101,6 +102,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         g.dispose();
         setChanged();
     }
+
     protected void render()
     {
         try
@@ -143,53 +145,67 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         myindex++;
         render();
     }
+
     private void addTextLine(String txt, int txttype)
     {
         mytext.add(txt);
         switch(txttype)
         {
-            case 0: //black
-                mytextcolor.add(Color.WHITE);
-                break;
-            case 1: //white
-                mytextcolor.add(Color.WHITE);
-                break;
-            case 2: //navy blue
-                mytextcolor.add(Color.BLUE);
-                break;
-            case 3: //red
-                mytextcolor.add(Color.RED);
-                break;
-            case 4: //orange
-                mytextcolor.add(Color.ORANGE);
-                break;
-            case 5: //dodger blue
-                mytextcolor.add(Color.CYAN);
-                break;
-            case 6: //dark orange
-                mytextcolor.add(Color.MAGENTA);
-                break;
-            case 7: //sea green
-                mytextcolor.add(Color.GREEN);
-                break;
-            case 8: //dark sea green
-                mytextcolor.add(Color.GREEN);
-                break;
-            case 9: //grey
-                mytextcolor.add(Color.GRAY);
-                break;
-            case 10://brown sienna
-                mytextcolor.add(Color.PINK);
-                break;
-            case 11://gold
-                mytextcolor.add(Color.YELLOW);
-                break;
-            case 12://khaki
-                mytextcolor.add(Color.WHITE);
-                break;
-            default:
-                mytextcolor.add(Color.WHITE);
-                break;
+        case 0: //black
+            mytextcolor.add(Color.WHITE);
+            break;
+
+        case 1: //white
+            mytextcolor.add(Color.WHITE);
+            break;
+
+        case 2: //navy blue
+            mytextcolor.add(Color.BLUE);
+            break;
+
+        case 3: //red
+            mytextcolor.add(Color.RED);
+            break;
+
+        case 4: //orange
+            mytextcolor.add(Color.ORANGE);
+            break;
+
+        case 5: //dodger blue
+            mytextcolor.add(Color.CYAN);
+            break;
+
+        case 6: //dark orange
+            mytextcolor.add(Color.MAGENTA);
+            break;
+
+        case 7: //sea green
+            mytextcolor.add(Color.GREEN);
+            break;
+
+        case 8: //dark sea green
+            mytextcolor.add(Color.GREEN);
+            break;
+
+        case 9: //grey
+            mytextcolor.add(Color.GRAY);
+            break;
+
+        case 10: //brown sienna
+            mytextcolor.add(Color.PINK);
+            break;
+
+        case 11: //gold
+            mytextcolor.add(Color.YELLOW);
+            break;
+
+        case 12: //khaki
+            mytextcolor.add(Color.WHITE);
+            break;
+
+        default:
+            mytextcolor.add(Color.WHITE);
+            break;
         }
         scrollDown();
     }
@@ -197,17 +213,17 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
     public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt)
     {
         String[] txtlines = evt.getText().split("\n");
-        for(int i=0; i<txtlines.length;i++)
+        for (int i = 0; i < txtlines.length; i++)
         {
-            if (txtlines[i].length()>mynrchars)
+            if (txtlines[i].length() > mynrchars)
             {
-                int k=0;
-                for(k=mynrchars; k<txtlines[i].length();k+=mynrchars)
+                int k = 0;
+                for (k = mynrchars; k < txtlines[i].length(); k += mynrchars)
                 {
-                    String str = txtlines[i].substring(k-mynrchars,k);
+                    String str = txtlines[i].substring(k-mynrchars, k);
                     addTextLine(str, evt.getTextType());
                 }
-                String strf = txtlines[i].substring(k-mynrchars,txtlines[i].length());
+                String strf = txtlines[i].substring(k-mynrchars, txtlines[i].length());
                 addTextLine(strf, evt.getTextType());
             }
             else
@@ -217,18 +233,23 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         }
         render();
     }
+
     public void scrollUp()
     {
         myindex--;
-        if (myindex < 0) myindex = 0;
+        if (myindex < 0)
+            myindex = 0;
         render();
     }
+
     public void scrollDown()
     {
         myindex++;
-        if ((myindex + mynrlines)>= mytext.size()) myindex = mytext.size()-mynrlines;
+        if ((myindex+mynrlines) >= mytext.size())
+            myindex = mytext.size()-mynrlines;
         render();
     }
+
     public int getIndex()
     {
         return myindex;
