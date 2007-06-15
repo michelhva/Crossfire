@@ -108,8 +108,8 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         try
         {
             Graphics2D g = mybuffer.createGraphics();
-            g.setBackground(new Color(0,0,0,0.0f));
-            g.clearRect(0,0,w,h);
+            g.setBackground(new Color(0, 0, 0, 0.0f));
+            g.clearRect(0, 0, w, h);
             if (mybackground != null)
             {
                 g.drawImage(mybackground, x, y, null);
@@ -118,7 +118,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
             try
             {
-                for(int i=myindex; i<myindex+mynrlines;i++)
+                for(int i = myindex; i < myindex+mynrlines; i++)
                 {
                     g.setColor(mytextcolor.get(i));
                     if (mytext.get(i) != null)
