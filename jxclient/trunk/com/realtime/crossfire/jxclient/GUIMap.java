@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.Color;
+import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;
 import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
@@ -228,5 +229,31 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             new_map_happened = true;
         }
         setChanged();
+    }
+
+    /** {@inheritDoc} */
+    public void mouseClicked(final MouseEvent e)
+    {
+        switch (e.getButton())
+        {
+        case MouseEvent.BUTTON1:
+            final int dx = (e.getX()+getX())/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
+            final int dy = (e.getY()+getY())/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
+            try
+            {
+                final JXCWindow jxcw = (JXCWindow)e.getSource();
+                jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
+            }
+            catch (Exception ex)
+            {
+                ex.printStackTrace();
+                System.exit(0);
+            }
+            break;
+
+        case MouseEvent.BUTTON2:
+        case MouseEvent.BUTTON3:
+            break;
+        }
     }
 }
