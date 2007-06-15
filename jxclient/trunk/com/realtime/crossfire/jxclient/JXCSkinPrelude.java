@@ -1389,7 +1389,7 @@ public class JXCSkinPrelude implements JXCSkin
                     301, 204, "default.theme/pictures/log1_expanded_inactive.png");
             GUILog gui_log_upper = new GUILog("log_upper", 10+679,10+100,200,180,
                                               "default.theme/pictures/empty.png",
-                                              font_log, 15,511);
+                                              font_log, 511);
             command_log_upper_up.add(new GUICommand(gui_log_upper,
                                      GUICommand.CMD_SCROLLUP, ""));
             command_log_upper_down.add(new GUICommand(gui_log_upper,

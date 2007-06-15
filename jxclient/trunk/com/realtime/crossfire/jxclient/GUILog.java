@@ -61,7 +61,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
      */
     private final int lineHeight;
 
-    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnr, final int nt) throws IOException
+    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
@@ -69,12 +69,12 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         else
             mybackground = null;
         myfont = nf;
-        mynrlines = nnr;
         mynrchars = 40;
         myindex = 0;
         mylogtype = nt;
 
         lineHeight = myfont.getSize()+1;
+        mynrlines = nw/lineHeight;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -87,7 +87,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         setChanged();
     }
 
-    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnr, final int nnw, final int nt) throws IOException
+    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnw, final int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
@@ -95,12 +95,12 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         else
             mybackground = null;
         myfont = nf;
-        mynrlines = nnr;
         mynrchars = nnw;
         myindex = 0;
         mylogtype = nt;
 
         lineHeight = myfont.getSize()+1;
+        mynrlines = nw/lineHeight;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
