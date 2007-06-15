@@ -37,14 +37,14 @@ import javax.imageio.ImageIO;
  */
 public class GUIGauge extends GUIElement implements CrossfireStatsListener
 {
-    private int mystat;
+    private final int mystat;
     private int myvalue = 0;
     private int mymax = 0;
     private int mymin = 0;
     private BufferedImage mypicture_full;
     private BufferedImage mypicture_negative;
     private BufferedImage mypicture_empty;
-    private int myorientation;
+    private final int myorientation;
 
     public static final int ORIENTATION_WE = 0;
     public static final int ORIENTATION_EW = 1;
