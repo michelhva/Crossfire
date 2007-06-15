@@ -54,6 +54,16 @@ public class Gui
     }
 
     /**
+     * Return the number of {@link GUIElement}s of this gui.
+     *
+     * @return The number gui elements.
+     */
+    public int size()
+    {
+        return elements.size();
+    }
+
+    /**
      * Return one {@link GUIElement} of this gui.
      *
      * @param index The gui element index.
