@@ -66,31 +66,6 @@ public abstract class ServerConnection extends Thread
      */
     public static final int         STATUS_QUERY       = 2;
 
-    /**
-     * The width of the map displayed, in squares.
-     * @since 1.0
-     */
-    public static final int         MAP_WIDTH  =17;
-
-    /**
-     * The height of the map displayed, in squares.
-     * @since 1.0
-     */
-    public static final int         MAP_HEIGHT =13;
-
-    /**
-     * The total number of map layers to display.
-     * @since 1.0
-     */
-    public static final int         NUM_LAYERS =3;
-
-    /**
-     * The pixel size of the gaming squares. Notice that they are supposed to
-     * be *squares*, so only a single value is needed :)
-     * @since 1.0
-     */
-    public static final int         SQUARE_SIZE = 64;
-
     private int                     mystatus = STATUS_UNCONNECTED;
     private String mystatus_sem = "mystatus_sem";
 

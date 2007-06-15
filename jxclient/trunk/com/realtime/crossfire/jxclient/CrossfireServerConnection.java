@@ -39,6 +39,17 @@ import java.util.List;
 public class CrossfireServerConnection extends ServerConnection
 {
     /**
+     * The total number of map layers to display.
+     */
+    public static final int NUM_LAYERS = 3;
+
+    /**
+     * The pixel size of the gaming squares. Notice that they are supposed to
+     * be *squares*, so only a single value is needed :)
+     */
+    public static final int SQUARE_SIZE = 64;
+
+    /**
      * The map width in tiles that is negotiated with the server.
      */
     public static final int MAP_WIDTH = 17;
