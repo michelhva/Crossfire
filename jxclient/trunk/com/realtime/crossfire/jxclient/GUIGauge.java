@@ -51,27 +51,21 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
     public static final int ORIENTATION_NS = 2;
     public static final int ORIENTATION_SN = 3;
 
-    public GUIGauge
-            (String nn, int nx, int ny,int  nw,int  nh, String picture_full,
-             String picture_negative, String picture_empty, int stat, int orientation)
-            throws IOException
+    public GUIGauge(String nn, int nx, int ny, int nw, int nh, String picture_full, String picture_negative, String picture_empty, int stat, int orientation) throws IOException
     {
-        pictureFull     =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
+        pictureFull = ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
         if (picture_negative != null)
-            pictureNegative =
-                ImageIO.read(this.getClass().getClassLoader().getResource(picture_negative));
+            pictureNegative = ImageIO.read(this.getClass().getClassLoader().getResource(picture_negative));
         else
             pictureNegative = null;
-        pictureEmpty    =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
+        pictureEmpty = ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
         x = nx;
         y = ny;
         w = nw;
         h = nh;
         this.stat = stat;
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsDevice gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         myname = nn;
@@ -80,7 +74,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
     }
     public void render()
     {
-        if (maxValue  <= 0) return;
+        if (maxValue <= 0) return;
 
         int fw = 0;
         int fh = 0;
@@ -92,58 +86,64 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         {
             switch (orientation)
             {
-                case ORIENTATION_WE:
-                    fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
-                    fh = h;
-                    break;
-                case ORIENTATION_EW:
-                    fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
-                    fh = h;
-                    fx = w - fw;
-                    break;
-                case ORIENTATION_NS:
-                    fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
-                    fw=w;
-                    break;
-                case ORIENTATION_SN:
-                    fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
-                    fy = h - fh;
-                    fw=w;
-                    break;
+            case ORIENTATION_WE:
+                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
+                fh = h;
+                break;
+
+            case ORIENTATION_EW:
+                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
+                fh = h;
+                fx = w-fw;
+                break;
+
+            case ORIENTATION_NS:
+                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
+                fw = w;
+                break;
+
+            case ORIENTATION_SN:
+                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
+                fy = h-fh;
+                fw = w;
+                break;
             }
-            g.setBackground(new Color(0,0,0,0.0f));
-            g.clearRect(0,0,w,h);
-            g.drawImage(pictureEmpty, 0,0,null);
-            g.drawImage(pictureFull,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
+            g.setBackground(new Color(0, 0, 0, 0.0f));
+            g.clearRect(0, 0, w, h);
+            g.drawImage(pictureEmpty, 0, 0, null);
+            g.drawImage(pictureFull, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
             g.dispose();
         }
         else if (pictureNegative != null)
         {
             switch (orientation)
             {
-                case ORIENTATION_WE:
-                    fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
-                    fh = h;
-                    fx = w - fw;
-                    break;
-                case ORIENTATION_EW:
-                    fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
-                    fh = h;
-                    break;
-                case ORIENTATION_NS:
-                    fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
-                    fw = w;
-                    fy = h - fh;
-                    break;
-                case ORIENTATION_SN:
-                    fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
-                    fw = w;
-                    break;
+            case ORIENTATION_WE:
+                fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
+                fh = h;
+                fx = w-fw;
+                break;
+
+            case ORIENTATION_EW:
+                fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
+                fh = h;
+                break;
+
+            case ORIENTATION_NS:
+                fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
+                fw = w;
+                fy = h-fh;
+                break;
+
+            case ORIENTATION_SN:
+                fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
+                fw = w;
+                break;
             }
-            g.setBackground(new Color(0,0,0,0.0f));
-            g.clearRect(0,0,w,h);
-            g.drawImage(pictureEmpty, 0,0,null);
-            g.drawImage(pictureNegative,fx,fy,fw+fx,fh+fy,fx,fy,fw+fx,fh+fy,null);
+            g.setBackground(new Color(0, 0, 0, 0.0f));
+            g.clearRect(0, 0, w, h);
+            g.drawImage(pictureEmpty, 0, 0, null);
+            g.drawImage(pictureNegative, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
             g.dispose();
         }
         setChanged();
@@ -153,24 +153,28 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         Stats s = evt.getStats();
         switch (stat)
         {
-            case Stats.CS_STAT_HP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
-                break;
-            case Stats.CS_STAT_SP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
-                break;
-            case Stats.CS_STAT_FOOD:
-                setValues(s.getStat(stat), 0, 999);
-                break;
-            case Stats.CS_STAT_GRACE:
-                setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
-                break;
-            default:
-                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
-                {
-                    setValues(s.getStat(stat), -100, 100);
-                }
-                break;
+        case Stats.CS_STAT_HP:
+            setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
+            break;
+
+        case Stats.CS_STAT_SP:
+            setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
+            break;
+
+        case Stats.CS_STAT_FOOD:
+            setValues(s.getStat(stat), 0, 999);
+            break;
+
+        case Stats.CS_STAT_GRACE:
+            setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
+            break;
+
+        default:
+            if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
+            {
+                setValues(s.getStat(stat), -100, 100);
+            }
+            break;
         }
         render();
     }
