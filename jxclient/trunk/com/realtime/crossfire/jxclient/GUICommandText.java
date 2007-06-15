@@ -62,7 +62,6 @@ public class GUICommandText extends GUIText implements KeyListener
                 switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
                 {
                     case CrossfireServerConnection.STATUS_PLAYING:
-                        System.out.println("Command:"+mytext);
                         if (mytext.startsWith("bind "))
                         {
                             String cmdl = mytext.substring(5);
