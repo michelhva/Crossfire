@@ -27,22 +27,22 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireListener
 {
-    public void CommandImageReceived(CrossfireCommandImageEvent evt);
-    public void CommandGoodbyeReceived(CrossfireCommandGoodbyeEvent evt);
-    public void CommandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
-    public void CommandFaceReceived(CrossfireCommandFaceEvent evt);
-    public void CommandItemReceived(CrossfireCommandItemEvent evt);
-    public void CommandMap1Received(CrossfireCommandMap1Event evt);
-    public void CommandNewmapReceived(CrossfireCommandNewmapEvent evt);
-    public void CommandPlayerReceived(CrossfireCommandPlayerEvent evt);
-    public void CommandStatsReceived(CrossfireCommandStatsEvent evt);
-    public void CommandMapscrollReceived(CrossfireCommandMapscrollEvent evt);
-    public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
-    public void CommandDrawextinfoReceived(CrossfireCommandDrawinfoEvent evt);
-    public void CommandAnimReceived(CrossfireCommandAnimEvent evt);
-    public void CommandVersionReceived(CrossfireCommandVersionEvent evt);
-    public void CommandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
-    public void CommandAddmeFailedReceived(CrossfireCommandAddmeFailedEvent evt);
-    public void CommandSetupReceived(CrossfireCommandSetupEvent evt);
-    public void CommandQueryReceived(CrossfireCommandQueryEvent evt);
+    public void commandImageReceived(CrossfireCommandImageEvent evt);
+    public void commandGoodbyeReceived(CrossfireCommandGoodbyeEvent evt);
+    public void commandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
+    public void commandFaceReceived(CrossfireCommandFaceEvent evt);
+    public void commandItemReceived(CrossfireCommandItemEvent evt);
+    public void commandMap1Received(CrossfireCommandMap1Event evt);
+    public void commandNewmapReceived(CrossfireCommandNewmapEvent evt);
+    public void commandPlayerReceived(CrossfireCommandPlayerEvent evt);
+    public void commandStatsReceived(CrossfireCommandStatsEvent evt);
+    public void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt);
+    public void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
+    public void commandDrawextinfoReceived(CrossfireCommandDrawinfoEvent evt);
+    public void commandAnimReceived(CrossfireCommandAnimEvent evt);
+    public void commandVersionReceived(CrossfireCommandVersionEvent evt);
+    public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
+    public void commandAddmeFailedReceived(CrossfireCommandAddmeFailedEvent evt);
+    public void commandSetupReceived(CrossfireCommandSetupEvent evt);
+    public void commandQueryReceived(CrossfireCommandQueryEvent evt);
 }

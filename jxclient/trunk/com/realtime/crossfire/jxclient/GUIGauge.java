@@ -232,7 +232,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         setChanged();
     }
 
-    public void CommandStatsReceived(final CrossfireCommandStatsEvent evt)
+    public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
     {
         final Stats s = evt.getStats();
         switch (stat)

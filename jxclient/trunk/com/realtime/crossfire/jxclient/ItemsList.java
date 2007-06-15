@@ -662,7 +662,7 @@ public class ItemsList
         Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
         while (it.hasNext())
         {
-            it.next().CommandAddSpellReceived(evt);
+            it.next().commandAddSpellReceived(evt);
         }
     }
     public static void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) throws IOException

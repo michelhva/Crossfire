@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireAddmeSuccessListener
 {
-    public void CommandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
+    public void commandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
 }

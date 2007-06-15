@@ -676,7 +676,7 @@ public class CrossfireServerConnection extends ServerConnection
                             final CrossfireCommandDrawextinfoEvent evt = new CrossfireCommandDrawextinfoEvent(this, color, type, subtype, message);
                             for (final CrossfireDrawextinfoListener listener : mylisteners_drawextinfo)
                             {
-                                listener.CommandDrawextinfoReceived(evt);
+                                listener.commandDrawextinfoReceived(evt);
                             }
                         }
                         return;
@@ -700,7 +700,7 @@ public class CrossfireServerConnection extends ServerConnection
                             final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
                             for (final CrossfireDrawinfoListener listener : mylisteners_drawinfo)
                             {
-                                listener.CommandDrawinfoReceived(evt);
+                                listener.commandDrawinfoReceived(evt);
                             }
                         }
                         return;
@@ -1018,7 +1018,7 @@ public class CrossfireServerConnection extends ServerConnection
                     final CrossfireCommandQueryEvent evt = new CrossfireCommandQueryEvent(this, text, flags);
                     for (final CrossfireQueryListener listener : mylisteners_query)
                     {
-                        listener.CommandQueryReceived(evt);
+                        listener.commandQueryReceived(evt);
                     }
                 }
                 return;
@@ -1536,7 +1536,7 @@ public class CrossfireServerConnection extends ServerConnection
         Iterator<CrossfireDrawinfoListener> it = mylisteners_drawinfo.iterator();
         while (it.hasNext())
         {
-            it.next().CommandDrawinfoReceived(evt);
+            it.next().commandDrawinfoReceived(evt);
         }
     }
 
