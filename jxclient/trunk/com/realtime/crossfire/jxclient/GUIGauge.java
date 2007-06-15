@@ -154,34 +154,40 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         switch (mystat)
         {
             case Stats.CS_STAT_HP:
-                mymax = s.getStat(Stats.CS_STAT_MAXHP);
-                mymin = 0;
-                myvalue = s.getStat(mystat);
+                setValues(s.getStat(mystat), 0, s.getStat(Stats.CS_STAT_MAXHP));
                 break;
             case Stats.CS_STAT_SP:
-                mymax = s.getStat(Stats.CS_STAT_MAXSP);
-                mymin = 0;
-                myvalue = s.getStat(mystat);
+                setValues(s.getStat(mystat), 0, s.getStat(Stats.CS_STAT_MAXSP));
                 break;
             case Stats.CS_STAT_FOOD:
-                mymax = 1000;
-                mymin = 0;
-                myvalue = s.getStat(mystat);
+                setValues(s.getStat(mystat), 0, 999);
                 break;
             case Stats.CS_STAT_GRACE:
-                mymax = s.getStat(Stats.CS_STAT_MAXGRACE);
-                mymin = -(s.getStat(Stats.CS_STAT_MAXGRACE));
-                myvalue = s.getStat(mystat);
+                setValues(s.getStat(mystat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
                 break;
             default:
-                if ((mystat >= Stats.CS_STAT_RESIST_START)&&(mystat <= Stats.CS_STAT_RESIST_END))
+                if (Stats.CS_STAT_RESIST_START <= mystat && mystat <= Stats.CS_STAT_RESIST_END)
                 {
-                    mymax = 100;
-                    mymin = -100;
-                    myvalue = s.getStat(mystat);
-                    break;
+                    setValues(s.getStat(mystat), -100, 100);
                 }
+                break;
         }
         render();
+    }
+
+    /**
+     * Change the displayed values.
+     *
+     * @param curValue The values to display.
+     *
+     * @param minValue The minium possible value.
+     *
+     * @param maxValue The maximum possible value.
+     */
+    private void setValues(final int curValue, final int minValue, final int maxValue)
+    {
+        myvalue = curValue;
+        mymin = minValue;
+        mymax = maxValue;
     }
 }
