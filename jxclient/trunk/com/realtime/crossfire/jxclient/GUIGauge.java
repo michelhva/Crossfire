@@ -39,8 +39,15 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
 {
     private final int stat;
     private int curValue = 0;
-    private int maxValue = 0;
+    private int maxValue = -1;
     private int minValue = 0;
+
+    private int fw = 0;
+    private int fh = 0;
+    private int fx = 0;
+    private int fy = 0;
+    private BufferedImage fPicture = null;
+
     private final BufferedImage pictureFull;
     private final BufferedImage pictureNegative;
     private final BufferedImage pictureEmpty;
@@ -66,84 +73,165 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         this.orientation = orientation;
-        render();
+        setValues(0, 0, 0);
     }
     public void render()
     {
-        if (maxValue <= 0) return;
+        if (maxValue <= minValue)
+        {
+            draw(0, 0, 0, 0, null);
+            return;
+        }
 
         int fw = 0;
         int fh = 0;
         int fx = 0;
         int fy = 0;
+
+        if (curValue < 0 && pictureNegative != null)
+        {
+            switch (orientation)
+            {
+            case ORIENTATION_WE:
+                fw = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
+                fh = h;
+                fx = w-fw;
+                draw(fx, fy, fw, fh, pictureNegative);
+                break;
+
+            case ORIENTATION_EW:
+                fw = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
+                fh = h;
+                draw(fx, fy, fw, fh, pictureNegative);
+                break;
+
+            case ORIENTATION_NS:
+                fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
+                fw = w;
+                fy = h-fh;
+                draw(fx, fy, fw, fh, pictureNegative);
+                break;
+
+            case ORIENTATION_SN:
+                fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
+                fw = w;
+                draw(fx, fy, fw, fh, pictureNegative);
+                break;
+            }
+        }
+        else
+        {
+            switch (orientation)
+            {
+            case ORIENTATION_WE:
+                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
+                fh = h;
+                draw(fx, fy, fw, fh, pictureFull);
+                break;
+
+            case ORIENTATION_EW:
+                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
+                fh = h;
+                fx = w-fw;
+                draw(fx, fy, fw, fh, pictureFull);
+                break;
+
+            case ORIENTATION_NS:
+                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
+                fw = w;
+                draw(fx, fy, fw, fh, pictureFull);
+                break;
+
+            case ORIENTATION_SN:
+                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
+                fy = h-fh;
+                fw = w;
+                draw(fx, fy, fw, fh, pictureFull);
+                break;
+            }
+        }
+    }
+
+    /**
+     * Draw the given part of a picture to {@link #mybuffer}.
+     *
+     * @param fx The x-coordinate of the area to draw from
+     * <code>fPicture</code>.
+     *
+     * @param fy The y-coordinate of the area to draw from
+     * <code>fPicture</code>.
+     *
+     * @param fw The width of the area to draw from <code>fPicture</code>.
+     *
+     * @param fh The height of the area to draw from <code>fPicture</code>.
+     *
+     * @param fPicture The picture to draw.
+     */
+    private void draw(int fx, int fy, int fw, int fh, final BufferedImage fPicture)
+    {
+        assert this.w > 0;
+        if (fx > this.w)
+        {
+            fx = this.w;
+            fw = 0;
+        }
+        else
+        {
+            if (fx < 0)
+            {
+                fw -= -fx;
+                fx = 0;
+            }
+
+            if (fw > this.w)
+            {
+                fw = this.w;
+            }
+        }
+
+        assert this.h > 0;
+        if (fy > this.h)
+        {
+            fy = this.h;
+            fh = 0;
+        }
+        else
+        {
+            if (fy < 0)
+            {
+                fh -= -fy;
+                fy = 0;
+            }
+
+            if (fh > this.h)
+            {
+                fh = this.h;
+            }
+        }
+
+        if (this.fx == fx && this.fy == fy && this.fw == fw && this.fh == fh && this.fPicture == fPicture)
+        {
+            return;
+        }
+
+        this.fx = fx;
+        this.fy = fy;
+        this.fw = fw;
+        this.fh = fh;
+        this.fPicture = fPicture;
+
         final Graphics2D g = mybuffer.createGraphics();
-
-        if (curValue >= 0)
+        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.clearRect(0, 0, w, h);
+        g.drawImage(pictureEmpty, 0, 0, null);
+        if (fPicture != null)
         {
-            switch (orientation)
-            {
-            case ORIENTATION_WE:
-                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
-                fh = h;
-                break;
-
-            case ORIENTATION_EW:
-                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue));
-                fh = h;
-                fx = w-fw;
-                break;
-
-            case ORIENTATION_NS:
-                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
-                fw = w;
-                break;
-
-            case ORIENTATION_SN:
-                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue));
-                fy = h-fh;
-                fw = w;
-                break;
-            }
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
-            g.drawImage(pictureEmpty, 0, 0, null);
-            g.drawImage(pictureFull, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
-            g.dispose();
+            g.drawImage(fPicture, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
         }
-        else if (pictureNegative != null)
-        {
-            switch (orientation)
-            {
-            case ORIENTATION_WE:
-                fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
-                fh = h;
-                fx = w-fw;
-                break;
-
-            case ORIENTATION_EW:
-                fw = (int)((float)(-curValue)*((float)w/(float)(-minValue)));
-                fh = h;
-                break;
-
-            case ORIENTATION_NS:
-                fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
-                fw = w;
-                fy = h-fh;
-                break;
-
-            case ORIENTATION_SN:
-                fh = (int)((float)(-curValue)*((float)h/(float)(-minValue)));
-                fw = w;
-                break;
-            }
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
-            g.drawImage(pictureEmpty, 0, 0, null);
-            g.drawImage(pictureNegative, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
-            g.dispose();
-        }
+        g.dispose();
         setChanged();
     }
+
     public void CommandStatsReceived(final CrossfireCommandStatsEvent evt)
     {
         final Stats s = evt.getStats();
@@ -172,7 +260,6 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
             }
             break;
         }
-        render();
     }
 
     /**
@@ -186,8 +273,14 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
      */
     private void setValues(final int curValue, final int minValue, final int maxValue)
     {
+        if (this.curValue == curValue && this.minValue == minValue && this.maxValue == maxValue)
+        {
+            return;
+        }
+
         this.curValue = curValue;
         this.minValue = minValue;
         this.maxValue = maxValue;
+        render();
     }
 }
