@@ -214,22 +214,22 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
         final String[] txtlines = evt.getText().split("\n");
-        for (int i = 0; i < txtlines.length; i++)
+        for (final String txtline : txtlines)
         {
-            if (txtlines[i].length() > mynrchars)
+            if (txtline.length() > mynrchars)
             {
                 int k = 0;
-                for (k = mynrchars; k < txtlines[i].length(); k += mynrchars)
+                for (k = mynrchars; k < txtline.length(); k += mynrchars)
                 {
-                    final String str = txtlines[i].substring(k-mynrchars, k);
+                    final String str = txtline.substring(k-mynrchars, k);
                     addTextLine(str, evt.getTextType());
                 }
-                final String strf = txtlines[i].substring(k-mynrchars, txtlines[i].length());
+                final String strf = txtline.substring(k-mynrchars, txtline.length());
                 addTextLine(strf, evt.getTextType());
             }
             else
             {
-                addTextLine(txtlines[i], evt.getTextType());
+                addTextLine(txtline, evt.getTextType());
             }
         }
         render();
