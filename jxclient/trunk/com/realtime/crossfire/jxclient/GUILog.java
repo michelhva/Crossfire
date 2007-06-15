@@ -54,15 +54,12 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
             (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nt)
             throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         if (picture != null)
             mybackground =
                 ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         myfont = nf;
         mynrlines = nnr;
         myindex = 0;
@@ -76,22 +73,18 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         if (mybackground != null)
             g.drawImage(mybackground, x, y, null);
         g.dispose();
-        myname = nn;
         setChanged();
     }
     public GUILog
           (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int nnr, int nnw, int nt)
             throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         if (picture != null)
             mybackground =
                     ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
             mybackground = null;
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         myfont = nf;
         mynrlines = nnr;
         mynrchars = nnw;
@@ -106,7 +99,6 @@ public class GUILog extends GUIElement implements CrossfireQueryListener,
         if (mybackground != null)
             g.drawImage(mybackground, x, y, null);
         g.dispose();
-        myname = nn;
         setChanged();
     }
     protected void render()

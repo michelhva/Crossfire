@@ -39,18 +39,13 @@ public class GUIPicture extends GUIElement
     public GUIPicture
             (String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         BufferedImage img =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         if (img == null)
         {
             throw new IllegalArgumentException("resource '"+picture+"' does not exist");
         }
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
-        myname = nn;
-
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
