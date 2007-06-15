@@ -97,7 +97,7 @@ public class CfMap
             it.next().CommandMagicmapReceived(evt);
         }
     }
-    public static void newMap(DataInputStream dis, CrossfireServerConnection crossfireServerConnection) throws IOException
+    public static void newMap(CrossfireServerConnection crossfireServerConnection) throws IOException
     {
 //        long stime = System.nanoTime();
 
@@ -125,15 +125,8 @@ public class CfMap
 //        System.out.println("Cleaning complete, Cleaning time:"+(etime-stime)/1000000+"ms, GC:"+
 //                (egtime-etime)/1000000+"ms.");
     }
-    public static void scroll(DataInputStream dis) throws IOException
+    public static void scroll(final int dx, final int dy) throws IOException
     {
-        int len = dis.available();
-        byte buf[] = new byte[len];
-
-        dis.readFully(buf);
-        String[] datas = (new String(buf)).split(" ",2);
-        int dx = Integer.parseInt(datas[0]);
-        int dy = Integer.parseInt(datas[1]);
         //System.out.println("--------------------------------------------------");
         int mx = CrossfireServerConnection.MAP_WIDTH+20;
         int my = CrossfireServerConnection.MAP_HEIGHT+20;
