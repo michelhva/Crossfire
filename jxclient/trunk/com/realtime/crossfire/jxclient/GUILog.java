@@ -56,6 +56,11 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
     private final int mynrchars;
 
+    /**
+     * The height of one line of text in pixel.
+     */
+    private final int lineHeight;
+
     public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnr, final int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
@@ -68,6 +73,8 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         mynrchars = 40;
         myindex = 0;
         mylogtype = nt;
+
+        lineHeight = myfont.getSize()+1;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -92,6 +99,8 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         mynrchars = nnw;
         myindex = 0;
         mylogtype = nt;
+
+        lineHeight = myfont.getSize()+1;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -123,9 +132,9 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
                 {
                     g.setColor(mytextcolor.get(i));
                     if (mytext.get(i) != null)
-                        g.drawString(mytext.get(i), 0, (myfont.getSize()+1)*(i-myindex));
+                        g.drawString(mytext.get(i), 0, lineHeight*(i-myindex));
                     else
-                        g.drawString("", 0, (myfont.getSize()+1)*(i-myindex));
+                        g.drawString("", 0, lineHeight*(i-myindex));
                 }
             }
             catch (final Exception e)
