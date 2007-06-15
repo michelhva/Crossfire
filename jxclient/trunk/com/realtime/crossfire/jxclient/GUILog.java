@@ -40,23 +40,23 @@ import javax.imageio.ImageIO;
  */
 public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScrollable, CrossfireDrawinfoListener
 {
-    private BufferedImage mybackground = null;
+    private final BufferedImage mybackground;
 
-    private Font myfont;
+    private final Font myfont;
 
-    private List<String> mytext = new LinkedList<String>();
+    private final List<String> mytext = new LinkedList<String>();
 
-    private List<Color> mytextcolor = new LinkedList<Color>();
+    private final List<Color> mytextcolor = new LinkedList<Color>();
 
-    private int mynrlines;
+    private final int mynrlines;
 
-    private int mylogtype;
+    private final int mylogtype;
 
     private int myindex;
 
-    private int mynrchars = 40;
+    private final int mynrchars;
 
-    public GUILog(String nn, int nx, int ny, int nw, int nh, String picture, Font nf, int nnr, int nt) throws IOException
+    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnr, final int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
@@ -65,21 +65,22 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
             mybackground = null;
         myfont = nf;
         mynrlines = nnr;
+        mynrchars = 40;
         myindex = 0;
         mylogtype = nt;
 
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
             g.drawImage(mybackground, x, y, null);
         g.dispose();
         setChanged();
     }
 
-    public GUILog(String nn, int nx, int ny, int nw, int nh, String picture, Font nf, int nnr, int nnw, int nt) throws IOException
+    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnr, final int nnw, final int nt) throws IOException
     {
         super(nn, nx, ny, nw, nh);
         if (picture != null)
@@ -92,11 +93,11 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         myindex = 0;
         mylogtype = nt;
 
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
             g.drawImage(mybackground, x, y, null);
         g.dispose();
@@ -107,7 +108,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     {
         try
         {
-            Graphics2D g = mybuffer.createGraphics();
+            final Graphics2D g = mybuffer.createGraphics();
             g.setBackground(new Color(0, 0, 0, 0.0f));
             g.clearRect(0, 0, w, h);
             if (mybackground != null)
@@ -127,18 +128,18 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
                         g.drawString("", 0, (myfont.getSize()+1)*(i-myindex));
                 }
             }
-            catch (Exception e)
+            catch (final Exception e)
             {};
             g.dispose();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
         setChanged();
     }
 
-    public void CommandQueryReceived(CrossfireCommandQueryEvent evt)
+    public void CommandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         mytext.add(evt.getPrompt());
         mytextcolor.add(Color.RED);
@@ -146,7 +147,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         render();
     }
 
-    private void addTextLine(String txt, int txttype)
+    private void addTextLine(final String txt, final int txttype)
     {
         mytext.add(txt);
         switch(txttype)
@@ -210,9 +211,9 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         scrollDown();
     }
 
-    public void CommandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt)
+    public void CommandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
-        String[] txtlines = evt.getText().split("\n");
+        final String[] txtlines = evt.getText().split("\n");
         for (int i = 0; i < txtlines.length; i++)
         {
             if (txtlines[i].length() > mynrchars)
@@ -220,10 +221,10 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
                 int k = 0;
                 for (k = mynrchars; k < txtlines[i].length(); k += mynrchars)
                 {
-                    String str = txtlines[i].substring(k-mynrchars, k);
+                    final String str = txtlines[i].substring(k-mynrchars, k);
                     addTextLine(str, evt.getTextType());
                 }
-                String strf = txtlines[i].substring(k-mynrchars, txtlines[i].length());
+                final String strf = txtlines[i].substring(k-mynrchars, txtlines[i].length());
                 addTextLine(strf, evt.getTextType());
             }
             else
