@@ -78,11 +78,7 @@ public class GUIItemInventory extends GUIItemItem
         {
             if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
             {
-                jxcw.getCrossfireServerConnection().sendMark(item.getTag());
-            }
-            else if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_CTRL))
-            {
-                jxcw.getCrossfireServerConnection().sendLock(item.isLocked(), item.getTag());
+                jxcw.getCrossfireServerConnection().sendLock(!item.isLocked(), item.getTag());
             }
             else
             {
@@ -94,6 +90,29 @@ public class GUIItemInventory extends GUIItemItem
             ex.printStackTrace();
             System.exit(0);
         }
+    }
+
+    protected void button2Clicked(JXCWindow jxcw)
+    {
+        final CfItem item = getItem();
+        if (item != null)
+        {
+            try
+            {
+                if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
+                {
+                    jxcw.getCrossfireServerConnection().sendMark(item.getTag());
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.printStackTrace();
+                System.exit(0);
+            }
+        }
+
+        super.button2Clicked(jxcw);
     }
 
     protected void button3Clicked(JXCWindow jxcw)
