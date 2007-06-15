@@ -28,7 +28,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import javax.imageio.ImageIO;
 
@@ -44,9 +44,9 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
     private final Font myfont;
 
-    private final List<String> mytext = new LinkedList<String>();
+    private final List<String> mytext = new ArrayList<String>();
 
-    private final List<Color> mytextcolor = new LinkedList<Color>();
+    private final List<Color> mytextcolor = new ArrayList<Color>();
 
     private final int mynrlines;
 
