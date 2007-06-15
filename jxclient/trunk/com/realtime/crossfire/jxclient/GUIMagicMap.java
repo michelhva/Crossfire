@@ -44,12 +44,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
     public GUIMagicMap
             (String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
-        myname = nn;
-
+        super(nn, nx, ny, nw, nh);
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();

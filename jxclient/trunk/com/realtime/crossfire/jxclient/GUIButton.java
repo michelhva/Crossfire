@@ -49,37 +49,29 @@ public class GUIButton extends GUIElement
             (String nn, int nx, int ny, int nw, int nh, String picup,
                      String picdown, GUICommandList cmd) throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =
             ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         mylist = cmd;
         mybuffer   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         render();
-        myname = nn;
     }
     public GUIButton
             (String nn, int nx, int ny, int nw, int nh, String picup,
              String picdown, String txt, Font f, Color mfc,
              int tx, int ty, GUICommandList cmd) throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =
             ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         mylist = cmd;
         mybuffer   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
-        myname = nn;
         mytext = txt;
         myfont = f;
         myfontcolor = mfc;

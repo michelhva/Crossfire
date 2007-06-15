@@ -49,14 +49,11 @@ public class GUIText extends GUIElement implements KeyListener
             (String nn, int nx, int ny, int nw, int nh, String picactive,
                    String picinactive, Font nf, String txt)  throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         mybackground_active =
             ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
         mybackground_inactive =
             ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         myfont = nf;
         mytext = txt;
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -64,7 +61,6 @@ public class GUIText extends GUIElement implements KeyListener
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         render();
-        myname = nn;
     }
     public void setText(String nt)
     {

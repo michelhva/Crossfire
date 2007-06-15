@@ -61,22 +61,18 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     public static final int LABEL_SPELL_LEVEL = -4;
     public static final int LABEL_SPELL_DESCRIPTION = -5;
 
-    private void commonInit(String nn, int nx, int ny, int nw, int nh, String picture, Font nf)
+    private void commonInit(String picture, Font nf)
             throws IOException
     {
         if (picture != null)
             mybackground = new ImageIcon(getClass().getClassLoader().getResource(picture));
         else
             mybackground = null;
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         myfont = nf;
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice      gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
             g.drawImage(mybackground.getImage(), x, y, null);
@@ -89,32 +85,32 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
              Color clr, String cap)
             throws IOException
     {
-        commonInit(nn,nx,ny,nw,nh,picture,nf);
+        super(nn, nx, ny, nw, nh);
+        commonInit(picture,nf);
         mycolor = clr;
         mycaption = cap;
-        myname = nn;
         render();
     }
     public GUILabel
             (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, String cap)
             throws IOException
     {
-        commonInit(nn,nx,ny,nw,nh,picture,nf);
+        super(nn, nx, ny, nw, nh);
+        commonInit(picture,nf);
         mycaption = cap;
-        myname = nn;
         render();
     }
     public GUILabel
             (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int stat)
             throws IOException
     {
-        commonInit(nn,nx,ny,nw,nh,picture,nf);
+        super(nn, nx, ny, nw, nh);
+        commonInit(picture,nf);
         mystat = stat;
         if (stat >= 0)
             stat_based = true;
         else // Spell or special display
             spell_based = true;
-        myname = nn;
         render();
     }
     public GUILabel
@@ -122,14 +118,14 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
              Color clr, int stat)
             throws IOException
     {
-        commonInit(nn,nx,ny,nw,nh,picture,nf);
+        super(nn, nx, ny, nw, nh);
+        commonInit(picture,nf);
         mystat = stat;
         if (stat >= 0)
             stat_based = true;
         else // Spell or special display
             spell_based = true;
         mycolor = clr;
-        myname = nn;
         render();
     }
     public void setText(String ntxt)

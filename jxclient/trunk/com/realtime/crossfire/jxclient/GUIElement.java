@@ -31,10 +31,34 @@ import java.awt.image.BufferedImage;
  */
 public class GUIElement implements MouseListener
 {
-    protected int x, y, w, h;
+    /**
+     * The x-coordinate for drawing this element to screen.
+     */
+    protected final int x;
+
+    /**
+     * The y-coordinate for drawing this element to screen.
+     */
+    protected final int y;
+
+    /**
+     * The width for drawing this element to screen.
+     */
+    protected final int w;
+
+    /**
+     * The height for drawing this element to screen.
+     */
+    protected final int h;
+
     protected BufferedImage mybuffer;
     protected boolean visible = true;
-    protected String myname="Element";
+
+    /**
+     * The name of this element.
+     */
+    protected final String myname;
+
     protected boolean active = false;
     protected boolean visiblechanged = false;
 
@@ -42,6 +66,28 @@ public class GUIElement implements MouseListener
      * Whether {@link #mybuffer} has changed.
      */
     private boolean changed;
+
+    /**
+     * Create a new instance.
+     *
+     * @param name The name of this element.
+     *
+     * @param x The x-coordinate for drawing this element to screen.
+     *
+     * @param y The y-coordinate for drawing this element to screen.
+     *
+     * @param w The width for drawing this element to screen.
+     *
+     * @param h The height for drawing this element to screen.
+     */
+    protected GUIElement(final String name, final int x, final int y, final int w, final int h)
+    {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        myname = name;
+    }
 
     public String toString()
     {

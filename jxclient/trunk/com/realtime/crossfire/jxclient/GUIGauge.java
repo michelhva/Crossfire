@@ -53,22 +53,18 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
 
     public GUIGauge(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final int orientation) throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         pictureFull = ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
         if (picture_negative != null)
             pictureNegative = ImageIO.read(this.getClass().getClassLoader().getResource(picture_negative));
         else
             pictureNegative = null;
         pictureEmpty = ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
         this.stat = stat;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        myname = nn;
         this.orientation = orientation;
         render();
     }

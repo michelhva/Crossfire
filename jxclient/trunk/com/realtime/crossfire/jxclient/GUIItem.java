@@ -74,6 +74,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
              String pic_locked, CrossfireServerConnection msc, Font mft)
             throws IOException
     {
+        super(nn, nx, ny, nw, nh);
         mypicbackground =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         mypiccursed   =
@@ -84,11 +85,6 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
             ImageIO.read(this.getClass().getClassLoader().getResource(pic_selector));
         mypiclocked   =
             ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
-        x = nx;
-        y = ny;
-        w = nw;
-        h = nh;
-        myname = nn;
         active = false;
         myfont = mft;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
