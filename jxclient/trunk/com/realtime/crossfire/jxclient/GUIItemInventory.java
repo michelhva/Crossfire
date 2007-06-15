@@ -123,6 +123,12 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
+        if (item.isLocked())
+        {
+            jxcw.getCrossfireServerConnection().drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+            return;
+        }
+
         try
         {
             jxcw.getCrossfireServerConnection().sendMove(ItemsList.getCurrentFloor(), item.getTag(), 0);
