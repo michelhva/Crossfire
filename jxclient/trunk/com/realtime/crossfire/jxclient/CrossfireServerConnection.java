@@ -38,6 +38,16 @@ import java.util.List;
  */
 public class CrossfireServerConnection extends ServerConnection
 {
+    /**
+     * The map width in tiles that is negotiated with the server.
+     */
+    public static final int MAP_WIDTH = 17;
+
+    /**
+     * The map height in tiles that is negotiated with the server.
+     */
+    public static final int MAP_HEIGHT = 13;
+
     private List<CrossfireGoodbyeListener> mylisteners_goodbye =
             new ArrayList<CrossfireGoodbyeListener>();
     private List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
@@ -102,6 +112,9 @@ public class CrossfireServerConnection extends ServerConnection
 
     /** The command prefix for the "lock" command. */
     private static final byte[] lockPrefix = { 'l', 'o', 'c', 'k', ' ', };
+
+    /** The command prefix for the "lookat" command. */
+    private static final byte[] lookatPrefix = { 'l', 'o', 'o', 'k', 'a', 't', ' ', };
 
     /** The command prefix for the "mapredraw" command. */
     private static final byte[] mapredrawPrefix = { 'm', 'a', 'p', 'r', 'e', 'd', 'r', 'a', 'w', ' ', };
@@ -1476,9 +1489,9 @@ public class CrossfireServerConnection extends ServerConnection
             }
             else if (option.equals("mapsize"))
             {
-                if (!value.equals("17x13"))
+                if (!value.equals(MAP_WIDTH+"x"+MAP_HEIGHT))
                 {
-                    System.err.println("Error: the server is not suitable for this client since it does not support a map size of 17x13.");
+                    System.err.println("Error: the server is not suitable for this client since it does not support a map size of "+MAP_WIDTH+"x"+MAP_HEIGHT+".");
                     System.exit(1);
                 }
             }
@@ -1611,6 +1624,26 @@ public class CrossfireServerConnection extends ServerConnection
             byteBuffer.put(lockPrefix);
             byteBuffer.put((byte)(val ? 1 : 0));
             byteBuffer.putInt(tag);
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * Send a "lookat" command to the server.
+     *
+     * @param dx The x-coordinate in tiles, relative to the player.
+     *
+     * @param dy The y-coordinate in tiles, relative to the player.
+     */
+    public void sendLookat(final int dx, final int dy) throws IOException
+    {
+        synchronized(writeBuffer)
+        {
+            byteBuffer.clear();
+            byteBuffer.put(lookatPrefix);
+            putDecimal(dx);
+            byteBuffer.put((byte)' ');
+            putDecimal(dy);
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
