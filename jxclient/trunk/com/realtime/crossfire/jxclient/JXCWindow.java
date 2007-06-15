@@ -91,12 +91,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final KeyBindings keyBindings = new KeyBindings();
     private final boolean[] key_shift = new boolean[]{false, false, false, false};
-    private GUICommandList mycurrentkeybinding = null;
-    private int bindingState = 0;
-    private int bindingType = 0;
-    private int bindingKeyCode = 0;
-    private int bindingModifiers = 0;
-    private char bindingKeyChar = '\0';
+    private KeyBindingState keyBindingState = null;
 
     private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
@@ -157,22 +152,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
     public void createKeyBinding(final GUICommandList cmdlist)
     {
-        mycurrentkeybinding = cmdlist;
-        bindingState = 0;
-        bindingType = 0;
-        bindingKeyCode = 0;
-        bindingModifiers = 0;
-        bindingKeyChar = '\0';
+        keyBindingState = new KeyBindingState(cmdlist);
         setDialogStatus(DLG_KEYBIND);
     }
     public void removeKeyBinding()
     {
-        mycurrentkeybinding = null;
-        bindingState = 0;
-        bindingType = 0;
-        bindingKeyCode = 0;
-        bindingModifiers = 0;
-        bindingKeyChar = '\0';
+        keyBindingState = new KeyBindingState(null);
         setDialogStatus(DLG_KEYBIND);
     }
     private void loadSpellBelt(final String filename)
@@ -665,10 +650,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             default:
                 if (mydialogstatus == DLG_KEYBIND)
                 {
-                    bindingState = 1;
-                    bindingType = 0;
-                    bindingKeyCode = e.getKeyCode();
-                    bindingModifiers = e.getModifiers();
+                    assert keyBindingState != null;
+                    keyBindingState.keyPressed(e.getKeyCode(), e.getModifiers());
                 }
                 else if (myactive_element != null)
                 {
@@ -728,31 +711,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             default:
                 if (mydialogstatus == DLG_KEYBIND)
                 {
-                    if (bindingState != 0)
+                    assert keyBindingState != null;
+                    if (keyBindingState.keyReleased(keyBindings))
                     {
-                        if (mycurrentkeybinding != null)
-                        {
-                            if (bindingType == 0)
-                            {
-                                keyBindings.addKeyBindingAsKeyCode(bindingKeyCode, bindingModifiers, mycurrentkeybinding);
-                            }
-                            else
-                            {
-                                keyBindings.addKeyBindingAsKeyChar(bindingKeyChar, mycurrentkeybinding);
-                            }
-                        }
-                        else
-                        {
-                            if (bindingType == 0)
-                            {
-                                keyBindings.deleteKeyBindingAsKeyCode(bindingKeyCode, bindingModifiers);
-                            }
-                            else
-                            {
-                                keyBindings.deleteKeyBindingAsKeyChar(bindingKeyChar);
-                            }
-                        }
-                        mycurrentkeybinding = null;
+                        keyBindingState = null;
                         setDialogStatus(DLG_NONE);
                     }
                 }
@@ -763,11 +725,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         if (mydialogstatus == DLG_KEYBIND)
         {
-            if (bindingState != 0)
-            {
-                bindingType = 1;
-                bindingKeyChar = e.getKeyChar();
-            }
+            assert keyBindingState != null;
+            keyBindingState.keyTyped(e.getKeyChar());
         }
         else if (myactive_element != null)
         {
