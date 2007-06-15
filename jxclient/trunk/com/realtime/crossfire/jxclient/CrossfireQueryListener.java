@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireQueryListener
 {
-    public void CommandQueryReceived(CrossfireCommandQueryEvent evt);
+    public void commandQueryReceived(CrossfireCommandQueryEvent evt);
 }

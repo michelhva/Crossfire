@@ -94,7 +94,7 @@ public class CfMap
         Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
         while (it.hasNext())
         {
-            it.next().CommandMagicmapReceived(evt);
+            it.next().commandMagicmapReceived(evt);
         }
     }
     public static void newMap(CrossfireServerConnection crossfireServerConnection) throws IOException
@@ -113,7 +113,7 @@ public class CfMap
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
-            it.next().CommandNewmapReceived(evt);
+            it.next().commandNewmapReceived(evt);
         }
 //        long etime = System.nanoTime();
 //        System.out.println("Free Memory before Newmap GC:"+
@@ -262,7 +262,7 @@ public class CfMap
         Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
         while (it.hasNext())
         {
-            it.next().CommandMapscrollReceived(evt);
+            it.next().commandMapscrollReceived(evt);
         }
     }
     public static void changeSquare(int x, int y, int z, int darkness, Face face)
@@ -333,7 +333,7 @@ public class CfMap
             Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
             while (it.hasNext())
             {
-                it.next().CommandMap1Received(evt);
+                it.next().commandMap1Received(evt);
             }
         }
     }
@@ -354,7 +354,7 @@ public class CfMap
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
-            it.next().CommandNewmapReceived(evt);
+            it.next().commandNewmapReceived(evt);
         }
     }
     public static void updateFace(int pixnum)
@@ -381,7 +381,7 @@ public class CfMap
         Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
         while (it.hasNext())
         {
-            it.next().CommandMap1Received(evt);
+            it.next().commandMap1Received(evt);
         }
     }
 

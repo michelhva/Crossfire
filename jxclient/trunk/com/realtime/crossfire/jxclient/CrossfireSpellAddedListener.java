@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireSpellAddedListener
 {
-    public void CommandAddSpellReceived(CrossfireCommandAddSpellEvent evt);
+    public void commandAddSpellReceived(CrossfireCommandAddSpellEvent evt);
 }

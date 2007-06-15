@@ -62,7 +62,7 @@ public class CfPlayer extends CfItem
         Iterator<CrossfireStatsListener> it = mylisteners_stats.iterator();
         while (it.hasNext())
         {
-            it.next().CommandStatsReceived(evt);
+            it.next().commandStatsReceived(evt);
         }
     }
 }

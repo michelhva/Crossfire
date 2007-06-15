@@ -836,7 +836,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
     }
 
-    public void CommandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+    public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
     {
         switch (evt.getType())
         {
@@ -886,7 +886,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 break;
         }
     }
-    public void CommandQueryReceived(final CrossfireCommandQueryEvent evt)
+    public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         setDialogStatus(DLG_QUERY);
     }

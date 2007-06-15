@@ -139,7 +139,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         setChanged();
     }
 
-    public void CommandQueryReceived(final CrossfireCommandQueryEvent evt)
+    public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         mytext.add(evt.getPrompt());
         mytextcolor.add(Color.RED);
@@ -211,7 +211,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         scrollDown();
     }
 
-    public void CommandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
+    public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
         final String[] txtlines = evt.getText().split("\n");
         for (int i = 0; i < txtlines.length; i++)

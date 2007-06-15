@@ -187,7 +187,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             square.clean();
         }
     }
-    public void CommandMapscrollReceived(CrossfireCommandMapscrollEvent evt)
+    public void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt)
     {
         synchronized(mybuffer)
         {
@@ -196,7 +196,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         }
         setChanged();
     }
-    public void CommandNewmapReceived(CrossfireCommandNewmapEvent evt)
+    public void commandNewmapReceived(CrossfireCommandNewmapEvent evt)
     {
         /*Graphics2D g = mybuffer.createGraphics();
         g.setColor(Color.BLACK);
@@ -210,7 +210,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         }
         setChanged();
     }
-    public void CommandMap1Received(CrossfireCommandMap1Event evt)
+    public void commandMap1Received(CrossfireCommandMap1Event evt)
     {
         synchronized(mybuffer)
         {

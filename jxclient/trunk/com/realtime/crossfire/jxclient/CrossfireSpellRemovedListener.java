@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireSpellRemovedListener
 {
-    public void CommandDelSpellReceived(CrossfireCommandDelSpellEvent evt);
+    public void commandDelSpellReceived(CrossfireCommandDelSpellEvent evt);
 }

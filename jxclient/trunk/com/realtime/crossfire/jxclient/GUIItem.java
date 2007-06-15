@@ -135,13 +135,13 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
         setChanged();
     }
     protected abstract void render(final Graphics g);
-    public void CommandAddSpellReceived(final CrossfireCommandAddSpellEvent evt)
+    public void commandAddSpellReceived(final CrossfireCommandAddSpellEvent evt)
     {
     }
-    public void CommandUpdSpellReceived(final CrossfireCommandUpdSpellEvent evt)
+    public void commandUpdSpellReceived(final CrossfireCommandUpdSpellEvent evt)
     {
     }
-    public void CommandDelSpellReceived(final CrossfireCommandDelSpellEvent evt)
+    public void commandDelSpellReceived(final CrossfireCommandDelSpellEvent evt)
     {
     }
     public void setVisible(boolean v)

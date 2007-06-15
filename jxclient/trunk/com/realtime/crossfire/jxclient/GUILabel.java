@@ -166,7 +166,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         }
         setChanged();
     }
-    public void CommandStatsReceived(CrossfireCommandStatsEvent evt)
+    public void commandStatsReceived(CrossfireCommandStatsEvent evt)
     {
         if (stat_based)
         {
@@ -195,12 +195,12 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             render();
         }
     }
-    public void CommandQueryReceived(CrossfireCommandQueryEvent evt)
+    public void commandQueryReceived(CrossfireCommandQueryEvent evt)
     {
         mycaption = evt.getPrompt();
         render();
     }
-    public void CommandDrawextinfoReceived(CrossfireCommandDrawextinfoEvent evt)
+    public void commandDrawextinfoReceived(CrossfireCommandDrawextinfoEvent evt)
     {
         mycaption = evt.getMessage();
         render();
