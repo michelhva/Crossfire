@@ -19,14 +19,10 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
-import java.io.InputStreamReader;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -144,27 +140,9 @@ public abstract class ServerConnection extends Thread
 
         len = in.readUnsignedShort();
         byte[] data = new byte[len];
-        byte[] cmd = null;
 
         in.readFully(data);
-        for (i=0;i<len;i++)
-        {
-            if (data[i]==0x20)
-            {
-                cmd = new byte[i+1];
-                for(int j=0;j<i;j++)
-                    cmd[j]=data[j];
-                break;
-            }
-        }
-        String cmdstr = (cmd != null) ? new String(cmd) : new String(data);
-        DataInputStream dis = null;
-        if (i<len)
-        {
-            dis = new DataInputStream(new ByteArrayInputStream(data));
-            dis.skipBytes(i+1);
-        }
-        command(cmdstr, dis);
+        command(data);
     }
 
     /**
@@ -258,11 +236,10 @@ public abstract class ServerConnection extends Thread
     /**
      * This is the main command handler, in which the command received is
      * decoded, and the appropriate method called.
-     * @param cmd The S->C command received.
-     * @param dis The DataInputStream holding the content of the message.
+     * @param packet The packet payload data.
      * @since 1.0
      */
-    protected abstract void command(String cmd, DataInputStream dis) throws IOException, UnknownCommandException;
+    protected abstract void command(final byte[] packet) throws IOException, UnknownCommandException;
 
     public void addScriptMonitor(CrossfireScriptMonitorListener listener)
     {

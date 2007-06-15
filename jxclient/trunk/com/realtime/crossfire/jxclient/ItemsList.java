@@ -110,62 +110,30 @@ public class ItemsList
     {
         return itemsManager.getCurrentFloor();
     }
-    public static void removeItem(DataInputStream dis) throws IOException
+    public static void removeItems(final int[] tags) throws IOException
     {
-        int len = dis.available();
-        int pos = 0;
-
-        while (pos<len)
+        for (int tag : tags)
         {
-            int tokill   = dis.readInt();
-            pos+=4;
-            itemsManager.removeItem(tokill);
+            itemsManager.removeItem(tag);
         }
         itemsManager.fireEvents();
     }
-    public static void cleanInventory(DataInputStream dis) throws IOException
+    public static void cleanInventory(final int tag) throws IOException
     {
-        int len = dis.available();
-        byte buf[] = new byte[len];
-
-        dis.readFully(buf);
-        int tokill = Integer.parseInt(new String(buf));
-        for (final CfItem item : itemsManager.getItems(tokill))
+        for (final CfItem item : itemsManager.getItems(tag))
         {
             itemsManager.removeItem(item);
         }
         itemsManager.fireEvents();
     }
-    public static void addItems2(DataInputStream dis) throws IOException
+    public static void addItem2(final int location, final int tag, final int flags, final int weight, final int face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) throws IOException
     {
-        int len = dis.available();
-        int pos = 0;
-        int location   = dis.readInt();
-        pos+=4;
-        while (pos<len)
-        {
-            int tag        = dis.readInt();
-            int flags      = dis.readInt();
-            int weight     = dis.readInt();
-            int faceid     = dis.readInt();
-            int namelength = dis.readUnsignedByte();
-            pos+=17;
-            byte buf[] = new byte[namelength];
-            dis.readFully(buf);
-            String[] names = new String(buf).split("\0", 2);
-            String name = names[0];
-            String namePl = names[names.length >= 2 ? 1 : 0];
-            pos+=namelength;
-            int anim = dis.readUnsignedShort();
-            int animspeed = dis.readUnsignedByte();
-            int nrof = dis.readInt();
-            int type = dis.readUnsignedShort();
-            pos+=9;
-            Faces.ensureFaceExists(faceid);
-            CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid),
-                                     name, namePl, nrof, type);
-            itemsManager.addItem(item);
-        }
+        Faces.ensureFaceExists(face);
+        CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, type);
+        itemsManager.addItem(item);
+    }
+    public static void addItems2Processed()
+    {
         itemsManager.fireEvents();
     }
     public static void addItems(DataInputStream dis) throws IOException
@@ -199,12 +167,8 @@ public class ItemsList
         }
         itemsManager.fireEvents();
     }
-    public static void updateItem(DataInputStream dis) throws IOException
+    public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) throws IOException
     {
-        int len = dis.available();
-        int pos = 0;
-        int flags = dis.readUnsignedByte();
-        int tag = dis.readInt();
         final CfItem item;
         final CfPlayer player = itemsManager.getPlayer();
         if (player != null && player.getTag() == tag)
@@ -228,9 +192,7 @@ public class ItemsList
             {
                 wasopen = item.isOpen();
             }
-            int obfl = dis.readInt();
-            item.setFlags(obfl);
-            pos+=4;
+            item.setFlags(valFlags);
             if (item.isOpen())
             {
                 itemsManager.setCurrentFloor(item.getTag());
@@ -242,63 +204,34 @@ public class ItemsList
         }
         if ((flags & CfItem.UPD_WEIGHT)!=0)
         {
-            int obw = dis.readInt();
-            item.setWeight(obw);
-            pos+=4;
+            item.setWeight(valWeight);
         }
         if ((flags & CfItem.UPD_FACE)!=0)
         {
-            int obface = dis.readInt();
-            item.setFace(Faces.getFace(obface));
-            pos+=4;
+            item.setFace(Faces.getFace(valFace));
         }
         if ((flags & CfItem.UPD_NAME)!=0)
         {
-            int namelength = dis.readUnsignedByte();
-            byte buf[] = new byte[namelength];
-            dis.readFully(buf);
-            String[] names = new String(buf).split("\0",2);
-            String name = names[0];
-            String namePl = names[names.length >= 2 ? 1 : 0];
-            item.setName(name, namePl);
-            pos += namelength;
+            item.setName(valName, valNamePl);
         }
         if ((flags & CfItem.UPD_ANIM)!=0)
         {
-            int anim = dis.readShort();
             //Unused for now
-            pos+=2;
         }
         if ((flags & CfItem.UPD_ANIMSPEED)!=0)
         {
-            int animspeed = dis.readByte();
             //Unused for now
-            pos+=1;
         }
         if ((flags & CfItem.UPD_NROF)!=0)
         {
-            int nrof = dis.readInt();
-            item.setNrOf(nrof);
-            pos+=4;
+            item.setNrOf(valNrof);
         }
         item.fireModified();
     }
-    public static void createPlayer(DataInputStream dis) throws IOException
+    public static void createPlayer(final int tag, final int weight, final int face, final String name) throws IOException
     {
-        int len = dis.available();
-        int pos = 0;
-        pos+=4;
-        int tag        = dis.readInt();
-        int weight     = dis.readInt();
-        int faceid     = dis.readInt();
-        int namelength = dis.readUnsignedByte();
-        pos+=17;
-        byte buf[] = new byte[namelength];
-        dis.readFully(buf);
-        String name = new String(buf);
-        pos+=namelength;
-        Faces.ensureFaceExists(faceid);
-        itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(faceid), name));
+        Faces.ensureFaceExists(face);
+        itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
     }
     public static List<Spell> getSpellList()
     {
@@ -702,76 +635,43 @@ public class ItemsList
         myspells.add(new Spell("default.theme/pictures/spells/si_196.png", "Missile Swarm",
                               "missile swarm"));
     }
-    public static void addSpell(DataInputStream dis) throws IOException
+
+    public static void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message) throws IOException
     {
-        int len = dis.available();
-        int pos = 0;
-        while (pos < len)
+        Faces.ensureFaceExists(face);
+        Faces.getFace(face).setName("spell_"+tag);
+        try
         {
-            int tag    = dis.readInt();
-            int level  = dis.readUnsignedShort();
-            int castingtime = dis.readUnsignedShort();
-            int mana   = dis.readUnsignedShort();
-            int grace  = dis.readUnsignedShort();
-            int damage = dis.readUnsignedShort();
-            int skill  = dis.readUnsignedByte();
-            int path   = dis.readInt();
-            int face   = dis.readInt();
-            int namel  = dis.readUnsignedByte();
-            pos+=24;
-            byte buf[] = new byte[namel];
-            dis.readFully(buf);
-            String name = new String(buf);
-            pos+=namel;
-            int msgl = dis.readUnsignedShort();
-            pos+=2;
-            String msg = "";
-            if (msgl > 0)
-            {
-                buf = new byte[msgl];
-                dis.readFully(buf);
-                msg = new String(buf);
-                pos+=msgl;
-            }
-            Faces.ensureFaceExists(face);
-            Faces.getFace(face).setName("spell_"+tag);
-            try
-            {
-                Faces.askface(face);
-            }
-            catch (Exception e)
-            {
-                e.printStackTrace();
-            }
+            Faces.askface(face);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
 
-            Spell sp = new Spell(Faces.getFace(face), tag, name, msg);
-            sp.setLevel(level);
-            sp.setCastingTime(castingtime);
-            sp.setMana(mana);
-            sp.setGrace(grace);
-            sp.setDamage(damage);
-            sp.setSkill(skill);
-            myspells.add(sp);
+        Spell sp = new Spell(Faces.getFace(face), tag, name, message);
+        sp.setLevel(level);
+        sp.setCastingTime(castingTime);
+        sp.setMana(mana);
+        sp.setGrace(grace);
+        sp.setDamage(damage);
+        sp.setSkill(skill);
+        myspells.add(sp);
 
-            CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(
-                new Object(),sp);
-            Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
-            while (it.hasNext())
-            {
-                it.next().CommandAddSpellReceived(evt);
-            }
-
+        CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(),sp);
+        Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
+        while (it.hasNext())
+        {
+            it.next().CommandAddSpellReceived(evt);
         }
     }
-    public static void updateSpell(DataInputStream dis) throws IOException
+    public static void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) throws IOException
     {
         // XXX: updateSpell() not yet implemented
     }
-    public static void deleteSpell(DataInputStream dis) throws IOException
+    public static void deleteSpell(final int tag) throws IOException
     {
-        int len = dis.available();
-        int spelltag = dis.readInt();
-        System.out.println("Deleting spell:"+spelltag);
+        // XXX: deleteSpell() not yet implemented
     }
 
     /**

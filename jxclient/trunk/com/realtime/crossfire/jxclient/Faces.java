@@ -23,7 +23,6 @@ import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
-import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -143,11 +142,9 @@ public class Faces
     {
         return faces;
     }
-    public static int setImage(DataInputStream dis) throws IOException
+    // TODO: implement faceset
+    public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen) throws IOException
     {
-        int pixnum   = dis.readInt();
-        int pixlen   = dis.readInt();
-
         if (!pendingAskfaces.remove(pixnum))
         {
             System.err.println("received unexpected image for "+pixnum);
@@ -157,10 +154,10 @@ public class Faces
             assert false;
         }
 
+        final byte[] data = new byte[pixlen];
+        System.arraycopy(packet, start, data, 0, pixlen);
         try
         {
-            final byte[] data = new byte[pixlen];
-            dis.read(data);
             ImageIcon img = new ImageIcon(data);
             if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
             {
@@ -209,15 +206,9 @@ public class Faces
         return imx2;
     }
 
-    public static void setFace1(DataInputStream dis) throws IOException
+    // TODO: implement faceset
+    public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
-        int len      = dis.available();
-        int pixnum   = dis.readUnsignedShort();
-        int checksum = dis.readInt();
-        int plen     = dis.available();
-        byte[] buf   = new byte[plen];
-        dis.readFully(buf);
-        String pixname = new String(buf);
         ImageIcon im = new ImageIcon("cache/"+pixname+".x2.png");
         ImageIcon oim = new ImageIcon("cache/"+pixname+".x1.png");
         if (im.getIconWidth() <= 0 || im.getIconHeight() <= 0 || oim.getIconWidth() <= 0 || oim.getIconHeight() <= 0)
