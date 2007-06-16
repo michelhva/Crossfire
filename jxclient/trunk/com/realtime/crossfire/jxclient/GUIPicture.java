@@ -36,12 +36,10 @@ import javax.imageio.ImageIO;
  */
 public class GUIPicture extends GUIElement
 {
-    public GUIPicture
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
+    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        BufferedImage img =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picture));
+        BufferedImage img = ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         if (img == null)
         {
             throw new IllegalArgumentException("resource '"+picture+"' does not exist");
@@ -51,7 +49,7 @@ public class GUIPicture extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         final Graphics2D g = mybuffer.createGraphics();
-        g.drawImage(img, 0,0,img.getWidth(),img.getHeight(),null);
+        g.drawImage(img, 0, 0, img.getWidth(), img.getHeight(), null);
         g.dispose();
         setChanged();
     }
