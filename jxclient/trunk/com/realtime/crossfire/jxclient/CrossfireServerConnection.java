@@ -1514,6 +1514,10 @@ public class CrossfireServerConnection extends ServerConnection
                     System.exit(1);
                 }
             }
+            else if (option.equals("darkness"))
+            {
+                // do not care
+            }
             else
             {
                 System.err.println("Warning: got unknown option from server: "+option+"="+value);
