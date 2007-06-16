@@ -215,15 +215,6 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         setChanged();
     }
 
-    public void refresh()
-    {
-        synchronized(mybuffer)
-        {
-            render();
-        }
-        setChanged();
-    }
-
     /** {@inheritDoc} */
     public void mouseClicked(final MouseEvent e)
     {
