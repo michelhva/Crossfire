@@ -114,6 +114,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this);
 
     /**
+     * The {@link TooltipManager} for this window.
+     */
+    private final TooltipManager tooltipManager = new TooltipManager(this);
+
+    /**
      * The default repeat counter for "ncom" commands.
      */
     private int repeatCount = 0;
@@ -1085,6 +1090,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             newGui = null;
         }
         jxcWindowRenderer.setCurrentGui(newGui);
+        tooltipManager.reset();
     }
 
     private void showGUIMeta()
@@ -1101,6 +1107,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             newGui = null;
         }
         jxcWindowRenderer.setCurrentGui(newGui);
+        tooltipManager.reset();
     }
 
     private void showGUIMain()
@@ -1127,6 +1134,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             newGui = null;
         }
         jxcWindowRenderer.setCurrentGui(newGui);
+        tooltipManager.reset();
     }
 
     /** {@inheritDoc} */
@@ -1164,6 +1172,36 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         assert 0 <= digit && digit <= 9;
         this.repeatCount = (10*repeatCount+digit)%100000;
+    }
+
+    /**
+     * Display the tooltip for a gui element.
+     *
+     * @param guiElement The gui element to show the tooltip of.
+     */
+    public void setTooltipElement(final GUIElement guiElement)
+    {
+        tooltipManager.setElement(guiElement);
+    }
+
+    /**
+     * Undisplay the tooltip for a gui element.
+     *
+     * @param guiElement The gui element to remove the tooltip of.
+     */
+    public void unsetTooltipElement(final GUIElement guiElement)
+    {
+        tooltipManager.unsetElement(guiElement);
+    }
+
+    /**
+     * Update the tooltip text for a gui element.
+     *
+     * @param guiElement The gui element to process.
+     */
+    public void updateTooltipElement(final GUIElement guiElement)
+    {
+        tooltipManager.updateElement(guiElement);
     }
 
     /**
@@ -1211,5 +1249,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mouseElement.mouseExited(e);
             mouseElement = null;
         }
+    }
+
+    /**
+     * Return the tooltip {@link GUILabel} for this window.
+     *
+     * @return The tooltip label for this window.
+     */
+    public GUILabel getTooltip()
+    {
+        return jxcWindowRenderer.getCurrentGui().getTooltip();
     }
 }
