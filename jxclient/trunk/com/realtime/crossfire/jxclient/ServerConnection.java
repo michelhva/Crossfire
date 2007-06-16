@@ -111,7 +111,6 @@ public abstract class ServerConnection extends Thread
     public synchronized void readPacket() throws IOException, UnknownCommandException
     {
         int len = 0;
-        int i = 0;
 
         len = in.readUnsignedShort();
         byte[] data = new byte[len];
