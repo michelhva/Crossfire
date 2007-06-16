@@ -36,15 +36,15 @@ import java.util.List;
  */
 public abstract class ServerConnection extends Thread
 {
-    private Socket mysocket;
+    private Socket socket;
 
     private DataInputStream in;
 
     private final List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
 
-    private final String myhost;
+    private final String hostname;
 
-    private final int myport;
+    private final int port;
 
     /**
      * Represents the unconnected status of the client, which is the first to
@@ -65,9 +65,9 @@ public abstract class ServerConnection extends Thread
      */
     public static final int STATUS_QUERY = 2;
 
-    private int mystatus = STATUS_UNCONNECTED;
+    private int status = STATUS_UNCONNECTED;
 
-    private final String mystatus_sem = "mystatus_sem";
+    private final String statusSem = "mystatus_sem";
 
     /**
      * The Thread Main loop. ServerConnection contains its own Thread, so it
@@ -127,16 +127,16 @@ public abstract class ServerConnection extends Thread
     protected void writePacket(final byte[] packet, final int length) throws IOException
     {
         assert length > 0;
-        synchronized(mysocket)
+        synchronized(socket)
         {
             for (final CrossfireScriptMonitorListener listener : scripts_monitor)
             {
                 listener.commandSent(packet, length);
             }
 
-            mysocket.getOutputStream().write(length/256);
-            mysocket.getOutputStream().write(length);
-            mysocket.getOutputStream().write(packet, 0, length);
+            socket.getOutputStream().write(length/256);
+            socket.getOutputStream().write(length);
+            socket.getOutputStream().write(packet, 0, length);
         }
     }
 
@@ -151,8 +151,8 @@ public abstract class ServerConnection extends Thread
      */
     protected ServerConnection(final String hostname, final int port)
     {
-        myhost = hostname;
-        myport = port;
+        this.hostname = hostname;
+        this.port = port;
     }
 
     /**
@@ -164,8 +164,8 @@ public abstract class ServerConnection extends Thread
     {
         try
         {
-            mysocket = new Socket(myhost, myport);
-            in = new DataInputStream(mysocket.getInputStream());
+            socket = new Socket(hostname, port);
+            in = new DataInputStream(socket.getInputStream());
             start();
         }
         catch (final Exception e)
@@ -181,11 +181,11 @@ public abstract class ServerConnection extends Thread
      * @param nstatus The new status value.
      * @since 1.0
      */
-    public void setStatus(final int nstatus)
+    public void setStatus(final int status)
     {
-        synchronized(mystatus_sem)
+        synchronized(statusSem)
         {
-            mystatus = nstatus;
+            this.status = status;
         }
     }
 
@@ -196,9 +196,9 @@ public abstract class ServerConnection extends Thread
      */
     public int getStatus()
     {
-        synchronized(mystatus_sem)
+        synchronized(statusSem)
         {
-            return mystatus;
+            return status;
         }
     }
 
