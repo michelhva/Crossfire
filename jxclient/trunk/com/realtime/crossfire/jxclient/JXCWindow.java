@@ -937,7 +937,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 elected = myother;
             }
         }
-        e.translatePoint(-elected.x, -elected.y);
+        if (elected != null)
+        {
+            e.translatePoint(-elected.x, -elected.y);
+        }
 
         return elected;
     }
