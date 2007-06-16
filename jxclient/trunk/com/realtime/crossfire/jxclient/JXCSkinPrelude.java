@@ -319,8 +319,8 @@ public class JXCSkinPrelude implements JXCSkin
 
         try
         {
-            //Map Group (100, 100)
-            GUIMap gui_map = new GUIMap(p, "playfield", 0+100, 0+100, 800, 800);
+            //Map Group (0, 0)
+            GUIMap gui_map = new GUIMap(p, "playfield", 0, 0, 1024, 768);
 
             //LGauges Group (80, 574)
 

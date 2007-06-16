@@ -88,15 +88,7 @@ public class Gui
         {
             if (element.isVisible())
             {
-                if (element instanceof GUIMap)
-                {
-                    final GUIMap mel = (GUIMap)element;
-                    mel.redraw(g);
-                }
-                else
-                {
-                    g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
-                }
+                g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
                 element.resetChanged();
             }
         }
@@ -115,13 +107,6 @@ public class Gui
         {
             if (element.isVisible())
             {
-                if (element instanceof GUIMap)
-                {
-                    final GUIMap mel = (GUIMap)element;
-                    final Graphics gg = element.getBuffer().createGraphics();
-                    mel.redraw(gg);
-                    gg.dispose();
-                }
                 g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
                 element.resetChanged();
             }
