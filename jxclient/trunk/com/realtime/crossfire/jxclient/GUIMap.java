@@ -86,10 +86,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                 {
                     for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
                     {
-                        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
-                        {
-                            redrawSquare(g, CfMap.getMap()[x+10][y+10], layer);
-                        }
+                        redrawSquare(g, x, y);
                     }
                 }
             }
@@ -106,6 +103,30 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         g.fillRect(((square.getXPos()-10)*mysquaresize-mysquaresize/2),
                    ((square.getYPos()-10)*mysquaresize-mysquaresize/2),
                    mysquaresize, mysquaresize);
+    }
+
+    /**
+     * Redraw one square if it has been changed. If it is unchanged ({@link
+     * CfMapSquare#isDirty()} is unset), nothing is drawn.
+     *
+     * @param g The graphics to draw into.
+     *
+     * @param x The x-coordinate of the map tile to redraw.
+     *
+     * @param y The y-coordinate of the map tile to redraw.
+     */
+    private void redrawSquare(final Graphics g, final int x, final int y)
+    {
+        final CfMapSquare square = CfMap.getMap()[x+10][y+10];
+        if (!square.isDirty())
+        {
+            return;
+        }
+
+        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+        {
+            redrawSquare(g, square, layer);
+        }
     }
 
     protected void redrawSquare(final Graphics g, final CfMapSquare square, final int nz)
@@ -170,10 +191,72 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     {
         synchronized(mybuffer)
         {
+            final int dx = -evt.getDX()*mysquaresize;
+            final int dy = -evt.getDY()*mysquaresize;
+            if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
+            {
+                render();
+                return;
+            }
+
+            final int x;
+            final int w;
+            if (dx < 0)
+            {
+                x = -dx;
+                w = getWidth()+dx;
+            }
+            else
+            {
+                x = 0;
+                w = getWidth()-dx;
+            }
+            final int y;
+            final int h;
+            if (dy < 0)
+            {
+                y = -dy;
+                h = getHeight()+dy;
+            }
+            else
+            {
+                y = 0;
+                h = getHeight()-dy;
+            }
+
             final Graphics2D g = mybuffer.createGraphics();
             try
             {
-                render();
+                g.copyArea(x, y, w, h, dx, dy);
+
+                for (int yy = 0; yy < y; yy++)
+                {
+                    for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                    {
+                        redrawSquare(g, xx, yy);
+                    }
+                }
+
+                for (int yy = y+h; yy < CrossfireServerConnection.MAP_HEIGHT; yy++)
+                {
+                    for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                    {
+                        redrawSquare(g, xx, yy);
+                    }
+                }
+
+                for (int yy = y; yy < y+h; yy++)
+                {
+                    for (int xx = 0; xx < x; xx++)
+                    {
+                        redrawSquare(g, xx, yy);
+                    }
+
+                    for (int xx = x+w; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                    {
+                        redrawSquare(g, xx, yy);
+                    }
+                }
             }
             finally
             {
@@ -201,14 +284,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
             {
                 for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
                 {
-                    final CfMapSquare square = CfMap.getMap()[x+10][y+10];
-                    if (square.isDirty())
-                    {
-                        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
-                        {
-                            redrawSquare(g, square, layer);
-                        }
-                    }
+                    redrawSquare(g, x, y);
                 }
             }
         }
