@@ -86,7 +86,7 @@ public class CfMap
         dis.readFully(buf);
 
         String str = new String(buf);
-        String packs[] = str.split(" ",5);
+        String packs[] = str.split(" ", 5);
         CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
             Integer.parseInt(packs[0]),
             Integer.parseInt(packs[1]),
@@ -124,7 +124,7 @@ public class CfMap
 //        System.out.println("Free Memory before Newmap GC:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         System.gc();
 //        long egtime = System.nanoTime();
-//        System.out.println("Free Memory after Newmap GC:"+Runtime.getRuntime().freeMemory()/1024 + " KB");
+//        System.out.println("Free Memory after Newmap GC:"+Runtime.getRuntime().freeMemory()/1024+" KB");
 //        System.out.println("Cleaning complete, Cleaning time:"+(etime-stime)/1000000+"ms, GC:"+(egtime-etime)/1000000+"ms.");
     }
 
