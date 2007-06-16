@@ -120,8 +120,12 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
 
     public void setText(String ntxt)
     {
-        mycaption = ntxt;
-        render();
+        if (ntxt == null) throw new IllegalArgumentException();
+        if (!mycaption.equals(ntxt))
+        {
+            mycaption = ntxt;
+            render();
+        }
     }
 
     protected void render()
