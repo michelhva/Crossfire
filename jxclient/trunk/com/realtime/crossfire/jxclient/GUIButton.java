@@ -46,10 +46,10 @@ public class GUIButton extends GUIElement
     private Color myfontcolor = new Color(255,255,255);
 
     public GUIButton
-            (String nn, int nx, int ny, int nw, int nh, String picup,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup,
                      String picdown, GUICommandList cmd) throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =
@@ -60,11 +60,11 @@ public class GUIButton extends GUIElement
         render();
     }
     public GUIButton
-            (String nn, int nx, int ny, int nw, int nh, String picup,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup,
              String picdown, String txt, Font f, Color mfc,
              int tx, int ty, GUICommandList cmd) throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         mypicture_up   =
             ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mypicture_down =

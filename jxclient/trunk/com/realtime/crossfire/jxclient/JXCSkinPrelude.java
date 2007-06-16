@@ -66,25 +66,25 @@ public class JXCSkinPrelude implements JXCSkin
         try
         {
             //Query-Reply Dialog
-            GUIPicture dlg_kb_back = new GUIPicture("dlg_kb_back", 23+350, 38+200,
+            GUIPicture dlg_kb_back = new GUIPicture(p, "dlg_kb_back", 23+350, 38+200,
                     200, 100, "default.theme/pictures/dialog_background.png");
-            GUILabel dlg_kb_message = new GUILabel("dlg_kb_message", 35+350, 60+200,
+            GUILabel dlg_kb_message = new GUILabel(p, "dlg_kb_message", 35+350, 60+200,
                     180, 32, null, font_stats, "Type the key to (un)bind:");
-            GUIPicture dlg_kb_a = new GUIPicture("dlg_kb_a", 0+350, 0+200,
+            GUIPicture dlg_kb_a = new GUIPicture(p, "dlg_kb_a", 0+350, 0+200,
                     23, 38, "default.theme/pictures/dialog_border_A.png");
-            GUIPicture dlg_kb_b = new GUIPicture("dlg_kb_b", 23+350, 0+200,
+            GUIPicture dlg_kb_b = new GUIPicture(p, "dlg_kb_b", 23+350, 0+200,
                     200, 38, "default.theme/pictures/dialog_border_B.png");
-            GUIPicture dlg_kb_c = new GUIPicture("dlg_kb_c", 223+350, 3+200,
+            GUIPicture dlg_kb_c = new GUIPicture(p, "dlg_kb_c", 223+350, 3+200,
                     21, 35, "default.theme/pictures/dialog_border_C.png");
-            GUIPicture dlg_kb_d = new GUIPicture("dlg_kb_d", 0+350, 38+200,
+            GUIPicture dlg_kb_d = new GUIPicture(p, "dlg_kb_d", 0+350, 38+200,
                     23, 100, "default.theme/pictures/dialog_border_D.png");
-            GUIPicture dlg_kb_e = new GUIPicture("dlg_kb_e", 223+350, 38+200,
+            GUIPicture dlg_kb_e = new GUIPicture(p, "dlg_kb_e", 223+350, 38+200,
                     21, 100, "default.theme/pictures/dialog_border_E.png");
-            GUIPicture dlg_kb_f = new GUIPicture("dlg_kb_f", 0+350, 138+200,
+            GUIPicture dlg_kb_f = new GUIPicture(p, "dlg_kb_f", 0+350, 138+200,
                     23, 16, "default.theme/pictures/dialog_border_F.png");
-            GUIPicture dlg_kb_g = new GUIPicture("dlg_kb_g", 23+350, 138+200,
+            GUIPicture dlg_kb_g = new GUIPicture(p, "dlg_kb_g", 23+350, 138+200,
                     200, 12, "default.theme/pictures/dialog_border_G.png");
-            GUIPicture dlg_kb_h = new GUIPicture("dlg_kb_h", 223+350, 138+200,
+            GUIPicture dlg_kb_h = new GUIPicture(p, "dlg_kb_h", 223+350, 138+200,
                     21, 16, "default.theme/pictures/dialog_border_H.png");
 
             mydialog_keybind.add(dlg_kb_back);
@@ -188,30 +188,30 @@ public class JXCSkinPrelude implements JXCSkin
         try
         {
             //Query-Reply Dialog
-            GUIPicture dlg_query_back = new GUIPicture("dlg_query_back", 23+350, 38+200,
+            GUIPicture dlg_query_back = new GUIPicture(p, "dlg_query_back", 23+350, 38+200,
                     200, 100, "default.theme/pictures/dialog_background.png");
-            GUILabel dlg_query_message = new GUILabel("dlg_query_message", 35+350, 60+200,
+            GUILabel dlg_query_message = new GUILabel(p, "dlg_query_message", 35+350, 60+200,
                     180, 32, null, font_stats, "X");
-            GUICommandText dlg_query_command = new GUICommandText("dlg_query_command",
+            GUICommandText dlg_query_command = new GUICommandText(p, "dlg_query_command",
                     50+350, 100+200, 132, 20,
                     "default.theme/pictures/textarea_medium_active.png",
                     "default.theme/pictures/textarea_medium_inactive.png",
                     font_cmdline, "");
-            GUIPicture dlg_query_a = new GUIPicture("dlg_query_a", 0+350, 0+200,
+            GUIPicture dlg_query_a = new GUIPicture(p, "dlg_query_a", 0+350, 0+200,
                     23, 38, "default.theme/pictures/dialog_border_A.png");
-            GUIPicture dlg_query_b = new GUIPicture("dlg_query_b", 23+350, 0+200,
+            GUIPicture dlg_query_b = new GUIPicture(p, "dlg_query_b", 23+350, 0+200,
                     200, 38, "default.theme/pictures/dialog_border_B.png");
-            GUIPicture dlg_query_c = new GUIPicture("dlg_query_c", 223+350, 3+200,
+            GUIPicture dlg_query_c = new GUIPicture(p, "dlg_query_c", 223+350, 3+200,
                     21, 35, "default.theme/pictures/dialog_border_C.png");
-            GUIPicture dlg_query_d = new GUIPicture("dlg_query_d", 0+350, 38+200,
+            GUIPicture dlg_query_d = new GUIPicture(p, "dlg_query_d", 0+350, 38+200,
                     23, 100, "default.theme/pictures/dialog_border_D.png");
-            GUIPicture dlg_query_e = new GUIPicture("dlg_query_e", 223+350, 38+200,
+            GUIPicture dlg_query_e = new GUIPicture(p, "dlg_query_e", 223+350, 38+200,
                     21, 100, "default.theme/pictures/dialog_border_E.png");
-            GUIPicture dlg_query_f = new GUIPicture("dlg_query_f", 0+350, 138+200,
+            GUIPicture dlg_query_f = new GUIPicture(p, "dlg_query_f", 0+350, 138+200,
                     23, 16, "default.theme/pictures/dialog_border_F.png");
-            GUIPicture dlg_query_g = new GUIPicture("dlg_query_g", 23+350, 138+200,
+            GUIPicture dlg_query_g = new GUIPicture(p, "dlg_query_g", 23+350, 138+200,
                     200, 12, "default.theme/pictures/dialog_border_G.png");
-            GUIPicture dlg_query_h = new GUIPicture("dlg_query_h", 223+350, 138+200,
+            GUIPicture dlg_query_h = new GUIPicture(p, "dlg_query_h", 223+350, 138+200,
                     21, 16, "default.theme/pictures/dialog_border_H.png");
 
             myserver.addCrossfireQueryListener(dlg_query_message);
@@ -334,23 +334,23 @@ public class JXCSkinPrelude implements JXCSkin
         try
         {
             //Map Group (100,100)
-            GUIMap gui_map = new GUIMap("playfield", 0+100, 0+100, 800,800);
+            GUIMap gui_map = new GUIMap(p, "playfield", 0+100, 0+100, 800,800);
 
             //LGauges Group (80,574)
 
-            GUIPicture gui_sword_back = new GUIPicture("sword_back", 16+80, 0+574,
+            GUIPicture gui_sword_back = new GUIPicture(p, "sword_back", 16+80, 0+574,
                     64, 256, "default.theme/pictures/background_sword.png");
-            GUIPicture gui_gauge_hp_back = new GUIPicture("gauge_hp_back", 0+80, 14+574,
+            GUIPicture gui_gauge_hp_back = new GUIPicture(p, "gauge_hp_back", 0+80, 14+574,
                     19, 144, "default.theme/pictures/life_gauge_empty.png");
-            GUIPicture gui_gauge_fp_back = new GUIPicture("gauge_fp_back", 75+80, 15+574,
+            GUIPicture gui_gauge_fp_back = new GUIPicture(p, "gauge_fp_back", 75+80, 15+574,
                     21, 143, "default.theme/pictures/food_gauge_empty.png");
 
-            GUIGauge gui_gauge_hp = new GUIGauge("gauge_hp", 0+80, 14+574,
+            GUIGauge gui_gauge_hp = new GUIGauge(p, "gauge_hp", 0+80, 14+574,
                     19, 144, "default.theme/pictures/life_gauge_full.png",null,
                     "default.theme/pictures/life_gauge_empty.png",
                     Stats.CS_STAT_HP,
                     GUIGauge.ORIENTATION_SN);
-            GUIGauge gui_gauge_fp = new GUIGauge("gauge_hp", 75+80, 15+574,
+            GUIGauge gui_gauge_fp = new GUIGauge(p, "gauge_hp", 75+80, 15+574,
                     21, 143, "default.theme/pictures/food_gauge_full.png",null,
                     "default.theme/pictures/food_gauge_empty.png",
                     Stats.CS_STAT_FOOD,
@@ -358,59 +358,59 @@ public class JXCSkinPrelude implements JXCSkin
 
             //RGauges Group (820,552)
 
-            GUIPicture gui_staff_back = new GUIPicture("staff_back", 40+820, 0+552,
+            GUIPicture gui_staff_back = new GUIPicture(p, "staff_back", 40+820, 0+552,
                     64, 256, "default.theme/pictures/background_staff.png");
-            GUIPicture gui_gauge_gp_back = new GUIPicture("gauge_gp_back", 0+820, 30+552,
+            GUIPicture gui_gauge_gp_back = new GUIPicture(p, "gauge_gp_back", 0+820, 30+552,
                     50, 150, "default.theme/pictures/grace_gauge_empty.png");
-            GUIPicture gui_gauge_sp_back = new GUIPicture("gauge_sp_back", 80+820, 30+552,
+            GUIPicture gui_gauge_sp_back = new GUIPicture(p, "gauge_sp_back", 80+820, 30+552,
                     50, 150, "default.theme/pictures/magic_gauge_empty.png");
 
-            GUIGauge gui_gauge_gp = new GUIGauge("gauge_gp", 0+820, 30+552,
+            GUIGauge gui_gauge_gp = new GUIGauge(p, "gauge_gp", 0+820, 30+552,
                     50, 150, "default.theme/pictures/grace_gauge_full.png",null,
                     "default.theme/pictures/grace_gauge_empty.png",
                     Stats.CS_STAT_GRACE,
                     GUIGauge.ORIENTATION_SN);
-            GUIGauge gui_gauge_sp = new GUIGauge("gauge_sp", 80+820, 30+552,
+            GUIGauge gui_gauge_sp = new GUIGauge(p, "gauge_sp", 80+820, 30+552,
                     50, 150, "default.theme/pictures/magic_gauge_full.png",null,
                     "default.theme/pictures/magic_gauge_empty.png",
                     Stats.CS_STAT_SP,
                     GUIGauge.ORIENTATION_SN);
 
             //UpperPane (207,27)
-            GUIPicture gui_title_back = new GUIPicture("title_back", 0+207, 0+27,
+            GUIPicture gui_title_back = new GUIPicture(p, "title_back", 0+207, 0+27,
                     1024, 128, "default.theme/pictures/title.png");
-            GUILabel gui_label_hp = new GUILabel("label_hp", 236+207, 64+27,
+            GUILabel gui_label_hp = new GUILabel(p, "label_hp", 236+207, 64+27,
                     20, 16, null, font_types, Stats.CS_STAT_HP);
-            GUILabel gui_label_fp = new GUILabel("label_fp", 284+207, 64+27,
+            GUILabel gui_label_fp = new GUILabel(p, "label_fp", 284+207, 64+27,
                     36, 16, null, font_types, Stats.CS_STAT_FOOD);
-            GUILabel gui_label_sp = new GUILabel("label_sp", 333+207, 64+27,
+            GUILabel gui_label_sp = new GUILabel(p, "label_sp", 333+207, 64+27,
                     36, 16, null, font_types, Stats.CS_STAT_SP);
-            GUILabel gui_label_gp = new GUILabel("label_gp", 381+207, 64+27,
+            GUILabel gui_label_gp = new GUILabel(p, "label_gp", 381+207, 64+27,
                     36, 16, null, font_types, Stats.CS_STAT_GRACE);
-            GUILabel gui_label_title = new GUILabel("label_title", 32+207, 24+27,
+            GUILabel gui_label_title = new GUILabel(p, "label_title", 32+207, 24+27,
                     512, 24, null, font_default_large, Stats.CS_STAT_TITLE);
 
             //UpperBar (113,0)
-            GUIPicture gui_up_back = new GUIPicture("up_back", 0+113, 0,
+            GUIPicture gui_up_back = new GUIPicture(p, "up_back", 0+113, 0,
                     1024, 32, "default.theme/pictures/background_up.png");
-            GUILabel gui_label_stat_str = new GUILabel("label_stat_str", 318+113, 3,
+            GUILabel gui_label_stat_str = new GUILabel(p, "label_stat_str", 318+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_STR);
-            GUILabel gui_label_stat_dex = new GUILabel("label_stat_dex", 403+113, 3,
+            GUILabel gui_label_stat_dex = new GUILabel(p, "label_stat_dex", 403+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_DEX);
-            GUILabel gui_label_stat_con = new GUILabel("label_stat_con", 488+113, 3,
+            GUILabel gui_label_stat_con = new GUILabel(p, "label_stat_con", 488+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_CON);
-            GUILabel gui_label_stat_int = new GUILabel("label_stat_int", 573+113, 3,
+            GUILabel gui_label_stat_int = new GUILabel(p, "label_stat_int", 573+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_INT);
-            GUILabel gui_label_stat_pow = new GUILabel("label_stat_pow", 658+113, 3,
+            GUILabel gui_label_stat_pow = new GUILabel(p, "label_stat_pow", 658+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_POW);
-            GUILabel gui_label_stat_wis = new GUILabel("label_stat_wis", 743+113, 3,
+            GUILabel gui_label_stat_wis = new GUILabel(p, "label_stat_wis", 743+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_WIS);
-            GUILabel gui_label_stat_cha = new GUILabel("label_stat_cha", 828+113, 3,
+            GUILabel gui_label_stat_cha = new GUILabel(p, "label_stat_cha", 828+113, 3,
                     32, 16, null, font_types, Stats.CS_STAT_CHA);
 
-            GUIPicture gui_magicmap_content = new GUIPicture("magicmap_content", 0+113, 20+3,
+            GUIPicture gui_magicmap_content = new GUIPicture(p, "magicmap_content", 0+113, 20+3,
                     232, 232, "default.theme/pictures/magicmap_content.png");
-            GUIMagicMap gui_magicmap = new GUIMagicMap("magicmap", 18+113, 38+3,
+            GUIMagicMap gui_magicmap = new GUIMagicMap(p, "magicmap", 18+113, 38+3,
                     196, 196);
 
             gui_magicmap_content.setVisible(false);
@@ -426,18 +426,18 @@ public class JXCSkinPrelude implements JXCSkin
             command_magicmap_undisplay.add(new GUICommand(gui_magicmap,
                                            GUICommand.CMD_HIDE, ""));
 
-            GUIButton gui_btn_magicmap_hide = new GUIButton("btn_magicmap_hide",
+            GUIButton gui_btn_magicmap_hide = new GUIButton(p, "btn_magicmap_hide",
                     0+63, 0+3, 232, 20,
                     "default.theme/pictures/magicmap_extended_inactive.png",
                     "default.theme/pictures/magicmap_extended_active.png",
                     command_magicmap_undisplay);
-            GUIButton gui_btn_magicmap_show = new GUIButton("btn_magicmap_show",
+            GUIButton gui_btn_magicmap_show = new GUIButton(p, "btn_magicmap_show",
                     0+63, 0+3, 232, 20,
                     "default.theme/pictures/magicmap_shrinked_inactive.png",
                     "default.theme/pictures/magicmap_shrinked_active.png",
                     command_magicmap_display);
 
-            GUIButton gui_btn_menu = new GUIButton("btn_menu",
+            GUIButton gui_btn_menu = new GUIButton(p, "btn_menu",
                     260+63, 0+3, 50, 20,
                     "default.theme/pictures/button_menu_inactive.png",
                     "default.theme/pictures/button_menu_active.png",
@@ -455,95 +455,95 @@ public class JXCSkinPrelude implements JXCSkin
                                          GUICommand.CMD_SHOW, ""));
 
             //LeftBar (0,0)
-            GUIPicture gui_left_back = new GUIPicture("left_back", 0, 0,
+            GUIPicture gui_left_back = new GUIPicture(p, "left_back", 0, 0,
                     128, 768, "default.theme/pictures/background_left.png");
 
             //RightBar (926,0);
-            GUIPicture gui_right_back = new GUIPicture("right_back", 0+926, 0,
+            GUIPicture gui_right_back = new GUIPicture(p, "right_back", 0+926, 0,
                     98, 768, "default.theme/pictures/background_right.png");
 
             //LInventory (26,171);
-            GUIPicture gui_spellbelt_left_back = new GUIPicture("spellbelt_left_back",
+            GUIPicture gui_spellbelt_left_back = new GUIPicture(p, "spellbelt_left_back",
                     0+26, 171,
                     45, 597, "default.theme/pictures/spellbelt_left.png");
-            GUIItem gui_spellbelt0 = new GUIItemSpellbelt("spellbelt0", 0+5+26, 0+34+171, 32, 32,
+            GUIItem gui_spellbelt0 = new GUIItemSpellbelt(p, "spellbelt0", 0+5+26, 0+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     0, myserver, font_default_small);
-            GUIItem gui_spellbelt1 = new GUIItemSpellbelt("spellbelt1", 0+5+26, 46+34+171, 32, 32,
+            GUIItem gui_spellbelt1 = new GUIItemSpellbelt(p, "spellbelt1", 0+5+26, 46+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     1, myserver, font_default_small);
-            GUIItem gui_spellbelt2 = new GUIItemSpellbelt("spellbelt2", 0+5+26, 92+34+171, 32, 32,
+            GUIItem gui_spellbelt2 = new GUIItemSpellbelt(p, "spellbelt2", 0+5+26, 92+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     2, myserver, font_default_small);
-            GUIItem gui_spellbelt3 = new GUIItemSpellbelt("spellbelt3", 0+5+26, 138+34+171, 32, 32,
+            GUIItem gui_spellbelt3 = new GUIItemSpellbelt(p, "spellbelt3", 0+5+26, 138+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     3, myserver, font_default_small);
-            GUIItem gui_spellbelt4 = new GUIItemSpellbelt("spellbelt4", 0+5+26, 184+34+171, 32, 32,
+            GUIItem gui_spellbelt4 = new GUIItemSpellbelt(p, "spellbelt4", 0+5+26, 184+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     4, myserver, font_default_small);
-            GUIItem gui_spellbelt5 = new GUIItemSpellbelt("spellbelt5", 0+5+26, 230+34+171, 32, 32,
+            GUIItem gui_spellbelt5 = new GUIItemSpellbelt(p, "spellbelt5", 0+5+26, 230+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     5, myserver, font_default_small);
-            GUIItem gui_spellbelt6 = new GUIItemSpellbelt("spellbelt6", 0+5+26, 276+34+171, 32, 32,
+            GUIItem gui_spellbelt6 = new GUIItemSpellbelt(p, "spellbelt6", 0+5+26, 276+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     6, myserver, font_default_small);
-            GUIItem gui_spellbelt7 = new GUIItemSpellbelt("spellbelt7", 0+5+26, 322+34+171, 32, 32,
+            GUIItem gui_spellbelt7 = new GUIItemSpellbelt(p, "spellbelt7", 0+5+26, 322+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     7, myserver, font_default_small);
-            GUIItem gui_spellbelt8 = new GUIItemSpellbelt("spellbelt8", 0+5+26, 368+34+171, 32, 32,
+            GUIItem gui_spellbelt8 = new GUIItemSpellbelt(p, "spellbelt8", 0+5+26, 368+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     8, myserver, font_default_small);
-            GUIItem gui_spellbelt9 = new GUIItemSpellbelt("spellbelt9", 0+5+26, 414+34+171, 32, 32,
+            GUIItem gui_spellbelt9 = new GUIItemSpellbelt(p, "spellbelt9", 0+5+26, 414+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     9, myserver, font_default_small);
-            GUIItem gui_spellbeltA = new GUIItemSpellbelt("spellbeltA", 0+5+26, 460+34+171, 32, 32,
+            GUIItem gui_spellbeltA = new GUIItemSpellbelt(p, "spellbeltA", 0+5+26, 460+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
                     "default.theme/pictures/inventory_selector.png",
                     "default.theme/pictures/marker_locked.png",
                     10, myserver, font_default_small);
-            GUIItem gui_spellbeltB = new GUIItemSpellbelt("spellbeltB", 0+5+26, 506+34+171, 32, 32,
+            GUIItem gui_spellbeltB = new GUIItemSpellbelt(p, "spellbeltB", 0+5+26, 506+34+171, 32, 32,
                     "default.theme/pictures/empty.png",
                     "default.theme/pictures/spell_cast.png",
                     "default.theme/pictures/spell_invoke.png",
@@ -552,142 +552,142 @@ public class JXCSkinPrelude implements JXCSkin
                     11, myserver, font_default_small);
 
             //RInventory (973,53)
-            GUIPicture gui_inv_right_back = new GUIPicture("inv_right_back", 8+973, 0+53,
+            GUIPicture gui_inv_right_back = new GUIPicture(p, "inv_right_back", 8+973, 0+53,
                     43, 715, "default.theme/pictures/inventory.png");
-            GUIItem gui_rinv0 = new GUIItemInventory("rinv0", 0+973+14, 0+53+9, 32, 32,
+            GUIItem gui_rinv0 = new GUIItemInventory(p, "rinv0", 0+973+14, 0+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             0, myserver, font_default_small);
-            GUIItem gui_rinv1 = new GUIItemInventory("rinv1", 0+973+14, 35+53+9, 32, 32,
+            GUIItem gui_rinv1 = new GUIItemInventory(p, "rinv1", 0+973+14, 35+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             1, myserver, font_default_small);
-            GUIItem gui_rinv2 = new GUIItemInventory("rinv2", 0+973+14, 70+53+9, 32, 32,
+            GUIItem gui_rinv2 = new GUIItemInventory(p, "rinv2", 0+973+14, 70+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             2, myserver, font_default_small);
-            GUIItem gui_rinv3 = new GUIItemInventory("rinv3", 0+973+14, 105+53+9, 32, 32,
+            GUIItem gui_rinv3 = new GUIItemInventory(p, "rinv3", 0+973+14, 105+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             3, myserver, font_default_small);
-            GUIItem gui_rinv4 = new GUIItemInventory("rinv4", 0+973+14, 140+53+9, 32, 32,
+            GUIItem gui_rinv4 = new GUIItemInventory(p, "rinv4", 0+973+14, 140+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             4, myserver, font_default_small);
-            GUIItem gui_rinv5 = new GUIItemInventory("rinv5", 0+973+14, 175+53+9, 32, 32,
+            GUIItem gui_rinv5 = new GUIItemInventory(p, "rinv5", 0+973+14, 175+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             5, myserver, font_default_small);
-            GUIItem gui_rinv6 = new GUIItemInventory("rinv6", 0+973+14, 210+53+9, 32, 32,
+            GUIItem gui_rinv6 = new GUIItemInventory(p, "rinv6", 0+973+14, 210+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             6, myserver, font_default_small);
-            GUIItem gui_rinv7 = new GUIItemInventory("rinv7", 0+973+14, 245+53+9, 32, 32,
+            GUIItem gui_rinv7 = new GUIItemInventory(p, "rinv7", 0+973+14, 245+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             7, myserver, font_default_small);
-            GUIItem gui_rinv8 = new GUIItemInventory("rinv8", 0+973+14, 280+53+9, 32, 32,
+            GUIItem gui_rinv8 = new GUIItemInventory(p, "rinv8", 0+973+14, 280+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             8, myserver, font_default_small);
-            GUIItem gui_rinv9 = new GUIItemInventory("rinv9", 0+973+14, 315+53+9, 32, 32,
+            GUIItem gui_rinv9 = new GUIItemInventory(p, "rinv9", 0+973+14, 315+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             9, myserver, font_default_small);
-            GUIItem gui_rinvA = new GUIItemInventory("rinvA", 0+973+14, 350+53+9, 32, 32,
+            GUIItem gui_rinvA = new GUIItemInventory(p, "rinvA", 0+973+14, 350+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             10, myserver, font_default_small);
-            GUIItem gui_rinvB = new GUIItemInventory("rinvB", 0+973+14, 385+53+9, 32, 32,
+            GUIItem gui_rinvB = new GUIItemInventory(p, "rinvB", 0+973+14, 385+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             11, myserver, font_default_small);
-            GUIItem gui_rinvC = new GUIItemInventory("rinvC", 0+973+14, 420+53+9, 32, 32,
+            GUIItem gui_rinvC = new GUIItemInventory(p, "rinvC", 0+973+14, 420+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             12, myserver, font_default_small);
-            GUIItem gui_rinvD = new GUIItemInventory("rinvD", 0+973+14, 455+53+9, 32, 32,
+            GUIItem gui_rinvD = new GUIItemInventory(p, "rinvD", 0+973+14, 455+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             13, myserver, font_default_small);
-            GUIItem gui_rinvE = new GUIItemInventory("rinvE", 0+973+14, 490+53+9, 32, 32,
+            GUIItem gui_rinvE = new GUIItemInventory(p, "rinvE", 0+973+14, 490+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             14, myserver, font_default_small);
-            GUIItem gui_rinvF = new GUIItemInventory("rinvF", 0+973+14, 525+53+9, 32, 32,
+            GUIItem gui_rinvF = new GUIItemInventory(p, "rinvF", 0+973+14, 525+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             15, myserver, font_default_small);
-            GUIItem gui_rinvG = new GUIItemInventory("rinvG", 0+973+14, 560+53+9, 32, 32,
+            GUIItem gui_rinvG = new GUIItemInventory(p, "rinvG", 0+973+14, 560+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             16, myserver, font_default_small);
-            GUIItem gui_rinvH = new GUIItemInventory("rinvH", 0+973+14, 595+53+9, 32, 32,
+            GUIItem gui_rinvH = new GUIItemInventory(p, "rinvH", 0+973+14, 595+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             17, myserver, font_default_small);
-            GUIItem gui_rinvI = new GUIItemInventory("rinvI", 0+973+14, 630+53+9, 32, 32,
+            GUIItem gui_rinvI = new GUIItemInventory(p, "rinvI", 0+973+14, 630+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             18, myserver, font_default_small);
-            GUIItem gui_rinvJ = new GUIItemInventory("rinvJ", 0+973+14, 665+53+9, 32, 32,
+            GUIItem gui_rinvJ = new GUIItemInventory(p, "rinvJ", 0+973+14, 665+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
@@ -695,21 +695,21 @@ public class JXCSkinPrelude implements JXCSkin
                                             "default.theme/pictures/marker_locked.png",
                                             19, myserver, font_default_small);
 
-            GUIItem gui_rsp0 = new GUIItemSpelllist("rsp0", 0+973+14, 0+53+9, 32, 32,
+            GUIItem gui_rsp0 = new GUIItemSpelllist(p, "rsp0", 0+973+14, 0+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             0, myserver, font_default_small);
-            GUIItem gui_rsp1 = new GUIItemSpelllist("rsp1", 0+973+14, 35+53+9, 32, 32,
+            GUIItem gui_rsp1 = new GUIItemSpelllist(p, "rsp1", 0+973+14, 35+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             1, myserver, font_default_small);
-            GUIItem gui_rsp2 = new GUIItemSpelllist("rsp2", 0+973+14, 70+53+9, 32, 32,
+            GUIItem gui_rsp2 = new GUIItemSpelllist(p, "rsp2", 0+973+14, 70+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
@@ -717,119 +717,119 @@ public class JXCSkinPrelude implements JXCSkin
                                             "default.theme/pictures/marker_locked.png",
                                             2, myserver,
                                             font_default_small);
-            GUIItem gui_rsp3 = new GUIItemSpelllist("rsp3", 0+973+14, 105+53+9, 32, 32,
+            GUIItem gui_rsp3 = new GUIItemSpelllist(p, "rsp3", 0+973+14, 105+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             3, myserver, font_default_small);
-            GUIItem gui_rsp4 = new GUIItemSpelllist("rsp4", 0+973+14, 140+53+9, 32, 32,
+            GUIItem gui_rsp4 = new GUIItemSpelllist(p, "rsp4", 0+973+14, 140+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             4, myserver, font_default_small);
-            GUIItem gui_rsp5 = new GUIItemSpelllist("rsp5", 0+973+14, 175+53+9, 32, 32,
+            GUIItem gui_rsp5 = new GUIItemSpelllist(p, "rsp5", 0+973+14, 175+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             5, myserver, font_default_small);
-            GUIItem gui_rsp6 = new GUIItemSpelllist("rsp6", 0+973+14, 210+53+9, 32, 32,
+            GUIItem gui_rsp6 = new GUIItemSpelllist(p, "rsp6", 0+973+14, 210+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             6, myserver, font_default_small);
-            GUIItem gui_rsp7 = new GUIItemSpelllist("rsp7", 0+973+14, 245+53+9, 32, 32,
+            GUIItem gui_rsp7 = new GUIItemSpelllist(p, "rsp7", 0+973+14, 245+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             7, myserver, font_default_small);
-            GUIItem gui_rsp8 = new GUIItemSpelllist("rsp8", 0+973+14, 280+53+9, 32, 32,
+            GUIItem gui_rsp8 = new GUIItemSpelllist(p, "rsp8", 0+973+14, 280+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             8, myserver, font_default_small);
-            GUIItem gui_rsp9 = new GUIItemSpelllist("rsp9", 0+973+14, 315+53+9, 32, 32,
+            GUIItem gui_rsp9 = new GUIItemSpelllist(p, "rsp9", 0+973+14, 315+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             9, myserver, font_default_small);
-            GUIItem gui_rspA = new GUIItemSpelllist("rspA", 0+973+14, 350+53+9, 32, 32,
+            GUIItem gui_rspA = new GUIItemSpelllist(p, "rspA", 0+973+14, 350+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             10, myserver, font_default_small);
-            GUIItem gui_rspB = new GUIItemSpelllist("rspB", 0+973+14, 385+53+9, 32, 32,
+            GUIItem gui_rspB = new GUIItemSpelllist(p, "rspB", 0+973+14, 385+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             11, myserver, font_default_small);
-            GUIItem gui_rspC = new GUIItemSpelllist("rspC", 0+973+14, 420+53+9, 32, 32,
+            GUIItem gui_rspC = new GUIItemSpelllist(p, "rspC", 0+973+14, 420+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             12, myserver, font_default_small);
-            GUIItem gui_rspD = new GUIItemSpelllist("rspD", 0+973+14, 455+53+9, 32, 32,
+            GUIItem gui_rspD = new GUIItemSpelllist(p, "rspD", 0+973+14, 455+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             13, myserver, font_default_small);
-            GUIItem gui_rspE = new GUIItemSpelllist("rspE", 0+973+14, 490+53+9, 32, 32,
+            GUIItem gui_rspE = new GUIItemSpelllist(p, "rspE", 0+973+14, 490+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             14, myserver, font_default_small);
-            GUIItem gui_rspF = new GUIItemSpelllist("rspF", 0+973+14, 525+53+9, 32, 32,
+            GUIItem gui_rspF = new GUIItemSpelllist(p, "rspF", 0+973+14, 525+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             15, myserver, font_default_small);
-            GUIItem gui_rspG = new GUIItemSpelllist("rspG", 0+973+14, 560+53+9, 32, 32,
+            GUIItem gui_rspG = new GUIItemSpelllist(p, "rspG", 0+973+14, 560+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             16, myserver, font_default_small);
-            GUIItem gui_rspH = new GUIItemSpelllist("rspH", 0+973+14, 595+53+9, 32, 32,
+            GUIItem gui_rspH = new GUIItemSpelllist(p, "rspH", 0+973+14, 595+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             17, myserver, font_default_small);
-            GUIItem gui_rspI = new GUIItemSpelllist("rspI", 0+973+14, 630+53+9, 32, 32,
+            GUIItem gui_rspI = new GUIItemSpelllist(p, "rspI", 0+973+14, 630+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
                                             "default.theme/pictures/inventory_selector.png",
                                             "default.theme/pictures/marker_locked.png",
                                             18, myserver, font_default_small);
-            GUIItem gui_rspJ = new GUIItemSpelllist("rspJ", 0+973+14, 665+53+9, 32, 32,
+            GUIItem gui_rspJ = new GUIItemSpelllist(p, "rspJ", 0+973+14, 665+53+9, 32, 32,
                                             "default.theme/pictures/empty.png",
                                             "default.theme/pictures/marker_cursed.png",
                                             "default.theme/pictures/marker_applied.png",
@@ -921,20 +921,20 @@ public class JXCSkinPrelude implements JXCSkin
             command_rsp_down.add(new GUICommand(gui_rspI, GUICommand.CMD_SCROLLDOWN, ""));
             command_rsp_down.add(new GUICommand(gui_rspJ, GUICommand.CMD_SCROLLDOWN, ""));
 
-            GUIButton gui_btn_rinv_up = new GUIButton("btn_rinv_up", 0+973, 13+53, 10, 31,
+            GUIButton gui_btn_rinv_up = new GUIButton(p, "btn_rinv_up", 0+973, 13+53, 10, 31,
                     "default.theme/pictures/inv_scrollup_inactive.png",
                     "default.theme/pictures/inv_scrollup_pushed.png",
                     command_rinv_up);
-            GUIButton gui_btn_rinv_down = new GUIButton("btn_rinv_down", 0+973, 656+53, 10, 31,
+            GUIButton gui_btn_rinv_down = new GUIButton(p, "btn_rinv_down", 0+973, 656+53, 10, 31,
                     "default.theme/pictures/inv_scrolldown_inactive.png",
                     "default.theme/pictures/inv_scrolldown_pushed.png",
                     command_rinv_down);
 
-            GUIButton gui_btn_rsp_up = new GUIButton("btn_rsp_up", 0+973, 13+53, 10, 31,
+            GUIButton gui_btn_rsp_up = new GUIButton(p, "btn_rsp_up", 0+973, 13+53, 10, 31,
                     "default.theme/pictures/inv_scrollup_inactive.png",
                     "default.theme/pictures/inv_scrollup_pushed.png",
                     command_rsp_up);
-            GUIButton gui_btn_rsp_down = new GUIButton("btn_rsp_down", 0+973, 656+53, 10, 31,
+            GUIButton gui_btn_rsp_down = new GUIButton(p, "btn_rsp_down", 0+973, 656+53, 10, 31,
                     "default.theme/pictures/inv_scrolldown_inactive.png",
                     "default.theme/pictures/inv_scrolldown_pushed.png",
                     command_rsp_down);
@@ -963,31 +963,31 @@ public class JXCSkinPrelude implements JXCSkin
             gui_rspJ.setVisible(false);
 
             //SecondaryStats (319,621)
-            GUILabel gui_label_sstat_level = new GUILabel("label_sstat_level", 0+319, 4+621,
+            GUILabel gui_label_sstat_level = new GUILabel(p, "label_sstat_level", 0+319, 4+621,
                     64, 20, null, font_stats, Stats.CS_STAT_LEVEL);
-            GUILabel gui_label_sstat_exp = new GUILabel("label_sstat_exp", 0+319, 27+621,
+            GUILabel gui_label_sstat_exp = new GUILabel(p, "label_sstat_exp", 0+319, 27+621,
                     64, 20, null, font_stats, Stats.CS_STAT_EXP64);
-            GUILabel gui_label_sstat_range = new GUILabel("label_sstat_range", 0+319, 49+621,
+            GUILabel gui_label_sstat_range = new GUILabel(p, "label_sstat_range", 0+319, 49+621,
                     85, 20, null, font_stats, Stats.CS_STAT_RANGE);
-            GUILabel gui_label_sstat_wc = new GUILabel("label_sstat_wc", 200+319, 4+621,
+            GUILabel gui_label_sstat_wc = new GUILabel(p, "label_sstat_wc", 200+319, 4+621,
                     56, 20, null, font_stats, Stats.CS_STAT_WC);
-            GUILabel gui_label_sstat_ac = new GUILabel("label_sstat_ac", 200+319, 27+621,
+            GUILabel gui_label_sstat_ac = new GUILabel(p, "label_sstat_ac", 200+319, 27+621,
                     56, 20, null, font_stats, Stats.CS_STAT_AC);
-            GUILabel gui_label_sstat_dam = new GUILabel("label_sstat_dam", 200+319, 49+621,
+            GUILabel gui_label_sstat_dam = new GUILabel(p, "label_sstat_dam", 200+319, 49+621,
                     56, 20, null, font_stats, Stats.CS_STAT_DAM);
-            GUILabel gui_label_sstat_speed = new GUILabel("label_sstat_speed", 200+319, 71+621,
+            GUILabel gui_label_sstat_speed = new GUILabel(p, "label_sstat_speed", 200+319, 71+621,
                     56, 20, null, font_stats, Stats.CS_STAT_SPEED);
 
             //Panel (199,551)
-            GUIPicture gui_panel_back = new GUIPicture("panel_back", 0+199, 0+551,
+            GUIPicture gui_panel_back = new GUIPicture(p, "panel_back", 0+199, 0+551,
                     700, 230, "default.theme/pictures/background_panel.png");
-            GUIPicture gui_panel_spells = new GUIPicture("panel_spells", 392+199, 74+551,
+            GUIPicture gui_panel_spells = new GUIPicture(p, "panel_spells", 392+199, 74+551,
                     224, 123, "default.theme/pictures/spell_panel.png");
-            GUILabel gui_panel_spells_icon = new GUILabel("label_panel_spells_icon",
+            GUILabel gui_panel_spells_icon = new GUILabel(p, "label_panel_spells_icon",
                     400+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_ICON);
-            GUILabel gui_panel_spells_name = new GUILabel("label_panel_spells_name",
+            GUILabel gui_panel_spells_name = new GUILabel(p, "label_panel_spells_name",
                     450+199, 85+551, 100, 20, null, font_stats, GUILabel.LABEL_SPELL_NAME);
-            GUILabel gui_panel_spells_description = new GUILabel("label_panel_spells_description",
+            GUILabel gui_panel_spells_description = new GUILabel(p, "label_panel_spells_description",
                     450+199, 105+551, 100, 20, null, font_stats,
                     GUILabel.LABEL_SPELL_DESCRIPTION);
 
@@ -996,7 +996,7 @@ public class JXCSkinPrelude implements JXCSkin
             gui_panel_spells_name.setVisible(false);
             gui_panel_spells_description.setVisible(false);
 
-            GUIItem gui_floor0 = new GUIItemFloor("floor0", 0+199+9, 0+551+165, 32, 32,
+            GUIItem gui_floor0 = new GUIItemFloor(p, "floor0", 0+199+9, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1004,7 +1004,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              0, myserver,
                                              font_default_small);
-            GUIItem gui_floor1 = new GUIItemFloor("floor1", 0+199+9+34, 0+551+165, 32, 32,
+            GUIItem gui_floor1 = new GUIItemFloor(p, "floor1", 0+199+9+34, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1012,7 +1012,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              1, myserver,
                                              font_default_small);
-            GUIItem gui_floor2 = new GUIItemFloor("floor2", 0+199+9+68, 0+551+165, 32, 32,
+            GUIItem gui_floor2 = new GUIItemFloor(p, "floor2", 0+199+9+68, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1020,7 +1020,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              2, myserver,
                                              font_default_small);
-            GUIItem gui_floor3 = new GUIItemFloor("floor3", 0+199+9+102, 0+551+165, 32, 32,
+            GUIItem gui_floor3 = new GUIItemFloor(p, "floor3", 0+199+9+102, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1028,7 +1028,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              3, myserver,
                                              font_default_small);
-            GUIItem gui_floor4 = new GUIItemFloor("floor4", 0+199+9+136, 0+551+165, 32, 32,
+            GUIItem gui_floor4 = new GUIItemFloor(p, "floor4", 0+199+9+136, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1036,7 +1036,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              4, myserver,
                                              font_default_small);
-            GUIItem gui_floor5 = new GUIItemFloor("floor5", 0+199+9+170, 0+551+165, 32, 32,
+            GUIItem gui_floor5 = new GUIItemFloor(p, "floor5", 0+199+9+170, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1044,7 +1044,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              5, myserver,
                                              font_default_small);
-            GUIItem gui_floor6 = new GUIItemFloor("floor6", 0+199+9+204, 0+551+165, 32, 32,
+            GUIItem gui_floor6 = new GUIItemFloor(p, "floor6", 0+199+9+204, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1052,7 +1052,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              6, myserver,
                                              font_default_small);
-            GUIItem gui_floor7 = new GUIItemFloor("floor7", 0+199+9+238, 0+551+165, 32, 32,
+            GUIItem gui_floor7 = new GUIItemFloor(p, "floor7", 0+199+9+238, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1060,7 +1060,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              7, myserver,
                                              font_default_small);
-            GUIItem gui_floor8 = new GUIItemFloor("floor8", 0+199+9+272, 0+551+165, 32, 32,
+            GUIItem gui_floor8 = new GUIItemFloor(p, "floor8", 0+199+9+272, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1068,7 +1068,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              8, myserver,
                                              font_default_small);
-            GUIItem gui_floor9 = new GUIItemFloor("floor9", 0+199+9+306, 0+551+165, 32, 32,
+            GUIItem gui_floor9 = new GUIItemFloor(p, "floor9", 0+199+9+306, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1076,7 +1076,7 @@ public class JXCSkinPrelude implements JXCSkin
                                              "default.theme/pictures/marker_locked.png",
                                              9, myserver,
                                              font_default_small);
-            GUIItem gui_floorA = new GUIItemFloor("floorA", 0+199+9+340, 0+551+165, 32, 32,
+            GUIItem gui_floorA = new GUIItemFloor(p, "floorA", 0+199+9+340, 0+551+165, 32, 32,
                                              "default.theme/pictures/empty.png",
                                              "default.theme/pictures/marker_cursed.png",
                                              "default.theme/pictures/marker_applied.png",
@@ -1086,150 +1086,150 @@ public class JXCSkinPrelude implements JXCSkin
                                             font_default_small);
 
             //Resistances (630,628)
-            GUIPicture gui_gr0_back = new GUIPicture("gr0_back", 0+630, 0+628,
+            GUIPicture gui_gr0_back = new GUIPicture(p, "gr0_back", 0+630, 0+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr1_back = new GUIPicture("gr1_back", 76+630, 0+628,
+            GUIPicture gui_gr1_back = new GUIPicture(p, "gr1_back", 76+630, 0+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr2_back = new GUIPicture("gr2_back", 152+630, 0+628,
+            GUIPicture gui_gr2_back = new GUIPicture(p, "gr2_back", 152+630, 0+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr3_back = new GUIPicture("gr3_back", 0+630, 21+628,
+            GUIPicture gui_gr3_back = new GUIPicture(p, "gr3_back", 0+630, 21+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr4_back = new GUIPicture("gr4_back", 76+630, 21+628,
+            GUIPicture gui_gr4_back = new GUIPicture(p, "gr4_back", 76+630, 21+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr5_back = new GUIPicture("gr5_back", 152+630, 21+628,
+            GUIPicture gui_gr5_back = new GUIPicture(p, "gr5_back", 152+630, 21+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr6_back = new GUIPicture("gr6_back", 0+630, 42+628,
+            GUIPicture gui_gr6_back = new GUIPicture(p, "gr6_back", 0+630, 42+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr7_back = new GUIPicture("gr7_back", 76+630, 42+628,
+            GUIPicture gui_gr7_back = new GUIPicture(p, "gr7_back", 76+630, 42+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr8_back = new GUIPicture("gr8_back", 152+630, 42+628,
+            GUIPicture gui_gr8_back = new GUIPicture(p, "gr8_back", 152+630, 42+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_gr9_back = new GUIPicture("gr9_back", 0+630, 63+628,
+            GUIPicture gui_gr9_back = new GUIPicture(p, "gr9_back", 0+630, 63+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grA_back = new GUIPicture("grA_back", 76+630, 63+628,
+            GUIPicture gui_grA_back = new GUIPicture(p, "grA_back", 76+630, 63+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grB_back = new GUIPicture("grB_back", 152+630, 63+628,
+            GUIPicture gui_grB_back = new GUIPicture(p, "grB_back", 152+630, 63+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grC_back = new GUIPicture("grC_back", 0+630, 84+628,
+            GUIPicture gui_grC_back = new GUIPicture(p, "grC_back", 0+630, 84+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grD_back = new GUIPicture("grD_back", 76+630, 84+628,
+            GUIPicture gui_grD_back = new GUIPicture(p, "grD_back", 76+630, 84+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grE_back = new GUIPicture("grE_back", 152+630, 84+628,
+            GUIPicture gui_grE_back = new GUIPicture(p, "grE_back", 152+630, 84+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grF_back = new GUIPicture("grF_back", 0+630, 105+628,
+            GUIPicture gui_grF_back = new GUIPicture(p, "grF_back", 0+630, 105+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grG_back = new GUIPicture("grG_back", 76+630, 105+628,
+            GUIPicture gui_grG_back = new GUIPicture(p, "grG_back", 76+630, 105+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
-            GUIPicture gui_grH_back = new GUIPicture("grH_back", 152+630, 105+628,
+            GUIPicture gui_grH_back = new GUIPicture(p, "grH_back", 152+630, 105+628,
                     32, 11, "default.theme/pictures/res_gauge_empty.png");
 
 
-            GUIGauge gui_gr0 = new GUIGauge("gr0", 0+630, 0+628,
+            GUIGauge gui_gr0 = new GUIGauge(p, "gr0", 0+630, 0+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_PHYS, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr1 = new GUIGauge("gr1", 76+630, 0+628,
+            GUIGauge gui_gr1 = new GUIGauge(p, "gr1", 76+630, 0+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_MAG, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr2 = new GUIGauge("gr2", 152+630, 0+628,
+            GUIGauge gui_gr2 = new GUIGauge(p, "gr2", 152+630, 0+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_FIRE, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr3 = new GUIGauge("gr3", 0+630, 21+628,
+            GUIGauge gui_gr3 = new GUIGauge(p, "gr3", 0+630, 21+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_ELEC, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr4 = new GUIGauge("gr4", 76+630, 21+628,
+            GUIGauge gui_gr4 = new GUIGauge(p, "gr4", 76+630, 21+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_COLD, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr5 = new GUIGauge("gr5", 152+630, 21+628,
+            GUIGauge gui_gr5 = new GUIGauge(p, "gr5", 152+630, 21+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_CONF, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr6 = new GUIGauge("gr6", 0+630, 42+628,
+            GUIGauge gui_gr6 = new GUIGauge(p, "gr6", 0+630, 42+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_ACID, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr7 = new GUIGauge("gr7", 76+630, 42+628,
+            GUIGauge gui_gr7 = new GUIGauge(p, "gr7", 76+630, 42+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_DRAIN, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr8 = new GUIGauge("gr8", 152+630, 42+628,
+            GUIGauge gui_gr8 = new GUIGauge(p, "gr8", 152+630, 42+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_GHOSTHIT,
                                             GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_gr9 = new GUIGauge("gr9", 0+630, 63+628,
+            GUIGauge gui_gr9 = new GUIGauge(p, "gr9", 0+630, 63+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_POISON, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grA = new GUIGauge("grA", 76+630, 63+628,
+            GUIGauge gui_grA = new GUIGauge(p, "grA", 76+630, 63+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_SLOW, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grB = new GUIGauge("grB", 152+630, 63+628,
+            GUIGauge gui_grB = new GUIGauge(p, "grB", 152+630, 63+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_PARA, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grC = new GUIGauge("grC", 0+630, 84+628,
+            GUIGauge gui_grC = new GUIGauge(p, "grC", 0+630, 84+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_TURN_UNDEAD, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grD = new GUIGauge("grD", 76+630, 84+628,
+            GUIGauge gui_grD = new GUIGauge(p, "grD", 76+630, 84+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_FEAR, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grE = new GUIGauge("grE", 152+630, 84+628,
+            GUIGauge gui_grE = new GUIGauge(p, "grE", 152+630, 84+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_DEPLETE,
                                             GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grF = new GUIGauge("grF", 0+630, 105+628,
+            GUIGauge gui_grF = new GUIGauge(p, "grF", 0+630, 105+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_DEATH, GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grG = new GUIGauge("grG", 76+630, 105+628,
+            GUIGauge gui_grG = new GUIGauge(p, "grG", 76+630, 105+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
                                             Stats.CS_STAT_RES_HOLYWORD,
                                             GUIGauge.ORIENTATION_WE);
-            GUIGauge gui_grH = new GUIGauge("grH", 152+630, 105+628,
+            GUIGauge gui_grH = new GUIGauge(p, "grH", 152+630, 105+628,
                                             29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
@@ -1237,9 +1237,9 @@ public class JXCSkinPrelude implements JXCSkin
                                             Stats.CS_STAT_RES_BLIND, GUIGauge.ORIENTATION_WE);
 
             //LowerBar (72,732)
-            GUIPicture gui_lower_back = new GUIPicture("lower_bar", 0+72, 0+732,
+            GUIPicture gui_lower_back = new GUIPicture(p, "lower_bar", 0+72, 0+732,
                     880, 36, "default.theme/pictures/lower_bar.png");
-            GUICommandText gui_command = new GUICommandText("command", 127+72, 17+732,
+            GUICommandText gui_command = new GUICommandText(p, "command", 127+72, 17+732,
                     512, 32, "default.theme/pictures/empty.png",
                     "default.theme/pictures/empty.png",
                     font_cmdline, "");
@@ -1358,12 +1358,12 @@ public class JXCSkinPrelude implements JXCSkin
             command_rsp_undisplay.add(new GUICommand(gui_panel_spells_description,
                                     GUICommand.CMD_HIDE, ""));
 
-            GUIButton gui_btn_rsp_display = new GUIButton("btn_rsp_display",
+            GUIButton gui_btn_rsp_display = new GUIButton(p, "btn_rsp_display",
                     690+72, 22+732, 25, 14,
                     "default.theme/pictures/button_chat_inactive.png",
                     "default.theme/pictures/button_chat_active.png",
                     command_rsp_display);
-            GUIButton gui_btn_rsp_undisplay = new GUIButton("btn_rsp_undisplay",
+            GUIButton gui_btn_rsp_undisplay = new GUIButton(p, "btn_rsp_undisplay",
                     690+72, 22+732, 25, 14,
                     "default.theme/pictures/button_chat_pushed.png",
                     "default.theme/pictures/button_chat_active.png",
@@ -1378,16 +1378,16 @@ public class JXCSkinPrelude implements JXCSkin
             command_rsp_display.add(new GUICommand(gui_btn_rsp_undisplay,
                                     GUICommand.CMD_SHOW,""));
 
-            GUIButton gui_btn_stats = new GUIButton("btn_stats",
+            GUIButton gui_btn_stats = new GUIButton(p, "btn_stats",
                     720+72, 22+732, 25, 14,
                     "default.theme/pictures/button_stat_inactive.png",
                     "default.theme/pictures/button_stat_active.png",
                     command_menu_display);
 
             //TextPaneUp (679,100)
-            GUIPicture gui_log_upper_back = new GUIPicture("lower_back", 0+679, 0+100,
+            GUIPicture gui_log_upper_back = new GUIPicture(p, "lower_back", 0+679, 0+100,
                     301, 204, "default.theme/pictures/log1_expanded_inactive.png");
-            GUILog gui_log_upper = new GUILog("log_upper", 10+679, 3+100, 250, 198,
+            GUILog gui_log_upper = new GUILog(p, "log_upper", 10+679, 3+100, 250, 198,
                                               "default.theme/pictures/empty.png",
                                               font_log, 511);
             command_log_upper_up.add(new GUICommand(gui_log_upper,
@@ -1395,11 +1395,11 @@ public class JXCSkinPrelude implements JXCSkin
             command_log_upper_down.add(new GUICommand(gui_log_upper,
                                        GUICommand.CMD_SCROLLDOWN, ""));
 
-            GUIButton gui_log_upper_up = new GUIButton("log_upper_up", 0+679, 0+100, 10, 31,
+            GUIButton gui_log_upper_up = new GUIButton(p, "log_upper_up", 0+679, 0+100, 10, 31,
                     "default.theme/pictures/inv_scrollup_inactive.png",
                     "default.theme/pictures/inv_scrollup_inactive.png",
                     command_log_upper_up);
-            GUIButton gui_log_upper_down = new GUIButton("log_upper_down", 0+679, 180+100, 10, 31,
+            GUIButton gui_log_upper_down = new GUIButton(p, "log_upper_down", 0+679, 180+100, 10, 31,
                     "default.theme/pictures/inv_scrolldown_inactive.png",
                     "default.theme/pictures/inv_scrolldown_inactive.png",
                     command_log_upper_down);
@@ -1727,53 +1727,53 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            GUIPicture gui_background = new GUIPicture("background", 0, 0, 1024, 768,
+            GUIPicture gui_background = new GUIPicture(p, "background", 0, 0, 1024, 768,
                     "default.theme/pictures/metaserver.png");
-            GUIText gui_metaurl = new GUIText("metaurl", 300, 620, 260, 20,
+            GUIText gui_metaurl = new GUIText(p, "metaurl", 300, 620, 260, 20,
                                               "default.theme/pictures/textarea_big_active.png",
                                               "default.theme/pictures/textarea_big_inactive.png",
                                               font_metaurl,
                                               "");
-            GUILabel gui_metacomment = new GUILabel("metacomment", 200, 650, 600, 118,
+            GUILabel gui_metacomment = new GUILabel(p, "metacomment", 200, 650, 600, 118,
                     "default.theme/pictures/empty.png",
                     font_description,
                     "");
-            GUIMetaElement gui_metaselect1 = new GUIMetaElement("metaselect1",
+            GUIMetaElement gui_metaselect1 = new GUIMetaElement(p, "metaselect1",
                     300, 250, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 0);
-            GUIMetaElement gui_metaselect2 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect2 = new GUIMetaElement(p,
                     "metaselect2", 300, 280, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 1);
-            GUIMetaElement gui_metaselect3 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect3 = new GUIMetaElement(p,
                     "metaselect3", 300, 310, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 2);
-            GUIMetaElement gui_metaselect4 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect4 = new GUIMetaElement(p,
                     "metaselect4", 300, 340, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 3);
-            GUIMetaElement gui_metaselect5 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect5 = new GUIMetaElement(p,
                     "metaselect5", 300, 370, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 4);
-            GUIMetaElement gui_metaselect6 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect6 = new GUIMetaElement(p,
                     "metaselect6", 300, 400, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 5);
-            GUIMetaElement gui_metaselect7 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect7 = new GUIMetaElement(p,
                     "metaselect7", 300, 430, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
                     font_metaurl, gui_metaurl, gui_metacomment, 6);
-            GUIMetaElement gui_metaselect8 = new GUIMetaElement(
+            GUIMetaElement gui_metaselect8 = new GUIMetaElement(p,
                     "metaselect8", 300, 460, 400, 20,
                     "default.theme/pictures/metaentry_tcp.png",
                     "default.theme/pictures/metaentry_udp.png",
@@ -1818,21 +1818,21 @@ public class JXCSkinPrelude implements JXCSkin
             command_metacancel.add(new GUICommand(null,
                                    GUICommand.CMD_GUI_START, p));
 
-            GUIButton gui_metaconnect = new GUIButton("metaconnect", 620, 600, 135, 55,
+            GUIButton gui_metaconnect = new GUIButton(p, "metaconnect", 620, 600, 135, 55,
                     "default.theme/pictures/button_small_active.png",
                     "default.theme/pictures/button_small_pushed.png",
                     "Connect", font_metaurl,Color.DARK_GRAY,42,34,
                     command_metaconnect);
-            GUIButton gui_metacancel = new GUIButton("metacancel", 620, 670, 135, 55,
+            GUIButton gui_metacancel = new GUIButton(p, "metacancel", 620, 670, 135, 55,
                     "default.theme/pictures/button_small_active.png",
                     "default.theme/pictures/button_small_pushed.png",
                     "Cancel", font_metaurl,Color.DARK_GRAY,42,34,
                     command_metacancel);
-            GUIButton gui_metaup = new GUIButton("metaup", 270, 250, 20, 25,
+            GUIButton gui_metaup = new GUIButton(p, "metaup", 270, 250, 20, 25,
                     "default.theme/pictures/metaup.png",
                     "default.theme/pictures/metaup.png",
                     command_metaup);
-            GUIButton gui_metadown = new GUIButton("metadown", 270, 470, 20, 25,
+            GUIButton gui_metadown = new GUIButton(p, "metadown", 270, 470, 20, 25,
                     "default.theme/pictures/metadown.png",
                     "default.theme/pictures/metadown.png",
                     command_metadown);
@@ -1892,37 +1892,37 @@ public class JXCSkinPrelude implements JXCSkin
         }
         try
         {
-            GUIPicture gui_background = new GUIPicture("background", 160, 0, 714, 112,
+            GUIPicture gui_background = new GUIPicture(p, "background", 160, 0, 714, 112,
                     "default.theme/pictures/crossfire_logo.png");
 
             command_startmenu_meta.add(new GUICommand(null, GUICommand.CMD_GUI_META, p));
             command_startmenu_quit.add(new GUICommand(null, GUICommand.CMD_QUIT, p));
 
-            GUIButton gui_startmenu_meta = new GUIButton("startmenu_meta",
+            GUIButton gui_startmenu_meta = new GUIButton(p, "startmenu_meta",
                     210, 200, 600, 55,
                     "default.theme/pictures/button_large_active.png",
                     "default.theme/pictures/button_large_pushed.png",
                     "Connect to a game server", font_metaurl,Color.DARK_GRAY,
                     220, 34, command_startmenu_meta);
-            GUIButton gui_startmenu_new = new GUIButton("startmenu_new",
+            GUIButton gui_startmenu_new = new GUIButton(p, "startmenu_new",
                     210, 300, 600, 55,
                     "default.theme/pictures/button_large_active.png",
                     "default.theme/pictures/button_large_pushed.png",
                     "Create a new character (not implemented)", font_metaurl,Color.DARK_GRAY,
                     180, 34, command_startmenu_meta);
-            GUIButton gui_startmenu_load = new GUIButton("startmenu_load",
+            GUIButton gui_startmenu_load = new GUIButton(p, "startmenu_load",
                     210, 400, 600, 55,
                     "default.theme/pictures/button_large_active.png",
                     "default.theme/pictures/button_large_pushed.png",
                     "Load a saved character (not implemented)", font_metaurl,Color.DARK_GRAY,
                     180, 34, command_startmenu_meta);
-            GUIButton gui_startmenu_options = new GUIButton("startmenu_options",
+            GUIButton gui_startmenu_options = new GUIButton(p, "startmenu_options",
                     210, 500, 600, 55,
                     "default.theme/pictures/button_large_active.png",
                     "default.theme/pictures/button_large_pushed.png",
                     "Options (not implemented)", font_metaurl,Color.DARK_GRAY,
                     230, 34, command_startmenu_meta);
-            GUIButton gui_startmenu_quit = new GUIButton("startmenu_quit",
+            GUIButton gui_startmenu_quit = new GUIButton(p, "startmenu_quit",
                     210, 600, 600, 55,
                     "default.theme/pictures/button_large_active.png",
                     "default.theme/pictures/button_large_pushed.png",
@@ -1987,13 +1987,13 @@ public class JXCSkinPrelude implements JXCSkin
                 case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_SORCERER:
                 case CrossfireServerConnection.MSG_TYPE_BOOK_SPELL_SUMMONER:
                 default:
-                    GUIPicture gui_background = new GUIPicture("book_background",
+                    GUIPicture gui_background = new GUIPicture(p, "book_background",
                             50, 50, 900, 600,
                             "default.theme/pictures/bouquin.png");
-                    GUILabel gui_book_text = new GUILabel("book_text",
+                    GUILabel gui_book_text = new GUILabel(p, "book_text",
                             190, 100, 850, 550,
                             null, font_metaurl, Color.DARK_GRAY, "");
-                    GUIButton gui_book_close = new GUIButton("book_close",
+                    GUIButton gui_book_close = new GUIButton(p, "book_close",
                             690, 510, 135, 55,
                             "default.theme/pictures/button_small_active.png",
                             "default.theme/pictures/button_small_pushed.png",

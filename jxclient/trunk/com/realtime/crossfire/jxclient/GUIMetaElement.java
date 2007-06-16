@@ -48,11 +48,11 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     private int myindex;
 
     public GUIMetaElement
-            (String nn, int nx, int ny, int nw, int nh, String pic_tcp,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String pic_tcp,
                           String pic_udp, Font nf, GUIText txt, GUILabel comment,
                           int meta_id) throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         mypicture_tcp =
             ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
         mypicture_udp =

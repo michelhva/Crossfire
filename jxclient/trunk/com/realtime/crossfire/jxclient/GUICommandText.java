@@ -35,10 +35,10 @@ import java.util.List;
 public class GUICommandText extends GUIText implements KeyListener
 {
     public GUICommandText
-            (String nn, int nx, int ny, int nw, int nh, String picactive,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive,
              String picinactive, Font nf, String txt)  throws IOException
     {
-        super(nn,nx,ny,nw,nh,picactive,picinactive,nf,txt);
+        super(jxcWindow, nn,nx,ny,nw,nh,picactive,picinactive,nf,txt);
     }
     public void keyPressed(KeyEvent e)
     {

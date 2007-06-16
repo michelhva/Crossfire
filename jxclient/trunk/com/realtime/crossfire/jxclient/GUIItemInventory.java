@@ -42,9 +42,9 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItemInventory(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
     {
-        super(nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
+        super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
         render();
     }

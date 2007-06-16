@@ -46,10 +46,10 @@ public class GUIText extends GUIElement implements KeyListener
     protected Font myfont;
     protected String mytext;
     public GUIText
-            (String nn, int nx, int ny, int nw, int nh, String picactive,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive,
                    String picinactive, Font nf, String txt)  throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground_active =
             ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
         mybackground_inactive =

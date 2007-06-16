@@ -69,12 +69,12 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
     };
 
     public GUIItem
-            (String nn, int nx, int ny, int nw, int nh, String picture,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture,
              String pic_cursed, String pic_applied, String pic_selector,
              String pic_locked, CrossfireServerConnection msc, Font mft)
             throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         mypicbackground =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         mypiccursed   =
