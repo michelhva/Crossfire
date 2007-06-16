@@ -29,27 +29,27 @@ import java.awt.image.BufferedImage;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIElement implements MouseListener
+public abstract class GUIElement implements MouseListener
 {
     /**
      * The x-coordinate for drawing this element to screen.
      */
-    protected final int x;
+    protected int x;
 
     /**
      * The y-coordinate for drawing this element to screen.
      */
-    protected final int y;
+    protected int y;
 
     /**
      * The width for drawing this element to screen.
      */
-    protected final int w;
+    protected int w;
 
     /**
      * The height for drawing this element to screen.
      */
-    protected final int h;
+    protected int h;
 
     protected BufferedImage mybuffer;
     protected boolean visible = true;
@@ -196,4 +196,40 @@ public class GUIElement implements MouseListener
     {
         changed = false;
     }
+
+    /**
+     * Change the location of this gui element.
+     *
+     * @param x The new x-coordinate.
+     *
+     * @param y The new y-coordinate.
+     */
+    public void setLocation(final int x, final int y)
+    {
+	if (this.x != x || this.y != y)
+	{
+	    this.x = x;
+	    this.y = y;
+	    setChanged();
+	}
+    }
+
+    /**
+     * Change the size of this gui element.
+     *
+     * @param w The new width.
+     *
+     * @param h The new height.
+     */
+    public void setSize(final int w, final int h)
+    {
+        if (this.w != w || this.h != h)
+        {
+            this.w = w;
+            this.h = h;
+            createBuffer();
+        }
+    }
+
+    protected abstract void createBuffer();
 }

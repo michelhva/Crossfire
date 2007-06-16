@@ -57,4 +57,10 @@ public class GUIPicture extends GUIElement
         g.dispose();
         setChanged();
     }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        throw new AssertionError();
+    }
 }

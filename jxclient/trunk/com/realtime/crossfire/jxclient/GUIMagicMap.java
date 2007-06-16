@@ -45,11 +45,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
             (String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
         super(nn, nx, ny, nw, nh);
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        setChanged();
+        createBuffer();
     }
     public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt)
     {
@@ -57,11 +53,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         byte[] data = evt.getData();
         byte square;
         Color scolor;
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        BufferedImage buf = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        Graphics2D g = buf.createGraphics();
+        Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0,0,0,0.0f));
         g.clearRect(0,0,w,h);
         while(data[datapos]==' ')
@@ -82,7 +74,6 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
             }
         }
         g.dispose();
-        mybuffer = buf;
         setChanged();
     }
     public void commandNewmapReceived(CrossfireCommandNewmapEvent evt)
@@ -91,6 +82,16 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         g.setBackground(new Color(0,0,0,0.0f));
         g.clearRect(0,0,w,h);
         g.dispose();
+        setChanged();
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
     }
 }

@@ -69,15 +69,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         else
             mybackground = null;
         myfont = nf;
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
-        if (mybackground != null)
-            g.drawImage(mybackground.getImage(), x, y, null);
-        g.dispose();
-        setChanged();
+        createBuffer();
     }
 
     public GUILabel
@@ -314,15 +306,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
                     case LABEL_SPELL_ICON:
                         mycaption="";
                         mybackground = sp.getImageIcon();
-                        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-                        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-                        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-                        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-                        Graphics2D g = mybuffer.createGraphics();
-                        if (mybackground != null)
-                            g.drawImage(mybackground.getImage(), x, y, null);
-                        g.dispose();
-                        setChanged();
+                        createBuffer();
                         break;
                     case LABEL_SPELL_COST:
                         mycaption="M:"+sp.getMana()+" G:"+sp.getGrace();
@@ -334,5 +318,21 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
             }
             render();
         }
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        final Graphics2D g = mybuffer.createGraphics();
+        if (mybackground != null)
+        {
+            g.drawImage(mybackground.getImage(), x, y, null);
+        }
+        g.dispose();
+        setChanged();
     }
 }

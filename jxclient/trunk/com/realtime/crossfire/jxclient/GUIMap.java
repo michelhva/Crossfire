@@ -56,16 +56,8 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         myblacktile =
             ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
 
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
-        g.setColor(Color.BLACK);
-        g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
+        createBuffer();
         mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
-        g.dispose();
-        setChanged();
     }
     public GUIMap
             (String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
@@ -86,15 +78,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
             mysquaresize = 32;
         }
 
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
-        g.setColor(Color.BLACK);
-        g.fillRect(0,0,mybuffer.getWidth(), mybuffer.getHeight());
-        g.dispose();
-        setChanged();
+        createBuffer();
     }
     public void redraw(Graphics g)
     {
@@ -255,5 +239,19 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        final Graphics2D g = mybuffer.createGraphics();
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, w, h);
+        g.dispose();
+        setChanged();
     }
 }

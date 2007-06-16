@@ -118,4 +118,10 @@ public class GUIButton extends GUIElement
         g.dispose();
         setChanged();
     }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        throw new AssertionError();
+    }
 }
