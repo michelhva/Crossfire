@@ -20,8 +20,10 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.Color;
+import java.awt.font.FontRenderContext;
 import java.awt.Font;
 import java.awt.FontMetrics;
+import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -45,6 +47,11 @@ import javax.swing.text.MutableAttributeSet;
  */
 public class GUILabel extends GUIElement implements CrossfireStatsListener, CrossfireQueryListener, CrossfireDrawextinfoListener, SpellListener
 {
+    /**
+     * Size of border around text in auto-resize mode.
+     */
+    public static final int AUTO_BORDER_SIZE = 2;
+
     private ImageIcon mybackground = null;
 
     private Font myfont;
@@ -58,6 +65,11 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
     private boolean spell_based = false;
 
     private Color mycolor = Color.WHITE;
+
+    /**
+     * If set, auto-resize this element to the extent of {@link #mycaption}.
+     */
+    private boolean autoResize = false;
 
     public static final int LABEL_SPELL_NAME = -1;
     public static final int LABEL_SPELL_ICON = -2;
@@ -118,12 +130,29 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         render();
     }
 
+    /**
+     * Enable or disable auto-resizing. If enabled, the gui element's size
+     * changes to the displayed text's size.
+     *
+     * @param autoResize If set, enable auto-resizing; if unset, disable
+     * auto-resizing.
+     */
+    public void setAutoResize(final boolean autoResize)
+    {
+        if (this.autoResize != autoResize)
+        {
+            this.autoResize = autoResize;
+            autoResize();
+        }
+    }
+
     public void setText(String ntxt)
     {
         if (ntxt == null) throw new IllegalArgumentException();
         if (!mycaption.equals(ntxt))
         {
             mycaption = ntxt;
+            autoResize();
             render();
         }
     }
@@ -237,7 +266,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
             FontMetrics m = mygc.getFontMetrics();
             String str = new String(data);
             int w = m.stringWidth(str);
-            mygc.drawString(str, myx, myy);
+            mygc.drawString(str, myx+(autoResize ? AUTO_BORDER_SIZE : 0), myy+(autoResize ? AUTO_BORDER_SIZE : 0));
             myx += w;
         }
 
@@ -270,7 +299,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
                 myy += myfonts.peek().getSize()+1;
                 String str = " - ";
                 int w = m.stringWidth(str);
-                mygc.drawString(str, myx, myy);
+                mygc.drawString(str, myx+(autoResize ? AUTO_BORDER_SIZE : 0), myy+(autoResize ? AUTO_BORDER_SIZE : 0));
                 myx+=w;
             }
             else
@@ -338,6 +367,29 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
                 }
             }
             render();
+        }
+    }
+
+    /**
+     * If auto-resizing is enabled, calculate the new width and height.
+     */
+    private void autoResize()
+    {
+        if (!autoResize)
+        {
+            return;
+        }
+
+        final Graphics2D g = mybuffer.createGraphics();
+        try
+        {
+            final FontRenderContext context = g.getFontRenderContext();
+            final Rectangle2D size = myfont.getStringBounds(mycaption, context);
+            setSize((int)size.getWidth()+1+2*AUTO_BORDER_SIZE, (int)size.getHeight()+1+2*AUTO_BORDER_SIZE);
+        }
+        finally
+        {
+            g.dispose();
         }
     }
 
