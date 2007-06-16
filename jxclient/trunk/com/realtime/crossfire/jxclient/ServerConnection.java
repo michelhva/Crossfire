@@ -40,11 +40,11 @@ public abstract class ServerConnection extends Thread
 
     private DataInputStream in;
 
-    private List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
+    private final List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
 
-    private String myhost = "localhost";
+    private final String myhost;
 
-    private int myport = 13327;
+    private final int myport;
 
     /**
      * Represents the unconnected status of the client, which is the first to
@@ -67,7 +67,7 @@ public abstract class ServerConnection extends Thread
 
     private int mystatus = STATUS_UNCONNECTED;
 
-    private String mystatus_sem = "mystatus_sem";
+    private final String mystatus_sem = "mystatus_sem";
 
     /**
      * The Thread Main loop. ServerConnection contains its own Thread, so it
@@ -84,7 +84,7 @@ public abstract class ServerConnection extends Thread
                 readPacket();
             }
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             setStatus(STATUS_UNCONNECTED);
             e.printStackTrace();
@@ -110,8 +110,8 @@ public abstract class ServerConnection extends Thread
      */
     public synchronized void readPacket() throws IOException, UnknownCommandException
     {
-        int len = in.readUnsignedShort();
-        byte[] data = new byte[len];
+        final int len = in.readUnsignedShort();
+        final byte[] data = new byte[len];
         in.readFully(data);
         command(data);
     }
@@ -149,7 +149,7 @@ public abstract class ServerConnection extends Thread
      * @param port The TCP port on which the server is listening.
      * @since 1.0
      */
-    protected ServerConnection(String hostname, int port)
+    protected ServerConnection(final String hostname, final int port)
     {
         myhost = hostname;
         myport = port;
@@ -168,7 +168,7 @@ public abstract class ServerConnection extends Thread
             in = new DataInputStream(mysocket.getInputStream());
             start();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(0);
@@ -181,7 +181,7 @@ public abstract class ServerConnection extends Thread
      * @param nstatus The new status value.
      * @since 1.0
      */
-    public void setStatus(int nstatus)
+    public void setStatus(final int nstatus)
     {
         synchronized(mystatus_sem)
         {
