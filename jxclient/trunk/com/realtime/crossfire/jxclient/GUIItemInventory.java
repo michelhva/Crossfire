@@ -131,7 +131,7 @@ public class GUIItemInventory extends GUIItemItem
 
         try
         {
-            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getCurrentFloor(), item.getTag(), 0);
+            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getCurrentFloor(), item.getTag(), jxcw.getRepeatCount());
         }
         catch (Exception ex)
         {

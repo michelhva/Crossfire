@@ -113,6 +113,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this);
 
+    /**
+     * The default repeat counter for "ncom" commands.
+     */
+    private int repeatCount = 0;
+
     public boolean checkRun()
     {
         return is_run_active;
@@ -434,6 +439,21 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Send a "ncom" command to the server. This function uses the default
+     * repeat count.
+     *
+     * @param command the command
+     *
+     * @return the packet id
+     *
+     * @see #sendNcom(int, int)
+     */
+    public int sendNcom(final String command)
+    {
+        return sendNcom(getRepeatCount(), command);
+    }
+
+    /**
      * Send a "ncom" command to the server.
      *
      * @param repeat the repeat count
@@ -441,6 +461,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      * @param command the command
      *
      * @return the packet id
+     *
+     * @see #sendNcom(int)
      */
     public int sendNcom(final int repeat, final String command)
     {
@@ -538,7 +560,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "north f");
+                sendNcom("north f");
             }
             else
                 sendNcom(0, "north");
@@ -552,7 +574,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "northeast f");
+                sendNcom("northeast f");
             }
             else
                 sendNcom(0, "northeast");
@@ -567,7 +589,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "east f");
+                sendNcom("east f");
             }
             else
                 sendNcom(0, "east");
@@ -581,7 +603,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "southeast f");
+                sendNcom("southeast f");
             }
             else
                 sendNcom(0, "southeast");
@@ -596,7 +618,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "south f");
+                sendNcom("south f");
             }
             else
                 sendNcom(0, "south");
@@ -610,7 +632,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "southwest f");
+                sendNcom("southwest f");
             }
             else
                 sendNcom(0, "southwest");
@@ -625,7 +647,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "west f");
+                sendNcom("west f");
             }
             else
                 sendNcom(0, "west");
@@ -639,10 +661,50 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom(0, "northwest f");
+                sendNcom("northwest f");
             }
             else
                 sendNcom(0, "northwest");
+            break;
+
+        case KeyEvent.VK_0:
+            addToRepeatCount(0);
+            break;
+
+        case KeyEvent.VK_1:
+            addToRepeatCount(1);
+            break;
+
+        case KeyEvent.VK_2:
+            addToRepeatCount(2);
+            break;
+
+        case KeyEvent.VK_3:
+            addToRepeatCount(3);
+            break;
+
+        case KeyEvent.VK_4:
+            addToRepeatCount(4);
+            break;
+
+        case KeyEvent.VK_5:
+            addToRepeatCount(5);
+            break;
+
+        case KeyEvent.VK_6:
+            addToRepeatCount(6);
+            break;
+
+        case KeyEvent.VK_7:
+            addToRepeatCount(7);
+            break;
+
+        case KeyEvent.VK_8:
+            addToRepeatCount(8);
+            break;
+
+        case KeyEvent.VK_9:
+            addToRepeatCount(9);
             break;
 
         default:
@@ -665,15 +727,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch(e.getKeyChar())
         {
         case 'a':
-            sendNcom(0, "apply");
+            sendNcom("apply");
             break;
 
         case 's':
-            sendNcom(0, "save");
+            sendNcom("save");
             break;
 
         case 'w':
-            sendNcom(0, "who");
+            sendNcom("who");
             break;
 
         case '\'':
@@ -794,6 +856,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             assert keyBindingState != null;
             keyBindingState.keyTyped(e.getKeyChar());
+            resetRepeatCount();
         }
         else if (myactive_element != null)
         {
@@ -1041,5 +1104,36 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void paint(final Graphics g)
     {
         jxcWindowRenderer.repaint();
+    }
+
+    /**
+     * Return the current repeat count and reset it to zero.
+     *
+     * @return The current repeat count.
+     */
+    public int getRepeatCount()
+    {
+        final int oldRepeatCount = this.repeatCount;
+        resetRepeatCount();
+        return oldRepeatCount;
+    }
+
+    /**
+     * Reset the current repeat count to zero.
+     */
+    private void resetRepeatCount()
+    {
+        this.repeatCount = 0;
+    }
+
+    /**
+     * Add a digit to the current repeat count.
+     *
+     * @param digit The digit (0-9) to add.
+     */
+    private void addToRepeatCount(final int digit)
+    {
+        assert 0 <= digit && digit <= 9;
+        this.repeatCount = (10*repeatCount+digit)%100000;
     }
 }

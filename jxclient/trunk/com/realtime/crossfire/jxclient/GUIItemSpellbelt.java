@@ -65,11 +65,11 @@ public class GUIItemSpellbelt extends GUIItem
         {
             if (status == SpellBeltItem.STATUS_CAST)
             {
-                jxcw.getCrossfireServerConnection().sendNcom(0, "cast "+myspellbelt.getSpell().getInternalName());
+                jxcw.sendNcom("cast "+myspellbelt.getSpell().getInternalName());
             }
             else
             {
-                jxcw.getCrossfireServerConnection().sendNcom(0, "invoke "+myspellbelt.getSpell().getInternalName());
+                jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
             }
         }
         catch (Exception ex)

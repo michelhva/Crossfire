@@ -78,7 +78,7 @@ public class GUICommandText extends GUIText implements KeyListener
                         }
                         else
                         {
-                            ((JXCWindow)e.getSource()).sendNcom(0, mytext);
+                            ((JXCWindow)e.getSource()).sendNcom(mytext);
                         }
                         mytext="";
                         setActive(false);
