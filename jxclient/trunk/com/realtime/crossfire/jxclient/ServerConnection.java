@@ -93,17 +93,6 @@ public abstract class ServerConnection extends Thread
     }
 
     /**
-     * Tests if there are some data waiting on the socket. Just a simple wrapper
-     * for an InputStream.available() check.
-     * @return True if there is some data waiting, else false.
-     * @since 1.0
-     */
-    public synchronized boolean waitForData() throws IOException
-    {
-        return (in.available() > 0) ? true : false;
-    }
-
-    /**
      * Reads the next available packet sent by the Crossfire server on the
      * network.
      * @since 1.0
