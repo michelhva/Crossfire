@@ -67,6 +67,13 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
     private Color mycolor = Color.WHITE;
 
     /**
+     * If set, the opaque background color; if <code>null</code>, the
+     * background is transparent. This field is ignored if {@link
+     * #mybackground} is set.
+     */
+    private Color backgroundColor = null;
+
+    /**
      * If set, auto-resize this element to the extent of {@link #mycaption}.
      */
     private boolean autoResize = false;
@@ -157,6 +164,21 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         }
     }
 
+    /**
+     * Set the background color.
+     *
+     * @param backgroundColor The background color, or <code>null</code> for
+     * transparent background.
+     */
+    public void setBackgroundColor(final Color backgroundColor)
+    {
+        if (this.backgroundColor != backgroundColor)
+        {
+            this.backgroundColor = backgroundColor;
+            createBuffer();
+        }
+    }
+
     protected void render()
     {
         try
@@ -167,6 +189,11 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
             if (mybackground != null)
             {
                 g.drawImage(mybackground.getImage(), x, y, null);
+            }
+            else if (backgroundColor != null)
+            {
+                g.setBackground(backgroundColor);
+                g.clearRect(0, 0, w-1, h-1);
             }
             g.setFont(myfont);
             g.setColor(mycolor);
@@ -399,7 +426,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        mybuffer = gconf.createCompatibleImage(w, h, backgroundColor == null ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         final Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
         {
