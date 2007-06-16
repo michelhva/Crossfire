@@ -40,8 +40,6 @@ public abstract class ServerConnection extends Thread
 
     private DataInputStream in;
 
-    private byte[] buf = null;
-
     private List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
 
     private String myhost = "localhost";
@@ -153,7 +151,6 @@ public abstract class ServerConnection extends Thread
      */
     protected ServerConnection(String hostname, int port)
     {
-        buf = new byte[2];
         myhost = hostname;
         myport = port;
     }
