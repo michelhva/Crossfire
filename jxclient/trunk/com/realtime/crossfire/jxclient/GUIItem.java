@@ -87,10 +87,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
             ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
         active = false;
         myfont = mft;
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        createBuffer();
         render();
     }
     public abstract void scrollUp();
@@ -173,5 +170,15 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable,
         }
 
         render();
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        setChanged();
     }
 }

@@ -82,15 +82,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         lineHeight = myfont.getSize()+1;
         mynrlines = nh/lineHeight;
 
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        final Graphics2D g = mybuffer.createGraphics();
-        if (mybackground != null)
-            g.drawImage(mybackground, x, y, null);
-        g.dispose();
-        setChanged();
+        createBuffer();
     }
 
     public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnw, final int nt) throws IOException
@@ -108,15 +100,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         lineHeight = myfont.getSize()+1;
         mynrlines = nh/lineHeight;
 
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        final Graphics2D g = mybuffer.createGraphics();
-        if (mybackground != null)
-            g.drawImage(mybackground, x, y, null);
-        g.dispose();
-        setChanged();
+        createBuffer();
     }
 
     protected void render()
@@ -274,5 +258,21 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     public int getIndex()
     {
         return myindex;
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        final Graphics2D g = mybuffer.createGraphics();
+        if (mybackground != null)
+        {
+            g.drawImage(mybackground, x, y, null);
+        }
+        g.dispose();
+        setChanged();
     }
 }

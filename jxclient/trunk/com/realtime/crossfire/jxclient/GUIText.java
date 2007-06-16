@@ -56,10 +56,7 @@ public class GUIText extends GUIElement implements KeyListener
             ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
         myfont = nf;
         mytext = txt;
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        createBuffer();
         render();
     }
     public void setText(String nt)
@@ -75,10 +72,7 @@ public class GUIText extends GUIElement implements KeyListener
     {
         synchronized(mybuffer)
         {
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice      gd = ge.getDefaultScreenDevice();
-            GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+            createBuffer();
 
             Graphics2D g = mybuffer.createGraphics();
             if (active)
@@ -153,5 +147,15 @@ public class GUIText extends GUIElement implements KeyListener
     public void keyTyped(KeyEvent e)
     {
 
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        setChanged();
     }
 }

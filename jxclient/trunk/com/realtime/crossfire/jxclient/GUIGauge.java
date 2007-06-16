@@ -68,10 +68,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
             pictureNegative = null;
         pictureEmpty = ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
         this.stat = stat;
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        createBuffer();
         this.orientation = orientation;
         setValues(0, 0, 0);
     }
@@ -282,5 +279,15 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         this.minValue = minValue;
         this.maxValue = maxValue;
         render();
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        setChanged();
     }
 }

@@ -61,10 +61,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         mytext = txt;
         mylabel = comment;
         myindex = meta_id;
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        createBuffer();
         render();
     }
     protected void render()
@@ -141,5 +138,15 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     public int getIndex()
     {
         return myindex;
+    }
+
+    /** {@inheritDoc} */
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        setChanged();
     }
 }
