@@ -138,9 +138,12 @@ public abstract class GUIElement implements MouseListener
     }
     public void setVisible(boolean v)
     {
-        visible = v;
-        visiblechanged = true;
-        setChanged();
+        if (visible != v)
+        {
+            visible = v;
+            visiblechanged = true;
+            setChanged();
+        }
     }
     public String getName()
     {
