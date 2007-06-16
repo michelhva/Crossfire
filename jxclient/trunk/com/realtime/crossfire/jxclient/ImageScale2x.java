@@ -33,8 +33,10 @@ public class ImageScale2x
 {
     /** The src data from the image */
     private int[] srcData;
+
     /** The width of the image */
     private int width;
+
     /** The height of the image */
     private int height;
 
@@ -62,10 +64,10 @@ public class ImageScale2x
      */
     public ImageIcon getScaledImage()
     {
-        RawScale2x scaler = new RawScale2x(srcData,width,height);
+        RawScale2x scaler = new RawScale2x(srcData, width, height);
 
-        BufferedImage image = new BufferedImage(width*2,height*2,BufferedImage.TYPE_INT_ARGB);
-        image.setRGB(0,0,width*2,height*2,scaler.getScaledData(),0,width*2);
+        BufferedImage image = new BufferedImage(width*2, height*2, BufferedImage.TYPE_INT_ARGB);
+        image.setRGB(0, 0, width*2, height*2, scaler.getScaledData(), 0, width*2);
 
         return new ImageIcon(image);
     }
@@ -85,7 +87,7 @@ public class ImageScale2x
             ImageScale2x scaler = new ImageScale2x(src);
             ImageIcon out = scaler.getScaledImage();
 
-            String outFile = srcFile.substring(0,srcFile.length()-4);
+            String outFile = srcFile.substring(0, srcFile.length()-4);
             outFile += "2x";
             outFile += ".png";
             System.out.println("Writing: "+outFile);
