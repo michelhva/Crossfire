@@ -34,83 +34,87 @@ import java.util.List;
  */
 public class GUICommandText extends GUIText implements KeyListener
 {
-    public GUICommandText
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive,
-             String picinactive, Font nf, String txt)  throws IOException
+    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt)  throws IOException
     {
-        super(jxcWindow, nn,nx,ny,nw,nh,picactive,picinactive,nf,txt);
+        super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, txt);
     }
+
     public void keyPressed(KeyEvent e)
     {
         switch (e.getKeyCode())
         {
-            case KeyEvent.VK_BACK_SPACE:
-                if (mytext.length()>0)
-                {
-                    mytext = mytext.substring(0,mytext.length()-1);
-                    render();
-                }
-                break;
-            case KeyEvent.VK_DELETE:
-                if (mytext.length()>0)
-                {
-                    mytext = "";
-                    render();
-                }
-                break;
-            case KeyEvent.VK_ENTER:
-                switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
-                {
-                    case CrossfireServerConnection.STATUS_PLAYING:
-                        if (mytext.startsWith("bind "))
-                        {
-                            String cmdl = mytext.substring(5);
-                            final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
-                            ((JXCWindow)e.getSource()).createKeyBinding(commands);
-                        }
-                        else if (mytext.startsWith("unbind"))
-                        {
-                            ((JXCWindow)e.getSource()).removeKeyBinding();
-                        }
-                        else if (mytext.startsWith("script "))
-                        {
-                            ((JXCWindow)e.getSource()).runScript(mytext.substring(7));
-                        }
-                        else
-                        {
-                            ((JXCWindow)e.getSource()).sendNcom(mytext);
-                        }
-                        mytext="";
-                        setActive(false);
-                        break;
-                    case CrossfireServerConnection.STATUS_QUERY:
-                        ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(
-                                CrossfireServerConnection.STATUS_PLAYING);
-                        try
-                        {
-                            ((JXCWindow)e.getSource()).getCrossfireServerConnection().sendReply(mytext);
-                        }
-                        catch (final Exception ex)
-                        {
-                            ex.printStackTrace();
-                        }
-                        ((JXCWindow)e.getSource()).setDialogStatus(JXCWindow.DLG_NONE);
-                        mytext="";
-                        setActive(false);
-                        break;
-                    default:
-                        mytext="";
-                        setActive(false);
-                        break;
-                }
-                break;
-            case KeyEvent.VK_SHIFT:
-                break;
-            default:
-                char chr = e.getKeyChar();
-                mytext = mytext+chr;
+        case KeyEvent.VK_BACK_SPACE:
+            if (mytext.length()>0)
+            {
+                mytext = mytext.substring(0, mytext.length()-1);
                 render();
+            }
+            break;
+
+        case KeyEvent.VK_DELETE:
+            if (mytext.length() > 0)
+            {
+                mytext = "";
+                render();
+            }
+            break;
+
+        case KeyEvent.VK_ENTER:
+            switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
+            {
+            case CrossfireServerConnection.STATUS_PLAYING:
+                if (mytext.startsWith("bind "))
+                {
+                    String cmdl = mytext.substring(5);
+                    final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
+                    ((JXCWindow)e.getSource()).createKeyBinding(commands);
+                }
+                else if (mytext.startsWith("unbind"))
+                {
+                    ((JXCWindow)e.getSource()).removeKeyBinding();
+                }
+                else if (mytext.startsWith("script "))
+                {
+                    ((JXCWindow)e.getSource()).runScript(mytext.substring(7));
+                }
+                else
+                {
+                    ((JXCWindow)e.getSource()).sendNcom(mytext);
+                }
+                mytext = "";
+                setActive(false);
                 break;
+
+            case CrossfireServerConnection.STATUS_QUERY:
+                ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(CrossfireServerConnection.STATUS_PLAYING);
+                try
+                {
+                    ((JXCWindow)e.getSource()).getCrossfireServerConnection().sendReply(mytext);
+                }
+                catch (final Exception ex)
+                {
+                    ex.printStackTrace();
+                }
+                ((JXCWindow)e.getSource()).setDialogStatus(JXCWindow.DLG_NONE);
+                mytext = "";
+                setActive(false);
+                break;
+
+            default:
+                mytext = "";
+                setActive(false);
+                break;
+            }
+            break;
+
+        case KeyEvent.VK_SHIFT:
+            break;
+
+        default:
+            char chr = e.getKeyChar();
+            mytext = mytext+chr;
+            render();
+            break;
         }
     }
 }

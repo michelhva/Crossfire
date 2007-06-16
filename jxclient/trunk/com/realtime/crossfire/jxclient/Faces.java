@@ -43,9 +43,11 @@ public class Faces
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
 
-    private static Hashtable<String,Face>  myfaces = new Hashtable<String,Face>();
+    private static Hashtable<String, Face>  myfaces = new Hashtable<String, Face>();
+
     public final static int NRFACES = 6000;
-    private static Face[]                  faces = new Face[NRFACES];
+
+    private static Face[] faces = new Face[NRFACES];
 
     /**
      * The image icon to display for unknown or invalid faces. It is never
@@ -62,27 +64,13 @@ public class Faces
     static
     {
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        GraphicsDevice gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        /*for(int i=0; i<NRFACES; i++)
+        /*for(int i = 0; i < NRFACES; i++)
         {
-            faces[i] = new Face(0, "empty",gconf.createCompatibleImage(
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT),
-                    gconf.createCompatibleImage(
-                            CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT));
+            faces[i] = new Face(0, "empty", gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT), gconf.createCompatibleImage( CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT));
         }*/
-            faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT)),
-                    new ImageIcon(gconf.createCompatibleImage(
-                            CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT)));
+            faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
             originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
             if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
             {
@@ -122,26 +110,21 @@ public class Faces
 
     public static Face getFace(int index)
     {
-        if (faces[index]==null)
+        if (faces[index] == null)
         {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice      gd = ge.getDefaultScreenDevice();
+            GraphicsDevice gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT)),
-                    new ImageIcon(gconf.createCompatibleImage(
-                            CrossfireServerConnection.SQUARE_SIZE,
-                    CrossfireServerConnection.SQUARE_SIZE,
-                    Transparency.TRANSLUCENT)));
+            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
         }
         return faces[index];
     }
+
     public static Face[] getFaces()
     {
         return faces;
     }
+
     // TODO: implement faceset
     public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen) throws IOException
     {
@@ -214,7 +197,7 @@ public class Faces
         if (im.getIconWidth() <= 0 || im.getIconHeight() <= 0 || oim.getIconWidth() <= 0 || oim.getIconHeight() <= 0)
         {
             askface(pixnum);
-            Face f = new Face(pixnum, pixname,null);
+            Face f = new Face(pixnum, pixname, null);
             myfaces.put(pixname, f);
             faces[pixnum] = f;
         }
@@ -228,15 +211,12 @@ public class Faces
     public static void ensureFaceExists(int val)
     {
         getFace(val);
-        if (faces[val].getImageIcon()==null)
+        if (faces[val].getImageIcon() == null)
         {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice      gd = ge.getDefaultScreenDevice();
+            GraphicsDevice gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(
-                    CrossfireServerConnection.SQUARE_SIZE,
-            CrossfireServerConnection.SQUARE_SIZE,
-            Transparency.TRANSLUCENT)));
+            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
         }
     }
 

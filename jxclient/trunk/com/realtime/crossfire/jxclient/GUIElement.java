@@ -214,12 +214,12 @@ public abstract class GUIElement implements MouseListener
      */
     public void setLocation(final int x, final int y)
     {
-	if (this.x != x || this.y != y)
-	{
-	    this.x = x;
-	    this.y = y;
-	    setChanged();
-	}
+        if (this.x != x || this.y != y)
+        {
+            this.x = x;
+            this.y = y;
+            setChanged();
+        }
     }
 
     /**
