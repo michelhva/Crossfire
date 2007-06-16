@@ -165,6 +165,16 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
     }
 
     /**
+     * Return the label text.
+     *
+     * @return The label text.
+     */
+    public String getText()
+    {
+        return mycaption;
+    }
+
+    /**
      * Set the background color.
      *
      * @param backgroundColor The background color, or <code>null</code> for
