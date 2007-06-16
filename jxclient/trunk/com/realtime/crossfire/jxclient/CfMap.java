@@ -35,30 +35,32 @@ import java.util.List;
 public class CfMap
 {
     private static Faces myfaces;
-    private static List<CrossfireMap1Listener> mylisteners_map1 =
-            new ArrayList<CrossfireMap1Listener>();
-    private static List<CrossfireNewmapListener> mylisteners_newmap =
-            new ArrayList<CrossfireNewmapListener>();
-    private static List<CrossfireMapscrollListener> mylisteners_mapscroll =
-            new ArrayList<CrossfireMapscrollListener>();
-    private static List<CrossfireMagicmapListener> mylisteners_magicmap =
-            new ArrayList<CrossfireMagicmapListener>();
 
-    private static CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20]
-            [CrossfireServerConnection.MAP_HEIGHT+20];
+    private static List<CrossfireMap1Listener> mylisteners_map1 = new ArrayList<CrossfireMap1Listener>();
+
+    private static List<CrossfireNewmapListener> mylisteners_newmap = new ArrayList<CrossfireNewmapListener>();
+
+    private static List<CrossfireMapscrollListener> mylisteners_mapscroll = new ArrayList<CrossfireMapscrollListener>();
+
+    private static List<CrossfireMagicmapListener> mylisteners_magicmap = new ArrayList<CrossfireMagicmapListener>();
+
+    private static CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20][CrossfireServerConnection.MAP_HEIGHT+20];
 
     public static List<CrossfireMap1Listener> getCrossfireMap1Listeners()
     {
         return mylisteners_map1;
     }
+
     public static List<CrossfireNewmapListener> getCrossfireNewmapListeners()
     {
         return mylisteners_newmap;
     }
+
     public static List<CrossfireMapscrollListener> getCrossfireMapscrollListeners()
     {
         return mylisteners_mapscroll;
     }
+
     public static List<CrossfireMagicmapListener> getCrossfireMagicmapListeners()
     {
         return mylisteners_magicmap;
@@ -66,14 +68,15 @@ public class CfMap
 
     static
     {
-        for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
+        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH+20; x++)
         {
-            for (int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT+20; y++)
             {
-                map[x][y] = new CfMapSquare(x,y);
+                map[x][y] = new CfMapSquare(x, y);
             }
         }
     }
+
     public static void magicmap(DataInputStream dis) throws IOException
     {
         int len = dis.available();
@@ -84,30 +87,31 @@ public class CfMap
 
         String str = new String(buf);
         String packs[] = str.split(" ",5);
-        CrossfireCommandMagicmapEvent evt = new
-                CrossfireCommandMagicmapEvent(new Object(),
-                                              Integer.parseInt(packs[0]),
-                                              Integer.parseInt(packs[1]),
-                                              Integer.parseInt(packs[2]),
-                                              Integer.parseInt(packs[3]),
-                                              packs[4].getBytes());
+        CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
+            Integer.parseInt(packs[0]),
+            Integer.parseInt(packs[1]),
+            Integer.parseInt(packs[2]),
+            Integer.parseInt(packs[3]),
+            packs[4].getBytes());
         Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
         while (it.hasNext())
         {
             it.next().commandMagicmapReceived(evt);
         }
     }
+
     public static void newMap(CrossfireServerConnection crossfireServerConnection) throws IOException
     {
 //        long stime = System.nanoTime();
 
-        for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
+        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH+20; x++)
         {
-            for (int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT+20; y++)
             {
                 map[x][y].clear();
             }
         }
+
         crossfireServerConnection.sendMapredraw();
         CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
@@ -115,16 +119,15 @@ public class CfMap
         {
             it.next().commandNewmapReceived(evt);
         }
+
 //        long etime = System.nanoTime();
-//        System.out.println("Free Memory before Newmap GC:"+
-//                Runtime.getRuntime().freeMemory()/1024+" KB");
+//        System.out.println("Free Memory before Newmap GC:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         System.gc();
 //        long egtime = System.nanoTime();
-//        System.out.println("Free Memory after Newmap GC:"+
-//                Runtime.getRuntime().freeMemory()/1024 + " KB");
-//        System.out.println("Cleaning complete, Cleaning time:"+(etime-stime)/1000000+"ms, GC:"+
-//                (egtime-etime)/1000000+"ms.");
+//        System.out.println("Free Memory after Newmap GC:"+Runtime.getRuntime().freeMemory()/1024 + " KB");
+//        System.out.println("Cleaning complete, Cleaning time:"+(etime-stime)/1000000+"ms, GC:"+(egtime-etime)/1000000+"ms.");
     }
+
     public static void scroll(final int dx, final int dy) throws IOException
     {
         //System.out.println("--------------------------------------------------");
@@ -135,58 +138,62 @@ public class CfMap
         {
             if (dy >= 0)
             {
-                /*for(int i=dx;i<mx;i++)
+                /*for (int i = dx; i < mx; i++)
                 {
-                    for(int j=dy;j<my;j++)
+                    for (int j = dy; j < my; j++)
                     {
                         map[i][j].copy(map[i-dx][j-dy]);
                         map[i][j].clear();
                     }
                 }*/
-                for(int i=dx;i<mx;i++)
+
+                for (int i = dx; i < mx; i++)
                 {
-                    for(int j=dy;j<my;j++)
+                    for (int j = dy; j < my; j++)
                     {
                         map[i-dx][j-dy] = map[i][j];
                         map[i-dx][j-dy].setPos(i-dx, j-dy);
                         map[i][j] = null;
                     }
                 }
-                for(int i=0; i<mx; i++)
+
+                for(int i = 0; i < mx; i++)
                 {
-                    for (int j=0; j<my; j++)
+                    for (int j = 0; j < my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new CfMapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i, j);
                         map[i][j].dirty();
                     }
                 }
             }
             else
             {
-                /*for(int i=dx;i<mx;i++)
+                /*for (int i = dx; i < mx; i++)
                 {
-                    for(int j=my+dy-1;j>=0;j--)
+                    for (int j = my+dy-1; j >= 0; j--)
                     {
                         map[i][j].copy(map[i-dx][j-dy]);
                         map[i][j].clear();
                     }
                 }*/
-                for(int i=dx;i<mx;i++)
+
+                for (int i = dx; i < mx; i++)
                 {
-                    for(int j=my+dy-1;j>=0;j--)
+                    for (int j = my+dy-1; j >= 0; j--)
                     {
                         map[i-dx][j-dy] = map[i][j];
                         map[i-dx][j-dy].setPos(i-dx, j-dy);
                         map[i][j] = null;
                     }
                 }
-                for(int i=0; i<mx; i++)
+
+                for (int i = 0; i < mx; i++)
                 {
-                    for (int j=0; j<my; j++)
+                    for (int j = 0; j < my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new CfMapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i, j);
                         map[i][j].dirty();
                     }
                 }
@@ -196,68 +203,71 @@ public class CfMap
         {
             if (dy >= 0)
             {
-                /*for(int i=mx+dx-1;i>=0;i--)
+                /*for (int i = mx+dx-1; i >= 0; i--)
                 {
-                    for(int j=dy;j<my;j++)
+                    for (int j = dy; j < my; j++)
                     {
                         map[i][j].copy(map[i-dx][j-dy]);
                         map[i][j].clear();
                     }
                 }
                 */
-                for(int i=mx+dx-1;i>=0;i--)
+
+                for (int i = mx+dx-1; i >= 0; i--)
                 {
-                    for(int j=dy;j<my;j++)
+                    for (int j = dy; j < my; j++)
                     {
                         map[i-dx][j-dy] = map[i][j];
                         map[i-dx][j-dy].setPos(i-dx, j-dy);
                         map[i][j] = null;
                     }
                 }
-                for(int i=0; i<mx; i++)
+
+                for (int i = 0; i < mx; i++)
                 {
-                    for (int j=0; j<my; j++)
+                    for (int j = 0; j < my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new CfMapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i, j);
                         map[i][j].dirty();
                     }
                 }
             }
             else
             {
-                /*for(int i=mx+dx-1;i>=0;i--)
+                /*for (int i = mx+dx-1; i >= 0; i--)
                 {
-                    for(int j=my+dy-1;j>=0;j--)
+                    for (int j = my+dy-1; j >= 0; j--)
                     {
                         map[i][j].copy(map[i-dx][j-dy]);
                         map[i][j].clear();
                     }
                 }
                 */
-                for(int i=mx+dx-1;i>=0;i--)
+
+                for (int i = mx+dx-1; i >= 0; i--)
                 {
-                    for(int j=my+dy-1;j>=0;j--)
+                    for (int j = my+dy-1; j >= 0; j--)
                     {
                         map[i-dx][j-dy] = map[i][j];
                         map[i-dx][j-dy].setPos(i-dx, j-dy);
                         map[i][j] = null;
                     }
                 }
-                for(int i=0; i<mx; i++)
+
+                for (int i = 0; i < mx; i++)
                 {
-                    for (int j=0; j<my; j++)
+                    for (int j = 0; j < my; j++)
                     {
                         if (map[i][j] == null)
-                            map[i][j] = new CfMapSquare(i,j);
+                            map[i][j] = new CfMapSquare(i, j);
                         map[i][j].dirty();
                     }
                 }
             }
         }
 
-        CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(
-                new Object(), dx, dy);
+        CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
 
         Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
         while (it.hasNext())
@@ -265,28 +275,30 @@ public class CfMap
             it.next().commandMapscrollReceived(evt);
         }
     }
+
     public static void changeSquare(int x, int y, int z, int darkness, Face face)
     {
         map[x][y].setDarkness(darkness);
         map[x][y].setFace(face, z);
         map[x][y].dirty();
     }
+
     public static void map1(DataInputStream dis) throws IOException
     {
         int len = dis.available();
         int pos = 0;
         List<CfMapSquare> l = new LinkedList<CfMapSquare>();
         int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
-        while (pos<len)
+        while (pos < len)
         {
-            int coord    = dis.readUnsignedShort();
-            int x        = 10+(coord >> 10) & 0x3f;
-            int y        = 10+(coord >> 4) & 0x3f;
-            int isclear  = coord & 0xf;
-            int isdark   = coord & 0x8;
-            int mask     = coord & 0x7;
+            int coord = dis.readUnsignedShort();
+            int x = 10+(coord>>10)&0x3f;
+            int y = 10+(coord>>4)&0x3f;
+            int isclear = coord&0xf;
+            int isdark = coord&0x8;
+            int mask = coord&0x7;
             int darkness = -1;
-            pos+=2;
+            pos += 2;
             /*System.out.println("------------------------------------------");
             System.out.println("Packet map received");
             System.out.println("X:"+x+" Y:"+y);
@@ -295,22 +307,24 @@ public class CfMap
             {
                 continue;
             }
+
             if (isdark != 0)
             {
                 darkness = dis.readUnsignedByte();
                 //System.out.println("Darkness:"+darkness+ "("+x+";"+y+")");
                 pos++;
             }
-            for (int layer=CrossfireServerConnection.NUM_LAYERS-1; layer>=0; layer--)
+
+            for (int layer = CrossfireServerConnection.NUM_LAYERS-1; layer >= 0; layer--)
             {
-                if ((mask & (1<<layer))!=0)
+                if ((mask&(1<<layer)) != 0)
                 {
                     faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer] = dis.readUnsignedShort();
                     Faces.ensureFaceExists(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
                     Face ff = Faces.getFace(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
                     /*if (ff != null)
-                    System.out.println("Layer face :"+ff.getName());*/
-                    pos+=2;
+                        System.out.println("Layer face :"+ff.getName());*/
+                    pos += 2;
                 }
                 else
                 {
@@ -318,18 +332,18 @@ public class CfMap
                     //System.out.println("Empty face on the square");
                 }
             }
-            for (int layer=0; layer<CrossfireServerConnection.NUM_LAYERS; layer++)
+            for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
             {
-                if(faces[layer]<0)
+                if (faces[layer] < 0)
                 {
                     continue;
                 }
                 Faces.ensureFaceExists(faces[layer]);
                 Face f = Faces.getFace(faces[layer]);
-                changeSquare(x,y,layer,darkness,f);
+                changeSquare(x, y, layer, darkness, f);
                 l.add(map[x][y]);
             }
-            CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(),l);
+            CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
             Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
             while (it.hasNext())
             {
@@ -337,15 +351,17 @@ public class CfMap
             }
         }
     }
+
     public static CfMapSquare[][] getMap()
     {
         return map;
     }
+
     public static void invalidate()
     {
-        for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
+        for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT+20; y++)
         {
-            for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
+            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH+20; x++)
             {
                 map[x][y].dirty();
             }
@@ -357,32 +373,32 @@ public class CfMap
             it.next().commandNewmapReceived(evt);
         }
     }
+
     public static void updateFace(int pixnum)
     {
         List<CfMapSquare> l = new LinkedList<CfMapSquare>();
 
         //System.out.println("Face update: "+pixnum);
-        for(int y=0;y<CrossfireServerConnection.MAP_HEIGHT+20;y++)
+        for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT+20; y++)
         {
-            for (int x=0;x<CrossfireServerConnection.MAP_WIDTH+20;x++)
+            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH+20; x++)
             {
-                for (int z=0;z<CrossfireServerConnection.NUM_LAYERS;z++)
+                for (int z = 0; z < CrossfireServerConnection.NUM_LAYERS; z++)
                 {
-                    if (map[x][y].getFace(z)!=null)
-                    if (map[x][y].getFace(z).getID()==pixnum)
+                    if (map[x][y].getFace(z) != null)
+                    if (map[x][y].getFace(z).getID() == pixnum)
                     {
                         map[x][y].dirty();
-                        //l.add(new CfMapSquare(x,y,z,0,myfaces.getFace(pixnum)));
+                        //l.add(new CfMapSquare(x, y, z, 0, myfaces.getFace(pixnum)));
                     }
                 }
             }
         }
-        CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(),l);
+        CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
         Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
         while (it.hasNext())
         {
             it.next().commandMap1Received(evt);
         }
     }
-
 }
