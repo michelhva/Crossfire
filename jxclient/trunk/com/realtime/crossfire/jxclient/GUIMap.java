@@ -46,22 +46,23 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
 
     private boolean new_map_happened = true;
 
-    private BufferedImage myblacktile = null;
+    private final BufferedImage myblacktile;
 
-    private boolean use_big_images = true;
+    private final boolean use_big_images;
 
-    private int mysquaresize;
+    private final int mysquaresize;
 
-    public GUIMap(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh)  throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh)  throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
+        use_big_images = true;
         myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
 
         createBuffer();
         mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
     }
 
-    public GUIMap(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big)  throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = big;
@@ -80,7 +81,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         createBuffer();
     }
 
-    public void redraw(Graphics g)
+    public void redraw(final Graphics g)
     {
         synchronized(mybuffer)
         {
@@ -96,7 +97,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                 need_update_cnt--;
                 if (need_update_cnt <= 0)
                     need_update = false;
-                CfMapSquare[][] map = CfMap.getMap();
+                final CfMapSquare[][] map = CfMap.getMap();
                 for (int nz = 0; nz < CrossfireServerConnection.NUM_LAYERS; nz++)
                 {
                     for (int ny = 10; ny < CrossfireServerConnection.MAP_HEIGHT+10; ny++)
@@ -111,7 +112,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         }
     }
 
-    protected void cleanSquare(Graphics g, CfMapSquare square)
+    protected void cleanSquare(final Graphics g, final CfMapSquare square)
     {
         g.setColor(Color.BLACK);
         g.fillRect(((square.getXPos()-10)*mysquaresize),
@@ -119,7 +120,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                    mysquaresize, mysquaresize);
     }
 
-    protected void redrawSquare(Graphics g, CfMapSquare square, int nz)
+    protected void redrawSquare(final Graphics g, final CfMapSquare square, final int nz)
     {
         if (square == null) //Sometimes happen. Not sure of the origin, but I think
                             //it is related to a scrolling faster than a non-cached
@@ -140,7 +141,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
 
         if (square.getHead(nz) == square)
         {
-            Face f = square.getFace(nz);
+            final Face f = square.getFace(nz);
             if (f != null)
             {
                 final ImageIcon img;
@@ -153,10 +154,10 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                     img = f.getOriginalImageIcon();
                 }
 
-                int px = (square.getXPos()-10)*mysquaresize;
-                int py = (square.getYPos()-10)*mysquaresize;
-                int psx = px-(img.getIconWidth()-mysquaresize);
-                int psy = py-(img.getIconHeight()-mysquaresize);
+                final int px = (square.getXPos()-10)*mysquaresize;
+                final int py = (square.getYPos()-10)*mysquaresize;
+                final int psx = px-(img.getIconWidth()-mysquaresize);
+                final int psy = py-(img.getIconHeight()-mysquaresize);
                 g.drawImage(img.getImage(), psx, psy, img.getIconWidth(), img.getIconHeight(), null);
             }
         }
@@ -180,7 +181,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         }
     }
 
-    public void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt)
+    public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
     {
         synchronized(mybuffer)
         {
@@ -190,9 +191,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         setChanged();
     }
 
-    public void commandNewmapReceived(CrossfireCommandNewmapEvent evt)
+    public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
     {
-        /*Graphics2D g = mybuffer.createGraphics();
+        /*final Graphics2D g = mybuffer.createGraphics();
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, mybuffer.getWidth(), mybuffer.getHeight());
         g.dispose();*/
@@ -205,7 +206,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         setChanged();
     }
 
-    public void commandMap1Received(CrossfireCommandMap1Event evt)
+    public void commandMap1Received(final CrossfireCommandMap1Event evt)
     {
         synchronized(mybuffer)
         {
@@ -239,7 +240,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                 final JXCWindow jxcw = (JXCWindow)e.getSource();
                 jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
             }
-            catch (Exception ex)
+            catch (final Exception ex)
             {
                 ex.printStackTrace();
                 System.exit(0);
