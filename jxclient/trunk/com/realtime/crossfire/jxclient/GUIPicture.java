@@ -46,11 +46,11 @@ public class GUIPicture extends GUIElement
         {
             throw new IllegalArgumentException("resource '"+picture+"' does not exist");
         }
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice      gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
         //System.out.println("nw:"+nw+" nh:"+nh);
         //g.drawImage(img, 0, 0, nw, nh, 0, 0, nw, nh, null);
         g.drawImage(img, 0,0,img.getWidth(),img.getHeight(),null);
