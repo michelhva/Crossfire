@@ -73,30 +73,30 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
     }
 
     public GUILabel
-            (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf,
              Color clr, String cap)
             throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture,nf);
         mycolor = clr;
         mycaption = cap;
         render();
     }
     public GUILabel
-            (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, String cap)
+            (final JXCWindow jxcWindow, String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, String cap)
             throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture,nf);
         mycaption = cap;
         render();
     }
     public GUILabel
-            (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int stat)
+            (final JXCWindow jxcWindow, String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf, int stat)
             throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture,nf);
         mystat = stat;
         if (stat >= 0)
@@ -106,11 +106,11 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener,
         render();
     }
     public GUILabel
-            (String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf,
+            (final JXCWindow jxcWindow, String nn, int nx, int ny,int  nw,int  nh, String picture, Font nf,
              Color clr, int stat)
             throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture,nf);
         mystat = stat;
         if (stat >= 0)

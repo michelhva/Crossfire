@@ -42,9 +42,9 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
                                    Color.PINK, Color.GRAY, Color.ORANGE,
                                    Color.CYAN, Color.MAGENTA};
     public GUIMagicMap
-            (String nn, int nx, int ny, int nw, int nh)  throws IOException
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         createBuffer();
     }
     public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt)

@@ -50,9 +50,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
     private int mysquaresize;
 
     public GUIMap
-            (String nn, int nx, int ny, int nw, int nh)  throws IOException
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         myblacktile =
             ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
 
@@ -60,9 +60,9 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener,
         mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
     }
     public GUIMap
-            (String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, boolean big)  throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = big;
 
         if (big)

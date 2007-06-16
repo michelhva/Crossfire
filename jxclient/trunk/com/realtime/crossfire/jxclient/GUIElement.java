@@ -68,7 +68,14 @@ public abstract class GUIElement implements MouseListener
     private boolean changed;
 
     /**
+     * The {@link JXCWindow} this gui element belongs to.
+     */
+    private final JXCWindow jxcWindow;
+
+    /**
      * Create a new instance.
+     *
+     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -80,8 +87,9 @@ public abstract class GUIElement implements MouseListener
      *
      * @param h The height for drawing this element to screen.
      */
-    protected GUIElement(final String name, final int x, final int y, final int w, final int h)
+    protected GUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
+        this.jxcWindow = jxcWindow;
         this.x = x;
         this.y = y;
         this.w = w;

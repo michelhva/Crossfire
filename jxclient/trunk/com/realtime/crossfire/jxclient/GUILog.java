@@ -67,9 +67,9 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
      */
     private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
 
-    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         if (picture != null)
             mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else
@@ -85,9 +85,9 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         createBuffer();
     }
 
-    public GUILog(final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnw, final int nt) throws IOException
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnw, final int nt) throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         if (picture != null)
             mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
         else

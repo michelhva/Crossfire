@@ -37,9 +37,9 @@ import javax.imageio.ImageIO;
 public class GUIPicture extends GUIElement
 {
     public GUIPicture
-            (String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
+            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture)  throws IOException
     {
-        super(nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh);
         BufferedImage img =
             ImageIO.read(this.getClass().getClassLoader().getResource(picture));
         if (img == null)
