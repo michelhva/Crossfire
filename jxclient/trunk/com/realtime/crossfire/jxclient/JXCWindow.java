@@ -118,6 +118,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     private int repeatCount = 0;
 
+    /**
+     * The gui element in which the mouse is.
+     */
+    private GUIElement mouseElement = null;
+
     public boolean checkRun()
     {
         return is_run_active;
@@ -885,17 +890,26 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void mouseEntered(final MouseEvent e)
     {
+        synchronized(semaphore_drawing)
+        {
+            final GUIElement elected = findElement(e, true);
+            enterElement(elected, e);
+        }
     }
 
     public void mouseExited(final MouseEvent e)
     {
+        synchronized(semaphore_drawing)
+        {
+            leaveElement(e);
+        }
     }
 
     public void mousePressed(final MouseEvent e)
     {
         synchronized(semaphore_drawing)
         {
-            final GUIElement elected = findElement(e);
+            final GUIElement elected = findElement(e, false);
             deactivateCurrentElement();
             elected.mousePressed(e);
             if (elected.isActive())
@@ -907,7 +921,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(semaphore_drawing)
         {
-            final GUIElement elected = findElement(e);
+            final GUIElement elected = findElement(e, false);
             if (myactive_element!=elected)
                 deactivateCurrentElement();
             elected.mouseReleased(e);
@@ -921,17 +935,20 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @param e The mouse event to process.
      *
+     * @param ignoreButtons If set, match elements even if no mouse button is
+     * pressed.
+     *
      * @return The gui element found, or <code>null</code> if none was found.
      */
-    private GUIElement findElement(final MouseEvent e)
+    private GUIElement findElement(final MouseEvent e, final boolean ignoreButtons)
     {
-        GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
+        GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e, ignoreButtons);
         if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0) elected = jxcWindowRenderer.getCurrentGui().get(0);
 
         final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
         if (currentDialog != null)
         {
-            final GUIElement myother = manageMouseEvents(currentDialog, e);
+            final GUIElement myother = manageMouseEvents(currentDialog, e, ignoreButtons);
             if (myother != null)
             {
                 elected = myother;
@@ -945,7 +962,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         return elected;
     }
 
-    private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e)
+    private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e, final boolean ignoreButtons)
     {
         final int x = e.getX();
         final int y = e.getY();
@@ -960,7 +977,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         default:
-            elected = null;
+            elected = ignoreButtons ? gui.getElementFromPoint(x, y) : null;
             break;
         }
         return elected;
@@ -979,6 +996,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void mouseMoved(final MouseEvent e)
     {
+        synchronized(semaphore_drawing)
+        {
+            final GUIElement elected = findElement(e, true);
+            enterElement(elected, e);
+        }
     }
 
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
@@ -1142,5 +1164,52 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         assert 0 <= digit && digit <= 9;
         this.repeatCount = (10*repeatCount+digit)%100000;
+    }
+
+    /**
+     * Called when the mouse enters an element or is moved within an element.
+     * It checks whether the element has changed and generates {@link
+     * GUIElement#mouseEntered(MouseEvent)} or {@link
+     * GUIElement#mouseExited(MouseEvent)}.
+     *
+     * @param element The gui element the mouse is in.
+     *
+     * @param e The event that caused this call.
+     */
+    public void enterElement(final GUIElement element, final MouseEvent e)
+    {
+        if (element == null)
+        {
+            leaveElement(e);
+            return;
+        }
+
+        if (mouseElement != null)
+        {
+            if (mouseElement == element)
+            {
+                return;
+            }
+
+            mouseElement.mouseExited(e);
+        }
+
+        mouseElement = element;
+        mouseElement.mouseEntered(e);
+    }
+
+    /**
+     * Called when the mouse has left an element. It generates {@link
+     * GUIElement#mouseExited(MouseEvent)}.
+     *
+     * @param e The event that caused this call.
+     */
+    public void leaveElement(final MouseEvent e)
+    {
+        if (mouseElement != null)
+        {
+            mouseElement.mouseExited(e);
+            mouseElement = null;
+        }
     }
 }
