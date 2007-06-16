@@ -64,7 +64,7 @@ public class GUIItemSpelllist extends GUIItem
 
         try
         {
-            jxcw.getCrossfireServerConnection().sendNcom(0, "cast "+myspell.getInternalName());
+            jxcw.sendNcom("cast "+myspell.getInternalName());
             jxcw.setCurrentSpell(myspell);
         }
         catch (Exception ex)

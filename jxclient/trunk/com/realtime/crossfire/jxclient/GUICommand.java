@@ -104,7 +104,7 @@ public class GUICommand
             case CMD_GUI_SEND_COMMAND:
             {
                 final SendCommandParameter param = (SendCommandParameter)myparams;
-                param.window.sendNcom(0, param.command);
+                param.window.sendNcom(param.command);
             }
                 break;
             case CMD_GUI_SPELLBELT:
@@ -119,11 +119,9 @@ public class GUICommand
                     try
                     {
                         if (status==SpellBeltItem.STATUS_CAST)
-                            jxcw.getCrossfireServerConnection().sendNcom(0, "cast "+
-                                    myspellbelt.getSpell().getInternalName());
+                            jxcw.sendNcom("cast "+myspellbelt.getSpell().getInternalName());
                         else
-                            jxcw.getCrossfireServerConnection().sendNcom(0, "invoke "+
-                                    myspellbelt.getSpell().getInternalName());
+                            jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
                     }
                     catch (Exception ex)
                     {
