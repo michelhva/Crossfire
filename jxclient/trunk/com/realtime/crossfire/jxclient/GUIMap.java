@@ -40,12 +40,6 @@ import javax.swing.ImageIcon;
  */
 public class GUIMap extends GUIElement implements CrossfireMap1Listener, CrossfireNewmapListener, CrossfireMapscrollListener
 {
-    private boolean need_update = false;
-
-    private int need_update_cnt = 0;
-
-    private boolean new_map_happened = true;
-
     private final BufferedImage myblacktile;
 
     private final boolean use_big_images;
@@ -81,33 +75,27 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         createBuffer();
     }
 
-    public void redraw(final Graphics g)
+    public void render()
     {
         synchronized(mybuffer)
         {
-            if (new_map_happened)
+            final Graphics2D g = mybuffer.createGraphics();
+            try
             {
-                g.setColor(Color.BLACK);
-                g.fillRect(x, y, w, h);
-                new_map_happened = false;
-            }
-
-            if (need_update)
-            {
-                need_update_cnt--;
-                if (need_update_cnt <= 0)
-                    need_update = false;
-                final CfMapSquare[][] map = CfMap.getMap();
-                for (int nz = 0; nz < CrossfireServerConnection.NUM_LAYERS; nz++)
+                for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
                 {
-                    for (int ny = 10; ny < CrossfireServerConnection.MAP_HEIGHT+10; ny++)
+                    for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
                     {
-                        for (int nx = 10; nx < CrossfireServerConnection.MAP_WIDTH+10; nx++)
+                        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
                         {
-                            redrawSquare(g, map[nx][ny], nz);
+                            redrawSquare(g, CfMap.getMap()[x+10][y+10], layer);
                         }
                     }
                 }
+            }
+            finally
+            {
+                g.dispose();
             }
         }
     }
@@ -115,8 +103,8 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     protected void cleanSquare(final Graphics g, final CfMapSquare square)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(((square.getXPos()-10)*mysquaresize),
-                   ((square.getYPos()-10)*mysquaresize),
+        g.fillRect(((square.getXPos()-10)*mysquaresize-mysquaresize/2),
+                   ((square.getYPos()-10)*mysquaresize-mysquaresize/2),
                    mysquaresize, mysquaresize);
     }
 
@@ -130,9 +118,6 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
             System.err.println("Warning ! Null square detected");
             return;
         }
-
-        if (!square.isDirty())
-            return;
 
         if (nz == 0)
         {
@@ -154,8 +139,8 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
                     img = f.getOriginalImageIcon();
                 }
 
-                final int px = (square.getXPos()-10)*mysquaresize;
-                final int py = (square.getYPos()-10)*mysquaresize;
+                final int px = (square.getXPos()-10)*mysquaresize-mysquaresize/2;
+                final int py = (square.getYPos()-10)*mysquaresize-mysquaresize/2;
                 final int psx = px-(img.getIconWidth()-mysquaresize);
                 final int psy = py-(img.getIconHeight()-mysquaresize);
                 g.drawImage(img.getImage(), psx, psy, img.getIconWidth(), img.getIconHeight(), null);
@@ -185,23 +170,24 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     {
         synchronized(mybuffer)
         {
-            need_update = true;
-            need_update_cnt = 2;
+            final Graphics2D g = mybuffer.createGraphics();
+            try
+            {
+                render();
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
         setChanged();
     }
 
     public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
     {
-        /*final Graphics2D g = mybuffer.createGraphics();
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, mybuffer.getWidth(), mybuffer.getHeight());
-        g.dispose();*/
         synchronized(mybuffer)
         {
-            need_update = true;
-            need_update_cnt = 2;
-            new_map_happened = true;
+            render();
         }
         setChanged();
     }
@@ -210,8 +196,21 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     {
         synchronized(mybuffer)
         {
-            need_update = true;
-            need_update_cnt = 2;
+            final Graphics2D g = mybuffer.createGraphics();
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            {
+                for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                {
+                    final CfMapSquare square = CfMap.getMap()[x+10][y+10];
+                    if (square.isDirty())
+                    {
+                        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+                        {
+                            redrawSquare(g, square, layer);
+                        }
+                    }
+                }
+            }
         }
         setChanged();
     }
@@ -220,9 +219,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     {
         synchronized(mybuffer)
         {
-            need_update = true;
-            need_update_cnt = 2;
-            new_map_happened = true;
+            render();
         }
         setChanged();
     }
