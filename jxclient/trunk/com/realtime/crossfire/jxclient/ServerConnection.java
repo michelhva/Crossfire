@@ -36,37 +36,39 @@ import java.util.List;
  */
 public abstract class ServerConnection extends Thread
 {
+    private Socket mysocket;
 
-    private Socket                  mysocket;
-    private DataInputStream         in;
-    private byte[]                  buf = null;
+    private DataInputStream in;
 
-    private List<CrossfireScriptMonitorListener> scripts_monitor =
-            new ArrayList<CrossfireScriptMonitorListener>();
+    private byte[] buf = null;
 
-    private String                  myhost = "localhost";
-    private int                     myport = 13327;
+    private List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
+
+    private String myhost = "localhost";
+
+    private int myport = 13327;
 
     /**
      * Represents the unconnected status of the client, which is the first to
      * happen during a normal gaming session.
      * @since 1.0
      */
-    public static final int         STATUS_UNCONNECTED = 0;
+    public static final int STATUS_UNCONNECTED = 0;
 
     /**
      * Represents the status of the client that is used during play.
      * @since 1.0
      */
-    public static final int         STATUS_PLAYING     = 1;
+    public static final int STATUS_PLAYING = 1;
 
     /**
      * Represents the status of the client that is displaying a Query dialog.
      * @since 1.0
      */
-    public static final int         STATUS_QUERY       = 2;
+    public static final int STATUS_QUERY = 2;
 
-    private int                     mystatus = STATUS_UNCONNECTED;
+    private int mystatus = STATUS_UNCONNECTED;
+
     private String mystatus_sem = "mystatus_sem";
 
     /**
@@ -79,7 +81,7 @@ public abstract class ServerConnection extends Thread
         setStatus(STATUS_PLAYING);
         try
         {
-            for(;;)
+            for (;;)
             {
                 readPacket();
             }
@@ -112,7 +114,6 @@ public abstract class ServerConnection extends Thread
     {
         int len = in.readUnsignedShort();
         byte[] data = new byte[len];
-
         in.readFully(data);
         command(data);
     }
@@ -175,7 +176,6 @@ public abstract class ServerConnection extends Thread
             e.printStackTrace();
             System.exit(0);
         }
-
     }
 
     /**
@@ -217,6 +217,7 @@ public abstract class ServerConnection extends Thread
     {
         scripts_monitor.add(listener);
     }
+
     public void removeScriptMonitor(CrossfireScriptMonitorListener listener)
     {
         scripts_monitor.remove(listener);
