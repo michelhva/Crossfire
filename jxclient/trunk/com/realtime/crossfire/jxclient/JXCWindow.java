@@ -677,6 +677,19 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom(0, "northwest");
             break;
 
+        case KeyEvent.VK_NUMPAD5:
+            if (getKeyShift(KEY_SHIFT_CTRL))
+            {
+                // ignore
+            }
+            else if (getKeyShift(KEY_SHIFT_SHIFT))
+            {
+                sendNcom("stay f");
+            }
+            else
+                sendNcom(0, "stay");
+            break;
+
         case KeyEvent.VK_0:
             addToRepeatCount(0);
             break;
@@ -740,14 +753,55 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             sendNcom("apply");
             break;
 
+        case 'd':
+            sendNcom("use_skill disarm traps");
+            break;
+
+        case 'e':
+            sendNcom("examine");
+            break;
+
+        case 'i':
+            sendNcom("mapinfo");
+            break;
+
+        case 'j':
+            sendNcom("use_skill jumping");
+            break;
+
+        case 'm':
+            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+            if (myactive_element != null)
+            {
+                ((GUIText)myactive_element).setText("maps ");
+            }
+            break;
+
         case 's':
-            sendNcom("save");
+            sendNcom("use_skill find traps");
+            break;
+
+        case 'p':
+            sendNcom("use_skill praying");
+            break;
+
+        case 't':
+            sendNcom("ready_skill throwing");
             break;
 
         case 'w':
             sendNcom("who");
             break;
 
+        case '?':
+            sendNcom("help");
+            break;
+
+        case ',':
+            sendNcom("get");
+            break;
+
+        case '/':
         case '\'':
             activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
             break;
