@@ -895,19 +895,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(semaphore_drawing)
         {
-            GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
-            if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0) elected = jxcWindowRenderer.getCurrentGui().get(0);
-
-            GUIElement myother = null;
-
-            final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
-            if (currentDialog != null)
-            {
-                myother = manageMouseEvents(currentDialog, e);
-                if (myother != null)
-                    elected = myother;
-            }
-            e.translatePoint(-elected.x, -elected.y);
+            final GUIElement elected = findElement(e);
             deactivateCurrentElement();
             elected.mousePressed(e);
             if (elected.isActive())
@@ -919,23 +907,39 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(semaphore_drawing)
         {
-            GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
-            if (elected == null) elected = jxcWindowRenderer.getCurrentGui().get(0);
-
-            GUIElement myother = null;
-
-            final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
-            if (currentDialog != null)
-            {
-                myother = manageMouseEvents(currentDialog, e);
-                if (myother != null)
-                    elected = myother;
-            }
-            e.translatePoint(-elected.x, -elected.y);
+            final GUIElement elected = findElement(e);
             if (myactive_element!=elected)
                 deactivateCurrentElement();
             elected.mouseReleased(e);
         }
+    }
+
+    /**
+     * Find the gui element for a given {@link MouseEvent}. If a gui element
+     * was found, update the event mouse coordinates to be relative to the gui
+     * element.
+     *
+     * @param e The mouse event to process.
+     *
+     * @return The gui element found, or <code>null</code> if none was found.
+     */
+    private GUIElement findElement(final MouseEvent e)
+    {
+        GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
+        if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0) elected = jxcWindowRenderer.getCurrentGui().get(0);
+
+        final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
+        if (currentDialog != null)
+        {
+            final GUIElement myother = manageMouseEvents(currentDialog, e);
+            if (myother != null)
+            {
+                elected = myother;
+            }
+        }
+        e.translatePoint(-elected.x, -elected.y);
+
+        return elected;
     }
 
     private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e)
