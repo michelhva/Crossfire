@@ -51,8 +51,6 @@ public class GUIPicture extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         final Graphics2D g = mybuffer.createGraphics();
-        //System.out.println("nw:"+nw+" nh:"+nh);
-        //g.drawImage(img, 0, 0, nw, nh, 0, 0, nw, nh, null);
         g.drawImage(img, 0,0,img.getWidth(),img.getHeight(),null);
         g.dispose();
         setChanged();
