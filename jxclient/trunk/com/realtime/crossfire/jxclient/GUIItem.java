@@ -177,6 +177,8 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         }
 
         render();
+
+        setTooltipText(item == null ? null : item.getName());
     }
 
     /** {@inheritDoc} */

@@ -73,6 +73,12 @@ public abstract class GUIElement implements MouseListener
     private final JXCWindow jxcWindow;
 
     /**
+     * The tooltip text to show when the mouse is inside this element. May be
+     * <code>null</code> to show no tooltip.
+     */
+    private String tooltipText = null;
+
+    /**
      * Create a new instance.
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
@@ -169,9 +175,13 @@ public abstract class GUIElement implements MouseListener
     }
     public void mouseEntered(MouseEvent e)
     {
+        final JXCWindow jxcw = (JXCWindow)e.getSource();
+        jxcw.setTooltipElement(this);
     }
     public void mouseExited(MouseEvent e)
     {
+        final JXCWindow jxcw = (JXCWindow)e.getSource();
+        jxcw.unsetTooltipElement(this);
     }
     public void mousePressed(MouseEvent e)
     {
@@ -206,6 +216,43 @@ public abstract class GUIElement implements MouseListener
     public void resetChanged()
     {
         changed = false;
+    }
+
+    /**
+     * Set the tooltip text to show when the mouse is inside this element.
+     *
+     * @param tooltipText The text to show, or <code>null</cod> to disable the
+     * tooltip for this element.
+     */
+    public void setTooltipText(final String tooltipText)
+    {
+        if (this.tooltipText == null)
+        {
+            if (tooltipText == null)
+            {
+                return;
+            }
+        }
+        else
+        {
+            if (tooltipText != null && tooltipText.equals(this.tooltipText))
+            {
+                return;
+            }
+        }
+        this.tooltipText = tooltipText;
+        jxcWindow.updateTooltipElement(this);
+    }
+
+    /**
+     * Return the tooltip text to show when the mouse is inside this element.
+     *
+     * @return The text to show, or <code>null</cod> to disable the tooltip for
+     * this element.
+     */
+    public String getTooltipText()
+    {
+        return tooltipText;
     }
 
     /**

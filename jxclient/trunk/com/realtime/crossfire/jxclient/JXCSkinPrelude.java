@@ -319,6 +319,11 @@ public class JXCSkinPrelude implements JXCSkin
 
         try
         {
+            final GUILabel tooltipLabel = new GUILabel(p, "tooltip", 200, 300, 10, 30, null, font_types, Color.BLACK, "");
+            tooltipLabel.setAutoResize(true);
+            tooltipLabel.setBackgroundColor(Color.WHITE);
+            mygui.setTooltip(tooltipLabel);
+
             //Map Group (0, 0)
             GUIMap gui_map = new GUIMap(p, "playfield", 0, 0, 1024, 768);
 
