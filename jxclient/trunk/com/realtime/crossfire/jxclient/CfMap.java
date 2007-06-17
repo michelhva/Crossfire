@@ -41,8 +41,6 @@ public class CfMap
 
     private static final List<CrossfireMapscrollListener> mylisteners_mapscroll = new ArrayList<CrossfireMapscrollListener>();
 
-    private static final List<CrossfireMagicmapListener> mylisteners_magicmap = new ArrayList<CrossfireMagicmapListener>();
-
     private static final CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20][CrossfireServerConnection.MAP_HEIGHT+20];
 
     public static List<CrossfireMap1Listener> getCrossfireMap1Listeners()
@@ -60,11 +58,6 @@ public class CfMap
         return mylisteners_mapscroll;
     }
 
-    public static List<CrossfireMagicmapListener> getCrossfireMagicmapListeners()
-    {
-        return mylisteners_magicmap;
-    }
-
     static
     {
         for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH+20; x++)
@@ -73,28 +66,6 @@ public class CfMap
             {
                 map[x][y] = new CfMapSquare(x, y);
             }
-        }
-    }
-
-    public static void magicmap(final DataInputStream dis) throws IOException
-    {
-        final int len = dis.available();
-        final byte buf[] = new byte[len];
-
-        System.out.println("**************** MAGIC MAPPING ********************");
-        dis.readFully(buf);
-
-        final String str = new String(buf);
-        final String packs[] = str.split(" ", 5);
-        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
-            Integer.parseInt(packs[0]),
-            Integer.parseInt(packs[1]),
-            Integer.parseInt(packs[2]),
-            Integer.parseInt(packs[3]),
-            packs[4].getBytes());
-        for (final CrossfireMagicmapListener listener : mylisteners_magicmap)
-        {
-            listener.commandMagicmapReceived(evt);
         }
     }
 
