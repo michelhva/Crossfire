@@ -366,7 +366,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMap.getCrossfireMagicmapListeners().add(listener);
+        CfMagicMap.getCrossfireMagicmapListeners().add(listener);
     }
 
     /**
@@ -377,7 +377,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMap.getCrossfireMagicmapListeners().remove(listener);
+        CfMagicMap.getCrossfireMagicmapListeners().remove(listener);
     }
 
     /**
@@ -918,7 +918,7 @@ public class CrossfireServerConnection extends ServerConnection
                     if (packet[pos++] != 'p') break;
                     if (packet[pos++] != ' ') break;
                     dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
-                    CfMap.magicmap(dis);
+                    CfMagicMap.magicmap(dis);
                     return;
 
                 case 'p':
