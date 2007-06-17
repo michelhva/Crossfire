@@ -31,9 +31,9 @@ public class CfMapSquare
 
     private int y = 0;
 
-    private final CfMapSquare[] myhead=new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
+    private final CfMapSquare[] myhead = new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
 
-    private final Face[] myface=new Face[CrossfireServerConnection.NUM_LAYERS];
+    private final Face[] myface = new Face[CrossfireServerConnection.NUM_LAYERS];
 
     private boolean isdirty = false;
 
