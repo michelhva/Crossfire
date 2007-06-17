@@ -366,7 +366,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMagicMap.getCrossfireMagicmapListeners().add(listener);
+        CfMagicMap.addCrossfireMagicmapListeners(listener);
     }
 
     /**
@@ -377,7 +377,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMagicMap.getCrossfireMagicmapListeners().remove(listener);
+        CfMagicMap.removeCrossfireMagicmapListeners(listener);
     }
 
     /**
