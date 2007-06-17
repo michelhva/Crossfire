@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -93,10 +92,9 @@ public class CfMap
             Integer.parseInt(packs[2]),
             Integer.parseInt(packs[3]),
             packs[4].getBytes());
-        final Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
-        while (it.hasNext())
+        for (final CrossfireMagicmapListener listener : mylisteners_magicmap)
         {
-            it.next().commandMagicmapReceived(evt);
+            listener.commandMagicmapReceived(evt);
         }
     }
 
@@ -114,10 +112,9 @@ public class CfMap
 
         crossfireServerConnection.sendMapredraw();
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        final Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
-        while (it.hasNext())
+        for (final CrossfireNewmapListener listener : mylisteners_newmap)
         {
-            it.next().commandNewmapReceived(evt);
+            listener.commandNewmapReceived(evt);
         }
 
 //        final long etime = System.nanoTime();
@@ -269,10 +266,9 @@ public class CfMap
 
         final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
 
-        final Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
-        while (it.hasNext())
+        for (final CrossfireMapscrollListener listener : mylisteners_mapscroll)
         {
-            it.next().commandMapscrollReceived(evt);
+            listener.commandMapscrollReceived(evt);
         }
     }
 
@@ -348,10 +344,9 @@ public class CfMap
                 l.add(map[x][y]);
             }
             final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
-            final Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
-            while (it.hasNext())
+            for (final CrossfireMap1Listener listener : mylisteners_map1)
             {
-                it.next().commandMap1Received(evt);
+                listener.commandMap1Received(evt);
             }
         }
     }
@@ -371,10 +366,9 @@ public class CfMap
             }
         }
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        final Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
-        while (it.hasNext())
+        for (final CrossfireNewmapListener listener : mylisteners_newmap)
         {
-            it.next().commandNewmapReceived(evt);
+            listener.commandNewmapReceived(evt);
         }
     }
 
@@ -399,10 +393,9 @@ public class CfMap
             }
         }
         final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
-        final Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
-        while (it.hasNext())
+        for (final CrossfireMap1Listener listener : mylisteners_map1)
         {
-            it.next().commandMap1Received(evt);
+            listener.commandMap1Received(evt);
         }
     }
 }
