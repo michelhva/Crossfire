@@ -36,15 +36,15 @@ public class CfMap
 {
     private static Faces myfaces;
 
-    private static List<CrossfireMap1Listener> mylisteners_map1 = new ArrayList<CrossfireMap1Listener>();
+    private static final List<CrossfireMap1Listener> mylisteners_map1 = new ArrayList<CrossfireMap1Listener>();
 
-    private static List<CrossfireNewmapListener> mylisteners_newmap = new ArrayList<CrossfireNewmapListener>();
+    private static final List<CrossfireNewmapListener> mylisteners_newmap = new ArrayList<CrossfireNewmapListener>();
 
-    private static List<CrossfireMapscrollListener> mylisteners_mapscroll = new ArrayList<CrossfireMapscrollListener>();
+    private static final List<CrossfireMapscrollListener> mylisteners_mapscroll = new ArrayList<CrossfireMapscrollListener>();
 
-    private static List<CrossfireMagicmapListener> mylisteners_magicmap = new ArrayList<CrossfireMagicmapListener>();
+    private static final List<CrossfireMagicmapListener> mylisteners_magicmap = new ArrayList<CrossfireMagicmapListener>();
 
-    private static CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20][CrossfireServerConnection.MAP_HEIGHT+20];
+    private static final CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20][CrossfireServerConnection.MAP_HEIGHT+20];
 
     public static List<CrossfireMap1Listener> getCrossfireMap1Listeners()
     {
@@ -77,30 +77,30 @@ public class CfMap
         }
     }
 
-    public static void magicmap(DataInputStream dis) throws IOException
+    public static void magicmap(final DataInputStream dis) throws IOException
     {
-        int len = dis.available();
-        byte buf[] = new byte[len];
+        final int len = dis.available();
+        final byte buf[] = new byte[len];
 
         System.out.println("**************** MAGIC MAPPING ********************");
         dis.readFully(buf);
 
-        String str = new String(buf);
-        String packs[] = str.split(" ", 5);
-        CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
+        final String str = new String(buf);
+        final String packs[] = str.split(" ", 5);
+        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
             Integer.parseInt(packs[0]),
             Integer.parseInt(packs[1]),
             Integer.parseInt(packs[2]),
             Integer.parseInt(packs[3]),
             packs[4].getBytes());
-        Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
+        final Iterator<CrossfireMagicmapListener> it = mylisteners_magicmap.iterator();
         while (it.hasNext())
         {
             it.next().commandMagicmapReceived(evt);
         }
     }
 
-    public static void newMap(CrossfireServerConnection crossfireServerConnection) throws IOException
+    public static void newMap(final CrossfireServerConnection crossfireServerConnection) throws IOException
     {
 //        long stime = System.nanoTime();
 
@@ -113,17 +113,17 @@ public class CfMap
         }
 
         crossfireServerConnection.sendMapredraw();
-        CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
+        final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
+        final Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
             it.next().commandNewmapReceived(evt);
         }
 
-//        long etime = System.nanoTime();
+//        final long etime = System.nanoTime();
 //        System.out.println("Free Memory before Newmap GC:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         System.gc();
-//        long egtime = System.nanoTime();
+//        final long egtime = System.nanoTime();
 //        System.out.println("Free Memory after Newmap GC:"+Runtime.getRuntime().freeMemory()/1024+" KB");
 //        System.out.println("Cleaning complete, Cleaning time:"+(etime-stime)/1000000+"ms, GC:"+(egtime-etime)/1000000+"ms.");
     }
@@ -131,8 +131,8 @@ public class CfMap
     public static void scroll(final int dx, final int dy) throws IOException
     {
         //System.out.println("--------------------------------------------------");
-        int mx = CrossfireServerConnection.MAP_WIDTH+20;
-        int my = CrossfireServerConnection.MAP_HEIGHT+20;
+        final int mx = CrossfireServerConnection.MAP_WIDTH+20;
+        final int my = CrossfireServerConnection.MAP_HEIGHT+20;
 
         if (dx >= 0)
         {
@@ -267,37 +267,37 @@ public class CfMap
             }
         }
 
-        CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
+        final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
 
-        Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
+        final Iterator<CrossfireMapscrollListener> it = mylisteners_mapscroll.iterator();
         while (it.hasNext())
         {
             it.next().commandMapscrollReceived(evt);
         }
     }
 
-    public static void changeSquare(int x, int y, int z, int darkness, Face face)
+    public static void changeSquare(final int x, final int y, final int z, final int darkness, final Face face)
     {
         map[x][y].setDarkness(darkness);
         map[x][y].setFace(face, z);
         map[x][y].dirty();
     }
 
-    public static void map1(DataInputStream dis) throws IOException
+    public static void map1(final DataInputStream dis) throws IOException
     {
-        int len = dis.available();
+        final int len = dis.available();
         int pos = 0;
-        List<CfMapSquare> l = new LinkedList<CfMapSquare>();
-        int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
+        final List<CfMapSquare> l = new LinkedList<CfMapSquare>();
+        final int[] faces = new int[CrossfireServerConnection.NUM_LAYERS];
         while (pos < len)
         {
-            int coord = dis.readUnsignedShort();
-            int x = 10+(coord>>10)&0x3f;
-            int y = 10+(coord>>4)&0x3f;
-            int isclear = coord&0xf;
-            int isdark = coord&0x8;
-            int mask = coord&0x7;
-            int darkness = -1;
+            final int coord = dis.readUnsignedShort();
+            final int x = 10+(coord>>10)&0x3f;
+            final int y = 10+(coord>>4)&0x3f;
+            final int isclear = coord&0xf;
+            final int isdark = coord&0x8;
+            final int mask = coord&0x7;
+            final int darkness;
             pos += 2;
             /*System.out.println("------------------------------------------");
             System.out.println("Packet map received");
@@ -314,6 +314,10 @@ public class CfMap
                 //System.out.println("Darkness:"+darkness+ "("+x+";"+y+")");
                 pos++;
             }
+            else
+            {
+                darkness = -1;
+            }
 
             for (int layer = CrossfireServerConnection.NUM_LAYERS-1; layer >= 0; layer--)
             {
@@ -321,7 +325,7 @@ public class CfMap
                 {
                     faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer] = dis.readUnsignedShort();
                     Faces.ensureFaceExists(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
-                    Face ff = Faces.getFace(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
+                    final Face ff = Faces.getFace(faces[(CrossfireServerConnection.NUM_LAYERS-1)-layer]);
                     /*if (ff != null)
                         System.out.println("Layer face :"+ff.getName());*/
                     pos += 2;
@@ -343,8 +347,8 @@ public class CfMap
                 changeSquare(x, y, layer, darkness, f);
                 l.add(map[x][y]);
             }
-            CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
-            Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
+            final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
+            final Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
             while (it.hasNext())
             {
                 it.next().commandMap1Received(evt);
@@ -366,17 +370,17 @@ public class CfMap
                 map[x][y].dirty();
             }
         }
-        CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
+        final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
+        final Iterator<CrossfireNewmapListener> it = mylisteners_newmap.iterator();
         while (it.hasNext())
         {
             it.next().commandNewmapReceived(evt);
         }
     }
 
-    public static void updateFace(int pixnum)
+    public static void updateFace(final int pixnum)
     {
-        List<CfMapSquare> l = new LinkedList<CfMapSquare>();
+        final List<CfMapSquare> l = new LinkedList<CfMapSquare>();
 
         //System.out.println("Face update: "+pixnum);
         for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT+20; y++)
@@ -394,8 +398,8 @@ public class CfMap
                 }
             }
         }
-        CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
-        Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
+        final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
+        final Iterator<CrossfireMap1Listener> it = mylisteners_map1.iterator();
         while (it.hasNext())
         {
             it.next().commandMap1Received(evt);
