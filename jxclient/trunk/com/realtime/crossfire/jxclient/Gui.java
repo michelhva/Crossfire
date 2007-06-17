@@ -156,13 +156,13 @@ public class Gui
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
-    public GUIElement getFirstTextArea()
+    public GUIText getFirstTextArea()
     {
         for (final GUIElement element : elements)
         {
             if ((element instanceof GUIText) && element.isVisible())
             {
-                return element;
+                return (GUIText)element;
             }
         }
 

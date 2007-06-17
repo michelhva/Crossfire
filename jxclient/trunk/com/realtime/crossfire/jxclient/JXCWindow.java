@@ -302,6 +302,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
             case DLG_QUERY:
                 jxcWindowRenderer.setCurrentDialog(mydialog_query);
+                jxcWindowRenderer.setHideInput(false);
                 break;
 
             case DLG_KEYBIND:
@@ -1123,6 +1124,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         setDialogStatus(DLG_QUERY);
+        jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
     private void clearGUI()

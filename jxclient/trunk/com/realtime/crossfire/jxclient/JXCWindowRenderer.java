@@ -216,4 +216,18 @@ public class JXCWindowRenderer
 
         return false;
     }
+
+    /**
+     * Enable or disable hidden text in the first input field of {@link
+     * #currentDialog}.
+     *
+     * @param hideInput If set, hide input; else show input.
+     */
+    public void setHideInput(final boolean hideInput)
+    {
+        if (currentDialog != null)
+        {
+            currentDialog.getFirstTextArea().setHideInput(hideInput);
+        }
+    }
 }
