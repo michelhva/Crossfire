@@ -28,13 +28,13 @@ package com.realtime.crossfire.jxclient;
 public class CfMapSquare
 {
     private int x=0, y=0;
-    private CfMapSquare[] myhead=new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
-    private Face[] myface=new Face[CrossfireServerConnection.NUM_LAYERS];
+    private final CfMapSquare[] myhead=new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
+    private final Face[] myface=new Face[CrossfireServerConnection.NUM_LAYERS];
     private boolean isdirty = false;
     private int mydarkness = 0;
     private int dirtycounter = 0;
 
-    public CfMapSquare(int nx, int ny)
+    public CfMapSquare(final int nx, final int ny)
     {
         x = nx;
         y = ny;
@@ -52,28 +52,26 @@ public class CfMapSquare
     {
         return y;
     }
-    public void setPos(int nx, int ny)
+    public void setPos(final int nx, final int ny)
     {
         x = nx;
         y = ny;
     }
-    public Face getFace(int layer)
+    public Face getFace(final int layer)
     {
         return myface[layer];
     }
-    public void setFace(Face f, int layer)
+    public void setFace(final Face f, final int layer)
     {
-        CfMapSquare[][] map = CfMap.getMap();
-
-        int sw, sh, psx, psy;
+        final CfMapSquare[][] map = CfMap.getMap();
 
         if (myface[layer]!=null)
         {
-            sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
-            sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
+            final int sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
+            final int sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
 
-            psx = x - (sw-1);
-            psy = y - (sh-1);
+            int psx = x - (sw-1);
+            int psy = y - (sh-1);
 
             if (psx < 0) psx = 0;
             if (psy < 0) psy = 0;
@@ -89,11 +87,11 @@ public class CfMapSquare
         myface[layer] = f;
         if (myface[layer]!=null)
         {
-            sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
-            sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
+            final int sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
+            final int sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
 
-            psx = x - (sw-1);
-            psy = y - (sh-1);
+            int psx = x - (sw-1);
+            int psy = y - (sh-1);
 
             if (psx < 0) psx = 0;
             if (psy < 0) psy = 0;
@@ -107,7 +105,7 @@ public class CfMapSquare
             }
         }
     }
-    protected void setFaceHead(Face f, int layer, CfMapSquare m)
+    protected void setFaceHead(final Face f, final int layer, final CfMapSquare m)
     {
         //System.out.println("- setFaceHead: ("+x+";"+y+";"+layer+"):"+m);
         myface[layer] = f;
@@ -122,9 +120,9 @@ public class CfMapSquare
         {
             if ((myhead[layer] == this)&&(myface[layer]!=null))
             {
-                CfMapSquare[][] map = CfMap.getMap();
-                int sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
-                int sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
+                final CfMapSquare[][] map = CfMap.getMap();
+                final int sw = myface[layer].getImageIcon().getIconWidth() / CrossfireServerConnection.SQUARE_SIZE;
+                final int sh = myface[layer].getImageIcon().getIconHeight() / CrossfireServerConnection.SQUARE_SIZE;
 
                 int psx = x - (sw-1);
                 int psy = y - (sh-1);
@@ -158,11 +156,11 @@ public class CfMapSquare
         if (dirtycounter <= 0)
             isdirty = false;
     }
-    public CfMapSquare getHead(int layer)
+    public CfMapSquare getHead(final int layer)
     {
         return myhead[layer];
     }
-    public void setHead(CfMapSquare m, int layer)
+    public void setHead(final CfMapSquare m, final int layer)
     {
         myhead[layer] = m;
     }
@@ -173,7 +171,7 @@ public class CfMapSquare
             setFace(null, i);
         }
     }
-    public void setDarkness(int d)
+    public void setDarkness(final int d)
     {
         mydarkness = d;
     }
@@ -191,7 +189,7 @@ public class CfMapSquare
         }
         return str;
     }
-    public void copy(CfMapSquare square)
+    public void copy(final CfMapSquare square)
     {
         System.out.println(this+"->"+square);
         for (int i=0; i<CrossfireServerConnection.NUM_LAYERS; i++)
