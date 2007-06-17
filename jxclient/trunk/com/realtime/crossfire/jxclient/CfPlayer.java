@@ -48,13 +48,21 @@ public class CfPlayer extends CfItem
     {
         return mystats;
     }
-    public static List<CrossfirePlayerListener> getCrossfirePlayerListeners()
+    public static void addCrossfirePlayerListeners(final CrossfirePlayerListener listener)
     {
-        return mylisteners_player;
+        mylisteners_player.add(listener);
     }
-    public static List<CrossfireStatsListener> getCrossfireStatsListeners()
+    public static void removeCrossfirePlayerListeners(final CrossfirePlayerListener listener)
     {
-        return mylisteners_stats;
+        mylisteners_player.remove(listener);
+    }
+    public static void addCrossfireStatsListeners(final CrossfireStatsListener listener)
+    {
+        mylisteners_stats.add(listener);
+    }
+    public static void removeCrossfireStatsListeners(final CrossfireStatsListener listener)
+    {
+        mylisteners_stats.remove(listener);
     }
     public static void setStatsProcessed()
     {
