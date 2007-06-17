@@ -212,7 +212,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        CfMap.getCrossfireMap1Listeners().add(listener);
+        CfMap.addCrossfireMap1Listeners(listener);
     }
 
     /**
@@ -223,7 +223,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        CfMap.getCrossfireMap1Listeners().remove(listener);
+        CfMap.removeCrossfireMap1Listeners(listener);
     }
 
     /**
@@ -234,7 +234,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMap.getCrossfireNewmapListeners().add(listener);
+        CfMap.addCrossfireNewmapListeners(listener);
     }
 
     /**
@@ -245,7 +245,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMap.getCrossfireNewmapListeners().remove(listener);
+        CfMap.removeCrossfireNewmapListeners(listener);
     }
 
     /**
@@ -300,7 +300,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMap.getCrossfireMapscrollListeners().add(listener);
+        CfMap.addCrossfireMapscrollListeners(listener);
     }
 
     /**
@@ -311,7 +311,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMap.getCrossfireMapscrollListeners().remove(listener);
+        CfMap.removeCrossfireMapscrollListeners(listener);
     }
 
     /**

@@ -43,19 +43,34 @@ public class CfMap
 
     private static final CfMapSquare[][] map = new CfMapSquare[CrossfireServerConnection.MAP_WIDTH+20][CrossfireServerConnection.MAP_HEIGHT+20];
 
-    public static List<CrossfireMap1Listener> getCrossfireMap1Listeners()
+    public static void addCrossfireMap1Listeners(final CrossfireMap1Listener listener)
     {
-        return mylisteners_map1;
+        mylisteners_map1.add(listener);
     }
 
-    public static List<CrossfireNewmapListener> getCrossfireNewmapListeners()
+    public static void removeCrossfireMap1Listeners(final CrossfireMap1Listener listener)
     {
-        return mylisteners_newmap;
+        mylisteners_map1.remove(listener);
     }
 
-    public static List<CrossfireMapscrollListener> getCrossfireMapscrollListeners()
+    public static void addCrossfireNewmapListeners(final CrossfireNewmapListener listener)
     {
-        return mylisteners_mapscroll;
+        mylisteners_newmap.add(listener);
+    }
+
+    public static void removeCrossfireNewmapListeners(final CrossfireNewmapListener listener)
+    {
+        mylisteners_newmap.remove(listener);
+    }
+
+    public static void addCrossfireMapscrollListeners(final CrossfireMapscrollListener listener)
+    {
+        mylisteners_mapscroll.add(listener);
+    }
+
+    public static void removeCrossfireMapscrollListeners(final CrossfireMapscrollListener listener)
+    {
+        mylisteners_mapscroll.remove(listener);
     }
 
     static
