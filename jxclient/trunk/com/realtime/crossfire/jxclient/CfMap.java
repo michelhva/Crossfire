@@ -33,8 +33,6 @@ import java.util.List;
  */
 public class CfMap
 {
-    private static Faces myfaces;
-
     private static final List<CrossfireMap1Listener> mylisteners_map1 = new ArrayList<CrossfireMap1Listener>();
 
     private static final List<CrossfireNewmapListener> mylisteners_newmap = new ArrayList<CrossfireNewmapListener>();
@@ -373,7 +371,7 @@ public class CfMap
                     if (map[x][y].getFace(z).getID() == pixnum)
                     {
                         map[x][y].dirty();
-                        //l.add(new CfMapSquare(x, y, z, 0, myfaces.getFace(pixnum)));
+                        //l.add(new CfMapSquare(x, y, z, 0, Faces.getFace(pixnum)));
                     }
                 }
             }
