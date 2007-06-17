@@ -49,6 +49,11 @@ public class GUIText extends GUIElement implements KeyListener
 
     protected String mytext;
 
+    /**
+     * If set, hide input; else show input.
+     */
+    private boolean hideInput = false;
+
     public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt)  throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
@@ -89,7 +94,16 @@ public class GUIText extends GUIElement implements KeyListener
                 g.setColor(Color.GRAY);
             }
             g.setFont(myfont);
-            g.drawString(mytext, 4, myfont.getSize()+2);
+            if (hideInput)
+            {
+                final String template = "********************";
+                final String hiddenText = template.substring(0, Math.min(mytext.length(), template.length()));
+                g.drawString(hiddenText, 4, myfont.getSize()+2);
+            }
+            else
+            {
+                g.drawString(mytext, 4, myfont.getSize()+2);
+            }
             g.dispose();
         }
         setChanged();
@@ -171,5 +185,20 @@ public class GUIText extends GUIElement implements KeyListener
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
+    }
+
+    /**
+     * Enable or disable hidden text in the first input field of {@link
+     * #currentDialog}.
+     *
+     * @param hideInput If set, hide input; else show input.
+     */
+    public void setHideInput(final boolean hideInput)
+    {
+        if (this.hideInput != hideInput)
+        {
+            this.hideInput = hideInput;
+            render();
+        }
     }
 }

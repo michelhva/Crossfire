@@ -32,6 +32,15 @@ public class CrossfireCommandQueryEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
+    /** Query type: yes/no question. */
+    public static final int YESNO = 1;
+
+    /** Query type: single character response expected. */
+    public static final int SINGLECHAR = 2;
+
+    /** Query type: hide input being entered. */
+    public static final int HIDEINPUT = 4;
+
     private String myquery;
     private int myquerytype;
     public CrossfireCommandQueryEvent(Object src, String msg, int type)
@@ -43,5 +52,16 @@ public class CrossfireCommandQueryEvent extends EventObject
     public String getPrompt()
     {
         return myquery;
+    }
+
+    /**
+     * Return the query type as a bitmask of {@link #YESNO}, {@link
+     * #SINGLECHAR} and {@link #HIDEINPUT}.
+     *
+     * @return The query type bitmask.
+     */
+    public int getQueryType()
+    {
+        return myquerytype;
     }
 }
