@@ -256,7 +256,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
-        CfPlayer.getCrossfirePlayerListeners().add(listener);
+        CfPlayer.addCrossfirePlayerListeners(listener);
     }
 
     /**
@@ -267,7 +267,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
-        CfPlayer.getCrossfirePlayerListeners().remove(listener);
+        CfPlayer.removeCrossfirePlayerListeners(listener);
     }
 
     /**
@@ -278,7 +278,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireStatsListener(CrossfireStatsListener listener)
     {
-        CfPlayer.getCrossfireStatsListeners().add(listener);
+        CfPlayer.addCrossfireStatsListeners(listener);
     }
 
     /**
@@ -289,7 +289,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireStatsListener(CrossfireStatsListener listener)
     {
-        CfPlayer.getCrossfireStatsListeners().remove(listener);
+        CfPlayer.removeCrossfireStatsListeners(listener);
     }
 
     /**
