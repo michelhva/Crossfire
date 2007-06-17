@@ -256,7 +256,7 @@ public class CfMap
         }
     }
 
-    public static void changeSquare(final int x, final int y, final int z, final int darkness, final Face face)
+    private static void changeSquare(final int x, final int y, final int z, final int darkness, final Face face)
     {
         map[x][y].setDarkness(darkness);
         map[x][y].setFace(face, z);
