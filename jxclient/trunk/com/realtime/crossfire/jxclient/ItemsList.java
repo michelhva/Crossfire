@@ -61,19 +61,34 @@ public class ItemsList
         }
     }
 
-    public static List<CrossfireSpellAddedListener> getCrossfireSpellAddedListeners()
+    public static void addCrossfireSpellAddedListeners(final CrossfireSpellAddedListener listener)
     {
-        return mylisteners_addspell;
+        mylisteners_addspell.add(listener);
     }
 
-    public static List<CrossfireSpellUpdatedListener> getCrossfireSpellUpdatedListeners()
+    public static void removeCrossfireSpellAddedListeners(final CrossfireSpellAddedListener listener)
     {
-        return mylisteners_updspell;
+        mylisteners_addspell.remove(listener);
     }
 
-    public static List<CrossfireSpellRemovedListener> getCrossfireSpellRemovedListeners()
+    public static void addCrossfireSpellUpdatedListeners(final CrossfireSpellUpdatedListener listener)
     {
-        return mylisteners_delspell;
+        mylisteners_updspell.add(listener);
+    }
+
+    public static void removeCrossfireSpellUpdatedListeners(final CrossfireSpellUpdatedListener listener)
+    {
+        mylisteners_updspell.remove(listener);
+    }
+
+    public static void addCrossfireSpellRemovedListeners(final CrossfireSpellRemovedListener listener)
+    {
+        mylisteners_delspell.add(listener);
+    }
+
+    public static void removeCrossfireSpellRemovedListeners(final CrossfireSpellRemovedListener listener)
+    {
+        mylisteners_delspell.remove(listener);
     }
 
     public static void setSpellMode(int nm)

@@ -432,7 +432,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
     {
-        ItemsList.getCrossfireSpellAddedListeners().add(listener);
+        ItemsList.addCrossfireSpellAddedListeners(listener);
     }
 
     /**
@@ -443,7 +443,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
     {
-        ItemsList.getCrossfireSpellAddedListeners().remove(listener);
+        ItemsList.removeCrossfireSpellAddedListeners(listener);
     }
 
     /**
@@ -454,7 +454,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
     {
-        ItemsList.getCrossfireSpellUpdatedListeners().add(listener);
+        ItemsList.addCrossfireSpellUpdatedListeners(listener);
     }
 
     /**
@@ -465,7 +465,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
     {
-        ItemsList.getCrossfireSpellUpdatedListeners().remove(listener);
+        ItemsList.removeCrossfireSpellUpdatedListeners(listener);
     }
 
     /**
@@ -476,7 +476,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
     {
-        ItemsList.getCrossfireSpellRemovedListeners().add(listener);
+        ItemsList.addCrossfireSpellRemovedListeners(listener);
     }
 
     /**
@@ -487,7 +487,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
     {
-        ItemsList.getCrossfireSpellRemovedListeners().remove(listener);
+        ItemsList.removeCrossfireSpellRemovedListeners(listener);
     }
 
     /** {@inheritDoc} */
