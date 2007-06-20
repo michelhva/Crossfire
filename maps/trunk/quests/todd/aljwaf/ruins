@@ -564,9 +564,10 @@ arch desert
 x 4
 y 9
 end
-arch pedestal
+arch detector
 x 4
 y 10
+invisible 1
 connected 2
 end
 arch dunes
@@ -1155,15 +1156,16 @@ arch desert
 x 8
 y 14
 end
-arch pedestal
-x 8
-y 15
-connected 4
-walk_off 0
-end
 arch desert
 x 8
 y 15
+end
+arch detector
+x 8
+y 15
+speed 1.0
+invisible 1
+connected 4
 end
 arch desert
 x 8
@@ -1452,15 +1454,16 @@ arch pillars
 x 10
 y 13
 end
-arch pedestal
-x 10
-y 14
-connected 4
-walk_off 0
-end
 arch desert
 x 10
 y 14
+end
+arch detector
+x 10
+y 14
+speed 1.0
+invisible 1
+connected 4
 end
 arch desert
 x 10
@@ -1727,15 +1730,16 @@ arch desert
 x 12
 y 3
 end
-arch pedestal
-x 12
-y 4
-connected 2
-walk_off 0
-end
 arch desert
 x 12
 y 4
+end
+arch detector
+x 12
+y 4
+speed 1.0
+invisible 1
+connected 2
 end
 arch desert
 x 12
@@ -1794,16 +1798,15 @@ arch desert
 x 12
 y 15
 end
+arch paved_1_2
+x 12
+y 15
+end
 arch pedestal
 x 12
 y 15
 invisible 1
 connected 3
-walk_off 0
-end
-arch paved_1_2
-x 12
-y 15
 end
 arch desert
 x 12
@@ -3041,15 +3044,16 @@ arch desert
 x 20
 y 6
 end
-arch pedestal
-x 20
-y 7
-connected 1
-walk_off 0
-end
 arch desert
 x 20
 y 7
+end
+arch detector
+x 20
+y 7
+speed 1.0
+invisible 1
+connected 1
 end
 arch cobblestones
 x 20
