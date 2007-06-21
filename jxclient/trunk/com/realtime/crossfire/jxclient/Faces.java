@@ -58,9 +58,9 @@ public class Faces
 
     static
     {
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
-        GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
         originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
@@ -76,13 +76,13 @@ public class Faces
      * Face numbers for which "askface" commands have been sent without having
      * received a response from the server.
      */
-    private static Set<Integer> pendingAskfaces = new HashSet<Integer>();
+    private static final Set<Integer> pendingAskfaces = new HashSet<Integer>();
 
     /**
      * Face numbers for which an "askface" command should be sent. It includes
      * all elements of {@link #pendingAskfaces}.
      */
-    private static Set<Integer> pendingFaces = new HashSet<Integer>();
+    private static final Set<Integer> pendingFaces = new HashSet<Integer>();
 
     /**
      * The server connection to send "askface" commands to.
@@ -99,13 +99,13 @@ public class Faces
         Faces.crossfireServerConnection = crossfireServerConnection;
     }
 
-    public static Face getFace(int index)
+    public static Face getFace(final int index)
     {
         if (faces[index] == null)
         {
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice gd = ge.getDefaultScreenDevice();
-            GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice gd = ge.getDefaultScreenDevice();
+            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
         }
         return faces[index];
@@ -136,19 +136,19 @@ public class Faces
             if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
             {
                 System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
-                Face f = faces[pixnum];
+                final Face f = faces[pixnum];
                 f.setImageIcon(unknownImageIcon);
                 f.setOriginalImageIcon(originalUnknownImageIcon);
             }
             else
             {
-                Face f = faces[pixnum];
+                final Face f = faces[pixnum];
                 f.setImageIcon(getScaledImageIcon(img));
                 f.setOriginalImageIcon(img);
                 f.storeInCache("cache/");
             }
         }
-        catch(IllegalArgumentException e)
+        catch (final IllegalArgumentException e)
         {
             System.out.println("Unable to get face:"+pixnum);
         }
@@ -183,28 +183,28 @@ public class Faces
     // TODO: implement faceset
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
-        ImageIcon im = new ImageIcon("cache/"+pixname+".x2.png");
-        ImageIcon oim = new ImageIcon("cache/"+pixname+".x1.png");
+        final ImageIcon im = new ImageIcon("cache/"+pixname+".x2.png");
+        final ImageIcon oim = new ImageIcon("cache/"+pixname+".x1.png");
         if (im.getIconWidth() <= 0 || im.getIconHeight() <= 0 || oim.getIconWidth() <= 0 || oim.getIconHeight() <= 0)
         {
             askface(pixnum);
-            Face f = new Face(pixnum, pixname, null);
+            final Face f = new Face(pixnum, pixname, null);
             faces[pixnum] = f;
         }
         else
         {
-            Face f = new Face(pixnum, pixname, im, oim);
+            final Face f = new Face(pixnum, pixname, im, oim);
             faces[pixnum] = f;
         }
     }
-    public static void ensureFaceExists(int val)
+    public static void ensureFaceExists(final int val)
     {
         getFace(val);
         if (faces[val].getImageIcon() == null)
         {
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice gd = ge.getDefaultScreenDevice();
-            GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice gd = ge.getDefaultScreenDevice();
+            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
         }
     }
