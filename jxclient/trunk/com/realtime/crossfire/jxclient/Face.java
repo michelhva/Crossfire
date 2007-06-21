@@ -44,15 +44,15 @@ public class Face
      */
     private ImageIcon originalImageIcon;
 
-    private final int myid;
+    private final int id;
 
-    private String myname;
+    private String name;
 
     public Face(final int id, final String name, final ImageIcon imageIcon)
     {
         super();
-        myid = id;
-        myname = name;
+        this.id = id;
+        this.name = name;
         this.imageIcon = imageIcon;
         originalImageIcon = imageIcon;
     }
@@ -60,30 +60,30 @@ public class Face
     public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
     {
         super();
-        myid = id;
-        myname = name;
+        this.id = id;
+        this.name = name;
         this.imageIcon = imageIcon;
         this.originalImageIcon = originalImageIcon;
     }
 
-    public void setImageIcon(final ImageIcon pic)
+    public void setImageIcon(final ImageIcon imageIcon)
     {
-        imageIcon = pic;
+        this.imageIcon = imageIcon;
     }
 
-    public void setOriginalImageIcon(final ImageIcon pic)
+    public void setOriginalImageIcon(final ImageIcon originalImageIcon)
     {
-        originalImageIcon = pic;
+        this.originalImageIcon = originalImageIcon;
     }
 
-    public void setName(final String n)
+    public void setName(final String name)
     {
-        myname = n;
+        this.name = name;
     }
 
     public int getID()
     {
-        return myid;
+        return id;
     }
 
     /**
@@ -110,13 +110,13 @@ public class Face
 
     public String getName()
     {
-        return myname;
+        return name;
     }
 
     public void storeInCache(final String basedir) throws IllegalArgumentException, IOException
     {
-        saveImageIcon(imageIcon, new File("cache/"+myname+".x2.png"));
-        saveImageIcon(originalImageIcon, new File("cache/"+myname+".x1.png"));
+        saveImageIcon(imageIcon, new File("cache/"+name+".x2.png"));
+        saveImageIcon(originalImageIcon, new File("cache/"+name+".x1.png"));
     }
 
     /**
@@ -137,6 +137,6 @@ public class Face
 
     public String toString()
     {
-        return myname;
+        return name;
     }
 }
