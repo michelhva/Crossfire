@@ -135,7 +135,7 @@ public class Faces
         System.arraycopy(packet, start, data, 0, pixlen);
         try
         {
-            ImageIcon img = new ImageIcon(data);
+            final ImageIcon img = new ImageIcon(data);
             if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
             {
                 System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
