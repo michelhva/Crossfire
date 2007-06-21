@@ -43,9 +43,21 @@ public class GUIItemSpellbelt extends GUIItem
         return myindex;
     }
 
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
         setIndex(myindex-1);
+    }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        return myindex+1 < 12;
     }
 
     public void scrollDown()

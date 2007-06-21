@@ -54,10 +54,29 @@ public class GUIItemInventory extends GUIItemItem
         return myindex;
     }
 
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
         setIndex(myindex-1);
         render();
+    }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        final CfPlayer player = ItemsList.getPlayer();
+        if (player == null)
+        {
+            return false;
+        }
+
+        final List<CfItem> list = ItemsList.getItems(player.getTag());
+        return myindex+1 < list.size();
     }
 
     public void scrollDown()

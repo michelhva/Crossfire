@@ -125,11 +125,25 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         active = act;
         render();
     }
+
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
             myindex--;
             render();
     }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        return myindex+1 < Metaserver.query().size();
+    }
+
     public void scrollDown()
     {
         myindex++;
