@@ -25,7 +25,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Set;
 import javax.swing.ImageIcon;
@@ -42,8 +41,6 @@ public class Faces
      * The maximum number of concurrently sent "askface" commands.
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
-
-    private static Hashtable<String, Face>  myfaces = new Hashtable<String, Face>();
 
     public final static int NRFACES = 6000;
 
@@ -198,13 +195,11 @@ public class Faces
         {
             askface(pixnum);
             Face f = new Face(pixnum, pixname, null);
-            myfaces.put(pixname, f);
             faces[pixnum] = f;
         }
         else
         {
             Face f = new Face(pixnum, pixname, im, oim);
-            myfaces.put(pixname, f);
             faces[pixnum] = f;
         }
     }
