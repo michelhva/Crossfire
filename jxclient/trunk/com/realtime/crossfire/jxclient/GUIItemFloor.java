@@ -68,9 +68,21 @@ public class GUIItemFloor extends GUIItemItem
         return myindex;
     }
 
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
         setIndex(myindex-1, false);
+    }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        return myindex+1 < ItemsList.getItems(ItemsList.getCurrentFloor()).size();
     }
 
     public void scrollDown()

@@ -57,6 +57,43 @@ public class GUICommand
         return myorder;
     }
 
+    public boolean canExecute()
+    {
+        switch (myorder)
+        {
+        case CMD_SHOW:
+        case CMD_HIDE:
+        case CMD_TOGGLE:
+        case CMD_PRINT:
+        case CMD_QUIT:
+            break;
+
+        case CMD_SCROLLUP:
+            if (mytarget instanceof GUIScrollable)
+            {
+                return ((GUIScrollable)mytarget).canScrollUp();
+            }
+            break;
+
+        case CMD_SCROLLDOWN:
+            if (mytarget instanceof GUIScrollable)
+            {
+                return ((GUIScrollable)mytarget).canScrollDown();
+            }
+            break;
+
+        case CMD_CONNECT:
+        case CMD_GUI_META:
+        case CMD_GUI_START:
+        case CMD_GUI_LEAVE_DIALOG:
+        case CMD_GUI_SEND_COMMAND:
+        case CMD_GUI_SPELLBELT:
+            break;
+        }
+
+        return true;
+    }
+
     public void execute()
     {
         //System.out.println("Executing command "+myorder+ " on "+mytarget.getName());

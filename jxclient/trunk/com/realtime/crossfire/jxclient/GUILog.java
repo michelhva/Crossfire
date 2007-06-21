@@ -237,22 +237,28 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         render();
     }
 
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
-        if (myindex > 0)
-        {
-            myindex--;
-            render();
-        }
+        myindex--;
+        render();
+    }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        return myindex+1 < mytext.size()-mynrlines;
     }
 
     public void scrollDown()
     {
-        if (myindex < mytext.size()-mynrlines)
-        {
-            myindex++;
-            render();
-        }
+        myindex++;
+        render();
     }
 
     public int getIndex()

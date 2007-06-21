@@ -43,10 +43,23 @@ public class GUIItemSpelllist extends GUIItem
         return myindex;
     }
 
+    /** {@inheritDoc} */
+    public boolean canScrollUp()
+    {
+        return myindex > 0;
+    }
+
     public void scrollUp()
     {
         setIndex(myindex-1);
         render();
+    }
+
+    /** {@inheritDoc} */
+    public boolean canScrollDown()
+    {
+        final List<Spell> list = ItemsList.getSpellList();
+        return myindex+1 < list.size();
     }
 
     public void scrollDown()

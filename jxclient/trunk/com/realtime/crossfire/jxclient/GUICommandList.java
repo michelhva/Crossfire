@@ -60,6 +60,14 @@ public class GUICommandList
     {
         for (final GUICommand command : commands)
         {
+            if (!command.canExecute())
+            {
+                return;
+            }
+        }
+
+        for (final GUICommand command : commands)
+        {
             command.execute();
         }
     }
