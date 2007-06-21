@@ -192,13 +192,11 @@ public class Faces
         if (im == null || oim == null)
         {
             askface(pixnum);
-            final Face f = new Face(pixnum, pixname, null);
-            faces[pixnum] = f;
+            faces[pixnum] = new Face(pixnum, pixname, null);
         }
         else
         {
-            final Face f = new Face(pixnum, pixname, im, oim);
-            faces[pixnum] = f;
+            faces[pixnum] = new Face(pixnum, pixname, im, oim);
         }
     }
     public static void ensureFaceExists(final int val)
