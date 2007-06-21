@@ -65,10 +65,6 @@ public class Face
         this.originalImageIcon = originalImageIcon;
     }
 
-    public void setID(int id)
-    {
-        myid = id;
-    }
     public void setImageIcon(ImageIcon pic)
     {
         imageIcon = pic;
