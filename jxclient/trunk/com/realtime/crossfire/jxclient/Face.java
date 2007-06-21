@@ -44,10 +44,10 @@ public class Face
      */
     private ImageIcon originalImageIcon;
 
-    private int myid;
+    private final int myid;
     private String myname;
 
-    public Face(int id, String name, ImageIcon imageIcon)
+    public Face(final int id, final String name, final ImageIcon imageIcon)
     {
         super();
         myid = id;
@@ -56,7 +56,7 @@ public class Face
         originalImageIcon = imageIcon;
     }
 
-    public Face(int id, String name, ImageIcon imageIcon, ImageIcon originalImageIcon)
+    public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
     {
         super();
         myid = id;
@@ -65,15 +65,15 @@ public class Face
         this.originalImageIcon = originalImageIcon;
     }
 
-    public void setImageIcon(ImageIcon pic)
+    public void setImageIcon(final ImageIcon pic)
     {
         imageIcon = pic;
     }
-    public void setOriginalImageIcon(ImageIcon pic)
+    public void setOriginalImageIcon(final ImageIcon pic)
     {
         originalImageIcon = pic;
     }
-    public void setName(String n)
+    public void setName(final String n)
     {
         myname = n;
     }
@@ -108,7 +108,7 @@ public class Face
     {
         return myname;
     }
-    public void storeInCache(String basedir) throws IllegalArgumentException, IOException
+    public void storeInCache(final String basedir) throws IllegalArgumentException, IOException
     {
         saveImageIcon(imageIcon, new File("cache/"+myname+".x2.png"));
         saveImageIcon(originalImageIcon, new File("cache/"+myname+".x1.png"));
