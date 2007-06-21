@@ -42,9 +42,7 @@ public class Faces
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
 
-    public final static int NRFACES = 6000;
-
-    private static Face[] faces = new Face[NRFACES];
+    private static Face[] faces = new Face[6000];
 
     /**
      * The image icon to display for unknown or invalid faces. It is never
@@ -63,10 +61,6 @@ public class Faces
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice gd = ge.getDefaultScreenDevice();
         GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        /*for(int i = 0; i < NRFACES; i++)
-        {
-            faces[i] = new Face(0, "empty", gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT), gconf.createCompatibleImage( CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT));
-        }*/
             faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
             originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
             if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
