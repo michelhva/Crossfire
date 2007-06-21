@@ -45,6 +45,7 @@ public class Face
     private ImageIcon originalImageIcon;
 
     private final int myid;
+
     private String myname;
 
     public Face(final int id, final String name, final ImageIcon imageIcon)
@@ -69,14 +70,17 @@ public class Face
     {
         imageIcon = pic;
     }
+
     public void setOriginalImageIcon(final ImageIcon pic)
     {
         originalImageIcon = pic;
     }
+
     public void setName(final String n)
     {
         myname = n;
     }
+
     public int getID()
     {
         return myid;
@@ -108,6 +112,7 @@ public class Face
     {
         return myname;
     }
+
     public void storeInCache(final String basedir) throws IllegalArgumentException, IOException
     {
         saveImageIcon(imageIcon, new File("cache/"+myname+".x2.png"));
