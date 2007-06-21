@@ -114,11 +114,6 @@ public class Faces
         return faces[index];
     }
 
-    public static Face[] getFaces()
-    {
-        return faces;
-    }
-
     // TODO: implement faceset
     public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen) throws IOException
     {
