@@ -23,6 +23,7 @@ import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
+import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -41,6 +42,8 @@ public class Faces
      * The maximum number of concurrently sent "askface" commands.
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
+
+    private static final FaceCache faceCache = new FaceCache(new File("cache"));
 
     private static Face[] faces = new Face[6000];
 
@@ -145,7 +148,8 @@ public class Faces
                 final Face f = faces[pixnum];
                 f.setImageIcon(getScaledImageIcon(img));
                 f.setOriginalImageIcon(img);
-                f.storeInCache("cache/");
+                faceCache.save(f.getName()+".x1.png", f.getOriginalImageIcon());
+                faceCache.save(f.getName()+".x2.png", f.getImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
@@ -183,9 +187,9 @@ public class Faces
     // TODO: implement faceset
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
-        final ImageIcon im = new ImageIcon("cache/"+pixname+".x2.png");
-        final ImageIcon oim = new ImageIcon("cache/"+pixname+".x1.png");
-        if (im.getIconWidth() <= 0 || im.getIconHeight() <= 0 || oim.getIconWidth() <= 0 || oim.getIconHeight() <= 0)
+        final ImageIcon im = faceCache.load(pixname+".x2.png");
+        final ImageIcon oim = faceCache.load(pixname+".x1.png");
+        if (im == null || oim == null)
         {
             askface(pixnum);
             final Face f = new Face(pixnum, pixname, null);

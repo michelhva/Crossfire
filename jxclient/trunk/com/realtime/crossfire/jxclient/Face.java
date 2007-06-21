@@ -19,10 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.File;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 /**
  *
@@ -111,28 +108,6 @@ public class Face
     public String getName()
     {
         return name;
-    }
-
-    public void storeInCache(final String basedir) throws IllegalArgumentException, IOException
-    {
-        saveImageIcon(imageIcon, new File("cache/"+name+".x2.png"));
-        saveImageIcon(originalImageIcon, new File("cache/"+name+".x1.png"));
-    }
-
-    /**
-     * Save an image to a file.
-     *
-     * @param imageIcon the image to save
-     *
-     * @param outputFile the file to save to
-     *
-     * @throws IOException if the image cannot be saved
-     */
-    public static void saveImageIcon(final ImageIcon imageIcon, final File outputFile) throws IOException
-    {
-        final BufferedImage bufferedImage = new BufferedImage(imageIcon.getIconWidth(), imageIcon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
-        imageIcon.paintIcon(null, bufferedImage.getGraphics(), 0, 0);
-        ImageIO.write(bufferedImage, "png", outputFile);
     }
 
     public String toString()
