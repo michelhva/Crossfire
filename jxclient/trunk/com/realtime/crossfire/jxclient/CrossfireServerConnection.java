@@ -212,7 +212,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        CfMap.addCrossfireMap1Listeners(listener);
+        CfMapUpdater.addCrossfireMap1Listeners(listener);
     }
 
     /**
@@ -223,7 +223,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMap1Listener(CrossfireMap1Listener listener)
     {
-        CfMap.removeCrossfireMap1Listeners(listener);
+        CfMapUpdater.removeCrossfireMap1Listeners(listener);
     }
 
     /**
@@ -234,7 +234,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMap.addCrossfireNewmapListeners(listener);
+        CfMapUpdater.addCrossfireNewmapListeners(listener);
     }
 
     /**
@@ -245,7 +245,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMap.removeCrossfireNewmapListeners(listener);
+        CfMapUpdater.removeCrossfireNewmapListeners(listener);
     }
 
     /**
@@ -300,7 +300,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void addCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMap.addCrossfireMapscrollListeners(listener);
+        CfMapUpdater.addCrossfireMapscrollListeners(listener);
     }
 
     /**
@@ -311,7 +311,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMap.removeCrossfireMapscrollListeners(listener);
+        CfMapUpdater.removeCrossfireMapscrollListeners(listener);
     }
 
     /**
@@ -843,7 +843,7 @@ public class CrossfireServerConnection extends ServerConnection
                             final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (pos+len != packet.length) break;
                             final int pixmap = Faces.setImage(face, 0, packet, pos, len);
-                            CfMap.updateFace(pixmap);
+                            CfMapUpdater.updateFace(pixmap);
                         }
                         return;
 
@@ -855,7 +855,7 @@ public class CrossfireServerConnection extends ServerConnection
                             final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (pos+len != packet.length) break;
                             final int pixmap = Faces.setImage(face, set, packet, pos, len);
-                            CfMap.updateFace(pixmap);
+                            CfMapUpdater.updateFace(pixmap);
                         }
                         return;
                     }
@@ -925,9 +925,18 @@ public class CrossfireServerConnection extends ServerConnection
                     switch (packet[pos++])
                     {
                     case '1':
-                        if (packet[pos++] != ' ') break;
-                        CfMap.map1(new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos)));
-                        return;
+                        switch (packet[pos++])
+                        {
+                        case ' ':
+                            cmd_map1(packet, pos);
+                            return;
+
+                        case 'a':
+                            if (packet[pos++] != ' ') break;
+                            cmd_map1(packet, pos);
+                            return;
+                        }
+                        break;
 
                     case '_':
                         if (packet[pos++] != 's') break;
@@ -971,7 +980,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 dy = -dy;
                             }
 
-                            CfMap.scroll(dx, dy);
+                            CfMapUpdater.processScroll(dx, dy);
                         }
                         return;
 
@@ -999,7 +1008,7 @@ public class CrossfireServerConnection extends ServerConnection
                 if (packet[pos++] != 'a') break;
                 if (packet[pos++] != 'p') break;
                 if (pos != packet.length) break;
-                CfMap.newMap(this);
+                CfMapUpdater.processNewmap();
                 return;
 
             case 'p':
@@ -1366,6 +1375,32 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
+     * Process the payload data for a map1 or map1a command.
+     *
+     * @param packet The packet contents.
+     *
+     * @param pos The start of the payload data to process.
+     */
+    private void cmd_map1(final byte[] packet, int pos)
+    {
+        CfMapUpdater.processMap1Begin();
+        while (pos < packet.length)
+        {
+            final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+            final int x = (coord>>10)&0x3F;
+            final int y = (coord>>4)&0x3F;
+            final int mask = coord&0xF;
+
+            final int darkness = (mask&8) != 0 ? packet[pos++]&0xFF : -1;
+            final int faceA = (mask&4) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
+            final int faceB = (mask&2) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
+            final int faceC = (mask&1) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
+            CfMapUpdater.processMap1Element(x, y, darkness, faceA, faceB, faceC);
+        }
+        CfMapUpdater.processMap1End();
+    }
+
+    /**
      * Handles the version server to client command.
      * @param csval The client version.
      * @param scval The server version.
@@ -1379,7 +1414,7 @@ public class CrossfireServerConnection extends ServerConnection
         sendSetup(
             "sound 0",
             "exp64 1",
-            "map1cmd 1",
+            "map1acmd 1",
             "darkness 1",
             "newmapcmd 1",
             "facecache 1",
@@ -1506,11 +1541,11 @@ public class CrossfireServerConnection extends ServerConnection
                     System.exit(1);
                 }
             }
-            else if (option.equals("map1cmd"))
+            else if (option.equals("map1acmd"))
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the map1cmd=1 setup option.");
+                    System.err.println("Error: the server is too old for this client since it does not support the map1acmd=1 setup option.");
                     System.exit(1);
                 }
             }

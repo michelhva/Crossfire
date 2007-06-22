@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,8 +94,12 @@ public class Gui
         {
             if (element.isVisible())
             {
-                g.drawImage(element.getBuffer(), element.getX(), element.getY(), jxcWindow);
-                element.resetChanged();
+                final BufferedImage bufferedImage = element.getBuffer();
+                synchronized (bufferedImage)
+                {
+                    g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
+                    element.resetChanged();
+                }
             }
         }
 

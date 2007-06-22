@@ -293,7 +293,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
             case DLG_NONE:
                 jxcWindowRenderer.setCurrentDialog(null);
-                CfMap.invalidate();
                 break;
 
             case DLG_BOOK:
@@ -404,6 +403,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void init(final int w, final int h, final int b, final int f, final String skinclass)
     {
+        CfMapUpdater.processNewmap();
         addKeyListener(this);
         addMouseListener(this);
         addMouseMotionListener(this);
