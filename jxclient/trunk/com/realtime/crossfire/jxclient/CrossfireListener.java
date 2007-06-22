@@ -32,7 +32,7 @@ public interface CrossfireListener
     public void commandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
     public void commandFaceReceived(CrossfireCommandFaceEvent evt);
     public void commandItemReceived(CrossfireCommandItemEvent evt);
-    public void commandMap1Received(CrossfireCommandMap1Event evt);
+    public void commandMapReceived(CrossfireCommandMapEvent evt);
     public void commandNewmapReceived(CrossfireCommandNewmapEvent evt);
     public void commandPlayerReceived(CrossfireCommandPlayerEvent evt);
     public void commandStatsReceived(CrossfireCommandStatsEvent evt);

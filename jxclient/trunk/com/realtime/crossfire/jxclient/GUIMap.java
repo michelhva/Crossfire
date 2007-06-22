@@ -38,7 +38,7 @@ import javax.swing.ImageIcon;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMap extends GUIElement implements CrossfireMap1Listener, CrossfireNewmapListener, CrossfireMapscrollListener
+public class GUIMap extends GUIElement implements CrossfireMapListener, CrossfireNewmapListener, CrossfireMapscrollListener
 {
     /**
      * The color to use for overlaying fog-of-war tiles.
@@ -298,7 +298,7 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         setChanged();
     }
 
-    public void commandMap1Received(final CrossfireCommandMap1Event evt)
+    public void commandMapReceived(final CrossfireCommandMapEvent evt)
     {
         synchronized(mybuffer)
         {
