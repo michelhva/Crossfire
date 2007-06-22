@@ -40,20 +40,40 @@ import javax.swing.ImageIcon;
  */
 public class GUIMap extends GUIElement implements CrossfireMap1Listener, CrossfireNewmapListener, CrossfireMapscrollListener
 {
+    /**
+     * The color to use for overlaying fog-of-war tiles.
+     */
+    private static final Color fogOfWarColor = new Color(0, 0, 0.5F, 0.5F);
+
+    /**
+     * The minimum darkness alpha value; it is used for completely black tiles.
+     * The maximum is 0.0F for full bright tiles.
+     */
+    private static final float MAX_DARKNESS_ALPHA = 0.7F;
+
     private final BufferedImage myblacktile;
 
     private final boolean use_big_images;
 
     private final int mysquaresize;
 
+    /**
+     * Cache to lookup darkness overlay colors. Maps darkness value to overlay
+     * color. Not yet allocated entries are set to <code>null</code>.
+     */
+    private Color[] darknessColors = new Color[256];
+
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = true;
+
         myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
+        mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
+        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
+        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
 
         createBuffer();
-        mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
     }
 
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big) throws IOException
@@ -71,38 +91,44 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
             myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black.png"));
             mysquaresize = 32;
         }
+        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
+        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
 
         createBuffer();
     }
 
-    public void render()
+    private void render()
     {
-        synchronized(mybuffer)
+        final Graphics2D g = mybuffer.createGraphics();
+        try
         {
-            final Graphics2D g = mybuffer.createGraphics();
-            try
+            for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
             {
-                for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
                 {
-                    for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
-                    {
-                        redrawSquare(g, x, y);
-                    }
+                    redrawSquare(g, x, y);
                 }
             }
-            finally
-            {
-                g.dispose();
-            }
+        }
+        finally
+        {
+            g.dispose();
         }
     }
 
-    protected void cleanSquare(final Graphics g, final CfMapSquare square)
+    /**
+     * Redraw one square completely black.
+     *
+     * @param g The graphics to draw into.
+     *
+     * @param x The x-coordinate of the square to clear.
+     *
+     * @param y The y-coordinate of the square to clear.
+     */
+    protected void cleanSquare(final Graphics g, final int x, final int y)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(((square.getXPos()-10)*mysquaresize-mysquaresize/2),
-                   ((square.getYPos()-10)*mysquaresize-mysquaresize/2),
-                   mysquaresize, mysquaresize);
+        g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
     }
 
     /**
@@ -117,73 +143,70 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
      */
     private void redrawSquare(final Graphics g, final int x, final int y)
     {
-        final CfMapSquare square = CfMap.getMap()[x+10][y+10];
-        if (!square.isDirty())
+        if (!CfMapUpdater.getMap().resetDirty(x, y))
         {
             return;
         }
 
+        cleanSquare(g, x, y);
         for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
         {
-            redrawSquare(g, square, layer);
+            redrawSquare(g, x, y, layer);
+        }
+        if (CfMapUpdater.getMap().isFogOfWar(x, y))
+        {
+            g.setColor(fogOfWarColor);
+            g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
+        }
+        final int darkness = CfMapUpdater.getMap().getDarkness(x, y);
+        if (darkness < 255)
+        {
+            g.setColor(getDarknessColor(darkness));
+            g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
         }
     }
 
-    protected void redrawSquare(final Graphics g, final CfMapSquare square, final int nz)
+    /**
+     * Redraw one layer of a square.
+     *
+     * @param g The graphics to draw into.
+     *
+     * @param square The square to redraw.
+     *
+     * @param layer The layer to redraw.
+     */
+    private void redrawSquare(final Graphics g, final int x, final int y, final int layer)
     {
-        if (square == null) //Sometimes happen. Not sure of the origin, but I think
-                            //it is related to a scrolling faster than a non-cached
-                            //image happening. Seems harmless to simply ignore the
-                            //null square here.
+        final int px = x*mysquaresize;
+        final int py = y*mysquaresize;
+
+        final CfMapSquare headMapSquare = CfMapUpdater.getMap().getHeadMapSquare(x, y, layer);
+        if (headMapSquare != null)
         {
-            System.err.println("Warning ! Null square detected");
-            return;
+            final Face headFace = headMapSquare.getFace(layer);
+            assert headFace != null; // getHeadMapSquare() would have been cleared in this case
+            final ImageIcon img = headFace.getImageIcon(use_big_images);
+            final int dx = headMapSquare.getX()-CfMapUpdater.getMap().getMapSquare(x, y).getX();
+            final int dy = headMapSquare.getY()-CfMapUpdater.getMap().getMapSquare(x, y).getY();
+            assert dx > 0 || dy > 0;
+            final int sx = img.getIconWidth()-mysquaresize*(dx+1);
+            final int sy = img.getIconHeight()-mysquaresize*(dy+1);
+            g.drawImage(img.getImage(),
+                px, py, px+mysquaresize, py+mysquaresize,
+                sx, sy, sx+mysquaresize, sy+mysquaresize,
+                null);
         }
 
-        if (nz == 0)
+        final Face f = CfMapUpdater.getMap().getFace(x, y, layer);
+        if (f != null)
         {
-            cleanSquare(g, square);
-        }
-
-        if (square.getHead(nz) == square)
-        {
-            final Face f = square.getFace(nz);
-            if (f != null)
-            {
-                final ImageIcon img;
-                if (use_big_images)
-                {
-                    img = f.getImageIcon();
-                }
-                else
-                {
-                    img = f.getOriginalImageIcon();
-                }
-
-                final int px = (square.getXPos()-10)*mysquaresize-mysquaresize/2;
-                final int py = (square.getYPos()-10)*mysquaresize-mysquaresize/2;
-                final int psx = px-(img.getIconWidth()-mysquaresize);
-                final int psy = py-(img.getIconHeight()-mysquaresize);
-                g.drawImage(img.getImage(), psx, psy, img.getIconWidth(), img.getIconHeight(), null);
-            }
-        }
-
-        if (nz == CrossfireServerConnection.NUM_LAYERS-1)
-        {
-            /*if (square.getDarkness() >= 0)
-            {
-                g.setColor(new Color(0, 0, 0, square.getDarkness()));
-                g.fillRect(((square.getXPos()-10)*CrossfireServerConnection.SQUARE_SIZE),
-                             ((square.getYPos()-10)*CrossfireServerConnection.SQUARE_SIZE),
-                             CrossfireServerConnection.SQUARE_SIZE,
-                             CrossfireServerConnection.SQUARE_SIZE);
-                System.out.println("Darkness:"+square+" D:" +square.getDarkness());
-            }
-            else
-            {
-                System.out.println("Darkness:"+square+" I:" +square.getDarkness());
-            }*/
-            square.clean();
+            final ImageIcon img = f.getImageIcon(use_big_images);
+            final int sx = img.getIconWidth();
+            final int sy = img.getIconHeight();
+            g.drawImage(img.getImage(),
+                px, py, px+mysquaresize, py+mysquaresize,
+                sx-mysquaresize, sy-mysquaresize, sx, sy,
+                null);
         }
     }
 
@@ -191,8 +214,8 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
     {
         synchronized(mybuffer)
         {
-            final int dx = -evt.getDX()*mysquaresize;
-            final int dy = -evt.getDY()*mysquaresize;
+            final int dx = -evt.getDX();
+            final int dy = -evt.getDY();
             if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
             {
                 render();
@@ -204,30 +227,30 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
             if (dx < 0)
             {
                 x = -dx;
-                w = getWidth()+dx;
+                w = CrossfireServerConnection.MAP_WIDTH+dx;
             }
             else
             {
                 x = 0;
-                w = getWidth()-dx;
+                w = CrossfireServerConnection.MAP_WIDTH-dx;
             }
             final int y;
             final int h;
             if (dy < 0)
             {
                 y = -dy;
-                h = getHeight()+dy;
+                h = CrossfireServerConnection.MAP_HEIGHT+dy;
             }
             else
             {
                 y = 0;
-                h = getHeight()-dy;
+                h = CrossfireServerConnection.MAP_HEIGHT-dy;
             }
 
             final Graphics2D g = mybuffer.createGraphics();
             try
             {
-                g.copyArea(x, y, w, h, dx, dy);
+                g.copyArea(x*mysquaresize, y*mysquaresize, w*mysquaresize, h*mysquaresize, dx*mysquaresize, dy*mysquaresize);
 
                 for (int yy = 0; yy < y; yy++)
                 {
@@ -297,8 +320,8 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
-            final int dx = (e.getX()+getX())/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
-            final int dy = (e.getY()+getY())/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
+            final int dx = e.getX()/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
+            final int dy = e.getY()/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
             try
             {
                 final JXCWindow jxcw = (JXCWindow)e.getSource();
@@ -329,5 +352,23 @@ public class GUIMap extends GUIElement implements CrossfireMap1Listener, Crossfi
         g.fillRect(0, 0, w, h);
         g.dispose();
         setChanged();
+    }
+
+    /**
+     * Return an overlay color for a darkness value.
+     *
+     * @param darkness The darkness value between 0 and 255.
+     *
+     * @return The overlay color.
+     */
+    private Color getDarknessColor(final int darkness)
+    {
+        if (darknessColors[darkness] == null)
+        {
+            final float alpha = MAX_DARKNESS_ALPHA*(255-darkness)/255F;
+            darknessColors[darkness] = new Color(0, 0, 0, alpha);
+        }
+
+        return darknessColors[darkness];
     }
 }

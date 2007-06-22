@@ -84,6 +84,20 @@ public class Face
     }
 
     /**
+     * Return the image to be used in map view. If <code>useBigImages</code> is
+     * set, return {@link #getImageIcon()}, else return {@link
+     * getOriginalImageIcon()}.
+     *
+     * @param useBigImages If set, return big images, else return small images.
+     *
+     * @return The image for map display.
+     */
+    public ImageIcon getImageIcon(final boolean useBigImages)
+    {
+        return useBigImages ? getImageIcon() : getOriginalImageIcon();
+    }
+
+    /**
      * Return the image scaled to be used in map view.
      *
      * @return the scaled image; returns {@link Faces#unknownImageIcon} if the

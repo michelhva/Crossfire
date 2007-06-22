@@ -325,7 +325,7 @@ public class JXCSkinPrelude implements JXCSkin
             mygui.setTooltip(tooltipLabel);
 
             //Map Group (0, 0)
-            GUIMap gui_map = new GUIMap(p, "playfield", 0, 0, 1024, 768);
+            GUIMap gui_map = new GUIMap(p, "playfield", -32, -32, 1088, 832);
 
             //LGauges Group (80, 574)
 

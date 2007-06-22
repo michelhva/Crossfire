@@ -20,213 +20,285 @@
 package com.realtime.crossfire.jxclient;
 
 /**
+ * Represents a square in a {@link CfMap}. A square comprises of {@link
+ * #LAYERS} faces as well as a darkness value.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * <p>This class assumes that the "head" part of a face is the part the server
+ * did sent. This is the bottom-right part for multi-square objects. Not that
+ * this definition is inconsistent to what the server assumes as the head part
+ * of an object.
+ *
+ * @author Andreas Kirschbaum
  */
 public class CfMapSquare
 {
-    private int x = 0;
+    /**
+     * Number of supported layers.
+     */
+    public static final int LAYERS = 3;
 
-    private int y = 0;
+    /**
+     * The {@link CfMap} instance this square is part of.
+     */
+    private final CfMap map;
 
-    private final CfMapSquare[] myhead = new CfMapSquare[CrossfireServerConnection.NUM_LAYERS];
+    /**
+     * The absolute x-coordinate of this square in {@link #map}.
+     */
+    private final int x;
 
-    private final Face[] myface = new Face[CrossfireServerConnection.NUM_LAYERS];
+    /**
+     * The absolute y-coordinate of this square in {@link #map}.
+     */
+    private final int y;
 
-    private boolean isdirty = false;
+    /**
+     * Flag used to defer clearing the values: when a <code>CfMapSquare</code>
+     * is cleared, the old values remain valid until at least one field is
+     * re-set.
+     */
+    private boolean fogOfWar = false;
 
-    private int mydarkness = 0;
+    /**
+     * Set to <code>true</code> iff at least one square value has been
+     * modified.
+     */
+    private boolean isModified = false;
 
-    private int dirtycounter = 0;
+    /**
+     * The darkness value of the square in the range [0..255]. 0=dark, 255=full
+     * bright
+     */
+    private int darkness = 255;
 
-    public CfMapSquare(final int nx, final int ny)
+    /**
+     * The faces (of head-parts) of all layers as sent by the server.
+     */
+    private final Face[] faces = { null, null, null, };
+
+    /**
+     * If this square contains a non-head part of a multi-square object this
+     * points to the head square.
+     */
+    private final CfMapSquare[] heads = { null, null, null, };
+
+    /**
+     * Set if this square has been changes since last redraw.
+     */
+    private boolean dirty = true;
+
+    /**
+     * Create a new (empty) square.
+     *
+     * @param map The <code>CfMap</code> instance this square belongs to.
+     *
+     * @param x0 The absolute map x-coordinate of the top left corner of this
+     * patch.
+     *
+     * @param y0 The absolute map y-coordinate of the top left corner of this
+     * patch.
+     */
+    public CfMapSquare(final CfMap map, final int x, final int y)
     {
-        x = nx;
-        y = ny;
-        for (int i = 0; i < CrossfireServerConnection.NUM_LAYERS; i++)
-        {
-            myface[i] = null;
-            myhead[i] = this;
-        }
+        if (faces.length != LAYERS) throw new InternalError();
+        if (heads.length != LAYERS) throw new InternalError();
+
+        this.map = map;
+        this.x = x;
+        this.y = y;
     }
 
-    public int getXPos()
+    /**
+     * Return the absolute map x-coordinate of this square.
+     *
+     * @return The x-coordinate.
+     */
+    public int getX()
     {
         return x;
     }
 
-    public int getYPos()
+    /**
+     * Return the absolute map y-coordinate of this square.
+     *
+     * @return The y-coordinate.
+     */
+    public int getY()
     {
         return y;
     }
 
-    public void setPos(final int nx, final int ny)
+    /**
+     * Determine if this square has been modified.
+     *
+     * @return <code>true</code> iff at least one square value has been
+     * modified.
+     */
+    public boolean isModified()
     {
-        x = nx;
-        y = ny;
+        return isModified;
     }
 
-    public Face getFace(final int layer)
-    {
-        return myface[layer];
-    }
-
-    public void setFace(final Face f, final int layer)
-    {
-        final CfMapSquare[][] map = CfMap.getMap();
-
-        if (myface[layer] != null)
-        {
-            final int sw = myface[layer].getImageIcon().getIconWidth()/CrossfireServerConnection.SQUARE_SIZE;
-            final int sh = myface[layer].getImageIcon().getIconHeight()/CrossfireServerConnection.SQUARE_SIZE;
-
-            int psx = x-(sw-1);
-            int psy = y-(sh-1);
-
-            if (psx < 0)
-                psx = 0;
-            if (psy < 0)
-                psy = 0;
-
-            for (int ly = psy; ly <= y; ly++)
-            {
-                for (int lx = psx; lx <= x; lx++)
-                {
-                    map[lx][ly].setFaceHead(null, layer, map[lx][ly]);
-                }
-            }
-        }
-        myface[layer] = f;
-        if (myface[layer]!=null)
-        {
-            final int sw = myface[layer].getImageIcon().getIconWidth()/CrossfireServerConnection.SQUARE_SIZE;
-            final int sh = myface[layer].getImageIcon().getIconHeight()/CrossfireServerConnection.SQUARE_SIZE;
-
-            int psx = x-(sw-1);
-            int psy = y-(sh-1);
-
-            if (psx < 0)
-                psx = 0;
-            if (psy < 0)
-                psy = 0;
-
-            for (int ly = psy; ly <= y; ly++)
-            {
-                for (int lx = psx; lx <= x; lx++)
-                {
-                    map[lx][ly].setFaceHead(myface[layer], layer, this);
-                }
-            }
-        }
-    }
-    protected void setFaceHead(final Face f, final int layer, final CfMapSquare m)
-    {
-        //System.out.println("- setFaceHead: ("+x+";"+y+";"+layer+"):"+m);
-        myface[layer] = f;
-        setHead(m, layer);
-        dirty();
-    }
-
+    /**
+     * Mark this square as dirty, i.e., needing redraw.
+     */
     public void dirty()
     {
-        isdirty = true;
-        dirtycounter = 2;
-        for(int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
-        {
-            if ((myhead[layer] == this) && (myface[layer] != null))
-            {
-                final CfMapSquare[][] map = CfMap.getMap();
-                final int sw = myface[layer].getImageIcon().getIconWidth()/CrossfireServerConnection.SQUARE_SIZE;
-                final int sh = myface[layer].getImageIcon().getIconHeight()/CrossfireServerConnection.SQUARE_SIZE;
-
-                int psx = x-(sw-1);
-                int psy = y-(sh-1);
-
-                if (psx < 0)
-                    psx = 0;
-                if (psy < 0)
-                    psy = 0;
-
-                for (int ly = psy; ly <= y; ly++)
-                {
-                    for (int lx = psx; lx <= x; lx++)
-                    {
-                        if (!map[lx][ly].isDirty())
-                            map[lx][ly].dirty();
-                    }
-                }
-            }
-            else if ((myhead[layer] != null) && (!myhead[layer].isDirty()))
-            {
-                myhead[layer].dirty();
-            }
-        }
-
+        dirty = true;
     }
 
-    public boolean isDirty()
+    /**
+     * Return whether this square is dirty and clear the dirty flag.
+     *
+     * @return Whether the square is dirty.
+     */
+    public boolean resetDirty()
     {
-        return isdirty;
+        final boolean result = dirty;
+        dirty = false;
+        return result;
     }
 
-    public void clean()
-    {
-        dirtycounter--;
-        if (dirtycounter <= 0)
-            isdirty = false;
-    }
-
-    public CfMapSquare getHead(final int layer)
-    {
-        return myhead[layer];
-    }
-
-    public void setHead(final CfMapSquare m, final int layer)
-    {
-        myhead[layer] = m;
-    }
-
+    /**
+     * Mark this square as 'fog-og-war'. The values will be still returned
+     * until a new value will be set.
+     */
     public void clear()
     {
-        for (int i = 0; i < CrossfireServerConnection.NUM_LAYERS; i++)
+        // need to check individual values because the server sometimes sends a
+        // "clear" command for already cleared squares; without this check the
+        // black square would be displayed as fog-of-war
+        if (!fogOfWar && (darkness != 255 || faces[0] != null || faces[1] != null || faces[2] != null))
         {
-            setFace(null, i);
+            fogOfWar = true;
+            dirty();
         }
     }
 
-    public void setDarkness(final int d)
+    /**
+     * Set the darkness value of this square.
+     *
+     * @param darkness The new darkness value between <code>0</code> and
+     * <code>255</code>. 0=dark, 255=full bright.
+     */
+    public void setDarkness(final int darkness)
     {
-        mydarkness = d;
+        if (darkness < 0 || darkness > 255) throw new IllegalArgumentException();
+
+        if (this.darkness != darkness)
+        {
+            this.darkness = darkness;
+            dirty();
+        }
+        isModified = true;
     }
 
+    /**
+     * Determine the darkness value of this square.
+     *
+     * @return The darkness value of the square. 0=dark, 255=full bright.
+     */
     public int getDarkness()
     {
-        return mydarkness;
+        return darkness;
     }
 
-    public String toString()
+    /**
+     * Set the face of a layer.
+     *
+     * @param layer The layer for the new face between <code>0</code> and
+     * <code>LAYERS-1</code>.
+     *
+     * @param face The face to set.
+     */
+    public void setFace(final int layer, final Face face)
     {
-        String str = "("+x+";"+y+"):";
-        for (int i = 0; i < CrossfireServerConnection.NUM_LAYERS; i++)
+        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
+
+        if (faces[layer] != face)
         {
-            if (myface[i] != null)
-                str += myface[i].getName()+", ";
+            faces[layer] = face;
+            dirty();
         }
-        return str;
+        isModified = true;
     }
 
-    public void copy(final CfMapSquare square)
+    /**
+     * Return the face of a layer.
+     *
+     * @param layer The layer to return the face.
+     *
+     * @return The face value.
+     */
+    public Face getFace(final int layer)
     {
-        System.out.println(this+"->"+square);
-        for (int i = 0; i < CrossfireServerConnection.NUM_LAYERS; i++)
+        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
+
+        return faces[layer];
+    }
+
+    /**
+     * Set the map square containing the head face for a layer.
+     *
+     * @param layer The layer for the new head face between <code>0</code> and
+     * <code>LAYERS-1</code>.
+     *
+     * @param mapSquare The map square containing the head face; may be
+     * <code>null</code>.
+     */
+    public void setHeadMapSquare(final int layer, final CfMapSquare mapSquare)
+    {
+        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
+        if (mapSquare == this) throw new IllegalArgumentException();
+
+        if (heads[layer] != mapSquare)
         {
-            if (getHead(i) == this)
-            {
-                System.out.println(" -> setFace("+i+")");
-                square.setFace(getFace(i), i);
-            }
+            heads[layer] = mapSquare;
+            dirty();
         }
+    }
+
+    /**
+     * Return the map square of the head of a multi-square object.
+     *
+     * @param layer The layer to return the head for.
+     *
+     * @return The head map square, or <code>null</code> if this square does
+     * not contain a multi-tail.
+     */
+    public CfMapSquare getHeadMapSquare(final int layer)
+    {
+        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
+
+        // suppress parts of fog-of-war objects if this square is not
+        // fog-of-war
+        if (heads[layer] != null && fogOfWar && heads[layer].isFogOfWar())
+        {
+            return null;
+        }
+
+        return heads[layer];
+    }
+
+    /**
+     * Determine if the square is not up-to-date.
+     *
+     * @return Whether this square contains fog-of-war data.
+     */
+    public boolean isFogOfWar()
+    {
+        return fogOfWar;
+    }
+
+    /**
+     * Return and reset the "fog-of-war" flag.
+     *
+     * @return Whether this square's fog-of-war state has been reset.
+     */
+    public boolean resetFogOfWar()
+    {
+        final boolean result = fogOfWar;
+        fogOfWar = false;
+        return result;
     }
 }
