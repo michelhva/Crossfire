@@ -38,7 +38,7 @@ public class CfMapUpdater
     /**
      * The listeners to notify about changed map squares.
      */
-    private static final List<CrossfireMap1Listener> mylistenersMap1 = new ArrayList<CrossfireMap1Listener>();
+    private static final List<CrossfireMapListener> mylistenersMap = new ArrayList<CrossfireMapListener>();
 
     /**
      * The listeners to notify about cleared maps.
@@ -52,7 +52,7 @@ public class CfMapUpdater
 
     /**
      * Collects the changed map squares between calls to {@link
-     * #processMap1Begin()} and {@link #processMap1End()}.
+     * #processMapBegin()} and {@link #processMapEnd()}.
      */
     private static final List<CfMapSquare> squares = new LinkedList<CfMapSquare>();
 
@@ -68,9 +68,9 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireMap1Listeners(final CrossfireMap1Listener listener)
+    public static void addCrossfireMapListeners(final CrossfireMapListener listener)
     {
-        mylistenersMap1.add(listener);
+        mylistenersMap.add(listener);
     }
 
     /**
@@ -78,9 +78,9 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireMap1Listeners(final CrossfireMap1Listener listener)
+    public static void removeCrossfireMapListeners(final CrossfireMapListener listener)
     {
-        mylistenersMap1.remove(listener);
+        mylistenersMap.remove(listener);
     }
 
     /**
@@ -126,15 +126,15 @@ public class CfMapUpdater
     /**
      * Start processing of a set of map square changes.
      */
-    public static void processMap1Begin()
+    public static void processMapBegin()
     {
         squares.clear();
     }
 
     /**
      * Update on map square. To call this function, first call {@link
-     * #processMap1Begin()}. Then call this function as often as necessary.
-     * Afterwards call {@link #processMap1End()} to finish processing.
+     * #processMapBegin()}. Then call this function as often as necessary.
+     * Afterwards call {@link #processMapEnd()} to finish processing.
      */
     public static void processMap1Element(final int x, final int y, final int darkness, final int faceA, final int faceB, final int faceC)
     {
@@ -163,12 +163,12 @@ public class CfMapUpdater
      * Finish processing of a set of map square changes. Notifies listeners
      * about changes.
      */
-    public static void processMap1End()
+    public static void processMapEnd()
     {
-        final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), squares);
-        for (final CrossfireMap1Listener listener : mylistenersMap1)
+        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), squares);
+        for (final CrossfireMapListener listener : mylistenersMap)
         {
-            listener.commandMap1Received(evt);
+            listener.commandMapReceived(evt);
         }
         squares.clear();
     }
@@ -341,10 +341,10 @@ public class CfMapUpdater
                 }
             }
         }
-        final CrossfireCommandMap1Event evt = new CrossfireCommandMap1Event(new Object(), l);
-        for (final CrossfireMap1Listener listener : mylistenersMap1)
+        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), l);
+        for (final CrossfireMapListener listener : mylistenersMap)
         {
-            listener.commandMap1Received(evt);
+            listener.commandMapReceived(evt);
         }
     }
 

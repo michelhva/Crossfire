@@ -1236,7 +1236,7 @@ public class JXCSkinPrelude implements JXCSkin
                     "default.theme/pictures/inv_scrolldown_inactive.png",
                     command_log_upper_down);
 
-            myserver.addCrossfireMap1Listener(gui_map);
+            myserver.addCrossfireMapListener(gui_map);
             myserver.addCrossfireNewmapListener(gui_map);
             myserver.addCrossfireNewmapListener(gui_magicmap);
             myserver.addCrossfireMapscrollListener(gui_map);

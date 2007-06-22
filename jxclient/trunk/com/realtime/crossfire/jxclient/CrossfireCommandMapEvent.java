@@ -28,14 +28,14 @@ import java.util.List;
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandMap1Event extends EventObject
+public class CrossfireCommandMapEvent extends EventObject
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
     private List<CfMapSquare> mylist = null;
 
-    public CrossfireCommandMap1Event(Object src, List<CfMapSquare> l)
+    public CrossfireCommandMapEvent(Object src, List<CfMapSquare> l)
     {
         super(src);
         mylist = l;

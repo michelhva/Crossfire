@@ -210,9 +210,9 @@ public class CrossfireServerConnection extends ServerConnection
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void addCrossfireMap1Listener(CrossfireMap1Listener listener)
+    public synchronized void addCrossfireMapListener(CrossfireMapListener listener)
     {
-        CfMapUpdater.addCrossfireMap1Listeners(listener);
+        CfMapUpdater.addCrossfireMapListeners(listener);
     }
 
     /**
@@ -221,9 +221,9 @@ public class CrossfireServerConnection extends ServerConnection
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void removeCrossfireMap1Listener(CrossfireMap1Listener listener)
+    public synchronized void removeCrossfireMapListener(CrossfireMapListener listener)
     {
-        CfMapUpdater.removeCrossfireMap1Listeners(listener);
+        CfMapUpdater.removeCrossfireMapListeners(listener);
     }
 
     /**
@@ -1383,7 +1383,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private void cmd_map1(final byte[] packet, int pos)
     {
-        CfMapUpdater.processMap1Begin();
+        CfMapUpdater.processMapBegin();
         while (pos < packet.length)
         {
             final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1397,7 +1397,7 @@ public class CrossfireServerConnection extends ServerConnection
             final int faceC = (mask&1) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
             CfMapUpdater.processMap1Element(x, y, darkness, faceA, faceB, faceC);
         }
-        CfMapUpdater.processMap1End();
+        CfMapUpdater.processMapEnd();
     }
 
     /**
