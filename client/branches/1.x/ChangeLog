@@ -2,6 +2,15 @@
 Top of CVS tree:
 ------------------------------------------------------------------------------
 
+Trash obsolete junk.
+Remove 'map1cmd' variable which is always 1.
+Remove map1cmd, face, face1, item1 and some obsolete stuff.
+(changes merged from trunk)
+ common/client.c client.h commands.c image.c item.c mapdata.c mapdata.h misc.c
+ p_cmd.c proto.h
+ gnome/map.c
+Nicolas Weeger 2007-06-23
+
 gtk-v2/src/inventory.c: Add tooltips to the inventory tabs, to make it
 clearer what the different tabs do.
 --
