@@ -37,9 +37,7 @@ import java.util.List;
 public class Metaserver
 {
     private static String metaserver_name = "crossfire.real-time.com";
-    private static int    metaserver_port = 13326;
-    //private static Socket                  mysocket;
-    //private static DataInputStream         in;
+    private static int metaserver_port = 13326;
     private static List<MetaserverEntry> metalist = null;
     public static synchronized List<MetaserverEntry> query()
     {
@@ -47,16 +45,16 @@ public class Metaserver
         {
             return metalist;
         }
+
         metalist = new ArrayList<MetaserverEntry>();
         try
         {
             Socket mysocket = new Socket(metaserver_name, metaserver_port);
             DataInputStream in = new DataInputStream(mysocket.getInputStream());
-            BufferedReader bin
-                    = new BufferedReader(new InputStreamReader(in));
+            BufferedReader bin = new BufferedReader(new InputStreamReader(in));
 
             String entry = "127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0";
-            while(entry!=null)
+            while (entry != null)
             {
                 entry = bin.readLine();
                 if (entry != null)
@@ -75,8 +73,7 @@ public class Metaserver
         }
         catch (UnknownHostException e)
         {
-            MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost",
-                    "unknown", 0,0);
+            MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost", "unknown", 0,0);
             metalist.add(me);
         }
         catch (Exception e)
