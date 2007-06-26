@@ -117,10 +117,7 @@ public abstract class GUIElement implements MouseListener
     }
     public BufferedImage getBuffer()
     {
-        synchronized(mybuffer)
-        {
-            return mybuffer;
-        }
+        return mybuffer;
     }
     public int getX()
     {
