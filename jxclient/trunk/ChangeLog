@@ -1,5 +1,8 @@
 2007-06-22  Andreas Kirschbaum
 
+	* Implement map2 command. Remove obsolete commands map1, map1a,
+	and map_scroll.
+
 	* Fix map display issues. Implement fog-of-war and darkness
 	display.
 

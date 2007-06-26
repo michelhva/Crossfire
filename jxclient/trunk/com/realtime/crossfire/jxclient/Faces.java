@@ -45,7 +45,7 @@ public class Faces
 
     private static final FaceCache faceCache = new FaceCache(new File("cache"));
 
-    private static Face[] faces = new Face[6000];
+    private static Face[] faces = new Face[65536];
 
     /**
      * The image icon to display for unknown or invalid faces. It is never
