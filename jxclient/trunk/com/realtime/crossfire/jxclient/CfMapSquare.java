@@ -35,7 +35,7 @@ public class CfMapSquare
     /**
      * Number of supported layers.
      */
-    public static final int LAYERS = 3;
+    public static final int LAYERS = CrossfireServerConnection.NUM_LAYERS;
 
     /**
      * The {@link CfMap} instance this square is part of.
@@ -74,13 +74,13 @@ public class CfMapSquare
     /**
      * The faces (of head-parts) of all layers as sent by the server.
      */
-    private final Face[] faces = { null, null, null, };
+    private final Face[] faces = new Face[LAYERS];
 
     /**
      * If this square contains a non-head part of a multi-square object this
      * points to the head square.
      */
-    private final CfMapSquare[] heads = { null, null, null, };
+    private final CfMapSquare[] heads = new CfMapSquare[LAYERS];
 
     /**
      * Set if this square has been changes since last redraw.
@@ -100,9 +100,6 @@ public class CfMapSquare
      */
     public CfMapSquare(final CfMap map, final int x, final int y)
     {
-        if (faces.length != LAYERS) throw new InternalError();
-        if (heads.length != LAYERS) throw new InternalError();
-
         this.map = map;
         this.x = x;
         this.y = y;
@@ -297,8 +294,13 @@ public class CfMapSquare
      */
     public boolean resetFogOfWar()
     {
-        final boolean result = fogOfWar;
+        if (!fogOfWar)
+        {
+            return false;
+        }
+
         fogOfWar = false;
-        return result;
+        dirty();
+        return true;
     }
 }

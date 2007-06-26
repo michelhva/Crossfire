@@ -132,31 +132,56 @@ public class CfMapUpdater
     }
 
     /**
-     * Update on map square. To call this function, first call {@link
-     * #processMapBegin()}. Then call this function as often as necessary.
-     * Afterwards call {@link #processMapEnd()} to finish processing.
+     * Update a map square by clearing it.
+     *
+     * @param x The x-coordinate of the square.
+     *
+     * @param y The y-coordinate of the square.
      */
-    public static void processMap1Element(final int x, final int y, final int darkness, final int faceA, final int faceB, final int faceC)
+    public static void processMapClear(final int x, final int y)
     {
-        if(x >= CrossfireServerConnection.MAP_WIDTH || y >= CrossfireServerConnection.MAP_HEIGHT)
-        {
-            setMultiFace(x, y, 0, faceA);
-            setMultiFace(x, y, 1, faceB);
-            setMultiFace(x, y, 2, faceC);
-            return;
-        }
+        map.clearSquare(x, y);
+    }
 
-        if(darkness == -1 && faceA == -1 && faceB == -1 && faceC == -1)
+    /**
+     * Update a map square by changing a face.
+     *
+     * @param x The x-coordinate of the square.
+     *
+     * @param y The y-coordinate of the square.
+     *
+     * @param layer The layer to update.
+     *
+     * @param face The face to set. <code>0</code> clears the square.
+     */
+    public static void processMapFace(final int x, final int y, final int layer, final int face)
+    {
+        final Face f;
+        if (face == 0)
         {
-            map.clearSquare(x, y);
+            f = null;
         }
         else
         {
-            if(darkness != -1) map.setDarkness(x, y, darkness);
-            setFace(x, y, 0, faceA);
-            setFace(x, y, 1, faceB);
-            setFace(x, y, 2, faceC);
+            Faces.ensureFaceExists(face);
+            f = Faces.getFace(face);
         }
+
+        map.setFace(x, y, layer, f);
+    }
+
+    /**
+     * Update a map square by changing the darkness value.
+     *
+     * @param x The x-coordinate of the square.
+     *
+     * @param y The y-coordinate of the square.
+     *
+     * @param face The darkness value to set.
+     */
+    public static void processMapDarkness(final int x, final int y, final int darkness)
+    {
+        map.setDarkness(x, y, darkness);
     }
 
     /**
@@ -171,40 +196,6 @@ public class CfMapUpdater
             listener.commandMapReceived(evt);
         }
         squares.clear();
-    }
-
-    /**
-     * Update the face of one map square layer.
-     *
-     * @param x The x-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area.
-     *
-     * @param y The y-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area.
-     *
-     * @param layer The layer to update.
-     *
-     * @param face The new face to set. <code>-1</code> means "do not change face".
-     */
-    private static void setFace(final int x, final int y, final int layer, final int face)
-    {
-        if(face == -1)
-        {
-            return;
-        }
-
-        final Face f;
-        if (face == 0)
-        {
-            f = null;
-        }
-        else
-        {
-            Faces.ensureFaceExists(face);
-            f = Faces.getFace(face);
-        }
-
-        map.setFace(x, y, layer, f);
     }
 
     /**
@@ -354,6 +345,11 @@ public class CfMapUpdater
     public static void processNewmap()
     {
         map = new CfMap();
+
+        // force dirty flags to be set for the visible map region
+        map.clearSquare(0, 0);
+        map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, CrossfireServerConnection.MAP_HEIGHT-1);
+
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         for (final CrossfireNewmapListener listener : mylistenersNewmap)
         {

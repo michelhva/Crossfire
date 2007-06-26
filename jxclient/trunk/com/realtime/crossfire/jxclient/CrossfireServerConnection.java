@@ -41,7 +41,12 @@ public class CrossfireServerConnection extends ServerConnection
     /**
      * The total number of map layers to display.
      */
-    public static final int NUM_LAYERS = 3;
+    public static final int NUM_LAYERS = 10;
+
+    /**
+     * Offset for coordinate values in map2 command.
+     */
+    public static final int MAP2_COORD_OFFSET = 15;
 
     /**
      * The pixel size of the gaming squares. Notice that they are supposed to
@@ -924,64 +929,9 @@ public class CrossfireServerConnection extends ServerConnection
                 case 'p':
                     switch (packet[pos++])
                     {
-                    case '1':
-                        switch (packet[pos++])
-                        {
-                        case ' ':
-                            cmd_map1(packet, pos);
-                            return;
-
-                        case 'a':
-                            if (packet[pos++] != ' ') break;
-                            cmd_map1(packet, pos);
-                            return;
-                        }
-                        break;
-
-                    case '_':
-                        if (packet[pos++] != 's') break;
-                        if (packet[pos++] != 'c') break;
-                        if (packet[pos++] != 'r') break;
-                        if (packet[pos++] != 'o') break;
-                        if (packet[pos++] != 'l') break;
-                        if (packet[pos++] != 'l') break;
+                    case '2':
                         if (packet[pos++] != ' ') break;
-                        {
-                            final boolean negateDx = packet[pos] == '-';
-                            if (negateDx)
-                            {
-                                pos++;
-                            }
-                            int dx = 0;
-                            do
-                            {
-                                dx = dx*10+parseDigit(packet[pos++]);
-                            }
-                            while (packet[pos] != ' ');
-                            pos++;
-                            if (negateDx)
-                            {
-                                dx = -dx;
-                            }
-
-                            final boolean negateDy = packet[pos] == '-';
-                            if (negateDy)
-                            {
-                                pos++;
-                            }
-                            int dy = 0;
-                            do
-                            {
-                                dy = dy*10+parseDigit(packet[pos++]);
-                            }
-                            while (pos < packet.length);
-                            if (negateDy)
-                            {
-                                dy = -dy;
-                            }
-
-                            CfMapUpdater.processScroll(dx, dy);
-                        }
+                        cmd_map2(packet, pos);
                         return;
 
                     case 'e':
@@ -1375,27 +1325,107 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Process the payload data for a map1 or map1a command.
+     * Process the payload data for a map2 command.
      *
      * @param packet The packet contents.
      *
      * @param pos The start of the payload data to process.
      */
-    private void cmd_map1(final byte[] packet, int pos)
+    private void cmd_map2(final byte[] packet, int pos) throws UnknownCommandException
     {
         CfMapUpdater.processMapBegin();
         while (pos < packet.length)
         {
             final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-            final int x = (coord>>10)&0x3F;
-            final int y = (coord>>4)&0x3F;
-            final int mask = coord&0xF;
+            final int x = ((coord>>10)&0x3F)-MAP2_COORD_OFFSET;
+            final int y = ((coord>>4)&0x3F)-MAP2_COORD_OFFSET;
+            final int coordType = coord&0xF;
 
-            final int darkness = (mask&8) != 0 ? packet[pos++]&0xFF : -1;
-            final int faceA = (mask&4) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
-            final int faceB = (mask&2) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
-            final int faceC = (mask&1) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : -1;
-            CfMapUpdater.processMap1Element(x, y, darkness, faceA, faceB, faceC);
+            switch (coordType)
+            {
+            case 0:             // normal coordinate
+                for (;;)
+                {
+                    final int lenType = packet[pos++]&0xFF;
+                    if (lenType == 0xFF)
+                    {
+                        break;
+                    }
+
+                    final int len = (lenType>>5)&7;
+                    final int type = lenType&31;
+                    switch (type)
+                    {
+                    case 0: // clear space
+                        if (len != 0) throw new UnknownCommandException("map2 command contains clear command with length "+len);
+                        CfMapUpdater.processMapClear(x, y);
+                        break;
+
+                    case 1: // darkness information
+                        if (len != 1) throw new UnknownCommandException("map2 command contains darkness command with length "+len);
+                        final int darkness = packet[pos++]&0xFF;
+                        CfMapUpdater.processMapDarkness(x, y, darkness);
+                        break;
+
+                    case 0x10: // image information
+                    case 0x11:
+                    case 0x12:
+                    case 0x13:
+                    case 0x14:
+                    case 0x15:
+                    case 0x16:
+                    case 0x17:
+                    case 0x18:
+                    case 0x19:
+                        if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
+                        final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        CfMapUpdater.processMapFace(x, y, type-0x10, face&0x7FFF);
+                        if (len == 3)
+                        {
+                            if (face == 0)
+                            {
+                                throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                            }
+
+                            if ((face&0x8000) != 0)
+                            {
+                                final int smooth = packet[pos++]&0xFF;
+                                // XXX: update smoothing information
+                            }
+                            else
+                            {
+                                final int animSpeed = packet[pos++]&0xFF;
+                                // XXX: update animation speed information
+                            }
+                        }
+                        else if (len == 4)
+                        {
+                            if (face == 0)
+                            {
+                                throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                            }
+
+                            final int animSpeed = packet[pos++]&0xFF;
+                            // XXX: update animation speed information
+
+                            final int smooth = packet[pos++]&0xFF;
+                            // XXX: update smoothing information
+                        }
+                        else if (len != 2)
+                        {
+                            throw new UnknownCommandException("map2 command contains image command with length "+len);
+                        }
+                    }
+                }
+                break;
+
+            case 1:             // scroll information
+                CfMapUpdater.processScroll(x, y);
+                break;
+
+            default:
+                throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
+            }
         }
         CfMapUpdater.processMapEnd();
     }
@@ -1414,7 +1444,7 @@ public class CrossfireServerConnection extends ServerConnection
         sendSetup(
             "sound 0",
             "exp64 1",
-            "map1acmd 1",
+            "map2cmd 1",
             "darkness 1",
             "newmapcmd 1",
             "facecache 1",
@@ -1541,11 +1571,11 @@ public class CrossfireServerConnection extends ServerConnection
                     System.exit(1);
                 }
             }
-            else if (option.equals("map1acmd"))
+            else if (option.equals("map2cmd"))
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the map1acmd=1 setup option.");
+                    System.err.println("Error: the server is too old for this client since it does not support the map2cmd=1 setup option.");
                     System.exit(1);
                 }
             }

@@ -194,6 +194,7 @@ public class CfMap
             {
                 setFaceInternal(x, y, l, l == layer ? face : null);
             }
+            dirty(x, y);
         }
         else
         {
