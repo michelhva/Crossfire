@@ -45,7 +45,7 @@ EXTRA_DIST = \
 dist_man6_MANS = \
 	gcfclient.man
 
-AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/common -I$(top_srcdir)/pixmaps $(GTK_CFLAGS) $(SDL_CFLAGS) 
+AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/common -I$(top_srcdir)/pixmaps $(GTK_CFLAGS) $(SDL_CFLAGS)
 gcfclient_LDADD = $(GTK_LIBS) $(SDL_LIBS) $(DMALLOC_LIB) ../common/libcfclient.a
 
 ../common/libcfclient.a:
@@ -57,6 +57,5 @@ installcheck-local:
 	$(bindir)/gcfclient -help
 
 proto:
-	cproto -e -o gtkproto.h $(AM_CPPFLAGS) $(gcfclient_SOURCES) 
+	cproto -e -o gtkproto.h $(AM_CPPFLAGS) $(gcfclient_SOURCES)
 	chmod 644 gtkproto.h
-

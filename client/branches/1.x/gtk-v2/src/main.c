@@ -86,7 +86,7 @@ int do_scriptout()
 }
 #endif /* WIN32 */
 
-int do_timeout() 
+int do_timeout()
 {
     if (cpl.showmagic) magic_map_flash_pos();
     if (cpl.spells_updated) update_spell_information();
@@ -142,7 +142,7 @@ void do_network() {
 	}
 	return;
     }
-  
+
     FD_ZERO(&tmp_read);
     FD_SET(csocket.fd, &tmp_read);
     script_fdset(&maxfd,&tmp_read);
@@ -162,7 +162,7 @@ void do_network() {
 	}
     }
     /* DoClient now closes the socket, so we need to check for
-     * this here - with the socket being closed, this function 
+     * this here - with the socket being closed, this function
      * will otherwise never be called again.
      */
     if (csocket.fd==-1) {
@@ -212,7 +212,7 @@ void event_loop(void)
 #ifdef WIN32
     gtk_timeout_add (25, (GtkFunction) do_scriptout, NULL);
 #endif
-    
+
     if (csocket.fd==-1) {
 	if (csocket_fd) {
 	    gdk_input_remove(csocket_fd);
@@ -293,7 +293,7 @@ int parse_args(int argc, char **argv)
 {
     int on_arg=1;
     char *display_name="";
-    load_defaults(); 
+    load_defaults();
 
 #ifndef WIN32
     strcpy(VERSION_INFO,"GTK2 Unix Client " FULL_VERSION);
@@ -543,7 +543,7 @@ int parse_args(int argc, char **argv)
 	}
     }
 
-    /* Move this after the parsing of command line options, 
+    /* Move this after the parsing of command line options,
      * since that can change the default log level.
      */
     LOG(LOG_INFO,"Client Version",VERSION_INFO);
@@ -636,7 +636,7 @@ main (int argc, char *argv[])
 	if ( !gdk_color_parse(colorname[i], &root_color[i])) {
 	    fprintf(stderr, "gdk_color_parse failed (%s)\n",colorname[i]);
 	}
-        if ( !gdk_color_alloc (gtk_widget_get_colormap (window_root), 
+        if ( !gdk_color_alloc (gtk_widget_get_colormap (window_root),
 			       &root_color[i])) {
             fprintf(stderr, "gdk_color_alloc failed\n");
 	}

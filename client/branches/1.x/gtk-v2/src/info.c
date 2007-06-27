@@ -22,7 +22,7 @@ char *rcsid_gtk2_info_c =
     The author can be reached via e-mail to crossfire@metalforge.org
 */
 
-/* 
+/*
  * This covers drawing text to the info window.
  */
 #ifdef HAVE_CONFIG_H
@@ -41,7 +41,7 @@ char *rcsid_gtk2_info_c =
 
 #include "main.h"
 
-struct Info_Pane 
+struct Info_Pane
 {
     GtkWidget	    *textview;
     GtkWidget	    *scrolled_window;
@@ -79,7 +79,7 @@ static void message_callback(int flag, int type, int subtype, char *message);
  * MSW 2006-09-17
  */
 static char *font_families[NUM_FONTS] = {
-    "arial,bookman,agate", 
+    "arial,bookman,agate",
     "cuneifontlight,linotext,blackforest,becker,arnoldboecklin,caligula,helvetica",
     "annstone,shalomstick",
     /* fixed doesn't scale, so put it at the end */
@@ -245,7 +245,7 @@ void draw_info(const char *str, int color) {
     GtkTextIter end;
     GdkRectangle rect;
     int scroll_to_end=0;
-  
+
     if (ncolor==NDI_WHITE) {
 	ncolor=NDI_BLACK;
     }
@@ -296,7 +296,7 @@ void draw_color_info(int colr, const char *buf){
 }
 
 
-/* Clears all the message.  Not sure why someone would use it, 
+/* Clears all the message.  Not sure why someone would use it,
  * but it is called from the common area, so might as well
  * support it.
  */
@@ -322,11 +322,10 @@ void set_autorepeat(char *s)
 
 /* FIXME: should be better than hardcoded value.  This is used by the common
  * help system to determine when to wrap.  Should be able to get width of
- * window, and divide by character width - however, still not perfect if 
+ * window, and divide by character width - however, still not perfect if
  * we are using a variable width font.
  */
 int get_info_width()
 {
     return 40;
 }
-

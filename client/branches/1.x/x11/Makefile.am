@@ -51,4 +51,3 @@ installcheck-local:
 proto:
 	cproto -e -o x11proto.h $(AM_CPPFLAGS) $(cfclient_SOURCES)
 	chmod 644 x11proto.h
-
