@@ -95,7 +95,7 @@ public class Gui
             if (element.isVisible())
             {
                 final BufferedImage bufferedImage = element.getBuffer();
-                synchronized (bufferedImage)
+                synchronized(bufferedImage)
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();
@@ -106,7 +106,7 @@ public class Gui
         if (tooltip != null && tooltip.isVisible())
         {
             final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized (bufferedImage)
+            synchronized(bufferedImage)
             {
                 g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
                 tooltip.resetChanged();
@@ -128,7 +128,7 @@ public class Gui
             if (element.isVisible())
             {
                 final BufferedImage bufferedImage = element.getBuffer();
-                synchronized (bufferedImage)
+                synchronized(bufferedImage)
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();
@@ -139,7 +139,7 @@ public class Gui
         if (tooltip != null && tooltip.isVisible())
         {
             final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized (bufferedImage)
+            synchronized(bufferedImage)
             {
                 g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
                 tooltip.resetChanged();

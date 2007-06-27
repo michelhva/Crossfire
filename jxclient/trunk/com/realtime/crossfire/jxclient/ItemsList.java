@@ -34,6 +34,7 @@ import java.util.List;
 public class ItemsList
 {
     public static final int SPELLMODE_LOCAL = 0;
+
     public static final int SPELLMODE_SENT = 1;
 
     private static int myspellmode = SPELLMODE_LOCAL;
@@ -94,7 +95,7 @@ public class ItemsList
     public static void setSpellMode(int nm)
     {
         myspellmode = nm;
-        if(nm == SPELLMODE_LOCAL)
+        if (nm == SPELLMODE_LOCAL)
         {
             myspells.clear();
             try
@@ -494,7 +495,7 @@ public class ItemsList
         sp.setSkill(skill);
         myspells.add(sp);
 
-        CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(),sp);
+        CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(), sp);
         Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
         while (it.hasNext())
         {

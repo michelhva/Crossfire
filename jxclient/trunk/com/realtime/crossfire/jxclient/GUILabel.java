@@ -79,11 +79,14 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
     private boolean autoResize = false;
 
     public static final int LABEL_SPELL_NAME = -1;
-    public static final int LABEL_SPELL_ICON = -2;
-    public static final int LABEL_SPELL_COST = -3;
-    public static final int LABEL_SPELL_LEVEL = -4;
-    public static final int LABEL_SPELL_DESCRIPTION = -5;
 
+    public static final int LABEL_SPELL_ICON = -2;
+
+    public static final int LABEL_SPELL_COST = -3;
+
+    public static final int LABEL_SPELL_LEVEL = -4;
+
+    public static final int LABEL_SPELL_DESCRIPTION = -5;
 
     private void commonInit(String picture, Font nf) throws IOException
     {

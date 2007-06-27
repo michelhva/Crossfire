@@ -28,10 +28,13 @@ public class RawScale2x
 {
     /** The src image data */
     private int[] srcImage;
+
     /** The dest image data */
     private int[] dstImage;
+
     /** The width of the source image */
     private int width;
+
     /** The height of the source image */
     private int height;
 
@@ -43,7 +46,7 @@ public class RawScale2x
      * @param dataWidth The width of the source image
      * @param dataHeight The height of the source image
      */
-    public RawScale2x(int[] imageData,int dataWidth,int dataHeight)
+    public RawScale2x(int[] imageData, int dataWidth, int dataHeight)
     {
         this.width = dataWidth;
         this.height = dataHeight;
@@ -59,7 +62,7 @@ public class RawScale2x
      * @param b The second pixel value
      * @return True if the pixels are different
      */
-    private boolean different(int a,int b)
+    private boolean different(int a, int b)
     {
         return a != b;
     }
@@ -71,7 +74,7 @@ public class RawScale2x
      * @param y The y location of the pixel to set
      * @param p The value of the pixel to set
      */
-    private void setDestPixel(int x,int y,int p)
+    private void setDestPixel(int x, int y, int p)
     {
         dstImage[x+(y*width*2)] = p;
     }
@@ -84,13 +87,12 @@ public class RawScale2x
      * @param y The y location of the pixel to retrieve
      * @return The pixel value at the specified location
      */
-    private int getSourcePixel(int x,int y)
+    private int getSourcePixel(int x, int y)
     {
-        x = Math.max(0,x);
-        x = Math.min(width-1,x);
-        y = Math.max(0,y);
-        y = Math.min(height-1,y);
-
+        x = Math.max(0, x);
+        x = Math.min(width-1, x);
+        y = Math.max(0, y);
+        y = Math.min(height-1, y);
         return srcImage[x+(y*width)];
     }
 
@@ -101,33 +103,33 @@ public class RawScale2x
      * @param x The x location in the source image of the pixel to process
      * @param y The y location in the source image of the pixel to process
      */
-    private void process(int x,int y)
+    private void process(int x, int y)
     {
-        int A = getSourcePixel(x-1,y-1);
-        int B = getSourcePixel(x,y-1);
-        int C = getSourcePixel(x+1,y-1);
-        int D = getSourcePixel(x-1,y);
-        int E = getSourcePixel(x,y);
-        int F = getSourcePixel(x+1,y);
-        int G = getSourcePixel(x-1,y+1);
-        int H = getSourcePixel(x,y+1);
-        int I = getSourcePixel(x+1,y+1);
+        int A = getSourcePixel(x-1, y-1);
+        int B = getSourcePixel(x, y-1);
+        int C = getSourcePixel(x+1, y-1);
+        int D = getSourcePixel(x-1, y);
+        int E = getSourcePixel(x, y);
+        int F = getSourcePixel(x+1, y);
+        int G = getSourcePixel(x-1, y+1);
+        int H = getSourcePixel(x, y+1);
+        int I = getSourcePixel(x+1, y+1);
         int E0 = E;
         int E1 = E;
         int E2 = E;
         int E3 = E;
 
-        if (different(B,H) && different(D,F)) {
-            E0 = !different(D,B) ? D : E;
-            E1 = !different(B,F) ? F : E;
-            E2 = !different(D,H) ? D : E;
-            E3 = !different(H,F) ? F : E;
+        if (different(B, H) && different(D, F)) {
+            E0 = !different(D, B) ? D : E;
+            E1 = !different(B, F) ? F : E;
+            E2 = !different(D, H) ? D : E;
+            E3 = !different(H, F) ? F : E;
         }
 
-        setDestPixel(x*2,y*2,E0);
-        setDestPixel((x*2)+1,y*2,E1);
-        setDestPixel((x*2),(y*2)+1,E2);
-        setDestPixel((x*2)+1,(y*2)+1,E3);
+        setDestPixel(x*2, y*2, E0);
+        setDestPixel((x*2)+1, y*2, E1);
+        setDestPixel((x*2), (y*2)+1, E2);
+        setDestPixel((x*2)+1, (y*2)+1, E3);
     }
 
     /**
@@ -139,11 +141,11 @@ public class RawScale2x
      */
     public int[] getScaledData()
     {
-        for (int x=0;x<width;x++)
+        for (int x = 0; x < width; x++)
         {
-            for (int y=0;y<height;y++)
+            for (int y = 0; y < height; y++)
             {
-                process(x,y);
+                process(x, y);
             }
         }
 

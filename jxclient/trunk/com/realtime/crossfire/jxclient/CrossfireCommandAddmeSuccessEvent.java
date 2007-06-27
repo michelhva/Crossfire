@@ -36,5 +36,4 @@ public class CrossfireCommandAddmeSuccessEvent extends EventObject
     {
         super(src);
     }
-
 }

@@ -33,11 +33,13 @@ public class SpellChangedEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     private Spell myspell;
+
     public SpellChangedEvent(Object src, Spell sp)
     {
         super(src);
         myspell = sp;
     }
+
     public Spell getSpell()
     {
         return myspell;

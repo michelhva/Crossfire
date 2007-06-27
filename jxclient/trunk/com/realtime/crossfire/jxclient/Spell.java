@@ -31,89 +31,118 @@ import javax.swing.ImageIcon;
 public class Spell
 {
     private final ImageIcon myspellpic;
+
     private String myspellname;
+
     private final String myid;
 
-    private final int     mytag;
-    private int     mylevel;
-    private int     mycastingtime;
-    private int     mymana;
-    private int     mygrace;
-    private int     mydamage;
-    private int     myskill;
-    private int     mypath;
-    private final Face    myface;
-    private final String  myname;
-    private final String  mymessage;
+    private final int mytag;
+
+    private int mylevel;
+
+    private int mycastingtime;
+
+    private int mymana;
+
+    private int mygrace;
+
+    private int mydamage;
+
+    private int myskill;
+
+    private int mypath;
+
+    private final Face myface;
+
+    private final String myname;
+
+    private final String mymessage;
 
     public int getTag()
     {
         return mytag;
     }
+
     public int getLevel()
     {
         return mylevel;
     }
+
     public int getCastingTime()
     {
         return mycastingtime;
     }
+
     public int getMana()
     {
         return mymana;
     }
+
     public int getGrace()
     {
         return mygrace;
     }
+
     public int getDamage()
     {
         return mydamage;
     }
+
     public int getSkill()
     {
         return myskill;
     }
+
     public int getPath()
     {
         return mypath;
     }
+
     public String getName()
     {
         return myname;
     }
+
     public String getMessage()
     {
         return mymessage;
     }
+
     public Face getFace()
     {
         return myface;
     }
+
     public void setLevel(int nv)
     {
         mylevel = nv;
     }
+
     public void setCastingTime(int nv)
     {
         mycastingtime = nv;
     }
+
     public void setMana(int nv)
     {
         mymana = nv;
     }
+
     public void setGrace(int nv)
     {
         mygrace = nv;
     }
+
     public void setDamage(int nv)
     {
         mydamage = nv;
     }
+
     public void setSkill(int nv)
     {
         myskill = nv;
     }
+
     public void setPath(int nv)
     {
         mypath = nv;
@@ -142,10 +171,12 @@ public class Spell
         mymessage = "";
         myid = id;
     }
+
     public String getInternalName()
     {
         return myid;
     }
+
     public ImageIcon getImageIcon()
     {
         if (myspellpic != null)
@@ -155,6 +186,7 @@ public class Spell
             return myface.getOriginalImageIcon();
         }
     }
+
     public String toString()
     {
         String str = "Name:"+myname+" ID:"+mytag+" Level:"+mylevel;

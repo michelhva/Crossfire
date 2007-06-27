@@ -84,15 +84,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
 
-    private Gui mydialog_query   = new Gui();
-    private Gui mydialog_book    = new Gui();
+    private Gui mydialog_query = new Gui();
+    private Gui mydialog_book = new Gui();
     private Gui mydialog_keybind = new Gui();
-    private Gui mydialog_card    = new Gui();
-    private Gui mydialog_paper   = new Gui();
-    private Gui mydialog_sign    = new Gui();
-    private Gui mydialog_monument= new Gui();
+    private Gui mydialog_card = new Gui();
+    private Gui mydialog_paper = new Gui();
+    private Gui mydialog_sign = new Gui();
+    private Gui mydialog_monument = new Gui();
     private Gui mydialog_scripted_dialog = new Gui();
-    private Gui mydialog_motd    = new Gui();
+    private Gui mydialog_motd = new Gui();
 
     private JXCSkin myskin = null;
 
@@ -105,8 +105,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
     public final static int KEY_SHIFT_SHIFT = 0;
-    public final static int KEY_SHIFT_CTRL  = 1;
-    public final static int KEY_SHIFT_ALT   = 2;
+    public final static int KEY_SHIFT_CTRL = 1;
+    public final static int KEY_SHIFT_ALT = 2;
     public final static int KEY_SHIFT_ALTGR = 3;
 
     private boolean is_run_active = false;
@@ -1003,7 +1003,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private GUIElement findElement(final MouseEvent e, final boolean ignoreButtons)
     {
         GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e, ignoreButtons);
-        if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0) elected = jxcWindowRenderer.getCurrentGui().get(0);
+        if (elected == null && jxcWindowRenderer.getCurrentGui().size() > 0)
+            elected = jxcWindowRenderer.getCurrentGui().get(0);
 
         final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
         if (currentDialog != null)

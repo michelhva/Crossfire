@@ -54,12 +54,7 @@ public class CfMagicMap
 
         final String str = new String(buf);
         final String packs[] = str.split(" ", 5);
-        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(),
-            Integer.parseInt(packs[0]),
-            Integer.parseInt(packs[1]),
-            Integer.parseInt(packs[2]),
-            Integer.parseInt(packs[3]),
-            packs[4].getBytes());
+        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(), Integer.parseInt(packs[0]), Integer.parseInt(packs[1]), Integer.parseInt(packs[2]), Integer.parseInt(packs[3]), packs[4].getBytes());
         for (final CrossfireMagicmapListener listener : mylisteners_magicmap)
         {
             listener.commandMagicmapReceived(evt);

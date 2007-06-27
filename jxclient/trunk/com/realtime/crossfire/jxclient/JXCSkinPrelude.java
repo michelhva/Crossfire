@@ -226,7 +226,7 @@ public class JXCSkinPrelude implements JXCSkin
 
         System.out.println("Free Memory before getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         System.gc();
-        System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024 + " KB");
+        System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
 
         Font font_default_small = null;
         Font font_default_medium = null;
@@ -1519,7 +1519,7 @@ public class JXCSkinPrelude implements JXCSkin
         }
         System.out.println("Free Memory before getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         System.gc();
-        System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024 + " KB");
+        System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
         return mygui;
     }
 

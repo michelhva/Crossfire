@@ -64,7 +64,7 @@ public class JXCWindowRenderer
     public void initRendering()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice      gd = ge.getDefaultScreenDevice();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
         isfullscreen = gd.isFullScreenSupported();
         if (!gd.isFullScreenSupported())
         {
@@ -135,7 +135,7 @@ public class JXCWindowRenderer
     {
         currentGui.clear();
         currentGuiChanged = true;
-        for(int ig = 0; ig < 3; ig++)
+        for (int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();
             redrawBlack(g);

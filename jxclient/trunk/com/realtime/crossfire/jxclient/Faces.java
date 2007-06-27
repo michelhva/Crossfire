@@ -194,6 +194,7 @@ public class Faces
             faces[pixnum] = new Face(pixnum, pixname, im, oim);
         }
     }
+
     public static void ensureFaceExists(final int val)
     {
         getFace(val);

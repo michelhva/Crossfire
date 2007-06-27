@@ -37,41 +37,38 @@ import javax.imageio.ImageIO;
 public class GUIButton extends GUIElement
 {
     private BufferedImage mypicture_up;
-    private BufferedImage mypicture_down;
-    private GUICommandList mylist;
-    private String mytext = null;
-    private Font myfont = null;
-    private int mytx = 0;
-    private int myty = 0;
-    private Color myfontcolor = new Color(255,255,255);
 
-    public GUIButton
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup,
-                     String picdown, GUICommandList cmd) throws IOException
+    private BufferedImage mypicture_down;
+
+    private GUICommandList mylist;
+
+    private String mytext = null;
+
+    private Font myfont = null;
+
+    private int mytx = 0;
+
+    private int myty = 0;
+
+    private Color myfontcolor = new Color(255, 255, 255);
+
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup, String picdown, GUICommandList cmd) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_up   =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
-        mypicture_down =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+        mypicture_up = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        mypicture_down = ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
         mylist = cmd;
-        mybuffer   =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        mybuffer = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         render();
     }
-    public GUIButton
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup,
-             String picdown, String txt, Font f, Color mfc,
-             int tx, int ty, GUICommandList cmd) throws IOException
+
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup, String picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_up   =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
-        mypicture_down =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+        mypicture_up = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        mypicture_down = ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
         mylist = cmd;
-        mybuffer   =
-            ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        mybuffer = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
         mytext = txt;
         myfont = f;
         myfontcolor = mfc;
@@ -79,29 +76,34 @@ public class GUIButton extends GUIElement
         myty = ty;
         render();
     }
+
     public void mouseReleased(MouseEvent e)
     {
         int b = e.getButton();
         switch(b)
         {
-            case MouseEvent.BUTTON1:
-                mylist.execute();
-                active = false;
-                JXCWindow jxc = (JXCWindow)(e.getSource());
-                jxc.deactivateCurrentElement();
-                render();
-                break;
-            case MouseEvent.BUTTON2:
-                break;
-            case MouseEvent.BUTTON3:
-                break;
+        case MouseEvent.BUTTON1:
+            mylist.execute();
+            active = false;
+            JXCWindow jxc = (JXCWindow)(e.getSource());
+            jxc.deactivateCurrentElement();
+            render();
+            break;
+
+        case MouseEvent.BUTTON2:
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
         }
     }
+
     public void mousePressed(MouseEvent e)
     {
         active = true;
         render();
     }
+
     public void render()
     {
         Graphics2D g = mybuffer.createGraphics();

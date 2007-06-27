@@ -52,6 +52,7 @@ public abstract class GUIElement implements MouseListener
     protected int h;
 
     protected BufferedImage mybuffer;
+
     protected boolean visible = true;
 
     /**
@@ -60,6 +61,7 @@ public abstract class GUIElement implements MouseListener
     protected final String myname;
 
     protected boolean active = false;
+
     protected boolean visiblechanged = false;
 
     /**
@@ -107,38 +109,47 @@ public abstract class GUIElement implements MouseListener
     {
         return myname;
     }
+
     public void setActive(boolean act)
     {
         active = act;
     }
+
     public boolean isActive()
     {
         return active;
     }
+
     public BufferedImage getBuffer()
     {
         return mybuffer;
     }
+
     public int getX()
     {
         return x;
     }
+
     public int getY()
     {
         return y;
     }
+
     public int getWidth()
     {
         return w;
     }
+
     public int getHeight()
     {
         return h;
     }
+
     public boolean isVisible()
     {
         return visible;
     }
+
     public void setVisible(boolean v)
     {
         if (visible != v)
@@ -148,6 +159,7 @@ public abstract class GUIElement implements MouseListener
             setChanged();
         }
     }
+
     public String getName()
     {
         return myname;
@@ -160,30 +172,36 @@ public abstract class GUIElement implements MouseListener
         int b = e.getButton();
         switch(b)
         {
-            case MouseEvent.BUTTON1:
-                System.out.println("Hit element : "+myname);
-                System.out.println("Position    : "+x+";"+y);
-                break;
-            case MouseEvent.BUTTON2:
-                break;
-            case MouseEvent.BUTTON3:
-                break;
+        case MouseEvent.BUTTON1:
+            System.out.println("Hit element : "+myname);
+            System.out.println("Position    : "+x+";"+y);
+            break;
+
+        case MouseEvent.BUTTON2:
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
         }
     }
+
     public void mouseEntered(MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.setTooltipElement(this);
     }
+
     public void mouseExited(MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.unsetTooltipElement(this);
     }
+
     public void mousePressed(MouseEvent e)
     {
         active = true;
     }
+
     public void mouseReleased(MouseEvent e)
     {
         mouseClicked(e);

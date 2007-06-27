@@ -36,5 +36,4 @@ public class CrossfireCommandAnimEvent extends EventObject
     {
         super(src);
     }
-
 }

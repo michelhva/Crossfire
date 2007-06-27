@@ -42,13 +42,16 @@ public class CrossfireCommandQueryEvent extends EventObject
     public static final int HIDEINPUT = 4;
 
     private String myquery;
+
     private int myquerytype;
+
     public CrossfireCommandQueryEvent(Object src, String msg, int type)
     {
         super(src);
         myquery = msg;
         myquerytype = type;
     }
+
     public String getPrompt()
     {
         return myquery;

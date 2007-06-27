@@ -34,19 +34,22 @@ import java.io.IOException;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener,
-                                                       CrossfireNewmapListener
+public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener, CrossfireNewmapListener
 {
-    Color[] mycolors = new Color[]{Color.BLACK, Color.WHITE, Color.BLUE,
-                                   Color.RED, Color.GREEN, Color.YELLOW,
-                                   Color.PINK, Color.GRAY, Color.ORANGE,
-                                   Color.CYAN, Color.MAGENTA};
-    public GUIMagicMap
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh)  throws IOException
+    Color[] mycolors = new Color[]
+    {
+        Color.BLACK, Color.WHITE, Color.BLUE,
+        Color.RED, Color.GREEN, Color.YELLOW,
+        Color.PINK, Color.GRAY, Color.ORANGE,
+        Color.CYAN, Color.MAGENTA,
+    };
+
+    public GUIMagicMap(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh)  throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         createBuffer();
     }
+
     public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt)
     {
         int datapos = 0;
@@ -54,13 +57,13 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
         byte square;
         Color scolor;
         Graphics2D g = mybuffer.createGraphics();
-        g.setBackground(new Color(0,0,0,0.0f));
-        g.clearRect(0,0,w,h);
-        while(data[datapos]==' ')
+        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.clearRect(0, 0, w, h);
+        while (data[datapos] == ' ')
             datapos++;
-        for (int y=0;y<evt.getHeight();y++)
+        for (int y = 0; y < evt.getHeight(); y++)
         {
-            for (int x=0;x<evt.getWidth();x++)
+            for (int x = 0; x < evt.getWidth(); x++)
             {
                 square = data[datapos];
                 if (square > 10)
@@ -69,18 +72,19 @@ public class GUIMagicMap extends GUIElement implements CrossfireMagicmapListener
                     scolor = mycolors[square];
 
                 g.setColor(scolor);
-                g.fillRect(x*4,y*4,(x*4)+4,(y*4)+4);
+                g.fillRect(x*4, y*4, (x*4)+4, (y*4)+4);
                 datapos++;
             }
         }
         g.dispose();
         setChanged();
     }
+
     public void commandNewmapReceived(CrossfireCommandNewmapEvent evt)
     {
         Graphics2D g = mybuffer.createGraphics();
-        g.setBackground(new Color(0,0,0,0.0f));
-        g.clearRect(0,0,w,h);
+        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.clearRect(0, 0, w, h);
         g.dispose();
         setChanged();
     }
