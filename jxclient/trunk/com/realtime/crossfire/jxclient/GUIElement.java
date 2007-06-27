@@ -68,8 +68,6 @@ public abstract class GUIElement implements MouseListener
 
     protected boolean active = false;
 
-    protected boolean visiblechanged = false;
-
     /**
      * Whether {@link #mybuffer} has changed.
      */
@@ -181,7 +179,6 @@ public abstract class GUIElement implements MouseListener
         if (visible != v)
         {
             visible = v;
-            visiblechanged = true;
             setChanged();
         }
     }
