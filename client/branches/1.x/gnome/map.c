@@ -28,7 +28,7 @@ uint8	map_did_scroll=0;
 /*
  * Added for fog of war. Current size of the map structure in memory.
  * We assume a rectangular map so this is the length of one side.
- * command.c needs to know about this so not static 
+ * command.c needs to know about this so not static
  * FIX ME: Don't assume rectangle
  */
 
@@ -63,7 +63,7 @@ void allocate_map( struct Map* new_map, int ax, int ay)
     return;
   }
 
-  new_map->cells= (struct MapCell**)calloc( sizeof( struct MapCell*) * ay 
+  new_map->cells= (struct MapCell**)calloc( sizeof( struct MapCell*) * ay
 					    + sizeof( struct MapCell) *
 					    map_size * map_size, 1);
   if( new_map->cells == NULL)
@@ -72,13 +72,13 @@ void allocate_map( struct Map* new_map, int ax, int ay)
   /* Skip past the first row of pointers to rows and assign the start of
    * the actual map data
    */
-  new_map->cells[0]= (struct MapCell*)((char*)new_map->cells + 
+  new_map->cells[0]= (struct MapCell*)((char*)new_map->cells +
 				       (sizeof( struct MapCell*) * ay));
 
   /* Finish assigning the beginning of each row relative to the first row
    * assigned above
    */
-  for( i= 0; i < ay; i++) 
+  for( i= 0; i < ay; i++)
     {
       new_map->cells[i]= new_map->cells[0] + ( i * ax);
     }
@@ -90,9 +90,9 @@ void allocate_map( struct Map* new_map, int ax, int ay)
 }
 
 /*
- * Clears out all the cells in the current view (which is 
+ * Clears out all the cells in the current view (which is
  * the whole map if not using fog_of_war, and request
- * a map update from the server 
+ * a map update from the server
  */
 void reset_map()
 {
@@ -102,9 +102,9 @@ void reset_map()
 	int y= 0;
 	pl_pos.x= the_map.x/2;
 	pl_pos.y= the_map.y/2;
-	memset( the_map.cells[0], 0, 
+	memset( the_map.cells[0], 0,
 		sizeof( struct MapCell) * the_map.x * the_map.y);
-	for( x= pl_pos.x; x < (pl_pos.x + mapx); x++) 
+	for( x= pl_pos.x; x < (pl_pos.x + mapx); x++)
 	{
 	    for( y= pl_pos.y; y < (pl_pos.y + mapy); y++)
 	    {
@@ -116,7 +116,7 @@ void reset_map()
     {
 	int x= 0;
 	int y= 0;
-	memset( the_map.cells[0], 0, 
+	memset( the_map.cells[0], 0,
 		sizeof( struct MapCell) * the_map.x * the_map.y);
 	for( x= 0; x < mapx; x++)
 	{
@@ -126,7 +126,7 @@ void reset_map()
 	    }
 	}
     }
-    
+
     return;
 }
 
@@ -144,7 +144,7 @@ void display_map_clearcell(long x,long y)
 	the_map.cells[x][y].cleared= 1;
 	the_map.cells[x][y].need_update= 1;
     }
-    else 
+    else
     {
 	int i;
 	the_map.cells[x][y].count = 0;
@@ -191,10 +191,10 @@ void print_map()
     {
 	local_mapx= pl_pos.x + mapx;
 	local_mapy= pl_pos.y + mapy;
-	printf( " Current X pos: %d -- Current Y pos: %d\n", 
+	printf( " Current X pos: %d -- Current Y pos: %d\n",
 		pl_pos.x, pl_pos.y);
     }
-    else 
+    else
     {
 	local_mapx= mapx;
 	local_mapy= mapy;
@@ -209,7 +209,7 @@ void print_map()
 	    {
 		if( the_map.cells[x][y].count == 0)
 		    fprintf( stderr, "[ -- ]");
-		else 
+		else
 		    fprintf( stderr, "[%4d]", the_map.cells[x][y].faces[z]);
 	    }
 	    fprintf( stderr, "\n");
@@ -260,8 +260,8 @@ void set_map_face(int x, int y, int layer, int face)
 
   if( (fog_of_war == TRUE) && (the_map.cells[x][y].cleared == 1) )
   {
-      /* This cell has been cleared previously but now we are 
-       * writing new data to do. So we have to clear it for real now 
+      /* This cell has been cleared previously but now we are
+       * writing new data to do. So we have to clear it for real now
        */
       int i= 0;
       the_map.cells[x][y].count= 0;
@@ -284,16 +284,16 @@ void set_map_face(int x, int y, int layer, int face)
 void display_map_addbelow(long x,long y,long face)
 {
 
-    if( fog_of_war == TRUE) 
+    if( fog_of_war == TRUE)
     {
 	x+= pl_pos.x;
 	y+= pl_pos.y;
     }
-    
+
     if( (fog_of_war == TRUE) && (the_map.cells[x][y].cleared == 1) )
     {
-	/* This cell has been cleared previously but now we are 
-	 * writing new data to do. So we have to clear it for real now 
+	/* This cell has been cleared previously but now we are
+	 * writing new data to do. So we have to clear it for real now
 	 */
 	int i= 0;
 	the_map.cells[x][y].count= 0;
@@ -310,14 +310,14 @@ void display_map_addbelow(long x,long y,long face)
     the_map.cells[x][y].need_update = 1;
 }
 
-/* 
- * Returns true if virtual view is about to butt up against 
+/*
+ * Returns true if virtual view is about to butt up against
  * the side of the virtual map on the next scroll
  * Only used for fog of war code
  */
 static int need_recenter_map( int dx, int dy)
 {
-    
+
     if( pl_pos.x + dx + mapx >= the_map.x ||
 	pl_pos.y + dy + mapy >= the_map.y ||
 	pl_pos.x + dx <= 0                ||
@@ -325,13 +325,13 @@ static int need_recenter_map( int dx, int dy)
     {
 	return TRUE;
     }
-    
+
     return FALSE;
 }
 
 /*
  * Only used in fog of war code.
- * Will recenter the virtual coordinates of the player view 
+ * Will recenter the virtual coordinates of the player view
  * to the center of the map and try to keep as much current
  * state in memory as possible
  * If view is already close to center it won't move it
@@ -353,7 +353,7 @@ static void recenter_virtual_map_view( struct Map *map)
 	allocate_map( &tmpmap, map->x, map->y);
     }
 
-    /* 
+    /*
      * If mapsize changed, allocate a new map
      */
     if( tmpmap.x != map->x || tmpmap.y != map->y)
@@ -419,55 +419,55 @@ static void recenter_virtual_map_view( struct Map *map)
     return;
 }
 
-  
+
 void display_mapscroll(int dx,int dy)
 {
     int x,y;
     static struct Map newmap;
     int local_mapx= 0, local_mapy= 0;
 
-    if( fog_of_war == TRUE) 
+    if( fog_of_war == TRUE)
     {
-	/* We don't need to memcopy any of this stuff around cause 
+	/* We don't need to memcopy any of this stuff around cause
 	 * we are keeping it in memory. We do need to update our
 	 * virtual position though
 	 */
-	
-	if( need_recenter_map( dx, dy) == TRUE) 
+
+	if( need_recenter_map( dx, dy) == TRUE)
 	{
 	    recenter_virtual_map_view( &the_map);
 	}
-	
+
 	pl_pos.x+= dx;
 	pl_pos.y+= dy;
 	local_mapx= pl_pos.x + mapx;
 	local_mapy= pl_pos.y + mapy;
-	
+
 	/*
 	 * For cells about to enter the view, mark them as
-	 * needing an update. Cells that are already in 
+	 * needing an update. Cells that are already in
 	 * view don't need to be updated since we just memcpy
-	 * the image data around. This is needed for proper 
+	 * the image data around. This is needed for proper
 	 * drawing of blank or black tiles coming into view
 	 */
 	for( x= pl_pos.x; x < pl_pos.x + mapx; x++) {
 	    for( y= pl_pos.y; y < pl_pos.y + mapy; y++) {
 		if( (x + dx) < pl_pos.x || (x + dx) >= (mapx + pl_pos.x) ||
-		    (y + dy) < pl_pos.y || (y + dy) >= (mapy + pl_pos.y) ) 
+		    (y + dy) < pl_pos.y || (y + dy) >= (mapy + pl_pos.y) )
 		{
 		    if( x < 0 || y < 0 || x >= the_map.x ||
 			y >= the_map.y)
 		    {
 			continue;
 		    }
-		    
+
 		    the_map.cells[x][y].need_update= 1;
 		    the_map.cells[x][y].cleared= 1;
 		}
 	    } /* for y */
 	} /* for x */
     }
-    else 
+    else
     {
 	local_mapx= mapx;
 	local_mapy= mapy;
@@ -477,13 +477,13 @@ void display_mapscroll(int dx,int dy)
 	allocate_map( &newmap, map_size, map_size);
 
     /* Check to see if map_size changed since we allocated newmap */
-    if( newmap.x != map_size) 
+    if( newmap.x != map_size)
     {
 	free(newmap.cells);
-	
+
 	allocate_map( &newmap, map_size, map_size);
     }
-    
+
     if( fog_of_war == FALSE) {
       for(x=0;x<mapx;x++) {
 	for(y=0;y<mapy;y++) {
@@ -492,8 +492,8 @@ void display_mapscroll(int dx,int dy)
 	    memset((char*)&newmap.cells[x][y], 0, sizeof(struct MapCell));
 	    /*
 	     * Changed my smacfiggen 6/20/2001 -- When new cells come onto
-	     * the map and we aren't using the new map command we want to 
-	     * mark these as updated or else blank tiles get blitted with 
+	     * the map and we aren't using the new map command we want to
+	     * mark these as updated or else blank tiles get blitted with
 	     * old info.
 	     *
 	     */
@@ -511,10 +511,10 @@ void display_mapscroll(int dx,int dy)
 	     sizeof(struct MapCell)*newmap.x*newmap.y );
     }
 #if 0
-    if (sdlimage) 
+    if (sdlimage)
 	sdl_mapscroll(dx,dy);
 #endif
-	
+
 /*    fprintf(stderr,"scroll command: %d %d\n", dx, dy);*/
 }
 
@@ -533,9 +533,9 @@ void reset_map_data()
 	int y= 0;
 	pl_pos.x= the_map.x/2;
 	pl_pos.y= the_map.y/2;
-	memset( the_map.cells[0], 0, 
+	memset( the_map.cells[0], 0,
 		sizeof( struct MapCell) * the_map.x * the_map.y);
-	for( x= pl_pos.x; x < (pl_pos.x + mapx); x++) 
+	for( x= pl_pos.x; x < (pl_pos.x + mapx); x++)
 	{
 	    for( y= pl_pos.y; y < (pl_pos.y + mapy); y++)
 	    {
@@ -547,7 +547,7 @@ void reset_map_data()
     {
 	int x= 0;
 	int y= 0;
-	memset( the_map.cells[0], 0, 
+	memset( the_map.cells[0], 0,
 		sizeof( struct MapCell) * the_map.x * the_map.y);
 	for( x= 0; x < mapx; x++)
 	{
@@ -563,7 +563,7 @@ void reset_map_data()
 
 #define mapgc	gc
 /* This draws the map using GdkPixmaps/GdkBitmaps.  It is based off of sdl_gen_map.
- * We draw on a GdkPixmap drawable (mapwindow), which we then copy to the 
+ * We draw on a GdkPixmap drawable (mapwindow), which we then copy to the
  * visible area on the screen.  Doing this reduces flickering that otherwise happen
  * if we draw directly to the window.
  * The performance of this function seems to be very good - presumably because
@@ -592,7 +592,7 @@ void gtk_draw_map()
 	for( x= mapx-1; x>= 0; x--) {
             for(y = mapy-1; y >= 0; y--) {
                 /* there must be a real face for this layer, and we must have data for that face. */
-                if ((the_map.cells[x][y].faces[layer]>0) && 
+                if ((the_map.cells[x][y].faces[layer]>0) &&
 		    pixmaps[the_map.cells[x][y].faces[layer]].map_image) {
                     /* Figure out how much data is being copied, and adjust the origin accordingly.
                      * This probably needs additional checking in case the image extends beyond the
@@ -604,7 +604,7 @@ void gtk_draw_map()
 		    gdk_gc_set_clip_origin(mapgc, dst_x, dst_y);
 		    gdk_draw_pixmap(drawable->window, mapgc,
 				    pixmaps[the_map.cells[x][y].faces[layer]].map_image,
-				    0, 0, dst_x, dst_y, 
+				    0, 0, dst_x, dst_y,
 				    pixmaps[the_map.cells[x][y].faces[layer]].map_width,
 				    pixmaps[the_map.cells[x][y].faces[layer]].map_height);
 		}
@@ -654,4 +654,3 @@ void gtk_draw_map()
                     elapsed1, elapsed2, elapsed1 + elapsed2);
 #endif
 }
-

@@ -88,7 +88,7 @@ static StatWindow statwindow;
  * names we get from the server (like say skill names) -
  * internally, these are all referred to number, and the numbers
  * are not in any order.  The idea here is we can store away the
- * names, and then can display the items in the window in 
+ * names, and then can display the items in the window in
  * nice alphabetical order instead of the random order they
  * normally show up in.
  */
@@ -166,7 +166,7 @@ void stats_init(GtkWidget *window_root)
 	    y++;
 	}
     }
-    
+
 }
 
 
@@ -220,7 +220,7 @@ void update_stat(int stat_no, int max_stat, int current_stat, const char *name, 
     } else if (last_alert[stat_no] != is_alert) {
 	if (is_alert)
 	    gtk_widget_modify_base(stat_bar[stat_no], GTK_STATE_SELECTED, &gdk_red);
-	else 
+	else
 	    gtk_widget_modify_base(stat_bar[stat_no], GTK_STATE_SELECTED, &gdk_green);
 
 	last_alert[stat_no] = is_alert;
@@ -246,7 +246,7 @@ void draw_message_window(int redraw) {
     /* We may or may not have an exp table from the server.  If we don't, just
      * use current exp value so it will always appear maxed out.
      */
-    update_stat(4, 
+    update_stat(4,
 	(cpl.stats.level+1) < exp_table_max ? exp_table[cpl.stats.level+1]:cpl.stats.exp,
 	cpl.stats.exp, "Exp:", FALSE);
     if (use_config[CONFIG_FOODBEEP] && (cpl.stats.food%4==3) && (cpl.stats.food < 200)) {
@@ -279,7 +279,7 @@ static void update_stat_mapping(void)
 	else
 	    skill_mapping[i].name = NULL;
     }
-    qsort(skill_mapping, MAX_SKILL, sizeof(NameMapping), 
+    qsort(skill_mapping, MAX_SKILL, sizeof(NameMapping),
 	  (int (*)(const void*, const void*))mapping_sort);
 
     for (i=0; i < NUM_RESISTS; i++) {
@@ -289,7 +289,7 @@ static void update_stat_mapping(void)
 	else
 	    resist_mapping[i].name = NULL;
     }
-    qsort(resist_mapping, NUM_RESISTS, sizeof(NameMapping), 
+    qsort(resist_mapping, NUM_RESISTS, sizeof(NameMapping),
 	  (int (*)(const void*, const void*))mapping_sort);
 
     need_mapping_update=0;
@@ -327,13 +327,13 @@ void draw_stats(int redraw) {
 	strcpy(last_name,cpl.title);
 	gtk_label_set (GTK_LABEL(statwindow.playername), cpl.title);
     }
-    
+
     if(redraw || cpl.stats.exp!=last_stats.exp) {
 	last_stats.exp = cpl.stats.exp;
 	sprintf(buff,"Experience: %5" FMT64 ,cpl.stats.exp);
 	gtk_label_set (GTK_LABEL(statwindow.exp), buff);
     }
-    
+
     if(redraw || cpl.stats.level!=last_stats.level) {
 	last_stats.level = cpl.stats.level;
 	sprintf(buff,"Level: %d",cpl.stats.level);
@@ -345,67 +345,67 @@ void draw_stats(int redraw) {
 	sprintf(buff,"%2d",cpl.stats.Str);
 	gtk_label_set (GTK_LABEL(statwindow.Str), buff);
     }
-    
+
     if(redraw || cpl.stats.Dex!=last_stats.Dex) {
 	last_stats.Dex=cpl.stats.Dex;
 	sprintf(buff,"%2d",cpl.stats.Dex);
 	gtk_label_set (GTK_LABEL(statwindow.Dex), buff);
     }
-    
+
     if(redraw || cpl.stats.Con!=last_stats.Con) {
 	last_stats.Con=cpl.stats.Con;
 	sprintf(buff,"%2d",cpl.stats.Con);
 	gtk_label_set (GTK_LABEL(statwindow.Con), buff);
     }
-    
+
     if(redraw || cpl.stats.Int!=last_stats.Int) {
 	last_stats.Int=cpl.stats.Int;
 	sprintf(buff,"%2d",cpl.stats.Int);
 	gtk_label_set (GTK_LABEL(statwindow.Int), buff);
     }
-    
+
     if(redraw || cpl.stats.Wis!=last_stats.Wis) {
 	last_stats.Wis=cpl.stats.Wis;
 	sprintf(buff,"%2d",cpl.stats.Wis);
 	gtk_label_set (GTK_LABEL(statwindow.Wis), buff);
     }
-    
+
     if(redraw || cpl.stats.Pow!=last_stats.Pow) {
 	last_stats.Pow=cpl.stats.Pow;
 	sprintf(buff,"%2d",cpl.stats.Pow);
 	gtk_label_set (GTK_LABEL(statwindow.Pow), buff);
     }
-    
+
     if(redraw || cpl.stats.Cha!=last_stats.Cha) {
 	last_stats.Cha=cpl.stats.Cha;
 	sprintf(buff,"%2d",cpl.stats.Cha);
 	gtk_label_set (GTK_LABEL(statwindow.Cha), buff);
     }
-    
+
     if(redraw || cpl.stats.wc!=last_stats.wc) {
 	last_stats.wc=cpl.stats.wc;
 	sprintf(buff,"%3d",cpl.stats.wc);
 	gtk_label_set (GTK_LABEL(statwindow.wc), buff);
     }
-    
+
     if(redraw || cpl.stats.dam!=last_stats.dam) {
 	last_stats.dam=cpl.stats.dam;
 	sprintf(buff,"%d",cpl.stats.dam);
 	gtk_label_set (GTK_LABEL(statwindow.dam), buff);
     }
-    
+
     if(redraw || cpl.stats.ac!=last_stats.ac) {
 	last_stats.ac=cpl.stats.ac;
 	sprintf(buff,"%d",cpl.stats.ac);
 	gtk_label_set (GTK_LABEL(statwindow.ac), buff);
     }
-    
+
     if(redraw || cpl.stats.resists[0]!=last_stats.resists[0]) {
 	last_stats.resists[0]=cpl.stats.resists[0];
 	sprintf(buff,"%d",cpl.stats.resists[0]);
 	gtk_label_set (GTK_LABEL(statwindow.armor), buff);
     }
-    
+
     if (redraw || cpl.stats.speed!=last_stats.speed) {
 	last_stats.speed=cpl.stats.speed;
 	sprintf(buff,"%3.2f",(float)cpl.stats.speed/FLOAT_MULTF);
@@ -491,7 +491,7 @@ void draw_stats(int redraw) {
     /* Don't need to worry about hp, sp, grace, food - update_stat()
      * deals with that as part of the stat bar logic.
      */
-    
+
 }
 
 

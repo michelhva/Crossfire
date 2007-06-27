@@ -43,7 +43,7 @@ static GtkWidget *spell_window, *spell_treeview, *spell_invoke, *spell_cast,
 static GtkListStore    *spell_store;
 static GtkTreeSelection  *spell_selection;
 
-enum {LIST_IMAGE, LIST_NAME, LIST_LEVEL, LIST_TIME, LIST_COST, 
+enum {LIST_IMAGE, LIST_NAME, LIST_LEVEL, LIST_TIME, LIST_COST,
     LIST_DAMAGE, LIST_SKILL, LIST_PATH, LIST_DESCRIPTION, LIST_BACKGROUND, LIST_MAX_SP, LIST_TAG};
 
 static int has_init=0;
@@ -199,7 +199,7 @@ on_spells_activate                     (GtkMenuItem     *menuitem,
 
 
 	gtk_tree_sortable_set_sort_column_id(GTK_TREE_SORTABLE(spell_store),
-					     LIST_NAME, 
+					     LIST_NAME,
 					     GTK_SORT_ASCENDING);
     }
     gtk_widget_set_sensitive(spell_invoke, FALSE);
@@ -319,4 +319,3 @@ on_spell_close_clicked                 (GtkButton       *button,
     gtk_widget_hide(spell_window);
 
 }
-

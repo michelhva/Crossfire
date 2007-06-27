@@ -183,7 +183,7 @@ static void list_item_action(GdkEventButton *event, item *tmp)
 	     * to the ground (dest=0).  Have to look at the item environment,
 	     * because what list is no longer accurate.
 	     */
-	    if (env & (ITEM_GROUND | ITEM_IN_CONTAINER)) 
+	    if (env & (ITEM_GROUND | ITEM_IN_CONTAINER))
 		dest = cpl.ob->tag;
 	    else if (env == ITEM_INVENTORY && cpl.container &&
 		     (get_item_env(cpl.container) == ITEM_INVENTORY ||
@@ -389,7 +389,7 @@ void inventory_init(GtkWidget *window_root)
 	if (inv_notebooks[i].type == INV_TREE) {
 	    swindow = gtk_scrolled_window_new(NULL, NULL);
 	    gtk_widget_show(swindow);
-	    gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(swindow), 
+	    gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW(swindow),
 					   GTK_POLICY_NEVER, GTK_POLICY_ALWAYS);
 	    image = gtk_image_new_from_pixbuf(
 		      gdk_pixbuf_new_from_xpm_data((const char**)inv_notebooks[i].xpm));
@@ -438,7 +438,7 @@ void inventory_init(GtkWidget *window_root)
 
     /* If all the data is set up properly, these should match */
     if (num_inv_notebook_pages != NUM_INV_LISTS) {
-	LOG(LOG_ERROR,"inventory.c:inventory_init", 
+	LOG(LOG_ERROR,"inventory.c:inventory_init",
 	    "num_inv_notebook_pages (%d) does not match NUM_INV_LISTS(%d)\n",
 	    num_inv_notebook_pages, NUM_INV_LISTS);
     }
@@ -479,7 +479,7 @@ void command_show (char *params)
 	 */
 	if (gtk_notebook_get_current_page(GTK_NOTEBOOK(inv_notebook))==num_inv_notebook_pages)
 	    gtk_notebook_set_page(GTK_NOTEBOOK(inv_notebook), 0);
-	else 
+	else
 	    gtk_notebook_next_page(GTK_NOTEBOOK(inv_notebook));
 
     } else {
@@ -558,7 +558,7 @@ void item_event_item_changed(item * it) {}
  *    then this creates a real tree, for things like containers.
  * color - if true, do foreground/background colors, otherwise, just black & white
  */
-static void add_object_to_store(item *it, GtkTreeStore *store, 
+static void add_object_to_store(item *it, GtkTreeStore *store,
 				GtkTreeIter *new, GtkTreeIter *parent, int color)
 {
     char    buf[256], buf1[256];
@@ -699,8 +699,8 @@ drawingarea_inventory_table_expose_event        (GtkWidget       *widget,
      * before the list is updated - if so, don't draw stuff we don't
      * have faces for.
      */
-    if (tmp->face) 
-	gdk_draw_pixbuf(widget->window, NULL, 
+    if (tmp->face)
+	gdk_draw_pixbuf(widget->window, NULL,
 			(GdkPixbuf*)pixmaps[tmp->face]->icon_image,
 			0, 0, 0, 0, image_size, image_size, GDK_RGB_DITHER_NONE, 0, 0);
     return TRUE;
@@ -711,7 +711,7 @@ drawingarea_inventory_table_expose_event        (GtkWidget       *widget,
 Right click drops the object.  Shift left click locks/unlocks the object.  Shift \
 middle click marks the object"
 
-/* draws the table of image icons. 
+/* draws the table of image icons.
  * if 'animate' is non zero, then this is an animation run -
  * flip the animation state of the objects, and only draw
  * those that need to be drawn.
@@ -737,9 +737,9 @@ void draw_inv_table(int animate)
 	if (num_items % columns) rows++;
     }
     if (rows > MAX_INV_ROWS) rows=MAX_INV_ROWS;
-    
+
     gtk_table_resize(GTK_TABLE(inv_table), rows, columns);
-	
+
     x=0;
     y=0;
     for (tmp=cpl.ob->inv; tmp; tmp=tmp->next) {
@@ -766,7 +766,7 @@ void draw_inv_table(int animate)
 		    tmp->last_anim=0;
 
 		    gdk_window_clear(inv_table_children[x][y]->window);
-		    gdk_draw_pixbuf(inv_table_children[x][y]->window, NULL, 
+		    gdk_draw_pixbuf(inv_table_children[x][y]->window, NULL,
 			(GdkPixbuf*)pixmaps[tmp->face]->icon_image,
 			0, 0, 0, 0, image_size, image_size, GDK_RGB_DITHER_NONE, 0, 0);
 		}
@@ -776,19 +776,19 @@ void draw_inv_table(int animate)
 	    /* Need to clear out the old signals, since the signals are effectively
 	     * stacked - you can have 6 signal handlers tied to the same function.
 	     */
-	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y], 
-			G_SIGNAL_MATCH_FUNC, 0, 0, NULL, 
+	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y],
+			G_SIGNAL_MATCH_FUNC, 0, 0, NULL,
 			G_CALLBACK (drawingarea_inventory_table_button_press_event),
 			NULL);
 
-	    if (handler) 
+	    if (handler)
 		g_signal_handler_disconnect((gpointer) inv_table_children[x][y], handler);
 
-	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y], 
-			G_SIGNAL_MATCH_FUNC, 0, 0, NULL, 
+	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y],
+			G_SIGNAL_MATCH_FUNC, 0, 0, NULL,
 			G_CALLBACK (drawingarea_inventory_table_expose_event),
 			NULL);
-	    if (handler) 
+	    if (handler)
 		g_signal_handler_disconnect((gpointer) inv_table_children[x][y], handler);
 
 	    /* Not positive precisely what events are need, but some events
@@ -806,7 +806,7 @@ void draw_inv_table(int animate)
 		tmp);
 
 	    gdk_window_clear(inv_table_children[x][y]->window);
-	    gdk_draw_pixbuf(inv_table_children[x][y]->window, NULL, 
+	    gdk_draw_pixbuf(inv_table_children[x][y]->window, NULL,
 			(GdkPixbuf*)pixmaps[tmp->face]->icon_image,
 			0, 0, 0, 0, image_size, image_size, GDK_RGB_DITHER_NONE, 0, 0);
 
@@ -837,19 +837,19 @@ void draw_inv_table(int animate)
 	if (inv_table_children[x][y]) {
 	    gdk_window_clear(inv_table_children[x][y]->window);
 
-	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y], 
-			G_SIGNAL_MATCH_FUNC, 0, 0, NULL, 
+	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y],
+			G_SIGNAL_MATCH_FUNC, 0, 0, NULL,
 			G_CALLBACK (drawingarea_inventory_table_button_press_event),
 			NULL);
 
-	    if (handler) 
+	    if (handler)
 		g_signal_handler_disconnect((gpointer) inv_table_children[x][y], handler);
 
-	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y], 
-			G_SIGNAL_MATCH_FUNC, 0, 0, NULL, 
+	    handler = g_signal_handler_find((gpointer)inv_table_children[x][y],
+			G_SIGNAL_MATCH_FUNC, 0, 0, NULL,
 			G_CALLBACK (drawingarea_inventory_table_expose_event),
 			NULL);
-	    if (handler) 
+	    if (handler)
 		g_signal_handler_disconnect((gpointer) inv_table_children[x][y], handler);
 
 	    /* Hide the widget so that the tooltips doesn't show up */
@@ -916,7 +916,7 @@ void draw_lists ()
  * and if they change tabs, draw the new tab and get rid of the
  * old info.
  * Ideally, I'd like to call draw_inv() from this function,
- * but there is some oddity 
+ * but there is some oddity
  */
 void
 on_notebook_switch_page                (GtkNotebook     *notebook,
@@ -976,8 +976,8 @@ void animate_inventory()
     valid = gtk_tree_model_get_iter_first (GTK_TREE_MODEL(store), &iter);
 
     while (valid) {
-	gtk_tree_model_get (GTK_TREE_MODEL(store), &iter, 
-                          LIST_OBJECT, &tmp, 
+	gtk_tree_model_get (GTK_TREE_MODEL(store), &iter,
+                          LIST_OBJECT, &tmp,
                           -1);
 
 	/* This is an object with animations */

@@ -6,12 +6,12 @@ Install Steps:
     libraries.
     If you want png support, you will need to install the png
     library.
-    If you want sdl support ( recommended) you will need both gtk and png 
-    as well as the main SDL library and the SDL_image library, both of 
-    which can be found at http://www.libsdl.org if not already installed 
+    If you want sdl support ( recommended) you will need both gtk and png
+    as well as the main SDL library and the SDL_image library, both of
+    which can be found at http://www.libsdl.org if not already installed
     on your system.
 
-1)  type './configure' to configure for your OS/system.  Most options 
+1)  type './configure' to configure for your OS/system.  Most options
     normally understood by configure should be available.
     The configure script will try to make all the right decisions.  It will
     search for the needed libraries and headers.   You may need to give
@@ -19,7 +19,7 @@ Install Steps:
 
     If configure finds gtk libraries, it will build the gcfclient in addition
     to the cfclient.  If you don't want this (only cfclient), use the
-    --disable-gtk (there is no way to disable the cfclient at this time - 
+    --disable-gtk (there is no way to disable the cfclient at this time -
     if you are able to compile the gtk client, you also have all the tools for
     for the cfclient).
 
@@ -31,9 +31,9 @@ Install Steps:
     sound daemon).  If you want to use the builtin sound system, use
     the --enable-old-sound.  See sound notes further down.
 
-    To specify additional places to find header files, use the 
+    To specify additional places to find header files, use the
     --with-includes=value - this includes any -I or other options to provide
-    the compiler.  Example:  
+    the compiler.  Example:
     ./configure --with-includes="-I/usr/local/include -I/opt/xpm/include"
 
     Similarly, there is a --with-ldflags option.  Example:
@@ -57,7 +57,7 @@ Install Steps:
 3)  Type 'make install' to install the binaries.
 
 4)  The client can be run by typing 'cfclient' for the X11 version, gcfclient
-     for the gtk client, gcfclient -sdl for the SDL version. 
+     for the gtk client, gcfclient -sdl for the SDL version.
 
 ------------------------------------------------------------------------------
 Converting keybindings from old save files for use with the client:
@@ -68,11 +68,11 @@ Converting keybindings from old save files for use with the client:
 2) Type  "mkdir ~/.crossfire".  This will automatically be done the first
    time you run the client.
 
-3) Type awk 'BEGIN {ORS=" "} /^key / 
+3) Type awk 'BEGIN {ORS=" "} /^key /
 	{for (i=2; i<=NF; i++) print $i;printf "\n"}'
 	 infile > ~/.crossfire/keys
 	(Note that this should all be entered on one line, but is broken up
-	here to be more readable.)  
+	here to be more readable.)
 	'infile' is the name of the character file.
 
 Note that the client use global keybindings, and not per character.  This
@@ -115,16 +115,16 @@ stereo:  	1 means stereo sound, 0 - mono
 bits: 		bitrate of generated sound - 8 or 16
 		16 means better quality, especially when more sounds
 		are to be played simultaneously, but takes more memory
-		
+
 signed: 	if we should sent signed data to the soundcard. 1 means yes.
 
 frequency:	speed of playing data. This should be 11025, or sound pitch
-		will change 
-		
+		will change
+
 buffers: 	how many buffers to allocate
 buflen: 	how big the buffers should be. buffers*buflen shouldn't be
                 smaller than the longest sound to be played.
-		
+
 simultaneously: home many sound can be played at the same time. When this
 		setting is bigger, each sound volume will decrease.
 
@@ -148,7 +148,7 @@ Each buffer is cleaned after playing.
 
 Sounds data is multiplied by some ratio (<1) evaluated from it's position and
 volume and added to the buffers, starting from the next after the one being
-played. 
+played.
 
 So bigger buffer means bigger delay, before the sound is actually played, but
 the smaller buffer is, the bigger is possibility, we won't succeed filling the
@@ -165,7 +165,7 @@ you download the image archive and install it.  The default location
 for the archive is <prefix>/share/cfclient/, where <prefix> is deteremined
 by the -prefix= option given when running configure.
 
-The mechanism the client uses to find a matching image file when the 
+The mechanism the client uses to find a matching image file when the
 server tells it an image name is thus:
 
 1) Look in ~/.crossfire/gfx.  If an image is found here, irrespective of the
@@ -181,5 +181,3 @@ matter what image location we use, as it is the same image.
 
 4) Get the image from the server.  If -cache is set, a copy of it is put into
 ~/.crossfire/crossfire-images.
-
-
