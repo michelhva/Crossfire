@@ -55,35 +55,35 @@ public class jxclient
         try
         {
             Preferences prefs = Preferences.userRoot();
-            String str_width  = prefs.get("width", "1024");
+            String str_width = prefs.get("width", "1024");
             String str_height = prefs.get("height", "768");
-            String str_bpp    = prefs.get("bpp", "-1");
-            String str_freq   = prefs.get("frequency", "0");
-            String str_skin   = prefs.get("skin", "com.realtime.crossfire.jxclient.JXCSkinPrelude");
+            String str_bpp = prefs.get("bpp", "-1");
+            String str_freq = prefs.get("frequency", "0");
+            String str_skin = prefs.get("skin", "com.realtime.crossfire.jxclient.JXCSkinPrelude");
             boolean mkdir_result = (new File("cache")).mkdirs();
-            for(int i=0; i<args.length; i++)
+            for (int i = 0; i < args.length; i++)
             {
-                if ((args[i].equals("-W"))&&(i+1<args.length))
+                if ((args[i].equals("-W")) && (i+1 < args.length))
                 {
                     str_width = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-H"))&&(i+1<args.length))
+                else if ((args[i].equals("-H")) && (i+1 < args.length))
                 {
                     str_height = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-B"))&&(i+1<args.length))
+                else if ((args[i].equals("-B")) && (i+1 < args.length))
                 {
                     str_bpp = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-F"))&&(i+1<args.length))
+                else if ((args[i].equals("-F")) && (i+1 < args.length))
                 {
                     str_freq = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-S"))&&(i+1<args.length))
+                else if ((args[i].equals("-S")) && (i+1 < args.length))
                 {
                     str_skin = args[i+1];
                     i++;
@@ -105,15 +105,14 @@ public class jxclient
                     System.exit(1);
                 }
             }
-            prefs.put("width",      str_width);
-            prefs.put("height",     str_height);
-            prefs.put("bpp",        str_bpp);
-            prefs.put("frequency",  str_freq);
-            prefs.put("skin",       str_skin);
+            prefs.put("width", str_width);
+            prefs.put("height", str_height);
+            prefs.put("bpp", str_bpp);
+            prefs.put("frequency", str_freq);
+            prefs.put("skin", str_skin);
 
             JXCWindow jxwin = new JXCWindow();
-            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height),
-                      Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin);
+            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height), Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin);
         }
         catch (Exception e)
         {

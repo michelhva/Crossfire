@@ -33,11 +33,13 @@ public class CrossfireCommandStatsEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     private Stats mystats;
+
     public CrossfireCommandStatsEvent(Object src, Stats st)
     {
         super(src);
         mystats = st;
     }
+
     public Stats getStats()
     {
         return mystats;

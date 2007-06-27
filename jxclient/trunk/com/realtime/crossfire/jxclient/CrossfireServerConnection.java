@@ -64,18 +64,17 @@ public class CrossfireServerConnection extends ServerConnection
      */
     public static final int MAP_HEIGHT = 13;
 
-    private List<CrossfireGoodbyeListener> mylisteners_goodbye =
-            new ArrayList<CrossfireGoodbyeListener>();
-    private List<CrossfireAddmeSuccessListener> mylisteners_addme_success =
-            new ArrayList<CrossfireAddmeSuccessListener>();
-    private List<CrossfireDrawinfoListener> mylisteners_drawinfo =
-            new ArrayList<CrossfireDrawinfoListener>();
-    private List<CrossfireDrawextinfoListener> mylisteners_drawextinfo =
-            new ArrayList<CrossfireDrawextinfoListener>();
-    private List<CrossfireAddmeFailedListener> mylisteners_addme_failed =
-            new ArrayList<CrossfireAddmeFailedListener>();
-    private List<CrossfireQueryListener> mylisteners_query =
-            new ArrayList<CrossfireQueryListener>();
+    private List<CrossfireGoodbyeListener> mylisteners_goodbye = new ArrayList<CrossfireGoodbyeListener>();
+
+    private List<CrossfireAddmeSuccessListener> mylisteners_addme_success = new ArrayList<CrossfireAddmeSuccessListener>();
+
+    private List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
+
+    private List<CrossfireDrawextinfoListener> mylisteners_drawextinfo = new ArrayList<CrossfireDrawextinfoListener>();
+
+    private List<CrossfireAddmeFailedListener> mylisteners_addme_failed = new ArrayList<CrossfireAddmeFailedListener>();
+
+    private List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
 
     public static final int MSG_TYPE_BOOK_CLASP_1 = 1;
     public static final int MSG_TYPE_BOOK_CLASP_2 = 2;
@@ -975,7 +974,7 @@ public class CrossfireServerConnection extends ServerConnection
                     final int nameLength = packet[pos++]&0xFF;
                     final String name = new String(packet, pos, nameLength, "UTF-8");
                     pos += nameLength;
-                    if(pos != packet.length) break;
+                    if (pos != packet.length) break;
                     ItemsList.createPlayer(tag, weight, face, name);
                 }
                 return;
@@ -1238,7 +1237,7 @@ public class CrossfireServerConnection extends ServerConnection
                         final int valAnim = (flags&CfItem.UPD_ANIM) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valAnimSpeed = (flags&CfItem.UPD_ANIM) != 0 ? packet[pos++]&0xFF : 0;
                         final int valNrof = (flags&CfItem.UPD_NROF) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if(pos != packet.length) break;
+                        if (pos != packet.length) break;
                         ItemsList.updateItem(flags, tag, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                     }
                     return;
@@ -1255,7 +1254,7 @@ public class CrossfireServerConnection extends ServerConnection
                         final int mana = (flags&UPD_SP_MANA) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int grace = (flags&UPD_SP_GRACE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int damage = (flags&UPD_SP_DAMAGE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if(pos != packet.length) break;
+                        if (pos != packet.length) break;
                         ItemsList.updateSpell(flags, tag, mana, grace, damage);
                     }
                     return;
@@ -1476,7 +1475,7 @@ public class CrossfireServerConnection extends ServerConnection
         else if (infoType.equals("skill_info"))
         {
             String r = "";
-            while(r!=null)
+            while (r != null)
             {
                 r = d.readLine();
                 if (r!=null)
@@ -1622,10 +1621,11 @@ public class CrossfireServerConnection extends ServerConnection
     {
         return ItemsList.getPlayer();
     }
+
     public void drawInfo(String msg, int col)
     {
         CrossfireCommandDrawinfoEvent evt = new
-                CrossfireCommandDrawinfoEvent(this,msg,col);
+                CrossfireCommandDrawinfoEvent(this, msg, col);
         Iterator<CrossfireDrawinfoListener> it = mylisteners_drawinfo.iterator();
         while (it.hasNext())
         {

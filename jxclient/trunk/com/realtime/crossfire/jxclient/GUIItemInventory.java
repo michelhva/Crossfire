@@ -88,7 +88,7 @@ public class GUIItemInventory extends GUIItemItem
     protected void button1Clicked(JXCWindow jxcw)
     {
         final CfItem item = getItem();
-        if(item == null)
+        if (item == null)
         {
             return;
         }
@@ -137,7 +137,7 @@ public class GUIItemInventory extends GUIItemItem
     protected void button3Clicked(JXCWindow jxcw)
     {
         final CfItem item = getItem();
-        if(item == null)
+        if (item == null)
         {
             return;
         }

@@ -30,9 +30,13 @@ import java.io.UnsupportedEncodingException;
 public class ScriptProcess extends Thread implements CrossfireScriptMonitorListener
 {
     private String mycmd;
+
     private JXCWindow mywindow;
+
     private InputStream in;
+
     private OutputStream out;
+
     private OutputStreamWriter osw;
 
     public ScriptProcess(String cmdline, JXCWindow win) throws IOException
@@ -46,6 +50,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         osw = new OutputStreamWriter(out);
         start();
     }
+
     public void run()
     {
         try
@@ -64,10 +69,12 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         mywindow.terminateScript(this);
     }
+
     public OutputStream getOutputStream()
     {
         return out;
     }
+
     public void commandSent(final byte[] packet, final int length)
     {
         final String cmd;
@@ -75,12 +82,13 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
             cmd = new String(packet, 0, length, "ISO-8859-1");
         }
-        catch(final UnsupportedEncodingException ex)
+        catch (final UnsupportedEncodingException ex)
         {
             throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
         }
         commandSent(cmd);
     }
+
     public void commandSent(String cmd)
     {
         try
@@ -93,20 +101,24 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
             e.printStackTrace();
         }
     }
+
     public String toString()
     {
         return mycmd;
     }
+
     private void cmd_watch(String cmdline)
     {
         String parms = cmdline.substring(6);
         System.out.println(" - Watch   :"+parms);
     }
+
     private void cmd_unwatch(String cmdline)
     {
         String parms = cmdline.substring(8);
         System.out.println(" - Unwatch :"+parms);
     }
+
     private void cmd_request(String cmdline)
     {
         String parms = cmdline.substring(8);
@@ -154,12 +166,12 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
                 {
                     if (Stats.getSkill(i) != null)
                     {
-                        str = str+ ","+Stats.getSkill(i).getLevel()+","+Stats.getSkill(i).getExperience();
+                        str = str+","+Stats.getSkill(i).getLevel()+","+Stats.getSkill(i).getExperience();
                     }
                 }
                 catch (Exception e)
                 {
-                    i=201;
+                    i = 201;
                 }
             }
             commandSent(str);
@@ -167,11 +179,11 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         else if (parms.equals("stat resists"))
         {
             String str = "";
-            for(int i= Stats.CS_STAT_RESIST_START; i<=Stats.CS_STAT_RESIST_END;i++)
+            for (int i = Stats.CS_STAT_RESIST_START; i <= Stats.CS_STAT_RESIST_END; i++)
             {
                 str = str+st.getStat(i);
-                if (i<Stats.CS_STAT_RESIST_END)
-                    str+=",";
+                if (i < Stats.CS_STAT_RESIST_END)
+                    str += ",";
             }
             commandSent(str);
         }
@@ -221,6 +233,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
         }
     }
+
     public void runScriptCommand(String cmdline)
     {
         System.out.println("Script Command:"+cmdline);
@@ -249,8 +262,8 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         else if (cmdline.startsWith("issue "))
         {
             String parms = cmdline.substring(6);
-            String[] pps = parms.split(" ",3);
-            for (int i=0; i<Integer.parseInt(pps[0]); i++)
+            String[] pps = parms.split(" ", 3);
+            for (int i = 0; i < Integer.parseInt(pps[0]); i++)
                 mywindow.sendNcom(0, pps[2]);
         }
         else if (cmdline.startsWith("draw "))

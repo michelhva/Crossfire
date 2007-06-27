@@ -182,7 +182,7 @@ ex.printStackTrace();
                                     }
                                 }
                             }
-                            else if(line.startsWith("code "))
+                            else if (line.startsWith("code "))
                             {
                                 final String[] tmp = line.substring(5).split(" ", 3);
                                 if (tmp.length != 3)
@@ -268,9 +268,9 @@ ex.printStackTrace();
                                 bw.write(keyCodeKeyBinding.getCommandString());
                                 bw.newLine();
                             }
-                            else if(keyBinding instanceof KeyCharKeyBinding )
+                            else if (keyBinding instanceof KeyCharKeyBinding)
                             {
-                                final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding )keyBinding;
+                                final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding)keyBinding;
                                 bw.write("char ");
                                 bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
                                 bw.write(' ');

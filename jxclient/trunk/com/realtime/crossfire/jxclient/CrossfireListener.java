@@ -28,21 +28,38 @@ package com.realtime.crossfire.jxclient;
 public interface CrossfireListener
 {
     public void commandImageReceived(CrossfireCommandImageEvent evt);
+
     public void commandGoodbyeReceived(CrossfireCommandGoodbyeEvent evt);
+
     public void commandAddmeSuccessReceived(CrossfireCommandAddmeSuccessEvent evt);
+
     public void commandFaceReceived(CrossfireCommandFaceEvent evt);
+
     public void commandItemReceived(CrossfireCommandItemEvent evt);
+
     public void commandMapReceived(CrossfireCommandMapEvent evt);
+
     public void commandNewmapReceived(CrossfireCommandNewmapEvent evt);
+
     public void commandPlayerReceived(CrossfireCommandPlayerEvent evt);
+
     public void commandStatsReceived(CrossfireCommandStatsEvent evt);
+
     public void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt);
+
     public void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
+
     public void commandDrawextinfoReceived(CrossfireCommandDrawinfoEvent evt);
+
     public void commandAnimReceived(CrossfireCommandAnimEvent evt);
+
     public void commandVersionReceived(CrossfireCommandVersionEvent evt);
+
     public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
+
     public void commandAddmeFailedReceived(CrossfireCommandAddmeFailedEvent evt);
+
     public void commandSetupReceived(CrossfireCommandSetupEvent evt);
+
     public void commandQueryReceived(CrossfireCommandQueryEvent evt);
 }

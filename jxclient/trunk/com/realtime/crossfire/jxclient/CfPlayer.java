@@ -33,40 +33,45 @@ import java.util.List;
  */
 public class CfPlayer extends CfItem
 {
-    private static List<CrossfireStatsListener> mylisteners_stats =
-            new ArrayList<CrossfireStatsListener>();
-    private static List<CrossfirePlayerListener> mylisteners_player =
-            new ArrayList<CrossfirePlayerListener>();
+    private static List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
+
+    private static List<CrossfirePlayerListener> mylisteners_player = new ArrayList<CrossfirePlayerListener>();
 
     private static Stats mystats = new Stats();
 
     public CfPlayer(int tag, int weight, Face face, String name)
     {
-        super(0,tag,0,weight,face,name,name,1);
+        super(0, tag, 0, weight, face, name, name, 1);
     }
+
     public static Stats getStats()
     {
         return mystats;
     }
+
     public static void addCrossfirePlayerListeners(final CrossfirePlayerListener listener)
     {
         mylisteners_player.add(listener);
     }
+
     public static void removeCrossfirePlayerListeners(final CrossfirePlayerListener listener)
     {
         mylisteners_player.remove(listener);
     }
+
     public static void addCrossfireStatsListeners(final CrossfireStatsListener listener)
     {
         mylisteners_stats.add(listener);
     }
+
     public static void removeCrossfireStatsListeners(final CrossfireStatsListener listener)
     {
         mylisteners_stats.remove(listener);
     }
+
     public static void setStatsProcessed()
     {
-        CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(),mystats);
+        CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), mystats);
         Iterator<CrossfireStatsListener> it = mylisteners_stats.iterator();
         while (it.hasNext())
         {

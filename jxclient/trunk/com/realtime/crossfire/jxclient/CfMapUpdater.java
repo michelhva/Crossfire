@@ -214,7 +214,7 @@ public class CfMapUpdater
      */
     private static void setMultiFace(final int x, final int y, final int layer, final int face)
     {
-        if(face == -1)
+        if (face == -1)
         {
             return;
         }
@@ -259,20 +259,20 @@ public class CfMapUpdater
         }
 
         int tx = dx;
-        while(tx > 0)
+        while (tx > 0)
         {
             map.scroll(-1, 0);
-            for(int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
             {
                 map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, y);
                 map.dirty(CrossfireServerConnection.MAP_WIDTH-1, y);
             }
             tx--;
         }
-        while(tx < 0)
+        while (tx < 0)
         {
             map.scroll(+1, 0);
-            for(int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
             {
                 map.clearSquare(0, y);
                 map.dirty(0, y);
@@ -281,20 +281,20 @@ public class CfMapUpdater
         }
 
         int ty = dy;
-        while(ty > 0)
+        while (ty > 0)
         {
             map.scroll(0, -1);
-            for(int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
             {
                 map.clearSquare(x, CrossfireServerConnection.MAP_HEIGHT-1);
                 map.dirty(x, CrossfireServerConnection.MAP_HEIGHT-1);
             }
             ty--;
         }
-        while(ty < 0)
+        while (ty < 0)
         {
             map.scroll(0, +1);
-            for(int x = 0; x <= CrossfireServerConnection.MAP_WIDTH; x++)
+            for (int x = 0; x <= CrossfireServerConnection.MAP_WIDTH; x++)
             {
                 map.clearSquare(x, 0);
                 map.dirty(x, 0);

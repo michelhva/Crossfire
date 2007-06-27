@@ -31,23 +31,39 @@ import javax.swing.event.EventListenerList;
 public class CfItem
 {
     private final int mytag;
+
     private int myflags;
+
     private int myweight;
+
     private Face myface;
+
     private String myname;
+
     private String mynamepl;
+
     private int mynrof;
+
     private final int mylocation;
+
     private final int mytype;
 
     private boolean applied = false;
+
     private boolean location = false;
+
     private boolean unpaid = false;
+
     private boolean magic = false;
+
     private boolean cursed = false;
+
     private boolean damned = false;
+
     private boolean open = false;
+
     private boolean nopick = false;
+
     private boolean locked = false;
 
     /**
@@ -89,6 +105,7 @@ public class CfItem
             modified = true;
         }
     }
+
     public void setWeight(int nv)
     {
         if (myweight != nv)
@@ -97,6 +114,7 @@ public class CfItem
             modified = true;
         }
     }
+
     public void setFace(Face f)
     {
         if (myface != f)
@@ -105,6 +123,7 @@ public class CfItem
             modified = true;
         }
     }
+
     public void setName(String n, String npl)
     {
         if (!myname.equals(n) || !npl.equals(npl))
@@ -114,6 +133,7 @@ public class CfItem
             modified = true;
         }
     }
+
     public void setNrOf(int nv)
     {
         if (mynrof != nv)
@@ -127,14 +147,17 @@ public class CfItem
     {
         return mytag;
     }
+
     public int getWeight()
     {
         return myweight;
     }
+
     public Face getFace()
     {
         return myface;
     }
+
     public String getName()
     {
         if (mynrof > 1)
@@ -142,59 +165,71 @@ public class CfItem
         else
             return myname;
     }
+
     public int getNrOf()
     {
         return mynrof;
     }
+
     public boolean isApplied()
     {
         return applied;
     }
+
     public boolean isLocation()
     {
         return location;
     }
+
     public boolean isUnpaid()
     {
         return unpaid;
     }
+
     public boolean isMagic()
     {
         return magic;
     }
+
     public boolean isCursed()
     {
         return cursed;
     }
+
     public boolean isDamned()
     {
         return damned;
     }
+
     public boolean isOpen()
     {
         return open;
     }
+
     public boolean isNoPick()
     {
         return nopick;
     }
+
     public boolean isLocked()
     {
         return locked;
     }
+
     public int getLocation()
     {
         return mylocation;
     }
+
     public int getType()
     {
         return mytype;
     }
-    public CfItem(int loc, int tag, int flags, int weight, Face face,
-                  String name, String namepl, int nrof, int type)
+
+    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof, int type)
     {
         mylocation = loc;
-        mytag   = tag;
+        mytag = tag;
         myflags = flags;
         computeFlags();
 
@@ -205,11 +240,11 @@ public class CfItem
         mynamepl = namepl;
         mytype = type;
     }
-    public CfItem(int loc, int tag, int flags, int weight, Face face,
-                  String name, String namepl, int nrof)
+
+    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof)
     {
         mylocation = loc;
-        mytag   = tag;
+        mytag = tag;
         myflags = flags;
         computeFlags();
 

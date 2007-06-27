@@ -38,24 +38,37 @@ import javax.imageio.ImageIO;
 public class GUIGauge extends GUIElement implements CrossfireStatsListener
 {
     private final int stat;
+
     private int curValue = 0;
+
     private int maxValue = -1;
+
     private int minValue = 0;
 
     private int fw = 0;
+
     private int fh = 0;
+
     private int fx = 0;
+
     private int fy = 0;
+
     private BufferedImage fPicture = null;
 
     private final BufferedImage pictureFull;
+
     private final BufferedImage pictureNegative;
+
     private final BufferedImage pictureEmpty;
+
     private final int orientation;
 
     public static final int ORIENTATION_WE = 0;
+
     public static final int ORIENTATION_EW = 1;
+
     public static final int ORIENTATION_NS = 2;
+
     public static final int ORIENTATION_SN = 3;
 
     public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final int orientation) throws IOException

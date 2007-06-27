@@ -210,7 +210,7 @@ public class ItemsManager
         {
             addModified(modifiedFloors, index, list.size()+1);
         }
-        else if(player != null && where == player.getTag())
+        else if (player != null && where == player.getTag())
         {
             addModified(modifiedInventories, index, list.size()+1);
         }
@@ -240,7 +240,7 @@ public class ItemsManager
             list.add(item);
             modifiedFloors.add(list.size()-1);
         }
-        else if(player != null && where == player.getTag())
+        else if (player != null && where == player.getTag())
         {
             // inventory order differs from server order, so insert at correct
             // position

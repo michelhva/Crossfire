@@ -37,8 +37,11 @@ import java.util.List;
 public class Metaserver
 {
     private static String metaserver_name = "crossfire.real-time.com";
+
     private static int metaserver_port = 13326;
+
     private static List<MetaserverEntry> metalist = null;
+
     public static synchronized List<MetaserverEntry> query()
     {
         if (metalist != null)
@@ -60,10 +63,7 @@ public class Metaserver
                 if (entry != null)
                 {
                     String[] entries = entry.split("\\|");
-                    MetaserverEntry me = new MetaserverEntry(
-                            entries[0], entries[2], entries[5], entries[4],
-                            Integer.parseInt(entries[3]),
-                            Integer.parseInt(entries[1]));
+                    MetaserverEntry me = new MetaserverEntry(entries[0], entries[2], entries[5], entries[4], Integer.parseInt(entries[3]), Integer.parseInt(entries[1]));
                     metalist.add(me);
                 }
             }
@@ -73,7 +73,7 @@ public class Metaserver
         }
         catch (UnknownHostException e)
         {
-            MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost", "unknown", 0,0);
+            MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost", "unknown", 0, 0);
             metalist.add(me);
         }
         catch (Exception e)

@@ -41,22 +41,22 @@ import javax.imageio.ImageIO;
 public class GUIMetaElement extends GUIElement implements GUIScrollable
 {
     private BufferedImage mypicture_tcp = null;
+
     private BufferedImage mypicture_udp = null;
+
     private Font myfont;
+
     private GUIText mytext;
+
     private GUILabel mylabel;
+
     private int myindex;
 
-    public GUIMetaElement
-            (final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String pic_tcp,
-                          String pic_udp, Font nf, GUIText txt, GUILabel comment,
-                          int meta_id) throws IOException
+    public GUIMetaElement(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String pic_tcp, String pic_udp, Font nf, GUIText txt, GUILabel comment, int meta_id) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_tcp =
-            ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
-        mypicture_udp =
-            ImageIO.read(this.getClass().getClassLoader().getResource(pic_udp));
+        mypicture_tcp = ImageIO.read(this.getClass().getClassLoader().getResource(pic_tcp));
+        mypicture_udp = ImageIO.read(this.getClass().getClassLoader().getResource(pic_udp));
         myfont = nf;
         mytext = txt;
         mylabel = comment;
@@ -64,17 +64,18 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         createBuffer();
         render();
     }
+
     protected void render()
     {
         List<MetaserverEntry> l = Metaserver.query();
         try
         {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice      gd = ge.getDefaultScreenDevice();
+            GraphicsDevice gd = ge.getDefaultScreenDevice();
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
 
-            if ((myindex < 0)||(myindex>=l.size()))
+            if ((myindex < 0) || (myindex>=l.size()))
                 return;
 
             MetaserverEntry mentry = l.get(myindex);
@@ -85,13 +86,11 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
             else
                 g.setColor(Color.GRAY);
             g.drawImage(mypicture_tcp, 0, 0, null);
-            g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "
-                    + mentry.getHost()+" - " + mentry.getComment(), 16,
-                    myfont.getSize()+1);
+            g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
             g.dispose();
-            if ((mylabel != null)&&active)
+            if ((mylabel != null) && active)
                 mylabel.setText(mentry.getComment());
-            if ((mytext != null)&&active)
+            if ((mytext != null) && active)
                 mytext.setText(mentry.getHost());
         }
         catch (Exception e)
@@ -100,6 +99,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         }
         setChanged();
     }
+
     public void mouseClicked(MouseEvent e)
     {
         int x = e.getX();
@@ -107,16 +107,19 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         int b = e.getButton();
         switch(b)
         {
-            case MouseEvent.BUTTON1:
-                active = true;
-                render();
-                break;
-            case MouseEvent.BUTTON2:
-                break;
-            case MouseEvent.BUTTON3:
-                break;
+        case MouseEvent.BUTTON1:
+            active = true;
+            render();
+            break;
+
+        case MouseEvent.BUTTON2:
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
         }
     }
+
     public void setActive(boolean act)
     {
         if (active && (!act))
@@ -149,6 +152,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         myindex++;
         render();
     }
+
     public int getIndex()
     {
         return myindex;

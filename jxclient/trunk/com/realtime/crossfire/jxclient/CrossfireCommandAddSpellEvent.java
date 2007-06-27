@@ -39,6 +39,7 @@ public class CrossfireCommandAddSpellEvent extends EventObject
         super(src);
         myspell = sp;
     }
+
     public Spell getSpell()
     {
         return myspell;

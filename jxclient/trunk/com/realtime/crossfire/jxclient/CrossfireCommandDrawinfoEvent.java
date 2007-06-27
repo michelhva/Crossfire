@@ -33,6 +33,7 @@ public class CrossfireCommandDrawinfoEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     private String mytext;
+
     private int mytype;
 
     public CrossfireCommandDrawinfoEvent(Object src, String msg, int type)
@@ -41,10 +42,12 @@ public class CrossfireCommandDrawinfoEvent extends EventObject
         mytext = msg;
         mytype = type;
     }
+
     public int getTextType()
     {
         return mytype;
     }
+
     public String getText()
     {
         return mytext;

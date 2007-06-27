@@ -33,11 +33,14 @@ public class CrossfireCommandDrawextinfoEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     private int mycolor;
+
     private int mytype;
+
     private int mysubtype;
+
     private String mymessage;
-    public CrossfireCommandDrawextinfoEvent(Object src, int color, int type,
-                                            int subtype, String message)
+
+    public CrossfireCommandDrawextinfoEvent(Object src, int color, int type, int subtype, String message)
     {
         super(src);
         mycolor = color;
@@ -45,18 +48,22 @@ public class CrossfireCommandDrawextinfoEvent extends EventObject
         mysubtype = subtype;
         mymessage = message;
     }
+
     public int getColor()
     {
         return mycolor;
     }
+
     public int getType()
     {
         return mytype;
     }
+
     public int getSubType()
     {
         return mysubtype;
     }
+
     public String getMessage()
     {
         return mymessage;

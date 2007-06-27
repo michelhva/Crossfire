@@ -49,9 +49,9 @@ public class CfMapPatch
      */
     public CfMapPatch(final CfMap map, final int x0, final int y0)
     {
-        for(int y = 0; y < SIZE; y++)
+        for (int y = 0; y < SIZE; y++)
         {
-            for(int x = 0; x < SIZE; x++)
+            for (int x = 0; x < SIZE; x++)
             {
                 square[x][y] = new CfMapSquare(map, x0+x, y0+y);
             }
@@ -130,9 +130,9 @@ public class CfMapPatch
      */
     public void clearAllSquares()
     {
-        for(int x = 0; x < SIZE; x++)
+        for (int x = 0; x < SIZE; x++)
         {
-            for(int y = 0; y < SIZE; y++)
+            for (int y = 0; y < SIZE; y++)
             {
                 square[x][y].clear();
             }

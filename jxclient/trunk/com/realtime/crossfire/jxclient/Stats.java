@@ -33,314 +33,377 @@ public class Stats
      * The Hit Points stat.
      * @since 1.0
      */
-    public static final int CS_STAT_HP     = 1;
+    public static final int CS_STAT_HP = 1;
+
     /**
      * The Maximum Hit Points stat.
      * @since 1.0
      */
-    public static final int CS_STAT_MAXHP  = 2;
+    public static final int CS_STAT_MAXHP = 2;
+
     /**
      * The Spell Points stat.
      * @since 1.0
      */
-    public static final int CS_STAT_SP     = 3;
+    public static final int CS_STAT_SP = 3;
+
     /**
      * The Maximum Spell Points stat.
      * @since 1.0
      */
-    public static final int CS_STAT_MAXSP  = 4;
+    public static final int CS_STAT_MAXSP = 4;
+
     /**
      * The Strength Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_STR    = 5;
+    public static final int CS_STAT_STR = 5;
+
     /**
      * The Intelligence Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_INT    = 6;
+    public static final int CS_STAT_INT = 6;
+
     /**
      * The Wisdom Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_WIS    = 7;
+    public static final int CS_STAT_WIS = 7;
+
     /**
      * The Dexterity Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_DEX    = 8;
+    public static final int CS_STAT_DEX = 8;
+
     /**
      * The Constitution Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_CON    = 9;
+    public static final int CS_STAT_CON = 9;
+
     /**
      * The Charisma Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_CHA    =10;
+    public static final int CS_STAT_CHA = 10;
+
     /**
      * The Global Experience (32bit encoding) stat.
      * @since 1.0
      */
-    public static final int CS_STAT_EXP    =11;
+    public static final int CS_STAT_EXP = 11;
+
     /**
      * The Global Level stat.
      * @since 1.0
      */
-    public static final int CS_STAT_LEVEL  =12;
+    public static final int CS_STAT_LEVEL = 12;
+
     /**
      * The Weapon Class stat.
      * @since 1.0
      */
-    public static final int CS_STAT_WC     =13;
+    public static final int CS_STAT_WC = 13;
+
     /**
      * The Armor Class stat.
      * @since 1.0
      */
-    public static final int CS_STAT_AC     =14;
+    public static final int CS_STAT_AC = 14;
+
     /**
      * The Damage stat.
      * @since 1.0
      */
-    public static final int CS_STAT_DAM    =15;
+    public static final int CS_STAT_DAM = 15;
+
     /**
      * The Armour stat.
      * @since 1.0
      */
-    public static final int CS_STAT_ARMOUR =16;
+    public static final int CS_STAT_ARMOUR = 16;
+
     /**
      * The Speed stat.
      * @since 1.0
      */
-    public static final int CS_STAT_SPEED  =17;
+    public static final int CS_STAT_SPEED = 17;
+
     /**
      * The Food stat.
      * @since 1.0
      */
-    public static final int CS_STAT_FOOD   =18;
+    public static final int CS_STAT_FOOD = 18;
+
     /**
      * The Weapon Speed stat.
      * @since 1.0
      */
-    public static final int CS_STAT_WEAP_SP=19;
+    public static final int CS_STAT_WEAP_SP = 19;
+
     /**
      * The Range stat - this is what is currently readied by the player to fire.
      * @since 1.0
      */
-    public static final int CS_STAT_RANGE  =20;
+    public static final int CS_STAT_RANGE = 20;
+
     /**
      * The Title stat.
      * @since 1.0
      */
-    public static final int CS_STAT_TITLE  =21;
+    public static final int CS_STAT_TITLE = 21;
+
     /**
      * The Power Primary stat.
      * @since 1.0
      */
-    public static final int CS_STAT_POW    =22;
+    public static final int CS_STAT_POW = 22;
+
     /**
      * The Grace stat.
      * @since 1.0
      */
-    public static final int CS_STAT_GRACE  =23;
+    public static final int CS_STAT_GRACE = 23;
+
     /**
      * The Maximum Grace stat.
      * @since 1.0
      */
-    public static final int CS_STAT_MAXGRACE      = 24;
+    public static final int CS_STAT_MAXGRACE = 24;
+
     /**
      * The various flags used in stats.
      * @since 1.0
      */
     public static final int CS_STAT_FLAGS = 25;
+
     /**
      * The Weight Limit stat.
      * @since 1.0
      */
-    public static final int CS_STAT_WEIGHT_LIM    = 26;
+    public static final int CS_STAT_WEIGHT_LIM = 26;
+
     /**
      * The Global Experience (64bit encoding) stat.
      * @since 1.0
      */
     public static final int CS_STAT_EXP64 = 28;
+
     public static final int CS_STAT_SPELL_ATTUNE = 29;
+
     public static final int CS_STAT_SPELL_REPEL = 30;
+
     public static final int CS_STAT_SPELL_DENY = 31;
 
     /* Start & end of resistances, inclusive. */
+
     /**
      * Beginning index of the resistances.
      * @since 1.0
      */
-    public static final int CS_STAT_RESIST_START  = 100;
+    public static final int CS_STAT_RESIST_START = 100;
+
     /**
      * End index of the resistances.
      * @since 1.0
      */
-    public static final int CS_STAT_RESIST_END    = 117;
+    public static final int CS_STAT_RESIST_END = 117;
+
     /**
      * Resistance to physical attacks.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_PHYS      = 100;
+    public static final int CS_STAT_RES_PHYS = 100;
+
     /**
      * Resistance to magical attacks.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_MAG       = 101;
+    public static final int CS_STAT_RES_MAG = 101;
+
     /**
      * Resistance to fire.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_FIRE      = 102;
+    public static final int CS_STAT_RES_FIRE = 102;
+
     /**
      * Resistance to electricity.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_ELEC      = 103;
+    public static final int CS_STAT_RES_ELEC = 103;
+
     /**
      * Resistance to cold.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_COLD      = 104;
+    public static final int CS_STAT_RES_COLD = 104;
+
     /**
      * Resistance to confusion.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_CONF      = 105;
+    public static final int CS_STAT_RES_CONF = 105;
+
     /**
      * Resistance to acid.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_ACID      = 106;
+    public static final int CS_STAT_RES_ACID = 106;
+
     /**
      * Resistance to drain life.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_DRAIN     = 107;
+    public static final int CS_STAT_RES_DRAIN = 107;
+
     /**
      * Resistance to ghost hit.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_GHOSTHIT  = 108;
+    public static final int CS_STAT_RES_GHOSTHIT = 108;
+
     /**
      * Resistance to poison.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_POISON    = 109;
+    public static final int CS_STAT_RES_POISON = 109;
+
     /**
      * Resistance to slowness.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_SLOW      = 110;
+    public static final int CS_STAT_RES_SLOW = 110;
+
     /**
      * Resistance to paralysis.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_PARA      = 111;
+    public static final int CS_STAT_RES_PARA = 111;
+
     /**
      * Resistance to turn undead.
      * @since 1.0
      */
-    public static final int CS_STAT_TURN_UNDEAD   = 112;
+    public static final int CS_STAT_TURN_UNDEAD = 112;
+
     /**
      * Resistance to fear.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_FEAR      = 113;
+    public static final int CS_STAT_RES_FEAR = 113;
+
     /**
      * Resistance to depletion.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_DEPLETE   = 114;
+    public static final int CS_STAT_RES_DEPLETE = 114;
+
     /**
      * Resistance to death.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_DEATH     = 115;
+    public static final int CS_STAT_RES_DEATH = 115;
+
     /**
      * Resistance to holy word.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_HOLYWORD  = 116;
+    public static final int CS_STAT_RES_HOLYWORD = 116;
+
     /**
      * Resistance to blindness.
      * @since 1.0
      */
-    public static final int CS_STAT_RES_BLIND     = 117;
+    public static final int CS_STAT_RES_BLIND = 117;
 
     /* Start & end of skill experience + skill level, inclusive. */
+
     /**
      * Beginning index of skill experience stats.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_START    = 118;
+    public static final int CS_STAT_SKILLEXP_START = 118;
+
     /**
      * End index of skill experience stats.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_END      = 129;
+    public static final int CS_STAT_SKILLEXP_END = 129;
+
     /**
      * Agility skills experience.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_AGILITY  = 118;
+    public static final int CS_STAT_SKILLEXP_AGILITY = 118;
+
     /**
      * Agility skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_AGLEVEL  = 119;
+    public static final int CS_STAT_SKILLEXP_AGLEVEL = 119;
+
     /**
      * Personal skills experience.
      * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PERSONAL = 120;
+
     /**
      * Personal skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_PELEVEL  = 121;
+    public static final int CS_STAT_SKILLEXP_PELEVEL = 121;
+
     /**
      * Mental skills experience.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_MENTAL   = 122;
+    public static final int CS_STAT_SKILLEXP_MENTAL = 122;
+
     /**
      * Mental skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_MELEVEL  = 123;
+    public static final int CS_STAT_SKILLEXP_MELEVEL = 123;
+
     /**
      * Physical skills experience.
      * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PHYSIQUE = 124;
+
     /**
      * Physical skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_PHLEVEL  = 125;
+    public static final int CS_STAT_SKILLEXP_PHLEVEL = 125;
+
     /**
      * Magical skills experience.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_MAGIC    = 126;
+    public static final int CS_STAT_SKILLEXP_MAGIC = 126;
+
     /**
      * Magical skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_MALEVEL  = 127;
+    public static final int CS_STAT_SKILLEXP_MALEVEL = 127;
+
     /**
      * Wisdom skills experience.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_WISDOM   = 128;
+    public static final int CS_STAT_SKILLEXP_WISDOM = 128;
+
     /**
      * Wisdom skills level.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLEXP_WILEVEL  = 129;
+    public static final int CS_STAT_SKILLEXP_WILEVEL = 129;
 
     /**
      * CS_STAT_SKILLINFO is used as the starting index point.  Skill number->name
@@ -348,7 +411,7 @@ public class Stats
      * be used here.
      * @since 1.0
      */
-    public static final int CS_STAT_SKILLINFO          = 140;
+    public static final int CS_STAT_SKILLINFO = 140;
 
     /**
      * CS_NUM_SKILLS does not match how many skills there really
@@ -356,7 +419,7 @@ public class Stats
      * can have some idea how many skill categories there may be.
      * @since 1.0
      */
-    public static final int CS_NUM_SKILLS              = 50;
+    public static final int CS_NUM_SKILLS = 50;
 
     /**
      * The table of all known skills.
@@ -368,21 +431,25 @@ public class Stats
      * The total number of resistances.
      * @since 1.0
      */
-    public static final int RESIST_TYPES               = 18;
+    public static final int RESIST_TYPES = 18;
 
     private int[] mystats = new int[512];
+
     private long myexp = 0;
+
     private String myrange = "";
+
     private String mytitle = "";
 
     private static final int[] skill_level = new int[CS_NUM_SKILLS];
+
     private static final long[] skill_exp = new long[CS_NUM_SKILLS];
 
     static
     {
-        for(int i=0;i<CS_NUM_SKILLS;i++)
+        for (int i = 0; i < CS_NUM_SKILLS; i++)
         {
-            myskills[i]=null;
+            myskills[i] = null;
         }
     }
 
@@ -395,7 +462,7 @@ public class Stats
     public static void addSkill(int id, String n)
     {
         Skill sk = new Skill(id, n);
-        myskills[id-Stats.CS_STAT_SKILLINFO]=sk;
+        myskills[id-Stats.CS_STAT_SKILLINFO] = sk;
     }
 
     /**
@@ -444,8 +511,8 @@ public class Stats
      */
     public void setSkill(int skill, int level, long exp)
     {
-        skill_level[skill-CS_STAT_SKILLINFO]=level;
-        skill_exp[skill-CS_STAT_SKILLINFO]=exp;
+        skill_level[skill-CS_STAT_SKILLINFO] = level;
+        skill_exp[skill-CS_STAT_SKILLINFO] = exp;
     }
 
     /**
@@ -537,9 +604,9 @@ public class Stats
      */
     public Stats()
     {
-        for(int i=0;i<250;i++)
+        for (int i = 0; i < 250; i++)
         {
-            mystats[i]=0;
+            mystats[i] = 0;
         }
     }
 }

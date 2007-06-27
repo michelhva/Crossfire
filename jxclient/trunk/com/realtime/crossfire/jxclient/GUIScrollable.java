@@ -44,5 +44,6 @@ public interface GUIScrollable
     public boolean canScrollDown();
 
     public void scrollDown();
+
     public int getIndex();
 }

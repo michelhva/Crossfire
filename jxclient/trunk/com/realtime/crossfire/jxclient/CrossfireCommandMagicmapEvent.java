@@ -33,7 +33,9 @@ public class CrossfireCommandMagicmapEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     private int mywidth, myheight;
+
     private int mypx, mypy;
+
     private byte[] mydata;
 
     public CrossfireCommandMagicmapEvent(Object src, int w, int h, int px, int py, byte[] d)
@@ -45,22 +47,27 @@ public class CrossfireCommandMagicmapEvent extends EventObject
         mypy = py;
         mydata = d;
     }
+
     public int getWidth()
     {
         return mywidth;
     }
+
     public int getHeight()
     {
         return myheight;
     }
+
     public int getPX()
     {
         return mypx;
     }
+
     public int getPY()
     {
         return mypy;
     }
+
     public byte[] getData()
     {
         return mydata;

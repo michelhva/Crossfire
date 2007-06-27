@@ -118,7 +118,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
 
             try
             {
-                for(int i = myindex; i < myindex+mynrlines; i++)
+                for (int i = myindex; i < myindex+mynrlines; i++)
                 {
                     g.setColor(mytextcolor.get(i));
                     if (mytext.get(i) != null)
