@@ -123,39 +123,6 @@ public class Gui
     }
 
     /**
-     * Repaint the gui and clear the changed flags of all repainted elements.
-     *
-     * @param g The <code>Graphics</code> to paint into.
-     *
-     * @param jxWindow The window to deliver change events to.
-     */
-    public void redrawElements(final Graphics g, final JXCWindow jxcWindow)
-    {
-        for (final GUIElement element : elements)
-        {
-            if (element.isVisible())
-            {
-                final BufferedImage bufferedImage = element.getBuffer();
-                synchronized(bufferedImage)
-                {
-                    g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
-                    element.resetChanged();
-                }
-            }
-        }
-
-        if (tooltip != null && tooltip.isVisible())
-        {
-            final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized(bufferedImage)
-            {
-                g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
-                tooltip.resetChanged();
-            }
-        }
-    }
-
-    /**
      * Check whether any visible gui element of this gui has been changed since
      * it was painted last time.
      *
