@@ -155,7 +155,7 @@ public class JXCWindowRenderer
         currentDialogChanged = false;
         if (currentDialog != null)
         {
-            currentDialog.redrawElements(g, jxcWindow);
+            currentDialog.redraw(g, jxcWindow);
         }
     }
 
