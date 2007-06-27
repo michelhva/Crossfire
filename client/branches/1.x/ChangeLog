@@ -2,6 +2,9 @@
 Top of CVS tree:
 ------------------------------------------------------------------------------
 
+utils/mdk.sh: Make script work again.
+Andreas Kirschbaum 2007-06-27
+
 Trash obsolete junk.
 Remove 'map1cmd' variable which is always 1.
 Remove map1cmd, face, face1, item1 and some obsolete stuff.
