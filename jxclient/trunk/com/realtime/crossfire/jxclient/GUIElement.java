@@ -32,6 +32,12 @@ import java.awt.image.BufferedImage;
 public abstract class GUIElement implements MouseListener
 {
     /**
+     * The {@link Gui} this element is part of. Set to <code>null</code> if
+     * this element is not part of any gui.
+     */
+    private Gui gui = null;
+
+    /**
      * The x-coordinate for drawing this element to screen.
      */
     protected int x;
@@ -103,6 +109,26 @@ public abstract class GUIElement implements MouseListener
         this.w = w;
         this.h = h;
         myname = name;
+    }
+
+    /**
+     * Return the {@link Gui} this element is part of.
+     *
+     * @return The gui, or <code>null</code>.
+     */
+    public Gui getGui()
+    {
+        return gui;
+    }
+
+    /**
+     * Set the {@link Gui} this element is part of.
+     *
+     * @param gui The gui, or <code>null</code>.
+     */
+    public void setGui(final Gui gui)
+    {
+        this.gui = gui;
     }
 
     public String toString()

@@ -46,17 +46,25 @@ public class Gui
      */
     public void clear()
     {
+        for (final GUIElement element : elements)
+        {
+            element.setGui(null);
+        }
         elements.clear();
     }
 
     /**
-     * Add a {@link GUIElement} to this gui.
+     * Add a {@link GUIElement} to this gui. The element must not be added to
+     * more than one gui at a time.
      *
      * @param element The <code>GUIElement</code> to add.
      */
     public void add(final GUIElement element)
     {
+        if (element.getGui() != null) throw new IllegalArgumentException();
+
         elements.add(element);
+        element.setGui(this);
     }
 
     /**
