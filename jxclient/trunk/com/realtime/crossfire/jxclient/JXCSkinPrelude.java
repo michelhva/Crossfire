@@ -21,7 +21,9 @@ package com.realtime.crossfire.jxclient;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.FontFormatException;
 import java.io.InputStream;
+import java.io.IOException;
 
 /**
  *
@@ -43,30 +45,8 @@ public class JXCSkinPrelude implements JXCSkin
     {
         mydialog_keybind.clear();
 
-        Font font_default_medium = null;
-        Font font_stats = null;
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_stats = font_default_medium.deriveFont(12f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
+        final Font font_default_medium = getFont("default.theme/fonts/default.ttf");
+        final Font font_stats = font_default_medium.deriveFont(12f);
         try
         {
             //Query-Reply Dialog
@@ -104,85 +84,19 @@ public class JXCSkinPrelude implements JXCSkin
     {
         mydialog_query.clear();
 
-        Font font_default_small = null;
-        Font font_default_medium;
-        Font font_default_large;
-        Font font_log = null;
-        Font font_menu;
-        Font font_stats;
-        Font font_types;
-        Font font_cmdline = null;
-        GUICommandList command_rinv_up = new GUICommandList();
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_default_large = font_default_medium.deriveFont(16f);
-            font_menu = font_default_medium.deriveFont(14f);
-            font_stats = font_default_medium.deriveFont(12f);
-            font_types = font_default_medium.deriveFont(12f);
-            font_default_medium = font_default_medium.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/regular.ttf");
-            font_default_small = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_default_small = font_default_small.deriveFont(16f);
-            font_cmdline = font_default_small.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/courbd.ttf");
-            font_log = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_log = font_log.deriveFont(8f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
+        final Font font_default_normal = getFont("default.theme/fonts/default.ttf");
+        final Font font_default_large = font_default_normal.deriveFont(16f);
+        final Font font_menu = font_default_normal.deriveFont(14f);
+        final Font font_stats = font_default_normal.deriveFont(12f);
+        final Font font_types = font_default_normal.deriveFont(12f);
+        final Font font_default_medium = font_default_normal.deriveFont(14f);
+        final Font font_regular_normal = getFont("default.theme/fonts/regular.ttf");
+        final Font font_regular_small = font_regular_normal.deriveFont(16f);
+        final Font font_cmdline = font_regular_small.deriveFont(14f);
+        final Font font_log_normal = getFont("default.theme/fonts/courbd.ttf");
+        final Font font_log = font_log_normal.deriveFont(8f);
 
+        GUICommandList command_rinv_up = new GUICommandList();
         try
         {
             //Query-Reply Dialog
@@ -228,14 +142,16 @@ public class JXCSkinPrelude implements JXCSkin
         System.gc();
         System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
 
-        Font font_default_small = null;
-        Font font_default_medium = null;
-        Font font_default_large = null;
-        Font font_log = null;
-        Font font_menu = null;
-        Font font_stats = null;
-        Font font_types = null;
-        Font font_cmdline = null;
+        final Font font_default_normal = getFont("default.theme/fonts/default.ttf");
+        final Font font_regular_normal = getFont("default.theme/fonts/regular.ttf");
+        final Font font_default_small = font_regular_normal.deriveFont(8f);
+        final Font font_default_medium = font_default_normal.deriveFont(14f);
+        final Font font_default_large = font_default_normal.deriveFont(16f);
+        final Font font_log = getFont("default.theme/fonts/courbd.ttf").deriveFont(8f);
+        final Font font_menu = font_default_normal.deriveFont(14f);
+        final Font font_stats = font_default_normal.deriveFont(12f);
+        final Font font_types = font_default_normal.deriveFont(12f);
+        final Font font_cmdline = font_default_small.deriveFont(14f);
         GUICommandList command_log_upper_up = new GUICommandList();
         GUICommandList command_log_upper_down = new GUICommandList();
         GUICommandList command_rinv_down = new GUICommandList();
@@ -247,75 +163,6 @@ public class JXCSkinPrelude implements JXCSkin
         GUICommandList command_magicmap_display = new GUICommandList();
         GUICommandList command_magicmap_undisplay = new GUICommandList();
         GUICommandList command_menu_display = new GUICommandList();
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_default_medium = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_default_large = font_default_medium.deriveFont(16f);
-            font_menu = font_default_medium.deriveFont(14f);
-            font_stats = font_default_medium.deriveFont(12f);
-            font_types = font_default_medium.deriveFont(12f);
-            font_default_medium = font_default_medium.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/regular.ttf");
-            font_default_small = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_default_small = font_default_small.deriveFont(8f);
-            font_cmdline = font_default_small.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/courbd.ttf");
-            font_log = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_log = font_log.deriveFont(8f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
 
         try
         {
@@ -1531,31 +1378,8 @@ public class JXCSkinPrelude implements JXCSkin
         GUICommandList command_metaup = new GUICommandList();
         GUICommandList command_metadown = new GUICommandList();
 
-        Font font_metaurl = null;
-        Font font_description = null;
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_metaurl = font_metaurl.deriveFont(16f);
-            font_description = font_metaurl.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
+        final Font font_metaurl = getFont("default.theme/fonts/default.ttf").deriveFont(16f);
+        final Font font_description = font_metaurl.deriveFont(14f);
         try
         {
             GUIPicture gui_background = new GUIPicture(p, "background", 0, 0, 1024, 768, "default.theme/pictures/metaserver.png");
@@ -1627,29 +1451,7 @@ public class JXCSkinPrelude implements JXCSkin
         GUICommandList command_startmenu_meta = new GUICommandList();
         GUICommandList command_startmenu_quit = new GUICommandList();
 
-        Font font_metaurl = null;
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_metaurl = font_metaurl.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {
-            }
-        }
+        final Font font_metaurl = getFont("default.theme/fonts/default.ttf").deriveFont(14f);
         try
         {
             GUIPicture gui_background = new GUIPicture(p, "background", 160, 0, 714, 112, "default.theme/pictures/crossfire_logo.png");
@@ -1702,28 +1504,7 @@ public class JXCSkinPrelude implements JXCSkin
         mydialog_book.clear();
         GUICommandList command_book_close = new GUICommandList();
 
-        Font font_metaurl = null;
-        InputStream ttf = null;
-        try
-        {
-            ttf = this.getClass().getClassLoader().getResourceAsStream("default.theme/fonts/default.ttf");
-            font_metaurl = Font.createFont(Font.TRUETYPE_FONT, ttf);
-            font_metaurl = font_metaurl.deriveFont(14f);
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-            throw new JXCSkinException("Cannot load the fonts");
-        }
-        finally
-        {
-            try
-            {
-                ttf.close();
-            }
-            catch (Exception e)
-            {}
-        }
+        final Font font_metaurl = getFont("default.theme/fonts/default.ttf").deriveFont(14f);
         try
         {
 
@@ -1761,5 +1542,43 @@ public class JXCSkinPrelude implements JXCSkin
             throw new JXCSkinException("Cannot create the starting interface");
         }
         return mydialog_book;
+    }
+
+    /**
+     * Return a font by file name.
+     *
+     * @param The file name of the font file to load.
+     *
+     * @return The font.
+     *
+     * @throws JXCSkinException if the font cannot be loaded.
+     */
+    private Font getFont(final String filename) throws JXCSkinException
+    {
+        final Font font;
+        try
+        {
+            final InputStream ttf = getClass().getClassLoader().getResourceAsStream(filename);
+            try
+            {
+                try
+                {
+                    font = Font.createFont(Font.TRUETYPE_FONT, ttf);
+                }
+                catch (final FontFormatException ex)
+                {
+                    throw new JXCSkinException(filename+": invalid font format: "+ex.getMessage());
+                }
+            }
+            finally
+            {
+                ttf.close();
+            }
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(filename+": i/o error: "+ex.getMessage());
+        }
+        return font;
     }
 }
