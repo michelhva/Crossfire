@@ -11,8 +11,6 @@
         </javac>
     </target>
     <target name="jar" depends="compile">
-        <copy file="cache/black.png" todir="${build}"/>
-        <copy file="cache/black_big.png" todir="${build}"/>
         <copy file="cache/unknown.png" todir="${build}"/>
         <jar destfile="jxclient.jar" basedir="${build}" excludes="**/JXCSkinPrelude.class">
             <exclude name="**/skins/**"/>
