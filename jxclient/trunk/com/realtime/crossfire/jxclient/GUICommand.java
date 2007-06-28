@@ -29,32 +29,35 @@ public class GUICommand
 {
     private GUIElement mytarget;
 
-    private int myorder;
+    private Command myorder;
 
-    private Object myparams; //Often a String, but not always - see CMD_QUIT or CMD_CONNECT
+    private Object myparams; //Often a String, but not always - see QUIT or CONNECT
 
-    public static final int CMD_SHOW = 0;
-    public static final int CMD_HIDE = 1;
-    public static final int CMD_TOGGLE = 2;
-    public static final int CMD_PRINT = 3;
-    public static final int CMD_QUIT = 4;
-    public static final int CMD_SCROLLUP = 5;
-    public static final int CMD_SCROLLDOWN = 6;
-    public static final int CMD_CONNECT = 7;
-    public static final int CMD_GUI_META = 8;
-    public static final int CMD_GUI_START = 9;
-    public static final int CMD_GUI_LEAVE_DIALOG  = 10;
-    public static final int CMD_GUI_SEND_COMMAND = 11;
-    public static final int CMD_GUI_SPELLBELT = 12;
+    public enum Command
+    {
+	SHOW,
+	HIDE,
+	TOGGLE,
+	PRINT,
+	QUIT,
+	SCROLLUP,
+	SCROLLDOWN,
+	CONNECT,
+	GUI_META,
+	GUI_START,
+	GUI_LEAVE_DIALOG,
+	GUI_SEND_COMMAND,
+	GUI_SPELLBELT,
+    }
 
-    public GUICommand(GUIElement element, int order, Object params)
+    public GUICommand(GUIElement element, Command order, Object params)
     {
         mytarget = element;
         myorder = order;
         myparams = params;
     }
 
-    public int getOrder()
+    public Command getOrder()
     {
         return myorder;
     }
@@ -63,33 +66,33 @@ public class GUICommand
     {
         switch (myorder)
         {
-        case CMD_SHOW:
-        case CMD_HIDE:
-        case CMD_TOGGLE:
-        case CMD_PRINT:
-        case CMD_QUIT:
+        case SHOW:
+        case HIDE:
+        case TOGGLE:
+        case PRINT:
+        case QUIT:
             break;
 
-        case CMD_SCROLLUP:
+        case SCROLLUP:
             if (mytarget instanceof GUIScrollable)
             {
                 return ((GUIScrollable)mytarget).canScrollUp();
             }
             break;
 
-        case CMD_SCROLLDOWN:
+        case SCROLLDOWN:
             if (mytarget instanceof GUIScrollable)
             {
                 return ((GUIScrollable)mytarget).canScrollDown();
             }
             break;
 
-        case CMD_CONNECT:
-        case CMD_GUI_META:
-        case CMD_GUI_START:
-        case CMD_GUI_LEAVE_DIALOG:
-        case CMD_GUI_SEND_COMMAND:
-        case CMD_GUI_SPELLBELT:
+        case CONNECT:
+        case GUI_META:
+        case GUI_START:
+        case GUI_LEAVE_DIALOG:
+        case GUI_SEND_COMMAND:
+        case GUI_SPELLBELT:
             break;
         }
 
@@ -101,64 +104,64 @@ public class GUICommand
         //System.out.println("Executing command "+myorder+" on "+mytarget.getName());
         switch (myorder)
         {
-        case CMD_SHOW:
+        case SHOW:
             if (!mytarget.isVisible())
                 mytarget.setVisible(true);
             break;
 
-        case CMD_HIDE:
+        case HIDE:
             if (mytarget.isVisible())
                 mytarget.setVisible(false);
             break;
 
-        case CMD_TOGGLE:
+        case TOGGLE:
             if (mytarget.isVisible())
                 mytarget.setVisible(false);
             else
                 mytarget.setVisible(true);
             break;
 
-        case CMD_PRINT:
+        case PRINT:
             break;
 
-        case CMD_QUIT:
+        case QUIT:
             ((JXCWindow)myparams).endRendering();
             break;
 
-        case CMD_SCROLLUP:
+        case SCROLLUP:
             if (mytarget instanceof GUIScrollable)
                 ((GUIScrollable)mytarget).scrollUp();
             break;
 
-        case CMD_SCROLLDOWN:
+        case SCROLLDOWN:
             if (mytarget instanceof GUIScrollable)
                 ((GUIScrollable)mytarget).scrollDown();
             break;
 
-        case CMD_CONNECT:
+        case CONNECT:
             ((JXCWindow)myparams).connect(((GUIText)mytarget).getText(), 13327);
             break;
 
-        case CMD_GUI_META:
+        case GUI_META:
             ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_METASERVER);
             break;
 
-        case CMD_GUI_START:
+        case GUI_START:
             ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_START);
             break;
 
-        case CMD_GUI_LEAVE_DIALOG:
+        case GUI_LEAVE_DIALOG:
             ((JXCWindow)myparams).setDialogStatus(JXCWindow.DLG_NONE);
             break;
 
-        case CMD_GUI_SEND_COMMAND:
+        case GUI_SEND_COMMAND:
             {
                 final SendCommandParameter param = (SendCommandParameter)myparams;
                 param.window.sendNcom(param.command);
             }
             break;
 
-        case CMD_GUI_SPELLBELT:
+        case GUI_SPELLBELT:
             {
                 final SpellBeltParameter param = (SpellBeltParameter)myparams;
                 final JXCWindow jxcw = param.window;
@@ -191,7 +194,7 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link #CMD_GUI_SEND_COMMAND} command.
+     * A parameter object for the {@link #GUI_SEND_COMMAND} command.
      */
     public static class SendCommandParameter
     {
@@ -226,7 +229,7 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link #CMD_GUI_SPELLBELT} command.
+     * A parameter object for the {@link #GUI_SPELLBELT} command.
      */
     public static class SpellBeltParameter
     {
