@@ -34,7 +34,7 @@ import java.util.List;
  */
 public class GUICommandText extends GUIText implements KeyListener
 {
-    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt)  throws IOException
+    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, txt);
     }
