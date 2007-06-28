@@ -51,7 +51,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
      */
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
-    private final BufferedImage myblacktile;
+    private final ImageIcon myblacktile;
 
     private final boolean use_big_images;
 
@@ -68,8 +68,11 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = true;
 
-        myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
         mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
         if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
         if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
 
@@ -83,14 +86,16 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
 
         if (big)
         {
-            myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black_big.png"));
             mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
         }
         else
         {
-            myblacktile = ImageIO.read(this.getClass().getClassLoader().getResource("black.png"));
             mysquaresize = 32;
         }
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
         if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
         if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
 
@@ -127,8 +132,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
      */
     protected void cleanSquare(final Graphics g, final int x, final int y)
     {
-        g.setColor(Color.BLACK);
-        g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
+        g.drawImage(myblacktile.getImage(), x*mysquaresize, y*mysquaresize, null);
     }
 
     /**
