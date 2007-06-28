@@ -64,7 +64,7 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
+        faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
         originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
         {
@@ -109,7 +109,7 @@ public class Faces
             final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             final GraphicsDevice gd = ge.getDefaultScreenDevice();
             final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
+            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
         }
         return faces[index];
     }
@@ -203,7 +203,7 @@ public class Faces
             final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             final GraphicsDevice gd = ge.getDefaultScreenDevice();
             final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.TRANSLUCENT)));
+            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
         }
     }
 
