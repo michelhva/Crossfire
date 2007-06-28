@@ -346,7 +346,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
         final Graphics2D g = mybuffer.createGraphics();
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, w, h);
