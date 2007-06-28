@@ -38,7 +38,7 @@ public class GUICommandList
         final String[] cmds = commands.split(";");
         for (final String command : commands.trim().split(" *; *"))
         {
-            this.commands.add(new GUICommand(null, GUICommand.CMD_GUI_SEND_COMMAND, new GUICommand.SendCommandParameter(jxcWindow, command)));
+            this.commands.add(new GUICommand(null, GUICommand.Command.GUI_SEND_COMMAND, new GUICommand.SendCommandParameter(jxcWindow, command)));
         }
     }
 
@@ -83,7 +83,7 @@ public class GUICommandList
         boolean firstCommand = true;
         for (final GUICommand guiCommand : commands)
         {
-            if (guiCommand.getOrder() != GUICommand.CMD_GUI_SEND_COMMAND)
+            if (guiCommand.getOrder() != GUICommand.Command.GUI_SEND_COMMAND)
             {
                 throw new AssertionError("Cannot encode command of type "+guiCommand.getOrder());
             }
