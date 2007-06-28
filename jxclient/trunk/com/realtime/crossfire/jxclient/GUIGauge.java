@@ -61,17 +61,17 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
 
     private final BufferedImage pictureEmpty;
 
-    private final int orientation;
+    private final Orientation orientation;
 
-    public static final int ORIENTATION_WE = 0;
+    public enum Orientation
+    {
+        WE,
+        EW,
+        NS,
+        SN,
+    }
 
-    public static final int ORIENTATION_EW = 1;
-
-    public static final int ORIENTATION_NS = 2;
-
-    public static final int ORIENTATION_SN = 3;
-
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final int orientation) throws IOException
+    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final Orientation orientation) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         pictureFull = ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
@@ -102,27 +102,27 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         {
             switch (orientation)
             {
-            case ORIENTATION_WE:
+            case WE:
                 fw = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
                 fh = h;
                 fx = w-fw;
                 draw(fx, fy, fw, fh, pictureNegative);
                 break;
 
-            case ORIENTATION_EW:
+            case EW:
                 fw = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
                 fh = h;
                 draw(fx, fy, fw, fh, pictureNegative);
                 break;
 
-            case ORIENTATION_NS:
+            case NS:
                 fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
                 fw = w;
                 fy = h-fh;
                 draw(fx, fy, fw, fh, pictureNegative);
                 break;
 
-            case ORIENTATION_SN:
+            case SN:
                 fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
                 fw = w;
                 draw(fx, fy, fw, fh, pictureNegative);
@@ -133,26 +133,26 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         {
             switch (orientation)
             {
-            case ORIENTATION_WE:
+            case WE:
                 fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
                 fh = h;
                 draw(fx, fy, fw, fh, pictureFull);
                 break;
 
-            case ORIENTATION_EW:
+            case EW:
                 fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
                 fh = h;
                 fx = w-fw;
                 draw(fx, fy, fw, fh, pictureFull);
                 break;
 
-            case ORIENTATION_NS:
+            case NS:
                 fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
                 fw = w;
                 draw(fx, fy, fw, fh, pictureFull);
                 break;
 
-            case ORIENTATION_SN:
+            case SN:
                 fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
                 fy = h-fh;
                 fw = w;
