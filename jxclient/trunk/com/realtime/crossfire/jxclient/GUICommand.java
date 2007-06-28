@@ -35,19 +35,19 @@ public class GUICommand
 
     public enum Command
     {
-	SHOW,
-	HIDE,
-	TOGGLE,
-	PRINT,
-	QUIT,
-	SCROLLUP,
-	SCROLLDOWN,
-	CONNECT,
-	GUI_META,
-	GUI_START,
-	GUI_LEAVE_DIALOG,
-	GUI_SEND_COMMAND,
-	GUI_SPELLBELT,
+        SHOW,
+        HIDE,
+        TOGGLE,
+        PRINT,
+        QUIT,
+        SCROLLUP,
+        SCROLLDOWN,
+        CONNECT,
+        GUI_META,
+        GUI_START,
+        GUI_LEAVE_DIALOG,
+        GUI_SEND_COMMAND,
+        GUI_SPELLBELT,
     }
 
     public GUICommand(GUIElement element, Command order, Object params)
