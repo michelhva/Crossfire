@@ -180,8 +180,8 @@ public class JXCSkinPrelude implements JXCSkin
             GUIPicture gui_gauge_hp_back = new GUIPicture(p, "gauge_hp_back", 0+80, 14+574, 19, 144, "default.theme/pictures/life_gauge_empty.png");
             GUIPicture gui_gauge_fp_back = new GUIPicture(p, "gauge_fp_back", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_empty.png");
 
-            GUIGauge gui_gauge_hp = new GUIGauge(p, "gauge_hp", 0+80, 14+574, 19, 144, "default.theme/pictures/life_gauge_full.png", null, "default.theme/pictures/life_gauge_empty.png", Stats.CS_STAT_HP, GUIGauge.ORIENTATION_SN);
-            GUIGauge gui_gauge_fp = new GUIGauge(p, "gauge_hp", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_full.png", null, "default.theme/pictures/food_gauge_empty.png", Stats.CS_STAT_FOOD, GUIGauge.ORIENTATION_SN);
+            GUIGauge gui_gauge_hp = new GUIGauge(p, "gauge_hp", 0+80, 14+574, 19, 144, "default.theme/pictures/life_gauge_full.png", null, "default.theme/pictures/life_gauge_empty.png", Stats.CS_STAT_HP, GUIGauge.Orientation.SN);
+            GUIGauge gui_gauge_fp = new GUIGauge(p, "gauge_hp", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_full.png", null, "default.theme/pictures/food_gauge_empty.png", Stats.CS_STAT_FOOD, GUIGauge.Orientation.SN);
 
             //RGauges Group (820, 552)
 
@@ -189,8 +189,8 @@ public class JXCSkinPrelude implements JXCSkin
             GUIPicture gui_gauge_gp_back = new GUIPicture(p, "gauge_gp_back", 0+820, 30+552, 50, 150, "default.theme/pictures/grace_gauge_empty.png");
             GUIPicture gui_gauge_sp_back = new GUIPicture(p, "gauge_sp_back", 80+820, 30+552, 50, 150, "default.theme/pictures/magic_gauge_empty.png");
 
-            GUIGauge gui_gauge_gp = new GUIGauge(p, "gauge_gp", 0+820, 30+552, 50, 150, "default.theme/pictures/grace_gauge_full.png", null, "default.theme/pictures/grace_gauge_empty.png", Stats.CS_STAT_GRACE, GUIGauge.ORIENTATION_SN);
-            GUIGauge gui_gauge_sp = new GUIGauge(p, "gauge_sp", 80+820, 30+552, 50, 150, "default.theme/pictures/magic_gauge_full.png", null, "default.theme/pictures/magic_gauge_empty.png", Stats.CS_STAT_SP, GUIGauge.ORIENTATION_SN);
+            GUIGauge gui_gauge_gp = new GUIGauge(p, "gauge_gp", 0+820, 30+552, 50, 150, "default.theme/pictures/grace_gauge_full.png", null, "default.theme/pictures/grace_gauge_empty.png", Stats.CS_STAT_GRACE, GUIGauge.Orientation.SN);
+            GUIGauge gui_gauge_sp = new GUIGauge(p, "gauge_sp", 80+820, 30+552, 50, 150, "default.theme/pictures/magic_gauge_full.png", null, "default.theme/pictures/magic_gauge_empty.png", Stats.CS_STAT_SP, GUIGauge.Orientation.SN);
 
             //UpperPane (207, 27)
             GUIPicture gui_title_back = new GUIPicture(p, "title_back", 0+207, 0+27, 1024, 128, "default.theme/pictures/title.png");
@@ -860,92 +860,92 @@ public class JXCSkinPrelude implements JXCSkin
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_PHYS, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_PHYS, GUIGauge.Orientation.WE);
             GUIGauge gui_gr1 = new GUIGauge(p, "gr1", 76+630, 0+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_MAG, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_MAG, GUIGauge.Orientation.WE);
             GUIGauge gui_gr2 = new GUIGauge(p, "gr2", 152+630, 0+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_FIRE, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_FIRE, GUIGauge.Orientation.WE);
             GUIGauge gui_gr3 = new GUIGauge(p, "gr3", 0+630, 21+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_ELEC, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_ELEC, GUIGauge.Orientation.WE);
             GUIGauge gui_gr4 = new GUIGauge(p, "gr4", 76+630, 21+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_COLD, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_COLD, GUIGauge.Orientation.WE);
             GUIGauge gui_gr5 = new GUIGauge(p, "gr5", 152+630, 21+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_CONF, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_CONF, GUIGauge.Orientation.WE);
             GUIGauge gui_gr6 = new GUIGauge(p, "gr6", 0+630, 42+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_ACID, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_ACID, GUIGauge.Orientation.WE);
             GUIGauge gui_gr7 = new GUIGauge(p, "gr7", 76+630, 42+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_DRAIN, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_DRAIN, GUIGauge.Orientation.WE);
             GUIGauge gui_gr8 = new GUIGauge(p, "gr8", 152+630, 42+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_GHOSTHIT, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_GHOSTHIT, GUIGauge.Orientation.WE);
             GUIGauge gui_gr9 = new GUIGauge(p, "gr9", 0+630, 63+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_POISON, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_POISON, GUIGauge.Orientation.WE);
             GUIGauge gui_grA = new GUIGauge(p, "grA", 76+630, 63+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_SLOW, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_SLOW, GUIGauge.Orientation.WE);
             GUIGauge gui_grB = new GUIGauge(p, "grB", 152+630, 63+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_PARA, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_PARA, GUIGauge.Orientation.WE);
             GUIGauge gui_grC = new GUIGauge(p, "grC", 0+630, 84+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_TURN_UNDEAD, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_TURN_UNDEAD, GUIGauge.Orientation.WE);
             GUIGauge gui_grD = new GUIGauge(p, "grD", 76+630, 84+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_FEAR, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_FEAR, GUIGauge.Orientation.WE);
             GUIGauge gui_grE = new GUIGauge(p, "grE", 152+630, 84+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_DEPLETE, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_DEPLETE, GUIGauge.Orientation.WE);
             GUIGauge gui_grF = new GUIGauge(p, "grF", 0+630, 105+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_DEATH, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_DEATH, GUIGauge.Orientation.WE);
             GUIGauge gui_grG = new GUIGauge(p, "grG", 76+630, 105+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_HOLYWORD, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_HOLYWORD, GUIGauge.Orientation.WE);
             GUIGauge gui_grH = new GUIGauge(p, "grH", 152+630, 105+628, 29, 11,
                                             "default.theme/pictures/res_gauge_positive.png",
                                             "default.theme/pictures/res_gauge_negative.png",
                                             "default.theme/pictures/res_gauge_empty.png",
-                                            Stats.CS_STAT_RES_BLIND, GUIGauge.ORIENTATION_WE);
+                                            Stats.CS_STAT_RES_BLIND, GUIGauge.Orientation.WE);
 
             //LowerBar (72, 732)
             GUIPicture gui_lower_back = new GUIPicture(p, "lower_bar", 0+72, 0+732, 880, 36, "default.theme/pictures/lower_bar.png");
