@@ -26,7 +26,6 @@ import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
-import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
 import javax.imageio.ImageIO;
