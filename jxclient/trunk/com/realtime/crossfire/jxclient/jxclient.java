@@ -59,7 +59,14 @@ public class jxclient
             String str_height = prefs.get("height", "768");
             String str_bpp = prefs.get("bpp", "-1");
             String str_freq = prefs.get("frequency", "0");
-            String str_skin = prefs.get("skin", "com.realtime.crossfire.jxclient.JXCSkinPrelude");
+            String str_skin = prefs.get("skin", "default");
+
+            // fix changed default skin name
+            if (str_skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
+            {
+                    str_skin = "default";
+            }
+
             boolean mkdir_result = (new File("cache")).mkdirs();
             for (int i = 0; i < args.length; i++)
             {
@@ -100,7 +107,7 @@ public class jxclient
                     System.out.println(" -H <size> : Height of the screen, in pixels;");
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
                     System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
-                    System.out.println(" -S <skin> : Class containing the skin to use.");
+                    System.out.println(" -S <skin> : Skin name to use.");
                     System.out.println(" -opengl   : Enable the OpenGL rendering pipeline.");
                     System.exit(1);
                 }

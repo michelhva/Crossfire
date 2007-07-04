@@ -31,7 +31,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -54,11 +53,11 @@ public class GUIText extends GUIElement implements KeyListener
      */
     private boolean hideInput = false;
 
-    public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt)  throws IOException
+    public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, String txt)  throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mybackground_active = ImageIO.read(this.getClass().getClassLoader().getResource(picactive));
-        mybackground_inactive = ImageIO.read(this.getClass().getClassLoader().getResource(picinactive));
+        mybackground_active = picactive;
+        mybackground_inactive = picinactive;
         myfont = nf;
         mytext = txt;
         createBuffer();

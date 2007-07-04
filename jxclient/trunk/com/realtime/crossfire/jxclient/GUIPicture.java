@@ -26,7 +26,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -36,20 +35,15 @@ import javax.imageio.ImageIO;
  */
 public class GUIPicture extends GUIElement
 {
-    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture) throws IOException
+    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        BufferedImage img = ImageIO.read(this.getClass().getClassLoader().getResource(picture));
-        if (img == null)
-        {
-            throw new IllegalArgumentException("resource '"+picture+"' does not exist");
-        }
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
         final Graphics2D g = mybuffer.createGraphics();
-        g.drawImage(img, 0, 0, img.getWidth(), img.getHeight(), null);
+        g.drawImage(picture, 0, 0, picture.getWidth(), picture.getHeight(), null);
         g.dispose();
         setChanged();
     }

@@ -1,0 +1,31 @@
+
+font font_stats          default 12
+font font_cmdline        regular 14
+
+commandlist command_rinv_up
+
+picture background 23+350 38+200 200 100 dialog_background
+label_text message 35+350 60+200 180 32 font_stats WHITE
+command_text command 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline
+picture border_a   0+350   0+200  23  38 dialog_border_A
+picture border_b  23+350   0+200 200  38 dialog_border_B
+picture border_c 223+350   3+200  21  35 dialog_border_C
+picture border_d   0+350  38+200  23 100 dialog_border_D
+picture border_e 223+350  38+200  21 100 dialog_border_E
+picture border_f   0+350 138+200  23  16 dialog_border_F
+picture border_g  23+350 138+200 200  12 dialog_border_G
+picture border_h 223+350 138+200  21  16 dialog_border_H
+
+listener query message
+
+add background
+add message
+add border_a
+add border_b
+add border_c
+add border_d
+add border_e
+add border_f
+add border_g
+add border_h
+add command

@@ -23,11 +23,12 @@ package com.realtime.crossfire.jxclient;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public abstract class GUIItemItem extends GUIItem
 {
-    public GUIItemItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItemItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
     }

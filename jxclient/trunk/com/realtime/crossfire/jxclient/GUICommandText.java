@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Font;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ import java.util.List;
  */
 public class GUICommandText extends GUIText implements KeyListener
 {
-    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picactive, String picinactive, Font nf, String txt) throws IOException
+    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, String txt) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, txt);
     }

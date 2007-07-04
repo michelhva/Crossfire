@@ -1,0 +1,23 @@
+
+font font_metaurl default 14
+
+commandlist command_meta
+commandlist command_quit
+
+picture background 160 0 714 112 crossfire_logo
+
+commandlist_add command_meta null GUI_META
+commandlist_add command_quit null QUIT
+
+button meta    210 200 600 55 button_large_active button_large_pushed command_meta font_metaurl DARK_GRAY 220 34 Connect to a game server
+button new     210 300 600 55 button_large_active button_large_pushed command_meta font_metaurl DARK_GRAY 180 34 Create a new character (not implemented)
+button load    210 400 600 55 button_large_active button_large_pushed command_meta font_metaurl DARK_GRAY 180 34 Load a saved character (not implemented)
+button options 210 500 600 55 button_large_active button_large_pushed command_meta font_metaurl DARK_GRAY 230 34 Options (not implemented)
+button quit    210 600 600 55 button_large_active button_large_pushed command_quit font_metaurl DARK_GRAY 250 34 Leave Crossfire
+
+add background
+add meta
+add new
+add load
+add options
+add quit

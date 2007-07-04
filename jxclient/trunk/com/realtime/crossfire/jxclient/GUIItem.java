@@ -30,7 +30,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -69,14 +68,14 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         }
     };
 
-    public GUIItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, String pic_cursed, String pic_applied, String pic_selector, String pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicbackground = ImageIO.read(this.getClass().getClassLoader().getResource(picture));
-        mypiccursed = ImageIO.read(this.getClass().getClassLoader().getResource(pic_cursed));
-        mypicapplied = ImageIO.read(this.getClass().getClassLoader().getResource(pic_applied));
-        mypicselector = ImageIO.read(this.getClass().getClassLoader().getResource(pic_selector));
-        mypiclocked = ImageIO.read(this.getClass().getClassLoader().getResource(pic_locked));
+        mypicbackground = picture;
+        mypiccursed = pic_cursed;
+        mypicapplied = pic_applied;
+        mypicselector = pic_selector;
+        mypiclocked = pic_locked;
         active = false;
         myfont = mft;
         createBuffer();

@@ -23,10 +23,13 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
+import java.awt.Transparency;
 import java.io.IOException;
 import java.util.Iterator;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -52,23 +55,37 @@ public class GUIButton extends GUIElement
 
     private Color myfontcolor = new Color(255, 255, 255);
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup, String picdown, GUICommandList cmd) throws IOException
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_up = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
-        mypicture_down = ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+        if (picup == null) throw new IllegalArgumentException();
+        if (picdown == null) throw new IllegalArgumentException();
+        if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
+        if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
+        mypicture_up = picup;
+        mypicture_down = picdown;
         mylist = cmd;
-        mybuffer = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(picup.getWidth(), picup.getHeight(), Transparency.TRANSLUCENT);
         render();
     }
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picup, String picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd) throws IOException
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_up = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
-        mypicture_down = ImageIO.read(this.getClass().getClassLoader().getResource(picdown));
+        if (picup == null) throw new IllegalArgumentException();
+        if (picdown == null) throw new IllegalArgumentException();
+        if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
+        if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
+        mypicture_up = picup;
+        mypicture_down = picdown;
         mylist = cmd;
-        mybuffer = ImageIO.read(this.getClass().getClassLoader().getResource(picup));
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(picup.getWidth(), picup.getHeight(), Transparency.TRANSLUCENT);
         mytext = txt;
         myfont = f;
         myfontcolor = mfc;
