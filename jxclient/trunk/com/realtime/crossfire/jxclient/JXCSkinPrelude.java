@@ -181,7 +181,7 @@ public class JXCSkinPrelude implements JXCSkin
             GUIPicture gui_gauge_fp_back = new GUIPicture(p, "gauge_fp_back", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_empty.png");
 
             GUIGauge gui_gauge_hp = new GUIGauge(p, "gauge_hp", 0+80, 14+574, 19, 144, "default.theme/pictures/life_gauge_full.png", null, "default.theme/pictures/life_gauge_empty.png", Stats.CS_STAT_HP, GUIGauge.Orientation.SN);
-            GUIGauge gui_gauge_fp = new GUIGauge(p, "gauge_hp", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_full.png", null, "default.theme/pictures/food_gauge_empty.png", Stats.CS_STAT_FOOD, GUIGauge.Orientation.SN);
+            GUIGauge gui_gauge_fp = new GUIGauge(p, "gauge_fp", 75+80, 15+574, 21, 143, "default.theme/pictures/food_gauge_full.png", null, "default.theme/pictures/food_gauge_empty.png", Stats.CS_STAT_FOOD, GUIGauge.Orientation.SN);
 
             //RGauges Group (820, 552)
 
@@ -948,7 +948,7 @@ public class JXCSkinPrelude implements JXCSkin
                                             Stats.CS_STAT_RES_BLIND, GUIGauge.Orientation.WE);
 
             //LowerBar (72, 732)
-            GUIPicture gui_lower_back = new GUIPicture(p, "lower_bar", 0+72, 0+732, 880, 36, "default.theme/pictures/lower_bar.png");
+            GUIPicture gui_lower_bar = new GUIPicture(p, "lower_bar", 0+72, 0+732, 880, 36, "default.theme/pictures/lower_bar.png");
             GUICommandText gui_command = new GUICommandText(p, "command", 127+72, 17+732, 512, 32, "default.theme/pictures/empty.png", "default.theme/pictures/empty.png", font_cmdline, "");
 
             command_rsp_display.add(new GUICommand(gui_rinv0, GUICommand.Command.HIDE, ""));
@@ -1069,7 +1069,7 @@ public class JXCSkinPrelude implements JXCSkin
                     command_menu_display);
 
             //TextPaneUp (679, 100)
-            GUIPicture gui_log_upper_back = new GUIPicture(p, "lower_back", 0+679, 0+100, 301, 204, "default.theme/pictures/log1_expanded_inactive.png");
+            GUIPicture gui_log_upper_back = new GUIPicture(p, "log_upper_back", 0+679, 0+100, 301, 204, "default.theme/pictures/log1_expanded_inactive.png");
             GUILog gui_log_upper = new GUILog(p, "log_upper", 10+679, 3+100, 250, 198, "default.theme/pictures/empty.png", font_log, 511);
             command_log_upper_up.add(new GUICommand(gui_log_upper, GUICommand.Command.SCROLLUP, ""));
             command_log_upper_down.add(new GUICommand(gui_log_upper, GUICommand.Command.SCROLLDOWN, ""));
@@ -1254,7 +1254,7 @@ public class JXCSkinPrelude implements JXCSkin
             mygui.add(gui_grF);
             mygui.add(gui_grG);
             mygui.add(gui_grH);
-            mygui.add(gui_lower_back);
+            mygui.add(gui_lower_bar);
             mygui.add(gui_label_hp);
             mygui.add(gui_label_fp);
             mygui.add(gui_label_sp);
